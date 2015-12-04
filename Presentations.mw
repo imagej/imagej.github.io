@@ -126,7 +126,7 @@ __TOC__
 [[Conference 2015 Program#Michael_Majurski_-_Accurate_and_scalable_Microscopy_Image_Stitching_Tool_.28MIST.29|abstract]]
 |-
 | 2015-Sep-04
-| Benjamin Nanes
+| {{Person|Bnanes}}
 | Slide Set: Simplified batch processing with ImageJ2
 |
 [https://vimeo.com/140098828 video],
@@ -155,7 +155,7 @@ __TOC__
 [[Conference 2015 Program#Raghavender_Sahdev_-_TimeLapseReg_.E2.80.93_An_ImageJ_plugin_for_drift_correction_of_video_sequence_in_time-lapse_microscopy|abstract]]
 |-
 | 2015-Sep-04
-| Benjamin Schmid
+| {{Person|Bene}}
 | Real-time multi-view deconvolution of time-lapse data on the GPU
 |
 [https://vimeo.com/140098826 video],
@@ -169,7 +169,7 @@ __TOC__
 [[Conference 2015 Program#Amitabh_Verma_-_Acquisition.2C_processing_.26_re-processing_using_OpenPolScope_plugin_for_Micro-Manager|abstract]]
 |-
 | 2015-Sep-04
-| Thorsten Wagner
+| {{Person|Twagner}}
 |   NanoTrackJ – An open-source multi-modal size characterization tool for nanoparticle tracking analysis based on ImageJ
 |
 [https://vimeo.com/140098848 video],
@@ -184,7 +184,7 @@ __TOC__
 [[Conference 2015 Program#Petr_Walczysko_-_The_Open_Microscopy_Environment_.28OME.29|abstract]]
 |-
 | 2015-Sep-04
-| Jay Warrick
+| {{Person|jaywarrick}}
 | JEX – a platform for data management and batch processing with standard tools
 |
 [https://vimeo.com/140098819 video],
@@ -252,7 +252,7 @@ __TOC__
 [http://conference.imagej.net/2015/aryeh-weiss/stk_0001_Result%20of%20cftr-wt1.avi.zip data]
 |-
 | 2015-Sep-03
-| Jan Brocher
+| {{Person|BioVoxxel}}
 | Image processing, feature extraction and analysis using the BioVoxxel Toolbox
 |
 [https://vimeo.com/140929696 video],
@@ -260,7 +260,7 @@ __TOC__
 [https://www.dropbox.com/s/iurb5he4qpsqfrn/BioVoxxel%20Workshop.pdf?dl=0/ slides]
 |-
 | 2015-Sep-03
-| Tiago Ferreira
+| {{Person|Tiago}}
 | Scripting with BAR
 |
 [https://vimeo.com/140099767 video],
@@ -281,7 +281,7 @@ __TOC__
 [[Conference 2015 Program#Fabrice_de_Chaumont_and_Stephane_Dallongeville_-_Hands_on_Icy_.21|abstract]]
 |-
 | 2015-Sep-03
-| Matt McCormick
+| {{Person|thewtex}}
 | SimpleITK
 |
 [https://vimeo.com/140099763 video],
@@ -298,7 +298,7 @@ __TOC__
 [https://imagej.github.io/presentations/2015-09-04-imagej2-scripting/ slides]
 |-
 | 2015-Sep-04
-| Marcel Austenfeld
+| {{User|Bio7}}
 | Statistical image analysis and reproducible reports with ImageJ and R
 |
 [https://vimeo.com/140098838 video],
@@ -343,14 +343,14 @@ __TOC__
 | colspan=5 class="section-major" | '''[[Conference 2015|2015 ImageJ Conference]]'''
 |-
 | 2015-Sep-03
-| Ignacio Arganda-Carreras
+| {{Person|Iarganda}}
 | Trainable Weka Segmentation: a tool for machine-learning-based image segmentation
 |
 [[Conference 2015 Program#Ignacio_Arganda-Carreras_-_Trainable_Weka_Segmentation:_a_tool_for_machine-learning-based_image_segmentation|abstract]],
 [http://conference.imagej.net/2015/ignacio-arganda-carreras/poster-TWS-ImageJ-Conf-2015.pdf poster]
 |-
 | 2015-Sep-03
-| Jan Brocher
+| {{Person|BioVoxxel}}
 | The BioVoxxel Toolbox
 |
 [[Conference 2015 Program#Jan_Brocher_-_The_BioVoxxel_Toolbox|abstract]],
@@ -371,7 +371,7 @@ __TOC__
 [http://www.broadinstitute.org/~dlogan/posters/2015_09_03_ImageJ_Conf_DLogan_FINAL.pptx poster]
 |-
 | 2015-Sep-03
-| Tobias Pietzsch
+| {{Person|Pietzsch}}
 | BigDataViewer&#8212;Visualization and Image Processing for Terabyte Data Sets
 |
 [[Conference 2015 Program#Tobias_Pietzsch_-_BigDataViewer.E2.80.94Visualization_and_Image_Processing_for_Terabyte_Data_Sets|abstract]],
@@ -392,7 +392,7 @@ __TOC__
 [http://www.raghavendersahdev.com/uploads/3/9/6/2/39623741/timelapsereg.pdf poster]
 |-
 | 2015-Sep-03
-| Thorsten Wagner
+| {{Person|Twagner}}
 | Tools and methods of the Biomedical Imaging Group for ImageJ: An Overview
 |
 [[Conference 2015 Program#Thorsten_Wagner_-_Tools_and_methods_of_the_Biomedical_Imaging_Group_for_ImageJ:_An_Overview|abstract]],
