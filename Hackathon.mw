@@ -24,14 +24,13 @@ In 2007, the first hackathon revolving around neuro-science was taking place at 
 
 ImageJ has benefitted from many hackathons over the years:
 
-{| class="wikitable"
-!colspan="4" style="border-bottom: 1px solid gray"|ImageJ Hackathons
+{| class="program"
+!When
+!Where
+!Who
+!Topic
 |-
-|style="vertical-align: bottom;"|'''When'''
-|style="vertical-align: bottom;"|'''Where'''
-|style="vertical-align: bottom; width: 50%"|'''Who'''
-|style="vertical-align: bottom;"|'''Topic'''
-
+|colspan="4" class="section-major"|ImageJ Hackathons
 |- valign="top"
 |[http://www.hhmi.org/sites/default/files/Bulletin/2007/November/nov2007_fulltext.pdf 2007 Summer]
 |[http://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
@@ -59,7 +58,7 @@ ImageJ has benefitted from many hackathons over the years:
 |[[Fiji]]
 |- valign="top"
 | style="white-space: nowrap" | 2010 Oct 12 -<br>2010 Oct 23
-|[http://www.lbnl.gov/ Lawrence Berkeley National Laboratory]<br>Berkeley CA, USA
+|[http://www.lbnl.gov/ LBNL]<br>Berkeley CA, USA
 |{{Person|frederikfly}}, {{Person|Schindelin}}
 |Running [[Micro-Manager]] inside [[Fiji]]
 |- valign="top"
@@ -146,7 +145,7 @@ ImageJ has benefitted from many hackathons over the years:
 | style="white-space: nowrap" | 2015 June 29 -<br>2015 July 3
 |[https://www.mdc-berlin.de/13800178/en/bimsb BIMSB/MDC]<br>Berlin, Germany
 |{{Person|StephanP}}, {{Person|Dietzc}}, {{Person|emmenlau}}, {{Person|StephanJanosch}}
-|Parallelization of [[Multiview-Reconstruction]] and integration with ImageJ Ops & KNIME
+|Parallelization of [[Multiview-Reconstruction]]<br>and integration with ImageJ Ops & KNIME
 |- valign="top"
 | style="white-space: nowrap" | [[2015-07-27-Janelia_Hackathon|2015 Jul 27 -<br>2015 Jul 31]]
 |[http://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
