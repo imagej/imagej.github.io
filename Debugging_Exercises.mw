@@ -32,13 +32,13 @@ Learning to use debugging tools is, understandably, a burden: it's "one more thi
 
 = Using this guide =
 
-Remember the goal of these exercises is not to ''solve'' the problems, but to learn how and when to use the myriad of troubleshooting techniques available. Given the inherent complexity that comes with a combined work, all of these techniques have their time and place when working on a rich application like [[ImageJ]].
+The goal of these exercises is not to ''solve'' the problems, but to build up your toolbox of troubleshooting techniques and develop your intuition for ''when'' to apply each technique. To keep exercises simple and focused, most do not explicitly use ImageJ. But once you learn how to [[#Exercise_4:_ImageJ_plugins|debug an external Java application]], you will have the knowledge to apply any of these techniques to a rich, and complex, application like [[ImageJ]].
 
-Because this project is intended to help new developers practice troubleshooting skills, it uses contrived examples, limited in complexity. If you have complete, perfect knowledge of the code then there isn't really a need for troubleshooting, as it is trivial to see why something is behaving incorrectly. Thus the source of these exercises is divided into <code>hidden</code> and <code>visible</code> packages. Users are strongly recommended to only inspect and set breakpoints from the <code>visible</code> classes. From a development point of view, consider the <code>hidden</code> package a 3rd-party library that you may not have control over.
+Because this project is intended to help new developers practice troubleshooting skills, you may find these examples contrived - indeed, they are. Exercises are kept simple and focused to allow practice of targeted techniques. If you have complete knowledge and understanding of the code there isn't really a need for troubleshooting: it is trivial to see why something is behaving incorrectly. Thus the source of these exercises is divided into <code>hidden</code> and <code>visible</code> packages. Users are strongly recommended to only inspect and set breakpoints from the <code>visible</code> classes. From a development point of view, consider the <code>hidden</code> package a 3rd-party library that you may not have control over, or access to the source code.
 
 Changing the source code to actually fix the bugs is outside the scope of this guide, but motivated users are of course welcome to do so for practice.
 
-'''If at any time''' you need to revert changes to this repository, you can always do so via the command:
+'''If at any time''' you need to revert changes to the <code>imagej-troubleshooting</code> repository, you can always do so via the command:
 
 <source lang="bash">
 git reset --hard origin/master
