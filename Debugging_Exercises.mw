@@ -246,6 +246,11 @@ In order to connect Eclipse to ImageJ, we need to close our running instance and
 <source>
 ImageJ.app/ImageJ-linux64 --debugger=8000
 </source>
+
+'''Note:''' On Windows we need to add the <code>console</code> flag; see [https://github.com/imagej/imagej-launcher/issues/29 this issue] for more information.
+<source>
+ImageJ.app/ImageJ-linux64 --debugger=8000 --console
+</source>
 [[File:E4DebugConfig.png|400px|right|thumb|Remote Java Application debug configuration]]
 This will start up ImageJ in a mode that's able to communicate with Eclipse. Next we need to connect Eclipse to the running ImageJ instance:
 
