@@ -78,25 +78,25 @@ On OS X, replace {{Key|Ctrl}} with  {{Key|Cmd}}
 | colspan=2 | '''Navigation'''
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|Shift|T}}
-| open a Java class from the workspace
+| Open a Java class from the workspace
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|Shift|R}}
 | Open a file from the workspace
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|F3}}
-| jump to selected class<br>(to edit the code, see [[Architecture#Using_snapshot_couplings_during_development|snapshot coupling]])
+| Jump to selected class<br>(to edit the code, see [[Architecture#Using_snapshot_couplings_during_development|snapshot coupling]])
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|O}}
-| Shows superclass/subclass hierarchy 
+| Show superclass/subclass hierarchy 
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|T}}
-| show implementations of interface or class
+| Show implementations of interface or class
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|L}}
 | Go to line number
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|Q}}
-| GO to last edit location
+| Go to last edit location
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|E}}
 | Go to next file in editor
@@ -104,33 +104,33 @@ On OS X, replace {{Key|Ctrl}} with  {{Key|Cmd}}
 | colspan=2 | '''Editing'''
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Alt|Up}}, {{Key|Alt|Down}}
-| move current line up or down
+| Move current line up or down
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|D}}
-| delete the current line
+| Delete the current line
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|/}}
-| comment/uncomment the selected line(s)
+| Comment/uncomment the selected line(s)
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|1}}
-| quick fix selected error
+| Quick fix selected error
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|Space}}
-| auto-complete current selection
+| Auto-complete current selection
 |-
 | colspan=2 style="padding-top: 1em" | '''Code cleanup'''
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|Shift|O}}
-| organize imports
+| Organize imports
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|Shift|F}}
-| format code<br>(BUT make sure you set the [[Coding_style#Eclipse_code_style_profiles|coding style]])
+| Format code<br>(BUT make sure you set the [[Coding_style#Eclipse_code_style_profiles|coding style]])
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Alt|Shift|S}}, {{Key|U}}
-| clean up (does format and much more)
+| Clean up (does format and much more)
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Alt|Shift|R}}
-| refactor/rename selected class/variable
+| Refactor/rename selected class/variable
 |-
 | colspan=2 style="padding-top: 1em" | '''Debugging'''
 |-
@@ -138,13 +138,13 @@ On OS X, replace {{Key|Ctrl}} with  {{Key|Cmd}}
 | Set/Remove Breakpoint
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|F5}}
-| Step Into
+| Step into
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|F6}}
-| Step Over
+| Step over
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|F7}}
-| Step Out
+| Step out
 |}
 </div>
 Now that you have the project successfully nestled within Eclipse, you can run it, change the code, and run it again, iterating as needed to develop features and fix bugs. This process is known as the ''run-debug cycle''—although some people call it ''compile-debug'' or ''edit-compile-debug'' or ''edit-compile-run'' or ''debug-edit-compile'' or ''edit-build-test-debug'' or ''edit-compile-link-debug'' or...
