@@ -69,7 +69,7 @@ If the first method does not work, and you can reproduce the hang:
         </ol>
     <li>[[File:Win.png|x20px]] On Windows:
         <ol>
-        <li>Press {{key|Ctrl|Pause}} in the Command Prompt window to print the stack trace.</li>
+        <li>Press {{key|Ctrl|Pause}} in the Command Prompt window to print the stack trace. ('''Note:''' this shortcut actually uses the [[Wikipedia:Break_key|Break key]])</li>
         <li>Click the Command Prompt icon in the upper left corner of the window, and choose {{bc|Edit|Mark}}.</li>
         <li>Select the stack trace by dragging with the left mouse button.</li>
         <li>Press {{key|Enter}} to copy it to the clipboard.</li>
