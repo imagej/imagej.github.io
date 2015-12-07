@@ -131,7 +131,7 @@ On OS X, replace {{Key|Ctrl}} with  {{Key|Cmd}}
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Alt|Shift|R}}
 | refactor/rename selected class/variable
--
+|-
 | colspan=2 style="padding-top: 1em" | '''Debugging'''
 |-
 | style="text-align: right; vertical-align: top; white-space: nowrap" | {{Key|Ctrl|Shift|B}}
