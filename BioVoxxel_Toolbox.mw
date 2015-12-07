@@ -273,26 +273,6 @@ Future: suggestions are welcome!
 
 ----
 
-=Median Background Subtraction (deprecated)=
-
-Purpose: This tool enables to subtract the background from an image by contruction of a background image by applying a median filter to a copy of the original image and subtracting this from the original.
-
-How to: The user can first specify a median offset as well as a dilation. The median offset is a pixel intensity value which will be subtracted from the median background before the actual subtraction. Thus, the subtraction can be reduced (or enhanced with negative values) to correct for a too high (too low) estimation of the background (see red and green arrowheads below). In most cases the median background is slightly too high and an offset needs to be set.
-
-The dilation method runs a grayscale dilation (if bigger 0) on the median background. This might be helpful because the median filtering slightly reduces the complete outline of bigger objects and thus results in a final ring artefact around bigger structures after subtraction. The maximum value for dilation is 3. 
-
-If the image contains dark features on a bright background this needs to be indicated and will result in the inversion of the image. The final image needs to be inverted manually by the user if desired ([Shift] + [i]);
-
-If the subtraction plot checkbox is activated (recommended), the user will be able to check the subtraction event along a predifined straight line selection. The line can be drawn before the macro is run. If no line selection exists, the macro will ask to draw one (only works with straight lines). The subtraction plot shows the original intensity distribution along the defined line (gray), the intensity distribution of the constructed median background (red), the intensities of the median background by offset and dilation (green), and the final intensity plot after subtraction (blue). This might indicate potential need for further improvement.
-
-[[File:MedianBackgroundSubtraction.png|750px]]
-
-Form: macro
-
-Status: deprecated, no active maintenance
-
-----
-
 =Scaled Intensity Plot=
 
 Purpose: The tool creates a intensity plot along any kind of lines as well as from rectangular selections (as does {{bc | Analyze | Plot Profile}}) but with the initial possibility to influence the displayed intensity scale. This enables to create plots which can be overlayed by choosing "add to existing plot". In the case of a rectangular selection it can be chosen if the plotting direction should be horizontal or vertical. The intensities along the other direction are then averaged. Additionally, the color and look of the plot line can be chosen.
@@ -322,6 +302,12 @@ Form: macro
 Status: maintenance active!
 
 Future: will be implemented for 32-bit images as well. The upper intensity limit will be made individually adjustable. Suggestions welcome!
+
+----
+
+= Interactive Correlation Plot =
+
+under construction. This documentation will be updated soon (12-07-2015)
 
 ----
 
