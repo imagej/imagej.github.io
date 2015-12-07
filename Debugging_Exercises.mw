@@ -385,7 +385,9 @@ We actually don't need any extra flags this time, as this technique isn't specif
 
 In this state, we can still send signals to the running application (for example - {{key|ctrl|c}} to [http://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/ kill the app]).
 
-When running a Java application, we can use {{key|ctrl|\}} to [[Troubleshooting#If_ImageJ_freezes_or_hangs|print a stack trace]]. With this knowledge:
+When running a Java application, we can use {{key|ctrl|\}} to print a stack trace. '''Note:''' this shortcut may vary based on your OS and keyboard: see the [[Troubleshooting#If_ImageJ_freezes_or_hangs|print stack trace instructions]] for more information.
+
+With this knowledge:
 
 # Run the <code>E6 - Start Looping</code> command from ImageJ
 # Before ImageJ crashes, switch back to the terminal and use {{key|ctrl|\}} to print a stack trace
