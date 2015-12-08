@@ -1,14 +1,1 @@
-
-== Introduction ==
-Not all data is created equal and thus the analysis of certain images can be easily automated, while others pose a bigger challenge.
-
-The goal of this page is to collect information on image acquisition principles that ease the automation of image analysis.
-
-== Naming Schemes ==
-Effective naming schemes are easy to read by both humans and computers. The following examples give an overview over the principles of creating good naming schemes:
-
-* Example A:
-
-== Sample Preparation ==
-
-In certain cases (Examples ...) it is very helpful to add markers to the slides.
+Moved to http://imagej.net/Principles
