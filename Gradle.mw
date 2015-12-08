@@ -1,6 +1,6 @@
 [http://gradle.org/getting-started-gradle-java/ Gradle] is an open-source build system using a Groovy-based script syntax as a succinct alternative to the XML of [http://ant.apache.org/ Ant] or [[Maven]].
 
-The ImageJ core artifacts are built with Maven, but can also be consumed in a Gradle buildscript.
+The ImageJ core artifacts are built with Maven, but can also be consumed in a Gradle build script.
 
 ==Sample ImageJ build.gradle==
 
