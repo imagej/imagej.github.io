@@ -2,7 +2,7 @@
 
 The ImageJ core artifacts are built with Maven, but can also be consumed in a Gradle buildscript.
 
-==Sample ImageJ buildscript==
+==Sample ImageJ build.gradle==
 
 <source lang="groovy">
 buildscript {
