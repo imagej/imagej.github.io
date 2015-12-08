@@ -1,4 +1,28 @@
-= Introduction =
+=== About this Page ===
+The goal of this page is the collection of principles for the whole image analysis process.
+
+
+= Image Acquisition Principles =
+
+== Introduction ==
+Not all data is created equal and thus the analysis of certain images can be easily automated, while others pose a bigger challenge.
+
+The goal of this page is to collect information on image acquisition principles that ease the automation of image analysis.
+
+== Naming Schemes ==
+Effective naming schemes are easy to read by both humans and computers. The following examples give an overview over the principles of creating good naming schemes:
+
+* Example A:
+
+== Sample Preparation ==
+
+In certain cases (Examples ...) it is very helpful to add markers to the slides.
+
+
+
+= Image Processing Principles =
+
+== Introduction ==
 
 In scientific image processing and image analysis, an image is something different than a regular digital photograph of a beautiful scene you shot during your latest vacation.
 
@@ -38,15 +62,15 @@ Once an image has been saved as compressed JPEG there is no way of reverting to 
 
 
 
-= Considerations during Image Segmentation (Binarization) =
+== Considerations during Image Segmentation (Binarization) ==
 
-== What is binarization and what is it good for? ==
+=== What is binarization and what is it good for? ===
 
 As the word already suggests, with a binarization you divide your image in two parts usually referred to as foreground and background. This is the simplest method of image segmentation. Simple does not refer to easily achieving good results it is just often perceived by the user as being easier. There are also methods which group pixels of an image into different classes. Those ones are mostly based on statistical approaches. Some are implemented in Fiji such as the "[[Statistical_Region_Merging|Statistical Region Merging]]" plugin or the "[[Linear_Kuwahara|Linear Kuwahara filter]]". For true color images there exist even more sophisticated classification methods often based on machine learning and training by the user with a set of exemplary test images. While image binarization can also be achieved with methods including statistics the simplest would be to just set one or two (upper and lower) cut-off value(s) separating specific pixel intensities from each other. This is often referred to as a threshold (value).
 Separating image features and objects by there intensity is often suitable if the intensity is the parameter which directly relates to the spatial characteristics of the objects and defines those. This is for example often the case in fluorescence microscopy with clearly stained cellular structures and low background staining. If other parameters than the intensity define the structures outline or area a simple threshold does often not lead to satisfying results or even fails completely doing the job.
 Many users are aware of a method which allows them to manually define such a threshold value but this comes with several limitations...
 
-== Why not simply choose a manual threshold? ==
+=== Why not simply choose a manual threshold? ===
 
 "I usually define a manual threshold to extract my objects..., is this ok?"
 As a recommendation... Whenever possible, try to avoid manual thresholding!!!
@@ -92,7 +116,7 @@ In ImageJ and Fiji, there are so far 16 [[Auto_Threshold|Global Auto Thresholds]
 
 For all of the reasons outlined above, NO! But this is not really a problem. It is akin to asking the question "Is there one superior food?". As is the case with biological protocols in general, most algorithms are developed serving a specific purpose or solving a specific extraction problem. Thus, performance is relative and depends on the image content and quality, and the intended use of the pattern extracted. This last statement can be understood in terms of a single image from which an experimenter may want to extract overall cell shape in one investigation but nuclear texture in another. Every basic method needs to be tested to determine if any of its implementations do a good job for every single new question to be answered. In this regard, there are many more algorithms published and otherwise being developed, and you might want to think about implementing one in an ImageJ plugin yourself and providing it to the community :-)
 
-== Which automatic methods do exist for binarization? ==
+=== Which automatic methods do exist for binarization? ===
 Generally, there are different groups of algorithms for image binarization.
 (The following classification of methods is taken from Sezgin and Sankur, Survey over image thresholding techniques and quantitative performance evaluation, Journal of Electronic Imaging 13(1), 146–165 (January 2004).)
 
@@ -105,26 +129,26 @@ Generally, there are different groups of algorithms for image binarization.
 
 This list might not be comprehensive but gives a good idea about the extensive possibilities available.
 
-== What else is critical during binarization and further object analysis? ==
+=== What else is critical during binarization and further object analysis? ===
 
-=== Image acquisition ===
+==== Image acquisition ====
 It is indispensable that during imaging the field of view be equally lit, and that this is checked and adjusted if necessary. Besides other disadvantages (e.g., no reliable intensity measurements), unequal lighting profoundly influences the outcome of thresholding methods, especially global ones. Furthermore, a higher signal-to-noise ratio, in e.g., fluorescence based images, will positively influence extraction by thresholding.
 
-=== Pre-processing ===
+==== Pre-processing ====
 Since the basis of any cut-off value during thresholding is pixel values, any change in those after image acquisition will also influence the final binarization result. Thus, the user needs to apply wisely methods that adjust brightness and contrast or any image filters, to not degrade but instead enhance the features of interest, fostering the binarization process. It may not be feasible to apply the same process to all images. In general, all pre-processing should be quantitated and recorded to ensure work is [[reproducible]]. 
 
-=== Post-processing ===
+==== Post-processing ====
 After being binarized through any thresholding method, an image may require additional binary operations to make the final pattern useable. These include erosion, dilation, opening, and closing (all under {{bc | Process | Binary}}), image filters (under {{bc | Process | Filters}}), and image combinations by boolean operations (e.g. {{bc | Process | Image Calculator}}). Here the user needs to pay attention to recording all parameters and events and not alter the extraction notably, lest they reduce the [[reproducibility]] and overall quality of the segmentation. Post-processing binary operations might be necessary to correct further measurements of area or object counts. Internal holes, for example, may need to be closed ({{bc | Process | Binary | Fill Holes}}) to extract the correct area of particles (this can also be achieved directly during the measurement when using >{{bc | Analyze | Analyze Particles...}}.). Watershed (or related) separation techniques may be necessary when close particles fuse to form clumps or aggregates.
 
 === Segmented ROIs for Additional Processing ===
 Once an object is binarized, it can be converted to an ROI automatically and the ROI reapplied to the original image for verification as well as processing of the original image based on the ROI. This is used, for instance, to identify, separate, and analyze features of overlapping cells. The method for creating the ROIs from a binary image is {{bc | Edit | Selection | Create Selection}}. This method is very useful when used with the RoiManager and in macros or plugins for automating tasks.
 
-== How do I check the quality of a binarization? ==
+=== How do I check the quality of a binarization? ===
 Several publications deal with methods to check the quality of image segmentation. Many methods refer to a comparison to a so called "ground truth" in the first place. For a user doing a binary segmentation, this is basically a user-created binarization of an example image to test the extraction "quality". Similarly, when a method is being developed, benchmark images are created in a variety of ways including by taking photos of idealized objects and manually thresholding or tracing overlays to produce a desirable result or by generating computer simulations to form the standard against which the process will be assessed. Depending on the method, the original structures could include a range from simple forms to complex biological or synthetic structures of all sizes and shapes. Ideally, independent comparisons to different image-intrinsic measures (e.g., object edges, known angles or ratios between structural components, numbers of particular structural components, exclusion of known artifacts, entropy, etc.) should also be included when verifying the quality of a binarization. Of course, even for a simple round ball, this whole process has to be seen critically, because the accuracy of the result is necessarily defined by a biased "ground truth" in part defined by what the desired features to be extracted are. Thus, a researcher generally provides some degree of verification, explains its rationale, and acknowledges its limitations when commenting on the quality of a binarization. 
 
 A related issue is training the user. The "[[BioVoxxel_Toolbox#Threshold_Check|Threshold Check]]", [http://www.cscjournals.org/manuscript/Journals/IJIP/volume8/Issue2/IJIP-829.pdf] is a trial to make it easier for the untrained user, to decide for one or the other threshold. The semi-quantitative evaluation therein is also biased but might facilitate a rather unbiased comparison of different extraction methods (based on a user-chosen and thus biased reference value).
 
-== What should I do with true color images (e.g. histological staining) with different colors and not a single intensity scale? ==
+=== What should I do with true color images (e.g. histological staining) with different colors and not a single intensity scale? ===
 
 If converting to grayscale damages or distorts the information desired from a pattern, many different possibilities exist:
 
@@ -133,3 +157,9 @@ If converting to grayscale damages or distorts the information desired from a pa
 # [[Colour_Deconvolution|Color deconvolution]] might also be a solution. In this method, the vector definition with individual staining components is an important step; it is nicely implemented in the tool and should be done for the sake of consistency and accuracy. A limitation inheres in using the definition by ROIs, which again introduces low [[reproducibility]] due to reliance on biased, user defined areas of "a color". This is a fast option but the problem here is that if this is done on the image which should be segmented the colors in a brightfield image exist usually in a mixed fashion meaning that the user defines already a mixture of colors to later separate exactly those. This may lead to inconsistent results even though it might visually look good in the first place.
 # Specific tools based on machine learning might be helpful. Here, the user is required to do some training on representative example images. This is achieved by selecting areas which should be assigned to the foreground or background, respectively. This is obviously also biased, with a good training (potentially by different experts) the feature extraction contains a lower bias, since the same trained classifier is applied to the different images. Relevant ImageJ plugins available are the [[SIOX:_Simple_Interactive_Object_Extraction|SIOX: Simple Interactive Object Extraction]] and the [[Trainable_Weka_Segmentation|Trainable WEKA Segmentation]].
 # ...
+
+
+= Image Analysis Principles = 
+
+== Introduction == 
+The following principles help with the analysis of successfully processed images.
