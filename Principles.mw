@@ -1,27 +1,22 @@
-[[Category:Tutorials]]
+The page is a collection of principles for the entire image analysis process, from acquisition to processing to analysis.
 
-=== About this Page ===
-The goal of this page is the collection of principles for the whole image analysis process.
-
-= Image Acquisition Principles =
+= Image acquisition principles =
 
 == Introduction ==
 Not all data is created equal and thus the analysis of certain images can be easily automated, while others pose a bigger challenge.
 
 The goal of this page is to collect information on image acquisition principles that ease the automation of image analysis.
 
-== Naming Schemes ==
+== Naming schemes ==
 Effective naming schemes are easy to read by both humans and computers. The following examples give an overview over the principles of creating good naming schemes:
 
 * Example A:
 
-== Sample Preparation ==
+== Sample preparation ==
 
 In certain cases (Examples ...) it is very helpful to add markers to the slides.
 
-
-
-= Image Processing Principles =
+= Image processing principles =
 
 == Introduction ==
 
@@ -159,8 +154,9 @@ If converting to grayscale damages or distorts the information desired from a pa
 # Specific tools based on machine learning might be helpful. Here, the user is required to do some training on representative example images. This is achieved by selecting areas which should be assigned to the foreground or background, respectively. This is obviously also biased, with a good training (potentially by different experts) the feature extraction contains a lower bias, since the same trained classifier is applied to the different images. Relevant ImageJ plugins available are the [[SIOX:_Simple_Interactive_Object_Extraction|SIOX: Simple Interactive Object Extraction]] and the [[Trainable_Weka_Segmentation|Trainable WEKA Segmentation]].
 # ...
 
-
-= Image Analysis Principles = 
+= Image analysis principles = 
 
 == Introduction == 
-The following principles help with the analysis of successfully processed images.
+The following principles help with the analysis of processed images.
+
+[[Category:Tutorials]]
