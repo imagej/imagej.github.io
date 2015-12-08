@@ -58,7 +58,7 @@ Once an image has been saved as compressed JPEG there is no way of reverting to 
 
 
 
-== Considerations during Image Segmentation (Binarization) ==
+== Considerations during image segmentation (binarization) ==
 
 === What is binarization and what is it good for? ===
 
