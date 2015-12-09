@@ -126,7 +126,13 @@ Alternately, to disable autoscaling during initial import, you can use the [[Bio
 
 Further reading:
 * [[Image Intensity Processing]]
-* [[Image Processing Principles]]
+* [[Principles|Image Processing Principles]]
+
+== Whenever I open a file in ImageJ, the file size increases by a ridiculous amount! ==
+
+Are you using a [http://imagej.net/docs/guide/146-7.html#sub:Native-Formats compressed format] such as JPEG, PNG or ZIP? The file size on disk is smaller than the size of the pixels in memory. ImageJ reports this true (uncompressed) size of the image in the subtitle bar of the image window. For example: an uncompressed image of 16000 pixels x 16000 pixels x 32 bit (RGBA) will occupy 976 MB in memory.
+
+Note that [[Principles#Why_.28lossy.29_JPEGs_should_not_be_used_in_imaging|lossy compression is not suitable for quantitative image analysis]].
 
 == The same plugin gives different results on different machines! ==
 
