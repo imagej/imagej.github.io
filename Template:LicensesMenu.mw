@@ -1,5 +1,7 @@
 {{Menu | Licenses
 |
+{{MenuItem | [[Licensing|Overview]] }}
+
 {{Submenu | Open Source |
 {{MenuItem | [[Apache]] }}
 {{MenuItem | [[BSD]] }}
