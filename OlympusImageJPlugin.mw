@@ -14,8 +14,8 @@
 == Description ==
 This plugin can load Olympus vsi/oir/omp2info file formats and show some meta data.
 == Installation ==
-Please see also installation manual.( http://www.olympus-lifescience.com/OlympusImageJPlugin/HowToInstallOlympusViewerPlugin )
-# Download OlympusViewer-win.zip ( http://www.olympus-lifescience.com/OlympusImageJPlugin/OlympusViewer_Win )
+Please see also [http://www.olympus-lifescience.com/OlympusImageJPlugin/HowToInstallOlympusViewerPlugin installation manual].
+# Download OlympusViewer-win.zip ( http://www.olympus-lifescience.com/OlympusImageJPlugin/OlympusViewer_Win here)
 # Extract the zip file.
 # Execute OlympusViewer-win.exe. This file is in self-extracting format.
 # If you agree to our end user license agreement, extract it to your specified folder.
