@@ -14,6 +14,7 @@
 == Description ==
 This plugin can load Olympus vsi/oir/omp2info file formats and show some meta data.
 == Installation ==
+Please see also installation manual.( http://www.olympus-lifescience.com/OlympusImageJPlugin/HowToInstallOlympusViewerPlugin )
 # Download OlympusViewer-win.zip ( http://www.olympus-lifescience.com/OlympusImageJPlugin/OlympusViewer_Win )
 # Extract the zip file.
 # Execute OlympusViewer-win.exe. This file is in self-extracting format.
@@ -21,6 +22,7 @@ This plugin can load Olympus vsi/oir/omp2info file formats and show some meta da
 # Unzip the OlympusViewer-package.zip
 # Install vs2008 runtime. The runtime is in OlympusViewer-package/WinRuntime. If you use 32bit OS, install vcredist_x86.exe. If you use 64bit OS, install vcredist_x64.exe
 # Copy "OlympusViewer" folder in "OlympusViewer-package" folder to the plugins folder of your ImageJ directory. If ImageJ plugin folder already has OlympusViewer folder, delete the folder before copying.
+
 == See Also ==
 This plugin uses jai-imageio.
 [[Category:Plugins]]
