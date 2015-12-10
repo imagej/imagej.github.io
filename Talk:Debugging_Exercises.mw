@@ -29,18 +29,24 @@ Exercise 8 in pretty straightforward with the main function calling two function
 # Use a profiler to find the function which takes more time.
 
 ==Exercise 9: Multiple threads==
+Developing codes may often involve using multiple threads instead of sequential execution of statements. New threads may be spawned anytime when required. Essentially, threads should be used to run independent processes but if threads work on the same process there is no guarantee of execution of statements in different threads in a particular order. 
 
-Even though no code changes, sometimes debugging affects code execution
+E9 exercise on multiple threads focuses on this issue and also highlight an additional property of breakpoint that can be helpful in debugging program (Stop Virtual Machine).
 
-exercise: debug once where breakpoint stops thread, once where it stops vm
+Even though no code changes, sometimes debugging affects code execution. The Exercise 9 creates two parallel processes which are interdependent on each other. Each process throws up an error if the other process introduces a delay more than one second. So pausing for more than one second ,while debugging the program throws up an exception. So the act of debugging introduces errors in this case.
 
+Steps for the exercise
 * Run E9 with no breakpoint. Note that it works fine
 * Now set a breakpoint in the “getName” method of either the Even or Odd LonelyRunnable
 * Set the breakpoints property to “Suspend thread”
 * Debug E9. After hitting the breakpoint, wait for a few seconds. Eventually you should see that a different thread is paused and “Expecting Exception”.
 * resume the threads and see the stack trace.
-* Now modify the breakpoint and tell it to suspend VM instead of just the thread
+* Now modify the breakpoint and tell it to suspend VM instead of just the thread.
 * Debug again. When you hit a breakpoint, make sure you resume the VM and not just the thread.
+
+Takehome points-
+* In case of multithreaded programming, stop the virtual machine at the breakpoint to freeze the state of all threads.
+[[File:E9StopVM.PNG|right|600px|thumb|Setting a breakpoint on an exception]]
 
 
 [[User:Hinerm|Hinerm]] ([[User talk:Hinerm|talk]])
