@@ -23,7 +23,7 @@ Debugging often involves finding the function which performs poorly - in terms o
 Exercise 8 in pretty straightforward with the main function calling two functions - doStuff() and doMoreStuff() . Both functions are called one after the other for two minutes. Our goal is to find how much time is taken by each function in the two minute run. One solution a programmer may think of is to keep track of time taken by functions in some flag variables using System time, but this method does not scale up for many function calls. Since the tutorial is for "debugging", we will not making any changes to code but will be using a profiling tool - Jvisualvm [https://visualvm.java.net/] which is a bare bones profiler with basic functionalities and is freely available. 
 
 '''Steps for exercise'''
-# Insert a breakpoint on the <code>while<\code> statement in main method
+# Insert a breakpoint on the <code>while</code> statement in main method
 # Launch JvisualVM. All running java applications are shown in the in Applications Tab (left margin) of JvisualVM. Double Click to select E8PerceivingPerformance. Go to the profiler tab and click the CPU option.
 '''Note''' Click on the settings checkbox on upper right corner of Jvisualvm. In CPU settings , make sure the class being profiled is net.imagej.trouble.** instead of net.imagej.trouble.visible.** - insert image
 
