@@ -15,11 +15,15 @@ Exercise 8 in pretty straightforward with the main function calling two function
 # Example output 
 [[File:E8ProfilingResults.PNG|center|400px|Profiling Results]]
 
-Question 1 -
-Which process takes more time ? Answer - do stuff
+{{ExpandingBox
+|Which process takes more time ? doStuff or doMoreStuff ?
+|Answer -'''doStuff'''. doStuff() takes 954 ms while doMoreStuff() takes 710 ms.
+}}
 
-Question 2 -
-Are the number of invocations of both functions same ? - Answer Yes
+{{ExpandingBox
+|Are the number of invocations/function calls of both functions same ?
+|Yes. both are called 83,573,448 times.
+}}
 
 '''Take Home Point'''
 # Use a profiler to find the function which takes more time.
