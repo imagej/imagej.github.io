@@ -35,7 +35,7 @@ E9 exercise on multiple threads focuses on this issue and also highlight an addi
 
 Even though no code changes, sometimes debugging affects code execution. The Exercise 9 creates two parallel processes which are interdependent on each other. Each process throws up an error if the other process introduces a delay more than one second. So pausing for more than one second ,while debugging the program throws up an exception. So the act of debugging introduces errors in this case.
 
-Steps for the exercise
+'''Steps for the exercise'''
 * Run E9 with no breakpoint. Note that it works fine
 * Now set a breakpoint in the “getName” method of either the Even or Odd LonelyRunnable
 * Set the breakpoints property to “Suspend thread”
@@ -44,7 +44,7 @@ Steps for the exercise
 * Now modify the breakpoint and tell it to suspend VM instead of just the thread.
 * Debug again. When you hit a breakpoint, make sure you resume the VM and not just the thread.
 
-Takehome points-
+'''Takehome points'''
 * In case of multithreaded programming, stop the virtual machine at the breakpoint to freeze the state of all threads.
 [[File:E9StopVM.PNG|center|400px|thumb|Setting a breakpoint on an exception]]
 
