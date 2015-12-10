@@ -15,6 +15,14 @@ exercise: two methods, which takes more time to run?
 
 question box: which method took longer?
 
+'''Goals'''
+* Identifying bottleneck functions in a code segment
+
+Debugging often involves finding the function which performs poorly - in terms of computation time and/or memory resources used. For the code to perform as desired , fixing the poorly performing function may often lead to a simple solution. 
+
+Exercise 8 in pretty straightforward with the main function calling two functions - doStuff() and doMoreStuff() . Both functions are called one after the other for two minutes. Our goal is to find how much time is taken by each function in the two minute run. One solution a programmer may think of is to keep track of time taken by functions in some flag variables using System time, but this method does not scale up for many function calls
+
+Since the tutorial is for "debugging", we will not making any changes to code but will be using a profiling tool - Jvisualvm
 
 ==Exercise 9: Multiple threads==
 
