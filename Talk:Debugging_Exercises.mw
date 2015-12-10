@@ -9,11 +9,11 @@ Exercise 8 in pretty straightforward with the main function calling two function
 
 '''Steps for exercise'''
 # Insert a breakpoint on the <code>while</code> statement in main method
-# Launch JvisualVM. All running java applications are shown in the in Applications Tab (left margin) of JvisualVM. Double Click to select E8PerceivingPerformance. Go to the profiler tab and click the CPU option. '''Note''' Click on the settings checkbox on upper right corner of Jvisualvm. In CPU settings , make sure the class being profiled is net.imagej.trouble.** instead of net.imagej.trouble.visible.** - insert image
-[[File:E6Console.png|400px|Waiting for input after launching ImageJ]]
+# Launch JvisualVM. All running java applications are shown in the in Applications Tab (left margin) of JvisualVM. Double Click to select E8PerceivingPerformance. Go to the profiler tab and click the CPU option. '''Note''' Click on the settings checkbox on upper right corner of Jvisualvm. In CPU settings , make sure the class being profiled is net.imagej.trouble.** instead of net.imagej.trouble.visible.** - [[File:E8Settings.png|center|400px|Waiting for input after launching ImageJ]]
 # Switch to Eclipse and resume the execution of code 
 # Wait for the stipulated time , twiddle your thumbs. Or you can switch to JvisualVM and see how much time is taken by each of function in real time.
-# Example output - insert image
+# Example output 
+[[File:E8ProfilingResults.png|center|400px|Waiting for input after launching ImageJ]]
 
 Question 1 -
 Which process takes more time ? Answer - do stuff
