@@ -46,7 +46,7 @@ Steps for the exercise
 
 Takehome points-
 * In case of multithreaded programming, stop the virtual machine at the breakpoint to freeze the state of all threads.
-[[File:E9StopVM.PNG|center|600px|thumb|Setting a breakpoint on an exception]]
+[[File:E9StopVM.PNG|left|400px|thumb|Setting a breakpoint on an exception]]
 
 
 [[User:Hinerm|Hinerm]] ([[User talk:Hinerm|talk]])
