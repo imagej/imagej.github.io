@@ -28,22 +28,6 @@ Exercise 8 in pretty straightforward with the main function calling two function
 '''Take Home Point'''
 # Use a profiler to find the function which takes more time.
 
-
-Used when we need information about performance
-
-exercise: two methods, which takes more time to run?
-
-* open jvisualvm
-* run E8 program
-* double-click in jvisualvm
-* open “profile” tab
-* click “Settings”
-* change package to net.imagej.trouble.**
-* start profiling.
-
-
-question box: which method took longer?
-
 ==Exercise 9: Multiple threads==
 
 Even though no code changes, sometimes debugging affects code execution
