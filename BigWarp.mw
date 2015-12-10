@@ -21,7 +21,7 @@ of the warp on-the-fly.
 
 == Installation ==
 Bigwarp comes with Fiji.
-You can access it via ''Plugins {{arrow}} BigDataViewer {{arrow}} Big Warp''.
+You can access it via ''Plugins {{arrow}} BigDataViewer {{arrow}} Big Warp'', or by modifying {{GitHub|org=saalfeldlab|repo=bigwarp|path=src/main/resources/scripts/bigwarp_fiji_demo.bsh|label=this example script}}.
 
 == Usage ==
 
