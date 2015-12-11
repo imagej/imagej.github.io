@@ -19,6 +19,14 @@ This plugin implements '''and extends''' the ridge / line detection algorithm de
 It works with stacks, is parallelized, has a preview mode and is able to resolve overlapping lines.
 It depends on the [http://commons.apache.org/proper/commons-lang/ apache-commons-lang 3] library. For ImageJ, please copy it into plugins/jars.
 
+
+'''How to cite''':
+[https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-nl-means]
+
+
+
+
+
 == Examples ==
 [[File:CNT_Ridge_Detection_Original.png]]      [[File:CNT_Ridge_Detection_Example.png]]
 
