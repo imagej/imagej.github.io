@@ -16,7 +16,7 @@ This plugin implements '''and extends''' the ridge / line detection algorithm de
 
 ''Steger, C., 1998. An unbiased detector of curvilinear structures. IEEE Transactions on Pattern Analysis and Machine Intelligence, 20(2), pp.113–125.''
 
-It works with stacks, is parallelized and has a preview mode.
+It works with stacks, is parallelized, has a preview mode and is able to resolve overlapping lines.
 It depends on the [http://commons.apache.org/proper/commons-lang/ apache-commons-lang 3] library. For ImageJ, please copy it into plugins/jars.
 
 == Examples ==
