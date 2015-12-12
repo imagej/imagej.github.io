@@ -7,7 +7,6 @@
 | source                 = Github [https://github.com/jumpfunky/ij-ridgedetection [2]]
 | latest version         = v1.1.6 (11 Dez 2015)
 | status                 = active 
-
 }}
 
 
@@ -23,6 +22,7 @@ It depends on the [http://commons.apache.org/proper/commons-lang/ apache-commons
 '''How to cite''':
 
 [[File:Ij-ridgedetection.svg|174px|link=https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-ridgedetection]]
+
 
 
 
