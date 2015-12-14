@@ -19,15 +19,6 @@ It works with stacks, is parallelized, has a preview mode and is able to resolve
 It depends on the [http://commons.apache.org/proper/commons-lang/ apache-commons-lang 3] library. For ImageJ, please copy it into plugins/jars.
 
 
-'''How to cite''':
-
-[[File:Ij-ridgedetection.svg|174px|link=https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-ridgedetection]]
-
-
-
-
-
-
 == Examples ==
 [[File:CNT_Ridge_Detection_Original.png]]      [[File:CNT_Ridge_Detection_Example.png]]
 
@@ -118,3 +109,13 @@ Successful ridge detection with slope-based overlap detection enabled. Line 134 
 Simply turn on the [[How_to_follow_a_3rd_party_update_site|Biomedgroup update site]], which includes the ridge detection plugin.
 
 If you use ImageJ just copy the RidgeDetection.jar file in your plugins folder and copy the  [http://commons.apache.org/proper/commons-lang/ apache-commons-lang 3] jar file into the plugins/jars folder.
+
+=How to cite=
+We think the best way is to cite the formal method and the used implementation:
+
+Method:
+''Steger, C., 1998. An unbiased detector of curvilinear structures. IEEE Transactions on Pattern Analysis and Machine Intelligence, 20(2), pp.113–125.''
+
+Implementation:
+
+[[File:Ij-ridgedetection.svg|174px|link=https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-ridgedetection]]
