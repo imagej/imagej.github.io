@@ -43,6 +43,7 @@ You could simply use our update site "[http://fiji.sc/List_of_update_sites biome
 We think the best way is to cite the formal method and the used implementation:
 
 '''Method:'''
+
 ''Antoni Buades, Bartomeu Coll, and Jean-Michel Morel, Non-Local Means Denoising, Image Processing On Line, vol. 2011.'' 
 
 and
@@ -51,4 +52,4 @@ and
 
 '''Implementation:'''
 
-[[File:Ij-ridgedetection.svg|174px|link=https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-ridgedetection]]
+[[File:Zenodo.35114.svg|174px|link=https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-nl-means]]
