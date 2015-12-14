@@ -113,9 +113,10 @@ If you use ImageJ just copy the RidgeDetection.jar file in your plugins folder a
 =How to cite=
 We think the best way is to cite the formal method and the used implementation:
 
-Method:
+'''Method''':
+
 ''Steger, C., 1998. An unbiased detector of curvilinear structures. IEEE Transactions on Pattern Analysis and Machine Intelligence, 20(2), pp.113–125.''
 
-Implementation:
+'''Implementation''':
 
 [[File:Ij-ridgedetection.svg|174px|link=https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-ridgedetection]]
