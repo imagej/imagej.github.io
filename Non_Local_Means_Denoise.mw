@@ -38,3 +38,17 @@ The left image shows a noisy (sigma=25) image of lena and right image the denois
 =Installation=
 
 You could simply use our update site "[http://fiji.sc/List_of_update_sites biomedgroup]" to install the non local means plugin or copy the jar file into your plugins folder.
+
+=How to cite=
+We think the best way is to cite the formal method and the used implementation:
+
+'''Method:'''
+''Antoni Buades, Bartomeu Coll, and Jean-Michel Morel, Non-Local Means Denoising, Image Processing On Line, vol. 2011.'' 
+
+and
+
+''Darbon, J. et al., 2008. Fast nonlocal filtering applied to electron cryomicroscopy. In 2008 5th IEEE International Symposium on Biomedical Imaging: From Nano to Macro, Proceedings, ISBI. IEEE, pp. 1331–1334.''
+
+'''Implementation:'''
+
+[[File:Ij-ridgedetection.svg|174px|link=https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-ridgedetection]]
