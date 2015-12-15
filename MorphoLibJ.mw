@@ -39,7 +39,7 @@ The following filters are '''implemented both for 2D and 3D image'''s, and work 
 
 * '''morphological gradient''' is defined as the difference of a morphological dilation and a morphological erosion with the same structuring element, and enhances edges of the original images.
 
-* '''morphological Laplacien''' is defined as half the sum of a morphological dilation and a morphological erosion with the same structuring element, minus the original image, and enhances edges of the image.
+* '''morphological Laplacian''' is defined as half the sum of a morphological dilation and a morphological erosion with the same structuring element, minus the original image, and enhances edges of the image.
 
 * '''black top-hat''' consists in subtracting the original image from the result of a morphological closing, and results in the enhancement of dark structures smaller than structuring element.
 
