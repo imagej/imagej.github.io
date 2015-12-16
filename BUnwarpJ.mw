@@ -57,6 +57,15 @@ The following figure shows one of the '''resulting stacks''' from registering a 
 
 [[Image:BUnwarpJ-lena-basic-result.png|thumb|760px|center|From left to right, consecutive slices of the resulting stack: elastic-transformed image, original moving image and warped moving mask.]]
 
+
+The '''verbose mode''' produces more information:
+
+# The elastic deformation as a vector field. Each point in the fixed image must be deformed according to this field to fit into the warping image;
+# The grid obtained after deforming the fixed image with the vector field described above;
+# The step values of the optimization process in a separate ("Results") window.
+
+[[Image:BUnwarpJ-lena-verbose-result.png|thumb|760px|center|From left to right: the last consecutive slices of the resulting stack in verbose mode (deformation field and deformation grid) and the Log window with the optimization steps, final optimal values and execution time.]]
+
 == Downloads ==
 The latest stable distribution of bUnwarpJ can always be found included within Fiji and the '''latest released JARs are available in the''' [https://github.com/fiji/bUnwarpJ/releases GitHub repository]. If you detect any bug, please feel free to contact the maintainer. Any feedback will be very appreciated.
 === API documentation ===
