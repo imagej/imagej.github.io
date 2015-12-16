@@ -31,8 +31,9 @@ Where the weights of every term are set by the user in the main window of the pl
 == User Manual ==
 === Generalities ===
 The plugin can be called from the main ImageJ/Fiji menu under Plugins > Registration > bUnwarpJ. Two images ('''8, 16, 32-bit grayscale or RGB Color''') need to be opened in order to be able to use the plugin. If so, the following window will open:
-
-[[Image:BUnwarpJ-main-dialog.png|center|bUnwarpJ main dialog]]
+{|
+|[[Image:BUnwarpJ-main-dialog.png|thumb|375px|center|bUnwarpJ main dialog]]
+|}
 
 
 '''Both selected images will work simultaneously as source and target''', their tags are there only for the sake of clarification. The registration mode can be "Accurate", "Fast" and "Mono". The registration mode "'''Mono'''" (included since version 2.5) makes the program to perform only '''unidirectional''' registration, i.e. from source to target. The two registration modes "Accurate" and "Fast" involve performing '''bidirectional''' registration and affect the stopping criteria internally used by the program.  More internal options can be modified in the "Advanced Options" panel. This panel gives you access to most of the internal parameters of the algorithm. The "Initial" and "Final" deformation lists allow you to select the coarsest and finest scale of the spline deformation field. "Very coarse" corresponds to 4 splines (one in each corner of the image). As you increase the deformation level, the number of splines is doubled in each direction (horizontal and vertical).
