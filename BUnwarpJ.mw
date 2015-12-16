@@ -66,6 +66,14 @@ The '''verbose mode''' produces more information:
 
 [[Image:BUnwarpJ-lena-verbose-result.png|thumb|760px|center|From left to right: the last consecutive slices of the resulting stack in verbose mode (deformation field and deformation grid) and the Log window with the optimization steps, final optimal values and execution time.]]
 
+Since both, source and target images work as moving and fixed images, '''there are two sets (stacks) of results''': from source to target and from target to source.
+
+The "Mono" mode produces only results from the source to the target image.
+
+During the registration process, the current difference images and a mapping of the grid from the fixed images onto the moving images are shown:
+
+[[Image:BUnwarpJ-lena-during-registration.png|thumb|460px|center|Example of bUnwarpJ output during the registration process: difference image and grid on top of moving image.]]
+
 == Downloads ==
 The latest stable distribution of bUnwarpJ can always be found included within Fiji and the '''latest released JARs are available in the''' [https://github.com/fiji/bUnwarpJ/releases GitHub repository]. If you detect any bug, please feel free to contact the maintainer. Any feedback will be very appreciated.
 === API documentation ===
