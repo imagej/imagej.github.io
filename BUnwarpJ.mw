@@ -21,6 +21,12 @@ For a quick start, you can have a look at the [http://imagejdocu.tudor.lu/doku.p
 
 == General Description ==
 [[bUnwarpJ]] is an algorithm for '''elastic and consistent image registration''' developed as an ImageJ plugin. It performs a simultaneous registration of two images, A and B. Image A is elastically deformed in order to look as similar as possible to image B, and, at the same time, the "inverse" transformation (from B to A) is also calculated so a pseudo-invertibility of the final deformation could be guaranteed. Two images are given as a result: the deformed versions of A and B images.
+== Technical Explanations ==
+This image registration algorithm is based on the minimization of an energy functional that includes the dissimilarity between the source and target images -in both directions- <math>E_{img}</math>, an optional landmark constraint <math>E_{\mu}</math>, a regularization term <math>(E_{div} + E_{rot})</math>, and an energy term <math>E_{cons}</math> that accounts for the geometrical consistency between the elastic deformation in both directions. Namely, the energy function is given by
+
+:::::<math> E = w_iE_{img} + w_{\mu}E_{\mu} + (w_dE_{div} + w_rE_{rot}) + w_cE_{cons} </math>
+
+Where the weights of every term are set by the user in the main window of the plugin. The optimization process is a [https://en.wikipedia.org/wiki/Levenberg%E2%80%93Marquardt_algorithm Levenberg-Marquardt] minimization enhanced by a [https://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm Broyden-Fletcher-Goldfarb-Shanno (BFGS)] estimate of the local Hessian of the goal function, and both, images and deformations are represented by [https://en.wikipedia.org/wiki/B-spline cubic B-splines].
 
 == Downloads ==
 The latest stable distribution of bUnwarpJ can always be found included within Fiji and the '''latest released JARs are available in the''' [https://github.com/fiji/bUnwarpJ/releases GitHub repository]. If you detect any bug, please feel free to contact the maintainer. Any feedback will be very appreciated.
