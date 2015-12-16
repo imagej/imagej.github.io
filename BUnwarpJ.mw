@@ -22,6 +22,15 @@ For a quick start, you can have a look at the [http://imagejdocu.tudor.lu/doku.p
 == General Description ==
 [[bUnwarpJ]] is an algorithm for '''elastic and consistent image registration''' developed as an ImageJ plugin. It performs a simultaneous registration of two images, A and B. Image A is elastically deformed in order to look as similar as possible to image B, and, at the same time, the "inverse" transformation (from B to A) is also calculated so a pseudo-invertibility of the final deformation could be guaranteed. Two images are given as a result: the deformed versions of A and B images.
 
+== Downloads ==
+The latest stable distribution of bUnwarpJ can always be found included within Fiji and the '''latest released JARs are available in the''' [https://github.com/fiji/bUnwarpJ/releases GitHub repository]. If you detect any bug, please feel free to contact the maintainer. Any feedback will be very appreciated.
+=== API documentation ===
+The API documentation can be reached [http://javadoc.imagej.net/Fiji/bunwarpj/package-summary.html online].
+=== Installation ===
+In Fiji, [[bUnwarpJ]] comes installed by default. In ImageJ, you must simply download the latest bUnwarpJ_.jar to the Plugins folder of ImageJ, restart ImageJ and there will be a new "Registration > bUnwarpJ" command in the Plugins menu.
+
+To execute bUnwarpJ as a macro or from the command line, see the description in the User Manual.
+
 == Documentation ==
 * Main site's [http://biocomp.cnb.csic.es/~iarganda/bUnwarpJ/index.html#User_manual user manual]
 * [http://biocomp.cnb.csic.es/~iarganda/bUnwarpJ/API/index.html API documentation]
