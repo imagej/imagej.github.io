@@ -28,6 +28,35 @@ This image registration algorithm is based on the minimization of an energy func
 
 Where the weights of every term are set by the user in the main window of the plugin. The optimization process is a [https://en.wikipedia.org/wiki/Levenberg%E2%80%93Marquardt_algorithm Levenberg-Marquardt] minimization enhanced by a [https://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm Broyden-Fletcher-Goldfarb-Shanno (BFGS)] estimate of the local Hessian of the goal function, and both, images and deformations are represented by [https://en.wikipedia.org/wiki/B-spline cubic B-splines].
 
+== User Manual ==
+=== Generalities ===
+The plugin can be called from the main ImageJ/Fiji menu under Plugins > Registration > bUnwarpJ. Two images ('''8, 16, 32-bit grayscale or RGB Color''') need to be opened in order to be able to use the plugin. If so, the following window will open:
+
+[[Image:BUnwarpJ-main-dialog.png|center|bUnwarpJ main dialog]]
+
+
+'''Both selected images will work simultaneously as source and target''', their tags are there only for the sake of clarification. The registration mode can be "Accurate", "Fast" and "Mono". The registration mode "'''Mono'''" (included since version 2.5) makes the program to perform only '''unidirectional''' registration, i.e. from source to target. The two registration modes "Accurate" and "Fast" involve performing '''bidirectional''' registration and affect the stopping criteria internally used by the program.  More internal options can be modified in the "Advanced Options" panel. This panel gives you access to most of the internal parameters of the algorithm. The "Initial" and "Final" deformation lists allow you to select the coarsest and finest scale of the spline deformation field. "Very coarse" corresponds to 4 splines (one in each corner of the image). As you increase the deformation level, the number of splines is doubled in each direction (horizontal and vertical).
+
+Since '''bUnwarpJ 2.5''' there is a new parameter on the main window to allow '''subsampling''' the input images. The registration will be then calculated using the subsampled versions of the images but the results will be applied to the original ones. The image subsampling parameter can be chosen between '''0 and 7''', i.e. the image dimensions can be reduced by a factor of 2<sup>0</sup> = 1 to 2<sup>7</sup> = 128. This is very useful when registering large images.
+
+The different weights of the goal function control the relative weight of each one of the terms. These weights are not restricted to be between 0 and 1, and they may take any value as long as it is non-negative. You can see a '''description of the different function weights''' in the presentation "[https://sites.google.com/site/iargandacarreras/bUnwarpJ_ImageJ_Conf_2008_presentation.pdf bUnwarpJ: Consistent and Elastic Registration in ImageJ. Methods and Applications].", given at the Second ImageJ User & Developer Conference (2008) or have a look at the FAQ section.
+
+The stop threshold is used by the algorithm to stop the optimization process at each multiresolution level when the error relative change is not larger than this threshold.
+
+'''RGB Color images will be converted to grayscale during the registration process''' but the resulting transformations will be applied to the original color images.
+
+If you want to exit the plugin, press "Cancel". When you want the plugin to perform the registration press "OK". After running the plugin (on "Accurate" or "Fast" mode), '''the results are two stacks''' with the following three images:
+
+# One image (warping image) registered as to fit the other image (fixed image);
+# The fixed image;
+# The warping mask with the same deformation as the warping image. 
+
+The final registration values appear in a separate ("Results") window.
+
+The following figure shows one of the '''resulting stacks''' from registering a source (moving) Lena image to a target (fixed) warped version of the same image:
+
+[[Image:BUnwarpJ-lena-basic-result.png|thumb|760px|center|From left to right: elastic result, original moving image and warped moving mask]].
+
 == Downloads ==
 The latest stable distribution of bUnwarpJ can always be found included within Fiji and the '''latest released JARs are available in the''' [https://github.com/fiji/bUnwarpJ/releases GitHub repository]. If you detect any bug, please feel free to contact the maintainer. Any feedback will be very appreciated.
 === API documentation ===
