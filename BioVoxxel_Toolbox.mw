@@ -313,7 +313,7 @@ How To: Before creating the plot the user can select the area of interest. This 
 In the resulting plot the user can use any area selection tool to select a specific plot region. Here, the selected region can as well be a composite selection in different areas. The selected areas will then be indicated in the image linked to the plot. New selection of different image regions does not update the plot (therefore you need to create a new plot window). The indicated statistical values are calculated for the initially selected image region. Thus, they are currently not updated when different regions are selected in the plot window. This will still be added in one of the next versions.
 
 
-[[File:Example.jpg]]
+[[File:Interactive Correlation Plot.png|750px]]
 
 status: active development (see indications above for planned changes)
 
