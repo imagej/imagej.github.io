@@ -548,3 +548,4 @@ Even if you can't contribute a fix, if you went through the effort of debugging 
 * [http://webcache.googleusercontent.com/search?q=cache:http://www.vogella.com/tutorials/EclipseDebugging/article.html Debugging in Eclipse]
 * [http://wiki.eclipse.org/index.php/MemoryAnalyzer Using the Eclipse Memory Analyzer plugin]
 * [https://visualvm.java.net/gettingstarted.html Using jvisualvm]
+* [https://visualvm.java.net/profiler.html Profiling applications with jvisualvm)
