@@ -29,4 +29,13 @@ Glasbey can also be used to illustrate otherwise-subtle phenomena such as JPEG c
 
 The Glasbey LUT is based on the publication:
 
-Glasbey, Chris, et al. "[http://onlinelibrary.wiley.com/doi/10.1002/col.20327/abstract Colour displays for categorical images]." ''Color Research & Application'' 32.4 (2007): 304-309.
+* {{Citation | last = Glasbey | first = Chris
+| last2 = van der Heijden | first2 = Gerie
+| last3 = Toh | first3 = Vivian F. K.
+| last4 = Gray | first4 = Alision
+| year = 2007
+| journal = Color Research & Application
+| url = http://onlinelibrary.wiley.com/doi/10.1002/col.20327/abstract
+| title = Colour displays for categorical images
+| volume = 32.4
+| pages = 304-309}}.
