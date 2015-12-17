@@ -471,16 +471,16 @@ There is a huge amount of information that can be browsed in the heap dump. Most
 
 ==Exercise 8: Profiling==
 '''Goals'''
-* Identifying bottleneck functions in a code segment
+* Identify performance bottlenecks
 
+In the other debugging exercises, we look at programs failing due to errors. Another common concern is program ''performance'' - does your program run in a reasonable time frame? This often can not be deduced by simply looking at the code. So the first step in fixing performance is identifying the location of the slowdown.
 
-Debugging often involves finding the function which performs poorly - in terms of computation time and/or memory resources used. For the code to perform as desired , fixing the poorly performing function may often lead to a simple solution. 
-
-Exercise 8 in pretty straightforward with the main function calling two functions - doStuff() and doMoreStuff() . Both functions are called one after the other for two minutes. Our goal is to find how much time is taken by each function in the two minute run. One solution a programmer may think of is to keep track of time taken by functions in some flag variables using System time, but this method does not scale up for many function calls. Since the tutorial is for "debugging", we will not making any changes to code but will be using a profiling tool - Jvisualvm [https://visualvm.java.net/] which is a bare bones profiler with basic functionalities and is freely available. 
+Exercise 8 in pretty straightforward with the main function calling two functions - <code>doStuff()</code> and <code>doMoreStuff()</code>. Both functions are called one after the other for two minutes. Our goal is to find which function is slower than the other. One solution a programmer may think of is to keep track of time taken by comparing values returned by [http://docs.oracle.com/javase/7/docs/api/java/lang/System.html#currentTimeMillis%28%29 System.currentTimeMillis], but this method does not scale up for large program and requires modifications to the code. It is much more efficient and useful to use a profiler to monitor time spent in methods - which is part of the [jvisualvm](Debugging_Exercises#Requirements) troubleshooting tool. 
 
 '''Steps for exercise'''
 # Insert a breakpoint on the <code>while</code> statement in main method
-# Launch JvisualVM. All running java applications are shown in the in Applications Tab (left margin) of JvisualVM. Double Click to select E8PerceivingPerformance. Go to the profiler tab and click the CPU option. '''Note''' Click on the settings checkbox on upper right corner of Jvisualvm. In CPU settings , make sure the class being profiled is net.imagej.trouble.** instead of net.imagej.trouble.visible.** - [[File:E8Settings.png|center|thumb|400px|Adjust settings]]
+# Launch JvisualVM. All running Java applications are shown in the in Applications Tab (left margin) of JvisualVM. Double Click to select E8PerceivingPerformance. Go to the profiler tab and click the CPU option. 
+# Click on the settings checkbox on upper right corner of Jvisualvm. In CPU settings , make sure the class being profiled is '''<code>net.imagej.trouble.**</code>''' instead of <code>net.imagej.trouble.visible.**</code>, or the profiler won't be looking in the right place [[File:E8Settings.png|center|thumb|400px|Adjust settings]]
 # Switch to Eclipse and resume the execution of code 
 # Wait for the stipulated time , twiddle your thumbs. Or you can switch to JvisualVM and see how much time is taken by each of function in real time.
 # Example output 
@@ -493,12 +493,11 @@ Exercise 8 in pretty straightforward with the main function calling two function
 
 {{ExpandingBox
 |Are the number of invocations/function calls of both functions same ?
-|Yes. This number will change based on the length of profiling, but in this case we see both methods were called 83,573,448 times.
+|Yes. This number will change based on the length of profiling, but in this case we see both methods were called 83,573,448 times - so the difference in timing is truly due to length of method execution.
 }}
 
 '''Takeaways'''
-* Using a profiler tool when you need to identify performance bottlenecks.
-
+* Profiling tools allow quick and precise identification of performance bottlenecks.
 
 ==Exercise 9: Multiple threads==
 
