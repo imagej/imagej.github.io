@@ -120,7 +120,7 @@ The [https://github.com/scijava/scijava-scripts/blob/aab7cfe805638efc25615fdd7c7
 
 # Install the release-version.sh script. The best way to do this is to clone the complete [https://github.com/scijava/scijava-scripts SciJava-scripts] repository. That will give you access to other useful scripts and help keep them all up to date.
 # ('''optional''') If you want to easily use these scripts from any directory, you can [http://askubuntu.com/q/97897 add the scijava-scripts folder to your PATH].
-# You will need an account for [http://maven.imagej.net maven.imagej.net] and the local Maven configuration to deploy to this repository. If you haven't set this up yet, contact the ImageJ developers on the [[forum]] to ask for an account. Then follow [https://maven.apache.org/guides/mini/guide-encryption.html this guide] to configure your <code>settings.xml</code> and <code>settings-security.xml</code> appropriately on your local machine.
+# You will need an account for [http://maven.imagej.net maven.imagej.net] and the local Maven configuration to deploy to this repository. If you haven't set this up yet, contact the ImageJ developers on the [[ImageJ Forum]] to ask for an account. Then follow [https://maven.apache.org/guides/mini/guide-encryption.html this guide] to configure your <code>settings.xml</code> and <code>settings-security.xml</code> appropriately on your local machine.
 
 '''Steps to release:'''
 
