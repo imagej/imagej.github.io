@@ -77,6 +77,42 @@ During the registration process, the current difference images and a mapping of 
 |[[Image:BUnwarpJ-lena-during-registration.png|thumb|460px|center|Example of bUnwarpJ output during the registration process: difference image and grid on top of moving image.]]
 |}
 
+During the registration process the toolbar will be changed to
+
+{|
+|[[Image:BUnwarpJ-toolbar-when-registering.png|thumb|500px|center|bUnwarpJ toolbar when the registration process has started. ]]
+|}
+
+Click on the stop button to stop the process. The output at the current state of the optimization will be returned in the normal way.
+==== Landmarks ====
+When the plugin is called and before pressing "OK" in the main window, the toolbar changes its appearance and it is possible to manually add landmarks to the selected images:
+
+{|
+|[[Image:BUnwarpJ-toolbar-add-crosses.png|thumb|500px|center|bUnwarpJ toolbar before starting registration.]]
+|}
+
+The depressed button indicates that you may '''add a landmark''' now. Landmarks are added in either image. The landmark will be automatically placed in the same position on both images. The new landmark becomes the "current landmark" (indicated by a thicker [+] sign in the current image and a [×] sign in the other image, while all the rest are represented by [+] signs). To move any landmark, press on the "'''Move crosses'''" button:
+
+{|
+|[[Image:BUnwarpJ-toolbar-move-crosses.png|thumb|500px|center|bUnwarpJ toolbar with "Move crosses" button selected.]]
+|}
+
+Click and drag on any landmark to make it correspond to the same position in both images. Here goes an example of the two Lena images with corresponding landmarks:
+
+{|
+|[[Image:BUnwarpJ-landmarks-example.png|thumb|540px|center|Example of landmarks on moving and fixed images.]]
+|}
+
+Landmarks can be removed through the "'''Remove crosses'''" button:
+
+{|
+|[[Image:BUnwarpJ-toolbar-remove-crosses.png|thumb|500px|center|bUnwarpJ toolbar with "Remove crosses" button selected so the user can remove landmarks.]]
+|}
+
+This is the way of manually adding landmarks to the registration process. However, '''since bUnwarpJ v2.0''' there is the option as well of using automatic landmarks as explained in the section SIFT and MOPS support, '''or manually adding point selections in both images before calling the plugin'''. If the number of point selections is the same in both images, they will be transformed into landmarks.
+
+'''When exiting bUnwarpJ all the images are restored to their previous state''', i.e. the original regions of interest and point selections are restored.
+
 == Downloads ==
 The latest stable distribution of bUnwarpJ can always be found included within Fiji and the '''latest released JARs are available in the''' [https://github.com/fiji/bUnwarpJ/releases GitHub repository]. If you detect any bug, please feel free to contact the maintainer. Any feedback will be very appreciated.
 === API documentation ===
