@@ -45,9 +45,10 @@ The Fiji project is driven by a strong desire to improve the tools available for
 Browse the [[:Category:News|news archive]].
 
 == Downloads ==
-{{DownloadLatestFiji}}
+{{DownloadFiji}}
 See the [[Downloads]] page for Life-Line versions, etc.
 {{FijiDocsMenu}}
+
 == License ==
 
 Fiji is released as [[open source]] under the [[GPL|GNU General Public License]].
