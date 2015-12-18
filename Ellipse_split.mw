@@ -17,7 +17,15 @@ The ellipse splitting plugin splits binary objects which could approximated by a
 
 and used the implementation of [http://fiji.sc/BoneJ BoneJ].
 
-
+The generall approach of the ellipse fitting plugin is as follow:
+ 1. Given in binary input image I
+ 2. Then image W is the split using ImageJ's watershed approach
+ 3. Bei xor I and W you get all watershed lines L
+ 4. Extract all contours in W using ijblob
+ 5. Remove those parts of the contours which which are neighbor of L
+ 6. Fit an ellipse to each remaining contour part
+ 7. Merge ellipses if possible
+ 8. Filter ellipses by geometric features
 
 == Examples ==
 [[File:Ellipsesplit input.png|250px]]
@@ -32,4 +40,4 @@ and used the implementation of [http://fiji.sc/BoneJ BoneJ].
 
 Simply turn on the Biomedgroup update site, which includes the ellipse splitting  plugin.
 
-If you use ImageJ just copy the ij-ellipessplit.jar file in your plugins folder and copy the [http://sourceforge.net/projects/geom-java/files/gpcj/ GPCJ 2.2.0 ] jar file into the plugins/jars folder.
+If you use ImageJ just copy the ij-ellipessplit.jar file in your plugins folder and copy the [http://sourceforge.net/projects/geom-java/files/gpcj/ GPCJ 2.2.0 ] and the latest ij-blob jar file into the plugins/jars folder.
