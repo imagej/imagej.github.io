@@ -112,6 +112,23 @@ This is the way of manually adding landmarks to the registration process. Howeve
 
 '''When exiting bUnwarpJ all the images are restored to their previous state''', i.e. the original regions of interest and point selections are restored.
 
+====Masks====
+This program allows you using masks in '''two mutually exclusive ways'''. In the first way, masks are introduced together with the input images. In this mode, input images must be a stack of images (first slice: the image itself, second slice: the mask). In this way, the mask can have any shape. In the second way, the input images must not be stacks and simple polygonal masks can be used. These masks are defined using the two buttons ("'''Draw an inner mask'''" and "'''Draw an outer mask'''") shown below:
+
+{|
+|[[Image:BUnwarpJ-toolbar-draw-inner-mask.png|thumb|500px|center|bUnwarpJ toolbar with "Draw an inner mask" button selected.]]
+|-
+|[[Image:BUnwarpJ-toolbar-draw-outer-mask.png|thumb|500px|center|bUnwarpJ toolbar with "Draw an outer mask" button selected.]]
+|}
+
+The inner mask keeps the information in the interior of the polygon, while the outer mask keeps the information in the exterior of the polygon. The thrown-out information is grayed. Here goes an example of an inner mask:
+
+{|
+|[[Image:BUnwarpJ-inner-mask-example.png|thumb|260px|center|bUnwarpJ example of inner mask on Lena image.]]
+|}
+
+Masks can be used for one of the images, both, or none. You can put a mask in one of the images and not in the other, you can put a mask (with different shapes) in both images, or you may not use masks at all. After calling the plugin, the masks are erased and the initial images are restored.
+
 == Downloads ==
 The latest stable distribution of bUnwarpJ can always be found included within Fiji and the '''latest released JARs are available in the''' [https://github.com/fiji/bUnwarpJ/releases GitHub repository]. If you detect any bug, please feel free to contact the maintainer. Any feedback will be very appreciated.
 === API documentation ===
