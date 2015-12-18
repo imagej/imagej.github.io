@@ -52,9 +52,9 @@ Furthermore it outputs several important features:
 '''Add to manager:''' (true/false) If true, the ellipses will be added to the ROI manager.
 
 
-'''Add to results table:'''
+'''Add to results table:''' (true/false) If true, some geometrical features of the ellipses will be added to the results table.
 
-'''Overlap threshold in %:'''
+'''Overlap threshold in %:''' If the image is oversegmentated, two ellipses could belong the same real object. If that is case, it is likly that the ellipses are strongly overlapping. In those cases the ellipses will be merged. The ''overlap threshold in %'' is the realtive part of one ellipse containing a other ellipse. 
 
 '''Major axis length:'''
 
