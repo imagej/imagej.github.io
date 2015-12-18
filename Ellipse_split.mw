@@ -29,15 +29,19 @@ The generall approach of the ellipse fitting plugin is as follow:
 
 == Examples ==
 Suppose you have the follow input image:
+
 [[File:Ellipsesplit input.png|300px]]
 
 Then the watershed approach would give the following result:
+
 [[File:Ellipsesplit_watershed.png|300px]]
 
 The ellipse splitting plugin applyed to the input image will combine the watershed result and direct ellipse fitting. This leads to the following result:
+
 [[File:Ellipsesplit_result.png|300px]]
 
 Furthermore it outputs several important features:
+
 [[File:Ellipsesplit_resultstable.png|250px]]
 
 == Parameters ==
