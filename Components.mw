@@ -1,3 +1,5 @@
+{{Development}}
+
 A software '''component''' is a program, such as a [[plugin]], or a [[wikipedia:Library (computing)|library]] of reusable functions. Components are typically designed to work together, and combined to form a [[wikipedia:Application software|software application]] such as [[ImageJ]].
 
 This web site documents lots of software components—and in particular, many ImageJ [[plugins]]. Each component's page features an informational sidebar. This page describes the meaning and purpose behind the sections of that sidebar.
