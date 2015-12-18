@@ -118,9 +118,24 @@ The [https://github.com/scijava/scijava-scripts/blob/aab7cfe805638efc25615fdd7c7
 
 '''Prerequisites:'''
 
-# Install the release-version.sh script. The best way to do this is to clone the complete [https://github.com/scijava/scijava-scripts SciJava-scripts] repository. That will give you access to other useful scripts and help keep them all up to date.
-# ('''optional''') If you want to easily use these scripts from any directory, you can [http://askubuntu.com/q/97897 add the scijava-scripts folder to your PATH].
-# You will need an account for [http://maven.imagej.net maven.imagej.net] and the local Maven configuration to deploy to this repository. If you haven't set this up yet, contact the ImageJ developers on the [[ImageJ Forum]] to ask for an account. Then follow [https://maven.apache.org/guides/mini/guide-encryption.html this guide] to configure your <code>settings.xml</code> and <code>settings-security.xml</code> appropriately on your local machine.
+<ul>
+<li>Install the release-version.sh script. The best way to do this is to clone the complete [https://github.com/scijava/scijava-scripts SciJava-scripts] repository. That will give you access to other useful scripts and help keep them all up to date.</li>
+<li>('''optional''') If you want to easily use these scripts from any directory, you can [http://askubuntu.com/q/97897 add the scijava-scripts folder to your PATH].</li>
+<li>You will need an account for [http://maven.imagej.net maven.imagej.net] and the local Maven configuration to deploy to this repository. If you haven't set this up yet, contact the ImageJ developers on the [[ImageJ Forum]] to ask for an account. Then follow [https://maven.apache.org/guides/mini/guide-encryption.html this guide] to configure your <code>settings.xml</code> and <code>settings-security.xml</code> appropriately on your local machine. In particular, you will need the following block in <code>settings.xml</code>:
+<pre>
+	<servers>
+		<server>
+			<id>imagej.releases</id>
+			<username>{your Nexus username}</username>
+			<password>{your Nexus password hash}</password>
+		</server>
+		<server>
+			<id>imagej.snapshots</id>
+			<username>{your username}</username>
+			<password>{your Nexus password hash}</password>
+		</server>
+	<servers>
+</pre></li>
 
 '''Steps to release:'''
 
