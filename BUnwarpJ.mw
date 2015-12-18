@@ -129,6 +129,39 @@ The inner mask keeps the information in the interior of the polygon, while the o
 
 Masks can be used for one of the images, both, or none. You can put a mask in one of the images and not in the other, you can put a mask (with different shapes) in both images, or you may not use masks at all. After calling the plugin, the masks are erased and the initial images are restored.
 
+====Input/Output options====
+When using the "'''Input/Output Menu'''" from the toolbar, we have the possibility of processing different input and output files that will affect the registration.
+
+{|
+|[[Image:BUnwarpJ-toolbar-IO-menu.png|thumb|500px|center|bUnwarpJ toolbar with "Input/Output menu" button selected.]]
+|}
+{|
+|[[Image:BUnwarpJ-IO-menu.png|thumb|300px|center|bUnwarpJ Input/Output menu.]]
+|}
+
+In the last release, the plugin presents the following Input/Output options:
+
+* '''Load Landmarks''': it allows loading landmarks files.
+* '''Save Landmarks As''': it allows saving the image landmarks into a file.
+* '''Show Landmarks''': it forces the landmarks to be displayed in a separate table.
+* '''Load Elastic Transformation''': it loads an elastic transformation from a file and applies it to the so-called source image. The transformation file must be in the format of the plugin B-spline transformations, i.e. the same format as the files created with the "Save Transformation" option.
+* '''Load Raw Transformation''': it loads a raw transformation from a file and applies it to the so-called source image. The transformation file must be in "raw" format, i.e. the same format as the files created with the "Convert Transformation To Raw" option. See raw_transformation_template.txt for a format description.
+* '''Compare Opposite Elastic Transformations''': it calculates the warping index of two elastic transformations, i.e. the average of the geometrical distance between every pixel and its version after applying both transformations (direct and inverse). This value is given as a result. The transformation files must be in the format of the plugin B-spline transformations (same format as the files created with the "Save Transformation" option).
+* '''Compare Raw Transformations''': it calculates the warping index of two raw transformations (same direction). The transformation file must be in "raw" format, i.e. the same format as the files created with the "Convert Transformation To Raw" option.
+* '''Convert Transformation To Raw''': it converts a B-spline transformation file into a raw transformation file.
+* '''Compose Elastic Transformations''': it composes two elastic transformations into a raw transformation. The input files must be in the B-spline transformation format, and the output file will be in "raw" format.
+* '''Compose Raw Transformations''': it composes two raw transformations into another raw transformation. Both input and output files will be in "raw" format.
+* '''Compose Raw and Elastic Transformations''': it composes one raw transformation and one elastic transformation into a raw transformation.
+* '''Evaluate Image Similarity''': it calculates de current similarity error between the source and target images. The results is displayed in the "Results" window.
+* '''Adapt Coefficients''': it transforms the coefficients of an specific elastic transformation according to a real image factor. Very useful for example when we have very large images. We can register subsampled versions of our images (let us say 4 times smaller) and then adapt the result transformations (image factor = 4) so we can apply them to the high resolution images.
+* '''Load Source Mask''': it loads a mask from file (binary image) in the source image.
+* '''Load Source Initial Affine Matrix''': it loads an affine matrix as starting point for the source-target transformation from a file. See affine_transformation_matrix.txt for a description of the format.
+
+These new options (since version 1.1) allow the user comparing the results of our program with any other registration method. 
+
+You can also test bUnwarpJ with [[Spline Deformation Generator]], an ImageJ plugin that allows the user to generate five different image deformations: elastic, fisheye, perspective, barrel/pincushion and smile effect. [[Spline Deformation Generator]] uses the same raw transformation file format as bUnwarpJ, so they are completely compatible. 
+
+
 == Downloads ==
 The latest stable distribution of bUnwarpJ can always be found included within Fiji and the '''latest released JARs are available in the''' [https://github.com/fiji/bUnwarpJ/releases GitHub repository]. If you detect any bug, please feel free to contact the maintainer. Any feedback will be very appreciated.
 === API documentation ===
