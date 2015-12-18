@@ -28,11 +28,11 @@ The generall approach of the ellipse fitting plugin is as follow:
  8. Filter ellipses by geometric features
 
 == Examples ==
-Suppose you have the follow input image:
+Suppose you have the following input image:
 
 [[File:Ellipsesplit input.png|300px]]
 
-Then the watershed approach would give the following result:
+Then the watershed approach would give the this result:
 
 [[File:Ellipsesplit_watershed.png|300px]]
 
