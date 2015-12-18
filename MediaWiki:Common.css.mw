@@ -922,8 +922,13 @@ td.yesno {
 }
 
 /* NB: Make all links bright enough to see clearly. */
-#mw_main a {
+#content a {
     color: #26d !important;
+}
+
+/* Make code links look a little nicer. */
+code {
+  border: 1px solid #ddd;
 }
 
 /* Avoid clipping h1 blocks */
