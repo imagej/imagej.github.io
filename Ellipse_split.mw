@@ -67,3 +67,5 @@ Furthermore it outputs several important features:
 Simply turn on the [http://fiji.sc/How_to_follow_a_3rd_party_update_site Biomedgroup update site], which includes the ellipse splitting  plugin.
 
 If you use ImageJ just copy the ij-ellipessplit.jar file in your plugins folder and copy the [http://sourceforge.net/projects/geom-java/files/gpcj/ GPCJ 2.2.0 ]  and the latest [http://fiji.sc/IJ_Blob ij-blob] jar file into the plugins/jars folder.
+
+== How to cite ==
