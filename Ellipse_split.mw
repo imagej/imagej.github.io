@@ -47,6 +47,21 @@ Furthermore it outputs several important features:
 == Parameters ==
 [[File:EllipseSplit.png|350px|thumb|GUI of Ellipse Split Plugin]]
 
+'''Binary splitted image:''' If set to "Use standard watershed" it will use image's watershed technique to split the binary object.
+
+'''Add to manager:''' (true/false) If true, the ellipses will be added to the ROI manager.
+
+
+'''Add to results table:'''
+
+'''Overlap threshold in %:'''
+
+'''Major axis length:'''
+
+'''Minor axix length:'''
+
+'''Aspect ratio:'''
+
 == Installation ==
 
 Simply turn on the [http://fiji.sc/How_to_follow_a_3rd_party_update_site Biomedgroup update site], which includes the ellipse splitting  plugin.
