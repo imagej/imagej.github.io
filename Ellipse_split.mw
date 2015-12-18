@@ -8,3 +8,7 @@
 | latest version         = v0.3.7 (18 Dez 2015)
 | status                 = active 
 }}
+
+== Purpose ==
+
+The ellipse splitting plugin splits binary objects which could approximated by an ellipse.
