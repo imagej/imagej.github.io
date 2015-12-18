@@ -16,5 +16,12 @@ The ellipse splitting plugin splits binary objects which could approximated by a
 
 
 == Examples ==
+[[File:Ellipsesplit input.png|350px]]
+[[File:Ellipsesplit_result.png
+|350px]]
+[[File:Ellipsesplit_watershed.png
+|350px]]
+[[File:Ellipsesplit_resultstable.png
+|350px]]
 
 == Parameters ==
