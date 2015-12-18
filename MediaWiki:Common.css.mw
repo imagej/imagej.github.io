@@ -921,11 +921,6 @@ td.yesno {
     margin-top: 25px;
 }
 
-/* NB: Make all links bright enough to see clearly. */
-#content a {
-    color: #26d !important;
-}
-
 /* Make code links look a little nicer. */
 code {
   border: 1px solid #ddd;
@@ -1029,6 +1024,11 @@ font-weight: bold;
 text-align: center;
 padding-bottom: 10px;
 margin-top: 1.75em;
+}
+
+/* NB: Make all links bright enough to see clearly. */
+#content a {
+    color: #26d !important;
 }
 
 /* </nowiki></pre> */
