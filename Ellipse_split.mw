@@ -23,3 +23,7 @@ The ellipse splitting plugin splits binary objects which could approximated by a
 
 == Parameters ==
 [[File:EllipseSplit.png|350px|thumb|GUI of Ellipse Split Plugin]]
+
+== Installation ==
+
+It depends on http://sourceforge.net/projects/geom-java/files/gpcj/
