@@ -60,7 +60,7 @@ Furthermore it outputs several important features:
 
 '''Minor axix length:''' The length of minor axis...
 
-'''Aspect ratio:'''
+'''Aspect ratio:''' Major axis length / minor axis length
 
 == Installation ==
 
