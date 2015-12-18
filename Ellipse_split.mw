@@ -26,4 +26,6 @@ The ellipse splitting plugin splits binary objects which could approximated by a
 
 == Installation ==
 
-It depends on [http://sourceforge.net/projects/geom-java/files/gpcj/ GPCJ 2.2.0 ]
+Simply turn on the Biomedgroup update site, which includes the ellipse splitting  plugin.
+
+If you use ImageJ just copy the ij-ellipessplit.jar file in your plugins folder and copy the [http://sourceforge.net/projects/geom-java/files/gpcj/ GPCJ 2.2.0 ] jar file into the plugins/jars folder.
