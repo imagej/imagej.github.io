@@ -18,9 +18,9 @@ The ellipse splitting plugin splits binary objects which could approximated by a
 and used the implementation of [http://fiji.sc/BoneJ BoneJ].
 
 The generall approach of the ellipse fitting plugin is as follow:
- 1. Given in binary input image I
+ 1. Given the binary input image I
  2. Then image W is the split using ImageJ's watershed approach
- 3. Bei xor I and W you get all watershed lines L
+ 3. XOR I and W to get all watershed lines L
  4. Extract all contours in W using ijblob
  5. Remove those parts of the contours which which are neighbor of L
  6. Fit an ellipse to each remaining contour part
