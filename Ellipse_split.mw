@@ -11,7 +11,11 @@
 
 == Purpose ==
 
-The ellipse splitting plugin splits binary objects which could approximated by an ellipse.
+The ellipse splitting plugin splits binary objects which could approximated by an ellipse. The used ellipse fitting algorithm was proposed in 
+
+''A. Fitzgibbon, M. Pilu, and R. B. Fisher, “Direct least square fitting of ellipses,” IEEE Trans. Pattern Anal. Mach. Intell., vol. 21, no. 5, pp. 476–480, May 1999.''
+
+and used the implementation of [http://fiji.sc/BoneJ BoneJ].
 
 
 
