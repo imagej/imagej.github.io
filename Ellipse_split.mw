@@ -47,7 +47,7 @@ Furthermore it outputs several important features:
 == Parameters ==
 [[File:EllipseSplit.png|350px|thumb|GUI of Ellipse Split Plugin]]
 
-'''Binary splitted image:''' If set to "Use standard watershed" it will use image's watershed technique to split the binary object.
+'''Binary splitted image:''' If set to "Use standard watershed" it will use image's watershed technique to split the binary object. If there are better techniques for splitting available, you could select here the binary image splitted by that technique.
 
 '''Add to manager:''' (true/false) If true, the ellipses will be added to the ROI manager.
 
