@@ -57,16 +57,6 @@ Fiji builds on top of the [[ImageJ2]] core, which is licensed under the permissi
 
 Plugins and other components have their own {{GitHub|repo=fiji|path=LICENSES|label=licenses}}.
 
-== Help ==
-
-* [[Documentation]]
-* [[Getting started]]
-* [[:Category:Tutorials|Tutorials]]
-* [[Report a Bug]]
-* [[Help#Getting help with ImageJ|Contact]]
-
-See also the sidebar on the right.
-
 == Contributing ==
 
 Fiji is supported by several laboratories and institutions:
