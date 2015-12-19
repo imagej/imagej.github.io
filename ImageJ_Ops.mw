@@ -38,8 +38,10 @@ Unfortunately, we do not have such a list right now. To see the list of Ops we h
 
 You can also use the [http://imagej.net/Script_Editor script editor] in ImageJ and actively search using Ops itself. for example:
 
-    // @OpService ops
-    print ops.help()
+<source lang="java">
+// @OpService ops
+print ops.help()
+</source>
 
 in groovy will give a list of every Op signature. Help is an Op for getting information about other ops or namespaces, e.g. ops.help("add") will just return info about the available add ops.
 
