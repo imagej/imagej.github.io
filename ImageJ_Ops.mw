@@ -43,7 +43,7 @@ You can also use the [http://imagej.net/Script_Editor script editor] in ImageJ a
 print ops.help()
 </source>
 
-in groovy will give a list of every Op signature. Help is an Op for getting information about other ops or namespaces, e.g. ops.help("add") will just return info about the available add ops.
+in groovy will give a list of every Op signature. The <code>help</code> op provides information about ops or namespaces; e.g., <code>ops.help("add")</code> will return info about available <code>add<code> ops.
 
 A tree-based high-level view is [https://github.com/imagej/imagej-ui-swing/commit/9d54c38f57ac15b9986590bc4c5aa09d752f6e65 coming soon]...
 
