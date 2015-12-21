@@ -32,7 +32,7 @@ Press {{key press|F1}} at any time to open a help page with a listing of navigat
 
 === Landmark point placement ===
 
-Landmark placements is done in ''Landmark mode'' which can be toggled with {{key press|Spacebar}}.
+Landmark placements is done in ''Landmark mode'' which you enter by holding {{key press|Spacebar}}.
 Users place pairs of corresponding points on  
 
 The following table shows the available landmark placement commands and keystrokes. 
@@ -54,9 +54,8 @@ point for the target image.
 
 === Navigation and Visualization ===
 
-Bigwarp shares many navigation features with BigDataViewer, the details of which can be
-found on the [[BigDataViewer#Basic_Navigation|BigDataViewer Navigation Page]], or on the
-help page.  BigWarp specific features are documented below.
+Bigwarp inherits many image [[BigDataViewer#Basic_Navigation|navigation]], [[BigDataViewer#Adjusting_Brightness_and_Color|visualization]], and [[BigDataViewer#Grouping_Sources|grouping]] features with BigDataViewer, the details of which can be found on the [[BigDataViewer|BigDataViewer]] page
+or on the help page.  BigWarp specific features are documented below.
 
 The following table shows the available navigation commands using the mouse:
 
