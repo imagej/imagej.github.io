@@ -4,7 +4,7 @@
 | author                = {{Person|Bogovic}}
 | maintainer            = {{Person|Bogovic}}
 | source                = {{GitHub|org=saalfeldlab|repo=bigwarp}}
-| latest version        = 1.0.0
+| latest version        = 2.0.1
 | status                = stable
 | category              = [[:Category:Plugins|Plugins]], [[:Category:Visualization|Visualization]], [[:Category:Transform|Transform]]
 }}
@@ -37,7 +37,7 @@ Users place pairs of corresponding points on
 
 The following table shows the available landmark placement commands and keystrokes. 
 {| border="1" style="border-collapse:collapse;"
-| style="padding: 5px;" | {{key press|Spacebar}}
+| style="padding: 5px;" | {{key hold|Spacebar}}
 | style="padding: 5px;" | Toggle ''Landmark mode'' 
 |-
 | style="padding: 5px;" | <''Landmark mode on''>+{{key press|left-click}}
@@ -52,7 +52,7 @@ landmark point for the moving image.  The release places a landmark
 point for the target image.
 |}
 
-=== Navigation ===
+=== Navigation and Visualization ===
 
 Bigwarp shares many navigation features with BigDataViewer, the details of which can be
 found on the [[BigDataViewer#Basic_Navigation|BigDataViewer Navigation Page]], or on the
@@ -68,5 +68,14 @@ The following table shows the available navigation commands using the mouse:
 | style="padding: 5px;" | Align the active viewer with the non-active viewer.
 |-
 | style="padding: 5px;" | {{key press|R}}
-| style="padding: 5px;" | Resets the active viewer. 
+| style="padding: 5px;" | Resets the active viewer.
+|-
+| style="padding: 5px;" | {{key press|U}}
+| style="padding: 5px;" | Show warp visualization / grid dialog.
+|-
+| style="padding: 5px;" | {{key press|F6}}
+| style="padding: 5px;" | Show moving image panel Visibility & and Grouping dialog.
+|-
+| style="padding: 5px;" | {{key press|F7}}
+| style="padding: 5px;" | Show target image panel Visibility & and Grouping dialog.
 |}
