@@ -37,7 +37,7 @@ Users place pairs of corresponding points on
 
 The following table shows the available landmark placement commands and keystrokes. 
 {| border="1" style="border-collapse:collapse;"
-| style="padding: 5px;" | {{key hold|Spacebar}}
+| style="padding: 5px;" | hold {{key press|Spacebar}}
 | style="padding: 5px;" | Toggle ''Landmark mode'' 
 |-
 | style="padding: 5px;" | <''Landmark mode on''>+{{key press|left-click}}
