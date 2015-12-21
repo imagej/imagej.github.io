@@ -40,16 +40,19 @@ The following table shows the available landmark placement commands and keystrok
 | style="padding: 5px;" | hold {{key press|Spacebar}}
 | style="padding: 5px;" | Toggle ''Landmark mode'' 
 |-
-| style="padding: 5px;" | <''Landmark mode on''>+{{key press|left-click}}
+| style="padding: 5px;" | <''Landmark mode''>+{{key press|left-click}}
 | style="padding: 5px;" | Clicking while in landmark mode adds a landmark point. 
 |-
-| style="padding: 5px;" | <''Landmark mode on''>+{{key press|left-click}}+{{key press|drag}}
+| style="padding: 5px;" | <''Landmark mode''>+{{key press|left-click}}+{{key press|drag}}
 | style="padding: 5px;" | Clicking an existing point and dragging changes it's position. 
 |-
-| style="padding: 5px;" | <''Landmark mode on''>+{{key press|Shift}}+{{key press|left-click}}+{{key press|drag}}
+| style="padding: 5px;" | <''Landmark mode''>+{{key press|Shift}}+{{key press|left-click}}+{{key press|drag}}
 | style="padding: 5px;" | "Move" a point.  The initial click places a
 landmark point for the moving image.  The release places a landmark
 point for the target image.
+|-
+| style="padding: 5px;" | <''Landmark mode''>+{{key press|Ctrl}}+{{key press|left-click}}
+| style="padding: 5px;" | "Pin" a point.  Add a landmark at the same location for both moving and target images.
 |-
 | style="padding: 5px;" | {{key press|V}}
 | style="padding: 5px;" | Toggle point visibility in the viewer.
