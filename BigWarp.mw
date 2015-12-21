@@ -78,3 +78,12 @@ The following table shows the available navigation commands using the mouse:
 | style="padding: 5px;" | {{key press|F7}}
 | style="padding: 5px;" | Show target image panel Visibility & and Grouping dialog.
 |}
+
+=== Import and Export ===
+
+Landmarks can be exported and imported from plain text files using the drop down menu in the landmark table panel ( ''File {{arrow}} Export (Import) landmarks.'' )
+
+[[Image:Bigwarp_export.png]]
+
+The warped moving image can be exported as an in-memory or [http://rsbweb.nih.gov/ij/docs/guide/146-8.html virtual] ImagePlus.
+''Note: This may not be a good idea when the target image is very large.''
