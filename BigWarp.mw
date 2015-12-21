@@ -30,7 +30,7 @@ Open two images in ImageJ, one ''moving'' and the other ''target'' and navigate 
 === Getting Help ===
 Press {{key press|F1}} at any time to open a help page with a listing of navigation and editing commands. 
 
-=== Landmark point placement ===
+=== Landmark point placement and display ===
 
 Landmark placements is done in ''Landmark mode'' which you enter by holding {{key press|Spacebar}}.
 Users place pairs of corresponding points on  
@@ -50,6 +50,12 @@ The following table shows the available landmark placement commands and keystrok
 | style="padding: 5px;" | "Move" a point.  The initial click places a
 landmark point for the moving image.  The release places a landmark
 point for the target image.
+|-
+| style="padding: 5px;" | {{key press|V}}
+| style="padding: 5px;" | Toggle point visibility in the viewer.
+|-
+| style="padding: 5px;" | {{key press|N}}
+| style="padding: 5px;" | Toggle point name visibility in the viewer.
 |}
 
 === Navigation and Visualization ===
