@@ -23,7 +23,7 @@
 
 {{Submenu | Guides |
 {{MenuItem | [[Writing plugins]] }}
-{{MenuItem | [[ImageJ Ops]] }}
+{{MenuItem | [[ImageJ_Ops|ImageJ Ops]] }}
 {{MenuItem | [[How_to_contribute_to_an_existing_plugin_or_library|Contributing to a plugin]] }}
 {{MenuItem | [[Distribution|Distributing your plugins]] }}
 {{MenuItem | [[Development Lifecycle|Development lifecycle]] }}
