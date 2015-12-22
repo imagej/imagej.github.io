@@ -22,7 +22,61 @@ Conceptually, a '''plugin''' is a new piece of functionality added to ImageJ. Ne
 
 Technically, ImageJ is built on the [[SciJava Common]] plugin framework. Within this framework, a plugin is a Java class [https://docs.oracle.com/javase/tutorial/java/annotations/index.html annotated] with the {{GitHub|org=scijava|repo=scijava-common|tag=scijava-common-2.47.0|source=org/scijava/plugin/Plugin.java|label=@Plugin}} annotation. Classes annotated in this way are then automatically discovered and indexed at [[wikipedia:Run_time_(program_lifecycle_phase)|''runtime'']], when the application is launched by a user (as opposed to [[wikipedia:Compile_time|''compile-time'']]).
 
-Practically, when writing new plugins, the '''type''' of the plugin is determined by referencing a [https://docs.oracle.com/javase/tutorial/java/concepts/interface.html Java interface]. Any number of implementations of this interface can be annotated for discovery, with a [https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/plugin/Plugin.java#L108-L129 prioritization mechanism] to allow sorting.
+=== Plugin types ===
+
+There is no limit to how many plugins can be discovered at runtime. To allow efficient retrieval of plugins, each class is annotated with a specific '''type''' - typically a [https://docs.oracle.com/javase/tutorial/java/concepts/interface.html Java interface] - by which the plugin will be indexed. This indexing follows Java type hierarchies.
+
+For example, given the following plugins:
+
+<source lang=java>
+@Plugin(type=Service.class)
+public class MyService implements Service { }
+</source>
+
+
+<source lang=java>
+@Plugin(type=SpecialService.class)
+public class SpecialService implements Service { }
+</source>
+
+{{ExpandingBox
+| Which of these plugins would we expect back if asking the [[Writing_plugins#The_Context|Context]] for plugins of type <code>Service</code> plugin?
+| > It would give back both the <code>MyService</code> and <code>SpecialService</code> plugins, since <code>SpecialService</code> is a subclass of <code>Service</code>.
+}}
+
+{{ExpandingBox
+| What if we asked for plugins of type <code>SpecialService</code>?
+| > It would just return the <code>SpecialService</code> plugin, since <code>MyService</code> is '''not''' a <code>SpecialService</code>.
+}}
+
+=== Plugin priority ===
+
+When plugins are retrieved from a [[Writing_plugins#The_Context|Context]] it's possible to get more than one match. In these cases, the plugin classes are returned in order of the '''priority''' of the class's [https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/plugin/Plugin.java#L108-L129 @Plugin annotation]. Priorities are simply double values; as a starting point, priority constants can be used from the {{GitHub|org=scijava|repo=scijava-common|tag=scijava-common-2.47.0|source=org/scijava/Priority.java|label=Priority} class.
+
+For example, given the following plugins:
+
+<source lang=java>
+@Plugin(priority=Priority.HIGH_PRIORITY)
+public class MyService implements Service { }
+</source>
+
+
+<source lang=java>
+@Plugin(priority=224)
+public class SpecialService implements Service { }
+</source>
+
+{{ExpandingBox
+| Which plugin would be returned first if we asked the Context for a <code>Service</code> plugin?
+| > The code>SpecialService</code> plugin would come back first. If we look at the <code>Priority</code> class we see that HIGH_PRIORITY simply [https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/Priority.java#L54-L55 resolves to 100].
+}}
+
+We can also use ''relative priorities'' when referring to particular priority constants. This is a nice way to give the best chance that sorting will remain the same even if these constants change in the future:
+
+<source lang=java>
+@Plugin(priority=Priority.HIGH_PRIORITY+124)
+public class SpecialService implements Service { }
+</source>
 
 == What makes up the SciJava plugin framework? ==
 
