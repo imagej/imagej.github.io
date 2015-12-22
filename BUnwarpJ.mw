@@ -237,6 +237,22 @@ The related paper of the previous work ([[UnwarpJ]]) is:
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.  
+
+== Acknowledgements ==
+[[bUnwarpJ]] has been developed during several years already and many people need to be acknowledged for:
+
+It started as an extension of [[UnwarpJ]] from [http://biocomp.cnb.csic.es/~coss/ Carlos O. S. Sorzano] and thanks to him and [http://cmp.felk.cvut.cz/~kybic/ Jan Kybic] at the [http://cmp.felk.cvut.cz/Center for Machine Perception] in Prague, [[bUnwarpJ]] was born in the summer 2005 and published online in 2006.
+
+Many of the plugin updates and improvements would have never been possible without the [[hackathon|hackathons]] that took place in [https://www.janelia.org/ Janelia Research Campus] (Virginia, summer 2008) and the [https://www.ini.uzh.ch/ Institute of Neuroinformatics] (Zürich, winter 2008).
+
+[http://albert.rierol.net/ Albert Cardona] organized the hackathons and is responsible for the code parallelization and javascripting support.
+
+[https://www.hhmi.org/scientists/stephan-saalfeld Stephan Saalfeld] made the SIFT/MOPS support possible.
+
+[https://www.janelia.org/people/marta-rivera-alba Marta Rivera-Alba] helped with the macro support and code debugging.
+
+[https://github.com/dscho Johannes Schindelin] is responsible for the Fiji integration and he is simply there whenever a Java problem comes up!
+
 ----
 [[Category:Plugins]]
 [[Category:Registration]]
