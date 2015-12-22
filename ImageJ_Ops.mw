@@ -15,7 +15,12 @@ Ops has three major design goals:
 
 == Getting started ==
 
-An op is a function which takes a list of typed inputs, produces a list of typed outputs, and has no side effects.
+Ops are a special type of ImageJ plugin, so a basic understanding of the [[Writing_Plugins|SciJava plugin framework]] is strongly recommended.
+
+In addition to cloning the {{GitHub|imagej|imagej-ops|label=imagej-ops repository}} itself, the following components have useful Ops examples:
+
+* {{GitHub|imagej|imagej-tutorials|label=ImageJ-tutorials}} - examples of ImageJ plugins using Ops
+* {{GitHub|imagej|imagej-scripting|label=ImageJ-scripting}} - provides [[Script_Templates|templates in the Script Editor]]
 
 == Tutorials and workshops ==
 
