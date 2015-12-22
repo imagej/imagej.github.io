@@ -164,7 +164,7 @@ You can also test bUnwarpJ with [[Spline Deformation Generator]], an ImageJ plug
 
 ===Macro call===
 
-Since bUnwarpJ v2.0 the plugin allows using [[http://rsb.info.nih.gov/ij/developer/macro/macros.html ImageJ macro language]] to be called. Therefore, the user can launch the plugin from a macro setting all the parameters of the plugin main window, for instance:
+Since bUnwarpJ v2.0 the plugin allows using [http://rsb.info.nih.gov/ij/developer/macro/macros.html ImageJ macro language] to be called. Therefore, the user can launch the plugin from a macro setting all the parameters of the plugin main window, for instance:
 <source lang="java">
 run( "bUnwarpJ", "source_image=A target_image=B registration=Accurate 
       image_subsample_factor=0 initial_deformation=[Very Coarse] 
