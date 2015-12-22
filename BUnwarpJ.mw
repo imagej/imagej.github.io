@@ -163,7 +163,6 @@ You can also test bUnwarpJ with [[Spline Deformation Generator]], an ImageJ plug
 
 
 ===Macro call===
-
 Since bUnwarpJ v2.0 the plugin allows using [http://rsb.info.nih.gov/ij/developer/macro/macros.html ImageJ macro language] to be called. Therefore, the user can launch the plugin from a macro setting all the parameters of the plugin main window, for instance:
 <source lang="java">
 run( "bUnwarpJ", "source_image=A target_image=B registration=Accurate 
@@ -175,7 +174,7 @@ When calling the plugin like this, if the "save_transformations" parameter is se
 
 Only the main registration method can be called like this. To use the main Input/Output options from a macro, the call function must be used. There is a corresponding static method defined in the plugin for any of this options: elasticTransformImageMacro, rawTransformImageMacro, composeRawElasticTransformationsMacro, composeRawTransformationsMacro, composeElasticTransformationsMacro, compareRawElasticTransformationsMacro, compareElasticTransformationsMacro, compareRawTransformationsMacro, convertToRawTransformationMacro, adaptCoefficientsMacro.
 
-Notice here that the input and output file names must include the path, since they are not taken from the list of images. For instance, if we want to apply an elastic deformation stored in the file A_direct_transf.txt to the source image A.jpg with target image B.jpg and save the result in output.tif, we call:
+Notice here that the input and output file names must include the path, since they are not taken from the list of images. For instance, if we want to apply an elastic deformation stored in the file ''A_direct_transf.txt'' to the source image ''A.jpg'' with target image ''B.jpg'' and save the result in ''output.tif'', we call:
 
 <source lang="java">
 call( "bunwarpj.bUnwarpJ_.elasticTransformImageMacro", "My_path/A.jpg",
