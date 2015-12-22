@@ -155,12 +155,11 @@ In the last release, the plugin presents the following Input/Output options:
 * '''Evaluate Image Similarity''': it calculates de current similarity error between the source and target images. The results is displayed in the "Results" window.
 * '''Adapt Coefficients''': it transforms the coefficients of an specific elastic transformation according to a real image factor. Very useful for example when we have very large images. We can register subsampled versions of our images (let us say 4 times smaller) and then adapt the result transformations (image factor = 4) so we can apply them to the high resolution images.
 * '''Load Source Mask''': it loads a mask from file (binary image) in the source image.
-* '''Load Source Initial Affine Matrix''': it loads an affine matrix as starting point for the source-target transformation from a file. See affine_transformation_matrix.txt for a description of the format.
+* '''Load Source Initial Affine Matrix''': it loads an affine matrix as starting point for the source-target transformation from a text file. The format of the text files is as follows: <code>cos(angle) -sin(angle) sin(angle) cos(angle) Translation_X Translation_Y</code>
 
 These new options (since version 1.1) allow the user comparing the results of our program with any other registration method. 
 
-You can also test bUnwarpJ with [[Spline Deformation Generator]], an ImageJ plugin that allows the user to generate five different image deformations: elastic, fisheye, perspective, barrel/pincushion and smile effect. [[Spline Deformation Generator]] uses the same raw transformation file format as bUnwarpJ, so they are completely compatible. 
-
+You can also test bUnwarpJ with [[Spline Deformation Generator]], an ImageJ plugin that allows the user to generate five different image deformations: elastic, fisheye, perspective, barrel/pincushion and smile effect. [[Spline Deformation Generator]] uses the same raw transformation file format as bUnwarpJ, so they are completely compatible.
 
 ===Macro call===
 Since bUnwarpJ v2.0 the plugin allows using [http://rsb.info.nih.gov/ij/developer/macro/macros.html ImageJ macro language] to be called. Therefore, the user can launch the plugin from a macro setting all the parameters of the plugin main window, for instance:
