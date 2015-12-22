@@ -181,6 +181,30 @@ call( "bunwarpj.bUnwarpJ_.elasticTransformImageMacro", "My_path/A.jpg",
       "My_path/B.jpg", "My_path/A_direct_transf.txt", "My_path/output.tif" );
 </source>
 
+===Command line call===
+
+[[bUnwarpJ]] might be called as well as an ImageJ command from the command line. In the command line, the program offers the following options:
+
+*<code>-help</code>: shows the syntax of the program
+*<code>-align</code>: launches the registration of two input images
+*<code>-elastic_transform</code>: transforms the source image with a given elastic deformation (previously calculated)
+*<code>-raw_transform</code>: transforms the source image with a given raw deformation (previously calculated)
+*<code>-compare_elastic</code>: compares two previously calculated opposite elastic deformations through the warping index
+*<code>-compare_elastic_raw</code>: compares an elastic deformation with a raw deformation (both direct transformations) through the warping index
+*<code>-compare_raw</code>: compares two previously calculated and direct raw deformations through the warping index
+*<code>-convert_to_raw</code>: converts an elastic transformation into raw format
+*<code>-compose_elastic</code>: composes two elastic deformations, the result will be in raw format
+*<code>-compose_raw</code>: composes two raw deformations, the result will be too in raw format
+*<code>-compose_raw_elastic</code>: composes a raw deformation and an elastic one. Result in raw format
+*<code>-adapt_transform</code>: adapts an specific elastic transformation given a resolution image factor
+
+For instance, to see the program help we can call the program from the command line (where $IJDIR is the directory where ImageJ is installed) like this:
+
+<code>java -Xmx512m -cp $IJDIR/ij.jar:$IJDIR/plugins/bUnwarpJ_.jar bUnwarpJ_ -help</code>
+
+
+For the rest of the options, follow the help instructions.
+
 == Downloads ==
 The latest stable distribution of bUnwarpJ can always be found included within Fiji and the '''latest released JARs are available in the''' [https://github.com/fiji/bUnwarpJ/releases GitHub repository]. If you detect any bug, please feel free to contact the maintainer. Any feedback will be very appreciated.
 === API documentation ===
