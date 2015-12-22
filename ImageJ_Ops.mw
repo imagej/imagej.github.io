@@ -42,7 +42,7 @@ The Ops matching framework provides '''extensibility.''' Ops are plugins, so any
 
 === Is there a list of Ops somewhere with brief descriptions of their functionalities? ===
 
-[[File:BrowseOps.png|500px|right|thumb|Viewing available addition Ops. Calling "math.add" on any of these combinations of parameters will automatically match the correct Op.]]
+[[File:BrowseOps.png|500px|right|thumb|Viewing available Add Ops in the math namespace. Calling "math().add" on any of these combinations of parameters will automatically match the correct Op.]]
 If you run the {{bc|Plugins|Utilities|Browse Ops...}} command, you can see a tree-based high-level view of all Ops currently available in Fiji sorted by namespace, as well as each available parameter combination for that Op.
 
 For the core Ops available, you can go to the [http://javadoc.imagej.net/ImageJ/ Javadoc page for ImageJ]. Any class under the package "net.imagej.ops" is related to Ops.
