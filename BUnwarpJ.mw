@@ -162,6 +162,26 @@ These new options (since version 1.1) allow the user comparing the results of ou
 You can also test bUnwarpJ with [[Spline Deformation Generator]], an ImageJ plugin that allows the user to generate five different image deformations: elastic, fisheye, perspective, barrel/pincushion and smile effect. [[Spline Deformation Generator]] uses the same raw transformation file format as bUnwarpJ, so they are completely compatible. 
 
 
+===Macro call===
+
+Since bUnwarpJ v2.0 the plugin allows using [[http://rsb.info.nih.gov/ij/developer/macro/macros.html ImageJ macro language]] to be called. Therefore, the user can launch the plugin from a macro setting all the parameters of the plugin main window, for instance:
+<source lang="java">
+run( "bUnwarpJ", "source_image=A target_image=B registration=Accurate 
+      image_subsample_factor=0 initial_deformation=[Very Coarse] 
+      final_deformation=Fine divergence_weight=0 curl_weight=0 landmark_weight=0 
+      image_weight=1 consistency_weight=10 stop_threshold=0.01" );
+</source>
+When calling the plugin like this, if the "save_transformations" parameter is set to true, the transformations files will be saved in the following predefined format (not save dialog is shown): <code>source image name + "_direct_transf.txt" and target image name + "_inverse_transf.txt"</code>.
+
+Only the main registration method can be called like this. To use the main Input/Output options from a macro, the call function must be used. There is a corresponding static method defined in the plugin for any of this options: elasticTransformImageMacro, rawTransformImageMacro, composeRawElasticTransformationsMacro, composeRawTransformationsMacro, composeElasticTransformationsMacro, compareRawElasticTransformationsMacro, compareElasticTransformationsMacro, compareRawTransformationsMacro, convertToRawTransformationMacro, adaptCoefficientsMacro.
+
+Notice here that the input and output file names must include the path, since they are not taken from the list of images. For instance, if we want to apply an elastic deformation stored in the file A_direct_transf.txt to the source image A.jpg with target image B.jpg and save the result in output.tif, we call:
+
+<source lang="java">
+call( "bunwarpj.bUnwarpJ_.elasticTransformImageMacro", "My_path/A.jpg",
+      "My_path/B.jpg", "My_path/A_direct_transf.txt", "My_path/output.tif" );
+</source>
+
 == Downloads ==
 The latest stable distribution of bUnwarpJ can always be found included within Fiji and the '''latest released JARs are available in the''' [https://github.com/fiji/bUnwarpJ/releases GitHub repository]. If you detect any bug, please feel free to contact the maintainer. Any feedback will be very appreciated.
 === API documentation ===
