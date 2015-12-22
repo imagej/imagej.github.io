@@ -6,12 +6,9 @@
 | source                 = {{GitHub | org = imagej | repo = imagej}}
 | status                 = active
 | category               = 
-}}ImageJ2 is a new version of [[ImageJ]] for the next generation of multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of ImageJ 1.x, to support the next generation of multidimensional scientific imaging.
+}}
 
-To ensure backwards compatibility, ImageJ2 has been designed to fully integrate into the existing ImageJ user interface. This allows users to keep using ImageJ in familiar ways, while providing the ability to migrate toward more powerful new features as needed.
-
-The [[Fiji]] distribution of ImageJ has shipped with beta versions of ImageJ2 for quite some time, so you may already be familiar with some of ImageJ2's features—some of which, such as the [[Updater]] and
-[[Launcher]], were originally developed as part of Fiji.
+__TOC__
 
 <div style="background: white; border: 1px solid gray; clear: both; float: right; padding: 10px; width: 30%">
 == ImageJ2's Mission ==
@@ -23,6 +20,13 @@ The [[Fiji]] distribution of ImageJ has shipped with beta versions of ImageJ2 fo
 * To avoid duplication of effort and instead leverage each others' work wherever practical.
 * To provide a central online resource for ImageJ: program downloads, a plugin repository, developer resources and more.
 </div>
+
+ImageJ2 is a new version of [[ImageJ]] for the next generation of multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of ImageJ 1.x, to support the next generation of multidimensional scientific imaging.
+
+To ensure backwards compatibility, ImageJ2 has been designed to fully integrate into the existing ImageJ user interface. This allows users to keep using ImageJ in familiar ways, while providing the ability to migrate toward more powerful new features as needed.
+
+The [[Fiji]] distribution of ImageJ has shipped with beta versions of ImageJ2 for quite some time, so you may already be familiar with some of ImageJ2's features—some of which, such as the [[Updater]] and
+[[Launcher]], were originally developed as part of Fiji.
 
 == Features of ImageJ2 ==
 
