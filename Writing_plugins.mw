@@ -3,14 +3,18 @@
 * If you have completed a plugin that you would like to '''share with the community''', see [[Distribution|Distributing your plugins]].
 }}
 
-{{Development | tutorials}}
-
-== Requirements ==
+<div style="float: left; padding-right: 1em">__TOC__</div>
+{{Development | tutorials}}== Requirements ==
 
 As ImageJ is built using the [[Project_management|SciJava principles of project management]], this guide assumes a basic familiarity with these topics and tools, especially:
 
-* [[Git]]
-* [[Maven]]
+{|
+| style="text-align: center; padding: 0.3em" | [[File:Git-icon.png | 64px | link=Git]]
+| style="text-align: center; padding: 0.3em" | [[File:Maven-icon.png | 64px | link=Maven]]
+|-
+| style="text-align: center; padding: 0.3em" | [[Git]]
+| style="text-align: center; padding: 0.3em" | [[Maven]]
+|}
 
 Additionally, at a minimum, you should clone the {{GitHub|org=imagej|repo=imagej-tutorials|label=imagej-tutorials repository}}. This will give you a local copy of the tutorials discussed in this guide, as well as templates for use in your own development.
 
