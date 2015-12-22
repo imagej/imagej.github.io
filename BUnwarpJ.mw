@@ -205,6 +205,11 @@ For instance, to see the program help we can call the program from the command l
 
 For the rest of the options, follow the help instructions.
 
+===Consistency weight===
+The main reason to create [[bUnwarpJ]] was the idea of enforcing deformations' consistency through the consistency weight. This number forces the algorithm to move into solutions that ensure the invertibility of the resulting deformations. Therefore, the higher this number is, the more strictly one deformation is the inverse of the other one. Due to the different units, there is no rule for selecting the right parameters, they need to be found experimentally.
+
+One important advantage of [[bUnwarpJ]] over the previous method lies in the fact that many registration problems can be solved without using the landmarks and regularization terms of the energy function (that means setting their corresponding parameters to 0.0). Therefore, no user interaction is needed and the computational complexity of the algorithm is reduced.
+
 == Downloads ==
 The latest stable distribution of bUnwarpJ can always be found included within Fiji and the '''latest released JARs are available in the''' [https://github.com/fiji/bUnwarpJ/releases GitHub repository]. If you detect any bug, please feel free to contact the maintainer. Any feedback will be very appreciated.
 === API documentation ===
