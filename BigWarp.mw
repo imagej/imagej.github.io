@@ -95,4 +95,8 @@ Landmarks can be exported and imported from plain text files using the drop down
 [[Image:Bigwarp_export.png]]
 
 The warped moving image can be exported as an in-memory or [http://rsbweb.nih.gov/ij/docs/guide/146-8.html virtual] ImagePlus.
-''Note: This may not be a good idea when the target image is very large.''
+A virtual ImagePlus is generally faster to generate but slower to browse,
+whereas an in-memory ImagePlus will be slower to generate but faster to browse.
+
+The exported image will have the same dimensions as the target image.
+''Note: Take care when exporting very large data sets.''
