@@ -63,34 +63,34 @@ See the [[source code]] page for details on obtaining the ImageJ and Fiji source
 | title = Fiji Life-Line version, 2014 November 25
 | description = [https://groups.google.com/d/msg/fiji-devel/49a7q7e9g44/xuhp0nQRVnAJ Many Fiji plugins have been updated] to facilitate [[reproducible builds]]. The packages below reflect Fiji from just prior to these updates.
 | logo = fiji-icon.png
-| win32 = http://fiji.sc/downloads/Life-Line/fiji-win32-20141125.zip
-| win64 = http://fiji.sc/downloads/Life-Line/fiji-win64-20141125.zip
-| osx = http://fiji.sc/downloads/Life-Line/fiji-macosx-20141125.dmg
-| linux32 = http://fiji.sc/downloads/Life-Line/fiji-linux32-20141125.tar.gz
-| linux64 = http://fiji.sc/downloads/Life-Line/fiji-linux64-20141125.tar.gz
-| all = http://fiji.sc/downloads/Life-Line/fiji-nojre-20141125.zip
+| win32 = http://downloads.imagej.net/Life-Line/fiji-win32-20141125.zip
+| win64 = http://downloads.imagej.net/Life-Line/fiji-win64-20141125.zip
+| osx = http://downloads.imagej.net/Life-Line/fiji-macosx-20141125.dmg
+| linux32 = http://downloads.imagej.net/Life-Line/fiji-linux32-20141125.tar.gz
+| linux64 = http://downloads.imagej.net/Life-Line/fiji-linux64-20141125.tar.gz
+| all = http://downloads.imagej.net/Life-Line/fiji-nojre-20141125.zip
 }}
 {{DownloadVersion
 | title = Fiji Life-Line version, 2014 June 2
 | description = We [[2014-06-04 - ImageJ 2.0.0 release candidate|updated ImageJ2 with some rather dramatic changes]] under the hood. The packages below reflect Fiji from just prior to these updates.
 | logo = fiji-icon.png
-| win32 = http://fiji.sc/downloads/Life-Line/fiji-win32-20140602.zip
-| win64 = http://fiji.sc/downloads/Life-Line/fiji-win64-20140602.zip
-| osx = http://fiji.sc/downloads/Life-Line/fiji-macosx-20140602.dmg
-| linux32 = http://fiji.sc/downloads/Life-Line/fiji-linux32-20140602.tar.gz
-| linux64 = http://fiji.sc/downloads/Life-Line/fiji-linux64-20140602.tar.gz
-| all = http://fiji.sc/downloads/Life-Line/fiji-nojre-20140602.zip
+| win32 = http://downloads.imagej.net/Life-Line/fiji-win32-20140602.zip
+| win64 = http://downloads.imagej.net/Life-Line/fiji-win64-20140602.zip
+| osx = http://downloads.imagej.net/Life-Line/fiji-macosx-20140602.dmg
+| linux32 = http://downloads.imagej.net/Life-Line/fiji-linux32-20140602.tar.gz
+| linux64 = http://downloads.imagej.net/Life-Line/fiji-linux64-20140602.tar.gz
+| all = http://downloads.imagej.net/Life-Line/fiji-nojre-20140602.zip
 }}
 {{DownloadVersion
 | title = Fiji Life-Line version, 2013 July 15
 | description = We [http://fiji-devel.54424.x6.nabble.com/Upcoming-exciting-changes-in-Fiji-td248.html incorporated some extensive changes to reconcile Fiji with ImageJ2]. The packages below reflect Fiji from just prior to these updates.
 | logo = fiji-icon.png
-| win32 = http://fiji.sc/downloads/Life-Line/fiji-win32-20130715.zip
-| win64 = http://fiji.sc/downloads/Life-Line/fiji-win64-20130715.zip
-| osx = http://fiji.sc/downloads/Life-Line/fiji-macosx-20130715.dmg
-| linux32 = http://fiji.sc/downloads/Life-Line/fiji-linux32-20130715.tar.gz
-| linux64 = http://fiji.sc/downloads/Life-Line/fiji-linux64-20130715.tar.gz
-| all = http://fiji.sc/downloads/Life-Line/fiji-nojre-20130715.zip
+| win32 = http://downloads.imagej.net/Life-Line/fiji-win32-20130715.zip
+| win64 = http://downloads.imagej.net/Life-Line/fiji-win64-20130715.zip
+| osx = http://downloads.imagej.net/Life-Line/fiji-macosx-20130715.dmg
+| linux32 = http://downloads.imagej.net/Life-Line/fiji-linux32-20130715.tar.gz
+| linux64 = http://downloads.imagej.net/Life-Line/fiji-linux64-20130715.tar.gz
+| all = http://downloads.imagej.net/Life-Line/fiji-nojre-20130715.zip
 }}
 === See also ===
-* [http://fiji.sc/downloads/ Fiji downloads archive] for older versions of [[Fiji]].
+* [http://downloads.imagej.net/ Fiji downloads archive] for older versions of [[Fiji]].
