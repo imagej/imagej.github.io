@@ -253,7 +253,7 @@ You already [[#Requierments|created your own GitHub repository]], right??
 
 When you're just getting started with tools like [[Git]] and [[Maven]], it's not easy to comprehend the nuances of how new projects should be set up and configured. It's much easier to copy a working project to use as a starting point and go from there.
 
-The [[#Example_projects|example projects]] are designed precisely to serve as such starting points for new projects. Once you have a solid idea of what kind of plugin you want to write, pick the project that discusses your area of choice and simply copy it to your own GitHub repo. From there, you can make changes as needed.
+The [[#Example projects|example projects]] are designed precisely to serve as such starting points for new projects. Once you have a solid idea of what kind of plugin you want to write, pick the project that discusses your area of choice and simply copy it to your own GitHub repo. From there, you can make changes as needed.
 
 At this point, if you haven't already, we '''STRONGLY RECOMMEND''' importing your project into an [[IDE]] like [[Eclipse]]. This will make [[Developing_Fiji_in_Eclipse|development]] and [http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fref-menu-refactor.htm refactoring] much easier. Modern IDEs also have excellent [[Git]] and [[Maven]] integration, which will allow you to take advantage of the fact that the example projects are already set up as Mavenized Git repositories.
 
