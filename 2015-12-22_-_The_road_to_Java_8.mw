@@ -124,6 +124,23 @@ The following ImageJ and Fiji components now require a minimum Java version of J
 | {{GitHub | org=fiji | repo=Volume_Calculator | tag=Volume_Calculator-1.0.2 | label=1.0.2}}
 |}
 
+== Conflicting Update Sites ==
+
+It is the responsibility of individual update site maintainers to decide if and when they follow this migration process. The following [[Update Sites]] are known to cause conflicts when enabled with the '''Java-8''' update site. If your workflow requires components from these sites, we do not recommend enabling the '''Java-8''' update site.
+
+{| class="wikitable"
+|-
+|style="vertical-align: bottom;"|'''Name'''
+|style="vertical-align: bottom;"|'''Site'''
+|style="vertical-align: bottom;"|'''Maintainer'''
+|style="vertical-align: bottom;"|'''Issue'''
+|- valign="top"
+|'''ClearVolume'''
+|http://sites.imagej.net/ClearVolume/
+|[[User:ClearVolume|ClearVolume]]
+|[http://fiji.sc/bugzilla/show_bug.cgi?id=1209 BugZilla #1209]
+|}
+
 == Feedback ==
 
 Please post any comments to the [[Help|ImageJ forum]]. Thank you for the continued feedback and support!
