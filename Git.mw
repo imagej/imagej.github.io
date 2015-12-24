@@ -3,6 +3,9 @@
 * [https://try.github.io/ TryGit 15-minute interactive tutorial]
 * [http://pcottle.github.io/learnGitBranching/ Learn Git Branching interactive tutorial]
 * [[Git for dummies]] tutorial on this web site
+
+If you are passingly familiar with Git, but wish it wasn't so arcane, check out:
+* [http://think-like-a-git.net/ Think Like (a) Git - A Guide for the Perplexed]
 }}
 
 Development of ImageJ and related software relies heavily on [http://git-scm.com/ Git], a first-class [[wikipedia:Distributed version control|distributed]] [[wikipedia:Version control|version control]] system. Git saves "snapshots" of the source code, keeping a history of changes.
