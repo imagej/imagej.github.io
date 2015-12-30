@@ -51,3 +51,7 @@ Open one or more binary (black/white) images or binarize an image. Start the plu
 | Both Phases                    
 | Calculates also the mean of both (all) Phases (Black and White)
 |}
+
+== Source ==
+
+Source available at [https://github.com/kleinsimon/LinearDistance/]
