@@ -37,17 +37,17 @@ The following ImageJ and Fiji components now require a minimum Java version of J
 | {{GitHub | org=imagej | repo=imagej-ops | tag=imagej-ops-0.24.1 | label=0.24.1}}
 | {{GitHub | org=imagej | repo=imagej-ops | tag=imagej-ops-0.23.0 | label=0.23.0}}
 |-
-| [[ImageJ2|imagej]]
-| Java 8
-| Depends on imagej-ops
-| {{GitHub | org=imagej | repo=imagej | tag=imagej-2.0.0-rc-43 | label=2.0.0-rc-43}}
-| {{GitHub | org=imagej | repo=imagej | tag=imagej-2.0.0-rc-44 | label=2.0.0-rc-44}}
-|-
 | {{GitHub | org=imagej | repo=imagej-ui-swing | label=imagej-ui-swing}}
 | Java 8
 | Depends on imagej-ops
 | {{GitHub | org=imagej | repo=imagej-ui-swing | tag=imagej-ui-swing-0.17.1 | label=0.17.1}}
 | {{GitHub | org=imagej | repo=imagej-ui-swing | tag=imagej-ui-swing-0.16.0 | label=0.16.0}}
+|-
+| [[ImageJ2|imagej]]
+| Java 8
+| Depends on imagej-ops
+| {{GitHub | org=imagej | repo=imagej | tag=imagej-2.0.0-rc-44 | label=2.0.0-rc-44}}
+| {{GitHub | org=imagej | repo=imagej | tag=imagej-2.0.0-rc-43 | label=2.0.0-rc-43}}
 |-
 | colspan=5 class="section-minor" | [[Fiji]]
 |-
