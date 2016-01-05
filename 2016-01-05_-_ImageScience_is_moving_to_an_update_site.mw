@@ -18,7 +18,7 @@ The main reasons for the switch are:
 * To give Erik more control over the [[development lifecycle]] ([[versioning]], [[releases]], etc.).
 * To avoid a licensing conflict between Fiji's [[GPL]] license and [http://www.imagescience.org/meijering/software/imagescience/ ImageScience's proprietary one].
 
-== How does this affect me? ==
+== How does this affect users? ==
 
 If you are using these plugins in your own workflows ([[scripts]], [[macros]], [[plugins]], etc.), then you will need to [[How to follow a 3rd party update site|enable the ImageScience update site]] for those workflows to remain functional.
 
