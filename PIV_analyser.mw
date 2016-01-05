@@ -1,13 +1,12 @@
 {{Infobox
 | name                   = PIV analyser
-| software               = ImageJ
+| software               = Fiji
 | author                 = Jean-Yves Tinevez
-| maintainer             = Jean-Yves Tinevez ([mailto:tinevez_at_mpi-cbg_dot_de tinevez_at_mpi-cbg_dot_de])
-| filename               = [http://fiji.sc/tinevez/PIV_analyser.jar PIV_analyser.jar]
-| source                 = 
+| maintainer             = Jean-Yves Tinevez 
+| source                 = [https://github.com/fiji/PIV_analyser on github]
 | released               = 18 April 2009
 | latest version         = v1.2 (20 April 2009)
-| status                 = active 
+| status                 = stable
 }}
 
 
@@ -181,11 +180,6 @@ Image:Internal wave-fd.png|Result from analysis
 </gallery>
 
 == Installation ==
-
-=== ImageJ ===
-
-Download the jar file [http://fiji.sc/tinevez/PIV_analyser.jar PIV_analyser.jar] 
-and drop it into the ''plugins'' menu. The plugin will appear in the {{bc | Plugins | Optic Flow | PIV analyser}} menu.
 
 === Fiji ===
 
