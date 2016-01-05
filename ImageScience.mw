@@ -1,18 +1,27 @@
 {{Infobox
 | software               = ImageJ
 | name                   = ImageScience
-| maintainer             = Erik Meijering
-| author                 = Erik Meijering
-| source                 = {{GitHub|org=fiji|repo=imagescience}}
+| maintainer             = {{Person|ImageScience}}
+| author                 = {{Person|ImageScience}}
+| source                 = {{GitHub|org=imagescience|repo=ImageScience}}
 | status                 = 
 | category               = [[:Category:Libraries]]
-}}
-The ImageScience library supports the ImageScience suite of plugins, including:
+}}The ImageScience library supports the ImageScience suite of plugins, including:
 * [[FeatureJ]]
 * [[MTrackJ]]
 * [[RandomJ]]
 * [[TransformJ]]
 
-Thanks to Erik Meijering, Fiji is [[ImageScience License|allowed to redistribute this plugin suite]] along with its source code!
+To install them, enable the ImageScience update site:
+
+* [[Update_Sites|{{bc|Help|Update...}}]]
+* Click ''Manage update sites''
+* Check ''ImageScience''
+* Click ''Close''
+
+Some files should appear on the list with ''Status/Action'' of ''Update it''.
+
+* Click ''Apply changes''
+* Restart ImageJ
 
 [[Category:Libraries]]
