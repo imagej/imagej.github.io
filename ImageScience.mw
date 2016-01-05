@@ -9,6 +9,7 @@
 }}The ImageScience library supports the ImageScience suite of plugins, including:
 * [[FeatureJ]]
 * [[MTrackJ]]
+* [[NeuronJ]]
 * [[RandomJ]]
 * [[TransformJ]]
 
@@ -25,3 +26,4 @@ Some files should appear on the list with ''Status/Action'' of ''Update it''.
 * Restart ImageJ
 
 [[Category:Libraries]]
+[[Category:ImageScience]]
