@@ -7,7 +7,6 @@
 {{MenuItem | [[Architecture]] }}
 {{MenuItem | [[Source code]] }}
 {{MenuItem | [[Project management]] }}
-{{MenuItem | [[Components|Component management]] }}
 {{MenuItem | [[Coding style]] }}
 {{MenuItem | [[Debugging]] }}
 | {{#if:{{{1|}}}|collapsed|}}
