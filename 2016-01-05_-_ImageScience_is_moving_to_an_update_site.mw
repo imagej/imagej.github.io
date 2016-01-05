@@ -1,0 +1,30 @@
+Resulting from [https://github.com/imagescience/ImageScience/pull/1 a discussion] with {{Person|ImageScience}}, the [[ImageScience]] plugins have moved to their own dedicated [[update site]], and will no longer be distributed as part of core [[Fiji]].
+
+== What moved? ==
+
+The ImageScience plugins include:
+
+* [[FeatureJ]]
+* [[MTrackJ]]
+* [[RandomJ]]
+* [[TransformJ]]
+
+There is also a fifth plugin, [[NeuronJ]], which is now part of the ImageScience update site, not part of Fiji previously.
+
+== Why? ==
+
+The main reasons for the switch are:
+
+* To give Erik more control over the [[development lifecycle]] ([[versioning]], [[releases]], etc.).
+* To avoid a licensing conflict between Fiji's [[GPL]] license and [http://www.imagescience.org/meijering/software/imagescience/ ImageScience's proprietary one].
+
+== How does this affect me? ==
+
+If you are using these plugins in your own workflows ([[scripts]], [[macros]], [[plugins]], etc.), then you will need to [[How to follow a 3rd party update site|enable the ImageScience update site]] for those workflows to remain functional.
+
+We will leave the current versions of the ImageScience plugins on the Fiji update site for a few more weeks, to give people time to transition to the update site. We anticipate a "spring cleaning" announcement in a couple of months, announcing the removal of several plugins, including the ImageScience ones.
+
+As always, thanks for your support, and [[Contact|let us know]] if you have any questions or concerns with this change.
+
+[[Category:News]]
+[[Category:Fiji]]
