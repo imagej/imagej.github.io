@@ -2,15 +2,15 @@
 * For information on the ''technical'' structure, see [[Architecture]].
 * For information on the ''legal'' structure, see [[Licensing]].}}
 
-The [[ImageJ]] project, and related projects in the [[SciJava]] software ecosystem, are governed as [[open source]] software projects.  Everybody is welcome to [[contribute]] with [[plugins]], patches, [[Bugs|bug reports]], [[tutorials]], [[documentation]], and artwork.
+<div style="float: left; padding-right: 1em">__TOC__</div>The [[ImageJ]] project, and related projects in the [[SciJava]] software ecosystem, are governed as [[open source]] software projects.  Everybody is welcome to [[contribute]] with [[plugins]], patches, [[Bugs|bug reports]], [[tutorials]], [[documentation]], and artwork.
 
 That said, every project needs leaders: the ones who participate in ''governance'' of the project, [[wikipedia:Software maintenance|maintaining]] the software and making key decisions.
-
+{{Clear}}
 == Project roles ==
 
-Because [[open source]] software is highly collaborative, it is extremely important to understand the difference between various roles on the project, to avoid misconceptions about '''authority''' (who makes decisions) and '''responsibility''' (who must do the work) concerning each project.
+Because [[open source]] software (OSS) is highly collaborative, it is extremely important to understand the difference between various roles on the project, to avoid misconceptions about '''authority''' (who makes decisions) and '''responsibility''' (who is pledged to do the work) concerning each project.
 
-The most common roles are:
+The most common roles in OSS are:
 
 * '''Founders''' are the people who originally launched the project.
 * '''Leads''' are responsible for making final decisions. In the [[open source]] world these people are often referred to as [http://catb.org/~esr/writings/homesteading/homesteading/ar01s16.html benevolent dictators]. Changes with a serious impact on the community are typically [[Community|discussed on open channels]] first.
@@ -18,50 +18,87 @@ The most common roles are:
 * '''Developers''' are people who work on the project significantly or often. Typically they have direct push access to the source code. In some cases they make day to day decisions, depending on their experience and comfort level with the project.
 * '''Contributors''' are people who help with the project either currently or in the past. They may participate occasionally or sporadically, and are typically not involved in project decision making.
 
-=== Levels of maintenance and development ===
+=== SciJava team roles ===
 
-Each project in the ecosystem has a distinct development path, with varying levels of maturity and activity. These paths are ultimately determined by the people who participate in developing the project. The following table conveys the types of commitment pledged by people with various project roles:
+Projects in the [[Architecture|SciJava software stack]] define each component's '''team''' as the group of people who take ''responsibility'' for it. The following roles formalize the ways people are pledged to help:
 
 {| class="wikitable nicetable"
-| rowspan=2 | '''Role'''
-| colspan=5 style="text-align: center" | '''Commitment'''
+! Role
+! Commitment
 |-
-| '''Reviews and<br>merges [[Contributing|patches]]'''
-| '''Responds to<br>[[Contact|community questions]]'''
-| '''Actively fixes<br>reported [[bugs]]'''
-| '''Actively adds<br>new [[issues|features]]'''
-| '''[[Funding|Paid]] to add<br>new features'''
+! Founder
+| Created the project. Does not imply any current participation or responsibility.
 |-
-| Maintainer (passive)
-| {{yes}}
-| {{unknown}}
-| -
-| -
-| -
+! Lead
+| Has decision-making authority: timing of [[releases]], inclusion of features, etc.
 |-
-| Maintainer (active)
-| {{yes}}
-| {{yes}}
-| {{yes}}
-| -
-| -
+! Developer
+| Adds new features or enhancements.
 |-
-| Developer (community)
-| -
-| {{unknown}}
-| {{unknown}}
-| {{unknown}}
-| -
+! Debugger
+| Fixes [[Issues|bugs]]. Can be assigned open [[issues]] to solve.
 |-
-| Developer (supported)
-| -
-| -
-| {{yes}}
-| {{yes}}
-| {{yes}}
+! Reviewer
+| Reviews [[Contributing|patch submissions]].
+|-
+! Support
+| Responds to [[Community|community questions]] and [[Issues|issue reports]]. Keeps the issue tracker organized.
+|-
+! Maintainer
+| Merges [[Contributing|patch submissions]]. Cuts releases.
+|-
+! Contributor
+| Contributed code to the project. Does not imply any current participation or responsibility.
 |}
 
-== SciJava projects ==
+Individuals often fill more than one role.
+
+== Component status ==
+
+This web site documents lots of software [[components]]—and in particular, many ImageJ [[plugins]]. Components in the ecosystem each have a distinct development path, with varying levels of maturity and activity, which is ultimately determined by the people who participate in developing it.
+
+Each component's page features an informational sidebar with a status report derived from the component's declared ''team''. This sidebar is intended to help users understand what level to expect when seeking help, reporting issues, and submitting feature requests.
+
+=== Development status ===
+
+'''Development status''' conveys what to expect regarding a component's future.
+{| class="wikitable"
+! Status
+! Meaning
+|-
+! Unstable
+| Project is under heavy development, with unstable API undergoing iterations of refinement. Typically, these components are either unreleased, or [[versioning|versioned at 0.x]].
+|-
+! Active
+| New features are being actively developed. API breakages are kept as limited as possible.
+|-
+! Stable
+| No new features are under development. API is stable.
+|-
+! Obsolete
+| The project is discontinued.
+|}
+
+=== Support status ===
+'''Support status''' indicates the level to which the team responds to questions and [[bugs|issue reports]].
+{| class="wikitable"
+! Status
+! Meaning
+|-
+! Active
+| Someone will respond to questions on community channels, and addresses issue reports in the project's issue tracker. A best effort is made to fix reported bugs within a reasonable time frame.
+|-
+! Partial
+| Someone will respond to questions on community channels, as well as to issue reports in the project's issue tracker. But reported bugs may not be addressed in a timely manner.
+|-
+! Minimal
+| There is at least one person pledged to the project in some capacity, but not all roles are filled. Response time to questions and issue reports may be protracted.
+|-
+! None
+| No one is pledged to support the project. Questions and issue reports may be ignored.
+|}
+
+== SciJava project summary ==
 
 Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 
