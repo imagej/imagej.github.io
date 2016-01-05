@@ -2,6 +2,12 @@
 * For information on the ''social'' structure, see [[Governance]].
 * For information on the ''legal'' structure, see [[Licensing]].}}
 {{Development}}
+= Definitions =
+
+Throughout this article, and elsewhere on this wiki, we use the following terms:
+* A software '''component''' is a program, such as a [[plugin]], or a [[wikipedia:Library (computing)|library]] of reusable functions. Components are typically designed to work together, and combined to form a [[wikipedia:Application software|software application]] such as [[ImageJ]]. In [[Maven]] terms, a component is a single ''artifact'', typically a [https://en.wikipedia.org/wiki/JAR_(file_format) JAR file].
+* A software '''project''' is a more general term referring to either a single component or a ''collection'' of related components. For example, the phrase "ImageJ project" refers to several components including [[ImageJ Common]], [[ImageJ Ops]], [[ImageJ Legacy]] and the [[ImageJ Updater]].
+
 = SciJava project structure =
 
 The [[ImageJ]] project, and related projects in the [[SciJava]] software ecosystem, are carefully structured to foster [[extensibility]].
@@ -18,31 +24,31 @@ rect 1 1 261 291 [https://github.com/scijava]
 
 There are four organizations on [https://github.com/ GitHub] which form the backbone of the [[SciJava]] ecosystem:
 
-* [https://github.com/scijava scijava] - for [[SciJava]] projects: general-purpose, non-image-specific libraries.
-* [https://github.com/imglib imglib] - for [[ImgLib2]] projects: flexible N-dimensional image processing.
-* [https://github.com/imagej imagej] - for [[ImageJ]] projects: metadata-rich image library and application.
-* [https://github.com/scifio scifio] - for [[SCIFIO]] projects: scientific image I/O and file formats.
+* [https://github.com/scijava scijava] - for [[SciJava]] components: general-purpose, non-image-specific libraries.
+* [https://github.com/imglib imglib] - for [[ImgLib2]] components: flexible N-dimensional image processing.
+* [https://github.com/imagej imagej] - for [[ImageJ]] components: metadata-rich image library and application.
+* [https://github.com/scifio scifio] - for [[SCIFIO]] components: scientific image I/O and file formats.
 
-Each organization contains several related projects under its respective umbrella: a core library (see below) and several extensions. In social terms, each organization represents a collection of conceptually related projects developed by a distinct [[Contributors|team of developers]].
+Each organization contains several related components under its respective umbrella: a core library (see below) and several extensions. In social terms, each organization represents a collection of conceptually related components developed by a distinct [[Contributors|team of developers]].
 
 Additional organizations further extend this structure:
 
-* [https://github.com/fiji fiji] - for [[Fiji]] projects
-** [https://github.com/bigdataviewer bigdataviewer] - for [[BigDataViewer]] projects
-** [https://github.com/trakem2 trakem2] - for [[TrakEM2]] projects
-* [https://github.com/uw-loci uw-loci] - for [[LOCI]] projects
-* [https://github.com/slim-curve slim-curve] - for [[SLIM Curve]] projects
+* [https://github.com/fiji fiji] - for [[Fiji]] components
+** [https://github.com/bigdataviewer bigdataviewer] - for [[BigDataViewer]] components
+** [https://github.com/trakem2 trakem2] - for [[TrakEM2]] components
+* [https://github.com/uw-loci uw-loci] - for [[LOCI]] components
+* [https://github.com/slim-curve slim-curve] - for [[SLIM Curve]] components
 * <your organization here!>
 
 The diagram on the right shows organizational relationships between SciJava software components.
 
 == Git repositories ==
 
-Each project is contained in its own [[Git]] repository, so that interested developers can cherry-pick only those parts of interest. Version control is an indispensable tool to ensure ''scientific reproducibility'' (see below) by tracking known-working states of the source code, and maintain a written record of how and why the code has changed over time. For technical details, see the [[Git]] section.
+Each component is contained in its own [[Git]] repository, so that interested developers can cherry-pick only those parts of interest. Version control is an indispensable tool to ensure ''scientific reproducibility'' (see below) by tracking known-working states of the source code, and maintain a written record of how and why the code has changed over time. For technical details, see the [[Git]] section.
 
 === Why separate Git repositories? ===
 
-With [[Maven]] it is possible to create a [http://maven.apache.org/guides/mini/guide-multiple-modules.html multi-module reactor] that unifies several project artifacts into a single build, typically within a single Git repository.
+With [[Maven]] it is possible to create a [http://maven.apache.org/guides/mini/guide-multiple-modules.html multi-module reactor] that unifies several component artifacts into a single build, typically within a single Git repository.
 
 While many components of the SciJava software stack used to be structured this way, we found that lumping multiple components into a single Git repository with a multi-module build has disadvantages compared to separate Git repositories with single-module builds:
 * Typically, components of a multi-module project are all versioned together, but we have opted for individual [[versioning]] of components, for reasons of [[Philosophy#Release_early.2C_release_often|rapid iteration]], [[extensibility]] and [[Architecture#Modularity|modularity]].
@@ -80,7 +86,7 @@ digraph poms {
 }
 </graphviz>
 
-All projects in these organizations use [[Maven]] for [[Project Management|project management]]. Each organization has its own Maven [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-more-coordinates groupId], as well as a [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-project-inheritance parent POM] that all other projects in that organization extend:
+All components in these organizations use [[Maven]] for [[Project Management|project management]]. Each organization has its own Maven [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-more-coordinates groupId], as well as a [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-project-inheritance parent POM] that all other components in that organization extend:
 
 {| class="wikitable nicetable"
 | '''Logo'''
@@ -148,7 +154,7 @@ The hierarchy of organizational parent POMs is shown in the diagram to the right
 
 The <code>pom-scijava</code> parent includes a [http://howtodoinjava.com/2014/02/18/maven-bom-bill-of-materials-dependency/ Bill of Materials] (BOM) which declares compatible versions of all core SciJava software in its [http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Management dependencyManagement section]. These versions are intended to be used together in downstream projects, preventing version skew (symptoms of which include <code>ClassNotFoundException</code> and <code>NoSuchMethodError</code>, as well as erroneous behavior in general). This BOM is especially important while some components are still in beta, since they may sometimes break [[backwards compatibility]].
 
-Similarly, the <code>pom-imagej</code> parent includes a consolidated Bill of Materials for projects in the ImageJ, ImgLib2 and SCIFIO organizations. The rationale for this consolidation is that each of these three organizations has projects which depend on components within the other two organizations. So broadly speaking, these three organizations form an interdependent "triumvarate." However, there are no circular dependencies at the level of individual components. See [http://imagej.net/pipermail/imagej-devel/2014-October/002280.html this thread on the imagej-devel mailing list] for further details.
+Similarly, the <code>pom-imagej</code> parent includes a consolidated Bill of Materials for components in the ImageJ, ImgLib2 and SCIFIO organizations. The rationale for this consolidation is that each of these three organizations has components which depend on components within the other two organizations. So broadly speaking, these three organizations form an interdependent "triumvarate." However, there are no circular dependencies at the level of individual components. See [http://imagej.net/pipermail/imagej-devel/2014-October/002280.html this thread on the imagej-devel mailing list] for further details.
 
 Other SciJava projects may extend the Bill of Materials further by providing their own <code>dependencyManagement</code> section. For example, Fiji's <code>pom-fiji</code> parent [https://github.com/fiji/pom-fiji/blob/pom-fiji-5.0.8/pom.xml#L21-L755 does this].
 
@@ -228,11 +234,11 @@ Some cardinal reasons to strive for reproducible builds are:
 
 For the reasons stated above, the SciJava software components strive for reproducible builds. The goal is to ensure that code which builds and runs today will continue to do so in exactly the same way for many years to come.
 
-Each project depends on release [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-pom-syntax.html#pom-reationships-sect-versions versions] of ''all'' its dependencies—never on [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-pom-syntax.html#pom-relationships-sect-snapshot-versions snapshots] or [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-dependencies.html#pom-relationships-sect-version-ranges version ranges]. A Maven snapshot is a moving target, and depending on one results in an irreproducible build. Similarly, all Maven plugins used, as well as the parent POM, are also declared at release versions. In short: all <code>&lt;version&gt;</code> tags specify release versions, never <code>SNAPSHOT</code> or <code>LATEST</code> versions. We use the [http://maven.apache.org/enforcer/maven-enforcer-plugin/ Maven Enforcer Plugin] to enforce this requirement (though it can be temporarily disabled by setting the <code>enforcer.skip</code> property).
+Each component depends on release [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-pom-syntax.html#pom-reationships-sect-versions versions] of ''all'' its dependencies—never on [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-pom-syntax.html#pom-relationships-sect-snapshot-versions snapshots] or [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-dependencies.html#pom-relationships-sect-version-ranges version ranges]. A Maven snapshot is a moving target, and depending on one results in an irreproducible build. Similarly, all Maven plugins used, as well as the parent POM, are also declared at release versions. In short: all <code>&lt;version&gt;</code> tags specify release versions, never <code>SNAPSHOT</code> or <code>LATEST</code> versions. We use the [http://maven.apache.org/enforcer/maven-enforcer-plugin/ Maven Enforcer Plugin] to enforce this requirement (though it can be temporarily disabled by setting the <code>enforcer.skip</code> property).
 
 === Using snapshot couplings during development ===
 
-For developing several projects in parallel in e.g. Eclipse, it is very useful to switch to <code>SNAPSHOT</code> dependency couplings.
+For developing several components in parallel in e.g. Eclipse, it is very useful to switch to <code>SNAPSHOT</code> dependency couplings.
 
 There are two easy ways of going about this:
 <ol type="A">
