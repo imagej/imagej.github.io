@@ -1,15 +1,15 @@
 {{Infobox
-| software               = ImageJ
+| software               = ImageScience
 | name                   = TransformJ
-| maintainer             = Erik Meijering
-| author                 = Erik Meijering
-| source                 = {{GitHub|org=fiji|repo=TransformJ}}
+| maintainer             = {{Person|ImageScience}}
+| author                 = {{Person|ImageScience}}
+| source                 = {{GitHub|org=imagescience|repo=TransformJ}}
 | status                 = 
 | category               = [[:Category:Plugins]]
 | website                = http://imagescience.org/meijering/software/transformj/
 }}
 The [http://imagescience.org/meijering/software/transformj/ TransformJ] suite of plugins offers affine transformations on the images.
 
-Thanks to Erik Meijering, Fiji is [[ImageScience License|allowed to redistribute this plugin suite]] along with its source code!
+TransformJ is available from the ImageScience update site.
 
 [[Category:Plugins]]
