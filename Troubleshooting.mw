@@ -14,6 +14,9 @@ See also [[Frequently Asked Questions#How_do_I_launch_ImageJ_with_a_different_ve
 To diagnose problems with ImageJ, it is often helpful to launch it in debug mode. There are several ways:
 
 <ol>
+<li>'''Set the <code>DEBUG</code> environment variable.''' E.g., on Linux:
+<source lang="bash">DEBUG=1 $HOME/ImageJ.app/ImageJ-linux64</source>
+</li>
 <li>'''Launch with the <code>--debug</code> flag.'''
 <ul>
 <li>On Linux 64-bit (from a console):
@@ -25,9 +28,6 @@ To diagnose problems with ImageJ, it is often helpful to launch it in debug mode
 <li>On Windows 64-bit (from Command Prompt):
 <source lang="bash">%HOMEPATH%\ImageJ.app\ImageJ-win64.exe --debug</source>
 </ul>
-</li>
-<li>'''Set the <code>DEBUG</code> environment variable.''' E.g., on Linux:
-<source lang="bash">DEBUG=1 $HOME/ImageJ.app/ImageJ-linux64</source>
 </li>
 <li>'''Rename the launcher.''' You can rename the executable from <code>ImageJ-xxx</code> to <code>debug</code> (<code>debug.exe</code> on Windows) before launching, and the launcher will be more verbose about what it is doing.
 </li>
