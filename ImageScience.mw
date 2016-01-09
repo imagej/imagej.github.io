@@ -6,7 +6,8 @@
 | source                 = {{GitHub|org=imagescience|repo=ImageScience}}
 | status                 = 
 | category               = [[:Category:Libraries]]
-}}The ImageScience library supports the ImageScience suite of plugins, including:
+| website                = http://imagescience.org/meijering/software/imagescience/
+}}The ImageScience library supports the ImageScience suite of plugins:
 * [[FeatureJ]]
 * [[MTrackJ]]
 * [[NeuronJ]]
