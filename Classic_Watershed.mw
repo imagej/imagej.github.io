@@ -83,7 +83,7 @@ The Classic Watershed plugin is part of the [[MorphoLibJ]] library. To install i
 
 4) Click ''Apply changes'' and restart Fiji.
 
-You should now find the plugin under the sub-menu {{bc | Plugins | Segmentation}}.
+You should now find the plugin under the sub-menu {{bc | Plugins |MorphoLibJ | Segmentation}}.
 
 '''Note''': Classic Watershed is only one of the plugins included in the [[MorphoLibJ]] suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
