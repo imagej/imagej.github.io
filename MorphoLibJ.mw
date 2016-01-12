@@ -92,7 +92,7 @@ Several measurements are provided for '''binary or label''' 2D or 3D images. The
 
 === Intensity measurements ===
 
-Other measurements are provided for pairs of grayscale and label 2D or 3D images ({{bc | Plugins | Analyze | Measure 3D}}). The plugin calculates the '''mean''', the '''standard deviation''', the '''maximum''' and the '''minimum intensity''' value of each labeled region in the grayscale image. The results are displayed as well in a ResultsTable.
+Other measurements are provided for pairs of grayscale and label 2D or 3D images ({{bc | Plugins | MorphoLibJ | Analyze | Measure 3D}}). The plugin calculates the '''mean''', the '''standard deviation''', the '''maximum''' and the '''minimum intensity''' value of each labeled region in the grayscale image. The results are displayed as well in a ResultsTable.
 
 == Installation ==
 
