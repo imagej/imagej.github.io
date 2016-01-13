@@ -73,7 +73,7 @@ Instead, you will need to keep a custom copy of <code>bootstrap.js</code> (e.g. 
 
 and add additional calls to <code>addUpdateSite</code> as needed.
 
-=== Non-Maven builds ===
+== Non-Maven builds ==
 
 Travis CI is capable of building many languages besides Java. If you do not have a <code>pom.xml</code> then you need to replace the following line of your <code>.travis.yml</code>:
 
