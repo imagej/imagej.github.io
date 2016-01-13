@@ -1,0 +1,90 @@
+{{UpdateSites}}
+
+{{Notice | This guide is intended for maintaining non-core update sites by automating builds with [https://travis-ci.org/ Travis CI].<br>
+* The [[How_to_upload_to_core_update_sites|core update sites]] are updated manually or by [[Jenkins]].
+* Travis CI is useful because it can freely build any open source project with minimal effort.
+}}
+
+= Requirements =
+* An open-source project hosted on [[GitHub]]
+* Logging in to [https://travis-ci.org/auth Travis CI] with your corresponding GitHub account
+* An [[Special:CreateAccount|account on this wiki]]
+* An [[Special:ChangeUploadPassword|initialized upload password]]. 
+
+= Additional resources =
+* [https://docs.travis-ci.com/user/getting-started/ Travis CI user guide]
+
+= Automatic Uploads via Travis CI =
+
+Travis CI can be used to automatically build a repository in response to code changes. To ease the maintenance of ImageJ update sites, we can use Travis to automatically upload the latest version of a site. This is done by creating a <code>.travis.yml</code> file in your update site's GitHub repository that does the following:
+#. Create a fresh ImageJ.app
+#. Build the update site's repository and move the required artifacts (e.g. <code>.jars</code>) to their intended locations in the ImageJ.app
+#. Upload the local update site state to your Wiki update site
+
+As a starting point you can copy the following <code>.travis.yml</code>:
+
+<source lang="yaml">
+language: java
+script:
+# These first two commands download the bootstrap.js script
+# and set up a fresh ImageJ.app in the current working directory 
+  - curl -O http://update.imagej.net/bootstrap.js
+  - jrunscript bootstrap.js update-force-pristine
+# For a Maven-based project inheriting from pom-imagej, this will
+# build the project and install it (and its dependencies) into the
+# current ImageJ.app
+  - mvn clean install -Dimagej.app.directory="$(pwd)" -Ddelete.other.versions=true
+# Finally, we download and execute script that uploads to the update site
+  - curl -O https://raw.githubusercontent.com/fiji/fiji/7f13f66968a9d4622e519c8aae04786db6601314/bin/upload-site-simple.sh
+  - chmod a+x upload-site-simple.sh
+# TODO: set your update site and upload account as appropriate
+  - ./upload-site-simple.sh <UPDATE_SITE> <WIKI_ACCOUNT>
+# For example, if your wiki account is IJUser and you're uploading to your personal update site (sites.imagej.net/IJUser) you would use:
+# - ./upload-site-simple.sh IJUser IJUser
+</source>
+
+For the update site and wiki account, 
+
+== Encrypting your password ==
+
+To upload to your wiki update site, you will need to provide Travis CI with a <code>WIKI_UPLOAD_PASS</code> environment variable, which should evaluate to the [[Special:ChangeUploadPassword|upload password]] of the Wiki account performing the upload. To do so securely, follow the instructions on the [https://docs.travis-ci.com/user/environment-variables/#Encrypting-Variables-Using-a-Public-Key encrypting environment variables].
+
+Note that when you run:
+
+<source lang="bash">
+$ travis encrypt WIKI_UPLOAD_PASS=super_secret --add env.matrix
+</source>
+
+in your repository, the <code>.travis.yml</code> will automatically be updated appropriately. You can simply commit and push the changes.
+
+=== Add additional update sites ===
+
+By default, only the ImageJ and Fiji update sites will be enabled in the local ImageJ.app. It's possible to enable additional [[List_of_update_sites|update sites]] as needed for your project (for example, if you depend on other 3rd party update sites). To do so, remove the following lines of your <code>.travis.yml</code>:
+
+<source lang="yaml">
+  - curl -O http://update.imagej.net/bootstrap.js
+</source>
+
+Instead, you will need to keep a custom copy of <code>bootstrap.js</code> (e.g. in your repository). In this script, find the following line:
+
+<source lang="javascript">
+		files.addUpdateSite("Fiji", "http://update.fiji.sc/", null, null, -1);
+</source>
+
+and add additional calls to <code>addUpdateSite</code> as needed.
+
+=== Non-Maven builds ===
+
+Travis CI is capable of building many languages besides Java. If you do not have a <code>pom.xml</code> then you need to replace the following line of your <code>.travis.yml</code>:
+
+<source lang="yaml">
+  - mvn clean install -Dimagej.app.directory="$(pwd)" -Ddelete.other.versions=true
+</source>
+
+with a sequence of commands that will move your build artifacts to the appropriate <code>/jars</code> or <code>/plugins</code> directory.
+
+= Caveats =
+
+{{Warning|By default - building the master branch of your repository - your update site will be updated with **every change** to the source code. Although we encourage the master branch to be "[[Development_Lifecycle#Phase_2:_On_master|release ready]]", a safer practice would be to configure Travis CI to [https://docs.travis-ci.com/user/customizing-the-build/#Building-Specific-Branches only build specific branches] - and set it to build [[Reproducible Builds|release versions]] only - e.g. with a release version integration branch..
+
+{{Warning|Using the Maven-based <code>.travis.yml</code> as suggested implies that you are conforming to the managed dependencies of the parent pom.xml. If you are not staying up-to-date with the ImageJ and Fiji update sites (by using the latest ImageJ or Fiji [[Architecture#Bill_of_Materials|bill of materials]]) then this automation may break your own update site.}}
