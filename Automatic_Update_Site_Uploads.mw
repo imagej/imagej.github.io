@@ -85,6 +85,6 @@ with a sequence of commands that will move your build artifacts to the appropria
 
 = Caveats =
 
-{{Warning|By default - building the master branch of your repository - your update site will be updated with **every change** to the source code. Although we encourage the master branch to be "[[Development_Lifecycle#Phase_2:_On_master|release ready]]", a safer practice would be to configure Travis CI to [https://docs.travis-ci.com/user/customizing-the-build/#Building-Specific-Branches only build specific branches] - and set it to build [[Reproducible Builds|release versions]] only - e.g. with a release version integration branch..
+{{Warning|By default - building the master branch of your repository - your update site will be updated with **every change** to the source code. Although we encourage the master branch to be "[[Development_Lifecycle#Phase_2:_On_master|release ready]]", a safer practice would be to configure Travis CI to [https://docs.travis-ci.com/user/customizing-the-build/#Building-Specific-Branches only build specific branches] - and set it to build [[Reproducible Builds|release versions]] only - e.g. with a release version integration branch.}}
 
 {{Warning|Using the Maven-based <code>.travis.yml</code> as suggested implies that you are conforming to the managed dependencies of the parent pom.xml. If you are not staying up-to-date with the ImageJ and Fiji update sites (by using the latest ImageJ or Fiji [[Architecture#Bill_of_Materials|bill of materials]]) then this automation may break your own update site.}}
