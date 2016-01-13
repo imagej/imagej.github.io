@@ -57,7 +57,7 @@ $ travis encrypt WIKI_UPLOAD_PASS=super_secret --add env.matrix
 
 in your repository, the <code>.travis.yml</code> will automatically be updated appropriately. You can simply commit and push the changes.
 
-=== Add additional update sites ===
+== Add additional update sites ==
 
 By default, only the ImageJ and Fiji update sites will be enabled in the local ImageJ.app. It's possible to enable additional [[List_of_update_sites|update sites]] as needed for your project (for example, if you depend on other 3rd party update sites). To do so, remove the following lines of your <code>.travis.yml</code>:
 
