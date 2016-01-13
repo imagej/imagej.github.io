@@ -17,9 +17,9 @@
 = Automatic Uploads via Travis CI =
 
 Travis CI can be used to automatically build a repository in response to code changes. To ease the maintenance of ImageJ update sites, we can use Travis to automatically upload the latest version of a site. This is done by creating a <code>.travis.yml</code> file in your update site's GitHub repository that does the following:
-#. Create a fresh ImageJ.app
-#. Build the update site's repository and move the required artifacts (e.g. <code>.jars</code>) to their intended locations in the ImageJ.app
-#. Upload the local update site state to your Wiki update site
+# Create a fresh ImageJ.app
+# Build the update site's repository and move the required artifacts (e.g. <code>.jars</code>) to their intended locations in the ImageJ.app
+# Upload the local update site state to your Wiki update site
 
 As a starting point you can copy the following <code>.travis.yml</code>:
 
