@@ -33,7 +33,7 @@ Projects in the [[Architecture|SciJava software stack]] define each component's 
 | Has decision-making authority: timing of [[releases]], inclusion of features, etc.
 |-
 ! Developer
-| Adds new features or enhancements.
+| Adds new features or enhancements. Can be assigned to address feature requests.
 |-
 ! Debugger
 | Fixes [[Issues|bugs]]. Can be assigned open [[issues]] to solve.
