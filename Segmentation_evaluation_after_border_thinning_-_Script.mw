@@ -1,3 +1,4 @@
+= Introduction =
 The following [[Beanshell_Scripting|Beanshell script]] allows you to evaluate the performance of your [[:Category:Segmentation|segmentation]] method after thinning the borders of the image segments to 1-pixel width.
 
 Retrospective evaluation of the original [http://brainiac2.mit.edu/isbi_challenge/ ISBI-2012 segmentation challenge] scoring system revealed that it was not sufficiently robust to variations in the widths of neurite borders. After evaluating all of these metrics and associated variants, it was found that specially normalized versions of the [[Rand error]] and [https://en.wikipedia.org/wiki/Variation_of_information Variation of Information] best matched our qualitative judgements of segmentation quality:
@@ -7,6 +8,9 @@ Retrospective evaluation of the original [http://brainiac2.mit.edu/isbi_challeng
 
 '''This script calculates the best V<sup>Rand</sup><sub>(thinned)</sub> and V<sup>Info</sup><sub>(thinned)</sub> over a set of threshold values of the input image (proposed segmentation).''' The proposed labels can be either binary or a probability image ([0.0-1.0] values).
 
+Further details about the metrics can be found in the [http://journal.frontiersin.org/article/10.3389/fnana.2015.00142/abstract challenge publication].
+
+= Use =
 Just copy/paste it in the [[Script Editor]] or save it into a .bsh file and run it ({{bc | File | Open}}):
 
 <source lang=java>
@@ -110,6 +114,9 @@ Here you can select among the open images which ones are the original and the pr
 After clicking OK the metrics will be applied and the results will be shown in the Log window:
 
 [[Image:Script-segmentation-evaluation-thinning-log.png]]
+
+= References =
+* Ignacio Arganda-Carreras, Srinivas C. Turaga, Daniel R. Berger, Dan Ciresan, Alessandro Giusti, Luca M. Gambardella, Jürgen Schmidhuber, Dmtry Laptev, Sarversh Dwivedi, Joachim M. Buhmann, Ting Liu, Mojtaba Seyedhosseini, Tolga Tasdizen, Lee Kamentsky, Radim Burget, Vaclav Uher, Xiao Tan, Chanming Sun, Tuan D. Pham, Eran Bas, Mustafa G. Uzunbas, Albert Cardona, Johannes Schindelin, and H. Sebastian Seung. [http://journal.frontiersin.org/article/10.3389/fnana.2015.00142/abstract Crowdsourcing the creation of image segmentation algorithms for connectomics]. Frontiers in Neuroanatomy, vol. 9, no. 142, 2015.
 
 [[Category:Segmentation]]
 [[Category:Scripting]]
