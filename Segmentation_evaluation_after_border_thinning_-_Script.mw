@@ -5,7 +5,7 @@ Retrospective evaluation of the original [http://brainiac2.mit.edu/isbi_challeng
 *Foreground-restricted Rand Scoring after border thinning: V<sup>Rand</sup><sub>(thinned)</sub>
 *Foreground-restricted Information Theoretic Scoring after border thinning: V<sup>Info</sup><sub>(thinned)</sub>
 
-This script calculates the best V<sup>Rand</sup><sub>(thinned)</sub> and V<sup>Info</sup><sub>(thinned)</sub> over a set of threshold values of the input image (proposed segmentation). The proposed labels can be either binary or a probability image ([0.0-1.0] values).
+'''This script calculates the best V<sup>Rand</sup><sub>(thinned)</sub> and V<sup>Info</sup><sub>(thinned)</sub> over a set of threshold values of the input image (proposed segmentation).''' The proposed labels can be either binary or a probability image ([0.0-1.0] values).
 
 Just copy/paste it in the [[Script Editor]] or save it into a .bsh file and run it ({{bc | File | Open}}):
 
