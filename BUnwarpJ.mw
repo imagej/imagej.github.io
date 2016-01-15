@@ -281,6 +281,18 @@ If you do a macro call or use the method bUnwarpJ_.alignImagesBatch, the landmar
 If you are calling [[bUnwarpJ]] from the command line, you will have to save the SIFT/MOPS point selections in a file and use the file name in the command line call.
 ===What does "source and target" mean? Which image is being transformed?===
 The "source" image is the image being transformed, i.e. the ''moving image'', while the "target" image is the ''fixed image''. In the "Accurate" and "Fast" modes, both images work as source and target.
+===What is the format of the raw transformation file?===
+The raw transformation file should be a text file with the following structure:
+<source>
+Width=[TARGET IMAGE WITH]
+Height=[TARGET IMAGE HEIGHT]
+
+X Trans -----------------------------------
+   [(Height * Width) coordinates representing the X transformation for every pixel on the target image]
+   
+Y Trans -----------------------------------
+   [(Height * Width) coordinates representing the Y transformation for every pixel on the target image]
+</source>
 
 == References ==
 The algorithm implemented on bUnwarpJ and its technical explanations are detailed on the paper:
