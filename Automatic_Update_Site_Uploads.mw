@@ -81,7 +81,9 @@ Travis CI is capable of building many languages besides Java. If you do not have
   - mvn clean install -Dimagej.app.directory="$(pwd)" -Ddelete.other.versions=true
 </source>
 
-with a sequence of commands that will move your build artifacts to the appropriate <code>/jars</code> or <code>/plugins</code> directory.
+with a sequence of commands that will move your build artifacts to the appropriate <code>/jars</code> or <code>/plugins</code> directory, as appropriate for your update site.
+
+{{Warning | '''USE CAUTION HERE''' - you are configuring Travis CI to upload the state of an ImageJ installation to your update site. If your build artifacts are not located in the <code>jars</code> or <code>plugins</code> directory, a clean ImageJ.app will be uploaded - '''effectively removing all content from your update site.'''}}
 
 = Caveats =
 
