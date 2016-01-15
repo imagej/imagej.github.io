@@ -190,10 +190,10 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 | See [http://www.openmicroscopy.org/site/about/ome-contributors OME Contributors]
 |-
 | [[File:knime-icon.png|48px]]
-| '''[[KNIME]]'''<sup>5</sup>
+| style="white-space: normal" | '''[[KNIME|KNIME Image Processing]]'''<sup>5</sup>
+| {{Person|Dietzc}}<br>Martin Horn
 | {{Person|Dietzc}}
-| {{Person|Dietzc}}
-| {{Person|Dietzc}}
+| {{Person|Dietzc}}<br>Martin Horn
 | [https://github.com/orgs/knime-ip/people List on GitHub]
 | See [[Contributors]]
 |-
