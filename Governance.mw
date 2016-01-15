@@ -190,7 +190,7 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 | See [http://www.openmicroscopy.org/site/about/ome-contributors OME Contributors]
 |-
 | [[File:knime-icon.png|48px]]
-| style="white-space: normal" | '''[[KNIME|KNIME Image Processing]]'''<sup>5</sup>
+| style="white-space: normal" | '''[[KNIME|KNIME Image Processing]]'''
 | {{Person|Dietzc}}<br>Martin Horn
 | {{Person|Dietzc}}
 | {{Person|Dietzc}}<br>Martin Horn
@@ -241,7 +241,6 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 <br><sup>2</sup> Schindelin is currently on sabbatical from Fiji; see [https://groups.google.com/d/msg/fiji-devel/coIgXLws0eI/TZlwjXLyks0J this thread on fiji-devel].
 <br><sup>3</sup> Barber leads development of the {{GitHub | org=slim-curve | repo=slim-curve | label=SLIM Curve C library}}; Rueden leads development of the {{GitHub | org=slim-curve | repo=slim-plugin | label=SLIM Curve plugin for ImageJ}}.
 <br><sup>4</sup> Rueden maintains the Bio-Formats [[update site]] for ImageJ, but is not otherwise a Bio-Formats maintainer.
-<br><sup>5</sup> For the purposes of this table, "KNIME" means the [[KNIME|KNIME Image Processing]] extensions, not the KNIME project as a whole.
 
 == Further reading ==
 
