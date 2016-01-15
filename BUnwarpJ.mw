@@ -229,7 +229,9 @@ The weights need to be chosen experimentally, test and error is the only way of 
 ====Divergence and curl weights====
 The divergence and curl weights regularize the deformation by penalizing the [https://en.wikipedia.org/wiki/Divergence divergence] and [https://en.wikipedia.org/wiki/Curl_%28mathematics%29 curl] of the deformation vector field. In other words, we penalize vector fields with '''many''' points like this:
 
+[[Image:Divergence-curl-2d-examples.png]]
 
+These are attractor points that make the deformation too rough. One of them would not be a problem (it could be just a rotation), but many yes. So controlling them we make the deformation '''smooth'''. If you see that your transformations get too rough, it is a good idea to use them. '''0.1 and 0.1 are usually good values'''  if there's no prior knowledge about the deformation shape.
 
 == References ==
 The algorithm implemented on bUnwarpJ and its technical explanations are detailed on the paper:
