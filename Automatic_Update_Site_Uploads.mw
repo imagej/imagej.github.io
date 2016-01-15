@@ -27,12 +27,17 @@ As a starting point you can copy the following <code>.travis.yml</code>:
 language: java
 script:
 # These first two commands download the bootstrap.js script
-# and set up a fresh ImageJ.app in the current working directory 
+# This makes the current directory into a fresh ImageJ.app
+# The status of this ImageJ.app will determine what is uploaded to
+# your update site. 
   - curl -O http://update.imagej.net/bootstrap.js
   - jrunscript bootstrap.js update-force-pristine
 # For a Maven-based project inheriting from pom-imagej, this will
 # build the project and install it (and its dependencies) into the
 # current ImageJ.app
+# WARNING: if you would like any files not built by maven to be on your
+#          update site, you must explicitly move them to the appropriate ImageJ.app
+#          subdirectory.
   - mvn clean install -Dimagej.app.directory="$(pwd)" -Ddelete.other.versions=true
 # Finally, we download and execute script that uploads to the update site
   - curl -O https://raw.githubusercontent.com/fiji/fiji/7f13f66968a9d4622e519c8aae04786db6601314/bin/upload-site-simple.sh
