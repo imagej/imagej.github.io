@@ -223,6 +223,14 @@ In Fiji, [[bUnwarpJ]] comes installed by default. In ImageJ, you must simply dow
 
 To execute bUnwarpJ as a macro or from the command line, see the description in the User Manual.
 
+== Frequently Asked Questions ==
+===How do I choose the weights? What does each of the weights really mean?===
+The weights need to be chosen experimentally, test and error is the only way of knowing which are the best weights to register your images, but let 's talk about them in detail:
+====Divergence and curl weights====
+The divergence and curl weights regularize the deformation by penalizing the [https://en.wikipedia.org/wiki/Divergence divergence] and [https://en.wikipedia.org/wiki/Curl_%28mathematics%29 curl] of the deformation vector field. In other words, we penalize vector fields with '''many''' points like this:
+
+
+
 == References ==
 The algorithm implemented on bUnwarpJ and its technical explanations are detailed on the paper:
 * I. Arganda-Carreras, C. O. S. Sorzano, R. Marabini, J.-M. Carazo, C. Ortiz-de Solorzano, and J. Kybic, [http://cmp.felk.cvut.cz/ftp/articles/kybic/Arganda-CVAMIA2006.pdf "Consistent and Elastic Registration of Histological Sections using Vector-Spline Regularization,"] Lecture Notes in Computer Science, Springer Berlin / Heidelberg, volume 4241/2006, CVAMIA: Computer Vision Approaches to Medical Image Analysis, pages 85-95, 2006.
