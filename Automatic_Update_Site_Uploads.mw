@@ -80,7 +80,7 @@ and add additional calls to <code>addUpdateSite</code> as needed.
 
 == Non-Mavenized Files ==
 
-Travis CI is capable of building many languages besides Java. If can not use Maven with an <code>imagej.app.directory</code> then you need to replace the following line of your <code>.travis.yml</code>:
+Travis CI is capable of building many languages besides Java. If you cannot use Maven with an <code>imagej.app.directory</code> then you need to replace the following line of your <code>.travis.yml</code>:
 
 <source lang="yaml">
   - mvn clean install -Dimagej.app.directory="$(pwd)" -Ddelete.other.versions=true
