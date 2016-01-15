@@ -1,8 +1,18 @@
-{{Help}}= Analysis =
+{{Help}}= Usage =
 
 == How do I apply an operation or macro to multiple images? ==
 
 See the [[Batch Processing]] page.
+
+== What is the largest size image that ImageJ can open? ==
+
+There is a 2 gigapixel limit when opening and displaying image planes using the [[ImageJ 1.x]] user interface's default image viewer. However, one major goal of the [[ImageJ2]] project is to break this limit. ImageJ2 uses the [[ImgLib2]] library as its data model, which has much larger limits on the number of pixels (theoretically: ~2^63 per dimension, up to ~2^31 dimensions, totaling ~2^63^31 pixels). Hence, you can open larger images using the {{GitHub | org=imagej | repo=imagej-tutorials | label=ImageJ2 API}}. But you will not be able to display them in the user interface yet.
+
+Furthermore, the [[SCIFIO]] library (what ImageJ2 uses for data I/O) supports opening such images on-demand as "cell images" such that blocks are read from disk as you iterate over the image. This is similar to (but more powerful than) ImageJ 1.x's virtual stacks feature. In this way, you can write code to process these large images without displaying them.
+
+The [[Fiji]] project also includes the [[BigDataViewer]] (BDV) plugin, which currently functions as an alternative viewer, to display arbitrarily large images backed by ImgLib2. In the future we hope to integrate BDV-driven UI technology more completely into ImageJ core. But there are a couple of limitations right now:
+# BDV was originally designed for large SPIM data; opening large image files more generally currently requires some coding. But we want to change this.
+# Many ImageJ 1.x plugins assume the data is stored in an ImageJ 1.x data structure, which is not what BDV uses. So [[ImageJ Legacy|"mixing and matching" IJ1 and IJ2 functionality]] is tricky here. But we are working to lift these restrictions as time goes on.
 
 = Mac OS X =
 
