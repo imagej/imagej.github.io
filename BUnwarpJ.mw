@@ -238,6 +238,49 @@ It forces the deformations to fit the landmark points on both images. Set it to 
 This is the weight to control the pixel values differences. Leave it to '''1.0''' unless you want to do for instance landmark-only registration.
 ====Consistency weight====
 It forces the resulting deformations to be one (source to target) as close as possible to the inverse of the other one (target to source). Values '''between 10.0 and 30.0''' usually work fine. It is only taken into account for registration modes "Fast" or "Accurate".
+===How do I choose the initial and final deformations? What do they mean?===
+These values determine the level of detail of the initial and final deformations. In [[bUnwarpJ]] this is defined by the number of B-splines that we use to represent the deformations:
+
+{| class="wikitable" style="text-align:center;"
+!Deformation	
+!Number of intervals (in the B-spline grid)
+|-
+|Very coarse
+|1x1
+|-
+|Coarse
+|2x2 
+|-
+|Fine
+|4x4 
+|-
+|Very Fine
+|8x8 
+|-
+|Super fine
+|16x16 
+|}
+
+How to choose the initial and final deformation? It depends on how misaligned your images are. If they start very far away from the right alignment, it is usually a good idea to go from "Very Coarse" to "Very Fine". If they start close to the right alignment, using a very coarse initial deformation could cause the algorithm to fail. So, in that case, it would be enough to set initial deformation to "Fine" and final deformation to "Very Fine". Use "Super Fine" only when you need a very high level of accuracy, because it makes the algorithm quite slower depending on the image sizes.
+===Can bUnwarpJ register 3D images?===
+Unfortunately, '''no'''. If you call [[bUnwarpJ]] with two stacks as input images, it will use the second slice of every stack as the corresponding mask of the first slice. If you're looking for 3D image registration software, you may want to have a look at [http://elastix.isi.uu.nl/ Elastix], an excellent open source toolkit to perform image registration written in [http://www.itk.org/ ITK].
+===How do I cite bUnwarpJ?===
+The corresponding paper citation is on the [[BUnwarpJ#References|References]].
+===Can I run bUnwarpJ without the graphical interface?===
+'''Yes''', you can. You have different possibilities: 
+* You could call the program from the command line as explained in the [[BUnwarpJ#User_Manual|user manual]],
+* or you can make a [[BUnwarpJ#Macro_call|macro call]] in batch mode,
+* or you could as well create a script and use any of the methods called [http://javadoc.imagej.net/Fiji/bunwarpj/bUnwarpJ_.html#alignImagesBatch(ij.ImagePlus,%20ij.ImagePlus,%20ij.process.ImageProcessor,%20ij.process.ImageProcessor,%20int,%20int,%20int,%20int,%20double,%20double,%20double,%20double,%20double,%20double) bUnwarpJ_.alignImagesBatch].
+===My result images are 32-bit although my input images are 8-bit, is that a bug?===
+No this is not a bug. To calculate the elastic-transformed images [[bUnwarpJ]] needs to interpolate the pixel values, so the first step in the process consists of converting the 8-bit (byte) images into 32-bit (float). You may want to convert them back to 8-bit after registration (Image > Type > 8-bit) and adjust the contrast (Process > Enhance Contrast).
+===How do I integrate the SIFT/MOPS results into bUnwarpJ?===
+If you are using the ImageJ graphical interface, wait until the SIFT/MOPS plugin shows the results and then call immediately [[bUnwarpJ]]. The correspondences found after the SIFT or MOPS algorithms are automatically converted into [[bUnwarpJ]] landmarks. Please, be aware that if you touch any of the input images before calling [[bUnwarpJ]] you will probably loose the point selections (SIFT/MOPS correspondences) of that image and then no landmark will be displayed.
+
+If you do a macro call or use the method bUnwarpJ_.alignImagesBatch, the landmarks will be read as well from the point selections of the input images.
+
+If you are calling [[bUnwarpJ]] from the command line, you will have to save the SIFT/MOPS point selections in a file and use the file name in the command line call.
+===What does "source and target" mean? Which image is being transformed?===
+The "source" image is the image being transformed, i.e. the ''moving image'', while the "target" image is the ''fixed image''. In the "Accurate" and "Fast" modes, both images work as source and target.
 
 == References ==
 The algorithm implemented on bUnwarpJ and its technical explanations are detailed on the paper:
