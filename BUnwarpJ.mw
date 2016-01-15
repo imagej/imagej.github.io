@@ -232,6 +232,12 @@ The divergence and curl weights regularize the deformation by penalizing the [ht
 [[Image:Divergence-curl-2d-examples.png]]
 
 These are attractor points that make the deformation too rough. One of them would not be a problem (it could be just a rotation), but many yes. So controlling them we make the deformation '''smooth'''. If you see that your transformations get too rough, it is a good idea to use them. '''0.1 and 0.1 are usually good values'''  if there's no prior knowledge about the deformation shape.
+====Landmark weight====
+It forces the deformations to fit the landmark points on both images. Set it to '''1.0''' unless you're not using landmarks.
+====Image weight====
+This is the weight to control the pixel values differences. Leave it to '''1.0''' unless you want to do for instance landmark-only registration.
+====Consistency weight====
+It forces the resulting deformations to be one (source to target) as close as possible to the inverse of the other one (target to source). Values '''between 10.0 and 30.0''' usually work fine. It is only taken into account for registration modes "Fast" or "Accurate".
 
 == References ==
 The algorithm implemented on bUnwarpJ and its technical explanations are detailed on the paper:
