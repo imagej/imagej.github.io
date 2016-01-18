@@ -6,7 +6,7 @@
 | filename               = {{Maven | g=sc.fiji | a=AnalyzeSkeleton_}}
 | source                 = {{GitHub|org=fiji|repo=AnalyzeSkeleton}}
 | released               = November 14<sup>th</sup>, 2008
-| latest version         = 2.0.5, October 20<sup>th</sup>, 2015
+| latest version         = 3.0.0, December 7<sup>th</sup>, 2015
 | status                 = stable, active
 | category               = [[:Category:Skeleton|Skeleton]], [[:Category:Analysis|Analysis]]
 }}Analysis of 2D and 3D skeleton images. For the ImageJ plugin, visit [http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:start AnalyzeSkeleton at ImageJ wiki].
@@ -17,7 +17,7 @@
 
 == General Description ==
 [[Image:Tagging_example.png|thumb|292px|Example of voxel classification]]
-This plugin tags all pixel/voxels in a skeleton image and then counts all its junctions, triple and quadruple points and branches, and measures their average and maximum length. The tags are shown in a new window displaying every tag in a different color. You can find it under {{bc | Plugins | Skeleton | Analyze Skeleton (2D/3D)}}. See [[Skeletonize3D]] for an example of how to produce skeleton images.
+This plugin tags all pixel/voxels in a skeleton image and then counts all its junctions, triple and quadruple points and branches, and measures their average and maximum length. The tags are shown in a new window displaying every tag in a different color. You can find it under {{bc | Analyze | Skeleton | Analyze Skeleton (2D/3D)}}. See [[Skeletonize3D]] for an example of how to produce skeleton images.
 
 The voxels are classified into three different categories depending on their 26 neighbors:
 * '''End-point''' voxels: if they have less than 2 neighbors.
