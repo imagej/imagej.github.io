@@ -1030,5 +1030,8 @@ margin-top: 1.75em;
 #content a {
     color: #26d;
 }
+#content a.new {
+    color: #f33;
+}
 
 /* </nowiki></pre> */
