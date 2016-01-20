@@ -4,7 +4,7 @@
 | author                = {{Person|Bogovic}}
 | maintainer            = {{Person|Bogovic}}
 | source                = {{GitHub|org=saalfeldlab|repo=bigwarp}}
-| latest version        = 2.0.1
+| latest version        = 2.1.0
 | status                = stable
 | category              = [[:Category:Plugins|Plugins]], [[:Category:Visualization|Visualization]], [[:Category:Transform|Transform]]
 }}
@@ -30,7 +30,7 @@ Open two images in ImageJ, one ''moving'' and the other ''target'' and navigate 
 === Getting Help ===
 Press {{key press|F1}} at any time to open a help page with a listing of navigation and editing commands. 
 
-=== Landmark point placement and display ===
+=== Landmark point placement and display in the viewer ===
 
 Landmark placements is done in ''Landmark mode'' which you enter by holding {{key press|Spacebar}}.
 Users place pairs of corresponding points on  
@@ -66,6 +66,31 @@ point for the target image.
 | style="padding: 5px;" | {{key press|N}}
 | style="padding: 5px;" | Toggle point name visibility in the viewer.
 |}
+
+=== Landmark selection and editing in the table ===
+
+Some changes to landmarks can be done by interacting with the landmark table.
+
+{| border="1" style="border-collapse:collapse;"
+| style="padding: 5px;" | {{key press|left-click}}
+| style="padding: 5px;" | Select row.
+|-
+| style="padding: 5px;" | {{key press|Ctrl}}+{{key press|left-click}}
+| style="padding: 5px;" | Add row to selection.
+|-
+| style="padding: 5px;" | {{key press|Shift}}+{{key press|left-click}}
+| style="padding: 5px;" | Select range of rows.
+|-
+| style="padding: 5px;" | <''Landmark mode''>+{{key press|left-click}}
+| style="padding: 5px;" | Removes one landmark.
+|-
+| style="padding: 5px;" | {{key press|right-click}} {{arrow}} Delete
+| style="padding: 5px;" | Deletes a landmark pair (row in the table).
+|-
+| style="padding: 5px;" | {{key press|right-click}} {{arrow}} Delete all selected
+| style="padding: 5px;" | Deletes all selected landmark pairs (row in the table).
+|}
+
 
 === Navigation and Visualization ===
 
