@@ -81,6 +81,9 @@ Some changes to landmarks can be done by interacting with the landmark table.
 | style="padding: 5px;" | {{key press|Shift}}+{{key press|left-click}}
 | style="padding: 5px;" | Select range of rows.
 |-
+| style="padding: 5px;" | {{key press|Esc}}
+| style="padding: 5px;" | Deselect all rows.
+|-
 | style="padding: 5px;" | <''Landmark mode''>+{{key press|left-click}}
 | style="padding: 5px;" | Removes one landmark.
 |-
@@ -91,6 +94,11 @@ Some changes to landmarks can be done by interacting with the landmark table.
 | style="padding: 5px;" | Deletes all selected landmark pairs (row in the table).
 |}
 
+=== Notes on point addition and landmark pair selection ===
+
+* Adding a new landmark pair selects that pair (row) in the table.
+* If a row is "missing" a moving (target) landmark point, then it must be selected in order to add that missing point by clicking in the moving (target) viewer.  Then BigWarp will find the "next" row that is missing a moving (target) landmark, and select that row automatically.
+* If multiple rows are selected when a viewer is clicked, the result will be as though only the first row was selected.
 
 === Navigation and Visualization ===
 
