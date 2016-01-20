@@ -41,7 +41,7 @@ The following table shows the available landmark placement commands and keystrok
 | style="padding: 5px;" | Toggle ''Landmark mode'' 
 |-
 | style="padding: 5px;" | <''Landmark mode''>+{{key press|left-click}}
-| style="padding: 5px;" | Clicking while in landmark mode adds a landmark point. 
+| style="padding: 5px;" | Clicking while in landmark mode adds a landmark point or selects and existing landmark.
 |-
 | style="padding: 5px;" | <''Landmark mode''>+{{key press|left-click}}+{{key press|drag}}
 | style="padding: 5px;" | Clicking an existing point and dragging changes it's position. 
