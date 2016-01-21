@@ -20,7 +20,7 @@
 ! colspan=2 | Plugins
 |-
 ! rowspan=2 | [[Eclipse]]
-| rowspan=2 | Super powerful.
+| rowspan=2 | Super powerful
 * ''Essential'' for navigation of large projects
 * Supreme code completion
 * Super useful debugger
@@ -53,7 +53,7 @@
 | colspan=2 | See also [https://github.com/ctrueden/dotfiles/blob/master/vimrc my .vimrc]
 |-
 ! rowspan=6 | [http://www.zsh.org/ Zsh]
-| rowspan=6 | Awesome shell. Even [http://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692 better than bash]
+| rowspan=6 | Awesome shell – even [http://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692 better than bash]
 | [https://github.com/tarjoilija/zgen zgen]
 | Lightweight plugin manager
 |-
