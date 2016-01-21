@@ -11,3 +11,86 @@
 | linkedin = pub/curtis-rueden/15/372/52a
 | website = http://restlesscoder.net/
 }}Curtis Rueden directs the [http://loci.wisc.edu/software/home software development efforts] of [[LOCI]]. He is the principal architect of [[ImageJ2]], and the current maintainer of the [[Fiji]] distribution of ImageJ. He also maintains the [[Bio-Formats]] plugins within [[Fiji]].
+
+== Harder, better, faster, stronger ==
+
+{| class="wikitable"
+! Tool
+! Purpose
+! colspan=2 | Plugins
+|-
+! rowspan=2 | [[Eclipse]]
+| rowspan=2 | Super powerful.
+* ''Essential'' for navigation of large projects
+* Supreme code completion
+* Super useful debugger
+| [http://vrapper.sourceforge.net/ Vrapper]
+| Vim-fu inside Eclipse – almost as good as the real thing
+|-
+| [http://jd.benow.ca/ JD-ECLIPSE]
+| Automatic decompilation when browsing classes
+|-
+! rowspan=7 | [http://www.vim.org/ Vim]
+| rowspan=7 | Best editor! Crazy fast [http://vim.wikia.com/wiki/Macros macro-fu]
+| [https://github.com/VundleVim/Vundle.vim Vundle]
+| Manage your vim plugins like a pro
+|-
+| [https://github.com/tpope/vim-sensible vim-sensible]
+| Defaults everyone can agree on
+|-
+| [https://github.com/vim-airline/vim-airline vim-airline]
+| Lean & mean status/tabline that's light as air
+|-
+| [https://github.com/tpope/vim-fugitive vim-fugitive]
+| A Git wrapper so awesome, it should be illegal
+|-
+| [https://github.com/tpope/vim-repeat vim-repeat]
+| Repeating supported plugin maps with "."
+|-
+| [https://github.com/tpope/vim-surround vim-surround]
+| Quoting/parenthesizing made simple
+|-
+| colspan=2 | See also [https://github.com/ctrueden/dotfiles/blob/master/vimrc my .vimrc]
+|-
+! rowspan=6 | [http://www.zsh.org/ Zsh]
+| rowspan=6 | Awesome shell. Even [http://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692 better than bash]
+| [https://github.com/tarjoilija/zgen zgen]
+| Lightweight plugin manager
+|-
+| [http://ohmyz.sh/ oh-my-zsh]
+| Your terminal never felt ''this'' good before:
+* '''git''' - awesome git completion and aliases
+* '''mvn''' - awesome mvn completion, highlighting, aliases
+* '''vi-mode''' - vi on the CLI
+* '''vundle''' - manage your vim plugins
+* '''z''' - stop <code>cd</code>ing your life away
+* And ''much'' more
+|-
+| [https://github.com/zsh-users/zsh-syntax-highlighting zsh-syntax-highlighting]
+| Syntax highlights commands as you type them
+|-
+| [https://github.com/zsh-users/zsh-history-substring-search zsh-history-substring-search]
+| Better command history navigation
+|-
+| [https://github.com/zsh-users/zsh-completions zsh-completion]
+| Even more and better tab completions
+|-
+| colspan=2 | See also [https://github.com/ctrueden/dotfiles/blob/master/zshrc my .zshrc]
+|-
+! rowspan=2 | [[Git]]
+| rowspan=2 | Stop living under a rock
+| [https://myrepos.branchable.com/ myrepos]
+| Commit, push & pull across repositories [https://github.com/ctrueden/dotfiles/blob/master/mrconfig en masse]
+|-
+| colspan=2 | See also [https://github.com/ctrueden/dotfiles/blob/master/gitconfig my .gitconfig]
+|-
+! [[GitHub]]
+| colspan=3 | If you don't have a GitHub account, you don't exist
+|-
+! [[Maven]]
+| colspan=3 | Build [https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants reusable software components]
+|}
+
+See also:
+* [[Development#Key_developer_tools|Key developer tools]] on this wiki
+* [http://loci.wisc.edu/software/developing-loci-software LOCI developer getting started guide]
