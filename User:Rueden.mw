@@ -32,6 +32,8 @@ So you want to be a decent software developer? USE THESE TOOLS
 | [http://jd.benow.ca/ JD-ECLIPSE]
 | Automatic decompilation when browsing classes
 |-
+| colspan=4 |
+|-
 ! rowspan=7 | [http://www.vim.org/ Vim]
 | rowspan=7 | Best editor! Crazy fast [http://vim.wikia.com/wiki/Macros macro-fu]
 | [https://github.com/VundleVim/Vundle.vim Vundle]
@@ -53,6 +55,8 @@ So you want to be a decent software developer? USE THESE TOOLS
 | Quoting/parenthesizing made simple
 |-
 | colspan=2 | See also [https://github.com/ctrueden/dotfiles/blob/master/vimrc my .vimrc]
+|-
+| colspan=4 |
 |-
 ! rowspan=6 | [http://www.zsh.org/ Zsh]
 | rowspan=6 | Awesome shell – even [http://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692 better than bash]
@@ -79,6 +83,8 @@ So you want to be a decent software developer? USE THESE TOOLS
 |-
 | colspan=2 | See also [https://github.com/ctrueden/dotfiles/blob/master/zshrc my .zshrc]
 |-
+| colspan=4 |
+|-
 ! rowspan=2 | [[Git]]
 | rowspan=2 | Stop living under a rock
 | [https://myrepos.branchable.com/ myrepos]
@@ -86,8 +92,12 @@ So you want to be a decent software developer? USE THESE TOOLS
 |-
 | colspan=2 | See also [https://github.com/ctrueden/dotfiles/blob/master/gitconfig my .gitconfig]
 |-
+| colspan=4 |
+|-
 ! [[GitHub]]
 | colspan=3 | If you don't have a GitHub account, you don't exist
+|-
+| colspan=4 |
 |-
 ! [[Maven]]
 | colspan=3 | Build [https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants reusable software components]
