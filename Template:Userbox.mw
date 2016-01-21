@@ -31,11 +31,13 @@
 {{!}} [https://www.openhub.net/accounts/{{{openhub}}} Open HUB profile]
 {{!}}-
 }}
+<!--
 {{#if:{{{osrc|}}}|
 ! Open Source Report Card
 {{!}} [http://osrc.dfm.io/{{{osrc}}} Open Source Report Card]
 {{!}}-
 }}
+-->
 {{#if:{{{linkedin|}}}|
 ! LinkedIn
 {{!}} [https://www.linkedin.com/{{{linkedin}}} LinkedIn profile]
@@ -61,7 +63,6 @@
 | github                 =
 | stackoverflow          =
 | openhub                =
-| osrc                   =
 | linkedin               =
 | website                =
 }}
@@ -76,7 +77,6 @@
 | github                 = octocat
 | stackoverflow          = 22656/jon-skeet
 | openhub                = kohsuke
-| osrc                   = octocat
 | linkedin               = pub/joel-spolsky/15/4b/649
 | website                = [http://example.org]
 }}<pre style="overflow:auto">
@@ -88,7 +88,6 @@
 | github                 = octocat
 | stackoverflow          = 22656/jon-skeet
 | openhub                = kohsuke
-| osrc                   = octocat
 | linkedin               = pub/joel-spolsky/15/4b/649
 | website                = [http://example.org]
 }}
