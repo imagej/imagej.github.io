@@ -98,6 +98,7 @@ Some changes to landmarks can be done by interacting with the landmark table.
 
 * Adding a new landmark pair selects that pair (row) in the table.
 * If a row is "missing" a moving (target) landmark point, then it must be selected in order to add that missing point by clicking in the moving (target) viewer.  Then BigWarp will find the "next" row that is missing a moving (target) landmark, and select that row automatically.
+* If the selected row is not missing a landmark, the next click will add a new landmark pair.
 * If multiple rows are selected when a viewer is clicked, the result will be as though only the first row was selected.
 
 === Navigation and Visualization ===
