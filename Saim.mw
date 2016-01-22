@@ -35,7 +35,8 @@ Saim Fit will fit each pixel in the input stack and output a stack with 4 images
 
 
 == History ==
-Version 1.0.1 (2016-01-12): Changed calculation of rTE to what appears to be the correct formula
+* 1.0.2 (2016-01-22): Added capability to export predicted data from Plot module
+* 1.0.1 (2016-01-12): Changed calculation of rTE to what appears to be the correct formula
 
 
 
