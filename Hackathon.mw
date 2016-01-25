@@ -147,7 +147,7 @@ ImageJ has benefitted from many hackathons over the years:
 |{{Person|StephanP}}, {{Person|Dietzc}}, {{Person|emmenlau}}, {{Person|StephanJanosch}}
 |Parallelization of [[Multiview-Reconstruction]]<br>and integration with ImageJ Ops & KNIME
 |- valign="top"
-| style="white-space: nowrap" | [[2015-07-27-Janelia_Hackathon|2015 Jul 27 -<br>2015 Jul 31]]
+| style="white-space: nowrap" | [[2015-07-27 - Janelia Hackathon|2015 Jul 27 -<br>2015 Jul 31]]
 |[http://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
 |{{Person|Saalfeld}}, {{Person|Rueden}}, {{Person|hinerm}}, {{Person|Pietzsch}},  {{Person|tomka}}, {{Person|bhoeckendorf}}, {{Person|fernandoamat}}, Phillip Keller
 |[[SCIFIO]] performance and generality
