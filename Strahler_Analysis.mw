@@ -7,7 +7,7 @@
 | filename        = [https://raw.github.com/tferr/Scripts/master/Morphometry/Strahler_Analysis.bsh Strahler_Analysis.bsh]
 | source         = [https://github.com/tferr/Scripts/tree/master/Morphometry#strahler-analysis on GitHub]
 | released        = March 2013
-| latest version = '''1.4.0 2015.01.01'''
+| latest version = '''1.5.1 2016.01.19'''
 | status          = Active, Stable
 | category        = [[:Category:Skeleton|Skeleton]], [[:Category:Analysis|Analysis]], [[:Category:Scripting|Scripting]], [[:Category:Plugins|Plugins]], [[:Category:Neuroanatomy|Neuroanatomy]]
 }}
