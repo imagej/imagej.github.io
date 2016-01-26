@@ -12,7 +12,7 @@ The Glasbey lookup table (LUT) is a color table structured in a maximally discon
 
 Like other LUTs, it is available from the {{bc | Image | Lookup Tables}} menu.
 
-The LUT called "glasbey" is uses white at the first index, whereas "glasbey inverted" starts with black.
+The LUT called "glasbey" uses white at the first index, whereas "glasbey inverted" starts with black.
 
 == Labelings ==
 
