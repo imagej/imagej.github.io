@@ -35,9 +35,9 @@ So you want to be a decent software developer? USE TOOLS
 | colspan=4 |
 |-
 ! rowspan=7 | [http://www.vim.org/ Vim]
-| rowspan=7 | Best editor! Crazy fast [http://vim.wikia.com/wiki/Macros macro-fu]
+| rowspan=7 | Best editor! Crazy fast [http://vim.wikia.com/wiki/Macros macros]
 | [https://github.com/VundleVim/Vundle.vim Vundle]
-| Manage your vim plugins like a pro
+| Manage your vim plugins like a boss
 |-
 | [https://github.com/tpope/vim-sensible vim-sensible]
 | Defaults everyone can agree on
@@ -66,7 +66,7 @@ So you want to be a decent software developer? USE TOOLS
 | [http://ohmyz.sh/ oh-my-zsh]
 | Your terminal never felt ''this'' good before:
 * '''git''' - awesome git completion and aliases
-* '''mvn''' - awesome mvn completion, highlighting, aliases
+* '''mvn''' - mvn completion, highlighting, aliases
 * '''vi-mode''' - vi on the CLI
 * '''vundle''' - manage your vim plugins
 * '''z''' - stop <code>cd</code>ing your life away
@@ -86,7 +86,7 @@ So you want to be a decent software developer? USE TOOLS
 | colspan=4 |
 |-
 ! rowspan=2 | [[Git]]
-| rowspan=2 | Stop living under a rock
+| rowspan=2 | It is worth the pain, I promise
 | [https://myrepos.branchable.com/ myrepos]
 | Commit, push & pull across repositories [https://github.com/ctrueden/dotfiles/blob/master/mrconfig en masse]
 |-
