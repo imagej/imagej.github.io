@@ -19,20 +19,20 @@ Since each project consists of many components, some may be licensed differently
 | colspan=3 style="text-align: center" | '''Required*'''
 | colspan=7 style="text-align: center" | '''Permitted*'''
 |-
-| '''Logo'''
-| '''Project'''
-| '''License'''
-| '''Type'''
-| class="yesno" | [[File:Licensing-disclose-source.png|10px|link=|alt=Disclose source]]
-| class="yesno" | [[File:Licensing-license-and-copyright-notice.png|22px|link=|alt=License and copyright notice]]
-| class="yesno" | [[File:Licensing-state-changes.png|10px|link=|alt=State changes]]
-| class="yesno" | [[File:Licensing-commercial-use.png|10px|link=|alt=Commercial use]]
-| class="yesno" | [[File:Licensing-distribution.png|10px|link=|alt=Distribution]]
-| class="yesno" | [[File:Licensing-modification.png|10px|link=|alt=Modification]]
-| class="yesno" | [[File:Licensing-patent-grant.png|10px|link=|alt=Patent grant]]
-| class="yesno" | [[File:Licensing-private-use.png|10px|link=|alt=Private use]]
-| class="yesno" | [[File:Licensing-hold-liable.png|10px|link=|alt=Hold liable]]
-| class="yesno" | [[File:Licensing-sublicensing.png|10px|link=|alt=Sublicensing]]
+| style="background-color: white" | '''Logo'''
+| style="background-color: white" | '''Project'''
+| style="background-color: white" | '''License'''
+| style="background-color: white" | '''Type'''
+| class="yesno" style="background-color: white" | [[File:Licensing-disclose-source.png|10px|link=|alt=Disclose source]]
+| class="yesno" style="background-color: white" | [[File:Licensing-license-and-copyright-notice.png|22px|link=|alt=License and copyright notice]]
+| class="yesno" style="background-color: white" | [[File:Licensing-state-changes.png|10px|link=|alt=State changes]]
+| class="yesno" style="background-color: white" | [[File:Licensing-commercial-use.png|10px|link=|alt=Commercial use]]
+| class="yesno" style="background-color: white" | [[File:Licensing-distribution.png|10px|link=|alt=Distribution]]
+| class="yesno" style="background-color: white" | [[File:Licensing-modification.png|10px|link=|alt=Modification]]
+| class="yesno" style="background-color: white" | [[File:Licensing-patent-grant.png|10px|link=|alt=Patent grant]]
+| class="yesno" style="background-color: white" | [[File:Licensing-private-use.png|10px|link=|alt=Private use]]
+| class="yesno" style="background-color: white" | [[File:Licensing-hold-liable.png|10px|link=|alt=Hold liable]]
+| class="yesno" style="background-color: white" | [[File:Licensing-sublicensing.png|10px|link=|alt=Sublicensing]]
 |-
 | [[File:imagej1-icon.png|48px]]
 | '''[[ImageJ1]]'''
