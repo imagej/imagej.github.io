@@ -23,16 +23,16 @@ Since each project consists of many components, some may be licensed differently
 | '''Project'''
 | '''License'''
 | '''Type'''
-| class="yesno" style="font-size: 9px" | Disclose<br>Source
-| class="yesno" style="font-size: 9px" | License<br>and<br>copyright<br>notice
-| class="yesno" style="font-size: 9px" | State<br>Changes
-| class="yesno" style="font-size: 9px" | Commercial<br>Use
-| class="yesno" style="font-size: 9px" | Distribution
-| class="yesno" style="font-size: 9px" | Modification
-| class="yesno" style="font-size: 9px" | Patent<br>Grant
-| class="yesno" style="font-size: 9px" | Private<br>Use
-| class="yesno" style="font-size: 9px" | Hold<br>Liable
-| class="yesno" style="font-size: 9px" | Sublicensing
+| class="yesno" | [[File:Licensing-disclose-source.png|10px|link=|alt=Disclose source]]
+| class="yesno" | [[File:Licensing-license-and-copyright-notice.png|10px|link=|alt=License and copyright notice]]
+| class="yesno" | [[File:Licensing-state-changes.png|10px|link=|alt=State changes]]
+| class="yesno" | [[File:Licensing-commercial-use.png|10px|link=|alt=Commercial use]]
+| class="yesno" | [[File:Licensing-distribution.png|10px|link=|alt=Distribution]]
+| class="yesno" | [[File:Licensing-modification.png|10px|link=|alt=Modification]]
+| class="yesno" | [[File:Licensing-patent-grant.png|10px|link=|alt=Patent grant]]
+| class="yesno" | [[File:Licensing-private-use.png|10px|link=|alt=Private use]]
+| class="yesno" | [[File:Licensing-hold-liable.png|10px|link=|alt=Hold liable]]
+| class="yesno" | [[File:Licensing-sublicensing.png|10px|link=|alt=Sublicensing]]
 |-
 | [[File:imagej1-icon.png|48px]]
 | '''[[ImageJ1]]'''
