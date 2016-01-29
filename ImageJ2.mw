@@ -13,12 +13,12 @@ __TOC__
 <div style="background: white; border: 1px solid gray; clear: both; float: right; padding: 10px; width: 30%">
 == ImageJ2's Mission ==
 * To lead ImageJ development with a clear vision.
-* To create the next generation version of ImageJ, based on the needs of the community.
-* To collaborate with other interested parties and institutions whenever beneficial.
-* To ensure ImageJ remains useful and relevant to the broadest possible community.
-* To maintain backwards compatibility with the current ImageJ as close to 100% as possible.
-* To avoid duplication of effort and instead leverage each others' work wherever practical.
-* To provide a central online resource for ImageJ: program downloads, a plugin repository, developer resources and more.
+* To create the next generation of ImageJ, driven by the needs of the community.
+* To forge new collaborations with interested parties and institutions.
+* To ensure ImageJ remains useful and relevant as the community broadens.
+* To preserve backwards compatibility with existing ImageJ functionality.
+* To foster open development of ImageJ through the sharing and reuse of each other’s work.
+* To provide a central, unified, online resource for the ImageJ community.
 </div>
 
 ImageJ2 is a new version of [[ImageJ]] for the next generation of multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of ImageJ 1.x, to support the next generation of multidimensional scientific imaging.
