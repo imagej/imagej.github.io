@@ -169,7 +169,8 @@ PlotData=
 * Many bugfixes in the old implementation, as well as fixes in org.knime.core (mostly concerning subnodes)
 
 == Technical discussions ==
-
+* The future of 3D in ImageJ ([http://forum.imagej.net/t/future-directions-of-3d-in-imagej/669 1])
+* How to handle "lazy" ops ({{GitHub | org=imagej | repo=imagej-ops | issue=173 | label=imagej/imagej-ops#173}})
 
 == Future directions ==
 * {{Person|kephale}} - Explore updating the [[3D Viewer]] to use [[Ops]] and [[ClearVolume]] under the hood.
