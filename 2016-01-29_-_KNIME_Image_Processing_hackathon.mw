@@ -1,0 +1,179 @@
+From Monday, January 11, 2016 through Friday, January 22, 2016, {{Person|Dietzc}} of the [http://www.uni-konstanz.de/en/welcome/ University of Konstanz] hosted ~30 developers at the [https://www.knime.org/contact KNIME Konstanz Regional Office] for a [[hackathon]] to develop the [[KNIME]] Image Processing extensions along with the underlying [[ImageJ Ops]] library, as well as other supporting technologies such as [[ImgLib2]] and [[ClearVolume]].
+
+== Timeline ==
+
+The following chart illustrates when everyone was present:
+
+<timeline>
+Preset = TimeHorizontal_AutoPlaceBars_UnitYear
+
+ImageSize = width:700
+
+Colors =
+  id:c01 value:blue
+  id:c02 value:red
+  id:c03 value:green
+  id:c04 value:black
+  id:c05 value:magenta
+  id:c06 value:teal
+  id:c07 value:yelloworange
+  id:c08 value:skyblue
+  id:c09 value:claret
+  id:c10 value:oceanblue
+  id:c11 value:purple
+  id:c12 value:powderblue
+  id:c13 value:coral
+  id:c14 value:redorange
+  id:c15 value:kelleygreen
+  id:c16 value:orange
+  id:c17 value:lightpurple
+  id:c18 value:tan2
+  id:c19 value:gray(0.3)
+  id:c20 value:blue
+  id:c21 value:red
+  id:c22 value:green
+  id:c23 value:black
+  id:c24 value:magenta
+  id:c25 value:teal
+  id:c26 value:yelloworange
+  id:c27 value:skyblue
+  id:c28 value:claret
+  id:c29 value:oceanblue
+  id:gridLine value:gray(0.5)
+  id:gridCanvas value:gray(0.8)
+
+BackgroundColors = canvas:gridCanvas
+
+Period = from:11 till:23
+
+ScaleMajor = unit:year increment:1 start:11 gridcolor:white
+
+LineData =
+  at:11 color:gridLine layer:back width:0.5
+  at:12 color:gridLine layer:back width:0.5
+  at:13 color:gridLine layer:back width:0.5
+  at:14 color:gridLine layer:back width:0.5
+  at:15 color:gridLine layer:back width:0.5
+  at:16 color:gridLine layer:back width:0.5
+  at:17 color:gridLine layer:back width:0.5
+  at:18 color:gridLine layer:back width:0.5
+  at:19 color:gridLine layer:back width:0.5
+  at:20 color:gridLine layer:back width:0.5
+  at:21 color:gridLine layer:back width:0.5
+  at:22 color:gridLine layer:back width:0.5
+  at:23 color:gridLine layer:back width:0.5
+
+BarData=
+  barset:Hackers
+
+PlotData=
+  width:15 
+  fontsize:M
+  textcolor:white
+  align:left 
+  anchor:from 
+  shift:(4,-4) 
+  color:black
+
+  barSet:Hackers
+  color:c01 from:18 till:20 text:"Tobias Kötter (KNIME)"
+  color:c02 from:18 till:20 text:"Björn Lohmann (KNIME)"
+  color:c03 from:16 till:22 text:"Eike Heinz (UniKN)"
+  color:c04 from:14 till:22 text:"Kevin Mader (ETH/4Quant)"
+  color:c05 from:14 till:21 text:"Thomas J. Re (UniSpitalBasel)"
+  color:c06 from:14 till:18 text:"Julianus Pfeuffer (EKUT)"
+  color:c07 from:13 till:21 text:"Ulrik Günther (MPI-CBG)"
+  color:c08 from:13 till:21 text:"Robert Haase (MPI-CBG)"
+  color:c09 from:13 till:21 text:"Florian Jug (MPI-CBG)"
+  color:c10 from:13 till:21 text:"Tobias Pietzsch (MPI-CBG)"
+  color:c11 from:13 till:21 text:"Loic Royer (MPI-CBG)"
+  color:c12 from:13 till:17 text:"Tim-Oliver Buchholz (UniKN)"
+  color:c13 from:13 till:17 text:"Temesgen H. Dadi (FU Berlin)"
+  color:c14 from:12 till:22 text:"Christian Dietz (UniKN)"
+  color:c15 from:12 till:22 text:"Alexander Fillbrunn (UniKN)"
+  color:c16 from:12 till:22 text:"Jonathan Hale (KNIME)"
+  color:c17 from:12 till:22 text:"Stefan Helfrich (UniKN)"
+  color:c18 from:12 till:22 text:"Mark Hiner (UniWisc)"
+  color:c19 from:12 till:22 text:"Martin Horn (UniKN)"
+  color:c20 from:12 till:22 text:"David Kolb (UniKN)"
+  color:c21 from:12 till:22 text:"Ole Ostergaard (UniKN)"
+  color:c22 from:12 till:22 text:"Curtis Rueden (UniWisc)"
+  color:c23 from:12 till:22 text:"Patrick Winter (UniKN)"
+  color:c24 from:12 till:21 text:"Nico Hoffmann (TUD)"
+  color:c25 from:12 till:19 text:"Jon Fuller (KNIME)"
+  color:c26 from:12 till:19 text:"Kyle Harrington (HMS)"
+  color:c27 from:12 till:17 text:"Timo Sachsenberg (EKUT)"
+  color:c28 from:12 till:15 text:"Luis de la Garza (EKUT)"
+  color:c29 from:12 till:15 text:"Jan Eglinger (FMI Basel)"
+
+</timeline>
+
+== Executive summary ==
+
+
+
+== Hackathon progress ==
+
+=== Mark Hiner ===
+* [[Automatic Update Site Uploads]]
+* {{GitHub | org=imagej | repo=imagej-ui-swing | pr=67 | label=add-imports}}
+* {{GitHub | org=imagej | repo=imagej-ui-swing | issue=60 | label=ops-browser}}
+* {{GitHub | org=scijava | repo=scripting-renjin | label=R scripting in ImageJ}}
+* [[Downloads|Fiji downloads bundled with Java8]]
+
+=== Curtis Rueden ===
+* Improvements
+** Added ops to convert images between types (using map) ({{GitHub | org=imagej | repo=imagej-ops | commit=830ddf81271093784eb8f05f5cb10d4aacde9765 | label=convert-images}})
+** Improved inplace and hybrid op interfaces ({{GitHub | org=imagej | repo=imagej-ops | commit=2e4d67f55f439bb49b85bcf700b2909d982784c8 | label=binary-inplace}}, {{GitHub | org=imagej | repo=imagej-ops | commit=3e2e8317b193207c266a7e22a81c8b457e620649 | label=special-lookups}})
+** Improved the help op to support filtering by more criteria ({{GitHub | org=imagej | repo=imagej-ops | commit=456acc7d8725578c2ac2a8c421645023a477fd7e | label=special-help}})
+** Improved ImageJ tutorials to facilitate community members learning ImageJ2 ([https://github.com/imagej/imagej-tutorials/compare/88c124b504f3f1e603fe106bbb34ff5423012f47%5E...54de6c20a6db7b69514cd7279c98683e850ce657 1])
+** Improved structure of [[Script Editor]] Templates menu, thanks to discussions with {{Person|kephale}} ({{GitHub | org=imagej | repo=imagej-ui-swing | commit=27342e0b4e05ddc7d21bff6530a588554eea87e2 | label=templates-menu}})
+** Marked [[ImageJ Legacy]] as optional, thanks to feedback from {{Person|kmader}} and others ({{GitHub | org=imagej | repo=imagej | commit=e8fbfeee858960f4a46aed8e0eb03175385d62fa | label=imagej/imagej@e8fbfeee}})
+** Added a main class to Fiji, for easier launching from an IDE, thanks to a discussion with {{Person|fjug}} ([https://github.com/fiji/fiji/compare/bc128e3d7ab8c9e1269d88b7e534f7025e6f41cd%5E...f45204e32105873f4cddb132740d17deeda49879 1])
+** Added a View marker interface to ImgLib2, to facilitate "lightweight" ops ({{GitHub | org=imglib | repo=imglib2 | pr=116 | label=view-marker}})
+** Helped clean up {{Person|tibuch}}'s Ops Views PR ({{GitHub | org=imagej | repo=imagej-ops | pr=168 | label=views}})
+** Helped {{Person|hinerm}} a bit with the Renjin script language ([https://github.com/scijava/scripting-renjin/compare/8c65d9ae8ca30ffe3c6b3e70e1dd88222e07a52c%5E...f6fffb4117bed4c37811fa64a114145ce0b5c938 1])
+** Helped {{Person|fjug}} and {{Person|tpietzsch}} establish [[Jenkins]] jobs for [http://jenkins.imagej.net/view/MPI-CBG/ MPI-CBG projects]
+
+* Bugs
+** Fixed equals/hashCode problems with [[ImgLib2]] integer types ({{GitHub | org=imglib | repo=imglib2 | pr=111 | label=imglib/imglib2#111}})
+** Fixed a bug in the [[SciJava Common|SJC]] PrefService, noticed by {{Person|kephale}} ({{GitHub | org=scijava | repo=scijava-common | commit=ab2a9adae7a8e6e8785874a13bbf805c5f8e71fe | label=long-pref-keys}})
+** Fixed [[SCIFIO]] bug with DICOM format, noticed by {{Person|kmader}} ({{GitHub | org=scifio | repo=scifio | pr=292 | label=dicom-file-list-npe}})
+** Fixed bug when executing ops as commands, noticed by {{Person|kephale}} ({{GitHub | org=imagej | label=imagej-ops | commit=34b5523dfc051741a9ed69d2b5b9f97df24f2677 | label=ops-as-commands}})
+** Investigated SJC bug in class loading, noticed by {{Person|EikeHeinz}}, but no solution yet ({{GitHub | org=scijava | repo=scijava-common | issue=219 | label=scijava/scijava-common#219}})
+** Fixed Eclipse configuration to run enforcer only upon initial configuration ({{GitHub | org=scijava | repo=pom-scijava | commit=022a7bea5ebbc5b81ffae7386a26eea8f8677e3f scijava/pom-scijava@022a7bea}})
+
+* Research
+** Investigated improvements to Ops generic parameter matching. The problem is complex, but a solution is in the works.
+** Explored possible Ops matching performance improvements ({{GitHub | org=imagej | repo=imagej-ops | pr=332 | label=fast-op-index}})
+** Improved Jenkins jobs to build SNAPSHOT javadoc for all core [[SciJava]] components (scijava, scifio, imglib2 and imagej). as requested by {{Person|stelfrich}} ({{GitHub | org=imagej | repo=imagej-javadoc | commit=8cffdfa07c7406ebc8152cbdb84213d8a9774ff8 | label=1}}, {{GitHub | org=scifio | repo=scifio-javadoc | commit=be25fda9f6baaaaa84f62fc6081d7e0ded8891e8 | label=2}}, {{GitHub | org=imglib | repo=imglib2-javadoc | commit=e97cfc7a1e29dd1251297e2858245e7bfb275657 | label=3}})
+
+* Reviewed and merged PRs ([https://github.com/scijava/scijava-common/pull/217 1], [https://github.com/imagej/imagej-ops/pull/321 2], [https://github.com/imagej/imagej-ops/commit/d5ac4b371aef9a415aa3cccd9be56aa201384a8a 3], [https://github.com/imagej/imagej-ops/commit/ed0c3e8362857364aa08d17e26a29d1efbaf87cb 4], [https://github.com/imagej/imagej-ops/pull/324 5], [https://github.com/imagej/imagej-ops/pull/326 6], [https://github.com/imagej/imagej-ops/pull/328 7], [https://github.com/imagej/imagej-ops/pull/329 8], [https://github.com/imagej/imagej-ops/pull/330 9])
+
+* Pair programming bug-fixes and enhancements:
+** {{GitHub | org=imagej | repo=imagej-common | pr=58 | label=alias-for-img}} (with {{Person|kephale}})
+** {{GitHub | org=imagej | repo=imagej-ops | pr=318 | label=refactor-stats-ops}} (with {{Person|imagejan}})
+** {{GitHub | org=imagej | repo=imagej-ops | pr=322 | label=fix-slicewise-op}} (with {{Person|imagejan}})
+
+=== Robert Haase ===
+* Implemented continuous (Hyper-)Ellipsoids, Rectangles and Binary operators for imglib2-roi. 
+* Developed prototype for “Data Explorer” window for ImageJ/FIJI
+** holding various data structures like images, labelings, measurements (tables) and plots. The structure is persistent, so closing windows does not delete the items from the tree. They can be reopened.
+** 2D/3D/nD? data is handled equally, so selecting/deleting labels for/from further analysis according to their properties is possible more or less independent from the labels dimensionality.
+** Measurements on labels is based on imagej ops()
+
+=== Patrick Winter ===
+* org.knime.cluster the abstract implementation of the cluster integration in KNIME is now open source, enabling the community to easily implement their own cluster connector
+* Wrapped metanodes (aka subnodes) can now be executed in the cluster and also support split input data (which was not the case with the previous implementation of metanodes)
+* Implementation of cluster connectors got simpler since we removed the differentiation of single jobs and chunked jobs with a size of 1
+* Many bugfixes in the old implementation, as well as fixes in org.knime.core (mostly concerning subnodes)
+
+== Technical discussions ==
+
+
+== Future directions ==
+* {{Person|kephale}} - Explore updating the [[3D Viewer]] to use [[Ops]] and [[ClearVolume]] under the hood.
+
+[[Category:News]]
+[[Category:ImageJ2]]
+[[Category:KNIME]]
