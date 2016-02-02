@@ -1,7 +1,9 @@
-{| style="font-size: 1.1em"
-| style="width: 350px" | [[File:Imagej-user-guide.jpg | x350px | center | link=http://imagej.net/docs/guide/]]
-| style="width: 350px" | [[File:FluorescenceImageAnalysisIntro_copy.jpg | x386px | center | link=http://blogs.qub.ac.uk/ccbg/files/2014/05/2014-05_Analyzing_fluorescence_microscopy_images.pdf]]
-|-
-| style="width: 350px; vertical-align: top" | The [http://imagej.net/docs/guide/ ImageJ User Guide] provides a thorough description of [[ImageJ]]'s built-in functions.
-| style="width: 350px; vertical-align: top" | [http://blogs.qub.ac.uk/ccbg/fluorescence-image-analysis-intro/ Analyzing fluorescence microscopy images with ImageJ] provides detailed information on image analysis using [[ImageJ]].
-|}
+<div style="float: left; font-size: 1.1em; text-align: center; width: 350px">
+<div style="height: 385px">[[File:Imagej-user-guide.jpg | x350px | center | link=http://imagej.net/docs/guide/]]</div>
+<div>The [http://imagej.net/docs/guide/ ImageJ User Guide] provides a thorough description of [[ImageJ]]'s built-in functions.</div>
+</div>
+
+<div style="float: left; font-size: 1.1em; text-align: center; width: 350px">
+<div style="height: 385px">[[File:FluorescenceImageAnalysisIntro_copy.jpg | x386px | center | link=http://blogs.qub.ac.uk/ccbg/files/2014/05/2014-05_Analyzing_fluorescence_microscopy_images.pdf]]</div>
+<div>[http://blogs.qub.ac.uk/ccbg/fluorescence-image-analysis-intro/ Analyzing fluorescence microscopy images with ImageJ] provides detailed information on image analysis using [[ImageJ]].</div>
+</div>
