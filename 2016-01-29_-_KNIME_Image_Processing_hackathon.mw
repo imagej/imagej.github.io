@@ -169,11 +169,11 @@ PlotData=
 * Many bugfixes in the old implementation, as well as fixes in org.knime.core (mostly concerning subnodes)
 
 === Ulrik Günther ===
-* discussed future directions and extensions for [https://github.com/clearvolume/clearvolume ClearVolume] with Loic Royer, {{Person|fjug}} and {{Person|tpietzsch}}.
+* discussed future directions and extensions for [https://github.com/clearvolume/clearvolume ClearVolume] with {{Person|royerloic}}, {{Person|fjug}} and {{Person|tpietzsch}}.
 * moved scenegraph implementation for ClearVolume to [https://github.com/clearvolume/scenery own project] for re-usability.
 * moved [https://github.com/clearvolume/cleargl ClearGL] back to pure Java
 * discussed possilibities for additional renderers (e.g. software renderer) with {{Person|kephale}}.
-* discussed implementation with Loic Royer and wrote first tests.
+* discussed implementation with {{Person|royerloic}} and wrote first tests.
 
 == Technical discussions ==
 * The future of 3D in ImageJ ([http://forum.imagej.net/t/future-directions-of-3d-in-imagej/669 1])
