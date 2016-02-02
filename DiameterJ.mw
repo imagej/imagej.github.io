@@ -218,7 +218,7 @@ A montage image with four images in it
 :#When analyzing the images with multiple distinct fiber diameters it has been found that DiameterJ under represented the prevalence of larger diameter fibers as compared to smaller fibers.  This bias leads to weighted averages being inaccurate and for global averages of fiber diameters to be biased toward smaller fiber diameters.  The bias is due to intersection correction/subtraction and the increased probability of larger fibers having more intersections due to their increased size.  This limitation can be partially overcome by directional intersection correction of fiber intersection, which is currently under development.  However, this limitation is inherent to all two-dimensional image analysis techniques and cannot be completely eliminated, making weighted averages of fiber diameter slightly inaccurate no matter what.  
 :#Distinguishing between fiber diameters that are closer in diameter than 3 pixels often creates resolution difficulties for peak fitting and the prevalence of each fiber diameter can be skewed.  This has to do with inherent limitations due to pixel binning of diagonal lines in Euclidean Distance Transforms. This limitation can be overcome by increasing magnification of your image so that fibers with different diameters have more than 3 pixels of difference between them.
 
-=== <big>Installatio</big>n ===
+=== <big>Installation</big> ===
 ----
 If you installed imageJ before the end of 2013 you should uninstall your current version of ImageJ ('''DO NOT UPDATE''') and reinstall ImageJ 1.48 or newer. 
 :*Before uninstall be sure to copy all of your old plugins into a separate folder as these will be removed when you uninstall your old version of ImageJ.  
