@@ -76,13 +76,13 @@ PlotData=
   color:black
 
   barSet:Hackers
-  color:c01 from:18 till:20 text:"Tobias Kötter (KNIME)"
-  color:c02 from:18 till:20 text:"Björn Lohmann (KNIME)"
-  color:c03 from:16 till:22 text:"Eike Heinz (UniKN)"
-  color:c04 from:14 till:22 text:"Kevin Mader (ETH/4Quant)"
-  color:c05 from:14 till:21 text:"Thomas J. Re (UniSpitalBasel)"
-  color:c06 from:14 till:18 text:"Julianus Pfeuffer (EKUT)"
-  color:c07 from:18 till:21 text:"Ulrik Günther (MPI-CBG)"
+  color:c01 from:18 till:21 text:"Ulrik Günther (MPI-CBG)"
+  color:c02 from:18 till:20 text:"Tobias Kötter (KNIME)"
+  color:c03 from:18 till:20 text:"Björn Lohmann (KNIME)"
+  color:c04 from:16 till:22 text:"Eike Heinz (UniKN)"
+  color:c05 from:14 till:22 text:"Kevin Mader (ETH/4Quant)"
+  color:c06 from:14 till:21 text:"Thomas J. Re (UniSpitalBasel)"
+  color:c07 from:14 till:18 text:"Julianus Pfeuffer (EKUT)"
   color:c08 from:13 till:21 text:"Robert Haase (MPI-CBG)"
   color:c09 from:13 till:21 text:"Florian Jug (MPI-CBG)"
   color:c10 from:13 till:21 text:"Tobias Pietzsch (MPI-CBG)"
