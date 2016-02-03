@@ -184,6 +184,12 @@ PlotData=
 * unified naming of "source" and "target" in imglib2 Views and RealViews [https://github.com/imglib/imglib2-realtransform/pull/4].
 * investigated imglib2 PlanarImg bug with {{Person|dietzc}} and {{Person|kephale}}.
 
+=== Stefan Helfrich ===
+* worked on integral image-based local thresholding ops
+** {{GitHub | org=imglib | repo=imglib2-algorithm | pr=17 | label=corner-cursor}}
+** {{GitHub | org=imglib | repo=imglib2-algorithm | pr=16 | label=integralimg-of-squares}}
+** {{GitHub | org=imagej | repo=imagej-ops | pr=335 | label=localthreshold-on-rai}}
+
 == Technical discussions ==
 * The future of 3D in ImageJ ([http://forum.imagej.net/t/future-directions-of-3d-in-imagej/669 1])
 * How to handle "lazy" ops ({{GitHub | org=imagej | repo=imagej-ops | issue=173 | label=imagej/imagej-ops#173}})
