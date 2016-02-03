@@ -175,6 +175,15 @@ PlotData=
 * discussed possilibities for additional renderers (e.g. software renderer) with {{Person|kephale}}.
 * discussed implementation with {{Person|royerloic}} and wrote first tests.
 
+=== Tobias Pietzsch ===
+* reviewed, augmented and merged {{Person|tinevez}} YAML serialization for {{GitHub | org=scijava | repo=ui-behaviour | label=ui-behaviour}}.
+* moved {{GitHub | org=scijava | repo=ui-behaviour | label=ui-behaviour}} to the scijava org and set up jenkins jobs with {{Person|ctrueden}}, and released 1.0.0.
+* fixed memory leak in BigDataViewer ([https://github.com/bigdataviewer/bigdataviewer-core/pull/17]).
+* worked on factor graph library for tracking/segmentation formulations with {{Person|fjug}}.
+* reviewed and merged imglib2 PRs [https://github.com/imglib/imglib2/pull/117], [https://github.com/imglib/imglib2/pull/116], [https://github.com/imglib/imglib2/pull/114], [https://github.com/imglib/imglib2/pull/113], [https://github.com/imglib/imglib2/pull/111], [https://github.com/imglib/imglib2-realtransform/pull/3], [https://github.com/imglib/imglib2-realtransform/pull/2].
+* unified naming of "source" and "target" in imglib2 Views and RealViews [https://github.com/imglib/imglib2-realtransform/pull/4].
+* investigated imglib2 PlanarImg bug with {{Person|dietzc}} and {{Person|kephale}}.
+
 == Technical discussions ==
 * The future of 3D in ImageJ ([http://forum.imagej.net/t/future-directions-of-3d-in-imagej/669 1])
 * How to handle "lazy" ops ({{GitHub | org=imagej | repo=imagej-ops | issue=173 | label=imagej/imagej-ops#173}})
