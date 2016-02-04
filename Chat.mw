@@ -1,8 +1,8 @@
-[[ImageJ]] developers are often available via a couple of different chat services.
+[[ImageJ]] community members are often available via a couple of different chat services.
 
 == Gitter ==
 
-The [[wikipedia:Gitter|Gitter]] chat service, while relatively new, is a great way to discuss programming issues with developers of the [[SciJava]] software stack. All you need is a [https://github.com/ GitHub] account. Advantages of Gitter include a nice "21st century" web interface, email notification when participants miss messages, and a full searchable history.
+The [[wikipedia:Gitter|Gitter]] chat service, while relatively new, is a great way to discuss issues with developers of the [[SciJava]] software stack. All you need is a [https://github.com/ GitHub] account. Advantages of Gitter include a nice "21st century" web interface, email notification when participants miss messages, and a full searchable history.
 
 {| class="wikitable nicetable"
 | '''Logo'''
@@ -36,7 +36,7 @@ The [[wikipedia:Gitter|Gitter]] chat service, while relatively new, is a great w
 
 == IRC ==
 
-Developers frequent [[wikipedia:Internet Relay Chat|IRC]] on [http://freenode.net/ irc.freenode.net], in chat rooms:
+Some community members frequent [[wikipedia:Internet Relay Chat|IRC]] on [http://freenode.net/ irc.freenode.net], in chat rooms:
 {| class="wikitable"
 |-
 ! Channel
