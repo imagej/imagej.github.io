@@ -1,16 +1,23 @@
 <div style="float: right">__TOC__</div>
-
+<div style="float: left; padding-right: 3em">
+== [[File:Imagej2-icon.png | x48px | link=ImageJ2]] ImageJ ==
+Download an "all platforms" bundle of ImageJ, without any extra extensions.
+{{Box |
+| bgcolor=white
+| text=<center>
+<div style="position: absolute; padding-left: 150px; padding-top: 100px; opacity: 0.85">[[File:Download.png | 92px | link=http://downloads.imagej.net/ImageJ2-20160205.zip]]</div>
+[[File:Imagej2-icon.png | 192px | link=http://downloads.imagej.net/ImageJ2-20160205.zip]]
+</center>
+}}
+</div>
+<div style="float: left">
 == [[File:Fiji-icon.png | x48px | link=Fiji]] Fiji is Just ImageJ ==
 
 [[Fiji]] is a distribution of ImageJ which includes many useful plugins [[Fiji_contribution_requirements|contributed by the community]].
 
 {{DownloadFiji}}
-<!--
-Mirrors (OUT OF DATE):
-* [http://valelab.ucsf.edu/~schindelin/ University of California, San Francisco, thanks to Nico Stuurman!]
-* [http://code.google.com/p/fiji-bi/downloads/list Fiji on GoogleCode] (only files smaller than 100MB due to upload restrictions)
-* [http://sourceforge.net/projects/fiji-bi/files/ Fiji on SourceForge]
- -->
+</div>
+{{Clear}}
 
 = System requirements =
 
@@ -37,25 +44,12 @@ For more detailed instructions, see the installation walkthroughs:
 
 * Many common questsions are answered on the [[FAQ]].
 * If you encounter bugs, please see the [[Help|Getting Help]] page.
-* The platform-specific downloads come bundled with Java 6. You can also [http://jenkins.imagej.net/job/Stable-Fiji/lastSuccessfulBuild/artifact/fiji-nojre.zip download a platform-independent version] with no bundled Java.
 
 = Source code =
 
 See the [[source code]] page for details on obtaining the ImageJ and Fiji source code.
 
 = Other downloads =
-
-== ImageJ ==
-
-{{DownloadVersion
-| title = ImageJ development snapshot
-| description = You can download the latest DEVELOPMENT, UNSTABLE application bundle of ImageJ. This build includes the latest changes on the [https://github.com/imagej/imagej master branch of the source repository]. It has not been thoroughly tested and may contain new bugs.
-| logo = Imagej2-icon.png
-| all = http://jenkins.imagej.net/job/ImageJ/lastSuccessfulBuild/artifact/target/imagej-latest.zip
-}}
-=== See also ===
-* [[ImageJ2 development releases]] for early versions of [[ImageJ2]].
-* [http://imagej.net/download/ ImageJ1 download archive] for old versions of [[ImageJ1|ImageJ 1.x]].
 
 == Life-Line Fiji versions ==
 
@@ -103,5 +97,7 @@ See the [[source code]] page for details on obtaining the ImageJ and Fiji source
 | linux64 = http://downloads.imagej.net/Life-Line/fiji-linux64-20130715.tar.gz
 | all = http://downloads.imagej.net/Life-Line/fiji-nojre-20130715.zip
 }}
-=== See also ===
-* [http://downloads.imagej.net/ Fiji downloads archive] for older versions of [[Fiji]].
+== See also ==
+* [[ImageJ2 development releases]] for early versions of [[ImageJ2]].
+* [http://downloads.imagej.net/] for early versions of [[Fiji]], and other miscellany.
+* [http://imagej.net/download/ ImageJ1 download archive] for old versions of [[ImageJ1|ImageJ 1.x]].
