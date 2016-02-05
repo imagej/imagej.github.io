@@ -38,14 +38,16 @@
 <pre>
 {{Box
 | title = Do you like green eggs and ham?
-| text = I like green eggs and ham! I do! I like them, Sam-I-am!
-| bgcolor = limegreen
+| text = I like green eggs and ham!
+I do! I like them, Sam-I-am!
+| bgcolor = palegreen
 }}
 </pre>
 {{Box
 | title = Do you like green eggs and ham?
-| text = I like green eggs and ham! I do! I like them, Sam-I-am!
-| bgcolor = limegreen
+| text = I like green eggs and ham!
+I do! I like them, Sam-I-am!
+| bgcolor = palegreen
 }}
 
 [[Category:Boxes]]
