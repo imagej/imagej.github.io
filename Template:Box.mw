@@ -38,15 +38,13 @@
 <pre>
 {{Box
 | title = Do you like green eggs and ham?
-| text = I like green eggs and ham!
-I do! I like them, Sam-I-am!
+| text = I like green eggs and ham!<br>I do! I like them, Sam-I-am!
 | bgcolor = palegreen
 }}
 </pre>
 {{Box
 | title = Do you like green eggs and ham?
-| text = I like green eggs and ham!
-I do! I like them, Sam-I-am!
+| text = I like green eggs and ham!<br>I do! I like them, Sam-I-am!
 | bgcolor = palegreen
 }}
 
