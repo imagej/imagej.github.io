@@ -1,15 +1,5 @@
 <div style="float: right">__TOC__</div>
-<div style="float: left; padding-right: 3em">
-== [[File:Imagej2-icon.png | x48px | link=ImageJ2]] ImageJ ==
-Download an "all platforms" bundle of ImageJ, without any extra extensions.
-{{Box |
-| bgcolor=white
-| text=<center>
-<div style="position: absolute; padding-left: 150px; padding-top: 100px; opacity: 0.85">[[File:Download.png | 92px | link=http://downloads.imagej.net/ImageJ2-20160205.zip]]</div>
-[[File:Imagej2-icon.png | 192px | link=http://downloads.imagej.net/ImageJ2-20160205.zip]]
-</center>
-}}
-</div>
+
 <div style="float: left">
 == [[File:Fiji-icon.png | x48px | link=Fiji]] Fiji is Just ImageJ ==
 
@@ -19,6 +9,18 @@ Download an "all platforms" bundle of ImageJ, without any extra extensions.
 </div>
 {{Clear}}
 
+
+<div style="float: left; padding-right: 3em">
+== [[File:Imagej2-icon.png | x48px | link=ImageJ2]] ImageJ ==
+Download an "all platforms" bundle of ImageJ, without any extra extensions.
+{{Box |
+| bgcolor=white
+| text=<center>
+[[File:Imagej2-download-icon.png | link=http://downloads.imagej.net/ImageJ2-20160205.zip | 192px ]]
+</center>
+}}
+</div>
+{{Clear}}
 = System requirements =
 
 ImageJ will run on any system that has a Java 6 (or later) runtime installed. This includes, but is not limited to:
