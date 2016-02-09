@@ -1,15 +1,5 @@
 <div style="float: right">__TOC__</div>
 
-<div style="float: left">
-== [[File:Fiji-icon.png | x48px | link=Fiji]] Fiji is Just ImageJ ==
-
-[[Fiji]] is a distribution of ImageJ which includes many useful plugins [[Fiji_contribution_requirements|contributed by the community]].
-
-{{DownloadFiji}}
-</div>
-{{Clear}}
-
-
 <div style="float: left; padding-right: 3em">
 == [[File:Imagej2-icon.png | x48px | link=ImageJ2]] ImageJ ==
 Download an "all platforms" bundle of ImageJ, without any extra extensions.
@@ -19,6 +9,13 @@ Download an "all platforms" bundle of ImageJ, without any extra extensions.
 [[File:Imagej2-download-icon.png | link=http://downloads.imagej.net/ImageJ2-20160205.zip | 192px ]]
 </center>
 }}
+</div>
+<div style="float: left">
+== [[File:Fiji-icon.png | x48px | link=Fiji]] Fiji is Just ImageJ ==
+
+[[Fiji]] is a distribution of ImageJ which includes many useful plugins [[Fiji_contribution_requirements|contributed by the community]].
+
+{{DownloadFiji}}
 </div>
 {{Clear}}
 = System requirements =
