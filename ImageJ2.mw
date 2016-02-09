@@ -10,17 +10,18 @@
 
 __TOC__
 
-<div style="background: white; border: 1px solid gray; clear: both; float: right; padding: 10px; width: 30%">
-== ImageJ2's Mission ==
-* To lead ImageJ development with a clear vision.
-* To create the next generation of ImageJ, driven by the needs of the community.
-* To forge new collaborations with interested parties and institutions.
-* To ensure ImageJ remains useful and relevant as the community broadens.
-* To preserve backwards compatibility with existing ImageJ functionality.
-* To foster open development of ImageJ through the sharing and reuse of each other’s work.
-* To provide a central, unified, online resource for the ImageJ community.
-</div>
+{{Box
+| float=right
+| text=<h2>ImageJ2's Mission</h2>
+* '''Design.''' Create the next generation of ImageJ, driven by the needs of the community.
+* '''Collaborate.''' Work together across organizations, fostering open development through sharing and reuse.
+* '''Broaden.''' Make ImageJ useful and relevant across many disciplines of the scientific community.
+* '''Maintain.''' Preserve backwards compatibility with existing ImageJ functionality.
+* '''Unify.''' Provide a central online resource for the ImageJ community.
+* '''Lead.''' Lead ImageJ development with a clear vision.
 
+See also [these presentation slides about ImageJ](https://imagej.github.io/presentations/2015-09-03-imagej2-and-fiji/#/4).
+}}
 ImageJ2 is a new version of [[ImageJ]] for the next generation of multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of ImageJ 1.x, to support the next generation of multidimensional scientific imaging.
 
 To ensure backwards compatibility, ImageJ2 has been designed to fully integrate into the existing ImageJ user interface. This allows users to keep using ImageJ in familiar ways, while providing the ability to migrate toward more powerful new features as needed.
