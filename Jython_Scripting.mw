@@ -1763,6 +1763,46 @@ sys.exit (0)
 
 Of course, if your macro happens to return <code>[aborted]</code> for success, you're out of luck ;)
 
+=== Running 3rd party java libraries ===
+
+It is possible to run external java programs within Jython. To make them available, just copy the corresponding jar file into Fiji's plugins folder. To import the respective java classes, just do
+
+<source lang="python">
+import name.of.external.java.library as foo
+</source> 
+
+If the class names of the external package are unknown, one possibility is to inspect the jar file manually. On Linux and Mac OS systems just do on the command line
+
+<source>
+
+jar tvf <library>.jar 
+
+</source>
+
+This will print the jar contents as plain text, look for entries ending with ".class". For the implementation of json in jython, provided at jyson.xhaus.com, the output looks like:
+
+<source>
+
+jar tvf jyson-1.0.2.jar
+     0 Sat Mar 17 14:06:40 CET 2012 META-INF/
+   106 Sat Mar 17 14:06:38 CET 2012 META-INF/MANIFEST.MF
+     0 Sat Mar 17 14:06:40 CET 2012 com/
+     0 Sat Mar 17 14:06:40 CET 2012 com/xhaus/
+     0 Sat Mar 17 14:06:40 CET 2012 com/xhaus/jyson/
+   174 Sat Mar 17 14:06:40 CET 2012 com/xhaus/jyson/JSONDecodeError.class
+   174 Sat Mar 17 14:06:40 CET 2012 com/xhaus/jyson/JSONEncodeError.class
+   162 Sat Mar 17 14:06:40 CET 2012 com/xhaus/jyson/JSONError.class
+  1650 Sat Mar 17 14:06:40 CET 2012 com/xhaus/jyson/JysonCodec.class
+  6350 Sat Mar 17 14:06:40 CET 2012 com/xhaus/jyson/JysonDecoder.class
+  3899 Sat Mar 17 14:06:40 CET 2012 com/xhaus/jyson/JysonEncoder.class
+</source>
+
+The JysonCodec.class is the toplevel class, so to import this library include the following line in your jython script:
+
+<source lang="python">
+import com.xhaus.jyson.JysonCodec as jyson
+</source>
+
 [[Category:Scripting]]
 [[Category:Jython]]
 
