@@ -68,8 +68,8 @@ The ImageJ update site uses [[wikipedia:Secure Shell|ssh]] authentication. You w
 
 In the ''Manage update sites'' dialog, on the ImageJ update site line, add the following information:
 
-* Host = '''yourImageJLogin@update.imagej.net'''
-* Directory on host = '''/home/imagej/update-site/'''
+* Host = <code>yourImageJLogin@update.imagej.net</code>
+* Directory on host = <code>/home/imagej/update-site/</code>
 
 It should look like this:
 
