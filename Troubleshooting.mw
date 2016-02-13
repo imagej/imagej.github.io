@@ -11,31 +11,27 @@ See also [[Frequently Asked Questions#How_do_I_launch_ImageJ_with_a_different_ve
 
 == Launching ImageJ from the console ==
 
-To diagnose problems with ImageJ, it is often helpful to launch it in debug mode. There are several ways:
+To diagnose problems with ImageJ, it is often helpful to launch it in debug mode:
 
-<ol>
-<li>'''Set the <code>DEBUG</code> environment variable.''' E.g., on Linux:
-<source lang="bash">DEBUG=1 $HOME/ImageJ.app/ImageJ-linux64</source>
-</li>
-<li>'''Launch with the <code>--debug</code> flag.'''
 <ul>
 <li>On Linux 64-bit (from a console):
-<source lang="bash">$HOME/ImageJ.app/ImageJ-linux64 --debug</source>
+<source lang="bash">DEBUG=1 $HOME/ImageJ.app/ImageJ-linux64</source>
 </li>
 <li>On OS X (from Terminal):
-<source lang="bash">/Applications/ImageJ.app/Contents/MacOS/ImageJ-macosx --debug</source>
+<source lang="bash">DEBUG=1 /Applications/ImageJ.app/Contents/MacOS/ImageJ-macosx</source>
 </li>
 <li>On Windows 64-bit (from Command Prompt):
-<source lang="bash">%HOMEPATH%\ImageJ.app\ImageJ-win64.exe --debug</source>
+<ul>
+<li>Make a copy of <code>ImageJ-win64.exe</code> called <code>debug.exe</code></li>
+<li>Run <code>debug.exe</code></li>
 </ul>
 </li>
-<li>'''Rename the launcher.''' You can rename the executable from <code>ImageJ-xxx</code> to <code>debug</code> (<code>debug.exe</code> on Windows) before launching, and the launcher will be more verbose about what it is doing.
-</li>
-<li>'''Set <code>scijava.log.level</code>.''' You can control the log level more precisely by setting the <code>scijava.log.level</code> system property. E.g., on Linux:
+</ul>
+
+=== If you need more control ===
+You can control the log level more precisely by setting the <code>scijava.log.level</code> system property. E.g., on Linux:
 <source lang="bash">$HOME/ImageJ.app/ImageJ-linux64 -Dscijava.log.level=trace --</source>
 Valid levels include: <code>none</code>, <code>error</code>, <code>warn</code>, <code>info</code>, <code>debug</code> and <code>trace</code>. See the [[Logging]] page for more about SciJava logging.
-</li>
-</ol>
 
 == The other debug mode ==
 
