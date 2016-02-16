@@ -25,3 +25,8 @@ Open the [[Using_the_Script_Editor|script editor]], select <code>Templates > IJ1
 [[Image:Process_folder_ij1.png|center]]
 
 Lines 26 and 27 can now be edited, replaced with the functional macro code you would like to apply to all images of a given type in a folder. Furthermore you can now modify the batch processing logic itself, for example if you need to customize what (if any) output information is saved.
+
+= See also =
+
+* [http://imagej.net/docs/guide/146-29.html#toc-Subsection-29.12 {{bc | Process | Batch}}] submenu.
+* [[Scripting]] documentation and tutorials.
