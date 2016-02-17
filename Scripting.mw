@@ -76,7 +76,7 @@ Scripts in the top-level "plugins" directory will appear at the bottom of the Pl
 
 If you aren't able to find your script, you can always run the [[Using_the_Command_Launcher|Command Finder]] to verify its location (or absence).
 
-== Running scripts in headless mode ==
+= Running scripts in headless mode =
 
 See the [[Headless#Running_scripts_in_headless_mode|Headless]] page for instructions on executing scripts headlessly.
 
