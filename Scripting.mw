@@ -62,17 +62,19 @@ On selecting text, a popup offers to:
 
 You can create, edit and run scripts using Fiji's script editor.  For details, please see [[Using the Script Editor|the Script Editor documentation]].
 
-= Creating scripts and using "refresh scripts" =
+= Adding scripts to the Plugins menu =
 
-On startup, ImageJ will run all "refresh scripts" plugins, one for each supported language. This will result in all scripts present within the plugins folders to be added to the menus.
+For the script to appear in the Plugin menus, the following must apply:
 
-To run a script, just select it from the plugins menus.
+# The script file is saved in the <code>ImageJ.app/plugins</code> directory (or a subdirectory thereof).
+# The script name ends in a supported script extension. For example, ".js" for javascript, ".py" for jython, ".rb" for jruby, ".clj" for clojure, and ".bs" for beanshell script. 'NOTE:' ".txt" is not a supported script language.
+# The script name contains a '_' (underscore) character, e.g. "MyScript_.ijm"
 
-If you edit a script that is already placed in the menus, you don't need to do anything else: just save the text file and run it again by selecting it from the menus.
+The extension will be stripped and any underscores will be turned into spaces before the script is added to the menus.
 
-If you add a new script and ImageJ is running, just go to Plugins - Scripting and run the appropriate Refresh * Scripts for the language.
+Scripts in the top-level "plugins" directory will appear at the bottom of the Plugins menu. Scripts can be placed in other menus by by nesting subdirectories, for example placing a script in the "/plugins/Scripts/File" directory will add it to the File menu.
 
-For the script to appear in the Plugin menus, it needs to terminate in the appropriate file extension. For example, ".js" for javascript, ".py" for jython, ".rb" for jruby, ".clj" for clojure, and ".bs" for beanshell script.  The script must also contain a '_' (underscore) in the name.  The extension will be stripped and any underscores will be turned into spaces before the script is added to the menus.
+If you aren't able to find your script, you can always run the [[Using_the_Command_Launcher|Command Finder]] to verify its location (or absence).
 
 == Running scripts in headless mode ==
 
