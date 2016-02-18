@@ -7,7 +7,7 @@
 | released               = 11 Sep 2008
 | status                 = active
 }}<div style="float: left; padding-right: 10px">__TOC__</div>The script editor is an invaluable help when writing scripts in any of ImageJ's supported [[Scripting comparisons|languages]].{{Scripting}}
-<div style="clear: left"></div>
+{{Clear|left}}
 == Features ==
 ;Text Editing
 * Full undo support
