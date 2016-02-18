@@ -1,6 +1,6 @@
 {{Development | tutorials}}<div style="float: left; padding-right: 10px">__TOC__</div>
 The SciJava software stack uses the [http://semver.org/ Semantic Versioning] (SemVer) system. This scheme communicates information about the [[backwards compatibility]] (or lack thereof) between versions of each individual software component.
-<div style="clear: left"></div>
+{{Clear|left}}
 == Summary ==
 
 In a nutshell, Semantic Versioning works as follows:
