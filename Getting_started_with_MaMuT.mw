@@ -1,10 +1,41 @@
-This tutorial aims at getting you started with MaMuT. We cover data preparation, and basic annotation process. 
+This tutorial aims at getting you started with [[MaMuT]]. We cover data preparation, and basic annotation process. 
+
 
 == Installation ==
 
 Well, thanks to the ImageJ [[Updater]], there is not much to do. Simply follow [[How_to_follow_a_3rd_party_update_site|these instructions]], and subscribe to the MaMuT update site.  
 
-[[File:MaMuT UpdateSite.png]]
+{{Clear}}
+[[File:MaMuT UpdateSite.png|right]]
+{{Clear}}
+
+== Data preparation ==
+
+MaMuT relies and exploit the file format of the [[BigDataViewer]]. You need to prepare your images so that can be opened in the BDV and there is no way around it. Actually, MaMuT was written specifically as an annotation platform for the BDV, specializing in cell lineaging. 
+
+If you already have such a file, skip to the next section. Otherwise, we lazily rely on the excellent BDV documentation and point directly to the BDV instructions to prepare your images, depending on whether
+* they are [[BigDataViewer#Exporting_from_ImageJ_Stacks|opened as an ImageJ stack]];
+* they come from a [[BigDataViewer#Integration_with_Fiji's_SPIMage_Processing_Tools|SPIM processing pipeline|right]].
 
 
-[[Categories:Tutorials]]
+== Opening a dataset in MaMuT ==
+
+We now assume that you have prepared your images, as if to open it in the Big Data Viewer. You should have a <code>.xml</code> file and a possibly very large <code>.h5</code> file on your computer.
+
+Start MaMuT on this dataset by browsing to  {{bc | Plugins | MaMuT | Launch new MaMuT annotation}}
+
+{{Clear}}
+[[File:MaMuT MenuItems.png|right]]
+{{Clear}}
+
+A file explorer window opens. Browse to the '''<code>.xml</code>''' file of the  BDV file pair. After a little while, the MaMuT main GUI window opens:
+
+{{Clear}}
+[[File:MaMuT MainGUIWindow beginning.png|right]]
+{{Clear}}
+
+If you get this, so far so good. 
+
+
+
+[[Category:Tutorials]]
