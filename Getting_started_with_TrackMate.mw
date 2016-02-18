@@ -18,7 +18,7 @@ This is 128x128 stack of 50 frames, uncalibrated. It is noisy, but is still a ve
 
 Also, if you look carefully, you will see that there are two splitting events - where a spot seems to divide in two spots in the next frame, one merging event - the opposite, and a gap closing event - where a spot disappear for one frame then reappear a bit further. TrackMate is made to handle these events, and we will see how. 
 
-<br style="clear: both" />
+{{Clear}}
 
 == Starting TrackMate ==
 
@@ -36,7 +36,7 @@ Now is a good time to speak strategy when it comes to saving/restoring. You can 
 
 The advantage of this approach is that you load in TrackMate, and everything you need will be loaded and displayed. However, if you need to change the target file or if it cannot be retrieved, you will have to open the TrackMate XML file and edit its 4th line.
 
-<br style="clear: both" />
+{{Clear}}
 
 == The start panel ==
 
@@ -54,7 +54,7 @@ If you want to define the min and max '''Z''' and/ or '''T''', you have to edit 
 
 Defining a smaller area to analyze can be very beneficial to test and inspect for correct parameters, particularly for the segmentation step. In this tutorial, the image is so small and parse that we need not worrying about it. Press the '''Next''' button to step forward.
 
-<br style="clear: both" />
+{{Clear}}
 
 == Choosing a detector ==
 
@@ -71,7 +71,7 @@ The choice is actually quite limited. Apart from the '''Manual annotation''', yo
 
 In our case, let us just use the '''Dog detector'''.
 
-<br style="clear: both" />
+{{Clear}}
 
 == The detector configuration panel ==
 
@@ -92,7 +92,7 @@ The two others automated segmenters share more or less the same fields in their 
 
 In our case, the spots we want to track are about 5 pixels in diameter, so this is what we enter in the corresponding field. We don't need anything else. The '''Sub-pixel localization''' option adds a very little overhead so we can leave it on.
 
-<br style="clear: both" />
+{{Clear}}
 
 == The detection process ==
 
@@ -107,7 +107,7 @@ TrackMate takes advantage of multi-core computers, which seems to be the standar
 On our dummy image, this is clearly something we need to worry about, and the segmentation should be over in a few seconds. Typically, this is the step that takes the longer. Once the segmentation is done, the '''Next''' button is re-enabled.
 
 
-<br style="clear: both" />
+{{Clear}}
 
 == Initial spot filtering == 
 
@@ -125,7 +125,7 @@ To deal with that, we added a first filter prior to any other step, that uses th
 
 In our case, we see from the histogram that we could make sense of this step. There is a big peak at low quality (around a value of 1.2) that contains the majority of spots and is most likely represent spurious spots. So we could put the threshold around let's say 5.5 and probably ending in having only relevant spots. But with less than 10 000 spots, we are very very far from 1 million so we need not to use this trick. Leave the threshold bar close to 0 and proceed to the next step. 
 
-<br style="clear: both" />
+{{Clear}}
 
 
 == Selecting a view ==
@@ -141,7 +141,7 @@ When you press the '''Next''' button, two process starts:
 * the displayer selected does everything it needs to prepare displaying them. 
 So nothing much. Let's carry on.
 
-<br style="clear: both" />
+{{Clear}}
 
 == Spot filtering ==
 
@@ -182,7 +182,7 @@ You can stack several filters by simply clicking on the green '''+''' button. Tr
 
 Press '''Next''' when you are ready to build tracks with these spots.
 
-<br style="clear: both" />
+{{Clear}}
 
 == Selecting a simple tracker ==
 
