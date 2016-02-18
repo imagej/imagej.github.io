@@ -115,11 +115,14 @@ PlotData=
 == Hackathon progress ==
 
 === Mark Hiner ===
-* [[Automatic Update Site Uploads]]
-* {{GitHub | org=imagej | repo=imagej-ui-swing | pr=67 | label=add-imports}}
-* {{GitHub | org=imagej | repo=imagej-ui-swing | issue=60 | label=ops-browser}}
-* {{GitHub | org=scijava | repo=scripting-renjin | label=R scripting in ImageJ}}
-* [[Downloads|Fiji downloads bundled with Java8]]
+* Wrote a guide for developers ([[Automatic Update Site Uploads]]) on how to automatically upload to their update site via Travis
+* Proof-of-concept'd restoring the Add Imports functionality to the script editor ({{GitHub | org=imagej | repo=imagej-ui-swing | pr=67 | label=imagej/imagej-ui-swing#67}})
+* Added Renjin-flavored R scripting to ImageJ ({{GitHub | org=scijava | repo=scripting-renjin | label=scijava/scripting-renjin}})
+* Got the Fiji downloads migrated to Java 8 bundles (see [[Downloads]])
+* Furthered development of the Ops Browser ({{GitHub | org=imagej | repo=imagej-ui-swing | issue=60 | label=imagej/imagej-ui-swing#60}}), including:
+** Tailored User/Developer views
+** Fuzzy filtering for Ops
+** Collapsible details/javadoc pane
 
 === Curtis Rueden ===
 * Improvements
