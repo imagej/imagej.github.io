@@ -10,7 +10,7 @@ As for the TrackMate plugin, you could start it up normally, selecting {{bc | Pl
 
 You should should get the layout pictured on the right. Notice that we are already displaying the ''Display options'' panel of the classic GUI, and that the ''previous'' button is disabled at the bottom. Notice also that the color scales for both spot and track features display a dummy range.
 
-<br style="clear: both" />
+{{Clear}}
 
 
 == Creating spots one by one ==
@@ -71,7 +71,7 @@ Press {{key|Shift}}+{{key|L}} to toggle the auto-linking mode on/off. When the m
 
 Let's apply this to our data. First create a spot over the bright blob at the top of the first frame, and roughly adjust its radius. Make sure the selection contains this spot, and only it (it must be highlighted in green), and press {{key|Shift}}+{{key|L}} to toggle the auto-linking mode on. Then move the second frame and place the mouse over the new spot location. Press '''A'''; a spot is created AND it is linked to the first spot by a track normally painted in red. Repeat until you reach about the frame 15 (the track branches, at some point, you have to decide what way you want to go). You should get - rather quickly - something like the picture on the right. 
 
-<br style="clear: both" />
+{{Clear}}
 
 [[Image:TrackMate ManualTracking 2.png|right|border|]]
 
@@ -79,7 +79,7 @@ Tracks created this way do not have to be linear. You can create branching segme
 
 Therefore, to create the branch that goes on the right, go back on the frame 9 (the frame just before the branching happens) and click into the spot that's there to select it. Then move to the next frame and create the spots that belong to the right branch, just like you did before. These spots will be added to the same track, and should get a inverted Y-branch like pictured on the right.
 
-<br style="clear: both" />
+{{Clear}}
 
 
 == Tracks are updated live ==
@@ -90,7 +90,7 @@ Note that you do not have to worry about what track a spot belongs to when creat
 
 The same is valid when you delete a link or a spot. For instance, let's create 3 tracks out of our inverted Y. Go to the frame 9, and delete the spot that is at the crossing. You now have 3 tracks.  
 
-<br style="clear: both" />
+{{Clear}}
 
 
 == Track and spot features are updated live ==
@@ -104,7 +104,7 @@ For instance this is what happened in the previous section, when you deleted a s
 
 The track and spot colors are refreshed immediately in the HyperStack displayer. Note, though, that the color range in the GUI has not been updated. It still displays ''-Infinity - Infinity''. This is by construction, to alleviate a bit the load when editing large models. If you want to refresh the color range, you have to click directly on it, and it will be properly repainted. On the right you can see what I get if I pick the feature ''Y'' for spot coloring, and the track index, after refreshing. 
 
-<br style="clear: both" />
+{{Clear}}
 
 
 == The semi-automatic tracking tool ==
