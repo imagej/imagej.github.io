@@ -35,13 +35,20 @@ We privileged annotations that are like lineages, or object followed over time (
 
 [[File:MaMuT WithTrackScheme.png]]
 
-However, MaMuT itself does not ship any fully-automated or tracking algorithm. It is meant for manual or semi-automatic annotation. Still, we made the GUI comfortable enough so that you can quickly generate rather large annotations.
+However, MaMuT itself does not ship any fully-automated or tracking algorithm. It is meant for manual or semi-automatic annotation. Still, we made the GUI comfortable enough so that you can quickly generate rather large annotations. A semi-automated segmentation can help you generating quickly lineage branches from single cells.
 
 [[File:MaMuT LargeAnnotationsQuickly.png]]
 
 
+== User documentation. ==
+
+The following pages are tutorials that will guide you through MaMuT and walk you though its features. 
+
+* [[Getting started with MaMuT]] is an introduction tutorial. It will show you how to prepare a dataset for MaMuT and make your first annotations with it.
 
 
+
+== Developer documentation. ==
 
 
 
