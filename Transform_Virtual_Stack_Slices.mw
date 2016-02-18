@@ -6,7 +6,7 @@
 | filename               = {{Maven | g=sc.fiji | a=register_virtual_stack_slices}}
 | source                 = {{GitHub|org=fiji|repo=register_virtual_stack_slices}}
 | released               = September 24<sup>th</sup>, 2009
-| latest version         = 2.0.0, September 17<sup>th</sup>, 2014
+| latest version         = 3.0.0, February 17<sup>th</sup>, 2016
 | status                 = stable, active
 | category               = [[:Category:Registration|Registration]], [[:Category:Transform|Transform]]
 }}{|
