@@ -35,7 +35,7 @@ This comes at a cost: the localization precision. To simulate segmentation defec
 
 The segmentation should take you no more than a minute, even on a standard machine, a considerable improvement over a standard segmenter. But at what cost!
 
-<br style="clear: both" />
+{{Clear}}
 
 [[Image:TrackMate DownsampledInitThreshold.png|right|border]]
 
@@ -53,7 +53,7 @@ Almost all polar bodies are incorrectly detected, and the localization of cells 
 [[Image:TrackMate DownsampleFilter.png|border]]
 
 
-<br style="clear: both" />
+{{Clear}}
 
 == Generating irrelevant tracks ==
 
@@ -67,7 +67,7 @@ A quick assertion shows that for nuclei, the individual track branches are not s
 
 This is what we will now manually correct.
 
-<br style="clear: both" />
+{{Clear}}
 
 == Launching TrackScheme ==
 
