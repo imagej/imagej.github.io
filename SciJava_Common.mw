@@ -44,7 +44,7 @@ Some of the services which ImageJ adds:
 
 * '''{{Javadoc | package = net/imagej | class = DatasetService}}''' - Tools for creating and managing image data.
 * '''{{Javadoc | package = net/imagej/display | class = ImageDisplayService}}''' - Similar to {{Javadoc | package = org/scijava/display | class = DisplayService}}, but specifically for {{Javadoc | package = net/imagej/display | class = ImageDisplay}}s.
-* '''{{Javadoc | package = net/imagej/overlay | class = OverlayService}}''' - Tools for creating and managing image overlays and regions of interest (ROIs).
+* '''{{Javadoc | package = net/imagej/display | class = OverlayService}}''' - Tools for creating and managing image overlays and regions of interest (ROIs).
 
 === SCIFIO services ===
 
