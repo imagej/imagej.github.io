@@ -40,3 +40,23 @@ The ''covariance estimator'' is a good alternative to the regression estimator. 
 '''Search-Radius:''' One particle in a frame is matched to another particle in a successive frame only if the distance between their centroids is lower than this radius. It is recommended that the software automatically calculate the radius. This is done by using the expected diffusion coefficient D of a particle with size specified in "Min. Exp. Particle Size". The search radius estimated by [[File:Searchradius.gif]] ensures that 99% of the distances a particle moved between two frames is not greater than the search radius.[4]
 
 '''Min. Exp. Particle Size:''' The minimal expected particle size in the suspension
+
+'''Min. Number of Steps per Track:''' Sometimes it is possible to track noise which would artificially broaden the size distribution. To avoid this, a minimal number of steps should be specified. All tracks which have less steps than the this minimal limit are omitted from further processing. A value of 10 is often used in the literature and seems to be appropriate to get enough tracks for a reliable size distribution and reduce artificial broadening at the same time [4]
+
+'''Temperature:''' The temperature of the suspension.
+
+'''Viscosity:''' The viscosity of the suspension.
+
+'''Pixelsize:''' The pixelsize of the video file (not of the CCD-Sensor!).
+
+'''Framerate:''' The framerate of the video file.
+
+'''Maximum Diameter (WM only, 0 = auto):''' This parameter is only relevant if Walker's Method is used to estimate the size distribution. Walker's method estimates the size distribution for a the diameter range. As larger this range is as more time consuming is the estimation. To increase the performance it is possible to set an upper limit of the diameter range. If the upper limit is set to zero, it will automatically set to the largest value needed to display the whole distribution.
+
+'''Black/Dark Background:''' This checkbox states if background pixels are black (foreground->white) or white (foreground -> black).
+
+'''Correct Linear Drift:''' The software is capable to correct a simple linear drift. The drift is estimated by averaging over all distances of all particles in x and y direction. If there is no drift, this estimate should be 0.
+
+'''Draw Tracks:''' If this checkbox is activated all tracks are drawn on an ImageJ overlay. Yellow tracks have reached the minimum number of steps. Furthermore the size estimate followed by the track id is shown.
+
+[[File:Drawtracks.png]]
