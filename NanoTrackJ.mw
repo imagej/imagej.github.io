@@ -64,6 +64,10 @@ The ''covariance estimator'' is a good alternative to the regression estimator. 
 '''Size Distribution Estimation by Walker's Method:'''
 If this checkbox is activated the size distribution is estimated by a maximum likelihood method described in [3]. The method exploits the fact that the mean squared displacements are gamma distributed. Please note, that the mean squared displacements used for this algorithm are measured indirectly. First, the diffusion coefficient D is estimated by the method specified in "Diffusion-Coefficient-Estimator". Multiplying this diffusion coefficient by 4 and the framerate results in the corresponding mean squared displacement. If Walker's Method is used, the result will only be a size distribution (no diffusion coefficient distribution)
 
+==Results==
+If the plugin finishes analyzing it opens histogram plots for the size distribution and the diffusion coefficient distribution. Please note that for calculating the distribution the track length is used as weighting factor. Furthermore the plugins open result tables for the histogram data (ideal for plotting with other software). The following plot shows a size distribution (using walker's method & covariance estimator) estimated from a suspension with 100nm polystyrene beads (in water, 22C). The video used was captured with a nanosight LM10 microscope. The reported modal value is 98nm.
+
+[[File:Size100nm walker.png]]
 ==References==
 [1] Ernst, D. & Köhler, J., 2013. How the number of fitting points for the slope of the mean-square displacement influences the experimentally determined particle size distribution from single-particle tracking. Physical chemistry chemical physics : PCCPs : PCCP, pp.3429–3432.
 
