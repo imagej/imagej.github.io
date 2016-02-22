@@ -37,4 +37,6 @@ There are several recommendations in the literature. Vestergaard [2] states that
 
 The ''covariance estimator'' is a good alternative to the regression estimator. It is an unbiased estimator and shows a fast convergence to Cramer-Rao lower bound [2]. It need no further parameters and accounting for localization errors.
 
-'''Search-Radius:''' One particle in a frame is matched to another particle in a successive frame only if the distance between their centroids is lower than this radius. It is recommended that the software automatically calculate the radius. This is done by using the expected diffusion coefficient D of a particle with size specified in "Min. Exp. Particle Size". The search radius estimated by [[File:Searchradius.gif]]
+'''Search-Radius:''' One particle in a frame is matched to another particle in a successive frame only if the distance between their centroids is lower than this radius. It is recommended that the software automatically calculate the radius. This is done by using the expected diffusion coefficient D of a particle with size specified in "Min. Exp. Particle Size". The search radius estimated by [[File:Searchradius.gif]] ensures that 99% of the distances a particle moved between two frames is not greater than the search radius.[4]
+
+'''Min. Exp. Particle Size:''' The minimal expected particle size in the suspension
