@@ -60,3 +60,6 @@ The ''covariance estimator'' is a good alternative to the regression estimator. 
 '''Draw Tracks:''' If this checkbox is activated all tracks are drawn on an ImageJ overlay. Yellow tracks have reached the minimum number of steps. Furthermore the size estimate followed by the track id is shown.
 
 [[File:Drawtracks.png]]
+
+'''Size Distribution Estimation by Walker's Method:'''
+If this checkbox is activated the size distribution is estimated by a maximum likelihood method described in [3]. The method exploits the fact that the mean squared displacements are gamma distributed. Please note, that the mean squared displacements used for this algorithm are measured indirectly. First, the diffusion coefficient D is estimated by the method specified in "Diffusion-Coefficient-Estimator". Multiplying this diffusion coefficient by 4 and the framerate results in the corresponding mean squared displacement. If Walker's Method is used, the result will only be a size distribution (no diffusion coefficient distribution)
