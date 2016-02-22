@@ -30,3 +30,8 @@ The ''maxima method & gaussian fit'' also utilizes the [http://rsbweb.nih.gov/ij
 
 '''Diffusion-Coefficient-Estimator:'''
 Two methods are available: The regression method and the covariance method. The ''regression method'' is the most used in literature to estimate the diffusion coefficient. It evaluates the mean squared displacement for different time lags. Then it fits a regression line to the data points. This regression line is not constrained to go through the point of origin (0,0). The slope of this regression line is proportional to diffusion coefficient. This method is very simple but unfortunately error prone. Up to now its not clear, how many data points lead to the best estimate. Therefore, the plugin allows the user to determine what minimum and maximum time lag should be used.
+
+[[File:Regression.png]]
+
+There are several recommendations in the literature. Vestergaard [2] states that only the first two time lags should be used and as more time lags are used as greater is the error in the estimate. However, Ernst and Köhler [1] recommends to use the time lags 2 to 5.
+The ''covariance estimator'' is a good alternative to the regression estimator. It is an unbiased estimator and shows a fast convergence to Cramer-Rao lower bound [2]. It need no further parameters and accounting for localization errors.
