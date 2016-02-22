@@ -13,7 +13,9 @@
 
 With NanoTrackJ it is possible to analyze videos of diffusing particles. It is mainly tested with tracking moving diffraction patterns of diffusing nanoparticles. The plugin estimates the particle size and diffusion coefficient distribution. Therefore, a fundamental relationship between the diffusion coefficient and the hydrodynamic diameter is exploited: The Stokes-Einstein relation.
 
-If you are using NanoTrackJ in a scientific publication, please cite: Wagner, T., Lipinski, H.-G. & Wiemann, M., 2014. Dark field nanoparticle tracking analysis for size characterization of plasmonic and non-plasmonic particles. Journal of Nanoparticle Research, 16(5), p.2419.
+If you are using NanoTrackJ in a scientific publication, please cite: 
+
+''Wagner, T., Lipinski, H.-G. & Wiemann, M., 2014. Dark field nanoparticle tracking analysis for size characterization of plasmonic and non-plasmonic particles. Journal of Nanoparticle Research, 16(5), p.2419.''
 
 ==Parameters==
 '''Center Estimation:''' here are three methods available. The blob method requires a binary image. The objects you want to track should be connected foreground pixels. Such connected regions are often called "blobs". Each blob represents a particle to be tracked. You have to segment your image (e.g. through thresholding) to use this method. The centroid of the blob is used for tracking.
