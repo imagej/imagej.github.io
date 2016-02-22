@@ -34,18 +34,29 @@ The major advantages of this plugin over other implementations are:
 * It allows [[#Multiple Samples and Noise Reduction|continuous and repeated sampling]] around user-defined foci
 * It allows [[#Batch Processing|batch processing]]
 
-== Usage ==
-The plugin requires a binary image or a segmented grayscale image (2D or 3D) containing a single neuron.
-
-# Segment the neuronal arbor using <span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span> (shortcut: <span style="display:inline-block;">{{key press|Shift|T}} </span>).
-# Select the center of analysis with the <span style="border-bottom:1px dotted #ccc;">Point Selection Tool</span>. Alternatively, make a straight line (<span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>) from the focus of the arbor to its most distal point. This will automatically set both the center and [[#EndRadius|Ending radius]].
-# Run <span style="border-bottom:1px dotted #ccc;">Analyze▷ Sholl Analysis...</span>, adjusting the default [[#Parameters|Parameters]] in the dialog prompt.
-# Press [[#Cf._Segmentation|Cf. Segmentation]] to visually inspect the two thresholded phases: ''arbor'' and ''background''.
-# Problems? Read the  [[#FAQ|FAQs]].
 {{Tip
 | id = Paper
 | tip = This program is described in [http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html Nature methods]. The manuscript uses ''Sholl Analysis'' to describe and classify morphologically challenging cells and is accompanied by a [http://www.nature.com/nmeth/journal/v11/n10/extref/nmeth.3125-S1.pdf Supplementary Note] that presents the software in greater detail. Please [[#faq:citing|cite it]] when acknowledging the plugin in your published research. 
 }}
+
+== Usage ==
+The plugin requires a binary image or a segmented grayscale image (2D or 3D) containing a single neuron.
+
+# Segment the neuronal arbor using <span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span> (shortcut: <span style="display:inline-block;">{{key press|Shift|T}} </span>).
+# Define the center of analysis using a [[#Startup_ROI|valid ROI]].
+# Run <span style="border-bottom:1px dotted #ccc;">Analyze▷ Sholl Analysis...</span>, adjusting the default [[#Parameters|Parameters]] in the dialog prompt.
+# Press [[#Cf._Segmentation|Cf. Segmentation]] to visually inspect the two thresholded phases: ''arbor'' and ''background''.
+# Problems? Read the  [[#FAQ|FAQs]].
+
+== Startup ROI ==
+The center of analysis can be specified using one of three possibilities:
+;Straight line: A Straight line from the focus of the arbor to its most distal point using the Straight Line Tool. The advantages of using line selections are twofold:
+::*Center of analysis and [[#EndRadius|Ending radius]] are automatically set
+::*Horizontal/vertical lines (created by holding {{key press|Shift}} while using the Straight Line Selection Tool) can be used to restrict analysis to sub-compartments of the arbor
+;Single point: A single point marking the focus of the arbor using the Point Selection Tool. With single point selections, only the center of analysis is defined. Thus, this option is suitable for [[#Batch_Processing|batch processing]] of images with different dimensions with undefined [[#EndRadius|Ending radius]].
+;Multi-point selection:A Multi-point selection (multi-point counter) in which the first point marks the center of analysis while the remaining points mark (count) the number of primary branches required for [[#SchoenenSampled|ramification indices]] calculations). Suitable for cases in which [[#PrimaryBranches|inference from starting radius]] is not accurate.
+[[File:ShollAnalysisStartupROIs.png|frame|center|Three types of ROIs expected by the plugin. Left: radius defining center, hemisphere restriction and ending radius. Middle: Single point defining focus. Right: Multi-point selection in which the first point defines the focus while the remaining points (2 to 5) serve as counters for primary dendrites.]]
+
 == Parameters ==
 Input values take into account the scale information of the image that can be set using the <span style="border-bottom:1px dotted #ccc;">Analyze▷ Set Scale...</span> or <span style="border-bottom:1px dotted #ccc;">Image▷ Properties...</span> (<span style="display:inline-block;">{{key press|Shift|P}} </span>). The prompt is organized into 5 sections:
 
