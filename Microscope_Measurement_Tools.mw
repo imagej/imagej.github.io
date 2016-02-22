@@ -16,13 +16,13 @@ Recall saved calibrations for your microscope's measurement scale and create mea
 [[Category:Registration]]
 
 == Description ==
-This set of plugins provides a quick way to save measurement calibrations for various microscopes/objectives in a simple text file.
+This set of plugins provides a quick way to save distance/length calibrations for various microscopes/objectives in a simple text file.
 
-You can then choose any of your prior calibrations to be applied to an open image (or all open images), as so:
+You can then choose any of your prior measurement calibrations to be applied to an open image (or all open images), as so:
 
 [[File:Microscope_Meas_Tools_-_Choose_Calibration_01.png]]
   
-The "Draw Measurement" plugin then allows you to annotate a line ROI with the calibrated measurement length, as so:
+The "Draw Measurement" plugin then allows you to draw a line with the calibrated measurement length, as so:
 
 [[File:Microscope_Meas_Tools_-_Draw_Meas_Line.png]]
 
