@@ -3,7 +3,7 @@
 | name                   = NanoTrackJ
 | author                 = {{Person|Twagner}},
 | maintainer             = {{Person|Twagner}},
-| filename               = nanotrackj.jar [https://github.com/thorstenwagner/ij-nanotrackj/latest [1]]
+| filename               = nanotrackj.jar [https://github.com/thorstenwagner/ij-nanotrackj/releases/latest [1]]
 | source                 = Github [https://github.com/thorstenwagner/ij-nanotrackj [2]]
 | latest version         = v1.0.2 (22 Feb 2016)
 | status                 = active 
