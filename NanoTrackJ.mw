@@ -63,3 +63,12 @@ The ''covariance estimator'' is a good alternative to the regression estimator. 
 
 '''Size Distribution Estimation by Walker's Method:'''
 If this checkbox is activated the size distribution is estimated by a maximum likelihood method described in [3]. The method exploits the fact that the mean squared displacements are gamma distributed. Please note, that the mean squared displacements used for this algorithm are measured indirectly. First, the diffusion coefficient D is estimated by the method specified in "Diffusion-Coefficient-Estimator". Multiplying this diffusion coefficient by 4 and the framerate results in the corresponding mean squared displacement. If Walker's Method is used, the result will only be a size distribution (no diffusion coefficient distribution)
+
+==References==
+[1] Ernst, D. & Köhler, J., 2013. How the number of fitting points for the slope of the mean-square displacement influences the experimentally determined particle size distribution from single-particle tracking. Physical chemistry chemical physics : PCCPs : PCCP, pp.3429–3432.
+
+[2] Vestergaard, C. & Flyvbjerg, H., 2012. Optimal Estimation of Diffusion Coefficients from Noisy Time-Lapse-Recorded Single-Particle Trajectories. Technical University of Denmark.
+
+[3] Walker, J.G., 2012. Improved nano-particle tracking analysis. Measurement Science and Technology, 23(6), p.065605.
+
+[4] Van der Meeren P., Kasinos M., Saveyn H., "Relevance of Two-Dimensional Brownian Motion Dynamics in Applying Nanoparticle Tracking Analysis" in "Nanoparticles in Biology and Medicine", Edited by M. Soloviev, Humana Press, New York, 2012
