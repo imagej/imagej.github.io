@@ -3,8 +3,13 @@
 == Problems and Solutions ==
 We work constantly on improving the Fiji and KNIME plugins. Help us doing so by letting us know if you encounter problems.
 
-* Problem: on a Mac, after ClearVolume opens in Fiji I see a large grey area where the 3D viewer should be.
-* Solution: we work on a fix... so far, double click on the grey area to switch to full screen, then double click again to go back to window mode.
+* '''Problem:''' on a Linux machine ClearVolume would not start but throw an ugly exception like
+*: <code>java.lang.ExceptionInInitializerError at clearvolume.renderer.opencl.OpenCLAvailability...</code>.
+* '''Solution:''' you might not have OpenCL installed or your installation is corrupted.
+*: On Ubuntu the following instructions turned out to be useful for some of our users: [http://askubuntu.com/questions/541114/how-to-make-opencl-work-on-14-10-nvidia-331-89-drivers http://askubuntu.com/questions/541114/how-to-make-opencl-work-on-14-10-nvidia-331-89-drivers]
+
+* '''Problem:''' on a Mac, after ClearVolume opens in Fiji I see a large grey area where the 3D viewer should be.
+* '''Solution:''' we work on a fix... so far, double click on the grey area to switch to full screen, then double click again to go back to window mode.
 
 == What is ClearVolume? ==
 ClearVolume is a volume renderer developed at MPI-CBG. Its sources are open and can be cloned from [https://github.com/ClearVolume on GitHub]. We hope to provide our users soon with an adequate publication that can be cited in case you used ClearVolume for your research.
@@ -20,31 +25,8 @@ See ClearVolume in action: [https://www.youtube.com/watch?v=IyUpkgTJJvc https://
 # Download Fiji or ImageJ2 from [http://imagej.net/Downloads here].
 # Start Fiji/ImageJ2 and launch the updater ('''Help - Update...''')
 # Click on '''Manage update sites''', tick the box next to '''ClearVolume''', and hit '''Close'''.
+# If you use an older Fiji installation you MUST also install the '''Java-8''' update site.
 # Confirm the update/installation by clicking '''Apply changes''' and restart Fiji/ImageJ as suggested by the updater.
-
-In order to use ClearVolume in Fiji you will have to start Fiji using a Java version above 1.6. We suggest to use Java 8, but Java 7 is fine too.
-Depending on your operating system the way to do so is slightly different.
-
-; Windows
-* If you do not have installed Java, do so by following [https://www.java.com/en/download/help/download_options.xml these instructions]. We recommend you to install the latest version (unless you know what you are doing).
-* Open '''Fiji.app''' and delete the containing folder '''java''' from it if it exists. This will prevent that Fiji/ImageJ2 launches the outdated Java version it currently ships with.
-
-; MacOS (>OSX 10.8 only, since OpenGL 3.3 must be supported)
-* If you do not have installed Java, do so by following [https://www.java.com/en/download/help/download_options.xml these instructions]. We recommend you to install the latest version (unless you know what you are doing).
-* Currently Fiji/ImageJ2 has to be run from a terminal window in order to use launch using a user installed Java version. Detailed instructions can be found [http://fiji.sc/Frequently_Asked_Questions#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F in this FAQ].
-* A typical launch command would then look similar to this: 
-*: <code>/Applications/Fiji.app/Contents/MacOS/ImageJ-macosx --java-home /Library/Java/JavaVirtualMachines/jre1.8.0_25.jdk/Contents/Home/</code>
-
-; Linux
-* If you do not have installed Java, do so by following [https://www.java.com/en/download/help/download_options.xml these instructions]. We recommend you to install the latest version (unless you know what you are doing).
-* Currently Fiji/ImageJ2 has to be run from a terminal window in order to use launch using a user installed Java version. Detailed instructions can be found [http://fiji.sc/Frequently_Asked_Questions#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F in this FAQ].
-* A typical launch command would then look similar to this: 
-*: <code>$HOME/ImageJ.app/ImageJ-linux64 --java-home /usr/lib/jvm/java-7-openjdk-amd64</code>
-
-'''''MacOS/Linux Nerd Tip:''''' Edit the file '''.bash_profile''' (Mac) or '''.bashrc''' (Linux) located in your home folder and add an adequately modified line like:
-: <code>alias fiji='/Applications/Fiji.app/Contents/MacOS/ImageJ-macosx --java-home /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/'</code> (Mac)
-: <code>alias fiji='$HOME/ImageJ.app/ImageJ-linux64 --java-home /usr/lib/jvm/java-7-openjdk-amd64'</code> (Linux)
-: After restarting the terminal you can start Fiji simply by typing '''<code>fiji</code>'''.
 
 == Other ways to use ClearVolume ==
 ; KNIME
