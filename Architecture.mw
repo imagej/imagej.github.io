@@ -246,6 +246,7 @@ There are two easy ways of going about this:
 <source lang="xml">
 <properties>
   <scijava-common.version>LATEST</scijava-common.version>
+  <enforcer.skip>true</enforcer.skip> <!-- ONLY while depending on a SNAPSHOT -->
 </properties>
 </source></li>
 <li>Alternately, if you wish to temporarily apply snapshot couplings en masse, you can switch on a "dev profile" (defined in the [https://github.com/scijava/pom-scijava/blob/c79d0b801c14ae2124375613ae38b42e395c4d0e/pom.xml#L1548-L1553 <code>pom-scijava</code> parent POM]) by creating one or more "dev token" files:
