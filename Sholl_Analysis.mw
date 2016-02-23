@@ -34,11 +34,6 @@ The major advantages of this plugin over other implementations are:
 * It allows [[#Multiple Samples and Noise Reduction|continuous and repeated sampling]] around user-defined foci
 * It allows [[#Batch Processing|batch processing]]
 
-{{Tip
-| id = Paper
-| tip = This program is described in [http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html Nature methods]. The manuscript uses ''Sholl Analysis'' to describe and classify morphologically challenging cells and is accompanied by a [http://www.nature.com/nmeth/journal/v11/n10/extref/nmeth.3125-S1.pdf Supplementary Note] that presents the software in greater detail. Please [[#faq:citing|cite it]] when acknowledging the plugin in your published research. 
-}}
-
 == Usage ==
 The plugin requires a binary image or a segmented grayscale image (2D or 3D) containing a single neuron.
 
@@ -48,14 +43,17 @@ The plugin requires a binary image or a segmented grayscale image (2D or 3D) con
 # Press [[#Cf._Segmentation|Cf. Segmentation]] to visually inspect the two thresholded phases: ''arbor'' and ''background''.
 # Problems? Read the  [[#FAQ|FAQs]].
 
+{{Tip
+| id = Paper
+| tip = This program is described in [http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html Nature methods]. The manuscript uses ''Sholl Analysis'' to describe and classify morphologically challenging cells and is accompanied by a [http://www.nature.com/nmeth/journal/v11/n10/extref/nmeth.3125-S1.pdf Supplementary Note] that presents the software in greater detail. Please [[#faq:citing|cite it]] when acknowledging the plugin in your published research. 
+}}
+
 == Startup ROI ==
 The center of analysis can be specified using one of three possibilities:
-;Straight line: A Straight line from the focus of the arbor to its most distal point using the Straight Line Tool. The advantages of using line selections are twofold:
-::*Center of analysis and [[#EndRadius|Ending radius]] are automatically set
-::*Horizontal/vertical lines (created by holding {{key press|Shift}} while using the Straight Line Selection Tool) can be used to restrict analysis to sub-compartments of the arbor
+;Straight line: A Straight line from the focus of the arbor to its most distal point using the Straight Line Tool. The advantages of using line selections are twofold: 1) Center of analysis and [[#EndRadius|Ending radius]] are automatically set, and 2) Horizontal/vertical lines (created by holding {{key press|Shift}} while using the Straight Line Selection Tool) can be used to restrict analysis to sub-compartments of the arbor.
 ;Single point: A single point marking the focus of the arbor using the Point Selection Tool. With single point selections, only the center of analysis is defined. Thus, this option is suitable for [[#Batch_Processing|batch processing]] of images with different dimensions with undefined [[#EndRadius|Ending radius]].
-;Multi-point selection:A Multi-point selection (multi-point counter) in which the first point marks the center of analysis while the remaining points mark (count) the number of primary branches required for [[#SchoenenSampled|ramification indices]] calculations). Suitable for cases in which [[#PrimaryBranches|inference from starting radius]] is not accurate.
-[[File:ShollAnalysisStartupROIs.png|frame|center|Three types of ROIs expected by the plugin. Left: radius defining center, hemisphere restriction and ending radius. Middle: Single point defining focus. Right: Multi-point selection in which the first point defines the focus while the remaining points (2 to 5) serve as counters for primary dendrites.]]
+;Multi-point selection:A Multi-point selection (multi-point counter) in which the first point marks the center of analysis while the remaining points mark (count) the number of primary branches required for [[#SchoenenSampled|ramification indices]] calculations). Suitable for cases in which [[#PrimaryBranches|inference from starting radius]] is not effective.
+[[File:ShollAnalysisStartupROIs.png|frame|center|Three types of ROIs expected by the plugin. Left: Line defining center, hemisphere restriction and ending radius. Middle: Single point defining focus of analysis. Right: Multi-point selection in which the first point defines the focus while the remaining points (2 to 5) serve as counters for primary dendrites.]]
 
 == Parameters ==
 Input values take into account the scale information of the image that can be set using the <span style="border-bottom:1px dotted #ccc;">Analyze▷ Set Scale...</span> or <span style="border-bottom:1px dotted #ccc;">Image▷ Properties...</span> (<span style="display:inline-block;">{{key press|Shift|P}} </span>). The prompt is organized into 5 sections:
@@ -83,7 +81,7 @@ Input values take into account the scale information of the image that can be se
 ==== Descriptors and Curve Fitting ====
 * <span id="EnclosingRadiusCutoff"></span>'''Enclosing radius cutoff''' The number of intersections to be used in the definition of [[#EnclosingRadius|Enclosing radius]].
 
-* <span id="PrimaryBranches"></span>'''Number of primary branches''' The number of primary branches (i.e., those originating directly from cell soma when the center of analysis is the perikaryon) to be used in the calculation of [[#SchoenenSampled|Schoenen ramification indices]].
+* <span id="PrimaryBranches"></span>'''Number of primary branches''' The number of primary branches (i.e., those originating directly from cell soma when the center of analysis is the perikaryon) to be used in the calculation of [[#SchoenenSampled|Schoenen ramification indices]]. It is automatically populated using multi-point counts if a multi-point ROI is [[#Startup_ROI|detected at startup]]. Set it to zero (or ''NaN'') to disable calculations of ramification indices.
 ** '''Infer from starting radius''' If checked, the ''Number of Primary branches'' is inferred from the count of intersections at [[#StartRadius|Starting radius]].
 
 * '''Fit profile and compute descriptors''' <sup>&nbsp;</sup>If checked, data is fitted according to the chosen [[#Choice_of_Methods|method]] and appropriate [[#Metrics|metrics]] calculated automatically. If unchecked, only sampled data is plotted.
@@ -208,7 +206,7 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 : See also [[#CriticalRadius|Critical radius]]
 
 ;<span id="SchoenenSampled"></span>Schoenen Ramification index (''Ramification index (sampled)'')
-:A measure of ramification<ref name="Schoenen"></ref>: the ratio between ''Max inters.'' and the number of [[#PrimaryBranches|primary branches]].
+:A measure of ramification<ref name="Schoenen"></ref>: the ratio between ''Max inters.'' and the number of [[#PrimaryBranches|primary branches]]. It is only calculated when [[#PrimaryBranches|primary branches]] is valid and not zero.
 : See also [[#SchoenenFitted|Ramification index (fit)]]
 
 ;<span id="Centroid">Centroid radius
