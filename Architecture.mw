@@ -238,7 +238,7 @@ Each component depends on release [http://books.sonatype.com/mvnref-book/referen
 
 == Using snapshot couplings during development ==
 
-For developing several components in parallel in e.g. Eclipse, it is very useful to switch to <code>SNAPSHOT</code> dependency couplings.
+For developing several components in parallel, it is very useful to switch to <code>SNAPSHOT</code> dependency couplings e.g., to test a [https://help.github.com/articles/checking-out-pull-requests-locally/ pull request].
 
 There are two easy ways of going about this:
 <ol type="A">
