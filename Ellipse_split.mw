@@ -17,7 +17,7 @@ The ellipse splitting plugin splits binary objects which could approximated by a
 
 Here we used the implementation of [http://fiji.sc/BoneJ BoneJ].
 
-The generall approach of the ellipse fitting plugin is as follow:
+The generall approach of the ellipse fitting plugin is as follows:
  1. Given the binary input image I
  2. Then image W is the split using ImageJ's watershed approach
  3. XOR I and W to get all watershed lines L
@@ -32,7 +32,7 @@ Suppose you have the following input image:
 
 [[File:Ellipsesplit input.png|300px]]
 
-Then the watershed approach would give the this result:
+Then the watershed approach would give this result:
 
 [[File:Ellipsesplit_watershed.png|300px]]
 
@@ -47,24 +47,24 @@ Furthermore it outputs several important features:
 == Parameters ==
 [[File:EllipseSplit.png|350px|thumb|GUI of Ellipse Split Plugin]]
 
-'''Binary splitted image:''' If set to "Use standard watershed" it will use image's watershed technique to split the binary object. If there are better techniques for splitting available, you could select here the binary image splitted by that technique.
+'''Binary splitted image:''' If set to "Use standard watershed" it will use ImageJ's watershed technique to split the binary object. If there are better techniques for splitting available, you could select here the binary image splitted by that technique.
 
 '''Add to manager:''' (true/false) If true, the ellipses will be added to the ROI manager.
 
 
 '''Add to results table:''' (true/false) If true, some geometrical features of the ellipses will be added to the results table.
 
-'''Overlap threshold in %:''' If the image is oversegmentated, two ellipses could belong the same real object. If that is case, it is likly that the ellipses are strongly overlapping. In those cases the ellipses will be merged. The ''overlap threshold in %'' is the realtive part of one ellipse containing another ellipse. 
+'''Overlap threshold in %:''' If the image is oversegmentated, two ellipses could belong the same real object. If that is the case, it is likely that the ellipses are strongly overlapping. In those cases the ellipses will be merged. The ''overlap threshold in %'' is the proportion of one ellipse containing another ellipse. 
 
-'''Major axis length:''' The length of major axis...
+'''Major axis length:''' The length of major axis.
 
-'''Minor axix length:''' The length of minor axis...
+'''Minor axix length:''' The length of minor axis.
 
-'''Aspect ratio:''' Major axis length / minor axis length
+'''Aspect ratio:''' Ratio of Major axis length and minor axis length.
 
 == Installation ==
 
-Simply turn on the [http://fiji.sc/How_to_follow_a_3rd_party_update_site Biomedgroup update site], which includes the ellipse splitting  plugin.
+Simply turn on the [http://fiji.sc/How_to_follow_a_3rd_party_update_site Biomedgroup update site], which includes the ellipse splitting plugin.
 
 If you use ImageJ just copy the ij-ellipessplit.jar file in your plugins folder and copy the [http://sourceforge.net/projects/geom-java/files/gpcj/ GPCJ 2.2.0 ]  and the latest [http://fiji.sc/IJ_Blob ij-blob] jar file into the plugins/jars folder.
 
