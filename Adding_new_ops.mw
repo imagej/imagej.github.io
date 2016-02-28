@@ -30,6 +30,7 @@ public interface GCD extends Op {
 <source lang="java">
 package bar;
 
+import net.imagej.ops.AbstractOp;
 import org.scijava.ItemIO;
 import org.scijava.plugin.Attr;
 import org.scijava.plugin.Parameter;
