@@ -36,9 +36,9 @@ The major advantages of this plugin over other implementations are:
 
 == Installation ==
 === Fiji Users ===
-If you using Fiji, you already have the plugin installed ({{bc|color=white|Analysis|Sholl Analysis...}}). However you need to subscribe to the Java 8 update site to use its latest version. however this step is part of an active effort to [[2015-12-22_-_The_road_to_Java_8|modernize ImageJ]]. To enable it:
-# [[Downloads|Download the latest Fiji release]]. Newer releases come pre-bundled with Java 8, and are already subscribed to the Java-8 update site.
-# If you have downloaded Fiji while ago and want to keep your existing installation you will have to download Java 8 and make your Fiji installation aware of it. Then subscribe to the [[User:Java-8|Java-8 update site]].
+If you using Fiji, you already have the plugin installed ({{bc|color=white|Analysis|Sholl Analysis...}}). However, as part of an active effort to [[2015-12-22_-_The_road_to_Java_8|modernize ImageJ]] ([[2015-06-15_-_Major_updates_in_the_works|announcement]]),  you need to [[How_to_follow_a_3rd_party_update_site#Add_update_sites | subscribe]] to the Java 8 update site to use its latest version. To do so, you can either:
+* [[Downloads|Download the latest Fiji release]]. Newer releases come pre-bundled with Java 8, and are already subscribed to the [[User:Java-8|Java-8 update site]].
+* If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [[Troubleshooting#Checking_the_Java_version|Fiji installation aware of it]]. Then subscribe to the [[User:Java-8|Java-8 update site]].
 
 Note that the plugin runs fine with older versions of Java, so you can [[#Non-Fiji_Users|update it manually]] if you do not want to subscribe to the Java-8 update site.
 
