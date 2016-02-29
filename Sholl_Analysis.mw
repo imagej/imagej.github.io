@@ -42,7 +42,7 @@ If you using Fiji, you already have the plugin installed ({{bc|color=white|Analy
 
 Note that the plugin runs fine with older versions of Java, so you can [[#Non-Fiji_Users|update it manually]] if you do not want to subscribe to the Java-8 update site.
 
-=== Non-Fiji users ===
+=== Non-Fiji Users ===
 If you are not using Fiji, download ''Sholl_Analysis.jar'' from the direct link listed on the [[#top|top of this page]] and place it in the ''ImageJ/plugins/'' directory. Alternatively, drag the downloaded <tt>.jar</tt> file and drop it on the main ImageJ window. Restart ImageJ and run the new {{bc|color=white|Analysis|Sholl Analysis...}} command.
 
 Without access to the [[Update_Fiji|built-in updater]], you are strongly advised to upgrade ImageJ to its latest version ({{bc|color=white|Help|Update ImageJ...}}). To manually update the Sholl Analysis plugin you will have to monitor this page (or the {{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Release Notes}} page) for finding out if new updates have been released.
