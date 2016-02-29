@@ -15,7 +15,7 @@ By default, when ImageJ runs headlessly it acts like a one-off program: it will 
 
 == Basic run ==
 
-Let's say we the following Python script saved in a file, <code>hello.py</code>:
+Let's say we have the following Python script saved in a file, <code>hello.py</code>:
 
 <source lang="python">
 # @String name
