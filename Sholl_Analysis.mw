@@ -6,7 +6,7 @@
 | author         = {{Person|Tiago}}, Tom Maddock (v1.0.0)
 | maintainer     = {{Person|Tiago}}
 | source         = {{GitHub|org=tferr|repo=ASA}}
-| filename       = [http://jenkins.imagej.net/job/Sholl-Analysis/lastStableBuild/artifact/target/Sholl_Analysis-3.4.6.jar Sholl_Analysis.jar]
+| filename       = [http://jenkins.imagej.net/job/Sholl-Analysis/93/artifact/target/Sholl_Analysis-3.4.6.jar Sholl_Analysis.jar]
 | released       = December 2012
 | latest version = '''3.4.6 February 2016''' ({{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Release Notes}})
 | status         = Active. See [[#Release Notes and Pre-releases|Pre-releases]] and {{GitHub|org=tferr|repo=ASA|path=Notes.md#development-builds|label=Development Notes}}
@@ -19,7 +19,7 @@
 ;Analysis of traced arbors?:Jump to [[#Importing|Importing Profiles]]
 ;Segmentation issues?:Jump to [[#Cf. Segmentation|Cf. Segmentation]] or [[#Pre-processing|Pre-processing]]
 ;Having Problems?:Jump to [[#FAQ|FAQs]]
-;Non-Fiji User?:Jump to [[#Non-Fiji_users|Installation notes]]
+;Non-Fiji User?:Jump to [[#Non-Fiji_Users|Installation notes]]
 </div>
 </div>
 Automated bitmap Sholl for direct analysis of fluorescent images of neuronal arbors, featuring powerful quantifications  based on curve fitting. Analysis of previously traced arbors is also possible.
@@ -34,11 +34,24 @@ The major advantages of this plugin over other implementations are:
 * It allows [[#Multiple Samples and Noise Reduction|continuous and repeated sampling]] around user-defined foci
 * It allows [[#Batch Processing|batch processing]]
 
+== Installation ==
+=== Fiji Users ===
+If you using Fiji, you already have the plugin installed ({{bc|color=white|Analysis|Sholl Analysis...}}). However you need to subscribe to the Java 8 update site to use its latest version. however this step is part of an active effort to [[2015-12-22_-_The_road_to_Java_8|modernize ImageJ]]. To enable it:
+# [[Downloads|Download the latest Fiji release]]. Newer releases come pre-bundled with Java 8, and are already subscribed to the Java-8 update site.
+# If you have downloaded Fiji while ago and want to keep your existing installation you will have to download Java 8 and make your Fiji installation aware of it. Then subscribe to the [[User:Java-8|Java-8 update site]].
+
+Note that the plugin runs fine with older versions of Java, so you can [[#Non-Fiji_Users|update it manually]] if you do not want to subscribe to the Java-8 update site.
+
+=== Non-Fiji users ===
+If you are not using Fiji, download ''Sholl_Analysis.jar'' from the direct link listed on the [[#top|top of this page]] and place it in the ''ImageJ/plugins/'' directory. Alternatively, drag the downloaded <tt>.jar</tt> file and drop it on the main ImageJ window. Restart ImageJ and run the new {{bc|color=white|Analysis|Sholl Analysis...}} command.
+
+Without access to the [[Update_Fiji|built-in updater]], you are strongly advised to upgrade ImageJ to its latest version ({{bc|color=white|Help|Update ImageJ...}}). To manually update the Sholl Analysis plugin you will have to monitor this page (or the {{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Release Notes}} page) for finding out if new updates have been released.
+
 == Usage ==
 The plugin requires a binary image or a segmented grayscale image (2D or 3D) containing a single neuron.
 
 # Segment the neuronal arbor using <span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span> (shortcut: <span style="display:inline-block;">{{key press|Shift|T}} </span>).
-# Define the center of analysis using a [[#Startup_ROI|valid ROI]].
+# Define the center of analysis using a valid [[#Startup_ROI|startup ROI]].
 # Run <span style="border-bottom:1px dotted #ccc;">Analyze▷ Sholl Analysis...</span>, adjusting the default [[#Parameters|Parameters]] in the dialog prompt.
 # Press [[#Cf._Segmentation|Cf. Segmentation]] to visually inspect the two thresholded phases: ''arbor'' and ''background''.
 # Problems? Read the  [[#FAQ|FAQs]].
@@ -300,7 +313,7 @@ Most options in the ''Tabular prompt'' are explained in the description of the d
 
 ;Data analysis tools:
 :'''[[Find Peaks]]:''' Retrieves local maxima under several filtering options such as peak amplitude, peak height and peak width. Can be used to retrieve secondary sites of branch density
-:'''{{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#fit-polynomial|label=Fit Polynomial}}:''' Fits a polynomial of any degree to sampled data. Features an heuristic algorithm for guessing a polynomial "best fit". Expands the built-in repertoire of polynomial fits up to 50<sup>th</sup> order functions. Requires the [http://commons.apache.org/proper/commons-math/ apache commons math library], distributed with Fiji. The script provides [[#Non-Fiji_users|Non-Fiji users]] with direct download links that install all required dependencies
+:'''{{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#fit-polynomial|label=Fit Polynomial}}:''' Fits a polynomial of any degree to sampled data. Features an heuristic algorithm for guessing a polynomial "best fit". Expands the built-in repertoire of polynomial fits up to 50<sup>th</sup> order functions. Requires the [http://commons.apache.org/proper/commons-math/ apache commons math library], distributed with Fiji. The script provides [[#Non-Fiji_Users|Non-Fiji users]] with direct download links that install all required dependencies
 :'''{{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#plot-results|label=Plot Results}}:''' Whole-purpose routine that plots data from imported spreadsheets. 
 
 To install [[BAR]], run <span style="border-bottom:1px dotted #ccc;">Help▷ Update...</span> Choose ''Advance Mode'' then ''Manage update sites''. Activate the ''BAR'' checkbox in the list of update sites. See the [[BAR#Installation|BAR documentation page]] for more details.
@@ -629,11 +642,6 @@ one could retrieve the AUC of the polynomial fit, but such property is already c
 		Around 20 seconds. This is the time it will take you to [[Help:Contents#New_accounts|create an account]] on this wiki. Once you have created one, you will be able to improve this page yourself.
 	</dd></dl>
 </ol>
-
-== Non-Fiji users ==
-If you are not using Fiji, download ''Sholl_Analysis.jar'' from the direct link listed on the [[#top|top of this page]] and place it in the ''ImageJ/plugins/'' directory. Alternatively, drag the downloaded <tt>.jar</tt> file and drop it on the main ImageJ window. Restart ImageJ and run the new <span style="border-bottom:1px dotted #ccc;">Analyze▷ Sholl Analysis...</span> command.
-
-Please note that Fiji is the most convenient way of keeping your ImageJ distribution up-to-date. Without access to Fiji's [[Update_Fiji|built-in updater]], you are strongly advised to upgrade ImageJ to its latest version using <span style="border-bottom:1px dotted #ccc;">Help▷ Update ImageJ...</span> Without Fiji, you will also have to manually update the Sholl Analysis plugin by checking the {{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Release Notes}}.
 
 == Release Notes and Pre-releases ==
 Releases notes are available on {{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Github}}. If you do not mind unstable software, {{GitHub|org=tferr|repo=ASA|path=Notes.md#development-builds|label=development builds}} may be found [http://jenkins.imagej.net/job/Sholl-Analysis here]. Once new features mature and no major issues are found these development versions will be made available, as usual, through [[Update_Fiji|Fiji's Updater]].
