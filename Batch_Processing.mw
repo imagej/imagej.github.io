@@ -14,7 +14,7 @@ A fundamental benefit to creating [[Scripting|scripts and macros]] in [[ImageJ]]
 
 = Easy option =
 
-The fastest way to start batch conversion is via the [http://imagej.net/docs/guide/146-29.html#toc-Subsubsection-29.12.3 Process > Batch > Macro...] command. This will open a dialog (below) that will allow you to specify an input and output directory. You can select an output file format, and then use the <code>Add Macro Code</code> drop-down to generate a macro with the desired functionality.
+The fastest way to start batch conversion is via the [http://imagej.net/docs/guide/146-29.html#toc-Subsubsection-29.12.3 {{bc | Process | Batch | Macro...}}] command. This will open a dialog (below) that will allow you to specify an input and output directory. You can select an output file format, and then use the <code>Add Macro Code</code> drop-down to generate a macro with the desired functionality.
 
 [[Image:BatchProcess.png|center]]
 
