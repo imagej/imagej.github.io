@@ -23,7 +23,7 @@ Atlas Toolkit includes a number of different tools to help building atlases. Man
 
 For those interested in 3D image registration, the most important tools will be [[#Label Registration 3D|Label Registration 3D]] and [[#Apply Label Registration|Apply Label Registration]].
 
-This complete list of tools is as follows:
+The complete list of tools is as follows:
 
 - Extract Nuclear Signal
 
@@ -90,9 +90,9 @@ The following screencast demonstrates Apply Label Registration in use.
   '''<code><nowiki>https://www.youtube.com/watch?v=2JwRZm5dst8</nowiki></code>'''
 
 == Reference ==
-Please cite the following article in which the Atlas Toolkit is described:
+Please cite the following original research article in which the Atlas Toolkit is described:
 
-* Grocott, T. et al. Atlas Toolkit: Fast registration of 3D morphological datasets in the absence of landmarks. Sci. Rep. 6, 20732; doi: 10.1038/srep20732 (2016).
+[http://www.nature.com/articles/srep20732 Grocott, T. et al. (2016) Atlas Toolkit: Fast registration of 3D morphological datasets in the absence of landmarks. Sci. Rep. 6, 20732; doi: 10.1038/srep20732]
 
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
