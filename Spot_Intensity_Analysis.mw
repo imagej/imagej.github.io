@@ -1,12 +1,11 @@
 {{Infobox
 | software               = ImageJ
 | name                   = Spot Intensity Analysis
-| author                 = Nico Stuurman (nico.stuurman at ucsf.edu)
-| maintainer             = [[Nico Stuurman]]
-| filename               = 
+| author                 = Nico Stuurman (nico.stuurman at ucsf.edu), algorithm and testing by Ankur Jain (ankurjain85 at gmail.com)
+| maintainer             = [http://valelab.ucsf.edu/external/people/p-stuurman.htm Nico Stuurman]
 | source                 = {{GitHub|org=nicost|repo=spotIntensityAnalysis|}}
 | released               = 2015/09/15
-| latest version         = 2015/09/15
+| latest version         = 2016/02/28
 | status                 = 
 | category               = [[:Category:Particle_analysis]]
 }}
