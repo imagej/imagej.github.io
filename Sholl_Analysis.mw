@@ -36,11 +36,11 @@ The major advantages of this plugin over other implementations are:
 
 == Installation ==
 === Fiji Users ===
-If you using Fiji, you already have the plugin installed ({{bc|color=white|Analysis|Sholl Analysis...}}). However, as part of an active effort to [[2015-12-22_-_The_road_to_Java_8|modernize ImageJ]] ([[2015-06-15_-_Major_updates_in_the_works|announcement]]),  you need to [[How_to_follow_a_3rd_party_update_site#Add_update_sites | subscribe]] to the Java 8 update site to use its latest version. To do so, you can either:
+If you using Fiji, you already have the plugin installed (under {{bc|color=white|Analysis|Sholl Analysis...}}). However, as part of an active effort to [[2015-12-22_-_The_road_to_Java_8|modernize ImageJ]] (see also this [[2015-06-15_-_Major_updates_in_the_works|announcement]]),  you need to [[How_to_follow_a_3rd_party_update_site#Add_update_sites | subscribe]] to the Java 8 update site to make the updater aware of the newer plugin versions (this will also allow you to access the newest [[2015-12-22_-_The_road_to_Java_8#Components_which_have_already_migrated|ImageJ capabilities]]). To do so, you can either:
 * [[Downloads|Download the latest Fiji release]]. Newer releases come pre-bundled with Java 8, and are already subscribed to the [[User:Java-8|Java-8 update site]].
 * If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [[Troubleshooting#Checking_the_Java_version|Fiji installation aware of it]]. Then subscribe to the [[User:Java-8|Java-8 update site]].
 
-Note that the plugin runs fine with older versions of Java, so you can [[#Non-Fiji_Users|update it manually]] if you do not want to subscribe to the Java-8 update site.
+Note that the plugin runs fine with older versions of Java, so you can [[#Non-Fiji_Users|update it manually]] if you do not want (or can't) use Java 8.
 
 === Non-Fiji Users ===
 If you are not using Fiji, download ''Sholl_Analysis.jar'' from the direct link listed on the [[#top|top of this page]] and place it in the ''ImageJ/plugins/'' directory. Alternatively, drag the downloaded <tt>.jar</tt> file and drop it on the main ImageJ window. Restart ImageJ and run the new {{bc|color=white|Analysis|Sholl Analysis...}} command.
@@ -501,7 +501,7 @@ The [[How to cite Fiji?|authoritative reference]] for Fiji:
 		Counting intersections is really a binary procedure: a shell either intercepts a branch or it doesn't. For this reason the image must be split in two phases: ''arbor'' and ''background''.
 	</dd></dl>
 	<li>
-		<span id="faq:threshold2"></span>'''In version 1, it was not mandatory to adjust threshold values prior to analysis. Why is it now?'''
+		<span id="faq:threshold2"></span>'''In version 1.0, it was not mandatory to adjust threshold values prior to analysis. Why is it now?'''
 	</li>
 	<dl><dd>
 		Image segmentation has always been [[#faq:threshold|required]]. In its early implementations, the program dealt solely with binary images and used the intensity at the center of the analysis to decide how to segregate objects from background. This approach was very restringent: It assumed that the pixels representing the neuron would have the same (constant!) intensity that was not to be found in the remaining background.  As the program became aware of grayscale images, this "feature" had to be removed because a single intensity can no longer be used to infer which parts of the image should be analyzed.
@@ -518,10 +518,22 @@ The [[How to cite Fiji?|authoritative reference]] for Fiji:
 	<dl><dd>
 		As mentioned several times, the quality of the analysis relies on how the arbor was segmented. If you are working with grayscale images you probably need to optimize your [[#Pre-processing|segmentation routines]]. On the other hand, if you already obtained binary images make sure you are [[#Cf._Segmentation|interpreting them properly]]. You should also confirm that [[#EndRadius |Ending radius]] does not intersect objects in the image canvas that extend beyond the analyzed arbor. As a rule of thumb, always refer to the [[#faq:sholl-mask|Sholl mask]] to visually inspect which regions of the image have been measured.
 	</dd></dl>
+	<li>
+		<span id="faq:updates"></span>'''My version is not the latest after running <span style="border-bottom:1px dotted #ccc;">Help▷ Update Fiji...</span> Why?'''
+	</li>
+	<dl><dd>
+		Please note that from version 3.4.6 onwards, updates are available through the [[##Fiji_Users|Java-8 update site]]. If you have manually installed/modified ''Sholl_Analysis.jar'' ([[#Release Notes and Pre-releases|Development build]]?). Run the [[Update Fiji|Updater]], choose ''Advanced Mode'' then ''View locally modified files'' under ''View Options''. Type "Sholl" in the ''Search'' field, selecting ''Sholl_Analysis.jar'' from the list of files. If the ''Details pane'' indicates an available update, click on ''Locally modified'' under ''Status/Action'' and choose ''Install/Update''. The latest release version will be available once you press ''Apply changes''. See [[Frequently_Asked_Questions#Installing.2FUpdating|Installation FAQs]] for more details.
+	</dd></dl>
+	<li>
+		<span id="faq:documentation"></span>'''This documentation is not that useful. How long do I have to wait until it gets improved?'''
+	</li>
+	<dl><dd>
+		Around 20 seconds. This is the time it will take you to [[Help:Contents#New_accounts|create an account]] on this wiki. Once you have created one, you will be able to improve this page yourself.
+	</dd></dl>
 </ol>
 
 '''Analysis'''
-<ol START="6">
+<ol START="9">
 	<li>
 		<span id="faq:image-types"></span>'''The plugin complains about a wrong image type. Why?'''
 	</li>
@@ -555,7 +567,7 @@ The [[How to cite Fiji?|authoritative reference]] for Fiji:
 </ol>
 
 '''Results'''
-<ol START="11">
+<ol START="14">
 	<li>
 		<span id="faq:Sholl-table"></span>'''How can I save/edit the ''Sholl Results'' table?'''
 	</li>
@@ -589,7 +601,7 @@ The [[How to cite Fiji?|authoritative reference]] for Fiji:
 </ol>
 
 '''Metrics and Curve Fitting'''
-<ol START="16">
+<ol START="19">
 	<li>
 		<span id="faq:AUC"></span>'''Would it be possible to retrieve the Area Under the Curve  (linear Sholl plot)?'''
 	</li>
@@ -612,7 +624,7 @@ one could retrieve the AUC of the polynomial fit, but such property is already c
 </ol>
 
 '''Batch Processing'''
-<ol START="19">
+<ol START="22">
 	<li>
 		<span id="faq:recorder"></span>'''The code that the Macro Recorder produced does not seem to work. What am I doing wrong?'''
 	</li>
@@ -622,24 +634,12 @@ one could retrieve the AUC of the polynomial fit, but such property is already c
 </ol>
 
 '''Development'''
-<ol START="20">
+<ol START="23">
 	<li>
 		<span id="faq:bug-report"></span>'''I found a bug. How do I report it?'''
 	</li>
 	<dl><dd>
-		Use Fiji's built-in [[Report a Bug]] command, report it to the [http://imagej.net/list.html ImageJ mailing list] or file an [https://github.com/tferr/ASA/issues issue] on GitHub. Don't forget to include the [[Bug reporting best practices|steps needed to reproduce the problem]]. You may also want to check the {{GitHub|org=tferr|repo=ASA|path=Notes.md#development-builds|label=release notes}} for the latest [http://jenkins.imagej.net/job/Sholl-Analysis/lastBuild/ development version] to see if the issue has meanwhile been addressed.
-	</dd></dl>
-	<li>
-		<span id="faq:updates"></span>'''My version is not the latest after running <span style="border-bottom:1px dotted #ccc;">Help▷ Update Fiji...</span> Why?'''
-	</li>
-	<dl><dd>
-		You have manually installed/modified ''Sholl_Analysis.jar'' ([[#Release Notes and Pre-releases|Development build]]?). Run the [[Update Fiji|Updater]], choose ''Advanced Mode'' then ''View locally modified files'' under ''View Options''. Type "Sholl" in the ''Search'' field, selecting ''Sholl_Analysis.jar'' from the list of files. If the ''Details pane'' indicates an available update, click on ''Locally modified'' under ''Status/Action'' and choose ''Install/Update''. The latest release version will be available once you press ''Apply changes''.
-	</dd></dl>
-	<li>
-		<span id="faq:documentation"></span>'''This documentation is not that useful. How long do I have to wait until it gets improved?'''
-	</li>
-	<dl><dd>
-		Around 20 seconds. This is the time it will take you to [[Help:Contents#New_accounts|create an account]] on this wiki. Once you have created one, you will be able to improve this page yourself.
+		Use Fiji's built-in [[Report a Bug]] command, report it in the [http://forum.imagej.net|ImageJ Forum], the [http://imagej.net/list.html ImageJ mailing list] or file an [https://github.com/tferr/ASA/issues issue] on GitHub. Don't forget to include the [[Bug reporting best practices|steps needed to reproduce the problem]]. You may also want to check the {{GitHub|org=tferr|repo=ASA|path=Notes.md#development-builds|label=release notes}} for the latest [http://jenkins.imagej.net/job/Sholl-Analysis/lastBuild/ development version] to see if the issue has meanwhile been addressed.
 	</dd></dl>
 </ol>
 
