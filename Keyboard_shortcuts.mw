@@ -16,4 +16,8 @@ To open a list of some recent commands, and a list of the most frequently called
 
 To open new images, type {{key|Ctrl}}+{{key|O}} (on Mac, {{key|Command}}+{{key|O}}).
 
+== Creating your own keyboard shortcuts ==
+
+You can also [http://imagej.net/docs/guide/146-31.html#toc-Subsection-31.2 assign your own keyboard shortcuts]!
+
 [[Category:User interface]]
