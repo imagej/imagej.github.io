@@ -63,86 +63,87 @@ The [[Shape Filter]] plugin uses the ij-blob library to characterize and filter 
 
 =Examples=
 ==Example 1: Extract the connected components of an image and read the perimeter of a blob==
-<code>
-    import ij.blob.*;
-    ...
-    private ManyBlobs allBlobs;
-    ...
-    public void someMethod(ImagePlus imp) {
-        ManyBlobs allBlobs = new ManyBlobs(imp); // Extended ArrayList
-        allBlobs.findConnectedComponents(); // Start the Connected Component Algorithm
-        allBlobs.get(0).getPerimeter(); // Read the perimeter of a Blob
-    }
-</code>
+<source lang="java">
+import ij.blob.*;
+...
+private ManyBlobs allBlobs;
+...
+public void someMethod(ImagePlus imp) {
+	ManyBlobs allBlobs = new ManyBlobs(imp); // Extended ArrayList
+	allBlobs.findConnectedComponents(); // Start the Connected Component Algorithm
+	allBlobs.get(0).getPerimeter(); // Read the perimeter of a Blob
+}
+</source>
 
 ==Example 2: Example 2: Filter blobs by blob features==
 In IJBlob 1.1 a filter framework was introduced. Each build-in blob feature has a static identifier (in this example "GETENCLOSEDAREA") which contains the method name.
 
-<code>
-    import ij.blob.*;
-    ...
-    private ManyBlobs allBlobs;
-    ...
-    public void someMethod(ImagePlus imp) {
-        /* Extended ArrayList */
-        ManyBlobs allBlobs = new ManyBlobs(imp); 
-  
-        /* Start the Connected Component Algorithm */
-        allBlobs.findConnectedComponents(); 
+<source lang="java">
+import ij.blob.*;
+...
+private ManyBlobs allBlobs;
+...
+public void someMethod(ImagePlus imp) {
+	/* Extended ArrayList */
+	ManyBlobs allBlobs = new ManyBlobs(imp); 
 
-        /* Return all blobs with an area between 20 and 100 pixel² */
-        ManyBlobs filteredBlobs = allBlobs.filterBlobs(20,100,        
-        Blob.GETENCLOSEDAREA); 
-    }
-</code>
+	/* Start the Connected Component Algorithm */
+	allBlobs.findConnectedComponents(); 
+
+	/* Return all blobs with an area between 20 and 100 pixel² */
+	ManyBlobs filteredBlobs = allBlobs.filterBlobs(20,100,		  
+	Blob.GETENCLOSEDAREA); 
+}
+</source>
 
 ==Example 3: Add your own features==
 IJBlob 1.1 is easily expandable by your own features. First you have to derive a feature class from the "CustomBlobFeature" class. The feature class can also contain multiple features. With the "getBlob()" method you get the reference to the Blob and have full access to the contour data and the other features.
 '''Please note: If your feature method have primitive data types (int/float/double) as parameters you have to use the wrapper classes (Integer/Float/Double).'''
 
-<code> import ij.blob.*;
+<source lang="java">
+import ij.blob.*;
 public class ExampleBlobFeature extends CustomBlobFeature {
-  public double myFancyFeature(Integer a, Float b){
-    double feature = b*getBlob().getEnclosedArea()*a;
-    return feature;
-  }
-  public int mySecondFancyFeature(Integer a, Double b){
-    int feature = (int)(b*getBlob().getAreaToPerimeterRatio() *a);
-    return feature;
-  }	
+	public double myFancyFeature(Integer a, Float b){
+		double feature = b*getBlob().getEnclosedArea()*a;
+		return feature;
+	}
+	public int mySecondFancyFeature(Integer a, Double b){
+		int feature = (int)(b*getBlob().getAreaToPerimeterRatio() *a);
+		return feature;
+	}
 }
-</code>
+</source>
 
 ==Example 4: Add detected blobs to the ROI manager==
 
 
 Find all blobs:
-<code>
- ManyBlobs allBlobs = new ManyBlobs(imp);
- allBlobs.findConnectedComponents();
-</code>
+<source lang="java">
+ManyBlobs allBlobs = new ManyBlobs(imp);
+allBlobs.findConnectedComponents();
+</source>
 
 Open the ROI-Manager:
-<code>
- Frame frame = WindowManager.getFrame("ROI Manager");
- if (frame == null)
-  IJ.run("ROI Manager...");
- frame = WindowManager.getFrame("ROI Manager");
- RoiManager roiManager = (RoiManager) frame;
-</code>
+<source lang="java">
+Frame frame = WindowManager.getFrame("ROI Manager");
+if (frame == null)
+	IJ.run("ROI Manager...");
+frame = WindowManager.getFrame("ROI Manager");
+RoiManager roiManager = (RoiManager) frame;
+</source>
 Convert the outer contour to a ROI and add it to the ROI manager:
-<code>
- for (int i = 0; i < allBlobs.size(); i++){
-  Polygon p = allBlobs.get(i).getOuterContour();
-  int n = p.npoints;
-  float[] x = new float[p.npoints];
-  float[] y = new float[p.npoints];	
-  for (int j=0; j<n; j++) {
-   x[j] = p.xpoints[j]+0.5f;
-   y[j] = p.ypoints[j]+0.5f;
-  }			
-  Roi roi = new PolygonRoi(x,y,n,Roi.TRACED_ROI);				
-  Roi.setColor(Color.green);
-  roiManager.add(imp, roi, i);
- }
-</code>
+<source lang="java">
+for (int i = 0; i < allBlobs.size(); i++) {
+	Polygon p = allBlobs.get(i).getOuterContour();
+	int n = p.npoints;
+	float[] x = new float[p.npoints];
+	float[] y = new float[p.npoints];	
+	for (int j=0; j<n; j++) {
+		x[j] = p.xpoints[j]+0.5f;
+		y[j] = p.ypoints[j]+0.5f;
+	}
+	Roi roi = new PolygonRoi(x,y,n,Roi.TRACED_ROI);				
+	Roi.setColor(Color.green);
+	roiManager.add(imp, roi, i);
+}
+</source>
