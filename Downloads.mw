@@ -11,7 +11,8 @@ Download an "all platforms" bundle of ImageJ, without <br>a bundled Java or any 
 }}
 </div>
 <div style="float: left">
-== [[File:Fiji-icon.png | x48px | link=Fiji]] Fiji is Just ImageJ ==
+<span id="Fiji"></span>
+== [[File:Fiji-icon.png | x48px | link=Fiji]] Fiji is Just ImageJ == 
 
 [[Fiji]] is a distribution of ImageJ which includes many useful plugins [[Fiji_contribution_requirements|contributed by the community]].
 
