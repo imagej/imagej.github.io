@@ -7,9 +7,9 @@
 
 {{DownloadFiji}}
 
-<div style="float: left; padding-right: 3em; width:440px">
 == [[File:Imagej2-icon.png | x48px | link=ImageJ2]] ImageJ ==
 Download an "all platforms" bundle of ImageJ, without a bundled Java or extra extensions.
+<div style="float: left; padding-right: 3em; width:440px">
 {{Box |
 | bgcolor=white
 | text=<center>
