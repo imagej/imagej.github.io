@@ -16,11 +16,7 @@ Download an "all platforms" bundle of ImageJ, without a bundled Java or extra ex
 [[File:Imagej2-download-icon.png | link=http://downloads.imagej.net/ImageJ2-20160205.zip | 192px ]]
 </center>
 }}
-
-</div>
-
-{{Clear}}
-= System requirements =
+</div>{{Clear}}= System requirements =
 
 ImageJ will run on any system that has a Java 6 (or later) runtime installed. This includes, but is not limited to:
 
