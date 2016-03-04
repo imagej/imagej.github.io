@@ -377,6 +377,8 @@ How to: Starting with a binary image the setup dialog allows similar as the "Ana
 Method: The UEPs of the particles are generated and the nearest neighbor distance is determined for each particle. According to particle number and analyzed area the theoretical nearest neighbor distance is calculated using the formula: 0.5*sqrt(area/n) (according to J. Russ, The Image Processing Handbook, 2010, 6th Edition). This assumption ignores differences in particle size, so far. 
 It is assumed that in the case of normally distributed particles, the mean equals the median. Thus, the method is implemented for the comparison of both, mean and median, from the assumption with the measured values. The measured (mean or median) nearest neighbour distance is statistically compared to the theoretical one. Therefore, first a suitable test method is determined according to the homogeneity of the variance using an F-Test. This finally decides about the use of either a Student's T-Test or a Welch Test for the final statistical evaluation.
 
+'''BE AWARE:''' This tool estimates the type of clustering or exclusion since it does not take non-isotropic shape into account and WORKS ONLY on complete, rectangular images and NOT inside irregular ROIs. This might be changed in future.
+
 [[File:DistributionAnalysis.png|750px]]
 
 Form: macro
