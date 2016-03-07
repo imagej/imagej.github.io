@@ -464,10 +464,10 @@ imp2.show();
 
 Programming becomes most useful when code is reused. To that end, many programmers will generalize their code into functions that can be called from other scripts as well.
 
-To avoid copy-pasting all the time (which invariably leads to stale and unmaintainable code), a good idea is to store such general functions in separate ''.js'' files and let the Javascript interpreter know about them:
+To avoid copy-pasting all the time (which invariably leads to stale and unmaintainable code), a good idea is to store such general functions in separate ''.js'' files and let the Javascript interpreter know about them. You can fetch the location of scripts in a system independent way using IJ.getDirectory("plugins"):
 
 <source lang="javascript">
-load("my-library-of-useful-functions.js");
+load(IJ.getDirectory("plugins") + "JavaScript" + File.separator + "my-library-of-useful-functions.js");
 // now you can use the functions defined in above .js file
 </source>
 
