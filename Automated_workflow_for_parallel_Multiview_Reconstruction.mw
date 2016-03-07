@@ -340,7 +340,7 @@ illumination: "0",
 If you process ''.czi'' files then give the name of the first ''.czi'' (file without index): 
 
 <source lang="bash">
-first_czi: "2015-02-21_LZ1_Stock68_3.czi",
+first_czi: "exampleSingleChannel.czi",
 </source>
 
 ==== Settings for .tif datasets ====
