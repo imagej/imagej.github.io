@@ -233,11 +233,11 @@ The example dataset looks like this:
 
 <source lang="bash">
 /path/to/data/
-├── dataset.czi
-├── dataset(1).czi
-├── dataset(2).czi
-├── dataset(3).czi
-└── dataset(4).czi
+├── exampleSingleChannel.czi
+├── exampleSingleChannel(1).czi
+├── exampleSingleChannel(2).czi
+├── exampleSingleChannel(3).czi
+└── exampleSingleChannel(4).czi
 </source>
 
 For processing, the dataset directory will also contain the config.yaml file for the specific dataset. 
@@ -252,11 +252,11 @@ Now the dataset directory has a symlink for the config.yaml:
 
 <source lang="bash">
 /path/to/data/
-├── dataset.czi
-├── dataset(1).czi
-├── dataset(2).czi
-├── dataset(3).czi
-├── dataset(4).czi
+├── exampleSingleChannel.czi
+├── exampleSingleChannel(1).czi
+├── exampleSingleChannel(2).czi
+├── exampleSingleChannel(3).czi
+├── exampleSingleChannel(4).czi
 └── config.yaml	 		# copied/symlinked from this repo
 </source>
 
