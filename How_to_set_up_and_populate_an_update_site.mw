@@ -152,11 +152,15 @@ Select the file to upload, click under the ''Stats/Action'' column, or right-cli
 
 {{Notice | The ''Upload to <update site name>'' option is only available if you entered your [[#Start the updater and check your update site|wiki credentials]] and no other changes are pending. This is to avoid potentially corrupting your ImageJ installation. If the Upload option is not available, select the ''View changes'' view and resolve any pending changes - e.g. by updating or reverting to '''Keep as-is'''.}}
 
+=== Modifying Dependencies ===
+
 When a plugin is selected, a ''Details'' panel becomes available. The plugin's dependencies, e.g. ''ij.jar'' and ''someJarOrOther.jar'', are automatically determined by the updater. Hence if you require 3rd party packages for your plugin you can place them into the jars folder of ImageJ and the updater will automatically upload them to the site.
 
-You can also manually enter or edit any information you wish to provide about the plugin:
+You can also manually enter or edit any information in the ''Details'' panel:
 
 [[Image:How_to_setup_a_plugin_distribution_site-15.jpg|770px]]
+
+{{Notice | The ''Details'' panel can only be edited if you have entered upload credentials for the appropriate update site. After modifying the ''Details'' panel you can mark the jar for upload, even though the jar contents itself has not changed.}}
 
 {{Warning | Sometimes the updater will mis-detect your dependencies. This may prevent you from uploading to your update site! If a dependency is wrong, you can manually add or delete dependencies from the ''Details'' tab to correct the problem. Please [[Mailing_Lists|let us know]] when this happens so we can try to improve the updater}}
 
