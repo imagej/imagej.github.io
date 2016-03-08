@@ -162,7 +162,7 @@ You can also manually enter or edit any information in the ''Details'' panel:
 
 {{Notice | The ''Details'' panel can only be edited if you have entered upload credentials for the appropriate update site. After modifying the ''Details'' panel you can mark the jar for upload, even though the jar contents itself has not changed.}}
 
-{{Warning | Sometimes the updater will mis-detect your dependencies. This may prevent you from uploading to your update site! If a dependency is wrong, you can manually add or delete dependencies from the ''Details'' tab to correct the problem. Please [[Mailing_Lists|let us know]] when this happens so we can try to improve the updater}}
+{{Warning | Sometimes the updater will mis-detect your dependencies. This may prevent you from uploading to your update site! If a dependency is wrong, you can manually add or delete dependencies from the ''Details'' tab to correct the problem. Please [[Contact|let us know]] when this happens so we can try to improve the updater}}
 
 === Upload your files ===
 
