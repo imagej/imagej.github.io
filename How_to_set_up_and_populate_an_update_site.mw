@@ -28,6 +28,7 @@ If you already have an active ImageJ Wiki account (i.e. you changed your passwor
 [[Image:Personal-Update-Site-1.png|770px]]
 
 If your upload password (separate from your wiki password) was not initialized, you will then be asked to provide your wiki password, which will be used to initialize your upload password.
+The two passwords can differ. This can be source of confusion during setting up of the update. 
 
 You can also manually [[Special:ChangeUploadPassword|change or initialize your upload password]].
 
