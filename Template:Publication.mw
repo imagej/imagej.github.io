@@ -1,5 +1,21 @@
 <includeonly>{{#switch: {{{1}}}
 
+| BoneJ = {{Citation | last = Doube | first = M.
+| last2 = Kłosowski | first2 = M. M.
+| last3 = Arganda-Carreras | first3 = I.
+| last4 = Cordelières | first4 = F. P.
+| last5 = Dougherty | first5 = R. P.
+| last6 = Jackson | first6 = J. S.
+| last7 = 
+| last10 = Shefelbine | first10 = S. J.
+| year = 2010
+| journal = Bone
+| url = http://www.sciencedirect.com/science/article/pii/S8756328210014419
+| title = BoneJ: Free and extensible bone image analysis in ImageJ
+| volume = 47(6)
+| pages = 1076-1079
+| pmid = 20817052}} ({{Scholar | cluster=16814410598979768336}}).
+
 | Fiji = {{Citation | last = Schindelin | first = J.
 | last2 = Arganda-Carreras | first2 = I.
 | last3 = Frise | first3 = E.
@@ -90,6 +106,6 @@
 }}</includeonly><noinclude>
 == Usage ==
 Specify a publication by name.
-<pre>{{Publication|Fiji}}</pre>
-{{Publication|Fiji}}
+<pre>{{Publication | Fiji}}</pre>
+{{Publication | Fiji}}
 </noinclude>
