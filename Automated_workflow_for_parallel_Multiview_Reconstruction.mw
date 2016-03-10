@@ -1,7 +1,7 @@
 {{Infobox
 | name                   =  An automated workflow for parallel processing of large multiview SPIM recordings
 | software               = Fiji
-| author                 = Christopher Schmied, Pavel Tomancak
+| author                 = Christopher Schmied, Peter Steinbach, Pavel Tomancak
 | maintainer             = Christopher Schmied
 | filename               = n.a.
 | released               = July 2015
