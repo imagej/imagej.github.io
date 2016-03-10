@@ -234,7 +234,7 @@ nano config.yaml
 
 After this initial setup you can proceed to modify the ''config.yaml'' for your specific dataset.
 
-= Setup for dataset =
+= Setup for the dataset =
 
 
 You can download a 5 view, single channel .czi example dataset here:
