@@ -159,3 +159,7 @@ Multi-view SPIM datasets are typically rather large, therefore it is recommended
 [[Category:Deconvolution]]
 [[Category:ImgLib]]
 [[Category:Integral Image]]
+
+== Cluster processing ==
+
+See the dedicated [[Automated workflow for parallel Multiview Reconstruction|page]] describing an automated workflow for processing SPIM data from Lighsheet.Z1 and OpenSPIM on the MPI-CBG cluster.
