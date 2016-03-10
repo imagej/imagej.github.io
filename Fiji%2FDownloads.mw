@@ -13,7 +13,7 @@ Fiji is supported on the following systems:
 * Mac OS X 10.8 "Mountain Lion" or later
 * Linux on amd64 and x86 architectures
 
-However, Fiji (like ImageJ) should run on any system for which a Java 8 runtime is available (Solaris, Raspbian, etc.)
+However, Fiji (like ImageJ) should run on any system for which a Java 8 runtime is available (Solaris, Raspbian, etc.).
 
 = Installation =
 {{AvoidProgramFiles}}
