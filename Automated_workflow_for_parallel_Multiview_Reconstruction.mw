@@ -33,7 +33,7 @@ In practice it means the following steps need to be executed:
 * Run per time-point registrations - creates as many XMLs as there are timepoints
 * Merge XMLs - consolidates the per-timepoint XMLs back into a single XML
 
-Some new parameters are introduced and some old parameters change names. Therefore, use the ''[Automated workflow for parallel Multiview Reconstruction:config.yaml|config.yaml]'' described in this chapter to process with the MVR pipeline.
+Some new parameters are introduced and some old parameters change names. Therefore, use the ''[Automated workflow for parallel Multiview Reconstruction#config.yaml|config.yaml]'' described in this chapter to process with the MVR pipeline.
 
 = Logic of workflow =
 
