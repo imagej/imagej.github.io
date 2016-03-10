@@ -239,7 +239,7 @@ After this initial setup you can proceed to modify the ''config.yaml'' for your 
 
 You can download a 5 view, single channel .czi example dataset here:
 
-http://tomancak-srv1.mpi-cbg.de/~schmied/
+'''http://tomancak-srv1.mpi-cbg.de/~schmied/'''
 
 The example dataset looks like this:
 
