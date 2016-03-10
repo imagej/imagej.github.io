@@ -22,7 +22,7 @@
 | title = Fiji: an open-source platform for biological-image analysis
 | volume = 9(7)
 | pages = 676-682
-| pmid = 22743772}}. ({{Scholar | cluster=17249863664147333646}})
+| pmid = 22743772}} ({{Scholar | cluster=17249863664147333646}}).
 
 | Icy = {{Citation
 | last = de Chaumont | first = Fabrice
@@ -52,5 +52,5 @@
 == Usage ==
 Specify a publication by name.
 <pre>{{Publication|Fiji}}</pre>
-{{Publication|Fij}}
+{{Publication|Fiji}}
 </noinclude>
