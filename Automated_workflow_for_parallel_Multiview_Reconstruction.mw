@@ -3,11 +3,10 @@
 | software               = Fiji
 | author                 = Christopher Schmied, Peter Steinbach, Pavel Tomancak
 | maintainer             = Christopher Schmied
-| filename               = n.a.
 | released               = July 2015
-| latest version         = August 2015
+| latest version         = March 2016
 | category               = [[:Category:Registration|Registration]]
-| website                = https://github.com/mpicbg-scicomp/snakemake-workflows
+| source               = https://github.com/mpicbg-scicomp/snakemake-workflows
 }}
 
 = Citation =
