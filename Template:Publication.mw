@@ -1,0 +1,56 @@
+<includeonly>{{#switch: {{{1}}}
+
+| Fiji = {{Citation | last = Schindelin | first = J.
+| last2 = Arganda-Carreras | first2 = I.
+| last3 = Frise | first3 = E.
+| last4 = Kaynig | first4 = V.
+| last5 = Longair | first5 = M.
+| last6 = Pietzsch | first6 = T.
+| last7 = Preibisch | first7 = S.
+| last8 = Rueden | first8 = C.
+| last9 = Saalfeld | first9 = S.
+| last10 = Schmid | first10 = B.
+| last11 = Tinevez | first11 = J.-Y.
+| last12 = White | first12 = D. J.
+| last13 = Hartenstein | first13 = V.
+| last14 = Eliceiri | first14 = K.
+| last15 = Tomancak | first15 = P.
+| last16 = Cardona | first16 = A.
+| year = 2012
+| journal = Nature methods
+| url = http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2019.html
+| title = Fiji: an open-source platform for biological-image analysis
+| volume = 9(7)
+| pages = 676-682
+| pmid = 22743772}}. ({{Scholar | cluster=17249863664147333646}})
+
+| Icy = {{Citation
+| last = de Chaumont | first = Fabrice
+| last2 = Dallongeville | first2 = Stéphane
+| last3 = Chenouard | first3 = Nicolas
+| last4 = Hervé | first4 = Nicolas
+| last5 = Pop | first5 = Sorin
+| last6 = Provoost | first6 = Thomas
+| last7 = Meas-Yedid | first7 = Vannary
+| last8 = Pankajakshan | first8 = Praveen
+| last9 = Lecomte | first9 = Timothée
+| last10 = Le Montagner | first10 = Yoann
+| last11 = Lagache | first11 = Thibault
+| last12 = Dufour | first12 = Alexandre
+| last13 = Olivo-Marin | first13 = Jean-Christophe
+| year = 2012
+| journal = Nature methods
+| url = http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2075.html
+| title = Icy: an open bioimage informatics platform for extended reproducible research
+| volume = 9(7)
+| pages = 690-696
+| pmid = 22743774}}
+
+| ''(Unknown publication: {{{1}}})''
+
+}}</includeonly><noinclude>
+== Usage ==
+Specify a publication by name.
+<pre>{{Publication|Fiji}}</pre>
+{{Publication|Fij}}
+</noinclude>
