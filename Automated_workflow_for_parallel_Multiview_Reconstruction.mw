@@ -1,8 +1,8 @@
 {{Infobox
 | name                   =  An automated workflow for parallel processing of large multiview SPIM recordings
 | software               = Fiji
-| author                 = Christopher Schmied, Peter Steinbach, Pavel Tomancak
-| maintainer             = Christopher Schmied
+| author                 = [https://de.linkedin.com/in/christopher-schmied-75882b101 Christopher Schmied], Peter Steinbach, Pavel Tomancak
+| maintainer             = [https://de.linkedin.com/in/christopher-schmied-75882b101 Christopher Schmied]
 | released               = July 2015
 | latest version         = March 2016
 | category               = [[:Category:Transform|Transform]], [[:Category:Registration|Registration]], [[:Category:Registration|SPIM Registration]], [[:Category:Deconvolution|Deconvolution]]
