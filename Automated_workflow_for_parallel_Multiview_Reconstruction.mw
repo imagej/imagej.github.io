@@ -5,7 +5,7 @@
 | maintainer             = [https://de.linkedin.com/in/christopher-schmied-75882b101 Christopher Schmied]
 | released               = July 2015
 | latest version         = March 2016
-| category               = [[:Category:Transform|Transform]], [[:Category:Registration|Registration]], [[:Category:Registration|SPIM Registration]], [[:Category:Deconvolution|Deconvolution]]
+| category               = [[:Category:Transform|Transform]], [[:Category:Registration|Registration]], [[:Category:Deconvolution|Deconvolution]]
 | source               = [https://github.com/mpicbg-scicomp/snakemake-workflows on github]
 }}
 
@@ -670,5 +670,4 @@ Each node of this cluster runs CentOS 6.3 Linux distribution. The queuing system
 
 [[Category:Transform]]
 [[Category:Registration]]
-[[:Category:SPIM Registration]]
 [[Category:Deconvolution]]
