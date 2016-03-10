@@ -13,14 +13,12 @@
 = Citation =
 
 Please note that the automated workflow for processing SPIM data on a cluster is based on a publication. If you use it successfully for your research please be so kind to cite the following work:
-*C. Schmied, P. Steinbach, T. Pietzsch, S. Preibisch, P. Tomancak (2015) "An automated workflow for parallel processing of large multiview SPIM recordings." ''Bioinformatics'', Dec 1; doi: 10.1093/bioinformatics/btv706
-[http://bioinformatics.oxfordjournals.org/content/early/2015/12/30/bioinformatics.btv706.long Webpage]
+*C. Schmied, P. Steinbach, T. Pietzsch, S. Preibisch, P. Tomancak (2015) "An automated workflow for parallel processing of large multiview SPIM recordings." ''Bioinformatics'', Dec 1; doi: 10.1093/bioinformatics/btv706 [http://bioinformatics.oxfordjournals.org/content/early/2015/12/30/bioinformatics.btv706.long Webpage]
 
 The automated workflow is based on Fiji plugins. Please refer and cite the following publications:
-* S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", ''Nature Methods'', '''7'''(6):418-419. [http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html Webpage] [[Media:Nmeth0610-418.pdf|PDF]] [[Media:Nmeth0610-418-S1.pdf|Supplement]]
+* S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", ''Nature Methods'', '''7'''(6):418-419.[http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html Webpage] 
 * S. Preibisch, F. Amat, E. Stamataki, M. Sarov, R.H. Singer, E. Myers and P. Tomancak (2014) "Efficient Bayesian-based Multiview Deconvolution", ''Nature Methods'', '''11'''(6):645-648. [http://www.nature.com/nmeth/journal/v11/n6/full/nmeth.2929.html Webpage]
-*T. Pietzsch, S. Saalfeld, S. Preibisch, P. Tomancak (2015) "BigDataViewer: visualization and processing for large image data sets." '''Nat. Methods'', '''12'''(6)481–483.
-[http://www.nature.com/nmeth/journal/v12/n6/full/nmeth.3392.html Webpage] 
+*T. Pietzsch, S. Saalfeld, S. Preibisch, P. Tomancak (2015) "BigDataViewer: visualization and processing for large image data sets." '''Nat. Methods'', '''12'''(6)481–483. [http://www.nature.com/nmeth/journal/v12/n6/full/nmeth.3392.html Webpage]
 
 = Multiview reconstruction =
 
