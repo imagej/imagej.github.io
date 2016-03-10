@@ -10,6 +10,11 @@
 | website                = [http://www.mpi-cbg.de/research/research-groups/pavel-tomancak.html Pavel Tomancak's homepage]
 }}
 
+= Important Note =
+{{Warning | '''''Please Note: This version of the software is outdated. We highly recommend using the new [[automated workflow|Automated workflow for parallel Multiview Reconstruction]]. It is much more user friendly and efficient due to full automation of the processing'''''}}
+
+= Introduction =
+
 Light sheet microscopy such as SPIM produces enormous amounts of data especially when used in long-term time-lapse mode. In order to view and in some cases analyze the data it is necessary to process them which involves registration of the views within time-points, correction of sample drift across the time-lapse registration, fusion of data into single 3d image per time-point which may require multiview deconvolution and 3d rendering of the fused volumes. Here we describe how to perform such processing in parallel on a cluster computer.
 
 We will use data derived from the [http://microscopy.zeiss.com/microscopy/en_de/products/imaging-systems/lightsheet-z-1.html Lightsheet Z.1] a commercial realisation of SPIM offered by Zeiss. The Lightsheet Z.1 data can be truly massive and cluster computing may well be the only way to deal with the data deluge coming of the microscope.
