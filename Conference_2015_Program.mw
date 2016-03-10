@@ -320,7 +320,7 @@ We have developed a standardized method for morphological staining of liver sect
 === Fabrice de Chaumont - Icy: an open source software for image analysis ===
 In this poster we present a panel of Icy's features. Live demo based on your images, and we will try to process them thanks to one of the 300 image analysis plugins available in Icy !
 
-{{Cite Icy}}
+{{Publication|Icy}}
 
 === Olaya Fernandez-Gayol - Using the wrMTrck plugin to analyze the Morris Water maze in mice ===
 The Morris Water Maze is a standard behavioral test used for assessing spatial memory in mice and rats. The animal must learn the location of a hidden platform in a round pool using external cues. Removing the platform allows for assessment of learning by measuring the time the animal spends in the vicinity of where the platform used to be. A manual quantification can be very time consuming (many trials per animal), less accurate and more time consuming than an automated one. However, imaging software can be very expensive and not readily available to researchers. Here I present a macro that profits from the wrMTrck plugin (developed for C. elegans by JS Pedersen), but which is more focused on the parameters relevant to the analysis of the Morris Water Maze.
