@@ -107,10 +107,10 @@ It is important to note that we can only guarantee the proper execution of the w
 
 = Automated Multiview Reconstruction workflow =
 
-Clone the repository for the workflow from  '''[https://github.com/schmiedc/snakemake-workflows github]'''.
+Clone the repository for the workflow from  '''[https://github.com/mpicbg-scicomp/snakemake-workflows github]'''.
 
 <source lang="bash">
-git clone https://github.com/schmiedc/snakemake-workflows.git
+git clone https://github.com/mpicbg-scicomp/snakemake-workflows.git
 </source>
 
 The repository contains the example configuration scripts for single and dual channel datasets, the Snakefile which defines the workflow, the beanshell scripts which drive the processing via Fiji and a cluster.json file which contains information for the cluster queuing system.
