@@ -23,21 +23,28 @@ Thank you for your support.
 | '''Project'''
 | '''Citation'''
 |-
+! colspan=2 | Core projects
+|-
 | [[ImageJ]]
 | {{Publication | ImageJ}}
 |-
 | [[ImageJ2]]
 | {{Publication | ImageJ2}}
 |-
+! colspan=2 | Distributions of ImageJ
+|-
 | [[Fiji]]
 | {{Publication | Fiji}}
+|-
+| [[BoneJ]]
+| {{Publication | BoneJ}}
+|-
+! colspan=2 | Supporting libraries
 |-
 | [[ImgLib2]]
 | {{Publication | ImgLib2}}
 |-
-| colspan=3 style="background: #777" |
-|-
-| [[SciJava Common]]
+| style="white-space: nowrap" | [[SciJava Common]]
 | {{Publication | SciJava Common}}
 | -
 |-
@@ -51,7 +58,5 @@ Thank you for your support.
 |-
 | colspan=3 style="background: #777" |
 |-
-| Other
-| Browse the [[:Category:Citable|list of citable software]] and [[Publications|publications using Fiji]] for additional citation information.
-| -
 |}
+See the [[:Category:Citable|list of citable software]] and [[Publications|publications using Fiji]] for additional citation information.
