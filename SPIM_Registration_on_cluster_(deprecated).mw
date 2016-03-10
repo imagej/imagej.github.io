@@ -29,7 +29,7 @@ The SPIM registration is a piece of software that undergoes ongoing development.
 
 * [[#Original SPIM registration pipeline|Original SPIM registration pipeline]] - contains the most detailed description of the cluster pipeline using ''SPIM registration'' plugins. If you do not have much HPC/Linux experience start here.
 
-* [[#NEW PIPELINE|NEW PIPELINE]] - also uses ''SPIM registration'' plugins and introduces the master file, its more up-to-date compared to the original pipeline, but less verbose requiring some experience with command line and HPC.
+* [[#NEW PIPELINE|NEW PIPELINE]] - also uses ''SPIM registration'' plugins and introduces the master file, less verbose requiring some experience with command line and HPC.
 
 *  [[#New Multiview Reconstruction pipeline|New Multiview Reconstruction pipeline]] - builds on ''Multiview Reconstruction'' plugins, uses master file, written for experts
 
