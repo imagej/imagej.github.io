@@ -38,15 +38,15 @@ Thank you for your support.
 | colspan=3 style="background: #777" |
 |-
 | [[SciJava Common]]
-| Rueden, C., Schindelin, J., Hiner, M. & Eliceiri, K. (2015). SciJava Common [Software]. http://scijava.org/.
+| {{Publication | SciJava Common}}
 | -
 |-
 | [[SCIFIO]]
-| Hiner, M., Rueden, C. & Eliceiri, K. (2015). SCIFIO [Software]. http://scif.io/.
+| {{Publication | SCIFIO}}
 | -
 |-
 | [[ImageJ Ops]]
-| Rueden, C., Dietz, C., Horn, M., Schindelin, J., Northan, B., Berthold, M. & Eliceiri, K. (2015). ImageJ Ops [Software]. http://imagej.net/Ops.
+| {{Publication | ImageJ Ops}}
 | -
 |-
 | colspan=3 style="background: #777" |
