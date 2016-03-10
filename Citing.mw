@@ -8,7 +8,7 @@
 We ask users to cite:
 
 # Any [[:Category:Citable|specific publications]] of [[plugins]] used.
-# The general [[Fiji]] paper, if you used [[Fiji]].
+# The general paper of ImageJ distribution(s) used—e.g., if you used [[Fiji]], cite the [[Fiji]] paper.
 # The general [[ImageJ]] paper.
 
 If journal reference limits interfere, the plugin-specific publications should take precedence.
