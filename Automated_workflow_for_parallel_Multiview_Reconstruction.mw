@@ -31,7 +31,7 @@ Stephan Preibisch solved that problem by allowing to write one XML file per job 
 In practice it means the following steps need to be executed:
 
 * Define XML dataset - creates one XML for the entire timelapse
-* Re-save data as HDF5 - converts data into HDF5 container optimised for fast access in [[BigDataViewer]] 
+* Re-save data as HDF5 - converts data into HDF5 container optimised for fast access in '''[[BigDataViewer]]'''
 * Run per time-point registrations - creates as many XMLs as there are timepoints
 * Merge XMLs - consolidates the per-timepoint XMLs back into a single XML
 
