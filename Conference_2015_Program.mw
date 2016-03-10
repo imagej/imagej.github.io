@@ -66,7 +66,7 @@ Plant organs such as stems are composed of tissues containing thick and thin-wal
 
 [[Icy]] is a free open-source bio-image analysis software. During its 3 years of life it has been continuously improved and continuously brings new features to users and developers. Today Icy is used by more than one thousands of regular users which appreciate its intuitive GUI, its ray-traced 3D visualization and its cutting-edge analysis methods. Users can also adapt and create new algorithms with script and the graphical programming protocol designer and store them on the Icy website which centralize all resources (http://icy.bioimageanalysis.org). Thus it makes available plug-ins, protocols and scripts to everybody. Centralization also allows searching directly from within the application for specific features and enables it in a one-click install. During the last months, Icy has received news exciting features: revisited 3D rendering based on latest VTK version and a new powerful Undo framework. Finally, Icy is always evolving, thanks to the feedback of all its users on http://icy.bioimageanalysis.org/support !
 
-{{Cite Icy}}
+{{Publication|Icy}}
 
 [ [https://vimeo.com/140929690/ Presentation video] ]
 
