@@ -180,7 +180,7 @@ xvfb-run
 
 == sysconfcpus ==
 
-We use Libsysconfcpus (http://www.kev.pulo.com.au/libsysconfcpus/) to restrict how many cores Fiji is using on the cluster.
+We use '''[http://www.kev.pulo.com.au/libsysconfcpus/ Libsysconfcpus]''' to restrict how many cores Fiji is using on the cluster.
 
 Compile with:
 <source lang="bash">
