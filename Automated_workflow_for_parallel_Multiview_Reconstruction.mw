@@ -5,7 +5,7 @@
 | maintainer             = Christopher Schmied
 | released               = July 2015
 | latest version         = March 2016
-| category               = [[:Category:Transform|Transform]] [[:Category:Registration|Registration]] [[:Category:Registration|SPIM Registration]], [[:Category:Deconvolution|Deconvolution]]
+| category               = [[:Category:Transform|Transform]], [[:Category:Registration|Registration]], [[:Category:Registration|SPIM Registration]], [[:Category:Deconvolution|Deconvolution]]
 | source               = https://github.com/mpicbg-scicomp/snakemake-workflows
 }}
 
