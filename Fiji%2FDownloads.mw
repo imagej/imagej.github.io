@@ -1,8 +1,6 @@
 <div style="float: right">__TOC__</div>
 
 <span id="Fiji"></span>
-== [[File:Fiji-icon.png | x48px | link=Fiji]] Fiji is Just ImageJ == 
-
 [[Fiji]] is a distribution of ImageJ which includes many useful plugins [[Fiji_contribution_requirements|contributed by the community]].
 
 {{DownloadFiji}}
