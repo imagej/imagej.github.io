@@ -35,6 +35,8 @@ In practice it means the following steps need to be executed:
 
 Some new parameters are introduced and some old parameters change names. Therefore, use the '''''[[#config.yaml|config.yaml]]''''' described in this chapter to process with the MVR pipeline.
 
+Outdated versions of the cluster processing scripts on which this workflow is based on you can find [[SPIM Registration on cluster|here]]
+
 = Logic of workflow =
 
 We map and dispatch the workflow logic either on a single maschine or on a HPC cluster using the automated workflow engine '''[https://bitbucket.org/johanneskoester/snakemake/wiki/Home. Snakemake]'''.
