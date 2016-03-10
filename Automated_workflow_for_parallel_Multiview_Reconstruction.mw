@@ -17,7 +17,7 @@ Please note that the automated workflow for processing SPIM data on a cluster is
 
 
 
-The automated workflow is based on Fiji for plugins. Please refer and cite the following publications:
+The automated workflow is based on the Fiji plugins [Multiview-Reconstruction|Multiview Reconstruction] and [BigDataViewer|BigDataViewer]. Please refer and cite the following publications:
 * S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", ''Nature Methods'', '''7'''(6):418-419.[http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html Webpage] 
 * S. Preibisch, F. Amat, E. Stamataki, M. Sarov, R.H. Singer, E. Myers and P. Tomancak (2014) "Efficient Bayesian-based Multiview Deconvolution", ''Nature Methods'', '''11'''(6):645-648. [http://www.nature.com/nmeth/journal/v11/n6/full/nmeth.2929.html Webpage]
 *T. Pietzsch, S. Saalfeld, S. Preibisch, P. Tomancak (2015) "BigDataViewer: visualization and processing for large image data sets." ''Nature Methods'', '''12'''(6)481–483. [http://www.nature.com/nmeth/journal/v12/n6/full/nmeth.3392.html Webpage]
