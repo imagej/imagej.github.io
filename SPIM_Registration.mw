@@ -66,7 +66,7 @@ Multi-view SPIM datasets are typically rather large, therefore it is recommended
 
 == Cluster processing ==
 
-See dedicated [[SPIM_Registration_on_cluster|page]] describing how to process SPIM data from Lighsheet.Z1 on the MPI-CBG cluster.
+See the dedicated [[Automated workflow for parallel Multiview Reconstruction|page]] describing an automated workflow for processing SPIM data from Lighsheet.Z1 and OpenSPIM on the MPI-CBG cluster.
 
 [[Category:Plugins]]
 [[Category:Registration]]
