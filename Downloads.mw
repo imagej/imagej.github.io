@@ -10,8 +10,15 @@ Here you can download an "all platforms" version of ImageJ, without a bundled Ja
 }}
 </div>
 
-If you are looking for the [[Fiji]] distribution of ImageJ, you can download it here: [[File:Fiji-icon.png | 96px | link=Fiji/Downloads]]
+==Other distributions==
 
+{|
+|-
+|[[File:Fiji-icon.png | 96px | link=Fiji/Downloads]]
+|-
+|style="text-align:center; font-size:1.5em"|Fiji
+|}
+<br />
 {{Clear}}= System requirements =
 
 ImageJ will run on any system that has a Java 6 (or later) runtime installed. This includes, but is not limited to:
