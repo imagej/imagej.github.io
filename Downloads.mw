@@ -12,11 +12,13 @@ Here you can download an "all platforms" version of ImageJ, without a bundled Ja
 
 ==Distributions of ImageJ==
 
+These downloads bundle ImageJ with a curated collection of plugins pre-installed.
+
 {|
 |-
 |[[File:Fiji-icon.png | 96px | link=Fiji/Downloads]]
 |-
-|style="text-align:center; font-size:1.5em"|Fiji
+|style="text-align:center; font-size:1.5em"|[[Fiji/Downloads|Fiji]]
 |}
 <br />
 {{Clear}}= System requirements =
