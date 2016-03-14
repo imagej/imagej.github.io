@@ -77,15 +77,20 @@ An in-depth training for how to use DiameterJ has been developed.  In total the 
 How to Install and Use DiameterJ:
 * [https://docs.google.com/document/d/1lODEj02e2eFtQ-v0B3TJd53Q2XFZZW2i0szrfyX0kRY/edit?usp=sharing Training Document 1]
 * [https://docs.google.com/document/d/1n6a8VPy4tugZTQO7BYD-JU4JYvrmbuSib2AcXPXys9w/edit?usp=sharing Output of DiameterJ] description
+* [http://imagej.net/DiameterJ#How_to_Use_DiameterJ Quiz 1]
 
 How to Segment Images Using DiameterJ:
 * [https://docs.google.com/document/d/1i_dBujuiFqkCQqdjAgFuwATDS3pvQH7cK2kwcAfDiSw/edit?usp=sharing Image Cropping and Segmentation]
+* [http://goo.gl/forms/kt4DhUZiio Quiz 2]
 * [https://docs.google.com/document/d/1Hywk3DsRz7tpkafyjncpBxCQTZw5NnqkkWKp4LKguYk/edit?usp=sharing Manual Segmentation and Pixel to Unit Conversion]
+* [http://goo.gl/forms/Gy9uvTVqDo Quiz 3]
 
 How to Analyze Fiber Diameters and Other Scaffold Properties:
 * [https://docs.google.com/document/d/1rOmOySkR5hBVtLrjx1FRCngzp2ZI2W4vG72_3sUdxPI/edit?usp=sharing Fiber Diameter Analysis]
-* [https://docs.google.com/document/d/1Hk3AKDpMM2uzPsDYDETyd0jgVrCwiw4yfXkumWf3-ZE/edit?usp=sharing Other Fiber Metrics Analysis]
 * [https://docs.google.com/document/d/1XXlECwX2keZpP83tF3hMc-4ORLCblmyJCDmuHZK-zpE/edit?usp=sharing Combining Analysis from Multiple Images]
+* [http://goo.gl/forms/0Ca0DcyzdM Quiz 4]
+* [https://docs.google.com/document/d/1Hk3AKDpMM2uzPsDYDETyd0jgVrCwiw4yfXkumWf3-ZE/edit?usp=sharing Other Fiber Metrics Analysis]
+* [http://goo.gl/forms/xA1NPU5AgR Quiz 5]
 
 ====<big>DiameterJ Segmentation</big>====
 Image segmentation is the process of converting an image into a binary representation of your image, where the white pixels represent the portions of the original image that you would like to measure and the black pixels represent the background that you would not like to measure. 
