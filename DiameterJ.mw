@@ -101,7 +101,8 @@ An In-depth description of how to Analyze Fiber Diameters and Other Scaffold Pro
 * [http://goo.gl/forms/xA1NPU5AgR Quiz 5]
 
 <big>Of Note About Analysis</big>
-::The metrics contained in the Total Summaries folder are global averages of diameter and can be easily biased if the diameter histogram analyzed has a non-normal distribution (i.e. multiple peaks, significant noise leading or trailing from the peak, etc.).  It is strongly recommend that you perform a peak fit of the diameter histogram to obtain a more accurate measure if the radius histogram image (shown in the "Histograms" folder) shows a non-normal distribution or multiple peaks.  
+
+::The metrics contained in the Total Summaries folder are global averages of diameter and can be easily biased if the diameter histogram analyzed has a non-normal distribution (i.e. multiple peaks, significant noise leading or trailing from the peak, etc.).  It is strongly recommend that you perform a peak fit of the diameter histogram to obtain a more accurate measure if the radius histogram image (shown in the "Histograms" folder) shows a non-normal distribution or multiple peaks.
 
 ====<big>Pixel to Unit Distance Transformation</big>==== 
 Please see General Use and Installation link above for a detailed explanation of how to do this.
