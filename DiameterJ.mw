@@ -79,47 +79,32 @@ How to Install and Use DiameterJ:
 * [https://docs.google.com/document/d/1n6a8VPy4tugZTQO7BYD-JU4JYvrmbuSib2AcXPXys9w/edit?usp=sharing Output of DiameterJ] description
 * [http://imagej.net/DiameterJ#How_to_Use_DiameterJ Quiz 1]
 
+====<big>DiameterJ Segmentation</big>====
+Image segmentation is the process of converting an image into a binary representation of your image, where the white pixels represent the portions of the original image that you would like to measure and the black pixels represent the background that you would not like to measure. 
+
 How to Segment Images Using DiameterJ:
 * [https://docs.google.com/document/d/1i_dBujuiFqkCQqdjAgFuwATDS3pvQH7cK2kwcAfDiSw/edit?usp=sharing Image Cropping and Segmentation]
 * [http://goo.gl/forms/kt4DhUZiio Quiz 2]
 * [https://docs.google.com/document/d/1Hywk3DsRz7tpkafyjncpBxCQTZw5NnqkkWKp4LKguYk/edit?usp=sharing Manual Segmentation and Pixel to Unit Conversion]
 * [http://goo.gl/forms/Gy9uvTVqDo Quiz 3]
 
-How to Analyze Fiber Diameters and Other Scaffold Properties:
+There are a total of 24 different algorithms that can be used to segment images included with DiameterJ.  Feel free to use them all or none of them.  DiameterJ 1.XXX can analyze any black and white (binary) image and thus users do not need to use the included segmentation algorithms to segment their images if they do not want to.
+
+====<big>DiameterJ Analysis</big>====
+:'''''Analyzed images MUST be white fibers on a black background.  If you have black fibers on a white background invert the image to analyze it with DiameterJ.''''' 
+ 
+An In-depth description of how to Analyze Fiber Diameters and Other Scaffold Properties:
 * [https://docs.google.com/document/d/1rOmOySkR5hBVtLrjx1FRCngzp2ZI2W4vG72_3sUdxPI/edit?usp=sharing Fiber Diameter Analysis]
 * [https://docs.google.com/document/d/1XXlECwX2keZpP83tF3hMc-4ORLCblmyJCDmuHZK-zpE/edit?usp=sharing Combining Analysis from Multiple Images]
 * [http://goo.gl/forms/0Ca0DcyzdM Quiz 4]
 * [https://docs.google.com/document/d/1Hk3AKDpMM2uzPsDYDETyd0jgVrCwiw4yfXkumWf3-ZE/edit?usp=sharing Other Fiber Metrics Analysis]
 * [http://goo.gl/forms/xA1NPU5AgR Quiz 5]
 
-====<big>DiameterJ Segmentation</big>====
-Image segmentation is the process of converting an image into a binary representation of your image, where the white pixels represent the portions of the original image that you would like to measure and the black pixels represent the background that you would not like to measure. 
-
-Please see the below two documents to get an in-depth review of how to use segmentation in DiameterJ
-* [https://docs.google.com/document/d/1i_dBujuiFqkCQqdjAgFuwATDS3pvQH7cK2kwcAfDiSw/edit?usp=sharing Image Cropping and Segmentation]
-* [https://docs.google.com/document/d/1Hywk3DsRz7tpkafyjncpBxCQTZw5NnqkkWKp4LKguYk/edit?usp=sharing Manual Segmentation]
-
-There are a total of 24 different algorithms that can be used to segment images included with DiameterJ.  Feel free to use them all or none of them.  DiameterJ 1.XXX can analyze any black and white (binary) image and thus users do not need to use the included segmentation algorithms to segment their images if they do not want to.
-
-====<big>DiameterJ Analysis</big>====
-:'''''Analyzed images MUST be white fibers on a black background.  If you have black fibers on a white background invert the image to analyze it with DiameterJ.''''' 
-
-Please go to [https://docs.google.com/document/d/1lODEj02e2eFtQ-v0B3TJd53Q2XFZZW2i0szrfyX0kRY/edit?usp=sharing Training Document 1] to see a detailed explanation of how to perform the DiameterJ analysis.
-
-The File [https://docs.google.com/document/d/1n6a8VPy4tugZTQO7BYD-JU4JYvrmbuSib2AcXPXys9w/edit?usp=sharing Output Description], contains a detailed description of all files output by DiameterJ 1.XXX.  
-
-An In-depth description of how to Analyze Fiber Diameters and Other Scaffold Properties:
-* [https://docs.google.com/document/d/1rOmOySkR5hBVtLrjx1FRCngzp2ZI2W4vG72_3sUdxPI/edit?usp=sharing Fiber Diameter Analysis]
-* [https://docs.google.com/document/d/1Hk3AKDpMM2uzPsDYDETyd0jgVrCwiw4yfXkumWf3-ZE/edit?usp=sharing Other Fiber Metrics Analysis]
-* [https://docs.google.com/document/d/1XXlECwX2keZpP83tF3hMc-4ORLCblmyJCDmuHZK-zpE/edit?usp=sharing Combining Analysis from Multiple Images]
-
 <big>Of Note About Analysis</big>
 ::The metrics contained in the Total Summaries folder are global averages of diameter and can be easily biased if the diameter histogram analyzed has a non-normal distribution (i.e. multiple peaks, significant noise leading or trailing from the peak, etc.).  It is strongly recommend that you perform a peak fit of the diameter histogram to obtain a more accurate measure if the radius histogram image (shown in the "Histograms" folder) shows a non-normal distribution or multiple peaks.  
- 
-:If you want a more accurate analysis, want to combine histograms from multiple images OR you want to determine multiple diameter peaks from a single image or set of images then check out the file [https://docs.google.com/document/d/1XXlECwX2keZpP83tF3hMc-4ORLCblmyJCDmuHZK-zpE/edit?usp=sharing Combining Analysis from Multiple Images]
 
 ====<big>Pixel to Unit Distance Transformation</big>==== 
-Please see [https://docs.google.com/document/d/1lODEj02e2eFtQ-v0B3TJd53Q2XFZZW2i0szrfyX0kRY/edit?usp=sharing Training Document 1] and [https://docs.google.com/document/d/1Hywk3DsRz7tpkafyjncpBxCQTZw5NnqkkWKp4LKguYk/edit?usp=sharing Manual Segmentation] for a detailed explanation of how to do this.
+Please see General Use and Installation link above for a detailed explanation of how to do this.
 
 === <big>DiameterJ Output</big> ===
 ----
