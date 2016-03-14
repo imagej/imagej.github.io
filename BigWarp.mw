@@ -4,7 +4,7 @@
 | author                = {{Person|Bogovic}}
 | maintainer            = {{Person|Bogovic}}
 | source                = {{GitHub|org=saalfeldlab|repo=bigwarp}}
-| latest version        = 2.1.0
+| latest version        = 2.1.1
 | status                = stable
 | category              = [[:Category:Plugins|Plugins]], [[:Category:Visualization|Visualization]], [[:Category:Transform|Transform]]
 }}
