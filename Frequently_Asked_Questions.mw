@@ -190,7 +190,7 @@ Yes, see the [https://github.com/imagej/imagej-tutorials/tree/master/call-modern
 
 == What is the difference between Fiji and ImageJ? ==
 
-Fiji is a ''distribution'' of ImageJ: it bundles the core ImageJ application with a curated selection of plugins pre-installed.
+Fiji is a ''distribution'' of ImageJ: it bundles the core ImageJ application with a curated selection of plugins pre-installed. Specifically, those plugins found on the [[List_of_update_sites|Fiji update site]].
 
 == How do I install Fiji? ==
 
