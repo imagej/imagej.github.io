@@ -150,7 +150,7 @@ All major methods have a general class with '''static methods''' that allow call
 === Scripting MorphoLibJ ===
 One advantage of this organization of the library and the use of public static methods is that it allows very easy and fast prototyping of morphological algorithms and pipelines.
 
-Let's see an example in a complete Beanshell script that takes the active 2D or 3D image and finds a reasonable segmentation combining a set of morphological operations (gradient, extended minima and watershed):
+Let's see an example in a complete [[BeanShell_Scripting|Beanshell script]] that takes the active 2D or 3D image and finds a reasonable segmentation combining a set of morphological operations (gradient, extended minima and watershed):
 
 <source lang="java">
 // @ImagePlus imp
