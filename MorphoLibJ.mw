@@ -25,6 +25,7 @@ The library implements several functionalities that were missing in ImageJ, and 
 * '''Binary / label images utilities''' for removing or keeping largest connected component, perform size opening, fill holes, kill borders...
 
 == Morphological filters ==
+[[Image:MorphoLibJ-mosaic-filters.png|right|thumb|750px|DAPI stained nuclei image and the result of applying different morphological filters with an octagon of radius 5 as structuring element.]] 
 Morphological filters consider the neighborhood of each pixel/voxel according to a structuring element of a given size and shape.
 
 The following filters are '''implemented both for 2D and 3D image'''s, and work for binary as well as grey level images:
@@ -44,7 +45,7 @@ The following filters are '''implemented both for 2D and 3D image'''s, and work 
 * '''black top-hat''' consists in subtracting the original image from the result of a morphological closing, and results in the enhancement of dark structures smaller than structuring element.
 
 * '''white top-hat''' consists in subtracting the result of a morphological opening from the original image, and results in the enhancement of bright structures smaller than structuring element.
-[[Image:MorphoLibJ-mosaic-filters.png|right|thumb|750px|DAPI stained nuclei image and the result of applying different morphological filters with an octagon of radius 5 as structuring element.]] 
+
 The following structuring elements can be used for 2D images:
 
 * disk 
