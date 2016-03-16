@@ -45,7 +45,7 @@ If your segmentation is taking too long or you want '''to stop it''' for any rea
 
 === Results panel ===
 
-[[Image:Morphological-segmentation-results-panel.png|right]]Only enabled after running the segmentation.
+[[Image:Morphological-segmentation-results-panel.png|right|thumb|250px|Results panel]]Only enabled after running the segmentation.
 
 * '''Display''': list of options to display the segmentation results.
 ** '''Overlaid basins''': colored objects overlaying the input image (with or without dams depending on the selected option in the Watershed Segmentation panel).
