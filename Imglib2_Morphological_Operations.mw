@@ -131,7 +131,7 @@ It turns out some structuring elements can be decomposed to achieve greater perf
 
 Several structuring elements can be decomposed, sometimes depending on the dimensionality of the problem. 
 
-In the Imglib2 morphology package, these decompositions are achieved through the [https://github.com/tinevez/imglib2-algorithm/blob/morphology/src/main/java/net/imglib2/algorithm/morphology/StructuringElements.java  StructuringElements] class. For instance:
+In the Imglib2 morphology package, these decompositions are achieved through the [https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/StructuringElements.java  StructuringElements] class. For instance:
 
 <source lang="java">
 public static final List< Shape > diamond( final int radius, final int dimensionality, final boolean decompose )
