@@ -53,11 +53,15 @@ Keep this in mind when adding documentation to your scripts.
 
 If you look at the [https://github.com/scijava/scijava-common/blob/scijava-common-2.40.0/src/main/java/org/scijava/plugin/Parameter.java @Parameter annotation], you will notice it has many properties - for example, <code>name</code> and <code>description</code>. In Java, annotations can accept [https://docs.oracle.com/javase/tutorial/java/annotations/basics.html comma-separated key=value properties]. Script parameters preserve this property syntax, with the additional requirement that all parameters are enclosed in a '''single parenthetical expression'''.
 
+=== Widget labels ===
+
 For example, instead of just displaying "Name", we can add a custom label and description to the name field of our Greeting.py script as follows:
 
 <source lang="python">
-# @String(label="Please enter your name",description="Name field") name
+# @String(label="Please enter your name") name
 # @OUTPUT String greeting
+
+# Note that documentation comments come AFTER the @Parameters
 
 # A Jython script with parameters.
 # It is the duty of the scripting framework to harvest
@@ -69,6 +73,14 @@ greeting = "Hello, " + name + "!"
 
 It is up to the current UI framework how to deal with these properties. By default, the <code>label</code> will change the input field label, while <code>description</code> will change the mouse-over text.
 
+=== Widget mouseover ===
+<source lang="python">
+# @String(label="Please enter your name", description="Your name") name
+# @OUTPUT String greeting
+
+greeting = "Hello, " + name + "!"
+</source>
+
 === Default values ===
 
 Currently, default values are supported as parameter properties:
@@ -78,5 +90,9 @@ Currently, default values are supported as parameter properties:
 </source>
 
 Eventually, we would like to add support for standard variable assignment syntax (e.g. <code>someInt = 15</code>).
+
+=== Folders ===
+
+By default, a `@File` parameter 
 
 [[Category:Scripting]]
