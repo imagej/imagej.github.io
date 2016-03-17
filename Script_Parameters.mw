@@ -55,25 +55,19 @@ If you look at the [https://github.com/scijava/scijava-common/blob/scijava-commo
 
 === Widget labels ===
 
-For example, instead of just displaying "Name", we can add a custom label and description to the name field of our Greeting.py script as follows:
+For example, instead of just displaying "Name" to the user, we can add a custom label to the field of our <code>Greeting.py</code> script as follows:
 
 <source lang="python">
 # @String(label="Please enter your name") name
 # @OUTPUT String greeting
 
-# Note that documentation comments come AFTER the @Parameters
-
-# A Jython script with parameters.
-# It is the duty of the scripting framework to harvest
-# the 'name' parameter from the user, and then display
-# the 'greeting' output parameter, based on its type.
-
 greeting = "Hello, " + name + "!"
 </source>
 
-It is up to the current UI framework how to deal with these properties. By default, the <code>label</code> will change the input field label, while <code>description</code> will change the mouse-over text.
-
 === Widget mouseover ===
+
+We can add a <code>description</code> property to provide mouse-over text for our field:
+
 <source lang="python">
 # @String(label="Please enter your name", description="Your name") name
 # @OUTPUT String greeting
@@ -83,16 +77,28 @@ greeting = "Hello, " + name + "!"
 
 === Default values ===
 
-Currently, default values are supported as parameter properties:
+Default values are also supported as parameter properties:
 
 <source lang="python">
 # @Integer(label="An integer!",value=15) someInt
 </source>
 
-Eventually, we would like to add support for standard variable assignment syntax (e.g. <code>someInt = 15</code>).
+=== Files and Folders ===
 
-=== Folders ===
+By default, a `@File` parameter will create a chooser for a single file:
 
-By default, a `@File` parameter 
+<source lang="python">
+# @File(label="Select a file") myFile
+
+print(myFile)
+</source>
+
+If you want to select a directory instead, use a <code>style</code> property:
+
+<source lang="python">
+# @File(label="Select a directory", style="directory") myDir
+
+print(myDir)
+</source>
 
 [[Category:Scripting]]
