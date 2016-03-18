@@ -52,7 +52,10 @@ Now update Eclipse's JRE to be JDK-aware:
 
 == Clone the source code ==
 
-* Using your [http://git-scm.com/downloads/guis Git client of choice], clone the [[source code]] which interests you.
+Using your [http://git-scm.com/downloads/guis Git client of choice], clone the source code which interests you:
+
+* If you want to work on an existing project, see the [[source code|list of sources]].
+* If you are creating your own project, see the [[building a pom]] guide.
 
 == Import the source code ==
 
