@@ -28,26 +28,21 @@ For example, if we look at the [https://github.com/scijava/scripting-jython/blob
 greeting = "Hello, " + name + "!"
 </source>
 
-We see that an input parameter <code>name</code> of type <code>String</code> is declared. This will automatically be harvested via a pop-up dialog when the script is run.
+We see that an input parameter <code>name</code> of type <code>String</code> is declared. <code>@arameters</code> are handled automatically by the framework; if we run this script when the User Interface is available (e.g. from the script editor), the <code>name</code> parameter will automatically be harvested via a pop-up dialog:
 
-When the script is completed, we expect to have a <code>String</code> variable named <code>greeting</code> which will be displayed as appropriate, based on the variable type.
 
-Note that if we added an extra comment to the top of our script we would break the script, as the parameters would not be harvested or displayed due to violation of the second parameter rule: 
+[[File:ScriptParams.png|450px]]
 
-<source lang="python">
-# A simple python script
+
+We could also run this script [[Headless#Running_scripts_in_headless_mode|headlessly]], thanks to the general nature of <code>@parameters</code>.
+
+When the script is completed, any <code>@OUTPUT</code> variables are handled by the framework, based on their type. In this case we expect the <code>greeting</code> variable to be printed, since it is a <code>string</code>.
+
+
+{{Warning | Note that if we added an extra comment to the top of our script we would break the script, as the parameters would not be harvested or displayed due to violation of the second parameter rule: <source lang="python">
+# Because of this comment, the following parameters will NOT be recognized
 # @String name
-# @OUTPUT String greeting
-
-# A Jython script with parameters.
-# It is the duty of the scripting framework to harvest
-# the 'name' parameter from the user, and then display
-# the 'greeting' output parameter, based on its type.
-
-greeting = "Hello, " + name + "!"
-</source>
-
-Keep this in mind when adding documentation to your scripts.
+# @OUTPUT String greeting</source>}}
 
 == Parameter properties ==
 
