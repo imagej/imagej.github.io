@@ -60,9 +60,11 @@ Script parameters can set these properties, following these guidelines:
 <li>Properties are set by a [https://docs.oracle.com/javase/tutorial/java/annotations/basics.html comma-separated list of '''key=value''' pairs]</li>
 </ol>
 
+Properties are your way to give hints to the framework how a given parameter should be handled.
+
 === Widget labels ===
 
-For example, instead of just displaying "Name" to the user, we can add a custom label to the field of our <code>Greeting.py</code> script as follows:
+Widgets are the User Interface elements shown to users to collect input information. For example, instead of just displaying "Name" to the user, we can add a custom label to the field of our <code>Greeting.py</code> script as follows:
 
 <source lang="python">
 # @String(label="Please enter your name") name
