@@ -55,7 +55,7 @@ Script parameters can set these properties, following these guidelines:
 <li>Properties are set by a [https://docs.oracle.com/javase/tutorial/java/annotations/basics.html comma-separated list of '''key=value''' pairs]</li>
 </ol>
 
-Properties are your way to give hints to the framework how a given parameter should be handled.
+Properties are your way to customize how an <code>@parameter</code> should be handled by the framework.
 
 === Widget labels ===
 
