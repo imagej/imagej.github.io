@@ -23,5 +23,9 @@ Run the Iterative Deconvolve 3D plugin, then select the image and PSF. Start wit
 
 [[File:iterative_deconvolve_window.png|411x272px]]
 
+== An interactive convolution/deconvolution demo in ImageJ ==
+
+For an educational interactive imageJ macro demo of convolution, inverse filtering and iterative deconvolution, see this [https://github.com/chalkie666/imagejMacros/blob/master/exponentialChirpImag.ijm deconvolution demo macro script] 
+
 [[Category:Cookbook]]
 [[Category:Tutorials]]
