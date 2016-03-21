@@ -169,12 +169,38 @@ Some functions are specific for the processing of label images, in which the pix
 [[Image:MorphoLibJ-grains-labels-assign-measure.png|thumb|480px|center|MoprphoLibJ: assign result of a measurement to a label image. In this example, the elongation is represented using a color code, between dark purple (circular) to yellow (very elongated).]]
 
 == Library interoperability ==
+A key design concept of MorphoLibJ was the modularity of the implementation to facilitate its reusability.
+Three layers with different programming technicity can be identified:
+* For final users, plugins provide graphical display and intuitive tuning of parameters. Such plugins can easily be incorporated into a macro:
+<source lang="java">
+// Calls the Regional Min/Max plugin on current ImagePlus instance
+run("Regional Min & Max", "operation=[Regional Maxima] connectivity=4");
+</source>
+* For plugin developers, operators are available through collections of static methods, making it possible to apply most operations with a single line of code. Example:
+<source lang="java">
+// Computes regional maxima using the 4-connectivity
+ImageProcessor maxima = MinimaAndMaxima.regionalMaxima(image, 4);
+</source>
+* For core developers, algorithms are implementations of abstract interfaces, making it possible to choose or develop the most appropriate one, and to monitor execution events. For example:
+<source lang="java">
+// choose and setup the appropriate algorithm
+RegionalExtremaAlgo algo = new RegionalExtremaByFlooding();
+algo.setExtremaType(ExtremaType.MAXIMA);
+algo.setConnectivity(4);
+// add algorithm monitoring
+algo.addAlgoListener(new DefaultAlgoListener());
+// compute result on a given ImageProcessor
+ImageProcessor result = algo.applyTo(image);
+</source>
 
-In total, the library provides nearly two hundred classes and interfaces and the exhaustive code documentation includes use-case examples.
+In total, the library provides nearly two hundred classes and interfaces.
 
+===Library organization===
 The library follows a logic structure of folders divided by topics aiming at their re-usability from other plugins or scripts, among others:
+* <code>inra.ijpb.data</code> contains generic data structures for manipulating 2D or 3D images
 * <code>inra.ijpb.binary</code> contains the set of utilities for working on binary images (connected component labeling, distance transform, geodesic distance transform...)
 * <code>inra.ijpb.label</code> contains the utilities for label images (cropping, size opening, remove border labels, etc)
+* <code>inra.ijpb.measure</code> contains the tools for geometric and grey level characterization of 2D or 3D images
 * <code>inra.ijpb.morphology</code> contains the collection of mathematical morphology operators
 * <code>inra.ijpb.watershed</code> contains the classes implementing the different versions of the watershed algorithm
 * <code>inra.ijpb.plugins</code> contains the set of plugins that is accessible from ImageJ/Fiji Plugins menu
