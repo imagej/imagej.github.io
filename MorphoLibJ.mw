@@ -14,9 +14,9 @@ Collection of [https://en.wikipedia.org/wiki/Mathematical_morphology mathematica
 
 The library implements several functionalities that were missing in ImageJ, and that were not or only partially covered by other plugins. Namely:
 
-* '''Morphological filtering''': erosion & dilation, closing & opening, morphological gradient & Laplacian, top-hat...
+* '''Morphological filtering''' for 2D/3D and binary or grey level images: erosion & dilation, closing & opening, morphological gradient & Laplacian, top-hat...
 
-* '''Morphological reconstruction''', allowing fast detection of regional or extended extrema, removing of borders, or hole filling
+* '''Morphological reconstruction''', for 2D/3D and binary or grey level images, allowing fast detection of regional or extended extrema, removing of borders, or hole filling
 
 * '''Watershed segmentation''' + GUI, making it possible to segment 2D/3D images of cell tissues
 
