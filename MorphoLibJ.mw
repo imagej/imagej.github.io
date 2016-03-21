@@ -7,7 +7,7 @@
 | released               = July 3<sup>rd</sup>, 2014
 | latest version         = January 12<sup>th</sup>, 2016 ([[MorphoLibJ]] v1.1.1)
 | status                 = stable, active
-| category               = [[:Category:Segmentation|Segmentation]], [[:Category:Mathematical_morphology|Mathematical morphology]]
+| category               = [[:Category:Analysis|Analysis]], [[:Category:Filtering|Filtering]], [[:Category:Segmentation|Segmentation]], [[:Category:Mathematical_morphology|Mathematical morphology]]
 }}
 Collection of [https://en.wikipedia.org/wiki/Mathematical_morphology mathematical morphology] methods and '''plugins''' for ImageJ, created at [http://www-ijpb.versailles.inra.fr/en/bc/equipes/modelisation-imagerie/ INRA-IJPB Modeling and Digital Imaging lab].
 
@@ -260,5 +260,7 @@ This program is '''free software'''; you can redistribute it and/or modify it un
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details. 
 
+[[Category:Analysis]]
+[[Category:Filtering]]
 [[Category:Segmentation]]
 [[Category:Mathematical_morphology]]
