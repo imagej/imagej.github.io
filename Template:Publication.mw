@@ -1,5 +1,18 @@
 <includeonly>{{#switch: {{{1}}}
 
+| 3D Viewer = {{Citation | last = Schmid | first = B.
+| last2 = Schindelin | first2 = J.
+| last3 = Cardona | first3 = A.
+| last4 = Longair | first4 = M.
+| last5 = Heisenberg | first5 = M.
+| year = 2010
+| journal = BMC Bioinformatics
+| url = http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-274
+| title = A high-level 3D visualization API for Java and ImageJ
+| volume = 11(1)
+| pages = 1
+| pmid = 20492697}} ({{Scholar | cluster=5464881898236181205}}).
+
 | BoneJ = {{Citation | last = Doube | first = M.
 | last2 = Kłosowski | first2 = M. M.
 | last3 = Arganda-Carreras | first3 = I.
