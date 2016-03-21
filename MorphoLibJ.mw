@@ -9,7 +9,6 @@
 | status                 = stable, active
 | category               = [[:Category:Segmentation|Segmentation]], [[:Category:Mathematical_morphology|Mathematical morphology]]
 }}
-
 Collection of [https://en.wikipedia.org/wiki/Mathematical_morphology mathematical morphology] methods and '''plugins''' for ImageJ, created at [http://www-ijpb.versailles.inra.fr/en/bc/equipes/modelisation-imagerie/ INRA-IJPB Modeling and Digital Imaging lab].
 
 The library implements several functionalities that were missing in ImageJ, and that were not or only partially covered by other plugins. Namely:
@@ -47,7 +46,7 @@ The '''white top-hat''' first computes a morphological opening (resulting in rem
 [[Image:MorphoLibJ-grains-gradient-Laplacian-whiteTopHat.png|thumb|center|700px|More examples of composed morphological filters. From left to right: morphological gradient, morphological Laplacian, morphological white top-hat.]]
 
 === Usage ===
-
+[[Image:MorphoLibJ-mosaic-filters.png|right|thumb|550px|MorphoLibJ filter examples: DAPI stained nuclei image and the result of applying different morphological filters with an octagon of radius 5 as structuring element.]]
 A large collection of morphological filters is available in the {{bc | Plugins | MorphoLibJ}} menu. Filters are '''implemented both for 2D and 3D images''', and work for binary as well as grey level images:
 
 * '''erosion''' keeps the minimum value within the neighborhood defined by the structuring element.
