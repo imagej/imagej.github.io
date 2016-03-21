@@ -27,7 +27,7 @@ Rest of parameters:
 Output:
 * Labeled image containing the catchment basins and (optionally) watershed lines (dams).
 
-[[Image:Arabidopsis-nucleus-segmentation.png|thumb|center|740px|Example of marker-controlled watershed segmentation on nucleus of ''Arabidopsis thaliana'' (image courtesy of Javier Arpon, INRA-Versailles)]]
+[[Image:Arabidopsis-nucleus-segmentation.png|thumb|center|740px|Example of marker-controlled watershed segmentation on nucleus of ''Arabidopsis thaliana'' (image courtesy of Kaori Sakai and Javier Arpon, INRA-Versailles)]]
 
 == Installation ==
 
