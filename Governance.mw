@@ -1,8 +1,8 @@
-{{About}}{{Notice | This page describes the ''social'' structure of [[SciJava]] projects.
+{{About}}{{TOC}}{{Notice | This page describes the ''social'' structure of [[SciJava]] projects.
 * For information on the ''technical'' structure, see [[Architecture]].
 * For information on the ''legal'' structure, see [[Licensing]].}}
 
-<div style="float: left; padding-right: 1em">__TOC__</div>The [[ImageJ]] project, and related projects in the [[SciJava]] software ecosystem, are governed as [[open source]] software projects.  Everybody is welcome to [[contribute]] with [[plugins]], patches, [[Bugs|bug reports]], [[tutorials]], [[documentation]], and artwork.
+The [[ImageJ]] project, and related projects in the [[SciJava]] software ecosystem, are governed as [[open source]] software projects.  Everybody is welcome to [[contribute]] with [[plugins]], patches, [[Bugs|bug reports]], [[tutorials]], [[documentation]], and artwork.
 
 That said, every project needs leaders: the ones who participate in ''governance'' of the project, [[wikipedia:Software maintenance|maintaining]] the software and making key decisions.
 {{Clear}}
