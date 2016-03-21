@@ -76,13 +76,26 @@ The following structuring elements can be used for 2D images:
 For 3D images, the same structuring elements can be used (the operation is simply repeated on each slice), as well as a cubic structuring element.
 
 == Morphological reconstruction ==
-[[Image:MorphoLibJ-geodesic-reconstruction.png|thumb|right|750px|Principle of the geodesic reconstruction algorithm. From left to right: original image in gray with marker superimposed in black, and result of conditional dilations with increasing sizes.]]
 The morphological reconstruction is at the basis of many useful algorithms, such as border removing, hole filling, or detection of regional minima or maxima in grey level images.
 === Principle ===
 The principle of geodesic reconstruction is to repeat '''conditional dilations''' or erosions until idempotence. Conditional dilation is the result of a dilation, combined with a mask image using a logical operation. Conditional dilations are repeated until no more modification occur (idempotence condition).
-=== Applications ===
-[[Image:MorphoLibJ-kill-borders-fill-holes.png|thumb|400px|Some applications of geodesic reconstruction. From left to right: original image, result of kill borders, result of fill holes.]]
-By choosing the marker image, several operations may be automatized. For example, computing geodesic reconstruction with image of borders, and combining with original image will remove particles or regions touching the borders. In a similar way, computing geodesic reconstruction by using the border of the complement of the image makes it possible to fill holes that may appear in particles.
+
+The following figure shows several steps of a geodesic reconstruction by dilation on a pair of binary images. The mask image is shown in gray, and the marker image is shown in black on the first image. The reconstructed images at each step are shown in black. The markers propagates within the mask until they fill the chosen regions.
+[[Image:MorphoLibJ-geodesic-reconstruction.png|thumb|center|750px|Principle of the geodesic reconstruction algorithm. From left to right: original image in gray with marker superimposed in black, and result of conditional dilations with increasing sizes.]]
+
+=== Applications to binary images ===
+By choosing the marker image, several operations may be automatized. For example, computing geodesic reconstruction with image of borders, and combining with original image will '''remove particles or regions touching the borders'''. In a similar way, computing geodesic reconstruction by using the border of the complement of the image makes it possible to '''fill holes''' that may appear in particles.
+[[Image:MorphoLibJ-kill-borders-fill-holes.png|thumb|400px|center|Some applications of geodesic reconstruction. From left to right: original image, result of kill borders, result of fill holes.]]
+=== Applications to grey level images ===
+Geodesic reconstructions can be applied to grey level images. By manually choosing binary markers such that they overlay specific structures, and after applying a geodesic reconstruction by dilation, it is possible to obtain a grey level image containing only the chosen structures. The '''border kill''' operation can also be applied on grey level images, making possible to rapidly remove structures touching the image borders.
+[[Image:MorphoLibJ-grains-markers-reconstruction-by-dilation-border-kill.png|thumb|700px|center|Some applications of geodesic reconstruction on grey level images. From left to right: original image with superimposed markers, result of geodesic reconstruction by dilation, result of border kill operation.]]
+=== Regional and extended extrema ===
+'''Regional minima''' are defined as connected regions of elements (pixels or voxels) with the same value, and whose neighboring elements all have values greater than that of the region. Similarly, '''regional maxima''' are regions of connected pixels or voxels with same value, whose neighbors all have smaller value.
+
+One problem arising with regional minima or maxima is that they are very sensitive to noise. It is often more convenient to use so-called extended extrema. The principle is to define a tolerance value for filtering the extrema. For example, '''extended maxima''' are defined as a connected region containing elements such that the difference of the value of each element within the region with the maximal value within the region is lower than the tolerance, and such that the neighbors of the regions all have values smaller than the maximum within the region minus the tolerance. This definition allows the identification of larger extrema, that better takes into account the noise within the image. The '''extended minima''' are defined in a similar way, and are efficiently used as pre-processing step for watershed segmentation.
+
+Both extended maxima and minima are computed using the geodesic reconstruction algorithm. More details can be found in the book of Soille (2003).
+[[Image:MorphoLibJ-grains-regional-and-extended-maxima.png|thumb|700px|center|Regional and extended maxima on a grey-level image. Left: original image. Middle: result of regional maxima. Right: result of extended maxima.]]
 
 === Usage ===
 The following operations are available in the {{bc | Plugins | MorphoLibJ}} menu:
