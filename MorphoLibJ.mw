@@ -152,10 +152,10 @@ Some functions are specific for the processing of binary images, namely:
 
 Algorithms work for both 2D or 3D images. Default connectivity 4 (resp. 6) is used for 2D (resp. 3D) images.
 
-== Utilities for label images ==
-
+=== Utilities for label images ===
 Some functions are specific for the processing of label images, in which the pixel/voxel value is used to identify the particle it belongs to. The value 0 is assumed to correspond to the background. The number of labels that can be represented depends on the image type: 255 for byte images, 65535 for short images...
-[[Image:MorphoLibJ-label-border-remove-largest-opening.png|thumb|400px|Utilities for label images. From left to right: original label image, remove border labels, remove largest region, apply size opening for keeping only regions with at least 1000 pixels.]]
+[[Image:MorphoLibJ-grains-binary-label-remove-border-largest-size-opening.png|thumb|700px|center|MorphoLibJ utilities for label images. From left to right: original label image, remove border labels, remove largest region, apply size opening for keeping only regions with at least 150 pixels.]]
+
 * '''Remove Border Labels''' is similar to "kill borders" function, but operates faster as no morphological reconstruction is required.
 * '''Select Label(s)''' enters a set of labels, and creates a new label image containing only the selected labels.
 * '''Crop Label''' creates a new binary image containing only the label specified by the user. The size of the new image is fitted to the region.
@@ -166,6 +166,7 @@ Some functions are specific for the processing of label images, in which the pix
 * '''Assign Measure To Label''' combines a label image with a results table, and creates a new image for which each pixel/voxel is assigned the measurement value corresponding to the label it belongs to.
 * '''Set Label Map''' allows to choose the color map used to display a label image. In particular, shuffling the color map and/or choosing a specific color for background allows better visualization that only grey levels.
 * '''Label To RGB''' converts a label image to true RGB image. Similar to ImageJ native conversion, but this plugin avoids confusion between background pixels and regions with low labels.
+[[Image:MorphoLibJ-grains-labels-assign-measure.png|thumb|480px|center|MoprphoLibJ: assign result of a measurement to a label image. In this example, the elongation is represented using a color code, between dark purple (circular) to yellow (very elongated).]]
 
 == Library interoperability ==
 
