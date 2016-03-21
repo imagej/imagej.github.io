@@ -126,20 +126,6 @@ Several measurements are provided for '''binary or label''' 2D or 3D images. The
 
 Other measurements are provided for pairs of grayscale and label 2D or 3D images ({{bc | Plugins | MorphoLibJ | Analyze | Measure 3D}}). The plugin calculates the '''mean''', the '''standard deviation''', the '''maximum''' and the '''minimum intensity''' value of each labeled region in the grayscale image. The results are displayed as well in a ResultsTable.
 
-== Installation ==
-
-* In ImageJ, download the [https://github.com/ijpb/MorphoLibJ/releases latest released jar] into the ''plugins'' folder.
-
-* In Fiji, you just need to [[How_to_follow_a_3rd_party_update_site#Add_update_sites | add]] the IJPB-plugins site to your list of update sites:
-
-::: 1) Select {{bc | Help | Update...}} from the Fiji menu to start the updater.
-
-::: 2) Click on ''Manage update sites''. This brings up a dialog where you can activate additional update sites.
-
-::: 3) Activate the IJPB-plugins update site and close the dialog. Now you should see an additional jar file for download.
-
-::: 4) Click ''Apply changes'' and restart Fiji.
-
 ==Binary and label image utilities==
 The MorphoLibJ library provides several utility functions for processing binary and label images.
 === Utilities for binary images ===
@@ -255,6 +241,19 @@ The main source code directory is on GitHub under [http://github.com/ijpb/Morpho
 
 You can browse the [http://ijpb.github.io/MorphoLibJ/javadoc/ javadoc] for more information about its API.
 
+== Installation ==
+
+* In ImageJ, download the [https://github.com/ijpb/MorphoLibJ/releases latest released jar] into the ''plugins'' folder.
+
+* In Fiji, you just need to [[How_to_follow_a_3rd_party_update_site#Add_update_sites | add]] the IJPB-plugins site to your list of update sites:
+
+::: 1) Select {{bc | Help | Update...}} from the Fiji menu to start the updater.
+
+::: 2) Click on ''Manage update sites''. This brings up a dialog where you can activate additional update sites.
+
+::: 3) Activate the IJPB-plugins update site and close the dialog. Now you should see an additional jar file for download.
+
+::: 4) Click ''Apply changes'' and restart Fiji.
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
 
