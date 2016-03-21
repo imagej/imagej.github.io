@@ -76,5 +76,9 @@ Unfortunately, there are quite a large number of possible reasons. Please help u
 
 As with 3D Viewer crashes, there are quite a large number of possible reasons. Please help us by [[Debugging_intro#Debugging_Java3D_issues|debugging the issues]] and [[Contact|contacting us]] with the information. You can also [[Report a Bug|report a bug]], which will provide a lot of addidtional, potentially useful information.
 
+== Publication ==
+* {{Publication | 3D Viewer}}
+
 [[Category:Plugins]]
 [[Category:Visualization]]
+[[Category:Citable]]
