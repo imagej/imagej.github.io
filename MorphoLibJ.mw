@@ -236,6 +236,7 @@ resultImage.show();
 </source>
 
 == Documentation ==
+Each [https://github.com/ijpb/MorphoLibJ/releases released version of MorphoLibJ] comes with a [https://github.com/ijpb/MorphoLibJ/releases/download/v1.1.1/MorphoLibJ-manual-v1.1.1.pdf User Manual in PDF format].
 
 The main source code directory is on GitHub under [http://github.com/ijpb/MorphoLibJ/tree/master/src/main/java/inra/ijpb src/main/java/inra/ijpb].
 
