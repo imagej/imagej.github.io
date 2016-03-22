@@ -12,8 +12,11 @@ Manual Drift Correction plugin allows to correct drift in an image sequence by u
 
 
 ==Usage==
+
 ===Installation===
+
 To get started with the plugin first download it, unzip it and install it (Fiji menu Plugins>Install...). Alternatively you can manually copy the unzipped file in <Fiji folder>/plugins.Once the file is installed, restart Fiji. A new entry will be available in the menu Plugins>Registration>Manual drift correction meaning that the plugin was properly installed.
+
 
 ===Tutorial===
 
@@ -26,6 +29,7 @@ To perform Manual drift correction:
 # If your image is an hyperstack check that the time dimension is properly set in image properties (menu Image>Properties)
 # Set the time slider to the reference image (all other image of the stack will be registered to this one)
 # Click the menu Plugins>Registration>Manual drift correction. The registered stack will open in the Fiji UI.
+
 
 == Plugin characteristics ==
 
@@ -50,6 +54,7 @@ The processing is successively:
 ** A global transformation is created from current image landmarks and the reference image landmarks.
 ** The image is then transformed to the reference image
 * Finally the registered sequence is displaied in Fiji UI.
+
 
 ==Development plan==
 
