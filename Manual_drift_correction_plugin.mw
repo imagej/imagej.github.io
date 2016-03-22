@@ -10,6 +10,11 @@
 ==Goal of the plugin==
 Manual Drift Correction plugin allows to correct drift in an image sequence by using a few landmarks (Rois) gathered in the Roi Manager. The main interest of the plugin is that it avoid tedious annotation of the image by interpolating between key landmarks. Thus rather than providing input for each image of the sequence, the user only need to provide landmark when significant changes occure.
 
+
+==Usage==
+how to use the plugin
+
+
 == Plugin characteristics ==
 
 The plugin can process stack and hyperstack. In the later case the registration is done along the time dimension. It means that z slices or channel at the same time step in the sequence will be transformed in the same way.
@@ -19,9 +24,6 @@ Landmarks can be inputed with  Point, Line or Polyline Rois. If you use multiple
 The plugin also expects Landmarks to be provided to the Roi Manager in chronological order.
 
 Currently the plugin corrects drift only with 2D translation (but that could be updated in the future to 3D and other kind of global transformation)
-
-==Usage==
-how to use the plugin
 
 
 ==Process description==
@@ -36,6 +38,7 @@ The processing is successively:
 ** A global transformation is created from current image landmarks and the reference image landmarks.
 ** The image is then transformed to the reference image
 * Finally the registered sequence is displaied in Fiji UI.
+
 
 ==Development plan==
 
