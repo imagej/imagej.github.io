@@ -51,7 +51,6 @@ The processing is successively:
 ** The image is then transformed to the reference image
 * Finally the registered sequence is displaied in Fiji UI.
 
-
 ==Development plan==
 
 This implementation could be improved. Here are a few feature that could be added:
