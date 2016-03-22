@@ -14,12 +14,12 @@ Manual Drift Correction plugin allows to correct drift in an image sequence by u
 how to use the plugin
 
 
-==Implementation and development plan==
+==Process description==
 
 The plugin is relying on the [http://javadoc.imagej.net/MPI-CBG/ mpicbg library] that is also part of Fiji distribution. This library is used for creating transformation from the landmarks and performing the actual transformation of the image.
 
-The plugin class is written in script style, successively:
-* grabbing the last selected image in Fiji UI, the current time of the sequence (i.e. visible in the viewer is used to define the reference image)
+The processing is successively:
+* Grabbing the last selected image in Fiji UI, the current time of the sequence (i.e. visible in the viewer is used to define the reference image)
 * Collecting landmarks from the ROI manager,
 * Doing a linear interpolation of their 2D positions to create landmark where not provided. At the begining (end) of the sequence if no landmark is provdided and no interpolation can be done the postion of the first (last) provided landmark is used.
 * Then for each slice in the sequence:
@@ -27,8 +27,10 @@ The plugin class is written in script style, successively:
 ** The image is then transformed to the reference image
 * Finally the registered sequence is displaied in Fiji UI.
 
+==Development plan==
+
 This implementation could be improved. Here are a few feature that could be added:
-* Decouple UI and and actual registration pipeline.
+* Decouple UI and and actual registration pipeline. the current version is written in script style mixing UI and processing.
 * Allow to choose the interpolation between landmark.
 * Allow to choose the transformation model (as provided by MPI-CBG library).
 * Output transformations for analysis purpose.
