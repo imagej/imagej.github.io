@@ -1,6 +1,6 @@
 <div style="float: right">__TOC__</div>
 
-Here you can download an "all platforms" version of ImageJ, without a bundled Java or extra extensions.
+Here you can [http://downloads.imagej.net/ImageJ2-20160205.zip download] an "all platforms" version of ImageJ, without a bundled Java or extra extensions.
 <div style="width: 440px">
 {{Box |
 | bgcolor=white
@@ -8,6 +8,7 @@ Here you can download an "all platforms" version of ImageJ, without a bundled Ja
 [[File:Imagej2-download-icon.png | link=http://downloads.imagej.net/ImageJ2-20160205.zip | 192px ]]
 </center>
 }}
+
 </div>
 
 ==Distributions of ImageJ==
