@@ -43,7 +43,7 @@ The plugin also expects Landmarks to be provided to the Roi Manager in chronolog
 Currently the plugin corrects drift only with 2D translation (but that could be updated in the future to 3D and other kind of global transformation)
 
 
-==Process description==
+==Processing description==
 
 The plugin is relying on the [http://javadoc.imagej.net/MPI-CBG/ mpicbg library] that is part of Fiji distribution. This library is used for creating transformation from the landmarks and performing the actual transformation of the image.
 
@@ -55,7 +55,6 @@ The processing is successively:
 ** A global transformation is created from current image landmarks and the reference image landmarks.
 ** The image is then transformed to the reference image
 * Finally the registered sequence is displaied in Fiji UI.
-
 
 ==Development plan==
 
