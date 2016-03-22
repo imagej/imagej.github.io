@@ -40,7 +40,7 @@ Currently the plugin corrects drift only with 2D translation (but that could be 
 
 ==Process description==
 
-The plugin is relying on the [http://javadoc.imagej.net/MPI-CBG/ mpicbg library] that is also part of Fiji distribution. This library is used for creating transformation from the landmarks and performing the actual transformation of the image.
+The plugin is relying on the [http://javadoc.imagej.net/MPI-CBG/ mpicbg library] that is part of Fiji distribution. This library is used for creating transformation from the landmarks and performing the actual transformation of the image.
 
 The processing is successively:
 * Grabbing the last selected image in Fiji UI, the current time of the sequence (i.e. visible in the viewer is used to define the reference image)
