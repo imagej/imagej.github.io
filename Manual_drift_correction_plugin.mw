@@ -6,3 +6,15 @@
 | released               = 22 March 2016
 | category               = [[:Category:Plugins|Plugins]], [[:Category:Registration|Registration]]
 }}
+
+==Goal of the plugin==
+Manual Drift Correction plugin allows to correct drift in an image sequence by using a few landmarks (Rois) gathered in the Roi Manager. The main interest of the plugin is that it avoid tedious annotation of the image by interpolating between key landmarks. Thus rather than providing input for each image of the sequence, the user only need to modify
+
+==Usage==
+how to use the plugin
+
+
+==Implementation and development plan==
+The current plugin is relying on the mpicbg library for creating transformation from landmark and performing the actual transformation of the image. The class in written in script style, successively collecting landmarks, interpolation them, creating transformation for each image in the sequence then displaying the actual result. This implementation could be improved and alsocould greatly be improved. the current pipeline interpreat For 
+
+Here are a few things
