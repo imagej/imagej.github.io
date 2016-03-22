@@ -18,13 +18,14 @@ To get started with the plugin first download it, unzip it and install it (Fiji 
 ===Tutorial===
 
 To perform Manual drift correction:
-- Open Fiji and load the sequence to correct
-- Browsing through the image of the sequence, select some landmarks that will be visible throughout the time sequence.
-- Starting from the first timesteps annotate these landmark position with a ROI (point, line or polyline) and add them to the Roi Manager (this can be done by pressing the "t" on your keyboard).
-- Going further in time, repeat the previous step annotating the same landmark in the same order. Reapeat the operation till you covered the whole sequence.
-- If your image is an hyperstack check that the time dimension is properly set in image properties (menu Image>Properties)
-- Set the time slider to the reference image (all other image of the stack will be registered to this one)
-- click the menu Plugins>Registration>Manual drift correction. The registered stack will open in the Fiji UI.
+
+# Open Fiji and load the sequence to correct
+# Browsing through the image of the sequence, select some landmarks that will be visible throughout the time sequence.
+# Starting from the first timesteps annotate these landmark position with a ROI (point, line or polyline) and add them to the Roi Manager (this can be done by pressing the "t" on your keyboard).
+# Going further in time, repeat the previous step annotating the same landmark in the same order. Reapeat the operation till you covered the whole sequence.
+# If your image is an hyperstack check that the time dimension is properly set in image properties (menu Image>Properties)
+# Set the time slider to the reference image (all other image of the stack will be registered to this one)
+# Click the menu Plugins>Registration>Manual drift correction. The registered stack will open in the Fiji UI.
 
 == Plugin characteristics ==
 
