@@ -12,7 +12,6 @@
 ==Goal of the plugin==
 Manual Drift Correction plugin allows to correct drift in an image sequence by using a few landmarks (Rois) gathered in the Roi Manager. The main interest of the plugin is that it avoid tedious annotation of the image by interpolating between key landmarks. Thus rather than providing input for each image of the sequence, the user only need to provide landmark when significant changes occure.
 
-
 ==Usage==
 
 ===Installation===
