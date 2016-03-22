@@ -17,8 +17,7 @@ Manual Drift Correction plugin allows to correct drift in an image sequence by u
 
 ===Installation===
 
-To get started with the plugin first download it, unzip it and install it (Fiji menu Plugins>Install...). Alternatively you can manually copy the unzipped file in <Fiji folder>/plugins.Once the file is installed, restart Fiji. A new entry will be available in the menu Plugins>Registration>Manual drift correction meaning that the plugin was properly installed.
-
+To get started with the plugin first  download it ([[File:Manual Drift Correction-1.0.0.jar.zip]]), unzip it and install it (Fiji menu Plugins>Install...). Alternatively you can manually copy the unzipped file in <Fiji folder>/plugins.Once the file is installed, restart Fiji. A new entry will be available in the menu Plugins>Registration>Manual drift correction meaning that the plugin was properly installed.
 
 ===Tutorial===
 
