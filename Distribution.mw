@@ -115,7 +115,7 @@ If you want to facilitate good science, please [[Open Source|share your source c
 * "Doing it in public" is a great way to '''[http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/ stop sucking and be awesome instead]'''.
 * All of '''[[ImageJ]]''', '''[[Fiji]]''' and related '''[[SciJava]]''' projects are '''[[Source code|hosted on GitHub]]'''.
 | style="background: #dfd; vertical-align: top" |
-* Git has a steep learning curve—the '''[https://windows.github.com/ GitHub for Windows]''' and '''[https://mac.github.com/ GitHub for Mac]''' clients make things easier.
+* Git has a steep learning curve—the '''[https://desktop.github.com/ GitHub Desktop]''' client makes things easier.
 |-
 | colspan="3" style="background: white; border: none; height: 1em" |
 |-
