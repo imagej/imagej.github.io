@@ -58,7 +58,7 @@ The first goal is to get your extension into the hands of users.
 | style="background: #dfd; vertical-align: top" |
 * Make a post on the '''[[Forum|ImageJ forum]]''' to initiate a request.
 | style="background: #dfd; vertical-align: top" |
-* Users '''[[Downloads|install Fiji]]''', or '''[[How to follow a 3rd party update site|enable the Fiji update site]]'''.
+* Users '''[[Fiji/Downloads|install Fiji]]''', or '''[[How to follow a 3rd party update site|enable the Fiji update site]]'''.
 | style="background: #dfd; vertical-align: top" |
 * Your extension is available with Fiji out of the box.
 * A '''[[Governance|Fiji maintainer]]''' will help you to manage your project.
