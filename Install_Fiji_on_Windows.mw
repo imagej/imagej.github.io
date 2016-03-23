@@ -24,7 +24,7 @@ At the end, the extraction wizard will ask you if it should open the directory w
 
 [[Image:Install_Fiji_on_Windows-Start.jpg]]
 
-You can start [[Main_Page|Fiji]] by double-clicking on the ''fiji-win32'' executable (on 64-bit systems, it is ''fiji-win64'').
+You can start [[Main_Page|Fiji]] by double-clicking on the ''ImageJ-win32'' executable (on 64-bit systems, it is ''ImageJ-win64'').
 
 Next time you want to start Fiji, just open the ''Fiji.app'' directory on your desktop and double-click on the executable.  To make things easier, you might want to create a shortcut to that executable and put it on the Desktop, into the Start menu, or into the QuickLaunch bar.
 
