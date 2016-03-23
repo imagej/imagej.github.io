@@ -68,7 +68,36 @@ A format called JPEG2000 supported by various slide scanners and used in "virtua
 
 Once an image has been saved as compressed JPEG there is no way of reverting to the original, therefore an old JPEG-compressed image saved again as TIFF or PNG still contains all the original JPEG compression artifacts.
 
+Below is an ImageJ macro which demonstrates the issue. It requires the [[Glasbey]] LUT, part of the [[Fiji]] distribution of ImageJ.
 
+<source lang="javascript">
+// load Boats
+run("Boats (356K)");
+run("Out [-]");
+rename("Original");
+
+// convert to JPEG
+run("Duplicate...", " ");
+run("Out [-]");
+run("Save As JPEG... [j]", "jpeg=85");
+run("Revert");
+rename("JPEG");
+
+// compute the difference
+imageCalculator("Subtract create 32-bit", "Original","JPEG");
+run("Out [-]");
+rename("Difference");
+
+// display windows side by side
+run("Tile");
+
+// highlight artifacts using Glasbey LUT
+selectWindow("Original");
+run("glasbey");
+selectWindow("JPEG");
+run("glasbey");
+selectWindow("Difference");
+</source>
 
 == Considerations during image segmentation (binarization) ==
 
