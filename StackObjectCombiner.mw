@@ -1,4 +1,3 @@
-
 == Stack Object Combiner ==
 Because of the cubic cost of the 3D segmentation (in memory and processing) with [http://ilastik.org/ Ilastik], it is not possible to work on full stacks of EM images in once.<br/>
 To be fully segmented, the stack need to be cut in parts. But this operation will cut some objects in 2 or more parts, and the objects will lost the coordinate system of the original stack.<br/>
@@ -36,6 +35,24 @@ During this example, you can look at the different step with the [http://fiji.sc
 <li>Look at the result</li>
 </ol>
 
+== Reference ==
+
+This plugin haven't been published yet, but if you want to cite you can always refer to it as 
+T. Boissonnet,"Stack Object Combiner plugin for ImageJ", http://imagej.net/StackObjectCombiner, October 2015
+
+== Contact ==
+
+For any suggestions, questions, problems or just to give feedback, please feel free to contact Tom Boissonnet at tom.boissonnet@hotmail.fr 
+
+== Licence ==
+
+This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+== Futur improvements ==
+
+The plugin is still in development. We intend to improve the plugin by adding an automatic pairing of borders. Any suggestion is welcome.
 
 == Errors ==
 
