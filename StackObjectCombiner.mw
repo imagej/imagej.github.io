@@ -1,6 +1,6 @@
 
 == Stack Object Combiner ==
-Because of the exponential cost of the 3D segmentation (in memory and processing) with [http://ilastik.org/ Ilastik], it is not possible to work on full stacks of EM images in once.<br/>
+Because of the cubic cost of the 3D segmentation (in memory and processing) with [http://ilastik.org/ Ilastik], it is not possible to work on full stacks of EM images in once.<br/>
 To be fully segmented, the stack need to be cut in parts. But this operation will cut some objects in 2 or more parts, and the objects will lost the coordinate system of the original stack.<br/>
 The purpose of this plugin is to replace the objects in their original position, and provide a tool that will allow a user to merge 3D objects that have been cut.
 
