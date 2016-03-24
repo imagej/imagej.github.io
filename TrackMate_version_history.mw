@@ -254,3 +254,23 @@ TrackMate version bumped by several increments, prompted by the [[2014-12-10 - I
 == 07/11/2015 - v2.8.1 ==
 
 * Fix a big causing tracks not to be displayed on Windows platforms.
+
+
+
+== 24/03/2016 - v.3.0.1 ==
+
+
+This major version change only reflects recent changes in TrackMate API, partly prompted by the overhaul in progress in the Fiji ecosystem. There is very little new features and bug fixes and this release will be mainly of use for project depending on TrackMate.
+
+Improvements.
+* The semi-auto tracker now detects spots in the currently selected channel, in case of a multi-C image.
+* The thumbnail images in TrackScheme are taken from the currently selected channel as well.
+* There is now a step-wise time browsing ('à la MaMuT'): press 'F' and 'G' to move in time by jumping to frames, spaced by a number set in the Spot edit tool of TrackMate (double-click on the icon in the ImageJ toolbar).
+* TrackMate is now more verbose when doing manual editing.
+
+Fixes.
+* Minor usability fixes.
+
+Changes.
+* The 3D Viewer is working again, at least (as of today) on Windows platforms. On Macs, the time slider does not work and trying to  interact with it will crash Fiji. 
+* Also, to keep the 3D Viewer tidy, it is not kept in sync with the manual edits made on the model. It just shows a snapshot of the model at the time when it was launched. It was not working properly before anyway, so we officially disable this feature.
