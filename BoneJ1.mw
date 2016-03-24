@@ -1,6 +1,7 @@
 {{Infobox
 | name                   = BoneJ
 | software               = ImageJ
+| logo                     = [[File:Bonej-icon.png|96px]]
 | author                 = {{Person|Michaeldoube}}
 | maintainer             = {{Person|Michaeldoube}}
 | source                 = {{GitHub|org=mdoube|repo=BoneJ}}
