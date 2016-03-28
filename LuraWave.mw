@@ -11,7 +11,7 @@ Steps to use:
 * Merge the MBF plugins into your ImageJ 1.x folder
 * Use {{bc | File | Open...}} to convert your .flex files to OME-TIFF using [[Bio-Formats]]
 
-Unfortunately, for legal reasons, we cannot elaborate on the technical details of how the MBF plugins provide this functionality, nor can we legally make this feature available within [[ImageJ2]] or [[Fiji]].
+Unfortunately, for legal reasons, we cannot elaborate on the technical details of how the MBF collection provides this functionality, nor can we legally make this feature available within [[ImageJ2]] or [[Fiji]].
 
 == Purchasing your own license ==
 
