@@ -23,6 +23,8 @@ Move Meshes : The plugin will shift every object in the directory. With the nami
 Merge Meshes : The plugin ask for two objects to merge. The objects in the list are the object containing the line #movedBySOC . Note that only compatible objects can be efficiently merged. The objects don't need symmetrical borders, but if they don't correspond a little, the behaviour of the plugin is unknown.<br/>
 
 == Example ==
+DOCUMENTATION NOT UPDATED TO THE LAST VERSION OF THE PLUGIN. YOU CAN STILL TRY IT WITH THE MESHES PROVIDED, SAME PARAMETERS.
+
 During this example, you can look at the different step with the [http://fiji.sc/3D_Viewer 3DViewer], or with [https://www.blender.org/ Blender].
 <ol>
 <li>Download the meshes of a mitochondria in the shape of a donut divided in 4 parts [[Media:MitoDonut Meshes.zip]]</li>
