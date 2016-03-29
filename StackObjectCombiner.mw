@@ -26,7 +26,7 @@ To use the merge function, select two meshes in the lists proposed (select one a
 - Auto Save/Naming : It will unable the dialog asking for the name of the new mesh, and so create by itself a new unexisting name composed by the name of the two original meshes.
 - Tail lenght : It correspond to the number of vertices removed from the extremities of linear borders. Because of the size of the window (see bellow), these vertices can't be removed simply by looking if they are close to the split or not.
 - Window : It is the maximum distance at which a vertex can be considered as close to the border.
-- Pairing : The last step of the merging is a pairing of the border's vertices, and this is done by creating sets of vertices each n vertices. This parameter correspond to the number n.<br/>
+- Pairing : The last step of the merging is a pairing of the border's vertices, and this is done by creating sets of vertices each n vertices. This parameter correspond to the number n.<br/><br/><br/>
 
 The plugin have been tested on a small number of meshes, and so far it works well on the differents shapes we merged. If you have troubles while merging your objects, do not hesitate to contact me. Your feedback can help me improve the plugin, and so allow you then to merge your meshes.
 
