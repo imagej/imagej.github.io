@@ -68,7 +68,7 @@ System.setProperty("scijava.log.level:org.scijava.plugin", "debug");
 
 If you prefer environment variables, setting the <code>DEBUG</code> environment variable will cause SciJava logging to default to '''<code>DEBUG</code>''' level instead of the usual '''<code>WARN</code>'''.
 
-== Using SciJava's LogService from your code ==
+== Using the LogService from your code ==
 
 The <code>LogService</code> is accessible from a SciJava plugin in the same way as any other [[Services|service]]: as a field annotated with <code>@Parameter</code>. See the [[Writing plugins]] guide for details.
 
