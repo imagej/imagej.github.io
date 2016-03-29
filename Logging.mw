@@ -47,9 +47,7 @@ The [[Fiji]] distribution of ImageJ is a more complicated beast, because it ship
 
 However, ultimately, the Fiji distribution needs to ship one, and ''only'' one, SLF4J binding; otherwise, SLF4J-based logging does not function properly. As of this writing, Fiji ships the [http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22logback-classic%22 logback-classic] binding, meaning that SLF4J-based logging can be [http://logback.qos.ch/manual/configuration.html configured in all the usual Logback ways]. Fiji ships a default Logback configuration in the [http://maven.imagej.net/index.html#nexus-search;gav~org.scijava~scijava-config scijava-config] library, which sends <code>INFO</code> level events to stdout, and more serious levels (<code>WARN</code>, <code>ERROR</code> and <code>FATAL</code>) to stderr. If you want to override the configuration, you will need to delete or modify that JAR file, replacing the <code>logback.xml</code> with one of your own design. The reason <code>logback-classic</code> was chosen is because the [[Bio-Formats]] project explicitly depends on it; rather than work around that, Fiji goes with the flow and converges on the same dependency.
 
-== Tell me more about SciJava logging! ==
-
-I know right! Fascinating stuff.
+== Controlling the logging level ==
 
 If you are using the standard SciJava <code>LogService</code> implementation, you can control the logging level via the <code>scijava.log.level</code> system property.
 
@@ -69,5 +67,9 @@ System.setProperty("scijava.log.level:org.scijava.plugin", "debug");
 </source>
 
 If you prefer environment variables, setting the <code>DEBUG</code> environment variable will cause SciJava logging to default to '''<code>DEBUG</code>''' level instead of the usual '''<code>WARN</code>'''.
+
+== Using SciJava's LogService from your code ==
+
+The <code>LogService</code> is accessible from a SciJava plugin in the same way as any other [[Services|service]]: as a field annotated with <code>@Parameter</code>. See the [[Writing plugins]] guide for details.
 
 [[Category:Development]]
