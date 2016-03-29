@@ -12,15 +12,23 @@ Because the coordinates system of the original stack have been lost, the plugin 
 
 [[File:decoupage.png]]
 
-The image show how the stacks parts are name. The object coming from a given part should be prefixed by the letter of the sub-stack (e.g. A_axon, C_dendrite, ...)
+The image show how the stacks parts are named. The object coming from a given part should be prefixed by the letter of the sub-stack (e.g. A_axon, C_dendrite, ...)<br/>
 
-The plugin ask first for a directory. This directory should contain all the objects you want to work with.<br/>
+The plugin have now only one window, where every functions are presented.<br/>
 
-Then the plugin will ask for the position of the vertical and/or the horizontal split. The vertical correspond to the limit between the AB part and the CD part. The horizontal correspond to the limit between the AC part and the BD part. You can have these value by looking at the dimension of the A_stack. Vertical split correspond to the x dimension, and horizontal to the y dimension.<br/><br/><br/>
+First you have to give the directory where your meshes are stored. The plugin will then read the current directory to find meshes, with names corresponding to the prefixes mentioned above. All the recognized meshes will be added to 4 different lists, corresponding to their sub-stack.<br/><br/>
 
-The plugin will then propose two functions : <br/><br/>
-Move Meshes : The plugin will shift every object in the directory. With the naming convention, the plugin will add a constant to the vertices of the objects to replace them. Also, the plugin will add a line to the files of the objects : #movedBySOC  This tell to the plugin that the objects have been replaced and don't need it any more. If your object don't need to be replaced, just add this line to your object's file.<br/><br/>
-Merge Meshes : The plugin ask for two objects to merge. The objects in the list are the object containing the line #movedBySOC . Note that only compatible objects can be efficiently merged. The objects don't need symmetrical borders, but if they don't correspond a little, the behaviour of the plugin is unknown.<br/>
+Then, the plugin allow you to shift your meshes, to put them in the original coordinate system of the full-stack. X & Y shift correspond to the size of the A_sub-stack. E.g, if your stack's voxel size is 1x1x1, and the A_sub-stack is 200x100x50, X shift = 200 & Y shift = 100.
+Once the X & Y values are indicated, use the Shift button to shift the meshes. <br/>
+Note that the plugin will add to each readed mesh a line in the file indicating that the mesh have been shifted (#movedBySOC), and allow then the mesh to be merged. If you don't need to shift your meshes, use 0 values for X & Y. Then indicate the actual size of the A_sub-stack because the plugin will use it to merge the meshes.<br/><br/>
+
+To use the merge function, select two meshes in the lists proposed (select one and click on the ">>>" button, or use the "a" shortcut). You can set up here few parameters :
+- Auto Save/Naming : It will unable the dialog asking for the name of the new mesh, and so create by itself a new unexisting name composed by the name of the two original meshes.
+- Tail lenght : It correspond to the number of vertices removed from the extremities of linear borders. Because of the size of the window (see bellow), these vertices can't be removed simply by looking if they are close to the split or not.
+- Window : It is the maximum distance at which a vertex can be considered as close to the border.
+- Pairing : The last step of the merging is a pairing of the border's vertices, and this is done by creating sets of vertices each n vertices. This parameter correspond to the number n.<br/>
+
+The plugin have been tested on a small number of meshes, and so far it works well on the differents shapes we merged. If you have troubles while merging your objects, do not hesitate to contact me. Your feedback can help me improve the plugin, and so allow you then to merge your meshes.
 
 == Example ==
 DOCUMENTATION NOT UPDATED TO THE LAST VERSION OF THE PLUGIN. YOU CAN STILL TRY IT WITH THE MESHES PROVIDED, SAME PARAMETERS.
