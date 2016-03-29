@@ -31,17 +31,15 @@ To use the merge function, select two meshes in the lists proposed (select one a
 The plugin have been tested on a small number of meshes, and so far it works well on the differents shapes we merged. If you have troubles while merging your objects, do not hesitate to contact me. Your feedback can help me improve the plugin, and so allow you then to merge your meshes.
 
 == Example ==
-DOCUMENTATION NOT UPDATED TO THE LAST VERSION OF THE PLUGIN. YOU CAN STILL TRY IT WITH THE MESHES PROVIDED, SAME PARAMETERS.
 
 During this example, you can look at the different step with the [http://fiji.sc/3D_Viewer 3DViewer], or with [https://www.blender.org/ Blender].
 <ol>
 <li>Download the meshes of a mitochondria in the shape of a donut divided in 4 parts [[Media:MitoDonut Meshes.zip]]</li>
 <li>Launch the plugin, and give the directory containing the .obj file</li>
-<li>Vertical Split : 192 &nbsp;&nbsp;&nbsp;Horizontal Split : 214</li>
-<li>Choose the Move Meshes function and wait for the plugin</li>
-<li>Now choose the Merge Meshes function, and merge A_MitoDonut with B_MitoDonut, and name it A_something</li>
-<li>Merge C_MitoDonut with D_MitoDonut, and name it C_something</li>
-<li>Merge now your two new objects A_something with C_something. It is important that the two objects are named with A_ & C_ names (or with B_ & D_ names) because the plugin check if the objects are adjacent, and which split should be used to merge them</li>
+<li>X shift : 192 &nbsp;&nbsp;&nbsp;Y shift : 214</li>
+<li>Click on the Shift button to shift the meshes.</li>
+<li>Now merge the meshes two by two. Select them and use the Merge button.</li>
+<li>Merge then the two resulting meshes. Note that your meshes should start with names that correspond to neighbors sub-stacks (E.g. A_ & C_)</li>
 <li>Look at the result</li>
 </ol>
 
