@@ -59,7 +59,7 @@ public class SpecialService implements Service { }
 
 === Plugin priority ===
 
-When plugins are retrieved from a [[Writing_plugins#The_Context|Context]] it's possible to get more than one match. In these cases, the plugin classes are returned in order of the '''priority''' of the class's [https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/plugin/Plugin.java#L108-L129 @Plugin annotation]. Priorities are simply double values; as a starting point, priority constants can be used from the {{GitHub|org=scijava|repo=scijava-common|tag=scijava-common-2.47.0|source=org/scijava/Priority.java|label=Priority} class.
+When plugins are retrieved from a [[Writing_plugins#The_Context|Context]] it's possible to get more than one match. In these cases, the plugin classes are returned in order of the '''priority''' of the class's [https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/plugin/Plugin.java#L108-L129 @Plugin annotation]. Priorities are simply double values; as a starting point, priority constants can be used from the {{GitHub|org=scijava|repo=scijava-common|tag=scijava-common-2.47.0|source=org/scijava/Priority.java|label=Priority}} class.
 
 For example, given the following plugins:
 
