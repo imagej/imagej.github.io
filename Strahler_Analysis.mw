@@ -97,10 +97,14 @@ Original publications by [[wikipedia:Robert E. Horton|Robert E. Horton]] and [[w
 
 *{{citation|last=Strahler|first=A. N.|year=1957|title=Quantitative analysis of watershed geomorphology|journal=Transactions of the American Geophysical Union|volume=38|issue=6|pages=913–920}}  ([http://www.uvm.edu/~pdodds/files/papers/others/1957/strahler1957a.pdf PDF]).
 
+== Citing ==
 
-[[Skeletonize3D|Skeletonization]] and [[AnalyzeSkeleton|Skeleton Analysis]]:
-* Ignacio Arganda-Carreras, Rodrigo Fernandez-Gonzalez, Arrate Munoz-Barrutia, Carlos Ortiz-De-Solorzano, [http://www3.interscience.wiley.com/journal/123322233/abstract "3D reconstruction of histological sections: Application to mammary gland tissue"], Microscopy Research and Technique, Volume 73, Issue 11, pages 1019–1029, October 2010.
-* Michael Doube, Michal M. Klosowski, Ignacio Arganda-Carreras, Fabrice P. Cordelieres, Robert P. Dougherty, Jonathan S. Jackson, Benjamin Schmid, John R. Hutchinson, Sandra J. Shefelbine, [http://dx.doi.org/10.1016/j.bone.2010.08.023 BoneJ: Free and extensible bone image analysis in ImageJ], Bone, Volume 47, Issue 6, December 2010, Pages 1076-1079.
+;BAR Scripts
+:Tiago Ferreira et al.. (2015). Scripts: BAR 1.1.6. Zenodo. [https://zenodo.org/badge/latestdoi/4622/tferr/Scripts 10.5281/zenodo.28838]
+
+;[[Skeletonize3D|Skeletonization]] and [[AnalyzeSkeleton|Skeleton Analysis]]:
+:Ignacio Arganda-Carreras, Rodrigo Fernandez-Gonzalez, Arrate Munoz-Barrutia, Carlos Ortiz-De-Solorzano, [http://www3.interscience.wiley.com/journal/123322233/abstract "3D reconstruction of histological sections: Application to mammary gland tissue"], Microscopy Research and Technique, Volume 73, Issue 11, pages 1019–1029, October 2010.
+:Michael Doube, Michal M. Klosowski, Ignacio Arganda-Carreras, Fabrice P. Cordelieres, Robert P. Dougherty, Jonathan S. Jackson, Benjamin Schmid, John R. Hutchinson, Sandra J. Shefelbine, [http://dx.doi.org/10.1016/j.bone.2010.08.023 BoneJ: Free and extensible bone image analysis in ImageJ], Bone, Volume 47, Issue 6, December 2010, Pages 1076-1079.
 
 == Acknowledgments ==
 To [http://doube.org/ Michael Doube] and {{Person|Iarganda}}, developers of [[AnalyzeSkeleton]].
