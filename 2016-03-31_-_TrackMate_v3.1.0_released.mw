@@ -5,6 +5,8 @@ This new version ships mainly two improvements:
 
 * Add an action that export all visible spots statistics, regardless of whether they belong in a track or not.
 
+[[File:TrackMate ExportAllSpotsStatistics.png]]
+
 * New display mode: show only selection.
 This track display mode only shows the content of the current selection, for
 spots and edges.  It can be accessed in the GUI panel 'Configure views' with a
