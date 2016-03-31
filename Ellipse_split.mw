@@ -32,7 +32,7 @@ Suppose you have the following input image:
 
 [[File:Ellipsesplit input.png|300px]]
 
-Then the watershed approach would give this result:
+Then the watershed approach (''Process -> Binary -> Watershed'') would give this result:
 
 [[File:Ellipsesplit_watershed.png|300px]]
 
