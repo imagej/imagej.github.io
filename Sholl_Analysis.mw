@@ -182,13 +182,14 @@ Most of the retrieved [[#Metrics_based_on_fitted_data|metrics]] are automaticall
 '''N.B.''' A third [[#Normalizer|normalization option]] is also available when performing [[#StepSize|non-continuous sampling]]: ''Annulus''/''Spherical shell''. In this case, the normalization is performed against the area of the annulus formed between the circumferences at ''r'' ± ''Radius step size''/2 (2D images), or against the volume between the two spheres at ''r'' ± ''Radius step size''/2 (3D images).<br>
 
 == Metrics ==
-Morphometric descriptors and other properties of the arbor are printed to a dedicated table named ''Sholl Results''. Listed values can be displayed in scientific notation and with the precision specified in <span style="border-bottom:1px dotted #ccc;">Analyze▷ Set Measurements...</span> The first columns log analysis parameters: ''Image filename and voxel unit'', ''Lower'' and ''Upper Threshold levels'', ''X,Y'' (in pixels) and ''Z'' (slice number) coordinates of center of analysis, ''Starting'' and ''Ending radius'', ''Radius step'', ''Number of Samples per Radius'', etc. Other parameters are described below.
+Morphometric descriptors and other properties of the arbor are printed to a dedicated table named ''Sholl Results''. Output is fully customizable using {{bc|color=white|Analysis|Sholl|Metrics &amp; Options...}} or using the ''Options...'' command in the ''More»'' drop-down menu. The first columns log analysis parameters: ''Image Directory'' and ''filename'' and ''voxel unit'', ''Lower'' and ''Upper Threshold levels'', ''X,Y'' (in pixels) and ''Z'' (slice number) coordinates of center of analysis, ''Starting'' and ''Ending radius'', ''Radius step'', ''Number of Samples per Radius'', etc. Other parameters are described below.
 
 [[File:BitmapSholl-Table.png|100%|center|Descriptors and metrics are listed in the Sholl Table (v2.4)]]
 
 === Metrics based on sampled data ===
 ;Intersecting radii
 :The number of sampling radii intersecting the arbor at least once.
+[[ File:ShollOptionsPrompt.png|350px|right |Metrics &amp; Options prompt (version 3.6.0)]]
 
 ;Sum of intersections (''Sum inters.'')<span id="Sum"></span>
 :The sum of all intersections.
