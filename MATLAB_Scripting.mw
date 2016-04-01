@@ -50,6 +50,8 @@ This script will take the active Dataset, set it as an array variable named "dat
 
 == Running ImageJ within MATLAB ==
 
+{{Notice | If you need to run ImageJ with Java 8 (for example, if the [http://imagej.net/List_of_update_sites Java-8 update site] is enabled) then you need to ensure update MATLAB to [http://www.mathworks.com/matlabcentral/answers/130359-how-do-i-change-the-java-virtual-machine-jvm-that-matlab-is-using-on-windows run with Java 8] as well}}
+
 The ImageJ update site provides an <code>ImageJ.m</code> script that will start up an ImageJ instance inside a running [[MATLAB]] application. Launching the script is the same as for [[Miji]]:
 
 <source lang="matlab">
