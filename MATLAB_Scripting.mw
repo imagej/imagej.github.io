@@ -99,6 +99,19 @@ The startup process automatically injects the ImageJ classpath into the [[MATLAB
 
 Additionally, the {{GitHub|org=scijava|repo=scripting-matlab|label=Scripting-MATLAB}} library also includes an extensible [[MATLAB]] command framework. This allows for the creation of utility classes that will be automatically populated into [[MATLAB]] variables for easy access. For example, you could use ImageJ to open a dataset and perform thresholding (or any other processing steps), then in [[MATLAB]] use the <code>IJM.importDataset</code> command to set the active dataset as a [[MATLAB]] matrix variable, for further analysis.
 
+For example, instead of using a script as [[#Creating MATLAB scripts inside ImageJ|described above]], we could achieve the same result by executing the following commands in the MATLAB prompt:
+
+<source lang="matlab">
+IJM.getDatasetAs('data') % import the image as a MATLAB matrix
+rval = uint8(data); % convert to uint8
+rval = mat2gray(rval); % normalize data
+mask = im2bw(rval,0.5); % make logical mask
+se = strel('square',3); % create structure to use in dilation
+mask = imdilate(mask,se); % perform dilation on the mask
+rval(~mask) = 0; % subtract mask from original dataset
+IJM.show('rval') % display the rval array in ImageJ
+IJM.show('mask') % display the mask array in ImageJ
+</source>
 
 [[Category:Scripting]]
 [[Category:MATLAB]]
