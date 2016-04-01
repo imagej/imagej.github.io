@@ -36,7 +36,7 @@ The major advantages of this plugin over other implementations are:
 
 == Installation ==
 === Fiji Users ===
-If you using Fiji, you already have the plugin installed under {{bc|color=white|Analysis|Sholl|&nbsp;}}. However, as part of an active effort to [[2015-12-22_-_The_road_to_Java_8|modernize ImageJ]] (see also this [[2015-06-15_-_Major_updates_in_the_works|announcement]]),  you need to [[How_to_follow_a_3rd_party_update_site#Add_update_sites | subscribe]] to the Java 8 update site to make the updater aware of the newer plugin versions (this will also allow you to access the newest [[2015-12-22_-_The_road_to_Java_8#Components_which_have_already_migrated|ImageJ capabilities]]). To do so, you can either:
+If you using Fiji, you already have the plugin installed under {{bc|color=white|Analysis|Sholl|&nbsp;}}. However, as part of an active effort to [[2015-12-22_-_The_road_to_Java_8|modernize ImageJ]] (see also this [[2015-06-15_-_Major_updates_in_the_works|announcement]]), '''you need to [[How_to_follow_a_3rd_party_update_site#Add_update_sites | subscribe]] to the Java 8 update site to access the latest plugin version''' (this will also allow you to access the newest [[2015-12-22_-_The_road_to_Java_8#Components_which_have_already_migrated|ImageJ capabilities]]). To do so, you can either:
 * [[Downloads|Download the latest Fiji release]]. Newer releases come pre-bundled with Java 8, and are already subscribed to the [[User:Java-8|Java-8 update site]].
 * If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [[Troubleshooting#Checking_the_Java_version|Fiji installation aware of it]]. Then subscribe to the [[User:Java-8|Java-8 update site]].
 
@@ -52,8 +52,8 @@ The plugin requires a binary image or a segmented grayscale image (2D or 3D) con
 
 # Segment the neuronal arbor using <span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span> (shortcut: <span style="display:inline-block;">{{key press|Shift|T}} </span>).
 # Define the center of analysis using a valid [[#Startup_ROI|startup ROI]].
-# Run <span style="border-bottom:1px dotted #ccc;">Analyze▷ Sholl Analysis...</span>, adjusting the default [[#Parameters|Parameters]] in the dialog prompt.
-# Press [[#Cf._Segmentation|Cf. Segmentation]] to visually inspect the two thresholded phases: ''arbor'' and ''background''.
+# Run {{bc|color=white|Analysis|Sholl|Sholl Analysis...}}, adjusting the default [[#Parameters|Parameters]] in the dialog prompt.
+# Press ''More>>'' [[#Cf._Segmentation|Cf. Segmentation]] to visually inspect the two thresholded phases: ''arbor'' and ''background''.
 # Problems? Read the  [[#FAQ|FAQs]].
 
 {{Tip
@@ -274,7 +274,7 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 
 <span id="Importing"></span>
 == Importing Tabular Data ==
-[[ File:BitmapSholl-TabularPrompt.png|320px|right |Tabular prompt (version 3.4.3)]]'''This feature is triggered by holding {{key press|Alt}} while running  <span style="border-bottom:1px dotted #ccc;">Analyze▷ Sholl Analysis...</span>''', which basically instructs the program to read data from the ImageJ Results table rather than the active image. This change in input data offers two main advantages:
+[[ File:BitmapSholl-TabularPrompt.png|320px|right |Tabular prompt (version 3.4.3)]]This feature is processed by {{bc|color=white|Analysis|Sholl|Sholl Analysis (Tabular Data)...}}. This commands offers two main advantages:
 *It can be used to analyze profiles obtained from traced cells in [[Simple Neurite Tracer]] (SNT), Fiji's remarkable framework for semi-automated reconstruction of neuronal arbors. This is particularly relevant for stainings that do not allow single-cell resolution.
 *It can be used to re-analyze bitmap data (replot, modify fitting options, etc.) without having to re-sample the initial image.
 
@@ -474,7 +474,7 @@ Note that the IJM built-in [http://imagej.nih.gov/ij/developer/macro/functions.h
 :Opens a sample image of a Drosophila class IV ddaC sensory neuron in which dendrites have been previously segmented (2D arbor). Use it to get acquainted with the plugin. Run <span style="border-bottom:1px dotted #ccc;">Image▷ Show Info...</span> (shortcut: {{key press|I}} ) to know more about this cell type.
 
 ;Help▷ About Plugins▷ About Sholl Analysis...
-:Retrieves information about the plugin version and a link to its Git source code {{GitHub|org=tferr|repo=ASA|label=repository}}  and its  [http://tferr.github.io/ASA/apidocs/ API documentation] (since v3.4.6).
+:Retrieves information about the plugin version and a link to its Git source code {{GitHub|org=tferr|repo=ASA|label=repository}}  and its  [http://tferr.github.io/ASA/apidocs/ API documentation] (since v3.4.6). It is also accessible through the ''More..'' dropdown menu.
 
 == FAQ ==
 '''General'''
