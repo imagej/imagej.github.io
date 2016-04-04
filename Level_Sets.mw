@@ -18,7 +18,7 @@
 
 === Introduction === 
 
-Level Sets are an important category of modern image segmentation techniques are based on partial differential equations (PDE), i.e. progressive evaluation of the differences among neighboring pixels to find object boundaries. Ideally, the algorithm will converge at the boundary of the object where the differences are the highest. 
+Level Sets are an important category of modern image segmentation techniques based on partial differential equations (PDE), i.e. progressive evaluation of the differences among neighboring pixels to find object boundaries. Ideally, the algorithm will converge at the boundary of the object where the differences are the highest. 
 
 The Fiji plugin provides two PDE based methods, the more basic fast marching and the advanced active contour algorithm.
 
@@ -26,8 +26,7 @@ Fast marching works similar to a standard flood fill but is more sensitive in th
 
 Level sets advance a contour like a rubber band until the contour hits an object boundary. The rubber band like nature (= curvature) prevents the contour from leaking if there are gaps in the boundary. The strength of the rubber band and a gray level difference can be pre-selected.  
 
-The speedy fast marching can be used as input for the slower active contours. If the image is very large, starting with Fast Marching and using the contour from the fast marching to refine the object with Level Sets can significantly speed up the object detection.  
-
+The speedy fast marching can be used as input for the slower active contours. If the image is very large, starting with Fast Marching and using the contour from the fast marching to refine the object with Level Sets can significantly speed up the object detection.
 
 === Algorithmic details ===
 
