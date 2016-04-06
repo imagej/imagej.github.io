@@ -4,7 +4,7 @@
 | author                = {{Person|Pietzsch}}
 | maintainer            = {{Person|Pietzsch}}
 | source                = {{GitHub|org=bigdataviewer|repo=bigdataviewer_fiji}}
-| latest version        = 1.0.9
+| latest version        = 2.1.0
 | status                = stable
 | category              = [[:Category:Plugins|Plugins]], [[:Category:Visualization|Visualization]], [[:Category:Transform|Transform]]
 }}
@@ -186,7 +186,7 @@ Therefore, sources can be organized into ''groups''.
 All sources of a ''group'' can be activated or deactivated at once.
 
 Source grouping is handled in the visibility and grouping dialog, too
-(menu {{bc | Settings | Visibility & Grouping}} or shortcut {{key|F6}}).
+(menu {{bc | Settings | Visibility & Grouping}} or shortcut {{key press|F6}}).
 
 [[Image:bdv-grouping.png|500px]]
 
@@ -501,7 +501,7 @@ In principle, BigDataViewer is able to display a TIFF dataset as is.
 However, for quick navigation this is not the ideal format:
 When navigating to a new timepoint, BigDataViewer needs to load all TIFF files of that timepoint into memory, suffering a delay of tens of seconcds.
 Therefore, it is beneficial to convert the TIFF dataset to HDF5.
-Note, that this can be one at any point of the processing pipeline (i.e., before registration, after registration, after multiview fusion or deconvolution, etc)
+Note, that this can be done at any point of the processing pipeline (i.e., before registration, after registration, after multiview fusion or deconvolution, etc)
 because the "Multiview reconstruction" plugins can operate on HDF5 datasets as well.
 
 We assume that the user has already created an XML/TIFF dataset, as explained in [[Multiview-Reconstruction]].
