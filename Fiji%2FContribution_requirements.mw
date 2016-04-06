@@ -53,6 +53,11 @@ Projects that reside outside the [https://github.com/fiji fiji organization] are
 
 To verify that the Fiji components build without problems, and that all regression tests pass, every Fiji project's source code repository is connected to a job of ImageJ's [[Jenkins]] server that builds and tests the source code whenever a new revision is made available. Typically, this job also deploys the [[#Maven artifacts|Maven artifacts]].
 
+To enable a Jenkins link with your repository:
+
+# Configure your repository to add a [https://developer.github.com/webhooks/creating/ webhook] for the [https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin Jenkins (Git plugin)]
+# Set the <code>Jenkins URL</code> field to: <code><nowiki>http://jenkins.imagej.net/</nowiki></code>
+
 == Versioning and dependency convergence ==
 
 Most Fiji projects use the [[Versioning|SemVer versioning scheme]]: a standard to encourage API consistency without obstructing API improvements.
