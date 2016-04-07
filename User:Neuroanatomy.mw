@@ -1,0 +1,16 @@
+This account is used to manage the [http://sites.imagej.net/Neuroanatomy/ Neuroanatomy update site],  distributing hIPNAT (''Image Processing for NeuroAnatomy and Tree-like Structures'') plugins.
+
+====== To subscribe to Neuroanatomy update site ======
+# Run [[Update_Sites|{{bc|Help|Update...}}]]
+# Click ''Manage update sites''
+# Select the ''Neuroanatomy'' checkbox
+# Click ''Apply changes'' and Restart ImageJ.
+:(See also [[List of update sites]])
+
+====== List of plugins ======
+The Neuroanatomy toolbox (released in 2016) includes the following documented plugins:
+* [[Strahler Analysis]], {{bc|Analyze|Skeleton|Strahler Analysis...}}
+
+====== Further information ======
+* The Neuroanatomy toolbox is maintained by [[User:Tiago|Tiago Ferreira]]
+* The source code is available on [https://github.com/tferr/hIPNAT/ GitHub]
