@@ -44,6 +44,7 @@ The following criteria apply to projects hosted in the [https://github.com/fiji 
 * The project uses [[Issues|GitHub Issues]] for issue tracking.
 * The project has a dedicated page here on the ImageJ wiki.
 * The [[Governance|Fiji maintainers]] may make commits and [[Releases|release new versions]] of the component as needed, so that Fiji as a whole continues to work as intended.
+* The <code>master</code> branch is considered ''release ready'' at all times, meaning it compiles with passing tests, and is ready for downstream consumption.
 
 === External projects ===
 
