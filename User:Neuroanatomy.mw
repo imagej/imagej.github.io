@@ -10,6 +10,7 @@ This account is used to manage the [http://sites.imagej.net/Neuroanatomy/ Neuroa
 ====== List of plugins ======
 The Neuroanatomy toolbox (released in 2016) includes the following documented plugins:
 * [[Strahler Analysis]], {{bc|Analyze|Skeleton|Strahler Analysis...}}
+* Summarize Skeleton, {{bc|Analyze|Skeleton|Summarize Skeleton}}
 
 ====== Further information ======
 * The Neuroanatomy toolbox is maintained by [[User:Tiago|Tiago Ferreira]]
