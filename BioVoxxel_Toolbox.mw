@@ -421,19 +421,9 @@ Future: Suggestions are welcome!
 
 =Skeleton Length (corrected)=
 
-Purpose: This macro determines the length of particles along their ultimate eroded skeleton, applying the "Skeletonize" function on binary particles. Since the skeleton is shorter than the actual particle it belongs to, a correction is needed to get the complete particle length.
+Status: deprecated due to incorrect calculation
 
-How to: Start with an image holding the binary particles and run the macro. Exclude particled as desired as for the normal "Analyze Particles".
-
-Method: The correction of the skeleton length is achieved by adding the intensity values (raw integrated density) of the particles distance map at the position of the 2 endpoints of each skeleton. This gives a fairly good estimated correction.
-
-Limit: The obvious limit of the method is that a branched skeleton leads to the determination of the corrected length of all branches. This can be an advantage if this measure is desired but corrupt analyses where a sinlge length measurement is desired.
-
-Form: macro
-
-Status: maintenance active
-
-Future: Suggestions are welcome!
+Please rather use the [http://imagej.net/AnalyzeSkeleton Analyze Skeleton 2D/3D] which is shipped with Fiji
 
 ----
 
