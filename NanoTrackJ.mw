@@ -86,7 +86,6 @@ For the purpose of testing, you can download some sample video files.
 
 NanoTrackJ settings which works well for this video:
 
-
  Parameter                            Value
  -------------------------------------------------
  Center estimator                     Maxima
@@ -122,7 +121,6 @@ NanoTrackJ settings which works well for this video:
  Walker's method min size             800 nm
  Mean size (Maxima Dialog)            4
  Tolerance (Maxima Dialog)            12
-
 
 ==References==
 [1] Ernst, D. & Köhler, J., 2013. How the number of fitting points for the slope of the mean-square displacement influences the experimentally determined particle size distribution from single-particle tracking. Physical chemistry chemical physics : PCCPs : PCCP, pp.3429–3432.
