@@ -1,4 +1,4 @@
-<seo metak="data analysis,annotation,segmentation,morphometry,scripts" metad="data analysis,annotation,segmentation,morphometry,scripts" />
+<seo metak="data analysis,annotation,segmentation,scripts" metad="data analysis,annotation,segmentation,scripts" />
 {{Infobox
 | software       = ImageJ/Fiji
 | name           = BAR
@@ -10,7 +10,7 @@
 }}{{TOC right}}
 '''BAR''': A collection of '''B'''roadly '''A'''pplicable '''R'''outines.
 
-The collection contains [[Macros]], [[Scripts]] and [[Plugins]] focused on Data Analysis, Image Annotation, Image Segmentation and Bitmap Morphometry. It is curated using {{GitHub|org=tferr|repo=Scripts#ij-bar|label=GitHub}} and distributed as an optional [[List_of_update_sites|update site]].
+The collection contains [[Macros]], [[Scripts]] and [[Plugins]] focused on Data Analysis, Image Annotation and Image Segmentation. It is curated using {{GitHub|org=tferr|repo=Scripts#ij-bar|label=GitHub}} and distributed as an optional [[List_of_update_sites|update site]].
 
 == Installation ==
 The easiest way is to install and maintain the collection is to subscribe to the BAR update site. By doing so you will not need to manually download and install anything: the [[Fiji Updater]] will take care of it for you:<br>
@@ -363,7 +363,11 @@ libPath = call('bar.Utils.getLibDir') + 'BARlib.ijm';
 libContents = File.openAsString(libPath);
 call('ij.macro.Interpreter.setAdditionalFunctions', libContents);
 </source>
-:The first time you run <code>confirmLoading(); </code> ImageJ will complain about <code>confirmLoading</code> being an undefined identifier, but it will successfully recognize the call the second time you run the code above.
+:The first time you run <code>confirmLoading();</code> ImageJ will complain about <code>confirmLoading</code> being an undefined identifier, but it will successfully recognize the call the second time you run the code above.
+
+== Citation ==
+BAR scripts can be cited using the DOI associated with the repository:
+:* Tiago Ferreira et al., (2016)  [http://dx.doi.org/10.5281/zenodo.28838 <img src="https://zenodo.org/badge/doi/10.5281/zenodo.28838.svg" alt="10.5281/zenodo.28838">]
 
 == License ==
 These scripts are free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [http://www.gnu.org/licenses/gpl.txt Free Software Foundation]. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
