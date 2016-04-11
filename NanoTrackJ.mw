@@ -76,7 +76,7 @@ If you like to check NanoTrackJ by Monte-Carlo simulation, you may use our [http
 
 PartSimDC.ijm: This macro allows you to simulate particle by specifying their diffusion coefficient.
 
-PartSimDia.ijm:  This macro allows you to simulate particle by specifying their hydrodynamic diameter and a temperatur of the solution. Furthermore it allows to simulation polydisperse solutions by setting the number of particle quality larger than 1.
+PartSimDia.ijm:  This macro allows you to simulate particle by specifying their hydrodynamic diameter and a temperatur of the solution. Furthermore it allows to simulation polydisperse solutions by setting the number of particle qualities > 1.
 
 ==Sample data==
 
