@@ -23,7 +23,7 @@ You can find more information about me in my website: [http://sites.google.com/s
 * [[Trainable Weka Segmentation]]
 
 == Maintained plugins (IJPB-plugins update site) ==
-
+Included in [[MorphoLibJ]]:
 * [[Classic Watershed]]
 * [[Marker-controlled Watershed]]
 * [[Morphological Segmentation]]
