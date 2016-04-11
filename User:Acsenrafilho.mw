@@ -1,6 +1,11 @@
-== About Me ==
-
-I am a PhD student at the University of Sao Paulo, Brazil. My research knowledge area is on biomedical image processing and analysis, basically with different MRI techniques such as DTI, DWI, PWI and SWI. 
+{{Userbox
+| name = Antonio Carlos da Silva Senra Filho
+| email = acsenrafilho@gmail.com
+| affiliation = University of Sao Paulo, Brazil
+| researchgate = Antonio_Carlos_Senra_Filho
+| scholar = 8WPyRPQAAAAJ
+| website = http://dcm.ffclrp.usp.br/csim
+}}I am a PhD student at the University of Sao Paulo, Brazil. My research knowledge area is on biomedical image processing and analysis, basically with different MRI techniques such as DTI, DWI, PWI and SWI. 
 
 Please, visit our research group [http://dcm.ffclrp.usp.br/csim website] to find out some of my publications and personal information.
 
@@ -10,11 +15,3 @@ I created some PlugIn or PlugInFilters for ImageJ, based on some of my research 
 *[http://imagej.net/MRIPerfusion Perfusion in MRI technique]
 *[http://imagej.net/NoiseGenerator Noise Generator tool]
 *[http://imagej.net/SampEn2D Sample Entropy for images]
-
-== Contact ==
-
-Antonio Carlos da Silva Senra Filho
-
-email: acsenrafilho@gmail.com
-[https://www.researchgate.net/profile/Antonio_Carlos_Senra_Filho ResearchGate profile]
-[https://scholar.google.com.br/citations?user=8WPyRPQAAAAJ&hl=pt-BR Google Scholar]
