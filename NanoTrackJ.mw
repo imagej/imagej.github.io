@@ -78,6 +78,52 @@ PartSimDC.ijm: This macro allows you to simulate particle by specifying their di
 
 PartSimDia.ijm:  This macro allows you to simulate particle by specifying their hydrodynamic diameter and a temperatur of the solution. Furthermore it allows to simulation polydisperse solutions by setting the number of particle quality larger than 1.
 
+==Sample data==
+
+For the purpose of testing, you can download some sample video files.
+
+1. [https://figshare.com/articles/Video_recording_of_freely_diffusing_100nm_polystyrene_nanoparticles_using_nanoparticle_tracking_analysis/879651 Video recording of freely diffusing 100nm polystyrene nanoparticles using nanoparticle tracking analysis]
+
+NanoTrackJ settings which works well for this video:
+
+
+ Parameter                            Value
+ -------------------------------------------------
+ Center estimator                     Maxima
+ Diffusion coefficient estimator      Covariance
+ Min. expected particle size          90 nm
+ Search radius                        13.34 px
+ Min. number of steps per track       20
+ Temperature                          22,5 °C
+ Pixel size                           164 nm
+ Frame rate                           30 FPS
+ Linear drift corrected               True
+ Walker's method used                 True
+ Walker's method min size             800 nm
+ Mean size (Maxima Dialog)            3
+ Tolerance (Maxima Dialog)            15
+
+2. [https://figshare.com/articles/Video_recording_of_freely_diffusing_60_nm_gold_nanoparticles_using_dark_field_microscopy/879664 Video recording of freely diffusing 60 nm and 80 nm gold nanoparticles using dark field microscope]
+
+NanoTrackJ settings which works well for this video:
+
+ Parameter                            Value
+ -------------------------------------------------
+ Center estimator                     Maxima
+ Diffusion coefficient estimator      Covariance
+ Min. expected particle size          50 nm
+ Search radius                        18.03 px
+ Min. number of steps per track       20
+ Temperature                          24 °C
+ Pixel size                           182 nm
+ Frame rate                           25 FPS
+ Linear drift corrected               True
+ Walker's method used                 True
+ Walker's method min size             800 nm
+ Mean size (Maxima Dialog)            4
+ Tolerance (Maxima Dialog)            12
+
+
 ==References==
 [1] Ernst, D. & Köhler, J., 2013. How the number of fitting points for the slope of the mean-square displacement influences the experimentally determined particle size distribution from single-particle tracking. Physical chemistry chemical physics : PCCPs : PCCP, pp.3429–3432.
 
