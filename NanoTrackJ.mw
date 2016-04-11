@@ -70,6 +70,14 @@ If this checkbox is activated the size distribution is estimated by a maximum li
 If the plugin finishes analyzing it opens histogram plots for the size distribution and the diffusion coefficient distribution. Please note that for calculating the distribution the track length is used as weighting factor. Furthermore the plugins open result tables for the histogram data (ideal for plotting with other software). The following plot shows a size distribution (using walker's method & covariance estimator) estimated from a suspension with 100nm polystyrene beads (in water, 22C). The video used was captured with a nanosight LM10 microscope. The reported modal value is 98nm.
 
 [[File:Size100nm walker.png]]
+
+==Simulation==
+If you like to check NanoTrackJ by Monte-Carlo simulation, you may use our [https://github.com/thorstenwagner/ij-nanotrackj/tree/master/scripts/simulation simulation macros].
+
+PartSimDC.ijm: This macro allows you to simulate particle by specifying their diffusion coefficient.
+
+PartSimDia.ijm:  This macro allows you to simulate particle by specifying their hydrodynamic diameter and a temperatur of the solution. Furthermore it allows to simulation polydisperse solutions by setting the number of particle quality larger than 1.
+
 ==References==
 [1] Ernst, D. & Köhler, J., 2013. How the number of fitting points for the slope of the mean-square displacement influences the experimentally determined particle size distribution from single-particle tracking. Physical chemistry chemical physics : PCCPs : PCCP, pp.3429–3432.
 
