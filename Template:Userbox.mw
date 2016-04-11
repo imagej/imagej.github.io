@@ -38,6 +38,16 @@
 {{!}}-
 }}
 -->
+{{#if:{{{researchgate|}}}|
+! ResearchGate
+{{!}} [https://www.researchgate.net/profile/{{{researchgate}}} ResearchGate profile]
+{{!}}-
+}}
+{{#if:{{{scholar|}}}|
+! Google Scholar
+{{!}} [https://scholar.google.com.br/citations?user={{{scholar}}} Google Scholar profile]
+{{!}}-
+}}
 {{#if:{{{linkedin|}}}|
 ! LinkedIn
 {{!}} [https://www.linkedin.com/{{{linkedin}}} LinkedIn profile]
@@ -64,6 +74,8 @@
 | stackoverflow          =
 | openhub                =
 | linkedin               =
+| researchgate           =
+| scholar                =
 | website                =
 }}
 </pre>
@@ -78,6 +90,8 @@
 | stackoverflow          = 22656/jon-skeet
 | openhub                = kohsuke
 | linkedin               = pub/joel-spolsky/15/4b/649
+| researchgate           = Kevin_Eliceiri
+| scholar                = HrTtBxoAAAAJ
 | website                = [http://example.org]
 }}<pre style="overflow:auto">
 {{Userbox
@@ -89,6 +103,8 @@
 | stackoverflow          = 22656/jon-skeet
 | openhub                = kohsuke
 | linkedin               = pub/joel-spolsky/15/4b/649
+| researchgate           = Kevin_Eliceiri
+| scholar                = HrTtBxoAAAAJ
 | website                = [http://example.org]
 }}
 </pre>
