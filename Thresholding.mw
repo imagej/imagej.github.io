@@ -4,7 +4,7 @@
 Global thresholding works by choosing a value cutoff, such that every pixel less than that value is considered one class, while every pixel greater than that value is considered the other class.
 
 [[ImageJ]] provides several built-in methods for automatically computing a global threshold. For details, see:
-* Documentation for the [http://imagej.net/docs/guide/146-28.html#sub:Threshold...[T] Threshold...] command.
+* Documentation for the [http://imagej.net/docs/guide/146-28.html#sub:Threshold...%5BT%5D Threshold...] command.
 * The [[Auto Threshold]] plugin page
 
 == Local thresholding ==
