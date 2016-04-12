@@ -12,6 +12,7 @@
 * An [[Special:ChangeUploadPassword|initialized upload password]]. ('''NOTE''' - ''not'' necessarily the same as your Wiki password)
 
 = Additional resources =
+* [https://github.com/travis-ci/travis.rb#installation Travis CI installation]
 * [https://docs.travis-ci.com/user/getting-started/ Travis CI user guide]
 
 = Automatic Uploads via Travis CI =
