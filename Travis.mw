@@ -2,7 +2,7 @@
 
 = Automatic Deployment of Maven Artifacts =
 
-Deploying your library to [[Maven]] makes it available for other developers. It is also a [[Fiji/Contribution_requirements|contribution requirement]].
+Deploying your library to [[Maven]] makes it available for other developers. It is also a [[Fiji/Contribution_requirements|contribution requirement for the Fiji project]].
 
 == Requirements ==
 * An open-source project hosted on [[GitHub]]
