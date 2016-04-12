@@ -43,7 +43,7 @@ Developers can benefit from the mirror by adding the following section to their 
 
 == Continuous integration ==
 
-ImageJ has a [http://jenkins.imagej.net/ Jenkins server], which automatically checks the code for build and test errors.
+ImageJ has a [http://jenkins.imagej.net/ Jenkins server], which automatically checks the code for build and test errors. External developers can look at [[Travis]] for an open-source CI tool, with build configurations stored in the source repository itself.
 
 Jenkins tests builds and performs [[releases]] for [[SciJava]] projects. It deploys <code>SNAPSHOT</code> builds to the [http://maven.imagej.net/ ImageJ Maven repository] in response to pushes to each code repository's <code>master</code> branch. So any downstream projects depending on a version of <code>LATEST</code> for a given component will match the last successful Jenkins build—i.e., the latest code on <code>master</code>.
 
