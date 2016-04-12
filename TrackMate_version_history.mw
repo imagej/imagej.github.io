@@ -292,3 +292,31 @@ Careful: the content of the selection model can still be edited in this mode. Of
 Changes:
 
 * We really do not relaunch TrackScheme automatically when loading a TrackMate file.
+
+
+== 12/04/2016 - v3.2.0 ==
+
+* TrackMate can now be called from an IJ macro.
+Only a subset of TrackMate features can be used, though. Right now, only the LoG detector and the Simple LAP tracker are used. But for instance, you can call TrackMate with the following syntax:
+
+<pre>run('TrackMate', "use_gui=false "
+                        + "save_to=[/Users/tinevez/Desktop/TrackMateSaveTest.xml] "
+                        + "export_to=[/Users/tinevez/Desktop/TrackMateExportTest.xml] "
+                        + "display_results=true "
+                        + "radius=2.5 "
+                        + "threshold=50.1 "
+                        + "subpixel=false "
+                        + "median=false "
+                        + "channel=1 "
+                        + "max_frame_gap=0" )</pre>
+
+If you need other detectors and trackers, you have to rely on Python for now. [[Scripting_TrackMate]]
+
+* Several TrackScheme improvements:
+** The row and column headers are now properly displayed and resized when zooming.
+** TrackScheme can be navigated with the keyboard:
+*** The numeric keypad is used to pan around.
+*** +/- zoom in/out.
+** Better navigation with mouse:
+*** Hold space and drag to pan, as in ImageJ.
+*** Hold space + mousewheel to zoom in/ out.
