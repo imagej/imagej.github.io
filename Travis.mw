@@ -1,0 +1,52 @@
+[https://travis-ci.org/ Travis] is a tool for [[Project_management#Continuous_integration|continuous integration]]. It has excellent integration with [https://github.com/ GitHub], making it a viable alternative to [http://jenkins.imagej.net/ Jenkins] for automating tasks.
+
+= Automatic Deployment of Maven Artifacts =
+
+Deploying your library to [[Maven]] makes it available for other developers. It is also a [[Fiji/Contribution_requirements|contribution requirement]].
+
+== Requirements ==
+* An open-source project hosted on [[GitHub]]
+* Logging in to [https://travis-ci.org/auth Travis CI] with your corresponding GitHub account
+* [https://github.com/travis-ci/travis.rb#installation Travis command line tools]
+* Contact an ImageJ admin in [[Chat#Gitter|Gitter]] or [http://forum.imagej.net/ the ImageJ forum] and request a <code>Nexus Deployment</code> account for [http://maven.imagej.net].
+
+== Instructions ==
+
+1. Create a <code>.travis.yml</code> in your repository using the following template:
+
+<source lang="yaml">
+language: java
+jdk:
+- oraclejdk8
+script:
+- mvn -U -Pdeploy-to-imagej clean deploy --settings settings.xml
+</source>
+
+2. From the command line in your repository, create an [https://docs.travis-ci.com/user/environment-variables/#Encrypting-Variables-Using-a-Public-Key encrypted environment variable] for your [http://maven.imagej.net maven.imagej.net] password:
+
+<source lang="bash">
+$ travis encrypt MAVEN_PASS=my_maven_password --add env.matrix
+</source>
+
+Note that this will automatically modify your <code>.travis.yml</code> file.
+
+3. Create a <code>settings.xml</code> in your repository using the following template, using your [http://maven.imagej.net maven.imagej.net] username:
+
+<source lang="xml">
+<settings>
+  <servers>
+    <server>
+      <id>imagej.releases</id>
+      <username>my_maven_username</username>
+      <password>${env.MAVEN_PASS}</password>
+    </server>
+    <server>
+      <id>imagej.snapshots</id>
+      <username>my_maven_username</username>
+      <password>${env.MAVEN_PASS}</password>
+    </server>
+  </servers>
+</settings>
+</source>
+
+4. Commit all your files with Git and push them back to your repository. If everything works as intended, you should start seeing new builds in your [https://travis-ci.org Travis dashboard] with each new commit, with corresponding SNAPSHOT and release artifacts immediately deployed automatically to [http://maven.imagej.net/index.html#view-repositories maven.imagej.net].
