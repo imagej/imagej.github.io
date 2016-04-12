@@ -1,4 +1,4 @@
-{{UpdateSites}}
+{{UpdateSites}}{{TOC}}
 
 {{Notice | This guide is intended for maintaining non-core update sites by automating builds with [https://travis-ci.org/ Travis CI].<br>
 * The [[How_to_upload_to_core_update_sites|core update sites]] are updated manually or by [[Jenkins]].
