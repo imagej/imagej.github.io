@@ -132,7 +132,7 @@ The [https://github.com/scijava/scijava-scripts/blob/aab7cfe805638efc25615fdd7c7
 			<username>{your username}</username>
 			<password>{your Nexus password hash}</password>
 		</server>
-	<servers>
+	</servers>
 </pre></li>
 
 '''Steps to release:'''
