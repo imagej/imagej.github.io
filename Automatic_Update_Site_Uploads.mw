@@ -8,11 +8,11 @@
 = Requirements =
 * An open-source project hosted on [[GitHub]]
 * Logging in to [https://travis-ci.org/auth Travis CI] with your corresponding GitHub account
+* [https://github.com/travis-ci/travis.rb#installation Travis command line tools]
 * An [[Special:CreateAccount|account on this wiki]]
 * An [[Special:ChangeUploadPassword|initialized upload password]]. ('''NOTE''' - ''not'' necessarily the same as your Wiki password)
 
 = Additional resources =
-* [https://github.com/travis-ci/travis.rb#installation Travis CLI installation]
 * [https://docs.travis-ci.com/user/getting-started/ Travis CI user guide]
 
 = Automatic Uploads via Travis CI =
