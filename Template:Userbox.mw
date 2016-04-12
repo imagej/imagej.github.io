@@ -6,11 +6,6 @@
 {{!}} {{{affiliation}}}
 {{!}}-
 }}
-{{#if:{{{loci|}}}|
-! LOCI
-{{!}} [http://loci.wisc.edu/people/{{{loci}}} LOCI profile]
-{{!}}-
-}}
 {{#if:{{{forum|}}}|
 ! ImageJ Forum
 {{!}} [http://forum.imagej.net/users/{{{forum}}} ImageJ Forum profile]
@@ -53,6 +48,11 @@
 {{!}} [https://www.linkedin.com/{{{linkedin}}} LinkedIn profile]
 {{!}}-
 }}
+{{#if:{{{loci|}}}|
+! LOCI
+{{!}} [http://loci.wisc.edu/people/{{{loci}}} LOCI profile]
+{{!}}-
+}}
 {{#if:{{{website|}}}|
 ! Website
 {{!}} {{{website}}}
@@ -69,13 +69,14 @@
 | name                   =
 | gravatar               =
 | affiliation            =
-| loci                   =
+| forum                  =
 | github                 =
 | stackoverflow          =
 | openhub                =
 | linkedin               =
 | researchgate           =
 | scholar                =
+| loci                   =
 | website                =
 }}
 </pre>
