@@ -8,7 +8,7 @@ Deploying your library to [[Maven]] makes it available for other developers. It 
 * An open-source project hosted on [[GitHub]]
 * Logging in to [https://travis-ci.org/auth Travis CI] with your corresponding GitHub account
 * [https://github.com/travis-ci/travis.rb#installation Travis command line tools]
-* Contact an ImageJ admin in [[Chat#Gitter|Gitter]] or [http://forum.imagej.net/ the ImageJ forum] and request a <code>Nexus Deployment</code> account for [http://maven.imagej.net].
+* Contact an ImageJ admin in [[Chat#Gitter|Gitter]] or [http://forum.imagej.net/ the ImageJ forum] and request a <code>Nexus Deployment</code> account for the [[ImageJ Maven repository]].
 
 == Instructions ==
 
