@@ -59,6 +59,10 @@ To enable a Jenkins link with your repository:
 # Configure your repository to add a [https://developer.github.com/webhooks/creating/ webhook] for the [https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin Jenkins (Git plugin)]
 # Set the <code>Jenkins URL</code> field to: <code><nowiki>http://jenkins.imagej.net/</nowiki></code>
 
+== Continuous integration: Travis ==
+
+[[Travis]] is an alternative to Jenkins for continuous integration that allows easier setup and management for external developers.
+
 == Versioning and dependency convergence ==
 
 Most Fiji projects use the [[Versioning|SemVer versioning scheme]]: a standard to encourage API consistency without obstructing API improvements.
