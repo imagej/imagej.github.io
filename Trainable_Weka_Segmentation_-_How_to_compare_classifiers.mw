@@ -31,6 +31,7 @@ In order to use the data we just saved for comparing classifiers, we need to ope
 [[Image:Screenshot-AWS-tutorial-WEKA-Chooser.png]]
 
 We click on "Experimenter" and the Weka Experiment Environment GUI will pop up:
+
 [[Image:Screenshot-AWS-Weka-Experiment-Environment.png|700px]]
 
 ==== New experiment ====
