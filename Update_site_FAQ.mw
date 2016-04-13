@@ -7,17 +7,34 @@ The dialog is based on the [[List of update sites]] wiki page. You can edit that
 
 An update site is a [[wikipedia:Revision control|revision control]] system where nothing is ever really deleted from the history.
 
-Hence, there are two levels of removal: marking a file '''obsolete''', and '''deleting a file completely from the history''':
+Hence, there are two levels of removal:
+
+* marking a file '''Obsolete''' effectively deletes it from the update site, but preserves the file's history. This is the most common method of removing a file from an update site.
+* '''Deleting a file completely from the history''' is sometimes necessary e.g., for legal or privacy reasons.
+
+The practical effects in both cases are the same: the file in question is no longer served by the update site.
 
 === Marking a file obsolete ===
 
-You can mark any file previously uploaded as obsolete.  This will not delete old versions of the file, but will ensure anyone updating to the latest version of your update site will no longer download that file:
-# If the file is not hosted by any other active update site, delete it from your local installation. Note: if the file '''is''' hosted on another update site, this is called '''shadowing'''—you do not need to delete the file as marking it obsolete will revert it to the other update site's version.
+You can mark any file previously uploaded as obsolete. The steps vary slightly depending on if this file is hosted on another update site ('''shadowing''') or not.
+
+==== Unshadow a file ====
+The process of marking the file obsolete will automatically revert it to the shadowed update site's version:
+
 # Start the [[Updater|updater]] and click the ''Advanced mode'' button.
 # Select the ''View files of the '[your site name here]''' option.
-# '''NB:''' If you deleted the file in step 1, it will be marked "'''Install it'''" automatically by the updater—right click the file and change it to "Keep as-is". See [[#Why don't I have an upload option?|Why don't I have an upload option?]] below for an explanation.
-# Right click and choose "Mark obsolete" for the deleted file.
-# Upload the changes.
+# Right click and choose "'''Mark obsolete (unshadowing)'''" for the  file.
+# Click "'''Apply changes (upload)'''" to finalize the unshadowing.
+
+==== Delete a file ====
+If the file is not hosted by any other active update site you need to tell the updater to delete the file:
+
+# Delete the file locally
+# Start the [[Updater|updater]] and click the ''Advanced mode'' button.
+# Select the ''View files of the '[your site name here]''' option.
+# The updater will see the file is missing and automatically flag it  "'''Install it'''". You need to right-click the file and change it to "'''Keep as-is'''". See [[#Why don't I have an upload option?|Why don't I have an upload option?]] below for an explanation.
+# Right-click the deleted file again and choose "'''Mark obsolete'''".
+# Click "'''Apply changes (upload)'''" to finalize the deletion.
 
 === Deleting a file completely from the history ===
 
