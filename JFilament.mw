@@ -6,6 +6,9 @@ For user instructions go to http://athena.physics.lehigh.edu/jfilament.
 
 This work was supported by NIH and by the Biosystems Dynamics Summer Institute at Lehigh University.
 
+The code was developed by Matt Smith, melkor@orangepalantir.org 
+
+
 References:
 
 M. B. Smith, H. Li, T. Shen, X. Huang, E. Yusuf, and D. Vavylonis, "Segmentation and Tracking of Cytoskeletal Filaments using Open Active Contours," Cytoskeleton 67:693-705 (2010) [http://onlinelibrary.wiley.com/doi/10.1002/cm.20481/abstract]
