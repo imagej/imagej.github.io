@@ -9,7 +9,7 @@
 | status                 = stable, active
 | category               = [[:Category:Analysis|Analysis]], [[:Category:Filtering|Filtering]], [[:Category:Segmentation|Segmentation]], [[:Category:Mathematical_morphology|Mathematical morphology]]
 }}
-Collection of [https://en.wikipedia.org/wiki/Mathematical_morphology mathematical morphology] methods and '''plugins''' for ImageJ, created at [http://www-ijpb.versailles.inra.fr/en/bc/equipes/modelisation-imagerie/ INRA-IJPB Modeling and Digital Imaging lab].
+Collection of [[wikipedia:Mathematical morphology|mathematical morphology]] methods and '''plugins''' for ImageJ, created at [http://www-ijpb.versailles.inra.fr/en/bc/equipes/modelisation-imagerie/ INRA-IJPB Modeling and Digital Imaging lab].
 
 The library implements several functionalities that were missing in ImageJ, and that were not or only partially covered by other plugins. Namely:
 
