@@ -24,24 +24,34 @@ The library implements several functionalities that were missing in ImageJ, and 
 * '''Binary / label images utilities''' for removing or keeping largest connected component, perform size opening, fill holes, kill borders...
 
 == Morphological filters ==
-Morphological filters are very common filters that can be combined together to provide a large variety of solutions. They are local filters, in the sense that they consider the neighborhood of each pixel/voxel according to a structuring element of a given size and shape.
+Morphological filters are very common filters that can be combined together to provide a large variety of solutions. They are local filters, in the sense that they consider the neighborhood of each pixel/voxel.
+
+Morphological filters are defined according to a '''structuring element''' of a given size and
+shape. Common structuring element include squares, discrete disks and octogons. Linear structuring element of various orientations may also be used to assess local orientation of the
+structures.
+
 === Principles ===
-The base filters are the '''morphological dilation''', which considers the maximum within the
-neighborhood, and the '''morphological erosion''', which considers the minimum value within
-the neighborhood. The dilation and the erosion operations change the size of the structures
-in the image.
+==== Erosion and dilation ====
+The most basic morphological filters are the '''morphological dilation''' and the '''morphological erosion'''. The morphological dilation computes for each pixel the maximum within its neighbourhood (defined by the structuring element), whereas the morphological erosion considers the minimum value within the neighborhood.
 [[Image:MorphoLibJ-grains-dilation-erosion.png|thumb|center|700px|Some examples of morphological filters on a grey level image. From left to right: original image, result of dilation with a square structuring element, and result of erosion with the same structuring element.]]
+Applying a  dilation or an erosion changes the size of the structures in the image: the grains in the result of the dilated image are larger. Morphological erosion can also be used on binary images to help separating touching particles.
+
+==== Opening and closing ====
 Morphological dilation and erosion are often used in combination. For example, the result of a dilation followed by an erosion is called a '''morphological closing''', and removes dark structures smaller than the structuring element. It can also connect bright structures that were separated by a thin dark space.
 
 In a symmetric way, the result of an erosion followed by a dilation is called a '''morphological opening''', and removes bright structures smaller than the structuring element.
 
 [[Image:MorphoLibJ-grains-closing-opening.png|thumb|480px|center|Some examples of composed morphological filters. From left to right: morphological closing, and morphological opening.]]
 
+Note that even if opening and closing better preserve the size of the structures in the original image, the shape is slightly altered. For example, the result of morphological closing on the figure above creates artificial connections between grains. Choosing the best size for the structuring element is often a compromise between noise removal and preservation of structure shape.
+
+==== Morphological gradients ====
 More complicated combinations of elementary operations can be used. The '''morphological gradient''', computed as the difference of the result of a morphological dilation with the
 result of a morphological erosion, reveals the '''boundaries''' of the structures within the image. The '''morphological Laplacian''' is defined as half the sum of a morphological
 dilation and a morphological erosion with the same structuring element, minus the original
 image. It results in enhancing the edges of the image.
 
+==== Top-hats ====
 The '''white top-hat''' first computes a morphological opening (resulting in removing bright structures smaller than structuring elements), and removes the result from the original image. When applied with a large structuring element, the result is an homogenization of the background, making bright structures easier to segment. Similarly, the '''dark top-hat''' can be used to enhance dark structures observed on an non-homogeneous background.
 [[Image:MorphoLibJ-grains-gradient-Laplacian-whiteTopHat.png|thumb|center|700px|More examples of composed morphological filters. From left to right: morphological gradient, morphological Laplacian, morphological white top-hat.]]
 
