@@ -1,21 +1,22 @@
 This account is used to manage the [http://sites.imagej.net/Neuroanatomy/ Neuroanatomy update site],  distributing hIPNAT (''Image Processing for NeuroAnatomy and Tree-like Structures'') plugins.
 
-====== Requirements ======
-As part of an active effort to [[2015-12-22_-_The_road_to_Java_8|modernize ImageJ]]  hIPNAT plugins require Java 8. If you are running an older version of Java, you can either i) [[Fiji/Downloads|Download the latest Fiji release]] (newer releases come pre-bundled with Java 8); or ii) If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [[Troubleshooting#Checking_the_Java_version|Fiji installation aware of it]].
+===== Requirements =====
+The requirements to run the Neuroanatomy suite of plugins are twofold: i) [[Fiji]] (i.e., an ImageJ installation subscribed to the Fiji update site) and ii) Java 8 (as part of an active effort to [[2015-12-22_-_The_road_to_Java_8|modernize ImageJ]]). If you are running an older version of Java, you can either i) [[Fiji/Downloads|Download the latest Fiji release]] (newer releases come pre-bundled with Java 8); or ii) If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [[Troubleshooting#Checking_the_Java_version|Fiji installation aware of it]].
 
-====== To subscribe to Neuroanatomy update site ======
+===== Subscribing to the Neuroanatomy update site =====
 # Run [[Update_Sites|{{bc|Help|Update...}}]]
 # Click ''Manage update sites''
 # Select the ''Neuroanatomy'' checkbox
 # Click ''Apply changes'' and Restart ImageJ.
 :(See also [[List of update sites]])
 
-====== List of plugins ======
-The Neuroanatomy toolbox (released in 2016) includes some the following plugins:
+===== List of plugins =====
+Some of the plugins in the Neuroanatomy toolbox include:
 * [[Strahler Analysis]], {{bc|Analyze|Skeleton|Strahler Analysis...}}
 * Summarize Skeleton, {{bc|Analyze|Skeleton|Summarize Skeleton}}
+* SWC Import, {{bc|File|Import|SWC...}}
 
-====== Further information ======
+===== Further information =====
 * The Neuroanatomy toolbox is maintained by [[User:Tiago|Tiago Ferreira]]
 * The source code is available on [https://github.com/tferr/hIPNAT/ GitHub]
 
