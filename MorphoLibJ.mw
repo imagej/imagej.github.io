@@ -57,8 +57,9 @@ The '''white top-hat''' first computes a morphological opening (resulting in rem
 
 === Usage ===
 [[Image:MorphoLibJ-mosaic-filters.png|right|thumb|550px|MorphoLibJ filter examples: DAPI stained nuclei image and the result of applying different morphological filters with an octagon of radius 5 as structuring element.]]
-A large collection of morphological filters is available in the {{bc | Plugins | MorphoLibJ}} menu. Filters are '''implemented both for 2D and 3D images''', and work for binary as well as grey level images:
-
+The collection of morphological filters is available in the {{bc | Plugins | MorphoLibJ}} menu. Filters are '''implemented both for 2D and 3D images''', and work for binary, gray level or color (RGB) images.
+==== Planar images ====
+Morphological filters for planar images are available {{bc | Plugins | MorphoLibJ | Morphological filters}}. The dialog let the user choose the structuring element shape, radius, and eventually preview the result. The following list of operations can be chosen:
 * '''erosion''' keeps the minimum value within the neighborhood defined by the structuring element.
 
 * '''dilation''' keeps the maximum value within the neighborhood defined by the structuring element.
@@ -83,7 +84,8 @@ The following structuring elements can be used for 2D images:
 * diamond
 * line with angle of 0, 90, 45 or 135 degrees
 
-For 3D images, the same structuring elements can be used (the operation is simply repeated on each slice), as well as a cubic structuring element.
+==== 3D images ====
+Morphological filters for 3D images are available {{bc | Plugins | MorphoLibJ | Morphological filters (3D)}}. The dialog let the user choose the structuring element shape and radius. The same list of operations as for planar images is provided. Planar structuring elements can be used (the operation is simply repeated on each slice), as well as a cubic or spherical structuring element. For most structuring elements, the size can be chosen for each direction.
 
 == Morphological reconstruction ==
 The morphological reconstruction is at the basis of many useful algorithms, such as border removing, hole filling, or detection of regional minima or maxima in grey level images.
