@@ -43,13 +43,11 @@ It is what ImageJ2's legacy support uses at its core.
 |[[Fiji]]
 |[[Contributors|Fiji contributors]]
 | 
-'''F'''iji '''i'''s '''J'''ust '''I'''mageJ, with extras. It is a distribution of ImageJ with many plugins useful for image analysis in the life sciences. It is actively maintained, with updates released often.
-
-As of June 2014, Fiji is based on ImageJ2, adding Fiji-specific customization and plugins.
+'''F'''iji '''i'''s '''J'''ust '''I'''mageJ, with extras. It is a distribution of ImageJ with many plugins useful for scientific image analysis in fields such as life sciences. It is actively maintained, with updates released often.
 
 We recommend Fiji as the preferred version of ImageJ.
 
-|{{Person|Schindelin}}
+|[[User:Schindelin#A_short_story_about_Fiji|Dec. 2007]]
 |Active
 |-
 |
