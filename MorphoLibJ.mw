@@ -90,7 +90,7 @@ Morphological filters for 3D images are available {{bc | Plugins | MorphoLibJ | 
 == Morphological reconstruction ==
 The morphological reconstruction is at the basis of many useful algorithms, such as border removing, hole filling, or detection of regional minima or maxima in grey level images.
 === Principle ===
-The principle of geodesic reconstruction is to repeat '''conditional dilations''' or erosions until idempotence. Conditional dilation is the result of a dilation, combined with a mask image using a logical operation. Conditional dilations are repeated until no more modification occur (idempotence condition).
+The principle of geodesic reconstruction is to repeat '''conditional dilations or erosions''' until idempotence. Conditional dilation is the result of a dilation, combined with a mask image using a logical operation. Conditional dilations are repeated until no more modification occur (idempotence condition).
 
 The following figure shows several steps of a geodesic reconstruction by dilation on a pair of binary images. The mask image is shown in gray, and the marker image is shown in black on the first image. The reconstructed images at each step are shown in black. The markers propagates within the mask until they fill the chosen regions.
 [[Image:MorphoLibJ-geodesic-reconstruction.png|thumb|center|750px|Principle of the geodesic reconstruction algorithm. From left to right: original image in gray with marker superimposed in black, and result of conditional dilations with increasing sizes.]]
