@@ -110,14 +110,20 @@ Both extended maxima and minima are computed using the geodesic reconstruction a
 [[Image:MorphoLibJ-grains-regional-and-extended-maxima.png|thumb|700px|center|Regional and extended maxima on a grey-level image. Left: original image. Middle: result of regional maxima. Right: result of extended maxima.]]
 
 === Usage ===
-The following operations are available in the {{bc | Plugins | MorphoLibJ}} menu:
+The following operations are available in the {{bc | Plugins | MorphoLibJ}} menu. Some plugins correspond to common operations and encompass several processing steps:
 
-* '''Geodesic Reconstruction''': compute the geodesic reconstruction by erosion or dilation using a marker image and a mask image, and a specified connectivity. The same operation is available for 3D images.
 * '''Kill Borders''': remove the particles touching the border of a binary or grey level image, in 2D or 3D.
 * '''Fill Holes''': remove holes inside particles in binary images, or remove dark regions surrounded by bright crests in grey level images. Works for both 2D and 3D images.
-* '''Regional Min / Max''': compute regional minima or extrema in grey level image, with specified connectivity.
+Several plugins allow the computation of binary minima or maxima from grey level images, and their combination with grey level images:
+* '''Regional Min / Max''': compute regional minima or extrema in grey level or binary image, with specified connectivity.
+* '''Regional Min / Max 3D''': compute regional minima or extrema in 3D grey level or binary image, with specified connectivity.
 * '''Extended Min / Max''': compute extended minima or extrema in grey level image, with specified connectivity.
+* '''Extended Min / Max 3D''': compute extended minima or extrema in 3D grey level or binary image, with specified connectivity.
 * '''Impose Min / Max''': impose minima or maxima on a grey level image.
+* '''Impose Min / Max 3D''': impose minima or maxima on a 3D grey level image.
+The geodesic reconstruction algorithm is provided as a plugin to allow its inclusion in user-designed macros or plugins:
+* '''Geodesic Reconstruction''': compute the geodesic reconstruction by erosion or dilation using a marker image and a mask image, and a specified connectivity.
+* '''Geodesic Reconstruction 3D''': compute the geodesic reconstruction by erosion or dilation on a 3D image.
 
 == Watershed segmentation ==
 [[Image:Classic-Watershed-lines-blur-blobs.png|thumb|200px|Overlay of watershed lines on blurred blobs.]] The watershed algorithm assimilates the grey level image to a digital elevation model, and aims at detecting the different catchment basins. In the grey-level image, the catchment basins correspond to dark regions surrounded by bright structures (the "crests"). It is a very popular technique specially used to segment touching objects. The MorphoLibJ suite contains several implementations of the algorithm and plugins that make use of it:
