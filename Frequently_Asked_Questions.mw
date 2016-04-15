@@ -46,7 +46,7 @@ Unfortunately, El Capitan has some new java-related issues. If you upgraded to E
 
 === On Windows ===
 
-Install Java 8, and delete or rename the <code>ImageJ.app\java</code> and/or <code>ImageJ.app\jre</code> folders, if they exist. If this does not result in Fiji using the expected Java version, check the Environment Variables ({{bc | Control Panel | System and Security | System | Advanced Settings | Advanced | Environment Variables}}) for the variable "JAVA_HOME".  If it exists, change its value to the desired jdk or jre (for instance: "C:\Program Files\Java\jdk1.8.0_51").
+Install Java 8, and delete or rename the <code>ImageJ.app\java</code> and/or <code>ImageJ.app\jre</code> folders, if they exist. If this does not result in Fiji using the expected Java version, check the Environment Variables ({{bc | Control Panel | System and Security | System | Advanced Settings | Advanced | Environment Variables}}) for the variable "JAVA_HOME".  Update or create this variable as needed; its value should be the desired JDK or JRE that you would like to use for Fiji (for instance: "C:\Program Files\Java\jdk1.8.0_51"). See also [http://stackoverflow.com/questions/1672281/environment-variables-for-java-installation Java environment variable setup].
 
 === On OS X ===
 
