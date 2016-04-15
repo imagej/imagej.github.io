@@ -56,7 +56,7 @@ We recommend Fiji as the preferred version of ImageJ.
 |
 The MBF "ImageJ for Microscopy" bundle (formerly [http://www.uhnres.utoronto.ca/facilities/wcif/imagej/ WCIF ImageJ]) is a collection of plugins and macros, collated and organized by the MacBiophotonics facility.
 
-It went hand in hand with a comprehensive manual describing how to use the bundle with light microscopy image data. It was a great resource by microscopists, for microscopists. Unfortunately, the manual went offline in late 2012. Nonetheless, it is often possible to add specific plugins from MBF ImageJ to a Fiji installation, combining the best of both programs. To facilitate that, a team at [[LOCI]] created the [[Cookbook]] update site.
+It went hand in hand with a comprehensive manual describing how to use the bundle with light microscopy image data. It was a great resource by microscopists, for microscopists. Unfortunately, the manual went offline in late 2012. In response, the software team at [[LOCI]] created the [[Cookbook]] update site, which includes most of the same plugins.
 
 |2005
 |Defunct<br>
