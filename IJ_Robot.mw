@@ -7,7 +7,7 @@
 | source                 = {{GitHub | org=fiji | repo=IJ_Robot}}
 | latest version         = 1.0
 | status                 = active 
-}}
+}}{{TOC}}
 
 == Purpose ==
 This plugin calls the Robot Java class. The purpose of the plugin is to allow the macro language to control other programs via clicking and key presses.
