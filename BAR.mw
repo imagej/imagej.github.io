@@ -1,13 +1,16 @@
 <seo metak="data analysis,annotation,segmentation,scripts" metad="data analysis,annotation,segmentation,scripts" />
+<div style="float:right;">
 {{Infobox
 | software       = ImageJ/Fiji
 | name           = BAR
 | maintainer     = {{Person|Tiago}}
 | source         = {{GitHub|org=tferr|repo=Scripts}}
 | released       = June 2014
-| latest version = '''1.1.6 August 2015''' ({{GitHub|org=tferr|repo=Scripts/releases|label=released versions}})
+| latest version = '''1.1.7 April 2016''' ({{GitHub|org=tferr|repo=Scripts/releases|label=Changelog}})
 | category       = [[:Category:Analysis|Analysis]], [[:Category:Image annotation|Annotation]], [[:Category:Filtering|Filtering]], [[:Category:Segmentation|Segmentation]], [[:Category:Scripting|Scripting]]
-}}{{TOC right}}
+}}
+</div>
+{{TOC}}
 '''BAR''': A collection of '''B'''roadly '''A'''pplicable '''R'''outines.
 
 The collection contains [[Macros]], [[Scripts]] and [[Plugins]] focused on Data Analysis, Image Annotation and Image Segmentation. It is curated using {{GitHub|org=tferr|repo=Scripts#ij-bar|label=GitHub}} and distributed as an optional [[List_of_update_sites|update site]].
