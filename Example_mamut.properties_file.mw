@@ -1,5 +1,5 @@
 
-The key-bindings used in the MaMuT viewer can be customized through a text file, that allow you to remap any command to any key. To so, create a text file named \texttt{mamut.properties} in the \texttt{Fiji.app} folder (where the \texttt{plugins} and \texttt{jars} folders are). This file must follow this syntax example:
+The key-bindings used in the MaMuT viewer can be customized through a text file, that allow you to remap any command to any key. To so, create a text file named <tt>mamut.properties</tt> in the <tt>Fiji.app</tt> folder (where the <tt>plugins</tt> and <tt>jars</tt> folders are). This file must follow this syntax example:
 
 <pre>
 A=add spot
@@ -14,9 +14,9 @@ control\ Q=decrease spot radius a bit
 ...
 </pre>
 
-It follows the syntax \texttt{key=command}, one per line. Modifier keys such as \keys{Control} and \keys{Shift} are specified by prepending the key with their name, separated by a space escaped with a backslash '\textbackslash\ '. Spaces in commands do not need to be escaped. The dash \# character at the beginning of a line is used to insert comments. 
+It follows the syntax <tt>key=command</tt>, one per line. Modifier keys such as {{key press|Control}} and {{key press|Shift}} are specified by prepending the key with their name, separated by a space escaped with a backslash <tt>\ </tt>. Spaces in commands do not need to be escaped. The dash # character at the beginning of a line is used to insert comments. 
 
-\hline
+____________________________________
 
 
 <source lang="properties>
