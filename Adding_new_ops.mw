@@ -68,6 +68,7 @@ public class DefaultGCD implements GCD extends AbstractOp {
   }
 }
 </source>
+[https://github.com/tferr/Scripts/blob/master/BAR/src/main/java/bar/DefaultGCD.java On GitHub]
 
 == Use your Op ==
 
@@ -154,6 +155,7 @@ public class BAR extends AbstractNamespace {
   }
 }
 </source>
+[https://github.com/tferr/Scripts/blob/master/BAR/src/main/java/bar/BAR.java On GitHub]
 
 == Implement your Op(s) ==
 
@@ -216,6 +218,7 @@ But we can also use our built-in methods:
 print(bar.gcd(20, 15))
 </source>
 
+
 This is especially useful in environments with code completion.
 
 Namespaces also present an easy way for users to find information about available functionality using the base Help ops:
@@ -265,6 +268,8 @@ public class BARService extends AbstractService implements ImageJService {
   }
 }
 </source>
+[https://github.com/tferr/Scripts/blob/master/BAR/src/main/java/bar/BARService.java On GitHub]
+
 
 Now we can drop package prefixes when using our Namespace in scripts:
 
@@ -291,6 +296,8 @@ with contents:
 
 print("Greatest common divisor of " + str(a) + " and " + str(b) + " is: " + str(bar.gcd(a, b)))
 </source>
+[https://github.com/tferr/Scripts/blob/master/BAR/src/main/resources/script_templates/BAR/GCD.py On GitHub]
+
 
 Then users will be able to select <code>Templates > BAR > GCD</code> from the script editor window, to automatically load the script and select the correct script language (python in this case).
 
