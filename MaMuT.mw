@@ -46,7 +46,7 @@ The following pages are tutorials that will guide you through MaMuT and walk you
 
 * [[Getting started with MaMuT]] is an introduction tutorial. It will show you how to prepare a dataset for MaMuT and make your first annotations with it.
 
-
+* [[Example mamut.properties file]] contains an example of a <tt>mamut.properties</tt> file, that is used to customize the key-bindings in the MaMuT viewer.
 
 == Developer documentation. ==
 
