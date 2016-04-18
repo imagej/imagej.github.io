@@ -4,7 +4,7 @@
 <li>We wanted to have a source code management system so that we could contribute and update patches to [[ImageJ]].
 
 Originally, this was CVS, now it is [[Git]], and in the meantime [[Wayne Rasband]], the author of ImageJ, also adopted a routine involving Git. So basically, this goal was reached.</li>
-<li>We wanted to provide support for in-browser applets that do not &quot;pop out&quot;.
+<li>We wanted to provide support for in-browser applets that do not "pop out".
 
 In other words, we wanted an applet version of ImageJ which would be embedded into the webpage without having an extra main window. This code is basically working, but there are still many places where extra windows are popping up (e.g. the results table, or error messages). Plus, it has not made it back into upstream ImageJ. So this goal was not reached.</li>
 </ol>
@@ -35,14 +35,14 @@ Typically, the merge step ends in a merge conflict since we have quite some chan
 
 In the future, my plan is to make these changes obsolete, and basically change the merge script into one that takes the current imagej state and puts the stuff into the appropriate src/main/* subdirectories, and adjusts the version in the pom.xml. It might even be so automated that we can let Hudson perform the job.
 
-The changes fall into three categories, with different strategies how to &quot;make them obsolete&quot;:
+The changes fall into three categories, with different strategies how to "make them obsolete":
 
 <ol>
-<li>Changes that we provided for traditional reasons but that will be obsolete with IJ2, such as the &quot;convert to 8-bit&quot; in the &quot;File&gt;Import&gt;Image Sequence&quot; support code or the &quot;fuzzy matching&quot; in the Command Finder.
+<li>Changes that we provided for traditional reasons but that will be obsolete with IJ2, such as the "convert to 8-bit" in the {{bc|File|Import|Image Sequence...}} support code or the "fuzzy matching" in the Command Finder.
 
 Roughly half of these changes I will just forget, while the other half of changes will persist in the IJ1-based Fiji through [[Javassist]].
 </li>
-<li>Changes that actually should live as add-ons to ImageJ, such as the &quot;Plugins&gt;Install Plugin...&quot; plugin. Of course, having it as a Fiji plugin will move its position in the menu, but that does not matter that much.</li>
+<li>Changes that actually should live as add-ons to ImageJ, such as the {{bc|Plugins>Install Plugin...}} plugin. Of course, having it as a Fiji plugin will move its position in the menu, but that does not matter that much.</li>
 <li>The headless stuff. I'll try to make that available both as javassist-enabled runtime adjustment as well as rewritten-by-javassist end-user packages (on demand only, for cases when you cannot have javassist do its job due to security restraints).</li>
 </ol>
 
