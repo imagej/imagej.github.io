@@ -1,4 +1,4 @@
-{{Warning | The following article describes a method of ImageJ1/ImageJ2 integration we explored in 2010, revolving around an <code>ij.process.ImageProcessor</code> extension called <code>ImgLibProcessor</code> which would enable additional transparent usage of [[ImgLib2]] from within ImageJ1, thus greatly expanding the available pixel types and storage strategies. However, after discussion with Wayne Rasband, we settled on a different method of backwards compatibility known as [[ImageJ Legacy]]. The text below is preserved only for historical reasons.}}
+{{Warning | The following article describes a method of ImageJ1/ImageJ2 integration we explored in 2010, revolving around an <code>ij.process.ImageProcessor</code> extension called <code>ImgLibProcessor</code> which would enable additional transparent usage of [[ImgLib2]] from within ImageJ1, thus greatly expanding the available pixel types and storage strategies. However, after discussion with [[Wayne Rasband]], we settled on a different method of backwards compatibility known as [[ImageJ Legacy]]. The text below is preserved only for historical reasons.}}
 {{TOC}}
 == Design ==
 
