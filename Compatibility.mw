@@ -34,4 +34,4 @@ The eventual goal is to migrate all core ImageJ1 plugins to the ImageJ2 paradigm
 
 == See also ==
 
-* The [http://developer.imagej.net/2010/10/29/imagejdev-presentation-imagejconf-2010 ImageJDev talk] from the ImageJ 2010 Conference, for a historical perspective on how this approach to compatibility evolved over time.
+* The [http://conference.imagej.net/2010/curtis-rueden/2010-10-27-ImageJDev.pdf ImageJDev talk] from the ImageJ 2010 Conference, for a historical perspective on how this approach to compatibility evolved over time.
