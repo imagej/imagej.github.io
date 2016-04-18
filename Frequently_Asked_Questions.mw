@@ -314,15 +314,6 @@ Here are several ways to do so:
 #* Click the Source button.
 #* This will open the source from the [http://imagej.net/source/ ImageJ web site online source].
 #* Note: this method is very convenient, but only works for core [[ImageJ 1.x]] sources (e.g., not [[ImageJ2]] code, not [[Fiji]] code, etc.).
-# '''Using fiji.sc's search:'''
-#* Using the Command Finder, locate your command, taking note of the Class column's value. 
-#** E.g., if we type "make binary" we see that the class is <code>ij.plugin.Thresholder</code>.
-#* In your browser, type the name of the class followed by ".java"; e.g.: <code>fiji.sc/Thresholder.java</code>
-#* This will automatically perform a search throughout all code known to fiji.sc for that source file. If there are multiple matches, you will see them all. Clicking on a match opens it in the [http://fiji.sc/git fiji.sc gitweb interface].
-#* Note: this method does a broad search and can find many things, but only Java code. If you want to search for a script instead, you will need to take note of the script argument:
-#** For example, in Command Finder, if you type "scale to dpi" you will see that the "Class" is something like: ''Javascript.Refresh_Javascript_Scripts(".../Fiji.app/plugins//Scripts/Image/Adjust/Scale_to_DPI.js")''
-#** You can find this code by typing: <code>fiji.sc/Scale_to_DPI.js</code>
-#** Scripts written in other languages work similarly.
 # '''Using GitHub:'''
 #* Using the Command Finder, locate your command, taking note of the Class column's value. 
 #** E.g., if we type "make binary" we see that the class is <code>ij.plugin.Thresholder</code>.
