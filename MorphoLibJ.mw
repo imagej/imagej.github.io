@@ -213,7 +213,7 @@ All major methods have a general class with '''static methods''' that allow call
 
 === Scripting MorphoLibJ ===
 One advantage of this organization of the library and the use of public static methods is that it allows very easy and fast prototyping of morphological algorithms and pipelines.
-
+==== Segmentation pipeline prototype====
 Let's see an example in a complete [[BeanShell_Scripting|Beanshell script]] that takes the active 2D or 3D image and finds a reasonable segmentation combining a set of morphological operations (gradient, extended minima and watershed):
 
 <source lang="java">
@@ -252,6 +252,76 @@ resultImage.setCalibration( imp.getCalibration() );
 resultImage.show();
 
 </source>
+==== Label visualization in 3D viewer ====
+Making use of MorphoLibJ's label methods and the [[3D_Viewer|ImageJ 3D Viewer]]'s visualization tools it is quite simple to create a script to display each label of an image as 3D surfaces of the corresponding colors provided by the image look-up table:
+
+<source lang="java">
+// @ImagePlus imp
+
+import inra.ijpb.label.LabelImages;
+import ij3d.Image3DUniverse;
+import ij3d.ContentConstants;
+import org.scijava.vecmath.Color3f;
+import ij.IJ;
+import isosurface.SmoothControl;
+
+// set to true to display messages in log window
+verbose = false;
+
+// set display range to 0-255 so the displayed colors
+// correspond to the LUT values
+imp.setDisplayRange( 0, 255 );
+imp.updateAndDraw();
+
+// calculate array of all labels in image
+labels = LabelImages.findAllLabels( imp );
+
+// create 3d universe
+univ = new Image3DUniverse();
+univ.show();
+
+// read LUT from input image
+lut = imp.getLuts()[0];
+
+// add all labels different from zero (background)
+// to 3d universe
+for( i=0; i<labels.length; i++ )
+{	
+	if( labels[ i ] > 0 )
+	{
+		labelToKeep = new int[ 1 ];
+		labelToKeep[ 0 ] = labels[ i ];
+		if( verbose )
+			IJ.log( "Reconstructing label " + labels[ i ] + "..." );
+		// create new image containing only that label
+		labelImp = LabelImages.keepLabels( imp, labelToKeep );
+		// convert image to 8-bit
+		IJ.run( labelImp, "8-bit", "" );
+		
+		// use LUT label color
+		color = new Color3f( new java.awt.Color( lut.getRed( labels[ i ] ),
+			lut.getGreen( labels[ i ] ),
+			lut.getBlue( labels[ i ] ) ) );
+			
+		if (verbose )
+			IJ.log( "RGB( " + lut.getRed( labels[ i ] ) +", " 
+				+ lut.getGreen( labels[ i ] )
+				+ ", " + lut.getBlue( labels[ i ] ) + ")" );
+
+		channels = new boolean[3];
+		channels[ 0 ] = false;
+		channels[ 1 ] = false;
+		channels[ 2 ] = false;
+		
+		// add label image with corresponding color as an isosurface
+		univ.addContent( labelImp, color, "label-"+labels[i], 0, channels, 2, ContentConstants.SURFACE);
+	}
+}
+
+// launch smooth control
+sc = new SmoothControl( univ );
+</source>
+At the end of the script a dialog is shown to smooth the surfaces at will.
 
 == Documentation ==
 Each [https://github.com/ijpb/MorphoLibJ/releases released version of MorphoLibJ] comes with a [https://github.com/ijpb/MorphoLibJ/releases/download/v1.1.1/MorphoLibJ-manual-v1.1.1.pdf User Manual in PDF format].
