@@ -204,7 +204,7 @@ More scientific databases to come.... Feel free to [mailto:tomancak@mpi-cbg.de s
 
 == Implementation and Acknowledgements ==
 
-The plugin was written as a Jython script during the Madison ImageJ2/Fiji [http://developer.imagej.net/hackathons/2011-madison hackathon] in January 2011. The heavy lifting is performed using [[Jython_Scripting#Inline_java_code_inside_jython:_the_Weaver|in lined]] Java code snippet courtesy of {{Person|Albertcardona}}. All the large scale downsampling is done using {{Person|Saalfeld}} proper [[Downsample|downsampler]]. {{Person|Schindelin}} has helped a lot with the Dialog Listeners and will maintain the plugin for posterity.
+The plugin was written as a Jython script during the [[2011 Hackathon in Madison|Madison ImageJ2/Fiji hackathon in January 2011]]. The heavy lifting is performed using [[Jython_Scripting#Inline_java_code_inside_jython:_the_Weaver|in lined]] Java code snippet courtesy of {{Person|Albertcardona}}. All the large scale downsampling is done using {{Person|Saalfeld}} proper [[Downsample|downsampler]]. {{Person|Schindelin}} has helped a lot with the Dialog Listeners and will maintain the plugin for posterity.
 
 BTW, this plugin and its genesis is a great example of the power of Fiji and the hackathons. I came to the hackathon not knowing anything about python and with only basic knowledge of Java and the ImageJ code base. In ten days I had the plugin written, probably driving the Fiji geeks crazy with my constant basic (or downright stupid) questions. But the take home message for biologists is - it can be done!
 
