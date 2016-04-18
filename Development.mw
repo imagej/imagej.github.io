@@ -1,6 +1,5 @@
 {{Development}}{{TOC}}
 This page provides an overview of ImageJ from the perspective of software development: how to use it from your programs, as well as how to modify or extend its capabilities via [[plugins]].
-{{Clear|left}}
 
 == What is ImageJ? ==
 
