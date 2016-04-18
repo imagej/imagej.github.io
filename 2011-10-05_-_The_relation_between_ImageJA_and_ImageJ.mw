@@ -11,7 +11,7 @@ In other words, we wanted an applet version of ImageJ which would be embedded in
 
 To stay up-to-date, ImageJA is synchronized with ImageJ. There are three (actually four) scripts involved in this synchronization.
 
-The real first script is a notifier which scrapes the [http://imagej.nih.gov/ij/notes.html News section] of the ImageJ site every hour or so and sends me an email when it changed. Whenever I get such a mail I run three scripts in succession, which are all stored in the 'tools' branch of ImageJA.git:
+The real first script is a notifier which scrapes the [http://imagej.nih.gov/ij/notes.html News section of the ImageJ 1.x site] every hour or so and sends me an email when it changed. Whenever I get such a mail I run three scripts in succession, which are all stored in the 'tools' branch of ImageJA.git:
 
 <ol>
 <li><code>commit-new-version.sh</code>
