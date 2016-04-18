@@ -374,8 +374,8 @@ Another possibility for the future is a client/server version of ImageJ that run
 The [[ImageJ]], [[Fiji]] and [[ImageJ2]] projects are very closely related. See [[ImageJ#Flavors]] for a thorough breakdown of the differences.
 
 See also:
-* [http://developer.imagej.net/2011/10/05/relation-between-imageja-and-imagej an ImageJ2 blog post clarifying specifically the relationship between ImageJ and the version used in Fiji]
-* [http://developer.imagej.net/2012/02/01/fiji-updater-has-been-integrated-imagej2-code-base an ImageJ2 blog post illustrating that we move code from Fiji to ImageJ2 as appropriate]
+* [[2011-10-05 - The relation between ImageJA and ImageJ|an ImageJ2 blog post clarifying specifically the relationship between ImageJ and the version used in Fiji]]
+* [[2012-02-01 - The Fiji Updater has been integrated into the ImageJ2 code base|an ImageJ2 blog post illustrating that we move code from Fiji to ImageJ2 as appropriate]]
 
 In short: we all collaborate, but have slightly different focus, hence the different projects and names.
 
