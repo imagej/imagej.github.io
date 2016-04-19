@@ -1,3 +1,4 @@
+{{Development | tools}}
 [https://travis-ci.org/ Travis] is a tool for [[Project_management#Continuous_integration|continuous integration]]. It has excellent integration with [https://github.com/ GitHub], making it a viable alternative to [http://jenkins.imagej.net/ Jenkins] for automating tasks.
 
 = Automatic Deployment of Maven Artifacts =
