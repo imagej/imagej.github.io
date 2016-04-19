@@ -389,3 +389,6 @@ More information can be read here: [[2015-12-22 - The road to Java 8]]
 == Make a redistributable package from a locally customized Fiji ==
 
 Turn your local customized Fiji into a redistributable package that can then be installed on other machines e.g. in your lab: use the [[Make Fiji Package]] command.
+
+[[Category:News]]
+[[Category:ImageJ2]]
