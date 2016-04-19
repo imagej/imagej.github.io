@@ -43,7 +43,9 @@ Developers can benefit from the mirror by adding the following section to their 
 
 == Continuous integration ==
 
-ImageJ has a [[Jenkins]] server: a continuous integration system which automatically checks the code for build and test errors. See the [[Jenkins]] page for details.
+ImageJ has a [[Jenkins]] server: a continuous integration (CI) system which automatically checks the code for build and test errors. See the [[Jenkins]] page for details.
+
+Another option for non-core component development is [[Travis]], a CI system for building code in the cloud.
 
 == Issue tracking ==
 
