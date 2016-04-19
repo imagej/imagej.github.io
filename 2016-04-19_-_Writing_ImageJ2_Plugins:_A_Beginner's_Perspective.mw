@@ -258,7 +258,7 @@ DemoPlugin
 |           !-- lena.tif
 </pre>
 
-After compiling your java files, Maven automatically generates the content of the <code>target</code> folder. Therefore: never commit any files from <code>target</code> to Git!
+After compiling your java files, Maven automatically generates the content of the <code>target</code> folder. Therefore: never commit any files from <code>target</code> to Git! You can tell Git to ignore these files by using a [https://help.github.com/articles/ignoring-files/ .gitignore] file (usually you start by copying [https://github.com/imagej/imagej/blob/95722503b4d2243b2818f8a7b5c2cdf863c5da69/.gitignore an existing one] from another project) 
 
 <pre>
 !-- target
