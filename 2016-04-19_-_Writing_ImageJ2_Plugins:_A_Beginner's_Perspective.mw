@@ -319,7 +319,7 @@ From [http://forum.imagej.net/t/mavenization-and-debugging-in-eclipse/1020 Image
 
 Underscores are needed if your plugin is an ImageJ 1.x style plugin. I.e.: does it implement <code>ij.plugin.PlugIn</code> or <code>ij.plugin.filter.PlugInFilter?</code> Then put an underscore in your JAR file and/or in your class name.
 
-If you write an ImageJ2 command plugin (i.e.: implement the <code>org.scijava.command.Command</code> interface) then the underscore is no longer necessary.
+If you write an ImageJ2 command plugin (i.e.: implement the <code>org.scijava.command.Command</code> interface, with an <code>@Plugin</code> annotation) then the underscore is no longer necessary.
 
 == Make the plugins appear in the menus ==
 
