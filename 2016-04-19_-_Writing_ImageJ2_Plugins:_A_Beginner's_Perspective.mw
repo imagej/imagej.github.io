@@ -217,6 +217,8 @@ and all other links cited in the text!
 
 You can search by class for Maven artifacts. For example, [http://maven.imagej.net/#nexus-search;classname~ij.plugin.PlugIn search for <code>ij.plugin.PlugIn</code>]. There is also a "Find Jar For Class" helper script in Fiji which does a similar thing for JAR files currently on ImageJ's classpath.
 
+If you are comfortable with command-line tools, you can also use the [https://maven.apache.org/plugins/maven-dependency-plugin/ Maven Dependency Plugin] which enables you to do things like download local copies of the dependency jars for inspection.
+
 == Manage Java versions ==
 
 On Linux several java version can be installed. Select the preferred version in a terminal window (e.g. bash):
