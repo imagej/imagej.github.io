@@ -17,6 +17,8 @@
 {{MenuItem | [[Git]] }}
 {{MenuItem | [[Maven]] }}
 {{MenuItem | [[IDEs]] }}
+{{MenuItem | [[Jenkins]] }}
+{{MenuItem | [[Travis]] }}
 | {{#ifeq:{{{1}}}|tools||collapsed}}
 }}
 
