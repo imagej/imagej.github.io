@@ -1,7 +1,6 @@
-{{Development | tutorials}}
-<div style="float: left; padding-right: 1em">__TOC__</div>
+{{Development | tutorials}}{{TOC}}
 This article explains how to install, configure and use Eclipse to develop [[ImageJ]] [[components]] and [[plugins]]. Directions correspond to Eclipse 4.4 Luna, and may need adjustment for other versions.
-{{Clear|left}}
+
 = Initial setup =
 
 == Install the Java Development Kit ==
