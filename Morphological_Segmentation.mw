@@ -3,7 +3,7 @@
 | software               = IJPB-plugins
 | author                  = {{Person|Iarganda}}, David Legland
 | maintainer             = {{Person|Iarganda}}
-| source                 = {{GitHub|org=ijpb|repo=ijpb-plugins}}
+| source                 = {{GitHub|org=ijpb|repo=MorphoLibJ}}
 | released               = July 3<sup>rd</sup>, 2014
 | latest version         = January 12<sup>th</sup>, 2016 ([[MorphoLibJ]] v1.1.1)
 | status                 = stable, active
