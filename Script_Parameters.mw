@@ -12,6 +12,13 @@ The rules for <code>@parameter</code> use are as follows:
 <li><code>@OUTPUT type outputName</code> will declare the variable of the specified name as an output parameter with the given type.</li>
 </ol>
 
+{{Testimonial
+| quote = zomg UIs are so easy now<br>done by lunchtime
+| person = {{Person|kephale}}, Clojure developer
+| gravatar = 9e4ed4484fd425f3f178bfeed4777b31
+| source = https://gitter.im/fiji/fiji/archives/2016/04/20
+| float = right
+}}
 For example, if we look at the [https://github.com/scijava/scripting-jython/blob/scripting-jython-0.2.0/src/main/resources/script_templates/Python/Greeting.py Greeting.py] [[Script_Templates|template]] supplied with Fiji:
 
 <source lang="python">
