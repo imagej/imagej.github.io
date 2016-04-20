@@ -50,31 +50,31 @@ A list of possible data types and the corresponding widgets is provided:
 | '''Data type'''
 | '''Widget type'''
 |-
-| <code>boolean</code> {{!}} <code>Boolean</code>
+| | <code>boolean</code> {{!}} <code>Boolean</code>
 | checkbox
 |-
-| <code>byte</code> {{!}} <code>short</code> {{!}} <code>int</code> {{!}} <code>long</code>
+| | <code>byte</code> {{!}} <code>short</code> {{!}} <code>int</code> {{!}} <code>long</code>
 | numeric field
 |-
-| <code>Byte</code> {{!}} <code>Short</code> {{!}} <code>Integer</code> {{!}} <code>Long</code>
+| | <code>Byte</code> {{!}} <code>Short</code> {{!}} <code>Integer</code> {{!}} <code>Long</code>
 | numeric field
 |-
-| <code>BigInteger</code> {{!}} <code>BigDecimal</code>
+| | <code>BigInteger</code> {{!}} <code>BigDecimal</code>
 | numeric field
 |-
-| <code>char</code> {{!}} <code>Character</code> {{!}} <code>String</code>
+| | <code>char</code> {{!}} <code>Character</code> {{!}} <code>String</code>
 | text field
 |-
-| <code>Dataset</code> {{!}} <code>ImagePlus</code>
+| | <code>Dataset</code> {{!}} <code>ImagePlus</code>
 | (>=2 images) triggers a dropdown list
 |-
-| <code>ColorRGB</code>
+| | <code>ColorRGB</code>
 | color chooser
 |-
-| <code>Date</code>
+| | <code>Date</code>
 | date chooser
 |-
-| <code>File</code>
+| | <code>File</code>
 | file chooser (opener)
 |}
 
