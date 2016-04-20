@@ -1,4 +1,4 @@
-{{Notice | The following article was written by [http://forum.imagej.net/users/Scrivello Karl Heinz] as he researched how to write plugins for [[ImageJ2]]. It is reproduced here as a [[News]] post in the hope that it may help others, particularly during 2016 while the information continues to be most accurate and relevant.}}
+{{Notice | The following article was written by {{Person|Scrivello}} as he researched how to write plugins for [[ImageJ2]]. It is reproduced here as a [[News]] post in the hope that it may help others, particularly during 2016 while the information continues to be most accurate and relevant.}}
 
 {{TOC}}
 = Writing ImageJ2 Plugins: A Beginner's Perspective =
