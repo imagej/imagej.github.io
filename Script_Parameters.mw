@@ -46,18 +46,37 @@ When the script is completed, any <code>@OUTPUT</code> variables are handled by 
 
 A list of possible data types and the corresponding widgets is provided:
 
-<table>
-<tr><td><b>Data type</b></td><td><b>Widget type</b></td></tr>
-<tr><td>boolean | Boolean</td><td>	checkbox</td></tr>
-<tr><td>byte | short | int | long</td><td>	numeric field</td></tr>
-<tr><td>Byte | Short | Integer | Long</td><td>	numeric field</td></tr>
-<tr><td>BigInteger | BigDecimal</td><td>	numeric field</td></tr>
-<tr><td>char | Character | String</td><td>	text field</td></tr>
-<tr><td>Dataset | ImagePlus</td><td> (>=2 images) triggers a dropdown list</td></tr>
-<tr><td>ColorRGB</td><td>color chooser</td></tr>
-<tr><td>Date</td><td>	date chooser</td></tr>
-<tr><td>File</td><td>	file chooser (opener)</td></tr>
-</table>
+{| style="wikitable nicetable"
+| '''Data type'''
+| '''Widget type'''
+|-
+| <code>boolean</code> {{!}} <code>Boolean</code>
+| checkbox
+|-
+| <code>byte</code> {{!}} <code>short</code> {{!}} <code>int</code> {{!}} <code>long</code>
+| numeric field
+|-
+| <code>Byte</code> {{!}} <code>Short</code> {{!}} <code>Integer</code> {{!}} <code>Long</code>
+| numeric field
+|-
+| <code>BigInteger</code> {{!}} <code>BigDecimal</code>
+| numeric field
+|-
+| <code>char</code> {{!}} <code>Character</code> {{!}} <code>String</code>
+| text field
+|-
+| <code>Dataset</code> {{!}} <code>ImagePlus</code>
+| (>=2 images) triggers a dropdown list
+|-
+| <code>ColorRGB</code>
+| color chooser
+|-
+| <code>Date</code>
+| date chooser
+|-
+| <code>File</code>
+| file chooser (opener)
+|}
 
 By implementing org.scijava.widget.InputWidget it is possible to extend this list.
 
