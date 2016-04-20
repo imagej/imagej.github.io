@@ -32,7 +32,7 @@ We see that an input parameter <code>name</code> of type <code>String</code> is 
 [[File:ScriptParams.png|450px]]
 
 
-We could also run this script [[Headless#Running_scripts_in_headless_mode|headlessly]], thanks to the general nature of <code>@parameters</code>.
+We could also run this script [[Scripting Headless|headlessly]], thanks to the general nature of <code>@parameters</code>.
 
 When the script is completed, any <code>@OUTPUT</code> variables are handled by the framework, based on their type. In this case we expect the <code>greeting</code> variable to be printed, since it is a <code>string</code>.
 
