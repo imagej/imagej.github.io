@@ -149,6 +149,20 @@
 | pages = 3009-3011
 | pmid = 22962343}} ({{Scholar | cluster=17114668151840635304}}).
 
+| QuickPALM = {{Citation | last = Henriques | first = R.
+| last2 = Lelek | first2 = M.
+| last3 = Fornasiero | first3 = E. F.
+| last4 = Valtorta | first4 = , F.
+| last5 = Zimmer | first5 = , C.
+| last6 = Mhlanga | first6 = M. M.
+| year = 2010
+| journal = Nature methods
+| url = http://www.nature.com/nmeth/journal/v7/n5/full/nmeth0510-339.html
+| title = QuickPALM: 3D real-time photoactivation nanoscopy image processing in ImageJ
+| volume = 7(5)
+| pages = 339-340
+| pmid = 20431545}} ({{Scholar | cluster=1412682450072191801}}).
+
 | SciJava Common = Rueden, C., Schindelin, J., Hiner, M. & Eliceiri, K. (2015). SciJava Common [Software]. http://scijava.org/.
 | SCIFIO = Hiner, M., Rueden, C. & Eliceiri, K. (2015). SCIFIO [Software]. http://scif.io/.
 | ImageJ Ops = Rueden, C., Dietz, C., Horn, M., Schindelin, J., Northan, B., Berthold, M. & Eliceiri, K. (2015). ImageJ Ops [Software]. http://imagej.net/Ops.
