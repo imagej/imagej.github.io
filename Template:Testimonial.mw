@@ -1,0 +1,32 @@
+<includeonly><table style="border: 1px solid lightgray; border-radius: 1em; padding: 0.5em 1em 0.5em 1em{{{#if:{{{float|}}}|; float: {{{float}}}|}}{{{#if:{{{width|}}}|; width: {{{width}}}|}}"><tr>
+<td style="padding-right: 1em; vertical-align: top; padding-top: 1em"><img style="border-radius: 50%" src="http://gravatar.com/avatar/{{{gravatar}}}"></td>
+<td rowspan=2>
+<div style="font-family: Times, Helvetica, sans-serif; font-size: 17px"><!-- Quote -->
+&ldquo;{{{quote}}}&rdquo;<br>
+</div><!-- End quote -->
+<div style="font-family: Times, Helvetica, sans-serif; font-size: 15px; padding-left: 1em">—{{{person}}}</div>
+<div style="font-size: 10px"></div>
+</td>
+</tr>
+<tr><td style="font-size: 10px">[ [{{{source}}} source] ]</td>
+</tr></table></includeonly><noinclude>This template generates a testimonial box with quote and attribution.
+== Usage ==
+<pre>
+{{Testimonial
+| quote = If this is coffee, please bring me some tea; but if this is tea, please bring me some coffee.
+| person = Abraham Lincoln, President of the United States
+| gravatar = 7194e8d48fa1d2b689f99443b767316c
+| source = http://www.brainyquote.com/quotes/quotes/a/abrahamlin100275.html
+| width = 30%
+| float = right
+}}
+</pre>
+{{Testimonial
+| quote = If this is coffee, please bring me some tea; but if this is tea, please bring me some coffee.
+| person = Abraham Lincoln, President of the United States
+| gravatar = 7194e8d48fa1d2b689f99443b767316c
+| source = http://www.brainyquote.com/quotes/quotes/a/abrahamlin100275.html
+| width = 30%
+| float = right
+}}
+</noinclude>
