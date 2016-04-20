@@ -1,4 +1,4 @@
-<includeonly><table style="border: 1px solid lightgray; border-radius: 1em; padding: 0.5em 1em 0.5em 1em{{{#if:{{{float|}}}|; float: {{{float}}}}}{{{#if:{{{width|}}}|; width: {{{width}}}}}"><tr>
+<includeonly><table style="border: 1px solid lightgray; border-radius: 1em; padding: 0.5em 1em 0.5em 1em{{#if:{{{float|}}}|; float: {{{float}}}}}{{#if:{{{width|}}}|; width: {{{width}}}}}"><tr>
 <td style="padding-right: 1em; vertical-align: top; padding-top: 1em"><img style="border-radius: 50%" src="http://gravatar.com/avatar/{{{gravatar}}}"></td>
 <td rowspan=2>
 <div style="font-family: Times, Helvetica, sans-serif; font-size: 17px"><!-- Quote -->
