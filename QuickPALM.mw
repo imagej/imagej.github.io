@@ -11,14 +11,8 @@
 }}== What is QuickPALM and what is it useful for?==
 The QuickPALM ImageJ plugin enables PALM/STORM 2D/3D/4D particle detection and image reconstruction. It uses fast methods to make the reconstruction very quickly, or even in real time. 
 
-== Citation ==
-Nature Methods 7, 339 - 340 (2010) 
-doi:10.1038/nmeth0510-339
-
-QuickPALM: 3D real-time photoactivation nanoscopy image processing in ImageJ
-
-Ricardo Henriques, Mickael Lelek, Eugenio F Fornasiero, Flavia Valtorta, Christophe Zimmer & Musa M Mhlanga
-
+== Publication ==
+{{Publication | QuickPALM}}
 
 For Full Documentation, and details of how to build your own super resolution system, please visit:
 [http://code.google.com/p/quickpalm/ QuickPALM pages at Google Code ]
