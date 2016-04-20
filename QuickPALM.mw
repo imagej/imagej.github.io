@@ -1,8 +1,8 @@
 {{Infobox
 | name                   = QuickPALM
 | software               = ImageJ / Fiji
-| author                 =  Ricardo Henriques
-| maintainer             = Dan White / Ricardo Henriques
+| author                 =  {{Person | NanoJ}}
+| maintainer             = Dan White / {{Person | NanoJ}}
 | filename               = QuickPALM.jar?
 | released               = June 2010
 | latest version         = June 2010 v1.1
