@@ -16,8 +16,7 @@ All program state, such as available plugins, is accessible from a root object k
 
 {{ImageJ1
 | Whereas [[ImageJ1]] is a [[wikipedia:Singleton pattern|singleton]], with static methods to access much of its functionality, [[ImageJ2]] encapsulates its program state in the application context, allowing multiple simultaneous such contexts in the same JVM.
-}}
-ImageJ encapsulates its various parts as separate "services" that provide related state functionality and track related program state. An instance of the {{Javadoc | package = net/imagej | class = ImageJ}} class is nothing more than a collection of these services; this instance is referred to as the "application gateway." Services are defined as interfaces, with concrete implementations as plugins. This design provides [http://c2.com/cgi/wiki?SoftwareSeam seams] in the right places so that behavior at every level can be customized and overridden.
+}}ImageJ encapsulates its various parts as separate "services" that provide related state functionality and track related program state. An instance of the {{Javadoc | package = net/imagej | class = ImageJ}} class is nothing more than a collection of these services; this instance is referred to as the "application gateway." Services are defined as interfaces, with concrete implementations as plugins. This design provides [http://c2.com/cgi/wiki?SoftwareSeam seams] in the right places so that behavior at every level can be customized and overridden.
 
 === SciJava services ===
 
