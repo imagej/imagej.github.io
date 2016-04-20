@@ -75,7 +75,7 @@ A list of possible data types and the corresponding widgets is provided:
 | date chooser
 |-
 | | <code>File</code>
-| file chooser (opener)
+| file chooser
 |}
 
 By implementing {{Javadoc | project = SciJava | package = org/scijava/widget | class = InputWidget}} it is possible to extend this list.
