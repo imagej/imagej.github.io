@@ -78,7 +78,7 @@ A list of possible data types and the corresponding widgets is provided:
 | file chooser (opener)
 |}
 
-By implementing org.scijava.widget.InputWidget it is possible to extend this list.
+By implementing {{Javadoc | project = SciJava | package = org/scijava/widget | class = InputWidget}} it is possible to extend this list.
 
 == Parameter properties ==
 
