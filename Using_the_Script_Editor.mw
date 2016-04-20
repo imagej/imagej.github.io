@@ -6,8 +6,7 @@
 | source                 = {{GitHub|org=imagej|repo=imagej-ui-swing|source=net/imagej/ui/swing/script/ScriptEditor.java}}
 | released               = 11 Sep 2008
 | status                 = active
-}}<div style="float: left; padding-right: 10px">__TOC__</div>The script editor is an invaluable help when writing scripts in any of ImageJ's supported [[Scripting comparisons|languages]].{{Scripting}}
-{{Clear|left}}
+}}{{TOC}}The script editor is an invaluable help when writing scripts in any of ImageJ's supported [[Scripting comparisons|languages]].{{Scripting}}
 == Features ==
 ;Text Editing
 * Full undo support
@@ -32,7 +31,6 @@
 * Bookmarks
 * Tabs for easy switching between open files
 * Navigation shortcuts
-
 
 == Usage ==
 === Starting the editor ===
