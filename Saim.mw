@@ -35,6 +35,9 @@ Saim Fit will fit each pixel in the input stack and output a stack with 4 images
 
 
 == History ==
+* 1.0.6 (2016-04-21): Added capability to export data and predictions from Inspect module. 
+* 1.0.5 (2016-04-05): Most settings are now shared between all 3 plugins and are remembered.  Multiple start heights can now be entered in the fit module and the resulting fit with the lowest error will be reported.
+* 1.0.4 (2016-4-05): Multiple heights can be entered in Inspect as a comma separated list.  They will also be used to fit against the data and the best fit will be reported.
 * 1.0.2 (2016-01-22): Added capability to export predicted data from Plot module
 * 1.0.1 (2016-01-12): Changed calculation of rTE to what appears to be the correct formula
 
