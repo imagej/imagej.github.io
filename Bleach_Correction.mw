@@ -1,8 +1,8 @@
 {{Infobox
 | software               = ImageJ
 | name                   = Bleach Correction
-| maintainer             = Kota Miura
-| author                 = Kota Miura, Jens Rietdorf
+| maintainer             = {{Person|Miura}}
+| author                 = {{Person|Miura}}, Jens Rietdorf
 | source                 = {{GitHub|org=fiji|repo=CorrectBleach}}
 | released               = 18/04/2012
 | latest version         = 18/04/2012
