@@ -29,10 +29,9 @@ This plugin consists of three parts.  "Saim Plot" plots theoretical predictions 
 [[File:SaimInspect.png ]] [[File:SaimInspectOutput.png|500px]]
 
 
-Saim Fit will fit each pixel in the input stack and output a stack with 4 images, the first one is the height map (in nm), the second image has the r-squared values (an indication of the goodness of fit with values between 0 and 1, the closer to 1, the better the fit), the third image shows the values for "A", and the last image the values for "B". Saim Fit will use as many thread as you allow in Edit > Options > Memory&Threads and it is best to set that value to the number of processors in your computer.   If there is significant movement while taking the stack, you will first need to "de-jitter" using another ImageJ plugin (such as StackReg).  The output image will have the Fire LUT by default. Do note the "Threshold" parameter.  Only pixels that are higher in intensity than the threshold will be analyzed.  This can greatly reduce the analysis time ("dark" pixels will be hard to fit and are usually uninteresting anyways).  
+Saim Fit will fit each pixel in the input stack and output a stack with 4 images, the first one is the height map (in nm), the second image has the r-squared values (an indication of the goodness of fit with values between 0 and 1, the closer to 1, the better the fit), the third image shows the values for "A", and the last image the values for "B". Saim Fit will use as many thread as you allow in Edit > Options > Memory&Threads and it is best to set that value to the number of cores in your computer.   If there is significant movement while taking the stack, you will first need to "de-jitter" using another ImageJ plugin (such as StackReg).  The output image will have the Fire LUT by default. Do note the "Threshold" parameter.  Only pixels that are higher in intensity than the threshold will be analyzed.  This can greatly reduce the analysis time ("dark" pixels will be hard to fit and are usually uninteresting anyways).  
 
 [[File:SaimFit.png]]  [[File:SaimFitOutput.jpg]]
-
 
 == History ==
 * 1.0.7 (2016-04-22): Fixed bug that caused most pixels not to be fit
