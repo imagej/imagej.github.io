@@ -2,7 +2,7 @@
 
 [[Image:Screenshot-TrakEM2_basics_tutorial.png|thumb|250px|link=TrakEM2 basics tutorial|TrakEM2 basic tutorial]]
 
-This is the basic tutorial for TrakEM2. '''If you are new to TrakEM2, please start by watching [[TrakEM2_basics_tutorial|this tutorial]]'''. It includes:
+This is the [[TrakEM2_basics_tutorial|basic tutorial for TrakEM2]]. '''If you are new to TrakEM2, please start by watching [[TrakEM2_basics_tutorial|this tutorial]]'''. It includes:
 
 * Importing an image stack.
 * Registering stack slices manually, using color overlays and affine transforms.
