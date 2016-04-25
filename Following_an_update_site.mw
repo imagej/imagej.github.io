@@ -36,6 +36,8 @@ Once you are happy with what will be installed, click on the ''Apply Changes'' b
 
 == Verify install ==
 
+{{Warning | An update is not finalized until '''restarting the application.''' After initiating an update, '''do not modify your ImageJ installation manually''' until after restarting at least once. }}
+
 Restart ImageJ as instructed to finish the install. Check to see that the plugin was installed:
 
 [[Image:AddPluginSite-7.jpg]]
