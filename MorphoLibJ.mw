@@ -152,6 +152,7 @@ Some functions are specific for the processing of binary images, namely:
 * '''Connected Components Labeling''' transforms the binary image into a label image by assigning a specific number (label) to each connected component.
 * '''Chamfer Distance Map''' computes an approximate distance map from a binary image between each foreground pixel to the nearest background pixel.
 * '''Geodesic Distance Map''' computes the geodesic distance between each foreground pixel of a binary mask image to the closest pixel of a marker image, while staying within the particle represented by the mask image.
+[[Image:MorphoLibJ-geodesic-distance-example.png|thumb|350px|right|Computation of the geodesic distance map on a binary image from the DRIVE database (Staal et al., 2004). Left: original image with marker superimposed in red. Right: result of geodesic distance map, hot colors correspond to large distances, cold colors correspond to small distances.]]
 * '''Chamfer Distance Map 3D''' computes an approximate distance map from a 3D binary image between each foreground voxel to the nearest background voxel.
 * '''Keep / Remove Largest Region''' identifies the largest connected component, and keeps it or removes it.
 * '''Size Opening''' computes the size (area in 2D, volume in 3D) of each connected component, and remove all particles whose size is below the value specified by the user.
