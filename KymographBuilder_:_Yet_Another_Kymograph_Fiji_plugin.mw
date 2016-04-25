@@ -15,6 +15,8 @@ __TOC__
 
 ''KymographBuilder is Yet Another Kymograph Fiji plugin.''
 
+Features are :
+
 * Build kymograph from single or multiple lines (a polyline).
 * Build kymograph for images with multiple channels.
 * Take into account the width of the line using maximum projection along its thickness.
