@@ -1,5 +1,14 @@
 The ImageJ Common library contains ImageJ's core image data model, based on the [[ImgLib2]] library for multidimensional image data processing, as well as the corresponding core image display logic for user interfaces, based on the [[SciJava Common]] application framework.
 
+{{Testimonial
+| quote = I Have to a admit that IJ2 API and Java 8 make the process very smooth
+Much better than few years ago :-0
+| person = {{Person|hadim}}, Python developer
+| gravatar = bfb4b22436c24b136c722ce797d42cbe
+| source = https://gitter.im/imagej/imagej/archives/2016/04/25
+| width = 400px
+| float = right
+}}
 Using [[ImgLib2]] offers several benefits:
 
 * Support for many different data types (different combinations of bit depths, signedness, and integer/real representations).
