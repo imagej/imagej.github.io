@@ -1,0 +1,27 @@
+{{Infobox
+| name                  = KymographBuilder
+| logo                    = 
+| software              = Fiji
+| author                = Hadrien Mary
+| maintainer            = Hadrien Mary
+| source                = {{GitHub|org=hadim|repo=KymographBuilder}}
+| released              = 24/04/2016
+| status                = v1.1.1, stable
+| category              = 
+}}
+__TOC__
+
+== Presentation ==
+
+''KymographBuilder is Yet Another Kymograph Fiji plugin.''
+
+* Build kymograph from single or multiple lines (a polyline).
+* Build kymograph for images with multiple channels.
+* Take into account the width of the line using maximum projection along its thickness.
+* Built from scratch and use the Imagej2 Ecosystem.
+* Fast and easy to use.
+
+How to use :
+* Draw a line : it can be a polyline and you can also set the thickness that will be take into account by the plugin.
+* Launch KymographBuilder : Plugins ► Kymograph ► KymographBuilder
+* You're done.
