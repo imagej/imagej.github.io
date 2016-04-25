@@ -174,7 +174,7 @@ Some functions are specific for the processing of label images, in which the pix
 
 == Library interoperability ==
 A key design concept of MorphoLibJ was the modularity of the implementation to facilitate its reusability.
-Three layers with different programming technicity can be identified:
+Three layers with different programming abstraction can be identified:
 * For final users, plugins provide graphical display and intuitive tuning of parameters. Such plugins can easily be incorporated into a macro:
 <source lang="java">
 // Calls the Regional Min/Max plugin on current ImagePlus instance
