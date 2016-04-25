@@ -1,0 +1,1 @@
+Computation of the geodesic distance map on a binary image from the DRIVE database (Staal et al., 2004). Left: original image with marker superimposed in red. Right: result of geodesic distance map, hot colors correspond to large distances, cold colors correspond to small distances.
