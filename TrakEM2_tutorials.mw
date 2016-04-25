@@ -80,7 +80,7 @@ See also [http://www.ini.uzh.ch/~acardona/trakem2_manual.html#measure_arealist A
 
 [[Image:Screenshot-TrakEM2-tutorial-add-layers.png|thumb|250px|link=TrakEM2 add more sections/layers tutorial|TrakEM2 adding layers to existing project]]
 
-Here you will learn how to:
+[[TrakEM2_add_more_sections/layers_tutorial|Here]] you will learn how to:
 
 * Open an image sequence as a virtual stack in Fiji.
 * Calibrate the virtual stack.
