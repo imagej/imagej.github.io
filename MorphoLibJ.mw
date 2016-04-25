@@ -147,7 +147,7 @@ Other measurements are provided for pairs of grayscale and label 2D or 3D images
 ==Binary and label image utilities==
 The MorphoLibJ library provides several utility functions for processing binary and label images.
 === Utilities for binary images ===
-[[Image:MorphoLibJ-grains-binary-label-distance.png|thumb|700px|right|The MorphoLibJ library provides several utility functions for processing binary and label images.]]
+[[Image:MorphoLibJ-grains-binary-label-distance.png|thumb|700px|right|Binary image, result of connected components labeling, and computation of distance map on the complement of binary image.]]
 Some functions are specific for the processing of binary images, namely:
 * '''Connected Components Labeling''' transforms the binary image into a label image by assigning a specific number (label) to each connected component.
 * '''Chamfer Distance Map''' computes an approximate distance map from a binary image between each foreground pixel to the nearest background pixel.
