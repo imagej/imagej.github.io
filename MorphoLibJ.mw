@@ -150,8 +150,10 @@ The MorphoLibJ library provides several utility functions for processing binary 
 [[Image:MorphoLibJ-grains-binary-label-distance.png|thumb|700px|right|The MorphoLibJ library provides several utility functions for processing binary and label images.]]
 Some functions are specific for the processing of binary images, namely:
 * '''Connected Components Labeling''' transforms the binary image into a label image by assigning a specific number (label) to each connected component.
-* '''Chamfer Distance Map''' computes an approximate distance map between each foreground pixel to the nearest background pixel.
-* '''Keep / Remove Largest Region''' identifies the largest connected component, and keep it or remove it.
+* '''Chamfer Distance Map''' computes an approximate distance map from a binary image between each foreground pixel to the nearest background pixel.
+* '''Geodesic Distance Map''' computes the geodesic distance between each foreground pixel of a binary mask image to the closest pixel of a marker image, while staying within the particle represented by the mask image.
+* '''Chamfer Distance Map 3D''' computes an approximate distance map from a 3D binary image between each foreground voxel to the nearest background voxel.
+* '''Keep / Remove Largest Region''' identifies the largest connected component, and keeps it or removes it.
 * '''Size Opening''' computes the size (area in 2D, volume in 3D) of each connected component, and remove all particles whose size is below the value specified by the user.
 
 Algorithms work for both 2D or 3D images. Default connectivity 4 (resp. 6) is used for 2D (resp. 3D) images.
