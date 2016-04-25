@@ -40,7 +40,7 @@ See also the feature extraction and alignment [http://www.ini.uzh.ch/~acardona/h
 
 [[Image:Screenshot-TrakEM2-Manual-Segmentation-Modes-Tutorial.png|thumb|250px|link=TrakEM2_segmentation_modes_tutorial|TrakEM2 manual segmentation modes]]
 
-How to manually segment cells using the 3 segmentation modes:
+[[TrakEM2_segmentation_modes_tutorial|Tutorial on how to manually segment cells using the 3 segmentation modes]]:
 
 ; Overlap
 : multiple arealists can coexist in space (the normal mode; arealists are independent).
