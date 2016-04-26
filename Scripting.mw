@@ -21,6 +21,7 @@ ImageJ's [[Script Editor]] supports the following languages:
 * [[Javascript Scripting|JavaScript]]
 * [[Clojure Scripting|Lisp (Clojure)]]
 * [[Jython Scripting|Python (Jython)]]
+* [[Renjin Scripting|R (Renjin)]]
 * [[JRuby Scripting|Ruby (JRuby)]]
 
 Additionally, these languages can be installed via [http://fiji.sc/Update_Sites update sites]:
