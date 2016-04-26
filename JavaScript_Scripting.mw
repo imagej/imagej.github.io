@@ -695,12 +695,13 @@ A good strategy for multithreading involves carefully considering the task to pa
 Despite the simple example below, the <i>multithreader</i> framework function allows variable amount of arguments to be passed, as illustrated in the complete plugin {{GitHub|repo=fiji|path=plugins/Examples/Multithreaded_Image_Processing_in_Javascript.js|label=Multithreaded_Image_Processing_in_Javascript.js}}. The script shows how to generate an image with random pixel values in a multithreaded manner, and how the choice of chunks to process in parallel is made for reasonable effectiveness.
 
 <source lang="javascript">
-// Now, abstract away the multithreading framework into a function
-// that takes another function as argument:
+// Import all classes that are used more than once:
+importClass(Packages.ij.IJ);
+importClass(Packages.java.lang.Thread);
 
 function multithreader(fun, start, end) {
-        var threads = new java.lang.reflect.Array.newInstance(java.lang.Thread, Runtime.getRuntime().availableProcessors());
-        var ai = new AtomicInteger(start);
+        var threads = java.lang.reflect.Array.newInstance(Thread.class, java.lang.Runtime.getRuntime().availableProcessors());
+        var ai = new java.util.concurrent.atomic.AtomicInteger(start);
         // Prepare arguments: all other arguments passed to this function
         // beyond the mandatory arguments fun, start and end:
         var args = new Array();
@@ -723,7 +724,7 @@ function multithreader(fun, start, end) {
         }
         // start all threads
         for (var i = 0; i < threads.length; i++) {
-                threads[i] = new Thread(new Runnable(body)); // automatically as Runnable
+                threads[i] = new Thread(new java.lang.Runnable(body)); // automatically as Runnable
                 threads[i].start();
         }
         // wait until all threads finish
