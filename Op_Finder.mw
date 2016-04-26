@@ -1,0 +1,33 @@
+{{Infobox
+| software               = ImageJ
+| name                   = Op Finder
+| author                 = {{Person|Hinerm}}
+| maintainer             = {{Person|Hinerm}}, {{Person|Ctrueden}}
+| filename               = {{Maven | g=net.imagej | a=op-finder }}
+| source                 = {{GitHub|org=imagej|repo=op-finder}}
+| released               = April 2016
+| latest version         = April 2016
+| status                 = beta
+| category               = [[:Category:Plugins|Plugins]]
+}}
+
+# The Op Finder
+ 
+Utility for browsing, learning about and running all available Ops
+ 
+# Getting started
+
+shift + L
+
+# Views
+ 
+## User
+
+## Developer
+
+# Things to do
+## Running Ops
+
+## Copy and Paste
+
+## Code Snippets
