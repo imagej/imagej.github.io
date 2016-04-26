@@ -3,8 +3,9 @@
 | software               = ImageJ
 | author                 = Benjamin Schmid
 | maintainer             = Benjamin Schmid
-| filename               = VIB_.jar
-| source                 = VIB_.jar
+| filename               = {{Maven | g=sc.fiji | a=VIB_}}
+| source                 = {{GitHub|org=fiji|repo=VIB}}
+| latest version         = 3.0.0, December 17<sup>th</sup>, 2015
 | status                 = beta
 }}
 
