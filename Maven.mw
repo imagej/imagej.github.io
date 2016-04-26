@@ -124,6 +124,8 @@ Most popular open source libraries upon which you might want to depend are store
 
 For example, let's suppose you want to depend on the [http://snakeyaml.org snakeyaml] library. Typing "snakeyaml" into the search box at [http://maven.imagej.net maven.imagej.net] tells us to use a <code>groupId</code> of <code>org.yaml</code>, <code>artifactId</code> of <code>snakeyaml</code>, with available versions ranging from <code>1.4</code> to <code>1.10</code>. In the case of many results, you can click the "Drill down" link to view more details of that specific GAV combination. You can also click an entry to get a formatted <code>dependency</code> block for direct copy-pasting into your POM.
 
+{{Tip | tip=If your dependencies are in Maven Central, you can use the [https://github.com/ingenieux/quickdeps quickdeps] tool to quickly generate dependency blocks, by scanning your project's bytecode.}}
+
 = Depending on libraries outside the core repositories =
 
 If you need to depend on a library that is not present in either Maven Central or the ImageJ Maven repository, first double check the project's web site for any documentation on using their library with Maven. They might provide their own public Maven repository which you could use instead (by [http://maven.apache.org/guides/mini/guide-multiple-repositories.html adding a <code>&lt;repository&gt;</code> to the <code>&lt;repositories&gt;</code> section of your POM]).
