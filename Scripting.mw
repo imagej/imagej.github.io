@@ -23,6 +23,7 @@ ImageJ's [[Script Editor]] supports the following languages:
 * [[Jython Scripting|Python (Jython)]]
 * [[Renjin Scripting|R (Renjin)]]
 * [[JRuby Scripting|Ruby (JRuby)]]
+* [[Scala Scripting|Scala]]
 
 Additionally, these languages can be installed via [http://fiji.sc/Update_Sites update sites]:
 * [[MATLAB Scripting|MATLAB]]
