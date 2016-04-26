@@ -39,6 +39,7 @@ There are two ways:
 <b>Local</b> variables are also <b>faster</b>, because they can be [http://www.mozilla.org/rhino/perf.html efficiently optimized for access].
 Examples:
 <source lang="javascript">
+importClass(Packages.ij.IJ);
 // global variable 'imp'
 imp = IJ.getImage();
 
@@ -50,6 +51,7 @@ for (var i = 0; i < 10; i++ ) {
 
 Mixing global and local variables in a sensible way:
 <source lang="javascript">
+importClass(Packages.ij.IJ);
 // global variables 'base_url' and 'names'
 // and local variable 'imp', the latter visible within the loop only:
 
@@ -73,6 +75,7 @@ There are both Javascript arrays and native java arrays.
 ==== Javascript arrays ====
 There are many ways to create a Javascript array. Here are a few:
 <source lang="javascript">
+importClass(Packages.ij.IJ);
 // One dimensional:
 var names = ["blobs.gif", "boats.gif", "bridge.gif"];
 IJ.log("We have " + names.length + " names.");
@@ -93,6 +96,7 @@ IJ.log( "Number of Y coords: " + coords[1].length );
 
 Arrays in Javascript are extremely flexible:
 <source lang="javascript">
+importClass(Packages.ij.IJ);
 // Empty arrays:
 var names = new Array();
 IJ.log("First name is: " + names[0]); // --> prints "undefined", i.e. null.
@@ -112,6 +116,7 @@ names[3] = new Array();
 names[3][0] = "Ok";
 names[3][1] = "Good";
 names[3][2] = ["Arrays", "are", "very", "flexible"]; // another array!
+IJ.log(names);
 </source>
 
 ==== Native Java arrays ====
@@ -120,20 +125,31 @@ For example, to create an array of pixels:
 <source lang="javascript">
 width = 512
 height = 512
-pixels = new java.lang.reflect.Array.newInstance(java.lang.Byte.TYPE, width * height);
+pixels = java.lang.reflect.Array.newInstance(java.lang.Byte.class, width * height);
+print(pixels);
+print(pixels.length);
 </source>
 To manipulate such arrays, just do so as if they were Javascript arrays. Beware, though, that now you are limited to numerical indices only, and within the array size only!
 <source lang="javascript">
+width = 512
+height = 512
+pixels = java.lang.reflect.Array.newInstance(java.lang.Byte.class, width * height);
+print(pixels[10]);
+java.util.Arrays.fill(pixels, new java.lang.Byte(0));
+print(pixels[10]);
 // Subtract 25 to each pixel:
 for (var i = 0; i < pixels.length; i++) {
   pixels[i] -= 25;
 }
+print(pixels[10]);
 </source>
 Above, beware of all problems derived from manipulating signed byte[] arrays, whose values should be made unsigned first, modified, then signed back into the array.
 
 === Functions ===
 Simple example:
 <source lang="javascript">
+importClass(Packages.ij.IJ);
+
 function invertImage(imp) {
   var ip = imp.getProcessor();
   ip.invert();
@@ -151,13 +167,12 @@ imp.updateAndDraw();
 
 The number of arguments you invoke a function with is flexible. All arguments with which a function is invoked are collected in a variable named <i>arguments</i>.
 
-Each function is an object, and has a variable <i>this</i> which provides access to its internal fields, such as <i>name</i>:
-
 For example:
 
 <source lang="javascript">
+importClass(Packages.ij.IJ);
+
 function createImage(width, height) {
-  IJ.log( "Function name: " + this.name);
   IJ.log( "Number of arguments: " + arguments.length);
   
   // Default image type:
@@ -199,16 +214,35 @@ function Data(image, annotation) {
 </source>
 Then just create it:
 <source lang="javascript">
+importClass(Packages.ij.IJ);
+
+function Data(image, annotation) {
+    this.image = image;
+    this.annotation = annotation;
+}
+
 var data = new Data(IJ.getImage(), "The current image");
 
-IJ.log("data contains: " + data.image + "\n with annotation: " + data.annotation);
+IJ.log("data contains: " + data.image + "\n" + "with annotation: " + data.annotation);
 </source>
 
 To add methods to manipulate the new Data object, create a function that takes the object as an argument:
 <source lang="javascript">
+importClass(Packages.ij.IJ);
+importClass(Packages.ij.gui.GenericDialog);
+
+function Data(image, annotation) {
+    this.image = image;
+    this.annotation = annotation;
+}
+
+var data = new Data(IJ.getImage(), "The current image");
+
+IJ.log("data contains: " + data.image + "\n" + "with annotation: " + data.annotation);
+
 function annotate(data) {
-    var gd = GenericDialog("Annotate");
-    gd.addStringField("New annotation:", data.annotation);
+    var gd = new GenericDialog("Annotate");
+    gd.addStringField("New annotation:", data.annotation, data.annotation.length);
     gd.showDialog();
     if (gd.wasCanceled()) return;
     // assign new annotation:
@@ -220,16 +254,37 @@ annotate(data);
 </source>
 
 === Creating import namespaces ===
-<source lang="javascript">
-var awt_bindings = new JavaImporter(Packages.java.awt.Frame, Packages.java.awt.Button);
 
-with (awt_bindings) {
-  // imported classes visible ONLY in this block
-  win = new Frame("Title");
-  b = new Button("Press me");
-  win.add(b);
-  win.pack();
-  win.setVisible(true);
+With Java 8 the new JavaScript engine nashorn introduces the new <code>JavaImporter</code>. Instances of <code>JavaImporter</code> can be used by JavaScripts <code>with</code> statement. This will limit the scope of the imports to the code enclosed by the curly braces of the <code>with</code> statement.
+
+The next code snippet shows how to write the annotation example with using the <code>JavaImporter</code>:
+
+<source lang="javascript">
+function Data(image, annotation) {
+    this.image = image;
+    this.annotation = annotation;
+}
+
+function annotate(data) {
+	var importer = new JavaImporter(Packages.ij.gui.GenericDialog, Packages.ij.IJ);
+	with (importer) {
+	    var gd = new GenericDialog("Annotate");
+	    gd.addStringField("New annotation:", data.annotation, data.annotation.length);
+	    gd.showDialog();
+	    if (gd.wasCanceled()) return;
+	    // assign new annotation:
+	    var newAnnotation = gd.getNextString();
+	    IJ.log("Changing the annotation from \"" + data.annotation + "\" to \"" + newAnnotation + "\"");
+	    data.annotation = newAnnotation;
+	}
+}
+
+var importerIJ = new JavaImporter(Packages.ij.IJ);
+with (importerIJ) {
+	var data = new Data(IJ.getImage(), "The current image");
+	IJ.log("data contains: " + data.image + "\n" + "with annotation: " + data.annotation);
+	// Invoke on the existing Data object:
+	annotate(data);
 }
 </source>
 
