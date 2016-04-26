@@ -27,3 +27,9 @@ How to use :
 * Draw a line : it can be a polyline and you can also set the thickness that will be take into account by the plugin.
 * Launch KymographBuilder : Plugins ► Kymograph ► KymographBuilder
 * You're done.
+
+== Related links ==
+
+* Source code on GitHub : https://github.com/fiji/KymographBuilder
+* Maven : http://maven.imagej.net/#nexus-search;quick~kymographbuilder
+* Jenkins : http://jenkins.imagej.net/job/KymographBuilder/
