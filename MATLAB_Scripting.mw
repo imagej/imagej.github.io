@@ -6,7 +6,8 @@
 | filename               = scripting-matlab.jar, imagej-matlab.jar
 | source                 = {{GitHub|org=scijava|repo=scripting-matlab|label=scripting-matlab}}, {{GitHub|org=imagej|repo=imagej-matlab|label=imagej-matlab}}
 | status                 = stable
-}}{{Scripting}}=MATLAB tutorial for ImageJ=
+}}{{TOC}}{{Scripting}}
+=MATLAB tutorial for ImageJ=
 
 == Prerequisites ==
 
