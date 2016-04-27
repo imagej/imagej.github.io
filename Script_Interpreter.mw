@@ -1,3 +1,12 @@
+{{Infobox
+| name                   = Script Interpreter
+| software               = ImageJ
+| author                 = {{Person|Schindelin}}, {{Person|Rueden}}
+| maintainer             = {{Person|Rueden}}
+| source                 = {{GitHub|org=scijava|repo=scijava-ui-swing|source=org/scijava/ui/swing/script}}
+| released               = 8 Apr 2016
+| status                 = active
+}}{{TOC}}
 The '''Script Interpreter''' is a [https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop REPL] allowing scripting from the command line.
 
 == Getting Started ==
