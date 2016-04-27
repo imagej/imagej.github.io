@@ -29,6 +29,12 @@ importClass(Packages.ij.plugin.frame.RoiManager);
 importClass(Packages.ij.gui.GenericDialog);
 </source>
 
+==== Using the full name of a class ====
+
+Sometimes it is easier to use the full name of a class than of using an import. E.g. you can use <code>Packages.ij.gui.GenericDialog</code> to access the class GenericDialog once.
+
+For some packages there are build in shortcuts. You can use <code>java.io.File</code> instead of <code>Packages.java.io.File</code> as ''java'' is a shortcut for ''Packages.java'' (there are shortcuts for ''Packages.java'', ''Packages.javax'', ''Packages.com'', ''Packages.edu'', ''Packages.javafx'' and ''Packages.org'').
+
 === Variables ===
 
 There are two ways:
