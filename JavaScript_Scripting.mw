@@ -246,11 +246,41 @@ function annotate(data) {
     gd.showDialog();
     if (gd.wasCanceled()) return;
     // assign new annotation:
-    data.annotation = gd.getNextString();
+    var newAnnotation = gd.getNextString();
+    IJ.log("Changing the annotation from \"" + data.annotation + "\" to \"" + newAnnotation + "\"");
+    data.annotation = newAnnotation;
 }
 
 // Invoke on the existing Data object:
 annotate(data);
+</source>
+
+As JavaScript uses prototype based object orientation, we can transform <code>annotate</code> to a object method. By adding a function to the prototype of an object, each instance of the object will own this method.
+
+<source lang="javascript">
+importClass(Packages.ij.IJ);
+importClass(Packages.ij.gui.GenericDialog);
+ 
+function Data(image, annotation) {
+    this.image = image;
+    this.annotation = annotation;
+}
+ 
+var data = new Data(IJ.getImage(), "The current image");
+ 
+IJ.log("data contains: " + data.image + "\n" + "with annotation: " + data.annotation);
+ 
+Data.prototype.annotate = function () {
+    var gd = new GenericDialog("Annotate");
+    gd.addStringField("New annotation:", this.annotation, this.annotation.length);
+    gd.showDialog();
+    if (gd.wasCanceled()) return;
+    // assign new annotation:
+    this.annotation = gd.getNextString();
+}
+ 
+// Invoke on the existing Data object:
+data.annotate();
 </source>
 
 === Creating import namespaces ===
