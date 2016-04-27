@@ -35,3 +35,9 @@ How to use :
 * Source code on GitHub : https://github.com/fiji/KymographBuilder
 * Maven : http://maven.imagej.net/#nexus-search;quick~kymographbuilder
 * Jenkins : http://jenkins.imagej.net/job/KymographBuilder/
+
+== Authors ==
+
+KymographBuilder has been created by Hadrien Mary.
+
+This work started in 2016 at the Gary Brouhard laboratory (http://brouhardlab.mcgill.ca) at the University of McGill.
