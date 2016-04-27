@@ -382,7 +382,8 @@ Suppose you want to create a new image with the square values of the pixels in a
 First, we get a <i>source</i> image (such as the currently active image):
 
 <source lang="javascript">
-var source = IJ.getImage(); // the current image (an ImagePlus)
+
+var source = Packages.ij.IJ.getImage(); // the current image (an ImagePlus)
 </source>
 
 Typically, you would then loop through all pixels and apply the result of their square to the other image:
@@ -403,7 +404,7 @@ function square(ip) {
 var ip2 = square( source.getProcessor() );
 
 // Show the result:
-new ImagePlus("square of " + source.title, ip2).show();
+new Packages.ij.ImagePlus("square of " + source.title, ip2).show();
 </source>
 
 But imagine now you want to get an image with the square root instead of the square, or the logarithm. Isn't that the same?
@@ -462,23 +463,21 @@ So what's the big deal? We have abstracted away a common pattern, looping, but f
 For example, since the processing of each pixel is independent of the others, we could parallelize the processing!
 
 <source lang="javascript">
-importClass(Packages.java.util.concurrent.atomic.AtomicInteger);
-
 function map(fn, ip) {
   var ip2 = ip.duplicate().convertToFloat();
   var pix = ip2.getPixels();
 
-  var n_threads = Runtime.getRuntime().availableProcessors();
+  var n_threads = java.lang.Runtime.getRuntime().availableProcessors();
   var threads = new Array();
 
-  var ai = new AtomicInteger(0);
+  var ai = new java.util.concurrent.atomic.AtomicInteger(0);
   var width = ip.getWidth();
   var height = ip.getHeight();
 
   var arg = arguments[2];
 
   for (var t = 0; t < n_threads; t++) {
-    threads[t] = new Thread( function() {
+    threads[t] = new java.lang.Thread( function() {
         // Process one line at a time:
         for (var line = ai.getAndIncrement(); line < height; line = ai.getAndIncrement()) {
            var offset = line * width;
@@ -521,12 +520,15 @@ function mapAndShow(imp, fn) {
   // Fix LUT range for best visualization:
   ip2.findMinAndMax();
   // Open image in a new window:
-  new ImagePlus(fn.name + " of " + imp.title, ip2).show();
+  new Packages.ij.ImagePlus(fn.name + " of " + imp.title, ip2).show();
 }
 
-mapAndShow( IJ.getImage(), Math.sqrt);
+with (new JavaImporter(Packages.ij.IJ)) {
 
-mapAndShow( IJ.getImage(), Math.pow, 3);
+  mapAndShow( IJ.getImage(), Math.sqrt);
+
+  mapAndShow( IJ.getImage(), Math.pow, 3);
+}
 </source>
 
 <b>Note</b>
@@ -535,14 +537,16 @@ All the above are examples to give you an idea of what is possible with Javascri
 If you are interested on applying mathematical functions to images, you may be better off using internal ImageJ commands, as listed in the menu "Process - Math":
 
 <source lang="javascript">
+with (new JavaImporter(Packages.ij.IJ, Packages.ij.ImagePlus)) {
 
-var imp = IJ.getImage();
-var imp2 = new ImagePlus("copy of " + imp.title, imp.getProcessor().duplicate().convertToFloat());
+  var imp = IJ.getImage();
+  var imp2 = new ImagePlus("copy of " + imp.title, imp.getProcessor().duplicate().convertToFloat());
 
-// Set each pixel to the square of its value:
-IJ.run( imp2, "Square", "");
+  // Set each pixel to the square of its value:
+  IJ.run( imp2, "Square", "");
 
-imp2.show();
+  imp2.show();
+}
 </source>
 
 === Using other ''.js'' files as libraries ===
