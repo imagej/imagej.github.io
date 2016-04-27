@@ -553,11 +553,41 @@ with (new JavaImporter(Packages.ij.IJ, Packages.ij.ImagePlus)) {
 
 Programming becomes most useful when code is reused. To that end, many programmers will generalize their code into functions that can be called from other scripts as well.
 
-To avoid copy-pasting all the time (which invariably leads to stale and unmaintainable code), a good idea is to store such general functions in separate ''.js'' files and let the Javascript interpreter know about them. You can fetch the location of scripts in a system independent way using IJ.getDirectory("plugins"):
+To avoid copy-pasting all the time (which invariably leads to stale and unmaintainable code), a good idea is to store such general functions in separate ''.js'' files and let the Javascript interpreter know about them. You can fetch the location of scripts in a system independent way using <code>IJ.getDirectory("plugins")</code>:
 
 <source lang="javascript">
-load(IJ.getDirectory("plugins") + "JavaScript" + File.separator + "my-library-of-useful-functions.js");
+load(Packages.ij.IJ.getDirectory("plugins") + "JavaScript" + java.io.File.separator + "my-library-of-useful-functions.js");
 // now you can use the functions defined in above .js file
+</source>
+
+To keep your global scope clean, it is recommended to use only functions in your libraries. As JavaScript has a function scope, all variables declared inside a function are not visible in the global scope and can't overwrite variables in the script you are working with.
+
+Best practice is to create a single object in each library that uses the same name as the library.
+
+<source lang="javascript">
+// This is the code of the library SimpleObject.js
+var SimpleObject = function (x, y, val) {
+  this.x = x;
+  this.y = y;
+  this.val = val;
+}
+
+// Each new object that is created from SimpleObject owns this function
+SimpleObject.prototype.print = function () {
+  with (new JavaImporter(Packages.ij.IJ)) {
+    IJ.log("x: " + this.x);
+    IJ.log("y: " + this.y);
+    IJ.log("val: " + this.val);
+  }
+}
+</source>
+
+The following code demonstrates how to use the library, if it's saved as ''SimpleObject.js'' in ''Plugins/JavaScript/''.
+
+<source lang="javascript">
+load(Packages.ij.IJ.getDirectory("plugins") + "JavaScript" + java.io.File.separator + "SimpleObject.js");
+var obj = new SimpleObject(10, 10, 100);
+obj.print();
 </source>
 
 == ImageJ interaction ==
