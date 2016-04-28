@@ -888,9 +888,10 @@ function printer(i) {
 See the complete file here: {{GitHub|repo=fiji|path=plugins/Examples/Multithreaded_Image_Processing_in_Javascript.js|label=Multithreaded_Image_Processing_in_Javascript.js}}
 
 = Links =
-* [http://www.mozilla.org/rhino/tutorial.html Tutorial] at Mozilla Rhino webpages.
-* [https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/Scripting_Java Scripting Java with JavaScript].
-* [http://www.mozilla.org/rhino/perf.html Performance tips].
+* [http://www.mozilla.org/rhino/tutorial.html Tutorial] at Mozilla Rhino webpages (Java 6).
+* [https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/Scripting_Java Scripting Java with JavaScript] (Java 6).
+* [http://www.mozilla.org/rhino/perf.html Performance tips] (Java 6).
+* [http://winterbe.com/posts/2014/04/05/java8-nashorn-tutorial/ Tutorial] on Oracle Nashorn (Java 8).
 
 See also the [[Scripting comparisons]].
 
