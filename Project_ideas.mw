@@ -32,7 +32,7 @@ The project would consist of
 
 == Interactively adjustable intensity/LUT curves ==
 
-In Fiji, you can adjust the dynamic range of an image by calling {{bc | Image | Adjust | Brightness & Contrast}}.  However, this only lets you choose a linear mapping between pixel intensity and lookup table.  This project aims to provide non-linear controls, such as piecewise linear functions, gamma curves, splines, etc
+In Fiji, you can adjust the dynamic range of an image by calling {{bc | Image | Adjust | Brightness & Contrast}}.  However, this only lets you choose a linear mapping between pixel intensity and lookup table.  This project aims to provide non-linear controls, such as piecewise linear functions, gamma curves, splines, etc. More clarifications are at [http://thetermpapers.net/ term paper writing] service if you got confused with the technical details and need more background information.
 
 = Image processing plugins =
 
