@@ -149,6 +149,23 @@ for (var i = 0; i < pixels.length; i++) {
 }
 print(pixels[10]);
 </source>
+
+With the nashorn JavaScript engine of Java 8, there is an easier way to create native Java arrays. You can create a constructor function that can be reused:
+<source lang="javascript">
+var ByteArray = Java.type("byte[]");
+width = 512
+height = 512
+var pixels = new ByteArray(width*height);
+print(pixels.length);
+print(pixels[10]);
+// Subtract 25 to each pixel:
+for (var i = 0; i < pixels.length; i++) {
+  pixels[i] -= 25;
+}
+print(pixels[10]);
+var pixels2 = new ByteArray(10);
+print(pixels2.length);
+</source>
 Above, beware of all problems derived from manipulating signed byte[] arrays, whose values should be made unsigned first, modified, then signed back into the array.
 
 === Functions ===
