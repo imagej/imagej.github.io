@@ -4,7 +4,7 @@
 | author                 = Dimiter Prodanov
 | maintainer             = Dimiter Prodanov
 | filename               = Gray_Morphology.jar 
-| source                 = [http://fiji.sc/GrayMorphology_.java GrayMorphology_.java]
+| source                 = {{GitHub | org=fiji | repo=Gray_Morphology}}
 | released               = September 15, 2003
 | latest version         = June 14, 2006
 | status                 = stable
