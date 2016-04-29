@@ -14,7 +14,7 @@ The requirements to run the Neuroanatomy suite of plugins are twofold: i) [[Fiji
 Some of the plugins in the Neuroanatomy toolbox include:
 * [[Strahler Analysis]], {{bc|Analyze|Skeleton|Strahler Analysis...}}
 * Summarize Skeleton, {{bc|Analyze|Skeleton|Summarize Skeleton}}
-* SWC Import, {{bc|File|Import|SWC...}}
+* Rendering of tracings, {{bc|File|Import|Tracings (SWC/Traces)...}}
 
 ===== Further information =====
 * The Neuroanatomy toolbox is maintained by [[User:Tiago|Tiago Ferreira]]
