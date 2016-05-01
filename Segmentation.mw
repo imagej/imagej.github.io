@@ -56,7 +56,7 @@ Ideally you want to use one of the auto-threshold methods, rather than manually 
 **Select the portion of the image that needs to be adjusted
 **Select [http://imagej.net/docs/guide/146-29.html#sub:Dilate Dilate] to grow the included pixels to further saturate this portion of the image or [http://imagej.net/docs/guide/146-29.html#sub:Erode Erode] to remove saturation
 ***[http://imagej.net/docs/guide/146-29.html#infobox:InvertedLutMask More information].
-**One quick way to split overlapping objects is the [http://imagej.net/docs/guide/146-29.html#sub:Watershed Watershed] command.
+*One quick way to split overlapping objects is the [http://imagej.net/docs/guide/146-29.html#sub:Watershed Watershed] command.
 
 ==Selections==
 [[Image: Selection_tree.png|300px|thumb|Selections on the mask]]
