@@ -9,7 +9,9 @@ Some things to know :
 * JavaFX development seems to move to the OpenJFX project : http://openjdk.java.net/projects/openjfx. But it's unclear what is going on for now...
 * '''SceneBuilder''' is a graphical interface that help creating JavaFX FXML files. Oracle stopped distributing SceneBuilder binaries (I don't know why). You can find new binaries from the '''Gluon project''' there : http://gluonhq.com/open-source/scene-builder
 
+
 ----
+
 
 I have created a '''minimal ImageJ plugin''' that show how to use JavaFX for the UI of a plugin there : https://github.com/hadim/imagej-plugin-javafx (this plugin should maybe moved to the imagej GitHub organization so any IJ devs can more easly edit).
 
