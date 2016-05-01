@@ -11,7 +11,11 @@
 
 == Under the hood ==
 
-Usually a JavaFX program need to declare a <tt>javafx.application.Application</tt>
+Usually a JavaFX program needs to declare a <tt>javafx.application.Application</tt>. Because only '''one''' <tt>Application</tt> instance can exist at runtime, I think under IJ1/IJ2 interface (using Swing), if you want to use JavaFX you need to use the <tt>javafx.embed.swing.JFXPanel</tt> class which make the link/bridge between a <tt>JFrame</tt> and JavaFX.
+
+* An example of the usual <tt>javafx.application.Application</tt> can be found here : https://github.com/hadim/imagej-plugin-javafx/blob/master/src/main/java/net/imagej/plugin/minimalJavaFXPlugin/gui/MainApp.java
+
+* An example of how to use <tt>javafx.embed.swing.JFXPanel</tt> can be found here : https://github.com/hadim/imagej-plugin-javafx/blob/master/src/main/java/net/imagej/plugin/minimalJavaFXPlugin/gui/MainAppFrame.java
 
 == A minimal ImageJ 2 JavaFX plugin ==
 
