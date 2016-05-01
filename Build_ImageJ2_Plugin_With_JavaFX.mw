@@ -11,7 +11,7 @@
 
 == Under the hood ==
 
-Usually a JavaFX program need to declare a `javafx.application.Application`.
+Usually a JavaFX program need to declare a <tt>javafx.application.Application</tt>
 
 == A minimal ImageJ 2 JavaFX plugin ==
 
