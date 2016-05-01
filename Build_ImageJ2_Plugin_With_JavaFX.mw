@@ -13,6 +13,8 @@ Some things to know :
 
 I have created a '''minimal ImageJ plugin''' that show how to use JavaFX for the UI of a plugin there : https://github.com/hadim/imagej-plugin-javafx (this plugin should maybe moved to the imagej GitHub organization so any IJ devs can more easly edit).
 
----
+
+----
+
 
 Since JavaFX is not (yet) shipped with OpenJDK. IJ2/Fiji distribution will need to find a way how to ship JavaFX (Oracle JDK ?). So the question is : '''Can people start developing JavaFX plugin ?'''
