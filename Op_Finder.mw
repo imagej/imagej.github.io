@@ -41,22 +41,36 @@ There are two ways to start up the Op Finder:
 * Double-click any cell to copy its contents to your clipboard.
 
 = Views =
- 
+
+There is a lot of information surrounding Ops. One goal of the Op Finder is to present this information in a way that can be easily understood. To facilitate this, multiple views are available, tailoring the content of the Op Finder to a particular audience.
+
 == For Users ==
 
+Ops in this view are focused on answering the question "What can I do ''right now'' with Ops?" The following guidelines are used to create this list:
+
+* Only Ops directly involving images are displayed
+* Parameter types are generalized
+* Optional parameters are hidden
+
+{{Warning|This view does not provide an accurate representations of real Ops e.g., one entry could be many Ops merged together. For reproducibility, Ops should be referenced specifically, in a [[#Code Snippets|script]] or plugin.}}
+
 == For Developers ==
+
+* Details pane open by default
+* Precise Op signature
+* Optional parameters are shown
+* Referring class is shown
 
 = Things to do =
 
 == Filtering ==
 
-fuzzy, no namespaces
+TODO fuzzy, no namespaces
 
 == Running Ops ==
-How does the play button work?
 
-== Copy and Paste ==
+TODO how does the play button work?
 
 == Code Snippets ==
 
-TODO take a code snippet and turn it into a script
+TODO take a code snippet and turn it into a script, step-by-step
