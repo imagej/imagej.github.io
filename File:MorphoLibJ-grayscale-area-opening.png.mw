@@ -1,0 +1,1 @@
+Example of area opening operation on a grayscale image using MorphoLibJ. Left: original grayscale image of a leaf (image courtesy of Eric Biot, INRA Versailles). Middle: grayscale size opening making bright spots disappear. Right: comparison with morphological closing with square structuring element of radius 1: bright spots are removed, but some veins also disappear.
