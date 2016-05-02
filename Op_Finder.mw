@@ -11,19 +11,47 @@
 | category               = [[:Category:Plugins|Plugins]]
 }}
  
-Utility for browsing, learning about and running all available Ops
- 
+The Op Finder is a utility for browsing, learning about and running all available {{GitHub|org=imagej|groupId=imagej-ops|label=Ops}}. Because Ops are plugins and can be dynamically extended and specialized for particular inputs, it is not practical to have static documentation on a given Op. By using the Op Finder, you explore the actual list of Ops available in ''your'' installation. The purpose of this guide is to familiarize you with the basic capabilities of the Op Finder, to enable you to learn and experiment with Ops.
+
 = Getting started =
 
-shift + L
+There are two ways to start up the Op Finder:
+
+# Using the shortcut: {{Key|Shift||L}}
+# Using the menu path: {{Bc|Plugins|Utilities|Find Ops...}}
+
+= Parts of the Op Finder =
+
+[[File:LabeledOpFinder.png]]
+
+'''Labeled components'''
+# Search bar for [[#Filtering|filtering]] the list of Ops.
+# Toggle button to change between a [[#For Users|user]] and [[#For Developers|developer]] view.
+# Play button for [[#Running Ops|running the selected Op]].
+# Copy button to copy the selected cell contents.
+# Help button to open up the Wiki reference page in your browser.
+# Status area showing success/failure notifications e.g., for copying or running Ops.
+# Namespaces and Op types: these can be expanded to explore the tree-based organization of Ops.
+# Op implementation: the leaves of this tree tell us what parameter options are available for each Op type. We interpret this particular example as "There is an Add Op in the Math namespace, that operates on an image and a numeric value".
+# Progress area showing progress when performing lengthy operations, such as filtering the Ops.
+# Details pane toggle. Click this button to show/hide a pane containing additional information about the currently selected Op.
+
+'''Additional features'''
+* Hover your mouse over any part of the Op Finder to get a descriptive tool-tip.
+* Double-click any cell to copy its contents to your clipboard.
 
 = Views =
  
-== User ==
+== For Users ==
 
-== Developer ==
+== For Developers ==
 
 = Things to do =
+
+== Filtering ==
+
+fuzzy, no namespaces
+
 == Running Ops ==
 How does the play button work?
 
