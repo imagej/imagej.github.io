@@ -156,6 +156,37 @@ So far, the following attribute filtering plugins are available within MorphoLib
 * [[Morphological Segmentation]], a plugin with a graphical user interface to segment 2D/3D images based on morphological operations and the watershed algorithm.
 
 == Measurements ==
+=== Particle analysis ===
+[[MorphoLibJ]] contains several tools for quantifying the size, the shape, or the spatial organization, from '''binary or label''' 2D and 3D images. The aim is to facilitate the management of label images, contrary to the built-in “Analyze Particles...” function that operates directly on a grayscale image. Most MorphoLibJ plugins consider the current image as input, that must be either binary (only one region is considered), or label (typically the result of a connected components labeling, see [[MorphoLibJ#Utilities_for_binary_images|Utilities for binary images]]). The output is a results table (ImageJ [https://imagej.nih.gov/ij/docs/guide/146-22.html Results table]) containing one row for each label actually present within the image. The spatial calibration of the image is taken into account in all measurements.
+==== Particle analysis 2D ====
+[[Image:MorphoLibJ-perimiter-geodesic-diameter-computation.png|thumb|right|400px|Computation of perimeter and geodesic diameter. Left: principle of perimeter estimation by counting intersections with set of lines. Right: illustration of the geodesic diameter measured on a non convex particle.]]
+The '''global geometry''' of particles in 2D images can be characterized with the Region Morphometry plugin (under {{bc | Plugins | MorphoLibJ | Analyze | Region Morphometry}}). For 2D particles, the area, the perimeter and derived features are implemented. The implemented method for perimeter measurement aims at providing a better estimate of the perimeter than traditional boundary pixel count. The principle is to consider a set of lines with various orientations, and to count the number of intersections with the region(s) of interest. The number of intersections is proportional to the perimeter (Legland ''et al.'', 2007; Ohser ''et al.'', 2009). By averaging over all possible directions, the estimate is unbiased. Perimeter is usually estimated using either two directions (horizontal and vertical), or four directions (by adding the diagonals).
+
+The columns of the results table are:
+
+* '''Label''': the label of the particle measured on the current line (it can be different from the row number if some labels do no exist in original image).
+* '''Area''': the number of pixels within each region, multiplied by the area of each pixel.
+* '''Perimeter''': an estimate of the perimeter, using Crofton formula.
+* '''Circularity''' the normalized ratio of area by the square of the perimeter: <math>4\pi\cdot A/p^{2}</math>. The value should be comprised between 0 (very elongated) and 1 (close to circular). Values superior to 1 may appear due to discretization effect.
+* '''Elongation''': the normalized ratio of the square of the perimeter by the area : <math>p^{2}/\left(4\pi\cdot A\right)</math>, corresponding to the inverse of the circularity. The values range from 1 (round), and increase with elongation of the particle.
+
+Other measurements consider the '''largest circle that can be inscribed within the particle'''. The plugin opens a dialog that allows to choose the label image to characterize, the choice of the method for computing distance, and eventually the image on which overlaid circles can be drawn. The output of the plugin includes the following information:
+
+* '''Label''': the label of the particle measured on the current line.
+* '''xi''': the x-coordinate of the inscribed circle.
+* '''yi''': the y-coordinate of the inscribed circle.
+* '''radius''': the radius of the inscribed circle.
+[[Image:Longest-geodesic-path-DRIVE.png|thumb|300px|right|Computation of the geodesic diameter on a segmented image from the DRIVE database (Staal ''et al''., 2004). Each connected component was associated to a label, then the longest geodesic path within each connected component was computed and displayed as red overlay.]]
+For particles with complex shapes, the geodesic diameter may be of interest. It corresponds of the largest geodesic distance between two points within a region, the geodesic distance being the length of the shortest path joining the two points while staying inside the region (Lantuejoul e''t al.'', 1981). An example is given in the figure on the left. The result of the plugin comprises the following features:
+
+* '''Label''': the label of the particle measured on the current line.
+* '''Geod. Diam.''': the value of the geodesic diameter.
+* '''Radius''': the radius of the largest inscribed circle, which is computed during the algorithm.
+* '''Geod. Elong.''': the ratio of geodesic diameter over the diameter of the largest inscribed circle. The values range from 1 for nearly round particles and increases for elongated particles.
+* '''xi, yi''': coordinates of the largest inscribed circle.
+* '''x1, y1''': coordinates of one of the geodesic extremities of the particle.
+* '''x2, y2''': coordinates of another geodesic extremity of the particle.
+
 === Geometric measurements ===
 Several measurements are provided for '''binary or label''' 2D or 3D images. The results are provided in a ResultsTable, whose name contains the name of the original image. The plugin calculating these measurements is found under {{bc | Plugins | MorphoLibJ | Analyze | Geometric Measurements 3D}}:
 
