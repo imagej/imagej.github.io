@@ -57,6 +57,15 @@ If your segmentation is taking too long or you want '''to stop it''' for any rea
 
 [[Image:Morphological-segmentation-result-examples.png|thumb|center|770px|Examples of the 4 different display options]]
 
+
+=== Post-processing panel ===
+[[Image:Morphological-segmentation-post-processing-panel.png|right|thumb|250px|Post-processing panel]]Similarly to the Results panel, this panel only gets enabled after running the segmentation pipeline.
+
+* '''Merge labels''': merge together labels selected by either the '''“freehand” selection too'''l (on a single slice) '''or the point tool''' (on single or multiple slices). The zero-value label belongs to the watershed dams, therefore it will ignored in case of being selected. The first selected label value will be assigned to the rest of selected labels, which will share its color.
+: <b><span style="color:#f80000">Note</span></b>: to select labels on different slices, use the point selection tool and keep the SHIFT key pressed each time you click on a new label.
+
+* '''Shuffle colors''': randomly re-assign colors to the labels. This is a very handy option whenever two adjacent labels present a similar color.
+
 == Macro language compatibility ==
 Morphological Segmentation is completely compatible with the popular [http://imagej.net/developer/macro/macros.html ImageJ macro language]. Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file.
 
