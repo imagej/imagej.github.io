@@ -201,6 +201,12 @@ These parameters focus on the shape of the region corresponding to each particle
 
 Other measurements are provided for pairs of grayscale and label 2D or 3D images ({{bc | Plugins | MorphoLibJ | Analyze | Measure 3D}}). The plugin calculates the '''mean''', the '''standard deviation''', the '''maximum''' and the '''minimum intensity''' value of each labeled region in the grayscale image. The results are displayed as well in a ResultsTable.
 
+=== Spatial organization ===
+[[Image:MorphoLibJ-region-adjacency-graph.png|thumb|500px|right|Computation of the Region Adjacency Graph on a microscopy image of plant tissue. Left: original image. Middle: result of watershed segmentation. Right: overlay of edges representing adjacent regions.]]
+The region adjacency graph plugin gives access to the neighborhood relationship between adjacent regions. This can be particularly informative for exploring collections of cells within cellular tissues (Florindo ''et al.'', 2016).
+
+The plugin (under {{bc | Plugins | MorphoLibJ | Analyze | Region Adjacency Graph}}) works for both 2D and 3D images, and requires a label image as input. A typical input is the result of a watershed segmentation (see [[MorphoLibJ#Watershed_segmentation|Watershed Segmentation]]), eventually followed by manual edition of the labels. The output of the plugin is a results table with as many rows as the number of pairs of adjacent regions, containing the labels of the two adjacent regions.
+
 ==Binary and label image utilities==
 The MorphoLibJ library provides several utility functions for processing binary and label images.
 === Utilities for binary images ===
