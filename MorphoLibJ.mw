@@ -90,7 +90,17 @@ Morphological filters for 3D images are available {{bc | Plugins | MorphoLibJ | 
 == Connected components operators ==
 The “classical” morphological filters presented in the previous section transform an input image by using the values of pixels or voxels located in a close neighborhood, defined by the structuring element. Such filters can be seen as “local”, as the result in a given position does not depend on image values located at a sufficient distance. 
 
-Connected components operators are more general as they propagate information within the image based on connectivity between pixels or voxels. More details can be found in the review of Breen ''et al.'' (1996). Connected components operators encompass powerful operators, such as '''morphological reconstruction''' that allows to reconstruct a marker image by constraining it to a mask. An extension of morphological reconstruction is the detection of '''extended minima and maxima''', that can be useful as marker detection for segmentation. Finally, '''attribute opening and filtering''' algorithms can filter images based on size or range properties, with better preservation of edges than classical filtering. 
+Connected components operators are more general as they propagate information within the image based on connectivity between pixels or voxels. More details can be found in the review of Breen ''et al.'' (1996)<ref name="Breen1996">{{cite conference 
+| title = Attribute Opening, Thinnings, and Granulometries
+| author = Edmond J. Breen and Ronald Jones
+| journal                  = Computer Vision and Image Understanding
+| year                     = 1996
+| month                    = Nov.
+| number                   = 3
+| pages                    = 377--389
+| volume                   = 64
+| doi                      = 10.1006/cviu.1996.0066
+| url                      = http://www.sciencedirect.com/science/article/pii/S1077314296900661}}</ref>. Connected components operators encompass powerful operators, such as '''morphological reconstruction''' that allows to reconstruct a marker image by constraining it to a mask. An extension of morphological reconstruction is the detection of '''extended minima and maxima''', that can be useful as marker detection for segmentation. Finally, '''attribute opening and filtering''' algorithms can filter images based on size or range properties, with better preservation of edges than classical filtering. 
 === Morphological reconstruction ===
 The morphological reconstruction is at the basis of many useful algorithms, such as border removing, hole filling, or detection of regional minima or maxima in grayscale images.
 ==== Principle ====
@@ -160,7 +170,25 @@ So far, the following attribute filtering plugins are available within MorphoLib
 [[MorphoLibJ]] contains several tools for quantifying the size, the shape, or the spatial organization, from '''binary or label''' 2D and 3D images. The aim is to facilitate the management of label images, contrary to the built-in “Analyze Particles...” function that operates directly on a grayscale image. Most MorphoLibJ plugins consider the current image as input, that must be either binary (only one region is considered), or label (typically the result of a connected components labeling, see [[MorphoLibJ#Utilities_for_binary_images|Utilities for binary images]]). The output is a results table (ImageJ [https://imagej.nih.gov/ij/docs/guide/146-22.html Results table]) containing one row for each label actually present within the image. The spatial calibration of the image is taken into account in all measurements.
 ==== Particle analysis 2D ====
 [[Image:MorphoLibJ-perimiter-geodesic-diameter-computation.png|thumb|right|400px|Computation of perimeter and geodesic diameter. Left: principle of perimeter estimation by counting intersections with set of lines. Right: illustration of the geodesic diameter measured on a non convex particle.]]
-The '''global geometry''' of particles in 2D images can be characterized with the Region Morphometry plugin (under {{bc | Plugins | MorphoLibJ | Analyze | Region Morphometry}}). For 2D particles, the area, the perimeter and derived features are implemented. The implemented method for perimeter measurement aims at providing a better estimate of the perimeter than traditional boundary pixel count. The principle is to consider a set of lines with various orientations, and to count the number of intersections with the region(s) of interest. The number of intersections is proportional to the perimeter (Legland ''et al.'', 2007; Ohser ''et al.'', 2009). By averaging over all possible directions, the estimate is unbiased. Perimeter is usually estimated using either two directions (horizontal and vertical), or four directions (by adding the diagonals).
+The '''global geometry''' of particles in 2D images can be characterized with the Region Morphometry plugin (under {{bc | Plugins | MorphoLibJ | Analyze | Region Morphometry}}). For 2D particles, the area, the perimeter and derived features are implemented. The implemented method for perimeter measurement aims at providing a better estimate of the perimeter than traditional boundary pixel count. The principle is to consider a set of lines with various orientations, and to count the number of intersections with the region(s) of interest. The number of intersections is proportional to the perimeter (Legland ''et al.'', 2007<ref name="Legland2007">
+{{cite conference
+|title = Computation of Minkowski measures on 2D and 3D binary images
+|author = Legland, David and Kiêu, Kiên and Devaux, Marie-Françoise
+|journal = Image Analysis and Stereology
+|year = 2007
+|month                    = June
+|number                   = 6
+|pages                    = 83--92
+|volume                   = 26
+|doi                      = 10.5566/ias.v26.p83-92
+|url                      = http://www.ias-iss.org/ojs/IAS/article/view/811
+}}</ref>; Ohser ''et al.'', 2009<ref name="Osher2009>{{ cite conference
+| title = 3D Images of Materials Structures: processing and analysis
+| author = Joachim Ohser and Katja Schladitz
+| publisher                = WILEY-VCH Verlag GmbH \& Co. KGaA, Weinheim
+| year                     = 2009
+| isbn = 978-3-527-31203-0
+}}</ref>). By averaging over all possible directions, the estimate is unbiased. Perimeter is usually estimated using either two directions (horizontal and vertical), or four directions (by adding the diagonals).
 
 The columns of the results table are:
 
@@ -176,8 +204,27 @@ Other measurements consider the '''largest circle that can be inscribed within t
 * '''xi''': the x-coordinate of the inscribed circle.
 * '''yi''': the y-coordinate of the inscribed circle.
 * '''radius''': the radius of the inscribed circle.
-[[Image:Longest-geodesic-path-DRIVE.png|thumb|300px|right|Computation of the geodesic diameter on a segmented image from the DRIVE database (Staal ''et al''., 2004). Each connected component was associated to a label, then the longest geodesic path within each connected component was computed and displayed as red overlay.]]
-For particles with complex shapes, the geodesic diameter may be of interest. It corresponds of the largest geodesic distance between two points within a region, the geodesic distance being the length of the shortest path joining the two points while staying inside the region (Lantuejoul e''t al.'', 1981). An example is given in the figure on the left. The result of the plugin comprises the following features:
+[[Image:Longest-geodesic-path-DRIVE.png|thumb|300px|right|Computation of the geodesic diameter on a segmented image from the DRIVE database (Staal ''et al''., 2004<ref name="Staal2004">{{ cite conference
+|title                    = Ridge based vessel segmentation in color images of the retina
+| author                   = J.J. Staal and M.D. Abramoff and M. Niemeijer and M.A. Viergever and B. van Ginneken
+|  journal                  = IEEE Transactions on Medical Imaging
+|  year                     = 2004
+|  pages                    = 501-509
+|  volume                   = 23
+| doi = 10.1109/TMI.2004.825627
+}}</ref>). Each connected component was associated to a label, then the longest geodesic path within each connected component was computed and displayed as red overlay.]]
+For particles with complex shapes, the geodesic diameter may be of interest. It corresponds of the largest geodesic distance between two points within a region, the geodesic distance being the length of the shortest path joining the two points while staying inside the region (Lantuejoul ''et al.'', 1981<ref name="Lantuejoul1981">{{cite conference
+| title                    = On the use of geodesic metric in image analysis
+| author                   = Lantuejoul, C. and Beucher, S.
+| journal                  = Journal of Microscopy
+| year                     = 1981
+| month                    = Jan.
+| number                   = 1,
+| pages                    = 39-40
+| volume                   = 121
+| doi = 10.1111/j.1365-2818.1981.tb01197.x
+| url = http://dx.doi.org/10.1111/j.1365-2818.1981.tb01197.x
+}}</ref>). An example is given in the figure on the left. The result of the plugin comprises the following features:
 
 * '''Label''': the label of the particle measured on the current line.
 * '''Geod. Diam.''': the value of the geodesic diameter.
@@ -202,7 +249,17 @@ These parameters focus on the shape of the region corresponding to each particle
 Other measurements are provided for pairs of grayscale and label 2D or 3D images ({{bc | Plugins | MorphoLibJ | Analyze | Measure 3D}}). The plugin calculates the '''mean''', the '''standard deviation''', the '''maximum''' and the '''minimum intensity''' value of each labeled region in the grayscale image. The results are displayed as well in a ResultsTable.
 
 === Spatial organization ===
-The region adjacency graph plugin gives access to the neighborhood relationship between adjacent regions. This can be particularly informative for exploring collections of cells within cellular tissues (Florindo ''et al.'', 2016).
+The region adjacency graph plugin gives access to the neighborhood relationship between adjacent regions. This can be particularly informative for exploring collections of cells within cellular tissues (Florindo ''et al.'', 2016<ref name="Florindo2016">{{cite conference
+| title                    = Identifying plant species using architectural features in leaf microscopy images
+| author                   = Joao Batista Florindo and Odemir Martinez Bruno and Davi Rodrigo Rossatto and Rosana Marta Kolb and Maria Cecilia Gomez and Gabriel Landini
+| journal                  = Botany
+| year                     = 2016
+|  number                   = 1
+|  pages                    = 15-21
+|  volume                   = 94
+|  doi                      = 10.1139/cjb-2015-0075
+|  url                      =  http://dx.doi.org/10.1139/cjb-2015-0075
+}}</ref>).
 
 [[Image:MorphoLibJ-region-adjacency-graph.png|thumb|500px|center|Computation of the Region Adjacency Graph on a microscopy image of plant tissue. Left: original image. Middle: result of watershed segmentation. Right: overlay of edges representing adjacent regions.]]
 
@@ -216,7 +273,7 @@ Some functions are specific for the processing of binary images, namely:
 * '''Connected Components Labeling''' transforms the binary image into a label image by assigning a specific number (label) to each connected component.
 * '''Chamfer Distance Map''' computes an approximate distance map from a binary image between each foreground pixel to the nearest background pixel.
 * '''Geodesic Distance Map''' computes the geodesic distance between each foreground pixel of a binary mask image to the closest pixel of a marker image, while staying within the particle represented by the mask image.
-[[Image:MorphoLibJ-geodesic-distance-example.png|thumb|350px|right|Computation of the geodesic distance map on a binary image from the DRIVE database (Staal et al., 2004). Left: original image with marker superimposed in red. Right: result of geodesic distance map, hot colors correspond to large distances, cold colors correspond to small distances.]]
+[[Image:MorphoLibJ-geodesic-distance-example.png|thumb|350px|right|Computation of the geodesic distance map on a binary image from the DRIVE database (Staal ''et al.'', 2004<ref name="Staal2004" />). Left: original image with marker superimposed in red. Right: result of geodesic distance map, hot colors correspond to large distances, cold colors correspond to small distances.]]
 * '''Chamfer Distance Map 3D''' computes an approximate distance map from a 3D binary image between each foreground voxel to the nearest background voxel.
 * '''Keep / Remove Largest Region''' identifies the largest connected component, and keeps it or removes it.
 * '''Size Opening''' computes the size (area in 2D, volume in 3D) of each connected component, and remove all particles whose size is below the value specified by the user.
@@ -422,7 +479,8 @@ You can browse the [http://ijpb.github.io/MorphoLibJ/javadoc/ javadoc] for more 
 ::: 4) Click ''Apply changes'' and restart Fiji.
 == Citation ==
 [[MorphoLibJ]]'s code repository has its own [http://dx.doi.org/10.5281/zenodo.50694 DOI].
-
+== References ==
+<references />
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
 
