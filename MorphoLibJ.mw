@@ -239,6 +239,15 @@ Some functions are specific for the processing of label images, in which the pix
 * '''Label To RGB''' converts a label image to true RGB image. Similar to ImageJ native conversion, but this plugin avoids confusion between background pixels and regions with low labels.
 [[Image:MorphoLibJ-grains-labels-assign-measure.png|thumb|480px|center|MoprphoLibJ: assign result of a measurement to a label image. In this example, the elongation is represented using a color code, between dark purple (circular) to yellow (very elongated).]]
 
+=== Label Edition plugin ===
+[[Image:Label-Edition-plugin.png|thumb|right|500px|Label Edition plugin overview.]]To ease the processing of label images, [[MorphoLibJ]] provides the Label Edition plugin (available under {{bc | Plugins | MorphoLibJ | Labels | Label Edition}}). This plugin contains a graphical user interface (GUI) where the users can perform the following set of editing tasks:
+
+* Manually merge labels after their selection using the point selection tool (in 2D and 3D).
+* Apply morphological erosion, dilation, opening and closing with a square/cube of radius 1 as structuring element.
+* Remove labels by area or volume (size opening operation), largest size, manual selection or border location.
+
+All operations are performed “in place”, i.e., the input image gets directly modified. However, the initial status of the label image can be recovered by clicking on “Reset”.
+
 == Library interoperability ==
 A key design concept of MorphoLibJ was the modularity of the implementation to facilitate its reusability.
 Three layers with different programming abstraction can be identified:
