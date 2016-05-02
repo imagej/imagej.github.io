@@ -87,20 +87,31 @@ The following structuring elements can be used for 2D images:
 ==== 3D images ====
 Morphological filters for 3D images are available {{bc | Plugins | MorphoLibJ | Morphological filters (3D)}}. The dialog let the user choose the structuring element shape and radius. The same list of operations as for planar images is provided. Planar structuring elements can be used (the operation is simply repeated on each slice), as well as a cubic or spherical structuring element. For most structuring elements, the size can be chosen for each direction.
 
-== Morphological reconstruction ==
-The morphological reconstruction is at the basis of many useful algorithms, such as border removing, hole filling, or detection of regional minima or maxima in grey level images.
-=== Principle ===
+== Connected components operators ==
+The “classical” morphological filters presented in the previous section transform an input image by using the values of pixels or voxels located in a close neighborhood, defined by the structuring element. Such filters can be seen as “local”, as the result in a given position does not depend on image values located at a sufficient distance. 
+
+Connected components operators are more general as they propagate information within the image based on connectivity between pixels or voxels. More details can be found in the review of Breen et al. (1996). Connected components operators encompass powerful operators, such as '''morphological reconstruction''' that allows to reconstruct a marker image by constraining it to a mask. An extension of morphological reconstruction is the detection of '''extended minima and maxima''', that can be useful as marker detection for segmentation. Finally, '''attribute opening and filtering''' algorithms can filter images based on size or range properties, with better preservation of edges than classical filtering. 
+=== Morphological reconstruction ===
+The morphological reconstruction is at the basis of many useful algorithms, such as border removing, hole filling, or detection of regional minima or maxima in grayscale images.
+==== Principle ====
 The principle of geodesic reconstruction is to repeat '''conditional dilations or erosions''' until idempotence. Conditional dilation is the result of a dilation, combined with a mask image using a logical operation. Conditional dilations are repeated until no more modification occur (idempotence condition).
 
 The following figure shows several steps of a geodesic reconstruction by dilation on a pair of binary images. The mask image is shown in gray, and the marker image is shown in black on the first image. The reconstructed images at each step are shown in black. The markers propagates within the mask until they fill the chosen regions.
 [[Image:MorphoLibJ-geodesic-reconstruction.png|thumb|center|750px|Principle of the geodesic reconstruction algorithm. From left to right: original image in gray with marker superimposed in black, and result of conditional dilations with increasing sizes.]]
 
-=== Applications to binary images ===
+==== Applications to binary images ====
 By choosing the marker image, several operations may be automatized. For example, computing geodesic reconstruction with image of borders, and combining with original image will '''remove particles or regions touching the borders'''. In a similar way, computing geodesic reconstruction by using the border of the complement of the image makes it possible to '''fill holes''' that may appear in particles.
 [[Image:MorphoLibJ-kill-borders-fill-holes.png|thumb|400px|center|Some applications of geodesic reconstruction. From left to right: original image, result of kill borders, result of fill holes.]]
-=== Applications to grey level images ===
+==== Applications to grey level images ====
 Geodesic reconstructions can be applied to grey level images. By manually choosing binary markers such that they overlay specific structures, and after applying a geodesic reconstruction by dilation, it is possible to obtain a grey level image containing only the chosen structures. The '''border kill''' operation can also be applied on grey level images, making possible to rapidly remove structures touching the image borders.
 [[Image:MorphoLibJ-grains-markers-reconstruction-by-dilation-border-kill.png|thumb|700px|center|Some applications of geodesic reconstruction on grey level images. From left to right: original image with superimposed markers, result of geodesic reconstruction by dilation, result of border kill operation.]]
+==== Usage ====
+The geodesic reconstruction algorithm is often used within other operators. In MorphoLibJ, it is however provided as a plugin to allow its inclusion in user-designed macros or plugins:
+* '''Geodesic Reconstruction''': compute the geodesic reconstruction by erosion or dilation using a marker image and a mask image, and a specified connectivity. 
+* '''Geodesic Reconstruction 3D''': compute the geodesic reconstruction by erosion or dilation on a 3D image.
+The kill borders and fill holes operations are also provided as plugins. Both work for 2D and 3D images of 8, 16 or 32 bits.
+* '''Kill Borders''': remove the particles touching the border of a binary or grayscale image.
+* '''Fill Holes''' remove holes inside particles in binary images, or remove dark regions surrounded by bright crests in grayscale images.
 === Regional and extended extrema ===
 '''Regional minima''' are defined as connected regions of elements (pixels or voxels) with the same value, and whose neighboring elements all have values greater than that of the region. Similarly, '''regional maxima''' are regions of connected pixels or voxels with same value, whose neighbors all have smaller value.
 
@@ -109,21 +120,13 @@ One problem arising with regional minima or maxima is that they are very sensiti
 Both extended maxima and minima are computed using the geodesic reconstruction algorithm. More details can be found in the book of Soille (2003).
 [[Image:MorphoLibJ-grains-regional-and-extended-maxima.png|thumb|700px|center|Regional and extended maxima on a grey-level image. Left: original image. Middle: result of regional maxima. Right: result of extended maxima.]]
 
-=== Usage ===
-The following operations are available in the {{bc | Plugins | MorphoLibJ}} menu. Some plugins correspond to common operations and encompass several processing steps:
-
-* '''Kill Borders''': remove the particles touching the border of a binary or grey level image, in 2D or 3D.
-* '''Fill Holes''': remove holes inside particles in binary images, or remove dark regions surrounded by bright crests in grey level images. Works for both 2D and 3D images.
-Several plugins allow the computation of binary minima or maxima from grey level images, and their combination with grey level images:
+The following operations are available in the {{bc | Plugins | MorphoLibJ}} menu:
 * '''Regional Min / Max''': compute regional minima or extrema in grey level or binary image, with specified connectivity.
 * '''Regional Min / Max 3D''': compute regional minima or extrema in 3D grey level or binary image, with specified connectivity.
 * '''Extended Min / Max''': compute extended minima or extrema in grey level image, with specified connectivity.
 * '''Extended Min / Max 3D''': compute extended minima or extrema in 3D grey level or binary image, with specified connectivity.
 * '''Impose Min / Max''': impose minima or maxima on a grey level image.
 * '''Impose Min / Max 3D''': impose minima or maxima on a 3D grey level image.
-The geodesic reconstruction algorithm is provided as a plugin to allow its inclusion in user-designed macros or plugins:
-* '''Geodesic Reconstruction''': compute the geodesic reconstruction by erosion or dilation using a marker image and a mask image, and a specified connectivity.
-* '''Geodesic Reconstruction 3D''': compute the geodesic reconstruction by erosion or dilation on a 3D image.
 
 == Watershed segmentation ==
 [[Image:Classic-Watershed-lines-blur-blobs.png|thumb|200px|Overlay of watershed lines on blurred blobs.]] The watershed algorithm assimilates the grey level image to a digital elevation model, and aims at detecting the different catchment basins. In the grey-level image, the catchment basins correspond to dark regions surrounded by bright structures (the "crests"). It is a very popular technique specially used to segment touching objects. The MorphoLibJ suite contains several implementations of the algorithm and plugins that make use of it:
