@@ -166,7 +166,7 @@ The columns of the results table are:
 
 * '''Label''': the label of the particle measured on the current line (it can be different from the row number if some labels do no exist in original image).
 * '''Area''': the number of pixels within each region, multiplied by the area of each pixel.
-* '''Perimeter''': an estimate of the perimeter, using Crofton formula.
+* '''Perimeter''': an estimate of the perimeter, using [[wikipedia:Crofton formula|Crofton formula]].
 * '''Circularity''' the normalized ratio of area by the square of the perimeter: <math>4\pi\cdot A/p^{2}</math>. The value should be comprised between 0 (very elongated) and 1 (close to circular). Values superior to 1 may appear due to discretization effect.
 * '''Elongation''': the normalized ratio of the square of the perimeter by the area : <math>p^{2}/\left(4\pi\cdot A\right)</math>, corresponding to the inverse of the circularity. The values range from 1 (round), and increase with elongation of the particle.
 
