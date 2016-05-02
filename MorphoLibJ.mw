@@ -347,6 +347,9 @@ You can browse the [http://ijpb.github.io/MorphoLibJ/javadoc/ javadoc] for more 
 ::: 3) Activate the IJPB-plugins update site and close the dialog. Now you should see an additional jar file for download.
 
 ::: 4) Click ''Apply changes'' and restart Fiji.
+== Citation ==
+[[MorphoLibJ]]'s code repository has its own [http://dx.doi.org/10.5281/zenodo.50694 DOI].
+
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
 
@@ -356,3 +359,4 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 [[Category:Filtering]]
 [[Category:Segmentation]]
 [[Category:Mathematical_morphology]]
+[[Category:Citable]]
