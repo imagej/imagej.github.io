@@ -74,3 +74,12 @@ TODO how does the play button work?
 == Code Snippets ==
 
 TODO take a code snippet and turn it into a script, step-by-step
+
+# Find the Op we're interested in
+# Add a OpService to our script (see: parameterized scripts)
+# Switch over to Developer View
+# Copy the code call and paste it into our script
+# Lots of Ops have optional parameters. Look at the Op viewer to check, along with the return type.
+# Remove unwanted parameters
+# Create @Parameters as needed
+# Create @OUTPUTs as needed
