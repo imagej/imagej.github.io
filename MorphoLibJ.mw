@@ -128,6 +128,26 @@ The following operations are available in the {{bc | Plugins | MorphoLibJ}} menu
 * '''Impose Min / Max''': impose minima or maxima on a grey level image.
 * '''Impose Min / Max 3D''': impose minima or maxima on a 3D grey level image.
 
+=== Attribute filtering ===
+Attribute filters aim at removing components of an image based on a certain size criterion, rather than on intensity. The most common and useful criterion is the number of pixels/voxels (i.e., the area or volume). For example, a morphological size opening operation with a threshold value of 20 will remove all blobs containing fewer than 20 voxels. The length of the diagonal of the bounding box can also be of interest to discriminate elongated versus round component shapes.
+==== Application to binary images ====
+When applied to a binary image, attribute opening consists in identifying each connected component, computing the attribute measurement of each component, and retain only the connected components whose measurement is above a specified value. This kind of processing is often used to clean-up segmentation results.
+[[Image:MorphoLibJ-binary-area-opening.png|thumb|700px|center|Example of area opening on a binary image. Left: original binary image. Middle: identification of connected components. Right: only the connected components with a sufficient size (defined by the area), have been retained.]]
+
+==== Application to grayscale images ====
+When applied to a grayscale image, attribute opening consists in generating a series of binary images by thresholding at each distinct gray level in the image. The binary attribute opening described above is then applied independently to each binary image and the grayscale output is computed as the union of the binary results. The final output is a grayscale image whose bright structures with the attribute below a given value have disappeared. A great advantage of this filter is that the contours of the structures area better preserved than opening with a structuring element.
+
+[[Image:MorphoLibJ-grayscale-area-opening.png|thumb|700px|center|Example of area opening on a grayscale image. Left: original grayscale image of a leaf (image courtesy of Eric Biot, INRA Versailles). Middle: grayscale size opening making bright spots disappear. Right: comparison with morphological closing with square structuring element of radius 1: bright spots are removed, but some veins also disappear.]]
+
+As for classical morphological filters, grayscale attribute closing or tophat can be defined. Grayscale attribute closing consists in removing dark connected components whose size is smaller than a specified value. White [resp. Black] Attribute Top-Hat considers the difference of the attribute opening [resp. closing] with the original image, and can help identifying bright [resp. dark] structures with small size.
+==== Usage ====
+
+So far, the following attribute filtering plugins are available within MorphoLibJ (under {{bc | Plugins | MorphoLibJ}}):
+
+* '''Gray Scale Attribute Filtering''': opens a dialog to perform between attribute opening, closing, and black or white top-hat on a planar (2D) grayscale image. Two size criteria can be used: the area (number of pixels), or the diameter (length of the diagonal of the bounding box).
+
+* '''Gray Scale Attribute Filtering 3D''': opens a dialog to perform between attribute opening, closing, and black or white top-hat on a 3D grayscale image. The size criterion is the number of voxels.
+
 == Watershed segmentation ==
 [[Image:Classic-Watershed-lines-blur-blobs.png|thumb|200px|Overlay of watershed lines on blurred blobs.]] The watershed algorithm assimilates the grey level image to a digital elevation model, and aims at detecting the different catchment basins. In the grey-level image, the catchment basins correspond to dark regions surrounded by bright structures (the "crests"). It is a very popular technique specially used to segment touching objects. The MorphoLibJ suite contains several implementations of the algorithm and plugins that make use of it:
 
