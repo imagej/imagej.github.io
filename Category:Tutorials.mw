@@ -23,9 +23,26 @@
 |}
 </div>
 
+== Tutorials for specific plugins ==
+
+* [[Simple Neurite Tracer#Tutorials|Simple Neurite Tracer]]
+* [[TrakEM2 tutorials]]
+
+== Tutorials provided by microscopy facilities ==
+
+Many valuable resources for science are provided by facilities which collect, retain and maintain knowledge that might otherwise be lost. Here is a list of links to facilities providing tutorials and documentation:
+
+* [http://www.unige.ch/medecine/bioimaging/tricks/imagejtutorials.html University of Geneva]
+* [http://www.biodip.de/wiki/Teaching_Material BioDIP (formerly known as ''Imaging Facilities Network'') teaching materials]
+* [http://cmci.embl.de/mainpages/documents Centre for Molecular and Cellular Imaging at the EMBL]
+
+== Tutorials by microscope vendors ==
+
+* [http://www.kairosinstruments.com/ Karios Instruments] has a number of [http://kairosinstruments.com/resources/ interesting Fiji tutorials] (the same page shows tutorials on using [[CellProfiler]], too).
+
 == See also ==
+
 * [[Presentations]] about ImageJ
-* List of [[external tutorials]]
 * [http://youtube.com/fijichannel Fiji YouTube channel]
 * [https://www.youtube.com/results?search_query=imagej ImageJ videos] and [https://www.youtube.com/results?search_query=fiji+imagej Fiji videos] on YouTube
 
