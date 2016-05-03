@@ -76,7 +76,7 @@ TODO how does the play button work?
 TODO take a code snippet and turn it into a script, step-by-step
 
 1. The first thing to do is find an Op of interest. In this case, we start from the [[#For Users|User view]] and see that there is a Convolve Op we want to try:
-: [[File:1-select-op.png]]
+: [[File:1-select-op.png|border]]
 
 2. In the [[Script Editor]], we need to add a reference to the <code>OpService</code> which will be our entry point for Op usage:
 
@@ -84,12 +84,12 @@ TODO take a code snippet and turn it into a script, step-by-step
 # @OpService ops
 </source>
 
-'''Note:''' this guide is written in [[Jython_Scripting|Python]] but any scripting language will work
+: '''Note:''' this guide is written in [[Jython_Scripting|Python]] but any scripting language will work
 
 3. Now we need the code call for our Convolve Op, so we switch to the [[#For Developers|Developer view]]. The code is long, but remember we can [[#Parts of the Op Finder|copy]]:
-: [[File:2-op-snippet.png]]
+: [[File:2-op-snippet.png|border|1200px]]
 
-and paste:
+: and paste:
 
 <source lang="python">
 # @OpService ops
@@ -97,12 +97,30 @@ and paste:
 ops.run("filter.convolve", Img, Img, RandomAccessibleInterval, long[], OutOfBoundsFactory, OutOfBoundsFactory, RealType, ImgFactory)
 </source>
 
-4. 
+4. Looking at the Op call, we see that there are ''a lot'' of parameters. To get a better idea of what these are, we look at the <code>Op Signature</code> column of the Op Finder:
+: [[File:3-op-signature.png|border|1200px]]
 
-# Add a OpService to our script (see: parameterized scripts)
-# Switch over to Developer View
-# Copy the code call and paste it into our script
-# Lots of Ops have optional parameters. Look at the Op viewer to check, along with the return type.
-# Remove unwanted parameters
-# Create @Parameters as needed
-# Create @OUTPUTs as needed
+: All of the parameters with a {{Key|?}} are '''optional'''. For our purposes, let's just work with the input image, kernel, and returned image:
+
+<source lang="python">
+# @OpService ops
+
+out = ops.run("filter.convolve", Img, RandomAccessibleInterval)
+</source>
+
+5. Now we need to get inputs for our Op, and ensure the output is displayed. These tasks can all be handled with additional [[Script_parameters|@Parameters]] to the script:
+
+<source lang="python">
+# @OpService ops
+# @Dataset input
+# @Dataset kernel
+# @OUTPUT ImgPlus out
+
+out = ops.run("filter.convolve", input, kernel)
+</source>
+
+: '''Note:''' the types we copied and pasted just represent a ''minimum requirement''. Open images will almost always be <code>Datasets</code>, which themselves have an <code>ImgPlus</code>, which has an <code>Img</code> which is a <code>RandomAccessibleInterval</code>. If you want multiple input images you should use <code>Dataset</code>. A safe alternative for single inputs is <code>ImgPlus</code>. Both of these classes contain additional metadata which can be useful in your script.
+
+6. Our script is done! If we open a base image and kernel in ImageJ we can run our script. The <code>OpService</code> is populated automatically by the ImageJ framework, and an input window is automatically created to select the images:
+
+[[File:4-run-op.png|border"1200px]]
