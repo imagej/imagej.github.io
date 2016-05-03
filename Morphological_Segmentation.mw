@@ -67,6 +67,17 @@ If your segmentation is taking too long or you want '''to stop it''' for any rea
 
 * '''Shuffle colors''': randomly re-assign colors to the labels. This is a very handy option whenever two adjacent labels present a similar color.
 
+== Video tutorials ==
+=== Quick start guide ===
+This introductory screencast (which needs audio) explains basic use of the plugin:
+
+<include iframe class="youtube-player" type="text/html" width="420" height="315" src="https://www.youtube.com/embed/gF4nhq7I2Eo" frameborder="0" />
+
+=== Segmentation of a 3D image ===
+This video tutorial shows how to use the plugin segment a 3D image (confocal image of an ''Arabidopsis thaliana'' embryo, courtesy of Jean-Christophe Palauqui (INRA-Versailles)):
+
+<include iframe class="youtube-player" type="text/html" width="420" height="315" src="https://www.youtube.com/embed/lm4hQhLlnHU" frameborder="0" />
+
 == Macro language compatibility ==
 Morphological Segmentation is completely compatible with the popular [http://imagej.net/developer/macro/macros.html ImageJ macro language]. Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file.
 
