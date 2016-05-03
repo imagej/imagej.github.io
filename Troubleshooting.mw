@@ -20,7 +20,7 @@ To diagnose problems with ImageJ, it is often helpful to launch it in debug mode
 <li>On OS X (from Terminal):
 <source lang="bash">DEBUG=1 /Applications/ImageJ.app/Contents/MacOS/ImageJ-macosx</source>
 </li>
-<li>On Windows 64-bit (from Command Prompt):
+<li>On Windows 64-bit:
 <ul>
 <li>Make a copy of <code>ImageJ-win64.exe</code> called <code>debug.exe</code></li>
 <li>Run <code>debug.exe</code></li>
