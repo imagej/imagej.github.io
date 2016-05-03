@@ -2,8 +2,9 @@
 |
 {{Submenu | Topics |
 {{MenuItem | [[ImgLib2|Overview]] }}
-{{MenuItem | [[ImgLib2_-_Accessors|Accessors]] }}
-{{MenuItem | [[ImgLib2_-_Accessibles|Accessibles]] }}
+{{MenuItem | [[ImgLib2 - Accessors|Accessors]] }}
+{{MenuItem | [[ImgLib2 - Accessibles|Accessibles]] }}
+{{MenuItem | [[ImgLib2 Benchmarks|Benchmarks]] }}
 {{MenuItem | [[ImgLib2 FAQ|FAQ]] }}
 }}
 
