@@ -46,13 +46,13 @@ There is a lot of information surrounding Ops. One goal of the Op Finder is to p
 
 == For Users ==
 
+{{Warning|This view does not provide an accurate representations of real Ops e.g., one entry could be many Ops merged together. For reproducibility, Ops should be referenced specifically, in a [[#Code Snippets|script]] or plugin.}}
+
 Ops in this view are focused on answering the question "What can I do ''right now'' with Ops?" The following guidelines are used to create this list:
 
 * Only Ops directly involving images are displayed
 * Parameter types are generalized
 * Optional parameters are hidden
-
-{{Warning|This view does not provide an accurate representations of real Ops e.g., one entry could be many Ops merged together. For reproducibility, Ops should be referenced specifically, in a [[#Code Snippets|script]] or plugin.}}
 
 == For Developers ==
 
@@ -75,7 +75,30 @@ TODO how does the play button work?
 
 TODO take a code snippet and turn it into a script, step-by-step
 
-# Find the Op we're interested in
+1. The first thing to do is find an Op of interest. In this case, we start from the [[#For Users|User view]] and see that there is a Convolve Op we want to try:
+: [[File:1-select-op.png]]
+
+2. In the [[Script Editor]], we need to add a reference to the <code>OpService</code> which will be our entry point for Op usage:
+
+<source lang="python">
+# @OpService ops
+</source>
+
+'''Note:''' this guide is written in [[Jython_Scripting|Python]] but any scripting language will work
+
+3. Now we need the code call for our Convolve Op, so we switch to the [[#For Developers|Developer view]]. The code is long, but remember we can [[#Parts of the Op Finder|copy]]:
+: [[File:2-op-snippet.png]]
+
+and paste:
+
+<source lang="python">
+# @OpService ops
+
+ops.run("filter.convolve", Img, Img, RandomAccessibleInterval, long[], OutOfBoundsFactory, OutOfBoundsFactory, RealType, ImgFactory)
+</source>
+
+4. 
+
 # Add a OpService to our script (see: parameterized scripts)
 # Switch over to Developer View
 # Copy the code call and paste it into our script
