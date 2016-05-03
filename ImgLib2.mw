@@ -38,8 +38,8 @@ See the [[How To Migrate Code From ImgLib To ImgLib2]] page for details on how t
 
 == Other links ==
 
-* [[ImgLib2_Discussion|ImgLib2 development discussion]]
-* [http://developer.imagej.net/imglib-benchmarks ImgLib2 performance benchmarks]
+* [[ImgLib2 Discussion|ImgLib2 development discussion]]
+* [[ImgLib2 Benchmarks|ImgLib2 performance benchmarks]]
 * [[ImageJ2]] uses ImgLib2 as its core data model
 
 == Publication ==
