@@ -46,7 +46,7 @@ There is a lot of information surrounding Ops. One goal of the Op Finder is to p
 
 == For Users ==
 
-{{Warning|This view does not provide an accurate representations of real Ops e.g., one entry could be many Ops merged together. For reproducibility, Ops should be referenced specifically, in a [[#Code Snippets|script]] or plugin.}}
+{{Warning|This view does not provide an accurate representation of real Ops e.g., one entry could be many Ops merged together. An Op call is ultimately defined by the combination of requested Op + parameters.}}
 
 Ops in this view are focused on answering the question "What can I do ''right now'' with Ops?" The following guidelines are used to create this list:
 
