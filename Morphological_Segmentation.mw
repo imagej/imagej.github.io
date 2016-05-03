@@ -167,9 +167,13 @@ You should now find the plugin under the sub-menu {{bc | Plugins | MorphoLibJ | 
 |style="vertical-align:top" |[[Image:Arabidopsis-embryo-3d-animation.gif|thumb|300px|3d reconstruction of an ''Arabidopsis thaliana'' embryo using the Morphological Segmentation plugin. Image courtesy of Jean-Christophe Palauqui (INRA-Versailles)]]
 |}
 
+== Citation ==
+If you need to cite the plugin, [[MorphoLibJ]]'s code repository has its own [http://dx.doi.org/10.5281/zenodo.50694 DOI].
+
 == References ==
 # Meyer, Fernand, and Serge Beucher. "Morphological segmentation." Journal of visual communication and image representation 1.1 (1990): 21-46.
 # Soille, P., "Morphological Image Analysis: Principles and Applications", Springer-Verlag, 1999, pp. 170-171.
+
 == See also ==
 * [[Marker-controlled Watershed]], a plugin to perform watershed by flooding from specific seed points or markers.
 * [[Classic Watershed]], plugin implementing the original watershed algorithm to segment 2D/3D grayscale images.
