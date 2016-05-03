@@ -41,8 +41,7 @@ Yes, but there is no automagic wrapping of native/external functionality in Ops.
 
 === Is there a list of Ops somewhere with brief descriptions of their functionalities? ===
 
-[[File:BrowseOps.png|500px|right|thumb|Viewing available Add Ops in the math namespace. Calling "math().add" on any of these combinations of parameters will automatically match the correct Op.]]
-If you run the {{bc|Plugins|Utilities|Find Ops...}} command, you can see a tree-based high-level view of all Ops currently available in Fiji sorted by namespace, as well as each available parameter combination for that Op.
+For an interactive tool to see all available Ops, see the [[Op Finder]] documentation.
 
 For the core Ops available, you can go to the {{Javadoc | package = ?net/imagej/ops | class=package-summary | label=ImageJ Ops}} javadocs. Any class under the package <code>net.imagej.ops</code> is related to Ops.
 
