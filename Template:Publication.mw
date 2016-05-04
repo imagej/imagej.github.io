@@ -149,6 +149,19 @@
 | pages = 3009-3011
 | pmid = 22962343}} ({{Scholar | cluster=17114668151840635304}}).
 
+| Micro-Manager = {{Citation | last = Edelstein | first = A.
+| last2 = Amodaj | first2 = N.
+| last3 = Hoover | first3 = K.
+| last4 = Vale | first4 = R.
+| last5 = Stuurman | first5 = N.
+| year = 2010
+| journal = Current protocols in molecular biology
+| url = http://onlinelibrary.wiley.com/doi/10.1002/0471142727.mb1420s92/full
+| title = Computer control of microscopes using µManager
+| volume = 
+| pages = 14-20
+| pmid = 20890901}} ({{Scholar | cluster=10488335509275115137}}).
+
 | MiToBo = {{Citation | last = Möller | first = B.
 | last2 = Glaß | first2 = M.
 | last3 = Misiak | first3 = D.
@@ -158,7 +171,7 @@
 | url = http://doi.org/10.5334/jors.103
 | title = MiToBo - A Toolbox for Image Processing and Analysis
 | volume = 4(1)
-| pages = e17}}
+| pages = e17}}.
 
 | QuickPALM = {{Citation | last = Henriques | first = R.
 | last2 = Lelek | first2 = M.
