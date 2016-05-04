@@ -81,7 +81,7 @@ The Op Finder includes [[Wikipedia:Approximate_string_matching|fuzzy filtering]]
 
 == Code Snippets ==
 
-Code snippets are available in the [#For Developers|Developer view]]. These are intended to help you rapidly build up scripts around the available Ops. The following is a step-by-step guide to take you through the process of finding an Op of interest to using it in a functional script.
+Code snippets are available in the [[#For Developers|Developer view]]. These are intended to help you rapidly build up scripts around the available Ops. The following is a step-by-step guide to take you through the process of finding an Op of interest to using it in a functional script.
 
 1. The first thing to do is find an Op of interest. In this case, we start from the [[#For Users|User view]] and see that there is a Convolve Op we want to try:
 : [[File:1-select-op.png|border]]
