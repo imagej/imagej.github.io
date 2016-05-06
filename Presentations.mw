@@ -240,6 +240,29 @@ __TOC__
 ! '''Title'''
 ! '''Resources'''
 |-
+| colspan=5 class="section-major" | '''Living workshops (regularly updated)'''
+|-
+| -
+| [[LOCI]]
+| Introduction to Fiji
+|
+[http://workshops.imagej.net/fiji-intro.pdf slides (PDF)],
+[http://workshops.imagej.net/fiji-intro.odp slides (ODP)]
+|-
+| -
+| [[LOCI]]
+| Segmentation in Fiji
+|
+[http://workshops.imagej.net/fiji-segmentation.pdf slides (PDF)],
+[http://workshops.imagej.net/fiji-segmentation.odp slides (ODP)]
+|-
+| -
+| [[LOCI]]
+| Macros in Fiji
+|
+[http://workshops.imagej.net/fiji-macros.pdf slides (PDF)],
+[http://workshops.imagej.net/fiji-macros.odp slides (ODP)]
+|-
 | colspan=5 class="section-major" | '''[[Conference 2015|2015 ImageJ Conference]]'''
 |-
 | 2015-Sep-03
@@ -307,29 +330,17 @@ __TOC__
 | colspan=5 class="section-major" | '''Other workshops'''
 |-
 | -
-| [[LOCI]]
-| Intro to Fiji
-| [http://workshops.imagej.net/fiji-intro.pdf slides (PDF)], [http://workshops.imagej.net/fiji-intro.odp slides (ODP)]
-|-
-| -
-| [[LOCI]]
-| Segmentation in Fiji
-| [http://workshops.imagej.net/fiji-segmentation.pdf slides (PDF)], [http://workshops.imagej.net/fiji-segmentation.odp slides (ODP)]
-|-
-| -
-| [[LOCI]]
-| Macros in Fiji
-| [http://workshops.imagej.net/fiji-macros.pdf slides (PDF)], [http://workshops.imagej.net/fiji-macros.odp slides (ODP)]
-|-
-| -
 | [[BioDIP]]
 | Basics of Quantitative Image Analysis
-| [http://workshops.imagej.net/Basics-of-Quantitative-image-analysis.pdf slides (PDF)]
+|
+[http://workshops.imagej.net/Basics-of-Quantitative-image-analysis.pdf slides (PDF)]
 |-
 | 2015-Nov-03
 | [[LOCI]]
 | Intro to ImageJ Ops - Usage and Development
-| [http://workshops.imagej.net/IntroToOps.pdf slides (PDF)], [http://workshops.imagej.net/IntroToOps.pptx slides (PPT)]
+|
+[http://workshops.imagej.net/IntroToOps.pdf slides (PDF)],
+[http://workshops.imagej.net/IntroToOps.pptx slides (PPT)]
 |}
 
 == Posters ==
