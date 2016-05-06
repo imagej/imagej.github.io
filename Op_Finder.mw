@@ -41,7 +41,7 @@ There are two ways to start up the Op Finder:
 
 = Views =
 
-Because of the extensibility of Ops, there is a lot of information to process when looking at what Ops are actually available. One goal of the Op Finder is to present this information in a way that can be easily understood. To facilitate this, multiple views are available, each tailoring the content of the Op Finder to a specific audience.
+Because of the extensibility of Ops, there is a lot of information to process when looking at which Ops are actually available. One goal of the Op Finder is to present this information in a way that can be easily understood. To facilitate this, multiple views are available, each tailoring the content of the Op Finder to a specific audience.
 
 == For Users ==
 
