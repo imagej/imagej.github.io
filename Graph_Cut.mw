@@ -2,13 +2,12 @@
 | name                   = Graph Cut Plugin
 | software               = Fiji
 | author                 = {{Person|Funke}}
-| maintainer             = Jan Funke
+| maintainer             = {{Person|Funke}}
 | source                 = {{GitHub|org=fiji|repo=Graph_Cut}}
 | released               = August 24<sup>th</sup>, 2010
 | status                 = experimental
 | category               = [[:Category:Segmentation|Segmentation]]
-}}
-
+}}{{TOC}}
 [[Image:mito-sample.png|350px]]
 
 == General ==
