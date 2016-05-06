@@ -116,7 +116,7 @@ ops.run("filter.convolve", Img, Img, RandomAccessibleInterval, long[], OutOfBoun
 out = ops.run("filter.convolve", Img, RandomAccessibleInterval)
 </source>
 
-5. Now we need to get inputs for our Op, and ensure the output is displayed. These tasks can all be handled with additional [[Script_parameters|@Parameters]] to the script:
+5. Now we need to get inputs for our Op, and ensure the output is displayed. These tasks can all be handled with additional [[Script_parameters|@Parameters]] added to the script:
 
 <source lang="python">
 # @OpService ops
