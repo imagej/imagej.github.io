@@ -9,8 +9,7 @@
 | latest version         = 3.1.0, January 7<sup>th</sup>, 2016
 | status                 = stable, active
 | category               = [[:Category:Segmentation|Segmentation]], [[:Category:Machine Learning|Machine Learning]]
-}}
-
+}}{{TOC}}
 '''Trainable''': this plugin can be trained to learn from the user input and perform later the same task in unknown (test) data.
 
 '''Weka''': it makes use of all the powerful tools and classifiers from the latest version of [http://www.cs.waikato.ac.nz/ml/weka/ Weka].
