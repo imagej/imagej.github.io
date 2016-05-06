@@ -86,7 +86,7 @@ Code snippets are available in the [[#For Developers|Developer view]]. These are
 1. The first thing to do is find an Op of interest. In this case, we start from the [[#For Users|User view]] and see that there is a Convolve Op we want to try:
 : [[File:1-select-op.png|border]]
 
-2. In the [[Script Editor]], we need to add a reference to the <code>OpService</code> which will be our entry point for Op usage:
+2. In the [[Script Editor]] (the keyboard shortcut {{key|{}} (open curly bracket) opens the editor), we need to add a reference to the <code>OpService</code> which will be our entry point for Op usage:
 
 <source lang="python">
 # @OpService ops
