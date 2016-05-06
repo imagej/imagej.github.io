@@ -130,6 +130,14 @@ Default values are also supported as parameter properties:
 # @Integer(label="An integer!",value=15) someInt
 </source>
 
+=== Multiple Choice ===
+
+Any parameter can be turned into a multiple-choice selector by adding a <code>choices = {...}</code> property:
+
+<source lang="python">
+# @String(label="What mythical monster would you like to unleash?",choices={"Kraken","Cyclops","Medusa","Fluffy bunny"}) monsterChoice
+</source>
+
 === Files and Folders ===
 
 By default, a `@File` parameter will create a chooser for a single file:
