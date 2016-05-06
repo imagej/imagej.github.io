@@ -28,7 +28,7 @@ There are two ways to start up the Op Finder:
 # Toggle button to change between a [[#For Users|user]] and [[#For Developers|developer]] view.
 # Play button for [[#Running Ops|running the selected Op]].
 # Copy button to copy the selected cell contents.
-# Help button to open up the Wiki reference page in your browser.
+# Help button to open up the [[ImageJ_Ops|Wiki reference]] page in your browser.
 # Status area showing success/failure notifications e.g., for copying or running Ops.
 # Namespaces and Op types: these can be expanded to explore the tree-based organization of Ops.
 # Op implementation: the leaves of this tree tell us what parameter options are available for each Op type. We interpret this particular example as "There is an Add Op in the Math namespace, that operates on an image and a numeric value".
