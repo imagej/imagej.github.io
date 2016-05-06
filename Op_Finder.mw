@@ -116,7 +116,7 @@ ops.run("filter.convolve", Img, Img, RandomAccessibleInterval, long[], OutOfBoun
 out = ops.run("filter.convolve", Img, RandomAccessibleInterval)
 </source>
 
-5. Now we need to get inputs for our Op, and ensure the output is displayed. These tasks can all be handled with additional [[Script_parameters|@Parameters]] added to the script:
+5. At this stage, we can not actually run our code yet. The pasted snippet serves as a guideline for what types of parameters are needed and produced. The next step is to ask the framework for instances of these parameters by adding [[Script_parameters|@Parameters]] to our script:
 
 <source lang="python">
 # @OpService ops
@@ -127,7 +127,7 @@ out = ops.run("filter.convolve", Img, RandomAccessibleInterval)
 out = ops.run("filter.convolve", input, kernel)
 </source>
 
-: '''Note:''' the types we copied and pasted just represent a ''minimum requirement''. Open images will almost always be <code>Datasets</code>, which themselves have an <code>ImgPlus</code>, which has an <code>Img</code> which is a <code>RandomAccessibleInterval</code>. If you want multiple input images you should use <code>Dataset</code>. A safe alternative for single inputs is <code>ImgPlus</code>. Both of these classes contain additional metadata which can be useful in your script.
+: '''Note:''' the types we copied and pasted (<code>Img</code> and <code>RandomAccessibleInterval</code>) represent a ''minimum class requirement''. Open images can always be requested as <code>Datasets</code>, which have a type hierarchy including {{Bc|ImgPlus|Img|RandomAccessibleInterval}}. <code>Dataset</code> is thus a good starting point as it can satisfy any of these parameters. If you want to have multiple input image parameters, you '''must''' use <code>@Dataset</code>.
 
 6. Our script is done! If we open a base image and kernel in ImageJ we can run our script. The <code>OpService</code> is populated automatically by the ImageJ framework, and an input window is automatically created to select the images:
 
