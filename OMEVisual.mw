@@ -1,1 +1,41 @@
-In Construction. https://github.com/hadim/OMEVisual
+{{Infobox
+| name                  = OMEVisual
+| logo                    = 
+| software              = Fiji
+| author                = {{Person|Hadim}}
+| maintainer            = {{Person|Hadim}}
+| source                = {{GitHub|org=hadim|repo=OMEVisual}}
+| released              = 08/05/2016
+| status                = v1.0.0, stable
+| category              = 
+}}
+__TOC__
+
+== Presentation ==
+
+<code>OMEVisual</code> is a Fiji plugin to easily visualize OME metadata.
+
+See also the Wiki page : http://imagej.net/OMEVisual
+
+Please note that :
+
+* This goal of this plugin is '''not to implement''' all the OME features.
+* This plugin makes several strong assumptions about the OME model in order to simplify the interface :
+** Each image contains only one <code>Pixels</code> element.
+** Each <code>TiffData</code> contains only one <code>Plane</code>.
+** <code>Plane</code> and <code>TiffData</code> informations are displayed at the same location without distinction.
+* Any ideas to improve the visualization and/or add OME features is very welcome :
+** The best way is to submit a PR.
+** You can also open an issue and post an OME-TIFF file which contains additional OME features you would like to see added to the plugin.
+
+[[File:OMEVisual_Screenshot.png|center|thumb|600px|caption OMEVisual Screenshot]]
+
+== Related links ==
+
+* Source code on GitHub : https://github.com/hadim/OMEVisual
+
+== Authors ==
+
+<code>OMEVisual</code> has been created by [mailto:hadrien.mary@gmail.com Hadrien Mary].
+
+This work started in 2016 at the [http://brouhardlab.mcgill.ca/ Gary Brouhard laboratory] at the University of McGill.
