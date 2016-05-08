@@ -15,8 +15,6 @@ __TOC__
 
 <code>OMEVisual</code> is a Fiji plugin to easily visualize OME metadata.
 
-See also the Wiki page : http://imagej.net/OMEVisual
-
 Please note that :
 
 * This goal of this plugin is '''not to implement''' all the OME features.
