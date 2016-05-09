@@ -360,6 +360,8 @@ will return an image providing the mean value of the images i0, i1 and i2 (see r
 <br />
 <br />
 [[Image:xFig6_7_02.jpg|right|300px|thumb|left: image i0, right: mask where regions higher than 170 are colored in red]]
+<br />
+<br />
 The operation 
 
 <source lang="java"> 
@@ -382,6 +384,7 @@ The operation
     ((i1==255)? -16776961 : ((i2==255)? -16777216 : -65536))    
 </source>
 takes three binary images i0, i1, i2 and creates a colored mask out of it (see rightmost image to the right).
+<br />
 <br />
 <br />
 <br />
