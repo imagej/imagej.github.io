@@ -38,6 +38,7 @@ The following plugins are included:
 *  [[#FFT 2D 3D|"FFT 2D 3D"]]: Fast Fourier transform of arbitrary sized images
 *  [[#Image Calculator|"Image Calculator"]]: Utterly generalized image calculator
 *  [[#Labeling 2D 3D|"Labeling 2D 3D"]]: Labeling of disconnected binary mask objects
+*  [[#Median 2D 3D|"Median 2D 3D"]]: Conventional and multidimensional median filtering
 *  [[#Remove Background|"Remove Background"]]: Remove background from image by polynomial approximation
 *  [[#Roundness 2D 3D|"Roundness 2D 3D"]]: Roundness filter
 *  [[#Skeletonization 2D 3D|"Skeletonization 2D 3D"]]: Skeletonization of binary masks
@@ -314,6 +315,7 @@ In the upper figure, a binary mask from cement particles (left) is processed by 
 }}
 
 [[Image:xFig6_6.jpg|thumb|right|600px|FIB-nt image (427x768 pixels) from cement paste (left) and the magnitudes (center) and angles (right) of its Fourier transform.]]
+
 === FFT 2D 3D ===
 The fast, well known and widely used Cooley-Tukey radix-2 algorithm for the calculation of the discrete fast Fourier transform (FFT) only works on data whose size is equal to a power of two.  In order to provide FFT on data of different size, the data is usually extended to the next higher power of two.  In many cases, this approach is sufficient, in particular if the periodical nature of the transformed data function is not relevant.  However, if the period length is important and must be left unchanged, FFT on the original data size is required.  This can be achieved by using the Bluestein algorithm [Bluestein1968,Rabiner1969].  Since to our best knowledge, there is no ImageJ plugin available that permits FFT for non-radix-2 sized periods, this plugin has been built.  It correctly calculates the complex FFT on 2D and 3D images of arbitrary size.  It optionally provides the real and the imaginary part, or the magnitude and the angle images.  Moreover, it allows a logarithmic or square-root based scaling to be introduced in order to lower the contrast among the FFT coefficients.  This feature is useful if the FFT function is used for display purpose.  The reversibility of the FFT transform is supported for all these options.
 
@@ -478,6 +480,7 @@ takes the content of the image inside of a circle only and removes the regions o
 <br />
 <br />
 [[Image:xFig6_7_11.jpg|right|360px|thumb|left: image i0, center: image i1, right: exclusive OR of images i0 and i1]]
+
 Finally, 
 
 <source lang="java"> 
@@ -490,6 +493,10 @@ performs an exclusive OR operation of image i0 and image i1.
 <br />
 
 The above examples show that any pixel- or voxel-wise operation can be provided in a single command line as soon as it follows the Java notation.
+<br />
+<br />
+<br />
+<br />
 
 The plugin is however able to do much more.  Instead of pixelwise operation mode, image-wide Java code fragments can be provided. For example, 
 
@@ -501,6 +508,10 @@ return new Object[] { m0, out };
 </source>
 performs the same operation as the pixelwise operation "(i0 + i1 + i2) / 3" above.
 [[Image:xFig6_7_13.jpg|right|350px|thumb|left: image i0, right: message box with number of pixel values >= 10]]
+<br />
+<br />
+<br />
+<br />
 The code fragment 
 
 <source lang="java"> 
@@ -553,6 +564,8 @@ return null;
 just calculates the overall mean value of image i0 within the ROI defined by i1 and displays it in a check box.
    
 [[Image:xFig6_7_16.jpg|right|200px]]
+<br />
+<br />
 Moreover, it is even possible to create your own images without any input image:
 
 <source lang="java"> 
@@ -579,9 +592,9 @@ for (int jj = 0; jj < my; jj++)
     }
 return new Object[] { new int[] { mx, my }, out };
 </source>
+[[Image:xFig6_7_18.jpg|right|380px|thumb]]
 creates an image containing a circle mask in the center (see image to the right).  For more information about the syntax, please consult the help function of the plugin itself.
 
-[[Image:xFig6_7_18.jpg|right|380px]]
 As a final example, we show that it is also possible to create even more 'cute' images with that tool:
 
 <source lang="java"> 
@@ -610,12 +623,33 @@ return new Object[] { new int[] { mx, my }, out };
 </source>
 This code fragment creates the image to the right showing a well-known Mandelbrot fractal!
 
-[[Image:xFig6_8.jpg|right|400px|thumb|Particle image (left) and its labeling (right)]]
-
 === Labeling 2D 3D ===
 Particle analysis requires labeling of the previously determined particle mask which has been obtained by some type of image segmentation technique, e.g. by thresholding to mention the most simple one.  The binary particle mask allows evaluation of the particles only globally.  By labeling the particles, each particle is assigned a unique ID.  Labeling is the prerequisite for evaluations considering local values such as particle size, diameter or other shape parameters on the single objects.  This plugin implements the labeling of disconnected objects in both, 2D or 3D binary masks.  The binarization from gray level images occurs via providing a lower and an upper threshold.
 
+{|
+|[[Image:xFig6_8.jpg|right|400px|thumb|Particle image (left) and its labeling (right)]]
+|}
+
 An example of labeling is given in the center and right images in the [[#Disconnect Particles|"Disconnect Particles"]] section, where the center image shows the particle mask before the disconnection procedure and before labeling.  The disconnection procedure separates the single particles.  After this step, the object mask is still binary and labeling is applied to colorize the particles in order to be able to distinguish them by their object values.
+
+=== Median 2D 3D ===
+This plugin supports conventional as well as geometric 2D and 3D median filtering for images and image volumes.  The geometric median filtering is achieved according to the algorithm of E.V.Weiszfeld [Weiszfeld1937].  Unlike the conventional median filtering, geometric median filtering can be achieved for a multidimensional vector space rather than for a one-dimensional set of values only.  That is, if multiple images exist at a single location, they can be filtered by using the common N-dimensional geometrical distance measure for finding the median.
+
+{|
+|style="vertical-align:top" |[[Image:xFig6_09_1_PhasesMedianFiltering.png|right|500px|Color image containing multiple phases (top left) and different types of median filtering: conventional band-wise (top right), multidimensional geometrical (bottom left), and multidimensional geometrical by choosing the closest available vectors.]]
+|}
+
+The example color image (top right) shows multiple noisy phases.  Conventional median filtering on each of the R,G,B bands separately yields the top right image.  As can be perceived due to the RGB bands, new colors appear that are not present on the original image.  Multidimensional geometrical filtering (in the RGB case, 3-dimensional) by using the Weiszfeld algorithm yields the bottom left image.  When additionally confining to already existing color vectors only, the bottom right image results.
+
+* {{Citation
+| last = Weiszfeld
+| first = E V
+| title = Sur le point pour lequel la somme des distances de n points donnes est minimum
+| journal = The Tohoku Mathematical Journal
+| volume = 43
+| pages = 355-386
+| year = 1937
+}}
 
 === Remove Background ===
 If an image is subject to consistent global shifts of the image values depending on the location, this might be due to inconsistencies in the data acquisition rather than to real changes in the material properties.  In that case, background removal techniques might be appropriate.
