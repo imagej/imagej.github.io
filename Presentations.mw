@@ -246,22 +246,19 @@ __TOC__
 | [[LOCI]]
 | Introduction to Fiji
 |
-[http://workshops.imagej.net/fiji-intro.pdf slides (PDF)],
-[http://workshops.imagej.net/fiji-intro.odp slides (ODP)]
+[http://imagej.github.io/presentations/fiji-introduction/ slides]
 |-
 | -
 | [[LOCI]]
 | Segmentation in Fiji
 |
-[http://workshops.imagej.net/fiji-segmentation.pdf slides (PDF)],
-[http://workshops.imagej.net/fiji-segmentation.odp slides (ODP)]
+[http://imagej.github.io/presentations/fiji-segmentation/ slides]
 |-
 | -
 | [[LOCI]]
-| Macros in Fiji
+| Scripting with Fiji
 |
-[http://workshops.imagej.net/fiji-macros.pdf slides (PDF)],
-[http://workshops.imagej.net/fiji-macros.odp slides (ODP)]
+[http://imagej.github.io/presentations/fiji-scripting/ slides]
 |-
 | colspan=5 class="section-major" | '''[[Conference 2015|2015 ImageJ Conference]]'''
 |-
