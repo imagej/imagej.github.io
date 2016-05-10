@@ -359,9 +359,9 @@ will return an image providing the mean value of the images i0, i1 and i2 (see r
 <br />
 <br />
 <br />
+<br />
+<br />
 [[Image:xFig6_7_02.jpg|right|300px|thumb|left: image i0, right: mask where regions higher than 170 are colored in red]]
-<br />
-<br />
 The operation 
 
 <source lang="java"> 
@@ -417,6 +417,7 @@ will calculate a copy of the image i0 overlayed by a horizontal ramp.
 <br />
 <br />
 <br />
+<br />
 [[Image:xFig6_7_06.jpg|right|300px|thumb|left: image i0, right: ramp with the same size as image i0]]
 And the code line 
   
@@ -429,6 +430,7 @@ In this case, instead of a simple command "x" (which would create no image), a c
 <br />
 <br />
 <br />
+<br />
 [[Image:xFig6_7_07.jpg|right|350px|thumb|left: image i0 defining image size, right: halo centered at (100, 200)]]
 The code 
 
@@ -436,6 +438,7 @@ The code
 Math.sqrt(Math.pow(100 - x, 2) + Math.pow(200 - y, 2)) // i0
 </source>
 calculates an image of the same size as image i0, but containing only a halo centered at (100, 200).
+<br />
 <br />
 <br />
 <br />
@@ -456,6 +459,7 @@ creates a binary image mask by thresholding the image i0 with the value 128.
 <br />
 <br />
 <br />
+<br />
 [[Image:xFig6_7_09.jpg|right|300px|thumb|left: image i0, right: circular mask around (100, 200)]]
 The command
 
@@ -464,6 +468,7 @@ The command
  Math.pow(200 - y, 2)) < 100)? 255 : 0 // i0
 </source>
 creates an image of the same size as i0 containing a circular mask around point (100, 200).  The comment "// i0" is necessary for the definition of the image size to the size of i0.
+<br />
 <br />
 <br />
 <br />
@@ -482,6 +487,7 @@ takes the content of the image inside of a circle only and removes the regions o
 <br />
 <br />
 <br />
+<br />
 [[Image:xFig6_7_11.jpg|right|360px|thumb|left: image i0, center: image i1, right: exclusive OR of images i0 and i1]]
 
 Finally, 
@@ -490,18 +496,8 @@ Finally,
 (((int)i0 ^ (int)i1) > 0)? 255 : 0
 </source>
 performs an exclusive OR operation of image i0 and image i1. 
-<br />
-<br />
-<br />
-<br />
 
-The above examples show that any pixel- or voxel-wise operation can be provided in a single command line as soon as it follows the Java notation.
-<br />
-<br />
-<br />
-<br />
-
-The plugin is however able to do much more.  Instead of pixelwise operation mode, image-wide Java code fragments can be provided. For example, 
+The above examples show that any pixel- or voxel-wise operation can be provided in a single command line as soon as it follows the Java notation.  The plugin is however able to do much more.  Instead of pixelwise operation mode, image-wide Java code fragments can be provided. For example, 
 
 <source lang="java"> 
 float[] out = new float[i0.length];
@@ -511,10 +507,6 @@ return new Object[] { m0, out };
 </source>
 performs the same operation as the pixelwise operation "(i0 + i1 + i2) / 3" above.
 [[Image:xFig6_7_13.jpg|right|350px|thumb|left: image i0, right: message box with number of pixel values >= 10]]
-<br />
-<br />
-<br />
-<br />
 The code fragment 
 
 <source lang="java"> 
