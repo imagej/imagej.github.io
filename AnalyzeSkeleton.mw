@@ -101,7 +101,7 @@ Here's an example in Javascript:
 
 <source lang="javascript">
 importPackage(Packages.ij);
-importPackage(Packages.skeleton_analysis);
+importPackage(Packages.sc.fiji.analyzeSkeleton);
 
 // Takes a binary image as input
 var imp = IJ.getImage(); // get current open image
