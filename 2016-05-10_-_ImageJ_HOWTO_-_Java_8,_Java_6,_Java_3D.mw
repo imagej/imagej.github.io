@@ -8,9 +8,9 @@ Here is breakdown of the current recommendations and possibilities:
 ! [[ImageJ#Flavors|Flavor]]
 ! Java<br>version
 ! Platforms
-! Installation
-! Updates
-! Java 3D
+! style="width: 30%" | Installation
+! style="width: 30%" | Updates
+! style="width: 30%" | Java 3D
 |-
 ! rowspan=3 | [[File:Fiji-icon.png|alt=Fiji|x64px]]
 ! Java 8
@@ -38,11 +38,30 @@ Here is breakdown of the current recommendations and possibilities:
 |-
 | colspan=6 |
 |-
-| [[File:Imagej2-icon.png|alt=ImageJ2|link=ImageJ2|x64px]]
-| colspan=5 | (descriptions coming soon)
+! rowspan=2 | [[File:Imagej2-icon.png|alt=ImageJ2|link=ImageJ2|x64px]]
+! Java 8
+! style="white-space: nowrap" |
+[[File:Win.png|alt=Windows|x32px]]
+<br>[[File:Osx.png|alt=OS X|x32px]]
+<br>[[File:Tux.png|alt=Linux|x32px]]
+|
+[[Downloads|Download the newest ImageJ]] for your platform. It comes bundled with Java 8, but '''without''' the Java-8 update site enabled.
+| Run [[Updater|{{bc|Help|Update...}}]] to update to the latest '''Java-6-compatible''' version. Your ImageJ will become outdated over time, stuck on the final Java-6-compatible plugin versions.
+| rowspan=2 | The [[3D Viewer]] is not bundled with "plain" ImageJ2 (yet). It is (for now) part of the Fiji update site.
+|-
+! rowspan=2 | Java 6
+! style="white-space: nowrap" |
+[[File:Win.png|alt=Windows|x32px]]
+<br>[[File:Osx.png|alt=OS X|x32px]]
+<br>[[File:Tux.png|alt=Linux|x32px]]
+| colspan=2 | It is possible to set up a "plain" ImageJ2 with Java 6, but '''not recommended''':
+* Set up [[Fiji]] + Java 6 as described above.
+* Disable the Fiji update site.
+* Restart ImageJ.
+* Delete all Fiji-specific files using the updater's Advanced mode, View "Local only files" and deleting them all.
 |-
 | colspan=6 |
 |-
 | [[File:Imagej1-icon.png|alt=ImageJ1|link=ImageJ1|x64px]]
-| colspan=5 | (descriptions coming soon)
+| colspan=5 | See the [http://imagej.net/download.html ImageJ 1.x downloads page] for instructions.
 |}
