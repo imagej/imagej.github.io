@@ -65,3 +65,17 @@ Here is breakdown of the current recommendations and possibilities:
 | [[File:Imagej1-icon.png|alt=ImageJ1|link=ImageJ1|x64px]]
 | colspan=5 | See the [http://imagej.net/download.html ImageJ 1.x downloads page] for instructions.
 |}
+
+== About the Java-8 update site ==
+
+Right now, the <code>Java-8</code> update site includes the latest Java-8 versions of all core ImageJ '''and''' Fiji components. Later, we will migrate these components to the core <code>ImageJ</code> and <code>Fiji</code> update sites, respectively, so that users can choose between "plain" ImageJ2 (lighter weight without "plugin bloat") and Fiji (with "more parts on the table").
+
+== About Java 3D ==
+
+* Java 3D 1.6 requires Java 7 or newer. Hence, we ship it '''on the Java-8 update site only'''.
+* Java 3D 1.5 works with Java 6, but:
+** It has a restrictive license.
+** It does not work Java 7 or 8 on OS X.
+** It does not work with Java 8 (or 7?) on some Windows systems.
+
+Please be aware that Java 3D is essentially a dead technology. The future of 3D visualization in ImageJ is the [[ClearVolume]] plugin. But we still need to do some work to rebuild the [[3D Viewer]] on top of ClearVolume.
