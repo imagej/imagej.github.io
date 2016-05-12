@@ -8,9 +8,7 @@
 | released              = 08/05/2016
 | status                = v1.0.1, stable
 | category              = 
-}}
-__TOC__
-
+}}{{TOC}}
 == Presentation ==
 
 <code>OMEVisual</code> is a Fiji plugin to easily visualize OME metadata.
