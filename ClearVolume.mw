@@ -4,7 +4,7 @@
 | software = ImageJ
 | author = {{Person|Jug}}, {{Person|royerloic}}, Martin Weigert, {{Person|skalarproduktraum}}
 | maintainer = {{Person|Jug}}
-| source                 = {{GitHub|org=ClearVolume|repo=ClearVolume}}
+| source                 = {{GitHub|org=ClearVolume|repo=imglib2-clearvolume}}
 | status                 = active
 | category               = [[:Category:Visualization|Visualization]]
 | website                = https://clearvolume.github.io/
