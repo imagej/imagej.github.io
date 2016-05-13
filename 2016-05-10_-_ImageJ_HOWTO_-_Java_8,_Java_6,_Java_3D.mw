@@ -50,7 +50,7 @@ __TOC__
 [[Downloads|Download the newest ImageJ]] for your platform. It comes bundled ''without'' Java, and ''without'' the Java-8 update site enabled.
 * If you have not already done so: install Java 8 from [http://java.com/ java.com].
 * Do '''not''' enable the Java-8 update site, because (at the moment) it contains a mixture of core ImageJ and Fiji components.
-| Run [[Updater|{{bc|Help|Update...}}]] to update to the latest '''Java-6-compatible''' version. Your ImageJ will become outdated over time, stuck on the final Java-6-compatible plugin versions.
+| rowspan=2 | Run [[Updater|{{bc|Help|Update...}}]] to update to the latest '''Java-6-compatible''' version. Your ImageJ will become outdated over time, stuck on the final Java-6-compatible plugin versions.
 | rowspan=2 | The [[3D Viewer]] is not bundled with "plain" ImageJ2 (yet). It is (for now) part of the Fiji update site.
 |-
 ! rowspan=2 | Java 6
@@ -58,7 +58,7 @@ __TOC__
 [[File:Win.png|alt=Windows|x32px]]
 <br>[[File:Osx.png|alt=OS X|x32px]]
 <br>[[File:Tux.png|alt=Linux|x32px]]
-| colspan=2 | It is possible to set up a "plain" ImageJ2 with Java 6, but '''not recommended''':
+| It is possible to set up a "plain" ImageJ2 with Java 6, but '''not recommended''':
 * Set up [[Fiji]] + Java 6 as described above.
 * Disable the Fiji update site.
 * Restart ImageJ.
