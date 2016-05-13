@@ -35,6 +35,7 @@
 {{MenuItem | [[Adding_new_ops|Adding new ops]] }}
 {{MenuItem | [[Adding_new_file_formats|Adding new formats]] }}
 {{MenuItem | [[Developing using native libraries|Using native libraries]] }}
+{{MenuItem | [[Tips for C++ developers]] }}
 {{MenuItem | [[Introduction_into_Developing_Plugins|ImageJ 1.x plugins]] }}
 {{MenuItem | [[Versioning]] }}
 {{MenuItem | [[Logging]] }}
