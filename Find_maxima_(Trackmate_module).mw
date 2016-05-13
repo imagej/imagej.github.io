@@ -8,3 +8,8 @@
 | latest version         = v1.0.0 (13 May 2016)
 | status                 = active 
 }}
+== Purpose ==
+This plugin implements the find maxima detection algorithm for TrackMate. It was tried to use the same approach as for the Process -> Find Maxima command.
+
+==Installation==
+Copy  the jar file into your fiji plugins folder
