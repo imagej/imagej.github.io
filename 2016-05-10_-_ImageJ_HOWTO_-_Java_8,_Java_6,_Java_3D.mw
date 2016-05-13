@@ -72,7 +72,9 @@ __TOC__
 
 == About the Java-8 update site ==
 
-Right now, the <code>Java-8</code> update site includes the latest Java-8 versions of all core ImageJ '''and''' Fiji components. Later, we will migrate these components to the core <code>ImageJ</code> and <code>Fiji</code> update sites, respectively, so that users can choose between "plain" ImageJ2 (lighter weight without "plugin bloat") and Fiji (with "more parts on the table").
+Right now, the <code>Java-8</code> update site includes the latest Java-8 versions of all core ImageJ '''and''' Fiji components. So unfortunately, at the moment, there is no way to get a "latest and greatest plain ImageJ2" built on Java 8, but without Fiji components.
+
+But later this year, we will migrate the latest Java-8 components back to the core <code>ImageJ</code> and <code>Fiji</code> update sites, respectively, so that users can choose between "plain" ImageJ2 (lighter weight without "plugin bloat") and Fiji (with "more parts on the table"). We only want to proceed with this migration once there is a mechanism in place to notify users that Java 8 is now required, without breaking existing installations.
 
 == About Java 3D ==
 
