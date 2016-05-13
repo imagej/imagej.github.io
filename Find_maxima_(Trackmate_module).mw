@@ -9,10 +9,11 @@
 | status                 = active 
 }}
 == Purpose ==
-This plugin implements the find maxima detection algorithm for TrackMate. It was tried to use the same approach as for the Process -> Find Maxima command.
+This plugin implements the find maxima detection algorithm for TrackMate. It was tried to resample the approach as for the ''Process -> Find Maxima...'' command. 
+The results are almost the same.
 
 ==Installation==
-Copy the jar file into your fiji plugins folder
+Copy the jar file into your fiji plugins folder. If you start TrackMate it is detected automatically and you can choose it as detector.
 
 ==Parameters==
 [[File:Findmaxima gui.png|400px|thumb]]
