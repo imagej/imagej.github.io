@@ -1,6 +1,14 @@
-<center>[[File:ClearVolumeLogo.png]]</center>
-
-== Problems and Solutions ==
+{{Infobox
+| name = ClearVolume
+| logo = [[File:ClearVolumeLogo.png]]
+| software = ImageJ
+| author = {{Person|Jug}}, {{Person|royerloic}}, Martin Weigert, {{Person|skalarproduktraum}}
+| maintainer = {{Person|Jug}}
+| source                 = {{GitHub|org=ClearVolume|repo=ClearVolume}}
+| status                 = active
+| category               = [[:Category:Visualization|Visualization]]
+| website                = https://clearvolume.github.io/
+}}== Problems and Solutions ==
 We work constantly on improving the Fiji and KNIME plugins. Help us doing so by letting us know if you encounter problems.
 
 * '''Problem:''' on a Linux machine ClearVolume would not start but throw an ugly exception like
