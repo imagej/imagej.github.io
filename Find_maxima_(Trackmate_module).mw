@@ -21,3 +21,7 @@ Copy the jar file into your fiji plugins folder. If you start TrackMate it is de
 '''Estimated blob diameter:''' To achieve subpixel accuracy this region is used for refining the positions.
 
 '''Tolerance:''' As for the ''Process -> Find Maxima...'' command: "Maxima are ignored if they do not stand out from the surroundings by more than this value. In other words, a threshold is set at the maximum value minus noise tolerance and the contiguous area around the maximum above the threshold is analyzed. For accepting a maximum, this area must not contain any point with a value higher than the maximum. Only one maximum within this area is accepted."
+
+==Example==
+The example shows a typical image of scattering nanoparticles. The detection was done with a '''estimated blob diameter''' of 10 and '''tolerance''' of 10: 
+[[File:Findmax result.png]]
