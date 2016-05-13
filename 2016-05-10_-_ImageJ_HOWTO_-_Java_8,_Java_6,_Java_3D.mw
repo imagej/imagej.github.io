@@ -47,7 +47,8 @@ __TOC__
 <br>[[File:Osx.png|alt=OS X|x32px]]
 <br>[[File:Tux.png|alt=Linux|x32px]]
 |
-[[Downloads|Download the newest ImageJ]] for your platform. It comes bundled with Java 8, but '''without''' the Java-8 update site enabled.
+[[Downloads|Download the newest ImageJ]] for your platform. It comes bundled ''without'' Java, and ''without'' the Java-8 update site enabled.
+* If you have not already done so: install Java 8 from [http://java.com/ java.com].
 | Run [[Updater|{{bc|Help|Update...}}]] to update to the latest '''Java-6-compatible''' version. Your ImageJ will become outdated over time, stuck on the final Java-6-compatible plugin versions.
 | rowspan=2 | The [[3D Viewer]] is not bundled with "plain" ImageJ2 (yet). It is (for now) part of the Fiji update site.
 |-
