@@ -15,5 +15,5 @@ This plugin implements the find maxima detection algorithm for TrackMate. It was
 Copy the jar file into your fiji plugins folder
 
 ==Parameters==
-[[File:Findmaxima gui.png|300px|thumb]]
+[[File:Findmaxima gui.png|400px|thumb]]
 Tolerance:
