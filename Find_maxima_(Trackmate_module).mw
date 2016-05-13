@@ -1,0 +1,10 @@
+{{Infobox
+| software               = Fiji
+| name                   = Find Maxima Detector for TrackMate
+| author                 = {{Person|Twagner}}, {{Person|JeanYvesTinevez}}
+| maintainer             = {{Person|Twagner}},
+| filename               = TrackMate_FindMaxima.jar [https://github.com/thorstenwagner/ij-trackmate-findmaxima/releases/latest [1]]
+| source                 = Github [https://github.com/thorstenwagner/ij-trackmate-findmaxima [2]]
+| latest version         = v1.0.0 (13 May 2016)
+| status                 = active 
+}}
