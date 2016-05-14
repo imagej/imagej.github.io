@@ -148,7 +148,7 @@ for (int i = 0; i < allBlobs.size(); i++) {
 }
 </source>
 
-==Who used this plugin?==
+=Who used this plugin?=
 This is a list of publication who used ijblob / shape filter plugin:
 
 Kulbacka, J., Kulbacki, M., Segen, J., Chodaczek, G., Dubinska-Magiera, M., & Saczko, J. (2016). Cellular Nuclei Differentiation Evaluated by Automated Analysis of CLSM Images. Intelligent Information and Database Systems Lecture Notes in Computer Science, 407-416. doi:10.1007/978-3-662-49390-8_40
