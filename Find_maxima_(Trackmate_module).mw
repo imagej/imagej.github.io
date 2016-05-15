@@ -10,7 +10,7 @@
 }}
 == Purpose ==
 This plugin implements the find maxima detection algorithm for [[TrackMate]]. It was tried to resample the approach as for the ''Process -> Find Maxima...'' command. 
-The results are almost the same.
+The results are almost the same. Subpixel accuracy is activated by default.
 
 ==Installation==
 Copy the jar file into your fiji plugins folder. If you start TrackMate it is detected automatically and you can choose it as detector.
