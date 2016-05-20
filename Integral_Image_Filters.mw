@@ -8,7 +8,7 @@
 | latest version         = February 22<sup>nd</sup>, 2012
 | status                 = stable, active
 | category               = [[:Category:Plugins|Plugins]], [[:Category:Filtering|Filtering]]
-}}<include iframe class="youtube-player" type="text/html" width="400" height="280" src="http://www.youtube.com/embed/p1mhZqj2VTY" frameborder="0" />
+}}{{#ev:youtube|p1mhZqj2VTY|400}}
 
 Integral images have been introduced in by Crow (1984)<ref>{{cite conference
  | last = Crow
@@ -128,8 +128,7 @@ which expands to
 
 Both sums can be generated from two Integral Images over <math>I(\vec{x})</math> and <math>I(\vec{x})^2</math> respectively.  For a two-dimensional image, both tables can be generated in a single loop with, on average, 1 product and 6 sums for calculation and 5 sums for data access per pixel.  Using those, the variance of an arbitrary rectangular block of pixels can be generated in constant time with 3 products and 9 sums for calculation and 2 products and 6 sums for data access.
 
-
-<div style="float:right; margin-left:2em; margin-bottom:2em"><include iframe class="youtube-player" type="text/html" width="340" height="280" src="http://www.youtube.com/embed/MZfnTL9e_fA" frameborder="0" /></div>
+{{#ev:youtube|MZfnTL9e_fA|340|right}}
 
 ===Block Matching with Integral Images===
 
