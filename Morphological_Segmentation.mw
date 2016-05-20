@@ -71,14 +71,14 @@ If your segmentation is taking too long or you want '''to stop it''' for any rea
 === Quick start guide ===
 This introductory screencast (which needs audio) explains the basic use of the plugin:
 
-<include iframe class="youtube-player" type="text/html" width="420" height="315" src="https://www.youtube.com/embed/gF4nhq7I2Eo" frameborder="0" allowfullscreen/>
+{{#ev:youtube|gF4nhq7I2Eo|420}}
 
 For a full screen visualization, click on "Watch on www.youtube.com".
 
 === Segmentation of a 3D image ===
 This video tutorial (with audio as well) shows how to use the plugin segment a 3D image (confocal image of an ''Arabidopsis thaliana'' embryo, courtesy of Jean-Christophe Palauqui (INRA-Versailles)):
 
-<include iframe class="youtube-player" type="text/html" width="420" height="315" src="https://www.youtube.com/embed/lm4hQhLlnHU" frameborder="0" allowfullscreen/>
+{{#ev:youtube|lm4hQhLlnHU|420}}
 
 For a full screen visualization, click on "Watch on www.youtube.com"
 
