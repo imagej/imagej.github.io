@@ -53,12 +53,4 @@ Some community members frequent [[wikipedia:Internet Relay Chat|IRC]] on [http:/
 |}
 Advantages of IRC include anonymity, and maximum compatibility with a huge variety of existing chat clients.
 
-If Javascript is enabled in your browser, you can connect to '''#fiji-devel''' right away, right here, by entering the captcha and clicking ''Connect'' (you can set your nickname using <tt>/nick <REPLACE-WITH-YOUR-NICKNAME></tt>):
-
-<include iframe src="http://webchat.freenode.net?randomnick=1&channels=fiji-devel&uio=d4" width="647" height="400" />
-
-The chat client above is the [http://webchat.freenode.net/?channels=fiji-devel freenode.net Javascript client].
-
-Or if you are lucky enough not to be blocked by a restrictive firewall, you can install and use [[wikipedia:Comparison of Internet Relay Chat clients|a dedicated IRC client]] of your very own.
-
 [[Category:Help]]
