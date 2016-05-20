@@ -8,7 +8,7 @@
 | latest version         = May 26, 2009
 | status                 = stable, active
 | category               = [[:Category:Transform|Transform]], [[:Category:Plugins|Plugins]]
-}}<include iframe class="youtube-player" type="text/html" width="400" height="450" src="http://www.youtube.com/embed/NwOxRmX03xs" frameborder="0" />
+}}{{#ev:youtube|NwOxRmX03xs|400}}
 
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
