@@ -56,7 +56,7 @@ To temper it, the track rendering has changed and is now finer. This is has a st
 
 TrackMate permits semi-automated and curation of automated results. In some cases, there might be many spurious spots to remove manually. To make it less cumbersome, you can draw a ROI to select many spots at once. This is best explained in the following short video:
 
-<include iframe width="640" height="480" src="https://www.youtube.com/embed/IZenKcv6R4Y" frameborder="0" allowfullscreen></include>
+{{#ev:youtube|IZenKcv6R4Y|640}}
 
 
 === The Block LoG detector. ===
