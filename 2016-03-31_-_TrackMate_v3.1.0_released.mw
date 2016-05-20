@@ -14,7 +14,7 @@ We also mention here the changes of version 3.0.1, which did not get a news item
 This track display mode only shows the content of the current selection, for spots and edges.  It can be accessed in the GUI panel 'Configure views' with a special track display mode called 'Selection only'.
 Careful: the content of the selection model can still be edited in this mode. Of course, the track display mode is ignored by TrackScheme, which then can be used to modify the selection in this mode.
 
-<include iframe width="420" height="315" src="https://www.youtube.com/embed/H72C1pae5-A?vq=hd720" frameborder="0" allowfullscreen></include>
+{{#ev:youtube|H72C1pae5-A|420}}
 
 * The semi-auto tracker now detects spots in the currently selected channel, in case of a multi-C image.
 
