@@ -18,7 +18,8 @@ This article explains how to install, configure and use Eclipse to develop [[Ima
 
 === Configure Eclipse for your platform ===
 
-<tabs style="color:{{#if:{{{1|}}}|green|red}}">
+<div style="overflow: hidden">
+<tabs>
 <tab name="Windows">
 [[File:Win.png | x32px]] '''Windows'''
 
@@ -49,6 +50,7 @@ Now update Eclipse's JRE to be JDK-aware:
 '''Do not use a package manager.''' For several reasons, we do not recommend installing Eclipse from a package manager. You may not get a new enough version of Eclipse (we recommend 4.3+), you will not get the Java Developers version that includes the M2E plugins, and you will likely have trouble installing additional plugins due to the permissions issues with the system-wide installation.
 </tab>
 </tabs>
+</div>
 
 == Clone the source code ==
 
