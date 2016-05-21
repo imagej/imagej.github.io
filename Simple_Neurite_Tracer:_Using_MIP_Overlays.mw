@@ -7,4 +7,4 @@ If you are tracing bright neurons with a structure that appears clear when viewe
 
 These features are demonstrated in the following screencast.  (I'm afraid that the 3D viewer hasn't been captured properly in this screencast, but I hope it's still pretty clear what's going on.)
 
-<include iframe title="YouTube video player" width="480" height="390" src="http://www.youtube.com/embed/pXpMRb1AC4I" frameborder="0" allowfullscreen></include>
+{{#ev:youtube|pXpMRb1AC4I|480}}
