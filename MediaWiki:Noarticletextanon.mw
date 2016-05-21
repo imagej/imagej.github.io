@@ -1,3 +1,1 @@
-{{#ifgetvar: menuentry |
-Sorry, the menu entry {{PAGENAME}} is not documented.  Please [[Help:Contents#New_accounts|get an account]] and [{{fullurl:{{FULLPAGENAME}}|action=edit}} document it].|
-There is currently no text in this page, you can [[Special:Search/{{PAGENAME}}|search for this page title]] in other pages or [[Help:Contents#New_accounts|get an account]] and [{{fullurl:{{FULLPAGENAME}}|action=edit}} edit this page].}}
+There is currently no text in this page, you can [[Special:Search/{{PAGENAME}}|search for this page title]] in other pages or [[Help:Contents#New_accounts|get an account]] and [{{fullurl:{{FULLPAGENAME}}|action=edit}} edit this page].
