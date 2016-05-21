@@ -70,11 +70,11 @@ The first video shows a developing ''Drosophila'' embryo expressing His-YFP in a
 During the 2012 Lightsheet fluorescence microscopy meeting in Dublin, organized by Emmanuel Reynaud, it was voted to summarize most of these developments under the name of '''Lightsheet fluorescence microscopy (LSFM)'''.
 |}
 
-<include iframe title="YouTube video player" width="420" height="315" src="http:////www.youtube.com/embed/NJHoP8RBIaw" frameborder="0" allowfullscreen></include>
+{{#ev:youtube|NJHoP8RBIaw|420}}
 
 The second video shows a fixed ''C. elegans'' larvae in L1 stage expressing Lamin-GFP and stained with Hoechst. The four-view dataset was acquired using the Zeiss Lightsheet Z.1 microscope. It illustrates the increase in resolution that can be achieved through multiview imaging combined with multiview deconvolution. The top row shows one of the four input views, the bottom row the result of the multiview deconvolution.
 
-<include iframe title="YouTube video player" width="420" height="315" src="http:////www.youtube.com/embed/16gq2WUm-50" frameborder="0" allowfullscreen></include>
+{{#ev:youtube|16gq2WUm-50|420}}
 
 == Detailed Tutorials ==
 
@@ -133,11 +133,11 @@ Apart from this potential processing outline there are many '''tools''' availabl
 
 During the [http://openspim.org/EMBO_practical_course_Light_sheet_microscopy EMBO Practical Course on Lightsheet Microscopy] two of my talks were recorded:
 
-<include iframe title="Talk: Registration of Multiview Lightsheet Fluorescence Microscopy (LSFM) Images" width="773" height="435" src="http://www.youtube.com/embed/IupXS_On2rg" frameborder="0" allowFullScreen="true"></include>
+{{#ev:youtube|IupXS_On2rg|773||Talk: Registration of Multiview Lightsheet Fluorescence Microscopy (LSFM) Images}}
 
 This 30-minute talk by [http://www.preibisch.net Stephan Preibisch] covers the theory behind registration of multiview lightsheet microscopy data and it also quickly addresses the problem of multiview fusion & deconvolution.
 
-<include iframe title="Tutorial: Fiji Multiview Lightsheet Reconstruction Software" width="773" height="435" src="http://www.youtube.com/embed/0IkaSwfPYw0" frameborder="0" allowFullScreen="true"></include>
+{{#ev:youtube|0IkaSwfPYw0|773||Tutorial: Fiji Multiview Lightsheet Reconstruction Software}}
 
 This one hour tutorial by [http://www.preibisch.net Stephan Preibisch] covers the basic usage of this multiview reconstruction software for Fiji. Documentation, source code, bug reports and feature requests can be found [https://sourceforge.net/projects/multiviewreconstruction/ on SourceForge].
 
