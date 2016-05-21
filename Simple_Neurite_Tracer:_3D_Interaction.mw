@@ -2,7 +2,7 @@
 
 It is now possible to select the points for traces in the [[3D Viewer]] rather than the 2D view.
 
-<include iframe title="YouTube video player" width="480" height="390" src="http://www.youtube.com/embed/Vt4m55V7AjI" frameborder="0" allowfullscreen></include>
+{{#ev:youtube|Vt4m55V7AjI|480}}
 
 In order to select points for tracing in the 3D Viewer, you need to use the "Wand" tool.  In order to rotate the view, you need to use the "Hand" tool.  Once you have selected each of these once, you should be able to switch between them by pressing the {{key|Esc}} key.
 
