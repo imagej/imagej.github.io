@@ -9,17 +9,9 @@
 {{MenuItem | [[:Category:Tutorials|Tutorials]] }}
 {{MenuItem | [[Help]] }}
 {{MenuItem | [[Frequently Asked Questions]] }}
-{{MenuItem | [[Using Fiji|more...]] }}
-}}
-
-{{Submenu | Advanced Fiji usage |
-{{MenuItem | [[:Category:Registration|Registering 3D images]] }}
-{{MenuItem | [[Segmentation|Segmenting images]] }}
-{{MenuItem | [[Useful keyboard shortcuts]] }}
-{{MenuItem | [[Scripting]] }}
 {{MenuItem | Some [[ImageJ tricks]] }}
 {{MenuItem | [[Links]] }}
-{{MenuItem | [[Advanced Fiji Usage|more...]] }}
+{{MenuItem | [[Using Fiji|more...]] }}
 }}
 
 {{Submenu | Development
