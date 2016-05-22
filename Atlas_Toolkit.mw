@@ -87,7 +87,7 @@ Once a set of ‘.label’ files has been registered using [[#Label Registration
 ===Video demonstration===
 The following screencast demonstrates Apply Label Registration in use.
 
-  '''<code><nowiki>https://www.youtube.com/watch?v=2JwRZm5dst8</nowiki></code>'''
+{{#widget:YouTube|id=2JwRZm5dst8}}
 
 == Reference ==
 Please cite the following original research article in which the Atlas Toolkit is described:
