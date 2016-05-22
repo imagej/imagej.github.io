@@ -1034,9 +1034,4 @@ margin-top: 1.75em;
     color: #f33;
 }
 
-/* NB: Fix the width of code blocks when there are floating blocks left or right. */
-.syntaxhighlighter {
-    width: auto !important;
-}
-
 /* </nowiki></pre> */
