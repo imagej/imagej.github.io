@@ -63,11 +63,11 @@ You will then be prompted to select some basic parameters:
 
 [[File:LabelRegistration3D-1.png]]
 
-- "Select Channel (0 - 255):" allows you to select which of the labels (tissues/objects) within the '.label' files should be registered. Empty space/background will have a value of '0', while the first (possibly only) label will have a value of '1' and this is the default setting.
+* "Select Channel (0 - 255):" allows you to select which of the labels (tissues/objects) within the '.label' files should be registered. Empty space/background will have a value of '0', while the first (possibly only) label will have a value of '1' and this is the default setting.
 
-- "Number of iterations:" determines how many times the tool will attempt to register the '.label' files. More complex or dissimilar tissues/objects may require more iterations. Similarly, the more '.label' files you are registering, the more iterations may be required.
+* "Number of iterations:" determines how many times the tool will attempt to register the '.label' files. More complex or dissimilar tissues/objects may require more iterations. Similarly, the more '.label' files you are registering, the more iterations may be required.
 
-- "First Orthogonal Plane:" allows you to tell the tool which direction it should start from. Some tissues/objects may be more asymmetric in one particular plane and it may be advantageous to perform the first 2D registration in that plane.
+* "First Orthogonal Plane:" allows you to tell the tool which direction it should start from. Some tissues/objects may be more asymmetric in one particular plane and it may be advantageous to perform the first 2D registration in that plane.
 
 On clicking "OK" the tool will register the specified '.label' files, displaying its progress as it does so.
 
@@ -75,11 +75,11 @@ Once the registration is complete, you will be prompted for a folder in which to
 
 The results consist of the following files:
 
-- Multiple '.tif' files, each containing a transformed version of one tissue/object.
+* Multiple '.tif' files, each containing a transformed version of one tissue/object.
 
-- A single 'consensus.tif' file, which contains the consensus morphology for all registered tissue/objects.
+* A single 'consensus.tif' file, which contains the consensus morphology for all registered tissue/objects.
 
-- Multiple '.ots' files, each containing instructions for reproducing the transformation of a particular tissue/object. These '.ots' files can be used with the [[#Apply Label Registration|Apply Label Registration]] tool in order to reproduce a particular transformation, for example on the corresponding original image stack.
+* Multiple '.ots' files, each containing instructions for reproducing the transformation of a particular tissue/object. These '.ots' files can be used with the [[#Apply Label Registration|Apply Label Registration]] tool in order to reproduce a particular transformation, for example on the corresponding original image stack.
 
 ==Apply Label Registration==
 Once a set of ‘.label’ files has been registered using [[#Label Registration 3D|Label Registration 3D]], the resulting ‘.ots’ files can be used to transform the original image stacks towards their shared consensus tissue/object morphology.
