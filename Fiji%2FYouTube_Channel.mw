@@ -1,5 +1,5 @@
 Fiji has a [http://www.youtube.com/user/fijichannel YouTube Channel] where you will find screen casts and other moving pictures about Fiji.
 
-<include iframe width="560" height="315" frameborder="0" src="http://www.youtube.com/embed/videoseries?index=16&amp;list=PLE038EE5363CD9122&amp;hl=en_US" />
+{{#widget:YouTube|playlist=PLE038EE5363CD9122|width=560}}
 
 [[Category:Tutorials]]
