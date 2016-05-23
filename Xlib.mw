@@ -900,6 +900,12 @@ This section contains plugins that are designed for user-interactive visualizati
 === Display Volume ===
 This plugin provides an orthogonal slicer for image volumes.  The top view (xy), front view (xz) and side view (yz) of the volume are displayed at a specific point, the center point at startup.  The point then can be moved by mouse interaction in one of the views while the remaining views keep track of the changes.  Thereby, any x,y,z-location in the 3D volume can easily be focused and displayed.  The image value at the current position is always plotted to the ImageJ window.
 
+As soon as the plugin is activated, the respective image stack disappears.  Likely, as the orthogonal slicer window is closed, the respective image stack reappears again and the current slice position is selected.
+
+As the plugin is activated, the orthogonal slicer acts like a common image stack, that is, any filter operations or plugins can be applied to either a single slice or to the entire volume.  One of the restrictions is that overlays cannot be handled with this plugin and like this, selection of ROIs (i.e. with the selection tools) are not supported.
+
+Tip: if you add a shortcut for the "Display Volume" plugin, it is easily possible to switch back and forth from a conventional image stack to an orthogonal slicer and vice verca.
+
 {|
 |style="vertical-align:top" |[[Image:xFig9_1.jpg|thumb|right|700px|Orthogonal slicer view of the nanotomographic 3D volume from cement paste as displayed in the section for the [[#Pore Size Distribution|"Pore Size Distribution"]] plugin (top).]]
 |}
