@@ -24,22 +24,30 @@ __TOC__
 
 === Examples ===
 
-[[Image:TrackMate Celegans devel.gif|center|thumb|400px|The first 2 hours of a ''C.elegans'' embryo development, followed in 3D over time using TrackMate (strain: [http://www.wormbase.org/db/gene/strain?name=AZ212;class=Strain AZ212])]]
+
+[[File:TrackMate Celegans devel.gif]]
+
+The first 2 hours of a ''C.elegans'' embryo development, followed in 3D over time using TrackMate (strain: [http://www.wormbase.org/db/gene/strain?name=AZ212;class=Strain AZ212])
 
 
-[[Image:TrackMate Celegans lineage detail.png|thumb|300px|A detail of the corresponding unannotated lineage visualized in TrackScheme. The full lineage of this one hour of imaging is [[:Image:TrackMate Celegans lineage.pdf|there]].]]
+[[Image:TrackMate Celegans lineage detail.png|500px]]
+
+A detail of the corresponding unannotated lineage visualized in TrackScheme. The full lineage of this one hour of imaging is [[:Image:TrackMate Celegans lineage.pdf|there]].
 
 
+[[Image:TrackMate Split Merge Gapclosing.gif]]
+
+TrackMate can be set to detect and deal with gap-closing events, splitting events and merging events.
 
 
-[[Image:TrackMate Split Merge Gapclosing.gif|frame|TrackMate can be set to detect and deal with gap-closing events, splitting events and merging events.]] 
+[[Image:TrackMate Celegans CellDiameter.png|TrackMate Celegans CellDiameter.png]]
+
+TrackMate can also be used for basic track analysis. Here is plotted the estimated diameter of a ''C.elegans'' cell as it divides over time.
 
 
-[[Image:TrackMate Celegans CellDiameter.png|thumb|500px|TrackMate can also be used for basic track analysis. Here is plotted the estimated diameter of a ''C.elegans'' cell as it divides over time.]] 
+[[Image:TrackMate CelegansCellFollowed.gif]]
 
-
-
-[[Image:TrackMate CelegansCellFollowed.gif|thumb|A movie following one cell of a ''C.elegans'' embryo tracked over 3 hours, as it divides. The track follows the lineage from cell AB to ABaraapap.]] 
+A movie following one cell of a ''C.elegans'' embryo tracked over 3 hours, as it divides. The track follows the lineage from cell AB to ABaraapap.
 
 {{Clear}}
 
