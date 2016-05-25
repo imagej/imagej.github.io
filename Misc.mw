@@ -8,7 +8,7 @@ If you want to trust everybody, [http://cm.bell-labs.com/who/ken/trust.html read
 
 If you are curious and want to see what a peek into the future would have been like, look at this:
 
-<flvplayer height="480" width="640">test.flv</flvplayer>
+{{#widget:YouTube|id=LBrDzZCOQtI|width=640}}
 
 If you do not like the Google search in your Firefox to be localized, change it.  In a file that might be named /usr/lib/firefox-addons/searchplugins/google.xml... (you have to remove the &hl=.. part).
 
