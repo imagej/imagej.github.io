@@ -93,11 +93,19 @@ If ImageJ [[wikipedia:Crash (computing)|crashes]]—i.e., the program suddenly t
 Could not reserve enough space for 1253376KB object heap
 </source>
 Then you can try the following:
-* [https://raw.githubusercontent.com/imagej/imagej/master/bin/ImageJ.bat Download the ImageJ.bat launcher].
-* Save it in your ImageJ folder.
-* Double click it.
-* After ImageJ starts up, run {{bc|Edit|Options|Memory & Threads...}}, set your desired memory value.
-* Quit ImageJ, and relaunch it using the usual <code>ImageJ-win32.exe</code>.
+<ul>
+<li>Run Notepad</li>
+<li>Paste in the following:
+<source>
+.
+jre\bin\javaw.exe
+-Xmx512m -cp ij.jar ij.ImageJ
+</source>
+</li>
+<li>Save the file as <code>ImageJ.cfg</code> in your <code>ImageJ.app</code> (or <code>Fiji.app</code>) installation.</li>
+<li>Try running <code>ImageJ-win32.exe</code> again.</li>
+</ul>
+You can replace the 512m with however many megabytes of memory you wish to give to ImageJ.
 
 === After running the updater ===
 
