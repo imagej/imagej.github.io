@@ -102,7 +102,9 @@ jre\bin\javaw.exe
 -Xmx512m -cp ij.jar ij.ImageJ
 </source>
 </li>
-<li>Save the file as <code>ImageJ.cfg</code> in your <code>ImageJ.app</code> (or <code>Fiji.app</code>) installation.</li>
+<li>Save the file as <code>ImageJ.cfg</code> in your <code>ImageJ.app</code> (or <code>Fiji.app</code>) installation.
+<ol><li>Note that by default, Windows hides file extensions; you may need to [http://windows.microsoft.com/en-us/windows/show-hide-file-name-extensions show file extensions] before you can successfully name the file <code>ImageJ.cfg</code> as required></li></ol>
+</li>
 <li>Try running <code>ImageJ-win32.exe</code> again.</li>
 </ul>
 You can replace the <code>512m</code> with however many megabytes of memory you wish to give to ImageJ.
