@@ -5,7 +5,7 @@
 The [[ImageJ]] project, and related projects in the [[SciJava]] software ecosystem, are governed as [[open source]] software projects.  Everybody is welcome to [[contribute]] with [[plugins]], patches, [[Bugs|bug reports]], [[tutorials]], [[documentation]], and artwork.
 
 That said, every project needs leaders: the ones who participate in ''governance'' of the project, [[wikipedia:Software maintenance|maintaining]] the software and making key decisions.
-{{Clear}}
+
 == Project roles ==
 
 Because [[open source]] software (OSS) is highly collaborative, it is extremely important to understand the difference between various roles on the project, to avoid misconceptions about '''authority''' (who makes decisions) and '''responsibility''' (who is pledged to do the work) concerning each project.
