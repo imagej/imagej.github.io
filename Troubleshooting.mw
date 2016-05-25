@@ -86,6 +86,21 @@ If ImageJ [[wikipedia:Crash (computing)|crashes]]—i.e., the program suddenly t
 
 == If ImageJ does not start up ==
 
+=== On a fresh installation ===
+
+[[File:Win.png|x20px]] On some 32-bit Windows systems, ImageJ may initially request more memory than Windows can handle. If you launch ImageJ in debug mode (see above), and receive a message like:
+<source>
+Could not reserve enough space for 1253376KB object heap
+</source>
+Then you can try the following:
+* [https://raw.githubusercontent.com/imagej/imagej/master/bin/ImageJ.bat Download the ImageJ.bat launcher].
+* Save it in your ImageJ folder.
+* Double click it.
+* After ImageJ starts up, run {{bc|Edit|Options|Memory & Threads...}}, set your desired memory value.
+* Quit ImageJ, and relaunch it using the usual <code>ImageJ-win32.exe</code>.
+
+=== After running the updater ===
+
 If the ImageJ window never appears after launching the program, the installation may be corrupted. While the developers of ImageJ make a serious effort to prevent this problem from happening, it is still possible after running the {{bc | Help | Update...}} command, due to bugs in the [[Updater]].
 
 The easiest workaround is to [[download]] a fresh copy of the software.
