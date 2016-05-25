@@ -105,7 +105,7 @@ jre\bin\javaw.exe
 <li>Save the file as <code>ImageJ.cfg</code> in your <code>ImageJ.app</code> (or <code>Fiji.app</code>) installation.</li>
 <li>Try running <code>ImageJ-win32.exe</code> again.</li>
 </ul>
-You can replace the 512m with however many megabytes of memory you wish to give to ImageJ.
+You can replace the <code>512m</code> with however many megabytes of memory you wish to give to ImageJ.
 
 === After running the updater ===
 
