@@ -6,7 +6,6 @@
 | source                = {{GitHub|org=saalfeldlab|repo=bigwarp}}
 | latest version        = 2.1.1
 | status                = stable
-| category              = [[:Category:Plugins|Plugins]], [[:Category:Visualization|Visualization]], [[:Category:Transform|Transform]], [[:Category:Registration|Registration]]
 }}
 
 == Description ==
@@ -140,3 +139,8 @@ whereas an in-memory ImagePlus will be slower to generate but faster to browse.
 
 The exported image will have the same dimensions as the target image.
 ''Note: Take care when exporting very large data sets.''
+
+[[Category:Plugins]]
+[[Category:Visualization]]
+[[Category:Transform]]
+[[Category:Registration]]
