@@ -1,8 +1,8 @@
 {{Infobox
 | software               = Fiji
 | name                   = Atlas Toolkit
-| author                 = [http://www.grocottlab.com GrocottLab]
-| maintainer             = Timothy Grocott ([mailto:t.grocott@uea.ac.uk t.grocott@uea.ac.uk])
+| author                 = [http://www.grocottlab.com Grocott Lab]
+| maintainer             = {{Person|GrocottLab}}
 | filename               = Atlas_Toolkit_1.0-SNAPSHOT.jar
 | source                 = {{GitHub|org=GrocottLab|repo=Atlas-Toolkit}}
 | released               = November 16<sup>th</sup>, 2015
@@ -92,16 +92,7 @@ The following screencast demonstrates Apply Label Registration in use.
 == Reference ==
 Please cite the following original research article in which the Atlas Toolkit is described:
 
-* {{Citation | last=Grocott | first=Timothy
-| last2=Thomas | first2=Paul
-| last3=Münsterberg | first3=Andrea E.
-| title=Atlas Toolkit: Fast registration of 3D morphological datasets in the absence of landmarks.
-| journal=Scientific Reports
-| volume=6
-| year=2016
-| pages=Article number 20732
-| doi=10.1038/srep20732
-}}
+* {{Publication | Atlas Toolkit}}
 
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
