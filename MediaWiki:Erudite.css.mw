@@ -61,6 +61,12 @@ h1, h2 {
   margin-bottom: 0.25em;
 }
 
+/* Make links brighter, and not underlined. */
+a, a:visited {
+  color: #26d;
+  border: none;
+}
+
 /* Fix padding of striped headers on front page. */
 .header-stripe {
   padding-bottom: 0;
