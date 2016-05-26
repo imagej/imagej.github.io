@@ -9,4 +9,4 @@ This widget allows you to add '''[[wikipedia:SWF|SWF]]''' content to your wiki p
 {{#widget:flash|swf=1/14/Skeleton-analysis-tutorial.swf|width=824|height=740}}
 </pre>
 {{#widget:flash|swf=1/14/Skeleton-analysis-tutorial.swf|width=824|height=740}}
-</noinclude><includeonly><iframe width="<!--{$width|escape:'html'|default:500}-->" height="<!--{$height|escape:'html'|default:300}-->" frameborder="0" src="/images/<!--{$key|escape:'swf'}-->"></iframe></includeonly>
+</noinclude><includeonly><iframe width="<!--{$width|escape:'html'|default:500}-->" height="<!--{$height|escape:'html'|default:300}-->" frameborder="0" src="/_images/<!--{$key|escape:'swf'}-->"></iframe></includeonly>
