@@ -50,6 +50,7 @@
 
 /* Box off the TOC like Vector does, to make it more consistent with other menu styling. */
 .toc {
+  background-color: #f9f9f9;
   border: 1px solid #a0a0a0;
   display: inline-block;
   padding: 0.5em 1em 0.5em 1em;
