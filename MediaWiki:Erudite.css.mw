@@ -25,6 +25,15 @@
   margin: 0;
 }
 
+/* Make the footer horizontal, and more compact. */
+#footer {
+  padding-right: 0;
+}
+#footer li {
+  display: inline;
+  padding-right: 1em;
+}
+
 /* Box off the TOC like Vector does, to make it more consistent with other menu styling. */
 .toc {
   border: 1px solid #a0a0a0;
