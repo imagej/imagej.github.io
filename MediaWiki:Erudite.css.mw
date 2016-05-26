@@ -29,6 +29,9 @@
 #footer {
   padding-right: 0;
 }
+#footer p {
+  padding-right: 1em;
+}
 #footer li {
   display: inline;
   padding-right: 1em;
