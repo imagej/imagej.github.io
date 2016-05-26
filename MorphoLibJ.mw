@@ -214,7 +214,7 @@ Other measurements consider the '''largest circle that can be inscribed within t
 | doi = 10.1109/TMI.2004.825627
 }}</ref>). Each connected component was associated to a label, then the longest geodesic path within each connected component was computed and displayed as red overlay.]]
 ====Geodesic diameter====
-For particles with complex shapes, the '''geodesic diameter''' may be of interest ({{bc | Plugins | MorphoLibJ | Analyze | Geodesic Diameter}}). It corresponds of the largest geodesic distance between two points within a region, the geodesic distance being the length of the shortest path joining the two points while staying inside the region (Lantuejoul ''et al.'', 1981<ref name="Lantuejoul1981">{{cite conference
+For particles with complex shapes, the '''geodesic diameter''' may be of interest ({{bc | Plugins | MorphoLibJ | Analyze | Geodesic Diameter}}). It corresponds of the largest geodesic distance between two points within a 2D region, the geodesic distance being the length of the shortest path joining the two points while staying inside the region (Lantuejoul ''et al.'', 1981<ref name="Lantuejoul1981">{{cite conference
 | title                    = On the use of geodesic metric in image analysis
 | author                   = Lantuejoul, C. and Beucher, S.
 | journal                  = Journal of Microscopy
