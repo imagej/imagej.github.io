@@ -18,11 +18,11 @@ Enabling this functionality in ImageJ is simply a matter of turning on the [[Lis
 ==What's on the update site?==
 
 * SimpleITK 0.90 is distributed with this update.  After update all SimpleITK classes can be called from the script editor. 
-* When using <code>@itkImage</code> [[Script_parameters|parameters]] in scripts, the active ImageJ <code>Dataset(s)</code> will be converted to SimpleITK <code>Image(s)</code>
-* There are several templates in the [[Scripting|script editor]] demonstrating ITK use.  The following example shows how to perform Otsu multilevel threshold using SimpleITK
+* When using <code>@itkImage</code> [[Script_parameters|parameters]] in scripts, ImageJ <code>Dataset</code> objects will be automatically converted to SimpleITK <code>Image</code> objects.
+* There are several templates in the [[Script Editor]] demonstrating ITK use. The following example shows how to perform Otsu multilevel threshold using SimpleITK.
 
 <source lang="python">
-# @itkImage
+# @itkImage image
 # @OUTPUT Dataset output
 
 from org.itk.simple import OtsuMultipleThresholdsImageFilter
