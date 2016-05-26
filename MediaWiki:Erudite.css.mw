@@ -62,7 +62,7 @@ h1, h2 {
 }
 
 /* Do not underline the TOC heading, though. */
-.toctitle h2 {
+#toctitle h2 {
   border: none;
 }
 
