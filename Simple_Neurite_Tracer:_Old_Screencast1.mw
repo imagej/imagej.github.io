@@ -2,4 +2,4 @@ These screencasts are from very early versions of the plugin, but may still be o
 
 This first screencast shows the basic operation of the plugin on a fairly indistinct confocal scan. After about a minute I turn on the option to use a Hessian-based cost function for the search, based on code written by Stephan Preibisch at the Janelia Farm Hackathon. You may notice that the searches after that point follows the neurons more closely. However, in some cases that finds erroneous paths or the naive cost function performs better, so in practice one switches back and forth. [Note that this demo was recorded from an earlier version that didn't have support for branching.]
 
-<flvplayer width=400 height=300>Basic-tracing.flv</flvplayer>
+{{#widget:YouTube|id=SSXx3DLCJD8|width=420}}
