@@ -73,6 +73,10 @@ a, a:visited {
   color: #26d;
   border: none;
 }
+/* Underline links during mouseover, though. */
+a:hover {
+  text-decoration: underline;
+}
 
 /* Fix padding of striped headers on front page. */
 .header-stripe {
