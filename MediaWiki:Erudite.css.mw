@@ -1,3 +1,16 @@
+/* Put the logo at the top of the page. */
+#logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Adjust the heading position. */
+#top-wrap h1 {
+  border: none;
+  margin-left: 110px;
+}
+
 /* Hide the "From ImageJ" tagline */
 #tagline {
   display: none;
