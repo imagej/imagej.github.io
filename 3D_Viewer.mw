@@ -19,8 +19,9 @@ surfaces or orthoslices.
 
 
 == Screencasts ==
+Here you are a demo screencast separated into two different videos (~15 min in total) showing many of the features of the 3D viewer:
 
-There is a [[:File:3D_Viewer_2pass_65k.flv|demo screencast (~15 min, 8 MB, FLV format)]] available, showing many of the features of the 3D viewer. It has been transcoded for this wiki to meet the size and codec constraints, the original file is available on the old 3D Viewer website as an [http://132.187.25.13/home/imagej/Viewer.avi AVI (60 MB)]
+{{#widget:YouTube|id=cD3Hc3NYkaU|width=420}}  {{#widget:YouTube|id=GqG_RcK3kYg|width=420}}
 
 Beyond this, the [http://132.187.25.13/ij3d/?page=Screencasts&category=Documentation original homepage] provides a lot more screencasts, covering the following topics:
 
