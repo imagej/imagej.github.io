@@ -60,3 +60,8 @@ h1, h2 {
   border-bottom: 1px solid #a0a0a0;
   margin-bottom: 0.25em;
 }
+
+/* Fix padding of striped headers on front page. */
+.header-stripe {
+  padding-bottom: 0;
+}
