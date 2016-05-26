@@ -1,0 +1,26 @@
+/* Hide the "From ImageJ" tagline */
+#tagline {
+  display: none;
+}
+
+/* Make the page manipulation links horizontal, and more compact. */
+#nav-meta span {
+  display: inline;
+  padding-right: 1em;
+}
+#nav-meta {
+  margin: 0;
+}
+
+/* Box off the TOC like Vector does, to make it more consistent with other menu styling. */
+.toc {
+  border: 1px solid #a0a0a0;
+  display: inline-block;
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+/* Underline the L1 and L2 headers, for readability. */
+h1, h2 {
+  border-bottom: 1px solid #a0a0a0;
+  margin-bottom: 0.25em;
+}
