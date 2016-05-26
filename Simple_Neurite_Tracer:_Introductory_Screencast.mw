@@ -2,6 +2,6 @@
 
 === Tutorial Video ===
 
-This screencast (which needs audio) explains basic use of the plugin. It probably won't be clear what's going on unless you make it full-screen, by clicking in the icon in the bottom right-hand corner of the flash video player:
+This screencast (which needs audio) explains basic use of the plugin. It probably won't be clear what's going on unless you make it full-screen:
 
-<flvplayer height="300" width="400">Basic-tutorial-new-h264.flv</flvplayer>
+{{#widget:YouTube|id=y6ZPdDfUOjI|width=420}}
