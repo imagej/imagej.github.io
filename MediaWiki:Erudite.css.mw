@@ -61,6 +61,11 @@ h1, h2 {
   margin-bottom: 0.25em;
 }
 
+/* Do not underline the TOC heading, though. */
+.toctitle h2 {
+  border: none;
+}
+
 /* Make links brighter, and not underlined. */
 a, a:visited {
   color: #26d;
