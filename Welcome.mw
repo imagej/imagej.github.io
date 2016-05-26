@@ -23,11 +23,11 @@ __NOTOC__
 |-
 |style="font-size: 1.2em; padding: 7px"|This [[wikipedia:wiki|wiki]] documents all aspects of the '''ImageJ ecosystem''', including:
 |}
-{| class="nicetable" style="text-align: center;"
-|style="width: 25%"|[[File:Imagej2-icon.png|x32px|link=ImageJ|Core ImageJ libraries]]<br>ImageJ
-|style="width: 25%"|[[File:Fiji-icon.png|x32px|link=Fiji|The Fiji distribution of ImageJ]]<br>Fiji
-|style="width: 25%"|[[File:Plugin.png|x32px|link=Category:Plugins|ImageJ plugins]]<br>Plugins
-|style="width: 25%"|[[File:Scijava-icon.png|x32px|link=Category:Related Software|Related software]]<br>Related software
+{| class="nicetable"
+|style="width: 25%; text-align: center"|[[File:Imagej2-icon.png|x32px|link=ImageJ|Core ImageJ libraries]]<br>ImageJ
+|style="width: 25%; text-align: center"|[[File:Fiji-icon.png|x32px|link=Fiji|The Fiji distribution of ImageJ]]<br>Fiji
+|style="width: 25%; text-align: center"|[[File:Plugin.png|x32px|link=Category:Plugins|ImageJ plugins]]<br>Plugins
+|style="width: 25%; text-align: center"|[[File:Scijava-icon.png|x32px|link=Category:Related Software|Related software]]<br>Related software
 |}
 </center>
 
