@@ -92,8 +92,22 @@
 | pages = 676-682
 | pmid = 22743772}} ({{Scholar | cluster=17249863664147333646}}).
 
-| Icy = {{Citation
-| last = de Chaumont | first = Fabrice
+| ITK = {{Citation
+| last = Yoo | first = T.S.
+| last2 = Ackerman | first2 = M. J.
+| last3 = Lorensen | first3 = W. E.
+| last4 = Schroeder | first4 = W.
+| last5 = Chalana | first5 = V.
+| last6 = Aylward | first6 = S.
+| last7 = Metaxas | first7 = D.
+| last8 = Whitaker | first8 = R.
+| title = Engineering and algorithm design for an image processing API: a technical report on ITK-the insight toolkit
+| journal = Studies in health technology and informatics
+| year = 2002
+| pages = 586-592
+| pmid = 15458157}} ({{Scholar | cluster=10830740755452103531}}).
+
+| Icy = {{Citation | last = de Chaumont | first = Fabrice
 | last2 = Dallongeville | first2 = Stéphane
 | last3 = Chenouard | first3 = Nicolas
 | last4 = Hervé | first4 = Nicolas
@@ -112,7 +126,7 @@
 | title = Icy: an open bioimage informatics platform for extended reproducible research
 | volume = 9(7)
 | pages = 690-696
-| pmid = 22743774}}
+| pmid = 22743774}} ({{Scholar | cluster=8170444028478407032}}).
 
 | ImageJ = {{Citation | last = Schneider | first = C. A.
 | last2 = Rasband | first2 = W. S.
