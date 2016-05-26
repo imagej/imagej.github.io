@@ -62,7 +62,7 @@ On selecting text, a popup offers to:
 
 = Using the script editor =
 
-You can create, edit and run scripts using Fiji's script editor.  For details, please see [[Using the Script Editor|the Script Editor documentation]].
+You can create, edit and run scripts using the built-in [[Script Editor]]. For details, please see [[Using the Script Editor|the Script Editor documentation]].
 
 = Adding scripts to the Plugins menu =
 
