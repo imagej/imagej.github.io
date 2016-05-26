@@ -37,6 +37,16 @@
   padding-right: 1em;
 }
 
+/* Move the search box to the top. */
+#search {
+  font-size: 40.5px;
+  top: 1.3em;
+  right: 6%;
+}
+#search h3 {
+  display: none;
+}
+
 /* Box off the TOC like Vector does, to make it more consistent with other menu styling. */
 .toc {
   border: 1px solid #a0a0a0;
