@@ -13,6 +13,17 @@
 | pages = 1
 | pmid = 20492697}} ({{Scholar | cluster=5464881898236181205}}).
 
+| Atlas Toolkit = {{Citation | last=Grocott | first=Timothy
+| last2=Thomas | first2=Paul
+| last3=Münsterberg | first3=Andrea E.
+| title=Atlas Toolkit: Fast registration of 3D morphological datasets in the absence of landmarks.
+| journal=Scientific Reports
+| volume=6
+| year=2016
+| pages=Article number 20732
+| doi=10.1038/srep20732
+}}
+
 | Bio-Formats = {{Citation | last = Linkert | first = M.
 | last2 = Rueden | first2 = C. T.
 | last3 = Allan | first3 = C.
