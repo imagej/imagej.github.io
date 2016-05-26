@@ -71,3 +71,8 @@ a, a:visited {
 .header-stripe {
   padding-bottom: 0;
 }
+
+/* Make images + text middle aligned by default. See e.g. Introduction page. */
+img {
+  vertical-align: middle;
+}
