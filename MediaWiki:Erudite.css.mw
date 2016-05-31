@@ -93,3 +93,8 @@ a:hover {
 img {
   vertical-align: middle;
 }
+
+/* Hide the (huge!) extra search box on search results page. */
+form#search {
+  display: none;
+}
