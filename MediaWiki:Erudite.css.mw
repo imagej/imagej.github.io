@@ -38,13 +38,13 @@
 }
 
 /* Move the search box to the top. */
-#search {
+li#search {
   font-size: 40.5px;
   position: absolute;
   top: 1.3em;
   right: 6%;
 }
-#search h3 {
+li#search h3 {
   display: none;
 }
 
@@ -92,9 +92,4 @@ a:hover {
 /* Make images + text middle aligned by default. See e.g. Introduction page. */
 img {
   vertical-align: middle;
-}
-
-/* Hide the (huge!) extra search box on search results page. */
-form#search {
-  display: none;
 }
