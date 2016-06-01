@@ -16,7 +16,6 @@
 {{MenuItem | [[Stitching]] }}
 {{MenuItem | [[Tracking]] }}
 {{MenuItem | [[Visualization]] }}
-| {{#ifeq:{{{1}}}|techniques||collapsed}}
 }}
 
 }}
