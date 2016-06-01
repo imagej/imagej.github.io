@@ -1,7 +1,8 @@
 {{Menu | Development
 |
 {{MenuItem | '''[[Development|Overview]]''' }}
-
+{{!}}-
+{{!}}
 {{Submenu | Topics |
 {{MenuItem | [[Philosophy]] }}
 {{MenuItem | [[Architecture]] }}
@@ -11,7 +12,8 @@
 {{MenuItem | [[Debugging]] }}
 | {{#if:{{{1|}}}|collapsed|}}
 }}
-
+{{!}}-
+{{!}}
 {{Submenu | Tools |
 {{MenuItem | [[GitHub]] }}
 {{MenuItem | [[Git]] }}
@@ -21,7 +23,8 @@
 {{MenuItem | [[Travis]] }}
 | {{#ifeq:{{{1}}}|tools||collapsed}}
 }}
-
+{{!}}-
+{{!}}
 {{Submenu | Guides |
 {{MenuItem | [[Writing plugins]] }}
 {{MenuItem | [[ImageJ_Ops|ImageJ Ops]] }}
@@ -43,7 +46,8 @@
 {{MenuItem | [[Uber-JAR|Uber-JARs]] }}
 | {{#ifeq:{{{1}}}|tutorials||collapsed}}
 }}
-
+{{!}}-
+{{!}}
 {{Submenu | Fiji |
 {{MenuItem | [[Downloading and Building Fiji From Source|Building Fiji from source]] }}
 {{MenuItem | [[Developing Fiji]] }}
@@ -51,5 +55,4 @@
 {{MenuItem | [[Supported Compilers|Supported compilers]] }}
 | {{#ifeq:{{{1}}}|fiji||collapsed}}
 }}
-
 }}
