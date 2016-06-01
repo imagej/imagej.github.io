@@ -47,3 +47,6 @@
 | {{#ifeq:{{{1}}}|tutorials||collapsed}}
 }}
 }}
+<noinclude>
+[[Category:Menu]]
+</noinclude>
