@@ -47,7 +47,7 @@ These datasets were obtained by imaging a phospho-lipid bilayer stained with DiO
 
 Some of the single pixels fits we obtained look as follows:
 
-[[File:Example single pixel fits.png]]
+[[File:Example single pixel fits.png|799px]]
 
 == History ==
 * 1.0.7 (2016-04-22): Fixed bug that caused most pixels not to be fit
