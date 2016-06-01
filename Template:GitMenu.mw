@@ -1,17 +1,17 @@
 {{Menu | Git Tutorials |
-* [[Git for dummies]]
-* [[EGit|Git in Eclipse (EGit)]]
+{{MenuItem | [[Git for dummies]] }}
+{{MenuItem | [[EGit|Git in Eclipse (EGit)]] }}
 ----
-* [[Git mini howto]]
-* [[Git workshop]]
-* [[Git Conflicts]]
-* [[Git topic branches]]
-* [[Git Notes]]
-* [[Git reflogs]]
-* [[Git submodule tutorial]]
-* [[Pinpoint regressions with Git]]
-* [[How to publish a Git repository]]
-* [[How to extract a subproject]]
+{{MenuItem | [[Git mini howto]] }}
+{{MenuItem | [[Git workshop]] }}
+{{MenuItem | [[Git Conflicts]] }}
+{{MenuItem | [[Git topic branches]] }}
+{{MenuItem | [[Git Notes]] }}
+{{MenuItem | [[Git reflogs]] }}
+{{MenuItem | [[Git submodule tutorial]] }}
+{{MenuItem | [[Pinpoint regressions with Git]] }}
+{{MenuItem | [[How to publish a Git repository]] }}
+{{MenuItem | [[How to extract a subproject]] }}
 }}
 <noinclude>
 [[Category:Menu]]
