@@ -17,15 +17,15 @@ __TOC__
 
 Features are :
 
-* Build kymograph from single or multiple lines (a polyline).
+* Build kymograph from a straight or segmented line (a polyline).
 * Build kymograph for images with multiple channels.
 * Take into account the width of the line using maximum projection along its thickness.
-* Built from scratch and use the Imagej2 Ecosystem.
+* Built from scratch and use the ImageJ2 Ecosystem.
 * Fast and easy to use.
 
 How to use :
-* Draw a line : it can be a polyline and you can also set the thickness that will be take into account by the plugin.
-* Launch KymographBuilder : Plugins ► Kymograph ► KymographBuilder
+* Draw a line: it can be a polyline and you can also set the thickness that will be taken into account by the plugin.
+* Launch KymographBuilder : {{bc|Plugins|Kymograph|KymographBuilder}}
 * You're done.
 
 [[File:Kymograph_Construction.png|center|thumb|600px|]]
@@ -40,4 +40,4 @@ How to use :
 
 KymographBuilder has been created by Hadrien Mary.
 
-This work started in 2016 at the Gary Brouhard laboratory (http://brouhardlab.mcgill.ca) at the University of McGill.
+This work started in 2016 at the Gary Brouhard laboratory (http://brouhardlab.mcgill.ca) at McGill University.
