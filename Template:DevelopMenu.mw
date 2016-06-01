@@ -1,9 +1,9 @@
 {{Menu | Development
 |
-{{MenuItem | '''[[Development|Overview]]''' }}
 {{!}}-
 {{!}}
 {{Submenu | Topics |
+{{MenuItem | '''[[Development|Overview]]''' }}
 {{MenuItem | [[Philosophy]] }}
 {{MenuItem | [[Architecture]] }}
 {{MenuItem | [[Source code]] }}
