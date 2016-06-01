@@ -37,6 +37,7 @@ Saim Fit will fit each pixel in the input stack and output a stack with 4 images
 
 These datasets were obtained by imaging a phospho-lipid bilayer stained with DiO (488), DiI(561), and DiD(640nm) (data acquired by Kate Carbone).  The parameters shows were used for analysis.
 
+[[File:488 fit parameters.png|271px]][[File:561 fit parameters.png|271px]][[File:640 fit parameters.png|271px]]
 
 
 
