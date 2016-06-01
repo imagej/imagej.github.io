@@ -1,10 +1,22 @@
 {{ Menu | Learn
 |
-* [[Introduction]]
-* [[Getting started]]
-* [[User Guides]]
-* [[:Category:Tutorials|Tutorials]]
-* [[Presentations]]
-* [[Plugins]]
-* [[:Category:Techniques|Techniques]]
+{{MenuItem | [[Introduction]] }}
+{{MenuItem | [[Getting started]] }}
+{{MenuItem | [[User Guides]] }}
+{{MenuItem | [[:Category:Tutorials|Tutorials]] }}
+{{MenuItem | [[Presentations]] }}
+{{MenuItem | [[Plugins]] }}
+
+{{Submenu | {{Techniques |
+{{MenuItem | [[:Category:Techniques|Index]] }}
+{{MenuItem | [[Colocalization]] }}
+{{MenuItem | [[Deconvolution]] }}
+{{MenuItem | [[Registration]] }}
+{{MenuItem | [[Segmentation]] }}
+{{MenuItem | [[Stitching]] }}
+{{MenuItem | [[Tracking]] }}
+{{MenuItem | [[Visualization]] }}
+| {{#ifeq:{{{1}}}|techniques||collapsed}}
+}}
+
 }}
