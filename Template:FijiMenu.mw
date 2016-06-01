@@ -1,5 +1,7 @@
 {{Menu | Fiji Documentation
 |
+{{!}}-
+{{!}}
 {{Submenu | Using Fiji |
 {{MenuItem | [[IP Principles|What you need to know about<br>scientific image processing!]] }}
 {{MenuItem | [[Installation|Installing Fiji]] }}
@@ -13,7 +15,8 @@
 {{MenuItem | [[Links]] }}
 {{MenuItem | [[Using Fiji|more...]] }}
 }}
-
+{{!}}-
+{{!}}
 {{Submenu | Development
 |
 {{MenuItem | [[Introduction into Developing Plugins|Plugin development intro]] }}
@@ -22,5 +25,4 @@
 {{MenuItem | [[Developing Fiji in Eclipse]] }}
 {{MenuItem | [[:Category:Development|more...]] }}
 }}
-
 }}
