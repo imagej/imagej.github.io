@@ -50,8 +50,8 @@
 li#search {
   font-size: 40.5px;
   position: absolute;
-  top: 1.3em;
-  right: 6%;
+  right: 100px;
+  top: -7px;
 }
 li#search h3 {
   display: none;
