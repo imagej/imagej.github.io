@@ -218,6 +218,7 @@ table.navbox th {
     margin: 0.5em 0 0.5em 1em;
     padding: 0.2em;
     float: right;
+    clear: right; /* NB: without this, infoboxes are too wide (!?) */
 }
 .infobox td,
 .infobox th {
