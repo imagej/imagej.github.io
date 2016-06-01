@@ -75,3 +75,4 @@ Of course, this assumes that you followed the suggestion and unpacked your Fiji 
 Note that the exact dependency versions, as specified by the project in the ''pom.xml'' file, are copied into the ''Fiji.app/'' directory, possibly replacing other versions. You will want to make sure to use not-too-different versions from the current versions.
 
 [[Category:Development]]
+[[Category:Fiji]]
