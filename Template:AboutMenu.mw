@@ -1,10 +1,10 @@
 {{Menu | About
 |
-* [[ImageJ]]
-* [[Usage]]
-* [[Contributors]]
-* [[Governance]]
-* [[Funding]]
-* [[Citing]]
-* [[Contributing]]
+{{MenuItem | [[ImageJ]] }}
+{{MenuItem | [[Usage]] }}
+{{MenuItem | [[Contributors]] }}
+{{MenuItem | [[Governance]] }}
+{{MenuItem | [[Funding]] }}
+{{MenuItem | [[Citing]] }}
+{{MenuItem | [[Contributing]] }}
 }}
