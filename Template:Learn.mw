@@ -9,7 +9,7 @@
 {{!}}-
 {{!}}
 {{Submenu | Techniques |
-{{MenuItem | [[:Category:Techniques|Index]] }}
+{{MenuItem | [[:Category:Techniques|All Techniques]] }}
 {{MenuItem | [[Colocalization]] }}
 {{MenuItem | [[Deconvolution]] }}
 {{MenuItem | [[Registration]] }}
