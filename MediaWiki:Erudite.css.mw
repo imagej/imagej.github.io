@@ -5,6 +5,15 @@
   left: 0;
 }
 
+/* If screen is too narrow, make the logo more compact. */
+@media screen and (max-width: 1170px) {
+  #logo {
+    width: 58px;
+    top: -38px;
+    left: 50px;
+  }
+}
+
 /* Adjust the heading position. */
 #top-wrap h1 {
   border: none;
