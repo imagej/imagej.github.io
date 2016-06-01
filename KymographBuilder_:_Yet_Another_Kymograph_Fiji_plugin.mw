@@ -31,7 +31,7 @@ How to use :
 [[File:Kymograph_Construction.png|center|thumb|600px|]]
 
 == Related links ==
-
+* [[Multi_Kymograph]] : The first kymograph bundled with Fiji, with support for multiple Line ROIs
 * Source code on GitHub : https://github.com/fiji/KymographBuilder
 * Maven : http://maven.imagej.net/#nexus-search;quick~kymographbuilder
 * Jenkins : http://jenkins.imagej.net/job/KymographBuilder/
