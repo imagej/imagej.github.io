@@ -931,20 +931,6 @@ h1 {
     line-height: 1.0em;
 }
 
-/* Put topbar at very top of page, and make it friendlier */
-#mw-writh-topbar {
-    position: absolute;
-    top: -131px;
-    left: 15px;
-    font-size: large;
-}
-
-/* If we need to make topbar opaque, use this background:
-#mw-writh-topbar {
-    background: rgba(178, 212, 239, 1) none repeat scroll 0% 0%;
-}
-*/
-
 /* Hide the useless privacy policy, about and imprint links. */
 #footer-places {
     display: none;
