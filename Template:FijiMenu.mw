@@ -1,28 +1,15 @@
 {{Menu | Fiji Documentation
 |
-{{!}}-
-{{!}}
-{{Submenu | Using Fiji |
-{{MenuItem | [[IP Principles|What you need to know about<br>scientific image processing!]] }}
-{{MenuItem | [[Installation|Installing Fiji]] }}
-{{MenuItem | [[Getting started|Getting started with Fiji]] }}
+{{MenuItem | [[Using Fiji]] }}
 {{MenuItem | [[Featured Fiji Projects]] }}
-{{MenuItem | [[Cookbook|Cookbook]] }}
-{{MenuItem | [[:Category:Tutorials|Tutorials]] }}
-{{MenuItem | [[Help]] }}
-{{MenuItem | [[Frequently Asked Questions]] }}
 {{MenuItem | Some [[ImageJ tricks]] }}
 {{MenuItem | [[Links]] }}
-{{MenuItem | [[Using Fiji|more...]] }}
-}}
 {{!}}-
 {{!}}
-{{Submenu | Development
-|
-{{MenuItem | [[Introduction into Developing Plugins|Plugin development intro]] }}
-{{MenuItem | [http://youtu.be/Ac-6gJ2eRb0 Developing plugins in NetBeans] }}
-{{MenuItem | [[Developing Fiji]] itself }}
-{{MenuItem | [[Developing Fiji in Eclipse]] }}
-{{MenuItem | [[:Category:Development|more...]] }}
+{{Submenu | Developing Fiji |
+{{MenuItem | [[Downloading and Building Fiji From Source|Building Fiji from source]] }}
+{{MenuItem | [[Developing Fiji]] }}
+{{MenuItem | [[Fiji contribution requirements|Contribution requirements]] }}
+{{MenuItem | [[Supported Compilers|Supported compilers]] }}
 }}
 }}
