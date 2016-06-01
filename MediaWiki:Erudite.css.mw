@@ -6,7 +6,7 @@
 }
 
 /* If screen is too narrow, make the logo more compact. */
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1070px) {
   #logo {
     width: 58px;
     top: -38px;
