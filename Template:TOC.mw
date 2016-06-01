@@ -1,4 +1,4 @@
-<includeonly><div{{#ifeq:{{{1|}}}|left| style="float: left"|}}{{#ifeq:{{{1|}}}|right| style="float: right"|}}>__TOC__</div></includeonly><noinclude>
+<includeonly><div style="{{#ifeq:{{{1|}}}|left|float: left|}}{{#ifeq:{{{1|}}}|right|float: right|}}">__TOC__</div></includeonly><noinclude>
 Template for including the table of contents.
 
 == Usage ==
