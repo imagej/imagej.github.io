@@ -1,7 +1,6 @@
 {{Menu | Development
 |
 {{MenuItem | '''[[Development|Overview]]''' }}
-
 {{Submenu | Topics |
 {{MenuItem | [[Philosophy]] }}
 {{MenuItem | [[Architecture]] }}
