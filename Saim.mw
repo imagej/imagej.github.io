@@ -35,11 +35,19 @@ Saim Fit will fit each pixel in the input stack and output a stack with 4 images
 
 == Example Data ==
 
-These datasets were obtained by imaging a phospho-lipid bilayer stained with DiO (488), DiI(561), and DiD(640nm) (data acquired by Kate Carbone).  The parameters shows were used for analysis.
+These datasets were obtained by imaging a phospho-lipid bilayer stained with DiO (488), DiI(561), and DiD(640nm) (data acquired by Kate Carbone).  The parameters shown below were used for analysis.
+
+[http://valelab.ucsf.edu/~nstuurman/SAIM/160302_bilayer1_cal2_pos1_488-crop.tif 488 data set]
+
+[http://valelab.ucsf.edu/~nstuurman/SAIM/160302_bilayer2_cal2_pos3_561-crop.tif 561 data set]
+
+[http://valelab.ucsf.edu/~nstuurman/SAIM/160302_bilayer2_cal2_pos3_640-crop.tif 640 data set]
 
 [[File:488 fit parameters.png|271px]][[File:561 fit parameters.png|271px]][[File:640 fit parameters.png|271px]]
 
+Some of the single pixels fits we obtained look as follows:
 
+[[File:Example single pixel fits.png]]
 
 == History ==
 * 1.0.7 (2016-04-22): Fixed bug that caused most pixels not to be fit
