@@ -166,11 +166,34 @@ So far, the following attribute filtering plugins are available within MorphoLib
 * [[Morphological Segmentation]], a plugin with a graphical user interface to segment 2D/3D images based on morphological operations and the watershed algorithm.
 
 == Measurements ==
+[[MorphoLibJ]] contains several tools for quantifying the size, the shape, or the spatial organization, from '''binary or label''' 2D and 3D images. The aim is to facilitate the management of label images, contrary to the built-in “Analyze Particles...” function that operates directly on a grayscale image. 
 === Particle analysis ===
-[[MorphoLibJ]] contains several tools for quantifying the size, the shape, or the spatial organization, from '''binary or label''' 2D and 3D images. The aim is to facilitate the management of label images, contrary to the built-in “Analyze Particles...” function that operates directly on a grayscale image. Most MorphoLibJ plugins consider the current image as input, that must be either binary (only one region is considered), or label (typically the result of a connected components labeling, see [[MorphoLibJ#Utilities_for_binary_images|Utilities for binary images]]). The output is a results table (ImageJ [https://imagej.nih.gov/ij/docs/guide/146-22.html Results table]) containing one row for each label actually present within the image. The spatial calibration of the image is taken into account in all measurements.
-==== Particle analysis 2D ====
-[[Image:MorphoLibJ-perimiter-geodesic-diameter-computation.png|thumb|right|400px|Computation of perimeter and geodesic diameter. Left: principle of perimeter estimation by counting intersections with set of lines. Right: illustration of the geodesic diameter measured on a non convex particle.]]
-The '''global geometry''' of particles in 2D images can be characterized with the Region Morphometry plugin (under {{bc | Plugins | MorphoLibJ | Analyze | Region Morphometry}}). For 2D particles, the area, the perimeter and derived features are implemented. The implemented method for perimeter measurement aims at providing a better estimate of the perimeter than traditional boundary pixel count. The principle is to consider a set of lines with various orientations, and to count the number of intersections with the region(s) of interest. The number of intersections is proportional to the perimeter (Legland ''et al.'', 2007<ref name="Legland2007">
+This section describes the methods implemented in MorphoLibJ for describing individual particles, represented as label images (one label for each particle). We first define and describe the implemented features, then we present the plugins that integrate them.
+==== Intrinsic volumes ====
+[[Image:MorphoLibJ-Euler-number.png|thumb|400px|Illustration of Euler Number definition. Left: three particles with Euler numbers equal to 1, 0 and -1, respectively. Right: example of a 3D particle with an Euler number equal to -1, corresponding to the subtraction of 1 connected components minus two handles.]]The intrinsic volumes are a set of features with interesting mathematical properties that are commonly used for describing individual particles as well as binary microstructrues. In the planar case, they correspond to the area, the perimeter and the Euler number. The Euler number is a topological characteristic that equals the number of connected components minus the number of holes.
+
+For 3D particles, intrinsic volumes correspond to the volume, the surface area, the mean breadth (a quantity proportional to the integral of the mean curvature over the surface) and the Euler number. In 3D the Euler number equals the number of connected components minus the number of "handles" or "tunnels" through the structure, plus the number of bubbles within the particles (Serra, 1982<ref name="Serra1982>{{ cite conference
+| title = Image Analysis and Mathematical Morphology. Volume 1
+| author = Serra, Jean
+| publisher                = Academic Press
+| year                     = 1982
+}}</ref>; Ohser ''et al.'', 2009<ref name="Osher2009>{{ cite conference
+| title = 3D Images of Materials Structures: processing and analysis
+| author = Joachim Ohser and Katja Schladitz
+| publisher                = WILEY-VCH Verlag GmbH \& Co. KGaA, Weinheim
+| year                     = 2009
+| isbn = 978-3-527-31203-0
+}}</ref>).
+
+=====Estimation from 2D or 3D images=====
+In image analysis, the '''estimation of area''' of 2D particles and of '''volume of 3D particles''' simply consists in counting the number of pixels or voxels that constitute it, weighted by the area of an individual pixel or the volume of an individual voxel. 
+
+The implemented method for '''perimeter measurement''' aims at providing a better estimate of the perimeter than traditional boundary pixel count. The principle is to consider a set of lines with various orientations, and to count the number of intersections with the region(s) of interest (see figure on the right). The number of intersections is proportional to the perimeter (Serra, 1982<ref name="Serra1982>{{ cite conference
+| title = Image Analysis and Mathematical Morphology. Volume 1
+| author = Serra, Jean
+| publisher                = Academic Press
+| year                     = 1982
+}}</ref>; Legland ''et al.'', 2007<ref name="Legland2007">
 {{cite conference
 |title = Computation of Minkowski measures on 2D and 3D binary images
 |author = Legland, David and Kiêu, Kiên and Devaux, Marie-Françoise
@@ -178,27 +201,123 @@ The '''global geometry''' of particles in 2D images can be characterized with th
 |year = 2007
 |month                    = June
 |number                   = 6
-|pages                    = 83--92
+|pages                    = 83-92
 |volume                   = 26
 |doi                      = 10.5566/ias.v26.p83-92
 |url                      = http://www.ias-iss.org/ojs/IAS/article/view/811
-}}</ref>; Ohser ''et al.'', 2009<ref name="Osher2009>{{ cite conference
+}}</ref>;  Ohser ''et al.'', 2009<ref name="Osher2009>{{ cite conference
 | title = 3D Images of Materials Structures: processing and analysis
 | author = Joachim Ohser and Katja Schladitz
 | publisher                = WILEY-VCH Verlag GmbH \& Co. KGaA, Weinheim
 | year                     = 2009
 | isbn = 978-3-527-31203-0
-}}</ref>). By averaging over all possible directions, the estimate is unbiased. Perimeter is usually estimated using either two directions (horizontal and vertical), or four directions (by adding the diagonals).
+}}</ref>). By averaging over all possible directions, the estimate is unbiased.
 
-The columns of the results table are:
+Perimeter can be estimated using either two directions (horizontal and vertical), or four directions (by adding the diagonals). Restricting the number of directions introduces an estimation bias, with known theoretical bounds (Moran, 1966<ref name="Moran1966">
+{{cite conference
+|title = Measuring the length of a curve
+|author = Moran, PAP
+|journal = Biometrika
+|year = 1966
+|volume = 53 
+|number = 3-4
+|pages = 359-364
+|doi = 10.1093/biomet/53.3-4.359
+|URL = http://biomet.oxfordjournals.org/content/53/3-4/359.abstract
+}}</ref>;  Legland ''et al.'', 2007<ref name="Legland2007">
+{{cite conference
+|title = Computation of Minkowski measures on 2D and 3D binary images
+|author = Legland, David and Kiêu, Kiên and Devaux, Marie-Françoise
+|journal = Image Analysis and Stereology
+|year = 2007
+|month                    = June
+|number                   = 6
+|pages                    = 83-92
+|volume                   = 26
+|doi                      = 10.5566/ias.v26.p83-92
+|url                      = http://www.ias-iss.org/ojs/IAS/article/view/811
+}}</ref>), that is usually better than boundary pixel count (Lehmann ''et al.'', 2012<ref name="Lehmann2012">
+{{cite conference
+|title = Efficient N-Dimensional surface estimation using [[wikipedia:Crofton formula|Crofton formula]] and run-length encoding
+|author = Lehmann, Gaetan and Legland, David
+|journal = Insight Journal
+|year = 2012
+|pages                    = 1-11
+|url = http://hdl.handle.net/10380/3342
+}}</ref>).
+
+The '''estimation of surface area''' follows the same principle. The number of directions is typically chosen equal to 3 (the three main axes in image), or 13 (by considering also diagonals). As for perimeter estimation, surface area estimation in usually biased, but is usually more precise than measuring the surface area of the polygonal mesh reconstructed from binary images (Lehmann ''et al.'', 2012<ref name="Lehmann2012">
+{{cite conference
+|title = Efficient N-Dimensional surface estimation using [[wikipedia:Crofton formula|Crofton formula]] and run-length encoding
+|author = Lehmann, Gaetan and Legland, David
+|journal = Insight Journal
+|year = 2012
+|pages                    = 1-11
+|url = http://hdl.handle.net/10380/3342
+}}</ref>).
+
+=====Euler number=====
+The measurement of Euler number depends on the choice of the connectivity. For planar images, typical choices are the 4-connectivity, corresponding to the orthogonal neighbors, and the 8-connectivity, that also consider the diagonal neighbors. In 3D, the 6-connectivity considers the neighbors in the three main directions within the image, whereas the 26 connectivity also consider the diagonals. Other connectivities have been proposed but are not implemented in MorphoLibJ (Ohser ''et al.'', 2009<ref name="Osher2009>{{ cite conference
+| title = 3D Images of Materials Structures: processing and analysis
+| author = Joachim Ohser and Katja Schladitz
+| publisher                = WILEY-VCH Verlag GmbH \& Co. KGaA, Weinheim
+| year                     = 2009
+| isbn = 978-3-527-31203-0
+}}</ref>).
+
+In the current implementation in MorphoLibJ, the Euler number is not taken into account for intersection of particles with image borders. This may result in non-integer result if the particle(s) of interest touches image border.
+=====Shape factors=====
+Intrinsic volumes characterize the size of the particles, from different points of view. Several indices are sometimes used to describe the shape of the particles, independently of their size.
+
+In 2D, the '''isoperimetric deficit index''' (or "shape factor", or "circularity") is defined as the ratio of area over the square of the perimeter, normalized such that the value for a disk equals one:
+
+::::::::<math>circularity=4\pi\frac{A}{P^{2}}</math>
+
+While values of circularity range theoretically within the interval <math>[0;1]</math>, the measurements errors of the perimeter may produce circularity values above 1 (Lehmann ''et al.'', 2012<ref name="Lehmann2012">
+{{cite conference
+|title = Efficient N-Dimensional surface estimation using [[wikipedia:Crofton formula|Crofton formula]] and run-length encoding
+|author = Lehmann, Gaetan and Legland, David
+|journal = Insight Journal
+|year = 2012
+|pages                    = 1-11
+|url = http://hdl.handle.net/10380/3342
+}}</ref>). The MorphoLibJ library also considers the inverse of the circularity, referred to as "elongation index". The values of elongation range from 1 for round particles and increase for elongated particles.
+
+::::::::<math>elongation	=	\frac{P^{2}}{4\pi\cdot A}</math>
+
+In 3D, the '''sphericity index''' can be defined as the ratio of the squared volume over the cube of the surface area, normalized such that the value for a ball equals one:
+
+::::::::<math>sphericity	=	36\pi\frac{V^{2}}{S^{3}}</math>
+
+====Inertia ellipse and ellipsoid====
+A binary particle may be described mathematically by its moments which corresponds to an integral of its indicator function, with various degrees along the directions. The first moment corresponds to the area or to the volume of the particle. The normalization of the first-order indicator functions leads to the 2D or 3D centroid of the particle. The second order moments can be used to compute the equivalent inertia ellipse or ellipsoid.
+
+====Geodesic measurements====
+[[Image:MorphoLibJ-perimiter-geodesic-diameter-computation.png|thumb|right|400px|Computation of perimeter and geodesic diameter. Left: principle of perimeter estimation by counting intersections with set of lines. Right: illustration of the geodesic diameter measured on a non convex particle.]]For particles with complex shapes, the geodesic diameter may be of interest. It corresponds of the largest geodesic distance between two points within a region, the geodesic distance being the length of the shortest path joining the two points while staying inside the region (Lantuejoul ''et al.'', 1981<ref name="Lantuejoul1981">{{cite conference
+| title                    = On the use of geodesic metric in image analysis
+| author                   = Lantuejoul, C. and Beucher, S.
+| journal                  = Journal of Microscopy
+| year                     = 1981
+| month                    = Jan.
+| number                   = 1,
+| pages                    = 39-40
+| volume                   = 121
+| doi = 10.1111/j.1365-2818.1981.tb01197.x
+| url = http://dx.doi.org/10.1111/j.1365-2818.1981.tb01197.x
+}}</ref>).
+====Plugins====
+Most MorphoLibJ plugins consider the current image as input, that must be either binary (only one region is considered), or label (typically the result of a connected components labeling, see [[MorphoLibJ#Utilities_for_binary_images|Utilities for binary images]]). The output is a results table (ImageJ [https://imagej.nih.gov/ij/docs/guide/146-22.html Results table]) containing one row for each label actually present within the image. The spatial calibration of the image is taken into account in all measurements. All plugins can be found under the {{bc |Plugins | MorphoLibJ | Analyze}} menu.
+
+===== Global geometry =====
+The '''global geometry''' of particles in 2D images can be characterized with the Region Morphometry plugin (under {{bc | Plugins | MorphoLibJ | Analyze | Region Morphometry}}). For 2D particles, the area, the perimeter and derived features are implemented. The columns of the results table are:
 
 * '''Label''': the label of the particle measured on the current line (it can be different from the row number if some labels do no exist in original image).
 * '''Area''': the number of pixels within each region, multiplied by the area of each pixel.
 * '''Perimeter''': an estimate of the perimeter, using the [[wikipedia:Crofton formula|Crofton formula]].
 * '''Circularity''' the normalized ratio of area by the square of the perimeter: <math>4\pi\cdot A/p^{2}</math>. The value should be comprised between 0 (very elongated) and 1 (close to circular). Values superior to 1 may appear due to discretization effect.
 * '''Elongation''': the normalized ratio of the square of the perimeter by the area : <math>p^{2}/\left(4\pi\cdot A\right)</math>, corresponding to the inverse of the circularity. The values range from 1 (round), and increase with elongation of the particle.
-==== Maximum inscribed circle ====
-Other measurements consider the '''largest circle that can be inscribed within the particle''' ({{bc | Plugins | MorphoLibJ | Analyze | Max. Inscribed Circle}}). The plugin opens a dialog that allows to choose the label image to characterize, the choice of the method for computing distance, and eventually the image on which overlaid circles can be drawn. The output of the plugin includes the following information:
+===== Largest inscribed circle or ball=====
+This plugin computes for each label the largest disk that can be enclosed within the corresponding particle. The plugin opens a dialog that allows to choose the label image to characterize, the choice of the method for computing distance, and eventually the image on which overlaid circles can be drawn. The output of the plugin includes the following information:
 
 * '''Label''': the label of the particle measured on the current line.
 * '''xi''': the x-coordinate of the inscribed circle.
@@ -213,19 +332,8 @@ Other measurements consider the '''largest circle that can be inscribed within t
 |  volume                   = 23
 | doi = 10.1109/TMI.2004.825627
 }}</ref>). Each connected component was associated to a label, then the longest geodesic path within each connected component was computed and displayed as red overlay.]]
-====Geodesic diameter====
-For particles with complex shapes, the '''geodesic diameter''' may be of interest ({{bc | Plugins | MorphoLibJ | Analyze | Geodesic Diameter}}). It corresponds of the largest geodesic distance between two points within a 2D region, the geodesic distance being the length of the shortest path joining the two points while staying inside the region (Lantuejoul ''et al.'', 1981<ref name="Lantuejoul1981">{{cite conference
-| title                    = On the use of geodesic metric in image analysis
-| author                   = Lantuejoul, C. and Beucher, S.
-| journal                  = Journal of Microscopy
-| year                     = 1981
-| month                    = Jan.
-| number                   = 1,
-| pages                    = 39-40
-| volume                   = 121
-| doi = 10.1111/j.1365-2818.1981.tb01197.x
-| url = http://dx.doi.org/10.1111/j.1365-2818.1981.tb01197.x
-}}</ref>). An example is given in the figure on the right. The result of the plugin comprises the following features:
+=====Geodesic diameter=====
+This plugin computes several geodesic measures for each particle in a label image. The result of the plugin comprises the following features:
 
 * '''Label''': the label of the particle measured on the current line.
 * '''Geod. Diam.''': the value of the geodesic diameter.
@@ -235,8 +343,8 @@ For particles with complex shapes, the '''geodesic diameter''' may be of interes
 * '''x1, y1''': coordinates of one of the geodesic extremities of the particle.
 * '''x2, y2''': coordinates of another geodesic extremity of the particle.
 
-==== Particle Analysis 3D ====
-These parameters focus on the shape of the region corresponding to each particle or label. The plugin calculating these measurements is found under {{bc | Plugins | MorphoLibJ | Analyze | Particle Analysis 3D}}. The results are provided in an ImageJ Results table, whose name contains the name of the original image.
+===== Particle Analysis 3D =====
+The plugin calculating these measurements is found under {{bc | Plugins | MorphoLibJ | Analyze | Particle Analysis 3D}}. The results are provided in an ImageJ Results table, whose name contains the name of the original image.
 
 * '''Label''': the label of the particle measured on the current line (it can be different from the row number if some labels do no exist in original image).
 * '''Bounding box''': the minimal and maximal coordinates in each direction for each label.
