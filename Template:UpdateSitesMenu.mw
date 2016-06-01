@@ -1,11 +1,14 @@
 {{Menu | Update Sites
 |
-* [[Update Sites|Introduction]]
-* [[How to follow a 3rd party update site|Following an update site]]
-* [[How to set up and populate an update site|Creating your own update site]]
-* [[Personal Update Site Terms of Service|Terms of Service for personal update sites]]
-* [[Automatic_Update_Site_Uploads|Automatically upload your site]]
-* [[How to upload to core update sites|Uploading to core update sites]]
-* [[List of update sites]]
-* [[Update site FAQ]]
+{{MenuItem | [[Update Sites|Introduction]] }}
+{{MenuItem | [[How to follow a 3rd party update site|Following an update site]] }}
+{{MenuItem | [[How to set up and populate an update site|Creating your own update site]] }}
+{{MenuItem | [[Personal Update Site Terms of Service|Terms of Service for personal update  sites]] }}
+{{MenuItem | [[Automatic_Update_Site_Uploads|Automatically upload your site]] }}
+{{MenuItem | [[How to upload to core update sites|Uploading to core update sites]] }}
+{{MenuItem | [[List of update sites]] }}
+{{MenuItem | [[Update site FAQ]] }}
 }}
+<noinclude>
+[[Category:Menu]]
+</noinclude>
