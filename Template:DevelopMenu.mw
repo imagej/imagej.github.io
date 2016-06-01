@@ -3,7 +3,7 @@
 {{!}}-
 {{!}}
 {{Submenu | Topics |
-{{MenuItem | '''[[Development|Overview]]''' }}
+{{MenuItem | [[Development|Overview]] }}
 {{MenuItem | [[Philosophy]] }}
 {{MenuItem | [[Architecture]] }}
 {{MenuItem | [[Source code]] }}
