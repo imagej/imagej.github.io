@@ -26,7 +26,7 @@ Other options for saving and exporting image files are shown in the Fiji ''Save 
 
 == Bio-Formats ==
 
-Files may also be exported to many file types using the Bio-Formats Exporter found at ''Plugins/LOCI''. As of this writing, the supported file types are:
+Files may also be exported to many file types using {{bc|Plugins|Bio-Formats|Bio-Formats Exporter}}. As of this writing, the supported file types are:
 * Animated PNG
 * AVI
 * Encapsulated PostScript (EPS, EPSI)
