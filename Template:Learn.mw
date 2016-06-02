@@ -10,7 +10,7 @@
 {{!}}
 {{Submenu | Techniques |
 {{MenuItem | [[:Category:Techniques|All Techniques]] }}
-{{MenuItem | [[Colocalization]] }}
+{{MenuItem | [[Colocalization Analysis | Colocalization]] }}
 {{MenuItem | [[Deconvolution]] }}
 {{MenuItem | [[Registration]] }}
 {{MenuItem | [[Segmentation]] }}
