@@ -1,4 +1,3 @@
-<div style="float: right">
 {{Infobox
 | name                   = ImageJ2
 | software               = ImageJ
@@ -7,8 +6,7 @@
 | source                 = {{GitHub | org = imagej | repo = imagej}}
 | status                 = active
 | category               = 
-}}
-{{Box
+}}<div style="clear: right; float: right">{{Box
 | float=right
 | text=<h2>ImageJ2's Mission</h2>
 * '''Design.''' Create the next generation of ImageJ, driven by the needs of the community.
@@ -19,15 +17,13 @@
 * '''Lead.''' Drive ImageJ development forward with a clear vision.
 
 See also [https://imagej.github.io/presentations/2015-09-03-imagej2-and-fiji/#/4 these presentation slides about ImageJ].
-}}</div>
-{{TOC}}
-ImageJ2 is a new version of [[ImageJ]] for the next generation of multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of ImageJ 1.x, to support the next generation of multidimensional scientific imaging.
+}}</div>ImageJ2 is a new version of [[ImageJ]] for the next generation of multidimensional image data, with a focus on scientific imaging. Its central goal is to broaden the paradigm of ImageJ beyond the limitations of ImageJ 1.x, to support the next generation of multidimensional scientific imaging.
 
 To ensure backwards compatibility, ImageJ2 has been designed to fully integrate into the existing ImageJ user interface. This allows users to keep using ImageJ in familiar ways, while providing the ability to migrate toward more powerful new features as needed.
 
 The [[Fiji]] distribution of ImageJ has shipped with beta versions of ImageJ2 for quite some time, so you may already be familiar with some of ImageJ2's features—some of which, such as the [[Updater]] and
 [[Launcher]], were originally developed as part of Fiji.
-
+{{TOC}}
 == Features of ImageJ2 ==
 
 ImageJ2 provides a wealth of new features and capabilities:
