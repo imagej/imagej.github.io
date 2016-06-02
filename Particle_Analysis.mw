@@ -2,9 +2,9 @@ __FORCETOC__ {{Cookbook}}
 
 == Automatic Particle counting ==
 
-Automatic particle counting can be done if the image does not have too many individual particles touching. Manual particle counting can be done using the ''Point Picker'' or “Cell counter” plugins. The ''Point Picker'' plugin can be found via the menu command {{bc | Analyze | Tools | PointPicker}}.
+Automatic particle counting can be done if the image does not have too many individual particles touching. Manual particle counting can be done using the [http://imagej.net/docs/guide/146-19.html#sec:Multi-point-Tool Multi-point Tool].
 
-“Segmentation”, or the ability to distinguish an object from its background, can be a difficult issue to deal with. Once this has been done, however, the object can then be analyzed.
+[[Segmentation]], or the ability to distinguish an object from its background, can be a difficult issue to deal with. Once this has been done, however, the object can then be analyzed.
 
 '''RAW    Threshold    Watershed    “AnalyzeParticles”'''
 [[File:Raw_Threshold_Watershed_AnalyzeParticles2.jpg|center|266*177px]]
@@ -65,19 +65,7 @@ The count, area, and average size are returned as a text window and the outlined
 
 == Manual Counting ==
 
-Use the Fiji ''Crosshair (mark and count)'' tool to count particles. A greater degree of control can be accessed with the ''PointPicker'' or ''Cell counter'' plugins.
-
-=== Cell Counter ===
-This plugin generates a new image window with the original image plus four buttons along the bottom (Red type, Green type, Blue type and Yellow type). Clicking on a button changes the color of the marking tool. The results table keeps a tally of the cell types marked. Clicking the Results button will generate a summary of the data.
-
-[[File:cell_counter.jpg]]
-
-=== PointPicker ===
-The ''Point Picker'' plugin will change the Fiji toolbar to the ''Point Picker'' toolbar.
-
-Crosses are reversibly overlaid on to the image and incrementally change color. This differs from the ''Crosshair'' tool which irreversibly stamps a point in the image. Crosses can be moved or deleted. 
-
-The ''Point List'' dialog allows you to ''Show'', ''Save'' or ''Open'' the points' coordinates. Clicking ''Show'' displays the coordinates in the ''Results'' window, where they can be saved or copied to the system clipboard. Once finished, you can return to the regular Fiji toolbar by clicking the button.
+You can use the built-in [http://imagej.net/docs/guide/146-19.html#sec:Multi-point-Tool Multi-point Tool] to manually count particles.
 
 == Particle tracking ==
 
