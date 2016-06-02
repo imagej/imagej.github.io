@@ -15,7 +15,7 @@
 {{MenuItem | [[Deconvolution]] }}
 {{MenuItem | [[Registration]] }}
 {{MenuItem | [[Segmentation]] }}
-{{MenuItem | [[Stitching]] }}
+{{MenuItem | [[Image Stitching | Stitching]] }}
 {{MenuItem | [[Tracking]] }}
 {{MenuItem | [[Visualization]] }}
 }}
