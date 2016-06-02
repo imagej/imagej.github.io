@@ -4,7 +4,7 @@ __NOTOC__{{Notice | For a summary of [[SciJava]] licensing, see the [[Licensing]
 These components are licensed under proprietary terms, incompatible with the [[GPL]] and similar licenses.
 
 However, the [[Fiji]] project has obtained permission to distribute them as part of its distribution:
-<blockquote><pre>
+<blockquote style="font-size: small"><pre>
 Date: Mon, 26 Jul 2010 10:58:20 +0200
 From: Michael Unser <michael.unser@epfl.ch>
 
