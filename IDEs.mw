@@ -1,11 +1,9 @@
-{{Development | tools}}
-An [[wikipedia:Integrated development environment|integrated development environment]] (IDE) is a software application that provides comprehensive facilities to computer programmers for software development. An IDE normally consists of a source code editor, build automation tools and a debugger. Most modern IDEs offer intelligent code completion features.
+{{Notice | 1=<center>If you are new to programming, and wondering which IDE to try first:<br>many [[ImageJ]] and [[Fiji]] developers use [[Eclipse]] and the [[command line]].</center>}}
+{{Development | tools}}An [[wikipedia:Integrated development environment|integrated development environment]] (IDE) is a software application that provides comprehensive facilities to computer programmers for software development. An IDE normally consists of a source code editor, build automation tools and a debugger. Most modern IDEs offer intelligent code completion features.
 
 [[ImageJ]] can be developed using any IDE which supports [[Maven]], which includes:
 
 <center>{{IDEs}}</center>
-
-{{Notice | 1=<center>If you are new to programming, and wondering which IDE to try first:<br>many ImageJ and [[Fiji]] developers use [[Eclipse]] and the [[command line]].</center>}}
 
 == Why use an IDE? ==
 
