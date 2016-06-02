@@ -2,6 +2,4 @@
 <div style="height: 385px">[[File:{{{image}}} | x350px | center | link={{{name}}}]]</div>
 <div>{{{description}}}</div>
 </div></includeonly>
-<noinclude>
-Template for floating book links, primarily for the [[User Guides]] page.
-</noinclude>
+<noinclude>Template for floating book links, primarily for the [[User Guides]] page.</noinclude>
