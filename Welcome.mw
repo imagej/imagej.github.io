@@ -1,6 +1,6 @@
 <seo google-site-verification="hF8k34axd16e2Zul9i4zyRriSL-W77CVBPnt1j_XDmM" />
 __NOTOC__
-<div style="margin: 0 auto; padding: 0 3em 3em 0;" align="center">
+<div style="margin: 0 auto; padding: 0 3em 1em 0;" align="center">
 {|
 | [[File:Imagej2-icon.png | 320px | link=]]
 | style="vertical-align: top" |
@@ -10,8 +10,7 @@ __NOTOC__
 <div class="button-green">[[Learn]]</div>
 <div class="button-red">[[Develop]]</div>
 |}
-</div>
-<div style=" padding: 0 20px 20px 20px;" align="center">
+</div><div style=" padding: 0 20px 20px 20px;" align="center">
 <h2 class="header-stripe" style="margin-left: -20px; margin-right: -20px; border:solid black; border-left: 2px; border-right: 2px">Welcome to the Wiki!</h2>
 
 <center>
