@@ -1,24 +1,3 @@
 This account is used to manage the [http://sites.imagej.net/Neuroanatomy/ Neuroanatomy update site],  distributing hIPNAT (''Image Processing for NeuroAnatomy and Tree-like Structures'') plugins.
 
-===== Requirements =====
-The requirements to run the Neuroanatomy suite of plugins are twofold: i) [[Fiji]] (i.e., an ImageJ installation subscribed to the Fiji update site) and ii) Java 8 (as part of an active effort to [[2015-12-22_-_The_road_to_Java_8|modernize ImageJ]]). If you are running an older version of Java, you can either i) [[Fiji/Downloads|Download the latest Fiji release]] (newer releases come pre-bundled with Java 8); or ii) If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [[Troubleshooting#Checking_the_Java_version|Fiji installation aware of it]].
-
-===== Subscribing to the Neuroanatomy update site =====
-# Run [[Update_Sites|{{bc|Help|Update...}}]]
-# Click ''Manage update sites''
-# Select the ''Neuroanatomy'' checkbox
-# Click ''Apply changes'' and Restart ImageJ.
-:(See also [[List of update sites]])
-
-===== List of plugins =====
-Some of the plugins in the Neuroanatomy toolbox include:
-* [[Strahler Analysis]], {{bc|Analyze|Skeleton|Strahler Analysis...}}
-* Summarize Skeleton, {{bc|Analyze|Skeleton|Summarize Skeleton}}
-* Rendering of tracings, {{bc|File|Import|Tracings (SWC/Traces)...}}
-
-===== Further information =====
-* The Neuroanatomy toolbox is maintained by [[User:Tiago|Tiago Ferreira]]
-* The source code is available on [https://github.com/tferr/hIPNAT/ GitHub]
-
-[[Category:Neuroanatomy]]
-__NOTOC__
+For more information (including [[Neuroanatomy#Installation|instructions on how to subscribe to the update site]]) refer to the [[Neuroanatomy| Neuroanatomy  documentation page]].
