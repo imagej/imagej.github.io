@@ -1,6 +1,57 @@
 {{ambox | text = 
-This page will hold the main documentation for the plugins distributed through the [[User:Neuroanatomy|Neuroanatomy update site]], released in [http://forum.imagej.net/t/launch-of-the-neuroanatomy-update-site/1377?u=tferr April 2016].
-
-See also: [[:Category:Neuroanatomy]].
+This is the main documentation page for the plugins distributed through the [[User:Neuroanatomy|Neuroanatomy update site]], released in [http://forum.imagej.net/t/launch-of-the-neuroanatomy-update-site/1377?u=tferr April 2016].
 }}
+[[Category:Neuroanatomy]]
+
+
+
+= Installation =
+The requirements to run the Neuroanatomy suite of plugins are twofold: i) [[Fiji]] (i.e., an ImageJ installation subscribed to the Fiji update site) and ii) Java 8 (as part of an active effort to [[2015-12-22_-_The_road_to_Java_8|modernize ImageJ]]). If you are running an older version of Java, you can either i) [[Fiji/Downloads|Download the latest Fiji release]] (newer releases come pre-bundled with Java 8); or ii) If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [[Troubleshooting#Checking_the_Java_version|Fiji installation aware of it]].
+
+'''Subscribing to the Neuroanatomy update site:'''
+# Run [[Update_Sites|{{bc|Help|Update...}}]]
+# Click ''Manage update sites''
+# Select the ''Neuroanatomy'' checkbox (see also [[List of update sites]])
+# Click ''Apply changes'' and Restart ImageJ.
+
+= List of commands =
+{| class="wikitable"
+|style="vertical-align: middle;text-align:center;"|'''Name'''
+|style="vertical-align: middle;text-align:center;"|'''Menu Path'''
+|style="vertical-align: middle;text-align:center;"|'''Description'''
+|-
+|colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Topographic Skeletons''
+|- valign="top"
+|Strahler classifier
+|{{bc|Analyze|Skeleton|Strahler Analysis...}}
+|Described in [[Strahler Analysis]]
+|- valign="top"
+|Summarize Skeleton
+|{{bc|Analyze|Skeleton|Summarize Skeleton}}
+|Bulk statistics of skeletonized images
+|- valign="top"
+|Particles classifier
+|{{bc|Analyze|Skeleton|Classify Particles Using Skeleton}}
+|Tags segmented particles according to skeleton features
+|-
+|colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Import/Export''
+|- valign="top"
+|Tracings Importer
+| {{bc|File|Import|Tracings (SWC/Traces)...}}
+| Renders traced reconstructions ( .traces - [[Simple Neurite Tracer]]'s format - and .swc files) in ImageJ's [[3D Viewer]] or as skeletonized image stacks
+|-
+|colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Utilities''
+|- valign="top"
+|Fractal Trees
+| {{bc|File|Open Samples|Fractal Tree}}
+| Synthetic images (L-System Trees) useful for debugging, testing or prototyping
+|}
+
+
+= Further information =
+* A list of all pages in this wiki related to Image Processing in the Neurosciences can be found [[:Category:Neuroanatomy|here]].
+* The Neuroanatomy toolbox is maintained by [[User:Tiago|Tiago Ferreira]]
+* The source code is available on [https://github.com/tferr/hIPNAT/ GitHub]
+
+
 [[Category:Neuroanatomy]]
