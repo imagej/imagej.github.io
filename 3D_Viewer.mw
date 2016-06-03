@@ -12,7 +12,7 @@
 }}== Purpose ==
 
 This plugin offers hardware-accelerated visualization possibilities for
-image stacks. Stacks can be displayed as texture-based volume renderings, 
+image stacks, using the [[Java 3D]] library. Stacks can be displayed as texture-based volume renderings, 
 surfaces or orthoslices. 
 
 [[Image:3D_Viewer_overview.png|center]]
