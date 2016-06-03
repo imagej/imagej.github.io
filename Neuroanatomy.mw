@@ -1,9 +1,18 @@
-{{ambox | text = 
-This is the main documentation page for the plugins distributed through the [[User:Neuroanatomy|Neuroanatomy update site]], released in [http://forum.imagej.net/t/launch-of-the-neuroanatomy-update-site/1377?u=tferr April 2016].
+{{Infobox
+| software   = Fiji
+| name       = Neuroanatomy update site
+| author     = {{Person|Tiago}}
+| maintainer = {{Person|Tiago}}
+| source     = {{GitHub|org=tferr|repo=hIPNAT}}
+| released   = April 2016
+| status     = Active
+| category   = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]], [[:Category:Neuroanatomy|Neuroanatomy]]
+}}{{ambox | text =
+This is the main documentation page for the hIPNAT (''Image Processing for NeuroAnatomy and Tree-like Structures'') plugins distributed through the [[User:Neuroanatomy|Neuroanatomy update site]], released in [http://forum.imagej.net/t/launch-of-the-neuroanatomy-update-site/1377?u=tferr April 2016].
+
+
+Please note that, at this time, these tools are under heavy development: some features are experimental and documentation remains incomplete.
 }}
-[[Category:Neuroanatomy]]
-
-
 
 = Installation =
 The requirements to run the Neuroanatomy suite of plugins are twofold: i) [[Fiji]] (i.e., an ImageJ installation subscribed to the Fiji update site) and ii) Java 8 (as part of an active effort to [[2015-12-22_-_The_road_to_Java_8|modernize ImageJ]]). If you are running an older version of Java, you can either i) [[Fiji/Downloads|Download the latest Fiji release]] (newer releases come pre-bundled with Java 8); or ii) If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [[Troubleshooting#Checking_the_Java_version|Fiji installation aware of it]].
@@ -49,9 +58,7 @@ The requirements to run the Neuroanatomy suite of plugins are twofold: i) [[Fiji
 
 
 = Further information =
-* A list of all pages in this wiki related to Image Processing in the Neurosciences can be found [[:Category:Neuroanatomy|here]].
-* The Neuroanatomy toolbox is maintained by [[User:Tiago|Tiago Ferreira]]
-* The source code is available on [https://github.com/tferr/hIPNAT/ GitHub]
+* A list of all pages in this wiki related to image processing in the neurosciences can be found [[:Category:Neuroanatomy|here]].
 
 
 [[Category:Neuroanatomy]]
