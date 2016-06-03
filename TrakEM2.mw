@@ -147,7 +147,7 @@ label (set to 30% transparency) are selected (pink and white frames; white is th
 [[Image:TrakEM2-arealists.png|thumb|left|232px|Neuronal arbors from serial section electron microscopy reconstructed with TrakEM2 using the [http://www.ini.uzh.ch/~acardona/data.html manually segmentated data set].]]
 [[Image:TrakEM2-display-2.png|thumb|left|232px|[[TrakEM2]] showing one section of a serial section transmission electron microscopy (ssTEM) data set, with numerous neuronal arbors reconstructed using [http://www.ini.uzh.ch/~acardona/trakem2_manual.html#trees treelines] and [http://www.ini.uzh.ch/~acardona/trakem2_manual.html#connectors connectors] (for synapses).]]
 [[Image:TrakEM2_Display_segmentations.png|thumb|left|232px|Example TrakEM2 segmentations, including Ball, Pipe, Profile, AreaList and floating text labels.]]
-
+{{Clear|left}}
 == Publication ==
 
 * {{Publication | TrakEM2}}
