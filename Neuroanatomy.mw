@@ -29,7 +29,7 @@ The requirements to run the Neuroanatomy suite of plugins are twofold: i) [[Fiji
 |style="vertical-align: middle;text-align:center;"|'''Menu Path'''
 |style="vertical-align: middle;text-align:center;"|'''Description'''
 |-
-|colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Topographic Skeletons''
+|colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Topological Skeletons''
 |- valign="top"
 |Strahler classifier
 |{{bc|Analyze|Skeleton|Strahler Analysis...}}
@@ -55,7 +55,6 @@ The requirements to run the Neuroanatomy suite of plugins are twofold: i) [[Fiji
 | {{bc|File|Open Samples|Fractal Tree}}
 | Synthetic images (L-System Trees) useful for debugging, testing or prototyping
 |}
-
 
 = Further information =
 * A list of all pages in this wiki related to image processing in the neurosciences can be found [[:Category:Neuroanatomy|here]].
