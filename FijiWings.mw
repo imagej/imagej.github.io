@@ -1,10 +1,4 @@
-[[File:File.png|200px|thumb|left|alt text]]
-
-__NOTOC__
-
-<br style="clear: both" />
-
-{{Infobox Plugin
+__NOTOC__[[File:File.png|500px|thumb|left]]{{Clear}}{{Infobox Plugin
 | software               = Fiji/ImageJ
 | name                   = FijiWings
 | author                 = Alex Dobens, Leonard Dobens [http://sbs.umkc.edu/dobens/]
@@ -12,8 +6,7 @@ __NOTOC__
 | filename               = fiji-macosx.zip
 | source                 = https://sourceforge.net/projects/fijiwings/
 | status                 = stable
-}}
-=== Introduction ===
+}}=== Introduction ===
 
 This set of macros control plugin to perform semi-automatic tracing of insect wing veins and determination of trichome number and density.   The native file format is open and XML-based.  This plugin is Free Software (also known as Open Source software) and is supplied as a packaged version of Fiji, here <http://sourceforge.net/projects/fijiwings>.
 
