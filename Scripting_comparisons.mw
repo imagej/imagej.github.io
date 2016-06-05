@@ -7,7 +7,7 @@ As the name of the command is typed, the color of the text changes from red to b
 
 The plugin consists of four parts:
 
-#Obtaining the list of all commands, from ij.Menus class.
+#Obtaining the list of all commands, from <code>ij.Menus</code> class.
 #Setting up a dialog with a text box.
 #Adding a text listener to the text box, that changes the color of the font in completing the typing of a word that matches a command.
 #Executing the command when clicking the 'ok' button or pushing the return key.
