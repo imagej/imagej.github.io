@@ -7,10 +7,10 @@ As the name of the command is typed, the color of the text changes from red to b
 
 The plugin consists of four parts:
 
-#Obtaining the list of all commands, from ij.Menus class.</li>
-#Setting up a dialog with a text box.</li>
-#Adding a text listener to the text box, that changes the color of the font in completing the typing of a word that matches a command.</li>
-#Executing the command when clicking the 'ok' button or pushing the return key.</li>
+#Obtaining the list of all commands, from ij.Menus class.
+#Setting up a dialog with a text box.
+#Adding a text listener to the text box, that changes the color of the font in completing the typing of a word that matches a command.
+#Executing the command when clicking the 'ok' button or pushing the return key.
 
 
 The command launcher as written in java is by far the longest in lines of code, and worse, the most verbose.
