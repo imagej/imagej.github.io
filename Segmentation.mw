@@ -81,7 +81,8 @@ Do some numerical analysis on the selected data:
 
 = See also =
 
-For a list of pages about image segmentation, see: [[:Category:Segmentation]].
+* The [Segmentation with Fiji workshop slides](http://imagej.github.io/presentations/fiji-segmentation/).
+* [[:Category:Segmentation]], a list of pages about image segmentation.
 
 [[Category:Tutorials]]
 [[Category:Segmentation]]
