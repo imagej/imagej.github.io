@@ -1,8 +1,8 @@
 __NOTOC__[[File:File.png|500px|thumb|left]]{{Clear}}{{Infobox Plugin
 | software               = Fiji/ImageJ
 | name                   = FijiWings
-| author                 = Alex Dobens, Leonard Dobens [http://sbs.umkc.edu/dobens/]
-| maintainer             = Leonard Dobens
+| author                 = Alex Dobens, {{Person|Dobensl}}
+| maintainer             = {{Person|Dobensl}}
 | filename               = fiji-macosx.zip
 | source                 = https://sourceforge.net/projects/fijiwings/
 | status                 = stable
