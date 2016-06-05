@@ -14,7 +14,7 @@ More precisely, image segmentation is the process of ''assigning a label'' to ev
 
 One option which is designed to be very powerful, yet easy to use for non-experts in image processing:
 
-<font size="5">&lt; [[Trainable Weka Segmentation]] &gt;</font>
+<span style="font-size: 2em">&lt; [[Trainable Weka Segmentation]] &gt;</span>
 
 Give it a try—you might like it!
 
