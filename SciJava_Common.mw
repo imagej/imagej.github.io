@@ -57,7 +57,7 @@ The SciJava menuing system is divided into several layers, to make it easier to 
 
 == Modules ==
 
-Each module known to the system (via the {{Javadoc | package = org/scijava/module | class = ModuleService}} can have a <code>menuPath</code> that says where it should live (by default) in the menu. It is also has a <code>menuRoot</code> that says in ''which'' menu it should live, with the default being the <code>APPLICATION_MENU_ROOT</code>, indicating the main application menu structure.
+Each module known to the system (via the {{Javadoc | package = org/scijava/module | class = ModuleService}} can have a <code>menuPath</code> that says where it should live (by default) in the menu. It also has a <code>menuRoot</code> that says in ''which'' menu it should live, with the default being the <code>APPLICATION_MENU_ROOT</code>, indicating the main application menu structure.
 
 == MenuService ==
 
