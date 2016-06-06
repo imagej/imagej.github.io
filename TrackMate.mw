@@ -153,6 +153,9 @@ The following tutorials show how to integrate a module of each kind in TrackMate
 
 TrackMate LoG detector will crash if you have the [[List_of_update_sites|Mosaic suite update site]] activated. Apparently they ship something that interferes with the FFT code used by the LoG detector. The bug report can be read [http://fiji.sc/bugzilla/show_bug.cgi?id=806 on BugZilla]. 
 
+== Extensions ==
+* [[Find_maxima_(Trackmate_module)|Find maxima detector]]
+
 
 == Who uses TrackMate ==
 
