@@ -120,7 +120,7 @@ Input values take into account the scale information of the image that can be se
 ==== Cf. Segmentation ====
 Press ''More» Cf. Segmentation'' to visually confirm which phase of the segmented image will be sampled. This command highlights foreground from background pixels and is particularly useful when analyzing black and white (binary) images or when using the ''B&W'' lookup table in the Threshold Widget (<span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span> {{key press|Shift|T}}). ''Cf. Segmentation'' allows you to ensure that you are measuring neuronal processes and not the interstitial spaces between them. Here is an example using an axonal arbor of a Drosophila olfactory neuron from the [http://diademchallenge.org DIADEM] dataset<ref name="DIADEM"/>:
 {|
-|<center><span style="display:inline-block;text-align:center;width:310px">Segmented image</span> <span style="display:inline-block;text-align:center;width:160px">''Cf. Segmentation output''</span> <span style="display:inline-block;text-align:center;width:270px">''Intersections mask''</span></center>
+|<center><span style="display:inline-block;text-align:center;width:230px">Segmented image</span> <span style="display:inline-block;text-align:center;width:230px">''Cf. Segmentation output''</span> <span style="display:inline-block;text-align:center;width:230px">''Intersections mask''</span></center>
 |-
 |<center>[[File:CfSegmentation.png|700px|center|]]</center>
 |-
