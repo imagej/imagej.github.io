@@ -43,7 +43,7 @@ If you using Fiji, you already have the plugin installed under {{bc|color=white|
 Note that the plugin runs fine with older versions of Java, so you can [[#Non-Fiji_Users|update it manually]] if you do not want (or can't) use Java 8. However, it will have to be compiled for older versions of Java.
 
 === Non-Fiji Users ===
-If you are not using Fiji, download ''Sholl_Analysis.jar'' from the direct link listed on the [[#top|top of this page]] and place it in the ''ImageJ/plugins/'' directory. Alternatively, drag the downloaded <tt>.jar</tt> file and drop it on the main ImageJ window. Restart ImageJ and run the new {{bc|color=white|Analysis|Sholl|Sholl Analysis...}} command.
+If you are not using Fiji, download ''Sholl_Analysis.jar'' from the direct link listed on the [[#top|top of this page]] and place it in the ''ImageJ/plugins/'' directory. Alternatively, drag the downloaded .jar file and drop it on the main ImageJ window. Restart ImageJ and run the new {{bc|color=white|Analysis|Sholl|Sholl Analysis...}} command.
 
 Without access to the [[Update_Fiji|built-in updater]], you are strongly advised to upgrade ImageJ to its latest version ({{bc|color=white|Help|Update ImageJ...}}). To manually update the Sholl Analysis plugin you will have to monitor this page (or the {{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Release Notes}} page) for finding out if new updates have been released.
 
@@ -310,7 +310,8 @@ Most options in the ''Tabular prompt'' are explained in the description of the d
 ;Data analysis tools:
 :'''[[Find Peaks]]:''' Retrieves local maxima under several filtering options such as peak amplitude, peak height and peak width. Can be used to retrieve secondary sites of branch density
 :'''{{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#fit-polynomial|label=Fit Polynomial}}:''' Fits a polynomial of any degree to sampled data. Features an heuristic algorithm for guessing a polynomial "best fit". Expands the built-in repertoire of polynomial fits up to 50<sup>th</sup> order functions. Requires the [http://commons.apache.org/proper/commons-math/ apache commons math library], distributed with Fiji. The script provides [[#Non-Fiji_Users|Non-Fiji users]] with direct download links that install all required dependencies
-:'''{{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#plot-results|label=Plot Results}}:''' Whole-purpose routine that plots data from imported spreadsheets. 
+:'''{{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#create-boxplot|label=Create BoxPlot}}:''' Allows direct comparison of metrics between groups or sets of data (specially useful when tagging images with the ''Comment'' field in {{bc|color=white|Analysis|Sholl|Metrics &amp; Options...}})
+:'''{{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#plot-xy-data|label=Plot XY Data}}:''' Whole-purpose routine that plots data from imported spreadsheets. 
 
 To install [[BAR]], run <span style="border-bottom:1px dotted #ccc;">Help▷ Update...</span> Choose ''Advance Mode'' then ''Manage update sites''. Activate the ''BAR'' checkbox in the list of update sites. See the [[BAR#Installation|BAR documentation page]] for more details.
 
@@ -366,7 +367,7 @@ Any macro or script must allow the Sholl Analysis plugin to access the ROI marki
 Now that all the images are marked, we just need to ask ImageJ to generate some lines of code. We will open the Macro Recorder (<span style="border-bottom:1px dotted #ccc;">Plugins▷ Macros▷ Record...</span>) and run ''Sholl Analysis'' on one of the images to find out how to call the plugin with suitable parameters. In this example, we will use the ImageJ macro language. The single line of code that appears in the recorder window will look something like this:
 <source lang="java">
 // Recording Sholl Analysis version 3.4.3
-// Visit http://fiji.sc/Sholl#Batch_Processing for scripting examples
+// Visit http://imagej.net/Sholl_Analysis#Batch_Processing for scripting examples
 run("Sholl Analysis...", "starting=10 ending=400 radius_step=0 infer fit linear polynomial=[8th degree] semi-log normalizer=Volume create save do");
 </source>
 
