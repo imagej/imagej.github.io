@@ -115,7 +115,7 @@ public class MyPlugin {
 
 This will allow the <code>Context</code> to provide you with the appropriate instance of your requested service.
 
-In some cases, manual plugin construction is unavoidable. Understand that if the <code>MyPlugin</code> class above is manually constructed—i.e. via <code>new MyPlugin()</code>—the <code>LogService</code> parameter will be <code>null</code>. Automatic population only occurs if the plugin instance itself is retrieved via the framework. When you must manually construct a plugin instance, you can still re-connect it to an existing <code>Context</code> via the its ''injection'' mechanism:
+In some cases, manual plugin construction is unavoidable. Understand that if the <code>MyPlugin</code> class above is manually constructed—i.e. via <code>new MyPlugin()</code>—the <code>LogService</code> parameter will be <code>null</code>. Automatic population only occurs if the plugin instance itself is retrieved via the framework. When you must manually construct a plugin instance, you can still re-connect it to an existing <code>Context</code> via its ''injection'' mechanism:
 
 <source lang=java>
 public class MyService {
