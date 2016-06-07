@@ -22,7 +22,7 @@
 ;Non-Fiji User?:Jump to [[#Non-Fiji_Users|Installation notes]]
 </div>
 </div>{{TOC}}
-Automated and multithreaded bitmap Sholl for direct analysis of fluorescent images of neuronal arbors, featuring powerful quantifications  based on curve fitting. Analysis of previously traced arbors is also possible.
+Automated and multithreaded bitmap Sholl for direct analysis of fluorescent images of neuronal arbors. Features powerful quantifications based on curve fitting. Analysis of previously traced arbors is also possible.
 
 == Introduction ==
 <span id="CA1CellMask"></span>[[ File:BitmapSholl-CA1mask.png|frame|[[Skeletonize3D|Skeletonized]] hippocampal CA1 cell<ref name="Gross"></ref> (juvenile mouse) in which apical and basal dendrites have been analyzed [[#CA1CellPlot|separately]] and [[#Output_Options|color coded]] according to their Sholl profile. Warmer hues indicate higher number of Intersections (''N''). [[#CriticalRadius|Critical radius]] (''r<sub>c</sub>'') and [[#MeanValueOfFunction|Mean value]] (''N<sub>av</sub>'') are indicated.]]
