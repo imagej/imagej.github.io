@@ -188,9 +188,9 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 [[File:BitmapSholl-Table.png|100%|center|Descriptors and metrics are listed in the Sholl Table (v2.4)]]
 
 === Metrics based on sampled data ===
+[[ File:ShollOptionsPrompt.png|350px|right |Metrics &amp; Options prompt (version 3.6.0)]]
 ;Intersecting radii
 :The number of sampling radii intersecting the arbor at least once.
-[[ File:ShollOptionsPrompt.png|350px|right |Metrics &amp; Options prompt (version 3.6.0)]]
 
 ;Sum of intersections (''Sum inters.'')<span id="Sum"></span>
 :The sum of all intersections.
