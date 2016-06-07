@@ -345,7 +345,7 @@ This section discusses some aspects that should be taken into account when segme
 :* [[Lasso selection|Blow/Lasso Tool]], <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
 :* Scripts from the [[BAR]] [[List_of_update_sites|update site]], <span style="border-bottom:1px dotted #ccc;">BAR▷ [[BAR#Segmentation|Segmentation]]▷</span>
 {{Tip
-|tip = For additional image processing tools have a look at the growing list of  [[List_of_update_sites|update sites]]. For more information on image processing have a look at the [[Cookbook]], [[:Category:Tutorials|tutorials]], the [http://imagejdocu.tudor.lu ImageJ Information and Documentation Portal] and the [http://imagej.net/docs/guide/ ImageJ User Guide].
+|tip = For additional image processing tools have a look at the growing list of  [[List_of_update_sites|update sites]]. For more information on image processing have a look at [[:Category:Tutorials|tutorials]], [[:Category:Segmentation|segmentation]] and the [http://imagej.net/docs/guide/ ImageJ User Guide].
 }}
 
 == Batch Processing ==
@@ -449,7 +449,7 @@ import sholl.Sholl_Analysis as sa
 sa.setNoPlots(True) # Exclude plots from output
 sa.setNoTable(True) # Exclude detailed table from output
 </source>
-;Java/BeanShell example: Display plots without annotations
+;Java/BeanShell/Groovy example: Display plots without annotations
 <source lang="java">
 import sholl.Sholl_Analysis;
 Sholl_Analysis.setPlotLabels(true); // Exclude plot labels
@@ -477,7 +477,7 @@ Note that the IJM built-in [http://imagej.nih.gov/ij/developer/macro/functions.h
 	<dl><dd>
 		The authoritative reference for ''Sholl Analysis'' is:
 * Ferreira T, Blackman A, Oyrer J, Jayabal A, Chung A, Watt A, Sjöström J, van Meyel D. ('''2014'''), [http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html Neuronal morphometry directly from bitmap images], ''Nature Methods'' 11(10): 982–984.
-The [[How to cite Fiji?|authoritative reference]] for Fiji:
+The [[Citing|authoritative reference]] for Fiji:
 * Schindelin J, Arganda-Carreras I, Frise E, Kaynig V, Longair M, Pietzsch T, Preibisch S, Rueden C, Saalfeld S, Schmid B, Tinevez JY, White DJ, Hartenstein V, Eliceiri K, Tomancak P, Cardona A. ('''2012''') [http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2019.html Fiji: an open-source platform for biological-image analysis], ''Nature Methods'' 9(7): 676-682.
 	</dd></dl>
 	<li>
@@ -631,7 +631,7 @@ one could retrieve the AUC of the polynomial fit, but such property is already c
 		<span id="faq:bug-report"></span>'''I found a bug. How do I report it?'''
 	</li>
 	<dl><dd>
-		Use Fiji's built-in [[Report a Bug]] command, report it in the [http://forum.imagej.net|ImageJ Forum], the [http://imagej.net/list.html ImageJ mailing list] or file an [https://github.com/tferr/ASA/issues issue] on GitHub. Don't forget to include the [[Bug reporting best practices|steps needed to reproduce the problem]]. You may also want to check the {{GitHub|org=tferr|repo=ASA|path=Notes.md#development-builds|label=release notes}} for the latest [http://jenkins.imagej.net/job/Sholl-Analysis/lastBuild/ development version] to see if the issue has meanwhile been addressed.
+		Use Fiji's built-in [[Report a Bug]] command, report it in the [http://forum.imagej.net ImageJ Forum], the [http://imagej.net/list.html ImageJ mailing list] or file an [https://github.com/tferr/ASA/issues issue] on GitHub. Don't forget to include the [[Bug reporting best practices|steps needed to reproduce the problem]]. You may also want to check the {{GitHub|org=tferr|repo=ASA|path=Notes.md#development-builds|label=release notes}} for the latest [http://jenkins.imagej.net/job/Sholl-Analysis/lastBuild/ development version] to see if the issue has meanwhile been addressed.
 	</dd></dl>
 </ol>
 
@@ -639,11 +639,13 @@ one could retrieve the AUC of the polynomial fit, but such property is already c
 Releases notes are available on {{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Github}}. If you do not mind unstable software, {{GitHub|org=tferr|repo=ASA|path=Notes.md#development-builds|label=development builds}} may be found [http://jenkins.imagej.net/job/Sholl-Analysis here]. Once new features mature and no major issues are found these development versions will be made available, as usual, through [[Update_Fiji|Fiji's Updater]].
 
 == Related Resources ==
-* '''[[Simple_Neurite_Tracer|Simple Neurite Tracer]] (SNT)''' Mark Longair's plugin for semi-automated three-dimensional tracing. Data from [[Simple_Neurite_Tracer:_Sholl_analysis|SNT]] can be [[#Importing|analyzed]] by the Sholl Analysis plugin.
+* [[:Category:Neuroanatomy|Neuroanatomy]] resources, including:
+** '''[[Simple_Neurite_Tracer|Simple Neurite Tracer]] (SNT)''' Mark Longair's plugin for semi-automated three-dimensional tracing. Data from [[Simple_Neurite_Tracer:_Sholl_analysis|SNT]] can be [[#Importing|analyzed]] by the Sholl Analysis plugin.
+** [[Neuroanatomy|Neuroanatomy update site]]
 
 * '''[[BAR]]''', ''B''roadly ''A''pplicable ''R''outines that complement ''Sholl Analysis''
 
-* '''[[Strahler_Analysis|Strahler_Analysis]]''' Strahler Analysis on [[Skeletonize3D|skeletonized]] arbors.
+* '''[[Strahler_Analysis|Strahler_Analysis]]''' Strahler Analysis on [[Skeletonize3D|skeletonized]] arbors (distributed through the [[Neuroanatomy|Neuroanatomy update site]])
 
 * '''[http://www.reading.ac.uk/neuromantic/ Neuromantic]''' Standalone program for (semi-manual/semi-automatic) neuronal reconstruction.
 
