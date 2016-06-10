@@ -587,7 +587,8 @@ You can browse the [http://ijpb.github.io/MorphoLibJ/javadoc/ javadoc] for more 
 
 ::: 4) Click ''Apply changes'' and restart Fiji.
 == Citation ==
-[[MorphoLibJ]]'s code repository has its own [http://dx.doi.org/10.5281/zenodo.50694 DOI].
+[[MorphoLibJ]]'s code repository has its own [https://zenodo.org/badge/latestdoi/21349/ijpb/MorphoLibJ DOI].
+
 == References ==
 <references />
 == License ==
