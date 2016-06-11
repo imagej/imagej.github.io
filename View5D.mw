@@ -4,7 +4,7 @@
 | author                 = Rainer Heintzmann
 | maintainer             = Rainer Heintzmann, {{Person|JeanYvesTinevez}}
 | filename               = [http://www.nanoimaging.uni-jena.de/View5D/View5D_Sources_V1.3.00.zip src of last release (zip)]
-| source                 = {{GitHub|org=fiji|repo=View5D_}}
+| source                 = {{GitHub|org=fiji|repo=View5D}}
 | released               = April 2007
 | latest version         = V1.3.00 - Jan 2011
 | status                 = not active - stable
