@@ -29,10 +29,10 @@ This plugin implement the anisotropic diffusion filter in 2D. Anisotropic filter
 * ''Show time stats'' - Display elapsed times.
 * ''Add labels'' - Add labels to output stack. Double click on the eye dropper tool to set the label color.
 
+== Citation ==
 
-
-The algorithm used by this plugin is an implementation of Anisotropic Diffusion from
-{{Citation
+The algorithm used by this plugin is an implementation of Anisotropic Diffusion from:
+* {{Citation
   | last = Tschumperlé
   | first = D.
   | last2 = Deriche
