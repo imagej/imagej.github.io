@@ -37,8 +37,8 @@ The algorithm used by this plugin is an implementation of Anisotropic Diffusion 
   | first = D.
   | last2 = Deriche
   | first2 = R.
-  | title = Vector-Valued Image Regularization with PDE’s : A Common Framework for Different Applications
-  | journal =  IEEE Trans. Pattern. Anal. Mach. Intell.
+  | title = Vector-valued image regularization with PDEs: a common framework for different applications
+  | journal =  IEEE Trans Pattern Anal Mach Intell
   | volume = 27
   | issue = 4
   | pages = 506-517
