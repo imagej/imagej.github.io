@@ -1,5 +1,5 @@
 
-'''== Description: =='''
+'''Description:'''
 
 Vessel Analysis is a plugin to automatically calculate vascular density metrics:
 - vascular density = vessel area/total area * 100%
@@ -7,7 +7,7 @@ Vessel Analysis is a plugin to automatically calculate vascular density metrics:
 
 as well as making diameter measurements for multiple vessels in RGB images of vascular networks. It can also be used on any images of branching structures.
 
-'''== Installation: =='''
+'''Installation:'''
 
 Vessel Analysis can be added to Fiji (version 1.47g or higher required). 
 
@@ -19,11 +19,11 @@ Threshold and Geometry to Distance plugins. They should be listed under:
 o Image > Adjust > Auto Threshold
 o Analyze > Local Thickness > Geometry to Distance Map
 
-'''== Usage: =='''
+'''Usage:'''
 
 Open a multi-channel image in Fiji and execute the Vessel Analysis plugin via Plugins > Vessel Analysis > Vessel Analysis (complete). The "complete" program will guide you through preprocessing steps to prepare the image for vascular density and diameter measurements.
 
-''Using the Plugin: Pre-processing''''Italic text''
+''Using the Plugin: Pre-processing''
 
 You may skip directly to Vessel Analysis > Vascular Density or Vessel Analysis > Diameter Measurements if you already have the appropriate pre-processed image.
 
