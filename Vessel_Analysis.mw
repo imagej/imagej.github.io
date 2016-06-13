@@ -1,7 +1,7 @@
 {{Infobox
 | name                  = Vessel Analysis                                                                                                                                           
 | software              = Fiji
-| authors                = Nivetha Govindaraju, {{Person|M farna}}
+| author                = Nivetha Govindaraju, {{Person|M farna}}
 | maintainer            = {{Person|M farna}}
 | source                = {{GitHub|org=|repo=}}
 | latest version        = 1.1
