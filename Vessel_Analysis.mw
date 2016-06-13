@@ -1,0 +1,38 @@
+
+'''== Description: =='''
+
+Vessel Analysis is a plugin to automatically calculate vascular density metrics:
+- vascular density = vessel area/total area * 100%
+- vascular length density = skeletonized vessel area/total area * 100%) 
+
+as well as making diameter measurements for multiple vessels in RGB images of vascular networks. It can also be used on any images of branching structures.
+
+'''== Installation: =='''
+
+Vessel Analysis can be added to Fiji (version 1.47g or higher required). 
+
+Download the Vessel Analysis.zip package and save an unzipped copy in Fiji's Plugins folder.
+Open a new session in Fiji and you should now see Vessel Analysis listed near the bottom of
+the Plugins drop down menu.
+Before using the plugin, make sure your version of Fiji comes pre-downloaded with the Auto
+Threshold and Geometry to Distance plugins. They should be listed under:
+o Image > Adjust > Auto Threshold
+o Analyze > Local Thickness > Geometry to Distance Map
+
+'''== Usage: =='''
+
+Open a multi-channel image in Fiji and execute the Vessel Analysis plugin via Plugins > Vessel Analysis > Vessel Analysis (complete). The "complete" program will guide you through preprocessing steps to prepare the image for vascular density and diameter measurements.
+
+''Using the Plugin: Pre-processing''''Italic text''
+
+You may skip directly to Vessel Analysis > Vascular Density or Vessel Analysis > Diameter Measurements if you already have the appropriate pre-processed image.
+
+As the image is processed, new images will be generated and automatically saved in the source directory of the original image. You may re-use these images for future processing.
+
+''Vessel Analysis (complete)''
+Using the rectangular selection tool, you will be asked to select the image area you would like to analyze. Once complete, click OK. A cropped image will be generated, followed by its binary version. The following measurements will be collected using this binary image.
+
+''Choose a metric...''
+
+You will now be prompted to perform either vascular density or diameter measurements.
+At the end of each individual program, you can choose to analyze the other metric as well.
