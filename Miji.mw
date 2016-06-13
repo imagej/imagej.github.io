@@ -1,4 +1,4 @@
-{{Notice | This page covers the original compatibility layer for running ImageJ 1.x within MATLAB.<br>If you're looking for an extensible, bi-directional MATLAB bridge, check out [[MATLAB_Scripting|ImageJ-MATLAB]].}}
+{{Notice | This page covers the original compatibility layer for running ImageJ 1.x within MATLAB.<br>The current library for ImageJ/MATLAB integration is [[MATLAB_Scripting|ImageJ-MATLAB]]; it has many advantages over this legacy project.}}
 
 [http://bigwww.epfl.ch/sage/soft/mij/ MIJ] is a java package to exchange images between [[MATLAB]] and ImageJ. It is written by Daniel Sage (Biomedical Image Group (BIG), Ecole Polytechnique Fédérale de Lausanne (EPFL), Switzerland) and Dimiter Prodanov (Department of Physiology and Pharmacology, Université Catholique de Louvain (UCL), Brussels, Belgium). It allows to start a instance of ImageJ inside [[MATLAB]] and exchange images back and forth with it. It takes advantage of the fact that the user interface of [[MATLAB]] is written in Java. 
 
