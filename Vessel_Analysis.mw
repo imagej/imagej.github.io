@@ -3,7 +3,7 @@
 | software              = Fiji
 | author                = Nivetha Govindaraju, {{Person|M farna}}
 | maintainer            = {{Person|M farna}}
-| source                = {{GitHub|org=|repo=}}
+| source                {{https://www.dropbox.com/s/8ifi0ctbkp44fk6/Vessel%20Analysis.zip?dl=0}}
 | latest version        = 1.1
 | status                = stable
 }}
@@ -24,7 +24,7 @@ as well as making diameter measurements for multiple vessels in RGB images of va
 
 Vessel Analysis can be added to Fiji (version 1.47g or higher required). 
 
-Download the Vessel Analysis.zip package and save an unzipped copy in Fiji's Plugins folder.
+Download the [https://www.dropbox.com/s/8ifi0ctbkp44fk6/Vessel%20Analysis.zip?dl=0 Vessel Analysis.zip] package and save an unzipped copy in Fiji's Plugins folder.
 Open a new session in Fiji and you should now see Vessel Analysis listed near the bottom of
 the Plugins drop down menu.
 Before using the plugin, make sure your version of Fiji comes pre-downloaded with the Auto
@@ -35,6 +35,7 @@ o Analyze > Local Thickness > Geometry to Distance Map
 
 == '''Usage:''' ==
 
+Detailed Instructions [https://www.dropbox.com/s/uhm2p93093scbos/Vessel%20Analysis%20User%20Manual.pdf?dl=0 HERE]
 
 Open a multi-channel image in Fiji and execute the Vessel Analysis plugin via Plugins > Vessel Analysis > Vessel Analysis (complete). The "complete" program will guide you through preprocessing steps to prepare the image for vascular density and diameter measurements.
 
