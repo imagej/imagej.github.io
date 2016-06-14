@@ -68,6 +68,12 @@ mr up
 
 Switch to zsh:
 <source lang="bash">
+# grab zgen
+cd
+mkdir -p code/zsh
+cd code/zsh
+mr up
+
 # on Linux
 sudo apt-get install zsh # on Linux
 sudo chsh -s /bin/zsh
