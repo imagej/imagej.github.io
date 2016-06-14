@@ -1,0 +1,46 @@
+There are several [https://dotfiles.github.io/ dotfiles] repositories filled with command line configuration goodness for the different [[Architecture|layers]] of the [[SciJava]] software stack.
+
+== Repositories ==
+
+You can find the dotfiles in the following repositories:
+
+{| class="wikitable nicetable"
+|-
+| style="text-align: center; vertical-align: bottom" |
+[[File:Scijava-icon.png|48px|link=SciJava]]
+<br>{{GitHub | org=scijava | repo=dotfiles | label=scijava/dotfiles}}
+| style="text-align: center; vertical-align: bottom" |
+[[File:Imagej2-icon.png|48px|link=ImageJ]]
+<br>{{GitHub | org=imagej | repo=dotfiles | label=imagej/dotfiles}}
+| style="text-align: center; vertical-align: bottom" |
+[[File:Imglib2-icon.png|48px|link=ImgLib2]]
+<br>{{GitHub | org=imglib2 | repo=dotfiles | label=imglib2/dotfiles}}
+| style="text-align: center; vertical-align: bottom" |
+[[File:Scifio-icon.png|48px|link=SCIFIO]]
+<br>{{GitHub | org=scifio | repo=dotfiles | label=scifio/dotfiles}}
+|-
+| style="text-align: center; vertical-align: bottom" |
+[[File:Fiji-icon.png|48px|link=Fiji]]
+<br>{{GitHub | org=fiji | repo=dotfiles | label=fiji/dotfiles}}
+| style="text-align: center; vertical-align: bottom" |
+[[File:Slim-curve-icon.png|48px|link=SLIM Curve]]
+<br>{{GitHub | org=slim-curve | repo=dotfiles | label=slim-curve/dotfiles}}
+| style="text-align: center; vertical-align: bottom" |
+[[File:loci-logo.png|48px|link=LOCI]]
+<br>{{GitHub | org=uw-loci | repo=dotfiles | label=uw-loci/dotfiles}}
+| style="text-align: center; vertical-align: bottom" |
+[[User:Rueden|<img src="http://gravatar.com/avatar/63df759e2779af56fd050a968ff98d09" width=48 height=48>]]
+<br>{{GitHub | org=ctrueden | repo=dotfiles | label=ctrueden/dotfiles}}
+|}
+
+== What's included? ==
+
+There are several tools for which configuration and customization is provided:
+
+* Shells: [https://www.gnu.org/software/bash/ bash] and [http://www.zsh.org/ zsh] (via 
+* Editors: [http://www.vim.org/ Vim]
+* SCM tools: [[Git]] and [https://myrepos.branchable.com/ myrepos]
+
+Where possible, configuration is driven by plugin managers:
+* [https://github.com/tarjoilija/zgen zgen] and [http://ohmyz.sh/ Oh-My-Zsh] for zsh
+* [https://github.com/VundleVim/Vundle.vim Vundle] for vim
