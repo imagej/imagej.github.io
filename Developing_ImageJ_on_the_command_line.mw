@@ -51,5 +51,8 @@ mvn -Dimagej.ui=pivot -Pexec
 mvn -Dimagej.ui=swt -Pexec
 </source>
 
+== See also ==
+* [[Dotfiles]] if you want to twink out your shell
+
 [[Category:Development]]
 [[Category:IDEs]]
