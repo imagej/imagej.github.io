@@ -21,6 +21,7 @@
 {{MenuItem | [[IDEs]] }}
 {{MenuItem | [[Jenkins]] }}
 {{MenuItem | [[Travis]] }}
+{{MenuItem | [[Dotfiles]] }}
 | {{#ifeq:{{{1}}}|tools||collapsed}}
 }}
 {{!}}-
