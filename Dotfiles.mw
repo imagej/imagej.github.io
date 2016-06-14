@@ -44,3 +44,41 @@ There are several tools for which configuration and customization is provided:
 Where possible, configuration is driven by plugin managers:
 * [https://github.com/tarjoilija/zgen zgen] and [http://ohmyz.sh/ Oh-My-Zsh] for zsh
 * [https://github.com/VundleVim/Vundle.vim Vundle] for vim
+
+== How to get started? ==
+
+
+Bootstrap:
+<source lang="bash">
+cd
+mkdir -p code/ctrueden
+cd code/ctrueden
+git clone git://github.com/ctrueden/dotfiles
+cd dotfiles
+sh config-links.sh
+</source>
+
+Clone code for organization(s) of interest—e.g., imagej:
+<source lang="bash">
+cd
+mkdir -p code/imagej
+cd code/imagej
+mr up
+</source>
+
+Switch to zsh:
+<source lang="bash">
+# on Linux
+sudo apt-get install zsh # on Linux
+sudo chsh -s /bin/zsh
+
+# on OS X
+brew install zsh
+sudo chsh -s /usr/local/bin/zsh
+
+# on Windows, use Chocolatey to install Cygwin
+choco install cygwin cyg-get
+# and then from Cygwin:
+cyg-get install zsh
+chsh -s /bin/zsh
+</source>
