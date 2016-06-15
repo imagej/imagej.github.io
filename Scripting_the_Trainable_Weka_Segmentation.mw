@@ -22,7 +22,7 @@ input  = IJ.openImage( "input-grayscale-or-color-image.tif" );
 segmentator = new WekaSegmentation( input );
 </source>
 
-At it is now, the segmentator has default parameters and default classifier. That means that it will use the same features that are set by default in the [[Trainable Weka Segmentation | Trainable Weka Segmentation plugin]], 2 classes (named "class 1" and "class 2") and a random forest classifier with 200 trees and 2 random features per node. 
+As it is now, the segmentator has default parameters and default classifier. That means that it will use the same features that are set by default in the [[Trainable Weka Segmentation | Trainable Weka Segmentation plugin]], 2 classes (named "class 1" and "class 2") and a random forest classifier with 200 trees and 2 random features per node. 
 If we are fine with that, we can now add some labels for our training data and train the classifier based on them.
 
 === Adding training samples ===
