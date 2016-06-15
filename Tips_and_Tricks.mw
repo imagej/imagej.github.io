@@ -20,7 +20,7 @@ the return value will appear in your Log window when called.
 
 ==Find out in which menu (or .jar file) a certain command is==
 
-Hit {{key|Ctrl|L}} to start the command launcher.  Type (part of) the name of the entry, then click on ''Show full information''.
+Hit {{key|Ctrl|L}} to start the [[Command Finder]].  Type (part of) the name of the entry, then click on ''Show full information''.
 
 If ''{{bc | Edit | Options | Misc...}}>Require command key for shortcuts'' is ''un''checked, typing {{key|L}} is sufficient.
 
