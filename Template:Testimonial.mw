@@ -1,5 +1,5 @@
 <includeonly><div style="padding: 0.5em; {{#if:{{{float|}}}|float: {{{float}}};|}}{{#if:{{{width|}}}|width: {{{width}}};|}}"><table style="border: 1px solid lightgray; border-radius: 1em; padding: 0.5em 1em 0.5em 1em; width: 100%"><tr>
-<td style="padding-right: 1em; vertical-align: top; padding-top: 1em"><img style="border-radius: 50%" src="http://gravatar.com/avatar/{{{gravatar}}}"></td>
+{{#if:{{gravatar|}}}|<td style="padding-right: 1em; vertical-align: top; padding-top: 1em"><img style="border-radius: 50%" src="http://gravatar.com/avatar/{{{gravatar}}}"></td>|}}
 <td rowspan=2>
 <div style="font-family: Times, Helvetica, sans-serif; font-size: 17px"><!-- Quote -->
 &ldquo;{{{quote}}}&rdquo;<br>
