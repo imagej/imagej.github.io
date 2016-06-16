@@ -13,7 +13,7 @@ The rules for <code>@parameter</code> use are as follows:
 
 {{Testimonial
 | quote = zomg UIs are so easy now<br>done by lunchtime
-| person = {{Person|kephale}}, Clojure developer
+| person = {{Person|kephale}},<br>Clojure developer
 | gravatar = 9e4ed4484fd425f3f178bfeed4777b31
 | source = https://gitter.im/fiji/fiji/archives/2016/04/20
 | float = right
