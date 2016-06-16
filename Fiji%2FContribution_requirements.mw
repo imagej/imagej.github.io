@@ -61,7 +61,9 @@ To enable a Jenkins link with your repository:
 
 Once configured, your settings should look like:
 
-[[File:Services.png]]
+[[File:Services.png|border|Webhooks and Services menu after adding Jenkins (Git plugin)]]
+
+[[File:GitHubJenkinsManagement.png|border|Management settings for Jenkins (Git plugin)]]
 
 == Continuous integration: Travis ==
 
