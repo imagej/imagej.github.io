@@ -1,15 +1,13 @@
-<includeonly><div style="padding: 0.5em; {{#if:{{{float|}}}|float: {{{float}}};|}}{{#if:{{{width|}}}|width: {{{width}}};|}}"><table style="border: 1px solid lightgray; border-radius: 1em; padding: 0.5em 1em 0.5em 1em; width: 100%"><tr>
-{{#if:{{{gravatar|}}}|<td style="padding-right: 1em; vertical-align: top; padding-top: 1em"><img style="border-radius: 50%" src="http://gravatar.com/avatar/{{{gravatar}}}"></td>|}}
-<td rowspan=2>
-<div style="font-family: Times, Helvetica, sans-serif; font-size: 17px"><!-- Quote -->
-&ldquo;{{{quote}}}&rdquo;<br>
-</div><!-- End quote -->
-<div style="font-family: Times, Helvetica, sans-serif; font-size: 15px; padding-left: 1em">—{{{person}}}</div>
-<div style="font-size: 10px"></div>
-</td>
+<includeonly><div style="padding: 0.5em; {{#if:{{{float|}}}|float: {{{float}}};|}}{{#if:{{{width|}}}|width: {{{width}}};|}}"><table style="border: 1px solid lightgray; border-radius: 1em; padding: 0.5em 1em 0.5em 1em; width: 100%">
+<tr>
+{{#if:{{{gravatar|}}}|<td rowspan=2 style="padding-right: 1em; vertical-align: top; padding-top: 1em"><img style="border-radius: 50%" src="http://gravatar.com/avatar/{{{gravatar}}}"></td>|}}
+<td colspan=2 style="font-family: Times, Helvetica, sans-serif; font-size: 17px">&ldquo;{{{quote}}}&rdquo;</td>
 </tr>
-<tr><td style="font-size: 10px; text-align: center; white-space: nowrap">[ [{{{source}}} source] ]</td>
-</tr></table></div></includeonly><noinclude>This template generates a testimonial box with quote and attribution.
+<tr>
+<td style="font-family: Times, Helvetica, sans-serif; font-size: 15px; padding-left: 1em">—{{{person}}}</td>
+<td style="font-size: 10px; text-align: center; white-space: nowrap">[ [{{{source}}} source] ]</td>
+</tr>
+</table></div></includeonly><noinclude>This template generates a testimonial box with quote and attribution.
 == Usage ==
 <pre>
 {{Testimonial
