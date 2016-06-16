@@ -59,6 +59,10 @@ To enable a Jenkins link with your repository:
 # Configure your repository to add a [https://github.com/blog/1778-webhooks-level-up service] (''not'' a webhook) for the [https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin Jenkins (Git plugin)]. ''Note: there is a Jenkins (Git plugin) and Jenkins (GitHub plugin). Enable the '''Jenkins (Git plugin)''' service.''
 # Set the <code>Jenkins URL</code> field to: <code><nowiki>http://jenkins.imagej.net/</nowiki></code>
 
+Once configured, your settings should look like:
+
+[[File:Services.png]]
+
 == Continuous integration: Travis ==
 
 [[Travis]] is an alternative to Jenkins for continuous integration that allows easier setup and management for external developers.
