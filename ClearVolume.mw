@@ -32,7 +32,8 @@ We work constantly on improving the Fiji and KNIME plugins. Help us doing so by 
 <center>[[File:ClearVolumeInFiji.png|border|750px|thumb|The main ClearVolume plugin can render volumetric multi-channel data. Channel LUTs, transparency, rendering quality, etc. can easily be set in the plugins user interface. We thank Tzumin Lee's group at Janelia for being allowed to use their twin-spot MARCM (Yu et al., Nature Neuroscience, 2009) labeled neurons.]]</center>
 <center>[[File:ClearVolumeNetworkClientInFiji.png|750px|thumb|The ClearVolume network client can be started from Fiji/ImageJ2 and enables users to receive volumetric data from a remote source, e.g. live from a microscope in the basement of your collaborators institute.]]</center>
 
-See ClearVolume in action: [https://www.youtube.com/watch?v=IyUpkgTJJvc https://www.youtube.com/watch?v=IyUpkgTJJvc]
+See ClearVolume in action!
+{{#widget:YouTube|id=IyUpkgTJJvc}}
 
 == Installing ClearVolume in Fiji or ImageJ2 ==
 
