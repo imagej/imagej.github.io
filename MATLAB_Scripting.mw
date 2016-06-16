@@ -120,5 +120,9 @@ IJM.show('rval') % display the rval array in ImageJ
 IJM.show('mask') % display the mask array in ImageJ
 </source>
 
+= Video presentation =
+
+{{#widget:Vimeo|id=140929686|caption=ImageJ+MATLAB: Reunited}}
+
 [[Category:Scripting]]
 [[Category:MATLAB]]
