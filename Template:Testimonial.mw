@@ -8,7 +8,7 @@
 <div style="font-size: 10px"></div>
 </td>
 </tr>
-<tr><td style="font-size: 10px; text-align: center">[ [{{{source}}} source] ]</td>
+<tr><td style="font-size: 10px; text-align: center; white-space: nowrap">[ [{{{source}}} source] ]</td>
 </tr></table></div></includeonly><noinclude>This template generates a testimonial box with quote and attribution.
 == Usage ==
 <pre>
