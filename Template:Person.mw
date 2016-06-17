@@ -238,6 +238,15 @@
 Specify a person using either their ImageJ wiki username, or [[GitHub]] username.
 
 == Examples ==
+<pre>{{Person|Rasband}}</pre>
+{{Person|Rasband}}
+
 <pre>{{Person|Rueden}}</pre>
 {{Person|Rueden}}
+
+<pre>{{Person|Dietzc}}</pre>
+{{Person|Dietzc}}
+
+<pre>{{Person|marktsuchida}}</pre>
+{{Person|marktsuchida}}
 </noinclude>
