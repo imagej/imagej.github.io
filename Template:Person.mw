@@ -236,6 +236,8 @@
 }}</includeonly><noinclude>
 == Usage ==
 Specify a person using either their ImageJ wiki username, or [[GitHub]] username.
+
+== Examples ==
 <pre>{{Person|Rueden}}</pre>
 {{Person|Rueden}}
 </noinclude>
