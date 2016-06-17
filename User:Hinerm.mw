@@ -10,4 +10,6 @@
 | openhub = hinerm
 | osrc = hinerm
 | linkedin = pub/mark-hiner/63/984/8b2
-}}[http://loci.wisc.edu/people/mark-hiner Mark Hiner] is a member of the core [[ImageJ2]] development team at [[LOCI]]. Mark's main research project is [[SCIFIO]], a robust and extensible library for reading and writing scientific image file formats, and accessible foundation for image format processing.
+}}[http://loci.wisc.edu/people/mark-hiner Mark Hiner] maintains the [[ImageJ-MATLAB]] project for [[ImageJ]]/[[MATLAB]] interoperability.
+
+Mark was a member of the core [[ImageJ2]] development team at [[LOCI]] from 2011-2016, earning the title of Champion of ImageJ for his tireless enthusiasm and dedication to the community. He is co-founder of the [[SCIFIO]] project, a robust and extensible library for reading and writing scientific image file formats, and accessible foundation for image format processing.
