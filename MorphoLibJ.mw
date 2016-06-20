@@ -355,7 +355,9 @@ The plugin calculating these measurements is found under {{bc | Plugins | Morpho
 
 ==== Intensity measurements ====
 
-Other measurements are provided for pairs of grayscale and label 2D or 3D images ({{bc | Plugins | MorphoLibJ | Analyze | Measure 3D}}). The plugin calculates the '''mean''', the '''standard deviation''', the '''maximum''' and the '''minimum intensity''' value of each labeled region in the grayscale image. The results are displayed as well in a ResultsTable.
+Other measurements are provided for pairs of grayscale and label 2D or 3D images ({{bc | Plugins | MorphoLibJ | Analyze | Intensity Measurements 2D/3D}}). The label image can correspond to a segmented particle, or to a more generic region of interest. 
+
+The plugin calculates the '''mean''', '''standard deviation''', '''maximum''', '''minimum''', '''median''', '''mode''', '''skewness''' and '''kurtosis''' of the intensity value distribution of each labeled region in the grayscale image. The results are displayed as well in an ImageJ ''ResultsTable''.
 
 === Spatial organization ===
 The region adjacency graph plugin gives access to the neighborhood relationship between adjacent regions. This can be particularly informative for exploring collections of cells within cellular tissues (Florindo ''et al.'', 2016<ref name="Florindo2016">{{cite conference
