@@ -10,7 +10,7 @@ It is a good idea to be already familiar with the automated segmentation in Trac
 
 == The test image: Development of a ''C.elegans'' embryo ==
 
-Download the target image here: [http://fiji.sc/tinevez/TrackMate/Celegans-5pc_17timepoints.zip Celegans-5pc_17timepoints.zip (34 MB)]. It is a rather large file, so it is zipped. Unzip it somewhere; you should end up having a single tiff file, ''Celegans-5pc_17timepoints.tif'' of about 100 MB.
+Download the target image here: [http://samples.fiji.sc/Celegans-5pc-17timepoints.tif Celegans-5pc-17timepoints.tif (94 MB)].
 
 Open it in Fiji. You will get a stack, made of 41 Z-slices over 17 time-points, each image being 240 x 295. As you can see in {{bc | Image | Properties}} ({{key|Ctrl}}+{{key|Shift}}+{{key|P}}), it has a spatial and temporal calibration. 
 
@@ -21,7 +21,6 @@ The context if the following: We used a ''C.elegans'' strain named [http://www.w
 We want to reconstruct the cell lineage from this movie. Ideally, we will end up in having four tracks: two for the the two cells present on the first frame, and two for the polar bodies. The cell tracks will be branching, following cell division.
 
 This tutorial uses the following strategy: we will use an inadequate set of segmentation parameters to simulate defects in segmentation. Then we will use a tracking algorithm that does not take into account the possibility for a cell to divide, and will not use the spot feature to make linking robust, thus generating linking defects. Finally, we will learn how to correct these defects manually.
-
 
 == Doing a fast but very bad segmentation ==
 
