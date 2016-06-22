@@ -10,7 +10,7 @@ Authors: Lonneke Scheffer & Wout van Helvoirt
 
 Version: 1.0
 
-This plug-in for ImageJ is able to process single photon event data, by locating the center point of each photon and create a combined greyscale image with all found photons per pixel mapped to the correct pixel value.
+This plugin for ImageJ is able to process single photon event data, by locating the center point of each photon and create a combined greyscale image with all found photons per pixel mapped to the correct pixel value.
 
 The project can be found on GitHub via https://github.com/penuts7644/PhotonImaging.
 
@@ -19,7 +19,7 @@ The project can be found on GitHub via https://github.com/penuts7644/PhotonImagi
 
 '''Getting set up'''
 
-This plug-in requires at least Java 8 to function.
+This plugin requires at least Java 8 to function.
 Make sure that Fiji is installed on your Windows/Mac/Linux device and that Fiji uses Java 8.
 The source has been written in IntelliJ IDEA 2016 and the project uses Maven for package management and building.
 
@@ -28,9 +28,9 @@ The source has been written in IntelliJ IDEA 2016 and the project uses Maven for
 
 '''How to install'''
 
-There are two ways of installing the plug-in. For developers, who cloned this project and build a jar file via maven, you can install the plug-in in Fiji via 'Plugins>Install PlugIn...'. Users can enable the update site 'http://sites.imagej.net/PhotonImaging/' via the 'Update...>Manage update sites'. This will prompt you to download the plug-in the next time Fiji searches for updates.
+There are two ways of installing the plugin. For developers, who cloned this project and build a jar file via maven, you can install the plugin in Fiji via 'Plugins>Install PlugIn...'. Users can enable the update site 'PhotonImaging' via the 'Update...>Manage update sites'. This will prompt you to download the plugin the next time Fiji searches for updates.
 
-After you installed the plug-in, restart Fiji. When correctly installed, you'll now have 'Plugins>Photon Image Processor' available. If you have enabled the update site, you will automatically receive updates for the plug-in when their released.
+After you installed the plugin, restart Fiji. When correctly installed, you'll now have 'Plugins>Photon Image Processor' available. If you have enabled the update site, you will automatically receive updates for the plugin when their released.
 
 ----
 
