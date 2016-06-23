@@ -18,7 +18,7 @@ The Console feature still has some rough edges ([https://github.com/scijava/scij
 
 === Better ImageJ2 data structure syncing ===
 
-The "Enable ImageJ2 data structures" option in {{bc | Edit | Options | ImageJ2}} has been removed, and is now off by default ([https://github.com/imagej/imagej-legacy/commit/231b76517f45993b5dfc4b1ddcaf8a14ff04491d imagej-legacy/231b7651]). We have not had time to complete this feature, and it currently causes substantial performance issues enabled, so we want to be absolutely certain that no one enables it naively or by accident. It is still possible for interested developers to toggle the feature on by setting the <code>imagej.legacy.sync</code> environment variable.
+The "Enable ImageJ2 data structures" option in {{bc | Edit | Options | ImageJ2}} has been removed, and is now off by default ([https://github.com/imagej/imagej-legacy/commit/231b76517f45993b5dfc4b1ddcaf8a14ff04491d imagej-legacy/231b7651]). We have not had time to complete this feature, and it currently causes substantial performance issues when enabled, so we want to be absolutely certain that no one enables it naively or by accident. It is still possible for interested developers to toggle the feature on by setting the <code>imagej.legacy.sync</code> environment variable.
 
 Regardless, that feature is also less important now that we do on-demand syncing when encountering an ImageJ2 command or script parameter, such as a <code>net.imagej.Dataset</code>. This release also fixes a bug surrounding that on-demand syncing, which caused it to be triggered unnecessarily ([https://github.com/imagej/imagej-common/commit/92e59826bde0642f217e07b38c161087b15538d0 imagej-common/92e59826]).
 
