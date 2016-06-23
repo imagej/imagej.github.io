@@ -39,7 +39,9 @@ See the [http://imagej.net/NoiseGenerator Noise Generator wiki page] to find out
 
 === Sample Entropy 2D (SampEn2D) ===
 
-[http://imagej.net/SampEn2D wiki page]
+In this PlugIn we offer a tool to calculate the two-dimensional sample entropy (SampEn2D) on a digital image. 
+
+See the [http://imagej.net/SampEn2D SampEn2D wiki page] to find out more information about this PlugIn.
 
 == Source code ==
 The ImageJ source codes are available on GitHub repository: {{GitHub | org = CSIM-Toolkits | repo = ImageJ | label = GitHub-ImageJ source codes}}. If you want contribute with our applications, please enter in contact! It would be great to share our method implementations with you.
