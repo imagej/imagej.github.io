@@ -161,6 +161,11 @@ ImageJ has benefitted from many hackathons over the years:
 |[https://www.knime.org/contact KNIME Konstanz Regional Office]<br>Konstanz, Germany
 |{{Person|Dietzc}}, {{Person|Rueden}}, {{Person|Hinerm}}, {{Person|hornm}}, {{Person|Pietzsch}}, {{Person|Jug}}, {{Person|royerloic}}, {{Person|skalarproduktraum}}, {{Person|Haesleinhuepf}}, {{Person|Stelfrich}}, {{Person|kmader}}, {{Person|Kharrington}}, {{Person|Eglinger}}, {{Person|drtjre}}, {{Person|tibuch}}, {{Person|Squareys}}, {{Person|seebacherd}}, Nico Hoffmann, Patrick Winter, Alexander Fillbrunn, Timo Sachsenberg, Julianus Pfeuffer, Temesgen H. Dadi
 |[[KNIME]] Image Processing
+|- valign="top"
+| style="white-space: nowrap" | [[2016-06-23 - ImgLib2 hackathon|2016 Jun 19 -<br>2016 Jun 28]]
+|[http://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
+|{{Person|Saalfeld}}, {{Person|Pietzsch}}, {{Person|Rueden}}, {{Person|Dietzc}}, {{Person|Kharrington}}
+|Metadata rich images
 |-
 |colspan="4" style="border-bottom: 1px solid gray"|
 |}
