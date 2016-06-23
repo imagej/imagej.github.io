@@ -1,0 +1,36 @@
+{{Infobox
+| software               = Fiji
+| name                   = Sprout Morphology
+| author                 = {{Person|Eglinger}}
+| maintainer             = {{Person|Eglinger}}
+| source                 = {{GitHub|org=angiogenesis|repo=Sprout_Analysis}}
+| released               = 
+| latest version         = 
+| status                 = stable
+| category               = [[:Category:Analysis|Analysis]]
+}}
+The '''Sprout Morphology''' plugin measures sprout ''number'', ''length'', ''width'' and ''cell density'' of endothelial cell (EC) sprouts grown in a bead sprouting assay. It optionally includes measuring the coverage of these sprouts with pericytes included in the assay, as well as the endothelial cell/pericyte ratio.
+
+== Installation ==
+
+To install the plugin, activate the '''Angiogenesis''' [[How_to_follow_a_3rd_party_update_site|update site]] and restart Fiji.
+
+== Usage ==
+
+Open a maximum intensity projection of the multi-channel image to be analyzed, the start the plugin via {{bc|Analyze|Sprout Morphology}}. The process consists of up to six dialogs:
+
+=== General configuration ===
+
+=== Bead detection ===
+
+=== Sprout detection ===
+
+=== Nucleus segmentation ===
+
+=== Endothelial cell/Pericyte classification ===
+
+=== Pericyte coverage ===
+
+
+
+== Citation ==
