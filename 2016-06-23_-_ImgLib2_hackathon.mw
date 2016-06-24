@@ -40,15 +40,15 @@ BarData=
   barset:Hackers
 
 PlotData=
-  width:15 
+  width:15
   fontsize:M
   textcolor:white
   align:left 
   anchor:from 
   shift:(4,-4) 
   color:black
-
   barSet:Hackers
+
   color:c01 from:19 till:28 text:"Stephan Saalfeld (Janelia)"
   color:c02 from:20 till:28 text:"Tobias Pietzsch (MPI-CBG)"
   color:c03 from:20 till:27 text:"Christian Dietz (UniKN)"
