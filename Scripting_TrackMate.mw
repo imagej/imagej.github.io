@@ -84,7 +84,7 @@ settings.detectorSettings = {
 }  
    
 # Configure spot filters - Classical filter on quality
-filter1 = FeatureFilter('QUALITY', 1, True)
+filter1 = FeatureFilter('QUALITY', 30, True)
 settings.addSpotFilter(filter1)
     
 # Configure tracker - We want to allow merges and fusions
