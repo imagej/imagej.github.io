@@ -1,0 +1,10 @@
+{{Infobox
+| software               = Fiji
+| name                   = ParticleSizer
+| author                 = {{Person|Twagner}}
+| maintainer             = {{Person|Twagner}}
+| filename               = ParticleSizer_.jar [https://github.com/thorstenwagner/ij-particlesizer/releases/latest [1]]
+| source                 = Github [https://github.com/thorstenwagner/ij-particlesizer [2]]
+| latest version         = v1.0.0(27. Jun 2016)
+| status                 = active 
+}}
