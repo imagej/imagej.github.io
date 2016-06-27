@@ -42,12 +42,14 @@ You can now start the ParticleSizer via ''Plugins -> NanoDefine -> ParticleSizer
 * Minimal solidity: Defined as the ratio of the particle area and the area of the convex hull of the particle. It lies between 0 and 1. The solidity increases with larger values. Particles smaller than this threshold are removed.
 
 '''Ellipse shape constraints:'''
-* Minimal long axis length: The length in pixels of the major direction of the fitted ellipse. Ellipses
-smaller than this threshold are removed.
-* Minimal short axis length: The length in pixels of the minor direction of the fitted ellipse. Ellipses
-smaller than this threshold are removed.
-* Maximal aspect ratio: Ratio of the length of major and minor axis. Ellipses with an aspect ratio larger
-than this value are removed.
+* Minimal long axis length: The length in pixels of the major direction of the fitted ellipse. Ellipses smaller than this threshold are removed.
+* Minimal short axis length: The length in pixels of the minor direction of the fitted ellipse. Ellipses smaller than this threshold are removed.
+* Maximal aspect ratio: Ratio of the length of major and minor axis. Ellipses with an aspect ratio larger than this value are removed.
+
+'''Misc:'''
+* Smoothing factor: It sometimes occurs that the estimated standard deviation of the noise is lower than the true value. The smoothing factor is a multiplicative factor for the estimated standard deviation.
+* Show binary result: If selected the ParticleSizer shows the binary result.
+* Ask me to select a region: If selected, the software allows you to select a specific region to analyse.
 
 = Examples =
 == Gold 8 nm, Settings: Default ==
