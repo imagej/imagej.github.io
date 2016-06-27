@@ -24,3 +24,8 @@ stripped-down plot will be shown:
 ## Start R and select the packages downloaded in 5.2 and 5.3 via "Start Packages -> Install packages from local zip files"
 
 == Examples ==
+
+== How to cite ==
+
+You can use Zenodo to cite the software:
+https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-particlesizer
