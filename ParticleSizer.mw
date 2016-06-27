@@ -10,8 +10,17 @@
 }}
 
 == Purpose ==
-The ParticleSizer was developed to automatically measures the distributions of the characteristic size and shape properties of a nanomaterial. In the scope of implementing the European Commission definition of a nanomaterial, the minimal external dimension of the primary particles of a particulate material is assessed as the minimal feret diameter from electron microscopy images. Other size and shape parameters are measured simultaneously.
+The ParticleSizer script was developed to automatically measures the distributions of the characteristic size and shape properties of a nanomaterial. In the scope of implementing the European Commission definition of a nanomaterial, the minimal external dimension of the primary particles of a particulate material is assessed as the minimal feret diameter from electron microscopy images. Other size and shape parameters are measured simultaneously.
 
 == Installation ==
+The ParticleSizer script combines a number of different plugins. The most easy way is activate Biomedgroup & ParticleSizer update site. 
+It is recommended to install R to get better plots. When this point is skipped, a
+stripped-down plot will be shown.
+1. Download the latest R: https://cran.uni-muenster.de/
+1.1 Download the Rserver package:
+https://rforge.net/bin/windows/contrib/3.0/Rserve_1.8-0.zip
+1.2 Download the MASS package:
+https://cran.r-project.org/bin/windows/contrib/3.2/MASS_7.3-45.zip
+1.3 Start R and select the packages downloaded in 5.2 and 5.3 via "Start Packages -> Install packages from local zip files"
 
 == Examples ==
