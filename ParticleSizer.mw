@@ -23,11 +23,17 @@ stripped-down plot will be shown:
 ## Download the MASS package: https://cran.r-project.org/bin/windows/contrib/3.2/MASS_7.3-45.zip
 ## Start R and select the packages downloaded in 5.2 and 5.3 via "Start Packages -> Install packages from local zip files"
 
+= Settings =
+
 = Examples =
 == Gold 8 nm, Settings: Default ==
 [[File:Gold nooverlay.png|300px]]
 [[File:Gold overlay.png|300px]]
 [[File:Hist gold normal.png|300px]]
+== Gold 8 nm, Settings: +Ellipse fitting mode ==
+[[File:Gold nooverlay.png|300px]]
+[[File:Gold overlay ellipsefitting.png|300px]]
+[[File:Gold overlay ellipsefitting size.png|300px]]
 
 
 = How to cite =
