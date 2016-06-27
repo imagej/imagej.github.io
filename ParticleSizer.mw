@@ -68,8 +68,9 @@ You can now start the ParticleSizer via ''Plugins -> NanoDefine -> ParticleSizer
 
 
 = How to cite =
+A publication is in preparation. 
 
 You can use Zenodo to cite the lastest release of the ParticleSizer:
 https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-particlesizer
 
-As example: Thorsten Wagner. (2016). ij-particlesizer: ParticleSizer 1.0.0. Zenodo. 10.5281/zenodo.56427
+As example: Thorsten Wagner. (2016). ij-particlesizer: ParticleSizer 1.0.1. Zenodo. 10.5281/zenodo.56457
