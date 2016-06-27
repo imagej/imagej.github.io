@@ -23,7 +23,7 @@ stripped-down plot will be shown:
 ## Download the MASS package: https://cran.r-project.org/bin/windows/contrib/3.2/MASS_7.3-45.zip
 ## Start R and select the packages downloaded in 5.2 and 5.3 via "Start Packages -> Install packages from local zip files"
 
-You can now start the ParticleSizer via Plugins -> NanoDefine -> ParticleSizer
+You can now start the ParticleSizer via ''Plugins -> NanoDefine -> ParticleSizer''
 
 = Settings =
 '''Segmentation:'''[[File:Psizer gui.png|thumb]]
@@ -34,6 +34,11 @@ You can now start the ParticleSizer via Plugins -> NanoDefine -> ParticleSizer
 * Irregular watershed convexity threshold: The threshold determines, when splitted agglomerated is counted as “primary particle”. If the convexity of particle is greater than this threshold, the splitting is stopped for this object. If the convexity is smaller than this value, then the ParticleSizer tries to split the particle again
 * Use single particle mode: If selected, the single particle mode is used.
 * Use ellipse fitting mode: If selected, the ellipse fitting mode is used.
+'''Shape constraints:'''
+* Minimal area: Minimum area in pixels. Particles smaller than this threshold are removed.
+* Minimal feret min: Minimal feret diameter in pixel. Particles smaller than this threshold are removed.
+* Minimal convexity: The convexity is defined as the ratio of the perimeter of the convex hull of the particle and the perimeter of the particle. It lies between 0 and 1. The convexity increases with larger values. Particles smaller than this threshold are removed.
+* Minimal solidity: Defined as the ratio of the particle area and the area of the convex hull of the particle. It lies between 0 and 1. The solidity increases with larger values. Particles smaller than this threshold are removed.
 
 = Examples =
 == Gold 8 nm, Settings: Default ==
