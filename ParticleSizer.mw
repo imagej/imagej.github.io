@@ -10,6 +10,7 @@
 }}
 
 == Purpose ==
+The ParticleSizer was developed to automatically measures the distributions of the characteristic size and shape properties of a nanomaterial. In the scope of implementing the European Commission definition of a nanomaterial, the minimal external dimension of the primary particles of a particulate material is assessed as the minimal feret diameter from electron microscopy images. Other size and shape parameters are measured simultaneously.
 
 == Installation ==
 
