@@ -19,10 +19,8 @@ It is recommended to install R to get better plots. When this point is skipped, 
 stripped-down plot will be shown:
 
 # Download the latest R: https://cran.uni-muenster.de/
-## Download the Rserver package:
-https://rforge.net/bin/windows/contrib/3.0/Rserve_1.8-0.zip
-## Download the MASS package:
-https://cran.r-project.org/bin/windows/contrib/3.2/MASS_7.3-45.zip
+## Download the Rserver package: https://rforge.net/bin/windows/contrib/3.0/Rserve_1.8-0.zip
+## Download the MASS package: https://cran.r-project.org/bin/windows/contrib/3.2/MASS_7.3-45.zip
 ## Start R and select the packages downloaded in 5.2 and 5.3 via "Start Packages -> Install packages from local zip files"
 
 == Examples ==
