@@ -27,5 +27,7 @@ stripped-down plot will be shown:
 
 == How to cite ==
 
-You can use Zenodo to cite the software:
+You can use Zenodo to cite the lastest release of the ParticleSizer:
 https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-particlesizer
+
+As example: Thorsten Wagner. (2016). ij-particlesizer: ParticleSizer 1.0.0. Zenodo. 10.5281/zenodo.56427
