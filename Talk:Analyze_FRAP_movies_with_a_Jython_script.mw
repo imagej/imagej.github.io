@@ -51,3 +51,23 @@ Sorry, I can't reproduce (on Win7, Java8, ImageJ 2.0.0-rc-49/1.51d)
 What are the steps you were taking? What update sites do you have activated?
 
 --[[User:Eglinger|eglinger]] ([[User talk:Eglinger|talk]]) 06:03, 28 June 2016 (CDT)
+
+
+----
+Oh, wait:
+<pre>
+Caused by: java.lang.IllegalArgumentException: Argument out of range: 11
+	at ij.ImageStack.getProcessor(ImageStack.java:269)
+</pre>
+
+Let me guess: you were running the script on a 10-frame stack and didn't adjust the line:
+
+ # Specify up to what frame to fit and plot.
+ n_slices = 30
+
+
+Right?
+
+In the future, let's post discussions like this one on the [http://forum.imagej.net/ forum], where the chance is higher that someone else than the last author of this page will actually respond.
+
+--[[User:Eglinger|eglinger]] ([[User talk:Eglinger|talk]]) 06:11, 28 June 2016 (CDT)
