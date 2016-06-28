@@ -96,6 +96,7 @@ On top of this, we are actively developing a (tentatively named) <code>RichImage
 === Image enrichers ===
 For the various use cases above (e.g., registration of tiles in a larger space), we will have a pipeline which calls <code>ImageInspector</code> plugins that examine the <code> RichImages</code> and decide whether they can be improved with available <code>ImageEnricher</code> plugins. (Again: these are working names only.) For instance, <code>Images</code> collection might consist of a bag of 2D tiles with associated affine transforms; a <code>MosaicEnricher</code> could then apply those transforms virtually to offer the larger 2D mosaic image as a <code>RandomAccessible</code> which returns lists of tile values at each sample. A <code>FusionEnricher</code> could operate on any <code>RandomAccessible</code> which returns a list, blending the values of that list using a given <code>Converter</code>. (In practice, the enrichers will very likely be more general than these examples, but hopefully they serve here to illustrate some of the possibilities.)
 
+=== Source code ===
 Current work on these data structures can be seen at:
 * https://github.com/imagej/imagej-common/compare/rich
 
