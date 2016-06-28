@@ -22,7 +22,7 @@ As always, there were lots of other exciting collaborations going on, too!
 <timeline>
 Preset = TimeHorizontal_AutoPlaceBars_UnitYear
 
-ImageSize = width:450
+ImageSize = width:550
 
 Colors =
   id:c01 value:blue
