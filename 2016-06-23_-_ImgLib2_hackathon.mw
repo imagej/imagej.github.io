@@ -8,7 +8,7 @@ The following chart illustrates when everyone was present:
 <timeline>
 Preset = TimeHorizontal_AutoPlaceBars_UnitYear
 
-ImageSize = width:700
+ImageSize = width:550
 
 Colors =
   id:c01 value:blue
