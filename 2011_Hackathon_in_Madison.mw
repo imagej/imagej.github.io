@@ -42,8 +42,8 @@ AlignBars  = justify
 DateFormat = dd/mm/yyyy
 Period = from:27/01/2011 till:13/02/2011
 
-ScaleMajor = increment:1 start:28/01/2011 unit:day grid:grid1 gridcolor:white
-ScaleMinor = increment:1 start:28/01/2011 unit:day grid:grid2 gridcolor:white
+ScaleMajor = increment:1 start:28/01/2011 unit:day grid:grid1 grid:white
+ScaleMinor = increment:1 start:28/01/2011 unit:day grid:grid2 grid:white
 #Legend = orientation:vertical left:35 top:130 
 PlotData =
    align:left anchor:from fontsize:M width:15 shift:(4,-6) textcolor:black
