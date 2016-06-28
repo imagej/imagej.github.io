@@ -64,7 +64,7 @@ The Ops development plan and timeline is now [https://github.com/imagej/imagej-o
 # An [https://github.com/imagej/imagej-ops/milestones/0.20.0 intermediate release] before next spring: work to complete before coming out of incubation with 1.0.0, but less urgent than near-term items.
 # A [https://github.com/imagej/imagej-ops/milestones/1.0.0 stable 1.0.0 release] before the end of 2015: first release with a goal of future backwards compatibility according to [http://semver.org/ SemVer].
 
-Please direct questions about Ops to the [[Mailing Lists|ImageJ mailing list]].
+Please direct questions about Ops to the [http://forum.imagej.net/ ImageJ forum].
 
 Thanks to everyone involved for all the hard work, patience and enthusiasm!
 
