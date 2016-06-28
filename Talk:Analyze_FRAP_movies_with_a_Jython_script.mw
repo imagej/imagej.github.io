@@ -2,8 +2,7 @@ this seems to be broken on linux 64 bit java 1.8, ij 1.51c ?
 is the import wrong?
 Dan
 
-
-
+<pre>
 Started New_.py at Tue Jun 28 12:45:12 CEST 2016
 Traceback (most recent call last):
   File "New_.py", line 40, in <module>
@@ -43,3 +42,12 @@ Caused by: java.lang.IllegalArgumentException: Argument out of range: 11
 	at java.lang.reflect.Method.invoke(Method.java:497)
 	at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:186)
 	... 19 more
+</pre>
+
+
+----
+Sorry, I can't reproduce (on Win7, Java8, ImageJ 2.0.0-rc-49/1.51d)
+
+What are the steps you were taking? What update sites do you have activated?
+
+--[[User:Eglinger|eglinger]] ([[User talk:Eglinger|talk]]) 06:03, 28 June 2016 (CDT)
