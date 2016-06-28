@@ -139,8 +139,8 @@ Colors     =
 BackgroundColors = canvas:canvas
 
 Period     = from:1987 till:{{CURRENTYEAR}}
-ScaleMajor = unit:year increment:2 start:1987 gridcolor:grid1
-ScaleMinor = unit:year increment:1 start:1987 gridcolor:grid2
+ScaleMajor = unit:year increment:2 start:1987 grid:grid1
+ScaleMinor = unit:year increment:1 start:1987 grid:grid2
 AlignBars  = justify
 
 BarData=
