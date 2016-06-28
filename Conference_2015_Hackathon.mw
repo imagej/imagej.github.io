@@ -50,7 +50,7 @@ BackgroundColors = canvas:gridCanvas
 
 Period = from:1 till:16
 
-ScaleMajor = unit:year increment:1 start:1 gridcolor:white
+ScaleMajor = unit:year increment:1 start:1 grid:white
 
 LineData =
   at:1 color:gridLine layer:back width:0.5
