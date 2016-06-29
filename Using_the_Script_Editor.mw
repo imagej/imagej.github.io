@@ -3,7 +3,7 @@
 | software               = ImageJ
 | author                 = Johannes Schindelin, Sumit Dubey (Google Summer of Code 2009)
 | maintainer             = Johannes Schindelin
-| source                 = {{GitHub|org=imagej|repo=imagej-ui-swing|source=net/imagej/ui/swing/script/ScriptEditor.java}}
+| source                 = {{GitHub|org=scijava|repo=script-editor|source=org/scijava/ui/swing/script/ScriptEditor.java}}
 | released               = 11 Sep 2008
 | status                 = active
 }}The script editor is an invaluable help when writing scripts in any of ImageJ's supported [[Scripting comparisons|languages]].{{Scripting}}
