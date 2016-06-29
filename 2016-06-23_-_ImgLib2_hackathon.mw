@@ -85,11 +85,11 @@ The central use cases we used as litmus tests for our ideas:
 
 We spent quite some time considering how to create a unified data structure (<code>SpaceTree</code>? :-) which would keep multiple images grouped into some tree- or graph-like structure, with attached {{Javadoc | project=ImgLib2 | package=net/imglib2/realtransform | class=RealTransform | label=transforms}}, in a way which handled all of the above use cases and more.
 
-Ultimately, we concluded it was too difficult to design such a data structure in a vacuum, so we instead opted to start coding individual use cases using [[ImgLib2]]. We came up with a design which provides: A) a container for metadata-rich images, with individual metadata elements sensitive to {{Javadoc | project=ImgLib2 | package=net/imglib2/views | class=Views}} manipulations; and B) a scheme for "grooming" these metadata-rich images into increasingly useful data structures depending on the use case.
+Ultimately, we concluded it was too difficult to design such a data structure in a vacuum, so we instead opted to start coding individual use cases using [[ImgLib2]]. We came up with a design which provides: A) a container for metadata-rich images, with individual metadata elements sensitive to {{Javadoc | project=ImgLib2 | package=net/imglib2/view | class=Views}} manipulations; and B) a scheme for "grooming" these metadata-rich images into increasingly useful data structures depending on the use case.
 
 === Metadata-rich containers ===
 
-We invented <code>MetaViews</code>, a class analogous to {{Javadoc | project=ImgLib2 | package=net/imglib2/views | class=Views}} but for metadata elements. These elements are then aggregated into a <code>MetaSpace</code>, which provides mutators and accessors for working with the space. For example, you might attach a physical calibration to a spatial axis, or a custom variable-width timestamp to each point along the time axis.
+We invented <code>MetaViews</code>, a class analogous to {{Javadoc | project=ImgLib2 | package=net/imglib2/view | class=Views}} but for metadata elements. These elements are then aggregated into a <code>MetaSpace</code>, which provides mutators and accessors for working with the space. For example, you might attach a physical calibration to a spatial axis, or a custom variable-width timestamp to each point along the time axis.
 
 On top of this, we are actively developing a (tentatively named) <code>RichImage</code> structure, consisting of image pixels (e.g., a <code>RandomAccessible</code>) together with a <code>MetaSpace</code> which describes it. The [[SCIFIO]] library will be updated to produce <code>Images</code>, a collection of <code>RichImage</code> elements, which are populated with elements directly from the source data format.
 
