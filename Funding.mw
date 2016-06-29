@@ -14,7 +14,9 @@ In recent years, ImageJ2 development has been funded by several sources, includi
 
 == SCIFIO ==
 
-[[SCIFIO]] was funded by the [http://nsf.gov/ National Science Foundation], award number [http://www.nsf.gov/awardsearch/showAward?AWD_ID=1148362 1148362]. It is developed by {{Person|Rueden}} of UW-Madison [[LOCI]].
+[[SCIFIO]] was funded by the [http://nsf.gov/ National Science Foundation], award number [http://www.nsf.gov/awardsearch/showAward?AWD_ID=1148362 1148362]. It was initially developed by {{Person|Hinerm}} and {{Person|Rueden}} of UW-Madison [[LOCI]].
+
+SCIFIO's development is now funded indirectly by various institutions as part of their respective research and development goals. SCIFIO as a whole is organized and maintained as part of the ImageJ2 effort by {{Person|Rueden}} of UW-Madison [[LOCI]].
 
 == ImgLib2 ==
 
