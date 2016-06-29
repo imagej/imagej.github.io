@@ -18,7 +18,7 @@ In recent years, ImageJ2 development has been funded by several sources, includi
 
 == ImgLib2 ==
 
-The [[ImgLib2]] project was developed by {{Person|Saalfeld}}, {{Person|StephanP}} and {{Person|Pietzsch}} of the [http://mpi-cbg.de/research/research-groups/pavel-tomancak.html Tomancak lab] at [http://mpi-cbg.de/ MPI-CBG]. In recent years, [[ImgLib2]] is funded indirectly by the various involved software efforts, including the Tomancak lab as well as the [[ImageJ2]] project. The ImgLib2 project as a whole is organized and maintained by {{Person|Pietzsch}} of MPI-CBG, and {{Person|Rueden}} and {{Person|Hinerm}} of UW-Madison [[LOCI]].
+The [[ImgLib2]] project was developed by {{Person|Saalfeld}}, {{Person|StephanP}} and {{Person|Pietzsch}} of the [http://mpi-cbg.de/research/research-groups/pavel-tomancak.html Tomancak lab] at [http://mpi-cbg.de/ MPI-CBG]. In recent years, [[ImgLib2]] is funded indirectly by the various involved software efforts, including the Tomancak and Saalfeld labs as well as the [[ImageJ2]] project. The ImgLib2 project as a whole is organized and maintained by {{Person|Pietzsch}} of MPI-CBG, {{Person|Saalfeld}} of Janelia Research Campus, and {{Person|Rueden}} of UW-Madison [[LOCI]].
 
 == SciJava ==
 
