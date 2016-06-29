@@ -100,6 +100,9 @@ For the various use cases above (e.g., registration of tiles in a larger space),
 Current work on these data structures can be seen at:
 * https://github.com/imagej/imagej-common/compare/rich
 
+There is also an experimental repository for the hackathon at:
+* https://github.com/imagej/janelia-hackathon-2016
+
 [[Category:News]]
 [[Category:Hackathons]]
 [[Category:ImageJ2]]
