@@ -3,7 +3,7 @@
 | software               = ImageJ
 | author                 = {{Person|Schindelin}}, {{Person|Rueden}}
 | maintainer             = {{Person|Rueden}}
-| source                 = {{GitHub|org=scijava|repo=scijava-ui-swing|source=org/scijava/ui/swing/script}}
+| source                 = {{GitHub|org=scijava|repo=script-editor|source=org/scijava/ui/swing/script}}
 | released               = 8 Apr 2016
 | status                 = active
 }}{{TOC}}
