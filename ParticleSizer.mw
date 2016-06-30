@@ -51,6 +51,24 @@ You can now start the ParticleSizer via ''Plugins -> NanoDefine -> ParticleSizer
 * Show binary result: If selected the ParticleSizer shows the binary result.
 * Ask me to select a region: If selected, the software allows you to select a specific region to analyse.
 
+== How to find optimal settings ==
+
+We distinguish two particle types:
+* E: Ellipsoidal particles 
+* I: Irregular but convex particles 
+These particles could show some overlapping. We destinguish four different classes:
+* N: No overlapping 
+* T: Touching 
+* S: Slightly overlapping
+* H: High or complete overlapping
+
+Combining both information, we could give the following adivices (as a rule of thumb):
+
+* N+E or T+E -> Keep the default settings
+* N+I or T+I or S+I  -> Activate the irregular watershed
+* S+E -> Activate ellipse fitting
+* H -> Activate single particle mode
+
 = Examples =
 == Gold 8 nm, Settings: Default ==
 [[File:Gold nooverlay.png|300px]]
