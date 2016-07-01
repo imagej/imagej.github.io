@@ -479,7 +479,7 @@ While a pure web version of ImageJ would be desirable for a number of reasons, t
 
 We are developing ImageJ with a careful eye toward modularity, avoiding gratuitous dependencies&mdash;particularly on AWT, which is not available on most mobile devices. We hope this approach makes it easier to port ImageJ to additional platforms in the future.
 
-A shorter term pragmatic solution would be an ImageJ web client that connects to a remote server running ImageJ in headless mode, which does the heavy lifting. See also the [openmicroscopy.org/info/omero OMERO project].
+A shorter term pragmatic solution would be an ImageJ web client that connects to a remote server running ImageJ in headless mode, which does the heavy lifting. See also the [http://openmicroscopy.org/info/omero OMERO project].
 
 == Why is open software vital to science? ==
 
