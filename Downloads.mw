@@ -20,13 +20,11 @@ These downloads bundle ImageJ with a curated collection of plugins pre-installed
 
 = System requirements =
 
-ImageJ will run on any system that has a Java 6 (or later) runtime installed. This includes, but is not limited to:
+ImageJ will run on any system that has a Java 8 (or later) runtime installed. This includes, but is not limited to:
 
 # Windows XP, Vista, 7 or 8 with Java installed from [http://java.com/ java.com]
-# Mac OS X 10.5 "Leopard" with an Intel 64-bit processor with the Java 6 update
-# Mac OS X 10.6 "Snow Leopard" (Java 6 is preinstalled)
-# Mac OS X 10.7 "Lion" or later with Java installed from [http://java.com/ java.com]
-# Ubuntu Linux with Oracle Java 6 or OpenJDK 6
+# Mac OS X 10.8 "Mountain Lion" or later with Java installed from [http://java.com/ java.com]
+# Ubuntu Linux 12.04 LTS or later with OpenJDK 8 installed
 
 = Installation =
 {{AvoidProgramFiles}}
