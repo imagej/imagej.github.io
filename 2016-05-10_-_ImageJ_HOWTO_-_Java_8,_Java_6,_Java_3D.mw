@@ -74,12 +74,15 @@ __TOC__
 
 If you have downloaded Fiji or ImageJ2 quite some time ago (before 2016), you probably have the Java 6 version ([[Troubleshooting#Checking_the_Java_version|how do I find out?]]). So when you update, you will not receive the latest plugin releases anymore, as described above.
 
-To upgrade to the Java 8 version and receive the latest updates, you have two choices:
+* If you '''still need Java 6, do nothing.'''
+** You will keep receiving updates of the latest Java-6-compatible component versions.
+** But you will no longer receive updates for components which have migrated to Java 7 or 8.
+* If you '''want the latest updates''', [[FAQ#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F|update your ImageJ installation to use Java 8]] and then [[How to follow a 3rd party update site|enable the Java-8 update site]].
+** '''Make sure you switch your ImageJ over to Java 8 ''before'' enabling the Java-8 update site!'''
 
-# Download a new Fiji as described above; or
-# [[Frequently Asked Questions#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F|Switch your current installation over to Java 8]], and ''then'' enable the Java-8 update site.
+{{Warning | If you enable the Java-8 update site while still running Java 6, your installation will become non-functional!}}
 
-'''''If you enable the Java-8 update site while still running Java 6, your installation will become non-functional!'''''
+Alternately, you can simply download a new Fiji as described above.
 
 == About the Java-8 update site ==
 
