@@ -257,7 +257,7 @@ The '''estimation of surface area''' follows the same principle. The number of d
 }}</ref>).
 
 =====Euler number=====
-The measurement of Euler number depends on the choice of the connectivity. For planar images, typical choices are the 4-connectivity, corresponding to the orthogonal neighbors, and the 8-connectivity, that also consider the diagonal neighbors. In 3D, the 6-connectivity considers the neighbors in the three main directions within the image, whereas the 26 connectivity also consider the diagonals. Other connectivities have been proposed but are not implemented in MorphoLibJ (Ohser ''et al.'', 2009<ref name="Osher2009>{{ cite conference
+The measurement of Euler number depends on the choice of the connectivity. For planar images, typical choices are the 4-connectivity, corresponding to the orthogonal neighbors, and the 8-connectivity, that also considers the diagonal neighbors. In 3D, the 6-connectivity considers the neighbors in the three main directions within the image, whereas the 26 connectivity also considers the diagonals. Other connectivities have been proposed but are not implemented in MorphoLibJ (Ohser ''et al.'', 2009<ref name="Osher2009>{{ cite conference
 | title = 3D Images of Materials Structures: processing and analysis
 | author = Joachim Ohser and Katja Schladitz
 | publisher                = WILEY-VCH Verlag GmbH \& Co. KGaA, Weinheim
@@ -265,7 +265,8 @@ The measurement of Euler number depends on the choice of the connectivity. For p
 | isbn = 978-3-527-31203-0
 }}</ref>).
 
-In the current implementation in MorphoLibJ, the Euler number is not taken into account for intersection of particles with image borders. This may result in non-integer result if the particle(s) of interest touches image border.
+In the current implementation in MorphoLibJ, the Euler number is not taken into account for intersection of particles with image borders. This may result in non-integer result if the particle(s) of interest touches the image border.
+
 =====Shape factors=====
 Intrinsic volumes characterize the size of the particles, from different points of view. Several indices are sometimes used to describe the shape of the particles, independently of their size.
 
