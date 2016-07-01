@@ -1,3 +1,5 @@
+{{Outdated}}
+
 Unfortunately, there was a bug in the [[Fiji_Updater|ImageJ updater]] that affected the update of the updater itself. The easiest way to get back a functional updater is to import [https://github.com/fiji/fiji/raw/master/plugins/Scripts/Plugins/Utilities/Fix_Updater.js this URL] via {{bc | File | Import | URL...}}.
 
 If that does not work, please delete the files ''ij-ui-swing-updater-2.0.0-SNAPSHOT.jar'', ''ij-updater-core-2.0.0-SNAPSHOT.jar'' and ''ij-core-2.0.0-SNAPSHOT.jar'' from the ''Fiji.app/jars/'' directory (MacOSX users, {{key|Ctrl}}+{{key|click}} on the Fiji icon and select ''Open Package Contents'' and open the ''jars/'' directory you see there). After that, the Updater should magically repair itself.
