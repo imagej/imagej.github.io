@@ -6,9 +6,9 @@
 | author         = {{Person|Tiago}}
 | maintainer     = {{Person|Tiago}}
 | source         = {{GitHub|org=tferr|repo=ASA}}
-| filename       = [http://jenkins.imagej.net/job/Sholl-Analysis/108/artifact/target/Sholl_Analysis-3.6.2.jar Sholl_Analysis.jar]
+| filename       = [http://jenkins.imagej.net/job/Sholl-Analysis/118/artifact/target/Sholl_Analysis-3.6.4.jar Sholl_Analysis.jar]
 | released       = December 2012
-| latest version = '''3.6.2 May 2016''' ({{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Release Notes}})
+| latest version = '''3.6.4 July 2016''' ({{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Release Notes}})
 | status         = Active. See [[#Release Notes and Pre-releases|Pre-releases]] and {{GitHub|org=tferr|repo=ASA|path=Notes.md#development-builds|label=Development Notes}}
 | category       = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]], [[:Category:Neuroanatomy|Neuroanatomy]]
 }}
