@@ -79,7 +79,7 @@ To upgrade to the Java 8 version and receive the latest updates, you have two ch
 # Download a new Fiji as described above; or
 # [[Frequently Asked Questions#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F|Switch your current installation over to Java 8]], and ''then'' enable the Java-8 update site.
 
-'''''If you enable the Java-8 update site while still running Java 6, your installation will become non-functional''''''!
+'''''If you enable the Java-8 update site while still running Java 6, your installation will become non-functional!'''''
 
 == About the Java-8 update site ==
 
