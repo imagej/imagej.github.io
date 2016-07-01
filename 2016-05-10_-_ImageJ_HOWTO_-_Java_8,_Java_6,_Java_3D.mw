@@ -76,7 +76,7 @@ If you have downloaded Fiji or ImageJ2 quite some time ago (before 2016), you pr
 
 * If you '''still need Java 6, do nothing.'''
 ** For now, you will keep receiving updates of [[ImageJ 1.x]] and [[Bio-Formats]].
-** But you will no longer receive updates for ImageJ2 or Fiji components—they have all migrated to Java 7 or 8.
+** But you will no longer receive updates for most ImageJ2 or Fiji components—they have all migrated to Java 7 or 8.
 * If you '''want the latest updates''', [[FAQ#How_do_I_launch_ImageJ_with_a_different_version_of_Java.3F|update your ImageJ installation to use Java 8]] and then [[How to follow a 3rd party update site|enable the Java-8 update site]].
 ** '''Make sure you switch your ImageJ over to Java 8 ''before'' enabling the Java-8 update site!'''
 
