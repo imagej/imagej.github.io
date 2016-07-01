@@ -13,14 +13,12 @@
 
 These downloads bundle ImageJ with a curated collection of plugins pre-installed.
 
-{|
-|-
-|[[File:Fiji-icon.png | 96px | link=Fiji/Downloads]]
-|-
-|style="text-align:center; font-size:1.5em"|[[Fiji/Downloads|Fiji]]
-|}
-<br />
-{{Clear}}= System requirements =
+<div style="float: left; padding: 1em; text-align:center; font-size:1.5em">[[File:Fiji-icon.png|x96px|link=Fiji/Downloads]]<br>[[Fiji/Downloads|Fiji]]</div>
+<div style="float: left; padding: 1em; text-align:center; font-size:1.5em">[[File:Bonej-icon.png|x96px|link=BoneJ]]<br>[[BoneJ]]</div>
+<div style="float: left; padding: 1em; text-align:center; font-size:1.5em">[[File:Bio7-icon.png|x96px|link=Bio7]]<br>[[Bio7]]</div>
+{{Clear}}
+
+= System requirements =
 
 ImageJ will run on any system that has a Java 6 (or later) runtime installed. This includes, but is not limited to:
 
