@@ -40,7 +40,7 @@ We suggest using consistent post-processing for all images. Regarding the blue c
 === Validated Dataset ===
 The original ONL and INL image datasets used for validation purposes are available to download. These images have been accurately segmented and quantitated, and their values were validated by observers. {{Notice |''' We strongly recommend to download and revise these images beforehand, to have a rough estimate on acquisition and post-processing parameters.'''}}
 
-=== Datasets Links ===
+=== Important Links ===
 :*[https://www.dropbox.com/s/2z5gwgrx1vi0nym/ImageJ%20v1.49.zip?dl=0 ImageJ 1.49v]
 :*[https://www.dropbox.com/sh/yq7d6pac61niav9/AABw9L29qWfDAYH5K2SAaVUma?dl=0 ONL Dataset] 
 :*[https://www.dropbox.com/sh/lu6qojkte1z41pf/AABJHv2uptUaWfx-mGUmn1nJa?dl=0 INL Dataset]
