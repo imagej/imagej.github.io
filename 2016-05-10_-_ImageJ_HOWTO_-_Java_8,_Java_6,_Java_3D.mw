@@ -72,7 +72,7 @@ __TOC__
 
 == Upgrading an old installation ==
 
-If you have downloaded Fiji or ImageJ2 quite some time ago (before 2016), you probably have the Java 6 version. So when you update, you will not receive the latest plugin releases anymore, as described above.
+If you have downloaded Fiji or ImageJ2 quite some time ago (before 2016), you probably have the Java 6 version ([[Troubleshooting#Checking_the_Java_version|how do I find out?]]). So when you update, you will not receive the latest plugin releases anymore, as described above.
 
 To upgrade to the Java 8 version and receive the latest updates, you have two choices:
 
