@@ -48,7 +48,7 @@ If you are not using Fiji, download ''Sholl_Analysis.jar'' from the direct link 
 Without access to the [[Update_Fiji|built-in updater]], you are strongly advised to upgrade ImageJ to its latest version ({{bc|color=white|Help|Update ImageJ...}}). To manually update the Sholl Analysis plugin you will have to monitor this page (or the {{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Release Notes}} page) for finding out if new updates have been released.
 
 == Usage ==
-The plugin requires a binary image or a segmented grayscale image (2D or 3D) containing a single neuron.
+The plugin requires a [[#faq:threshold|binary image or a segmented]] [[#faq:image-types|grayscale image]] (2D or 3D) containing a single neuron.
 
 # Segment the neuronal arbor using <span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span> (shortcut: <span style="display:inline-block;">{{key press|Shift|T}} </span>).
 # Define the center of analysis using a valid [[#Startup_ROI|startup ROI]].
@@ -111,8 +111,8 @@ Input values take into account the scale information of the image that can be se
 * <span id="Normalizer"></span>'''Normalizer''' The property of the sampling shell to be used in the normalization of ''Linear-norm'', ''Semi-log'', and ''Log-log'' profiles. It is [[#MethodsTable|described below]].
 
 ==== Output Options ====
-* '''Create intersections mask''' <sup>&nbsp;</sup>If checked, a 16–bit maximum intensity projection of the analyzed image is generated in which the measured arbor is painted according to its Sholl profile. The type of data (''Raw'', i.e., sampled or ''Fitted'') is displayed in the image subtitle.<br>NB: The default Lookup Table (LUT) used by the mask can be changed using {{bc|color=white|Image|Lookup Tables|}}. The background color [gray level: 0 (black) to 255 (white)] can be set in {{bc|color=white|Analysis|Sholl|Metrics &amp; Options...}} or using the ''Options...'' command in the ''More»'' drop-down menu. It can also be changed at any later point using {{bc|color=white|Image|Color|Edit Lut...}} WYSIWYG versions (RGB images) of these masks can be otained using by pressing {{key press|Shift|F}} ({{bc|color=white|Image|Overlay|Flatten}}) or by running {{bc|color=white|Analyze|Tools|Calibration Bar...}}
-* '''Save results in image directory ''(only available when image is saved locally)''''' <sup>&nbsp;</sup> If checked, all the results (with the exception of the ''[[#Metrics|Sholl Table]]'') are saved to the image directory. These include: 1) Sholl plots (saved as PNG images), 2) A table containing detailed data (saved according to the extension and format specified in {{bc|color=white|Analysis|Sholl|Metrics &amp; Options...}} (or ''Options...'' command in the ''More»'' drop-down menu), and 3) The Sholl mask (saved as a 16-bit TIFF).<p>Files are named after the image filename and analysis method. When this option is not available, profiles can always be retrieved using the ''List'', ''Save...'' and ''Copy...'' commands of plot windows.</p>
+* '''Create intersections mask''' <sup>&nbsp;</sup>If checked, a 16/32–bit maximum intensity projection of the analyzed image is generated in which the measured arbor is painted according to its Sholl profile. The type of data (''Raw'', i.e., sampled or ''Fitted'') is displayed in the image subtitle and can be specified in  {{bc|color=white|Analysis|Sholl|Metrics &amp; Options...}} or using the ''Options...'' command in the ''More»'' drop-down menu.<br>NB: The default Lookup Table (LUT) used by the mask can be changed using {{bc|color=white|Image|Lookup Tables|}}. The background color [gray level: 0 (black) to 255 (white)] can also be set in {{bc|color=white|Metrics &amp; Options...}}, or at any later point using {{bc|color=white|Image|Color|Edit Lut...}} WYSIWYG versions (RGB images) of these masks can be otained using by pressing {{key press|Shift|F}} ({{bc|color=white|Image|Overlay|Flatten}}) or by running {{bc|color=white|Analyze|Tools|Calibration Bar...}}
+* '''Save results in image directory ''(only available when image is saved locally)''''' <sup>&nbsp;</sup> If checked, all the results (with the exception of the ''[[#Metrics|Sholl Table]]'') are saved to the image directory. These include: 1) Sholl plots (saved as PNG images), 2) A table containing detailed data (saved according to the extension and format specified in {{bc|color=white|Analysis|Sholl|Metrics &amp; Options...}} (or ''Options...'' command in the ''More»'' drop-down menu), and 3) The Sholl mask.<p>Files are named after the image filename and analysis method. When this option is not available, profiles can always be retrieved using the ''List'', ''Save...'' and ''Copy...'' commands of plot windows.</p>
 ** '''Do not display saved files''' If checked, saved files are directly saved to disk and are not displayed. Activate this option when [[#Batch_Processing|batch processing]] files.
 {{Tip
 | tip = In the dialog prompts of ''Sholl Analysis'', bold headings are clickable URLs pointing to the respective sections of this manual. In addition, relevant tooltips are displayed in the ImageJ status bar when specifying key options.
@@ -183,12 +183,12 @@ Most of the retrieved [[#Metrics_based_on_fitted_data|metrics]] are automaticall
 '''N.B.''' A third [[#Normalizer|normalization option]] is also available when performing [[#StepSize|non-continuous sampling]]: ''Annulus''/''Spherical shell''. In this case, the normalization is performed against the area of the annulus formed between the circumferences at ''r'' ± ''Radius step size''/2 (2D images), or against the volume between the two spheres at ''r'' ± ''Radius step size''/2 (3D images).<br>
 
 == Metrics ==
-Morphometric descriptors and other properties of the arbor are printed to a dedicated table named ''Sholl Results''. Output is fully customizable using {{bc|color=white|Analysis|Sholl|Metrics &amp; Options...}} or using the ''Options...'' command in the ''More»'' drop-down menu. The first columns log analysis parameters: ''Image Directory'', ''filename'' and ''voxel unit'', ''Lower'' and ''Upper Threshold levels'', ''X,Y'' (in pixels) and ''Z'' (slice number) coordinates of center of analysis, ''Starting'' and ''Ending radius'', ''Radius step'', ''Number of Samples per Radius'', etc. Other parameters are described below.
+Morphometric descriptors and other properties of the arbor are printed to a dedicated table named ''Sholl Results''. Output is fully customizable using {{bc|color=white|Analysis|Sholl|Metrics &amp; Options...}} or using the ''Options...'' command in the ''More»'' drop-down menu. The first columns log analysis parameters: ''Image Directory'', ''filename'' and ''voxel unit'', ''Channel'', ''Lower'' and ''Upper Threshold levels'', ''X,Y'' (in pixels) and ''Z'' (slice number) coordinates of center of analysis, ''Starting'' and ''Ending radius'', ''Radius step'', ''Number of Samples per Radius'', etc. Other parameters are described below.
 
 [[File:BitmapSholl-Table.png|100%|center|Descriptors and metrics are listed in the Sholl Table (v2.4)]]
 
 === Metrics based on sampled data ===
-[[ File:ShollOptionsPrompt.png|350px|right |Metrics &amp; Options prompt (version 3.6.0)]]
+[[ File:ShollOptionsPrompt.png|350px|right |Metrics &amp; Options prompt (version 3.6.4)]]
 ;Intersecting radii
 :The number of sampling radii intersecting the arbor at least once.
 
@@ -530,7 +530,7 @@ The [[Citing|authoritative reference]] for Fiji:
 		<span id="faq:image-types"></span>'''The plugin complains about a wrong image type. Why?'''
 	</li>
 	<dl><dd>
-		Although ImageJ can threshold RGB images, the plugin can only parse grayscale images (8-bit and 16-bit). Images of fluorescence-labeled cells are typically non-RGB images. Conversions between different image types is explained in the [http://imagej.net/docs/guide/ ImageJ User Guide].
+		The plugin does not parse RGB images, but will process any grayscale image (8/16-bit), including multi-channel (composite) images. This is intentional: RGB images are inflexible and images of fluorescence-labeled cells are typically non-RGB images. As explained in the [http://imagej.net/docs/guide/ ImageJ User Guide], RGB images can be converted using {{bc|color=white|Image|Color|Channels Tool...}} or {{bc|color=white|Image|Type|}} commands.
 	</dd></dl>
 	<li>
 		<span id="faq:compartments"></span>'''I cannot see the hemicircle/hemisphere option. Why?'''
@@ -539,10 +539,10 @@ The [[Citing|authoritative reference]] for Fiji:
 		This option is only available if an orthogonal line has been created by holding {{key press|Shift}} when using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>. See the [http://imagej.net/docs/guide/ ImageJ User Guide] for the full list of key modifiers that can be used while creating straight line ROIs.
 	</dd></dl>
 	<li>
-		<span id="faq:z-position"></span>'''With 3D images, how do I set the Z-position of the center?'''
+		<span id="faq:z-position"></span>'''With 3D and 4D images, how do I set the Z-position and of the center?'''
 	</li>
 	<dl><dd>
-		The Z-position (depth) of the center of analysis is the active Z-slice of the stack. It is reported in the ''Sholl Results'' table.
+		The Z-position (depth) of the center of analysis is the active Z-slice of the stack. With multichannel (composite) images, the active channel also defines the C-position. Both are reported in the ''Sholl Results'' table.
 	</dd></dl>
 	<li>
 		<span id="faq:saving"></span>'''I cannot see the option to save the results. Why?'''
