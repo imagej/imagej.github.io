@@ -190,7 +190,7 @@ and Verena Kaynig, and many other helpers.
 
 * The [[Script Editor]] can make .jar files from .java plugins now.
 
-* The [[Script Editor]] can build and launch [[:Category:Plugins|Fiji plugins]] from $FIJI_ROOT/src-plugins/<name>/ now.
+* The [[Script Editor]] can build and launch [[:Category:Plugins|Fiji plugins]] from <code>$FIJI_ROOT/src-plugins/<name>/</code> now.
 
 * The [[Script Editor]] recognizes errors from the Java compiler and offers to jump to the location of the next/previous error.
 
