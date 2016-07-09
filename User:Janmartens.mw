@@ -1,0 +1,8 @@
+{{Userbox
+| name = Jan Martens
+| github = m4dguy
+}}
+
+Jan Martens studied Bioinformatics at Saarland University where he learned about ImageJ from his colleagues in the department of Biophyics.<br>
+Working as a developer for web platforms at the [http://wwwen.uni.lu/lcsb/research/bioinformatics_core/ LCSB], he satisfies his passion for anything related to image analysis in his spare time.<br>
+Intending to close the gap between [http://opencv.org/ OpenCV] and ImageJ, he went on to develop the plugin [https://github.com/m4dguy/CVForge CVForge] which is currently in early beta stage.
