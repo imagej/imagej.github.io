@@ -12,7 +12,7 @@ The script is maintained by Albert Cardona.
 == Code ==
 
 <source lang="lisp">
-; Albert Cardona 20080427 at MPI-CBG Dresden FIJI hackathon.
+; Albert Cardona 20080427 at MPI-CBG Dresden Fiji hackathon.
 
 ; Opens a URL file path as an image
 (let [opener (new ij.io.Opener)]
