@@ -1,11 +1,14 @@
-3D rendering in FIJI ecosystem
+3D rendering in Fiji ecosystem
 
-Just starting a list for now:
+== Currently available options ==
+* Existing [[3D Viewer]]
+* [[BigDataViewer]]
+* [[ClearVolume]]
+* [[Volume Viewer]]
+* [[Vaa3D]]
+* [[FluoRender]]
+* [[VTK]]
+* [[Imaris]] (some have linked to it)
 
-- Existing 3D viewer  
-- BigDataViewer  
-- ClearVolume  
-- Vaa3D  
-- FluoRender  
-- VTK  
-- Imaris (some have linked to it)
+== See also ==
+* [LOCI's review of Imaris alternatives](https://loci.wisc.edu/outreach/3d-viz)
