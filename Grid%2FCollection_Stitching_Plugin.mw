@@ -30,7 +30,7 @@ To learn more about Stitching, please read the [[Stitching]] section of [[Techni
 *if Prairie or Wiscan are used, uncheck “compute overlap.” Both softwares calculate fairly accurate coordinates beforehand. 
 *Reduce “Increase overlap” to 0 and uncheck subpixel accuracy
 *If the data computed is too large for computer memory, check “use virtual memory.” This will be considerably slower, but will save RAM
-**Alternatively, [[Grid/Collection Stitching Plugin#Memory Allocation|more memory can be allocated]] to the FIJI operation 
+**Alternatively, [[Grid/Collection Stitching Plugin#Memory Allocation|more memory can be allocated]] to the Fiji operation 
 *Click ok and the images will begin to be stitched together.
 
 = Troubleshooting with the Grid/Collection Stitching plugin =
