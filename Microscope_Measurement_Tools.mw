@@ -98,7 +98,7 @@ You should only have to do this calibration once, when you do your initial calib
 
 To draw a measurement annotation, 
 
-1. Draw a "Straight Line" along the feature you want to measure (the length is displayed in the FIJI status bar)
+1. Draw a "Straight Line" along the feature you want to measure (the length is displayed in the Fiji status bar)
 
 2. Select {{bc | Analyze | Microscope Measurement Tools | Draw Annotation - Line}}.
 
