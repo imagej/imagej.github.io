@@ -1976,7 +1976,7 @@ export="/projects/pilot_spim/Christopher/pipeline/jobs_master_beta_2.0/hdf5/expo
 
 == First time using the master file ==
 
-Upon using the master file the first time please change the links for '''FIJI''', the working directories and scripts in the second part of the file:
+Upon using the master file the first time please change the links for Fiji, the working directories and scripts in the second part of the file:
 
 <source lang="bash">
 ####============== Directories for scripts and advanced settings for processing ==============
@@ -2356,7 +2356,7 @@ resaving.bsh
 submit-jobs 
 </source>
 
-Each job file should contain the relevant parameters for the job, where to find '''FIJI''' and the actual job script:
+Each job file should contain the relevant parameters for the job, where to find Fiji and the actual job script:
 
 <source lang="bash">
 cd /projects/tomancak_lightsheet/Christopher/pipeline/jobs_master_beta_2.0/czi_resave/
