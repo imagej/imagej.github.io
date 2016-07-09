@@ -12,7 +12,7 @@
 
 [[File:screenshot1.jpg|350px]]
 
-'''Adiposoft''' is an automated Open Source software for the analysis of adipose tissue cellularity in histological sections. Adiposoft has been developed as a plug-in for FIJI (advanced distribution of ImageJ) that can be run under Windows, Linux or MacOS X. The software, that can be downloaded and used with no license restrictions, was developed at the Imaging Unit of the Center for Applied Medical Research ([https://www.cima.es/home CIMA]), [http://www.unav.edu/en/home1 University of Navarra].
+'''Adiposoft''' is an automated Open Source software for the analysis of adipose tissue cellularity in histological sections. Adiposoft has been developed as a plug-in for Fiji (advanced distribution of ImageJ) that can be run under Windows, Linux or MacOS X. The software, that can be downloaded and used with no license restrictions, was developed at the Imaging Unit of the Center for Applied Medical Research ([https://www.cima.es/home CIMA]), [http://www.unav.edu/en/home1 University of Navarra].
 
 A '''paper validating Adiposft''' was published by [http://www.jlr.org/content/53/12/2791.short Journal of Lipid Research] in 2012.
 
@@ -23,20 +23,20 @@ The accurate estimation of the number and size of adipocytes provides relevant i
 [[Image:datasetim.png|center|500px]]
 
 == Installation == 
-Download the installation package specific for your Operating System in the next section. To install Adiposoft, execute the installer file and follow the instructions. The full version installers install both Adipsoft and FIJI at the same time. 
+Download the installation package specific for your Operating System in the next section. To install Adiposoft, execute the installer file and follow the instructions. The full version installers install both Adipsoft and Fiji at the same time. 
 
 == Download - Adiposoft versions  == 
 The latest version of Adiposoft is 1.13. (Updated November 10th, 2014)
-* '''Windows'''. Adiposoft+FIJI full version installer ([https://dl.dropboxusercontent.com/u/4235078/SW/1.13/Setup.exe Download])
-* '''Linux'''. Adiposoft+FIJI full version installer ([https://dl.dropboxusercontent.com/u/4235078/SW/1.13/Adiposoft.zip Download])
-* '''MacOS''' X. Adiposoft+FIJI full version installer ([https://dl.dropboxusercontent.com/u/4235078/SW/1.13/Adiposoft.pkg.zip Download])
-* Adiposoft '''Plugin''' ([https://dl.dropboxusercontent.com/u/4235078/SW/1.13/Adiposoft_.jar Download]). To install the Plugin only if you already have FIJI installed in your computer, download and copy the jar file into the Plugins folder inside FIJI
+* '''Windows'''. Adiposoft+Fiji full version installer ([https://dl.dropboxusercontent.com/u/4235078/SW/1.13/Setup.exe Download])
+* '''Linux'''. Adiposoft+Fiji full version installer ([https://dl.dropboxusercontent.com/u/4235078/SW/1.13/Adiposoft.zip Download])
+* '''MacOS''' X. Adiposoft+Fiji full version installer ([https://dl.dropboxusercontent.com/u/4235078/SW/1.13/Adiposoft.pkg.zip Download])
+* Adiposoft '''Plugin''' ([https://dl.dropboxusercontent.com/u/4235078/SW/1.13/Adiposoft_.jar Download]). To install the Plugin only if you already have Fiji installed in your computer, download and copy the jar file into the Plugins folder inside Fiji
 
 == Running Adiposoft == 
 If you installed Adiposoft from one of the full version installers, you will find Adiposoft’s icon in the Applications folder (Windows, MacOS X) or in the folder selected during the installation (Linux). Depending on your operating System, you may also have a link to Adiposoft on your computer desktop.
 
 === Starting Adiposoft ===
-To run Adiposoft, double-click on Adiposoft’s icon. This will start FIJI and open the main Adiposoft dialogue window. If at any time you close Adiposoft, you can always restart it by clicking on the “red A button” in the FIJI toolbar.
+To run Adiposoft, double-click on Adiposoft’s icon. This will start Fiji and open the main Adiposoft dialogue window. If at any time you close Adiposoft, you can always restart it by clicking on the “red A button” in the Fiji toolbar.
 
 === Selection of Parameters ===
 On Adiposoft’s main dialogue window you can choose several parameters of the analysis. Namely:
@@ -80,7 +80,7 @@ Cells in Suspension ImageJ – (Download)
 Metamorph Macro (Molecular Devices, USA) that automated the automated acquisition of the images of the histological samples with the microscope.
 
 
-== Installing Adiposoft as a FiJi plugin (for users familiar with FIJI) ==
+== Installing Adiposoft as a FiJi plugin (for users familiar with Fiji) ==
 If you are familiar with Fiji, and you have it already installed in your computer, you can download only the plugin for Fiji from the Download section.
 
 # If you do not have Fiji installed in your computer, you can download it [http://fiji.sc/Downloads here]
