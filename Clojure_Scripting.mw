@@ -44,6 +44,11 @@ To execute a script, do any of:
 
 The script is <b>always</b> read directly from the source file, so no updating of menus is needed (unless its file name changes).
 
+=== Convenient Clojure in FIJI with Funimage ===
+
+*[https://github.com/funimage/funimage/ Funimage] provides a library for convenient Clojure coding within FIJI. Alleviating much of the need for type-hinting, and some of the burdens involved in handling more complicated data structures, such as those from ImgLib2.
+
+See the [[List of update sites]] for information on setting up the Funimage update site.
 
 === Running Clojure files from the command line ===
 Fiji can execute any clojure file directly:
