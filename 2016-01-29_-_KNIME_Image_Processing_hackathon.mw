@@ -160,7 +160,7 @@ PlotData=
 
 === Robert Haase ===
 * Implemented continuous (Hyper-)Ellipsoids, Rectangles and Binary operators for imglib2-roi. 
-* Developed prototype for “Data Explorer” window for ImageJ/FIJI
+* Developed prototype for “Data Explorer” window for ImageJ/Fiji
 ** holding various data structures like images, labelings, measurements (tables) and plots. The structure is persistent, so closing windows does not delete the items from the tree. They can be reopened.
 ** 2D/3D/nD? data is handled equally, so selecting/deleting labels for/from further analysis according to their properties is possible more or less independent from the labels dimensionality.
 ** Measurements on labels is based on imagej ops()
