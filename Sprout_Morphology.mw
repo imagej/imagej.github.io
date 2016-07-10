@@ -21,16 +21,27 @@ Open a maximum intensity projection of the multi-channel image to be analyzed, t
 
 === General configuration ===
 
+[[Image:SproutAnalyzer Configuration.png|400px|Configuration dialog]]
+
 === Bead detection ===
+
+[[Image:SproutAnalyzer BeadDetection.png|400px|Bead detection]]
 
 === Sprout detection ===
 
+[[Image:SproutAnalyzer SproutDetection.png|400px|Sprout detection]]
+
 === Nucleus segmentation ===
+
+[[Image:SproutAnalyzer NucleusSegmentation.png|400px|Nucleus segmentation]]
 
 === Endothelial cell/Pericyte classification ===
 
+[[Image:SproutAnalyzer CellClassification.png|400px|Cell classification of ECs and pericytes]]
+
 === Pericyte coverage ===
 
+[[Image:SproutAnalyzer PericyteCoverage.png|400px|Pericyte coverage measurement]]
 
 
 == Citation ==
