@@ -1,0 +1,14 @@
+{{Infobox
+| name                   = ThreeDViewer
+| software               = ImageJ
+| author                 = Kyle Harrington, Ulrik Guenther, Robert Haase
+| filename               = 
+| source                 = [https://github.com/kephale/ThreeDViewer ThreeDViewer]
+| released               = in development
+| latest version         = in development
+| status                 = alpha
+| category               = [[:Category:Visualization|Visualization]]
+| website                = https://github.com/kephale/ThreeDViewer
+}}== Purpose ==
+
+This plugin provides 3D visualization capabilities for images and meshes using the [https://github.com/ClearVolume/scenery Scenery] and [[ClearVolume]] infrastructure. An ambition of this plugin is to serve as a modern replacement to [[3D Viewer]]. ThreeDViewer also integrates [[ImageJ2]] functionality, including [[ImageJ Ops]].
