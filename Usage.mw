@@ -2,4 +2,9 @@
 
 or view Fiji usage map for [[Fiji_Usage|yesterday]] or [[Fiji_Usage_monthly|the last month]]!
 
-<include iframe width="775" height="600" src="http://fiji.sc/awesome/map-7.html" frameborder="0" />
+{{#widget:Iframe
+|url=http://wiki.imagej.net/awesome/map-7.html
+|width=775
+|height=600
+|border=0
+}}
