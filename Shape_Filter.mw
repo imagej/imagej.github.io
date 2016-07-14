@@ -29,6 +29,7 @@ Wagner, T and Lipinski, H 2013. IJBlob: An ImageJ Library for Connected Componen
 * '''Feret Diameter''': The maximum distance between the two parallel tangents touching the particle outline in all directions.
 * '''Min. Feret Diameter''': the minimum distance between the two parallel tangents touching the particle outline in all directions.
 * '''Max. Inscr. Circle Diameter''': The diameter of the maximum inscribed circle.
+* '''Area eq. circle diameter''': Equivalent circle diameter <math>2\sqrt{\frac{A}{\pi}}</math>
 * '''Long Side Minimum Bounding Rectangle''' (<math>L</math>): The larger side of the minimum bounding rectangle.
 * '''Short Side Minimum Bounding Rectangle''' (<math>S</math>): The smaller side of the minimum bounding rectangle.
 * '''Aspect Ratio''': Defined as <math>L/S</math>
