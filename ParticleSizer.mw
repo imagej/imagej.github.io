@@ -5,7 +5,7 @@
 | maintainer             = {{Person|Twagner}}
 | filename               = ParticleSizer_.jar [https://github.com/thorstenwagner/ij-particlesizer/releases/latest [1]]
 | source                 = Github [https://github.com/thorstenwagner/ij-particlesizer [2]]
-| latest version         = v1.0.3 (14. July 2016)
+| latest version         = v1.0.4 (15. July 2016)
 | status                 = active 
 }}
 
@@ -50,6 +50,9 @@ You can now start the ParticleSizer via ''Plugins -> NanoDefine -> ParticleSizer
 * Smoothing factor: It sometimes occurs that the estimated standard deviation of the noise is lower than the true value. The smoothing factor is a multiplicative factor for the estimated standard deviation.
 * Show binary result: If selected the ParticleSizer shows the binary result.
 * Ask me to select a region: If selected, the software allows you to select a specific region to analyse.
+* Record process: If this checkbox is selected, a new image stack opens at the end of the analysis which contain images of every single step the particle
+sizer made. If an image stack is analysed, than only the only the processing of the first image is recorded.
+
 
 == How to find optimal settings ==
 
