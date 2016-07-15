@@ -44,5 +44,4 @@ Quite a few tasks -- such as committing a new submodule or sources for a plugin,
 
 Some of these scripts are shell scripts, others are Jython scripts with special [[wikipedia:Shebang (Unix)|shebang]] lines which trigger them to be called with the current Fiji launcher.
 
-
 [[Category:Development]]
