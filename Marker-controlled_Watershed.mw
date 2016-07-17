@@ -48,6 +48,8 @@ You should now find the plugin under the sub-menu {{bc | Plugins | MorphoLibJ | 
 == References ==
 # Fernand Meyer and Serge Beucher. "Morphological segmentation." Journal of visual communication and image representation 1.1 (1990): 21-46.
 # Soille, P., "Morphological Image Analysis: Principles and Applications", Springer-Verlag, 1999, pp. 170-171.
+# David Legland, Ignacio Arganda-Carreras, and Philippe Andrey. [http://bioinformatics.oxfordjournals.org/content/early/2016/07/12/bioinformatics.btw413.abstract MorphoLibJ: integrated library and plugins for mathematical morphology with ImageJ]. Bioinformatics, btw413, 2016.
+
 == See also ==
 * [[Morphological Segmentation]], a plugin with a graphical user interface to segment 2D/3D images based on morphological operations and the watershed algorithm.
 * [[Classic Watershed]], plugin implementing the original watershed algorithm to segment 2D/3D grayscale images.
