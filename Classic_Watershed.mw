@@ -89,6 +89,8 @@ You should now find the plugin under the sub-menu {{bc | Plugins |MorphoLibJ | S
 
 == References ==
 # Pierre Soille and Luc M. Vincent. "Determining watersheds in digital pictures via flooding simulations." Lausanne-DL tentative. International Society for Optics and Photonics, 1990.
+# David Legland, Ignacio Arganda-Carreras, and Philippe Andrey. [http://bioinformatics.oxfordjournals.org/content/early/2016/07/12/bioinformatics.btw413.abstract MorphoLibJ: integrated library and plugins for mathematical morphology with ImageJ]. Bioinformatics, btw413, 2016.
+
 == See also ==
 * [[Marker-controlled Watershed]], a plugin to perform watershed by flooding from specific seed points or markers.
 * [[Morphological Segmentation]], a plugin with a graphical user interface to segment images based on morphological operations and the watershed algorithm.
