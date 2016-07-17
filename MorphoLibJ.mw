@@ -590,6 +590,9 @@ You can browse the [http://ijpb.github.io/MorphoLibJ/javadoc/ javadoc] for more 
 
 ::: 4) Click ''Apply changes'' and restart Fiji.
 == Citation ==
+Please note that [[MorphoLibJ]] is based on a publication. If you use it successfully for your research please be so kind to cite our work:
+* David Legland, Ignacio Arganda-Carreras, and Philippe Andrey. [http://bioinformatics.oxfordjournals.org/content/early/2016/07/12/bioinformatics.btw413.abstract MorphoLibJ: integrated library and plugins for mathematical morphology with ImageJ]. Bioinformatics, btw413, 2016.
+
 [[MorphoLibJ]]'s code repository has its own [https://zenodo.org/badge/latestdoi/21349/ijpb/MorphoLibJ DOI].
 
 == References ==
