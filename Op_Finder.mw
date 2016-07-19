@@ -2,7 +2,7 @@
 | software               = ImageJ
 | name                   = Op Finder
 | author                 = {{Person|Hinerm}}
-| maintainer             = {{Person|Hinerm}}, {{Person|Ctrueden}}
+| maintainer             = {{Person|Hinerm}}, {{Person|Rueden}}
 | filename               = {{Maven | g=net.imagej | a=op-finder }}
 | source                 = {{GitHub|org=imagej|repo=op-finder}}
 | released               = April 2016
