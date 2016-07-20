@@ -37,7 +37,7 @@ You can find the dotfiles in the following repositories:
 
 There are several tools for which configuration and customization is provided:
 
-* Shells: [https://www.gnu.org/software/bash/ bash] and [http://www.zsh.org/ zsh] (via 
+* Shells: [https://www.gnu.org/software/bash/ bash] and [http://www.zsh.org/ zsh]
 * Editors: [http://www.vim.org/ Vim]
 * SCM tools: [[Git]] and [https://myrepos.branchable.com/ myrepos]
 
