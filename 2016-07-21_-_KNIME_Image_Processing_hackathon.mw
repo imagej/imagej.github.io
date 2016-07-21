@@ -76,7 +76,7 @@ PlotData=
   color:c05 from:7 till:10 text:"Simon Schmid (UniKN)"
   color:c06 from:7 till:9 text:"Marcel Wiedenmann (UniKN)"
   color:c07 from:7 till:8 text:"Jan Eglinger (FMI Basel)"
-  color:c08 from:6 till:13 text:"Kyle Harrington (HMS)"
+  color:c08 from:5 till:13 text:"Kyle Harrington (HMS)"
   color:c09 from:6 till:12 text:"Curtis Rueden (UW-Madison)"
   color:c10 from:5 till:14 text:"Christian Dietz (UniKN)"
   color:c11 from:5 till:14 text:"Patrick Winter (UniKN)"
