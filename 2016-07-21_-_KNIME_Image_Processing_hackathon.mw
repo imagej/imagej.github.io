@@ -115,7 +115,7 @@ File:hackathon-2016-konstanz-amazing-salt.jpg|caption|{{Person|Rdom}} and {{Pers
 * Created a (not yet functional) [https://kotlinlang.org/ Kotlin] SciJava script engine ({{GitHub | org=scijava | repo=scripting-kotlin | label=scijava/scripting-kotlin}})
 
 === Kyle Harrington ===
-* Added 3D Mesh Voxelization to {{GitHub | org=imagej | repo=imagej-ops | label=imagej-ops}}
+* Added 3D Mesh Voxelization to {{GitHub | org=imagej | repo=imagej-ops | label=imagej-ops}} ({{GitHub | org=imagej | repo=imagej-ops | pr=419 | label=imagej-ops#419}})
 * Began [[ThreeDViewer]] and reached a moderately usable level
 * Refactored [[Funimage]] to be more Clojure idiomatic
 
