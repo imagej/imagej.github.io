@@ -102,6 +102,7 @@ PlotData=
 
 == Technical discussions ==
 * The future of ImageJ user interfaces: ImageJFX? KNIME? JavaScript + RESTful image server?
+* Languages on the JVM: using Scala, Kotlin and/or Groovy for future SciJava components
 
 [[Category:News]]
 [[Category:Hackathons]]
