@@ -159,13 +159,18 @@ ImageJ has benefitted from many hackathons over the years:
 |- valign="top"
 | style="white-space: nowrap" | [[2016-01-29 - KNIME Image Processing hackathon|2016 Jan 12 -<br>2016 Jan 22]]
 |[https://www.knime.org/contact KNIME Konstanz Regional Office]<br>Konstanz, Germany
-|{{Person|Dietzc}}, {{Person|Rueden}}, {{Person|Hinerm}}, {{Person|hornm}}, {{Person|Pietzsch}}, {{Person|Jug}}, {{Person|royerloic}}, {{Person|skalarproduktraum}}, {{Person|Haesleinhuepf}}, {{Person|Stelfrich}}, {{Person|kmader}}, {{Person|Kharrington}}, {{Person|Eglinger}}, {{Person|drtjre}}, {{Person|tibuch}}, {{Person|Squareys}}, {{Person|seebacherd}}, Nico Hoffmann, Patrick Winter, Alexander Fillbrunn, Timo Sachsenberg, Julianus Pfeuffer, Temesgen H. Dadi
+|{{Person|Dietzc}}, {{Person|Rueden}}, {{Person|Hinerm}}, {{Person|hornm}}, {{Person|Pietzsch}}, {{Person|Jug}}, {{Person|royerloic}}, {{Person|skalarproduktraum}}, {{Person|Haesleinhuepf}}, {{Person|Stelfrich}}, {{Person|kmader}}, {{Person|Kharrington}}, {{Person|Eglinger}}, {{Person|drtjre}}, {{Person|tibuch}}, {{Person|Squareys}}, {{Person|seebacherd}}, {{Person|patrick-winter-knime}}, {{Person|AlexanderFillbrunn}}, Nico Hoffmann, Timo Sachsenberg, Julianus Pfeuffer, Temesgen H. Dadi
 |[[KNIME]] Image Processing
 |- valign="top"
 | style="white-space: nowrap" | [[2016-06-23 - ImgLib2 hackathon|2016 Jun 19 -<br>2016 Jun 28]]
 |[http://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
 |{{Person|Saalfeld}}, {{Person|Pietzsch}}, {{Person|Rueden}}, {{Person|Dietzc}}, {{Person|Kharrington}}
 |Metadata rich images
+|- valign="top"
+| style="white-space: nowrap" | [[2016-07-21 - KNIME Image Processing hackathon|2016 Jul 5 -<br>2016 Jul 14]]
+|[https://www.knime.org/contact KNIME Konstanz Regional Office]<br>Konstanz, Germany
+|{{Person|Dietzc}}, {{Person|patrick-winter-knime}}, {{Person|Pietzsch}}, {{Person|skalarproduktraum}}, {{Person|Rueden}}, {{Person|hornm}}, {{Person|Stelfrich}}, {{Person|Kharrington}}, {{Person|Rdom}}, {{Person|kmader}}, {{Person|AndreasBurger}}, {{Person|MarcelWiedenmann}}, {{Person|SimonSchmid}}, {{Person|irrwitz}}, {{Person|Squareys}}, {{Person|AlexanderFillbrunn}}, {{Person|Eglinger}}, {{Person|tibuch}}, {{Person|StefanoWoerner}}, {{Person|cmongis}}, {{Person|hoerldavid}}, Nico Hoffmann
+|[[KNIME]] Image Processing + 3D viz
 |-
 |colspan="4" style="border-bottom: 1px solid gray"|
 |}
