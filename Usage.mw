@@ -1,9 +1,9 @@
-= Look where they used Fiji last week! =
+= Look where they used ImageJ last week! =
 
-or view Fiji usage map for [[Fiji_Usage|yesterday]] or [[Fiji_Usage_monthly|the last month]]!
+or view ImageJ usage map for [[Usage|yesterday]] or [[Usage_monthly|the last month]]!
 
 {{#widget:Iframe
-|url=http://wiki.imagej.net/awesome/map-7.html
+|url=map-7.html
 |width=775
 |height=600
 |border=0
