@@ -93,6 +93,20 @@ PlotData=
 
 </timeline>
 
+== Gallery ==
+<gallery>
+File:hackathon-2016-konstanz-hackers.jpg|caption|Hackers!
+File:hackathon-2016-konstanz-dinner.jpg|caption|Hackers at dinner
+File:hackathon-2016-konstanz-rueden.jpg|caption|{{Person|Rueden}}
+File:hackathon-2016-konstanz-harrington.jpg|caption|{{Person|Kharrington}}
+File:hackathon-2016-konstanz-domander.jpg|caption|{{Person|Rdom}}
+File:hackathon-2016-konstanz-hoerl.jpg|caption|{{Person|hoerldavid}}
+File:hackathon-2016-konstanz-dietz-and-rueden.jpg|caption|{{Person|Dietzc}} and {{Person|Rueden}}
+File:hackathon-2016-konstanz-harrington-and-gunther.jpg|caption|{{Person|Kharrington}} and {{Person|skalarproduktraum}}
+File:hackathon-2016-konstanz-helfrich-and-pietzsch.jpg|caption|{{Person|Stelfrich}} and {{Person|Pietzsch}}
+File:hackathon-2016-konstanz-amazing-salt.jpg|caption|{{Person|Rdom}} and {{Person|Pietzsch}} are amazed by the gravity-defying salt shaker!
+</gallery>
+
 == Hackathon progress ==
 === Curtis Rueden ===
 * Made major progress on improved op lookups using Nil (a.k.a. "typed null") objects—work still ongoing on the <code>nil</code> branch of {{GitHub | org=imagej | repo=imagej-ops | label=imagej-ops}}; prep work already on master ([https://github.com/imagej/imagej-ops/compare/fd2d9c5b8974d77976dabc53ba973d2a52ee465a%5E...226fc2114f0d68786f4a27b8fa498f18681379bf 1], {{GitHub | org=imagej | repo=imagej-ops | commit=4135609f471352cbd32b048d32f0d5bb33343273 | label=2}})
