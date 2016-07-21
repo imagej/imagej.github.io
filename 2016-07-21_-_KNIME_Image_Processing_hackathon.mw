@@ -100,6 +100,11 @@ PlotData=
 * Helped clean up {{Person|Rdom}}'s "Topology namespace and ops" PR ({{GitHub | org=imagej | repo=imagej-ops | pr=415 | label=#415}})
 * Created a (not yet functional) [https://kotlinlang.org/ Kotlin] SciJava script engine ({{GitHub | org=scijava | repo=scripting-kotlin | label=scijava/scripting-kotlin}})
 
+=== Kyle Harrington ===
+* Added 3D Mesh Voxelization to {{GitHub | org=imagej | repo=imagej-ops | label=imagej-ops}}
+* Began [[ThreeDViewer]] and reached a moderately usable level
+* Refactored [[Funimage]] to be more Clojure idiomatic
+
 == Technical discussions ==
 * The future of ImageJ user interfaces: ImageJFX? KNIME? JavaScript + RESTful image server?
 * Languages on the JVM: using Scala, Kotlin and/or Groovy for future SciJava components
