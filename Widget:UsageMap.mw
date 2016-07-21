@@ -12,4 +12,4 @@ While the url is validated to be a valid url, there is no way the widget can che
 
 == Copy to your site ==
 To use this widget on your site, just install [https://www.mediawiki.org/wiki/Extension:Widgets MediaWiki Widgets extension] and copy the [{{fullurl:{{FULLPAGENAME}}|action=edit}} full source code] of this page to your wiki as page '''{{FULLPAGENAME}}'''.
-</noinclude><includeonly><iframe src="http://code.imagej.net/httpdocs/<!--{$url|validate:url}-->" frameborder="<!--{$border|validate:int|default:0}-->" width="<!--{$width|escape:html|default:400}-->" height="<!--{$height|escape:html|default:300}-->"></iframe></includeonly>
+</noinclude><includeonly><iframe src="http://code.imagej.net/<!--{$url|validate:url}-->" frameborder="<!--{$border|validate:int|default:0}-->" width="<!--{$width|escape:html|default:400}-->" height="<!--{$height|escape:html|default:300}-->"></iframe></includeonly>
