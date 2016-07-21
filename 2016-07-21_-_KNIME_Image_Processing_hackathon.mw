@@ -1,4 +1,4 @@
-From Tuesday, July 5, 2016 through Thursday, July 14, 2016, {{Person|Dietzc}} of the [http://www.uni-konstanz.de/en/welcome/ University of Konstanz] hosted ~25 developers at the [https://www.knime.org/contact KNIME Konstanz Regional Office] for a [[hackathon]] to develop the [[KNIME]] Image Processing extensions along with the underlying [[ImageJ Ops]] library, as well as other supporting technologies such as [[ImgLib2]], [[ClearVolume]] and the [[BigDataViewer]].
+From Tuesday, July 5, 2016 through Thursday, July 14, 2016, {{Person|Dietzc}} of the [http://www.uni-konstanz.de/en/welcome/ University of Konstanz] hosted ~20 developers at the [https://www.knime.org/contact KNIME Konstanz Regional Office] for a [[hackathon]] to develop the [[KNIME]] Image Processing extensions along with the underlying [[ImageJ Ops]] library, as well as other supporting technologies such as [[ImgLib2]], [[ClearVolume]] and the [[BigDataViewer]].
 
 == Timeline ==
 
@@ -70,27 +70,26 @@ PlotData=
 
   barSet:Hackers
   color:c01 from:11 till:14 text:"Tim-Oliver Buchholz (UniKN)"
-  color:c02 from:11 till:12 text:"Stefano Woerner (UniKN)"
-  color:c03 from:8 till:9 text:"Joshy Cyriac (USB, 4Quant)"
-  color:c04 from:7 till:13 text:"Richard Domander (RVC)"
-  color:c05 from:7 till:10 text:"Kevin Mader (4Quant, ETHZ)"
-  color:c06 from:7 till:10 text:"Simon Schmid (UniKN)"
-  color:c07 from:7 till:9 text:"Marcel Wiedenmann (UniKN)"
-  color:c08 from:7 till:8 text:"Jan Eglinger (FMI Basel)"
-  color:c09 from:6 till:13 text:"Kyle Harrington (HMS)"
-  color:c10 from:6 till:12 text:"Curtis Rueden (UW-Madison)"
-  color:c11 from:5 till:14 text:"Christian Dietz (UniKN)"
-  color:c12 from:5 till:14 text:"Patrick Winter (UniKN)"
-  color:c13 from:5 till:14 text:"Tobias Pietzsch (MPI-CBG)"
-  color:c14 from:5 till:14 text:"Ulrik Günther (MPI-CBG)"
-  color:c15 from:5 till:14 text:"Martin Horn (UniKN)"
-  color:c16 from:5 till:14 text:"Andreas Burger (UniKN)"
-  color:c17 from:5 till:14 text:"Alexander FIllbrunn (UniKN)"
-  color:c18 from:5 till:14 text:"David Hörl (LMU Munich / MDC Berlin)"
-  color:c19 from:5 till:13 text:"Jonathan Hale (UniKN)"
-  color:c20 from:5 till:12 text:"Nico Hoffmann (TUD)"
-  color:c21 from:5 till:9 text:"Stefan Helfrich (UniKN)"
-  color:c22 from:5 till:8 text:"Cyril Mongis (Uni-Heidelberg)"
+  color:c02 from:8 till:9 text:"Joshy Cyriac (USB, 4Quant)"
+  color:c03 from:7 till:13 text:"Richard Domander (RVC)"
+  color:c04 from:7 till:10 text:"Kevin Mader (4Quant, ETHZ)"
+  color:c05 from:7 till:10 text:"Simon Schmid (UniKN)"
+  color:c06 from:7 till:9 text:"Marcel Wiedenmann (UniKN)"
+  color:c07 from:7 till:8 text:"Jan Eglinger (FMI Basel)"
+  color:c08 from:6 till:13 text:"Kyle Harrington (HMS)"
+  color:c09 from:6 till:12 text:"Curtis Rueden (UW-Madison)"
+  color:c10 from:5 till:14 text:"Christian Dietz (UniKN)"
+  color:c11 from:5 till:14 text:"Patrick Winter (UniKN)"
+  color:c12 from:5 till:14 text:"Tobias Pietzsch (MPI-CBG)"
+  color:c13 from:5 till:14 text:"Ulrik Günther (MPI-CBG)"
+  color:c14 from:5 till:14 text:"Martin Horn (UniKN)"
+  color:c15 from:5 till:14 text:"Andreas Burger (UniKN)"
+  color:c16 from:5 till:14 text:"Alexander FIllbrunn (UniKN)"
+  color:c17 from:5 till:14 text:"David Hörl (LMU Munich / MDC Berlin)"
+  color:c18 from:5 till:13 text:"Jonathan Hale (UniKN)"
+  color:c19 from:5 till:12 text:"Nico Hoffmann (TUD)"
+  color:c20 from:5 till:9 text:"Stefan Helfrich (UniKN)"
+  color:c21 from:5 till:8 text:"Cyril Mongis (Uni-Heidelberg)"
 
 </timeline>
 
