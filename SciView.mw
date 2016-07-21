@@ -1,7 +1,7 @@
 {{Infobox
 | name                   = ThreeDViewer
 | software               = ImageJ
-| author                 = Kyle Harrington, Ulrik Guenther, Robert Haase
+| author                 = {{Person|Kharrington}}, {{Person|skalarproduktraum}}, {{Person|haesleinhuepf}}
 | filename               = 
 | source                 = [https://github.com/kephale/ThreeDViewer ThreeDViewer]
 | released               = in development
