@@ -2,7 +2,7 @@
 
 or view ImageJ usage map for [[Usage|yesterday]] or [[Usage_monthly|the last month]]!
 
-{{#widget:Iframe
+{{#widget:UsageMap
 |url=map-7.html
 |width=775
 |height=600
