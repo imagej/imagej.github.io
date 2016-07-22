@@ -13,7 +13,7 @@
 *[http://clojure.org/cheatsheet Clojure cheat sheet]: a summary of all the essentials.
 
 == Using Clojure inside Fiji ==
-Go to "Plugins - Scripting - Clojure Interpreter". The prompt accepts any clojure code. See also Fiji's [[Script Editor]].
+Go to {{bc|Plugins|Scripting|Clojure Interpreter}}. The prompt accepts any clojure code. See also Fiji's [[Script Editor]].
 
 See [[Scripting Help]] for details on keybindings and how to use the interpreter. {{key|Ctrl}}+{{key|)}} will add all necessary ending parenthesis.
 
@@ -24,7 +24,7 @@ A minimal, complete clojure example:
 (.show gold)
 </source>
 
-To create scripts, just save them as .clj text files (with an underscore in the name) in any folder or subfolder of Fiji's plugins folder, and run "Plugins - Scripting - Refresh Clojure Scripts" to update the menus (it's done automatically at start up as well).
+To create scripts, just save them as .clj text files (with an underscore in the name) in any folder or subfolder of Fiji's plugins folder, and run {{bc|Plugins|Scripting|Refresh Clojure Scripts}} to update the menus (it's done automatically at start up as well).
 
 To edit a script, just edit and save it with your favorite text editor.
 
