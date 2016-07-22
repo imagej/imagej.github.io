@@ -1,13 +1,3 @@
-{{Infobox
-| software               = ImageJ
-| name                   = Jython Scripting
-| author                 = Albert Cardona
-| maintainer             = Albert Cardona
-| filename               = scripting-jython.jar
-| source                 = {{GitHub|org=scijava|repo=scripting-jython}}
-| status                 = stable
-| tutorials             = Albert Cardona
-}}
 {{Scripting}}== The Jython interpreter plugin ==
 
 The interpreter provides a screen and a prompt. Type any jython code on the prompt to interact with ImageJ.
