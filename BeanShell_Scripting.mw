@@ -1,18 +1,10 @@
-{{Infobox
-| software               = ImageJ
-| name                   = BeanShell Interpreter
-| author                 = Johannes Schindelin
-| maintainer             = Johannes Schindelin
-| filename               = scripting-beanshell.jar
-| source                 = [https://github.com/scijava/scripting-beanshell Git]
-| status                 = stable
-}}{{Scripting}}[http://www.beanshell.org/ BeanShell] is the scripting language in Fiji which is similar both to the [[Introduction_into_Macro_Programming|ImageJ macro language]] and to Java. In fact, you can even execute almost verbatim Java code, but the common case is to write ''scripts'', i.e. leave out all the syntactic sugar to make your code part of a class.
+{{Scripting}}[http://www.beanshell.org/ BeanShell] is the scripting language which is similar both to the [[Introduction_into_Macro_Programming|ImageJ macro language]] and to Java. In fact, you can even execute almost verbatim Java code, but the common case is to write ''scripts'', i.e. leave out all the syntactic sugar to make your code part of a class.
 
 BeanShell also does not require strict typing (read: you do not need to declare variables with types), making it easy to turn prototype code into proper Java after seeing that the code works.
 
 = Quickstart =
 
-If you are already familiar with Java or the macro language, the syntax of Beanshell will be familiar to you.
+If you are already familiar with Java or the macro language, the syntax of BeanShell will be familiar to you.
 
 The obligatory ''Hello, World!'' example:
 
@@ -35,7 +27,7 @@ String s;
 s = 1; // this fails
 </source>
 
-Note: The builtin functions of the ImageJ Macro language are <u>not</u> available in Beanshell.
+Note: The builtin functions of the ImageJ Macro language are <u>not</u> available in BeanShell.
 
 = Syntax =
 
@@ -152,7 +144,7 @@ import java.util.regex.Pattern;
 // IJ1's API does not offer all I want
 setAccessibility(true);
 
-// press Escape on the Fiji window to stop it
+// press Escape on the ImageJ window to stop it
 class Add_CIELab_to_Status extends Thread implements KeyListener {
 	protected ImageJ ij;
 	protected Label status;
