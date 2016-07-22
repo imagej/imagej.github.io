@@ -1,12 +1,3 @@
-{{Infobox
-| software               = ImageJ
-| name                   = ImageJ 1.x macro engine
-| author                 = Johannes Schindelin<br />Curtis Rueden
-| maintainer             = Curtis Rueden<br/>Johannes Schindelin
-| filename               = imagej-legacy.jar
-| source                 = {{GitHub|org=imagej|repo=imagej-legacy}}
-| status                 = stable
-}}
 {{Scripting}}= Why Macros? =
 
 Macros can be used to
