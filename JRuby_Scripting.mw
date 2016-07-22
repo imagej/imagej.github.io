@@ -1,12 +1,3 @@
-{{Infobox
-| software               = ImageJ
-| name                   = JRuby Scripting
-| author                 = Curtis Rueden<br/>Johannes Schindelin
-| maintainer             = Curtis Rueden<br/>Johannes Schindelin
-| filename               = scripting-jruby.jar
-| source                 = {{GitHub|org=scijava|repo=scripting-jruby}}
-| status                 = stable
-}}
 {{Scripting}}
 
 [http://jruby.codehaus.org/ JRuby] is a marvellous project that created a complete implementation of Ruby that runs in the JVM.  The excellent work of the authors of JRuby has made it very simple for us to add JRuby scripting into ImageJ.
