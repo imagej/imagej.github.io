@@ -1,15 +1,6 @@
-{{Infobox
-| software               = ImageJ
-| name                   = Clojure Scripting
-| author                 = Albert Cardona
-| maintainer             = Albert Cardona
-| filename               = scripting-clojure.jar
-| source                 = {{GitHub|org=scijava|repo=scripting-clojure}}
-| status                 = stable
-}}
-{{Scripting}}
+{{Scripting}}[[wikipedia:Clojure|Clojure]] is a dialect of the [[wikipedia:Lisp (programming_language)|Lisp programming language]. Clojure is a general-purpose programming language with an emphasis on functional programming.
 
-<h1>Clojure tutorial for ImageJ</h1>
+= Clojure tutorial for ImageJ =
 
 <p>Check out [http://clojure.org clojure web site] and particularly the chapter on [http://clojure.org/java_interop Java interoperability].</p>
 
