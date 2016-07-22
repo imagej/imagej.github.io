@@ -1,17 +1,8 @@
-{{Infobox Plugin
-| software               = ImageJ
-| name                   = [[MATLAB]] Scripting
-| author                 = Mark Hiner
-| maintainer             = Mark Hiner<br/>Curtis Rueden
-| filename               = scripting-matlab.jar, imagej-matlab.jar
-| source                 = {{GitHub|org=scijava|repo=scripting-matlab|label=scripting-matlab}}, {{GitHub|org=imagej|repo=imagej-matlab|label=imagej-matlab}}
-| status                 = stable
-}}{{Scripting}}ImageJ-MATLAB is an extension which:
+{{Scripting}}ImageJ-MATLAB is an extension which:
 * Translates data between ImageJ images and MATLAB matrices.
 * Enables execution of MATLAB scripts from inside ImageJ's [[Script Editor]].
 * Lets you launch ImageJ and interact with it from inside MATLAB.
 * Allows developers to write additional [[plugins]] which [[extensibility|extend]] these capabilities in new directions.
-
 
 =MATLAB tutorial for ImageJ=
 
