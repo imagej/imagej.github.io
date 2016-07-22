@@ -120,6 +120,10 @@ File:hackathon-2016-konstanz-amazing-salt.jpg|caption|The gravity-defying salt s
 * Began [[ThreeDViewer]] and reached a moderately usable level
 * Refactored [[Funimage]] to be more Clojure idiomatic
 
+
+=== Christian Dietz ===
+* Continued work on KNIME SciJava Nodes and KNIME SciJava Scripting
+
 == Technical discussions ==
 * The future of ImageJ user interfaces: ImageJFX? KNIME? JavaScript + RESTful image server?
 * Languages on the JVM: using Scala, Kotlin and/or Groovy for future SciJava components
