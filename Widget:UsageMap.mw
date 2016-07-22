@@ -10,4 +10,4 @@ Supported parameters include:
 
 == Copy to your site ==
 To use this widget on your site, just install the [https://www.mediawiki.org/wiki/Extension:Widgets MediaWiki Widgets extension] and the copy [{{fullurl:{{FULLPAGENAME}}|action=edit}} full source code] of this page to your wiki, as an article called '''{{FULLPAGENAME}}'''.
-</noinclude><includeonly><iframe src=/awesome/<!--{$url|validate:url}-->" frameborder="<!--{$border|validate:int|default:0}-->" width="<!--{$width|escape:html|default:400}-->" height="<!--{$height|escape:html|default:300}-->"></iframe></includeonly>
+</noinclude><includeonly><iframe src=/awesome/"<!--{$url|validate:url}-->" frameborder="<!--{$border|validate:int|default:0}-->" width="<!--{$width|escape:html|default:400}-->" height="<!--{$height|escape:html|default:300}-->"></iframe></includeonly>
