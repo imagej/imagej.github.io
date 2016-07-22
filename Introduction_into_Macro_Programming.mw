@@ -17,7 +17,7 @@ Macros can be used to
 * add tools to the toolbar
 * add keyboard shortcuts
 
-{{Notice|message = Please be aware that there are several other available [[scripting]] languages that are more powerful than macros, too! See the sidebar on the right.}}
+{{Notice|message = Please be aware that there are several other available [[scripting]] languages that are more powerful than macros, too! See the sidebar on the right, as well as the [[#Overcoming_limitations|Overcoming limitations]] section below.}}
 
 = Variables =
 
@@ -632,6 +632,40 @@ macro "Split and Merge" {
 == More example macros ==
 
 There are quite a lot of macros on the [http://imagej.net/macros/ ImageJ website], and specifically [http://imagej.net/macros/examples/ example macros] including a few from the Macro workshop at the [http://imagejconf.tudor.lu/archive/imagej-user-and-developer-conference-2010 ImageJ conference 2010]. Since there is no categorized index, you might want to use the search facility on [http://imagej.net/developer/index.html this page].
+
+= Overcoming limitations =
+
+Macros have a major limitation compared to the other [[scripting]] languages: they have only a [https://imagej.net/developer/macro/functions.html fixed set of built-in functions]. Sometimes, though, one needs access to functions outside this realm; in that case, there are three primary means of overcoming this limitation:
+
+== Macro extensions ==
+It is possible to implement code in [[Java]] which extends the macro language via the [http://imagej.net/developer/macro/functions.html#Ext <code>Ext</code> prefix]. However, this cannot be done within the macro itself.
+
+== The call function ==
+The [http://imagej.net/developer/macro/functions.html#call <code>call</code> function] can invoke Java methods directly. However, this function only supports calling <code>public static</code> Java methods which accept <code>String</code> only, and return <code>String</code> only. Most times, though, the needed function does not conform to these requirements; this approach is suitable mostly for routines designed to be called from the macro language in this way.
+
+== The eval function ==
+The [http://imagej.net/developer/macro/functions.html#eval <code>eval</code> function] can execute [[JavaScript]] (or [[BeanShell]] or [[Python]]) code directly. This is a powerful and flexible approach which can invoke nearly any Java API without needing to write external Java code.
+
+Here is an example which sets the position of a [[3D Viewer]] window:
+
+<source lang="java">
+run("MRI Stack (528K)");
+run("3D Viewer");
+call("ij3d.ImageJ3DViewer.add", "mri-stack.tif", "None", "mri-stack.tif", "0", "true", "true", "true", "2", "0");
+
+// Loop over all frames to find the 3D Viewer window(s)
+x = 200;
+y = 300;
+eval("script",
+	"frames = java.awt.Frame.getFrames();" +
+	"for (f=0; f<frames.length; f++) {" +
+	"  frame = frames[f];" +
+	"  if (\"ImageJ 3D Viewer\".equals(frame.getTitle())) {" +
+	"    frame.setLocation(" + x + ", " + y + ");" +
+	"  }" +
+	"}"
+);
+</source>
 
 = Further documentation =
 
