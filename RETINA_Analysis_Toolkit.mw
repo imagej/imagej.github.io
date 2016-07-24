@@ -2,8 +2,8 @@
 | logo                   = [[File:Fiji-icon.png | 96px]]
 | software               = ImageJ
 | name                   = RETINA Analysis Toolkit
-| author                  = [https://www.researchgate.net/profile/Daniel_Maidana2 '''Daniel E. Maidana, M.D.'''] <br> [https://www.masseyeandear.org/research/investigators/v/vavvas-demetrios-g '''Demetrios G. Vavvas, M.D., Ph.D.''']
-| maintainer           = '''Daniel E. Maidana, M.D.''' <br> Angiogenesis Laboratory <br>Massachusetts Eye and Ear Infirmary <br> Harvard Medical School ([mailto:Daniel_Maidana@MEEI.HARVARD.EDU Daniel_Maidana@meei.harvard.edu])
+| author                  = [https://www.researchgate.net/profile/Daniel_Maidana2 '''Daniel E. Maidana'''] <br> [https://www.masseyeandear.org/research/investigators/v/vavvas-demetrios-g '''Demetrios G. Vavvas''']
+| maintainer           = '''Daniel E. Maidana''' <br> Angiogenesis Laboratory <br>Massachusetts Eye and Ear Infirmary <br> Harvard Medical School ([mailto:Daniel_Maidana@MEEI.HARVARD.EDU Daniel_Maidana@meei.harvard.edu])
 | filename             = [https://github.com/DanielMaidana/RETINA_Cell_Counter/archive/master.zip RETINA Cell Counter]
 | source                 = [https://github.com/DanielMaidana/RETINA_Cell_Counter/edit/master/RETINA_Cell_Counter.ijm RETINA Cell Counter]<br>
 | released              = August 18<sup>th</sup>, 2015
