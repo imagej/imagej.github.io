@@ -11,7 +11,7 @@
 | status                  = Active and validated with Fiji (ImageJ 1.51d)
 | category               =[[:Category:Plugins|Plugins]]
 | website                = [https://www.youtube.com/channel/UCqGMCPY9ViyAPWhYciRNuKQ RETINA Analysis Toolkit at YouTube]
-}}<br>
+}}
 '''RETINA Analysis Toolkit''' is a free toolkit designed and developed for Fiji (ImageJ) by Daniel E. Maidana and Demetrios G. Vavvas, at the Angiogenesis Laboratory, Massachusetts Eye and Ear Infirmary, Harvard Medical School. The purpose of the RETINA Analysis Toolkit is to perform fast quantitation of digital images from retina cryosections, acquired by fluorescent or confocal microscopes. The current components of these toolkit are: RETINA Cell Counter and RETINA Cell Heatmap.
 
 __TOC__
