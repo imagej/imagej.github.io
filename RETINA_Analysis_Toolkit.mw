@@ -32,7 +32,7 @@ The following are required to execute this tool:
 
 == How to Use: 2 Minute Tutorial ==
 <br>
-{{#widget:YouTube|id=Fu1hKhHBmLQ|height=600|width=1080|alignment=center}} 
+{{#widget:YouTube|id=|height=600|width=1080|alignment=center}}
 
 == Processing Settings ==
 [[Image:RETINA_Cell_Counter_Dialog.png|thumb|right|400px|'''Settings Dialog''': Input the spatial scale obtained from the image metadata or microscope.]]
