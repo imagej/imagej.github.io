@@ -1,1 +1,95 @@
+<span style="color:#FF0000">THIS WEBSITE IS CURRENTLY UNDER MAINTENANCE.
 
+{{Infobox
+| logo                   = [[File:Fiji-icon.png | 96px]]
+| software               = ImageJ
+| name                   = RETINA Analysis Toolkit
+| author                  = [https://www.researchgate.net/profile/Daniel_Maidana2 '''Daniel E. Maidana, M.D.'''] <br> [https://www.masseyeandear.org/research/investigators/v/vavvas-demetrios-g '''Demetrios G. Vavvas, M.D., Ph.D.''']
+| maintainer           = '''Daniel E. Maidana, M.D.''' <br> Angiogenesis Laboratory <br>Massachusetts Eye and Ear Infirmary <br> Harvard Medical School ([mailto:Daniel_Maidana@MEEI.HARVARD.EDU Daniel_Maidana@meei.harvard.edu])
+| filename             = [https://github.com/DanielMaidana/RETINA_Cell_Counter/archive/master.zip RETINA Cell Counter]
+| source                 = [https://github.com/DanielMaidana/RETINA_Cell_Counter/edit/master/RETINA_Cell_Counter.ijm RETINA Cell Counter]<br>
+| released              = August 18<sup>th</sup>, 2015
+| latest version      = July 21<sup>th</sup>, 2016
+| status                  = Active and validated with Fiji (ImageJ 1.51d)
+| category               =[[:Category:Plugins|Plugins]]
+| website                = [https://www.youtube.com/channel/UCqGMCPY9ViyAPWhYciRNuKQ RETINA Analysis Toolkit at YouTube]
+}}<br>
+'''RETINA Analysis Toolkit''' is a free toolkit designed and developed for Fiji (ImageJ) by Daniel E. Maidana and Demetrios G. Vavvas, at the Angiogenesis Laboratory, Massachusetts Eye and Ear Infirmary, Harvard Medical School. The purpose of the RETINA Analysis Toolkit is to perform fast quantitation of digital images from retina cryosections, acquired by fluorescent or confocal microscopes. The current components of these toolkit are: RETINA Cell Counter and RETINA Cell Heatmap.
+
+__TOC__
+
+= RETINA Cell Counter =
+<br>
+RETINA Cell Counter is a customizable tool that processes digital images from retinal cryosections. It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates fluorescent-labelled cells in these layers. The validation process of the first version of this macro (TUNEL Cell Counter) can be found in our ''Investigative Ophthalmology & Visual Science (IOVS)'' paper. 
+[[Image:RETINA Cell Counter Montage.png |thumb|center|1200px|'''RETINA Cell Counter''': Input a fluorescent-labeled retinal image for ONL & INL layer segmentation and cell quantitation.]]
+
+
+
+== Setup ==
+The following are required to execute this tool: 
+#RETINA Cell Counter installed in Fiji (ImageJ).
+#Digital Image in TIFF format.
+#Microscope Spatial Scale (pixels/microns). 
+#Minimum Cell Size & Maximum Cell Area (µm<sup>2</sup>): These should be determined upfront, according to your sample. This can be performed in Fiji after setting the spatial scale factor.
+
+== How to Use: 2 Minute Tutorial ==
+<br>
+
+== Processing Settings ==
+[[Image:RETINA_Cell_Counter_Dialog.png|thumb|right|400px|'''Settings Dialog''': Input the spatial scale obtained from the image metadata or microscope.]]
+After importing a TIFF image and executing the counter, the following settings should be selected:
+#Microscope Magnification: Displays the working 20x objective magnification.
+#Image Native Resolution: Displays the imported image resolution.
+#Native Spatial Scale: Input the current image scale in pixels/microns.
+#Image Rescaling Options: If the image is larger that 1300 pixels width, it will be rescaled to speed up the processing. The rescaled image will be saved as a copy.
+#Minimum and Maximum Cell Area: Input the previously measured and selected cutoff values.
+#Cell Roundness: If “All” is selected, all thresholded cells will be counted (Circularity 0-1). If “Mostly rounded“ is selected, mostly circular cells will be counted (Circularity 0.5-1.0). If “Mostly not rounded“ is selected, mostly not circular cells will be counted (Circularity 0.0-0.5). 
+#Retina Area Selection: Choose between automated segmentation of ONL & INL or freehand area selection.
+#Threshold Sensitivity: Choose between a standard and high sensitivity threshold, in case you need to detect cells bearing with low intensity values.
+#Channels: Choose the cells of interest in either the green, red, or combined channels.
+#Help: Links directly to this site.
+
+{| 
+|style="vertical-align:top"|[[Image:RETINA_Cell_Counter_Roundness.png|thumb|center|300px|'''Cell Roundness''': Select the desired morphology for cells.]] 
+|style=“vertical-align:top"|[[Image:RETINA_Cell_Counter_Area.png|thumb|center|300px|'''Retina Area Selection''': Choose between automated or manual segmentation.]]
+|style=“vertical-align:top"|[[Image:RETINA_Cell_Counter_Threshold.png|thumb|center|300px|'''Threshold Sensitivity''': Select the threshold protocol for cell counting.]]
+|}
+
+== Results ==
+
+A processed image is generated and saved in a new directory. Results are saved as an Excel (.xls) file.
+
+= General Comments =
+== Limitations == 
+#Acquisition: The macro was designed for images acquired with a 20x/0.8 air objective. We considered this magnification the most suitable to assess a reasonably large area without missing out cell morphology details.
+#Staining quality: Images need to have an intense cell staining and low background noise.
+#Image Focus: Uneven image focus will render incomplete layer segmentation.
+#Indistinguishable Retinal Layers: The macro cannot distinguish between the ONL and INL if you can't either!
+#Uncentered Image: For best results, acquire images centered in frame.
+#Significant Shadowing: Shadowing will render incomplete layer segmentation.
+
+== FAQs ==
+# Q: Can I modify the source code?
+#*A: ''Yes, you can modify the code to develop new macros or plugins. Please acknowledge previous work that helped or inspired you, and share your contribution with the scientific community!''<br>
+# Q: I used this tool for my research. How should I acknowledge it?
+#*A: ''Please cite or reference this work as follows: Maidana DE, Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H, Miller JW, Vavvas DG. A Novel ImageJ Macro for Automated Cell Death Quantitation in the Retina. Invest Ophthalmol Vis Sci. 2015;56:6701–6708. DOI:10.1167/ iovs.15-17599.'' <br>
+# Q: I cannot get accurate segmentation or counting. Any advice?
+#*A: ''Check your acquisition and post-processing parameters for the channel of interest. First, reduce background as much as possible to remove any fragments. Next, adjust saturation until cells are easily identifiable. Apply the same settings to the entire dataset if comparison is intended.’'<br>
+
+== Future Developments ==
+Yes, we know there is a lot to improve! <br> 
+<b>In case you have any comments, suggestions, or any difficulties with your images, just send us a message!</b>
+
+== Version History ==
+* v2.0: Customizable cell count in the both red and green RGB channel. Improved image segmentation and stability when executed in Fiji.
+* v1.0: First and validated working version. Counts TUNEL<sup>+</sup> cells in the green RGB channel.
+
+== External Links ==
+#[http://www.masseyeandear.org Massachusetts Eye and Ear Infirmary]<br>
+#[http://iovs.arvojournals.org/article.aspx?articleid=2463763 IOVS Paper]
+
+== References ==
+#Maidana DE, Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H, Miller JW, Vavvas DG. A Novel ImageJ Macro for Automated Cell Death Quantitation in the Retina. Invest Ophthalmol Vis Sci. 2015;56:6701–6708. DOI:10.1167/ iovs.15-17599.''
+
+[[Category:Development]]
+[[Category:Plugins]]
