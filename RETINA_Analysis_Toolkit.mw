@@ -63,6 +63,13 @@ A processed image is generated and saved in a new directory. Results are saved a
 == Download and Install a Macro file ==
 {{#widget:YouTube|id=V3JogYc0Vig|height=600|width=1080|alignment=center}}
 
+1. Download macro file 
+2. Open Fiji (ImageJ) 
+3. Go to Plugins / Install
+4. Select macro *.ijm file
+5. Save file in selected folder (e.g. Plugins / Utilities)
+6. Close Fiji ImageJ to make changes
+
 == Limitations == 
 #Acquisition: The macro was designed for images acquired with a 20x/0.8 air objective. We considered this magnification the most suitable to assess a reasonably large area without missing out cell morphology details.
 #Staining quality: Images need to have an intense cell staining and low background noise.
