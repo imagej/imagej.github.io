@@ -2,8 +2,8 @@
 | logo                   = [[File:Fiji-icon.png | 96px]]
 | software               = ImageJ
 | name                   = RETINA Analysis Toolkit
-| author                  = [https://www.researchgate.net/profile/Daniel_Maidana2 '''Daniel E. Maidana'''] <br> [https://www.masseyeandear.org/research/investigators/v/vavvas-demetrios-g '''Demetrios G. Vavvas''']
-| maintainer           = '''Daniel E. Maidana''' <br> Angiogenesis Laboratory <br>Massachusetts Eye and Ear Infirmary <br> Harvard Medical School ([mailto:Daniel_Maidana@MEEI.HARVARD.EDU Daniel_Maidana@meei.harvard.edu])
+| author                  = [https://www.researchgate.net/profile/Daniel_Maidana2 '''Daniel E. Maidana, M.D.'''] <br> [https://www.masseyeandear.org/research/investigators/v/vavvas-demetrios-g '''Demetrios G. Vavvas, M.D., Ph.D.''']
+| maintainer           = '''Daniel E. Maidana, M.D.''' <br> Angiogenesis Laboratory <br>Massachusetts Eye and Ear Infirmary <br> Harvard Medical School ([mailto:Daniel_Maidana@MEEI.HARVARD.EDU Daniel_Maidana@meei.harvard.edu])
 | filename             = [https://github.com/DanielMaidana/RETINA_Cell_Counter/archive/master.zip RETINA Cell Counter]
 | source                 = [https://github.com/DanielMaidana/RETINA_Cell_Counter/edit/master/RETINA_Cell_Counter.ijm RETINA Cell Counter]<br>
 | released              = August 18<sup>th</sup>, 2015
@@ -11,14 +11,14 @@
 | status                  = Active and validated with Fiji (ImageJ 1.51d)
 | category               =[[:Category:Plugins|Plugins]]
 | website                = [https://www.youtube.com/channel/UCqGMCPY9ViyAPWhYciRNuKQ RETINA Analysis Toolkit at YouTube]
-}}
+}}<br>
 '''RETINA Analysis Toolkit''' is a free toolkit designed and developed for Fiji (ImageJ) by Daniel E. Maidana and Demetrios G. Vavvas, at the Angiogenesis Laboratory, Massachusetts Eye and Ear Infirmary, Harvard Medical School. The purpose of the RETINA Analysis Toolkit is to perform fast quantitation of digital images from retina cryosections, acquired by fluorescent or confocal microscopes. The current components of these toolkit are: RETINA Cell Counter and RETINA Cell Heatmap.
 
 __TOC__
 
 = RETINA Cell Counter =
 <br>
-RETINA Cell Counter is a customizable tool that processes digital images from retinal cryosections. It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates fluorescent-labelled cells in these layers. The validation process of the first version of this macro ('''TUNEL Cell Counter''') can be found in our ''Investigative Ophthalmology & Visual Science (IOVS)'' paper. 
+RETINA Cell Counter is a customizable tool that processes digital images from retinal cryosections. It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates fluorescent-labelled cells in these layers. The validation process of the first version of this macro (TUNEL Cell Counter) can be found in our ''Investigative Ophthalmology & Visual Science (IOVS)'' paper. 
 [[Image:RETINA Cell Counter Montage.png |thumb|center|1200px|'''RETINA Cell Counter''': Input a fluorescent-labeled retinal image for ONL & INL layer segmentation and cell quantitation.]]
 
 
@@ -28,10 +28,11 @@ The following are required to execute this tool:
 #RETINA Cell Counter installed in Fiji (ImageJ).
 #Digital Image in TIFF format.
 #Microscope Spatial Scale (pixels/microns). 
-#Minimum Cell Size & Maximum Cell Area (µm<sup>2</sup>): These should be determined upfront, according to your sample. This can be performed in Fiji after setting the spatial scale factor.
+#Minimum Cell Size & Maximum Cell Area (µm<sup>2</sup>): These should be determined upfront, according to your image dataset. This measurements can be performed in Fiji with the freehand selection tool, after setting the spatial scale factor.
 
 == How to Use: 2 Minute Tutorial ==
 <br>
+{{#widget:YouTube|id=Fu1hKhHBmLQ|height=600|width=1080|alignment=center}} 
 
 == Processing Settings ==
 [[Image:RETINA_Cell_Counter_Dialog.png|thumb|right|400px|'''Settings Dialog''': Input the spatial scale obtained from the image metadata or microscope.]]
@@ -58,6 +59,10 @@ After importing a TIFF image and executing the counter, the following settings s
 A processed image is generated and saved in a new directory. Results are saved as an Excel (.xls) file.
 
 = General Comments =
+<br>
+== Download and Install a Macro file ==
+{{#widget:YouTube|id=V3JogYc0Vig|height=600|width=1080|alignment=center}}
+
 == Limitations == 
 #Acquisition: The macro was designed for images acquired with a 20x/0.8 air objective. We considered this magnification the most suitable to assess a reasonably large area without missing out cell morphology details.
 #Staining quality: Images need to have an intense cell staining and low background noise.
