@@ -18,6 +18,11 @@
 
 __TOC__
 
+== Before you Start: Download and Install a Macro file ==
+<br>
+{{#widget:YouTube|id=V3JogYc0Vig|height=600|width=1080|alignment=center}}
+
+
 = RETINA Cell Counter =
 <br>
 RETINA Cell Counter is a customizable tool that processes digital images from retinal cryosections. It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates fluorescent-labelled cells in these layers. The validation process of the first version of this macro (TUNEL Cell Counter) can be found in our ''Investigative Ophthalmology & Visual Science (IOVS)'' paper. 
@@ -61,10 +66,6 @@ After importing a TIFF image and executing the counter, the following settings s
 A processed image is generated and saved in a new directory. Results are saved as an Excel (.xls) file.
 
 = General Comments =
-<br>
-== Download and Install a Macro file ==
-{{#widget:YouTube|id=V3JogYc0Vig|height=600|width=1080|alignment=center}}
-
 == Limitations == 
 #Acquisition: The macro was designed for images acquired with a 20x/0.8 air objective. We considered this magnification the most suitable to assess a reasonably large area without missing out cell morphology details.
 #Staining quality: Images need to have an intense cell staining and low background noise.
