@@ -1,5 +1,5 @@
 #REDIRECT [[RETINA Analysis Toolkit]]
-
+<br>
 Please visit http://imagej.net/RETINA_Analysis_Toolkit for updated versions of this macro.
 
 '''TUNEL Cell Counter''' is a free, open source macro created for ImageJ 1.49v developed by Daniel E. Maidana, M.D. and Demetrios G. Vavvas, M.D., Ph.D. at the Angiogenesis Laboratory, Massachusetts Eye and Ear Infirmary, Harvard Medical School. TUNEL Cell Counter has been validated for TUNEL assay quantitation in retinal cryo-sections using ImageJ 1.49v. This macro is able to analyze digital images obtained from fluorescence microscopes, segment the outer nuclear (ONL) and inner nuclear layer (INL), and count TUNEL-positive (TUNEL<sup>+</sup>) cells in each retinal layer. After analysis, TUNEL Cell Counter generates an array with several output variables. Additionally, the macro generates a merged image with segmented layers and quantitated cells for qualitative performance assessment. 
@@ -148,6 +148,3 @@ We are currently working on the following issues:
 
 == References ==
 #Maidana DE, Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H, Miller JW, Vavvas DG. A Novel ImageJ Macro for Automated Cell Death Quantitation in the Retina. Invest Ophthalmol Vis Sci. 2015;56:6701–6708. DOI:10.1167/ iovs.15-17599.''
-
-[[Category:Development]]
-[[Category:Plugins]]
