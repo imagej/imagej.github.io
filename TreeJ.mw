@@ -1,0 +1,54 @@
+{{Infobox
+| name                   = TreeJ
+|software = ImageJ and Fiji
+| author                  = [https://github.com/L-EL Elise Laruelle], Philippe Andrey, Jean-Christophe Palauqui, Alain Trubuil
+| filename               = [https://github.com/L-EL/TreeJ/raw/master/TreeJ_-1.0.0-SNAPSHOT.jar TreeJ_-1.0.0-SNAPSHOT.jar]
+| source                 = {{GitHub|org=L-EL|repo=TreeJ}}
+| Initial released       = July, 2016
+| category               = [[:Category:Analysis|Analysis]], [[:Category:Plugins|Plugins]]
+}}
+
+The plugin contains an interface to reconstruct interactively and recursively a cell lineage from a static labeled image.
+{{TOC}}
+== Guideline ==
+====Input ====
+TreeJ should be launched on a 2D or 3D labeled image (8 bits, 16 bits or 32 bits). The labeling can be discontinuous and watershed lines, if present, are not a problem. The region labels with zero is considered as the background.
+----
+==== Tree construction ====
+To link two sister cell (in ''Pair cells'' panel):
+* click on them on the image, it actualizes the corresponding fields (Label1 and Label2)
+* or write label numbers in fields Label1 and Label2
+'''Apply''' to validate the pairing
+
+'''Reset''' to put fields in their initial state.
+
+
+To make a modification (in ''Unpair or tag'' panel): 
+* select the erroneous mother cell with click+Ctrl (or Click+pom on MACOS) and 
+* or  write the label number in the Label field
+Validate with the '''Unpair''' button.
+----
+==== Tree annotation ====
+* if Tag field is filled during linking action, the create mother cell will have the tag
+* select the cell (Ctrl+click| pom+click) or enter its label number in the label field of the ''unpair and tag'' panel and enter the tag in the field "Tag"
+'''Apply''' to validate the tagging.
+----
+==== Image output====
+
+* TreeJ doesn't modify the input image to extract the modified shown image : use '''Current view'''
+* an image of cells from a '''Substree''' of Root label number
+* an image of all cells coming from a mother tagged with the wanted tag
+
+----
+==== Tree====
+To saved tree information, two possible formats :
+* '''.treeV''' home made format, compatible as input of TreeJ. Contain tree and tag information
+* '''.nwk''' [[http://evolution.genetics.washington.edu/phylip/newicktree.html newick tree]], compatible as input of treeJ, but contain only the tree information
+
+The drawing tree can be exportzd to a PDF file (named with the input image name) with the '''Export to PDF''' button.
+== Installation ==
+Download .jar and put it in "plugin" directory of ImageJ or Fiji directory. Reload ImageJ/Fiji and TreeJ will be accessible in the {{bc | Plugin | TreeJ}} menu.
+
+
+[[Category:Plugins]]
+[[Category:Analysis]]
