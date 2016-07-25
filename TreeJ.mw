@@ -8,9 +8,9 @@
 | category               = [[:Category:Analysis|Analysis]], [[:Category:Plugins|Plugins]]
 }}
 
-The plugin contains an interface to reconstruct interactively and recursively a cell lineage from a static labeled image.
+This plugin contains an interface to reconstruct interactively and recursively a cell lineage from a static labeled image.
 {{TOC}}
-== Guideline ==
+== Usage ==
 ====Input ====
 TreeJ should be launched on a 2D or 3D labeled image (8 bits, 16 bits or 32 bits). The labeling can be discontinuous and watershed lines, if present, are not a problem. The region labels with zero is considered as the background.
 ----
