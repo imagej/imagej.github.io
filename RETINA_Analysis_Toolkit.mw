@@ -26,7 +26,7 @@ __TOC__
 = RETINA Cell Counter =
 <br>
 RETINA Cell Counter is a customizable tool that processes digital images from retinal cryosections. It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates fluorescent-labelled cells in these layers. The validation process of the first version of this macro (TUNEL Cell Counter) can be found in our ''Investigative Ophthalmology & Visual Science (IOVS)'' paper. 
-[[Image:RETINA Cell Counter Montage.png |thumb|center|1200px|'''RETINA Cell Counter''': Input a fluorescent-labeled retinal image for ONL & INL layer segmentation and cell quantitation.]]
+[[Image:RETINA Cell Counter Montage.png |thumb|center|1000px|'''RETINA Cell Counter''': Input a fluorescent-labeled retinal image for ONL & INL layer segmentation and cell quantitation.]]
 
 
 
