@@ -1022,7 +1022,7 @@ margin-top: 1.75em;
 
 /* NB: Fix the height of the Usage maps to avoid a vertical scroll bar. */
 div#map {
-  height: 90%;
+  height: 90% !important;
 }
 
 /* </nowiki></pre> */
