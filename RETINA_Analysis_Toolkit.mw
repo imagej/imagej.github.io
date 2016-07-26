@@ -78,7 +78,7 @@ To have an idea of suitable images for this macro, we recommend to review the im
 # Q: I used this tool for my research. How should I acknowledge it?
 #*A: ''Please cite or reference this work as follows: Maidana DE, Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H, Miller JW, Vavvas DG. A Novel ImageJ Macro for Automated Cell Death Quantitation in the Retina. Invest Ophthalmol Vis Sci. 2015;56:6701–6708. DOI:10.1167/ iovs.15-17599.'' <br>
 # Q: I cannot get accurate segmentation or counting. Any advice?
-#*A: ''Check your acquisition and post-processing parameters for the channel of interest. First, reduce background as much as possible to remove any fragments. Next, adjust saturation until cells are easily identifiable. Apply the same settings to the entire dataset if comparison is intended.’'<br>
+#*A: ''Check your acquisition and post-processing parameters for the channel of interest. First, reduce background as much as possible to remove any fragments. Next, adjust saturation until cells are easily identifiable. Apply the same settings to the entire dataset if comparison is intended.''<br>
 
 == Future Developments ==
 Yes, we know there is a lot to improve! <br> 
