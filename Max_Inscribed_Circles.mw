@@ -18,7 +18,7 @@ The code for this plugin was inspired by this [http://www.mathworks.ch/matlabcen
 [[File:Max_largest_circ_dialog2.png |400px|thumb|right|Plugin Dialog choices]]
 
 == Details ==
-As of July 26th 2016, the plugins has been rewritten with a new algorithm to make it run much faster, described in the image. 
+As of July 26th 2016, the plugin has been rewritten with a new algorithm to make it run much faster.. See the faster implementation details figure.  
 [[File:Max-Circles-Algorithm-Overview.png|400px|thumb|right|Faster implementation details]]
 
 The previous implementation would calculate a distance map, then find the max value, place a circle and repeat. This was making it very slow for small circle diameters or large images as it needed to make one distance map calculation per circle on the whole image. 
@@ -27,7 +27,7 @@ By using a Local Maxima Finder, we can draw multiple circles on a single pass, p
 # The largest distances on the distance map image
 # Not overlapping with one another
 
-
+That way when there are plenty of circles that are the same size, we can draw them all at the same time. 
 == Installation == 
 This plugin is available from the [[List of update sites|BIOP Update Site]]
 This places it in a "BIOP" Folder in the plugins directory of Fiji/ImageJ
