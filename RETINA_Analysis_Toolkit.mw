@@ -13,7 +13,7 @@
 | status                  = Active and validated with Fiji (ImageJ 1.51d)
 | website                = [https://www.youtube.com/channel/UCqGMCPY9ViyAPWhYciRNuKQ RETINA Analysis Toolkit at YouTube]
 }}<br>
-'''RETINA Analysis Toolkit''' is a free macro toolkit designed and developed for Fiji (ImageJ) by Daniel E. Maidana and Demetrios G. Vavvas, at the Angiogenesis Laboratory, Massachusetts Eye and Ear Infirmary, Harvard Medical School. The purpose of the RETINA Analysis Toolkit is to perform fast quantitation of digital RGB images from retina cryosections, acquired by fluorescent or confocal microscopes. The current components of these toolkit are: TUNEL Cell Counter and RETINA Cell Heatmap.
+'''RETINA Analysis Toolkit''' is a free macro toolkit designed and developed for Fiji (ImageJ). The purpose of the RETINA Analysis Toolkit is to perform fast quantitation of digital RGB images from retina cryosections, acquired by fluorescent microscopes. The current components of these toolkit are: TUNEL Cell Counter and RETINA Cell Heatmap.
 
 __TOC__
 
@@ -86,3 +86,5 @@ Yes, we know there is a lot to improve! <br>
 #Maidana DE, Tsoka P, Tian B, Dib B, Matsumoto H, Kataoka K, Lin H, Miller JW, Vavvas DG. A Novel ImageJ Macro for Automated Cell Death Quantitation in the Retina. Invest Ophthalmol Vis Sci. 2015;56:6701–6708. DOI:10.1167/ iovs.15-17599.''
 
 = RETINA Cell Heatmap =
+
+[[Category:]]
