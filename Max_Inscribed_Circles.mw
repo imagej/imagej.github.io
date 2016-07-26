@@ -15,7 +15,7 @@
 This is an implementation of the Largest Inscribed Circle algorithm using an euclidean distance map. The algorithm is looped until a circle diameter smaller than the defined minimum diameter is found. 
 The code for this plugin was inspired by this [http://www.mathworks.ch/matlabcentral/fileexchange/30805-maximum-inscribed-circle-using-distance-transform Matlab Central function]
 
-[[File:Max_largest_circ_dialog2.png |400px|thumb|right|Plugin Dialog choices]]
+[[File:Max_largest_circ_dialog2.png |500px|thumb|right|Plugin Dialog choices]]
 
 == Details ==
 As of July 26th 2016, the plugin has been rewritten with a new algorithm to make it run much faster.. See the faster implementation details figure.  
