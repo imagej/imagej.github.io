@@ -20,7 +20,6 @@ __TOC__
 = MACRO Setup =
 == Download and Install a Macro ==
 <br>
-{{#widget:YouTube|id=V3JogYc0Vig|height=600|width=1080|alignment=center}}
 
 = TUNEL Cell Counter =
 <br>
@@ -36,7 +35,6 @@ The following are required to execute this tool:
 
 == How to Use: 2 Minute Tutorial ==
 <br>
-{{#widget:YouTube|id=eHCRZghZhgI|height=600|width=1080|alignment=center}}
 
 == Processing Settings ==
 [[Image:RETINA_Cell_Counter_Dialog.png|thumb|right|400px|'''Settings Dialog''': Input the spatial scale obtained from the image metadata or microscope.]]
