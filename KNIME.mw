@@ -11,7 +11,7 @@
 
 The [http://tech.knime.org/community/image-processing '''KN'''IME '''I'''mage '''P'''rocessing], extension, KNIP, provides ca. 100 nodes for (pre)-processing, filtering, segmentation, feature extraction, various views (2D, 3D), etc. and integrations for various other image processing tools are available.
 
-As part of the KNIP extension, there is a [http://tech.knime.org/community/imagej KNIME ImageJ plugin] consisting of two basic parts: the support for [[ImageJ1]] macro execution and the integration of [[ImageJ2]] plugins as KNIME nodes. Both approaches are available as KNIME plugin (currently beta status).
+As part of the KNIP extension, there is a [http://tech.knime.org/community/imagej ImageJ extension for KNIME] consisting of two basic parts: the support for [[ImageJ1]] macro execution and the integration of [[ImageJ2]] plugins as KNIME nodes. Both approaches are available as KNIME plugin (currently beta status).
 
 == See also ==
 * The [[ImageJ Ops]] framework for image-processing algorithms, which is developed as a collaboration between the [[ImageJ]] and KNIME teams.
