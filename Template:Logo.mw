@@ -1,17 +1,17 @@
 <includeonly>{{#switch: {{{1}}}
-| Eclipse = [[File:Eclipse-luna-icon.png | {{{2|64px}}} | link=Eclipse]]
-| Fiji = [[File:Fiji-icon.png | {{{2|64px}}} | link=Fiji]]
-| Git = [[File:Git-icon.png | {{{2|64px}}} | link=Git]]
-| GitHub = [[File:Octocat.png | {{{2|64px}}} | link=GitHub]]
-| ImageJ = [[File:Imagej2-icon.png | x{{{2|64px}}} | link=ImageJ]]
-| ImageJ1 = [[[Imagej1-icon.png | x{{{2|64px}}} | link=ImageJ1]]
-| ImageJ2 = [[File:Imagej2-icon.png| x{{{2|64px}}} | link=ImageJ2]]
-| ImgLib2 = [[File:Imglib2-icon.png | x{{{2|64px}}} | link=ImgLib2]]
-| LOCI = [[File:loci-logo.png | {{{2|64px}}} | link=LOCI]]
-| Maven = [[File:Maven-icon.png | {{{2|64px}}} | link=Maven]]
-| SCIFIO = [[File:Scifio-icon.png | {{{2|64px}}} | link=SCIFIO]]
-| SciJava = [[File:Scijava-icon.png | {{{2|64px}}} | link=SciJava]]
-| SLIM Curve = [[File:Slim-curve-icon.png | {{{2|64px}}} | link=SLIM Curve]]
+| Eclipse = [[File:Eclipse-luna-icon.png | {{{size|64px}}} | link=Eclipse]]
+| Fiji = [[File:Fiji-icon.png | {{{size|64px}}} | link=Fiji]]
+| Git = [[File:Git-icon.png | {{{size|64px}}} | link=Git]]
+| GitHub = [[File:Octocat.png | {{{size|64px}}} | link=GitHub]]
+| ImageJ = [[File:Imagej2-icon.png | x{{{size|64px}}} | link=ImageJ]]
+| ImageJ1 = [[[Imagej1-icon.png | x{{{size|64px}}} | link=ImageJ1]]
+| ImageJ2 = [[File:Imagej2-icon.png| x{{{size|64px}}} | link=ImageJ2]]
+| ImgLib2 = [[File:Imglib2-icon.png | x{{{size|64px}}} | link=ImgLib2]]
+| LOCI = [[File:loci-logo.png | {{{size|64px}}} | link=LOCI]]
+| Maven = [[File:Maven-icon.png | {{{size|64px}}} | link=Maven]]
+| SCIFIO = [[File:Scifio-icon.png | {{{size|64px}}} | link=SCIFIO]]
+| SciJava = [[File:Scijava-icon.png | {{{size|64px}}} | link=SciJava]]
+| SLIM Curve = [[File:Slim-curve-icon.png | {{{size|64px}}} | link=SLIM Curve]]
 | ''(Unknown logo: {{{1}}})''
 }}</includeonly><noinclude>
 == Usage ==
@@ -20,6 +20,6 @@ Specify a logo icon by name.
 {{Logo | ImageJ}}
 
 Optionally, override the icon size (default is 64px):
-<pre>{{Logo | ImageJ | 96px}}</pre>
-{{Logo | ImageJ | 96px}}
+<pre>{{Logo | ImageJ | size=96px}}</pre>
+{{Logo | ImageJ | size=96px}}
 </noinclude>
