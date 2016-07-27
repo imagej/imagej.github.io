@@ -1,6 +1,8 @@
 <includeonly>{{#switch: {{{1}}}
 | Alida = [[File:Alida-logo.jpg | x{{{size|48px}}} | link=Alida]]
 | Bio-Formats = [[File:Bio-formats-icon.png | x{{{size|48px}}} | link=Bio-Formats]]
+| Bio7 = [[File:Bio7-icon.png | x{{{size|48px}}} | link=Bio7]]
+| BoneJ = [[File:Bonej-icon.png | x{{{size|48px}}} | link=BoneJ]]
 | CellProfiler = [[File:Cellprofiler-icon.png | x{{{size|48px}}} | link=CellProfiler]]
 | Eclipse = [[File:Eclipse-luna-icon.png | x{{{size|48px}}} | link={{{link|Eclipse}}}]]
 | Fiji = [[File:Fiji-icon.png | x{{{size|48px}}} | link={{{link|Fiji}}}]]
