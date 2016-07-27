@@ -19,40 +19,50 @@ Thank you for your support.
 == Publications to cite ==
 
 {| class="wikitable"
+| '''Logo'''
 | '''Project'''
 | '''Citation'''
 |-
-! colspan=2 | Core projects
+! colspan=3 | Core projects
 |-
-| {{Logo | ImageJ1}}[[ImageJ 1.x]]
+| {{Logo | ImageJ1 | size=32px}}
+| [[ImageJ 1.x]]
 | {{Publication | ImageJ}}
 |-
-| {{Logo | ImageJ2}}[[ImageJ2]]
+| {{Logo | ImageJ2 | size=32px}}
+| [[ImageJ2]]
 | {{Publication | ImageJ2}}
 |-
-! colspan=2 | Distributions of ImageJ
+! colspan=3 | Distributions of ImageJ
 |-
-| {{Logo | Fiji | size=32px}} [[Fiji]]
+| {{Logo | Fiji | size=32px}}
+| [[Fiji]]
 | {{Publication | Fiji}}
 |-
-| {{Logo | BoneJ | size=32px}} [[BoneJ]]
+| {{Logo | BoneJ | size=32px}}
+| [[BoneJ]]
 | {{Publication | BoneJ}}
 |-
-| {{Logo | Bio7 | size=32px}} [[Bio7]]
+| {{Logo | Bio7 | size=32px}}
+| [[Bio7]]
 | {{Publication | Bio7}}
 |-
-! colspan=2 | Supporting libraries
+! colspan=3 | Supporting libraries
 |-
-| {{Logo | ImgLib2 | size=32px}} [[ImgLib2]]
+| {{Logo | ImgLib2 | size=32px}}
+| [[ImgLib2]]
 | {{Publication | ImgLib2}}
 |-
-| style="white-space: nowrap" | {{Logo|SciJava | size=32px}} [[SciJava Common]]
+| {{Logo|SciJava | size=32px}}
+| style="white-space: nowrap" | [[SciJava Common]]
 | {{Publication | SciJava Common}}
 |-
-| {{Logo | SCIFIO | size=32px}} [[SCIFIO]]
+| {{Logo | SCIFIO | size=32px}}
+| [[SCIFIO]]
 | {{Publication | SCIFIO}}
 |-
-| {{Logo | ImageJ | size=32px}} [[ImageJ Ops]]
+| {{Logo | ImageJ | size=32px}}
+| [[ImageJ Ops]]
 | {{Publication | ImageJ Ops}}
 |-
 | colspan=3 style="background: #777" |
