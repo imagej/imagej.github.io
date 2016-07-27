@@ -24,35 +24,35 @@ Thank you for your support.
 |-
 ! colspan=2 | Core projects
 |-
-| [[ImageJ]]
+| {{Logo | ImageJ1}}[[ImageJ 1.x]]
 | {{Publication | ImageJ}}
 |-
-| [[ImageJ2]]
+| {{Logo | ImageJ2}}[[ImageJ2]]
 | {{Publication | ImageJ2}}
 |-
 ! colspan=2 | Distributions of ImageJ
 |-
-| [[Fiji]]
+| {{Logo | Fiji | size=32px}} [[Fiji]]
 | {{Publication | Fiji}}
 |-
-| [[BoneJ]]
+| {{Logo | BoneJ | size=32px}} [[BoneJ]]
 | {{Publication | BoneJ}}
 |-
-| [[Bio7]]
+| {{Logo | Bio7 | size=32px}} [[Bio7]]
 | {{Publication | Bio7}}
 |-
 ! colspan=2 | Supporting libraries
 |-
-| [[ImgLib2]]
+| {{Logo | ImgLib2 | size=32px}} [[ImgLib2]]
 | {{Publication | ImgLib2}}
 |-
-| style="white-space: nowrap" | [[SciJava Common]]
+| style="white-space: nowrap" | {{Logo|SciJava | size=32px}} [[SciJava Common]]
 | {{Publication | SciJava Common}}
 |-
-| [[SCIFIO]]
+| {{Logo | SCIFIO | size=32px}} [[SCIFIO]]
 | {{Publication | SCIFIO}}
 |-
-| [[ImageJ Ops]]
+| {{Logo | ImageJ | size=32px}} [[ImageJ Ops]]
 | {{Publication | ImageJ Ops}}
 |-
 | colspan=3 style="background: #777" |
