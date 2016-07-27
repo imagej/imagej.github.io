@@ -1,7 +1,7 @@
 {{Infobox Plugin
 | software               = KNIME
 | name                   = KNIME Image Processing
-| logo                     = [[Image:Knime-icon.png|78px]]
+| logo                     = {{Logo | KNIME | size=78px}}
 | author                 = [http://www.knime.org/team KNIME team]
 | maintainer             = [http://www.knime.org/team KNIME team]
 | source                 = {{GitHub|org=knime-ip|repo=knip}}
