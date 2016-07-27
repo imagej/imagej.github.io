@@ -31,4 +31,6 @@ Specify a logo icon by name.
 Optionally, override the icon size (default is 48px):
 <pre>{{Logo | ImageJ | size=96px}}</pre>
 {{Logo | ImageJ | size=96px}}
+
+See also [[:Category:Logos]].
 </noinclude>
