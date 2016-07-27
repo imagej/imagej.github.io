@@ -32,7 +32,7 @@ public void loadAndDisplay(File file) {
 ImageJ is divided into three parts:
 
 {| class="wikitable nicetable"
-! colspan=2 style="font-size: 56px" | [[File:Imagej2-icon.png | x72px | link=ImageJ]] [[ImageJ]]
+! colspan=2 style="font-size: 56px" | {{Logo | ImageJ | size=72px}}[[ImageJ]]
 |-
 | colspan=2 style="text-align: center" | <span style="font-size: large">'''Image-specific components'''</span>
 <ul style="list-style-type: none; padding-top: 0.5em; padding-bottom: 1em">
@@ -43,7 +43,7 @@ ImageJ is divided into three parts:
 <li style="display: inline; background-color: peachpuff; border-radius: 0.5em; margin: 0.5em; padding: 0.5em">[[SCIFIO]]</li>
 </ul>
 |-
-! style="font-size: 56px; width: 350px" | [[File:Imglib2-icon.png | x72px | link=ImgLib2]] [[ImgLib2]]
+! style="font-size: 56px; width: 350px" | {{Logo | ImgLib2 | size=72px}}[[ImgLib2]]
 ! style="width: 350px" | [[File:Scijava-logo.png | x72px | link=SciJava]]
 |-
 | style="text-align: center; vertical-align: top" | <span style="font-size: large">'''Core image data model'''</span><br>
