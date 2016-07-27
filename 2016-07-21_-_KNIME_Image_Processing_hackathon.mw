@@ -126,6 +126,14 @@ File:hackathon-2016-konstanz-amazing-salt.jpg|caption|The gravity-defying salt s
 === Martin Horn & Alexander Fillbrunn ===
 * Started JavaScript based Image Viewer with BigDataViewer as tile-server
 
+=== Stefan Helfrich ===
+* Proof-of-principle implementations of MatrixType and VectorType ({{GitHub | org=stelfrich | repo=imglib2 | label=matrixType}})
+* Enable using global thresholds as local thresholds in Ops
+* Improve default OOBF handling for filters
+** i.e. do not apply an OOBF if an image already is extended
+** Add defined bounds for RandomAccessibles ([https://github.com/stelfrich/imglib2/tree/random-access-defined-bounds imglib2/random-access-defined-bounds])
+** Implement Shape.getBoundingBox() ({{GitHub | org=imglib | repo=imglib2 | pr=27 | label=imglib2#27}})
+
 == Technical discussions ==
 * The future of ImageJ user interfaces: ImageJFX? KNIME? JavaScript + RESTful image server?
 * Languages on the JVM: using Scala, Kotlin and/or Groovy for future SciJava components
