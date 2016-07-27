@@ -22,17 +22,17 @@ The following components are part of the '''[[Architecture|SciJava software stac
 
 The following projects are part of the '''[[:Category:SciJava|SciJava pledge]]''' to work together, reuse code and synergize wherever possible:
 {| class="nicetable"
-| style="vertical-align: middle" | [[File:Imagej2-icon.png | x64px | link=ImageJ2]]
+| style="vertical-align: middle" | {{Logo | ImageJ2}}
 | style="vertical-align: middle" | [[File:Cellprofiler-logo.png | x64px | link=CellProfiler]]
 | style="vertical-align: middle" | [[File:Knime-logo.jpg | x54px | link=KNIME]]
 | style="vertical-align: middle" | [[File:Omero-logo.png | x32px | link=OMERO]]
-| style="vertical-align: middle" | [[File:Alida-logo.jpg | x48px | link=Alida]]
+| style="vertical-align: middle" | {{Logo | Alida | size=48px}}
 |-
-| style="vertical-align: middle" | [[File:Fiji-icon.png | x64px | link=Fiji]]
+| style="vertical-align: middle" | {{Logo | Fiji}}
 | style="vertical-align: middle" | [[File:Icy-logo.png | x48px | link=Icy]]
-| style="vertical-align: middle" | [[File:Mm-icon.jpg | x48px | link=Micro-Manager]]
+| style="vertical-align: middle" | {{Logo | Micro-Manager | size=48px}}
 | style="vertical-align: middle" | [[File:Bio-formats-logo.png | x28px | link=Bio-Formats]]
-| style="vertical-align: middle" | [[File:MiToBo-logo.png | x48px | link=MiToBo]]
+| style="vertical-align: middle" | {{Logo | MiToBo | size=48px}}
 |}
 
 See the [[Architecture]] and [[Governance]] pages, as well as the [http://scijava.org/ SciJava web site], for further details.
