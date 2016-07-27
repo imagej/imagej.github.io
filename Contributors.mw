@@ -12,11 +12,9 @@
 * [http://www.informatik.uni-konstanz.de/berthold/mitglieder/prof-dr-michael-berthold/ Michael Berthold]<sup>9</sup> (KNIME)
 * [http://www.lifesci.dundee.ac.uk/people/jason-swedlow Jason Swedlow]<sup>10,11</sup> (OME)
 
-=== {{Logo | ImageJ1 | size=32px}}[[ImageJ1]] ===
-* {{Person|Rasband}}<sup>1</sup> (lead)
-
-=== {{Logo | ImageJ2 | size=32px}}[[ImageJ2]] ===
-* {{Person|Rueden}}<sup>2</sup> (lead)
+=== {{Logo | ImageJ | size=32px}}[[ImageJ]] ===
+* {{Person|Rasband}}<sup>1</sup> (lead, [[ImageJ 1.x]])
+* {{Person|Rueden}}<sup>2</sup> (lead, [[ImageJ2]])
 * {{Person|Dietzc}}<sup>9</sup>
 * {{Person|Bnorthan}}<sup>13</sup>
 * {{Person|Hinerm}}<sup>2</sup> (Sep 2010-Jun 2016)
