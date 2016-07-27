@@ -26,6 +26,11 @@
 * Adam Fraser<sup>4</sup> (Nov 2009-Aug 2011)
 * {{Person|Lentz}}<sup>2</sup> (Nov 2009-Feb 2011)
 * See also [http://forum.imagej.net/users ImageJ forum heroes]
+
+=== {{Logo | ImgLib2 | size=32px}}[[ImgLib2]] ===
+* {{Person|Pietzsch}}<sup>3</sup> (lead)
+* {{Person|StephanP}}<sup>3</sup>
+* {{Person|Saalfeld}}<sup>3,12</sup>
 </div>
 
 <div style="float: left">
@@ -56,11 +61,6 @@
 </div>
 
 <div style="float: left">
-
-=== {{Logo | ImgLib2 | size=32px}}[[ImgLib2]] ===
-* {{Person|Pietzsch}}<sup>3</sup> (lead)
-* {{Person|StephanP}}<sup>3</sup>
-* {{Person|Saalfeld}}<sup>3,12</sup>
 
 === {{Logo | SCIFIO | size=32px}}[[SCIFIO]] ===
 * {{Person|Rueden}}<sup>2</sup> (lead)
