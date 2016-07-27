@@ -12,10 +12,10 @@
 * [http://www.informatik.uni-konstanz.de/berthold/mitglieder/prof-dr-michael-berthold/ Michael Berthold]<sup>9</sup> (KNIME)
 * [http://www.lifesci.dundee.ac.uk/people/jason-swedlow Jason Swedlow]<sup>10,11</sup> (OME)
 
-=== [[ImageJ1]] ===
+=== {{Logo | ImageJ1 | size=32px}}[[ImageJ1]] ===
 * {{Person|Rasband}}<sup>1</sup> (lead)
 
-=== [[ImageJ2]] ===
+=== {{Logo | ImageJ2 | size=32px}}[[ImageJ2]] ===
 * {{Person|Rueden}}<sup>2</sup> (lead)
 * {{Person|Dietzc}}<sup>9</sup>
 * {{Person|Bnorthan}}<sup>13</sup>
@@ -31,7 +31,7 @@
 
 <div style="float: left">
 
-=== [[Fiji]] ===
+=== {{Logo | Fiji | size=32px}}[[Fiji]] ===
 * {{Person|Rueden}}<sup>2</sup> (lead)
 * {{Person|JeanYvesTinevez}}<sup>8</sup>
 * {{Person|Iarganda}}<sup>14</sup>
@@ -58,20 +58,20 @@
 
 <div style="float: left">
 
-=== [[ImgLib2]] ===
+=== {{Logo | ImgLib2 | size=32px}}[[ImgLib2]] ===
 * {{Person|Pietzsch}}<sup>3</sup> (lead)
 * {{Person|StephanP}}<sup>3</sup>
 * {{Person|Saalfeld}}<sup>3,12</sup>
 
-=== [[SCIFIO]] ===
+=== {{Logo | SCIFIO | size=32px}}[[SCIFIO]] ===
 * {{Person|Rueden}}<sup>2</sup> (lead)
 * {{Person|Hinerm}}<sup>2</sup> (founder)
 
-=== [[CellProfiler]] ===
+=== {{Logo | CellProfiler | size=32px}}[[CellProfiler]] ===
 * {{Person|0x00B1}}<sup>4</sup> (lead)
 * {{Person|Leek}}<sup>4</sup> (former)
 
-=== [[KNIME|KNIME Image Processing]] ===
+=== {{Logo | KNIME | size=32px}}[[KNIME|KNIME Image Processing]] ===
 * {{Person|Dietzc}}<sup>9</sup> (lead)
 * Martin Horn<sup>9</sup>
 * Tim-Oliver Buchholz<sup>9</sup>
@@ -80,7 +80,7 @@
 * Daniel Seebacher<sup>9</sup>
 * Andreas Burger<sup>9</sup>
 
-=== [[OME]] ===
+=== {{Logo | OME | size=32px}}[[OME]] ===
 * {{Person|Moore}}<sup>10,11</sup> (co-lead)
 * Jean-Marie Burel<sup>11</sup> (co-lead)
 * Chris Allan<sup>10</sup> (co-lead)
