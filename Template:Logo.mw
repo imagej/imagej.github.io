@@ -12,7 +12,7 @@
 | SCIFIO = [[File:Scifio-icon.png | {{{size|64px}}} | link={{{link|SCIFIO}}}]]
 | SciJava = [[File:Scijava-icon.png | {{{size|64px}}} | link={{{link|SciJava}}}]]
 | SLIM Curve = [[File:Slim-curve-icon.png | {{{size|64px}}} | link={{{link|SLIM Curve}}}]]
-| ''(Unknown logo: {{{1}}})''
+| [[File:{{{1}}}-icon.png | {{{size|64px}}} | link={{{link|{{{1}}}}}}
 }}</includeonly><noinclude>
 == Usage ==
 Specify a logo icon by name.
