@@ -110,7 +110,7 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 | '''Developers'''
 | '''Contributors'''
 |-
-| [[File:scijava-icon.png|48px]]
+| {{Logo | SciJava}}
 | '''[[SciJava]]'''
 | {{Person|Moore}}<br>{{Person|Rueden}}
 | {{Person|Rueden}}
@@ -118,7 +118,7 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 | [https://github.com/orgs/scijava/people List on GitHub]
 | See [[Contributors]]
 |-
-| [[File:imglib2-icon.png|48px]]
+| {{Logo | ImgLib2}}
 | '''[[ImgLib2]]'''
 | {{Person|Saalfeld}}<br>{{Person|StephanP}}
 | {{Person|Pietzsch}}<sup>1</sup><br>{{Person|StephanP}}<br>{{Person|Saalfeld}}
@@ -126,7 +126,7 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 | [https://github.com/orgs/imglib/people List on GitHub]
 | See [[Contributors]]
 |-
-| [[File:imagej1-icon.png|48px]]
+| {{Logo | ImageJ1}}
 | '''[[ImageJ1]]'''
 | {{Person|Rasband}}
 | {{Person|Rasband}}
@@ -134,7 +134,7 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 | {{Person|Rasband}}
 | See [http://imagej.net/notes.html release notes]
 |-
-| [[File:imagej2-icon.png|48px]]
+| {{Logo | ImageJ2}}
 | '''[[ImageJ2]]'''
 | {{Person|Rueden}}<br>{{Person|Eliceiri}}
 | {{Person|Rueden}}
@@ -142,7 +142,7 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 | [https://github.com/orgs/imagej/people List on GitHub]
 | See [[Contributors]]
 |-
-| [[File:scifio-icon.png|48px]]
+| {{Logo | SCIFIO}}
 | '''[[SCIFIO]]'''
 | {{Person|Rueden}}<br>{{Person|Eliceiri}}<br>{{Person|Hinerm}}
 | {{Person|Rueden}}
@@ -150,7 +150,7 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 | [https://github.com/orgs/scijava/people List on GitHub]
 | See [[Contributors]]
 |-
-| rowspan=3 style="vertical-align: middle" | [[File:fiji-icon.png|48px]]
+| rowspan=3 style="vertical-align: middle" | {{Logo | Fiji}}
 | '''[[Fiji]]'''
 | {{Person|Schindelin}}<br>{{Person|Albertcardona}}
 | {{Person|Rueden}}<br>{{Person|Schindelin}}<sup>2</sup>
@@ -172,7 +172,7 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 | [https://github.com/orgs/trakem2/people List on GitHub]
 | [https://github.com/trakem2/TrakEM2/graphs/contributors Info on GitHub]
 |-
-| [[File:slim-curve-icon.png|48px]]
+| {{Logo | SLIM Curve}}
 | '''[[SLIM Curve]]'''
 | Paul Barber<br>{{Person|Rueden}}
 | Paul Barber<sup>3</sup><br>{{Person|Rueden}}<sup>3</sup>
@@ -180,7 +180,7 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 | [https://github.com/orgs/slim-curve/people List on GitHub]
 | [https://github.com/slim-curve/slim-plugin/graphs/contributors Info on GitHub]
 |-
-| [[File:bio-formats-icon.png|48px]]
+| {{Logo | Bio-Formats}}
 | '''[[Bio-Formats]]'''
 | {{Person|Rueden}}<br>{{Person|Eliceiri}}
 | {{Person|Linkert}}
@@ -188,7 +188,7 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 | [https://github.com/openmicroscopy/bioformats/graphs/contributors List on GitHub]
 | See [http://www.openmicroscopy.org/site/about/ome-contributors OME Contributors]
 |-
-| [[File:knime-icon.png|48px]]
+| {{Logo | KNIME}}
 | style="white-space: normal" | '''[[KNIME|KNIME Image Processing]]'''
 | {{Person|Dietzc}}<br>Martin Horn
 | {{Person|Dietzc}}
@@ -196,7 +196,7 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 | [https://github.com/orgs/knime-ip/people List on GitHub]
 | See [[Contributors]]
 |-
-| [[File:cellprofiler-icon.png|48px]]
+| {{Logo | CellProfiler}}
 | '''[[CellProfiler]]'''
 | {{Person|Leek}}<br>Anne Carpenter
 | {{Person|Leek}}
@@ -204,7 +204,7 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 | [https://github.com/orgs/CellProfiler/people List on GitHub]
 | See [[Contributors]]
 |-
-| [[File:Omero-icon.png|48px]]
+| {{Logo | OMERO}}
 | '''[[OMERO]]'''
 | {{Person|Moore}}<br>Jean-Marie Burel<br>Chris Allan<br>Jason Swedlow
 | {{Person|Moore}}<br>Jean-Marie Burel<br>Chris Allan
@@ -212,7 +212,7 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 | [https://github.com/orgs/openmicroscopy/people List on GitHub]
 | [https://github.com/openmicroscopy/openmicroscopy/graphs/contributors Info on GitHub]
 |-
-| [[File:Icy-icon.png|48px]]
+| {{Logo | Icy}}
 | '''[[Icy]]'''
 | Stephane Dallongeville<br>{{Person|Fab14}}<br>Jean-Christophe Olivo-Marin
 | Stephane Dallongeville<br>{{Person|Fab14}}
@@ -220,7 +220,7 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 | [https://github.com/orgs/Icy-imaging/people List on GitHub]
 | [https://github.com/Icy-imaging/Icy-Kernel/graphs/contributors Info on GitHub]
 |-
-| [[File:Alida-logo.jpg|48px]]
+| {{Logo | Alida}}
 | '''[[Alida]]'''
 | Stefan Posch<br>Birgit Möller
 | Stefan Posch<br>Birgit Möller
@@ -228,7 +228,7 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 | [https://github.com/orgs/alida-hub/people List on GitHub]
 | [https://github.com/alida-hub/alida/graphs/contributors Info on GitHub]
 |-
-| [[File:MiToBo-logo.png|48px]]
+| {{Logo | MiToBo}}
 | '''[[MiToBo]]'''
 | Stefan Posch<br>Birgit Möller
 | Stefan Posch<br>Birgit Möller
