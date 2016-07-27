@@ -1,29 +1,29 @@
 <includeonly>{{#switch: {{{1}}}
-| Alida = [[File:Alida-logo.jpg | x{{{size|64px}}} | link=Alida]]
-| CellProfiler = [[File:Cellprofiler-icon.png | {{{size|64px}}} | link=CellProfiler]]
-| Eclipse = [[File:Eclipse-luna-icon.png | {{{size|64px}}} | link={{{link|Eclipse}}}]]
-| Fiji = [[File:Fiji-icon.png | {{{size|64px}}} | link={{{link|Fiji}}}]]
-| Git = [[File:Git-icon.png | {{{size|64px}}} | link={{{link|Git}}}]]
-| GitHub = [[File:Octocat.png | {{{size|64px}}} | link={{{link|GitHub}}}]]
-| ImageJ = [[File:Imagej2-icon.png | x{{{size|64px}}} | link={{{link|ImageJ}}}]]
-| ImageJ1 = [[[Imagej1-icon.png | x{{{size|64px}}} | link={{{link|ImageJ1}}}]]
-| ImageJ2 = [[File:Imagej2-icon.png| x{{{size|64px}}} | link={{{link|ImageJ2}}}]]
-| ImgLib2 = [[File:Imglib2-icon.png | x{{{size|64px}}} | link={{{link|ImgLib2}}}]]
-| LOCI = [[File:loci-logo.png | {{{size|64px}}} | link={{{link|LOCI}}}]]
-| Maven = [[File:Maven-icon.png | {{{size|64px}}} | link={{{link|Maven}}}]]
-| Micro-Manager = [[File:Mm-icon.jpg | x{{{size|64px}}} | link=Micro-Manager]]
-| MiToBo = [[File:MiToBo-logo.png | x{{{size|64px}}} | link=MiToBo]]
-| SCIFIO = [[File:Scifio-icon.png | {{{size|64px}}} | link={{{link|SCIFIO}}}]]
-| SciJava = [[File:Scijava-icon.png | {{{size|64px}}} | link={{{link|SciJava}}}]]
-| SLIM Curve = [[File:Slim-curve-icon.png | {{{size|64px}}} | link={{{link|SLIM Curve}}}]]
-| [[File:{{{1}}}-icon.png | {{{size|64px}}} | link={{{link|{{{1}}}}}}]]
+| Alida = [[File:Alida-logo.jpg | x{{{size|48px}}} | link=Alida]]
+| CellProfiler = [[File:Cellprofiler-icon.png | {{{size|48px}}} | link=CellProfiler]]
+| Eclipse = [[File:Eclipse-luna-icon.png | {{{size|48px}}} | link={{{link|Eclipse}}}]]
+| Fiji = [[File:Fiji-icon.png | {{{size|48px}}} | link={{{link|Fiji}}}]]
+| Git = [[File:Git-icon.png | {{{size|48px}}} | link={{{link|Git}}}]]
+| GitHub = [[File:Octocat.png | {{{size|48px}}} | link={{{link|GitHub}}}]]
+| ImageJ = [[File:Imagej2-icon.png | x{{{size|48px}}} | link={{{link|ImageJ}}}]]
+| ImageJ1 = [[[Imagej1-icon.png | x{{{size|48px}}} | link={{{link|ImageJ1}}}]]
+| ImageJ2 = [[File:Imagej2-icon.png| x{{{size|48px}}} | link={{{link|ImageJ2}}}]]
+| ImgLib2 = [[File:Imglib2-icon.png | x{{{size|48px}}} | link={{{link|ImgLib2}}}]]
+| LOCI = [[File:loci-logo.png | {{{size|48px}}} | link={{{link|LOCI}}}]]
+| Maven = [[File:Maven-icon.png | {{{size|48px}}} | link={{{link|Maven}}}]]
+| Micro-Manager = [[File:Mm-icon.jpg | x{{{size|48px}}} | link=Micro-Manager]]
+| MiToBo = [[File:MiToBo-logo.png | x{{{size|48px}}} | link=MiToBo]]
+| SCIFIO = [[File:Scifio-icon.png | {{{size|48px}}} | link={{{link|SCIFIO}}}]]
+| SciJava = [[File:Scijava-icon.png | {{{size|48px}}} | link={{{link|SciJava}}}]]
+| SLIM Curve = [[File:Slim-curve-icon.png | {{{size|48px}}} | link={{{link|SLIM Curve}}}]]
+| [[File:{{{1}}}-icon.png | {{{size|48px}}} | link={{{link|{{{1}}}}}}]]
 }}</includeonly><noinclude>
 == Usage ==
 Specify a logo icon by name.
 <pre>{{Logo | ImageJ}}</pre>
 {{Logo | ImageJ}}
 
-Optionally, override the icon size (default is 64px):
+Optionally, override the icon size (default is 48px):
 <pre>{{Logo | ImageJ | size=96px}}</pre>
 {{Logo | ImageJ | size=96px}}
 </noinclude>
