@@ -38,7 +38,7 @@ Download and install IDEA from the [http://www.jetbrains.com/idea/download/ IDEA
 
 == Import the ImageJ source ==
  
-# From the IDEA menu, choose Version Control &gt; Checkout from Version Control &gt; Git
+# From the IDEA menu, choose {{bc|Version Control|Checkout from Version Control|Git}}
 # For the Git Repository URL, enter: <code>git://github.com/imagej/imagej</code>
 # Specify a Parent Directory, click Clone, and wait
 # When prompted, click Yes to create an IntelliJ IDEA project from the sources
@@ -52,13 +52,13 @@ If there are non-compiling components outside of ''core'' and ''ui'', you can te
  
 == Launch the program ==
  
-# Choose Run &gt; Edit Configurations from the menu
+# Choose {{bc|Run|Edit Configurations}} from the menu
 # Click the Plus icon and choose Application
 # In the Name field, type "ImageJ"
 # Type "net.imagej.Main" for the Main class
 # For "Use classpath and JDK of module" select "imagej" from the list
 # Click OK
-# Choose Run &gt; Run 'ImageJ' from the menu
+# Choose {{bc|Run|Run 'ImageJ'}} from the menu
  
 The project automatically builds before launching, so it may take a little while the first time.
 
