@@ -14,15 +14,18 @@
 | ImageJ2 = [[File:Imagej2-icon.png| x{{{size|48px}}} | link={{{link|ImageJ2}}}]]
 | ImgLib2 = [[File:Imglib2-icon.png | x{{{size|48px}}} | link={{{link|ImgLib2}}}]]
 | KNIME = [[File:Knime-icon.png | x{{{size|48px}}} | link={{{link|KNIME}}}]]
+| Linux = [[File:tux.png|{{{size|48px}}|link=]]
 | LOCI = [[File:loci-logo.png | x{{{size|48px}}} | link={{{link|LOCI}}}]]
 | Maven = [[File:Maven-icon.png | {{{size|48px}}} | link={{{link|Maven}}}]]
 | Micro-Manager = [[File:Mm-icon.jpg | x{{{size|48px}}} | link=Micro-Manager]]
 | MiToBo = [[File:MiToBo-logo.png | x{{{size|48px}}} | link=MiToBo]]
 | OME = [[File:Ome-icon.png | x{{{size|48px}}} | link={{{link|OME}}}]]
 | OMERO = [[File:Omero-icon.png | x{{{size|48px}}} | link={{{link|OMERO}}}]]
+| OS X = [[File:osx.png|{{{size|48px}}|link=]]
 | SCIFIO = [[File:Scifio-icon.png | x{{{size|48px}}} | link={{{link|SCIFIO}}}]]
 | SciJava = [[File:Scijava-icon.png | x{{{size|48px}}} | link={{{link|SciJava}}}]]
 | SLIM Curve = [[File:Slim-curve-icon.png | x{{{size|48px}}} | link={{{link|SLIM Curve}}}]]
+| Windows = [[File:win.png|{{{size|48px}}|link=]]
 | [[File:{{{1}}}-icon.png | x{{{size|48px}}} | link={{{link|{{{1}}}}}}]]
 }}</includeonly><noinclude>
 == Usage ==
