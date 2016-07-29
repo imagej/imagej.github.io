@@ -3,38 +3,9 @@ This article explains how to install and configure IntelliJ IDEA for use with [[
 
 == Install and configure IDEA ==
 
-=== Setting up IDEA on Windows ===
+* '''Install Java Development Kit.''' Download and install Java SE 8 from the [http://www.oracle.com/technetwork/java/javase/downloads/ Java web site]. Or install it via a package manager, if possible.
 
-==== Install Java Development Kit ====
-
-Download and install JDK 6 from the [http://www.oracle.com/technetwork/java/javase/downloads/ Java web site].
-
-==== Install IDEA ====
-
-Download and install IDEA from the [http://www.jetbrains.com/idea/download/ IDEA web site].
-
-=== Setting up IDEA on Mac OS X ===
-
-==== Install IDEA ====
-
-Download and install IDEA from the [http://www.jetbrains.com/idea/download/ IDEA web site].
-
-=== Setting up IDEA on Linux ===
-
-==== Install Java Development Kit ====
-
-Install Java using the package manager—e.g., for Ubuntu 10.04:
-
-<source lang="bash">
-sudo add-apt-repository "deb http://archive.canonical.com/ lucid partner"
-sudo aptitude update
-sudo aptitude install sun-java6-jdk sun-java6-plugin
-sudo update-java-alternatives -s sun-java6-sun
-</source>
-
-==== Install IDEA ====
-
-Download and install IDEA from the [http://www.jetbrains.com/idea/download/ IDEA web site].
+* '''Install IDEA.''' Download and install IDEA from the [http://www.jetbrains.com/idea/download/ IDEA web site].
 
 == Import the ImageJ source ==
  
@@ -47,9 +18,7 @@ On some platforms, the first time you perform this procedure, you may be prompte
 
 # Click the plus sign and choose "JSDK"
 # Navigate to the directory containing your JDK installation
- 
-If there are non-compiling components outside of ''core'' and ''ui'', you can tell IntelliJ not to build them by selecting them in the Project outline and pressing the Delete key (this will not remove the files nor the name from the outline).
- 
+
 == Launch the program ==
  
 # Choose {{bc|Run|Edit Configurations}} from the menu
