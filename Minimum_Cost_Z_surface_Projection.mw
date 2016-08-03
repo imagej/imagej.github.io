@@ -1,3 +1,16 @@
+{{Infobox
+| software               = ImageJ/Fiji
+| name                   = Min Cost Z Surface
+| author                 = [[User:Benoit|Benoit Lombardot]]
+| maintainer             = [[User:Benoit|Benoit Lombardot]]
+| released               = 03 August 2016
+| filename               = [[File:MinCostZSurface_-1.1.0.jar.zip]]
+| source                 = [https://git.mpi-cbg.de/bioimage-informatics/MinCostSurface_Projection]
+| category               = [[:Category:Plugins|Plugins]], [[:Category:Projection|Projection]]
+}}
+
+[[Category:Plugins]]
+[[Category:Projection]]
 
 ==Introduction==
 This plugin detects minimum cost z-surface in a 3D volume. A z surface is like a topographic map indicating  the altitude z as a function of the position (x,y). The cost of the surface depends on pixel intensity the surface is going through. this plugin find the z-surface with the lowest intensity in an image.
