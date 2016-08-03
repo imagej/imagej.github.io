@@ -21,11 +21,11 @@ The surface detection can be used to remove surface structure that occludes obje
 
 
 [[File:MinCostSurf Ex2 SurfaceSelection.PNG|center]]
-<div align="center">'''Figure 1''' shows the projection of a wing with and without projection. The use of surface detection allows to remove structure degrading the details of the wing cell structure.Image: Andreas Sagner, Eaton lab, MPI-CBG, Dresden</div>
+<div align="center">'''Figure 1''' shows the projection of a wing with and without projection. The use of surface detection allows to remove structure degrading the details of the wing cell structure.Data credit: Andreas Sagner, Eaton lab, MPI-CBG, Dresden</div>
 
 
 [[File:MinCostSurf Ex1 removeSurface.PNG|center]]
-<div align="center">'''Figure 2''' shows how the surface of an embryo can be virtually removed to ease the observation and analysis of internal organs.Image: Shradha Das, Knust Lab, MPI-CBG, Dresden</div>
+<div align="center">'''Figure 2''' shows how the surface of an embryo can be virtually removed to ease the observation and analysis of internal organs.data credit: Shradha Das, Knust Lab, MPI-CBG, Dresden</div>
 
 ==Usage==
 Both examples illustrated shown in the previous section can be reproduced with the Min_Cost_Surface plugin. Below is a tutorial to reproduce the example from figure 1. First of all load an image with a surface structure you would like to detect. In our example it is portion of a fly wing. the wing is not flat and can not be visualized in a single slice. Max Projection of the image give poor result in visualizing the wing in  a single plane since other structures present in the volume hide the details of the wing. The plugin allows to detect the wing surface and to select a region with a user defined thickness around it.
