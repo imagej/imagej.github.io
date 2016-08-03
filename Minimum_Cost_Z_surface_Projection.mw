@@ -15,20 +15,20 @@ __TOC__
 [[Category:Projection]]
 
 ==Introduction==
-This plugin detects minimum cost z-surface in a 3D volume. A z surface is like a topographic map indicating  the altitude z as a function of the position (x,y). The cost of the surface depends on pixel intensity the surface is going through. this plugin find the z-surface with the lowest intensity in an image.
+This plugin detects minimum cost z-surface in a 3D volume. A z surface is a topographic map indicating the altitude z as a function of the position (x,y) in the image. The cost of the surface depends on pixel intensity the surface is going through. This plugin find the z-surface with the lowest intensity in an image.
 
-The surface detection can be used to remove surface structure that occludes object of interest. Inversely, if want to visualize the surface other object can be removed by setting to 0 object far from the surface. Figure 1 and 2 are two example illustrating these use cases.
+The detected surface can be used to remove signal close to the surface. For instance if the surface is occluding other objects of interest. Inversely, if one wants to visualize a surface ocluded by other object the signal far from the surface can be attenuated. Figure 1 and 2 are illustrate these use cases.
 
 
 [[File:MinCostSurf Ex2 SurfaceSelection.PNG|center]]
-<div align="center">'''Figure 1''' shows the projection of a wing with and without projection. The use of surface detection allows to remove structure degrading the details of the wing cell structure.Data credit: Andreas Sagner, Eaton lab, MPI-CBG, Dresden</div>
+<div align="center">'''Figure 1''' shows the projection of a wing with and without the detection of a minimum cost z surface. The use of surface detection allows to remove signal degrading the details of the wing structure. Data credit: Andreas Sagner, Eaton lab, MPI-CBG, Dresden</div>
 
 
 [[File:MinCostSurf Ex1 removeSurface.PNG|center]]
-<div align="center">'''Figure 2''' shows how the surface of an embryo can be virtually removed to ease the observation and analysis of internal organs.data credit: Shradha Das, Knust Lab, MPI-CBG, Dresden</div>
+<div align="center">'''Figure 2''' shows how the surface of a drosophyla embryo can be virtually removed to ease the observation and analysis of internal organs. Data credit: Shradha Das, Knust Lab, MPI-CBG, Dresden</div>
 
 ==Usage==
-Both examples illustrated shown in the previous section can be reproduced with the Min_Cost_Surface plugin. Below is a tutorial to reproduce the example from figure 1. First of all load an image with a surface structure you would like to detect. In our example it is portion of a fly wing. the wing is not flat and can not be visualized in a single slice. Max Projection of the image give poor result in visualizing the wing in  a single plane since other structures present in the volume hide the details of the wing. The plugin allows to detect the wing surface and to select a region with a user defined thickness around it.
+Both examples illustrated in the previous section can be reproduced with the Min_Cost_Surface plugin. Below is a tutorial to reproduce the example from figure 1. First of all load an image with a surface structure you would like to detect. In our example it is portion of a fly wing. the wing is not flat and can not be visualized in a single slice. Max Projection of the image give poor result in visualizing the wing in  a single plane since other structures present in the volume hide the details of the wing. The plugin allows to detect the wing surface and to select a region with a user defined thickness around it.
 
 * If your surface appears with high intensity value you need to duplicate it and invert it. With this manipulatiuon you should have a volume where your surface appears with low intensity. It will be used by the plugin to measure the cost of the surface. Any kind of preprocessing that can enhance the surface can be used to favor a good detection of the surface.
 
@@ -64,8 +64,8 @@ Both examples illustrated shown in the previous section can be reproduced with t
 
 ==Methods and Implementation==
 
-The plugin was implemented after the method of Li et al. [1] One can refer to that paper for principle of the surface detection. The mincut maxflow problem is solved using the GraphCut solver implemented in FIJI [http://fiji.sc/Graph_Cut Graph_Cut plugin by Jan Funke].
+The initial development of the plugin was initially proposed by Dagmar Kainmueller (Myers lab MPI-CBG, Dresden ). The plugin was implemented after the method of Li et al. [1]. One can refer to that paper for the principle of the surface detection. The mincut maxflow problem is solved using the GraphCut solver implemented in FIJI [http://fiji.sc/Graph_Cut Graph_Cut plugin by Jan Funke].
 
-Also If the plugin allows to detect only two surface with one input function, the underlying class has more flexibility and can handle any number of surface and cost function. It also allow to add crossing or non crossing constraints on any pair of surfaces. Contact us if you are interested.
+Also If the plugin allows to detect only two surface with one input function, the underlying class has more flexibility and can handle any number of surface and cost function. It also allow to add crossing or non crossing constraints on any pair of surfaces as described in Li et al.
 
 [1] Li, K., Wu, X., Chen, D. Z., & Sonka, M. (2006).[http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2646122/ Optimal surface segmentation in volumetric images, a graph-theoretic approach]. Pattern Analysis and Machine Intelligence, IEEE Transactions on, 28(1), 119-134.
