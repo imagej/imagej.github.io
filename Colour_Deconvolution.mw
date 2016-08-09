@@ -2,8 +2,8 @@
 | software               = ImageJ
 | name                   = Colour Deconvolution
 | author                 = Gabriel Landini
-| filename               = [http://www.mecourse.com/landinig/software/colour_deconvolution.zip colour_deconvolution.zip] 
-| source                 = in zip file
+| filename               = {{Maven | g=sc.fiji | a=Colour_Deconvolution}} 
+| source                 = {{GitHub|org=fiji|repo=Colour_Deconvolution}}
 | released               = 30 March 2004 
 | latest version         = 04 February 2007
 | status                 = active
