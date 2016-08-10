@@ -99,17 +99,18 @@ Typically, ImageJ plugin developers will be writing [[#Services|Service]] and/or
 <source lang=java>
 @Plugin
 public class MyPlugin {
-
+ 
+  // This @Parameter notation is 'asking' the Context
+  // for an instance of LogService.
   @Parameter
   private LogService logService;
-
+ 
   public void log(String message) {
-    // Use the LogService!
-    // No need to construct it, since the Context
-    // will provide an appropriate instance.
+    // Just use the LogService!
+    // There is no need to construct it, since the Context
+    // has already provided an appropriate instance.
     logService.info(message);
   }
-
 }
 </source>
 
