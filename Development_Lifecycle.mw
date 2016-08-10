@@ -1,8 +1,7 @@
 {{Notice | This page describes the core [[SciJava]] ''software release process''.
 * For an overview of ''distribution methods'', see [[Distribution]].
 * To ''download'' software releases, see [[Downloads]].}}
-{{Development | tutorials}}{{TOC}}
-The SciJava [[philosophy]] is to [[Philosophy#Release_early.2C_release_often|release early, release often]]. At the same time, we always want to preserve [[reproducible builds|scientific reproducibility]]. To make this possible we lean on several [[project management]] tools. The purpose of this guide is to take you through the process of using these tools with the goal of releasing new versions of your software, and then providing those releases to users.
+{{Development | tutorials}}The SciJava [[philosophy]] is to [[Philosophy#Release_early.2C_release_often|release early, release often]]. At the same time, we always want to preserve [[reproducible builds|scientific reproducibility]]. To make this possible we lean on several [[project management]] tools. The purpose of this guide is to take you through the process of using these tools with the goal of releasing new versions of your software, and then providing those releases to users.
 
 = Phases of development =
 
