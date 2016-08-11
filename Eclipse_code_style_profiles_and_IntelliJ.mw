@@ -1,0 +1,35 @@
+{{Development}}
+This is a short guide on how to start using the Eclipse code style profile of ImageJ.
+
+== Installing Eclipse code formatter plugin == 
+The first step is to install the Eclipse code formatter (ECF) plugin to your IntelliJ:
+
+# Open ''File &gt Settings''
+# Select ''Plugins'' from the left-hand pane
+# Click ''Browse repositories...''
+# Type ''Eclipse code formatter'' to the search field
+# Select the plugin from the list and click ''install'' on the right-hand pane
+# Click ''Restart IntelliJ''
+
+A tutorial on IntelliJ plugins can be found [https://www.jetbrains.com/help/idea/2016.2/installing-updating-and-uninstalling-repository-plugins.html here].
+
+== Plugin setup ==
+After installing the ECF plugin you need to set it to use the Eclipse code styles file of the ImageJ project:
+
+# Download [https://github.com/imagej/imagej/blob/master/config/eclipse-preferences.epf eclipse-preferences.epf]
+# Open Eclipse and follow [http://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftimpandexp.htm these] steps to import an <code>.epf</code> file
+# Open ''Window &gt Preferences &gt Java &gt Code Style &gt Formatter''
+# Set ''Active Profile'' to ''ImageJ''
+# Click ''Export All...'' and save the XML file
+# Open IntelliJ
+# Open your project
+# Open ''File &gt Settings &gt Eclipse Code Formatter''
+# Check the ''Use the Eclipse code formatter'' radio button
+# Set ''Eclipse Java Formatter config file'' to the XML file you just created
+# Set ''Java formatter profile'' to ''ImageJ''
+# Check ''Optimize Imports''
+# Set ''Import order'' to ''Manual configuration'' and write <code>com;io;java;javax;net;org;</code>
+
+'''NB''' You can skip the first five steps if you use this [https://github.com/imagej/imagej/blob/bcb4eddf41e90ffba6d520b83e691d3a02d65739/config/eclipse-code-clean-up-profile.xml XML file]. Note that it is old and possibly out of date.
+
+More information on setting up the plugin can be found [https://github.com/krasa/EclipseCodeFormatter#instructions here].
