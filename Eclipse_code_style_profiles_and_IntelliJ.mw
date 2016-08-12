@@ -18,7 +18,7 @@ After installing the ECF plugin you need to set it to use the Eclipse code style
 
 # Download [https://github.com/imagej/imagej/blob/master/config/eclipse-preferences.epf eclipse-preferences.epf]
 # Open Eclipse and follow [http://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftimpandexp.htm these] steps to import an <code>.epf</code> file
-# Open ''Window &gt Preferences &gt; Java &gt Code Style &gt; Formatter''
+# Open ''Window &gt; Preferences &gt; Java &gt Code Style &gt; Formatter''
 # Set ''Active Profile'' to ''ImageJ''
 # Click ''Export All...'' and save the XML file
 # Open IntelliJ
