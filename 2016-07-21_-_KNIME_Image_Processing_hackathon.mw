@@ -109,22 +109,16 @@ File:hackathon-2016-konstanz-amazing-salt.jpg|caption|The gravity-defying salt s
 </gallery>
 
 == Hackathon progress ==
-=== Curtis Rueden ===
-* Made major progress on improved op lookups using Nil (a.k.a. "typed null") objects—work still ongoing on the <code>nil</code> branch of {{GitHub | org=imagej | repo=imagej-ops | label=imagej-ops}}; prep work already on master ([https://github.com/imagej/imagej-ops/compare/fd2d9c5b8974d77976dabc53ba973d2a52ee465a%5E...226fc2114f0d68786f4a27b8fa498f18681379bf 1], {{GitHub | org=imagej | repo=imagej-ops | commit=4135609f471352cbd32b048d32f0d5bb33343273 | label=2}})
-* Cleaned up the dependencies of ImageJ Ops; in particular, use SCIFIO for I/O, not ImageJ 1.x and AWT ({{GitHub | org=imagej | repo=imagej-ops | pr=413 | label=imagej-ops#413}})
-* Helped clean up {{Person|Rdom}}'s "Topology namespace and ops" PR ({{GitHub | org=imagej | repo=imagej-ops | pr=415 | label=imagej-ops#415}})
-* Created a (not yet functional) [https://kotlinlang.org/ Kotlin] SciJava script engine ({{GitHub | org=scijava | repo=scripting-kotlin | label=scijava/scripting-kotlin}})
+=== Christian Dietz ===
+* Continued work on KNIME SciJava Nodes and KNIME SciJava Scripting
+
+=== Richard Domander ===
+* Added first ops from BoneJ legacy code - topology namespace and ops for calculating the [https://en.wikipedia.org/wiki/Euler_characteristic Euler characteristic] ({{GitHub | org=imagej | repo=imagej-ops | pr=413 | label=imagej-ops#413}})
 
 === Kyle Harrington ===
 * Added 3D Mesh Voxelization to {{GitHub | org=imagej | repo=imagej-ops | label=imagej-ops}} ({{GitHub | org=imagej | repo=imagej-ops | pr=419 | label=imagej-ops#419}})
 * Began [[ThreeDViewer]] and reached a moderately usable level
 * Refactored [[Funimage]] to be more Clojure idiomatic
-
-=== Christian Dietz ===
-* Continued work on KNIME SciJava Nodes and KNIME SciJava Scripting
-
-=== Martin Horn & Alexander Fillbrunn ===
-* Started JavaScript based Image Viewer with BigDataViewer as tile-server
 
 === Stefan Helfrich ===
 * Proof-of-principle implementations of MatrixType and VectorType ({{GitHub | org=stelfrich | repo=imglib2 | label=matrixType}})
@@ -133,6 +127,15 @@ File:hackathon-2016-konstanz-amazing-salt.jpg|caption|The gravity-defying salt s
 ** i.e. do not apply an OOBF if an image already is extended
 ** Add defined bounds for RandomAccessibles ([https://github.com/stelfrich/imglib2/tree/random-access-defined-bounds imglib2/random-access-defined-bounds])
 ** Implement Shape.getBoundingBox() ({{GitHub | org=imglib | repo=imglib2 | pr=27 | label=imglib2#27}})
+
+=== Martin Horn & Alexander Fillbrunn ===
+* Started JavaScript based Image Viewer with BigDataViewer as tile-server
+
+=== Curtis Rueden ===
+* Made major progress on improved op lookups using Nil (a.k.a. "typed null") objects—work still ongoing on the <code>nil</code> branch of {{GitHub | org=imagej | repo=imagej-ops | label=imagej-ops}}; prep work already on master ([https://github.com/imagej/imagej-ops/compare/fd2d9c5b8974d77976dabc53ba973d2a52ee465a%5E...226fc2114f0d68786f4a27b8fa498f18681379bf 1], {{GitHub | org=imagej | repo=imagej-ops | commit=4135609f471352cbd32b048d32f0d5bb33343273 | label=2}})
+* Cleaned up the dependencies of ImageJ Ops; in particular, use SCIFIO for I/O, not ImageJ 1.x and AWT ({{GitHub | org=imagej | repo=imagej-ops | pr=413 | label=imagej-ops#413}})
+* Helped clean up {{Person|Rdom}}'s "Topology namespace and ops" PR ({{GitHub | org=imagej | repo=imagej-ops | pr=415 | label=imagej-ops#415}})
+* Created a (not yet functional) [https://kotlinlang.org/ Kotlin] SciJava script engine ({{GitHub | org=scijava | repo=scripting-kotlin | label=scijava/scripting-kotlin}})
 
 == Technical discussions ==
 * The future of ImageJ user interfaces: ImageJFX? KNIME? JavaScript + RESTful image server?
