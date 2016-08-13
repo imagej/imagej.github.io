@@ -10,16 +10,11 @@ Enabled [[ThreeDViewer]] update site
 
 === Steps ===
 
-# Launch ThreeDViewer  
-[[File:launch_threedviewer.png]]
-# Import a 3D mesh (at the time of this writing OBJ, STL, and Isosurfaces taken from a 3D image opened in ImageJ, all work)  
-[[File:import_obj.png]]
-# Convert mesh to image  
-[[File:mesh_to_image.png]]
-# Select output dimensions  
-[[File:mesh_to_image_dimensions.png]]
-# Inspect the result
-[[File:voxelization_output.png]]
+# Launch ThreeDViewer  [[File:launch_threedviewer.png]]  
+# Import a 3D mesh (at the time of this writing OBJ, STL, and Isosurfaces taken from a 3D image opened in ImageJ, all work) [[File:import_obj.png]]  
+# Convert mesh to image [[File:mesh_to_image.png]]  
+# Select output dimensions [[File:mesh_to_image_dimensions.png]]  
+# Inspect the result [[File:voxelization_output.png]]  
 
 === Optional additional steps ===
 
