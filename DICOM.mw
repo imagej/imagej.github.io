@@ -12,7 +12,7 @@ An example of using the <code>DicomTools.getTag()</code> method from [[JavaScrip
 <source lang="javascript">
 importClass(Packages.ij.IJ)
 importClass(Packages.ij.util.DicomTools)
-imp = IJ.openImage("http://imagej.nih.gov/ij/images/ct.dcm.zip"); 
+imp = IJ.openImage("http://wsr.imagej.net/images/ct.dcm.zip"); 
 studyDescription = DicomTools.getTag(imp, "0008,1030"); 
 imagePosition = DicomTools.getTag(imp, "0020,0032"); 
 pixelSpacing = DicomTools.getTag(imp, "0028,0030"); 
@@ -30,7 +30,7 @@ See these [[macro]] functions:
 
 An example using <code>getInfo()</code>:
 <source lang="javascript">
-open("http://imagej.nih.gov/ij/images/ct.dcm.zip"); 
+open("http://wsr.imagej.net/images/ct.dcm.zip"); 
 studyDescription = getInfo("0008,1030"); 
 imagePosition = getInfo("0020,0032"); 
 pixelSpacing = getInfo("0028,0030"); 
