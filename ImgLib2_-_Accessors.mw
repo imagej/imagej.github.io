@@ -493,10 +493,10 @@ The real-coordinate counterparts that were missing in the simplified version [[I
 
 Real equivalents of the '''Positionable''' and '''Localizable''' interfaces have been added by which real-valued coordinates can be accessed.
 
-Something that is [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealPositionable.html RealPositionable], can be positioned at real coordinates.
+Something that is {{Javadoc | project=ImgLib2 | package=net/imglib2 | class=RealPositionable}}, can be positioned at real coordinates.
 There are methods to set absolute or relative position, for a single or all dimensions, in analogy to the integer '''Positionable'''.
 You can also set a '''RealPositionable''' to the location of a '''RealLocalizable'''.
-Note that [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealPositionable.html RealPositionable] extends '''Positionable''', which is quite natural:
+Note that {{Javadoc | project=ImgLib2 | package=net/imglib2 | class=RealPositionable}} extends '''Positionable''', which is quite natural:
 Whenever something can be positioned at arbitrary real coordinates, of course it can be positioned to integer coordinates as well.
 
 [http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RealLocalizable.html RealLocalizable] allows to get a real coordinate from an accessor.
