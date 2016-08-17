@@ -24,6 +24,11 @@ Apple has also deprecated several old codecs (e.g., <code>mjpb</code>), with its
 
 OS X 10.10 (Yosemite) and 10.11 (El Capitan‎) do not include key files required for running commands like {{bc | File | Import | Using QuickTime}} and {{bc | File | Save As | QuickTime Movie}} that use QuickTime for Java. You can work around this problem by copying the files <code>QTJava.zip</code> and <code>libQTJNative.jnilib</code>, [http://imagej.net/download/qt/ available here], into <code>~/Library/Java/Extensions</code>, where <code>~</code> is your home directory. Yosemite hides the <code>Library</code> folder by default, so you will need to open your home folder and check "Show Library Folder" in the {{bc | View | Show View Options}} dialog. Before copying the files, you will need to create the <code>~/Library/Java</code> and <code>~/Library/Java/Extensions</code> folders.
 
+You can accomplish all of the above by pasting the following command into a running Terminal:
+<source lang="bash">
+mkdir -p $HOME/Library/Java/Extensions && for f in QTJava.zip libQTJNative.jnilib; do curl -fsSL http://imagej.net/download/qt/$f -o $HOME/Library/Java/Extensions/$f; done
+</source>
+
 == FFMPEG ==
 
 There is an [[update site]] called FFMPEG which enables support for opening movie files via the [[wikipedia:FFMPEG|FFMPEG library]]. This update site ships native libraries, which should work on Windows, OS X and Linux platforms, but not other platforms (AIX, Solaris, etc.).
