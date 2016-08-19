@@ -1,5 +1,11 @@
 {{Scripting}}[http://www.jython.org/ Jython] is an implementation of the [https://www.python.org/ Python programming language] designed to run on the Java platform.
 
+= Quickstart =
+
+* Press {{key|[}} to bring up the [[Script Editor]].
+* Select an example Jython script from the {{bc | Templates | [by language] | Python}} menu.
+* Press {{key|Ctrl|R}} to run the script!
+
 == The Jython interpreter plugin ==
 
 The interpreter provides a screen and a prompt. Type any jython code on the prompt to interact with ImageJ.
