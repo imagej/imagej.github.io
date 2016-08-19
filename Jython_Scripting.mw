@@ -2,7 +2,9 @@
 
 The interpreter provides a screen and a prompt. Type any jython code on the prompt to interact with ImageJ.
 
-Launch it from plugins - Scripting - Jython Interpreter. See [[Scripting Help]] for all keybindings, and also [[Scripting comparisons]].
+Launch it from {{bc | Plugins | Scripting | Jython Interpreter}}. See [[Scripting Help]] for all keybindings, and also [[Scripting comparisons]].
+
+{{Warning | Note that ImageJ also ships a unified Script Interpreter plugin, accessible from {{bc | Plugins | Scripting | Script Intepreter}}. But it is currently beta quality, and the Python language does not work properly due to bugs. Once this issue is fixed, the unified Script Interpreter will replace the language-specific interpreters such as the Jython Interpreter.}}
 
 Within the interpreter, all ImageJ, java.lang.* and TrakEM2 classes are automatically imported. So creating new images and manipulating them is very straighforward.
 
