@@ -1,4 +1,6 @@
-{{Scripting}}== The Jython interpreter plugin ==
+{{Scripting}}[http://www.jython.org/ Jython] is an implementation of the [https://www.python.org/ Python programming language] designed to run on the Java platform.
+
+== The Jython interpreter plugin ==
 
 The interpreter provides a screen and a prompt. Type any jython code on the prompt to interact with ImageJ.
 
