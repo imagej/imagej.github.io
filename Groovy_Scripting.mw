@@ -3,7 +3,7 @@
 = Quickstart =
 
 * Press {{key|[}} to bring up the [[Script Editor]].
-* Select an example Groovy script from the {{bc | Templates | Groovy}} menu.
+* Select an example Groovy script from the {{bc | Templates | [by language] | Groovy}} menu.
 * Press {{key|Ctrl|R}} to run the script!
 
 = See also =
