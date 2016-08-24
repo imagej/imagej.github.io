@@ -17,4 +17,24 @@ This Fiji plugin loads trajectories from TrackMate, characterize them using TraJ
 == Examples ==
 
 
-= Parameters =
+== Parameters ==
+
+Minimal tracklength:
+
+Window size:
+
+Minimal segment size:
+
+Resample rate:
+
+Pixelsize:
+
+Framerate
+
+Use reduced model for confined motion
+
+Show IDs:
+
+Show overview classes:
+
+Remove global drift:
