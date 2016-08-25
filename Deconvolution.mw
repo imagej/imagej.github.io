@@ -28,7 +28,7 @@ Run the Iterative Deconvolve 3D plugin, then select the image and PSF. Start wit
 For an educational interactive ImageJ javascript demo of convolution, inverse filtering and image contrast restoration by iterative constrained deconvolution, see this [https://github.com/chalkie666/imagejMacros/blob/master/DeconvolutionDemos/Convolution_Deconvolution_Demo.js Convolution / Deconvolution / Contrast Restoration demo script] 
 
 == Video presentations ==
-<div style="float: left; padding-right: 1em">{{#widget:Vimeo|id=140098821|caption=Flexible deconvolution using ImageJ Ops (Brian Northan)}}</div>
+<div style="float: left; padding-right: 1em">{{#widget:Vimeo|id=140098821|caption=Flexible deconvolution using ImageJ Ops (Brian Northan)}} [https://imagej.github.io/presentations/2015-09-04-imagej2-deconvolution/ [slides]]</div>
 <div style="float: left">{{#widget:Vimeo|id=140098826|caption=Real-time multi-view deconvolution of time-lapse data on the GPU (Bene Schmid)}}</div>
 {{Clear|left}}
 [[Category:Cookbook]]
