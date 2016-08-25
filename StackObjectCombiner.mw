@@ -63,19 +63,3 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 == Futur improvements ==
 
 The plugin is still in development. We intend to improve the plugin by adding parameters to the plugin and an automatic pairing of borders. Any suggestion is welcome.
-
-== Errors ==
-
-TODO Add the errors given by the plugin to this section
-
-<ul>
-<li>Error 1 : The repository contain only A_files. If the directory contain only A_files, the plugin can't do anything with them.</li>
-<li>Error 2 : No meshes can be found. The plugin can't see any file.</li>
-</ul>
-If your repository contain your files but you still see this messages, it probably means that your objects are not named with the naming convention (see the Usage section).
-
-<ul>
-<li>Error 3 : The mesh don't cross the border. The given mesh don't cross the border and so it can't be merged to an other mesh.</li>
-<li>Error 4 : Two meshes from a same part can't be merged. You can't merge two objects that came from the same part of the stack. You can still modify the name of the object.</li>
-<li>Error 5 : Their is not enough meshes to merge. The plugin need at least two meshes to merge meshes.</li>
-</ul>
