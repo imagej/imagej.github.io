@@ -9,28 +9,21 @@ Download the .jar file and place it in the plugin folder of ImageJ. <br/>
 This plugin also need the 
 [https://mvnrepository.com/artifact/org.apache.commons/commons-math3 apache common maths] librairy. If you use Fiji, this librairy is already included. If you use ImageJ, download the lattest version and put the .jar file into ImageJ/plugins/jars/
 
-== Usage ==
-Because the coordinates system of the original stack have been lost, the plugin use a naming convention to know where the objects come from.
+== Presentation of the interface ==
 
-[[File:decoupage.png]]
+[[File:SOC_Window.png|1000px|center]]
 
-The image show how the stacks parts are named. The object coming from a given part should be prefixed by the letter of the sub-stack (e.g. A_axon, C_dendrite, ...)<br/>
+Here is the Interface of Stack Object Combiner. The window contain several boxes, that allow you to set the different parameters and that give you an overview of the meshes.<br/><br/>
 
-The plugin have now only one window, where every functions are presented.<br/>
+[[File:SOC_folderSelection.png]] Folder selection box<br/>This is the Folder Box. Choose the folder containing your meshes. To work only with certain meshes inside this folder, use the "Name pattern" function. Write the characters that the file contains, and click on "Actualise". The pattern can be a [https://en.wikipedia.org/wiki/Regular_expression regular expression]. <br/>Finally "Actualise" allow you to refresh the folder, for example if you have deleted or added files.
 
-First you have to give the directory where your meshes are stored. The plugin will then read the current directory to find meshes, with names corresponding to the prefixes mentioned above. All the recognized meshes will be added to 4 different lists, corresponding to their sub-stack.<br/><br/>
+[[File:SOC_shift.png]] Shift box<br/>
+In the shift box, set the positions and dimensions of the cubes. To shift the meshes at their coordinates in the reconstructed volume, give the values of the shift in X, Y and Z. (See the illustration bellow to see to what each value correspond). X, Y and Z correspond respectively to the width, height and depth of the stack A (don't confuse the width, height and depth of the whole volume that you also have to give here, with the width, height and depth of the volume A that match the values of Shift X, Y and Z).<br/>
+Once these values are set, click on "Shift" to shift all the meshes listed. To shift back the mesh to their original positions, click on "Unshift".<br/>
+The values you give here will be used later to merge the meshes. For automatic merging, you have to give the width, height and depth of the whole volume.
+[[File:SOC_cubeDimensions.png|400px]] [[File:SOC_cubeSplitting.png|500px]]
 
-Then, the plugin allow you to shift your meshes, to put them in the original coordinate system of the full-stack. X & Y shift correspond to the size of the A_sub-stack. E.g, if your stack's voxel size is 1x1x1, and the A_sub-stack is 200x100x50, X shift = 200 & Y shift = 100.
-Once the X & Y values are indicated, use the Shift button to shift the meshes. <br/>
-Note that the plugin will add to each readed mesh a line in the file indicating that the mesh have been shifted (#movedBySOC), and allow then the mesh to be merged. If you don't need to shift your meshes, use 0 values for X & Y. Then indicate the actual size of the A_sub-stack because the plugin will use it to merge the meshes.<br/><br/>
-
-To use the merge function, select two meshes in the lists proposed (select one and click on the ">>>" button, or use the "a" shortcut). You can set up here few parameters :
-- Auto Save/Naming : It will unable the dialog asking for the name of the new mesh, and so create by itself a new unexisting name composed by the name of the two original meshes.
-- Tail lenght : It correspond to the number of vertices removed from the extremities of linear borders. Because of the size of the window (see bellow), these vertices can't be removed simply by looking if they are close to the split or not.
-- Window : It is the maximum distance at which a vertex can be considered as close to the border.
-- Pairing : The last step of the merging is a pairing of the border's vertices, and this is done by creating sets of vertices each n vertices. This parameter correspond to the number n.<br/><br/><br/>
-
-The plugin have been tested on a small number of meshes, and so far it works well on the differents shapes we merged. If you have troubles while merging your objects, do not hesitate to contact me. Your feedback can help me improve the plugin, and so allow you then to merge your meshes.
+[[File:SOC_meshes.png]] Meshes listing<br/>
 
 == Example ==
 
