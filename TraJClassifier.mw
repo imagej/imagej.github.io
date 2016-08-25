@@ -25,16 +25,16 @@ This Fiji plugin loads trajectories from TrackMate, characterize them using [htt
 
 '''Minimal segment size:''' After classification of a trajectory it consistes of several segments. This parameter determines the minimal segment length. Segments smaller than this length will be removed. It is good rule of thumb to set this parameter to same value as the window size because segments which are smaller than the window size seems to be very error prone.
 
-Resample rate:
+'''Resample rate:'''
 
-Pixelsize:
+'''Pixelsize:''' Size of a single pixel in µm. However, if your TrackMate data is already scaled, set it to zero.
 
-Framerate
+'''Framerate:''' Frames per second
 
-Use reduced model for confined motion
+Use reduced model for confined motion: 
 
-Show IDs:
+'''Show IDs:''' Show trajectory IDs as overlay. The trajectories IDs given in the format PARENT ID:SEGMENT ID
 
-Show overview classes:
+'''Show overview classes:''' Show classes and color codes as overlay.
 
-Remove global drift:
+'''Remove global drift:'''  In some cases the particles are moving relativ to another object (e.g. a cell). When the object is moving approx. at a constant speed, than it could be possible to estimate it via a global drift estimation and remove this drift component from each trajectory.
