@@ -33,10 +33,22 @@ This box contain the different parameters to merge the meshes automatically. The
 <li>Border separation: The borders of the meshes have to be decomposed into fragments to be located on only one side of the volume. This parameter help to separate the borders. If the message "Error while separating the borders" appear, increase this parameter.</li>
 <li>Distance window: It is the distance between the vertices of the meshes and the splits. The quality of the border separation can be modified with this parameter.</li>
 <li>Vertex pairing: When two borders are compatible, new faces have to be created. This value represent the size of the sets of vertices combined together. These sets are useful to prevent the formation of aberrant faces between the meshes.</li>
+<li>Memory watch: If the memory available goes bellow this value, the plugin will remove from the memory all the meshes previously processed to make space. But then the plugin will need to reload all the meshes when it will come to the final step.</li>
 </ul>
 Once that the parameters have been set, click on "Automatic merging". A trace of the merging will appear in the log.
 
-[[File:SOC_manualMerge.png]]
+[[File:SOC_manualMerge.png]] Manual merging box<br/>
+The manual merging is the older implementation of the plugin. The automatic version should be more efficient and reliable than this version. However if the automatic version don't properly pair the meshes, using the manual merging can give you different results. The way the borders are detected and paired is different, and with this mode you choose which two objects you want to fuse together.<br/>
+Here is the description of the parameters:<br/>
+<ul>
+<li>Border min affinity: The same as the one used in the automatic version. However here the treshold is applied here only against the length of the borders.</li>
+<li>Center distance: The tolerance for the distance of the centers of the borders (the center is calculated as the mean position of the vertices of the border, and so it is not very reliable). Only applied to circular borders.</li>
+<li>Distance window: The same as the one used in the automatic version.</li>
+<li>Tail length: The number of vertices removed from the ends of a linear borders. Due to the distance to the split, some artefact can appear on the end of the linear borders. This parameter help to fix this.</li>
+<li>Vertex pairing: The same as the one used in the automatic version.</li>
+</ul>
+Once the parameters are set, add the meshes you want to fuse. Select them in the list and click on the ">>>" button. You can also use the shortcut "A" to add a mesh highlighted.<br/>
+Finally click on the "Merge" button or use the shortcut "S".
 
 == Example ==
 
