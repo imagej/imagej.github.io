@@ -19,11 +19,11 @@ This Fiji plugin loads trajectories from TrackMate, characterize them using TraJ
 
 == Parameters ==
 [[File:Trajclassifier_gui.png|300px|thumb]]
-Minimal tracklength: Minimal number of positions in a trajectory. It has to be greater than the window size. As the window size should be at least 30, the same is true for the minimal tracklength.
+'''Minimal tracklength:''' Minimal number of positions in a trajectory. It has to be greater than the window size. As the window size should be at least 30, the same is true for the minimal tracklength.
 
-Window size:
+'''Window size:''' The parameter determines how many positions are used in the sliding window.
 
-Minimal segment size:
+'''Minimal segment size:''' After classification of a trajectory it consistes of several segments. This parameter determines the minimal segment length. Segments smaller than this length will be removed. It is good rule of thumb to set this parameter to same value as the window size because segments which are smaller than the window size seems to be very error prone.
 
 Resample rate:
 
