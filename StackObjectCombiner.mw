@@ -56,10 +56,10 @@ During this example, you can look at the different step with the [http://fiji.sc
 <ol>
 <li>Download the meshes of a mitochondria in the shape of a donut divided in 4 parts [[Media:MitoDonut Meshes.zip]]</li>
 <li>Launch the plugin, and give the directory containing the .obj file</li>
-<li>X shift : 192 &nbsp;&nbsp;&nbsp;Y shift : 214</li>
+<li>X shift : 192 &nbsp;&nbsp;&nbsp;Y shift : 214 &nbsp;&nbsp;&nbsp;Z shift : 500</li>
+<li>Width : 600 &nbsp;&nbsp;&nbsp;Y shift : 600 &nbsp;&nbsp;&nbsp;Z shift : 600</li>
 <li>Click on the Shift button to shift the meshes.</li>
-<li>Now merge the meshes two by two. Select them and use the Merge button.</li>
-<li>Merge then the two resulting meshes. Note that your meshes should start with names that correspond to neighbors sub-stacks (E.g. A_ & C_)</li>
+<li>Now merge the meshes with the Automatic merging button, or two by two with the manual merging.</li>
 <li>Look at the result</li>
 </ol>
 
