@@ -11,7 +11,7 @@
 
 
 == Purpose ==
-This Fiji plugin loads trajectories from TrackMate, characterize them using TraJ and classificate them into normal diffusion, subdiffusion, confined diffusion and directed/active motion by a random forest approach (through Renjin)
+This Fiji plugin loads trajectories from TrackMate, characterize them using [https://github.com/thorstenwagner/TraJ TraJ] and classificate them into normal diffusion, subdiffusion, confined diffusion and directed/active motion by a random forest approach (through Renjin)
 
 
 == Examples ==
