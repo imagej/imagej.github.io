@@ -15,6 +15,7 @@ This Fiji plugin loads trajectories from TrackMate, characterize them using [htt
 
 == Introduction ==
 
+Pleas start by reading the [https://github.com/thorstenwagner/TraJ/wiki#introduction introduction] of TraJ, because the TraJClassifier is build upon this library.
 
 == Examples ==
 
