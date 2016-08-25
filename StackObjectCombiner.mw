@@ -5,7 +5,9 @@ The purpose of this plugin is to replace the objects in their original position,
 
 == Installation ==
 The plugin can be found on the github [https://github.com/Tom-TBT/StackObjectCombiner/releases project] in the release tab (please take the lattest version of the plugin). <br/>
-Download the .jar file and place it in the plugin folder of ImageJ.
+Download the .jar file and place it in the plugin folder of ImageJ. <br/>
+This plugin also need the 
+[https://mvnrepository.com/artifact/org.apache.commons/commons-math3 apache common maths] librairy. If you use Fiji, this librairy is already included. If you use ImageJ, download the lattest version and put the .jar file into ImageJ/plugins/jars/
 
 == Usage ==
 Because the coordinates system of the original stack have been lost, the plugin use a naming convention to know where the objects come from.
