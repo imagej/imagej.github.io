@@ -3,7 +3,7 @@
 | name                   = Trajectory classifier for TrackMate
 | author                 = {{Person|Twagner}}
 | maintainer             = {{Person|Twagner}}
-| filename               = Ridge_Detect.jar [https://github.com/thorstenwagner/ij-trajectory-classifier/releases/latest [1]]
+| filename               = ij-trajectory-classifier.jar [https://github.com/thorstenwagner/ij-trajectory-classifier/releases/latest [1]]
 | source                 = Github [https://github.com/thorstenwagner/ij-trajectory-classifier [2]]
 | latest version         = v0.8.1 (24 Aug. 2016)
 | status                 = active 
