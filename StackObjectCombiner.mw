@@ -3,7 +3,7 @@ Because of the cubic cost of the 3D segmentation (in memory and processing) with
 To be fully segmented, the stack need to be cut in parts. But this operation will cut some objects in 2 or more parts, and the objects will lost the coordinate system of the original stack.<br/>
 The purpose of this plugin is to replace the objects in their original position, and provide a tool that will allow a user to merge 3D objects that have been cut.<br/>
 
-<b>!!! Doesn't work yet with ImageJ Java 1.8   Take the older version of ImageJ (or Fiji) with java 1.6 !!!</b>
+<b>!!! Problem with ImageJ with java 1.8, the decimal values in the French format (comma separator) are not parsed properly. Replace the commas by dots in the meshes files.</b>
 
 == Installation ==
 The plugin can be found on the github [https://github.com/Tom-TBT/StackObjectCombiner/releases project] in the release tab (please take the lattest version of the plugin). <br/>
