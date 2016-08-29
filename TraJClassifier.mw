@@ -19,7 +19,20 @@ Simply turn on the  [http://imagej.net/How_to_follow_a_3rd_party_update_site Tra
 
 == Introduction ==
 
-Pleas start by reading the [https://github.com/thorstenwagner/TraJ/wiki#introduction introduction] of TraJ, because the TraJClassifier is build upon this library.
+Pleas start by reading the [https://github.com/thorstenwagner/TraJ/wiki#introduction introduction] of TraJ, because the TraJClassifier is build upon this library. The TraJClassifier was trained using [https://github.com/thorstenwagner/ij-trajectory-classifier/blob/master/src/main/java/de/biomedical_imaging/ij/trajectory_classifier/help/GenerateTrainingSet.java simulated trajectories] of normal diffusion, subdiffusion, confined diffusion and directed motion. Therefore, we estimated nine features for each trajectory:
+
+* Alpha
+* Asymmetry (Asymmetry3)
+* Efficiency 
+* Fractal dimension
+* Gaussianity
+* Kurtosis
+* Mean squared displacement ratio
+* Straightness
+* Trappedness
+
+For more information about these features, go to the [https://github.com/thorstenwagner/TraJ/wiki#features TraJ wiki]
+
 
 == Examples ==
 
