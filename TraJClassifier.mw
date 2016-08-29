@@ -19,7 +19,7 @@ Simply turn on the  [http://imagej.net/How_to_follow_a_3rd_party_update_site Tra
 
 == Introduction ==
 
-Please start by reading the [https://github.com/thorstenwagner/TraJ/wiki#introduction introduction] of TraJ, because the TraJClassifier is build upon this library. The TraJClassifier was [https://github.com/thorstenwagner/ij-trajectory-classifier/blob/master/src/main/java/de/biomedical_imaging/ij/trajectory_classifier/help/GenerateTrainingSet.java trained] using [https://github.com/thorstenwagner/TraJ/wiki#simulation simulated trajectories] of normal diffusion, subdiffusion, confined diffusion and directed motion. Therefore, we estimated nine features for each trajectory:
+Please start by reading the [https://github.com/thorstenwagner/TraJ/wiki#introduction introduction] of TraJ, because the TraJClassifier is build upon this library. The TraJClassifier was [https://github.com/thorstenwagner/ij-trajectory-classifier/blob/master/src/main/java/de/biomedical_imaging/ij/trajectory_classifier/help/GenerateTrainingSet.java trained] using [https://github.com/thorstenwagner/TraJ/wiki#simulation simulated trajectories] of normal diffusion, subdiffusion, confined diffusion and directed motion. For each simulated, we estimated nine features for each trajectory (For more information about these features, go to the  [https://github.com/thorstenwagner/TraJ/wiki#features TraJ wiki]):
 
 * Alpha
 * Asymmetry (Asymmetry3)
@@ -31,8 +31,17 @@ Please start by reading the [https://github.com/thorstenwagner/TraJ/wiki#introdu
 * Straightness
 * Trappedness
 
-For more information about these features, go to the [https://github.com/thorstenwagner/TraJ/wiki#features TraJ wiki].
-The TraJClassifier employs a sliding window to allow local analysis of single trajectories. 
+The features and the corresponding class was then used to train a random forest classifier. Furthermore the TraJClassifier employs a sliding window to allow local analysis of single trajectories. 
+
+As summary, the classification process is as follows:
+1. Load trajectories from TrackMate xml file
+2. For each trajectory
+  2.1 Split the trajectory into subtrajectories using a sliding window
+  2.2 Calculate the features of each subtrajectory and classificate them (->       results in a class l with confidence c for each subtrajectory)
+  2.3 Each position in original trajectory which is contained in a subtrajectory gets a vote for l with the weight c.
+  2.4 Each position in original trajectory gets the class with the majority of votes.
+3. Split successive positions with the same class into single segments.
+4. Output results
 
 
 == Examples ==
