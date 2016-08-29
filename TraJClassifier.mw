@@ -57,4 +57,4 @@ Use reduced model for confined motion:
 
 '''Show overview classes:''' Show classes and color codes as overlay.
 
-'''Remove global drift:'''  In some cases the particles are moving relativ to another object (e.g. a cell). When the object is moving approx. at a constant speed, than it could be possible to estimate it via a global drift estimation and remove this drift component from each trajectory.
+'''Remove global drift:'''  In some cases the particles are moving relativ to another object (e.g. particles in a cell). When the object is moving approx. at a constant speed, than it could be possible to estimate it via a global drift estimation and remove this drift component from each trajectory.
