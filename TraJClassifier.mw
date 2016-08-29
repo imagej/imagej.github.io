@@ -37,10 +37,10 @@ As summary, the classification process is as follows:
   
   1. Load trajectories from TrackMate xml file
   2. For each trajectory
-  2.1 Split the trajectory into subtrajectories using a sliding window
-  2.2 Calculate the features of each subtrajectory and classificate them (->       results in a class l with confidence c for each subtrajectory)
-  2.3 Each position in original trajectory which is contained in a subtrajectory gets a vote for l with the weight c.
-  2.4 Each position in original trajectory gets the class with the majority of votes.
+    2.1 Split the trajectory into subtrajectories using a sliding window
+    2.2 Calculate the features of each subtrajectory and classificate them (->       results in a class l with confidence c for each subtrajectory)
+    2.3 Each position in original trajectory which is contained in a subtrajectory gets a vote for l with the weight c.
+    2.4 Each position in original trajectory gets the class with the majority of votes.
   3. Split successive positions with the same class into single segments.
   4. Output results
 
