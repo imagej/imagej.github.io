@@ -52,7 +52,7 @@ The TraJClassifier employs a sliding window to allow local analysis of single tr
 
 '''Framerate:''' Frames per second
 
-Use reduced model for confined motion: 
+'''Use reduced model for confined motion:''' The shape constants for the [https://github.com/thorstenwagner/TraJ/wiki#mean-square-displacement confined diffusion MSD model] are set to 1.
 
 '''Show IDs:''' Show trajectory IDs as overlay. The trajectories IDs given in the format PARENT ID:SEGMENT ID
 
