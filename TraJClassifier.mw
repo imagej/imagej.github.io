@@ -31,7 +31,7 @@ Please start by reading the [https://github.com/thorstenwagner/TraJ/wiki#introdu
 * Straightness
 * Trappedness
 
-The features and the corresponding class was then used to train a random forest classifier. Furthermore the TraJClassifier employs a sliding window to allow local analysis of single trajectories. 
+These features and the corresponding class were then used to train a random forest classifier. Furthermore the TraJClassifier employs a sliding window to allow local analysis of single trajectories. 
 
 As summary, the classification process is as follows:
   
