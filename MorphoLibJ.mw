@@ -185,11 +185,14 @@ Geodesic reconstructions can be applied to grey level images. By manually choosi
 [[Image:MorphoLibJ-grains-markers-reconstruction-by-dilation-border-kill.png|thumb|700px|center|Some applications of geodesic reconstruction on grey level images. From left to right: original image with superimposed markers, result of geodesic reconstruction by dilation, result of border kill operation.]]
 ==== Usage ====
 The geodesic reconstruction algorithm is often used within other operators. In MorphoLibJ, it is however provided as a plugin to allow its inclusion in user-designed macros or plugins:
-* '''Geodesic Reconstruction''': compute the geodesic reconstruction by erosion or dilation using a marker image and a mask image, and a specified connectivity. 
+* '''Geodesic Reconstruction''': compute the geodesic reconstruction by erosion or dilation using a marker image and a mask image, and a specified connectivity.
+* '''Interactive Geodesic Reconstruction''': compute the geodesic reconstruction by erosion or dilation taking the current 2D image as mask image, creating the marker image out of user-defined ROIs (for example with the point selection tool).and using a specified connectivity. The plugin allows previewing the result. 
 * '''Geodesic Reconstruction 3D''': compute the geodesic reconstruction by erosion or dilation on a 3D image.
+* '''Interactive Geodesic Reconstruction 3D''': compute the geodesic reconstruction by erosion or dilation on using the current 3D image as mask and creating the marker image from the user-defined point selections.
 The kill borders and fill holes operations are also provided as plugins. Both work for 2D and 3D images of 8, 16 or 32 bits.
 * '''Kill Borders''': remove the particles touching the border of a binary or grayscale image.
 * '''Fill Holes''' remove holes inside particles in binary images, or remove dark regions surrounded by bright crests in grayscale images.
+
 === Regional and extended extrema ===
 '''Regional minima''' are defined as connected regions of elements (pixels or voxels) with the same value, and whose neighboring elements all have values greater than that of the region. Similarly, '''regional maxima''' are regions of connected pixels or voxels with same value, whose neighbors all have smaller value.
 
