@@ -52,7 +52,7 @@ The principle of morphological erosion is to test for each point of the plane if
 
 Morphological dilation and erosion change the size and the resulting set. It may also change its topology: after a dilation, components may merge and holes be filled. After an erosion, components may disappear, or components be separated into several parts.
 
-==Grayscale morphological filters==
+===Grayscale morphological filters===
 ==== Grayscale erosion and dilation ====
 Morphological erosion and dilation may also be applied on grayscale images. In that case, the morphological dilation computes for each pixel the maximum within its neighborhood (defined by the structuring element), whereas the morphological erosion considers the minimum value within the neighborhood.
 [[Image:MorphoLibJ-grains-dilation-erosion.png|thumb|center|700px|Some examples of morphological filters on a grey level image. From left to right: original image, result of dilation with a square structuring element, and result of erosion with the same structuring element.]]
