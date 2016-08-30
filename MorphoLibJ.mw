@@ -240,12 +240,7 @@ This section describes the methods implemented in MorphoLibJ for describing indi
 ==== Intrinsic volumes ====
 [[Image:MorphoLibJ-Euler-number.png|thumb|400px|Illustration of Euler Number definition. Left: three particles with Euler numbers equal to 1, 0 and -1, respectively. Right: example of a 3D particle with an Euler number equal to -1, corresponding to the subtraction of 1 connected components minus two handles.]]The intrinsic volumes are a set of features with interesting mathematical properties that are commonly used for describing individual particles as well as binary microstructrues. In the planar case, they correspond to the area, the perimeter and the Euler number. The Euler number is a topological characteristic that equals the number of connected components minus the number of holes.
 
-For 3D particles, intrinsic volumes correspond to the volume, the surface area, the mean breadth (a quantity proportional to the integral of the mean curvature over the surface) and the Euler number. In 3D the Euler number equals the number of connected components minus the number of "handles" or "tunnels" through the structure, plus the number of bubbles within the particles (Serra, 1982<ref name="Serra1982>{{ cite book
-| title = Image Analysis and Mathematical Morphology. Volume 1
-| author = Serra, Jean
-| publisher                = Academic Press
-| year                     = 1982
-}}</ref>; Ohser ''et al.'', 2009<ref name="Osher2009>{{ cite conference
+For 3D particles, intrinsic volumes correspond to the volume, the surface area, the mean breadth (a quantity proportional to the integral of the mean curvature over the surface) and the Euler number. In 3D the Euler number equals the number of connected components minus the number of "handles" or "tunnels" through the structure, plus the number of bubbles within the particles (Serra, 1982<ref name="Serra1982></ref>; Ohser ''et al.'', 2009<ref name="Osher2009>{{ cite conference
 | title = 3D Images of Materials Structures: processing and analysis
 | author = Joachim Ohser and Katja Schladitz
 | publisher                = WILEY-VCH Verlag GmbH \& Co. KGaA, Weinheim
@@ -256,12 +251,7 @@ For 3D particles, intrinsic volumes correspond to the volume, the surface area, 
 =====Estimation from 2D or 3D images=====
 In image analysis, the '''estimation of area''' of 2D particles and of '''volume of 3D particles''' simply consists in counting the number of pixels or voxels that constitute it, weighted by the area of an individual pixel or the volume of an individual voxel. 
 
-The implemented method for '''perimeter measurement''' aims at providing a better estimate of the perimeter than traditional boundary pixel count. The principle is to consider a set of lines with various orientations, and to count the number of intersections with the region(s) of interest (see figure on the right). The number of intersections is proportional to the perimeter (Serra, 1982<ref name="Serra1982>{{ cite book
-| title = Image Analysis and Mathematical Morphology. Volume 1
-| author = Serra, Jean
-| publisher                = Academic Press
-| year                     = 1982
-}}</ref>; Legland ''et al.'', 2007<ref name="Legland2007">
+The implemented method for '''perimeter measurement''' aims at providing a better estimate of the perimeter than traditional boundary pixel count. The principle is to consider a set of lines with various orientations, and to count the number of intersections with the region(s) of interest (see figure on the right). The number of intersections is proportional to the perimeter (Serra, 1982<ref name="Serra1982></ref>; Legland ''et al.'', 2007<ref name="Legland2007">
 {{cite conference
 |title = Computation of Minkowski measures on 2D and 3D binary images
 |author = Legland, David and Kiêu, Kiên and Devaux, Marie-Françoise
@@ -273,13 +263,7 @@ The implemented method for '''perimeter measurement''' aims at providing a bette
 |volume                   = 26
 |doi                      = 10.5566/ias.v26.p83-92
 |url                      = http://www.ias-iss.org/ojs/IAS/article/view/811
-}}</ref>;  Ohser ''et al.'', 2009<ref name="Osher2009>{{ cite conference
-| title = 3D Images of Materials Structures: processing and analysis
-| author = Joachim Ohser and Katja Schladitz
-| publisher                = WILEY-VCH Verlag GmbH \& Co. KGaA, Weinheim
-| year                     = 2009
-| isbn = 978-3-527-31203-0
-}}</ref>). By averaging over all possible directions, the estimate is unbiased.
+}}</ref>;  Ohser ''et al.'', 2009<ref name="Osher2009></ref>). By averaging over all possible directions, the estimate is unbiased.
 
 Perimeter can be estimated using either two directions (horizontal and vertical), or four directions (by adding the diagonals). Restricting the number of directions introduces an estimation bias, with known theoretical bounds (Moran, 1966<ref name="Moran1966">
 {{cite conference
@@ -292,20 +276,8 @@ Perimeter can be estimated using either two directions (horizontal and vertical)
 |pages = 359-364
 |doi = 10.1093/biomet/53.3-4.359
 |URL = http://biomet.oxfordjournals.org/content/53/3-4/359.abstract
-}}</ref>;  Legland ''et al.'', 2007<ref name="Legland2007">
-{{cite conference
-|title = Computation of Minkowski measures on 2D and 3D binary images
-|author = Legland, David and Kiêu, Kiên and Devaux, Marie-Françoise
-|journal = Image Analysis and Stereology
-|year = 2007
-|month                    = June
-|number                   = 6
-|pages                    = 83-92
-|volume                   = 26
-|doi                      = 10.5566/ias.v26.p83-92
-|url                      = http://www.ias-iss.org/ojs/IAS/article/view/811
-}}</ref>), that is usually better than boundary pixel count (Lehmann ''et al.'', 2012<ref name="Lehmann2012">
-{{cite conference
+}}</ref>;  Legland ''et al.'', 2007<ref name="Legland2007"></ref>), that is usually better than boundary pixel count (Lehmann ''et al.'', 2012<ref name="Lehmann2012">
+{{cite journal
 |title = Efficient N-Dimensional surface estimation using [[wikipedia:Crofton formula|Crofton formula]] and run-length encoding
 |author = Lehmann, Gaetan and Legland, David
 |journal = Insight Journal
@@ -314,24 +286,10 @@ Perimeter can be estimated using either two directions (horizontal and vertical)
 |url = http://hdl.handle.net/10380/3342
 }}</ref>).
 
-The '''estimation of surface area''' follows the same principle. The number of directions is typically chosen equal to 3 (the three main axes in image), or 13 (by considering also diagonals). As for perimeter estimation, surface area estimation in usually biased, but is usually more precise than measuring the surface area of the polygonal mesh reconstructed from binary images (Lehmann ''et al.'', 2012<ref name="Lehmann2012">
-{{cite conference
-|title = Efficient N-Dimensional surface estimation using [[wikipedia:Crofton formula|Crofton formula]] and run-length encoding
-|author = Lehmann, Gaetan and Legland, David
-|journal = Insight Journal
-|year = 2012
-|pages                    = 1-11
-|url = http://hdl.handle.net/10380/3342
-}}</ref>).
+The '''estimation of surface area''' follows the same principle. The number of directions is typically chosen equal to 3 (the three main axes in image), or 13 (by considering also diagonals). As for perimeter estimation, surface area estimation in usually biased, but is usually more precise than measuring the surface area of the polygonal mesh reconstructed from binary images (Lehmann ''et al.'', 2012<ref name="Lehmann2012"></ref>).
 
 =====Euler number=====
-The measurement of Euler number depends on the choice of the connectivity. For planar images, typical choices are the 4-connectivity, corresponding to the orthogonal neighbors, and the 8-connectivity, that also considers the diagonal neighbors. In 3D, the 6-connectivity considers the neighbors in the three main directions within the image, whereas the 26 connectivity also considers the diagonals. Other connectivities have been proposed but are not implemented in MorphoLibJ (Ohser ''et al.'', 2009<ref name="Osher2009>{{ cite conference
-| title = 3D Images of Materials Structures: processing and analysis
-| author = Joachim Ohser and Katja Schladitz
-| publisher                = WILEY-VCH Verlag GmbH \& Co. KGaA, Weinheim
-| year                     = 2009
-| isbn = 978-3-527-31203-0
-}}</ref>).
+The measurement of Euler number depends on the choice of the connectivity. For planar images, typical choices are the 4-connectivity, corresponding to the orthogonal neighbors, and the 8-connectivity, that also considers the diagonal neighbors. In 3D, the 6-connectivity considers the neighbors in the three main directions within the image, whereas the 26 connectivity also considers the diagonals. Other connectivities have been proposed but are not implemented in MorphoLibJ (Ohser ''et al.'', 2009<ref name="Osher2009></ref>).
 
 In the current implementation in MorphoLibJ, the Euler number is not taken into account for intersection of particles with image borders. This may result in non-integer result if the particle(s) of interest touches the image border.
 
@@ -342,15 +300,7 @@ In 2D, the '''isoperimetric deficit index''' (or "shape factor", or "circularity
 
 ::::::::<math>circularity=4\pi\frac{A}{P^{2}}</math>
 
-While values of circularity range theoretically within the interval <math>[0;1]</math>, the measurements errors of the perimeter may produce circularity values above 1 (Lehmann ''et al.'', 2012<ref name="Lehmann2012">
-{{cite conference
-|title = Efficient N-Dimensional surface estimation using [[wikipedia:Crofton formula|Crofton formula]] and run-length encoding
-|author = Lehmann, Gaetan and Legland, David
-|journal = Insight Journal
-|year = 2012
-|pages                    = 1-11
-|url = http://hdl.handle.net/10380/3342
-}}</ref>). The MorphoLibJ library also considers the inverse of the circularity, referred to as "elongation index". The values of elongation range from 1 for round particles and increase for elongated particles.
+While values of circularity range theoretically within the interval <math>[0;1]</math>, the measurements errors of the perimeter may produce circularity values above 1 (Lehmann ''et al.'', 2012<ref name="Lehmann2012"></ref>). The MorphoLibJ library also considers the inverse of the circularity, referred to as "elongation index". The values of elongation range from 1 for round particles and increase for elongated particles.
 
 ::::::::<math>elongation	=	\frac{P^{2}}{4\pi\cdot A}</math>
 
@@ -392,7 +342,7 @@ This plugin computes for each label the largest disk that can be enclosed within
 * '''xi''': the x-coordinate of the inscribed circle.
 * '''yi''': the y-coordinate of the inscribed circle.
 * '''radius''': the radius of the inscribed circle.
-[[Image:Longest-geodesic-path-DRIVE.png|thumb|300px|right|Computation of the geodesic diameter on a segmented image from the DRIVE database (Staal ''et al''., 2004<ref name="Staal2004">{{ cite conference
+[[Image:Longest-geodesic-path-DRIVE.png|thumb|300px|right|Computation of the geodesic diameter on a segmented image from the DRIVE database (Staal ''et al''., 2004<ref name="Staal2004">{{ cite journal
 |title                    = Ridge based vessel segmentation in color images of the retina
 | author                   = J.J. Staal and M.D. Abramoff and M. Niemeijer and M.A. Viergever and B. van Ginneken
 |  journal                  = IEEE Transactions on Medical Imaging
