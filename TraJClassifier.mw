@@ -11,7 +11,7 @@
 
 
 == Purpose ==
-This Fiji plugin loads trajectories from TrackMate, characterize them using [https://github.com/thorstenwagner/TraJ TraJ] and classificate them into normal diffusion, subdiffusion, confined diffusion and directed/active motion by a random forest approach (through Renjin). It supports local analysis and is therefore able to split a single trajectory into segments with different motion types.
+This Fiji plugin loads trajectories from TrackMate (exported via the action "Export trajectories"), characterize them using [https://github.com/thorstenwagner/TraJ TraJ] and classificate them into normal diffusion, subdiffusion, confined diffusion and directed/active motion by a random forest approach (through Renjin). It supports local analysis and is therefore able to split a single trajectory into segments with different motion types.
 
 == Installation ==
 
@@ -35,7 +35,7 @@ These features and the corresponding class were then used to train a random fore
 
 As summary, the classification process is as follows:
   
-  1. Load trajectories from TrackMate xml file
+  1. Load trajectories from TrackMate xml file (Exported via the action "Export trajectories")
   2. For each trajectory
     2.1 Split the trajectory into subtrajectories using a sliding window
     2.2 Calculate the features of each subtrajectory and classificate them (-> results in a class l with confidence c for each subtrajectory)
