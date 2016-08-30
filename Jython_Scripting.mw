@@ -3,3 +3,44 @@
 This page is in a rewrite process that will take some time.
 
 You can view the original content of this page at [[Jython Scripting Examples]].
+
+== Introduction ==
+
+Jython is an implementation of the Python programming language designed to run on the Java platform. <ref>[http://rsb.info.nih.gov/ij/plugins/index.html Wikipedia entry on Jython]. Accessed: 2016-08-30</ref> In ImageJ Jython is one of several [[Scripting#Supported_languages|supported languages]].
+
+== When to use Jython ==
+
+The following list will help you to decide if Jython is the right choice to create scripts for ImageJ:
+
+* If you have experience with Python you can easily use Jython for ImageJ scripting. But you have to keep in mind that tools commonly used in many Python projects (e.g. Numpy) are not available in Jython. By building your [[Jython_Scripting#Self_written_Jython_modules_for_ImageJ|own modules]] you can create complex scripts that otherwise are only possible by writing ImageJ plugins in Java.
+* If don't have any experience in programming, the Python language is a good choice to start with. If your only aim is to write scripts for ImageJ, there are other languages you should try first (e.g. [[Groovy_Scripting|Groovy]]).
+* In Python many problems can be solved with less code than in other languages. Still the code is easy to read. Have a look at the examples on this page and decide if you want to start using Python for ImageJ scripting.
+
+=== Explanation ===
+
+The Java implementation of Python is limited in functionality. One can use the [https://docs.python.org/2/library/index.html standard library], but it's not possible to install additional Python modules. Moreover a growing number of projects build on Python 3 which is not fully compatible with Python 2 Jython is based on. If you want to start learning Python it's recommended to learn Python 3.x instead of Python 2.
+
+Even with the given limitations Jython is a powerful language for ImageJ scripting. Hopefully the examples on this page can convince you of that.
+
+== Jython basics for ImageJ ==
+
+=== Introduction ===
+
+The aim of this page is not to teach how to program Python. This purpose is much better fulfilled by the [https://docs.python.org/2/library/index.html documentation of Python 2]. The focus of this page is to show how features of the Python language can be useful for ImageJ scripting.
+
+That is why examples are used that are fully functional. Just copy the code to the [[http://imagej.net/Using_the_Script_Editor|Script Editor]] and try them by yourself.
+
+=== Image selection using the GenericDialog class ===
+
+coming soon...
+
+=== Using ImageJ-Ops ===
+
+coming soon...
+
+== Self written Jython modules for ImageJ ==
+
+coming soon...
+
+== References ==
+<references />
