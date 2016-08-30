@@ -235,6 +235,7 @@ So far, the following attribute filtering plugins are available within MorphoLib
 * [[Classic Watershed]], plugin implementing the original watershed algorithm by Pierre Soille and Luc M. Vincent (1990) to segment 2D/3D grayscale images.
 * [[Marker-controlled Watershed]], a plugin to perform watershed by flooding from specific seed points or markers by Meyer and Beucher (1990).
 * [[Morphological Segmentation]], a plugin with a graphical user interface to segment 2D/3D images based on morphological operations and the watershed algorithm.
+* [[Distance Transform Watershed]], two plugins (2D and 3D) that work on binary images and allow to separate touching objects by combining the distance transform and watershed methods.
 
 == Measurements ==
 [[MorphoLibJ]] contains several tools for quantifying the size, the shape, or the spatial organization, from '''binary or label''' 2D and 3D images. The aim is to facilitate the management of label images, contrary to the built-in “Analyze Particles...” function that operates directly on a grayscale image. 
