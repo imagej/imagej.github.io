@@ -256,7 +256,7 @@ For 3D particles, intrinsic volumes correspond to the volume, the surface area, 
 =====Estimation from 2D or 3D images=====
 In image analysis, the '''estimation of area''' of 2D particles and of '''volume of 3D particles''' simply consists in counting the number of pixels or voxels that constitute it, weighted by the area of an individual pixel or the volume of an individual voxel. 
 
-The implemented method for '''perimeter measurement''' aims at providing a better estimate of the perimeter than traditional boundary pixel count. The principle is to consider a set of lines with various orientations, and to count the number of intersections with the region(s) of interest (see figure on the right). The number of intersections is proportional to the perimeter (Serra, 1982<ref name="Serra1982>{{ cite conference
+The implemented method for '''perimeter measurement''' aims at providing a better estimate of the perimeter than traditional boundary pixel count. The principle is to consider a set of lines with various orientations, and to count the number of intersections with the region(s) of interest (see figure on the right). The number of intersections is proportional to the perimeter (Serra, 1982<ref name="Serra1982>{{ cite book
 | title = Image Analysis and Mathematical Morphology. Volume 1
 | author = Serra, Jean
 | publisher                = Academic Press
