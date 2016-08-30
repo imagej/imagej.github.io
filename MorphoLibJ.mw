@@ -31,7 +31,7 @@ shape. Common structuring element include squares, discrete disks and octogons. 
 structures.
 
 === Principles ===
-The original idea was to define a methodology to describe shapes by using another shape as test probe (Serra, 1982<ref name="Serra1982>{{ cite conference
+The original idea was to define a methodology to describe shapes by using another shape as test probe (Serra, 1982<ref name="Serra1982>{{ cite book
 | title = Image Analysis and Mathematical Morphology. Volume 1
 | author = Serra, Jean
 | publisher                = Academic Press
