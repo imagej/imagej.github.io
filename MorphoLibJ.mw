@@ -77,7 +77,44 @@ image. It results in enhancing the edges of the image.
 The '''white top-hat''' first computes a morphological opening (resulting in removing bright structures smaller than structuring elements), and removes the result from the original image. When applied with a large structuring element, the result is an homogenization of the background, making bright structures easier to segment. Similarly, the '''dark top-hat''' can be used to enhance dark structures observed on an non-homogeneous background.
 [[Image:MorphoLibJ-grains-gradient-Laplacian-whiteTopHat.png|thumb|center|700px|More examples of composed morphological filters. From left to right: morphological gradient, morphological Laplacian, morphological white top-hat.]]
 
-=== Usage ===
+===Directional filters===
+For images containing very thin curvilinear structures (for example blood vessels, cell wall sections...), the application of common filters may be difficult due to the small size of the structures. Even for small structuring elements, the application of a morphological opening or closing let the structure disappear. Moreover, it may be difficult to preserve the whole thickness of the structure.
+
+[[Image:MorphoLibJ-directional-filtering-example.png|thumb|700px|center|Filtering of a thin structure. (a) Original image representing apple cells observed with confocal microscopy. The application of a Gaussian filter (b) or median filter (c) results in noise reduction, but also in a loss of the signal along the cell walls. The directional filtering (d) better preserves the thickness of the structure.]]
+
+An alternative is to apply directional filtering. The principle is to consider an oriented structuring element such as a line segment of a given length, and to perform morphological operations for various orientations of the structuring element (Soille ''et al.'', 2001<ref name="Soille2001">{{ cite journal
+| title = Directional morphological filtering
+| author = Soille, Pierre and Talbot, Hugues
+| publisher = IEEE
+| year = 2001
+| volume = 23
+| number = 11
+| pages = 1313-1329
+| journal =IEEE Transactions on Pattern Analysis and Machine Intelligence}}</ref>; Heneghan ''et al.'', 2002<ref name="Heneghan2002">{{ cite journal
+| title =  Characterization of changes in blood vessel width and tortuosity in retinopathy of prematurity using image analysis
+| author = Conor Heneghan and John Flynn and Michael O Keefe and Mark Cahill
+| journal = Medical Image Analysis
+| volume = 6
+| number = 4
+| pages= 407-429
+| year = 2002
+| publisher = Elsevier
+}}</ref>; Hendriks ''et al.'', 2003<ref name="Hendriks2003">{{ cite conference
+| title =  Discrete Morphology with Line Structuring Elements
+| author = Hendriks, CL Luengo and van Vliet, Lucas J
+| booktitle = International Conference on Computer Analysis of Images and Patterns
+| pages = 722-729,
+| year = 2003,
+| organization = Springer
+}}</ref>). For example, applying a median filter or a morphological opening with horizontal direction results in the enhancement of horizontal parts of bright structures. Similarly, using a vertical structuring element results in the enhancement of the vertical portions of the structures.
+
+[[Image:MorphoLibJ-directional-filtering-principle.png|thumb|700px|center|Principle of directional filtering of a thin structure. (a) and (b): result of median filter using an horizontal and a vertical linear structuring element. (c) and (d): combination of the results obtained from two directions (horizontal and vertical) and four directions (by adding diagonal directions).]]
+
+The results of oriented filters for each direction can be combined by computing the maximum value over all orientations. The figure above shows the results obtained when combining two or four directions. Here, 32 orientations of line with length 25 were used. This results in the enhancement of the image while preserving the thickness of the bright structures.
+
+Similar results may be obtained for enhancing dark curvilinear structures, by using morphological closing or median filters, and combining the results by computing the minimum over all directions.
+
+=== Plugin Usage ===
 [[Image:MorphoLibJ-mosaic-filters.png|right|thumb|550px|MorphoLibJ filter examples: DAPI stained nuclei image and the result of applying different morphological filters with an octagon of radius 5 as structuring element.]]
 The collection of morphological filters is available in the {{bc | Plugins | MorphoLibJ}} menu. Filters are '''implemented both for 2D and 3D images''', and work for binary, gray level or color (RGB) images.
 ==== Planar images ====
@@ -107,7 +144,16 @@ The following structuring elements can be used for 2D images:
 * line with angle of 0, 90, 45 or 135 degrees
 
 ==== 3D images ====
-Morphological filters for 3D images are available {{bc | Plugins | MorphoLibJ | Morphological filters (3D)}}. The dialog let the user choose the structuring element shape and radius. The same list of operations as for planar images is provided. Planar structuring elements can be used (the operation is simply repeated on each slice), as well as a cubic or spherical structuring element. For most structuring elements, the size can be chosen for each direction.
+Morphological filters for 3D images are available under {{bc | Plugins | MorphoLibJ | Morphological filters (3D)}}. The dialog let the user choose the structuring element shape and radius. The same list of operations as for planar images is provided. Planar structuring elements can be used (the operation is simply repeated on each slice), as well as a cubic or spherical structuring element. For most structuring elements, the size can be chosen for each direction.
+
+====Directional Filters====
+Directional filtering is available from {{bc | Plugins | MorphoLibJ | Directional Filtering}}. It requires a planar image. 
+
+The parameters are:
+* '''Type''': to specify how to combine the results for each oriented filter
+* '''Operation''': the operation to apply using each oriented structuring element
+* '''Line Length''': the approximated length of the structuring element. 
+* '''Direction Number''': the number of oriented structuring elements to consider. To be increased if the length of line is large.
 
 == Connected components operators ==
 The “classical” morphological filters presented in the previous section transform an input image by using the values of pixels or voxels located in a close neighborhood, defined by the structuring element. Such filters can be seen as “local”, as the result in a given position does not depend on image values located at a sufficient distance. 
