@@ -396,7 +396,7 @@ The region adjacency graph plugin gives access to the neighborhood relationship 
 The plugin (under {{bc | Plugins | MorphoLibJ | Analyze | Region Adjacency Graph}}) works for both 2D and 3D images, and requires a label image as input. A typical input is the result of a watershed segmentation (see [[MorphoLibJ#Watershed_segmentation|Watershed Segmentation]]), eventually followed by [[MorphoLibJ#Label_Edition_plugin|manual edition of the labels]]. The output of the plugin is a results table with as many rows as the number of pairs of adjacent regions, containing the labels of the two adjacent regions.
 
 ==Binary and label image utilities==
-The MorphoLibJ library provides several utility functions for the processing and the management of binary and label images.
+The MorphoLibJ library provides several utility functions for the processing and the management of binary and label images. All methods of this section are available as plugins under {{bc | Plugins | MorphoLibJ | Binary Images}} or {{bc | Plugins | MorphoLibJ | Label Images}}.
 
 ===Distances for binary images===
 ====Distance transform====
