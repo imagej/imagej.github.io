@@ -26,9 +26,9 @@ Even with the given limitations Jython is a powerful language for ImageJ scripti
 
 === Introduction ===
 
-The aim of this page is not to teach how to program Python. This purpose is much better fulfilled by the [https://docs.python.org/2/library/index.html documentation of Python 2]. The focus of this page is to show how features of the Python language can be useful for ImageJ scripting.
+The aim of this page is not to teach how to program in Python. This purpose is much better fulfilled by the [https://docs.python.org/2/library/index.html documentation of Python 2]. The focus of this page is to show how features of the Python language can be useful for ImageJ scripting.
 
-That is why examples are used that are fully functional. Just copy the code to the [[Using_the_Script_Editor|Script Editor]] and try them by yourself.
+That is why examples are used that are fully functional. Just copy the code to the [[Using_the_Script_Editor|Script Editor]] and try them by yourself. Extensive in-line documentation is used to explain the implementation.
 
 === Image selection using the GenericDialog class ===
 
