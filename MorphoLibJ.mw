@@ -446,22 +446,60 @@ The region adjacency graph plugin gives access to the neighborhood relationship 
 The plugin (under {{bc | Plugins | MorphoLibJ | Analyze | Region Adjacency Graph}}) works for both 2D and 3D images, and requires a label image as input. A typical input is the result of a watershed segmentation (see [[MorphoLibJ#Watershed_segmentation|Watershed Segmentation]]), eventually followed by [[MorphoLibJ#Label_Edition_plugin|manual edition of the labels]]. The output of the plugin is a results table with as many rows as the number of pairs of adjacent regions, containing the labels of the two adjacent regions.
 
 ==Binary and label image utilities==
-The MorphoLibJ library provides several utility functions for processing binary and label images.
-=== Utilities for binary images ===
-[[Image:MorphoLibJ-grains-binary-label-distance.png|thumb|700px|right|Binary image, result of connected components labeling, and computation of distance map on the complement of binary image.]]
-Some functions are specific for the processing of binary images, namely:
-* '''Connected Components Labeling''' transforms the binary image into a label image by assigning a specific number (label) to each connected component.
+The MorphoLibJ library provides several utility functions for the processing and the management of binary and label images.
+
+===Distances for binary images===
+====Distance transform====
+When analyzing images, it is often necessary to compute distances to a particular structure or position. A convenient operator for binary images is the '''distance transform'''. Its principle is to compute, for each foreground pixel, the distance to the nearest background pixel. The result is commonly referred to as '''Distance Map'''.
+
+[[Image:MorphoLibJ-distance-transform-on-binary-leaf.png|thumb|700px|center|Binary image, and result of computation of the distance transform.]]
+
+Several methods exist for computing distance maps. The MorphoLibJ library implements distance transforms based on chamfer distances, that approximate Euclidean distances but are simpler to compute.
+
 * '''Chamfer Distance Map''' computes an approximate distance map from a binary image between each foreground pixel to the nearest background pixel.
-* '''Geodesic Distance Map''' computes the geodesic distance between each foreground pixel of a binary mask image to the closest pixel of a marker image, while staying within the particle represented by the mask image.
-[[Image:MorphoLibJ-geodesic-distance-example.png|thumb|350px|right|Computation of the geodesic distance map on a binary image from the DRIVE database (Staal ''et al.'', 2004<ref name="Staal2004" />). Left: original image with marker superimposed in red. Right: result of geodesic distance map, hot colors correspond to large distances, cold colors correspond to small distances.]]
 * '''Chamfer Distance Map 3D''' computes an approximate distance map from a 3D binary image between each foreground voxel to the nearest background voxel.
+
+====Geodesic distance transform====
+
+In some cases it may be useful to restrict the propagation of distances to a specific region or mask. For example, one may be interested in the distance between two points in a vasculature network, while staying within the network. The '''geodesic distance transform''' consists in computing the distance from a given binary marker, while constraining the propagation of the distance within a binary mask. An illustration is given in the figure below:
+
+[[Image:MorphoLibJ-geodesic-distance-example.png|thumb|500px|center|Computation of the geodesic distance map on a binary image from the DRIVE database (Staal ''et al.'', 2004<ref name="Staal2004" />). Left: original image with marker superimposed in red. Right: result of geodesic distance map, hot colors correspond to large distances, cold colors correspond to small distances.]]
+
+* '''Geodesic Distance Map''' computes the geodesic distance between each foreground pixel of a binary mask image to the closest pixel of a marker image, while staying within the particle represented by the mask image.
+* '''Interactive Geodesic Distance Map''' computes the geodesic distance between each foreground pixel of a the currently selected image (considered the mask image) to the closest pixel of a marker image defined by the user ROIs, while staying within the particle represented by the mask image.
+
+===Label images===
+When several structures or components are present within an image, it may be more convenient to work with label images. Each pixel or voxel of a label image corresponds to the integer index of the particle it belongs to. The value 0 is assumed to correspond to the background. The number of labels that can be represented depends on the image type: 255 for byte images, 65535 for short images...
+
+Label images can be represented either using shades of gray, or using color maps to better distinguish the different regions. 
+
+====Connected component labeling====
+The different structures within a binary images can be labeled by using a connected component labeling algorithm. Each label will correspond to a set of connected pixels or voxels. 
+
+[[Image:MorphoLibJ-grains-binary-label-distance.png|thumb|700px|right|Binary image, result of connected components labeling, and computation of distance map on the complement of binary image.]]
+
+Different connectivities may be chosen. For planar images, the most current ones are the 4-connectivity, that consider only orthogonal neighbors of a given pixel, and the 8-connectivity, that also considers the diagonals. For 3D images, the 6-connectivity considers only orthogonal neighbors in the three main directions, whereas the 26-connectivity considers all the direct neighbors of a given voxel.
+
+* '''Connected Components Labeling''' transforms the binary image into a label image by assigning a specific number (label) to each connected component.
+
+====Label image representation====
+Several plugins allow to control the appearance of label images. It is possible to choose a given color map, or to transform a label image into a color image. In both cases, the background color can be specified, and the color order can be shuffled to facilitate the discrimination of neighbor regions with similar labels.
+
+[[Image:MorphoLibJ-grains-labels-assign-measure.png|thumb|480px|center|Assign result of a measurement to a label image. In this example, the elongation is represented using a color code, between dark purple (circular) to yellow (very elongated).]]
+
+* '''Assign Measure To Label''' combines a label image with a results table, and creates a new image for which each pixel/voxel is assigned the measurement value corresponding to the label it belongs to.
+* '''Set Label Map''' allows to choose the color map used to display a label image. In particular, shuffling the color map and/or choosing a specific color for background allows better visualization that only grey levels.
+* '''Label To RGB''' converts a label image to true RGB image. Similar to ImageJ native conversion, but this plugin avoids confusion between background pixels and regions with low labels.
+
+===Region and labels selection===
+The MorphoLibJ library offers several tools for automatically select binary regions or labels based on size or position criteria.
+====Binary images====
 * '''Keep / Remove Largest Region''' identifies the largest connected component, and keeps it or removes it.
 * '''Size Opening''' computes the size (area in 2D, volume in 3D) of each connected component, and remove all particles whose size is below the value specified by the user.
 
 Algorithms work for both 2D or 3D images. Default connectivity 4 (resp. 6) is used for 2D (resp. 3D) images.
 
-=== Utilities for label images ===
-Some functions are specific for the processing of label images, in which the pixel/voxel value is used to identify the particle it belongs to. The value 0 is assumed to correspond to the background. The number of labels that can be represented depends on the image type: 255 for byte images, 65535 for short images...
+====Label images====
 [[Image:MorphoLibJ-grains-binary-label-remove-border-largest-size-opening.png|thumb|700px|center|MorphoLibJ utilities for label images. From left to right: original label image, remove border labels, remove largest region, apply size opening for keeping only regions with at least 150 pixels.]]
 
 * '''Remove Border Labels''' is similar to "kill borders" function, but operates faster as no morphological reconstruction is required.
@@ -471,10 +509,6 @@ Some functions are specific for the processing of label images, in which the pix
 * '''Label Boundaries''' creates a new binary image containing value 255 for pixels/voxels having a neighbour with a different value.
 * '''Keep / Remove Largest Label''' identifies the largest label, and keeps it or removes it.
 * '''Label Size Opening''' computes the size (area in 2D, volume in 3D) of each region, and removes all labels whose size is below the value specified by the user.
-* '''Assign Measure To Label''' combines a label image with a results table, and creates a new image for which each pixel/voxel is assigned the measurement value corresponding to the label it belongs to.
-* '''Set Label Map''' allows to choose the color map used to display a label image. In particular, shuffling the color map and/or choosing a specific color for background allows better visualization that only grey levels.
-* '''Label To RGB''' converts a label image to true RGB image. Similar to ImageJ native conversion, but this plugin avoids confusion between background pixels and regions with low labels.
-[[Image:MorphoLibJ-grains-labels-assign-measure.png|thumb|480px|center|MoprphoLibJ: assign result of a measurement to a label image. In this example, the elongation is represented using a color code, between dark purple (circular) to yellow (very elongated).]]
 
 === Label Edition plugin ===
 [[Image:Label-Edition-plugin.png|thumb|right|500px|Label Edition plugin overview.]]To ease the processing of label images, [[MorphoLibJ]] provides the Label Edition plugin (available under {{bc | Plugins | MorphoLibJ | Labels | Label Edition}}). This plugin contains a graphical user interface (GUI) where the users can perform the following set of editing tasks:
