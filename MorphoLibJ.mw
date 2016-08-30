@@ -31,8 +31,30 @@ shape. Common structuring element include squares, discrete disks and octogons. 
 structures.
 
 === Principles ===
-==== Erosion and dilation ====
-The most basic morphological filters are the '''morphological dilation''' and the '''morphological erosion'''. The morphological dilation computes for each pixel the maximum within its neighbourhood (defined by the structuring element), whereas the morphological erosion considers the minimum value within the neighborhood.
+The original idea was to define a methodology to describe shapes by using another shape as test probe (Serra, 1982<ref name="Serra1982>{{ cite conference
+| title = Image Analysis and Mathematical Morphology. Volume 1
+| author = Serra, Jean
+| publisher                = Academic Press
+| year                     = 1982
+}}</ref>; Serra ''et al.'', 1992<ref name="Serra1992>{{ cite conference
+| title =  An overview of morphological filtering
+| author = Serra, Jean and Vincent, Luc
+| journal = Circuits, Systems and Signal Processing
+| volume = 11
+| number = 1
+| pages= 47-108
+| year = 1992
+| publisher = Springer
+}}</ref>). The most basic morphological filters are the '''morphological dilation''' and the '''morphological erosion'''. The principle of morphological dilation is to test for each point of the plane, if the structuring element centered on this point '''intersects''' the structure of interest (see figure below). It results in a set larger than the original set. 
+The principle of morphological erosion is to test for each point of the plane if the structuring element centred on this point '''is contained''' within the original set. It results in a set smaller than original set.
+
+[[Image:Principle-of-morphological-dilation-and-erosion.png|thumb|700px|center|Principle of morphological dilation and erosion on a binary set, using a disk-shaped structuring element.]]
+
+Morphological dilation and erosion change the size and the resulting set. It may also change its topology: after a dilation, components may merge and holes be filled. After an erosion, components may disappear, or components be separated into several parts.
+
+==Grayscale morphological filters==
+==== Grayscale erosion and dilation ====
+Morphological erosion and dilation may also be applied on grayscale images. In that case, the morphological dilation computes for each pixel the maximum within its neighborhood (defined by the structuring element), whereas the morphological erosion considers the minimum value within the neighborhood.
 [[Image:MorphoLibJ-grains-dilation-erosion.png|thumb|center|700px|Some examples of morphological filters on a grey level image. From left to right: original image, result of dilation with a square structuring element, and result of erosion with the same structuring element.]]
 Applying a  dilation or an erosion changes the size of the structures in the image: the grains in the result of the dilated image are larger. Morphological erosion can also be used on binary images to help separating touching particles.
 
