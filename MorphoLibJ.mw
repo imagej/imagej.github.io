@@ -232,7 +232,17 @@ So far, the following attribute filtering plugins are available within MorphoLib
 == Watershed segmentation ==
 [[Image:Classic-Watershed-lines-blur-blobs.png|thumb|200px|Overlay of watershed lines on blurred blobs.]] The watershed algorithm assimilates the grey level image to a digital elevation model, and aims at detecting the different catchment basins. In the grey-level image, the catchment basins correspond to dark regions surrounded by bright structures (the "crests"). It is a very popular technique specially used to segment touching objects. The MorphoLibJ suite contains several implementations of the algorithm and plugins that make use of it:
 
-* [[Classic Watershed]], plugin implementing the original watershed algorithm by Pierre Soille and Luc M. Vincent (1990) to segment 2D/3D grayscale images.
+* [[Classic Watershed]], plugin implementing the original watershed algorithm by Pierre Soille and Luc M. Vincent (1990)<ref name="Soille1990>{{ cite conference
+| title =  Determining watersheds in digital pictures via flooding simulations
+| author = Soille, Pierre and Vincent, Luc M
+| booktitle = Proc. SPIE
+| volume = 1360
+| pages = 240-250
+| year = 1990
+| organization = International Society for Optics and Photonics
+| doi = 10.1117/12.24211
+| url = http://dx.doi.org/10.1117/12.24211
+}}</ref> to segment 2D/3D grayscale images.
 * [[Marker-controlled Watershed]], a plugin to perform watershed by flooding from specific seed points or markers by Meyer and Beucher (1990).
 * [[Morphological Segmentation]], a plugin with a graphical user interface to segment 2D/3D images based on morphological operations and the watershed algorithm.
 * [[Distance Transform Watershed]], two plugins (2D and 3D) that work on binary images and allow to separate touching objects by combining the distance transform and watershed methods.
