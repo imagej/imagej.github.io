@@ -92,7 +92,9 @@ An alternative is to apply directional filtering. The principle is to consider a
 | volume = 23
 | number = 11
 | pages = 1313-1329
-| journal =IEEE Transactions on Pattern Analysis and Machine Intelligence}}</ref>; Heneghan ''et al.'', 2002<ref name="Heneghan2002">{{ cite journal
+| journal =IEEE Transactions on Pattern Analysis and Machine Intelligence
+| doi = 10.1109/34.969120
+}}</ref>; Heneghan ''et al.'', 2002<ref name="Heneghan2002">{{ cite journal
 | title =  Characterization of changes in blood vessel width and tortuosity in retinopathy of prematurity using image analysis
 | author = Conor Heneghan and John Flynn and Michael O Keefe and Mark Cahill
 | journal = Medical Image Analysis
@@ -101,6 +103,7 @@ An alternative is to apply directional filtering. The principle is to consider a
 | pages= 407-429
 | year = 2002
 | publisher = Elsevier
+| doi = 10.1016/S1361-8415(02)00058-0
 }}</ref>; Hendriks ''et al.'', 2003<ref name="Hendriks2003">{{ cite conference
 | title =  Discrete Morphology with Line Structuring Elements
 | author = Hendriks, CL Luengo and van Vliet, Lucas J
@@ -108,6 +111,7 @@ An alternative is to apply directional filtering. The principle is to consider a
 | pages = 722-729
 | year = 2003
 | organization = Springer
+| doi = 10.1007/978-3-540-45179-2_88
 }}</ref>). For example, applying a median filter or a morphological opening with horizontal direction results in the enhancement of horizontal parts of bright structures. Similarly, using a vertical structuring element results in the enhancement of the vertical portions of the structures.
 
 [[Image:MorphoLibJ-directional-filtering-principle.png|thumb|700px|center|Principle of directional filtering of a thin structure. (a) and (b): result of median filter using an horizontal and a vertical linear structuring element. (c) and (d): combination of the results obtained from two directions (horizontal and vertical) and four directions (by adding diagonal directions).]]
