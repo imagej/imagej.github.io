@@ -36,7 +36,8 @@ The original idea was to define a methodology to describe shapes by using anothe
 | author = Serra, Jean
 | publisher                = Academic Press
 | year                     = 1982
-}}</ref>; Serra ''et al.'', 1992<ref name="Serra1992>{{ cite conference
+| doi = 10.1002/cyto.990040213
+}}</ref>; Serra ''et al.'', 1992<ref name="Serra1992>{{ cite journal
 | title =  An overview of morphological filtering
 | author = Serra, Jean and Vincent, Luc
 | journal = Circuits, Systems and Signal Processing
@@ -45,6 +46,7 @@ The original idea was to define a methodology to describe shapes by using anothe
 | pages= 47-108
 | year = 1992
 | publisher = Springer
+| doi = 10.1007/BF01189221
 }}</ref>). The most basic morphological filters are the '''morphological dilation''' and the '''morphological erosion'''. The principle of morphological dilation is to test for each point of the plane, if the structuring element centered on this point '''intersects''' the structure of interest (see figure below). It results in a set larger than the original set. 
 The principle of morphological erosion is to test for each point of the plane if the structuring element centred on this point '''is contained''' within the original set. It results in a set smaller than original set.
 
