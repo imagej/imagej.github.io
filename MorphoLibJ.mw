@@ -271,11 +271,13 @@ This section describes the methods implemented in MorphoLibJ for describing indi
 [[Image:MorphoLibJ-Euler-number.png|thumb|400px|Illustration of Euler Number definition. Left: three particles with Euler numbers equal to 1, 0 and -1, respectively. Right: example of a 3D particle with an Euler number equal to -1, corresponding to the subtraction of 1 connected components minus two handles.]]The intrinsic volumes are a set of features with interesting mathematical properties that are commonly used for describing individual particles as well as binary microstructrues. In the planar case, they correspond to the area, the perimeter and the Euler number. The Euler number is a topological characteristic that equals the number of connected components minus the number of holes.
 
 For 3D particles, intrinsic volumes correspond to the volume, the surface area, the mean breadth (a quantity proportional to the integral of the mean curvature over the surface) and the Euler number. In 3D the Euler number equals the number of connected components minus the number of "handles" or "tunnels" through the structure, plus the number of bubbles within the particles (Serra, 1982<ref name="Serra1982></ref>; Ohser ''et al.'', 2009<ref name="Osher2009>{{ cite conference
-| title = 3D Images of Materials Structures: processing and analysis
+| booktitle = 3D Images of Materials Structures: processing and analysis
+| title = Image Processing
 | author = Joachim Ohser and Katja Schladitz
-| publisher                = WILEY-VCH Verlag GmbH \& Co. KGaA, Weinheim
-| year                     = 2009
-| isbn = 978-3-527-31203-0
+| publisher = Wiley-VCH Verlag GmbH & Co. KGaA
+| year = 2009
+| doi = 10.1002/9783527628308.ch4
+| url = http://dx.doi.org/10.1002/9783527628308.ch4
 }}</ref>).
 
 =====Estimation from 2D or 3D images=====
