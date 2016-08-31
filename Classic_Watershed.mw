@@ -13,7 +13,14 @@
 |}
 
 == Introduction ==
-[[Image:Watershed-flooding-graph.png|thumb|250px|right|Schematic overview of watershed flooding in 1D]]Classic Watershed is an ImageJ/Fiji plugin to perform watershed segmentation of grayscale 2D/3D images using flooding simulations as described by Pierre Soille and Luc M. Vincent (1990).
+[[Image:Watershed-flooding-graph.png|thumb|250px|right|Schematic overview of watershed flooding in 1D]]Classic Watershed is an ImageJ/Fiji plugin to perform watershed segmentation of grayscale 2D/3D images using flooding simulations as described by Pierre Soille and Luc M. Vincent (1990)<ref name="Soille1990>{{ cite conference
+| title =  Determining watersheds in digital pictures via flooding simulations
+| author = Soille, Pierre and Vincent, Luc M
+| booktitle = Lausanne-DL tentative
+| pages = 240-250
+| year = 1990
+| organization = International Society for Optics and Photonics
+}}</ref>.
 
 
 The basic idea consists of considering the input image as topographic surface and placing a water source in each regional minimum of its relief. Next the entire relief is flooded from the sources and dams are placed where the different water sources meet.
@@ -88,8 +95,7 @@ You should now find the plugin under the sub-menu {{bc | Plugins |MorphoLibJ | S
 '''Note''': Classic Watershed is only one of the plugins included in the [[MorphoLibJ]] suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
 == References ==
-# Pierre Soille and Luc M. Vincent. "Determining watersheds in digital pictures via flooding simulations." Lausanne-DL tentative. International Society for Optics and Photonics, 1990.
-# David Legland, Ignacio Arganda-Carreras, and Philippe Andrey. [http://bioinformatics.oxfordjournals.org/content/early/2016/07/12/bioinformatics.btw413.abstract MorphoLibJ: integrated library and plugins for mathematical morphology with ImageJ]. Bioinformatics, btw413, 2016.
+<references />
 
 == See also ==
 * [[Marker-controlled Watershed]], a plugin to perform watershed by flooding from specific seed points or markers.
