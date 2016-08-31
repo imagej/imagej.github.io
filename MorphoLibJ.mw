@@ -243,7 +243,17 @@ So far, the following attribute filtering plugins are available within MorphoLib
 | doi = 10.1117/12.24211
 | url = http://dx.doi.org/10.1117/12.24211
 }}</ref> to segment 2D/3D grayscale images.
-* [[Marker-controlled Watershed]], a plugin to perform watershed by flooding from specific seed points or markers by Meyer and Beucher (1990).
+* [[Marker-controlled Watershed]], a plugin to perform watershed by flooding from specific seed points or markers by Meyer and Beucher (1990)<ref name="Meyer1990>{{ cite journal
+| title = Morphological segmentation
+| author = F. Meyer and S. Beucher
+| journal = Journal of Visual Communication and Image Representation
+| volume = 1
+| number = 1
+| pages = 21-46
+| year = 1990
+| doi = 10.1016/1047-3203(90)90014-M
+| url = http://www.sciencedirect.com/science/article/pii/104732039090014M
+}}</ref>.
 * [[Morphological Segmentation]], a plugin with a graphical user interface to segment 2D/3D images based on morphological operations and the watershed algorithm.
 * [[Distance Transform Watershed]], two plugins (2D and 3D) that work on binary images and allow to separate touching objects by combining the distance transform and watershed methods.
 
