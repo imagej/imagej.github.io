@@ -6,10 +6,13 @@
 | filename               = scripting-javascript.jar
 | source                 = {{GitHub|org=scijava|repo=scripting-javascript}}
 | status                 = stable
-}}
-{{Scripting}}
+}}{{Scripting}}[[wikipedia:JavaScript|JavaScript]] is a high-level, dynamic, untyped programming language, supporting multiple paradigms including object-oriented, imperative and functional programming styles. Although there are similarities between JavaScript and [[Java]], including language name and syntax, the two are distinct languages and differ greatly in their design.
 
-= Javascript tutorial for ImageJ =
+= A note about JavaScript engines =
+
+ImageJ supports JavaScript via Java's built-in [[wikipedia:Nashorn (JavaScript engine)|Nashorn JavaScript engine]]. Versions of Java before Java 8 instead included Mozilla's [[wikipedia:Rhino (JavaScript engine)|Rhino JavaScript engine]]. The two engines are largely, but not completely, compatible—meaning that some older scripts written for older versions of ImageJ (which used Rhino) may no longer function correctly when run with current ImageJ versions (which use Nashorn).
+
+= JavaScript tutorial for ImageJ =
 
 == Language basics ==
 
