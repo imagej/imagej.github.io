@@ -42,6 +42,7 @@ mvn -Pexec
 </source>
 
 === Launching alternative user interfaces ===
+{{Warning | Alternative UIs are experimental and still at "proof of concept" stage. The <code>swing</code> UI is semi-functional, but the other two (<code>swing-mdi</code> and <code>awt</code>) are largely non-functional, mentioned here solely for completeness.}}
 <source lang="bash">
 mvn -Dscijava.ui=swing -Pexec
 mvn -Dscijava.ui=swing-mdi -Pexec
