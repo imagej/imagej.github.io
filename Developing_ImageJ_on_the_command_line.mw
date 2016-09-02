@@ -43,11 +43,9 @@ mvn -Pexec
 
 === Launching alternative user interfaces ===
 <source lang="bash">
-mvn -Dimagej.ui=swing -Pexec
-mvn -Dimagej.ui=swing-mdi -Pexec
-mvn -Dimagej.ui=awt -Pexec
-mvn -Dimagej.ui=pivot -Pexec
-mvn -Dimagej.ui=swt -Pexec
+mvn -Dscijava.ui=swing -Pexec
+mvn -Dscijava.ui=swing-mdi -Pexec
+mvn -Dscijava.ui=awt -Pexec
 </source>
 
 == See also ==
