@@ -91,6 +91,9 @@ If all concavity pixel with largest concavity depth should be detected, the plug
 ===SVM===
 ==Parameters==
 As already mentioned the main algorithm follows the publication of ''Kumar et al.'' The presented algorithm to specify a valid split line depends on lots of parameters, as you can see below. Not every parameter is needed for every split line type and concavity region detection
+
+[[File:PluginScreenshot3.png]]
+
 '''background color:''' Choose the color of your background. Choose white, if objects are darker than the background, and black if objects are lighter than the background.
 
 '''is already preprocessed''' Choose if your picture is already preprocessed. If it is unchecked, preprocessing will be executed before the algorithm is started. The default-preprocessing is: binarization, erosion, gaussian blur (<math>\sigma=2</math>), dilation
@@ -105,19 +108,20 @@ As already mentioned the main algorithm follows the publication of ''Kumar et al
 
 '''write data in file to train SVM''' If it is checked, data for the SVM-Model is written in a file you can choose.
 
-'''binarization threshold''' The binarization threshold
+'''binarization threshold''' Threshold to binarize an image. Default: Detected value for the image by ImageJ default method.
 
-'''concavity-depth threshold'''
+'''concavity-depth threshold''' Largest distance of a concavity region in pixels <math>CD_i</math>
 
-'''saliency-threshold'''
+'''saliency-threshold''' 
+<math>SA_{i,j}=\frac{\min(CD_i,CD_j)}{\min(CD_i,CD_j)+ d(C_i,C_j)}</math>
 
-'''concavity-concavity-alignment-threshold'''
+'''concavity-concavity-alignment-threshold'''<math>CC_{ij}= \pi - \cos^{-1}(v_i \cdot v_j)</math>
 
-'''concavity-line-alignment-threshold'''
+'''concavity-line-alignment-threshold'''<math>CL_{ij}=\max(\cos^{-1}(v_i \cdot u_{ij}),\cos^{-1}(v_j \cdot (-u_{ij})))</math>
 
-'''concavity-angle-threshold'''
+'''concavity-angle-threshold'''<math>CA=\angle C_{i1}C_iC_{i2}</math>
 
-'''concavity-ratio-threshold'''
+'''concavity-ratio-threshold'''<math>CR=\frac{CD_m}{CD_n}</math>
 
 '''inner-contour-parameter'''
 
@@ -129,7 +133,7 @@ As already mentioned the main algorithm follows the publication of ''Kumar et al
 
 '''<math>c_2</math>'''
 
-'''<math>\chi</math>-threshold'''
+'''<math>\chi</math>-threshold''' <math>$\chi = \frac{c_1*CD_i+c_1*CD_j+c_2}{d(C_i,C_j)+c_1*CD_i+ c_1*CD_j+c_2}$</math>
 
 =Installation=
 
