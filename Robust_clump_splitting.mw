@@ -89,6 +89,8 @@ If all concavity pixel with largest concavity depth should be detected, the plug
 
 [[File:LargestPixels.png]]
 ===SVM===
+The parameters <math>c_1</math> and <math>c_2</math> can be optimized by a linear SVM. This SVM is integrated in the plugin and uses
+
 ==Parameters==
 As already mentioned the main algorithm follows the publication of ''Kumar et al.'' The presented algorithm to specify a valid split line depends on lots of parameters, as you can see below. Not every parameter is needed for every split line type and concavity region detection
 
