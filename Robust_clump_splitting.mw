@@ -1,0 +1,131 @@
+{{Infobox
+| software               = Fiji
+| name                   = Robust Clump Splitting
+| author                 = {{Person|LouiseBloch}}, {{Person|Twagner}}
+| maintainer             = {{Person|LouiseBloch}}, {{Person|Twagner}}
+| filename               = ij_robust_split.jar []
+| source                 = Github [https://github.com/thorstenwagner/ij-robust-split]
+| latest version         = v1.0.0 (04 Sep 2016)
+| status                 = active 
+}}
+
+
+== Purpose ==
+This plugin is an implementation for concavity-based clump splitting of the algorithms described in:
+
+''Kumar, S., Ong, S.-H., Ranganath, S., Ong, T., und Cheq, F.
+(2005). A rule based Approach for robust clump splitting. Pattern Recognition,
+39(6), pp.1088–1098.
+''
+
+''Farhan, M., Yli-Harja, O., und Niemistö, A. (2013). A novel
+method for splitting clumps of convex objects incorporating image intensity and
+using rectangular window-based concavity point-pair search. Pattern Recognition,
+46(3), pp.741–751.''
+ 
+and
+
+''Wang, H., Zhang, H., und Nilanjan, R. (2011). Clump splitting via
+bottleneck detection. IEEE International Conference Image Processing, 2, pp.61–64.''
+
+It depends on the [http://imagej.net/IJ_Blob IJ-Blob] library, the [https://github.com/hharrison/vecmath Vecmath] library, the [https://www.csie.ntu.edu.tw/~cjlin/libsvm/ LIBSVM] library and the [http://java-ml.sourceforge.net/ JavaML] library.
+== Examples ==
+
+==Plugin usage ==
+If you start the plugin you can choose between two main uses. Choose if you either want to split clumps of an image or want to train SVM to optimize parameters <math>c_1</math> and <math>c_2</math>. To train the SVM you need to have input data.
+
+[[File:Eingabemaske2.png]]
+===Detection Types===
+The plugin supports different types of split lines, concavity region detection and concavity pixel detection. If you want to split a clump you have to choose, what kind of detection you want to use.
+
+[[File:PluginScreenshot1.png]]
+====Split Lines====
+The plugin supports different split line types which should be specified:
+
+'''Straight Split Line:''' The straight split Line is a straight line between two concavity pixels. Use it, if no intensity information for better split lines is available.
+
+[[File:StraightSplitline.png]]
+
+'''Geodesic Distance Split Line:''' The geodesic distance split line uses the path of maximum intensity change between two concavity pixels. It is detected by the algorithm of ''Wang et al.'' Use it, if the individual objects can be distinguished by intensity and the split lines are not too convex.
+
+[[File:GeodesicDistanceSplitLine.png]]
+
+'''Maximum Intensity Split Line:''' The maximum intensity split line uses the path of maximum intensity between two concavity pixels. It is detected by the algorithm of ''Wang et al.'' Use it, if the intensity of the individual objects have higher at the edge, than in the center and the split lines are not too convex.
+
+[[File:MaximumIntensitySplitLine.png]]
+
+'''Minimum Intensity Split Line:''' The minimum intensity split line uses the path of minimum intensity between two concavity pixels. It is detected by the algorithm of ''Wang et al.'' Use it, if the intensity of the individual objects is lower at the edge, than in the center and the split lines are not too convex.
+
+[[File:MinimumIntensitySplitLine.png]]
+
+'''Maximum Intensity Split Line Farhan:''' The maximum intensity split line uses the path of maximum intensity between two concavity pixels. It is detected by the algorithm of ''Wang et al.'' Use it, if the intensity of the individual objects have higher at the edge, than in the center and there are no clumps without intensity information, and the split line does not often change orientation.
+
+[[File:MaximumIntensitySplitLine.png]]
+
+'''Minimum Intensity Split Line Farhan:''' The minimum intensity split line uses the path of minimum intensity between two concavity pixels. It is detected by the algorithm of ''Farhan et al.'' Use it, if the intensity of the individual objects is lower at the edge, than in the center and there are no clumps without intensity information, and the split line does not often change orientation.
+
+[[File:MinimumIntensitySplitLine.png]]
+====Concavity Region Detection====
+The plugin supports different concavity region detection types. It specifies, in which way a concavity region is detected.
+
+'''Detect outer concavity regions by convex hull:''' The concavity region detection by convex hull corresponds to the algorithm of ''Kumar et al.'' Concavity regions are detected, if there is a difference between convex hull and contour of the clump. Use this detection, if there are few clumps with less complex concavity regions.
+
+[[File:ConvexHull.png]]
+
+'''Detect outer concavity regions locally:''' The local concavity region detection follows algorithm of ''Farhan et al.'' Concavity regions are detected, by iterate along the contour and look for local concavity regions. Use this detection, if there are complex clumps containing of many individual objects.
+
+[[File:Farhan.png]]
+
+====Concavity Pixel Detection====
+The plugin supports different concavity pixel detection types. The chosen type specifies which and how many concavity pixels can be detected.
+
+'''Detect all concavity pixels:''' If all concavity pixels should be detected, the plugin is looking for all local concavity pixels. Use it, if you have choosen the concavity region detection by convex hull.
+
+[[File:AllPixels.png]]
+
+
+'''Detect all concavity pixels with largest concavity depth:'''
+If all concavity pixel with largest concavity depth should be detected, the plugin is looking for the global concavity pixels of a concavity region. Use it, if you have choosen the local concavity region detection.
+
+[[File:LargestPixels.png]]
+===SVM===
+==Parameters==
+As already mentioned the main algorithm follows the publication of ''Kumar et al.'' The presented algorithm to specify a valid split line depends on lots of parameters, as you can see below.
+'''background color'''
+
+'''is already preprocessed'''
+
+'''Show concavity regions'''
+
+'''Show concavity pixels and split points'''
+
+'''write data in file to train SVM'''
+
+'''binarization threshold'''
+
+'''concavity-depth threshold'''
+
+'''saliency-threshold'''
+
+'''concavity-concavity-alignment-threshold'''
+
+'''concavity-line-alignment-threshold'''
+
+'''concavity-angle-threshold'''
+
+'''concavity-ratio-threshold'''
+
+'''inner-contour-parameter'''
+
+'''outer-contour-parameter'''
+
+'''picture section for intensity'''
+
+'''<math>c_1</math>'''
+
+'''<math>c_2</math>'''
+
+'''<math>\chi</math>-threshold'''
+=Installation=
+
+=How to cite=
