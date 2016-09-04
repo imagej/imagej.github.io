@@ -133,7 +133,7 @@ As already mentioned the main algorithm follows the publication of ''Kumar et al
 
 '''<math>c_2</math>''' Parameter to validate a splitline, for an optimal value train SVM.
 
-'''<math>\chi</math>-threshold''' Parameter to validate a splitline. <math>$\chi = \frac{c_1*CD_i+c_1*CD_j+c_2}{d(C_i,C_j)+c_1*CD_i+ c_1*CD_j+c_2}$</math> Decrease threshold value if there are less split lines.
+'''<math>\chi</math>-threshold''' Parameter to validate a splitline. <math>\chi = \frac{c_1*CD_i+c_1*CD_j+c_2}{d(C_i,C_j)+c_1*CD_i+ c_1*CD_j+c_2}</math> Decrease threshold value if there are less split lines.
 
 =Installation=
 
