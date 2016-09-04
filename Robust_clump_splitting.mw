@@ -90,18 +90,22 @@ If all concavity pixel with largest concavity depth should be detected, the plug
 [[File:LargestPixels.png]]
 ===SVM===
 ==Parameters==
-As already mentioned the main algorithm follows the publication of ''Kumar et al.'' The presented algorithm to specify a valid split line depends on lots of parameters, as you can see below.
-'''background color'''
+As already mentioned the main algorithm follows the publication of ''Kumar et al.'' The presented algorithm to specify a valid split line depends on lots of parameters, as you can see below. Not every parameter is needed for every split line type and concavity region detection
+'''background color:''' Choose the color of your background. Choose white, if objects are darker than the background, and black if objects are lighter than the background.
 
-'''is already preprocessed'''
+'''is already preprocessed''' Choose if your picture is already preprocessed. If it is unchecked, preprocessing will be executed before the algorithm is started. The default-preprocessing is: binarization, erosion, gaussian blur (<math>\sigma=2</math>), dilation
 
-'''Show concavity regions'''
+'''Show concavity regions''' If it is checked, an overlay shows detected concavity regions, this could help to detect good thresholds and to detect mistakes in detection.
 
-'''Show concavity pixels and split points'''
+[[File:ConcavityRegions.png]]
 
-'''write data in file to train SVM'''
+'''Show concavity pixels and split points''' If it is checked, an overlay shows detected concavity pixels, this could help to detect good thresholds and to detect mistakes in detection.
 
-'''binarization threshold'''
+[[File:ConcavityPixels.png]]
+
+'''write data in file to train SVM''' If it is checked, data for the SVM-Model is written in a file you can choose.
+
+'''binarization threshold''' The binarization threshold
 
 '''concavity-depth threshold'''
 
@@ -126,6 +130,7 @@ As already mentioned the main algorithm follows the publication of ''Kumar et al
 '''<math>c_2</math>'''
 
 '''<math>\chi</math>-threshold'''
+
 =Installation=
 
 =How to cite=
