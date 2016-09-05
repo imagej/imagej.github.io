@@ -89,7 +89,25 @@ If all concavity pixel with largest concavity depth should be detected, the plug
 
 [[File:LargestPixels.png]]
 ===SVM===
-The parameters <math>c_1</math> and <math>c_2</math> can be optimized by a linear SVM. This SVM is integrated in the plugin and uses
+The parameters <math>c_1</math> and <math>c_2</math> can be optimized by a linear SVM. This SVM is integrated in the plugin and uses the [https://www.csie.ntu.edu.tw/~cjlin/libsvm/ LIBSVM] library. 
+
+If you want to train the SVM you first have to generate training and testdata. The way to generate it is not easy to use in the actual version. 
+
+You first have to generate a image with optimal split lines manually. This could be time consuming and complex. The overlay of the plugin tries to aid at this point, but it could be complex as well. Therefoe it could be easier to separate individual clumps and split them separately. Now you have to generate traing data by the plugin. In the progress the SVM writes data and if it is a split line in a CSV-File. The data is the sum of concavity depths of the concavity pixels at the x axis and the distance between the points at y axis.
+
+Now you have to look for a good cost- and epsilon parameter of the SVM. This could happen by a grid search for example.
+
+[[File:SVMParameter.png]]
+
+After this the SVM starts training. This could take some time. How long it takes depends on complexity and size of the training data.
+
+Once the SVM was trained, there are two windows, which show the results. In the first window you can see a graphical representation of the SVM model. The blue points represent the split line class, the red points represent the no split line class data and the green line represents the dividing line of the SVM.
+
+[[File:SVMModellGraphic.png]]
+
+The second window shows the parameters of this model. The optimum <math>c_1</math> and <math>c_2</math> parameters, are given and the number of support vectors as well as a confidencial matrix to evaluate the model.
+
+[[File:SVMModelNumbers.png]]
 
 ==Parameters==
 As already mentioned the main algorithm follows the publication of ''Kumar et al.'' The presented algorithm to specify a valid split line depends on lots of parameters, as you can see below. Not every parameter is needed for every split line type and concavity region detection
