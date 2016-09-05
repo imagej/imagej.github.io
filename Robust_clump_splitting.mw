@@ -11,7 +11,7 @@
 
 
 == Purpose ==
-This plugin is an implementation for concavity-based clump splitting of the algorithms described in:
+This plugin is an implementation of the concavity-based clump splitting algorithms described in:
 
 ''Kumar, S., Ong, S.-H., Ranganath, S., Ong, T., und Cheq, F.
 (2005). A rule based Approach for robust clump splitting. Pattern Recognition,
@@ -33,7 +33,7 @@ The plugin provides an alternative to the ImageJ "build-in"-[https://imagej.nih.
 It depends on the [http://imagej.net/IJ_Blob IJ-Blob] library, the [https://github.com/hharrison/vecmath Vecmath] library, the [https://www.csie.ntu.edu.tw/~cjlin/libsvm/ LIBSVM] library and the [http://java-ml.sourceforge.net/ JavaML] library.
 
 ==Plugin usage ==
-If you start the plugin you can choose between two main uses. Choose if you either want to split clumps of an image or want to train SVM to optimize parameters <math>c_1</math> and <math>c_2</math>. To train the SVM you need to have input data.
+If you start the plugin you can choose between two main uses, you either want to split clumps of an image or want to train a SVM to optimize parameters <math>c_1</math> and <math>c_2</math>. To train the SVM you need to have input data already.
 
 [[File:Eingabemaske2.png]]
 ===Detection Types===
@@ -41,29 +41,35 @@ The plugin supports different types of split lines, concavity region detection a
 
 [[File:PluginScreenshot1.png]]
 ====Split Lines====
-The plugin supports different split line types which should be specified:
+The plugin supports different split line types, which should be specified:
 
-'''Straight Split Line:''' The straight split Line is a straight line between two concavity pixels. Use it, if no intensity information for better split lines is available.
+'''Straight Split Line:''' The straight split line is a straight line between two concavity pixels.
+When to use? : If no intensity information for better split lines is available use this line.
 
 [[File:StraightSplitline.png |300px]]
 
-'''Geodesic Distance Split Line:''' The geodesic distance split line uses the path of maximum intensity change between two concavity pixels. It is detected by the algorithm of ''Wang et al.'' Use it, if the individual objects can be distinguished by intensity and the split lines are not too convex.
+'''Geodesic Distance Split Line:''' The geodesic distance split line uses the path of maximum intensity change between two concavity pixels. It is detected by the algorithm of ''Wang et al.''
+When to use? :  If the individual objects can be distinguished by intensity and the split lines are not to convex.
 
 [[File:GeodesicDistanceSplitLine.png |300px]]
 
-'''Maximum Intensity Split Line:''' The maximum intensity split line uses the path of maximum intensity between two concavity pixels. It is detected by the algorithm of ''Wang et al.'' Use it, if the intensity of the individual objects have higher at the edge, than in the center and the split lines are not too convex.
+'''Maximum Intensity Split Line:''' The maximum intensity split line uses the path of maximum intensity between two concavity pixels. It is detected by the algorithm of ''Wang et al.''
+When to use? : If the intensity of the individual objects is higher at the edge, than in the center and the split lines are not to convex.
 
 [[File:MaximumIntensitySplitLine.png |300px]]
 
-'''Minimum Intensity Split Line:''' The minimum intensity split line uses the path of minimum intensity between two concavity pixels. It is detected by the algorithm of ''Wang et al.'' Use it, if the intensity of the individual objects is lower at the edge, than in the center and the split lines are not too convex.
+'''Minimum Intensity Split Line:''' The minimum intensity split line uses the path of minimum intensity between two concavity pixels. It is detected by the algorithm of ''Wang et al.''
+When to use? : If the intensity of the individual objects is lower at the edge, than in the center and the split lines are not to convex.
 
 [[File:MinimumIntensitySplitLine.png |300px]]
 
-'''Maximum Intensity Split Line Farhan:''' The maximum intensity split line uses the path of maximum intensity between two concavity pixels. It is detected by the algorithm of ''Wang et al.'' Use it, if the intensity of the individual objects have higher at the edge, than in the center and there are no clumps without intensity information, and the split line does not often change orientation.
+'''Maximum Intensity Split Line Farhan:''' The maximum intensity split line uses the path of maximum intensity between two concavity pixels. It is detected by the algorithm of ''Wang et al.''
+When to use? : If the intensity of the individual objects is higher at the edge, than in the center and there are no clumps without intensity information, and the split line does not change orientation to often.
 
 [[File:MaximumIntensitySplitLine.png |300px]]
 
-'''Minimum Intensity Split Line Farhan:''' The minimum intensity split line uses the path of minimum intensity between two concavity pixels. It is detected by the algorithm of ''Farhan et al.'' Use it, if the intensity of the individual objects is lower at the edge, than in the center and there are no clumps without intensity information, and the split line does not often change orientation.
+'''Minimum Intensity Split Line Farhan:''' The minimum intensity split line uses the path of minimum intensity between two concavity pixels. It is detected by the algorithm of ''Farhan et al.''
+When to use? : If the intensity of the individual objects is lower at the edge, than in the center and there are no clumps without intensity information, and the split line does not change orientation to often.
 
 [[File:MinimumIntensitySplitLine.png |300px]]
 
@@ -74,14 +80,14 @@ The plugin supports different concavity region detection types. It specifies, in
 
 [[File:ConvexHull.png |250px]]
 
-'''Detect outer concavity regions locally:''' The local concavity region detection follows algorithm of ''Farhan et al.'' Concavity regions are detected, by iterate along the contour and look for local concavity regions. Use this detection, if there are complex clumps containing of many individual objects.
+'''Detect outer concavity regions locally:''' The local concavity region detection follows the algorithm of ''Farhan et al.'' Concavity regions are detected, by iterating along the contour and look for local concavity regions. Use this detection, if there are complex clumps consisting of many individual objects.
 
 [[File:Farhan.png |250px]]
 
 ====Concavity Pixel Detection====
 The plugin supports different concavity pixel detection types. The chosen type specifies which and how many concavity pixels can be detected.
 
-'''Detect all concavity pixels:''' If all concavity pixels should be detected, the plugin is looking for all local concavity pixels. Use it, if you have choosen the concavity region detection by convex hull.
+'''Detect all concavity pixels:''' If all concavity pixels should be detected, the plugin is looking for all local concavity pixels. Use it, if you have chosen the concavity region detection by convex hull.
 
 [[File:AllPixels.png |250px]]
 
@@ -94,21 +100,21 @@ If all concavity pixel with largest concavity depth should be detected, the plug
 ===SVM===
 The parameters <math>c_1</math> and <math>c_2</math> can be optimized by a linear SVM. This SVM is integrated in the plugin and uses the [https://www.csie.ntu.edu.tw/~cjlin/libsvm/ LIBSVM] library. 
 
-If you want to train the SVM you first have to generate training and testdata. The way to generate it is not easy to use in the actual version. 
+If you want to train the SVM you have to generate training and testdata first. There is currently no easy way of generating those. 
 
-You first have to generate a image with optimal split lines manually. This could be time consuming and complex. The overlay of the plugin tries to aid at this point, but it could be complex as well. Therefoe it could be easier to separate individual clumps and split them separately. Now you have to generate traing data by the plugin. In the progress the SVM writes data and if it is a split line in a CSV-File. The data is the sum of concavity depths of the concavity pixels at the x axis and the distance between the points at y axis.
+Firstly you have to generate an image with optimal split lines manually. This may be a time consuming and complex task. The overlay of the plugin tries to aid at this point, but it could be complex as well. Therefoe it could be easier to separate individual clumps and split them separately. Now you have to generate traing data by the plugin. In the progress the SVM writes data and whether or not it is a split line to a CSV-File. The data is the sum of concavity depths of the concavity pixels at the x axis and the distance between the points at y axis.
 
 Now you have to look for a good cost- and epsilon parameter of the SVM. This could happen by a grid search for example.
 
 [[File:SVMParameter.png]]
 
-After this the SVM starts training. This could take some time. How long it takes depends on complexity and size of the training data.
+After this the SVM starts training. This could take some time. The duration depends on complexity and size of the training data.
 
-Once the SVM was trained, there are two windows, which show the results. In the first window you can see a graphical representation of the SVM model. The blue points represent the split line class, the red points represent the no split line class data and the green line represents the dividing line of the SVM.
+Once the SVM was trained, there are two windows, showing the results. In the first window you can see a graphical representation of the SVM model. The blue points represent the split line class, the red points represent the no split line class data and the green line represents the dividing line of the SVM.
 
 [[File:SVMModellGraphic.png]]
 
-The second window shows the parameters of this model. The optimum <math>c_1</math> and <math>c_2</math> parameters, are given and the number of support vectors as well as a confidencial matrix to evaluate the model.
+The second window shows the parameters of this model. The optimum  for <math>c_1</math> and <math>c_2</math> parameters, are given together with the number of support vectors and a confidencial matrix to evaluate the model.
 
 [[File:SVMModelNumbers.png |300px]]
 
@@ -117,48 +123,48 @@ As already mentioned the main algorithm follows the publication of ''Kumar et al
 
 [[File:PluginScreenshot3.png]]
 
-'''background color:''' Choose the color of your background. Choose white, if objects are darker than the background, and black if objects are lighter than the background.
+'''background color:''' Choose the color of your background. Choose white, if the objects are darker than the background, and black if the objects are lighter than the background.
 
-'''is already preprocessed:''' Choose if your picture is already preprocessed. If it is unchecked, preprocessing will be executed before the algorithm is started. The default-preprocessing is: binarization, erosion, gaussian blur (<math>\sigma=2</math>), dilation
+'''is already preprocessed:''' Choose whether or not your picture is already preprocessed. If unchecked, preprocessing will be executed before the algorithm starts. The default-preprocessing contains: binarization, erosion, gaussian blur (<math>\sigma=2</math>), dilation
 
-'''Show concavity regions:''' If it is checked, an overlay shows detected concavity regions, this could help to detect good thresholds and to detect mistakes in detection.
+'''Show concavity regions:''' If checked, an overlay shows detected concavity regions, this could help to detect good thresholds and to detect mistakes in detection.
 
-'''Show concavity pixels and split points:''' If it is checked, an overlay shows detected concavity pixels, this could help to detect good thresholds and to detect mistakes in detection.
+'''Show concavity pixels and split points:''' If checked, an overlay shows detected concavity pixels, this could help to detect good thresholds and to detect mistakes in detection.
 
-'''write data in file to train SVM:''' If it is checked, data for the SVM-Model is written in a file you can choose.
+'''write data in file to train SVM:''' If checked, data for the SVM-Model is written to a file of your choice.
 
 '''binarization threshold:''' Threshold to binarize an image. Default: Detected value for the image by ImageJ default method.
 
-'''concavity-depth threshold:''' Largest distance of a concavity region in pixels <math>CD_i</math>. Threshold should be smaller than smallest concavity-depth value of a valid concavity pixel. 
+'''concavity-depth threshold:''' Largest distance of a concavity region in pixels <math>CD_i</math>. Threshold should be smaller than minimum concavity-depth value of a valid concavity pixel. 
 
-'''saliency-threshold:''' The ratio of concavity-depth and distance of two concavity pixels, increase, if less split lines are detected.
+'''saliency-threshold:''' The ratio of concavity-depth and distance of two concavity pixels, increases, if less split lines are detected.
 <math>SA_{i,j}=\frac{\min(CD_i,CD_j)}{\min(CD_i,CD_j)+ d(C_i,C_j)}</math>
 
 '''concavity-concavity-alignment-threshold:''' Angle between orientation of the two concavity regions. <math>CC_{ij}= \pi - \cos^{-1}(v_i \cdot v_j)</math>. Threshold should be greater than <math>\max{|180-|\theta_i-\theta_j||}</math> of all valid split lines.
 
 [[File:ConcavityConcavityAlignment.png |300px]]
 
-'''concavity-line-alignment-threshold:''' Angle between orientation of the concavity pixel of a split line and the split line. <math>CL_{ij}=\max{\cos^{-1}(v_i \cdot u_{ij}),\cos^{-1}(v_j \cdot (-u_{ij})))}</math> 
+'''concavity-line-alignment-threshold:''' Angle between orientation of a split lines concavity pixel and the split line. <math>CL_{ij}=\max{\cos^{-1}(v_i \cdot u_{ij}),\cos^{-1}(v_j \cdot (-u_{ij})))}</math> 
 
 [[File:ConcavityLineAlignment.png |300px]]
 
-'''concavity-angle-threshold:''' Angle of a concavity region. <math>CA=\angle C_{i1}C_iC_{i2}</math> Threshold should be larger, than the largest angle of a concavity region where a split line between concavity pixel and contour point is expected.
+'''concavity-angle-threshold:''' Angle of a concavity region. <math>CA=\angle C_{i1}C_iC_{i2}</math> Threshold should be larger, than the maximum angle of a concavity region where a split line between concavity pixel and contour point is expected.
 
 [[File:ConcavityAngle.png |300px]]
 
-'''concavity-ratio-threshold:''' Ratio between largest and second largest concavity region. <math>CR=\frac{CD_m}{CD_n}</math> Threshold should be smaller than the largest ratio of valid split line between concavity pixel and contour point.
+'''concavity-ratio-threshold:''' Ratio between first and second largest concavity regions. <math>CR=\frac{CD_m}{CD_n}</math> Threshold should be smaller than the maximum ratio of valid split line between concavity pixel and contour point.
 
-'''inner-contour-parameter:''' Sampe constant for inner contour, if the inner contour is large and round, choose a large constant, else choose a small constant.
+'''inner-contour-parameter:''' Same as inner contour constant. If the inner contour is large and round, choose a large constant, else choose a small constant.
 
-'''outer-contour-parameter:''' Sampe constant for outer contour. If concavity regions are big, choose a large value, otherwise choose a small value.
+'''outer-contour-parameter:''' Same as outer contour constant. If concavity regions are big, choose a large value, otherwise choose a small value.
 
-'''picture section for intensity:''' For split line detection of ''Wang et al.'' you need to determine a picture section, where the split line should be detected. Choose a large value if clumps and split lines are large and a small value if clumps and split lines are small.
+'''picture section for intensity:''' For split line detection of ''Wang et al.'' you need to determine a picture section, in which the split line should be detected. Choose a large value if clumps and split lines are large and a small value if clumps and split lines are small.
 
 [[File:PictureSelection.png |300px]]
 
-'''<math>c_1</math>:''' Parameter to validate a splitline, for an optimal value train SVM.
+'''<math>c_1</math>:''' Parameter to validate a split line, for an optimal value train SVM.
 
-'''<math>c_2</math>:''' Parameter to validate a splitline, for an optimal value train SVM.
+'''<math>c_2</math>:''' Parameter to validate a split line, for an optimal value train SVM.
 
 '''<math>\chi</math>-threshold:''' Parameter to validate a splitline. <math>\chi = \frac{c_1*CD_i+c_1*CD_j+c_2}{d(C_i,C_j)+c_1*CD_i+ c_1*CD_j+c_2}</math> Decrease threshold value if there are less split lines.
 
