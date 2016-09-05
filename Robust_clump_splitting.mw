@@ -68,7 +68,7 @@ The plugin supports different split line types which should be specified:
 ====Concavity Region Detection====
 The plugin supports different concavity region detection types. It specifies, in which way a concavity region is detected.
 
-'''Detect outer concavity regions by convex hull:''' The concavity region detection by convex hull corresponds to the algorithm of ''Kumar et al.'' Concavity regions are detected, if there is a difference between convex hull and contour of the clump. Use this detection, if there are few clumps with less complex concavity regions.
+'''Detect outer concavity regions by convex hull:''' The concavity region detection by convex hull corresponds to the algorithm of ''Kumar et al.'' Concavity regions are detected, if there is a difference between convex hull and contour of the clump. Use this detection, if there are few clumps with less complex concavity regions. The blue shaded regions are the detected concavity regions.
 
 [[File:ConvexHull.png]]
 
