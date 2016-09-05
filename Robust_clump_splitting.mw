@@ -120,11 +120,7 @@ As already mentioned the main algorithm follows the publication of ''Kumar et al
 
 '''Show concavity regions''' If it is checked, an overlay shows detected concavity regions, this could help to detect good thresholds and to detect mistakes in detection.
 
-[[File:ConcavityRegions.png]]
-
 '''Show concavity pixels and split points''' If it is checked, an overlay shows detected concavity pixels, this could help to detect good thresholds and to detect mistakes in detection.
-
-[[File:ConcavityPixels.png]]
 
 '''write data in file to train SVM''' If it is checked, data for the SVM-Model is written in a file you can choose.
 
