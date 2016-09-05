@@ -42,7 +42,7 @@ The plugin supports different split line types which should be specified:
 
 '''Straight Split Line:''' The straight split Line is a straight line between two concavity pixels. Use it, if no intensity information for better split lines is available.
 
-[[File:StraightSplitline.png]]
+[[File:StraightSplitline.png |200px]]
 
 '''Geodesic Distance Split Line:''' The geodesic distance split line uses the path of maximum intensity change between two concavity pixels. It is detected by the algorithm of ''Wang et al.'' Use it, if the individual objects can be distinguished by intensity and the split lines are not too convex.
 
@@ -63,6 +63,7 @@ The plugin supports different split line types which should be specified:
 '''Minimum Intensity Split Line Farhan:''' The minimum intensity split line uses the path of minimum intensity between two concavity pixels. It is detected by the algorithm of ''Farhan et al.'' Use it, if the intensity of the individual objects is lower at the edge, than in the center and there are no clumps without intensity information, and the split line does not often change orientation.
 
 [[File:MinimumIntensitySplitLine.png]]
+
 ====Concavity Region Detection====
 The plugin supports different concavity region detection types. It specifies, in which way a concavity region is detected.
 
