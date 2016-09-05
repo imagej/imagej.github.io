@@ -160,3 +160,5 @@ As already mentioned the main algorithm follows the publication of ''Kumar et al
 If you use ImageJ just copy ij_robust_split.jar in your plugins folder and copy the [http://imagej.net/IJ_Blob IJ-Blob], [https://github.com/hharrison/vecmath Vecmath], the [https://www.csie.ntu.edu.tw/~cjlin/libsvm/ LIBSVM] and the [http://java-ml.sourceforge.net/ JavaML] jars into the plugins/jars folder.
 
 =How to cite=
+
+The best way to cite the formal methods and the used implementation is
