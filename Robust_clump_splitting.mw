@@ -133,15 +133,15 @@ As already mentioned the main algorithm follows the publication of ''Kumar et al
 
 '''concavity-concavity-alignment-threshold:''' Angle between orientation of the two concavity regions. <math>CC_{ij}= \pi - \cos^{-1}(v_i \cdot v_j)</math>. Threshold should be greater than <math>\max{|180-|\theta_i-\theta_j||}</math> of all valid split lines.
 
-[[File:ConcavityConcavityAlignment.png]]
+[[File:ConcavityConcavityAlignment.png |300px]]
 
 '''concavity-line-alignment-threshold:''' Angle between orientation of the concavity pixel of a split line and the split line. <math>CL_{ij}=\max{\cos^{-1}(v_i \cdot u_{ij}),\cos^{-1}(v_j \cdot (-u_{ij})))}</math> 
 
-[[File:ConcavityLineAlignment.png]]
+[[File:ConcavityLineAlignment.png |300px]]
 
 '''concavity-angle-threshold:''' Angle of a concavity region. <math>CA=\angle C_{i1}C_iC_{i2}</math> Threshold should be larger, than the largest angle of a concavity region where a split line between concavity pixel and contour point is expected.
 
-[[File:ConcavityAngle.png]]
+[[File:ConcavityAngle.png |300px]]
 
 '''concavity-ratio-threshold:''' Ratio between largest and second largest concavity region. <math>CR=\frac{CD_m}{CD_n}</math> Threshold should be smaller than the largest ratio of valid split line between concavity pixel and contour point.
 
@@ -151,7 +151,7 @@ As already mentioned the main algorithm follows the publication of ''Kumar et al
 
 '''picture section for intensity:''' For split line detection of ''Wang et al.'' you need to determine a picture section, where the split line should be detected. Choose a large value if clumps and split lines are large and a small value if clumps and split lines are small.
 
-[[File:PictureSelection.png]]
+[[File:PictureSelection.png |300px]]
 
 '''<math>c_1</math>:''' Parameter to validate a splitline, for an optimal value train SVM.
 
