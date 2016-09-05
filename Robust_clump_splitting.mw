@@ -107,7 +107,7 @@ Once the SVM was trained, there are two windows, which show the results. In the 
 
 The second window shows the parameters of this model. The optimum <math>c_1</math> and <math>c_2</math> parameters, are given and the number of support vectors as well as a confidencial matrix to evaluate the model.
 
-[[File:SVMModelNumbers.png]]
+[[File:SVMModelNumbers.png |300px]]
 
 ==Parameters==
 As already mentioned the main algorithm follows the publication of ''Kumar et al.'' The presented algorithm to specify a valid split line depends on lots of parameters, as you can see below. Not every parameter is needed for every split line type and concavity region detection
