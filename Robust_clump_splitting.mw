@@ -28,7 +28,10 @@ and
 ''Wang, H., Zhang, H., und Nilanjan, R. (2011). Clump splitting via
 bottleneck detection. IEEE International Conference Image Processing, 2, pp.61–64.''
 
+The plugin provides an alternative to the ImageJ "build-in"-watershed-plugin. It does not perform better results on regular round clumps. Especially for big clumps with image disturbances and many holes in the clump the results of the watershed plugins are much more robust and it does not depends on so many parameters. For elongated indididual objects, the plugin can produce better results than the watershed.
+
 It depends on the [http://imagej.net/IJ_Blob IJ-Blob] library, the [https://github.com/hharrison/vecmath Vecmath] library, the [https://www.csie.ntu.edu.tw/~cjlin/libsvm/ LIBSVM] library and the [http://java-ml.sourceforge.net/ JavaML] library.
+
 ==Plugin usage ==
 If you start the plugin you can choose between two main uses. Choose if you either want to split clumps of an image or want to train SVM to optimize parameters <math>c_1</math> and <math>c_2</math>. To train the SVM you need to have input data.
 
