@@ -161,4 +161,18 @@ If you use ImageJ just copy ij_robust_split.jar in your plugins folder and copy 
 
 =How to cite=
 
-The best way to cite the formal methods and the used implementation is
+The best way to cite the formal methods is:
+
+''Kumar, S., Ong, S.-H., Ranganath, S., Ong, T., und Cheq, F.
+(2005). A rule based Approach for robust clump splitting. Pattern Recognition,
+39(6), pp.1088–1098.''
+
+''Farhan, M., Yli-Harja, O., und Niemistö, A. (2013). A novel
+method for splitting clumps of convex objects incorporating image intensity and
+using rectangular window-based concavity point-pair search. Pattern Recognition,
+46(3), pp.741–751.''
+ 
+and
+
+''Wang, H., Zhang, H., und Nilanjan, R. (2011). Clump splitting via
+bottleneck detection. IEEE International Conference Image Processing, 2, pp.61–64.''
