@@ -42,27 +42,27 @@ The plugin supports different split line types which should be specified:
 
 '''Straight Split Line:''' The straight split Line is a straight line between two concavity pixels. Use it, if no intensity information for better split lines is available.
 
-[[File:StraightSplitline.png |200px]]
+[[File:StraightSplitline.png |300px]]
 
 '''Geodesic Distance Split Line:''' The geodesic distance split line uses the path of maximum intensity change between two concavity pixels. It is detected by the algorithm of ''Wang et al.'' Use it, if the individual objects can be distinguished by intensity and the split lines are not too convex.
 
-[[File:GeodesicDistanceSplitLine.png]]
+[[File:GeodesicDistanceSplitLine.png |300px]]
 
 '''Maximum Intensity Split Line:''' The maximum intensity split line uses the path of maximum intensity between two concavity pixels. It is detected by the algorithm of ''Wang et al.'' Use it, if the intensity of the individual objects have higher at the edge, than in the center and the split lines are not too convex.
 
-[[File:MaximumIntensitySplitLine.png]]
+[[File:MaximumIntensitySplitLine.png |300px]]
 
 '''Minimum Intensity Split Line:''' The minimum intensity split line uses the path of minimum intensity between two concavity pixels. It is detected by the algorithm of ''Wang et al.'' Use it, if the intensity of the individual objects is lower at the edge, than in the center and the split lines are not too convex.
 
-[[File:MinimumIntensitySplitLine.png]]
+[[File:MinimumIntensitySplitLine.png |300px]]
 
 '''Maximum Intensity Split Line Farhan:''' The maximum intensity split line uses the path of maximum intensity between two concavity pixels. It is detected by the algorithm of ''Wang et al.'' Use it, if the intensity of the individual objects have higher at the edge, than in the center and there are no clumps without intensity information, and the split line does not often change orientation.
 
-[[File:MaximumIntensitySplitLine.png]]
+[[File:MaximumIntensitySplitLine.png |300px]]
 
 '''Minimum Intensity Split Line Farhan:''' The minimum intensity split line uses the path of minimum intensity between two concavity pixels. It is detected by the algorithm of ''Farhan et al.'' Use it, if the intensity of the individual objects is lower at the edge, than in the center and there are no clumps without intensity information, and the split line does not often change orientation.
 
-[[File:MinimumIntensitySplitLine.png]]
+[[File:MinimumIntensitySplitLine.png |300px]]
 
 ====Concavity Region Detection====
 The plugin supports different concavity region detection types. It specifies, in which way a concavity region is detected.
