@@ -114,40 +114,40 @@ As already mentioned the main algorithm follows the publication of ''Kumar et al
 
 '''background color:''' Choose the color of your background. Choose white, if objects are darker than the background, and black if objects are lighter than the background.
 
-'''is already preprocessed''' Choose if your picture is already preprocessed. If it is unchecked, preprocessing will be executed before the algorithm is started. The default-preprocessing is: binarization, erosion, gaussian blur (<math>\sigma=2</math>), dilation
+'''is already preprocessed:''' Choose if your picture is already preprocessed. If it is unchecked, preprocessing will be executed before the algorithm is started. The default-preprocessing is: binarization, erosion, gaussian blur (<math>\sigma=2</math>), dilation
 
-'''Show concavity regions''' If it is checked, an overlay shows detected concavity regions, this could help to detect good thresholds and to detect mistakes in detection.
+'''Show concavity regions:''' If it is checked, an overlay shows detected concavity regions, this could help to detect good thresholds and to detect mistakes in detection.
 
-'''Show concavity pixels and split points''' If it is checked, an overlay shows detected concavity pixels, this could help to detect good thresholds and to detect mistakes in detection.
+'''Show concavity pixels and split points:''' If it is checked, an overlay shows detected concavity pixels, this could help to detect good thresholds and to detect mistakes in detection.
 
-'''write data in file to train SVM''' If it is checked, data for the SVM-Model is written in a file you can choose.
+'''write data in file to train SVM:''' If it is checked, data for the SVM-Model is written in a file you can choose.
 
-'''binarization threshold''' Threshold to binarize an image. Default: Detected value for the image by ImageJ default method.
+'''binarization threshold:''' Threshold to binarize an image. Default: Detected value for the image by ImageJ default method.
 
-'''concavity-depth threshold''' Largest distance of a concavity region in pixels <math>CD_i</math>. Threshold should be smaller than smallest concavity-depth value of a valid concavity pixel. 
+'''concavity-depth threshold:''' Largest distance of a concavity region in pixels <math>CD_i</math>. Threshold should be smaller than smallest concavity-depth value of a valid concavity pixel. 
 
-'''saliency-threshold''' The ratio of concavity-depth and distance of two concavity pixels, increase, if less split lines are detected.
+'''saliency-threshold:''' The ratio of concavity-depth and distance of two concavity pixels, increase, if less split lines are detected.
 <math>SA_{i,j}=\frac{\min(CD_i,CD_j)}{\min(CD_i,CD_j)+ d(C_i,C_j)}</math>
 
-'''concavity-concavity-alignment-threshold''' Angle between orientation of the two concavity regions. <math>CC_{ij}= \pi - \cos^{-1}(v_i \cdot v_j)</math>. Threshold should be greater than <math>\max{|180-|\theta_i-\theta_j||}</math> of all valid split lines.
+'''concavity-concavity-alignment-threshold:''' Angle between orientation of the two concavity regions. <math>CC_{ij}= \pi - \cos^{-1}(v_i \cdot v_j)</math>. Threshold should be greater than <math>\max{|180-|\theta_i-\theta_j||}</math> of all valid split lines.
 
-'''concavity-line-alignment-threshold''' Angle between orientation of the concavity pixel of a split line and the split line. <math>CL_{ij}=\max{\cos^{-1}(v_i \cdot u_{ij}),\cos^{-1}(v_j \cdot (-u_{ij})))}</math> 
+'''concavity-line-alignment-threshold:''' Angle between orientation of the concavity pixel of a split line and the split line. <math>CL_{ij}=\max{\cos^{-1}(v_i \cdot u_{ij}),\cos^{-1}(v_j \cdot (-u_{ij})))}</math> 
 
-'''concavity-angle-threshold''' Angle of a concavity region. <math>CA=\angle C_{i1}C_iC_{i2}</math> Threshold should be larger, than the largest angle of a concavity region where a split line between concavity pixel and contour point is expected.
+'''concavity-angle-threshold:''' Angle of a concavity region. <math>CA=\angle C_{i1}C_iC_{i2}</math> Threshold should be larger, than the largest angle of a concavity region where a split line between concavity pixel and contour point is expected.
 
-'''concavity-ratio-threshold''' Ratio between largest and second largest concavity region. <math>CR=\frac{CD_m}{CD_n}</math> Threshold should be smaller than the largest ratio of valid split line between concavity pixel and contour point.
+'''concavity-ratio-threshold:''' Ratio between largest and second largest concavity region. <math>CR=\frac{CD_m}{CD_n}</math> Threshold should be smaller than the largest ratio of valid split line between concavity pixel and contour point.
 
-'''inner-contour-parameter''' Sampe constant for inner contour, if the inner contour is large and round, choose a large constant, else choose a small constant.
+'''inner-contour-parameter:''' Sampe constant for inner contour, if the inner contour is large and round, choose a large constant, else choose a small constant.
 
-'''outer-contour-parameter''' Sampe constant for outer contour. If concavity regions are big, choose a large value, otherwise choose a small value.
+'''outer-contour-parameter:''' Sampe constant for outer contour. If concavity regions are big, choose a large value, otherwise choose a small value.
 
-'''picture section for intensity''' For split line detection of ''Wang et al.'' you need to determine a picture section, where the split line should be detected. Choose a large value if clumps and split lines are large and a small value if clumps and split lines are small.
+'''picture section for intensity:''' For split line detection of ''Wang et al.'' you need to determine a picture section, where the split line should be detected. Choose a large value if clumps and split lines are large and a small value if clumps and split lines are small.
 
-'''<math>c_1</math>''' Parameter to validate a splitline, for an optimal value train SVM.
+'''<math>c_1</math>:''' Parameter to validate a splitline, for an optimal value train SVM.
 
-'''<math>c_2</math>''' Parameter to validate a splitline, for an optimal value train SVM.
+'''<math>c_2</math>:''' Parameter to validate a splitline, for an optimal value train SVM.
 
-'''<math>\chi</math>-threshold''' Parameter to validate a splitline. <math>\chi = \frac{c_1*CD_i+c_1*CD_j+c_2}{d(C_i,C_j)+c_1*CD_i+ c_1*CD_j+c_2}</math> Decrease threshold value if there are less split lines.
+'''<math>\chi</math>-threshold:''' Parameter to validate a splitline. <math>\chi = \frac{c_1*CD_i+c_1*CD_j+c_2}{d(C_i,C_j)+c_1*CD_i+ c_1*CD_j+c_2}</math> Decrease threshold value if there are less split lines.
 
 =Installation=
 
