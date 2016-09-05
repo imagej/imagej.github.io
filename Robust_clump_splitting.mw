@@ -69,11 +69,11 @@ The plugin supports different concavity region detection types. It specifies, in
 
 '''Detect outer concavity regions by convex hull:''' The concavity region detection by convex hull corresponds to the algorithm of ''Kumar et al.'' Concavity regions are detected, if there is a difference between convex hull and contour of the clump. Use this detection, if there are few clumps with less complex concavity regions. The blue shaded regions are the detected concavity regions.
 
-[[File:ConvexHull.png |300px]]
+[[File:ConvexHull.png |250px]]
 
 '''Detect outer concavity regions locally:''' The local concavity region detection follows algorithm of ''Farhan et al.'' Concavity regions are detected, by iterate along the contour and look for local concavity regions. Use this detection, if there are complex clumps containing of many individual objects.
 
-[[File:Farhan.png |300px]]
+[[File:Farhan.png |250px]]
 
 ====Concavity Pixel Detection====
 The plugin supports different concavity pixel detection types. The chosen type specifies which and how many concavity pixels can be detected.
