@@ -80,13 +80,14 @@ The plugin supports different concavity pixel detection types. The chosen type s
 
 '''Detect all concavity pixels:''' If all concavity pixels should be detected, the plugin is looking for all local concavity pixels. Use it, if you have choosen the concavity region detection by convex hull.
 
-[[File:AllPixels.png]]
+[[File:AllPixels.png |250px]]
 
 
 '''Detect all concavity pixels with largest concavity depth:'''
 If all concavity pixel with largest concavity depth should be detected, the plugin is looking for the global concavity pixels of a concavity region. Use it, if you have choosen the local concavity region detection.
 
-[[File:LargestPixels.png]]
+[[File:LargestPixels.png |250px]]
+
 ===SVM===
 The parameters <math>c_1</math> and <math>c_2</math> can be optimized by a linear SVM. This SVM is integrated in the plugin and uses the [https://www.csie.ntu.edu.tw/~cjlin/libsvm/ LIBSVM] library. 
 
