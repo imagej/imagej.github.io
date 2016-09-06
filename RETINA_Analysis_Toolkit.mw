@@ -38,16 +38,16 @@ The following are required to execute this tool:
 == Processing Settings ==
 [[Image:RETINA_Cell_Counter_Dialog.png|thumb|right|400px|'''Settings Dialog''': Input the spatial scale obtained from the image metadata or microscope.]]
 After importing a TIFF image and executing the counter, the following settings should be selected:
-#Microscope Magnification: Displays the working 20x objective magnification.
-#Image Native Resolution: Displays the imported image resolution.
-#Native Spatial Scale: Input the current image scale in pixels/microns.
-#Image Rescaling Options: If the image is larger that 1300 pixels width, it will be rescaled to speed up the processing. The rescaled image will be saved as a copy.
-#Minimum and Maximum Cell Area: Input the previously measured and selected cutoff values.
-#Cell Roundness: If “All” is selected, all thresholded cells will be counted (Circularity 0-1). If “Mostly rounded“ is selected, mostly circular cells will be counted (Circularity 0.5-1.0). If “Mostly not rounded“ is selected, mostly not circular cells will be counted (Circularity 0.0-0.5). 
-#Retina Area Selection: Choose between automated segmentation of ONL & INL or freehand area selection.
-#Threshold Sensitivity: Choose between a standard and high sensitivity threshold, in case you need to detect cells bearing with low intensity values.
-#Channels: Choose the cells of interest in either the green, red, or combined channels.
-#Help: Links directly to this site.
+#<b>Microscope Magnification</b>: Displays the working 20x objective magnification.
+#<b>Image Native Resolution</b>: Displays the imported image resolution.
+#<b>Native Spatial Scale</b>: Input the current image scale in pixels/microns.
+#<b>Image Rescaling Options</b>: If the image is larger that 1300 pixels width, it will be rescaled to speed up the processing. The rescaled image will be saved as a copy.
+#<b>Minimum and Maximum Cell Area</b>: Input the previously measured and selected cutoff values.
+#<b>Cell Roundness</b>: If “All” is selected, all thresholded cells will be counted (Circularity 0-1). If “Mostly rounded“ is selected, mostly circular cells will be counted (Circularity 0.5-1.0). If “Mostly not rounded“ is selected, mostly not circular cells will be counted (Circularity 0.0-0.5). 
+#<b>Retina Area Selection</b>: Choose between automated segmentation of ONL & INL or freehand area selection.
+#<b>Threshold Sensitivity</b>: Choose between a standard and high sensitivity threshold, in case you need to detect cells bearing with low intensity values.
+#<b>Channels</b>: Choose the cells of interest in either the green, red, or combined channels.
+#<b>Help</b>: Links directly to this site.
 
 {| 
 |style="vertical-align:top"|[[Image:RETINA_Cell_Counter_Roundness.png|thumb|center|300px|'''Cell Roundness''': Select the desired morphology for cells.]] 
