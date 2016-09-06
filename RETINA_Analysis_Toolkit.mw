@@ -1,5 +1,3 @@
-<span style="color:#FF0000">THIS WEBSITE IS CURRENTLY UNDER MAINTENANCE.
-
 {{Infobox
 | logo                   = [[File:Fiji-icon.png | 96px]]
 | software               = ImageJ
@@ -16,10 +14,6 @@
 '''RETINA Analysis Toolkit''' is a free macro toolkit designed and developed for Fiji (ImageJ). The purpose of the RETINA Analysis Toolkit is to perform fast quantitation of digital RGB images from retina cryosections, acquired by fluorescent microscopes. The current components of these toolkit are: TUNEL Cell Counter and RETINA Cell Heatmap.
 
 __TOC__
-
-= MACRO Setup =
-== Download and Install a Macro ==
-<br>
 
 = TUNEL Cell Counter =
 <br>
