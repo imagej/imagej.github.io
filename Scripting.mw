@@ -11,21 +11,46 @@
 
 = Supported languages =
 
-ImageJ's [[Script Editor]] supports the following languages:
+ImageJ's [[Script Editor]] supports many different languages. The following table summarizes the possibilities.
 
-* [[Beanshell Scripting|BeanShell]]
-* [[Groovy Scripting|Groovy]]
-* [[Introduction into Macro Programming|ImageJ Macro]]
-* [[Introduction into Developing Plugins|Java]]
-* [[Javascript Scripting|JavaScript]]
-* [[Clojure Scripting|Lisp (Clojure)]]
-* [[Jython Scripting|Python (Jython)]]
-* [[Renjin Scripting|R (Renjin)]]
-* [[JRuby Scripting|Ruby (JRuby)]]
-* [[Scala Scripting|Scala]]
-
-Additionally, these languages can be installed via [http://fiji.sc/Update_Sites update sites]:
-* [[MATLAB Scripting|MATLAB]]
+{| class="wikitable"
+| colspan=2 style="background: #ddd; text-align: center; font-weight: bold" | Recommended options
+|-
+! [[Groovy Scripting|Groovy]]
+| [[wikipedia:Groovy (programming language)|Groovy]] is a flexible and powerful scripting language, Java-like but less verbose and dynamically typed. Learn this, and using Java later (if needed) will become easier.
+|-
+! [[Introduction into Macro Programming|ImageJ Macro]]
+| style="white-space: normal !important" | The [[ImageJ 1.x]] macro language is less powerful than the other scripting languages, but is designed to be easy to learn and use.
+|-
+! style="white-space: nowrap" | [[Jython Scripting|Python (Jython)]]
+| [[wikipedia:Python (programming language)|Python]] is a popular choice among scientists.
+|-
+! [[Javascript Scripting|JavaScript]]
+| [[wikipedia:JavaScript|JavaScript]] is a popular choice among web developers.
+|-
+! [[JRuby Scripting|Ruby (JRuby)]]
+| [[wikipedia:Ruby (programming language)|Ruby]] is another popular choice among web developers.
+|-
+! [[Clojure Scripting|Lisp (Clojure)]]
+| [[wikipedia:Lisp (programming language)|Lisp]] is a popular choice among computer scientists.
+|-
+! [[Renjin Scripting|R (Renjin)]]
+| [[wikipedia:R (programming language)|R]] is a popular choice among scientists and statisticians.
+|-
+| colspan=2 style="background: #ddd; text-align: center; font-weight: bold" | Other options
+|-
+! [[Introduction into Developing Plugins|Java]]
+| You can code Java plugins in the Script Editor. This is the most difficult path, but also the most powerful.
+|-
+! [[MATLAB Scripting|MATLAB]]
+| ImageJ can interface bidirectionally with MATLAB. See the [[MATLAB Scripting]] page for details.
+|-
+! [[Beanshell Scripting|BeanShell]]
+| [[wikipedia:BeanShell|BeanShell]] is an old script language, maintained mostly for backwards compatibility. It is nearly 100% compatible with Java syntax, but so is [[Groovy]].
+|-
+! [[Scala Scripting|Scala]]
+| [[wikipedia:Scala (programming language)|Scala]] support is currently experimental, and has bugs.
+|}
 
 = Script parameters =
 
