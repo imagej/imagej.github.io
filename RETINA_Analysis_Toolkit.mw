@@ -44,8 +44,8 @@ After importing a TIFF image and executing the counter, the following settings s
 #<b>Image Rescaling Options</b>: If the image is larger that 1300 pixels width, it will be rescaled to speed up the processing. The rescaled image will be saved as a copy.
 #<b>Minimum and Maximum Cell Area</b>: Input the previously measured and selected cutoff values.
 #<b>Cell Roundness</b>: If “All” is selected, all thresholded cells will be counted (Circularity 0-1). If “Mostly rounded“ is selected, mostly circular cells will be counted (Circularity 0.5-1.0). If “Mostly not rounded“ is selected, mostly not circular cells will be counted (Circularity 0.0-0.5). 
-#<b>Retina Area Selection</b>: Choose between automated segmentation of ONL & INL or freehand area selection.
-#<b>Threshold Sensitivity</b>: Choose between a standard and high sensitivity threshold, in case you need to detect cells bearing with low intensity values.
+#<b>Retina Area Selection</b>: Choose between automated ONL & INL segmentation or manual freehand selection.
+#<b>Threshold Sensitivity</b>: Choose between a standard and high sensitivity threshold, in case you need to detect cells with low intensity values.
 #<b>Channels</b>: Choose the cells of interest in either the green, red, or combined channels.
 #<b>Help</b>: Links directly to this site.
 
