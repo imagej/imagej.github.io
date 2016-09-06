@@ -15,6 +15,11 @@
 
 __TOC__
 
+= MACRO Setup =
+== Download and Install a Macro ==
+<br>
+{{#widget:YouTube|id=CvhPjZ62cik|height=600|width=1080|alignment=center}} 
+
 = TUNEL Cell Counter =
 <br>
 TUNEL Cell Counter is a customizable tool that processes digital images from retinal cryosections. It segments retinal outer nuclear (ONL) and inner nuclear layers (INL) and quantitates fluorescent-labelled cells in these layers.
@@ -28,7 +33,7 @@ The following are required to execute this tool:
 #Minimum Cell Size & Maximum Cell Area (µm<sup>2</sup>): These should be determined upfront, according to your image dataset. This measurements can be performed in Fiji with the freehand selection tool, after setting the spatial scale factor.
 
 == How to Use: 2 Minute Tutorial ==
-<br>
+{{#widget:YouTube|id=NyCXqNA-NTc|height=600|width=1080|alignment=center}} 
 
 == Processing Settings ==
 [[Image:RETINA_Cell_Counter_Dialog.png|thumb|right|400px|'''Settings Dialog''': Input the spatial scale obtained from the image metadata or microscope.]]
