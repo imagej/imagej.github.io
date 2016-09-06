@@ -5,6 +5,8 @@ Jython is an implementation of the Python programming language designed to run o
 
 == When to use Jython ==
 
+All scripting language supported by ImageJ can be used to access the [https://imagej.nih.gov/ij/developer/api/allclasses-noframe.html ImageJ API]. There are only differences in how the imports are handled and in the syntax of the selected language. Jython has a syntax that differs from most other language as indentations instead of brackets are used to group code blocks.
+
 The following list will help you to decide if Jython is the right choice to create scripts for ImageJ:
 
 * If you have experience with Python you can easily use Jython for ImageJ scripting. But you have to keep in mind that tools commonly used in many Python projects (e.g. Numpy) are not available in Jython. By building your [[Jython_Scripting#Self_written_Jython_modules_for_ImageJ|own modules]] you can create complex scripts that otherwise are only possible by writing ImageJ plugins in Java.
