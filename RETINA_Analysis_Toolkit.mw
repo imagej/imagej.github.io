@@ -27,10 +27,10 @@ TUNEL Cell Counter is a customizable tool that processes digital images from ret
 
 == Required Components ==
 The following are required to execute this tool: 
-#TUNEL Cell Counter installed in Fiji (ImageJ).
-#Digital Image in TIFF format.
-#Microscope Spatial Scale (pixels/microns). 
-#Minimum Cell Size & Maximum Cell Area (µm<sup>2</sup>): These should be determined upfront, according to your image dataset. This measurements can be performed in Fiji with the freehand selection tool, after setting the spatial scale factor.
+#<b>TUNEL Cell Counter<b>: Macro should be installed in Fiji (ImageJ).
+#<b>Digital Image</b>: Files should be in TIFF format.
+#<b>Microscope Spatial Scale</b>: pixels/microns. 
+#<b>Minimum Cell Size & Maximum Cell Area (µm<sup>2</sup>)</b>: These values should be determined upfront, according to your image dataset. These measurements can be performed in Fiji with the freehand selection tool, after setting the spatial scale factor.
 
 == How to Use: 2 Minute Tutorial ==
 {{#widget:YouTube|id=NyCXqNA-NTc|height=600|width=1080|alignment=center}} 
