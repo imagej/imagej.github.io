@@ -15,7 +15,7 @@
 
 __TOC__
 
-= MACRO Setup =
+= Setup Instructions =
 == Download and Install ImageJ Macros ==
 <br>
 {{#widget:YouTube|id=CvhPjZ62cik|height=600|width=1080|alignment=center}}
@@ -27,9 +27,9 @@ TUNEL Cell Counter is a customizable tool that processes digital images from ret
 
 == Required Components ==
 The following are required to execute this tool: 
-#<b>TUNEL Cell Counter<b>: Macro should be installed in Fiji (ImageJ).
+#<b>TUNEL Cell Counter</b>: Macro should be installed in Fiji (ImageJ).
 #<b>Digital Image</b>: Files should be in TIFF format.
-#<b>Microscope Spatial Scale</b>: pixels/microns. 
+#<b>Microscope Spatial Scale</b>: Pixels/microns. 
 #<b>Minimum Cell Size & Maximum Cell Area (µm<sup>2</sup>)</b>: These values should be determined upfront, according to your image dataset. These measurements can be performed in Fiji with the freehand selection tool, after setting the spatial scale factor.
 
 == How to Use: 2 Minute Tutorial ==
