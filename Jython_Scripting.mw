@@ -155,7 +155,7 @@ if __name__ == '__main__':
 
 The second example is inspired by atomic resolution images recorded with an Transmission Electron Microscope (TEM). Such images show a regular structure (a crystal), but the images are noisy because of the low signal. By using a Fourier filter the contrast can be enhanced.
 
-The script will create a periodic structure and add some random noise. The user can control the parameters of the created image. This is realized using [[Script_parameters|Script parameters]]. The Fourier filtering has been created by using the [[Introduction_into_Macro_Programming#The_recorder Recorder]]. Finally a simple image calculator is used to show that functions can be passed as parameters.
+The script will create a periodic structure and add some random noise. The user can control the parameters of the created image. This is realized using [[Script_parameters|Script parameters]]. The Fourier filtering has been created by using the [[Introduction_into_Macro_Programming#The_recorder|Recorder]]. Finally a simple image calculator is used to show that functions can be passed as parameters.
 
 This list links to the documentation of Python features that are introduced with this example:
 
