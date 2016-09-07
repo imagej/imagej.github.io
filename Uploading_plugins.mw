@@ -71,7 +71,7 @@ This database not only stores the same information as ''current.txt'', it can co
 
 == File organization ==
 
-Different file types are stored at different locations in an ImageJ/Fiji installation, where they are picked up by the updater (see the [https://github.com/imagej/imagej-updater/blob/master/src/main/java/net/imagej/updater/Checksummer.java#L436-L448 source code] for technical details):
+Different file types are stored at different locations in an ImageJ/Fiji installation, where they are picked up by the updater (see the [https://github.com/imagej/imagej-updater/blob/imagej-updater-0.8.1/src/main/java/net/imagej/updater/Checksummer.java#L439-L451 source code] for technical details):
 
   jars/
   retro/
