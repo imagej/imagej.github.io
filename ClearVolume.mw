@@ -33,6 +33,7 @@ We work constantly on improving the Fiji and KNIME plugins. Help us doing so by 
 <center>[[File:ClearVolumeNetworkClientInFiji.png|750px|thumb|The ClearVolume network client can be started from Fiji/ImageJ2 and enables users to receive volumetric data from a remote source, e.g. live from a microscope in the basement of your collaborators institute.]]</center>
 
 See ClearVolume in action!
+
 {{#widget:YouTube|id=IyUpkgTJJvc}}
 
 == Installing ClearVolume in Fiji or ImageJ2 ==
