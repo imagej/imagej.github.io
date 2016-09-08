@@ -11,18 +11,17 @@ Deploying your library to [[Maven]] makes it available for other developers. It 
 * Contact an ImageJ admin in [[Chat#Gitter|Gitter]] or [http://forum.imagej.net/ the ImageJ forum] and request a <code>Nexus Deployment</code> account for the [[ImageJ Maven repository]].
 
 == Instructions ==
-
-1. Create a <code>.travis.yml</code> in your repository using the following template:
+<div style="overflow: hidden">
+<tabs>
+<tab name="Maven">
+1. Add the following code to your repository's <code>.travis.yml</code>:
 
 <source lang="yaml">
-language: java
-jdk:
-- oraclejdk8
-script:
+after_success:
 - mvn -U -Pdeploy-to-imagej clean deploy --settings settings.xml
 </source>
 
-2. From the command line in your repository, create an [https://docs.travis-ci.com/user/environment-variables/#Encrypting-Variables-Using-a-Public-Key encrypted environment variable] for your [http://maven.imagej.net maven.imagej.net] password:
+2. From the command line in your repository, create an [https://docs.travis-ci.com/user/environment-variables/#Encrypting-Variables-Using-a-Public-Key encrypted environment variable] for your [http://maven.imagej.net maven.imagej.net] password -- be careful with escaping special characters correctly:
 
 <source lang="bash">
 $ travis encrypt MAVEN_PASS=my_maven_password --add env.matrix
@@ -50,3 +49,65 @@ Note that this will automatically modify your <code>.travis.yml</code> file.
 </source>
 
 4. Commit all your files with Git and push them back to your repository. If everything works as intended, you should start seeing new builds in your [https://travis-ci.org Travis dashboard] with each new commit, with corresponding SNAPSHOT and release artifacts immediately deployed automatically to [http://maven.imagej.net/index.html#view-repositories maven.imagej.net].
+</tab>
+
+
+<tab name="Gradle">
+1. Add the following code to your <code>build.gradle</code> file:
+<source lang="Groovy">
+// this _must_ be at the top, with the other plugins
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+
+// more towards the end
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "http://maven.imagej.net/content/repositories/releases") {
+                authentication(userName: "$System.env.MAVEN_USER", password: "$System.env.MAVEN_PASS")
+            }
+            snapshotRepository(url: "http://maven.imagej.net/content/repositories/snapshots") {
+                authentication(userName: "$System.env.MAVEN_USER", password: "$System.env.MAVEN_PASS")
+            }
+        }
+    }
+}
+</source>
+
+If you also want your Javadoc JAR to be published, also add the following:
+<source lang="Groovy">
+task javadocJar(type: Jar, dependsOn:javadoc) {
+        classifier = 'javadoc'
+        from javadoc.destinationDir
+}
+
+artifacts
+{
+        archives sourcesJar
+        archives javadocJar
+    archives testsJar
+}
+
+publishing {
+        publications {
+                maven(MavenPublication) {
+                        from components.java
+                        artifact sourcesJar { classifier "sources" }
+                }
+        }
+}
+</source>
+
+2. From the command line in your repository, create an [https://docs.travis-ci.com/user/environment-variables/#Encrypting-Variables-Using-a-Public-Key encrypted environment variable] for your [http://maven.imagej.net maven.imagej.net] username and password -- be careful with escaping special characters correctly:
+
+<source lang="bash">
+$ travis encrypt MAVEN_USER=my_maven_username --add env.matrix
+$ travis encrypt MAVEN_PASS=my_maven_password --add env.matrix
+</source>
+
+Note that this will automatically modify your <code>.travis.yml</code> file.
+
+3. Commit all your files with Git and push them back to your repository. If everything works as intended, you should start seeing new builds in your [https://travis-ci.org Travis dashboard] with each new commit, with corresponding SNAPSHOT and release artifacts immediately deployed automatically to [http://maven.imagej.net/index.html#view-repositories maven.imagej.net].
+</tab>
+</tabs>
+</div>
