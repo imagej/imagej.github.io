@@ -22,7 +22,7 @@ after_success:
 - mvn -U -Pdeploy-to-imagej clean deploy --settings settings.xml
 </source>
 </li>
-<li>From the command line in your repository, create an [https://docs.travis-ci.com/user/environment-variables/#Encrypting-Variables-Using-a-Public-Key encrypted environment variable] for your [http://maven.imagej.net maven.imagej.net] password -- be careful with escaping special characters correctly:
+<li>From the command line in your repository, create an [https://docs.travis-ci.com/user/environment-variables/#Encrypting-Variables-Using-a-Public-Key encrypted environment variable] for your [http://maven.imagej.net maven.imagej.net] password—be careful with escaping special characters correctly:
 
 <source lang="bash">
 $ travis encrypt MAVEN_PASS=my_maven_password --add env.matrix
