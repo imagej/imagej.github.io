@@ -1,10 +1,9 @@
 {{Notice | If Maven is completely new to you, read:
 * [http://maven.apache.org/what-is-maven.html What is Maven?]
 * [http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html Maven in 5 Minutes]}}
-{{Development | tools}}[[ImageJ]], [[Fiji]] and other [[SciJava]] projects use [http://maven.apache.org/ Maven] for their project infrastructure.
+{{Development | tools}}{{Minibox | logo=Maven-icon.png | size=51px | blurb=<br>'''Apache Maven''' is a [[wikipedia:Convention over configuration|convention over configuration]] build automation tool.}}[[ImageJ]], [[Fiji]] and other [[SciJava]] projects use [http://maven.apache.org/ Maven] for their project infrastructure.
 
 Maven artifacts are published to the [[ImageJ Maven repository]].
-
 
 = Introduction =
 
