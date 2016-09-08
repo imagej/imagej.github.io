@@ -100,7 +100,7 @@ publishing {
 }
 </source>
 </li>
-<li>From the command line in your repository, create an [https://docs.travis-ci.com/user/environment-variables/#Encrypting-Variables-Using-a-Public-Key encrypted environment variable] for your [http://maven.imagej.net maven.imagej.net] username and password -- be careful with escaping special characters correctly:
+<li>From the command line in your repository, create an [https://docs.travis-ci.com/user/environment-variables/#Encrypting-Variables-Using-a-Public-Key encrypted environment variable] for your [http://maven.imagej.net maven.imagej.net] username and password—be careful with escaping special characters correctly:
 
 <source lang="bash">
 $ travis encrypt MAVEN_USER=my_maven_username --add env.matrix
