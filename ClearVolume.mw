@@ -46,7 +46,7 @@ See ClearVolume in action!
 
 == Other ways to use ClearVolume ==
 ; KNIME
-: The ClearVolume team provides a plugin for KNIME Image Processing. See [http://tech.knime.org/book/clearvolume this page] for details.
+: The ClearVolume team provides a plugin for [[KNIME Image Processing]]. See [http://tech.knime.org/book/clearvolume this page] for details.
 ; Stand-alone
 : The original purpose of ClearVolume is to bring live volumetric rendering to modern microscopy. Please check the [https://clearvolume.github.io/ClearVolume/ wiki on GibHub] for detailed informations.
 
