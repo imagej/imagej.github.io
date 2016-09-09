@@ -2,8 +2,8 @@
 | software               = MiToBo
 | name                   = MiToBo
 | logo                     = [[File:MiToBo-logo.png|96px]]
-| maintainer             = Stefan Posch, Birgit Möller
-| author                 = Stefan Posch, Birgit Möller
+| maintainer             = Stefan Posch, {{Person|MiToBo}}
+| author                 = Stefan Posch, {{Person|MiToBo}}
 | source                 = {{GitHub|org=mitobo-hub|repo=mitobo-plugins}}
 | status                 = 
 | category               = [[:Category:Plugins]]
