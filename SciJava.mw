@@ -17,6 +17,8 @@ The following components are part of the '''[[Architecture|SciJava software stac
 * [[SCIFIO]] - core library for N-dimensional image I/O.
 * [[ImageJ2]] - library and application for N-dimensional image processing.
 * [[Fiji]] - extension of [[ImageJ]] for life sciences research.
+* [[BigDataViewer]]
+* [[TrakEM2]]
 
 == The SciJava pledge ==
 
