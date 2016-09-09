@@ -65,7 +65,7 @@ As a rule of thumb, we find that multi-module [[Maven]] projects stored within a
 
 == Maven component structure ==
 
-<graphviz border alignment="right" size="500px" caption="Parent POM hierarchy">
+<graphviz border alignment="right" size="450px" caption="Parent POM hierarchy">
 digraph poms {
     label="Parent POM hierarchy"
     "pom-scijava" [color=green, style=filled, URL="[https://github.com/scijava/pom-scijava]"]
