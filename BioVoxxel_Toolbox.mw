@@ -293,7 +293,7 @@ Future: potentially also display using scaled units!
 
 Purpose: The stack line plot enables to make line plots over a complete stack of images. 
 
-How To: The line can be either straight, freehand or segmented and needs to be drawn beforehand. If the input image is a hyperstack the user can choose to plot oover the z-slice or the t-frame range. In such a case the intensities of the active channel are taken for the plot. The macro automatically creates a stack of plots along the line selection with the upper intensity limit set at  the highest intensity occuring along the line over all images. If the [Shift] key is held down before and while going to >BioVoxxel Icon >Stack Line Plots the limit is set to 255 for  8-bit images and 65535 for 16-bit images
+How To: The line can be either straight, freehand or segmented and needs to be drawn beforehand. If the input image is a hyperstack the user can choose to plot over the z-slice or the t-frame range. In such a case the intensities of the active channel are taken for the plot. The macro automatically creates a stack of plots along the line selection with the upper intensity limit set at  the highest intensity occuring along the line over all images. If the [Shift] key is held down before and while going to >BioVoxxel Icon >Stack Line Plots the limit is set to 255 for  8-bit images and 65535 for 16-bit images
 
 [[File:StackLinePlots.png|750px]]
 
