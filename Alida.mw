@@ -2,8 +2,8 @@
 | software               = Alida
 | name                   = Alida
 | logo                   = [[File:Alida-logo.jpg|96px]]
-| maintainer             = Stefan Posch, Birgit Möller
-| author                 = Stefan Posch, Birgit Möller
+| maintainer             = Stefan Posch, {{Person|MiToBo}}
+| author                 = Stefan Posch, {{Person|MiToBo}}
 | source                 = {{GitHub|org=alida-hub|repo=alida}}
 | status                 = 
 | category               = [[:Category:Software]]
