@@ -10,17 +10,15 @@ __NOTOC__
 <div class="button-green">[[Learn]]</div>
 <div class="button-red">[[Develop]]</div>
 |}
-</div><div style=" padding: 0 20px 20px 20px;" align="center">
+</div><div style="padding: 20px;" align="center">
+<div style="text-align: left; font-size: 1.3em; padding: 1.5em; background-color: #fec; border: 2px solid black; border-radius: 10px">
+[[ImageJ]] is an [[open source]] image processing program designed for scientific multidimensional images.
+
+[[ImageJ]] is highly [[Extensibility|extensible]], with thousands of [[plugins]] and [[macros]] for performing a wide variety of tasks, and a strong, established user base.</div>
 <h2 class="header-stripe" style="margin-left: -20px; margin-right: -20px; border:solid black; border-left: 2px; border-right: 2px">Welcome to the Wiki!</h2>
 
 <center>
-{|style="text-align: left;"
-|style="font-size: 1.2em;padding: 7px"|[[ImageJ]] is an [[open source]] image processing program designed for scientific multidimensional images.
-|-
-|style="font-size: 1.2em; padding: 7px"|[[ImageJ]] is highly [[Extensibility|extensible]], with thousands of [[plugins]] and [[macros]] for performing a wide variety of tasks, and a strong, established user base.
-|-
-|style="font-size: 1.2em; padding: 7px"|This [[wikipedia:wiki|wiki]] documents all aspects of the '''ImageJ ecosystem''', including:
-|}
+<div style="font-size: 1.2em; padding: 7px">This [[wikipedia:wiki|wiki]] documents all aspects of the '''ImageJ ecosystem''', including:</div>
 {| class="nicetable"
 |style="width: 25%; text-align: center"|{{Logo | ImageJ}}<br>ImageJ
 |style="width: 25%; text-align: center"|{{Logo | Fiji}}<br>Fiji
