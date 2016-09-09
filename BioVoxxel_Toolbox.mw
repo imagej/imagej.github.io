@@ -467,7 +467,7 @@ Future: Will be adjusted für 32-bit float-type images as well as RGB images and
 =Adaptive Filter= 
 (separate plugin under {{bc | Plugins | BioVoxxel}})
 
-Purpose/How to: This filter allows the choise between two basic filter modes (''median'' and ''mean''). The filter ''Radius'' defines the size of a square kernel (so actually not really a radius but to keep the entries intuitively similar to other filters in Fiji this label was chosen).
+Purpose/How to: This filter allows the choice between two basic filter modes (''median'' and ''mean''). The filter ''Radius'' defines the size of a square kernel (so actually not really a radius but to keep the entries intuitively similar to other filters in Fiji this label was chosen).
  
 The ''Shape'' option enables a basic pre-selection of pixels from the kernel neighborhood to be taken into account for filtering. After pressing 'Ok', a checkbox grid will be displayed from which the user can adjust the selected pixels for the final filter according to the filtering needs (e.g. to remove power lines in a photograph).
 
