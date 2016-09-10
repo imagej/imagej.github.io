@@ -10,10 +10,7 @@
 | latest version         = April 1st, 2012
 | status                 = active
 | category               = [[:Category:Segmentation]]
-}}
-
-
-== Balloon Segmentation for multicellular images ==
+}}== Balloon Segmentation for multicellular images ==
 
 === Introduction === 
 A plugin<ref>{{cite journal|author=Federici Fernán, Dupuy Lionel, Laplaze Laurent, Heisler Marcus, Haseloff Jim.|title=Integrated genetic and computation methods for in planta cytometry|journal=Nature Methods |year=2012 |volume= advance online publication |url=http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.1940.html}}</ref> that allows the segmentation off cell wall boundaries from microscopy images and to extract cell architectures . It uses a physical “balloon inflation” algorithm for finding the cell boundaries from 8bits images. Features include:
