@@ -3,7 +3,7 @@
 | software               = ImageJ
 | logo                   = [[File:Scifio-logo.png|150px]]
 | author                 = {{Person|Hinerm}}, {{Person|Rueden}}
-| maintainer             = {{Person|Hinerm}}, {{Person|Rueden}}
+| maintainer             = {{Person|Rueden}}
 | source                 = {{GitHub | org = scifio | repo = scifio}}
 | status                 = active
 | category               = 
