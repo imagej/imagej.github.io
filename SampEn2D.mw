@@ -11,7 +11,7 @@
 }}
 == Two-dimensional Sample Entropy ==
 
-A PlugIn for the two-dimensional Sample Entroy method, which the algorithm was published at Biomedical Physics & Engineering Express article [http://dx.doi.org/ weblink]. 
+A PlugIn for the two-dimensional Sample Entroy method, which the algorithm was published at Biomedical Physics & Engineering Express article [http://dx.doi.org/10.1088/2057-1976/2/4/045002 weblink]. 
 
 == Description ==
 
@@ -34,6 +34,6 @@ In general, the SampEn2D method is a method that measure the regularity level pr
 
 Here is a list of paper related with the SampEn2D method. Please, cite our method if you use it in your own research.
 
-*
+* Silva, L.E.V. et al., 2016. Two-dimensional sample entropy: assessing image texture through irregularity. Biomedical Physics & Engineering Express, 2(4), p.45002. DOI: 10.1088/2057-1976/2/4/045002.
 
 * Silva, L.E.V. da et al., 2014. Two-dimensional sample entropy analysis of rat sural nerve aging. In Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE, pp. 3345–3348. DOI: 10.1109/EMBC.2014.6944339
