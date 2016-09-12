@@ -16,7 +16,7 @@
 | [http://imagej.net/docs/guide/146-29.html#toc-Section-29 Image processing], [[colocalization]], [[deconvolution]], [[registration]], [[segmentation]], [[tracking]], [[visualization]] and much more.
 |-
 | style="font-size: 1.5em; padding: 0.5em 1em 0.5em 1em" | [[Plugins]]
-| An powerful mechanism for extending ImageJ in all kinds of useful ways.
+| A powerful mechanism for extending ImageJ in all kinds of useful ways.
 |-
 | style="font-size: 1.5em; padding: 0.5em 1em 0.5em 1em" | [[Scripting]]
 | Automated, reproducible workflows via [[scripting|scripts]] and [[macros]], including [[Scripting Headless|headless on a remote server or cluster]].
