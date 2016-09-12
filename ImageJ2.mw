@@ -2,7 +2,7 @@
 | name                   = ImageJ2
 | software               = ImageJ
 | logo                   = [[File:imagej2-icon.png|64px]]
-| maintainer             = {{Person|Rueden}}<br>{{Person|Hinerm}}
+| maintainer             = {{Person|Rueden}}
 | source                 = {{GitHub | org = imagej | repo = imagej}}
 | status                 = active
 | category               = 
