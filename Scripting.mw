@@ -64,9 +64,9 @@ All scripting languages use the same basic interpreter, with the following commo
 
 == General key bindings ==
 
-* up arrow: bring the previously typed command.
-* down arrow: bring the next typed command.
-* enter or return: execute the contents of the prompt.
+* {{Key|up}}: bring the previously typed command.
+* {{Key|down}}: bring the next typed command.
+* {{Key|enter}} or {{Key|return}}: execute the contents of the prompt.
 
 == Multiline editing and keybindings==
 
