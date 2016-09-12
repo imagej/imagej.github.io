@@ -163,7 +163,7 @@ While ImageJ strives for [[reproducible]] analysis, there are many reasons resul
 ** Click the [[status bar]] and you will see something like "ImageJ 2.0.0-rc-26/1.49p".
 ** If these two values differ between your machines, the versions are not the same.
 ** See also [[Frequently Asked Questions#How can I verify that my ImageJ is really 100% up to date?|How can I verify that my ImageJ is really 100% up to date?]].
-** If the two versions of ImageJ differ and produce different numerical results, it is a bug—please [[Report a Bug|report it]]!
+** If the two versions of ImageJ match but produce different numerical results, it is a bug—please [[Report a Bug|report it]]!
 * Ensure that the ''options'' of ImageJ match between the machines.
 ** A fast way to ensure this is the {{bc | Edit | Options | Reset...}} command, which resets everything to its default state.
 ** Alternately, you can check the settings in the following dialog boxes:
