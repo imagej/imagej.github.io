@@ -9,7 +9,7 @@ This plugin automates cell detection in microscopy imagery. This is done through
 
 The plugin can be downloaded from: http://sites.imagej.net/Jhowarth/
 
-Copy the plugin jar to ImageJ's plugins folder and each jar within the the jars to ImageJ's jars folder.  Once restarted the plugin will appear in ImageJ's Plugin submenu as Cell Detector.
+Copy the cell_detector-1.0.0-SNAPSHOT.jar to ImageJ's plugins folder. Also copy each jar within the the jars folder to ImageJ's jars folder.  Once ImageJ is restarted the plugin will appear in the Plugin submenu as Cell Detector.
 
 Alternatively open your ImageJ application and add http://sites.imagej.net/Jhowarth/ to the Update manger (found in the menu under Help/Update...).
 
