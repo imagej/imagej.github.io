@@ -1,0 +1,28 @@
+== '''Introduction''' ==
+
+
+This plugin automates cell detection in microscopy imagery. This is done through connection to an external classifier service which uses Random Forest based machine learning.
+
+
+== '''Installation''' ==
+
+
+The plugin can be downloaded from: http://sites.imagej.net/Jhowarth/
+
+Copy the plugin jar to ImageJ's plugins folder and each jar within the the jars to ImageJ's jars folder.  Once restarted the plugin will appear in ImageJ's Plugin submenu as Cell Detector.
+
+Alternatively open your ImageJ application and add http://sites.imagej.net/Jhowarth/ to the Update manger (found in the menu under Help/Update...).
+
+
+== '''Usage''' ==
+
+
+A user guide can be found at: TBC
+
+
+== '''Limitations''' ==
+
+
+As this is only V1.0, if the user does not follow the required workflow then the plugin may crash and require a restart.
+
+Further information/documentation to come.
