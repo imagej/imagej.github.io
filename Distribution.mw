@@ -190,8 +190,14 @@ If you want to facilitate good science, please [[Open Source|share your source c
 * No easy browsing of source code online.
 * No easy submission of patches.
 * No finding the code in web searches.
-* No revision control system.
-* No revision control system!
+* No reading the change logs to understand why changes were made.
+* No studying the history to better understand the project's activity.
+* No bisecting the history to track down when bugs were introduced.
+* No safety net to revert unwanted changes or avoid lost work.
+* No branching to maintain multiple development trajectories.
+* No easy switching between versions.
+* No automatic credit and tracking of which authors did which work.
+* No distribution and backup of the project's development history.
 |}
 
 == Documenting your extension ==
