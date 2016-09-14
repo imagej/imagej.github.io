@@ -1,0 +1,88 @@
+{{Infobox
+| name                   = Fourier Ring Correlation
+| software               = Fiji
+| author                 = Olivier Burri, Alex Herbert
+| maintainer             = Olivier Burri
+| filename               = FRC_.jar
+| released               = September 2016
+| latest version         = September 2016
+| source                 = [https://c4science.ch/diffusion/988/ c4science page]
+| status                 = stable
+| website                = [http://biop.epfl.ch/INFO_Facility.html#staff BIOP Staff Page]
+}}
+
+== Purpose ==
+Making use of the Fourier Ring Correlation Implementation by Alex Herbert
+which is itself adapted from the FIRE (Fourier Image REsolution) plugin produced as part of the paper
+Niewenhuizen, et al (2013). Measuring image resolution in optical nanoscopy. Nature Methods, 10, 557 <ref>http://www.nature.com/nmeth/journal/v10/n6/full/nmeth.2448.html</ref>
+
+== Details ==
+=== Threshold Methods ===
+=== Image Calibration === 
+
+== Installation == 
+This plugin is available from the [[List of update sites|BIOP Update Site]]
+This places it in a "BIOP" Folder in the plugins directory of Fiji/ImageJ
+
+== Use ==
+
+=== Direct Use ===
+[[File:frc-dialog-std.png |500px|thumb|right|Plugin Dialog choices Standard Use]]
+
+Call up the plugin using ''Plugins->BIOP->FRC->FRC Calculation...''.
+
+You need two images open to perform the FRC. 
+
+=== Batch Mode ===
+[[File:Frc-dialog-batch.png |500px|thumb|right|Plugin Dialog choices in Batch mode]]
+
+There is also a Batch Option under ''Plugins->BIOP->FRC->FRC Calculation (Batch)...''
+
+This dialog needs two folders. 
+The plugin will open one folder, and perform the FRC for each image that has an image in the second folder '''with the same name'''.
+
+=== Results === 
+The plugin writes the FIRE (Fourier Image REsolution) number on a Results Table that gets appended as the plugin gets used. The column name reflects the calibration of the image and the threshold method selected. 
+
+[[File:Frc-results.png |500px|thumb|right|Results Table example from FRC Calculation]]
+
+
+=== Plots === 
+The Plugin can display a plot of the FRC curve, along with the LOESS smoothed version of the curve. Finally it displays the threshold method used and the intersection of the FRC with the threshold, providing the FIRE number. The X dimension is in the frequency domain and represents pixels<sup>-1</sup>
+
+[[File:Frc-results-curve.png |500px|thumb|right|FRC Curve example using 1/7 Threshold condition]]
+
+In the case of batch processing, if ''Save Plot'' is checked, the plugin creates a new folder in the parent directory called "Graphs" and saves an over-sampled plot with the name of the image and threshold method. 
+
+== Macro Recordable ==
+Making use of the GenericDialog class, the plugin is macro-recordable. An example is shown below
+<source lang="java">
+run("FRC Calculation...", "image_1=[first_image.tif] image_2=[second_image.tif] resolution=[Fixed 1/7] display");
+
+//Example with batch
+run("FRC Calculation (Batch)", "first=[D:\\FRC Tests\\A] second=[D:\\FRC Tests\\B] resolution=[Fixed 1/7] save");
+</source>
+
+== Running from a Plugin ==
+If you would like to use the FRC class in your own plugin, you can either use the one from Alex Herbert on [https://github.com/aherbert/GDSC-SMLM GitHub] if you're already using his excellent SMLM plugins. Otherwise you can use the one that was re-purposed here through the following import
+
+<source lang="java">
+import ch.epfl.biop.frc.FRC;
+</source>
+
+And then use the FRC Class
+<source lang="java">
+
+FRC frc = new FRC();
+
+// Get FIRE Number, assumes you have access to the two image processors.
+double fire = frc.calculateFireNumber(ip1, ip2, FRC.FIXED_1_OVER_7);
+</source>
+There are other methods to get the FRC curve, see the [https:// Java file], which was very well documented. 
+
+== Notes ==
+
+[[Category:Plugins]]
+
+== References ==
+{{Reflist}}
