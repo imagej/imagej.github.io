@@ -21,9 +21,7 @@ which is itself adapted from the FIRE (Fourier Image REsolution) plugin produced
 
 There are three threshold methods currently implemented
 # '''Fixed 1/7''': Finds the FIRE number when the FRC curve reaches a correlation value of 1/7.
-
 # '''Half-bit''': Threshold method where the intersection of the threshold curve with the FRC defines the point where there is 1/2 bit of information per pixel. 
-
 # '''Three sigma''': The intersection of the FRC curve with this threshold defines the value where the FRC begins primarily representing high frequency noise.
 
 Please see the publication '''van Hell and Schatz, Fourier shell correlation threshold criteria, Journal of Structural Biology 151, 2005'''<ref>{{Cite journal| doi = 10.1016/j.jsb.2005.05.009| issn = 1047-8477| volume = 151| issue = 3| pages = 250–262| last1 = van Heel| first1 = Marin| last2 = Schatz| first2 = Michael| title = Fourier shell correlation threshold criteria| journal = Journal of Structural Biology| date = 2005-09}}</ref> for more information on the calculation of these criteria.
