@@ -26,9 +26,8 @@ There are three threshold methods currently implemented
 
 # '''Three sigma''': The intersection of the FRC curve with this threshold defines the value where the FRC represents primarily high frequency noise (assuming some distribution model).
 
-Please see the publication '''Fourier shell correlation threshold criteria'''<ref>Marin van Heel, Michael Schatz
-Fourier shell correlation threshold criteria, Journal of Structural Biology, Volume 151, Issue 3, September 2005, Pages 250-262, ISSN 1047-8477, http://dx.doi.org/10.1016/j.jsb.2005.05.009.
-Keywords: Fourier shell correlation; Resolution criteria; Single particles; cryo-EM; Information</ref>
+Please see the publication '''van Hell and Schatz, Fourier shell correlation threshold criteria, Journal of Structural Biology 151, 2005'''<ref>{{Cite journal| doi = 10.1016/j.jsb.2005.05.009| issn = 1047-8477| volume = 151| issue = 3| pages = 250–262| last1 = van Heel| first1 = Marin| last2 = Schatz| first2 = Michael| title = Fourier shell correlation threshold criteria| journal = Journal of Structural Biology| date = 2005-09}}</ref> for more information on the calculation of these criteria.
+
 === Image Calibration ===
 We recommend you use a calibrated image so that your results are in calibrated units (microns, millimeters, etc..) directly. The plugin will always return both the non calibrated values and the calibrated ones as separate columns.
 
