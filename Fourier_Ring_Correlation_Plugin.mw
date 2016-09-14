@@ -14,7 +14,7 @@
 == Purpose ==
 Making use of the Fourier Ring Correlation Implementation by Alex Herbert
 which is itself adapted from the FIRE (Fourier Image REsolution) plugin produced as part of the paper
-'''Niewenhuizen, et al (2013). Measuring image resolution in optical nanoscopy. Nature Methods, 10, 557''' <ref>http://www.nature.com/nmeth/journal/v10/n6/full/nmeth.2448.html</ref>
+'''Niewenhuizen, et al (2013). Measuring image resolution in optical nanoscopy. Nature Methods, 10, 557''' <ref>{{Cite journal| issn = 1548-7091| volume = 10| issue = 6| pages = 557–562| last1 = Nieuwenhuizen| first1 = Robert P J| last2 = Lidke| first2 = Keith A| last3 = Bates| first3 = Mark| last4 = Puig| first4 = Daniela Leyton| last5 = Grunwald| first5 = David| last6 = Stallinga| first6 = Sjoerd| last7 = Rieger| first7 = Bernd| title = Measuring image resolution in optical nanoscopy| journal = Nat Meth| date = 2013-06}}</ref>
 
 == Details ==
 === Threshold Methods ===
