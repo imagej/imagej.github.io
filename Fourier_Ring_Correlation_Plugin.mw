@@ -18,7 +18,19 @@ which is itself adapted from the FIRE (Fourier Image REsolution) plugin produced
 
 == Details ==
 === Threshold Methods ===
-=== Image Calibration === 
+
+There are three threshold methods currently implemented
+# '''Fixed 1/7''': Finds the FIRE number when the FRC curve reaches a correlation value of 1/7.
+
+# '''Half-bit''': Threshold method where the intersection of the threshold curve with the FRC defines the point where there is 1/2 bit of information per pixel. 
+
+# '''Three sigma''': The intersection of the FRC curve with this threshold defines the value where the FRC represents primarily high frequency noise (assuming some distribution model).
+
+Please see the publication '''Fourier shell correlation threshold criteria'''<ref>Marin van Heel, Michael Schatz
+Fourier shell correlation threshold criteria, Journal of Structural Biology, Volume 151, Issue 3, September 2005, Pages 250-262, ISSN 1047-8477, http://dx.doi.org/10.1016/j.jsb.2005.05.009.
+Keywords: Fourier shell correlation; Resolution criteria; Single particles; cryo-EM; Information</ref>
+=== Image Calibration ===
+We recommend you use a calibrated image so that your results are in calibrated units (microns, millimeters, etc..) directly. The plugin will always return both the non calibrated values and the calibrated ones as separate columns.
 
 == Installation == 
 This plugin is available from the [[List of update sites|BIOP Update Site]]
