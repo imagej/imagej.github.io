@@ -87,7 +87,7 @@ FRC frc = new FRC();
 // Get FIRE Number, assumes you have access to the two image processors.
 double fire = frc.calculateFireNumber(ip1, ip2, FRC.FIXED_1_OVER_7);
 </source>
-There are other methods to get the FRC curve, see the [https:// Java file], which was very well documented. 
+There are other methods to get the FRC curve, see the [https://c4science.ch/diffusion/988/browse/master/src/main/java/ch/epfl/biop/frc/FRC.java?color=1 FRC.java file], which was very well documented. 
 
 == Notes ==
 
