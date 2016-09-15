@@ -6,7 +6,7 @@
 | filename               = 
 | source                 = The source code of plugin is in Olympus_Viewer.jar. The source code of native library is not provided.
 | released               = 2015/12/09: First version Ver1.1.1
-| latest version         = Ver1.1.1
+| latest version         = 2016/09/15 Ver2.1.1
 | status                 = 
 | category               = [[:Category:Import-Export]]
 | website                = 
@@ -15,6 +15,8 @@
 This plugin can load Olympus vsi/oir/omp2info file formats and show some meta data.
 == Installation ==
 Please see also [http://www.olympus-lifescience.com/OlympusImageJPlugin/HowToInstallOlympusViewerPlugin installation manual].
+
+Windows
 # Download OlympusViewer-win.zip [http://www.olympus-lifescience.com/OlympusImageJPlugin/OlympusViewer_Win here]
 # Extract the zip file.
 # Execute OlympusViewer-win.exe. This file is in self-extracting format.
@@ -22,9 +24,20 @@ Please see also [http://www.olympus-lifescience.com/OlympusImageJPlugin/HowToIns
 # Unzip the OlympusViewer-package.zip
 # Install vs2008 runtime. The runtime is in OlympusViewer-package/WinRuntime. If you use 32bit OS, install vcredist_x86.exe. If you use 64bit OS, install vcredist_x64.exe
 # Copy "OlympusViewer" folder in "OlympusViewer-package" folder to the plugins folder of your ImageJ directory. If ImageJ plugin folder already has OlympusViewer folder, delete the folder before copying.
+Mac
+# Download OlympusViewer-mac.dmg [http://www.olympus-lifescience.com/OlympusImageJPlugin/OlympusViewer_Mac here]
+# Double click the dmg file.
+# If you agree to our end user license agreement, extract it.
+# Copy "OlympusViewer-Ver2.1.1" folder to the plugins folder of your ImageJ directory. If ImageJ plugin folder already has OlympusViewer folder, delete the folder before copying.
 == How to use ==
+File Open
 # Select a menu item ( Plugins -> OlympusViewer -> Viewer )
 # Select a file.
+Show Meta Data
+# Select a menu item ( Plugins -&gt; OlympusViewer -&gt; ShowInfo )
+Drag & Drop (ver2.1.1-)
+# Select a menu item ( Plugins -&gt; OlympusViewer -&gt; DragDrop )
+# Drop a image file.
 == See Also ==
 This plugin uses jai-imageio.
 [[Category:Plugins]]
