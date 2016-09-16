@@ -69,7 +69,7 @@ Making use of the GenericDialog class, the plugin is macro-recordable. An exampl
 run("FRC Calculation...", "image_1=[first_image.tif] image_2=[second_image.tif] resolution=[Fixed 1/7] display");
 
 //Example with batch
-run("FRC Calculation (Batch)", "first=[D:\\FRC Tests\\A] second=[D:\\FRC Tests\\B] resolution=[Fixed 1/7] save");
+run("FRC Calculation (Batch)...", "first=[D:\\FRC Tests\\A] second=[D:\\FRC Tests\\B] resolution=[Fixed 1/7] save");
 </source>
 
 == Running from a Plugin ==
