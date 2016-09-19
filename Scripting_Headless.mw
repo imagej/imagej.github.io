@@ -9,7 +9,7 @@ To start ImageJ in the ImageJ2 headless mode, run (with the launcher appropriate
 By default, when ImageJ runs headlessly it acts like a one-off program: it will only perform the requested operations, then quit. To run a script headlessly, use:
 
 <source>
-./ImageJ-linux64 --ij2 --headless --run path/to/script ["script parameters"]
+./ImageJ-linux64 --ij2 --headless --run path/to/script ['script parameters']
 </source>
 
 == Basic run ==
@@ -25,7 +25,7 @@ print('Hello ' + name);
 we could run this script with the command:
 
 <source>
-./ImageJ-linux64 --ij2 --headless --run hello.py "Mr Kraken"
+./ImageJ-linux64 --ij2 --headless --run hello.py 'name="Mr Kraken"'
 </source>
 
 == Multiple parameters ==
@@ -39,28 +39,8 @@ If your script has more than one parameter:
 print('Hello ' + name1 + " and " + name2);
 </source>
 
-then these are filled, '''in order of declaration''', by using a comma-separated list of parameters e.g., :
+then these are filled by using a comma-separated list of parameter pairs—e.g.:
 
 <source>
-./ImageJ-linux64 --ij2 --headless --run hello.py "Mr,Mrs Kraken"
+./ImageJ-linux64 --ij2 --headless --run hello.py 'name1="Mr",name2="Mrs Kraken"'
 </source>
-
-== Mapping parameters ==
-
-Because parameters are filled in order of declaration, all the "user" parameters should be declared first (that is, the actual inputs you want to change from run to run). Sometimes you may need to run a script where the "user" parameters are declared ''after'' "system" parameters:
-
-<source lang="python">
-# @DatasetIOService data
-# @String imagePath
-
-img = data.open(imagePath)
-print(img);
-</source>
-
-In this case, we have to assign values to each parameter with a "name=value" pair notation:
-
-<source>
-./ImageJ-linux64 --ij2 --headless --run test.py "imagePath=/home/hinerm/Fiji.app/samples/blobs.gif"
-</source>
-
-Multiple such parameters can still be combined when separated with commas.
