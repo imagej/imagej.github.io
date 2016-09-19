@@ -19,7 +19,7 @@ Let's say we have the following Python script saved in a file, <code>hello.py</c
 <source lang="python">
 # @String name
 
-print('Hello ' + name);
+print('Hello ' + name)
 </source>
 
 we could run this script with the command:
@@ -36,7 +36,7 @@ If your script has more than one parameter:
 # @String name1
 # @String name2
 
-print('Hello ' + name1 + " and " + name2);
+print('Hello ' + name1 + " and " + name2)
 </source>
 
 then these are filled by using a comma-separated list of parameter pairs—e.g.:
