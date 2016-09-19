@@ -9,7 +9,7 @@ To start ImageJ in the ImageJ2 headless mode, run (with the launcher appropriate
 By default, when ImageJ runs headlessly it acts like a one-off program: it will only perform the requested operations, then quit. To run a script headlessly, use:
 
 <source>
-./ImageJ-linux64 --ij2 --headless --run path/to/script ['script parameters']
+./ImageJ-linux64 --ij2 --headless --run path/to/script [key1=value1,key2=value2,...]
 </source>
 
 == Basic run ==
