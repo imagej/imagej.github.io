@@ -1,14 +1,14 @@
 {{Infobox
 | software               = ImageJ
 | name                   = Helmholtz Analysis
-| maintainer             = [mailto:rpd_at_optinav_dot_com Bob Dougherty]
+| maintainer             = 
 | author                 = Bob Dougherty
 | source                 = {{GitHub|org=fiji|repo=Helmholtz_Analysis|source=Helmholtz_Analysis.java}}
 | released               = 21/10/2011
 | latest version         = 21/10/2011
 | status                 = 
 | category               = [[:Category:Plugins]]
-| website                = http://www.optinav.com/Helmholtz_Analysis.htm
+| website                = http://www.optinav.info/Helmholtz_Analysis.htm
 }}
 == Helmholtz Analysis ==
 
