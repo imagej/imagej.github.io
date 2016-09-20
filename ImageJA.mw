@@ -2,7 +2,7 @@
 | software               = ImageJA
 | name                   = ImageJA
 | author                 = {{Person|Rasband}}, Johannes Schindelin, Albert Cardona, et al
-| maintainer            = [http://jenkins.imagej.net/job/Synchronize-and-deploy-IJ1/ ImageJ Jenkins]
+| maintainer            = [http://jenkins.imagej.net/job/ImageJ1-sync-with-notes/ ImageJ Jenkins]
 | filename               = Newer versions [http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22net.imagej%22%20AND%20a%3A%22ij%22 on Maven Central]<br>Older versions [http://maven.imagej.net/content/repositories/releases/net/imagej/ij/ in ImageJ Maven repository] 
 | source                 = {{GitHub|org=imagej|repo=ImageJA|label=Git repository}}
 | released               = 17/03/2007
