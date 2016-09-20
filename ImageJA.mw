@@ -8,7 +8,6 @@
 | released               = 17/03/2007
 | latest version         = auto-updated
 | status                 = auto-maintained
-| website                = [http://sourceforge.net/projects/imageja SourceForge site]
 }}ImageJA is a project that provides a clean [[Git]] history of the [[ImageJ 1.x]] project, with a proper 'pom.xml' file so that it can be used with [[Maven]] without hassles.
 
 == Why ImageJA? ==
