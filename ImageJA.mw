@@ -11,9 +11,35 @@
 | website                = [http://sourceforge.net/projects/imageja SourceForge site]
 }}ImageJA is a project that provides a clean [[Git]] history of the [[ImageJ 1.x]] project, with a proper 'pom.xml' file so that it can be used with [[Maven]] without hassles.
 
+== Why ImageJA? ==
+
+The [[ImageJ1]] project, developed by {{Person | Rasband}}, lives in the {{GitHub | org=imagej | repo=imagej1 | label=imagej/imagej1 repository}} on [[GitHub]]. The <code>imagej1</code> repository uses the Ant build system. Changes are pushed (at most) once per day, with a corresponding datestamp. This scheme has some drawbacks:
+
+* ImageJ1 artifacts cannot be published easily to public repositories for use as a dependency downstream.
+* The <code>imagej1</code> repository's source code does not precisely correspond to ImageJ 1.x's actual releases. Hence, that repository does not have any [[Git]] release tags.
+* Developing ImageJ1 in an [[IDE]] would be more convenient if it were structured as a Maven project.
+
+The ImageJA project is an adjusted version of ImageJ1 which addresses the above limitations.
+
+== How it works ==
+
+The ImageJ [[Jenkins]] polls the [http://imagej.net/notes.html ImageJ1 release notes page] for updates. When something has changed, the [http://jenkins.imagej.net/view/ImageJ1/job/ImageJ1-sync-with-notes/ ImageJ1-sync-with-notes] Jenkins job performs the following actions:
+
+# Downloads the latest ImageJ1 source archive from the ImageJ 1.x website.
+# Extracts the archive.
+# Restructures the source code into a Maven project.
+** Sources are placed in <code>src/main/java</code>.
+** A <code>pom.xml</code> is added.
+# Commits the result to the <code>master</code> branch of the {{GitHub | org=imagej | repo=ImageJA | imagej/ImageJA repository}} on [[GitHub]].
+# Triggers followup Jenkins jobs:
+** [http://jenkins.imagej.net/job/ImageJ1-deploy/ ImageJ1-deploy], which builds and deploys the ImageJA project to the Maven Central repository (via OSS Sonatype).
+** [http://jenkins.imagej.net/job/ImageJ1-javadoc/ ImageJ1-javadoc], which updates the {{Javadoc | project=ImageJ1}} javadoc on <code>javadoc.imagej.net</code>.
+** [http://jenkins.imagej.net/job/ImageJ1-unit-tests/ ImageJ1-unit-tests], which runs the [[Unit tests for ImageJ1]], which flag any regressions in ImageJ1 behavior.
+** [http://jenkins.imagej.net/job/Upload-IJ1-Into-ImageJ/ Upload-IJ1-Into-ImageJ], which uploads the new <code>ij</code> JAR onto the core ImageJ update site.
+
 == Historical note ==
 
-ImageJA was [https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;cd841de0.0510 launched in 2005] as a ''fork'' of [[ImageJ1]]; i.e., it was synchronized closely with ImageJ with a few changes on top:
+ImageJA was originally [https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;cd841de0.0510 launched in 2005] as a ''fork'' of [[ImageJ1]]; i.e., it was synchronized closely with ImageJ with a few changes on top:
 
 * When run as an applet, ImageJA is embedded.
 * The internal structure of ImageJA's recorder allows command listeners to get much more fine-grained information.
@@ -28,12 +54,6 @@ ImageJA was [https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;cd841de0.0510 launche
 ** A little bug fix in StackWindow: if you have a 2D time lapse, ImageJ will still use the zSelector (rather than the tSelector).
 ** ImageJA can handle https:// URLs, too.
 
-== Where is the applet used? ==
-
-To the knowledge of the author of the advanced applet parts of ImageJA, the applet is used at least here:
-
-* [http://embl.de/ EMBL], for an internal web-based interface to a high-throughput system
-* [http://mpi-cbg.de/ MPI-CBG], to display ''C.elegans'' databases
-* In at least one [http://www.science-approach.com/ commercial e-learning website].
+However, these days, needed changes to ImageJ 1.x are instead patched at runtime; see the [[Compatibility]] page for details.
 
 [[Category:Software]]
