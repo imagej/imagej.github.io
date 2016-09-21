@@ -118,7 +118,7 @@ ImagePlus[] imps = BF.openImagePlus(options);
 
 {{Warning | The daily builds are '''not yet released''' and should be considered '''beta''' in quality. There may be new bugs. In particular, you should '''avoid exporting data using the Bio-Formats Exporter''' because the files it writes might not be readable later by release versions of Bio-Formats or other OME-compliant tools.}}
 
-Fiji ships '''5.1.x''' release versions of Bio-Formats. However, given the long time frame between releases, you can update to the latest code by toggling the '''Bio-Formats''' update site, which includes the latest bug-fixes.
+Fiji ships release versions of Bio-Formats. However, given the long time frame between releases, you can update to the latest code by toggling the '''Bio-Formats''' update site, which includes the latest bug-fixes.
 
 When reporting a bug, the developers may ask you to test with the '''Bio-Formats''' update site enabled.
 
