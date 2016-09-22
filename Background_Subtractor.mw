@@ -4,7 +4,7 @@
 | author                 = [http://mosaic.mpi-cbg.de/ MOSAIC Group], [http://www.mpg-sysbio.de Center for Systems Biology Dresden (CSBD)], [http://www.mpi-cbg.de/research/research-groups/ivo-sbalzarini.html Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG)], Dresden, Germany.
 | maintainer     = Pietro Incardona <incardon@mpi-cbg.de>
 | filename               = [http://mosaic.mpi-cbg.de/Downloads/Mosaic_ToolSuite.jar Mosaic_ToolSuite.jar] (70,897 Bytes)
-| source                 = [https://git.mpi-cbg.de/gitweb/?p=ImageJ.git;a=summary Anonymous git]
+| source                 = [https://git.mpi-cbg.de/mosaic/MosaicSuite/blob/master/src/main/java/mosaic/plugins/BackgroundSubtractor2_.java On mpi-cbg git server]
 | released               = 2008
 | latest version         = 2014
 | status                 = active
