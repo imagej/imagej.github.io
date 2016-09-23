@@ -10,6 +10,8 @@
 | category               = [[:Category:Particle analysis|Particle analysis]]
 }}This plugin will open a new cell counter GUI. On the left are the counter types and counters, on the right the action buttons.
 
+{{Notice|Please consider using the multi-point selection tool in ImageJ, as this tool now replicates most of the functionality of Cell Counter.}}
+
 == Bugs ==
 May not work correctly after using '''Load Markers''' to load more than 8 counter types from an XML file. Opens off-screen on 1024 pixel wide and smaller monitors.
 
