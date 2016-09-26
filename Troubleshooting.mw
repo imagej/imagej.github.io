@@ -125,7 +125,11 @@ If you are technically savvy, check out the [[Debugging]] page for additional—
 
 == The image I loaded is displayed all black! But it is not black! ==
 
-This problem usually arises when 12-bit or 14-bit images are loaded into ImageJ without autoscaling. In that case, they are treated as if they were 16-bit images, and therefore the dynamic range is all wrong. You can fix this by clicking on {{bc | Image | Adjust | Brightness/Contrast...}} and hitting the ''Auto'' button.
+This problem can arises when 12-bit, 14-bit or 16-bit images are loaded into ImageJ without autoscaling. In that case, the display is scaled to the full 16-bit range (0 - 65535 intensity values).
+
+You can fix this by clicking on {{bc | Image | Adjust | Brightness/Contrast...}} and hitting the ''Auto'' button.
+
+You can verify whether the actual data is there by moving the mouse over the image, and looking at the pixel probe output in the [[Getting Started#The_status_bar|status bar area of the main ImageJ window]].
 
 == The image colors do not match what I see in other programs! ImageJ is wrong! ==
 
