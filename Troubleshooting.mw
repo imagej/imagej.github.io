@@ -125,7 +125,7 @@ If you are technically savvy, check out the [[Debugging]] page for additional—
 
 == The image I loaded is displayed all black! But it is not black! ==
 
-This problem can arises when 12-bit, 14-bit or 16-bit images are loaded into ImageJ without autoscaling. In that case, the display is scaled to the full 16-bit range (0 - 65535 intensity values).
+This problem can arise when 12-bit, 14-bit or 16-bit images are loaded into ImageJ without autoscaling. In that case, the display is scaled to the full 16-bit range (0 - 65535 intensity values), even though the actual data values typically span a much smaller range. For example, on a 12-bit camera, the largest possible intensity value is 4095—but with 0 mapped to black and 65535 mapped to white, 4095 ends up (linearly) mapped to a very very dark gray, nearly invisible to the human eye.
 
 You can fix this by clicking on {{bc | Image | Adjust | Brightness/Contrast...}} and hitting the ''Auto'' button.
 
