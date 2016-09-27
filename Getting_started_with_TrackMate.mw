@@ -65,8 +65,8 @@ You are now offered to choose a detection algorithm ("detector") amongst the cur
 
 The choice is actually quite limited. Apart from the '''Manual annotation''', you will find 3 detectors, but they are all based on [[wikipedia:Blob detection#The_Laplacian_of_Gaussian|LoG (Laplacian of Gaussian) segmentation]]. They are described in detail elsewhere, but here is what you need to know. 
 
-* The '''Log detector''' applies a plain LoG segmentation on the image. All calculations are made in the Fourier space, which makes it optimal for intermediate spot sizes, between ≈5 and ≈20 pixels in diameter.
-* The '''Dog detector''' uses the [[wikipedia:Blob detection#The_difference_of_Gaussians_approach|difference of Gaussians]] approach to approximate a LoG filter by the difference of 2 Gaussians. Calculations are made in the direct space, and it is optimal for small spot sizes, below ≈5 pixels.
+* The '''LoG detector''' applies a plain LoG segmentation on the image. All calculations are made in the Fourier space, which makes it optimal for intermediate spot sizes, between ≈5 and ≈20 pixels in diameter.
+* The '''DoG detector''' uses the [[wikipedia:Blob detection#The_difference_of_Gaussians_approach|difference of Gaussians]] approach to approximate a LoG filter by the difference of 2 Gaussians. Calculations are made in the direct space, and it is optimal for small spot sizes, below ≈5 pixels.
 * The '''Downsample LoG detector''' uses the LoG detector, but downsizes the image by an integer factor before filtering. This makes it optimal for large spot sizes, above ≈20 pixels in diameter, at the cost of localization precision.
 
 In our case, let us just use the '''Dog detector'''.
