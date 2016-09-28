@@ -5,7 +5,7 @@
 | maintainer             = [https://github.com/dlegland David Legland], {{Person|Iarganda}}
 | source                 = {{GitHub|org=ijpb|repo=MorphoLibJ}}
 | released               = July 3<sup>rd</sup>, 2014
-| latest version         = August 25<sup>th</sup>, 2016 ([[MorphoLibJ]] v1.3.0)
+| latest version         = September 28<sup>th</sup>, 2016 ([[MorphoLibJ]] v1.3.1)
 | status                 = stable, active
 | category               = [[:Category:Analysis|Analysis]], [[:Category:Filtering|Filtering]], [[:Category:Segmentation|Segmentation]], [[:Category:Mathematical_morphology|Mathematical morphology]]
 }}{{TOC}}
