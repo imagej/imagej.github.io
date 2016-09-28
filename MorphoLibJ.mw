@@ -654,7 +654,7 @@ At the end of the script a dialog is shown to smooth the surfaces at will. Each 
 [[Image:MorphoLibJ-visualize-labels-in-3d-viewer.png|thumb|center|750px|From left to right: input label image, script output, smoothed label surfaces and example of individually translated surfaces in the 3D viewer.]]
 
 == Documentation ==
-Each [https://github.com/ijpb/MorphoLibJ/releases released version of MorphoLibJ] comes with a [https://github.com/ijpb/MorphoLibJ/releases/download/v1.3.0/MorphoLibJ-manual.pdf User Manual in PDF format].
+Each [https://github.com/ijpb/MorphoLibJ/releases released version of MorphoLibJ] comes with a [https://github.com/ijpb/MorphoLibJ/releases/download/v1.3.1/MorphoLibJ-manual-v1.3.1.pdf User Manual in PDF format].
 
 The main source code directory is on GitHub under [http://github.com/ijpb/MorphoLibJ/tree/master/src/main/java/inra/ijpb src/main/java/inra/ijpb].
 
