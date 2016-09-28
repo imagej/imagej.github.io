@@ -293,7 +293,54 @@ if __name__ == '__main__':
 
 == Self written Jython modules for ImageJ ==
 
-coming soon...
+In Jython you can write all commands line by line in a single file and execute it. To create a neat program, [https://docs.python.org/2/tutorial/controlflow.html#defining-functions functions] and [https://docs.python.org/2/tutorial/classes.html classes] can be used to structure code. To prevent using copy&past for regularly used functions and classes, [https://docs.python.org/2/tutorial/modules.html modules] are the way to choose. Modules are files that contain functions and classes to import into other files.
+
+To load modules, one has to save them to a directory where Jython will find them. Two lines of code will reveal these directories to you:
+
+<source lang='python'>
+from sys import path
+print(path)
+</source>
+
+When running this code the result is an output like
+
+<source lang='python'>
+['/home/michael/Software/ImageJ.app/jars/Lib', '/home/michael/Software/ImageJ.app/jars/jython-shaded-2.5.3.jar/Lib', '__classpath__', '__pyclasspath__/']
+</source>
+
+This tells us that the folder <code>jars/Lib/</code> inside our ImageJ/Fiji directory is the right place to save modules. As <code>Lib/</code> does not exist by default, we have to create it.
+
+When a module is imported for the first time, Jython will compile it to Java code. If there is a module named <code>myModule.py</code>, Jython will create a file called <code>myModule$py.class</code>. The next time the module is imported, Jython will use the class file instead of the py file. When modifying the module, it necessary to restart ImageJ/Fiji to use the modified one. A work around is the following code (found at [http://stackoverflow.com/questions/10531920/jython-import-or-reload-dynamically stackoverflow]) that will force Jython to recompile all modules:
+
+<source lang='python'>
+# Use this to recompile Jython modules to class files.
+from sys import modules
+modules.clear()
+# Imports of Jython modules are placed below:
+import myModule
+</source>
+
+=== Adding a custom directory ===
+
+If you don't want to use <code>jars/Lib/</code> to save your modules, you have to extend the array <code>sys.path</code>:
+
+<source lang='python'>
+from sys import path
+from java.lang.System import getProperty
+ 
+# extend the search path by $FIJI_ROOT/bin/
+# 'fiji.dir' works for plain ImageJ, too.
+path.append(getProperty('fiji.dir') + '/bin')
+# an alternative can be the users home directory
+# path.append(getProperty('user.home') + '/JythonModules')
+ 
+# Now you can import $FIJI_ROOT/bin/myModule.py
+import myModule
+</source>
+
+The function <code>getProperty()</code> accepts many more strings. A list can be found at [https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html The Java Tutorials].
+
+== Self written Jython packages for ImageJ ==
 
 == References ==
 <references />
