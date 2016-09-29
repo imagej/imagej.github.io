@@ -345,14 +345,14 @@ The function <code>getProperty()</code> accepts many more strings. A list can be
 On the way to perfectly organize Jython code, [https://docs.python.org/2/tutorial/modules.html#packages packages] are the next step. In Jython, folders that contain modules are made packages by adding the file <code>__init__.py</code>. This file can be empty. An folder structure can look like this:
 
 <source>
-Imagej.app/jars/lib
+Imagej.app/jars/lib/
 -- myModule.py
--- myPackage
+-- myPackage/
    -- __init__.py
    -- mathTools.py
    -- customFilters.py
    -- fftTools.py
--- myPackage2
+-- myPackage2/
    -- __init__.py
    -- mathTools.py
    -- stackProcessing.py
