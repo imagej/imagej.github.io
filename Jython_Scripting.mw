@@ -342,5 +342,58 @@ The function <code>getProperty()</code> accepts many more strings. A list can be
 
 == Self written Jython packages for ImageJ ==
 
+On the way to perfectly organize Jython code, [https://docs.python.org/2/tutorial/modules.html#packages packages] are the next step. In Jython, folders that contain modules are made packages by adding the file <code>__init__.py</code>. This file can be empty. An folder structure can look like this:
+
+<source>
+Imagej.app/jars/lib
+-- myModule.py
+-- myPackage
+   -- __init__.py
+   -- mathTools.py
+   -- customFilters.py
+   -- fftTools.py
+-- myPackage2
+   -- __init__.py
+   -- mathTools.py
+   -- stackProcessing.py
+</source>
+
+There are two packages and one module. The first package contains three modules and the second package contains two modules. We can import the modules on different ways:
+
+<source lang='python'>
+# Import the single module using the default name:
+import myModule
+
+# Import mathTools from the first package
+import myPackage.mathTools
+# Use a function from the imported module
+myPackage.mathTools.aFunction()
+
+# Import mathTools from the second package
+from myPackage2 import mathTools
+# Use a function from the imported module without prefixing the package
+mathTools.aFunction()
+
+# Import customFilters from the first package and rename it
+from myPackage import customFilters as filters
+# Use a function from customFilters.py
+filters.aFunction()
+
+# Importing all module from a package
+from myPackage2 import *
+# The next line will fail
+stackProcessing.aFunction()
+</source>
+
+The reason for the last import to fail is the empty <code>__init__.py</code>. We have to define which modules of the package are imported when using <code>import *</code>. This is done by setting the variable <code>__all__</code> at <code>__init__.py</code>. For <code>myPackage2</code> this line of code is needed:
+
+<source lang='python'>
+__all__ = ["mathTools", "stackProcessing"]
+</source>
+
+Besides setting this variable, the file can contain normal Jython code that is executed on import.
+
+== Using maven to build packages ==
+
 == References ==
 <references />
