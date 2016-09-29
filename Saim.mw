@@ -6,8 +6,7 @@
 | filename               = 
 | source                 = {{GitHub|org=nicost|repo=saimAnalysis|}}
 | released               = 2015/11/20
-| latest version         = 2015/11/20
-| status                 = 
+| latest version         = 2016/09/28
 | category               = [[:Category:Techniques]]
 }}
 
@@ -33,6 +32,11 @@ Saim Fit will fit each pixel in the input stack and output a stack with 4 images
 
 [[File:SaimFit.png]]  [[File:SaimFitOutput.jpg]]
 
+== Usage in a macro ==
+To call the Saim analysis code in a macro, use the "Fit_Macro" plugin.  Macros can look like:
+
+run("Fit_Macro", "wavelength=488 sample=1.32 oxide=1900 first=-42 step=1 a=3 heights=28.0 ");
+
 == Example Data ==
 
 These datasets were obtained by imaging a phospho-lipid bilayer stained with DiO (488), DiI(561), and DiD(640nm) (data acquired by Kate Carbone).  The parameters shown below were used for analysis.
@@ -50,6 +54,7 @@ Some of the single pixels fits we obtained look as follows:
 [[File:Example single pixel fits.png|799px]]
 
 == History ==
+* 1.0.8 (2016-09-28): Added Fit_Macro, a blocking version of the Fit plugin that can be called from a macro
 * 1.0.7 (2016-04-22): Fixed bug that caused most pixels not to be fit
 * 1.0.6 (2016-04-21): Added capability to export data and predictions from Inspect module. 
 * 1.0.5 (2016-04-05): Most settings are now shared between all 3 plugins and are remembered.  Multiple start heights can now be entered in the fit module and the resulting fit with the lowest error will be reported.
