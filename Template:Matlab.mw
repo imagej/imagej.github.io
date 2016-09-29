@@ -1,1 +1,5 @@
-[https://www.mathworks.com/help/{{{1}}}/{{{2}}}.html <code>{{{2}}}</code>]<nowiki />
+<includeonly>[https://www.mathworks.com/help/{{{path}}}/{{{function}}}.html <code>{{{function}}}</code>]<nowiki /></includeonly><noinclude>
+==Examples==
+
+{{Matlab|path=ref|function=imread}}
+</noinclude>
