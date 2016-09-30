@@ -104,7 +104,7 @@ The default number of classes of the plugin is two, but through this button we c
 [[Image:AWS-Settings.png|thumb|300px|Settings dialog of the Trainable Weka Segmentation Plugin]]
 The rest of tunable parameters of the plugin can be changed on the Settings dialog, which is displayed when clicking on this button.
 
-===== Training features =====
+===== Training features (2D) =====
 Here we can select and deselect the training features, which are the key of the learning procedure. The plugin creates a stack of images ---one image for each feature. For instance, if only [[wikipedia:Gaussian blur|Gaussian blur]] is selected as a feature, the classifier will be trained on the original image and some blurred versions to it with different <math>\sigma</math> parameters for the Gaussian. <math>\sigma</math> is commonly equal to <math>\sigma_\mathrm{min}, 2\sigma_\mathrm{min}, 4\sigma_\mathrm{min},..., 2^{n-1}\sigma_\mathrm{min}</math>, where <math>2^{n-1}\sigma_\mathrm{min}\le \sigma_\mathrm{max}</math>. By default <math>\sigma_\mathrm{min}=1, \sigma_\mathrm{max}=16</math> and therefore <math>n=5</math>
 
 If the input image is grayscale, the features will be calculated using double precision (32-bit images). In the case of RGB input images, the features will be RGB as well.
