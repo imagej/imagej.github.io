@@ -75,7 +75,7 @@ These curves allow to visualize the performance of the classifier based on the d
 
 ==== Apply classifier ====
 
-By clicking on this button we can apply the current classifier to any 2D image or stack of images we have in our file system. Two dialogs will pop up to, first, ask the user for the input image or stack and, second, ask if the result should be displayed '''as a probability map or a segmentation''' (final classes). Then the plugin will perform the image segmentation based on the current classifier and ---consequently--- selected features. This may take a while depending on the number and size of the input images and the number of cores of the machine. After finishing, the input image (or stack) and its corresponding segmentation will be displayed.
+By clicking on this button we can apply the current classifier to any image or stack of images we have in our file system. Two dialogs will pop up to, first, ask the user for the input image or stack and, second, ask if the result should be displayed '''as a probability map or a segmentation''' (final classes). Then the plugin will perform the image segmentation based on the current classifier and ---consequently--- selected features. This may take a while depending on the number and size of the input images and the number of cores of the machine. After finishing, the input image (or stack) and its corresponding segmentation will be displayed.
 
 To convert a '''probability map''' into a segmentation, you can use the following Beanshell script from github:
 * [https://gist.github.com/iarganda/c7fc0a88b8d2737c9d3d Convert-TWS-probabilities-to-segmentation.bsh]
