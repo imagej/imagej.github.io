@@ -101,7 +101,7 @@ With this button we can save the current trace information into a data file that
 The default number of classes of the plugin is two, but through this button we can increase up to an arbitrary number. The name of the new classes can be changed on the [[Trainable_Weka_Segmentation#Settings|Settings dialog]].
 
 ==== Settings ====
-[[Image:AWS-Settings.png|thumb|300px|Settings dialog of the Trainable Weka Segmentation Plugin]]
+[[Image:TWS-settings-dialog-2D.png|thumb|300px|Settings dialog of the Trainable Weka Segmentation plugin (2D features)]]
 The rest of tunable parameters of the plugin can be changed on the Settings dialog, which is displayed when clicking on this button.
 
 ===== Training features (2D) =====
