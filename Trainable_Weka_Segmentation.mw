@@ -65,7 +65,7 @@ Based on the current classifier, the probability that each pixel belongs to each
 
 ==== Plot result ====
 
-This button calls the [http://www.cs.waikato.ac.nz/ml/weka/ Weka] code to generate the model performance chart, i.e. the [[wikipedia:Receiver operating characteristic|ROC]], [[wikipedia:Precision and recall|precision/recall]], etc. curves based on the training data. 
+This button calls the [http://www.cs.waikato.ac.nz/ml/weka/ Weka] core to generate the model performance chart, i.e. the [[wikipedia:Receiver operating characteristic|ROC]], [[wikipedia:Precision and recall|precision/recall]], etc. curves based on the training data. 
 
 These curves allow to visualize the performance of the classifier based on the different thresholds that can be applied to the probability maps.
 
