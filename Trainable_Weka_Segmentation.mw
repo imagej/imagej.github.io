@@ -35,7 +35,7 @@ The [[Trainable Weka Segmentation]] is a Fiji plugin that combines a collection 
 The main goal of this plugin is to work as a '''bridge between the Machine Learning and the Image Processing''' fields. It provides the framework to use and, more important, '''compare''' any available classifier to perform image segmentation based on pixel classification.
 
 == The Graphical User Interface ==
-[[Image:Trainable-Weka-Segmentation-GUI.png|thumb|400px|Example of the first look of the plugin window when using it on a TEM image]] [[Trainable Weka Segmentation]] runs on any 2D image or 2D stack of images (of any type).
+[[Image:Trainable-Weka-Segmentation-GUI.png|thumb|400px|Example of the first look of the plugin window when using it on a TEM image]] [[Trainable Weka Segmentation]] runs on any 2D or 3D image (grayscale or color). To use 2D features, you need to select the menu command {{bc | Plugins | Segmentation | Trainable Weka Segmentation}}. For 3D features, call the plugin under {{bc | Plugins | Segmentation | Trainable Weka Segmentation 3D}}. Both commands will use the same GUI but offer different feature options in their settings.
 
 
 By default, the plugin starts with two classes, i.e. it will produce '''binary pixel classification'''. The user can add traces to both classes using the whole set of [http://imagej.net/docs/guide/userguide-19b.html#toc-Section-19 tools for ROI] (region of interest) drawing available in Fiji. That includes rectangular, round rectangular, oval, elliptical, brush polygon and freehand selections. By default, the freehand selection tool (of 1 pixel width) is automatically selected. 
