@@ -393,7 +393,32 @@ __all__ = ["mathTools", "stackProcessing"]
 
 Besides setting this variable, the file can contain normal Jython code that is executed on import.
 
-== Using maven to build packages ==
+== Bundle packages in a JAR file ==
+
+An interesting feature of Jython is to search for packages and modules inside of [https://en.wikipedia.org/wiki/JAR_(file_format) JAR files]. The folder structure from the last section can be modified by packing everything into a single <code>myPackages.jar</code>. The name of the JAR file doesn't matter. All imports work the same as explained before.
+
+<source>
+Imagej.app/jars/lib/
+-- myPackages.jar
+   -- myModule.py
+   -- myPackage/
+      -- __init__.py
+      -- mathTools.py
+      -- customFilters.py
+      -- fftTools.py
+   -- myPackage2/
+      -- __init__.py
+      -- mathTools.py
+      -- stackProcessing.py
+</source>
+
+The advantage of this approach is that you can share your packages easily. For example you can upload the JAR file to an [[Update_Sites|update site]].
+
+=== Using maven to build packages ===
+
+Using maven you can automate the packaging of Jython code into JAR files. This approach is only recommended if you already use maven, as installing and learning how to use maven is not worth the time saving of automated packaging.
+
+At GitHub you will find an example project that you can use as a template. Just run <code>mvn jar:jar</code> and maven will generate a JAR file at the <code>target</code> directory.
 
 == References ==
 <references />
