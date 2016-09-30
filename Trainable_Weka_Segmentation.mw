@@ -6,7 +6,7 @@
 | filename               = {{Maven | g=sc.fiji | a=Trainable_Segmentation}}
 | source                 = {{GitHub|org=fiji|repo=Trainable_Segmentation}}
 | released               = May 19<sup>th</sup>, 2011
-| latest version         = 3.1.2, August 3<sup>rd</sup>, 2016
+| latest version         = 3.2.0, September 28<sup>th</sup>, 2016
 | status                 = stable, active
 | category               = [[:Category:Segmentation|Segmentation]], [[:Category:Machine Learning|Machine Learning]]
 }}{{TOC}}
