@@ -86,7 +86,7 @@ Here we can load any previously saved classifier. The plugin will check and adju
 
 ==== Save classifier ====
 
-It saves the current classifier into a file, under the standard [http://www.cs.waikato.ac.nz/ml/weka/ Weka] format (.model). This allows us to store classifiers and apply them later on different sessions (option not available in the simple [[Trainable Segmentation]] plugin).
+It saves the current classifier into a file, under the standard [http://www.cs.waikato.ac.nz/ml/weka/ Weka] format (.model). This allows us to store classifiers and apply them later on different sessions.
 
 ==== Load data ====
 
