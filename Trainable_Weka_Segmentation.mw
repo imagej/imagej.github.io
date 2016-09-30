@@ -152,10 +152,10 @@ The detailed implementation of these 2D filters can be found in the [https://git
 
 ===== Feature options =====
 
-* '''Membrane thickness''': expected value of the membrane thickness, 1 pixel by default. The more accurate, the more precise the filter will be.
-* '''Membrane patch size''': this represents the size <math>n \times n</math> of the field of view for the membrane projection filters.
-* '''Minimum sigma''': minimum radius of the filters used to create the features. By default 1 pixel.
-* '''Maximum sigma''': maximum radius of the filters used to create the features. By default 16 pixels.
+* '''Membrane thickness''': expected value of the membrane thickness, 1 pixel by default. The more accurate, the more precise the filter will be. Only available for 2D features.
+* '''Membrane patch size''': this represents the size <math>n \times n</math> of the field of view for the membrane projection filters. Only available for 2D features.
+* '''Minimum sigma''': minimum radius of the isotropic filters used to create the features. By default 1 pixel.
+* '''Maximum sigma''': maximum radius of the isotropic filters used to create the features. By default 16 pixels in 2D and 8 pixels in 3D.
 
 ===== Classifier options =====
 [[Image:AWS-Classifier-selection.png|thumb|300px|Classifier selection in the Trainable Weka Segmentation [[Advanced_Weka_Segmentation#Settings|Settings dialog]].]]
