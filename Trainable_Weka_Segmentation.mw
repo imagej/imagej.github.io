@@ -141,7 +141,7 @@ c & d\end{array}\right)</math> are calculated thus:
 * '''Derivatives filter''': calculates high order derivatives of the input image (<math>\frac{d^4}{dx^2dy^2},\frac{d^6}{dx^3dy^3},\frac{d^8}{dx^4dy^4},\frac{d^{10}}{dx^5dy^5}</math>) using [[FeatureJ]] (it requires enabling the [[ImageScience]] update site in the updater).
 * '''Laplacian filter''': computes the Laplacian of the input image using [[FeatureJ]] (it requires enabling the [[ImageScience]] update site in the updater). It uses smoothing scale <math>\sigma</math>.
 * '''Structure filter''': calculates for all elements in the input image, the eigenvalues (smallest and largest) of the so-called structure tensor using [[FeatureJ]] (it requires enabling the [[ImageScience]] update site in the updater). It uses smoothing scale <math>\sigma</math> and integration scales 1 and 3.
-* '''Entropy''': Draws a circle of radius <math>r</math> around each pixel; gets the histogram of that circle split in numBins chunks; then calculates the entropy as <math>\sum_{p~\mathrm{in}~\mathrm{histogram}} -p*\mathrm{log}_2(p)</math>, where <math>p</math> is the probability of each chunk in the histogram. numBins is equal to <math>32, 64, 128, 256</math>. <math>r</math> is equal to <math>\sigma</math>.
+* '''Entropy''': draws a circle of radius <math>r</math> around each pixel; gets the histogram of that circle split in numBins chunks; then calculates the entropy as <math>\sum_{p~\mathrm{in}~\mathrm{histogram}} -p*\mathrm{log}_2(p)</math>, where <math>p</math> is the probability of each chunk in the histogram. numBins is equal to <math>32, 64, 128, 256</math>. <math>r</math> is equal to <math>\sigma</math>.
 * '''Neighbors''': Shifts the image in 8 directions by an certain number of pixel, <math>\sigma</math>. Therefore creates <math>8n</math> feature images.
 
 When using grayscale images, the input image will be also included as a feature. In the case of color (RGB) images, the '''Hue, Saturation and Brightness''' will be as well part of the features.
@@ -149,6 +149,17 @@ When using grayscale images, the input image will be also included as a feature.
 The detailed implementation of these 2D filters can be found in the [https://github.com/fiji/Trainable_Segmentation/blob/master/src/main/java/trainableSegmentation/FeatureStack.java source code].
 
 '''<span style="color:#f80000">NOTE''': The features named ''Derivatives'', ''Laplacian'' and ''Structure'' belong to the [[ImageScience]] suite and need to be activated [http://imagej.net/How_to_follow_a_3rd_party_update_site by enabling the ImageScience update site in the updater].
+
+===== Training features (3D) =====
+When calling the plugin from the menu command {{bc | Plugins | Segmentation | Trainable Weka Segmentation 3D}} the set of available image features will be as follows:
+* '''Gaussian blur''': performs <math>n</math> individual 3D convolutions with Gaussian kernels with the normal <math>n</math> variations of <math>\sigma</math>. The larger the radius the more blurred the image becomes until the pixels are homogeneous.
+*'''Hessian''': using [[FeatureJ]] it computes for each image element (voxel) the eigenvalues of the Hessian, which can be used for example to discriminate locally between plate-like, line-like, and blob-like image structures. More specifically, it calculates the magnitude of the largest, middle and smallest eigenvalue of the Hessian tensor. It requires enabling the [[ImageScience]] update site in the updater. It uses smoothing scale <math>\sigma</math>.
+* '''Derivatives''': calculates high order derivatives of the input image (<math>\frac{d^4}{dx^2dy^2dz^2},\frac{d^6}{dx^3dy^3dz^3},\frac{d^8}{dx^4dy^4dz^4},\frac{d^{10}}{dx^5dy^5dz^5}</math>) using [[FeatureJ]] (it requires enabling the [[ImageScience]] update site in the updater).
+* '''Laplacian''': computes the Laplacian of the input image using [[FeatureJ]] (it requires enabling the [[ImageScience]] update site in the updater). It uses smoothing scale <math>\sigma</math>.
+* '''Structure''': calculates for all elements in the input image, the eigenvalues (smallest and largest) of the so-called structure tensor using [[FeatureJ]] (it requires enabling the [[ImageScience]] update site in the updater). It uses smoothing scale <math>\sigma</math> and integration scales 1 and 3.
+*'''Edges''': detects edges using Canny edge detection, which involves computation of the gradient magnitude, suppression of locally non-maximum gradient magnitudes, and (hysteresis) thresholding. Again, this feature uses [[FeatureJ]] so it requires enabling the [[ImageScience]] update site in the updater. It uses smoothing scale <math>\sigma</math>.
+*'''Difference of Gaussian''': calculates two [[wikipedia:Gaussian blur|Gaussian blur]] images from the original image and subtracts one from the other. <math>\sigma</math> values are varied as usual, so <math>\frac{n(n-1)}{2}</math> feature images are added to the stack.
+* '''Minimum, Maximum, Mean, Variance, Median''': the voxels within a radius of <math>\sigma</math> voxels from the target pixel are subjected to the pertinent operation (mean/min etc.) and the target pixel is set to that value.
 
 ===== Feature options =====
 
