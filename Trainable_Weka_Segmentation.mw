@@ -124,7 +124,7 @@ c & d\end{array}\right)</math> are calculated thus:
 ** Gamma-normalized square eigenvalue difference: <math>t^{4}(a-d)^{2}\left((a-d)^{2}+4b^{2}\right)</math>, where <math>t=1^{3/4}</math>.
 ** Square of Gamma-normalized eigenvalue difference: <math>t^{2}\left((a-d)^{2}+4b^{2}\right)</math>, where <math>t=1^{3/4}</math>.
 * '''Difference of gaussians''': calculates two [[wikipedia:Gaussian blur|Gaussian blur]] images from the original image and subtracts one from the other. <math>\sigma</math> values are varied as usual, so <math>\frac{n(n-1)}{2}</math> feature images are added to the stack.
-* '''Membrane projections''': the initial kernel for this operation is hardcoded as a <math>19x19</math> zero matrix with the middle column entries set to 1. Multiple kernels are created by rotating the original kernel by 6 degrees up to a total rotation of 180 degrees, giving 30 kernels. Each kernel is convolved with the image and then the set of 30 images are Z-projected into a single image via 6 methods:
+* '''Membrane projections''': the initial kernel for this operation is hardcoded as a <math>19\times19</math> zero matrix with the middle column entries set to 1. Multiple kernels are created by rotating the original kernel by 6 degrees up to a total rotation of 180 degrees, giving 30 kernels. Each kernel is convolved with the image and then the set of 30 images are Z-projected into a single image via 6 methods:
 ** sum of the pixels in each image
 ** mean of the pixels in each image
 ** standard deviation of the pixels in each image
@@ -146,7 +146,7 @@ c & d\end{array}\right)</math> are calculated thus:
 
 When using grayscale images, the input image will be also included as a feature. In the case of color (RGB) images, the '''Hue, Saturation and Brightness''' will be as well part of the features.
 
-The detailed implementation of the filters can be found in the [https://github.com/fiji/Trainable_Segmentation/blob/master/src/main/java/trainableSegmentation/FeatureStack.java source code].
+The detailed implementation of these 2D filters can be found in the [https://github.com/fiji/Trainable_Segmentation/blob/master/src/main/java/trainableSegmentation/FeatureStack.java source code].
 
 '''NOTE''': The features named ''Derivatives'', ''Laplacian'' and ''Structure'' belong to the [[ImageScience]] suite and need to be activated [http://imagej.net/How_to_follow_a_3rd_party_update_site by enabling the ImageScience update site in the updater].
 
