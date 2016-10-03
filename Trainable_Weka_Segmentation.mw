@@ -178,7 +178,7 @@ The default classifier is [https://code.google.com/p/fast-random-forest/ FastRan
 The classes can be renamed using these text boxes.
 
 ===== Balance classes =====
-The classsifier uses by the default all the user traces to train. By clicking on this option, we filter first the classes in order to provide a '''balanced''' distribution of the samples. This implies that the less numerous classes will duplicate some of their samples and the more populated classes will lose some of their samples for the sake of even distribution. This option is strongly recommended if we want to give the same importance to all classes. An alternative is to use the [http://weka.wikispaces.com/CostSensitiveClassifier Weka CostSensitiveClassifier] and set a corresponding cost matrix.
+The classifier uses by the default all the user traces to train. By clicking on this option, we filter first the classes in order to provide a '''balanced''' distribution of the samples. This implies that the less numerous classes will duplicate some of their samples and the more populated classes will lose some of their samples for the sake of even distribution. This option is strongly recommended if we want to give the same importance to all classes. An alternative is to use the [http://weka.wikispaces.com/CostSensitiveClassifier Weka CostSensitiveClassifier] and set a corresponding cost matrix.
 
 ===== Save feature stack =====
 We can save the features as a stack of images by clicking on this button. It will use the last feature configuration that is available.
