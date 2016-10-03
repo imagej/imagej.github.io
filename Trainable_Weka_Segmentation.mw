@@ -281,7 +281,7 @@ call("trainableSegmentation.Weka_Segmentation.changeClassName", "0", "background
 </source>
 * Set option to balance the class distributions:
 <source lang="java">
-call("trainableSegmentation.Weka_Segmentation.setClassHomogenization", "true");
+call("trainableSegmentation.Weka_Segmentation.setClassBalance", "true");
 </source>
 * Set membrane thickness (in pixels):
 <source lang="java">
