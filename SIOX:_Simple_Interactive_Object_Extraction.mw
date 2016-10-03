@@ -1,4 +1,3 @@
-{{-}}
 {{Infobox
 | name                   = SIOX: Simple Interactive Object Extraction
 | software               = Fiji
@@ -10,10 +9,12 @@
 | latest version         = 1.0.3, September 25th<sup>th</sup>, 2014
 | status                 = stable, active
 | category               = [[:Category:Segmentation|Segmentation]]
-}}This is a Fiji plugin based on the [http://www.siox.org SIOX project] '''to segment color images'''.  [[SIOX]] stands for ''Simple Interactive Object Extraction'', a method for '''extracting foreground from still images''' with very little user interaction. [[SIOX]] is fast, noise robust and can therefore also be used for the segmentation of videos. It avoids many of the drawbacks of graph-based segmentation methods but performs about equally well on different benchmarks. [[SIOX]] is open and free (Apache License) and the authors have intentionally not patented any part of the technology. As a result, it has been integrated into several open-source image manipulation programs over the past years. [[SIOX]] is the underlying algorithm of the foreground extraction tool in the GNU Image Manipulation Program ([http://www.gimp.org/ GIMP]) and is part of the tracer tool in [http://www.inkscape.org/ Inkscape]. [[SIOX]] originates from [http://www.echalk.de/ E-Chalk] where an instructor standing in front of an electronic chalkboard is segmented. Variants of [[SIOX]] are being used for robotic vision and for improving 3D time-of-flight camera segmentation.
+}}{|
+|style="vertical-align:top"|[[Image:Embryos775x581.png|thumb|330px|Embryos original sample]]
+|style="vertical-align:top"|[[Image:SIOX_result_embryos775x581.png|thumb|330px|SIOX segmentation result]]
+|}
 
-[[Image:Embryos775x581.png|thumb|left|361px|Embryos original sample]]
-[[Image:SIOX_result_embryos775x581.png|thumb|right|361px|SIOX segmentation result]]
+This is a Fiji plugin based on the [http://www.siox.org SIOX project] '''to segment color images'''.  [[SIOX]] stands for ''Simple Interactive Object Extraction'', a method for '''extracting foreground from still images''' with very little user interaction. [[SIOX]] is fast, noise robust and can therefore also be used for the segmentation of videos. It avoids many of the drawbacks of graph-based segmentation methods but performs about equally well on different benchmarks. [[SIOX]] is open and free (Apache License) and the authors have intentionally not patented any part of the technology. As a result, it has been integrated into several open-source image manipulation programs over the past years. [[SIOX]] is the underlying algorithm of the foreground extraction tool in the GNU Image Manipulation Program ([http://www.gimp.org/ GIMP]) and is part of the tracer tool in [http://www.inkscape.org/ Inkscape]. [[SIOX]] originates from [http://www.echalk.de/ E-Chalk] where an instructor standing in front of an electronic chalkboard is segmented. Variants of [[SIOX]] are being used for robotic vision and for improving 3D time-of-flight camera segmentation.
 
 ==Quick Start==
 ;'''Premises:'''
@@ -30,9 +31,10 @@ After clicking on {{bc | Plugins | Segmentation | SIOX: Simple Interactive Objec
 ;'''Step 3:''' Reset or Create mask.
 :Click the "Reset" button to restart the process or click on the "Create mask" button to create a binary image. Please, note that the binary image polarity will follow the option set in {{bc | Process | Binary | Options}}.
 
-[[Image:Screenshot-SIOX_Segmentation.png|thumb|left|440px|SIOX segmentation Graphical User Interface applied to Leaf sample]]
-[[Image:SIOX-Mask.png|thumb|right|280px|Resulting mask of Leaf sample after SIOX segmentation]]
-{{-}}
+{|
+|style="vertical-align:top"|[[Image:Screenshot-SIOX_Segmentation.png|thumb|440px|SIOX segmentation Graphical User Interface applied to Leaf sample]]
+|style="vertical-align:top"|[[Image:SIOX-Mask.png|thumb|280px|Resulting mask of Leaf sample after SIOX segmentation]]
+|}
 
 ==User Manual==
 [[SIOX]] is a plugin designed to segment 2D color images. If the image is not RGB color, it can be converted to RGB using the command {{bc | Image | Type | RGB Color}}. However, the [[SIOX]] algorithm makes uses color information, so it is expected to work better on real RGB images.
