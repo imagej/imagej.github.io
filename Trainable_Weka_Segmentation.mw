@@ -360,6 +360,8 @@ The '''[http://javadoc.imagej.net/Fiji/trainableSegmentation/package-tree.html A
 == Versatility ==
 As a '''pixel classifier''', the Trainable Weka Segmentation presents a wide range of applications such as [https://en.wikipedia.org/wiki/Edge_detection boundary detection], semantic segmentation, or [https://en.wikipedia.org/wiki/Object_detection object detection] and localization. All of them at the distance of a few clicks on the plugin GUI and sometimes in combination with other Fiji tools or plugins.
 
+[[Image:TWS-application-examples.png|thumb|center|700px|'''Examples of application of Trainable Weka Segmentation'''. From left to right and from top to bottom: original image of the Berkeley Segmentation Dataset (Test Image #42049 [color]), probability of boundaries after training, semantic segmentation in 3 classes (sky, tree, eagle), and detected object using the probability maps of the semantic segmentation and some post-processing (Level Sets from maximum and bounding box selection.]]
+
 == Usage with existing installation of Weka ==
 Weka will automatically load plugins installed in ~/wekafiles. If you already have an existing installation of weka using Java 1.7 and are seeing an error about "java.lang.UnsupportedClassVersionError: weka/filters/unsupervised/attribute/IndependentComponents: Unsupported major.minor version 51.0", then you should remove/rename the ~/wekafiles folder before running Fiji.
 
