@@ -340,7 +340,7 @@ call("trainableSegmentation.Weka_Segmentation.changeClassName", "0", "background
 call("trainableSegmentation.Weka_Segmentation.changeClassName", "1", "leaf");
 
 // balance class distributions
-call("trainableSegmentation.Weka_Segmentation.setClassHomogenization", "true");
+call("trainableSegmentation.Weka_Segmentation.setClassBalance", "true");
 
 // train current classifier
 call("trainableSegmentation.Weka_Segmentation.trainClassifier");
