@@ -360,6 +360,9 @@ The '''[http://javadoc.imagej.net/Fiji/trainableSegmentation/package-tree.html A
 == Usage with existing installation of Weka ==
 Weka will automatically load plugins installed in ~/wekafiles. If you already have an existing installation of weka using Java 1.7 and are seeing an error about "java.lang.UnsupportedClassVersionError: weka/filters/unsupervised/attribute/IndependentComponents: Unsupported major.minor version 51.0", then you should remove/rename the ~/wekafiles folder before running Fiji.
 
+== Troubleshooting ==
+For all '''questions, suggestions, bug reports and problems''' related to the Trainable Weka Segmentation plugin or library, please use the [http://forum.imagej.net ImageJ forum] and make sure to [http://forum.imagej.net/search?q=weka check previous posts] that might have been done covering the same topic.
+
 == Citation ==
 The [[Trainable Weka Segmentation]] code has its own citable [http://dx.doi.org/10.5281/zenodo.59290 DOI].
 
