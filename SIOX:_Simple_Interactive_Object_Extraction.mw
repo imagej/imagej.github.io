@@ -117,7 +117,7 @@ You can apply a previously saved SIOX segmentator to any open image or set of im
 
 The segmentator will be applied to the selected image or stack and the result will pop up.
 
-[[Image:Combined-SIOX-Stacks.gif | left | thumb | 700px | Results of applying the previously calculated SIOX segmentator to a stack of transformed versions of the Leaf sample]]
+[[Image:Combined-SIOX-Stacks.gif | left | thumb | 1014px | Results of applying the previously calculated SIOX segmentator to a stack of transformed versions of the Leaf sample]]
 {{-}}
 
 '''Note''': when applying a saved segmentator there is no information about the size of the expected foreground components so the largest component will be used as reference. The multiple component option will be consistent with what it was used during the segmentator calculation.
