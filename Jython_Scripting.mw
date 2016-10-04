@@ -15,7 +15,7 @@ The following list will help you to decide if Jython is the right choice to crea
 
 === Explanation ===
 
-The Java implementation of Python is limited in functionality. One can use the [https://docs.python.org/2/library/index.html standard library], but it's not possible to install additional Python modules. Moreover a growing number of projects build on Python 3 which is not fully compatible with Python 2 Jython is based on. If you want to start learning Python it's recommended to learn Python 3.x instead of Python 2.
+The Java implementation of Python is limited in functionality. One can use the [https://docs.python.org/2/library/index.html standard library], but it's not possible to install additional Python modules. Moreover a growing number of projects build on Python3 which is not fully compatible with Python2 Jython is based on. If you want to start learning Python it's recommended to learn Python3.x instead of Python2.
 
 Even with the given limitations Jython is a powerful language for ImageJ scripting. Hopefully the examples on this page can convince you of that.
 
