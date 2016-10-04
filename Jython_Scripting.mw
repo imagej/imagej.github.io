@@ -21,6 +21,8 @@ Even with the given limitations Jython is a powerful language for ImageJ scripti
 
 == Jython basics for ImageJ ==
 
+{{Notice|For an introduction in ImageJ scripting visit the page [[Scripting_basics|Scripting basics]].}}
+
 === Introduction ===
 
 The aim of this page is not to teach how to program in Python. This purpose is much better fulfilled by the [https://docs.python.org/2/library/index.html documentation of Python2]. The focus of this page is to show how features of the Python language can be useful for ImageJ scripting.
