@@ -16,7 +16,7 @@ A key principle of the Fiji project is:
 :''If you want to go fast, go alone. If you want to go far, go together.''
 : - ''African proverb''
 
-There are many corollaries to this wisdom, the most prominent: if you write software in your endeavor to discover new insights, [[Open Source]] is the way that brings you farthest. Withholding the source code—like any other method to obstruct other researchers' work, e.g. refusing to share materials and methods—will invariably have the opposite effect in the long run. Likewise, working with interested parties to improve one's project will invariably lead to a much better and stronger result.
+There are many corollaries to this wisdom, the most prominent: if you write software in your endeavor to discover new insights, [[Open Source]] is the way that brings you farthest. Withholding the source code—like any other method to obstruct other researchers' work, e.g. refusing to share materials and methods—will [[Why Closed-Source Is Wrong|invariably have the opposite effect]] in the long run. Likewise, working with interested parties to improve one's project will invariably lead to a much better and stronger result.
 
 As such, components distributed with Fiji must be licensed in a way [https://www.gnu.org/licenses/license-list.html compatible with the GNU General Public License].
 
