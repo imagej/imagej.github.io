@@ -2,17 +2,17 @@ This page has a few war stories about having to fight with developing software w
 
 '''Note:''' there are places for closed-source.  Research, however, is only impeded by closed-source.
 
-== Quicktime for Java ==
+== QuickTime for Java ==
 
-Quicktime for Java is a small component on top of the Quicktime SDK (software development kit).  In theory, it should make it easy to create movies in Quicktime format.  In practice, it is a hassle:
+QuickTime for Java is a small component on top of the QuickTime SDK (software development kit).  In theory, it should make it easy to create movies in QuickTime format.  In practice, it is a hassle:
 
-* Quicktime is only supported on Windows and MacOSX.  Good bye, Linux users.
-* Quicktime for Java is not supported on 64-bit MacOSX.  Which means that every time you try to write a Quicktime movie on that platform, it complains that Quicktime is not installed.  Good bye, almost every new MacOSX user.
-* Quicktime for Java does not follow a standard API (see also "Java Media Framework" below).  So you will never be able to write code that writes movies in general.  You will always have to special-case Quicktime.  Goodbye, disgusted developers.
+* QuickTime is only supported on Windows and MacOSX.  Good bye, Linux users.
+* QuickTime for Java is not supported on 64-bit MacOSX.  Which means that every time you try to write a QuickTime movie on that platform, it complains that QuickTime is not installed.  Good bye, almost every new MacOSX user.
+* QuickTime for Java does not follow a standard API (see also "Java Media Framework" below).  So you will never be able to write code that writes movies in general.  You will always have to special-case QuickTime.  Goodbye, disgusted developers.
 
-All in all, Quicktime is just a nuisance, and were it not for Apple shipping it by default with every of their computers, the format would be long dead: the .avi format is a much more open and wider-spread format that does everything Quicktime ever could do, and more.
+All in all, QuickTime is just a nuisance, and were it not for Apple shipping it by default with every of their computers, the format would be long dead: the .avi format is a much more open and wider-spread format that does everything QuickTime ever could do, and more.
 
-If Quicktime for Java was Open Source, we could do something about the problems, at least.
+If QuickTime for Java was Open Source, we could do something about the problems, at least.
 
 == TransformJ ==
 
