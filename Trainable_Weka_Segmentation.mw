@@ -1,7 +1,7 @@
 {{Infobox
 | name                   = Trainable Weka Segmentation
 | software               = Fiji
-| author                 = {{Person|Iarganda}}, {{Person|Albertcardona}}, [http://www.kaynig.de Verena Kaynig], {{Person|Schindelin}}
+| author                 = {{Person|Iarganda}}, {{Person|Albertcardona}}, [http://www.kaynig.de Verena Kaynig], {{Person|Rueden}}, {{Person|Schindelin}}
 | maintainer             = {{Person|Iarganda}}
 | filename               = {{Maven | g=sc.fiji | a=Trainable_Segmentation}}
 | source                 = {{GitHub|org=fiji|repo=Trainable_Segmentation}}
