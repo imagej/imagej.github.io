@@ -420,5 +420,9 @@ Using maven you can automate the packaging of Jython code into JAR files. This a
 
 At GitHub you will find an example project that you can use as a template. Just run <code>mvn jar:jar</code> and maven will generate a JAR file at the <code>target</code> directory.
 
+== Links ==
+
+* [[Jython_Scripting_Examples|Jython Scripting Examples]]
+
 == References ==
 <references />
