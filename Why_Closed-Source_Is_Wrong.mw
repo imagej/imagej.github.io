@@ -16,11 +16,11 @@ If Quicktime for Java was Open Source, we could do something about the problems,
 
 == TransformJ ==
 
-For a long time, the [[TransformJ]] plugin suite was Closed-Source. As it is used for science, we asked the author whether we could look at the source. Scientific process must be transparent so that other scientists can understand and question it. The skepticism in science arises not so much of distrust, but more of the knowledge that we are all human, and humans err.
+For a long time, the [[TransformJ]] plugin suite was closed-source. As it is used for science, we asked the author whether we could look at the source. Scientific process must be transparent so that other scientists can understand and question it. The skepticism in science arises not so much of distrust, but more of the knowledge that we are all human, and humans err.
 
 Happily, the author of TransformJ -- Erik Meijering -- agreed to let us redistribute the source code for exactly that purpose: that you can understand how it works, and why.
 
-Therefore, TransformJ is not so much an example why Closed-Source is wrong, but why Open Source is right!
+Therefore, TransformJ is not so much an example why closed-source is wrong, but why Open Source is right!
 
 == Java Media Framework ==
 
