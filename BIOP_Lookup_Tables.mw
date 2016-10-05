@@ -12,11 +12,39 @@
 }}
 
 == Purpose ==
+Having LUTs to handle images with more than 3 channels.
 
 
 == Details ==
 
-== Macro Recordable ==
+[[File:RGB hex.png |400px ]]
+[[File:CMY hex.png |400px ]]
+
+[[File:BIOP6Luts hex.png |800px ]]
+
+
+== On 3 Channels image ==
+[[File:3chs_Grays_cell.jpg |600px|3 channels, each in Grays levels. ]]
+
+=== RGB ===
+[[File:3chs RGB cell.jpg |800px|3 channels image, in Red Green Blue and Merge. ]]
+
+=== CMY ===
+[[File:3chs CMY cell.jpg |800px|3 channels image, in Red Green Blue and Merge. ]]
+
+== On 4 Channels image ==
+
+[[File:4chs Grays cell.jpg |800px|4 channels image, each in Grays levels. ]]
+
+=== Appropriate BIOP-LUTs selection ===
+[[File:4chs biop-lut cell ok.jpg |1000px|4 channels image, biop luts good choice]]
+===Unappropriate BIOP-LUTs selection ===
+[[File:4chs biop-lut cell bad.jpg |1000px|4 channels image, biop luts poor choice]]
+
+Here, channels 2 and 3 are tubular structure and it's difficult to distinguish them if both are greenish.
+
+
+== Macro Language ==
 <source lang="java">
 run("biop-Amber");
 run("biop-Azure");
@@ -25,9 +53,6 @@ run("biop-Chartreuse");
 run("biop-ElectricIndigo");
 run("biop-SpringGreen");
 </source>
-
-
-
 
 
 == Install ==
