@@ -29,7 +29,8 @@ run("biop-SpringGreen");
 
 
 
-== Notes ==
 
 == Install ==
-You can either use our PTBIOP update site or  [http://imagej.net/_images/b/b0/Biop-luts.zip download biop-luts.zip]
+You can either use our PTBIOP update site or  [http://imagej.net/_images/b/b0/Biop-luts.zip download biop-luts.zip] and extract to the \luts folder.
+
+== Notes ==
