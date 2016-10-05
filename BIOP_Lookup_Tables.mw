@@ -1,0 +1,35 @@
+{{Infobox
+| name                   = BIOP luts
+| software               = Fiji
+| author                 = Romain Guiet
+| maintainer             = Romain Guiet
+| filename               = biop-*.lut
+| released               = October 2016
+| latest version         = October 2016
+| source                 = PTBIOP update site
+| status                 = stable
+| website                = [http://biop.epfl.ch/INFO_Facility.html#staff BIOP Staff Page]
+}}
+
+== Purpose ==
+
+
+== Details ==
+
+== Macro Recordable ==
+<source lang="java">
+run("biop-Amber");
+run("biop-Azure");
+run("biop-BrightPink");
+run("biop-Chartreuse");
+run("biop-ElectricIndigo");
+run("biop-SpringGreen");
+</source>
+
+
+
+
+== Notes ==
+
+== Install ==
+You can either use our PTBIOP update site or  [http://imagej.net/_images/b/b0/Biop-luts.zip download biop-luts.zip]
