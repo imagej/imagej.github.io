@@ -7,7 +7,7 @@ This is a list of upcoming conferences, courses, and other events in the scienti
 !Topic
 !Location
 |-
-| colspan=4 class="section-minor" | Conferences, Meetings, Symposia and Workshops
+| colspan=4 class="section-minor" | Conferences, Meetings, and Symposia
 |-
 |style="white-space: nowrap"|2016 Oct 8, 9 or 16 (TBA)
 |[http://bioimagecomputing.com/ Bioimage Computing] @ [http://www.eccv2016.org/ ECCV 2016]
@@ -27,12 +27,6 @@ Singapore
 |i3S 
 Porto, Portugal
 |-
-|style="white-space: nowrap"|2016 Dec 12-13
-|[http://www2.le.ac.uk/colleges/medbiopsych/facilities-and-services/cbs/lite/aif/workshops/imagej-workshops-December-2016 ImageJ workshops]
-|Two one day workshops Introduction to ImageJ/Fiji and Writing Macros
-|University of Leicester 
-Leicester, UK
-|-
 |style="white-space: nowrap"|2017 Jan 31 - Feb 03
 |[http://www.microscopy2017.co.nz/ 28th New Zealand Conference on Microscopy]
 |A celebration of all things microscopic
@@ -46,7 +40,7 @@ Auckland, New Zealand
 Avenue Jean Gabriel Domergue, 33300 
 Bordeaux, France 
 |-
-| colspan=4 class="section-minor" | Courses
+| colspan=4 class="section-minor" | Courses and Workshops
 |-
 |style="white-space: nowrap"|2016 Oct 9-19
 |[http://www.mbl.edu/education/special-topics-courses/computational-image-analysis/ Computational Image Analysis in Cellular and Developmental Biology]
@@ -59,6 +53,13 @@ Woods Hole, MA, USA
 |Comprehensive course in fundamentals of image processing and applications in biological systems
 |Berlin Institute for Medical Systems Biology, Max Delbrück Center 
 Berlin, Germany
+|-
+|style="white-space: nowrap"|2016 Dec 12-13
+|[http://www2.le.ac.uk/colleges/medbiopsych/facilities-and-services/cbs/lite/aif/workshops/imagej-workshops-December-2016 ImageJ workshops]
+|Two one day workshops Introduction to ImageJ/Fiji and Writing Macros
+|University of Leicester 
+Leicester, UK
+|-
 |}
 
 == Past events ==
