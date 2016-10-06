@@ -1,7 +1,7 @@
 {{Infobox
 | name                   = BIOP luts
 | software               = Fiji
-| authors                = Romain Guiet, Olivier Burri
+| author                 = Romain Guiet, Olivier Burri
 | maintainer             = Romain Guiet
 | filename               = biop-*.lut
 | released               = October 2016
