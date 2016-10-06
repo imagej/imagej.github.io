@@ -12,7 +12,9 @@
 }}
 
 == Purpose ==
+
 Having LUTs to handle display of images with more than 3 channels.
+Visit [[Color Image Processing]] page to know more about LUTs.
 
 == Details ==
 Classical color space are RGB and CMY. Expressed as RGB value, CMY are equal combination of 2 components of RGB, ie  Cyan is obtained by combining Green and Blue in equal proportion.
