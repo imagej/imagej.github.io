@@ -26,7 +26,7 @@ Here, we propose to use 6 LUTs, which are obtained by combining Red Green and Bl
 
 [[File:BIOP6Luts hex.png |400px ]]
 
-== On 3 Channels image ==
+== On 3 channels image ==
 [[File:3chs_Grays_cell.jpg |600px|3 channels, each in Grays levels. ]]
 
 === RGB ===
@@ -35,7 +35,7 @@ Here, we propose to use 6 LUTs, which are obtained by combining Red Green and Bl
 === CMY ===
 [[File:3chs CMY cell.jpg |800px|3 channels image, in Red Green Blue and Merge. ]]
 
-== On 4 (to 6) Channels image ==
+== On 4 (to 6) channels image ==
 
 [[File:4chs Grays cell.jpg |800px|4 channels image, each in Grays levels. ]]
 
