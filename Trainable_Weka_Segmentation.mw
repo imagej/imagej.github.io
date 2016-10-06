@@ -367,7 +367,7 @@ To see '''who is using Trainable Weka Segmentation''' and its multiple applicati
 Weka will automatically load plugins installed in ~/wekafiles. If you already have an existing installation of weka using Java 1.7 and are seeing an error about "java.lang.UnsupportedClassVersionError: weka/filters/unsupervised/attribute/IndependentComponents: Unsupported major.minor version 51.0", then you should remove/rename the ~/wekafiles folder before running Fiji.
 
 == Weka core version ==
-Since the 3.2.0 release, [[Trainable Weka Segmentation]] uses Weka 3.9.0 - development version. If you have problems loading models from previous versions of the plugin/library, most likely you need to recreate the models using the new version (see [http://forums.pentaho.com/showthread.php?204301-New-Weka-3-6-14-3-8-0-and-3-9-0-releases! note 1 of the Weka official release]).
+Since the [https://github.com/fiji/Trainable_Segmentation/releases/tag/v3.2.0 3.2.0 release], [[Trainable Weka Segmentation]] uses Weka 3.9.0 - development version. If you have problems loading models from previous versions of the plugin/library, most likely you need to recreate the models using the new version (see [http://forums.pentaho.com/showthread.php?204301-New-Weka-3-6-14-3-8-0-and-3-9-0-releases! note 1 of the Weka official release]).
 
 If you absolutely need to reuse an old model, you can transform it to the new version thanks to a [http://www.cs.waikato.ac.nz/ml/weka/downloading.html model migrator tool] provided by the Weka developers. For more information, check this [http://forum.imagej.net/t/weka-segmentation-error-after-update-29-09-16/2898/24?u=iarganda post in the ImageJ forum].
 
