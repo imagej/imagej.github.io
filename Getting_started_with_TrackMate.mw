@@ -136,7 +136,7 @@ Here, you can choose between the two visualization tools that will be used to di
 
 Honestly, choose the HyperStack displayer. Unless you have a very specific and complicated case that needs to inspect results in 3D immediately, you do not need the 3D viewer. The HyperStack displayer is simpler, lighter, allow to manually edit spots, and you will be able to launch a 3D viewer at the end of the process and still get the benefits. 
 
-When you press the '''Next''' button, two process starts: 
+When you press the '''Next''' button, two processes start: 
 * the features of all spots (well, those you left after the initial filtering step) are calculated;
 * the displayer selected does everything it needs to prepare displaying them. 
 So nothing much. Let's carry on.
