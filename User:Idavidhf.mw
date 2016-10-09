@@ -1,16 +1,16 @@
 
-=Virtual Wave Pro=
-===An image-based plugin to mesure the height and velocity of ocean wave propagation===
+=VHPro=
+===An image-based plugin for Heights mesurements===
 
 
 
-'''Author:'''	Hernández, Irving (at NEO COPPE/UFRJ).<br>
-'''Date:'''	2016/09/08<br>
-'''Requirements:'''	ImageJ 1.17y or later<br>
-'''Limitations:'''	Requires unwarped/undistorted and a thresholded 8-bit stack.<br>
-'''Source:'''	VirutalWavePro_.java<br>
-'''Installation:'''	VirutalWavePro_.class to the plugins folder and restart ImageJ.<br>
-'''Description:'''<br>
-<p> This plugin uses ImageJ's particle analyzer to track <math>n</math>-objects, in vertical order, through a stack. Imposition of the real time betwen stack frame is allowabe as the output results in calibrated or uncalibrated unities. It can be customized to track the ocean wave propagations or relative measurements.</p><br>
+'''Author:  '''	Hernández, Irving.<br>
+'''Date:  '''	2016/09/08<br>
+'''Requirements:  '''	ImageJ 1.17y or later<br>
+'''Limitations:  '''	Requires unwarped/undistorted and a thresholded 8-bit stack.<br>
+'''Source:  '''	VHPro_.java<br>
+'''Installation:  '''	copy VHPro_.class to the plugins folder and restart ImageJ.<br>
+'''Description:  '''<br>
+<p> This plugin uses ImageJ's particle analyzer to track n-objects, in vertical order, through a stack. Imposition of the real time betwen stack frame is allowabe, also the output results in calibrated or uncalibrated unities. It can be customized to given graphical outputs from the results.
 
-See Also:	MultiTracker, Manual Tracking, SpotTracker, MTrack2, MTrackJ, Measure Track, Octane (single molecule tracking) and Speckle TrackerJ
+'''See Also:  ''' ''MultiTracker, Manual Tracking, SpotTracker, MTrack2, MTrackJ.''
