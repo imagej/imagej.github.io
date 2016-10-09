@@ -11,6 +11,7 @@
 '''Source:  '''	VHPro_.java<br>
 '''Installation:  '''	copy VHPro_.class to the plugins folder and restart ImageJ.<br>
 '''Description:  '''<br>
-<p> This plugin uses ImageJ's particle analyzer to track n-objects, in vertical order, through a stack. Imposition of the real time betwen stack frame is allowabe, also the output results in calibrated or uncalibrated unities. It can be customized to given graphical outputs from the results.
+<p> This plugin uses ImageJ's particle analyzer to track n-objects, in vertical order, through a stack. Imposition of the real time betwen stack frame is allowabe, also the output results in calibrated or uncalibrated unities. It can be customized to given graphical outputs from the results.</p><br>
+<br>
 
 '''See Also:  ''' ''MultiTracker, Manual Tracking, SpotTracker, MTrack2, MTrackJ.''
