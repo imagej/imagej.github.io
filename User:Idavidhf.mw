@@ -5,13 +5,12 @@
 
 
 '''Author:'''	Hernández, Irving (at NEO COPPE/UFRJ).<br>
+'''Date:'''	2016/09/08<br>
+'''Requirements:'''	ImageJ 1.17y or later<br>
+'''Limitations:'''	Only tracks two objects. Requires a thresholded 8-bit stack.<br>
+'''Source:'''	Tracker_.java<br>
+'''Installation:'''	Copy Tracker_.class to the plugins folder and restart ImageJ.<br>
+'''Description:'''<br>
+<p> This plugin uses ImageJ's particle analyzer to track one or two objects through a stack. For each stack frame, it displays the number of objects, the coordinates of the first two objects, and the distance between the first two objects. It also plots distance vs. frame. It can be customized to track more than two objects. A test stack, contributed by Ross Lang, is provided.</p><br>
 
-
-<math>\gamma^\omega</math>
-Date:	2016/09/08
-Requirements:	ImageJ 1.17y or later
-Limitations:	Only tracks two objects. Requires a thresholded 8-bit stack.
-Source:	Tracker_.java
-Installation:	Copy Tracker_.class to the plugins folder and restart ImageJ.
-Description:	This plugin uses ImageJ's particle analyzer to track one or two objects through a stack. For each stack frame, it displays the number of objects, the coordinates of the first two objects, and the distance between the first two objects. It also plots distance vs. frame. It can be customized to track more than two objects. A test stack, contributed by Ross Lang, is provided.
 See Also:	MultiTracker, Manual Tracking, SpotTracker, MTrack2, MTrackJ, Measure Track, Octane (single molecule tracking) and Speckle TrackerJ
