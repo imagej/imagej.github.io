@@ -4,7 +4,10 @@
 
 
 
-_Author:_	Hernández, Irving (at NEO COPPE/UFRJ)
+'''Author:'''	Hernández, Irving (at NEO COPPE/UFRJ).<br>
+
+
+<math>\gamma^\omega</math>
 Date:	2016/09/08
 Requirements:	ImageJ 1.17y or later
 Limitations:	Only tracks two objects. Requires a thresholded 8-bit stack.
