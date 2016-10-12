@@ -921,9 +921,17 @@ td.yesno {
     margin-top: 25px;
 }
 
-/* Make code links look a little nicer. */
+/*
+Make code links look a little nicer.
+Thanks to Michael Entrup for some of these rules; see:
+http://forum.imagej.net/t/the-imagej-web-site-has-a-new-look/1730/14
+*/
 code {
   border: 1px solid #ddd;
+  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+  font-size: 85%;
+  color: #333;
+  background: #f8f8f8;
 }
 
 /* Avoid clipping h1 blocks */
