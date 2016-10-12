@@ -31,6 +31,7 @@ Here is a summary of my current projects, in priority order. I try to keep this 
 # '''SciJava I/O.''' ([https://github.com/scijava/scijava-common/compare/more-handles scijava/scijava-common@more-handles])
 # '''SCIFIO blockization.''' ([https://github.com/scifio/scifio/issues/283 scifio/scifio#283])
 # '''SciJava Common 3.''' ([https://github.com/scijava/scijava-common/compare/sjc3 scijava/scijava-common@sjc3])
+# '''ImageJ + Java 8.''' Finally complete the migration to Java 8 with a JavaFX-based native launcher. Retire the current ImageJ Launcher. ([https://github.com/imagej/imagej-launcher/issues/33 imagej/imagej-launcher#33])
 
 I am fully committed to all of the above projects. They are driven by me, making progress only if I personally work on them.
 
