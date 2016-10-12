@@ -117,6 +117,9 @@ TrackMate was developed to serve as a tool for Life-Science image analysis commu
 
 == Documentation and tutorials ==
 
+The [http://www.sciencedirect.com/science/article/pii/S1046202316303346  TrackMate paper] contains a polished, pdf version of the documentation below. Here is a [http://www.sciencedirect.com/science/MiamiMultiMediaURL/1-s2.0-S1046202316303346/1-s2.0-S1046202316303346-mmc8.pdf/272416/html/S1046202316303346/b94270fca30b3f50310c824fbb2c242a/mmc8.pdf direct link] to it.
+
+
 * [[TrackMate version history]]
 
 
@@ -154,8 +157,6 @@ The following tutorials show how to integrate a module of each kind in TrackMate
 * [[How to write custom actions for TrackMate]]
 * [[How to write your own detection algorithm for TrackMate]]
 * [[How to write your own particle-linking algorithm for TrackMate]]
-
-
 
 == Known problems ==
 
