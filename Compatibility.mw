@@ -5,6 +5,7 @@ Backward compatibility is one of ImageJ's most important goals. It must remain p
 The [[ImageJ2]] project is a complete redesign of ImageJ, with no dependency on [[ImageJ 1.x]]. However, to facilitate backwards compatibility, there is an '''ImageJ Legacy''' component (source {{GitHub | org = imagej | repo = imagej-legacy}}) which provides extensions for ImageJ2 and ImageJ1 to operate in harmony.
 
 The ImageJ legacy layer provides the following extensions:
+* It makes ImageJ 1.x usable [[headless]] from the command line.
 * It wraps the '''ImageJ 1.x UI as a [[SciJava]] user interface'''.
 * It '''translates between ImageJ1 and ImageJ2 data structures''' on demand.
 
