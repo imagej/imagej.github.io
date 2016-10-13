@@ -546,7 +546,7 @@ All subsequent processing steps of SPIM registration only modify the XML and thu
 A multi-view dataset consisting of 715 six angle time points (altogether 2.1 Terabytes) converts to HDF5 with compression in 65 minutes using about 200 processors working in parallel.
 
 == Publication ==
-{{Publication | BigDataViewer}}
+* {{Publication | BigDataViewer}}
 
 [[Category:Visualization]]
 [[Category:Citable]]
