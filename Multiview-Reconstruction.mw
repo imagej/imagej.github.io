@@ -1,8 +1,8 @@
 {{Infobox
 | name                   = Reconstruction of Multiview Microscopy Data
 | software               = Fiji
-| author                 = [http://www.preibisch.net Stephan Preibisch]
-| maintainer             = [http://www.preibisch.net Stephan Preibisch]
+| author                 = {{Person|StephanP}}
+| maintainer             = {{Person|StephanP}}
 | source                 = {{GitHub|org=bigdataviewer|repo=SPIM_Registration}}
 | filename               = SPIM_Registration.jar
 | status                 = stable, active
@@ -136,12 +136,12 @@ During the [http://openspim.org/EMBO_practical_course_Light_sheet_microscopy EMB
 === Talk: Registration of Multiview Lightsheet Fluorescence Microscopy (LSFM) Images ===
 {{#widget:YouTube|id=IupXS_On2rg|width=773}}
 
-This 30-minute talk by [http://www.preibisch.net Stephan Preibisch] covers the theory behind registration of multiview lightsheet microscopy data and it also quickly addresses the problem of multiview fusion & deconvolution.
+This 30-minute talk by {{Person|StephanP}} covers the theory behind registration of multiview lightsheet microscopy data and it also quickly addresses the problem of multiview fusion & deconvolution.
 
 === Tutorial: Fiji Multiview Lightsheet Reconstruction Software ===
 {{#widget:YouTube|id=0IkaSwfPYw0|width=773}}
 
-This one hour tutorial by [http://www.preibisch.net Stephan Preibisch] covers the basic usage of this multiview reconstruction software for Fiji. Documentation, source code, bug reports and feature requests can be found [https://sourceforge.net/projects/multiviewreconstruction/ on SourceForge].
+This one hour tutorial by {{Person|StephanP}} covers the basic usage of this multiview reconstruction software for Fiji. Documentation, source code, bug reports and feature requests can be found [https://sourceforge.net/projects/multiviewreconstruction/ on SourceForge].
 
 == Comments, Bugs & Feature Requests ==
 
