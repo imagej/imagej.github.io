@@ -544,3 +544,9 @@ Since the dataset will typically reside on a cluster filesystem without a graphi
 All subsequent processing steps of SPIM registration only modify the XML and thus it is necessary to perform the re-saving only once, usually as the first step of the SPIMage processing pipeline.
 
 A multi-view dataset consisting of 715 six angle time points (altogether 2.1 Terabytes) converts to HDF5 with compression in 65 minutes using about 200 processors working in parallel.
+
+== Publication ==
+{{Publication | BigDataViewer}}
+
+[[Category:Visualization]]
+[[Category:Citable]]
