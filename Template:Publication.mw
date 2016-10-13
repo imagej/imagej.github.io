@@ -11,7 +11,8 @@
 | title = A high-level 3D visualization API for Java and ImageJ
 | volume = 11(1)
 | pages = 1
-| pmid = 20492697}} ({{Scholar | cluster=5464881898236181205}}).
+| pmid = 20492697
+| doi=10.1038/nmeth.3392}} ({{Scholar | cluster=5464881898236181205}}).
 
 | Atlas Toolkit = {{Citation | last=Grocott | first=Timothy
 | last2=Thomas | first2=Paul
@@ -47,6 +48,18 @@
 | volume = 189(5)
 | pages = 777-782
 | pmid = 20513764}} ({{Scholar | cluster=17774693189715989612}}).
+
+| BigDataViewer = {{Citation | last = Pietzsch | first = T.
+| last2 = Saalfeld | first2 = S.
+| last3 = Preibisch | first3 = S.
+| last4 = Tomancak | first4 = P.
+| year = 2015
+| journal = Nature Methods
+| url = http://www.nature.com/nmeth/journal/v12/n6/full/nmeth.3392.html
+| title = BigDataViewer: visualization and processing for large image data sets
+| volume = 12(6)
+| pages = 481-483
+| pmid = 26020499}} ({{Scholar | cluster=2149722257070741970}}).
 
 | Bio7 = {{Citation | last = Austenfeld | first = M.
 | last2 = Beyschlag | first2 = W.
