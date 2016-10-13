@@ -40,7 +40,7 @@
 }}
 {{#if:{{{scholar|}}}|
 ! Google Scholar
-{{!}} [https://scholar.google.com.br/citations?user={{{scholar}}} Google Scholar profile]
+{{!}} [https://scholar.google.com/citations?user={{{scholar}}} Google Scholar profile]
 {{!}}-
 }}
 {{#if:{{{linkedin|}}}|
