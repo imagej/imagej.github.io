@@ -31,11 +31,11 @@ Here is a summary of my current projects, in priority order. I try to keep this 
 # '''SciJava Common 3.''' ([https://github.com/scijava/scijava-common/compare/sjc3 scijava/scijava-common@sjc3])
 # '''ImageJ + Java 8.''' Finally complete the migration to Java 8 with a JavaFX-based native launcher. Retire the current ImageJ Launcher. ([https://github.com/imagej/imagej-launcher/issues/33 imagej/imagej-launcher#33])
 
-I am fully committed to all of the above projects. They are driven by me, making progress only when I personally work on them.
+I am fully committed to all of the above projects. They are driven by me, making progress only when I directly work on them.
 
 === Additional projects ===
 
-I am also coordinating/leading, but not personally implementing, the following additional projects:
+I am also coordinating/leading, but not directly implementing, the following additional projects:
 
 # (with {{Person|Awalter2}}) '''ImgLib2 ROIs.''' Development of data structures, especially for use with ImageJ-OMERO. ([http://forum.imagej.net/t/implementation-plan-for-imglib2-rois-2d/2531 Implementation plan for Imglib2-rois 2D])
 # (with {{Person|Leon}}) '''RESTful image server.''' Backed by ImageJ. ([https://github.com/imagej/imagej-server imagej/imagej-server])
