@@ -16,11 +16,11 @@
 
 == What is Curtis working on? ==
 
+=== Primary projects ===
+
 Here is a summary of my current projects, in priority order. I try to keep this list up to date.
 
 (Some day, I hope this list can be deleted in favor of a simple GitHub search for my assigned issues, but we are not there yet.)
-
-=== Primary projects ===
 
 # '''The ImageJ2 paper.'''
 # '''Ops generic type matching.''' Improve the Ops type matcher to fully support generics, including recursive generics. ([https://github.com/scijava/scijava-common/compare/generic-types scijava/scijava-common@generic-types], [https://github.com/imagej/imagej-ops/compare/nil imagej/imagej-ops@nil])
