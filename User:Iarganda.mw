@@ -25,5 +25,6 @@ You can find more information about me in my website: [http://sites.google.com/s
 == Maintained plugins (IJPB-plugins update site) ==
 Included in [[MorphoLibJ]]:
 * [[Classic Watershed]]
+* [[Distance Transform Watershed]]
 * [[Marker-controlled Watershed]]
 * [[Morphological Segmentation]]
