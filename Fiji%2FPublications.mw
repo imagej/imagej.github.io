@@ -87,6 +87,9 @@
 
 * [[Sholl Analysis]] was published in Nature Methods<ref> Ferreira T, Blackman A, Oyrer J, Jayabal A, Chung A, Watt A, Sjöström J, van Meyel D. [http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html Neuronal morphometry directly from bitmap images], ''Nature Methods'' 11(10): 982–984, 2014</ref>
 
+* [[TrackMate]] was published 6 years after the initial commit, in a special edition of the Methods <ref>Jean-Yves Tinevez, Nick Perry, Johannes Schindelin, Genevieve M. Hoopes, Gregory D. Reynolds, Emmanuel Laplantine, Sebastian Y. Bednarek, Spencer L. Shorte, Kevin W. Eliceiri, [http://www.sciencedirect.com/science/article/pii/S1046202316303346 TrackMate: An open and extensible platform for single-particle tracking], ''Methods'', Available online 3 October 2016, ISSN 1046-2023.
+</ref> journal dedicated to open source software for Life Sciences.
+
 == References ==
 
 <references />
