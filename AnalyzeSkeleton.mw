@@ -145,7 +145,7 @@ The latest documentation of the code can be found here:
 [http://javadoc.imagej.net/Fiji/sc/fiji/analyzeSkeleton/package-summary.html http://javadoc.imagej.net/Fiji/sc/fiji/analyzeSkeleton/package-summary.html]
 
 == Changelog ==
-All changes can be seen in the [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=history;f=src-plugins/AnalyzeSkeleton_/skeleton_analysis;hb=HEAD Fiji source repository].
+All changes can be seen in the [https://github.com/fiji/AnalyzeSkeleton/commits/master GitHub source repository].
 
 '''2010/12/28''': Jan Eglinger added code to call the plugin from script in silent mode.
 
