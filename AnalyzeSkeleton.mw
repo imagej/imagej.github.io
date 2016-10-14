@@ -6,7 +6,7 @@
 | filename               = {{Maven | g=sc.fiji | a=AnalyzeSkeleton_}}
 | source                 = {{GitHub|org=fiji|repo=AnalyzeSkeleton}}
 | released               = November 14<sup>th</sup>, 2008
-| latest version         = 3.0.0, December 7<sup>th</sup>, 2015
+| latest version         = 3.1.1, October 10<sup>th</sup>, 2016
 | status                 = stable, active
 | category               = [[:Category:Skeleton|Skeleton]], [[:Category:Analysis|Analysis]]
 }}Analysis of 2D and 3D skeleton images. For the ImageJ plugin, visit [http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:start AnalyzeSkeleton at ImageJ wiki].
