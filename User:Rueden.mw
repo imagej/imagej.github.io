@@ -20,8 +20,6 @@
 
 Here is a summary of my current projects, in priority order. I try to keep this list up to date.
 
-(Some day, I hope this list can be deleted in favor of a simple GitHub search for my assigned issues, but we are not there yet.)
-
 # '''The ImageJ2 paper.'''
 # '''Ops generic type matching.''' Improve the Ops type matcher to fully support generics, including recursive generics. ([https://github.com/scijava/scijava-common/compare/generic-types scijava/scijava-common@generic-types], [https://github.com/imagej/imagej-ops/compare/nil imagej/imagej-ops@nil])
 # '''Rich Image.''' Improve the [[ImageJ Common]] data model to support metadata (e.g., spatial transformations) as a first-class citizen. ([https://github.com/imagej/imagej-common/compare/rich imagej/imagej-common@rich], [https://github.com/imagej/janelia-hackathon-2016 imagej/janelia-hackathon-2016])
@@ -33,7 +31,7 @@ Here is a summary of my current projects, in priority order. I try to keep this 
 # '''SciJava Common 3.''' ([https://github.com/scijava/scijava-common/compare/sjc3 scijava/scijava-common@sjc3])
 # '''ImageJ + Java 8.''' Finally complete the migration to Java 8 with a JavaFX-based native launcher. Retire the current ImageJ Launcher. ([https://github.com/imagej/imagej-launcher/issues/33 imagej/imagej-launcher#33])
 
-I am fully committed to all of the above projects. They are driven by me, making progress only if I personally work on them.
+I am fully committed to all of the above projects. They are driven by me, making progress only when I personally work on them.
 
 === Additional projects ===
 
@@ -45,7 +43,7 @@ I am also coordinating/leading, but not personally implementing, the following a
 
 === Constant priorities ===
 
-Finally, I have the following priorities constantly competing for my time:
+Finally, I have the following continuous priorities:
 
 # Mentoring student programmers at [[LOCI]]
 # Coordinating programming efforts at [[LOCI]]
@@ -56,9 +54,7 @@ Finally, I have the following priorities constantly competing for my time:
 # Server maintenance and troubleshooting
 # Project management tasks (e.g., managing [[Issues]])
 
-On average, I spend ~0-2 hours per work day on my primary projects above. The rest is spent on these constant priorities.
-
-So if [https://blog.codinghorror.com/go-that-way-really-fast/ I am too slow, and ImageJ dies on the vine], this is why.
+On average, I spend ~0-2 hours per day on my primary projects above. The rest is spent on these constant priorities.
 
 == Harder, better, faster, stronger ==
 
