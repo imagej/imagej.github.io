@@ -16,5 +16,10 @@ As part of the KNIP extension, there is an [http://tech.knime.org/community/imag
 == See also ==
 * The [[ImageJ Ops]] framework for image-processing algorithms, which is developed as a collaboration between the [[ImageJ]] and KNIME teams.
 
+== Publications ==
+* {{Publication | KNIP}}
+* {{Publication | KNIME}}
+
 [[Category:Related Software]]
 [[Category:SciJava]]
+[[Category:Citable]]
