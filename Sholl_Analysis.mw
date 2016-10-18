@@ -15,12 +15,12 @@
 <div style="padding-top:17em;padding-left:1.5em;">
 <div style="font-size:175%;border-bottom:1px dotted #ccc;margin-bottom:0.55em;">Quick links</div>
 
-;Analysis of traced arbors?:Jump to [[#Traced Cells|Traced Cells]]
+;Analysis of traced arbors?:Jump to [[#Analysis of Traced Cells|Traced Cells]]
 ;Segmentation issues?:Jump to [[#Cf. Segmentation|Cf. Segmentation]] or [[#Pre-processing|Pre-processing]]
 ;Having Problems?:Jump to [[#FAQ|FAQs]]
 </div>
 </div>{{TOC}}
-Automated and multithreaded bitmap Sholl for direct analysis of fluorescent images of neuronal arbors. Features powerful quantifications based on curve fitting. Analysis of traced arbors and analysis of previously obtained profiles is also possible.
+Automated and multithreaded bitmap Sholl for direct analysis of fluorescent images of neuronal arbors or traced morphologies. Features powerful quantifications based on curve fitting. Analysis of previously obtained profiles is also possible.
 
 == Introduction ==
 <span id="CA1CellMask"></span>[[ File:BitmapSholl-CA1mask.png|frame|[[Skeletonize3D|Skeletonized]] hippocampal CA1 cell<ref name="Gross"></ref> (juvenile mouse) in which apical and basal dendrites have been analyzed [[#CA1CellPlot|separately]] and [[#Output_Options|color coded]] according to their Sholl profile. Warmer hues indicate higher number of Intersections (''N''). [[#CriticalRadius|Critical radius]] (''r<sub>c</sub>'') and [[#MeanValueOfFunction|Mean value]] (''N<sub>av</sub>'') are indicated.]]
@@ -50,7 +50,7 @@ In this mode, the plugin requires a [[#faq:threshold|binary image or a segmented
 | tip = This program is described in [http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html Nature methods]. The manuscript uses ''Sholl Analysis'' to describe and classify morphologically challenging cells and is accompanied by a [http://www.nature.com/nmeth/journal/v11/n10/extref/nmeth.3125-S1.pdf Supplementary Note] that presents the software in greater detail. Please [[#faq:citing|cite it]] when acknowledging the plugin in your published research.}}
 === Startup ROI ===
 The center of analysis can be specified using one of three possibilities:
-;Straight line: A Straight line from the focus of the arbor to its most distal point using the Straight Line Tool. The advantages of using line selections are twofold: 1) Center of analysis and [[#EndRadius|Ending radius]] are automatically set, and 2) Horizontal/vertical lines (created by holding {{key press|Shift}} while using the Straight Line Selection Tool) can be used to restrict analysis to sub-compartments of the arbor.
+;Straight line: A Straight line from the focus of the arbor to its most distal point using the Straight Line Tool. The advantages of using line selections are twofold: 1) Center of analysis and [[#EndRadius|Ending radius]] are automatically set, and 2) Horizontal/vertical lines (created by holding {{key press|Shift}} while using the Straight Line Selection Tool) can be used to [[#Restrict|restrict analysis to sub-regions]] of the image.
 ;Single point: A single point marking the focus of the arbor using the Point Selection Tool. With single point selections, only the center of analysis is defined. Thus, this option is suitable for [[#Batch_Processing|batch processing]] of images with different dimensions with undefined [[#EndRadius|Ending radius]].
 ;Multi-point selection:A Multi-point selection (multi-point counter) in which the first point marks the center of analysis while the remaining points mark (count) the number of primary branches required for the calculation of [[#SchoenenSampled|ramification indices]]). Suitable for cases in which [[#PrimaryBranches|inference from starting radius]] is not effective.
 [[File:ShollAnalysisStartupROIs.png|frame|center|Three types of ROIs expected by the plugin. Left: Line defining center of analysis (focal point), hemisphere restriction and ending radius. Middle: Single point defining center of analysis. Right: Multi-point selection in which the first point defines the focal point while the remaining points (2 to 5) serve as counters for primary dendrites.]]
@@ -66,8 +66,7 @@ Press ''More» Cf. Segmentation'' to visually confirm which phase of the segment
 Note the reversal of ''[[#Cf._Segmentation|Cf. Segmentation]] output'' and how the ''[[#Output_Options|intersections mask]]'' no longer decorates the axonal processes but the interstitial spaces between them. The consequences of the phase inversion are twofold:  1) the program oversamples (cf. hue ramps on upper left of ''Intersections mask'') and 2) the program detects artifacts induced by the edges of the image (cf. top-right and bottom-right corners of mask where intersections are sampled in the absence of real axons at those locations). Also, note that the initial black and white image would ''look the same'' under an inverted lookup table  ({{bc|color=white|Image|Lookup Tables|Invert LUT}}).
 |}
 {{Tip
-| tip = With binary images, ''Sholl Analysis'' treats  zero intensities as the background, independently of the image lookup table or the state of the ''Black background option'' in <span style="border-bottom:1px dotted #ccc;">Process▷ Binary▷ Options...</span> As with any other [http://imagej.net/docs/guide/146-29.html#infobox:blackBackground ImageJ routine], confusing background with foreground pixels will lead to aberrant results, including: 1) overestimation of branches and 2) artifacts at distances intersecting the boundaries of the image canvas.
-}}
+| tip = With binary images, ''Sholl Analysis'' treats  zero intensities as the background, independently of the image lookup table or the state of the ''Black background option'' in <span style="border-bottom:1px dotted #ccc;">Process▷ Binary▷ Options...</span> As with any other [http://imagej.net/docs/guide/146-29.html#infobox:blackBackground ImageJ routine], confusing background with foreground pixels will lead to aberrant results, including: 1) overestimation of branches and 2) artifacts at distances intersecting the boundaries of the image canvas.}}
 == Analysis of Traced Cells ==
 In this mode, the plugin analyzes reconstructed arbors. This is particularly relevant for stainings that do not allow single-cell resolution. 
 
