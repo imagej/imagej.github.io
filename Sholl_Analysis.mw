@@ -20,27 +20,28 @@
 ;Having Problems?:Jump to [[#FAQ|FAQs]]
 </div>
 </div>{{TOC}}
-Automated and multithreaded bitmap Sholl for direct analysis of fluorescent images of neuronal arbors or traced morphologies. Features powerful quantifications based on curve fitting. Analysis of Sholl profiles obtained outside of ImageJ is also possible.
+Automated and multithreaded bitmap Sholl for direct analysis of fluorescent images of neuronal arbors or traced morphologies. Features powerful quantifications based on curve fitting. Analysis of data obtained outside of ImageJ is also possible.
 
 == Introduction ==
 <span id="CA1CellMask"></span>[[ File:BitmapSholl-CA1mask.png|frame|[[Skeletonize3D|Skeletonized]] hippocampal CA1 cell<ref name="Gross"></ref> (juvenile mouse) in which apical and basal dendrites have been analyzed [[#CA1CellPlot|separately]] and [[#Output_Options|color coded]] according to their Sholl profile. Warmer hues indicate higher number of Intersections (''N''). [[#CriticalRadius|Critical radius]] (''r<sub>c</sub>'') and [[#MeanValueOfFunction|Mean value]] (''N<sub>av</sub>'') are indicated.]]
 
-The Sholl technique<ref name="Sholl"></ref> is used to describe neuronal arbors. This plugin performs  Sholl directly on 2D and 3D grayscale images of isolated neurons. Its internal algorithm to collect data is based upon how Sholl analysis is done by hand — it creates a series of concentric ''shells'' (circles or spheres) around the focus of a neuronal arbor, and counts how many times the arbor intersects the sampling shells.
+The Sholl technique<ref name="Sholl"></ref> is used to describe neuronal arbors. This plugin can perform Sholl directly on 2D and 3D grayscale images of isolated neurons. Its internal algorithm to collect data is based upon how Sholl analysis is done by hand — it creates a series of concentric ''shells'' (circles or spheres) around the focus of a neuronal arbor, and counts how many times connected voxels defining the arbor intersect the sampling shells.
 The major advantages of this plugin over other implementations are:
-* It does not require previous tracing of the arbor (although it can also analyze [[#Analysis of Traced Cells|traced arbors]])
+* When analyzing images directly, it does not require previous tracing of the arbor (although it can also analyze [[#Analysis of Traced Cells|traced arbors]])
 * It combines [[#MethodsTable|curve fitting]] with several [[#Sholl Plots|methods]] to automatically retrieve [[#Metrics|quantitative descriptors]] from sampled data, which allows direct statistical comparisons between arbors
 * It allows [[#Multiple Samples and Noise Reduction|continuous and repeated sampling]] around user-defined foci
 * It allows [[#Batch Processing|batch processing]]
 
 == Installation ==
-The plugin is distributed with Fiji. It installs several commands under {{bc|color=white|Analysis|Sholl|&nbsp;}}. However, as part of an active effort to [[2015-12-22_-_The_road_to_Java_8|modernize ImageJ]] (see also this [[2015-06-15_-_Major_updates_in_the_works|announcement]]), '''you need to [[How_to_follow_a_3rd_party_update_site#Add_update_sites | subscribe]] to the Java 8 update site to access the latest plugin version''' (this will also allow you to access the newest [[2015-12-22_-_The_road_to_Java_8#Components_which_have_already_migrated|ImageJ capabilities]]). To do so, you can either:
+The plugin is distributed with Fiji. It installs several commands under {{bc|color=white|Analysis|Sholl|&nbsp;}}. '''As part of an active effort to [[2015-12-22_-_The_road_to_Java_8|modernize ImageJ]] you need to [[How_to_follow_a_3rd_party_update_site#Add_update_sites | subscribe]] to the Java 8 update site to access the latest plugin version''' (this will also allow you to access the newest [[2015-12-22_-_The_road_to_Java_8#Components_which_have_already_migrated|ImageJ capabilities]]). To do so, you can either:
 * [[Downloads|Download the latest Fiji release]]. Newer releases come pre-bundled with Java 8, and are already subscribed to the [[User:Java-8|Java-8 update site]].
 * If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [[Troubleshooting#Checking_the_Java_version|Fiji installation aware of it]]. Then subscribe to the [[User:Java-8|Java-8 update site]].
 
 == Direct Analysis of Images ==
 In this mode (bitmap analysis), the plugin requires a [[#faq:threshold|binary image or a segmented]] [[#faq:image-types|grayscale image]] (2D or 3D) containing a single neuron.
 
-# Segment the neuronal arbor using {{bc|color=white|Image|Adjust|Threshold...}} (shortcut: <span style="display:inline-block;">{{key press|Shift|T}} </span>). N.B.: When using multichannel images, you will have to set the its display mode to ''Grayscale'' using {{bc|color=white|Image|Color|Channels Tool...}} ({{key press|Shift|Z}}), because images displayed as ''Composites'' cannot be thresholded.
+# Segment the neuronal arbor using {{bc|color=white|Image|Adjust|Threshold...}} (shortcut: <span style="display:inline-block;">{{key press|Shift|T}} </span>).
+::N.B.: When using multichannel images, you will have to set the its display mode to ''Grayscale'' using {{bc|color=white|Image|Color|Channels Tool...}} ({{key press|Shift|Z}}), because images displayed as ''Composites'' cannot be thresholded.
 # Define the center of analysis using a valid [[#Startup_ROI|startup ROI]].
 # Run {{bc|color=white|Analysis|Sholl|Sholl Analysis...}}, adjusting the default [[#Parameters|Parameters]] in the dialog prompt.
 # Press ''More » [[#Cf._Segmentation|Cf. Segmentation]]'' to visually inspect the two thresholded phases: ''arbor'' and ''background''.
@@ -53,7 +54,7 @@ The center of analysis can be specified using one of three possibilities:
 ;Straight line: A Straight line from the focus of the arbor to its most distal point using the Straight Line Tool. The advantages of using line selections are twofold: 1) Center of analysis and [[#EndRadius|Ending radius]] are automatically set, and 2) Horizontal/vertical lines (created by holding {{key press|Shift}} while using the Straight Line Selection Tool) can be used to [[#Restrict|restrict analysis to sub-regions]] of the image.
 ;Single point: A single point marking the focus of the arbor using the Point Selection Tool. With single point selections, only the center of analysis is defined. Thus, this option is suitable for [[#Batch_Processing|batch processing]] of images with different dimensions with undefined [[#EndRadius|Ending radius]].
 ;Multi-point selection:A Multi-point selection (multi-point counter) in which the first point marks the center of analysis while the remaining points mark (count) the number of primary branches required for the calculation of [[#SchoenenSampled|ramification indices]]). Suitable for cases in which [[#PrimaryBranches|inference from starting radius]] is not effective.
-[[File:ShollAnalysisStartupROIs.png|frame|center|Three types of ROIs expected by the plugin. Left: Line defining center of analysis (focal point), hemisphere restriction and ending radius. Middle: Single point defining center of analysis. Right: Multi-point selection in which the first point defines the focal point while the remaining points (2 to 5) serve as counters for primary dendrites.]]
+[[File:ShollAnalysisStartupROIs.png|frame|center|Three types of ROIs expected by the plugin when analyzing images directly. Left: Line defining center of analysis (focal point), hemisphere restriction and ending radius. Middle: Single point defining center of analysis. Right: Multi-point selection in which the first point defines the focal point while the remaining points (2 to 5) serve as counters for primary dendrites.]]
 
 === Cf. Segmentation ===
 Press ''More» Cf. Segmentation'' to visually confirm which phase of the segmented image will be sampled. This command highlights foreground from background pixels and is particularly useful when analyzing black and white (binary) images or when using the ''B&W'' lookup table in the Threshold Widget (<span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span> {{key press|Shift|T}}). ''Cf. Segmentation'' allows you to ensure that you are measuring neuronal processes and not the interstitial spaces between them. Here is an example using an axonal arbor of a Drosophila olfactory neuron from the [http://diademchallenge.org DIADEM] dataset<ref name="DIADEM"/>:
@@ -68,7 +69,7 @@ Note the reversal of ''[[#Cf._Segmentation|Cf. Segmentation]] output'' and how t
 {{Tip
 | tip = With binary images, ''Sholl Analysis'' treats  zero intensities as the background, independently of the image lookup table or the state of the ''Black background option'' in <span style="border-bottom:1px dotted #ccc;">Process▷ Binary▷ Options...</span> As with any other [http://imagej.net/docs/guide/146-29.html#infobox:blackBackground ImageJ routine], confusing background with foreground pixels will lead to aberrant results, including: 1) overestimation of branches and 2) artifacts at distances intersecting the boundaries of the image canvas.}}
 == Analysis of Traced Cells ==
-In this mode, the plugin analyzes reconstructed arbors. This is particularly relevant for stainings that do not allow single-cell resolution. 
+In this mode, the plugin analyzes reconstructed arbors. This is particularly relevant for stainings that do not allow single-cell resolution. [[#Batch Processing |Batch processing]] is also possible.
 
 # Run {{bc|color=white|Analysis|Sholl|Sholl Analysis (Tracings)...}} and specify input files: a tracing file (a <code>.swc</code> or a [[Simple Neurite Tracer]] <code>.traces</code> file) and the respective image associate to such files. 
 # Choose the center of analysis using the drop down menu in the main prompt listing SWC tags (''axon'', ''dendrite'', ''soma'', etc.). If you have not tagged your traces, you will still be able to choose the center of the analysis through the [[Simple Neurite Tracer]] interface.
@@ -78,12 +79,11 @@ In this mode, the plugin analyzes reconstructed arbors. This is particularly rel
 Note that if you don't use [[Simple Neurite Tracer]], you can still analyze reconstructed data created by any software capable of [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html SWC] export such as [http://www.reading.ac.uk/neuromantic/ Neuromantic], [http://research.mssm.edu/cnic/tools-ns.html NeuronStudio], [https://sourceforge.net/projects/py3dn/ Py3DN] or [http://www.vaa3d.org/ Vaa3D]). In addition, [http://cng.gmu.edu:8080/Lm/ L-Measure], [http://neuronland.org/NL.html NLMorphologyConverter] or [http://www.neuron.yale.edu/neuron/ Neuron] can also be used to convert several file formats (including proprietary formats from closed-source commercial software such as Neurolucida®, MicroBrightField, Inc.) into SWC.
 
 <span id="Importing"></span>
-
 == Analysis of Existing Profiles ==
 [[File:BitmapSholl-CA1Compartment.png|frame|right|Linear plot for CA1 cell [[#CA1CellMask|described above]]. Using the soma as center, image was sampled twice using the [[#Restrict|Restrict analysis to hemicircle/hemisphere]] option in order to segregate apical from basal dendrites. For convenience, distances for basal branches were assigned negative values. For clarity, the binary image of the arbor was rotated, scaled and overlaid (in green) over the plot canvas. Note that it is also possible to restrict [[#MethodsTable|curve fitting]] to a sub-range of distances once [[#Importing|data is collected]].]]
-This feature is processed by {{bc|color=white|Analysis|Sholl|Sholl Analysis (Existing Profile)...}}. This command can be used to re-analyze data (replot, modify fitting options, etc.) without having to access the initial image or tracing data. Noteworthy:
+This feature is processed by {{bc|color=white|Analysis|Sholl|Sholl Analysis (Existing Profile)...}}. This command can be used to re-analyze data (replot, modify fitting options, etc.) without having to access the initial image or tracing data.  [[#Batch Analysis of Tabular Data|Batch processing]] is also possible. Noteworthy:
 
-* '''Input data''': Any tab or comma delimited text file (.csv, .txt, .xls, .ods) can be used. You can drag & drop these files into the main ImageJ window, import data from the clipboard, or use data from any other table already opened by ImageJ. [[#Batch Processing|Batch processing]] is also [[#Batch Analysis of Tabular Data|possible]].
+* '''Input data''': Any tab or comma delimited text file (.csv, .txt, .xls, .ods) can be used. You can drag & drop these files into the main ImageJ window, import data from the clipboard, or use data from any other table already opened by ImageJ.
 * '''Restricting input data''': To restrict measurements to a range of distances ([[#CA1CellPlot|see related example]]), select the range of distances you want analyze. You can click the first row in the range, and then drag the mouse to the last row, or by holding down {{key press|Shift}} while selecting the last row in the range. Then,  in the prompt, activate the ''Restrict analysis to selected rows only'' checkbox.
 * '''Calculation of ''Radius step size''''': [[#StepSize|Radius step size]] is calculated from the difference between the first two rows in ''Distance column''. This is mainly relevant when choosing ''Annulus/Spherical shell'' as [[#Normalizer|normalizer]]. 
 
@@ -142,9 +142,8 @@ The majority of parameters is shared by all the Analysis commands in the{{bc|col
 <span id="ShollPlots"></span>[[File:ShollPlots.png|center|]]
 </center>
 
-'''''Linear'', ''Linear-norm'', ''Semi-log'' and ''Log-log'' profiles for the ddaC cell (<span style="border-bottom:1px dotted #ccc;">File▷ Open Samples▷ ddaC Neuron</span>), version 3.0'''.
+'''''Linear'', ''Linear-norm'', ''Semi-log'' and ''Log-log'' profiles for the ddaC cell ({{bc|color=white|File|Open Samples|ddaC Neuron}}), version 3.0'''.
 Most of the retrieved [[#Metrics_based_on_fitted_data|metrics]] are automatically highlighted by the plugin. ''Linear profile'': [[#MeanValueOfFunction|Mean value]] (horizontal grid line) and [[#Centroid|Centroid]] (colored mark). Logarithmic profiles: The [[#ShollDecay|Sholl regression coefficient]] (also known as Sholl decay) can be retrieved by linear regression using either the full range of data (blue line) or data within percentiles 10–90 (red line).  For this particular cell type, the Semi-log method is more [[#Dratio|informative]] when compared to the Log-log method.
-
 
 <span id="MethodsTable"></span>
 {| style="padding: 60px;" rules="rows"
@@ -182,7 +181,7 @@ Most of the retrieved [[#Metrics_based_on_fitted_data|metrics]] are automaticall
 
 <span style="display: inline-block; width: 25px">'''''r'''''</span> Distance from center of analysis (<u>r</u>adius of Sholl circle/sphere)
 
-<span style="display: inline-block; width: 25px">'''''log'''''</span>Natural logarithm, the logarithm to the base ''e''
+<span style="display: inline-block; width: 25px">'''''log'''''</span> Natural logarithm, the logarithm to the base ''e''
 
 <span style="display: inline-block; width: 25px">'''''S'''''</span>The [[#Choice_of_Methods|chosen property ]] of the sampling shell to be used in the normalization of ''Linear-norm'', ''Semi-log'', and ''Log-log'' profiles.<br> <span style="display: inline-block; width: 25px">&nbsp;</span>For 2D images, the ''Perimeter'' of the sampling circumference (2πr) or the ''Area'' of the corresponding circle (πr<sup>2</sup>)<br> <span style="display: inline-block; width: 25px">&nbsp;</span>For 3D images, the ''Surface'' of the sampling sphere (4πr<sup>2</sup>) or its respective ''Volume'' (4/3πr<sup>3</sup>)<br>
 
@@ -283,7 +282,7 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 == Complementary Tools ==
 <span id="Extended_Fitting"></span>[[ File:AnimatedPolyFit.gif|frame|Sampled data from the ddaC cell (<span style="border-bottom:1px dotted #ccc;">File▷ Open Samples▷ ddaC Neuron</span>) being fitted to polynomials of varying degree using a complementary [[BAR]] script.]]
 
-''Sholl Analysis'' tries to be as flexible as possible by providing several options for normalization and curve fitting. However, it cannot offer exhaustive curve fitting options as determining ''best fit models'' requires reasonable choices that are not amenable to full automation. For these reasons,  complementary tools for curve fitting can be installed as needed using [[BAR]] by subscribing to its [[BAR#Installation|update site]]. As of version 3.4.2, several [[BAR]] commands complement ''Sholl Analysis''. These include:
+''Sholl Analysis'' tries to be as flexible as possible by providing several options for normalization and curve fitting. However, it cannot offer exhaustive curve fitting options as determining ''best fit models'' requires reasonable choices that are not amenable to full automation. For this reason,  complementary tools for curve fitting can be installed as needed using [[BAR]] by subscribing to its [[BAR#Installation|update site]]. Several [[BAR]] commands complement ''Sholl Analysis''. These include:
 ;[[#Pre-processing|Segmentation]] tools:
 :Thresholding, shape-based masking and edge-detection routines (see [[BAR#List_of_BARs|full BAR list]])
 
@@ -292,8 +291,6 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 :'''{{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#fit-polynomial|label=Fit Polynomial}}:''' Fits a polynomial of any degree to sampled data. Features an heuristic algorithm for guessing a polynomial "best fit". Expands the built-in repertoire of polynomial fits up to 50<sup>th</sup> order functions.
 :'''{{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#create-boxplot|label=Create BoxPlot}}:''' Allows direct comparison of metrics between groups or sets of data (specially useful when tagging images with the ''Comment'' field in {{bc|color=white|Analysis|Sholl|Metrics &amp; Options...}})
 :'''{{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#plot-xy-data|label=Plot XY Data}}:''' Whole-purpose routine that plots data from imported spreadsheets. 
-
-To install [[BAR]], run <span style="border-bottom:1px dotted #ccc;">Help▷ Update...</span> Choose ''Advance Mode'' then ''Manage update sites''. Activate the ''BAR'' checkbox in the list of update sites. See the [[BAR#Installation|BAR documentation page]] for more details.
 
 == Pre-processing ==
 This section discusses some aspects that should be taken into account when segmenting neuronal arbors to be processed by ''Sholl Analysis''. Since  ''image segmentation'' (i.e., the partitioning of images into analyzable parts) is vulnerable to noise and background fluorescence, it is not possible to generalize universal routines that efficiently binarize grayscale images. This means that any procedure  that tries to appropriately describe the original fluorescence image with a binary mask must be tailored to the characteristics of individual datasets. As mentioned in [[#Complementary_Tools|Complementary Tools]], several routines listed here as distributed through the [[BAR]] [[List_of_update_sites|update site]].
@@ -401,7 +398,7 @@ If you already have [[#Importing|obtained profiles]] (either from previous runs 
 
 <source lang="java">
 distanceCol = "Radius";		// Column in .csv file listing distances
-intersecCol = "Crossings";	// Column in .csv file listing intersections
+intersecCol = "Inters.";	// Column in .csv file listing intersections
 
 dir = getDirectory("Choose the directory containing the profiles");
 list = getFileList(dir);
@@ -421,31 +418,31 @@ for (i=0; i<list.length; i++) {
 </source>
 
 == Advanced Usage ==
-Advanced options can be set by calling public methods of <tt>Sholl_Analysis</tt>, the main class of the plugin. Options include the ability to perform analyses without displaying plots or detailed tables, and the ability to display plots without annotations. There is also an option to specify the precision to be used in the calculations of [[#MeanValueOfFunction|Mean value]], [[#CriticalValue|Critical value]], and [[#CriticalRadius|Critical radius]].
-Changes made to these settings need to be set before running the plugin and remain in effect while ImageJ is running. For a full description of all the available options, have a look at the plugin's [http://tferr.github.io/ASA/apidocs/ API documentation (Javadocs)].
+Advanced options can be set by through the <tt>Sholl_Analysis</tt> [http://tferr.github.io/ASA/apidocs/ API]. 
+;IJ macro language example: Reduce the number of discretization steps involved in the calculation of [[#MeanValueOfFunction|Nav]], and [[#CriticalValue|Cv]], [[#CriticalRadius|Cr]]:
+<source lang="java">
+call("sholl.Sholl_Analysis.setPrecision", "100"); // Default is 1000, ie, 1/1000 of radius step size
+</source>
+Note that the IJM built-in [http://imagej.nih.gov/ij/developer/macro/functions.html#call call("class.method")] function can only pass strings to Java methods. For this reason, you have to quote the passed argument. <tt>Sholl_Analysis</tt> will then parse the string argument and interpreter its value. Note that calls made by the IJ macro language need to be set before running the plugin and remain in effect while ImageJ is running.
+
 ;Python example: Display only the main ''[[#Metrics|Sholl Table]]'', ignoring remaining outputs
 <source lang="python">
-import sholl.Sholl_Analysis as sa
-sa.setNoPlots(True) # Exclude plots from output
-sa.setNoTable(True) # Exclude detailed table from output
+import sholl.Option as so
+so.setNoPlots(True) # Exclude plots from output
+so.setNoTable(True) # Exclude detailed table from output
 </source>
 ;Java/BeanShell/Groovy example: Display plots without annotations
 <source lang="java">
 import sholl.Sholl_Analysis;
 Sholl_Analysis.setPlotLabels(true); // Exclude plot labels
 </source>
-;IJ macro language example: Reduce the number of discretization steps involved in the calculation of [[#MeanValueOfFunction|Nav]], and [[#CriticalValue|Cv]], [[#CriticalRadius|Cr]]:
-<source lang="java">
-call("sholl.Sholl_Analysis.setPrecision", "100"); // Default is 1000, ie, 1/1000 of radius step size
-</source>
-Note that the IJM built-in [http://imagej.nih.gov/ij/developer/macro/functions.html#call call("class.method")] function can only pass strings to Java methods. For this reason, you have to quote the passed argument. <tt>Sholl_Analysis</tt> will then parse the string argument and interpreter its value.
 
 == Auxiliary Commands ==
-;File▷ Open Samples▷ ddaC Neuron
-:Opens a sample image of a Drosophila class IV ddaC sensory neuron in which dendrites have been previously segmented (2D arbor). Use it to get acquainted with the plugin. Run <span style="border-bottom:1px dotted #ccc;">Image▷ Show Info...</span> (shortcut: {{key press|I}} ) to know more about this cell type.
+;{{bc|color=white|File|Open Samples|ddaC Neuron}}
+:Opens a sample image of a Drosophila class IV ddaC sensory neuron in which dendrites have been previously segmented (2D arbor). Use it to get acquainted with the plugin. Run {{bc|color=white|Image|Show Info...}} (shortcut: {{key press|I}} ) to know more about this cell type.
 
-;Help▷ About Plugins▷ About Sholl Analysis...
-:Retrieves information about the plugin version and a link to its Git source code {{GitHub|org=tferr|repo=ASA|label=repository}}  and its  [http://tferr.github.io/ASA/apidocs/ API documentation] (since v3.4.6). It is also accessible through the ''More »'' dropdown menu.
+;{{bc|color=white|Help|About Plugins|About Sholl Analysis...}}
+:Retrieves information about the plugin version and provides links to several resources including its source code {{GitHub|org=tferr|repo=ASA|label=repository}}  and its  [http://tferr.github.io/ASA/apidocs/ API documentation]. It is also accessible through the ''More »'' dropdown menu.
 
 == FAQ ==
 '''General'''
@@ -626,11 +623,7 @@ Releases notes are available on {{GitHub|org=tferr|repo=ASA|path=Notes.md#releas
 
 * '''[[Strahler_Analysis|Strahler_Analysis]]''' Strahler Analysis on [[Skeletonize3D|skeletonized]] arbors (distributed through the [[Neuroanatomy|Neuroanatomy update site]])
 
-* '''[http://www.reading.ac.uk/neuromantic/ Neuromantic]''' Standalone program for (semi-manual/semi-automatic) neuronal reconstruction.
-
-* '''[http://cng.gmu.edu:8080/Lm/ L-Measure (LM)]''' LM computes a large number of neuroanatomical parameters from reconstructions and is capable of [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html SWC] conversion. [http://www.reading.ac.uk/neuromantic/ Neuromantic] and [http://www.neuron.yale.edu/neuron/ Neuron] can also be used to convert several file formats (Eutectic, Neurolucida, MorphML, ...) into .swc.
-
-* '''[http://www.imagescience.org/meijering/software/neuronj/ NeuronJ]''' ImageJ plugin for semi-automated tracing and quantification of two-dimensional arbors. Note that '[[Simple_Neurite_Tracer|SNT]] can also be used to trace 2D images.
+* '''[http://www.imagescience.org/meijering/software/neuronj/ NeuronJ]''' ImageJ plugin for semi-automated tracing and quantification of two-dimensional arbors. Note that [[Simple_Neurite_Tracer|SNT]] can also be used to trace 2D images.
 
 == Publication ==
 * Ferreira T, Blackman A, Oyrer J, Jayabal A, Chung A, Watt A, Sjöström J, van Meyel D. ('''2014'''), [http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html Neuronal morphometry directly from bitmap images], ''Nature Methods'' 11(10): 982–984
