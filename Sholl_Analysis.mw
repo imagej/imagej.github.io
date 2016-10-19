@@ -425,11 +425,27 @@ call("sholl.Sholl_Analysis.setPrecision", "100"); // Default is 1000, ie, 1/1000
 </source>
 Note that the IJM built-in [http://imagej.nih.gov/ij/developer/macro/functions.html#call call("class.method")] function can only pass strings to Java methods. For this reason, you have to quote the passed argument. <tt>Sholl_Analysis</tt> will then parse the string argument and interpreter its value. Note that calls made by the IJ macro language need to be set before running the plugin and remain in effect while ImageJ is running.
 
-;Python example: Display only the main ''[[#Metrics|Sholl Table]]'', ignoring remaining outputs
+;Python example: 3D analysis of an image stack
 <source lang="python">
-import sholl.Option as so
-so.setNoPlots(True) # Exclude plots from output
-so.setNoTable(True) # Exclude detailed table from output
+#@ImagePlus imp
+#@LogService log
+
+from sholl import Sholl_Analysis, Options as so
+
+xc, yc, zc = 100, 100, 10 # x,y,z coordinates of center
+distances = [10,20,30,40,50] # sampling radii
+lowerT, upperT = 100, 255 # threshold values
+
+sa = Sholl_Analysis()
+sa.setThreshold(lowerT, upperT) 
+sa.setCenter(xc, yc, zc)
+
+log.info("Analyzing "+ imp.getTitle())
+profile = sa.analyze3D(xc, yc, zc, distances, imp)
+for idx, inters in enumerate(profile):
+    log.info("r=" + str(distances[idx]) +": "+ str(inters) +" intersections")
+
+
 </source>
 ;Java/BeanShell/Groovy example: Display plots without annotations
 <source lang="java">
