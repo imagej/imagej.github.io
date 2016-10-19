@@ -20,27 +20,27 @@
 ;Having Problems?:Jump to [[#FAQ|FAQs]]
 </div>
 </div>{{TOC}}
-Automated and multithreaded bitmap Sholl for direct analysis of fluorescent images of neuronal arbors or traced morphologies. Features powerful quantifications based on curve fitting. Analysis of previously obtained profiles is also possible.
+Automated and multithreaded bitmap Sholl for direct analysis of fluorescent images of neuronal arbors or traced morphologies. Features powerful quantifications based on curve fitting. Analysis of Sholl profiles obtained outside of ImageJ is also possible.
 
 == Introduction ==
 <span id="CA1CellMask"></span>[[ File:BitmapSholl-CA1mask.png|frame|[[Skeletonize3D|Skeletonized]] hippocampal CA1 cell<ref name="Gross"></ref> (juvenile mouse) in which apical and basal dendrites have been analyzed [[#CA1CellPlot|separately]] and [[#Output_Options|color coded]] according to their Sholl profile. Warmer hues indicate higher number of Intersections (''N''). [[#CriticalRadius|Critical radius]] (''r<sub>c</sub>'') and [[#MeanValueOfFunction|Mean value]] (''N<sub>av</sub>'') are indicated.]]
 
 The Sholl technique<ref name="Sholl"></ref> is used to describe neuronal arbors. This plugin performs  Sholl directly on 2D and 3D grayscale images of isolated neurons. Its internal algorithm to collect data is based upon how Sholl analysis is done by hand — it creates a series of concentric ''shells'' (circles or spheres) around the focus of a neuronal arbor, and counts how many times the arbor intersects the sampling shells.
 The major advantages of this plugin over other implementations are:
-* It does not require previous tracing of the arbor (although analysis can be applied to [[#Analysis of Traced Cels|traced arbors]])
+* It does not require previous tracing of the arbor (although it can also analyze [[#Analysis of Traced Cells|traced arbors]])
 * It combines [[#MethodsTable|curve fitting]] with several [[#Sholl Plots|methods]] to automatically retrieve [[#Metrics|quantitative descriptors]] from sampled data, which allows direct statistical comparisons between arbors
 * It allows [[#Multiple Samples and Noise Reduction|continuous and repeated sampling]] around user-defined foci
 * It allows [[#Batch Processing|batch processing]]
 
 == Installation ==
-The plugin is distributed with Fiji. It is installed under {{bc|color=white|Analysis|Sholl|&nbsp;}}. However, as part of an active effort to [[2015-12-22_-_The_road_to_Java_8|modernize ImageJ]] (see also this [[2015-06-15_-_Major_updates_in_the_works|announcement]]), '''you need to [[How_to_follow_a_3rd_party_update_site#Add_update_sites | subscribe]] to the Java 8 update site to access the latest plugin version''' (this will also allow you to access the newest [[2015-12-22_-_The_road_to_Java_8#Components_which_have_already_migrated|ImageJ capabilities]]). To do so, you can either:
+The plugin is distributed with Fiji. It installs several commands under {{bc|color=white|Analysis|Sholl|&nbsp;}}. However, as part of an active effort to [[2015-12-22_-_The_road_to_Java_8|modernize ImageJ]] (see also this [[2015-06-15_-_Major_updates_in_the_works|announcement]]), '''you need to [[How_to_follow_a_3rd_party_update_site#Add_update_sites | subscribe]] to the Java 8 update site to access the latest plugin version''' (this will also allow you to access the newest [[2015-12-22_-_The_road_to_Java_8#Components_which_have_already_migrated|ImageJ capabilities]]). To do so, you can either:
 * [[Downloads|Download the latest Fiji release]]. Newer releases come pre-bundled with Java 8, and are already subscribed to the [[User:Java-8|Java-8 update site]].
 * If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [[Troubleshooting#Checking_the_Java_version|Fiji installation aware of it]]. Then subscribe to the [[User:Java-8|Java-8 update site]].
 
 == Direct Analysis of Images ==
-In this mode, the plugin requires a [[#faq:threshold|binary image or a segmented]] [[#faq:image-types|grayscale image]] (2D or 3D) containing a single neuron.
+In this mode (bitmap analysis), the plugin requires a [[#faq:threshold|binary image or a segmented]] [[#faq:image-types|grayscale image]] (2D or 3D) containing a single neuron.
 
-# Segment the neuronal arbor using <span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷ Threshold...</span> (shortcut: <span style="display:inline-block;">{{key press|Shift|T}} </span>).
+# Segment the neuronal arbor using {{bc|color=white|Image|Adjust|Threshold...}} (shortcut: <span style="display:inline-block;">{{key press|Shift|T}} </span>). N.B.: When using multichannel images, you will have to set the its display mode to ''Grayscale'' using {{bc|color=white|Image|Color|Channels Tool...}} ({{key press|Shift|Z}}), because images displayed as ''Composites'' cannot be thresholded.
 # Define the center of analysis using a valid [[#Startup_ROI|startup ROI]].
 # Run {{bc|color=white|Analysis|Sholl|Sholl Analysis...}}, adjusting the default [[#Parameters|Parameters]] in the dialog prompt.
 # Press ''More » [[#Cf._Segmentation|Cf. Segmentation]]'' to visually inspect the two thresholded phases: ''arbor'' and ''background''.
