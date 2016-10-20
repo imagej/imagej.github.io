@@ -437,33 +437,37 @@ sa = Sholl_Analysis()
 
 if sa.validateImage(imp):
 
-	# Specify some output options
-	so.setNoTable(False)
-	so.setNoPlots(False)
-	sa.setDescription(imp.getTitle(), True)
-	sa.setExportPath(exportPath, True)
-	sa.setInteractiveMode(False)
+    # Specify some output options
+    so.setNoTable(False)
+    so.setNoPlots(False)
+    sa.setDescription(imp.getTitle(), True)
+    sa.setExportPath(exportPath, True)
+    sa.setInteractiveMode(False)
 
-	# Specify analysis settings
-	sa.setCenter(xc, yc, zc)
-	sa.setThreshold(lowerT, upperT)
+    # Specify analysis settings
+    sa.setCenter(xc, yc, zc)
+    sa.setThreshold(lowerT, upperT)
 
-	# Retrieve intersection counts
- 	counts = sa.analyze3D(xc, yc, zc, distances, imp)
+    # Retrieve intersection counts
+    counts = sa.analyze3D(xc, yc, zc, distances, imp)
 
-	# Do something with sampled data
-	for idx, inters in enumerate(counts):
-		log.info("r=" + str(distances[idx]) +": "+ str(inters) +" intersections")
+    # Check that analysis was successfull
+    if all(c == 0 for c in counts):
+        log.error("All intersection counts were zero")
 
-	# Retrieve metrics
-	sa.analyzeProfile(distances, counts, True)
+    # Do something with sampled data
+    for idx, inters in enumerate(counts):
+        log.info("r="+ str(distances[idx]) +": "+ str(inters) +" intersections")
 
-	log.info("Analysis finished. Files saved to "+ exportPath)
-	log.warn("Sholl Results Table has not been saved")
+    # Retrieve metrics
+    sa.analyzeProfile(distances, counts, True)
+
+    log.info("Analysis finished. Files saved to " + exportPath)
+    log.warn("Sholl Results Table has not been saved")
 
 else:
 
-	log.error(imp.getTitle() + " is not a valid image")
+    log.error(imp.getTitle() + " is not a valid image")
 
 </source>
 Display plots without annotations (BeanShell/Groovy):
