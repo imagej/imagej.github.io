@@ -418,40 +418,65 @@ for (i=0; i<list.length; i++) {
 </source>
 
 == Advanced Usage ==
-Advanced options can be set by through the <tt>Sholl_Analysis</tt> [http://tferr.github.io/ASA/apidocs/ API]. 
-;IJ macro language example: Reduce the number of discretization steps involved in the calculation of [[#MeanValueOfFunction|Nav]], and [[#CriticalValue|Cv]], [[#CriticalRadius|Cr]]:
-<source lang="java">
-call("sholl.Sholl_Analysis.setPrecision", "100"); // Default is 1000, ie, 1/1000 of radius step size
-</source>
-Note that the IJM built-in [http://imagej.nih.gov/ij/developer/macro/functions.html#call call("class.method")] function can only pass strings to Java methods. For this reason, you have to quote the passed argument. <tt>Sholl_Analysis</tt> will then parse the string argument and interpreter its value. Note that calls made by the IJ macro language need to be set before running the plugin and remain in effect while ImageJ is running.
+Advanced options can be set by through the <tt>Sholl_Analysis</tt> [http://tferr.github.io/ASA/apidocs/ API]. Here are some examples:
 
-;Python example: 3D analysis of an image stack
+3D analysis of an image stack (Python):
 <source lang="python">
 #@ImagePlus imp
 #@LogService log
-
+ 
 from sholl import Sholl_Analysis, Options as so
+from os.path import expanduser
 
-xc, yc, zc = 100, 100, 10 # x,y,z coordinates of center
-distances = [10,20,30,40,50] # sampling radii
-lowerT, upperT = 100, 255 # threshold values
+xc, yc, zc = 100, 100, 10  # x,y,z coordinates of center
+lowerT, upperT = 88, 255   # threshold values for segmentation
+distances = [10, 20, 30, 40, 50] # sampling radii
+exportPath = expanduser("~") # home directory
 
 sa = Sholl_Analysis()
-sa.setThreshold(lowerT, upperT) 
-sa.setCenter(xc, yc, zc)
 
-log.info("Analyzing "+ imp.getTitle())
-profile = sa.analyze3D(xc, yc, zc, distances, imp)
-for idx, inters in enumerate(profile):
-    log.info("r=" + str(distances[idx]) +": "+ str(inters) +" intersections")
+if sa.validateImage(imp):
 
+	# Specify some output options
+	so.setNoTable(False)
+	so.setNoPlots(False)
+	sa.setDescription(imp.getTitle(), True)
+	sa.setExportPath(exportPath, True)
+	sa.setInteractiveMode(False)
+
+	# Specify analysis settings
+	sa.setCenter(xc, yc, zc)
+	sa.setThreshold(lowerT, upperT)
+
+	# Retrieve intersection counts
+ 	counts = sa.analyze3D(xc, yc, zc, distances, imp)
+
+	# Do something with sampled data
+	for idx, inters in enumerate(counts):
+		log.info("r=" + str(distances[idx]) +": "+ str(inters) +" intersections")
+
+	# Retrieve metrics
+	sa.analyzeProfile(distances, counts, True)
+
+	log.info("Analysis finished. Files saved to "+ exportPath)
+	log.warn("Sholl Results Table has not been saved")
+
+else:
+
+	log.error(imp.getTitle() + " is not a valid image")
 
 </source>
-;Java/BeanShell/Groovy example: Display plots without annotations
+Display plots without annotations (BeanShell/Groovy):
 <source lang="java">
 import sholl.Sholl_Analysis;
 Sholl_Analysis.setPlotLabels(true); // Exclude plot labels
 </source>
+
+Reduce the number of discretization steps involved in the calculation of [[#MeanValueOfFunction|Nav]], and [[#CriticalValue|Cv]], [[#CriticalRadius|Cr]] (IJ macro (IJM) language):
+<source lang="java">
+call("sholl.Sholl_Analysis.setPrecision", "100"); // Default is 1000, ie, 1/1000 of radius step size
+</source>
+Note that the IJM built-in [http://imagej.nih.gov/ij/developer/macro/functions.html#call call("class.method")] function can only pass strings to Java methods. For this reason, you have to quote the passed argument. <tt>Sholl_Analysis</tt> will then parse the string argument and interpreter its value. Note that calls made by the IJM language need to be set before running the plugin and remain in effect while ImageJ is running.
 
 == Auxiliary Commands ==
 ;{{bc|color=white|File|Open Samples|ddaC Neuron}}
