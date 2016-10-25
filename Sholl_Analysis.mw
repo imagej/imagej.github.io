@@ -7,7 +7,7 @@
 | maintainer     = {{Person|Tiago}}
 | source         = {{GitHub|org=tferr|repo=ASA}}
 | released       = December 2012
-| latest version = '''3.6.7 October 2016'''
+| latest version = '''3.6.8 October 2016'''
 | status         = Active ({{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Release Notes}})
 | category       = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]], [[:Category:Neuroanatomy|Neuroanatomy]]
 }}
@@ -15,7 +15,7 @@
 <div style="padding-top:17em;padding-left:1.5em;">
 <div style="font-size:175%;border-bottom:1px dotted #ccc;margin-bottom:0.55em;">Quick links</div>
 
-;Analysis of traced arbors?:Jump to [[#Analysis of Traced Cells|Traced Cells]]
+;Analysis of traced arbors?:Jump to [[#Analysis of Traced Cells|Traced Cells]] or [[#external-traces|Other tracing software]]
 ;Segmentation issues?:Jump to [[#Cf. Segmentation|Cf. Segmentation]] or [[#Pre-processing|Pre-processing]]
 ;Having Problems?:Jump to [[#FAQ|FAQs]]
 </div>
@@ -68,16 +68,17 @@ Note the reversal of ''[[#Cf._Segmentation|Cf. Segmentation]] output'' and how t
 |}
 {{Tip
 | tip = With binary images, ''Sholl Analysis'' treats  zero intensities as the background, independently of the image lookup table or the state of the ''Black background option'' in <span style="border-bottom:1px dotted #ccc;">Process▷ Binary▷ Options...</span> As with any other [http://imagej.net/docs/guide/146-29.html#infobox:blackBackground ImageJ routine], confusing background with foreground pixels will lead to aberrant results, including: 1) overestimation of branches and 2) artifacts at distances intersecting the boundaries of the image canvas.}}
+<span id="Traces"></span>
 == Analysis of Traced Cells ==
-In this mode, the plugin analyzes reconstructed arbors. This is particularly relevant for stainings that do not allow single-cell resolution. [[#Batch Processing |Batch processing]] is also possible.
-
-# Run {{bc|color=white|Analysis|Sholl|Sholl Analysis (Tracings)...}} and specify input files: a tracing file (a <code>.swc</code> or a [[Simple Neurite Tracer]] <code>.traces</code> file) and the respective image associate to such files. 
-# Choose the center of analysis using the drop down menu in the main prompt listing SWC tags (''axon'', ''dendrite'', ''soma'', etc.). If you have not tagged your traces, you will still be able to choose the center of the analysis through the [[Simple Neurite Tracer]] interface.
-# Adjust the default [[#Parameters|Parameters]] in the ''Sholl Analysis'' prompt.
+[[ File:ShollTracingsPrompt.png|400px|right |Main prompt (version 3.6.8), when input is traced data ({{bc|color=white|Analysis|Sholl|Sholl Analysis (Tracings)...}})]]In this mode, the plugin analyzes reconstructed arbors. This is particularly relevant for stainings that do not allow single-cell resolution.
+# Run {{bc|color=white|Analysis|Sholl|Sholl Analysis (Tracings)...}} and specify input files: a tracing file (a <code>.swc</code> or a [[Simple Neurite Tracer]] <code>.traces</code> file). The command is macro recordable, and thus, [[#Batch Processing|batch processing]] is also possible.
+# Choose the center of analysis using the drop down menu in the main prompt listing SWC tags (''axon'', ''dendrite'', ''soma'', etc.). Note that if your tracings are not tagged you can do so in [[Simple Neurite Tracer]]
+# Adjust the default [[#Parameters|Parameters]]
 # Problems? Read the  [[#FAQ|FAQs]]
 
-Note that if you don't use [[Simple Neurite Tracer]], you can still analyze reconstructed data created by any software capable of [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html SWC] export such as [http://www.reading.ac.uk/neuromantic/ Neuromantic], [http://research.mssm.edu/cnic/tools-ns.html NeuronStudio], [https://sourceforge.net/projects/py3dn/ Py3DN] or [http://www.vaa3d.org/ Vaa3D]). In addition, [http://cng.gmu.edu:8080/Lm/ L-Measure], [http://neuronland.org/NL.html NLMorphologyConverter] or [http://www.neuron.yale.edu/neuron/ Neuron] can also be used to convert several file formats (including proprietary formats from closed-source commercial software such as Neurolucida®, MicroBrightField, Inc.) into SWC.
-
+{{Tip
+| id = external-traces
+| tip = You can use  {{bc|color=white|Sholl Analysis (Tracings)...}} to analyze reconstructed data from any software capable of [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html SWC] export such as [http://www.reading.ac.uk/neuromantic/ Neuromantic], [http://research.mssm.edu/cnic/tools-ns.html NeuronStudio], [https://sourceforge.net/projects/py3dn/ Py3DN] or [http://www.vaa3d.org/ Vaa3D]), not just [[Simple Neurite Tracer]]. In addition, [http://cng.gmu.edu:8080/Lm/ L-Measure], [http://neuronland.org/NL.html NLMorphologyConverter] or [http://www.neuron.yale.edu/neuron/ Neuron] can also be used to convert several file formats (including proprietary formats from closed-source commercial software such as Neurolucida®, MicroBrightField, Inc.) into SWC.}}
 <span id="Importing"></span>
 == Analysis of Existing Profiles ==
 [[File:BitmapSholl-CA1Compartment.png|frame|right|Linear plot for CA1 cell [[#CA1CellMask|described above]]. Using the soma as center, image was sampled twice using the [[#Restrict|Restrict analysis to hemicircle/hemisphere]] option in order to segregate apical from basal dendrites. For convenience, distances for basal branches were assigned negative values. For clarity, the binary image of the arbor was rotated, scaled and overlaid (in green) over the plot canvas. Note that it is also possible to restrict [[#MethodsTable|curve fitting]] to a sub-range of distances once [[#Importing|data is collected]].]]
@@ -260,7 +261,7 @@ Morphometric descriptors and other properties of the arbor are printed to a dedi
 : See also [[#MaxIntersRadius|Max inters. radius]]
 {{Tip
 | id = Nomenclature
-| tip = '''Nomenclature''': [[#References|Previous authors]] have used different terms to describe the largest value taken by the Sholl profile. Since the Sholl technique is not restricted to dendritic arbors and can be applied to any tree-like structure such as axonal arbors, mammary ducts or blood vessels (cf. [[#Citations|List of citations]]), ''Sholl Analysis'' introduces the term [[#CriticalRadius|Critical radius]], renaming ''Dendrite maximum'' (''N<sub>m</sub>'') to [[#CriticalValue|Critical value]]. Thus, ''Sholl Analysis'' may not follow the conventions adopted by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]].
+| tip = '''Nomenclature''': [[#References|Previous authors]] have used different terms to describe the largest value taken by the Sholl profile, including ''Dendrite maximum''. Since the Sholl technique is not restricted to dendritic arbors and can be applied to any tree-like structure such as axonal arbors, mammary ducts or blood vessels (cf. [[#Citations|List of citations]]), ''Sholl Analysis'' introduces the term [[#CriticalRadius|Critical radius]], renaming ''Dendrite maximum'' (''N<sub>m</sub>'') to [[#CriticalValue|Critical value]]. 
 }}
 ;<span id="MeanValueOfFunction"></span>Mean value
 :The mean value<ref name="Stulic"></ref> of the fitted polynomial function [[#eq1|(1)]], representing the average of intersections over the whole area occupied by the arbor. Abbreviation ''N<sub>av</sub>''.
@@ -619,7 +620,7 @@ The [[Citing|authoritative reference]] for Fiji:
 		<span id="faq:AUC"></span>'''Would it be possible to retrieve the Area Under the Curve  (linear Sholl plot)?'''
 	</li>
 	<dl><dd>
-		Sure. But it would hardly be relevant. The area under the curve (AUC, the area between the sampled curve and the horizontal axis, i.e., its definite integral) could be estimated using, e.g., the [[wikipedia:Trapezoidal rule|trapezoidal rule]]. However, because data is always sampled at equally spaced intervals, doing so would be the same as multiplying [[#MeanInters|Mean inters.]] by the distance between [[#EndRadius|Ending radius]] and [[#StartRadius|Starting radius]]. Thus, effectively, AUC is  redundant with [[#MeanInters|Mean inters.]], that is already an integrated measurement of the sampled data. On the other hand,
+		Sure. But it would hardly be relevant for data sampled at fixed intervals. The area under the curve (AUC, the area between the sampled curve and the horizontal axis, i.e., its definite integral) could be estimated using, e.g., the [[wikipedia:Trapezoidal rule|trapezoidal rule]]. However, because data is always sampled at equally spaced intervals, doing so would be the same as multiplying [[#MeanInters|Mean inters.]] by the distance between [[#EndRadius|Ending radius]] and [[#StartRadius|Starting radius]]. Thus, effectively, AUC is  redundant with [[#MeanInters|Mean inters.]], that is already an integrated measurement of the sampled data. On the other hand,
 one could retrieve the AUC of the polynomial fit, but such property is already covered by [[#MeanValueOfFunction|Mean value]].
 	</dd></dl>
 	<li>
