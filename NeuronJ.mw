@@ -5,11 +5,12 @@
 | author                 = {{Person|ImageScience}}
 | source                 = {{GitHub|org=imagescience|repo=NeuronJ}}
 | status                 = 
-| category               = [[:Category:Plugins]]
+| category               = [[:Category:Plugins|Plugins]] [[Category:ImageScience|ImageScience]] [[Category:Neuroanatomy|Neuroanatomy]]
 | website                = http://imagescience.org/meijering/software/neuronj/
-}}[http://imagescience.org/meijering/software/neuronj/ NeuronJ] is an ImageJ plugin to facilitate the tracing and analysis of elongated image structures.
+}}[http://imagescience.org/meijering/software/neuronj/ NeuronJ] is an ImageJ plugin to facilitate the tracing and analysis of elongated image structures, such as neuronal processes, complementing [[Simple Neurite Tracer]].
 
-NeuronJ is available from the [[ImageScience]] update site.
+NeuronJ features a friendly interface and a detailed [https://imagescience.org/meijering/software/neuronj/manual/ online manual] but can only be used to reconstruct 2D images and is not capable of [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html SWC] export, the most common format used in neuronal reconstructions. If you need to reconstruct three-dimensional imagery and require a program aware of SWC, we recommend using [[Simple Neurite Tracer]] instead.
 
 [[Category:Plugins]]
 [[Category:ImageScience]]
+[[Category:Neuroanatomy]]
