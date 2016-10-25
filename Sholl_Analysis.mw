@@ -661,15 +661,15 @@ one could retrieve the AUC of the polynomial fit, but such property is already c
 Releases notes are available on {{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Github}}. If you do not mind unstable software, {{GitHub|org=tferr|repo=ASA|path=Notes.md#development-builds|label=development builds}} may be found [http://jenkins.imagej.net/job/Sholl-Analysis here]. Once new features mature and no major issues are found these development versions will be made available, as usual, through [[Update_Fiji|Fiji's Updater]].
 
 == Related Resources ==
-* [[:Category:Neuroanatomy|Neuroanatomy]] resources, including:
-** '''[[Simple_Neurite_Tracer|Simple Neurite Tracer]] (SNT)''' Mark Longair's plugin for semi-automated three-dimensional tracing. Data from [[Simple_Neurite_Tracer:_Sholl_analysis|SNT]] can be [[#Importing|analyzed]] by the Sholl Analysis plugin.
-** [[Neuroanatomy|Neuroanatomy update site]]
+* '''[[Simple_Neurite_Tracer|Simple Neurite Tracer]] (SNT)''' The remarkable ImageJ framework for semi-automated of two- and three-dimensional tracing. SNT performs Sholl using the ''Sholl Analysis'' plugin. On the other hand, ''Sholl Analysis'' uses SNT to [[#Analyze Traced Cells|analyze tracings]]
+
+* '''[[NeuronJ]]''' Another option for 2D reconstructions. NeuronJ features a friendly interface but is restricted to 2D images, is not capable of SWC export and is no longer under active development
+
+* '''[[:Category:Neuroanatomy|Neuroanatomy Resources]]''' in this wiki
+
+* '''[[Neuroanatomy|Neuroanatomy update site]]''', distributing e.g., the '''[[Strahler_Analysis|Strahler_Analysis]]''' plugin
 
 * '''[[BAR]]''', ''B''roadly ''A''pplicable ''R''outines that complement ''Sholl Analysis''
-
-* '''[[Strahler_Analysis|Strahler_Analysis]]''' Strahler Analysis on [[Skeletonize3D|skeletonized]] arbors (distributed through the [[Neuroanatomy|Neuroanatomy update site]])
-
-* '''[http://www.imagescience.org/meijering/software/neuronj/ NeuronJ]''' ImageJ plugin for semi-automated tracing and quantification of two-dimensional arbors. Note that [[Simple_Neurite_Tracer|SNT]] can also be used to trace 2D images.
 
 == Publication ==
 * Ferreira T, Blackman A, Oyrer J, Jayabal A, Chung A, Watt A, Sjöström J, van Meyel D. ('''2014'''), [http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html Neuronal morphometry directly from bitmap images], ''Nature Methods'' 11(10): 982–984
