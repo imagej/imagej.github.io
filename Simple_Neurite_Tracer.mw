@@ -1,7 +1,7 @@
 {{Infobox
 | software = Fiji
 | name = Simple Neurite Tracer
-| author = Mark Longair [https://github.com/fiji/Simple_Neurite_Tracer/graphs/contributors and others]
+| author = [[User:Mark|Mark Longair]] [https://github.com/fiji/Simple_Neurite_Tracer/graphs/contributors and others]
 | maintainer = [[User:Tiago|Tiago Ferreira]]
 | latest version = '''3.0.5 October 2016'''
 | source = {{GitHub|org=fiji|repo=Simple_Neurite_Tracer}}
@@ -17,7 +17,7 @@ This plugin is designed to allow easy semi-automatic tracing of neurons or other
 {{Tip | tip = If you are not familiar with Simple Neurite Tracer, have a look at its [[Simple Neurite Tracer: Introductory Screencast|Introductory Screencast]].}}
 
 === Licensing ===
-This plugin is free software, licensed under the GNU GPL v3 (with the exception of the pal source files, which are covered by the GNU LGPL) so please do contribute any patches or suggestions that you think would be useful. Please email me at mark-imagej@longair.net with any feedback.
+This plugin is free software, licensed under the GNU GPL v3 (with the exception of the pal source files, which are covered by the GNU LGPL) so please do contribute any patches or suggestions that you think would be useful.
 
 === Installation ===
 Simple Neurite Tracer is part of Fiji and distributed through the Java 8 [[How_to_follow_a_3rd_party_update_site#Add_update_sites | update site]]. If you are not running a Java 8 -enabled installation you should [[Downloads|download the latest Fiji release]]. Newer releases come pre-bundled with Java 8, and are already subscribed to the [[User:Java-8|Java-8 update site]]. Once installed you should run {{bc | Help | Update Fiji}} to make sure that you have the most recent version.  You can find the plugin in {{bc | Plugins | Segmentation | Simple Neurite Tracer}} (or by bringing up the [[Using the Command Launcher|Command Finder]] and typing {{key press|NEURITE  TRACER}}.
@@ -65,7 +65,7 @@ Simple Neurite Tracer is also easy to use programmatically.  For instance, the e
 As another small example, if you just wanted to load a set of SWC files using the Simple Neurite Tracer API and display them in the 3D viewer, a Jython script like this will do: https://gist.github.com/838695
 
 == Authors ==
-This plugin was written by Mark Longair except for the following important sections:
+This plugin was written by [[User:Mark|Mark Longair]] except for the following important sections:
 * The code for doing Gaussian convolutions of the image and the calculation of principal curvatures was written by [[User:StephanP|Stephan Preibisch]].
 * The code for loading AmiraMesh label files was written by [[User:Schindelin|Johannes Schindelin]].
 * The code for generating meshes of neurons for the 3D viewer was originally written by [[User:Albertcardona|Albert Cardona]] for [[TrakEM2]].
@@ -74,7 +74,7 @@ This plugin was written by Mark Longair except for the following important secti
 Many thanks to all of those authors for releasing their code under the GPL.
 
 == Acknowledgments ==
-This software was developed during Mark Longair's PhD, funded by the [http://www.epsrc.ac.uk/ResearchFunding/Programmes/LifeSciencesInterface/ EPSRC / MRC life sciences interface programme], and in particular the [http://www.anc.inf.ed.ac.uk/neuroinformatics/ Doctoral Training Centre in Neuroinformatics at the University of Edinburgh]. A substantial part of the later development of this plugin was done during the [http://www.hhmi.org/janelia/ Janelia Farm] Hackathon of 2007, and I owe a debt of thanks to the Howard Hughes Medical Institute for making it possible for me to go to that event. Thank-you also to Arnim Jenett, Adrianna Teriakidis and Benny Lam for their feedback and help with testing various versions of this plugin.
+This software was developed during [[User:Mark|Mark Longair]]'s PhD, funded by the [http://www.epsrc.ac.uk/ResearchFunding/Programmes/LifeSciencesInterface/ EPSRC / MRC life sciences interface programme], and in particular the [http://www.anc.inf.ed.ac.uk/neuroinformatics/ Doctoral Training Centre in Neuroinformatics at the University of Edinburgh]. A substantial part of the later development of this plugin was done during the [http://www.hhmi.org/janelia/ Janelia Farm] Hackathon of 2007, and I owe a debt of thanks to the Howard Hughes Medical Institute for making it possible for me to go to that event. Thank-you also to Arnim Jenett, Adrianna Teriakidis and Benny Lam for their feedback and help with testing various versions of this plugin.
 
 == References ==
 <references/>
