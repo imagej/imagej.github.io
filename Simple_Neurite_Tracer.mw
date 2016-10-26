@@ -1,105 +1,82 @@
-{{TOC}}[[Image:SimpleNeuriteTracer2.png|thumb|center|600px|Simple Neurite Tracer: This image shows traced neurons in an adult <i>Drosophila</i> brain.  Neurites were reconstructed using the Simple Neurite Tracer.  The neuropil regions were segmented in the [[Segmentation Editor]] and added to the viewer with [[Show Color Surfaces]].]]
-
-__NOTOC__
-
-{{Clear}}
-
 {{Infobox
-| software               = ImageJ
-| name                   = Simple Neurite Tracer
-| author                 = Mark Longair [http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/#authors and others]
-| maintainer             = Mark Longair
-| filename               = Simple_Neurite_Tracer.jar
-| source                 = {{GitHub|org=fiji|repo=Simple_Neurite_Tracer}}
-| status                 = stable
+| software = Fiji
+| name = Simple Neurite Tracer
+| author = Mark Longair [https://github.com/fiji/Simple_Neurite_Tracer/graphs/contributors and others]
+| maintainer = [[User:Tiago|Tiago Ferreira]]
+| latest version = '''3.0.5 October 2016'''
+| source = {{GitHub|org=fiji|repo=Simple_Neurite_Tracer}}
+| status = Stable ([https://github.com/fiji/Simple_Neurite_Tracer/releases Release notes])
 }}
-
-To help you to get started with using this plugin, there is an explanatory screencast here: [[Simple Neurite Tracer: Introductory Screencast]]
+The ImageJ framework for semi-automated tracing of neurons and other tube-like structures.
 
 === Introduction ===
+This plugin is designed to allow easy semi-automatic tracing of neurons or other tube-like structures (e.g. blood vessels) through 3D image stacks. The plugin has built-in tools for analysis and hardware accelerated 3D visualization of the results. Data can be imported and exported in SWC files for interaction with other software, or details of the traces can be exported as CSV files for analysis in spreadsheets or statistical software.  The [[#Technical Documentation|native file format]] is open and XML-based.  This plugin is Free Software (also known as Open Source software) - to obtain the source code, please see [[Downloading_and_Building_Fiji_From_Source|Building Fiji From Source]].
 
-This plugin is designed to allow easy semi-automatic tracing of neurons or other tube-like structures (e.g. blood vessels) through 3D image stacks.  The plugin has built-in tools for analysis and hardware accelerated 3D visualization of the results.  Data can be imported and exported in SWC files for interaction with other software, or details of the traces can be exported as CSV files for analysis in spreadsheets or statistical software.  The native file format is open and XML-based.  This plugin is Free Software (also known as Open Source software) - to obtain the source code, please see [[Downloading_and_Building_Fiji_From_Source]].
+[[Image:SimpleNeuriteTracer2.png|thumb|center|700px|Simple Neurite Tracer: This image shows traced neurons in an adult <i>Drosophila</i> brain.  Neurites were reconstructed using the Simple Neurite Tracer.  The neuropil regions were segmented in the [[Segmentation Editor]] and added to the viewer with [[Show Color Surfaces]].]]
+
+{{Tip | tip = If you are not familiar with Simple Neurite Tracer, have a look at its [[Simple Neurite Tracer: Introductory Screencast|Introductory Screencast]].}}
 
 === Licensing ===
-
 This plugin is free software, licensed under the GNU GPL v3 (with the exception of the pal source files, which are covered by the GNU LGPL) so please do contribute any patches or suggestions that you think would be useful. Please email me at mark-imagej@longair.net with any feedback.
 
 === Installation ===
-
-Simple Neurite Tracer is distributed as part of Fiji - to install it, please [[Downloads|download Fiji]] and run {{bc | Help | Update Fiji}} to make sure that you have the most recent version.  You can find the plugin in {{bc | Plugins | Segmentation | Simple Neurite Tracer}} (or by bringing up the [[Using the Command Launcher|Command Finder]] and typing 'neurite tracer'.
+Simple Neurite Tracer is part of Fiji and distributed through the Java 8 [[How_to_follow_a_3rd_party_update_site#Add_update_sites | update site]]. If you are not running a Java 8 -enabled installation you should [[Downloads|download the latest Fiji release]]. Newer releases come pre-bundled with Java 8, and are already subscribed to the [[User:Java-8|Java-8 update site]]. Once installed you should run {{bc | Help | Update Fiji}} to make sure that you have the most recent version.  You can find the plugin in {{bc | Plugins | Segmentation | Simple Neurite Tracer}} (or by bringing up the [[Using the Command Launcher|Command Finder]] and typing {{key press|NEURITE  TRACER}}.
 
 === Feedback ===
-
-Please report any bugs that you find with Fiji's {{bc | Help | Report a Bug}} menu option.  For other feedback please email ''mark-imagej'' at ''longair.net''.   There are other ways of giving feedback on Fiji (e.g. the mailing lists, IRC, etc.) listed at [[Help]].
-
-I'm starting a public list of the most requested new features, which you can find on the [[Simple Neurite Tracer: Wishlist]] page.
+Please report any bugs that you find in the [http://forum.imagej.net forum] or on [https://github.com/fiji/Simple_Neurite_Tracer/issues GitHub]. There are other ways of giving feedback on Fiji (e.g. the mailing lists, IRC, etc.) listed at [[Help]]. A public list of the most requested features, can be found on the [[Simple Neurite Tracer: Wishlist]] page.
 
 === Citing Simple Neurite Tracer ===
-
-If you would like to reference Simple Neurite Tracer in a publication, you can cite:
-
+To reference Simple Neurite Tracer in a publication:
 : Longair MH, Baker DA, Armstrong JD. [http://bioinformatics.oxfordjournals.org/content/early/2011/07/04/bioinformatics.btr390.long Simple Neurite Tracer: Open Source software for reconstruction, visualization and analysis of neuronal processes]. <i>Bioinformatics</i> 2011
 
 == Tutorials ==
-
 Hopefully you should be able to use this software easily by following the suggested next steps in the top left of the main dialog.  However, to use the plugin more effectively, you may want to use some of the following materials:
 
-There is an introductory screencast here:
-
+'''Introductory Tutorials:'''
 * [[Simple Neurite Tracer: Introductory Screencast]]
-
-... or if you prefer reading text, some basic instructions here:
-
 * [[Simple Neurite Tracer: Step-By-Step Instructions]]
 * [[Simple Neurite Tracer: Basic Instructions]]
 
-Once you get used to the tool, you may find these keyboard shortcuts useful:
-
+'''Useful Keyboard Shortcuts'''
 * [[Simple Neurite Tracer: Key Shortcuts]]
 
-And there are a set of tutorials on specific subjects here:
-
-* '''New:''' [[Simple Neurite Tracer: Tubular Geodesics]]
+'''Tutorials on Specific Subjects:'''
+*  [[Simple Neurite Tracer: Tubular Geodesics]]
 * [[Simple Neurite Tracer: Using MIP Overlays]]
 * [[Simple Neurite Tracer: 3D Interaction]]
 * [[Simple Neurite Tracer: Sholl analysis]]
-* A guide to loading the [[Diadem Challenge Data]]
+* [[Diadem Challenge Data|Simple Neurite Tracer: Loading a Dataset]]
 * [[Simple Neurite Tracer: "Export to SWC" Tutorial]]
 * [[Simple Neurite Tracer: Accurate point placement]]
 * [[Simple Neurite Tracer: Selecting paths]]
 * [[Simple Neurite Tracer: Using the three pane view]]
 * [[Simple Neurite Tracer: Preprocessing Data for Better Results]], such as using the algorithm from Frangi (1998) <ref>{{cite journal |author=F. Frangi, W. J. Niessen, K. L. Vinc, and M. A. Viergever|title=Multiscale Vessel Enhancement Filtering|journal=Medical Image Computing and Computer-Assisted Intervention — MICCAI’98 Lecture Notes in Computer Science|year=1998|volume=1496|pages=130|url=http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.110.7722&rep=rep1&type=pdf}}</ref>
 
-There are also a couple of older screencasts available - these refer to obselete pre-release versions, but most of the functionality demonstrated is still present:
-
+'''Other Material:'''
+:There are also a couple of older screencasts available - these refer to obselete pre-release versions, but most of the functionality demonstrated is still present:
 * [[Simple Neurite Tracer: Old Screencast1]]
 * [[Simple Neurite Tracer: Old Screencast2]]
 
 == Technical Documentation ==
-
-The native file format of the plugin is documented at: [[Simple Neurite Tracer: .traces File Format]].  (The .traces files are just gzipped XML, so easy to parse.)  There's also an example script showing how to batch convert each .traces file to multiple SWC files [https://gist.github.com/888051 here].
+The native file format of the plugin is documented at: [[Simple Neurite Tracer: .traces File Format]]. (<code>.traces</code> files are just gzipped XML, so easy to parse.)  There's also an example script showing how to batch convert each .traces file to multiple SWC files [https://gist.github.com/888051 here].
 
 Simple Neurite Tracer is also easy to use programmatically.  For instance, the example in {{GitHub|org=fiji|repo=Simple_Neurite_Tracer|source=tracing/Albert_Test.java|label=Albert_Test.java}} shows how to use the code to find a path between two arbitrary points in an image stack.
 
 As another small example, if you just wanted to load a set of SWC files using the Simple Neurite Tracer API and display them in the 3D viewer, a Jython script like this will do: https://gist.github.com/838695
 
 == Authors ==
-
-This plugin was written by myself, Mark Longair, except for the following important sections:
-
-* The code for doing Gaussian convolutions of the image and the calculation of principal curvatures was written by Stephan Preibisch
-* The code for loading AmiraMesh label files was written by Johannes Schindelin.
-* The code for generating meshes of neurons for the 3D viewer was originally written by Albert Cardona for TrakEM2.
+This plugin was written by Mark Longair except for the following important sections:
+* The code for doing Gaussian convolutions of the image and the calculation of principal curvatures was written by [[User:StephanP|Stephan Preibisch]].
+* The code for loading AmiraMesh label files was written by [[User:Schindelin|Johannes Schindelin]].
+* The code for generating meshes of neurons for the 3D viewer was originally written by [[User:Albertcardona|Albert Cardona]] for [[TrakEM2]].
 * This plugin also incorporates code from the LGPL licensed PAL library, although the functionality that relies on this is not currently exposed in this version. 
 
 Many thanks to all of those authors for releasing their code under the GPL.
 
 == Acknowledgments ==
-
-This software was developed during my PhD, funded by the [http://www.epsrc.ac.uk/ResearchFunding/Programmes/LifeSciencesInterface/ EPSRC / MRC life sciences interface programme], and in particular the [http://www.anc.inf.ed.ac.uk/neuroinformatics/ Doctoral Training Centre in Neuroinformatics at the University of Edinburgh]. A substantial part of the later development of this plugin was done during the [http://www.hhmi.org/janelia/ Janelia Farm] Hackathon of 2007, and I owe a debt of thanks to the Howard Hughes Medical Institute for making it possible for me to go to that event. Thank-you also to Arnim Jenett, Adrianna Teriakidis and Benny Lam for their feedback and help with testing various versions of this plugin.
+This software was developed during Mark Longair's PhD, funded by the [http://www.epsrc.ac.uk/ResearchFunding/Programmes/LifeSciencesInterface/ EPSRC / MRC life sciences interface programme], and in particular the [http://www.anc.inf.ed.ac.uk/neuroinformatics/ Doctoral Training Centre in Neuroinformatics at the University of Edinburgh]. A substantial part of the later development of this plugin was done during the [http://www.hhmi.org/janelia/ Janelia Farm] Hackathon of 2007, and I owe a debt of thanks to the Howard Hughes Medical Institute for making it possible for me to go to that event. Thank-you also to Arnim Jenett, Adrianna Teriakidis and Benny Lam for their feedback and help with testing various versions of this plugin.
 
 == References ==
-
 <references/>
 
 [[Category:Plugins]]
