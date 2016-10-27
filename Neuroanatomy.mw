@@ -46,8 +46,12 @@ The requirements to run the Neuroanatomy suite of plugins are twofold: i) [[Fiji
 |colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Import/Export''
 |- valign="top"
 |Tracings Importer
-| {{bc|File|Import|Tracings (SWC/Traces)...}}
+| {{bc|File|Import|Tracings (Traces/(e)SWC)...}}
 | Renders traced reconstructions ( .traces - [[Simple Neurite Tracer]]'s format - and .swc files) in ImageJ's [[3D Viewer]] or as skeletonized image stacks
+|-
+|Traces converter
+| {{bc|Plugins|NeuroTools|Convert Traces to SWC}}
+| Batch conversion of [[Simple Neurite Tracer]]'s native files to SWC
 |-
 |colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Utilities''
 |- valign="top"
