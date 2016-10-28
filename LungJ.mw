@@ -138,7 +138,7 @@ Plugins > LungJ > Tools > Apply Weka Classifier
 Applies a Weka classifier based on the filename of an image and the filename of a classifier model. This implements the whole application process in a single function and does not require loading the original image into memory twice. This function is likely to suffer from updates to the weka-segmentation plug-in.
 
 === Apply Binary Threshold (Create_Threshold_Mask) ===
-Plugins > LungJ > Tools > Apply Weka Classifier
+Plugins > LungJ > Tools > Apply Binary Threshold
 
 Creates a truly binary mask based on a fixed global threshold.
 
