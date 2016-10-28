@@ -20,7 +20,7 @@
 ;Having Problems?:Jump to [[#FAQ|FAQs]]
 </div>
 </div>{{TOC}}
-Automated and multithreaded bitmap Sholl for direct analysis of fluorescent images of neuronal arbors or traced morphologies. Features powerful quantifications based on curve fitting. Analysis of data obtained outside of ImageJ is also possible.
+Automated and multithreaded Sholl for direct analysis of fluorescent images and traced morphologies. Features powerful quantifications based on curve fitting. Analysis of data obtained outside of ImageJ is also possible.
 
 == Introduction ==
 <span id="CA1CellMask"></span>[[ File:BitmapSholl-CA1mask.png|frame|[[Skeletonize3D|Skeletonized]] hippocampal CA1 cell<ref name="Gross"></ref> (juvenile mouse) in which apical and basal dendrites have been analyzed [[#CA1CellPlot|separately]] and [[#Output_Options|color coded]] according to their Sholl profile. Warmer hues indicate higher number of Intersections (''N''). [[#CriticalRadius|Critical radius]] (''r<sub>c</sub>'') and [[#MeanValueOfFunction|Mean value]] (''N<sub>av</sub>'') are indicated.]]
@@ -71,7 +71,7 @@ Note the reversal of ''[[#Cf._Segmentation|Cf. Segmentation]] output'' and how t
 <span id="Traces"></span>
 == Analysis of Traced Cells ==
 [[ File:ShollTracingsPrompt.png|400px|right |Main prompt (version 3.6.8), when input is traced data ({{bc|color=white|Analysis|Sholl|Sholl Analysis (Tracings)...}})]]In this mode, the plugin analyzes reconstructed arbors. This is particularly relevant for stainings that do not allow single-cell resolution. The plugin is macro recordable and [[#Batch Processing|batch processing]] is also possible.
-# Run {{bc|color=white|Analysis|Sholl|Sholl Analysis (Tracings)...}} and specify a tracing file (a <code>.swc</code> or a [[Simple Neurite Tracer]] <code>.traces</code> file). If you want, you can also specify the image associated with the reconstruction. This will allow the plugin to use the image's metadata to determine spatial units and x,y,z spacing.
+# Run {{bc|color=white|Analysis|Sholl|Sholl Analysis (Tracings)...}} and specify a tracing file (a <code>.swc</code>, a <code>.eswc</code> or a [[Simple Neurite Tracer]] <code>.traces</code> file). If you want, you can also specify the image associated with the reconstruction. This will allow the plugin to use the image's metadata to determine spatial units and x,y,z spacing.
 # Choose the center of analysis using the drop down menu in the main prompt listing SWC tags (''axon'', ''dendrite'', ''soma'', etc.). Note that if your tracings are not tagged you can do so in [[Simple Neurite Tracer]]
 # Adjust the default [[#Parameters|Parameters]]
 # Problems? Read the  [[#FAQ|FAQs]]
@@ -395,7 +395,7 @@ run("Sholl Analysis...", "starting="+ start +" ending="+ end
 </div>
 }}
 === Batch Analysis of Tabular Data ===
-If you already have [[#Importing|obtained profiles]] (either from previous runs or from [[#Obtaining Profiles from Tracings|traced cells]]) and would like to extract new [[#Metrics|metrics]] from such data, you can use the  {{bc|color=white|Analysis|Sholl|Sholl Analysis (Existing Profile)...}}. Here is an example macro that runs the plugin over a folder of .csv files containing Sholl profiles produced by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]]:
+If you already have [[#Importing|obtained profiles]] (either from previous runs or from [[#Analysis of Traced Cells|traced cells]]) and would like to extract new [[#Metrics|metrics]] from such data, you can use the  {{bc|color=white|Analysis|Sholl|Sholl Analysis (Existing Profile)...}}. Here is an example macro that runs the plugin over a folder of .csv files containing Sholl profiles produced by [[Simple_Neurite_Tracer:_Sholl_analysis|Simple Neurite Tracer]]:
 
 <source lang="java">
 distanceCol = "Radius";		// Column in .csv file listing distances
@@ -419,7 +419,7 @@ for (i=0; i<list.length; i++) {
 </source>
 
 == Advanced Usage ==
-Advanced options can be set by through the <tt>Sholl_Analysis</tt> [http://tferr.github.io/ASA/apidocs/ API]. Here are some examples:
+Advanced options can be set through [http://tferr.github.io/ASA/apidocs/ API calls]. Here are some examples:
 
 3D analysis of an image stack (Python):
 <source lang="python">
