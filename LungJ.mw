@@ -172,3 +172,6 @@ Plugins > MCTV > Create MCTV Tiles
 
 Creates jpg tiles and metadata file compatible with MCTV (code doi:10.5258/SOTON/400332
 , paper doi:10.1109/eScience.2015.42).
+
+== Publications ==
+Lasse Wollatz, Steven Johnston, Peter Lackie, and Simon Cox (2016) “''LungJ v0.5.0''” [code] url: http://eprints.soton.ac.uk/id/eprint/401280
