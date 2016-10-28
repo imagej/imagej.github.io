@@ -148,7 +148,7 @@ Plugins > LungJ > Tools > Apply Mask
 Applies a mask to an image, leaving the foreground as it is and replacing the background by black.
 
 === Invert Values (Invert_Values) ===
-Plugins > LungJ > Tools > Apply Weka Classifier
+Plugins > LungJ > Tools > Invert Values
 
 LungJ code for inverting the values in an image. This code changes the actual values and mirrors them around the centre between minimum and maximum. Values which exceed the minimum or maximum specified are being cut of at the boundary. The GUI looks up the minimum and maximum value in an image and suggests them as defaults.
 
