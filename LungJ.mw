@@ -167,7 +167,7 @@ Plugins > LungJ > LungJ Settings
 
 Allows to change standard settings for LungJ. This affects mainly 3D Blocks - Run Macro but also changes the default values for some other functions.
 
-=== Create MCTV Tiles (LungJ_Settings) ===
+=== Create MCTV Tiles (Create_MCTV_Tiles) ===
 Plugins > MCTV > Create MCTV Tiles
 
 Creates jpg tiles and metadata file compatible with MCTV (code doi:10.5258/SOTON/400332
