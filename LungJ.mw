@@ -119,8 +119,8 @@ Combines a set of segmented images into a colour image.
 
 === Convert Mask to STL (mask_to_stl) ===
 Plugins > LungJ > Other > Convert Mask to STL
-Takes a mask and converts and saves it as an STL file using Image Viewer 3D. This
-is useful if an image should be 3D printed.
+
+Takes a mask and converts and saves it as an STL file using Image Viewer 3D. This is useful if an image should be 3D printed.
 
 === Compare Masks (Compare_Masks) ===
 Plugins > LungJ > Statistics > Compare Masks
