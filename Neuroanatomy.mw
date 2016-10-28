@@ -51,7 +51,7 @@ The requirements to run the Neuroanatomy suite of plugins are twofold: i) [[Fiji
 |-
 |Traces converter
 | {{bc|Plugins|NeuroTools|Convert Traces to SWC}}
-| Batch conversion of [[Simple Neurite Tracer]]'s [[Simple_Neurite_Tracer:_.traces_File_Format|native files]] into [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html SWC]. It can also be used to simplify [http://www.vaa3d.org/ Vaa3D]'s ESWC files back into SWC
+| Batch conversion of [[Simple Neurite Tracer]]'s [[Simple_Neurite_Tracer:_.traces_File_Format|native files]] into [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html SWC]
 |-
 |colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Utilities''
 |- valign="top"
