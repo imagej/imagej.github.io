@@ -25,7 +25,7 @@ This plugin was developed within the scope of a study work of Pascal Behnel and 
 =Settings=
 '''Sigma:''' The sigma of the noise. 
 
-'''Smoothing factor:''' In most cases, the default value (1) should not be changed. However, sometimes a more smoothed image is desired which can be archived by selecting values > 1.
+'''Smoothing factor:''' In most cases, the default value (1) should not be changed. However, sometimes a more smoothed image is desired which can be achieved by selecting values > 1.
 
 '''Auto estimate sigma:''' If this option is selected, the sigma is automatically estimated by the method descriped in ''Immerkaer, J., 1996. Fast noise variance estimation. Computer Vision and Image Understanding.'' 
 
