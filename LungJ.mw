@@ -143,7 +143,7 @@ Plugins > LungJ > Tools > Apply Weka Classifier
 Creates a truly binary mask based on a fixed global threshold.
 
 === Apply Mask (Apply_Mask) ===
-Plugins > LungJ > Tools > Apply Weka Classifier 
+Plugins > LungJ > Tools > Apply Mask
 
 Applies a mask to an image, leaving the foreground as it is and replacing the background by black.
 
