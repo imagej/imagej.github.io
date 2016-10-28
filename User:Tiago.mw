@@ -4,18 +4,23 @@
 | forum = tferr
 | github = tferr
 | osrc = tferr
-}}Tiago Ferreira is the author/maintainer of:
+}}Tiago Ferreira is the author of:
 * [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide] ({{GitHub|org=tferr|repo=IJ-guide|label=GitHub}})
 * [[Sholl Analysis]] ({{GitHub|org=tferr|repo=ASA|label=GitHub}})
-* [[User:Neuroanatomy|Neuroanatomy update site]] ({{GitHub|org=tferr|repo=hIPNAT|label=GitHub}}), including among others:
+* [[Neuroanatomy|Neuroanatomy toolbox]] ({{GitHub|org=tferr|repo=hIPNAT|label=GitHub}}), including:
 ** [[Strahler Analysis]]
-* [[BAR]] update site ({{GitHub|org=tferr|repo=Scripts|label=GitHub}}), including among others:
+* [[BAR|BAR toolbox]] ({{GitHub|org=tferr|repo=Scripts|label=GitHub}}), including among others:
 ** [[Find Peaks]]
 ** [http://imagejdocu.tudor.lu/doku.php?id=macro:roi_color_coder ROI Color Coder] †
 ** [http://imagejdocu.tudor.lu/doku.php?id=macro:distribution_plotter Distribution Plotter] †
 ** [http://imagej.nih.gov/ij/plugins/roi-manager-tools/ ROI Manager Tools] †
 
+He is also the maintainer of:
+* [[Simple Neurite Tracer]] ({{GitHub|org=fiji|repo=Simple_Neurite_Tracer|label=GitHub}})
+
 
 You can reach him [mailto:tiago_dot_ferreira_at_mail_dot_mcgill_dot_ca here] (obviously, replacing ''_dot_'' with a de facto <code>.</code>)
+
+
 
 † Legacy website, yet to be migrated to [[Home|imagej.net]]
