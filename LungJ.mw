@@ -10,3 +10,41 @@
 }}{{TOC}}
 
 Work in progress...
+
+== Installation ==
+1) Help>Update...
+
+2) Manage update sites
+
+3) Add update site
+
+4) Name: LungJ
+
+5) URL: http://sites.imagej.net/LungJ/
+
+6) Close
+
+7) Help>Update...
+
+8) Restart Fiji/ ImageJ to apply changes.
+
+9) A new subdirectory called LungJ appears under Plugins.
+
+10) Future versions of LungJ will be updated together with the normal Fiji plugin updates.
+
+== Function Documentation ==
+
+=== 3D Blocks - Create ===
+Plugins>LungJ>3D Blocks>3D Blocks - Create
+
+Divides a 3D image into 3D blocks and saves them into a directory along with header information in a txt file.
+
+=== 3D Blocks - Run Macro ===
+Plugins>LungJ>3D Blocks>3D Blocks - Run Macro
+
+Runs a macro for each 3D block in a directory and saves the resulting image blocks to a new directory.
+
+=== 3D Blocks - Concatenate ===
+Plugins>LungJ>3D Blocks>3D Blocks - Concatenate
+
+Combines 3D blocks in a directory into a single image.
