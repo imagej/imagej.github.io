@@ -577,7 +577,7 @@ The advantage of this approach is that you can share your packages easily. For e
 
 Using maven you can automate the packaging of Jython code into JAR files. This approach is only recommended if you already use maven, as installing and learning how to use maven is not worth the time saving of automated packaging.
 
-At GitHub you will find an example project that you can use as a template. Just run <code>mvn jar:jar</code> and maven will generate a JAR file at the <code>target</code> directory.
+At GitHub you will find an [https://github.com/m-entrup/imagej-jython-package example project] that you can use as a template. Just run <code>mvn jar:jar</code> and maven will generate a JAR file at the <code>target</code> directory.
 
 == Links ==
 
