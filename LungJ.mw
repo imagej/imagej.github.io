@@ -1,7 +1,9 @@
 {{Infobox
 | name                   = LungJ
 | author                 = [[User:LungJ|Lasse Wollatz]]
+| maintainer             = [[User:LungJ|Lasse Wollatz]]
 | software               = ImageJ/Fiji
+| logo                   = [[Image:http://github.com/LWollatz/LungJ/raw/master/logo.png|LJ]]
 | source                 = {{GitHub|org=LWollatz|repo=LungJ}}
 | released               = Nov 1<sup>st</sup>, 2016
 | latest version         = 0.4.9, October 28<sup>th</sup>, 2016 (LungJ v0.4.9)
@@ -174,4 +176,4 @@ Creates jpg tiles and metadata file compatible with MCTV (code doi:10.5258/SOTON
 , paper doi:10.1109/eScience.2015.42).
 
 == Publications ==
-Lasse Wollatz, Steven Johnston, Peter Lackie, and Simon Cox (2016) “''LungJ v0.5.0''” [code] url: http://eprints.soton.ac.uk/id/eprint/401280
+Lasse Wollatz, Steven Johnston, Peter Lackie, and Simon Cox (2016) “''LungJ v0.5.0''” [code] doi:[http://eprints.soton.ac.uk/id/eprint/401280 10.5258/SOTON/401280]
