@@ -49,3 +49,57 @@ IJ.run(imp, "Gaussian Blur...", "sigma=" + sig)
 </source>
 
 This is nearly identical to the use of <code>IJ.getImage()</code> and therefore not recommended. The WindowManager class contains some useful methods that can be used to select more than one image (e.g. <code>getImageTitles()</code> and <code>getIDList()</code>.
+
+== Opening images ==
+
+In ImageJ there are many different ways to open images (or more general datasets). We want to introduce some of them.
+
+The first example uses the [http://javadoc.imagej.net/SCIFIO/io/scif/services/DatasetIOService.html DatasetIOService]. It is part of [[SCIFIO]], a flexible framework for '''SC'''ientific '''I'''mage '''F'''ormat '''I'''nput and '''O'''utput. Two types of image files are opened. The first one is an example image, downloaded from the Internet. The second image can be chosen by the user. Both datasets are displayed using the [http://javadoc.imagej.net/SciJava/org/scijava/ui/UIService.html UIService] that is part of the [[SciJava]] project.
+
+<source lang='java'>
+/*
+ * @DatasetIOService ds
+ * @UIService ui
+ * @String(label='Image URL', value='http://wsr.imagej.net/images/clown.jpg') fileUrl
+ * @File(label='local image') file
+ */
+
+// Load a sample file from the internet and a local file of your choice.
+dataset1 = ds.open(fileUrl)
+dataset2 = ds.open(file.getAbsolutePath())
+// Display the datasets.
+ui.show(dataset1)
+ui.show(dataset2)
+</source>
+
+If a script only depends on ImageJ1 functionality, one can use the function <code>IJ.openImage()</code>. It will return an ImagePlus object.
+
+<source lang='java'>
+/*
+ * @String(label='Image URL', value='http://wsr.imagej.net/images/clown.jpg') fileUrl
+ * @File(label='local image') file
+ */
+
+import ij.IJ
+
+// Load a sample file from the internet and a local file of your choice.
+imagePlus1 = IJ.openImage(fileUrl)
+imagePlus2 = IJ.openImage(file.getAbsolutePath())
+// Display the datasets.
+imagePlus1.show()
+imagePlus2.show()
+</source>
+
+<code>IJ.openImage()</code> is based on the class [http://javadoc.imagej.net/ImageJ1/ij/io/Opener.html ij.io.Opener]. You can use it directly to open images and other files (e.g. text files). The example uses the class [http://javadoc.imagej.net/ImageJ1/ij/io/OpenDialog.html ij.io.OpenDialog] to select a file. This is an alternative to the usage of the Scripting Parameter <code>@File</code>.
+
+<source lang='java'>
+import ij.io.Opener
+import ij.io.OpenDialog
+
+// Use the OpenDialog to select a file.
+filePath = new OpenDialog('Select an image file').getPath()
+// Open the selected file.
+imagePlus = new Opener().openImage(filePath)
+// Display the ImagePlus.
+imagePlus.show()
+</source>
