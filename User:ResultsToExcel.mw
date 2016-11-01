@@ -54,17 +54,16 @@ jars/ij.jar
 Update site:
 http://sites.imagej.net/ResultsToExcel
 
-Installation:
-*- With ImageJ open, navigate to 'Help'
-*- In the presented drop down menu, then select 'Update...'
-*- Allow ImageJ to check for updates
-*- If required, download updates and restart ImageJ as prompted
-*- Repeat the first two steps = Help>Update...
-*- This time ImageJ should let you know that there are no updates available
-*- Click on 'OK' but do not close the 'ImageJ Updater' window that is also open
-*- In the bottom left of the 'ImageJ Updater' window, find and click on 'Manage update sites'
-*- In the newly presented 'Manage update sites' window, find and check the 'ResultsToExcel' check box
-*- Then close the 'Manage update sites' window
-*- The 'ImageJ Updater' window will now present you with the plugin files for installation
-*- Press 'Apply changes'
-*- After the update has been applied successfully, restart ImageJ
+Installation:* With ImageJ open, navigate to 'Help'
+* In the presented drop down menu, then select 'Update...'
+* Allow ImageJ to check for updates
+* If required, download updates and restart ImageJ as prompted
+* Repeat the first two steps = Help>Update...
+* This time ImageJ should let you know that there are no updates available
+* Click on 'OK' but do not close the 'ImageJ Updater' window that is also open
+* In the bottom left of the 'ImageJ Updater' window, find and click on 'Manage update sites'
+* In the newly presented 'Manage update sites' window, find and check the 'ResultsToExcel' check box
+* Then close the 'Manage update sites' window
+* The 'ImageJ Updater' window will now present you with the plugin files for installation
+* Press 'Apply changes'
+* After the update has been applied successfully, restart ImageJ
