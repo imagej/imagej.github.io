@@ -54,7 +54,8 @@ jars/ij.jar
 Update site:
 http://sites.imagej.net/ResultsToExcel
 
-Installation:* With ImageJ open, navigate to 'Help'
+Installation:
+* With ImageJ open, navigate to 'Help'
 * In the presented drop down menu, then select 'Update...'
 * Allow ImageJ to check for updates
 * If required, download updates and restart ImageJ as prompted
