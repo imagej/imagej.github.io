@@ -1178,7 +1178,7 @@ t = TextWindow("Balls CSV", csv, 400, 400)
 
 = Generate 3D meshes =
 
-In TrakEM2, 3D meshes are generated as a list of [http://download.java.net/media/java3d/javadoc/1.5.2-latest/javax/vecmath/Point3f.html Point3f] for each object. Then the list is wrapped into any of the subclasses of [http://fiji.sc/javadoc/customnode/CustomMesh.html CustomMesh] of the 3D Viewer library, such as a [http://fiji.sc/javadoc/customnode/CustomTriangleMesh.html CustomTriangleMesh] or a [http://fiji.sc/javadoc/customnode/CustomLineMesh.html CustomLineMesh]. Then these mesh objects are encapsulated into a [http://fiji.sc/javadoc/ij3d/Content.html Content] object and added to an instance of the [http://fiji.sc/javadoc/ij3d/Image3DUniverse.html Image3DUniverse], which is the main window of the 3D Viewer.
+In TrakEM2, 3D meshes are generated as a list of [http://javadoc.imagej.net/Java3D/index.html?org/scijava/vecmath/Point3f.html Point3f] for each object. Then the list is wrapped into any of the subclasses of [http://fiji.sc/javadoc/customnode/CustomMesh.html CustomMesh] of the 3D Viewer library, such as a [http://fiji.sc/javadoc/customnode/CustomTriangleMesh.html CustomTriangleMesh] or a [http://fiji.sc/javadoc/customnode/CustomLineMesh.html CustomLineMesh]. Then these mesh objects are encapsulated into a [http://fiji.sc/javadoc/ij3d/Content.html Content] object and added to an instance of the [http://fiji.sc/javadoc/ij3d/Image3DUniverse.html Image3DUniverse], which is the main window of the 3D Viewer.
 
 Of course, via scripting many of these steps may be skipped. Below are several examples on how to generate meshes programmatically and save them in [http://www.martinreddy.net/gfx/3d/OBJ.spec Wavefront] format.
 
@@ -1192,7 +1192,7 @@ To export all arealists, loop through <i>Display.getFront().getLayerSet().getZDi
 
 <source lang="python">
 from ini.trakem2.display import Display
-from javax.vecmath import Color3f
+from org.scijava.vecmath import Color3f
 from customnode import WavefrontExporter, CustomTriangleMesh
 from java.io import StringWriter
 from ij.text import TextWindow
@@ -1233,7 +1233,7 @@ Just like for an AreaList (see above), but extract the triangles with:
 triangles = areatree.generateMesh(1, resample).verts
 </source>
 
-The [http://fiji.sc/javadoc/ini/trakem2/display/AreaTree.html AreaTree]'s generateMesh returns a [http://fiji.sc/javadoc/ini/trakem2/display/Tree.MeshData.html MeshData] object with the list of vertices and the list of colors of each vertex. The <i>generateTriangles</i> method of an [http://fiji.sc/javadoc/ini/trakem2/display/AreaTree.html AreaTree] returns a list of [http://download.java.net/media/java3d/javadoc/1.5.2-latest/javax/vecmath/Point3f.html Point3f] that are ready for creating a [http://fiji.sc/javadoc/customnode/CustomLineMesh.html CustomLineMesh] (in PAIRWISE mode) to represent the skeleton.
+The [http://fiji.sc/javadoc/ini/trakem2/display/AreaTree.html AreaTree]'s generateMesh returns a [http://fiji.sc/javadoc/ini/trakem2/display/Tree.MeshData.html MeshData] object with the list of vertices and the list of colors of each vertex. The <i>generateTriangles</i> method of an [http://fiji.sc/javadoc/ini/trakem2/display/AreaTree.html AreaTree] returns a list of [http://javadoc.imagej.net/Java3D/index.html?org/scijava/vecmath/Point3f.html Point3f] that are ready for creating a [http://fiji.sc/javadoc/customnode/CustomLineMesh.html CustomLineMesh] (in PAIRWISE mode) to represent the skeleton.
 
 = Save the project while running a task =
 
