@@ -12,9 +12,9 @@ For fluorescence images from optical microscopes, frrom a colocalization perspec
 *On a single point scanning confocal the matter is made worse by the more complicated optics. 
 **The Zeiss 510 has a different pinhole per channel... and depending on their positions and correct setup, the images of the bead in different channels is also affected by pinhole position settings. 
 
-*Nowadays with the Zeiss 7xx series and on the Olympus FV1000 and other modern point scanners there is only 1 pinhole for the emission light, so that problem is suppressed.  
+*Nowadays with the Zeiss 7xx, 8xx series and on the Olympus FV1000 and other modern point scanners there is only 1 pinhole for the emission light, so that problem is suppressed.  
 **BUT, the 405 lasers come in through a different fibre than the Vis lasers.. and so there is a collimation adjustment to make
-**Same for 2photon lasers.... getting the near UV and IR laser spots to coincide exactly with the vis lines is hard... 
+**Same for 2photon lasers.... getting the near UV and IR laser spots to coincide exactly with the visible lines is hard... 
 
 *So its best to get is as close as is reasonably possible to do in hardware adjustments, then measure the residual error then correct for it. 
 
@@ -25,7 +25,7 @@ For fluorescence images from optical microscopes, frrom a colocalization perspec
 **These will be  between 10-1000 nm in xy and up to 500 or even 2000 micron in z. 
 **BUT, they will never be whole xy pixels or z slice shifts... forget that idea its too crude.
 **see the 2 slides titled 
-"Check with multi-colour beads" at [http://ifn.mpi-cbg.de/wiki/ifn/images/0/0d/QuantitativeColocAnalysis-12-2010.pdf Colocalization analysis course notes]
+"Check with multi-colour beads" at [https://www.biodip.de/w/images/f/fa/QuantitativeColocAnalysis-10-2011.pdf Colocalization analysis course notes]
 
 *Now we can use Erik M's TransformJ Translate plugin in Fiji/ImageJ to do a sub pixel resolution shift for for each channel, as we have measured those shifts [http://www.imagescience.org/meijering/software/transformj/translate.html TransformJ Translate]
 **Use a nice interpolation method to avoid smashing the information in your images - eg quintic B-spline interpolation
