@@ -32,7 +32,7 @@ For example, if we look at the [https://github.com/scijava/scripting-jython/blob
 greeting = "Hello, " + name + "!"
 </source>
 
-We see that an input parameter <code>name</code> of type <code>String</code> is declared. <code>@arameters</code> are handled automatically by the framework; if we run this script when the User Interface is available (e.g. from the script editor), the <code>name</code> parameter will automatically be harvested via a pop-up dialog:
+We see that an input parameter <code>name</code> of type <code>String</code> is declared. <code>@Parameters</code> are handled automatically by the framework; if we run this script when the User Interface is available (e.g. from the script editor), the <code>name</code> parameter will automatically be harvested via a pop-up dialog:
 
 
 [[File:ScriptParams.png|450px]]
