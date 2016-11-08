@@ -41,15 +41,17 @@ Power users may wish to configure exactly which folder(s) ImageJ scans for plugi
 
 For ultimate control, ImageJ also provides support for manually configuring the list of plugin paths, similar to Java's classpath, using the <tt>ij1.plugin.dirs</tt> system property.
 
-E.g., on 64-bit Linux:
+E.g., 
+
+* on 64-bit Linux:
 
  $IJ_DIR/ImageJ-linux64 -Dij1.plugin.dirs=$IJ_DIR/jars:$IJ_DIR/plugins:$HOME/.plugins
 
-On OS X:
+* On OS X:
 
  $IJ_DIR/Contents/MacOS/ImageJ-macosx -Dij1.plugin.dirs=$IJ_DIR/jars:$IJ_DIR/plugins:$HOME/.plugins
 
-On 64-bit Windows:
+* On 64-bit Windows:
 
  %IJ_DIR%\ImageJ-win64 -Dij1.plugin.dirs=%IJ_DIR%\jars;%IJ_DIR%\plugins;%HOMEDRIVE%%HOMEPATH%\.plugins
 
