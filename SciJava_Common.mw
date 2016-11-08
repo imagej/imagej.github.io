@@ -6,7 +6,7 @@ First and foremost, SciJava Common is a plugin framework—a base for developing
 
 == Plugin discovery ==
 
-All plugins available on Java's classpath are automatically discovered and made available. This is accomplished by scanning classpath resources for the file path <code>META-INF/json/org.scijava.plugin.Plugin</code>. Such files are generated at compile time by a Java annotation processor that writes them in response to <code>@Plugin</code> annotations on Java classes, an idea inspired by the [https://sezpoz.java.net/ SezPoz] project.
+All plugins available on Java's classpath are automatically discovered and made available. This is accomplished by scanning classpath resources for the file path <code>META-INF/json/org.scijava.plugin.Plugin</code>. Such files are generated at compile time by a Java annotation processor that writes them in response to <code>@Plugin</code> annotations on Java classes, an idea inspired by the [https://github.com/jglick/sezpoz/ SezPoz] project.
 
 = Application container =
 
