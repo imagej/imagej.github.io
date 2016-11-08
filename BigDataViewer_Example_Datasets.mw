@@ -32,3 +32,5 @@ The data are provided here for the sole purpose of demonstrating the visualisati
  
 To view it in BigDataViewer, download [http://fly.mpi-cbg.de/~pietzsch/bdv-examples/catmaid-abd1.5.xml catmaid-abd1.5.xml]
 and open with {{bc | Plugins | BigDataViewer | Open XML/HDF5}} from the Fiji menu.
+
+[[Category:Example Data]]
