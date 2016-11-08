@@ -305,22 +305,6 @@ Future: will be implemented for 32-bit images as well. The upper intensity limit
 
 ----
 
-= Interactive Correlation Plot =
-
-The interactive correlation plot is a normal scatter plot displaying the intensities of two channels per pixel. So far the plot reads only the red and green channel of an RGB image (but this will be changed soon to read composite images and let decide on the channels to use).
-
-How To: Before creating the plot the user can select the area of interest. This can be in one or in several independent areas but it needs to be one (composite) ROI. Only those regions will be plotted and used thereafter. This is recommendable especially for big images containing regions which are not of interest for the ananlysis.
-In the resulting plot the user can use any area selection tool to select a specific plot region. Here, the selected region can as well be a composite selection in different areas. The selected areas will then be indicated in the image linked to the plot. New selection of different image regions does not update the plot (therefore you need to create a new plot window). The indicated statistical values are calculated for the initially selected image region. Thus, they are currently not updated when different regions are selected in the plot window. This will still be added in one of the next versions.
-
-
-[[File:Interactive Correlation Plot.png|750px]]
-
-status: active development (see indications above for planned changes)
-
-form: plugin, recordable
-
-----
-
 =Difference of Gaussian and Difference from Median=
 
 Purpose: Uses a basic difference of Gaussian method for feature detection and a method which gives the difference between the original and a specified "Median" filter on a copy of the original image.
