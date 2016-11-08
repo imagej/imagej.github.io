@@ -38,5 +38,6 @@ Do you need image data to try your algorithms on? Do you lack expert ground trut
 * [http://www.broadinstitute.org/bbbc/ Broad Bioimage Benchmark Collection]: annotated biological image sets for testing and validation. Collection of freely downloadable microscopy image sets. In addition to the images themselves, each set includes a description of the biological application and some type of "ground truth" (expected results).
 
 [[Category:Data]]
+[[Category:Example Data]]
 [[Category:Segmentation]]
 [[Category:Tracking]]
