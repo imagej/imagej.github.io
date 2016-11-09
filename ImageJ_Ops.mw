@@ -45,9 +45,9 @@ For an interactive tool to see all available Ops, see the [[Op Finder]] document
 
 For the core Ops available, you can go to the {{Javadoc | package = ?net/imagej/ops | class=package-summary | label=ImageJ Ops}} javadocs. Any class under the package <code>net.imagej.ops</code> is related to Ops.
 
-You can also use the [[Script Editor]] in ImageJ and actively search using Ops itself. for example:
+You can also use the [[Script Editor]] in ImageJ and actively search using Ops itself. for example in groovy language:
 
-<source lang="java">
+<source lang="groovy">
 // @OpService ops
 print ops.help()
 </source>
