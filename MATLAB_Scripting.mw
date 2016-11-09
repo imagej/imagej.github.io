@@ -115,5 +115,9 @@ IJM.show('mask') % display the mask array in ImageJ
 
 {{#widget:Vimeo|id=140929686|caption=ImageJ+MATLAB: Reunited}}
 
+= Publication =
+* {{Publication | ImageJ-MATLAB}}
+
 [[Category:Scripting]]
 [[Category:MATLAB]]
+[[Category:Citable]]
