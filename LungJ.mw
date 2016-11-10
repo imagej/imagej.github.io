@@ -36,77 +36,48 @@ Work in progress...
 
 == Function Documentation ==
 
-=== 3D Blocks - Create ===
-Plugins > LungJ > 3D Blocks > 3D Blocks - Create
-
-Divides a 3D image into 3D blocks and saves them into a directory along with header information in a txt file.
-
-=== 3D Blocks - Run Macro ===
-Plugins > LungJ > 3D Blocks > 3D Blocks - Run Macro
-
-Runs a macro for each 3D block in a directory and saves the resulting image blocks to a new directory.
-
-=== 3D Blocks - Concatenate ===
+=== 3D Blocks - Concatenate (Concatenate_3D) ===
 Plugins > LungJ > 3D Blocks > 3D Blocks - Concatenate
 
 Combines 3D blocks in a directory into a single image.
 
-=== 3D Blocks - Histogram ===
-Plugins > LungJ > 3D Blocks > 3D Blocks - Histogram
+=== 3D Blocks - Create (Subdivide_3D) ===
+Plugins > LungJ > 3D Blocks > 3D Blocks - Create
 
-Opens the blocks of a 3D Blocks image, calculates all the relevant statistics and displays a histogram for all the blocks combined. Optionally saves the statistics to the properties directory.
+Divides a 3D image into 3D blocks and saves them into a directory along with header information in a txt file.
 
-=== 3D Blocks - Halo Exchange ===
+=== 3D Blocks - Halo Exchange (Halo_Exchange) ===
 Plugins > LungJ > 3D Blocks > 3D Blocks - Halo Exchange
 
 Exchanges the halos of a 3D Blocks image. This function can be applied between filters. Halos allow the avoidance of boundary errors/ inconsistencies.
 
-=== Test WEKA Filter (Test_WEKA_Filter) ===
-Plugins > LungJ > Filter > Test WEKA Filter
+=== 3D Blocks - Histogram (Block_Histogram) ===
+Plugins > LungJ > 3D Blocks > 3D Blocks - Histogram
 
-Allows to compare WEKA filters visually. Note that the Gabor filter is currently not working.
+Opens the blocks of a 3D Blocks image, calculates all the relevant statistics and displays a histogram for all the blocks combined. Optionally saves the statistics to the properties directory.
 
-=== Lipschitz (Lipschitz_) ===
-Plugins > LungJ > Filter > Lipschitz
+=== 3D Blocks - Run Macro (Run_Macro_3D) ===
+Plugins > LungJ > 3D Blocks > 3D Blocks - Run Macro
 
-Applies the Lipschitz filter from Trainable_Segmentation/src/main/java/trainableSegmentation/filters/Lipschitz_.java
+Runs a macro for each 3D block in a directory and saves the resulting image blocks to a new directory.
 
-=== Entropy Filter (Entropy_Filter) ===
-Plugins > LungJ > Filter > Entropy Filter
+=== Apply Binary Threshold (Create_Threshold_Mask) ===
+Plugins > LungJ > Tools > Apply Binary Threshold
 
-Applies the Entropy filter from
-Trainable Segmentation/src/main/java/trainableSegmentation/filters/Entropy Filter.java
+Creates a truly binary mask based on a fixed global threshold.
 
-=== Membrane Projections (Membrane_Projections) ===
-Plugins > LungJ > Filter > Membrane Projections
+=== Apply Mask (Apply_Mask) ===
+Plugins > LungJ > Tools > Apply Mask
 
-Applies the Membrane Projections filter from
-Trainable Segmentation/src/main/java/trainableSegmentation/FeatureStack.java
+Applies a mask to an image, leaving the foreground as it is and replacing the background by black.
 
-=== Neighbors (Neighbors_) ===
-Plugins > LungJ > Filter > Neighbors
+=== Apply Weka Classifier (Apply_Weka_Classifier) ===
+Plugins > LungJ > Tools > Apply Weka Classifier
 
-Applies the Neighbors filter from
-Trainable Segmentation/src/main/java/trainableSegmentation/FeatureStack.java
+Applies a Weka classifier based on the filename of an image and the filename of a classifier model. This implements the whole application process in a single function and does not require loading the original image into memory twice. This function is likely to suffer from updates to the weka-segmentation plug-in.
 
-=== Matrix Operation (Matrix_Operation) ===
-Plugins > LungJ > Filter > Matrix Operation
-
-Applies a 2D matrix onto an image. Can be used for GUI implementation of non
-standard matrix based filters.
-
-=== Label Hyperstack (Label_Hyperstack) ===
-Plugins > LungJ > Other > Label Hyperstack
-
-Consistently labels the slices of a hyperstack.
-
-=== Set Calibration (Set_Calibration) ===
-Plugins > LungJ > Other > Set Calibration
-
-Allows to set the Calibration of an image, similar to Image > Properties but with pixel value calibration function included.
-
-=== Average ROI Colour (Average_ROI_Colour) ===
-Plugins > LungJ > Other > Average ROI Colour
+=== Average ROIs Colour (Average_ROI_Colour) ===
+Plugins > LungJ > Other > Average ROIs Colour
 
 Finds the average value or RGB of active ROIs. The expected value range is overlaid on the histogram of the active image. Error calculations are based on
 
@@ -119,61 +90,96 @@ Plugins > LungJ > Other > Colour by Segment
 
 Combines a set of segmented images into a colour image.
 
-=== Convert Mask to STL (mask_to_stl) ===
-Plugins > LungJ > Other > Convert Mask to STL
+=== Compare Map to Mask (Compare_MapMask) ===
+Plugins > LungJ > Statistics > Compare Map to Mask
 
-Takes a mask and converts and saves it as an STL file using Image Viewer 3D. This is useful if an image should be 3D printed.
+Compares a probability map to a binary masks by combining them into a single colour-coded image. Agreed foreground is white and agreed background black. Foreground detected as background is blue and background detected as foreground red.
 
 === Compare Masks (Compare_Masks) ===
 Plugins > LungJ > Statistics > Compare Masks
 
 Compares two binary masks by combining them into a single colour-coded image. Agreed foreground is white and agreed background black. Foreground detected as background is blue and background detected as foreground red.
 
-=== Compare Map to Mask (Compare_MapMask) ===
-Plugins > LungJ > Statistics > Compare Map to Mask
+=== Convert Mask to STL (mask_to_stl) ===
+Plugins > LungJ > Other > Convert Mask to STL
 
-Compares a probability map to a binary masks by combining them into a single colour-coded image. Agreed foreground is white and agreed background black. Foreground detected as background is blue and background detected as foreground red.
-
-=== Apply Weka Classifier (Apply_Weka_Classifier) ===
-Plugins > LungJ > Tools > Apply Weka Classifier
-
-Applies a Weka classifier based on the filename of an image and the filename of a classifier model. This implements the whole application process in a single function and does not require loading the original image into memory twice. This function is likely to suffer from updates to the weka-segmentation plug-in.
-
-=== Apply Binary Threshold (Create_Threshold_Mask) ===
-Plugins > LungJ > Tools > Apply Binary Threshold
-
-Creates a truly binary mask based on a fixed global threshold.
-
-=== Apply Mask (Apply_Mask) ===
-Plugins > LungJ > Tools > Apply Mask
-
-Applies a mask to an image, leaving the foreground as it is and replacing the background by black.
-
-=== Invert Values (Invert_Values) ===
-Plugins > LungJ > Tools > Invert Values
-
-LungJ code for inverting the values in an image. This code changes the actual values and mirrors them around the centre between minimum and maximum. Values which exceed the minimum or maximum specified are being cut of at the boundary. The GUI looks up the minimum and maximum value in an image and suggests them as defaults.
-
-=== Fill Holes Manual 3D (Fill_Holes_Manual_3D) ===
-Plugins > LungJ > Tools > Fill Holes Manual 3D
-
-Aims to fill holes of a mask. Ideal for filling a mask with many holes in the foreground but only one or few connected background(s).
-
-=== Stretch Histogram (Stretch_Histogram) ===
-Plugins > LungJ > Tools > Stretch Histogram
-
-Linearly stretch the values of an image.
-
-=== LungJ Settings (LungJ_Settings) ===
-Plugins > LungJ > LungJ Settings
-
-Allows to change standard settings for LungJ. This affects mainly 3D Blocks - Run Macro but also changes the default values for some other functions.
+Takes a mask and converts and saves it as an STL file using Image Viewer 3D. This is useful if an image should be 3D printed.
 
 === Create MCTV Tiles (Create_MCTV_Tiles) ===
 Plugins > MCTV > Create MCTV Tiles
 
 Creates jpg tiles and metadata file compatible with MCTV (code doi:10.5258/SOTON/400332
 , paper doi:10.1109/eScience.2015.42).
+
+=== Entropy ===
+Plugins > LungJ > Filter > Entropy
+
+Calls the Entropy filter from
+Trainable Segmentation/src/main/java/trainableSegmentation/filters/Entropy Filter.java
+
+=== Fill Holes Manual 3D (Fill_Holes_Manual_3D) ===
+Plugins > LungJ > Tools > Fill Holes Manual 3D
+
+Aims to fill holes of a mask. Ideal for filling a mask with many holes in the foreground but only one or few connected background(s).
+
+=== Gabor (Weka_Gabor) ===
+Plugins > LungJ > Filter > Gabor
+
+Applies the Gabor filter from
+Trainable Segmentation/src/main/java/trainableSegmentation/FeatureStack.java
+
+=== Invert Values (Invert_Values) ===
+Plugins > LungJ > Tools > Invert Values
+
+LungJ code for inverting the values in an image. This code changes the actual values and mirrors them around the centre between minimum and maximum. Values which exceed the minimum or maximum specified are being cut of at the boundary. The GUI looks up the minimum and maximum value in an image and suggests them as defaults.
+
+=== Label Hyperstack (Label_Hyperstack) ===
+Plugins > LungJ > Other > Label Hyperstack
+
+Consistently labels the slices of a hyperstack.
+
+=== Lipschitz ===
+Plugins > LungJ > Filter > Lipschitz
+
+Calls the Lipschitz filter from Trainable_Segmentation/src/main/java/trainableSegmentation/filters/Lipschitz_.java
+
+=== LungJ Settings (LungJ_Settings) ===
+Plugins > LungJ > LungJ Settings
+
+Allows to change standard settings for LungJ. This affects mainly 3D Blocks - Run Macro but also changes the default values for some other functions.
+
+=== Matrix Operation (Matrix_Operation) ===
+Plugins > LungJ > Filter > Matrix Operation
+
+Applies a 2D matrix onto an image. Can be used for GUI implementation of non
+standard matrix based filters.
+
+=== Membrane Projections (Weka_Membrane_Projections) ===
+Plugins > LungJ > Filter > Membrane Projections
+
+Applies the Membrane Projections filter from
+Trainable Segmentation/src/main/java/trainableSegmentation/FeatureStack.java
+
+=== Neighbors (Weka_Neighbors) ===
+Plugins > LungJ > Filter > Neighbors
+
+Applies the Neighbors filter from
+Trainable Segmentation/src/main/java/trainableSegmentation/FeatureStack.java
+
+=== Set Calibration (Set_Calibration) ===
+Plugins > LungJ > Other > Set Calibration
+
+Allows to set the Calibration of an image, similar to Image > Properties but with pixel value calibration function included.
+
+=== Stretch Histogram (Stretch_Histogram) ===
+Plugins > LungJ > Tools > Stretch Histogram
+
+Linearly stretch the values of an image.
+
+=== Test WEKA Filter (Test_WEKA_Filter) ===
+Plugins > LungJ > Filter > Test WEKA Filter
+
+Allows to compare WEKA filters visually. Note that the Gabor filter is currently not working.
 
 == Publications ==
 Lasse Wollatz, Steven Johnston, Peter Lackie, and Simon Cox (2016) “''LungJ v0.5.0''” [code] doi:[http://eprints.soton.ac.uk/id/eprint/401280 10.5258/SOTON/401280]
