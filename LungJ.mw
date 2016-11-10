@@ -5,13 +5,11 @@
 | software               = ImageJ/Fiji
 | logo                   = [[File:LungJ-logo.png|200px|thumb|left]]
 | source                 = {{GitHub|org=LWollatz|repo=LungJ}}
-| released               = Nov 1<sup>st</sup>, 2016
-| latest version         = 0.4.9, October 28<sup>th</sup>, 2016 (LungJ v0.4.9)
+| released               = Nov 10<sup>st</sup>, 2016
+| latest version         = 0.5.1, November 10<sup>th</sup>, 2016 (LungJ v0.5.1)
 | status                 = stable, new
 | category               = [[:Category:Segmentation|Segmentation]], [[:Category:Binary|Binary]], [[:Category:Filtering|Filtering]], [[:Category:Image_annotation|Image annotation]]
 }}{{TOC}}
-
-Work in progress...
 
 == Installation ==
 1) {{bc | Help | Update...}}
@@ -186,7 +184,6 @@ Lasse Wollatz, Steven Johnston, Peter Lackie, and Simon Cox (2016) “''LungJ v0
 
 
 [[Category:Plugins]]
-[[Category:Citable]]
 [[Category:Segmentation]]
 [[Category:Binary]]
 [[Category:Filtering]]
