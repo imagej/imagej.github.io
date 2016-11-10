@@ -183,3 +183,10 @@ Allows to compare WEKA filters visually. Note that the Gabor filter is currently
 
 == Publications ==
 Lasse Wollatz, Steven Johnston, Peter Lackie, and Simon Cox (2016) “''LungJ v0.5.0''” [code] doi:[http://eprints.soton.ac.uk/id/eprint/401280 10.5258/SOTON/401280]
+
+
+[[Category:Plugins]]
+[[Category:Segmentation]]
+[[Category:Binary]]
+[[Category:Filtering]]
+[[Category:Image_annotation]]
