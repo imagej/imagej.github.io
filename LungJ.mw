@@ -180,10 +180,11 @@ Linearly stretch the values of an image.
 Allows to compare WEKA filters visually. Note that the Gabor filter is currently not working.
 
 == Publications ==
-Lasse Wollatz, Steven Johnston, Peter Lackie, and Simon Cox (2016) “''LungJ v0.5.0''” [code] doi:[http://eprints.soton.ac.uk/id/eprint/401280 10.5258/SOTON/401280]
-
+Please note that LungJ, as well as other plug-ins available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
+* {{Citation | last1=Wollatz | first1=Lasse | last2=Johnston | first2=Steven J. | last3=Lackie | first3=Peter M. | last4=Cox | first4=Simon J. | title=LungJ v0.5.1 | type=Code | year=2016 | month=November | publisher=University of Southampton | doi=10.5258/SOTON/401280 | url=http://eprints.soton.ac.uk/id/eprint/401280}}
 
 [[Category:Plugins]]
+[[Category:Citeable]]
 [[Category:Segmentation]]
 [[Category:Binary]]
 [[Category:Filtering]]
