@@ -3,7 +3,7 @@
 | author                 = [[User:LungJ|Lasse Wollatz]]
 | maintainer             = [[User:LungJ|Lasse Wollatz]]
 | software               = ImageJ/Fiji
-| logo                   = [[Image:http://github.com/LWollatz/LungJ/raw/master/logo.png|LJ]]
+| logo                   = [[File:LungJ-logo.png|200px|thumb|left]]
 | source                 = {{GitHub|org=LWollatz|repo=LungJ}}
 | released               = Nov 1<sup>st</sup>, 2016
 | latest version         = 0.4.9, October 28<sup>th</sup>, 2016 (LungJ v0.4.9)
