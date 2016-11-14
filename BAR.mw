@@ -26,18 +26,18 @@ Some of the scripts have a dedicated documentation page, others feature built-in
 === List of BARs ===
 [[ File:BARsnapshot.png|right|Overview of BAR (v1.0.0)]]
 ;{{GitHub|org=tferr|repo=Scripts|path=README.md#analysis|label= Analysis}}<span id="Analysis"></span>
-:{{GitHub|org=tferr|repo=Scripts|path=Analysis/README.md#multichannel-plot-profile|label=Multichannel Plot Profile}}, {{GitHub|org=tferr|repo=Scripts|path=Analysis/README.md#multichannel-zt-axis-profile|label=Multichannel ZT-axis Profile}}, {{GitHub|org=tferr|repo=Scripts|path=Analysis/README.md#smoothed-plot-profile|label=Smoothed Plot Profile}}
+:{{GitHub|org=tferr|repo=Scripts|path=Analysis/README.md#log-dog-spot-counter|label=LoG-DoG Spot Counter}}, {{GitHub|org=tferr|repo=Scripts|path=Analysis/README.md#multichannel-plot-profile|label=Multichannel Plot Profile}}, {{GitHub|org=tferr|repo=Scripts|path=Analysis/README.md#multichannel-zt-axis-profile|label=Multichannel ZT-axis Profile}}, {{GitHub|org=tferr|repo=Scripts|path=Analysis/README.md#smoothed-plot-profile|label=Smoothed Plot Profile}}
 
 ;{{GitHub|org=tferr|repo=Scripts|path=README.md#image-annotation|label=Annotation}}<span id="Annotation"></span>
 :{{GitHub|org=tferr|repo=Scripts|path=Annotation/README.md#combine-orthogonal-views|label=Combine Orthogonal Views}}, {{GitHub|org=tferr|repo=Scripts|path=Annotation/README.md#cumulative-z-project|label=Cumulative Z Project}}, {{GitHub|org=tferr|repo=Scripts|path=Annotation/README.md#roi-color-coder|label=ROI Color Coder}}
 
 ;{{GitHub|org=tferr|repo=Scripts|path=README.md#data-analysis|label=Data Analysis}}<span id="Data_Analysis"></span>
-:{{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#create-boxplot|label=Create Boxplot}}, {{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#distribution-plotter|label=Distribution Plotter}}, [[Find Peaks]], [[Sholl_Analysis#Complementary_Tools|Fit Polynomial]], {{GitHub|org=tferr|repo=Scripts|path=Data_Analysis/README.md#plot-xy-data|label=Plot XY Data}}
+:{{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Data_Analysis/README.md#create-boxplot|label=Create Boxplot}}, {{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Data_Analysis/README.md#create-polar-plot|label=Create Polar Plot}},  {{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Data_Analysis/README.md#distribution-plotter|label=Distribution Plotter}}, [[Find Peaks]], [[Sholl_Analysis#Complementary_Tools|Fit Polynomial]], {{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Data_Analysis/README.md#interactive-plotting|label=Interactive Plotting}} 
 
 ;{{GitHub|org=tferr|repo=Scripts|path=README.md#image-segmentation|label=Segmentation}}<span id="Segmentation"></span>
 :{{GitHub|org=tferr|repo=Scripts|path=Segmentation/README.md#shen-castan-edge-detector|label=Shen-Castan Edge Detector}}, {{GitHub|org=tferr|repo=Scripts|path=Segmentation/README.md#apply-threshold-to-roi|label=Apply Threshold To ROI}}, {{GitHub|org=tferr|repo=Scripts|path=Segmentation/README.md#clear-thresholded-pixels|label=Clear Thresholded Pixels}}, {{GitHub|org=tferr|repo=Scripts|path=Segmentation/README.md#remove-isolated-pixels|label=Remove Isolated Pixels}}, {{GitHub|org=tferr|repo=Scripts|path=Segmentation/README.md#threshold-from-background|label=Threshold From Background}}, {{GitHub|org=tferr|repo=Scripts|path=Segmentation/README.md#wipe-background|label=Wipe Background}}
 
-;{{GitHub|org=tferr|repo=Scripts|path=README.md#snippets|label=Snippets}} and  {{GitHub|org=tferr|repo=Scripts|path=/lib#lib|label=BAR lib}}<span id="SnippetsList"></span>
+;{{GitHub|org=tferr|repo=Scripts|path=README.md#snippets|label=Snippets}},   {{GitHub|org=tferr|repo=Scripts|path=/lib#lib|label=BAR lib}}<span id="SnippetsList"> and {{GitHub|org=tferr|repo=Scripts|path=Snippets/Tutorials#tutorials|label=Tutorials}}</span>
 :Described in [[#Scripting_BARs|Scripting BARs]]
 
 ;{{GitHub|org=tferr|repo=Scripts|path=README.md#tools-and-toolsets|label=Tools and Toolsets}}<span id="Tools"></span>
