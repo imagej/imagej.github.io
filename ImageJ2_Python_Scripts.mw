@@ -1,6 +1,7 @@
+{{scripting}}
 == Introduction ==
 
-This page is a collection of '''ImageJ2 only''' Python scripts. It means that IJ1 should be avoided as much as possible but if you can use it if it's really necessary.
+This page is a primer of '''ImageJ2 only''' Python scripts. It means that the examples included here avoid IJ1 as much as possible, unless it's really necessary.
 
 == Scripts ==
 
@@ -79,7 +80,7 @@ thresholded = ij.dataset().create(thresholded)
 ij.ui().show("thresholded", thresholded))
 </source>
 
-A more direct way if you don't need to modify the threshold is this :
+A more direct way if you don't need to modify the threshold is:
 
 <source lang='python'>
 
@@ -96,3 +97,12 @@ thresholded = ij.dataset().create(thresholded)
 
 ij.ui().show("thresholded", thresholded)
 </source>
+
+== Resources ==
+* [[Jython_Scripting|Jython Scripting]]
+* [[Jython_Scripting_Examples|Jython Examples]]
+
+[[Category:Scripting]]
+[[Category:ImageJ2]]
+[[Category:Ops]]
+[[Category:SciJava]]
