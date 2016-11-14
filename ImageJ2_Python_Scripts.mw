@@ -54,3 +54,27 @@ def main():
 
 main()
 </source>
+
+=== Apply Threshold ===
+
+
+<source lang='python'>
+# @ImageJ ij
+# @Dataset data
+
+method_threshold = "otsu"
+
+# Get the histogram
+histo = ij.op().run("image.histogram", data.getImgPlus())
+
+# Get the threshold
+threshold = ij.op().run("threshold.%s" % method_threshold, histo)
+
+# Apply the threshold
+thresholded = ij.op().run("threshold.apply", data.getImgPlus(), threshold)
+
+# Create output
+thresholded = ij.dataset().create(thresholded)
+
+ij.ui().show("thresholded", thresholded))
+</source>
