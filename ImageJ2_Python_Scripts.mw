@@ -12,48 +12,59 @@ Do a Z projection.
 <source lang='python'>
 # @ImageJ ij
 # @Dataset data
+# @String(label="Projection Type",choices={"Max","Mean","Median","Min", "StdDev", "Sum"}) proj_type
 
-# TODO : Find a way to use script parameters to let user choose between
-# "max", "mean", "min", "median", etc.
 
 from net.imagej.axis import Axes
 from net.imagej.ops import Ops
 
 
+def proj_method(method):
+    return {
+        'Max': Ops.Stats.Max,
+        'Mean': Ops.Stats.Mean,
+        'Median': Ops.Stats.Median,
+        'Min': Ops.Stats.Min,
+        'StdDev': Ops.Stats.StdDev,
+        'Sum': Ops.Stats.Sum,
+    }.get(method, Ops.Stats.Max)
+
+
 def main():
 
-	# Select which dimension to project
-	z_dim = data.dimensionIndex(Axes.Z)
+    # Select which dimension to project
+    z_dim = data.dimensionIndex(Axes.Z)
 
-	if z_dim == -1:
-		print("Z dimension not found.")
-		return
+    if z_dim == -1:
+        print("Z dimension not found.")
+        return
 
-	if data.dimension(z_dim) == 1:
-		print("Z dimension has only one frame.")
-		return
+    if data.dimension(z_dim) < 2:
+        print("Z dimension has only one frame.")
+        return
 
-	# Write the output dimensions
-	projected_dimensions = [data.dimension(d) for d in range(0, data.numDimensions()) if d != z_dim]
+    # Write the output dimensions
+    projected_dimensions = [data.dimension(d) for d in range(0, data.numDimensions()) if d != z_dim]
 
-	# Create the output image
-	z_projected = ij.op().create().img(projected_dimensions)
+    # Create the output image
+    z_projected = ij.op().create().img(projected_dimensions)
 
-	# Create the op and run it
-	max_op = ij.op().op(Ops.Stats.Max, data)
-	ij.op().transform().project(z_projected, data, max_op, z_dim)
+    # Create the op and run it
+    proj_op = ij.op().op(proj_method(proj_type), data)
+    ij.op().transform().project(z_projected, data, proj_op, z_dim)
 
-	# Create a dataset
-	z_projected = ij.dataset().create(z_projected)
+    # Create a dataset
+    z_projected = ij.dataset().create(z_projected)
 
-	# Set the correct axes (is that needed ?)
-	axes = [data.axis(d) for d in range(0, data.numDimensions()) if d != z_dim]
-	z_projected.setAxes(axes)
+    # Set the correct axes (is that needed ?)
+    axes = [data.axis(d) for d in range(0, data.numDimensions()) if d != z_dim]
+    z_projected.setAxes(axes)
 
-	print(z_projected)
-	ij.ui().show("z_projected", z_projected)
+    print(z_projected)
+    ij.ui().show("z_projected", z_projected)
 
 main()
+
 </source>
 
 === Apply Threshold ===
