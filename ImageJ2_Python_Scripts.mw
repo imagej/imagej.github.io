@@ -78,3 +78,21 @@ thresholded = ij.dataset().create(thresholded)
 
 ij.ui().show("thresholded", thresholded))
 </source>
+
+A more direct way if you don't need to nodify the threshold is this :
+
+<source lang='python'>
+
+# @ImageJ ij
+# @Dataset data
+
+method_threshold = "otsu"
+
+# Apply the threshold
+thresholded = ij.op().run("threshold.%s" % method_threshold, data.getImgPlus())
+
+# Create output
+thresholded = ij.dataset().create(thresholded)
+
+ij.ui().show("thresholded", thresholded)
+</source>
