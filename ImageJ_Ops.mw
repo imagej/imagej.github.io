@@ -17,7 +17,7 @@ Ops has three major design goals:
 
 Ops are a special type of ImageJ plugin, so a basic understanding of the [[Writing_Plugins|SciJava plugin framework]] is strongly recommended.
 
-In addition to cloning the {{GitHub|imagej|imagej-ops|label=imagej-ops repository}} itself, the following components have useful Ops examples:
+In addition to cloning the [https://github.com/imagej/imagej-ops imagej-ops] itself, the following components have useful Ops examples:
 
 * {{GitHub|org=imagej|repo=imagej-tutorials|label=ImageJ-tutorials}} - examples of ImageJ plugins using Ops
 * {{GitHub|org=imagej|repo=imagej-scripting|label=ImageJ-scripting}} - provides [[Script_Templates|templates in the Script Editor]]
