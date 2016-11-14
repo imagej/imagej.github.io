@@ -1,0 +1,56 @@
+== Introduction ==
+
+This page is a collection of **ImageJ2 only** Python scripts. It means that IJ1 should be avoided as much as possible but if you can use it if it's really necessary.
+
+== Scripts ==
+
+=== Z Projection ===
+
+Do a Z projection. 
+
+<source lang='python'>
+# @ImageJ ij
+# @Dataset data
+
+# TODO : Find a way to use script parameters to let user choose between
+# "max", "mean", "min", "median", etc.
+
+from net.imagej.axis import Axes
+from net.imagej.ops import Ops
+
+
+def main():
+
+	# Select which dimension to project
+	z_dim = data.dimensionIndex(Axes.Z)
+
+	if z_dim == -1:
+		print("Z dimension not found.")
+		return
+
+	if data.dimension(z_dim) == 1:
+		print("Z dimension has only one frame.")
+		return
+
+	# Write the output dimensions
+	projected_dimensions = [data.dimension(d) for d in range(0, data.numDimensions()) if d != z_dim]
+
+	# Create the output image
+	z_projected = ij.op().create().img(projected_dimensions)
+
+	# Create the op and run it
+	max_op = ij.op().op(Ops.Stats.Max, data)
+	ij.op().transform().project(z_projected, data, max_op, z_dim)
+
+	# Create a dataset
+	z_projected = ij.dataset().create(z_projected)
+
+	# Set the correct axes (is that needed ?)
+	axes = [data.axis(d) for d in range(0, data.numDimensions()) if d != z_dim]
+	z_projected.setAxes(axes)
+
+	print(z_projected)
+	ij.ui().show("z_projected", z_projected)
+
+main()
+</source>
