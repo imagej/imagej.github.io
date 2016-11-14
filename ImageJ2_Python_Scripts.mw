@@ -79,7 +79,7 @@ thresholded = ij.dataset().create(thresholded)
 ij.ui().show("thresholded", thresholded))
 </source>
 
-A more direct way if you don't need to nodify the threshold is this :
+A more direct way if you don't need to modify the threshold is this :
 
 <source lang='python'>
 
