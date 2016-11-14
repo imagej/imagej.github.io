@@ -6,7 +6,7 @@
 | maintainer     = {{Person|Tiago}}
 | source         = {{GitHub|org=tferr|repo=Scripts}}
 | released       = June 2014
-| latest version = '''1.1.9 November 2016''' ({{GitHub|org=tferr|repo=Scripts/releases|label=Changelog}})
+| latest version = '''1.1.10 November 2016''' ({{GitHub|org=tferr|repo=Scripts/releases|label=Changelog}})
 | category       = [[:Category:Analysis|Analysis]], [[:Category:Image annotation|Annotation]], [[:Category:Filtering|Filtering]], [[:Category:Segmentation|Segmentation]], [[:Category:Scripting|Scripting]]
 }}
 </div>
