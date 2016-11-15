@@ -3,3 +3,5 @@ under construction
 This page provide a description and pointers towards the use of the CElegansBeadsAnalysis plugin. It is made available in conjunction with the publication of the paper:
 
 Mykola Mylenko, Sebastian Boland, Sider Penkov, Julio L. Sampaio, Benoit Lombardot, Daniela Vorkel, Jean-Marc-Verbavatz, Teymuras V. Kurzchalia, NAD+ is a food component that promotes exit from dauer diapause in Caenorhabditis elegans, Plos One, 2016
+
+The plugin can be downloaded here: [[File:Celegans beads analysis-1.0.0.jar.zip]]. Plugin usage is described in the next section. The source code can be accessed on [https://git.mpi-cbg.de/bioimage-informatics/cElegansBeadsAnalysis MPI-CBG git repository]
