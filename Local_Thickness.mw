@@ -9,7 +9,6 @@
 | status                 = 
 | category               = 
 | documentation          = [http://www.optinav.info/LocalThicknessEd.pdf LocalThicknessEd.pdf]
-| website                = http://www.optinav.com/Local_Thickness.htm
 }}'''Local Thickness''' is used to compute the local thickness of a 3D image stack.
 
 Documentation is available as [http://www.optinav.info/LocalThicknessEd.pdf pdf] file.
