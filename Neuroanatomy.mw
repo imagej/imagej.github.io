@@ -41,7 +41,8 @@ The requirements to run the Neuroanatomy suite of plugins are twofold: i) [[Fiji
 |- valign="top"
 |Particles classifier
 |{{bc|Analyze|Skeleton|Classify Particles Using Skeleton}}
-|Tags segmented particles according to skeleton features
+|Tags particles according to skeleton features.
+Runs {{bc|Analyze|Analyze|Analyze Particles}} on one image and clusters detected particles according to their positioning to features (e.g., a junction or end-point) of a [[AnalyzeSkeleton|tagged skeleton]] [produced by {{bc|Analyze|Analyze|Skeleton (2D/3D)}}] in another image. A particle is considered to be associated to a skeleton feature if the distance between its centroid and the feature is within a specified cuttoff ("snap to") distance. Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=Scripts/Analyze/Skeleton|label=Python script}}.
 |-
 |colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Import/Export''
 |- valign="top"
