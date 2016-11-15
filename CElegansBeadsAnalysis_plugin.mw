@@ -21,7 +21,7 @@ Once the plugin is installed, you can analyze an image as follows:
 * Start the plugin by clicking its menu entry
 
 * A window will pop up requesting the following parameters
-** '''Transmission channel''': the channel with the transmitted light image of the worms ( note that the first channel has value 1)
+** '''Transmission channel''': the channel with the transmitted light image of the worms ( note that channel start at 1 )
 ** '''Beads channel''': The channel showing the beads fluorescent signal
 ** '''Minimal mask area''': The minimum area of the regions in the worm mask
 ** '''Use a manual threshold''': if checked, a manual threshold will be used to define the beads region otherwise a threshold of 3 times the mean intensity of the beads image will be used.
