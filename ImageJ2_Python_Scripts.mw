@@ -162,6 +162,45 @@ ij.op().convert().imageType(clipped, subtracted, clip_op)
 ij.ui().show("subtracted", clipped)
 </source>
 
+
+=== Apply DOG Filter ===
+
+<source lang='python'>
+# @ImageJ ij
+# @Dataset data
+
+from net.imagej.axis import Axes
+
+sigma1 = 4.2
+sigma2 = 1.25
+
+# IJ Ops version
+
+pixel_type = data.getImgPlus().firstElement().class
+converted = ij.op().convert().float32(data.getImgPlus())
+
+# Allocate output memory (wait for hybrid CF version of slice)
+dog = ij.op().create().img(converted)
+
+# Create the op
+dog_op = ij.op().op("filter.dog", converted, sigma1, sigma2)
+
+# Setup the fixed axis
+t_dim = data.dimensionIndex(Axes.TIME)
+fixed_axis = [d for d in range(0, data.numDimensions()) if d != t_dim]
+
+# Run the op
+ij.op().slice(dog, converted, dog_op, fixed_axis)
+
+# Clip image to the input type
+clipped = ij.op().create().img(dog, data.getImgPlus().firstElement())
+clip_op = ij.op().op("convert.clip", data.getImgPlus().firstElement(), dog.firstElement())
+ij.op().convert().imageType(clipped, dog, clip_op)
+
+# Show it
+ij.ui().show("dog", clipped)
+</source>
+
 == Resources ==
 * [[Jython_Scripting|Jython Scripting]]
 * [[Jython_Scripting_Examples|Jython Examples]]
