@@ -36,6 +36,12 @@ Users place pairs of corresponding points on
 
 The following table shows the available landmark placement commands and keystrokes. 
 {| border="1" style="border-collapse:collapse;"
+| style="padding: 5px;" | {{key press|Ctrl}}+{{key press|O}}
+| style="padding: 5px;" | Open landmarks from saved file.
+|-
+| style="padding: 5px;" | {{key press|Ctrl}}+{{key press|S}}
+| style="padding: 5px;" | Save current landmarks to a file.
+|-
 | style="padding: 5px;" | hold {{key press|Spacebar}}
 | style="padding: 5px;" | Toggle ''Landmark mode'' 
 |-
@@ -114,6 +120,15 @@ The following table shows the available navigation commands using the mouse:
 | style="padding: 5px;" | {{key press|W}}
 | style="padding: 5px;" | Align the active viewer with the non-active viewer.
 |-
+| style="padding: 5px;" | {{key press|E}}
+| style="padding: 5px;" | Centers the active viewer to the nearest landmark (considers 3D when applicable).
+|-
+| style="padding: 5px;" | {{key press|Ctrl}}+{{key press|D}}
+| style="padding: 5px;" | Centers the active viewer to the next landmark.
+|-
+| style="padding: 5px;" | {{key press|Ctrl}}+{{key press|Shift}}+{{key press|D}}
+| style="padding: 5px;" | Centers the active viewer to the previous landmark.
+|-
 | style="padding: 5px;" | {{key press|R}}
 | style="padding: 5px;" | Resets the active viewer.
 |-
@@ -124,7 +139,14 @@ The following table shows the available navigation commands using the mouse:
 | style="padding: 5px;" | Show moving image panel Visibility & and Grouping dialog.
 |-
 | style="padding: 5px;" | {{key press|F7}}
-| style="padding: 5px;" | Show target image panel Visibility & and Grouping dialog.
+| style="padding: 5px;" | Show target image panel Visibility & and Grouping 
+dialog.
+|-
+| style="padding: 5px;" | {{key press|Ctrl}}+{{key press|E}}
+| style="padding: 5px;" | Export moving image as an ImagePlus.
+|-
+| style="padding: 5px;" | {{key press|Ctrl}}+{{key press|Shift}}+{{key press|E}}
+| style="padding: 5px;" | Export moving image as a Virtual ImagePlus.
 |}
 
 === Import and Export ===
