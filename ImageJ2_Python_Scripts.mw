@@ -1,8 +1,6 @@
 {{scripting}}
 == Introduction ==
 
-{{#github:https://raw.githubusercontent.com/hadim/imagej-scripting/master/src/main/resources/script_templates/Tutorials/Simple_Convolution.groovy}}
-
 This page is a primer of '''ImageJ2 only''' Python scripts. It means that the examples included here avoid IJ1 as much as possible, unless it's really necessary.
 
 == Scripts ==
