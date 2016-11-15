@@ -23,7 +23,49 @@ Add the ''Hadim'' update site in ''Help ▶ Update…'' (see http://imagej.net/F
 
 == Documentation ==
 
-The best documentation is [https://github.com/hadim/ij2-python-lib/tree/master/src/main/resources/ij2_tools the source code] but I'll give some usage examples here.  
+The best documentation is [https://github.com/hadim/ij2-python-lib/tree/master/src/main/resources/ij2_tools the source code].
+
+Some functions have <code>ij</code> has a first argument, it excepts to receive an <code>ImageJ</code> object.  
+
+<source lang="python"># Do a maximum Z projection
+from ij2_tools.z_projection import do_z_projection
+do_z_projection(ij, data, save=False, output_dir="")
+
+# Apply a DOG filter
+from ij2_tools.dog_filtering import apply_dog_filter
+apply_dog_filter(ij, data, sigma1, sigma2, save=False, output_dir="")
+
+# Apply automatic threshold on an image
+# Method is string representing available algorithm in `ops.threshold`
+from ij2_tools.threshold import do_threshold
+do_threshold(ij, data, method, k1=1, save=False, output_dir="")
+
+# Subtract the first image of a stack to the entire stack
+from ij2_tools.subtract import subtract_first_image
+subtract_first_image(ij, data, save=False, output_dir=""):
+
+# Print dataset dimensions for X, Y, Z, TIME and CHANNEL
+from ij2_tools.ij_utils import print_info
+
+# Check if a point is inside a circle
+from ij2_tools.geometry import in_circle
+in_circle(point, center, radius)
+
+# Return the points defining a circle
+from ij2_tools.geometry import get_circle_points
+get_circle_points(x_center, y_center, radius, n=20)
+
+# Return the points defining the association of two circles
+from ij2_tools.geometry import get_two_circles_points
+get_two_circles_points(x1, y1, x2, y2, radius, n=20)
+
+# Detect spots using the TrackMate DOG Detector
+from ij2_tools.spot_detector import dog_detector
+dog_detector(ij, data, radius, relative_threshold=1, doSubpixel=True, doMedian=False, calibration=None)
+
+# Return the IJ1 ROI Manager
+from ij2_tools.ij1 import get_roi_manager
+get_roi_manager(new=False)</source>
 
 == Related links ==
 * Source code on GitHub : https://github.com/hadim/ij2-python-lib
