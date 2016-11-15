@@ -1,0 +1,35 @@
+{{Infobox
+| name                  = ij2-python-lib
+| logo                    = 
+| software              = Fiji
+| author                = {{Person|Hadim}}
+| maintainer            = {{Person|Hadim}}
+| source                = {{GitHub|org=hadim|repo=ij2-python-lib}}
+| released              = 15/11/2016
+| status                = v0.1.0, development
+| category              = 
+}}
+__TOC__
+
+== Presentation ==
+
+''ij2-python-lib'' is a set of IJ2 Python Libraries.
+
+Note that this library has been designed to regroup useful functions the author use often. And so many functions are very specific to the use-case of the author.
+
+== Install ==
+
+Add the ''Hadim'' update site in Help ▶ Update… (see http://imagej.net/Following_an_update_site for details on how to proceed).
+
+== Documentation ==
+
+The best documentation is [https://github.com/hadim/ij2-python-lib/tree/master/src/main/resources/ij2_tools the source code] but I'll give some usage examples here.  
+
+== Related links ==
+* Source code on GitHub : https://github.com/hadim/ij2-python-lib
+
+== Authors ==
+
+''ij2-python-lib'' has been created by Hadrien Mary.
+
+This work started in 2016 at the Gary Brouhard laboratory (http://brouhardlab.mcgill.ca) at McGill University.
