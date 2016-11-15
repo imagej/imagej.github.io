@@ -32,6 +32,6 @@ Once the plugin is installed, you can analyze an image as follows:
 ** An image with the bead selection on top of the orignal bead image.
 ** 2 lines are appended to the results table. The first one indicates the area (in pixel)and mean intensity of the worm mask. The second line indicates the area of the beads selection in pixel and the mean intensity of that selection in the beads image.
 
-In further steps, one can modify the worms masks manally if this one is inaccurate and remeasure its area by pressing the M key. The worm mask area as well as the total beads signal is used further in the paper to analyze the relative quantity of beads ingested by worms with different experimental conditions.
+In further steps, one can correct the worms masks manally if necessary. In that case the are of the mask can be remeasured by pressing the M key. The worm mask area as well as the total beads signal is used further in the paper to analyze the relative quantity of beads ingested by worms in different experimental conditions.
 
 Remark: Note that the plugin change the Fiji "black background" settings (in the menu Process>Binary>Option) to uncheck.
