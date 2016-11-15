@@ -7,8 +7,6 @@ This page is a primer of '''ImageJ2 only''' Python scripts. It means that the ex
 
 === Z Projection ===
 
-Do a Z projection. 
-
 <source lang='python'>
 # @ImageJ ij
 # @Dataset data
