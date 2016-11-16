@@ -298,6 +298,78 @@ for label in region_labels:
 		# print(x, y, pixel)
 </source>
 
+=== Extract patch ===
+
+Extract a patch from an image given its center, its size and also an orientation.
+
+<source lang='python'>
+# @ImageJ ij
+# @Dataset data
+
+from net.imglib2.interpolation.randomaccess import LanczosInterpolatorFactory
+from net.imglib2.view import Views
+from net.imagej.axis import Axes
+
+import math
+
+
+def extract_patch(data, origin, orientation, size):
+	"""Inspired from A. Matov and al., 2010, Nature Methods
+	"""
+
+	e1 = [-math.cos((orientation + 90) * math.pi / 180), math.sin((orientation + 90) * math.pi / 180), 0]
+	e2 = [math.sin((orientation + 90) * math.pi / 180), math.cos((orientation + 90) * math.pi / 180), 0]
+	e3 = [0, 0, 1]
+	v1 = [-size//2, size//2]
+	v2 = [-size//2, size//2]
+	v3 = [0, 0]
+
+	# Generate a list of coordinates
+	listOfCoords = []
+	for z in range(v3[0], v3[1] + 1):
+		for y in range(v2[0], v2[1] + 1):
+			for x in range(v1[0], v1[1] + 1):
+				coord = []
+				coord.append(x * e1[0] + y * e2[0] + z * e3[0] + origin[0])
+				coord.append(x * e1[1] + y * e2[1] + z * e3[1] + origin[1])
+				coord.append(x * e1[2] + y * e2[2] + z * e3[2] + origin[2])
+				listOfCoords.append(coord)
+	
+	
+	# Create realRandomAccess cursor
+	interpolator = LanczosInterpolatorFactory()
+	interpolant = Views.interpolate(Views.extendZero(data.getImgPlus()), interpolator)
+	realRandomAccess = interpolant.realRandomAccess()
+	
+	# Create the output
+	patch_dims = [v1[1] - v1[0] + 1, v2[1] - v2[0] + 1, v3[1] - v3[0] + 1]
+	# TODO : setup same Axes as input
+	axes = [Axes.X, Axes.Y, Axes.Z]
+	patch = ij.dataset().create(patch_dims, "patch", axes, data.getValidBits(), data.isSigned(), False)
+	
+	patchRA = patch.randomAccess()
+	
+	i = 0
+	for x in range(patch_dims[0]):
+		for y in range(patch_dims[1]):
+			for z in range(patch_dims[2]):
+			
+				patchRA.setPosition([x, y, z])
+				realRandomAccess.setPosition(listOfCoords[i])		
+				patchRA.get().set(realRandomAccess.get())
+				i += 1
+				
+	return patch
+
+# Extract a patch of size 20 pixel at a defined position with a defined orientation
+orientation = 46
+origin = [294, 81, 0]
+size = 10
+patch = extract_patch(data, origin, orientation, size)
+ij.ui().show(patch)
+</source>
+
+
 == Resources ==
 * [[Jython_Scripting|Jython Scripting]]
 * [[Jython_Scripting_Examples|Jython Examples]]
