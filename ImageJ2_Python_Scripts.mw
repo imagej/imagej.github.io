@@ -421,6 +421,95 @@ def crop_along_one_axis(ij, data, intervals, axis_type):
 	return output
 </source>
 
+=== Rotate all the frames of a stack ===
+
+<source lang='python'>
+# @ImageJ ij
+# @Dataset data
+
+import math
+
+from net.imagej.axis import Axes
+from net.imglib2.util import Intervals
+
+from net.imglib2.realtransform import RealViews
+from net.imglib2.realtransform import AffineTransform2D
+from net.imglib2.interpolation.randomaccess import LanczosInterpolatorFactory
+from net.imglib2.view import Views
+
+
+def get_axis(axis_type):
+    return {
+        'X': Axes.X,
+        'Y': Axes.Y,
+        'Z': Axes.Z,
+        'TIME': Axes.TIME,
+        'CHANNEL': Axes.CHANNEL,
+    }.get(axis_type, Axes.Z)
+    
+
+def crop_along_one_axis(ij, data, intervals, axis_type):
+	"""Crop along a single axis using Views.
+
+	Parameters
+	----------
+	intervals : List with two values specifying the start and the end of the interval.
+	axis_type : Along which axis to crop. Can be ["X", "Y", "Z", "TIME", "CHANNEL"]
+	"""
+
+	axis = get_axis(axis_type)
+	interval_start = [data.min(d) if d != data.dimensionIndex(axis) else intervals[0] for d in range(0, data.numDimensions())]
+	interval_end = [data.max(d) if d != data.dimensionIndex(axis) else intervals[1] for d in range(0, data.numDimensions())]
+
+	interval = interval_start + interval_end
+	interval = Intervals.createMinMax(*interval)
+
+	output = ij.op().run("transform.crop", data, interval, True)
+
+	return output
+
+angle = 90
+
+# Get the center of the images so we do the rotation according to it
+center = [int(round((data.max(d) / 2 + 1))) for d in range(0, data.numDimensions())]
+
+# Convert angles to radians
+angle_rad = angle * math.pi / 180
+
+# Build the affine transformation
+affine = AffineTransform2D()
+affine.translate([-p for p in center])
+affine.rotate(angle_rad)
+affine.translate(center)
+
+# Get the interpolator
+interpolator = LanczosInterpolatorFactory()
+
+# Iterate over all frame in the stack
+axis = Axes.TIME
+output = []
+for d in range(data.dimension(axis)):
+
+	# Get the current frame
+	frame = crop_along_one_axis(ij, data, [d, d], "TIME")
+
+	# Get the interpolate view of the frame
+	extended = ij.op().run("transform.extendZeroView", frame)
+	interpolant = ij.op().run("transform.interpolateView", extended, interpolator)
+
+	# Apply the transformation to it
+	rotated = RealViews.affine(interpolant, affine)
+	
+	# Set the intervals
+	rotated = ij.op().transform().offset(rotated, frame)
+
+	output.append(rotated)
+
+output = Views.stack(output)
+
+ij.ui().show("output", output)
+</source>
+
 == Resources ==
 * [[Jython_Scripting|Jython Scripting]]
 * [[Jython_Scripting_Examples|Jython Examples]]
