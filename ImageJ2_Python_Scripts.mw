@@ -199,6 +199,35 @@ ij.op().convert().imageType(clipped, dog, clip_op)
 ij.ui().show("dog", clipped)
 </source>
 
+=== Apply a mask ===
+
+Given a mask (binary image) and a raw image, remove background pixel from raw by keeping only those in the mase (different from 0).
+
+<source lang='python'>
+
+# @ImageJ ij
+# @Dataset data
+# @Dataset mask
+
+output = ij.dataset().create(data)
+
+targetCursor = output.localizingCursor()
+dataRA = data.randomAccess()
+maskRA = mask.randomAccess()
+
+while targetCursor.hasNext():
+	targetCursor.fwd()
+	dataRA.setPosition(targetCursor)
+	maskRA.setPosition(targetCursor)
+
+	if maskRA.get().get() == 0:
+		targetCursor.get().set(0)
+	else:
+		targetCursor.get().set(dataRA.get())
+
+ij.ui().show("output", output)
+</source>
+
 == Resources ==
 * [[Jython_Scripting|Jython Scripting]]
 * [[Jython_Scripting_Examples|Jython Examples]]
