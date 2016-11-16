@@ -235,6 +235,7 @@ Get a list of <code>LabelRegion</code> and display the center of mass with the I
 <source lang='python'>
 # @ImageJ ij
 # @Dataset data
+# @Dataset mask
 
 from net.imagej.axis import Axes
 
@@ -252,7 +253,7 @@ def get_roi_manager(new=False):
 		rm.runCommand("Reset")
 	return rm
 
-img = data.getImgPlus()
+img = mask.getImgPlus()
 
 labeled_img = ij.op().run("cca", img, StructuringElement.EIGHT_CONNECTED)
 
@@ -265,19 +266,36 @@ print("%i regions/particles detected" % len(region_labels))
 
 rm = get_roi_manager(new=True)
 for label in region_labels:
+ 
+    region = regions.getLabelRegion(label)
+ 
+    center = region.getCenterOfMass()
+    x = center.getDoublePosition(0)
+    y = center.getDoublePosition(1)
+ 
+    roi = PointRoi(x, y)
+    if center.numDimensions() >= 3:
+        z = center.getDoublePosition(2)
+        roi.setPosition(int(z))
+     
+    rm.addRoi(roi)
 
-	region = regions.getLabelRegion(label)
+    # You can also iterate over the `data` pixel by LabelRegion
 
-	center = region.getCenterOfMass()
-	x = center.getDoublePosition(0)
-	y = center.getDoublePosition(1)
-
-	roi = PointRoi(x, y)
-	if center.numDimensions() >= 3:
-		z = center.getDoublePosition(2)
-		roi.setPosition(int(z))
+	cursor = region.localizingCursor()
+	dataRA = data.randomAccess()
+	while cursor.hasNext():
+		cursor.fwd()
+		dataRA.setPosition(cursor)
 	
-	rm.addRoi(roi)
+		x = cursor.getDoublePosition(0)
+		y = cursor.getDoublePosition(1)
+
+		# Pixel of `data`
+		pixel = dataRA.get()
+
+		# Do whatever you want here
+		# print(x, y, pixel)
 </source>
 
 == Resources ==
