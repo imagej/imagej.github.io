@@ -381,6 +381,20 @@ patch = extract_patch(data, origin, orientation, size)
 ij.ui().show(patch)
 </source>
 
+=== Crop an image ===
+
+Crop a 3D stack given a top left point and the size of the crop for each dimensions.
+
+<source lang='python'>
+# @ImageJ ij
+# @Dataset data
+
+left_top_point = [17, 3, 1]
+view_size = [9, 9, 1]
+
+output = ij.op().transform().offset(data.getImgPlus(), left_top_point, view_size)
+ij.ui().show("output", output)
+</source>
 
 == Resources ==
 * [[Jython_Scripting|Jython Scripting]]
