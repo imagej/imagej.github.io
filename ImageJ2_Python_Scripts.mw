@@ -389,7 +389,15 @@ ij.ui().show(patch)
 from net.imagej.axis import Axes
 from net.imglib2.util import Intervals
 
-from .ij_utils import get_axis
+
+def get_axis(axis_type):
+    return {
+        'X': Axes.X,
+        'Y': Axes.Y,
+        'Z': Axes.Z,
+        'TIME': Axes.TIME,
+        'CHANNEL': Axes.CHANNEL,
+    }.get(axis_type, Axes.Z)
 
 
 def crop_along_one_axis(ij, data, intervals, axis_type):
