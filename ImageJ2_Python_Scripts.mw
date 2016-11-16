@@ -228,6 +228,18 @@ while targetCursor.hasNext():
 ij.ui().show("output", output)
 </source>
 
+As specified by @stelfrich on Gitter, the particular case when forground pixel are 1 and background pixels are 1 can be simpler to write with a multiplication of the two images.
+
+<source lang='python'>
+# @ImageJ ij
+# @Dataset data
+# @Dataset mask
+ 
+output = ij.dataset().create(data)
+ij.op().op("math.multiply", output, data.getImgPlus(), mask.getImgPlus())
+ij.ui().show("output", output)
+</source>
+
 === Retrieve objects/particles from a mask ===
 
 Get a list of <code>LabelRegion</code> and display the center of mass with the IJ1 ROI Manager.
