@@ -383,41 +383,37 @@ patch = extract_patch(data, origin, orientation, size)
 ij.ui().show(patch)
 </source>
 
-=== Crop an image along one single axis ===
+=== Crop an image ===
 
 <source lang='python'>
 from net.imagej.axis import Axes
 from net.imglib2.util import Intervals
 
-
-def get_axis(axis_type):
-    return {
-        'X': Axes.X,
-        'Y': Axes.Y,
-        'Z': Axes.Z,
-        'TIME': Axes.TIME,
-        'CHANNEL': Axes.CHANNEL,
-    }.get(axis_type, Axes.Z)
+from .ij_utils import get_axis
 
 
-def crop_along_one_axis(ij, data, intervals, axis_type):
-	"""Crop along a single axis using Views.
+def crop(ij, data, intervals):
+	"""Crop along a one or more axis.
 
 	Parameters
 	----------
-	intervals : List with two values specifying the start and the end of the interval.
-	axis_type : Along which axis to crop. Can be ["X", "Y", "Z", "TIME", "CHANNEL"]
+	intervals : Dict specifying which axis to crop and with what intervals.
+				Example :
+				intervals = {'X' : [0, 50],
+				             'Y' : [0, 50]}
 	"""
 
-	axis = get_axis(axis_type)
-	interval_start = [data.min(d) if d != data.dimensionIndex(axis) else intervals[0] for d in range(0, data.numDimensions())]
-	interval_end = [data.max(d) if d != data.dimensionIndex(axis) else intervals[1] for d in range(0, data.numDimensions())]
+	intervals_start = [data.min(d) for d in range(0, data.numDimensions())]
+	intervals_end = [data.max(d) for d in range(0, data.numDimensions())]
 
-	interval = interval_start + interval_end
-	interval = Intervals.createMinMax(*interval)
+	for axis_type, interval in intervals.items():
+		index = data.dimensionIndex(get_axis(axis_type))
+		intervals_start[index] = interval[0]
+		intervals_end[index] = interval[1]
 
-	output = ij.op().run("transform.crop", data, interval, True)
+	intervals = Intervals.createMinMax(*intervals_start + intervals_end)
 
+	output = ij.op().run("transform.crop", data, intervals, True)
 	return output
 </source>
 
