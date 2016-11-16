@@ -396,6 +396,44 @@ output = ij.op().transform().offset(data.getImgPlus(), left_top_point, view_size
 ij.ui().show("output", output)
 </source>
 
+Also see this convenient function to crop along one single axis : 
+
+<source lang='python'>
+# @ImageJ ij
+# @Dataset data
+
+from net.imagej.axis import Axes
+
+def get_axis(axis_type):
+    return {
+        'X': Axes.X,
+        'Y': Axes.Y,
+        'Z': Axes.Z,
+        'TIME': Axes.TIME,
+        'CHANNEL': Axes.CHANNEL,
+    }.get(axis_type, Axes.Z)
+
+
+def crop_along_one_axis(ij, data, intervals, axis_type):
+	"""Crop along a single axis using Views.
+
+	Parameters
+	----------
+	intervals : list with two values specifying the start and the end of the interval.
+	axis_type : Along which axis to crop. Can be ["X", "Y", "Z", "TIME", "CHANNEL"]
+	"""
+
+	axis = get_axis(axis_type)
+	start_interval = [data.min(d) if d != data.dimensionIndex(axis) else intervals[0] for d in range(0, data.numDimensions())]
+	end_interval = [data.max(d) if d != data.dimensionIndex(axis) else intervals[1] for d in range(0, data.numDimensions())]
+	output = ij.op().transform().offset(data.getImgPlus(), start_interval, end_interval)
+	return output
+
+intervals = [0, 2]
+output = crop_along_one_axis(ij, data, intervals, axis_type="TIME")
+ij.ui().show("output", output)
+</source>
+
 == Resources ==
 * [[Jython_Scripting|Jython Scripting]]
 * [[Jython_Scripting_Examples|Jython Examples]]
