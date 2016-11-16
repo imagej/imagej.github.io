@@ -228,7 +228,7 @@ while targetCursor.hasNext():
 ij.ui().show("output", output)
 </source>
 
-As specified by @stelfrich on Gitter, the particular case when forground pixel are 1 and background pixels are 1 can be simpler to write with a multiplication of the two images.
+As specified by @stelfrich on Gitter, the particular case when foreground pixel are 1 and background pixels are 0 can be simpler to write with a multiplication of the two images.
 
 <source lang='python'>
 # @ImageJ ij
