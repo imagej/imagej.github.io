@@ -312,6 +312,8 @@ for label in region_labels:
 
 === Extract patch ===
 
+NOT OPTIMIZED - WIP
+
 Extract a patch from an image given its center, its size and also an orientation.
 
 <source lang='python'>
