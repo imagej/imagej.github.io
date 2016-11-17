@@ -25,40 +25,46 @@ The requirements to run the Neuroanatomy suite of plugins are twofold: i) [[Fiji
 
 = List of commands =
 {| class="wikitable"
-|style="vertical-align: middle;text-align:center;"|'''Name'''
-|style="vertical-align: middle;text-align:center;"|'''Menu Path'''
-|style="vertical-align: middle;text-align:center;"|'''Description'''
+|style="width:10%;vertical-align: middle;text-align:center;"|'''Name'''
+|style="width:20%;vertical-align: middle;text-align:center;"|'''Menu Path'''
+|style="width:70%;vertical-align: middle;text-align:center;"|'''Description'''
 |-
 |colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Topological Skeletons''
 |- valign="top"
 |Strahler classifier
 |{{bc|Analyze|Skeleton|Strahler Analysis...}}
-|Described in [[Strahler Analysis]]
+|Described in [[Strahler Analysis]].
+Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/java/ipnat/skel|label=Java plugin}}.
 |- valign="top"
 |Summarize Skeleton
 |{{bc|Analyze|Skeleton|Summarize Skeleton}}
-|Bulk statistics of skeletonized images
+|Bulk statistics of skeletonized images.
+Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/java/ipnat/skel|label=Java plugin}}.
 |- valign="top"
 |Particles classifier
 |{{bc|Analyze|Skeleton|Classify Particles Using Skeleton}}
 |Tags particles according to skeleton features.
-Runs {{bc|Analyze|Analyze|Analyze Particles}} on one image and clusters detected particles according to their positioning to features (e.g., a junction or end-point, see  [[AnalyzeSkeleton]]) of a skeletonizable image. A particle is considered to be associated to a skeleton feature if the distance between its centroid and the feature is within a specified cuttoff ("snap to") distance. Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/resources/scripts/Analyze/Skeleton|label=Python script}}.
+Runs {{bc|Analyze|Analyze Particles}} on one image and clusters detected particles according to their positioning to features of a skeletonizable structure (e.g., a junction or end-point, see  [[AnalyzeSkeleton]]). A particle is considered to be associated to a skeleton feature if the distance between its centroid and the feature is within a specified cuttoff ("snap to") distance.
+Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/resources/scripts/|label=Python script}}.
 |-
 |colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Import/Export''
 |- valign="top"
 |Tracings Importer
 | {{bc|File|Import|Tracings (Traces/(e)SWC)...}}
-| Renders traced reconstructions ( .traces - [[Simple Neurite Tracer]]'s format - and .swc files) in ImageJ's [[3D Viewer]] or as skeletonized image stacks
+| Renders traced reconstructions ([[Simple_Neurite_Tracer:_.traces_File_Format|.traces]] - [[Simple Neurite Tracer]]'s format - and [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html .swc] files) in ImageJ's [[3D Viewer]] or as skeletonized image stacks.
+Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/java/ipnat/|label=Java plugin}}.
 |-
 |Traces converter
 | {{bc|Plugins|NeuroTools|Convert Traces to SWC}}
-| Batch conversion of [[Simple Neurite Tracer]]'s [[Simple_Neurite_Tracer:_.traces_File_Format|native files]] into [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html SWC]
+| Batch conversion of [[Simple Neurite Tracer]]'s [[Simple_Neurite_Tracer:_.traces_File_Format|.traces files]] into [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html SWC].
+Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/resources/scripts/|label=Python script}}.
 |-
 |colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Utilities''
 |- valign="top"
 |Fractal Trees
 | {{bc|File|Open Samples|Fractal Tree}}
-| Synthetic images (L-System Trees) useful for debugging, testing or prototyping
+| Synthetic images ([https://en.wikipedia.org/wiki/L-system L-System] Trees) useful for debugging, testing or prototyping.
+Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/java/ipnat/skel|label=Java plugin}}.
 |}
 
 = Further information =
