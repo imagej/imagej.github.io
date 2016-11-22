@@ -74,24 +74,6 @@ public class My_Plugin implements PlugIn {
 
 '''Note:''' it is of course possible to implement a filter plugin using the ''PlugIn'' interface, but ImageJ will perform more convenience functions if you use the ''PlugInFilter'' interface, such as verifying that there is an image and that it is of the correct type, and error handling.
 
-== Compile & Run ==
-
-* Fiji has a menu entry {{bc | Plugins | Compile & Run...}} which you can use to compile & run a plugin without restarting Fiji
-* In Fiji, you can put ''.java'' files into the ''plugins/'' directory, and they will be compiled & run transparently (i.e. the user will hardly notice a difference between such plugins and precompiled ones)
-
-== Compile and run on the command-line ==
-
-* A plugin can also be compiled and run from the command line. The following will compile class files and handle ImageJ2 plugins correctly (i.e. generate the annnotation index and write it into the META-INF/ directory in the current working directory).
-
-    fiji --javac -d . MyPlugin.java
-
-
-The plugin can also be run from the command line:
-
-    fiji -cp . MyPlugin.class
-
-"-cp ." includes the current directory in the class path.
-
 == Limitations ==
 
 * Plugins can only implement menu entries (in particular, they cannot provide tools in the toolbar)
