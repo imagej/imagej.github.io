@@ -48,6 +48,7 @@ WindowManager.getActiveWindow().close()
 * Peaks with flat tops are retrieved at their centers
 * Peak coordinates are logged according to the following layout: [''X0,Y0'']: Original data; [''X1,Y1'']: Maxima; [''X2,Y2'']: Minima
 * ''Min. peak distance'' can be used for peak width filtering
+* Use ''Scientific notation'' and ''Decimal places'' in {{bc|Analyze|Set Measurements...}} to improve the representation of values that are too big or too small values to be displayed in the decimal form
 * Find Peaks was initially though as a [[Sholl_Analysis#Complementary_Tools|complementary tool]] for [[Sholl Analysis]] but it that can be applied to any dataset. For this reason, it is now part of [[BAR]]
 
 == Related Resources ==
