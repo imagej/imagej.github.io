@@ -146,8 +146,7 @@ via HTTP or FTP.  Such configuration details are outside the scope of this.
 :: The main reason is if you have systems with ImageJ installed that are behind a firewall with blocked internet access.  Another reason is if you have multiple systems to update and a local mirror would be faster for you (and nicer for the ImageJ servers).  Yet another reason is if you are not on North America, the updater runs very slow.
 
 There is no rsync daemon to support for anonymous synchronization.  If you
-want to keep a mirror of ImageJ update sites, please send an email to
-[mailto:imagej-devel@imagej.net ImageJ-devel] to obtain an ssh account.
+want to keep a mirror of ImageJ update sites, please make a post on the [http://forum.imagej.net/ ImageJ Forum] to obtain an ssh account.
 
 The rough idea is to have a cronjob to run rsync on ssh.  Since this needs
 authentication, we use a ssh key with no passphrase.  We also create a system
