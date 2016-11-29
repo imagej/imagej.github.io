@@ -1,14 +1,10 @@
 This Fiji menu command is implemented by the script {{GitHub|org=fiji|repo=Correct_3D_Drift|path=src/main/resources/scripts/Plugins/Registration/Correct_3D_drift.py|label=Correct_3D_Drift.py}}.
 
-1. The script expects the currently open and active image to be a hyperstack (or virtual hyperstack) consisting of 2D or 3D volumes over time. The script registers the time points to each other using the phase correlation implementation of [[Imglib|ImgLib 1]].
-
-2. Once implemented a dialogue box will request the use to select the color channel to use for registration.
-
-3. If memory is limiting on the system then the user can select to use a virtualstack for the result.  
-
-4. If a virtualstack is selected the a folder save the aligned stack to needs to be selected. 
-
-5. After some processing (there are progress bars), the resulting, registered volumes are opened. If a virtualstack was selected the registered volume will already be saved in the chosen target folder.
+# The script expects the currently open and active image to be a hyperstack (or virtual hyperstack) consisting of 2D or 3D volumes over time. The script registers the time points to each other using the phase correlation implementation of [[Imglib|ImgLib 1]].
+# Once implemented a dialogue box will request the use to select the color channel to use for registration.
+# If memory is limiting on the system then the user can select to use a virtualstack for the result.  
+# If a virtualstack is selected the a folder save the aligned stack to needs to be selected. 
+# After some processing (there are progress bars), the resulting, registered volumes are opened. If a virtualstack was selected the registered volume will already be saved in the chosen target folder.
 
 The script was originally written by {{Person|Albertcardona}} and [http://monash.edu/science/about/schools/biological-sciences/staff/bryson-richardson/ Robert Bryson-Richardson] while attending the [http://cwp.embo.org/pc10-37/ Developmental Imaging EMBO course] organized by [http://www.igc.gulbenkian.pt/research/photo/556/ Gabriel] [http://www.igc.gulbenkian.pt/research/unit/51 G. Martins].
 
