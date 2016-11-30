@@ -505,7 +505,7 @@ The function <code>getProperty()</code> accepts many more strings. A list can be
 On the way to perfectly organize Jython code, [https://docs.python.org/2/tutorial/modules.html#packages packages] are the next step. In Jython, folders that contain modules are made packages by adding the file <code>__init__.py</code>. This file can be empty. An folder structure can look like this:
 
 <source>
-Imagej.app/jars/lib/
+Imagej.app/jars/Lib/
 -- myModule.py
 -- myPackage/
    -- __init__.py
@@ -558,7 +558,7 @@ Besides setting this variable, the file can contain normal Jython code that is e
 An interesting feature of Jython is to search for packages and modules inside of [https://en.wikipedia.org/wiki/JAR_(file_format) JAR files]. The folder structure from the last section can be modified by packing everything into a single <code>myPackages.jar</code>. The name of the JAR file doesn't matter. All imports work the same as explained before.
 
 <source>
-Imagej.app/jars/lib/
+Imagej.app/jars/Lib/
 -- myPackages.jar
    -- myModule.py
    -- myPackage/
