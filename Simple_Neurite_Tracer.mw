@@ -1,9 +1,9 @@
 {{Infobox
 | software = Fiji
 | name = Simple Neurite Tracer
-| author = [[User:Mark|Mark Longair]] [https://github.com/fiji/Simple_Neurite_Tracer/graphs/contributors and others]
+| author = [[User:Mark|Mark Longair]], and [https://github.com/fiji/Simple_Neurite_Tracer/graphs/contributors contributors]
 | maintainer = [[User:Tiago|Tiago Ferreira]]
-| latest version = '''3.0.5 October 2016'''
+| latest version = '''3.0.6 November 2016'''
 | source = {{GitHub|org=fiji|repo=Simple_Neurite_Tracer}}
 | status = Stable ([https://github.com/fiji/Simple_Neurite_Tracer/releases Release notes])
 }}
