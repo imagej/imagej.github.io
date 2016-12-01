@@ -7,7 +7,7 @@
 | maintainer     = {{Person|Tiago}}
 | source         = {{GitHub|org=tferr|repo=ASA}}
 | released       = December 2012
-| latest version = '''3.6.8 October 2016'''
+| latest version = '''3.6.9 November 2016'''
 | status         = Active ({{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Release Notes}})
 | category       = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]], [[:Category:Neuroanatomy|Neuroanatomy]]
 }}
