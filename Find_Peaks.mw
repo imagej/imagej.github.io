@@ -4,8 +4,8 @@
 | name            = Find Peaks
 | maintainer     = [[BAR | BAR update site]]
 | author          = {{Person|Tiago}}
-| filename        = [https://raw.github.com/tferr/Scripts/master/Data_Analysis/Find_Peaks.bsh Find_Peaks.bsh]
-| source         = [https://github.com/tferr/Scripts/tree/master/Data_Analysis#find-peaks on GitHub]
+| filename        = {{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Data_Analysis/Find_Peaks.bsh}}
+| source         = {{GitHub|org=tferr|repo=Scripts|path=README.md#data-analysis}}
 | released        = February 2014
 | category        = [[:Category:Analysis|Analysis]], [[:Category:Scripting|Scripting]], [[:Category:Plugins|Plugins]]
 }}
@@ -48,7 +48,7 @@ WindowManager.getActiveWindow().close()
 * Peaks with flat tops are retrieved at their centers
 * Peak coordinates are logged according to the following layout: [''X0,Y0'']: Original data; [''X1,Y1'']: Maxima; [''X2,Y2'']: Minima
 * ''Min. peak distance'' can be used for peak width filtering
-* Use ''Scientific notation'' and ''Decimal places'' in {{bc|Analyze|Set Measurements...}} to improve the representation of values that are too big or too small values to be displayed in the decimal form
+* Use ''Scientific notation'' and ''Decimal places'' in {{bc|Analyze|Set Measurements...}} to improve the representation of values that are too big or too small to be displayed in the decimal form
 * Find Peaks was initially though as a [[Sholl_Analysis#Complementary_Tools|complementary tool]] for [[Sholl Analysis]] but it that can be applied to any dataset. For this reason, it is now part of [[BAR]]
 
 == Related Resources ==
@@ -58,9 +58,7 @@ Analysis of 1D-signals was discussed in March 2014 on the [https://list.nih.gov/
 * [http://imagejdocu.tudor.lu/doku.php?id=plugin:filter:fast_filters:start Fast Filters plugin] by Michael Schmid, a collection of unidirectional filters that can be applied to to rows or columns in an image ([https://list.nih.gov/cgi-bin/wa.exe?A2=ind1403&L=IMAGEJ&F=&S=&P=136934 instructions]). 
 
 == Installation ==
-The easiest way to install ''Find Peaks'' is by [[BAR#Installation|subscribing]] to the BAR [[List_of_update_sites|update site]]. This will ensure immediate access to automatic updates. However, if you prefer a manual installation, download [https://raw.github.com/tferr/Scripts/master/Data_Analysis/Find_Peaks.bsh Find_Peaks.bsh] and place it in the plugins/ folder using the <span style="border-bottom:1px dotted #ccc;">Plugins▷ Install...</span> command.
-
-Note that without access to [[BAR]] and Fiji's [[Update_Fiji|built-in updater]] you will have to upgrade ImageJ to its latest version using <span style="border-bottom:1px dotted #ccc;">Help▷ Update ImageJ...</span> and manually upgrade ''Find Peaks'' by monitoring its {{GitHub|org=tferr|repo=Scripts|path= Data_Analysis/Find_Peaks.bsh|label= repository}}.
+The easiest way to install ''Find Peaks'' is by [[BAR#Installation|subscribing to the BAR update site]]. 
 
 == License ==
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [http://www.gnu.org/licenses/gpl.txt Free Software Foundation]. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
