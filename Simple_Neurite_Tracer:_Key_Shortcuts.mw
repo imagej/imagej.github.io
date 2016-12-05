@@ -6,9 +6,12 @@
 * {{key|N}} or {{key|Escape}} - discard the current temporary path
 * {{key|F}} - Finish (complete) a path
 * {{key|G}} - Select the path nearest to the mouse pointer
-* {{key|M}} - Auto-selects Z-positioning by finding the brightest voxel (maximum) above and below the current x,y position and automatically clicking on it. If multiple maxima exist, their average positioning is used.
-* {{key|+}} - Zoom in
-* {{key|-}} - Zoom out
+
+* {{key|+}} - Zoom in (Simultaneously on all views)
+* {{key|-}} - Zoom out (Simultaneously on all views)
+* {{key|Shift}} - Synchronizes XY, ZY and XZ views while moving the cursor
+* {{key|M}} - Auto-selects Z-positioning by finding the brightest voxel (maximum) above and below the current x,y position and automatically clicking on it. If multiple maxima exist, their average positioning is used. Particularly useful with {{key|Shift}}  and when using [[Simple_Neurite_Tracer:_Using_MIP_Overlays|MIP Overlays]]
+
 * {{key|5}} - Toggle ''View paths'' choice: ''Parts in nearby slices'' / ''Projected through all slices''
 * {{key|V}} - View all traced paths as lines in a new image stack
 
