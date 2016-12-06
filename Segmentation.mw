@@ -1,5 +1,9 @@
 {{BigNotice | See [[:Category:Segmentation]] for pages about image segmentation.}}
-{{Learn}}= Introduction =
+{{Learn}}
+
+{{Tip | tip=See [http://imagej.net/_images/8/87/Arganda-Carreras-Segmentation-Bioimage-course-MDC-Berlin-2016.pdf this helpful workshop on Image Segmentation] for another great overview of Segmentation!}}
+
+= Introduction =
 
 Image segmentation is "the process of partitioning a digital image into multiple segments." ([[wikipedia:Image segmentation|Wikipedia]])
 
