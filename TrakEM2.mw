@@ -124,6 +124,23 @@ Use <b>strategy A</b> as well if your computer has little RAM, or if access to t
 
 If you change the method for generating mipmaps to a non-Gaussian method, the above situation does not occur. Set the number of threads for regenerating mipmaps to the number of cores, or less if your computer doesn't have much RAM.
 
+
+=== For importing large images ===
+
+Besides choosing an appropriate mipmap generation strategy for large images, make sure that you set as well the bucket size appropriately.
+
+What is a bucket in TrakEM2: each layer (each section) has an internal octree to be able to find an object (e.g. an image) under the mouse, or to be able to quickly find images that overlap with other images. In other words, to be able to perform fast spatial queries such as finding the list of all images that intersect a given rectangle.
+
+If the bucket size is small (the default is 4096 pixels on the side, and a bucket is then a square of 4096x4096 pixels, which could be considered quite small), then in combination with a very large canvas size there will be way too many buckets generated. Will take a lot of time and also consume a lot of memory.
+
+If your sections only have about 100 images each, and images are somewhat large (say, 8096x8096), then set the bucket size to a much larger value than the default, for example to 100000. Effectively there will be only one bucket.
+
+Small buckets make sense when there are many small objects in a layer or many small zdisplayable objects. Otherwise, go for big or even very big, effectively removing the buckets functionality and reducing to list search, which is just fine for small lists of images like about 100.
+
+Setting the bucket size to a large value will reduce XML loading time *a lot*.
+
+To set the bucket size, right-click and choose "Display - Properties ..." and write in the bucket size value.
+
 == How much RAM should I allocate to the JVM for Fiji to run TrakEM2? ==
 
 Use a computer that follows this rule of thumb: take the largest single 2D image in your dataset, then multiply its size by 10, and make sure that every core of your CPU has at least that much RAM available to it.
