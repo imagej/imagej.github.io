@@ -131,11 +131,13 @@ Besides choosing an appropriate mipmap generation strategy for large images, mak
 
 What is a bucket in TrakEM2: each layer (each section) has an internal octree to be able to find an object (e.g. an image) under the mouse, or to be able to quickly find images that overlap with other images. In other words, to be able to perform fast spatial queries such as finding the list of all images that intersect a given rectangle.
 
-If the bucket size is small (the default is 4096 pixels on the side, and a bucket is then a square of 4096x4096 pixels, which could be considered quite small), then in combination with a very large canvas size there will be way too many buckets generated. Will take a lot of time and also consume a lot of memory.
+If the bucket size is small (the default is 4096 pixels on the side, and a bucket is then a square of 4096x4096 pixels, which could be considered quite small), then in combination with a very large canvas size there will be way too many buckets generated. <b>Will take a lot of time and also consume a lot of memory</b>.
 
-If your sections only have about 100 images each, and images are somewhat large (say, 8096x8096), then set the bucket size to a much larger value than the default, for example to 100000. Effectively there will be only one bucket.
+If your sections only have about 100 images each, and images are somewhat large (say, each has dimensions of 8096x8096 pixels), then set the bucket size to a much larger value than the default, for example to 100000. Effectively there will be only one bucket.
 
-Small buckets make sense when there are many small objects in a layer or many small zdisplayable objects. Otherwise, go for big or even very big, effectively removing the buckets functionality and reducing to list search, which is just fine for small lists of images like about 100.
+Small buckets make sense when there are many small objects in a layer or many small zdisplayable objects. In that situation, such as a single image per layer, but many smaller Ball or Pipe or AreaList objects on it, then go for the default bucket size (4096) or smaller. Otherwise, go for big or even very big, effectively removing the buckets functionality and reducing to list search, which is just fine for small lists of images like about 100.
+
+When registering/aligning a collection of 400,000 images spread over 5,000 sections, it makes sense to make the buckets large (like 40960, 10x the default, or even larger than that).
 
 Setting the bucket size to a large value will reduce XML loading time *a lot*.
 
