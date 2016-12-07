@@ -125,7 +125,7 @@ Use <b>strategy A</b> as well if your computer has little RAM, or if access to t
 If you change the method for generating mipmaps to a non-Gaussian method, the above situation does not occur. Set the number of threads for regenerating mipmaps to the number of cores, or less if your computer doesn't have much RAM.
 
 
-=== For importing large images ===
+=== Faster XML loading and less memory consumption with larger search buckets ===
 
 Besides choosing an appropriate mipmap generation strategy for large images, make sure that you set as well the bucket size appropriately.
 
