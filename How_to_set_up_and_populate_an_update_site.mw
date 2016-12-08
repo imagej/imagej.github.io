@@ -15,15 +15,17 @@ A ''personal update site'' is hosted on <nowiki>http://sites.imagej.net/<imagej-
 
 {{Notice | There are some minimal ''Terms of Service'' for personal update sites. See the [[Personal Update Site Terms of Service]] for details.}}
 
-First of all, start the updater with {{bc | Help | Update}} and click on the ''Manage update sites'' button:
+First of all, create an wiki account on <nowiki>http://sites.imagej.net</nowiki>.
+
+Please note, that the password for the corresponding update site is NOT the one for your wiki account. In order to set your update site password, use the link at the bottom of the wiki or click [[Special:ChangeUploadPassword|here]].
+
+start the updater with {{bc | Help | Update}} and click on the ''Manage update sites'' button:
 
 [[File:Mamed-3.jpg|770px]]
 
-Now, click ''Add my site'', and follow the instructions for either [[#Specifying an existing ImageJ Wiki account|using an existing wiki account]] or [[#Creating a new ImageJ Wiki account|creating a new wiki account]].
+=== Specifying your existing ImageJ Wiki account ===
 
-=== Specifying an existing ImageJ Wiki account ===
-
-If you already have an active ImageJ Wiki account (i.e. you changed your password from the initial temporary token) enter the name of that account and click ''OK'':
+Enter the name of that account and click ''OK'':
 
 [[Image:Personal-Update-Site-1.png|770px]]
 
@@ -31,34 +33,6 @@ If your upload password (separate from your wiki password) was not initialized, 
 The two passwords can differ. This can be source of confusion during setting up of the update. 
 
 You can also manually [[Special:ChangeUploadPassword|change or initialize your upload password]].
-
-=== Creating a new ImageJ Wiki account ===
-
-Specify the desired account name. If it is taken already, you will be asked for the password (and need to cancel the dialog and start over). If the account is available, the updater will greet you with this message:
-
-[[Image:Personal-Update-Site-2.png|770px]]
-
-After clicking ''OK'', the updater will let you type in your name and your email address:
-
-[[Image:Personal-Update-Site-3.png|770px]]
-
-After you specified the information and click ''OK'', the updater will acknowledge thusly:
-
-[[Image:Personal-Update-Site-4.png|770px]]
-
-You should soon receive a mail notifying you about the newly created account, and a temporary password. You need to [http://imagej.net/Special:UserLogin log into the ImageJ Wiki] to reset the password:
-
-[[Image:Personal-Update-Site-5.png|770px]]
-
-Now you can continue in the updater: type in your password and press the ''OK'' button:
-
-[[Image:Personal-Update-Site-6.png|770px]]
-
-This will initialize your update site and it will be added to your list of active update sites:
-
-[[Image:Personal-Update-Site-7.png|770px]]
-
-Now you are ready to [[#Uploading files to your update site|upload files]]. After that, you might want to consider to add your site into the alphabetical list on [[List_of_update_sites|this page]] for the convenience of other ImageJ users (your update site will then be shown in the ''Manage update sites'' dialog by default).
 
 == Adding an update site on your own server ==
 
