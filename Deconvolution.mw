@@ -1,9 +1,17 @@
 {{BigNotice | See [[:Category:Deconvolution]] for pages about deconvolution.}}
-__FORCETOC__ {{Cookbook}}{{Learn}}[[wikipedia:Deconvolution|Deconvolution]] is an algorithm-based process used to reverse the effects of convolution on recorded data.
+__FORCETOC__ {{Cookbook}}{{Learn}}[[wikipedia:Deconvolution|Deconvolution]] corrects the systematic error of blur (loss of contrast in smaller features)  in optical systems such as fluorescence microscopy images.
 
-== Introduction ==
+== The problem, and the solution ==
 
-These two plugins from Bob Dougherty are used together to generate a stack of the point-spread function (PSF). The Iterative Deconvolution 3D plugin uses this PSF image stack along with a stack of your sample images. The image below is a single slice taken from a stack before and after deconvolution using these plugins. 
+Any optical image forming system, such as a microscope objective lens, has the nasty property of killing more and more contrast of smaller and smaller features, up to the resolution (diffraction) limit, after which there is no contrast (and thus no resolution). Large features are bright, but small features appear less contrasted and dimmer than they should. This is a systematic error, characterized by the Point Spread Function (PSF) of the optical system, which makes the image intensity information non-quantitative. If we can measure the PSF, or guess it, we can correct the raw image for it. Since it's possible to correct such a systematic error, we should! 
+
+Image contrast restoration by deconvolution is a way to correct the systematic error of contrast loss in an image recording system, such as a microscope objective lens or telescope mirror or lens. We try to reverse the effects of blur in the recorded image, caused by convolution (blur, smearing, loss of contrast of small features) of the real image due to the imaging point spread function (PSF). 
+
+Image contrast restoration by deconvolution is an important systematic error correction step for quantitative measurement of image pixel intensities in analysis workflows. If we don't correct this systematic error, the results of the image intensity analysis could be very much more wrong than if we correct the images before analysis. It's the same as zeroing a scale before weighing something.
+
+== Introduction to the practical method ==
+
+Two plugins from Bob Dougherty can be used together to perform this systematic error correction in a 2D or 3D image. Other plugins are also available. The Diffraction-PSF-3D plugin generates a z-stack of the theoretical point-spread function (PSF). Alternatively, an empirical, measured PSF could be used. The Iterative Deconvolution 3D plugin uses a PSF image z-stack to correct the image contrast vs. feature size in your sample image z-stack. The image below is a single slice taken from a stack before and after deconvolution using these plugins. 
 
 [[File:deconvoluted_data.png]]
 
@@ -17,7 +25,7 @@ To use, run the "Diffraction PSF 3D" plugin. A dialog will appear; most of the f
 
 [[File:diffraction_psf_window1.png|377x317px]]
 
-== Iterative deconvolution ==
+== Constrained Iterative Deconvolution ==
 
 Run the Iterative Deconvolve 3D plugin, then select the image and PSF. Start with the default values and set iterations to 10 initially. Be careful not to represent the PSF with a stack or the plugin will run out of memory and terminate.
 
