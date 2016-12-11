@@ -1,5 +1,5 @@
 <includeonly>{| class="infobox" cellspacing="5" style="width: 31em; font-size: 90%; text-align: left; float: right; border: 1px solid #a0a0a0;"
-! colspan="2" style="text-align: center; font-size: 130%;" | {{#if:{{{gravatar|}}}|<div style="float: left"><img src="http://gravatar.com/avatar/{{{gravatar}}}"></div>|}}{{{name|{{PAGENAME}}}}}{{#if:{{{title|}}}|<br>[[File:Sparkles.png|16px]] {{{title}}} [[File:Sparkles.png|16px]]}}<div style="clear: left;"></div>
+! colspan="2" style="text-align: center; font-size: 130%;" | {{#if:{{{gravatar|}}}|<div style="float: left"><img src="https://gravatar.com/avatar/{{{gravatar}}}"></div>|}}{{{name|{{PAGENAME}}}}}{{#if:{{{title|}}}|<br>[[File:Sparkles.png|16px]] {{{title}}} [[File:Sparkles.png|16px]]}}<div style="clear: left;"></div>
 |-
 {{#if:{{{affiliation|}}}|
 ! Affiliation
@@ -13,12 +13,12 @@
 }}
 {{#if:{{{github|}}}|
 ! GitHub
-{{!}} [http://github.com/{{{github}}} GitHub profile]
+{{!}} [https://github.com/{{{github}}} GitHub profile]
 {{!}}-
 }}
 {{#if:{{{stackoverflow|}}}|
 ! StackOverflow
-{{!}} [http://stackoverflow.com/users/{{{stackoverflow}}} StackOverflow profile]
+{{!}} [https://stackoverflow.com/users/{{{stackoverflow}}} StackOverflow profile]
 {{!}}-
 }}
 {{#if:{{{openhub|}}}|
