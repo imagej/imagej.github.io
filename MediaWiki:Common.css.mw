@@ -1038,7 +1038,7 @@ NB: Hide the MathML option in Special:Preferences for the Math extension.
 This avoids problems as reported on this thread:
 http://forum.imagej.net/t/exception-for-logged-in-wiki-users-on-pages-containing-mathml/3364
 */
-.mw-htmlform-flatlist-item mw-ui-radio:nth-child(3) {
+td.mw-input div.mw-ui-radio:nth-child(3) {
   display; none;
 }
 
