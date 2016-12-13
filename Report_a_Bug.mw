@@ -5,7 +5,7 @@
 | name                   = Bug Submitter
 | maintainer             = {{Person|Schindelin}}<br/>{{Person|Rueden}}
 | author                 = {{Person|Mark}}
-| source                 = {{GitHubSource|org=fiji|repo=Bug_Submitter}}
+| source                 = {{GitHub|org=fiji|repo=Bug_Submitter}}
 | released               = 03/05/2009
 | latest version         = 30/09/2009
 | status                 = maintained
