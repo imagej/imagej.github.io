@@ -1,4 +1,4 @@
-<includeonly>'''{{GitHub|org={{{org|imagej}}}|repo={{{repo|imagej}}}|source={{{source|}}}|path={{{path|}}}|label={{{label|}}}}}'''
+<includeonly>'''{{GitHub|org={{{org|imagej}}}|repo={{{repo|imagej}}}|source={{{source|}}}|path={{{path|}}}|label={{{label|{{#if:{{{source|}}}|src/main/java/{{{source}}}|{{{path|}}}}}}}}}}'''
 {{#github:{{#if:{{{source|}}}|src/main/java/{{{source}}}|{{{path|}}}}}|{{{org|}}}/{{{repo|}}}|branch={{{tag|master}}}|lang={{{lang|auto}}}}}</includeonly><noinclude>
 ==Example==
 <pre style="overflow:auto">
