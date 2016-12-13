@@ -1,5 +1,5 @@
 <includeonly>'''{{GitHub|org={{{org|imagej}}}|repo={{{repo|imagej}}}|source={{{source|}}}|path={{{path|}}}|label={{{label|}}}}}'''
-{{#github:{{#if:{{{source|}}}|src/main/java/{{{source}}}|{{{path|}}}}}|{{{org|}}}/{{{repo|}}}|branch={{{tag|master}}}|lang={{{lang|auto}}}}}<includeonly><noinclude>
+{{#github:{{#if:{{{source|}}}|src/main/java/{{{source}}}|{{{path|}}}}}|{{{org|}}}/{{{repo|}}}|branch={{{tag|master}}}|lang={{{lang|auto}}}}}</includeonly><noinclude>
 ==Example==
 {{GitHubEmbed
 | org = imagej
