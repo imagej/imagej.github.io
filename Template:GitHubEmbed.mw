@@ -1,11 +1,6 @@
 <includeonly>'''{{GitHub|org={{{org|imagej}}}|repo={{{repo|imagej}}}|source={{{source|}}}|path={{{path|}}}|label={{{label|}}}}}'''
 {{#github:{{#if:{{{source|}}}|src/main/java/{{{source}}}|{{{path|}}}}}|{{{org|}}}/{{{repo|}}}|branch={{{tag|master}}}|lang={{{lang|auto}}}}}</includeonly><noinclude>
 ==Example==
-{{GitHubEmbed
-| org = imagej
-| repo = imagej-ops
-| source = net/imagej/ops/Op.java
-}}
 <pre style="overflow:auto">
 {{GitHubEmbed
 | org = imagej
@@ -13,4 +8,9 @@
 | source = net/imagej/ops/Op.java
 }}
 </pre>
+{{GitHubEmbed
+| org = imagej
+| repo = imagej-ops
+| source = net/imagej/ops/Op.java
+}}
 </noinclude>
