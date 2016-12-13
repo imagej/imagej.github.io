@@ -1,48 +1,50 @@
 {{scripting}}
-== Introduction ==
+= Introduction =
 
 This page is a primer of '''ImageJ2 only''' Python scripts. It means that the examples included here avoid IJ1 as much as possible, unless it's really necessary.
 
 Note that all the scripts of this page are links from https://github.com/imagej/imagej-scripting/tree/master/src/main/resources/script_templates/ImageJ2.
 
-== Scripts ==
+= Scripts =
 
-=== Stack Projection ===
+== Stack Projection ==
 
-{{#github:https://raw.githubusercontent.com/imagej/imagej-scripting/master/src/main/resources/script_templates/ImageJ2/Projection.py}}
+{{GitHubEmbed|org=imagej|repo=imagej-scripting|path=src/main/resources/script_templates/ImageJ2/Projection.py|label=Projection.py}}
 
-=== Apply Threshold ===
+== Apply Threshold ==
 
-{{#github:https://raw.githubusercontent.com/imagej/imagej-scripting/master/src/main/resources/script_templates/ImageJ2/Apply_Threshold.py}}
+{{GitHubEmbed|org=imagej|repo=imagej-scripting|path=src/main/resources/script_templates/ImageJ2/Apply_Threshold.py|label=Apply_Threshold.py}}
 
-{{#github:https://raw.githubusercontent.com/imagej/imagej-scripting/master/src/main/resources/script_templates/ImageJ2/Apply_Threshold_Fast.py}}
+{{GitHubEmbed|org=imagej|repo=imagej-scripting|path=src/main/resources/script_templates/ImageJ2/Apply_Threshold_Fast.py|label=Apply_Threshold_Fast.py}}
 
-=== Crop an image ===
+== Crop an image ==
 
-{{#github:https://raw.githubusercontent.com/imagej/imagej-scripting/master/src/main/resources/script_templates/ImageJ2/Crop.py}}
+{{GitHubEmbed|org=imagej|repo=imagej-scripting|path=src/main/resources/script_templates/ImageJ2/Crop.py|label=Crop.py}}
 
-=== Rotate all the frames of a stack ===
+== Rotate all the frames of a stack ==
 
-{{#github:https://raw.githubusercontent.com/imagej/imagej-scripting/master/src/main/resources/script_templates/ImageJ2/Rotate_Stack.py}}
+{{GitHubEmbed|org=imagej|repo=imagej-scripting|path=src/main/resources/script_templates/ImageJ2/Rotate_Stack.py|label=Rotate_Stack.py}}
 
-=== Subtract a stack to its first image ===
+== Subtract a stack to its first image ==
 
-{{#github:https://raw.githubusercontent.com/imagej/imagej-scripting/master/src/main/resources/script_templates/ImageJ2/Subtract_First_Image_Stack.py}}
-
-=== Apply DOG Filter ===
-
-{{#github:https://raw.githubusercontent.com/imagej/imagej-scripting/master/src/main/resources/script_templates/ImageJ2/Apply_DOG_Filtering.py}}
-
-=== Apply a mask ===
-
-{{#github:https://raw.githubusercontent.com/imagej/imagej-scripting/master/src/main/resources/script_templates/ImageJ2/Apply_Mask.py}}
-
-=== Retrieve objects/particles from a mask ===
-
-{{#github:https://raw.githubusercontent.com/imagej/imagej-scripting/master/src/main/resources/script_templates/ImageJ2/Particles_From_Mask.py}}
+{{GitHubEmbed|org=imagej|repo=imagej-scripting|path=src/main/resources/script_templates/ImageJ2/Subtract_First_Image_Stack.py|label=Subtract_First_Image_Stack.py}}
 
 
-== Resources ==
+== Apply DOG Filter ==
+
+{{GitHubEmbed|org=imagej|repo=imagej-scripting|path=src/main/resources/script_templates/ImageJ2/Apply_DOG_Filtering.py|label=Apply_DOG_Filtering.py}}
+
+
+== Apply a mask ==
+
+{{GitHubEmbed|org=imagej|repo=imagej-scripting|path=src/main/resources/script_templates/ImageJ2/Apply_Mask.py|label=Apply_Mask.py}}
+
+== Retrieve objects/particles from a mask ==
+
+{{GitHubEmbed|org=imagej|repo=imagej-scripting|path=src/main/resources/script_templates/ImageJ2/Particles_From_Mask.py|label=Particles_From_Mask.py}}
+
+
+= Resources =
 * [[Jython_Scripting|Jython Scripting]]
 * [[Jython_Scripting_Examples|Jython Examples]]
 
