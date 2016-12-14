@@ -21,34 +21,65 @@ Travis CI can be used to automatically build a repository in response to code ch
 # Build the update site's repository and move the required artifacts (e.g. <code>.jars</code>) to their intended locations in the ImageJ.app
 # Upload the local update site state to your Wiki update site
 
-As a starting point you can copy the following <code>.travis.yml</code>:
+As a starting point you can copy the following <code>.travis.yml</code> :
 
 <source lang="yaml">
 language: java
+sudo: false
+
+cache:
+  directories:
+    - $HOME/.m2/
+
+install:
+  - mvn package
+
 script:
-# These first two commands download the bootstrap.js script
-# This makes the current directory into a fresh ImageJ.app
-# The status of this ImageJ.app will determine what is uploaded to
-# your update site. 
-  - curl -O http://update.imagej.net/bootstrap.js
-  - jrunscript bootstrap.js update-force-pristine
-# For a Maven-based project inheriting from pom-imagej, this will
-# build the project and install it (and its dependencies) into the
-# current ImageJ.app
-# WARNING: if you would like any files not built by maven to be on your
-#          update site, you must explicitly move them to the appropriate ImageJ.app
-#          subdirectory.
-  - mvn clean install -Dimagej.app.directory="$(pwd)" -Ddelete.other.versions=true
-# Finally, we download and execute script that uploads to the update site
-  - curl -O https://raw.githubusercontent.com/fiji/fiji/7f13f66968a9d4622e519c8aae04786db6601314/bin/upload-site-simple.sh
-  - chmod a+x upload-site-simple.sh
-# TODO: set your update site and upload account as appropriate
-  - ./upload-site-simple.sh <UPDATE_SITE> <WIKI_ACCOUNT>
-# For example, if your wiki account is IJUser and you're uploading to your personal update site (sites.imagej.net/IJUser) you would use:
-# - ./upload-site-simple.sh IJUser IJUser
+  - ./.travis-deploy.sh
+
+branches:
+  only:
+    - master
 </source>
 
-For the update site and wiki account, 
+and this script <code>.travis-deploy.sh</code> :
+
+<source lang="bash">
+#!/usr/bin/env sh
+set -e
+
+# Define some variables
+export USER="Username"
+export UPDATE_SITE="Update_Site"
+
+export IJ_PATH="$HOME/Fiji.app"
+export URL="http://sites.imagej.net/$UPDATE_SITE/"
+export IJ_LAUNCHER="$IJ_PATH/ImageJ-linux64"
+export PATH="$IJ_PATH:$PATH"
+
+# Install ImageJ
+mkdir -p $IJ_PATH/
+cd $HOME/
+wget --no-check-certificate https://downloads.imagej.net/fiji/latest/fiji-linux64.zip
+unzip fiji-linux64.zip
+
+# Install the package
+cd $TRAVIS_BUILD_DIR/
+mvn clean install -Dimagej.app.directory=$IJ_PATH -Ddelete.other.versions=true
+
+# Deploy the package
+$IJ_LAUNCHER --update edit-update-site $UPDATE_SITE $URL "webdav:$USER:$WIKI_UPLOAD_PASS" .
+$IJ_LAUNCHER --update upload-complete-site --force --force-shadow $UPDATE_SITE
+</source>
+
+Don't forget to replace 
+
+<source>
+export USER="Username"
+export UPDATE_SITE="Update_Site"
+</source>
+
+by your informations.
 
 == Encrypting your password ==
 
@@ -61,22 +92,6 @@ $ travis encrypt WIKI_UPLOAD_PASS=super_secret --add env.matrix
 </source>
 
 in your repository, the <code>.travis.yml</code> will automatically be updated appropriately. You can simply commit and push the changes.
-
-== Add additional update sites ==
-
-By default, only the ImageJ and Fiji update sites will be enabled in the local ImageJ.app. It's possible to enable additional [[List_of_update_sites|update sites]] as needed for your project (for example, if you depend on other 3rd party update sites). To do so, remove the following lines of your <code>.travis.yml</code>:
-
-<source lang="yaml">
-  - curl -O http://update.imagej.net/bootstrap.js
-</source>
-
-Instead, you will need to keep a custom copy of <code>bootstrap.js</code> (e.g. in your repository). In this script, find the following line:
-
-<source lang="javascript">
-		files.addUpdateSite("Fiji", "http://update.fiji.sc/", null, null, -1);
-</source>
-
-and add additional calls to <code>addUpdateSite</code> as needed.
 
 == Non-Mavenized Files ==
 
