@@ -225,6 +225,7 @@ These projects are examples of specific ''use cases'' within the ImageJ API.
 === Working with Ops ===
 
 * [https://github.com/imagej/imagej-tutorials/tree/master/using-ops/src/main/java Using Ops]
+* [https://github.com/imagej/imagej-tutorials/tree/dev-manual/using-ops-dog Using Ops DoG filter]
 * [https://github.com/imagej/imagej-tutorials/tree/master/add-two-datasets/src/main/java Add datasets]
 * [https://github.com/imagej/imagej-tutorials/tree/master/create-a-new-op Create a new Op type]
 
