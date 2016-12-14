@@ -200,7 +200,7 @@ There are always other options for saving or restoring your work—[https://git-
 * Building a project results in a <code>jar</code> output in the <code>$PROJECT/target/</code> directory.
 * For a more "real-world" experience, you can drop the <code>jar</code> you built into the <code>ImageJ.app/jars/</code> directory of an [[Downloads|ImageJ installation]] to try out any of the example plugins.
 * If you're not sure how to find your plugin within ImageJ, use the [[Command Finder]]!
-* You can also import each project into [[Eclipse]] as a [https://books.sonatype.com/m2eclipse-book/reference/creating-sect-importing-projects.html maven project].
+* You can also import each project into [[Eclipse]]/[[NetBeans]]/[[IntelliJ IDEA]] as a [https://books.sonatype.com/m2eclipse-book/reference/creating-sect-importing-projects.html maven project].
 
 === First steps ===
 
