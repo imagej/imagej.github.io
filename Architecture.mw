@@ -65,98 +65,61 @@ As a rule of thumb, we find that multi-module [[Maven]] projects stored within a
 
 == Maven component structure ==
 
-<graphviz border alignment="right" size="450px" caption="Parent POM hierarchy">
-digraph poms {
-    label="Parent POM hierarchy"
-    "pom-scijava" [color=green, style=filled, URL="[https://github.com/scijava/pom-scijava]"]
-    "pom-imglib2" [color=pink, style=filled, URL="[https://github.com/imglib/pom-imglib2]"]
-    "pom-imagej" [color=yellow, style=filled, URL="[https://github.com/imagej/pom-imagej]"]
-    "pom-scifio" [color=lightblue, style=filled, URL="[https://github.com/scifio/pom-scifio]"]
-    "pom-fiji" [color=orange, style=filled, URL="[https://github.com/fiji/pom-fiji]"]
-    "pom-bigdataviewer" [color=lavender, style=filled, URL="[https://github.com/bigdataviewer/pom-bigdataviewer]"]
-    "pom-trakem2" [color=lavender, style=filled, URL="[https://github.com/trakem2/TrakEM2]"]
-    "pom-loci" [color=gray, style=filled, URL="[https://github.com/uw-loci/pom-loci]"]
-    "pom-scijava" -> "pom-imagej"
-    "pom-imagej" -> "pom-imglib2"
-    "pom-imagej" -> "pom-scifio"
-    "pom-imagej" -> "pom-fiji"
-    "pom-fiji" -> "pom-bigdataviewer"
-    "pom-fiji" -> "pom-trakem2"
-    "pom-scijava" -> "pom-loci"
-}
-</graphviz>
-
-All components in these organizations use [[Maven]] for [[Project Management|project management]]. Each organization has its own Maven [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-more-coordinates groupId], as well as a [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-project-inheritance parent POM] that all other components in that organization extend:
+All components in these organizations use [[Maven]] for [[Project Management|project management]]. Each organization has its own Maven [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-more-coordinates groupId]. Each component extends the {{GitHub | org=scijava | repo=pom-scijava | label=pom-scijava}} [http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-project-inheritance parent POM], which provides sensible build defaults and compatible dependency versions (see "Bill of Materials" below).
 
 {| class="wikitable nicetable"
 | '''Logo'''
 | '''Project'''
 | '''Organization'''
 | '''groupId'''
-| '''Parent POM'''
 |-
 | {{Logo | SciJava}}
 | [[SciJava]]
 | [https://github.com/scijava scijava]
 | [http://maven.imagej.net/index.html#nexus-search;gav~org.scijava org.scijava]
-| {{GitHub|org=scijava|repo=pom-scijava|label=pom-scijava}}
 |-
 | {{Logo | ImageJ2}}
 | [[ImageJ]]
 | [https://github.com/imagej imagej]
 | [http://maven.imagej.net/index.html#nexus-search;gav~net.imagej net.imagej]
-| {{GitHub|org=imagej|repo=pom-imagej|label=pom-imagej}}
 |-
 | {{Logo | ImgLib2}}
 | [[ImgLib2]]
 | [https://github.com/imglib imglib]
 | [http://maven.imagej.net/index.html#nexus-search;gav~net.imglib2 net.imglib2]
-| {{GitHub|org=imglib|repo=pom-imglib2|label=pom-imglib2}}
 |-
 | {{Logo | SCIFIO}}
 | [[SCIFIO]]
 | [https://github.com/scifio scifio]
 | [http://maven.imagej.net/index.html#nexus-search;gav~io.scif io.scif]
-| {{GitHub|org=scifio|repo=pom-scifio|label=pom-scifio}}
 |-
 | rowspan=3 style="vertical-align: middle" | {{Logo | Fiji}}
 | [[Fiji]]
 | [https://github.com/fiji fiji]
 | [http://maven.imagej.net/index.html#nexus-search;gav~sc.fiji sc.fiji]
-| {{GitHub|org=fiji|repo=pom-fiji|label=pom-fiji}}
 |-
 | [[BigDataViewer]]
 | [https://github.com/bigdataviewer bigdataviewer]
 | [http://maven.imagej.net/index.html#nexus-search;gav~sc.fiji sc.fiji]
-| {{GitHub|org=bigdataviewer|repo=pom-bigdataviewer|label=pom-bigdataviewer}}
 |-
 | [[TrakEM2]]
 | [https://github.com/trakem2 trakem2]
 | [http://maven.imagej.net/index.html#nexus-search;gav~sc.fiji sc.fiji]
-| {{GitHub|org=trakem2|repo=TrakEM2|label=pom-trakem2}}
 |-
 | {{Logo | SLIM Curve}}
 | [[SLIM Curve]]
 | [https://github.com/slim-curve slim-curve]
 | [http://maven.imagej.net/index.html#nexus-search;gav~slim-curve slim-curve]
-| -
 |-
 | {{Logo | LOCI}}
 | [[LOCI]]
 | [https://github.com/uw-loci uw-loci]
 | [http://maven.imagej.net/index.html#nexus-search;gav~loci loci]
-| {{GitHub|org=uw-loci|repo=pom-loci|label=pom-loci}}
 |}
-
-The hierarchy of organizational parent POMs is shown in the diagram to the right. The <code>pom-scijava</code> parent forms the foundation of all other Maven projects in the ecosystem.
 
 == Bill of Materials ==
 
-The <code>pom-scijava</code> parent includes a [http://howtodoinjava.com/2014/02/18/maven-bom-bill-of-materials-dependency/ Bill of Materials] (BOM) which declares compatible versions of all core SciJava software in its [http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Management dependencyManagement section]. These versions are intended to be used together in downstream projects, preventing version skew (symptoms of which include <code>ClassNotFoundException</code> and <code>NoSuchMethodError</code>, as well as erroneous behavior in general). This BOM is especially important while some components are still in beta, since they may sometimes break [[backwards compatibility]].
-
-Similarly, the <code>pom-imagej</code> parent includes a consolidated Bill of Materials for components in the ImageJ, ImgLib2 and SCIFIO organizations. The rationale for this consolidation is that each of these three organizations has components which depend on components within the other two organizations. So broadly speaking, these three organizations form an interdependent "triumvarate." However, there are no circular dependencies at the level of individual components. See [http://imagej.net/pipermail/imagej-devel/2014-October/002280.html this thread on the imagej-devel mailing list] for further details.
-
-Other SciJava projects may extend the Bill of Materials further by providing their own <code>dependencyManagement</code> section. For example, Fiji's <code>pom-fiji</code> parent [https://github.com/fiji/pom-fiji/blob/pom-fiji-5.0.8/pom.xml#L21-L755 does this].
+The <code>pom-scijava</code> parent includes a [http://howtodoinjava.com/2014/02/18/maven-bom-bill-of-materials-dependency/ Bill of Materials] (BOM) which declares compatible versions of all components of the SciJava "managed universe" in its [http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Management dependencyManagement section]. These versions are intended to be used together in downstream projects, preventing version skew (symptoms of which include <code>ClassNotFoundException</code> and <code>NoSuchMethodError</code>, as well as erroneous behavior in general). This BOM is especially important while some components are still in beta, since they may sometimes break [[backwards compatibility]].
 
 == Core libraries ==
 
@@ -251,7 +214,7 @@ There are two easy ways of going about this:
   <enforcer.skip>true</enforcer.skip> <!-- ONLY while depending on a SNAPSHOT -->
 </properties>
 </source></li>
-<li>Alternately, if you wish to temporarily apply snapshot couplings en masse, you can switch on a "dev profile" (defined in the [https://github.com/scijava/pom-scijava/blob/c79d0b801c14ae2124375613ae38b42e395c4d0e/pom.xml#L1548-L1553 <code>pom-scijava</code> parent POM]) by creating one or more "dev token" files:
+<li>Alternately, if you wish to temporarily apply snapshot couplings en masse, you can switch on a "dev profile" (defined in the [https://github.com/scijava/pom-scijava/blob/pom-scijava-12.0.0/pom.xml#L2542-L2547 <code>pom-scijava</code> parent POM]) by creating one or more "dev token" files:
 * <code>~/.scijava/dev.imagej</code>
 * <code>~/.scijava/dev.imglib2</code>
 * <code>~/.scijava/dev.scifio</code>
@@ -260,7 +223,7 @@ These files need not have any content; their mere existence will trigger the dev
 </ol>
 In the case of Eclipse, you may need to "Update Maven project" in order to see the snapshot couplings go into effect; the shortcut {{Key | Alt}}+{{Key | F5}} while selecting the affected project(s) accomplishes this quickly.
 
-{{Warning | '''Current versions of the Eclipse Maven integration (tested with Eclipse Mars) fail to correctly resolve the <code>LATEST</code> version tag to <code>SNAPSHOT</code>s. Use the commandline client instead.'''}}
+{{Warning | '''Current versions of the Eclipse Maven integration (tested with Eclipse Mars) fail to correctly resolve the <code>LATEST</code> version tag to <code>SNAPSHOT</code>s. Use the command-line client instead.'''}}
 
 Either way, '''''be sure to work on a topic branch while developing code in this fashion.''''' You will need to clean up your Git history afterwards before merging things to the <code>master</code> branch, in order to achieve [[reproducible builds]].
 
