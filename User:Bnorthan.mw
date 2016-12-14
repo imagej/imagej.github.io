@@ -9,11 +9,13 @@
 }}Brian is a consultant who works on image analysis problems. He is a contributor to the [[ImageJ Ops]] project.
 == What is Brian working on ==
 === Consulting ===
+I consult mainly with startups and small businesses looking to commercialize academic research.  Often times they have pre-existing matlab and other legacy code that needs to be converted to a user-friendly app, like an ImageJ-plugin. 
 # '''Deconvolution'''
 # '''Bio-image analsyis and feature detection'''
 # '''Single particle localization'''
 # '''Machine learning'''
 # '''Image analysis for clinical trials and product validation'''
+
 === ImageJ ===
 I have contributed to the following projects
 # '''ImageJ Ops'''
