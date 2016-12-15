@@ -39,7 +39,7 @@ I am also coordinating and/or leading and/or advising and/or helping with, but n
 # (with {{Person|Awalter2}}) '''ImgLib2 ROIs.''' Development of data structures, especially for use with ImageJ-OMERO. ([http://forum.imagej.net/t/implementation-plan-for-imglib2-rois-2d/2531 Implementation plan for Imglib2-rois 2D])
 # (with {{Person|Leon}}) '''RESTful image server.''' Backed by ImageJ. ([https://github.com/imagej/imagej-server imagej/imagej-server])
 # (with {{Person|etarena}} and {{Person|panovr}}) '''Unify SciJava/ImageJ tutorials.''' ([https://github.com/imagej/imagej-tutorials/tree/dev-manual/ImageJ_Notebooks imagej/imagej-tutorials@dev-manual:ImageJ_Notebooks])
-# (with {{Person|Gab1one}} '''SciJava I/O.''' ([https://github.com/scijava/scijava-common/compare/more-handles scijava/scijava-common@more-handles])
+# (with {{Person|Gab1one}}) '''SciJava I/O.''' ([https://github.com/scijava/scijava-common/compare/more-handles scijava/scijava-common@more-handles])
 # (with {{Person|Kharrington}}) '''ImageJ in 3D.''' Unification of ImageJ 3D visualization efforts around [[ClearVolume]] and the [[ThreeDViewer]]
 # (with {{Person|Pietzsch}}) '''Visualization of big data.''' Unification of visualization in general around the [[BigDataViewer]].
 
