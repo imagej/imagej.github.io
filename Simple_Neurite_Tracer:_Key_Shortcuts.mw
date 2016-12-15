@@ -3,15 +3,21 @@
 ====Key Shortcuts====
 
 * {{key|Y}} - Confirm the current temporary path
-* {{key|N}} or {{key|Escape}} - discard the current temporary path
-* {{key|F}} - Finish (complete) a path
-* {{key|G}} - Select the path nearest to the mouse pointer
+* {{key|N}} - discard the current temporary path
+* {{key|F}} - Finish a path
+* {{key|C}} - Cancel a path
+* {{key|Esc}} - Abandon search
+* {{key|G}} - Select (Group) the path nearest to the mouse pointer
+
+
+* {{key|S}} -Toggle cursor snapping: If enable, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window <sup>1</sup>.
+* {{key|M}} - Finds the brightest voxel (maximum) above and below the current x,y position and automatically clicks on it.<sup>1</sup>.
+<div class="floatright"><sup>1</sup> If multiple maxima exist, their average positioning is used.</div>
+
 
 * {{key|+}} - Zoom in (Simultaneously on all views)
 * {{key|-}} - Zoom out (Simultaneously on all views)
 * {{key|Shift}} - Synchronizes XY, ZY and XZ views while moving the cursor
-* {{key|M}} - Auto-selects Z-positioning by finding the brightest voxel (maximum) above and below the current x,y position and automatically clicking on it. If multiple maxima exist, their average positioning is used. Particularly useful with {{key|Shift}}  and when using [[Simple_Neurite_Tracer:_Using_MIP_Overlays|MIP Overlays]]
-
 * {{key|5}} - Toggle ''View paths'' choice: ''Parts in nearby slices'' / ''Projected through all slices''
 * {{key|V}} - View all traced paths as lines in a new image stack
 
