@@ -26,7 +26,6 @@ Here is a summary of my current projects, in priority order. I try to keep this 
 # '''POM unification.''' ([http://forum.imagej.net/t/split-boms-from-parent-configuration/2563 Split BOMs from parent configuration], [https://github.com/scijava/pom-scijava/compare/universal-pom scijava/pom-scijava@universal-pom])
 # '''Document community expectations.''' Formally define and clarify who is responsible for maintaining which plugins, to what extents ([http://forum.imagej.net/t/project-developer-roles/206 Project developer roles], [https://github.com/ctrueden/ctr-scripts/blob/master/dev-find ctrueden/ctr-scripts:dev-find], [https://github.com/fiji/fiji/blob/master/bin/team-hints.perl fiji/fiji:bin/team-hints.perl])
 # '''GitHub issue reporting plugin.''' The Fiji BugZilla is temporarily offline; those pages need to be restored, and then—along with the remainder of the [http://trac.imagej.net/ ImageJ Trac]—migrated to GitHub Issues. The [[Report a Bug]] plugin needs to send reports to GitHub instead. ([https://github.com/scijava/scijava-plugins-issues-github scijava/scijava-plugins-issues-github])
-# '''SciJava I/O.''' ([https://github.com/scijava/scijava-common/compare/more-handles scijava/scijava-common@more-handles])
 # '''SCIFIO blockization.''' ([https://github.com/scifio/scifio/issues/283 scifio/scifio#283])
 # '''SciJava Common 3.''' ([https://github.com/scijava/scijava-common/compare/sjc3 scijava/scijava-common@sjc3])
 # '''ImageJ + Java 8.''' Finally complete the migration to Java 8 with a JavaFX-based native launcher. Retire the current ImageJ Launcher. ([https://github.com/imagej/imagej-launcher/issues/33 imagej/imagej-launcher#33])
@@ -40,6 +39,7 @@ I am also coordinating and/or leading and/or advising and/or helping with, but n
 # (with {{Person|Awalter2}}) '''ImgLib2 ROIs.''' Development of data structures, especially for use with ImageJ-OMERO. ([http://forum.imagej.net/t/implementation-plan-for-imglib2-rois-2d/2531 Implementation plan for Imglib2-rois 2D])
 # (with {{Person|Leon}}) '''RESTful image server.''' Backed by ImageJ. ([https://github.com/imagej/imagej-server imagej/imagej-server])
 # (with {{Person|etarena}} and {{Person|panovr}}) '''Unify SciJava/ImageJ tutorials.''' ([https://github.com/imagej/imagej-tutorials/tree/dev-manual/ImageJ_Notebooks imagej/imagej-tutorials@dev-manual:ImageJ_Notebooks])
+# (with {{Person|Gab1one}} '''SciJava I/O.''' ([https://github.com/scijava/scijava-common/compare/more-handles scijava/scijava-common@more-handles])
 # (with {{Person|Kharrington}}) '''ImageJ in 3D.''' Unification of ImageJ 3D visualization efforts around [[ClearVolume]] and the [[ThreeDViewer]]
 # (with {{Person|Pietzsch}}) '''Visualization of big data.''' Unification of visualization in general around the [[BigDataViewer]].
 
