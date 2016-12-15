@@ -24,7 +24,7 @@ In addition to cloning the [https://github.com/imagej/imagej-ops imagej-ops] its
 
 == Tutorials and workshops ==
 
-* [[Adding_new_ops|Ops: Step-by-step]]
+* [[Adding_new_ops|Step-by-step guide: Adding new ops]]
 * {{GitHub | org=imagej | repo=imagej-tutorials | path=using-ops | label=ImageJ Tutorial: Using Ops}}
 * {{GitHub | org=imagej | repo=imagej-tutorials | path=create-a-new-op | label=ImageJ Tutorial: Create A New Op}}
 * "ImageJ2 scripts: Parameters + ImageJ Ops" (ImageJ conference 2015) – [https://imagej.github.io/presentations/2015-09-04-imagej2-scripting/ slides], [https://vimeo.com/140098817 video 1], [https://vimeo.com/140098835 video 2]
