@@ -1,5 +1,5 @@
 == The Dresden Analysis-of-Images Suite ==
-
-[http://dais.bioimagecomputing.com DAIS]
-
-[[Image:DeNBI_Logo_rgb.png]]
+[[Image:DeNBI_Logo_rgb.png|right|300px]]
+[[Image:Dais_csbd_color.png|right|300px]]
+The Dresden Analysis-of-Images Suite ([http://dais.bioimagecomputing.com DAIS]) is a partner project in the German Network for Bioinformatics Infrastructure ([https://www.denbi.de de.NBI)].
+The Fiji community is actively working towards tight integration with the KNIME workflow engine, which is maintained and developed by the de.NBI center CIBI. DAIS has a strong focus on further strengthening interoperability and integration of Fiji and KNIME, as well as bringing together their respective developer communities.
