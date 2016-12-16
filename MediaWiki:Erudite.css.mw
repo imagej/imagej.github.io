@@ -110,15 +110,9 @@ img {
   position: absolute;
   top: 132px;
   left: 53px;
-  background: repeating-linear-gradient(
-    45deg,
-    #dddddd,
-    #dddddd 3px,
-    #bbbbfb 3px,
-    #bbbbfb 4px
-  );
   padding: 3px;
-  border: 1px solid #bbbbbb;
+  border: 1px solid #ccc;
+  background-color: white;
   border-radius: 1em;
   z-index: 100;
 }
@@ -135,6 +129,17 @@ img {
   z-index: 101;
 }
 
+@media screen and (min-width: 1056px) {
+  /* Use a nice drop shadow when page is wide enough. */
+  .project-info .project-logo {
+    -moz-border-radius: .75em;
+    -webkit-border-radius: .75em;
+    border-radius: .75em;
+    -moz-box-shadow: 4px 4px 4px #ccc;
+    -webkit-box-shadow: 4px 4px 4px #ccc;
+    box-shadow: 4px 4px 4px #ccc;
+  }
+}
 @media screen and (max-width: 1056px) {
 
   /* Put the logo box on the top of the page, next to the ImageJ title. */
