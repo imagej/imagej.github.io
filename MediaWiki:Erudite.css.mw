@@ -59,9 +59,11 @@ li#search h3 {
 
 /* Hide the search box when the page is too narrow. */
 @media screen and (max-width: 600px) {
-li#search {
-  display: none;
+  li#search {
+    display: none;
+  }
 }
+
 /* Box off the TOC like Vector does, to make it more consistent with other menu styling. */
 .toc {
   background-color: #f9f9f9;
