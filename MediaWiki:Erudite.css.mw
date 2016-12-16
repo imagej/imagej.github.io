@@ -120,13 +120,8 @@ img {
 .project-info .project-logo img {
   width: 48px;
   height: 48px;
-}
-/* Put the tooltip glyph in the bottom right corner of the logo box. */
-.project-info .project-tip {
-  position: absolute;
-  top: 225px;
-  left: 77px;
-  z-index: 101;
+  border: none;
+  padding: 0;
 }
 
 @media screen and (min-width: 1057px) {
@@ -141,7 +136,6 @@ img {
   }
 }
 @media screen and (max-width: 1056px) {
-
   /* Put the logo box on the top of the page, next to the ImageJ title. */
   .project-info .project-logo {
     top: 4px;
@@ -153,10 +147,5 @@ img {
     height: 32px;
     padding-bottom: 0;
     padding-right: 5px;
-  }
-  /* Put the tooltip glyph in the bottom right corner of the logo box. */
-  .project-info .project-tip {
-    top: 37px;
-    left: 250px;
   }
 }
