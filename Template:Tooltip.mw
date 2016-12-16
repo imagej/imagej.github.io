@@ -1,7 +1,7 @@
 <includeonly>{{#if:{{{2|}}}|{{#tip-text: {{{1}}}|{{{2}}}}}|{{#tip-info: {{{1}}}}}}}</includeonly><noinclude>
 == Usage ==
 <nowiki>{{tooltip | base text | tooltip text}}</nowiki>
-<nowiki>{{tooltip | tooltip text}}</nowiki>
+<br><nowiki>{{tooltip | tooltip text}}</nowiki>
 
 == Examples ==
 <pre>
