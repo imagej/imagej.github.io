@@ -1,4 +1,4 @@
-<includeonly>{{#if:{{{project|}}}|{{Project|{{{project}}}|}}{| class="infobox" cellspacing="5" style="width: 31em; font-size: 90%; text-align: left; float: right; border: 1px solid #a0a0a0;"
+<includeonly>{{#if:{{{project|}}}|{{Project|{{{project}}}}}|}}{| class="infobox" cellspacing="5" style="width: 31em; font-size: 90%; text-align: left; float: right; border: 1px solid #a0a0a0;"
 ! colspan="2" style="text-align: center; font-size: 130%;" | <div style="float: left">{{{logo|}}}</div>{{{name|{{PAGENAME}}}}}<div style="clear: left;"></div>
 |-
 {{#if:{{{project|}}}|
