@@ -1,10 +1,10 @@
 <includeonly><div class="project-info">
 <span class="project-logo">{{#switch: {{{1}}}
-| ImageJ = {{Logo | ImageJ | size=96px}}
-| Fiji = {{Logo | Fiji | size=96px}}
-| ImgLib2 = {{Logo | ImgLib2 | size=96px}}
-| SCIFIO = {{Logo | SCIFIO | size=96px}}
-| SciJava = {{Logo | SciJava | size=96px}}
+| ImageJ = {{Logo | ImageJ | size=72px}}
+| Fiji = {{Logo | Fiji | size=72px}}
+| ImgLib2 = {{Logo | ImgLib2 | size=72px}}
+| SCIFIO = {{Logo | SCIFIO | size=72px}}
+| SciJava = {{Logo | SciJava | size=72px}}
 |
 }}</span>
 <span class="project-tip">{{tooltip |
