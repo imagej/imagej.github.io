@@ -121,7 +121,7 @@ img {
   width: 48px;
   height: 48px;
   border: none;
-  padding-bottom: 5px 5px 0 5px;
+  padding: 5px 5px 0 5px;
 }
 
 @media screen and (min-width: 1057px) {
