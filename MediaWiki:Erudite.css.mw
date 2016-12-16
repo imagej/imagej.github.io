@@ -129,13 +129,13 @@ img {
   position: absolute;
   top: 178px;
   left: 35px;
+  width: 64px;
+  height: 64px;
   z-index: 101;
 }
 /* Hide the tooltip glyph itself; we just want the mouseover effect. */
 .project-info .project-tip .simple-tooltip {
   background: none;
-  width: 64px;
-  height: 64px;
 }
 
 @media screen and (min-width: 1057px) {
@@ -169,8 +169,6 @@ img {
   .project-info .project-tip {
     top: 4px;
     left: 220px;
-  }
-  .project-info .project-tip .simple-tooltip {
     width: 32px;
     height: 32px;
   }
