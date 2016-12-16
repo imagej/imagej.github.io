@@ -108,8 +108,8 @@ img {
 /* Put the logo box on the top left of the page, below the main ImageJ logo. */
 .project-info .project-logo {
   position: absolute;
-  top: 132px;
-  left: 53px;
+  top: 178px;
+  left: 35px;
   padding: 3px;
   border: 1px solid #ccc;
   background-color: white;
@@ -124,8 +124,8 @@ img {
 /* Put the tooltip glyph in the bottom right corner of the logo box. */
 .project-info .project-tip {
   position: absolute;
-  top: 179px;
-  left: 95px;
+  top: 225px;
+  left: 77px;
   z-index: 101;
 }
 
