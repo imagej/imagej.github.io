@@ -20,7 +20,7 @@ This page {{{2|describes content which is part of}}}
 </div></includeonly><noinclude>
 This template marks a page as related to a specific software [[project]].
 ==Examples==
-<br><pre>
+<pre>
 {{Project | SciJava | shows an example of labeling something as part of}}
 </pre>
 {{Project | SciJava | shows an example of labeling something as part of}}
