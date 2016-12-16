@@ -1,0 +1,43 @@
+<includeonly><div class="project-info">
+<span class="project-logo">{{#switch: {{{1}}}
+| ImageJ = {{Logo | ImageJ | size=96px}}
+| Fiji = {{Logo | Fiji | size=96px}}
+| ImgLib2 = {{Logo | ImgLib2 | size=96px}}
+| SCIFIO = {{Logo | SCIFIO | size=96px}}
+| SciJava = {{Logo | SciJava | size=96px}}
+|
+}}</span>
+<span class="project-tip">{{tooltip |
+This page {{{2|describes content which is part of}}}
+{{#switch: {{{1}}}
+| ImageJ = the core ImageJ distribution.
+| Fiji = the Fiji distribution of ImageJ.
+| ImgLib2 = the ImgLib2 multidimensional image processing library.
+| SCIFIO = the SCIFIO library for scientific image I/O.
+| SciJava = the core SciJava software libraries.
+|
+}} Click the logo for details.}}</span>
+</div></includeonly><noinclude>
+This template marks a page as related to a specific software [[project]].
+==Examples==
+<br><pre>
+{{Project | ImageJ}}
+</pre>
+{{Project | ImageJ}}
+<br><pre>
+{{Project | Fiji | documents a component of}}
+</pre>
+{{Project | Fiji | documents a component of}}
+<br><pre>
+{{Project | ImgLib2}}
+</pre>
+{{Project | ImgLib2}}
+<br><pre>
+{{Project | SCIFIO}}
+</pre>
+{{Project | SCIFIO}}
+<br><pre>
+{{Project | SciJava}}
+</pre>
+{{Project | SciJava}}
+</noinclude>
