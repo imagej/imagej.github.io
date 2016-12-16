@@ -110,7 +110,10 @@ img {
   position: absolute;
   top: 178px;
   left: 35px;
-  padding: 3px;
+  width: 64px;
+  height: 64px;
+  padding: 0;
+  text-align: center;
   border: 1px solid #ccc;
   background-color: white;
   border-radius: 1em;
@@ -124,9 +127,15 @@ img {
 /* Put the tooltip glyph in the bottom right corner of the logo box. */
 .project-info .project-tip {
   position: absolute;
-  top: 225px;
-  left: 77px;
+  top: 178px;
+  left: 35px;
+  width: 64px;
+  height: 64px;
   z-index: 101;
+}
+/* Hide the tooltip glyph itself; we just want the mouseover effect. */
+.project-info .project-tip .simple-tooltip {
+  background: none;
 }
 
 @media screen and (min-width: 1057px) {
@@ -146,6 +155,8 @@ img {
   .project-info .project-logo {
     top: 4px;
     left: 220px;
+    width: 32px;
+    height: 32px;
   }
   /* Make the logo image a smaller size. */
   .project-info .project-logo img {
@@ -156,7 +167,9 @@ img {
   }
   /* Put the tooltip glyph in the bottom right corner of the logo box. */
   .project-info .project-tip {
-    top: 37px;
-    left: 250px;
+    top: 4px;
+    left: 220px;
+    width: 32px;
+    height: 32px;
   }
 }
