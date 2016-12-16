@@ -102,3 +102,56 @@ a:hover {
 img {
   vertical-align: middle;
 }
+
+/* -- Template:Project styling -- */
+
+/* Put the logo box on the top left of the page, below the main ImageJ logo. */
+.project-info .project-logo {
+  position: absolute;
+  top: 132px;
+  left: 53px;
+  background: repeating-linear-gradient(
+    45deg,
+    #dddddd,
+    #dddddd 3px,
+    #bbbbfb 3px,
+    #bbbbfb 4px
+  );
+  padding: 3px;
+  border: 1px solid #bbbbbb;
+  border-radius: 1em;
+  z-index: 100;
+}
+/* Make the logo image a nice size. */
+.project-info .project-logo img {
+  width: 48px;
+  height: 48px;
+}
+/* Put the tooltip glyph in the bottom right corner of the logo box. */
+.project-info .project-tip {
+  position: absolute;
+  top: 179px;
+  left: 95px;
+  z-index: 101;
+}
+
+@media screen and (max-width: 1056px) {
+
+  /* Put the logo box on the top of the page, next to the ImageJ title. */
+  .project-info .project-logo {
+    top: 4px;
+    left: 220px;
+  }
+  /* Make the logo image a smaller size. */
+  .project-info .project-logo img {
+    width: 32px;
+    height: 32px;
+    padding-bottom: 0;
+    padding-right: 5px;
+  }
+  /* Put the tooltip glyph in the bottom right corner of the logo box. */
+  .project-info .project-tip {
+    top: 37px;
+    left: 250px;
+  }
+}
