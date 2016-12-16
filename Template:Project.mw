@@ -1,23 +1,13 @@
 <includeonly><div class="project-info">
 <span class="project-logo">{{#switch: {{{1}}}
-| ImageJ = {{Logo | ImageJ | size=96px}}
-| Fiji = {{Logo | Fiji | size=96px}}
-| ImgLib2 = {{Logo | ImgLib2 | size=96px}}
-| SCIFIO = {{Logo | SCIFIO | size=96px}}
-| SciJava = {{Logo | SciJava | size=96px}}
+| ImageJ = [[ImageJ|{{#tip-img:/_images/d/d1/Imagej2-icon.png|This page {{{2|describes content which is part of}}} the core ImageJ distribution. Click the logo for details.}}]]
+| ImageJ1 =[[ImageJ1|{{#tip-img:/_images/a/a8/Imagej1-icon.png|This page {{{2|describes content which is part of}}} the legacy ImageJ 1.x application. Click the logo for details.}}]]
+| Fiji = [[Fiji|{{#tip-img:/_images/a/ae/Fiji-icon.png|This page {{{2|describes content which is part of}}} the Fiji distribution of ImageJ. Click the logo for details.}}]]
+| ImgLib2 = [[ImgLib2|{{#tip-img:/_images/0/0a/Imglib2-icon.png|This page {{{2|describes content which is part of}}} the ImgLib2 multidimensional image processing library. Click the logo for details.}}]]
+| SCIFIO = [[SCIFIO|{{#tip-img:/_images/a/a6/Scifio-icon.png|This page {{{2|describes content which is part of}}} the SCIFIO library for scientific image I/O. Click the logo for details.}}]]
+| SciJava = [[SciJava|{{#tip-img:/_images/9/93/Scijava-icon.png|This page {{{2|describes content which is part of}}} the core SciJava software libraries. Click the logo for details.}}]]
 |
-}}</span>
-<span class="project-tip">{{tooltip |
-This page {{{2|describes content which is part of}}}
-{{#switch: {{{1}}}
-| ImageJ = the core ImageJ distribution.
-| Fiji = the Fiji distribution of ImageJ.
-| ImgLib2 = the ImgLib2 multidimensional image processing library.
-| SCIFIO = the SCIFIO library for scientific image I/O.
-| SciJava = the core SciJava software libraries.
-|
-}} Click the logo for details.}}</span>
-</div></includeonly><noinclude>
+}}</span></div></includeonly><noinclude>
 This template marks a page as related to a specific software [[project]].
 ==Examples==
 <pre>
