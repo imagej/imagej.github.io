@@ -1,4 +1,4 @@
-{{About}}ImageJ is an open source Java image processing program inspired by [[NIH Image]]. It runs on any computer with a Java 1.6 or later virtual machine. [[Downloads|Downloadable distributions]] are available for Windows, Mac OS X and Linux. ImageJ has a strong, established user base, with thousands of [[plugins]] and [[macros]] for performing a wide variety of tasks.
+{{About}}ImageJ is an open source Java image processing program inspired by [[NIH Image]]. It runs on any computer with a Java 1.8 or later virtual machine. [[Downloads|Downloadable distributions]] are available for Windows, Mac OS X and Linux. ImageJ has a strong, established user base, with thousands of [[plugins]] and [[macros]] for performing a wide variety of tasks.
 
 == Flavors ==
 
