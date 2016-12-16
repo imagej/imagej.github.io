@@ -1,1 +1,10 @@
-<includeonly>{{#tooltip: {{{1}}}|{{{2}}}}}</includeonly><noinclude>Usage: <nowiki>{{tooltip | base text | tooltip text}}</nowiki> ({{tooltip | base text | tooltip text}})</noinclude>
+<includeonly>{{#tip-text: {{{1}}}|{{{2}}}}}</includeonly><noinclude>
+== Usage ==
+<nowiki>{{tooltip | base text | tooltip text}}</nowiki>
+
+== Examples ==
+<pre>
+The {{tooltip | quick brown fox | But the turtle wins the race.}} jumps over the lazy dog.
+</pre>
+The {{tooltip | quick brown fox | But the turtle wins the race.}} jumps over the lazy dog.
+</noinclude>
