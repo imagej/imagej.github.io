@@ -1,6 +1,6 @@
 {{FijiDocsMenu}}[http://fiji.sc/ Fiji] is an image processing package—a "batteries-included" distribution of [[ImageJ]], bundling a lot of plugins which facilitate scientific image analysis.
 
-* '''[[Fiji Usage|For users]]''' - Fiji is [[Downloads|easy to install]] and has an automatic update function, bundles a [[:Category:Plugins|lot of plugins]] and offers comprehensive [[documentation]].
+* '''[[Fiji Usage|For users]]''' - Fiji is [[Fiji/Downloads|easy to install]] and has an automatic update function, bundles a [[:Category:Plugins|lot of plugins]] and offers comprehensive [[documentation]].
 * '''[[Developing_Fiji|Developing Fiji]]''' - Fiji is an open source project hosted in a [[Git]] version control {{GitHub|repo=fiji|label=repository}}, with access to the source code of all internals, libraries and plugins, and eases the [[Development|development]] and [[Scripting Help|scripting]] of plugins.
 
 == Downloads ==
