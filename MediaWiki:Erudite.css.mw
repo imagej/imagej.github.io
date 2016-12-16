@@ -129,7 +129,7 @@ img {
   z-index: 101;
 }
 
-@media screen and (min-width: 1056px) {
+@media screen and (min-width: 1057px) {
   /* Use a nice drop shadow when page is wide enough. */
   .project-info .project-logo {
     -moz-border-radius: .75em;
