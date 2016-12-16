@@ -1,4 +1,4 @@
-<includeonly>{{#if:{{{project|}}}|{{Project{{!}}{{{project}}}}}|}}{| class="infobox" cellspacing="5" style="width: 31em; font-size: 90%; text-align: left; float: right; border: 1px solid #a0a0a0;"
+<includeonly>{| class="infobox" cellspacing="5" style="width: 31em; font-size: 90%; text-align: left; float: right; border: 1px solid #a0a0a0;"
 ! colspan="2" style="text-align: center; font-size: 130%;" | <div style="float: left">{{{logo|}}}</div>{{{name|{{PAGENAME}}}}}<div style="clear: left;"></div>
 |-
 {{#if:{{{project|}}}|
@@ -74,7 +74,7 @@
 {{!}} {{{contributors}}}
 {{!}}-
 }}
-|}</includeonly>
+|}{{#if:{{{project|}}}|{{Project|{{{project}}}}}|}}</includeonly>
 <noinclude>This template is a sidebar for displaying key statistics about a software [[component]].
 ==Usage==
 <pre>
