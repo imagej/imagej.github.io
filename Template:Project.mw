@@ -21,23 +21,7 @@ This page {{{2|describes content which is part of}}}
 This template marks a page as related to a specific software [[project]].
 ==Examples==
 <br><pre>
-{{Project | ImageJ}}
+{{Project | SciJava | shows an example of labeling something as part of}}
 </pre>
-{{Project | ImageJ}}
-<br><pre>
-{{Project | Fiji | documents a component of}}
-</pre>
-{{Project | Fiji | documents a component of}}
-<br><pre>
-{{Project | ImgLib2}}
-</pre>
-{{Project | ImgLib2}}
-<br><pre>
-{{Project | SCIFIO}}
-</pre>
-{{Project | SCIFIO}}
-<br><pre>
-{{Project | SciJava}}
-</pre>
-{{Project | SciJava}}
+{{Project | SciJava | shows an example of labeling something as part of}}
 </noinclude>
