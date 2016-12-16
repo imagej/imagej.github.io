@@ -121,7 +121,7 @@ img {
   width: 48px;
   height: 48px;
   border: none;
-  padding: 0;
+  padding-bottom: 5px 5px 0 5px;
 }
 
 @media screen and (min-width: 1057px) {
@@ -145,7 +145,5 @@ img {
   .project-info .project-logo img {
     width: 32px;
     height: 32px;
-    padding-bottom: 0;
-    padding-right: 5px;
   }
 }
