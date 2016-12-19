@@ -60,9 +60,10 @@ import ch.epfl.biop.MaxInscribedCircles;
 And then call the static method
 <source lang="java">
 //imp must be an 8-bit binary image
-ArrayList<Roi> circles = MaxInscribedCircles.findCircles(ImagePlus imp, double minD);
+ArrayList<Roi> circles = MaxInscribedCircles.findCircles(ImagePlus imp, double minD, boolean isSelectionOnly);
 </source>
 
+Set the last argument <pre>isSelectionOnly</pre> to true if you want to fit circles in the current selection. If you'd like to use the pixel mask, set it to false.
 
 
 == Notes ==
