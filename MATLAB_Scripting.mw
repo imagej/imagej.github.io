@@ -113,6 +113,11 @@ IJM.show('rval') % display the rval array in ImageJ
 IJM.show('mask') % display the mask array in ImageJ
 </source>
 
+= Source =
+
+* [Scripting-MATLAB](https://github.com/scijava/scripting-matlab) provides the script engine plugins.
+* [ImageJ-MATLAB](https://github.com/imagej/imagej-matlab) defines the ImageJ-specific translators.
+
 = Video presentation =
 
 {{#widget:Vimeo|id=140929686|caption=ImageJ+MATLAB: Reunited}}
