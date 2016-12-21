@@ -115,8 +115,8 @@ IJM.show('mask') % display the mask array in ImageJ
 
 = Source =
 
-* [Scripting-MATLAB](https://github.com/scijava/scripting-matlab) provides the script engine plugins.
-* [ImageJ-MATLAB](https://github.com/imagej/imagej-matlab) defines the ImageJ-specific translators.
+* {{GitHub|org=scijava|repo=scripting-matlab|label=Scripting-MATLAB}} provides the script engine plugins.
+* {{GitHub|org=imagej|repo=imagej-matlab|label=ImageJ-MATLAB}} defines the ImageJ-specific translators.
 
 = Video presentation =
 
