@@ -8,7 +8,7 @@ To export each connected set of paths as a separate SWC file, you can now select
 
 [[File:Save-all-as-swc.png]]
 
-== Export a single connected path set as an SWC file ===
+== Export a single connected path set as an SWC file ==
 
 Often, you will just want to export one set of connected paths.  As an example of this, suppose we have a partially traced image like this:
 
