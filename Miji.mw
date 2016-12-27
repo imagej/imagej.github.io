@@ -10,7 +10,7 @@ Miji;
 
 will start a Fiji inside [[MATLAB]].
 
-{{Notice|message=Warning! There are over 300 jar and plugin files that ship with Fiji, and depending on your operating system and configuration, you may run into '''too many files open''' errors (for example, on OSX [[MATLAB]] seems to use the default soft limit for open files, which is typically 256). If this happens you will need to increase the open file limit per-session or system-wide. See [http://docs.basho.com/riak/latest/ops/tuning/open-files-limit/ this guide] for helpful instructions on doing so for OSX and Linux.}}
+{{Warning|message=There are over 300 jar and plugin files that ship with Fiji, and depending on your operating system and configuration, you may run into '''too many files open''' errors (for example, on OSX [[MATLAB]] seems to use the default soft limit for open files, which is typically 256). If this happens you will need to increase the open file limit per-session or system-wide. See [http://docs.basho.com/riak/latest/ops/tuning/open-files-limit/ this guide] for helpful instructions on doing so for OSX and Linux.}}
 
 = Getting started =
 
