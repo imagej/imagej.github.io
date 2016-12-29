@@ -9,17 +9,17 @@
 | osrc = dscho
 }}= [http://loci.wisc.edu/people/johannes-schindelin Johannes Schindelin] =
 
-... is involved in the [[Fiji]] and [[ImageJ2]] projects helping with programming, algorithms, educating scientists about the fine points of scientific image analysis, planning experiments, and generally cheering up people.
+... was involved in the [[Fiji]] and [[ImageJ2]] projects helping with programming, algorithms, educating scientists about the fine points of scientific image analysis, planning experiments, and generally cheering up people.
 
 = A short story about Fiji =
 
-This story is not about [http://en.wikipedia.org/index.php/Fiji the island called ''Fiji'']. This story is how [http://fiji.sc Fiji Is Just ImageJ] became born.
+This story is not about [[wikipedia:Fiji|the island called ''Fiji'']]. This story is how [https://fiji.sc Fiji Is Just ImageJ] became born.
 
 == The beginning ==
 
-Back when I met [http://albert.rierol.net Albert Cardona] at the [http://imagejconf.tudor.lu/doku.php?id=archive:imagej-user-and-developer-conference-2006 first ImageJ conference], it became pretty apparent pretty quickly that not only would we become good friends, but also that we had a lot of mutual respect for the work we had done so far. His biggest accomplishment was certainly [[TrakEM2]], but he had also worked on the macro interpreter (including a so-called [[Macro Interpreter|Command Line Interface]], which is a two-paned window for interactive macro evaluation) and had already turned to [[Jython_Scripting|Jython]] as a more powerful way to script ImageJ. At that time, I had not worked all that many years with ImageJ, but I already was maintainer of [[ImageJA]].
+Back when I met [http://albert.rierol.net Albert Cardona] at the [[Conference 2006|first ImageJ conference], it became pretty apparent pretty quickly that not only would we become good friends, but also that we had a lot of mutual respect for the work we had done so far. His biggest accomplishment was certainly [[TrakEM2]], but he had also worked on the macro interpreter (including a so-called [[Macro Interpreter|Command Line Interface]], which is a two-paned window for interactive macro evaluation) and had already turned to [[Jython_Scripting|Jython]] as a more powerful way to script ImageJ. At that time, I had not worked all that many years with ImageJ, but I already was maintainer of [[ImageJA]].
 
-Over the years, we had more and more contact, meeting briefly in [http://genetics.biozentrum.uni-wuerzburg.de/main/ Würzburg] and later at a [[Hackathon|hackathon]] at [http://www.hhmi.org/bulletin/nov2007/chronicle/hackathon.html Janelia Farms], where we met with a bunch of enthusiastic people who all tried to bridge neuro science with software development (even if I was there, the article does not show a photo of me, because they did the article in the second week, and back then I was not on too-good terms with my employer, so I dared only ask to leave for one).
+Over the years, we had more and more contact, meeting briefly in [http://genetics.biozentrum.uni-wuerzburg.de/main/ Würzburg] and later at a [[hackathon]] at [http://www.hhmi.org/bulletin/nov2007/chronicle/hackathon.html Janelia Farms], where we met with a bunch of enthusiastic people who all tried to bridge neuro science with software development (even if I was there, the article does not show a photo of me, because they did the article in the second week, and back then I was not on too-good terms with my employer, so I dared only ask to leave for one).
 
 After an exciting hackathon, you almost always have to take a few breaths for a couple of weeks. In other words, you are no longer as productive, and if you are a workaholic like me, you fall into a depression.
 
@@ -37,7 +37,7 @@ We kept chatting about that over a couple of weeks, if not months. At some stage
 
 Eventually, one dark December day in 2007 (and in Scotland, December <u>is</u> as dark as it gets) I gave in.
 
-Out of frustration with my job, I had just started a distribution of [[Git]] for [http://msysgit.googlecode.com/ Windows] which included making an installer, so I thought I could put together an installer pretty quickly.
+Out of frustration with my job, I had just started a distribution of [[Git]] for [https://git-for-windows.github.io/ Windows] which included making an installer, so I thought I could put together an installer pretty quickly.
 
 The first step was to get a version of ImageJ and TrakEM2 and Java (we were 100% sure that we needed to ship Java with the installer, otherwise users would get into problems with their Java 1.1.8 not being able to run Java 5 classes, let alone run at a decent speed) to run on the main platforms: Windows, MacOSX and Linux. You might not consider Linux a major platform, but it was and still is the platform Albert and me are using.
 
