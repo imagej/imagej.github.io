@@ -104,7 +104,7 @@ Coming soon.
 == Hackathon progress ==
 
 === Curtis Rueden ===
-* With {{Person|Alecneevel}} and {{Person|Saalfeld}}, completed update of ImageJ web resources to support HTTPS (see [[Creating 2016-12-29 - ImageJ web resources now support HTTPS|separate news post]]).
+* With {{Person|Alecneevel}} and {{Person|Saalfeld}}, completed update of ImageJ web resources to support HTTPS (see [[2016-12-29 - ImageJ web resources now support HTTPS|separate news post]]).
 * With {{Person|Jug}}, overhauled the [[SciJava Common]] [[logging]] mechanism ({{GitHub|org=scijava|repo=scijava-common|pr=253|label=scijava/scijava-common#253}}).
 * With {{Person|Rdom}}, improved [[SciJava Common]] context injection to be recursive, to fix bugs with service population of commands ({{GitHub|org=scijava|repo=scijava-common|commit=b0c981b24fc8ec845656574d95f9eddbc285728e|label=scijava/scijava-common@b0c981b2}}, {{GitHub|org=imagej|repo=imagej-ops|commit=4f78eca5b061881865c2a2c1702a98e634248aa5|label=imagej/imagej-ops@4f78eca5}}).
 * With {{Person|Rdom}}, add a validater callback for parameter validation ({{GitHub|org=scijava|repo=scijava-common|commit=66ed844ee76a264ca83629f0fef50c9b726c8897|label=scijava/scijava-common@66ed844e}}, {{GitHub|org=scijava|repo=scijava-common|commit=70c50f48cc20cec0a747a000778f013c7380155d|label=scijava/scijava-common@70c50f48}}).
@@ -120,7 +120,7 @@ Coming soon.
 === Stable releases of Fiji ===
 * We agreed to cut a stable release of Fiji once every six months.
 ** {{Person|Jug}} will manage the releases, both socially and technically.
-** {{Person|Haase}} will update the [[Updater]] to more clearly communicate the ramifications of updating.
+** {{Person|Haesleinhuepf}} will update the [[Updater]] to more clearly communicate the ramifications of updating.
 ** {{Person|Rueden}} will create Jenkins jobs for automating cutting of stable release candidates and releases.
 * We agreed to continue pursuing the "melting pot" builds of Fiji and/or the SciJava universe, to better detect cross-component regressions and incompatibilities.
 ** {{Person|Rueden}} will research effective approaches for running the melting pot via CI.
