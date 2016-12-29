@@ -11,8 +11,8 @@
 }}
 {{Book
 | image=FluorescenceImageAnalysisIntro_copy.jpg
-| link=http://blogs.qub.ac.uk/ccbg/files/2014/05/2014-05_Analyzing_fluorescence_microscopy_images.pdf
-| description=[http://blogs.qub.ac.uk/ccbg/fluorescence-image-analysis-intro/ Analyzing fluorescence microscopy images with ImageJ] provides detailed information on image analysis using [[ImageJ]].
+| link=https://petebankhead.gitbooks.io/imagej-intro/content/
+| description=[https://petebankhead.gitbooks.io/imagej-intro/content/ Analyzing fluorescence microscopy images with ImageJ] provides detailed information on image analysis using [[ImageJ]].
 }}
 {{Book
 | image=Digital-image-processing-cover.jpg
