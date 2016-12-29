@@ -15,5 +15,7 @@ PointAnalysis
 
 Plugin for ImageJ to measure domains (e.g. phases) in images using a grid of points. More information on github.
 
+For automatic installation in Fiji, add update site SimonKlein.
+
 [[Category:Tutorials]]
 [[Category:Plugins]]
