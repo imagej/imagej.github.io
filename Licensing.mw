@@ -104,24 +104,35 @@ Since each project consists of many components, some may be licensed differently
 |-
 ! colspan=15 | [[SciJava|SciJava consortium]]
 |-
-| [[File:bio-formats-icon.png|48px]]
-| '''[[Bio-Formats]]'''
-| [https://github.com/openmicroscopy/bioformats/blob/develop/LICENSE.txt License]<br>[http://openmicroscopy.org/site/about/licensing-attribution Info]
-| rowspan=4 style="vertical-align: middle" | [[GPL]]
-| rowspan=4 class="yesno" | {{Yes}}
-| rowspan=4 class="yesno" | {{Yes}}
-| rowspan=4 class="yesno" | {{Yes}}
-| rowspan=4 class="yesno" | {{Yes}}
-| rowspan=4 class="yesno" | {{Yes}}
-| rowspan=4 class="yesno" | {{Yes}}
-| rowspan=4 class="yesno" | {{Yes}}
-| rowspan=4 class="yesno" | {{Yes}}
-| rowspan=4 class="yesno" | {{No}}
-| rowspan=4 class="yesno" | {{No}}
-|-
 | [[File:cellprofiler-icon.png|48px]]
 | '''[[CellProfiler]]'''
 | [https://github.com/CellProfiler/CellProfiler/blob/master/LICENSE License]
+| rowspan=1 style="vertical-align: middle" | [[BSD-3]]
+| rowspan=1 class="yesno" | {{No}}
+| rowspan=1 class="yesno" | {{Yes}}
+| rowspan=1 class="yesno" | {{No}}
+| rowspan=1 class="yesno" | {{Yes}}
+| rowspan=1 class="yesno" | {{Yes}}
+| rowspan=1 class="yesno" | {{Yes}}
+| rowspan=1 class="yesno" | -
+| rowspan=1 class="yesno" | {{Yes}}
+| rowspan=1 class="yesno" | {{No}}
+| rowspan=1 class="yesno" | -
+|-
+| [[File:bio-formats-icon.png|48px]]
+| '''[[Bio-Formats]]'''
+| [https://github.com/openmicroscopy/bioformats/blob/develop/LICENSE.txt License]<br>[http://openmicroscopy.org/site/about/licensing-attribution Info]
+| rowspan=3 style="vertical-align: middle" | [[GPL]]
+| rowspan=3 class="yesno" | {{Yes}}
+| rowspan=3 class="yesno" | {{Yes}}
+| rowspan=3 class="yesno" | {{Yes}}
+| rowspan=3 class="yesno" | {{Yes}}
+| rowspan=3 class="yesno" | {{Yes}}
+| rowspan=3 class="yesno" | {{Yes}}
+| rowspan=3 class="yesno" | {{Yes}}
+| rowspan=3 class="yesno" | {{Yes}}
+| rowspan=3 class="yesno" | {{No}}
+| rowspan=3 class="yesno" | {{No}}
 |-
 | [[File:omero-icon.png|48px]]
 | '''[[OMERO]]'''
