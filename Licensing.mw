@@ -97,7 +97,7 @@ Since each project consists of many components, some may be licensed differently
 | rowspan=3 class="yesno" | {{No}}
 |-
 | '''[[BigDataViewer]]'''
-| [https://github.com/bigdataviewer/bigdataviewer-core/blob/master/LICENSE License]
+| [https://github.com/bigdataviewer/bigdataviewer-core/blob/master/LICENSE.txt License]
 |-
 | '''[[TrakEM2]]'''
 | [https://github.com/trakem2/TrakEM2/blob/master/README Readme]
@@ -121,7 +121,7 @@ Since each project consists of many components, some may be licensed differently
 |-
 | [[File:cellprofiler-icon.png|48px]]
 | '''[[CellProfiler]]'''
-| [https://github.com/CellProfiler/CellProfiler/blob/master/LICENSE License]<br>[https://github.com/CellProfiler/CellProfiler/blob/master/COPYING Info]
+| [https://github.com/CellProfiler/CellProfiler/blob/master/LICENSE License]
 |-
 | [[File:omero-icon.png|48px]]
 | '''[[OMERO]]'''
