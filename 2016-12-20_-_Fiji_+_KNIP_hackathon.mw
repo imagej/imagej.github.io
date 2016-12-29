@@ -1,0 +1,124 @@
+From Tuesday, December 6, 2016 through Friday, December 16, 2016, the [https://mpi-cbg.de/ Max Planck Institute of Molecular Cell Biology and Genetics] hosted ~20 developers at their facility in Dresden, Germany for a [[hackathon]] to develop [[ImageJ2]] and [[Fiji]] core infrastructure and [[plugins]].
+
+== Timeline ==
+
+The following chart illustrates when everyone was present:
+
+<timeline>
+Preset = TimeHorizontal_AutoPlaceBars_UnitYear
+
+ImageSize = width:600
+
+Colors =
+  id:c01 value:blue
+  id:c02 value:red
+  id:c03 value:green
+  id:c04 value:black
+  id:c05 value:magenta
+  id:c06 value:teal
+  id:c07 value:yelloworange
+  id:c08 value:skyblue
+  id:c09 value:claret
+  id:c10 value:oceanblue
+  id:c11 value:purple
+  id:c12 value:powderblue
+  id:c13 value:coral
+  id:c14 value:redorange
+  id:c15 value:kelleygreen
+  id:c16 value:orange
+  id:c17 value:lightpurple
+  id:c18 value:tan2
+  id:c19 value:gray(0.3)
+  id:c20 value:blue
+  id:c21 value:red
+  id:c22 value:green
+  id:c23 value:black
+  id:c24 value:magenta
+  id:c25 value:teal
+  id:gridLine value:gray(0.5)
+  id:gridCanvas value:gray(0.8)
+
+BackgroundColors = canvas:gridCanvas
+
+Period = from:6 till:17
+
+ScaleMajor = unit:year increment:1 start:6 grid:white
+
+LineData =
+  at:6 color:gridLine layer:back width:0.5
+  at:7 color:gridLine layer:back width:0.5
+  at:8 color:gridLine layer:back width:0.5
+  at:9 color:gridLine layer:back width:0.5
+  at:10 color:gridLine layer:back width:0.5
+  at:11 color:gridLine layer:back width:0.5
+  at:12 color:gridLine layer:back width:0.5
+  at:13 color:gridLine layer:back width:0.5
+  at:14 color:gridLine layer:back width:0.5
+  at:15 color:gridLine layer:back width:0.5
+  at:16 color:gridLine layer:back width:0.5
+  at:17 color:gridLine layer:back width:0.5
+
+BarData=
+  barset:Hackers
+
+PlotData=
+  width:15 
+  fontsize:M
+  textcolor:white
+  align:left 
+  anchor:from 
+  shift:(4,-4) 
+  color:black
+
+  barSet:Hackers
+  color:c01 from:12 till:17 text:"Curtis Rueden (LOCI)"
+  color:c02 from:11 till:17 text:"Christian Dietz (KNIME/UniKN)"
+  color:c03 from:11 till:16 text:"Patrick Winter (KNIME/UniKN)"
+  color:c04 from:9 till:16 text:"Tim-Oliver Buchholz (KNIME/UniKN)"
+  color:c05 from:9 till:17 text:"Marcel Wiedenmann (KNIME/UniKN)"
+  color:c06 from:6 till:16 text:"Richard Domander (BoneJ/RVC)"
+  color:c07 from:6 till:16 text:"Ulrik Günther (MPI-CBG)"
+  color:c08 from:6 till:16 text:"Robert Haase (MPI-CBG)"
+  color:c09 from:6 till:16 text:"Philipp Hanslovsky (Janelia)"
+  color:c10 from:6 till:16 text:"Kyle Harrington (Uni-Idaho)"
+  color:c11 from:6 till:16 text:"Florian Jug (MPI-CBG)"
+  color:c12 from:6 till:16 text:"Klim Kolyvanov (MDC/BIMSB)"
+  color:c13 from:6 till:16 text:"HongKee Moon (MPI-CBG)"
+  color:c14 from:6 till:16 text:"Tobias Pietzsch (MPI-CBG)"
+  color:c15 from:6 till:16 text:"Loic Royer (MPI-CBG)"
+  color:c16 from:6 till:16 text:"Stephan Saalfeld (Janelia)"
+  color:c17 from:6 till:16 text:"Pavel Tomancak (MPI-CBG)"
+  color:c18 from:6 till:16 text:"Vladimir Ulman (MPI-CBG)"
+  color:c19 from:6 till:13 text:"Jean-Yves Tinevez (Pasteur)"
+  color:c20 from:6 till:10 text:"David Hörl (LMU, MDC)"
+  color:c21 from:6 till:9 text:"Carsten Haubold (HCI)"
+  color:c22 from:6 till:9 text:"Jonas Massa (HCI)"
+
+</timeline>
+
+== Gallery ==
+
+Coming soon.
+
+== Hackathon progress ==
+
+Coming soon.
+
+== Technical discussions ==
+
+=== Programmers Anonymous ===
+* Robert is addicted to ImageJ.
+* Ulrik can only do snapshot releases.
+
+=== Stable releases of Fiji ===
+* We agreed to cut a stable release of Fiji once every six months.
+** {{Person|Jug}} will manage the releases, both socially and technically.
+** {{Person|Haase}} will update the [[Updater]] to more clearly communicate the ramifications of updating.
+** {{Person|Rueden}} will create Jenkins jobs for automating cutting of stable release candidates and releases.
+* We agreed to continue pursuing the "melting pot" builds of Fiji and/or the SciJava universe, to better detect cross-component regressions and incompatibilities.
+** {{Person|Rueden}} will research effective approaches for running the melting pot via CI.
+** Core maintainers (esp. {{Person|Pietzsch}} and {{Person|Saalfeld}}) will run the melting pot manually to vet its usefulness and correctness.
+
+=== 3D viewers in ImageJ and Fiji ===
+* We discussed how best to proceed with the [[ThreeDViewer]], [[BigDataViewer]] et. al.
+* More details coming soon here.
