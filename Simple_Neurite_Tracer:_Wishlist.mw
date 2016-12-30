@@ -1,16 +1,17 @@
 (Return to the main [[Simple Neurite Tracer]] page)
-
+__NOTOC__
 This is a list of the most commonly requested (or most important) wishlist items for Simple Neurite Tracer.
+
+{{ambox
+| text = Some requests on this page may now be deprecated in later versions of the plugin.
+}}
+
 
 * You should be able to merge branches that meet at a single point.  This is important for when people forget to use the join modifier when creating a branch.  The suggested course of action is to go back and create a tiny joining path between the original process and the branch.  However, to avoid having this additional tiny branch, it would be best to be able to merge them.
 
 * You should be able to split paths.
 
 * Add a page to the wiki about accuracy considerations, particularly for people who are measuring lengths of processes.
-
-* It would be nice to optionally colour the paths by their SWC type.
-
-* Some people have requested an option to set paths to a particular colour via a right-click menu option in the path window.
 
 * Path finding and filling are very memory hungry in large stacks.  The data structures for storing the progress of these searches should be much more efficient.
 
@@ -31,8 +32,8 @@ This is a list of the most commonly requested (or most important) wishlist items
 ** The values which are being traced on, which might be preprocessed or just a simple transformation of the original data.
 
 ----
-
-
+Done:
+* It would be nice to optionally colour the paths by their SWC type.
+* Some people have requested an option to set paths to a particular colour via a right-click menu option in the path window.
 * '''Done 2011-03-26''': Add a menu option to export all neurons as SWC files, i.e. one per connected set of paths.
-
 * '''[[Simple_Neurite_Tracer:_3D_Interaction|Done]] 2011-03-29''': You should be able to do all the basic tracing operations in the 3D Viewer.  e.g. selecting the start point, selecting the subsequent points, and creating joins and branches.  This is partially implemented now - you can try switching between the "hand" and "wand" tool and clicking in the 3D viewer.  There's no visual feedback yet for what you're doing, however.  Ideally it would be nice not to have to switch tool, as well
