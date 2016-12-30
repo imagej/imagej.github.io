@@ -1,28 +1,27 @@
 (Return to the main [[Simple Neurite Tracer]] page)
 
-====Key Shortcuts====
+===Key Shortcuts===
 
-* {{key|Y}} - Confirm the current temporary path
-* {{key|N}} - discard the current temporary path
-* {{key|F}} - Finish a path
-* {{key|C}} - Cancel a path
+* {{key|Y}} - Confirm the current temporary path. Mnemonic: <u>Y</u>es.
+* {{key|N}} - discard the current temporary path. Mnemonic: <u>N</u>o.
+* {{key|F}} - Finish a path.
+* {{key|C}} - Cancel a path.
 * {{key|Esc}} - Abandon search
-* {{key|G}} - Select (Group) the path nearest to the mouse pointer
+* {{key|G}} - Select the path nearest to the mouse pointer. Mnemonic: <u>G</u>roup paths around pointer.
 
 
-* {{key|S}} -Toggle cursor snapping: If enable, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window <sup>1</sup>.
-* {{key|M}} - Finds the brightest voxel (maximum) above and below the current x,y position and automatically clicks on it.<sup>1</sup>.
+* {{key|S}} -Toggle cursor <u>S</u>napping: If enable, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window<sup>1</sup>.
+* {{key|Shift}} - Synchronizes XY, ZY and XZ views while moving the cursor when not using cursor snapping.
+* {{key|M}} - Finds the brightest voxel (<u>M</u>aximum) above and below the current x,y position and automatically clicks on it<sup>1</sup>.
+* {{key|Control|Shift}}-click ({{key|Alt|Shift}}-click on MacOS) - Selects a point along the active path to be used as branching point.
 <div class="floatright"><sup>1</sup> If multiple maxima exist, their average positioning is used.</div>
 
 
-* {{key|+}} - Zoom in (Simultaneously on all views)
+* {{key|+}} - Zoom in (Simultaneously on all views).
 * {{key|-}} - Zoom out (Simultaneously on all views)
-* {{key|Shift}} - Synchronizes XY, ZY and XZ views while moving the cursor
-* {{key|5}} - Toggle ''View paths'' choice: ''Parts in nearby slices'' / ''Projected through all slices''
-* {{key|V}} - View all traced paths as lines in a new image stack
+* {{key|5}} - Toggle ''View paths'' choice: ''Parts in nearby slices'' / ''Projected through all slices''. Mnemonic: <u>5</u> is ImageJ's shortcut for "default" view ({{bc|Image|Zoom|View 100%}}).
 
 
-There are more complex key + mouse combinations used in:
-
+There are more complex key and mouse combinations used in:
 * [[Simple Neurite Tracer: Sholl analysis]]
 * [[Simple_Neurite_Tracer:_Step-By-Step_Instructions#Branching:_Start_a_path_on_an_existing_path|Branching and joining paths]]
