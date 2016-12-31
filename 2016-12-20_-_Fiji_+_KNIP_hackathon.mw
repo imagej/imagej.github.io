@@ -111,6 +111,13 @@ Coming soon.
 * With {{Person|maarzt}}, began work on a <code>PlotService</code> for ImageJ2 ([https://github.com/imagej/imagej-ui-swing/compare/plot-service...maarzt:plot-service maarzt/imagej-ui-swing@plot-service]).
 * Participated in technical discussions with various people, including a "big-picture" status update for ImageJ2 covering my [[User:Rueden#Primary_projects|primary priorities]]; see [[#Technical_discussions|Technical discussions]] section below.
 
+=== Kyle Harrington ===
+
+* Participated in technical discussions, especially those focused on the next generation ThreeDViewer
+* Finished integrating imagej-ops usage into Funimage (see [https://github.com/funimage/funimage/pull/26 Funimage#26])
+* Unifying Mesh data structure from ops with [https://github.com/imagej/imagej-mesh imagej-mesh] file loading with {{Person|rimadoma}}
+* More [[ThreeDViewer]] enhancements 
+
 == Technical discussions ==
 
 === Programmers Anonymous ===
@@ -128,7 +135,23 @@ Coming soon.
 
 === 3D viewers in ImageJ and Fiji ===
 * We discussed how best to proceed with the [[ThreeDViewer]], [[BigDataViewer]] et. al.
-* More details coming soon here.
+** All agree to be very grumpy if the discussion ever degrades back to a laundry list of desired features (before we actually finish the first iteration of the code)
+** {{Person|Kharrington}}  will continue efforts to consolidate [[ThreeDViewer]] and [[BigDataViewer]] into a unified viewer
+** {{Person|tibuch}} and {{Person|Dietzc}} will continue to develop UI components for BDV and KNIME using SciJava for use in the unified viewer
+** {{Person|Kharrington}}, {{Person|tibuch}}, and {{Person|Dietzc}} will reconvene in the Spring for component integration
+** {{Person|Pietzsch}} will continue to work his BDV magic
+* Roughly the idea is (we previously discussed this at the 2016 summer Konsanz hackathon):
+** 4 viewer panels (number of panels is convenience not hard coded): X-Y, Y-Z, X-Z, and 3D. Viewer panels have sliders for time and other dimensions
+** Control panel with selection of attributes that can be synced between viewer panels, but can also be used for independent control of viewer panels
+** BDV provides orthogonal views
+** Viewer panels have overlays: minimaps, intensity, etc.
+** ROI overlays can also be provided 
+** Panels are just JPanels
+** {{Person|Pietzsch}} says most of the backend has already been developed in BDV
+** [[ThreeDViewer]] should reuse more of [[BigDataViewer]]'s UI components
+** GUI tools/widgets will go into scijava-ui-swing
+** {{Person|skalarproduktraum}} will continue to develop Scenery for the core 3D rendering functionality
+
 
 [[Category:News]]
 [[Category:Fiji]]
