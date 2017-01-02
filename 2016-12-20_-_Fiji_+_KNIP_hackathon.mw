@@ -116,7 +116,12 @@ Coming soon.
 * Participated in technical discussions, especially those focused on the next generation ThreeDViewer
 * Finished integrating imagej-ops usage into Funimage (see [https://github.com/funimage/funimage/pull/26 Funimage#26])
 * Unifying Mesh data structure from ops with [https://github.com/imagej/imagej-mesh imagej-mesh] file loading with {{Person|rimadoma}}
-* More [[ThreeDViewer]] enhancements 
+* More [[ThreeDViewer]] enhancements
+
+=== Robert Haase ===
+* Participated in discussions about [[Fiji]] release cycle and [[ImageJ Ops]] based feature extraction
+* Bugfixed a tool for visualising Meshes in the good old [[3D Viewer]] which were derived from ArrayList<RandomAccessibleInterval<BoolType>>s as an intermediate solution until the [[ThreeDViewer]] is ready.
+* Built an ImageJ-Ops based particle analyser, which will in the future allow processing 3D images in a way like 2D images were processed using the good old [[Particle Analysis]] tool
 
 == Technical discussions ==
 
