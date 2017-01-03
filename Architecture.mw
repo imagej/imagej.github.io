@@ -139,21 +139,21 @@ digraph libs {
 }
 </graphviz>
 
-The [[SciJava]] software stack is composed of the following core libraries:
+The ImageJ software stack is composed of the following core libraries:
 
-* [[SciJava Common]] - The SciJava application container and plugin framework.
+* [[SciJava Common]] - The [[SciJava]] application container and plugin framework.
 * [[ImgLib2]] - The N-dimensional image data model.
 * [[ImageJ Common]] - Metadata-rich image data structures and SciJava extensions.
 * [[ImageJ Ops]] - The framework for reusable image processing operations.
 * [[SCIFIO]] - The framework for N-dimensional image I/O.
 
-These libraries form the basis of SciJava-based software.
+These libraries form the basis of ImageJ-based software.
 
 The dependency hierarchy of library artifacts is shown in the diagram to the right.
 
 === Modularity ===
 
-Much effort has been expended to ensure the design of these libraries provides a good [[wikipedia:Separation of concerns|separation of concerns]]. Developers in need of specific functionality may choose to depend on only those components which are relevant, rather than needing to add a dependency to the entire SciJava software stack.
+Much effort has been expended to ensure the design of these libraries provides a good [[wikipedia:Separation of concerns|separation of concerns]]. Developers in need of specific functionality may choose to depend on only those components which are relevant, rather than needing to add a dependency to the entire ImageJ software stack.
 
 Along those lines, the libraries take great pains to be '''UI agnostic''', with no dependencies on packages such as <code>java.awt</code> or <code>javax.swing</code>. The idea is that it should be possible to build a [[wikipedia:Graphical user interface|user interface]] (UI) on top of these libraries, without needing to change the library code itself. We have developed several proof-of-concept UIs for ImageJ using different UI frameworks, including [https://github.com/imagej/imagej-ui-swing Swing], [https://github.com/imagej/imagej-ui-awt AWT], [https://github.com/imagej/imagej-ui-swt Eclipse SWT] and [https://github.com/imagej/imagej-ui-pivot Apache Pivot].
 
