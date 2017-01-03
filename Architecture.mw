@@ -54,7 +54,7 @@ Each component is contained in its own [[Git]] repository, so that interested de
 
 With [[Maven]] it is possible to create a [http://maven.apache.org/guides/mini/guide-multiple-modules.html multi-module reactor] that unifies several component artifacts into a single build, typically within a single Git repository.
 
-While many components of the SciJava software stack used to be structured this way, we found that lumping multiple components into a single Git repository with a multi-module build has disadvantages compared to separate Git repositories with single-module builds:
+While many SciJava components used to be structured this way, we found that lumping multiple components into a single Git repository with a multi-module build has disadvantages compared to separate Git repositories with single-module builds:
 * Typically, components of a multi-module project are all versioned together, but we have opted for individual [[versioning]] of components, for reasons of [[Philosophy#Release_early.2C_release_often|rapid iteration]], [[extensibility]] and [[Architecture#Modularity|modularity]].
 * Individual repositories make it easier for developers to cherry-pick only those components of interest, without building the rest of the code, since dependencies are fetched on demand from remote [[Maven]] repositories.
 * Concerns are better separated, with each component encapsulating its own codebase, issues, pull requests and technical documentation.
