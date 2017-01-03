@@ -1,4 +1,4 @@
-{{Development}}[[ImageJ]], and the [[SciJava]] software stack in general, is developed according to certain biases, which we describe here. This philosophy has evolved over a very long development history, reflecting many lessons learned over a course of decades.
+{{Development}}[[ImageJ]], and the [[SciJava]] component collection in general, is developed according to certain biases, which we describe here. This philosophy has evolved over a very long development history, reflecting many lessons learned over a course of decades.
 
 == Open source ==
 
@@ -10,11 +10,11 @@ ImageJ is funded by taxpayer money, so the project strives to be as transparent 
 
 [[Extensibility]] is [[ImageJ]]'s greatest strength. ImageJ is not just a software application—it is an extensible ''platform'' for the development of image [[:Category:Visualization|visualization]], [[segmentation]], [[:Category:Registration|registration]], and [[:Category:Analysis|analysis]] routines.
 
-Isaac Newton attributed his success to [[wikipedia:Standing on the shoulders of giants|standing on the shoulders of giants]]. The SciJava software stack's powerful [[plugin]] mechanism and [[open source]] software process codify that metaphor into the software itself. Not only are there many different types of plugins, but it is also possible to extend the system with your own new types of plugins. See the [[Extensibility]] page for details.
+Isaac Newton attributed his success to [[wikipedia:Standing on the shoulders of giants|standing on the shoulders of giants]]. The [[Architecture|SciJava component collection]]'s powerful [[plugin]] mechanism and [[open source]] software process codify that metaphor into the software itself. Not only are there many different types of plugins, but it is also possible to extend the system with your own new types of plugins. See the [[Extensibility]] page for details.
 
 == Interoperability ==
 
-One of the central goals of the [[SciJava]] software stack is to extend Java's mantra of "write once, run anywhere" in new directions: [[ImageJ Ops]] for image processing algorithms, and [[SCIFIO]] for scientific image I/O.
+One of the central goals of the [[Architecture|SciJava component collection]] is to extend Java's mantra of "write once, run anywhere" in new directions: [[ImageJ Ops]] for image processing algorithms, and [[SCIFIO]] for scientific image I/O.
 
 [[ImageJ2]] commands work not only in the [[ImageJ]] user interface, but also from many [[:Category:Related Software|other applications]] in the [[SciJava|SciJava ecosystem]], including [[CellProfiler]], [[OMERO]], [[KNIME]] and [[Alida]].
 
