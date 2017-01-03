@@ -27,7 +27,7 @@ rect 1 1 261 291 [https://github.com/scijava]
 
 There are four organizations on [https://github.com/ GitHub] which form the backbone of the [[SciJava]] ecosystem:
 
-* [https://github.com/scijava scijava] - for [[SciJava]] components: general-purpose, non-image-specific libraries.
+* [https://github.com/scijava scijava] - for [[SciJava]] core components: general-purpose, non-image-specific libraries.
 * [https://github.com/imglib imglib] - for [[ImgLib2]] components: flexible N-dimensional image processing.
 * [https://github.com/imagej imagej] - for [[ImageJ]] components: metadata-rich image library and application.
 * [https://github.com/scifio scifio] - for [[SCIFIO]] components: scientific image I/O and file formats.
