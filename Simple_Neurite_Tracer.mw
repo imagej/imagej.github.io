@@ -3,7 +3,7 @@
 | name = Simple Neurite Tracer
 | author = [[User:Mark|Mark Longair]], [[User:Tiago|Tiago Ferreira]] and [https://github.com/fiji/Simple_Neurite_Tracer/graphs/contributors contributors]
 | maintainer = [[User:Tiago|Tiago Ferreira]]
-| latest version = '''3.0.6 November 2016'''
+| latest version = '''3.1.0 January 2017'''
 | source = {{GitHub|org=fiji|repo=Simple_Neurite_Tracer}}
 | status = Stable ([https://github.com/fiji/Simple_Neurite_Tracer/releases Release notes])
 }}
@@ -14,13 +14,13 @@ This plugin is designed to allow easy semi-automatic tracing of neurons or other
 
 [[Image:SimpleNeuriteTracer2.png|thumb|center|700px|Simple Neurite Tracer: This image shows traced neurons in an adult <i>Drosophila</i> brain.  Neurites were reconstructed using the Simple Neurite Tracer.  The neuropil regions were segmented in the [[Segmentation Editor]] and added to the viewer with [[Show Color Surfaces]].]]
 
-{{Tip | tip = You need a [[#Installation|Java 8-enabled installation]] to run the latest version of Simple Neurite Tracer. If you are not familiar with the plugin, have a look at its [[Simple Neurite Tracer: Introductory Screencast|Introductory Screencast]].}}
+{{Tip | tip = You need a [[#Installation|Java 8-enabled installation]] to run the latest version of Simple Neurite Tracer. If you are not familiar with the plugin, have a look at its [[Simple Neurite Tracer: Introductory Screencast|Introductory Screencast]] and [[#Tutorials|Tutorials]].}}
 
 == Installation ==
-Simple Neurite Tracer is part of Fiji and distributed through the Java 8 [[How_to_follow_a_3rd_party_update_site#Add_update_sites | update site]]. If you are not running a Java 8 -enabled installation you should [[Downloads|download the latest Fiji release]]. Newer releases come pre-bundled with Java 8, and are already subscribed to the [[User:Java-8|Java-8 update site]]. Once installed you should run {{bc | Help | Update Fiji}} to make sure that you have the most recent version.  You can find the plugin in {{bc | Plugins | Segmentation | Simple Neurite Tracer}} (or by bringing up the [[Using the Command Launcher|Command Finder]] and typing {{key press|NEURITE  TRACER}}.
+Simple Neurite Tracer is part of Fiji and distributed through the Java 8 [[How_to_follow_a_3rd_party_update_site#Add_update_sites | update site]]. If you are not running a Java 8 -enabled installation you should [[Downloads|download the latest Fiji release]]. Newer releases come pre-bundled with Java 8, and are already subscribed to the [[User:Java-8|Java-8 update site]]. Once installed you should run {{bc | Help | Update Fiji}} to make sure that you have the most recent version.  You can find the plugin in {{bc | Plugins | Segmentation | Simple Neurite Tracer}} (or by bringing up the [[Using the Command Launcher|Command Finder]] and typing {{key press|NEURITE  TRACER}} ).
 
 == Feedback ==
-Please report any bugs that you find in the [http://forum.imagej.net forum] or on [https://github.com/fiji/Simple_Neurite_Tracer/issues GitHub]. There are other ways of giving feedback (e.g. the mailing lists, IRC, etc.) listed at [[Help]]. A public list of the requested features, can be found on the [[Simple Neurite Tracer: Wishlist]]. Other requests have also been made on [https://github.com/fiji/Simple_Neurite_Tracer/issues GitHub].
+Please report any bugs that you find in the [http://forum.imagej.net forum] or on [https://github.com/fiji/Simple_Neurite_Tracer/issues GitHub]. There are other ways of giving feedback (e.g. the mailing lists, IRC, etc.) listed at [[Help]]. A public list of the requested features, can be found on [[Simple Neurite Tracer: Wishlist| Wishlist]]. Other requests have also been made on [https://github.com/fiji/Simple_Neurite_Tracer/issues GitHub].
 
 == Citing Simple Neurite Tracer ==
 To reference Simple Neurite Tracer in a publication:
