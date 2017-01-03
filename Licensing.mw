@@ -50,7 +50,7 @@ Since each project consists of many components, some may be licensed differently
 | class="yesno" | {{No}}
 | class="yesno" | {{Yes}}
 |-
-! colspan=15 | [[SciJava|ImageJ software stack]]
+! colspan=15 | [[Architecture|ImageJ software stack]]
 |-
 | [[File:scijava-icon.png|48px]]
 | '''[[SciJava]]'''
