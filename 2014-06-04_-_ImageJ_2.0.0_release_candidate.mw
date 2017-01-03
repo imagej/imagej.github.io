@@ -63,7 +63,7 @@ Identical to thusly parameterized scripts, it is now also possible to declare in
 
 == More than just an application ==
 
-ImageJ2 breaks the "one developer, one machine, one task" paradigm: it is also a modular collection of highly reusable software libraries built on the [[SciJava]] software stack, using a powerful plugin framework to facilitate rapid development and painless user customization.
+ImageJ2 breaks the "one developer, one machine, one task" paradigm: it is also a modular collection of highly reusable software libraries built on [[SciJava]], using a powerful plugin framework to facilitate rapid development and painless user customization.
 
 The following software component libraries form the core of ImageJ2:
 
