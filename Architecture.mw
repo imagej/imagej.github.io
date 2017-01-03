@@ -9,7 +9,7 @@ Throughout this article, and elsewhere on this wiki, we use the following terms:
 * A software '''component''' is a program, such as a [[plugin]], or a [[wikipedia:Library (computing)|library]] of reusable functions. Components are typically designed to work together, and combined to form a [[wikipedia:Application software|software application]] such as [[ImageJ]]. In [[Maven]] terms, a component is a single ''artifact'', typically a [https://en.wikipedia.org/wiki/JAR_(file_format) JAR file].
 * A software '''project''' is a more general term referring to either a single component or a ''collection'' of related components. For example, the phrase "ImageJ project" refers to several components including [[ImageJ Common]], [[ImageJ Ops]], [[ImageJ Legacy]] and the [[ImageJ Updater]].
 * The '''SciJava component collection''' is the set of all components managed by the <code>pom-scijava</code> Bill of Materials. Such '''SciJava components''' reside across several different architectural layers. See "Bill of Materials" below for details.
-* '''SciJava core components''' are SciJava components specific to the SciJava component layer itself. See "Organizational structure" below.
+* '''SciJava core components''' are SciJava components of the SciJava component layer itself. See "Organizational structure" below.
 * The '''ImageJ software stack''' is the set of core components upon which [[ImageJ]] is built. It includes components from the [[SciJava]], [[ImgLib2]], [[ImageJ]] and [[SCIFIO]] foundational layers; see "Organizational structure" and "Core libraries" below for details.
 
 = SciJava project structure =
