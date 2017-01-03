@@ -19,7 +19,7 @@ The most common roles in OSS are:
 
 === SciJava team roles ===
 
-Projects in the [[Architecture|SciJava software stack]] define each component's '''team''' as the group of people who take ''responsibility'' for it. The following roles formalize the ways people are pledged to help:
+Projects in the [[Architecture|SciJava component collection]] define each component's '''team''' as the group of people who take ''responsibility'' for it. The following roles formalize the ways people are pledged to help:
 
 {| class="wikitable nicetable"
 ! Role
