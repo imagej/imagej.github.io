@@ -9,16 +9,20 @@
 | website                = http://scijava.org/
 }}SciJava is a collaboration of projects providing software for scientific computing&mdash;an effort to cooperate and reuse code when feasible.
 
-== The SciJava software stack ==
+== The SciJava component collection ==
 
-The following components are part of the '''[[Architecture|SciJava software stack]]''':
-* [[SciJava Common]] - core shared library, with a powerful plugin framework and application container.
-* [[ImgLib2]] - core library for N-dimensional image processing.
-* [[SCIFIO]] - core library for N-dimensional image I/O.
-* [[ImageJ2]] - library and application for N-dimensional image processing.
-* [[Fiji]] - extension of [[ImageJ]] for life sciences research.
-* [[BigDataViewer]]
-* [[TrakEM2]]
+The following component layers are part of the '''[[Architecture|SciJava component collection]]''':
+
+* '''SciJava''' - foundational layer unspecific to image processing, including the [[SciJava Common]] shared library with powerful plugin framework and application container, and plugins built on it.
+* [[ImgLib2]] - core libraries for N-dimensional image processing.
+* [[SCIFIO]] - core libraries for N-dimensional image I/O.
+* [[ImageJ2]] - core libraries and application for N-dimensional image processing.
+* [[Fiji]] - "batteries-included" distribution of ImageJ, bundling a lot of plugins which facilitate scientific image analysis.
+* [[BigDataViewer]] - re-slicing browser and Fiji plugin for terabyte-sized multi-view image sequences
+* [[TrakEM2]] - Fiji plugin suite for morphological data mining, three-dimensional modeling and image stitching, registration, editing and annotation.
+* [[Bio-Formats]] - libraries and ImageJ plugins for life sciences image format I/O.
+
+All components in this collection are managed by SciJava's [[Bill of Materials]] to make it easier for downstream components to use them without version conflicts.
 
 == The SciJava pledge ==
 
