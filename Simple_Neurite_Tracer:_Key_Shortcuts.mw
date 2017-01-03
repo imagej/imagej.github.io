@@ -10,11 +10,10 @@
 * {{key|G}} - Select the path nearest to the mouse pointer. ''Mnemonic: <u>G</u>roup paths around pointer.''
 
 
-* {{key|S}} -Toggle cursor <u>S</u>napping: If enabled, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window<sup>1</sup>.
+* {{key|S}} -Toggle cursor <u>S</u>napping: If enabled, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window<sup>1</sup>. This facilitates accurate [[Simple_Neurite_Tracer:_Accurate_point_placement|positioning of path points]] and it is described in more detail in this [https://github.com/fiji/Simple_Neurite_Tracer/issues/1 issue].
 * {{key|Shift}} - Synchronizes XY, ZY and XZ views while moving the cursor when not using cursor snapping.
 * {{key|M}} - Finds the brightest voxel (<u>M</u>aximum) above and below the current x,y position and automatically clicks on it<sup>1</sup>.
 * {{key|Control|Shift}}-click ({{key|Alt|Shift}}-click on MacOS) - Selects a point along the active path to be used as branching / ending point (See [[Simple_Neurite_Tracer:_Step-By-Step_Instructions#Branching:_Start_a_path_on_an_existing_path|step-by-step instructions]] for more details on joining and branching.)
-<div class="floatright"><sup>1</sup> If multiple maxima exist, their average positioning is used.</div>
 
 
 * {{key|+}} - Zoom in (Simultaneously on all views).
@@ -25,3 +24,6 @@
 There are more complex key and mouse combinations used in:
 * [[Simple Neurite Tracer: Sholl analysis]]
 * [[Simple_Neurite_Tracer:_Step-By-Step_Instructions#Branching:_Start_a_path_on_an_existing_path|Branching and joining paths]]
+
+
+<sup>1</sup> If multiple maxima exist, their average positioning is used. Note that this feature assumes that neurites are brighter than background.
