@@ -49,7 +49,7 @@ For further details, see the [[SCIFIO]] page.
 
 === ImageJ2 is more than just an application ===
 
-ImageJ2 is also a collection of reusable software libraries built on the [[SciJava]], using a powerful plugin framework to facilitate rapid development and painless user customization.
+ImageJ2 is also a collection of reusable software libraries built on [[SciJava]], using a powerful plugin framework to facilitate rapid development and painless user customization.
 
 The following software component libraries form the core of ImageJ2:
 * [[ImageJ Common]] - The core image data model, using ImgLib2.
