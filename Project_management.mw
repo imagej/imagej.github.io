@@ -148,7 +148,7 @@ Issues and milestones are public-facing entities, yet their content can be highl
 |-
 | rowspan=4 | '''Users<br>want...'''
 | to know what's already been reported
-| Browse and search [https://github.com/issues?q=is%3Aopen+no%3Amilestone+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci all open SciJava software stack issues].
+| Browse and search [https://github.com/issues?q=is%3Aopen+no%3Amilestone+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci all open issues].
 |-
 | to keep track of issues of interest
 | Subscribe to desired issues using [https://guides.github.com/features/issues/#notifications notifications].
