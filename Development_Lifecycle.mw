@@ -84,7 +84,7 @@ Once a feature or fix is complete it can move to the <code>master</code> branch 
 ''Note:'' This step can only be performed by a [[Governance|project maintainer]].
 
 Once the <code>master</code> branch of a component has your desired new functionality, the next step is to cut a ''release'' version of the component. Normally, the Maven version (in the [https://maven.apache.org/pom.html#Introduction pom.xml]) on master is a ''SNAPSHOT'' version, meaning it is [[Reproducible builds|unstable]] and not yet released. However, a [[Reproducible_builds|stable]] ''release'' artifact can be deployed to the ImageJ Maven repository in one of three methods, described below.  As a rule of thumb, SciJava developers currently use:
-* The '''[[#Method 1: Release-Version Jenkins job|Release-Version Jenkins job]]''' to release core SciJava software stack components—including SciJava, ImgLib2, SCIFIO and ImageJ.
+* The '''[[#Method 1: Release-Version Jenkins job|Release-Version Jenkins job]]''' to release components of the [[Architecture|ImageJ software stack]] (SciJava, ImgLib2, SCIFIO and ImageJ).
 * The '''[[#Method 2: release-version.sh|release-version.sh script]]''' to release most [[Fiji]] components.
 * The '''[[#Method 3: Double push to master|Double push to master]]''' approach to release other [[Fiji]] components.
 
