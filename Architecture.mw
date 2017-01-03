@@ -1,6 +1,7 @@
 {{Notice | This page describes the ''technical'' structure of [[SciJava]] and [[ImageJ]] projects.
 * For information on the ''social'' structure, see [[Governance]].
-* For information on the ''legal'' structure, see [[Licensing]].}}{{Development}}This page describes the technical structure of [[SciJava]] and [[ImageJ]] projects. For maximum enjoyment, we suggest readers familiarize themselves with [[Maven]], [[Git]] and [[GitHub]] before reading the sections here.
+* For information on the ''legal'' structure, see [[Licensing]].}}{{Development}}
+This page describes the technical structure of [[SciJava]] and [[ImageJ]] projects. For maximum enjoyment, we suggest readers familiarize themselves with [[Maven]], [[Git]] and [[GitHub]] before reading the sections here.
 
 = Definitions =
 
