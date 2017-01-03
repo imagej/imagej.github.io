@@ -229,7 +229,7 @@ Either way, '''''be sure to work on a topic branch while developing code in this
 
 = Versioning =
 
-The SciJava software stack uses the [[Semantic Versioning]] system. This scheme communicates information about the [[backwards compatibility]] (or lack thereof) between versions of each individual software component. In a nutshell:
+SciJava components use the [[Semantic Versioning]] system. This scheme communicates information about the [[backwards compatibility]] (or lack thereof) between versions of each individual software component. In a nutshell:
 
 <blockquote>Given a version number MAJOR.MINOR.PATCH, increment the:
 * MAJOR version when you make incompatible API changes,
