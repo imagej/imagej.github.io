@@ -179,8 +179,7 @@ Arguably '''the most important thing''' in science is to gain insights about nat
 To verify results, it is absolutely necessary to be able to reproduce results claimed in scientific articles, and in the interest of efficiency, it should be '''easy''' to reproduce the results, and it should '''also''' be easy to scrutinize the used methods—incorrect results can be artifacts of flawed algorithms, after all.
 
 To that end, it should be obvious that researchers '''need''' to have the ability to inspect the exact source code corresponding to the software used to generate the results to be verified. In other words, reproducible builds are required for sound scientific research.
-}}=== What is a reproducible build? ===
-
+}}
 A software ''version'' (or ''build'') is called '''reproducible''' if it is easy to regenerate the exact same software application from the source code.
 
 For example, you can refer to "ImageJ 1.49g" as a ''reproducible build'', or to ''Sholl Analysis 3.4.3'', while referring to "ImageJ" is irreproducible.
