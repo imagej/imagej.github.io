@@ -17,7 +17,7 @@ Over the past many months, we have been incrementally working toward support for
 
 More work is still needed to make the [[ImageJ Updater]] always prefer talking to update sites via HTTPS rather than HTTP; see [http://forum.imagej.net/t/https-to-make-imagej-fiji-more-secure/398 the relevant forum thread] for further details.
 
-This work will make ImageJ and Fiji more secure, preventing potential man-in-the-middle attacks and arbitrary code injection from malicious forces bent on destroying scientific progress.
+This work will make ImageJ and Fiji more secure, preventing potential man-in-the-middle attacks and arbitrary code injection.
 
 [[Category:ImageJ2]]
 [[Category:News]]
