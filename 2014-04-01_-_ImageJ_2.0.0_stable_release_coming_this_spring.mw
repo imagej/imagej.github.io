@@ -10,7 +10,7 @@ We are targeting the following goals for a June 1 release of ImageJ 2.0.0:
 # A well-vetted release of the burgeoning [[ImageJ Ops]] project for easy development of reusable image processing algorithms.
 # Stable release of the {{GitHub|org=imagej|repo=imagej-omero|label=ImageJ-OMERO}} interoperability library, including support for calling many ImageJ 1.x plugins from [http://openmicroscopy.org/info/omero OMERO].
 # A final logo for ImageJ 2.0.0, chosen by a community logo competition.
-# Manuscript drafts for several software components of the [[SciJava]] software stack.
+# Manuscript drafts for several software components of the [[Architecture|ImageJ software stack]].
 # Cleanup and reconciliation of the [http://trac.imagej.net/ Trac] and [https://github.com/imagej/imagej/issues GitHub] ImageJ issue trackers.
 
 If you have questions or ideas relating to any of these goals, we welcome your feedback on the [[Mailing Lists]]!
