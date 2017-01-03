@@ -121,7 +121,7 @@ All components in these organizations use [[Maven]] for [[Project Management|pro
 
 == Bill of Materials ==
 
-The <code>pom-scijava</code> parent includes a [http://howtodoinjava.com/maven/maven-bom-bill-of-materials-dependency/ Bill of Materials] (BOM) which declares compatible versions of all components of the SciJava "managed universe" in its [http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Management dependencyManagement section]. These versions are intended to be used together in downstream projects, preventing version skew (symptoms of which include <code>ClassNotFoundException</code> and <code>NoSuchMethodError</code>, as well as erroneous behavior in general). This BOM is especially important while some components are still in beta, since they may sometimes break [[backwards compatibility]].
+The <code>pom-scijava</code> parent includes a [http://howtodoinjava.com/maven/maven-bom-bill-of-materials-dependency/ Bill of Materials] (BOM) which declares compatible versions of all components of the '''SciJava component collection''' in its [http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Management dependencyManagement section]. These versions are intended to be used together in downstream projects, preventing version skew (symptoms of which include <code>ClassNotFoundException</code> and <code>NoSuchMethodError</code>, as well as erroneous behavior in general). This BOM is especially important while some components are still in beta, since they may sometimes break [[backwards compatibility]].
 
 == Core libraries ==
 
