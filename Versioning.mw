@@ -1,4 +1,4 @@
-{{Development | tutorials}}The SciJava software stack uses the [http://semver.org/ Semantic Versioning] (SemVer) system. This scheme communicates information about the [[backwards compatibility]] (or lack thereof) between versions of each individual software component.
+{{Development | tutorials}}[[SciJava]] components use the [http://semver.org/ Semantic Versioning] (SemVer) system. This scheme communicates information about the [[backwards compatibility]] (or lack thereof) between versions of each individual software component.
 {{Clear|left}}
 == Summary ==
 
@@ -65,7 +65,7 @@ Furthermore, SciJava projects typically accompany interfaces with a correspondin
 
 Because there are limitations in what SemVer can be used to reason about, applications may also wish to provide a "melting pot" for a high-level assessment of compatibility.
 
-The SciJava software stack uses a [https://github.com/scijava/scijava-scripts/blob/d892adc0092c220ee1e597b9fb5a1fb067e4509b/melting-pot.sh melting pot script] to test components from its lowest-level libraries ([[SciJava Common]], [[ImgLib2]]) to its topmost applications ([[ImageJ]] and [[Fiji]]).
+The [[Architecture|SciJava component collection]] uses a [https://github.com/scijava/scijava-scripts/blob/d892adc0092c220ee1e597b9fb5a1fb067e4509b/melting-pot.sh melting pot script] to test components from its lowest-level libraries (e.g., [[SciJava Common]] and [[ImgLib2]]) to its topmost applications (e.g., [[ImageJ]] and [[Fiji]]).
 
 == Is SemVer transitive? ==
 
