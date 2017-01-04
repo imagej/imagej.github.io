@@ -220,7 +220,7 @@ call("trainableSegmentation.Weka_Segmentation.addTrace", "0", "1");
 <source lang="java">
 call("trainableSegmentation.Weka_Segmentation.toggleOverlay");
 </source>
-* Create binary result:
+* Get the result label image:
 <source lang="java">
 call("trainableSegmentation.Weka_Segmentation.getResult");
 </source>
