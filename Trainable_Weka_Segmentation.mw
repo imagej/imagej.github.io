@@ -111,7 +111,7 @@ If the input image is grayscale, the features will be calculated using double pr
 
 The different available 2D image features are:
 * '''Gaussian blur''': performs <math>n</math> individual convolutions with Gaussian kernels with the normal <math>n</math> variations of <math>\sigma</math>. The larger the radius the more blurred the image becomes until the pixels are homogeneous.
-* '''Sobel filter''': calculates the [[wikipedia:Sobel filter|gradient at each pixel]]. [[wikipedia:Gaussian blur|Gaussian blurs]] with <math>\sigma</math> varying as usual are performed prior to the filter.
+* '''Sobel filter''': calculates an [[wikipedia:Sobel filter|approximation of the gradient of the image intensity]] at each pixel. [[wikipedia:Gaussian blur|Gaussian blurs]] with <math>\sigma</math> varying as usual are performed prior to the filter.
 * '''Hessian''': Calculates a [[wikipedia:Hessian matrix|Hessian matrix]] <math>H</math> at each pixel. Prior to the application of any filters, a [[wikipedia:Gaussian blur|Gaussian blur]] with varying <math>\sigma</math> is performed. The final features used for pixel classification, given the Hessian matrix <math>\left(\begin{array}{cc}
 a & b\\
 c & d\end{array}\right)</math> are calculated thus:
