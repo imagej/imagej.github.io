@@ -84,7 +84,7 @@
 
 === {{Logo | OME | size=32px}}[[OME]] ===
 * {{Person|Moore}}<sup>10,11</sup> (co-lead)
-* Jean-Marie Burel<sup>11</sup> (co-lead)
+* {{Person|jburel}}<sup>11</sup> (co-lead)
 * Chris Allan<sup>10</sup> (co-lead)
 * See also [http://openmicroscopy.org/site/about/who-ome OME Teams]
 </div>
@@ -92,6 +92,7 @@
 {{Clear}}
 
 <div style="float: left">
+
 === Plugin maintainers ===
 The specific plugin maintainers can be found at the [[Maintainer_page| maintainer page]], although the list is out of date right now.
 
