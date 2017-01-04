@@ -246,16 +246,16 @@ call("trainableSegmentation.Weka_Segmentation.applyClassifier",
 call("trainableSegmentation.Weka_Segmentation.loadClassifier",
  "/home/iarganda/classifier.model");
 </source>
-* Save classifier into a file:
+* • Save the current classifier into a file:
 <source lang="java">
 call("trainableSegmentation.Weka_Segmentation.saveClassifier",
  "/home/iarganda/classifier.model");
 </source>
-* Load data from an ARFF file:
+* • Load previously saved trace data from an ARFF file:
 <source lang="java">
 call("trainableSegmentation.Weka_Segmentation.loadData", "/home/iarganda/data.arff");
 </source>
-* Save current data into a file:
+* • Save current trace data (feature vectors of traces and classes) into a file:
 <source lang="java">
 call("trainableSegmentation.Weka_Segmentation.saveData", "/home/iarganda/data.arff");
 </source>
