@@ -159,7 +159,7 @@ The detailed implementation of these 2D filters can be found in the [https://git
 * '''Structure''': calculates for all elements in the input image, the eigenvalues (smallest and largest) of the so-called structure tensor using [[FeatureJ]] (it requires enabling the [[ImageScience]] update site in the updater). It uses smoothing scale <math>\sigma</math> and integration scales 1 and 3.
 *'''Edges''': detects edges using Canny edge detection, which involves computation of the gradient magnitude, suppression of locally non-maximum gradient magnitudes, and (hysteresis) thresholding. Again, this feature uses [[FeatureJ]] so it requires enabling the [[ImageScience]] update site in the updater. It uses smoothing scale <math>\sigma</math>.
 *'''Difference of Gaussian''': calculates two [[wikipedia:Gaussian blur|Gaussian blur]] images from the original image and subtracts one from the other. <math>\sigma</math> values are varied as usual, so <math>\frac{n(n-1)}{2}</math> feature images are added to the stack.
-* '''Minimum, Maximum, Mean, Variance, Median''': the voxels within a radius of <math>\sigma</math> voxels from the target pixel are subjected to the pertinent operation (mean/min etc.) and the target pixel is set to that value.
+* '''Minimum, Maximum, Mean, Variance, Median''': the voxels within a radius of <math>\sigma</math> voxels from the target pixel are subjected to the pertinent operation (mean/min etc.) and the target voxel is set to that value.
 
 ===== Feature options =====
 
