@@ -228,7 +228,7 @@ call("trainableSegmentation.Weka_Segmentation.getResult");
 <source lang="java">
 call("trainableSegmentation.Weka_Segmentation.getProbability");
 </source>
-* Plot the threshold curves:
+* Plot the model performance curves:
 <source lang="java">
 call("trainableSegmentation.Weka_Segmentation.plotResultGraphs");
 </source>
