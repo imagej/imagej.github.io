@@ -142,7 +142,7 @@ c & d\end{array}\right)</math> are calculated thus:
 * '''Laplacian filter''': computes the Laplacian of the input image using [[FeatureJ]] (it requires enabling the [[ImageScience]] update site in the updater). It uses smoothing scale <math>\sigma</math>.
 * '''Structure filter''': calculates for all elements in the input image, the eigenvalues (smallest and largest) of the so-called structure tensor using [[FeatureJ]] (it requires enabling the [[ImageScience]] update site in the updater). It uses smoothing scale <math>\sigma</math> and integration scales 1 and 3.
 * '''Entropy''': draws a circle of radius <math>r</math> around each pixel; gets the histogram of that circle split in numBins chunks; then calculates the entropy as <math>\sum_{p~\mathrm{in}~\mathrm{histogram}} -p*\mathrm{log}_2(p)</math>, where <math>p</math> is the probability of each chunk in the histogram. numBins is equal to <math>32, 64, 128, 256</math>. <math>r</math> is equal to <math>\sigma</math>.
-* '''Neighbors''': Shifts the image in 8 directions by an certain number of pixel, <math>\sigma</math>. Therefore creates <math>8n</math> feature images.
+* '''Neighbors''': shifts the image in 8 directions by an certain number of pixel, <math>\sigma</math>. Therefore creates <math>8n</math> feature images.
 
 When using grayscale images, the input image will be also included as a feature. In the case of color (RGB) images, the '''Hue, Saturation and Brightness''' will be as well part of the features.
 
