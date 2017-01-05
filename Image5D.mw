@@ -10,6 +10,8 @@
 | category               = [[:Category:Visualization|Visualization]]
 }}This page supersedes the [http://imagej.net/plugins/image5d.html original Image5D page] from the ImageJ 1.x documentation.
 
+{{Notice|Please consider using the built-in [http://imagej.net/docs/guide/146-8.html hyperstacks] functionality in ImageJ, since it is newer and more well-integrated than this old Image5D plugin.}}
+
 == Installation ==
 
 Image5D is distributed as part of [[Fiji]], so no installation is necessary beyond that. If you do not wish to [[Update Sites|enable the Fiji update site]], you can download the Image5D JAR file to the plugins folder, restart ImageJ, and there will be new commands (''New Image5D'', ''Open Image5D'', etc.) in the ''Plugins/Image5D'' submenu. Image5D requires ImageJ 1.37b or later.
