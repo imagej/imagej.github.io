@@ -36,7 +36,6 @@ This is why [https://docs.oracle.com/middleware/1212/core/MAVEN/maven_version.ht
 To provide users with an updated version of an artifact (phases 3 and 4) the version is changed to a unique, non-SNAPSHOT, version for a single Git commit. Then the next commit returns to SNAPSHOT versioning for further development. Thus the cycle repeats.
 
 = Phases in-depth =
-
 {{Box | float=right | title=When to use a topic branch? | text = [[Architecture|Core SciJava components]] employ a "release ready master branch" approach:
 * The tip of the master branch is always stable enough to be released, "as good or better" than the state of its last release.
 * Each commit on the master branch should compile with passing tests. This has several advantages—e.g., better [https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git#Binary-Search bisect-style debugging].
@@ -62,7 +61,6 @@ Conversely, some situations to push directly to master:
 
 Lastly, keep in mind that SciJava favors the [[RERO|release early, release often]] style of development, to maximize iterations of community feedback. Just because a change makes it to the master branch, does not mean it is set in stone: if a problem is later found, the change can be amended or reverted as quickly as it was added—easy come, easy go.
 }}
-
 == Phase 1: In development ==
 
 Repositories on GitHub are referred to as '''remotes'''; when you ''[https://help.github.com/articles/cloning-a-repository/ clone]'', or ''check out'', a remote you get a local copy of the repository. Development progresses by making changes to your local copy and pushing them back to the remote. GitHub provides tools for controlling [https://help.github.com/articles/permission-levels-for-a-user-account-repository/ user permission levels] for each remote repository, therefore how you develop a project depends on whether you are able to ''push'' (write) to that project's remote repository or not.
