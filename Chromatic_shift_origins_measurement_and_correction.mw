@@ -40,7 +40,7 @@ For fluorescence images from optical microscopes, frrom a colocalization perspec
 
 *At a higher level there may also be a magnification difference between the different colour channels. 
 **Further, On multi camera systems, like OMX or some HCS system there WILL be a rotation angle difference between the channel images. 
-**TransformJ Affine [http://www.imagescience.org/meijering/software/transformj/affine.html plugin]  might do the job,  which can also expand or shrink the image to accommodate different magnification and rotation. 
+**The [https://imagescience.org/meijering/software/transformj/affine/ TransformJ Affine plugin]  might do the job,  which can also expand or shrink the image to accommodate different magnification as well as shift and rotation. 
 
 *Even worse could be a non linear warp of the image that is different per channel. 
 ** Eg using a fancy beam splitter, dual view, W-view etc. gadget for dual camera imaging. 
