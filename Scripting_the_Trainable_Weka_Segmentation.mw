@@ -2,7 +2,7 @@
 
 = Getting started =
 
-The first thing you need to start scripting the Trainable Segmentation is to know which methods you can use. For that, please have a look at the '''[http://javadoc.imagej.net/Fiji/trainableSegmentation/package-tree.html API] of the Trainable Segmentation''' library, which is available [http://fiji.sc/javadoc/trainableSegmentation/package-tree.html here].
+The first thing you need to start scripting the Trainable Segmentation is to know which methods you can use. For that, please have a look at the '''[http://javadoc.imagej.net/Fiji/trainableSegmentation/package-tree.html API] of the Trainable Segmentation''' library, which is available [http://javadoc.imagej.net/Fiji/trainableSegmentation/package-tree.html here].
 
 Let's go through the basic commands with examples written in '''Beanshell''':
 
