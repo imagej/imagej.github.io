@@ -27,7 +27,12 @@ For fluorescence images from optical microscopes, frrom a colocalization perspec
 **see the 2 slides titled 
 "Check with multi-colour beads" at [https://www.biodip.de/w/images/f/fa/QuantitativeColocAnalysis-10-2011.pdf Colocalization analysis course notes]
 
-*Now we can use Erik M's TransformJ Translate plugin in Fiji/ImageJ to do a sub pixel resolution shift for for each channel, as we have measured those shifts [https://imagescience.org/meijering/software/transformj/translate/ TransformJ Translate]
+*How to measure the colour channel shidt systematic error?
+** [http://www.knoplab.de/psfj/overview/ psfJ] from Knop lab can make the measurement.
+** Use imageJ to do gaussian fits of the bead images and find the shidsts in x y and z.
+
+*Now we can use software to fix this systematic error by shifting one image colour channel relative to the other. 
+**Erik M's TransformJ Translate plugin in Fiji/ImageJ can do a sub pixel resolution shift for for each channel, as we have measured those shifts [https://imagescience.org/meijering/software/transformj/translate/ TransformJ Translate]
 **Use a nice interpolation method to avoid smashing the information in your images - eg quintic B-spline interpolation
 **Or one could imagine a Fourier based method... (using a phase shift?) The Fiji [Stitching_2D/3D]] plugin contains stuff that might do this but its not exposed in the GUIs... so scripting would be required there?
 
