@@ -27,7 +27,7 @@ For fluorescence images from optical microscopes, frrom a colocalization perspec
 **see the 2 slides titled 
 "Check with multi-colour beads" at [https://www.biodip.de/w/images/f/fa/QuantitativeColocAnalysis-10-2011.pdf Colocalization analysis course notes]
 
-*Now we can use Erik M's TransformJ Translate plugin in Fiji/ImageJ to do a sub pixel resolution shift for for each channel, as we have measured those shifts [http://www.imagescience.org/meijering/software/transformj/translate.html TransformJ Translate]
+*Now we can use Erik M's TransformJ Translate plugin in Fiji/ImageJ to do a sub pixel resolution shift for for each channel, as we have measured those shifts [https://imagescience.org/meijering/software/transformj/translate/ TransformJ Translate]
 **Use a nice interpolation method to avoid smashing the information in your images - eg quintic B-spline interpolation
 **Or one could imagine a Fourier based method... (using a phase shift?) The Fiji [Stitching_2D/3D]] plugin contains stuff that might do this but its not exposed in the GUIs... so scripting would be required there?
 
