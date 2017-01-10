@@ -30,6 +30,8 @@ we could run this script with the command:
 ./ImageJ-linux64 --ij2 --headless --run hello.py 'name="Mr Kraken"'
 </source>
 
+Note that the <code>name</code> parameter must be enclosed in double quotes, since it is a string literal.
+
 == Multiple parameters ==
 
 If your script has more than one parameter:
