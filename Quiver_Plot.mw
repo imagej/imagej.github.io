@@ -1,0 +1,45 @@
+{{Infobox
+| name                   = Quiver Plot
+| software               = plugin
+| author                  = {{Person|llamero}}
+| maintainer             = {{Person|llamero}}
+| source                 = {{GitHub|org=llamero|repo=Quiver_Plot}}
+| released               = January 11<sup>th</sup>, 2017
+| latest version       = January 11<sup>th</sup>, 2017 (v1.0.0)
+| status                 = stable, active
+| category               = [[:Category:Visualization|Visualization]]
+}}
+
+== Introduction ==
+A quiver plot is a 2D array of vector arrows that can be used to visualize dynamic processes such as flow or wave propagation.  Vectors have both magnitude and direction; therefore to generate a vector plot, there needs to be a corresponding 2D array of the direction of each vector, and a 2D array of the magnitude of each vector.
+
+[[File:Intro Quiver Plot Image.jpg|thumb|1000px|center|'''Intro to generating a quiver plot''' From left to right: The original data showing a wave moving through time (blue = start time, red = end time).  Vector analysis was performed on the wave to generate a corresponding array of vector angles and vector speeds for points in space.  (NOTE: The actual pixel values in these images needs to be the angle in degrees, and the magnitude of the vector).  The Quiver Plot plugin was then used to make a quiver plot based off of the angle and speed arrays.]]
+
+== Running the Quiver Plot Plugin ==
+
+The Quiver Plot plugin needs two images, one representing the vector angles (direction) and one representing the vector magnitude.  When you run the plugin, you will see the following window:
+
+[[File:Quiver_Plot_Plugin_GUI.png]]
+
+There are two drop-down menus that list all of the currently open windows.  Of these windows, select the images that correspond to the angle map and magnitude map (i.e. speed, intensity, etc.).  NOTE: pixels with a value of NaN will generate erratic vectors.  Make sure that there are no NaN values with your images before using the plugin.
+
+The third option allows you to set the resolution of plot (i.e. the pixel dimensions of the final plot.).
+
+The plugin will then search for the largest magnitude vector in the magnitude image, and scale all of the vectors relative to the largest vector.  This means that the vector lengths are relative, and therefore the vector lengths between any two plots are not cross-comparable.
+
+== Installing the Quiver Plot Plugin == 
+
+The Quiver Plot plugin is a stand alone plugin that needs to be installed manually.  To install the plugin, use the following steps:
+
+1) Go to the [https://github.com/Llamero/Quiver_Plot Github link] and download the file: Quiver_Plot-1.0.0-SNAPSHOT.jar
+
+2) Copy the file into the Plugins folder for ImageJ/FIJI.
+
+3) Restart ImageJ/FIJI and the plugin will automatically show up in the plugin menu: {{bc | Plugins |Quiver Plot}}.
+
+== License ==
+This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details. 
+
+[[Category:Visualization]]
