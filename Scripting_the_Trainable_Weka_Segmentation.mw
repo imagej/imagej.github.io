@@ -159,6 +159,7 @@ Here is a little Javascript that makes two features from the Clown example and u
 importClass(Packages.ij.IJ);
 importClass(Packages.ij.ImagePlus);
 importClass(Packages.ij.ImageStack);
+importClass(Packages.ij.gui.Roi);
 importClass(Packages.ij.gui.PolygonRoi);
 importClass(Packages.ij.plugin.Duplicator);
 importClass(Packages.ij.process.FloatPolygon);
@@ -214,7 +215,7 @@ wekaSegmentation.setFeatureStackArray(featuresArray);
 // set examples for class 1 (= foreground) and 0 (= background))
 function addExample(classNum, slice, xArray, yArray) {
         var polygon = new FloatPolygon(xArray, yArray);
-        var roi = new PolygonRoi(polygon, PolygonRoi.FREELINE);
+        var roi = new PolygonRoi(polygon, Roi.FREELINE);
         IJ.log("roi: " + roi);
         wekaSegmentation.addExample(classNum, roi, slice);
 }
