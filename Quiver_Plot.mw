@@ -27,6 +27,8 @@ The third option allows you to set the resolution of plot (i.e. the pixel dimens
 
 The plugin will then search for the largest magnitude vector in the magnitude image, and scale all of the vectors relative to the largest vector.  This means that the vector lengths are relative, and therefore the vector lengths between any two plots are not cross-comparable.
 
+This plugin is also recordable within ImageJ, and can be implemented as part of a macro.
+
 == Installing the Quiver Plot Plugin == 
 
 The Quiver Plot plugin is a stand alone plugin that needs to be installed manually.  To install the plugin, use the following steps:
