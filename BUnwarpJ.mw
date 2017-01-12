@@ -295,7 +295,8 @@ Y Trans -----------------------------------
 </source>
 
 == References (Citation) ==
-The algorithm implemented on bUnwarpJ and its technical explanations are detailed on the paper:
+The algorithm implemented on bUnwarpJ and its technical explanations are detailed on a publication. If you use it successfully for your research please be so kind to cite our work:
+
 * I. Arganda-Carreras, C. O. S. Sorzano, R. Marabini, J.-M. Carazo, C. Ortiz-de Solorzano, and J. Kybic, [http://cmp.felk.cvut.cz/ftp/articles/kybic/Arganda-CVAMIA2006.pdf "Consistent and Elastic Registration of Histological Sections using Vector-Spline Regularization,"] Lecture Notes in Computer Science, Springer Berlin / Heidelberg, volume 4241/2006, CVAMIA: Computer Vision Approaches to Medical Image Analysis, pages 85-95, 2006.
 
 The related paper of the previous work ([[UnwarpJ]]) is:
