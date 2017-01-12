@@ -2,6 +2,9 @@
 
 This page details issues specific to using [[ImageJ]] on Linux systems.
 
+= Installation =
+Some flavors of Linux make [[ImageJ 1.x]] available as a package. Do not install ImageJ this way—you will not receive [[ImageJ2]], and you will have problems installing additional plugins. For the time being, it is recommended to [[Fiji/Downloads|download the Linux 64-bit distribution of Fiji]].
+
 = HiDPI displays =
 You can make [[ImageJ 1.x]] scale better on HiDPI displays by installing a Java 9 prerelease. See [http://forum.imagej.net/t/how-to-increase-the-gui-font-size/552 this forum post]. Unfortunately, [[ImageJ2]] and [[Fiji]] do not yet launch using Java 9, due to limitations of the [[ImageJ Launcher]] and [[ImageJ Legacy]] components.
 
