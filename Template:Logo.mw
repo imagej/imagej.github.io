@@ -40,5 +40,10 @@ Optionally, override the icon size (default is 48px):
 <pre>{{Logo | ImageJ | size=96px}}</pre>
 {{Logo | ImageJ | size=96px}}
 
+You can also override the horizontal alignment:
+<pre>{{Logo | ImageJ | size=96px | align=left}}Alpha<br>Beta<br>Gamma</pre>
+<br>{{Logo | ImageJ | size=96px | align=left}}Alpha<br>Beta<br>Gamma
+
+{{Clear|left}}
 See also [[:Category:Logos]].
 </noinclude>
