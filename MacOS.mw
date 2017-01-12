@@ -12,6 +12,30 @@ On some versions of MacOS, this can happen due to MacOS's "App Nap" feature. See
 Another reason ImageJ can become slow is due to bugs in Java 8 on MacOS, especially when many windows are opened and closed over time. Make sure you are using the latest version of Java 8, as well as the latest version of ImageJ.
 
 = Frequently Asked Questions =
-See the [[Frequently Asked Questions]] page.
+See also the [[Frequently Asked Questions]] page.
+
+== How do I run ImageJ with Java 6? ==
+
+''Note: It should no longer be necessary to reinstall Java 6 on macOS. ImageJ should work fine with Java 8.''
+
+Newer versions of macOS come without Java installed. However, users can reinstall Apple's Java 6 on macOS by [http://support.apple.com/kb/DL1572 following these instructions].
+
+Alternately, if you are a developer looking to install the Java 6 Development Kit, you must log in to [https://developer.apple.com/downloads/ Apple Developer downloads] with your Apple ID, search for "java for os x" and download the latest package ("Java for OS X 2013-005 Developer Package" at the time of this writing).
+
+At any time, you can verify which Javas are installed on your system using {{GitHub|org=ctrueden|repo=ctr-scripts|path=java-info|label=this script}}.
+
+Note however that, per [[#On OS X|the limitations]] of <code>--java-home</code>, you will have to jump through some hoops in order to run ImageJ with Java 6 if you also have Java 7 and/or 8 installed.
+
+== How do I run ImageJ on Yosemite? ==
+
+Install the [http://java.com/ Java 8 JRE] or [http://www.oracle.com/technetwork/java/javase/downloads/ Java SE 8].
+
+== How do I run ImageJ on El Capitan? ==
+
+Unfortunately, El Capitan has some new java-related issues. If you upgraded to El Capitan and your Java 8 installation is not being detected properly:
+
+# Try installing the [http://www.oracle.com/technetwork/java/javase/downloads/index.html Java SE JDK].
+# If that does not work, see [https://oliverdowling.com.au/2015/10/09/oracles-jre-8-on-mac-os-x-el-capitan/ this guide] for steps which could get things working again.
+# Alternately, ImageJ still works on El Capitan with Java 6 (see above).
 
 [[Category:Platforms]]
