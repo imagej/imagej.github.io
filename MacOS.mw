@@ -6,7 +6,10 @@ This page details issues specific to using [[ImageJ]] on macOS systems.
 See also the [[Java 8]] page for OS-X-specific issues.
 
 = Troubleshooting =
-See the [[Troubleshooting]] page.
+See also the [[Troubleshooting]] page.
+
+== ImageJ becomes very slow after a while ==
+On some versions of MacOS, this can happen due to MacOS's "App Nap" feature. See [http://osxdaily.com/2014/05/13/disable-app-nap-mac-os-x/ this article] for instructions on how to disable it.
 
 = Frequently Asked Questions =
 See the [[Frequently Asked Questions]] page.
