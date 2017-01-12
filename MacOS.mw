@@ -11,6 +11,8 @@ See also the [[Troubleshooting]] page.
 == ImageJ becomes very slow after a while ==
 On some versions of MacOS, this can happen due to MacOS's "App Nap" feature. See [http://osxdaily.com/2014/05/13/disable-app-nap-mac-os-x/ this article] for instructions on how to disable it.
 
+Another reason ImageJ can become slow is due to bugs in Java 8 on MacOS, especially when many windows are opened and closed over time. Make sure you are using the latest version of Java 8, as well as the latest version of ImageJ.
+
 = Frequently Asked Questions =
 See the [[Frequently Asked Questions]] page.
 
