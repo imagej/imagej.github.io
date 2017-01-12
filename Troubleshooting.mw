@@ -283,7 +283,7 @@ The proper fix is for the maintainers of those update sites to reconcile the ver
 == Why does ImageJ run so slowly? ==
 
 === Java painting bug ===
-On OS X, older versions of Java 8 (prior to 1.8.0_45)—as well as all versions of Java 7 (including 1.7.0_80)—are extremely slow at displaying images. You should either [[Frequently Asked Questions#How_do_I_run_ImageJ_on_Yosemite.3F|upgrade to the latest version of Java 8]], or [[Frequently Asked Questions#How_do_I_set_up_Java_6_on_OS_X.3F|revert to Java 6]].
+See the [[MacOS]] page.
 
 === App Nap ===
-On recent versions of OS X—10.9 "Mavericks" and later—there is an "App Nap" feature which dramatically slows down applications that are not in the foreground. Leave ImageJ in the foreground while it is processing to avoid this issue. (There are also [http://osxdaily.com/2014/05/13/disable-app-nap-mac-os-x/ various] [http://www.cultofmac.com/274396/disable-app-nap-specific-apps-os-x-tips/ ways] to disable App Nap on your machine, but we have not had much success with them. If you find a solution that works, allowing ImageJ to run fast in the background, please [http://forum.imagej.net/ tell us on the forum]!)
+See the [[MacOS]] page.
