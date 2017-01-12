@@ -18,9 +18,9 @@ The [[Fiji]] project also includes the [[BigDataViewer]] (BDV) plugin, which cur
 
 == How do I set up Java 6 on OS X? ==
 
-''Note: It should no longer be necessary to reinstall Java 6 on OS X. ImageJ should work fine with Java 8.''
+''Note: It should no longer be necessary to reinstall Java 6 on macOS. ImageJ should work fine with Java 8.''
 
-Newer versions of OS X come without Java installed. However, users can reinstall Java 6 on OS X by [http://support.apple.com/kb/DL1572 following these instructions].
+Newer versions of macOS come without Java installed. However, users can reinstall Java 6 on macOS by [http://support.apple.com/kb/DL1572 following these instructions].
 
 Alternately, if you are a developer looking to install the Java 6 Development Kit, you must log in to [https://developer.apple.com/downloads/ Apple Developer downloads] with your Apple ID, search for "java for os x" and download the latest package ("Java for OS X 2013-005 Developer Package" at the time of this writing).
 
@@ -57,7 +57,7 @@ Use the <code>--java-home</code> command line option:
 
 Note: the <code>--java-home</code> flag does not support Apple Java installations. Specifying Apple Javas with this flag will give an error message about being unable to find <code>lib/server/libjvm.dylib</code>. However, Fiji will fall back to Apple Java if no other Java installations are available.
 
-In particular, this means that to run Java 6 on the latest OS X versions, you must do '''''ONE''''' of the following:
+In particular, this means that to run Java 6 on the latest macOS versions, you must do '''''ONE''''' of the following:
 * '''''EITHER:''''' Remove all installations of Java 7 and Java 8 ([https://www.java.com/en/download/help/mac_uninstall_java.xml remove the JRE] and [http://docs.oracle.com/javase/7/docs/webnotes/install/mac/mac-jdk.html#uninstall remove all JDKs]).
 * '''''OR:''''' Launch ImageJ explicitly using <code>java</code>. Here is a sample invocation (copy and paste into Terminal):
 <pre>
@@ -459,11 +459,11 @@ See the [[Philosophy#Why_Java.3F|Philosophy]] page!
 
 == With Oracle buying Sun and Apple deprecating Java, does Java have a future? ==
 
-Yes. Java is one of the [http://langpop.com/ most popular programming languages] and still one of the top choices for high-performance, cross-platform applications. Oracle is unlikely to attempt to "kill" Java, but even if they tried they probably couldn't&mdash;OpenJDK is open source and there is a massive community of Java developers behind it. Now that [http://www.apple.com/pr/library/2010/11/12openjdk.html Apple is partnering with Oracle and the OpenJDK community], we are likely to see Java on Mac OS X get better, not worse. Java's popularity will eventually wane, but not because of any company's actions now. Rather, as with any programming language, new technologies will emerge and gain popularity, over a course of many years.
+Yes. Java is one of the [http://langpop.com/ most popular programming languages] and still one of the top choices for high-performance, cross-platform applications. Oracle is unlikely to attempt to "kill" Java, but even if they tried they probably couldn't&mdash;OpenJDK is open source and there is a massive community of Java developers behind it. Now that [http://www.apple.com/pr/library/2010/11/12openjdk.html Apple is partnering with Oracle and the OpenJDK community], we are likely to see Java on macOS get better, not worse. Java's popularity will eventually wane, but not because of any company's actions now. Rather, as with any programming language, new technologies will emerge and gain popularity, over a course of many years.
 
 == Why does ImageJ still target Java 6? ==
 
-As of June 2014, around 19% of Mac OS X systems still run version 10.6 Snow Leopard or older [[http://www.netmarketshare.com/ 1]]. (In December 2013, it was around 25%.) Unfortunately, Apple and the OpenJDK developer community decided to target OS X 10.7 Lion and above for Java 7 and 8. For the time being, to avoid abandoning older machines which cannot be upgraded from Snow Leopard, ImageJ continues to target Java 6.
+As of June 2014, around 19% of macOS systems still run version 10.6 Snow Leopard or older [[http://www.netmarketshare.com/ 1]]. (In December 2013, it was around 25%.) Unfortunately, Apple and the OpenJDK developer community decided to target OS X 10.7 Lion and above for Java 7 and 8. For the time being, to avoid abandoning older machines which cannot be upgraded from Snow Leopard, ImageJ continues to target Java 6.
 
 Furthermore, updating the required version to a newer version of Java would necessitate improvements to the ImageJ [[Updater]] such that it could also update the bundled version of Java, which would be a substantial undertaking. Otherwise, most existing installations of ImageJ would stop working, and those users would need to download ImageJ from scratch again.
 
