@@ -14,13 +14,13 @@ See also [[Frequently Asked Questions#How_do_I_launch_ImageJ_with_a_different_ve
 To diagnose problems with ImageJ, it is often helpful to launch it in debug mode:
 
 <ul>
-<li>On Linux 64-bit (from a console):
+<li>[[File:Tux.png|x20px]] On Linux 64-bit (from a console):
 <source lang="bash">DEBUG=1 $HOME/ImageJ.app/ImageJ-linux64</source>
 </li>
-<li>On OS X (from Terminal):
+<li>[[File:Osx.png|x20px]] On OS X (from Terminal):
 <source lang="bash">DEBUG=1 /Applications/ImageJ.app/Contents/MacOS/ImageJ-macosx</source>
 </li>
-<li>On Windows 64-bit:
+<li>[[File:Win.png|x20px]] On Windows 64-bit:
 <ul>
 <li>Make a copy of <code>ImageJ-win64.exe</code> called <code>debug.exe</code></li>
 <li>Run <code>debug.exe</code></li>
