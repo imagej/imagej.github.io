@@ -2,6 +2,9 @@
 
 This page details issues specific to using [[ImageJ]] on Linux systems.
 
+= HiDPI displays =
+You can make [[ImageJ 1.x]] scale better on HiDPI displays by installing a Java 9 prerelease. See [http://forum.imagej.net/t/how-to-increase-the-gui-font-size/552 this forum post]. Unfortunately, [[ImageJ2]] and [[Fiji]] do not yet launch using Java 9, due to limitations of the [[ImageJ Launcher]] and [[ImageJ Legacy]] components.
+
 = Troubleshooting =
 See the [[Troubleshooting]] page.
 
