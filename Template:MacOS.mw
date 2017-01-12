@@ -1,12 +1,12 @@
-<includeonly>{{Box | float=right | [[Image:osx.png|left|64px|link=]] {{{1|}}}}}</includeonly>
-<noinclude>This template is a sidebar for OS X-specific commentary or notes.
+<includeonly>{{Box | float=right | {{MacLogo}} {{{1|}}}}}</includeonly>
+<noinclude>This template is a sidebar for macOS-specific commentary or notes.
 
 == Usage ==
 
 <pre>
-{{OSX | Everyone agrees: OS X is [http://imdb.com/title/tt0771121/ the ''best''] operating system!}}
+{{macOS | Everyone agrees: macOS is [http://imdb.com/title/tt0771121/ the ''best''] operating system!}}
 </pre>
-{{OSX | Everyone agrees: OS X is [http://imdb.com/title/tt0771121/ the ''best''] operating system!}}
+{{macOS | Everyone agrees: macOS is [http://imdb.com/title/tt0771121/ the ''best''] operating system!}}
 
 {{Clear}}
 [[Category:Boxes]]
