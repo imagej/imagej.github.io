@@ -1,6 +1,4 @@
-{{Minibox | logo=Win.png | blurb=[[wikipedia:Where do you want to go today?|Where do you want to go today?]]}}[[wikipedia:Microsoft Windows|Windows]] is [[wikipedia:Microsoft|Microsoft]]'s family of operating systems. It is [https://www.netmarketshare.com/operating-system-market-share.aspx the most prevalent desktop computer platform].
-
-This page details issues specific to using [[ImageJ]] on Windows systems.
+{{Minibox | logo=Win.png | blurb=[[wikipedia:Where do you want to go today?|Where do you want to go today?]]}}[[wikipedia:Microsoft Windows|Windows]] is [[wikipedia:Microsoft|Microsoft]]'s family of operating systems. It is [https://www.netmarketshare.com/operating-system-market-share.aspx the most prevalent desktop computer platform]. This page details issues specific to using [[ImageJ]] on Windows systems.
 
 = Installation =
 {{AvoidProgramFiles}}
