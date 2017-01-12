@@ -38,6 +38,21 @@
 {{!}} [https://www.researchgate.net/profile/{{{researchgate}}} ResearchGate profile]
 {{!}}-
 }}
+{{#if:{{{orcid|}}}|
+! ORCID
+{{!}} [http://orcid.org/{{{orcid}}} ORCID profile]
+{{!}}-
+}}
+{{#if:{{{researcherid|}}}|
+! ResearcherID
+{{!}} [http://www.researcherid.com/rid/{{{researcherid}}} Researcher profile]
+{{!}}-
+}}
+{{#if:{{{scopus|}}}|
+! Scopus Author ID
+{{!}} [https://www.scopus.com/authid/detail.uri?authorId={{{scopus}}} Scopus profile]
+{{!}}-
+}}
 {{#if:{{{scholar|}}}|
 ! Google Scholar
 {{!}} [https://scholar.google.com/citations?user={{{scholar}}} Google Scholar profile]
@@ -75,6 +90,9 @@
 | openhub                =
 | linkedin               =
 | researchgate           =
+| orcid                  =
+| researcherid           =
+| scopus                 =
 | scholar                =
 | loci                   =
 | website                =
