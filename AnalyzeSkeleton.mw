@@ -94,7 +94,9 @@ Using the [[3D_Viewer]] libraries we can easily display the results of both, the
 |style="vertical-align:top" |[[Image:Movie_bat_skel.gif|thumb|225px|Bat cochlea volume rendered in the viewer with its corresponding classified skeleton]]
 |}
 
-== Using silent mode from scripts ==
+== Scripting AnalyzeSkeleton ==
+AnalyzeSkeleton functionalities can also be called from scripts, making use of its library methods or performing the whole analysis in silent mode.  
+=== Using silent mode from scripts ===
 You can use AnalyzeSkeleton from scripts without displaying any of the results. That's useful if you want to use the results within the script without the user being annoyed by a lot of results tables popping up.
 
 Here's an example in Javascript:
@@ -138,6 +140,66 @@ for (var i = 0; i < shortestPaths.length; i++) {
 IJ.log(totalLength);
 IJ.log(cumulativeLengthOfShortestPaths);
 </source>
+
+=== Pruning branches by length ===
+The following [[Beanshell]] script prunes the branches of an input skeleton if they are under a certain length:
+
+<source lang=java>
+// @ImagePlus(label="Skeleton image", description="Binary image skeletonized with Skeletonize3D") image
+// @double(label="Length threshold", description="Minimum branch length to keep") threshold
+// @OUTPUT ImagePlus prunedImage
+
+import sc.fiji.analyzeSkeleton.AnalyzeSkeleton_;
+import sc.fiji.analyzeSkeleton.Edge;
+import sc.fiji.analyzeSkeleton.Point;
+import ij.IJ;
+
+// analyze skeleton
+skel = new AnalyzeSkeleton_();
+skel.setup("", image);
+skelResult = skel.run(AnalyzeSkeleton_.NONE, false, false, null, true, false);
+
+// create copy of input image
+prunedImage = image.duplicate();
+outStack = prunedImage.getStack();
+
+// get graphs (one per skeleton in the image)
+graph = skelResult.getGraph();
+
+// list of end-points
+endPoints = skelResult.getListOfEndPoints();
+
+for( i = 0 ; i < graph.length; i++ )
+{
+	listEdges = graph[i].getEdges();
+
+	// go through all branches and remove branches under threshold
+	// in duplicate image
+	for( Edge e : listEdges )
+	{
+		p = e.getV1().getPoints();
+		v1End = endPoints.contains( p.get(0) );
+		p2 = e.getV2().getPoints();
+		v2End = endPoints.contains( p2.get(0) );
+		// if any of the vertices is end-point 
+		if( v1End || v2End )
+		{
+			if( e.getLength() < threshold )
+			{
+				if( v1End )
+					outStack.setVoxel( p.get(0).x, p.get(0).y, p.get(0).z, 0 );
+				if( v2End )
+					outStack.setVoxel( p2.get(0).x, p2.get(0).y, p2.get(0).z, 0 );
+				for( Point p : e.getSlabs() )
+					outStack.setVoxel( p.x, p.y, p.z, 0 );
+			}
+		}
+	}
+}
+
+prunedImage.setTitle( image.getShortTitle() + "-pruned" );
+</source>
+Be aware that small branches might be created due to the elimination of end-points and slabs but not junctions (to prevent breaking branches above the threshold). So you might need to run the script a couple of times to remove all unwanted branches.
 
 == API documentation ==
 The latest documentation of the code can be found here:
