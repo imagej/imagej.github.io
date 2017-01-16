@@ -384,7 +384,7 @@ IJ.log( "** Finished script in " + estimatedTime + " ms **" );
 </source>
 
 = Example: color-based segmentation using clustering =
-The following [[Beanshell]] script shows how to segment a 2D color image or stack in an automatic fashion using the [[wikipedia:CIELAB|CIELab color space]] and two possible clustering schemes ([[wikipedia:K-means|k-means]] and [[wikipedia:Expectation–maximization_algorithm|expectation maximization]]):
+The following [[Beanshell]] script shows how to segment a 2D color image or stack in an automatic fashion using the [[wikipedia:CIELAB|CIELab color space]] and two possible clustering schemes: [[wikipedia:K-means|k-means]] and [[wikipedia:Expectation–maximization_algorithm|expectation maximization]]  (note: if you do not have Weka's ClassificationViaClustering classifier installed, check [[Trainable_Weka_Segmentation_-_How_to_install_new_classifiers|how to install new classifiers via Weka's package manager]]).
 
 <source lang=java>
 // @ImagePlus image
