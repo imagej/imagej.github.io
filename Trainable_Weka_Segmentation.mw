@@ -6,7 +6,7 @@
 | filename               = {{Maven | g=sc.fiji | a=Trainable_Segmentation}}
 | source                 = {{GitHub|org=fiji|repo=Trainable_Segmentation}}
 | released               = May 19<sup>th</sup>, 2011
-| latest version         = 3.2.2, October 26<sup>th</sup>, 2016 (Weka v3.9.0)
+| latest version         = 3.2.3, January 16<sup>th</sup>, 2017 (Weka v3.9.0)
 | status                 = stable, active
 | category               = [[:Category:Segmentation|Segmentation]], [[:Category:Machine Learning|Machine Learning]]
 }}{{TOC}}
@@ -320,7 +320,7 @@ run("Trainable Weka Segmentation");
 
 // wait for the plugin to load
 wait(3000);
-selectWindow("Trainable Weka Segmentation v3.2.1");
+selectWindow("Trainable Weka Segmentation v3.2.3");
 
 // add one region of interest to each class
 makeRectangle(367, 0, 26, 94);
