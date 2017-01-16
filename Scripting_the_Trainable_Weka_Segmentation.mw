@@ -152,7 +152,7 @@ segmentator.setClassifier( rf );
 </source>
 
 = Example: define your own features =
-Although TWS provides a large set of predefined image features, it might happen that you need to define your own features for a specific problem. You can do that with a simple set of instructions. Here is a little [[Beanshell]] script that makes two features from the Clown example and uses them to train a classifier (see the inline comments for more information): 
+Although Trainable Segmentation provides a large set of predefined image features, it might happen that you need to define your own features for a specific problem. You can do that with a simple set of instructions. Here is a little [[Beanshell]] script that makes two features from the Clown example and uses them to train a classifier (see the inline comments for more information): 
 
 <source lang="java">
 import ij.IJ;
