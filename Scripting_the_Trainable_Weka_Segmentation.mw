@@ -245,7 +245,7 @@ output = wekaSegmentation.applyClassifier(image);
 output.show();
 </source>
 
-= Example: define binary labels programmatically =
+= Example: define training samples with binary labels =
 
 Here is a simple script in '''Beanshell''' doing the following:
                                                                                 
@@ -254,100 +254,79 @@ Here is a simple script in '''Beanshell''' doing the following:
 # Apply the trained classifier to a test image (2D or stack).
 
 <source lang="java">
-import ij.*;
-import ij.process.*;
-import trainableSegmentation.*;
-import hr.irb.fastRandomForest.*;
+// @ImagePlus(label="Training image", description="Stack or a single 2D image") image
+// @ImagePlus(label="Label image", description="Image of same size as training image containing binary class labels") labels
+// @ImagePlus(label="Test image", description="Stack or a single 2D image") testImage
+// @Integer(label="Num. of samples", description="Number of training samples per class and slice",value=2000) nSamplesToUse
+// @OUTPUT ImagePlus prob
+import ij.IJ;
+import trainableSegmentation.WekaSegmentation;
+import hr.irb.fastRandomForest.FastRandomForest;
 
-// training input image (it could be a stack or a single 2D image)
-image = IJ.openImage("train-volume.tif");
-// corresponding binary labels
-labels = IJ.openImage("train-labels.tif");
-
+// starting time
+ startTime = System.currentTimeMillis();
+   
 // create Weka segmentator
 seg = new WekaSegmentation(image);
-
-// number of samples to use per slice
-nSamplesToUse = 2000;
-
 
 // Classifier
 // In this case we use a Fast Random Forest
 rf = new FastRandomForest();
 // Number of trees in the forest
-rf.setNumTrees(100);		
+rf.setNumTrees(100);
+         
 // Number of features per tree
-rf.setNumFeatures(0);
-// Seed
-rf.setSeed( (new java.util.Random()).nextInt() );
-
-// set classifier
-seg.setClassifier(rf);
-
-// Parameters 
-// membrane patch size
-seg.setMembranePatchSize(11);
-// maximum radius of the filters
+rf.setNumFeatures(0);  
+// Seed  
+rf.setSeed( (new java.util.Random()).nextInt() );    
+// set classifier  
+seg.setClassifier(rf);    
+// Parameters   
+// membrane patch size  
+seg.setMembranePatchSize(11);  
+// maximum filter radius
 seg.setMaximumSigma(16.0f);
-
-// Selected attributes
+  
+// Selected attributes (image features)
 enableFeatures = new boolean[]{
-			true, 	/* Gaussian_blur */
-			true, 	/* Sobel_filter */
-			true, 	/* Hessian */
-			true, 	/* Difference_of_gaussians */
-			true, 	/* Membrane_projections */
-			false, 	/* Variance */
-			false, 	/* Mean */
-			false, 	/* Minimum */
-			false, 	/* Maximum */
-			false, 	/* Median */
-			false,	/* Anisotropic_diffusion */
-			false, 	/* Bilateral */
-			false, 	/* Lipschitz */
-			false, 	/* Kuwahara */
-			false,	/* Gabor */
-			false, 	/* Derivatives */
-			false, 	/* Laplacian */
-			false,	/* Structure */
-			false,	/* Entropy */
-			false	/* Neighbors */
+            true,   /* Gaussian_blur */
+            true,   /* Sobel_filter */
+            true,   /* Hessian */
+            true,   /* Difference_of_gaussians */
+            true,   /* Membrane_projections */
+            false,  /* Variance */
+            false,  /* Mean */
+            false,  /* Minimum */
+            false,  /* Maximum */
+            false,  /* Median */
+            false,  /* Anisotropic_diffusion */
+            false,  /* Bilateral */
+            false,  /* Lipschitz */
+            false,  /* Kuwahara */
+            false,  /* Gabor */
+            false,  /* Derivatives */
+            false,  /* Laplacian */
+            false,  /* Structure */
+            false,  /* Entropy */
+            false   /* Neighbors */
 };
-
+   
 // Enable features in the segmentator
 seg.setEnabledFeatures( enableFeatures );
-
-// Add balanced labels
+   
+// Add labeled samples in a balanced and random way
 seg.addRandomBalancedBinaryData(image, labels, "class 2", "class 1", nSamplesToUse);
-
+   
 // Train classifier
 seg.trainClassifier();
 
-
-// Un-comment next 7 lines to segment and display training image
-/*
-// Apply classifier to current image
-seg.applyClassifier( true );
-
-// Display classified image
-prob = seg.getClassifiedImage();
-prob.setTitle( "Probability maps of train image" );
-prob.show();
-*/
-
-// Open test image
-image = IJ.openImage("test-volume.tif");
-
 // Apply trained classifier to test image and get probabilities
-prob = seg.applyClassifier(image, 0, true );
-
-// Display results
-prob.setTitle( "Probability maps of test image" );
-prob.show();
-
-image.show();
-
-IJ.log("---");
+prob = seg.applyClassifier( testImage, 0, true );
+// Set output title
+prob.setTitle( "Probability maps of " + testImage.getTitle() );
+// Print elapsed time
+estimatedTime = System.currentTimeMillis() - startTime;
+IJ.log( "** Finished script in " + estimatedTime + " ms **" );
 </source>
 
 [[Category:Scripting]]
