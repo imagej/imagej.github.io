@@ -7,7 +7,7 @@
 | maintainer     = {{Person|Tiago}}
 | source         = {{GitHub|org=tferr|repo=ASA}}
 | released       = December 2012
-| latest version = '''3.6.10 January 2017'''
+| latest version = '''3.6.12 January 2017'''
 | status         = Active ({{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Release Notes}})
 | category       = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]], [[:Category:Neuroanatomy|Neuroanatomy]]
 }}
@@ -484,6 +484,9 @@ call("sholl.Sholl_Analysis.setPrecision", "100"); // Default is 1000, ie, 1/1000
 Note that the IJM built-in [http://imagej.nih.gov/ij/developer/macro/functions.html#call call("class.method")] function can only pass strings to Java methods. For this reason, you have to quote the passed argument. <tt>Sholl_Analysis</tt> will then parse the string argument and interpreter its value. Note that calls made by the IJM language need to be set before running the plugin and remain in effect while ImageJ is running.
 
 == Auxiliary Commands ==
+;{{bc|color=white|Analyze|Sholl|Combine Sholl Profiles...}}[[File:CombineShollProfiles.png|400px|thumb|right|Screenshot of 15 files being processed by {{bc|color=white|Analyze|Sholl|Combine Sholl Profiles...}} (v3.6.12)]]
+Analysis tool that 1) Merges individual Sholl profiles into a single table and 2) Obtains the average profile (with standard deviation) of a group of cells.
+
 ;{{bc|color=white|File|Open Samples|ddaC Neuron}}
 :Opens a sample image of a Drosophila class IV ddaC sensory neuron in which dendrites have been previously segmented (2D arbor). Use it to get acquainted with the plugin. Run {{bc|color=white|Image|Show Info...}} (shortcut: {{key press|I}} ) to know more about this cell type.
 
