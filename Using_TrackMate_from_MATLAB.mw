@@ -1,4 +1,4 @@
-This page shows how to use and control TrackMate directly from ''within [[MATLAB]]''. This is great and made possible thanks to the great [[Miji]] tool, that make the Fiji classes visible from [[MATLAB]]. Check this page first if you have not already. 
+This page shows how to use and control TrackMate directly from ''within [[MATLAB]]''. This is great and made possible thanks to the great [[Miji]] tool, that make the Fiji classes visible from [[MATLAB]]. Check this page first if you have not already. Note however that as 2016, Mark Hinerm and friends built a stronger replacement from Miji, [[MATLAB_Scripting|ImageJ-MATLAB]]. This page still clings to using Miji, but moving to ImageJ-MATLAB should be painless.
 
 All the following examples assume you have launched [[MATLAB]], and properly initiated Miji, using for instance
 
@@ -61,7 +61,7 @@ filter1 = fiji.plugin.trackmate.features.FeatureFilter('QUALITY', 1.0, true);
 settings.addSpotFilter(filter1)
     
 % Configure tracker - We want to allow splits and fusions
-settings.trackerFactory = fiji.plugin.trackmate.tracking.FastLAPTrackerFactory();
+settings.trackerFactory  = fiji.plugin.trackmate.tracking.sparselap.SparseLAPTrackerFactory();
 settings.trackerSettings = fiji.plugin.trackmate.tracking.LAPUtils.getDefaultLAPSettingsMap(); % almost good enough
 settings.trackerSettings.put('ALLOW_TRACK_SPLITTING', true);
 settings.trackerSettings.put('ALLOW_TRACK_MERGING', true);
@@ -179,7 +179,7 @@ filter1 = FeatureFilter('QUALITY', 1.0, true);
 settings.addSpotFilter(filter1)
      
 % Configure tracker - We want to allow splits and fusions
-settings.trackerFactory = FastLAPTrackerFactory();
+settings.trackerFactory  = fiji.plugin.trackmate.tracking.sparselap.SparseLAPTrackerFactory();
 settings.trackerSettings = LAPUtils.getDefaultLAPSettingsMap(); % almost good enough
 settings.trackerSettings.put('ALLOW_TRACK_SPLITTING', true);
 settings.trackerSettings.put('ALLOW_TRACK_MERGING', true);
@@ -235,16 +235,19 @@ display(model.toString())
 
 Because your just ran a [[MATLAB]] script that uses and benefits from multithreading without relying on any toolbox! Here is how to tune the number of threads used by TrackMate:
 
-TODO
+
+
+<source lang="matlab">
+% ... Do initialization before.
+
+
+trackmate = TrackMate(model, settings);
+trackmate.setNumThreads(3); % As many threads as you want.
+</source>
 
 
 
-
-
-
-
-
-{{Person|JeanYvesTinevez}} ([[User talk:JeanYvesTinevez|talk]]) 08:48, 25 February 2014 (CST)
+[[User:JeanYvesTinevez|JeanYvesTinevez]] ([[User talk:JeanYvesTinevez|talk]]) 13:44, 17 January 2017 (CST)
 
 [[Category:Matlab]]
 [[Category:Scripting]]
