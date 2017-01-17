@@ -3,7 +3,7 @@
 | name                   = IJ Robot
 | author                 = Gabriel Landini
 | maintainer             = Gabriel Landini (G.Landini at bham. ac. uk)
-| filename               = IJ_Robot. ImageJ users can download it from [http://www.mecourse.com/landinig/software/software.html this page], or [http://www.mecourse.com/landinig/software/ijrobot.zip this direct link].
+| filename               = IJ_Robot. Non-Fiji users can download it from [http://www.mecourse.com/landinig/software/software.html this page], or [http://www.mecourse.com/landinig/software/ijrobot.zip this direct link].
 | source                 = {{GitHub | org=fiji | repo=IJ_Robot}}
 | latest version         = 1.0
 | status                 = active 
