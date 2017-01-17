@@ -123,6 +123,11 @@ Coming soon.
 * Bugfixed a tool for visualising Meshes in the good old [[3D Viewer]] which were derived from ArrayList<RandomAccessibleInterval<BoolType>>s as an intermediate solution until the [[ThreeDViewer]] is ready.
 * Built an ImageJ-Ops based particle analyser, which will in the future allow processing 3D images in a way like 2D images were processed using the good old [[Particle Analysis]] tool
 
+=== Tim-Oliver Buchholz ===
+* Participated in technical discussions about ThreeDViewer, BigDataViewer and the next generation of viewers used in [[KNIME Image Processing]]. 
+* Participated in discussions about [[ImageJ Ops]] based feature extraction.
+* Worked on the integration of the BigDataViewer as new standard viewer in [[KNIME Image Processing]]. 
+
 == Technical discussions ==
 
 === Programmers Anonymous ===
