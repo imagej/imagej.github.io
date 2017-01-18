@@ -2,13 +2,13 @@
 | software               = ImageJ
 | name                   = Diffraction PSF 3D
 | author                 = Bob Dougherty
-| filename               = [http://www.optinav.com/download/Diffraction_PSF_3D.class Diffraction_PSF_3D.class] 
-| source                 = [http://www.optinav.com/download/Diffraction_PSF_3D.java Diffraction_PSF_3D.java]
+| filename               = [http://www.optinav.info/download/Diffraction_PSF_3D.class Diffraction_PSF_3D.class] 
+| source                 = [http://www.optinav.info/download/Diffraction_PSF_3D.java Diffraction_PSF_3D.java]
 | released               = 2 May 2005
 | latest version         = 6 June 2005
 | status                 = stable
 | category               = [[:Category:Deconvolution|Deconvolution]]
-| website                = [http://www.optinav.com/Diffraction-PSF-3D.htm]
+| website                = [http://www.optinav.info/Diffraction-PSF-3D.htm]
 }}
 == Purpose ==
 
