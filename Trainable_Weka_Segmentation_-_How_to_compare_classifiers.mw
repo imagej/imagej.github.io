@@ -15,6 +15,7 @@ After loading, the main GUI of the plugin will pop up:
 
 === Gathering training samples ===
 First of all, we select the features (filters) that we want to use to perform the segmentation. For that, we will click on "Settings", select the corresponding features on the Settings dialog, and click "OK":
+
 [[Image:Screenshot-AWS-tutorial-settings-dialog.png]]
 
 After that, we use the selection tools to trace samples of both classes. By default, the "freehand" line is selected, but you can use any of the available selection tools to mark areas on the image and then add them to any of the classes by click on the "Add to class [1/2]" buttons. In our example, we use the two classes to differentiate between membrane areas (in red, class 1) and the rest of the image (in green, class 2):
