@@ -546,7 +546,8 @@ Let's see an example in a complete [[BeanShell_Scripting|Beanshell script]] that
 
 <source lang="java">
 // @ImagePlus imp
-
+// @OUTPUT ImagePlus resultImage
+ 
 // ImageJ imports
 import ij.IJ;
 import ij.ImagePlus;
@@ -557,7 +558,7 @@ import inra.ijpb.morphology.MinimaAndMaxima3D;
 import inra.ijpb.morphology.Morphology;
 import inra.ijpb.morphology.Strel3D;
 import inra.ijpb.watershed.Watershed;
- 
+  
 // create structuring element (cube of radius 1)
 strel = Strel3D.Shape.CUBE.fromRadius( 1 );
 // apply morphological gradient to input image
@@ -571,15 +572,13 @@ labeledMinima = BinaryImages.componentsLabeling( regionalMinima, 6, 32 );
 // apply marker-based watershed using the labeled minima on the minima-imposed 
 // gradient image (the "true" value indicates the use of dams in the output)
 resultStack = Watershed.computeWatershed( imposedMinima, labeledMinima, 6, true );
- 
+  
 // create image with watershed result
 resultImage = new ImagePlus( "watershed", resultStack );
 // assign right calibration
 resultImage.setCalibration( imp.getCalibration() );
-// and show it
-resultImage.show();
-
 </source>
+
 ==== Label visualization in 3D viewer ====
 Making use of MorphoLibJ's label methods and the [[3D_Viewer|ImageJ 3D Viewer]]'s visualization tools it is quite simple to create a script to display each label of an image as 3D surfaces of the corresponding colors provided by the image look-up table:
 
