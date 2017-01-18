@@ -17,7 +17,7 @@ To install the plugin, activate the '''Angiogenesis''' [[How_to_follow_a_3rd_par
 
 == Usage ==
 
-Open a maximum intensity projection of the multi-channel image to be analyzed, the start the plugin via {{bc|Analyze|Sprout Morphology}}. The process consists of up to six dialogs:
+Open a maximum intensity projection of the multi-channel image to be analyzed, then start the plugin via {{bc|Analyze|Sprout Morphology}}. The process consists of up to six dialogs:
 
 === General configuration ===
 
@@ -42,7 +42,6 @@ Open a maximum intensity projection of the multi-channel image to be analyzed, t
 === Pericyte coverage ===
 
 [[Image:SproutAnalyzer PericyteCoverage.png|400px|Pericyte coverage measurement]]
-
 
 == Publication ==
 * {{Citation | last = Eglinger | first = J.
