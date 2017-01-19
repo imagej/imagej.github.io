@@ -132,7 +132,9 @@ public class MyService {
     // It is not connected to a Context yet
     MyPlugin plugin = new MyPlugin();
 
-    // Inject the plugin instance with our Context
+    // Inject the plugin instance with our Context,
+    // so the logService field of the plugin will be
+    // populated.
     context.inject(plugin);
 
     // Now that our plugin is injected, we can use
