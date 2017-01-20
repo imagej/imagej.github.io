@@ -1,4 +1,4 @@
-<includeonly>{| class="infobox mw-collapsible {{#if:{{{3|}}}|mw-collapsed|}}" cellspacing="5" style="width: 100%; text-align: left; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;"
+<includeonly>{| class="infobox mw-collapsible {{#if:{{{3|}}}|mw-collapsed|}}" cellspacing="5" data-collapsetext="-" data-expandtext="+" style="width: 100%; text-align: left; border-top: 1px solid #336699; border-right: none; border-left: none; border-bottom: none;"
 ! {{{1}}}
 |-
 {{{2}}}
