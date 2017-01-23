@@ -49,7 +49,7 @@ This button activates the training process. One trace of two classes is the mini
 
 If the training ends correctly, then the displayed image will be completely segmented and the result will be overlaid with the corresponding class colors.  Notice that all buttons are now enabled, since all their functionalities are possible after training.
 
-'''While training, this button will show the label "STOP"'''. By clicking on it, the whole training process will be interrupted and the plugin reseted to the state previous to the training.
+'''While training, this button will show the label "STOP"'''. By clicking on it, the whole training process will be interrupted and the plugin reset to the state previous to the training.
 
 ==== Toggle overlay ====
 [[Image:AWS-Probability-maps.png|thumb|250px|Example of resulting probability map displayed as a hyperstack]]
