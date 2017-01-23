@@ -1,4 +1,4 @@
-{{Scripting}}
+{{Learn | scripting}}
 = Background =
 
 The ImageJ script editor originally would automatically import many useful classes. This provided a clear benefit to writing scripts in ImageJ, as any plugins could be used without troubling the writer to know and enumerate the required classes.
