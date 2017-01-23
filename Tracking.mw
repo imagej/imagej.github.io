@@ -1,5 +1,5 @@
 {{BigNotice | See [[:Category:Tracking]] for pages about particle tracking.}}
-{{Learn}}
+{{Learn | techniques}}
 Particle tracking algorithms identify and link objects across multiple images over time.
 
 == Related publications ==
