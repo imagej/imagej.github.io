@@ -1,4 +1,4 @@
-{{Scripting}}[[Scripting|ImageJ scripts]] are designed to operate independently of user interface—including [[headless]], with '''no''' user interface. This is made easy with the use of [[Script_parameters|script parameters]].
+{{Learn | scripting}}[[Scripting|ImageJ scripts]] are designed to operate independently of user interface—including [[headless]], with '''no''' user interface. This is made easy with the use of [[Script_parameters|script parameters]].
 
 To start ImageJ in the ImageJ2 headless mode, run (with the launcher appropriate for your system substituted):
 
