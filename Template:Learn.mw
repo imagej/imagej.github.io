@@ -1,5 +1,8 @@
 {{ Menu | Learn
 |
+{{!}}-
+{{!}}
+{{Submenu | Topics |
 {{MenuItem | [[Introduction]] }}
 {{MenuItem | [[Getting Started]] }}
 {{MenuItem | [[User Guides]] }}
@@ -7,6 +10,8 @@
 {{MenuItem | [[Tips and Tricks]] }}
 {{MenuItem | [[Presentations]] }}
 {{MenuItem | [[Plugins]] }}
+| {{#if:{{{1|}}}|collapsed|}}
+}}
 {{!}}-
 {{!}}
 {{Submenu | Techniques |
@@ -18,10 +23,11 @@
 {{MenuItem | [[Image Stitching | Stitching]] }}
 {{MenuItem | [[Tracking]] }}
 {{MenuItem | [[Visualization]] }}
+| {{#ifeq:{{{1}}}|techniques||collapsed}}
 }}
-{{Submenu | Scripting |
 {{!}}-
 {{!}}
+{{Submenu | Scripting |
 {{MenuItem | [[Scripting|Overview]] }}
 {{MenuItem | [[Script parameters|Parameters]] }}
 {{MenuItem | [[Scripting basics|Basics of script writing]] }}
@@ -35,6 +41,7 @@
 {{MenuItem | [[Multithreaded Image Processing in Clojure|Multithreading in Clojure]] }}
 {{MenuItem | [[Multithreaded Image Processing in JavaScript|Multithreading in JavaScript]] }}
 {{MenuItem | [[Chess]] in Jython }}
+| {{#ifeq:{{{1}}}|scripting||collapsed}}
 }}
 {{!}}-
 {{!}}
@@ -49,6 +56,7 @@
 {{MenuItem | [[Renjin_Scripting|R (Renjin)]] }}
 {{MenuItem | [[JRuby Scripting|Ruby (JRuby)]] }}
 {{MenuItem | [[Scala Scripting|Scala]] }}
+| {{#ifeq:{{{1}}}|languages||collapsed}}
 }}
 }}
 <noinclude>
