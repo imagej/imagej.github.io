@@ -1,5 +1,5 @@
 {{BigNotice | See [[:Category:Colocalization]] for pages about colocalization.}}
-{{Learn}}
+{{Learn | techniques}}
 == What is colocalization? ==
 
 Suppose you are given some images by a colleague, or have some images of your own, and you want to measure the amount of colocalisation between two of the dyes or stains in the images. First you have to define what you mean by colocalisation, and that is not trivial. For one place to start reading about colocalisation and for how to correctly capture quantitative fluorescence microscopy images suitable for colocalisation analysis, look here: [http://www.biodip.de/wiki/Teaching_Material#IPF_Image_Processing_Courses Image Processing Courses at BioDIP, Dresden]. A recent review is [http://ajpcell.physiology.org/content/300/4/C723 by Dunn in 2011].
