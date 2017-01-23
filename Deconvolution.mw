@@ -1,5 +1,5 @@
 {{BigNotice | See [[:Category:Deconvolution]] for pages about deconvolution.}}
-__FORCETOC__ {{Cookbook}}{{Learn}}[[wikipedia:Deconvolution|Deconvolution]] corrects the systematic error of blur (loss of contrast in smaller features)  in optical systems such as fluorescence microscopy images.
+__FORCETOC__ {{Cookbook}}{{Learn | techniques}}[[wikipedia:Deconvolution|Deconvolution]] corrects the systematic error of blur (loss of contrast in smaller features)  in optical systems such as fluorescence microscopy images.
 
 == The problem, and the solution ==
 
