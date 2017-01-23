@@ -1,4 +1,4 @@
-{{Scripting}}
+{{Learn | scripting}}
 Templates are pre-written scripts in a particular scripting language. They can be distributed as any other plugin, and automatically discovered by the [[Script Editor]]. Templates thus present an excellent way to demonstrate a particular operation to a wide audience of users.
 
 Available templates are sorted by language under the <code>Templates</code> menu of the [[Script Editor]]. The contents of a template will be loaded into the editor window when selected. The script can then be inspected, executed and modified as normal.
