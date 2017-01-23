@@ -19,6 +19,37 @@
 {{MenuItem | [[Tracking]] }}
 {{MenuItem | [[Visualization]] }}
 }}
+{{Submenu | Scripting |
+{{!}}-
+{{!}}
+{{MenuItem | [[Scripting|Overview]] }}
+{{MenuItem | [[Script parameters|Parameters]] }}
+{{MenuItem | [[Scripting basics|Basics of script writing]] }}
+{{MenuItem | [[Batch Processing|Batch processing]] }}
+{{MenuItem | [[Using the Script Editor|Script Editor]] }}
+{{MenuItem | [[Script Editor Auto Import|Auto Imports]] }}
+{{MenuItem | [[Script_Templates|Templates]] }}
+{{MenuItem | [[Scripting_Headless|Running headlessly]] }}
+{{MenuItem | [[Scripting comparisons|Comparisons]] }}
+{{MenuItem | [[Scripting toolbox|Toolbox]] }}
+{{MenuItem | [[Multithreaded Image Processing in Clojure|Multithreading in Clojure]] }}
+{{MenuItem | [[Multithreaded Image Processing in JavaScript|Multithreading in JavaScript]] }}
+{{MenuItem | [[Chess]] in Jython }}
+}}
+{{!}}-
+{{!}}
+{{Submenu | Languages |
+{{MenuItem | [[BeanShell Scripting|BeanShell]] }}
+{{MenuItem | [[Groovy Scripting|Groovy]] }}
+{{MenuItem | [[Introduction into Macro Programming|ImageJ Macro]] }}
+{{MenuItem | [[JavaScript Scripting|JavaScript]] }}
+{{MenuItem | [[Clojure Scripting|Lisp (Clojure)]] }}
+{{MenuItem | [[MATLAB Scripting|MATLAB]] }}
+{{MenuItem | [[Jython Scripting|Python (Jython)]] }}
+{{MenuItem | [[Renjin_Scripting|R (Renjin)]] }}
+{{MenuItem | [[JRuby Scripting|Ruby (JRuby)]] }}
+{{MenuItem | [[Scala Scripting|Scala]] }}
+}}
 }}
 <noinclude>
 [[Category:Menu]]
