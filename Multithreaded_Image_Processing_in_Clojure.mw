@@ -1,4 +1,4 @@
-{{Scripting}}== Purpose ==
+{{Learn | scripting}}== Purpose ==
 
 An example [[Clojure Scripting|Clojure]] script illustrating how to run concurrent threads that perform independent tasks, and how to combine their results afterwards.
 
