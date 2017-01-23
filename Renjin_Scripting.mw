@@ -1,4 +1,4 @@
-{{Scripting}}
+{{Learn | languages}}
 A thin wrapper around [http://www.renjin.org/ Renjin] is currently available on the [[List_of_update_sites|Java 8 update site]], providing [https://www.r-project.org/about.html R-styled] scripting in ImageJ.
 
 See also [https://github.com/scijava/scripting-renjin scripting-renjin on GitHub].
