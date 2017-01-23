@@ -29,7 +29,7 @@
 {{!}}
 {{Submenu | Scripting |
 {{MenuItem | [[Scripting|Overview]] }}
-{{MenuItem | [[Script parameters|Parameters]] }}
+{{MenuItem | [[Script Parameters|Parameters]] }}
 {{MenuItem | [[Scripting basics|Basics of script writing]] }}
 {{MenuItem | [[Batch Processing|Batch processing]] }}
 {{MenuItem | [[Using the Script Editor|Script Editor]] }}
