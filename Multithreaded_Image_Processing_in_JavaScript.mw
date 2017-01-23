@@ -1,4 +1,4 @@
-{{Scripting}}== Purpose ==
+{{Learn | scripting}}== Purpose ==
 
 An example [[Javascript Scripting|Javascript]] ImageJ script illustrating how to create java Threads for concurrent execution.
 
