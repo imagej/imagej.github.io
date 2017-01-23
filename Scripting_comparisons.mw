@@ -1,4 +1,4 @@
-__FORCETOC__ {{Scripting}}
+__FORCETOC__ {{Learn | scripting}}
 <big>'''Example: a command launcher'''</big>
 
 A short plugin is used as example: a little dialog window that lets you type in a command for ImageJ to execute. A command is a menu item, which executes a plugin.
