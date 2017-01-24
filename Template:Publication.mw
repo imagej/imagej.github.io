@@ -342,6 +342,10 @@
 }}</includeonly><noinclude>
 == Usage ==
 Specify a publication by name.
+
+<pre>{{Publication | ImageJ2}}</pre>
+{{Publication | ImageJ2}}
+
 <pre>{{Publication | Fiji}}</pre>
 {{Publication | Fiji}}
 </noinclude>
