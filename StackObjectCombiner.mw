@@ -4,6 +4,8 @@ To be fully segmented, the stack need to be cut in parts. But this operation wil
 The purpose of this plugin is to replace the objects in their original position, and provide a tool that will allow a user to merge 3D objects that have been cut.<br/>
 
 == Installation ==
+<span style="color:#FF0000"> Bug with memory watch parameter, increase it so its not a limit for the plugin anymore (higher than what IJ is allowed to have, e.g. 8000 if IJ is allowed to have 8GBytes)</span>
+
 The plugin can be found on the github [https://github.com/Tom-TBT/StackObjectCombiner/releases project] in the release tab (please take the lattest version of the plugin). <br/>
 Download the .jar file and place it in the plugin folder of ImageJ. <br/>
 This plugin also need the 
