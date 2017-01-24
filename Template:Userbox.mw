@@ -53,6 +53,11 @@
 {{!}} [https://www.scopus.com/authid/detail.uri?authorId={{{scopus}}} Scopus profile]
 {{!}}-
 }}
+{{#if:{{{arxiv|}}}|
+! arXiv author id
+{{!}} [http://arxiv.org/a/{{{arxiv}}} arXiv profile]
+{{!}}-
+}}
 {{#if:{{{scholar|}}}|
 ! Google Scholar
 {{!}} [https://scholar.google.com/citations?user={{{scholar}}} Google Scholar profile]
@@ -93,6 +98,7 @@
 | orcid                  =
 | researcherid           =
 | scopus                 =
+| arxiv                  =
 | scholar                =
 | loci                   =
 | website                =
