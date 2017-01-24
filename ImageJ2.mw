@@ -78,17 +78,10 @@ For more details, see the [http://developer.imagej.net/2010/10/29/imagejdev-pres
 ImageJ2 is funded from a variety of sources. See the [[Funding]] page for details.
 
 == Publications ==
-* {{Citation | last = Schindelin | first = J.
-| last2 = Rueden | first2 = C. T.
-| last3 = Hiner | first3 = M. C.
-| last4 = Eliceiri | first4 = K. W.
-| year = 2015
-| journal = Molecular Reproduction and Development
-| url = http://onlinelibrary.wiley.com/doi/10.1002/mrd.22489/full
-| title = The ImageJ ecosystem: An open platform for biomedical image analysis
-| volume = 
-| pages = 
-| pmid = 26153368}}.
+* {{Publication | ImageJ2-Preprint}}
+* {{Publication | Ecosystem}}
+
+For the moment, we suggest using "The ImageJ ecosystem" paper for citations. But we recommend both of the above for learning about ImageJ2 in depth.
 
 == See also ==
 * "The ImageJ2 platform, and the Fiji distribution of ImageJ" [ [https://vimeo.com/140929687 video], [https://imagej.github.io/presentations/2015-09-03-imagej2-and-fiji/ slides] ]
