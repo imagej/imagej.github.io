@@ -49,6 +49,13 @@ We recommend Fiji as the preferred version of ImageJ.
 |[[User:Schindelin#A_short_story_about_Fiji|Dec. 2007]]
 |Active
 |-
+|
+|[[ImageJFX]]
+|{{Person|cmongis}}
+| ImageJFX is a new user interface for ImageJ, built using [[wikipedia:JavaFX|JavaFX]].
+|2015
+|Active
+|-
 |[[File:imagesxm-icon.png|64px]]
 |[[ImageSXM]]
 |Steve Barrett
