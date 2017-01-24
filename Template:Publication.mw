@@ -102,6 +102,18 @@
 | pages = 480-481
 | pmid = 26020498}} ({{Scholar | cluster=11063546308697568941}}).
 
+| Ecosystem = {{Citation | last = Schindelin | first = J.
+| last2 = Rueden | first2 = C. T.
+| last3 = Hiner | first3 = M. C.
+| last4 = Eliceiri | first4 = K. W.
+| year = 2015
+| journal = Molecular Reproduction and Development
+| url = http://onlinelibrary.wiley.com/doi/10.1002/mrd.22489/full
+| title = The ImageJ ecosystem: An open platform for biomedical image analysis
+| volume = 
+| pages = 
+| pmid = 26153368}} ({{Scholar | cluster=2492786182850473580}}).
+
 | Endrov = {{Citation | last = Henriksson | first = J.
 | last2 = Hench | first2 = J.
 | last3 = Tong | first3 = Y. G.
@@ -204,6 +216,17 @@
 | title = ImageJ-MATLAB: a bidirectional framework for scientific image analysis interoperability
 | pmid = 27797782
 | doi = 10.1093/bioinformatics/btw681}}.
+
+| ImageJ2-Preprint = {{Citation | last = Rueden | first2 = C. T.
+| last2 = Schindelin | first = J.
+| last3 = Hiner | first3 = M. C.
+| last4 = DeZonia | first3 = B. E.
+| last5 = Walter | first3 = A. E.
+| last6 = Eliceiri | first4 = K. W.
+| year = 2017
+| journal = arXiv preprint
+| url = http://arxiv.org/abs/1701.05940
+| title = ImageJ2: ImageJ for the next generation of scientific image data}}.
 
 | ImageJ2 = {{Citation | last = Schindelin | first = J.
 | last2 = Rueden | first2 = C. T.
