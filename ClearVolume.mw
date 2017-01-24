@@ -1,7 +1,7 @@
 {{Infobox
 | name = ClearVolume
 | logo = [[File:ClearVolumeLogo.png]]
-| software = ImageJ
+| software = Fiji
 | author = {{Person|Jug}}, {{Person|royerloic}}, Martin Weigert, {{Person|skalarproduktraum}}
 | maintainer = {{Person|Jug}}
 | source                 = {{GitHub|org=ClearVolume|repo=imglib2-clearvolume}}
