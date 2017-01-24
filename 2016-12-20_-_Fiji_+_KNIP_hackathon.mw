@@ -121,7 +121,7 @@ File:hackdd16-xmas.jpg|caption|Merry Christmas!
 * continued work on the [[Scenery]] 3D rendering backend for [[ThreeDViewer]] and [[ClearVolume]] 2.0:
 ** introduced the library and its features to the community
 ** fixed native code dependencies, included CI builds
-** worked on the Vulkan ([https://www.khronos.org/vulkan]) backend for higher rendering performance
+** worked on the Vulkan ([https://www.khronos.org/vulkan]) backend for higher rendering performance, which finally got merged (see {{GitHub|org=ClearVolume|repo=scenery|pr=31|label=ClearVolume/scenery#31}})
 ** helped various people getting scenery running on their machine
 * fixed some bugs in [[ClearVolume]], together with {{Person|royerloic}}
 * discussed future directions for [[ThreeDViewer]]/[[ClearVolume]]/[[BigDataViewer]] with {{Person|Kharrington}}, {{Person|royerloic}}, {{Person|tpietzsch}} and {{Person|Saalfeld}}
