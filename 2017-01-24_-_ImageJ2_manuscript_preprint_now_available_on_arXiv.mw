@@ -3,7 +3,7 @@ A technical manuscript describing [[ImageJ2]] in depth is now available on [http
 {{BigLink | url=http://arxiv.org/abs/1701.05940}}
 
 
-This manuscript provides a technical overview of [[ImageJ2]], including in-depth description of the [[architecture]], with sections on [[SciJava Common]], [[ImageJ Common]], [[SCIFIO]], [[ImageJ Ops]], [[ImageJ Legacy]], and the [[ImageJ Updater]], as well as a discussion on how ImageJ2 improves upon key areas of functionality, [[extensibility]], [[reproducibility]], usability, performance, [[compatibility]] and community.
+This manuscript provides a technical overview of [[ImageJ2]], including in-depth description of the [[architecture]], with sections on [[SciJava Common]], [[ImageJ Common]], [[SCIFIO]], [[ImageJ Ops]], [[ImageJ Legacy]], and the [[ImageJ Updater]], as well as a discussion on how ImageJ2 improves upon key areas of functionality, [[extensibility]], [[reproducibility]], usability, performance, [[compatibility]] and [[community]].
 
 ==Abstract==
 
