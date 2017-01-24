@@ -112,6 +112,31 @@ File:hackdd16-xmas.jpg|caption|Merry Christmas!
 
 == Hackathon progress ==
 
+=== Tim-Oliver Buchholz ===
+* Participated in technical discussions about ThreeDViewer, BigDataViewer and the next generation of viewers used in [[KNIME Image Processing]]. 
+* Participated in discussions about [[ImageJ Ops]] based feature extraction.
+* Worked on the integration of the BigDataViewer as new standard viewer in [[KNIME Image Processing]]. 
+
+=== Robert Haase ===
+* Participated in discussions about [[Fiji]] release cycle and [[ImageJ Ops]] based feature extraction
+* Bugfixed a tool for visualising Meshes in the good old [[3D Viewer]] which were derived from ArrayList<RandomAccessibleInterval<BoolType>>s as an intermediate solution until the [[ThreeDViewer]] is ready.
+* Built an ImageJ-Ops based particle analyser, which will in the future allow processing 3D images in a way like 2D images were processed using the good old [[Particle Analysis]] tool
+* With {{Person|maarzt}}, {{Person|Jug}}, and {{Person|Rueden}} we launched the work on a <code>PlotService</code> for ImageJ2.
+
+=== Kyle Harrington ===
+* Participated in technical discussions, especially those focused on the next generation ThreeDViewer
+* Finished integrating imagej-ops usage into Funimage (see [https://github.com/funimage/funimage/pull/26 Funimage#26])
+* Unifying Mesh data structure from ops with [https://github.com/imagej/imagej-mesh imagej-mesh] file loading with {{Person|rimadoma}}
+* More [[ThreeDViewer]] enhancements
+
+=== Florian Jug ===
+* With {{Person|Rueden}}, overhauled the [[SciJava Common]] [[logging]] mechanism ({{GitHub|org=scijava|repo=scijava-common|pr=253|label=scijava/scijava-common#253}}).
+* With {{Person|Rueden}},{{Person|Haesleinhuepf}},{{Person|Pietzsch}}, and {{Person|Saalfeld}} split up the necessary work in order to cut stable releases of Fiji (biannually). This 'earned' me the status of 'Grand Poobah'. ;)
+* Worked on an 'indago' parent POM for DAIS related projects and started using it for the new tracker 'Tr2d'.
+* Worked on the new tracker 'Tr2d'. New features: improved leveraged editing; tracklet export; improved BDV overlays.
+* With {{Person|royerloic}} and {{Person|maweigert}} we have fixed some reported [[ClearVolume]] bugs and released a new version after testing on Win/Linux/MaxOS.
+* With {{Person|maarzt}}, {{Person|Haesleinhuepf}}, and {{Person|Rueden}} we launched the work on a <code>PlotService</code> for ImageJ2.
+
 === Curtis Rueden ===
 * With {{Person|Alecneevel}} and {{Person|Saalfeld}}, completed update of ImageJ web resources to support HTTPS (see [[2016-12-29 - ImageJ web resources now support HTTPS|separate news post]]).
 * With {{Person|Jug}}, overhauled the [[SciJava Common]] [[logging]] mechanism ({{GitHub|org=scijava|repo=scijava-common|pr=253|label=scijava/scijava-common#253}}).
@@ -119,23 +144,6 @@ File:hackdd16-xmas.jpg|caption|Merry Christmas!
 * With {{Person|Rdom}}, add a validater callback for parameter validation ({{GitHub|org=scijava|repo=scijava-common|commit=66ed844ee76a264ca83629f0fef50c9b726c8897|label=scijava/scijava-common@66ed844e}}, {{GitHub|org=scijava|repo=scijava-common|commit=70c50f48cc20cec0a747a000778f013c7380155d|label=scijava/scijava-common@70c50f48}}).
 * With {{Person|maarzt}}, began work on a <code>PlotService</code> for ImageJ2 ([https://github.com/imagej/imagej-ui-swing/compare/plot-service...maarzt:plot-service maarzt/imagej-ui-swing@plot-service]).
 * Participated in technical discussions with various people, including a "big-picture" status update for ImageJ2 covering my [[User:Rueden#Primary_projects|primary priorities]]; see [[#Technical_discussions|Technical discussions]] section below.
-
-=== Kyle Harrington ===
-
-* Participated in technical discussions, especially those focused on the next generation ThreeDViewer
-* Finished integrating imagej-ops usage into Funimage (see [https://github.com/funimage/funimage/pull/26 Funimage#26])
-* Unifying Mesh data structure from ops with [https://github.com/imagej/imagej-mesh imagej-mesh] file loading with {{Person|rimadoma}}
-* More [[ThreeDViewer]] enhancements
-
-=== Robert Haase ===
-* Participated in discussions about [[Fiji]] release cycle and [[ImageJ Ops]] based feature extraction
-* Bugfixed a tool for visualising Meshes in the good old [[3D Viewer]] which were derived from ArrayList<RandomAccessibleInterval<BoolType>>s as an intermediate solution until the [[ThreeDViewer]] is ready.
-* Built an ImageJ-Ops based particle analyser, which will in the future allow processing 3D images in a way like 2D images were processed using the good old [[Particle Analysis]] tool
-
-=== Tim-Oliver Buchholz ===
-* Participated in technical discussions about ThreeDViewer, BigDataViewer and the next generation of viewers used in [[KNIME Image Processing]]. 
-* Participated in discussions about [[ImageJ Ops]] based feature extraction.
-* Worked on the integration of the BigDataViewer as new standard viewer in [[KNIME Image Processing]]. 
 
 == Technical discussions ==
 
