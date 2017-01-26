@@ -302,6 +302,19 @@
 | volume = 4(1)
 | pages = e17}}.
 
+| MorphoLibJ = {{Citation | last = Legland | first = D.
+| last2 = Arganda-Carreras | first2 = I.
+| last3 = Andrey | first3 = P.
+| year = 2016
+| journal = Bioinformatics
+| url = https://doi.org/10.1093/bioinformatics/btw413
+| title = MorphoLibJ: integrated library and plugins for mathematical morphology with ImageJ
+| volume = 32(22)
+| pages = 3532-3534
+| publisher=Oxford Univ Press
+| pmid = 27412086
+| doi = 10.1093/bioinformatics/btw413}} ({{Scholar | cluster=15755915495942198773}}).
+
 | QuickPALM = {{Citation | last = Henriques | first = R.
 | last2 = Lelek | first2 = M.
 | last3 = Fornasiero | first3 = E. F.
