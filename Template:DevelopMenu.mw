@@ -32,12 +32,12 @@
 {{MenuItem | [[How_to_contribute_to_an_existing_plugin_or_library|Contributing to a plugin]] }}
 {{MenuItem | [[Distribution|Distributing your plugins]] }}
 {{MenuItem | [[Development Lifecycle|Development lifecycle]] }}
-{{MenuItem | [[Building_a_pom| Building a POM]] }}
+{{MenuItem | [[Building a POM]] }}
 <hr>
 {{MenuItem | [[Developing ImageJ in Eclipse|Developing with Eclipse]] }}
 {{MenuItem | [[Debugging Exercises|Hands-on debugging]] }}
-{{MenuItem | [[Adding_new_ops|Adding new ops]] }}
-{{MenuItem | [[Adding_new_file_formats|Adding new formats]] }}
+{{MenuItem | [[Adding new ops]] }}
+{{MenuItem | [[Adding new formats]] }}
 {{MenuItem | [[Developing using native libraries|Using native libraries]] }}
 {{MenuItem | [[Tips for developers]] }}
 {{MenuItem | [[Tips for C++ developers]] }}
