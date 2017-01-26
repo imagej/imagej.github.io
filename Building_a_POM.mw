@@ -1,40 +1,49 @@
-{{Development | tutorials}}
-
-When you start a new [[Maven]] project, one of the first things you will do is create an appropriate [https://maven.apache.org/pom.html pom.xml]. The POM determines what resources are available to your project. Given the scope of the ImageJ project, there are several possible starting points. The purpose of this guide is to help you select a pom.xml based on your individual project's goals.
+{{Development | tutorials}}When you start a new [[Maven]] project, one of the first things you will do is create an appropriate [https://maven.apache.org/pom.html pom.xml]. The POM determines what resources are available to your project. Given the scope of the ImageJ project, there are several possible starting points. The purpose of this guide is to help you select a pom.xml based on your individual project's goals.
 
 = Using ImageJ =
 
 <source lang="xml">
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
- http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>net.imagej</groupId>
-		<artifactId>pom-imagej</artifactId>
-		<version>14.8.0</version>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>12.0.0</version>
 		<relativePath />
 	</parent>
 
-	<artifactId>my-project</artifactId>
+	<groupId>[MY-GROUP-ID]</groupId>
+	<artifactId>[MY-ARTIFACT-ID]</artifactId>
 	<version>0.1.0-SNAPSHOT</version>
 
-<!-- TODO: Fill out these sections -->
-	<name></name>
-	<description></description>
+	<name>[MY-PROJECT]</name>
+	<description>[MY-DESCRIPTION]</description>
+	<url>https://github.com/[MY-ORG]/[MY-REPO]</url>
+	<inceptionYear>[MY-PROJECT'S-FIRST-YEAR]</inceptionYear>
+	<organization>
+		<name>[MY-ORGANIZATION-NAME]</name>
+		<url>[MY-ORGANIZATION-WEB-SITE]</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>CC0 1.0 Universal License</name>
+			<url>http://creativecommons.org/publicdomain/zero/1.0/</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 
 	<developers>
 		<developer>
-			<id></id>
-			<name></name>
-			<email></email>
-			<url>r</url>
-			<organization></organization>
-			<organizationUrl></organizationUrl>
+			<id>[MY-GITHUB-ID]</id>
+			<name>[MY-FULL-NAME]</name>
+			<url>https://imagej.net/User:[MY-IMAGEJ-WIKI-ACCOUNT]</url>
 			<roles>
+				<!-- see https://imagej.net/Team -->
 				<role>founder</role>
 				<role>lead</role>
 				<role>developer</role>
@@ -43,18 +52,49 @@ When you start a new [[Maven]] project, one of the first things you will do is c
 				<role>support</role>
 				<role>maintainer</role>
 			</roles>
-			<timezone>-6</timezone>
 		</developer>
 	</developers>
 	<contributors>
-		<!--
-		NB: Need a least one element to override the parent.
-		See: https://issues.apache.org/jira/browse/MNG-5220
-		-->
-		<contributor><name>None</name></contributor>
+		<contributor>
+			<name>None</name>
+		</contributor>
 	</contributors>
 
-<!-- TODO: See Optional Dependencies section -->
+	<mailingLists>
+		<mailingList>
+			<name>ImageJ Forum</name>
+			<archive>http://forum.imagej.net/</archive>
+		</mailingList>
+	</mailingLists>
+
+	<scm>
+		<connection>scm:git:git://github.com/[MY-ORG]/[MY-REPO]</connection>
+		<developerConnection>scm:git:git@github.com:[MY-ORG]/[MY-REPO]</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/[MY-ORG]/[MY-REPO]</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>http://github.com/[MY-ORG]/[MY-REPO]/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>None</system>
+	</ciManagement>
+
+	<properties>
+		<main-class>[MY-MAIN-CLASS-INCLUDING-PACKAGE]</main-class>
+		<package-name>[MY-PACKAGE-PREFIX]</package-name>
+		<license.licenseName>cc0</license.licenseName>
+		<license.copyrightOwners>N/A</license.copyrightOwners>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
 		<!-- ImageJ dependencies -->
 		<dependency>
@@ -69,17 +109,11 @@ When you start a new [[Maven]] project, one of the first things you will do is c
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
-
-	<repositories>
-		<!-- NB: for project parent, in case of partial checkout -->
-		<repository>
-			<id>imagej.public</id>
-			<url>http://maven.imagej.net/content/groups/public</url>
-		</repository>
-	</repositories>
 </project>
 </source>
+
+* Replace the <code>[MY-...]</code> blocks with appropriate information.
+* Replace license-related blocks with your chosen project license.
 
 == Optional dependencies ==
 
@@ -97,11 +131,5 @@ Simply copy and paste any or all of these into your POM's <code><dependency></co
 <dependency>
 	<groupId>net.imagej</groupId>
 	<artifactId>imagej-legacy</artifactId>
-</dependency>
-
-<!-- Run graphically with the ImageJ2 user interface-->
-<dependency>
-	<groupId>net.imagej</groupId>
-	<artifactId>imagej-ui-swing</artifactId>
 </dependency>
 </source>
