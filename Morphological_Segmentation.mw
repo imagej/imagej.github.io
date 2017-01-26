@@ -165,7 +165,7 @@ You should now find the plugin under the sub-menu {{bc | Plugins | MorphoLibJ | 
 
 == Citation ==
 If you need to cite the plugin, please do so by citing the following paper:
-* David Legland, Ignacio Arganda-Carreras, Philippe Andrey; [http://bioinformatics.oxfordjournals.org/content/early/2016/07/19/bioinformatics.btw413 MorphoLibJ: integrated library and plugins for mathematical morphology with ImageJ]. Bioinformatics 2016; 32 (22): 3532-3534. doi: 10.1093/bioinformatics/btw413
+* {{Publication | MorphoLibJ}}
 
 To cite the implementation, [[MorphoLibJ]]'s code repository has its own [http://dx.doi.org/10.5281/zenodo.50694 DOI].
 
@@ -187,3 +187,4 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 [[Category:Plugins]]
 [[Category:Segmentation]]
 [[Category:Mathematical_morphology]]
+[[Category:Citable]]
