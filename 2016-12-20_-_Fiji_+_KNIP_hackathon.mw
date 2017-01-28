@@ -154,6 +154,13 @@ File:hackdd16-xmas.jpg|caption|Merry Christmas!
 * With {{Person|maarzt}}, began work on a <code>PlotService</code> for ImageJ2 ([https://github.com/imagej/imagej-ui-swing/compare/plot-service...maarzt:plot-service maarzt/imagej-ui-swing@plot-service]).
 * Participated in technical discussions with various people, including a "big-picture" status update for ImageJ2 covering my [[User:Rueden#Primary_projects|primary priorities]]; see [[#Technical_discussions|Technical discussions]] section below.
 
+=== Tobias Pietzsch ===
+* With {{Person|JeanYvesTinevez}}, worked on Mastodon/TrackMate3, in particular the unified handling of adapter views onto the main tracking model.
+* With {{Person|Saalfeld}}, worked towards integration of caching mechanisms into unified scijava/imglib2 cache; generalization of BigDataViewer cache.
+* Added support in [https://github.com/scijava/ui-behaviour ui-behaviour] for triggering multiple behaviours in parallel.
+* Documented [https://github.com/scijava/ui-behaviour ui-behaviour] configuration [https://github.com/scijava/ui-behaviour/wiki/InputTrigger-syntax syntax]
+* Assisted with various BigDataViewer-related projects.
+
 == Technical discussions ==
 
 === Programmers Anonymous ===
