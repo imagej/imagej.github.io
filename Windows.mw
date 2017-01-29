@@ -16,8 +16,6 @@ If text and other UI elements appear tiny on your [[wikipedia:HiDPI|HiDPI]] disp
 * Verify that you are running Windows 10 (Windows 7 and 8 do not do HiDPI scaling).
 * In {{bc|ImageJ.exe|Properties|Compatibility}}, ensure that the "Disable display scaling on high DPI settings" option is ''not'' enabled.
 
-= Troubleshooting =
-
 = Frequently Asked Questions =
 See the [[Frequently Asked Questions]] page.
 
