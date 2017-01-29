@@ -6,11 +6,17 @@
 = Installation =
 {{AvoidProgramFiles}}
 
-= HiDPI displays =
-If text and other UI elements appear tiny on your HiDPI display, [[Troubleshooting#Checking_the_Java_version|double check that you are running the 64-bit version of Java]]. If you use 64-bit Java on Windows 10, then HiDPI scaling will be performed and ImageJ will be a more reasonable size.
+= Troubleshooting =
+See also the [[Troubleshooting]] page.
+
+== HiDPI displays ==
+If text and other UI elements appear tiny on your [[wikipedia:HiDPI|HiDPI]] display, then check the following:
+
+* [[Troubleshooting#Checking_the_Java_version|Double check that you are running the 64-bit version of Java]].
+* Verify that you are running Windows 10 (Windows 7 and 8 do not do HiDPI scaling).
+* In {{bc|ImageJ.exe|Properties|Compatibility}}, ensure that the "Disable display scaling on high DPI settings" option is ''not'' enabled.
 
 = Troubleshooting =
-See the [[Troubleshooting]] page.
 
 = Frequently Asked Questions =
 See the [[Frequently Asked Questions]] page.
