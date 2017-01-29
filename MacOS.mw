@@ -1,5 +1,7 @@
 {{Minibox | logo=Osx.png | blurb=[[wikipedia:Think different|Think different]].}}[[wikipedia:macOS|macOS]] (formerly called Mac OS X, then OS X) is [[wikipedia:Apple Inc.|Apple]]'s desktop operating system. It is [https://www.netmarketshare.com/operating-system-market-share.aspx the second most common desktop computing platform] after [[Windows]]. This page details issues specific to using [[ImageJ]] on macOS systems.
 
+
+{{TOC}}
 = Installation =
 See also the [[Java 8]] page for OS-X-specific issues.
 
