@@ -2,7 +2,7 @@
 | name                   = Register Virtual Stack Slices
 | software               = Fiji
 | author                 = Albert Cardona ([mailto:acardona@ini.phys.ethz.ch acardona@ini.phys.ethz.ch]), {{Person|Iarganda}} and Stephan Saalfeld
-| maintainer             = Ignacio Arganda-Carreras ([mailto:iarganda@mit.edu iarganda@mit.edu])
+| maintainer             = {{Person|Iarganda}}
 | filename               = {{Maven | g=sc.fiji | a=register_virtual_stack_slices}}
 | source                 = {{GitHub|org=fiji|repo=register_virtual_stack_slices}}
 | released               = 2008
