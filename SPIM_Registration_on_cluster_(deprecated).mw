@@ -1,3 +1,5 @@
+{{Warning | '''''Please Note: This version of the software is outdated. We highly recommend using the new [[Automated workflow for parallel Multiview Reconstruction|automated workflow]]. It is much more user friendly, efficient and versatile using full automation of the processing'''''}}
+
 {{Infobox
 | name                   = Selective Plane Illumination Microscopy Registration on a cluster
 | software               = Fiji
@@ -8,12 +10,7 @@
 | latest version         = May 2013
 | category               = [[:Category:Registration|Registration]]
 | website                = [http://www.mpi-cbg.de/research/research-groups/pavel-tomancak.html Pavel Tomancak's homepage]
-}}
-
-= Important Note =
-{{Warning | '''''Please Note: This version of the software is outdated. We highly recommend using the new [[Automated workflow for parallel Multiview Reconstruction|automated workflow]]. It is much more user friendly, efficient and versatile using full automation of the processing'''''}}
-
-= Introduction =
+}}= Introduction =
 
 Light sheet microscopy such as SPIM produces enormous amounts of data especially when used in long-term time-lapse mode. In order to view and in some cases analyze the data it is necessary to process them which involves registration of the views within time-points, correction of sample drift across the time-lapse registration, fusion of data into single 3d image per time-point which may require multiview deconvolution and 3d rendering of the fused volumes. Here we describe how to perform such processing in parallel on a cluster computer.
 
