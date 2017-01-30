@@ -14,6 +14,7 @@
 This Fiji plugin loads trajectories from TrackMate (exported via the action "Export trajectories"), characterize them using [https://github.com/thorstenwagner/TraJ TraJ] and classificate them into normal diffusion, subdiffusion, confined diffusion and directed/active motion by a random forest approach (through Renjin). It supports local analysis and is therefore able to split a single trajectory into segments with different motion types.
 
 For detailed information please see:
+
 [http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0170165 Wagner T, Kroll A, Haramagatti CR, Lipinski HG, Wiemann M (2017) Classification and Segmentation of Nanoparticle Diffusion Trajectories in Cellular Micro Environments. PLOS ONE 12(1): e0170165]
 
 
