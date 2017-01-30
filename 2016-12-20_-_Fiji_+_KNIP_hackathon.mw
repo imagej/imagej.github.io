@@ -161,6 +161,13 @@ File:hackdd16-xmas.jpg|caption|Merry Christmas!
 * Documented [https://github.com/scijava/ui-behaviour ui-behaviour] configuration [https://github.com/scijava/ui-behaviour/wiki/InputTrigger-syntax syntax]
 * Assisted with various BigDataViewer-related projects.
 
+=== Patrick Winter ===
+* Improvements to KNIME SLURM integration:
+** Many bugfixes (specifically for the use of image processing workflows)
+** Implemented status view for more detailed information about the state of running jobs
+* Got KNIME SLURM integration to run with the MPI-CBG Dresden cluster
+* Achieved significant speed ups by running parts of an image processing workflow on the cluster
+
 == Technical discussions ==
 
 === Programmers Anonymous ===
