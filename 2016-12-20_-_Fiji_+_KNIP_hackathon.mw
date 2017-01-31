@@ -168,12 +168,17 @@ File:hackdd16-xmas.jpg|caption|Merry Christmas!
 * Got KNIME SLURM integration to run with the MPI-CBG Dresden cluster
 * Achieved significant speed ups by running parts of an image processing workflow on the cluster
 
+=== JeanYvesTinevez ===
+* With {{Person|Pietzsch}}, worked on Mastodon/TrackMate3, in particular view colouring by numerical features calculated on a model.
+* With {{Person|Pietzsch}},extended the [[MaMuT]] so that it can be used for 2D over time properly.
+
+
 == Technical discussions ==
 
 === Programmers Anonymous ===
 * Robert is addicted to ImageJ.
 * Ulrik can only do snapshot releases.
-* Florian is doing to much at once... at least he has a car! (Yes Klim, you can join...)
+* Florian is doing too much at once... at least he has a car! (Yes Klim, you can join...)
 
 === Stable releases of Fiji ===
 * We agreed to cut a stable release of Fiji once every six months.
