@@ -5,7 +5,7 @@
 | maintainer             = [https://github.com/dlegland David Legland], {{Person|Iarganda}}
 | source                 = {{GitHub|org=ijpb|repo=MorphoLibJ}}
 | released               = July 3<sup>rd</sup>, 2014
-| latest version         = September 28<sup>th</sup>, 2016 ([[MorphoLibJ]] v1.3.1)
+| latest version         = February 1<sup>st</sup>, 2017 ([[MorphoLibJ]] v1.3.2)
 | status                 = stable, active
 | category               = [[:Category:Analysis|Analysis]], [[:Category:Filtering|Filtering]], [[:Category:Segmentation|Segmentation]], [[:Category:Mathematical_morphology|Mathematical morphology]]
 }}MorphoLibJ is a collection of [[wikipedia:Mathematical morphology|mathematical morphology]] methods and '''plugins''' for ImageJ, created at [http://www-ijpb.versailles.inra.fr/en/bc/equipes/modelisation-imagerie/ INRA-IJPB Modeling and Digital Imaging lab].
