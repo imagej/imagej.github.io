@@ -172,6 +172,9 @@ File:hackdd16-xmas.jpg|caption|Merry Christmas!
 * With {{Person|Pietzsch}}, worked on Mastodon/TrackMate3, in particular view colouring by numerical features calculated on a model.
 * With {{Person|Pietzsch}},extended the [[MaMuT]] so that it can be used for 2D over time properly.
 
+=== Christian Dietz ===
+* With Marcel Wiedenmann, worked on processing of very large images in ops
+* With Tim-Oliver Buchholz, worked on BDV integration in KNIP
 
 == Technical discussions ==
 
