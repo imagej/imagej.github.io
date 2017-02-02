@@ -18,8 +18,8 @@ __TOC__
 
 == Installing ==
 
-	To install the VTEA plugin use, [[How to follow a 3rd party update site]], 
-	with the Fiji update site: http://sites.imagej.net/ICBM-IUPUI/.
+	To install the VTEA plugin use, [[How to follow a 3rd party update site]] and check the update site:
+	"Volumetric Tissue Exploration and Analysis"
 	
 	{{Notice | VTEA is still under active development.}}
 
