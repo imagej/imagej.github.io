@@ -5,7 +5,7 @@
 | maintainer            = Seth Winfree ([mailto:winfrees@iu.edu])
 | source                = {{GitHub|org=icbm-iupui|repo=volumetric-tissue-exploration-analysis}} 
 | status                = v0.3.7, beta
-| category              = [[:Category:Segmentation|Segmentation]],[[:Category:Visualization|Visualization]],[[:Category:Plugins|Plugins]]
+| category              = [[:Category:Plugins|Plugins]],[[:Category:Segmentation|Segmentation]],[[:Category:Visualization|Visualization]],[[:Category:Particle analysis|Particle analysis]]
 }}
 __TOC__
 
@@ -43,3 +43,4 @@ The utility of VTEA and 3D tissue cytometry was demonstrated in the following pu
 [[Category:Visualization]]
 [[Category:Plugins]]
 [[Category:Citable]]
+[[Category:Particle analysis]]
