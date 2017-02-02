@@ -19,9 +19,34 @@ __TOC__
 == Installing ==
 
 	To install the VTEA plugin use, [[How to follow a 3rd party update site]] and check the update site:
-	"Volumetric Tissue Exploration and Analysis"
-	
-	{{Notice | VTEA is still under active development.}}
+	"Volumetric Tissue Exploration and Analysis" or follow the following three steps:
+
+===1. Start updater===
+
+[[File:Step_1.jpg|500px|Select "Update..." under "Help".]]
+
+Select "Update..." under "Help".
+
+===2. Add update site===
+
+[[File:Step_2.jpg|500px|Select "Manage update sites."]]
+
+Select "Manage update sites."
+
+===3. Select update site===
+
+[[File:Step_3.jpg| 500px |Check "Volumetric Tissue Expl..."]]
+
+Check "Volumetric Tissue Expl..."
+
+===4. Apply changes===
+
+[[File:Step_4.jpg| 500px |Check "Volumetric Tissue Expl..."]]
+
+Select "Apply changes".
+
+
+{{Notice | VTEA is still under active development.}}
 
 == Utility of VTEA ==
 
