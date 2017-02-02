@@ -1,0 +1,45 @@
+{{Infobox
+| name                  = vtea_
+| software              = Fiji
+| author                = Seth Winfree ([mailto:winfrees@iu.edu])
+| maintainer            = Seth Winfree ([mailto:winfrees@iu.edu])
+| source                = {{GitHub|org=icbm-iupui|repo=volumetric-tissue-exploration-analysis}} 
+| status                = v0.3.7, beta
+| category              = [[:Category:Segmentation|Segmentation]],[[:Category:Visualization|Visualization]],[[:Category:Plugins|Plugins]]
+}}
+__TOC__
+
+
+
+=Volumetric Tissue Exploration and Analysis=
+
+{{Notice | VTEA is still under active development, use with caution.}}
+
+
+== The Role of VTEA ==
+
+== Features ==
+
+== Tutorials ==
+
+=== Processing ===
+
+=== Segmentation ===
+
+=== Analysis ===
+
+=== Visualization ===
+
+== Citing VTEA == 
+
+The utility of VTEA and 3D tissue cytometry was demonstrated in the following publication:
+
+== TODO ==
+
+{{guidetask|add workflow saving and export|implement ImageFlow(http://imageflow.danielsenff.de) approach|move out of development phase|complete conversion to SciJava framework}}
+
+
+[[Category:Segmentation]]
+[[Category:Visualization]]
+[[Category:Plugins]]
+[[Category:Citable]]
