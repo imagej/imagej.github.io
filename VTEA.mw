@@ -43,7 +43,7 @@ Check "Volumetric Tissue Expl..." and select "Close"
 
 [[File:Step_4.jpg| 500px |Check "Volumetric Tissue Expl..."]]
 
-Select "Apply changes".
+Select "Apply changes".  Upon restart, the plugin will be present under a new menu "IU_Tools".
 
 
 {{Notice | VTEA is still under active development.}}
