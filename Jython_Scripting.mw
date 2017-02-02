@@ -94,7 +94,7 @@ print(path)
 When running this code the result is an output like
 
 <source lang='python'>
-['/home/michael/Software/ImageJ.app/jars/Lib', '/home/michael/Software/ImageJ.app/jars/jython-shaded-2.5.3.jar/Lib', '__classpath__', '__pyclasspath__/']
+['/home/michael/Software/ImageJ.app/jars/Lib', '/home/michael/Software/ImageJ.app/jars/jython-shaded-2.7.0.jar/Lib', '__classpath__', '__pyclasspath__/']
 </source>
 
 This tells us that the folder <code>jars/Lib/</code> inside our ImageJ/Fiji directory is the right place to save modules. As <code>Lib/</code> does not exist by default, we have to create it.
