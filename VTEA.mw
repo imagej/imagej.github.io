@@ -5,7 +5,7 @@
 | maintainer            = Seth Winfree ([mailto:winfrees@iu.edu])
 | source                = {{GitHub|org=icbm-iupui|repo=volumetric-tissue-exploration-analysis}} 
 | status                = v0.3.7, beta
-| category              = [[:Category:Plugins|Plugins]],[[:Category:Segmentation|Segmentation]],[[:Category:Visualization|Visualization]],[[:Category:Particle analysis|Particle analysis]]
+| category              = [[:Category:Segmentation|Segmentation]],[[:Category:Visualization|Visualization]],[[:Category:Plugins|Plugins]]
 }}
 __TOC__
 
@@ -13,16 +13,23 @@ __TOC__
 
 =Volumetric Tissue Exploration and Analysis=
 
-{{Notice | VTEA is still under active development, use with caution.}}
 
 
-== The Role of VTEA ==
+
+== Installing ==
+
+	To install the VTEA plugin use, [[How to follow a 3rd party update site]].  
+	VTEA is available at the Fiji update site: http://sites.imagej.net/ICBM-IUPUI/.
+	
+	{{Notice | VTEA is still under active development.}}
+
+== Utility of VTEA ==
 
 == Features ==
 
 == Tutorials ==
 
-=== Processing ===
+=== Image Processing ===
 
 === Segmentation ===
 
@@ -43,4 +50,3 @@ The utility of VTEA and 3D tissue cytometry was demonstrated in the following pu
 [[Category:Visualization]]
 [[Category:Plugins]]
 [[Category:Citable]]
-[[Category:Particle analysis]]
