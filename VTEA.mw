@@ -14,6 +14,14 @@ __TOC__
 =Volumetric Tissue Exploration and Analysis=
 
 
+{{Notice | VTEA is still under active development.}}
+
+
+We developed VTEA out of a need to unify the various tasks involved in image processing, segmenting, exploring and analyzing 3D fluorescence light microscopy image volumes ranging from 50-100 microns thick to 100s of microns thick.  Our solution is predicated upon the idea that image processing, segmentation and analysis of 3D image volumes is best implemented with a bidirectional interactive user interface from image processing to analysis.  
+
+Importantly, our solution is in its infancy.  In fact, the tools are relatively simple ones drawn from ImageJ's core functions.  These first tools represent only the beginning of our vision for VTEA.  We are currently planning to leverage the SciJava framework to make VTEA more extensible and continue to build both on existing tools in ImageJ/Fiji and our own novel approaches.
+
+This brief [[Media:Demostration.mov|video]] describes VTEA core behaviors.  Its application has been demonstrated in this [http://jasn.asnjournals.org/content/early/2017/02/01/ASN.2016091027.full paper].
 
 
 == Installing ==
@@ -45,8 +53,6 @@ Check "Volumetric Tissue Expl..." and select "Close"
 
 Select "Apply changes".  Upon restart, the plugin will be present under a new menu "IU_Tools".
 
-
-{{Notice | VTEA is still under active development.}}
 
 == Why VTEA ==
 
