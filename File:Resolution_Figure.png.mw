@@ -9,3 +9,6 @@ The third panel shows a Hough circle transform with eight steps.  Since the circ
 The fourth panel shows a Hough circle transform with sixteen steps.  Only the circle and 16-gon are radially symmetrical at this resolution, so their centroids have equally high scores, while the 4-gon and 8-gon have significantly lower scores.
 
 The fifth panel shows a Hough circle transform with 400 steps. The centroid of the circle now has a higher score than all of the other shapes, allowing for the circle to be distinguished even from the 16-gon.
+
+== Licensing ==
+{{cc-by-sa-4.0}}
