@@ -1,0 +1,70 @@
+{{Infobox
+| name                   = Hough Circle Transform
+| software               = plugin
+| author                  = {{Person|llamero}}
+| maintainer             = {{Person|llamero}}
+| source                 ={{GitHub|org=llamero|repo=Hough_Circle_Multithread}}
+| released               = February 4<sup>th</sup>, 2017
+| latest version       = February 4<sup>th</sup>, 2017 (v1.0.0)
+| status                 = stable, active
+| category               = [[:Category:Analysis|Analysis]], [[:Category:Feature Extraction|Feature Extraction]]
+}}
+
+== Introduction ==
+A [[wikipedia:Circle Hough Transform|Hough circle transform]] is an image transform that allows for circular objects to be extracted from an image, even if the circle is incomplete.  The transform is also selective for circles, and will generally ignore elongated ellipses.
+
+The method works by transforming an image around in a circle.  Each time a transformed pixel with an intensity greater than zero lands on a Cartesian coordinate, that coordinate gets one vote.  As the image continues to be transformed in a circle of a given radius, if a circle in the image has the same radius, then votes will accumulate at the centroid of this circle.  Therefore, by finding the maxima in the transform (points with the highest number of votes) you can find the centroid of circles within the image. A Hough circle transform can also be used to find circles of an unknown radius by searching a 3D transform space, where the the third dimension is the range of radii to be tested.  
+
+[[File:Hough_Intro.png|thumb|1000px|center|'''Hough circle transform is specific to circular objects.''' Left Panel: This panel shown the input data for the Hough circle transform. The data includes (clockwise from top left) a circle (radius 37 pixels), a square (length 37 pixels), an ellipse (minor axis 37 pixels), and a sectored circle (radius 37 pixels).
+
+Right Panel: This panel shows the output of a 24 step Hough circle transform. As you can see, the circle and the sectored circle converge to local maxima, while the square and ellipse do not, show the specificity of the transform for circular objects.]]
+
+== Running the Hough circle transform plugin ==
+The plugin runs on the current active image, and can also process stacks, but it cannot handle hyperstacks.  The plugin is also recordable for macro implementation, and multi-threaded to fast searching on the 3D Hough space.
+
+A key component to this plugin is that it always searches for the highest scoring circle first, then the second highest, and so on.  When a circle is found, all neighboring circles are removed to prevent the same circle from being found repeatedly.  This parameter can be adjusted to allow for increasing degrees of overlap between neighboring circles.
+
+[[File:Hough GUI.png]]
+
+=== Search Parameters ===
+The Hough circle plugin is designed to be adaptable to a variety of segmentation tasks, and as such, there are seven search parameters that can be adjusted to tune the search space.
+
+====Minimum/maximum search radius:====
+The minimum and maximum search radii are the lower and upper cutoff for the radii you expect to find in the image.  Circles outside this range will likely not be identified.  NOTE: The units are in pixels.
+
+====Radius search increment:====
+This determines the radius step size to use when creating the 3D Hough space from the minimum radius to the maximum radius.  This allows a trade-off between speed and resolution, where larger steps will give a linear increase in speed, but also decrease the precision of the measured radii.
+
+====Number of circles to be found:====
+This option sets the upper limit for the number of circles that can be found in the search.  If there are fewer than the specified number of circles in the image with a score above the threshold (see below), then the algorithm will only return the number of circles above the threshold.  Therefore, to always find the same number of circles, set the threshold to "0". 
+
+====Hough score threshold:==== 
+This option sets the minimum cutoff for the Hough score (i.e. number of votes) that a circle can have to count as a valid object.  The search starts with the highest scoring circle, and then  the second highest, and so on, so if there are a greater number of circles with a score above the threshold than the cap set in "Number of circles to be found", then only the highest scoring circles will be returned. 
+
+NOTE: When the transform resolution is changed (see below) the scores will change to.  This is because the resolution is effectively the number of rounds of voting, and therefore with a greater number of voting rounds, there will be more votes for the same circle. 
+
+====Hough transform resolution====
+This option sets the number of steps in each circle transform.  To reduce unnecessary computation, if the resolution is set arbitrarily high (such as the default value of 1000), the algorithm will automatically figure out the nearest number of unique transforms possible (i.e. unique integer x,y coordinates) for the maximum radius, and will use this value as the actual resolution in the transform series.  Reducing the resolution below the maximum value can greatly speed up the algorithm, but it will also decrease the transform's specificity and sensitivity.
+
+[[File:Resolution Figure.png|thumb|1000px|center|'''Effect of transform resolution on distinguishing various n-gons.''' 
+''Panel 1'' shows a circle and three regular polygons: a 4-gon, 8-gon, and 16-gon.
+''Panel 2'' shows a Hough circle transform with four steps. Since all the shapes are radially symmetrical with 90° rotations, they all have an equal peak score at their centroids.
+
+''Panel 3'' shows a Hough circle transform with eight steps. Since the circle, 8-gon, and 16-gon radially symmetrical with 45° rotations, they all have an equal peak score at their centroids. These shapes have a higher score at their centroids than the 4-gon, because it lacks 45° radial symmetry.
+
+''Panel 4'' shows a Hough circle transform with sixteen steps. Only the circle and 16-gon are radially symmetrical at this resolution, so their centroids have equally high scores, while the 4-gon and 8-gon have significantly lower scores.
+
+''Panel 5'' shows a Hough circle transform with 400 steps. The centroid of the circle now has a higher score than all of the other shapes, allowing for the circle to be distinguished even from the 16-gon.]]
+
+====Clear neighbors radius ratio:====
+The 3D Hough search space approaches a local maxima.  Therefore, when a circle is found, the space around the local maxima needs to be removed to prevent the circle from being found a second time.  The radius of the Hough search space that is cleared is defined as a ratio of the radius of the circle found, meaning that large circles clear out more Hough search space than small circles.  
+
+By default, this ratio is set to be one, meaning that a circle of the same size and location as the one found is cleared from the entire search space.  This has the effect of eliminating all potential centroids within one radius of the found centroid.  This effectively excludes overlapping circles of a similar radius from the search.  To allow overlapping circles, this ratio can be reduced.  A ratio of "0" will result in the same circle being found repeatedly.  This means that perfectly concentric circles cannot be found in one run of the plugin, and rather need to be found iteratively by removing the found circles from the image and re-running the plugin.
+
+[[File:Clear Ratio.png|thumb|1000px|center|'''Adjusting the clear radius ratio to find overlapping circles.''' 
+
+The left panel shows the input data with a single circle on top and a pair of overlapping circles below. The next panel shows the resulting Hough circle transform (24 steps).
+
+The top right pair of panels show the effect of a clear ratio of 1.0, where when the first overlapping circle is found, the centroid of the neighboring circle is removed, resulting in only two high scoring circles being found.
+
+The bottom right pair of panels show the effect of a clear ratio of 0.2, where when the first overlapping circle is found, only its centroid is removed and the neighboring centroid is preserved for the neighboring circle to also be found, resulting in all three circles being found.]]
