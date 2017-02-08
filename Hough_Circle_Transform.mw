@@ -11,7 +11,7 @@
 }}
 
 == Introduction ==
-A [[wikipedia:Circle Hough Transform|Hough circle transform]] is an image transform that allows for circular objects to be extracted from an image, even if the circle is incomplete.  The transform is also selective for circles, and will generally ignore elongated ellipses.
+A [[wikipedia:Circle Hough Transform|Hough circle transform]] is an image transform that allows for circular objects to be extracted from an image, even if the circle is incomplete.  The transform is also selective for circles, and will generally ignore elongated ellipses.  The transform effectively searches for objects with a high degree of radial symmetry, with each degree of symmetry receiving one "vote" in  the search space.  By searching a 3D Hough search space, the transform can measure the centroid and radius of each circlular object in an image.
 
 [[File:Hough_Intro2.png|thumb|1000px|center|'''Hough circle transform is specific to circular objects.''' ''Left Panel:'' This panel shown the input data for the Hough circle transform. The data includes (clockwise from top left) a circle (radius 37 pixels), a square (length 37 pixels), an ellipse (minor axis 37 pixels), and a sectored circle (radius 37 pixels).
 
@@ -87,3 +87,10 @@ The left panel shows the input data with a single circle on top and a pair of ov
 The top right pair of panels show the effect of a clear ratio of 1.0, where when the first overlapping circle is found, the centroid of the neighboring circle is removed, resulting in only two high scoring circles being found.
 
 The bottom right pair of panels show the effect of a clear ratio of 0.2, where when the first overlapping circle is found, only its centroid is removed and the neighboring centroid is preserved for the neighboring circle to also be found, resulting in all three circles being found.]]
+
+====Reduce transform resolution:====
+Since all images will be pixels in a Cartesian coordinate system, transforms can only be to discrete integer coordinates (i.e. x=5,y=10).  Therefore, with an infinitely fine resolution, then when the next step of a transform is rounded to the nearest integer coordinate, it is possible that these are the same coordinates as the previous transform step.  This means that when the transform is performed, it will perform identical transformations for both these steps.  
+
+To speed up a Hough transform, you can find and remove all of the redundant transform steps before performing the transform, keeping only the set of unique transform steps.  The plugin performs this  check by removing all redundant transform steps for the maximum search radius, and then setting this as the new resolution for the subsequent radii.  This means the smaller radii will perform redundant transforms, but this is essential to ensure that each radius gets and equal number of voting rounds (or else large circles will always score higher than small circles).
+
+While speeding up the algorithm, the trade-off is that the transform steps are distributed anisotropically for the maximum radius (all subsequent radii will be isotropic).  Unchecking this box will result in the transform perform all of the specified transform steps, which can be be very computationally intensive for high resolution values.
