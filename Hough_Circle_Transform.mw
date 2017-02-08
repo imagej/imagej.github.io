@@ -38,7 +38,7 @@ Now you are ready to run the Hough transform (see below for detailed information
 
 If the circle found is correct, then gradually reduce the threshold until all the circles in the image are found.  This will give you the upper threshold bound.  Continue to decrease the threshold until an errant circle is detected, this will give you the lower threshold bound.  Set the threshold between the upper and lower bounds, and then run the transform on the full data set.
 
-== Running the Hough circle transform plugin ==
+== Running the Hough Circle Transform Plugin ==
 The plugin runs on the current active image, and can also process stacks, but it cannot handle hyperstacks.  The plugin is also recordable for macro implementation, and multi-threaded to fast searching on the 3D Hough space.
 
 A key component to this plugin is that it always searches for the highest scoring circle first, then the second highest, and so on.  When a circle is found, all neighboring circles are removed to prevent the same circle from being found repeatedly.  This parameter can be adjusted to allow for increasing degrees of overlap between neighboring circles.
