@@ -138,6 +138,10 @@ The Quiver Plot plugin is a stand alone plugin that needs to be installed manual
 
 3) Restart ImageJ/FIJI and the plugin will automatically show up in the plugin menu: {{bc | Plugins |Hough Circle Transform}}.
 
+== Acknowledgements ==
+
+This plugin is a modified version of the Hough circle transform implemented by [https://imagej.nih.gov/ij/plugins/hough-circles.html Hemerson Pistori and Eduardo Rocha Costa].  The transform algorithm was based off of an original implementation by [http://www.markschulze.net/ Mark Schulze].
+
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
 
