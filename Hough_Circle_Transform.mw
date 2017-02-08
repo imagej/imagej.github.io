@@ -5,7 +5,7 @@
 | maintainer             = {{Person|llamero}}
 | source                 ={{GitHub|org=llamero|repo=Hough_Circle_Multithread}}
 | released               = February 4<sup>th</sup>, 2017
-| latest version       = February 7<sup>th</sup>, 2017 (v0.5.1)
+| latest version       = February 7<sup>th</sup>, 2017 (v0.5.2)
 | status                 = stable, active
 | category               = [[:Category:Analysis|Analysis]], [[:Category:Feature Extraction|Feature Extraction]]
 }}
@@ -101,8 +101,46 @@ While speeding up the algorithm, the trade-off is that the transform steps are d
 The plugin contains several output options to both visualize the transform, as well as export the results of the analysis.
 
 ====''Raw Hough Transform Series''====
-[[File:Raw Output.png|thumb|150px|right| ]]
+[[File:Raw Output.png|thumb|100px|right| ]]
 This option will output a stack where each slice is the transform for specified radius.  Each slice is also labelled with the radius (in pixels) and resolution in the header.  If the inputted data was a multi-frame stack,
 then the transform will return a hyperstack, where the Z-dimension is each radius tested, and the T-dimension is each frame in the movie.
 
 To save memory, the Hough scores are set to an 8-bit scale, with the highest score in the transform search space getting a value of 255 (i.e. no saturation).  If the inputted data was a movie, each frame will be rescaled independently.
+
+====''Circle centroid(s) marked on the original image''====
+[[File:Mask Output.png|thumb|100px|right| ]]
+This option will draw a cross-hair pattern on each centroid found within the image, overlaid on a mask of the original image.  This output is especially useful for optimizing the Hough seach parameters.  The header of the image contains the number of circles that were found within the image.  If the inputted data was not a mask, it will calculate a mask with a threshold of 1.
+
+If the inputted data was a multi-frame stack, then the transform will return a stack, where the Z-dimension is each frame in the movie, and the header will show the number of circles found in each frame.
+
+====''Map of circle radius at centroids (pixel intensity = circle radius)''====
+[[File:Radius Output.png|thumb|100px|right| ]]
+This option returns an image where the centroid of each circle is marked by a single pixel whose intensity is equal to the radius of the circle, with the header of the image showing the number of circles that was found. To save memory, the image is formatted to 16-bit, meaning that the largest radius it can show is 65535 pixels.  If you need to export larger radii, export the results to a results table (see below).
+
+If the inputted data was a multi-frame stack, then the transform will return a stack, where the Z-dimension is each frame in the movie, and the header will show the number of circles found in each frame.
+
+====''Map of circle score at centroids (pixel intensity = circle score)''====
+This output is identical to the radius output (see above), however the pixel intensity is the Hough Score.  To save memory, the image is formatted to 16-bit, meaning that the highest score it can show is 65535.
+
+====''Export measurements to the results table''====
+[[File:Results Output.png|thumb|250px|right| ]]
+This will output the results of the transform to the results table.  The measurements exported are: 1) the X and Y coordinates of each centroid, 2) the radius (in pixels) of each circle, 3) the Hough score for each circle, 4) the number of circles found within that frame, 5) the actual resolution that the transform used (this is also effectively the highest Hough score possible), and 6) the frame in which the circle was found.
+
+If no circles were found in a frame, than that frame is excluded from the results table.
+
+== Installing the Quiver Plot Plugin == 
+
+The Quiver Plot plugin is a stand alone plugin that needs to be installed manually.  To install the plugin, use the following steps:
+
+1) Go to the [https://github.com/Llamero/Hough_Circle_Multithread/blob/master/Hough_Circle_Transform-0.5.2-SNAPSHOT.jar Github link] and download the file.
+
+2) Copy the file into the Plugins folder for ImageJ/FIJI.
+
+3) Restart ImageJ/FIJI and the plugin will automatically show up in the plugin menu: {{bc | Plugins |Hough Circle Transform}}.
+
+== License ==
+This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details. 
+
+[[Category:Visualization]]
