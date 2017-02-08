@@ -97,10 +97,10 @@ While speeding up the algorithm, the trade-off is that the transform steps are d
 
 ----
 
-===Output options:===
+===Output Options:===
 The plugin contains several output options to both visualize the transform, as well as export the results of the analysis.
 
-====''Raw Hough Transform Series''====
+====''Raw Hough transform series''====
 [[File:Raw Output.png|thumb|100px|right| ]]
 This option will output a stack where each slice is the transform for specified radius.  Each slice is also labelled with the radius (in pixels) and resolution in the header.  If the inputted data was a multi-frame stack,
 then the transform will return a hyperstack, where the Z-dimension is each radius tested, and the T-dimension is each frame in the movie.
