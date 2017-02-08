@@ -13,11 +13,30 @@
 == Introduction ==
 A [[wikipedia:Circle Hough Transform|Hough circle transform]] is an image transform that allows for circular objects to be extracted from an image, even if the circle is incomplete.  The transform is also selective for circles, and will generally ignore elongated ellipses.
 
+[[File:Hough_Intro.png|thumb|1000px|center|'''Hough circle transform is specific to circular objects.''' ''Left Panel:'' This panel shown the input data for the Hough circle transform. The data includes (clockwise from top left) a circle (radius 37 pixels), a square (length 37 pixels), an ellipse (minor axis 37 pixels), and a sectored circle (radius 37 pixels).
+
+''Right Panel:'' This panel shows the output of a 24 step Hough circle transform. As you can see, the circle and the sectored circle converge to local maxima, while the square and ellipse do not, show the specificity of the transform for circular objects.]]
+
 The method works by transforming an image around in a circle.  Each time a transformed pixel with an intensity greater than zero lands on a Cartesian coordinate, that coordinate gets one vote.  As the image continues to be transformed in a circle of a given radius, if a circle in the image has the same radius, then votes will accumulate at the centroid of this circle.  Therefore, by finding the maxima in the transform (points with the highest number of votes) you can find the centroid of circles within the image. A Hough circle transform can also be used to find circles of an unknown radius by searching a 3D transform space, where the the third dimension is the range of radii to be tested.  
 
-[[File:Hough_Intro.png|thumb|1000px|center|'''Hough circle transform is specific to circular objects.''' Left Panel: This panel shown the input data for the Hough circle transform. The data includes (clockwise from top left) a circle (radius 37 pixels), a square (length 37 pixels), an ellipse (minor axis 37 pixels), and a sectored circle (radius 37 pixels).
+== Image Processing Workflow ==
+The Hough circle transform finds circles based on the rotational symmetry of the perimeter.  Therefore, the data needs to be converted to this format for the transform to work.
 
-Right Panel: This panel shows the output of a 24 step Hough circle transform. As you can see, the circle and the sectored circle converge to local maxima, while the square and ellipse do not, show the specificity of the transform for circular objects.]]
+[[File:Data Setup.png|thumb|1000px|center|'''Data processing steps to perform a Hough circle transform on an XYZ stack.''' ''Panel 1:'' Create an average intensity projection of the XYZ stack to generate a 2D projection. ''Panel 2:'' Use the "Find Edges" tool to preserve just the perimeter of each object. ''Panel 3:'' Threshold the image from panel 2 and create a binary mask. ''Panel 4:'' Run the Hough circle transform.]]
+
+===Step 0: Convert XYZ(T) data to XY(T) data===
+If the data is a 3D stack, then collapse the data to 2D space using a maximum, sum, or average intensity projection.  The plugin can handle multiple frames (time-points) in a stack, but it can only search in 2D space.
+
+===Step 1: Find Edges===
+If the circular objects are solid rather than hollow, take the derivative of the image by running: {{bc | Process | Find Edges}}.  This will preserve just the perimeter of each object.
+
+===Step 2: Threshold===
+The algorithm does not weight the transform based on the intensity of the pixels, as this would result in bright, non-circular objects getting a very high score.  Therefore, any pixel with an intensity > 0 is given one vote per transform.  This means that any pixel you do not want to be part of the transform needs to be set to zero, which is best done by thresholding the image and creating a mask by running: {{bc | Image | Adjust | Threshold}}.  After choosing the right threshold for the data press "Apply" to create a mask with an inverting LUT (0 is white, 255 is black).  The LUT can be changed back to a normal gray-scale by going to {{bc | Image | Lookup Tables | Grays}}.
+
+===Step 3: Run the Hough Transform===
+Now you are ready to run the Hough transform (see below for detailed information on the various options).  If the number of circles is unknown or varies from frame to frame, then the best option is to set the search to one circle and perform the transform with the output set to show the results table, and the centroids marked on the original image.  This will give you the highest Hough score in the whole image, and will allow you to confirm that the circle found is correct and what its score was.  If the circle is incorrect, adjust the search parameters to narrow the Hough search space.  
+
+If the circle found is correct, then gradually reduce the threshold until all the circles in the image are found.  This will give you the upper threshold bound.  Continue to decrease the threshold until an errant circle is detected, this will give you the lower threshold bound.  Set the threshold between the upper and lower bounds, and then run the transform on the full data set.
 
 == Running the Hough circle transform plugin ==
 The plugin runs on the current active image, and can also process stacks, but it cannot handle hyperstacks.  The plugin is also recordable for macro implementation, and multi-threaded to fast searching on the 3D Hough space.
