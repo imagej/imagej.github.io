@@ -114,7 +114,7 @@ This option will draw a cross-hair pattern on each centroid found within the ima
 If the inputted data was a multi-frame stack, then the transform will return a stack, where the Z-dimension is each frame in the movie, and the header will show the number of circles found in each frame.
 
 ====''Map of circle radius at centroids (pixel intensity = circle radius)''====
-[[File:Radius Output.png|thumb|100px|right| ]]
+[[File:Radius Output2.png|thumb|100px|right| ]]
 This option returns an image where the centroid of each circle is marked by a single pixel whose intensity is equal to the radius of the circle, with the header of the image showing the number of circles that was found. To save memory, the image is formatted to 16-bit, meaning that the largest radius it can show is 65535 pixels.  If you need to export larger radii, export the results to a results table (see below).
 
 If the inputted data was a multi-frame stack, then the transform will return a stack, where the Z-dimension is each frame in the movie, and the header will show the number of circles found in each frame.
