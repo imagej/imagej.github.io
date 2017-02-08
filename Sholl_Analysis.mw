@@ -595,7 +595,7 @@ The [[Citing|authoritative reference]] for Fiji:
 		<span id="faq:precision"></span>'''Can I modify the way data is displayed?'''
 	</li>
 	<dl><dd>
-		Mostly, using {{bc|color=white|Analysis|Sholl|Metris &amp; Options}} (also listed in the ''More » Options...'' shortcut), including the number of decimal places reported by the ''Sholl Results'' table or the usage of scientific notation. To resize plots, use the  ''More »'' dropdown menu in the ''Options'' dialog.
+		Mostly, using {{bc|color=white|Analysis|Sholl|Metrics &amp; Options}} (also listed in the ''More » Options...'' shortcut), including the number of decimal places reported by the ''Sholl Results'' table or the usage of scientific notation. To resize plots, use the  ''More »'' dropdown menu in the ''Options'' dialog.
 	</dd></dl>	
 	<li>
 		<span id="faq:sholl-mask"></span>'''What is the ''Sholl mask''?'''
