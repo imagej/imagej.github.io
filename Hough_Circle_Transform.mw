@@ -5,7 +5,7 @@
 | maintainer             = {{Person|llamero}}
 | source                 ={{GitHub|org=llamero|repo=Hough_Circle_Multithread}}
 | released               = February 4<sup>th</sup>, 2017
-| latest version       = February 7<sup>th</sup>, 2017 (v0.5.0)
+| latest version       = February 7<sup>th</sup>, 2017 (v0.5.1)
 | status                 = stable, active
 | category               = [[:Category:Analysis|Analysis]], [[:Category:Feature Extraction|Feature Extraction]]
 }}
@@ -13,7 +13,7 @@
 == Introduction ==
 A [[wikipedia:Circle Hough Transform|Hough circle transform]] is an image transform that allows for circular objects to be extracted from an image, even if the circle is incomplete.  The transform is also selective for circles, and will generally ignore elongated ellipses.
 
-[[File:Hough_Intro.png|thumb|1000px|center|'''Hough circle transform is specific to circular objects.''' ''Left Panel:'' This panel shown the input data for the Hough circle transform. The data includes (clockwise from top left) a circle (radius 37 pixels), a square (length 37 pixels), an ellipse (minor axis 37 pixels), and a sectored circle (radius 37 pixels).
+[[File:Hough_Intro2.png|thumb|1000px|center|'''Hough circle transform is specific to circular objects.''' ''Left Panel:'' This panel shown the input data for the Hough circle transform. The data includes (clockwise from top left) a circle (radius 37 pixels), a square (length 37 pixels), an ellipse (minor axis 37 pixels), and a sectored circle (radius 37 pixels).
 
 ''Right Panel:'' This panel shows the output of a 24 step Hough circle transform. As you can see, the circle and the sectored circle converge to local maxima, while the square and ellipse do not, show the specificity of the transform for circular objects.]]
 
@@ -80,7 +80,7 @@ The 3D Hough search space approaches a local maxima.  Therefore, when a circle i
 
 By default, this ratio is set to be one, meaning that a circle of the same size and location as the one found is cleared from the entire search space.  This has the effect of eliminating all potential centroids within one radius of the found centroid.  This effectively excludes overlapping circles of a similar radius from the search.  To allow overlapping circles, this ratio can be reduced.  A ratio of "0" will result in the same circle being found repeatedly.  This means that perfectly concentric circles cannot be found in one run of the plugin, and rather need to be found iteratively by removing the found circles from the image and re-running the plugin.
 
-[[File:Clear Ratio.png|thumb|1000px|center|'''Adjusting the clear radius ratio to find overlapping circles.''' 
+[[File:Clear Ratio2.png|thumb|1000px|center|'''Adjusting the clear radius ratio to find overlapping circles.''' 
 
 The left panel shows the input data with a single circle on top and a pair of overlapping circles below. The next panel shows the resulting Hough circle transform (24 steps).
 
