@@ -128,9 +128,9 @@ This will output the results of the transform to the results table.  The measure
 
 If no circles were found in a frame, than that frame is excluded from the results table.
 
-== Installing the Quiver Plot Plugin == 
+== Installing the Hough Circle Transform Plugin == 
 
-The Quiver Plot plugin is a stand alone plugin that needs to be installed manually.  To install the plugin, use the following steps:
+The Hough Circle Transform plugin is a stand alone plugin that needs to be installed manually.  To install the plugin, use the following steps:
 
 1) Go to the [https://github.com/Llamero/Hough_Circle_Multithread/blob/master/Hough_Circle_Transform-0.5.2-SNAPSHOT.jar Github link] and download the file.
 
