@@ -142,6 +142,8 @@ The Hough Circle Transform plugin is a stand alone plugin that needs to be insta
 
 This plugin is a modified version of the Hough circle transform implemented by [https://imagej.nih.gov/ij/plugins/hough-circles.html Hemerson Pistori and Eduardo Rocha Costa].  The transform algorithm was based off of an original implementation by [http://www.markschulze.net/ Mark Schulze].
 
+This plugin was developed as part of the University of California, Berkeley Vision Sciences core grant NIH P30EY003176.
+
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
 
