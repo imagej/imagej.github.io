@@ -176,6 +176,11 @@ File:hackdd16-xmas.jpg|caption|Merry Christmas!
 * With Marcel Wiedenmann, worked on processing of very large images in ops
 * With Tim-Oliver Buchholz, worked on BDV integration in KNIP
 
+=== Klim Kolyvanov ===
+* Implemented the non-rigid [[coherent point drift]] [http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.250.5954&rep=rep1&type=pdf] algorithm using la4j. 
+* Pushed forward the implementation of the [[radial symmetry]] [http://www.example.com] plugin for ImageJ.
+* Worked on tracking of C.elegans cells. 
+
 == Technical discussions ==
 
 === Programmers Anonymous ===
