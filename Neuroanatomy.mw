@@ -8,11 +8,9 @@
 | status     = Active
 | latest version = '''1.0.6 November 2016''' ({{GitHub|org=tferr|repo=hIPNAT/releases|label=Changelog}})
 | category   = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]], [[:Category:Neuroanatomy|Neuroanatomy]]
-}}{{ambox | text =
-This is the main documentation page for the hIPNAT (''Image Processing for NeuroAnatomy and Tree-like Structures'') plugins distributed through the [[User:Neuroanatomy|Neuroanatomy update site]], released in [http://forum.imagej.net/t/launch-of-the-neuroanatomy-update-site/1377?u=tferr April 2016].
-
-
-Please note that, at this time, these tools are under heavy development: some features are experimental and documentation remains incomplete.
+}}
+This is the main documentation page for the hIPNAT (''Image Processing for NeuroAnatomy and Tree-like Structures'') plugins distributed through the [[User:Neuroanatomy|Neuroanatomy update site]], released in [http://forum.imagej.net/t/launch-of-the-neuroanatomy-update-site/1377?u=tferr April 2016]. For a list of all pages in this wiki related to Neuroanatomy have a look at [[:Category:Neuroanatomy]].
+{{ambox | text =Please note that, at this time, these tools are under heavy development: some features are experimental and documentation remains incomplete. Also, some of this work has been meanwhile migrated to core-Fiji plugins, such as [[Simple_Neurite_Tracer|Simple Neurite Tracer]].
 }}
 
 = Installation =
@@ -56,8 +54,13 @@ Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/resources/scripts/
 Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/java/ipnat/|label=Java plugin}}.
 |-
 |Traces converter
-| {{bc|Plugins|NeuroTools|Convert Traces to SWC}}
+| {{bc|Plugins|NeuroAnatomy|Convert Traces to SWC}}
 | Batch conversion of [[Simple Neurite Tracer]]'s [[Simple_Neurite_Tracer:_.traces_File_Format|.traces files]] into [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html SWC].
+Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/resources/scripts/|label=Python script}}.
+|-
+|Multi-SWC Renderer
+| {{bc|Plugins|NeuroAnatomy|Render Multiple SWC Files}}
+| Renders multiple SWC files in a single image canvas or a [[3D_Viewer|3D viewer]] universe.
 Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/resources/scripts/|label=Python script}}.
 |-
 |colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Utilities''
