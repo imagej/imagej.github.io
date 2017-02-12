@@ -22,12 +22,12 @@
 
 Here is a summary of my current projects, in priority order. I try to keep this list up to date.
 
-# '''[http://eubias.org/NEUBIAS/neubias2020-conference/ NEUBIAS2020] training and conference preparation.''' February 12-17th, 2017. ([https://github.com/imagej/imagej-tutorials/tree/dev-manual/ImageJ_Notebooks imagej/imagej-tutorials@dev-manual:ImageJ_Notebooks])
+# '''[http://eubias.org/NEUBIAS/neubias2020-conference/ NEUBIAS2020] training and conference preparation.''' February 12-17th, 2017.
 # '''[[LOCI]] web server [https://www.docker.com/ Docker]ization.'''
 # '''Ops generic type matching.''' Improve the Ops type matcher to fully support generics, including recursive generics. ([https://github.com/scijava/scijava-common/compare/generic-types scijava/scijava-common@generic-types], [https://github.com/imagej/imagej-ops/compare/nil imagej/imagej-ops@nil])
 # '''ImageJ + Java 8.''' Complete the migration to Java 8 with a Java-6-compatible stub classpath that checks your Java version and tells you how to upgrade to Java 8 if needed. Retire the Java-8 update site, distributing its contents back onto the ImageJ and Fiji update sites.
 # '''Rich Image.''' Improve the [[ImageJ Common]] data model to support metadata (e.g., spatial transformations) as a first-class citizen. ([https://github.com/imagej/imagej-common/compare/rich imagej/imagej-common@rich], [https://github.com/imagej/janelia-hackathon-2016 imagej/janelia-hackathon-2016])
-# '''POM unification.''' ([http://forum.imagej.net/t/split-boms-from-parent-configuration/2563 Split BOMs from parent configuration], [https://github.com/scijava/pom-scijava/compare/universal-pom scijava/pom-scijava@universal-pom])
+# '''POM unification.''' ([http://forum.imagej.net/t/split-boms-from-parent-configuration/2563 Split BOMs from parent configuration])
 # '''Document community expectations.''' Formally define and clarify who is responsible for maintaining which plugins, to what extents ([http://forum.imagej.net/t/project-developer-roles/206 Project developer roles], [https://github.com/ctrueden/ctr-scripts/blob/master/dev-find ctrueden/ctr-scripts:dev-find], [https://github.com/fiji/fiji/blob/master/bin/team-hints.perl fiji/fiji:bin/team-hints.perl])
 # '''GitHub issue reporting plugin.''' The Fiji BugZilla is temporarily offline; those pages need to be restored, and then—along with the remainder of the [http://trac.imagej.net/ ImageJ Trac]—migrated to GitHub Issues. The [[Report a Bug]] plugin needs to send reports to GitHub instead. ([https://github.com/scijava/scijava-plugins-issues-github scijava/scijava-plugins-issues-github])
 # '''SCIFIO blockization.''' ([https://github.com/scifio/scifio/issues/283 scifio/scifio#283])
