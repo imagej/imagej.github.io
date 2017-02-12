@@ -63,9 +63,8 @@ A processed image is generated and saved in a new directory. Results are saved a
 #Uncentered Image: For best results, acquire images centered in frame.
 #Significant Shadowing: Shadowing will render incomplete layer segmentation.
 <br>
-To have an idea of suitable images for this macro, we recommend to review the image dataset used for validation purposes:
-:*[https://www.dropbox.com/sh/yq7d6pac61niav9/AABw9L29qWfDAYH5K2SAaVUma?dl=0 ONL Dataset] 
-:*[https://www.dropbox.com/sh/lu6qojkte1z41pf/AABJHv2uptUaWfx-mGUmn1nJa?dl=0 INL Dataset]
+To have an idea of suitable images for this macro, we recommend to review the image dataset used for validation:
+:*[https://osf.io/9rveh/ ONL and INL Dataset at TUNEL Cell Counter Repository]
 
 == FAQs ==
 # Q: Can I modify the source code?
