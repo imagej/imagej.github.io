@@ -52,7 +52,11 @@ As summary, the classification process is as follows:
 
 
 == Examples ==
-Examples could be found in
+The following figure shows several cells that are gathered within the field of view (left image). While cell borders are not visible in this focal plane, nuclear envelopes stand out clearly under darkfield illumination (white arrows). A total of 246 particle trajectories was identified as either normal diffusion (red), confined diffusion (yellow), anomalous diffusion (green) or directed motion (magenta). Boxed areas (A-D) show selected cases of directed motion:
+
+[[File:Journal.pone.0170165.g006.PNG|800px]]
+
+More examples could be found in
 
 [http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0170165 Wagner T, Kroll A, Haramagatti CR, Lipinski HG, Wiemann M (2017) Classification and Segmentation of Nanoparticle Diffusion Trajectories in Cellular Micro Environments. PLOS ONE 12(1): e0170165]
 
