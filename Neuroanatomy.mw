@@ -48,7 +48,7 @@ Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/resources/scripts/
 |-
 |colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Import/Export''
 |- valign="top"
-|Tracings Importer
+|Tracings importer
 | {{bc|File|Import|Tracings (Traces/(e)SWC)...}}
 | Renders traced reconstructions ([[Simple_Neurite_Tracer:_.traces_File_Format|.traces]] - [[Simple Neurite Tracer]]'s format - and [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html .swc] files) in ImageJ's [[3D Viewer]] or as skeletonized image stacks.
 Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/java/ipnat/|label=Java plugin}}.
@@ -58,9 +58,14 @@ Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/java/ipnat/|label=
 | Batch conversion of [[Simple Neurite Tracer]]'s [[Simple_Neurite_Tracer:_.traces_File_Format|.traces files]] into [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html SWC].
 Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/resources/scripts/|label=Python script}}.
 |-
-|Multi-SWC Renderer
+|Multi-SWC renderer
 | {{bc|Plugins|NeuroAnatomy|Render Multiple SWC Files}}
 | Renders multiple SWC files in a single image canvas or a [[3D_Viewer|3D viewer]] universe.
+Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/resources/scripts/|label=Python script}}.
+|-
+|Remote File renderer
+| {{bc|Plugins|NeuroAnatomy|Render Remote SWC File}}
+| Exemplifies how to download and access a remote (e)SWC (internet connection required).
 Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/resources/scripts/|label=Python script}}.
 |-
 |colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Utilities''
