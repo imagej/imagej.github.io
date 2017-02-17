@@ -64,7 +64,29 @@ Another method is to have a virtual desktop, e.g. [[wikipedia:Xvfb|Xvfb]]. This 
 
 '''Shortcomings:''' It is slower than it needs to be because of the overhead of starting the GUI, it is harder to configure, and plugins might get stuck because they wait for user input which never comes.
 
-'''Example:''' Here is an example shell script that wraps a macro for use with Xvfb (thanks to Nestor Milyaev!):
+===Examples===
+Here are a couple of simple examples.
+
+Passing direct arguments:
+<source lang="bash">
+$ cat hello.js
+importClass(Packages.ij.IJ);
+IJ.log("hello " + arguments[0]);
+$ xvfb-run -a $IMAGEJ_DIR/ImageJ-linux64 hello.js Emerson
+hello Emerson
+</source>
+
+With [[Script Parameters|SciJava script parameters]]:
+<source lang="bash">
+$ cat hello-with-params.js
+// @String name
+importClass(Packages.ij.IJ);
+IJ.log("hello " + name);
+$ xvfb-run -a $IMAGEJ_DIR/ImageJ-linux64 --ij2 --headless --run hello-with-params.js 'name="Emerson"'
+hello Emerson
+</source>
+
+A more complex shell script that wraps a macro for use with Xvfb (thanks to Nestor Milyaev):
 
 <source lang="bash">
 export DISPLAY=:1
