@@ -22,7 +22,6 @@
 
 Here is a summary of my current projects, in priority order. I try to keep this list up to date.
 
-# '''[http://eubias.org/NEUBIAS/neubias2020-conference/ NEUBIAS2020] training and conference preparation.''' February 12-17th, 2017.
 # '''[[LOCI]] web server [https://www.docker.com/ Docker]ization.'''
 # '''Ops generic type matching.''' Improve the Ops type matcher to fully support generics, including recursive generics. ([https://github.com/scijava/scijava-common/compare/generic-types scijava/scijava-common@generic-types], [https://github.com/imagej/imagej-ops/compare/nil imagej/imagej-ops@nil])
 # '''ImageJ + Java 8.''' Complete the migration to Java 8 with a Java-6-compatible stub classpath that checks your Java version and tells you how to upgrade to Java 8 if needed. Retire the Java-8 update site, distributing its contents back onto the ImageJ and Fiji update sites.
