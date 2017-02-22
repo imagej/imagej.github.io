@@ -183,7 +183,7 @@ File:hackdd16-xmas.jpg|caption|Merry Christmas!
 
 === Carsten Haubold ===
 * With {{Person|Pietzsch}}, added a loader for 5D ilastik HDF5 volumes for BigDataViewer
-* Worked on a prototype for a tracking export plugin system within ilastik
+* Worked on a prototype for a tracking export plugin system within ilastik to talk to MaMuT
 
 ===Jonas Massa===
 * implemented an ilastik HDF5 import/export plugin for Imagej
