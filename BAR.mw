@@ -6,7 +6,7 @@
 | maintainer     = {{Person|Tiago}}
 | source         = {{GitHub|org=tferr|repo=Scripts}}
 | released       = June 2014
-| latest version = '''1.1.11 November 2016''' ({{GitHub|org=tferr|repo=Scripts/releases|label=Changelog}})
+| latest version = '''1.1.12 February 2017''' ({{GitHub|org=tferr|repo=Scripts/releases|label=Changelog}})
 | category       = [[:Category:Analysis|Analysis]], [[:Category:Image annotation|Annotation]], [[:Category:Filtering|Filtering]], [[:Category:Segmentation|Segmentation]], [[:Category:Scripting|Scripting]]
 }}
 </div>
@@ -37,7 +37,7 @@ Some of the scripts have a dedicated documentation page, others feature built-in
 ;{{GitHub|org=tferr|repo=Scripts|path=README.md#image-segmentation|label=Segmentation}}<span id="Segmentation"></span>
 :{{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Segmentation/README.md#shen-castan-edge-detector|label=Shen-Castan Edge Detector}}, {{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Segmentation/README.md#apply-threshold-to-roi|label=Apply Threshold To ROI}}, {{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Segmentation/README.md#clear-thresholded-pixels|label=Clear Thresholded Pixels}}, {{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Segmentation/README.md#remove-isolated-pixels|label=Remove Isolated Pixels}}, {{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Segmentation/README.md#threshold-from-background|label=Threshold From Background}}, {{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Segmentation/README.md#wipe-background|label=Wipe Background}}
 
-;{{GitHub|org=tferr|repo=Scripts|path=README.md#snippets|label=Snippets}},   {{GitHub|org=tferr|repo=Scripts|path=/lib#lib|label=BAR lib}}<span id="SnippetsList"> and {{GitHub|org=tferr|repo=Scripts|path=Snippets/Tutorials#tutorials|label=Tutorials}}</span>
+;{{GitHub|org=tferr|repo=Scripts|path=README.md#snippets|label=Snippets}},   {{GitHub|org=tferr|repo=Scripts|path=/lib#lib|label=BAR lib}}<span id="SnippetsList"> and {{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/tutorials/|label=Tutorials}}</span>
 :Described in [[#Scripting_BARs|Scripting BARs]]
 
 ;{{GitHub|org=tferr|repo=Scripts|path=README.md#tools-and-toolsets|label=Tools and Toolsets}}<span id="Tools"></span>
