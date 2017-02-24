@@ -24,4 +24,9 @@
 | link=http://www.imaging-git.com/applications/bioimage-data-analysis-0/
 | description=A textbook for constructing bioimage analysis workflows using ImageJ macro, Matlab and R, to extract numbers out of image data. [http://www.imaging-git.com/applications/bioimage-data-analysis-0/ Freely downloadable from Wiley site].
 }}
+{{Book
+| image=FijiTrainingNotes.png
+| link=https://cloudstor.aarnet.edu.au/plus/index.php/s/bxRU7kkoj2rIjCh
+| description=Fiji Training Notes [https://cloudstor.aarnet.edu.au/plus/index.php/s/bxRU7kkoj2rIjCh freely downloadable] from the Australian national research and education network.
+}}
 </div>
