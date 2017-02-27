@@ -15,11 +15,12 @@ Deploying your library to [[Maven]] makes it available for other developers. It 
 <tabs>
 <tab name="Maven">
 <ol>
-<li>Add the following code to your repository's <code>.travis.yml</code>:
+<li>Use the following code for your repository's <code>.travis.yml</code>:
 
 <source lang="yaml">
-after_success:
-- mvn -U -Pdeploy-to-imagej clean deploy --settings settings.xml
+language: java
+install: true
+script: mvn -Pdeploy-to-imagej deploy --settings settings.xml
 </source>
 </li>
 <li>From the command line in your repository, create an [https://docs.travis-ci.com/user/environment-variables/#Encrypting-Variables-Using-a-Public-Key encrypted environment variable] for your [http://maven.imagej.net maven.imagej.net] password—be careful with escaping special characters correctly:
