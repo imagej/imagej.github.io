@@ -23,6 +23,14 @@ Here we summarize some of the most-recent visualization projects occurring in Im
 * Enables live streaming of 3D data in real time over the internet
 |[[File:ClearVolumeInFiji.png|600px]]
 |-
+|[https://imagej.net/3D_Viewer 3D Viewer]
+|A tool for hardware-accelerated visualization possibilities for image stacks, using the [[Java 3D]] library.
+|
+* Stacks can be displayed as texture-based volume renderings, surfaces, or orthoslices
+* Macro-recordable functions
+* Adjust the transfer functions, edit volumes, point lists, landmark-based registration, transformations, 3D Content in PDFs
+|[[Image:3D_Viewer_overview.png]]
+|-
 |[http://imagej.net/BigDataViewer BigDataViewer]
 |A tool for interactive browsing of arbitrarily large image datasets.
 |
@@ -47,8 +55,6 @@ Here we summarize some of the most-recent visualization projects occurring in Im
 * Allows browsing, annotating, and curating annotations for large image data
 * Combines [http://imagej.net/BigDataViewer BigDataViewer] and [http://imagej.net/TrackMate TrackMate] 
 * Ships [http://imagej.net/TrackScheme TrackScheme], the lineage browser taken from [http://imagej.net/TrackMate TrackMate] 
-
-
 |[[File:MaMuT.png]]
 |-
 |[http://imagej.net/BigWarp BigWarp]
@@ -59,4 +65,11 @@ Here we summarize some of the most-recent visualization projects occurring in Im
 * Enables landmark pair placement and displays the effects of the warp on-the-fly
 |[[File:BigWarp.png|500px]]
 |-
+|[http://imagej.net/ThreeDViewer ThreeDViewer]
+|A tool for 3D visualization capabilities for images and meshes.
+|
+* Uses the [https://github.com/ClearVolume/scenery Scenery] and [[ClearVolume]] infrastructure
+* Integrates [[ImageJ2]] functionality, including [[ImageJ Ops]]
+* Aims to serve as a modern replacement to [[3D Viewer]]
+| ''in development''
 |}
