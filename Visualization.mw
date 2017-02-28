@@ -58,9 +58,9 @@ Here we summarize some of the visualization plugins in ImageJ.
 | ''in development''
 |}
 
-== Recommended ImageJ Plugins for Visualization ==
+== Interactive Analysis Plugins based on Visualization Tools ==
 
-Here we summarize some of the visualization plugins in ImageJ. 
+Here we summarize some of more advanced analysis plugins in ImageJ using the above visualization tools. 
 
 {| class="wikitable"
 |-
