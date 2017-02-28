@@ -21,7 +21,7 @@ Here we summarize some of the most-recent visualization projects occurring in Im
 * Instant rewind and replay of time-lapse recordings
 * Provides real-time GPU-based image processing capabilities, such as image sharpness estimation and sample drift tracking
 * Enables live streaming of 3D data in real time over the internet
-|[[File:ClearVolumeInFiji.png|600px]]
+|[[File:ClearVolumeInFiji.png|500px]]
 |-
 |[https://imagej.net/3D_Viewer 3D Viewer]
 |A tool for hardware-accelerated visualization possibilities for image stacks, using the [[Java 3D]] library.
@@ -55,7 +55,7 @@ Here we summarize some of the most-recent visualization projects occurring in Im
 * Allows browsing, annotating, and curating annotations for large image data
 * Combines [http://imagej.net/BigDataViewer BigDataViewer] and [http://imagej.net/TrackMate TrackMate] 
 * Ships [http://imagej.net/TrackScheme TrackScheme], the lineage browser taken from [http://imagej.net/TrackMate TrackMate] 
-|[[File:MaMuT.png]]
+|[[File:MaMuT.png|500px]]
 |-
 |[http://imagej.net/BigWarp BigWarp]
 |A tool for manual, interactive, landmark-based deformable image alignment.
