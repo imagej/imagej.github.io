@@ -27,6 +27,7 @@ Here we summarize some of the most-recent visualization projects occurring in Im
 * Lightsheet microscopy: integrated with Fiji's SPIM pipeline ([http://imagej.net/Multiview-Reconstruction MultiView Reconstruction])
 * Adding overlays, annotations, etc.
 * Reusable software components
+* Used as data backend and/or visualization frontend by [http://imagej.net/Multiview-Reconstruction MultiView Reconstruction], [http://imagej.net/MaMuT MaMuT], [http://imagej.net/BigWarp BigWarp], etc.
 |[[File:bdv.png]]
 |-
 |[http://imagej.net/Multiview-Reconstruction MultiView Reconstruction]
@@ -39,7 +40,7 @@ Here we summarize some of the most-recent visualization projects occurring in Im
 |to be filled...
 |[[File:MaMuT.png]]
 |-
-|to be filled...
+|[http://imagej.net/BigWarp BigWarp]
 |to be filled...
 |to be filled...
 |to be filled...
