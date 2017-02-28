@@ -495,7 +495,7 @@ Status: maintenance active
 
 Purpose: The mode-limited mean (MoLiM) and the differential-limited mean (DiLiM) are two binarization algorithms which initially limit the image histogram according to its mode value (MoLiM) or its mode, an initial mean or the median (DiLiM). A more detailed description can be found under:
 
-[http://www.cscjournals.org/csc/manuscriptinfo.php?ManuscriptCode=67.68.67.74.39.50.44.51.104&JCode=IJIP&EJCode=65.66.65.72.106&Volume=54.100&Issue=47.101 Qualitative and Quantitative Evaluation of Two New Histogram Limiting Binarization Algorithms].
+[http://www.cscjournals.org/library/manuscriptinfo.php?mc=IJIP-829 Qualitative and Quantitative Evaluation of Two New Histogram Limiting Binarization Algorithms].
 J. Brocher, Int. J. Image Process. 8(2), 2014 pp. 30-48
 
 How To: the user can choose to use the differential threshold determination or the forced mode-limited method if "differential limitation" is off.
@@ -518,7 +518,7 @@ Future: Will be implemented for stacks as well.
 
 All BioVoxxel Macros were developed by {{Person|BioVoxxel}}
 
-The macros can be freely used, redistributed and changed according to the GNU GPL License v3.0. 
+The macros can be freely used, redistributed and changed according to the BSD-3 License. 
 
 For questions, comments and suggestions please contact: jan.brocher(at)biovoxxel.de
 
