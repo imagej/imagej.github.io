@@ -207,7 +207,7 @@ The macro finally suggests thresholds which perform best in respect to the refer
 
 Potential issues: If the user does not correctly define if he/she is looking for bright or dark objects the output will be incorrectly determined.
 
-'''Publication:''' [http://www.cscjournals.org/csc/manuscriptinfo.php?ManuscriptCode=67.68.67.74.39.50.44.51.104&JCode=IJIP&EJCode=65.66.65.72.106&Volume=54.100&Issue=47.101 Qualitative and Quantitative Evaluation of Two New Histogram Limiting Binarization Algorithms].
+'''Publication:''' [http://www.cscjournals.org/library/manuscriptinfo.php?mc=IJIP-829 Qualitative and Quantitative Evaluation of Two New Histogram Limiting Binarization Algorithms].
 J. Brocher, Int. J. Image Process. 8(2), 2014 pp. 30-48
 
 Form: macro (plugin currently under development)
