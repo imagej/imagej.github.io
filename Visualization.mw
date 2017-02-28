@@ -83,5 +83,5 @@ Here we summarize the more advanced analysis plugins in ImageJ using the above v
 * Uses [http://imagej.net/BigDataViewer BigDataViewer] for visualization and navigation
 * Uses a [[wikipedia:Thin_plate_spline|Thin Plate Spline]] implemented {{GitHub|org=saalfeldlab|repo=bigwarp|label=in Java}} to build a deformation from point correspondences
 * Enables landmark pair placement and displays the effects of the warp on-the-fly
-|[[File:BigWarp.png|500px]]
+|[[File:BigWarp.png|400px]]
 |}
