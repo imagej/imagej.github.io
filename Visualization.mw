@@ -5,7 +5,7 @@
 
 == Recommended ImageJ Plugins for Visualization ==
 
-Here we summarize some of the most-recent visualization projects occurring in ImageJ. 
+Here we summarize some of the visualization plugins in ImageJ. 
 
 {| class="wikitable"
 |-
@@ -49,6 +49,26 @@ Here we summarize some of the most-recent visualization projects occurring in Im
 * Interactive viewing and annotation of the data
 |[[File:spim_application.png|600px]]
 |-
+|[http://imagej.net/ThreeDViewer ThreeDViewer]
+|A tool for 3D visualization capabilities for images and meshes.
+|
+* Uses the [https://github.com/ClearVolume/scenery Scenery] and [[ClearVolume]] infrastructure
+* Integrates [[ImageJ2]] functionality, including [[ImageJ Ops]]
+* Aims to serve as a modern replacement to [[3D Viewer]]
+| ''in development''
+|}
+
+== Recommended ImageJ Plugins for Visualization ==
+
+Here we summarize some of the visualization plugins in ImageJ. 
+
+{| class="wikitable"
+|-
+|'''Name'''
+|'''Short Description'''
+|'''More Details...'''
+|'''Plugin Snapshot'''
+|-
 |[http://imagej.net/MaMuT MaMuT] ('''Ma'''ssive '''Mu'''lti-view '''T'''racker)
 |A tool for manual and semi-automatic tracking in multiple views.
 |
@@ -64,12 +84,4 @@ Here we summarize some of the most-recent visualization projects occurring in Im
 * Uses a [[wikipedia:Thin_plate_spline|Thin Plate Spline]] implemented {{GitHub|org=saalfeldlab|repo=bigwarp|label=in Java}} to build a deformation from point correspondences
 * Enables landmark pair placement and displays the effects of the warp on-the-fly
 |[[File:BigWarp.png|500px]]
-|-
-|[http://imagej.net/ThreeDViewer ThreeDViewer]
-|A tool for 3D visualization capabilities for images and meshes.
-|
-* Uses the [https://github.com/ClearVolume/scenery Scenery] and [[ClearVolume]] infrastructure
-* Integrates [[ImageJ2]] functionality, including [[ImageJ Ops]]
-* Aims to serve as a modern replacement to [[3D Viewer]]
-| ''in development''
 |}
