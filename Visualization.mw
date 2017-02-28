@@ -17,8 +17,10 @@ Here we summarize some of the most-recent visualization projects occurring in Im
 |[http://imagej.net/ClearVolume ClearVolume]
 |A tool for live rendering volumetric multi-channel data.
 |
-* Channel LUTs, transparency, rendering quality, etc.
-* Enables users to receive volumetric data from a remote source
+* Create instant multiview and multicolor renderings
+* Instant rewind and replay of time-lapse recordings
+* Provides real-time GPU-based image processing capabilities, such as image sharpness estimation and sample drift tracking
+* Enables live streaming of 3D data in real time over the internet
 |[[File:ClearVolumeInFiji.png|600px]]
 |-
 |[http://imagej.net/BigDataViewer BigDataViewer]
