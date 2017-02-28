@@ -39,7 +39,7 @@ Here we summarize some of the visualization plugins in ImageJ.
 * Adding overlays, annotations, etc.
 * Reusable software components
 * Used as data backend and/or visualization frontend by [http://imagej.net/Multiview-Reconstruction MultiView Reconstruction], [http://imagej.net/MaMuT MaMuT], [http://imagej.net/BigWarp BigWarp], etc.
-|[[File:bdv.png]]
+|[[File:bdv.png|500px]]
 |-
 |[http://imagej.net/Multiview-Reconstruction MultiView Reconstruction]
 |A tool for registration, fusion, deconvolution, and visualization of multiview microscopy images.
@@ -47,7 +47,7 @@ Here we summarize some of the visualization plugins in ImageJ.
 * Designed for lightsheet fluorescence microscopy
 * Applicable to any form of three or higher dimensional imaging modalities
 * Interactive viewing and annotation of the data
-|[[File:spim_application.png|600px]]
+|[[File:spim_application.png|500px]]
 |-
 |[http://imagej.net/ThreeDViewer ThreeDViewer]
 |A tool for 3D visualization capabilities for images and meshes.
