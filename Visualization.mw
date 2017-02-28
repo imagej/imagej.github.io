@@ -15,15 +15,17 @@ Here we summarize some of the most-recent visualization projects occurring in Im
 |'''Plugin Snapshot'''
 |-
 |[http://imagej.net/ClearVolume ClearVolume]
-|to be filled...
-|to be filled...
+|A tool for live rendering volumetric multi-channel data.
+|
+* Channel LUTs, transparency, rendering quality, etc.
+* Enables users to receive volumetric data from a remote source
 |[[File:ClearVolumeInFiji.png|600px]]
 |-
 |[http://imagej.net/BigDataViewer BigDataViewer]
 |A tool for interactive browsing of arbitrarily large image datasets.
 |
 * Arbitrary slicing, zooming, etc.
-* For multi-angle, mutl-channel, time-series, etc.
+* For multi-angle, multi-channel, time-series, etc.
 * Adding overlays, annotations, etc.
 * Reusable software components
 * Used as data backend and/or visualization frontend by [http://imagej.net/Multiview-Reconstruction MultiView Reconstruction], [http://imagej.net/MaMuT MaMuT], [http://imagej.net/BigWarp BigWarp], etc.
