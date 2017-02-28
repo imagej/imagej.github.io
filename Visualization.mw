@@ -48,8 +48,11 @@ Here we summarize some of the most-recent visualization projects occurring in Im
 |[[File:MaMuT.png]]
 |-
 |[http://imagej.net/BigWarp BigWarp]
-|to be filled...
-|to be filled...
-|to be filled...
+|A tool for manual, interactive, landmark-based deformable image alignment.
+|
+* Uses [http://imagej.net/BigDataViewer BigDataViewer] for visualization and navigation
+* Uses a [[wikipedia:Thin_plate_spline|Thin Plate Spline]] implemented {{GitHub|org=saalfeldlab|repo=bigwarp|label=in Java}} to build a deformation from point correspondences
+* Enables landmark pair placement and displays the effects of the warp on-the-fly
+|[[File:BigWarp.png|500px]]
 |-
 |}
