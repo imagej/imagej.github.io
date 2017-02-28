@@ -188,6 +188,26 @@ File:hackdd16-xmas.jpg|caption|Merry Christmas!
 ===Jonas Massa===
 * implemented an ilastik HDF5 import/export plugin for Imagej ({{GitHub|org=Beinabih|repo=ilastik-Fiji-Plugin|label=Beinabih/ilastik-Fiji-Plugin}})
 
+===HongKee Moon===
+* Separated BigDataServer into two versions. One is SimpleBigDataServer which can be launched by adding xml datasets in the command line. The other is (Advanced) BigDataServer which is running with H2 DBMS backend.
+* ER design is completed with {{Person|Pietzsch}}.
+
+* (Advanced) BigDataServer
+** H2 DBMS integration is completed.
+** User/Dataset/Tag/Annotation entity relationships are decided and made in the hackathon.
+** DataSets are managed as either private or public according to users.
+** Manager context is still supported as well as user management is possible there.
+** Each user can share private datasets with other users.
+
+* SimpleBigDataServer
+** This is almost same as the previous command line based BigDataServer.
+
+* Technical notes
+** Upgraded the stringtemplate with v4(org.stringtemplate.v4.ST) which is getting powerful for templating strings for HTML tables.
+** By using AJAX, database CRUD operations are carried in a responsive way.
+** Realized how important JDBC database connection pool is.
+
+
 == Technical discussions ==
 
 === Programmers Anonymous ===
