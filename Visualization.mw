@@ -10,25 +10,36 @@ Here we summarize some of the most-recent visualization projects occurring in Im
 {| class="wikitable"
 |-
 |'''Name'''
-|'''Description'''
+|'''Short Description'''
+|'''More Details...'''
 |'''Plugin Snapshot'''
 |-
 |[http://imagej.net/ClearVolume ClearVolume]
 |to be filled...
+|to be filled...
 |[[File:ClearVolumeInFiji.png|600px]]
 |-
 |[http://imagej.net/BigDataViewer BigDataViewer]
-|to be filled...
+|A tool for interactive browsing of arbitrarily large image datasets.
+|
+* Arbitrary slicing, zooming, etc.
+* For multi-angle, mutl-channel, time-series, etc.
+* Lightsheet microscopy: integrated with Fiji's SPIM pipeline ([http://imagej.net/Multiview-Reconstruction MultiView Reconstruction])
+* Adding overlays, annotations, etc.
+* Reusable software components
 |[[File:bdv.png]]
 |-
 |[http://imagej.net/Multiview-Reconstruction MultiView Reconstruction]
+|to be filled...
 |to be filled...
 |[[File:spim_application.png|600px]]
 |-
 |[http://imagej.net/MaMuT MaMuT]
 |to be filled...
+|to be filled...
 |[[File:MaMuT.png]]
 |-
+|to be filled...
 |to be filled...
 |to be filled...
 |to be filled...
