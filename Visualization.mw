@@ -24,20 +24,27 @@ Here we summarize some of the most-recent visualization projects occurring in Im
 |
 * Arbitrary slicing, zooming, etc.
 * For multi-angle, mutl-channel, time-series, etc.
-* Lightsheet microscopy: integrated with Fiji's SPIM pipeline ([http://imagej.net/Multiview-Reconstruction MultiView Reconstruction])
 * Adding overlays, annotations, etc.
 * Reusable software components
 * Used as data backend and/or visualization frontend by [http://imagej.net/Multiview-Reconstruction MultiView Reconstruction], [http://imagej.net/MaMuT MaMuT], [http://imagej.net/BigWarp BigWarp], etc.
 |[[File:bdv.png]]
 |-
 |[http://imagej.net/Multiview-Reconstruction MultiView Reconstruction]
-|to be filled...
-|to be filled...
+|A tool for registration, fusion, deconvolution, and visualization of multiview microscopy images.
+|
+* Designed for lightsheet fluorescence microscopy
+* Applicable to any form of three or higher dimensional imaging modalities
+* Interactive viewing and annotation of the data
 |[[File:spim_application.png|600px]]
 |-
-|[http://imagej.net/MaMuT MaMuT]
-|to be filled...
-|to be filled...
+|[http://imagej.net/MaMuT MaMuT] ('''Ma'''ssive '''Mu'''lti-view '''T'''racker)
+|A tool for manual and semi-automatic tracking in multiple views.
+|
+* Allows browsing, annotating, and curating annotations for large image data
+* Combines [http://imagej.net/BigDataViewer BigDataViewer] and [http://imagej.net/TrackMate TrackMate] 
+* Ships [http://imagej.net/TrackScheme TrackScheme], the lineage browser taken from [http://imagej.net/TrackMate TrackMate] 
+
+
 |[[File:MaMuT.png]]
 |-
 |[http://imagej.net/BigWarp BigWarp]
