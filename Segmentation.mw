@@ -15,7 +15,7 @@ More precisely, image segmentation is the process of ''assigning a label'' to ev
 
 = Easy workflow =
 
-One option which is designed to be very powerful, yet easy to use for non-experts in image processing:
+One plugin which is designed to be very powerful, yet easy to use for non-experts in image processing:
 
 {| class="wikitable"
 |-
