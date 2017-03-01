@@ -17,7 +17,23 @@ More precisely, image segmentation is the process of ''assigning a label'' to ev
 
 One option which is designed to be very powerful, yet easy to use for non-experts in image processing:
 
-<span style="font-size: 2em">&lt; [[Trainable Weka Segmentation]] &gt;</span>
+{| class="wikitable"
+|-
+|'''Name'''
+|'''Short Description'''
+|'''Highlights'''
+|'''Plugin Snapshot'''
+|-
+|[https://imagej.net/Trainable_Weka_Segmentation Trainable Weka Segmentation]
+|A tool that combines a collection of machine learning algorithms with a set of selected image features to produce pixel-based segmentations.
+|
+* Can be trained to learn from the user input and perform later the same task in unknown (test) data
+* Makes use of all the powerful tools and classifiers from the latest version of [http://www.cs.waikato.ac.nz/ml/weka/ Weka]
+* Provides a labeled result based on the training of a chosen classifier
+* Ease of use due to its graphical user interfaces
+|[[File:TWS-GUI-after-training.png|500px]]
+|-
+|}
 
 Give it a try—you might like it!
 
