@@ -5,7 +5,7 @@
 Deploying your library to [[Maven]] makes it available for other developers. It is also a [[Fiji/Contribution_requirements|contribution requirement for the Fiji project]].
 
 == Requirements ==
-* An open-source project hosted on [[GitHub]].
+* Host your open-source project on [[GitHub]].
 * Log in to [https://travis-ci.org/auth Travis CI] with your corresponding GitHub account and enable your repository.
 * Contact an ImageJ admin in [[Chat#Gitter|Gitter]] or [http://forum.imagej.net/ the ImageJ forum] and request that they file a PR which adds Travis support to your repository.
 
