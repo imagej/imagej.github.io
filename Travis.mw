@@ -10,6 +10,7 @@ Deploying your library to [[Maven]] makes it available for other developers. It 
 * Contact an ImageJ admin in [[Chat#Gitter|Gitter]] or [http://forum.imagej.net/ the ImageJ forum] and request that they file a PR which adds Travis support to your repository.
 
 == Instructions ==
+{{Notice | These instructions describe much of the technical process of adding Travis metadata to your repository. Normally, an ImageJ admin—not the plugin developer—will follow these instructions.}}
 <div style="overflow: hidden">
 <tabs>
 <tab name="Maven">
@@ -18,14 +19,20 @@ Deploying your library to [[Maven]] makes it available for other developers. It 
 
 <source lang="yaml">
 language: java
+jdk: oraclejdk8
+branches:
+  only: master
 install: true
-script: mvn -Pdeploy-to-imagej deploy --settings settings.xml
+script: "./travis/build.sh"
+after_success: "./travis/notify.sh Travis-Success"
+after_failure: "./travis/notify.sh Travis-Failure"
 </source>
 </li>
-<li>From the command line in your repository, create an [https://docs.travis-ci.com/user/environment-variables/#Encrypting-Variables-Using-a-Public-Key encrypted environment variable] for your [http://maven.imagej.net maven.imagej.net] password. Be careful with escaping special characters correctly—it is generally safest to simply use a very long character sequence with only alphameric characters (no symbols):
+<li>From the command line in your repository, create an [https://docs.travis-ci.com/user/environment-variables/#Encrypting-Variables-Using-a-Public-Key encrypted environment variable] for <code>MAVEN_PASS</code> which defines the Maven password of the [[ImageJ Maven repository]]'s <code>travis</code> account. Then do the same for the <code>TOKEN_NAME</code> of the [[ImageJ Jenkins]] <code>Travis-Success</code> and <code>Travis-Failure</code> jobs.
 
 <source lang="bash">
-$ travis encrypt MAVEN_PASS=my_maven_password --add env.matrix
+$ travis encrypt MAVEN_PASS=travis_maven_password --add env.global
+$ travis encrypt TOKEN_NAME=imagej_jenkins_token --add env.global
 </source>
 
 Note that this will automatically modify your <code>.travis.yml</code> file.
