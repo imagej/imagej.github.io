@@ -56,7 +56,7 @@ Note that this will automatically modify your <code>.travis.yml</code> file.
 </settings>
 </source>
 </li>
-<li>Commit all your files with Git and push them back to your repository. If everything works as intended, you should start seeing new builds in your [https://travis-ci.org Travis dashboard] with each new commit, with corresponding SNAPSHOT and release artifacts immediately deployed automatically to [http://maven.imagej.net/index.html#view-repositories maven.imagej.net].
+<li>Commit all your files with Git and push them back to your repository. If everything works as intended, you should start seeing new builds in your [https://travis-ci.org Travis dashboard] with each new commit, with corresponding SNAPSHOT artifacts automatically deployed to [http://maven.imagej.net/index.html#view-repositories maven.imagej.net].
 </li>
 </ol>
 </tab>
