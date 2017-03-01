@@ -37,19 +37,34 @@ $ travis encrypt TOKEN_NAME=imagej_jenkins_token --add env.global
 
 Note that this will automatically modify your <code>.travis.yml</code> file.
 </li>
-<li>Create a <code>settings.xml</code> in your repository using the following template, using your [http://maven.imagej.net maven.imagej.net] username:
-
+<li>Add the following script as <code>.travis/build.sh</code>:
+<source lang="shell">
+#!/bin/sh
+dir="$(dirname "$0")"
+test "$TRAVIS_SECURE_ENV_VARS" = true \
+  -a "$TRAVIS_PULL_REQUEST" = false \
+  -a "$TRAVIS_BRANCH" = master &&
+  mvn -Pdeploy-to-imagej deploy --settings "$dir/settings.xml" ||
+  mvn install
+</source>
+</li>
+<li>Add the following script as <code>.travis/notify.sh</code>:
+<source lang="shell">
+#!/bin/sh
+curl -fs "https://jenkins.imagej.net/job/$1/buildWithParameters?token=$TOKEN_NAME&repo=$TRAVIS_REPO_SLUG&commit=$TRAVIS_COMMIT&pr=$TRAVIS_PULL_REQUEST"
+</source>
+<li>Create a <code>settings.xml</code> in your repository with the following contents:
 <source lang="xml">
 <settings>
   <servers>
     <server>
       <id>imagej.releases</id>
-      <username>my_maven_username</username>
+      <username>travis</username>
       <password>${env.MAVEN_PASS}</password>
     </server>
     <server>
       <id>imagej.snapshots</id>
-      <username>my_maven_username</username>
+      <username>travis</username>
       <password>${env.MAVEN_PASS}</password>
     </server>
   </servers>
