@@ -1,8 +1,6 @@
 {{BigNotice | See [[:Category:Visualization]] for pages about scientific visualization.}}
 {{Learn | techniques}}[[wikipedia:Scientific visualization|Scientific visualization]] is a set of techniques for graphically illustrating scientific data, enabling scientists to better understand, illustrate, and glean insight from their data.
 
-{{WIP}}
-
 == Recommended ImageJ Plugins for Visualization ==
 
 Here we summarize some of the visualization plugins in ImageJ. 
@@ -11,7 +9,7 @@ Here we summarize some of the visualization plugins in ImageJ.
 |-
 |'''Name'''
 |'''Short Description'''
-|'''More Details...'''
+|'''Highlights'''
 |'''Plugin Snapshot'''
 |-
 |[http://imagej.net/ClearVolume ClearVolume]
