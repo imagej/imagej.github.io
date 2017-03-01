@@ -48,24 +48,11 @@ The following criteria apply to projects hosted in the [https://github.com/fiji 
 
 Projects that reside outside the [https://github.com/fiji fiji organization] are not subject to the requirements above. But it is then the project maintainer's responsibility to ensure the project continues to function properly in up-to-date installations of Fiji. This might entail code changes as ImageJ and Fiji evolve.
 
-== Continuous integration: Jenkins ==
+== Continuous integration: Travis CI ==
 
-To verify that the Fiji components build without problems, and that all regression tests pass, every Fiji project's source code repository is connected to a job of ImageJ's [[Jenkins]] server that builds and tests the source code whenever a new revision is made available. Typically, this job also deploys the [[#Maven artifacts|Maven artifacts]].
+To verify that the Fiji components build without problems, and that all regression tests pass, every Fiji project's source code repository is connected to a [[Travis CI]] job that builds and tests the source code, and deploys the [[#Maven artifacts|Maven artifacts]], whenever a new revision is made available.
 
-To enable a Jenkins link with your repository:
-
-# Configure your repository to add a [https://github.com/blog/1778-webhooks-level-up service] (''not'' a webhook) for the [https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin Jenkins (Git plugin)]. ''Note: there is a Jenkins (Git plugin) and Jenkins (GitHub plugin). Enable the '''Jenkins (Git plugin)''' service.''
-# Set the <code>Jenkins URL</code> field to: <code><nowiki>http://jenkins.imagej.net/</nowiki></code>
-
-Once configured, your settings should look like:
-
-[[File:Services.png|500px|thumb|none|Webhooks and Services menu after adding Jenkins (Git plugin)]]
-
-[[File:GitHubJenkinsManagement.png|500px|thumb|none|Management settings for Jenkins (Git plugin)]]
-
-== Continuous integration: Travis ==
-
-[[Travis]] is an alternative to Jenkins for continuous integration that allows easier setup and management for external developers.
+Have a look at the [[Travis]] page for instructions on setting it up.
 
 == Versioning and dependency convergence ==
 
@@ -100,7 +87,7 @@ Furthermore, for backwards-compatibility a version can be automatically deduced:
 
 * The minimum requirement for core Fiji projects is to use a build system (e.g., [[Maven]] or Gradle) that automatically deploys required artifacts to the [http://maven.imagej.net/ ImageJ Maven repository], such that they can be consumed by downstream code, including other Fiji projects. Required artifacts to deploy include the main JAR and POM files, <code>-tests</code> JAR, <code>-sources</code> JAR and <code>-javadoc</code> JAR.
 * To facilitate this, most Fiji projects inherit a common Maven configuration from the [https://github.com/fiji/pom-fiji pom-fiji] parent project. This configuration ensures that not only the compiled ''.jar'' files are deployed, but also the Javadocs and the sources. Therefore, it is strongly encouraged to extend this parent; see the [[Architecture#Maven_component_structure|Maven component structure]] section for details.
-* All of Fiji's components are deployed by [[Jenkins]] to the [[Architecture#Maven_repositories|ImageJ Maven repository]] or to [http://oss.sonatype.org/ OSS Sonatype]. That way, all Fiji components can be added easily as dependencies to downstream projects.
+* All of Fiji's components are deployed by [[Travis CI]] to the [[Architecture#Maven_repositories|ImageJ Maven repository]] or to [http://oss.sonatype.org/ OSS Sonatype]. That way, all Fiji components can be added easily as dependencies to downstream projects.
 * All Fiji components are declared in the toplevel [https://github.com/fiji/fiji fiji] project's POM as dependencies, and declared in the [https://github.com/fiji/pom-fiji pom-fiji] parent as ''managed dependencies'', as part of Fiji's [[Architecture#Bill_of_Materials|Bill of Materials]].
 
 = Guidelines =
