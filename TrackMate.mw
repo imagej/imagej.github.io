@@ -168,17 +168,7 @@ TrackMate LoG detector will crash if you have the [[List_of_update_sites|Mosaic 
 
 == Who uses TrackMate ==
 
-We don't know in all honesty, since we did not write a paper specifically for TrackMate. People might use it and cite the Fiji paper, which is fine. A crude search on Google yields this:
-
-* Chen et al. The bacterial carbon-fixing organelle is formed by shell envelopment of preassembled cargo. PLoS ONE (2013) vol. 8 (9) pp. e76127
-* Phang et al. POPX2 phosphatase regulates the KIF3 kinesin motor complex. J Cell Sci (2013) pp.
-
-* [http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3985186/ The influence of dynein processivity control, MAPs, and microtubule ends on directional movement of a localising mRNA.] Harish Chandra Soundararajan, Simon L Bullock eLife. 2014; 3: e01596.
-
-* [http://www.plospathogens.org/article/info%3Adoi%2F10.1371%2Fjournal.ppat.1004348 Rabies Virus Hijacks and Accelerates the p75NTR Retrograde Axonal Transport Machinery.] Shani Gluska, Eitan Erez Zahavi, Michael Chein, Tal Gradus, Anja Bauer, Stefan Finke, Eran Perlson. 2014
-
-* [http://www.ncbi.nlm.nih.gov/pubmed/24560576 Homeostatic actin cytoskeleton networks are regulated by assembly factor competition for monomers.] Burke TA, Christensen JR, Barone E, Suarez C, Sirotkin V, Kovar DR. Curr Biol. 2014 Mar 3;24(5):579-85. doi:
-10.1016/j.cub.2014.01.072.
+It turns out that TrackMate has a decent user base, as exemplified by a crude search on [https://scholar.google.fr/scholar?q=trackmate+fiji Google Scholar]. These citations accumulated before the TrackMate paper was out.
 
 == TrackMate components ==
 
