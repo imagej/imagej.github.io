@@ -5,21 +5,9 @@
 
 == Getting Started with Simple Visualization Options ==
 
-{| class="wikitable"
-|-
-|'''Name'''
-|'''Short Description'''
-|'''Highlights'''
-|'''Plugin Snapshot'''
-|-
-|[https://imagej.net/3D_Viewer 3D Viewer]
-|A tool for hardware-accelerated visualization possibilities for image stacks, using the [[Java 3D]] library.
-|
-* Stacks can be displayed as texture-based volume renderings, surfaces, or orthoslices
-* Macro-recordable functions
-* Adjust the transfer functions, edit volumes, point lists, landmark-based registration, transformations, 3D Content in PDFs
-|[[Image:3D_Viewer_overview.png]]
-|}
+# False-color look-up tables (LUTs)
+# Brightness/Contrast
+# Changing image gamma values
 
 == Visualization of Non-Image Data or Image-Derived Data ==
 
