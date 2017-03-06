@@ -45,7 +45,7 @@ Here's a list of recommended options to choose a LUT:
 
 === Adjusting your Image in ImageJ ===
 
-The [http://imagej.net/docs/guide/146-28.html#toc-Subsection-28.2 Adjust submenu] contains commands that adjust brightness/contrast, threshold levels, and image size.  The [http://imagej.net/docs/guide/146-28.html#sub:Brightness/Contrast...[C] Brightness/Contrast] tool can be used interactively to alter the brightness and contrast of the active image.
+The [http://imagej.net/docs/guide/146-28.html#toc-Subsection-28.2 Adjust submenu] contains commands that adjust [http://imagej.net/docs/guide/146-28.html#sub:Brightness/Contrast...%5BC%5D Brightness/Contrast], [http://imagej.net/docs/guide/146-28.html#sub:Threshold...%5BT%5D Threshold] levels, and image [http://imagej.net/docs/guide/146-28.html#sub:Size... Size].
 
 === Visualization of Volumetric Image Data ===
 Here we summarize some of the 3D visualization plugins in ImageJ.
