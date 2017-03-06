@@ -4,11 +4,10 @@
 {{Learn | techniques}}[[wikipedia:Scientific visualization|Scientific visualization]] is a set of techniques for graphically illustrating scientific data, enabling scientists to better understand, illustrate, and glean insight from their data.
 
 == Getting Started with Simple Visualization Options in ImageJ ==
-
-# False-color look-up tables (LUTs)
-# Brightness/Contrast
-# [https://imagej.net/3D_Viewer 3D Viewer]
-
+=== False-color look-up tables (LUTs) ===
+=== Brightness/Contrast ===
+=== Visualization of Volumetric Image Data ===
+Here we summarize some of the 3D visualization plugins in ImageJ.
 {| class="wikitable"
 |-
 |'''Name'''
