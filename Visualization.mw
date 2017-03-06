@@ -10,7 +10,10 @@ A pseudocolor (or indexed color) image is a single channel gray image (8, 16 or 
 
 The [http://imagej.net/docs/guide/146-19.html#sub:LUTMenu LUT Menu] of ImageJ contains a large collection of lookup tables that can be applied to a pseudocolor image.
 
-=== Brightness/Contrast ===
+=== Adjusting your Image in ImageJ ===
+
+The [http://imagej.net/docs/guide/146-28.html#toc-Subsection-28.2 Adjust submenu] contains commands that adjust brightness/contrast, threshold levels, and image size.  The [http://imagej.net/docs/guide/146-28.html#sub:Brightness/Contrast...[C] Brightness/Contrast] tool can be used interactively to alter the brightness and contrast of the active image.
+
 === Visualization of Volumetric Image Data ===
 Here we summarize some of the 3D visualization plugins in ImageJ.
 {| class="wikitable"
