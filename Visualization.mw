@@ -10,6 +10,8 @@ A [http://imagej.net/Color_Image_Processing#Pseudo-color pseudocolor image] is a
 
 The [http://imagej.net/docs/guide/146-19.html#sub:LUTMenu LUT Menu] of ImageJ contains a large collection of lookup tables that can be applied to a pseudocolor image.
 
+More information on this topic can be found on the wiki's [http://imagej.net/Color_Image_Processing Color Image Processing] page.
+
 === Adjusting your Image in ImageJ ===
 
 The [http://imagej.net/docs/guide/146-28.html#toc-Subsection-28.2 Adjust submenu] contains commands that adjust brightness/contrast, threshold levels, and image size.  The [http://imagej.net/docs/guide/146-28.html#sub:Brightness/Contrast...[C] Brightness/Contrast] tool can be used interactively to alter the brightness and contrast of the active image.
