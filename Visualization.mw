@@ -3,6 +3,28 @@
 {{BigNotice | See [[:Category:Visualization]] for pages about scientific visualization.}}
 {{Learn | techniques}}[[wikipedia:Scientific visualization|Scientific visualization]] is a set of techniques for graphically illustrating scientific data, enabling scientists to better understand, illustrate, and glean insight from their data.
 
+== Getting Started with Simple Visualization Options ==
+
+{| class="wikitable"
+|-
+|'''Name'''
+|'''Short Description'''
+|'''Highlights'''
+|'''Plugin Snapshot'''
+|-
+|[https://imagej.net/3D_Viewer 3D Viewer]
+|A tool for hardware-accelerated visualization possibilities for image stacks, using the [[Java 3D]] library.
+|
+* Stacks can be displayed as texture-based volume renderings, surfaces, or orthoslices
+* Macro-recordable functions
+* Adjust the transfer functions, edit volumes, point lists, landmark-based registration, transformations, 3D Content in PDFs
+|[[Image:3D_Viewer_overview.png]]
+|}
+
+== Visualization of Non-Image Data or Image-Derived Data ==
+
+== Making Figures in ImageJ ==
+
 == Recommended ImageJ Plugins for 'Big Data' Visualization ==
 
 Here we summarize some of the 'big data' visualization plugins in ImageJ. 
@@ -22,14 +44,6 @@ Here we summarize some of the 'big data' visualization plugins in ImageJ.
 * Provides real-time GPU-based image processing capabilities, such as image sharpness estimation and sample drift tracking
 * Enables live streaming of 3D data in real time over the internet
 |[[File:ClearVolumeInFiji.png|500px]]
-|-
-|[https://imagej.net/3D_Viewer 3D Viewer]
-|A tool for hardware-accelerated visualization possibilities for image stacks, using the [[Java 3D]] library.
-|
-* Stacks can be displayed as texture-based volume renderings, surfaces, or orthoslices
-* Macro-recordable functions
-* Adjust the transfer functions, edit volumes, point lists, landmark-based registration, transformations, 3D Content in PDFs
-|[[Image:3D_Viewer_overview.png]]
 |-
 |[http://imagej.net/BigDataViewer BigDataViewer]
 |A tool for interactive browsing of arbitrarily large image datasets.
