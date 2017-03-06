@@ -34,6 +34,7 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
 
 == Making Figures in ImageJ ==
 
+=== Available Plugins for Making Figures in ImageJ ===
 # [http://imagejdocu.tudor.lu/doku.php?id=video:utilities:creating_montages_with_magic_montage Magic Montage]
 # [http://imagejdocu.tudor.lu/doku.php?id=plugin:utilities:figurej:start FigureJ]
 # [https://grr.gred-clermont.fr/labmirouse/software/ ScientiFig]
