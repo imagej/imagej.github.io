@@ -10,7 +10,38 @@ A [http://imagej.net/Color_Image_Processing#Pseudo-color pseudocolor image] is a
 
 The [http://imagej.net/docs/guide/146-19.html#sub:LUTMenu LUT Menu] of ImageJ contains a large collection of lookup tables that can be applied to a pseudocolor image.
 
+Note: in the ImageJ 1.x user interface, LUTs are always 8-bit. When working with an image of higher bit depth, its intensity values are binned into 256 levels between minimum and maximum (see section Brightness/Contrast), and the LUT is applied onto these binned levels.
+
 More information on this topic can be found on the [http://imagej.net/Color_Image_Processing Color Image Processing] page.
+
+Fluorescence images are usually acquired without color information (i.e. by monochrome cameras or with photomultipliers): each channel contains just intensity values. To display a multi-channel fluorescence image in composite mode (i.e. an overlay of all channels), each channel can be assigned a '''monochrome false-color LUT''', e.g. 'Red', 'Green', 'Blue', 'Cyan', 'Magenta', 'Yellow', etc.
+
+When analyzing quantitative data in an image, a false-color LUT (in this case also referred to as '''color map''') can increase the visibility of low-contrasted features in the image and help the human eye to compare different images.
+
+Here's a list of recommended options to choose a LUT:
+
+{| class="wikitable"
+|-
+|'''Name'''
+|'''Properties'''
+|'''Common Usage'''
+|'''Histogram'''
+|-
+|'''mpl-viridis'''
+|
+* ''Perceptually uniform''<ref>https://bids.github.io/colormap/</ref>
+* Dark-to-Bright mapping
+| Quantitative display of positive values on a continuous scale
+|[[Image:M51-Histogram-mplViridis.png|300px|Histogram of the M51 Galaxy sample image with the mpl-viridis LUT applied]]
+|-
+|'''HiLo'''
+|
+* Minimum of display range is blue
+* Maximum of display range is red
+* Normal gray-scale LUT for all other values
+| Assessment of over-/under-exposure in an image
+|[[Image:M51-Histogram-HiLo.png|300px|Histogram of the M51 Galaxy sample image with the displayed range adjusted and the HiLo LUT applied]]
+|}
 
 === Adjusting your Image in ImageJ ===
 
