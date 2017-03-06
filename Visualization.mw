@@ -33,6 +33,11 @@
 
 == Making Figures in ImageJ ==
 
+# [http://imagejdocu.tudor.lu/doku.php?id=video:utilities:creating_montages_with_magic_montage Magic Montage]
+# [http://imagejdocu.tudor.lu/doku.php?id=plugin:utilities:figurej:start FigureJ]
+# [https://grr.gred-clermont.fr/labmirouse/software/ ScientiFig]
+# [https://github.com/quantixed/imagej-macros#figure-maker Figure Maker]
+
 == Recommended ImageJ Plugins for 'Big Data' Visualization ==
 
 Here we summarize some of the 'big data' visualization plugins in ImageJ. 
