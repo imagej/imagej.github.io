@@ -4,7 +4,12 @@
 {{Learn | techniques}}[[wikipedia:Scientific visualization|Scientific visualization]] is a set of techniques for graphically illustrating scientific data, enabling scientists to better understand, illustrate, and glean insight from their data.
 
 == Getting Started with Simple Visualization Options in ImageJ ==
-=== False-color look-up tables (LUTs) ===
+=== Pseudocolor Image Look-Up Tables (LUTs) ===
+
+A pseudocolor (or indexed color) image is a single channel gray image (8, 16 or 32-bit) that has color assigned to it via a lookup table, i.e. a [https://en.wikipedia.org/wiki/Lookup_table#Lookup_tables_in_image_processing LUT]. A LUT is a predefined table of gray values with matching red, green, and blue values so that shadows of gray are displayed as colorized pixels. Thus, differences in color in the pseudo-colored image reflect differences in intensity of the object rather than differences in color of the specimen that has been imaged.
+
+The [http://imagej.net/docs/guide/146-19.html#sub:LUTMenu LUT Menu] of ImageJ contains a large collection of lookup tables that can be applied to a pseudocolor image.
+
 === Brightness/Contrast ===
 === Visualization of Volumetric Image Data ===
 Here we summarize some of the 3D visualization plugins in ImageJ.
