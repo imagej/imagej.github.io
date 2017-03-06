@@ -10,7 +10,7 @@ A [http://imagej.net/Color_Image_Processing#Pseudo-color pseudocolor image] is a
 
 The [http://imagej.net/docs/guide/146-19.html#sub:LUTMenu LUT Menu] of ImageJ contains a large collection of lookup tables that can be applied to a pseudocolor image.
 
-More information on this topic can be found on the wiki's [http://imagej.net/Color_Image_Processing Color Image Processing] page.
+More information on this topic can be found on the [http://imagej.net/Color_Image_Processing Color Image Processing] page.
 
 === Adjusting your Image in ImageJ ===
 
