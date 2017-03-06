@@ -29,7 +29,9 @@
 
 # ImageJ 1.x plot window
 # [http://imagej.net/Quiver_Plot Quiver Plot]
-# Plotting tools available via scripting... JFreeChart (used by [http://imagej.net/Directionality Directionality], [http://matplotlib.org/ Matplotlib], etc.)
+# Plotting tools available via scripting... 
+## JFreeChart (used by [http://imagej.net/Directionality Directionality])
+## [http://matplotlib.org/ Matplotlib]
 
 == Making Figures in ImageJ ==
 
