@@ -1,10 +1,16 @@
 {{Userbox
 | name = Tiago Ferreira
 | affiliation = [https://www.mcgill.ca/ McGill Centre for Research in Neuroscience]
+| orcid = 0000-0001-6866-1540
+| scholar = MOnW5FEAAAAJ
+| researchgate = Tiago_Ferreira51
 | forum = tferr
 | github = tferr
 | osrc = tferr
-}}Tiago Ferreira is the author of:
+|loop = 141716
+}}
+
+Tiago Ferreira is the author of:
 * [http://imagej.nih.gov/ij/docs/guide/ ImageJ User Guide] ({{GitHub|org=tferr|repo=IJ-guide|label=GitHub}})
 * [[Sholl Analysis]] ({{GitHub|org=tferr|repo=ASA|label=GitHub}})
 * [[Neuroanatomy|Neuroanatomy toolbox]] ({{GitHub|org=tferr|repo=hIPNAT|label=GitHub}}), including:
@@ -15,7 +21,8 @@
 ** [http://imagejdocu.tudor.lu/doku.php?id=macro:distribution_plotter Distribution Plotter] †
 ** [http://imagej.nih.gov/ij/plugins/roi-manager-tools/ ROI Manager Tools] †
 
-Currently, he is also the maintainer and lead developer of:
+
+He is also the lead developer and maintainer of:
 * [[Simple Neurite Tracer]] ({{GitHub|org=fiji|repo=Simple_Neurite_Tracer|label=GitHub}})
 
 
