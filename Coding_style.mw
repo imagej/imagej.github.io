@@ -43,7 +43,9 @@ We also have several comment tokens we use in various situations:
 
 == Eclipse code style profiles ==
  
-We provide [https://github.com/imagej/imagej/tree/master/config Eclipse configuration files in the source repository] that define our rules for code structure and formatting. You can import them to your system using {{bc | File | Import | Preferences}} and selecting the <code>eclipse-preferences.epf</code> file. Then, in Eclipse preferences, navigate to {{bc | Java | Code Style | Clean Up}} and select "ImageJ" for the active profile. You can then format your source code by right-clicking your source file(s) and choosing {{bc | Source | Clean Up}} from the context menu. As of this writing, these rules are not automatically applied by CI, but we make an effort to apply them to the codebase occasionally by hand.
+We provide [https://github.com/imagej/imagej/tree/master/config Eclipse configuration files in the source repository] that define our rules for code structure and formatting. '''NB''' when downloading an <code>.epf</code> file from the repository, don't click ''Save link as...'', rather create a file <code>my-file-name.epf</code>, and then copy-paste the contents of the file. To do this, click on <code>eclipse-preferences.epf</code> and then the ''Raw'' button.
+
+You can import them to your system using {{bc | File | Import | Preferences}} and selecting the <code>eclipse-preferences.epf</code> file. Then, in Eclipse preferences, navigate to {{bc | Java | Code Style | Clean Up}} and select "ImageJ" for the active profile. You can then format your source code by right-clicking your source file(s) and choosing {{bc | Source | Clean Up}} from the context menu. As of this writing, these rules are not automatically applied by CI, but we make an effort to apply them to the codebase occasionally by hand.
 
 == Header structure ==
  
