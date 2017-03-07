@@ -73,6 +73,11 @@
 {{!}} [http://loci.wisc.edu/people/{{{loci}}} LOCI profile]
 {{!}}-
 }}
+{{#if:{{{loop|}}}|
+! Loop
+{{!}} [http://loop.frontiersin.org/people/{{{loop}}} Loop profile]
+{{!}}-
+}}
 {{#if:{{{website|}}}|
 ! Website
 {{!}} {{{website}}}
