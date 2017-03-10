@@ -6,7 +6,7 @@
 | maintainer     = {{Person|Tiago}}
 | source         = {{GitHub|org=tferr|repo=Scripts}}
 | released       = June 2014
-| latest version = '''1.1.12 February 2017''' ({{GitHub|org=tferr|repo=Scripts/releases|label=Changelog}})
+| latest version = '''1.1.13 March 2017''' ({{GitHub|org=tferr|repo=Scripts/releases|label=Changelog}})
 | category       = [[:Category:Analysis|Analysis]], [[:Category:Image annotation|Annotation]], [[:Category:Filtering|Filtering]], [[:Category:Segmentation|Segmentation]], [[:Category:Scripting|Scripting]]
 }}
 </div>
@@ -26,7 +26,7 @@ Some of the scripts have a dedicated documentation page, others feature built-in
 === List of BARs ===
 [[ File:BARsnapshot.png|right|Overview of BAR (v1.0.0)]]
 ;{{GitHub|org=tferr|repo=Scripts|path=README.md#analysis|label= Analysis}}<span id="Analysis"></span>
-:{{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Analysis/README.md#log-dog-spot-counter|label=LoG-DoG Spot Counter}}, {{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Analysis/README.md#multichannel-plot-profile|label=Multichannel Plot Profile}}, {{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Analysis/README.md#multichannel-zt-axis-profile|label=Multichannel ZT-axis Profile}}, {{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Analysis/README.md#smoothed-plot-profile|label=Smoothed Plot Profile}}
+:{{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Analysis/README.md#log-dog-spot-counter|label=LoG-DoG Spot Counter}}, {{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Analysis/README.md#multi-roi-profiler|label=Multi ROI Profiler}}, {{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Analysis/README.md#multichannel-plot-profile|label=Multichannel Plot Profile}}, {{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Analysis/README.md#multichannel-zt-axis-profile|label=Multichannel ZT-axis Profile}}, {{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Analysis/README.md#smoothed-plot-profile|label=Smoothed Plot Profile}}
 
 ;{{GitHub|org=tferr|repo=Scripts|path=README.md#image-annotation|label=Annotation}}<span id="Annotation"></span>
 :{{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Annotation/README.md#combine-orthogonal-views|label=Combine Orthogonal Views}}, {{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Annotation/README.md#cumulative-z-project|label=Cumulative Z Project}}, {{GitHub|org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Annotation/README.md#roi-color-coder|label=ROI Color Coder}}
