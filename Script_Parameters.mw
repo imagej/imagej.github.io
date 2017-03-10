@@ -139,10 +139,17 @@ Any parameter can be turned into a multiple-choice selector by adding a <code>ch
 
 === Files and Folders ===
 
-By default, a <code>@File</code> parameter will create a chooser for a single file:
+By default, a <code>@File</code> parameter will create a chooser for a single file: Below is an example in python. 
 
 <source lang="python">
 # @File(label="Select a file") myFile
+
+print(myFile)
+</source>
+
+In case of ImageJ1 Macro, just change # to //:
+<source>
+// @File(label="Select a file") myFile
 
 print(myFile)
 </source>
