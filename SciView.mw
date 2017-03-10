@@ -12,3 +12,7 @@
 }}== Purpose ==
 
 This plugin provides 3D visualization capabilities for images and meshes using the [https://github.com/ClearVolume/scenery Scenery] and [[ClearVolume]] infrastructure. An ambition of this plugin is to serve as a modern replacement to [[3D Viewer]]. ThreeDViewer also integrates [[ImageJ2]] functionality, including [[ImageJ Ops]].
+
+== Installation ==
+
+You can try out the ThreeDViewer, which is currently in alpha, by [[Following an update site|enabling the ThreeDViewer update site]].
