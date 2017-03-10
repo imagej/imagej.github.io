@@ -69,7 +69,9 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
 
 === The Basics ===
 
-#
+# [https://imagej.nih.gov/ij/docs/guide/146-30.html#sub:Plot-Profile-[k] Plot Profile]
+# [https://imagej.nih.gov/ij/docs/guide/146-28.html#sub:Plot-Z-axis-Profile... Plot Z-axis Profile]
+# [https://imagej.nih.gov/ij/docs/guide/146-30.html#sub:Surface-Plot... Surface Plot]
 
 === Available Plugins for Making Plots in ImageJ ===
 # [http://imagej.net/Quiver_Plot Quiver Plot] 
