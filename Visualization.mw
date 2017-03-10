@@ -67,7 +67,7 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
 
 == Making Plots in ImageJ ==
 
-=== The Basics ===
+=== The Basics: ImageJ v1.x Plot Tools ===
 
 # [https://imagej.nih.gov/ij/docs/guide/146-30.html#sub:Plot-Profile-%5Bk%5D Plot Profile]
 # [https://imagej.nih.gov/ij/docs/guide/146-28.html#sub:Plot-Z-axis-Profile... Plot Z-axis Profile]
