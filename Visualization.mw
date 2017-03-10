@@ -67,7 +67,10 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
 
 == Making Plots in ImageJ ==
 
-=== The Basics: ImageJ 1.x plot window ===
+=== The Basics ===
+
+#
+
 === Available Plugins for Making Plots in ImageJ ===
 # [http://imagej.net/Quiver_Plot Quiver Plot] 
 === Plotting tools available via scripting... ===
