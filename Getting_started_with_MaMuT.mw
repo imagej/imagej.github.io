@@ -60,15 +60,13 @@ Start MaMuT on this dataset by browsing to {{bc | Plugins | MaMuT | Launch new M
 
 A file explorer window opens. Browse to the <tt style="font-size: 1.25em;">.xml</tt> file of the BDV file pair. After a little while, the MaMuT main GUI window opens:
 
-[[Image:bdv-MaMuT_MainGUIWindow_beginning.png]]
+[[Image:bdv-MaMuT_MainGUIWindow_beginning.png|200px]]
 
 If you get this, so far so good. This is the main window of the GUI. It is split in 3 tabs but we will just focus on the first one for now. It controls the display of the data,
 both for the image and for the annotations. It also used to launch Views of the data.
 Right now there is no annotation data. We started by opening a BigDataViewer file, which is now loaded. The next MaMuT viewer (presented in the next section) you will open with display this image data, as in a normal BigDataViewer.
 
-If you are familiar with the BigDataViewer, there is a few useful things to know. When we launch a new MaMuT annotation, we actually import some of the settings of the BigDataViewer in the session. For instance, in the BigDataViewer you can save and restore settings using the {{bc | File | Save settings}} and {{bc | File | Load settings}} menu item. This creates and loads a XML file typically named <tt style="font-size: 1.25em;">bdv\_file.settings.xml</tt> if the BigDataViewer file is named <tt style="font-size: 1.25em;">bdv\_file.xml</tt>. If this settings file is present in the same folder than the BigDataViewer file when launching a new MaMuT annotation, then MaMuT imports the brightness adjustments and bookmarks found in this file. The manual transformation and the groups are however not imported.
-
-
+If you are familiar with the BigDataViewer, there is a few useful things to know. When we launch a new MaMuT annotation, we actually import some of the settings of the BigDataViewer in the session. For instance, in the BigDataViewer you can save and restore settings using the {{bc | File | Save settings}} and {{bc | File | Load settings}} menu item. This creates and loads a XML file typically named <tt style="font-size: 1.25em;">bdv_file.settings.xml</tt> if the BigDataViewer file is named <tt style="font-size: 1.25em;">bdv_file.xml</tt>. If this settings file is present in the same folder than the BigDataViewer file when launching a new MaMuT annotation, then MaMuT imports the brightness adjustments and bookmarks found in this file. The manual transformation and the groups are however not imported.
 
 === Saving to a MaMuT file. ===
 
