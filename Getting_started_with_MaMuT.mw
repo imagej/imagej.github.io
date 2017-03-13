@@ -30,11 +30,12 @@ MaMuT relies on and exploits the file format of the [[BigDataViewer|'''BigDataVi
 If you already have such a file, skip to the next section. Otherwise, we lazily rely on the excellent BigDataViewer documentation and point directly to the BigDataViewer instructions to prepare your images, depending on whether
 * they are [[BigDataViewer#Exporting_from_ImageJ_Stacks|'''opened as an ImageJ stack''']], or
 * they come from a [[BigDataViewer#Integration_with_Fiji.27s_SPIMage_Processing_Tools|'''SPIM processing pipeline''']].
-* \TODO{TODO [Tobias]: also refer to new [[Multiview-Reconstruction|'''Multiview-Reconstruction''']] datasets that are automatically in BigDataViewer format. BigDataViewer tutorial should also be updated in this regard.}
+* they come from a new [[Multiview-Reconstruction|'''Multiview-Reconstruction''']] datasets that are automatically in BigDataViewer format. 
 
 
 Once you have prepared your images for opening in the BigDataViewer, you should have a <tt style="font-size: 1.25em;">.xml</tt> file and a possibly very large <tt style="font-size: 1.25em;">.h5</tt> file on your computer. The <tt style="font-size: 1.25em;">.xml</tt> file must be the output of the BigDataViewer data preparation. It should start with the following lines:
-\begin{lstlisting}[language=xml]
+
+<source lang="xml">
 <?xml version="1.0" encoding="UTF-8"?>
 <SpimData version="0.2">
   <BasePath type="relative">.</BasePath>
@@ -42,13 +43,10 @@ Once you have prepared your images for opening in the BigDataViewer, you should 
     <ImageLoader format="bdv.hdf5">
       <hdf5 type="relative">MaMuT_Parhyale_demo.h5</hdf5>
 ...
-\end{lstlisting}
+</source>
 
-Instead of preparing your own dataset, you can also download an example dataset for this tutorial \href{http://bds.mpi-cbg.de/mamut-example/}{\coloredlink{here}}.
+Instead of preparing your own dataset, you can also download an example dataset for this tutorial [http://bds.mpi-cbg.de/mamut-example here].
 In the following, we assume that you are using this data.
-
-
-
 
 == Opening and and saving in MaMuT. ==
 
