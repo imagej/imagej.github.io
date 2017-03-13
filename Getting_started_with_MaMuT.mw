@@ -19,7 +19,7 @@ MaMuT is a Fiji plugin that depends on its components to run. Download Fiji from
 
 MaMuT is not shipped with Fiji by default; you have to install it in Fiji. Thanks to the ImageJ [[Updater|'''Updater''']], there is not much to do. Simply follow the instructions on how to [[How_to_follow_a_3rd_party_update_site|'''follow a 3rd party site''']], and subscribe to the MaMuT update site. Here is briefly how to do it. 
 
-Got to {{bc | Help | Update...}} and click on the \textbf{Manage update sites} button. In the window that appear, find the \textbf{MaMuT} checkbox and tick it. Then close the window. In the files to update list, there should be a \textbf{plugins/MaMuT\_.jar} appearing. Click on \textbf{Apply changes} button, then restart Fiji.
+Got to {{bc | Help | Update...}} and click on the '''Manage update sites''' button. In the window that appear, find the '''MaMuT''' checkbox and tick it. Then close the window. In the files to update list, there should be a '''plugins/MaMuT_.jar''' appearing. Click on '''Apply changes''' button, then restart Fiji.
 
 [[Image:bdv-MaMuT_UpdateSite.png]]
 
