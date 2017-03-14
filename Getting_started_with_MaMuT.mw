@@ -571,7 +571,7 @@ This command really reads into the raw data, and therefore generate ImageJ stack
 
 == Numerical features. ==
 
-We already skimed over  numerical features when we discussed the display settings for spots and tracks. Numerical features are scalar values associated to a spot, a link or a track that measures some useful value. For instance, the X position of a spot, the displacement across a link, and the number of split events in a track. The MaMuT feature system is direcly imported from \TrackMate, but only contains a subset of feature definitions from \TrackMate and a few ones related to cell lineaging. 
+We already skimed over  numerical features when we discussed the display settings for spots and tracks. Numerical features are scalar values associated to a spot, a link or a track that measures some useful value. For instance, the X position of a spot, the displacement across a link, and the number of split events in a track. The MaMuT feature system is direcly imported from [[TrackMate]], but only contains a subset of feature definitions from TrackMate and a few ones related to cell lineaging. 
 
 Numerical features are automatically kept in sync with the annotation. As soon as you add an annotation or modify and delete and existing one, the recalculation of features is triggered. As mentioned above however, the range display on the main GUI window is not, and you need to click over it to refresh the displayed colormap and its range. 
 
@@ -605,7 +605,7 @@ The next paragraphs list and document the current features in MaMuT.
 | style="padding: 5px;" | This is a special feature made for cell lineaging. It is expressed in time units how long a the cell tracked by this spot takes to divide. The time is measured from the mother division to the daughter division, so the cell division time value will be the same for all the spots of a branch in a track. The branches that do not start with a cell division or do not finish by a cell division are excluded from calculation, and the value of spots that belong to such branches defaults to <tt style="font-size: 1.25em;">NaN</tt>. This is why if you use this feature in with our demo dataset to color spots, they will all be dark gray, as none of our tracks follow a full cell cycle.
 |-
 | style="padding: 5px;" |  <tt style="font-size: 1.25em;">Manual spot color</tt>
-| style="padding: 5px;" | This is a special feature, that is not automatically calculated. You can assign manually a color to a set of spots. To do so, select some spots and in \TrackScheme, right-click to show the pop-up menu. The menu item <tt style="font-size: 1.25em;">Manual color for X spots</tt> will let you set the selected spot color. This color will then be used in the views if you select the <tt style="font-size: 1.25em;">Manual color</tt> item in the \textbf{Set color by menu in the spot panel of the main GUI window. Manual colors are saved to and retrieved from a MaMuT file.}
+| style="padding: 5px;" | This is a special feature, that is not automatically calculated. You can assign manually a color to a set of spots. To do so, select some spots and in TrackScheme, right-click to show the pop-up menu. The menu item <tt style="font-size: 1.25em;">Manual color for X spots</tt> will let you set the selected spot color. This color will then be used in the views if you select the <tt style="font-size: 1.25em;">Manual color</tt> item in the '''Set color by''' menu in the spot panel of the main GUI window. Manual colors are saved to and retrieved from a MaMuT file.
 |-
  
 |}
@@ -619,7 +619,7 @@ The next paragraphs list and document the current features in MaMuT.
 
 {| border="1" style="border-collapse:collapse;"
 | style="padding: 5px;" |  <tt style="font-size: 1.25em;">Spot source ID</tt> & <tt style="font-size: 1.25em;">Spot target ID</tt>
-| style="padding: 5px;" | The ID of the spot that is the source, respectively the target, of this link. In MaMuT and \TrackMate, links have a direction, that follows time.
+| style="padding: 5px;" | The ID of the spot that is the source, respectively the target, of this link. In MaMuT and TrackMate, links have a direction, that follows time.
 |-
 | style="padding: 5px;" |  <tt style="font-size: 1.25em;">Link cost</tt>
 | style="padding: 5px;" | The cost associated to the link. This value is normally set by particle-linking algorithms, that can create links between spots following minimization of global cost. Links created manually get a default value of -1. 
@@ -680,11 +680,6 @@ The next paragraphs list and document the current features in MaMuT.
 |-
 
 |}
-
-
-
-
-
 
 == Customizing MaMuT viewer key-bindings. ==
 
