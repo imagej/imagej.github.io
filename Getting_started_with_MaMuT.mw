@@ -422,9 +422,7 @@ Selections are very useful for visualization within a crowded annotation. For in
 
 For instance, you can use it to only display a series of disjoint parts of a tracks:
 
-[[Image:bdv-MaMuT_TrackSchemeSelectionOnly.png|500px]]
-
-
+[[Image:bdv-MaMuT_TrackSchemeSelectionOnly.png|700px]]
 
 === TrackScheme info-pane and feature plots. ===
 
