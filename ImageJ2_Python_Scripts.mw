@@ -43,6 +43,10 @@ Note that all the scripts of this page are links from https://github.com/imagej/
 
 {{GitHubEmbed|org=imagej|repo=imagej-scripting|path=src/main/resources/script_templates/ImageJ2/Particles_From_Mask.py|label=Particles_From_Mask.py}}
 
+== Manual Simple Registration on Stack ==
+
+{{GitHubEmbed|org=imagej|repo=imagej-scripting|path=src/main/resources/script_templates/ImageJ2/Manual_Registration.py|label=Manual_Registration.py}}
+
 
 = Resources =
 * [[Jython_Scripting|Jython Scripting]]
