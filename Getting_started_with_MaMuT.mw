@@ -358,14 +358,12 @@ The keyboard can also be used:
 
 * The numeric keypad numbers {{key press|6}}, {{key press|9}}, {{key press|8}}, {{key press|7}}, {{key press|4}}, {{key press|1}}, {{key press|2}} and {{key press|3}} are used to move as on a compass.
 * {{key press|+}} zoom in. 
-* {{key press|{-}}} zoom out.
-* {{key press|{=}}} restores the zoom to its default level.
+* {{key press|-}} zoom out.
+* {{key press|equals}} restores the zoom to its default level.
 
 The top-left part of the TrackScheme window shows the outline of the graph. The blue square represents the current view and can be resized and moved around. 
 
 [[Image:bdv-MaMuT_TrackSchemeOutline.png |500px]]
-
-
 
 === Configuring TrackScheme look. ===
 
