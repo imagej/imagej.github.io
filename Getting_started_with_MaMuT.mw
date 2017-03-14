@@ -828,13 +828,13 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
 | style="padding: 5px;" |  {{key press|End}}
 | style="padding: 5px;" | Center view on the last spot in current selection. 
 |-
-| style="padding: 5px;" |  {{key press|+}} & {{key press|{=}}} 
+| style="padding: 5px;" |  {{key press|+}} & {{key press|equals}} 
 | style="padding: 5px;" | Zoom in. 
 |-
 | style="padding: 5px;" |  {{key press|-}} 
 | style="padding: 5px;" | Zoom out. 
 |-
-| style="padding: 5px;" |  {{key press|Shift|{=}}} 
+| style="padding: 5px;" |  {{key press|Shift|equals}} 
 | style="padding: 5px;" | Reset zoom. 
 |-
 | style="padding: 5px;" |  {{key press|1}} {{key press|2}} ... {{key press|9}} on the keypad 
