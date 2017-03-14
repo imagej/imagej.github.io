@@ -105,21 +105,21 @@ To reload a MaMuT file, go to the {{bc | Plugins | MaMuT | Load MaMuT file}} Fij
 == The MaMuT Viewer. ==
 
 MaMuT offers three kind of views:
-* \smallimg{mammouth-32x32.png} \textbf{MaMuT Viewer} is the main view that overlays the image data and 
+* '''MaMuT Viewer''' is the main view that overlays the image data and 
   the annotations using the physical coordinate system. This is where you will
   mainly interact with the data, and create, edit and move spots around. This
   view is based on the BigDataViewer.
-* \smallimg{Icon3a_print_transparency.png} \textbf{TrackScheme} is the track browser, taken from TrackMate. It only
+* '''TrackScheme''' is the track browser, taken from TrackMate. It only
   shows the annotation data in a hierarchical way, discarding any physical location
   information. Tracks are laid out along time ranging from top to bottom, and 
   arranged from left to right according to their name. This view is useful to make
   sense of the annotation data, as well as to edit links between spots.
-* \smallimg{sport_8ball.png} \textbf{3D Viewer} shows a 3D View of the annotation data in the physical
+* '''3D Viewer''' shows a 3D View of the annotation data in the physical
   coordinate system, without the image data. It is based on the [[3D_Viewer|'''ImageJ 3D Viewer''']]. 
 
 
 Let's start with the MaMuT Viewer. Click on its button on the GUI, the one with a
-picture of a mammoth \smallimg{mammouth-32x32.png}. A BigDataViewer window should appear. 
+picture of a mammoth. A BigDataViewer window should appear. 
 
 \screenshotC{MaMuT_ViewerExample.png}
 
@@ -139,12 +139,11 @@ Each of these orientations generate a data block, that we call ''source'' here. 
 
 
 The dataset we use for this tutorial is an excerpt from a long term time-lapse experiment done with a Zeiss LightSheet Z1, filming the development of a shrimp (\textit{Parhyale hawaiensis}) over several days. We have here the first 10 time-points, spreading over a bit more than 1 hour.  Three views were acquired that generated a source each:
-\begin{myitemize}
-	\item Angle 325° is the ventral-right view.
-	\item Angle 280° is the ventral view.
-	\item Angle 235° is the ventral-left view.
-	\item Angle 0°, which is the first one in MaMuT, is the fused volume from all 3 input sources after spatiotemporal registration and multi-view deconvolution. 
-\end{myitemize}
+
+* Angle 325° is the ventral-right view.
+* Angle 280° is the ventral view.
+* Angle 235° is the ventral-left view.
+* Angle 0°, which is the first one in MaMuT, is the fused volume from all 3 input sources after spatiotemporal registration and multi-view deconvolution. 
 
 
 
@@ -153,39 +152,38 @@ The dataset we use for this tutorial is an excerpt from a long term time-lapse e
 
 Navigating through the data in space and time uses the mouse and keyboard in a standard way. Everything can be done with the mouse and keyboard. The key bindings can be redefined, but here are the default:
 
-\textbf{To pan and zoom:}
-\begin{myitemize}
-	\item {{key press|Right Drag}} or {{key press|Middle Drag}} Move in the XY-plane of the view.
-	\item {{key press|Mousewheel}} Move along the Z-axis of the view. Press {{key press|Shift}} or {{key press|Control}} to change the speed.
-	\item {{key press|Alt-Mousewheel}} (Mac and Linux) or {{key press|Ctrl-Shift-Mousewheel}} (Windows) Zoom in and out.
-	\item {{key press|\textuparrow}} / {{key press|\textdownarrow}} Zoom in / out. With {{key press|Shift}} fast zoom. With {{key press|Control}} slow zoom.
-\end{myitemize}
+'''To pan and zoom:'''
 
-\textbf{To orient, rotate the view:}
-\begin{myitemize}
-	\item {{key press|Left Drag}} Rotate around the point where the mouse was clicked.
-	\item {{key press|X}} / {{key press|Y}} / {{key press|Z}} Select rotation axis.
-	\item {{key press|\textleftarrow}} / {{key press|\textrightarrow}} Rotate clockwise / counter-clockwise around the chosen rotation axis.
-	\item {{key press|,}} / {{key press|.}} Move forward / backward along the z-axis.
-	\item {{key press|Shift|X}} Rotate to the ZY-plane of the current source (look along the x-axis of the current source).
-	\item {{key press|Shift|Y}} or {{key press|Shift|C}} Rotate to the XZ-plane of the current source (look along the y-axis of the current source).
-	\item {{key press|Shift|Z}} Rotate to the XY-plane of the current source (look along the z-axis of the current source).
-\end{myitemize}
+* {{key press|Right Drag}} or {{key press|Middle Drag}} Move in the XY-plane of the view.
+* {{key press|Mousewheel}} Move along the Z-axis of the view. Press {{key press|Shift}} or {{key press|Control}} to change the speed.
+* {{key press|Alt-Mousewheel}} (Mac and Linux) or {{key press|Ctrl-Shift-Mousewheel}} (Windows) Zoom in and out.
+* {{key press|\textuparrow}} / {{key press|\textdownarrow}} Zoom in / out. With {{key press|Shift}} fast zoom. With {{key press|Control}} slow zoom.
 
-\textbf{To navigate in time:}
-\begin{myitemize}
-	\item {{key press|N}} Move to the previous time-point.
-	\item {{key press|M}} Move to the next time-point.
-	\item {{key press|[}} Jump to the previous time step (explained below).
-	\item {{key press|]}} Jump to the next time step.
-\end{myitemize}
+
+'''To orient, rotate the view:'''
+
+* {{key press|Left Drag}} Rotate around the point where the mouse was clicked.
+* {{key press|X}} / {{key press|Y}} / {{key press|Z}} Select rotation axis.
+* {{key press|\textleftarrow}} / {{key press|\textrightarrow}} Rotate clockwise / counter-clockwise around the chosen rotation axis.
+* {{key press|,}} / {{key press|.}} Move forward / backward along the z-axis.
+* {{key press|Shift|X}} Rotate to the ZY-plane of the current source (look along the x-axis of the current source).
+* {{key press|Shift|Y}} or {{key press|Shift|C}} Rotate to the XZ-plane of the current source (look along the y-axis of the current source).
+* {{key press|Shift|Z}} Rotate to the XY-plane of the current source (look along the z-axis of the current source).
+
+
+'''To navigate in time:'''
+
+* {{key press|N}} Move to the previous time-point.
+* {{key press|M}} Move to the next time-point.
+* {{key press|[}} Jump to the previous time step (explained below).
+* {{key press|]}} Jump to the next time step.
+
 
 There is a fantastic feature in the BigDataViewer that you will find here called \textbf{bookmarks}. They let you store a position and orientation in space as bookmarks. You can later call them again. To use them:
 
-\begin{myitemize}
-	\item First press {{key press|Shift|B}} then any other key to bookmark the current view position.
-	\item Pressing {{key press|B}} then the bookmark's key to  restore the view position.
-	\item {{key press|O}} does the same things, but only restore the bookmark orientation, and does not translate to its position.
+* First press {{key press|Shift|B}} then any other key to bookmark the current view position.
+* Pressing {{key press|B}} then the bookmark's key to  restore the view position.
+* {{key press|O}} does the same things, but only restore the bookmark orientation, and does not translate to its position.
 \end{myitemize}
 
 You can many bookmarks, all identified by the key you press after the bookmark command.
@@ -203,9 +201,6 @@ The MaMuT viewer also overlays some useful information:
 [[Image:bdv-MaMuT_ViewerOverlays.pdf|500px]]
 
 The MaMuT viewer only displays a slice of the current source(s). It fetches the pixel values it needs to generate a single slice through the data. By default, pixel values are interpolated using the nearest neighbor, which might generate a pixelated look for high level of zoom. By pressing {{key press|I}} you can toggle between nearest-neighbor interpolation, and tri-linear interpolation, which smoothes the display.
-
-
-
 
 == Annotating cells. ==
 
