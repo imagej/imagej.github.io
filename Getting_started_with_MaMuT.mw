@@ -106,8 +106,7 @@ To reload a MaMuT file, go to the {{bc | Plugins | MaMuT | Load MaMuT file}} Fij
 
 MaMuT offers three kind of views:
 * '''MaMuT Viewer''' is the main view that overlays the image data and the annotations using the physical coordinate system. This is where you will mainly interact with the data, and create, edit and move spots around. This view is based on the BigDataViewer.
-* '''TrackScheme''' is the track browser, taken from TrackMate. It only shows the annotation data in a hierarchical way, discarding any physical location information. Tracks are laid out along time ranging from top to bottom, and arranged from left to right according to their name. This view is useful to make
-  sense of the annotation data, as well as to edit links between spots.
+* '''TrackScheme''' is the track browser, taken from TrackMate. It only shows the annotation data in a hierarchical way, discarding any physical location information. Tracks are laid out along time ranging from top to bottom, and arranged from left to right according to their name. This view is useful to make sense of the annotation data, as well as to edit links between spots.
 * '''3D Viewer''' shows a 3D View of the annotation data in the physical coordinate system, without the image data. It is based on the [[3D_Viewer|'''ImageJ 3D Viewer''']]. 
 
 
@@ -131,13 +130,12 @@ Each of these orientations generate a data block, that we call ''source'' here. 
 === The tutorial dataset. ===
 
 
-The dataset we use for this tutorial is an excerpt from a long term time-lapse experiment done with a Zeiss LightSheet Z1, filming the development of a shrimp (\textit{Parhyale hawaiensis}) over several days. We have here the first 10 time-points, spreading over a bit more than 1 hour.  Three views were acquired that generated a source each:
+The dataset we use for this tutorial is an excerpt from a long term time-lapse experiment done with a Zeiss LightSheet Z1, filming the development of a shrimp (''Parhyale hawaiensis'') over several days. We have here the first 10 time-points, spreading over a bit more than 1 hour.  Three views were acquired that generated a source each:
 
 * Angle 325° is the ventral-right view.
 * Angle 280° is the ventral view.
 * Angle 235° is the ventral-left view.
 * Angle 0°, which is the first one in MaMuT, is the fused volume from all 3 input sources after spatiotemporal registration and multi-view deconvolution. 
-
 
 
 
@@ -172,12 +170,11 @@ Navigating through the data in space and time uses the mouse and keyboard in a s
 * {{key press|]}} Jump to the next time step.
 
 
-There is a fantastic feature in the BigDataViewer that you will find here called \textbf{bookmarks}. They let you store a position and orientation in space as bookmarks. You can later call them again. To use them:
+There is a fantastic feature in the BigDataViewer that you will find here called '''bookmarks'''. They let you store a position and orientation in space as bookmarks. You can later call them again. To use them:
 
 * First press {{key press|Shift|B}} then any other key to bookmark the current view position.
 * Pressing {{key press|B}} then the bookmark's key to  restore the view position.
 * {{key press|O}} does the same things, but only restore the bookmark orientation, and does not translate to its position.
-\end{myitemize}
 
 You can many bookmarks, all identified by the key you press after the bookmark command.
 
@@ -186,13 +183,13 @@ You can many bookmarks, all identified by the key you press after the bookmark c
 
 Switching from one source to another is done with the numeric keys {{key press|1}} ... {{key press|0}} for up to 10 views. Pressing {{key press|F}} switches to the fused mode, where all sources are overlaid. You can add and remove sources from the fused view by pressing {{key press|Shift|1}} - etc. The color and brightness of each source are defined in the \textbf{brightness and color} panel, brought by pressing the {{key press|S}} key.
 
-[[Image:bdv-MaMuT_ViewerBrightnessColor.png|500px]]
+[[Image:bdv-MaMuT_ViewerBrightnessColor.png|700px]]
 
 On this screenshot, we used the fused mode, toggle the first and third sources off (the deconvolved source and the angle 280°), and looked at the data in a XZ plane.
 
 The MaMuT viewer also overlays some useful information:
 
-[[Image:bdv-MaMuT_ViewerOverlays.pdf|500px]]
+[[Image:bdv-MaMuT_ViewerOverlays2.png|700px]]
 
 The MaMuT viewer only displays a slice of the current source(s). It fetches the pixel values it needs to generate a single slice through the data. By default, pixel values are interpolated using the nearest neighbor, which might generate a pixelated look for high level of zoom. By pressing {{key press|I}} you can toggle between nearest-neighbor interpolation, and tri-linear interpolation, which smoothes the display.
 
