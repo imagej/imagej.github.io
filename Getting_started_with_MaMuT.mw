@@ -262,25 +262,22 @@ So a link can be created between any two spots, provided they do not belong to t
 === Creating and removing links. ===
 
 In the MaMuT Viewer, only spots are selectable with the mouse. To create or remove a link, you have to select exactly two spots. 
-\begin{myitemize}
-	\item Select a spot by clicking inside it.
-	\item Move to another time-point ({{key press|N}}, {{key press|M}}, {{key press|[}}, {{key press|]}}, the time slider).
-	\item Add a second spot to the selection by shift-clicking inside it. 
-	\item Press {{key press|L}} to add a link between these two spots, or to remove it already exists.
-\end{myitemize}
+
+* Select a spot by clicking inside it.
+* Move to another time-point ({{key press|N}}, {{key press|M}}, {{key press|[}}, {{key press|]}}, the time slider).
+* Add a second spot to the selection by shift-clicking inside it. 
+* Press {{key press|L}} to add a link between these two spots, or to remove it already exists.
 
 So here are the two new useful bindings for \textbf{editing links}:
-\begin{myitemize}
-	\item {{key press|Shift-Left Click}} add and remove spots from the selection.
-	\item {{key press|L}} toggle a link between the two spots of the selection. This does nothing if there is not exactly two spots in the selection. 
-\end{myitemize}
+
+* {{key press|Shift-Left Click}} add and remove spots from the selection.
+* {{key press|L}} toggle a link between the two spots of the selection. This does nothing if there is not exactly two spots in the selection. 
 
 Now go back to your MaMuT session, with the data oriented as aid above, and try to annotate and link the cell that divides between the first and second time-point. The mother cell can be found around X=1095, Y=1020, Z=1820 and t=0. On the image below, we tracked the daughter cell that emerges from the division on the left part of the view.
 
 [[Image:bdv-MaMuT_DesiredTracking_1.PNG|500px]]
 
 Note that when you create a link with this method, after link creating the selection is set to be made of only the last spot added. To create the next link, you just have to add the target spot to the selection, the source spot is already in. But still, after creating links over only 10 time-points, lets recognize that this is probably not the best way to quickly create a lineage. This method is probably best suited to edit an existing annotation.
-
 
 === The auto-linking mode. ===
 
