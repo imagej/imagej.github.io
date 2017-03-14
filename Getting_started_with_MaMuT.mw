@@ -336,9 +336,9 @@ The '''Limit drawing depth''' field is used to restrict the Z neighborhood in wh
 
 TrackScheme is the second view offered in MaMuT. It can be seen as a lineage visualizer or editor. In TrackScheme, the image data as well as the spatial location of spots are completely discarded in favor of a hierarchical layout that highlights how cells divide in time.
 
-In the main MaMuT GUI window, click on the \smallimg{Icon3a_print_transparency.png} \textbf{TrackScheme} button. A new window should appear, with the following content.
+In the main MaMuT GUI window, click on the '''TrackScheme''' button. A new window should appear, with the following content.
 
-\screenshotC{MaMuT_TrackSchemeStart.png}
+[[Image:bdv-MaMuT_TrackSchemeStart.png |500px]]
 
 In TrackScheme, tracks are arranged from left to right and time runs from top to bottom. At this time we just have a single track, with two branches. The cell we tracked divides immediately after the first time-point, which is represented in TrackScheme by a fork going down. Each branch below this fork represents the annotation of a daughter cell. However, all the spots and links for these two daughter cells still belong to the same track, as they are connected ''via'' the mother cell.
 
@@ -348,99 +348,77 @@ Though this view is very synthetic, there is a lot you can do with TrackMate.
 === Moving around in TrackScheme. ===
 
 Moving around is done classically with the mouse, and the panning is triggered by holding down the {{key press|Space}} key:
-\begin{myitemize}
-	\item {{key press|Mousewheel}} scrolls up and down.
-	\item {{key press|Shift|Mousewheel}} scrolls left and right.
-	\item {{key press|Space|Mousedrag}} pans the view, à la ImageJ. If you pull the mouse out of the TrackScheme window, it will scroll in the direction of the mouse cursor.
-	\item {{key press|Space|Mousewheel}} is used for zooming.
-\end{myitemize}
+
+* {{key press|Mousewheel}} scrolls up and down.
+* {{key press|Shift|Mousewheel}} scrolls left and right.
+* {{key press|Space|Mousedrag}} pans the view, à la ImageJ. If you pull the mouse out of the TrackScheme window, it will scroll in the direction of the mouse cursor.
+* {{key press|Space|Mousewheel}} is used for zooming.
 
 The keyboard can also be used:
-\begin{myitemize}
-	\item The numeric keypad numbers {{key press|6}}, {{key press|9}}, {{key press|8}}, {{key press|7}}, {{key press|4}}, {{key press|1}}, {{key press|2}} and {{key press|3}} are used to move as on a compass.
-	\item {{key press|+}} zoom in. 
-	\item {{key press|{-}}} zoom out.
-	\item {{key press|{=}}} restores the zoom to its default level.
-\end{myitemize}
+
+* The numeric keypad numbers {{key press|6}}, {{key press|9}}, {{key press|8}}, {{key press|7}}, {{key press|4}}, {{key press|1}}, {{key press|2}} and {{key press|3}} are used to move as on a compass.
+* {{key press|+}} zoom in. 
+* {{key press|{-}}} zoom out.
+* {{key press|{=}}} restores the zoom to its default level.
 
 The top-left part of the TrackScheme window shows the outline of the graph. The blue square represents the current view and can be resized and moved around. 
 
-\screenshotC{MaMuT_TrackSchemeOutline.pdf}
-
+[[Image:bdv-MaMuT_TrackSchemeOutline.png |500px]]
 
 
 
 === Configuring TrackScheme look. ===
 
-Though TrackScheme is a view of the annotation data like the MaMuT viewer, it completely and purposely ignores some the display settings you can set on the main GUI window, such as the track display mode and the global visibility of spots and tracks. The color it chooses for the links and spots representation is also peculiar: The spot color by feature mode is ignored, even for the circles that represent spot. They take their color from the track color mode, and use the color of the incident link. For instance, if you pick the <tt style="font-size: 1.25em;">Displacement</tt> feature in the \textbf{track color mode}, you will get this:
+Though TrackScheme is a view of the annotation data like the MaMuT viewer, it completely and purposely ignores some the display settings you can set on the main GUI window, such as the track display mode and the global visibility of spots and tracks. The color it chooses for the links and spots representation is also peculiar: The spot color by feature mode is ignored, even for the circles that represent spot. They take their color from the track color mode, and use the color of the incident link. For instance, if you pick the <tt style="font-size: 1.25em;">Displacement</tt> feature in the '''track color mode''', you will get this:
 
 [[Image:bdv-MaMuT_TrackSchemeTrackDisplayColor.png|500px]]
 
 Tracks have a name, and are arranged in columns, separated by a vertical black line. 
-\TrackScheme arranges the annotations line by line, and each line represents a time-point. The row header tells you what time-point you are looking at. The background color of each row alternates to highlight different frames. If you find the background too crowded, you can disable the alternating color by clicking on the \smallimg{Icon_application_view_columns.png} \textbf{Display decoration button} on the toolbar. The second mode disables track columns and rows alternating colors; the third mode re-enables track columns. 
+TrackScheme arranges the annotations line by line, and each line represents a time-point. The row header tells you what time-point you are looking at. The background color of each row alternates to highlight different frames. If you find the background too crowded, you can disable the alternating color by clicking on the '''Display decoration button''' on the toolbar. The second mode disables track columns and rows alternating colors; the third mode re-enables track columns. 
 
 [[Image:bdv-MaMuT_TrackSchemeDecorationButton.png|500px]]
 
-Finally, there is two \textbf{Styles} for the spot schemes. The <tt style="font-size: 1.25em;">simple</tt> style sonly displays them as round spots. The <tt style="font-size: 1.25em;">full</tt> style displays them as rounded boxes, with each spot name apparent. In the <tt style="font-size: 1.25em;">full</tt> style, small thumbnails can be captured and displayed in TrackScheme for all spots. Just next to the menu, there is a thumbnail button. If activated, thumbnails are collected from all spots, using the image source they were created on. Thumbnails are captured around the spot location, using their radius plus a tolerance factor. Interestingly, the \textbf{Spot display radius ratio} is used to define the size of the thumbnail. For instance, with a display factor of 2, you can obtain the layout below. Notice that the spot boxes can be resized manually to better display thumbnails.
+Finally, there is two '''Styles''' for the spot schemes. The <tt style="font-size: 1.25em;">simple</tt> style sonly displays them as round spots. The <tt style="font-size: 1.25em;">full</tt> style displays them as rounded boxes, with each spot name apparent. In the <tt style="font-size: 1.25em;">full</tt> style, small thumbnails can be captured and displayed in TrackScheme for all spots. Just next to the menu, there is a thumbnail button. If activated, thumbnails are collected from all spots, using the image source they were created on. Thumbnails are captured around the spot location, using their radius plus a tolerance factor. Interestingly, the '''Spot display radius ratio''' is used to define the size of the thumbnail. For instance, with a display factor of 2, you can obtain the layout below. Notice that the spot boxes can be resized manually to better display thumbnails.
 
-\screenshotC{MaMuT_TrackSchemeThumbnails.pdf}
+[[Image:bdv-MaMuT_TrackSchemeThumbnails.png|500px]]
+
 
 
 === Exporting TrackScheme display. ===
 
 The hierarchical layout of the lineages provided by TrackScheme can be useful for communications. It can be exported using the three export buttons in the toolbar.
 
-[[Image:bdv-MaMuT_TrackSchemeExportButtons.pdf|500px]]
+[[Image:bdv-MaMuT_TrackSchemeExportButtons.png|500px]]
 
-\begin{myitemize}
 
-	\item The \smallimg{Icon_camera_go.png} \textbf{Capture undecorated TrackScheme} button will generate a view of \TrackScheme and open it in Fiji. The background is set to white and the zoom level is set to the default, regardless of what the actual zoom is in TrackScheme. Once this image is in Fiji, you can modify it, save it, etc using the tools in Fiji.
-	
-	\item The \smallimg{Icon_camera_edit.png} \textbf{Capture TrackScheme with decorations} button does the converse. It captures a snapshot of the TrackScheme window as is, and uses the current zoom level to generate an image.
-	
-	\item The \smallimg{Icon_camera_export.png} \textbf{Export to...} opens file browser on which you can pick the export file format and its location. Many file formats are supported:
-	\begin{myitemize}
-		\item PNG image file with/without transparent background.
-		\item PDF or SVG file, that can later be edited with e.g. Illustrator.
-		\item As a HTML page, though the layout is somewhat simplified.
-		\item The now deprecated VML file format (replaced by SVG).
-		\item As text, but this only saves a minimal amount of information.
-		\item The MXE file format is a specialized XML format, that can be parsed with classical XML parsers.
-		\item And all the common image formats (PNG, JPEG, GIF, BMP).
-	\end{myitemize}
-\end{myitemize}
-
+* The '''Capture undecorated TrackScheme''' button will generate a view of [[TrackScheme]] and open it in Fiji. The background is set to white and the zoom level is set to the default, regardless of what the actual zoom is in TrackScheme. Once this image is in Fiji, you can modify it, save it, etc using the tools in Fiji.
+* The '''Capture TrackScheme with decorations''' button does the converse. It captures a snapshot of the TrackScheme window as is, and uses the current zoom level to generate an image.
+* The '''Export to...''' opens file browser on which you can pick the export file format and its location. Many file formats are supported:
+** PNG image file with/without transparent background.
+** PDF or SVG file, that can later be edited with e.g. Illustrator.
+** As a HTML page, though the layout is somewhat simplified.
+** The now deprecated VML file format (replaced by SVG).
+** As text, but this only saves a minimal amount of information.
+** The MXE file format is a specialized XML format, that can be parsed with classical XML parsers.
+** And all the common image formats (PNG, JPEG, GIF, BMP).
 
 
 === Managing a selection in TrackScheme. ===
 
-\TrackScheme is useful to build a selection and query its properties. As we said above, \TrackScheme does not abide any visibility setting. Spots and links are always visible, which is useful to build a selection. Spots and links are added to the current selection in a classical way:
+[[TrackScheme]] is useful to build a selection and query its properties. As we said above, \TrackScheme does not abide any visibility setting. Spots and links are always visible, which is useful to build a selection. Spots and links are added to the current selection in a classical way:
 
-\begin{myitemize}
-
-	\item {{key press|Left-Click}} on a spot or link to set the selection with this spot or link. The selection is cleared before. 
-	
-	\item {{key press|Left-Click}} outside a spot to clear the selection. 
-
-	\item {{key press|Shift|Left-Click}} on a spot or link to add or remove this spot or link to the selection.
-	
-	 \item {{key press|Mousedrag}} to select multiple spots and links in a selection box. Hold {{key press|Shift}} to add them to the current selection.
-	
-\end{myitemize}
+* {{key press|Left-Click}} on a spot or link to set the selection with this spot or link. The selection is cleared before. 
+* {{key press|Left-Click}} outside a spot to clear the selection. 
+* {{key press|Shift|Left-Click}} on a spot or link to add or remove this spot or link to the selection.
+* {{key press|Mousedrag}} to select multiple spots and links in a selection box. Hold {{key press|Shift}} to add them to the current selection.
 
 Adding to this, several items in the {{key press|Right-click}} popup menu help selecting part of tracks. If you {{key press|Right-click}} on a spot or {{key press|Right-click}} outside a spot with a non-empty selection, you can:
 
-\begin{myitemize}
+* <tt style="font-size: 1.25em;">Select whole track</tt> will include all the spots and the links of the tracks the selection belongs to.
+* <tt style="font-size: 1.25em;">Select track downwards</tt> walks from the spots and links in the selection, and add the spots and links that connect from them, forward in time (downward in TrackScheme).
+* <tt style="font-size: 1.25em;">Select track upwards</tt> does the same, but backward in time.
 
-	\item \smallimg{Icon_arrow_updown.png} <tt style="font-size: 1.25em;">Select whole track</tt> will include all the spots and the links of the tracks the selection belongs to.
-
-	\item \smallimg{Icon_arrow_down.png} <tt style="font-size: 1.25em;">Select track downwards</tt> walks from the spots and links in the selection, and add the spots and links that connect from them, forward in time (downward in \TrackScheme).
-
-	\item \smallimg{Icon_arrow_up.png} <tt style="font-size: 1.25em;">Select track upwards</tt> does the same, but backward in time.
-
-\end{myitemize}
-
-The same tools exist in the second tab of the main GUI window (\smallimg{Icon_TrackMate.png} \textbf{Annotation}), but we will speak of this tab later.
+The same tools exist in the second tab of the main GUI window ('''Annotation'''), but we will speak of this tab later.
 
 Selections are very useful for visualization within a crowded annotation. For instance, select one of the two branches in our single track. With the default track display mode, the selection is drawn on the MaMuT viewer as a thick green light that extends fully in time. The eighth track display mode is called <tt style="font-size: 1.25em;">Show selection only</tt> and just does that. It displays in the MaMuT viewer only the spots and links in the selection, with their proper color settings, and abide to the frame and depth limit settings. 
 
@@ -456,15 +434,13 @@ Another use of the selection is to display, plot and export information on its c
 
 The info pane in the middle left takes the shape of a table, that displays the numerical feature values of the spot selection as a table. Spots are arranged as columns and feature as lines. This table can be exported to an ImageJ table with the {{key press|Right-click}} popup menu.
 
-The bottom left part if the spot feature plotter. The \textbf{Feature for X axis} drop down menu lets you choose what will be the feature used for the X axis. \textbf{Feature for Y axis} menus work the same way. Y-axis features can be added and removed using the \smallimg{Icon_add.png} add and \smallimg{Icon_delete.png} remove buttons.
+The bottom left part if the spot feature plotter. The '''Feature for X axis''' drop down menu lets you choose what will be the feature used for the X axis. '''Feature for Y axis''' menus work the same way. Y-axis features can be added and removed using the add and remove buttons.
 
-To generate the plot, click the \smallimg{Icon_plots.png} \textbf{Plot features} button. 
+To generate the plot, click the '''Plot features''' button. 
 A graph should appear on which you can interact a bit. {{key press|Mousedrag}} towards the bottom right direction will zoom the plot, and {{key press|Mousedrag}} towards to up right direction will reset the zoom. The {{key press|Right-click}} menu lets you configure the plot, save it to an image file and export it as an ImageJ table.
 
 
-[[Image:bdv-MaMuT_TrackSchemeSideBar.pdf|500px]]
-
-
+[[Image:bdv-MaMuT_TrackSchemeSideBar.png|800px]]
 
 == Editing annotations with TrackScheme. ==
 
