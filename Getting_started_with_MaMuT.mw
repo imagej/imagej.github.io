@@ -296,20 +296,17 @@ At this stage, your first track has two branches: the first cell at t=0 divides 
 MaMuT is built as an application for the annotation of large images immediately after their acquisition, and help build the first experimental results quickly. With modern, automated and fast live-sample microscopy, it is possible to generate a movie with high temporal resolution over a very long time. This is the case of the data we use for this tutorial, though we only work on the first 10 time-points. Nonetheless, you can see that at this stage, the cells move little from one frame to another. You could jump by steps of 5 frames, and still be able to identify the cell you tracked over time. 
 
 MaMuT has step-wise time browsing commands to just do that. The keyboard shortcut to do this are:
-\begin{myitemize}
-	\item {{key press|[}} Jump to the previous time step.
-	\item {{key press|]}} Jump to the next time step.
-\end{myitemize}
-By default, the viewer will jump to time-points multiples of 5: 0, 5, 10, etc.  You can set what is the time step in the \smallimg{Icon_TrackMate.png} \textbf{Annotation} tab of the main GUI window, under the \textbf{Stepwise time browsing} field.
+
+* {{key press|[}} Jump to the previous time step.
+* {{key press|]}} Jump to the next time step.
+
+By default, the viewer will jump to time-points multiples of 5: 0, 5, 10, etc.  You can set what is the time step in the '''Annotation''' tab of the main GUI window, under the '''Stepwise time browsing''' field.
 
 If you are on a time-point not a multiple of the time-step, the next key-press will move to the closest multiple. The goal of these commands is to quickly generate a lineage that extends deeply in time by skipping some frames. But the time-points we reach with these commands are always the same multiples, so the annotated frames are all the same when using the stepwise time browsing. 
 
 Below is an example from an actual annotation, peeking ahead the lineage visualizer we will describe in the next section. Inn this view , cells are arranged by lineage, time running from top to bottom. Time-points are lines of alternating color. You can see that except when cells are dividing or when there is an ambiguity, this user only annotated time-points multiples of 5. This leads to a sparser annotation, generated faster.
 
 [[Image:bdv-MaMuT_TrackSchemeStepwiseTimeBrowsing.png|500px]]
-
-
-
 
 === Display settings for tracks. ===
 
