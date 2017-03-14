@@ -312,30 +312,25 @@ Below is an example from an actual annotation, peeking ahead the lineage visuali
 
 Notice that the look of tracks (represented by a straight line for each link) can be tuned in the same way spots are. 
 
-[[Image:bdv-MaMuT_ConfigureTrackDisplay.pdf|500px]]
+[[Image:bdv-MaMuT_ConfigureTrackDisplay.png]]
 
 Track coloring uses the same feature system than for spots. There are scalar numerical features associated to tracks and they are used to generate a color from a jet colormap. However, there is two kind of features for tracks:
-\begin{myitemize}
-	\item There are <tt style="font-size: 1.25em;">track features</tt>, defined for whole tracks. For instance: the number of spots in a track, the displacement from the start to the end of track, etc. If you pick a track feature, all the links of a track will share the same color.
-	\item There are <tt style="font-size: 1.25em;">edge features</tt>, defined for a single link. These are features that are simply defined by a link between two spots, for instance, the instantaneous velocity for the link. Then each link may be of a different color.
-\end{myitemize}
+
+* There are <tt style="font-size: 1.25em;">track features</tt>, defined for whole tracks. For instance: the number of spots in a track, the displacement from the start to the end of track, etc. If you pick a track feature, all the links of a track will share the same color.
+* There are <tt style="font-size: 1.25em;">edge features</tt>, defined for a single link. These are features that are simply defined by a link between two spots, for instance, the instantaneous velocity for the link. Then each link may be of a different color.
 
 There is also a <tt style="font-size: 1.25em;">default</tt> category, like for spots, that allow for using a uniform color or to use link colors set manually elsewhere.
 
-Tracks extend in time, and they are displayed as lines over the image data. By default, the whole tracks are displayed from their start to their end. You can control how they appear with the \textbf{Track display mode} menu:
+Tracks extend in time, and they are displayed as lines over the image data. By default, the whole tracks are displayed from their start to their end. You can control how they appear with the '''Track display mode''' menu:
 
-\begin{myitemize}
-	\item <tt style="font-size: 1.25em;">Show all entire tracks</tt> is the default and display all the whole tracks with no time cue.
-	\item <tt style="font-size: 1.25em;">Show local tracks</tt> only shows a portion of the track which extend shortly before and after the current time-point. As the time distance increases, the track display fades in the image using transparency. You can control how much time context you want to display using the \textbf{Limit frame depth} checkbox and the \textbf{Frame depth} field.
-	\item <tt style="font-size: 1.25em;">Show local tracks, backward</tt> is similar, but only extends tracks backward in time (this mode is sometimes nicknamed 'dragon tail' in other softwares).
-	\item <tt style="font-size: 1.25em;">Show local tracks, forward</tt> is the same thing, but forward in time.
-	\item The same three modes are repeated with the <tt style="font-size: 1.25em;">fast</tt> label added. They are identical to their counterparts, except that optimizations are made in favor of drawing speed, sacrificing frivolities such as transparency and anti-aliasing.
-	\item The last mode is <tt style="font-size: 1.25em;">Show selection only</tt>, and only draws what is currently selected. It is very useful to make sense of a lineage amongst a possibly very large dataset. Careful: the content of the selection model can still be edited in this mode. For instance, if you click outside a spot, the selection is cleared and nothing will be displayed in this mode. This mode is best used in conjunction with TrackScheme, which we describe in the next section.
-\end{myitemize}
+* <tt style="font-size: 1.25em;">Show all entire tracks</tt> is the default and display all the whole tracks with no time cue.
+* <tt style="font-size: 1.25em;">Show local tracks</tt> only shows a portion of the track which extend shortly before and after the current time-point. As the time distance increases, the track display fades in the image using transparency. You can control how much time context you want to display using the \textbf{Limit frame depth} checkbox and the '''Frame depth''' field.
+* <tt style="font-size: 1.25em;">Show local tracks, backward</tt> is similar, but only extends tracks backward in time (this mode is sometimes nicknamed 'dragon tail' in other softwares).
+* <tt style="font-size: 1.25em;">Show local tracks, forward</tt> is the same thing, but forward in time.
+* The same three modes are repeated with the <tt style="font-size: 1.25em;">fast</tt> label added. They are identical to their counterparts, except that optimizations are made in favor of drawing speed, sacrificing frivolities such as transparency and anti-aliasing.
+* The last mode is <tt style="font-size: 1.25em;">Show selection only</tt>, and only draws what is currently selected. It is very useful to make sense of a lineage amongst a possibly very large dataset. Careful: the content of the selection model can still be edited in this mode. For instance, if you click outside a spot, the selection is cleared and nothing will be displayed in this mode. This mode is best used in conjunction with TrackScheme, which we describe in the next section.
 
-The \textbf{Limit drawing depth} field is used to restrict the Z neighborhood in which tracks are drawn. If activated, only part of the tracks that are close to the current Z plane of the view will be drawn. The extend of this Z section is set by the numerical value in the field.
-
-
+The '''Limit drawing depth''' field is used to restrict the Z neighborhood in which tracks are drawn. If activated, only part of the tracks that are close to the current Z plane of the view will be drawn. The extend of this Z section is set by the numerical value in the field.
 
 == TrackScheme. ==
 
