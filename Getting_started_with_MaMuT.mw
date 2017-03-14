@@ -231,17 +231,19 @@ Spots can also be created with a double-click of the mouse. So if we recapitulat
 * {{key press|Left Click}} inside a spot to select it and center all views to this spot.
 * {{key press|Double Left Click}} outside any spot to create a new one at the mouse location.
 
+
+
 === Display settings for spots. ===
 
 Now is a good time to talk a little bit on how we control the look of spots on the MaMuT viewer. All the MaMuT are in sync and they share common display settings. It is not possible to separately tune the display of each view. Display settings for spots can be tuned on the main GUI window, in the top part of the '''Views''' tab. Here you can toggle the visibility of all spots, make their name appear. The display radius simple change their apparent radius on the MaMuT viewer. This display setting has no impact on subsequent analysis and apart from visibility tidiness, it will have its utility later. 
 
 The spot coloring uses the notion of ''numerical features''. In MaMuT, and as in TrackMate, each annotation object can have several numerical, scalar features associated. For instance a spot can have features like X, Y, Z for its position, etc. The drop-box  menu \textbf{Set color by} lets you choose the feature you want to use for the spot color. The color range below the menu shows you the min and max value for the feature you picked over all the dataset and interpolate from blue to red with a jet color-map. If you scroll through the menu, you can see that the features available are sorted in three categories: <tt style="font-size: 1.25em;">spot features</tt>, <tt style="font-size: 1.25em;">default</tt> and <tt style="font-size: 1.25em;">track features</tt>. <tt style="font-size: 1.25em;">Spot features</tt> is the category where you can find all the numerical features that relate to single spots, like their position, radius, ''etc.'' In <tt style="font-size: 1.25em;">default</tt>, colors are not picked from a numerical feature, but either all the same (uniform color) or set manually (we will see later how). The <tt style="font-size: 1.25em;">track feature category</tt> is special: it gives to spots the color taken from the feature of the ''track'' they belong to.
 
-[[Image:bdv-MaMuT_ConfigureSpotDisplay.png|500px]]
+[[Image:bdv-MaMuT_ConfigureSpotDisplay.png]]
 
 By default, the range of the color scale is taken from the minimal to the maximal feature value. This can be changed by double-clicking on the '''Set color by''', which will bring a window where you can set the min and max manually. 
 
-[[Image:bdv-MaMuT_ConfigureFeatureRange.png|500px]]
+[[Image:bdv-MaMuT_ConfigureFeatureRange.png]]
 
 == Linking cells across time. ==
 
