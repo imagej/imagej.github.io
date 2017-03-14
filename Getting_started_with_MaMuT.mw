@@ -105,23 +105,16 @@ To reload a MaMuT file, go to the {{bc | Plugins | MaMuT | Load MaMuT file}} Fij
 == The MaMuT Viewer. ==
 
 MaMuT offers three kind of views:
-* '''MaMuT Viewer''' is the main view that overlays the image data and 
-  the annotations using the physical coordinate system. This is where you will
-  mainly interact with the data, and create, edit and move spots around. This
-  view is based on the BigDataViewer.
-* '''TrackScheme''' is the track browser, taken from TrackMate. It only
-  shows the annotation data in a hierarchical way, discarding any physical location
-  information. Tracks are laid out along time ranging from top to bottom, and 
-  arranged from left to right according to their name. This view is useful to make
+* '''MaMuT Viewer''' is the main view that overlays the image data and the annotations using the physical coordinate system. This is where you will mainly interact with the data, and create, edit and move spots around. This view is based on the BigDataViewer.
+* '''TrackScheme''' is the track browser, taken from TrackMate. It only shows the annotation data in a hierarchical way, discarding any physical location information. Tracks are laid out along time ranging from top to bottom, and arranged from left to right according to their name. This view is useful to make
   sense of the annotation data, as well as to edit links between spots.
-* '''3D Viewer''' shows a 3D View of the annotation data in the physical
-  coordinate system, without the image data. It is based on the [[3D_Viewer|'''ImageJ 3D Viewer''']]. 
+* '''3D Viewer''' shows a 3D View of the annotation data in the physical coordinate system, without the image data. It is based on the [[3D_Viewer|'''ImageJ 3D Viewer''']]. 
 
 
 Let's start with the MaMuT Viewer. Click on its button on the GUI, the one with a
 picture of a mammoth. A BigDataViewer window should appear. 
 
-\screenshotC{MaMuT_ViewerExample.png}
+[[Image:bdv-MaMuT_ViewerExample.png|500px]]
 
 
 
@@ -194,6 +187,7 @@ You can many bookmarks, all identified by the key you press after the bookmark c
 Switching from one source to another is done with the numeric keys {{key press|1}} ... {{key press|0}} for up to 10 views. Pressing {{key press|F}} switches to the fused mode, where all sources are overlaid. You can add and remove sources from the fused view by pressing {{key press|Shift|1}} - etc. The color and brightness of each source are defined in the \textbf{brightness and color} panel, brought by pressing the {{key press|S}} key.
 
 [[Image:bdv-MaMuT_ViewerBrightnessColor.png|500px]]
+
 On this screenshot, we used the fused mode, toggle the first and third sources off (the deconvolved source and the angle 280°), and looked at the data in a XZ plane.
 
 The MaMuT viewer also overlays some useful information:
