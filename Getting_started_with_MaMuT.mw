@@ -514,17 +514,17 @@ Spot names are also used to decide in what order to lay out track branches. For 
 
 MaMuT does not ship fully automatic detection and particle-linking algorithms. It was build as a tool for the manual annotation and inspection of large movies. Typically, you would use MaMuT just after the acquisition and image registration process, to check whether the data you acquired is usable, and quickly generate an annotation that will fuel your first scientific conclusions. Nonetheless, manual annotation can be very cumbersome. The semi-automatic tracking can alleviate this a bit. 
 
-Let us track one of the cell close to the two we just annotated. Go back to the first time-point and create a spot above a cell, with the right radius and location. In the main GUI window, click on the \smallimg{Icon_TrackMate.png} \textbf{Annotation} tab. You will notice that there is a \textbf{Semi-automatic tracking} panel. There are several parameters we will describe later. For now, simply change the <tt style="font-size: 1.25em;">Max nFrames</tt> value to 10, so that you get roughly this configuration for your TrackMate session:
+Let us track one of the cell close to the two we just annotated. Go back to the first time-point and create a spot above a cell, with the right radius and location. In the main GUI window, click on the '''Annotation''' tab. You will notice that there is a '''Semi-automatic tracking''' panel. There are several parameters we will describe later. For now, simply change the <tt style="font-size: 1.25em;">Max nFrames</tt> value to 10, so that you get roughly this configuration for your TrackMate session:
 
 [[Image:bdv-MaMuT_SemiAutoTracking_1.png|500px]]
 
-Click on the spot you just added to add it to the selection, and click on the \smallimg{Icon1_cropped.png} \textbf{Semi-automatic tracking} button. The tracking initiates and processes iteratively. Cells are discovered one time-point after the other, and added to track consecutively. 
+Click on the spot you just added to add it to the selection, and click on the '''Semi-automatic tracking''' button. The tracking initiates and processes iteratively. Cells are discovered one time-point after the other, and added to track consecutively. 
 
 If you follow the case depicted above, the semi-automatic tracking does a mistake at frame 7. It captures a brighter, smaller cell further from its predecessor rather than the right one.
 
-\screenshotC{MaMuT_SemiAutoTracking_2.png}
+[[Image:bdv-MaMuT_SemiAutoTracking_2.png]]
 
- This gives us an opportunity to explain how does the semi-automatic tracking works and what are its limitations.
+This gives us an opportunity to explain how does the semi-automatic tracking works and what are its limitations.
 
 The semi-automatic tracking starts from a single cell in the selection. It inspects a neighborhood centered on this cell, but in the next time-point. The neighborhood is  filtered by a Laplacian-of-Gaussian filter, tuned with the initial cell radius, and candidate cells are generated from the maxima in the filtered image. The filtered pixel-value of these maxima are used as a quality measure for candidate cell. The quality value is higher if the cell in the raw image is bright, and of radius similar to that of the initial cell.
 
@@ -537,9 +537,6 @@ Then, amongst all the candidate cells that remain, the one with the largest qual
 In our case, the error made at the time-point 7 was because there was a very bright cell that appeared in the neighborhood. Even if it was farther than the right candidate, it was within the <tt style="font-size: 1.25em;">Distance tolerance</tt> bound and was deemed as a successor. On this demo dataset, the temporal resolution is excellent, and the cells do not move much from one frame to another. A way to prevent the error we had would be to restrict the <tt style="font-size: 1.25em;">Distance tolerance</tt> to for instance 1.2 radius.
 
 As we just saw, the semi-automatic tracking is very local and does not use nor derive any prior information on cell movements. It simple tries to find the best successor of a single cell, neglecting all the other cells. As such, it must be considered as a strongly suboptimal tracking method, whose goal is strictly to assist manual annotation. Alternating between semi-automatic tracking and manual annotation (e.g. using the auto-linking mode) when the semi-automatic tracking fails can generate deep lineages quickly.
-
-
-
 
 == Exporting images and reslicing data. ==
 
