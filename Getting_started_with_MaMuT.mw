@@ -544,16 +544,15 @@ As we just saw, the semi-automatic tracking is very local and does not use nor d
 
 === Exporting the MaMuT viewer display. ===
 
-Notice that each MaMuT viewer window has a menu bar in which a few items are listed. You will find shortcuts to call for the help page, brings up the brightness and visibility dialogs, and in the <tt style="font-size: 1.25em;">Tools</tt> menu, the \textbf{Record Movie} and \textbf{Record Max-Projection Movie} commands. They are similar to their BigDataViewer counterpart, and were adapted so that the annotations are also visible on the exported images.
+Notice that each MaMuT viewer window has a menu bar in which a few items are listed. You will find shortcuts to call for the help page, brings up the brightness and visibility dialogs, and in the <tt style="font-size: 1.25em;">Tools</tt> menu, the '''Record Movie''' and '''Record Max-Projection Movie''' commands. They are similar to their BigDataViewer counterpart, and were adapted so that the annotations are also visible on the exported images.
 
-The \textbf{Record Movie} command will export a PNG capture of the viewer "as is". All the source visibility and brightness settings are used, as well as the display settings for the annotation. Even the image size is taken from the current viewer window size. As only the current slice is exported, you can only configure the time-points to export.
+The '''Record Movie''' command will export a PNG capture of the viewer "as is". All the source visibility and brightness settings are used, as well as the display settings for the annotation. Even the image size is taken from the current viewer window size. As only the current slice is exported, you can only configure the time-points to export.
 
-\textbf{Record Max-Projection Movie} command performs a Maximum Intensity Projection of the data, in a direction orthogonal to the view plane. The annotations are projected as well, and they are drawn if they were located in the central slice. On the dialog of this command, you can configure how far from the current slice you want the projection to run, and how many slices to skip when doing the projection. Careful, the units used for this settings are in voxels, not in physical units. 
+'''Record Max-Projection Movie''' command performs a Maximum Intensity Projection of the data, in a direction orthogonal to the view plane. The annotations are projected as well, and they are drawn if they were located in the central slice. On the dialog of this command, you can configure how far from the current slice you want the projection to run, and how many slices to skip when doing the projection. Careful, the units used for this settings are in voxels, not in physical units. 
 
 Below is an example obtained on the last time-point of the demo dataset. Notice that the exported image a flattened view of the data, as RGB images.
 
-\screenshotC{MaMuTRecordMaxProjection.png}
-
+[[Image:bdv-MaMuTRecordMaxProjection.png]]
 
 
 === Exporting a track sub-volume. ===
@@ -562,17 +561,13 @@ Suppose you have now a very dense annotation that covers a large number of the c
 
 First, select exactly two cells in TrackScheme or in a MaMuT viewer. These two cells must belong to the same track. We will export a volume that follows the cell over time, from the first to the second in selection by walking along a path that joins them in the track. For instance, select the first and last cell in the track now named 'A'.
 
-Once you have them, go the third tab in the main GUI window, called \smallimg{Icon_cog.png} \textbf{Actions}. This tab contains only actions, that are MaMuT commands requiring special interaction with the data. Select the <tt style="font-size: 1.25em;">Export track stack</tt> action in the menu, and click the \smallimg{Icon_control_play_blue.png} \textbf{Execute} button. A dialog shows up that allow configuring the export. 
+Once you have them, go the third tab in the main GUI window, called '''Actions'''. This tab contains only actions, that are MaMuT commands requiring special interaction with the data. Select the <tt style="font-size: 1.25em;">Export track stack</tt> action in the menu, and click the '''Execute''' button. A dialog shows up that allow configuring the export. 
 
 [[Image:bdv-MaMuT_ExportTrackStack.PNG]]
 
 The dialog that pops let you choose first the source that will be resliced, in the <tt style="font-size: 1.25em;">Target source</tt> menu. Here we picked the first one.  There is an important gotcha with the source selection and viewer orientation. The capture always uses the source intrinsic orientation. It will always capture Z-planes of the chosen source, irrespective of the view orientation in the MaMuT viewer. So if you capture the same track with two different sources, you might have very different orientation. The <tt style="font-size: 1.25em;">Image size</tt> field determines the size of the data exported, in units of the radius of the first select spot. Finally, the <tt style="font-size: 1.25em;">Dimensionality</tt> radio button lets you chose between exporting a 3D volume or just a single slice centered on the spot. In the example above, we generated the 3D volume following the track 'A', and on the left image, generated its maximal intensity projection.
 
 This command really reads into the raw data, and therefore generate ImageJ stacks that have the same data representation (8-bit, 16-bit, etc) that of the raw data. This can be very useful for subsequent analysis.
-
-
-
-
 
 == Numerical features. ==
 
