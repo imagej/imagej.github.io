@@ -218,7 +218,7 @@ Spots represents point of interest (in our case, cells) under the shape of a sph
 
 === Using multiple viewers to position spots. ===
 
-Accurately placing a spot in 3D can be difficult. This is where using multiple views in MaMut can help. On the main GUI window, click on the'''MaMuT Viewer''' button again to open a new view. This new view might not be showing the spot you just added. Fortunately, all views can be brought in sync by clicking inside a spot.
+Accurately placing a spot in 3D can be difficult. This is where using multiple views in MaMut can help. On the main GUI window, click on the '''MaMuT Viewer''' button again to open a new view. This new view might not be showing the spot you just added. Fortunately, all views can be brought in sync by clicking inside a spot.
 
 In the first view, click on the spot you added. The second view is translated so that this very spot is brought at the center of the view window. Rotate around this point so as to show the YZ plane of the source (press {{key press|Shift|X}}) and zoom close to the spot, to have a view pair resembling this:
 
