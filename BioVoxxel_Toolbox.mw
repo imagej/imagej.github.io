@@ -336,7 +336,7 @@ Purpose: The recursive filters plugin allows to repetitively apply one of the th
 
 The maximum iteration can be set by the user up to 500 times but will be stopped if two consecutive filtered images do not show any further difference.
 
-[[File:RecursiveFilters01.png|200px]]
+[[File:RecursiveFilters01.png|400px]]
 
 Form: recordable plugin
 
