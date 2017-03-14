@@ -685,12 +685,12 @@ The next paragraphs list and document the current features in MaMuT.
 
 
 
-=== The <tt style="font-size: 1.25em;">mamut.properties === file.</tt>
+=== The <tt style="font-size: 1.25em;">mamut.properties</tt> file. === 
 
 
 The key-bindings used in the MaMuT viewer can be customized through a text file, that allow you to remap any command to any key. To so, create a text file named <tt style="font-size: 1.25em;">mamut.properties</tt> in the <tt style="font-size: 1.25em;">Fiji.app</tt> folder (where the <tt style="font-size: 1.25em;">plugins</tt> and <tt style="font-size: 1.25em;">jars</tt> folders are). This file must follow this syntax example:
 
-\begin{verbatim}
+<pre>
 A=add spot
 ENTER=add spot
 D=delete spot
@@ -701,9 +701,9 @@ shift\ Q=decrease spot radius a lot
 control\ E=increase spot radius a bit
 control\ Q=decrease spot radius a bit
 ...
-\end{verbatim}
+</pre>
 
-It follows the syntax <tt style="font-size: 1.25em;">key=command</tt>, one per line. Modifier keys such as {{key press|Control}} and {{key press|Shift}} are specified by prepending the key with their name, separated by a space escaped with a backslash '\textbackslash\ '. Spaces in commands do not need to be escaped. The dash \# charachter at the beginning of a line is used to insert comments. 
+It follows the syntax <tt style="font-size: 1.25em;">key=command</tt>, one per line. Modifier keys such as {{key press|Control}} and {{key press|Shift}} are specified by prepending the key with their name, separated by a space escaped with a backslash '\'. Spaces in commands do not need to be escaped. The dash # character at the beginning of a line is used to insert comments. 
 
 An example of such a file can be found [[Example mamut.properties file|'''here''']].
 
@@ -712,12 +712,11 @@ An example of such a file can be found [[Example mamut.properties file|'''here''
 
 Here is a list of all available commands.
 
-
 {| border="1" style="border-collapse:collapse;"
 | style="padding: 5px;" | <tt style="font-size: 1.25em;">add spot</tt>
 | style="padding: 5px;" | Add a spot at mouse location. 
   
-  If the <tt style="font-size: 1.25em;">auto-linking</tt> mode is on, also link it with the spot previously in the selection, and set the newly added spot to be the current selection.
+If the <tt style="font-size: 1.25em;">auto-linking</tt> mode is on, also link it with the spot previously in the selection, and set the newly added spot to be the current selection.
 |-
 | style="padding: 5px;" |  <tt style="font-size: 1.25em;">delete spot</tt>
 | style="padding: 5px;" | Delete the spot at mouse location.
@@ -808,10 +807,7 @@ Here is a list of all available commands.
 
 Here we recapitulate the default key-bindings for the MaMuT viewer. This image is also included in the help window of the MaMuT viewer.
 
-[[Image:bdv-MaMuTKeyboardLayout.pdf|500px]]
-
-
-
+[[Image:bdv-MaMuTKeyboardLayout.png]]
 
 == \TrackScheme key-bindings. ==
 
