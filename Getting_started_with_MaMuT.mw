@@ -828,13 +828,13 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
 | style="padding: 5px;" |  {{key press|End}}
 | style="padding: 5px;" | Center view on the last spot in current selection. 
 |-
-| style="padding: 5px;" |  {{key press|+}} & {{key press|=}} 
+| style="padding: 5px;" |  {{key press|+}} & {{key press|{=}}} 
 | style="padding: 5px;" | Zoom in. 
 |-
 | style="padding: 5px;" |  {{key press|-}} 
 | style="padding: 5px;" | Zoom out. 
 |-
-| style="padding: 5px;" |  {{key press|Shift|=}} 
+| style="padding: 5px;" |  {{key press|Shift|{=}}} 
 | style="padding: 5px;" | Reset zoom. 
 |-
 | style="padding: 5px;" |  {{key press|1}} {{key press|2}} ... {{key press|9}} on the keypad 
@@ -846,10 +846,10 @@ TrackScheme key-bindings cannot be remapped like for the MaMuT viewer. We list t
 | style="padding: 5px;" |  {{key press|Control|Shift|A}}
 | style="padding: 5px;" | Clear selection. 
 |-
-| style="padding: 5px;" |  {{key press|\textuparrow}} / {{key press|\textdownarrow}} 
+| style="padding: 5px;" |  {{key press|up}} / {{key press|down}} 
 | style="padding: 5px;" | Move to the previous / next spot in time, within the current track. 
 |-
-| style="padding: 5px;" |  {{key press|\textleftarrow}} / {{key press|\textrightarrow}} 
+| style="padding: 5px;" |  {{key press|left}} / {{key press|right}} 
 | style="padding: 5px;" | Move to the previous / next sibling, within the current track. Sibling are spots that belong to the same track and to the same time-point. For instance the two spots of two sister daughter cells. 
 |-
 | style="padding: 5px;" |  {{key press|Page up}} / {{key press|Page down}} 
