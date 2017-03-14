@@ -451,7 +451,7 @@ The main application of TrackScheme is to edit annotations in conjunction with c
 
 Make sure you have a TrackScheme window open, a MaMuT viewer window open, and move the later close to the cells we tracked previously. Make sure the auto-linking mode is off {{key press|Shift|L}}, and start creating spots over a cell close to the first one. Try to follow it over time. You should see spots appearing in TrackScheme, under a special column on the right called <tt style="font-size: 1.25em;">Unlaid spots</tt>. The TrackScheme window should resembles this:
 
-[[Image:bdv-MaMuT_TrackSchemeUnlaidSpots.png|500px]]
+[[Image:bdv-MaMuT_TrackSchemeUnlaidSpots.png|700px]]
 
 Normally, TrackScheme only displays the spots that belong in a track. Lonely spots that are not linked to anything when you launch TrackScheme are not shown. The spots you create after TrackScheme are however stacked under this special column. From there, you can attach them to an existing track or create a new one.
 
@@ -463,21 +463,17 @@ Here is a way to do it. In TrackScheme using {{key press|Mousedrag}} select all 
 === Triggering re-layout and style refresh. ===
 
 Notice that the TrackScheme display of this new track is somewhat unsatisfactory. The first track may have changed color in the MaMuT viewer, but this change did not happen in TrackScheme. Plus, the new track does not have its own column, and the color of some of its spots might be wrong. The reasons for this are:
-\begin{myitemize}
 
-	\item We changed the annotation and these changes affected the numerical features that color the tracks. For instance, if you picked the <tt style="font-size: 1.25em;">Track index</tt> numerical feature for track coloring, there is now two tracks instead of one. The feature update is seen immediately in the MaMuT viewer, but for performance reason, TrackScheme as well as the color line on the main GUI window have to be refreshed manually. To do so, click on the  \smallimg{Icon_theme.png} \textbf{Style} button in the TrackScheme toolbar, and directly on the track color line on the main GUI window.
+* We changed the annotation and these changes affected the numerical features that color the tracks. For instance, if you picked the <tt style="font-size: 1.25em;">Track index</tt> numerical feature for track coloring, there is now two tracks instead of one. The feature update is seen immediately in the MaMuT viewer, but for performance reason, TrackScheme as well as the color line on the main GUI window have to be refreshed manually. To do so, click on the '''Style''' button in the TrackScheme toolbar, and directly on the track color line on the main GUI window.
 	
-	\item The changes we made affected the track hierarchy, but the re-layout is not triggered automatically by such changes. To do so, press the  \smallimg{Icon_refresh.png} \textbf{Layout} button in TrackScheme toolbar. This will reorganize TrackScheme with a proper layout. Since in TrackScheme, spots can be moved around at will, this is also a good way to reorder things.
+* The changes we made affected the track hierarchy, but the re-layout is not triggered automatically by such changes. To do so, press the  '''Layout''' button in TrackScheme toolbar. This will reorganize TrackScheme with a proper layout. Since in TrackScheme, spots can be moved around at will, this is also a good way to reorder things.
 	
-\end{myitemize}
-
-
 
 
 
 === Linking spots with drag and drop. ===
 
-Another way to create single links is to enable the drag-and-drop linking mode. In the \TrackScheme toolbar, click on the grayed-out \smallimg{Icon_connect.png} \textbf{Toggle linking} button.
+Another way to create single links is to enable the drag-and-drop linking mode. In the TrackScheme toolbar, click on the grated-out '''Toggle linking''' button.
 
 Now move over any cell in one track. As you do, the cell gets highlighted with a green square. If you click and drag from this cell, a new link (in magenta) will emerge. Release it on any cells to create a link between the source and the target. 
 
@@ -495,14 +491,14 @@ The last you link you added may have strongly perturbed our annotation, particul
 
 Tracks are ordered from left to right alphanumerically with their name. To change a track name, {{key press|Double-click}} on it in the column header part. Track names should be made of a single line with a combination of any character. 
 
-Try for instance to change the track order by changing their name. Let's call the first one 'B' and the second one 'A'. Click the \textbf{Layout} button. Your TrackScheme window should look like this:
+Try for instance to change the track order by changing their name. Let's call the first one 'B' and the second one 'A'. Click the '''Layout''' button. Your TrackScheme window should look like this:
 
 [[Image:bdv-MaMuT_TrackSchemeTrackNames.png|500px]]
 
 
 === Editing spot names and imposing branch order. ===
 
-Spots also have a name, that you can see either in the MaMuT viewer by checking the \textbf{Display spot names}, either in TrackScheme by using the <tt style="font-size: 1.25em;">full</tt> display style. They are all called <tt style="font-size: 1.25em;">ID\#\#</tt> by default, which is not very informative.
+Spots also have a name, that you can see either in the MaMuT viewer by checking the '''Display spot names''', either in TrackScheme by using the <tt style="font-size: 1.25em;">full</tt> display style. They are all called <tt style="font-size: 1.25em;">ID##</tt> by default, which is not very informative.
 
 To edit a spot name in TrackScheme, {{key press|Double-click}} on the spot. It should be replaced by an orange box  in which you can type the spot name. Press {{key press|Shift|Enter}} to validate the new name, or {{key press|Escape}} to cancel the change. Spot names may be several lines long, but their display might then not be very pleasing.
 
@@ -513,8 +509,6 @@ Apart from their use to mark some biological meaning to the annotations, spot na
 Spot names are also used to decide in what order to lay out track branches. For instance, our track 'B' as a cell division in the second time-point. You can force one branch to be the laid left or the right by setting the name of the spot just after the division. Sister cells are laid out from left to right alphanumerically, like for tracks.
 
 [[Image:bdv-MaMuT_TrackSchemeSpotNames.png|500px]]
-
-
 
 == Semi-automated tracking in MaMuT. ==
 
