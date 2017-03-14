@@ -218,20 +218,18 @@ Spots represents point of interest (in our case, cells) under the shape of a sph
 
 === Using multiple viewers to position spots. ===
 
-Accurately placing a spot in 3D can be difficult. This is where using multiple views in MaMut can help. On the main GUI window, click on the \smallimg{mammouth-32x32.png} \textbf{MaMuT Viewer} button again to open a new view. This new view might not be showing the spot you just added. Fortunately, all views can be brought in sync by clicking inside a spot.
+Accurately placing a spot in 3D can be difficult. This is where using multiple views in MaMut can help. On the main GUI window, click on the'''MaMuT Viewer''' button again to open a new view. This new view might not be showing the spot you just added. Fortunately, all views can be brought in sync by clicking inside a spot.
 
 In the first view, click on the spot you added. The second view is translated so that this very spot is brought at the center of the view window. Rotate around this point so as to show the YZ plane of the source (press {{key press|Shift|X}}) and zoom close to the spot, to have a view pair resembling this:
 
-[[Image:bdv-MaMuT_MultipleViews.png]]
+[[Image:bdv-MaMuT_MultipleViews.png|500px]]
 
-Just to ensure we are looking at the same spot in the two views, we checked the \textbf{Display spots names} button in the main GUI. Use the {{key press|Space}} key to move the spot around in a plane until you are happy with its location. This view combination is useful to place properly spots in 3D. You can open as many views as you want. Other views can be used e.g. to have an overview of the data using a dezoomed view.
+Just to ensure we are looking at the same spot in the two views, we checked the '''Display spots names''' button in the main GUI. Use the {{key press|Space}} key to move the spot around in a plane until you are happy with its location. This view combination is useful to place properly spots in 3D. You can open as many views as you want. Other views can be used e.g. to have an overview of the data using a dezoomed view.
 
 Spots can also be created with a double-click of the mouse. So if we recapitulate:
-\begin{myitemize}
-	\item {{key press|Left Click}} inside a spot to select it and center all views to this spot.
-	\item {{key press|Double Left Click}} outside any spot to create a new one at the mouse location.
-\end{myitemize}
 
+* {{key press|Left Click}} inside a spot to select it and center all views to this spot.
+* {{key press|Double Left Click}} outside any spot to create a new one at the mouse location.
 
 === Display settings for spots. ===
 
