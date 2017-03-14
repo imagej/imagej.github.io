@@ -304,6 +304,45 @@ Status: maintenance active!
 Future: will be implemented for 32-bit images as well. The upper intensity limit will be made individually adjustable. Suggestions welcome!
 
 ----
+=Adaptive Filter= 
+(separate plugin under {{bc | Plugins | BioVoxxel}})
+
+Purpose/How to: This filter allows the choice between two basic filter modes (''median'' and ''mean''). The filter ''Radius'' defines the size of a square kernel (so actually not really a radius but to keep the entries intuitively similar to other filters in Fiji this label was chosen).
+ 
+The ''Shape'' option enables a basic pre-selection of pixels from the kernel neighborhood to be taken into account for filtering. After pressing 'Ok', a checkbox grid will be displayed from which the user can adjust the selected pixels for the final filter according to the filtering needs (e.g. to remove power lines in a photograph).
+
+''Tolerance'' sets a threshold which will change intensity values after filtering only for those pixels where the difference to the original intensity is at least as high as the tolerance (0.2 = 20%). This enables to remove extreme outliers from the image while preserving the original pixel values in image areas without such outliers (at least for shot noise).
+
+In the image below the upper pannels show the original photograph and a version with artificial shot noise added. The lower pannels depict the noisy image after a median filter (radius=2) or after the Adaptive Filter (radius = 2 and tolerance set to 0.2) using a circle-like kernel.
+
+[[File:AdaptiveFilter.png]]
+
+Output: The filter will be applied directly on the input image. It is undoable (by pressing [z]).
+
+Limitation: So far, the filter is only applicable on 8-bit and 16-bit single images.
+
+Installation: Part of the BioVoxxel update site in Fiji and can be found under {{bc | Plugins | BioVoxxel}}
+
+Form: plugin, recording still not fully functional!!!
+
+Status: maintenance active
+
+Future: Will be adjusted für 32-bit float-type images as well as RGB images and stacks. Suggestions are welcome!
+
+----
+=Recursive Filters=
+
+Purpose: The recursive filters plugin allows to repetitively apply one of the three basic image filters (Gaussian Blur, Mean, Median) with small radii (max = 3) by adjusting the iteration. The previously filtered image will then be taken as basis for the next image filtering
+
+The maximum iteration can be set by the user up to 500 times but will be stopped if two consecutive filtered images do not show any further difference.
+
+[[File:RecursiveFilters01.png]]
+
+Form: recordable plugin
+
+Status: maintenance active
+
+----
 
 =Difference of Gaussian and Difference from Median=
 
@@ -441,33 +480,6 @@ Limitation: So far, the filter is only applicable on 8-bit and 16-bit single ima
 Installation: Part of the BioVoxxel update site in Fiji and can be found under {{bc | Plugins | BioVoxxel}}
 
 Form: plugin, recordable
-
-Status: maintenance active
-
-Future: Will be adjusted für 32-bit float-type images as well as RGB images and stacks. Suggestions are welcome!
-
-----
-
-=Adaptive Filter= 
-(separate plugin under {{bc | Plugins | BioVoxxel}})
-
-Purpose/How to: This filter allows the choice between two basic filter modes (''median'' and ''mean''). The filter ''Radius'' defines the size of a square kernel (so actually not really a radius but to keep the entries intuitively similar to other filters in Fiji this label was chosen).
- 
-The ''Shape'' option enables a basic pre-selection of pixels from the kernel neighborhood to be taken into account for filtering. After pressing 'Ok', a checkbox grid will be displayed from which the user can adjust the selected pixels for the final filter according to the filtering needs (e.g. to remove power lines in a photograph).
-
-''Tolerance'' sets a threshold which will change intensity values after filtering only for those pixels where the difference to the original intensity is at least as high as the tolerance (0.2 = 20%). This enables to remove extreme outliers from the image while preserving the original pixel values in image areas without such outliers (at least for shot noise).
-
-In the image below the upper pannels show the original photograph and a version with artificial shot noise added. The lower pannels depict the noisy image after a median filter (radius=2) or after the Adaptive Filter (radius = 2 and tolerance set to 0.2) using a circle-like kernel.
-
-[[File:AdaptiveFilter.png]]
-
-Output: The filter will be applied directly on the input image. It is undoable (by pressing [z]).
-
-Limitation: So far, the filter is only applicable on 8-bit and 16-bit single images.
-
-Installation: Part of the BioVoxxel update site in Fiji and can be found under {{bc | Plugins | BioVoxxel}}
-
-Form: plugin, recording still not fully functional!!!
 
 Status: maintenance active
 
