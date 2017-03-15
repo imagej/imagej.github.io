@@ -154,7 +154,7 @@ IJ.run("Update Fiji");
 
 == What is the difference between ImageJ1 and ImageJ2? ==
 
-[http://rsb.info.nih.gov/ij/index.html ImageJ1] is an extensible platform for scientific image analysis. [[ImageJ|ImageJ2]] is redesigned from the ground up to meet the same needs, yet engineered with future-proof flexibility to adapt to researchers' growing requirements (new data types, higher dimensionality, huge images, etc...).
+[[ImageJ1|ImageJ1]] is an extensible platform for scientific image analysis. [[ImageJ|ImageJ2]] is redesigned from the ground up to meet the same needs, yet engineered with future-proof flexibility to adapt to researchers' growing requirements (new data types, higher dimensionality, huge images, etc...).
 
 == Will ImageJ1 macros, plugins and scripts still work in ImageJ2? ==
 
