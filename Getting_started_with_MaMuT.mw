@@ -119,7 +119,7 @@ picture of a mammoth. A BigDataViewer window should appear.
 
 === The BigDataViewer framework and large, multi-view images. ===
 
-The MaMuT viewer is really a BigDataViewer window, so if you are familiar with this plugin, everything you know applies there. If are not, here is a recapitulation of how the BigDataViewer works and how to interact with it.
+The MaMuT viewer is really a BigDataViewer window, so if you are familiar with this plugin, everything you know applies there. If not, here is a recapitulation of how the BigDataViewer works and how to interact with it.
 
 A little word on the BigDataViewer: The BigDataViewer was made to deal with very large images of a sample possibly acquired from several different orientations (e.g. rotating the sample in a SPIM). These different orientations (or views, but here we use this word for another notion) of the data amount to a new dimension. This dimension if more complex to handle than e.g. multiple channels, because changing the acquisition orientation generates a data block which is not aligned with the other blocks (rotated, translated, and if you change the magnification, scaled), and does not have necessary the same size. As of today, only a limited numbers of image viewers can deal with multiple orientations, and the BigDataViewer is one of them.
 
@@ -148,14 +148,14 @@ Navigating through the data in space and time uses the mouse and keyboard in a s
 * {{key press|Right Drag}} or {{key press|Middle Drag}} Move in the XY-plane of the view.
 * {{key press|Mousewheel}} Move along the Z-axis of the view. Press {{key press|Shift}} or {{key press|Control}} to change the speed.
 * {{key press|Alt-Mousewheel}} (Mac and Linux) or {{key press|Ctrl-Shift-Mousewheel}} (Windows) Zoom in and out.
-* {{key press|\textuparrow}} / {{key press|\textdownarrow}} Zoom in / out. With {{key press|Shift}} fast zoom. With {{key press|Control}} slow zoom.
+* {{key press|up}} / {{key press|down}} Zoom in / out. With {{key press|Shift}} fast zoom. With {{key press|Control}} slow zoom.
 
 
 '''To orient, rotate the view:'''
 
 * {{key press|Left Drag}} Rotate around the point where the mouse was clicked.
 * {{key press|X}} / {{key press|Y}} / {{key press|Z}} Select rotation axis.
-* {{key press|\textleftarrow}} / {{key press|\textrightarrow}} Rotate clockwise / counter-clockwise around the chosen rotation axis.
+* {{key press|up}} / {{key press|down}} Rotate clockwise / counter-clockwise around the chosen rotation axis.
 * {{key press|,}} / {{key press|.}} Move forward / backward along the z-axis.
 * {{key press|Shift|X}} Rotate to the ZY-plane of the current source (look along the x-axis of the current source).
 * {{key press|Shift|Y}} or {{key press|Shift|C}} Rotate to the XZ-plane of the current source (look along the y-axis of the current source).
@@ -181,7 +181,7 @@ You can many bookmarks, all identified by the key you press after the bookmark c
 
 === Configuring the source visibility and display. ===
 
-Switching from one source to another is done with the numeric keys {{key press|1}} ... {{key press|0}} for up to 10 views. Pressing {{key press|F}} switches to the fused mode, where all sources are overlaid. You can add and remove sources from the fused view by pressing {{key press|Shift|1}} - etc. The color and brightness of each source are defined in the \textbf{brightness and color} panel, brought by pressing the {{key press|S}} key.
+Switching from one source to another is done with the numeric keys {{key press|1}} ... {{key press|0}} for up to 10 views. Pressing {{key press|F}} switches to the fused mode, where all sources are overlaid. You can add and remove sources from the fused view by pressing {{key press|Shift|1}} - etc. The color and brightness of each source are defined in the '''brightness and color''' panel, brought by pressing the {{key press|S}} key.
 
 [[Image:bdv-MaMuT_ViewerBrightnessColor.png|700px]]
 
@@ -206,12 +206,10 @@ To do so, select the first source (angle 0°) and move the view in its XY place 
 
 Move the mouse pointer over the cell you want to annotation, and press {{key press|A}}. A magenta circle should appear, representing a cell or more generally, a spot. Spots are created, edited and removed using the following default key bindings:
 
-\begin{myitemize}
-	\item {{key press|A}} to add a spot at the mouse location.
-	\item {{key press|D}} to delete the spot under the mouse location.
-	\item {{key press|Q}} / {{key press|E}} to decrease / increase the spot radius. Use {{key press|Shift}} / {{key press|Control}} to change the radius by a greater / smaller amount.
-	\item {{key press|Space}} is used to move a spot in the XY view plane: put the mouse pointer inside the spot you want to move, then press and hold space while moving the mouse. The spot will follow your mouse until you release the {{key press|Space}} key.
-\end{myitemize}
+* {{key press|A}} to add a spot at the mouse location.
+* {{key press|D}} to delete the spot under the mouse location.
+* {{key press|Q}} / {{key press|E}} to decrease / increase the spot radius. Use {{key press|Shift}} / {{key press|Control}} to change the radius by a greater / smaller amount.
+* {{key press|Space}} is used to move a spot in the XY view plane: put the mouse pointer inside the spot you want to move, then press and hold space while moving the mouse. The spot will follow your mouse until you release the {{key press|Space}} key.
 
 Spots represents point of interest (in our case, cells) under the shape of a sphere. You can change the sphere time-point, location and radius, but that's it. There is no object contour in MaMuT. Spots are drawn as circles in the MaMuT viewer, with the radius of their intersection with the view XY plane. If they are not intersecting with the view plane, they are drawn as small dots, as you can see by moving along Z a bit.
 
