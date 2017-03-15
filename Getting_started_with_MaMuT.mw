@@ -400,7 +400,7 @@ The hierarchical layout of the lineages provided by TrackScheme can be useful fo
 
 === Managing a selection in TrackScheme. ===
 
-[[TrackScheme]] is useful to build a selection and query its properties. As we said above, \TrackScheme does not abide any visibility setting. Spots and links are always visible, which is useful to build a selection. Spots and links are added to the current selection in a classical way:
+[[TrackScheme]] is useful to build a selection and query its properties. As we said above, TrackScheme does not abide any visibility setting. Spots and links are always visible, which is useful to build a selection. Spots and links are added to the current selection in a classical way:
 
 * {{key press|Left-Click}} on a spot or link to set the selection with this spot or link. The selection is cleared before. 
 * {{key press|Left-Click}} outside a spot to clear the selection. 
