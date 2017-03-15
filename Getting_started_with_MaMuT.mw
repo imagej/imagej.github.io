@@ -321,7 +321,7 @@ There is also a <tt style="font-size: 1.25em;">default</tt> category, like for s
 Tracks extend in time, and they are displayed as lines over the image data. By default, the whole tracks are displayed from their start to their end. You can control how they appear with the '''Track display mode''' menu:
 
 * <tt style="font-size: 1.25em;">Show all entire tracks</tt> is the default and display all the whole tracks with no time cue.
-* <tt style="font-size: 1.25em;">Show local tracks</tt> only shows a portion of the track which extend shortly before and after the current time-point. As the time distance increases, the track display fades in the image using transparency. You can control how much time context you want to display using the \textbf{Limit frame depth} checkbox and the '''Frame depth''' field.
+* <tt style="font-size: 1.25em;">Show local tracks</tt> only shows a portion of the track which extend shortly before and after the current time-point. As the time distance increases, the track display fades in the image using transparency. You can control how much time context you want to display using the '''Limit frame depth''' checkbox and the '''Frame depth''' field.
 * <tt style="font-size: 1.25em;">Show local tracks, backward</tt> is similar, but only extends tracks backward in time (this mode is sometimes nicknamed 'dragon tail' in other softwares).
 * <tt style="font-size: 1.25em;">Show local tracks, forward</tt> is the same thing, but forward in time.
 * The same three modes are repeated with the <tt style="font-size: 1.25em;">fast</tt> label added. They are identical to their counterparts, except that optimizations are made in favor of drawing speed, sacrificing frivolities such as transparency and anti-aliasing.
