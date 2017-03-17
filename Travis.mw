@@ -1,5 +1,5 @@
 {{Development | tools}}{{Minibox | logo=Travis.png | blurb='''Travis CI:''' Build your code in the cloud!}}[https://travis-ci.org/ Travis] is a tool for [[Project_management#Continuous_integration|continuous integration]]. It has excellent integration with [[GitHub]], making it a viable alternative to [[Jenkins]] for automating tasks.
-
+{{TOC}}
 = Automatic Deployment of Maven Artifacts =
 
 Deploying your library to [[Maven]] makes it available for other developers. It is also a [[Fiji/Contribution_requirements|contribution requirement for the Fiji project]].
@@ -137,3 +137,14 @@ Note that this will automatically modify your <code>.travis.yml</code> file.
 </tab>
 </tabs>
 </div>
+
+== Testing things which cannot run headless ==
+
+If your tests require a display (i.e.: they do not pass when run [[headless]]), you can use [[Xvfb]] as follows:
+<source lang="yml">
+before_script:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  - sleep 3 # give xvfb some time to start
+</source>
+Of course, you should do this only as a last resort, since the best unit tests should not require a display in the first place.
