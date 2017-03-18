@@ -5,7 +5,7 @@
 | maintainer             = {{Person|llamero}}
 | source                 = {{GitHub|org=llamero|repo=Quiver_Plot}}
 | released               = January 11<sup>th</sup>, 2017
-| latest version       = January 11<sup>th</sup>, 2017 (v1.0.0)
+| latest version       = March 17<sup>th</sup>, 2017 (v0.2.0)
 | status                 = stable, active
 | category               = [[:Category:Visualization|Visualization]]
 }}
@@ -17,7 +17,7 @@ A quiver plot is a 2D array of vector arrows that can be used to visualize dynam
 
 == Running the Quiver Plot Plugin ==
 
-The Quiver Plot plugin needs two images, one representing the vector angles (direction) and one representing the vector magnitude.  When you run the plugin, you will see the following window:
+The Quiver Plot plugin needs two 32-bit images, one representing the vector angles (direction) and one representing the vector magnitude.  When you run the plugin, you will see the following window:
 
 [[File:Quiver_Plot_Plugin_GUI.png]]
 
@@ -33,7 +33,7 @@ This plugin is also recordable within ImageJ, and can be implemented as part of 
 
 The Quiver Plot plugin is a stand alone plugin that needs to be installed manually.  To install the plugin, use the following steps:
 
-1) Go to the [https://github.com/Llamero/Quiver_Plot Github link] and download the file: Quiver_Plot-1.0.0-SNAPSHOT.jar
+1) Go to the [https://github.com/Llamero/Quiver_Plot/releases/tag/0.2.0 Github link] and download the file: Quiver_Plot-0.2.0-SNAPSHOT.jar
 
 2) Copy the file into the Plugins folder for ImageJ/FIJI.
 
