@@ -90,15 +90,27 @@ You can create, edit and run scripts using the built-in [[Script Editor]]. For d
 
 = Adding scripts to the Plugins menu =
 
-For the script to appear in the Plugin menus, the following must apply:
+For the script to appear in the ImageJ menus, the following must apply:
 
+{{Box
+| text = ".txt" is not a supported script extension
+| width = 30%
+| float = right
+}}
 # The script file is saved in the <code>ImageJ.app/plugins</code> directory (or a subdirectory thereof).
-# The script name ends in a supported script extension. For example, ".js" for javascript, ".py" for jython, ".rb" for jruby, ".clj" for clojure, and ".bs" for beanshell script. 'NOTE:' ".txt" is not a supported script language.
-# The script name contains a '_' (underscore) character, e.g. "MyScript_.ijm"
+# The script name ends in a supported script extension. For example
+#* ".js" for javascript,
+#* ".py" for jython
+#* ".rb" for jruby
+#* ".clj" for clojure, and
+#* ".bs" for beanshell script.
+# The script name contains a '_' (underscore) character, e.g. "MyScript_.ijm".
+
+{{Fiji | Replace <code>ImageJ.app</code> with <code>Fiji.app</code>}}
 
 The extension will be stripped and any underscores will be turned into spaces before the script is added to the menus.
 
-Scripts in the top-level "plugins" directory will appear at the bottom of the Plugins menu. Scripts can be placed in other menus by by nesting subdirectories, for example placing a script in the "/plugins/Scripts/File" directory will add it to the File menu.
+Scripts in the top-level <code>ImageJ.app/plugins</code> directory will appear at the bottom of the ''Plugins'' menu. Scripts can be placed in other menus by nesting subdirectories, for example placing a script in the <code>ImageJ.app/plugins/Scripts/File</code> directory will add it to the ''File'' menu.
 
 If you aren't able to find your script, you can always run the [[Using_the_Command_Launcher|Command Finder]] to verify its location (or absence).
 
