@@ -14,7 +14,7 @@
 
 Plugin for finding and/or analyzing colocalization of bright intensity spots (cells, particles, vesicles, comets, dots, etc) in images with heterogeneous background (microscopy, astronomy, engineering, etc). 
 
-For help to install plugin, see [https://github.com/ekatrukha/ComDet/wiki/How-to-install-plugin instructions].
+For help with plugin installation, see [https://github.com/ekatrukha/ComDet/wiki/How-to-install-plugin instructions].
 
 == How to use plugin ==
 
@@ -98,7 +98,7 @@ Columns are:
  
 == Additional info ==
 
-For detection explanation, see [https://github.com/ekatrukha/ComDet/wiki/How-does-detection-work%3F How does detection work?]
+For detection explanation, see [https://github.com/ekatrukha/ComDet/wiki/How-does-detection-work%3F How does detection work?]. Also [https://github.com/ekatrukha/ComDet/wiki/Updates-history updates history] is available.
 
 [[Category:Plugins]]
 [[Category:Colocalization]]
