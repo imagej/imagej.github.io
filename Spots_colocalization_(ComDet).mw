@@ -1,0 +1,104 @@
+{{Infobox
+| software               = ImageJ
+| name                   = ComDet
+| author                 = [http://katpyxa.info Eugene Katrukha]
+| maintainer             = [mailto:katpyxa_at_gmail.com Eugene Katrukha]
+| filename               = [https://github.com/ekatrukha/ComDet/blob/master/ComDet_v_0.3.6.jar?raw=true ComDet.jar] + [https://github.com/ekatrukha/ComDet/blob/master/Jama-1.0.2.jar?raw=true Jama lib]
+| source                 = [https://github.com/ekatrukha/ComDet github]
+| released               = 23 November 2012
+| latest version         = 20 March 2017
+| status                 = stable 
+| category               = [[:Category:Colocalization]]
+| website                = [https://github.com/ekatrukha/ComDet/wiki wiki]
+}}
+
+Plugin for finding and/or analyzing colocalization of bright intensity spots (cells, particles, vesicles, comets, dots, etc) in images with heterogeneous background (microscopy, astronomy, engineering, etc). 
+
+For help to install plugin, see [https://github.com/ekatrukha/ComDet/wiki/How-to-install-plugin instructions].
+
+== How to use plugin ==
+
+Open the image to be analyzed in ImageJ. In general plugin works in two modes: 
+* particles detection (whole image or ROI)
+* particles detection and colocalization analysis (whole image or ROI).
+
+For '''colocalization''' you need an image containing '''two color channels'''. Plugin auto-detects the number of channels and if it is equal to two then the plugin will automatically switch to second mode (see below).
+
+Plugin works with time/z-stacks.  
+
+Launch the detection by choosing ''Plugins->ComDet->Detect Particles''.  
+
+http://katpyxa.info/software/ComDet/ComDet_open.png
+
+== Simple detection (1 channel) ==
+
+If the image is not two channels image, the following dialog window will appear:  
+
+http://katpyxa.info/software/ComDet/ComDet_detection_only_v2.png
+
+Specify estimated particles size and sensitivity (intensity) and press OK.
+To have good detection usually you need to play with parameters and see how it goes.  
+
+By default plugin looks only for particles of specified size. If you check "''Include larger particles?''" box, it will also try to quantify bigger spots.  
+
+After pressing OK plugin runs and add rectangles in overlay on top of detected particles.
+   
+http://katpyxa.info/software/ComDet/ComDet_detection_before_after_v2.png
+
+Also it will provide you ''Results'' table containing particles' coordinates (see below) and ''Summary'' table.  
+I recommend to play with parameters to get a nice detection result.
+
+== Detection in ROI ==
+
+If you want detection to be performed in some specific region instead of whole image, select some ROI using any ImageJ ROI selection tools before launching plugin:
+    
+http://katpyxa.info/software/ComDet/ComDet_ROI_before_v2.png
+
+In this case only particles in that ROI will be detected:
+   
+http://katpyxa.info/software/ComDet/ComDet_ROI_after_v2.png  
+
+== Detection and colocalization in 2 channels ==
+
+If your image contains two channels then after pressing ''Detect Particles'' the dialog will look a bit more complex:
+  
+
+http://katpyxa.info/software/ComDet/ComDet_detection_and_coloc_v2.png  
+
+In this case you can specify the same parameters of detection for each channel separately.
+To get colocalization analysis you need to choose "''Two channels detection: Detect in both channels independently''" option and check "''Calculate colocalization?''" box. If you uncheck it, then only detection will be performed. 
+
+There is an additional parameter in case of colocalization: maximum distance between spots' centers. It defines at what distance (in pixels) two spots in different channels are considered to be localized. 
+After detection is finished ComDet marks detected particles with rectangles of their own channel colour and colocalized particles in yellow:
+
+http://katpyxa.info/software/ComDet/ComDet_detection_and_coloc_mark_v2.png
+
+'''New in 0.3.6''': For two channels detection, there are two new options: "''Detect in channel 1(2), quantify in channel 2(1)''". In this case detection of spots will be done only in the first specified channel. For the other channel, same spots intensities would be quantified over the same area as in the "detection" channel (whether there is a spot there or not). 
+
+Also ''only ROI detection'' mode (as described above) works in this case. 
+
+== Results table ==
+Here is example of ''Results'' table (''Summary'' table is kind of self-explanatory). 
+   
+http://katpyxa.info/software/ComDet/Results.png 
+
+
+Columns are: 
+# ''Abs_frame'' = absolute frame number in stack (unique frame number)
+# ''X_(px)'' = ''x'' coordinate of spot (centroid fitting)
+# ''Y_(px)'' = ''y'' coordinate of spot (centroid fitting)
+# ''Channel'' = corresponding channel number
+# ''Slice'' = corresponding slice number (if z-stack)
+# ''Frame'' = corresponding frame number (if timelapse)
+# ''xMin'', ''yMin'', ''xMax'', ''yMax'' = coordinate of rectangle around spot (in pixels)
+# ''NArea'' = internal area of rectangle
+# ''IntegratedInt'' = sum of all pixels intensity inside the rectangle minus average spot-specific backgrounds. Background value is calculates as average intensity of pixels on perimeter of the rectangle.
+# ''Colocalized'' = 0 if spot does not colocalize with another and 1 if it does.
+# ''IntensityRatio'' = Ratio of spot's ''IntegratedInt'' to ''IntegratedInt'' of corresponding colocalized spot.
+ 
+== Additional info ==
+
+For detection explanation, see [https://github.com/ekatrukha/ComDet/wiki/How-does-detection-work%3F How does detection work?]
+
+[[Category:Plugins]]
+[[Category:Colocalization]]
