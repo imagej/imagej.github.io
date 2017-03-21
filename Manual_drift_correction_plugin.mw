@@ -54,7 +54,7 @@ The processing is successively:
 * Then for each slice in the sequence:
 ** A global transformation is created from current image landmarks and the reference image landmarks.
 ** The image is then transformed to the reference image
-* Finally the registered sequence is displaied in Fiji UI.
+* Finally the registered sequence is displayed in Fiji UI.
 
 ==Development plan==
 
