@@ -6,7 +6,7 @@
 If you are passingly familiar with Git, but wish it wasn't so arcane, check out:
 * [http://think-like-a-git.net/ Think Like (a) Git - A Guide for the Perplexed]
 }}
-{{Development | tools}}Development of ImageJ and related software relies heavily on [http://git-scm.com/ Git], a first-class [[wikipedia:Distributed version control|distributed]] [[wikipedia:Version control|version control]] system. Git saves "snapshots" of the source code, keeping a history of changes.
+{{DevelopMenu | tools}}Development of ImageJ and related software relies heavily on [http://git-scm.com/ Git], a first-class [[wikipedia:Distributed version control|distributed]] [[wikipedia:Version control|version control]] system. Git saves "snapshots" of the source code, keeping a history of changes.
 
 See the [[source code]] page for information on where the Git repositories reside.
 
