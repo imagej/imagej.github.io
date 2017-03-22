@@ -1,4 +1,4 @@
-{{Help}}You can file an issue in ImageJ's issue tracker using the {{bc | Help | Report a Bug}} command. Please invest the time to [[Bug reporting best practices|write a good issue report]].
+{{HelpMenu}}You can file an issue in ImageJ's issue tracker using the {{bc | Help | Report a Bug}} command. Please invest the time to [[Bug reporting best practices|write a good issue report]].
 {{Warning | The "Report a Bug" plugin is currently being rewritten to report issues to GitHub, rather than to the now-defunct Fiji BugZilla. In the meantime, please report bugs via the [[Forum]] or [https://github.com/imagej/imagej/issues on GitHub] instead.}}
 {{Infobox
 | software               = Fiji
