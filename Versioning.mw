@@ -1,4 +1,4 @@
-{{Development | tutorials}}[[SciJava]] components use the [http://semver.org/ Semantic Versioning] (SemVer) system. This scheme communicates information about the [[backwards compatibility]] (or lack thereof) between versions of each individual software component.
+{{DevelopMenu | tutorials}}[[SciJava]] components use the [http://semver.org/ Semantic Versioning] (SemVer) system. This scheme communicates information about the [[backwards compatibility]] (or lack thereof) between versions of each individual software component.
 {{Clear|left}}
 == Summary ==
 
