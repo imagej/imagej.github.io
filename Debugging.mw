@@ -1,4 +1,4 @@
-{{Development}}
+{{DevelopMenu}}
 {{Notice | This page has approaches for ''software developers'' to use for debugging ImageJ.<br>If you are a ''user'' looking to troubleshoot issues, see the [[Troubleshooting]] page.}}
 
 = Launching ImageJ in debug mode =
