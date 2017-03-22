@@ -1,4 +1,4 @@
-{{Development | tutorials}}This article explains how to install, configure and use Eclipse to develop [[ImageJ]] [[components]] and [[plugins]]. Directions correspond to Eclipse 4.4 Luna, and may need adjustment for other versions.
+{{DevelopMenu | tutorials}}This article explains how to install, configure and use Eclipse to develop [[ImageJ]] [[components]] and [[plugins]]. Directions correspond to Eclipse 4.4 Luna, and may need adjustment for other versions.
 
 = Initial setup =
 
