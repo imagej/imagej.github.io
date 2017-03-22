@@ -1,4 +1,4 @@
-{{Development | tools}}{{Minibox | logo=Travis.png | blurb='''Travis CI:''' Build your code in the cloud!}}[https://travis-ci.org/ Travis] is a tool for [[Project_management#Continuous_integration|continuous integration]]. It has excellent integration with [[GitHub]], making it a viable alternative to [[Jenkins]] for automating tasks.
+{{DevelopMenu | tools}}{{Minibox | logo=Travis.png | blurb='''Travis CI:''' Build your code in the cloud!}}[https://travis-ci.org/ Travis] is a tool for [[Project_management#Continuous_integration|continuous integration]]. It has excellent integration with [[GitHub]], making it a viable alternative to [[Jenkins]] for automating tasks.
 {{TOC}}
 = Automatic Deployment of Maven Artifacts =
 
