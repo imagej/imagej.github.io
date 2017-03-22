@@ -1,5 +1,5 @@
 __NOTOC__{{Notice | For a summary of [[SciJava]] licensing, see the [[Licensing]] page.}}
-{{Licenses}}The '''GNU Lesser General Public License''' is a free, [[open source]] license for software and other kinds of works. It is a middle ground between '''[[wikipedia:Copyleft|copyleft]]''' licenses such as the [[GPL]] and '''permissive''' licenses like [[BSD]] and [[MIT]]. The LGPL requires modifications to the work to also be distributed under OSS terms, but allows the work to be included (unmodified) in non-OSS combined works without propagating its terms onto the combined work itself.
+{{LicensesMenu}}The '''GNU Lesser General Public License''' is a free, [[open source]] license for software and other kinds of works. It is a middle ground between '''[[wikipedia:Copyleft|copyleft]]''' licenses such as the [[GPL]] and '''permissive''' licenses like [[BSD]] and [[MIT]]. The LGPL requires modifications to the work to also be distributed under OSS terms, but allows the work to be included (unmodified) in non-OSS combined works without propagating its terms onto the combined work itself.
 
 As such, the LGPL is considered a more "commercial friendly" license than the GPL, since LGPL libraries can be freely utilized by commercial software.
 
