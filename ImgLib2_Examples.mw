@@ -8,7 +8,7 @@
 | latest version         = December 2013
 | website                = [http://bioinformatics.oxfordjournals.org/content/early/2012/09/07/bioinformatics.bts543.abstract ImgLib2 publication]
 }}
-{{ImgLib}}
+{{ImgLibMenu}}
 == Introduction & required files ==
 
 This page shows eight increasingly complex examples of how to program with ImgLib2. The intention of these examples are not to explain ImgLib2 concepts, but rather to give some practical hints how to work with the library and to grasp the principles in a learning-by-doing way.
