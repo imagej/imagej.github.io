@@ -1,4 +1,4 @@
-{{Git}}
+{{GitMenu}}
 =Repositories=
 We are using git to write papers. Typical situation is the following: you start a directory on your laptop which you then turn into git repository, now you want to 'transfer' it to your work computer and keep tracking your changes from both places. For that you need to set-up an empty git-repo on a Internet/Intranet accessible server (aka in our case becherovka). 
 
