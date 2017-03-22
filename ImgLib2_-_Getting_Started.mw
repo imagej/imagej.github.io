@@ -1,4 +1,4 @@
-{{ImgLib}}__TOC__
+{{ImgLibMenu}}__TOC__
 == Creating and Displaying an Image ==
 Before you dive into ImgLib2 for
 real, you should know how to create and display an image, so that you can
