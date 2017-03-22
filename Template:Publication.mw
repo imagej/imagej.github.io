@@ -350,6 +350,24 @@
 | SCIFIO = Hiner, M., Rueden, C. & Eliceiri, K. (2016). SCIFIO [Software]. http://scif.io/.
 | ImageJ Ops = Rueden, C., Dietz, C., Horn, M., Schindelin, J., Northan, B., Berthold, M. & Eliceiri, K. (2016). ImageJ Ops [Software]. http://imagej.net/Ops.
 
+
+| MaMuT = {{Citation 
+| last = Wolff | first = C.
+| last2 = Tinevez | first2 = JY.
+| last3 = Pietzsch | first3 = T.
+| last4 = Stamataki | first4 = E.
+| last5 = Harich | first5 = B.
+| last6 = Preibisch | first6 = S.
+| last7 = Shorte | first7 = S.L.
+| last8 = Keller | first8 = P.J.
+| last9 = Tomancak | first9 = P.
+| last10 = Pavlopoulos | first10 = A.
+| year = 2017
+| journal = bioRxiv
+| url = http://biorxiv.org/content/early/2017/02/28/112623
+| title = Reconstruction of cell lineages and behaviors underlying arthropod limb outgrowth with multi-view light-sheet imaging and tracking.
+
+
 | ''(Unknown publication: {{{1}}})''
 
 }}</includeonly><noinclude>
