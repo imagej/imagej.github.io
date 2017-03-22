@@ -7,7 +7,7 @@ ImgLib2 is also the foundation of the [[ImageJ2]] data model.
 
 == How do I migrate my ImgLib1 code to ImgLib2? ==
 
-There is some [[How To Migrate Code From ImgLib To ImgLib2|rudimentary documentation]], but you will most likely need to ask more detailed questions on the [http://forum.imagej.net|ImageJ Forum].
+There is some [[How To Migrate Code From ImgLib To ImgLib2|rudimentary documentation]], but you will most likely need to ask more detailed questions on the [http://forum.imagej.net ImageJ Forum].
 
 == How to create a new image from scratch? ==
 
