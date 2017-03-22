@@ -1,4 +1,4 @@
-{{Cookbook}}{{TOC}}
+{{CookbookMenu}}{{TOC}}
 == The File / Import submenu ==
 
 Most of the commands listed, particularly Fiji extensions, are also available (via ImageJ's [http://imagej.net/plugins/file-handler.html HandleExtraFileTypes] feature) simply by using the File / Open... menu item.
