@@ -1,4 +1,4 @@
-{{ImgLib}}
+{{ImgLibMenu}}
 In ImgLib2, images are represented by ''Accessibles''.
 ''Image'' here refers to any (partial) function from coordinates to values.
 
