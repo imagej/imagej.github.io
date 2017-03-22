@@ -346,6 +346,24 @@
 | pages = e38011
 | pmid = 22723842}} ({{Scholar | cluster=2577882229249708240}}).
 
+| TrackMate = {{Citation
+| last = Tinevez | first = JY.
+| last2 = Perry | first2 = N.
+| last3 = Schindelin | first3 = J.
+| last4 = Hoopes | first4 = G.M.
+| last5 = Reynolds | first5 = G.D.
+| last6 = Laplantine | first6 = E.
+| last7 = Bednarek | first7 = S.Y.
+| last8 = Shorte | first8 = S.L.
+| last9 = Eliceiri | first9 = K.W.
+| year = 2016
+| journal = Methods
+| url = http://www.sciencedirect.com/science/article/pii/S1046202316303346
+| title = TrackMate: An open and extensible platform for single-particle tracking.
+| volume = 115
+| pages = 80-90
+| pmid = 27713081}} ({{Scholar | cluster=9846627681021220605}}).
+
 | SciJava Common = Rueden, C., Schindelin, J., Hiner, M. & Eliceiri, K. (2016). SciJava Common [Software]. http://scijava.org/.
 | SCIFIO = Hiner, M., Rueden, C. & Eliceiri, K. (2016). SCIFIO [Software]. http://scif.io/.
 | ImageJ Ops = Rueden, C., Dietz, C., Horn, M., Schindelin, J., Northan, B., Berthold, M. & Eliceiri, K. (2016). ImageJ Ops [Software]. http://imagej.net/Ops.
