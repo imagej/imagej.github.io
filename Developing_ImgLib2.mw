@@ -1,4 +1,4 @@
-{{ImgLib}}
+{{ImgLibMenu}}
 == Introduction ==
 
 The [[ImgLib2]] library uses [[Maven]] to manage project dependencies. One advantage of this approach is nice integration with various development environments ([[IDEs]]).
