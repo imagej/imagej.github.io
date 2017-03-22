@@ -1,4 +1,4 @@
-{{scripting}}
+{{Learn|scripting}}
 = Introduction =
 
 This page is a primer of '''ImageJ2 only''' Python scripts. It means that the examples included here avoid IJ1 as much as possible, unless it's really necessary.
