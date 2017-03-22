@@ -1,4 +1,4 @@
-{{Development | source}}= What does the POM version mean? =
+{{DevelopMenu | source}}= What does the POM version mean? =
 
 The {{GitHub|org=imagej|repo=minimal-ij1-plugin|path=pom.xml|label=pom.xml}} of [https://github.com/imagej/minimal-ij1-plugin/ minimal-ij1-plugin] inherits from a parent called {{GitHub|org=imagej|repo=pom-imagej|path=pom.xml|label=pom-imagej}}. This parent POM defines and configures many things so that the POMs of individual plugin projects are shorter (i.e., so they don't have to repeat things).
 
