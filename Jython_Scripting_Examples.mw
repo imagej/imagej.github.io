@@ -1,6 +1,6 @@
 {{Notice | This page is a copy of [[Jython Scripting]]. The original wiki page is in a rewrite progress. When rewriting [[Jython Scripting]] is finished, this wiki page will be shortened to only contain Jython code examples.}}
 
-{{Scripting}}[http://www.jython.org/ Jython] is an implementation of the [https://www.python.org/ Python programming language] designed to run on the Java platform.
+{{Learn|scripting}}[http://www.jython.org/ Jython] is an implementation of the [https://www.python.org/ Python programming language] designed to run on the Java platform.
 
 == Quickstart ==
 
