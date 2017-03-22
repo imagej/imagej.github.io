@@ -1,4 +1,4 @@
-{{Git}}
+{{GitMenu}}
 Often you want to try some new idea, or work on some new feature, without interfering with the master branch.  That is where topic branches come in.  You can easily switch back and forth between branches, so that you do not need to contribute a new feature with one big "monster" commit.
 
 If you want to try something that might not work out, and you do not want anybody to know in such a case, you can keep the topic branches local.
