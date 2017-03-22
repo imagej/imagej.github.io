@@ -1,4 +1,4 @@
-ImgLib2 is a major redesign of ImgLib, and [[Changes from ImgLib1 to ImgLib2|much has changed]]. This page attempts to provide a "how-to" guide for bringing existing ImgLib1 code up to date with ImgLib2. It is intended as a "quick start" guide—for more details, see the [[Changes from ImgLib1 to ImgLib2]] page.
+{{Project|ImgLib2}}ImgLib2 is a major redesign of ImgLib, and [[Changes from ImgLib1 to ImgLib2|much has changed]]. This page attempts to provide a "how-to" guide for bringing existing ImgLib1 code up to date with ImgLib2. It is intended as a "quick start" guide—for more details, see the [[Changes from ImgLib1 to ImgLib2]] page.
 
 == Rename packages ==
 
