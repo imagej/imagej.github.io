@@ -1,4 +1,4 @@
-{{Development | tutorials}}{{TOC}}This tutorial is designed to guide developers through the options, processes and motivations for adding Ops outside the core {{GitHub|org=imagej|repo=imagej-ops|label=imagej-ops}} project. Because this tutorial caters to external developers, in this tutorial we show how a [[BAR]] function could be converted to an Op.
+{{DevelopMenu | tutorials}}{{TOC}}This tutorial is designed to guide developers through the options, processes and motivations for adding Ops outside the core {{GitHub|org=imagej|repo=imagej-ops|label=imagej-ops}} project. Because this tutorial caters to external developers, in this tutorial we show how a [[BAR]] function could be converted to an Op.
 
 = Make your first Op =
 
