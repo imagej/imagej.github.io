@@ -1,7 +1,7 @@
 {{Notice | This page lists publications relating to the [[Fiji]] project.
 * For general instructions on citing [[ImageJ]] and [[Fiji]], see [[Citing]].
 * For an index of citable software, see [[:Category:Citable]].}}
-{{FijiDocsMenu}}== Publications introducing Fiji ==
+{{FijiMenu}}== Publications introducing Fiji ==
 
 * The primary reference for citing Fiji is the paper presented in Nature Methods [http://www.nature.com/nmeth/focus/bioimageinformatics/index.html Focus on Bioimage Informatics] in July 2012<ref>{{cite journal |author=Johannes Schindelin, Ignacio Arganda-Carreras, Erwin Frise, Verena Kaynig, Mark Longair, Tobias Pietzsch, Stephan Preibisch, Curtis Rueden, Stephan Saalfeld, Benjamin Schmid, Jean-Yves Tinevez, Daniel James White, Volker Hartenstein, Kevin Eliceiri, Pavel Tomancak and Albert Cardona|title=Fiji: an open-source platform for biological-image analysis|journal=Nature Methods |year=2012 |volume= 9(7)|pages=676-682|url=http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2019.html}}</ref>.
 
