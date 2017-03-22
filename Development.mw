@@ -1,5 +1,5 @@
 {{Notice | If your goal is to automate the behavior of ImageJ, consider writing a [[script]] using ImageJ's [[Script Editor]]—it is often much simpler than a plugin in Java.}}
-{{Development}}This page provides an overview of ImageJ from the perspective of software development: how to use it from your programs, as well as how to modify or extend its capabilities via [[plugins]].
+{{DevelopMenu}}This page provides an overview of ImageJ from the perspective of software development: how to use it from your programs, as well as how to modify or extend its capabilities via [[plugins]].
 
 == What is ImageJ? ==
 
