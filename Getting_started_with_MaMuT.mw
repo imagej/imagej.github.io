@@ -1,8 +1,10 @@
 This page contains a tutorial for the [[MaMuT]] plugin. It describes and document all its features using a publication related dataset. 
 
+== Publication. ==
+
 If you find MaMuT useful for your research, please cite it:
 
-''Reconstruction of cell lineages and behaviors underlying arthropod limb outgrowth with multi-view light-sheet imaging and tracking'', Carsten Wolff, Jean-Yves Tinevez, Tobias Pietzsch, Evangelia Stamataki, Benjamin Harich, Stephan Preibisch, Spencer Shorte, Philipp J Keller, Pavel Tomancak, Anastasios Pavlopoulos '''bioRxiv''' 112623; doi: https://doi.org/10.1101/112623
+{{Publication | MaMuT}}
 
 
 
