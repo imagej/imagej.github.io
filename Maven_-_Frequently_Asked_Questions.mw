@@ -12,9 +12,9 @@ For example, while you develop your plugin, you might use the version <code>1.0.
 
 = How is the ImageJ version determined? =
 
-In many <code>pom.xml</code> files, you can see that the version of the <code>ij</code> dependency is omitted. The version is specified (or "managed") by the {{GitHub|org=imagej|repo=pom-imagej|tag=pom-imagej-5.2.0|path=pom.xml#L216-L217|label=pom-imagej parent configuration}}, as part of its [[Bill of Materials]].
+In many <code>pom.xml</code> files, you can see that the version of dependencies, such as <code>net.imagej:ij</code> for ImageJ 1.x, is omitted. The versions are defined (or "managed") by the pom-scijava parent configuration as part of its [[Bill of Materials]]—e.g., {{GitHub|org=scijava|repo=pom-scijava|tag=pom-scijava-14.0.0|path=pom.xml#L218-L219|label=here}} is where the ImageJ 1.x version is defined.
 
-* Browse the latest <code>pom-imagej</code> {{GitHub|org=imagej|repo=pom-imagej|path=pom.xml|label=here}}.
+* Browse the latest <code>pom-scijava</code> {{GitHub|org=scijava|repo=pom-scijava|path=pom.xml|label=here}}.
 * Browse the available versions of ImageJ 1.x [http://maven.imagej.net/content/groups/public/net/imagej/ij/ here].
 
 = How do I determine which Maven projects (i.e., dependencies) I actually need? =
