@@ -320,3 +320,28 @@ If you need other detectors and trackers, you have to rely on Python for now. [[
 ** Better navigation with mouse:
 *** Hold space and drag to pan, as in ImageJ.
 *** Hold space + mousewheel to zoom in/ out.
+
+
+== 23/03/2017 - v3.5.0 ==
+
+* The '''Recalculate features''' action now recomputes all features.
+
+And if a Controller instance is provided, the analyzers declared in the GUI are used to recompute the features. This is useful if a file was saved before new feature analyzers were added.
+
+* GUI tweaks.
+
+* Allow spot detection on images with a discontinuous ShapeRoi.
+If the current ROI is an ij.gui.ShapeRoi, we use this to filter the spot detections in each frame. For other cases, we keep the settings.polygon for backward compatibility. Contributed by Jan Eglinger.
+
+* Switch from Jenkins to Travis CI.
+By Curtis Rueden.
+
+* The Extract track stack action can capture 3D stacks.
+
+* Fix Kalman tracker bug for empty first frames.
+
+The Kalman tracker was unable to process if the first two frames contained zero spots.
+Noted by Hadrien Mary.
+
+* Fix improper image factory for very large images.
+Noted by Christian Tischer.
