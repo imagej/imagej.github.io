@@ -40,8 +40,28 @@ This is part of the {{GitHub|org=imagej|repo=imagej-maven-plugin|label=imagej-ma
 mvn -Dimagej.app.directory=/Applications/ImageJ.app
 </source>
 
-One way to do that in NetBeans is to right-click your project, select ''Custom>Goals...'' which brings up the ''Run Maven'' dialog box. Then specify '''install''' for the Goals and
-'''-Dimagej.app.directory=/Applications/ImageJ.app''' for the Properties.
+The easiest way to do that is to create a file <code>$HOME/.m2/settings.xml</code> where <code>$HOME</code> is your home directory, with the following contents:
+
+<source lang="xml">
+<settings>
+	<profiles>
+		<profile>
+			<id>imagej</id>
+			<activation>
+				<file>
+					<exists>${env.HOME}/Desktop/Fiji.app</exists>
+				</file>
+			</activation>
+			<properties>
+				<imagej.app.directory>${env.HOME}/Desktop/Fiji.app</imagej.app.directory>
+				<skip.other.versions>true</skip.other.versions>
+			</properties>
+		</profile>
+	</profiles>
+</settings>
+</source>
+
+With such user-wide settings in place, all your Maven builds will automatically copy the build artifacts into your ImageJ installation in <code>$HOME/Desktop/Fiji.app</code>. Of course, you can change this path to whatever you like.
 
 = How to use my own, custom ImageJ version? =
 
