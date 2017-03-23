@@ -54,7 +54,7 @@ You can cause this to happen automatically by creating a file <code>$HOME/.m2/se
 			</activation>
 			<properties>
 				<imagej.app.directory>${env.HOME}/Desktop/Fiji.app</imagej.app.directory>
-				<skip.other.versions>true</skip.other.versions>
+				<delete.other.versions>true</delete.other.versions>
 			</properties>
 		</profile>
 	</profiles>
