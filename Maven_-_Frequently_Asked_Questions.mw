@@ -103,9 +103,7 @@ import org.scijava.util.VersionUtils;
 
 = How do I make my modified project available to a depending project using Maven? =
 
-For example, suppose you have made changes to TrakEM2 that you want to take advantage of in a plugin. Compiling with mvn may result in errors indicating that your modifications do not exist. In this case, run "mvn install" in the ''modules/TrakEM2'' directory. This should install the relevant, fresh TrakEM2 jars into the correct locations.
-
-Also make sure that the ''groupId'', ''artifactId'' '''and''' ''version'' in the ''<dependencies>'' section of the dependencee match the settings in the dependency's ''pom.xml'' file.
+See [[Architecture#Using_snapshot_couplings_during_development|Using snapshot couplings during development]].
 
 = How can I run individual tests with Maven? =
 
