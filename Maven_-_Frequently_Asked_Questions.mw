@@ -69,34 +69,9 @@ The dependencies specified in ''pom.xml'' are only used to compile your .jar fil
 
 = My software depends on a ''.jar'' file that is not available via Maven! = 
 
-The easiest way to do that would probably to install it locally for the
-moment. Please see Maven's console log for details how to do that after
-specifying a dependency, e.g.
+Write to the [http://forum.imagej.net/ ImageJ Forum] seeking assistance. The best solution is to get your dependency deployed to the [https://maven.imagej.net/ ImageJ Maven repository]. 
 
-<source lang="xml">
-<dependency>
-  <groupId>uk.ac.bham.dentistry</groupId>
-  <artifactId>Particles8_</artifactId>
-  <version>1.6</version>
-</dependency>
-</source>
-
-It is advisable to look for the version number on the web site, as it was done here, and to construct the groupId from the web site, too.
-
-Note that you will need to wrap the .class files in a .jar file like so:
-
-<source lang="bash">
-jar cvf Particles8_.jar Particles8_.class
-</source>
-
-Then you can install that ''.jar'' file locally with a command like:
-
-<source lang="bash">
-mvn install:install-file \
-  -Dfile=/path/to/Particles8_.jar \
-  -DgroupId=uk.ac.bham.dentistry -DartifactId=Particles8_ -Dversion=1.6 \
-  -Dpackaging=jar -DgeneratePom=true
-</source>
+See [https://www.cloudbees.com/blog/playing-trade-offs-maven Playing Tradeoffs with Maven] for an in-depth discussion of various solutions to this issue.
 
 = Can I call ''svnversion'' via Maven? =
 
