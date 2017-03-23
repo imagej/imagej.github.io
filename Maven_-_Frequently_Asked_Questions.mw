@@ -104,39 +104,26 @@ Typically you want to do that to put the current revision into an About box or s
 
 In general, you can call any needed Ant functionality using the [http://maven.apache.org/plugins/maven-antrun-plugin/ maven-antrun-plugin]. However, for the About box, there is a much better solution:
 
-The pom-scijava parent uses the buildnumber-maven-plugin to embed the SCM revision and date in the JAR manifest. You can enable this behavior by adding the following lines to your POM:
+The pom-scijava parent uses the buildnumber-maven-plugin to embed the SCM revision and date in the JAR manifest.
 
-<source lang="xml">
-<plugins>
-  <plugin>
-    <groupId>org.codehaus.mojo</groupId>
-    <artifactId>buildnumber-maven-plugin</artifactId>
-  </plugin>
-</plugins>
-</source>
-
-Then, your About dialog box can access the information from the ''.jar'' file's manifest using the [http://jenkins.imagej.net/job/SciJava-common/javadoc/org/scijava/util/Manifest.html Manifest class] of {{GitHub|org=scijava|repo=scijava-common|source=org/scijava/util/Manifest.java|label=scijava-common}}.
-
-You would need to add a dependency on ''scijava-common'' like this:
+Your About dialog box can access the information by adding a dependency on ''scijava-common'' like this:
 
 <source lang="xml">
 <dependencies>
   <dependency>
-    <groupId>${scijava-common.groupId}</groupId>
-    <artifactId>ij-core</artifactId>
-    <version>${scijava-common.version}</version>
+    <groupId>org.scijava</groupId>
+    <artifactId>scijava-common</artifactId>
   </dependency>
 </dependencies>
 </source>
 
-and then add code like this:
+and then using code like this:
 
 <source lang="java">
-import org.scijava.util.Manifest;
+import org.scijava.util.VersionUtils;
 
 ...
-    Manifest manifest = Manifest.getManifest(MyBeautifulPlugin.class);
-    String version = manifest.getImplementationBuild();
+    String version = VersionUtils.getVersion(MyBeautifulPlugin.class);
 </source>
 
 = How do I make my modified project available to a depending project using Maven? =
