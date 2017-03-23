@@ -10,9 +10,9 @@ However, once you become more comfortable with Maven, I suggest using [http://st
 
 For example, while you develop your plugin, you might use the version <code>1.0.0-SNAPSHOT</code> to indicate that this is not the final <code>1.0.0</code> version but leads up to it. Once you are happy with the plugin in its current form, switch to <code>1.0.0</code>. Note, however, that you will cause problems if you later change the sources of the final <code>1.0.0</code> version (i.e., without first advancing the version in the <code>pom.xml</code> file).
 
-= How is the ImageJ version determined? =
+= How are dependency versions determined? =
 
-In many <code>pom.xml</code> files, you can see that the version of dependencies, such as <code>net.imagej:ij</code> for ImageJ 1.x, is omitted. The versions are defined (or "managed") by the pom-scijava parent configuration as part of its [[Bill of Materials]]—e.g., {{GitHub|org=scijava|repo=pom-scijava|tag=pom-scijava-14.0.0|path=pom.xml#L218-L219|label=here}} is where the ImageJ 1.x version is defined.
+In many <code>pom.xml</code> files which extend <code>pom-scijava</code>, you can see that the dependency versions are omitted. The versions are defined (or "managed") by the pom-scijava parent configuration as part of its [[Bill of Materials]]—e.g., {{GitHub|org=scijava|repo=pom-scijava|tag=pom-scijava-14.0.0|path=pom.xml#L218-L219|label=here}} is where the ImageJ 1.x version is defined.
 
 * Browse the latest <code>pom-scijava</code> {{GitHub|org=scijava|repo=pom-scijava|path=pom.xml|label=here}}.
 * Browse the available versions of ImageJ 1.x [http://maven.imagej.net/content/groups/public/net/imagej/ij/ here].
