@@ -40,7 +40,7 @@ This is part of the {{GitHub|org=imagej|repo=imagej-maven-plugin|label=imagej-ma
 mvn -Dimagej.app.directory=/Applications/ImageJ.app
 </source>
 
-The easiest way to do that is to create a file <code>$HOME/.m2/settings.xml</code> where <code>$HOME</code> is your home directory, with the following contents:
+You can cause this to happen automatically by creating a file <code>$HOME/.m2/settings.xml</code> where <code>$HOME</code> is your home directory, with the following contents:
 
 <source lang="xml">
 <settings>
