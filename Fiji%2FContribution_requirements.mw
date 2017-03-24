@@ -147,7 +147,7 @@ The following table provides a few examples of how various Fiji components are s
 | [[3D Viewer]]
 | style="text-align: center" | {{Yes}}
 | [http://update.fiji.sc/ Fiji]
-| ?
+| [[GPLv3]]
 | [https://github.com/fiji fiji]
 | {{GitHub | org = fiji | repo = 3D_Viewer | label = 3D_Viewer}}
 | <code>sc.fiji</code>
