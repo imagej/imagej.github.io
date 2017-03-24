@@ -98,7 +98,7 @@ The following guidelines are less technical and more philosophical, but represen
 
 Developers of Fiji components should invite others to contribute. That entails welcoming developers, acknowledging and working on pull requests, encouraging improvements, working together, enhancing upon each others' work, share insights, etc.
 
-To leverage the power of Open Source, the default for discussions should be the [[mailing lists]], [[Chat|chat rooms]] and [[GitHub]] issues and pull requests. In other words, the question to ask should be "Is there any good reason why this conversation should be private?" instead of the opposite.
+To leverage the power of [[open source]], the default for discussions should be to use [[Communication|public channels]]. In other words, the question to ask should be "Is there any good reason why this conversation should be private?" instead of the opposite.
 
 == Active bug management ==
 
