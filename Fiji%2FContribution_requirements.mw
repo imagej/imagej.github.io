@@ -64,7 +64,7 @@ This requirement exists to facilitate automated tooling for dependency convergen
 
 From example, Apache Commons Math v3.x breaks backwards compatibility with Apache Commons Math v2.x. Since both versions share the same package and class names, only one of these versions can be shipped with Fiji. Therefore, all components of Fiji must rely on the same major version: either v2 or v3.
 
-In general, if the rest of the Fiji distribution upgrades to a new major version of a library on which your component depends, your component must also be upgraded to use the new version. Such decisions are typically reached after [[Mailing Lists|public discussion on the fiji-devel list]].
+In general, if the rest of the Fiji distribution upgrades to a new major version of a library on which your component depends, your component must also be upgraded to use the new version. Such decisions are typically reached after [[Communication|discussion on public channels]].
 
 === Best practice: version constants ===
 
