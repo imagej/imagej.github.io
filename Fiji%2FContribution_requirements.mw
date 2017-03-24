@@ -127,8 +127,7 @@ The following table provides a few examples of how various Fiji components are s
 {| class="wikitable"
 | colspan=5 style="text-align: center" | '''Basics'''
 | colspan=2 style="text-align: center" | '''[[GitHub]]'''
-| colspan=3 style="text-align: center" | '''[[Maven]]'''
-| colspan=2 style="text-align: center" | '''Depends on'''
+| colspan=1 style="text-align: center" | '''[[Maven]]'''
 |-
 | '''Classification'''
 | '''Component'''
@@ -138,10 +137,6 @@ The following table provides a few examples of how various Fiji components are s
 | '''Organization'''
 | '''Repository'''
 | '''groupId'''
-| '''Parent POM'''
-| '''Managed in<sup>3</sup>'''
-| '''BDV<sup>4</sup>'''
-| '''TrakEM2<sup>5</sup>'''
 |-
 | rowspan=4 | '''Standard'''
 | [[3D Viewer]]
@@ -151,10 +146,6 @@ The following table provides a few examples of how various Fiji components are s
 | [https://github.com/fiji fiji]
 | {{GitHub | org = fiji | repo = 3D_Viewer | label = 3D_Viewer}}
 | <code>sc.fiji</code>
-| {{GitHub | org = fiji | repo = pom-fiji | label = pom-fiji}}
-| {{GitHub | org = fiji | repo = pom-fiji | label = pom-fiji}}
-| style="text-align: center" | {{No}}
-| style="text-align: center" | {{No}}
 |-
 | [[Coloc 2]]
 | style="text-align: center" | {{Yes}}
@@ -163,10 +154,6 @@ The following table provides a few examples of how various Fiji components are s
 | [https://github.com/fiji fiji]
 | {{GitHub | org = fiji | repo = Colocalisation_Analysis | label = Colocalisation_Analysis}}
 | <code>sc.fiji</code>
-| {{GitHub | org = fiji | repo = pom-fiji | label = pom-fiji}}
-| {{GitHub | org = fiji | repo = pom-fiji | label = pom-fiji}}
-| style="text-align: center" | {{No}}
-| style="text-align: center" | {{No}}
 |-
 | [[Simple Neurite Tracer]]
 | style="text-align: center" | {{Yes}}
@@ -175,10 +162,6 @@ The following table provides a few examples of how various Fiji components are s
 | [https://github.com/fiji fiji]
 | {{GitHub | org = fiji | repo = Simple_Neurite_Tracer | label = Simple_Neurite_Tracer}}
 | <code>sc.fiji</code>
-| {{GitHub | org = fiji | repo = pom-fiji | label = pom-fiji}}
-| {{GitHub | org = fiji | repo = pom-fiji | label = pom-fiji}}
-| style="text-align: center" | {{No}}
-| style="text-align: center" | {{No}}
 |-
 | [[TrackMate]]
 | style="text-align: center" | {{Yes}}
@@ -187,10 +170,6 @@ The following table provides a few examples of how various Fiji components are s
 | [https://github.com/fiji fiji]
 | {{GitHub | org = fiji | repo = TrackMate | label = TrackMate}}
 | <code>sc.fiji</code>
-| {{GitHub | org = fiji | repo = pom-fiji | label = pom-fiji}}
-| {{GitHub | org = fiji | repo = pom-fiji | label = pom-fiji}}
-| style="text-align: center" | {{No}}
-| style="text-align: center" | {{No}}
 |-
 | rowspan=2 | '''External'''
 | [[Sholl Analysis]]
@@ -200,10 +179,6 @@ The following table provides a few examples of how various Fiji components are s
 | [https://github.com/tferr tferr]
 | {{GitHub | org = tferr | repo = ASA | label = ASA}}
 | <code>ca.mcgill</code>
-| {{GitHub | org = fiji | repo = pom-fiji | label = pom-fiji}}
-| {{GitHub | org = fiji | repo = pom-fiji | label = pom-fiji}}
-| style="text-align: center" | {{No}}
-| style="text-align: center" | {{No}}
 |-
 | [[Bio-Formats]]
 | style="text-align: center" | {{Yes}}
@@ -212,10 +187,6 @@ The following table provides a few examples of how various Fiji components are s
 | [https://github.com/openmicroscopy openmicroscopy]
 | {{GitHub | org = openmicroscopy | repo = bioformats | label = bioformats}}
 | <code>ome</code>
-| -
-| {{GitHub | org = scijava | repo = pom-scijava | label = pom-scijava}}
-| style="text-align: center" | {{No}}
-| style="text-align: center" | {{No}}
 |-
 | rowspan=2 | '''Subproject'''
 | [[BigDataViewer]]
@@ -225,10 +196,6 @@ The following table provides a few examples of how various Fiji components are s
 | [https://github.com/bigdataviewer bigdataviewer]
 | {{GitHub | org = bigdataviewer | repo = bigdataviewer_fiji | label = bigdataviewer_fiji}}
 | <code>sc.fiji</code>
-| {{GitHub | org = bigdataviewer | repo = pom-bigdataviewer | label = pom-bigdataviewer}}
-| {{GitHub | org = bigdataviewer | repo = pom-bigdataviewer | label = pom-bigdataviewer}}
-| style="text-align: center" | {{Yes}}
-| style="text-align: center" | {{No}}
 |-
 | [[TrakEM2]]
 | style="text-align: center" | {{Yes}}
@@ -237,10 +204,6 @@ The following table provides a few examples of how various Fiji components are s
 | [https://github.com/trakem2 trakem2]
 | {{GitHub | org = trakem2 | repo = TrakEM2 | label = TrakEM2}}
 | <code>sc.fiji</code>
-| {{GitHub | org = trakem2 | repo = TrakEM2 | label = pom-trakem2}}
-| {{GitHub | org = trakem2 | repo = TrakEM2 | label = pom-trakem2}}
-| style="text-align: center" | {{No}}
-| style="text-align: center" | {{Yes}}
 |-
 | rowspan=3 | '''Third party'''
 | [[Cookbook]]
@@ -250,10 +213,6 @@ The following table provides a few examples of how various Fiji components are s
 | [https://github.com/fiji fiji]
 | {{GitHub | org = fiji | repo = cookbook | label = cookbook}}
 | <code>sc.fiji</code>
-| {{GitHub | org = fiji | repo = pom-fiji | label = pom-fiji}}
-| N/A
-| style="text-align: center" | {{No}}
-| style="text-align: center" | {{No}}
 |-
 | [[MaMuT]]
 | style="text-align: center" | {{No}}
@@ -262,10 +221,6 @@ The following table provides a few examples of how various Fiji components are s
 | [https://github.com/fiji fiji]
 | {{GitHub | org = fiji | repo = MaMuT | label = MaMuT}}
 | <code>sc.fiji</code>
-| {{GitHub | org = fiji | repo = pom-fiji | label = pom-fiji}}
-| N/A
-| style="text-align: center" | {{Yes}}
-| style="text-align: center" | {{No}}
 |-
 | [[SLIM Curve]]
 | style="text-align: center" | {{No}}
@@ -274,10 +229,6 @@ The following table provides a few examples of how various Fiji components are s
 | [https://github.com/slim-curve slim-curve]
 | {{GitHub | org = slim-curve | repo = slim-plugin | label = slim-plugin}}
 | <code>slim-curve</code>
-| {{GitHub | org = imagej | repo = pom-imagej | label = pom-imagej}}
-| N/A
-| style="text-align: center" | {{No}}
-| style="text-align: center" | {{No}}
 |}
 <sup>1</sup> A "core" project is one distributed on the Fiji update site. These projects are subject to the requirements discussed on this page.
 <br><sup>2</sup> See the [[Licensing]] page for further details.
