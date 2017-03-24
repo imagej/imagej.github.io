@@ -232,8 +232,5 @@ The following table provides a few examples of how various Fiji components are s
 |}
 <sup>1</sup> A "core" project is one distributed on the Fiji update site. These projects are subject to the requirements discussed on this page.
 <br><sup>2</sup> See the [[Licensing]] page for further details.
-<br><sup>3</sup> The POM ancestor which manages the version of this component, if any.
-<br><sup>4</sup> Whether the component depends on one or more components in the [https://github.com/bigdataviewer bigdataviewer GitHub organization].
-<br><sup>5</sup> Whether the component depends on one or more components in the [https://github.com/trakem2 trakem2 GitHub organization].
 
 [[Category:Fiji]]
