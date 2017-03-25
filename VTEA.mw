@@ -80,7 +80,7 @@ Seth Winfree, Shehnaz Khan, Radmila Micanovic, Michael T. Eadon, Katherine J. Ke
 
 == TODO ==
 
-{{guidetask|add workflow saving and export|implement ImageFlow(http://imageflow.danielsenff.de) approach|move out of development phase|complete conversion to SciJava framework}}
+{{guidetask|add ground truth validation|add workflow saving and export|implement ImageFlow(http://imageflow.danielsenff.de) approach|move out of development phase|complete conversion to SciJava framework}}
 
 
 [[Category:Segmentation]]
