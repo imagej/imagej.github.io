@@ -33,7 +33,7 @@ Given d an approximate expected particle diameter, determined upon inspection, t
 * σ₂ = √2 × σ₁
 The image is filtered using these two gaussians, and the result of the second filter (largest sigma) is subtracted from the result of the first filter (smallest sigma). This yields a smoothed image with sharp local maximas at particle locations. A detection spot is then created for each of these maximas, and an arbitrary quality feature is assigned to the new spot by taking the smoothed image value at the maximum. If two spots are found to be closer than the expected radius d/2, the one with the lowest quality is discarded.
 
-To improve the localization accuracy, and extra step is taken to yield a sub-pixel localization of the spots. The position of each spot is recalculated using a simple parabolic interpolation scheme, as in [Lowe]. The quality feature is also interpolated using this scheme. 
+To improve the localization accuracy, and extra step is taken to yield a sub-pixel localization of the spots. The position of each spot is recalculated using a simple parabolic interpolation scheme, as in <ref name="Lowe">David G. Lowe, [http://www.cs.ubc.ca/~lowe/papers/ijcv04.pdf "Distinctive image features from scale-invariant keypoints"], International Journal of Computer Vision, 60, 2 (2004), pp. 91-110.</ref>. The quality feature is also interpolated using this scheme. 
 
 A large number of spurious spots are created by finding local maximas. There spurious spots are discarded inn extra step, by applying a threshold on the quality feature computed during segmentation. The value of this threshold is set manually, to match the SNR of the input image. Thresholded spots are then retained for subsequent particle-linking.
 
