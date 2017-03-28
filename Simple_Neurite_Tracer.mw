@@ -3,7 +3,7 @@
 | name = Simple Neurite Tracer
 | author = [[User:Mark|Mark Longair]], [[User:Tiago|Tiago Ferreira]] and [https://github.com/fiji/Simple_Neurite_Tracer/graphs/contributors contributors]
 | maintainer = [[User:Tiago|Tiago Ferreira]]
-| latest version = '''3.1.0 January 2017'''
+| latest version = '''3.1.1 March 2017'''
 | source = {{GitHub|org=fiji|repo=Simple_Neurite_Tracer}}
 | status = Stable ([https://github.com/fiji/Simple_Neurite_Tracer/releases Release notes])
 }}
