@@ -7,3 +7,5 @@ Alternatively, view the ImageJ usage map for [[Usage_Yearly|the last year]].
 |height=600
 |border=0
 }}
+
+Here's a [[KNIME]] workflow that uses the same data to plot a map using R and ggplot2: [[File:Usage Map.zip]]
