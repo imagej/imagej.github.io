@@ -1,8 +1,6 @@
 {{Infobox
 | name                   = Calculator Plus
 | software               = Fiji
-| author                 = {{Person|Landini}}
-| maintainer             = {{Person|Landini}}
 | source                 = {{GitHub|org=fiji|repo=Calculator_Plus}}
 | website                = http://imagej.net/plugins/calculator-plus.html
 | status                 = stable
