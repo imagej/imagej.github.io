@@ -92,7 +92,7 @@ Columns are:
 # ''Frame'' = corresponding frame number (if timelapse)
 # ''xMin'', ''yMin'', ''xMax'', ''yMax'' = coordinate of rectangle around spot (in pixels)
 # ''NArea'' = internal area of rectangle
-# ''IntegratedInt'' = sum of all pixels intensity inside the rectangle minus average spot-specific backgrounds. Background value is calculates as average intensity of pixels on perimeter of the rectangle.
+# ''IntegratedInt'' = sum of all pixels intensity inside the [https://github.com/ekatrukha/ComDet/wiki/How-does-detection-work%3F thresholded area] minus average spot-specific backgrounds. Background value is calculates as average intensity of pixels on perimeter of the rectangle.
 # ''Colocalized'' = 0 if spot does not colocalize with another and 1 if it does.
 # ''IntensityRatio'' = Ratio of spot's ''IntegratedInt'' to ''IntegratedInt'' of corresponding colocalized spot.
  
