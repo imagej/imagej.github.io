@@ -6,7 +6,7 @@
 | filename               = [https://github.com/ekatrukha/KymoResliceWide/blob/master/KymoResliceWide_.jar?raw=true KymoResliceWide_.jar]
 | source                 = [https://github.com/ekatrukha/KymoResliceWide github]
 | released               = 24 September 2014
-| latest version         = 21 October 2015
+| latest version         = 1 April 2017
 | status                 = stable 
 | category               = [[:Category:Stacks|Stacks]]
 | website                = [https://github.com/ekatrukha/KymoResliceWide/wiki wiki_page]
@@ -23,31 +23,34 @@ Open the stack/movie to be analyzed in ImageJ. Draw a line along the area where 
 
 Plugin automatically picks up your choice of line selection from ImageJ and corrects for its length.<br />Just use the one you need.
 
-http://katpyxa.info/software/KymoResliceWide/line_selection.png
+http://katpyxa.info/software/KymoResliceWide/line_selection2.png
 
 
 === Line width ===
 
 Define the width of line using double click on the line selection tool in ImageJ 
 
-http://katpyxa.info/software/KymoResliceWide/line_width.png
+http://katpyxa.info/software/KymoResliceWide/line_width2.png
 
 === Parameters ===
 
 After that the window showing kymograph parameters will pop-up:
 
-http://katpyxa.info/software/KymoResliceWide/choice.png
+http://katpyxa.info/software/KymoResliceWide/choice2.png
 
 Where following options are available (in order): 
 * whether to take average or maximum intensity transverse to line; 
 * (unchecked) time as y-axis, distance as x-axis, (checked) time as x-axis, distance as y-axis; 
-* (checked) curve will be added and displayed in the overlay of original movie/stack to mark already analyzed region.
+* (checked) curve will be added and displayed in the overlay of original movie/stack to mark already analyzed region;
+* ignore original image/stack calibration, i.e. don't add its calibration to the final kymograph image (width, height, vortex size and frame rate)
 
 == Other kymograph plugins == 
 
 As alternative, there is very well documented [[Multi Kymograph]] plugin and its updated version [http://biop.epfl.ch/TOOL_KYMOGRAPH.html Kymograph tool].
 
 == Version history ==
+
+version 0.5 (2017/04/01): hyperstacks reslice fixed (now time, not Z) and image calibration handling is improved (with option to ignore it).  
 
 version 0.4 (2015/10/21): now it works with hyperstacks and RGB images.
 
