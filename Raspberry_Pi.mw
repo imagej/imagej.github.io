@@ -9,9 +9,11 @@ This page provides advice and guidance for running [[ImageJ]] and [[Fiji]] on Ra
 # Download and install the [http://downloads.imagej.net/fiji/latest/fiji-nojre.zip platform-independent "no JRE" distribution of Fiji].
 # Download the [https://github.com/imagej/imagej/blob/master/bin/ImageJ.sh ImageJ.sh] shell script, set its executable bit (<code>chmod +x ImageJ.sh</code>) and run it to launch ImageJ. Note that the shell script supports only a subset of the functionality of the native [[ImageJ Launcher]], but it should be able to run ImageJ successfully.
 
-= Java 3D =
+= 3D Visualization =
 
 It is supposedly possible to run [[Java 3D]] on the Pi; see [http://stackoverflow.com/questions/28529344/how-to-run-java3d-on-rpi-2 this StackOverflow thread]. However, there have been no official reported successes on ImageJ community channels yet. If you get it working, please edit this section to describe the steps you used!
+
+Even better, if you get [[ClearVolume]] and/or the [[ThreeDViewer]] working on the Pi, please update this page, and announce it on the [[ImageJ Forum]]!
 
 = Troubleshooting =
 See the [[Troubleshooting]] page.
