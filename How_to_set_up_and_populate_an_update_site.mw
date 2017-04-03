@@ -1,4 +1,4 @@
-{{UpdateSites}}
+{{UpdateSitesMenu}}
 == Introduction ==
 
 This tutorial explains how to '''set up a website to distribute your plugins'''. It assumes that your plugins are correctly installed in your local ImageJ setup.
