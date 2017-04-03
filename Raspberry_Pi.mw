@@ -1,4 +1,4 @@
-The [[wikipedia:Raspberry Pi|Raspberry Pi]] is an inexpensive single-board computer system which runs the [wikipedia:Raspbian|Raspbian]] operating system, a flavor of Debian [[Linux]].
+The [[wikipedia:Raspberry Pi|Raspberry Pi]] is an inexpensive single-board computer system which runs the [[wikipedia:Raspbian|Raspbian]] operating system, a flavor of Debian [[Linux]].
 
 This page provides advice and guidance for running [[ImageJ]] and [[Fiji]] on Raspberry Pi systems.
 
@@ -16,7 +16,7 @@ See the [[Troubleshooting]] page.
 See the [[Frequently Asked Questions]] page.
 
 = See also =
-* Topics tagged [[http://forum.imagej.net/tags/raspberry-pi raspberry-pi]] on the [[ImageJ Forum]].
+* Topics tagged [http://forum.imagej.net/tags/raspberry-pi raspberry-pi] on the [[ImageJ Forum]].
 * The [[Linux]] page, for general information about ImageJ on Linux systems.
 
 [[Category:Platforms]]
