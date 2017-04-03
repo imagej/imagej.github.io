@@ -1,11 +1,17 @@
 == ImageJ User and Developer Conferences ==
 
-The Fiji and ImageJ2 development teams at Max Planck Institute of Molecular Cell Biology and Genetics in Dresden and LOCI in UW-Madison are pleased to announce the continuation of the ImageJ conference.
+Approximately every two years, there is a conference focused on [[ImageJ]]-based software, including both the core program itself, as well as applications and [[plugins]] thereof.
+
+=== Future conferences ===
+
+The [[Fiji]] and [[ImageJ2]] development teams at Max Planck Institute of Molecular Cell Biology and Genetics in Dresden and [[LOCI]] in UW-Madison are pleased to announce the continuation of the ImageJ conference.
 
 * Fall 2018, Max Planck Institute of Molecular Cell Biology and Genetics, Dresden
 * Fall 2020, University of Wisconsin, Madison
 
-If you have any questions or if you are interested in hosting a future ImageJ conference, please let us know.
+If you have any questions or if you are interested in hosting a future ImageJ conference, please start a thread on the [[ImageJ Forum]].
+
+=== Past conferences ===
 
 {| class="wikitable nicetable"
 !colspan="4" style="border-bottom: 1px solid gray"|[[File:Imagej-conference-logo.png]]
