@@ -1,0 +1,22 @@
+The [[wikipedia:Raspberry Pi|Raspberry Pi]] is an inexpensive single-board computer system which runs the [wikipedia:Raspbian|Raspbian]] operating system, a flavor of Debian [[Linux]].
+
+This page provides advice and guidance for running [[ImageJ]] and [[Fiji]] on Raspberry Pi systems.
+
+= Installation =
+{{ImageJ1 | You might notice there is as an <code>imagej</code> package available from your package manager. Please be aware that this provides [[ImageJ 1.x]] only, packaged by a third party, without cooperation from the core ImageJ development team. You will not have access to any [[ImageJ2]]-specific features such as [[Script parameters|parameterized scripts]], and you will likely have permissions errors because it is a system-wide ImageJ installation.}}The following steps describe how to install ImageJ on a Raspberry Pi:
+
+# Install Java 8 on your Pi. Verify it works using <code>java -version</code> from the command line.
+# Download and install the [http://downloads.imagej.net/fiji/latest/fiji-nojre.zip platform-independent "no JRE" distribution of Fiji].
+# Download the [https://github.com/imagej/imagej/blob/master/bin/ImageJ.sh ImageJ.sh] shell script, set its executable bit (<code>chmod +x ImageJ.sh</code>) and run it to launch ImageJ. Note that the shell script supports only a subset of the functionality of the native [[ImageJ Launcher]], but it should be able to run ImageJ successfully.
+
+= Troubleshooting =
+See the [[Troubleshooting]] page.
+
+= Frequently Asked Questions =
+See the [[Frequently Asked Questions]] page.
+
+= See also =
+* Topics tagged [[http://forum.imagej.net/tags/raspberry-pi raspberry-pi]] on the [[ImageJ Forum]].
+* The [[Linux]] page, for general information about ImageJ on Linux systems.
+
+[[Category:Platforms]]
