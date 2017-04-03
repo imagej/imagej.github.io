@@ -2,7 +2,7 @@
 * The [[How_to_upload_to_core_update_sites|core update sites]] are updated manually or by [[Jenkins]].
 * Travis CI is useful because it can freely build any open source project with minimal effort.
 }}
-{{UpdateSites}}
+{{UpdateSitesMenu}}
 
 = Requirements =
 * An open-source project hosted on [[GitHub]]
