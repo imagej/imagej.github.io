@@ -1,4 +1,4 @@
-The [[wikipedia:Raspberry Pi|Raspberry Pi]] is an inexpensive single-board computer system which runs the [[wikipedia:Raspbian|Raspbian]] operating system, a flavor of Debian [[Linux]].
+{{Minibox | logo=Pi.svg | blurb=Learn programming through fun, practical projects!}}The [[wikipedia:Raspberry Pi|Raspberry Pi]] is an inexpensive single-board computer system which runs the [[wikipedia:Raspbian|Raspbian]] operating system, a flavor of Debian [[Linux]].
 
 This page provides advice and guidance for running [[ImageJ]] and [[Fiji]] on Raspberry Pi systems.
 
