@@ -1,5 +1,5 @@
 {{UpdateSitesWarning}}
-{{UpdateSites}}
+{{UpdateSitesMenu}}
 == Introduction ==
 
 This tutorial will explain how to '''add an update site to your install of ImageJ''' such that the plugins maintained there will be installed and updated just like core ImageJ plugins.
