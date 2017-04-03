@@ -12,9 +12,7 @@ This is a list of upcoming conferences, courses, and other events in the scienti
 |style="white-space: nowrap"|2017 April 9-12
 |[http://www.focusonmicroscopy.org/ Focus on Microscopy 2017]
 |Advanced multi-dimensional light microscopy and image processing
-|Palais des Congrès de Bordeaux, Convention Center 
-Avenue Jean Gabriel Domergue, 33300 
-Bordeaux, France 
+|Palais des Congrès de Bordeaux, Convention Center<br>Avenue Jean Gabriel Domergue, 33300<br>Bordeaux, France 
 |-
 |style="white-space: nowrap"|2017 April 18-21
 |[http://biomedicalimaging.org/2017/ ISBI 2017]
@@ -43,7 +41,7 @@ Heidelberg, Germany
 | colspan=4 class="section-minor" | Courses and Workshops
 |-
 |style="white-space: nowrap"|2017 March 29 - April 11
-|[https://meetings.cshl.edu/courses.aspx?course=C-QICM&year=17 Quantitative Imaging: From Acquisition to Analysis]
+|style="white-space: normal"|[https://meetings.cshl.edu/courses.aspx?course=C-QICM&year=17 Quantitative Imaging: From Acquisition to Analysis]
 |Advanced quantitative fluorescence microscopy techniques used for imaging a range of biological specimens, from tissues to cells to single molecules
 |Cold Spring Harbor Laboratory, USA
 |-
@@ -53,22 +51,24 @@ Heidelberg, Germany
 | [http://neurodiscovery.harvard.edu/enhanced-neuroimaging-core Enhanced Neuroimaging Core]<br>[http://neurodiscovery.harvard.edu/ Harvard NeuroDiscovery Center]<br>Boston, MA, USA
 |-
 |style="white-space: nowrap"|2017 May 3-12
-|[http://www.mbl.edu/education/courses/analytical-quantitative-light-microscopy/ Analytical & Quantitative Light Microscopy (AQLM)]
+|style="white-space: normal"|[http://www.mbl.edu/education/courses/analytical-quantitative-light-microscopy/ Analytical & Quantitative Light Microscopy (AQLM)]
 |A comprehensive and intensive course in light microscopy for researchers in biology, medicine, and material sciences. 
-|Marine Biological Laboratory (MBL), Woods Hole, MA, USA
+|Marine Biological Laboratory (MBL)
+Woods Hole, MA, USA
 |-
 |style="white-space: nowrap"|2017 May 14-20
-|[https://goo.gl/mMXECA EMBL Course for Bioimage Data Analysis]
+|style="white-space: normal"|[https://goo.gl/mMXECA EMBL Course for Bioimage Data Analysis]
 |A course for bioimage analysis. Learn the construction of workflow using ImageJ Macro and MATLAB scripting, from original data down to numbers.   
 |EMBL, Heidelberg, Germany 
 |-
 |style="white-space: nowrap"|2017 June 1-2
 |[http://www2.le.ac.uk/colleges/medbiopsych/facilities-and-services/cbs/AIF/workshops/imagej-workshops-June-2017 ImageJ workshops, Leicester, UK]
 |Introduction to ImageJ/Fiji on Thursday 1st and Writing macros in ImageJ on Friday 2nd of June.   
-|Dr Kees Straatman, University of Leicester, UK
+|Dr Kees Straatman
+University of Leicester, UK
 |-
 |style="white-space: nowrap"|2017 July 10-14
-|[http://www.wur.nl/en/Education-Programmes/wageningenacademy-1/show/Summer-School-on-Image-Analysis-for-Plant-Phenotyping.htm Summer School on image analysis for plant phenotyping]
+|style="white-space: normal"|[http://www.wur.nl/en/Education-Programmes/wageningenacademy-1/show/Summer-School-on-Image-Analysis-for-Plant-Phenotyping.htm Summer School on image analysis for plant phenotyping]
 |a complete overview of image analysis techniques for automatic plant
 phenotyping, with examples in ImageJ, Fiji, Python, Matlab and other tools. 
 |Wageningen University & Research
