@@ -1,4 +1,4 @@
-{{UpdateSites}}{{TOC}}
+{{UpdateSitesMenu}}{{TOC}}
 == How do I make my update site appear in ImageJ's ''Manage update sites'' dialog? ==
 
 The dialog is based on the [[List of update sites]] wiki page. You can edit that page to add your own update site.
