@@ -25,6 +25,5 @@ If the PDF file is on the web, use a macro or script to call the plugin with the
 
 For example, open the Jython Interpreter from Plugins / Scripting / Jython Interpreter (See [[Scripting Help]]), and paste the above with a desired .pdf URL argument. 
 
-[[Category:Menus]]
 [[Category:Plugins]]
 [[Category:Import-Export]]
