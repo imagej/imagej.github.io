@@ -364,6 +364,23 @@
 | pages = 80-90
 | pmid = 27713081}} ({{Scholar | cluster=9846627681021220605}}).
 
+| Trainable Weka Segmentation = {{Citation
+| last = Arganda-Carreras | first = I.
+| last2 = Kaynig | first2 = V.
+| last3 = Rueden | first3 = C.
+| last4 = Eliceiri | first4 = K.W.
+| last5 = Schindelin | first5 = J.
+| last6 = Cardona | first6 = A.
+| last7 = Seung | first7 = H.S.
+| year = 2017
+| journal = Bioinformatics
+| url = https://academic.oup.com/bioinformatics/article-abstract/doi/10.1093/bioinformatics/btx180/3092362/Trainable-Weka-Segmentation-a-machine-learning
+| title = Trainable Weka Segmentation: a machine learning tool for microscopy pixel classification.
+| volume = Bioinformatics btx180
+| publisher=Oxford Univ Press
+| doi = 10.1093/bioinformatics/btx180}}
+
+
 | SciJava Common = Rueden, C., Schindelin, J., Hiner, M. & Eliceiri, K. (2016). SciJava Common [Software]. http://scijava.org/.
 | SCIFIO = Hiner, M., Rueden, C. & Eliceiri, K. (2016). SCIFIO [Software]. http://scif.io/.
 | ImageJ Ops = Rueden, C., Dietz, C., Horn, M., Schindelin, J., Northan, B., Berthold, M. & Eliceiri, K. (2016). ImageJ Ops [Software]. http://imagej.net/Ops.
