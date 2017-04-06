@@ -375,6 +375,9 @@ If you absolutely need to reuse an old model, you can transform it to the new ve
 For all '''questions, suggestions, bug reports and problems''' related to the Trainable Weka Segmentation plugin or library, please use the [http://forum.imagej.net ImageJ forum] and make sure to [http://forum.imagej.net/search?q=weka check previous posts] that might have been done covering the same topic.
 
 == Citation ==
+Please note that [[Trainable Weka Segmentation]] is based on a publication. If you use it successfully for your research please be so kind to cite our work:
+* {{Publication | Trainable Weka Segmentation}}
+
 The [[Trainable Weka Segmentation]] code has its own citable [http://dx.doi.org/10.5281/zenodo.59290 DOI].
 
 == License ==
