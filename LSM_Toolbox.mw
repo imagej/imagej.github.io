@@ -9,12 +9,11 @@
 | status                 = stable
 | category               = [[:Category:Import-Export]]
 | website                = [http://imagejdocu.tudor.lu/doku.php?id=plugin:inputoutput:lsmtoolbox:start]
-}}
+}}The LSM Toolbox provides plugins for working with Carl Zeiss LSM510 .lsm files.
 
 ==Usage==
 
-Tools for working with Carl Zeiss LSM510  .lsm files
-The LSM_Toolbox is a project aiming at the integration of common useful functions around the Zeiss lsm file format, that should enhance usability of confocal lsm files kept in their native format, thus preserving all available metadata.
+The LSM Toolbox project aims at the integration of common useful functions around the Zeiss lsm file format, that should enhance usability of confocal lsm files kept in their native format, thus preserving all available metadata.
 
 In Fiji, corresponding commands are:
 * {{bc | File | Import | Show LSMToolbox}} which displays the toolbox, from which all commands can be called;
