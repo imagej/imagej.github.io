@@ -4,7 +4,7 @@
 
 There are several ways to enable support for more video formats:
 
-* [[Bio-Formats]] includes support for reading additional codecs for some video formats. See the Bio-Formats [https://www.openmicroscopy.org/site/support/bio-formats5.4/formats/avi.html AVI] and [https://www.openmicroscopy.org/site/support/bio-formats/formats/quicktime-movie.html QuickTime] pages for the list of supported codecs.
+* [[Bio-Formats]] includes support for reading additional codecs for some video formats. See the Bio-Formats [https://www.openmicroscopy.org/site/support/bio-formats5.4/formats/avi.html AVI] and [https://www.openmicroscopy.org/site/support/bio-formats/formats/quicktime-movie.html QuickTime] pages for the list of supported codecs. Bio-Formats is included with the [[Fiji]] distribution of ImageJ.
 
 * Enable the ''beta-quality'' FFMPEG [[update site]], which uses native bindings to the [[wikipedia:FFmpeg|FFmpeg]] library to read many video formats. The source code for this update site is [https://github.com/scifio/scifio-javacv/tree/ffmpeg embedded in the scifio-javacv history].
 
