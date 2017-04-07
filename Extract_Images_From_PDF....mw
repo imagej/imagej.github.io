@@ -8,10 +8,7 @@
 | latest version         = ?
 | status                 = stable, not active
 | category               = [[:Category:Import-Export]]
-}}
-
-
-Select File / Import / Extract Images From PDF...
+}}Select {{bc|File|Import|Extract Images From PDF...}}
 
 A dialog pops up to pick a file. Choose a .pdf file, and all its images will be opened as ImageJ images, in their original resolution.
 
