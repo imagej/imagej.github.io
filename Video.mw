@@ -1,0 +1,21 @@
+Out of the box, ImageJ has limited support for some video formats such as AVI and [[QuickTime]].
+
+== Plugins ==
+
+There are several ways to enable support for more video formats:
+
+* [[Bio-Formats]] includes support for reading additional codecs for some video formats. See the Bio-Formats [https://www.openmicroscopy.org/site/support/bio-formats5.4/formats/avi.html AVI] and [https://www.openmicroscopy.org/site/support/bio-formats/formats/quicktime-movie.html QuickTime] pages for the list of supported codecs.
+
+* Enable the ''beta-quality'' FFMPEG [[update site]], which uses native bindings to the [[wikipedia:FFmpeg|FFmpeg]] library to read many video formats. The source code for this update site is [https://github.com/scifio/scifio-javacv/tree/ffmpeg embedded in the scifio-javacv history].
+
+* For exporting video, you could try the [https://sites.google.com/site/qingzongtseng/save-as-movie Save As Movie] plugin. Unfortunately, there is no update site for it; you must perform a complex installation procedure manually.
+
+== Transcoding ==
+
+Another strategy is to transcode your video to an uncompressed format using a tool such as QuickTime Pro, VirtualDub or FFmpeg on the command line. The uncompressed video stream can then easily be opened in ImageJ without the need for additional plugins.
+
+== Future directions ==
+
+The {{GitHub | org=scifio | repo=scifio-javacv | label=SCIFIO-JavaCV}} project will offer out-of-the-box support for video formats supported by [[OpenCV]] including those supported by FFmpeg. At the moment, the SCIFIO-JavaCV project is inactive due to lack of development resources.
+
+[[Category:Import-Export]]
