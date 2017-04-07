@@ -10,9 +10,9 @@
 | status                 = 
 | category               = [[:Category:Import-Export]]
 | website                = 
-}}
-== Description ==
-This plugin can load Olympus vsi/oir/omp2info file formats and show some meta data.
+}}This plugin can load Olympus vsi/oir/omp2info file formats and show some meta data.
+
+{{TOC}}
 == Installation ==
 Please see also [http://www.olympus-lifescience.com/OlympusImageJPlugin/HowToInstallOlympusViewerPlugin installation manual].
 
