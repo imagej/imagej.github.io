@@ -1,3 +1,5 @@
+{{FormatsMenu}}[[wikipedia:DICOM|Digital Imaging and Communications in Medicine (DICOM)]] is a standard for handling, storing, printing, and transmitting information in medical imaging.
+
 == How to read DICOM files into ImageJ? ==
 * ImageJ has built-in support for reading some kinds of DICOM files. Try {{bc | File | Open}} and see how it goes.
 * The [[Bio-Formats]] plugin supports some kinds of DICOM files, too. Bio-Formats is available in the [[Fiji]] distribution of ImageJ. Try {{bc | File | Import | Bio-Formats}}.
