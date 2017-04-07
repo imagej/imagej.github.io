@@ -10,7 +10,7 @@ ImageJ has some built-in support for the DICOM format, and there are also plugin
 
 == HDF ==
 
-The HDF5 [[update site]] enables suprport for reading and writing [[wikipedia:https://en.wikipedia.org/wiki/Hierarchical_Data_Format|HDF5]] image data. Note that HDF5 is a very broad specification; the HDF5 plugin will not support all manner of HDF files, but only those written according to its constraints.
+The HDF5 [[update site]] enables support for reading and writing [[wikipedia:https://en.wikipedia.org/wiki/Hierarchical_Data_Format|HDF5]] image data. Note that HDF5 is a very broad specification; the HDF5 plugin will not support all manner of HDF files, but only those written according to its constraints.
 
 == Video ==
 
