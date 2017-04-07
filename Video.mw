@@ -12,7 +12,7 @@ There are several ways to enable support for more video formats:
 
 == Transcoding ==
 
-Another strategy is to transcode your video to an uncompressed format using a tool such as QuickTime Pro, VirtualDub or FFmpeg on the command line. The uncompressed video stream can then easily be opened in ImageJ without the need for additional plugins.
+Another strategy is to transcode your video to an uncompressed format using a tool such as QuickTime Pro, VirtualDub or FFmpeg on the command line. The uncompressed video stream can then easily be opened in ImageJ without the need for additional plugins. Similarly, for saving video, you can write to an uncompressed format, then compress it afterward using an external tool.
 
 == Future directions ==
 
