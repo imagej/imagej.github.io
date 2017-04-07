@@ -1,13 +1,12 @@
-{{Menu | [[Formats]]
+{{Menu | About
 |
-{{MenuItem | [[Bio-Formats]] }}
-{{MenuItem | [[Video|Video formats]] }}
-{{MenuItem | [[Extract Images From PDF...|PDF]] }}
-{{MenuItem | [[DICOM]] }}
-{{MenuItem | [[LSM Toolbox|Zeiss LSM]] }}
-{{MenuItem | [[OlympusImageJPlugin|Olympus VSI]] }}
-{{MenuItem | [[LuraWave|Opera Flex]] }}
-{{MenuItem | [[:Category:Import-Export|All I/O plugins]] }}
+{{MenuItem | [[ImageJ]] }}
+{{MenuItem | [[Usage]] }}
+{{MenuItem | [[Contributors]] }}
+{{MenuItem | [[Governance]] }}
+{{MenuItem | [[Funding]] }}
+{{MenuItem | [[Citing]] }}
+{{MenuItem | [[Contributing]] }}
 }}
 <noinclude>
 [[Category:Menu]]
