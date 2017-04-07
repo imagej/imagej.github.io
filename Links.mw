@@ -42,15 +42,15 @@ See the [[Principles]] page.
 
 == Input/Output ==
 
+See the [[Formats]] page.
+
 === Movie support ===
 
-There is a beta-quality Movie support for all of Fiji's supported platforms available via the update site ''http://fiji.sc/~schindelin/ffmpeg-plugins/'' (see [[How_to_follow_a_3rd_party_update_site|these instructions]] on how to follow an update site). It uses [http://ffmpeg.org/ FFMPEG], which includes all the upstream changes of [http://libav.org/ LibAV]. As such, the plugin requires native, platform-dependent libraries that are shipped from the same update site.
-
-Note that there is [https://sites.google.com/site/qingzongtseng/save-as-movie a similar project], based on [http://code.google.com/p/javacv/ javacv] which seems to be superior to the FFMPEG plugins mentioned above.
-
-Bio-Formats has started [http://www.loci.wisc.edu/bio-formats-format/quicktime-movie supporting] parts of the Quicktime specification without relying on the native Quicktime4Java that is not even supported on 64-bit MacOSX, let alone Linux.
+See the [[Video]] page.
 
 == Image Processing ==
+
+See the [[Principles]] page.
 
 [http://alvyray.com/Memos/CG/Microsoft/6_pixel.pdf A pixel is not a little square]. Really. It is not. Pixels may be spaced on a regular grid. But that does not make them square. Even thinking about them as squares will harm your analysis, since it is simply wrong.
 
