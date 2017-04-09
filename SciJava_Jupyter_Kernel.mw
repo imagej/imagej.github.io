@@ -1,0 +1,5 @@
+Scijava Jupyter Kernel aims to provide a first class citizen Jupyter kernel that integrates out-of-the-box with ImageJ.
+
+This project is in very early stage.
+
+You can follow the development here : https://github.com/hadim/scijava-jupyter-kernel
