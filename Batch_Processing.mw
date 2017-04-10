@@ -22,7 +22,7 @@ The fastest way to start batch conversion is via the [http://imagej.net/docs/gui
 
 Open the [[Using_the_Script_Editor|script editor]], select {{bc | Templates | ImageJ 1.x | Examples | Process Folder (IJ1 Macro)}}. This will generate the following boilerplate:
 
-[[Image:Process_folder_ij1.png|center]]
+[[Image:Process_folder_ij1.png|center|762px]]
 
 Lines 26 and 27 can now be edited, replaced with the functional macro code you would like to apply to all images of a given type in a folder. Furthermore you can now modify the batch processing logic itself, for example if you need to customize what (if any) output information is saved.
 
