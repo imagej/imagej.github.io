@@ -31,13 +31,19 @@ This plugin is also recordable within ImageJ, and can be implemented as part of 
 
 == Installing the Quiver Plot Plugin == 
 
-The Quiver Plot plugin is a stand alone plugin that needs to be installed manually.  To install the plugin, use the following steps:
+The Quiver Plot plugin is part of the [[UCB Vision Sciences]] library. To install it, you just need to [[How_to_follow_a_3rd_party_update_site#Add_update_sites | add]] the UCB Vision Sciences update site:
 
-1) Go to the [https://github.com/Llamero/Quiver_Plot/releases/tag/0.2.0 Github link] and download the file: Quiver_Plot-0.2.0-SNAPSHOT.jar
+1) Select {{bc | Help | Update...}} from the Fiji menu to start the updater.
 
-2) Copy the file into the Plugins folder for ImageJ/FIJI.
+2) Click on ''Manage update sites''. This brings up a dialog where you can activate additional update sites.
 
-3) Restart ImageJ/FIJI and the plugin will automatically show up in the plugin menu: {{bc | Plugins |Quiver Plot}}.
+3) Activate the [[UCB Vision Sciences]] update site and close the dialog. Now you should see additional jar files for download.
+
+4) Click ''Apply changes'' and restart Fiji.
+
+You should now find the plugin under the sub-menu {{bc | Plugins |UCB Vision Sciences | Quiver Plot}}.
+
+'''Note''': Quiver Plot is only one of the plugins included in the [[UCB Vision Sciences]] suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
 == Acknowledgements ==
 
