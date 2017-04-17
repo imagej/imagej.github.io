@@ -1,6 +1,6 @@
-{{Infobox
+{{Project|Fiji}}{{Infobox
 | name                   = Coloc 2 - Standardized, modular, Pixel Intensity Correlation over Space Based Colocalization analysis. 
-| software               = ImageJ - Fiji - ImgLib
+| software               = Fiji
 | author                 = Daniel J. White, Tom Kazimiers, Johannes Schindelin
 | maintainer             = {{Person|White}}
 | filename               = Colocalisation_Analysis.jar
