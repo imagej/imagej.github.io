@@ -381,11 +381,22 @@
 | doi = 10.1093/bioinformatics/btx180
 | pmid = 28369169}} ({{Scholar | cluster=12995971888361615836}}).
 
-
 | SciJava Common = Rueden, C., Schindelin, J., Hiner, M. & Eliceiri, K. (2016). SciJava Common [Software]. http://scijava.org/.
-| SCIFIO = Hiner, M., Rueden, C. & Eliceiri, K. (2016). SCIFIO [Software]. http://scif.io/.
-| ImageJ Ops = Rueden, C., Dietz, C., Horn, M., Schindelin, J., Northan, B., Berthold, M. & Eliceiri, K. (2016). ImageJ Ops [Software]. http://imagej.net/Ops.
 
+| SCIFIO = {{Citation
+| last = Hiner | first = M.C.
+| last2 = Rueden | first2 = C.T.
+| last3 = Eliceiri | first3 = K.W.
+| year = 2016 Dec 7
+| journal = BMC Bioinformatics
+| url = https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1383-0
+| title = SCIFIO: an extensible framework to support scientific image formats.
+| volume = 17(1)
+| pages = 521
+| doi = 10.1186/s12859-016-1383-0
+| pmid = 27927161}} ({{Scholar | cluster=12695867462379525116}}).
+
+| ImageJ Ops = Rueden, C., Dietz, C., Horn, M., Schindelin, J., Northan, B., Berthold, M. & Eliceiri, K. (2016). ImageJ Ops [Software]. http://imagej.net/Ops.
 
 | MaMuT = {{Citation 
 | last = Wolff | first = C.
