@@ -51,3 +51,9 @@ SCIFIO is focused on robust and extensible support for reading and writing image
 * SCIFIO is still in beta, so there is likely to be a higher incidence of bugs. Issues can be reported on the [https://github.com/scifio/scifio/issues SCIFIO issue tracker].
 * Although we strive for full backwards compatibility, some files may appear slightly different when opened.
 * Opening files with SCIFIO is not fully macro recordable yet.
+
+== Publications ==
+
+* {{Publication | SCIFIO}}
+
+[[Category:Citable]]
