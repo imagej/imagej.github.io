@@ -54,10 +54,10 @@ This algorithm is designed for high-speed tracking of circles in a time-lapse se
 ===GUI Mode===
 The GUI has two available modes, "Easy" and "Advanced." 
 
-==== Easy Mode ====
+==== ''Easy Mode'' ====
 This mode uses the minimal number of user input values necessary to run the transform.  The remaining parameters are all defaulted to the most conservative values, such that all circles matching the criteria are found.  To retrieve the default values, run the GUI in easy mode with the recorder turned on: {{bc | Plugins | Macros | Record...}} This will return the value for every argument used in the search.
 
-==== Advanced Mode ====
+==== ''Advanced Mode'' ====
 This mode is intended for a more fine tuned search, such as to better adapt the search space to your data, and/or increase the speed of the Hough transform.  In this mode, all of the available search parameters are available, and the option to see the Raw Hough transform output also becomes available.
 
 === Search Parameters ===
