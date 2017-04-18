@@ -60,6 +60,8 @@ This mode uses the minimal number of user input values necessary to run the tran
 ==== ''Advanced Mode'' ====
 This mode is intended for a more fine tuned search, such as to better adapt the search space to your data, and/or increase the speed of the Hough transform.  In this mode, all of the available search parameters are available, and the option to see the Raw Hough transform output also becomes available.
 
+----
+
 === Search Parameters ===
 The Hough circle plugin is designed to be adaptable to a variety of segmentation tasks, and as such, there are seven search parameters that can be adjusted to tune the search space.
 
