@@ -51,17 +51,30 @@ This algorithm is designed for high-speed tracking of circles in a time-lapse se
 
 [[File:Hough GUI2.png|thumb|1000px|center|'''Hough Circle Transform GUI configurations''' ''Panel 1:'' Hough Circle transform - Easy Mode ''Panel 2:'' Hough Circle transform - Advanced Mode ''Panel 3:'' Local Hough Circle transform - Easy Mode ''Panel 4:'' Local Hough Circle transform - Advanced Mode ]]
 
+==GUI Mode==
+The GUI has two available modes, "Easy" and "Advanced." 
+
+=== Easy Mode ===
+This mode uses the minimal number of user input values necessary to run the transform.  The remaining parameters are all defaulted to the most conservative values, such that all circles matching the criteria are found.  To retrieve the default values, run the GUI in easy mode with the recorder turned on: {{bc | Plugins | Macros | Record...}} This will return the value for every argument used in the search.
+
+=== Advanced Mode ===
+This mode is intended for a more fine tuned search, such as to better adapt the search space to your data, and/or increase the speed of the Hough transform.  In this mode, all of the available search parameters are available, and the option to see the Raw Hough transform output also becomes available.
+
 === Search Parameters ===
 The Hough circle plugin is designed to be adaptable to a variety of segmentation tasks, and as such, there are seven search parameters that can be adjusted to tune the search space.
 
 ====''Minimum/maximum search radius''====
 The minimum and maximum search radii are the lower and upper cutoff for the radii you expect to find in the image.  Ideally, you want to make the Hough search space as specific as possible, so be sure to set these values to specifically the range of radii you expect to find in your data.
 
-====''Radius search increment''====
+====''Radius search increment (Advanced Mode Only)''====
 This determines the radius step size to use when creating the 3D Hough space from the minimum radius to the maximum radius.  This allows a trade-off between speed and resolution, where larger steps will give a linear increase in speed, but also decrease the precision of the measured radii.
 
-====''Maximum number of circles to be found''====
-This option sets the upper limit for the number of circles that can be found in the search.  If there are fewer than the specified number of circles in the image with a score above the threshold (see below), then the algorithm will only return the number of circles that were above the threshold.  
+In easy mode, this value defaults to 1.
+
+====''Maximum number of circles to be found (Advanced Mode Only)''====
+This option sets the upper limit for the number of circles that can be found in the search.  If there are fewer than the specified number of circles in the image with a score above the threshold (see below), then the algorithm will only return the number of circles that were above the threshold. This value is capped at 65535, since this is the largest number of circle IDs that can be generated at a 16-bit resolution.
+
+In easy mode, this value  defaults to 65535.
 
 ====''Hough score threshold''==== 
 This option sets the minimum cutoff for the Hough score (i.e. number of votes) that a circle can have to count as a valid object.  The search starts with the highest scoring circle, and then  the second highest, and so on, so if there are a greater number of circles with a score above the threshold than the limit set in "Maximum number of circles to be found", only the highest scoring circles will be returned. 
@@ -106,12 +119,14 @@ While speeding up the algorithm, the trade-off is that the transform steps are d
 ===Output Options:===
 The plugin contains several output options to both visualize the transform, as well as export the results of the analysis.
 
-====''Raw Hough transform series''====
+====''Raw Hough transform series (Advanced Mode Only)''====
 [[File:Raw Output.png|thumb|100px|right| ]]
 This option will output a stack where each slice is the transform for specified radius.  Each slice is also labelled with the radius (in pixels) and resolution in the header.  If the inputted data was a multi-frame stack,
 then the transform will return a hyperstack, where the Z-dimension is each radius tested, and the T-dimension is each frame in the movie.
 
 To save memory, the Hough scores are set to an 8-bit scale, with the highest score in the transform search space getting a value of 255 (i.e. no saturation).  If the inputted data was a movie, each frame will be rescaled independently.
+
+Warning: Even though the scores are down-sampled to an 8-bit scale, a Hough transform adds an extra dimension to your dataset, so be sure you will have sufficient RAM if your movie and search space are large.
 
 ====''Circle centroid(s) marked on the original image''====
 [[File:Mask Output.png|thumb|100px|right| ]]
@@ -146,7 +161,7 @@ The Hough Circle Transform plugin is part of the [[UCB Vision Sciences]] library
 
 4) Click ''Apply changes'' and restart Fiji.
 
-You should now find the plugin under the sub-menu {{bc | Plugins |UCB Vision Sciences | Hough Circle Transform}}.
+You should now find the plugin under the sub-menu {{bc | Plugins | UCB Vision Sciences | Hough Circle Transform}}.
 
 '''Note''': Hough Circle Transform is only one of the plugins included in the [[UCB Vision Sciences]] suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
