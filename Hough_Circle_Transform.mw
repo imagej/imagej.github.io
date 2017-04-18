@@ -39,9 +39,15 @@ Now you are ready to run the Hough transform (see below for detailed information
 If the circle found is correct, then gradually reduce the threshold until all the circles in the image are found.  This will give you the upper threshold bound.  Continue to decrease the threshold until an errant circle is detected, this will give you the lower threshold bound.  Set the threshold between the upper and lower bounds, and then run the transform on the full data set.
 
 == Running the Hough Circle Transform Plugin ==
-The plugin runs on the current active image, and can also process stacks, but it cannot handle hyperstacks.  The plugin is also recordable for macro implementation, and multi-threaded to fast searching on the 3D Hough space.
+The plugin runs on the current active image, and can also process stacks, but it cannot handle hyperstacks.  The plugin is also recordable for macro implementation, and multi-threaded to fast searching on the 3D Hough space.  The plugin can be cancelled at any time by either pressing the "Cancel" button in the GUI or pressing the "Escape" key.
 
-A key component to this plugin is that it always searches for the highest scoring circle first, then the second highest, and so on.  When a circle is found, all neighboring circles are removed to prevent the same circle from being found repeatedly.  This parameter can be adjusted to allow for increasing degrees of overlap between neighboring circles.
+The plugin has two separate algorithms available:
+
+'''Full Hough Transform'''
+This algorithm performs a full Hough circle transform on every frame.  The algorithm then searches for the highest scoring circle first, then the second highest, and so on.  When a circle is found, the Hough transform space is cleared out around the found circle to prevent the same circle from being found repeatedly.  This parameter can be adjusted to allow for increasing degrees of overlap between neighboring circles.
+
+'''Local Hough Transform'''
+This algorithm is designed for high-speed tracking of circles in a time-lapse series.  The algorithm performs the full Hough circle transform on the first frame to find the initial radius and position of each circle.  In subsequent frames, the algorithm then only performs a Hough transform near the centroid of each circle in subsequent frames.  If the number of found circles drops below the minimum number of specified circles, the algorithm performs a full Hough circle transform on the next frame to try and find any circles missed in the local search.
 
 [[File:Hough GUI2.png]]
 
