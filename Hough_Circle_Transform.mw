@@ -49,7 +49,7 @@ This algorithm performs a full Hough circle transform on every frame.  The algor
 '''Local Hough Transform'''
 This algorithm is designed for high-speed tracking of circles in a time-lapse series.  The algorithm performs the full Hough circle transform on the first frame to find the initial radius and position of each circle.  In subsequent frames, the algorithm then only performs a Hough transform near the centroid of each circle in subsequent frames.  If the number of found circles drops below the minimum number of specified circles, the algorithm performs a full Hough circle transform on the next frame to try and find any circles missed in the local search.
 
-[[File:Hough GUI2.png]]
+[[File:Hough GUI2.png|thumb|1000px|center|'''Hough Circle Transform GUI configurations''' ''Panel 1:'' Hough Circle transform - Easy Mode ''Panel 2:'' Hough Circle transform - Advanced Mode ''Panel 3:'' Local Hough Circle transform - Easy Mode ''Panel 4:'' Local Hough Circle transform - Advanced Mode ]]
 
 === Search Parameters ===
 The Hough circle plugin is designed to be adaptable to a variety of segmentation tasks, and as such, there are seven search parameters that can be adjusted to tune the search space.
