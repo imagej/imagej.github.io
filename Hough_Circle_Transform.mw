@@ -123,6 +123,8 @@ While speeding up the algorithm, the trade-off is that the transform steps are d
 
 NOTE: This option is only available in advanced mode.  In easy mode, this option is selected by default.
 
+----
+
 === Local Search Parameters ===
 When using a Hough Transform to track circular objects over time, such as with pupil dilation or eye tracking, it is highly inefficient to calculate the full Hough Space and then search the full Hough space, since you know the object in the current frame is going to be roughly in the same position and have roughly the same radius as the corresponding object in the previous frame.
 
