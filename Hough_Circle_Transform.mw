@@ -74,7 +74,8 @@ This determines the radius step size to use when creating the 3D Hough space fro
 NOTE: This option is only available in advanced mode.  In easy mode, this value defaults to 1.
 
 ====''Maximum number of circles to be found''====
-This option sets the upper limit for the number of circles that can be found in the search.  If there are fewer than the specified number of circles in the image with a score above the threshold (see below), then the algorithm will only return the number of circles that were above the threshold. This value is capped at 65535, since this is the largest number of circle IDs that can be generated at a 16-bit resolution.
+This option sets the upper limit for the number of circles that can be found in the search.  If there are fewer than the specified number of circles in the image with a score above the threshold (see below), then the algorithm will only return the number of circles that were above the threshold. Since the Hough space search starts with the highest scoring circle, and then the second highest, and so on, if there are a greater number of circles with
+a score above the threshold than the limit set in "Maximum number of circles to be found", only the highest scoring circles will be returned. This value is capped at 65535, since this is the largest number of circle IDs that can be generated at a 16-bit resolution.
 
 NOTE: This option is only available in advanced mode.  In easy mode, this value defaults to 65535.
 
@@ -98,7 +99,7 @@ NOTE: This option is only available in advanced mode.  In easy mode, this value 
 
 ''Panel 5'' shows a Hough circle transform with 400 steps. The centroid of the circle now has a higher score than all of the other shapes, allowing for the circle to be distinguished even from the 16-gon.]]
 
-====''Clear neighbors radius ratio (Advanced Mode only)''====
+====''Clear neighbors radius ratio''====
 The 3D Hough search space approaches a local maxima.  Therefore, when a circle is found, the space around the local maxima needs to be removed to prevent the circle from being found a second time.  The radius of the Hough search space that is cleared is defined as a ratio of the radius of the circle found, meaning that large circles clear out more Hough search space than small circles.  
 
 By default, this ratio is set to be one, meaning that a circle of the same size and location as the one found is cleared from the entire search space.  This has the effect of eliminating all potential centroids within one radius of the found centroid.  This effectively excludes overlapping circles of a similar radius from the search.  To allow overlapping circles, this ratio can be reduced.  A ratio of "0" will result in the same circle being found repeatedly.  This means that perfectly concentric circles cannot be found in one run of the plugin, and rather need to be found iteratively by removing the found circles from the image and re-running the plugin.
@@ -140,6 +141,20 @@ The local search algorithm is comprised of three sub-algorithms, depending on th
 
 The left panel shows the input data with a single circle in the center of the image with a radius of 50 pixels.  The center panel shows orthogonal projections of the full 3D Hough space.  The radius search range was 10-110 pixels. The left panel shows a local Hough transform of the same circle, with a search area of 20x20 pixels, and a radius search range of +/- 10 pixels of the original circle radius.  NOTE: In Hough space, the Z-dimension is the radius of the transform.]]
 
+====''Minimum number of circles to be found''====
+
+This value represents the minimum number of circles the Hough circle transform will search for before switching to using the partial or full search algorithms to find missing circles.  For example, if the transform found 20 circles in the first frame, and the minimum is set to 10, then the algorithm will tolerate loosing track of 10 of the original circles before searching the full Hough space for the missing circles.  
+
+====''Local radius search bandwidth (+/- previous radius)''==== 
+
+This value allows you to set the Z-axis of the local Hough search space. For example, if in your data you do not expect the radius of any circular object to change by more than 10 pixels in a single frame, then you would narrow the local search by entering 10.  The local search will then search for a circular object of the same radius as in the previous frame +/- 10 pixels.
+
+NOTE: This option is only available in advanced mode.  In easy mode, this value defaults to the total radius search range (maximum search radius - minimum search radius).
+
+====''Local search radius for position of next centroid:''====  
+
+This value allows you to set the x,y axis search radius.  For example, if in your data you do not expect the position of any circular object to change by more than 10 pixels in a single frame, then you would narrow the local search by entering 10.  The local search will then search for a circular object of the same position as in the previous frame +/- 10 pixels.
+
 ----
 
 ===Output Options:===
@@ -152,7 +167,7 @@ then the transform will return a hyperstack, where the Z-dimension is each radiu
 
 To save memory, the Hough scores are set to an 8-bit scale, with the highest score in the transform search space getting a value of 255 (i.e. no saturation).  If the inputted data was a movie, each frame will be rescaled independently.  However, while the scores are down-sampled to an 8-bit scale, a Hough transform adds an extra dimension to your dataset, so be sure you will have sufficient RAM if your movie and search space are large.
 
-NOTE: This option is only available in advanced mode.  
+NOTE: This option is only available in advanced mode.  this value defaults to 1.0. 
 
 ====''Circle centroid(s) marked on the original image''====
 [[File:Mask Output.png|thumb|100px|right| ]]
