@@ -68,12 +68,12 @@ The Hough circle plugin is designed to be adaptable to a variety of segmentation
 ====''Minimum/maximum search radius''====
 The minimum and maximum search radii are the lower and upper cutoff for the radii you expect to find in the image.  Ideally, you want to make the Hough search space as specific as possible, so be sure to set these values to specifically the range of radii you expect to find in your data.
 
-====''Radius search increment (Advanced Mode Only)''====
+====''Radius search increment (Advanced Mode only)''====
 This determines the radius step size to use when creating the 3D Hough space from the minimum radius to the maximum radius.  This allows a trade-off between speed and resolution, where larger steps will give a linear increase in speed, but also decrease the precision of the measured radii.
 
 In easy mode, this value defaults to 1.
 
-====''Maximum number of circles to be found (Advanced Mode Only)''====
+====''Maximum number of circles to be found (Advanced Mode only)''====
 This option sets the upper limit for the number of circles that can be found in the search.  If there are fewer than the specified number of circles in the image with a score above the threshold (see below), then the algorithm will only return the number of circles that were above the threshold. This value is capped at 65535, since this is the largest number of circle IDs that can be generated at a 16-bit resolution.
 
 In easy mode, this value  defaults to 65535.
@@ -83,8 +83,8 @@ This option sets the minimum cutoff for the Hough score (i.e. ratio of votes) th
 :<math>\text{Hough score}=\left ( \frac{\text{number of votes}}{\text{transform resolution}} \right )</math>
 Since the maximum number of votes a circle can receive is the transform resolution (i.e. every transform resulted in a vote), the highest score a circle can receive is 1.0.  Thus, the lower the score threshold, the more tolerant the search will be of incomplete and/or imperfect circles.
 
-====''Hough transform resolution''====
-This option sets the number of steps in each circle transform.  To reduce unnecessary computation, if the resolution is set arbitrarily high (such as the default value of 1000), the algorithm will automatically find the nearest number of unique transforms possible (i.e. unique integer x,y coordinates) for the maximum radius, and will use this value as the actual resolution in the transform series.  Reducing the resolution below the maximum value can greatly speed up the algorithm, but it will also decrease the transform's specificity and sensitivity.
+====''Hough transform resolution (Advanced Mode only)''====
+This option sets the number of steps in each circle transform.  To reduce unnecessary computation, if the resolution is set arbitrarily high (such as the default value of 1000), the algorithm will automatically find the nearest number of unique transforms possible (i.e. unique integer x,y coordinates) for the maximum radius, and will use this value as the actual resolution in the transform series (NOTE: This option can be turned off in Advanced Mode: see "Reduce transform resolution").  Reducing the resolution below the maximum value can greatly speed up the algorithm, but it will also decrease the transform's specificity and sensitivity.
 
 [[File:Resolution Figure.png|thumb|1000px|center|'''Effect of transform resolution on distinguishing various n-gons.''' 
 ''Panel 1'' shows a circle and three regular polygons: a 4-gon, 8-gon, and 16-gon.
@@ -96,7 +96,7 @@ This option sets the number of steps in each circle transform.  To reduce unnece
 
 ''Panel 5'' shows a Hough circle transform with 400 steps. The centroid of the circle now has a higher score than all of the other shapes, allowing for the circle to be distinguished even from the 16-gon.]]
 
-====''Clear neighbors radius ratio''====
+====''Clear neighbors radius ratio (Advanced Mode only)''====
 The 3D Hough search space approaches a local maxima.  Therefore, when a circle is found, the space around the local maxima needs to be removed to prevent the circle from being found a second time.  The radius of the Hough search space that is cleared is defined as a ratio of the radius of the circle found, meaning that large circles clear out more Hough search space than small circles.  
 
 By default, this ratio is set to be one, meaning that a circle of the same size and location as the one found is cleared from the entire search space.  This has the effect of eliminating all potential centroids within one radius of the found centroid.  This effectively excludes overlapping circles of a similar radius from the search.  To allow overlapping circles, this ratio can be reduced.  A ratio of "0" will result in the same circle being found repeatedly.  This means that perfectly concentric circles cannot be found in one run of the plugin, and rather need to be found iteratively by removing the found circles from the image and re-running the plugin.
@@ -109,7 +109,7 @@ The top right pair of panels show the effect of a clear ratio of 1.0, where when
 
 The bottom right pair of panels show the effect of a clear ratio of 0.2, where when the first overlapping circle is found, only its centroid is removed and the neighboring centroid is preserved for the neighboring circle to also be found, resulting in all three circles being found.]]
 
-====''Reduce transform resolution''====
+====''Reduce transform resolution (Advanced Mode only)''====
 Since all images will be pixels in a Cartesian coordinate system, transforms can only be to discrete integer coordinates (i.e. x=5,y=10).  Therefore, with an infinitely fine resolution, then when the next step of a transform is rounded to the nearest integer coordinate, it is possible that these are the same coordinates as the previous transform step.  This means that when the transform is performed, it will perform identical transformations for both these steps.  
 
 To speed up a Hough transform, you can find and remove all of the redundant transform steps before performing the transform, keeping only the set of unique transform steps.  The plugin performs this  check by removing all redundant transform steps for the maximum search radius, and then setting this as the new resolution for the subsequent radii.  This means the smaller radii will perform redundant transforms, but this is essential to ensure that each radius gets and equal number of voting rounds (or else large circles will always score higher than small circles).
