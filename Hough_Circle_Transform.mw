@@ -122,6 +122,28 @@ While speeding up the algorithm, the trade-off is that the transform steps are d
 
 NOTE: This option is only available in advanced mode.  In easy mode, this option is selected by default.
 
+=== Local Search Parameters ===
+When using a Hough Transform to track circular objects over time, such as with pupil dilation or eye tracking, it is highly inefficient to calculate the full Hough Space and then search the full Hough space, since you know the object in the current frame is going to be roughly in the same position and have roughly the same radius as the corresponding object in the previous frame.
+
+The local search algorithm takes advantage of this ''a priori'' information to greatly reduce the volume of the transform and search space in subsequent frames, allowing for many orders of magnitude increase in processing speed.
+
+The local search algorithm is comprised of three sub-algorithms, depending on the state of the prior frame:
+
+'''Full - '''For the first frame, a "full" Hough circle transform (the standard algorithm) is performed to find the initial radius and position of each circular object in the frame (up to the maximum number of circles set). The full Hough transform will also be used if the number of circular objects found in a given frame is 0.
+
+'''Local - '''If the number of circular objects in the previous frame is greater than or equal to the minimum number of objects set, then the algorithm will use an exclusively local search to find the same circular objects in the next frame.  The local algorithm performs a transform of only the nearby Hough space of the object found in the last frame, and then searches only this local space for the same object in the current frame.
+
+'''Partial Local - ''' If the number of circular objects in the previous frame is less than the minimum number of objects set but greater than 0, then the algorithm will use a a hybrid search.  A full Hough transform will be performed such that any missing circles will now be found.  However, so speed up the search, the algorithm will first search locally within the Hough space for the same circular objects found in the previous frame, and then will search the entire Hough space for any remaining circular objects.
+
+
+[[File:Local Search.png|thumb|1000px|center|'''Local versus full Hough transform.''' 
+
+The left panel shows the input data with a single circle on top and a pair of overlapping circles below. The next panel shows the resulting Hough circle transform (24 steps).
+
+The top right pair of panels show the effect of a clear ratio of 1.0, where when the first overlapping circle is found, the centroid of the neighboring circle is removed, resulting in only two high scoring circles being found.
+
+The bottom right pair of panels show the effect of a clear ratio of 0.2, where when the first overlapping circle is found, only its centroid is removed and the neighboring centroid is preserved for the neighboring circle to also be found, resulting in all three circles being found.]]
+
 ----
 
 ===Output Options:===
