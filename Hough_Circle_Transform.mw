@@ -155,6 +155,8 @@ NOTE: This option is only available in advanced mode.  In easy mode, this value 
 
 This value allows you to set the x,y axis search radius.  For example, if in your data you do not expect the position of any circular object to change by more than 10 pixels in a single frame, then you would narrow the local search by entering 10.  The local search will then search for a circular object of the same position as in the previous frame +/- 10 pixels.
 
+NOTE: This option is only available in advanced mode.  In easy mode, this value defaults to the minimum search radius.
+
 ----
 
 ===Output Options:===
