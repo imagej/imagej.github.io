@@ -138,7 +138,7 @@ The local search algorithm is comprised of three sub-algorithms, depending on th
 
 [[File:Local Search.png|thumb|1000px|center|'''Local versus full Hough transform.''' 
 
-The left panel shows the input data with a single circle in the center of the image with a radius of 50 pixels.  The center panel shows orthogonal projections of the full 3D Hough space.  The radius search range was 10-110 pixels. The left panel shows a local Hough transform of the same circle, with a search area of 20x20 pixels, and a radius search range of +/- 10 pixels of the original circle radius.]]
+The left panel shows the input data with a single circle in the center of the image with a radius of 50 pixels.  The center panel shows orthogonal projections of the full 3D Hough space.  The radius search range was 10-110 pixels. The left panel shows a local Hough transform of the same circle, with a search area of 20x20 pixels, and a radius search range of +/- 10 pixels of the original circle radius.  NOTE: In Hough space, the Z-dimension is the radius of the transform.]]
 
 ----
 
@@ -189,7 +189,7 @@ The Hough Circle Transform plugin is part of the [[UCB Vision Sciences]] library
 
 You should now find the plugin under the sub-menu {{bc | Plugins | UCB Vision Sciences | Hough Circle Transform}}.
 
-'''Note''': Hough Circle Transform is only one of the plugins included in the [[UCB Vision Sciences]] suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
+NOTE: Hough Circle Transform is only one of the plugins included in the [[UCB Vision Sciences]] suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
 == Acknowledgements ==
 
