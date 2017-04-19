@@ -138,11 +138,7 @@ The local search algorithm is comprised of three sub-algorithms, depending on th
 
 [[File:Local Search.png|thumb|1000px|center|'''Local versus full Hough transform.''' 
 
-The left panel shows the input data with a single circle on top and a pair of overlapping circles below. The next panel shows the resulting Hough circle transform (24 steps).
-
-The top right pair of panels show the effect of a clear ratio of 1.0, where when the first overlapping circle is found, the centroid of the neighboring circle is removed, resulting in only two high scoring circles being found.
-
-The bottom right pair of panels show the effect of a clear ratio of 0.2, where when the first overlapping circle is found, only its centroid is removed and the neighboring centroid is preserved for the neighboring circle to also be found, resulting in all three circles being found.]]
+The left panel shows the input data with a single circle in the center of the image with a radius of 50 pixels.  The center panel shows orthogonal projections of the full 3D Hough space.  The radius search range was 10-110 pixels. The left panel shows a local Hough transform of the same circle, with a search area of 20x20 pixels, and a radius search range of +/- 10 pixels of the original circle radius.]]
 
 ----
 
