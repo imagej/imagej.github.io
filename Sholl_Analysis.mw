@@ -421,61 +421,7 @@ for (i=0; i<list.length; i++) {
 == Advanced Usage ==
 Advanced options can be set through [http://tferr.github.io/ASA/apidocs/ API calls]. Here are some examples:
 
-3D analysis of an image stack (Python):
-<source lang="python">
-#@ImagePlus imp
-#@LogService log
- 
-from sholl import Sholl_Analysis, Options as so
-from os.path import expanduser
-
-xc, yc, zc = 100, 100, 10  # x,y,z coordinates of center
-lowerT, upperT = 88, 255   # threshold values for segmentation
-distances = [10, 20, 30, 40, 50] # sampling radii
-exportPath = expanduser("~") # home directory
-
-sa = Sholl_Analysis()
-
-if sa.validateImage(imp):
-
-    # Specify some output options
-    so.setNoTable(False)
-    so.setNoPlots(False)
-    sa.setDescription(imp.getTitle(), True)
-    sa.setExportPath(exportPath, True)
-    sa.setInteractiveMode(False)
-
-    # Specify analysis settings
-    sa.setCenter(xc, yc, zc)
-    sa.setThreshold(lowerT, upperT)
-
-    # Retrieve intersection counts
-    counts = sa.analyze3D(xc, yc, zc, distances, imp)
-
-    # Check that analysis was successfull
-    if all(c == 0 for c in counts):
-        log.error("All intersection counts were zero")
-
-    # Do something with sampled data
-    for idx, inters in enumerate(counts):
-        log.info("r="+ str(distances[idx]) +": "+ str(inters) +" intersections")
-
-    # Retrieve metrics
-    sa.analyzeProfile(distances, counts, True)
-
-    log.info("Analysis finished. Files saved to " + exportPath)
-    log.warn("Sholl Results Table has not been saved")
-
-else:
-
-    log.error(imp.getTitle() + " is not a valid image")
-
-</source>
-Display plots without annotations (BeanShell/Groovy):
-<source lang="java">
-import sholl.Sholl_Analysis;
-Sholl_Analysis.setPlotLabels(true); // Exclude plot labels
-</source>
+{{GitHubEmbed|org=tferr|repo=ASA|path=scripting-examples/3D_Analysis_ImageStack.py|label=3D analysis of an ImageStack (Python)}}
 
 Reduce the number of discretization steps involved in the calculation of [[#MeanValueOfFunction|Nav]], and [[#CriticalValue|Cv]], [[#CriticalRadius|Cr]] (IJ macro (IJM) language):
 <source lang="java">
