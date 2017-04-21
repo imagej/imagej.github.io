@@ -27,10 +27,10 @@ Download the installation package specific for your Operating System in the next
 
 == Download - Adiposoft versions  == 
 The latest version of Adiposoft is 1.13. (Updated November 10th, 2014)
-* '''Windows'''. Adiposoft+Fiji full version installer ([https://dl.dropboxusercontent.com/u/4235078/SW/1.13/Setup.exe Download])
-* '''Linux'''. Adiposoft+Fiji full version installer ([https://dl.dropboxusercontent.com/u/4235078/SW/1.13/Adiposoft.zip Download])
-* '''MacOS''' X. Adiposoft+Fiji full version installer ([https://dl.dropboxusercontent.com/u/4235078/SW/1.13/Adiposoft.pkg.zip Download])
-* Adiposoft '''Plugin''' ([https://dl.dropboxusercontent.com/u/4235078/SW/1.13/Adiposoft_.jar Download]). To install the Plugin only if you already have Fiji installed in your computer, download and copy the jar file into the Plugins folder inside Fiji
+* '''Windows'''. Adiposoft+Fiji full version installer ([https://www.dropbox.com/s/pvnv2kbf9gqpuu8/Setup.exe?dl=0])
+* '''Linux'''. Adiposoft+Fiji full version installer ([https://www.dropbox.com/s/6jwefqxbwyoieas/Adiposoft.zip?dl=0])
+* '''MacOS''' X. Adiposoft+Fiji full version installer ([https://www.dropbox.com/s/m9mzvm4xx3ut2ln/Adiposoft.pkg.zip?dl=0])
+* Adiposoft '''Plugin''' ([https://www.dropbox.com/s/gxgpfzeqviwuyfw/Adiposoft_.jar?dl=0]). To install the Plugin only if you already have Fiji installed in your computer, download and copy the jar file into the Plugins folder inside Fiji
 
 == Running Adiposoft == 
 If you installed Adiposoft from one of the full version installers, you will find Adiposoft’s icon in the Applications folder (Windows, MacOS X) or in the folder selected during the installation (Linux). Depending on your operating System, you may also have a link to Adiposoft on your computer desktop.
