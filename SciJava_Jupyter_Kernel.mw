@@ -1,3 +1,18 @@
+{{Infobox
+| name                  = scijava-jupyter-kernel
+| logo                    = 
+| software              = Fiji
+| author                = {{Person|Hadim}}
+| maintainer            = {{Person|Hadim}}
+| source                = {{GitHub|org=hadim|repo=scijava-jupyter-kernel}}
+| released              = 23/04/2016
+| status                = 0.2.5, beta
+| category              = 
+}}
+__TOC__
+
+== Presentation ==
+
 Scijava Jupyter Kernel aims to provide a first class citizen Jupyter kernel that integrates out-of-the-box with ImageJ.
 
 This project is in very early stage.
