@@ -1,7 +1,7 @@
 {{Infobox
 | name                  = scijava-jupyter-kernel
 | logo                    = 
-| software              = Fiji
+| software              = SciJava
 | author                = {{Person|Hadim}}
 | maintainer            = {{Person|Hadim}}
 | source                = {{GitHub|org=hadim|repo=scijava-jupyter-kernel}}
