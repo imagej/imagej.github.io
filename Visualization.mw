@@ -47,7 +47,7 @@ Here's a list of recommended options to choose a LUT:
 * ''Diverging'' color map
 * Bright center, dark min and max
 | 
-|[[Image:Randomized-Image-Histogram-phase.png|300px|Histogram of the Dot Blot sample image with the ''phase'' LUT applied]]
+|[[Image:Randomized-Image-Histogram-phase.png|300px|Histogram of a randomized calibrated 8-bit image with the ''phase'' LUT applied]]
 |}
 
 For further reading about color maps, see <ref>http://peterkovesi.com/projects/colourmaps/</ref> and <ref>http://www.kennethmoreland.com/color-maps/</ref>
