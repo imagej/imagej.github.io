@@ -32,7 +32,7 @@ Here's a list of recommended options to choose a LUT:
 * ''Perceptually uniform''<ref>https://bids.github.io/colormap/</ref>
 * Dark-to-Bright mapping
 | Quantitative display of positive values on a continuous scale
-|[[Image:M51-Histogram-mplViridis.png|300px|Histogram of the M51 Galaxy sample image with the mpl-viridis LUT applied]]
+|[[Image:M51-Histogram-mplViridis.png|300px|Histogram of the M51 Galaxy sample image with the ''mpl-viridis'' LUT applied]]
 |-
 |'''HiLo'''
 |
@@ -40,7 +40,14 @@ Here's a list of recommended options to choose a LUT:
 * Maximum of display range is red
 * Normal gray-scale LUT for all other values
 | Assessment of over-/under-exposure in an image
-|[[Image:M51-Histogram-HiLo.png|300px|Histogram of the M51 Galaxy sample image with the displayed range adjusted and the HiLo LUT applied]]
+|[[Image:M51-Histogram-HiLo.png|300px|Histogram of the M51 Galaxy sample image with the displayed range adjusted and the ''HiLo'' LUT applied]]
+|-
+|'''phase'''
+|
+* ''Diverging'' color map
+* Bright center, dark min and max
+| 
+|[[Image:DotBlot-Histogram-phase.png|300px|Histogram of the Dot Blot sample image with the ''phase'' LUT applied]]
 |}
 
 For further reading about color maps, see <ref>http://peterkovesi.com/projects/colourmaps/</ref> and <ref>http://www.kennethmoreland.com/color-maps/</ref>
