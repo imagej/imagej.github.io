@@ -43,6 +43,8 @@ Here's a list of recommended options to choose a LUT:
 |[[Image:M51-Histogram-HiLo.png|300px|Histogram of the M51 Galaxy sample image with the displayed range adjusted and the HiLo LUT applied]]
 |}
 
+For further reading about color maps, see <ref>http://peterkovesi.com/projects/colourmaps/</ref> and <ref>http://www.kennethmoreland.com/color-maps/</ref>
+
 === Adjusting your Image in ImageJ ===
 
 The [http://imagej.net/docs/guide/146-28.html#toc-Subsection-28.2 Adjust submenu] contains commands that adjust [http://imagej.net/docs/guide/146-28.html#sub:Brightness/Contrast...%5BC%5D Brightness/Contrast], [http://imagej.net/docs/guide/146-28.html#sub:Threshold...%5BT%5D Threshold] levels, and image [http://imagej.net/docs/guide/146-28.html#sub:Size... Size].
