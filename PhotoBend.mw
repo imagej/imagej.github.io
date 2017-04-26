@@ -18,7 +18,9 @@ A collection of specialized plugins for ImageJ providing tracking of a needle-li
 
 [[Image:photobend_demo.gif|thumb]]
 
-There are two plugins in the collection providing two methods of crystal bending detection: Bending_Crystal_Track and Laser_Spot_Track4.
+There are two plugins in the collection providing two methods of crystal bending detection: Bending_Crystal_Track and Laser_Spot_Track4. Both use the template matching technique based on OpenCV library to track the movement of specific targets in the series of time lapse images organized in the virtual stack. Direct usage of movies opened as image stacks is not supported currently (movies can be transformed in the image sequences with tools like ffmpeg). Timeline of the registered process is based on exif timestamps in the images or on the constant time step if the metadata are not available. 
+
+There is an ability to monitor a folder for additional images appearing in the time lapse series thus allowing live process registration. The plugins work with 8/16/32-bit greyscale or 24-bit RGB images. The matching mode can be chosen from the intensity-based or color-based for the RGB format. Subpixel registration is available using local quadratic approximation of the matching measure. 
 
 The plugins use ideas and code of 
 
@@ -33,7 +35,7 @@ The page is still under construction. Usage instructions will be added.
 
 The plugin is for the analysis of a stack of time lapse microscopic images of a bending crystal. The plugin requires a virtual stack. User is instructed to select specific parts on the reference crystal image which includes: the point on the tip of free crystal's end, the point on the attached end of the crystal, the point in the middle of the crystal and a rectangle around a stable part of the image (a part supposed to be immobile during the whole process, a tip of holder or capillary to which the crystal is attached, for one).
 
-The plugin code use the selected regions of the image as reference templates to find them in the series of the time lapse images. Automatic picture stabilization is provided by the search of the stable part. Then the free crystal's end and its middle part are detected in new positions of the image (accounting for the displacement and rotation) with the template matching technique. The coordinates determined from the matching are used to calculate the curvature and deformation (elongation or shortening) of the crystal. 
+The plugin code use the selected regions of the image as reference templates to find them in the series of the time lapse images. Automatic picture stabilization is provided by the search of the stable part. Then the free crystal's end and its middle part are detected in new positions of the image (accounting for the displacement and rotation) with the template matching technique. The coordinates of three points (two ends and the middle part) are used to calculate the curvature and deformation (elongation or shortening) of the crystal. 
 
 
 
