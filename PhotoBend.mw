@@ -11,10 +11,44 @@
 | website                = 
 }}
 
-Plugin for ImageJ providing tracking of a needle-like crystal shape changing during photobending process. Photobending is a phenomenon of crystal deformation caused by non-uniform crystal structure transformation due to photochemical reaction.
+
+== PhotoBend plugins collection ==
+
+A collection of specialized plugins for ImageJ providing tracking of a needle-like crystal shape changing during photobending process. Photobending is a phenomenon of crystal deformation caused by non-uniform crystal structure transformation due to photochemical reaction.
+
+There are two plugins in the collection providing two methods of crystal bending detection: Bending_Crystal_Track and Laser_Spot_Track4.
+
+The plugins use ideas and code of 
+
+    1. Template Matching by Qingzong Tseng (based on opencv)
+    2. javacv (java interface to OpenCV) by Samuel Audet 
+    3. Exif Metadata Library by Drew Noakes
 
 
-Installation in Fiji: add update site PhotoBend.
+The page is still under construction. Usage instructions will be added.
+
+== Bending_Crystal_Track plugin ==
+
+The plugin is for the analysis of a stack of time lapse microscopic images of a bending crystal. The plugin requires a virtual stack. User is instructed to select specific parts on the reference crystal image which includes: the point on the tip of free crystal's end, the point on the attached end of the crystal, the point in the middle of the crystal and a rectangle around a stable part of the image (a part supposed to be immobile during the whole process, a tip of holder or capillary to which the crystal is attached, for one).
+
+The plugin code use the selected regions of the image as reference templates to find them in the series of the time lapse images. Automatic picture stabilization is provided by the search of the stable part. Then the free crystal's end and its middle part are detected in new positions of the image (accounting for the displacement and rotation) with the template matching technique. The coordinates determined from the matching are used to calculate the curvature and deformation (elongation or shortening) of the crystal. 
+
+
+
+== Laser_Spot_Track4 ==
+
+To be continued...
+
+
+== Installation in Fiji ==
+
+Add update site PhotoBend to install the plugins automatically.
+ 
+Warning: the plugins depend on several libraries which will be installed in local Fiji jars folder. Check for versions inconstancies if you use these libraries with other plugins.
+The dependencies are:
+    1. javacv. Version 1.3.2 (opencv-version.jar file is copied into plugins folder to prevent automatic overwriting by Fiji updater)
+    2. joda-time. Version 2.9.4
+    3. metadata-extractor. Version 2.9.1
 
 [[Category:Tutorials]]
 [[Category:Plugins]]
