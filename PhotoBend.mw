@@ -16,6 +16,7 @@
 
 A collection of specialized plugins for ImageJ providing tracking of a needle-like crystal shape changing during photobending process. Photobending is a phenomenon of crystal deformation caused by non-uniform crystal structure transformation due to photochemical reaction.
 
+[[Image:photobend_demo.gif|thumb]]
 
 There are two plugins in the collection providing two methods of crystal bending detection: Bending_Crystal_Track and Laser_Spot_Track4.
 
