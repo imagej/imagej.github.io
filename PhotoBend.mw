@@ -7,7 +7,7 @@
 | released               = 10/04/2017
 | latest version         = 26/04/2017
 | status                 = Alpha
-| category               = [[:Category:Plugins]]
+| category               = [[:Category:Plugins]],[[:Category:Tracking|Tracking]]
 | website                = 
 }}
 
@@ -15,6 +15,7 @@
 == PhotoBend plugins collection ==
 
 A collection of specialized plugins for ImageJ providing tracking of a needle-like crystal shape changing during photobending process. Photobending is a phenomenon of crystal deformation caused by non-uniform crystal structure transformation due to photochemical reaction.
+
 
 There are two plugins in the collection providing two methods of crystal bending detection: Bending_Crystal_Track and Laser_Spot_Track4.
 
@@ -50,5 +51,6 @@ The dependencies are:
     2. joda-time. Version 2.9.4
     3. metadata-extractor. Version 2.9.1
 
+[[Category:Tracking]]
 [[Category:Tutorials]]
 [[Category:Plugins]]
