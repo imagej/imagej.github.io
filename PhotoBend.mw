@@ -1,8 +1,8 @@
 {{Infobox
 | software               = ImageJ
 | name                   = PhotoBend
-| maintainer             = {{Person|anotherche}}
-| author                 = {{Person|anotherche}}
+| maintainer             = {{Person|Anotherche}}
+| author                 = {{Person|Anotherche}}
 | source                 = {{GitHub|org=anotherche|repo=photobend}}
 | released               = 10/11/2016
 | latest version         = 26/04/2017
