@@ -53,7 +53,14 @@ To be continued...
 
 == Installation in Fiji ==
 
-Add update site [[PhotoBend]] to install the plugins automatically.
+Add update site PhotoBend to install the plugins automatically.
+
+* [[Update_Sites|{{bc|Help|Update...}}]]
+* Click ''Manage update sites''
+* Add and check new update site  ''PhotoBend''
+* Click ''Close''
+* Click ''Apply changes''
+* Restart ImageJ
  
 Warning: the plugins depend on several libraries which will be installed in local Fiji jars folder. Check for versions inconstancies if you use these libraries with other plugins.
 The dependencies are:
