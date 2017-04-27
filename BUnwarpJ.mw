@@ -197,7 +197,7 @@ call( "bunwarpj.bUnwarpJ_.elasticTransformImageMacro", "My_path/A.jpg",
 
 For instance, to see the program help we can call the program from the command line (where $IJDIR is the directory where ImageJ is installed) like this:
 
-<code>java -Xmx512m -cp $IJDIR/ij.jar:$IJDIR/plugins/bUnwarpJ_.jar bUnwarpJ_ -help</code>
+<code>java -Xmx512m -cp $IJDIR/ij.jar:$IJDIR/plugins/bUnwarpJ_.jar bunwarpj.bUnwarpJ_ -help</code>
 
 
 For the rest of the options, follow the help instructions.
