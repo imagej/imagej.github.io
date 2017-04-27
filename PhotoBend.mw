@@ -14,17 +14,26 @@
 
 == PhotoBend plugins collection ==
 
-A collection of specialized plugins for ImageJ providing tracking of a needle-like crystal shape changing during photobending process. Photobending is a phenomenon of crystal deformation caused by non-uniform crystal structure transformation due to photochemical reaction.
+A collection of specialized plugins for ImageJ providing tracking of a needle-like crystal shape changing during photobending process. Photobending is a phenomenon of crystal deformation caused by non-uniform crystal structure transformation due to photochemical reaction (see the review by Naumov ''et al.'', 2015<ref name="Naumov2015>{{ cite journal
+| title =  Mechanically Responsive Molecular Crystals
+| author = Panče Naumov, Stanislav Chizhik, Manas K. Panda, Naba K. Nath, and Elena Boldyreva
+| journal = Chemical Reviews
+| volume = 112
+| number = 22
+| pages= 12440–12490
+| year = 2015
+| publisher = American Chemical Society
+| doi = 10.1021/acs.chemrev.5b00398
+}}</ref>).
 
-[[Image:photobend_demo.gif|thumb]]
+[[Image:photobend_demo.gif|thumb|Animation of the photobend time lapse]]
 
 There are two plugins in the collection providing two methods of crystal bending detection: Bending_Crystal_Track and Laser_Spot_Track4. Both use the template matching technique based on OpenCV library to track the movement of specific targets in the series of time lapse images organized in the virtual stack. Direct usage of movies opened as image stacks is not supported currently (movies can be transformed in the image sequences with tools like ffmpeg). Timeline of the registered process is based on exif timestamps in the images or on the constant time step if the metadata are not available. 
 
 There is an ability to monitor a folder for additional images appearing in the time lapse series thus allowing live process registration. The plugins work with 8/16/32-bit greyscale or 24-bit RGB images. The matching mode can be chosen from the intensity-based or color-based for the RGB format. Subpixel registration is available using local quadratic approximation of the matching measure. 
 
 
-[[Image:photobend_processing.jpg|600pix|left|Crystal shape tracking in process]]
-
+[[Image:photobend_processing.jpg|frame|400pix|left|Crystal shape tracking in process]]
 [[Image:photobend_deformation_plot.jpg]]
 [[Image:photobend_curvature_plot.jpg]]
 
