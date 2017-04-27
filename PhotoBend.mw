@@ -35,10 +35,9 @@ There is an ability to monitor a folder for additional images appearing in the t
 Although Bending_Crystal_Track and Laser_Spot_Track4 are specialized plugins they can be used in more general cases. Bending_Crystal_Track can be used with  any images of attached bending rod-like objects, while Laser_Spot_Track4 is suitable for tracking of a spot-like object moving relative to the pre-made template of immobile marks to analyse the object movement in the pre-defined 2D coordinate system. 
 
 The plugins use ideas and code of 
-
-    1. Template Matching by Qingzong Tseng (based on opencv)
-    2. javacv (java interface to OpenCV) by Samuel Audet 
-    3. Exif Metadata Library by Drew Noakes
+* Template Matching by Qingzong Tseng (based on opencv)
+* javacv (java interface to OpenCV) by Samuel Audet 
+* Exif Metadata Library by Drew Noakes
 
 
 The page is still under construction. Usage instructions will be added.
@@ -71,11 +70,12 @@ Add update site PhotoBend to install the plugins automatically.
 * Click ''Apply changes''
 * Restart ImageJ
  
-Warning: the plugins depend on several libraries which will be installed in local Fiji jars folder. Check for versions inconstancies if you use these libraries with other plugins.
+Warning: the plugins depend on several libraries which will be installed in local Fiji jars folder. Check for versions inconsistencies if you use these libraries with other plugins.
 The dependencies are:
-    1. javacv. Version 1.3.2 (opencv-version.jar file is copied into plugins folder to prevent automatic overwriting by Fiji updater)
-    2. joda-time. Version 2.9.4
-    3. metadata-extractor. Version 2.9.1
+
+* javacv. Version 1.3.2 (opencv-version.jar file is copied into plugins folder to prevent automatic overwriting by Fiji updater)
+* joda-time. Version 2.9.4
+* metadata-extractor. Version 2.9.1
 
 == References ==
 <references />
