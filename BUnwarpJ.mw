@@ -195,9 +195,9 @@ call( "bunwarpj.bUnwarpJ_.elasticTransformImageMacro", "My_path/A.jpg",
 *<code>-compose_raw_elastic</code>: composes a raw deformation and an elastic one. Result in raw format
 *<code>-adapt_transform</code>: adapts an specific elastic transformation given a resolution image factor
 
-For instance, to see the program help we can call the program from the command line (where $IJDIR is the directory where ImageJ is installed) like this:
+For instance, to see the program help we can call the program from the command line (where $IJDIR is the directory where ImageJ is installed) like this in Linux:
 
-<code>java -Xmx512m -cp $IJDIR/ij.jar:$IJDIR/plugins/bUnwarpJ_.jar bunwarpj.bUnwarpJ_ -help</code> (in Linux)
+<code>java -Xmx512m -cp $IJDIR/ij.jar:$IJDIR/plugins/bUnwarpJ_.jar bunwarpj.bUnwarpJ_ -help</code>
 
 
 For the rest of the options, follow the help instructions.
