@@ -32,7 +32,7 @@ There are two plugins in the collection providing two methods of crystal bending
 
 There is an ability to monitor a folder for additional images appearing in the time lapse series thus allowing live process registration. The plugins work with 8/16/32-bit greyscale or 24-bit RGB images. The matching mode can be chosen from the intensity-based or color-based for the RGB format (the later is useful for images having weak intensity contrast but possessing sufficient color gradients). Subpixel registration is available using local quadratic approximation of the matching measure. 
 
-Although Bending_Crystal_Track and Laser_Spot_Track4 are specialized plugins they can be used in more general cases. Bending_Crystal_Track can be used with  any images of attached bending rod-like objects, while Laser_Spot_Track4 is suitable for tracking of a spot-like objects moving relative to the pre-made template of immobile marks to analyse the object movement in the pre-defined 2D coordinate system. 
+Although Bending_Crystal_Track and Laser_Spot_Track4 are specialized plugins they can be used in more general cases. Bending_Crystal_Track can be used with  any images of attached bending rod-like objects, while Laser_Spot_Track4 is suitable for tracking of a spot-like object moving relative to the pre-made template of immobile marks to analyse the object movement in the pre-defined 2D coordinate system. 
 
 The plugins use ideas and code of 
 
