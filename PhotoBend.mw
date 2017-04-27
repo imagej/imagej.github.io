@@ -23,7 +23,7 @@ There are two plugins in the collection providing two methods of crystal bending
 There is an ability to monitor a folder for additional images appearing in the time lapse series thus allowing live process registration. The plugins work with 8/16/32-bit greyscale or 24-bit RGB images. The matching mode can be chosen from the intensity-based or color-based for the RGB format. Subpixel registration is available using local quadratic approximation of the matching measure. 
 
 
-[[Image:photobend_processing.jpg]]
+[[Image:photobend_processing.jpg|600pix|left|Crystal shape tracking in process]]
 
 [[Image:photobend_deformation_plot.jpg]]
 [[Image:photobend_curvature_plot.jpg]]
