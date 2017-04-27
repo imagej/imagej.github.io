@@ -26,7 +26,7 @@ A collection of specialized plugins for ImageJ providing tracking of a needle-li
 | doi = 10.1021/acs.chemrev.5b00398
 }}</ref>).
 
-[[Image:photobend_demo.gif|thumb|right|Animation of the photobend time lapse]]
+[[Image:photobend_demo.gif|thumb|right|Animation of the photobend time lapse (~1500x playback speed)]]
 
 There are two plugins in the collection providing two methods of crystal bending  measurement: Bending_Crystal_Track and Laser_Spot_Track4. Both use the template matching technique based on OpenCV library to track the movement of specific targets in the series of time lapse images organized in the virtual stack. Direct usage of movies opened as image stacks is not supported currently (movies can be transformed in the image sequences with tools like ffmpeg). Timeline of the registered process is based on exif timestamps in the images or on the constant time step if the metadata are not available. 
 
