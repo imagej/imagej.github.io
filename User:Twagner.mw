@@ -1,9 +1,9 @@
 {{Userbox
 | name = Thorsten Wagner
-| affiliation = [http://www.biomedical-imaging.de/front_content.php BIG] at [http://www.fh-dortmund.de/de/index.php University of Applied Sciences and Arts Dortmund]
+| affiliation = [http://www.mpi-dortmund.de Max Planck Institute for Molecular Physiology]
 | forum = twagner
 | github = thorstenwagner
-}}Thorsten Wagner is a member of biomedical imaging group at the university of applied sciences dortmund and has contributed and is maintaining serveral plugins:
+}}Thorsten Wagner is a postdoc at the max planck institute of molecular physiology and has contributed and is maintaining serveral plugins:
 * [[Ridge Detection]]
 * [[Shape Filter]]
 * [[Non Local Means Denoise]]
@@ -15,4 +15,4 @@
 * [[ParticleSizer]]
 * [[TraJClassifier]]
 
-You could contact me by wagner at biomedical dash imaging dot de
+You could contact me by thorsten dot wagner at mpi dash dortmund dot mpg dot de
