@@ -3,7 +3,7 @@
 | name                   = OME Bio-Formats plugins
 | logo                     = [[File:Bio-formats-icon.png|96px]]
 | author                 = [http://openmicroscopy.org/ Open Microscopy Environment]:<br/>- [[LOCI|UW-Madison LOCI]]<br/>- [http://www.glencoesoftware.com/ Glencoe Software]<br/>- [http://www.dundee.ac.uk/ University of Dundee]
-| maintainer             = {{Person|Linkert}}<br>{{Person|Rueden}}
+| maintainer             = OME development team
 | filename               = [http://downloads.openmicroscopy.org/bio-formats/ See Bio-Formats Downloads page]
 | source                 = {{GitHub|org=openmicroscopy|repo=bioformats}}
 | latest version         = [http://downloads.openmicroscopy.org/bio-formats/ See Bio-Formats Downloads page]
