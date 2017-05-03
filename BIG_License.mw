@@ -1,9 +1,9 @@
 __NOTOC__{{Notice | For a summary of [[SciJava]] licensing, see the [[Licensing]] page.}}
-{{LicensesMenu}}Some components distributed with [[Fiji]] were developed by the [http://bigwww.epfl.ch/ Biomedical Imaging Group] (BIG) at the [http://epfl.ch/ École Polytechnique Fédérale de Lausanne] (EPFL). 
+{{LicensesMenu}}Components distributed via the BIG-EPFL [[update site]] were developed by the [http://bigwww.epfl.ch/ Biomedical Imaging Group] (BIG) at the [http://epfl.ch/ École Polytechnique Fédérale de Lausanne] (EPFL). 
 
 These components are licensed under proprietary terms, incompatible with the [[GPL]] and similar licenses.
 
-However, the [[Fiji]] project has obtained permission to distribute them as part of its distribution:
+However, the [[Fiji]] project has obtained permission to redistribute them:
 <blockquote style="font-size: small"><pre>
 Date: Mon, 26 Jul 2010 10:58:20 +0200
 From: Michael Unser <michael.unser@epfl.ch>
@@ -16,8 +16,6 @@ that from now on, you are authorized to distribute any ImageJ pluging
 listed at http://bigwww.epfl.ch/algorithms.html since you have our
 consent.
 </pre></blockquote>
-
-See the {{GitHub | repo = fiji | path = LICENSES | label = Fiji LICENSES file}} for details.
 
 == List of BIG components ==
 
