@@ -54,7 +54,7 @@ Instead of making ImageJ [[#Attaching to ImageJ instances|the debugging server]]
 In this case you start the debugging session first, e.g. in Eclipse debug configurations you specify "Standard (Socket Listen)" as the connection type. Then, simply start ImageJ without the "server=y" flag to connect and debug:
 
 <source lang="bash">
-ImageJ.app/ImageJ-linux64 -agentlib:jdwp=server=y,suspend=y,transport=dt_socket,address=localhost:8000 --
+ImageJ.app/ImageJ-linux64 -agentlib:jdwp=suspend=y,transport=dt_socket,address=localhost:8000 --
 </source>
 
 = Monitoring system calls =
