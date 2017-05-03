@@ -1,21 +1,23 @@
 __NOTOC__
 This page lists [[Open Source]] resources that complement [[Simple Neurite Tracer]].
 
+== Online Tools ==
+
 {| class="wikitable"
 |-
 |colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Online Tools (Visualization)''
 |- valign="top"
 | SharkViewer
 | http://janeliascicomp.github.io/SharkViewer/
-| Fast morphology viewer (WebGL-based).
+| Simple but fast morphology viewer (WebGL-based).
 |- valign="top"
 | MPDL SWC service
 | https://servicehub.mpdl.mpg.de/swc/
-| Morphology viewe rbased on SharkViewer. Can analyze traces using L-Measure.
+| Morphology viewer based on SharkViewer implemented as a RESTful web service. Can analyze traces using L-Measure.
 |- valign="top"
 | HBP Morphology Viewer
 | https://neuroinformatics.nl/HBP/morphology-viewer/
-| WebGL-based viewer. Customizable rendering. Parses some closed-source file formats. SVG/PNG export. Can be used for SWC+ export.
+| WebGL-based viewer. Allows customizable rendering. Well integrated with NeuroMorpho.org and Allen Cell Types. Parses some closed-source file formats. SVG/PNG export. Can be used for SWC+ export.
 |-
 |colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Online Tools (Analysis)''
 |- valign="top"
@@ -32,21 +34,21 @@ This page lists [[Open Source]] resources that complement [[Simple Neurite Trace
 
 {| class="wikitable"
 |-
-|colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Software for (3D) Visualization and Analysis of Tracings''
+|colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Visualization and Analysis of Tracings''
 |-
 | Py3DN
-| https://sourceforge.net/projects/py3dn/h
+| https://sourceforge.net/projects/py3dn/
 | Blender based. Written in Python. Cross platform.
 |- valign="top"
 | NeuroMorph
 | https://github.com/ajorstad/NeuroMorph
-| Blender based. Written in Python. Cross platform.
+| Blender based. Written in Python. Cross platform. Designed specifically for the morphological analysis of 3D objects derived from SEM. Some of its functionality can be applied to reconstructions of single neurons.
 |- valign="top"
 | nat
 | http://jefferis.github.io/nat/
 | Written in R.
 |-
-|colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Software for Analysis of Tracings''
+|colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Analysis of Tracings''
 |- valign="top"
 | L-measure
 | http://cng.gmu.edu:8080/
@@ -59,10 +61,8 @@ This page lists [[Open Source]] resources that complement [[Simple Neurite Trace
 
 == Tracing Tools ==
 
-Software packages for neuronal tracing.
-
-[[Simple Neurite Tracer]]
-[http://www.reading.ac.uk/neuromantic/ Neuromantic]
-[http://research.mssm.edu/cnic/tools-ns.html NeuronStudio]
-[http://www.neutracing.com neuTube]
+Software packages for neuronal tracing not based on ImageJ: 
+[http://www.reading.ac.uk/neuromantic/ Neuromantic], 
+[http://research.mssm.edu/cnic/tools-ns.html NeuronStudio], 
+[http://www.neutracing.com neuTube], 
 [http://www.vaa3d.org/ Vaa3D]
