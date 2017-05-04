@@ -7,7 +7,7 @@ __TOC__
 | maintainer             = [[User:Benoit|Benoit Lombardot]]
 | released               = 05 May 2017
 | filename               = SCF-MPI-CBG update site
-| source                 = todo github
+| source                 = https://github.com/mpicbg-scicomp/Interactive-H-Watershed
 | category               = [[:Category:Plugins|Plugins]], [[:Category:Segmentation|Segmentation]]
 }}
 
