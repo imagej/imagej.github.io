@@ -1,11 +1,12 @@
 list of contributed plugins, scripts, update sites:
 
+
+Image analysis tools:
 *[[Manual drift correction plugin]]
-
-*[[MS-ECS-2D]] update site
-
 *[[User:SCF-MPI-CBG]] update site
+*[[Minimum Cost Z surface Projection]] plugin
+*[[Interactive Watershed]] plugin
 
+published user project:
+*[[MS-ECS-2D]] update site
 *[[CElegansBeadsAnalysis plugin]]
-
-* [[Minimum Cost Z surface Projection]] plugin
