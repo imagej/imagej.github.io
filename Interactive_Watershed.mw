@@ -14,11 +14,27 @@ __TOC__
 [[Category:Plugins]]
 [[Category:Segmentation]]
 
+logo Image
 
-=Introduction=
+==Introduction==
 
+Watershed principle, H-Maxima principle, Motivations
 
-=Usage=
+parameter space image
 
+==Usage==
 
-=Methods and Implementation=
+UI image (in 2D, in 3D)
+Overlays image (with blobs)
+Side view image
+
+===Scripting===
+
+in IJ macro
+in Jython
+
+==Methods and Implementation==
+
+principle: Build a Hierarchy of segments that allow to build all H-Watershed without reprocessing the watershed
+
+Cite paper Najman (initial paper, equivalence to hierarchy), Abealez (ultrametric), Lotufo (IFT watershed)
