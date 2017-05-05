@@ -60,7 +60,7 @@ File:Figure_HMax_HWatershed_v3.PNG
 
 
 [[File:Figure_IWS_visualisationMode.PNG|center|800px]]
-<div align="center">'''Figure 5'''</div>
+<div align="center">'''Figure 5''' is illustrating the way the segmentation can be displayed. The second row shows a close up (red region fom the first row). The raw data (1st column) are segmented by the Interactive Watershed plugin and can be displayed as a label map (2nd column), the segments contour overlaid on aw data (column 3), transparent solid segment overlaid on raw data (column 4).</div>
 
 
 [[File:Figure_IWS_sideViews_v2.PNG|center|800px]]
