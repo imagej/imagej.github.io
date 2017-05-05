@@ -64,6 +64,23 @@ Once the update site is intalled, restart ImageJ. A new menu SCF-MPI-CBG should 
 
 To use the Interactive Watershed plugin.
 
+# Open an image to analyze. If the image has multiple channel or time dimensions crop a single channel 2D or 3D image for the analysis.
+
+# In the menu SCF-MPI-CBG>Labelling click the Item Interactive H-Watershed. the pluginwill be initialized with the image that was in focus. A full watershed of the image is performed. If that step seem to be too last a while a process dialog will open indicating the remaining processing time. If the process is too long it can be interupted and restarted with a smaller volume. 
+
+# When the initialization is finished 2 window will popup the interactive watershed image and a control panel. When the control panel is updated the image window is updated on the fly. When satisified with the segmentation a label map can be exported with the export button at the bottom right of the control panel.
+
+In this paragraph we will now describes the role and usage of the control panel item:
+
+* '''Analyzed image''':
+* '''Seed dynamics''':
+* '''intensity threshold''':
+* '''peak flooding''':
+* '''Display style''':
+* '''Slicing axis''':
+* '''View Image''':
+* '''Export''':
+
 
 [[File:Figure_IWS_controlPanel.PNG|center|800px]]
 <div align="center">'''Figure 4''' shows the user interface of the Interactive Watershed plugin for 2D image (Left) and 3D image (Right). On the top it shows the name of the analyzed image (Red). Below are parameters input, H value (Green), watershed threshold, T,(Blue) and peak Flooding (Orange). Then one can control segmentation display parameter: display style(Light purple) and the image displayed in the background of the segmentation (Yellow). Finally the export button (Lilac) exports a label map corresponding to the current parameter H,T and peak flooding. User interface for 3D images also allow to select the orientation of the plane displayed (Pink). XY, XZ or YZ planes can then be navigated directly with the slider of the image stack.</div>
