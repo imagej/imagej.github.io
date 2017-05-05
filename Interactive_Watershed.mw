@@ -14,19 +14,18 @@ __TOC__
 [[Category:Plugins]]
 [[Category:Segmentation]]
 
-logo Image
+
+[[File:InteractiveWatershed_illustration.PNG|center|500px]]
+<div align="center">'''Figure 1''' Illustration of the interactive watershed plugin. Showing the plugin control panel in from of a segmentation overlaying raw microspy data. The raw data shows a section of a platynereis organism during its early development. Data were acquired by Mette Handberg-Thorsager (Tomancak lab, MPI-CBG, Dreden)</div>
+
 
 =Introduction=
-
 
 Watershed [ref Soille] is a common tool to segment objects in an 2D and 3D images. It is relatively fast and can provides understandable and robust results which can be used for image analysis.
 
 Creating a good segmentation however requires some expertise and can be time consuming. One has to determine the right threshold to stop the watershed. Meaningful local extrema have to be selected to initiate the algorithm. And once a result is obtained the segmentation has to be compared to the original data. That process can then be iterated till satisfying parameters are found. That procedure can be very time consuming if not provided with practicle tools, especially when image are large and a single watershed can take minutes.
 
 The interactive Watershed plugin provides an interactive way to explore local minima (maxima) and threshold, updating the resulting watershed on the fly. This is possible by calculating the watershed only once at plugin initialization. Further when Threshold or maxima selection are updated this initial segmentation is reused to generate the new segmentation instantly. In order to ease quality assessment the results directly overlaid to the data.
-
-[[File:InteractiveWatershed_illustration.PNG|center|500px]]
-<div align="center">'''Figure 1''' Illustration of the interactive watershed plugin. Showing the plugin control panel in from of a segmentation overlaying raw microspy data. The raw data shows a section of a platynereis organism during its early development. Data were acquired by Mette Handberg-Thorsager (Tomancak lab, MPI-CBG, Dreden)</div>
 
 The 2 following subsection gives additionnal details on watershed working principle and on the strategy used in the plugin for local maxima detection: H-Maxima
 
