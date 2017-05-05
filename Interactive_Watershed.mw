@@ -68,7 +68,7 @@ File:Figure_HMax_HWatershed_v3.PNG
 
 
 [[File:Figure_IWS_customBgImage.PNG|center|800px]]
-<div align="center">'''Figure 7'''</div>
+<div align="center">'''Figure 7''' Illustrates the ability to overlay the segmentation to an image different from the one segmented. When performing a segmentation on a filtered image (Left panel), One can select a view image different from the view image (Center Panel), for instance to assess the segmentation against the raw data (Right Panel). in that case the segmentation could be imporved by a preliminary filtering while not hurt too much final segment shape.</div>
 
 ==Scripting==
 
