@@ -43,6 +43,11 @@ There exist many different way of detecting local maxima. H-maxima focus on maxi
 
 We call H-Watershed the segmentation obtained by flooding the H-Maxima of an image. Such segmentation has 2 parameters. The Threshold, T, that stops the flooding of the image and the H-maxima robustness, H, that indicate where the flooding is initiated.
 
+File:Figure_HMax_HWatershed_v3.PNG
+
+[[File:Figure_HMax_HWatershed_v3.PNG|center|800px]]
+<div align="center">'''Figure 3''' The figure illustrates the detection of H-Maxima for in 2D, 1D and the resulting 2D watershed (repectively row 1, 2 and 3). The 1st column show the original data, whereas column 2, 3 and 4 show the maxima and H-Watershed respectively for H value 0, 10 and 40. The threshold value 100 was used for the H-Watershed on row 3. The image used for the illustration is crop of the blobs image available from Fiji sample image.</div>
+
 =Usage=
 
 ==User Interface==
