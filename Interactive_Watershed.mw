@@ -53,7 +53,17 @@ File:Figure_HMax_HWatershed_v3.PNG
 =Usage=
 
 
+==Installation==
+
+To install the plugin in your ImageJ or Fiji installation. Add the update site SCF-MPI-CBG. Java8 update site should also be installed it is not there yet. The procedure to follow an update site [https://imagej.net/Following_an_update_site can be found there].
+
+Once the update site is intalled, restart ImageJ. A new menu SCF-MPI-CBG should be there. The Interactive Watershed plugin can be found in the menu ''SCF-MPI-CBG>Labelling>Interactive H-Watershed''.
+
+
 ==User Interface==
+
+To use the Interactive Watershed plugin.
+
 
 [[File:Figure_IWS_controlPanel.PNG|center|800px]]
 <div align="center">'''Figure 4''' shows the user interface of the Interactive Watershed plugin for 2D image (Left) and 3D image (Right). On the top it shows the name of the analyzed image (Red). Below are parameters input, H value (Green), watershed threshold, T,(Blue) and peak Flooding (Orange). Then one can control segmentation display parameter: display style(Light purple) and the image displayed in the background of the segmentation (Yellow). Finally the export button (Lilac) exports a label map corresponding to the current parameter H,T and peak flooding. User interface for 3D images also allow to select the orientation of the plane displayed (Pink). XY, XZ or YZ planes can then be navigated directly with the slider of the image stack.</div>
