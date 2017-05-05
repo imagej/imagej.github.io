@@ -52,15 +52,24 @@ File:Figure_HMax_HWatershed_v3.PNG
 
 =Usage=
 
+
 ==User Interface==
 
-[[File:Figure_IWS_controlPanel.PNG|center|600px]]
+[[File:Figure_IWS_controlPanel.PNG|center|800px]]
+<div align="center">'''Figure 4''' )</div>
+
 
 [[File:Figure_IWS_visualisationMode.PNG|center|800px]]
+<div align="center">'''Figure 5''' )</div>
+
 
 [[File:Figure_IWS_sideViews_v2.PNG|center|600px]]
+<div align="center">'''Figure 6''' )</div>
+
 
 [[File:Figure_IWS_customBgImage.PNG|center|600px]]
+<div align="center">'''Figure 7''' )</div>
+
 
 ==Scripting==
 
