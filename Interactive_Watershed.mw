@@ -25,12 +25,19 @@ Creating a good segmentation however requires some expertise and can be time con
 
 The interactive Watershed plugin provides an interactive way to explore local minima (maxima) and threshold, updating the resulting watershed on the fly. This is possible by calculating the watershed only once at plugin initialization. Further when Threshold or maxima selection are updated this initial segmentation is reused to generate the new segmentation instantly. In order to ease quality assessment the results directly overlaid to the data.
 
+The 2 following subsection gives additionnal details on watershed working principle and on the strategy used in the plugin for local maxima detection: H-Maxima
+
+
 ==Watershed principle==
 
-If we interpret images as landscapes of hills and valleys, the watershed algorithm gradually flood the valleys starting from their lowest points (the image local minima). When the flooding of two minima meet at a sadle their remain distinct as each minima region is labelled with a distinct value. The flooding is stopped when all the image is flooded. As object don't always covers the whole image a threshold can be set stoping region evolution before the entire flooding. Alternatively the flooding can be started from local maxima. Image 1 shows the flooding of 3 peaks for different value of the treshold parameter.
+If we interpret images as landscapes of hills and valleys, the watershed algorithm gradually flood the valleys starting from their lowest points (the image local minima). When the flooding of two minima meet at a sadle their remain distinct as each minima region is labelled with a distinct value. The flooding is stopped when all the image is flooded. As object don't always covers the whole image a threshold can be set stoping region evolution before the entire flooding. Alternatively the flooding can be started from local maxima. '''Image 2''' shows the flooding of 3 peaks for different value of the treshold parameter.
+
 
 ==H-Maxima principle==
-Image with maxima selection for != h value
+
+An image local maximum (minimum) is a region in the image for which all neighboring pixels have a lower (higher) value. A lot of maxima in an image are simply cause by noise and are not meaningful. If one can select more significant maxima corresponding to objects They could be used to initiate a watershed segmentation of the these objects.
+
+There exist many different way of detecting local maxima. H-maxima focus on maxima robustness. It has one paramter, H, that can be compared to the intensity of the noise in the image. H-Maxima selects all maxima which are still maxima when there value is decreased by H. When H is increased less maxima are selected but they end being more robust to noise. Image 3 shows the maxima selected in a sample image for different H values
 
 =Usage=
 
