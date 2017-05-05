@@ -48,8 +48,20 @@ Side view image
 in IJ macro
 in Jython
 
-==Methods and Implementation==
+=Methods and Implementation=
 
 principle: Build a Hierarchy of segments that allow to build all H-Watershed without reprocessing the watershed
 
 Cite paper Najman (initial paper, equivalence to hierarchy), Abealez (ultrametric), Lotufo (IFT watershed)
+
+
+=References=
+[ref Soille]
+
+[ref Najman 1996]
+
+[ref Najman 2010]
+
+[ref Arbealez 1996]
+
+[ref Lotufo]
