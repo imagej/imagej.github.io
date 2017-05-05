@@ -16,11 +16,15 @@ __TOC__
 
 logo Image
 
-==Introduction==
+=Introduction=
 
-Watershed [ref Soille] is a common tool to segment object in an 2D/3D images. It is relatively fast and provide understandable results which is convenient for image analysis.
+==Motivations==
+Watershed [ref Soille] is a common tool to segment objects in an 2D and 3D images. It is relatively fast and can provides understandable and robust results which can be used for image analysis.
 
-  
+
+Creating a good segmentation however requires some expertise and can be time consuming. One has to determine the right threshold to stop the watershed. Meaningful local extrema have to be selected to initiate the algorithm. And once a result is obtained the segmentaiton has to be compared to the original data. That process can then be iterated till satisfying parameters are found. That procedure can be very time consuming if not provided with practicle tools, especially when imaage are large and a single watershed can take minutes.
+
+The interactive Watershed plugin provides an interactive way to
 
 ==Watershed principle==
 
