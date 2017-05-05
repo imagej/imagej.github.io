@@ -32,10 +32,6 @@ If we interpret images as landscapes of hills and valleys, the watershed algorit
 ==H-Maxima principle==
 Image with maxima selection for != h value
 
-==Interactive watershed motivations==
-
-H,T parameter space image
-
 =Usage=
 
 ==User Interface==
