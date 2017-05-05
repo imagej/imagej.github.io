@@ -37,15 +37,21 @@ Image with maxima selection for != h value
 
 H,T parameter space image
 
-==Usage==
+=Usage=
+
+==User Interface==
 
 UI image (in 2D, in 3D)
+
 Overlays image (with blobs)
+
 Side view image
 
-===Scripting===
+
+==Scripting==
 
 in IJ macro
+
 in Jython
 
 =Methods and Implementation=
