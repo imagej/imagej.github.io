@@ -64,7 +64,7 @@ File:Figure_HMax_HWatershed_v3.PNG
 
 
 [[File:Figure_IWS_sideViews_v2.PNG|center|800px]]
-<div align="center">'''Figure 6'''</div>
+<div align="center">'''Figure 6:''' In 3D images a good assessment of segmentation requires to observe data under different angles. Beside the usual XY view of the data (Left), the Interactive Watershed plugin can display YZ sections (Center panel, section along the red line in the left panel) and XZ sections (Right panel, section along the green line in the left panel). If the data are not istropic the views a resampled to remove distortion that makes the inspection effortless.</div>
 
 
 [[File:Figure_IWS_customBgImage.PNG|center|800px]]
