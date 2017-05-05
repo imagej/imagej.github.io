@@ -18,9 +18,29 @@ logo Image
 
 ==Introduction==
 
-Watershed principle, H-Maxima principle, Motivations
+Watershed [ref Soille] is a common tool to segment object in an 2D/3D images. It is relatively fast and provide understandable results which is convenient for image analysis.
 
-parameter space image
+  
+
+==Watershed principle==
+
+If we interpret images as landscapes of hills and valleys, the watershed algorithm gradually flood the valleys starting from their lowest points (the image local minima). When the flooding of two minima meet at a sadle their remain distinct as each minima region is labelled with a distinct value. The flooding is stopped when all the image is flooded. As object don't always covers the whole image a threshold can be set stoping region evolution before the entire flooding. Alternatively the flooding can be started from local maxima. Image 1 shows the flooding of 3 peaks for different value of the treshold parameter.
+
+==H-Maxima principle==
+Image with maxima selection for != h value
+
+==Interactive watershed motivations==
+
+H,T parameter space image
+
+
+
+
+[ref Soille]
+[ref Najman 1996]
+[ref Najman 2010]
+[ref Arbealez 1996]
+[ref Lotufo]
 
 ==Usage==
 
