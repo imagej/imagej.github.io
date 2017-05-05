@@ -56,7 +56,7 @@ File:Figure_HMax_HWatershed_v3.PNG
 ==User Interface==
 
 [[File:Figure_IWS_controlPanel.PNG|center|800px]]
-<div align="center">'''Figure 4'''</div>
+<div align="center">'''Figure 4''' shows the user interface of the Interactive Watershed plugin for 2D image (Left) and 3D image (Right). On the top it shows the name of the analyzed image (Red). Below are parameters input, H value (Green), watershed threshold, T,(Blue) and peak Flooding (Orange). Then one can control segmentation display parameter: display style(Light purple) and the image displayed in the background of the segmentation (Yellow). Finally the export button (Lilac) exports a label map corresponding to the current parameter H,T and peak flooding. User interface for 3D images also allow to select the orientation of the plane displayed (Pink). XY, XZ or YZ planes can then be navigated directly with the slider of the image stack.</div>
 
 
 [[File:Figure_IWS_visualisationMode.PNG|center|800px]]
