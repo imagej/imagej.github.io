@@ -72,9 +72,32 @@ File:Figure_HMax_HWatershed_v3.PNG
 
 ==Scripting==
 
-in IJ macro
+In ImageJ macro language one can perform a H-Watershed segmentation with the following command:
 
-in Jython
+<source lang="java">
+hMin = 500;
+thresh = 500;
+peakFlooding = 80;
+run("HWatershed", "impin=2DEmbryoSection_Mette.tif hmin="+hMin+" thresh="+thresh+" peakflooding="+peakFlooding);
+</source>
+
+
+In a Jython script the H-Watershed segmentation could be called as follows:
+<source lang="python">
+#@ImageJ ij
+
+from ij import IJ
+
+imp =IJ.getImage();
+hMin = 500
+thresh = 500
+peakFlooding = 80
+result = ij.op().run("HWatershed", imp, hMin, thresh, peakFlooding );
+result.show()
+</source>
+
+
+The run commands are also recorded by the macro recorder when exporting a label map.
 
 =Methods and Implementation=
 
