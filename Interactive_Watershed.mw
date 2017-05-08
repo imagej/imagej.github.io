@@ -64,8 +64,7 @@ We call H-Watershed the segmentation obtained by flooding the H-maxima of an ima
 
 To install the plugin in your ImageJ or Fiji installation. Add the update site SCF-MPI-CBG. Java8 update site should also be installed it is not there yet. The procedure to follow an update site [https://imagej.net/Following_an_update_site can be found there].
 
-Once the update site is intalled, restart ImageJ. A new menu SCF-MPI-CBG should be there. The Interactive Watershed plugin can be found in the menu ''SCF-MPI-CBG>Labelling>Interactive H-Watershed''.
-
+Once the update site is intalled, restart ImageJ. A new menu SCF should be there. The Interactive Watershed plugin can be found in the menu ''SCF>Labelling>Interactive H-Watershed''.
 
 ==User Interface==
 
