@@ -1,0 +1,1753 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="UserGuideFIJI-Webbased-webpage_files/filelist.xml">
+<link rel=Preview href="UserGuideFIJI-Webbased-webpage_files/preview.wmf">
+<link rel=Edit-Time-Data
+href="UserGuideFIJI-Webbased-webpage_files/editdata.mso">
+<link rel=OLE-Object-Data
+href="UserGuideFIJI-Webbased-webpage_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Robert Erger</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Robert Erger</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>8</o:TotalTime>
+  <o:Created>2017-05-08T23:22:00Z</o:Created>
+  <o:LastSaved>2017-05-08T23:22:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>824</o:Words>
+  <o:Characters>4698</o:Characters>
+  <o:Company>PISD</o:Company>
+  <o:Lines>39</o:Lines>
+  <o:Paragraphs>11</o:Paragraphs>
+  <o:CharactersWithSpaces>5511</o:CharactersWithSpaces>
+  <o:Version>15.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="UserGuideFIJI-Webbased-webpage_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="UserGuideFIJI-Webbased-webpage_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>5 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>6.8 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>2</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="371">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1107305727 0 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073786111 1 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:Arial;
+	color:black;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Footnote Text Char1";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:Arial;
+	color:black;}
+span.MsoFootnoteReference
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	vertical-align:super;}
+p.FootnoteText1, li.FootnoteText1, div.FootnoteText1
+	{mso-style-name:"Footnote Text1";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Footnote Text Char";
+	mso-style-next:"Footnote Text";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:Arial;
+	color:black;}
+span.FootnoteTextChar
+	{mso-style-name:"Footnote Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Footnote Text1";
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	mso-ascii-font-family:Arial;
+	mso-fareast-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:black;}
+span.FootnoteTextChar1
+	{mso-style-name:"Footnote Text Char1";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Footnote Text";
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	mso-ascii-font-family:Arial;
+	mso-fareast-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:black;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	line-height:107%;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("UserGuideFIJI-Webbased-webpage_files/header.htm") fs;
+	mso-footnote-continuation-separator:url("UserGuideFIJI-Webbased-webpage_files/header.htm") fcs;
+	mso-endnote-separator:url("UserGuideFIJI-Webbased-webpage_files/header.htm") es;
+	mso-endnote-continuation-separator:url("UserGuideFIJI-Webbased-webpage_files/header.htm") ecs;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in .75in 1.0in .75in;
+	mso-header-margin:0in;
+	mso-footer-margin:.5in;
+	mso-page-numbers:1;
+	mso-header:url("UserGuideFIJI-Webbased-webpage_files/header.htm") h1;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:420684293;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1236379416 1405652524 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-number-format:roman-upper;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.5in;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1
+	{mso-list-id:933175272;
+	mso-list-template-ids:2004938026;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\25CF;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:.25in;
+	text-decoration:none;
+	text-underline:none;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\25CB;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:.75in;
+	text-decoration:none;
+	text-underline:none;}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:1.25in;
+	text-decoration:none;
+	text-underline:none;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\25CF;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:1.75in;
+	text-decoration:none;
+	text-underline:none;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\25CB;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:2.25in;
+	text-decoration:none;
+	text-underline:none;}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:2.75in;
+	text-decoration:none;
+	text-underline:none;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\25CF;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:3.25in;
+	text-decoration:none;
+	text-underline:none;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\25CB;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:3.75in;
+	text-decoration:none;
+	text-underline:none;}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\25A0;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:4.25in;
+	text-decoration:none;
+	text-underline:none;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin-top:0in;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0in;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1029"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+  <o:rules v:ext="edit">
+   <o:r id="V:Rule1" type="connector" idref="#Straight_x0020_Arrow_x0020_Connector_x0020_8"/>
+   <o:r id="V:Rule2" type="connector" idref="#Straight_x0020_Arrow_x0020_Connector_x0020_4"/>
+  </o:rules>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'>FUZZY SET INTENSITY TRANSFORMATIONS<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:8.0pt;text-align:center;
+line-height:107%'><span style='font-size:12.0pt;line-height:107%;font-family:
+"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'>USER GUIDE<o:p></o:p></span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-top:0in;margin-right:0in;margin-bottom:
+8.0pt;margin-left:.75in;mso-add-space:auto;text-indent:-.5in;line-height:107%;
+mso-list:l0 level1 lfo2;tab-stops:right dotted 6.5in'><![if !supportLists]><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:windowtext'><span
+style='mso-list:Ignore'>I.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:107%;
+font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+"Times New Roman";color:windowtext'>Introduction<span style='mso-tab-count:
+1 dotted'>................................................................................................................... </span>2<o:p></o:p></span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-top:0in;margin-right:0in;margin-bottom:
+8.0pt;margin-left:.75in;mso-add-space:auto;text-indent:-.5in;line-height:107%;
+mso-list:l0 level1 lfo2;tab-stops:right dotted 6.5in'><![if !supportLists]><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:windowtext'><span
+style='mso-list:Ignore'>II.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:107%;
+font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+"Times New Roman";color:windowtext'>Software Installation<span
+style='mso-tab-count:1 dotted'>...................................................................................................... </span>3<o:p></o:p></span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-top:0in;margin-right:0in;margin-bottom:
+8.0pt;margin-left:.75in;mso-add-space:auto;text-indent:-.5in;line-height:107%;
+mso-list:l0 level1 lfo2;tab-stops:right dotted 6.5in'><![if !supportLists]><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:windowtext'><span
+style='mso-list:Ignore'>III.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:107%;
+font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+"Times New Roman";color:windowtext'>Plugin Installation<span style='mso-tab-count:
+1 dotted'>.......................................................................................................... </span>3<o:p></o:p></span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-top:0in;margin-right:0in;margin-bottom:
+8.0pt;margin-left:.75in;mso-add-space:auto;text-indent:-.5in;line-height:107%;
+mso-list:l0 level1 lfo2;tab-stops:right dotted 6.5in'><![if !supportLists]><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:windowtext'><span
+style='mso-list:Ignore'>IV.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:107%;
+font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+"Times New Roman";color:windowtext'>Opening an image<span style='mso-tab-count:
+1 dotted'>......................................................................................................... </span>4<o:p></o:p></span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-top:0in;margin-right:0in;margin-bottom:
+8.0pt;margin-left:.75in;mso-add-space:auto;text-indent:-.5in;line-height:107%;
+mso-list:l0 level1 lfo2;tab-stops:right dotted 6.5in'><![if !supportLists]><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:windowtext'><span
+style='mso-list:Ignore'>V.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:107%;
+font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+"Times New Roman";color:windowtext'>Launching Plugin<span style='mso-tab-count:
+1 dotted'>............................................................................................................ </span>4<o:p></o:p></span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-top:0in;margin-right:0in;margin-bottom:
+8.0pt;margin-left:.75in;mso-add-space:auto;text-indent:-.5in;line-height:107%;
+mso-list:l0 level1 lfo2;tab-stops:right dotted 6.5in'><![if !supportLists]><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:windowtext'><span
+style='mso-list:Ignore'>VI.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:107%;
+font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+"Times New Roman";color:windowtext'>Histogram Window<span style='mso-tab-count:
+1 dotted'>........................................................................................................ </span>5<o:p></o:p></span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-top:0in;margin-right:0in;margin-bottom:
+8.0pt;margin-left:.75in;mso-add-space:auto;text-indent:-.5in;line-height:107%;
+mso-list:l0 level1 lfo2;tab-stops:right dotted 6.5in'><![if !supportLists]><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:windowtext'><span
+style='mso-list:Ignore'>VII.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:107%;
+font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+"Times New Roman";color:windowtext'>Modified Histogram Window<span
+style='mso-tab-count:1 dotted'>........................................................................................ </span>6<o:p></o:p></span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-top:0in;margin-right:0in;margin-bottom:
+8.0pt;margin-left:.75in;mso-add-space:auto;text-indent:-.5in;line-height:107%;
+mso-list:l0 level1 lfo2;tab-stops:right dotted 6.5in'><![if !supportLists]><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:windowtext'><span
+style='mso-list:Ignore'>VIII.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:107%;
+font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+"Times New Roman";color:windowtext'>Modified Image Window<span
+style='mso-tab-count:1 dotted'>............................................................................................... </span>6<o:p></o:p></span></p>
+
+<p class=MsoNormalCxSpMiddle style='margin-top:0in;margin-right:0in;margin-bottom:
+8.0pt;margin-left:.75in;mso-add-space:auto;text-indent:-.5in;line-height:107%;
+mso-list:l0 level1 lfo2;tab-stops:right dotted 6.5in'><![if !supportLists]><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:windowtext'><span
+style='mso-list:Ignore'>IX.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:107%;
+font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+"Times New Roman";color:windowtext'>Saving Results<span style='mso-tab-count:
+1 dotted'>................................................................................................................ </span>7<o:p></o:p></span></p>
+
+<span style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br
+clear=all style='mso-special-character:line-break;page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;line-height:107%'><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:8.0pt;text-align:center;
+line-height:107%'><span style='font-size:12.0pt;line-height:107%;font-family:
+"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'>INTRODUCTION<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;line-height:107%'><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;text-indent:.5in;line-height:
+107%'><i style='mso-bidi-font-style:normal'><span style='font-size:12.0pt;
+line-height:107%;font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;
+mso-bidi-font-family:"Times New Roman";color:windowtext'>FUZZY SET</span></i><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'>, the application, has evolved from developing a method to
+transform images as a class project into creating a “plugin” for <i
+style='mso-bidi-font-style:normal'>FIJI</i> users.<span
+style='mso-spacerun:yes'>  </span>We include a brief overview of the
+development and application for the plugin that we will refer to as just “<i
+style='mso-bidi-font-style:normal'>Fuzzy Set”.</i><span
+style='mso-spacerun:yes'>  </span>For those users who might want to explore the
+theory behind the application, we refer to the text <i style='mso-bidi-font-style:
+normal'>Digital Image Processing</i>, by Rafael Gonzalez<a style='mso-footnote-id:
+ftn1' href="#_ftn1" name="_ftnref1" title=""><sup><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><sup><span style='font-size:12.0pt;
+line-height:115%;font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;
+mso-bidi-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'>[1]</span></sup><![endif]></span></sup></a><span
+style='mso-spacerun:yes'>  </span>Users must also refer to the FIJI website<a
+style='mso-footnote-id:ftn2' href="#_ftn2" name="_ftnref2" title=""><sup><span
+style='mso-special-character:footnote'><![if !supportFootnotes]><sup><span
+style='font-size:12.0pt;line-height:115%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>[2]</span></sup><![endif]></span></sup></a>
+for using more advanced features of the <i style='mso-bidi-font-style:normal'>FIJI</i>
+application.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;line-height:107%'><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><span style='mso-tab-count:1'>            </span>We began
+developing a GUI based java application separate from the <i style='mso-bidi-font-style:
+normal'>FIJI</i> platform, but soon discovered the idea of creating a “plugin”
+as we explored the powerful features of <i style='mso-bidi-font-style:normal'>FIJI</i>.<span
+style='mso-spacerun:yes'>  </span>We found that the ability to make changes was
+efficient and simple.<span style='mso-spacerun:yes'>  </span><i
+style='mso-bidi-font-style:normal'>FIJI</i> is an open source application that
+encourages contributions by its users.<span style='mso-spacerun:yes'> 
+</span>Being a java friendly application provided an easy platform for
+developing and modifying the code.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;line-height:107%'><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><span style='mso-tab-count:1'>            </span>Our
+application employs the principle of fuzzy sets to transform pixels with the
+hope of enhancing an image.<span style='mso-spacerun:yes'>  </span>The <i
+style='mso-bidi-font-style:normal'>Fuzzy Set</i> plugin inputs the pixels from
+an image into an array.<span style='mso-spacerun:yes'>  </span>The user
+provides, through the use of an input window, numbers that correspond to values
+(except z<sub>0</sub>) in the following equation.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;line-height:107%'><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><span style='mso-tab-count:4'>                                                </span><span
+style='mso-spacerun:yes'>  </span><span style='position:relative;top:16.0pt;
+mso-text-raise:-16.0pt'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:241.5pt;
+ height:36.75pt' o:ole="">
+ <v:imagedata src="UserGuideFIJI-Webbased-webpage_files/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=322 height=49
+src="UserGuideFIJI-Webbased-webpage_files/image002.png" v:shapes="_x0000_i1025"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1555772940">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;line-height:107%'><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'>All images utilize the gray levels of the image; therefore,
+limiting the range of output values from “0-255” (“0” corresponds to totally
+black, likewise “255” corresponds to totally white).<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;line-height:107%'><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><span style='mso-tab-count:1'>            </span>Once the
+user inputs the values, our application analyzes the output values for every
+pixel “z<sub>0</sub>”.<span style='mso-spacerun:yes'>  </span>Every pixel in
+the image is transformed pixel by pixel.<span style='mso-spacerun:yes'> 
+</span>The program displays the new modified image in its own window.<span
+style='mso-spacerun:yes'>  </span>Two windows appear that display a histogram
+for both the original image and the modified image.<span
+style='mso-spacerun:yes'>  </span>The final modified image appears illustrating
+the transformation as delineated by the user.<span style='mso-spacerun:yes'> 
+</span>The user will be able to transform images into many possible outcomes
+using the features of the <i style='mso-bidi-font-style:normal'>Fuzzy Set</i>
+plugin.<span style='mso-spacerun:yes'>  </span>Hopefully with practice, the
+user can adapt the application to meet their respective needs or just have fun
+exploring the concept of using fuzzy sets in image processing.<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;line-height:107%'><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><span style='mso-tab-count:1'>            </span>We would
+like to take this time to thank our professor, Dr. Nikolay Sirakov.<span
+style='mso-spacerun:yes'>  </span>Dr. Sirakov encouraged us to go beyond the
+scope of a regular graduate course in image processing.<span
+style='mso-spacerun:yes'>  </span>We cannot express our gratitude for his
+constant prodding, encouragement and feedback that allowed us to contribute to
+the outside world of image processor users.<span style='mso-spacerun:yes'> 
+</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;line-height:107%'><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:8.0pt;text-align:center;
+line-height:107%'><span style='font-size:12.0pt;line-height:107%;font-family:
+"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'>SOFTWARE INSTALLATION<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:8.0pt;text-align:center;
+line-height:107%'><span style='font-size:12.0pt;line-height:107%;font-family:
+"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;text-indent:.5in;line-height:
+107%'><span style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'>To use our software to transform images, the user must
+install the software onto their own device.<span style='mso-spacerun:yes'> 
+</span>We assume that our users are experienced computer users and have some
+familiarity with using a browser software such as Google Chrome to link to the
+fiji website.<span style='mso-spacerun:yes'>  </span>We would also like to note
+that every computer will behave somewhat independently and the use of these
+instructions must be applied with some flexibility and adaptability.<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;text-indent:.5in;line-height:
+107%'><span style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'>Begin by opening a browser window on your device.<span
+style='mso-spacerun:yes'>  </span>Connect to the fiji website via the URL
+address:<span style='mso-spacerun:yes'>  </span></span><a href="http://fiji.sc/"><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:#0563C1'>http://fiji.sc/</span></a><span style='font-size:12.0pt;
+line-height:107%;font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;
+mso-bidi-font-family:"Times New Roman";color:windowtext'>.<span
+style='mso-spacerun:yes'>  </span>Navigate to the appropriate download to meet
+your operating system requirements, and follow the directions from the
+website.<span style='mso-spacerun:yes'>  </span>Notes when downloading Image J:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;line-height:107%'><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'>1) You will need to know whether you have a 32 or 64 bit
+operating system, according to the website, Fiji can run on:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
+margin-left:.5in;text-indent:.25in;line-height:107%;mso-list:l1 level1 lfo1'><![if !supportLists]><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:windowtext'><span
+style='mso-list:Ignore'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:107%;
+font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+"Times New Roman";color:windowtext'>Windows XP, Vista, 7, 8 and 10<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
+margin-left:.5in;text-indent:.25in;line-height:107%;mso-list:l1 level1 lfo1'><![if !supportLists]><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:windowtext'><span
+style='mso-list:Ignore'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:107%;
+font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+"Times New Roman";color:windowtext'>Mac OS X 10.8 &quot;Mountain Lion&quot; or
+later<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;
+margin-left:.5in;text-indent:.25in;line-height:107%;mso-list:l1 level1 lfo1'><![if !supportLists]><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:Calibri;color:windowtext'><span
+style='mso-list:Ignore'>&#9679;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;line-height:107%;
+font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:
+"Times New Roman";color:windowtext'>Linux on amd64 and x86 architectures<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;line-height:107%'><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'>2) Once it is installed you will need to unzip the file and
+double click on the FiJi .exe file.<span style='mso-spacerun:yes'>  </span>It
+may take a few moments to open.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;line-height:107%'><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:8.0pt;text-align:center;
+line-height:107%'><span style='font-size:12.0pt;line-height:107%;font-family:
+"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'>PLUGIN INSTALLATION<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:8.0pt;text-align:center;
+line-height:107%'><span style='font-size:12.0pt;line-height:107%;font-family:
+"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;line-height:107%'><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><span style='mso-tab-count:1'>            </span>Once the <i
+style='mso-bidi-font-style:normal'>FIJI</i> application has successfully
+installed</span><span style='font-family:"Calibri",sans-serif;mso-fareast-font-family:
+Calibri;mso-bidi-font-family:"Times New Roman";color:windowtext;mso-no-proof:
+yes'>, </span><span style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'>navigate to the help menu on the toolbar.<span
+style='mso-spacerun:yes'>  </span>Select Update from the drop down menu.<span
+style='mso-spacerun:yes'>  </span>A window will pop up entitled “ImageJ
+Updater”.<span style='mso-spacerun:yes'>  </span>Select “Manage update sites”
+from the button on the lower left side.<span style='mso-spacerun:yes'>  </span>This
+will list several sites to various “plugins” as well as providing the user to
+keep java and imageJ updated.<span style='mso-spacerun:yes'>  </span>Navigate
+to the site “Fuzzy Sets”.<span style='mso-spacerun:yes'>  </span>Select the box
+on the left side to obtain the “plugin” and also keep the site updated.<span
+style='mso-spacerun:yes'>  </span>Choose “close”.<span
+style='mso-spacerun:yes'>  </span>Finally the FIJI application must be
+restarted to apply the changes and/or add the plugin into the user’s FIJI
+application.<span style='mso-spacerun:yes'>  </span></span><span
+style='font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;
+mso-bidi-font-family:"Times New Roman";color:windowtext;mso-no-proof:yes'><span
+style='mso-spacerun:yes'> </span></span><i style='mso-bidi-font-style:normal'><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;line-height:107%'><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;line-height:107%'><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:8.0pt;text-align:center;
+line-height:107%'><span style='font-size:12.0pt;line-height:107%;font-family:
+"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:8.0pt;text-align:center;
+line-height:107%'><span style='font-size:12.0pt;line-height:107%;font-family:
+"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:8.0pt;text-align:center;
+line-height:107%'><span style='font-size:12.0pt;line-height:107%;font-family:
+"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:8.0pt;text-align:center;
+line-height:107%'><span style='font-size:12.0pt;line-height:107%;font-family:
+"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'>OPENING AN IMAGE<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;text-indent:.5in;line-height:
+107%'><span style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'>Launch the <i style='mso-bidi-font-style:normal'>FIJI</i>
+application until the following window appears.<span style='mso-spacerun:yes'> 
+</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;text-indent:.5in;line-height:
+107%'><span style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;text-indent:.5in;line-height:
+107%'><!--[if gte vml 1]><v:shapetype id="_x0000_t32" coordsize="21600,21600"
+ o:spt="32" o:oned="t" path="m,l21600,21600e" filled="f">
+ <v:path arrowok="t" fillok="f" o:connecttype="none"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+</v:shapetype><v:shape id="Straight_x0020_Arrow_x0020_Connector_x0020_4"
+ o:spid="_x0000_s1028" type="#_x0000_t32" style='position:absolute;left:0;
+ text-align:left;margin-left:-7.9pt;margin-top:28.5pt;width:53pt;height:40.75pt;
+ flip:y;z-index:251659264;visibility:visible;mso-wrap-style:square;
+ mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;
+ mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text' o:gfxdata="UEsDBBQABgAIAAAAIQC2gziS/gAAAOEBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRQU7DMBBF
+90jcwfIWJU67QAgl6YK0S0CoHGBkTxKLZGx5TGhvj5O2G0SRWNoz/78nu9wcxkFMGNg6quQqL6RA
+0s5Y6ir5vt9lD1JwBDIwOMJKHpHlpr69KfdHjyxSmriSfYz+USnWPY7AufNIadK6MEJMx9ApD/oD
+OlTrorhX2lFEilmcO2RdNtjC5xDF9pCuTyYBB5bi6bQ4syoJ3g9WQ0ymaiLzg5KdCXlKLjvcW893
+SUOqXwnz5DrgnHtJTxOsQfEKIT7DmDSUCaxw7Rqn8787ZsmRM9e2VmPeBN4uqYvTtW7jvijg9N/y
+JsXecLq0q+WD6m8AAAD//wMAUEsDBBQABgAIAAAAIQA4/SH/1gAAAJQBAAALAAAAX3JlbHMvLnJl
+bHOkkMFqwzAMhu+DvYPRfXGawxijTi+j0GvpHsDYimMaW0Yy2fr2M4PBMnrbUb/Q94l/f/hMi1qR
+JVI2sOt6UJgd+ZiDgffL8ekFlFSbvV0oo4EbChzGx4f9GRdb25HMsYhqlCwG5lrLq9biZkxWOiqY
+22YiTra2kYMu1l1tQD30/bPm3wwYN0x18gb45AdQl1tp5j/sFB2T0FQ7R0nTNEV3j6o9feQzro1i
+OWA14Fm+Q8a1a8+Bvu/d/dMb2JY5uiPbhG/ktn4cqGU/er3pcvwCAAD//wMAUEsDBBQABgAIAAAA
+IQBPhogXAgIAAOQDAAAOAAAAZHJzL2Uyb0RvYy54bWysU01v2zAMvQ/YfxB0X5wEzQeMOEWRrLsM
+W4B2u7OSbAvQF0QtTv79KNkLuu42NAdBFPMeH8nn3f3FGnZWEbV3DV/M5pwpJ7zUrmv4j+fHT1vO
+MIGTYLxTDb8q5Pf7jx92Q6jV0vfeSBUZkTish9DwPqVQVxWKXlnAmQ/KUbL10UKiMHaVjDAQuzXV
+cj5fV4OPMkQvFCK9Hsck3xf+tlUifW9bVImZhpO2VM5Yzpd8Vvsd1F2E0GsxyYD/UGFBOyp6ozpC
+AvYr6n+orBbRo2/TTHhb+bbVQpUeqJvF/E03Tz0EVXqh4WC4jQnfj1Z8O58i07Lhd5w5sLSipxRB
+d31iDzH6gR28czRGH9ldntYQsCbQwZ3iFGE4xdz6pY2WtUaHn2SEMgxqj13KrK+3WatLYoIe15vl
+dk0bEZRaLTar7SqzVyNNpgsR0xflLcuXhuOk6iZnLAHnr5hG4B9ABjv/qI2hd6iNYwMJWm03K6oG
+5LHWQKKrDdQ1uo4zMB2ZV6RYVKM3WmZ4RuMVDyayM5B/yHbSD8/UAWcGMFGC2iq/Sftf0KznCNiP
+4JLKf4Pa6kSeN9o2fHtDQ90rkJ+dzGqtklRCkSjTjZgE2uRkugZaUYoaXGfUVNa4TKuK3adx5DWN
+i8m3Fy+vZV9VjshKZdKT7bNXX8d0f/1x7n8DAAD//wMAUEsDBBQABgAIAAAAIQBjQK5w4QAAAAkB
+AAAPAAAAZHJzL2Rvd25yZXYueG1sTI/BSsNAEIbvgu+wjNCLtLuJRNuYTZGWgogITRQ8bpMxCc3O
+huy2jW/veNLjMN/88/3ZerK9OOPoO0caooUCgVS5uqNGw3u5my9B+GCoNr0j1PCNHtb59VVm0tpd
+aI/nIjSCQ8inRkMbwpBK6asWrfELNyDx7suN1gQex0bWo7lwuO1lrNS9tKYj/tCaATctVsfiZFnD
+HfeFen0p8fPt9uM5ire77arUenYzPT2CCDiFPxh+9fkGcnY6uBPVXvQa5lHC6kFD8sCdGFipGMSB
+wbtlAjLP5P8G+Q8AAAD//wMAUEsBAi0AFAAGAAgAAAAhALaDOJL+AAAA4QEAABMAAAAAAAAAAAAA
+AAAAAAAAAFtDb250ZW50X1R5cGVzXS54bWxQSwECLQAUAAYACAAAACEAOP0h/9YAAACUAQAACwAA
+AAAAAAAAAAAAAAAvAQAAX3JlbHMvLnJlbHNQSwECLQAUAAYACAAAACEAT4aIFwICAADkAwAADgAA
+AAAAAAAAAAAAAAAuAgAAZHJzL2Uyb0RvYy54bWxQSwECLQAUAAYACAAAACEAY0CucOEAAAAJAQAA
+DwAAAAAAAAAAAAAAAABcBAAAZHJzL2Rvd25yZXYueG1sUEsFBgAAAAAEAAQA8wAAAGoFAAAAAA==
+" strokecolor="windowText" strokeweight="1.25pt">
+ <v:stroke startarrowlength="long" endarrow="block" joinstyle="miter"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:251659264;left:0px;margin-left:-12px;margin-top:32px;
+width:77px;height:62px'><img width=77 height=62
+src="UserGuideFIJI-Webbased-webpage_files/image003.png" v:shapes="Straight_x0020_Arrow_x0020_Connector_x0020_4"></span><![endif]><span
+style='font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;
+mso-bidi-font-family:"Times New Roman";color:windowtext;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_3" o:spid="_x0000_i1031" type="#_x0000_t75" style='width:393.75pt;
+ height:71.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="UserGuideFIJI-Webbased-webpage_files/image004.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=525 height=95
+src="UserGuideFIJI-Webbased-webpage_files/image005.jpg" v:shapes="Picture_x0020_3"><![endif]></span><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;text-indent:.5in;line-height:
+107%'><span style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;text-indent:.5in;line-height:
+107%'><span style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'>Under File, select Open from the drop-down menu and navigate
+to a location of an image on your computer that you wish to transform.<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;text-indent:.5in;line-height:
+107%'><span style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:8.0pt;text-align:center;
+text-indent:.5in;line-height:107%'><span style='font-size:12.0pt;line-height:
+107%;font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;
+mso-bidi-font-family:"Times New Roman";color:windowtext'>LAUNCHING THE PLUGIN<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;text-indent:.5in;line-height:
+107%'><span style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'>Select the Plugin from the application window.<span
+style='mso-spacerun:yes'>  </span>See diagram below.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;text-indent:.5in;line-height:
+107%'><span style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;text-indent:.5in;line-height:
+107%'><!--[if gte vml 1]><v:shape id="Straight_x0020_Arrow_x0020_Connector_x0020_8"
+ o:spid="_x0000_s1027" type="#_x0000_t32" style='position:absolute;left:0;
+ text-align:left;margin-left:180.15pt;margin-top:30.8pt;width:48.9pt;height:1in;
+ flip:y;z-index:251660288;visibility:visible;mso-wrap-style:square;
+ mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;
+ mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text' o:gfxdata="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
+" strokecolor="windowText" strokeweight="1.75pt">
+ <v:stroke endarrow="classic" joinstyle="miter"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:251660288;left:0px;margin-left:239px;margin-top:36px;
+width:73px;height:103px'><img width=73 height=103
+src="UserGuideFIJI-Webbased-webpage_files/image006.png" v:shapes="Straight_x0020_Arrow_x0020_Connector_x0020_8"></span><![endif]><span
+style='font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;
+mso-bidi-font-family:"Times New Roman";color:windowtext;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_41" o:spid="_x0000_i1030" type="#_x0000_t75" style='width:393.75pt;
+ height:71.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="UserGuideFIJI-Webbased-webpage_files/image004.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=525 height=95
+src="UserGuideFIJI-Webbased-webpage_files/image007.jpg" v:shapes="Picture_x0020_41"><![endif]></span><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;text-indent:.5in;line-height:
+107%'><span style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;text-indent:.5in;line-height:
+107%'><!--[if gte vml 1]><o:wrapblock><v:shape id="Picture_x0020_72" o:spid="_x0000_s1026"
+  type="#_x0000_t75" style='position:absolute;left:0;text-align:left;
+  margin-left:219.55pt;margin-top:19.7pt;width:156.7pt;height:51.7pt;z-index:251661312;
+  visibility:visible;mso-wrap-style:square;mso-width-percent:0;
+  mso-height-percent:0;mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;
+  mso-wrap-distance-right:9pt;mso-wrap-distance-bottom:0;
+  mso-position-horizontal:absolute;mso-position-horizontal-relative:text;
+  mso-position-vertical:absolute;mso-position-vertical-relative:text;
+  mso-width-percent:0;mso-height-percent:0;mso-width-relative:margin;
+  mso-height-relative:margin'>
+  <v:imagedata src="UserGuideFIJI-Webbased-webpage_files/image008.png" o:title=""/>
+  <w:wrap type="topAndBottom"/>
+ </v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout'>
+ <table cellpadding=0 cellspacing=0>
+  <tr>
+   <td width=293 height=0></td>
+  </tr>
+  <tr>
+   <td></td>
+   <td><img width=209 height=69
+   src="UserGuideFIJI-Webbased-webpage_files/image008.png" v:shapes="Picture_x0020_72"></td>
+  </tr>
+ </table>
+ </span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'>Choose Fuzzy Set </span><span style='font-size:12.0pt;
+line-height:107%;font-family:Wingdings;mso-ascii-font-family:Calibri;
+mso-fareast-font-family:Calibri;mso-hansi-font-family:Calibri;mso-bidi-font-family:
+"Times New Roman";color:windowtext;mso-char-type:symbol;mso-symbol-font-family:
+Wingdings'><span style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>à</span></span><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'> Run Fuzzy Set<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;text-indent:.5in;line-height:
+107%'><span style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;text-indent:.5in;line-height:
+107%'><span style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'>A user may now set the appropriate user defined values.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;text-indent:.5in;line-height:
+107%'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_1"
+ o:spid="_x0000_i1029" type="#_x0000_t75" style='width:357pt;height:222.75pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="UserGuideFIJI-Webbased-webpage_files/image009.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=476 height=297
+src="UserGuideFIJI-Webbased-webpage_files/image009.png" v:shapes="Picture_x0020_1"><![endif]></span><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%;font-family:
+"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%;font-family:
+"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'>The Following Windows will appear after selecting the values
+from the control panel. <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%;font-family:
+"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;line-height:115%;font-family:
+"Calibri",sans-serif;mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:8.0pt;text-align:center;
+text-indent:.5in;line-height:107%'><span style='font-size:12.0pt;line-height:
+107%;font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;
+mso-bidi-font-family:"Times New Roman";color:windowtext'>HISTOGRAM WINDOW<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;text-indent:.5in;line-height:
+107%'><span style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'>Below is an example of a histogram window.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:8.0pt;text-align:center;
+text-indent:.5in;line-height:107%'><span style='font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_97"
+ o:spid="_x0000_i1028" type="#_x0000_t75" style='width:242.25pt;height:257.25pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="UserGuideFIJI-Webbased-webpage_files/image010.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=323 height=343
+src="UserGuideFIJI-Webbased-webpage_files/image010.png" v:shapes="Picture_x0020_97"><![endif]></span><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:8.0pt;text-align:center;
+text-indent:.5in;line-height:107%'><span style='font-size:12.0pt;line-height:
+107%;font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;
+mso-bidi-font-family:"Times New Roman";color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:8.0pt;text-align:center;
+text-indent:.5in;line-height:107%'><span style='font-size:12.0pt;line-height:
+107%;font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;
+mso-bidi-font-family:"Times New Roman";color:windowtext'>MODIFIED HISTOGRAM
+WINDOW<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;text-indent:.5in;line-height:
+107%'><span style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'>Below is an example of the modified Histogram <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:8.0pt;text-align:center;
+text-indent:.5in;line-height:107%'><span style='font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_104"
+ o:spid="_x0000_i1027" type="#_x0000_t75" style='width:241.5pt;height:256.5pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="UserGuideFIJI-Webbased-webpage_files/image011.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=322 height=342
+src="UserGuideFIJI-Webbased-webpage_files/image011.png" v:shapes="Picture_x0020_104"><![endif]></span><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:8.0pt;text-align:center;
+text-indent:.5in;line-height:107%'><span style='font-size:12.0pt;line-height:
+107%;font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;
+mso-bidi-font-family:"Times New Roman";color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:8.0pt;text-align:center;
+text-indent:.5in;line-height:107%'><span style='font-size:12.0pt;line-height:
+107%;font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;
+mso-bidi-font-family:"Times New Roman";color:windowtext'>MODIFIED IMAGE WINDOW<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;text-indent:.5in;line-height:
+107%'><span style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'>Following is an example of the Modified Image Window (image
+supplied by author)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;text-indent:.5in;line-height:
+107%'><span style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:8.0pt;text-align:center;
+text-indent:.5in;line-height:107%'><span style='font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_107"
+ o:spid="_x0000_i1026" type="#_x0000_t75" style='width:246.75pt;height:199.5pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="UserGuideFIJI-Webbased-webpage_files/image012.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=329 height=266
+src="UserGuideFIJI-Webbased-webpage_files/image013.jpg" v:shapes="Picture_x0020_107"><![endif]></span><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:8.0pt;text-align:center;
+text-indent:.5in;line-height:107%'><span style='font-size:12.0pt;line-height:
+107%;font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;
+mso-bidi-font-family:"Times New Roman";color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:8.0pt;text-align:center;
+text-indent:.5in;line-height:107%'><span style='font-size:12.0pt;line-height:
+107%;font-family:"Calibri",sans-serif;mso-fareast-font-family:Calibri;
+mso-bidi-font-family:"Times New Roman";color:windowtext'>SAVING RESULTS<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:8.0pt;line-height:107%'><span
+style='font-size:12.0pt;line-height:107%;font-family:"Calibri",sans-serif;
+mso-fareast-font-family:Calibri;mso-bidi-font-family:"Times New Roman";
+color:windowtext'><span style='mso-tab-count:1'>            </span>The user of
+the application can save results using the save as feature under the file
+option.<span style='mso-spacerun:yes'>  </span>The FIJI application provides
+the options to save the image with a wide choice of extensions.<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+<div style='mso-element:footnote-list'><![if !supportFootnotes]><br clear=all>
+
+<hr align=left size=1 width="33%">
+
+<![endif]>
+
+<div style='mso-element:footnote' id=ftn1>
+
+<p class=FootnoteText1><a style='mso-footnote-id:ftn1' href="#_ftnref1"
+name="_ftn1" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+style='font-size:10.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:Arial;color:black;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'>[1]</span></span><![endif]></span></span></a>
+Gonzalez, Rafael C. </p>
+
+</div>
+
+<div style='mso-element:footnote' id=ftn2>
+
+<p class=FootnoteText1><a style='mso-footnote-id:ftn2' href="#_ftnref2"
+name="_ftn2" title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+style='font-size:10.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:Arial;color:black;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'>[2]</span></span><![endif]></span></span></a> https://imagej.nih.gov/ij</p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
