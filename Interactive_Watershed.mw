@@ -71,21 +71,21 @@ Once the update site is intalled, restart ImageJ. A new menu SCF-MPI-CBG should 
 
 To use the Interactive Watershed plugin.
 
-# Open an image to analyze. If the image has multiple channel or time dimensions crop a single channel 2D or 3D image for the analysis.
+# Open an image to analyze. If the image has multiple channels or time points crop out a single channel/time point. the plugin only analyze 2D or 3D images.
+# In the menu SCF-MPI-CBG>Labelling click the item Interactive H_Watershed. The plugin will be initialized with the image that is in focus. A full watershed of the image is then performed. if the image is large it could take some time, in such a case a process dialog will open showing an estimation of the remaining processing time. If the process is really too long it can be interrupted and restarted later on with a smaller volume. 
+# When the initialization is finished 2 windows will popup: the interactive watershed image and a control panel. When the control panel is updated the image window is updated on the fly. When satisfied with the segmentation press the export button to create a label map.
 
-# In the menu SCF-MPI-CBG>Labelling click the Item Interactive H-Watershed. the pluginwill be initialized with the image that was in focus. A full watershed of the image is performed. If that step seem to be too last a while a process dialog will open indicating the remaining processing time. If the process is too long it can be interupted and restarted with a smaller volume. 
+In this paragraph control panel item  and usage are described:
 
-# When the initialization is finished 2 window will popup the interactive watershed image and a control panel. When the control panel is updated the image window is updated on the fly. When satisified with the segmentation a label map can be exported with the export button at the bottom right of the control panel.
-
-In this paragraph we will now describes the role and usage of the control panel item:
-
-* '''Analyzed image''':
-* '''Seed dynamics''':
-* '''intensity threshold''':
-* '''peak flooding''':
-* '''Display style''':
-* '''Slicing axis''':
-* '''View Image''':
+* '''Analyzed image''': This is the name of the image on which the watershed was processed. It is there for the user information
+* Segmentation paramters:
+** '''Seed dynamics''': The slider allow to adjust the H-maxima that will be flooded in the resulting window. Increasing that value will merge the segment and decreasing it will split the segment visible in the result window. Note that the value shown at the end of the line is not the actual H but log(1+H). The reason is that logarithm scale provides a more intuitive interaction.
+** '''intensity threshold''': The slider allow to select the watershed stopping criteria. Increasing that value decrease the segment size while decreasing the value will segment size grow. Note that the value shown at the end of the line is not the actual H but log(1+H). The reason is that logarithm scale provides a more intuitive interaction.
+** '''peak flooding''': this parameter is an alternative way to explore the threshold parameter. Rather than using a global threshold one can apply distinct thresholds to each segment. Peak flooding proposes to flood the peak only to a certain percentage of the their height. For the peak i the threshold Ti = T + \alpha/100 . (Imax_i-T), where T is the threshold parameter, \alpha is the peak flooding in percent and Imax_i is the maximum intensity in segment i.  
+* Display Parameters
+** '''Display style''':
+** '''Slicing axis''':
+** '''View Image''':
 * '''Export''':
 
 
