@@ -11,6 +11,7 @@ You can also browse the [https://github.com/search?q=is%3Aopen+user%3Afiji+user%
 
 == Web and cross-language ==
 
+* Better MATLAB and Octave support – see e.g. {{GitHub | org=imagej | repo=imagej-matlab | issue=8 | label=imagej/imagej-matlab#8}}
 * ImageJ JavaScript client – see {{GitHub | org=imagej | repo=imagej-server | label=imagej-server}} project for a start
 
 == ImageJ 1.x ==
