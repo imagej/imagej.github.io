@@ -8,4 +8,8 @@ You can also browse the [https://github.com/search?q=is%3Aopen+user%3Afiji+user%
 * Gentoo packaging – see {{GitHub | org=imagej | repo=imagej | issue=162 | label=imagej/imagej#162}}
 * Chocolatey packaging – {{GitHub | org=imagej | repo=imagej | issue=152 | label=imagej/imagej#152}}
 
+== ImageJ 1.x ==
+
+* Headless ROI manager – see {{GitHub | org=imagej | repo=imagej-legacy | issue=153 | label=imagej/imagej-legacy#153}}
+
 [[Category:Development]]
