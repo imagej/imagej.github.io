@@ -7,6 +7,7 @@ You can also browse the [https://github.com/search?q=is%3Aopen+user%3Afiji+user%
 * Debian packaging – see [http://git.imagej.net/git/?p=fiji-historical.git;a=shortlog;h=refs/heads/stale/debian-fixes-2011-02-09 this branch]
 * Gentoo packaging – see {{GitHub | org=imagej | repo=imagej | issue=162 | label=imagej/imagej#162}}
 * Chocolatey packaging – {{GitHub | org=imagej | repo=imagej | issue=152 | label=imagej/imagej#152}}
+* Homebrew – {{GitHub | org=imagej | repo=imagej | issue=124 | label=imagej/imagej#124}}
 
 == Web and cross-language ==
 
