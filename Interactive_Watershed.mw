@@ -62,49 +62,49 @@ We call H-Watershed the segmentation obtained by flooding the H-maxima of an ima
 
 ==Installation==
 
-To install the plugin in your ImageJ or Fiji installation. Add the update site SCF-MPI-CBG. Java8 update site should also be installed it is not there yet. The procedure to follow an update site [[Following_an_update_site|can be found there]].
+To install the plugin in your ImageJ or Fiji installation. Add the update site SCF-MPI-CBG. Java8 update site should also be installed if it is not there yet. The procedure to follow an update site [[Following_an_update_site|can be found there]].
 
-Once the update site is intalled, restart ImageJ. A new menu, SCF, should have appeared. The Interactive Watershed plugin can be found in the menu ''SCF>Labelling>Interactive H-Watershed''.
+Once the update site is installed, restart ImageJ. A new menu, SCF, should appear. The Interactive Watershed plugin can be found in the menu ''SCF>Labelling>Interactive H_Watershed''.
 
 ==User Interface==
 
 To use the Interactive Watershed plugin.
 
-# Open an image to analyze. If the image has multiple channels or time points crop out a single channel/time point. the plugin only analyze 2D or 3D images.
-# In the menu SCF-MPI-CBG>Labelling click the item Interactive H_Watershed. The plugin will be initialized with the image that is in focus. A full watershed of the image is then performed. if the image is large it could take some time, in such a case a process dialog will open showing an estimation of the remaining processing time. If the process is really too long it can be interrupted and restarted later on with a smaller volume. 
-# When the initialization is finished 2 windows will popup: the interactive watershed image and a control panel. When the control panel is updated the image window is updated on the fly. When satisfied with the segmentation press the export button to create a label map.
+# Open an image to analyze. If the image has multiple channels or time points crop out a single channel/time point. the plugin focus on analyzing 2D and 3D images.
+# In the menu ''SCF>Labelling'' click the item ''Interactive H_Watershed''. The plugin will be initialized with the image that is in focus. A full watershed of the image is then performed. If the image is large a process dialog will pop up indicating the remaining time. If necessary the process can be interrupted. In such case you can crop a smaller volume and restart. 
+# 2 windows will popup after the initialization: the watershed image and the control panel. When the control panel modified the watershed image is instantly updated. When satisfied with the segmentation press the export button to create a label map image.
 
-The control panel items, see Figure 4, and usage are described in the rest of this section:
+The control panel items, see Figure 4, can be used to modify the segmentation and its visualization. Their usage are described in the rest of the section:
 
-* '''Analyzed image''': This is the name of the image on which the watershed was processed. It is there for the user information
-* '''Segmentation paramters''':
-** '''Seed dynamics''': The slider allow to adjust the H-maxima that will be flooded in the resulting window. Increasing that value will merge the segment and decreasing it will split the segment visible in the result window. Note that the value shown at the end of the line is not the actual <math>H</math> but <math>log(1+H)</math>. The reason is that logarithm scale provides a more intuitive interaction as many merging happen at low <math>H</math> value and much less at large <math>H</math> value.
-** '''intensity threshold''': The slider allow to select the watershed stopping criteria. Increasing that value decrease the segment size while decreasing the value will segment size grow. Note that the value shown at the end of the line is not the actual <math>T</math> but <math>log(1+T)</math>. The reason is that logarithm scale provides a more intuitive interaction as regions evolve fast at low value but much slowly at larger value .
-** '''peak flooding''': this parameter is an alternative way to explore the threshold parameter. Rather than using a global threshold one can apply distinct thresholds to each segment. Peak flooding proposes to flood the peak only to a certain percentage of the their height. For the peak <math>i</math> the threshold <math>T_i = T + \alpha/100 . (Imax_i-T)</math>, where <math>T</math> is the threshold parameter, <math>\alpha</math> is the peak flooding in percent and <math>Imax_i</math> is the maximum intensity in segment <math>i</math>.  
+* '''Analyzed image''': This is the name of the analyzed image. It is there for the user information
+* '''Segmentation parameters''':
+** '''Seed dynamics''': The slider allows to adjust the H-maxima selection. Increasing that value will merge regions, while decreasing it will split regions. Note that the value shown at the end of the line is not the actual <math>H</math> but <math>log(1+H)</math>. The reason is that logarithm scale provides a more intuitive interaction (many merging happen at low <math>H</math> but much fewer at large <math>H</math>.
+** '''Intensity threshold''': The slider allows to select the watershed stopping criteria, <math>T</math>. Increasing <math>T</math> decreases regions size while decreasing <math>T</math> till they eventually disappear. Note that the value shown at the end of the line is not the actual <math>T</math> but <math>log(1+T)</math>. Logarithmic scale provides a more intuitive interaction as regions usually evolve fast for low <math>T</math> but much slower for larger <math>T</math>.
+** '''Peak flooding''': this parameter is an alternative way to explore regions thresholds. Rather than using a global threshold one can apply distinct thresholds to each segment. Peak flooding allows to flood each peak till a certain percentage of its height. For the region <math>i</math> the threshold <math>T_i = T + \alpha/100 . (Imax_i-T)</math>, where <math>T</math> is the threshold parameter, <math>\alpha</math> is the peak flooding in percent and <math>Imax_i</math> is the maximum intensity in region <math>i</math>.  
 * '''Display Parameters''':
 ** '''Display style''' decides how the current segmentation is displayed. The different modes are illustrated in Figure 5.
-*** ''Image'' will show directly the label map of the segmentation as an Image plus. This mode is convenient to adjust the segmentation display control and look up table.
-*** ''Contour overlay'': will overlay the contour of each segment to a background image (by default the analyzed image). This is convenient to check that the label map segment are actual object in the raw data.
-*** ''Solid overlay'' mode will overlay solid segment to the bakground image. 
-** '''Slicing axis''': If the analyzed image is 3D the user can select in which direction to look at the dataset. For instance, selecting ''X'' will slice the data in the plane perpendicular to the X axis (the plane YZ). As the resolution of microscopy data is often lower in the Z dimension and might be the bottleneck for segmentation quality it is important to check segmentation quality in XZ and YZ planes. The choice of slicing axis is illustrated in figure 6.
-** '''View Image''' is the background image displayed below the segmentation overlay. By default, it is the image that was segmented, but can also be set to any other image with the same dimension as the original image (only these image will be proposed in the drop down menu). Note that images after the plugin is initialized are not included on the list. In practice this feature helps compare the segmentation to the original data in case, for instance, the segmentation was done on a filtered image (see figure 7).
-* '''Export''': Once satisfied with the segmentation visible on screen the corresponding label map can be exported to an ImagePlus that can be further analyzed. The export action records a comman to the macro recorder that allow to reproduce current result in jython script or a macro.
+*** ''Image'' will show directly the label map of the segmentation. This mode is convenient to adjust the segmentation display control and look up table with imageJ usual tools.
+*** ''Contour overlay'' mode overlays regions contours to a background image (by default the analyzed image). This mode is very convenient to check that the regions shape match object shape in the raw data.
+*** ''Solid overlay'' mode overlays solid segment to the background image. 
+** '''Slicing axis''': If the analyzed image is 3D the user can select the orientation of the result visualization. Selecting ''X'' will slice the data in the plane perpendicular to the X axis (the plane YZ). As the resolution of microscopy data is often lower in the Z dimension and might be the bottleneck for segmentation quality it is important to check segmentation quality in plane XZ and YZ. The choice of slicing axis is illustrated in figure 6. By default the result window show XY planes. Navigation through the planes is done with usual ImageJ controls (image slider, mouse wheel, arrows).
+** '''View Image''' selects the background image (i.e. shown below the segmentation overlay). By default, it is the image that was segmented, but can also be set to any other image with the same dimension. Note that images can't be added to the list after plugin initialization. This feature is practical to compare region shape to the original data. For instance, if the segmentation was done on a filtered image that could have alter object shape (see figure 7).
+* '''Export''': Once satisfied with the segmentation visible on screen the corresponding label map can be exported to an ImagePlus that can be further analyzed with ImageJ. The export action appear in the macro recorder for Image Macro Language and Jython language.
 
 
 [[File:Figure_IWS_controlPanel.PNG|center|800px]]
-<div align="center">'''Figure 4''' shows the user interface of the Interactive Watershed plugin for 2D image (Left) and 3D image (Right). On the top it shows the name of the analyzed image (Red). Below are parameters input, H value (Green), watershed threshold, T,(Blue) and peak Flooding (Orange). Then one can control segmentation display parameter: display style(Light purple) and the image displayed in the background of the segmentation (Yellow). Finally the export button (Lilac) exports a label map corresponding to the current parameter H,T and peak flooding. User interface for 3D images also allow to select the orientation of the plane displayed (Pink). XY, XZ or YZ planes can then be navigated directly with the slider of the image stack.</div>
+<div align="center">'''Figure 4''' shows the user interface of the Interactive Watershed plugin for 2D images (Left) and 3D images (Right). At the top of the panel, one can see the name of the analyzed image (Red). Below are parameters input, H value (Green), watershed threshold, T,(Blue) and peak Flooding (Orange). The control of segmentation display are: display style(Light purple) and the background image (Yellow). Finally the export button (Lilac) exports a label map corresponding to the current parameter H,T and peak flooding. User interface for 3D images also allows to select the slice orientation of the result window(Pink). Plane can be navigated directly with usual ImageJ controls.</div>
 
 
 [[File:Figure_IWS_visualisationMode.PNG|center|800px]]
-<div align="center">'''Figure 5''' is illustrating the way the segmentation can be displayed. The second row shows a close up (red region fom the first row). The raw data (1st column) are segmented by the Interactive Watershed plugin and can be displayed as a label map (2nd column), the segments contour overlaid on aw data (column 3), transparent solid segment overlaid on raw data (column 4).</div>
+<div align="center">'''Figure 5''' is illustrating segmentation display modes. The second row shows a close up (red region from the first row). The raw data (1st column) are segmented by the Interactive Watershed plugin and can be displayed as a label map (2nd column),  regions contours overlay(column 3) and solid region overlay (column 4).</div>
 
 
 [[File:Figure_IWS_sideViews_v2.PNG|center|800px]]
-<div align="center">'''Figure 6:''' In 3D images a good assessment of segmentation requires to observe data under different angles. Beside the usual XY view of the data (Left), the Interactive Watershed plugin can display YZ sections (Center panel, section along the red line in the left panel) and XZ sections (Right panel, section along the green line in the left panel). If the data are not istropic the views a resampled to remove distortion that makes the inspection effortless.</div>
+<div align="center">'''Figure 6:''' In 3D images a good assessment of segmentation requires to observe data in different orientation. Beside the usual XY view of the data (Left), the Interactive Watershed plugin can display YZ sections (Center panel, section along the red line) and XZ sections (Right panel, section along the green line). If the data are not istropic the views are resampled to remove distortion and make inspection effortless.</div>
 
 
 [[File:Figure_IWS_customBgImage.PNG|center|800px]]
-<div align="center">'''Figure 7''' Illustrates the ability to overlay the segmentation to an image different from the one segmented. When performing a segmentation on a filtered image (Left panel), One can select a view image different from the view image (Center Panel), for instance to assess the segmentation against the raw data (Right Panel). in that case the segmentation could be imporved by a preliminary filtering while not hurt too much final segment shape.</div>
+<div align="center">'''Figure 7''' illustrates the possibility to change the background image. When performing a segmentation on a filtered image (Left panel), One can select a background image different from the image processed (Center Panel), for instance to assess segmentation quality against raw data (Right Panel).</div>
 
 ==Scripting==
 
