@@ -1,13 +1,4 @@
 
-= Under Construction =
-
-
-
-
-
-
-
-
 __TOC__
 
 {{Infobox
@@ -26,7 +17,7 @@ __TOC__
 
 
 [[File:InteractiveWatershed_illustration.PNG|center|500px]]
-<div align="center">'''Figure 1''' Illustration of the interactive watershed plugin. Showing the plugin control panel in from of a segmentation overlaying raw microspy data. The raw data shows a section of a platynereis organism during its early development. Data were acquired by Mette Handberg-Thorsager (Tomancak lab, MPI-CBG, Dresden)</div>
+<div align="center">'''Figure 1:''' Illustration of the interactive watershed plugin showing the plugin control panel in front of a segmentation overlaying raw microspy data. The raw data show a section of a platynereis organism during early development. Data were acquired by Mette Handberg-Thorsager (Tomancak lab, MPI-CBG, Dresden)</div>
 
 =Introduction=
 
