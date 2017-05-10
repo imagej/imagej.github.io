@@ -15,7 +15,7 @@ The rules for <code>@parameter</code> use are as follows:
 | quote = zomg UIs are so easy now<br>done by lunchtime
 | person = {{Person|kephale}},<br>Clojure developer
 | gravatar = 9e4ed4484fd425f3f178bfeed4777b31
-| source = https://gitter.im/fiji/fiji/archives/2016/04/20
+| source = https://gitter.im/fiji/fiji?at=5717afbc98c544f1396cef2f
 | float = right
 }}
 For example, if we look at the [https://github.com/scijava/scripting-jython/blob/scripting-jython-0.2.0/src/main/resources/script_templates/Python/Greeting.py Greeting.py] [[Script_Templates|template]] supplied with Fiji:
