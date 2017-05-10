@@ -104,7 +104,7 @@ The control panel items, see Figure 4, can be used to modify the segmentation an
 
 
 [[File:Figure_IWS_customBgImage.PNG|center|800px]]
-<div align="center">'''Figure 7''' illustrates the possibility to change the background image. When performing a segmentation on a filtered image (Left panel), One can select a background image different from the image processed (Center Panel), for instance to assess segmentation quality against raw data (Right Panel).</div>
+<div align="center">'''Figure 7''' illustrates the possibility to change the background image. When performing a segmentation on a filtered image (Left panel), One can select a background image (center panel, blue) different from the image processed (center panel, green), for instance to assess segmentation quality against raw data (Right Panel).</div>
 
 ==Scripting==
 
