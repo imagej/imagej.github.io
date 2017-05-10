@@ -143,7 +143,3 @@ The initial description of a segment hierarchy using peak dynamics as a merging 
 '''[Najman 1996]''' Najman, L., & Schmitt, M. (1996). Geodesic saliency of watershed contours and hierarchical segmentation. IEEE Transactions on pattern analysis and machine intelligence, 18(12), 1163-1173.
 
 '''[Lotufo 2000]''' Lotufo, R., & Falcao, A. (2000). The Ordered Queue And The Optimality Of The Watershed Approaches. In In Mathematical Morphology and its Applications to Image and Signal Processing.
-
-'''[Arbelaez 20011]''' Arbelaez, P., Maire, M., Fowlkes, C., & Malik, J. (2011). Contour detection and hierarchical image segmentation. IEEE transactions on pattern analysis and machine intelligence, 33(5), 898-916.
-
-'''[Najman 2011]''' Najman, L. (2011). On the equivalence between hierarchical segmentations and ultrametric watersheds. Journal of Mathematical Imaging and Vision, 40(3), 231-247.
