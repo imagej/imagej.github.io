@@ -126,12 +126,12 @@ Cite paper Najman (initial paper, equivalence to hierarchy), Abealez (ultrametri
 
 
 =References=
-[ref Soille]
+'''[Vincent 1991]''' Vincent, L., & Soille, P. (1991). Watersheds in digital spaces: an efficient algorithm based on immersion simulations. IEEE transactions on pattern analysis and machine intelligence, 13(6), 583-598.
 
-[ref Najman 1996]
+'''[Najman 1996]''' Najman, L., & Schmitt, M. (1996). Geodesic saliency of watershed contours and hierarchical segmentation. IEEE Transactions on pattern analysis and machine intelligence, 18(12), 1163-1173.
 
-[ref Najman 2010]
+'''[Lotufo 2000]''' Lotufo, R., & Falcao, A. (2000). The Ordered Queue And The Optimality Of The Watershed Approaches. In In Mathematical Morphology and its Applications to Image and Signal Processing.
 
-[ref Arbealez 1996]
+'''[Arbelaez 20011]''' Arbelaez, P., Maire, M., Fowlkes, C., & Malik, J. (2011). Contour detection and hierarchical image segmentation. IEEE transactions on pattern analysis and machine intelligence, 33(5), 898-916.
 
-[ref Lotufo]
+[Najman 2010] Najman, L. (2011). On the equivalence between hierarchical segmentations and ultrametric watersheds. Journal of Mathematical Imaging and Vision, 40(3), 231-247.
