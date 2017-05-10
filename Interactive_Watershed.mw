@@ -120,7 +120,7 @@ The run commands are also recorded by the macro recorder when exporting a label 
 
 =Methods and Implementation=
 
-The plugin strategy is to do the heavy lifting once at the beginning and rely on it later on to keep the any update of the segmentation lightweight.
+The plugin strategy is to do the heavy lifting once at the beginning and rely on it later on to keep segmentation update lightweight.
 
 ==Heavy lifting==
 
@@ -128,13 +128,11 @@ At initialization the plugin calculates the full watershed of the image (i.e. fo
 
 As a result of this process we obtain a label map of the full watershed and a tree representing the merging of the regions in that label map.
 
-
 ==Ligthweight update of the segmentation==
 
 When the H parameter is updated to a value <math>h</math>. It means that the watershed should show only the segments which local maxima have a dynamics superior to <math>h</math>. If we prune our full tree to remove all nodes with dynamics inferior to <math>h</math> the leaf of the pruned tree correspond to the segments we are looking for. We now need to recolor the label map of the full watershed to create a label map of the segmentation with <math>h</math>-maxima. This can be done by attributing a label to the leaf node of the pruned tree. This label is then propagated to the leaf nodes of the original tree. Finally, the segment of the full watershed can be recolored according to this new label. This whole process is quite efficient: the relabelling is a simple raster pass on the orignal label map and the tree number of nodes is a lot smaller than the number of pixel in the image.
 
 When the T parameter is updated the maxima are not modified, thus it is only needed to go through the label map and check if the pixel value in the raw data is above or bellow the threshold. When the peak flooding parameter is changed the strategy is similar but each segment as a distinct threshold
-
 
 The initial description of a segment hierarchy using peak dynamics as a merging criteria was described in [Najman 1996]. Our implementation uses a modified version of the IFT-watershed [Lotufo 2000] that builds the tree at the same time the watershed is processed. Regarding the segmentation update, note that the plugin does not relabel the whole image at each update but only the slice is vizualized in order to preserve interactivity.
 
