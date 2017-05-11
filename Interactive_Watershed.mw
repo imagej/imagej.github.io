@@ -125,7 +125,9 @@ When the H parameter is updated to a value <math>h</math>. It means that the wat
 
 When the T parameter is updated the maxima are not modified, thus it is only needed to go through the label map and check if the pixel value in the raw data is above or bellow the threshold. When the peak flooding parameter is changed the strategy is similar but each segment as a distinct threshold
 
-The initial description, to the best of our knowledge of a segment hierarchy using peak dynamics as a merging criteria was described in [Najman 1996]. Our implementation uses a modified version of the IFT-watershed [Lotufo 2000] that builds the tree at the same time the watershed is processed. Regarding the segmentation update, note that the plugin does not relabel the whole image at each update but only the slice vizualized in order to preserve interactivity.
+==Comment on implementation==
+
+The initial description, to the best of our knowledge of a watershed segment hierarchy using peak dynamics as a merging criteria was described in [Najman 1996]. The plugin initial watersheding is implemented after the IFT-watershed [Lotufo 2000]. The implementation was modified to build the segment tree on the fly. The plugin input and output are IJ1 imagePlus however the image processing inside the plugin relies on ImgLib2. A quick note on the segmentation update of 3D image, the plugin does not relabel the whole volume at every update but only the slice vizualized in order to preserve interactivity.
 
 =References=
 
