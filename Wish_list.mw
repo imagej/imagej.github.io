@@ -9,8 +9,10 @@ You can also browse the [https://github.com/search?q=is%3Aopen+user%3Afiji+user%
 * Chocolatey – see {{GitHub | org=imagej | repo=imagej | issue=152 | label=imagej/imagej#152}}
 * Homebrew – see {{GitHub | org=imagej | repo=imagej | issue=124 | label=imagej/imagej#124}}
 
-== Web and cross-language ==
+== Cross-language, integrations, web ==
 
+* Better ITK support – see the [[ITK]] page
+* Better OpenCV support – see the [[OpenCV]] page
 * Better MATLAB support – see e.g. {{GitHub | org=imagej | repo=imagej-matlab | issue=13 | label=imagej/imagej-matlab#13}}
 * Better Octave support – see e.g. {{GitHub | org=imagej | repo=imagej-matlab | issue=8 | label=imagej/imagej-matlab#8}}
 * ImageJ JavaScript client – see {{GitHub | org=imagej | repo=imagej-server | label=imagej-server}} project for a start
