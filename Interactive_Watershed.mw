@@ -37,11 +37,11 @@ If we interpret images as landscapes of hills and valleys, the watershed algorit
 [[File:Figure_Watershed.PNG|center|800px]]
 <div align="center">'''Figure 2''' illustrates the flooding of an image by the watershed algorithm. First row shows the flooding of a 2D image while the 2nd row illustrates the process in a 1D image (section along the red cut in the 1st row). 1st column shows the orginal image. 2nd column shows with spot the detection of local minima. Column 3,4,5 show the flooding of the image. If no stopping criteria is used the entire image is flooded (column 5).</div>
 
-==H-Maxima amd H-Watershed==
+==H-Maxima and H-Watershed==
 
 An image local maximum (minimum) is a region in the image for which all neighboring pixels have a lower (higher) value. A lot of maxima in an image are simply caused by noise and are not meaningful. If one can select more significant maxima corresponding to objects, they could be used to initiate a watershed segmentation of these objects.
 
-There exist many different ways of detecting local maxima. H-maxima focuses on maxima robustness. It has one parameter, H, that can be compared to the intensity of the noise in the image. H-maxima selects all maxima which are still maxima when their value is decreased by H. When H is increased, less maxima are selected but they end being more robust to noise. Figure 3 shows the maxima selected in a sample image for different H values.
+There exists many different ways of detecting local maxima. H-maxima focuses on maxima robustness. It has one parameter, H, that can be compared to the amplitude of the noise in the image. H-maxima selects all maxima which are still maxima when their value is decreased by H. When H is increased, less maxima are selected but they end being more robust to noise. Figure 3 shows the maxima selected in a sample image for different H values.
 
 We call H-Watershed the segmentation obtained by flooding the H-maxima of an image. Such segmentation has 2 parameters. The Threshold, T, that stops the flooding of the image and the H-maxima robustness, H, that defines the flooding initialization.
 
