@@ -9,17 +9,6 @@ This is a list of upcoming conferences, courses, and other events in the scienti
 |-
 | colspan=4 class="section-minor" | Conferences, Meetings, and Symposia
 |-
-|style="white-space: nowrap"|2017 April 9-12
-|[http://www.focusonmicroscopy.org/ Focus on Microscopy 2017]
-|Advanced multi-dimensional light microscopy and image processing
-|Palais des Congrès de Bordeaux, Convention Center<br>Avenue Jean Gabriel Domergue, 33300<br>Bordeaux, France 
-|-
-|style="white-space: nowrap"|2017 April 18-21
-|[http://biomedicalimaging.org/2017/ ISBI 2017]
-|IEEE International Symposium on Biomedical Imaging
-|Melbourne Convention and Exhibition Centre 
-Melbourne, Australia 
-|-
 |style="white-space: nowrap"|2017 July 3-6
 |[http://www.mmc-series.org.uk/ Microscience Microscopy Congress 2017]
 |Over 40 topics in both life and physical sciences across all microscopy techniques and disciplines
@@ -32,6 +21,12 @@ Manchester, UK
 |Banff Center
 Banff, Canada
 |-
+|style="white-space: nowrap"|2017 Sept 24-29
+|[http://mcm2017.irb.hr/ 13th Multinational Congress on Microscopy]
+|Microscopy
+|Hotel Lone
+Rovinj, Croatia
+|-
 |style="white-space: nowrap"|2017 Oct 3-6
 |[https://www.embo-embl-symposia.org/symposia/2017/EES17-08/index.html Seeing is Believing 2017]
 |Imaging the Processes of Life
@@ -39,22 +34,6 @@ Banff, Canada
 Heidelberg, Germany
 |-
 | colspan=4 class="section-minor" | Courses and Workshops
-|-
-|style="white-space: nowrap"|2017 March 29 - April 11
-|style="white-space: normal"|[https://meetings.cshl.edu/courses.aspx?course=C-QICM&year=17 Quantitative Imaging: From Acquisition to Analysis]
-|Advanced quantitative fluorescence microscopy techniques used for imaging a range of biological specimens, from tissues to cells to single molecules
-|Cold Spring Harbor Laboratory, USA
-|-
-|style="white-space: nowrap"|2017 April 3-5
-|[https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;8b944efc.1703 Digital Image Analysis with ImageJ]
-|An intensive 3-day workshop introducing ImageJ, its basic functions, and its macro programming capabilities.
-| [http://neurodiscovery.harvard.edu/enhanced-neuroimaging-core Enhanced Neuroimaging Core]<br>[http://neurodiscovery.harvard.edu/ Harvard NeuroDiscovery Center]<br>Boston, MA, USA
-|-
-|style="white-space: nowrap"|2017 May 3-12
-|style="white-space: normal"|[http://www.mbl.edu/education/courses/analytical-quantitative-light-microscopy/ Analytical & Quantitative Light Microscopy (AQLM)]
-|A comprehensive and intensive course in light microscopy for researchers in biology, medicine, and material sciences. 
-|Marine Biological Laboratory (MBL)
-Woods Hole, MA, USA
 |-
 |style="white-space: nowrap"|2017 May 14-20
 |style="white-space: normal"|[https://goo.gl/mMXECA EMBL Course for Bioimage Data Analysis]
@@ -66,6 +45,12 @@ Woods Hole, MA, USA
 |Introduction to ImageJ/Fiji on Thursday 1st and Writing macros in ImageJ on Friday 2nd of June.   
 |Dr Kees Straatman
 University of Leicester, UK
+|-
+|style="white-space: nowrap"|2017 June 18-24
+|[https://indico.mpi-cbg.de/event/50/ dais Learnathon (Fiji/ImageJ2/KNIME)]
+|How to develop for Fiji, ImageJ2, and KNIME Image Processing (KNIP)   
+|Center for Systems Biology
+Dresden, Germany
 |-
 |style="white-space: nowrap"|2017 June 26-30
 |style="white-space: normal"|[http://optimizedmicroscopy.com/index.html Computer Optimized Microscopy course]
