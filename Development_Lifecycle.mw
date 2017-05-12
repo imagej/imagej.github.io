@@ -7,7 +7,7 @@
 
 [[ImageJ]] and [[Fiji]] are developed according to the [[Philosophy|SciJava philosophy]], thus these applications are used throughout this tutorial to illustrate the development lifecycle.
 
-Whether adding new features, fixing bugs, improving performance, etc... '''development''' is the process of making changes, with the goal of exposing these changes to users. To accomplish this, actively developed projects cycle through four general "phases":
+Whether adding new features, fixing bugs, improving performance, etc... '''development''' is the process of making changes, with the goal of exposing these changes to users. To accomplish this, actively developed projects cycle through five general "phases":
 
 {{Box
 | title = What are Maven artifacts?
@@ -23,7 +23,8 @@ Artifacts are files, most commonly a '''[[wikipedia:JAR_%28file_format%29|JAR]]'
 # '''In development.''' The source code is modified to add new features, fix bugs, etc... these modifications are expressed as ''commits'' by [[Git]], whether on your local filesystem, a topic branch, or a repository fork.
 # '''On master.''' When you have a set of one or more ''commits'' that you are happy with (i.e. the feature is complete, or the bug is fixed) they are moved to the <code>master</code> branch of the project's repository on GitHub. This ensures the <code>master</code> branch is always ''release ready''.
 # '''Released.''' When there is a need to make the current <code>master</code> branch public (i.e. it has a critical bug fix or cool new feature that users have requested) [[Maven]] is used to ''cut a release'', which is then ''deployed as an artifact'' to the [http://maven.imagej.net/index.html#welcome ImageJ Maven repository]. Developers can now use the new version in their own projects.
-# '''Uploaded.''' Once we've tested our latest release artifact to ensure it doesn't conflict with other components, it can be uploaded to an ImageJ [[update site]] - making it available to end users.
+# '''Managed.''' The new release artifact must be verified to work in the combined runtime environment with other SciJava components. Once it has been tested to work, the version listed in the SciJava component collection [[BOM|Bill of Materials (BOM)]] can be updated accordingly.
+# '''Uploaded.''' Finally, the new release artifact can be uploaded to its associated ImageJ [[update site]], making it available to end users.
 
 The following sections will discuss these phases, and their associated tools and workflows, in more depth.
 
@@ -33,7 +34,7 @@ Another way of thinking about the development cycle is through the Maven version
 
 This is why [https://docs.oracle.com/middleware/1212/core/MAVEN/maven_version.htm#MAVEN401 SNAPSHOT] versions are used while "in development" (phases 1 and 2 - "SNAPSHOT coupling"). Using a SNAPSHOT version is saying "no guarantees are made as to the reproducibility of this artifact." For this reason, to best facilitate reproducible science, SNAPSHOT versions of code are not provided to users (except potentially for testing).
 
-To provide users with an updated version of an artifact (phases 3 and 4) the version is changed to a unique, non-SNAPSHOT, version for a single Git commit. Then the next commit returns to SNAPSHOT versioning for further development. Thus the cycle repeats.
+To provide users with an updated version of an artifact (phases 3, 4 and 5) the version is changed to a unique, non-SNAPSHOT, version for a single Git commit. Then the next commit returns to SNAPSHOT versioning for further development. Thus the cycle repeats.
 
 = Phases in-depth =
 {{Box | float=right | title=When to use a topic branch? | text = [[Architecture|Core SciJava components]] employ a "release ready master branch" approach:
@@ -42,7 +43,7 @@ To provide users with an updated version of an artifact (phases 3 and 4) the ver
 
 Topic branches are great for isolating potentially disruptive and/or unfinished changes from the master branch, so that it always remains release ready. However, pushing directly to master has a huge time savings over filing a PR and awaiting review for days, weeks or months. Getting changes onto master quickly has many advantages:
 * '''Fewer conflicts.''' It avoids conflicts between multiple long-running topic branches.
-* '''SNAPSHOT builds.''' [[Jenkins]] builds the change into the latest SNAPSHOT build, making it available from the [[ImageJ Maven repository]].
+* '''SNAPSHOT builds.''' [[Travis]] builds the change into the latest SNAPSHOT build, making it available from the [[ImageJ Maven repository]].
 * '''Faster support.''' Supporting the community is less convoluted, with changes released to users more rapidly. Yes, you can link to changes on a topic branch. And yes, you can upload binary builds from that branch. But each extra manual step costs time—better to link directly to the latest SNAPSHOT build. There are even ImageJ [[update sites]] which serve the latest builds from master, to make it easier for non-technical users to test changes.
 * '''Less complex.''' The more topic branches you have—and in particular, the more integration branches you have—the more complex the system becomes, the more supporting tooling, CI jobs, etc. are needed. And the more developer time is needed to maintain the tooling, sort through topic branches, keep track of open PRs... leaving less time for developing new features and fixing bugs.
 
@@ -82,36 +83,19 @@ Once a feature or fix is complete it can move to the <code>master</code> branch 
 ''Note:'' This step can only be performed by a [[Governance|project maintainer]].
 
 Once the <code>master</code> branch of a component has your desired new functionality, the next step is to cut a ''release'' version of the component. Normally, the Maven version (in the [https://maven.apache.org/pom.html#Introduction pom.xml]) on master is a ''SNAPSHOT'' version, meaning it is [[Reproducible builds|unstable]] and not yet released. However, a [[Reproducible_builds|stable]] ''release'' artifact can be deployed to the ImageJ Maven repository in one of three methods, described below.  As a rule of thumb, SciJava developers currently use:
-* The '''[[#Method 1: Release-Version Jenkins job|Release-Version Jenkins job]]''' to release components of the [[Architecture|ImageJ software stack]] (SciJava, ImgLib2, SCIFIO and ImageJ).
-* The '''[[#Method 2: release-version.sh|release-version.sh script]]''' to release most [[Fiji]] components.
-* The '''[[#Method 3: Double push to master|Double push to master]]''' approach to release other [[Fiji]] components.
+# The '''[[#Method 1: release-version.sh|release-version.sh script]]''' to release components of the [[Architecture|ImageJ software stack]] (SciJava, ImgLib2, SCIFIO and ImageJ) as well as most [[Fiji]] components.
+# The '''[[#Method 2: Double push to master|Double push to master]]''' approach to release other [[Fiji]] components.
 
-=== Method 1: Release-Version Jenkins job ===
+=== Method 1: release-version.sh ===
 
-The special <code>Release-Version</code> job of Jenkins (which is visible only to logged in Jenkins users) is triggered to release a particular artifact. There are several advantages to this approach:
+The [https://github.com/scijava/scijava-scripts/blob/aab7cfe805638efc25615fdd7c78cedaae3c7197/release-version.sh release-version.sh] script automates the steps to performing a release. It relies on the [http://maven.apache.org/maven-release/maven-release-plugin/ Maven Release plugin] to do most of the heavy lifting, but also does some extra work (e.g., to ensure releases are deployed to the correct repository).
+
+There are several advantages to this approach:
 
 * A tag is created on GitHub to easily reference the release commit
 * The "bump to next release cycle" commit is done automatically
 * The Maven POM references the correct tag rather than <code>HEAD</code>
 * This job is capable of releasing certain artifacts to OSS Sonatype (and hence to Maven Central) as appropriate
-
-'''Prerequisites:'''
-* You will need an ImageJ Jenkins account. If you haven't set this up yet, contact the [[Mailing_Lists|ImageJ-devel list]] and ask for an account. A maintainer will send you instructions.
-
-'''Steps to release:'''
-# Visit the [http://jenkins.imagej.net/job/Release-Version/ Release-Version Jenkins job] web page.
-# Click "Build with Parameters" from the left-hand menu.
-# Select your component from the dropdown list.
-# Enter the commit hash corresponding to the most recent commit of the master branch.
-# Enter the desired version number of the release.
-# Click the Build button.
-# Grab a coffee.
-
-Jenkins will take care of all the steps, including pushing the relevant commits and tags, building the code, and deploying the resultant artifact to the ImageJ Maven repository.
-
-=== Method 2: release-version.sh ===
-
-The [https://github.com/scijava/scijava-scripts/blob/aab7cfe805638efc25615fdd7c78cedaae3c7197/release-version.sh release-version.sh] script is what the [[#Release-Version Jenkins job|Release-Version Jenkins job]] uses under the hood to perform releases. It relies on the [http://maven.apache.org/maven-release/maven-release-plugin/ Maven Release plugin] to do most of the heavy lifting, but also does some extra work (e.g., to ensure releases are deployed to the correct repository).
 
 '''Prerequisites:'''
 
@@ -142,15 +126,14 @@ The [https://github.com/scijava/scijava-scripts/blob/aab7cfe805638efc25615fdd7c7
 
 {{Notice | If your project is a [https://maven.apache.org/guides/mini/guide-multiple-modules.html multi-module build], first make a commit commenting out any modules that should not be released. Then run the script from the aggregator pom directory.}}
 
-=== Method 3: Double push to master ===
+=== Method 2: Double push to master ===
 
-Historically, the "double push to master" approach was the recommended way to release—but it has now been replaced by the other two approaches. Nonetheless, there are a few components of Fiji that still use it to do their releases. A push to master happens with the POM version set to a non-SNAPSHOT—e.g., {{GitHub | org=fiji | repo=Trainable_Segmentation | commit=fd92658524dd90da8d505dad295c6f6ce3e3a188 | label=this Trainable_Segmentation commit releasing version 2.2.1}}. A second push to master is then typically done to "bump to next release cycle" after Jenkins starts building the release—e.g., {{GitHub | org=fiji | repo=Trainable_Segmentation | commit= | label=this Trainable_Segmentation commit bumps to 2.2.2-SNAPSHOT}}. This second push avoids accidentally having two different commits that purport to be the same non-SNAPSHOT version (since release versions must be unique and immutable).
+Historically, the "double push to master" approach was the recommended way to release—but it has now been replaced by the other two approaches. Nonetheless, there are a few components of Fiji that still use it to do their releases. A push to master happens with the POM version set to a non-SNAPSHOT—e.g., {{GitHub | org=fiji | repo=Trainable_Segmentation | commit=fd92658524dd90da8d505dad295c6f6ce3e3a188 | label=this Trainable_Segmentation commit releasing version 2.2.1}}. A second push to master is then typically done to "bump to next release cycle" after [[Travis CI]] starts building the release—e.g., {{GitHub | org=fiji | repo=Trainable_Segmentation | commit= | label=this Trainable_Segmentation commit bumps to 2.2.2-SNAPSHOT}}. This second push avoids accidentally having two different commits that purport to be the same non-SNAPSHOT version (since release versions must be unique and immutable).
 
 '''Prerequisites:'''
-* The repository for your project needs to be linked with a [[Project_management#Continuous_integration|continuous integration tool]] that will automatically build and deploy Maven artifacts in response to changes on GitHub, e.g. using [[Travis#Automatic_Deployment_of_Maven_Artifacts|Travis]] or [http://jenkins.imagej.net/ Jenkins]. If you're not sure if your project has this automation, [[Contact|contact us]] and we'll help you find out.
-* Familiarize yourself with the concept of [[Maven]], and in particular the idea of [http://stackoverflow.com/q/5901378 SNAPSHOT and release artifacts]. When Jenkins deploys to Maven, it is actually uploading to a separate release or SNAPSHOT repository based on the version defined in the project's pom.xml. SNAPSHOTs can be changed; releases cannot.
+* The repository for your project needs to be linked with a [[Project_management#Continuous_integration|continuous integration tool]] that will automatically build and deploy Maven artifacts in response to changes on GitHub, e.g. using [[Travis#Automatic_Deployment_of_Maven_Artifacts|Travis]]. If you're not sure if your project has this automation, [[Contact|contact us]] and we'll help you find out.
+* Familiarize yourself with the concept of [[Maven]], and in particular the idea of [http://stackoverflow.com/q/5901378 SNAPSHOT and release artifacts]. When Travis deploys to Maven, it is actually uploading to a separate release or SNAPSHOT repository based on the version defined in the project's pom.xml. SNAPSHOTs can be changed; releases cannot.
 * Familiarize yourself with the [http://git-scm.com/book/en/v2/Git-Basics-Tagging Git tagging process]. You will need to tag a commit and push the tag to a remote repository for the release process. Although Git tags can be changed or deleted over time, the convention of creating a tag to match each release creates a nice "bookmark" system for developers when they check out the code.
-
 
 '''Steps to release:'''
 # Make a commit '''on master''' that changes the version of your project to a non-SNAPSHOT.
@@ -161,9 +144,15 @@ Historically, the "double push to master" approach was the recommended way to re
 
 The disadvantage to this method is that, since the steps are not automated, there is room for error and inconsistency—not pushing the tag, not making a commit go back to a SNAPSHOT version, etc.
 
-{{Warning | This process works because Jenkins automatically builds the project in response to commits on master. Whether they are deployed as [[Maven]] releases or SNAPSHOTs is determined entirely by the version number in the pom.xml for the project. This is why it is especially important to change the version back to a SNAPSHOT after the release: only one release for a given version can exist, and once it exists it cannot be overwritten. If you create multiple git commits at the same release version, it becomes unclear which one is the [[Reproducible builds|"real" release in Maven terms]].}}
+{{Warning | This process works because Travis automatically builds the project in response to commits on master. Whether they are deployed as [[Maven]] releases or SNAPSHOTs is determined entirely by the version number in the pom.xml for the project. This is why it is especially important to change the version back to a SNAPSHOT after the release: only one release for a given version can exist, and once it exists it cannot be overwritten. If you create multiple git commits at the same release version, it becomes unclear which one is the [[Reproducible builds|"real" release in Maven terms]].}}
 
-== Phase 4: Uploaded ==
+== Phase 4: Managed ==
+
+For core projects, there is an intermediate layer tying User-facing and Developer-facing components together: the [[BOM|Bill of Materials]] (BOM). To ensure users and developers see the same functionality, components should only be uploaded to the core update sites when their version is also updated in the {{GitHub | org=scijava | repo=pom-scijava | label=pom-scijava}} BOM.
+
+To update the version of your component listed in the {{GitHub | org=scijava | repo=pom-scijava | label=pom-scijava}} BOM, you should follow the [[#Phase 1: In development|External developer]] instructions for contributing to {{GitHub | org=scijava | repo=pom-scijava | label=pom-scijava}}. By [https://help.github.com/articles/using-pull-requests/ submitting a pull request] that simply modifies the managed version of your component, you will signal to the core SciJava developers that your project is ready for upload. For example, {{GitHub | org=scijava | repo=pom-scijava | pr=40 | label=this PR}} updates the managed version of [[Bio-Formats]] to 5.5.0.
+
+== Phase 5: Uploaded ==
 {{Box
 | title = What are ImageJ update sites?
 | width = 30%
@@ -171,13 +160,13 @@ The disadvantage to this method is that, since the steps are not automated, ther
 | text =
 ImageJ [[update sites]] are what ImageJ actually queries to download updates. These update sites are versioned, but do not rely on other tools (e.g., [[Git]] or [[Maven]]) in order to function. Rather, component developers upload new versions of their component(s) using the [[ImageJ Updater]], which makes them available to end users. Typically, update sites are available as web sites via HTTP, with uploads functioning via [https://github.com/imagej/imagej-plugins-uploader-webdav WebDAV] or [https://github.com/imagej/imagej-plugins-uploader-ssh SSH/SFTP/SCP].
 }}
-Deploying to the Maven repository creates a stable release artifact of a software component, but for ImageJ-related components, that alone does not put it into the hands of users. To do that, the component must then be ''uploaded'' to an ImageJ [[update site]].
+Deploying to the Maven repository creates a stable release artifact of a software component usable by other developers. But for ImageJ-related components, that alone does not put it into the hands of users. To do that, the component must then be ''uploaded'' to an ImageJ [[update site]].
 
 === ImageJ and Fiji update sites ===
 
-For core projects, there is an additional layer tying User-facing and Developer-facing components together: the [[Architecture#Bill_of_Materials|Bill of Materials]] (BOM). To ensure users and developers see the same functionality, components should only be uploaded to the core update sites when their version is also updated in the corresponding BOM.
-
-When you have a new version of your plugin to release, you should follow the [[#Phase 1: In development|External developer]] instructions for contributing to corresponding BOM (i.e. {{GitHub | org=fiji | repo=pom-fiji | label=pom-fiji}} in this case). By [https://help.github.com/articles/using-pull-requests/ submitting a pull request] that simply modifies the [https://github.com/fiji/pom-fiji/blob/pom-fiji-15.7.0/pom.xml#L129-L259 managed version of your component], you will signal to the core Fiji developers that your project is ready for upload.
+* The core ImageJ update site reflects the state of the newest {{GitHub | org=imagej | repo=imagej | label=net.imagej:imagej}} release.
+* The core Fiji update site reflects the state of the newest {{GitHub | org=fiji | repo=fiji | label=sc.fiji:fiji}} release.
+* Actually, for the moment, both of the above statements are untrue, but they represent the direction we are heading. Right now, core components of both ImageJ and Fiji are distributed manually via the Java-8 update site. See the [[Java 8]] page for details.
 
 === External update sites ===
 
