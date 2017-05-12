@@ -104,7 +104,7 @@ For the script to appear in the ImageJ menus, the following must apply:
 #* ".py" for jython,
 #* ".rb" for jruby,
 #* ".clj" for clojure,
-#* ".bs" for beanshell script, and
+#* ".bsh" for beanshell, and
 #* ".ijm" for ImageJ 1.x macros.
 # The script name contains a '_' (underscore) character, e.g. "MyScript_.ijm".
 
