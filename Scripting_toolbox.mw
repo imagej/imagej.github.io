@@ -75,7 +75,7 @@ imp.show();
 
 <source lang="java">
 path = "/path/to/file";
-run("Bio-Formats Importer", "open=" + path + "autoscale color_mode=Default view=Hyperstack stack_order=XYCZT");
+run("Bio-Formats Importer", "open=" + path + " autoscale color_mode=Default view=Hyperstack stack_order=XYCZT");
 </source>
 
 ==== Javascript ====
