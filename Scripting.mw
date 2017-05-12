@@ -97,7 +97,7 @@ For the script to appear in the ImageJ menus, the following must apply:
 | width = 30%
 | float = right
 }}
-# The script file is saved in the <code>ImageJ.app/plugins</code> directory (or a subdirectory thereof).
+# The script file is saved in the <code>ImageJ.app/scripts</code> or the <code>ImageJ.app/plugins/Scripts</code> directory (or a subdirectory thereof).
 # The script name ends in a supported script extension. For example
 #* ".js" for javascript,
 #* ".py" for jython
@@ -110,9 +110,11 @@ For the script to appear in the ImageJ menus, the following must apply:
 
 The extension will be stripped and any underscores will be turned into spaces before the script is added to the menus.
 
-Scripts in the top-level <code>ImageJ.app/plugins</code> directory will appear at the bottom of the ''Plugins'' menu. Scripts can be placed in other menus by nesting subdirectories, for example placing a script in the <code>ImageJ.app/plugins/Scripts/File</code> directory will add it to the ''File'' menu.
+Scripts in the top-level <code>ImageJ.app/plugins</code> directory will appear at the bottom of the ''Plugins'' menu. Scripts can be placed in other menus by nesting subdirectories, for example placing a script in the <code>ImageJ.app/scripts/File</code> directory will add it to the ''File'' menu.
 
 If you aren't able to find your script, you can always run the [[Using_the_Command_Launcher|Command Finder]] to verify its location (or absence).
+
+Commands added to the menu in the described way can be called from other scripts. Use the [[macro recorder]] to get the required code for doing so.
 
 = Running scripts in headless mode =
 
