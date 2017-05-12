@@ -99,11 +99,13 @@ For the script to appear in the ImageJ menus, the following must apply:
 }}
 # The script file is saved in the <code>ImageJ.app/scripts</code> or the <code>ImageJ.app/plugins/Scripts</code> directory (or a subdirectory thereof).
 # The script name ends in a supported script extension. For example
+#* ".groovy" for groovy,
 #* ".js" for javascript,
-#* ".py" for jython
-#* ".rb" for jruby
-#* ".clj" for clojure, and
-#* ".bs" for beanshell script.
+#* ".py" for jython,
+#* ".rb" for jruby,
+#* ".clj" for clojure,
+#* ".bs" for beanshell script, and
+#* ".ijm" for ImageJ 1.x macros.
 # The script name contains a '_' (underscore) character, e.g. "MyScript_.ijm".
 
 {{Fiji | Replace <code>ImageJ.app</code> with <code>Fiji.app</code>}}
