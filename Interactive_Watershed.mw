@@ -3,7 +3,7 @@ __TOC__
 
 {{Infobox
 | software               = ImageJ/Fiji
-| name                   = Interactive H-Watershed
+| name                   = Interactive H_Watershed
 | author                 = [[User:Benoit|Benoit Lombardot]]
 | maintainer             = [[User:Benoit|Benoit Lombardot]]
 | released               = 08 May 2017
@@ -17,7 +17,7 @@ __TOC__
 
 
 [[File:InteractiveWatershed_illustration.PNG|center|500px]]
-<div align="center">'''Figure 1:''' Illustration of the interactive watershed plugin showing the plugin control panel in front of a segmentation overlaying raw microspy data. The raw data show a section of a platynereis organism during early development. Data were acquired by Mette Handberg-Thorsager (Tomancak lab, MPI-CBG, Dresden)</div>
+<div align="center">'''Figure 1:''' Illustration of the interactive watershed plugin showing the plugin control panel in front of a segmentation overlaying raw microscopy data. The raw data shows a section of a Platynereis embryo during early development. Data were acquired by Mette Handberg-Thorsager (Tomancak lab, MPI-CBG, Dresden and Keller lab, HHMI - Janelia Research Campus)</div>
 
 =Introduction=
 
