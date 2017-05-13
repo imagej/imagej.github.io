@@ -1640,9 +1640,13 @@ print twoDimArr
 
 === Inline java code inside jython: the Weaver ===
 
-Jython is great at doing high-level operations on images. But sometimes one wants to edit pixels specifically. Such low-level loops in jython are far from the performance offered by java. But writing a special-purpose java class for a minor piece of code is painful and requires specific java skills regarding code compilation and classpath management.
+Jython is great at doing high-level operations on images. But sometimes one wants to edit pixels specifically. The performance of low-level loops in jython are far from the performance offered by java. But writing a special-purpose java class for a minor piece of code is painful and requires specific java skills regarding code compilation and classpath management.
 
-The weaver removes all the pain. Here is an example, where the <i>float[]</i> pixels array of the current image is iterated to compute the mean intensity:
+The weaver removes all the pain.
+
+The weaver offers two ways to embed java code: the <i>inline</i> and the <i>method</i>.
+
+Here is an example using the <i>inline</i> approach, where the <i>float[]</i> pixels array of the current image is iterated to compute the mean intensity:
 
 <source lang="python">
 from fiji.scripting import Weaver
@@ -1654,6 +1658,12 @@ imp = IJ.getImage()
 
 fp = imp.getProcessor().convertToFloat()
 pixels = fp.getPixels()  # a float array, float[]
+
+# Three arguments:
+# 1. The java code to embed.
+# 2. The dictionary of bindings, where the key is the name to use within the java code, and the value is the object to bind to it.
+# 3. The return type (optional; defaults to java.lang.Object).
+
 w = Weaver.inline(
     """
     double sum = 0;
@@ -1673,11 +1683,10 @@ The above is trivial and it is meant only as an example (there are better ways t
 
 Internally, bindings are represented as fields in a java class, set as either primitives (like double, int ...) or the least general public class or superclass of the object to bind.
 
-There is a fourth optional argument for <i>inline</i> (boolean) to show the generated java code in a tab of the Script Editor.
-
-A better example that exploits the capabilities of the Weaver is the following: compile the function once, and then call it over and over with different parameters. The bindings cannot be changed, but if they are arrays or collections, one can change the elements of these collections. For example, to obtain a new ImageStack that is the result of applying XOR to each consecutive pair of slices (which will give you the boundaries of objects):
+A better example that exploits the capabilities of the <i>Weaver.inline</i> is the following: compile the function once, and then call it over and over with different parameters. The bindings cannot be changed, but if they are arrays or collections, one can change the elements of these collections. For example, to obtain a new <i>ImageStack</i> that is the result of applying XOR to each consecutive pair of slices (which will give you the boundaries of objects):
 
 <source lang="python">
+from ij import IJ, ImagePlus, ImageStack
 from fiji.scripting import Weaver
 
 # The currently open image, an 8-bit stack
@@ -1710,6 +1719,89 @@ for i in range(2, imp.getNSlices()+1):
 
 ImagePlus("XORed stack", stackXOR).show()
 </source>
+
+
+The above approach with <i>Weaver.inline</i> becomes a bit verbose and ad-hoc, having to edit the contents of the <i>slices</i> list.
+
+Instead, here is the same code but using the <i>Weaver.method</i> approach, where, instead of bindings, we pass the arrays directly as method arguments. This approach requires knowing a bit more about java, but not much, to declare a full java class method (or any number of them). The returned <i>w</i> object contains that method, which we can invoke with, in this case, the two byte arrays as arguments:
+
+<source lang="python">
+from ij import IJ, ImagePlus, ImageStack
+from fiji.scripting import Weaver
+
+# The currently open image, an 8-bit stack
+imp = IJ.openImage("http://imagej.net/images/bat-cochlea-volume.zip")
+
+w = Weaver.method(
+  """
+  public byte[] xor(byte[] pix1, byte[] pix2) {
+    byte[] xor = new byte[pix1.length];
+    for (int i=0; i<pix1.length; i++) {
+        xor[i] = (byte)(pix1[i] ^ pix2[i]);
+    }
+    return xor;
+  }
+  """)
+
+stack = imp.getStack()
+stackXOR = ImageStack(stack.width, stack.height)
+
+for i in range(2, imp.getNSlices()+1):
+  # Invoke native code
+  stackXOR.addSlice( str(i-1), w.xor(stack.getPixels(i-1), stack.getPixels(i)) )
+
+ImagePlus("XORed stack", stackXOR).show()
+</source>
+
+
+There are two additional, optional arguments for <i>Weaver.inline</i> and <i>Weaver.method</i>:
+
+ 1. A list of classes to insert as imports, so that instead of fully qualified class names
+<source lang="java">
+  ij.process.FloatProcessor ip = new ij.process.FloatProcessor(100, 100)
+</source>
+... one can write the much briefer:
+<source lang="java">
+  FloatProcessor ip = new FloatProcessor(100, 100)
+</source>
+
+ 2. A boolean, to show the generated java code in a tab of the Script Editor.
+
+Here is a small example, using <i>Weaver.method</i>, that uses imports. The script subtracts "10" from every pixel:
+
+<source lang="python">
+from net.imglib2.type.numeric.real import FloatType
+from net.imglib2.img.display.imagej import ImageJFunctions as IJF
+from fiji.scripting import Weaver
+from ij import IJ
+from net.imglib2 import Cursor, IterableInterval
+from net.imglib2.type.numeric.real import FloatType
+
+# Grab a 32-bit image
+imp = IJ.getImage()
+
+# View it as an ImgLib2 image
+img = IJF.wrap(imp)
+
+# Declare a java method to subtract a value from every pixel
+w = Weaver.method(
+  """
+  public void subtract(final IterableInterval<FloatType> img, final float value) {
+    final FloatType v = new FloatType(-value);
+    final Cursor<FloatType> cursor = img.cursor();
+    while (cursor.hasNext()) {
+      cursor.fwd();
+      cursor.get().add(v);
+    }
+  }
+  """,
+  [IterableInterval, Cursor, FloatType])
+
+w.subtract(img, 10)
+
+imp.updateAndDraw()
+</source>
+
 
 Of course the Weaver is a java library, and may be used from any scripting language such as [[Javascript Scripting|Javascript]], [[JRuby Scripting|JRuby]], and [[:Category:Scripting|others]].
 
