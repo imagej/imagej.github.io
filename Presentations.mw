@@ -1,5 +1,23 @@
 {{Learn}}__TOC__
 
+== Living workshops ==
+
+These materials are regularly updated, and intended to teach ImageJ and Fiji at introductory, intermediate and advanced levels. The [[LOCI]] group uses them to teach ImageJ at the [http://www.mbl.edu/education/courses/analytical-quantitative-light-microscopy/ AQLM] course every year, as well as locally.
+
+{| class="program"
+! style="padding-left: 10px !important" | '''Title'''
+! style="padding-left: 10px !important" | '''Resources'''
+|-
+| style="font-size: 24px; padding: 0.3em 1em 0.3em 10px !important" | Introduction to Fiji
+| style="font-size: 24px; padding: 0.3em 1em 0.3em 10px !important" | [http://imagej.github.io/presentations/fiji-introduction/ slides]
+|-
+| style="font-size: 24px; padding: 0.3em 1em 0.3em 10px !important" | Segmentation in Fiji
+| style="font-size: 24px; padding: 0.3em 1em 0.3em 10px !important" | [http://imagej.github.io/presentations/fiji-segmentation/ slides]
+|-
+| style="font-size: 24px; padding: 0.3em 1em 0.3em 10px !important" | Scripting with Fiji
+| style="font-size: 24px; padding: 0.3em 1em 0.3em 10px !important" | [http://imagej.github.io/presentations/fiji-scripting/ slides]
+|}
+
 == Talks ==
 
 {| class="program"
@@ -254,26 +272,6 @@
 ! '''Presenter'''
 ! '''Title'''
 ! '''Resources'''
-|-
-| colspan=5 class="section-major" | '''Living workshops (regularly updated)'''
-|-
-| -
-| [[LOCI]]
-| Introduction to Fiji
-|
-[http://imagej.github.io/presentations/fiji-introduction/ slides]
-|-
-| -
-| [[LOCI]]
-| Segmentation in Fiji
-|
-[http://imagej.github.io/presentations/fiji-segmentation/ slides]
-|-
-| -
-| [[LOCI]]
-| Scripting with Fiji
-|
-[http://imagej.github.io/presentations/fiji-scripting/ slides]
 |-
 | colspan=5 class="section-major" | '''[http://eubias.org/NEUBIAS/neubias2020-conference/symposium2017-lisbon/ 2017 NEUBIAS2020]'''
 |-
