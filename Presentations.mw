@@ -5,9 +5,11 @@
 These materials are regularly updated, and intended to teach ImageJ and Fiji at introductory, intermediate and advanced levels. The [[LOCI]] group uses them to teach ImageJ at the [http://www.mbl.edu/education/courses/analytical-quantitative-light-microscopy/ AQLM] course every year, as well as locally.
 
 {| class="program"
+!
 ! style="padding-left: 10px !important" | '''Title'''
 ! style="padding-left: 10px !important" | '''Resources'''
 |-
+| rowspan="3" style="padding: 0 !important" | [[File:fiji-intro-slide.png|300px|link=http://imagej.github.io/presentations/fiji-introduction/]]
 | style="font-size: 24px; padding: 0.3em 1em 0.3em 10px !important" | Introduction to Fiji
 | style="font-size: 24px; padding: 0.3em 1em 0.3em 10px !important" | [http://imagej.github.io/presentations/fiji-introduction/ slides]
 |-
