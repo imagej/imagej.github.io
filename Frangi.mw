@@ -10,7 +10,7 @@
 | status                 = 
 | category               = [[:Category:Plugins|Plugins]]
 }}
-This plugin implements the algorithm for detection of vessel- or tube-like structures in 2D and 3D images described Frangi et al 1998. <ref>{{cite journal|author=Alejandro F. Frangi, Wiro J. Niessen, Koen L. Vinc and Max A. Viergever|title=Multiscale Vessel Enhancement Filtering|journal=Medical Image Computing and Computer-Assisted Interventation — MICCAI’98 Lecture Notes in Computer Science|year=1998|volume=1496/1998|page=130|url=http://www.tecn.upf.edu/~afrangi/articles/miccai1998.pdf}}</ref>
+This plugin implements the algorithm for detection of vessel- or tube-like structures in 2D and 3D images described Frangi et al 1998. <ref>{{cite journal|author=Alejandro F. Frangi, Wiro J. Niessen, Koen L. Vinc and Max A. Viergever|title=Multiscale Vessel Enhancement Filtering|journal=Medical Image Computing and Computer-Assisted Interventation — MICCAI’98 Lecture Notes in Computer Science|year=1998|volume=1496/1998|page=130|url=http://www.tecn.upf.es/~afrangi/articles/miccai1998.pdf}}</ref>
 
 In my experience, this method produces consistently better results than the [[Tubeness]] plugin for isotropic image data, although it is significantly slower.
 
