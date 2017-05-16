@@ -175,42 +175,42 @@ import trainableSegmentation.WekaSegmentation;
 import ij.io.FileSaver;
 import ij.IJ;
 import ij.ImagePlus;
-
+ 
 // starting time
 startTime = System.currentTimeMillis();
-
+ 
 // caculate probabilities?
 getProbs = resultMode.equals( "Probabilities" );
 
+// create segmentator
+segmentator = new WekaSegmentation();
+// load classifier
+segmentator.loadClassifier( modelPath.getCanonicalPath() );
+ 
 // get list of input images
 listOfFiles = inputDir.listFiles();
 for ( i = 0; i < listOfFiles.length; i++ )
 {
-	// process only files (do not go into sub-folders)
-	if (listOfFiles[ i ].isFile())
-	{
-		// try to read file as image
-		image = new ImagePlus( listOfFiles[i].getCanonicalPath() );
-		if( image != null )
-		{ 		
-			// create segmentator
-			segmentator = new WekaSegmentation( image );
-			// load classifier
-			segmentator.loadClassifier( modelPath.getCanonicalPath() );
-			// apply classifier and get results
-			segmentator.applyClassifier( getProbs );
-			result = segmentator.getClassifiedImage();
-			// save result as TIFF in output folder
-			outputFileName = listOfFiles[ i ].getName().replaceFirst("[.][^.]+$", "") + ".tif";
-			new FileSaver( result ).saveAsTiff( outputDir.getPath() + File.separator + outputFileName );
-
-			// force garbage collection (important for large images)
-			segmentator = null;
-			result = null; 
-			image = null;
-			System.gc();
-		}
-	}
+    // process only files (do not go into sub-folders)
+    if( listOfFiles[ i ].isFile() )
+    {
+        // try to read file as image
+        image = new ImagePlus( listOfFiles[i].getCanonicalPath() );
+        if( image != null )
+        {                   
+            // apply classifier and get results (0 indicates number of threads is auto-detected)
+            result = segmentator.applyClassifier( image, 0, getProbs );
+            
+            // save result as TIFF in output folder
+            outputFileName = listOfFiles[ i ].getName().replaceFirst("[.][^.]+$", "") + ".tif";
+            new FileSaver( result ).saveAsTiff( outputDir.getPath() + File.separator + outputFileName );
+ 
+            // force garbage collection (important for large images)
+            result = null; 
+            image = null;
+            System.gc();
+        }
+    }
 }
 // print elapsed time
 estimatedTime = System.currentTimeMillis() - startTime;
