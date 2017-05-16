@@ -133,7 +133,7 @@ segmentator = new WekaSegmentation();
 segmentator.loadClassifier( "my-cool-trained-classifier.model" );
 </source>
 
-And the apply it to any test image as we did above.
+And the apply it to any test image as we did above (see "Applying classifier" section).
 
 === Setting the classifier ===
 By default, the classifier is a multi-threaded implementation of a random forest. You can change it to any other classifier available in the [http://weka.sourceforge.net/doc.dev/weka/classifiers/Classifier.html  WEKA API]. For example, we can use SMO:
