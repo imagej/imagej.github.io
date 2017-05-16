@@ -123,6 +123,18 @@ segmentator.saveData( "my-traces-data.arff" );
 segmentator.loadTrainingData( "my-traces-data.arff" );
 </source>
 
+== Testing mode ==
+Since Trainable Weka Segmentation v3.2.8, a classifier can be loaded into a WekaSegmentation object created without a training image, that is, for testing purposes only:
+
+<source lang="java">
+// create testing segmentator
+segmentator = new WekaSegmentation();
+// load classifier from file
+segmentator.loadClassifier( "my-cool-trained-classifier.model" );
+</source>
+
+And the apply it to any test image as we did above.
+
 === Setting the classifier ===
 By default, the classifier is a multi-threaded implementation of a random forest. You can change it to any other classifier available in the [http://weka.sourceforge.net/doc.dev/weka/classifiers/Classifier.html  WEKA API]. For example, we can use SMO:
 
