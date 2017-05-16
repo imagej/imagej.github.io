@@ -123,7 +123,7 @@ segmentator.saveData( "my-traces-data.arff" );
 segmentator.loadTrainingData( "my-traces-data.arff" );
 </source>
 
-== Testing mode ==
+==== Testing mode ====
 Since Trainable Weka Segmentation v3.2.8, a classifier can be loaded into a WekaSegmentation object created without a training image, that is, for testing purposes only:
 
 <source lang="java">
