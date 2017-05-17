@@ -1,7 +1,5 @@
 '''SlideJ'''
 
-''Synopsis''
-
 SlideJ is an ImageJ plugin for processing digital slides (also known as virtual slides, WSI, etc). SlideJ is an ImageJ plugin for processing digital slides (also known as virtual slides, WSI, etc). SlideJ has been tested on slides in the following formats: Aperio .SVS, Leica .SCN, Hamamatsu .NDPI, Mirax, Generic tiled TIFF and regular TIFF. It works by splitting the slide in square tiles and iterating a user-configurable macro on each of them.
 
 SlideJ can be called directly from the ImageJ user interface, but as many other plugins, also from another macro. At launch, a modal dialog is shown to configure the main execution parameters.
@@ -35,3 +33,7 @@ To test SlideJ, create a folder (e.g., "in") and put digital slides into it; cre
 ''License''
 
 SlideJ is licensed under LGPL 3.0.
+
+Authors
+
+SlideJ is developed by Giulia Lucrezia Baroni, Vincenzo Della Mea and David Pilutti at the [http://mitel.dimi.uniud.it/ Medical Informatics, Telemedicine and eHealth Lab], dept. of Mathematics, Computer Science and Physics, University of Udine, Italy.
