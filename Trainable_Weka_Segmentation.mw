@@ -9,7 +9,9 @@
 | latest version         = 3.2.8, May 15<sup>th</sup>, 2017 (Weka v3.9.0)
 | status                 = stable, active
 | category               = [[:Category:Segmentation|Segmentation]], [[:Category:Machine Learning|Machine Learning]]
-}}{{TOC}}
+}}{|
+|style="vertical-align:top" |[[Image:TWS-pipeline.png|700px|Trainable Weka Segmentation pipeline overview.]]
+|}{{TOC}}
 '''Trainable''': this plugin can be trained to learn from the user input and perform later the same task in unknown (test) data.
 
 '''Weka''': it makes use of all the powerful tools and classifiers from the latest version of [http://www.cs.waikato.ac.nz/ml/weka/ Weka].
