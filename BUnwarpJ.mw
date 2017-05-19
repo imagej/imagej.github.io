@@ -148,9 +148,11 @@ In the last release, the plugin presents the following Input/Output options:
 * '''Compare Elastic/Raw Transformations''': it calculates the warping index of an elastic and a raw transformation (same direction). The second transformation file must be in "raw" format, i.e. the same format as the files created with the "Convert Transformation To Raw" option.
 * '''Compare Raw Transformations''': it calculates the warping index of two raw transformations (same direction). The transformation file must be in "raw" format, i.e. the same format as the files created with the "Convert Transformation To Raw" option.
 * '''Convert Transformation To Raw''': it converts a B-spline transformation file into a raw transformation file.
+* '''Convert Transformation To Elastic''': it converts a raw transformation file into a B-spline transformation file (approximation).
 * '''Compose Elastic Transformations''': it composes two elastic transformations into a raw transformation. The input files must be in the B-spline transformation format, and the output file will be in "raw" format.
 * '''Compose Raw Transformations''': it composes two raw transformations into another raw transformation. Both input and output files will be in "raw" format.
 * '''Compose Raw and Elastic Transformations''': it composes one raw transformation and one elastic transformation into a raw transformation.
+* '''Invert Raw Transformation''': it approximates the inverse of a raw transformation.
 * '''Evaluate Image Similarity''': it calculates de current similarity error between the source and target images. The results is displayed in the "Results" window.
 * '''Adapt Coefficients''': it transforms the coefficients of an specific elastic transformation according to a real image factor. Very useful for example when we have very large images. We can register subsampled versions of our images (let us say 4 times smaller) and then adapt the result transformations (image factor = 4) so we can apply them to the high resolution images.
 * '''Load Source Mask''': it loads a mask from file (binary image) in the source image.
