@@ -183,6 +183,15 @@ call("bunwarpj.bUnwarpJ_.loadElasticTransform", "/my-path-to-transf/source_elast
 <source lang=java>
 call("bunwarpj.bUnwarpJ_.loadRawTransform", "/my-path-to-transf/source_raw_transf.txt", "target-image.png", "source-image.png");
 </source>
+* Compare opposite elastic transforms:
+<source lang=java>
+call("bunwarpj.bUnwarpJ_.compareOppositeElasticTransforms", "/my-path-to-transf/inverse_transf.txt", "/my-path-to-transf/direct_transf.txt", "target-image.png", "source-image.png");
+</source>
+* Compare elastic and raw transforms (same direction):
+<source lang=java>
+call("bunwarpj.bUnwarpJ_.compareElasticRawTransforms", "/my-path/source_direct_transf.txt", "/my-path/source_direct_transf_RAW.txt", "target-image.png", "source-image.png");
+</source>
+* ... and so on.
 
 =====Old methods=====
 Before bUnwarpJ v2.6.7, these calls were done using methods that work on image files (not open in ImageJ). For backward compatibility reasons, these methods are still usable:
