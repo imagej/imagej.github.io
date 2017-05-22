@@ -247,7 +247,13 @@ rt.show('Fit param for y = a + (b-a)*exp(-(x-c)*(x-c)/(2*d*d)')
 
 == Uses of this plugin ==
 
-This plugin has been used at least in the following publication: 
+Since there is no publication associated with this plugin, it is hard tracking where it is used. However people wrote me and helped building the following list. The Directionality plugin has been used at least in the following publications: 
+
+* Natalie Reznikov, Rotem Almany-Magal, Ron Shahar, Steve Weiner, [https://doi.org/10.1016/j.bone.2012.10.034 Three-dimensional imaging of collagen fibril organization in rat circumferential lamellar bone using a dual beam electron microscope reveals ordered and disordered sub-lamellar structures], Bone, Volume 52, Issue 2, February 2013, Pages 676-683, ISSN 8756-3282.
+
+* Natalie Reznikov, Ron Shahar, Steve Weiner, [https://doi.org/10.1016/j.bone.2013.10.023  Three-dimensional structure of human lamellar bone: The presence of two different materials and new insights into the hierarchical organization], Bone, Volume 59, February 2014, Pages 93-104, ISSN 8756-3282. 
+
+* These two last papers and their methodology have been put in perspective on [http://www.weizmann.ac.il/Structural_Biology/Weiner/bone-3d-structure-and-function-together-ron-shahar Pr. Weiner lab webpage].
 
 * [http://www.sciencedirect.com/science/article/pii/S0165027011004171 '''Woolley et al.''' In situ characterization of the brain-microdevice interface using Device Capture Histology. ''Journal of Neuroscience Methods (2011) vol. 201 (1) pp. 67-77'']
 
