@@ -163,8 +163,62 @@ The following tutorials show how to integrate a module of each kind in TrackMate
 TrackMate LoG detector will crash if you have the [[List_of_update_sites|Mosaic suite update site]] activated. Apparently they ship something that interferes with the FFT code used by the LoG detector. The bug report can be read [http://fiji.sc/bugzilla/show_bug.cgi?id=806 on BugZilla]. 
 
 == Extensions ==
-* [[Find_maxima_(Trackmate_module)|Find maxima detector]]
 
+Please tell us if you have one that you want to advertise here!
+
+=== Downloadable jars ===
+
+Thanks to Travis, the extension we are aware of are built automatically and can be downloaded following the links below. They point to a simple _.jar file that you just have to drop in your _Fiji.app/plugins_ folder. TrackMate will recognise the extra modules it ships and will integrate them in the plugin.
+
+{| class="wikitable"
+! Extension name
+! Content
+! Link to jar file
+! Source code
+|-
+| TrackMate-extras
+| Various small additions to TrackMate:
+
+* Multi-channel spot mean intensity analyzer: Computes the mean intensity of spots in up to 10 channels.
+* Multi-channel track mean intensity analyzer: Computes the track mean intensity of its spots in up to 10 channels.
+* ROI exporter: Exports spots as ImageJ ROIs.
+| [http://maven.imagej.net/service/local/repositories/releases/content/org/scijava/TrackMate_extras/0.0.4/TrackMate_extras-0.0.4.jar on ImageJ maven Nexus]
+| [https://github.com/tinevez/TrackMate-extras on Github]
+|-
+| [[Find maxima (Trackmate module)]]
+| This plugin implements the find maxima detection algorithm for TrackMateas in the <i>Process -> Find Maxima...</i> command. The results are almost the same. Subpixel accuracy is activated by default.
+| [https://github.com/thorstenwagner/ij-trackmate-findmaxima/releases/latest on Github]
+| [https://github.com/thorstenwagner/ij-trackmate-findmaxima on Github]
+|}
+
+
+=== Extra source code ===
+
+
+[https://github.com/chicoronny/RonnyTrackMate Ronny Sczech TrackMate repository] contains the source code to various TrackMate enhancement, in Java and macros:
+
+
+* Linear Tracker for TrackMate.
+
+Principle:
+** Link and set a flag for all objects that are sticking more than 80% of the time lapse movie, i.e not moving within a preset radius (Stick radius)
+** Establish a first possible link from an object from the first frame with an object in the second frame within an initial radius
+** Estimate the position of the object in the next frame (3rd) with the obtained vector
+** Link to an object near to this estimated position within a succeeding radius
+** Go on to the next frame until the last is reached
+
+* Batch Mode Plug-in to run TrackMate headless from a configuration file (example:Trackmate.properties) which has to placed    in the parent folder of the processed files.
+
+* Binary Detector to detect objects from a binary image using the ParticleAnalyzer class from ImageJ.
+
+* Export tracks to SQLite.
+
+* Export tracks to CSV files.
+
+
+=== Documentation ===
+
+* [[Find_maxima_(Trackmate_module)|Find maxima detector]] from Thorsten Wagner.
 
 == Who uses TrackMate ==
 
