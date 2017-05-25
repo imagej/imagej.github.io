@@ -8,7 +8,7 @@ JRuby scripting in ImageJ is a nice alternative to scripting using ImageJ's macr
 
 ''(These advantages, of course, are shared by the [[Jython Scripting]], [[Clojure Scripting]], Beanscript and [[Javascript Scripting]] bundled in Fiji.)''
 
-If you have any questions or suggestions about JRuby scripting in ImageJ, please [[Mailing Lists|contact the mailing list]].  Have fun!
+If you have any questions or suggestions about JRuby scripting in ImageJ, please contact the [https://forum.imagej.net ImageJ forum]. Have fun!
 
 == Tutorial ==
 
@@ -226,9 +226,14 @@ Some example output:
 
 [[Image:Anaglyph.png|Example anaglyph image]]
 
+== Script Parameters ==
+When using [[Script Parameters]], e.g., in the [[Script Editor]], you need to use a <tt>$</tt> before <tt>@ variables</tt>, due to a limitation in the scoping, as in this example from [[Script Templates]]:
+
+{{GitHubEmbed|org= scijava|repo=scripting-jruby|path=src/main/resources/script_templates/Intro/Greeting.rb|label=Greeting.rb}}
+
 == Library ==
 
-There is a library called {{GitHub|repo=fiji|path=plugins/JRuby/imagej.rb|label=imagej.rb}} for convenience. It contains a number of useful functions related to ImageJ.
+There is a library called {{GitHub|repo=fiji|path=plugins/JRuby/imagej.rb|label=imagej.rb}} for convenience. It contains a number of useful functions related to ImageJ. It is loaded by default when creating a new JRuby script in the [[Script Editor]].
 
 == What next? ==
 
@@ -236,7 +241,7 @@ You may want to first have a quick look at the [[Scripting Help]] page for gener
 
 JRuby offers some more nice features, have a look at them in the JRuby documentation: https://github.com/jruby/jruby/wiki/CallingJavaFromJRuby
 
-And of course, if you want to know how to use fiji's classes, visit:  http://fiji.sc/javadoc/
+And of course, if you want to know how to use a class from ImageJ or any of its projects, visit:  https://javadoc.imagej.net.
 
 
 
