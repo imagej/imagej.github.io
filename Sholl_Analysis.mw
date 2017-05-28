@@ -75,6 +75,8 @@ Note the reversal of ''[[#Cf._Segmentation|Cf. Segmentation]] output'' and how t
 # Choose the center of analysis using the drop down menu in the main prompt listing SWC tags (''axon'', ''dendrite'', ''soma'', etc.). Note that if your tracings are not tagged you can do so in [[Simple Neurite Tracer]]
 # Adjust the default [[#Parameters|Parameters]]
 # Problems? Read the  [[#FAQ|FAQs]]
+
+
 {{Tip
 | id = external-traces
 | tip = You can use  {{bc|color=white|Sholl Analysis (Tracings)...}} to analyze reconstructed data from any software capable of [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html SWC] export such as [https://sourceforge.net/projects/py3dn/ Py3DN], [http://www.reading.ac.uk/neuromantic/ Neuromantic], [http://research.mssm.edu/cnic/tools-ns.html NeuronStudio], [http://www.neutracing.com neuTube], or [http://www.vaa3d.org/ Vaa3D]), not just [[Simple Neurite Tracer]]. In addition, [http://cng.gmu.edu:8080/Lm/ L-Measure], [http://neuronland.org/NL.html NLMorphologyConverter] or [http://www.neuron.yale.edu/neuron/ Neuron] can also be used to convert several file formats (including proprietary formats from closed-source commercial software such as Neurolucida®, MicroBrightField, Inc.) into SWC.}}
