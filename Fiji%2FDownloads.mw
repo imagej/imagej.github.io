@@ -49,40 +49,40 @@ This sections offers older downloads of Fiji, preserved just prior to introducin
 | style="font-size: 12px; text-align: center; white-space: nowrap" | no-JRE
 |-
 | style="white-space: nowrap" | 2015 December 22
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-win64-20151222.zip {{WinLogo|24px}}]
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-win32-20151222.zip {{WinLogo|24px}}]
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-macosx-20151222.dmg {{MacLogo|24px}}]
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20151222.zip {{LinuxLogo|24px}}]
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20151222.zip {{LinuxLogo|24px}}]
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20151222.zip {{Logo|Fiji|size=24px}}]
+| style="font-size: 12px; text-align: center" | {{Logo|Windows|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20151222.zip}}
+| style="font-size: 12px; text-align: center" | {{Logo|Windows|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20151222.zip}}
+| style="font-size: 12px; text-align: center" | {{Logo|MacOS|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-macosx-20151222.dmg}}
+| style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20151222.zip}}
+| style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20151222.zip}}
+| style="font-size: 12px; text-align: center" | {{Logo|Fiji|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20151222.zip}}
 | Just prior to the [[2015-12-22 - The road to Java 8|transition to Java 8]]; it still works with Java 6.
 |-
 | style="white-space: nowrap" | 2014 November 25
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-win64-20141125.zip {{WinLogo|24px}}]
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-win32-20141125.zip {{WinLogo|24px}}]
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-macosx-20141125.dmg {{MacLogo|24px}}]
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20141125.zip {{LinuxLogo|24px}}]
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20141125.zip {{LinuxLogo|24px}}]
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20141125.zip {{Logo|Fiji|size=24px}}]
+| style="font-size: 12px; text-align: center" | {{Logo|Windows|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20141125.zip}}
+| style="font-size: 12px; text-align: center" | {{Logo|Windows|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20141125.zip}}
+| style="font-size: 12px; text-align: center" | {{Logo|MacOS|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-macosx-20141125.dmg}}
+| style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20141125.zip}}
+| style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20141125.zip}}
+| style="font-size: 12px; text-align: center" | {{Logo|Fiji|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20141125.zip}}
 | Just prior to a [https://groups.google.com/d/msg/fiji-devel/49a7q7e9g44/xuhp0nQRVnAJ big update] to facilitate [[reproducible builds]].
 |-
 | style="white-space: nowrap" | 2014 June 02
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-win64-20140602.zip {{WinLogo|24px}}]
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-win32-20140602.zip {{WinLogo|24px}}]
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-macosx-20140602.dmg {{MacLogo|24px}}]
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20140602.zip {{LinuxLogo|24px}}]
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20140602.zip {{LinuxLogo|24px}}]
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20140602.zip {{Logo|Fiji|size=24px}}]
+| style="font-size: 12px; text-align: center" | {{Logo|Windows|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20140602.zip}}
+| style="font-size: 12px; text-align: center" | {{Logo|Windows|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20140602.zip}}
+| style="font-size: 12px; text-align: center" | {{Logo|MacOS|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-macosx-20140602.dmg}}
+| style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20140602.zip}}
+| style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20140602.zip}}
+| style="font-size: 12px; text-align: center" | {{Logo|Fiji|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20140602.zip}}
 | Just prior to [[2014-06-04 - ImageJ 2.0.0 release candidate|some big changes to ImageJ2 under the hood]].
 |-
 | style="white-space: nowrap" | 2013 July 15
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-win64-20130715.zip {{WinLogo|24px}}]
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-win32-20130715.zip {{WinLogo|24px}}]
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-macosx-20130715.dmg {{MacLogo|24px}}]
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20130715.zip {{LinuxLogo|24px}}]
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20130715.zip {{LinuxLogo|24px}}]
-| style="font-size: 12px; text-align: center" | [http://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20130715.zip {{Logo|Fiji|size=24px}}]
-| Just prior to [http://fiji-devel.54424.x6.nabble.com/Upcoming-exciting-changes-in-Fiji-td248.html extensive changes reconciling Fiji with ImageJ2].
+| style="font-size: 12px; text-align: center" | {{Logo|Windows|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20130715.zip}}
+| style="font-size: 12px; text-align: center" | {{Logo|Windows|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20130715.zip}}
+| style="font-size: 12px; text-align: center" | {{Logo|MacOS|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-macosx-20130715.dmg}}
+| style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20130715.zip}}
+| style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20130715.zip}}
+| style="font-size: 12px; text-align: center" | {{Logo|Fiji|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20130715.zip}}
+| Just prior to [https://groups.google.com/d/msg/fiji-devel/KpuWJ6kNgbk/XX2pR8jjam8J extensive changes reconciling Fiji with ImageJ2].
 |}
 
 == See also ==
