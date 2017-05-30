@@ -42,9 +42,7 @@ Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/java/ipnat/skel|la
 |- valign="top"
 |Particles classifier
 |{{bc|Analyze|Skeleton|Classify Particles Using Skeleton}}
-|Tags particles according to skeleton features.
-Runs {{bc|Analyze|Analyze Particles}} on one image and clusters detected particles according to their positioning to features of a skeletonizable structure (e.g., a junction or end-point, see  [[AnalyzeSkeleton]]). A particle is considered to be associated to a skeleton feature if the distance between its centroid and the feature is within a specified cuttoff ("snap to") distance.
-Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/resources/scripts/|label=Python script}}.
+|Tags particles according to skeleton features. Detects maxima on a masked image and clusters detected maxima using features of the skeletonized mask. A maxima is considered to be associated to a skeleton feature  (e.g., a junction or end-point, see  [[AnalyzeSkeleton]]) if the distance between its centroid and the feature is less than or equal to a cuttoff ("snap to") distance. Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/resources/scripts/|label=Python script}}.
 |-
 |colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Import/Export''
 |- valign="top"
