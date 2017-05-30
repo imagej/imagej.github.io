@@ -1,11 +1,12 @@
 {{Infobox
 | name                   = Hough Circle Transform
 | software               = plugin
-| author                  = {{Person|llamero}}
+| update site            = UCB Vision Sciences
+| author                 = {{Person|llamero}}
 | maintainer             = {{Person|llamero}}
 | source                 ={{GitHub|org=llamero|repo=Local_Hough_Circle}}
 | released               = February 4<sup>th</sup>, 2017
-| latest version       = March 18<sup>th</sup>, 2017 (v0.8.0)
+| latest version         = March 18<sup>th</sup>, 2017 (v0.8.0)
 | status                 = stable, active
 | category               = [[:Category:Analysis|Analysis]], [[:Category:Feature Extraction|Feature Extraction]]
 }}
