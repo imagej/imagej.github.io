@@ -50,7 +50,7 @@ The SLIM Plugin is still available for ImageJ 1.x only but is now of usable beta
 
 === Tutorials for developers ===
 
-We have begun work on some programming examples for developers. The tutorials are available in the [https://github.com/imagej/imagej-tutorials imagej-tutorials project] on GitHub.
+We have begun work on some programming examples for developers. The tutorials are available in the [https://github.com/imagej/tutorials imagej/tutorials] repository on GitHub.
 
 [[Image:16-bit-palette.jpg | 267px | thumb | A dataset with a 16-bit LUT]]
 
