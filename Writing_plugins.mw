@@ -20,7 +20,7 @@ As ImageJ is built using the [[Project_management|SciJava principles of project 
 | style="text-align: center; padding: 0.3em" | [[Maven]]
 |}
 
-Additionally, at a minimum, you should clone the {{GitHub|org=imagej|repo=imagej-tutorials|label=imagej-tutorials repository}}. This will give you a local copy of the tutorials discussed in this guide, as well as templates for use in your own development.
+Additionally, at a minimum, you should clone the {{GitHub|org=imagej|repo=tutorials|label=imagej/tutorials repository}}. This will give you a local copy of the tutorials discussed in this guide, as well as templates for use in your own development.
 
 For the complete "developer experience", you can go through the [https://help.github.com/categories/bootcamp/ GitHub Bootcamp]. At the least, once you've [https://help.github.com/articles/create-a-repo/ created your own repository] and cloned a local copy, you will have a home ready for when your [[#Starting_your_own_plugin|very own plugin]] arrives!
 
@@ -179,9 +179,9 @@ If you know the function you want to modify but can't determine its location in 
 
 == Example projects ==
 
-Remember the {{GitHub|org=imagej|repo=imagej-tutorials|label=imagej-tutorials repository}} we [[#Requirements|said you should clone]]? Now's the time to put it to use!
+Remember the {{GitHub|org=imagej|repo=imagej|label=imagej/tutorials repository}} we [[#Requirements|said you should clone]]? Now's the time to put it to use!
 
-Because the ImageJ API is designed to be maximally flexible and extensible, if you're just getting started with development it can be overwhelming to figure out exactly which part of the code base you should be working on. The <code>imagej-tutorials</code> repository contains a selection of minimal projects illustrating how your own project(s) could be structured to perform common tasks. Most of these projects also have extensive documentation via comments in the code, to highlight particular functions and use cases.
+Because the ImageJ API is designed to be maximally flexible and extensible, if you're just getting started with development it can be overwhelming to figure out exactly which part of the code base you should be working on. The <code>imagej/tutorials</code> repository contains a selection of minimal projects illustrating how your own project(s) could be structured to perform common tasks. Most of these projects also have extensive documentation via comments in the code, to highlight particular functions and use cases.
 
 You do not need to understand every project in this repository, nor must you go through them in a particular order! Instead, you should read through the following topics and focus on the projects that look particularly interesting and relevant to your goals. Your target for learning should be to understand the code in these selected projects, and how changes to that code will be reflected in the experiences of users and other developers.
 
@@ -206,40 +206,39 @@ There are always other options for saving or restoring your work—[https://git-
 
 === First steps ===
 
-The [https://github.com/imagej/imagej-tutorials/blob/master/intro-to-imagej-api/src/main/java/IntroToImageJAPI.java IntroToImageJ API] class documents many common functions and structures in ImageJ, and is a great starting point.
+The [https://github.com/imagej/tutorials/blob/master/maven-projects/intro-to-imagej-api/src/main/java/IntroToImageJAPI.java IntroToImageJ API] class documents many common functions and structures in ImageJ, and is a great starting point.
 
 === Basic plugins ===
 
 These projects provide minimal examples with thorough online documentation.
-* [https://github.com/imagej/imagej-tutorials/tree/dev-manual/minimal-ij2-plugin minimal-ij2-plugin] - A minimal ImageJ plugin template
-* Look at some [https://github.com/imagej/imagej-tutorials/tree/master/simple-commands/src/main/java simple commands] and see how they interact with users
-* [https://github.com/imagej/imagej-tutorials/tree/master/working-with-modules/src/main/java Getting started with modules]—the foundation of many user-facing plugin types, including [[#Commands|commands]]
+* [https://github.com/imagej/example-imagej-command example-imagej-command] - A minimal template for an ImageJ command plugin
+* Look at some [https://github.com/imagej/tutorials/tree/master/maven-projects/simple-commands/src/main/java simple commands] and see how they interact with users
+* [https://github.com/imagej/tutorials/tree/master/maven-projects/working-with-modules/src/main/java Getting started with modules]—the foundation of many user-facing plugin types, including [[#Commands|commands]]
 
 === Targeted tasks ===
 
 These projects are examples of specific ''use cases'' within the ImageJ API.
 
-* [https://github.com/imagej/imagej-tutorials/tree/master/execute-commands/src/main/java Execute commands programmatically]
-* [https://github.com/imagej/imagej-tutorials/tree/master/load-and-display-dataset/src/main/java Open a dataset]
-* [https://github.com/imagej/imagej-tutorials/tree/master/add-rois/src/main/java Combine ROIs]
-* [https://github.com/imagej/imagej-tutorials/tree/master/listen-to-events/src/main/java React to framework events]—such as creating a dataset
+* [https://github.com/imagej/tutorials/tree/master/maven-projects/execute-commands/src/main/java Execute commands programmatically]
+* [https://github.com/imagej/tutorials/tree/master/maven-projects/load-and-display-dataset/src/main/java Open a dataset]
+* [https://github.com/imagej/tutorials/tree/master/maven-projects/add-rois/src/main/java Combine ROIs]
+* [https://github.com/imagej/tutorials/tree/master/maven-projects/listen-to-events/src/main/java React to framework events]—such as creating a dataset
 
 === Working with Ops ===
 
-* [https://github.com/imagej/imagej-tutorials/tree/master/using-ops/src/main/java Using Ops]
-* [https://github.com/imagej/imagej-tutorials/tree/dev-manual/using-ops-dog Using Ops DoG filter]
-* [https://github.com/imagej/imagej-tutorials/tree/master/add-two-datasets/src/main/java Add datasets]
-* [https://github.com/imagej/imagej-tutorials/tree/master/create-a-new-op Create a new Op type]
+* [https://github.com/imagej/tutorials/tree/master/maven-projects/using-ops/src/main/java Using Ops]
+* [https://github.com/imagej/tutorials/tree/master/maven-projects/add-two-datasets/src/main/java Add datasets]
+* [https://github.com/imagej/tutorials/tree/master/maven-projects/create-a-new-op/src/main/java Create a new Op type]
 
 === Working with user input ===
 
-* [https://github.com/imagej/imagej-tutorials/tree/master/widget-demo/src/main/java Look at all the widgets!]
-* [https://github.com/imagej/imagej-tutorials/tree/master/commands-with-preview/src/main/java Previewable commands]
+* [https://github.com/imagej/tutorials/tree/master/maven-projects/widget-demo/src/main/java Look at all the widgets!]
+* [https://github.com/imagej/tutorials/tree/master/maven-projects/commands-with-preview/src/main/java Previewable commands]
 
 === Plugin development ===
 
-* [https://github.com/imagej/imagej-tutorials/tree/master/create-a-new-plugin-type/src/main/java Create a new plugin type]
-* [https://github.com/imagej/imagej-tutorials/tree/master/custom-preprocessor-plugin/src/main/java Create a new preprocessor]
+* [https://github.com/imagej/tutorials/tree/master/maven-projects/create-a-new-plugin-type/src/main/java Create a new plugin type]
+* [https://github.com/imagej/tutorials/tree/master/maven-projects/custom-preprocessor-plugin/src/main/java Create a new preprocessor]
 
 == Starting your own plugin ==
 
@@ -257,7 +256,7 @@ If you are '''implementing''' an existing plugin type...
 
 === Adopt an existing project ===
 
-You already [[#Requierments|created your own GitHub repository]], right??
+You already [[#Requirements|created your own GitHub repository]], right??
 
 When you're just getting started with tools like [[Git]] and [[Maven]], it's not easy to comprehend the nuances of how new projects should be set up and configured. It's much easier to copy a working project to use as a starting point and go from there.
 
@@ -284,7 +283,7 @@ In addition to modifying and developing the source code itself, there are severa
 * If you want to use additional [[Source_code|ImageJ or Fiji projects]] as libraries, you will need to add them as dependencies in the [https://maven.apache.org/pom.html#Dependencies dependency block] of your <code>pom.xml</code>. Note that you will not need to specify a <code><version></code>, as these are managed by your parent pom.
 * Non-core ImageJ developers should add a <code><developer></code> block to their pom, to identify yourself (see [https://github.com/imagej/pom-imagej/blob/pom-imagej-13.1.0/pom.xml#L34-L85 this example] for formatting).
 * Alternatively, you could submit a pull request to pom-imagej adding yourself as a [https://github.com/imagej/pom-imagej/blob/pom-imagej-13.1.0/pom.xml#L86-L166 contributor]!
-* If your copied <code>pom.xml</code> has a [https://github.com/imagej/imagej-tutorials/blob/249c699dbdb9308f8a5539f0f39cf84d2612b273/simple-commands/pom.xml#L22-L24 main method specification] you will likely need to remove or update it as appropriate.
+* If your copied <code>pom.xml</code> has a [https://github.com/imagej/tutorials/blob/249c699dbdb9308f8a5539f0f39cf84d2612b273/simple-commands/pom.xml#L22-L24 main method specification] you will likely need to remove or update it as appropriate.
 * If you want to add non-Java files to your plugin, such as sample images or [[Scripting|demo scripts]], refer to the [https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html standard maven layout].
 
 == Next Steps ==
