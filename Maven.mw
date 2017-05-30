@@ -101,7 +101,7 @@ There are two different sorts of Maven artifacts (i.e., JAR files): releases and
 
 == Producing multiple JAR files ==
 
-So what if you have multiple ''.jar'' files you want to build in the same project? Then these need to live in their own subdirectories and there needs to be a common parent POM, a so-called ''aggregator'' or ''multi-module'' POM (only this POM needs to have the SciJava POM as parent, of course). {{GitHub|org=imagej|repo=imagej-tutorials|tag=577286474be8399eb38d30d66cf0c35ee50bd929|path=pom.xml#L47-L62|label=Here is an example}}. Basically, it is adding the <code><packaging>pom</packaging></code> entry at the top, as well as some subdirectory names to the <code><modules></code> section.
+So what if you have multiple ''.jar'' files you want to build in the same project? Then these need to live in their own subdirectories and there needs to be a common parent POM, a so-called ''aggregator'' or ''multi-module'' POM (only this POM needs to have the SciJava POM as parent, of course). {{GitHub|org=imagej|repo=tutorials|tag=577286474be8399eb38d30d66cf0c35ee50bd929|path=pom.xml#L47-L62|label=Here is an example}}. Basically, it is adding the <code><packaging>pom</packaging></code> entry at the top, as well as some subdirectory names to the <code><modules></code> section.
 
 Note, however, that most projects of the [[Architecture|SciJava component collection]] (e.g., [[SciJava]], [[ImgLib2]], [[SCIFIO]], [[ImageJ]] and [[Fiji]]) now structure each component as its own single-module project in its own Git repository, since using multi-module projects can complicate versioning.
 
@@ -111,7 +111,7 @@ There are many more things you can do with Maven, but chances are you will not n
 
 The simplicity of the ''pom.xml'' you need comes from the fact that Maven defines implicit defaults. It calls that ''convention over configuration''.  For many reasons, it is strongly recommended to stay with the defaults as much as possible.
 
-In the context of [[SciJava]], you will most likely never write a ''pom.xml'' from scratch. You will rather more likely edit an existing one, possibly after having copied it. We recommend using the [https://github.com/imagej/imagej-tutorials/tree/master/load-and-display-dataset ImageJ "Load and Display a Dataset" tutorial] as a starting point.
+In the context of [[SciJava]], you will most likely never write a ''pom.xml'' from scratch. You will rather more likely edit an existing one, possibly after having copied it. We recommend using the [https://github.com/imagej/tutorials/tree/master/maven-projects/load-and-display-dataset ImageJ "Load and Display a Dataset" tutorial] as a starting point.
 
 = How to find a dependency's groupId/artifactId/version (GAV)? =
 
