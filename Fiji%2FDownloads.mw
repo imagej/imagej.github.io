@@ -36,7 +36,7 @@ See the [[source code]] page for details on obtaining the Fiji source code.
 
 This sections offers older downloads of Fiji, preserved just prior to introducing major changes. The idea is that if something goes horribly wrong, you can fall back to a stable version.
 
-=== Since the switch to Java 8 ===
+=== Java 8 ===
 
 Here are Life-Line versions of the Fiji created after the switch to Java 8.
 
@@ -62,9 +62,9 @@ Here are Life-Line versions of the Fiji created after the switch to Java 8.
 | Just prior to a sweeping update to nearly all components.
 |}
 
-=== Before the switch to Java 8 ===
+=== Java 6 ===
 
-Here are Life-Line versions from when Fiji was built on Java 6.
+Here are Life-Line versions from before Fiji switched to Java 8.
 
 {| class="wikitable"
 ! rowspan=2 | Date
