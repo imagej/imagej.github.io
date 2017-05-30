@@ -3,7 +3,7 @@ Today, the [[ImageJ]] and [[KNIME]] teams are pleased to announce {{GitHub|org=i
 [[Image:Konstanz-hackathon.jpg|320px|thumb|right|Happy hackers: 502 commits in five days!]]
 == Motivation ==
 
-The ImageJ2 vision is to extend Java's mantra of &quot;write once, run anywhere&quot; to image processing algorithms. With that goal at its heart, ImageJ2 introduces extensible {{GitHub|org=scijava|repo=scijava-common|label=plugin}} and {{GitHub|org=imagej|repo=imagej-tutorials|path=working-with-modules/src/main/java/WorkingWithModules.java|label=module}} frameworks which make ImageJ commands richer, more powerful and easier to share across applications. Already, these modules are accessible from [[CellProfiler]], [[KNIME]], [[OMERO]] and [[Alida]].
+The ImageJ2 vision is to extend Java's mantra of &quot;write once, run anywhere&quot; to image processing algorithms. With that goal at its heart, ImageJ2 introduces extensible {{GitHub|org=scijava|repo=scijava-common|label=plugin}} and {{GitHub|org=imagej|repo=tutorials|path=maven-projects/working-with-modules/src/main/java/WorkingWithModules.java|label=module}} frameworks which make ImageJ commands richer, more powerful and easier to share across applications. Already, these modules are accessible from [[CellProfiler]], [[KNIME]], [[OMERO]] and [[Alida]].
 
 But still notably missing was the next crucial layer: a framework for ''image processing'' specifically. To address that, we set out to create a framework for reusable image processing algorithms, with the following characteristics:
 
@@ -17,11 +17,11 @@ When it comes to ease of use, generality and performance in computer programs, t
 
 An op is just an ImageJ module, but with some additional structure and requirements: you can think of an op as a function which takes a list of typed inputs, produces a list of typed outputs, and has no side effects. There are over 80 ops implemented so far, with {{GitHub|org=imagej|repo=imagej-ops|tag=ij-ops-0.1.0|path=operations.txt|label=many more to come}}; see this ImageJ tutorial to learn about some of them:
 
-[https://github.com/imagej/imagej-tutorials/tree/master/using-ops/src/main/java/UsingOps.java Using Ops]
+[https://github.com/imagej/tutorials/tree/master/maven-projects/using-ops/src/main/java/UsingOps.java Using Ops]
 
 And for algorithm developers, there is another tutorial briefly demonstrating how it works to create a new one:
 
-[https://github.com/imagej/imagej-tutorials/tree/master/create-a-new-op/src/main/java/CreateANewOp.java Create a new op]
+[https://github.com/imagej/tutorials/tree/master/maven-projects/create-a-new-op/src/main/java/CreateANewOp.java Create a new op]
 
 == Caveats ==
 
