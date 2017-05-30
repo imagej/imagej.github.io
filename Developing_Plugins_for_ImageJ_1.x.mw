@@ -391,9 +391,9 @@ image.setRoi(roi);
 
 You can use ImageJ2-specific functionality from within an ImageJ 1.x plugin. For example, ImageJ2 provides a spreadsheet-like results table that supports string cells. You can write an ImageJ 1.x plugin that produces such a spreadsheet, displaying it onscreen.
 
-See the {{GitHub|org=imagej|repo=imagej-tutorials|path=call-modern-from-legacy|label=call-modern-from-legacy}} example of the ImageJ Tutorials:
+See the {{GitHub|org=imagej|repo=tutorials|path=maven-projects/call-modern-from-legacy|label=call-modern-from-legacy}} example of the ImageJ Tutorials:
 
-<blockquote>{{GitHub|org=imagej|repo=imagej-tutorials|path=call-modern-from-legacy/src/main/java/DisplayATable.java|label=DisplayATable.java}}</blockquote>
+<blockquote>{{GitHub|org=imagej|repo=tutorials|path=maven-projects/call-modern-from-legacy/src/main/java/DisplayATable.java|label=DisplayATable.java}}</blockquote>
 
 == Further tips ==
 
