@@ -9,7 +9,7 @@ The table below summarizes the dominant license of each project's components.
 
 == Exceptions ==
 
-Since each project consists of many components, some may be licensed differently. You can always find the license of each project in a <code>LICENSE.txt</code> or similar file of the relevant repository on [[GitHub]]. That said, in general, the table below is accurate with very few exceptions. When there ''is'' an exception, it is often licensed more permissively than the rest of the project—for example, the core of [[Bio-Formats]] is licensed under [[BSD-2]] ([https://github.com/openmicroscopy/bioformats/blob/develop/components/formats-bsd/LICENSE.txt 1]), and the [[ImageJ]] and [[SCIFIO]] tutorials are licensed under [[CC0]] ([https://github.com/imagej/imagej-tutorials/blob/master/README.md 1], [https://github.com/scifio/scifio-tutorials/blob/master/README.md 2]), waiving all copyright interest as allowed by law.
+Since each project consists of many components, some may be licensed differently. You can always find the license of each project in a <code>LICENSE.txt</code> or similar file of the relevant repository on [[GitHub]]. That said, in general, the table below is accurate with very few exceptions. When there ''is'' an exception, it is often licensed more permissively than the rest of the project—for example, the core of [[Bio-Formats]] is licensed under [[BSD-2]] ([https://github.com/openmicroscopy/bioformats/blob/develop/components/formats-bsd/LICENSE.txt 1]), and the [[ImageJ]] and [[SCIFIO]] tutorials are licensed under [[CC0]] ([https://github.com/imagej/tutorials/blob/master/README.md 1], [https://github.com/scifio/scifio-tutorials/blob/master/README.md 2]), waiving all copyright interest as allowed by law.
 
 == Project summary ==
 
