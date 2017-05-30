@@ -6,7 +6,7 @@ See the [[Batch Processing]] page.
 
 == What is the largest size image that ImageJ can open? ==
 
-There is a 2 gigapixel limit when opening and displaying image planes using the [[ImageJ 1.x]] user interface's default image viewer. However, one major goal of the [[ImageJ2]] project is to break this limit. ImageJ2 uses the [[ImgLib2]] library as its data model, which has much larger limits on the number of pixels (theoretically: ~2^63 per dimension, up to ~2^31 dimensions, totaling ~2^63^31 pixels). Hence, you can open larger images using the {{GitHub | org=imagej | repo=imagej-tutorials | label=ImageJ2 API}}. But you will not be able to display them in the user interface yet.
+There is a 2 gigapixel limit when opening and displaying image planes using the [[ImageJ 1.x]] user interface's default image viewer. However, one major goal of the [[ImageJ2]] project is to break this limit. ImageJ2 uses the [[ImgLib2]] library as its data model, which has much larger limits on the number of pixels (theoretically: ~2^63 per dimension, up to ~2^31 dimensions, totaling ~2^63^31 pixels). Hence, you can open larger images using the {{GitHub | org=imagej | repo=tutorials | label=ImageJ2 API}}. But you will not be able to display them in the user interface yet.
 
 Furthermore, the [[SCIFIO]] library (what ImageJ2 uses for data I/O) supports opening such images on-demand as "cell images" such that blocks are read from disk as you iterate over the image. This is similar to (but more powerful than) ImageJ 1.x's virtual stacks feature. In this way, you can write code to process these large images without displaying them.
 
@@ -176,7 +176,7 @@ Yes, although it is not recommended. You will lose most of the advantages of Ima
 
 == Can I call ImageJ2 API from an ImageJ1 plugin? ==
 
-Yes, see the [https://github.com/imagej/imagej-tutorials/tree/master/call-modern-from-legacy call-modern-from-legacy] tutorial example.
+Yes, see the [https://github.com/imagej/tutorials/tree/master/maven-projects/call-modern-from-legacy call-modern-from-legacy] tutorial example.
 
 = [[Fiji]] =
 
@@ -335,7 +335,7 @@ If you develop a Fiji plugin, the result will be in the form of one or more jars
 
 == How can I call ImageJ from my software? ==
 
-If your software is written in Java, we recommend using [[Maven]] to structure your project. You can then add dependencies to portions of ImageJ that are of interest to you. See the {{GitHub|org=imagej|repo=imagej-tutorials|label=ImageJ tutorials}} for examples.
+If your software is written in Java, we recommend using [[Maven]] to structure your project. You can then add dependencies to portions of ImageJ that are of interest to you. See the {{GitHub|org=imagej|repo=tutorials|label=ImageJ tutorials}} for examples.
 
 If your software is written in another language such as C or Python, there are [http://loci.wisc.edu/bio-formats/interfacing-non-java-code many ways to integrate Java functionality]. You must choose which one is best for your particular requirements.
 
