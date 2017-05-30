@@ -64,8 +64,8 @@ Often it is impractical to attach an example image demonstrating some problems, 
 
 We have continued to flesh out example code for developers. Since beta5 there are two new tutorials available:
 
-* [https://github.com/imagej/imagej-tutorials/tree/a2802adb/simple-command simple-command]: Shows how to write a simple ImageJ2 command that {{GitHub|org=imagej|repo=imagej-tutorials|tag=a2802adb|path=simple-command/src/main/java/GradientImage.java|label=generates an 8-bit gradient image}}.
-* [https://github.com/imagej/imagej-tutorials/tree/a2802adb/call-modern-from-legacy call-modern-from-legacy]: Shows how to embed ImageJ2 into a legacy ImageJ1 plugin, so that you can start taking advantage of new functionality without completely switching to ImageJ2. The example {{GitHub|org=imagej|repo=imagej-tutorials|tag=a2802adb|path=call-modern-from-legacy/src/main/java/DisplayATable.java|label=creates and displays an ImageJ2 spreadsheet table}} with string values in the cells, something which cannot be done using ImageJ1's ResultsTable class.
+* [https://github.com/imagej/tutorials/tree/a2802adb/simple-command simple-command]: Shows how to write a simple ImageJ2 command that {{GitHub|org=imagej|repo=tutorials|tag=a2802adb|path=simple-command/src/main/java/GradientImage.java|label=generates an 8-bit gradient image}}.
+* [https://github.com/imagej/tutorials/tree/a2802adb/call-modern-from-legacy call-modern-from-legacy]: Shows how to embed ImageJ2 into a legacy ImageJ1 plugin, so that you can start taking advantage of new functionality without completely switching to ImageJ2. The example {{GitHub|org=imagej|repo=tutorials|tag=a2802adb|path=call-modern-from-legacy/src/main/java/DisplayATable.java|label=creates and displays an ImageJ2 spreadsheet table}} with string values in the cells, something which cannot be done using ImageJ1's ResultsTable class.
 
 === SLIM Plugin ===
 
