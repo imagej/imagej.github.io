@@ -163,7 +163,7 @@ Along those lines, the libraries take great pains to be '''UI agnostic''', with 
 
 === Extensibility ===
 
-Extensibility is [[ImageJ]]'s greatest strength. ImageJ provides many different types of plugins, and it is possible to extend the system with your own new types of plugins. See the [https://github.com/imagej/imagej-tutorials/tree/master/create-a-new-plugin-type create-a-new-plugin-type tutorial] for an illustration.
+Extensibility is [[ImageJ]]'s greatest strength. ImageJ provides many different types of plugins, and it is possible to extend the system with your own new types of plugins. See the [https://github.com/imagej/tutorials/tree/master/maven-projects/create-a-new-plugin-type create-a-new-plugin-type tutorial] for an illustration.
 
 The [[SciJava Common]] (SJC) library provides a plugin framework with [[wikipedia:Strong and weak typing|strong typing]], and makes extensive use of plugins itself, to allow core functionality to be [http://c2.com/cgi/wiki?SoftwareSeam customized easily]. SJC has an powerful plugin discovery mechanism that finds all plugins available on the Java classpath, without knowing in advance what they are or where they are located. It works by indexing the plugins at compile time via an [[wikipedia:Java annotation#Processing|annotation processor]] (inspired by the [https://github.com/jglick/sezpoz SezPoz] project) which writes the plugin metadata inside the JAR file (in <code>META-INF/json/org.scijava.plugin.Plugin</code>). Reading this index allows the system to discover plugin metadata at runtime very quickly ''without'' loading the plugin classes in advance.
 
