@@ -6,6 +6,11 @@
 {{!}} {{{author|}}}
 {{!}}-
 }}
+{{#if:{{{update site|}}}|
+! Update site
+{{!}} [[Following_an_update_site|{{{update site|}}}]]
+{{!}}-
+}}
 {{#if:{{{screenshot|}}}|
 ! Screenshot
 {{!}} {{{screenshot|}}}
@@ -62,6 +67,7 @@
 {{Infobox
 | name                   =
 | software               =
+| update site            =
 | author                 =
 | maintainer             = 
 | filename               =
@@ -79,6 +85,7 @@
 {{Infobox
 | name                   = My plugin
 | software               = Software name
+| update site            = Java-8
 | author                 = John Smith ([mailto:john@smith.org john@smith.org])
 | logo                   = [[Image:fiji-icon.png|96px]]
 | screenshot             = A screenshot of typical usage
@@ -90,12 +97,13 @@
 | status                 = stable, not active
 | category               = fancy examples
 | website                = [http://example.org]
-| tutorials               = Mr Smith
+| tutorials              = Mr Smith
 }}
 <pre style="overflow:auto">
 {{Infobox
 | name                   = My plugin
 | software               = Software name
+| update site            = Java-8
 | author                 = John Smith ([mailto:john@smith.org john@smith.org])
 | logo                   = [[Image:fiji-icon.png|96px]]
 | maintainer             = Bob Doe ([mailto:bob@doe.org bob@dod.org])
@@ -106,7 +114,7 @@
 | status                 = stable, not active
 | category               = fancy examples
 | website                = [http://example.org]
-| tutorials               = Mr Smith
+| tutorials              = Mr Smith
 }}
 </pre>
 
