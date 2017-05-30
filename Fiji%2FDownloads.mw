@@ -48,6 +48,15 @@ This sections offers older downloads of Fiji, preserved just prior to introducin
 | style="font-size: 12px; text-align: center" | 32-bit
 | style="font-size: 12px; text-align: center; white-space: nowrap" | no-JRE
 |-
+| style="white-space: nowrap" | 2017 May 30
+| style="font-size: 12px; text-align: center" | {{Logo|Windows|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20170530.zip}}
+| style="font-size: 12px; text-align: center" | {{Logo|Windows|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20170530.zip}}
+| style="font-size: 12px; text-align: center" | {{Logo|MacOS|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-macosx-20170530.dmg}}
+| style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20170530.zip}}
+| style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20170530.zip}}
+| style="font-size: 12px; text-align: center" | {{Logo|Fiji|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20170530.zip}}
+| Just prior to a sweeping update to nearly all components.
+|-
 | style="white-space: nowrap" | 2015 December 22
 | style="font-size: 12px; text-align: center" | {{Logo|Windows|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20151222.zip}}
 | style="font-size: 12px; text-align: center" | {{Logo|Windows|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20151222.zip}}
