@@ -61,8 +61,8 @@ This sections offers older downloads of Fiji, preserved just prior to introducin
 | style="font-size: 12px; text-align: center" | {{Logo|Windows|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20141125.zip}}
 | style="font-size: 12px; text-align: center" | {{Logo|Windows|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20141125.zip}}
 | style="font-size: 12px; text-align: center" | {{Logo|MacOS|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-macosx-20141125.dmg}}
-| style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20141125.zip}}
-| style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20141125.zip}}
+| style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20141125.tar.gz}}
+| style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20141125.tar.gz}}
 | style="font-size: 12px; text-align: center" | {{Logo|Fiji|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20141125.zip}}
 | Just prior to a [https://groups.google.com/d/msg/fiji-devel/49a7q7e9g44/xuhp0nQRVnAJ big update] to facilitate [[reproducible builds]].
 |-
@@ -70,8 +70,8 @@ This sections offers older downloads of Fiji, preserved just prior to introducin
 | style="font-size: 12px; text-align: center" | {{Logo|Windows|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20140602.zip}}
 | style="font-size: 12px; text-align: center" | {{Logo|Windows|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20140602.zip}}
 | style="font-size: 12px; text-align: center" | {{Logo|MacOS|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-macosx-20140602.dmg}}
-| style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20140602.zip}}
-| style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20140602.zip}}
+| style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20140602.tar.gz}}
+| style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20140602.tar.gz}}
 | style="font-size: 12px; text-align: center" | {{Logo|Fiji|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20140602.zip}}
 | Just prior to [[2014-06-04 - ImageJ 2.0.0 release candidate|some big changes to ImageJ2 under the hood]].
 |-
@@ -79,8 +79,8 @@ This sections offers older downloads of Fiji, preserved just prior to introducin
 | style="font-size: 12px; text-align: center" | {{Logo|Windows|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20130715.zip}}
 | style="font-size: 12px; text-align: center" | {{Logo|Windows|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-win32-20130715.zip}}
 | style="font-size: 12px; text-align: center" | {{Logo|MacOS|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-macosx-20130715.dmg}}
-| style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20130715.zip}}
-| style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20130715.zip}}
+| style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20130715.tar.gz}}
+| style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20130715.tar.gz}}
 | style="font-size: 12px; text-align: center" | {{Logo|Fiji|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20130715.zip}}
 | Just prior to [https://groups.google.com/d/msg/fiji-devel/KpuWJ6kNgbk/XX2pR8jjam8J extensive changes reconciling Fiji with ImageJ2].
 |}
