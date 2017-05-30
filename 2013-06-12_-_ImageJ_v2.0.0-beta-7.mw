@@ -48,7 +48,7 @@ See below for a complete list of updater improvements.
 
 === Examples for developers ===
 
-We have continued to flesh out example code for developers. There are now {{GitHub|org=imagej|repo=imagej-tutorials|label=nine tutorials}}. Most notably, we have an example of {{GitHub|org=imagej|repo=imagej-tutorials|tag=af141b0cf4af9d0e0be8a42e76295d8744787f92|path=call-modern-from-legacy/src/main/java/DisplayATable.java|label=how to call ImageJ2 classes from an ImageJ 1.x plugin}}. This can be useful to take advantage of ImageJ2-only features such as its more powerful results tables.
+We have continued to flesh out example code for developers. There are now {{GitHub|org=imagej|repo=tutorials|tag=af141b0cf4af9d0e0be8a42e76295d8744787f92|label=nine tutorials}}. Most notably, we have an example of {{GitHub|org=imagej|repo=tutorials|tag=af141b0cf4af9d0e0be8a42e76295d8744787f92|path=call-modern-from-legacy/src/main/java/DisplayATable.java|label=how to call ImageJ2 classes from an ImageJ 1.x plugin}}. This can be useful to take advantage of ImageJ2-only features such as its more powerful results tables.
 
 === SLIM Plugin ===
 
