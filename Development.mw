@@ -108,7 +108,7 @@ See the [[source code]] page for further details.
 | '''The Fiji distribution of ImageJ'''
 |-
 | style="vertical-align: top" |
-* [https://github.com/imagej/imagej-tutorials ImageJ tutorials]
+* [https://github.com/imagej/tutorials ImageJ tutorials]
 * [[ImgLib2 Examples]]
 |
 * [[Writing ImageJ2 plugins]]
