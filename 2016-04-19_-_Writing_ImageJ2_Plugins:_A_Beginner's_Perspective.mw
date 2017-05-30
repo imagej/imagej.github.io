@@ -121,7 +121,7 @@ To import several projects from GitHub I always had to close all open project in
 Start from an existing plugin as a template:
 
 * For ImageJ 1.x plugins: {{GitHub | org=imagej | repo=minimal-ij1-plugin | label=imagej/minimal-ij1-plugin}}
-* For ImageJ2 plugins: {{GitHub | org=imagej | repo=imagej-tutorials | path=simple-commands | label=simple-commands in imagej/imagej-tutorials}}
+* For ImageJ2 plugins: {{GitHub | org=imagej | repo=tutorials | path=maven-projects/simple-commands | label=simple-commands in imagej/tutorials}}
 
 Import it as a sample project into your IDE and modify this project according to your needs:
 
@@ -145,9 +145,9 @@ The following lines are copied/cited from the <code>README.md</code> file of the
 
 == Additional sample plugins ==
 
-{{GitHub | org=imagej | repo=imagej-tutorials | label=imagej/imagej-tutorials}}
+{{GitHub | org=imagej | repo=tutorials | label=imagej/tutorials}}
 
-The imagej-tutorials are an individual project. The files can live in a directory on its own outside the ImageJ or Fiji project. The <code>pom.xml</code> files of the <code>imagej-tutorials</code> pull in all the necessary dependencies for compiling via Maven.
+The imagej/tutorials are structured as individual projects. The files can live in a directory on its own outside the ImageJ or Fiji project. The <code>pom.xml</code> files of the <code>imagej/tutorials</code> pull in all the necessary dependencies for compiling via Maven.
 
 == "One file to bind them all": parent <code>pom.xml</code> files ==
 
@@ -232,9 +232,9 @@ If necessary, tell NetBeans to use JDK 1.8 as the default JRE for new projects (
 
 == Where can I find example plugins? ==
 
-* [https://github.com/imagej/imagej-tutorials/ ImageJ Tutorials]
+* [https://github.com/imagej/tutorials/ ImageJ Tutorials]
 ** In NetBeans: {{bc|Team|Git|Clone}}
-** Repository URL: https://github.com/imagej/imagej-tutorials
+** Repository URL: https://github.com/imagej/tutorials
 ** Edit "destination" directory
 ** Next
 ** Select <code>master*</code>
