@@ -4,7 +4,7 @@ The ImageJ core artifacts are built with Maven, but can also be consumed in a Gr
 
 ==Sample ImageJ build.gradle==
 
-Contributed<sup>[https://github.com/imagej/imagej-tutorials/issues/24 1]</sup> by {{Person|reckbo}}
+Contributed<sup>[https://github.com/imagej/tutorials/issues/24 1]</sup> by {{Person|reckbo}}
 
 <source lang="groovy">
 buildscript {
