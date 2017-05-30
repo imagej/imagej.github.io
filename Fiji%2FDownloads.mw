@@ -36,6 +36,10 @@ See the [[source code]] page for details on obtaining the Fiji source code.
 
 This sections offers older downloads of Fiji, preserved just prior to introducing major changes. The idea is that if something goes horribly wrong, you can fall back to a stable version.
 
+=== Since the switch to Java 8 ===
+
+Here are Life-Line versions of the Fiji created after the switch to Java 8.
+
 {| class="wikitable"
 ! rowspan=2 | Date
 ! colspan=6 | Downloads
@@ -56,6 +60,27 @@ This sections offers older downloads of Fiji, preserved just prior to introducin
 | style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20170530.zip}}
 | style="font-size: 12px; text-align: center" | {{Logo|Fiji|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20170530.zip}}
 | Just prior to a sweeping update to nearly all components.
+|}
+
+=== Before the switch to Java 8 ===
+
+Here are Life-Line versions from when Fiji was built on Java 6.
+
+{| class="wikitable"
+! rowspan=2 | Date
+! colspan=6 | Downloads
+! rowspan=2 | Description
+|-
+| style="font-size: 12px; text-align: center" | 64-bit
+| style="font-size: 12px; text-align: center" | 32-bit
+| style="font-size: 12px; text-align: center" | macOS
+| style="font-size: 12px; text-align: center" | 64-bit
+| style="font-size: 12px; text-align: center" | 32-bit
+| style="font-size: 12px; text-align: center; white-space: nowrap" | no-JRE
+|-
+| style="white-space: nowrap" | 2017 May 30
+| colspan=6 style="font-size: 12px; text-align: center" | {{Logo|Fiji|size=48px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-java6-20170530.zip}}
+| The final version of Fiji using Java 6, for all platforms.
 |-
 | style="white-space: nowrap" | 2015 December 22
 | style="font-size: 12px; text-align: center" | {{Logo|Windows|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20151222.zip}}
@@ -64,7 +89,7 @@ This sections offers older downloads of Fiji, preserved just prior to introducin
 | style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux64-20151222.zip}}
 | style="font-size: 12px; text-align: center" | {{Logo|Linux|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-linux32-20151222.zip}}
 | style="font-size: 12px; text-align: center" | {{Logo|Fiji|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-nojre-20151222.zip}}
-| Just prior to the [[2015-12-22 - The road to Java 8|transition to Java 8]]; it still works with Java 6.
+| Just prior to [[2015-12-22 - The road to Java 8|starting the transition to Java 8]].
 |-
 | style="white-space: nowrap" | 2014 November 25
 | style="font-size: 12px; text-align: center" | {{Logo|Windows|size=24px|link=https://downloads.imagej.net/fiji/Life-Line/fiji-win64-20141125.zip}}
