@@ -6,7 +6,7 @@
 | source     = {{GitHub|org=tferr|repo=hIPNAT}}
 | released   = April 2016
 | status     = Active
-| latest version = '''1.0.7 February 2017''' ({{GitHub|org=tferr|repo=hIPNAT/releases|label=Changelog}})
+| latest version = '''1.0.10 May 2017''' ({{GitHub|org=tferr|repo=hIPNAT/releases|label=Changelog}})
 | category   = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]], [[:Category:Neuroanatomy|Neuroanatomy]]
 }}
 This is the main documentation page for the hIPNAT (''Image Processing for NeuroAnatomy and Tree-like Structures'') plugins distributed through the [[User:Neuroanatomy|Neuroanatomy update site]], released in [http://forum.imagej.net/t/launch-of-the-neuroanatomy-update-site/1377?u=tferr April 2016]. For a list of all pages in this wiki related to Neuroanatomy have a look at [[:Category:Neuroanatomy]].
