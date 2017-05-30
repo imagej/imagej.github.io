@@ -75,5 +75,5 @@ When modules are added, removed or changed (via {{Javadoc | package = org/scijav
 
 * [http://scijava.org/ SciJava web site]
 * [http://scijava.org/scijava-common/scijava-common.html SciJava Common presentation]
-* {{GitHub|org=imagej|repo=imagej-tutorials|label=ImageJ tutorials}}
+* {{GitHub|org=imagej|repo=tutorials|label=ImageJ tutorials}}
 * {{GitHub|org=scijava|repo=scijava-common|label=SciJava Common source code}}
