@@ -25,6 +25,18 @@
 | doi=10.1038/srep20732
 }}
 
+| BigDataViewer = {{Citation | last = Pietzsch | first = T.
+| last2 = Saalfeld | first2 = S.
+| last3 = Preibisch | first3 = S.
+| last4 = Tomancak | first4 = P.
+| year = 2015
+| journal = Nature Methods
+| url = http://www.nature.com/nmeth/journal/v12/n6/full/nmeth.3392.html
+| title = BigDataViewer: visualization and processing for large image data sets
+| volume = 12(6)
+| pages = 481-483
+| pmid = 26020499}} ({{Scholar | cluster=2149722257070741970}}).
+
 | Bio-Formats = {{Citation | last = Linkert | first = M.
 | last2 = Rueden | first2 = C. T.
 | last3 = Allan | first3 = C.
@@ -48,18 +60,6 @@
 | volume = 189(5)
 | pages = 777-782
 | pmid = 20513764}} ({{Scholar | cluster=17774693189715989612}}).
-
-| BigDataViewer = {{Citation | last = Pietzsch | first = T.
-| last2 = Saalfeld | first2 = S.
-| last3 = Preibisch | first3 = S.
-| last4 = Tomancak | first4 = P.
-| year = 2015
-| journal = Nature Methods
-| url = http://www.nature.com/nmeth/journal/v12/n6/full/nmeth.3392.html
-| title = BigDataViewer: visualization and processing for large image data sets
-| volume = 12(6)
-| pages = 481-483
-| pmid = 26020499}} ({{Scholar | cluster=2149722257070741970}}).
 
 | Bio7 = {{Citation | last = Austenfeld | first = M.
 | last2 = Beyschlag | first2 = W.
@@ -161,20 +161,6 @@
 | pages = 1443-1449
 | pmid = 23797110}} ({{Scholar | cluster=795378485589403452}}).
 
-| ITK = {{Citation | last = Yoo | first = T.S.
-| last2 = Ackerman | first2 = M. J.
-| last3 = Lorensen | first3 = W. E.
-| last4 = Schroeder | first4 = W.
-| last5 = Chalana | first5 = V.
-| last6 = Aylward | first6 = S.
-| last7 = Metaxas | first7 = D.
-| last8 = Whitaker | first8 = R.
-| title = Engineering and algorithm design for an image processing API: a technical report on ITK-the insight toolkit
-| journal = Studies in health technology and informatics
-| year = 2002
-| pages = 586-592
-| pmid = 15458157}} ({{Scholar | cluster=10830740755452103531}}).
-
 | Icy = {{Citation | last = de Chaumont | first = Fabrice
 | last2 = Dallongeville | first2 = Stéphane
 | last3 = Chenouard | first3 = Nicolas
@@ -252,6 +238,20 @@
 | pages = 3009-3011
 | pmid = 22962343}} ({{Scholar | cluster=17114668151840635304}}).
 
+| ITK = {{Citation | last = Yoo | first = T.S.
+| last2 = Ackerman | first2 = M. J.
+| last3 = Lorensen | first3 = W. E.
+| last4 = Schroeder | first4 = W.
+| last5 = Chalana | first5 = V.
+| last6 = Aylward | first6 = S.
+| last7 = Metaxas | first7 = D.
+| last8 = Whitaker | first8 = R.
+| title = Engineering and algorithm design for an image processing API: a technical report on ITK-the insight toolkit
+| journal = Studies in health technology and informatics
+| year = 2002
+| pages = 586-592
+| pmid = 15458157}} ({{Scholar | cluster=10830740755452103531}}).
+
 | KNIME = {{Citation | last = Berthold | first = M. R.
 | last2 = Cebron | first2 = N. 
 | last3 = Dill | first3 = F.
@@ -277,6 +277,23 @@
 | pages = 179-197
 | pmid = 27207367
 | doi = 10.1007/978-3-319-28549-8_7}} ({{Scholar | cluster=14928574402009943115}}).
+
+| MaMuT = {{Citation 
+| last = Wolff | first = C.
+| last2 = Tinevez | first2 = JY.
+| last3 = Pietzsch | first3 = T.
+| last4 = Stamataki | first4 = E.
+| last5 = Harich | first5 = B.
+| last6 = Preibisch | first6 = S.
+| last7 = Shorte | first7 = S.L.
+| last8 = Keller | first8 = P.J.
+| last9 = Tomancak | first9 = P.
+| last10 = Pavlopoulos | first10 = A.
+| year = 2017
+| journal = bioRxiv
+| url = http://biorxiv.org/content/early/2017/02/28/112623
+| title = Reconstruction of cell lineages and behaviors underlying arthropod limb outgrowth with multi-view light-sheet imaging and tracking. }}
+
 
 | Micro-Manager = {{Citation | last = Edelstein | first = A.
 | last2 = Amodaj | first2 = N.
@@ -329,22 +346,18 @@
 | pages = 339-340
 | pmid = 20431545}} ({{Scholar | cluster=1412682450072191801}}).
 
-| TrakEM2 = {{Citation | last = Cardona | first = A.
-| last2 = Saalfeld | first2 = S.
-| last3 = Schindelin | first3 = J.
-| last4 = Arganda-Carreras | first4 = I.
-| last5 = Preibisch | first5 = S.
-| last6 = Longair | first6 = M.
-| last7 = Tomancak | first7 = P.
-| last8 = Hartenstein | first8 = V.
-| last9 = Douglas | first9 = R. J.
-| year = 2012
-| journal = PloS one
-| url = http://dx.doi.org/10.1371/journal.pone.0038011
-| title = TrakEM2 software for neural circuit reconstruction.
-| volume = 7(6)
-| pages = e38011
-| pmid = 22723842}} ({{Scholar | cluster=2577882229249708240}}).
+| SCIFIO = {{Citation
+| last = Hiner | first = M.C.
+| last2 = Rueden | first2 = C.T.
+| last3 = Eliceiri | first3 = K.W.
+| year = 2016 Dec 7
+| journal = BMC Bioinformatics
+| url = https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1383-0
+| title = SCIFIO: an extensible framework to support scientific image formats.
+| volume = 17(1)
+| pages = 521
+| doi = 10.1186/s12859-016-1383-0
+| pmid = 27927161}} ({{Scholar | cluster=12695867462379525116}}).
 
 | TrackMate = {{Citation
 | last = Tinevez | first = JY.
@@ -381,39 +394,25 @@
 | doi = 10.1093/bioinformatics/btx180
 | pmid = 28369169}} ({{Scholar | cluster=12995971888361615836}}).
 
-| SciJava Common = Rueden, C., Schindelin, J., Hiner, M. & Eliceiri, K. (2016). SciJava Common [Software]. http://scijava.org/.
-
-| SCIFIO = {{Citation
-| last = Hiner | first = M.C.
-| last2 = Rueden | first2 = C.T.
-| last3 = Eliceiri | first3 = K.W.
-| year = 2016 Dec 7
-| journal = BMC Bioinformatics
-| url = https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1383-0
-| title = SCIFIO: an extensible framework to support scientific image formats.
-| volume = 17(1)
-| pages = 521
-| doi = 10.1186/s12859-016-1383-0
-| pmid = 27927161}} ({{Scholar | cluster=12695867462379525116}}).
+| TrakEM2 = {{Citation | last = Cardona | first = A.
+| last2 = Saalfeld | first2 = S.
+| last3 = Schindelin | first3 = J.
+| last4 = Arganda-Carreras | first4 = I.
+| last5 = Preibisch | first5 = S.
+| last6 = Longair | first6 = M.
+| last7 = Tomancak | first7 = P.
+| last8 = Hartenstein | first8 = V.
+| last9 = Douglas | first9 = R. J.
+| year = 2012
+| journal = PloS one
+| url = http://dx.doi.org/10.1371/journal.pone.0038011
+| title = TrakEM2 software for neural circuit reconstruction.
+| volume = 7(6)
+| pages = e38011
+| pmid = 22723842}} ({{Scholar | cluster=2577882229249708240}}).
 
 | ImageJ Ops = Rueden, C., Dietz, C., Horn, M., Schindelin, J., Northan, B., Berthold, M. & Eliceiri, K. (2016). ImageJ Ops [Software]. http://imagej.net/Ops.
-
-| MaMuT = {{Citation 
-| last = Wolff | first = C.
-| last2 = Tinevez | first2 = JY.
-| last3 = Pietzsch | first3 = T.
-| last4 = Stamataki | first4 = E.
-| last5 = Harich | first5 = B.
-| last6 = Preibisch | first6 = S.
-| last7 = Shorte | first7 = S.L.
-| last8 = Keller | first8 = P.J.
-| last9 = Tomancak | first9 = P.
-| last10 = Pavlopoulos | first10 = A.
-| year = 2017
-| journal = bioRxiv
-| url = http://biorxiv.org/content/early/2017/02/28/112623
-| title = Reconstruction of cell lineages and behaviors underlying arthropod limb outgrowth with multi-view light-sheet imaging and tracking. }}
-
+| SciJava Common = Rueden, C., Schindelin, J., Hiner, M. & Eliceiri, K. (2016). SciJava Common [Software]. http://scijava.org/.
 
 | ''(Unknown publication: {{{1}}})''
 
