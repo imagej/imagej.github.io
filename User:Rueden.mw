@@ -23,7 +23,6 @@
 Here is a summary of my current projects, in priority order. I try to keep this list up to date.
 
 # '''[[LOCI]] web server [https://www.docker.com/ Docker]ization/robustification.'''
-# '''POM unification.''' ([http://forum.imagej.net/t/split-boms-from-parent-configuration/2563 Split BOMs from parent configuration])
 # '''Document community expectations.''' Formally define and clarify who is responsible for maintaining which plugins, to what extents ([http://forum.imagej.net/t/project-developer-roles/206 Project developer roles], [https://github.com/ctrueden/ctr-scripts/blob/master/dev-find ctrueden/ctr-scripts:dev-find], [https://github.com/fiji/fiji/blob/master/bin/team-hints.perl fiji/fiji:bin/team-hints.perl])
 # '''Ops generic type matching.''' Improve the Ops type matcher to fully support generics, including recursive generics. ([https://github.com/scijava/scijava-common/compare/generic-types scijava/scijava-common@generic-types], [https://github.com/imagej/imagej-ops/compare/nil imagej/imagej-ops@nil])
 # '''ImageJ + Java 8.''' Complete the migration to Java 8 with a Java-6-compatible stub classpath that checks your Java version and tells you how to upgrade to Java 8 if needed. Retire the Java-8 update site, distributing its contents back onto the ImageJ and Fiji update sites.
