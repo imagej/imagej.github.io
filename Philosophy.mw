@@ -6,6 +6,14 @@ The SciJava ecosystem is strongly committed to [[open source]] software developm
 
 ImageJ is funded by taxpayer money, so the project strives to be as transparent as possible. There are public [[Source Code|source code repositories]], public [[communication]] channels, public [[project management]] resources, and of course, this [[Help:Contents|community editable website]]. As you can see, we love [http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/ doing it in public]!
 
+== Independent learning ==
+
+The ImageJ and SciJava communities intend to foster not only scientific ''independent thinking'', but just as importantly, ''[http://conference.imagej.net/2015/pariksheet-nanda/transcript.pdf independent learning]''. We want to not only [https://en.wiktionary.org/wiki/give_a_man_a_fish_and_you_feed_him_for_a_day;_teach_a_man_to_fish_and_you_feed_him_for_a_lifetime teach people how to fish], but _teach them how to learn_.
+
+As such, responses to questions on [[Communication|ImageJ public channels]] will often begin with "What have you tried?" or "Can you make a minimal, complete, verifiable example?"—see the [[Bug reporting best practices]] for details. A good rule of thumb for questioners is to "put as much effort into your question as you expect to be put into its reply"—and for responders, to cordially encourage this behavior in questioners. Responses may give detailed macro or script solutions to image analysis questions, but they will also often include details of _how such solutions were produced_, as well as _how they might be improved or tailored to other similar scenarios_.
+
+We are always looking for more ways to improve the software to meet this goal of encouraging independent learning. Write to the [[Help|ImageJ forum]] with your ideas!
+
 == Extensibility ==
 
 [[Extensibility]] is [[ImageJ]]'s greatest strength. ImageJ is not just a software application—it is an extensible ''platform'' for the development of image [[:Category:Visualization|visualization]], [[segmentation]], [[:Category:Registration|registration]], and [[:Category:Analysis|analysis]] routines.
