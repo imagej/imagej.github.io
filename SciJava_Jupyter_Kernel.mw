@@ -4,9 +4,9 @@
 | software              = SciJava
 | author                = {{Person|Hadim}}
 | maintainer            = {{Person|Hadim}}
-| source                = {{GitHub|org=hadim|repo=scijava-jupyter-kernel}}
+| source                = {{GitHub|org=scijava|repo=scijava-jupyter-kernel}}
 | released              = 23/04/2016
-| status                = 0.2.6, beta
+| status                = 0.4.0, beta
 | category              = 
 }}
 __TOC__
@@ -17,4 +17,4 @@ Scijava Jupyter Kernel aims to provide a first class citizen Jupyter kernel that
 
 This project is in very early stage.
 
-You can follow the development here : https://github.com/hadim/scijava-jupyter-kernel
+You can follow the development here : https://github.com/scijava/scijava-jupyter-kernel
