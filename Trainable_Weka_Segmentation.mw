@@ -10,7 +10,7 @@
 | status                 = stable, active
 | category               = [[:Category:Segmentation|Segmentation]], [[:Category:Machine Learning|Machine Learning]]
 }}{|
-|style="vertical-align:top" |[[Image:TWS-pipeline.png|700px|Trainable Weka Segmentation pipeline overview.]]
+|style="vertical-align:top" |[[Image:TWS-pipeline.png|600px|Trainable Weka Segmentation pipeline overview.]]
 |}{{TOC}}
 '''Trainable''': this plugin can be trained to learn from the user input and perform later the same task in unknown (test) data.
 
