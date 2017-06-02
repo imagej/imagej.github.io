@@ -1028,6 +1028,15 @@ margin-top: 1.75em;
     color: #f33;
 }
 
+/* Styling for ComponentTable templates */
+
+table.component-table {
+    margin: 1em 1em 1em 0;
+    background: #f9f9f9;
+    border: 1px #aaa solid;
+    border-collapse: collapse;
+}
+
 /* NB: Fix the height of the Usage maps to avoid a vertical scroll bar. */
 div#map {
   height: 90% !important;
