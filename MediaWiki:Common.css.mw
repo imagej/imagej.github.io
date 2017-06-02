@@ -1037,6 +1037,18 @@ table.component-table {
     border-collapse: collapse;
 }
 
+table.component-table td {
+    border-right: 1px #aaa solid;
+    border-bottom: 1px #aaa solid;
+}
+
+table.component-table td:first-child,
+table.component-table td:nth-child(3),
+table.component-table td:nth-child(4),
+table.component-table td:nth-child(5) {
+    white-space: nowrap;
+}
+
 /* NB: Fix the height of the Usage maps to avoid a vertical scroll bar. */
 div#map {
   height: 90% !important;
