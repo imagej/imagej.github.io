@@ -1,17 +1,4 @@
-{{Infobox
-| name                   = Volume Viewer
-| software               = ImageJ
-| author                 = Kai Uwe Barthel
-| filename               = [http://imagej.net/plugins/download/jars/Volume_Viewer.jar]
-| source                 = [http://imagej.net/plugins/download/jars/Volume_Viewer.jar]
-| released               = February 2005
-| latest version         = December 2012
-| status                 = v2.01
-| category               = [[:Category:Visualization|Visualization]]
-| website                = http://imagej.net/plugins/volume-viewer.html
-}}
-
-3D reslicing and threshold-enabled 3D visualization.
+{{ComponentStats:sc.fiji:Volume_Viewer}}3D reslicing and threshold-enabled 3D visualization.
 
 Non-hardware accelerated volume rendering in different modalities.
 
@@ -23,4 +10,3 @@ Documentation: http://imagej.net/plugins/volume-viewer.html
 
 [[Category:Plugins]]
 [[Category:Visualization]]
-[[Category:Unmaintained]]
