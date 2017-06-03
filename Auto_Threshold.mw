@@ -1,15 +1,4 @@
-{{Infobox
-| software               = ImageJ
-| name                   = Auto Threshold
-| author                 = Gabriel Landini, plus others (see below)
-| maintainer             = Gabriel Landini (G.Landini at bham. ac. uk)
-| filename               = Auto_Threshold.jar
-| source                 = {{GitHub|org=fiji|repo=Auto_Threshold}}
-| latest version         = v1.16.1
-| status                 = active 
-}}{{TOC}}
-== Purpose ==
-This plugin binarises 8 and 16-bit images using various '''global''' (histogram-derived) thresholding methods. The segmented phase is always shown as white (255).
+{{ComponentStats:sc.fiji:Auto_Threshold}}This plugin binarises 8 and 16-bit images using various '''global''' (histogram-derived) thresholding methods. The segmented phase is always shown as white (255).
 
 For '''local''' thresholding rather than global, see  the [[Auto Local Threshold]] plugin.
 
