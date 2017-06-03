@@ -1,6 +1,4 @@
-== Lasso selection ==
-
-[this is under construction]
+{{ComponentStats:sc.fiji:Lasso_and_Blow_Tool}}[this is under construction]
 
 This selection tool is run from {{bc | Plugins | Segmentation | Lasso}}.
 Running the plugin adds a new button to the toolbar.
