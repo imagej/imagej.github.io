@@ -1,23 +1,10 @@
-{{Infobox
-| software               = ImageJ
-| name                   = Arrow
-| author                 = Jean-Yves Tinevez & Johannes Schindelin
-| maintainer             = {{Person|JeanYvesTinevez}}
-| source                 = {{GitHub|org=fiji|repo=Arrow}}
-| released               = December 2009
-| latest version         = December 2009
-| status                 = stable, active
-| category               = [[:Category:Image annotation|Image annotation]]
-}}
-
-
+{{ComponentStats:sc.fiji:Arrow_}}
 [[Image:Arrow example.png|center]]
 
 
 This version replaces the old <code>Arrow_.class</code> tool that was present in Fiji before. The main changes are the ability to draw the arrow as a floating selection, and to tune its shape. 
 
 Warning: Since <code>ImageJ version 1.43n</code>, a similar tool, made by {{Person|Rasband}}, does a similar thing from the ImageJ core, see {{GitHub|org=imagej|repo=ImageJA|path=ij/gui/Arrow.java|label=here}}.
-
 
 == Usage ==
 
