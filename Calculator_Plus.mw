@@ -1,7 +1,1 @@
-{{Infobox
-| name                   = Calculator Plus
-| software               = Fiji
-| source                 = {{GitHub|org=fiji|repo=Calculator_Plus}}
-| website                = http://imagej.net/plugins/calculator-plus.html
-| status                 = stable
-}}See http://imagej.net/plugins/calculator-plus.html for documentation.
+{{ComponentStats:sc.fiji:Calculator_Plus}}See http://imagej.net/plugins/calculator-plus.html for documentation.
