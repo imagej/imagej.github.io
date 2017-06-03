@@ -1,16 +1,4 @@
-{{Project|Fiji}}{{Infobox
-| name                   = Coloc 2 - Standardized, modular, Pixel Intensity Correlation over Space Based Colocalization analysis. 
-| software               = Fiji
-| author                 = Daniel J. White, Tom Kazimiers, Johannes Schindelin
-| maintainer             = {{Person|White}}
-| filename               = Colocalisation_Analysis.jar
-| source                 = {{GitHub|org=fiji|repo=Colocalisation_Analysis}}
-| latest version         = 26 Feb 2015
-| website                = http://Fiji.sc or http://imageJ.net
-| status                 = Beta. Under development, but stable enough for real work. Refinements to GUI and output under development.
-}}
-
-= What is Coloc 2 =
+{{ComponentStats:sc.fiji:Colocalisation_Analysis}}= What is Coloc 2 =
 
 Coloc 2 is Fiji's plugin for colocalization analysis. It implements and performs the pixel intensity correlation over space methods of [[wikipedia:Pearson product-moment correlation coefficient|Pearson]], [[Media:Manders.pdf|Manders]], [[Media:Costes etalColoc.pdf|Costes]], [[Media:LietAlColoc.pdf|Li]] and more, for scatterplots, analysis, automatic thresholding and statistical significance testing.
 
