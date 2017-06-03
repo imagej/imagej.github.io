@@ -1,13 +1,4 @@
-{{Infobox
-| name                   = Updater
-| software               = ImageJ
-| author                 = Johannes Schindelin, Yap Chin Kiet (Google Summer of Code 2009)
-| maintainer             = Johannes Schindelin
-| source                 = {{GitHub|org=imagej|repo=imagej-updater}} (UI-agnostic part), {{GitHub|org=imagej|repo=imagej-ui-swing}} (Swing UI)
-| released               = 10 Oct 2008
-| latest version         = 4 Nov 2014
-| status                 = beta
-}}The purpose of the ImageJ Updater is to keep you up-to-date with all components of ImageJ (or Fiji), i.e. the macros, scripts, plugins and the core components (libraries) needed by the plugins.
+{{ComponentStats:net.imagej:imagej-updater}}The purpose of the ImageJ Updater is to keep you up-to-date with all components of ImageJ (or Fiji), i.e. the macros, scripts, plugins and the core components (libraries) needed by the plugins.
 
 As of 2011, the ImageJ Updater can handle [[#Adding update sites|3rd-party update sites]], i.e. anybody can set up their own update site which users can follow. 
 
