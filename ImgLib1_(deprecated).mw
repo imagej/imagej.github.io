@@ -1,4 +1,4 @@
-{{ImgLib1_Deprecation_Notice}}
+{{ComponentStats:sc.fiji:legacy-imglib1}}{{ImgLib1_Deprecation_Notice}}
 
 = Citation =
 Please note that the ImgLib, as well as other plugins available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
@@ -106,3 +106,4 @@ The performance is better in the ''ImgLib'' version, as there is no need for two
 * [[Developing Imglib]]
 
 [[Category:ImgLib]]
+[[Category:Citable]]
