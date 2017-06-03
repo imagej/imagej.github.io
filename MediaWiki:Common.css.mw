@@ -1043,9 +1043,11 @@ table.component-table td {
 }
 table.component-table td:first-child, /* Name */
 table.component-table td:nth-child(3), /* Repository */
-table.component-table td:nth-child(4), /* Artifact */
-table.component-table td:nth-child(5) { /* License */
+table.component-table td:nth-child(4) { /* Artifact */
     white-space: nowrap;
+}
+table.component-table td:nth-child(5) { /* License */
+    max-width: 200px;
 }
 table.component-table td:nth-child(6) { /* Team */
     min-width: 100px;
