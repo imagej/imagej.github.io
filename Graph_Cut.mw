@@ -1,18 +1,9 @@
-{{Infobox
-| name                   = Graph Cut Plugin
-| software               = Fiji
-| author                 = {{Person|Funke}}
-| maintainer             = {{Person|Funke}}
-| source                 = {{GitHub|org=fiji|repo=Graph_Cut}}
-| released               = August 24<sup>th</sup>, 2010
-| status                 = experimental
-| category               = [[:Category:Segmentation|Segmentation]]
-}}{{TOC}}
+{{ComponentStats:sc.fiji:Graph_Cut}}
 [[Image:mito-sample.png|350px]]
 
-== General ==
-
 The Graph Cut plugin provides a way to obtain a globally smooth binary segmentation. As input, you have to provide a gray-scale image that represents the pixel affinities for belonging to the foreground. Via a single parameter you can adjust the smoothness of the segmentation.
+
+== Publication ==
 
 This plugin is based on a reimplementation of Kolmogorov's [http://pub.ist.ac.at/~vnk/software.html#maxflow maxflow v3.01] library, which was written in C++. If you intend to use it for a publication, please cite:
 
