@@ -1035,18 +1035,20 @@ table.component-table {
     background: #f9f9f9;
     border: 1px #aaa solid;
     border-collapse: collapse;
+    font-size: 80%;
 }
-
 table.component-table td {
     border-right: 1px #aaa solid;
     border-bottom: 1px #aaa solid;
 }
-
-table.component-table td:first-child,
-table.component-table td:nth-child(3),
-table.component-table td:nth-child(4),
-table.component-table td:nth-child(5) {
+table.component-table td:first-child, /* Name */
+table.component-table td:nth-child(3), /* Repository */
+table.component-table td:nth-child(4), /* Artifact */
+table.component-table td:nth-child(5) { /* License */
     white-space: nowrap;
+}
+table.component-table td:nth-child(6) { /* Team */
+    min-width: 100px;
 }
 
 /* NB: Fix the height of the Usage maps to avoid a vertical scroll bar. */
