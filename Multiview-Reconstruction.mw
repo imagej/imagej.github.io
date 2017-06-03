@@ -1,15 +1,4 @@
-{{Infobox
-| name                   = Reconstruction of Multiview Microscopy Data
-| software               = Fiji
-| author                 = {{Person|StephanP}}
-| maintainer             = {{Person|StephanP}}
-| source                 = {{GitHub|org=bigdataviewer|repo=SPIM_Registration}}
-| filename               = SPIM_Registration.jar
-| status                 = stable, active
-| category               = [[:Category:Plugins|Plugins]], [[:Category:Transform|Transform]], [[:Category:Registration|Registration]], [[:Category:Registration|SPIM Registration]], [[:Category:Deconvolution|Deconvolution]]
-| website                = [https://sourceforge.net/projects/multiviewreconstruction/ SourceForge page]
-}}
-
+{{ComponentStats:sc.fiji:SPIM_Registration}}
 == Download ==
 
 The integration of the '''Multiview Reconstruction''' and the [[BigDataViewer]] is available through the Fiji Updater. Simply update Fiji and the Multiview-Reconstruction pipeline will be available under '{{bc | Plugins | Multiview Reconstruction | Multiview Reconstruction Application}}'. The source code is available {{GitHub|org=bigdataviewer|repo=SPIM_Registration}}, please also report feature requests & bugs there.
