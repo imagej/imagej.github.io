@@ -1,19 +1,8 @@
-{{Infobox
-| name                   = PIV analyser
-| software               = Fiji
-| author                 = Jean-Yves Tinevez
-| maintainer             = Jean-Yves Tinevez 
-| source                 = [https://github.com/fiji/PIV_analyser on github]
-| released               = 18 April 2009
-| latest version         = v1.2 (20 April 2009)
-| status                 = stable
-}}
-
+{{ComponentStats:sc.fiji:PIV_analyser}}This plugin calculates the optic flow for each pair of images made with the given stack. 
 
 == Principle ==
 
-This plugin calculates the optic flow for each pair of images made with the
-given stack. It does using the PIV method, which is the most basic technique
+The plugin works using the PIV method, which is the most basic technique
 for optic flow. This technique, mainly used in
 acoustics or in fluids mechanics, enables the measurements of a velocity
 field in one plane, using imaging and image analysis<ref>
