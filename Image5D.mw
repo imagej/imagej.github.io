@@ -1,20 +1,10 @@
-{{Infobox
-| software               = Fiji
-| name                   = Image5D
-| author                 = [mailto:walter@biz.uni-muenchen.de Joachim Walter]
-| maintainer             = {{Person|Rueden}}
-| filename                = [http://maven.imagej.net/content/repositories/releases/sc/fiji/Image_5D/1.2.6/Image_5D-1.2.6.jar Image_5D-1.2.6.jar]
-| source                 = {{GitHub|org=fiji|repo=Image_5D}}
-| latest version         = 1.2.6 (2014 December 11)
-| status                 = inactive
-| category               = [[:Category:Visualization|Visualization]]
-}}This page supersedes the [http://imagej.net/plugins/image5d.html original Image5D page] from the ImageJ 1.x documentation.
+{{ComponentStats:sc.fiji:Image_5D}}This page supersedes the [http://imagej.net/plugins/image5d.html original Image5D page] from the ImageJ 1.x documentation.
 
 {{Notice|Please consider using the built-in [http://imagej.net/docs/guide/146-8.html hyperstacks] functionality in ImageJ, since it is newer and more well-integrated than this old Image5D plugin.}}
 
 == Installation ==
 
-Image5D is distributed as part of [[Fiji]], so no installation is necessary beyond that. If you do not wish to [[Update Sites|enable the Fiji update site]], you can download the Image5D JAR file to the plugins folder, restart ImageJ, and there will be new commands (''New Image5D'', ''Open Image5D'', etc.) in the ''Plugins/Image5D'' submenu. Image5D requires ImageJ 1.37b or later.
+Image5D is distributed as part of [[Fiji]], so no installation is necessary beyond that. If you do not wish to [[Update Sites|enable the Fiji update site]], you can download the Image5D JAR file to the plugins folder, restart ImageJ, and there will be new commands (''New Image5D'', ''Open Image5D'', etc.) in the {{bc|Plugins|Image5D}} submenu. Image5D requires ImageJ 1.37b or later.
 
 == Description ==
 
@@ -39,13 +29,13 @@ Open Series as Image5D opens a series of images or stacks from hard disk and con
 
 === Known bugs ===
 
-See the [https://github.com/fiji/image5d/issues GitHub issue tracker]
+See the [https://github.com/fiji/Image_5D/issues GitHub issue tracker]
 
 === Sample data ===
 
-A sample 5D data set [http://imagej.net/images/Spindly-GFP.zip is available]. In consists of HeLa cells with an H2B-GFP construct to stain the chromatin imaged in fluorescence and transmission. A large part of the GFP fluorescence is bleached in the second frame and the cells go through mitosis, later. It has 2 channels, 24 slices and 7 frames. The file (Spindly-GFP.zip) is a TIFF stack contained in a ZIP archive. To view it with Image5D, open it using ''File/Open'' or drag and drop, then convert it to an Image5D using ''Plugins/Image5D/Stack to Image5D''.
+A sample 5D data set [http://imagej.net/images/Spindly-GFP.zip is available]. In consists of HeLa cells with an H2B-GFP construct to stain the chromatin imaged in fluorescence and transmission. A large part of the GFP fluorescence is bleached in the second frame and the cells go through mitosis, later. It has 2 channels, 24 slices and 7 frames. The file (Spindly-GFP.zip) is a TIFF stack contained in a ZIP archive. To view it with Image5D, open it using ''File/Open'' or drag and drop, then convert it to an Image5D using {{bc|Plugins|Image5D|Stack to Image5D}}.
 
-A sample [http://imagej.net/macros/images/MyoblastCells.zip 16-bit RGB data set] of triple labeled cloned myoblast cells is also available. To view it with Image5D, open it using ''File/Open'' or drag and drop, then convert it to an Image5D using ''Plugins/Image5D/Stack to Image5D''. This image is courtasy of Dr. Angelica Keller and Juliette Peltzer, Faculte des Sciences et Technologies, Universite Paris 12 Val de Marne, France.
+A sample [http://imagej.net/macros/images/MyoblastCells.zip 16-bit RGB data set] of triple labeled cloned myoblast cells is also available. To view it with Image5D, open it using ''File/Open'' or drag and drop, then convert it to an Image5D using {{bc|Plugins|Image5D|Stack to Image5D}}. This image is courtasy of Dr. Angelica Keller and Juliette Peltzer, Faculte des Sciences et Technologies, Universite Paris 12 Val de Marne, France.
 
 == See also ==
 
