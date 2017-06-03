@@ -1,18 +1,6 @@
-{{Infobox
-| software               = ImageJ
-| name                   = Helmholtz Analysis
-| maintainer             = 
-| author                 = Bob Dougherty
-| source                 = {{GitHub|org=fiji|repo=Helmholtz_Analysis|source=Helmholtz_Analysis.java}}
-| released               = 21/10/2011
-| latest version         = 21/10/2011
-| status                 = 
-| category               = [[:Category:Plugins]]
-| website                = http://www.optinav.info/Helmholtz_Analysis.htm
-}}
-== Helmholtz Analysis ==
+{{ComponentStats:sc.fiji:Helmholtz_Analysis}}This plugin allows to analyze local direction and frequency of sinusoidal waves. The output are optionally smoothed ''lambda'' (inversely proportional to the frequency) and ''phi'' (direction in degrees).
 
-This plugin allows to analyze local direction and frequency of sinusoidal waves. The output are optionally smoothed ''lambda'' (inversely proportional to the frequency) and ''phi'' (direction in degrees).
+See also http://www.optinav.info/Helmholtz_Analysis.htm
 
 === Example ===
 
