@@ -1,19 +1,9 @@
-{{Infobox
-| software               = ImageJ
-| name                   = Gray Morphology
-| author                 = Dimiter Prodanov
-| maintainer             = Dimiter Prodanov
-| filename               = Gray_Morphology.jar 
-| source                 = {{GitHub | org=fiji | repo=Gray_Morphology}}
-| released               = September 15, 2003
-| latest version         = June 14, 2006
-| status                 = stable
-| category               = [[:Category:Segmentation|Segmentation]], [[:Category:Mathematical_morphology|Mathematical morphology]]
-| website                = [http://imagej.net/plugins/gray-morphology.html Gray Morphology at the ImageJ website]
-}}
-
-This plugin performs [[wikipedia:Mathematical morphology|mathematical morphology]] on grayscale images. It only works on [[8-bit]] grayscale images.
+{{ComponentStats:sc.fiji:Gray_Morphology}}This plugin performs [[wikipedia:Mathematical morphology|mathematical morphology]] on grayscale images. It only works on [[8-bit]] grayscale images.
 
 For more information on morphological operators in image processing, have a look at [http://homepages.inf.ed.ac.uk/rbf/HIPR2/matmorph.htm this page].
 
-[[Category:Segmentation]][[Category:Mathematical_morphology]]
+See also [http://imagej.net/plugins/gray-morphology.html Gray Morphology at the ImageJ 1.x website].
+
+[[Category:Segmentation]]
+[[Category:Mathematical_morphology]]
+[[Category:Plugins]]
