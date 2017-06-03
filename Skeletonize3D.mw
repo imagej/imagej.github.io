@@ -1,16 +1,4 @@
-{{Infobox
-| software               = Fiji
-| name                   = Skeletonize3D
-| author                 = {{Person|Iarganda}}
-| maintainer             = Ignacio Arganda-Carreras ([mailto:iarganda@mit.edu iarganda@mit.edu])
-| filename               = {{Maven | g=sc.fiji | a=Skeletonize3D_}}
-| source                 = {{GitHub|org=fiji|repo=Skeletonize3D}}
-| released               = November 14<sup>th</sup>, 2008
-| latest version         = 1.0.1, September 17<sup>th</sup>, 2014
-| status                 = stable
-| category               = [[:Category:Skeleton|Skeleton]]
-| website                = [http://imagejdocu.tudor.lu/doku.php?id=plugin:morphology:skeletonize3d:start Skeletonize3D at ImageJ wiki]
-}}2D and 3D skeletonization of binary images.
+{{ComponentStats:sc.fiji:Skeletonize3D_}}2D and 3D skeletonization of binary images.
 
 {|
 |style="vertical-align:top" |[[Image:Smoothed-bat-cochlea-volume.gif|thumb|Smoothed bat cochlea volume]]
@@ -50,6 +38,9 @@ As Hanno Homman explains in his paper, […] ''binary thinning is used for findi
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.  
+
+== See also ==
+* [http://imagejdocu.tudor.lu/doku.php?id=plugin:morphology:skeletonize3d:start Skeletonize3D at ImageJ documentation wiki]
 
 ----
 
