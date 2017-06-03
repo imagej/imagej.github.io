@@ -1,4 +1,4 @@
-{{ComponentStats:sc.fiji:AnalyzeSkeleton_}}Analysis of 2D and 3D skeleton images. For the ImageJ plugin, visit [http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:start AnalyzeSkeleton at ImageJ wiki].
+{{ComponentStats:sc.fiji:AnalyzeSkeleton_}}Analysis of 2D and 3D skeleton images. For the ImageJ 1.x plugin, see [http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:start this page].
 
 {|
 |style="vertical-align:top" |[[Image:Analyze_skeleton_09_13_2009.png|thumb|350px|Example of AnalyzeSkeleton performance]]
