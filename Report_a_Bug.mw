@@ -1,15 +1,6 @@
 {{HelpMenu}}You can file an issue in ImageJ's issue tracker using the {{bc | Help | Report a Bug}} command. Please invest the time to [[Bug reporting best practices|write a good issue report]].
 {{Warning | The "Report a Bug" plugin is currently being rewritten to report issues to GitHub, rather than to the now-defunct Fiji BugZilla. In the meantime, please report bugs via the [[Forum]] or [https://github.com/imagej/imagej/issues on GitHub] instead.}}
-{{Infobox
-| software               = Fiji
-| name                   = Bug Submitter
-| maintainer             = {{Person|Schindelin}}<br/>{{Person|Rueden}}
-| author                 = {{Person|Mark}}
-| source                 = {{GitHub|org=fiji|repo=Bug_Submitter}}
-| released               = 03/05/2009
-| latest version         = 30/09/2009
-| status                 = maintained
-}}== Report a Bug ==
+{{ComponentStats:sc.fiji:Bug_Submitter}}== Report a Bug ==
 
 To be able to track issues better, the Fiji project has a [http://fiji.sc/bugzilla BugZilla] instance. However, BugZilla's user interface can be quite intimidating to somebody who just wants to report a bug. Therefore, Fiji offers an easier way to report a bug:
 
