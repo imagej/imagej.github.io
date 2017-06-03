@@ -9,7 +9,7 @@ This plugin is based on a reimplementation of Kolmogorov's [http://pub.ist.ac.at
 
 Yuri Boykov and Vladimir Kolmogorov, <b>An Experimental Comparison of Min-Cut/Max-Flow Algorithms for Energy Minimization in Computer Vision.</b>, In IEEE Transactions on Pattern Analysis and Machine Intelligence, September 2004.
 
-The plugin can be found under <b>Plugins</b>-><b>Segmentation</b>-><b>Graph Cut</b>.
+The plugin can be found under {{bc|Plugins|Segmentation|Graph Cut}}.
 
 == Settings ==
 
