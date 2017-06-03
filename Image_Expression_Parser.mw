@@ -1,15 +1,4 @@
-{{Infobox
-| software               = Fiji
-| name                   = Image Expression Parser
-| author                  = {{Person|JeanYvesTinevez}}, {{Person|Albertcardona}}
-| maintainer           = {{Person|JeanYvesTinevez}}
-| filename              = Image_Expression_Parser.jar 
-| source                 = {{GitHub|org=fiji|repo=Image_Expression_Parser}}
-| released              = February  2010
-| latest version      = June 8<sup>th</sup>, 2010
-| status                  = v2.2 (first version released publicly)
-| category               =[[:Category:Plugins|Plugins]]
-}}{{TOC}}
+{{ComponentStats:sc.fiji:Image_Expression_Parser}}{{TOC}}
 == Usage ==
 
 The plugin is located in {{bc | Process | Image Expression Parser}}.
