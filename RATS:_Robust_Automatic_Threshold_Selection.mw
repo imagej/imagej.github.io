@@ -1,18 +1,8 @@
-{{Infobox
-| software               = ImageJ
-| name                   = RATS: Robust Automatic Threshold Selection
-| author                 = Ben Tupper and Mike Sieracki
-| maintainer             = Ben Tupper
-| filename               = RATS_.java
-| source                 = on {{GitHub|org=fiji|repo=RATS|source=RATS_.java}}
-| released               = 17 December 2009
-| status                 = active
-| category               = [[:Category:Segmentation|Segmentation]]
-}}
+{{ComponentStats:sc.fiji:RATS_}}Robust Automatic Threshold Selection (RATS) computes a threshold map for a 2d image based upon the value of pixels and their gradients. 
 
 ==Background==
 
-Robust Automatic Threshold Selection (RATS) computes a threshold map for a 2d image based upon the value of pixels and their gradients. The algorithm is applied across regions of the image making it suitable for thresholding noisy images with variable background. The plugin is based upon the description in
+The RATS algorithm is applied across regions of the image making it suitable for thresholding noisy images with variable background. The plugin is based upon the description in
 *Wilkinson MHF (1998) ''Segmentation techniques in image analysis of microbes''. Chapter 6 in: Wilkinson MHF, Schut F (eds.) '''Digital Image Analysis of Microbes: Imaging, Morphometry, Fluorometry and Motility Techniques and Applications''', Vol. John Wiley & Sons, New York. 
 
 In this implementation the input gradient of the input image is computed using the Sobel kernels.  Traditionally the Sobel gradient is computed using 
