@@ -145,6 +145,7 @@ There is a 7-angle SPIM dataset of ''Drosophila'' available for download [http:/
 Multi-view SPIM datasets are typically rather large, therefore it is recommended to use the registration plugin on a computer with a lot of RAM. The minimal requirement for the example dataset is '''at least 4Gb''' of memory however we recommend an '''16Gb+''' system, ideally at least '''64Gb''' and a CUDA capable graphics card. You may need to increase the Fiji memory limit by going to Edit->Options->Memory & Threads.
 
 [[Category:Plugins]]
+[[Category:Citable]]
 [[Category:Transform]]
 [[Category:Registration]]
 [[Category:Deconvolution]]
