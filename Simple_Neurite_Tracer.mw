@@ -1,13 +1,4 @@
-{{Infobox
-| software = Fiji
-| name = Simple Neurite Tracer
-| author = [[User:Mark|Mark Longair]], [[User:Tiago|Tiago Ferreira]] and [https://github.com/fiji/Simple_Neurite_Tracer/graphs/contributors contributors]
-| maintainer = [[User:Tiago|Tiago Ferreira]]
-| latest version = '''3.1.1 March 2017'''
-| source = {{GitHub|org=fiji|repo=Simple_Neurite_Tracer}}
-| status = Stable ([https://github.com/fiji/Simple_Neurite_Tracer/releases Release notes])
-}}
-The ImageJ framework for semi-automated tracing of neurons and other tube-like structures.
+{{ComponentStats:sc.fiji:Simple_Neurite_Tracer}}Fiji's framework for semi-automated tracing of neurons and other tube-like structures.
 
 == Introduction ==
 This plugin is designed to allow easy semi-automatic tracing of neurons or other tube-like structures (e.g., blood vessels) through 3D image stacks. The plugin has built-in tools for analysis and hardware accelerated 3D visualization of the results. Data can be imported and exported in SWC files for interaction with other software, or details of the traces can be exported as CSV files for analysis in spreadsheets or statistical software.  The [[#Technical Documentation|native file format]] is open and XML-based.  This plugin is Free Software (also known as Open Source software).
