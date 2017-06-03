@@ -1,18 +1,4 @@
-{{Infobox
-| software               = ImageJ
-| name                   = 3D Object Counter
-| maintainer        =  {{Person|White}}
-| author                 = Fabrice P. Cordelieres
-| filename               = [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=plugin:analysis:3d_object_counter:3d-oc_.jar 3d-oc_.jar] 
-| source                 = [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=plugin:analysis:3d_object_counter:3d-oc_.jar Contained within the jar file]
-| released               = 15/06/2005
-| latest version         = 12/08/2009
-| status                 = maintained actively as of 11/2009
-| category               = [[:Category:Particle analysis|Particle analysis]]
-| website                = [http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:3d_object_counter:start]
-}}
-
-
+{{ComponentStats:sc.fiji:3D_Objects_Counter}}
 == What does it do ? ==
 This plugin:
 *'''counts the number of 3D objects in a stack.'''
