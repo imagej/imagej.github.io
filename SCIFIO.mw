@@ -1,13 +1,4 @@
-{{Infobox
-| name                   = SCIFIO
-| software               = ImageJ
-| logo                   = [[File:Scifio-logo.png|150px]]
-| author                 = {{Person|Hinerm}}, {{Person|Rueden}}
-| maintainer             = {{Person|Rueden}}
-| source                 = {{GitHub | org = scifio | repo = scifio}}
-| status                 = active
-| category               = 
-}}[http://scif.io/ SCIFIO] is a flexible framework for '''SC'''ientific '''I'''mage '''F'''ormat '''I'''nput and '''O'''utput. In other words, it is a library for reading and writing N-dimensional image data—e.g., to and from files on disk. SCIFIO is built on the [[SciJava Common]] library.
+{{ComponentStats:io.scif:scifio}}[http://scif.io/ SCIFIO] is a flexible framework for '''SC'''ientific '''I'''mage '''F'''ormat '''I'''nput and '''O'''utput. In other words, it is a library for reading and writing N-dimensional image data—e.g., to and from files on disk. SCIFIO is built on the [[SciJava Common]] library.
 
 [[ImageJ2]] uses SCIFIO by default for most image input tasks. You can change this behavior at any time by running {{bc | Edit | Options | ImageJ2}} and modifying the ''Use SCIFIO when opening files'' option.
 
