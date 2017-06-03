@@ -1,17 +1,4 @@
-{{Infobox
-| software               = ImageJ
-| name                   = Colour Deconvolution
-| author                 = Gabriel Landini
-| filename               = {{Maven | g=sc.fiji | a=Colour_Deconvolution}} 
-| source                 = {{GitHub|org=fiji|repo=Colour_Deconvolution}}
-| released               = 30 March 2004 
-| latest version         = 04 February 2007
-| status                 = active
-| category               = [[:Category:Color processing|Color processing]]
-| website                = [http://www.mecourse.com/landinig/software/cdeconv/cdeconv.html]
-}}== Purpose ==
-
-Similarly to the command {{bc | Image | Color | RGB split}}, this plugin unmixes an RGB image produced by subtractive mixing (inks, histological dyes) into separate channels correspondig to up to 3 determined colors. This is useful e.g. to do pigment separation. 
+{{ComponentStats:sc.fiji:Colour_Deconvolution}}Similarly to the command {{bc | Image | Color | RGB split}}, this plugin unmixes an RGB image produced by subtractive mixing (inks, histological dyes) into separate channels corresponding to up to 3 determined colors. This is useful e.g. to do pigment separation. 
 
 == Documentation ==
 
