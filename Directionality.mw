@@ -1,23 +1,7 @@
-{{Infobox
-| software               = Fiji
-| name                   = Directionality
-| author                  = {{Person|JeanYvesTinevez}}
-| maintainer           = {{Person|JeanYvesTinevez}}
-| filename              = Directionality_.jar 
-| source                 = as a {{GitHub|org=fiji|repo=Directionality|label=github repository}}
-| released              = March 12<sup>th</sup>, 2010
-| latest version      = June 8<sup>th</sup>, 2010
-| status                  = v2.0 - stable
-| category               =[[:Category:Analysis|Analysis]]
-}}
-
-
+{{ComponentStats:sc.fiji:Directionality_}}
 == Usage ==
 
-
-
-[[Image:Directionality_Example.png|700px]]
-
+[[Image:Directionality_Example.png|600px]]
 
 This plugin is used to infer the preferred orientation of structures present in the input image. It computes a histogram indicating the amount of structures in a given direction. Images with completely isotropic content are expected to give a flat histogram, whereas images in which there is a preferred orientation are expected to give a histogram with a peak at that orientation.
 
