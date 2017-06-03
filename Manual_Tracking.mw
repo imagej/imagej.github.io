@@ -1,20 +1,10 @@
-{{Infobox
-| software               = ImageJ
-| name                   = Manual Tracking
-| author                 = Fabrice Cordelières
-| maintainer         = [[Dan White]] (unless Fabrice wants to do it)
-| filename               = [http://imagej.net/plugins/track/Manual_Tracking.class Manual_Tracking.class] (40,049 Bytes)
-| source                 = [http://imagej.net/plugins/track/Manual_Tracking.java Manual_Tracking.java] (71,885 Bytes)
-| released               = 25 June 2004 
-| latest version         = 15 June 2005
-| status                 = unknown
-| category               = [[:Category:Particle analysis|Particle analysis]], [[:Category:Tracking|Tracking]]
-| documentation          = [http://imagej.net/plugins/track/Manual%20Tracking%20plugin.pdf Manual Tracking Plugin.pdf]
-| website                = [http://imagej.net/plugins/track/track.html]
-}}
+{{ComponentStats:sc.fiji:Manual_Tracking}}
+
+See pdf documentation  [http://imagej.net/plugins/track/Manual%20Tracking%20plugin.pdf here]
+
+== See also ==
+* [http://imagej.net/plugins/track/track.html ImageJ 1.x website]
 
 [[Category:Plugins]]
 [[Category:Particle analysis]]
 [[Category:Tracking]]
-
-See pdf documentation  [http://imagej.net/plugins/track/Manual%20Tracking%20plugin.pdf here]
