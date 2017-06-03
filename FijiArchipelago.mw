@@ -1,14 +1,4 @@
-{{Infobox
-| name                   = Fiji Archipelago
-| author                 = Larry Lindsey
-| maintainer             = Larry Lindsey
-| released               = April 2013
-| latest version         = January 2014
-| status                 = beta
-| category               = [[:Category:Plugins|Plugins]]
-}}
-
-Fiji Archipelago is a plugin that brings Cluster functionality to Fiji
+{{ComponentStats:sc.fiji:Fiji_Archipelago}}Fiji Archipelago is a plugin that brings Cluster functionality to Fiji
 
 == Overview ==
 Fiji Archipelago is a tool designed to make it easy for programmers to export Fiji/ImageJ functionality over a network to several other computers.
