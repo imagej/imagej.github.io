@@ -1,19 +1,5 @@
-{{Infobox
-| name                   = 3D Color Inspector/Color Histogram
-| software               = ImageJ
-| author                 = Kai Uwe Barthel
-| filename               = [http://imagej.net/plugins/download/jars/3D_Color_Inspector.jar 3D_Color_Inspector.jar]
-| source                 = [http://imagej.net/plugins/download/jars/3D_Color_Inspector.jar 3D_Color_Inspector.jar]
-| released               = June 2004
-| latest version         = September 2007
-| status                 = v2.3
-| category               = [[:Category:Plugins|Plugins]]
-| website                = http://imagej.net/plugins/color-inspector.html
-}}
-
-Documentation: http://imagej.net/plugins/color-inspector.html
+{{ComponentStats:sc.fiji:Color_Inspector_3D}}Documentation: http://imagej.net/plugins/color-inspector.html
 
 Not hardware accelerated.
 
 [[Category:Plugins]]
-[[Category:Unmaintained]]
