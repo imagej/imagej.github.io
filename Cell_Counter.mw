@@ -1,14 +1,4 @@
-{{Infobox
-| software               = Fiji
-| name                   = Cell Counter
-| author                 = Kurt De Vos
-| maintainer             = {{Person|Rueden}}
-| filename               = Cell_Counter.jar
-| source                 = {{GitHub | org = fiji | repo = Cell_Counter}}
-| released               = 17 October 2001 
-| latest version         = 2 March 2015
-| category               = [[:Category:Particle analysis|Particle analysis]]
-}}This plugin will open a new cell counter GUI. On the left are the counter types and counters, on the right the action buttons.
+{{ComponentStats:sc.fiji:Cell_Counter}}This plugin will open a new cell counter GUI. On the left are the counter types and counters, on the right the action buttons.
 
 {{Notice|Please consider using the built-in [http://imagej.net/docs/guide/146-19.html#sec:Multi-point-Tool Multi-Point Tool] in ImageJ, as this tool now replicates most of the functionality of Cell Counter.}}
 
