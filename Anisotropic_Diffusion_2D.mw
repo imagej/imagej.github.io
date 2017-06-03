@@ -1,19 +1,4 @@
-{{Infobox
-| software               = ImageJ
-| name                   = Anisotropic diffusion 2D
-| author                 = Vladimir Pilny and Jiri Janacek
-| filename               = [http://imagej.net/plugins/download/Anisotropic_Diffusion_2D.class Anisotropic_Diffusion_2D.class]
-| source                 = [http://imagej.net/plugins/download/Anisotropic_Diffusion_2D.java Anisotropic_Diffusion_2D.java]
-| released               = 01 December 2005
-| latest version         = 14 February 2006
-| status                 = v0.3
-| website                = [http://imagej.net/plugins/anisotropic-diffusion-2d.html]
-| category               = [[:Category:Filtering|Filtering]]
-}}
-
-== Purpose ==
-
-This plugin implement the anisotropic diffusion filter in 2D. Anisotropic filters are a class of filter that reduces noise in an image while trying to preserve sharp edges.
+{{ComponentStats:sc.fiji:Anisotropic_Diffusion_2D}}This plugin implement the anisotropic diffusion filter in 2D. Anisotropic filters are a class of filter that reduces noise in an image while trying to preserve sharp edges. See also [http://imagej.net/plugins/anisotropic-diffusion-2d.html this page of the ImageJ 1.x web site].
 
 == Documentation ==
 
