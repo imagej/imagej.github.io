@@ -1,15 +1,4 @@
-{{Infobox
-| name                   = Selective Plane Illumination Microscopy Registration
-| software               = ImageJ
-| author                 = Stephan Preibisch, Stephan Saalfeld, Johannes Schindelin, Pavel Tomancak
-| maintainer             = Stephan Preibisch
-| filename               = SPIM_Registration.jar
-| released               = February 2010
-| latest version         = June 2012
-| category               = [[:Category:Registration|SPIM Registration]]
-| website                = [http://fly.mpi-cbg.de/~preibisch Stephan Preibisch's homepage]
-}}
-
+{{ComponentStats:sc.fiji:SPIM_Registration}}
 == Important Note ==
 {{Warning | '''''Please Note: This version of the software is outdated. It will be part of Fiji for the time being, but I highly recommend using the new [[Multiview-Reconstruction|Multiview Reconstruction Plugin]]. It is much more powerful, flexible and completely integrated with the [[BigDataViewer]].'''''}}
 
