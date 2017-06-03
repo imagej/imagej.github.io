@@ -1,16 +1,4 @@
-{{Infobox
-| software               = ImageJ
-| name                   = Linear Kuwahara
-| maintainer             = Christian Tischer
-| author                 = Christian Tischer
-| source                 = {{GitHub|org=fiji|repo=Linear_Kuwahara}}
-| released               = 08/10/2010
-| latest version         = 08/10/2010
-| status                 = 
-| category               = [[:Category:Plugins]]
-| website                = 
-}}
-This plugin extends the idea of the [http://imagej.net/plugins/kuwahara.html original Kuwahara] filter from rectangular kernels to (straight) linear ones.
+{{ComponentStats:sc.fiji:Linear_Kuwahara}}This plugin extends the idea of the [http://imagej.net/plugins/kuwahara.html original Kuwahara] filter from rectangular kernels to (straight) linear ones.
 
 You can specify how large the generated kernels should be, and for how many different angles they are generated. Additionally, you can specify what criterion is used to select the best orientation.
 
