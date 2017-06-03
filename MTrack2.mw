@@ -1,16 +1,4 @@
-{{Infobox
-| software               = ImageJ
-| name                   = MTrack2
-| author                 = Nico Stuurman (nico at cmp.ucsf.edu)
-| maintainer             = [[Dan White]]
-| filename               = 
-| source                 = {{GitHub|org=fiji|repo=MTrack2|source=MTrack2_.java}} or externally [http://valelab.ucsf.edu/~nico/IJplugins/download/plugins/MTrack2_.java here]
-| released               = 
-| latest version         = 2008/07/03 Macro aware
-| status                 = 
-| category               = [[:Category:Tracking]]
-| website                = [http://valelab.ucsf.edu/~nico/IJplugins/MTrack2.html]
-}}
+{{ComponentStats:sc.fiji:MTrack2_}}
 This plugin is for tracking objects in 2D over time. 
 
 Mtrack2 is based on the MultiTracker plugin by Jeffrey Kuhn which is based on the Object tracker plugin by {{Person|Rasband}}. In contrast to the Multitracker plugin, the number of objects may vary between successive frames (objects may appear or disappear). Mtrack2 will identify the objects in each frame, and then determine which objects in successive frames are closest together. If theses are within a user-defined distance (the maximum velocity of the objects) they are assembled into tracks. When multiple objeccts are within the distance determined by the maximum velocity, the closest object is selected and the object is flagged in the output.
@@ -38,6 +26,8 @@ call("MTrack2_.setProperty","skipDialogue","true");
 run("MTrack2 ");
 </source>
 
+== See also ==
+* http://valelab.ucsf.edu/~nico/IJplugins/MTrack2.html
 
 [[Category:Plugins]]
 [[Category:Tracking]]
