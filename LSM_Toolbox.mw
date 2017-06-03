@@ -1,15 +1,4 @@
-{{FormatsMenu}}{{Infobox
-| software               = ImageJ
-| name                   = LSM_Toolbox
-| author                 = Patrick Pirrotte, Jérome Mütterer
-| filename               = LSM_Toolbox.jar
-| source                 = {{GitHub | org=fiji | repo=LSM_Toolbox | label=LSM_Toolbox}}<br>{{GitHub | org=fiji | repo=LSM_Reader | label=LSM_Reader}}
-| released               = v4.0 - 10 October 2010
-| latest version         =v4.0h - 6 February 2015
-| status                 = stable
-| category               = [[:Category:Import-Export]]
-| website                = [http://imagejdocu.tudor.lu/doku.php?id=plugin:inputoutput:lsmtoolbox:start]
-}}The LSM Toolbox provides plugins for working with Carl Zeiss LSM510 .lsm files.
+{{FormatsMenu}}{{ComponentStats:sc.fiji:LSM_Toolbox}}The LSM Toolbox provides plugins for working with Carl Zeiss LSM510 .lsm files.
 
 ==Usage==
 
