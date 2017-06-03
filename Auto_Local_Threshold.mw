@@ -1,16 +1,4 @@
-{{Infobox
-| software               = ImageJ
-| name                   = Auto Local Threshold
-| author                 = Gabriel Landini, plus others (see below)
-| maintainer             = Gabriel Landini (G.Landini at bham. ac. uk)
-| filename               = included in Auto_Threshold.jar
-| source                 = {{GitHub|org=fiji|repo=Auto_Threshold|source=fiji/threshold/Auto_Local_Threshold.java}}
-| latest version         = v1.16.1
-| status                 = active 
-}}
-
-== Purpose ==
-This plugin binarises 8-bit images using various '''local'''  thresholding methods. By 'local' here is meant that the threshold is computed for each pixel according to the image characteristings within a window of radius '''r''' around it. The segmented phase is always shown as white (255).
+{{ComponentStats:sc.fiji:Auto_Threshold}}This plugin binarises 8-bit images using various '''local'''  thresholding methods. By 'local' here is meant that the threshold is computed for each pixel according to the image characteristings within a window of radius '''r''' around it. The segmented phase is always shown as white (255).
 
 For '''global''' thresholding rather than local, see  the [[Auto Threshold]] plugin.
 == Installation ==
