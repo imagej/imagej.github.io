@@ -1,15 +1,4 @@
-{{Infobox
-| software               = Fiji
-| name                   = Fiji Packager
-| maintainer             = Johannes Schindelin
-| author                 = Johannes Schindelin
-| source                 = {{GitHub|org=fiji|repo=Fiji_Package_Maker}}
-| released               = 12/01/2012
-| latest version         = 12/01/2012
-| status                 = stable
-| category               = [[:Category:Plugins]]
-| website                = 
-}}The Fiji Packager allows you to bundle an existing Fiji installation so you can share all the plugins and update sites with colleagues. It makes a single archive (.zip, .tar.gz, .tar.bz2 are supported at the moment) from the files in ''Fiji.app/''.
+{{ComponentStats:sc.fiji:Fiji_Package_Maker}}The Fiji Packager allows you to bundle an existing Fiji installation so you can share all the plugins and update sites with colleagues. It makes a single archive (.zip, .tar.gz, .tar.bz2 are supported at the moment) from the files in ''Fiji.app/''.
 
 After clicking on {{bc | Plugins | Utilities | Make Fiji Package}} (note: there are two {{bc | Plugins | Utilities}} menus because ImageJ1 enforces separate submenus for non-core plugins which makes things a little bit confusing), you will be asked for the format and the file name.
 
