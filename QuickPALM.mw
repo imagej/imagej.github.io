@@ -1,15 +1,4 @@
-{{Infobox
-| name                   = QuickPALM
-| software               = ImageJ / Fiji
-| author                 =  {{Person | NanoJ}}
-| maintainer             = Dan White / {{Person | NanoJ}}
-| filename               = QuickPALM.jar?
-| released               = June 2010
-| latest version         = June 2010 v1.1
-| category               = [[:Category:Superresolution|Super Resolution]]
-| website                = [http://code.google.com/p/quickpalm/ QuickPALM Google Code pages]
-}}== What is QuickPALM and what is it useful for?==
-The QuickPALM ImageJ plugin enables PALM/STORM 2D/3D/4D particle detection and image reconstruction. It uses fast methods to make the reconstruction very quickly, or even in real time. 
+{{ComponentStats:sc.fiji:QuickPALM_}}The QuickPALM ImageJ plugin enables PALM/STORM 2D/3D/4D particle detection and image reconstruction. It uses fast methods to make the reconstruction very quickly, or even in real time. 
 
 == Publication ==
 {{Publication | QuickPALM}}
