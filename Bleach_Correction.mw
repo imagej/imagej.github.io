@@ -1,17 +1,4 @@
-{{Infobox
-| software               = ImageJ
-| name                   = Bleach Correction
-| maintainer             = {{Person|Miura}}
-| author                 = {{Person|Miura}}, Jens Rietdorf
-| source                 = {{GitHub|org=fiji|repo=CorrectBleach}}
-| released               = 18/04/2012
-| latest version         = 18/04/2012
-| status                 = stable
-| category               = [[:Category:Plugins]]
-| website                = http://cmci.embl.de/downloads/bleach_corrector
-}}== Bleach Correction ==
-
-The plugin was made available by {{Person|Miura}} and Jens Rietdorf and the full documentation is available [http://cmci.embl.de/downloads/bleach_corrector at EMBL's site].
+{{ComponentStats:sc.fiji:CorrectBleach_}}The plugin was made available by {{Person|Miura}} and Jens Rietdorf and the full documentation is available [http://cmci.embl.de/downloads/bleach_corrector at EMBL's site].
 
 This plugin contains three different methods for correcting the intensity decay due to photobleaching. They all work with either 2D or 3D time series. In case of 3D time series, image properties should be appropriately set. If you are not sure, check your image header by [Image → Properties].
 
