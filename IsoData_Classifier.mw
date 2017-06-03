@@ -1,12 +1,4 @@
-{{Infobox
-| name                   = IsoData Classifier
-| software               = Fiji
-| author                 = {{Person|Schindelin}}
-| maintainer             = Johannes Schindelin
-| source                 = {{GitHub|org=fiji|repo=IsoData_Classifier}}
-| released               = 2009/11/21
-}}
-
+{{ComponentStats:sc.fiji:IsoData_Classifier}}
 This plugin calculates a classification based on the histogram of the image by generalizing the [[IsoData]] algorithm to more than two classes.
 
 This plugin works on 8-bit and 16-bit grayscale images only.
