@@ -1,22 +1,6 @@
-{{Infobox
-| name                   = 3D Viewer
-| software               = ImageJ
-| author                 = Benjamin Schmid, Albert Cardona, Mark Longair, Johannes Schindelin
-| filename               = [http://3dviewer.neurofly.de/download/ImageJ_3D_Viewer.jar]
-| source                 = {{GitHub|org=fiji|repo=3D_Viewer}}
-| released               = April 2007
-| latest version         = January 2013
-| status                 = beta
-| category               = [[:Category:Visualization|Visualization]]
-| website                = http://3dviewer.neurofly.de
-}}== Purpose ==
-
-This plugin offers hardware-accelerated visualization possibilities for
-image stacks, using the [[Java 3D]] library. Stacks can be displayed as texture-based volume renderings, 
-surfaces or orthoslices. 
+{{ComponentStats:sc.fiji:3D_Viewer}}This plugin offers hardware-accelerated visualization possibilities for image stacks, using the [[Java 3D]] library. Stacks can be displayed as texture-based volume renderings, surfaces or orthoslices. 
 
 [[Image:3D_Viewer_overview.png|center]]
-
 
 == Screencasts ==
 Here you are a demo screencast separated into two different videos (~15 min in total) showing many of the features of the 3D viewer:
