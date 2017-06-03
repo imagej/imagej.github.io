@@ -1,14 +1,3 @@
-{{Infobox
-| software               = ImageJ
-| name                   = Multi Kymograph
-| maintainer             = [mailto:jens_dot_rietdorf_at_fmi_dot_ch Jens Rietdorf]
-| author                 = Jens Rietdorf and Arne Seitz
-| source                 = {{GitHub|org=fiji|repo=Multi_Kymograph}}
-| released               = 21/04/2004
-| latest version         = 31/10/2008
-| status                 = 
-| category               = [[:Category:Plugins]]
-| website                = http://www.embl.de/eamnet/html/body_kymograph.html
-}}Please have a look at the [http://www.embl.de/eamnet/html/body_kymograph.html detailed plugin description].
+{{ComponentStats:sc.fiji:Multi_Kymograph}}Please have a look at the [http://www.embl.de/eamnet/html/body_kymograph.html detailed plugin description].
 
 [[Category:Plugins]]
