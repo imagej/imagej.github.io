@@ -1,19 +1,5 @@
-{{Infobox
-| software               = ImageJ
-| name                   = Local Thickness
-| author                 = Bob Dougherty (rpd@optinav.com)
-| filename               = LocalThickness_.jar
-| source                 = {{GitHub|org=fiji|repo=LocalThickness}}
-| released               = 2006 
-| latest version         = 
-| status                 = 
-| category               = 
-| documentation          = [http://www.optinav.info/LocalThicknessEd.pdf LocalThicknessEd.pdf]
-}}'''Local Thickness''' is used to compute the local thickness of a 3D image stack.
+{{ComponentStats:sc.fiji:LocalThickness_}}'''Local Thickness''' is used to compute the local thickness of a 3D image stack.
 
 Documentation is available as [http://www.optinav.info/LocalThicknessEd.pdf pdf] file.
-
-== References ==
-<references />
 
 [[Category:Plugins]]
