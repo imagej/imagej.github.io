@@ -1,16 +1,6 @@
 <seo metak="sholl,sholl analysis, plugin,arbor,neuron,morphometry,dendrite, neuroanatomy" metad="sholl,sholl analysis, plugin,arbor,neuron,morphometry,dendrite,neuroanatomy" />
 <div style="float:right;">
-{{Infobox
-| software       = Fiji
-| name           = Sholl Analysis
-| author         = {{Person|Tiago}}
-| maintainer     = {{Person|Tiago}}
-| source         = {{GitHub|org=tferr|repo=ASA}}
-| released       = December 2012
-| latest version = '''3.6.13 May 2017'''
-| status         = Active ({{GitHub|org=tferr|repo=ASA|path=Notes.md#release-notes-for-sholl-analysis|label=Release Notes}})
-| category       = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]], [[:Category:Neuroanatomy|Neuroanatomy]]
-}}
+{{ComponentStats:ca.mcgill:Sholl_Analysis}}
 <!-- Create a short TOC next to main Contents -->
 <div style="padding-top:17em;padding-left:1.5em;">
 <div style="font-size:175%;border-bottom:1px dotted #ccc;margin-bottom:0.55em;">Quick links</div>
