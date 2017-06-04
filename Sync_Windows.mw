@@ -1,16 +1,4 @@
-{{Infobox
-| software               = ImageJ
-| name                   = Sync Windows
-| author                 = Joachim Walter (walter at biz.uni-muenchen.de)
-| maintainer             = [mailto:fiji-devel@googlegroups.com Fiji Development Team]
-| filename               = Sync_Win.jar
-| source                 = {{GitHub|org=fiji|repo=Sync_Win}}, or contained in [http://imagej.net/plugins/download/jars/Sync_Win.jar Sync_Win.jar]
-| latest version         = v1.7-fiji1 (3 Feb 2012)
-| status                 = inactive 
-}}
-
-== Purpose ==
-The Sync Windows plugin synchronizes mouse motion and input between multiple windows. Thus, an ROI drawn in one window is replicated in all other synchronized windows in the synchronized window set. A synchronization cursor (the red box above) indicates the location of the mouse in all synchronized windows.
+{{ComponentStats:sc.fiji:Sync_Win}}The Sync Windows plugin synchronizes mouse motion and input between multiple windows. Thus, an ROI drawn in one window is replicated in all other synchronized windows in the synchronized window set. A synchronization cursor (the red box above) indicates the location of the mouse in all synchronized windows.
 
 == Installation ==
 '''ImageJ''': Copy the Sync_Win.jar file from http://imagej.net/plugins/download/jars/Sync_Win.jar into the ImageJ/Plugins folder and either restart ImageJ or run the '{{bc | Help | Update Menus}}' command. After this two new commands should appear in '{{bc | Analyze | Tools}}': '''Sync Windows''' and '''Sync Measure 3D'''.
