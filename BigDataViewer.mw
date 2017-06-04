@@ -1,16 +1,4 @@
-{{Infobox
-| name                  = BigDataViewer
-| software              = Fiji
-| author                = {{Person|Pietzsch}}
-| maintainer            = {{Person|Pietzsch}}
-| source                = {{GitHub|org=bigdataviewer|repo=bigdataviewer_fiji}}
-| latest version        = 2.1.0
-| status                = stable
-| category              = [[:Category:Plugins|Plugins]], [[:Category:Visualization|Visualization]], [[:Category:Transform|Transform]]
-}}
-
-__TOC__
-
+{{ComponentStats:sc.fiji:bigdataviewer_fiji}}
 == Description ==
 The BigDataViewer is a re-slicing browser for terabyte-sized multi-view image sequences.
 BigDataViewer was developed with multi-view light-sheet microscopy data in mind and integrates well with Fiji's SPIMage processing pipeline.
