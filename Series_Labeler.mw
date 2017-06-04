@@ -1,7 +1,4 @@
-{{ComponentStats:sc.fiji:Series_Labeler}}
-
-==Series Labeler - what is it?==
-This plugin is inspired by the [[Time Stamper]] plugins from ImageJ
+{{ComponentStats:sc.fiji:Series_Labeler}}This plugin is inspired by the [[Time Stamper]] plugins from ImageJ
 and from Tony Collins' [[MBF Plugin Collection]],
 as well as the imageJ built in Image - Stack - Label command. 
 
