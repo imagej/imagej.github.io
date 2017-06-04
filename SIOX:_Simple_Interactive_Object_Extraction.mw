@@ -1,15 +1,4 @@
-{{Infobox
-| name                   = SIOX: Simple Interactive Object Extraction
-| software               = Fiji
-| author                  = {{Person|Iarganda}}, Stephan Saalfeld, Johannes Schindelin
-| maintainer             = {{Person|Iarganda}}
-| filename               = {{Maven | g=sc.fiji | a=Siox_Segmentation}}
-| source                 = {{GitHub|org=fiji|repo=Siox_Segmentation}}
-| released               = November 6<sup>th</sup>, 2009
-| latest version         = 1.0.3, September 25th<sup>th</sup>, 2014
-| status                 = stable, active
-| category               = [[:Category:Segmentation|Segmentation]]
-}}{|
+{{ComponentStats:sc.fiji:Siox_Segmentation}}{|
 |style="vertical-align:top"|[[Image:Embryos775x581.png|thumb|330px|Embryos original sample]]
 |style="vertical-align:top"|[[Image:SIOX_result_embryos775x581.png|thumb|330px|SIOX segmentation result]]
 |}
