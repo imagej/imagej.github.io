@@ -1,15 +1,4 @@
-{{Infobox
-| name                  = BigWarp                                                                                                                                            
-| software              = Fiji
-| author                = {{Person|Bogovic}}
-| maintainer            = {{Person|Bogovic}}
-| source                = {{GitHub|org=saalfeldlab|repo=bigwarp}}
-| latest version        = 3.0.0
-| status                = stable
-}}
-
-== Description ==
-Bigwarp is a tool for manual, interactive, landmark-based deformable image alignment. 
+{{ComponentStats:sc.fiji:bigwarp_fiji}}Bigwarp is a tool for manual, interactive, landmark-based deformable image alignment. 
 It uses the [[BigDataViewer]] for visualization and navigation, and uses a
 [[wikipedia:Thin_plate_spline|Thin Plate Spline]] implemented
 {{GitHub|org=saalfeldlab|repo=bigwarp|label=in Java}}
