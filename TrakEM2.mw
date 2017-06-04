@@ -1,19 +1,7 @@
-{{Infobox
-| software               = ImageJ
-| name                   = TrakEM2
-| author                 = Albert Cardona<br />Stephan Saalfeld
-| maintainer             = Albert Cardona ([mailto:sapristi@gmail.com])<br />Stephan Saalfeld
-| filename               = TrakEM2_.jar (Included in Fiji) 
-| source                 = {{GitHub | org=trakem2 | repo=TrakEM2}}
-| released               = May 2006
-| latest version         = 1.0c (2014)
-| status                 = active
-| category               = [[:Category:Registration|Registration]], [[:Category:Segmentation|Segmentation]], [[:Category:Image annotation|Image annotation]], [[:Category:Plugins|Plugins]], [[:Category:Neuroanatomy|Neuroanatomy]]
-| website                = [http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2 news and documentation]
-}}TrakEM2 is an ImageJ plugin for morphological data mining, three-dimensional modeling and image stitching, registration, editing and annotation.
+{{ComponentStats:sc.fiji:TrakEM2_}}TrakEM2 is an ImageJ plugin for morphological data mining, three-dimensional modeling and image stitching, registration, editing and annotation.
 
 See [http://www.ini.uzh.ch/~acardona/snapshots.html TrakEM2 snapshots] for an overview.
-
+{{TOC|small}}
 == Features ==
 
 * '''Segmentation:''' manually draw areas across stacks, and sketch structures with balls and pipes. Skeletonize entire neuronal arborizations and represent synapses with relational connector objects.
