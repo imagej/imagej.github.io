@@ -1,17 +1,5 @@
-{{Infobox
-| name                  = TrackMate_
-| logo                    = [[Image:TrackMate-Logo85x50-color-300p.png|160px]]
-| software              = Fiji
-| author                = {{Person|NicholasPerry}}, {{Person|JeanYvesTinevez}}, {{Person|Schindelin}}
-| maintainer            = {{Person|JeanYvesTinevez}}
-| source                = {{GitHub|org=fiji|repo=TrackMate}}
-| released              = 10/05/2012
-| status                = v3.5.0, stable
-| category              = [[:Category:Segmentation|Segmentation]], [[:Category:Tracking|Tracking]]
-}}
-__TOC__
-
-
+[[Image:TrackMate-Logo85x50-color-300p.png|right|160px]]
+{{ComponentStats:sc.fiji:TrackMate_}}''TrackMate is your buddy for your everyday tracking .''
 
 
 == Citation == 
