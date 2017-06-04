@@ -1,21 +1,8 @@
-{{Infobox
-| software               = ImageJ
-| name                   = Stack manipulation
-| author                 = various (see below)
-| maintainer             = Jean-Yves Tinevez ([mailto:tinevez@mpi-cbg.de tinevez@mpi-cbg.de])
-| filename               = Stack_Manipulation.jar
-| source                 = {{GitHub|org=fiji|repo=Stack_Manipulation}}
-| latest version         =  27 December 2011
-| status                 = stable, not active 
-}}
-
-
-
+{{ComponentStats:sc.fiji:Stack_Manipulation}}
 == Content and purpose ==
 
 This package regroups various "small" plugins dedicated to the manipulation of stacks, allowing to sort them, combine them, etc...
 As they are more of a utility package, they all can be found in the {{bc | Image | Stacks | Tools}} menu, next to the ones provided by bare ImageJ.
-
 
 What they do is pretty much summarized by the following diagram, taken from the [[MBF ImageJ]] webpage.
 
@@ -82,7 +69,7 @@ Original code by {{Person|Rasband}}.
 
 === Slice Keeper ===
 
-By Tony Collins, initially part of his wonderful [[MBF Plugins Collection]] package. Tony mentioned credit should go to {{Person|Rasband}}, for the initial code is his work.
+By Tony Collins, initially part of his wonderful [[MBF Plugin Collection]] package. Tony mentioned credit should go to {{Person|Rasband}}, for the initial code is his work.
 
 
 <references/>
