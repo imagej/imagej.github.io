@@ -1,14 +1,4 @@
-{{Infobox
-| name                   = Volume Calculator
-| software               = Fiji
-| author                 = Peter C Marks ([mailto:peter.c.marks@gmail.com peter.c.marks@gmail.com])
-| maintainer             = Peter C Marks ([mailto:peter.c.marks@gmail.com peter.c.marks@gmail.com])
-| source                 = {{GitHub|org=fiji|repo=Volume_Calculator|source=volumeCalculator/Volume_Calculator.java}}
-| released               = 2012
-| latest version         = December 5<sup>th</sup>, 2012
-| status                 = stable
-| category               = [[:Category:Plugins|Plugins]]
-}}{|
+{{ComponentStats:sc.fiji:Volume_Calculator}}{|
 |style="vertical-align:top" |[[Image:VolCal.png|380px|Volume Calculator user interface.]]
 |}
 
