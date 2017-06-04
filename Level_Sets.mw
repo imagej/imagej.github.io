@@ -1,16 +1,4 @@
-{{Infobox
-| screenshot             = [[Image:LS.2b.progress.png|200px]]
-| software               = ImageJ
-| name                   = Level Sets
-| author                 = {{Person|Frise}}
-| maintainer             = {{Person|Frise}}
-| filename               =  
-| source                 = {{GitHub|org=fiji|repo=level_sets}}
-| released               = August 2008
-| latest version         = April 2009
-| status                 = active
-| category               = [[:Category:Segmentation]]
-}}{{TOC}}
+{{ComponentStats:sc.fiji:level_sets}}[[Image:LS.2b.progress.png|300px]]
 == Level Sets and Fast Marching ==
 
 === Introduction === 
