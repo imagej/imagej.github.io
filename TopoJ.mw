@@ -1,16 +1,4 @@
-{{Infobox
-| software               = ImageJ
-| name                   = TopoJ
-| maintainer             = David Hovis
-| author                 = David Hovis
-| source                 = {{GitHub|org=fiji|repo=TopoJ}}
-| released               = 18/08/2010
-| latest version         = 18/08/2010
-| status                 = stable
-| category               = [[:Category:Plugins]]
-}}
-
-The TopoJ plugins help you analyze surfaces of bright objects in image stacks. You can load an example via {{bc | File | Open Samples | SinteredAlumina (2.6MB)}}:
+{{ComponentStats:sc.fiji:TopoJ_}}The TopoJ plugins help you analyze surfaces of bright objects in image stacks. You can load an example via {{bc | File | Open Samples | SinteredAlumina (2.6MB)}}:
 
 [[Image:TopoJ-Sintered_Alumina.jpg]]
 
