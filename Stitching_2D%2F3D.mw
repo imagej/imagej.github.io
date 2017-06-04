@@ -1,20 +1,6 @@
-{{Infobox
-| name                   = Stitching 2D/3D (DEPRECATED)
-| software               = ImageJ
-| author                 = Stephan Preibisch
-| maintainer             = Stephan Preibisch
-| filename               = Stitching_.jar
-| source                 = {{GitHub|org=fiji|repo=Stitching}}
-| released               = October 2008
-| latest version         = April 2011
-| category               = [[:Category:Stitching|Stitching]]
-| website                = [http://fly.mpi-cbg.de/~preibisch Stephan Preibisch's homepage]
-}}
+{{Warning | ''Please note that this version of the Stitching is deprecated. A new version is available here: [[Image Stitching]]''}}
 
-= Deprecated =
-
-''Please note that this version of the Stitching is deprecated. A new version is available here: [[Image Stitching]]''
-
+{{ComponentStats:sc.fiji:Stitching_}}
 == Citation ==
 Please note that the Stitching, as well as other plugins available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 * S. Preibisch, S. Saalfeld, P. Tomancak (2009) "Globally optimal stitching of tiled 3D microscopic image acquisitions", ''Bioinformatics'', '''25'''(11):1463-1465. [http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btp184 Webpage] [http://bioinformatics.oxfordjournals.org/cgi/reprint/25/11/1463.pdf PDF]
