@@ -1,16 +1,4 @@
-{{Infobox
-| software               = ImageJ
-| name                   = Statistical Region Merging
-| maintainer             = {{Person|Schindelin}}
-| author                 = Johannes Schindelin
-| source                 = {{GitHub|org=fiji|repo=Statistical_Region_Merging|source=SRM_.java}}
-| released               = 2009-03-31
-| latest version         = 2009-06-03
-| status                 = stable
-| category               = [[:Category:Plugins]]
-}}
-
-Statistical Region Merging<ref>{{cite journal|author=R. Nock, F. Nielsen|title=Statistical Region Merging|journal=IEEE Trans. Pattern Anal. Mach. Intell.|volume=26|number=11|pages=1452-1458|year=2004}}</ref> is a fast and robust algorithm to segment an image into regions of similar intensity or color.
+{{ComponentStats:sc.fiji:Statistical_Region_Merging}}Statistical Region Merging<ref>{{cite journal|author=R. Nock, F. Nielsen|title=Statistical Region Merging|journal=IEEE Trans. Pattern Anal. Mach. Intell.|volume=26|number=11|pages=1452-1458|year=2004}}</ref> is a fast and robust algorithm to segment an image into regions of similar intensity or color.
 
 The idea is to start with one region per pixel and then applying a statistical test on neighboring regions (in ascending order of intensity differences) whether the mean intensities are sufficiently similar enough to be merged.
 
