@@ -1,12 +1,4 @@
-{{Infobox
-| name                   = ImageJ2
-| software               = ImageJ
-| logo                   = [[File:imagej2-icon.png|64px]]
-| maintainer             = {{Person|Rueden}}
-| source                 = {{GitHub | org = imagej | repo = imagej}}
-| status                 = active
-| category               = 
-}}<div style="clear: right; float: right">{{Box
+<div style="clear: right; float: right">{{Box
 | float=right
 | text=<h2>ImageJ2's Mission</h2>
 * '''Design''' the next generation of ImageJ, driven by the needs of the community.
