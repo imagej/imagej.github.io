@@ -1,16 +1,4 @@
-{{Infobox
-| software               = Fiji
-| name                   = SplineDeformationGenerator
-| author                 = {{Person|Iarganda}} and [http://biocomp.cnb.csic.es/~coss/ Carlos Óscar Sánchez Sorzano]
-| maintainer             = Ignacio Arganda-Carreras ([mailto:iarganda@mit.edu iarganda@mit.edu])
-| filename               = {{Maven | g=sc.fiji | a=SplineDeformationGenerator_}}
-| source                 = {{GitHub|org=fiji|repo=SplineDeformationGenerator|source=SplineDeformationGenerator/SplineDeformationGenerator_.java}}
-| released               = March 30<sup>th</sup>, 2007
-| latest version         = November 21<sup>st</sup>, 2013
-| status                 = active
-| category               = [[:Category:Transform|Transform]]
-| website                = [http://biocomp.cnb.csic.es/~iarganda/SplineDeformationGenerator/ SplineDeformationGenerator]
-}}[[Image:Spline-deformations-examples.gif|thumb|360px|SplineDeformationGenerator available image deformations]]
+{{ComponentStats:sc.fiji:SplineDeformationGenerator_}}[[Image:Spline-deformations-examples.gif|thumb|360px|SplineDeformationGenerator available image deformations]]
 
 '''SplineDeformationGenerator''' is an image processing interface for image deformations developed as an ImageJ plugin. It can perform 5 different types of image deformations: 
 * Elastic deformations (represented as well by cubic B-splines).
