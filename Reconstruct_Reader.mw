@@ -1,4 +1,4 @@
-The Reconstruct Reader plugin is a utility to transform [http://synapses.clm.utexas.edu/tools/reconstruct/reconstruct.stm Reconstruct] projects directly into [[TrakEM2]] projects.
+{{ComponentStats:sc.fiji:Reconstruct_Reader}}The Reconstruct Reader plugin is a utility to transform [http://synapses.clm.utexas.edu/tools/reconstruct/reconstruct.stm Reconstruct] projects directly into [[TrakEM2]] projects.
 
 == Usage ==
 Reconstruct projects consist of a folder containing a series file, a set of section files, and a set of image files. A series file will have a ''.ser'' extension, while a section file will have a numeric extension, like Project.1, Project.2, ... , Project.100, and so forth.
