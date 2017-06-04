@@ -1,4 +1,4 @@
-<div style="clear: right; float: right">{{Box
+{{Project|ImageJ}}<div style="clear: right; float: right">{{Box
 | float=right
 | text=<h2>ImageJ2's Mission</h2>
 * '''Design''' the next generation of ImageJ, driven by the needs of the community.
