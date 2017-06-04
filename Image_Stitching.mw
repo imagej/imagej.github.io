@@ -1,4 +1,4 @@
-{{Learn | techniques}}{{ComponentStats:sc.fiji:Stitching_}}<div style="font-size: 0.75em">{{TOC}}</div>
+{{Learn | techniques}}{{ComponentStats:sc.fiji:Stitching_}}{{TOC|small}}
 == Citation ==
 Please note that the Stitching, as well as other plugins available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
 * S. Preibisch, S. Saalfeld, P. Tomancak (2009) "Globally optimal stitching of tiled 3D microscopic image acquisitions", ''Bioinformatics'', '''25'''(11):1463-1465. [http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btp184 Webpage] [http://bioinformatics.oxfordjournals.org/cgi/reprint/25/11/1463.pdf PDF]
