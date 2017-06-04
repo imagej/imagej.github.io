@@ -1,15 +1,4 @@
-{{Infobox
-| software               = ImageJ / Fiji
-| name                   = Series Labeler
-| author                 = Dan White / Tom Kazimiers
-| maintainer          = dan at chalkie.org.uk
-| filename               = 
-| source                 = 
-| released               = February 25th, 2014
-| latest version         = 
-| status                 = beta - maybe an odd bug. 
-| category               = [[:Category:Image annotation|Image annotation]]
-}}
+{{ComponentStats:sc.fiji:Series_Labeler}}
 
 ==Series Labeler - what is it?==
 This plugin is inspired by the [[Time Stamper]] plugins from ImageJ
@@ -66,3 +55,5 @@ Hyperstacks can be labeled with the imageJ builtin Label command, if you want to
 
 Macro recording is broken due to the use of a non blocking (non modal)
 GUI... which is needed for the preview functionality and being able to use built in imageJ font and color choosers. To fix this we need to make some new infrastructure in ImageJ/Fiji.... or wait for imageJ2 n-dimensional data support.
+
+[[Category:Image annotation]]
