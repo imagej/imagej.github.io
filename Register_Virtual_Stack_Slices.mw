@@ -1,15 +1,4 @@
-{{Infobox
-| name                   = Register Virtual Stack Slices
-| software               = Fiji
-| author                 = Albert Cardona ([mailto:acardona@ini.phys.ethz.ch acardona@ini.phys.ethz.ch]), {{Person|Iarganda}} and Stephan Saalfeld
-| maintainer             = {{Person|Iarganda}}
-| filename               = {{Maven | g=sc.fiji | a=register_virtual_stack_slices}}
-| source                 = {{GitHub|org=fiji|repo=register_virtual_stack_slices}}
-| released               = 2008
-| latest version         = 3.0.0, February 17<sup>th</sup>, 2016
-| status                 = stable, active
-| category               = [[:Category:Registration|Registration]]
-}}{|
+{{ComponentStats:sc.fiji:register_virtual_stack_slices}}{|
 |style="vertical-align:top" |[[Image:Rvs_scheme.png|380px|Register Virtual Stack scheme - All images are transformed to match the reference]]
 |}
 
