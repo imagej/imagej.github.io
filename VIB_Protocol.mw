@@ -1,20 +1,6 @@
-{{Infobox
-| name                   = VIB Protocol
-| software               = ImageJ
-| author                 = Benjamin Schmid, Johannes Schindelin
-| maintainer             = {{Person|Schindelin}}
-| filename               = VIB_.jar, VIB-lib.jar
-| source                 = {{GitHub | org = fiji | repo = VIB | label = VIB}}, {{GitHub | org = fiji | repo = VIB-lib | label = VIB-lib}}
-| released               = 13 July 2008
-| latest version         = 13 July 2008
-| status                 = beta
-| category               = [[:Category:Registration|Registration]]
-| website                = Registration
-}}== Purpose ==
+{{ComponentStats:sc.fiji:VIB_}}The VIB Protocol is designed for aligning 3D image stacks. The images we used are confocal images of adult fly brains, but basically the VIB protocol can be used for any 3D images.
 
-The VIB Protocol is designed for aligning 3D image stacks. The images we used are confocal images of adult fly brains, but basically the VIB protocol can be used for any 3D images.
-
-The workflow is thereby as follows:
+== Workflow ==
 
 * Load the input images. If they consist of several channels, the channels are splitted.
 * Label the reference channel
