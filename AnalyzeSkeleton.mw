@@ -190,6 +190,83 @@ prunedImage.setTitle( image.getShortTitle() + "-pruned" );
 </source>
 Be aware that small branches might be created due to the elimination of end-points and slabs but not junctions (to prevent breaking branches above the threshold). So you might need to run the script a couple of times to remove all unwanted branches.
 
+=== Visualizing the skeleton in the 3D viewer ===
+The following [[Beanshell]] script shows the voxel classification of the skeleton in the 3D viewer:
+
+<source lang=java>
+// @ImagePlus(label="Skeleton image", description="Binary image skeletonized with Skeletonize3D") image
+ 
+import sc.fiji.analyzeSkeleton.AnalyzeSkeleton_;
+import sc.fiji.analyzeSkeleton.Edge;
+import sc.fiji.analyzeSkeleton.Point;
+import ij.IJ;
+import ij3d.Image3DUniverse;
+import org.scijava.vecmath.Point3f;
+import org.scijava.vecmath.Color3f;
+ 
+// analyze skeleton
+skel = new AnalyzeSkeleton_();
+skel.setup("", image);
+skelResult = skel.run(AnalyzeSkeleton_.NONE, false, false, null, true, false);
+ 
+// get calibration
+pixelWidth = image.getCalibration().pixelWidth;
+pixelHeight = image.getCalibration().pixelHeight;
+pixelDepth = image.getCalibration().pixelDepth;
+ 
+// get graphs (one per skeleton in the image)
+graph = skelResult.getGraph();
+
+// create 3d universe
+univ = new Image3DUniverse();
+univ.show();
+
+// list of end-points
+endPoints = skelResult.getListOfEndPoints();
+// store their positions in a list
+endPointList = new ArrayList();
+for( Point p : endPoints )
+	endPointList.add( new Point3f(
+		(float)( p.x * pixelDepth ),
+		(float)( p.y * pixelHeight ),
+		(float)( p.z * pixelDepth ) ) );
+// add end-points to the universe as blue spheres
+univ.addIcospheres( endPointList, new Color3f( Color.BLUE ), 2, 1f, "End-points");
+
+// list of junction voxels
+junctions = skelResult.getListOfJunctionVoxels();
+// store their positions in a list
+junctionList = new ArrayList();
+for( Point p : junctions )
+	junctionList.add( new Point3f(
+		(float)( p.x * pixelDepth ),
+		(float)( p.y * pixelHeight ),
+		(float)( p.z * pixelDepth ) ) );
+// add junction voxels to the universe as magenta spheres
+univ.addIcospheres( junctionList, new Color3f( Color.MAGENTA ), 2, 1f, "Junctions");
+
+for( i = 0 ; i < graph.length; i++ )
+{
+    listEdges = graph[i].getEdges();
+ 
+    // go through all branches and add slab voxels 
+    // as orange lines in the 3D universe
+    j=0;
+    for( Edge e : listEdges )
+    {
+    	branchPointList = new ArrayList();
+        for( Point p : e.getSlabs() )
+  			branchPointList.add( new Point3f(
+  				(float)( p.x * pixelDepth ),
+  				(float)( p.y * pixelHeight ),
+  				(float)( p.z * pixelDepth ) ) );
+        // add end-points to the universe as orange lines
+		univ.addLineMesh( branchPointList, new Color3f( Color.ORANGE ), "Branch-"+i+"-"+j, true );
+     	j++;    
+    }
+}
+</source>
+
 == API documentation ==
 The latest documentation of the code can be found here:
 
