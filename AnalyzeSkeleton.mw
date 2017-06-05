@@ -261,7 +261,7 @@ for( i = 0 ; i < graph.length; i++ )
   				(float)( p.y * pixelHeight ),
   				(float)( p.z * pixelDepth ) ) );
         // add slab voxels to the universe as orange lines
-	univ.addLineMesh( branchPointList, new Color3f( Color.ORANGE ), "Branch-"+i+"-"+j, true );
+        univ.addLineMesh( branchPointList, new Color3f( Color.ORANGE ), "Branch-"+i+"-"+j, true );
      	j++;    
     }
 }
