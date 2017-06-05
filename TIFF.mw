@@ -1,0 +1,23 @@
+{{FormatsMenu}}The [[wikipedia:TIFF|TIFF file format]] is one of the most widely used formats in biosciences. Many commercial instruments write images using some flavor of TIFF. The [[OME|Open Microscopy Environment]] 
+
+== ImageJ 1.x support ==
+
+[[ImageJ 1.x]] (and therefore [[ImageJ2]] in its default legacy mode) has built-in support for TIFF files via the {{bc | File | Open...}} command.
+
+You can also import TIFFs as [https://imagej.net/docs/guide/146-8.html#sub:Virtual-Stacks virtual stacks] via the {{bc | File | Import | TIFF Virtual Stack...}} command.
+
+* '''Pro:''' The ImageJ 1.x TIFF reader is very fast.
+* '''Con:''' The ImageJ 1.x TIFF support is incomplete. Some valid baseline TIFF files will not open properly. In particular, TIFF files with out-of-order planes cannot be opened.
+
+== Bio-Formats ==
+
+The [[Bio-Formats]] plugins offer a more complete TIFF importer, accessible via the {{bc | File | Import | Bio-Formats}} command.
+
+* '''Pro:''' The Bio-Formats TIFF reader can handle many more varieties of TIFF.
+* '''Con:''' The Bio-Formats TIFF support is not as speedy as ImageJ1's TIFF reader.
+
+== SCIFIO ==
+
+The [[SCIFIO]] library, the I/O library of [[ImageJ2]], imports TIFF files using code adapted from the [[Bio-Formats]] project. As such, it is similar to Bio-Formats in that it supports a wider variety of TIFFs, but is less performant than the ImageJ 1.x reader. SCIFIO is accessible via the {{bc | File | Import | Image...}} command.
+
+[[Category:Import-Export]]
