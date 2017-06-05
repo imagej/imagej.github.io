@@ -1,14 +1,4 @@
-{{FormatsMenu}}{{Infobox
-| software               = Fiji
-| name                   = Extract Images From PDF
-| author                 = Albert Cardona
-| maintainer             = Albert Cardona ([mailto:acardona@ini.phys.ethz.ch acardona@ini.phys.ethz.ch])
-| source                 = {{GitHub|org=fiji|repo=IO|source=io/Extract_Images_From_PDF.java}}
-| released               = 2008
-| latest version         = ?
-| status                 = stable, not active
-| category               = [[:Category:Import-Export]]
-}}Select {{bc|File|Import|Extract Images From PDF...}}
+{{FormatsMenu}}{{ComponentStats:sc.fiji:IO_}}Select {{bc|File|Import|Extract Images From PDF...}}
 
 A dialog pops up to pick a file. Choose a .pdf file, and all its images will be opened as ImageJ images, in their original resolution.
 
