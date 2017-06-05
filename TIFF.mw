@@ -1,4 +1,4 @@
-{{FormatsMenu}}The [[wikipedia:TIFF|TIFF file format]] is one of the most widely used formats in biosciences. Many commercial instruments write images using some flavor of TIFF. The [[OME|Open Microscopy Environment]] 
+{{FormatsMenu}}The [[wikipedia:TIFF|TIFF file format]] is one of the most widely used formats in biosciences. Many commercial instruments write images using some flavor of TIFF. It is used in [[open source]] efforts as well; for example, the [[OME|Open Microscopy Environment]] developed the [http://www.openmicroscopy.org/site/support/ome-model/ome-tiff/ OME-TIFF format] as an open exchange standard for microscopy data.
 
 == ImageJ 1.x support ==
 
