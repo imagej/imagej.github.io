@@ -100,7 +100,7 @@ public class My_Plugin implements PlugIn {
 
 = Getting started with Maven =
 
-The {{GitHub|org=imagej|repo=minimal-ij1-plugin|label=minimal-ij1-plugin project}} provides a working example, and documentation, illustrating how an ImageJ plugin should be structured from a "best practices in Maven" point of view.
+The {{GitHub|org=imagej|repo=example-legacy-plugin|label=example-legacy-plugin project}} provides a working example, and documentation, illustrating how an ImageJ plugin should be structured from a "best practices in Maven" point of view.
 
 Using this project requires a basic understanding of [[Git]] and [[Maven]]; thus if you are already familiar with the ImageJ 1.x API, this is a reasonable starting point to learn the [[Project_management|project management]] tools used in [[Writing_plugins|ImageJ2 development]].
 
