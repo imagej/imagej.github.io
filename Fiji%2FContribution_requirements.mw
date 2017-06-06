@@ -36,7 +36,7 @@ The following criteria apply to projects hosted in the [https://github.com/fiji 
 * Components use [[Maven]] to build:
 ** As single-module projects
 ** With the standard Maven directory layout
-** Extending the [[Architecture#Maven_component_structure|pom-fiji parent POM]]
+** Extending the [[Architecture#Maven_component_structure|pom-scijava parent POM]]
 * Components use the groupId <code>sc.fiji</code>.
 * Components are [[Versioning|versioned according to SemVer]].
 * The project uses [[Issues|GitHub Issues]] for issue tracking.
