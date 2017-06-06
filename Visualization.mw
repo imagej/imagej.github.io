@@ -80,6 +80,13 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
 * Enables live streaming of 3D data in real time over the internet
 |[[File:ClearVolumeInFiji.png|500px]]
 |-
+|[http://imagej.net/Volume_Viewer Volume Viewer]
+|A tool for 3D reslicing and threshold-enabled 3D visualization.
+|
+* Non-hardware accelerated volume rendering in different modalities.
+* [http://imagej.net/plugins/volume-viewer.html Documentation]
+| [[File:Volviewer.png|500px]]
+|-
 |[http://imagej.net/ThreeDViewer ThreeDViewer]
 |A tool for 3D visualization capabilities for images and meshes.
 |
