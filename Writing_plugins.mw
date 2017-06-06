@@ -266,6 +266,7 @@ At this point, if you haven't already, we '''STRONGLY RECOMMEND''' importing you
 
 In addition to modifying and developing the source code itself, there are several things you should do to properly identify and configure your project:
 
+{{Outdated}}
 ==== Update your POM ====
 
 * Update your [https://maven.apache.org/pom.html#Inheritance parent pom]. This will dictate what [https://maven.apache.org/pom.html#Dependency_Management dependency management] is available to you. If you're writing a core ImageJ plugin, then <code>pom-imagej</code> is appropriate. A [[Fiji]] plugin should use [https://github.com/fiji/pom-fiji <code>pom-fiji</code>], however.
