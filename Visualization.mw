@@ -71,6 +71,15 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
 * Adjust the transfer functions, edit volumes, point lists, landmark-based registration, transformations, 3D Content in PDFs
 |[[Image:3D_Viewer_overview.png]]
 |-
+|[http://imagej.net/ClearVolume ClearVolume]
+|A tool for live rendering volumetric multi-channel data.
+|
+* Create instant multiview and multicolor renderings
+* Instant rewind and replay of time-lapse recordings
+* Provides real-time GPU-based image processing capabilities, such as image sharpness estimation and sample drift tracking
+* Enables live streaming of 3D data in real time over the internet
+|[[File:ClearVolumeInFiji.png|500px]]
+|-
 |[http://imagej.net/ThreeDViewer ThreeDViewer]
 |A tool for 3D visualization capabilities for images and meshes.
 |
@@ -112,15 +121,6 @@ Here we summarize some of the 'big data' visualization plugins in ImageJ.
 |'''Short Description'''
 |'''Highlights'''
 |'''Plugin Snapshot'''
-|-
-|[http://imagej.net/ClearVolume ClearVolume]
-|A tool for live rendering volumetric multi-channel data.
-|
-* Create instant multiview and multicolor renderings
-* Instant rewind and replay of time-lapse recordings
-* Provides real-time GPU-based image processing capabilities, such as image sharpness estimation and sample drift tracking
-* Enables live streaming of 3D data in real time over the internet
-|[[File:ClearVolumeInFiji.png|500px]]
 |-
 |[http://imagej.net/BigDataViewer BigDataViewer]
 |A tool for interactive browsing of arbitrarily large image datasets.
