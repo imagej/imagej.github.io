@@ -70,6 +70,14 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
 * Macro-recordable functions
 * Adjust the transfer functions, edit volumes, point lists, landmark-based registration, transformations, 3D Content in PDFs
 |[[Image:3D_Viewer_overview.png]]
+|-
+|[http://imagej.net/ThreeDViewer ThreeDViewer]
+|A tool for 3D visualization capabilities for images and meshes.
+|
+* Uses the [https://github.com/ClearVolume/scenery Scenery] and [[ClearVolume]] infrastructure
+* Integrates [[ImageJ2]] functionality, including [[ImageJ Ops]]
+* Aims to serve as a modern replacement to [[3D Viewer]]
+| ''in development''
 |}
 
 == Making Plots in ImageJ ==
@@ -131,14 +139,6 @@ Here we summarize some of the 'big data' visualization plugins in ImageJ.
 * Applicable to any form of three or higher dimensional imaging modalities
 * Interactive viewing and annotation of the data
 |[[File:spim_application.png|500px]]
-|-
-|[http://imagej.net/ThreeDViewer ThreeDViewer]
-|A tool for 3D visualization capabilities for images and meshes.
-|
-* Uses the [https://github.com/ClearVolume/scenery Scenery] and [[ClearVolume]] infrastructure
-* Integrates [[ImageJ2]] functionality, including [[ImageJ Ops]]
-* Aims to serve as a modern replacement to [[3D Viewer]]
-| ''in development''
 |}
 
 == Interactive Analysis Plugins based on 'Big Data' Visualization Tools ==
