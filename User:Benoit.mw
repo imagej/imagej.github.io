@@ -1,5 +1,4 @@
-list of contributed plugins, scripts, update sites:
-
+A non-exhaustive list of plugins, scripts, update sites:
 
 Image analysis tools:
 *[[Manual drift correction plugin]]
@@ -9,4 +8,4 @@ Image analysis tools:
 
 published user project:
 *[[MS-ECS-2D]] update site
-*[[CElegansBeadsAnalysis plugin]]
+*[[CElegansBeadsAnalysis plugin]] (my first IJ script/plugin ;-)
