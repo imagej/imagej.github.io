@@ -22,9 +22,9 @@ In addition to cloning the [https://github.com/imagej/imagej-ops imagej-ops] its
 == Tutorials and workshops ==
 
 * [[Adding_new_ops|Step-by-step guide: Adding new ops]]
-* {{GitHub | org=imagej | repo=imagej-tutorials | path=using-ops | label=ImageJ Tutorial: Using Ops}}
-* {{GitHub | org=imagej | repo=imagej-tutorials | path=create-a-new-op | label=ImageJ Tutorial: Create A New Op}}
-* "Scripting in ImageJ - An introduction to ImageJ Ops" (February 2017 NEUBIAS2020) [http://imagej.github.io/presentations/2017-02-12-imagej-ops-neubias/#/ slides]
+* [http://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1_-_Using_ImageJ/2_-_Introduction_to_ImageJ_Ops.ipynb ImageJ Tutorial: Introduction to ImageJ Ops]
+* [http://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/2_-_Extending_ImageJ/4_-_Writing_Op_plugins.ipynb Extending ImageJ: Ops]
+* "Scripting in ImageJ - An introduction to ImageJ Ops" (February 2017 NEUBIAS2020) – [http://imagej.github.io/presentations/2017-02-12-imagej-ops-neubias/#/ slides]
 * "ImageJ2 scripts: Parameters + ImageJ Ops" (ImageJ conference 2015) – [https://imagej.github.io/presentations/2015-09-04-imagej2-scripting/ slides], [https://vimeo.com/140098817 video 1], [https://vimeo.com/140098835 video 2]
 * "The ImageJ Ops Framework: Image processing made easy" (January 2015) – [https://imagej.github.io/presentations/2015-01-12-imagej-ops/ slides]
 * "Intro to ImageJ Ops - Usage and Development" (November 2015) – [http://workshops.imagej.net/IntroToOps.pdf slides]
