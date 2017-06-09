@@ -14,7 +14,7 @@ If text and other UI elements appear tiny on your [[wikipedia:HiDPI|HiDPI]] disp
 
 * [[Troubleshooting#Checking_the_Java_version|Double check that you are running the 64-bit version of Java]].
 * Verify that you are running Windows 10 (Windows 7 and 8 do not do HiDPI scaling).
-* In {{bc|ImageJ.exe|Properties|Compatibility}}, ensure that the "Disable display scaling on high DPI settings" option is ''not'' enabled.
+* In {{bc|ImageJ.exe|Properties|Compatibility}}, check the "Disable display scaling on high DPI settings" option. Try with it enabled, as well as disabled—some users have reported success only with this option ''off'', and others only with it ''on''.
 
 = Frequently Asked Questions =
 See the [[Frequently Asked Questions]] page.
