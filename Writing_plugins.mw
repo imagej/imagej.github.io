@@ -266,14 +266,13 @@ At this point, if you haven't already, we '''STRONGLY RECOMMEND''' importing you
 
 In addition to modifying and developing the source code itself, there are several things you should do to properly identify and configure your project:
 
-{{Outdated}}
 ==== Update your POM ====
 
-* Update your [https://maven.apache.org/pom.html#Inheritance parent pom]. This will dictate what [https://maven.apache.org/pom.html#Dependency_Management dependency management] is available to you. If you're writing a core ImageJ plugin, then <code>pom-imagej</code> is appropriate. A [[Fiji]] plugin should use [https://github.com/fiji/pom-fiji <code>pom-fiji</code>], however.
-* Update pom version to latest: which depends on if your parent is [https://github.com/imagej/pom-imagej/releases pom-imagej] or [https://github.com/fiji/pom-fiji/releases pom-fiji]
+* For your [https://maven.apache.org/pom.html#Inheritance parent pom], we recommend that you extend [https://github.com/scijava/pom-scijava <code>pom-scijava</code>]. This will provide [https://maven.apache.org/pom.html#Dependency_Management dependency management] of a lot of common useful dependencies, including the entire [[Architecture#Definitions|ImageJ software stack]] and all [[Fiji]] components. Try to use the newest available version of <code>pom-scijava</code>.
 * Update your [https://maven.apache.org/pom.html#Maven_Coordinates groupId]. ImageJ projects use a <code>net.imagej</code> groupId, while Fiji projects use <code>sc.fiji</code>—or you may use your own if you do not plan to distribute your plugin with the core ImageJ or Fiji projects.
 * Update your [https://maven.apache.org/pom.html#Maven_Coordinates artifactId] to something appropriate based on the intended use of your project.
 * Update your <code><name></code> and <code><description></code> to something appropriate for your new artifactId.
+* Add a <code><developer></code> block to your pom, to identify yourself (see [https://github.com/scijava/pom-scijava/blob/pom-scijava-16.1.0/pom.xml#L32-L47 this example] for formatting).
 
 ==== Code changes ====
 
@@ -281,9 +280,7 @@ In addition to modifying and developing the source code itself, there are severa
 
 ==== Optional changes ====
 
-* If you want to use additional [[Source_code|ImageJ or Fiji projects]] as libraries, you will need to add them as dependencies in the [https://maven.apache.org/pom.html#Dependencies dependency block] of your <code>pom.xml</code>. Note that you will not need to specify a <code><version></code>, as these are managed by your parent pom.
-* Non-core ImageJ developers should add a <code><developer></code> block to their pom, to identify yourself (see [https://github.com/imagej/pom-imagej/blob/pom-imagej-13.1.0/pom.xml#L34-L85 this example] for formatting).
-* Alternatively, you could submit a pull request to pom-imagej adding yourself as a [https://github.com/imagej/pom-imagej/blob/pom-imagej-13.1.0/pom.xml#L86-L166 contributor]!
+* If you want to use additional [[Source_code|ImageJ or Fiji projects]] as libraries, you will need to add them as dependencies in the [https://maven.apache.org/pom.html#Dependencies dependency block] of your <code>pom.xml</code>. Note that you will not need to specify a <code><version></code>, as these are managed by the <code>pom-scijava</code> parent pom.
 * If your copied <code>pom.xml</code> has a [https://github.com/imagej/tutorials/blob/249c699dbdb9308f8a5539f0f39cf84d2612b273/simple-commands/pom.xml#L22-L24 main method specification] you will likely need to remove or update it as appropriate.
 * If you want to add non-Java files to your plugin, such as sample images or [[Scripting|demo scripts]], refer to the [https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html standard maven layout].
 
