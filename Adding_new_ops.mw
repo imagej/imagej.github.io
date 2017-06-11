@@ -37,7 +37,7 @@ import org.scijava.plugin.Parameter;
 import org.scijava.plugin.Plugin;
 
 // The Plugin annotation allows this Op to be discovered by the OpService.
-// We declare the type of op, the name of the op, and any optional aliases.
+// We declare the type of op; the name and any aliases will be auto-detected.
 @Plugin(type = GCD.class)
 public class DefaultGCD implements GCD extends AbstractOp {
 
