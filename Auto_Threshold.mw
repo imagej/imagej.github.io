@@ -84,7 +84,7 @@ Ported from ME Celebi's fourier_0.8 routines [http://sourceforge.net/projects/fo
 
 
 === Huang2 ===
-This is an alternative implementation by J. Schindelin whith an impressive speed  advantage. On some images the method gives a different value than the original Huang method above.
+This is an alternative implementation of Huang's method by J. Schindelin with an impressive speed  advantage on 16 bit images. On some images, however the method gives returns different values than the original Huang method above.
 
 
 === Intermodes ===
