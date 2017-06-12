@@ -136,3 +136,15 @@ The initial description, to the best of our knowledge of a watershed segment hie
 '''[Najman 1996]''' Najman, L., & Schmitt, M. (1996). Geodesic saliency of watershed contours and hierarchical segmentation. IEEE Transactions on pattern analysis and machine intelligence, 18(12), 1163-1173.
 
 '''[Lotufo 2000]''' Lotufo, R., & Falcao, A. (2000). The Ordered Queue And The Optimality Of The Watershed Approaches. In In Mathematical Morphology and its Applications to Image and Signal Processing.
+
+
+=History=
+
+HIstory of version available of SCF_MPI_CBG update site
+
+* 2017-05-11: version 1.0.0
+** inital release
+
+* 2017-06-12: version 1.0.1 ,
+** features: smoother slider for threshold and seeds
+** bugFix: correct initialisation of the segmentation in the script call (this correction suppress discrepency between the GUI and the script call)
