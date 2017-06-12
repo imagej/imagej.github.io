@@ -2,6 +2,7 @@
 
 The central goal is to enable programmers to code an image processing algorithm in the Ops framework, which is then usable as-is from any [[SciJava]]-compatible software project, such as [[ImageJ]], [[CellProfiler]], [[KNIME]], [[OMERO]] and [[Alida]].
 {{TOC|small}}
+{{DevelopMenu | tutorials}}
 == Design goals ==
 
 Ops has three major design goals:
