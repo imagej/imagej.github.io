@@ -147,9 +147,9 @@ By default, a <code>@File</code> parameter will create a chooser for a single fi
 print(myFile)
 </source>
 
-In case of ImageJ1 Macro, just change <code>#</code> to <code>//</code>:
+The same works for the ImageJ1 Macro language:
 <source>
-// @File(label="Select a file") myFile
+#@File(label="Select a file") myFile
 
 print(myFile)
 </source>
