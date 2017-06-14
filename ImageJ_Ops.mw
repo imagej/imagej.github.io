@@ -13,6 +13,11 @@ Ops has three major design goals:
 
 == Getting started ==
 
+Start by reading these Jupyter notebooks:
+
+* [https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1_-_Using_ImageJ/2_-_Introduction_to_ImageJ_Ops.ipynb Using ImageJ Ops] - you use ops from your scripts.
+* [https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/2_-_Extending_ImageJ/4_-_Writing_Op_plugins.ipynb Writing Op plugins] - to write your own ops.
+
 Ops are a special type of ImageJ plugin, so a basic understanding of the [[Writing_Plugins|SciJava plugin framework]] is strongly recommended.
 
 In addition to cloning the [https://github.com/imagej/imagej-ops imagej-ops] itself, the following components have useful Ops examples:
