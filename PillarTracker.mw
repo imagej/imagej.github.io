@@ -12,7 +12,7 @@ version 1.0.9
 
 (1)support BCC arranged pillar, which has 60 degree of grid angle. 
 
-(2)support fast localization algorithm: center of mass(CM).
+(2)support fast localization algorithm: center of mass(CM,also known as centroid).
 
 
 
