@@ -402,55 +402,64 @@ The following [[Beanshell]] script shows how to segment a 2D color image or stac
 // @ImagePlus image
 // @int(label="Num. of clusters", description="Number of expected clusters", value=5) numClusters
 // @int(label="Num. of samples", description="Number of training samples per cluster", value=1000) numSamples
-// @String(label="Clustering method",choices={"SimpleKMeans","EM"}) clusteringChoice 
-// @OUTPUT ImagePlus output 
-import ij.IJ; 
-import ij.ImageStack; 
-import ij.ImagePlus; 
-import ij.process.ColorSpaceConverter; 
-import ij.process.ByteProcessor; 
-import trainableSegmentation.FeatureStack; 
-import trainableSegmentation.FeatureStackArray; 
-import trainableSegmentation.WekaSegmentation; 
-import trainableSegmentation.Weka_Segmentation; 
-import weka.classifiers.meta.ClassificationViaClustering; 
-import weka.clusterers.EM; 
+// @String(label="Clustering method",choices={"SimpleKMeans","EM"}) clusteringChoice
+// @OUTPUT ImagePlus output
+import ij.IJ;
+import ij.ImageStack;
+import ij.ImagePlus;
+import ij.process.ColorSpaceConverter;
+import ij.process.ByteProcessor;
+import trainableSegmentation.FeatureStack;
+import trainableSegmentation.FeatureStackArray;
+import trainableSegmentation.WekaSegmentation;
+import weka.clusterers.EM;
 import weka.clusterers.SimpleKMeans;
+import weka.core.WekaPackageManager;
+import weka.core.WekaPackageClassLoaderManager;
 
-// Load WEKA and Trainable Weka Segmentation learning schemes 
-new Weka_Segmentation();
+// Load WEKA local learning schemes (from user installed packages)
+WekaPackageManager.loadPackages( false );
 
-// Color space converter to pass from RGB to Lab 
+if( image.getType() != ImagePlus.COLOR_RGB )
+{
+	IJ.error( "Color segmentation by clustering",
+		"Error: input image needs to be a color 2D image or stack!" );
+	return null;
+}
+
+// Color space converter to pass from RGB to Lab
 converter = new ColorSpaceConverter();
 
-// Initialize segmentator with the same number of classes as 
-// expected number of clusters 
-wekaSegmentation = new WekaSegmentation( image ); 
+// Initialize segmentator with the same number of classes as
+// expected number of clusters
+wekaSegmentation = new WekaSegmentation( image );
 for( i=2; i<numClusters; i++ )
 	wekaSegmentation.addClass();
 
-// Initialize array of feature stacks (one per slice) 
+// Initialize array of feature stacks (one per slice)
 featuresArray = new FeatureStackArray( image.getStackSize() );
 
-for ( slice = 1; slice <= image.getStackSize(); slice++ ) {
+for ( slice = 1; slice <= image.getStackSize(); slice++ )
+{
 	// RGB to Lab conversion
 	stack = new ImageStack( image.getWidth(), image.getHeight() );
-	lab = converter.RGBToLab( new ImagePlus( "RGB", image.getStack().getProcessor( slice ) ));
-	stack.addSlice("a", lab.getStack().getProcessor( 2 ) );
-	stack.addSlice("b", lab.getStack().getProcessor( 3 ) );
+    lab = converter.RGBToLab( new ImagePlus( "RGB", image.getStack().getProcessor( slice ) ));
+ 		
+ 	stack.addSlice("a", lab.getStack().getProcessor( 2 ) );
+    stack.addSlice("b", lab.getStack().getProcessor( 3 ) );
 
-	// Create empty feature stack
-	features = new FeatureStack( stack.getWidth(), stack.getHeight(), false );
-	// Set a and b features to the feature stack
-	features.setStack( stack );
-	// Put feature stack into the array
+    // Create empty feature stack
+    features = new FeatureStack( stack.getWidth(), stack.getHeight(), false );
+    // Set a and b features to the feature stack
+    features.setStack( stack );
+    // Put feature stack into the array
     featuresArray.set(features, slice - 1);
 
 	// Create uniform labels of each cluster/class.
 	// (this information is not used by the clusterer but
 	// needed by WEKA).
 	pixels = new byte[ image.getWidth() * image.getHeight() ];
-	for( i=0; i<pixels.length; i++ )
+	for( i=0; i<pixels.length; i++)
 		pixels [ i ] = (byte) ( i % numClusters + 1 );
 	labels = new ByteProcessor( image.getWidth(), image.getHeight(), pixels );
 
@@ -458,15 +467,15 @@ for ( slice = 1; slice <= image.getStackSize(); slice++ ) {
 	wekaSegmentation.addRandomBalancedLabeledData( labels, features, numSamples );
 }
 
-// Set classifier to perform clustering
-classifier = new ClassificationViaClustering();
+// Set ClassificationViaClustering classifier to perform clustering
+classifier = WekaPackageClassLoaderManager.objectForName( "weka.classifiers.meta.ClassificationViaClustering" );
+
 // Set clusterer as selected by user
 clusterer = null;
 if( clusteringChoice.equals( "SimpleKMeans" ) )
 	clusterer = new SimpleKMeans();
 else
-	clusterer = new EM(); 
-
+	clusterer = new EM();
 clusterer.setSeed( (new Random()).nextInt() );
 clusterer.setNumClusters( numClusters );
 classifier.setClusterer( clusterer );
