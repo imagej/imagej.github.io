@@ -344,7 +344,7 @@ call("trainableSegmentation.Weka_Segmentation.getProbability");
 
 The plugin GUI is independent from the plugin methods. The methods are implemented in a separate file in a library-style fashion, so they can be called from any other Fiji plugin without having to interact with the GUI. This facilitates its integration with other plugins and allows easy scripting.
 
-For examples on how to use the plugin methods from scripts, have a look at the [[Scripting_the_Trainable_Segmentation|Trainable Segmentation scripting]] page.
+For examples on how to use the plugin methods from scripts, have a look at the [[Scripting_the_Trainable_Segmentation|Trainable Weka Segmentation scripting]] page.
 
 The '''[http://javadoc.imagej.net/Fiji/trainableSegmentation/package-tree.html API] of the WekaSegmentation''' library is available [http://javadoc.imagej.net/Fiji/trainableSegmentation/package-tree.html here].
 
