@@ -6,7 +6,7 @@ Latest version: [https://drive.google.com/file/d/0B3hxvkn3VvhCWUlMZ29OTEZ6ZWs Pi
 
 [https://drive.google.com/file/d/0B3hxvkn3VvhCYjFCaWx5dnNpSlE Sample Files (61.8 MB)]
 
-Update History:
+'''Update History:'''
 
 version 1.0.9
 
@@ -14,11 +14,14 @@ version 1.0.9
 
 (2)support fast localization algorithm: center of mass(CM).
 
-If you have any suggestion or comment, please email to:
 
-MR Xu Xiaochun (mbixxc@nus.edu.sg)
-DR Felix Martin Margadant (mbifmm@nus.edu.sg)
 
 '''Acknowledge'''
 
 This work is funded by Mechanobiology Institute,Singapore.
+
+If you have any suggestion or comment, please email to:
+
+MR Xu Xiaochun (mbixxc@nus.edu.sg)
+
+DR Felix Martin Margadant (mbifmm@nus.edu.sg)
