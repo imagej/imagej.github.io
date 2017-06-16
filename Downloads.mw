@@ -1,4 +1,7 @@
 {{TOC|right}}Here you can [http://downloads.imagej.net/ImageJ2-20160205.zip download] an "all platforms" version of ImageJ, without a bundled Java or extra extensions.
+
+{{Notice | Unfortunately, due to the ongoing transition from Java 6 to Java 8, this download of "plain ImageJ2" cannot currently be updated to the latest Java-8-compatible version. See the [[Java 8]] page for details. For the time being, we recommend [[Fiji/Downloads|using the Fiji distribution of ImageJ]] to stay current with updates.}}
+
 <div style="width: 440px">
 {{Box |
 | bgcolor=white
