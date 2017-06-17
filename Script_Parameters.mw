@@ -1,14 +1,13 @@
-{{Learn | scripting}}All scripting languages have access to a universal <code>@parameter</code> notation for declaring inputs and outputs. This approach is preferred to using ImageJ 1.x <code>GenericDialog</code> because it is totally agnostic of the user interface, allowing such scripts to run in a variety of contexts. As with [[Writing_ImageJ2_plugins|ImageJ2 plugins]], script parameterization is based on the [[SciJava]] [https://github.com/scijava/scijava-common/blob/scijava-common-2.40.0/src/main/java/org/scijava/plugin/Parameter.java @Parameter annotation]—so experience with plugin writing directly translates to scripting, and vice versa. 
+{{Learn | scripting}}All scripting languages have access to a universal <code>#@parameter</code> notation for declaring inputs and outputs. This approach is preferred to using ImageJ 1.x <code>GenericDialog</code> because it is totally agnostic of the user interface, allowing such scripts to run in a variety of contexts. As with [[Writing_ImageJ2_plugins|ImageJ2 plugins]], script parameterization is based on the [[SciJava]] [https://github.com/scijava/scijava-common/blob/scijava-common-2.40.0/src/main/java/org/scijava/plugin/Parameter.java @Parameter annotation]—so experience with plugin writing directly translates to scripting, and vice versa. 
 
 == Basic syntax ==
 
-The rules for <code>@parameter</code> use are as follows:
+The rules for <code>#@parameter</code> use are as follows:
 
 <ol>
-<li>All parameter declarations must appear in comments. Each comment line contains a single parameter declaration and nothing else.</li>
-<li>Any parameters after the first non-parameter line will not be recognized.</li>
-<li><code>@type variableName</code> will declare an input of the indicated type, assigned to the specified name.</li>
-<li><code>@OUTPUT type outputName</code> will declare the variable of the specified name as an output parameter with the given type.</li>
+<li>Parameter declarations begin with <code>#@</code>. Each such line contains a single parameter declaration and nothing else.</li>
+<li><code>#@type variableName</code> will declare an input of the indicated type, assigned to the specified name.</li>
+<li><code>#@output type outputName</code> will declare the variable of the specified name as an output parameter with the given type.</li>
 </ol>
 
 {{Testimonial
@@ -21,8 +20,8 @@ The rules for <code>@parameter</code> use are as follows:
 For example, if we look at the [https://github.com/scijava/scripting-jython/blob/scripting-jython-0.2.0/src/main/resources/script_templates/Python/Greeting.py Greeting.py] [[Script_Templates|template]] supplied with Fiji:
 
 <source lang="python">
-# @String name
-# @OUTPUT String greeting
+#@String name
+#@output String greeting
 
 # A Jython script with parameters.
 # It is the duty of the scripting framework to harvest
@@ -40,13 +39,7 @@ We see that an input parameter <code>name</code> of type <code>String</code> is 
 
 We could also run this script [[Scripting Headless|headlessly]], thanks to the general nature of <code>@parameters</code>.
 
-When the script is completed, any <code>@OUTPUT</code> variables are handled by the framework, based on their type. In this case we expect the <code>greeting</code> variable to be printed, since it is a <code>string</code>.
-
-
-{{Warning | Note that if we added an extra comment to the top of our script we would break the script, as the parameters would not be harvested or displayed due to violation of the second parameter rule: <source lang="python">
-# Because of this comment, the following parameters will NOT be recognized
-# @String name
-# @OUTPUT String greeting</source>}}
+When the script is completed, any <code>#@output</code> variables are handled by the framework, based on their type. In this case we expect the <code>greeting</code> variable to be printed, since it is a <code>string</code>.
 
 == Parameter types ==
 
@@ -93,19 +86,19 @@ If you look at the [https://github.com/scijava/scijava-common/blob/scijava-commo
 Script parameters can set these properties, following these guidelines:
 
 <ol>
-<li>All properties are defined in a '''single parenthetical expression''' immediately following the <code>@Type</code> declaration.</li>
+<li>All properties are defined in a '''single parenthetical expression''' immediately following the <code>#@type</code> declaration.</li>
 <li>Properties are set by a [https://docs.oracle.com/javase/tutorial/java/annotations/basics.html comma-separated list of '''key=value''' pairs]</li>
 </ol>
 
-Properties are your way to customize how an <code>@parameter</code> should be handled by the framework.
+Properties are your way to customize how an <code>#@parameter</code> should be handled by the framework.
 
 === Widget labels ===
 
 Widgets are the User Interface elements shown to users to collect input information. For example, instead of just displaying "Name" to the user, we can add a custom label to the field of our <code>Greeting.py</code> script as follows:
 
 <source lang="python">
-# @String(label="Please enter your name") name
-# @OUTPUT String greeting
+#@String(label="Please enter your name") name
+#@output String greeting
 
 greeting = "Hello, " + name + "!"
 </source>
@@ -115,8 +108,8 @@ greeting = "Hello, " + name + "!"
 We can add a <code>description</code> property to provide mouse-over text for our field:
 
 <source lang="python">
-# @String(label="Please enter your name", description="Your name") name
-# @OUTPUT String greeting
+#@String(label="Please enter your name", description="Your name") name
+#@output String greeting
 
 greeting = "Hello, " + name + "!"
 </source>
@@ -126,7 +119,7 @@ greeting = "Hello, " + name + "!"
 Default values are also supported as parameter properties:
 
 <source lang="python">
-# @Integer(label="An integer!",value=15) someInt
+#@Integer(label="An integer!",value=15) someInt
 </source>
 
 === Multiple Choice ===
@@ -134,30 +127,25 @@ Default values are also supported as parameter properties:
 Any parameter can be turned into a multiple-choice selector by adding a <code>choices = {...}</code> property:
 
 <source lang="python">
-# @String(label="What mythical monster would you like to unleash?",choices={"Kraken","Cyclops","Medusa","Fluffy bunny"}) monsterChoice
+#@String(label="What mythical monster would you like to unleash?",choices={"Kraken","Cyclops","Medusa","Fluffy bunny"}) monsterChoice
 </source>
 
 === Files and Folders ===
 
-By default, a <code>@File</code> parameter will create a chooser for a single file. Here is an example in python:
+By default, a <code>#@File</code> parameter will create a chooser for a single file. Here is an example in python:
 
 <source lang="python">
-# @File(label="Select a file") myFile
-
-print(myFile)
-</source>
-
-The same works for the ImageJ1 Macro language:
-<source>
 #@File(label="Select a file") myFile
 
 print(myFile)
 </source>
 
+The exact same code works for the [[Macros|ImageJ1 Macro language]], too.
+
 If you want to select a directory instead, use a <code>style</code> property:
 
 <source lang="python">
-# @File(label="Select a directory", style="directory") myDir
+#@File(label="Select a directory", style="directory") myDir
 
 print(myDir)
 </source>
