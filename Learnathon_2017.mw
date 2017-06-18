@@ -1,5 +1,22 @@
 The first DAIS Learnathon took place from June 18 until June 24 2017.
 
+==Setting up your system==
+
+Check if you have this set up:
+* Jupyter + the SciJava kernel
+    (https://github.com/scijava/scijava-jupyter-kernel)
+* Eclipse (Neon)
+* bash / zsh
+* GIT
+* Maven
+* Gitter
+
+This can happen later:
+* KNIME (app with all extensions + the SDK)
+* KNIME (app + SDK)
+* imglyb (forget that for now)
+
+
 ==Monday==
 
 Git repos to clone:
