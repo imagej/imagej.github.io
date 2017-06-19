@@ -4,6 +4,20 @@
 This list of frequently asked questions is compiled from several questions we have seen several times on the [http://forum.imagej.net/ ImageJ forum]. It will be updated as questions appear there.
 
 
+
+=== Exporting TrakMate overlay to a movie. ===
+
+''In TrackMate after completing tracking, is there any way to export/save a movie with all tracks and moving spots (exactly as it appears after using the TrackMate)?''
+
+
+
+If you keep clicking on the Next button on the GUI, you will reach the last panel of the GUI, which collects miscellaneous actions.
+
+One of them is called '''Capture TrackMate overlay''' and does what you need. It generates a RGB stack with the tracks burned-in. After that you have to export the stack to AVI and you are done.
+
+Careful: the frame capture is simple and brutal. If you have something that passes over the TrackMate viewer while the capture is going on, it will be captured in the final movie.
+
+
 === Various <tt>java.lang.NoClassDefFoundError</tt>s upon execution. ===
 
 These errors may popup when you try to launch TrackMate, or plot features. A stack trace will show in the console and the second line will resemble this:
