@@ -48,33 +48,43 @@ A list of possible data types and the corresponding widgets is provided:
 {| style="wikitable nicetable"
 | '''Data type'''
 | '''Widget type'''
+| '''Available styles'''
 |-
 | | <code>boolean</code> {{!}} <code>Boolean</code>
 | checkbox
+|
 |-
 | | <code>byte</code> {{!}} <code>short</code> {{!}} <code>int</code> {{!}} <code>long</code>
 | numeric field
+| | <code>slider</code> {{!}} <code>spinner</code> {{!}} <code>scroll bar</code>
 |-
 | | <code>Byte</code> {{!}} <code>Short</code> {{!}} <code>Integer</code> {{!}} <code>Long</code>
 | numeric field
+| | <code>slider</code> {{!}} <code>spinner</code> {{!}} <code>scroll bar</code>
 |-
 | | <code>BigInteger</code> {{!}} <code>BigDecimal</code>
 | numeric field
+| | <code>slider</code> {{!}} <code>spinner</code> {{!}} <code>scroll bar</code>
 |-
 | | <code>char</code> {{!}} <code>Character</code> {{!}} <code>String</code>
 | text field
+| | <code>text field</code> {{!}} <code>text area</code> {{!}} <code>password</code>
 |-
 | | <code>Dataset</code> {{!}} <code>ImagePlus</code>
 | (>=2 images) triggers a dropdown list
+|
 |-
 | | <code>ColorRGB</code>
 | color chooser
+|
 |-
 | | <code>Date</code>
 | date chooser
+|
 |-
 | | <code>File</code>
 | file chooser
+| | <code>open</code> {{!}} <code>save</code> {{!}} <code>directory</code>
 |}
 
 By implementing {{Javadoc | project = SciJava | package = org/scijava/widget | class = InputWidget}} it is possible to extend this list.
