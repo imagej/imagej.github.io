@@ -5,6 +5,25 @@ This list of frequently asked questions is compiled from several questions we ha
 
 
 
+=== Copying TrackMate tracking data to another image file. ===
+
+''We would like to know if there is any tool to copy the spots/track created in one stack (fluorophore 1, file 1) and paste them in another stack (fluorophore 2, file 2). We explored the option <tt>Copy overlay to</tt> but it did not work for more than a single frame of the stack.''
+
+
+The simplest solution consists in editing the TrackMate XML file, and have it point to another tif file.
+
+* Make a copy of the XML file, and edit it in a good text editor;
+* Find in the XML file the line that points to the TIF file on which you did the analysis. It looks like this:
+<source lang="xml">
+  <Settings>
+    <ImageData filename="DUP_TIM1 GFP clat dsred TIRF-5.tif" folder="/Users/tinevez/Desktop/" width="310" height="362" nslices="1" nframes="113" pixelwidth="0.1" pixelheight="0.1" voxeldepth="1.0" timeinterval="2.463" />
+</source>
+
+* Change the <tt>filename</tt> tag to point to the other TIF file on which you want to copy the overlay.
+* Next time you open the edited file in TrackMate, it will also open the new TIF file and put the annotation on it.
+
+
+
 === Exporting TrakMate overlay to a movie. ===
 
 ''In TrackMate after completing tracking, is there any way to export/save a movie with all tracks and moving spots (exactly as it appears after using the TrackMate)?''
@@ -24,7 +43,7 @@ Careful: the frame capture is simple and brutal. If you have something that pass
 ''I am aware of '''Capture TrackMate overlay''' function but it only provides the final picture of the track(s) overlayed on the moving particle. I'm interested in showing that the tracks are (or a single track) being formed as the particles move.''
 
 
-The overlay capture abides to the display settings you set in the '''Display Settings'' GUI panel. By changing the '''Track display mode''' here, you can get what you need. For instance choosing the <tt>Show local tracks, backward</tt> will generate a "dragon tail" aspect for the tracks in the movie.
+The overlay capture abides to the display settings you set in the '''Display Settings''' GUI panel. By changing the '''Track display mode''' here, you can get what you need. For instance choosing the <tt>Show local tracks, backward</tt> will generate a "dragon tail" aspect for the tracks in the movie.
 
 
 
