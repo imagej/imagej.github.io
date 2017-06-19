@@ -18,6 +18,17 @@ One of them is called '''Capture TrackMate overlay''' and does what you need. It
 Careful: the frame capture is simple and brutal. If you have something that passes over the TrackMate viewer while the capture is going on, it will be captured in the final movie.
 
 
+
+=== Customizing the look of tracks during movie export. ===
+
+''I am aware of '''Capture TrackMate overlay''' function but it only provides the final picture of the track(s) overlayed on the moving particle. I'm interested in showing that the tracks are (or a single track) being formed as the particles move.''
+
+
+The overlay capture abides to the display settings you set in the '''Display Settings'' GUI panel. By changing the '''Track display mode''' here, you can get what you need. For instance choosing the <tt>Show local tracks, backward</tt> will generate a "dragon tail" aspect for the tracks in the movie.
+
+
+
+
 === Various <tt>java.lang.NoClassDefFoundError</tt>s upon execution. ===
 
 These errors may popup when you try to launch TrackMate, or plot features. A stack trace will show in the console and the second line will resemble this:
