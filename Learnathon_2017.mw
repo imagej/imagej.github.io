@@ -65,6 +65,17 @@ Extra credit:
 * Grab fun snippets from the "Introduction to Ops" Jupyter notebook.
 * Integrate them into your command, to make it do fancier things.
 
+=== How to create a new git repository ===
+This is, from my (Hanslovsky) point of view, the best way to create a new git repository. All commands should run on Linux, OSX, and the git bash shell on Windows.
+* Create a new repository on github.com (choose not to add a README.md or .gitignore), e.g. with name 'awesome-learnathon'
+* On your local machine create a directory where you would like to have the repository and cd into it: <code>mkdir 'awesome-learnathon' && cd 'awesome-learnathon'</code>
+* Initalize local git repository: <code>git init</code>
+* Add remote repository as origin: <code>git remote add -f origin git@github.com:user/awesome-learnathon</code> or <code>git remote add -f origin https://github.com/user/awesome-learnathon</code> if you did not set up git through ssh. The <code>-f</code> parameter fetches from the remote repository
+* Create a first file, e.g. <code>pom.xml</code>, and stage it for a commit: <code>git add pom.xml</code>
+* Commit the stage files with commit message: <code>git commit -m 'Add pom.xml'</code>
+* Push your commit: <code>git push --set-upstream origin master</code> (you can ommit <code>--set-upstream origin master</code> in future commits)
+
+
 ==Tuesday==
 
 Git repos to clone:
