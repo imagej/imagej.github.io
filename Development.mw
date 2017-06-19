@@ -102,6 +102,8 @@ See the [[source code]] page for further details.
 
 == Tutorials ==
 
+<span style="font-size: 1.2em"> Start with the [http://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/ImageJ_Tutorials_and_Demo.ipynb ImageJ tutorial notebooks]!</span>
+
 {| class="wikitable nicetable"
 | '''Learning the ImageJ API'''
 | '''ImageJ plugins'''
