@@ -13,6 +13,7 @@ Here is a quick summary of the most recommended options:
 ** Make your project '''[[open source]]'''.
 ** Host it on '''[[GitHub]]'''.
 ** Use '''[[Maven]]''' to build and SemVer for '''[[versioning]]'''.
+** Use '''[[Travis]]'' for continue integration and artifact deployment to the [[ImageJ Maven repository]].
 * '''Documentation.'''
 ** Create a page here on the '''[http://imagej.net/ ImageJ Wiki]'''.
 
@@ -64,7 +65,7 @@ The first goal is to get your extension into the hands of users.
 * A '''[[Governance|Fiji maintainer]]''' will help you to manage your project.
 * You can lean on existing tools and documentation to maintain '''[[reproducible builds|reproducibility]]''' of your project.
 * Your project will always be compatible with the latest Fiji distribution.
-* The ImageJ '''[[Jenkins]]''' server automatically tests your project for errors.
+* [[Travis]] automatically tests your project for errors, deploying successful builds to the [[ImageJ Maven repository]].
 | style="background: #dfd; vertical-align: top" |
 * You must abide by the '''[[Fiji contribution requirements]]'''.
 * You must rely on a Fiji maintainer (for now) to upload new versions for you.
