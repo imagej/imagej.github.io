@@ -1,0 +1,23 @@
+
+== TrackMate FAQ. ==
+
+This list of frequently asked questions is compiled from several questions we have seen several times on the [http://forum.imagej.net/ ImageJ forum]. It will be updated as questions appear there.
+
+
+=== Various <tt>java.lang.NoClassDefFoundError</tt>s upon execution. ===
+
+These errors may popup when you try to launch TrackMate, or plot features. A stack trace will show in the console and the second line will resemble this:
+
+<pre>Exception in thread "TrackMate plot spot features thread" java.lang.NoClassDefFoundError: 
+com/itextpdf/text/DocumentException
+	at fiji.plugin.trackmate.features.SpotFeatureGrapher.render(SpotFeatureGrapher.java:115)
+	at fiji.plugin.trackmate.gui.GrapherPanel.plotSpotFeatures(GrapherPanel.java:189)
+	at fiji.plugin.trackmate.gui.GrapherPanel.access$100(GrapherPanel.java 
+...
+</pre>
+
+This kind of error is caused when a Java class is missing in your installation. In most cases, this happens because your Fiji installation did not update properly. Possible solutions are
+
+* [[Updater|Update]] Fiji.
+* Check if you have the [[2015-12-22_-_The_road_to_Java_8|Jave8]] update site in the Fiji [[Updater]]
+* Finally, if nothing works, rather than digging in your Fiji installation in details, just install Java 8 and [[Downloads|re-download]] a fresh Fiji application.
