@@ -13,7 +13,7 @@ Here is a quick summary of the most recommended options:
 ** Make your project '''[[open source]]'''.
 ** Host it on '''[[GitHub]]'''.
 ** Use '''[[Maven]]''' to build and SemVer for '''[[versioning]]'''.
-** Use '''[[Travis]]''' for continue integration and artifact deployment to the [[ImageJ Maven repository]].
+** Use '''[[Travis]]''' for continuous integration and artifact deployment to the [[ImageJ Maven repository]].
 * '''Documentation.'''
 ** Create a page here on the '''[http://imagej.net/ ImageJ Wiki]'''.
 
