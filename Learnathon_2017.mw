@@ -38,7 +38,29 @@ Git repos to clone:
 * <code>https://github.com/scijava/scijava-common</code> (optional)
 * <code>https://github.com/imagej/imagej-ops</code> (optional)
 * <code>https://github.com/imglib/imglib2</code> (optional)
-* muhaha (Tobi?)
+
+=== Ops practical ===
+
+Write your first <code>Command</code> plugin!
+
+* Try to do it completely on your own, using Internet resources.
+* If you get stuck, click on hint links.
+* If still stuck, '''''grab a teacher'''''!
+
+Details of your assignment:
+
+* Create a [[Git]] repository.
+* Create a [[Maven]] project. (hints: [https://github.com/imagej/example-imagej-command 1], [[Building a POM|2]])
+* Implement a <code>Command</code> plugin in your [[IDE]], which calculates the ''mean'' across an image. (hint: [https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1_-_Using_ImageJ/2_-_Introduction_to_ImageJ_Ops.ipynb 1], [https://github.com/imagej/tutorials/tree/master/maven-projects/simple-commands/src/main/java 2])
+* Push to [[GitHub]] (hint: [https://help.github.com/articles/pushing-to-a-remote/ 1]).
+
+If you get that far, YOU WIN. {{Person|Jug}} has a reward for you.
+
+Extra credit:
+
+* Look at the "Introduction to Ops" Jupyter notebook.
+* Grab fun snippets.
+* Integrate them into your command, to make it do fancier things.
 
 ==Tuesday==
 
