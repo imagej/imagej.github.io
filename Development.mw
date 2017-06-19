@@ -1,6 +1,11 @@
 {{Notice | If your goal is to automate the behavior of ImageJ, consider writing a [[script]] using ImageJ's [[Script Editor]]—it is often much simpler than a plugin in Java.}}
 {{DevelopMenu}}This page provides an overview of ImageJ from the perspective of software development: how to use it from your programs, as well as how to modify or extend its capabilities via [[plugins]].
 
+== Quick start ==
+
+Check the [http://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/ImageJ_Tutorials_and_Demo.ipynb ImageJ tutorial notebooks]!
+!
+
 == What is ImageJ? ==
 
 {|style="font-size: large; margin-left: 25px; margin-top: 5px;"
