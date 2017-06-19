@@ -43,6 +43,9 @@ Git repos to clone:
 * <code>https://github.com/imagej/imagej-ops</code> (optional)
 * <code>https://github.com/imglib/imglib2</code> (optional)
 
+Slides online:
+* <code>https://imagej.github.io/presentations/2017-06-19-dais-learnathon/</code>
+
 === Ops practical ===
 
 Write your first <code>Command</code> plugin!
@@ -74,7 +77,6 @@ This is, from my (Hanslovsky) point of view, the best way to create a new git re
 * Create a first file, e.g. <code>pom.xml</code>, and stage it for a commit: <code>git add pom.xml</code>
 * Commit the stage files with commit message: <code>git commit -m 'Add pom.xml'</code>
 * Push your commit: <code>git push --set-upstream origin master</code> (you can ommit <code>--set-upstream origin master</code> in future commits)
-
 
 ==Tuesday==
 
