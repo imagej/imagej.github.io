@@ -1,7 +1,20 @@
 
-== TrackMate FAQ. ==
+= TrackMate FAQ. =
 
 This list of frequently asked questions is compiled from several questions we have seen several times on the [http://forum.imagej.net/ ImageJ forum]. It will be updated as questions appear there.
+
+
+
+=== Exporting TrackMate spots to ImageJ1 ROIs. ===
+
+''TrackMate found my particles, and the preview function is usefeul. However I can't seem to figure out how to export all the TrackMate overlays to individual ROIs, so that I can analyse them with other plugins.''
+
+
+
+There is a ROI exporter action is in a separate package called <tt>TrackMate-extras</tt>. To install it, you have to download its ''jar'' file and drop it in the ''plugins'' folder of Fiji. Link and instructions are on the [[TrackMate#Downloadable_jars]] page.
+
+
+An action called '''Export current spots to IJ rois''' will appear in the menu of the action panel (the very last one in the GUI). It will convert each spot to a point in the Multi-Point ROI tool of ImageJ1.
 
 
 
