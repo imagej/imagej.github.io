@@ -150,4 +150,18 @@ If you want to select a directory instead, use a <code>style</code> property:
 print(myDir)
 </source>
 
+=== Styles ===
+
+You can influence the visual style of some of the input widgets. See previous paragraph for an example for how to switch from file to folder selection. You can also switch 
+
+<source lang="python">
+#@String(choices={"Option 1", "Option 2"}, style="listBox") myChoice123
+#@String(choices={"Option A", "Option B"}, style="radioButtonHorizontal") myChoiceABC
+
+print(myChoice123)
+print(myChoiceABC)
+</source>
+
+[[File:Input-styles.png]]
+
 [[Category:Scripting]]
