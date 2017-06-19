@@ -1,7 +1,19 @@
 
-= TrackMate FAQ. =
 
 This list of frequently asked questions is compiled from several questions we have seen several times on the [http://forum.imagej.net/ ImageJ forum]. It will be updated as questions appear there.
+
+
+
+=== Limitations of TrackMate for spot detection. ===
+
+''We are using TrackMate to generate lineages of X cells in live Y and are interested in how the intensity of a signal of interest changes over time, but also in the cell volume. Since most of our cells are not spherical and some are clustered close together, the LoG detector yields rather unsatisfying results. Is it possible to detect these cells based on their actual shape instead of assuming they are all spheres and measure the volume of such segmented cells?''
+
+
+Unfortunately no. 
+
+You are looking for ''segmentation'' algorithm, that can return the contour of an object, and harness complex object shapes. TrackMate just ships ''detection'' algorithms, that only return the X,Y,Z coordinates of each blob.
+
+As of today, there are no plans we are aware of to make TrackMate ship segmentation algorithms.
 
 
 
