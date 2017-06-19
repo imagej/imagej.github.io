@@ -51,8 +51,8 @@ Details of your assignment:
 
 * Create a [[Git]] repository.
 * Create a [[Maven]] project. (hints: [https://github.com/imagej/example-imagej-command 1], [[Building a POM|2]])
-* Implement a <code>Command</code> plugin in your [[IDE]], which calculates the ''mean'' across an image. (hint: [https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1_-_Using_ImageJ/2_-_Introduction_to_ImageJ_Ops.ipynb 1], [https://github.com/imagej/tutorials/tree/master/maven-projects/simple-commands/src/main/java 2])
-* Push to [[GitHub]] (hint: [https://help.github.com/articles/pushing-to-a-remote/ 1]).
+* Implement a <code>Command</code> plugin in your [[IDE]], which calculates the ''mean'' across an image. (hints: [https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1_-_Using_ImageJ/2_-_Introduction_to_ImageJ_Ops.ipynb 1], [https://github.com/imagej/tutorials/tree/master/maven-projects/simple-commands/src/main/java 2])
+* Push to [[GitHub]] (hints: [https://help.github.com/articles/pushing-to-a-remote/ 1], [https://git-man-page-generator.lokaltog.net/ 2]).
 
 If you get that far, YOU WIN. {{Person|Jug}} has a reward for you.
 
