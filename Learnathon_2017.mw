@@ -93,9 +93,11 @@ Afternoon practical:
 
 Git repos to clone:
 * Morning Session on ClearVolume and BDV VisTools:
+** Slides: [[File:Jug_BigDataAnd3dViz.pdf]]
 ** <code>https://github.com/fjug/TutorialClearVolume.git</code>
 ** <code>https://github.com/fjug/TutorialBigDataViewer.git</code>
 ** <code>https://github.com/imglib/imglib2-cache-examples.git</code> (optional but awesome)
+** <code>https://github.com/bigdataviewer/bigdataviewer-vistools.git</code>
 * Afternoon Session on KNIME:
 ** <code>https://github.com/knime-ip/knip-sdk-setup</code>
 ** <code>https://github.com/knime-ip/knip-imagej2</code>
