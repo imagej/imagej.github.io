@@ -103,9 +103,13 @@ Git repos to clone:
 ** <code>https://github.com/imglib/imglib2-cache-examples.git</code> (optional but awesome)
 ** <code>https://github.com/bigdataviewer/bigdataviewer-vistools.git</code>
 * Afternoon Session on KNIME:
+** Download & Install KNIME (app with all extensions) 
+*** https://www.knime.org/downloads/overview?quicktabs_knimed=1#quicktabs-knimed
+** Start KNIME and install all updates
 ** <code>https://github.com/knime-ip/knip-sdk-setup</code>
 ** <code>https://github.com/knime-ip/knip-imagej2</code>
 ** <code>https://github.com/knime-ip/knip-course</code>
+** Get a USB-Stick!
 
 ==Thursday==
 
