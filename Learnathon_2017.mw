@@ -92,9 +92,13 @@ Afternoon practical:
 ==Wednesday==
 
 Git repos to clone:
-* <code>https://github.com/knime-ip/knip-sdk-setup</code>
-* <code>https://github.com/knime-ip/knip-imagej2</code>
-* <code>https://github.com/knime-ip/knip-course</code>
+* Morning Session on ClearVolume and BDV VisTools:
+** <code>https://github.com/fjug/TutorialClearVolume.git</code>
+** <code>https://github.com/fjug/TutorialBigDataViewer.git</code>
+* Afternoon Session on KNIME:
+** <code>https://github.com/knime-ip/knip-sdk-setup</code>
+** <code>https://github.com/knime-ip/knip-imagej2</code>
+** <code>https://github.com/knime-ip/knip-course</code>
 
 ==Thursday==
 
