@@ -45,8 +45,11 @@ When renaming a classname which was annotated with SciJavas @Plugin annotation, 
 	items[2] = label='Quit', iconPath='/icons/commands/door_in.png', priority=0.0, enabled=true, pluginType=Command
 	[Subscriber] org.scijava.menu.DefaultMenuService [priority = 0.0]
 	[Method] protected void org.scijava.menu.DefaultMenuService.onEvent(org.scijava.module.event.ModulesUpdatedEvent)
-java.lang.IllegalStateException: Can't overwrite cause with org.scijava.InstantiableException: Class not found: '''the.plugin.you.just.Renamed'''
+java.lang.IllegalStateException: Can't overwrite cause with org.scijava.InstantiableException: Class not found: 
+
+the.plugin.you.just.Renamed
 </pre>
+
 
 The error may be related to some caching mechanism in the IDE. The solution is to clear the caches, e.g. by running 'mvn clean' from the maven panel.
 
