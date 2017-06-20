@@ -72,6 +72,16 @@ The overlay capture abides to the display settings you set in the '''Display Set
 
 
 
+=== Tracks looked jagged. ===
+
+''The particle traces resemble jagged line rather than a smooth curve of the path. I'm measuring the average speed of the particles and it's crucial the software calculates the distance traveled accurately.''
+
+[[File:TrackMate JaggedLines.png|600px|center]]
+
+Make sure the <tt>Do sub-pixel localization</tt> is checked. It will mitigate this problem. Also make sure that you choose a blob diameter that actually matches the objects you tracking.
+
+
+
 
 === Various <tt>java.lang.NoClassDefFoundError</tt>s upon execution. ===
 
