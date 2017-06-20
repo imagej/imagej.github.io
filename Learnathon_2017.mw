@@ -81,12 +81,15 @@ This is, from my (Hanslovsky) point of view, the best way to create a new git re
 ==Tuesday==
 
 Git repos to clone:
-* <code>https://github.com/imglib/imglib2-introductory-workshop</code>
-* <code>https://github.com/mpicbg-scicomp/ij2course-images</code>
-* <code>https://github.com/mpicbg-scicomp/ij2course-regions</code>
-* <code>https://github.com/mpicbg-scicomp/ij2course-tables</code>
+* Morning + early afternoon sessions:
+** <code>https://github.com/imglib/imglib2-introductory-workshop</code>
+* Afternoon session:
+** The pull-request example: [https://github.com/Meyenhofer/ij-command-2/issues/1|issue to solve]
+** <code>https://github.com/mpicbg-scicomp/ij2course-images</code>
+** <code>https://github.com/mpicbg-scicomp/ij2course-regions</code>
+** <code>https://github.com/mpicbg-scicomp/ij2course-tables</code>
 
-Afternoon practical:
+Optional practical for you to do on your own:
 * <code>https://github.com/imglib/imglib2-advanced-workshop</code>
 
 ==Wednesday==
