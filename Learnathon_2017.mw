@@ -102,6 +102,11 @@ Git repos to clone:
 ** <code>https://github.com/fjug/TutorialBigDataViewer.git</code>
 ** <code>https://github.com/imglib/imglib2-cache-examples.git</code> (optional but awesome)
 ** <code>https://github.com/bigdataviewer/bigdataviewer-vistools.git</code>
+* Afternoon Ops Session:
+** <code>https://github.com/imagej/tutorials</code>
+*** Import the <code>maven-projects/using-ops</code> into your IDE
+** [https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1_-_Using_ImageJ/2_-_Introduction_to_ImageJ_Ops.ipynb Introduction to ImageJ Ops] Jupyter notebook
+** [https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/2_-_Extending_ImageJ/4_-_Writing_Op_plugins.ipynb Extending ImageJ: Writing Ops] Jupyter notebook
 * Afternoon Session on KNIME:
 ** Download & Install KNIME (app with all extensions) 
 *** https://www.knime.org/downloads/overview?quicktabs_knimed=1#quicktabs-knimed
