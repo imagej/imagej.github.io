@@ -14,7 +14,7 @@ J. A. Helmuth, G. Paul, and I. F. Sbalzarini. '''Beyond co-localization: inferri
 
 I. F. Sbalzarini and P. Koumoutsakos. '''Feature Point Tracking and Trajectory Analysis for Video Imaging in Cell Biology,''' Journal of Structural Biology 151(2):182-195, 2005. 
 
-All information on how to install the tools, [http://mosaic.mpi-cbg.de/Downloads/MosaicToolboxSuite_docs.zip documentation] and [https://git.mpi-cbg.de/gitweb/?p=ImageJ.git;a=summary developer information] is available on the [http://mosaic.mpi-cbg.de/?q=downloads/imageJ MOSAIC group website].
+All information on how to install the tools, documentation and developer information is available on the [http://mosaic.mpi-cbg.de/?q=downloads/imageJ MOSAIC group website].
 
 The plugins are available in Fiji through a dedicated [[List_of_update_sites|'''update site''']].
 
