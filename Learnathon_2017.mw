@@ -7,27 +7,37 @@ See [https://indico.mpi-cbg.de/event/50/other-view?view=standard this page]!
 ==Setting up your system==
 
 Check if you have this set up:
-* Jupyter + the SciJava kernel (https://github.com/scijava/scijava-jupyter-kernel)
-** Install [https://conda.io/miniconda.html Miniconda] if you do not have installed it or Anaconda already. (We need the version for Python 3!)
-** Your `.bashrc` or `.zshrc` will need a line like this: <code>export PATH="/Users/someforders/miniconda3/bin:$PATH"</code>
-** Make a new conda environment and install `jupyter` and `scijava-jupiter-kernel`:
-*** <code>conda create --name scijava python=3</code>
-*** <code>source activate scijava</code>
-*** <code>conda install jupyter</code>
-*** <code>conda config --add channels conda-forge</code>
-*** <code>conda install scijava-jupyter-kernel</code>
-** Now (and in the future) you will have to activate the environment we just created: <code>source activate scijava</code>.
-** Deactivation would work like this: <code>source deactivate</code>
-** Get some notebook to try it out:
-*** <code>git clone git@github.com:scijava/scijava-jupyter-kernel.git</code>
-*** <code>cd scijava-jupyter-kernel</code>
-*** <code>jupyter lab</code>
-*** execute cells by hitting shift+enter -- enjoy! 
-* Eclipse (Neon)
-* bash / zsh
-* GIT
-* Maven
-* Gitter
+<ul>
+  <li>Jupyter + the SciJava kernel (https://github.com/scijava/scijava-jupyter-kernel)
+    <ul>
+      <li>Install [https://conda.io/miniconda.html Miniconda] if you do not have installed it or Anaconda already. (We need the version for Python 3!)</li>
+      <li>Your `.bashrc` or `.zshrc` will need a line like this: <code>export PATH="/Users/someforders/miniconda3/bin:$PATH"</code></li>
+      <li>Make a new conda environment and install `jupyter` and `scijava-jupiter-kernel`:
+        <source lang="bash">
+          conda create --name scijava python=3
+          source activate scijava
+          conda install jupyter
+          conda config --add channels conda-forge
+          conda install scijava-jupyter-kernel
+        </source>
+      </li>
+      <li>Now (and in the future) you will have to activate the environment we just created: <code>source activate scijava</code>.</li>
+      <li>Deactivation would work like this: <code>source deactivate</code></li>
+      <li>Get some notebook to try it out:
+        <source lang="bash">
+          git clone git@github.com:scijava/scijava-jupyter-kernel
+          cd scijava-jupyter-kernel
+          jupyter notebook
+        </source>
+        execute cells by hitting <kbd>shift</kbd>+<kbd>enter</kbd>—enjoy!</li>
+    </ul>
+  </li>
+  <li>Eclipse (Neon)</li>
+  <li>bash / zsh</li>
+  <li>GIT</li>
+  <li>Maven</li>
+  <li>Gitter</li>
+</ul>
 
 This can happen later:
 * KNIME (app with all extensions)
