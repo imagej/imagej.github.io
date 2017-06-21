@@ -116,6 +116,10 @@ Git repos to clone:
 ** <code>https://github.com/knime-ip/knip-course</code>
 ** Get a USB-Stick!
 
+* Preparation for the imglyb session on Thursday:
+** Please follow the [https://gist.github.com/hanslovsky/508fb1ff7668f1e53bb769e6dccc789c installation instructions] and install imglyb through conda.
+** If you are a Windows user, please pair up with a OSX or Linux user, or download the [https://www.dropbox.com/s/gxqqzbxaff6uowe/Ubuntu%2017.04%20-%20imglyb.ova VirtualBox Ubuntu appliance]. We also have (at least) one MacBook that is available for use during that session. First come first serve!
+
 ==Thursday==
 
 Instructions:
