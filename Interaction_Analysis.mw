@@ -2,15 +2,13 @@
 | software               = ImageJ
 | name                   = MosaicIA - Interaction Analysis
 | author                 = [http://mosaic.mpi-cbg.de/ MOSAIC Group], [http://www.mpg-sysbio.de Center for Systems Biology Dresden (CSBD)], [http://www.mpi-cbg.de/research/research-groups/ivo-sbalzarini.html Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG)], Dresden, Germany.
-| maintainer     = Pietro Incardona <incardon@mpi-cbg.de>
-| filename               = [http://mosaic.mpi-cbg.de/Downloads/Mosaic_ToolSuite.jar Mosaic_ToolSuite.jar] (70,897 Bytes)
-| source                 = [https://git.mpi-cbg.de/gitweb/?p=ImageJ.git;a=summary Anonymous git]
+| maintainer     = {{Person|Krzysztof.Gonciarz}}
+| update site = MOSAIC ToolSuite
+| source                 = [https://git.mpi-cbg.de/mosaic/MosaicSuite MPI-CBG git]
 | released               = 2013
-| latest version         = 2014
 | status                 = active
 | category               = [[:Category:Particle analysis|Particle analysis]], [[:Category:Colocalization|Colocalization]]
-| documentation          = [http://mosaic.mpi-cbg.de/Downloads/IAPManual.pdf]
-| website                = http://mosaic.mpi-cbg.de/?q=downloads/imageJ
+| website                = [http://mosaic.mpi-cbg.de/?q=downloads/imageJ MosaicSuite]
 }}
 
 ‘’’Interaction Analysis’’’ is a tool to analyze the spatial distribution of objects in images. It estimates from an observed particle or object distribution what hypothetical interaction between the objects is most likely to have created this distribution. Detection of the objects (particles) can also be directly done in the plugin. It is part of the [http://mosaic.mpi-cbg.de/?q=downloads/imageJ MOSAICsuite], which also offers 3D particle tracking, image segmentation, colocalization analysis, and much more. The best way to install it is via the MOSAIC Fiji Update site, as described on the [http://mosaic.mpi-cbg.de/?q=downloads/imageJ MOSAIC web page].
