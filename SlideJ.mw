@@ -9,6 +9,7 @@ SlideJ is available at https://github.com/MITEL-UNIUD/SlideJ
 ''Motivation''
 
 SlideJ was created to provide a common framework for rapid prototyping of image processing and analysis of digital slides using ImageJ. It is based on Bio-Formats, which already provides digital slide access, but SlideJ adds a layer of abstraction useful for many algorithms (though not all).
+
 SlideJ has been developed with the partial support of the EU Marie Curie project [AIDPATH http://aidpath.eu], grant no. 612471.
 
 ''Installation''
