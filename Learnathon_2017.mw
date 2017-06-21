@@ -11,8 +11,8 @@ Check if you have this set up:
   <li>Jupyter + the SciJava kernel (https://github.com/scijava/scijava-jupyter-kernel)
     <ul>
       <li>Install [https://conda.io/miniconda.html Miniconda] if you do not have installed it or Anaconda already. (We need the version for Python 3!)</li>
-      <li>Your `.bashrc` or `.zshrc` will need a line like this: <code>export PATH="/Users/someforders/miniconda3/bin:$PATH"</code></li>
-      <li>Make a new conda environment and install `jupyter` and `scijava-jupiter-kernel`:
+      <li>Your <code>.bashrc</code> or <code>.zshrc</code> will need a line like this: <code>export PATH="/Users/someforders/miniconda3/bin:$PATH"</code></li>
+      <li>Make a new conda environment and install <code>jupyter</code> and <code>scijava-jupiter-kernel</code>:
         <source lang="bash">
           conda create --name scijava python=3
           source activate scijava
@@ -29,7 +29,7 @@ Check if you have this set up:
           cd scijava-jupyter-kernel
           jupyter notebook
         </source>
-        execute cells by hitting <kbd>shift</kbd>+<kbd>enter</kbd>—enjoy!</li>
+        Execute cells by hitting <kbd>shift</kbd>+<kbd>enter</kbd>—enjoy!</li>
     </ul>
   </li>
   <li>Eclipse (Neon)</li>
