@@ -29,7 +29,8 @@ Check if you have this set up:
           cd scijava-jupyter-kernel
           jupyter notebook
         </source>
-        Execute cells by hitting <kbd>shift</kbd>+<kbd>enter</kbd>—enjoy!</li>
+      </li>
+      <li>Execute cells by hitting <kbd>shift</kbd>+<kbd>enter</kbd>—enjoy!</li>
     </ul>
   </li>
   <li>Eclipse (Neon)</li>
