@@ -2,18 +2,17 @@
 | software               = ImageJ
 | name                   = Region Competition
 | author                 = [http://mosaic.mpi-cbg.de/ MOSAIC Group], [http://www.mpg-sysbio.de Center for Systems Biology Dresden (CSBD)], [http://www.mpi-cbg.de/research/research-groups/ivo-sbalzarini.html Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG)], Dresden, Germany.
-| maintainer     = Pietro Incardona <incardon@mpi-cbg.de>
-| filename               = [http://mosaic.mpi-cbg.de/Downloads/Mosaic_ToolSuite.jar Mosaic_ToolSuite.jar] (70,897 Bytes)
-| source                 = [https://git.mpi-cbg.de/gitweb/?p=ImageJ.git;a=summary Anonymous git]
+| maintainer     = {{Person|Krzysztof.Gonciarz}}
+| update site = MOSAIC ToolSuite
+| source                 = [https://git.mpi-cbg.de/mosaic/MosaicSuite MPI-CBG git]
 | released               = 2013
-| latest version         = 2014
 | status                 = active
 | category               = [[:Category:Segmentation|Segmentation]], [[:Category:Deconvolution|Deconvolution]]
-| documentation          = [http://mosaic.mpi-cbg.de/MosaicToolboxSuite/Region_Competition.html]
-| website                = http://mosaic.mpi-cbg.de/?q=downloads/imageJ
+| website                = [http://mosaic.mpi-cbg.de/?q=downloads/imageJ MosaicSuite]
 }}
 
-‘’’Region Competition’’’ is a 2D and 3D multi-region image segmentation tool. It can segment arbitrary (and not priorly known) numbers of objects in fluorescence microscopy images. The objects can have either constant or varying internal intensity. The segmentation computed by Region Competition can optionally correct for the PSF of the microscope, hence providing deconvolved segmentations as described in Helmuth et al. (2009<ref>J. A. Helmuth, C. J. Burckhardt, U. F. Greber, and I. F. Sbalzarini. [http://dx.doi.org/10.1016/j.jsb.2009.03.017 Shape reconstruction of subcellular structures from live cell fluorescence microscopy images], Journal of Structural Biology, 167:1–10, 2009</ref>) and in Helmuth and Sbalzarini (2009<ref>J. A. Helmuth and I. F. Sbalzarini. [http://mosaic.mpi-cbg.de/docs/Helmuth2009a.pdf Deconvolving active contours for fluorescence microscopy images], In Proc. Intl. Symp. Visual Computing (ISVC), volume 5875 of Lecture Notes in Computer Science, pages 544–553, Las Vegas, USA, November 2009. Springer.</ref>). Region Competition is part of the [http://mosaic.mpi-cbg.de/?q=downloads/imageJ MOSAICsuite], which also offers 3D particle tracking, co-localization analysis, interaction analysis, and much more. The best way to install it is via the MOSAIC Fiji Update site, as described on the [http://mosaic.mpi-cbg.de/?q=downloads/imageJ MOSAIC web page].
+
+"Region Competition" is a 2D and 3D multi-region image segmentation tool. It can segment arbitrary (and not priorly known) numbers of objects in fluorescence microscopy images. The objects can have either constant or varying internal intensity. The segmentation computed by Region Competition can optionally correct for the PSF of the microscope, hence providing deconvolved segmentations as described in Helmuth et al. (2009<ref>J. A. Helmuth, C. J. Burckhardt, U. F. Greber, and I. F. Sbalzarini. [http://dx.doi.org/10.1016/j.jsb.2009.03.017 Shape reconstruction of subcellular structures from live cell fluorescence microscopy images], Journal of Structural Biology, 167:1–10, 2009</ref>) and in Helmuth and Sbalzarini (2009<ref>J. A. Helmuth and I. F. Sbalzarini. [http://mosaic.mpi-cbg.de/docs/Helmuth2009a.pdf Deconvolving active contours for fluorescence microscopy images], In Proc. Intl. Symp. Visual Computing (ISVC), volume 5875 of Lecture Notes in Computer Science, pages 544–553, Las Vegas, USA, November 2009. Springer.</ref>). Region Competition is part of the [http://mosaic.mpi-cbg.de/?q=downloads/imageJ MosaicSuite], which also offers 3D particle tracking, co-localization analysis, interaction analysis, and much more. The best way to install it is via the MOSAIC Fiji Update site, as described on the [http://mosaic.mpi-cbg.de/?q=downloads/imageJ MOSAIC web page].
 The algorithm is described in Cardinale, Paul, and Sbalzarini (2012<ref>J. Cardinale, G. Paul, and I. F. Sbalzarini. [http://dx.doi.org/10.1109/TIP.2012.2192129 Discrete region competition for unknown numbers of connected regions], IEEE Trans. Image Process., 21(8): 3531–3545, 2012</ref>).
 
 Documentation is available as [http://mosaic.mpi-cbg.de/MosaicToolboxSuite/Region_Competition.html html].
@@ -22,6 +21,8 @@ Documentation is available as [http://mosaic.mpi-cbg.de/MosaicToolboxSuite/Regio
 J. Cardinale, G. Paul, and I. F. Sbalzarini. Discrete region competition for unknown numbers of connected regions. IEEE Trans. Image Process., 21(8):3531–3545, 2012. 
 
 J. A. Helmuth, C. J. Burckhardt, U. F. Greber, and I. F. Sbalzarini. Shape reconstruction of subcellular structures from live cell fluorescence microscopy images. Journal of Structural Biology, 167:1–10, 2009. 
+
+
 <references />
 
 [[Category:Plugins]]
