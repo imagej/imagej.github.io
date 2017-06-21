@@ -178,8 +178,8 @@ Sometimes, you need to execute a certain part of the code if and only if a certa
 
 <source lang="java">
 // If the image is not binary, abort
-if (!is(“binary”)) {
-	exit(“You need a binary image for this macro!”);
+if (!is( "binary" )) {
+	exit( "You need a binary image for this macro!" );
 }
 </source>
 
