@@ -93,7 +93,7 @@ This is, from my (Hanslovsky) point of view, the best way to create a new git re
 
 Git repos to clone:
 * Morning + early afternoon sessions:
-** <code>https://github.com/imglib/imglib2-introductory-workshop</code>
+** <code>https://github.com/imglib/imglib2-introductory-workshop</code> ([https://github.com/imglib/imglib2-introductory-workshop/blob/master/Introduction-ImgLib2.pdf slides] are in the repository)
 ** (bonus) LabelingPlus: https://github.com/TrNdy/Indago/blob/master/src/main/java/com/indago/data/segmentation/LabelingPlus.java
 * Afternoon session:
 ** The pull-request example: [https://github.com/Meyenhofer/ij-command-2/issues/ to solve]
