@@ -122,10 +122,11 @@ Git repos to clone:
 ** Download & Install KNIME (app with all extensions) 
 *** https://www.knime.org/downloads/overview?quicktabs_knimed=1#quicktabs-knimed
 ** Start KNIME and install all updates
+** How to install ImageJ Integration in KNIME: https://tech.knime.org/community/imagej
+** Set heap-size of KNIME: https://tech.knime.org/faq#q4_2
 ** <code>https://github.com/knime-ip/knip-sdk-setup</code>
 ** <code>https://github.com/knime-ip/knip-imagej2</code>
 ** <code>https://github.com/knime-ip/knip-course</code>
-** Get a USB-Stick!
 
 * Preparation for the imglyb session on Thursday:
 ** Please follow the [https://gist.github.com/hanslovsky/508fb1ff7668f1e53bb769e6dccc789c installation instructions] and install imglyb through conda.
