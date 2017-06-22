@@ -17,6 +17,26 @@ As of today, there are no plans we are aware of to make TrackMate ship segmentat
 
 
 
+
+=== Signification of the Quality value in LoG Detector. ===
+
+''I'm using the LoG detector and couldn't find any documentation as to how the 'quality' value is determined, only that it is an arbitrary measure. Is there an equation/description of how this works so I'm able to set a threshold based on experimental values?''
+
+
+The TrackMate PDF manual gives information about this (page 51):
+
+The LoG detector is the best detector for Gaussian-like particles in the presence of noise. It is based on applying a LoG filter on the image and looking for local maxima. The Laplacian of Gaussian result is obtained by summing the second order spatial derivatives of the gaussian- filtered image, and normalizing for scale.
+
+Local maxima in the filtered image yields spot detections. Each detected spot is assigned a quality value by taking the local maxima value in the filtered image.
+
+So by properties of the LoG filter, this quality value is larger for :
+
+* bright spots;
+* spots which diameter is close to the specified diameter.
+
+
+
+
 === Exporting TrackMate spots to ImageJ1 ROIs. ===
 
 ''TrackMate found my particles, and the preview function is usefeul. However I can't seem to figure out how to export all the TrackMate overlays to individual ROIs, so that I can analyse them with other plugins.''
