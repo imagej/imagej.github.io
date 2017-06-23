@@ -5,3 +5,8 @@ There are several benefits provided by the communication of ImageJ and OpenCV ob
 IJ-OpenCV has been built on top of [[SciJava_Common|SciJava Common]] using SciJava converters.
 
 Several ImageJ plugins have been developed using this library and can be easily downloaded and installed using the [http://sites.imagej.net/IJ-OpenCV/ ImageJ Update site].
+
+==Publication==
+* {{Publication | IJ-OpenCV}}
+
+[[Category:Citable]]
