@@ -151,7 +151,7 @@ Git repos to clone:
 ==Friday==
 
 Git repos to clone:
-* Advanced ImgLib2 workshop: 
+* Advanced ImgLib2 workshop: <code>https://github.com/imglib/imglib2-advanced-workshop</code>
 * ImgLib2 caches: <code>https://github.com/imglib/imglib2-cache-examples</code>
 * Write your own SciJava plugin types: <code>https://github.com/mpicbg-scicomp/ij2course-scijava-plugin-mechanism</code>
 
