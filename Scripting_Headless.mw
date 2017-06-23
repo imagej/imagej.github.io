@@ -19,7 +19,7 @@ By default, when ImageJ runs headlessly it acts like a one-off program: it will 
 Let's say we have the following Python script saved in a file, <code>hello.py</code>:
 
 <source lang="python">
-# @String name
+#@String name
 
 print('Hello ' + name)
 </source>
@@ -37,8 +37,8 @@ Note that the <code>name</code> parameter must be enclosed in double quotes, sin
 If your script has more than one parameter:
 
 <source lang="python">
-# @String name1
-# @String name2
+#@String name1
+#@String name2
 
 print('Hello ' + name1 + " and " + name2)
 </source>
