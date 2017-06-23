@@ -155,6 +155,15 @@ Git repos to clone:
 * ImgLib2 caches: <code>https://github.com/imglib/imglib2-cache-examples</code>
 * Write your own SciJava plugin types: <code>https://github.com/mpicbg-scicomp/ij2course-scijava-plugin-mechanism</code>
 
+Awesome stuff that happened too:
+* Discussion time
+** The future of the [https://forum.imagej.net imagej forum]...
+** The problem of missing funding...
+** Stable releases (coming in December).
+** A system to track what a workflow should cite...
+* Headless with Fiji (http://imagej.net/Batch) (ignoring legacy problems)
+* ImgLib2 ROIs (https://github.com/imglib/imglib2-roi/tree/shape-rois), a preview to what will/might come soon!
+
 ==Saturday==
 
 [[Category:News]]
