@@ -14,7 +14,7 @@
 
 == Purpose ==
 
-Analyze_Stripes is a Fiji (or ImageJ) macro designed to automatically measure the width, edge roughness, and orientation angle of stripes.
+Analyze_Stripes is a Fiji (or ImageJ) macro designed to automatically measure the width, edge roughness, and orientation angle of stripes or edges.
 
 == Documentation ==
 
