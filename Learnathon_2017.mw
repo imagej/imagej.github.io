@@ -133,20 +133,22 @@ Git repos to clone:
 ** If you are a Windows user, please pair up with a OSX or Linux user, or download the [https://www.dropbox.com/s/gxqqzbxaff6uowe/Ubuntu%2017.04%20-%20imglyb.ova VirtualBox Ubuntu appliance]. We also have (at least) one MacBook that is available for use during that session. First come first serve!
 
 ==Thursday==
-* imglib2-algorithm
-** Git repos to clone:
-*** <code>https://github.com/imglib/imglib2-advanced-workshop</code>
+===imglib2-algorithm===
+We will look at the examples in the ''algorithm.morphology'' package of the ''imglib2-advanced-workshop'' to get familiar with the use of existing algorithms in ''imglib2-algorithm''.
+* Git repos to clone:
+** <code>https://github.com/imglib/imglib2-advanced-workshop</code>
 
-* imglyb
-** Instructions:
-*** <code>https://gist.github.com/hanslovsky/508fb1ff7668f1e53bb769e6dccc789c</code>
+===imglyb===
+The jupyter notebooks in the ''imglyb-learnathon'' repository cover basic and advanced use of the ''imglyb'' compatibility layer for ''imglib2'' and ''numpy''. Please follow the instructions below to make sure your machine is prepared for the tutorial. Clone the ''imagey'' repository to access CPython through ''ImageJ''.
+* Instructions:
+** <code>https://gist.github.com/hanslovsky/508fb1ff7668f1e53bb769e6dccc789c</code>
 
-** Git repos to clone:
-*** <code>https://github.com/imglib/imglib2-unsafe</code>
-*** <code>https://github.com/hanslovsky/imglib2-imglyb</code>
-*** <code>https://github.com/hanslovsky/imglyb-examples</code>
-*** <code>https://github.com/hanslovsky/imagey</code>
-*** <code>https://github.com/hanslovsky/imglyb-learnathon</code>
+* Git repos to clone:
+** <code>https://github.com/imglib/imglib2-unsafe</code>
+** <code>https://github.com/hanslovsky/imglib2-imglyb</code>
+** <code>https://github.com/hanslovsky/imglyb-examples</code>
+** <code>https://github.com/hanslovsky/imagey</code>
+** <code>https://github.com/hanslovsky/imglyb-learnathon</code>
 
 ==Friday==
 
