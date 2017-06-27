@@ -123,8 +123,11 @@ Git repos to clone:
 ** How to install ImageJ Integration in KNIME: https://tech.knime.org/community/imagej
 ** Set heap-size of KNIME: https://tech.knime.org/faq#q4_2
 ** <code>https://github.com/knime-ip/knip-sdk-setup</code>
+*** See installation instructions in [https://github.com/knime-ip/knip-sdk-setup/blob/master/README.md README.md]
 ** <code>https://github.com/knime-ip/knip-imagej2</code>
+*** See installation instructions in [https://github.com/knime-ip/knip-imagej2/blob/master/README.md README.md]
 ** <code>https://github.com/knime-ip/knip-course</code>
+*** See instructions for exercises in [https://github.com/knime-ip/knip-course/blob/master/README.md README.md]
 
 * Preparation for the imglyb session on Thursday:
 ** Please follow the [https://gist.github.com/hanslovsky/508fb1ff7668f1e53bb769e6dccc789c installation instructions] and install imglyb through conda.
