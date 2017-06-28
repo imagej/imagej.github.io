@@ -23,6 +23,7 @@ stripped-down plot will be shown:
 ## Download the Rserver package: https://rforge.net/bin/windows/contrib/3.0/Rserve_1.8-0.zip
 ## Download the MASS package: https://cran.r-project.org/bin/windows/contrib/3.2/MASS_7.3-45.zip
 ## Start R and select the packages downloaded in 1. and 2. via "Start Packages -> Install packages from local zip files"
+# Open Fiji, start the ParticleSizer Settings Manager and the R path to the R binary.
 
 You can now start the ParticleSizer via ''Plugins -> NanoDefine -> ParticleSizer''
 
