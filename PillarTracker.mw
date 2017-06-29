@@ -10,7 +10,7 @@ Latest version: [https://drive.google.com/file/d/0B3hxvkn3VvhCWUlMZ29OTEZ6ZWs Pi
 
 version 1.1.0
 
-(1)performance improved. GPU acceleration for image pre-processing.
+(1)performance improved. GPU acceleration for image pre-processing (cross correlation with kernel).
 
 (2)minor bugs fixed.
 
