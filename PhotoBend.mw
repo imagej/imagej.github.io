@@ -56,11 +56,12 @@ The plugin code uses the selected regions of the image as reference templates to
 
 == Laser_Spot_Track4 ==
 
+[[Image:LaserSpotMove.gif|thumb|right|Animation of the laser spot movement obtained while registering the photobending with the laser beam deflection technique (~70x playback speed)]]
+
 The plugin's goal is to automate the registering and analysis for the so-called laser beam deflection technique. The technique is the general purpose method to study various processes in which objects undergo weak change of their geometry. A laser beam reflecting from the object itself or from a mirror attached to the object deflects while the object's geometry changes. The spot of the deflected laser beam moves on a distant screen (e.g. wall). Due to long distance between the object and the screen an amplification of the geometry change is provided. 
 
 The plugin was developed to analyze weak photobending of thick crystals. To utilize the technique tiny mirror is attached to the free crystal's end. The bending then causes tilt of the mirror and corresponding deflection of the laser beam. 
 
-[[Image:photobend_demo.gif|thumb|right|Animation of the photobend time lapse (~1500x playback speed)]]
 [[Image:photobend_processing.jpg|frame|400pix|left|Crystal shape tracking in process]]
 
 The movement of the laser spot is registered with a camera to give the series of the time-lapse photographs (or a movie which should be transformed to the series for the analysis). The laser spot should be registered on the screen with the template attached which contains 4 marks placed in corners of a square. The usage of the template provides automatic image stabilization and perspective correction (note that only linear perspective is corrected; no spherical distortion can be corrected by the plugin, so usage of wide-angle lenses is not recommeded). 
