@@ -74,6 +74,9 @@ Combining both information, we could give the following adivices (as a rule of t
 * S+E -> Activate ellipse fitting
 * H -> Activate single particle mode
 
+= Use the ParticleSizer with the NanoDefiner e-tool =
+The ParticleSizer supports the [https://labs.inf.fh-dortmund.de/NanoDefiner/?anchor=version#version NanoDefiner e-tool]. After the analysis of a dataset is finished, you can select the results table and export the cummulative mass function of the feret min diamater by "Results > Export CMF". The exported file can be uploaded to the [https://labs.inf.fh-dortmund.de/NanoDefiner/?anchor=version#version NanoDefiner e-tool].
+
 = Examples =
 == Gold 8 nm, Settings: Default ==
 [[File:Gold nooverlay.png|300px]]
