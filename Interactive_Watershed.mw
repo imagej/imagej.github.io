@@ -151,4 +151,6 @@ HIstory of version available of SCF_MPI_CBG update site
 
 * 2017-07-03: version 1.0.2
 ** feature: the labelling is always continuous from 1 to number of labels in the image/volume
+** feature: threshold and seeds dynmics slider range fix to [0,1000] with step of 1
 ** bugFix: the exported label map shows the correct number of labels in its title
+** bugfix: threshold value in in output title corrected
