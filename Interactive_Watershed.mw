@@ -148,3 +148,7 @@ HIstory of version available of SCF_MPI_CBG update site
 * 2017-06-12: version 1.0.1 ,
 ** features: smoother slider for threshold and seeds
 ** bugFix: correct initialisation of the segmentation in the script call (this correction suppress discrepency between the GUI and the script call)
+
+* 2017-07-03: version 1.0.2
+** feature: the labelling is always continuous from 1 to number of labels in the image/volume
+** bugFix: the exported label map shows the correct number of labels in its title
