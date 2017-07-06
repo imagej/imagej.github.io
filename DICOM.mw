@@ -3,10 +3,10 @@
 == How to read DICOM files into ImageJ? ==
 * ImageJ has built-in support for reading some kinds of DICOM files. Try {{bc | File | Open}} and see how it goes.
 * The [[Bio-Formats]] plugin supports some kinds of DICOM files, too. Bio-Formats is available in the [[Fiji]] distribution of ImageJ. Try {{bc | File | Import | Bio-Formats}}.
-* The [http://www.santec.lu/project/dicom Tudor Dicom Tools] plugin suite can read and write many kinds of DICOM, and provide some support for working with DICOM metadata structures.
+* The [http://santec.tudor.lu/project/dicom Tudor Dicom Tools] plugin suite can read and write many kinds of DICOM, and provide some support for working with DICOM metadata structures.
 
 == How to save DICOM files from ImageJ? ==
-The [http://www.santec.lu/project/dicom Tudor Dicom Tools] provide basic support for saving as DICOM.
+The [http://santec.tudor.lu/project/dicom Tudor Dicom Tools] provide basic support for saving as DICOM.
 
 == How to work with DICOM headers from a script? ==
 
