@@ -39,3 +39,6 @@ SlideJ is licensed under LGPL 3.0.
 '''Authors'''
 
 SlideJ is developed by Giulia Lucrezia Baroni, [http://users.dimi.uniud.it/~vincenzo.dellamea/ Vincenzo Della Mea] and David Pilutti at the [http://mitel.dimi.uniud.it/ Medical Informatics, Telemedicine and eHealth Lab], dept. of Mathematics, Computer Science and Physics, University of Udine, Italy.
+
+If you use it, please cite Slidej as:
+''Della Mea V, Baroni GL, Pilutti D, Di Loreto C (2017) SlideJ: An ImageJ plugin for automated processing of whole slide images. PLoS ONE 12(7): e0180540.''
