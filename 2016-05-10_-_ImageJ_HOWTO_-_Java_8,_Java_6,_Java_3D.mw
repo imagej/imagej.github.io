@@ -98,7 +98,7 @@ But later this year, we will migrate the latest Java-8 components back to the co
 ** It does not work with Java 7 or 8 on macOS.
 ** It does not work with Java 8 (or 7?) on some Windows systems.
 
-Please be aware that [[Java 3D]] is essentially a dead technology. The future of 3D visualization in ImageJ is the [[ClearVolume]] and [[ThreeDViewer]] plugins. But it will be a lot of work to rewrite all [[3D Viewer]] functionality, so the ImageJ and Fiji teams are still exploring the best ways to proceed here.
+Please be aware that [[Java 3D]] is essentially a dead technology. The future of 3D visualization in ImageJ is the [[ClearVolume]] and [[SciView]] plugins. But it will be a lot of work to rewrite all [[3D Viewer]] functionality, so the ImageJ and Fiji teams are still exploring the best ways to proceed here.
 
 [[Category:News]]
 [[Category:Fiji]]
