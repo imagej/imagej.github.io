@@ -13,7 +13,7 @@
 
 It is supposedly possible to run [[Java 3D]] on the Pi; see [http://stackoverflow.com/questions/28529344/how-to-run-java3d-on-rpi-2 this StackOverflow thread]. However, there have been no official reported successes on ImageJ community channels yet. If you get it working, please edit this section to describe the steps you used!
 
-Even better, if you get [[ClearVolume]] and/or the [[ThreeDViewer]] working on the Pi, please update this page, and announce it on the [[ImageJ Forum]]!
+Even better, if you get [[ClearVolume]] and/or [[SciView]] working on the Pi, please update this page, and announce it on the [[ImageJ Forum]]!
 
 = Troubleshooting =
 See the [[Troubleshooting]] page.
