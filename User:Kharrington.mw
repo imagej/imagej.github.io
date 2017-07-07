@@ -6,4 +6,4 @@
 | website = http://kyleharrington.com/
 }}Kyle Harrington developed the [[Funimage]] plugin to facilitate concise [[Clojure]] code, which is also an easy way to write standalone [[ImageJ]]/[[ImgLib2]]-based programs in Clojure.
 
-Kyle is also a developer on the [[ThreeDViewer]] project for development of a replacement 3D visualization tool for [[ImageJ]] and [[KNIME]].
+Kyle is also a developer on the [[SciView]] project for development of a replacement 3D visualization tool for [[ImageJ]] and [[KNIME]].
