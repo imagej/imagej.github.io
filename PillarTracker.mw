@@ -8,23 +8,23 @@ Latest version: [https://drive.google.com/file/d/0B3hxvkn3VvhCWUlMZ29OTEZ6ZWs Pi
 
 '''Update History:'''
 
-version '''1.1.1
-'''
-(1)establish the grid based on the silent pillars.
+version '''1.1.1'''
 
-(2)faster save files.
+ (1)establish the grid based on the silent pillars.
 
-version '''1.1.0
-'''
-(1)performance improved. GPU acceleration for image pre-processing (cross correlation with kernel).
+ (2)faster save files.
 
-(2)minor bugs are fixed.
+version '''1.1.0'''
+
+ (1)performance improved. GPU acceleration for image pre-processing (cross correlation with kernel).
+
+ (2)minor bugs are fixed.
 
 version '''1.0.9'''
 
-(1)support BCC arranged pillar, which has 60 degree of grid angle. 
+ (1)support BCC arranged pillar, which has 60 degree of grid angle. 
 
-(2)support fast localization algorithm: center of mass(CM).
+ (2)support fast localization algorithm: center of mass(CM).
 
 
 '''Acknowledgement'''
