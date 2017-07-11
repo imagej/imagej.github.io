@@ -12,7 +12,7 @@ version '''1.1.1'''
 
  (1).establish the grid based on the silent pillars.
 
- (2).faster save files.
+ (2).faster save data into binary files.
 
  (3).hunt contractile unit(CU).
 
