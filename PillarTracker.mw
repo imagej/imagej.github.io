@@ -1,10 +1,10 @@
 The plugin can be automatically downloaded and installed by using ImageJ's updater. We encourage user to use this way to make sure you have latest version. For more details, please refer to the documentation. However, if user doesn't want to use the updater for some reason, one can still download it from following link, and then install it manually. 
 
-Latest version: [https://drive.google.com/file/d/0B3hxvkn3VvhCWUlMZ29OTEZ6ZWs Pillar_Tracker_GUI-1.1.1-SNAPSHOT.zip (676KB)]
+Latest version: [https://drive.google.com/file/d/0B3hxvkn3VvhCWUlMZ29OTEZ6ZWs Pillar_Tracker_GUI-1.1.1-SNAPSHOT.zip] (676 KB)
 
 [https://drive.google.com/file/d/0B3hxvkn3VvhCVWJsdUN3eDUyNkk PillarTracker Documentation PDF]
 
-[https://drive.google.com/file/d/0B3hxvkn3VvhCYjFCaWx5dnNpSlE Sample Files (61.8 MB)]
+[https://drive.google.com/file/d/0B3hxvkn3VvhCYjFCaWx5dnNpSlE Sample Files] (61.8 MB)
 
 '''Update History:'''
 
@@ -15,6 +15,8 @@ version '''1.1.1'''
  (2).faster save data into binary files.
 
  (3).hunt contractile unit(CU).
+
+ (4).save settings for drift binary file.
 
 version '''1.1.0'''
 
