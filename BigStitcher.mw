@@ -1,3 +1,12 @@
+{{Infobox Plugin
+| software               = BigStitcher
+| name                   = BigStitcher
+| author                 = {{Person|StephanPreibisch}} & {{Person|hoerldavid}}
+| maintainer             = {{Person|StephanPreibisch}} & {{Person|hoerldavid}}
+| source                 = {{GitHub|org=PreibischLab|repo=BigStitcher}}
+| status                 = unstable
+}}
+
 == Introduction & Overview ==
 
 == Download ==
