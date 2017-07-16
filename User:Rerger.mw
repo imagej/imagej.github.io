@@ -95,3 +95,8 @@ Following is an example of the Modified Image Window (image supplied by author)
 == SAVING RESULTS ==
 
 	The user of the application can save results using the save as feature under the file option.  The FIJI application provides the options to save the image with a wide choice of extensions.
+
+== ACKNOWLEDGEMENTS ==
+We would like to thank our professor [http://faculty.tamuc.edu/nsirakov/ Dr. Nikolay Sirakov], [http://www.tamuc.edu/ Texas A&M-Commerce].  Under his tutelage and guidance we were able to transform a class project into a shared application for the ImageJ community.  Special thanks to Pavan Kumar Gadiraju, our coding partner, who developed the application for the plugin.  In addition, we wish to thank Robert Erger and Beverly Baird, the math team, for assistance in developing the algorithm and providing the documentation.  
+
+Contact Person:  [mailto:rerger@leomail.tamuc.edu Email Robert Erger]
