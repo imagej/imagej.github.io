@@ -1,6 +1,9 @@
 == Introduction & Overview ==
 
 == Download ==
+
+An '''alpha'''-Version of BigStitcher is available via the Fiji Updater. Just go to {{bc | Help | Update...}}, click <code>Manage update sites</code> and select <code>BigStitcher</code> in the list. After applying the changes and restarting Fiji, BigStitcher will be available under {{bc | Plugins | BigStitcher | BigStitcher}}.
+
 == Documentation ==
 
 === Importing Data ===
