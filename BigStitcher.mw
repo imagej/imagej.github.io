@@ -1,19 +1,18 @@
-= Introduction & Overview =
+== Introduction & Overview ==
 
-= Download =
+== Download ==
+== Documentation ==
 
-= Documentation =
-
-== Importing Data ==
+=== Importing Data ===
 
 === Opening an existing project ===
 
-== Pre-alignment ==
+=== Pre-alignment ===
 
-== Pairwise shift calculation ==
+=== Pairwise shift calculation ===
 
-== Previewing and filtering pairwise shifts ==
+=== Previewing and filtering pairwise shifts ===
 
-== Global optimization ==
+=== Global optimization ===
 
-== Fusion ==
+=== Fusion ===
