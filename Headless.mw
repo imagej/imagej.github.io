@@ -30,8 +30,6 @@ Nowadays, we use [[Javassist]] for run-time patching, through the {{GitHub|org=i
 
 Please see the [[Scripting Headless|headless scripting guide]].
 
-{{Warning | '''Beware:''' There is currently [https://github.com/imagej/imagej/issues/114 a serious bug] preventing headless [[Jython]] scripts from working on '''Windows''' systems.}}
-
 === Running macros in headless mode ===
 
 To run a ''macro'' in headless mode, use the <code>-macro</code> command line argument along with the <code>--headless</code> option, as follows:
