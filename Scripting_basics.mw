@@ -11,10 +11,9 @@ ImageJ and Fiji are able to run scripts written in [http://imagej.net/Scripting#
 First we want to learn different ways to select an image and perform an action on it. In [[ImageJ1]] the image is represented by an [http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html ImagePlus] object. The recommended way to select an ImagePlus opbject is to use [[Script_parameters|Script Parameters]]:
 
 <source lang='java'>
-/*
- * @ImagePlus imp
- * @Integer(label='Filter radius',description='The sigma of the gaussian filter.',value=2) sig
- */
+#@ ImagePlus imp
+#@ Integer(label='Filter radius',description='The sigma of the gaussian filter.',value=2) sig
+
 print(imp)
 
 import ij.IJ
@@ -58,12 +57,10 @@ In ImageJ there are many different ways to open images (or more general datasets
 The first example uses the [http://javadoc.imagej.net/SCIFIO/io/scif/services/DatasetIOService.html DatasetIOService]. It is part of [[SCIFIO]], a flexible framework for '''SC'''ientific '''I'''mage '''F'''ormat '''I'''nput and '''O'''utput. Two types of image files are opened. The first one is an example image, downloaded from the Internet. The second image can be chosen by the user. Both datasets are displayed using the [http://javadoc.imagej.net/SciJava/org/scijava/ui/UIService.html UIService] that is part of the [[SciJava]] project.
 
 <source lang='java'>
-/*
- * @DatasetIOService ds
- * @UIService ui
- * @String(label='Image URL', value='http://wsr.imagej.net/images/clown.jpg') fileUrl
- * @File(label='local image') file
- */
+#@ DatasetIOService ds
+#@ UIService ui
+#@ String(label='Image URL', value='http://wsr.imagej.net/images/clown.jpg') fileUrl
+#@ File(label='local image') file
 
 // Load a sample file from the internet and a local file of your choice.
 dataset1 = ds.open(fileUrl)
@@ -76,10 +73,8 @@ ui.show(dataset2)
 If a script only depends on ImageJ1 functionality, one can use the function <code>IJ.openImage()</code>. It will return an ImagePlus object.
 
 <source lang='java'>
-/*
- * @String(label='Image URL', value='http://wsr.imagej.net/images/clown.jpg') fileUrl
- * @File(label='local image') file
- */
+#@ String(label='Image URL', value='http://wsr.imagej.net/images/clown.jpg') fileUrl
+#@ File(label='local image') file
 
 import ij.IJ
 
