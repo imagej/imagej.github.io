@@ -10,9 +10,9 @@
 | supportStatus = {{SupportStatus | debugger=yes | reviewer=yes | support=yes}}
 | founders = {{Person|vkapoor}}
 | leads = {{Person|vkapoor}}
-| developers = {{Person|vkapoor}}{{Person|StephanPreibisch}}
+| developers = {{Person|vkapoor}},{{Person|StephanPreibisch}}
 | debuggers = {{Person|vkapoor}}
-| reviewers = {{Person|vkapoor}}{{Person|StephanPreibisch}}
+| reviewers = {{Person|vkapoor}},{{Person|StephanPreibisch}}
 | support = {{Person|vkapoor}}
 | maintainers = {{Person|vkapoor}}
 | contributors = {{Person|StephanPreibisch}}
