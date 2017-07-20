@@ -42,7 +42,9 @@ Tracking requires an object recognition method to locate the object of interest 
 | style="padding: 5px;" | Minimum number of pixels contained in a stable region.
 |}
 
-MSER applies successive thresholds and builds a component tree as shown in the Figure (linear time citation here). If the grey level separation is small (0 - 20) more stable regions will be found, if it is high then only few regions will be found. The lifetime of each component is measured by the unstability score and is normalized between 0 and 1. For values close to 1 many regions will be deemed stable and found by the algorithm and for values close to 0 only very few extremely stable regions will be found.
+MSER applies successive thresholds and builds a component tree as shown in the Figure (linear time citation here). If the grey level separation is small (0 - 20) more stable regions will be found, if it is high then only few regions will be found. The lifetime of each component is measured by the unstability score and is normalized between 0 and 1. For values close to 1 many regions will be deemed stable and for values close to 0 only very few extremely stable regions will be found.
 
 [[Image:GreyLevel.png|400px]]  
 The nodes of the tree are vertical boxes and vertical extent of the box shows the grey-level life span of each component.
+
+The user can change the MSER parameters using the adjustable sliders and see the effect of their selection on the image. Once the Microtubules are recognized by the algorithm click on "Find endpoints" to obtain the end-points of the Microtubules on the image with sub-pixel accuracy. The found end points will be shown as green circles on the image.
