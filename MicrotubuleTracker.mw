@@ -55,8 +55,18 @@ The user can change the MSER parameters using the adjustable sliders and see the
 [[Image:Mserseeddet.png|400px]]
 
 === Advanced Mode ===
-In this mode the user has several options of choosing their method of object recognition and seed end determination. These methods include Distance transform based watershedding followed by Hough Transform to determine the line parameters along which the seeds lie, MSER detection and a combination of MSER and Hough Transform to determine the above mentioned line parameters. 
+In this mode apart from making result filename and directory selection the user also has several options of choosing their method of object recognition and seed end determination. These methods include Distance transform based watershedding followed by Hough Transform to determine the line parameters along which the seeds lie, MSER detection and a combination of MSER and Hough Transform to determine the above mentioned line parameters. 
+
+[[Image:AdvancedMode1.png|400px]]
 
 Watershed based object recognition is a method of choice for dense seed images, watershedding allows demarcation of close lying seeds, something that is not possible with MSER. Once the regions in which the Microtubules lie is determined, Line based Hough transform is performed to determine the line parameters of the Microtubules. This is needed to make an initial guess for the optimizer which then fits a Gaussian line model to localize the end points of the Microtubules.
 
+
+[[Image:AdvancedMode2Hough.png|400px]]
+
+
 MSER based object recognition are fast methods to locate and localize the seed ends, but should only be used for sparsely populated Microtubule images. The Microtubules lie along the semi-major axis of the MSER ellipse but if this is not the case then Hough transform can be performed to determine the required axis. Following which the optimization using the Gaussian line models is done to localize the seed ends.
+
+[[Image:AdvancedMode2mser.png|400px]]
+
+In order to enhance the Microtubule image pixels a Canny edge detection followed by a mean filter with the radius determined by the SigmaX and SigmaY of the PSF of the microscope is use. The radius factor is a factor multiplying that radius and is user adjustable, in the simple mode this factor is 1 and is adjustable here. Increasing this parameter causes the MSER elliptical region to increase in size while decreasing it has the reverse effect.
