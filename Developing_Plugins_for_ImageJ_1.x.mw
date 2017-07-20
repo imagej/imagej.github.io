@@ -1,3 +1,5 @@
+{{ImageJ1 | This page explains how to develop plugins with the ImageJ 1.x API. If you start developing a new plugin today, it is highly recommended to [[Writing_plugins|develop for ImageJ2]].}}
+
 __FORCETOC__ {{DevelopMenu | tutorials}}{{Project | ImageJ1 | describes content related to}}
 
 = Plugin, script or macro? =
