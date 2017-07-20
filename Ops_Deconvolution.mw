@@ -41,13 +41,21 @@ The proper handling of boundary conditions is an important part of deconvolution
 
 [http://bigwww.epfl.ch/deconvolution/challenge2013/index.html?p=doc_math_rl Non-circulant Richardson Lucy]
 
-==Results==
+==Scripts==
+
+A collection of scripts that use ops-deconvolution is being developed and can be found [https://github.com/imagej/imagej-scripting/tree/master/src/main/resources/script_templates/Deconvolution here on github].  The scripts can also be accessed via the Templates->Deconvolution menu in the Fiji script editor.  Note that as new scripts are added it may take a couple of weeks for them to be available in Fiji.  Thus check github for the most up to date collection of scripts. 
+
+==Preliminary Results==
+
+Preliminary results have been generated using the [http://bigwww.epfl.ch/deconvolution/bio/ C. Elegans Embryo] images and PSFs provided by the Bio-Imaging Group of EPFL.  Note that this result is not yet optimal, as the image has spherical aberration (asymmetrical 'flare' in the xz view) and the provided PSF did not have SA.  In the future better ops to produce a theoretical PSF with spherical aberration will be developed. 
+
+We encourage users of deconvolution to try deconvolving this image with various commercial and open source packages and discuss results on the [http://forum.imagej.net/ ImageJ Forum].
 
 ===Original===
-[[File:Composite_orig_xy.jpg|200px]][[File:Composite_orig_zx.jpg|200px]]
+[[File:Composite_orig_xy.jpg|300px]][[File:Composite_orig_zx.jpg|140px]]
 
 ===Deconvolved===
-[[File:Composite_decon_xy.jpg|200px]][[File:Composite_decon_zx.jpg|200px]]
+[[File:Composite_decon_xy.jpg|300px]][[File:Composite_decon_zx.jpg|140px]]
 
 ==References==
 
