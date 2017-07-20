@@ -44,7 +44,8 @@ Tracking requires an object recognition method to locate the object of interest 
 | style="padding: 5px;" | Minimum number of pixels contained in a stable region.
 |}
 
-MSER applies successive thresholds and builds a component tree as shown in the Figure (linear time citation here). If the grey level separation is small (0 - 20) more stable regions will be found, if it is high then only few regions will be found. The lifetime of each component is measured by the unstability score and is normalized between 0 and 1. For values close to 1 many regions will be deemed stable and for values close to 0 only very few extremely stable regions will be found. MSER detected regions as shown as red ellipses.
+MSER applies successive thresholds and builds a component tree as shown in the Figure (linear time citation here). If the grey level separation is small (0 - 20) more stable regions will be found, if it is high then only few regions will be found. The lifetime of each component is measured by the unstability score and is normalized between 0 and 1. For values close to 1 many regions will be deemed stable and for values close to 0 only very few extremely stable regions will be found. MSER detected regions as shown as red ellipses. The line along which each of the Microtubules lie is assumed to be the semi-major axis of the MSER ellipse.
+Optimization using Gaussian line models is done in order to localize the end points of the seeds.
 
 [[Image:GreyLevel.png|400px]]   The nodes of the tree are vertical boxes and vertical extent of the box shows the grey-level life span of each component.
 
@@ -52,3 +53,10 @@ The user can change the MSER parameters using the adjustable sliders and see the
 [[Image:SimpleStep1.png|400px]]
 [[Image:Mserdet.png|400px]]
 [[Image:Mserseeddet.png|400px]]
+
+=== Advanced Mode ===
+In this mode the user has several options of choosing their method of object recognition and seed end determination. These methods include Distance transform based watershedding followed by Hough Transform to determine the line parameters along which the seeds lie, MSER detection and a combination of MSER and Hough Transform to determine the above mentioned line parameters. 
+
+Watershed based object recognition is a method of choice for dense seed images, watershedding allows demarcation of close lying seeds, something that is not possible with MSER. Once the regions in which the Microtubules lie is determined, Line based Hough transform is performed to determine the line parameters of the Microtubules. This is needed to make an initial guess for the optimizer which then fits a Gaussian line model to localize the end points of the Microtubules.
+
+MSER based object recognition are fast methods to locate and localize the seed ends, but should only be used for sparsely populated Microtubule images. The Microtubules lie along the semi-major axis of the MSER ellipse but if this is not the case then Hough transform can be performed to determine the required axis. Following which the optimization using the Gaussian line models is done to localize the seed ends.
