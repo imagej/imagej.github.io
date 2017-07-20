@@ -41,6 +41,14 @@ The proper handling of boundary conditions is an important part of deconvolution
 
 [http://bigwww.epfl.ch/deconvolution/challenge2013/index.html?p=doc_math_rl Non-circulant Richardson Lucy]
 
+==Results==
+
+===Original===
+[[File:Composite_orig_xy.jpg|200px]][[File:Composite_orig_zx.jpg|200px]]
+
+===Deconvolved===
+[[File:Composite_decon_xy.jpg|200px]][[File:Composite_decon_zx.jpg|200px]]
+
 ==References==
 
 * T. Pietzsch, S. Preibisch, P. Tomancak and S. Saalfeld, ImgLib2 - Generic image processing in Java'', Bioinformatics, Vol.  28(22), pp. 3009-3011 (2012).
