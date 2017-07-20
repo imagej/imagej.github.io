@@ -49,6 +49,6 @@ MSER applies successive thresholds and builds a component tree as shown in the F
 [[Image:GreyLevel.png|400px]]   The nodes of the tree are vertical boxes and vertical extent of the box shows the grey-level life span of each component.
 
 The user can change the MSER parameters using the adjustable sliders and see the effect of their selection on the image. Once the Microtubules are recognized by the algorithm click on "Find endpoints" to obtain the end-points of the Microtubules on the image with sub-pixel accuracy. The found end points will be shown as green circles on the image.
-[[Image:SimpleStep1.png|500px]]
-[[Image:Mserdet.png|350px]]
-[[Image:Mserseeddet.png|300px]]
+[[Image:SimpleStep1.png|400px]]
+[[Image:Mserdet.png|400px]]
+[[Image:Mserseeddet.png|400px]]
