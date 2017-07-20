@@ -29,7 +29,7 @@ The ImageJ [[Jenkins]] polls the [http://imagej.net/notes.html ImageJ1 release n
 # Restructures the source code into a Maven project.
 #* Sources are placed in <code>src/main/java</code>.
 #* A <code>pom.xml</code> is added.
-# Commits the result to the <code>master</code> branch of the {{GitHub | org=imagej | repo=ImageJA | imagej/ImageJA repository}} on [[GitHub]].
+# Commits the result to the <code>master</code> branch of the {{GitHub | org=imagej | repo=ImageJA | label=imagej/ImageJA repository}} on [[GitHub]].
 # Triggers followup Jenkins jobs:
 #* [http://jenkins.imagej.net/job/ImageJ1-deploy/ ImageJ1-deploy], which builds and deploys the ImageJA project to the Maven Central repository (via OSS Sonatype).
 #* [http://jenkins.imagej.net/job/ImageJ1-javadoc/ ImageJ1-javadoc], which updates the {{Javadoc | project=ImageJ1}} javadoc on <code>javadoc.imagej.net</code>.
