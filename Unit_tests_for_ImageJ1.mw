@@ -1,4 +1,4 @@
-We have [[2011-10-07 - Unit tests for ImageJ 1.45|written a substantial number of unit tests]] to exercise [[ImageJ 1.x]] functionality. You can find them in the {{GitHub|org=imagej|repo=ij1-tests|label=ij1-tests repository}}:
+{{Project|ImageJ1}}We have [[2011-10-07 - Unit tests for ImageJ 1.45|written a substantial number of unit tests]] to exercise [[ImageJ 1.x]] functionality. You can find them in the {{GitHub|org=imagej|repo=ij1-tests|label=ij1-tests repository}}:
 <source lang="bash">
 git clone git://github.com/imagej/ij1-tests
 </source>
