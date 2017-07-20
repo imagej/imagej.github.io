@@ -10,6 +10,8 @@ The Microtubule tracker comes as a tri-modular tool. The first module is live tr
 == File Chooser ==
 The opening screen of the program is the file chooser where the user chooses the mode in which to run the program in and upload the image files to perform the tracking with. There are three modes in which the program can be run 1) Simple Mode, 2) Advanced Mode, 3) Batch Mode. The Simple mode gives user with some default settings with few choices to make to obtain the tracks. The Advanced mode gives user the full freedom with respect to their choices to obtain the tracks. The Batch mode is run with save parameters on a directory of Microtubule time-lapse images. 
 
+[[Image:FileChooser.png|400px]]
+
 If the user wants to run the program in Simple or Advanced Mode they have to also upload the image file and optionally a pre-processed image file. If the pre-processed image file is not uploaded this step will be carried out by the tracker internally. Pre-processed image is very crucial as the first part of the tracker is object recognition where it locates the Microtubules in the image. The recommended preprocessing for the tracker is flat-field correction followed by Median filter. The user also has to enter the SigmaX and SigmaY of the Point-Spread-Function (PSF) of the microscope used to image the Microtubules. 
 
 === Pre-Processing ===
