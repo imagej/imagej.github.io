@@ -3,7 +3,7 @@
 | software               = ImageJ
 | logo                   = [[File:imagej1-icon.png|96px]]
 | author                 = {{Person|Rasband}}
-| maintainer             = {{Person|Rasband}}<br>{{Person|Schindelin}}<br>{{Person|Rueden}}
+| maintainer             = {{Person|Rasband}}<br>{{Person|Rueden}}
 | source                 = {{GitHub | org = imagej | repo = imagej1}}
 | status                 = stable, active
 | category               = 
