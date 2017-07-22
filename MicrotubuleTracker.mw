@@ -101,5 +101,7 @@ After the user has obtained the seed ends, the next step is to track the growth 
 [[Image:SimpleMode2.png|500px]] [[Image:AdvancedMode3.png|500px]]
 
 A) For the user to select or deselect seed ends from which the growth has to be tracked (optional) in simple and advanced mode.
-B) In the simple mode the user can select the start and the end time over which the tracking has to be performed, by default the Microtubule growth is tracked from the first image in the dynamic channel till the last one. This option appears in the advanced mode in the next panel
+
+B) In the simple mode the user can select the start and the end time over which the tracking has to be performed, by default the Microtubule growth is tracked from the first image in the dynamic channel till the last one. This option appears in the advanced mode in the next panel.
+
 C) The user can either do only MSER segmentation at each time point or has the option of doing it after doing a Watershed based segmentation to demarcate close lying Microtubules. In the simple mode only MSER segmentation is performed.
