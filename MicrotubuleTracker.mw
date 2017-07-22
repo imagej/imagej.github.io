@@ -97,5 +97,5 @@ It may happen that some of the Microtubules do not lie along the major axis of t
 ==  Tracking the growing ends  ==
 
 After the user has obtained the seed ends, the next step is to track the growth emanating from the ends. At this stage the user can make a choice of deselecting some ends they do not want to be tracked or mark the random nucleated ends which they want to be tracked. To do so the user should first ascertain the time-point in the image they want to navigate to make such a selection, it can be the immediate time-point after the seed image or any other. This step is however optional, if the user does not want to make such a selection they can simply skip it. In the simple and advanced mode the panel for making this selection appears as:
-[[Image:SimpleMode2.png|500px]]
-[[Image:AdvancedMode3.png|500px]]
+
+[[Image:SimpleMode2.png|500px]] [[Image:AdvancedMode3.png|500px]]
