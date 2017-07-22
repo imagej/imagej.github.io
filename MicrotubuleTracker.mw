@@ -93,8 +93,3 @@ MSER based object recognition are fast methods to locate and localize the seed e
 It may happen that some of the Microtubules do not lie along the major axis of the ellipse, in which case the user has to select the method of MSERwHOUGH, in this method Hough transform is performed inside each of the MSER ellipses to determine the required axis, followed by optimization using the Gaussian line models to localize seed ends. In this selection the following panel appears with the user having to select a combination of parameters from above two methods.
 
 [[Image:AdvancedMode2MH.png|500px]]
-
-
-
-== Publication ==
-* {{Publication | MicrotubuleTracker}}
