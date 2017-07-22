@@ -34,7 +34,7 @@ After this the resulting blurred image has to be subtracted from the original im
 
 This mode should be used by the user if the Microtubules are not too densely packed in the image. The tracker breaks down the operation of tracking the dynamic Microtubule ends is broken into a series of short steps the user has to take. The first step is to select an output filename for their tracks and choose the directory to store these tracks in. The track files are written in TXT format in the current working directory and by default it has the name of the image that is currently being analyzed.
 
-Tracking requires an object recognition method to locate the object of interest in the image, in our case the object of interest are the Microtubules and the default algorithms to locate them on the image is Maximally Stable Extremal Regions (MSER) ( [http://www.sciencedirect.com/science/article/pii/S0262885604000435]). MSER is computed on a unsignedByteType image (Intensity levels between 0-255 ) and the following table explains the MSER parameters to be chosen in this mode.
+Tracking requires an object recognition method to locate the object of interest in the image, in our case the object of interest are the Microtubules and the default algorithms to locate them on the image is Maximally Stable Extremal Regions (MSER) ([http://www.sciencedirect.com/science/article/pii/S0262885604000435]. MSER is computed on a unsignedByteType image (Intensity levels between 0-255 ) and the following table explains the MSER parameters to be chosen in this mode.
 
 {| border="1" style="border-collapse:collapse;"
 | style="padding: 5px;" | Grey Level Separation
@@ -47,7 +47,7 @@ Tracking requires an object recognition method to locate the object of interest 
 | style="padding: 5px;" | Minimum number of pixels contained in a stable region.
 |}
 
-MSER applies successive thresholds and builds a component tree as shown in the Figure (linear time citation here). If the grey level separation is small (0 - 20) more stable regions will be found, if it is high then only few regions will be found. The lifetime of each component is measured by the unstability score and is normalized between 0 and 1. For values close to 1 many regions will be deemed stable and for values close to 0 only very few extremely stable regions will be found. MSER detected regions as shown as red ellipses. The line along which each of the Microtubules lie is assumed to be the semi-major axis of the MSER ellipse.
+MSER applies successive thresholds and builds a component tree as shown in the Figure [https://link.springer.com/chapter/10.1007/978-3-540-88688-4_14]. If the grey level separation is small (0 - 20) more stable regions will be found, if it is high then only few regions will be found. The lifetime of each component is measured by the unstability score and is normalized between 0 and 1. For values close to 1 many regions will be deemed stable and for values close to 0 only very few extremely stable regions will be found. MSER detected regions as shown as red ellipses. The line along which each of the Microtubules lie is assumed to be the semi-major axis of the MSER ellipse.
 Optimization using Gaussian line models is done in order to localize the end points of the seeds.
 
 [[Image:GreyLevel.png|400px]]   
