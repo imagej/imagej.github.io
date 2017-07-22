@@ -67,7 +67,7 @@ In this mode apart from making result filename and directory selection the user 
 
 [[Image:AdvancedMode1.png|500px]]
 
-In order to enhance the Microtubule image pixels a Canny edge detection followed by a mean filter with the radius determined by the SigmaX and SigmaY of the PSF of the microscope is use. The radius factor is a factor multiplying that radius and is user adjustable, in the simple mode this factor is 1 and is adjustable here. Increasing this parameter causes the MSER elliptical region to increase in size while decreasing it has the reverse effect.
+In order to enhance the Microtubule image pixels a Canny edge detection followed by a mean filter with the radius determined by the SigmaX and SigmaY of the PSF of the microscope is used. The radius factor is a factor multiplying that radius and is user adjustable, in the simple mode this factor is 1 and is adjustable here. Increasing this parameter causes the MSER elliptical region to increase in size while decreasing it has the reverse effect.
 
 Advanced mode comes with three object recognition algorithms, namely MSER, Watershed followed by line-Hough transform and MSER followed by line-Hough transform. 
 Watershed based object recognition is a method of choice for dense seed images, watershedding allows demarcation of close lying seeds, something that is not possible with MSER. Once the regions in which the Microtubules lie is determined, Line based Hough transform is performed to determine the line parameters of the Microtubules. This is needed to make an initial guess for the optimizer which then fits a Gaussian line model to localize the end points of the Microtubules.
