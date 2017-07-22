@@ -33,7 +33,7 @@ After this the resulting blurred image has to be subtracted from the original im
 
 === Simple Mode ===
 
-The operation of tracking the dynamic Microtubule ends is broken into a series of short steps the user has to take. The first step is to select an output filename for their tracks and choose the directory to store these tracks in. The track files are written in TXT format in the current working directory and by default it has the name of the image that is currently being analyzed.
+This mode should be used by the user if the Microtubules are not too densely packed in the image. The tracker breaks down the operation of tracking the dynamic Microtubule ends is broken into a series of short steps the user has to take. The first step is to select an output filename for their tracks and choose the directory to store these tracks in. The track files are written in TXT format in the current working directory and by default it has the name of the image that is currently being analyzed.
 
 
 
@@ -60,8 +60,10 @@ The nodes of the tree are vertical boxes and vertical extent of the box shows th
 The user can change the MSER parameters using the adjustable sliders and see the effect of their selection on the image. Once the Microtubules are recognized by the algorithm click on "Find endpoints" to obtain the end-points of the Microtubules on the image with sub-pixel accuracy. The found end points will be shown as green circles on the image.
 
 [[Image:SimpleStep1.png|400px]]
-[[Image:Mserdet.png|400px]]
-[[Image:Mserseeddet.png|400px]]
+[[Image:Mserdet.png|350px]]
+[[Image:Mserseeddet.png|350px]]
+
+The program gets all of the seed ends correctly except of the two seeds are so close that they appear to be inseparable in the image as shown above.
 
 === Advanced Mode ===
 In this mode apart from making result filename and directory selection the user also has several options of choosing their method of object recognition and seed end determination. These methods include Distance transform based watershedding followed by Hough Transform to determine the line parameters along which the seeds lie, MSER detection and a combination of MSER and Hough Transform to determine the above mentioned line parameters. 
