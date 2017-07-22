@@ -16,7 +16,6 @@ The opening screen of the program is the file chooser where the user chooses the
 
 [[Image:FileChooser.png|400px]]
 
-
 For the first time users the program has to be run in Simple or Advanced Mode before the parameters can be saved for a batch mode run. The users have to upload the image file of the time-lapse experiment and optionally a pre-processed image file. If the pre-processed image file is not uploaded this step will be carried out by the tracker internally. Pre-processed image is very crucial as the first part of the tracker is object recognition where it locates the Microtubules in the image. Such an object recognition works perfectly only on the pre-processed image. The recommended preprocessing for the tracker is flat-field correction followed by Median filter. 
 
 The user also has to enter the SigmaX and SigmaY of the Point-Spread-Function (PSF) of the microscope used to image the Microtubules in the file chooser panel. 
@@ -34,8 +33,6 @@ After this the resulting blurred image has to be subtracted from the original im
 === Simple Mode ===
 
 This mode should be used by the user if the Microtubules are not too densely packed in the image. The tracker breaks down the operation of tracking the dynamic Microtubule ends is broken into a series of short steps the user has to take. The first step is to select an output filename for their tracks and choose the directory to store these tracks in. The track files are written in TXT format in the current working directory and by default it has the name of the image that is currently being analyzed.
-
-
 
 Tracking requires an object recognition method to locate the object of interest in the image, in our case the object of interest are the Microtubules and the default algorithms to locate them on the image is Maximally Stable Extremal Regions (MSER). MSER is computed on a unsignedByteType image (Intensity levels between 0-255 ) and the following table explains the MSER parameters to be chosen in this mode.
 
@@ -75,7 +72,6 @@ In order to enhance the Microtubule image pixels a Canny edge detection followed
 Advanced mode comes with three object recognition algorithms, namely MSER, Watershed followed by line-Hough transform and MSER followed by line-Hough transform. 
 Watershed based object recognition is a method of choice for dense seed images, watershedding allows demarcation of close lying seeds, something that is not possible with MSER. Once the regions in which the Microtubules lie is determined, Line based Hough transform is performed to determine the line parameters of the Microtubules. This is needed to make an initial guess for the optimizer which then fits a Gaussian line model to localize the end points of the Microtubules.
 The drawback of watershed based method is the speed of performing Hough transform in each watershed label followed by optimization using Gaussian Line models which is immensely faster in MSER based methods, which however should be the method of choice when the Microtubules are sparsely distributed in the image. 
-
 
 If the user selects watershed followed by Hough transform the following panel would be displayed:
 
