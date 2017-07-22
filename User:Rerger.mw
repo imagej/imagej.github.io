@@ -96,6 +96,11 @@ Following is an example of the Modified Image Window (image supplied by author)
 
 	The user of the application can save results using the save as feature under the file option.  The FIJI application provides the options to save the image with a wide choice of extensions.
 
+== DEMO ==
+
+We did many experiments with the application, but to show case one such result, we have included a demo below. 
+[[File:2.jpg]] [[File:ModAE.jpg]][[File:Hist2.jpg]][[File:HistMod.jpg]]
+
 == ACKNOWLEDGEMENTS ==
 <div style="text-align: center;">
 [[File:Dr.jpg]]
