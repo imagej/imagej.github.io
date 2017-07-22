@@ -22,7 +22,9 @@ For the first time users the program has to be run in Simple or Advanced Mode be
 After running the program once and being satisfied with the parameter selection the user is offered to save the parameters for batch run. If the user clicks the button the program is closed and the parameters are saved in the IJ prefs file, please save your work before clicking this button as the parameters are only saved after the program is closed and clicking of this button triggers close of the program with all the windows open. 
 
 Now the user can run in Batch mode with saved parameters on a directory of Microtubule time-lapse images. Batch mode is run in parallel and the user gets a visual feedback of the progress of the tracker for each image file currently being operated upon.
+
 === Pre-Processing ===
+
 If the user intends to upload their own preprocessed image it is recommended to do a flat field correction. To do this correction in Fiji, open your image and duplicate it by selecting {{bc | Image | Duplicate}} from the Fiji menu and click Duplicate Stack. On the duplicated image apply a Gaussian blur of radius about a tenth of the size of the image, to do so click {{bc | Process | Filters | Gaussian Blur}} and enter the radius of the blur, for example if the image is 512 by 512 pixels the blur radius would be 50. 
 
 After this the resulting blurred image has to be subtracted from the original image, to do so click  {{bc | Process | Image Calculator}} In that menu you have to choose Image1, which is the original image and image2, which is the resulting image after applying the Gaussian Blur in the previous step. The operation to be chosen in the menu is "Subtract" and check the box "Create new window". This operation opens a new stack of flat field corrected image. In order to enhance the edges of the Microtubules we also apply a Median filter, to do so click {{bc | Process | Filters | Median FIlter}} and enter the radius of 1 or 2 pixels. Now you have created the pre-processed image to be uploaded into the tracker. Alternatively the tracker performs these operations internally if you do not upload such a pre-processed image.
@@ -49,9 +51,12 @@ Tracking requires an object recognition method to locate the object of interest 
 MSER applies successive thresholds and builds a component tree as shown in the Figure (linear time citation here). If the grey level separation is small (0 - 20) more stable regions will be found, if it is high then only few regions will be found. The lifetime of each component is measured by the unstability score and is normalized between 0 and 1. For values close to 1 many regions will be deemed stable and for values close to 0 only very few extremely stable regions will be found. MSER detected regions as shown as red ellipses. The line along which each of the Microtubules lie is assumed to be the semi-major axis of the MSER ellipse.
 Optimization using Gaussian line models is done in order to localize the end points of the seeds.
 
-[[Image:GreyLevel.png|400px]]   The nodes of the tree are vertical boxes and vertical extent of the box shows the grey-level life span of each component.
+[[Image:GreyLevel.png|400px]]   
+
+The nodes of the tree are vertical boxes and vertical extent of the box shows the grey-level life span of each component.
 
 The user can change the MSER parameters using the adjustable sliders and see the effect of their selection on the image. Once the Microtubules are recognized by the algorithm click on "Find endpoints" to obtain the end-points of the Microtubules on the image with sub-pixel accuracy. The found end points will be shown as green circles on the image.
+
 [[Image:SimpleStep1.png|400px]]
 [[Image:Mserdet.png|400px]]
 [[Image:Mserseeddet.png|400px]]
