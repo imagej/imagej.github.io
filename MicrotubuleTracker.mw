@@ -60,7 +60,7 @@ The user can change the MSER parameters using the adjustable sliders and see the
 [[Image:Mserdet.png|350px]]
 [[Image:Mserseeddet.png|350px]]
 
-The program gets all of the seed ends correctly except of the two seeds are so close that they appear to be inseparable in the image as shown above.
+The program gets all of the seed ends correctly except the seeds that overlap and appear to be inseparable, as shown in the example image above.
 
 === Advanced Mode ===
 In this mode apart from making result filename and directory selection the user also has several options of choosing their method of object recognition and seed end determination. These methods include Distance transform based watershedding followed by Hough Transform to determine the line parameters along which the seeds lie, MSER detection and a combination of MSER and Hough Transform to determine the above mentioned line parameters. 
