@@ -13,7 +13,7 @@
 == INTRODUCTION ==
 
 
-FUZZY SET, the application, has evolved from developing a method to transform images as a class project into creating a “plugin” for FIJI users.  We include a brief overview of the development and application for the plugin that we will refer to as just “Fuzzy Set”.  For those users who might want to explore the theory behind the application, we refer to the text Digital Image Processing, by Rafael Gonzalez   Users must also refer to the FIJI website  for using more advanced features of the FIJI application.  
+FUZZY SET, the application, has evolved from developing a method to transform images as a class project into creating a “plugin” for FIJI users.  We include a brief overview of the development and application for the plugin that we will refer to as just “Fuzzy Set”.  For those users who might want to explore the theory behind the application, we refer to the text Digital Image Processing, by Rafael Gonzalez. Users must also refer to the FIJI website  for using more advanced features of the FIJI application.  
 
 We began developing a GUI based java application separate from the FIJI platform, but soon discovered the idea of creating a “plugin” as we explored the powerful features of FIJI.  We found that the ability to make changes was efficient and simple.  FIJI is an open source application that encourages contributions by its users.  Being a java friendly application provided an easy platform for developing and modifying the code.  
 	Our application employs the principle of fuzzy sets to transform pixels with the hope of enhancing an image.  The Fuzzy Set plugin inputs the pixels from an image into an array.  The user provides, through the use of an input window, numbers that correspond to values (except z0) in the following equation.
@@ -99,7 +99,11 @@ Following is an example of the Modified Image Window (image supplied by author)
 == DEMO ==
 
 We did many experiments with the application, but to show case one such result, we have included a demo below. 
-[[File:2.jpg]] [[File:ModAE.jpg]][[File:Hist2.jpg]][[File:HistMod.jpg]]
+[[File:2.jpg]] [[File:ModAE.jpg]]
+<div>
+[[File:Hist2.jpg]] Histogram of Image Before Transformation
+</div>
+[[File:HistMod.jpg]] Histogram of Image After Transformation
 
 == ACKNOWLEDGEMENTS ==
 <div style="text-align: center;">
