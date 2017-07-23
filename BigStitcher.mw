@@ -38,9 +38,14 @@ The source code is available {{GitHub|org=PreibischLab|repo=BigStitcher}}, pleas
 *Specify the XML filename in the XML filename field
 
 * Define dataset using the '''Auto from list of files (LOCI Biofomrats)'''
-If you selected the wildacard (*) you can use the wildcard to define your filename pattern. For example: "spimDataset_TL*_Channel*_Ilumination*_Timepoint*_Angle*.tif"
-In the next windows you can assign each wildcard to the corresponding varaible
+*If you selected the wildacard option (*) you can use awildcard to define your filename pattern. For example: "spimDataset_TL*_Channel*_Ilumination*_Timepoint*_Angle*.tif"
+*In the next window you can assign each wildcard to the corresponding varaible:
 **TimePoints
+**Channels
+**Illuminations
+**Tiles
+**Angles
+*Once you have specified the correct pattern of your dataset press "OK"
 
 ==== Opening an existing project ====
 *Open BigStitcher from the Plugin menu. In the " Select dataset for Stitching Explorer" window browse for the XML file of the respective HDF5 file you want to open.
