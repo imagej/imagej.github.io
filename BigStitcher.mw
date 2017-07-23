@@ -46,6 +46,7 @@ The source code is available {{GitHub|org=PreibischLab|repo=BigStitcher}}, pleas
 **Tiles
 **Angles
 *Once you have specified the correct pattern of your dataset press "OK"
+* In the "Saving options" you can specify the imglib2 conainer to be used (the program will be automatically select the appropriate option) and you can select the path where the dataset will be stored. Finnaly selecto "resave as HDF5" and click "OK" to finish creating your dataset.
 
 ==== Opening an existing project ====
 *Open BigStitcher from the Plugin menu. In the " Select dataset for Stitching Explorer" window browse for the XML file of the respective HDF5 file you want to open.
