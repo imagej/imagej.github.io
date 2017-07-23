@@ -22,7 +22,7 @@ The source code is available {{GitHub|org=PreibischLab|repo=BigStitcher}}, pleas
 ==== Definign a new dataset ====
 
 ==== Opening an existing project ====
-*Open BigStitcher from the Plugin menu. In the " Select dataset for Stitching Explorer" windows browse for the XML file of the respective HDF5 file you want to open.
+*Open BigStitcher from the Plugin menu. In the " Select dataset for Stitching Explorer" window browse for the XML file of the respective HDF5 file you want to open.
 
 === UI Overview ===
 
