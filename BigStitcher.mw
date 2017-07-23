@@ -24,16 +24,16 @@ The source code is available {{GitHub|org=PreibischLab|repo=BigStitcher}}, pleas
 *Open BigStitcher from the Plugin menu. In the " Select dataset for Stitching Explorer" select "define a new dataset". 
 
 There are five types of datasets:
-* Image Stacks (LOCI Bioformats)
-** to open non TIFF images
-* Image Stacks (ImageJ Opener)
-** use this to open TIFF and zipped TIFFS
-* Zeiss Lightsheet Z.1 Dataset
-** open Zeiss data
-* Holographic Imaging Dataset
-** open Holographic data
-* Auto from list of files (LOCI Biofomrats)
-** open data by using wildcards or manaully choosing a folder
+** Image Stacks (LOCI Bioformats)
+*** to open non TIFF images
+** Image Stacks (ImageJ Opener)
+*** use this to open TIFF and zipped TIFFS
+** Zeiss Lightsheet Z.1 Dataset
+*** open Zeiss data
+** Holographic Imaging Dataset
+*** open Holographic data
+** Auto from list of files (LOCI Biofomrats)
+*** open data by using wildcards or manaully choosing a folder
 
 *Specify the XML filename in the XML filename field
 
