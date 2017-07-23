@@ -23,8 +23,8 @@ The source code is available {{GitHub|org=PreibischLab|repo=BigStitcher}}, pleas
 
 *Open BigStitcher from the Plugin menu. In the " Select dataset for Stitching Explorer" select "define a new dataset". 
 
-There are five types of datasets:
-*** Image Stacks (LOCI Bioformats)
+*There are five types of datasets:
+** Image Stacks (LOCI Bioformats)
 *** to open non TIFF images
 ** Image Stacks (ImageJ Opener)
 *** use this to open TIFF and zipped TIFFS
