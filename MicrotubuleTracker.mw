@@ -125,7 +125,7 @@ In the example images below we show the implication of the user deselecting some
 === Visual feedback during tracking ===
 After confirming the seed ends the user can select certain optimization options as per their discretion or leave them unchanged and start the tracking. During tracking the the user would see the program detecting the Microtubules each frame and for the seed ends that were marked to be tracked would appear inside yellow MSER ellipses and a crosshair showing the current detected position of the seed end would also be marked. A very fine black line connecting the crosshair across all frames would also be drawn "on the fly". 
 
-[[Image:cross2.png|400px]]
+[[Image:cross3.png|400px]]
 
 === End of tracking  ===
 At the end of tracking a "Success" frame would appear telling the user that the program has successfully completed the execution. It will also display a final results stack which show the seed ends the program found over frames, a display of actual tracks is also shown superimposed on each Microtubule it tracked.
