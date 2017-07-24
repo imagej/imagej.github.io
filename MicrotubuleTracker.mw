@@ -95,6 +95,7 @@ It may happen that some of the Microtubules do not lie along the major axis of t
 [[Image:AdvancedMode2MH.png|500px]]
 
 As an example we take an actual double channel image and detect it's seed ends using each of the three object recognition algorithms and show the resulting seed ends they detect.
+[[Image:Seeds.png|500px]]
 
 ==  Tracking the growing ends  ==
 
