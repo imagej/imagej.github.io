@@ -103,8 +103,8 @@ As an example we take an actual double channel image and detect it's seed ends u
 In this example we choose dense seed image and show that watershed based Hough transform gets it right whereas MSER gets a couple of closely lying seed ends wrong.
 
 [[Image:MSERwrong.png|400px]]
+[[Image:seedwaterright.jpg|400px]]
 [[Image:waterright.png|400px]]
-
 
 ==  Tracking the growing ends  ==
 
