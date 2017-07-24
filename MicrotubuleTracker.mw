@@ -130,4 +130,6 @@ After confirming the seed ends the user can select certain optimization options 
 === End of tracking  ===
 At the end of tracking a "Success" frame would appear telling the user that the program has successfully completed the execution. It will also display a final results stack which show the seed ends the program found over frames, a display of actual tracks is also shown superimposed on each Microtubule it tracked.
 
+In the image below we show the tracks of the Microtubule found by the tracker superimposed on the stack of Microtubule image, not all Microtubules were tracked.
+
 [[Image:EndTrack.png|400px]]
