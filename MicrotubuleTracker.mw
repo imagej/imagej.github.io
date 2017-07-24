@@ -94,9 +94,17 @@ It may happen that some of the Microtubules do not lie along the major axis of t
 
 [[Image:AdvancedMode2MH.png|500px]]
 
-As an example we take an actual double channel image and detect it's seed ends using each of the three object recognition algorithms and show the resulting seed ends they detect.
+As an example we take an actual double channel image and detect it's seed ends using MSER and Watershed based Hough transform are shown. Also shown is the watershed image obtained by using a certain threshold value which demarcates certain seeds wrongly, this effect is due to the non-uniform labelling density of the fluorophores across the Microtubule which at a certain threshold level appear as two different Microtubules. In this example watershed based Hough transform gets it wrong and MSER based methods get the seed ends correctly.
 
 [[Image:Seeds.png|400px]]
+[[Image:seedwater.png|400px]]
+[[Image:seeddethough.png|400px]]
+
+In this example we choose dense seed image and show that watershed based Hough transform gets it right whereas MSER gets it wrong.
+
+[[Image:MSERwrong.png|400px]]
+[[Image:waterright.png|400px]]
+
 
 ==  Tracking the growing ends  ==
 
