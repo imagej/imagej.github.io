@@ -130,3 +130,10 @@ At the end of tracking a "Success" frame would appear telling the user that the 
 In the image below we show the tracks of the Microtubule found by the tracker superimposed on the stack of Microtubule image, not all Microtubules were tracked.
 
 [[Image:EndTrack.png|400px]]
+
+== Trajectory analysis using RANSAC ==
+The tracker generates TXT files containing co-ordinates, length, per frame incremental length for each frame. Using this information we can obtain the dynamic parameters of the Microtubule. This is the second module of the program. When the user wishes to carry out such an analysis they start the RANSAC rate analyzer plugin. The first screen that appears is shown below
+
+[[Image:ransacfile.png|400px]]
+
+For the first time users, select one of the track files for analysis, after a successful completion of the analysis the parameters used for that can be stored for a batch run, which will use the same parameter set on the whole directory of MTV tracker generated files and store the growth/shrinkage rates and catastrophe and rescue frequencies to files.
