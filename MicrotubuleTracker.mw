@@ -140,3 +140,12 @@ For the first time users, select one of the track files for analysis, after a su
 Once the user chooses the file to do the analysis the following panel shows up 
 
 [[Image:RansacSecond.png|500px]]
+
+RANSAC is a method to fit a model on the data. The data contains outliers and the model parameters have to be determined by removing these outliers. RANSAC finds the segments which match our model and removes them from further analysis, the procedure stops when the iterative procedure can not find any more segments to fit on the data. RANSAC needs some parameter set which we have as sliders on our interactive tool. 
+
+A) The sliders for determining RANSAC parameters, Max Error is used to distinguish between inliers and outliers for a regularized polynomial fit on the data. Only if the distance of the data points to the polynomial is below this error value will those points be considered as inliers. Min #Points are the minimum time-points that have to be present on a segment. Max Gap is the maximum gap between two segments. 
+B) To find the inliers we use a polynomial function and fit it on the data, the linearity fraction can be chosen by the user to make the polynomial a regularized polynomial to find the inliers. Once the inliers have been found a line is fitted onto them within the min and the max value of the slope parameters that can be chosen by the user. As the catastrophes occur very fast the user has to choose a minimum duration in time for an event to be considered a catastrophe. A minimum of three points are needed to fit any function to the data and especially for catastrophes this may not be always the case as shown in the figure below.
+
+[[Image:catmiss.png|500px]]
+
+The two catastrophes were missed here as there were not even three timepoints present on which a function could be fit, the plot gives a continuous appearance as it interpolates between missing data but that does not mean that there are actual data points present there.
