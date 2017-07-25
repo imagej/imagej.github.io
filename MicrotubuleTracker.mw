@@ -136,4 +136,7 @@ The tracker generates TXT files containing co-ordinates, length, per frame incre
 
 [[Image:ransacfile.png|400px]]
 
-For the first time users, select one of the track files for analysis, after a successful completion of the analysis the parameters used for that can be stored for a batch run, which will use the same parameter set on the whole directory of MTV tracker generated files and store the growth/shrinkage rates and catastrophe and rescue frequencies to files.
+For the first time users, select one of the track files for analysis, after a successful completion of the analysis the parameters used for that can be stored for a batch run, which will use the same parameter set on the whole directory of MTV tracker generated files and store the growth/shrinkage rates and catastrophe and rescue frequencies to files. 
+Once the user chooses the file to do the analysis the following panel shows up 
+
+[[Image:RansacSecond.png|400px]]
