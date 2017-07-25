@@ -139,7 +139,7 @@ The tracker generates TXT files containing co-ordinates, length, per frame incre
 For the first time users, select one of the track files for analysis, after a successful completion of the analysis the parameters used for that can be stored for a batch run, which will use the same parameter set on the whole directory of MTV tracker generated files and store the growth/shrinkage rates and catastrophe and rescue frequencies to files. 
 Once the user chooses the file to do the analysis the following panel shows up 
 
-[[Image:RansacSecond.png|500px]]
+[[Image:RansacSecond.png|400px]]
 
 RANSAC is a method to fit a model on the data. The data contains outliers and the model parameters have to be determined by removing these outliers. RANSAC finds the segments which match our model and removes them from further analysis, the procedure stops when the iterative procedure can not find any more segments to fit on the data. RANSAC needs some parameter set which we have as sliders on our interactive tool. 
 
