@@ -74,6 +74,7 @@ The drawback of watershed based method is the speed of performing Hough transfor
 If the user selects watershed followed by Hough transform the following panel would be displayed:
 
 [[Image:AdvancedMode2Hough.png|500px]] 
+
 Adjustable sliders here include:
 
 A) Threshold value to be used to create a binary image to perform watershedding. 
