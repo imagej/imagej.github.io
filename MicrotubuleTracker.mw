@@ -1,4 +1,4 @@
-[[Image:inilogo.png|right|320px]]
+[[Image:newlogo.png|right|320px]]
 {{ComponentStats:net.imagej:MTV_Tracker}}
 == Description ==
 The Microtubule Tracker is a tool to track and analyze the Microtubules that grow and shrink as filaments. It was developed for experiments done in-vitro with a TIRF microscope with seeded Microtubules which grow and shrink over time. 
