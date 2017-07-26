@@ -23,8 +23,8 @@ The source code is available {{GitHub|org=PreibischLab|repo=BigStitcher}}, pleas
 
 *How to import data and resave as HDF5
 
-==== '''Opening an existing project''' ====
-*Open BigStitcher from the Plugin menu. In the " Select dataset for Stitching Explorer" window browse for the XML file of the respective HDF5 file you want to open.
+==== [[BigStitcher_Open_existing|Opening an existing project]] ====
+*How to open existing project
 
 === UI Overview ===
 
