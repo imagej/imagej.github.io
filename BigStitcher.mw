@@ -19,7 +19,7 @@ The source code is available {{GitHub|org=PreibischLab|repo=BigStitcher}}, pleas
 
 === Importing Data ===
 
-==== '''[BS_DefineDataset|Defining a new dataset]''' ====
+==== '''[[BS_DefineDataset|Defining a new dataset]]''' ====
 
 *Open BigStitcher from the Plugin menu. In the " Select dataset for Stitching Explorer" select "define a new dataset". 
 
