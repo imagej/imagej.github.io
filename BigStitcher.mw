@@ -21,32 +21,7 @@ The source code is available {{GitHub|org=PreibischLab|repo=BigStitcher}}, pleas
 
 ==== '''[[BigStitcher_Define_new_dataset|Defining a new dataset]]''' ====
 
-*Open BigStitcher from the Plugin menu. In the " Select dataset for Stitching Explorer" select "define a new dataset". 
-
-*There are five types of datasets:
-** Image Stacks (LOCI Bioformats)
-*** to open non TIFF images
-** Image Stacks (ImageJ Opener)
-*** use this to open TIFF and zipped TIFFS
-** Zeiss Lightsheet Z.1 Dataset
-*** open Zeiss data
-** Holographic Imaging Dataset
-*** open Holographic data
-** Auto from list of files (LOCI Biofomrats)
-*** open data by using wildcards or manually choosing a folder
-
-*Specify the XML filename in the XML filename field
-
-* Define dataset using the '''Auto from list of files (LOCI Biofomrats)'''
-*If you selected the wildcard option (*) you can use a wildcard to define your filename pattern. For example: "spimDataset_TL*_Channel*_Ilumination*_Timepoint*_Angle*.tif"
-*In the next window you can assign each wildcard to the corresponding varaible:
-**TimePoints
-**Channels
-**Illuminations
-**Tiles
-**Angles
-*Once you have specified the correct pattern of your dataset press "OK"
-* In the "Saving options" you can specify the imglib2 container to be used (the program will be automatically select the appropriate option) and you can select the path where the dataset will be stored. Finally select "resave as HDF5" and click "OK" to finish creating your dataset.
+*How to import data and resave as HDF5
 
 ==== '''Opening an existing project''' ====
 *Open BigStitcher from the Plugin menu. In the " Select dataset for Stitching Explorer" window browse for the XML file of the respective HDF5 file you want to open.
