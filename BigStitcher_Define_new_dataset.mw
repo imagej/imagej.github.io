@@ -1,14 +1,12 @@
 *Open BigStitcher from the Plugin menu. In the " Select dataset for Stitching Explorer" select "define a new dataset". 
 [[File:BigStitcher_Import_1.png|center]]
-*There are five types of datasets:
+*Select the type of multi-view dataset
+ [[File:BigStitcher_Import_2.png|center]]
+*BigStitcher can recognize different types of datasets:
 ** Image Stacks (LOCI Bioformats)
 *** to open non TIFF images
-** Image Stacks (ImageJ Opener)
-*** use this to open TIFF and zipped TIFFS
 ** Zeiss Lightsheet Z.1 Dataset
-*** open Zeiss data
-** Holographic Imaging Dataset
-*** open Holographic data
+*** opens Zeiss data
 ** Auto from list of files (LOCI Biofomrats)
 *** open data by using wildcards or manually choosing a folder
 
