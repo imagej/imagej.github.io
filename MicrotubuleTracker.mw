@@ -114,7 +114,7 @@ A) For the user to select or deselect seed ends from which the growth has to be 
 
 B) In the simple mode the user can select the start and the end time over which the tracking has to be performed, by default the Microtubule growth is tracked from the first image in the dynamic channel till the last one. This option appears in the advanced mode in the next panel.
 
-C) The user can either do only MSER segmentation at each time point or has the option of doing it after doing a Watershed based segmentation to demarcate close lying Microtubules. In the simple mode only MSER segmentation is performed.
+C) The user can either do only MSER segmentation at each time point or has the option of doing it after doing a Watershed based segmentation to demarcate close lying Microtubules. In the simple mode only MSER segmentation is performed. In the video tutorial [See the tutorial here: https://youtu.be/DWlMKIQyDQU] the user can make themselves familiar with using the advanced mode features to correctly handle colliding Microtubules.
 
 In the example images below we show the implication of the user deselecting some seed ends from which they do not wish to track the growth. By doing a left click the green ends are deselected and become pink, if some end was deselected by mistake a shift+left click can reselect it. If the user wishes to make a selection that is not a detection by the program an alt+shift+left click would mark a user selected seed in orange. After the user confirms the selection MSER ellipses around the seeds to be tracked will always be marked yellow and other stable regions will be marked red.
 
