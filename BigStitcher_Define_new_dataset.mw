@@ -1,5 +1,5 @@
 *Open BigStitcher from the Plugin menu. In the " Select dataset for Stitching Explorer" select "define a new dataset". 
-[[File:BigStitcher_Import_1.png]]
+[[File:BigStitcher_Import_1.png|center]]
 *There are five types of datasets:
 ** Image Stacks (LOCI Bioformats)
 *** to open non TIFF images
