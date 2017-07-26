@@ -420,7 +420,8 @@
 | journal = Bioinformatics
 | url = https://academic.oup.com/bioinformatics/article-abstract/doi/10.1093/bioinformatics/btx180/3092362/Trainable-Weka-Segmentation-a-machine-learning
 | title = Trainable Weka Segmentation: a machine learning tool for microscopy pixel classification.
-| volume = Bioinformatics btx180
+| volume = 33
+| number = 15
 | publisher=Oxford Univ Press
 | doi = 10.1093/bioinformatics/btx180
 | pmid = 28369169}} ({{Scholar | cluster=12995971888361615836}}).
