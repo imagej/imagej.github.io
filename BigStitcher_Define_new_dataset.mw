@@ -1,6 +1,6 @@
 *Open BigStitcher from the Plugin menu. In the " Select dataset for Stitching Explorer" select "define a new dataset". 
 [[File:BigStitcher_Import_1.png|center]]
-*Select the type of multi-view dataset
+*Select the type of multi-view dataset and specify desired filename
  [[File:BigStitcher_Import_2.png|center]]
 *BigStitcher can recognize different types of datasets:
 ** Image Stacks (LOCI Bioformats)
@@ -9,8 +9,6 @@
 *** opens Zeiss data
 ** Auto from list of files (LOCI Biofomrats)
 *** open data by using wildcards or manually choosing a folder
-
-*Specify the XML filename in the XML filename field
 
 * Define dataset using the '''Auto from list of files (LOCI Biofomrats)'''
 *If you selected the wildcard option (*) you can use a wildcard to define your filename pattern. For example: "spimDataset_TL*_Channel*_Ilumination*_Timepoint*_Angle*.tif"
