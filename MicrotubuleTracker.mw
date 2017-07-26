@@ -132,6 +132,11 @@ In the image below we show the tracks of the Microtubule found by the tracker su
 
 [[Image:EndTrack.png|400px]] [[Image:SUM_Stackcollide.png|400px]]
 
+
+=== Track Videos ===
+
+[[Image:resultsexample.avi|400px]] [[Image:CollidingMT.avi|400px]]
+
 == Trajectory analysis using RANSAC ==
 The tracker generates TXT files containing co-ordinates, length, per frame incremental length for each frame. Using this information we can obtain the dynamic parameters of the Microtubule. This is the second module of the program. When the user wishes to carry out such an analysis they start the RANSAC rate analyzer plugin. The first screen that appears is shown below
 
