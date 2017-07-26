@@ -19,7 +19,7 @@ The source code is available {{GitHub|org=PreibischLab|repo=BigStitcher}}, pleas
 
 === Importing Data ===
 
-==== '''[[BigStitcher_Define_new_dataset|Defining a new dataset]]''' ====
+==== [[BigStitcher_Define_new_dataset|Defining a new dataset]] ====
 
 *How to import data and resave as HDF5
 
