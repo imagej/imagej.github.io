@@ -15,15 +15,18 @@ Define dataset using the '''Auto from list of files (LOCI Bioformats)'''
 *Choose if you want to select you files using a wildcard or all files in a specific folder. If you selected the wildcard option (*) you can use a wildcard to define your filename pattern.
 [[File:BigStitcher_import_3.png|center]] 
 For example: "spimDataset_TL*_Channel*_Ilumination*_Timepoint*_Angle*.tif"
-*In the next window you can assign each wildcard to the corresponding varaible:
+
+[[File:BigStitcher_import_4.png|center]]
+In the exapmple above the wildcard was used to load only all files named "D3956_HHHEGFP_*". In this case 2 files where found in the directory with this pattern.
+*BigStitcher will try to automatically to assign the right attributes found in the file. You can also assign the correct value of the wildcards you specified before. these can be:
 **TimePoints
 **Channels
 **Illuminations
 **Tiles
 **Angles
-[[File:BigStitcher_import_4.png|center]]
-In the exapmple above the wildcard was used to load only all files named "D3956_HHHEGFP_*".
-*
-* In the "Saving options" you can specify the imglib2 container to be used (the program will be automatically select the appropriate option) and you can select the path where the dataset will be stored.
 [[File:BigStitcher_import_5.png|center]] 
-Finally select "resave as HDF5" and click "OK" to finish creating your dataset.
+For the exapmple above the numerical pattern represents different angles.
+* In the "Saving options" you can specify the imglib2 container to be used (the program will be automatically select the appropriate option) and you can select the path where the dataset will be stored.
+[[File:BigStitcher_import_6.png|center]] 
+*Now, you can select to "resave as HDF5" or continue to view you dataset in the BigDataViewer. We recommend to resave the data as HDF5 before continuing.
+[[File:BigStitcher_import_7.png|center]]
