@@ -10,7 +10,8 @@
 ** Auto from list of files (LOCI Biofomrats)
 *** open data by using wildcards or manually choosing a folder
 
-* Define dataset using the '''Auto from list of files (LOCI Biofomrats)'''
+Define dataset using the '''Auto from list of files (LOCI Bioformats)'''
+----
 *If you selected the wildcard option (*) you can use a wildcard to define your filename pattern.
 [[File:BigStitcher_import_3.png|center]] 
 For example: "spimDataset_TL*_Channel*_Ilumination*_Timepoint*_Angle*.tif"
