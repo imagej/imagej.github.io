@@ -1,0 +1,19 @@
+
+== Citation ==
+Please note that the SPIM registration plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
+
+<will be released soon>
+
+==Introduction & Overview == 
+
+What is radial symmetry?
+How is it combined with the outlier removal (RANSAC)?  
+
+== Detailed Tutorial ==
+
+- 2 different modes to run the program.
+- Why do you have the parameters?
+- How you can use them?
+- What type of images is supported at the moment?
+
+== Cluster processing ==
