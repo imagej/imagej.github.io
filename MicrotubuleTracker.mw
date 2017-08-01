@@ -140,11 +140,11 @@ In the image below we show the tracks of the Microtubule found by the tracker su
 == Trajectory analysis using RANSAC ==
 The tracker generates TXT files containing co-ordinates, length, per frame incremental length for each frame. Using this information we can obtain the dynamic parameters of the Microtubule. This is the second module of the program. RANSAC is a method to fit a model on the data. The data contains outliers and the model parameters have to be determined by removing these outliers. RANSAC finds the segments which match our model and removes them from further analysis, the procedure stops when the iterative procedure can not find any more segments to fit on the data. RANSAC needs some parameter set which we have as sliders on our interactive tool. When the user wishes to carry out such an analysis they start the RANSAC rate analyzer plugin. The first screen that appears is shown below
 
-[[Image:ransacfile.png|400px]]
+[[Image:ransacfile.png|600px]]
 
 For the first time users, select one of the track files for analysis using button A or upload a directory of files using button B. If the user chooses option B they will see a list of MTV tracker generated files in a table. They can single click on a file to obtain the length versus time plot along with RANSAC fits using the default parameters. If the default parameters work well user can click on a file and then save the rates and frequencies, which will also appear as a results table. Two results table are displayed, one that contains the start and end time of an event with measured rate for the current working file and other one containing average growth/shrink velocities and catastrophe and rescue frequencies computed from each file.
 
-[[Image:RansacFirst.png|400px]]
+[[Image:ransacfirst.png|400px]]
 
 If the default parameters do not work well, the user can click next and a frame with RANSAC parameter selection options will be shown.
 
@@ -153,12 +153,8 @@ If the default parameters do not work well, the user can click next and a frame 
 
 
 A) The sliders for determining RANSAC parameters, Max Error is used to distinguish between inliers and outliers for a regularized polynomial fit on the data. Only if the distance of the data points to the polynomial is below this error value will those points be considered as inliers. Min #Points are the minimum time-points that have to be present on a segment. Max Gap is the maximum gap between two segments. 
-B) To find the inliers we use a polynomial function and fit it on the data, the linearity fraction can be chosen by the user to make the polynomial a regularized polynomial to find the inliers. Once the inliers have been found a line is fitted onto them within the min and the max value of the slope parameters that can be chosen by the user. As the catastrophes occur very fast the user has to choose a minimum duration in time for an event to be considered a catastrophe. A minimum of three points are needed to fit any function to the data and especially for catastrophes this may not be always the case as shown in the figure below.
+B) To find the inliers we use a polynomial function and fit it on the data, the linearity fraction can be chosen by the user to make the polynomial a regularized polynomial to find the inliers. Once the inliers have been found a line is fitted onto them within the min and the max value of the slope parameters that can be chosen by the user. As the catastrophes occur very fast the user has to choose a minimum duration in time for an event to be considered a catastrophe. A minimum of three points are needed to fit any function to the data and especially for catastrophes this may not be always the case as shown in the figure below. Also shown is an example with rescues.
 
-[[Image:catmiss.png|500px]]
+[[Image:catmiss.png|500px]][[Image:rescueposter.png|500px]]
 
-The two catastrophes were missed here as there were not even three timepoints present on which a function could be fit, the plot gives a continuous appearance as it interpolates between missing data but that does not mean that there are actual data points present there.
-
-Another example with rescues is shown below.
-
-[[Image:rescueposter.png|500px]]
+The two catastrophes were missed in the left figure as there were not even three timepoints present on which a function could be fit, the plot gives a continuous appearance as it interpolates between missing data but that does not mean that there are actual data points present there.
