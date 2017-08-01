@@ -140,11 +140,11 @@ In the image below we show the tracks of the Microtubule found by the tracker su
 == Trajectory analysis using RANSAC ==
 The tracker generates TXT files containing co-ordinates, length, per frame incremental length for each frame. Using this information we can obtain the dynamic parameters of the Microtubule. This is the second module of the program. RANSAC is a method to fit a model on the data. The data contains outliers and the model parameters have to be determined by removing these outliers. RANSAC finds the segments which match our model and removes them from further analysis, the procedure stops when the iterative procedure can not find any more segments to fit on the data. RANSAC needs some parameter set which we have as sliders on our interactive tool. When the user wishes to carry out such an analysis they start the RANSAC rate analyzer plugin. The first screen that appears is shown below
 
-[[Image:ransacfile.png|600px]]
+[[Image:ransacfile.png|500px]]
 
 For the first time users, select one of the track files for analysis using button A or upload a directory of files using button B. If the user chooses option B they will see a list of MTV tracker generated files in a table. They can single click on a file to obtain the length versus time plot along with RANSAC fits using the default parameters. If the default parameters work well user can click on a file and then save the rates and frequencies, which will also appear as a results table. Two results table are displayed, one that contains the start and end time of an event with measured rate for the current working file and other one containing average growth/shrink velocities and catastrophe and rescue frequencies computed from each file.
 
-[[Image:ransacfirst.png|400px]]
+[[Image:ransacfirst.png|500px]]
 
 If the default parameters do not work well, the user can click next and a frame with RANSAC parameter selection options will be shown.
 
