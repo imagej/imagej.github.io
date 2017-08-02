@@ -161,6 +161,9 @@ B) To find the inliers we use a polynomial function and fit it on the data, the 
 
 The two catastrophes were missed in the left figure as there were not even three timepoints present on which a function could be fit, the plot gives a continuous appearance as it interpolates between missing data but that does not mean that there are actual data points present there.
 
+=== Statistical Analysis ===
+When running in table mode the user would also have the opportunity of obtaining length and lifetime distribution of the Microtubules they analyzed. Once the useres have gone through the list of the files to be analyzed and obtained the rates and frequencies, they can click "Compute Length and Lifetime distribution".
+
 == Batch Modes ==
 
 Both modules of the tracker come with batch modes. For module 1 a parallel batch mode analyzer option exists. To analyze your videos in batch mode select run in batch mode after you have saved the parameters by running in a serial mode before. Start the tracker by selecting: {{bc | Plugins | MTV Tracker | Microtubule Velocity Tracker (Double Channel)}} (for double channel images) and click "Run in Batch Mode", the following screen appears:
