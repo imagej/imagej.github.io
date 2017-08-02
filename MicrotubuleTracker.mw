@@ -186,3 +186,9 @@ The user should make a directory of the tif files to be batch processed and sele
 As an example we made a directory containing 4 TIF files and batch processed them in parallel, the following image shows the visual feedback the user would get in such a case. This mode runs without user intervention and user can zoom into the images anytime.
 
 [[Image:parallel.png|800px]]
+
+Batch mode also exists for the second module of the program, to use this mode the user has to save the parameters for RANSAC after running it on single file or on a batch of files.  Then if the user selects "Run in Batch Mode" in the Ransac part of the tracker the following window opens:
+
+[[Image:ransacbatch.png|800px]]
+
+Once the user selects the directory of MTV tracker generated TXT files, the program will do Ransac fits on its own and generate the length and lifetime distribution as well.
