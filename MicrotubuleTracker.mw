@@ -164,3 +164,5 @@ The two catastrophes were missed in the left figure as there were not even three
 == Batch Modes ==
 
 The first module of the tracker also comes with a parallel batch mode analyzer option. To analyze your videos in batch mode select run in batch mode after you have saved the parameters by running in a serial mode before. Start the tracker by selecting: {{bc | Plugins | MTV Tracker | Microtubule Velocity Tracker (Double Channel)}} and click "Run in Batch Mode", the following screen appears:
+
+[[Image:batch.png|500px]]
