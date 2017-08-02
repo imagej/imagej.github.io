@@ -100,26 +100,3 @@ For [http://loci.wisc.edu/software LOCI software], ''excluding'' collaborations 
 | [[Icy]]: an open community platform for bioimage informatics.
 | [http://groups.google.com/group/icy-software Archives]
 |}
-
-== ImageJ development ==
-
-{| class="wikitable" style="width: 100%"
-|-
-! style="width: 120px" | List
-! Description
-! style="width: 100px" | Archives
-|-
-| valign="top" |
-[http://imagej.net/mailman/listinfo/imagej-bugs ImageJ-bugs]
-| For [http://fiji.sc/bugzilla BugZilla] issue updates.
-
-<span style="font-size: smaller">This list is the default assignee for all BugZilla bugs. It is mainly intended for people directly involved in development, though anyone is welcome to subscribe if desired.</span>
-| [http://imagej.net/pipermail/imagej-bugs/ Archives]
-|-
-| valign="top" |
-[http://imagej.net/mailman/listinfo/imagej-builds ImageJ-builds]
-| For [http://jenkins.imagej.net/ ImageJ Jenkins] build reports.
-
-<span style="font-size: smaller">This is an announcement list for the ImageJ Jenkins, which reports build failures for ImageJ, Fiji, ImgLib and related projects. It is mainly intended for people directly involved in development, though anyone is welcome to subscribe if desired.</span>
-| [http://imagej.net/pipermail/imagej-builds/ Archives]
-|}
