@@ -167,4 +167,8 @@ The first module of the tracker also comes with a parallel batch mode analyzer o
 
 [[Image:batchmode.png|500px]]
 
-The user should make a directory of the tif files to be batch processed and select that with the above button. After this the program will start a parallel run of the files, the number of files processed in parallel is equal to the number of the CPU cores of the computer. As a first step it preprocesses each file internally so this step can take a while. At this moment it shows Progress bar for each file it is currently pre-processing. After the pre-processing is over the images are displayed with the same visual feedback as in the serial modes.
+The user should make a directory of the tif files to be batch processed and select that with the above button. After this the program will start a parallel run of the files, the number of files processed in parallel is equal to the number of the CPU cores of the computer. As a first step it preprocesses each file internally so this step can take a while. At this moment it shows Progress bar for each file it is currently pre-processing. After the pre-processing is over the images are displayed with the same visual feedback as in the serial modes. 
+
+As an example we made a directory containing 4 TIF files and batch processed them in parallel, the following image shows the visual feedback the user would get in such a case. This mode runs without user intervention and user can zoom into the images anytime.
+
+[[Image:parallel.png|500px]]
