@@ -166,3 +166,5 @@ The two catastrophes were missed in the left figure as there were not even three
 The first module of the tracker also comes with a parallel batch mode analyzer option. To analyze your videos in batch mode select run in batch mode after you have saved the parameters by running in a serial mode before. Start the tracker by selecting: {{bc | Plugins | MTV Tracker | Microtubule Velocity Tracker (Double Channel)}} and click "Run in Batch Mode", the following screen appears:
 
 [[Image:batchmode.png|500px]]
+
+The user should make a directory of the tif files to be batch processed and select that with the above button. After this the program will start a parallel run of the files, the number of files processed in parallel is equal to the number of the CPU cores of the computer. As a first step it preprocesses each file internally so this step can take a while. At this moment it shows Progress bar for each file it is currently pre-processing. After the pre-processing is over the images are displayed with the same visual feedback as in the serial modes.
