@@ -160,3 +160,7 @@ B) To find the inliers we use a polynomial function and fit it on the data, the 
 [[Image:catmiss.png|500px]]
 
 The two catastrophes were missed in the left figure as there were not even three timepoints present on which a function could be fit, the plot gives a continuous appearance as it interpolates between missing data but that does not mean that there are actual data points present there.
+
+== Batch Modes ==
+
+The first module of the tracker also comes with a parallel batch mode analyzer option. To analyze your videos in batch mode select run in batch mode after you have saved the parameters by running in a serial mode before. Start the tracker by selecting: {{bc | Plugins | MTV Tracker | Microtubule Velocity Tracker (Double Channel)}} and click "Run in Batch Mode", the following screen appears:
