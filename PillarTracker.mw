@@ -9,7 +9,6 @@ Latest version: [https://drive.google.com/file/d/0B3hxvkn3VvhCWUlMZ29OTEZ6ZWs Pi
 '''Update History:'''
 
 version '''1.1.3'''
-
  (1).use pillar reconstruction algorithm to establish exact grid.
 
  (2).sub-pixel centered kernel when extracting pillar profile.
@@ -18,13 +17,12 @@ version '''1.1.3'''
 
 
 version '''1.1.2'''
-
  (1).mask filter in frequency domain(FD).
 
  (2).fixed bugs on pillar detection.
 
-version '''1.1.1'''
 
+version '''1.1.1'''
  (1).refine the grid based on the silent pillars.
 
  (2).faster save data into binary files.
@@ -33,14 +31,14 @@ version '''1.1.1'''
 
  (4).save settings into drift binary file.
 
-version '''1.1.0'''
 
+version '''1.1.0'''
  (1).performance improved. GPU acceleration for image cross correlation with kernel.
 
  (2).minor bugs are fixed.
 
-version '''1.0.9'''
 
+version '''1.0.9'''
  (1).support BCC arranged pillar, which has 60 degree of grid angle. 
 
  (2).support fast localization algorithm: center of mass(CM).
