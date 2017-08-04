@@ -269,9 +269,11 @@ macro "Title of the macro" {
 }
 </source>
 
-Then you need to ''install'' them:
+Then you need to ''install'' them: 
 
-[[Image:Install_Macros.png|center]]
+Simply save your macro in a "Plugins" subfolder of ''./Fiji.app/scripts/'' (e.g. ''./Fiji.app/scripts/Plugins/MyScripts/My_Macro.ijm''), and it will appear in the respective menu (e.g. ''Plugins > MyScripts > My Macro'') upon restart of [[Fiji]].
+
+Note: The ''Plugins > Macro > Install...'' command is an ImageJ 1.x command that does not yet support the SciJava [[Script Parameters]] syntax (@) that was introduced with ImageJ2.
 
 == Keyboard shortcuts ==
 
