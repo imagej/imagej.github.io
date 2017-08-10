@@ -6,7 +6,7 @@
 | filename               = 
 | source                 = {{GitHub|org=nicost|repo=spotCounter|}}
 | released               = 2015/07/30
-| latest version         = 2015/07/30
+| latest version         = 2017/08/10 (Version 0.13)
 | status                 = 
 | category               = [[:Category:Particle_analysis]]
 }}
@@ -15,7 +15,7 @@ Simple ImageJ/Fiji plugin to count spots in image stacks.  The plugin detects lo
 with a box of user-defined size.  Local maxima are accepted when the maximum is higher than a user-defined number
 over the average of the 4 corners of the box.  The plugin outputs the number of spots per frame, the average
 intensity of all identified spots in a frame, and an estimate of the background intensity.  Data can optionally
-be automatically copied to the System Clipboard.  This really is a simple plugin meant to facilitate the work-flow
+be automatically copied to the System Clipboard. When selecting "Append new results", the default ImageJ Results table will be used for each subsequent run of the plugin, and the filename of the analyzed data will be listed with the results.   This really is a simple plugin meant to facilitate the work-flow
 of certain experiments in the lab.
 
 To install this plugin check the "ValelabUtils" update site in the Fiji updater. 
