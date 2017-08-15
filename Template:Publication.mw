@@ -390,6 +390,52 @@
 | doi = 10.1038/ncomms15554
 | pmid = 28561033}}.
 
+| TensorFlow = {{Citation
+| last = Abadi | first = Martín
+| last2 = Agarwal | first2 = Ashish
+| last3 = Barham | first3 = Paul
+| last4 = Brevdo | first4 = Eugene
+| last5 = Chen | first5 = Zhifeng
+| last6 = Citro | first6 = Craig
+| last7 = Corrado | first7 = Greg S.
+| last8 = Davis | first8 = Andy
+| last9 = Dean | first9 = Jeffrey
+| last10 = Devin | first10 = Matthieu
+| last11 = Ghemawat | first11 = Sanjay
+| last12 = Goodfellow | first12 = Ian
+| last13 = Harp | first13 = Andrew
+| last14 = Irving | first14 = Geoffrey
+| last115 = Isard | first5 = Michael
+| last16 = Jia | first16 = Yangqing 
+| last17 = Jozefowicz | first17 = Rafal
+| last18 = Kaiser | first18 = Lukasz
+| last19 = Kudlur | first19 = Manjunath
+| last20 = Levenberg | first20 = Josh
+| last21 = Mané | first21 = Dan
+| last22 = Monga | first22 = Rajat
+| last23 = Moore | first23 = Sherry
+| last24 = Murray | first24 = Derek
+| last25 = Olah | first25 = Chris
+| last26 = Schuster | first26 = Mike
+| last27 = Shlens | first27 = Jonathon
+| last28 = Steiner | first28 = Benoit
+| last29 = Sutskever | first29 = Ilya
+| last30 = Talwar | first30 = Kunal
+| last31 = Tucker | first31 = Paul
+| last32 = Vanhoucke | first32 = Vincent
+| last33 = Vasudevan | first33 = Vijay
+| last34 = Viégas | first34 = Fernanda
+| last35 = Vinyals | first35 = Oriol
+| last36 = Warden | first36 = Pete
+| last37 = Wattenberg | first37 = Martin
+| last38 = Wicke | first38 = Martin
+| last39 = Yu | first39 = Yuan
+| last40 = Zheng | first40 = Xiaoqiang
+| year = 2016
+| journal = arXiv preprint arXiv:1603.04467
+| url = https://arxiv.org/abs/1603.04467
+| title = TensorFlow: Large-scale machine learning on heterogeneous distributed systems.}} ({{Scholar | cluster=4870469586968585222}}).
+
 | TrackMate = {{Citation
 | last = Tinevez | first = JY.
 | last2 = Perry | first2 = N.
