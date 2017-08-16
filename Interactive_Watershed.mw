@@ -140,7 +140,7 @@ The initial description, to the best of our knowledge of a watershed segment hie
 
 =History=
 
-HIstory of version available of SCF_MPI_CBG update site
+History of version available of SCF_MPI_CBG update site
 
 * 2017-05-11: version 1.0.0
 ** inital release
@@ -154,3 +154,8 @@ HIstory of version available of SCF_MPI_CBG update site
 ** feature: threshold and seeds dynmics slider range fix to [0,1000] with step of 1
 ** bugFix: the exported label map shows the correct number of labels in its title
 ** bugfix: threshold value in in output title corrected
+
+* 2017-08-16: version 1.0.4
+** feature: in scripting the parameter are optionnal (defaults, thresh = min , seed dynamics = 0.05*(Max-Min) , peakFlooding = 100). See [https://github.com/mpicbg-scicomp/Interactive-H-Watershed/blob/master/scripts/jython_Ops.py jython script on the project repository] for usage details.
+* bugfix: the output image is not a virtual stack anymore. That was annoying for further analysis of the regions.
+* bugfix: The output image now the same calibration as the input
