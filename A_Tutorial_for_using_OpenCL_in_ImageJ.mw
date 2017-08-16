@@ -238,3 +238,125 @@ sudo wget http://jogamp.org/deployment/webstart/jocl.jar
 The only other thing needed to get glassfish setup to support JOCL is to login to the admin console, under {{bc | Common Tasks | Configuration | JVM Settings | Path Settings}}.
 
 Native Library Path Prefix: <code>/opt/glassfishv3/glassfish/lib</code>
+
+----
+
+= GPU Based Processing Techniques and the ImageJ Architecture =
+
+{{Warning | The following article describes our first effort at GPU computing with ImageJ using OpenCL, in early 2010. The tutorial above is more recent and more complete; the text below is preserved only for historical reasons.}}
+
+== Introduction ==
+
+The primary focus of this paper is to provide an introduction to and evaluation of two common GPU technologies (CUDA and OpenCL) as they could be used within ImageJ. The intent is to provide a light introduction to the software libraries used to perform two basic image processing tasks and present performance metrics that may be useful for deciding future efforts in this area.
+
+Many of the algorithms within ImageJ and ImageJ plug-ins can be implemented to take advantage of GPU and multi-core CPU processors. Having the capability to support plugins that leverage 'many-core hardware processors' poses important architectural issues for ImageJ. An intent of the ImageJ refactoring effort is to implement support for native code integration in a manner that leverages hardware devices 'behind-the-scenes'. Performance is not as important as compatibility with external native libraries and ease of use by non-programming scientists.
+
+Note: The use of 'device' refers to GPU based hardware devices and 'host' refers to GPU based devices.
+
+== Background on the use of ImgLib ==
+
+The future release of ImageJ will adopt the [http://imglib2.net/ ImgLib] generic processing library. A very minor change has been introduced into the ImgLib codebase that allows data to be stored in Java.NIO arrays. The NIO backed arrays are allocated outside of the Java Virtual Machine and allow for a single copy of data to be shared with the native code.
+
+There are several issues that are encountered when developing GPU based code:
+
+# Byte ordering differences need consideration when using NIO Buffers and exchanging data between different hardware devices with different byte ordering.
+# The amount of available host memory, device memory, number of GPU processors, and the computational capabilities of devices may vary significantly.
+
+To address these issues, helper methods can be used to dynamically assess a given host's capabilities at runtime. Working memory for the device and host are important along with the performance characteristics for a device. Profiling performance is also important in assessing a device since a device that is shared between several applications may achieve lower performance than if the device is not shared.
+
+When considering how to access GPU resources from Java, several open-source APIs were considered. For the purposes of this evaluation, Olivier Chafik's [http://code.google.com/p/javacl/ JavaCL] was chosen due to its Lesser General Public License.
+
+== Introduction to GPU processing pipeline ==
+
+The processing pipeline when using GPUs as compute device in ImageJ involves several steps:
+
+# Get the data in native arrays with the needed byte ordering from an imglib object
+# Choose a device, compile the kernel, and associate the native arrays with the kernel
+# Launch the kernel
+# Return the results to a compatible Imglib object
+
+== Metric/Method ==
+
+Sobel filter is a common image processing routine that is used for edge detection. It is ideally suited for this evaluation due to implementation simplicity as well as the GPU code's similarity to the existing open source implementation.
+
+For purposes of timing processing, the 8-bit test image will be loaded into an Imglib NIO backed buffer. The kernel source code is precompiled. The timer is started before the call to execute the kernel and concludes after the results are returned to the Imglib NIO backed buffer. 100 iterations are averaged to determine the recorded value.
+
+Note: It is almost certainly possible to optimize any of the following implementations, however the primary goal of this assessment is not performance.
+
+== Implementation ==
+
+The following code demonstrates a partial implementation of sobel filter within ImageJ:
+
+<source lang="java">
+public byte[] filter(int width, int height, byte[] inputImageArray)
+    {
+        byte[] pixels = new byte[width*height];
+        int p1, p2, p3, p4, p5, p6, p7, p8, p9;
+        int offset, sum1, sum2=0, sum=0;
+        int rowOffset = width;
+
+        for (int y=1; y 255) sum = 255;
+
+                pixels[offset++] = (byte)sum;
+            }
+        }
+        return pixels;
+    }
+</source>
+
+There are a few properties that make the above partial implementation ideal for GPU computation. Each resultant pixel's value is independent of those around it. The values consumed in calculating the resultant pixel share a sequential relationship can leverage performance advantages. Several computations are performed for each pixel.
+
+Here is the partial implementation of Sobel filter in OpenCL:
+
+<source lang="opencl">
+__kernel void sobel( __global char* input, __global char* output, int width, int height)
+{
+    int x = get_global_id(0);  //find the X id
+    int y = get_global_id(1);  //find the Y id
+    int p[9];  //allocate a local array used for intermediate values
+    int offset = y * width + x;  //determine the offset
+if( x &lt; 1 || y &lt; 1 || x &gt; width - 2 || y &gt; height - 2 )  //is this an edge pixel?
+{
+  output[offset] = 0; //This partial implementation does not calculate edge values
+}
+else
+{
+    p[0] = input[offset - width - 1] &amp; 0xff;
+    p[1] = input[offset - width] &amp; 0xff;
+    p[2] = input[offset - width + 1] &amp; 0xff;
+    p[3] = input[offset - 1] &amp; 0xff;
+    p[4] = input[offset] &amp; 0xff;
+    p[5] = input[offset + 1] &amp; 0xff;
+    p[6] = input[offset + width - 1] &amp; 0xff;
+    p[7] = input[offset + width] &amp; 0xff;
+    p[8] = input[offset + width + 1] &amp; 0xff;
+
+    int sum1 = p[0] + 2*p[1] + p[2] - p[6] - 2*p[7] - p[8];
+    int sum2 = p[0] + 2*p[3] + p[6] - p[2] - 2*p[5] - p[8];
+    float sum3 = sum1*sum1 + sum2*sum2;
+  
+    int sum = sqrt( sum3 );
+    if (sum &gt; 255) sum = 255;
+    output[offset] = (char) sum;  //write the result to the output array
+ }
+};
+</source>
+
+The above OpenCL kernel is almost identical to the Java implementation with the exception that an index is used to identify the per value offset (rather than looping through an array). This allows the computation to be spread over many cores and thus provide the potential for speed up.
+
+The following example demonstrates how an image is loaded using Imglib in preparation for GPU computation:
+
+<source lang="java">
+//Create an array container factory
+ArrayContainerFactory arrayContainerFactory = new ArrayContainerFactory();
+
+//Set the backing type to NIO
+arrayContainerFactory.setNIOUse(true);
+
+//Create a image backed by an NIO typed array given an input file
+Image inImg = LOCI.openLOCIFloatType( file.getPath(), arrayContainerFactory );
+</source>
+
+<code>ArrayContainerFactory.setNIOUse(true)</code> ensures that NIO backed arrays are used. The reason for using NIO backed arrays rather than Java native arrays is due to optimal data sharing between Java and native code as well as for improved throughput between the host and device. Both CUDA and OpenCL benefit from the use of host arrays that are not paged to disk. This type of memory is referred to as paged-locked memory. Section 5.3.1 of &quot;CUDA Programming Guide Version 3.0&quot; has more specific information on this detail.
+
+Note: OpenCL may use page-locked host memory when the &quot;CL_MEM_ALLOC_HOST_PTR&quot; flag is set.
