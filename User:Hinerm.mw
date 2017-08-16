@@ -23,7 +23,7 @@ You can follow his latest work [https://github.com/hinerm on GitHub].
 Earlier work at LOCI includes:
 
 * Implemented write functionality in BFITK plugins
-* Modified {{GitHub | org=uw-loci | repo=jar2lib label=Jar2Lib}} to automatically collect its output C++ libraries into a single location, and compress that directory for easy automation.
+* Modified {{GitHub | org=uw-loci | repo=jar2lib | label=Jar2Lib}} to automatically collect its output C++ libraries into a single location, and compress that directory for easy automation.
 * Added a generic utility library to the Jar2Lib project, which includes methods for consistent JVM invocation.
 * Modified {{GitHub | org=uw-loci | repo=cppwrap-maven-plugin | label=cpp-wrap}} to account for the changes in Jar2Lib's structure
 * Created a Java Native Interface ([http://java.sun.com/developer/onlineTraining/Programming/JDCBook/jni.html JNI]) implementation of [http://www.loci.wisc.edu/bio-formats/itk BFITK].
