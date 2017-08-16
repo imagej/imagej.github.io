@@ -179,19 +179,19 @@ Finally, ensure that the platform specific files are exported:
 
 [[File:2011-opencl-02.png|679x286px]]
 
-Start exploring the examples by viewing the developer comments in the file src/publication/SobelFilterExample.java. Notice the Main() method calls run() which use an awt.Image type as an input parameter. Modify and run the Main() method as a Java application and adjust the VM Arguments (E.g. -Xmx1024m) if needed.
+Start exploring the examples by viewing the developer comments in the file <code>src/publication/SobelFilterExample.java</code>. Notice the <code>Main()</code> method calls <code>run()</code> which use an <code>awt.Image</code> type as an input parameter. Modify and run the <code>Main()</code> method as a Java application and adjust the VM Arguments (E.g. <code>-Xmx1024m</code>) if needed.
 
 == SobelFilter example ==
 
-Without modification, SobelFilterExample.java loads an image from a web server, process it locally using OpenCL, and displays the results. There is nothing novel about this example. It simply allows runtime testing of several system configuration steps to ensure working configuration of JOCL and OpenCL native libraries. Modify this example to suite your needs, but please ensure proper JOCL and OpenCL configuration before proceeding.
+Without modification, <code>SobelFilterExample.java</code> loads an image from a web server, process it locally using OpenCL, and displays the results. There is nothing novel about this example. It simply allows runtime testing of several system configuration steps to ensure working configuration of JOCL and OpenCL native libraries. Modify this example to suite your needs, but please ensure proper JOCL and OpenCL configuration before proceeding.
 
 == Understanding ImageJ + OpenCL ==
 
-Working within ImageJ: If developing an ImageJ plugin using OpenCL realize that programmatic control is passed to your plugin inside the PlugIn (or PluginFilter) run() method. An example of this can be found in src.demos.OpenCL_SobelFilter.java. For this plugin to run within ImageJ, the JOCL jars and native libraries respective to the target platform will need to be available by the ImageJ classloader. The supporting JOCL native libraries can be copied into the plug-in directory within ImageJ to allow plugin implementations using OpenCL to reference the native libraries provided by the OpenCL installation.
+Working within ImageJ: If developing an ImageJ plugin using OpenCL realize that programmatic control is passed to your plugin inside the <code>PlugIn</code> (or <code>PluginFilter</code>) <code>run()</code> method. An example of this can be found in <code>src.demos.OpenCL_SobelFilter.java</code>. For this plugin to run within ImageJ, the JOCL jars and native libraries respective to the target platform will need to be available by the ImageJ class loader. The supporting JOCL native libraries can be copied into the plug-in directory within ImageJ to allow plugin implementations using OpenCL to reference the native libraries provided by the OpenCL installation.
 
 == ImageJ OpenCL: An incremental approach to applying OpenCL ==
 
-Now that you have demonstrated use of OpenCL from Java and within ImageJ, you may wish to see a compute intensive example demonstrating modification of an existing Java implementation that delegates a portion of its implementation to OpenCL. Take a look at the developer comments in the FHT3D_3D_Deconvolution.java example to see what steps are used for brokering data between Java and OpenCL between steps within an algorithm's implementation.
+Now that you have demonstrated use of OpenCL from Java and within ImageJ, you may wish to see a compute intensive example demonstrating modification of an existing Java implementation that delegates a portion of its implementation to OpenCL. Take a look at the developer comments in the <code>FHT3D_3D_Deconvolution.java</code> example to see what steps are used for brokering data between Java and OpenCL between steps within an algorithm's implementation.
 
 The approach used to start delegating to OpenCL from an existing Java implementation:
 
