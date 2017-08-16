@@ -1,0 +1,76 @@
+Today the ImageJDev team is releasing the third beta of ImageJ2, version 2.0.0-beta3.
+
+ImageJ 2.0.0-beta3 is a &quot;beta&quot;-quality release, meaning the code is not finished. The design is more stable than before but still subject to change until the final 2.0.0 release. It is recommended that people continue to use [[ImageJ1|ImageJ v1.x]] for critical work.
+
+Download using the link below, or from the [[downloads|Downloads page]], which also has a timetable for future releases.
+
+The ImageJ2 user interface is modeled after ImageJ v1.x as much as possible. However, under the hood, ImageJ2 is a complete redesign of ImageJ. It provides backward compatibility with older versions of ImageJ by bundling the latest v1.x code and translating between &quot;legacy&quot; and &quot;modern&quot; image structures.
+
+== What's new ==
+
+Development of this release of ImageJ2 focused heavily on making the architecture and infrastructure more flexible and more capable of running headlessly (without a GUI). To accommodate this, changes were made to displays, menus, events, the updater and in many other areas.
+
+[[File:mouse-wheel-zoom.gif|456px|thumb|The Zoom tool allows precise zooming at a specific pixel using the mouse wheel.]]
+
+Changes at the application level include:
+
+* Color bars in image displays
+* Spray can tool
+* Angle tool (but development is still in progress)
+* Edit Axes plugin
+* Spectral Composite plugin
+* {{bc | Edit | Selection | Specify}} plugin (non-interactive for now)
+* The Updater now knows about version numbers in file names, and no longer marks JAR files as modified every time they are rebuilt
+
+'''Overlays.''' The {{bc | Image | Overlay}} menu has changed substantially. IJ2 has an Overlay Manager that replaces the ROI Manager functionality of IJ1. A major difference between them is that overlays are automatically added to the Manager in IJ2. In IJ2 there is no split between Roi and Overlay. As a consequence, some IJ1 operations no longer make sense in an IJ2 context. Thus, obsolete menu commands have been removed and new commands added where appropriate.
+
+'''Menus.''' We have begun to update the menu structure from ImageJ1 in small ways where such changes add clarity. For instance, the Image menu has been reorganized to move functionality into the new Data and Axes submenus.
+
+[[File:spectral-composite.gif|410px|thumb|The Spectral Composite plugin generates channel LUTs based on actual wavelengths of light.]]
+
+'''Compatibility.''' There have also been numerous compatibility improvements and bug fixes. Since beta2 the team has [http://trac.imagej.net/query?status=closed&milestone=imagej2-b3-headless closed over 100 issues] and made progress on many more. Some of them include:
+
+* Improved legacy support for binary and 16-bit signed images
+* Improved legacy support for overlays/rois
+* Make Binary fixed for all image types
+* {{bc | FFT | Swap Quadrants}} now working
+* {{bc | Hyperstack | Reduce Dimensionality}} now working
+* {{bc | File | Open Recent}} now working correctly
+
+In addition, the following known issues from beta2 have been addressed:
+
+* Menubar issues on Windows and Linux [see [http://trac.imagej.net/ticket/1188 #1188]]
+* Serious problems with zooming and panning [see [http://trac.imagej.net/ticket/1188 #1185]]
+
+See [http://trac.imagej.net/query?type=feature&milestone=imagej2-b3-headless this report] for a high-level list of features completed for the 2.0.0-beta3 release.
+
+== Known bugs ==
+
+Many legacy ImageJ plugins and macros work; many others do not. There are still many bugs. In particular, there are a few issues specifically regarding 2.0.0-beta3:
+
+* The data coordinate system is off by one pixel, which causes the pixel probe and drawing tool coordinates to be slightly misaligned [see [http://trac.imagej.net/ticket/716 #716] and [http://trac.imagej.net/ticket/1190 #1190]]
+* Image windows sometimes leave space for nonexistent sliders [see [http://trac.imagej.net/ticket/1060 #1060]]
+* Image windows don't always load at the optimal scale
+* A few other minor zoom issues [see [http://trac.imagej.net/ticket/1326 #1326]]
+* IJ1 commands that have preview capabilities are not fully functional. In general their final results are correct. Going forward the preview capabilities will be restored by porting them to IJ2's GUI model [see [http://trac.imagej.net/ticket/981 #981]]
+
+See the list of [http://trac.imagej.net/report/1 Open Features] for a high-level list of planned features and bugfixes.
+
+Lastly, please note that it is still the case on Windows &amp; Linux that you must have Java already installed; ImageJ2 is not bundled with Java, nor will it download it for you.
+
+== Roadmap and future directions ==
+
+We make a substantial effort to document the work we are doing, and what needs to be done, to deliver a powerful and full-featured ImageJ2. All tasks are tracked by our Trac issue tracking system, which you can review in several ways:
+
+* [http://trac.imagej.net/roadmap Roadmap] - Top level overview of future releases, including progress toward each release
+* [http://trac.imagej.net/report/1 Open Features] - A high-level list of features slated for each future release
+* [http://trac.imagej.net/report/2 All Open Tickets] - A complete list of known bugs
+
+You can also perform custom queries to further refine the results, if there are particular parts of the development that interest you.
+
+== Thanks ==
+
+Thanks for your interest in ImageJ2! Please [[downloads|give it a try]], and feel free to [[Bugs|report any bugs you find]]!
+
+[[Category:News]]
+[[Category:ImageJ2]]
