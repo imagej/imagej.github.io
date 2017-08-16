@@ -4,7 +4,7 @@
 
 The Java 3D project, originally developed at Sun (now Oracle), has been abandoned for several years in favor of [https://docs.oracle.com/javase/8/javafx/graphics-tutorial/javafx-3d-graphics.htm JavaFX 3D]. However, it has been adopted by the [https://jogamp.org/ JogAmp] community, and is now maintained there—though no longer under active development.
 
-From the perspective of new features, Java 3D is essentially a dead technology. The future of 3D visualization in ImageJ is the [[ClearVolume]] plugin. But it will be a lot of work to rebuild the 3D Viewer on top of ClearVolume, so the ImageJ and [[Fiji]] teams are still exploring the best ways to proceed here.
+From the perspective of new features, Java 3D is essentially a dead technology. The future of 3D visualization in ImageJ is the [[SciView]] plugin. But it will be a lot of work to make SciView comparable to—and eventually better than—3D Viewer, so the ImageJ and [[Fiji]] teams are still exploring the best ways to proceed here.
 
 == Versions of Java 3D ==
 
