@@ -1,0 +1,240 @@
+{{Warning | This tutorial was written in 2010-11, and may contain out-of-date or no-longer-accurate information.}}
+
+This tutorial is meant to help you leverage OpenCL from Java for use with ImageJ.
+
+== Background ==
+
+To use OpenCL from Java in ImageJ we rely on [http://jogamp.org/deployment/webstart/ JOCL]. JOCL is written on top of a low level JNI API to make using OpenCL a bit easier. The OpenCL code you write can also leverage JOCL to accelerate execution of ImageJ plugins from Java. We have created an [https://github.com/uw-loci/opencl-decon OpenCL deconvolution] example to demonstrate compute acceleration using OpenCL (both locally and remotely as a binary web service).
+
+== Setting up the Development Machine ==
+
+We set up an Ubuntu based development machine for OpenCL development and testing. OSX 10.6, Windows 64/32, and Linux 64/32 pass the tests and are supported by this package. Here are the steps for setting up Ubuntu:
+<ul>
+<li>Obtain an ISO for Ubuntu 10.04</li>
+<li>Install Ubuntu on the target machine.</li>
+<li>Install g++ with: 
+<source lang="shell">
+sudo apt-get install g++
+</source>
+</li>
+<li>Install needed development libs with:
+<source lang="shell">
+sudo apt-get install freeglut3-dev
+sudo apt-get install libxi-dev
+sudo apt-get install libxmu-dev
+</source>
+</li>
+</ul>
+
+== Setting up OpenCL ==
+
+You will need to install OpenCL for your OpenCL enabled hardware if it does not come installed as part of the OS.
+
+=== Setting up OpenCL for ATI ===
+
+If you have ATI GPU hardware, check out [http://developer.amd.com/gpu/AMDAPPSDK/downloads/Pages/default.aspx these instructions].
+
+=== Setting up OpenCL for NVidia ===
+
+For NVidia hardware, install development drivers, CUDA Toolkit, and GPU Computing SDK code samples by following [http://developer.download.nvidia.com/compute/cuda/3_2_prod/docs/Getting_Started_Linux.pdf these installation instructions].
+
+Use the wget tool for downloading the three needed install files from NVidia's download site.
+
+<source lang="shell">
+wget http://developer.download.nvidia.com/compute/cuda/\
+3_2_prod/drivers/devdriver_3.2_linux_64_260.19.26.run
+wget http://developer.download.nvidia.com/compute/cuda/\
+3_2_prod/toolkit/cudatoolkit_3.2.16_linux_64_ubuntu10.04.run
+wget http://developer.download.nvidia.com/compute/cuda/\
+3_2_prod/sdk/gpucomputingsdk_3.2.16_linux.run
+</source>
+
+Stop the graphical desktop manager by typing:
+<source lang="shell">
+sudo gdm stop
+</source>
+from the command line.
+
+Install the required files:
+
+<source lang="shell">
+sudo sh devdriver_3.2_linux_64_260.19.26.run
+sudo sh cudatoolkit_3.2.16_linux_64_ubuntu10.04.run
+sh gpucomputingsdk_3.2.16_linux.run
+</source>
+
+Per the installation instructions, we setup the environment variables (in <code>.bashrc</code>):
+
+<source lang="shell">
+export LD_LIBRARY_PATH="/usr/local/cuda/lib:/usr/local/cuda/lib64"
+export PATH="/usr/local/cuda/bin"
+</source>
+
+Test the installation by compiling and running a few of the NVidia provided OpenCL samples by changing directories to:
+<source lang="shell">
+/NVIDIA_GPU_COMPUTING_SDK/C
+</source>
+and running:
+<source lang="shell">
+make
+</source>
+
+We ran into an error and ended up editing the file
+<source lang="shell">
+/NVIDIA_GPU_COMPUTING_SDK/C/common.mk
+</source>
+
+by replacing line 169 with:
+<source lang="shell">
+NVCCFLAGS  += --compiler-options -fpermissive
+</source>
+
+and re-running:
+<source lang="shell">
+make
+</source>
+
+Change directories to
+<source lang="shell">
+/NVIDIA_GPU_Computing_SDK/C/bin/linux/release
+</source>
+
+and run
+<source lang="shell">
+./bandwidthtest
+</source>
+
+to check the binary CUDA install.
+
+Build the OpenCL examples by changing directories to
+<source lang="shell">
+/NVIDIA_GPU_COMPUTING_SDK/OpenCL
+</source>
+
+and running:
+<source lang="shell">
+make
+</source>
+
+Change directories to
+<source lang="shell">
+/NVIDIA_GPU_Computing_SDK/OpenCL/bin/linux/release
+</source>
+
+to run the OpenCL Bandwidth sample using:
+<source lang="shell">
+./oclBandwidthTest
+</source>
+
+== Setting up Eclipse and needed plugins on Ubuntu ==
+
+To configure the development environment, we started by installing the JRE with:
+<source lang="shell">
+sudo apt-get install openjdk-6-jdk
+</source>
+
+and downloading Eclipse for J2EE Developers from:
+
+<source lang="shell">
+http://www.eclipse.org/downloads/download.php
+</source>
+
+and following the Eclipse installation steps.
+
+We added the SVN plugin to Eclipse by clicking on Help-&gt; Install New Software and adding the SVN adapter site:
+
+<source lang="shell">
+http://subclipse.tigris.org/update_1.6.x
+</source>
+
+== Downloading and running the ImageJ OpenCL examples ==
+
+The ImageJ OpenCL examples can be imported as an Eclipse project by right clicking in the Package Explorer window and choose Import. Select Git project and add the site:
+
+<source lang="shell">
+https://github.com/uw-loci/opencl-decon
+</source>
+
+Import the branch and assign a general project name like imagej-opencl.
+
+The folder structure of the source consists of the following:
+
+* '''src''' - Java and OpenCL source files (extension .cl) Notice the files fht.cl and sobel.cl in the src directory. When executed, the Java code in provided in the examples compile these the OpenCL for execution. Note: Runtime compilation of the OpenCL source files allows execution on any potential OpenCL enabled device.
+* '''sourcedata''' - (Point Spread Function) PSF and 3D data used as a small sample data set for the FHT3D Example.
+* '''lib''' - libraries needed for classes using JOCL, ImageJ, and Hessian 4.0.7
+
+We have included the necessary JOCL native libraries for Windows 32/64, Apple, and Linux 32/64 platforms inside this directory. To use OpenCL from Java in ImageJ we leverage JOCL. JOCL uses JNI to make calls into the OpenCL API. The OpenCL code you write can also leverage JOCL to accelerate execution of ImageJ plugins from Java. Since each OS has different native JOCL native libraries, the runtime environment must be configured such that the Java code can load the needed native libraries.
+
+== Understanding platform-specific JOCL native libraries ==
+
+For these samples, three native libraries are needed: gluegen-rt, jocl, and JOCL-'platform'-'arch'. If you look in the lib folder, you will find -natives-xyz.jar files containing the respective libraries. You need to unzip each of the three jar files and copy the dynamic files (.so, .dylib, or .dll) into the parent directory if they are not already present. Notice the below example where the <code>libgluegen-rt.dylib</code>, <code>libJOCL-apple-x86_64.dylib</code>, and <code>libjocl.dylib</code> files are in the platform specific directory.
+
+[[File:2011-opencl-01.png|256x170px]]
+
+Then ensure that the platform specific jar is exported during the project build. For example notice that the JOCL-0-1.4-beta1.jar file is referenced in the project. (To see this menu right click the project and choose Properties -&gt; Java Build Path -&gt; Libraries.)
+
+[[File:2011-opencl-00.png|641x270px]]
+
+Finally, ensure that the platform specific files are exported:
+
+[[File:2011-opencl-02.png|679x286px]]
+
+Start exploring the examples by viewing the developer comments in the file src/publication/SobelFilterExample.java. Notice the Main() method calls run() which use an awt.Image type as an input parameter. Modify and run the Main() method as a Java application and adjust the VM Arguments (E.g. -Xmx1024m) if needed.
+
+== SobelFilter example ==
+
+Without modification, SobelFilterExample.java loads an image from a web server, process it locally using OpenCL, and displays the results. There is nothing novel about this example. It simply allows runtime testing of several system configuration steps to ensure working configuration of JOCL and OpenCL native libraries. Modify this example to suite your needs, but please ensure proper JOCL and OpenCL configuration before proceeding.
+
+== Understanding ImageJ + OpenCL ==
+
+Working within ImageJ: If developing an ImageJ plugin using OpenCL realize that programmatic control is passed to your plugin inside the PlugIn (or PluginFilter) run() method. An example of this can be found in src.demos.OpenCL_SobelFilter.java. For this plugin to run within ImageJ, the JOCL jars and native libraries respective to the target platform will need to be available by the ImageJ classloader. The supporting JOCL native libraries can be copied into the plug-in directory within ImageJ to allow plugin implementations using OpenCL to reference the native libraries provided by the OpenCL installation.
+
+== ImageJ OpenCL: An incremental approach to applying OpenCL ==
+
+Now that you have demonstrated use of OpenCL from Java and within ImageJ, you may wish to see a compute intensive example demonstrating modification of an existing Java implementation that delegates a portion of its implementation to OpenCL. Take a look at the developer comments in the FHT3D_3D_Deconvolution.java example to see what steps are used for brokering data between Java and OpenCL between steps within an algorithm's implementation.
+
+The approach used to start delegating to OpenCL from an existing Java implementation:
+
+# Assess the performance of the existing implementation to identify the most compute intensive region of code
+# Develop a test data set before and after that region
+# Write OpenCL code that replaces the compute intensive region
+# Test to ensure the new OpenCL code generates the same results using the test data
+# Add conditional delegation logic to handle runtime compute capabilities
+
+== OpenCL ImageJ plugins following enterprise java patterns ==
+
+Finally, some users and academic labs are building &quot;[http://fastra2.ua.ac.be/ GPU Supercomputers]&quot; to expose compute resources to a wide range of applications running locally. In this case, you wish to leverage to look at the <code>FHTEJBService</code> and <code>Iterative_Deconvolve_3D_WS</code> classes for an example on how to remotely serve up the your GPU accelerated resources using open source J2EE technologies.
+
+In this example, Hessian Binary Web Services are used to broker data between the Java consumer and the Hessian Servlet. This approach is only recommended for those labs having sufficient throughput between the client application and the OpenCL/GPU servlet host.
+
+== Hosting OpenCL-accelerated algorithms using Oracle's GlassfishV3 ==
+
+Start out with the installation instructions available [http://www.oracle.com/technetwork/java/javaee/community/index-jsp-139692.html here].
+
+To set up OpenCL support on Glassfish for deploying the ImageJ/Fiji Java based EJBs, navigate to the system's lib directory (for example: <code>/opt/glassfishv3/glassfish/lib</code>) and install the required jars/native libs.
+
+<source lang="shell">
+sudo wget http://jogamp.org/deployment/webstart/jocl-natives-linux-amd64.jar
+sudo unzip jocl-natives-linux-amd64.jar
+sudo rm -rdf META-INF
+sudo rm jocl-natives-linux-amd64.jar
+sudo wget http://jogamp.org/deployment/webstart/gluegen-rt-natives-linux-amd64.jar
+sudo unzip gluegen-rt-natives-linux-amd64.jar
+sudo rm -rdf META-INF/
+sudo rm gluegen-rt-natives-linux-amd64.jar
+
+sudo wget http://jocl.org/downloads/JOCL-0.1.4-beta1-bin-linux-x86_64.zip
+sudo unzip JOCL-0.1.4-beta1-bin-linux-x86_64.zip
+sudo mv JOCL-0.1.4-beta1-bin-linux-x86_64/*.so .
+sudo mv JOCL-0.1.4-beta1-bin-linux-x86_64/*.jar .
+sudo rm -rdf JOCL-0.1.4-beta1-bin-linux-x86_64
+sudo rm JOCL-0.1.4-beta1-bin-linux-x86_64.zip
+
+sudo wget http://jogamp.org/deployment/webstart/gluegen-rt.jar
+sudo wget http://jogamp.org/deployment/webstart/gluegen.jar
+sudo wget http://jogamp.org/deployment/webstart/jocl.jar
+</source>
+
+The only other thing needed to get glassfish setup to support JOCL is to login to the admin console, under {{bc | Common Tasks | Configuration | JVM Settings | Path Settings}}.
+
+Native Library Path Prefix: <code>/opt/glassfishv3/glassfish/lib</code>
