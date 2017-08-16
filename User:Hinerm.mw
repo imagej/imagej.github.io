@@ -13,3 +13,24 @@
 }}[http://loci.wisc.edu/people/mark-hiner Mark Hiner] maintains the [[ImageJ-MATLAB]] project for [[ImageJ]]/[[MATLAB]] interoperability.
 
 Mark was a member of the core [[ImageJ2]] development team at [[LOCI]] from 2011-2016, earning the title of Champion of ImageJ for his tireless enthusiasm and dedication to the community. He is co-founder of the [[SCIFIO]] project, a robust and extensible library for reading and writing scientific image file formats, and accessible foundation for image format processing.
+
+== My work at LOCI ==
+
+After working at [[LOCI]] for two years as a Research Assistant, Mark completed a M.S. degree in computer science and decided to stay on as a Research Intern. Until 2016 he worked as the lead developer on [[SCIFIO]]. His primary areas of interest within CS are artificial intelligence, robotics and programming languages.
+
+You can follow his latest work [https://github.com/hinerm on GitHub].
+
+Earlier work at LOCI includes:
+
+* Implemented write functionality in BFITK plugins
+* Modified {{GitHub | org=uw-loci | repo=jar2lib label=Jar2Lib}} to automatically collect its output C++ libraries into a single location, and compress that directory for easy automation.
+* Added a generic utility library to the Jar2Lib project, which includes methods for consistent JVM invocation.
+* Modified {{GitHub | org=uw-loci | repo=cppwrap-maven-plugin | label=cpp-wrap}} to account for the changes in Jar2Lib's structure
+* Created a Java Native Interface ([http://java.sun.com/developer/onlineTraining/Programming/JDCBook/jni.html JNI]) implementation of [http://www.loci.wisc.edu/bio-formats/itk BFITK].
+* Established benchmarking process to compare three BFITK implementations
+* Reworked the build system for the BFITK plugins - removing [http://ant.apache.org/ Ant] dependency in favor of [http://www.cmake.org/ CMake] post-build commands
+* Modified Jar2Lib to accept user-defined files to append to the automatically generated <code>CMakeLists.txt</code> build files, allowing for custom options to be defined.
+* Used user-defined appending of make files to remove Ant dependency for building BF-CPP (stand-alone C++ library of Bio-Formats) by creating a Jar2Lib script
+* Cross-platform testing of BFITK with [http://www.farsight-toolkit.org/ FARSIGHT] toolkit.
+* Creation of comprehensive developer and user [http://www.farsight-toolkit.org/wiki/FARSIGHT_Tutorials/Building_Software/Bio-Formats guides] for using Bio-Formats with the FARSIGHT toolkit.
+* Contributed to the FARSIGHT toolkit functionality (general usability improvements, such as hotkeys, window focus and a pixel probe).
