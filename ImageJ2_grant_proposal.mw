@@ -1,8 +1,8 @@
 The following is the original text of the [[ImageJ2|ImageJDev]] grant proposal circa mid-2009.
-
 {{Warning
 | message = Please note that [[ImageJ2]]'s project directions evolved substantially as it developed, so the text below is dated, but in many ways, this document continues to represent the project's conceptual core.
 }}
+
 == Summary ==
 
 '''Purpose: Refine ImageJ’s core design to accommodate a broader range of needs in the scientific community.'''
