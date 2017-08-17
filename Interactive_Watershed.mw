@@ -161,4 +161,4 @@ History of version available of SCF_MPI_CBG update site
 ** bugfix: The output image now the same calibration as the input
 
 * 2017-08-17: version 1.0.5
-** bugfix: correct some regression with the macro recording.
+** bugfix: correct a regression with the macro recording.
