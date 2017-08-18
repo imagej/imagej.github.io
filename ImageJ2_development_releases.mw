@@ -37,121 +37,121 @@ This table lists the versions of [[ImageJ2]] released during its initial incubat
 | Robust ImageJ1 compatibilty
 | [http://trac.imagej.net/milestone/imagej-2.0-alpha5 imagej-2.0-alpha5]
 |-
-| [http://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta1/ 2.0.0-beta1]
+| [https://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta1/ 2.0.0-beta1]
 | initial
 | [[2012-04-09 - ImageJ v2.0.0-beta1|2012 April 9]]
 | First iteration of community feedback
 | [http://trac.imagej.net/milestone/imagej2-b1-initial imagej2-b1-initial]
 |-
-| [http://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta2/ 2.0.0-beta2]
+| [https://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta2/ 2.0.0-beta2]
 | bugfixes
 | [[2012-05-18 - ImageJ v2.0.0-beta2|2012 May 18]]
 | Bugfixes
 | [http://trac.imagej.net/milestone/imagej2-b2-bugfixes imagej2-b2-bugfixes]
 |-
-| [http://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta3/ 2.0.0-beta3]
+| [https://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta3/ 2.0.0-beta3]
 | headless
 | [[2012-07-13 - ImageJ v2.0.0-beta3|2012 July 13]]
 | Headless support
 | [http://trac.imagej.net/milestone/imagej2-b3-headless imagej2-b3-headless]
 |-
-| [http://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta4/ 2.0.0-beta4]
+| [https://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta4/ 2.0.0-beta4]
 | plugins
 | [[2012-09-11 - ImageJ v2.0.0-beta4|2012 September 11]]
 | Plugins: modern &amp; legacy frameworks
 | [http://trac.imagej.net/milestone/imagej2-b4-plugins imagej2-b4-plugins]
 |-
-| [http://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta5/ 2.0.0-beta5]
+| [https://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta5/ 2.0.0-beta5]
 | scripting
 | [[2012-10-19 - ImageJ v2.0.0-beta5|2012 October 19]]
 | Scripting
 | [http://trac.imagej.net/milestone/imagej2-b5-scripting imagej2-b5-scripting]
 |-
-| [http://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta6/ 2.0.0-beta6]
+| [https://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta6/ 2.0.0-beta6]
 | legacy
 | [[2012-12-27 - ImageJ v2.0.0-beta6|2012 December 27]]
 | Legacy mode and compatibility
 | [http://trac.imagej.net/milestone/imagej2-b6-legacy imagej2-b6-legacy]
 |-
-| [http://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta-7/ 2.0.0-beta-7]
+| [https://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta-7/ 2.0.0-beta-7]
 | ndim-data
 | [[2013-06-12 - ImageJ v2.0.0-beta-7|2013 June 12]]
 | N-dimensional image data
 | [http://trac.imagej.net/milestone/imagej2-b7-ndim-data imagej2-b7-ndim-data]
 |-
-| [http://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta-7.1/ 2.0.0-beta-7.1]
+| [https://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta-7.1/ 2.0.0-beta-7.1]
 | -
 | 2013 July 15
 | Intermediate release
 | -
 |-
-| [http://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta-7.2/ 2.0.0-beta-7.2]
+| [https://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta-7.2/ 2.0.0-beta-7.2]
 | -
 | 2013 August 2
 | Intermediate release
 | -
 |-
-| [http://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta-7.3/ 2.0.0-beta-7.3]
+| [https://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta-7.3/ 2.0.0-beta-7.3]
 | -
 | 2013 September 5
 | Intermediate release
 | -
 |-
-| [http://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta-7.4/ 2.0.0-beta-7.4]
+| [https://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta-7.4/ 2.0.0-beta-7.4]
 | -
 | 2013 October 18
 | Intermediate release
 | -
 |-
-| [http://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta-7.5/ 2.0.0-beta-7.5]
+| [https://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta-7.5/ 2.0.0-beta-7.5]
 | -
 | 2013 October 22
 | Intermediate release
 | -
 |-
-| [http://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta-7.6/ 2.0.0-beta-7.6]
+| [https://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta-7.6/ 2.0.0-beta-7.6]
 | -
 | 2013 December 27
 | Intermediate release
 | -
 |-
-| [http://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta-7.7/ 2.0.0-beta-7.7]
+| [https://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta-7.7/ 2.0.0-beta-7.7]
 | -
 | 2014 February 14
 | Intermediate release
 | -
 |-
-| [http://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta-7.8/ 2.0.0-beta-7.8]
+| [https://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta-7.8/ 2.0.0-beta-7.8]
 | -
 | 2014 March 19
 | Intermediate release
 | -
 |-
-| [http://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta-7.9/ 2.0.0-beta-7.9]
+| [https://maven.imagej.net/content/groups/public/net/imagej/ij-app/2.0.0-beta-7.9/ 2.0.0-beta-7.9]
 | -
 | 2014 April 4
 | Intermediate release
 | -
 |-
-| [http://maven.imagej.net/content/groups/public/net/imagej/imagej/2.0.0-beta-8/ 2.0.0-beta-8]
+| [https://maven.imagej.net/content/groups/public/net/imagej/imagej/2.0.0-beta-8/ 2.0.0-beta-8]
 | split
 | 2014 May 16
 | Final component structure
 | -
 |-
-| [http://maven.imagej.net/content/groups/public/net/imagej/imagej/2.0.0-rc-1/ 2.0.0-rc-1]
+| [https://maven.imagej.net/content/groups/public/net/imagej/imagej/2.0.0-rc-1/ 2.0.0-rc-1]
 | release
 | 2014 May 30
 | Release candidate for internal testing
 | -
 |-
-| [http://maven.imagej.net/content/groups/public/net/imagej/imagej/2.0.0-rc-2/ 2.0.0-rc-2]
+| [https://maven.imagej.net/content/groups/public/net/imagej/imagej/2.0.0-rc-2/ 2.0.0-rc-2]
 | release
 | [[2014-06-04 - ImageJ 2.0.0 release candidate|2014 June 2]]
 | Release candidate for community testing
 | -
 |-
-| [http://maven.imagej.net/content/groups/public/net/imagej/imagej/2.0.0-rc-3/ 2.0.0-rc-3]
+| [https://maven.imagej.net/content/groups/public/net/imagej/imagej/2.0.0-rc-3/ 2.0.0-rc-3]
 | release
 | 2014 June 10
 | Release candidate for community testing
