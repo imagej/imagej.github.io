@@ -7,31 +7,31 @@ This table lists the versions of [[ImageJ2]] released during its initial incubat
 ! Theme
 ! Roadmap
 |-
-| [[File:imagej-2.0.0-alpha1.zip|2.0.0-alpha1]]
+| [[Media:imagej-2.0.0-alpha1.zip|imagej-2.0.0-alpha1.zip]]
 | -
 | [[2011-04-01 - ImageJ v2.0.0-alpha1|2011 April 1]]
 | Basic functionality, matching ImageJ1 behavior
 | [http://trac.imagej.net/milestone/imagej-2.0-alpha1 imagej-2.0-alpha1]
 |-
-| [[File:imagej-2.0.0-alpha2.zip|2.0.0-alpha2]]
+| [[Media:imagej-2.0.0-alpha2.zip|2.0.0-alpha2]]
 | -
 | [[2011-05-01 - ImageJ v2.0.0-alpha2|2011 May 1]]
 | Usage of ImgLib2, composite color displays
 | [http://trac.imagej.net/milestone/imagej-2.0-alpha2 imagej-2.0-alpha2]
 |-
-| [[File:imagej-2.0.0-alpha3.zip|2.0.0-alpha3]]
+| [[Media:imagej-2.0.0-alpha3.zip|2.0.0-alpha3]]
 | -
 | [[2011-06-01 - ImageJ v2.0.0-alpha3|2011 June 1]]
 | ROI model in ImgLib2, data &amp; ROI tools
 | [http://trac.imagej.net/milestone/imagej-2.0-alpha3 imagej-2.0-alpha3]
 |-
-| [[File:imagej-2.0.0-alpha4.zip|2.0.0-alpha4]]
+| [[Media:imagej-2.0.0-alpha4.zip|2.0.0-alpha4]]
 | -
 | [[2011-08-01 - ImageJ v2.0.0-alpha4|2011 August 1]]
 | Various features and bugfixes
 | [http://trac.imagej.net/milestone/imagej-2.0-alpha4 imagej-2.0-alpha4]
 |-
-| [[File:imagej-2.0.0-alpha5.zip|2.0.0-alpha5]]
+| [[Media:imagej-2.0.0-alpha5.zip|2.0.0-alpha5]]
 | -
 | [[2011-09-13 - ImageJ v2.0.0-alpha5|2011 September 13]]
 | Robust ImageJ1 compatibilty
