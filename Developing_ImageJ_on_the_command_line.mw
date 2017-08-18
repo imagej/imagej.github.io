@@ -2,7 +2,11 @@
 
 == Install and configure command line tools ==
 
-=== Setting up command line tools on Windows ===
+<div style="overflow: hidden">
+<tabs>
+<tab name="Windows">
+[[File:Win.png | x32px]] '''Windows'''
+
 Install [[Git]], [[Maven]], and Java SE using [https://chocolatey.org/ Chocolatey]:
 <source lang="bash">
 choco install -y git maven jdk8
@@ -11,18 +15,25 @@ We also heartily recommend installing [https://www.cygwin.com/ Cygwin]:
 <source lang="bash">
 choco install -y cyg-get
 </source>
+</tab>
+<tab name="OS X">
+[[File:Osx.png | x32px]] '''OS X'''
 
-=== Setting up command line tools on Mac OS X ===
 Install [[Git]] and [[Maven]] using [http://brew.sh/ Homebrew]:
 <source lang="bash">
 brew install git maven bash-completion
 </source>
 Download and install [http://www.oracle.com/technetwork/java/javase/downloads/ Java SE] from Oracle.
+</tab>
+<tab name="Linux">
+[[File:Tux.png | x32px]] '''Linux'''
 
-=== Setting up command line tools on Ubuntu ===
 <source lang="bash">
 sudo apt-get install default-jdk git maven
 </source>
+</tab>
+</tabs>
+</div>
 
 == Download the source ==
 <source lang="bash">
