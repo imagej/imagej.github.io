@@ -1,0 +1,114 @@
+Today, the ImageJDev team is proud to release the first beta of ImageJ2, version 2.0.0-beta1!
+
+ImageJ 2.0.0-beta1 is a &quot;beta&quot;-quality release, meaning the code is not finished. The design is more stable than before but still subject to change until the final 2.0.0 release. It is recommended that people continue to use [[ImageJ1|ImageJ v1.x]] for critical work.
+
+Download using the link below, or from the [[downloads|Downloads page]], which also has a timetable for future releases.
+
+The ImageJ2 user interface is modeled after ImageJ v1.x as much as possible. However, under the hood, ImageJ2 is a complete redesign of ImageJ. It provides backward compatibility with older versions of ImageJ by bundling the latest v1.x code and translating between &quot;legacy&quot; and &quot;modern&quot; image structures.
+
+== Feature overview ==
+
+The beta still has many bugs and limitations, but we have achieved several substantial milestones:
+
+* Support for most ImageJ1 plugins and macros
+* Many new pixel types (thanks to [[imglib|ImgLib2]])
+* Multidimensional data beyond 5D (thanks to [[imglib|ImgLib2]])
+* Import and export of all [http://loci.wisc.edu/software/scifio SCIFIO]-supported file formats
+* Improved region of interest (ROI) tools
+* Truly headless: image processing is separate from user interface
+* Automatic updates: once you download beta1, ImageJ can update itself
+* Easily install additional plugins, including Fiji (over 350 plugins!)
+* 175 new and/or reimplemented core ImageJ2 plugins so far
+* 125+ bugs fixed
+
+== Known bugs ==
+
+Many legacy ImageJ plugins and macros work; many others do not. There are still many bugs to be fixed—see the [http://trac.imagej.net/report/16 complete list on the ImageJ Trac] for full details.
+
+In addition, there are a few issues specifically regarding 2.0.0-beta1:
+
+* On Windows &amp; Linux, you must have Java already installed; ImageJ2 is not bundled with Java, nor will it download it for you.
+* On Mac OS X 10.5 Leopard, there is a bug that prevents ImageJ2 from launching successfully. This bug will be fixed in the next beta release, and is already fixed in the [[downloads#Application_build|development version]].
+* On Windows, when ImageJ2 first starts, a console message (&quot;Falling back to system Java&quot;) appears, which is merely informative and is safe to ignore. This message will no longer be displayed in the next beta release, and is already fixed in the [[downloads#Application_build|development version]].
+
+== What's new in the beta ==
+
+We described the ImageJ2 software design in [[2011-08-02 - Current status: ImageJ 2.0.0-alpha4|a previous blog post]], which covers both application features (for users) and API design (for developers). Everything discussed there is still true for 2.0.0-beta1. But the first beta also sports several crucial new additions:
+
+=== ImageJ Updater ===
+
+[[File:ij2-updater.png|410px|thumb|ImageJ2 supports multiple update sites across the ImageJ community.]] The ImageJ Updater, accessible from the {{bc | Help | Update...}} command in the menus, is the central mechanism by which users can install new plugins into ImageJ2, as well as keep installed plugins up-to-date. It was adapted and improved from the [[Update Fiji|Fiji Updater]], which serves a similar function for the currently available version of [[Fiji]].
+
+From this point forward, we will be deploying future releases of ImageJ2 via the Updater, which means you will not need to manually download or install new application bundles from the web site. Rather, when version 2.0.0-beta2 and beyond are released, running the ImageJ Updater will upgrade your installation to the new version.
+
+Moreover, the utility of the ImageJ Updater is not limited to upgrading ImageJ itself and its built-in plugins. ImageJ2 allows you to access additional update servers, each serving their own collection of plugins. Anyone can create an update site and upload their own plugins to it, making them easily available to the entire ImageJ community. With this mechanism, it is a breeze for plugin authors to publish updates to their plugins, which users of those plugins will receive automatically via the Updater. For further details, see [[How to set up and populate an update site]] on the Fiji wiki.
+
+=== Installing Fiji plugins ===
+
+The structure of an ImageJ2 update site is identical to that of a Fiji update site. So if you have already set up an update site accessible via the Fiji Updater, your site will already work out of the box in ImageJ2 as well. And thanks to ImageJ2's legacy layer allowing execution of legacy ImageJ1 plugins and macros, many or all of the plugins available from your update site will continue to work!
+
+[[File:3d-viewer.png|430px|thumb|The T1 Head sample dataset visualized using Fiji's 3D Viewer plugin, installed via the Fiji update site.]] You can install the entire Fiji plugins collection into ImageJ2, by adding the Fiji update site. Choose {{bc | Help | Update...}} from the menu, click Advanced Mode, Manage update sites, then Add, type Fiji for the name, and for the update site URL, enter:
+
+<blockquote><code>http://fiji.sc/update/</code></blockquote>
+Once you have installed the Fiji plugins and restarted ImageJ2, they will be available for use. For example, on the left, we see the T1 Head sample image visualized in 3D using Fiji's [[3D Viewer]].
+
+There are over 350 plugins that are part of the Fiji distribution, and being able to bring them all into ImageJ2 is a huge step toward full backward compatibility with ImageJ1. Of course, we have not had time to exhaustively test all these plugins, but many should work, and we welcome [[Bugs|bug reports]] regarding those that do not.
+
+[[File:Bio-formats-importer.png|286px|thumb|A dataset imported from Applied Precision DeltaVision DV format using the Bio-Formats Importer plugin for ImageJ1, installed from the Fiji update site.]] Another example can be seen on the right: the [[Bio-Formats|Bio-Formats Importer]] plugin was used to import a file in Applied Precision DeltaVision DV format. The data is displayed in composite color mode with OME-XML metadata visible in its own window.
+
+[[File:Visbio-ortho-stack.png|283px|thumb|ImageJ2 running the VisBio Ortho Stack plugin available from the LOCI Fiji update site.]] It is possible to install additional plugins from third party Fiji update sites as well. For example, on the left, we see the [http://loci.wisc.edu/software/visbio-fiji-plugins VisBio Ortho Stack plugin], installed in ImageJ2 from the [http://loci.wisc.edu/software/fiji-plugins LOCI Fiji update site], visualizing part of the MRI Stack sample dataset.
+
+=== ImageJ Launcher ===
+
+Another very useful part of Fiji is the [[Fiji Launcher]], the native executable for invoking Java to launch ImageJ. While ImageJ1's launcher has improved throughout the years, and has some useful features, the Fiji Launcher has many more. Similar to the ImageJ2 Updater, the new ImageJ2 Launcher adapts and improves the Fiji Launcher, making it part of the core ImageJ2 distribution.
+
+[[File:Imagej-launcher.png|317px|thumb|ImageJ2 comes bundled with executables for launching ImageJ from Windows, Mac OS X and Linux operating systems.]] On the right, the executables corresponding to ImageJ2's target platforms are shown. '''ImageJ-win64.exe''' and '''ImageJ-win32.exe''' are launchers for ImageJ2 on Windows in 32-bit and 64-bit modes, respectively. Similarly, '''ImageJ-linux64''' and '''ImageJ-linux32''' are the corresponding launchers for Linux. '''ImageJ-macosx''' is the Mac OS X launcher for 32- or 64-bit Intel systems, while '''ImageJ-tiger''' is the launcher for Mac OS X 32-bit universal binary (Intel or PPC).
+
+On Mac OS X, double-clicking on the ImageJ2 icon launches '''ImageJ-tiger''', which checks your system specifications. If your system is compatible with the newer '''ImageJ-macosx''' launcher, it is invoked automatically; otherwise, '''ImageJ-tiger''' invokes Java directly. In the future, we may combine the two Windows and Linux launchers in a similar way, but for now it is simpler to provide separate executables so that users may easily and explicitly choose which version of Java to use.
+
+This approach also allows ImageJ2 to be distributed as a single application bundle, rather than needing to download a different archive depending on which operating system you are running. You can even host ImageJ2 on a shared network drive accessible from multiple different operating systems, all from the same base installation, since ImageJ2 stores its settings in each user folder rather than attempting to write to its own base directory (which often fails due to security considerations).
+
+=== Better image I/O ===
+
+ImageJ2 uses the [http://loci.wisc.edu/software/scifio SCIFIO] (SCientific Image Format Input/Output) library, the core of [http://loci.wisc.edu/software/bio-formats Bio-Formats], for reading and writing image files on disk. Doing so provides a uniform, extensible solution to image I/O, as well as a defined way to add support for new file formats that work not just in ImageJ2, but in [http://loci.wisc.edu/bio-formats/applications any software package that uses SCIFIO and/or Bio-Formats].
+
+=== Spectral-lifetime visualization ===
+
+[[File:Slim-plugin_0.png|440px|thumb|The SLIM Plugin for time-domain analysis of spectral lifetime data is available as part of the LOCI Fiji plugins.]] In tandem with the ImageJ 2.0.0-beta1 release, we are releasing a new alpha version of [http://loci.wisc.edu/software/slim-plugin SLIM Plugin], a plugin for time-domain analysis of spectral lifetime data. It is currently available for Fiji and ImageJ2 as part of the [http://loci.wisc.edu/software/fiji-plugins LOCI Fiji plugins].
+
+This initial release is alpha quality and should not be used for serious work. It has been written for ImageJ1, and does not currently work in ImageJ2; however, future releases will be written specifically for ImageJ2.
+
+=== Headless image processing ===
+
+At the most recent [[2011-12-14 - Fiji Hackathon in Dresden|Fiji/ImageJ2 hackathon]] we focused on interoperability between ImageJ2 and several other software packages, including [http://www.knime.org/ KNIME], [http://www.bioimageanalysis.org/icy/ Icy] and [http://www.openmicroscopy.org/site/support/omero4 OMERO]. Because ImageJ2 completely isolates image processing logic from user interface, each of these projects can provide robust support for invoking ImageJ2 plugins.
+
+* '''CellProfiler''' - Includes support for executing ImageJ2 plugins as part of a pipeline. CellProfiler builds a user interface to harvest plugin input parameters the same way it does for its native modules, then passes the information to ImageJ2 for execution. Results are converted back into CellProfiler data structures once the plugin finishes running.
+* '''KNIME''' - The [http://tech.knime.org/community/image-processing KNIME Image Processing] nodes add support for image processing within KNIME, including N-dimensional image processing using [[ImgLib2]], as well as initial support for running ImageJ2 plugins as part of a KNIME workflow.
+* '''OMERO''' - Experimental support for executing ImageJ2 plugins from within [http://www.openmicroscopy.org/site/support/omero4/clients/insight OMERO.insight] (client-side), as well as initial steps toward execution within [http://www.openmicroscopy.org/site/support/omero4/server OMERO.server] (server-side).
+
+=== Maven artifacts ===
+
+We have released all components of ImageJ2 and ImgLib2 as [http://maven.apache.org/ Maven] artifacts, available from the [http://maven.imagej.net/ ImageJ Maven repository]. The groupId for ImageJ2 is &quot;net.imagej&quot; and it is &quot;net.imglib2&quot; for ImgLib2.
+
+For more about the Maven artifacts associated with the release, see [http://trac.imagej.net/ticket/1050#comment:2 this technical note].
+
+== The ImageJ2 logo ==
+
+[[File:Imagej2-icon.png|128px|left]] You may have noticed the [https://github.com/imagej/imagej/blob/master/logo/imagej.png new microscope logo] for ImageJ2. This image is not the final logo. The plan is to solicit community submissions for a logo, then vote on the mailing list to decide. The current logo is a placeholder image being used during the beta phase of development.
+
+For more details on the logo including source and design credits, see [https://github.com/imagej/imagej/tree/master/logo this readme].
+
+== Roadmap and future directions ==
+
+We make a substantial effort to document the work we are doing, and what needs to be done, to deliver a powerful and full-featured ImageJ2. All tasks are tracked by our Trac issue tracking system, which you can review in several ways:
+
+* [http://trac.imagej.net/roadmap Roadmap] - Top level overview of future releases, including progress toward each release
+* [http://trac.imagej.net/report/14 Active Features by Milestone] - A high-level list of features slated for each future release
+* [http://trac.imagej.net/report/16 Active Bugs] - A complete list of known bugs
+* [http://trac.imagej.net/report/3 Active Tickets by Milestone] - A complete list of everything left to do for each future release
+
+You can also perform custom queries to further refine the results, if there are particular parts of the development that interest you.
+
+== Thanks ==
+
+Thanks for your interest in ImageJ2! Please [[downloads|give it a try]], and feel free to [[Bugs|report any bugs you find]]!
