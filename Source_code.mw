@@ -54,48 +54,7 @@ Note that these tutorials are targeted towards [[ImageJ]], but would apply to an
 
 == Javadocs ==
 
-{{Tip | tip=You can search the javadocs at http://search.imagej.net/ using the Javadoc button!}}You can browse the [http://javadoc.imagej.net/ Javadocs] online.
-
-Each organization has its own [[Git]] repository and [[Jenkins]] job responsible for generating its javadocs:
-{| class="wikitable nicetable"
-| '''Logo'''
-| '''Organization'''
-| '''Javadocs'''
-| '''Git repository'''
-| '''Jenkins job'''
-|-
-| [[File:Scijava-icon.png|28px]]
-| [https://github.com/scijava SciJava]
-| {{Javadoc | project = SciJava | label = SciJava}}
-| {{GitHub | org = scijava | repo = scijava-javadoc | label = scijava-javadoc}}
-| {{Jenkins | job = SciJava-javadoc}}
-|-
-| [[File:Imagej2-icon.png|28px]]
-| [https://github.com/imagej ImageJ]
-| {{Javadoc | project = ImageJ | label = ImageJ}}
-| {{GitHub | org = imagej | repo = imagej-javadoc | label = imagej-javadoc}}
-| {{Jenkins | job = ImageJ-javadoc}}
-|-
-| [[File:Imglib2-icon.png|28px]]
-| [https://github.com/imglib ImgLib]
-| {{Javadoc | project = ImgLib2 | label = ImgLib2}}
-| {{GitHub | org = imglib | repo = imglib2-javadoc | label = imglib2-javadoc}}
-| {{Jenkins | job = ImgLib2-javadoc}}
-|-
-| [[File:Scifio-icon.png|28px]]
-| [https://github.com/scifio SCIFIO]
-| {{Javadoc | project = SCIFIO | label = SCIFIO}}
-| {{GitHub | org = scifio | repo = scifio-javadoc | label = scifio-javadoc}}
-| {{Jenkins | job = SCIFIO-javadoc}}
-|-
-| [[File:Fiji-icon.png|28px]]
-| [https://github.com/fiji Fiji]
-| {{Javadoc | project = Fiji | label = Fiji}}
-| {{GitHub | org = fiji | repo = fiji-javadoc | label = fiji-javadoc}}
-| {{Jenkins | job = Fiji-javadoc}}
-|}
-
-All SciJava projects use a [https://github.com/scijava/pom-scijava/blob/pom-scijava-5.4.0/pom.xml#L1393-L1418 build-javadoc] profile to standardize configuration for the [http://maven.apache.org/plugins/maven-javadoc-plugin/ Maven Javadoc plugin]. This allows the Jenkins jobs to aggregate javadoc for their project with its direct Maven dependencies.
+{{JavadocSection}}
 
 == Running ImageJ1 unit tests ==
 
