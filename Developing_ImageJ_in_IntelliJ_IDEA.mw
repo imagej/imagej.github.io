@@ -1,5 +1,4 @@
-{{DevelopMenu | source}}
-This article explains how to install and configure IntelliJ IDEA for use with [[ImageJ]] development. Directions correspond to IntelliJ IDEA 11.1, and may need adjustment for other versions.
+{{DevelopMenu | source}}This article explains how to install and configure IntelliJ IDEA for use with [[ImageJ]] development. Directions correspond to IntelliJ IDEA 11.1, and may need adjustment for other versions.
 
 == Install and configure IDEA ==
 
@@ -35,7 +34,7 @@ The project automatically builds before launching, so it may take a little while
 === Renaming SciJava <code>@Plugin</code> annotated classes ===
 When renaming a classname which was annotated with SciJava's <code>@Plugin</code> annotation, an error may occur during launch of the application looking like:
 
-<pre>
+<source>
 [ERROR] Exception during event handling:
 	[Event] org.scijava.module.event.ModulesUpdatedEvent
 	context = org.scijava.Context@1a05aced
@@ -48,9 +47,7 @@ When renaming a classname which was annotated with SciJava's <code>@Plugin</code
 java.lang.IllegalStateException: Can't overwrite cause with org.scijava.InstantiableException: Class not found: 
 
 the.plugin.you.just.Renamed
-</pre>
-
-
+</source>
 The error may be related to some caching mechanism in the IDE. The solution is to clear the caches, e.g. by running <code>mvn clean</code> from the maven panel.
 
 
