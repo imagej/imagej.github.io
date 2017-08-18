@@ -1,6 +1,5 @@
-I only have one ImageJ/Fiji plugin to date.
 
-plugins/Read_and_Write_Excel-1.0.1.jar (Installation instructions at bottom of this page)
+plugins/Read_and_Write_Excel-1.0.2.jar (Installation instructions at bottom of this page)
 
 Created in Eclipse IDE Mars.1 release (4.5.1), using the java jdk1.6.0_45 for ImageJ/Fiji compatibility.
 
@@ -10,15 +9,17 @@ Release date:
 
 25 Nov 2015 v1.0.1
 
+10 April 2017 v1.0.2
+
 Description :
-This plugin extracts data from the Results Table and adds it to a sheet-tab "A" in an .xlsx Excel file on the user's desktop. The plugin will create a file named "Rename me after writing is done" on the desktop if none-exists already, and will update this file if it has already been created. Data is added to the latest sheet (created as "A" if the file is new). Within the latest sheet, data will be added adjacent to previous data. Results Table column headers are added automatically (I'm not sure if custom headers are supported as I haven't tested this yet).
+This plugin extracts data from the Results Table and adds it to a sheet-tab "A" in an .xlsx Excel file on the user's desktop. The plugin will create a file named "Rename me after writing is done" on the desktop if none-exists already, and will update this file if it has already been created. Data is added to the latest sheet (created as "A" if the file is new). Within the latest sheet, data will be added adjacent to previous data. Results Table column headers are added automatically.
 
 This plugin can be called from a macro using:
 run("Read and Write Excel");
 and it works very well with batching.
 
-For legacy purposes, the data can also be fed to the plugin as a single-line string argument, in which case this will take priority over the open Results Table e.g.:
-run("Read and Write Excel", arg);
+The title of the first open image will be added as a label for exported results data by default. The argument function can also be used to overwrite this, so that the user may provide their own title for each export:
+run("Read and Write Excel", "This is my new title");
 
 I am aware that another Excel_Writer plugin exists but it did not work for me very well (hence me creating this). I did not consult their source code but did find out about Apache POI(*) from them.
 
@@ -30,6 +31,11 @@ Version 1.0.1 changes:
 1) package is not bloated by dependency .jar files.
 2) now contains source-code for reference.
 3) removed platform specification as I believe this plugin will work across operating systems.
+
+Version 1.0.2 changes:
+1) the legacy feature was removed that allowed data to be fed to the plugin in a single-line string to the 'arg' function
+2) all data is now exported as string/text into the generated spreadsheet. This is sub-optimal, in that cells will then need to be converted back to a number format in the spreadsheet, but was required to immediately fix an issue whereby string data (when it exists within the Results table) was not being handled properly by the plugin
+3) Replaced the legacy data import function of the argument line (note 1 above) with an allowance for user supplied headings for each import; the argument now accepts a string title (e.g "this is my new title") that will then be used to label the results when exported.
 
 Author:
 Anthony Sinadinos
