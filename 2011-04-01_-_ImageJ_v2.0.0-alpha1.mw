@@ -1,0 +1,12 @@
+Today we are releasing the first alpha of ImageJ2, version 2.0.0-alpha1. This is an "alpha"-quality release, meaning the code is not finished, nor is the design fully stabilized. We are releasing it for early community feedback, and to demonstrate project directions and progress.
+
+DO NOT USE THIS RELEASE FOR ANYTHING IMPORTANT.
+
+For this release, we have tried to model the application after ImageJ v1.x as much as is reasonable. However, please be aware that version 2.0.0 is essentially a total rewrite of ImageJ from the ground up. It provides backward compatibility with older versions of ImageJ by bundling the latest v1.x code and translating between "legacy" and "modern" image structures.
+
+For further details on the release, see the <code>README.txt</code> file included with the distribution.
+
+We have also posted a [[2011 Hackathon in Madison|summary of the Fiji/ImageJDev hackathon]] hosted in Madison this past February. Thanks to all who participanted!
+
+[[Category:News]]
+[[Category:ImageJ2]]
