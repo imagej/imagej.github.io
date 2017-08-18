@@ -1,0 +1,28 @@
+Today we are releasing a fourth alpha of ImageJ2, version 2.0.0-alpha4. This is an "alpha"-quality release, meaning the code is not finished, nor is the design fully stabilized. We are releasing it for early community feedback, and to demonstrate project directions and progress.
+
+Unfortunately, the code is still not far enough along to be called "beta," as we are still working through some remaining design issues as well as strengthening compatibility with ImageJ v1.x. See the [[downloads|Downloads page]] for our revised timetable.
+
+DO NOT USE THIS RELEASE FOR ANYTHING IMPORTANT.
+
+For this release, like previous alpha releases, we have tried to model the application after ImageJ v1.x as much as is reasonable. However, please be aware that version 2.0.0 is essentially a total rewrite of ImageJ from the ground up. It provides backward compatibility with older versions of ImageJ by bundling the latest v1.x code and translating between "legacy" and "modern" image structures.
+
+ImageJ v2.0.0-alpha4 has made substantial progress in many areas:
+
+* Better image displays:
+** Autoscaling based on minimum and maximum pixel values.
+** Bounds checking when compositing multiple channels.
+* Many bugfixes and improvements to overlay support:
+** Better translation between IJ1 and IJ2 ROIs.
+** IJ2 Crop plugin now operates on the selected region.
+* Better services architecture:
+** Initial support for multiple simultaneous instances of ImageJ.
+* Lots of improvements to the extensibility framework:
+** New "Dynamic Plugins" can customize their inputs and outputs at runtime.
+** Eliminated use of plugin-specific code wherever possible in favor of more general module interfaces.
+* New Command Finder plugin (Ctrl+L).
+* Several new debugging plugins (in {{bc | Plugins | Debug}}).
+
+For further details on the release, see the <code>README.txt</code> file included with the distribution.
+
+[[Category:News]]
+[[Category:ImageJ2]]
