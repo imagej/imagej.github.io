@@ -1,3 +1,14 @@
+*After opening a XML file the main windows will appear in the '''Stitching Mode'''. A list will all the views will appear.
+
+*At the top the name of the currently open .XML will appear.
+*"Info" shows extended information of all Views in the current XML file.
+*The "Save" button saves all current changes done to the XML.
+
+*The views can be grouped by different attributes. In this case views are grouped by Channels and Illuminations. Different Timepoints or Angles are accesed by the drop-down menu at the bottom.
+
 [[File:BigStitcher_Overview_1.png|center]]
+
+*The selected Vies can be visualized using the BigDataViewer
 [[File:BigStitcher_Overview_2.png|center]]
+*Right-click on the desired views will open a menu with further options.
 [[File:BigStitcher_Overview_3.png|center]]
