@@ -39,7 +39,7 @@ The source code is available {{GitHub|org=PreibischLab|repo=BigStitcher}}, pleas
 
 *[[BigStitcher_Pairwise_shift|Pairwise shift calculation]]
 
-*Previewing and filtering pairwise shifts
+*[[BigStitcher_Preview_Pairwise_shift|Previewing and filtering pairwise shifts]]
 
 *Global optimization
 
