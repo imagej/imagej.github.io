@@ -29,10 +29,12 @@ The source code is available {{GitHub|org=PreibischLab|repo=BigStitcher}}, pleas
 
 === Pre-alignment ===
 
-=== Pairwise shift calculation ===
+=== Stitching ===
 
-=== Previewing and filtering pairwise shifts ===
+*Pairwise shift calculation ===
 
-=== Global optimization ===
+*Previewing and filtering pairwise shifts ===
+
+*Global optimization ===
 
 === Fusion ===
