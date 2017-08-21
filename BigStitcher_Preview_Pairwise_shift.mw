@@ -1,8 +1,10 @@
-*After the calculation of the pairwise shift the Preview Mode will open automatically. You can always access the preview mode by selecting the desired views and right-click "Toggle Preview Mode (on/off)".
+*Once the pairwise shifts between views has been calculated you can preview the links and correlation coefficients. It is important to screen the results and remove erroneous links.
+
+*For this purpose use the Preview Mode. You can always access the preview mode by selecting the desired views and right-click "Toggle Preview Mode (on/off)".
 
 *In the BigDataViewer you can see the linked views for the selected view. At the same time in the "Link Explorer" window, the calculated cross correlation value and calculated shift will appear. Here, you can also filter links by correlation coefficient, shift dimensions or shift magnitude. 
-*Apply your filtering criteria to the actual view by clicking "Apply" or to all links in all views by clicking "Apply to all links". You can also manually delete links by selecting the corresponding link and righ-click "delete link"
+*Apply your filtering criteria to the actual view by clicking "Apply" or to all links in all views by clicking "Apply to all links". You can also manually delete links by selecting the corresponding link and right-click "delete link"
 
-*Once stisfied with the results close the "Link Explorer" and continue with the [[BigStitcher_Global_optimization|global optimization]].
+*Once satisfied with the results close the "Link Explorer" and continue with the [[BigStitcher_Global_optimization|global optimization]].
 
 [[File:BigStitcher_stitch_4_1.png]][[File:BigStitcher_stitch_4_2.png]]
