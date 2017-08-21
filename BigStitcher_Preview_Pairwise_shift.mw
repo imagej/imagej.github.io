@@ -1,4 +1,9 @@
-*In the '''Stitching Mode''' select the views for the pairwise shit calculation. Then right-click and select "Calculate Pairwise Shift".
-[[File:BigStitcher_stitch_4_1.png|center]]
+*After the calculation of the pairwise shift the Preview Mode will open automatically. You can always access the preview mode by selecting the desired views and right-click "Toggle Preview Mode (on/off)".
 
-[[File:BigStitcher_stitch_4_2.png|center]]
+In the BigDataViewer you can see the calculated links for the selected view. At the same time in the "Link Explorer" window, the calculated cross correlation value and calculated shift will appear. Here, you can also filter links by correlation coefficient, shift dimensions or shift magnitude. You can apply your filtering criteria to the actual view by clicking "Apply" or to all links in all views by clicking "Apply to all links".
+
+You can also manually delete links by selecting the corresponding link and righ-click "delete link"
+
+[[File:BigStitcher_stitch_4_1.png]]
+
+[[File:BigStitcher_stitch_4_2.png]]
