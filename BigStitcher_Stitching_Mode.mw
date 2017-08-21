@@ -1,7 +1,11 @@
-*After opening a XML file the main windows will appear in the '''Stitching Mode'''. A list will all the views will appear.
+*After opening a XML file the main windows will appear in the '''Stitching Mode'''. In this mode all necessary steps for image stitching are performed
+
+*I the center of the window a list shows all available views for given Timepoint and Angle.
 
 *At the top the name of the currently open .XML will appear.
+
 *"Info" shows extended information of all Views in the current XML file.
+
 *The "Save" button saves all current changes done to the XML.
 
 *The views can be grouped by different attributes. In this case views are grouped by Channels and Illuminations. Different Timepoints or Angles are accesed by the drop-down menu at the bottom.
