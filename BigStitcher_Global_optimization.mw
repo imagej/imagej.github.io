@@ -1,11 +1,18 @@
-*Once satisfied with the results close the "Link Explorer" and continue with the [[BigStitcher_Global_optimization|global optimization]].
+*After calculating and previewing pairwise shift results you can proceed to the global optimization.
+
+*This can be done automatically after exiting the Preview Mode or by selecting the respective tiles and right-click "Optimize Globally and Apply Shift"
+
+*Now, select the cross-correlation, relative error and absolute error threshold. Also specify if a two-round optimization is desired and if weak links between overlapping views should be allowed. 
 
 [[File:BigStitcher_stitch_5.png|center]]
 
+*Select weather all instances of an attribute or just the specified views should be processed.
+
 [[File:BigStitcher_stitch_6.png|center]]
 
-[[File:BigStitcher_stitch_7.png|center]]
+Select how to process the different attributes.
 
 [[File:BigStitcher_stitch_8.png|center]]
 
+Select what view should be used 
 [[File:BigStitcher_stitch_9.png|center]]
