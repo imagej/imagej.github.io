@@ -43,10 +43,14 @@ The source code is available {{GitHub|org=PreibischLab|repo=BigStitcher}}, pleas
 
 *[[BigStitcher_Global_optimization|Global optimization]]
 
-=== Fusion ===
+=== MultiView registration===
 
 *Manual translation
 
 *Interest point detection
 
 *Registration
+
+=== Fusion ===
+
+*Fuse & Export
