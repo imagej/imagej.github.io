@@ -54,6 +54,8 @@ eval("script", "System.exit(0);");
 
 the <code>getArgument()</code> is used to graph the parameter string itself, and it is then passed to an IJ command.
 
+{{Warning | Please note that you will not be able to use [[script parameters]] with <code>-macro</code>. Follow instructions in [[Scripting Headless]] instead.}}
+
 == Xvfb ==
 
 Another method is to have a virtual desktop, e.g. [[wikipedia:Xvfb|Xvfb]]. This will allow ImageJ to start with a virtualised graphical desktop.
