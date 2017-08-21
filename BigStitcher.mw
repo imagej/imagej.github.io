@@ -25,7 +25,15 @@ The source code is available {{GitHub|org=PreibischLab|repo=BigStitcher}}, pleas
 
 === UI Overview ===
 
+*Stitching mode
+
+*MultiView mode
+
 === Pre-alignment ===
+
+*BigDataViewer
+
+*Illumination selection
 
 === Stitching ===
 
@@ -36,3 +44,9 @@ The source code is available {{GitHub|org=PreibischLab|repo=BigStitcher}}, pleas
 *Global optimization
 
 === Fusion ===
+
+*Manual translation
+
+*Interest point detection
+
+*Registration
