@@ -1,5 +1,13 @@
-*[[File:BigStitcher_Illu_1.png|center]]
+* When views have more than one illumination, you can select the best one by right-click on the desired views and selecting "Select Best Illuminations"
 
-*[[File:BigStitcher_Illu_2.png|center]]
+*Select which views should be processed and if you want to review the selections before applying.
 
-*[[File:BigStitcher_Illu_3.png|center]]
+[[File:BigStitcher_Illu_1.png|center]]
+
+* If the "Show selection results before applying" option was selected a new windows showing the assigned illumination for all selected views will appear. The selected illumination can be manually changed by selecting the right Illumination attribute.
+
+[[File:BigStitcher_Illu_2.png|center]]
+
+*After selecting the best illumination, only the chosen illumination will be used for the stitching and will appear in the DataViewer.
+
+[[File:BigStitcher_Illu_3.png|center]]
