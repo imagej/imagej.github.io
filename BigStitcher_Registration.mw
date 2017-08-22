@@ -1,3 +1,9 @@
-*To register views desired views, first detect the [[BigStitcher_Interest_points|intereset points]]. Then select the views to be registered and by right-click choose "Register using Interest Points".
+*To register views, first detect the [[BigStitcher_Interest_points|interest points]]. Then select the views to be registered and by right-click choose "Register using Interest Points".
+
+*Choose the registration algorithm.
+**'''Fast 3d geometric hashing (rotation invariant)'''
+**'''Redundant geometric local descriptor (translation invariant)'''
+**'''Center of Mass(translation invariant)'''
+**'''Iterative closest-point (ICP, no invaraince)'''
 
 [[File:BigStitcher_Register_5]]
