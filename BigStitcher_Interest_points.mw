@@ -2,14 +2,18 @@
 
 *In '''Multiview Mode''' choose the desired views and by right-click select the "Detect Interest Points" option.
 
-*Select the detection method and give a label for the detection
+*Select the detection method and give a label for the detection. 
 
-[[File:BigStitcher_Register_1.png]]
+[[File:BigStitcher_Register_1.png|center]]
 
-[[File:BigStitcher_Register_2.png]]
+*For Difference of Gaussian choose the parameters and the downsampling factor.
 
-[[File:BigStitcher_Register_3.png]]
+[[File:BigStitcher_Register_2.png|center]]
 
-[[File:BigStitcher_Register_4_1.png]]
+*Now choose the view that will be used to check for the detection parameters. Using the sliders you can specify how much percentage in z of the image should be displayed.
 
-[[File:BigStitcher_Register_4_2.png]]
+[[File:BigStitcher_Register_3.png|center]]
+
+*The fused image will appear together with a windows where the values for the interest point detection can be specified. Change "Sigma 1" and the "Threshold" until statifed with the detection. You can interactively go through the Z-stack and preview the detected interest points. To apply parameters to all selected views, select "Done".
+
+[[File:BigStitcher_Register_4_1.png]][[File:BigStitcher_Register_4_2.png]]
