@@ -47,9 +47,9 @@ The source code is available {{GitHub|org=PreibischLab|repo=BigStitcher}}, pleas
 
 *Manual translation
 
-*Interest point detection
+*[[BigStitcher_Interest_points|Interest point detection]]
 
-*Registration
+*[[BigStitcher_Registration|Registration using interest points]]
 
 === Fusion ===
 
