@@ -14,6 +14,6 @@
 
 [[File:BigStitcher_Register_3.png|center]]
 
-*The fused image will appear together with a windows where the values for the interest point detection can be specified. Change "Sigma 1" and the "Threshold" until statifed with the detection. You can interactively go through the Z-stack and preview the detected interest points. To apply parameters to all selected views, select "Done".
+*The fused image will appear together with a windows where the values for the interest point detection can be specified. Change "Sigma 1" and the "Threshold" until satisfied with the detection. You can interactively go through the Z-stack and preview the detected interest points. To apply parameters to all selected views, select "Done".
 
 [[File:BigStitcher_Register_4_1.png]][[File:BigStitcher_Register_4_2.png]]
