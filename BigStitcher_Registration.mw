@@ -2,8 +2,12 @@
 
 *Choose the registration algorithm.
 **'''Fast 3d geometric hashing (rotation invariant)'''
+***[[File:BigStitcher_rotation_invariant.png|center]]
 **'''Redundant geometric local descriptor (translation invariant)'''
+***[[File:BigStitcher_translation_invariant.png|center]]
 **'''Center of Mass(translation invariant)'''
+***[[File:BigStitcher_center_mass.png|center]]
 **'''Iterative closest-point (ICP, no invaraince)'''
+***[[File:BigStitcher_Register_ICP.png|center]]
 
-[[File:BigStitcher_Register_5]]
+[[File:BigStitcher_Register_5.png|center]]
