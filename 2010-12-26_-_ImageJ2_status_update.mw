@@ -1,5 +1,11 @@
 The following is a status update on the [[ImageJ2]] project as of 26 December 2010.
 
+[[File:ij2-gui-ij1-plugins.png|415px|thumb|'''ImageJ2 user interface with discovered plugins:''' We have created a very simple Swing user interface, with menus populated with both IJ1 and IJ2 plugins loaded using the new plugin discovery mechanism. (We will address the out-of-order menus very soon.)]]
+
+[[File:ij2-gui-open-dialog.png|571px|thumb|'''ImageJ2 user interface loading data:''' The new interface invokes an IJ2 plugin to load images.]]
+
+[[File:ij2-gui-image-window.png|455px|thumb|'''ImageJ2 user interface displaying an image:''' The new interface displays the image in a simple N-dimensional image browser.]]
+
 === Core ImageJDev work ===
 
 ==== Unit tests ====
@@ -13,12 +19,6 @@ We have designed initial versions of several aspects of the ImageJ2 architecture
 ==== ImageJ2 user interface ====
 
 Though our eventual goal is to create a [[modularity|rich ImageJ client application]] using the NetBeans RCP, for the time being we have created a barebones, proof-of-concept user interface to test the feasibility of the current architecture.
-
-[[File:ij2-gui-ij1-plugins.png|415px|thumb|'''ImageJ2 user interface with discovered plugins:''' We have created a very simple Swing user interface, with menus populated with both IJ1 and IJ2 plugins loaded using the new plugin discovery mechanism. (We will address the out-of-order menus very soon.)]]
-
-[[File:ij2-gui-open-dialog.png|571px|thumb|'''ImageJ2 user interface loading data:''' The new interface invokes an IJ2 plugin to load images.]]
-
-[[File:ij2-gui-image-window.png|682px|thumb|'''ImageJ2 user interface displaying an image:''' The new interface displays the image in a simple N-dimensional image browser.]]
 
 === Spectral lifetime visualization ===
 
