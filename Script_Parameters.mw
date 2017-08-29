@@ -19,17 +19,11 @@ The rules for <code>#@parameter</code> use are as follows:
 }}
 For example, if we look at the [https://github.com/scijava/scripting-jython/blob/scripting-jython-0.2.0/src/main/resources/script_templates/Python/Greeting.py Greeting.py] [[Script_Templates|template]] supplied with Fiji:
 
-<source lang="python">
-#@String name
-#@output String greeting
-
-# A Jython script with parameters.
-# It is the duty of the scripting framework to harvest
-# the 'name' parameter from the user, and then display
-# the 'greeting' output parameter, based on its type.
-
-greeting = "Hello, " + name + "!"
-</source>
+{{GitHubEmbed
+| org = scijava
+| repo = scripting-jython
+| path = src/main/resources/script_templates/Intro/Greeting.py
+}}
 
 We see that an input parameter <code>name</code> of type <code>String</code> is declared. <code>@Parameters</code> are handled automatically by the framework; if we run this script when the User Interface is available (e.g. from the script editor), the <code>name</code> parameter will automatically be harvested via a pop-up dialog:
 
