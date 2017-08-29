@@ -103,7 +103,7 @@ method
 | pages = 1035-1053
 }}
 
-Ported from Antti Niemist&ouml;'s [[MATLAB]] code. See [http://www.cs.tut.fi/~ant/histthresh/ here] for an excellent slide presentation and his original [[MATLAB]] code.
+Ported from Antti Niemist&ouml;'s [[MATLAB]] code. See [https://github.com/carandraug/histthresh here] for an excellent slide presentation and his original [[MATLAB]] code.
 
 
 === IsoData ===
