@@ -62,17 +62,17 @@ More examples could be found in
 
 == Parameters ==
 [[File:Trajclassifier_gui.png|300px|thumb]]
-'''Minimal tracklength:''' Minimal number of positions in a trajectory. It has to be greater than the window size. As the window size should be at least 30, the same is true for the minimal tracklength.
+'''Minimal track length:''' Minimal number of positions in a trajectory. It has to be greater than the window size. As the window size should be at least 30, the same is true for the minimal track length.
 
 '''Window size:''' The parameter determines how many positions are used in the sliding window.
 
-'''Minimal segment size:''' After classification of a trajectory it consistes of several segments. This parameter determines the minimal segment length. Segments smaller than this length (number of positions) will be removed. It is good rule of thumb to set this parameter to same value as the window size because segments which are smaller than the window size seems to be more error prone.
+'''Minimal segment size:''' After classification of a trajectory it consists of several segments. This parameter determines the minimal segment length. Segments smaller than this length (number of positions) will be removed. It is good rule of thumb to set this parameter to same value as the window size because segments which are smaller than the window size seems to be more error prone.
 
-'''Resample rate:''' During the local analysis using a sliding window, one trajectory is splitted into several subtrajectories. In very noisy cases it could make sense to resample the subtrajectories to increase the signal to noise ratio (e.g. if the rate is set to 2, then only every second position is used in the trajectory). However, we belief that a trajectory should contain at least 30 position therefore the ratio of windowsize and the resample rate should be >= 30.
+'''Resample rate:''' During the local analysis using a sliding window, one trajectory is split into several subtrajectories. In very noisy cases it could make sense to resample the subtrajectories to increase the signal to noise ratio (e.g. if the rate is set to 2, then only every second position is used in the trajectory). However, we believe that a trajectory should contain at least 30 position therefore the ratio of window size and the resample rate should be >= 30.
 
-'''Pixelsize:''' Size of a single pixel in µm. However, if your TrackMate data is already scaled, set it to zero.
+'''Pixel size:''' Size of a single pixel in µm. However, if your TrackMate data is already scaled, set it to zero.
 
-'''Framerate:''' Frames per second
+'''Frame rate:''' Frames per second
 
 '''Use reduced model for confined motion:''' The shape constants for the [https://github.com/thorstenwagner/TraJ/wiki#mean-square-displacement confined diffusion MSD model] are set to 1.
 
