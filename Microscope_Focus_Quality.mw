@@ -1,0 +1,41 @@
+[[File:Mifqc.png|900px]]
+{{Component
+| name = Microscope Image Focus Quality Classifier
+| url = https://imagej.net/Microscope_Focus_Quality
+| source = {{GitHub | org=fiji | repo=microscope-image-quality | tag=microscope-image-quality-0.1.0}}
+| license = [[Apache]]
+| release = {{Maven | g=sc.fiji | a=microscope-image-quality | v=0.1.0 | label=0.1.0}}
+| devStatus = {{DevStatus | developer=yes | incubating=yes | obsolete=no}}
+| supportStatus = {{SupportStatus | debugger=yes | reviewer=yes | support=yes}}
+| founders = {{Person|ctrueden}}, {{Person|samueljyang}}, {{Person|asimshankar}}
+| leads = {{Person|ctrueden}}
+| developers = {{Person|ctrueden}}
+| debuggers = {{Person|ctrueden}}
+| reviewers = {{Person|ctrueden}}
+| support = {{Person|ctrueden}}
+| maintainers = {{Person|ctrueden}}
+| contributors = {{Person|samueljyang}}, {{Person|asimshankar}}
+}}This plugin assesses the focus quality of microscope images, classifying the image in tiles.
+
+== Summary ==
+
+The plugin predicts an absolute measure of image focus on a single image in isolation, without any user-specified parameters. It uses a pre-trained deep neural network, operating at the image-patch level, and also outputs a measure of prediction certainty, enabling interpretable predictions.
+
+== Installation ==
+
+* [[Following an update site|Enable]] the TensorFlow [[update site]].
+* The command is in {{bc | Classification | Microscope Image Focus Quality}}.
+
+== Limitations ==
+
+The plugin is currently limited to 16-bit integer data only. The model was trained with images in the intensity range of <code>[0, ~10000]</code>; your mileage may vary if the input image intensities diverge from that too greatly.
+
+== Publication ==
+
+* {{Publication | Microscope Image Quality}}
+
+== See also ==
+
+* [[TensorFlow]], the machine learning library this plugin uses.
+
+[[Category:Citable]]
