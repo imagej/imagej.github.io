@@ -16,7 +16,7 @@ The [https://github.com/imagej/imagej-tensorflow ImageJ-TensorFlow] project enab
 == See also ==
 * {{GitHub | org=imagej | repo=imagej-tensorflow | label=ImageJ-TensorFlow on GitHub}}.
 * The TensorFlow [[update site]] to make TensorFlow features available in ImageJ.
-* [[Microscope Image Quality]], an ImageJ plugin which uses TensorFlow.
+* [[Microscope Focus Quality]], an ImageJ plugin which uses TensorFlow.
 
 [[Category:Related Software]]
 [[Category:Citable]]
