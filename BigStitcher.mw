@@ -9,6 +9,10 @@
 
 == Introduction & Overview ==
 
+The BigStitcher is a software package that allows simple and efficient alignment of multi-tile and multi-angle image datasets, for example acquired by lightsheet, widefield or confocal microscopes. The software supports images of almost arbitrary size ranging from very small images up to volumes in the range of many terabytes, which are for example produced when acquiring cleared tissue samples with lightsheet microscopy. 
+
+While the BigStitcher can run in fully automatically mode (like [[Image Stitching]]), it can also guide the user through the alignment process by interactively showing intermediate results with the option for user interaction. The BigStitcher is fully integrated with the [[BigDataViewer]] and is thus able to interactively display the input images independent of their size. 
+
 == Download ==
 
 An '''alpha'''-Version of BigStitcher is available via the Fiji Updater. Just go to {{bc | Help | Update...}}, click <code>Manage update sites</code> and select <code>BigStitcher</code> in the list. After applying the changes and restarting Fiji, BigStitcher will be available under {{bc | Plugins | BigStitcher | BigStitcher}}.
