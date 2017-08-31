@@ -29,9 +29,10 @@ The source code is available {{GitHub|org=PreibischLab|repo=BigStitcher}}, pleas
 == Documentation ==
 
 The workflow of the BigStitcher consists of multiple steps, which will be explained in full detail under the respective pages linked below:
-# [[BigStitcher_Define_new_dataset|Defining a new dataset]]
+# === Importing Data ===
+[[BigStitcher_Define_new_dataset|Defining a new dataset]]
 
-=== Importing Data ===
+
 
 *[[BigStitcher_Open_existing|Opening an existing project]]
 
