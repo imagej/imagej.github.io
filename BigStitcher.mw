@@ -11,7 +11,16 @@
 
 The BigStitcher is a software package that allows simple and efficient alignment of multi-tile and multi-angle image datasets, for example acquired by lightsheet, widefield or confocal microscopes. The software supports images of almost arbitrary size ranging from very small images up to volumes in the range of many terabytes, which are for example produced when acquiring cleared tissue samples with lightsheet microscopy. 
 
-While the BigStitcher can run in fully automatically mode (like [[Image Stitching]]), it can also guide the user through the alignment process by interactively showing intermediate results with the option for user interaction. The BigStitcher is fully integrated with the [[BigDataViewer]] and is thus able to interactively display the input images independent of their size. 
+As its predecessor, the [[Image Stitching]], the BigStitcher can run in fully automatically mode but is additionally able to guide the user through the alignment process by interactively showing intermediate results with the option for user interaction. The BigStitcher is fully integrated with the [[BigDataViewer]] and is thus able to interactively display and process the input images independent of their size. An improved global optimization is now able to efficiently align sparsely connected datasets, where image content is separated by large areas of almost constant background. 
+
+Specifically intended for lightsheet acquisitions of cleared samples (e.g. by CLARITY), the BigStitcher offers several features:
+The BigStitcher further allows to reconstruct multi-view and multi-tile datasets, where ever view of the sample acquired from different orientations can consist of many individual image tiles. The BigStitcher 
+
+ enable further processing such as fusion and deconvolution of the data. 
+
+Specifically for lightsheet acquisitions of cleared samples (e.g. by CLARITY), the BigStitcher supports a pre-selection of the best illumination direction at every image block in the sample. 
+
+It also supports acquisitions where data is acquired inteli
 
 == Download ==
 
