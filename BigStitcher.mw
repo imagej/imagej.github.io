@@ -19,7 +19,7 @@ Specifically intended for lightsheet acquisitions of cleared samples (e.g. by CL
 * Since cleared samples are typically acquired by a lightsheet microscope that can illuminate from different directions, the BigStitcher supports a pre-selection of the best illumination direction at every image block in the sample
 * Support of non-regular acquisition grids, which includes 'intelligent acquisitions' where some of the image blocks can be missing if only background is present
 
-[[File:BigStitcherTitle.jpg|center|1000px|Illustrates an example of an interactive view of a single-view multi-tile dataset with irregular tiling acquired by lightsheet microscopy.]]
+[[File:BigStitcherTitle.jpg|center|1000px|frame|Illustrates an example of an interactive view of a single-view multi-tile dataset with irregular tiling acquired by lightsheet microscopy.]]
 == Download ==
 
 An '''alpha'''-Version of BigStitcher is available via the Fiji Updater. Just go to {{bc | Help | Update...}}, click <code>Manage update sites</code> and select <code>BigStitcher</code> in the list. After applying the changes and restarting Fiji, BigStitcher will be available under {{bc | Plugins | BigStitcher | BigStitcher}}.
