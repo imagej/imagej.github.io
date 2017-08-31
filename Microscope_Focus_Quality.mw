@@ -26,6 +26,22 @@ The plugin predicts an absolute measure of image focus on a single image in isol
 * [[Following an update site|Enable]] the TensorFlow [[update site]].
 * The command is in {{bc | Classification | Microscope Image Focus Quality}}.
 
+== Usage ==
+
+* Open an image to analyze.
+* Run {{bc | Classification | Microscope Image Focus Quality}}.
+* A dialog will appear allowing you to configure the output visualization. The following options are available:
+** '''Generate probability image''' - When checked, a multi-channel image will be created with one channel per focus level, and each value corresponding to the probability of that sample being at that focus level.
+** '''Overlay probability patches''' - When checked, each classified region of the image will be overlaid with a color whose hue denotes the most likely focus level and whose brightness denotes the confidence (i.e., probability) of the region being at that level.
+** '''Show patches as solid rectangles''' - When checked, overlaid probability patches will be filled semi-transparent and solid; when unchecked, they will be drawn as hollow boundary boxes.
+** '''Displayed patch border width''' - When drawing probability patches as boundary boxes, this option controls the box thickness.
+
+The screenshot above uses the "Overlay probability patches" option with a thickness of 5.
+
+If you wish to access the results of the classification quantitatively (e.g., as part of an automated workflow via [[scripting]]), use the "Generate probability image" option.
+
+You can can remove the probability patches overlay via the {{bc | Image | Overlay | Remove Overlay}} command.
+
 == Limitations ==
 
 The plugin is currently limited to 16-bit integer data only. The model was trained with images in the intensity range of <code>[0, ~10000]</code>; your mileage may vary if the input image intensities diverge from that too greatly.
