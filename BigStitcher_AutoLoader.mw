@@ -25,6 +25,8 @@ After you click '''OK''' in the previous window, the Automatic loader will inves
 
 In the next window, you can review and correct the automatic metadata definition:
 
+[[File:BigStitcherAutoLoader3.png|thumb|300px|Defining metadata for Views.]]
+
 === Views within files ===
 
 We are using [[Bio-Formats]] under the hood. In Bio-Formats, files can include multiple '''series''', each containing multiple '''channels''', time points and z-slices.
@@ -56,7 +58,7 @@ Finally, if we could not find the locations of the individual tiles in the metad
 
 
 
-[[File:BigStitcherAutoLoader3.png|thumb|300px|Defining metadata for Views.]]
+
 
 
 == Loading/Re-saving option ==
