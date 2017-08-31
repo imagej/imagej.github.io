@@ -1,6 +1,10 @@
 == Select to files to include in the dataset ==
 
+In the first window, you can choose which files to include in the dataset.
+
 [[File:BigStitcherAutoLoader1.png|thumb|300px|Select the files to include in the dataset.]]
+
+You can either '''Browse''' for files or directories, drag and drop them to the '''path'''-field or enter a path manually.
 
 To include multiple files in the dataset you can:
 * Select a directory as the path - in that case, all files in that directory (except for the ones filtered out by size) will be included.
@@ -12,6 +16,8 @@ All files that match the pattern you enter will be included in the dataset.
 As you change the path and wildcards, a preview of the files to be included in the dataset will be displayed:
 
 [[File:BigStitcherAutoLoader2.png|thumb|300px|Preview of selected files]]
+
+To prevent the inclusion of small files like operating-system metadata, you can specify a '''minimal size''' for the files to include - smaller files will be ignored (the default of 10KB works fine in most cases).
 
 == Assign metadata ==
 
