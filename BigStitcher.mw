@@ -11,15 +11,15 @@
 
 The BigStitcher is a software package that allows simple and efficient alignment of multi-tile and multi-angle image datasets, for example acquired by lightsheet, widefield or confocal microscopes. The software supports images of almost arbitrary size ranging from very small images up to volumes in the range of many terabytes, which are for example produced when acquiring cleared tissue samples with lightsheet microscopy. 
 
-As its predecessor, the [[Image Stitching]], the BigStitcher can run in fully automatically mode but is additionally able to guide the user through the alignment process by interactively showing intermediate results with the option for user interaction. The BigStitcher is fully integrated with the [[BigDataViewer]] and is thus able to interactively display and process the input images independent of their size. An improved global optimization is now able to efficiently align sparsely connected datasets, where image content is separated by large areas of almost constant background. 
+As its predecessor, the [[Image Stitching]], the BigStitcher can run in fully automatically mode but is additionally able to guide the user through the alignment process by interactively showing intermediate results with the option for user interaction, which includes interactive setup of approximate tile locations. The BigStitcher is fully integrated with the [[BigDataViewer]] and is thus able to interactively display and process the input images independent of their size. An improved global optimization is now able to efficiently align sparsely connected datasets, where image content is separated by large areas of almost constant background.
 
 Specifically intended for lightsheet acquisitions of cleared samples (e.g. by CLARITY), the BigStitcher offers several features:
-* Reconstruction of multi-view multi-tile acquisitions, where each view of the sample that is acquired from different orientations may consist of many individual image tiles.
-* Integrated downstream processing of the data such fusion and deconvolution of the aligned data at different resolution levels (full or reduced resolutions) and for selected areas only (full image or selected parts)
+* Registration of multi-view multi-tile acquisitions, where each view of the sample that is acquired from different orientations may consist of many individual image tiles.
+* Integrated downstream processing of the data such fusion and deconvolution of the aligned data at different resolution levels (full or reduced resolutions) and for selected areas (full image or selected parts)
 * Since cleared samples are typically acquired by a lightsheet microscope that can illuminate from different directions, the BigStitcher supports a pre-selection of the best illumination direction at every image block in the sample
-* It also supports acquisitions where data is acquired inteli
+* Support of non-regular acquisition grids, which includes 'intelligent acquisitions' where some of the image blocks can be missing if only background is present
 
-[[File:BigStitcherTitle.jpg|center|pagewidth|Illustrates an example of an interactive view of a single-view multi-tile dataset with irregular tiling acquired by lightsheet microscopy.]]
+[[File:BigStitcherTitle.jpg|center|1000px|Illustrates an example of an interactive view of a single-view multi-tile dataset with irregular tiling acquired by lightsheet microscopy.]]
 == Download ==
 
 An '''alpha'''-Version of BigStitcher is available via the Fiji Updater. Just go to {{bc | Help | Update...}}, click <code>Manage update sites</code> and select <code>BigStitcher</code> in the list. After applying the changes and restarting Fiji, BigStitcher will be available under {{bc | Plugins | BigStitcher | BigStitcher}}.
