@@ -21,7 +21,42 @@ To prevent the inclusion of small files like operating-system metadata, you can 
 
 == Assign metadata ==
 
-[[File:BigStitcherAutoLoader3.png|thumb|300px|Select the importer and the xml to save the metadata.]]
+After you click '''OK''' in the previous window, the Automatic loader will investigate the specified files and try to assign metadata (channel, illumination direction, time point, view angle and tile) to the dataset automatically. This may take some time (typically a couple of minutes for multi-terabyte datasets).
+
+In the next window, you can review and correct the automatic metadata definition:
+
+=== Views within files ===
+
+We are using [[Bioformats]] under the hood. In Bioformats, files can include multiple '''series''', each containing multiple '''channels''', time points and z-slices.
+
+The automatic loader tries to assign the stacks to different channels, illuminations, tiles, angles and time points automatically and you can review the choices here.
+
+* if there are multiple Bioformats-"channels", but we could not find metadata for them, you will have the option to either assign them to channels or illumination directions.
+
+* if there are multiple "series", but we could not find metadata for them, you will have the option to manually assign them to angles or tiles here.
+
+* time points, if present within files, will be detected automatically.
+
+=== Patterns in filenames ===
+
+In addition to 
+
+=== Calibration (Voxel size) ===
+
+We will try to automatically load voxel sizes from the data and display the result here (only the voxel sizes of the first stack in the dataset are displayed).
+
+If no metadata could be found, this will be set to (1x1x1 pixels).
+
+You have the option of manually setting the calibration by ticking the respective checkbox and providing pixel distances along the 3 axes and the unit they are specified in. This will be applied to all stacks in the dataset, so be careful if the calibrations of your stacks differ (a warning will be displayed her in that case).
+
+=== (Optional) move to regular grid ===
+
+Finally, if we could not find the locations of the individual tiles in the metadata, you can choose to move the stacks into a regular grid here. Possible actions are:
+
+
+
+
+[[File:BigStitcherAutoLoader3.png|thumb|300px|Defining metadata for Views.]]
 
 
 == Loading/Re-saving option ==
