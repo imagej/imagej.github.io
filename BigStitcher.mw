@@ -32,13 +32,13 @@ The workflow of the BigStitcher consists of multiple steps, which will be explai
 
 === Opening / Importing an Image Dataset ===
 
-Since image data is produced in a variety of formats, the first step is to assemble all images into a dataset and load or define the necessary metadata. The BigStitcher is integrated with the [[BigDataViewer]] and thus shares the same data representation, which is stores as a XML file on disk. 
+Since image data is produced in a variety of formats, the first step is to assemble all images into a dataset and load the necessary metadata or manually define it if it is missing. The BigStitcher is integrated with the [[BigDataViewer]] and thus shares the same data representation, which is stores as a XML file on disk. 
 
 [[BigStitcher_Define_new_dataset|Defining a new dataset]]
 
 Once a dataset was defined and the XML file is stored together with the image data, you can quickly load any dataset.
 
-[[BigStitcher_Open_existing|Opening an existing project]]
+[[BigStitcher_Open_existing|Opening an existing dataset]]
 
 === UI Overview ===
 
