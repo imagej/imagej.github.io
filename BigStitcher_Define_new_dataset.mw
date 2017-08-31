@@ -13,7 +13,7 @@ The Automatic Loader is a comprehensive importer that should work with most of i
 * '''Zeiss Lightsheet Z.1 Dataset (Bioformats)'''
 * '''MicroManager diSPIM Dataset'''
 
-'Note: Only one xml per directory is supported right now. '
+''Note: Only one xml per directory is supported right now, even if they have a different filename. ''
 
 *Open BigStitcher from the Plugin menu. In the " Select dataset for Stitching Explorer" select "define a new dataset". 
 [[File:BigStitcher_Import_1.png|center]]
