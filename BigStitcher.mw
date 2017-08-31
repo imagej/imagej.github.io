@@ -4,7 +4,7 @@
 | author                 = {{Person|StephanPreibisch}} & {{Person|hoerldavid}}
 | maintainer             = {{Person|StephanPreibisch}} & {{Person|hoerldavid}}
 | source                 = {{GitHub|org=PreibischLab|repo=BigStitcher}}
-| status                 = unstable
+| status                 = beta
 }}
 
 == Introduction & Overview ==
@@ -22,11 +22,15 @@ Specifically intended for lightsheet acquisitions of cleared samples (e.g. by CL
 [[File:BigStitcherTitle-1.jpg|center|1000px|frame|Illustrates an example of an interactive view of a single-view multi-tile dataset with irregular tiling acquired by lightsheet microscopy.]]
 == Download ==
 
-An '''alpha'''-Version of BigStitcher is available via the Fiji Updater. Just go to {{bc | Help | Update...}}, click <code>Manage update sites</code> and select <code>BigStitcher</code> in the list. After applying the changes and restarting Fiji, BigStitcher will be available under {{bc | Plugins | BigStitcher | BigStitcher}}.
+A '''beta'''-Version of BigStitcher is available via the Fiji Updater. Just go to {{bc | Help | Update...}}, click <code>Manage update sites</code> and select <code>BigStitcher</code> in the list. After applying the changes and restarting Fiji, BigStitcher will be available under {{bc | Plugins | BigStitcher | BigStitcher}}.
 
 The source code is available {{GitHub|org=PreibischLab|repo=BigStitcher}}, please also report feature requests & bugs there.
 
 == Documentation ==
+
+The workflow of the BigStitcher consists of multiple steps, which will be explained in full detail under the respective pages linked below:
+1) test
+2) test
 
 === Importing Data ===
 
