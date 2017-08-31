@@ -27,11 +27,11 @@ In the next window, you can review and correct the automatic metadata definition
 
 === Views within files ===
 
-We are using [[Bioformats]] under the hood. In Bioformats, files can include multiple '''series''', each containing multiple '''channels''', time points and z-slices.
+We are using [[Bio-Formats]] under the hood. In Bio-Formats, files can include multiple '''series''', each containing multiple '''channels''', time points and z-slices.
 
 The automatic loader tries to assign the stacks to different channels, illuminations, tiles, angles and time points automatically and you can review the choices here.
 
-* if there are multiple Bioformats-"channels", but we could not find metadata for them, you will have the option to either assign them to channels or illumination directions.
+* if there are multiple Bio-Formats-"channels", but we could not find metadata for them, you will have the option to either assign them to channels or illumination directions.
 
 * if there are multiple "series", but we could not find metadata for them, you will have the option to manually assign them to angles or tiles here.
 
