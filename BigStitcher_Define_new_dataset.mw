@@ -2,7 +2,7 @@ When calling BigStitcher > BigStitcher from the Fiji plugins menu, it will open 
 
 [[File:BigStitcher_import_exisitng_0.png|center]]
 
-[[File:BigStitcher_importer_1.png|thumb|300px|Select the importer.]]
+[[File:BigStitcher_importer_1.png|thumb|300px|Select the importer and the xml to save the metadata.]]
 In order to '''define a new dataset''', please click the respective button on the left side of the dialog. This will open a new window in which you can define how to import the image data. Since there is huge variety of data formats produced by various microscopy companies and self-built setups, we developed multiple types of importers:
 * '''[[BigStitcher_AutoLoader|Automatic Loader (Bioformats)]]'''
 
@@ -13,6 +13,7 @@ The Automatic Loader is a comprehensive importer that should work with most of i
 * '''Zeiss Lightsheet Z.1 Dataset (Bioformats)'''
 * '''MicroManager diSPIM Dataset'''
 
+'Note: Only one xml per directory is supported right now. '
 
 *Open BigStitcher from the Plugin menu. In the " Select dataset for Stitching Explorer" select "define a new dataset". 
 [[File:BigStitcher_Import_1.png|center]]
