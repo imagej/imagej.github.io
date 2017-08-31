@@ -1,12 +1,9 @@
 When calling BigStitcher > BigStitcher from the Fiji plugins menu, it will open a macro-scriptable dialog that looks as following:
-
 [[File:BigStitcher_import_exisitng_0.png|center]]
-
 You have several options of how you can select your XML file:
 * Drag & drop the XML in there
 * Use the filechooser (click Browse ...) to select the XML file
 * Type or copy & paste the XML file including its full path
-
 If the XML was successfully recognised, the dialog will change and show a quick summary of the contents of the dataset:
-
 [[File:BigStitcher_import_exisitng_1.png|center]]
+If there was an error parsing the XML or the XML file doesn't exist the dialog will show respective warnings and errors.
