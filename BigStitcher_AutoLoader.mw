@@ -51,7 +51,7 @@ If no metadata could be found, this will be set to (1x1x1 pixels).
 
 You have the option of manually setting the calibration by ticking the respective checkbox and providing pixel distances along the 3 axes and the unit they are specified in. This will be applied to all stacks in the dataset, so be careful if the calibrations of your stacks differ (a warning will be displayed her in that case).
 
-=== (Optional) move to regular grid ===
+=== Move to regular grid ===
 
 Finally, if we could not find the locations of the individual tiles in the metadata, you can choose to move the stacks into a regular grid here. Possible actions are:
 
