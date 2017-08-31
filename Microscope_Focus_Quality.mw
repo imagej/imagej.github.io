@@ -44,7 +44,7 @@ You can can remove the probability patches overlay via the {{bc | Image | Overla
 
 == Limitations ==
 
-The plugin is currently limited to 16-bit integer data only. The model was trained with images in the intensity range of <code>[0, ~10000]</code>; your mileage may vary if the input image intensities diverge from that too greatly.
+The plugin is currently limited to single (i.e., 2D) images of 16-bit integer data only. The model was trained with images in the intensity range of <code>[0, ~10000]</code>; your mileage may vary if the input image intensities diverge from that too greatly.
 
 == Publication ==
 
