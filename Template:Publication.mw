@@ -306,7 +306,6 @@
 | url = http://biorxiv.org/content/early/2017/02/28/112623
 | title = Reconstruction of cell lineages and behaviors underlying arthropod limb outgrowth with multi-view light-sheet imaging and tracking. }}
 
-
 | Micro-Manager = {{Citation | last = Edelstein | first = A.
 | last2 = Amodaj | first2 = N.
 | last3 = Hoover | first3 = K.
@@ -319,6 +318,27 @@
 | volume = 
 | pages = 14-20
 | pmid = 20890901}} ({{Scholar | cluster=10488335509275115137}}).
+
+| Microscope Image Quality = {{Citation | last = Yang | first = S. J.
+| last2 = Berndl | first2 = M.
+| last3 = Ando | first3 = D. M.
+| last4 = Barch | first4 = M.
+| last5 = Narayanaswamy | first5 = A.
+| last6 = Christiansen | first6 = E.
+| last7 = Hoyer | first7 = S.
+| last8 = Roat | first8 = C.
+| last9 = Hung | first9 = J.
+| last10 = Rueden | first10 = C. T.
+| last11 = Shankar | first11 = A.
+| last12 = Finkbeiner | first12 = S.
+| last13 = Nelson | first13 = P.
+| year = 2017
+| journal = (in press)
+| url = 
+| title = Assessing microscope image focus quality with deep learning
+| volume = 
+| pages = 
+| pmid = }}.
 
 | MiToBo = {{Citation | last = Möller | first = B.
 | last2 = Glaß | first2 = M.
