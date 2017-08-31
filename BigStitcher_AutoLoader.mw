@@ -49,11 +49,18 @@ We will try to automatically load voxel sizes from the data and display the resu
 
 If no metadata could be found, this will be set to (1x1x1 pixels).
 
-You have the option of manually setting the calibration by ticking the respective checkbox and providing pixel distances along the 3 axes and the unit they are specified in. This will be applied to all stacks in the dataset, so be careful if the calibrations of your stacks differ (a warning will be displayed her in that case).
+You have the option of manually setting the calibration by ticking the respective checkbox and providing pixel distances along the 3 axes and the unit they are specified in. This will be applied to all stacks in the dataset, so be careful if the calibrations of your stacks differ (a warning will be displayed here in that case).
 
 === Move to regular grid ===
 
 Finally, if we could not find the locations of the individual tiles in the metadata, you can choose to move the stacks into a regular grid here. Possible actions are:
+
+* '''Do not move Tiles to Grid (use Metadata if available)'''
+Leaves the tiles where they are. This will be selected by default if we could find tile locations in the metadata.
+* '''Move Tiles to Grid (interactive)'''
+Start '''Move tiles to regular grid manually''' once the dataset import has been completed. The process will be done '''once per view angle''', if the angle contains more than one tile. This will be selected by default if we could not find tile loactions in the metadata.
+* '''Move Tile to Grid (Macro-scriptable)'''
+A simpler and less interactive, but Macro-scriptable version of the above. You will be queried for the grid parameters for every view angle once you click '''OK'''.
 
 
 
