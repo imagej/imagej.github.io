@@ -19,6 +19,11 @@ Specifically intended for lightsheet acquisitions of cleared samples (e.g. by CL
 * Since cleared samples are typically acquired by a lightsheet microscope that can illuminate from different directions, the BigStitcher supports a pre-selection of the best illumination direction at every image block in the sample
 * It also supports acquisitions where data is acquired inteli
 
+<gallery mode="slideshow">
+File:BigStitcherTitle.jpg
+</gallery>
+
+
 [[File:BigStitcherTitle.jpg|center|800px|Illustrates an example of an interactive view of a single-view multi-tile dataset with irregular tiling acquired by lightsheet microscopy.]]
 == Download ==
 
