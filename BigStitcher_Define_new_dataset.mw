@@ -8,10 +8,21 @@ In order to '''define a new dataset''', please click the respective button on th
 
 The Automatic Loader is a comprehensive importer that should work with most of image data. We highly suggest using this importer as a first choice, and just if you experience any problems to continue with one of the other options.
 
-* '''Manual Loader (Bioformats)'''
-* '''Manual Loader (TIFF only, ImageJ Opener)'''
-* '''Zeiss Lightsheet Z.1 Dataset (Bioformats)'''
-* '''MicroManager diSPIM Dataset'''
+* '''[[BigStitcher_StackLoader|Manual Loader (Bioformats)]]'''
+
+The '''Manual Loader (Bioformats)''' can be used to import datasets that consist of several stacks that can be opened using LOCI Bioformats. Manual asignment of the stacks to Angles, Tiles or Illuminations according to patterns in the filename is necessary.
+
+* '''[[BigStitcher_StackLoader|Manual Loader (TIFF only, ImageJ Opener)]]'''
+
+The '''Manual Loader (TIFF only, ImageJ Opener))''' can be used to import datasets that consist of several stacks that can be opened directly by ImageJ. Manual asignment of the stacks to Channels, Illuminations, Agles, Tiles or Illuminations according to patterns in the filename is necessary.
+
+* '''[[BigStitcher_SpecialLoaders|Zeiss Lightsheet Z.1 Dataset (Bioformats)]]'''
+
+A single-purpose loader to import CZI-files produced by the '''Zeiss Lightsheet Z.1 microscope'''.
+
+* '''[[BigStitcher_SpecialLoaders|MicroManager diSPIM Dataset]]'''
+
+A single-purpose loader to import '''diSPIM''' datasets produced by MicroManager.
 
 ''Note: Only one xml per directory is supported right now, even if they have a different filename. ''
 
