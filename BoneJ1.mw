@@ -21,6 +21,8 @@
 * Launch Fiji and run {{bc | Plugins | 3D Viewer}} to trigger installation of the [[3D Viewer]].
 * Restart Fiji.
 
+For technical details about ImageJ and Fiji using Java 6 vs. Java 8, see the [[Java 8]] page.
+
 == Publication ==
 * {{Publication | BoneJ}}
 
