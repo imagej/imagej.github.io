@@ -13,7 +13,7 @@
 
 {{Logo | ImageJ1 | size=24px}} BoneJ was designed to work with plain [[ImageJ 1.x]].
 
-{{Logo | Fiji | size=24px}} BoneJ can be installed into [[Fiji]], but you must '''use the Java-6 version of Fiji, not the current Java-8 version'''. Follow these directions:
+{{Logo | Fiji | size=24px}} BoneJ can be installed into [[Fiji]], but you must '''use the Java-6 version of Fiji, not the current Java-8 version''':
 
 * Download the final Java-6 version of Fiji labeled “2017 May 30” from [[Fiji/Downloads#Java_6|here]].
 * Unpack it somewhere beneath your home folder.
