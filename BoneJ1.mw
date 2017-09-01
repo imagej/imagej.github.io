@@ -9,6 +9,18 @@
 | website                = http://bonej.org/
 }}BoneJ is a plugin for bone image analysis in [[ImageJ]]. It provides free, open source tools for trabecular geometry and whole bone shape analysis.
 
+== Installation ==
+
+{{Logo | ImageJ1 | size=24px}} BoneJ was designed to work with plain [[ImageJ 1.x]].
+
+{{Logo | Fiji | size=24px}} BoneJ can be installed into [[Fiji]], but you must '''use the Java-6 version of Fiji, not the current Java-8 version'''. Follow these directions:
+
+* Download the final Java-6 version of Fiji labeled “2017 May 30” from [[Fiji/Downloads#Java_6|here]].
+* Unpack it somewhere beneath your home folder.
+* Download and install <code>BoneJ_.jar</code> into that installation's <code>plugins</code> folder.
+* Launch Fiji and run {{bc | Plugins | 3D Viewer}} to trigger installation of the [[3D Viewer]].
+* Restart Fiji.
+
 == Publication ==
 * {{Publication | BoneJ}}
 
