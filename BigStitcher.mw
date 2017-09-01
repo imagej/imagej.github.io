@@ -18,7 +18,7 @@ Specifically intended for lightsheet acquisitions of cleared samples (e.g. by CL
 * Integrated downstream processing of the data such fusion and deconvolution of the aligned data at different resolution levels (full or reduced resolutions) and for selected areas (full image or selected parts)
 * Since cleared samples are typically acquired by a lightsheet microscope that can illuminate from different directions, the BigStitcher supports a pre-selection of the best illumination direction at every image block in the sample
 * Support of non-regular acquisition grids, which includes 'intelligent acquisitions' where some of the image blocks can be missing if only background is present
-* Support of image data acquired at different resolutions to combine overview scans with high resolution acquisitions
+* Support of image data acquired at different resolutions to combine overview scans with high resolution acquisitions of specific areas of interest 
 
 [[File:BigStitcherTitle-1.jpg|center|1000px|frame|Illustrates an example of an interactive view of a single-view multi-tile dataset with irregular tiling acquired by lightsheet microscopy. Each tile of size 1920x1920x1000 pixels is depicted in a random color.]]
 == Download ==
