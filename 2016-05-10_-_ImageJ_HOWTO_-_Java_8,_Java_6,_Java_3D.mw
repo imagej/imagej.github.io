@@ -29,12 +29,12 @@ __TOC__
 ! style="white-space: nowrap" |
 [[File:Win.png|alt=Windows|x32px]]
 <br>[[File:Tux.png|alt=Linux|x32px]]
-| Download the 2015-Dec-22 [[Fiji/Downloads#Life-Line_Fiji_versions|Life-Line version of Fiji]] for your platform. It comes bundled with Java 6, with the Java-8 update site ''disabled''.
+| Download the final (2017-May-31) [[Fiji/Downloads#Java_6|Java-6 version of Fiji]]. It comes bundled with Java 6 and all platform launchers.
 | rowspan=2 | Run [[Updater|{{bc|Help|Update...}}]] to update to the latest Java-6-compatible version. Your Fiji will become outdated over time, stuck on the final Java-6-compatible plugin versions.
 | rowspan=2 | Run [[3D Viewer|{{bc|Plugins|3D Viewer}}]] to trigger installation of [[Java 3D]] 1.5 if you need 3D viz.
 |-
 ! [[File:Osx.png|alt=macOS|x32px]]
-| Download the 2015-Dec-22 [[Fiji/Downloads#Life-Line_Fiji_versions|Life-Line version of Fiji]] for macOS. It is distributed ''without'' Java, so you must [[Frequently Asked Questions#How_do_I_set_up_Java_6_on_OS_X.3F|install Apple Java 6]] on your system.
+| Download the final (2017-May-31) [[Fiji/Downloads#Java_6|Java-6 version of Fiji]]. It is distributed ''without'' Java, so you must [[Frequently Asked Questions#How_do_I_set_up_Java_6_on_OS_X.3F|install Apple Java 6]] on your system.
 * If you have Java 7 and/or Java 8 installed, uninstall them—or else ImageJ will not use your Java 6 installation.
 * Afterwards, [[Troubleshooting#Checking_the_Java_version|verify that Fiji is using Java 6]].
 |-
