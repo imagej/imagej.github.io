@@ -3,19 +3,19 @@
 == Rename packages ==
 
 All packages have changed prefix to avoid a name clash, and to conform to convention ([http://imglib2.net/ imglib2.net] now points to us):
-* mpicbg.imglib -> net.imglib2
+* <code>mpicbg.imglib</code> -> <code>net.imglib2</code>
 
 Hence, it is easiest to perform a global search and replace for all instances of the old string with the new. This holds for all renames listed below.
 
 Some core packages have also changed further:
-* mpicbg.imglib.image -> net.imglib2.img
+* <code>mpicbg.imglib.image</code> -> <code>net.imglib2.img</code>
 
 == Rename classes ==
 
 In general, the Image class has been replaced with Img. Many classes with "Image" in the name have thus been changed to "Img" instead:
-* Image -> Img
-* ImageFactory -> ImgFactory
-* ImageOpener -> ImgOpener
+* <code>Image</code> -> <code>Img</code>
+* <code>ImageFactory</code> -> <code>ImgFactory</code>
+* <code>ImageOpener</code> -> <code>ImgOpener</code>
 
 Please note that there are cases where using Img is not appropriate, and a better alternative exists; see the [[Changes from ImgLib1 to ImgLib2]] page for a more complete explanation.
 
@@ -26,7 +26,7 @@ All dimensional lengths are now long (and long[]) instead of int (and int[]).
 == Rename dimensional length accessor methods ==
 
 In addition, core methods for querying dimensional lengths have changed names:
-* getNumDimensions() -> numDimensions()
+* <code>getNumDimensions()</code> -> numDimensions()
 * getDimension(int) -> dimension(int)
 * getDimensions() -> dimensions(long[])
 
