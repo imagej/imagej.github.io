@@ -19,8 +19,7 @@ Alida is the basis of the image processing toolbox [[MiToBo]].
 For further details, see the [http://www.informatik.uni-halle.de/alida/ Alida website].
 
 == Publication ==
-* Posch, S. & Möller, B. (2017), "[http://doi.org/10.5334/jors.124 Alida - Advanced Library for Integrated Development of Data Analysis Applications]",<br><i>Journal of Open Research Software</i> <b>5(1)</b>:7.
-
+* {{Publication | Alida}}
 
 [[Category:Related Software]]
 [[Category:SciJava]]
