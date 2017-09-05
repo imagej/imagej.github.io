@@ -40,7 +40,30 @@ This step is not 100% necessary but will improve you detections further on when 
 
 ''' Localizing Spots '''
 
-There are 2 different 
+There are 2 different types of processing images interactive and manual. The first one is used to adjust the the parameters for further batch processing. Moreover, it provides the visual feedback necessary to adjust the parameters for the automated detection on huge datasets. 
+
+Open the image and navigate to the 'Plugins' menu under 'Radial Symmetry Localization' > 'Radial Symmetry'.
+
+Ensure that the correct image is chosen. 
+
+There you will be asked to specify how you want to process the image and what type of output you want to get. 
+
+Choose 'Interactive' mode for now. 
+
+Intensities Gauss fit defines if you want to perform the gaussian fitting algorithm on each of the spots that was detected. Warning: ticking this box might significantly slow down the calculations.
+
+Use RANSAC: this box is useful in case you have noisy data. The algorithm will discard the pixels that are either to bright or too dark. Keep it ticked in general. 
+
+Anistoropy coefficient: defines how much the z-resolutions differs from the xy-resolution. The parameter will be set automatically if you ran the 'Calculate Anisotropy Coefficient' plugin before-hand. In general, 1.0 gives the reasonable result. 
+
+In the visualization section one can choose if it is necessary to show the results.
+
+RANSAC results overlays the initial image with the regions that we used for the calculations. 
+
+Detections: is the representation of the 3D overlay for the detected spot. 
+  
+
+After that you will see multiple windows  
 
 - Why do you have the parameters?
 - How you can use them?
