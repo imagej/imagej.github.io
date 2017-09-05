@@ -1,3 +1,7 @@
+== Download == 
+The Radial Symmetry plugin can be downloaded from the [[http://site.imagej.net/milkyklim update site]]. After that it will appear in the 'Plugins' menu under 'Radial Symmetry Localization'.
+
+The source code is available on Github, please, also post feature requests & bug reports there. 
 
 == Citation ==
 Please note that the Radial Symmetry plugin available through Fiji, is based on a publication. If you use it successfully for your research please be so kind to cite our work:
@@ -6,7 +10,9 @@ Please note that the Radial Symmetry plugin available through Fiji, is based on 
 
 ==Introduction & Overview == 
 
-What is radial symmetry?
+The Radial Symmetry Localization plugin enables users to find smFISH (and other) images
+
+
 How is it combined with the outlier removal (RANSAC)?  
 
 == Detailed Tutorial ==
