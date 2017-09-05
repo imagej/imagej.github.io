@@ -16,6 +16,12 @@ How is it combined with the outlier removal (RANSAC)?
 
 == Detailed Tutorial ==
 
+Using the software package consists of the several steps. Please note that this is just a suggestion of how to use the package in the more-or-less standard case. 
+
+In the first step, one have choose the image that will be used for the parameters adjustment. 
+
+Open the image and navigate to the  
+
 - 2 different modes to run the program.
 - Why do you have the parameters?
 - How you can use them?
