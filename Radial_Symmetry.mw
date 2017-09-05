@@ -8,10 +8,9 @@ Please note that the Radial Symmetry plugin available through Fiji, is based on 
 
 <will be released soon>
 
-==Introduction & Overview == 
+== Introduction == 
 
-The Radial Symmetry Localization plugin enables users to find smFISH (and other) images
-
+The Radial Symmetry Localization plugin enables users to find the smFISH spots with the super resolved accuracy. The software is designed for different types of imaging and is applicable to 2D/3D images together with the time-dimension. 
 
 How is it combined with the outlier removal (RANSAC)?  
 
