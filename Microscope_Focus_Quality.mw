@@ -28,7 +28,7 @@ The plugin predicts an absolute measure of image focus on a single image in isol
 
 == Usage ==
 
-* Open an image to analyze.
+* Open an image to analyze (see [https://storage.googleapis.com/microscope-image-quality/static/fiji_plugin_test_images.zip sample images]).
 * Run {{bc | Plugins | Classification | Microscope Image Focus Quality}}.
 * A dialog will appear allowing you to configure the output visualization. The following options are available:
 ** '''Generate probability image''' - When checked, a multi-channel image will be created with one channel per focus level, and each value corresponding to the probability of that sample being at that focus level.
