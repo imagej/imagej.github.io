@@ -1,5 +1,5 @@
 == Download == 
-The Radial Symmetry plugin can be downloaded from the [[http://site.imagej.net/milkyklim update site]]. After that it will appear in the 'Plugins' menu under 'Radial Symmetry Localization'.
+The Radial Symmetry plugin can be downloaded from the [http://site.imagej.net/milkyklim update site]. After that it will appear in the 'Plugins' menu under 'Radial Symmetry Localization'.
 
 The source code is available on Github, please, also post feature requests & bug reports there. 
 
@@ -18,11 +18,30 @@ How is it combined with the outlier removal (RANSAC)?
 
 Using the software package consists of the several steps. Please note that this is just a suggestion of how to use the package in the more-or-less standard case. 
 
-In the first step, one have choose the image that will be used for the parameters adjustment. 
+''' Fixing the Image Anisotropy '''
 
-Open the image and navigate to the  
+In the first step, one have choose the image that will be used for the parameters adjustment.
 
-- 2 different modes to run the program.
+Normally, you will use the bead images acquired with the same microscope as the normal images.  
+
+Open the image and navigate to the 'Plugins' menu under 'Radial Symmetry Localization' > 'Calculate Anisotropy Coefficient'. 
+
+Choose the Image for Detection that was opened and Gaussian Fit (gives better result) as a Detection Method.
+
+After that press ok. 
+
+Adjust Sigma and Threshold values so that only beads are detected. 
+
+Press ok. 
+
+The calculations might take some time. The program will calculate the corresponding scale value which basically shows how we should squeeze the objects in z-direction to make them look round. 
+
+This step is not 100% necessary but will improve you detections further on when you switch to the real data. 
+
+''' Localizing Spots '''
+
+There are 2 different 
+
 - Why do you have the parameters?
 - How you can use them?
 - What type of images is supported at the moment?
