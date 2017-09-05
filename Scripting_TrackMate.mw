@@ -6,7 +6,7 @@ __TOC__
 
 == TrackMate scripting principle ==
 
-[[TrackMate_]] can be used out of the GUI, using a scripting language that allows making calls to Java. The most simple way to get started is to use the [[Script Editor]] of Fiji, which takes care of the difficult & boring part for you (such as path). The examples proposed on this page all use Jython, but can be adapted to anything. 
+[[TrackMate_]] can also be used without the GUI, using a scripting language that allows making calls to Java. The most simple way to get started is to use the [[Script Editor]], which takes care of the difficult & boring part for you (such as path). The examples proposed on this page all use Jython, but can be adapted to anything. 
 
 Since we are calling the internals of TrackMate, we must get to know a bit of its guts. I have tried to come up with a rational design; though not always successfully. There is 3 main classes to interact with in a script:
 
