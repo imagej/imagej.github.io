@@ -20,6 +20,12 @@ There is a bug in Java 8 on MacOS which causes the application to drastically sl
 === App Nap ===
 On recent versions of OS X—10.9 "Mavericks" and later—there is an "App Nap" feature which dramatically slows down applications that are not in the foreground. Leave ImageJ in the foreground while it is processing to avoid this issue. (There are also [http://osxdaily.com/2014/05/13/disable-app-nap-mac-os-x/ various] [http://www.cultofmac.com/274396/disable-app-nap-specific-apps-os-x-tips/ ways] to disable App Nap on your machine, but we have not had much success with them. If you find a solution that works, allowing ImageJ to run fast in the background, please [http://forum.imagej.net/ tell us on the forum]!)
 
+== No title bar in file chooser dialogs ==
+
+On macOS 10.11 "El Capitan" and later, the operating system no longer includes a title bar for file chooser dialogs. See e.g. [https://bugs.openjdk.java.net/browse/JDK-8136427 this JDK bug] discussing the issue.
+
+As a workaround, you can check "Use JFileChooser to open/save" in the {{bc | Edit | Options | Input/Output...}} dialog.
+
 = Frequently Asked Questions =
 See also the [[Frequently Asked Questions]] page.
 
