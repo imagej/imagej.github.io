@@ -313,7 +313,7 @@ Right now, your analyzer is functionnal. It compiles and would return expected r
 
 Except that TrackMate doesn't even know it exists. It sits in his lonely corner and is perfectly useless. 
 
-Until TrackMate v2.2.0, there was no other to extend TrackMate than to modify it or fork it, then recompile and redeploy it from scratch. With v2.2.0 we beneficiated from the effort of the ImageJ2 team who built a very simple and very clever discovery mechanism, that allow to simply drop a jar in the plugins folder of Fiji and have TrackMate be aware of it. On top of it all, it is plain and simple.
+Until TrackMate v2.2.0, there was no other way to extend TrackMate than to modify it or fork it, then recompile and redeploy it from scratch. With v2.2.0 we beneficiated from the effort of the ImageJ2 team who built a very simple and very clever discovery mechanism, that allow to simply drop a jar in the plugins folder of Fiji and have TrackMate be aware of it. On top of it all, it is plain and simple.
 
 Just add the following line before the class declaration:
 <source lang="java">
