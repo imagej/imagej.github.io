@@ -55,3 +55,8 @@ The panel that opens will allow the user to select individual files containing t
 the default parameters. [[Read more about the RANSAC models]]. If the default parameters work well, the user can save the estimated dynamic parameters of the microtubule, which will appear as a results table.
 “Max error” determines the maximum tolerance of RANSAC fits on both events, growth (red) and
 shrinkage (blue). A high maximum error value
+
+== Notes ==
+
+(1) We recommend to take a snapshot of the seeds after finishing the movie and at the end another still image of the seeds to correct for drift.
+(2) A pixel size of 100 nm or less is desirable (Zanic 2016).
