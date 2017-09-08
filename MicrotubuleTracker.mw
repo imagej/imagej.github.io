@@ -1,6 +1,6 @@
 [[Image:newlogo.png|right|320px]]
 {{ComponentStats:net.imagej:MTrack}}
-== Description ==
+
 MTrack is a tool, which detects, tracks, and measures the behavior of fluorescently labeled microtubules imaged by TIRF (total internal reflection fluorescence) microscopy. In such an in vitro reconstitution approach, stabilized, non-dynamic microtubule seeds serve as nucleation points for dynamically growing microtubules.
 
 MTrack is a tri-modular tool. The first module detects and tracks the growing microtubule ends and creates trajectories. The second module uses these trajectories to fit models of dynamic behavior
@@ -42,4 +42,5 @@ The default algorithm to identify the seeds as objects is called Maximally Stabl
 Before starting the actual tracking of the dynamically growing microtubules, the program will give you several options. Before choosing endpoints to remove or add you check all frames of the movie by moving the slider in the “Deleselect and select ends” dialog. Select or deselect ends. If an end was wrongly recognized or two points are too close to each other you can deselect an end by left clicking on it in the image. The program will remember and allow to re-select this end by clicking Shift + left click (pink circle will mark the end). In case an end has not been recognized, use Shift + Alt + left click to select a user defined end (orange circle will mark the end). Read more on microtubule polarity and (+) end vs. (-) end tracking.
 Select the start and end time over which the tracking will be performed by entering the frame numbers.
 Yellow ellipses mark seeds to be tracked, red ellipses mark seeds, which won”t be tracked. Green circles mark ends to be tracked. Orange circles mark user defined ends and will be tracked.
-Click “Confirm ends and track” to perform the actual tracking, which will be performed “live” (progress bar will show). A yellow crosshair will show the current position of the tracking on each marked microtubule end. A "Success" frame will let you know about the end of the tracking. Two movies will be displayed, the “Track ID” movie, which can be used to link the trajectories to individual
+Click “Confirm ends and track” to perform the actual tracking, which will be performed “live” (progress bar will show). A yellow crosshair will show the current position of the tracking on each marked microtubule end. A "Success" frame will let you know about the end of the tracking. Two movies will be displayed, the “Track ID” movie, which can be used to link the trajectories to individual microtubules and an “Overlay movie”, in which the user can recapitulate the tracking. The trajectory of each end is individually saved as .txt file and numbered according to the track ID.
+After successful tracking, the user has the option to save the selected ends, so that the movie can be run (again) in batch mode.
