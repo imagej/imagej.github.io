@@ -58,5 +58,5 @@ shrinkage (blue). A high maximum error value
 
 == Notes ==
 
-(1) We recommend to take a snapshot of the seeds after finishing the movie and at the end another still image of the seeds to correct for drift.
-(2) A pixel size of 100 nm or less is desirable (Zanic 2016).
+*(1) We recommend to take a snapshot of the seeds after finishing the movie and at the end another still image of the seeds to correct for drift.
+*(2) A pixel size of 100 nm or less is desirable (Zanic 2016).
