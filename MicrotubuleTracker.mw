@@ -1,38 +1,28 @@
 [[Image:newlogo.png|right|320px]]
 {{ComponentStats:net.imagej:MTrack}}
 == Description ==
-MTrack is a tool, which detects, tracks, and measures the behavior of fluorescently labeled
-microtubules imaged by TIRF (total internal reflection fluorescence) microscopy. In such an in vitro
-reconstitution approach, stabilized, non-dynamic microtubule seeds serve as nucleation points for
-dynamically growing microtubules.
-MTrack is a tri-modular tool. The first module detects and tracks the growing microtubule ends and
-creates trajectories. The second module uses these trajectories to fit models of dynamic behavior
-(polymerization and depolymerization velocities, catastrophe and rescue frequencies). The third
-module computes statistics such as length and lifetime distributions when analyzing more than one
+MTrack is a tool, which detects, tracks, and measures the behavior of fluorescently labeled microtubules imaged by TIRF (total internal reflection fluorescence) microscopy. In such an in vitro reconstitution approach, stabilized, non-dynamic microtubule seeds serve as nucleation points for dynamically growing microtubules.
+
+MTrack is a tri-modular tool. The first module detects and tracks the growing microtubule ends and creates trajectories. The second module uses these trajectories to fit models of dynamic behavior
+(polymerization and depolymerization velocities, catastrophe and rescue frequencies). The third module computes statistics such as length and lifetime distributions when analyzing more than one
 movie (batch mode).
 
 == Module 1 - Microtubule Detection & Tracking==
-A typical data set consists of a single two-dimensional (2d) image of the non-dynamic microtubule
-seeds followed by a 2d time-lapse of the dynamically growing microtubules (Note1). The file format
+A typical data set consists of a single two-dimensional (2d) image of the non-dynamic microtubule seeds followed by a 2d time-lapse of the dynamically growing microtubules (Note1). The file format
 can be any format readable by Fiji/Bioformats (.tif, .nd2, … ). To run the tracker select {{bc|Plugins|MTrack|Tracking}}
 The welcome panel will open.
 
 ===Choose Mode===
-For a first analysis of your data, we suggest using the simple mode, in which we have pre-selected a
-number of parameters. In case you are unsatisfied with the outcome of the tracking you can use the
-advanced mode to fine-tune settings. When analyzing more than one movie, you can select batch
-mode and run many movies simultaneously. However, before running the program in batch mode, you
-have to at least run the program once in single or advanced mode to select and save the required
-parameters. The following intro is on simple mode, see here for advanced or batch mode.
+For a first analysis of your data, we suggest using the simple mode, in which we have pre-selected a number of parameters. In case you are unsatisfied with the outcome of the tracking you can use the
+advanced mode to fine-tune settings. When analyzing more than one movie, you can select batch mode and run many movies simultaneously. However, before running the program in batch mode, you
+have to at least run the program once in single or advanced mode to select and save the required parameters. The following intro is on simple mode, see here for advanced or batch mode.
 
 ===Select Movie===
 
 Next, the user selects the movie.
-Please note that detection might work better on flat-field corrected images. Optionally, we offer to
-approximate a flat-field correction based on the image data itself (Read more about Preprocessing).
+Please note that detection might work better on flat-field corrected images. Optionally, we offer to approximate a flat-field correction based on the image data itself (Read more about Preprocessing).
 For the movie type chooses one of the three supported options:
 * Two channel image as hyper stack (both channels in one image)
 * Concatenated seed image followed by time-lapse images
 * Single channel time-lapse images
-Please choose an output file name and directory. The trajectory files will be written as .txt files. By
-default trajectories will be saved in the current working directory with the name of the image.
+Please choose an output file name and directory. The trajectory files will be written as .txt files. By default trajectories will be saved in the current working directory with the name of the image.
