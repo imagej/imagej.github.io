@@ -44,3 +44,14 @@ Select the start and end time over which the tracking will be performed by enter
 Yellow ellipses mark seeds to be tracked, red ellipses mark seeds, which won”t be tracked. Green circles mark ends to be tracked. Orange circles mark user defined ends and will be tracked.
 Click “Confirm ends and track” to perform the actual tracking, which will be performed “live” (progress bar will show). A yellow crosshair will show the current position of the tracking on each marked microtubule end. A "Success" frame will let you know about the end of the tracking. Two movies will be displayed, the “Track ID” movie, which can be used to link the trajectories to individual microtubules and an “Overlay movie”, in which the user can recapitulate the tracking. The trajectory of each end is individually saved as .txt file and numbered according to the track ID.
 After successful tracking, the user has the option to save the selected ends, so that the movie can be run (again) in batch mode.
+
+
+==Module 2- Microtubule dynamics==
+Microtubules show a dynamic behavior known as dynamic instability, which is characterized by four parameters (1) polymerization velocity (vp, nm/s), (2) depolymerization velocity (vd, nm/sec), (3) catastrophe frequency (fcat, sec-1), and (4) rescue frequency (fres, sec-1). Using the trajectories created in Module 1 (The .txt file contains frame number, total length (in px and μm), track ID, x and y position
+(pixel and μm) and the length increment from the previous frame (px and micrometer). Module 2 derives these dynamic parameters by fitting models using RANSAC. (Read more on RANSAC models).
+If not forwarded by Module 1, Module 2 can be selected by  {{bc|Plugins|MTrack|Rate Analyzer}}
+
+The panel that opens will allow the user to select individual files containing trajectories, which will be displayed as length versus time plots on which RANSAC fits a model of microtubule dynamics using
+the default parameters. Read more about the RANSAC models. If the default parameters work well, the user can save the estimated dynamic parameters of the microtubule, which will appear as a results table.
+“Max error” determines the maximum tolerance of RANSAC fits on both events, growth (red) and
+shrinkage (blue). A high maximum error value
