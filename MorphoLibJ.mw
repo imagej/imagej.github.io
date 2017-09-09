@@ -5,7 +5,7 @@
 | maintainer             = [https://github.com/dlegland David Legland], {{Person|Iarganda}}
 | source                 = {{GitHub|org=ijpb|repo=MorphoLibJ}}
 | released               = July 3<sup>rd</sup>, 2014
-| latest version         = February 1<sup>st</sup>, 2017 ([[MorphoLibJ]] v1.3.2)
+| latest version         = September 9<sup>th</sup>, 2017 ([[MorphoLibJ]] v1.3.3)
 | status                 = stable, active
 | category               = [[:Category:Analysis|Analysis]], [[:Category:Filtering|Filtering]], [[:Category:Segmentation|Segmentation]], [[:Category:Mathematical_morphology|Mathematical morphology]]
 }}MorphoLibJ is a collection of [[wikipedia:Mathematical morphology|mathematical morphology]] methods and '''plugins''' for ImageJ, created at [http://www-ijpb.versailles.inra.fr/en/bc/equipes/modelisation-imagerie/ INRA-IJPB Modeling and Digital Imaging lab].
@@ -652,7 +652,7 @@ At the end of the script a dialog is shown to smooth the surfaces at will. Each 
 [[Image:MorphoLibJ-visualize-labels-in-3d-viewer.png|thumb|center|750px|From left to right: input label image, script output, smoothed label surfaces and example of individually translated surfaces in the 3D viewer.]]
 
 == Documentation ==
-Each [https://github.com/ijpb/MorphoLibJ/releases released version of MorphoLibJ] comes with a [https://github.com/ijpb/MorphoLibJ/releases/download/v1.3.1/MorphoLibJ-manual-v1.3.1.pdf User Manual in PDF format].
+Each [https://github.com/ijpb/MorphoLibJ/releases released version of MorphoLibJ] comes with a [https://github.com/ijpb/MorphoLibJ/releases/download/v1.3.3/MorphoLibJ-manual-v1.3.3.pdf User Manual in PDF format].
 
 The main source code directory is on GitHub under [http://github.com/ijpb/MorphoLibJ/tree/master/src/main/java/inra/ijpb src/main/java/inra/ijpb].
 
