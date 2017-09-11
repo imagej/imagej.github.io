@@ -22,7 +22,7 @@
 
 Here is a summary of my current projects, in priority order. I try to keep this list up to date.
 
-# '''[[LOCI]] web server [https://www.docker.com/ Docker]ization/robustification.'''
+# '''ImageJ forum generalization''' to a software-agnostic Scientific Image Analysis forum.
 # '''Document community expectations.''' Formally define and clarify who is responsible for maintaining which plugins, to what extents ([http://forum.imagej.net/t/project-developer-roles/206 Project developer roles], [https://github.com/ctrueden/ctr-scripts/blob/master/dev-find ctrueden/ctr-scripts:dev-find], [https://github.com/fiji/fiji/blob/master/bin/team-hints.perl fiji/fiji:bin/team-hints.perl])
 # '''Ops generic type matching.''' Improve the Ops type matcher to fully support generics, including recursive generics. ([https://github.com/scijava/scijava-common/compare/generic-types scijava/scijava-common@generic-types], [https://github.com/imagej/imagej-ops/compare/nil imagej/imagej-ops@nil])
 # '''ImageJ + Java 8.''' Complete the migration to Java 8 with a Java-6-compatible stub classpath that checks your Java version and tells you how to upgrade to Java 8 if needed. Retire the Java-8 update site, distributing its contents back onto the ImageJ and Fiji update sites.
@@ -38,9 +38,10 @@ I am fully committed to all of the above projects. They are driven by me, making
 
 I am also coordinating and/or leading and/or advising and/or helping with, but not directly implementing, the following additional projects:
 
+# (with {{Person|Awalter2}}) '''[[LOCI]] web server [https://www.docker.com/ Docker]ization/robustification.'''
 # (with {{Person|Awalter2}}) '''ImgLib2 ROIs.''' Development of data structures, especially for use with ImageJ-OMERO. ([http://forum.imagej.net/t/implementation-plan-for-imglib2-rois-2d/2531 Implementation plan for Imglib2-rois 2D])
-# (with {{Person|Leon}}) '''RESTful image server.''' Backed by ImageJ. ([https://github.com/imagej/imagej-server imagej/imagej-server])
 # (with {{Person|Gab1one}}) '''SciJava I/O.''' ([https://github.com/scijava/scijava-common/compare/more-handles scijava/scijava-common@more-handles])
+# (with {{Person|gselzer}}) '''ImageJ Ops algorithms.''' Addition of more image processing algorithms to [[ImageJ Ops]].
 # (with {{Person|Kharrington}}) '''ImageJ in 3D.''' Unification of ImageJ 3D visualization efforts around [[ClearVolume]] and the [[SciView]].
 # (with {{Person|Pietzsch}}) '''Visualization of big data.''' Unification of visualization in general around the [[BigDataViewer]]. ([https://github.com/imagej/imagej-common/issues/66 imagej/imagej-common#66])
 
