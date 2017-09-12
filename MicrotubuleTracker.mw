@@ -40,7 +40,7 @@ Please note that this blurring will not be used during subsequent tracking. Pres
 ===MSER parameters===
 The default algorithm to identify the seeds as objects is called Maximally Stable Extremal Regions (MSER) (Ref 1) [[Read more about MSER parameters]]. If seeds are not recognized or two very close seeds are recognized as one, the user can change the MSER parameters using the adjustable sliders. The effect will be displayed live on the “active image”. Once most seeds are correctly recognized as objects, click “Find endpoints” to detect the ends of each seed with sub-pixel accuracy. The end-points will be displayed as green circles. “Next” flips to the next panel.
 
-[[Image:MSERSimple.png|500px]]
+[[Image:MserSimple.png|500px]]
 
 ===Options===
 Before starting the actual tracking of the dynamically growing microtubules, the program will give you several options. Before choosing endpoints to remove or add you check all frames of the movie by moving the slider in the “Deleselect and select ends” dialog. Select or deselect ends. If an end was wrongly recognized or two points are too close to each other you can deselect an end by left clicking on it in the image. The program will remember and allow to re-select this end by clicking Shift + left click (pink circle will mark the end). In case an end has not been recognized, use Shift + Alt + left click to select a user defined end (orange circle will mark the end). [[Read more on microtubule polarity and (+) end vs. (-) end tracking]].
