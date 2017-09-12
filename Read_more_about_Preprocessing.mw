@@ -1,5 +1,8 @@
 == Pre-Processing ==
-If  the original movie is not flat field corrected by the microscope, the program offers to do a pseudo-flat field correction by applying a Gaussian of radius a twentieth the size of the image and subtracting it from the original image to create a preprocessed movie which would be used for tracking. Please note that the preprocessed movie is only used for tracking and not for doing sub-pixel localization which is done on the original movie only. 
+If  the original movie is not flat field corrected by the microscope, the program offers to do a pseudo-flat field correction by applying a Gaussian of radius a twentieth the size of the image and subtracting it from the original image to create a preprocessed movie which would be used for tracking. 
+
+Please note that the preprocessed movie is only used for tracking and not for doing sub-pixel localization which is done on the original movie only. 
+
 The user can also choose to apply a median filter of a certain user chosen radius on the movie.
 
 If the user chooses to upload their own preprocessed movie they can do so and upload it using the "Load preprocessed movie option". 
