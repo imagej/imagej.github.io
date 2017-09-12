@@ -11,7 +11,7 @@ movie (batch mode).
 A typical data set consists of a single two-dimensional (2d) image of the non-dynamic microtubule seeds followed by a 2d time-lapse of the dynamically growing microtubules (Note1). The file format
 can be any format readable by Fiji/Bioformats (.tif, .nd2, … ). To run the tracker select {{bc|Plugins|MTrack|Tracking}}
 The welcome panel will open.
-
+[[Image:MTrack.png|350px]]
 ===Choose Mode===
 For a first analysis of your data, we suggest using the simple mode, in which we have pre-selected a number of parameters. In case you are unsatisfied with the outcome of the tracking you can use the
 advanced mode to fine-tune settings. When analyzing more than one movie, you can select batch mode and run many movies simultaneously. However, before running the program in batch mode, you
@@ -44,7 +44,6 @@ Select the start and end time over which the tracking will be performed by enter
 Yellow ellipses mark seeds to be tracked, red ellipses mark seeds, which won”t be tracked. Green circles mark ends to be tracked. Orange circles mark user defined ends and will be tracked.
 Click “Confirm ends and track” to perform the actual tracking, which will be performed “live” (progress bar will show). A yellow crosshair will show the current position of the tracking on each marked microtubule end. A "Success" frame will let you know about the end of the tracking. Two movies will be displayed, the “Track ID” movie, which can be used to link the trajectories to individual microtubules and an “Overlay movie”, in which the user can recapitulate the tracking. The trajectory of each end is individually saved as .txt file and numbered according to the track ID.
 After successful tracking, the user has the option to save the selected ends, so that the movie can be run (again) in batch mode.
-
 
 ==Module 2- Microtubule dynamics==
 Microtubules show a dynamic behavior known as dynamic instability, which is characterized by four parameters (1) polymerization velocity (vp, nm/s), (2) depolymerization velocity (vd, nm/sec), (3) catastrophe frequency (fcat, sec-1), and (4) rescue frequency (fres, sec-1). Using the trajectories created in Module 1 (The .txt file contains frame number, total length (in px and μm), track ID, x and y position
