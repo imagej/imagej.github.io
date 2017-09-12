@@ -11,7 +11,9 @@ movie (batch mode).
 A typical data set consists of a single two-dimensional (2d) image of the non-dynamic microtubule seeds followed by a 2d time-lapse of the dynamically growing microtubules (Note1). The file format
 can be any format readable by Fiji/Bioformats (.tif, .nd2, … ). To run the tracker select {{bc|Plugins|MTrack|Tracking}}
 The welcome panel will open.
-[[Image:MTrack.png|350px]]
+
+[[Image:MTrack.png|500px]]
+
 ===Choose Mode===
 For a first analysis of your data, we suggest using the simple mode, in which we have pre-selected a number of parameters. In case you are unsatisfied with the outcome of the tracking you can use the
 advanced mode to fine-tune settings. When analyzing more than one movie, you can select batch mode and run many movies simultaneously. However, before running the program in batch mode, you
