@@ -9,7 +9,7 @@ If the user chooses to upload their own preprocessed movie they can do so and up
 
 To do a pseudo-flat field correction in Fiji the user has to do the following steps:
 
-* Open movie and duplicate it by selecting ({bc|Image|Duplicate|Duplicate Stack}).
+* Open movie and duplicate it by selecting {{bc|Image|Duplicate|Duplicate Stack}}.
 
 * Apply a Gaussian blur on the duplicated movie by selecting {{bc| Process|Filters|Gaussian Blur}}.
 
