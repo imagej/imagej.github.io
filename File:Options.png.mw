@@ -1,0 +1,1 @@
+Option panel simple mode
