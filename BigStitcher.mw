@@ -70,5 +70,8 @@ Once a dataset was defined and the XML file was saved, you can quickly load any 
 *[[BigStitcher_Registration|Registration using interest points]]
 
 === Fusion ===
+In order to fuse the aligned data into a classical image and to for example save it as TIFF, it is necessary to define the area that should be fused. This is done by defining a '''Bounding Box'''. However, by default the software will always precompute two Bounding Boxes covering (a) the volume covered by all views or (b) the volume covered by the currently selected views. So, only if you want to specify a certain (sub)volume, for example because there is a lot of empty pixels around your object you can do so. More details on Bounding Boxes can be found here:
+
+*[[BigStitcher_BoundingBox|Bounding Box Definition]]
 
 *[[BigStitcher_Fuse|Fuse & Export]]
