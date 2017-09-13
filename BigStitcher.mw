@@ -74,6 +74,6 @@ In order to fuse the aligned data into a "classical image" in order to for examp
 
 *[[BigStitcher_BoundingBox|Bounding Box Definition]]
 
-Once you decided to fuse everything or defined a specific bounding box, you can start the fusion process. If you want to quickly preview how the fused area will look like, you can choose
+Once you decided to fuse everything or defined a specific bounding box, you can start the fusion process. If you want to quickly preview how the fused area will look like, you can choose  {{bc | Quick Display Transformed/Fused Image  | All Views [1500 x 1400 x 87 px] | Downsampled 4x}}
 
 *[[BigStitcher_Fuse|Fuse & Export]]
