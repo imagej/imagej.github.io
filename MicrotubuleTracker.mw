@@ -59,7 +59,7 @@ At the end of tracking a Log file will appear with the message to inform the use
 ==  Save parameters== 
 After successful tracking, the user has the option to save the program parameters, so that the movie can be run (again) in batch mode. This choice can also be made without doing the tracking after just making the parameter selection. Clicking on this button triggers the close of the program and saves the program parameters in IJ.log file of FIJI, this close of program is done to ensure that the log file is properly updated by FIJI.
 
-[[Image:Options.png|500px]]
+[[Image:Options.png|300px]]
 
 ==Module 2- Microtubule dynamics==
 Microtubules show a dynamic behavior known as dynamic instability, which is characterized by four parameters (1) polymerization velocity (vp, nm/s), (2) depolymerization velocity (vd, nm/sec), (3) catastrophe frequency (fcat, sec-1), and (4) rescue frequency (fres, sec-1). Using the trajectories created in Module 1 (The .txt file contains frame number, total length (in px and μm), track ID, x and y position
