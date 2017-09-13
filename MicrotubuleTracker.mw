@@ -34,7 +34,7 @@ The program automatically reads the meta data shown as pixel size (micrometer in
 can optionally determine the PSF of your microscope from bead images by fitting a Gaussian function.
 
 ===Preprocessing===
-Since initial microtubule detection might be disturbed by noise we suggest a preprocessing using median filtering (e.g. r=2 pixels) for the initial detection step by MSER/Watershed based Hough Transform.
+As mentioned before, initial microtubule detection might be disturbed by noise in this part of the panel we provide the user with an option to apply a median filter of certain radius (e.g. r=2 pixels) for the initial detection step by MSER/Watershed based Hough Transform.
 Please note that this blurring will not be used during subsequent tracking. Press Next to proceed, and 3 screens and one panel will open. They show the original movie, the preprocessed movie, and the “active image”, which representing the seeds and is typically the first frame of the movie. Every successfully recognized seed will be marked with a red ellipse.
 
 ===MSER parameters===
