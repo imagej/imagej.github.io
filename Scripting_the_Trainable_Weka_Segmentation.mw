@@ -195,7 +195,7 @@ for ( i = 0; i < listOfFiles.length; i++ )
     if( listOfFiles[ i ].isFile() )
     {
         // try to read file as image
-        image = new ImagePlus( listOfFiles[i].getCanonicalPath() );
+        image = IJ.openImage( listOfFiles[i].getCanonicalPath() );
         if( image != null )
         {                   
             // apply classifier and get results (0 indicates number of threads is auto-detected)
