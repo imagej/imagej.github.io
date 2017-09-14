@@ -75,7 +75,7 @@ If not forwarded by Module 1, Module 2 can be selected by  {{bc|Plugins|MTrack|R
 The panel that opens will allow the user to select individual files containing trajectories, which will be displayed as length versus time plots on which RANSAC fits a model of microtubule dynamics using
 the default parameters. [[Read more about the RANSAC parameters]]. If the default parameters work well, the user can save the estimated dynamic parameters of the microtubule, which will appear as a results table.
 
-[[Image:ransacfirst.png|300px]]
+[[Image:ransacfirst.png|500px]]
 == Notes ==
 
 *(1) We recommend to take a snapshot of the seeds after finishing the movie and at the end another still image of the seeds to correct for drift.
