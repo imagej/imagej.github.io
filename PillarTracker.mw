@@ -1,12 +1,25 @@
 The plugin can be automatically downloaded and installed by Fiji's updater.For more details about how to setup the Fiji in a most convenient way, please refer to our documentation here. However, if user doesn't want to use the updater for some reason, one can still download it from following link, and then install it manually. 
 
-Latest version: [https://drive.google.com/file/d/0B3hxvkn3VvhCWUlMZ29OTEZ6ZWs Pillar_Tracker_GUI-1.1.3-SNAPSHOT.zip] (758 KB)
+Latest version: [https://drive.google.com/file/d/0B3hxvkn3VvhCWUlMZ29OTEZ6ZWs Pillar_Tracker_GUI-1.1.5-SNAPSHOT.zip] (797 KB)
 
-[https://drive.google.com/file/d/0B3hxvkn3VvhCVWJsdUN3eDUyNkk PillarTracker_Documentation.pdf] (3.22 MB)
+[https://drive.google.com/file/d/0B3hxvkn3VvhCVWJsdUN3eDUyNkk PillarTracker_Documentation.pdf] (~3 MB)
 
 [https://drive.google.com/file/d/0B3hxvkn3VvhCYjFCaWx5dnNpSlE Sample_Files.zip] (61.8 MB)
 
 '''Update History:'''
+
+version '''1.1.5'''
+ (1).draw dragon tails for tracks.
+
+ (2).faster create movie.
+
+ (3).performance improved for muliti-threading
+
+ (4).add mean filter to detect maximas
+
+
+version '''1.1.4''': beta for internal use
+  
 
 version '''1.1.3'''
  (1).use pillar reconstruction algorithm to establish exact grid.
