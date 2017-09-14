@@ -12,7 +12,7 @@ A typical data set consists of a single two-dimensional (2d) image of the non-dy
 can be any format readable by Fiji/Bioformats (.tif, .nd2, … ). To run the tracker select {{bc|Plugins|MTrack|Tracking}}
 The welcome panel will open.
 
-[[Image:MTrack.png|500px]]
+[[Image:logo.png|500px]]
 
 ===Choose Mode===
 For a first analysis of your data, we suggest using the simple mode, in which we have pre-selected a number of parameters. In case you are unsatisfied with the outcome of the tracking you can use the
