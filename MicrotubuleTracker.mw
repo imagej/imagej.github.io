@@ -73,7 +73,7 @@ Microtubules show a dynamic behavior known as dynamic instability, which is char
 If not forwarded by Module 1, Module 2 can be selected by  {{bc|Plugins|MTrack|Rate Analyzer}}
 
 The panel that opens will allow the user to select individual files containing trajectories, which will be displayed as length versus time plots on which RANSAC fits a model of microtubule dynamics using
-the default parameters. [[Read more about the RANSAC models]]. If the default parameters work well, the user can save the estimated dynamic parameters of the microtubule, which will appear as a results table.
+the default parameters. [[Read more about the RANSAC parameters]]. If the default parameters work well, the user can save the estimated dynamic parameters of the microtubule, which will appear as a results table.
 “Max error” determines the maximum tolerance of RANSAC fits on both events, growth (red) and
 shrinkage (blue). A high maximum error value
 
