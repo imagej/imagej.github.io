@@ -16,17 +16,7 @@ Deploying your library to [[Maven]] makes it available for other developers. It 
 <tab name="Maven">
 <ol>
 <li>Use the following code for your repository's <code>.travis.yml</code>:
-
-<source lang="yaml">
-language: java
-jdk: oraclejdk8
-branches:
-  only: master
-install: true
-script: "./travis/build.sh"
-after_success: "./travis/notify.sh Travis-Success"
-after_failure: "./travis/notify.sh Travis-Failure"
-</source>
+<br>{{GitHubEmbed|org=scijava|repo=scijava-common|path=.travis.yml}}
 </li>
 <li>From the command line in your repository, create an [https://docs.travis-ci.com/user/environment-variables/#Encrypting-Variables-Using-a-Public-Key encrypted environment variable] for <code>MAVEN_PASS</code> which defines the Maven password of the [[ImageJ Maven repository]]'s <code>travis</code> account. Then do the same for the <code>TOKEN_NAME</code> of the [[ImageJ Jenkins]] <code>Travis-Success</code> and <code>Travis-Failure</code> jobs.
 
@@ -38,41 +28,13 @@ $ travis encrypt TOKEN_NAME=imagej_jenkins_token --add env.global
 Note that this will automatically modify your <code>.travis.yml</code> file.
 </li>
 <li>Add the following script as <code>.travis/build.sh</code>:
-<source lang="shell">
-#!/bin/sh
-dir="$(dirname "$0")"
-if [ "$TRAVIS_SECURE_ENV_VARS" = true \
-  -a "$TRAVIS_PULL_REQUEST" = false \
-  -a "$TRAVIS_BRANCH" = master ]
-then
-  mvn -Pdeploy-to-imagej deploy --settings "$dir/settings.xml"
-else
-  mvn install
-fi
-</source>
+<br>{{GitHubEmbed|org=scijava|repo=scijava-common|path=.travis/build.sh}}
 </li>
 <li>Add the following script as <code>.travis/notify.sh</code>:
-<source lang="shell">
-#!/bin/sh
-curl -fs "https://jenkins.imagej.net/job/$1/buildWithParameters?token=$TOKEN_NAME&repo=$TRAVIS_REPO_SLUG&commit=$TRAVIS_COMMIT&pr=$TRAVIS_PULL_REQUEST"
-</source>
+<br>{{GitHubEmbed|org=scijava|repo=scijava-common|path=.travis/notify.sh}}
+</li>
 <li>Create a <code>settings.xml</code> in your repository with the following contents:
-<source lang="xml">
-<settings>
-  <servers>
-    <server>
-      <id>imagej.releases</id>
-      <username>travis</username>
-      <password>${env.MAVEN_PASS}</password>
-    </server>
-    <server>
-      <id>imagej.snapshots</id>
-      <username>travis</username>
-      <password>${env.MAVEN_PASS}</password>
-    </server>
-  </servers>
-</settings>
-</source>
+<br>{{GitHubEmbed|org=scijava|repo=scijava-common|path=.travis/settings.xml}}
 </li>
 <li>Commit all your files with Git and push them back to your repository. If everything works as intended, you should start seeing new builds in your [https://travis-ci.org Travis dashboard] with each new commit, with corresponding SNAPSHOT artifacts automatically deployed to [http://maven.imagej.net/index.html#view-repositories maven.imagej.net].
 </li>
