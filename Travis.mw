@@ -41,11 +41,14 @@ Note that this will automatically modify your <code>.travis.yml</code> file.
 <source lang="shell">
 #!/bin/sh
 dir="$(dirname "$0")"
-test "$TRAVIS_SECURE_ENV_VARS" = true \
+if [ "$TRAVIS_SECURE_ENV_VARS" = true \
   -a "$TRAVIS_PULL_REQUEST" = false \
-  -a "$TRAVIS_BRANCH" = master &&
-  mvn -Pdeploy-to-imagej deploy --settings "$dir/settings.xml" ||
+  -a "$TRAVIS_BRANCH" = master ]
+then
+  mvn -Pdeploy-to-imagej deploy --settings "$dir/settings.xml"
+else
   mvn install
+fi
 </source>
 </li>
 <li>Add the following script as <code>.travis/notify.sh</code>:
