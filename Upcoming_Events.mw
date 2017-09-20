@@ -9,12 +9,6 @@ This is a list of upcoming conferences, courses, and other events in the scienti
 |-
 | colspan=4 class="section-minor" | Conferences, Meetings, and Symposia
 |-
-|style="white-space: nowrap"|2017 July 3-6
-|[http://www.mmc-series.org.uk/ Microscience Microscopy Congress 2017]
-|Over 40 topics in both life and physical sciences across all microscopy techniques and disciplines
-|Manchester Central Convention Complex
-Manchester, UK
-|-
 |style="white-space: nowrap"|2017 Sept 19-21
 |[http://bii.eecs.wsu.edu/ BioImage Informatics Conference 2017]
 |Image informatics for the life sciences
@@ -35,35 +29,11 @@ Heidelberg, Germany
 |-
 | colspan=4 class="section-minor" | Courses and Workshops
 |-
-|style="white-space: nowrap"|2017 June 1-2
-|[http://www2.le.ac.uk/colleges/medbiopsych/facilities-and-services/cbs/AIF/workshops/imagej-workshops-June-2017 ImageJ workshops, Leicester, UK]
-|Introduction to ImageJ/Fiji on Thursday 1st and Writing macros in ImageJ on Friday 2nd of June.   
-|Dr Kees Straatman
-University of Leicester, UK
-|-
-|style="white-space: nowrap"|2017 June 18-24
-|[https://indico.mpi-cbg.de/event/50/ dais Learnathon (Fiji/ImageJ2/KNIME)]
-|How to develop for Fiji, ImageJ2, and KNIME Image Processing (KNIP)   
-|Center for Systems Biology
-Dresden, Germany
-|-
-|style="white-space: nowrap"|2017 June 26-30
-|style="white-space: normal"|[http://optimizedmicroscopy.com/index.html Computer Optimized Microscopy course]
-|A practical image analysis course for life sciences. It is aimed to show the image processing workflow needed to extract quantitative information over different basic and advanced microscopy techniques.
-|Faculty of Biology, University of Barcelona
-Barcelona, Spain
-|-
-|style="white-space: nowrap"|2017 July 10-14
-|style="white-space: normal"|[http://www.wur.nl/en/Education-Programmes/wageningenacademy-1/show/Summer-School-on-Image-Analysis-for-Plant-Phenotyping.htm Summer School on image analysis for plant phenotyping]
-|A complete overview of image analysis techniques for automatic plant phenotyping, with examples in ImageJ, Fiji, Python, Matlab and other tools.
-|Wageningen University & Research
-Wageningen, Netherlands
-|-
-|style="white-space: nowrap"|2017 Sept 11-14
-|style="white-space: normal"|NEUBIAS training school [http://eubias.org/NEUBIAS/training-schools/eci/ts4-gothenburg2017/ TS4] and [http://eubias.org/NEUBIAS/training-schools/staff/ts5-gothenburg2017/ TS5]
-|Image analysis training for early career investigators (life scientists) and facility staff (imaging & analysis staff).
-|Centre for Cellular Imaging, Sahlgrenska Academy
-University of Gothenburg, Sweden
+|style="white-space: nowrap"|2017 Nov 7-9
+|style="white-space: normal"|[https://docs.google.com/forms/d/1n3n5tzSR_MM45NqkF1gW4JTa2SfhnaKNEkrry0H5X7o/viewform?edit_requested=true Digital Image Analysis with ImageJ workshop]
+|Intensive 3-day workshop on ImageJ basic functions and macro programming capabilities
+|NeuroTechnology Studio, Harvard Medical School
+Boston, MA, USA
 |}
 
 == Past events ==
