@@ -8,74 +8,74 @@
 }}
 {{#if:{{{forum|}}}|
 ! ImageJ Forum
-{{!}} [http://forum.imagej.net/users/{{{forum}}} ImageJ Forum profile]
+{{!}} [http://forum.imagej.net/users/{{{forum}}} {{{forum}}}]
 {{!}}-
 }}
 {{#if:{{{github|}}}|
 ! GitHub
-{{!}} [https://github.com/{{{github}}} GitHub profile]
+{{!}} [https://github.com/{{{github}}} {{{github}}}]
 {{!}}-
 }}
 {{#if:{{{stackoverflow|}}}|
 ! StackOverflow
-{{!}} [https://stackoverflow.com/users/{{{stackoverflow}}} StackOverflow profile]
+{{!}} [https://stackoverflow.com/users/{{{stackoverflow}}} {{{stackoverflow}}}]
 {{!}}-
 }}
 {{#if:{{{openhub|}}}|
 ! Open HUB
-{{!}} [https://www.openhub.net/accounts/{{{openhub}}} Open HUB profile]
+{{!}} [https://www.openhub.net/accounts/{{{openhub}}} {{{openhub}}}]
 {{!}}-
 }}
 <!--
 {{#if:{{{osrc|}}}|
 ! Open Source Report Card
-{{!}} [http://osrc.dfm.io/{{{osrc}}} Open Source Report Card]
+{{!}} [http://osrc.dfm.io/{{{osrc}}} {{{osrc}}}]
 {{!}}-
 }}
 -->
 {{#if:{{{researchgate|}}}|
 ! ResearchGate
-{{!}} [https://www.researchgate.net/profile/{{{researchgate}}} ResearchGate profile]
+{{!}} [https://www.researchgate.net/profile/{{{researchgate}}} {{{researchgate}}}]
 {{!}}-
 }}
 {{#if:{{{orcid|}}}|
 ! ORCID
-{{!}} [http://orcid.org/{{{orcid}}} ORCID profile]
+{{!}} [http://orcid.org/{{{orcid}}} {{{orcid}}}]
 {{!}}-
 }}
 {{#if:{{{researcherid|}}}|
 ! ResearcherID
-{{!}} [http://www.researcherid.com/rid/{{{researcherid}}} Researcher profile]
+{{!}} [http://www.researcherid.com/rid/{{{researcherid}}} {{{researcherid}}}]
 {{!}}-
 }}
 {{#if:{{{scopus|}}}|
 ! Scopus Author ID
-{{!}} [https://www.scopus.com/authid/detail.uri?authorId={{{scopus}}} Scopus profile]
+{{!}} [https://www.scopus.com/authid/detail.uri?authorId={{{scopus}}} {{{scopus}}}]
 {{!}}-
 }}
 {{#if:{{{arxiv|}}}|
 ! arXiv author id
-{{!}} [http://arxiv.org/a/{{{arxiv}}} arXiv profile]
+{{!}} [http://arxiv.org/a/{{{arxiv}}} {{{arxiv}}}]
 {{!}}-
 }}
 {{#if:{{{scholar|}}}|
 ! Google Scholar
-{{!}} [https://scholar.google.com/citations?user={{{scholar}}} Google Scholar profile]
+{{!}} [https://scholar.google.com/citations?user={{{scholar}}} {{{scholar}}}]
 {{!}}-
 }}
 {{#if:{{{linkedin|}}}|
 ! LinkedIn
-{{!}} [https://www.linkedin.com/{{{linkedin}}} LinkedIn profile]
+{{!}} [https://www.linkedin.com/{{{linkedin}}} {{{linkedin}}}]
 {{!}}-
 }}
 {{#if:{{{loci|}}}|
-! LOCI
-{{!}} [http://loci.wisc.edu/people/{{{loci}}} LOCI profile]
+! LOCI profile
+{{!}} [http://loci.wisc.edu/people/{{{loci}}} {{{loci}}}]
 {{!}}-
 }}
 {{#if:{{{loop|}}}|
-! Loop
-{{!}} [http://loop.frontiersin.org/people/{{{loop}}} Loop profile]
+! Loop profile
+{{!}} [http://loop.frontiersin.org/people/{{{loop}}} {{{loop}}}]
 {{!}}-
 }}
 {{#if:{{{website|}}}|
