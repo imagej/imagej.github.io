@@ -22,7 +22,7 @@ The basic setup looks as following:
 
 - Find out how the z-scaling is different from the x-/y-scaling using the bead images.
 
-- Run the program in the interactive mode to adjust the parameters for the particular data set. 
+- Run the program in the interactive mode to adjust the parameters for the particular dataset. 
 
 - Run the program in the manual mode (or even in the batch mode using ImageJ macro) to process the data. 
 
@@ -38,9 +38,7 @@ You will see the dialog window:
 
 Choose the image for detection and set 'Gauss Fit' as a detection method. You can also try to use Radial Symmetry as a detection method but in this case Gauss fit gives better results. 
 
-After that press ok. 
-
-You will see too windows: 
+Once ok is pressed you will see 2 windows: 
 
 [[File:2017-09-20-a-coef-adjust-dog.png|x200px|center]]
 
@@ -48,11 +46,11 @@ You will see too windows:
 
 Adjust 'Sigma' and 'Threshold' values so that only beads are detected. 
 
-Once you have done – press Done. 
+Once you are done – press Done button. 
 
 Depending on the number of beads the calculations might take some time. The program will calculate the corresponding anisotropy coefficient which basically shows how we should squeeze the objects in z-axis to make them look radially symmetric. 
 
-The corresponding anisotropy value will be show in the Log window and it will be transferred to the next step automatically. 
+The corresponding anisotropy value will be shown in the Log window and it will be transferred to the next step automatically. 
 
 Important:
 
@@ -60,25 +58,29 @@ It is fine to skip this step if you do not have beads images. The plugin will be
 
 ''' Localizing Spots '''
 
-There are 2 different types of processing images interactive and manual. The first one is used to adjust the the parameters for further batch processing. Moreover, it provides the visual feedback necessary to adjust the parameters for the automated detection on huge datasets. 
+There are 2 different modes of processing images: interactive and manual. The Interactive mode is used to adjust the the parameters for further dataset processing. It also provides the visual feedback necessary to adjust the parameters for the automated processing on huge datasets. 
 
 ''' Interactive mode: ''' 
 
 Open the image and navigate to the 'Plugins' menu under 'Radial Symmetry Localization' > 'Radial Symmetry'.
 
-Ensure that the correct image is chosen. 
-
 [[File:2017-09-20-rs-choose-image.png|x200px|center]]
 
-There you will be asked to specify how you want to process the image and what type of output you want to get. 
+Ensure that the correct image is chosen. 
+
+Once OK button is pressed another window will pop up. 
 
 [[File:2017-09-20-rs-set-parameters.png|x400px|center]]
 
-Choose 'Interactive' mode for now. 
+There you have to setup some general parameters. Let us go though them quickly:
+
+Since we do not know the best parameters for or dataset yet we set the 'Parameter's mode' to 'Interactive'. 
+
+
+- 'RANSAC' - t
 
 Intensities Gauss fit defines if you want to perform the gaussian fitting algorithm on each of the spots that was detected. Warning: ticking this box might significantly slow down the calculations.
-
-Use RANSAC: this box is useful in case you have noisy data. The algorithm will discard the pixels that are either to bright or too dark. Keep it ticked in general. 
+ 
 
 Anistoropy coefficient: defines how much the z-resolutions differs from the xy-resolution. The parameter will be set automatically if you ran the 'Calculate Anisotropy Coefficient' plugin before-hand. In general, 1.0 gives the reasonable result. Warning: if you are working on 2D data you want see this checkbox. 
 
