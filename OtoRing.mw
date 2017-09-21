@@ -3,23 +3,19 @@ OtoRing - An ImageJ plugin to aid otolith ring identification.
 <br>To use the ImageJ Updater use the following url: http://sites.imagej.net/OtoRing/
 
 Example:
-<p>
 [[File:N51x10_20092013_ipma.jpg|400px|thumb|left|Blue Whiting (''Micromesistius poutassou'') otolith]]
-<br>Select a Region Of Interest using the Line tool
-</p>
-<p>
+<br>1 - Select a Region Of Interest using the Line tool
+
 [[File:N51x10_20092013_ipma_1.jpg|400px|thumb|left|Opaque and Translucent rings]]
-<br>Execute the OtoRing plugin
-</p>
-<p>
+<br>2 - Execute the OtoRing plugin
+
 [[File:N51x10_20092013_ipma_2.jpg|400px|thumb|left|Graph plots intensity by distance]]
 <br>
-The result is shown
-</p>
-<p>
+3 - The result is shown
+
 [[File:N51x10_20092013_ipma_3.jpg|400px|thumb|left|OtoRing Parameters]]
 <br>
-Use the OtoRing Parameters to improve the results
-</p>
+4 - Use the OtoRing Parameters to improve the results
+
 <br>
-Developed by <i>Patrícia Gonçalves (IPMA) and Vitor Vaz da Silva (ISEL)</i>
+Developed by ''Patrícia Gonçalves (IPMA) and Vitor Vaz da Silva (ISEL)''
