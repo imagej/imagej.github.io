@@ -162,3 +162,6 @@ History of version available of SCF_MPI_CBG update site
 
 * 2017-08-17: version 1.0.5
 ** bugfix: correct a regression with the macro recording.
+
+* 2017-09-21: version 1.1.0
+** Add the possibility to export a mask that can be directly analyzed with the particle analyzer
