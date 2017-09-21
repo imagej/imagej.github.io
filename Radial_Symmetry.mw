@@ -92,28 +92,43 @@ Visualization:
 
 Once you are done with the settings press OK button. 
 
-After that you will see multiple windows  
+After that you will see multiple windows.
+
+Difference of Gaussian window to adjust the corresponding parameters. This window is necessary to get rid of the false pre-detections. In general, we could skip this part but then the computations would take too much time. Adjust the parameters so that you do not have too many false detections. But also do not try to get rid of all of them – they will be discarded in the next computation step anyways. 
 
 [[File:2017-09-20-rs-adjust-dog.png|x200px|center]]
 
+RANSAC window is the 'main' window of the whole plugin. Therefore, we will give a more detailed explanation for the parameters here. 
+
 [[File:2017-09-20-rs-adjust-ransac.png|x400px|center]]
+
+'Support region radius' defines the radius of the spots we are looking for. You might want to play with this parameter. Sometimes it is useful to increase the radius and decrease the inlier ratio at the same time. 
+
+'Inlier ratio' defines the ratio of the pixels that should support the model. Simply speaking the ratio of pixels that should 'belong' to the current spot. Lower the number more detections false detections you will get. 
+
+'Max error' 
+
+While moving the sliders you will see the updates in the two images. 
 
 <gallery mode="packed" heights=400px >
 File:2017-09-20-rs-interactive-window.png|Pre-detecions
 File:2017-09-20-rs-ransac-image.png|RANSAC Support Regions
 </gallery>
-  
-Once the parameters are adjusted hit any of the okay buttons. 
 
-Once the calculations are done you will see the results 
+One of them shows the pre-detections (red circles) and detections (orange crosses) in the provided region. Another one shows the pixels that were used by RANSAC and the error values at each of the used pixels. 
+  
+Once the parameters are adjusted hit any of the 'Done' buttons and wait a bit while the computations are performed.
+
+You will see the result table with the coordinates, time, channel and intensity values in the corresponding columns. 
 
 [[File:2017-09-20-rs-result-values.png|x300px|center]]
+
+Besides that you will get 2 images: one of them showing the overlay of the initial image with the regions that we used for the spots search, another one showing the 3D overlay for the detected spots.
 
 <gallery mode="packed" heights=400px >
 File:2017-09-20-rs-result-ransac.png|RANSAC Support Regions
 File:2017-09-20-rs-result-overlay.png|Detected Spots
 </gallery>
-
 
 ''' Manual mode: '''
 
