@@ -28,11 +28,15 @@ Open the image and navigate to the 'Plugins' menu under 'Radial Symmetry Localiz
 
 Choose the Image for Detection that was opened and Gaussian Fit (gives better result) as a Detection Method.
 
-[[File:/Users/kkolyva/Desktop/2017-09-20-hackathon-dresden-projects/2017-09-20-radial-symmetry-wiki-screenshots/2017-09-20-a-coef-initial-choose-image.png]]
+[[File:2017-09-20-a-coef-initial-choose-image.png]]
 
 After that press ok. 
 
 Adjust Sigma and Threshold values so that only beads are detected. 
+
+[[File:2017-09-20-a-coef-adjust-dog.png]]
+
+[[File:2017-09-20-a-coef-adjust-dog-image.png]]
 
 Press ok. 
 
@@ -48,7 +52,11 @@ Open the image and navigate to the 'Plugins' menu under 'Radial Symmetry Localiz
 
 Ensure that the correct image is chosen. 
 
+[[File:2017-09-20-rs-choose-image.png]]
+
 There you will be asked to specify how you want to process the image and what type of output you want to get. 
+
+[[File:2017-09-20-rs-set-parameters.png]]
 
 Choose 'Interactive' mode for now. 
 
@@ -56,16 +64,39 @@ Intensities Gauss fit defines if you want to perform the gaussian fitting algori
 
 Use RANSAC: this box is useful in case you have noisy data. The algorithm will discard the pixels that are either to bright or too dark. Keep it ticked in general. 
 
-Anistoropy coefficient: defines how much the z-resolutions differs from the xy-resolution. The parameter will be set automatically if you ran the 'Calculate Anisotropy Coefficient' plugin before-hand. In general, 1.0 gives the reasonable result. 
+Anistoropy coefficient: defines how much the z-resolutions differs from the xy-resolution. The parameter will be set automatically if you ran the 'Calculate Anisotropy Coefficient' plugin before-hand. In general, 1.0 gives the reasonable result. Warning: if you are working on 2D data you want see this checkbox. 
 
 In the visualization section one can choose if it is necessary to show the results.
 
 RANSAC results overlays the initial image with the regions that we used for the calculations. 
 
 Detections: is the representation of the 3D overlay for the detected spot. 
-  
+
+Hit ok. 
 
 After that you will see multiple windows  
+
+[[File:2017-09-20-rs-adjust-dog.png]]
+
+[[File:2017-09-20-rs-adjust-ransac.png]]
+
+[[File:2017-09-20-rs-interactive-window.png]]
+
+[[File:2017-09-20-rs-ransac-image.png]]
+  
+Once the parameters are adjusted hit any of the okay buttons. 
+
+Once the calculations are done you will see the results 
+
+[[File:2017-09-20-rs-result-values.png]]
+
+[[File:2017-09-20-rs-result-ransac.png]]
+
+[[File:2017-09-20-rs-result-overlay.png]]
+
+Manual mode: 
+
+[[File:2017-09-20-rs-set-manual.png]]
 
 - Why do you have the parameters?
 - How you can use them?
