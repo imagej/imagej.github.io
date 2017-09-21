@@ -18,6 +18,14 @@ The plugin is based on this [http://www.nature.com/nmeth/journal/v9/n7/full/nmet
 
 Using the software package consists of the several steps. Please note that this is just a suggestion of how to use the package in the more-or-less standard case. 
 
+The basic setup looks as following: 
+
+- Find out how the z-scaling is different from the x-/y-scaling using the bead images.
+
+- Run the program in the interactive mode to adjust the parameters for the particular data set. 
+
+- Run the program in the manual mode (or even in the batch mode using ImageJ macro) to process the data. 
+
 ''' Fixing the Image Anisotropy '''
 
 In the first step, one have choose the image that will be used for the parameters adjustment.
