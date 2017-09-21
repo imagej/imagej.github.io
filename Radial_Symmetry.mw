@@ -28,33 +28,41 @@ The basic setup looks as following:
 
 ''' Fixing the Image Anisotropy '''
 
-In the first step, one have choose the image that will be used for the parameters adjustment.
+Since the resolution in z-axis might be much worse than the resolution in x- and y-axis we should perform the correction for that. To do that one will use the beads images acquired with the same microscope under the same conditions as the normal (data) images.  
 
-Normally, you will use the bead images acquired with the same microscope as the normal images.  
+Open the image with the beads and navigate to the 'Plugins' > 'Radial Symmetry Localization' > 'Calculate Anisotropy Coefficient'. 
 
-Open the image and navigate to the 'Plugins' menu under 'Radial Symmetry Localization' > 'Calculate Anisotropy Coefficient'. 
-
-Choose the Image for Detection that was opened and Gaussian Fit (gives better result) as a Detection Method.
+You will see the dialog window:
 
 [[File:2017-09-20-a-coef-initial-choose-image.png|x200px|center]]
 
+Choose the image for detection and set 'Gauss Fit' as a detection method. You can also try to use Radial Symmetry as a detection method but in this case Gauss fit gives better results. 
+
 After that press ok. 
 
-Adjust Sigma and Threshold values so that only beads are detected. 
+You will see too windows: 
 
 [[File:2017-09-20-a-coef-adjust-dog.png|x200px|center]]
 
 [[File:2017-09-20-a-coef-adjust-dog-image.png|x400px|center]]
 
-Press ok. 
+Adjust 'Sigma' and 'Threshold' values so that only beads are detected. 
 
-The calculations might take some time. The program will calculate the corresponding scale value which basically shows how we should squeeze the objects in z-direction to make them look round. 
+Once you have done – press Done. 
 
-This step is not 100% necessary but will improve you detections further on when you switch to the real data. 
+Depending on the number of beads the calculations might take some time. The program will calculate the corresponding anisotropy coefficient which basically shows how we should squeeze the objects in z-axis to make them look radially symmetric. 
+
+The corresponding anisotropy value will be show in the Log window and it will be transferred to the next step automatically. 
+
+Important:
+
+It is fine to skip this step if you do not have beads images. The plugin will be able to do decent job even with the default value of the anisotropy coefficient. 
 
 ''' Localizing Spots '''
 
 There are 2 different types of processing images interactive and manual. The first one is used to adjust the the parameters for further batch processing. Moreover, it provides the visual feedback necessary to adjust the parameters for the automated detection on huge datasets. 
+
+''' Interactive mode: ''' 
 
 Open the image and navigate to the 'Plugins' menu under 'Radial Symmetry Localization' > 'Radial Symmetry'.
 
@@ -105,7 +113,11 @@ File:2017-09-20-rs-result-overlay.png|Detected Spots
 </gallery>
 
 
-Manual mode: 
+''' Manual mode: '''
+
+In the manual mode you can skip all the hassle of the parameters adjustment and jump directly to the computations on the data set. 
+
+After you choose 'Parameters's mode' manual in the 'Setup window' you will see all the parameters you have set already in the interactive mode. All you have to do now is to press 'OK' button and wait for the results. 
 
 [[File:2017-09-20-rs-set-manual.png|x300px|center]]
 
