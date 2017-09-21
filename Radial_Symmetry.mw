@@ -28,15 +28,15 @@ Open the image and navigate to the 'Plugins' menu under 'Radial Symmetry Localiz
 
 Choose the Image for Detection that was opened and Gaussian Fit (gives better result) as a Detection Method.
 
-[[File:2017-09-20-a-coef-initial-choose-image.png]]
+[[File:2017-09-20-a-coef-initial-choose-image.png|x200px|center]]
 
 After that press ok. 
 
 Adjust Sigma and Threshold values so that only beads are detected. 
 
-[[File:2017-09-20-a-coef-adjust-dog.png]]
+[[File:2017-09-20-a-coef-adjust-dog.png|x200px|center]]
 
-[[File:2017-09-20-a-coef-adjust-dog-image.png]]
+[[File:2017-09-20-a-coef-adjust-dog-image.png|x600px|center]]
 
 Press ok. 
 
@@ -52,11 +52,11 @@ Open the image and navigate to the 'Plugins' menu under 'Radial Symmetry Localiz
 
 Ensure that the correct image is chosen. 
 
-[[File:2017-09-20-rs-choose-image.png]]
+[[File:2017-09-20-rs-choose-image.png|x200px|center]]
 
 There you will be asked to specify how you want to process the image and what type of output you want to get. 
 
-[[File:2017-09-20-rs-set-parameters.png]]
+[[File:2017-09-20-rs-set-parameters.png|x400px|center]]
 
 Choose 'Interactive' mode for now. 
 
@@ -76,27 +76,27 @@ Hit ok.
 
 After that you will see multiple windows  
 
-[[File:2017-09-20-rs-adjust-dog.png]]
+[[File:2017-09-20-rs-adjust-dog.png|x200px|center]]
 
-[[File:2017-09-20-rs-adjust-ransac.png]]
+[[File:2017-09-20-rs-adjust-ransac.png|x400px|center]]
 
-[[File:2017-09-20-rs-interactive-window.png]]
+[[File:2017-09-20-rs-interactive-window.png|x600px|center]]
 
-[[File:2017-09-20-rs-ransac-image.png]]
+[[File:2017-09-20-rs-ransac-image.png|x600px|center]]
   
 Once the parameters are adjusted hit any of the okay buttons. 
 
 Once the calculations are done you will see the results 
 
-[[File:2017-09-20-rs-result-values.png]]
+[[File:2017-09-20-rs-result-values.png|x300px|center]]
 
-[[File:2017-09-20-rs-result-ransac.png]]
+[[File:2017-09-20-rs-result-ransac.png|x600px|center]]
 
-[[File:2017-09-20-rs-result-overlay.png]]
+[[File:2017-09-20-rs-result-overlay.png|x600px|center]]
 
 Manual mode: 
 
-[[File:2017-09-20-rs-set-manual.png]]
+[[File:2017-09-20-rs-set-manual.png|x300px|center]]
 
 - Why do you have the parameters?
 - How you can use them?
