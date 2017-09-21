@@ -76,21 +76,21 @@ There you have to setup some general parameters. Let us go though them quickly:
 
 Since we do not know the best parameters for or dataset yet we set the 'Parameter's mode' to 'Interactive'. 
 
+Computation:
 
-- 'RANSAC' - t
+- 'RANSAC' defines if you want to use radial symmetry with or without the robust outlier removal.
 
-Intensities Gauss fit defines if you want to perform the gaussian fitting algorithm on each of the spots that was detected. Warning: ticking this box might significantly slow down the calculations.
- 
+- 'Gaussian fititting' defines if you want to perform the gaussian fitting algorithm on each of the spots that was detected. Ticking this option will give more precise intensity values but at the same time might significantly slow down the calculations. If this box is remained unticked the linear interpolation will be used to find the intensity values. 
 
-Anistoropy coefficient: defines how much the z-resolutions differs from the xy-resolution. The parameter will be set automatically if you ran the 'Calculate Anisotropy Coefficient' plugin before-hand. In general, 1.0 gives the reasonable result. Warning: if you are working on 2D data you want see this checkbox. 
+- 'Anistoropy coefficient' defines how much the z-resolution differs from the x/y-resolution. The parameter will be set automatically if you ran the 'Calculate Anisotropy Coefficient' plugin before-hand. In general, 1.0 gives the reasonable result. Warning: if you are working on 2D data you want see this checkbox. 
 
-In the visualization section one can choose if it is necessary to show the results.
+Visualization:
 
-RANSAC results overlays the initial image with the regions that we used for the calculations. 
+- 'RANSAC regions' shows overlay of the initial image with the regions that we used for the spots search. 
 
-Detections: is the representation of the 3D overlay for the detected spot. 
+- 'Detections overlay' shows the 3D overlay for the detected spots. 
 
-Hit ok. 
+Once you are done with the settings press OK button. 
 
 After that you will see multiple windows  
 
