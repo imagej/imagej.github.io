@@ -28,6 +28,8 @@ Open the image and navigate to the 'Plugins' menu under 'Radial Symmetry Localiz
 
 Choose the Image for Detection that was opened and Gaussian Fit (gives better result) as a Detection Method.
 
+[[File:/Users/kkolyva/Desktop/2017-09-20-hackathon-dresden-projects/2017-09-20-radial-symmetry-wiki-screenshots/2017-09-20-a-coef-initial-choose-image.png]]
+
 After that press ok. 
 
 Adjust Sigma and Threshold values so that only beads are detected. 
