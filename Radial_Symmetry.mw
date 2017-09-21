@@ -80,9 +80,10 @@ After that you will see multiple windows
 
 [[File:2017-09-20-rs-adjust-ransac.png|x400px|center]]
 
-[[File:2017-09-20-rs-interactive-window.png|x600px|center]]
-
-[[File:2017-09-20-rs-ransac-image.png|x600px|center]]
+<gallery mode="packed" heights=400px >
+File:2017-09-20-rs-interactive-window.png|Pre-detecions
+File:2017-09-20-rs-ransac-image.png|RANSAC Support Regions
+</gallery>
   
 Once the parameters are adjusted hit any of the okay buttons. 
 
@@ -90,9 +91,11 @@ Once the calculations are done you will see the results
 
 [[File:2017-09-20-rs-result-values.png|x300px|center]]
 
-[[File:2017-09-20-rs-result-ransac.png|x600px|center]]
+<gallery mode="packed" heights=400px >
+File:2017-09-20-rs-result-ransac.png|RANSAC Support Regions
+File:2017-09-20-rs-result-overlay.png|Detected Spots
+</gallery>
 
-[[File:2017-09-20-rs-result-overlay.png|x600px|center]]
 
 Manual mode: 
 
