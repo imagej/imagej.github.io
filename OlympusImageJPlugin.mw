@@ -6,7 +6,7 @@
 | filename               = 
 | source                 = The source code of plugin is in Olympus_Viewer.jar. The source code of native library is not provided.
 | released               = 2015/12/09: First version Ver1.1.1
-| latest version         = 2016/09/15 Ver2.1.1
+| latest version         = 2017/09/22 Ver2.2.1
 | status                 = 
 | category               = [[:Category:Import-Export]]
 | website                = 
@@ -37,6 +37,9 @@ Show Meta Data
 # Select a menu item ( Plugins -&gt; OlympusViewer -&gt; ShowInfo )
 Drag & Drop (ver2.1.1-)
 # Select a menu item ( Plugins -&gt; OlympusViewer -&gt; DragDrop )
+# Drop a image file.
+Virtual stack mode for large images (ver2.2.1-)
+# Select a menu item ( Plugins -&gt; OlympusViewer -&gt; DragDrop -&gt; Use Virtual Stack for large images )
 # Drop a image file.
 == See Also ==
 This plugin uses jai-imageio.
