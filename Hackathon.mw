@@ -181,6 +181,11 @@ ImageJ has benefitted from many hackathons over the years:
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
 |{{Person|dietzc}}, {{Person|Rueden}}
 |[[ImageJ Ops]]
+|- valign="top"
+| style="white-space: nowrap" | [[2017-09-25 - KNIME Image Processing hackathon|2017 Sep 20 -<br>2017 Sep 29]]
+|[https://www.knime.org/contact KNIME Konstanz Regional Office]<br>Konstanz, Germany
+|{{Person|dietzc}}, {{Person|maarzt}}, {{Person|tibuch}}, {{Person|imagejan}}, {{Person|gab1one}}, {{Person|AlexanderFillbrunn}}, Jon Fuller, {{Person|Squareys}}, {{Person|chaubold}}, {{Person|stelfrich}}, {{Person|hornm}}, {{Person|fjug}}, {{Person|Treiblesschorle}}, {{Person|milkyklim}}, {{Person|kmader}}, Julianus Pfeuffer, {{Person|tpietzsch}}, {{Person|mp007}}, {{Person|StephanPreibisch}}, Jonas Probst, René Rahn, {{Person|ctrueden}}, {{Person|SimonSchmid}}, {{Person|frauzufall}}, {{Person|xulman}}, {{Person|MarcelWiedenmann}}, {{Person|HedgehogCode}}, {{Person|patrick-winter-knime}}
+|[[KNIME]] Image Processing, [[ImageJ Ops]], [http://ilastik.org/ Ilastik]
 |-
 |colspan="4" style="border-bottom: 1px solid gray"|
 |}
