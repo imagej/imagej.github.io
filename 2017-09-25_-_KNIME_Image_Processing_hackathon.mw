@@ -1,4 +1,4 @@
-From Wednesday, September 20, 2017 through Friday, September 28, 2017, {{Person|Dietzc}} of [https://www.knime.org KNIME] hosted ~20 developers at the [https://www.knime.com/contact KNIME Konstanz Regional Office] for a [[hackathon]] to develop the KNIME Image Processing extensions along with the underlying [[ImageJ Ops]] library, as well as other supporting technologies such as [[ImgLib2]], [[ClearVolume]] and the [[BigDataViewer]].
+From Wednesday, September 20, 2017 through Friday, September 28, 2017, {{Person|Dietzc}} of [https://www.knime.org KNIME] hosted ~20 developers at the [https://www.knime.com/contact KNIME Konstanz Regional Office] for a [[hackathon]] to develop the KNIME Image Processing extensions along with the underlying [[ImageJ Ops]] library, as well as other related and/or supporting technologies such as [http://ilastik.org/ Ilastik], [[ImgLib2]] and [[BigDataViewer]].
 
 There was a big focus this time on machine learning, particularly deep learning networks applied to biological data.
 
