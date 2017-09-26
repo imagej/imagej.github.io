@@ -19,6 +19,13 @@ There was a big focus this time on machine learning, particularly deep learning 
 * Helped {{Person|HedgehogCode}} and {{Person|frauzufall}} with ImageJ/TensorFlow integration and API improvements (PR(s) to <code>imagej/imagej-tensorflow</code> forthcoming).
 * With {{Person|Dietzc}}, continued work on the next-generation SciJava Struct API, including overhauled an widget framework and Swing widget implementations (as of this writing, on an unstable branch of <code>scijava/scijava-ops</code> repository).
 
+=== Florian Jug ===
+
+* Worked on a KNIME workflow that starts IsoNet-type deep nets on a image column. Works well now, but we want to move tiled executions out from python and move it into KNIME (and also Fiji). This follow-up work will be performed by {{Person|frauzufall}} and {{Person|bwilhelm}}.
+* Received TGMM groin truth data an started working on Tr3d demo dataset.
+* Started working on min cell-cycle constraints for Tr2d. This will make the ILP explode...
+* Discussions with {{Person|ctrueden}}, {{Person|Stelfrich}} and {{Person|tpietzsch}} about ImageJ Conference details for 2018.
+
 == Technical discussions ==
 
 * Fiji component and application releases: today and in the future
