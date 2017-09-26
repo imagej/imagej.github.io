@@ -28,7 +28,9 @@ There was a big focus this time on machine learning, particularly deep learning 
 
 == Technical discussions ==
 
-* Fiji component and application releases: today and in the future
+* Fiji component and application releases: today and in the future ({{Person|ctrueden}}, {{Person|fjug}}, {{Person|tpietzsch}})
+** Next stable release (December 2017) will still follow the 'old' way of doing things.
+** In case the DFG grant comes in and we hired the 2 people they will start implementing the new way of cutting stable releases. This will be great!
 * How to integrate ImageJ, KNIME and machine learning frameworks (particularly Keras and TensorFlow)
 
 [[Category:News]]
