@@ -26,6 +26,11 @@ There was a big focus this time on machine learning, particularly deep learning 
 * Started working on min cell-cycle constraints for Tr2d. This will make the ILP explode...
 * Discussions with {{Person|ctrueden}}, {{Person|Stelfrich}} and {{Person|tpietzsch}} about ImageJ Conference details for 2018.
 
+=== Tim-Oliver Buchholz ===
+* Worked on the [https://github.com/knime-ip/knip-bdv Big Data Viewer GUI].
+* Helped {{Person|maarzt}} and {{Person|xulman}} with KNIME Image Processing Node development.
+* Fixed <code>DefaultDifferenceVariance</code> feature of the Haralick feature-set in <code>imagej-ops</code> ({{GitHub | org=imagej | repo=imagej-ops | pr=523 | label=1}}).
+
 == Technical discussions ==
 
 * Fiji component and application releases: today and in the future ({{Person|ctrueden}}, {{Person|fjug}}, {{Person|tpietzsch}})
