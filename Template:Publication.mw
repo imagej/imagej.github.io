@@ -203,6 +203,17 @@
 | doi = 10.1016/j.compbiomed.2017.03.027
 | pmid = 28390286}} ({{Scholar | cluster=15559722731653097818}}).
 
+| Ilastik = {{Citation | last = Sommer | first = Christoph
+| last2 = Koethe | first2 = U.
+| last3 = Hamprecht | first3 = F. A.
+| year = 2011
+| title = Biomedical Imaging: From Nano to Macro, 2011 IEEE International Symposium on
+| contribution-url = http://ieeexplore.ieee.org/abstract/document/5872394/
+| contribution = Ilastik: Interactive learning and segmentation toolkit
+| publisher = IEEE
+| pages = 230-233
+| doi = 10.1109/ISBI.2011.5872394}} ({{Scholar | cluster=8459688359110226056}}).
+
 | ImageJ = {{Citation | last = Schneider | first = C. A.
 | last2 = Rasband | first2 = W. S.
 | last3 = Eliceiri | first3 = K. W.
