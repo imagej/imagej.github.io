@@ -3,7 +3,7 @@
 | name                   = Upload Sample Image
 | maintainer             = Johannes Schindelin
 | author                 = Johannes Schindelin
-| source                 = {{GitHub | org=imagej | repo=imagej-plugins-commands | source=src/main/java/net/imagej/plugins/commands/upload/SampleImageUploader.java}}
+| source                 = {{GitHub | org=imagej | repo=imagej-plugins-commands | source=net/imagej/plugins/commands/upload/SampleImageUploader.java}}
 | released               = 2009-06-11
 | latest version         = 2014-07-01
 | status                 = stable
