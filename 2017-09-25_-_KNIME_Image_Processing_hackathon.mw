@@ -21,7 +21,7 @@ There was a big focus this time on machine learning, particularly deep learning 
 
 === Florian Jug ===
 
-* Worked on a KNIME workflow that starts IsoNet-type deep nets on a image column. Works well now, but we want to move tiled executions out from python and move it into KNIME (and also Fiji). This follow-up work will be performed by {{Person|frauzufall}} and {{Person|bwilhelm}}.
+* Worked on a KNIME workflow that starts IsoNet-type deep nets on a image column. Works well now, but we want to move tiled executions out from python and move it into KNIME (and also Fiji). This follow-up work will be performed by {{Person|frauzufall}} and {{Person|HedgehogCode}}.
 * Received TGMM groin truth data an started working on Tr3d demo dataset.
 * Started working on min cell-cycle constraints for Tr2d. This will make the ILP explode...
 * Discussions with {{Person|ctrueden}}, {{Person|Stelfrich}} and {{Person|tpietzsch}} about ImageJ Conference details for 2018.
@@ -30,6 +30,13 @@ There was a big focus this time on machine learning, particularly deep learning 
 * Worked on the [https://github.com/knime-ip/knip-bdv Big Data Viewer GUI].
 * Helped {{Person|maarzt}} and {{Person|xulman}} with KNIME Image Processing Node development.
 * Fixed <code>DefaultDifferenceVariance</code> feature of the Haralick feature-set in <code>imagej-ops</code> ({{GitHub | org=imagej | repo=imagej-ops | pr=523 | label=1}}).
+
+=== Benjamin Wilhelm ===
+
+* Worked on CSBDeep Fiji Plugin.
+* Added Overlap to TiledView [https://github.com/imglib/imglib2/pull/179 PR] in imglib2.
+* Worked on API improvements in <code>imagej/imagej-tensorflow</code> with the help of {{Person|ctrueden}}.
+* Programmed KNIME Image Processing nodes which provied a loop over tiles of an image. See [https://github.com/knime-ip/knip/commits/tiling-nodes branch on GitHub].
 
 == Technical discussions ==
 
