@@ -155,7 +155,7 @@ Please tell us if you have one that you want to advertise here!
 
 === Downloadable jars ===
 
-Thanks to Travis, the extension we are aware of are built automatically and can be downloaded following the links below. They point to a simple _.jar file that you just have to drop in your _Fiji.app/plugins_ folder. TrackMate will recognise the extra modules it ships and will integrate them in the plugin.
+Thanks to Travis, the extension we are aware of are built automatically and can be downloaded following the links below. They point to a simple .jar file that you just have to drop in your ''Fiji.app/jars'' folder. TrackMate will recognise the extra modules it ships and will integrate them in the plugin.
 
 {| class="wikitable"
 ! Extension name
@@ -182,7 +182,7 @@ Thanks to Travis, the extension we are aware of are built automatically and can 
 === Extra source code ===
 
 
-[https://github.com/chicoronny/RonnyTrackMate Ronny Sczech TrackMate repository] contains the source code to various TrackMate enhancement, in Java and macros:
+[https://github.com/chicoronny/RonnyTrackMate Ronny Sczech TrackMate repository] contains the source code to various TrackMate enhancements, in Java and macros:
 
 
 * Linear Tracker for TrackMate.
@@ -194,7 +194,7 @@ Principle:
 ** Link to an object near to this estimated position within a succeeding radius
 ** Go on to the next frame until the last is reached
 
-* Batch Mode Plug-in to run TrackMate headless from a configuration file (example:Trackmate.properties) which has to placed    in the parent folder of the processed files.
+* Batch Mode Plugin to run TrackMate headless from a configuration file (example:Trackmate.properties) which has to placed    in the parent folder of the processed files.
 
 * Binary Detector to detect objects from a binary image using the ParticleAnalyzer class from ImageJ.
 
