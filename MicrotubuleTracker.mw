@@ -51,8 +51,9 @@ The end-points will be displayed as green circles and a “Next” button appear
 
 ===1.6 Options===
 
-After the user flips to the next panel they will see some options to choose before starting the tracking. These options are now described here.
+In this panel the user will see some options before starting the tracking. They are described in this section
 
+[[Image:Options.png|300px]]
 
 Deselect and select ends
 
@@ -61,7 +62,9 @@ Before starting the actual tracking of the dynamically growing microtubules, the
 
 Select time
 
-Select the start and end time over which the tracking will be performed by entering the frame numbers. Click on confirm seed ends and track button to start the tracking. The program displays yellow ellipses showing the  marked seeds that are being tracked, red ellipses mark seeds, which won”t be tracked. Green circles mark ends to be tracked. Orange circles mark user defined ends and will be tracked.
+The tracking is performed from the first frame till the end frame by default, if the user however wishes to alter the start and the end frame of tracking they can do so here. The tracking will then be performed from the user chosen start frame till the user chosen end frame.
+
+Click on confirm seed ends and track button to start the tracking. The program displays yellow ellipses showing the  marked seeds that are being tracked, red ellipses mark seeds, which won”t be tracked. Green circles mark ends to be tracked. Orange circles mark user defined ends and will be tracked.
 The actual tracking is  performed “live” (progress bar will show the current time in relation to the end time-point). A crosshair will show the current position of the found end on each marked microtubule end. A faint grey line is also drawn along the detected track enabling the user to ensure the correctness of the tracks obtained by the program.
 
 At the end of tracking a Log file will appear with the message to inform the user about the end of tracking and about the text files written with the track information.  The results are also displayed as two movies, the “Track ID” movie, which can be used to link the trajectories to individual microtubules and an “Overlay movie”, in which the user can recapitulate the tracking. The trajectory of each end is individually saved as .txt file and numbered according to the track ID.
@@ -69,8 +72,6 @@ At the end of tracking a Log file will appear with the message to inform the use
 Save parameters
 
 After successful tracking, the user has the option to save the program parameters, so that the movie can be run (again) in batch mode. This choice can also be made without doing the tracking after just making the parameter selection. Clicking on this button triggers the close of the program and saves the program parameters in IJ.log file of FIJI, this close of program is done to ensure that the log file is properly updated by FIJI.
-
-[[Image:Options.png|300px]]
 
 =Module 2- Microtubule dynamics=
 Microtubules show a dynamic behavior known as dynamic instability, which is characterized by four parameters (1) polymerization velocity (vp, nm/s), (2) depolymerization velocity (vd, nm/sec), (3) catastrophe frequency (fcat, sec-1), and (4) rescue frequency (fres, sec-1). Using the trajectories created in Module 1 (The .txt file contains frame number, total length (in px and μm), track ID, x and y position
