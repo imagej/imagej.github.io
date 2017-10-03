@@ -37,7 +37,7 @@ The program automatically reads the metadata shown as pixel size (micrometer in 
 can optionally determine the PSF of your microscope from bead images by fitting a Gaussian function.
 
 ===1.4 Preprocessing===
-As mentioned before, for recognizing microtubules in the image preprocessed movie is essential, we provide the user with an option to do pseudo-flat field correction and to apply a median filter of certain radius (e.g. r=2 pixels). Optionally user can load their own preprocessed movie.
+As mentioned before, for recognizing microtubules in the image preprocessing is essential, we provide the user with an option to do pseudo-flat field correction and to apply a median filter of certain radius (e.g. r=2 pixels). Optionally user can load their own preprocessed movie.
 Please note that this blurring will not be used during subsequent tracking. Press Next to proceed, and 3 screens and one panel will open. 
 
 They show the original movie, the preprocessed movie, and the “active image”, which representing the seeds and is typically the first frame of the movie. Every successfully recognized seed will be marked with a red ellipse.
