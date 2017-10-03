@@ -1,4 +1,4 @@
-==Microtubule polarity and (+) end vs. (-) end tracking ==
+
 
 Microtubules have an intrinsic polarity with a slow growing (-) and a faster growing (+) end. Usually, (+)
 end dynamics are reported and this option allows for (+) end selection. If the first frames do not allow
