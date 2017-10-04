@@ -1,5 +1,5 @@
 In this method an intensity threshold value is used to create a binary image on which a distance transform is performed to create a distance transformed image. This distance transformed image is then segmented by watershedding. The user has one parameter to choose here which is the intensity threshold value.
-* threshold value is an intensity value chosen to create a binary image, the minimum value is 0 and maximum value is 1 for the slider as the image intensity is always normalized between 0 and 1. An appropriate value has to be chosen to avoid over or under segmentation of the image.
+*Threshold value is an intensity value chosen to create a binary image, the minimum value is 0 and maximum value is 1 for the slider as the image intensity is always normalized between 0 and 1. An appropriate value has to be chosen to avoid over or under segmentation of the image.
 
 The user can also display the result of the watershed operation by clicking on the display Bitimage and/or display Watershedimage option before performing the watershedding. 
 
