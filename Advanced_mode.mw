@@ -30,4 +30,4 @@ The tracking is performed from the first frame till the end frame by default, if
 
 *Select Segmentation method
 
-For the dynamic channel the user here has the option of selecting just MSER as the segmentation method or watershed followed by MSER, the first method is the default method in the simple mode. The second method is provided here to ensure correct assignment of the end points over the time frames when microtubules get too close to each other for example. The parameter selection required for each of the two segmentation methods is made in the next panel to which the user can flip to after making this choice.
+For the dynamic channel the user here has the option of selecting just [[MSER as the segmentation method]] or [[watershed followed by MSER]], the first method is the default method in the simple mode. The second method is provided here to ensure correct assignment of the end points over the time frames when microtubules get too close to each other for example. The parameter selection required for each of the two segmentation methods is made in the next panel to which the user can flip to after making this choice.
