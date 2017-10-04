@@ -1,4 +1,7 @@
 After making this choice of segmentation in the advanced mode the following panel appears
+
 [[Image:Trackadvanced.png|300px]]
+
 Here the user can again make a choice of increasing or decreasing the edge enhancement factor. All the MSER parameters appear here in the second panel, read more about [[MSER parameters]]. After making suitable parameter selection the user can then go over the tracking options where they can see some advanced parameter selections for the optimizer and assignment layer of the program. This panel is shown here
-[[Image:ModelChoice.png|300px]]
+
+[[Image:ModelChoice.png|500px]]
