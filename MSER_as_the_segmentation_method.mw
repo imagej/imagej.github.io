@@ -4,4 +4,8 @@ After making this choice of segmentation in the advanced mode the following pane
 
 Here the user can again make a choice of increasing or decreasing the edge enhancement factor. All the MSER parameters appear here in the second panel, read more about [[MSER parameters]]. After making suitable parameter selection the user can then go over the tracking options where they can see some advanced parameter selections for the optimizer and assignment layer of the program. This panel is shown here
 
-[[Image:ModelChoice.png|500px]]
+[[Image:ModelChoice.png|800px]]
+
+Read more about [[sub-pixel localization parameter selection]].
+
+If the user does not wish to change the default settings for sub-pixel localization, they can skip this step and directly click on start tracking button to start the tracking from user defined first and last frame.
