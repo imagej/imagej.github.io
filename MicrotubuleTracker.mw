@@ -43,7 +43,8 @@ Please note that this blurring will not be used during subsequent tracking. Pres
 They show the original movie, the preprocessed movie, and the “active image”, which representing the seeds and is typically the first frame of the movie. Every successfully recognized seed will be marked with a red ellipse.
 
 ===1.5 MSER parameters===
-The default algorithm to identify the seeds as objects is called Maximally Stable Extremal Regions (MSER) (Ref 1) Read more about [[MSER parameters]]. If seeds are not recognized or two very close seeds are recognized as one, the user can change the MSER parameters using the adjustable sliders. The effect will be displayed live on the “active image”. Once most seeds are correctly recognized as objects, click “Find endpoints” to detect the ends of each seed with sub-pixel accuracy. 
+The default algorithm to identify the seeds as objects is called Maximally Stable Extremal Regions (MSER) (group<ref>  
+Robust wide-baseline stereo from maximally stable extremal regions, J Matas, O Chum, M Urban, T Pajdla Image and vision computing 22 (10), 761-767.  </ref>.) Read more about [[MSER parameters]]. If seeds are not recognized or two very close seeds are recognized as one, the user can change the MSER parameters using the adjustable sliders. The effect will be displayed live on the “active image”. Once most seeds are correctly recognized as objects, click “Find endpoints” to detect the ends of each seed with sub-pixel accuracy. 
 
 The end-points will be displayed as green circles and a “Next” button appears on the panel which allows the user to flip to the next panel.
 
@@ -83,6 +84,3 @@ The panel that opens will allow the user to select individual files containing t
 the default parameters. Read more about the [[RANSAC parameters]]. If the default parameters work well, the user can save the estimated dynamic parameters of the microtubule, which will appear as a results table.
 
 [[Image:ransacfirst.png|500px]]
-
-=== References ===
-* Robust wide-baseline stereo from maximally stable extremal regions, J Matas, O Chum, M Urban, T Pajdla Image and vision computing 22 (10), 761-767.
