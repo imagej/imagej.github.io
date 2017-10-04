@@ -13,7 +13,7 @@ MSER detected regions as shown as red ellipses. The line along which each of the
 
 *Min diversity (Advanced Mode): The MSER algorithm creates a component tree and based on this parameter user can choose to keep all the regions or to exclude some of the regions. For values equal to 1 only the roots of the component trees would be kept as stable regions, by decreasing this value more MSER regions would show starting from regions which are dissimilar to the roots and for small values of the parameter even the regions which are similar to the roots of the component tree. In the simple mode the value is kept at 1 and in the advanced mode this value can be chosen as per user discretion. For seed images a value of 1 is recommended. During tracking however, this parameter is helpful in avoiding miss-assignments by the optimizer if the microtubules collide for example, values above 0.75 are recommended in such cases.
 
-MSER panel in the advanced mode appears as shown below
+MSER panel in the advanced mode appears as shown below, after clicking on "find endpoints" a next button would appear along with the prev button, allowing user to flip to the next panel.
 
 
 [[Image:Advanced3.png|300px]]
