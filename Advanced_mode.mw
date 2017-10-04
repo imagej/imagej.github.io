@@ -3,7 +3,7 @@ In advanced mode there are three distinct modes to identify microtubules, MSER, 
 
 === Watershedding and Hough Transform ===
 
-For crowded movies MSER based segmentation may not be able to separate close lying seeds, to do that watershed based segmentation may be needed, watershedding is able to demarcate the regions where each microtubule lies. After these regions have been found a Hough Transform is performed to obtain the line parameters for each microtubule.
+For crowded movies MSER based segmentation may not be able to separate close lying seeds, to do that watershed based segmentation may be needed, watershedding is able to demarcate the regions where each microtubule lies. After these regions have been found a Hough Transform is performed to obtain the line parameters for each microtubule. Read more about [[watershedding and Hough transform parameters]].
 
 === MSER and Hough Transform ===
 For not soe dense images the microtubules are easy to locate and MSER is able to do so, in the default MSER approach it is assumed that the microtubules lie along the semi-major axis of the microtubules, which is true in most of the cases. If however they do not lie along the semi-major axis of the ellipses a Hough transform inside each of the ellipse can be performed to determine the line parameters for each seed.
