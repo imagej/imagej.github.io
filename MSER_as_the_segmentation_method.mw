@@ -8,6 +8,8 @@ Here the user can again make a choice of increasing or decreasing the edge enhan
 
 Read more about [[sub-pixel localization parameter selection]].
 
+*Start tracking
+
 If the user does not wish to change the default settings for sub-pixel localization, they can skip this step and directly click on start tracking button to start the tracking from user defined first and last frame.
 
 
