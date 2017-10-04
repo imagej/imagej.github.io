@@ -9,3 +9,8 @@ Here the user can again make a choice of increasing or decreasing the edge enhan
 Read more about [[sub-pixel localization parameter selection]].
 
 If the user does not wish to change the default settings for sub-pixel localization, they can skip this step and directly click on start tracking button to start the tracking from user defined first and last frame.
+
+
+*Save parameters
+
+After successful tracking, the user has the option to save the program parameters, so that the movie can be run (again) in batch mode. This choice can also be made without doing the tracking after just making the parameter selection. Clicking on this button triggers the close of the program and saves the program parameters in IJ.log file of FIJI, this close of program is done to ensure that the log file is properly updated by FIJI.
