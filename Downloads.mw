@@ -1,4 +1,4 @@
-{{TOC|right}}Here you can [http://downloads.imagej.net/ImageJ2-20160205.zip download] an "all platforms" version of ImageJ, without a bundled Java or extra extensions.
+{{TOC|right}}Here you can [https://downloads.imagej.net/ImageJ2-20160205.zip download] an "all platforms" version of ImageJ, without a bundled Java or extra extensions.
 
 {{Notice | Unfortunately, due to the ongoing transition from Java 6 to Java 8, this download of "plain ImageJ2" cannot currently be updated to the latest Java-8-compatible version. See the [[Java 8]] page for details. For the time being, we recommend [[Fiji/Downloads|using the Fiji distribution of ImageJ]] to stay current with updates.}}
 
@@ -6,7 +6,7 @@
 {{Box |
 | bgcolor=white
 | text=<center>
-[[File:Imagej2-download-icon.png | link=http://downloads.imagej.net/ImageJ2-20160205.zip | 192px ]]
+[[File:Imagej2-download-icon.png | link=https://downloads.imagej.net/ImageJ2-20160205.zip | 192px ]]
 </center>
 }}
 
@@ -25,8 +25,8 @@ These downloads bundle ImageJ with a curated collection of plugins pre-installed
 
 ImageJ will run on any system that has a Java 8 (or later) runtime installed. This includes, but is not limited to:
 
-# Windows XP, Vista, 7 or 8 with Java installed from [http://java.com/ java.com]
-# Mac OS X 10.8 "Mountain Lion" or later with Java installed from [http://java.com/ java.com]
+# Windows XP, Vista, 7 or 8 with Java installed from [https://java.com/ java.com]
+# Mac OS X 10.8 "Mountain Lion" or later with Java installed from [https://java.com/ java.com]
 # Ubuntu Linux 12.04 LTS or later with OpenJDK 8 installed
 
 = Installation =
