@@ -1,8 +1,8 @@
 === Object recognition methods  ===
 In advanced mode there are three distinct modes to identify microtubules, MSER, Watershedding followed by Hough Transform and MSER followed by Hough Transform. The object recognition for microtubules is performed on a preprocessed image, on that preprocessed image a Canny edge detector followed by a mean filter with a radius determined by the PSF of the microscope is applied, in the simple mode the edge enhancement factor is simply 1. In this mode this is adjustable, increasing this parameter causes the microtubules to appear thicker on the preprocessed image. This factor can be increased if certain microtubules are not properly detected by the Object recognition method of choice. Read more about [[MSER parameters]].
 
-== Watershedding and Hough Transform == 
+== Watershedding and Hough Transform ==
 
-
+For crowded movies MSER based segmentation may not be able to separate close lying seeds, to do that watershed based segmentation may be needed, watershedding is able to demarcate the regions where each microtubule lies. After these regions have been found a Hough Transform is performed to obtain the line parameters for each microtubule.
 
 == MSER and Hough Transform ==
