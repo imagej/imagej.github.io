@@ -83,3 +83,8 @@ The panel that opens will allow the user to select individual files containing t
 the default parameters. Read more about the [[RANSAC parameters]]. If the default parameters work well, the user can save the estimated dynamic parameters of the microtubule, which will appear as a results table.
 
 [[Image:ransacfirst.png|500px]]
+
+== References ==
+* Robust wide-baseline stereo from maximally stable extremal regions
+J Matas, O Chum, M Urban, T Pajdla
+Image and vision computing 22 (10), 761-767
