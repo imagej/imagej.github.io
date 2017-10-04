@@ -19,10 +19,12 @@ In this approach the user has to first make a selection of the MSER parameters a
 == Tracking options ==
 After clicking the next button the user has several options to choose from before starting the tracking. 
 
+
+[[Image:Advanced4.png|300px]]
+
 *Deselect and select ends
 
 Before starting the actual tracking of the dynamically growing microtubules, the program will give you several options. Before choosing endpoints to remove or add you check all frames of the movie by moving the slider in the “Deselect and select ends” dialog. Select or deselect ends. If an end was wrongly recognized or two points are too close to each other you can deselect an end by left clicking on it in the image (will appear as pink circle instead of green). The program will remember and allow to re-select this end by clicking left click again near to the end point of interest (the pink circle becomes green again). In case an end has not been recognized or a randomly nucleated end has to be selected, use Shift + left click to select a user defined end (orange circle will mark the end). Making a left click near the user defined seed end deselects it and marks it as red, the user can make as many clicks to select the ends they want to. Read more on microtubule polarity and (+) end vs. (-) end tracking.
-
 
 *Select time
 
