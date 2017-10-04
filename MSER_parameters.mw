@@ -1,7 +1,7 @@
 
 The default algorithm to identify the seeds as objects is called Maximally Stable Extremal Regions (MSER) . In short, it computes all possible intensity thresholds of an image, which is called a component tree (e.g. it creates a 3d image from a 2d image). Subsequently MSER tries to identify “stable regions” in this space. Regions in the component tree are considered stable if an object has a certain size and preserves its shape over a given range of thresholds without merging with other objects.
 
-MSER detected regions as shown as red ellipses. The line along which each of the Microtubules lie is assumed to be the semi-major axis of the MSER ellipse. The MSER is computed on an unsigned byte image where intensity levels are integers between 0-255 and several parameters can be adjust to find as many microtubules as possible:
+MSER detected regions as shown as red ellipses. The line along which each of the Microtubules lie is assumed to be the semi-major axis of the MSER ellipse. The MSER is computed on an unsigned byte image where intensity levels are integers between 0-255 and several parameters can be adjusted to find as many microtubules as possible:
 
 *Threshold difference defines the resolution of the component tree, i.e. every how many intensity values a threshold is computed. A low value should be used when low intensity objects are to be recognized. Increasing the parameter value will only allow higher intensity objects to be recognized.
 
