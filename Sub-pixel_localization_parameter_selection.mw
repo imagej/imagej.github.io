@@ -8,6 +8,6 @@ For the model parameters itself the parameters that can be changed include initi
 
 Other model parameter is the initial spacing between the Gaussians which make up the model, the number entered is the percentage of the min(sigmaX, sigmaY) of the PSF of the microscope.
 
-Furthermore the parameter of maximum direction change computes the change in direction of each microtubule and caps the maximum directio change, it can happen that during the collisions the optimizer makes a mistake in doing the assignment of the growing end of the microtubule, in which case the program is going to prevent itself from doing such a miss-assingment if the angle change per frame is higher than the cap set up by the user,.
+Furthermore the parameter of maximum direction change  caps the maximum direction change, it can happen that during the collisions the optimizer makes a mistake in doing the assignment of the growing end of the microtubule, this would be recognized by the program as an angular change of more than this preset value and for that time frame no assignment of end points would be done.
 
 The parameter of number of Gaussians are the number of Gaussians used to make the mask that is then fitted to the growing ends after optimization is performed, in our experience 2 Gaussian mask fits work best for noisy images and if the signal to noise ratio is high then even 3 Gaussians can be used to do this fitting.
