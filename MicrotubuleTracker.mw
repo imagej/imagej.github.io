@@ -84,7 +84,5 @@ the default parameters. Read more about the [[RANSAC parameters]]. If the defaul
 
 [[Image:ransacfirst.png|500px]]
 
-== References ==
-* Robust wide-baseline stereo from maximally stable extremal regions
-J Matas, O Chum, M Urban, T Pajdla
-Image and vision computing 22 (10), 761-767
+=== References ===
+* Robust wide-baseline stereo from maximally stable extremal regions, J Matas, O Chum, M Urban, T Pajdla Image and vision computing 22 (10), 761-767.
