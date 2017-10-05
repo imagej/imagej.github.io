@@ -17,12 +17,12 @@ The welcome panel will open.
 
 [[Image:MTrack.png|500px]]
 
-===1.1 Choose Mode===
+=== Choose Mode===
 For a first analysis of your data, we suggest using the simple mode, in which we have pre-selected a number of parameters. In case you are unsatisfied with the outcome of the tracking you can use the
 [[advanced mode]] to fine-tune settings. When analyzing more than one movie, you can select [[batch mode (MTrack)]] and run many movies simultaneously. However, before running the program in batch mode, you
 have to at least run the program once in single or advanced mode to select and save the required parameters. The following intro is on simple mode, see here for advanced or batch mode.
 
-===1.2 Select Movie===
+=== Select Movie===
 
 Next, the user selects the movie. The movie to be uploaded in the original movie coming out of the microscope. Object recognition of Microtubules requires a preprocessed movie  and such a preprocessed movie is only used for locating where the microtubules are in the image and not for end-points detection, which is always performed on the original image. The user has the option to either perform a flat-field correction and apply a median filter of chosen radius or user can also upload their own preprocessed movie.
 (Read more about [[Preprocessing]]).
@@ -32,17 +32,17 @@ For the movie type chooses one of the three supported options:
 * Single channel time-lapse images
 Please choose an output file name and directory. The trajectory files will be written as .txt files. By default trajectories will be saved in the current working directory with the name of the image.
 
-===1.3 Microscope Parameters===
+=== Microscope Parameters===
 The program automatically reads the metadata shown as pixel size (micrometer in x and y) and frame rate (in seconds). If the metadata could not be read properly, the user can change the values. In addition, the user is asked to enter the Sigma(X) and Sigma(Y) of the Point-Spread-Function (PSF) of the microscope in pixel units (Note 1). For your convenience, our software comes with an inbuilt PSF analyzer tool, which
 can optionally determine the PSF of your microscope from bead images by fitting a Gaussian function.
 
-===1.4 Preprocessing===
+=== Preprocessing===
 As mentioned before, for recognizing microtubules in the image preprocessing is essential, we provide the user with an option to do pseudo-flat field correction and to apply a median filter of certain radius (e.g. r=2 pixels). Optionally user can load their own preprocessed movie.
 Please note that this blurring will not be used during subsequent tracking. Press Next to proceed, and 3 screens and one panel will open. 
 
 They show the original movie, the preprocessed movie, and the “active image”, which representing the seeds and is typically the first frame of the movie. Every successfully recognized seed will be marked with a red ellipse.
 
-===1.5 MSER parameters===
+=== MSER parameters===
 The default algorithm to identify the seeds as objects is called Maximally Stable Extremal Regions (MSER) <ref>  
 Robust wide-baseline stereo from maximally stable extremal regions, J Matas, O Chum, M Urban, T Pajdla Image and vision computing 22 (10), 761-767.  </ref>.Read more about [[MSER parameters]]. If seeds are not recognized or two very close seeds are recognized as one, the user can change the MSER parameters using the adjustable sliders. The effect will be displayed live on the “active image”. Once most seeds are correctly recognized as objects, click “Find endpoints” to detect the ends of each seed with sub-pixel accuracy. 
 
