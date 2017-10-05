@@ -19,8 +19,8 @@
 {{MenuItem | [[Git]] }}
 {{MenuItem | [[Maven]] }}
 {{MenuItem | [[IDEs]] }}
-{{MenuItem | [[Jenkins]] }}
 {{MenuItem | [[Travis]] }}
+{{MenuItem | [[AppVeyor]] }}
 {{MenuItem | [[Dotfiles]] }}
 | {{#ifeq:{{{1}}}|tools||collapsed}}
 }}
