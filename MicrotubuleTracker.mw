@@ -25,7 +25,7 @@ have to at least run the program once in single or advanced mode to select and s
 === Select Movie===
 
 Next, the user selects the movie. The movie to be uploaded in the original movie coming out of the microscope. Object recognition of Microtubules requires a preprocessed movie  and such a preprocessed movie is only used for locating where the microtubules are in the image and not for end-points detection, which is always performed on the original image. The user has the option to either perform a flat-field correction and apply a median filter of chosen radius or user can also upload their own preprocessed movie.
-(Read more about [[Preprocessing]]).
+(Read more about [[Preprocessing(MTrack)]]).
 For the movie type chooses one of the three supported options:
 * Two channel image as hyper stack (both channels in one image)
 * Concatenated seed image followed by time-lapse images
