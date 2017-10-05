@@ -32,7 +32,7 @@ The ImageJ [[Jenkins]] polls the [http://imagej.net/notes.html ImageJ1 release n
 # Commits the result to the <code>master</code> branch of the {{GitHub | org=imagej | repo=ImageJA | label=imagej/ImageJA repository}} on [[GitHub]].
 # Triggers followup Jenkins jobs:
 #* [http://jenkins.imagej.net/job/ImageJ1-deploy/ ImageJ1-deploy], which builds and deploys the ImageJA project to the Maven Central repository (via OSS Sonatype).
-#* [http://jenkins.imagej.net/job/ImageJ1-javadoc/ ImageJ1-javadoc], which updates the {{Javadoc | project=ImageJ1}} javadoc on <code>javadoc.imagej.net</code>.
+#* [http://jenkins.imagej.net/job/ImageJ1-javadoc/ ImageJ1-javadoc], which updates the {{Javadoc | project=ImageJ1}} javadoc on <code>javadoc.scijava.org</code>.
 #* [http://jenkins.imagej.net/job/ImageJ1-unit-tests/ ImageJ1-unit-tests], which runs the [[Unit tests for ImageJ1]], which flag any regressions in ImageJ1 behavior.
 #* [http://jenkins.imagej.net/job/Upload-IJ1-Into-ImageJ/ Upload-IJ1-Into-ImageJ], which uploads the new <code>ij</code> JAR onto the core ImageJ [[update site]].
 
