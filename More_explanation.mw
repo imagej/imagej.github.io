@@ -1,0 +1,1 @@
+Point spread function or the PSF is estimated by fitting Gaussian function to the bead images. In our case we only need 2D bead images as the microtubules imaged are in 2 dimension. The mathematical form of the Gaussian used in the program is exp[-(x - ux)/sx^2 - (y-uy)/sy^2]
