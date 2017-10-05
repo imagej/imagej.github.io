@@ -1,25 +1,10 @@
-{{DevelopMenu | tools}}{{Minibox | logo=Jenkins.png | blurb='''Jenkins:''' Serving the ImageJ community since 2010!}}ImageJ has a [http://jenkins.imagej.net/ Jenkins server]: a continuous integration system which automatically checks the code for build and test errors.
+{{DevelopMenu | tools}}{{Minibox | logo=Jenkins.png | blurb='''Jenkins:''' Serving the ImageJ community, 2010 - 2017!}}ImageJ has a [http://jenkins.imagej.net/ Jenkins server]: a continuous integration system which automatically checks the code for build and test errors.
 
-Jenkins tests builds and performs [[releases]] for [[SciJava]] projects. It deploys <code>SNAPSHOT</code> builds to the [http://maven.imagej.net/ ImageJ Maven repository] in response to pushes to each code repository's <code>master</code> branch. So any downstream projects depending on a version of <code>LATEST</code> for a given component will match the last successful Jenkins build—i.e., the latest code on <code>master</code>.
+{{Notice | ImageJ and SciJava projects are in the midst of transitioning to [[Travis CI]] and [[AppVeyor]] for CI services. When this transition is complete, the ImageJ Jenkins server will be retired.}}
 
-Because every build also runs the associated [[wikipedia:Unit testing|unit tests]], Jenkins is instrumental in early detection of new bugs introduced to the codebase.
+The ImageJ Jenkins currently performs a small number of key services:
 
-You can access Jenkins's last successful build artifacts from the [[Downloads]] page.
+* [http://jenkins.imagej.net/job/Synchronize-and-deploy-IJ1/ Automatic deployment of ImageJ 1.x] and [http://jenkins.imagej.net/job/ImageJ1-releases/ building of installers for ImageJ 1.x].
+* Keeping [https://jenkins.imagej.net/view/Mirrors/ Git repository mirrors in sync].
 
-Jenkins also performs [[releases]], including [http://jenkins.imagej.net/job/Synchronize-and-deploy-IJ1/ automatically deploying ImageJ 1.x] and [http://jenkins.imagej.net/job/ImageJ1-releases/ building installers for ImageJ 1.x].
-
-Jenkins performs many other services too, such as keeping Git repository mirrors in sync, building javadocs and updating other web resources.
-
-== Travis CI ==
-
-Developers of third party libraries and plugins can look at [[Travis]] for an open-source CI tool, with build configurations stored in the source repository itself.
-
-== Emotional Jenkins ==
-
-Jenkins is ImageJ's robot butler! He does his job faithfully, and without rest.
-
-When things are going well, he is happy. But when code breaks, he can become sad, or even angry:
-
-[[File:Emotional-jenkins.png]]
-
-Make sure you keep your code shipshape if you want to avoid the butler's wrath!
+For an up-to-date list, see the [https://jenkins.imagej.net/view/Active/ list of active Jenkins jobs].
