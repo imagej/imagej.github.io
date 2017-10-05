@@ -8,3 +8,5 @@ The ImageJ Jenkins currently performs a small number of key services:
 * Keeping [https://jenkins.imagej.net/view/Mirrors/ Git repository mirrors in sync].
 
 For an up-to-date list, see the [https://jenkins.imagej.net/view/Active/ list of active Jenkins jobs].
+
+[[Category:Development]]
