@@ -1,8 +1,18 @@
 {{DevelopMenu | tools}}{{Minibox | logo=Travis.png | blurb='''Travis CI:''' Build your code in the cloud!}}[https://travis-ci.org/ Travis] is a tool for [[Project_management#Continuous_integration|continuous integration]]. It has excellent integration with [[GitHub]], and is very useful for automating builds, deployment and other tasks.
 {{TOC}}
+= Services =
+
+[[ImageJ]] and [[SciJava]] projects use Travis in a variety of ways:
+
+* Perform builds of SciJava projects. Travis deploys <code>SNAPSHOT</code> builds to the [http://maven.imagej.net/ ImageJ Maven repository] in response to pushes to each code repository's <code>master</code> branch. So any downstream projects depending on a version of <code>LATEST</code> for a given component will match the last successful Travis build—i.e., the latest code on <code>master</code>.
+* Run each project's associated [[wikipedia:Unit testing|unit tests]]. Travis is instrumental in early detection of new bugs introduced to the codebase.
+* Perform [[releases]] of [[SciJava]] projects. Travis deploys release builds to the appropriate Maven repository—typically either the ImageJ Maven repository or [https://oss.sonatype.org/ OSS Sonatype].
+* Keep the [[javadoc]] site updated.
+* Keep other web resources updated.
+
 = Automatic Deployment of Maven Artifacts =
 
-Deploying your library to [[Maven]] makes it available for other developers. It is also a [[Fiji/Contribution_requirements|contribution requirement for the Fiji project]].
+Deploying your library to a [[Maven]] repository makes it available for other developers. It is also a [[Fiji/Contribution_requirements|contribution requirement for the Fiji project]].
 
 == Requirements ==
 * Host your [[open-source]] project on [[GitHub]].
@@ -10,7 +20,6 @@ Deploying your library to [[Maven]] makes it available for other developers. It 
 * Contact an ImageJ admin in [[Chat#Gitter|Gitter]] or [http://forum.imagej.net/ the ImageJ forum] and request that they file a PR which adds Travis support to your repository.
 
 == Instructions ==
-{{Notice | These instructions describe much of the technical process of adding Travis metadata to your repository. Normally, an ImageJ admin—not the plugin developer—will follow these instructions.}}
 <div style="overflow: hidden">
 <tabs>
 <tab name="Maven">
