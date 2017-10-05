@@ -12,13 +12,13 @@ For crowded movies MSER based segmentation may not be able to separate close lyi
 === MSER and Hough Transform ===
 For not so dense images the microtubules are easy to locate and MSER is able to do so, in the default MSER approach it is assumed that the microtubules lie along the semi-major axis of the microtubules, which is true in most of the cases. If however they do not lie along the semi-major axis of the ellipses a Hough transform inside each of the ellipse can be performed to determine the line parameters for each seed.
 
+In this approach the user has to first make a selection of the MSER parameters and then Hough transform parameters (see [[MSER parameters]] and Size of Hough space in rho/theta in [[watershedding and Hough transform parameters]]), MSER ellipses would be displayed in which the Hough transform would be carried out to find the line parameters of all the microtubules.
+
 The first panel for this mode is shown below.
 
 [[Image:Advanced1.png|300px]]
 
 The next button appears on this panel only after the user has made the choice of the object recognition method.
-
-In this approach the user has to first make a selection of the MSER parameters and then Hough transform parameters (see [[MSER parameters]] and Size of Hough space in rho/theta in [[watershedding and Hough transform parameters]]), MSER ellipses would be displayed in which the Hough transform would be carried out to find the line parameters of all the microtubules.
 
 == Tracking options ==
 After clicking the next button the user has several options to choose from before starting the tracking. 
