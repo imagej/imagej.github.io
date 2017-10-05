@@ -20,7 +20,7 @@ The welcome panel will open.
 === Choose Mode===
 For a first analysis of your data, we suggest using the simple mode, in which we have pre-selected a number of parameters. In case you are unsatisfied with the outcome of the tracking you can use the
 [[advanced mode(MTrack)]] to fine-tune settings. When analyzing more than one movie, you can select [[batch mode(MTrack)]] and run many movies simultaneously. However, before running the program in batch mode, you
-have to at least run the program once in single or advanced mode to select and save the required parameters. The following intro is on simple mode, see here for advanced or batch mode.
+have to at least run the program once in single or advanced mode to select and save the required parameters. The following intro is on simple mode.
 
 === Select Movie===
 
