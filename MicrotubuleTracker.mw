@@ -85,5 +85,11 @@ If not forwarded by Module 1, Module 2 can be selected by  {{bc|Plugins|MTrack|R
 The panel that opens will allow the user to select individual files containing trajectories displayed as length versus time plots on which RANSAC fits a model of microtubule dynamics using
 the default parameters. Read more about the [[RANSAC parameters]]. If the default parameters work well, the user can save the estimated dynamic parameters of the microtubule, which will appear as a results table.
 
+After the user has gone through certain files in the table shown in the panel below they can click "compile results till current file" in which case average growth/shrink rates and a count of each growth and shrink event along with catastrophe and rescue frequency for each trajectory is computed and stored in the current directory. Program creates two files labelled "Allrates.txt" and "Allaverages.txt", in the first file it contains the information about the start and end time of each growth and shrink events along with the trajectory filename for easy identification of to which movie does the computation belongs to. In the second file it contains the averaged rate and frequency information of each trajectory analyzed up to then.
+
+If the user wishes to use the same parameter selection for all the files and obtain the "Allrates" and "Allaverages" text files without individually selecting the parameters for each they can then simply click "Auto fit and compile results" button, which would do the Ransac fits on all the trajectory files listed on the table and save the two results file in the current directory. 
+
+After completing the analysis for one directory of trajectory files the user can again select another directory and all the tracker generated files will be updated in the table. Now the user can repeat the same process as above for analysis of these set of files and continue to compile results for as many directory of files as they wish to.
+
 [[Image:ransacfirst.png|500px]]
 Click here to see some examples of the [[Ransac fits]].
