@@ -30,7 +30,7 @@ For the movie type choose one of the three supported options:
 * Two channel image as hyper stack (both channels in one image)
 * Concatenated seed image followed by time-lapse images
 * Single channel time-lapse images
-Please choose an output file name and directory. The trajectory files will be written as .txt files. By default trajectories will be saved in the current working directory with the name of the image.
+Please choose an output file name and directory. The trajectory files will be written as .txt files. By default trajectories will be saved in the current working directory with the name of the movie.
 
 === Microscope Parameters===
 The program automatically reads the metadata shown as pixel size (micrometer in x and y) and frame rate (in seconds). If the metadata could not be read properly, the user can change the values. In addition, the user is asked to enter the Sigma(X) and Sigma(Y) of the Point-Spread-Function (PSF) of the microscope in pixel units see here for [[more explanation]]. For your convenience, our software comes with an inbuilt PSF analyzer tool, which
