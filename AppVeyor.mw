@@ -1,0 +1,7 @@
+{{DevelopMenu | tools}}[https://ci.appveyor.com/ AppVeyor] is a tool for [[Project_management#Continuous_integration|continuous integration]] on [[Windows]] platforms. It is very useful for automating builds, deployment and other tasks.
+{{TOC}}
+= Services =
+
+[[ImageJ]] and [[SciJava]] projects are in the process of transitioning from [[Jenkins]] to AppVeyor for [[Windows]] builds. Stay tuned.
+
+[[Category:Development]]
