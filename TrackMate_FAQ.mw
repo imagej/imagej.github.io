@@ -4,6 +4,16 @@ This list of frequently asked questions is compiled from several questions we ha
 
 
 
+=== Only the first time-point of the track is displayed after loading. === 
+
+''I have an issue after loading a TrackNate file. I can retrieve my TrackScheme with the tracks I was working on, however my stack doesn’t go from one time frame to the next and only the first point of the track is displayed. Do you have any idea of what is happening. I don’t think there was any update between the time I saved the file and now. There is no error message. I can’t add more points to the TrackScheme…''
+
+This looks like a classical dimensionality problem. Is your image a Z-stack (1 time-point many Z slices) after loading? Check the image properties of the image.
+
+
+
+
+
 === Limitations of TrackMate for spot detection. ===
 
 ''We are using TrackMate to generate lineages of X cells in live Y and are interested in how the intensity of a signal of interest changes over time, but also in the cell volume. Since most of our cells are not spherical and some are clustered close together, the LoG detector yields rather unsatisfying results. Is it possible to detect these cells based on their actual shape instead of assuming they are all spheres and measure the volume of such segmented cells?''
