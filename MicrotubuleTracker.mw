@@ -92,4 +92,4 @@ If the user wishes to use the same parameter selection for all the files and obt
 After completing the analysis for one directory of trajectory files the user can again select another directory and all the tracker generated files will be updated in the table. Now the user can repeat the same process as above for analysis of these set of files and continue to compile results for as many directory of files as they wish to.
 
 [[Image:ransacfirst.png|500px]]
-Click here to see some examples of the [[Ransac fits]].
+Click here to see some examples of the [[MTrack-Ransac fits]].
