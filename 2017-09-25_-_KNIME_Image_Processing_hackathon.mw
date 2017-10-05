@@ -40,6 +40,16 @@ There was a big focus this time on machine learning, particularly deep learning 
 * Worked on API improvements in <code>imagej/imagej-tensorflow</code> with the help of {{Person|ctrueden}}.
 * Programmed KNIME Image Processing nodes which provied a loop over tiles of an image. See [https://github.com/knime-ip/knip/commits/tiling-nodes branch on GitHub].
 
+=== Stefan Helfrich ===
+
+* Worked on improvements to the <code>imagej-maven-plugin</code> ({{GitHub | org=imagej | repo=imagej-maven-plugin | pr=24 | label=1}}, {{GitHub | org=imagej | repo=imagej-maven-plugin | pr=26 | label=2}}, {{GitHub | org=imagej | repo=imagej-maven-plugin | pr=27 | label=3}})
+* Got {{Person|chaubold}}, {{Person|maarzt}}, and {{Person|xulman}} started on integrating their SciJava Commands as KNIME nodes
+* Reviewed PRs of <code>imagej-ops</code> ({{GitHub | org=imagej | repo=imagej-ops | pr=523 | label=1}}, {{GitHub | org=imagej | repo=imagej-ops | pr=519 | label=2}}, {{GitHub | org=imagej | repo=imagej-ops | pr=510 | label=3}}, [http://forum.imagej.net/t/frangi-vesselness-filter-feedback/6747 4])
+* Looked into migration of algorithms from MorphoLibJ to Ops/ImgLib2
+* Worked with {{Person|milkyklim}} on migrating an ImageJ1 plugin to a SciJava Command (and possibly Ops for computations)
+* Fixed some bugs with respect to <code>@Parameters</code> ({{GitHub | org=imagej | repo=imagej-common | pr=69 | label=1}}, {{GitHub | org=imagej | repo=imagej-legacy | pr=171 | label=2}})
+* Paired with {{Person|Rueden}} to push the cloud-based build and deploy infrastructure
+
 == Technical discussions ==
 
 * Fiji component and application releases: today and in the future ({{Person|ctrueden}}, {{Person|fjug}}, {{Person|tpietzsch}})
