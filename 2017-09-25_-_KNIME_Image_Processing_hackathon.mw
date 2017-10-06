@@ -50,6 +50,13 @@ There was a big focus this time on machine learning, particularly deep learning 
 * Fixed some bugs with respect to <code>@Parameters</code> ({{GitHub | org=imagej | repo=imagej-common | pr=69 | label=1}}, {{GitHub | org=imagej | repo=imagej-legacy | pr=171 | label=2}})
 * Paired with {{Person|Rueden}} to push the cloud-based build and deploy infrastructure
 
+=== Tobias Pietzsch ===
+
+* Worked on imglib2 discrete regions framework (imglib2-roi branch [https://github.com/imglib/imglib2-roi/tree/8bafc8de2d83531aaef46ee36964731a78204589 "cleaned-up"], imglib-tests branch [https://github.com/imglib/imglib2-tests/tree/ec0df49bf5fc344f6ae5af5fec8584a36e3d2ca2 "roi"]).
+* Reviewed imglib2-roi {{GitHub | org=imglib | repo=imglib-roi | pr=29 | label=Masks PR}}, and worked on revision/re-implementation of core interfaces and operators  (imglib2-roi branch [https://github.com/imglib/imglib2-roi/tree/c41c93acf696b801e13f5023bf00527c04722263   "troi"]).
+* Worked on reviewing and integrating "dynamic bookmarks" feature by [https://github.com/maxkleinhenz/bigdataviewer-core Max Kleinhenz] into BigDataViewer.
+* Minor BigDataViewer features to help {{Person|tibuch}} with [https://github.com/knime-ip/knip-bdv Big Data Viewer GUI].
+
 == Technical discussions ==
 
 * Fiji component and application releases: today and in the future ({{Person|ctrueden}}, {{Person|fjug}}, {{Person|tpietzsch}})
