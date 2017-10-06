@@ -18,7 +18,9 @@ movie (batch mode).
 # Restart Fiji.
 # Launch the plugin with ''Plugins ▶ MTrack''.
 
-== Module 1 - Microtubule Detection & Tracking==
+== Usage ==
+
+=== Module 1 - Microtubule Detection & Tracking===
 A typical dataset consists of a single two-dimensional (2d) image of the non-dynamic microtubule seeds followed by a 2d time-lapse of the dynamically growing microtubules (Note1). The file format
 can be any format readable by Fiji/Bioformats (.tif, .nd2, … ). To run the tracker select {{bc|Plugins|MTrack|Tracking}}
 
@@ -26,12 +28,12 @@ The welcome panel will open.
 
 [[Image:MTrack.png|500px]]
 
-=== Choose Mode===
+==== Choose Mode====
 For a first analysis of your data, we suggest using the simple mode, in which we have pre-selected a number of parameters. In case you are unsatisfied with the outcome of the tracking you can use the
 [[advanced mode(MTrack)]] to fine-tune settings. When analyzing more than one movie, you can select [[batch mode(MTrack)]] and run many movies simultaneously. However, before running the program in batch mode, you
 have to at least run the program once in single or advanced mode to select and save the required parameters. The following intro is on simple mode.
 
-=== Select Movie===
+==== Select Movie====
 
 Next, the user selects the movie. The movie to be uploaded in the original movie coming out of the microscope. Object recognition of Microtubules requires a preprocessed movie  and such a preprocessed movie is only used for locating where the microtubules are in the image and not for end-points detection, which is always performed on the original image. The user has the option to either perform a flat-field correction and apply a median filter of chosen radius or user can also upload their own preprocessed movie.
 (Read more about [[Preprocessing(MTrack)]]).
@@ -41,17 +43,17 @@ For the movie type choose one of the three supported options:
 * Single channel time-lapse images
 Please choose an output file name and directory. The trajectory files will be written as .txt files. By default trajectories will be saved in the current working directory with the name of the movie.
 
-=== Microscope Parameters===
+==== Microscope Parameters====
 The program automatically reads the metadata shown as pixel size (micrometer in x and y) and frame rate (in seconds). If the metadata could not be read properly, the user can change the values. In addition, the user is asked to enter the Sigma(X) and Sigma(Y) of the Point-Spread-Function (PSF) of the microscope in pixel units see here for [[more explanation]]. For your convenience, our software comes with an inbuilt PSF analyzer tool, which
 can optionally determine the PSF of your microscope from bead images by fitting a Gaussian function.
 
-=== Preprocessing===
+==== Preprocessing====
 As mentioned before, for recognizing microtubules in the image, preprocessing is essential, we provide the user with an option to do pseudo-flat field correction and to apply a median filter of certain radius (e.g. r=2 pixels). Optionally user can load their own preprocessed movie.
 Please note that this blurring will not be used during subsequent tracking. 
 
 Press Next to proceed, and 3 screens and one panel will open. They show the original movie, the preprocessed movie, and the “active image”, which representing the seeds and is typically the first frame of the movie. Every successfully recognized seed will be marked with a red ellipse.
 
-=== MSER parameters===
+==== MSER parameters====
 The default algorithm to identify the seeds as objects is called Maximally Stable Extremal Regions (MSER) <ref>  
 Robust wide-baseline stereo from maximally stable extremal regions, J Matas, O Chum, M Urban, T Pajdla Image and vision computing 22 (10), 761-767.  </ref>.Read more about [[MSER parameters]]. If seeds are not recognized or two very close seeds are recognized as one, the user can change the MSER parameters using the adjustable sliders. The effect will be displayed live on the “active image”. Once most seeds are correctly recognized as objects, click “Find endpoints” to detect the ends of each seed with sub-pixel accuracy. 
 
@@ -59,7 +61,7 @@ The end-points will be displayed as green circles and a “Next” button appear
 
 [[Image:MserSimple.png|300px]]
 
-===1.6 Options===
+====1.6 Options====
 
 In this panel the user will see some options before starting the tracking. They are described in this section
 
@@ -85,7 +87,7 @@ After successful tracking, the user has the option to save the program parameter
 
 Click here for some example [[tracks]].
 
-=Module 2- Microtubule dynamics=
+===Module 2- Microtubule dynamics===
 Microtubules show a dynamic behavior known as dynamic instability, which is characterized by four parameters (1) polymerization velocity (vp, nm/sec), (2) depolymerization velocity (vd, nm/sec), (3) catastrophe frequency (fcat, sec-1), and (4) rescue frequency (fres, sec-1). Using the trajectories created in Module 1 (The .txt file contains frame number, total length (in px and μm), track ID, x and y position
 (pixel and μm) and the length increment from the previous frame (px and micrometer). Module 2 derives these dynamic parameters by fitting models using RANSAC. (Read more on [[MTrack-RANSAC models]]).
 
