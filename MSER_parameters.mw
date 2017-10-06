@@ -5,7 +5,7 @@ MSER detected regions as shown as red ellipses. The line along which each of the
 
 *Threshold difference defines the resolution of the component tree, i.e. every how many intensity values a threshold is computed. A low value should be used when low intensity objects are to be recognized. Increasing the parameter value will only allow higher intensity objects to be recognized.
 
-*Stability Score: is a threshold for the minimal stability of a region in the component space. For values close to 0 many regions will be deemed stable and for values close to 1 only very few extremely stable regions will be found.
+*Stability Score: is a threshold for the minimal stability of a region in the component space. For values close to 1 many regions will be deemed stable and for values close to 0 only very few extremely stable regions will be found.
 
 *Min #of pixels: This number vetoes the regions which have fewer pixels than this pre-set value and includes only the ellipses which carry more pixels than this value.
 
