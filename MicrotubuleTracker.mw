@@ -9,8 +9,17 @@ MTrack is a bi-modular tool. The first module detects and tracks the growing mic
 (polymerization and depolymerization velocities, catastrophe and rescue frequencies). It also computes statistics such as length and lifetime distributions when analyzing more than one
 movie (batch mode).
 
+== Installation ==
+
+# Click ''Help ▶ Update....''
+# Click the ''Manage update sites'' button.
+# Select the ''MTrack'' update site in the list.
+# Click Close and then click ''Apply changes''.
+# Restart Fiji.
+# Launch the plugin with ''Plugins ▶ MTrack''.
+
 == Module 1 - Microtubule Detection & Tracking==
-A typical data set consists of a single two-dimensional (2d) image of the non-dynamic microtubule seeds followed by a 2d time-lapse of the dynamically growing microtubules (Note1). The file format
+A typical dataset consists of a single two-dimensional (2d) image of the non-dynamic microtubule seeds followed by a 2d time-lapse of the dynamically growing microtubules (Note1). The file format
 can be any format readable by Fiji/Bioformats (.tif, .nd2, … ). To run the tracker select {{bc|Plugins|MTrack|Tracking}}
 
 The welcome panel will open.
