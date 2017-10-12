@@ -6,7 +6,7 @@ TrackScheme displays a kind of "track map", where a track is laid on pane, arran
 
 == TrackScheme in a nutshell ==
 
-You can do quite some things using TrackScheme, notably track analysis. This is not the ofcus of this tutorial, we will simply be focusing on the track editing features. However, here is a brief description of what the toolbar buttons do.
+You can do quite some things using TrackScheme, notably track analysis. This is not the focus of this tutorial, we will simply be focusing on the track editing features. However, here is a brief description of what the toolbar buttons do.
 
 [[Image:TrackSchemeToolbarExplanation.png]]
 
@@ -28,8 +28,7 @@ We will be mainly using the '''Redo layout''' and button.
 * Notice in the displayer that the selected track appear with a green and thick line, so as to highlight it. 
 * To delete all of it, simply press the {{key|Delete}} key in TrackScheme, or use the right-click menu to do so. 
 
-Press the '''Redo layout''' button when you are done. There should be four tracks remaining. Notice that their color changed as you deleted some of them. Their default color-map goes from blue to red and is re-adjusted every time the track number changes. 
-
+Press the '''Redo layout''' button when you are done. There should be four tracks remaining. Notice that their color changed as you deleted some of them. Their default color-map goes from blue to red and is re-adjusted every time the track number changes.
 
 == Editing tracks: creating links ==
 
