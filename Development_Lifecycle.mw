@@ -80,13 +80,7 @@ Once a feature or fix is complete it can move to the <code>master</code> branch 
 
 == Phase 3: Released ==
 
-''Note:'' This step can only be performed by a [[Governance|project maintainer]].
-
-Once the <code>master</code> branch of a component has your desired new functionality, the next step is to cut a ''release'' version of the component. Normally, the Maven version (in the [https://maven.apache.org/pom.html#Introduction pom.xml]) on master is a ''SNAPSHOT'' version, meaning it is [[Reproducible builds|unstable]] and not yet released. However, a [[Reproducible_builds|stable]] ''release'' artifact can be deployed to the ImageJ Maven repository in one of three methods, described below.  As a rule of thumb, SciJava developers currently use:
-# The '''[[#Method 1: release-version.sh|release-version.sh script]]''' to release components of the [[Architecture|ImageJ software stack]] (SciJava, ImgLib2, SCIFIO and ImageJ) as well as most [[Fiji]] components.
-# The '''[[#Method 2: Double push to master|Double push to master]]''' approach to release other [[Fiji]] components.
-
-=== Method 1: release-version.sh ===
+Once the <code>master</code> branch of a component has your desired new functionality, the next step is to cut a ''release'' version of the component. Normally, the Maven version (in the [https://maven.apache.org/pom.html#Introduction pom.xml]) on master is a ''SNAPSHOT'' version, meaning it is [[Reproducible builds|unstable]] and not yet released. However, a [[Reproducible_builds|stable]] ''release'' artifact can be deployed to the appropriate remote Maven repository.
 
 The [https://github.com/scijava/scijava-scripts/blob/aab7cfe805638efc25615fdd7c78cedaae3c7197/release-version.sh release-version.sh] script automates the steps to performing a release. It relies on the [http://maven.apache.org/maven-release/maven-release-plugin/ Maven Release plugin] to do most of the heavy lifting, but also does some extra work (e.g., to ensure releases are deployed to the correct repository).
 
@@ -95,56 +89,27 @@ There are several advantages to this approach:
 * A tag is created on GitHub to easily reference the release commit
 * The "bump to next release cycle" commit is done automatically
 * The Maven POM references the correct tag rather than <code>HEAD</code>
-* This job is capable of releasing certain artifacts to OSS Sonatype (and hence to Maven Central) as appropriate
+* [[Travis CI]] performs the actual release for you, using credentials which are encrypted in the repository itself
 
 '''Prerequisites:'''
 
-<ul>
-<li>Install the release-version.sh script. The best way to do this is to clone the complete [https://github.com/scijava/scijava-scripts SciJava-scripts] repository. That will give you access to other useful scripts and help keep them all up to date.</li>
-<li>('''optional''') If you want to easily use these scripts from any directory, you can [http://askubuntu.com/q/97897 add the scijava-scripts folder to your PATH].</li>
-<li>You will need an account for [http://maven.imagej.net maven.imagej.net] and the local Maven configuration to deploy to this repository. If you haven't set this up yet, contact the ImageJ developers on the [[ImageJ Forum]] to ask for an account. Then follow [https://maven.apache.org/guides/mini/guide-encryption.html this guide] to configure your <code>settings.xml</code> and <code>settings-security.xml</code> appropriately on your local machine. In particular, you will need the following block in <code>settings.xml</code>:
-<pre>
-	<servers>
-		<server>
-			<id>imagej.releases</id>
-			<username>{your Nexus username}</username>
-			<password>{your Nexus password hash}</password>
-		</server>
-		<server>
-			<id>imagej.snapshots</id>
-			<username>{your username}</username>
-			<password>{your Nexus password hash}</password>
-		</server>
-	</servers>
-</pre></li>
-</ul>
+* Install the <code>release-version.sh</code> script. The best way to do this is to clone the complete [https://github.com/scijava/scijava-scripts SciJava-scripts] repository. That will give you access to other useful scripts and help keep them all up to date.
+* ('''optional''') If you want to easily use these scripts from any directory, you can [http://askubuntu.com/q/97897 add the scijava-scripts folder to your PATH].
+* Verify that your project's parent is pom-scijava version 17.1.1 or newer. If the parent version is too old, or is not pom-scijava, then upgrade it. Ask on the [[forum]] if you need assistance.
+* If your component is to be released to the ImageJ Maven repository, then add the following line to the properties section of your POM: <code><releaseProfiles>deploy-to-imagej</releaseProfiles></code>
+* Ensure the repository for your project is linked with a [[Travis CI]] job that automatically builds and deploys Maven artifacts in response to changes on GitHub. If you're not sure if your project has this automation, ask for help on the [[forum]].
+* Familiarize yourself with the concept of [[Maven]], and in particular the idea of [http://stackoverflow.com/q/5901378 SNAPSHOT and release artifacts]. When Travis deploys to Maven, it is actually uploading to a separate release or SNAPSHOT repository based on the version defined in the project's pom.xml. SNAPSHOTs can be changed; releases cannot.
+* Familiarize yourself with the [http://git-scm.com/book/en/v2/Git-Basics-Tagging Git tagging process]. The <code>release-version.sh</code> script will automatically tag a commit and push the tag to your remote Git repository for the release process. The convention of creating a tag to match each release creates a nice "bookmark" system for developers when they check out the code.
 
 '''Steps to release:'''
 
-# From your project's directory, simply run:
-    release-version.sh <NEW_VERSION>
+From your project's directory, simply run:
+<source lang="shell">
+release-version.sh <NEW_VERSION>
+</source>
+The script will verify that your master branch is ready to go, then create and push the release tag. [[Travis CI]] will then notice the tag and complete the release for you. You should receive an email from Travis after the release is complete indicating whether the build was successful.
 
 {{Notice | If your project is a [https://maven.apache.org/guides/mini/guide-multiple-modules.html multi-module build], first make a commit commenting out any modules that should not be released. Then run the script from the aggregator pom directory.}}
-
-=== Method 2: Double push to master ===
-
-Historically, the "double push to master" approach was the recommended way to release—but it has now been replaced by the other two approaches. Nonetheless, there are a few components of Fiji that still use it to do their releases. A push to master happens with the POM version set to a non-SNAPSHOT—e.g., {{GitHub | org=fiji | repo=Trainable_Segmentation | commit=fd92658524dd90da8d505dad295c6f6ce3e3a188 | label=this Trainable_Segmentation commit releasing version 2.2.1}}. A second push to master is then typically done to "bump to next release cycle" after [[Travis CI]] starts building the release—e.g., {{GitHub | org=fiji | repo=Trainable_Segmentation | commit= | label=this Trainable_Segmentation commit bumps to 2.2.2-SNAPSHOT}}. This second push avoids accidentally having two different commits that purport to be the same non-SNAPSHOT version (since release versions must be unique and immutable).
-
-'''Prerequisites:'''
-* The repository for your project needs to be linked with a [[Project_management#Continuous_integration|continuous integration tool]] that will automatically build and deploy Maven artifacts in response to changes on GitHub, e.g. using [[Travis#Automatic_Deployment_of_Maven_Artifacts|Travis]]. If you're not sure if your project has this automation, [[Contact|contact us]] and we'll help you find out.
-* Familiarize yourself with the concept of [[Maven]], and in particular the idea of [http://stackoverflow.com/q/5901378 SNAPSHOT and release artifacts]. When Travis deploys to Maven, it is actually uploading to a separate release or SNAPSHOT repository based on the version defined in the project's pom.xml. SNAPSHOTs can be changed; releases cannot.
-* Familiarize yourself with the [http://git-scm.com/book/en/v2/Git-Basics-Tagging Git tagging process]. You will need to tag a commit and push the tag to a remote repository for the release process. Although Git tags can be changed or deleted over time, the convention of creating a tag to match each release creates a nice "bookmark" system for developers when they check out the code.
-
-'''Steps to release:'''
-# Make a commit '''on master''' that changes the version of your project to a non-SNAPSHOT.
-# Push your commit to GitHub to trigger the deployment of a Maven release.
-# Tag the release commit with an appropriate name. Core projects use a standard "component name"-"version" naming scheme, e.g. <code>mysoftware-1.2.3</code>.
-# Make a second commit incrementing the version to the next SNAPSHOT version.
-# Push again to GitHub—both the SNAPSHOT-version master branch '''and the release tag'''.
-
-The disadvantage to this method is that, since the steps are not automated, there is room for error and inconsistency—not pushing the tag, not making a commit go back to a SNAPSHOT version, etc.
-
-{{Warning | This process works because Travis automatically builds the project in response to commits on master. Whether they are deployed as [[Maven]] releases or SNAPSHOTs is determined entirely by the version number in the pom.xml for the project. This is why it is especially important to change the version back to a SNAPSHOT after the release: only one release for a given version can exist, and once it exists it cannot be overwritten. If you create multiple git commits at the same release version, it becomes unclear which one is the [[Reproducible builds|"real" release in Maven terms]].}}
 
 == Phase 4: Managed ==
 
