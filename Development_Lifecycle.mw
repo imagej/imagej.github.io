@@ -80,34 +80,32 @@ Once a feature or fix is complete it can move to the <code>master</code> branch 
 
 == Phase 3: Released ==
 
-Once the <code>master</code> branch of a component has your desired new functionality, the next step is to cut a ''release'' version of the component. Normally, the Maven version (in the [https://maven.apache.org/pom.html#Introduction pom.xml]) on master is a ''SNAPSHOT'' version, meaning it is [[Reproducible builds|unstable]] and not yet released. However, a [[Reproducible_builds|stable]] ''release'' artifact can be deployed to the appropriate remote Maven repository.
+Once the <code>master</code> branch of a component has your desired new functionality, the next step is to cut a ''release'' version of the component. Normally, the Maven version (in the [https://maven.apache.org/pom.html#Introduction pom.xml]) on master is a [http://stackoverflow.com/q/5901378 ''SNAPSHOT'' version], meaning it is [[Reproducible builds|unstable]] and not yet released. However, a [[Reproducible_builds|stable]] ''release'' artifact can be deployed to the appropriate remote Maven repository.
 
 The [https://github.com/scijava/scijava-scripts/blob/master/release-version.sh release-version.sh] script automates the steps to performing a release. It relies on the [http://maven.apache.org/maven-release/maven-release-plugin/ Maven Release plugin] to do most of the heavy lifting, but also does some extra work (e.g., to ensure releases are deployed to the correct repository).
 
-There are several advantages to this approach:
+=== Advantages ===
 
 * A tag is created on GitHub to easily reference the release commit
 * The "bump to next release cycle" commit is done automatically
 * The Maven POM references the correct tag rather than <code>HEAD</code>
 * [[Travis CI]] performs the actual release for you, using credentials which are encrypted in the repository itself
 
-'''Prerequisites:'''
+=== Prerequisites ===
 
 * Install the <code>release-version.sh</code> script. The best way to do this is to clone the complete [https://github.com/scijava/scijava-scripts SciJava-scripts] repository. That will give you access to other useful scripts and help keep them all up to date.
 * ('''optional''') If you want to easily use these scripts from any directory, you can [http://askubuntu.com/q/97897 add the scijava-scripts folder to your PATH].
 * Verify that your project's parent is pom-scijava version 17.1.1 or newer. If the parent version is too old, or is not pom-scijava, then upgrade it. Ask on the [[forum]] if you need assistance.
 * If your component is to be released to the ImageJ Maven repository, then add the following line to the properties section of your POM: <code><releaseProfiles>deploy-to-imagej</releaseProfiles></code>
 * Ensure the repository for your project is linked with a [[Travis CI]] job that automatically builds and deploys Maven artifacts in response to changes on GitHub. If you're not sure if your project has this automation, ask for help on the [[forum]].
-* Familiarize yourself with the concept of [[Maven]], and in particular the idea of [http://stackoverflow.com/q/5901378 SNAPSHOT and release artifacts]. When Travis deploys to Maven, it is actually uploading to a separate release or SNAPSHOT repository based on the version defined in the project's pom.xml. SNAPSHOTs can be changed; releases cannot.
-* Familiarize yourself with the [http://git-scm.com/book/en/v2/Git-Basics-Tagging Git tagging process]. The <code>release-version.sh</code> script will automatically tag a commit and push the tag to your remote Git repository for the release process. The convention of creating a tag to match each release creates a nice "bookmark" system for developers when they check out the code.
 
-'''Steps to release:'''
+=== Steps to release ===
 
 From your project's directory, simply run:
 <source lang="shell">
-release-version.sh <NEW_VERSION>
+release-version.sh
 </source>
-The script will verify that your master branch is ready to go, then create and push the release tag. [[Travis CI]] will then notice the tag and complete the release for you. You should receive an email from Travis after the release is complete indicating whether the build was successful.
+The script will verify that your master branch is ready to go, then create and push a [http://git-scm.com/book/en/v2/Git-Basics-Tagging tag] for the release. [[Travis CI]] will then notice the tag and complete the release for you. You should receive an email from Travis after the release is complete indicating whether the build was successful.
 
 {{Notice | If your project is a [https://maven.apache.org/guides/mini/guide-multiple-modules.html multi-module build], first make a commit commenting out any modules that should not be released. Then run the script from the aggregator pom directory.}}
 
