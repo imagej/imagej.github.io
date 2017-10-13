@@ -93,7 +93,7 @@ The [https://github.com/scijava/scijava-scripts/blob/master/release-version.sh r
 
 === Prerequisites ===
 
-* Install the <code>release-version.sh</code> script. The best way to do this is to clone the complete [https://github.com/scijava/scijava-scripts SciJava-scripts] repository. That will give you access to other useful scripts and help keep them all up to date.
+* Install the <code>release-version.sh</code> script. The best way to do this is to clone the [https://github.com/scijava/scijava-scripts SciJava-scripts] repository. That will give you access to other useful scripts and help keep them all up to date.
 * ('''optional''') If you want to easily use these scripts from any directory, you can [http://askubuntu.com/q/97897 add the scijava-scripts folder to your PATH].
 * Verify that your project's parent is pom-scijava version 17.1.1 or newer. If the parent version is too old, or is not pom-scijava, then upgrade it. Ask on the [[forum]] if you need assistance.
 * If your component is to be released to the ImageJ Maven repository, then add the following line to the properties section of your POM: <code><releaseProfiles>deploy-to-imagej</releaseProfiles></code>
