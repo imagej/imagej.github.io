@@ -86,10 +86,10 @@ The [https://github.com/scijava/scijava-scripts/blob/master/release-version.sh r
 
 === Advantages ===
 
-* A tag is created on GitHub to easily reference the release commit
-* The "bump to next release cycle" commit is done automatically
-* The Maven POM references the correct tag rather than <code>HEAD</code>
-* [[Travis CI]] performs the actual release for you, using credentials which are encrypted in the repository itself
+* A tag is created on GitHub to easily reference the release commit.
+* The "bump to next release cycle" commit is done automatically.
+* The Maven POM references the correct tag rather than <code>HEAD</code>.
+* [[Travis CI]] performs the actual release for you, using credentials which are encrypted in the repository itself.
 
 === Prerequisites ===
 
