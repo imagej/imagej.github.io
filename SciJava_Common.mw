@@ -22,20 +22,20 @@ All program state, such as available plugins, is accessible from a root object k
 
 Here are a few of SciJava Common's major core services:
 
-* '''{{Javadoc | package = org/scijava/app | class = AppService}}''' - Tracks software applications (SCIFIO, ImageJ, etc.) present in the context.
-* '''{{Javadoc | package = org/scijava/display | class = DisplayService}}''' - Tracks available displays, as well as the active display, and provides the means to create new displays to visualize data.
-* '''{{Javadoc | package = org/scijava/event | class = EventService}}''' - Publishes events to the [[wikipedia:Publish%E2%80%93subscribe pattern|event bus]], and allows interested parties to subscribe to them. The service provides the central means of communication between various parts of the codebase.
-* '''{{Javadoc | package = org/scijava/io | class = IOService}}''' - General tools for opening and saving data within the context.
-* '''{{Javadoc | package = org/scijava/menu | class = MenuService}}''' - Builds the application menu structure.
-* '''{{Javadoc | package = org/scijava/module | class = ModuleService}}''' - Tracks available modules, and provides the infrastructure for executing them.
-* '''{{Javadoc | package = org/scijava/object | class = ObjectService}}''' - Tracks available objects of various types, including {{Javadoc | package = net/imagej | class = Dataset}}s and {{Javadoc | package = org/scijava/display | class = Display}}s.
-* '''{{Javadoc | package = org/scijava/options | class = OptionsService}}''' - Tools for managing program settings.
-* '''{{Javadoc | package = org/scijava/platform | class = PlatformService}}''' - Provides hooks for extending the application's behavior depending on the deployment platform (operating system, version of Java, etc.).
-* '''{{Javadoc | package = org/scijava/plugin | class = PluginService}}''' - Tracks available plugins, and provides the infrastructure for executing them (using the {{Javadoc | package = org/scijava/module | class = ModuleService}}).
-* '''{{Javadoc | package = org/scijava/app | class = StatusService}}''' - Publishes status updates for ongoing operations.
-* '''{{Javadoc | package = org/scijava/thread | class = ThreadService}}''' - Manages multithreading.
-* '''{{Javadoc | package = org/scijava/tool | class = ToolService}}''' - Tracks available tools—logic binding user input to behavior—as well as the active tool (selected on the toolbar).
-* '''{{Javadoc | package = org/scijava/ui | class = UIService}}''' - Discovers and launches a user interface for interacting with ImageJ.
+* '''{{Javadoc | project = SciJava | package = org/scijava/app | class = AppService}}''' - Tracks software applications (SCIFIO, ImageJ, etc.) present in the context.
+* '''{{Javadoc | project = SciJava | package = org/scijava/display | class = DisplayService}}''' - Tracks available displays, as well as the active display, and provides the means to create new displays to visualize data.
+* '''{{Javadoc | project = SciJava | package = org/scijava/event | class = EventService}}''' - Publishes events to the [[wikipedia:Publish%E2%80%93subscribe pattern|event bus]], and allows interested parties to subscribe to them. The service provides the central means of communication between various parts of the codebase.
+* '''{{Javadoc | project = SciJava | package = org/scijava/io | class = IOService}}''' - General tools for opening and saving data within the context.
+* '''{{Javadoc | project = SciJava | package = org/scijava/menu | class = MenuService}}''' - Builds the application menu structure.
+* '''{{Javadoc | project = SciJava | package = org/scijava/module | class = ModuleService}}''' - Tracks available modules, and provides the infrastructure for executing them.
+* '''{{Javadoc | project = SciJava | package = org/scijava/object | class = ObjectService}}''' - Tracks available objects of various types, including {{Javadoc | package = net/imagej | class = Dataset}}s and {{Javadoc | package = org/scijava/display | class = Display}}s.
+* '''{{Javadoc | project = SciJava | package = org/scijava/options | class = OptionsService}}''' - Tools for managing program settings.
+* '''{{Javadoc | project = SciJava | package = org/scijava/platform | class = PlatformService}}''' - Provides hooks for extending the application's behavior depending on the deployment platform (operating system, version of Java, etc.).
+* '''{{Javadoc | project = SciJava | package = org/scijava/plugin | class = PluginService}}''' - Tracks available plugins, and provides the infrastructure for executing them (using the {{Javadoc | package = org/scijava/module | class = ModuleService}}).
+* '''{{Javadoc | project = SciJava | package = org/scijava/app | class = StatusService}}''' - Publishes status updates for ongoing operations.
+* '''{{Javadoc | project = SciJava | package = org/scijava/thread | class = ThreadService}}''' - Manages multithreading.
+* '''{{Javadoc | project = SciJava | package = org/scijava/tool | class = ToolService}}''' - Tracks available tools—logic binding user input to behavior—as well as the active tool (selected on the toolbar).
+* '''{{Javadoc | project = SciJava | package = org/scijava/ui | class = UIService}}''' - Discovers and launches a user interface for interacting with ImageJ.
 
 === ImageJ services ===
 
