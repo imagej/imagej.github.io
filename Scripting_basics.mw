@@ -99,3 +99,30 @@ imagePlus = new Opener().openImage(filePath)
 // Display the ImagePlus.
 imagePlus.show()
 </source>
+
+== ImagePlus, ImageStack and ImageProcessor Conversion ==
+
+When working with the ImageJ API you will run into the problem that you have e.g. a ImageProcessor, but what you need right now is a ImagePlus.
+
+To convert one to another use these commands:
+
+<source lang='java'>
+
+// ImagePlus to ImageProcessor:
+ip = imp.getProcessor()
+
+// ImageProcessor to ImagePlus:
+imp = new ImagePlus('title', ip)
+
+// ImagePlus to ImageStack:
+stack = imp.getImageStack()
+
+// ImageStack to ImagePlus:
+imp = ImagePlus('title', stack)
+
+// ImageStack to ImageProcessor:
+ip = stack.getProcessor(nframe)
+
+// ImageProcessor to ImageStack:
+stack.addSlice(ip)
+</source>
