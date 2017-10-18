@@ -1,0 +1,19 @@
+{{Infobox
+| name                   = Virtual Cell
+| software               = Virtual Cell
+| logo                     = [[File:Vcell-icon.png|96px]]
+| author                 = [https://health.uconn.edu/cell-analysis-modeling/ Center for Cell Analysis and Modeling] at the [https://health.uconn.edu/ UConn Health].
+| maintainer             = Jim Schaff
+| source                 = [https://github.com/virtualcell on GitHub]
+| status                 = Active
+| website                = http://vcell.org/
+}}Virtual Cell (VCell for short) is a modeling and simulation environment for cell biology.
+
+An VirtualCell plugin for ImageJ is currently in the works! Stay tuned!
+
+== Publication ==
+* {{Publication|VCell}}
+
+[[Category:Related Software]]
+[[Category:SciJava]]
+[[Category:Citable]]
