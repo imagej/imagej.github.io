@@ -2,7 +2,7 @@
 | name                   = Virtual Cell
 | software               = Virtual Cell
 | logo                     = [[File:Vcell-icon.png|96px]]
-| author                 = [https://health.uconn.edu/cell-analysis-modeling/ Center for Cell Analysis and Modeling] at the [https://health.uconn.edu/ UConn Health].
+| author                 = [https://health.uconn.edu/cell-analysis-modeling/ CCAM] at [https://health.uconn.edu/ UConn Health]
 | maintainer             = {{Person|Jcschaff}}, {{Person|Rueden}}
 | source                 = [https://github.com/virtualcell on GitHub]
 | status                 = Active
