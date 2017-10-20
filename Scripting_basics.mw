@@ -8,7 +8,7 @@ ImageJ and Fiji are able to run scripts written in [http://imagej.net/Scripting#
 
 == Get an image and perform an action ==
 
-First we want to learn different ways to select an image and perform an action on it. In [[ImageJ1]] the image is represented by an [http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html ImagePlus] object. The recommended way to select an ImagePlus opbject is to use [[Script_parameters|Script Parameters]]:
+First we want to learn different ways to select an image and perform an action on it. In [[ImageJ1]] the image is represented by an [http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html ImagePlus] object. The recommended way to select an ImagePlus object is to use [[Script_parameters|Script Parameters]]:
 
 <source lang='java'>
 #@ ImagePlus imp
