@@ -27,7 +27,7 @@ can be any format readable by Fiji/Bioformats (.tif, .nd2, … ). To run the tra
 
 The welcome panel will open.
 
-[[Image:MTrack.png|500px]]
+[[Image:WelcomeA.png|500px]][[Image:WelcomeB.png|500px]]
 
 ==== Choose Mode====
 For a first analysis of your data, we suggest using the simple mode, in which we have pre-selected a number of parameters. In case you are unsatisfied with the outcome of the tracking you can use the
