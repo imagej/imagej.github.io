@@ -22,7 +22,7 @@ Logo designed by Tobias Kletter.
 == Usage ==
 
 === Module 1 - Microtubule Detection & Tracking===
-A typical dataset consists of a single two-dimensional (2d) image of the non-dynamic microtubule seeds followed by a 2d time-lapse of the dynamically growing microtubules (Note1). The file format
+A typical dataset consists of a single two-dimensional (2d) image of the non-dynamic microtubule seeds followed by a 2d time-lapse of the dynamically growing microtubules. The file format
 can be any format readable by Fiji/Bioformats (.tif, .nd2, … ). To run the tracker select {{bc|Plugins|MTrack|Tracking}}
 
 The welcome panel will open.
