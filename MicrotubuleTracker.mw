@@ -36,7 +36,9 @@ have to at least run the program once in single or advanced mode to select and s
 
 ==== Select Movie====
 
-Next, the user selects the movie. The movie to be uploaded in the original movie coming out of the microscope. Object recognition of Microtubules requires a preprocessed movie  and such a preprocessed movie is only used for locating where the microtubules are in the image and not for end-points detection, which is always performed on the original image. The user has the option to either perform a flat-field correction and apply a median filter of chosen radius or user can also upload their own preprocessed movie.
+Next, the user selects the movie. The movie to be uploaded is the original movie coming out of the microscope. Object recognition of Microtubules requires a preprocessed movie  and such a preprocessed movie is only used for locating where the microtubules are in the image and not for end-points detection, which is always performed on the original image. In simple mode the program does a pseudo flat field correction by default and the user only has to input the microscope parameters and go next to start the tracking module.
+
+In the advanced mode the user has the option to either perform a flat-field correction and apply a median filter of chosen radius or user can also upload their own preprocessed movie.
 (Read more about [[Preprocessing(MTrack)]]).
 For the movie type choose one of the three supported options:
 * Two channel image as hyper stack (both channels in one image)
@@ -49,8 +51,8 @@ The program automatically reads the metadata shown as pixel size (micrometer in 
 can optionally determine the PSF of your microscope from bead images by fitting a Gaussian function.
 
 ==== Preprocessing====
-As mentioned before, for recognizing microtubules in the image, preprocessing is essential, we provide the user with an option to do pseudo-flat field correction and to apply a median filter of certain radius (e.g. r=2 pixels). Optionally user can load their own preprocessed movie.
-Please note that this blurring will not be used during subsequent tracking. 
+As mentioned before, for recognizing microtubules in the image, preprocessing is essential, in advanced mode we provide the user with an option to do pseudo-flat field correction and to apply a median filter of certain radius (e.g. r=2 pixels). Optionally user can load their own preprocessed movie.
+Please note that this blurring will not be used during subsequent tracking. In simple mode only pseudo-flat field correction is done.
 
 Press Next to proceed, and 3 screens and one panel will open. They show the original movie, the preprocessed movie, and the “active image”, which representing the seeds and is typically the first frame of the movie. Every successfully recognized seed will be marked with a red ellipse.
 
