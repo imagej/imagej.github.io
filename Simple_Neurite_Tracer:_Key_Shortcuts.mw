@@ -4,9 +4,9 @@
 
 * {{key|Y}} - Confirm the current temporary path. ''Mnemonic: <u>Y</u>es.''
 * {{key|N}} - discard the current temporary path. ''Mnemonic: <u>N</u>o.''
-* {{key|F}} - Finish a path.
-* {{key|C}} - Cancel a path.
-* {{key|Esc}} - Abandon search
+* {{key|F}} - Finish a path. Note that you can finish a path by pressing {{key|Y}} twice.
+* {{key|C}} - Cancel a path. Note that you can finish a path by pressing {{key|N}} twice.
+* {{key|Esc}} - Abort current operation.
 * {{key|G}} - Select the path nearest to the mouse pointer. ''Mnemonic: <u>G</u>roup paths around pointer.''
 
 
@@ -19,6 +19,7 @@
 * {{key|+}} - Zoom in (Simultaneously on all views).
 * {{key|-}} - Zoom out (Simultaneously on all views)
 * {{key|5}} - Toggle ''View paths'' choice: ''Parts in nearby slices'' / ''Projected through all slices''. Mnemonic: <u>5</u> is ImageJ's shortcut for "default" view ({{bc|Image|Zoom|View 100%}}).
+* {{Key|enter}} - Brings the tracing image/SNT window to front
 
 
 There are more complex key and mouse combinations used in:
