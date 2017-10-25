@@ -184,7 +184,7 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 | '''[[Bio-Formats]]'''
 | {{Person|Rueden}}<br>{{Person|Eliceiri}}
 | {{Person|Linkert}}
-| {{Person|Linkert}}<br>{{Person|Rueden}}<sup>4</sup>
+| {{Person|Linkert}}<br>{{Person|Sbesson}}
 | [https://github.com/openmicroscopy/bioformats/graphs/contributors List on GitHub]
 | See [http://www.openmicroscopy.org/site/about/ome-contributors OME Contributors]
 |-
@@ -239,7 +239,6 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 <sup>1</sup> Pietzsch leads on day to day issues. Pietzsch, Preibisch and Saalfeld vote on primary decisions, with Pietzsch's vote breaking ties.
 <br><sup>2</sup> Schindelin is currently on sabbatical from Fiji; see [https://groups.google.com/d/msg/fiji-devel/coIgXLws0eI/TZlwjXLyks0J this thread on fiji-devel].
 <br><sup>3</sup> Barber leads development of the {{GitHub | org=slim-curve | repo=slim-curve | label=SLIM Curve C library}}; Rueden leads development of the {{GitHub | org=slim-curve | repo=slim-plugin | label=SLIM Curve plugin for ImageJ}}.
-<br><sup>4</sup> Rueden maintains the Bio-Formats [[update site]] for ImageJ, but is not otherwise a Bio-Formats maintainer.
 
 == Further reading ==
 
