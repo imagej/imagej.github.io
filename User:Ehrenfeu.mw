@@ -15,27 +15,3 @@
 * [[Directionality]]
 * [[Stack Manipulation]]
 * [[TrackMate]] (single particle tracking)
-
-==== Building Fiji ====
-
-(currently just a scratchpad to collect stuff that should go in the official "fiji-devel" page)
-
-===== requirements =====
-for ubuntu 12.04 (precise)
-
- git-core curl unzip
-
-===== Eclipse =====
-
-====== Font Sizes ======
-From Stackoverflow: [http://stackoverflow.com/questions/3124629/ How to set the System Font for Eclipse (Linux only)]
-
-Create a file, e.g. <code>~/.gtkrc-eclipse</code> with this content:
- style "eclipse" {
-     font_name = "Sans Condensed 8"
- }
- class "GtkWidget" style "eclipse"
-
-
-Then run eclipse using this command:
- GTK2_RC_FILES=~/.gtkrc-eclipse eclipse
