@@ -47,6 +47,15 @@ Now update Eclipse's JRE to be JDK-aware:
 '''Avoid permissions issues.''' We recommend installing to <code>$HOME/eclipse</code>.
 
 '''Do not use a package manager.''' For several reasons, we do not recommend installing Eclipse from a package manager. You may not get a new enough version of Eclipse (we recommend 4.3+), you will not get the Java Developers version that includes the M2E plugins, and you will likely have trouble installing additional plugins due to the permissions issues with the system-wide installation.
+
+'''Adjust the Eclipse font size.''' Sometimes it is desirable to change the Eclipse font size. To do so, create a GTK configuration file (e.g. <code>~/.gtkrc-eclipse</code>) and place the following lines there:
+ style "eclipse" {
+     font_name = "Sans Condensed 8"
+ }
+ class "GtkWidget" style "eclipse"
+
+
+Then run eclipse using this command: <code>GTK2_RC_FILES=~/.gtkrc-eclipse eclipse</code>
 </tab>
 </tabs>
 </div>
