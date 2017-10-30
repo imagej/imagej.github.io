@@ -897,7 +897,7 @@ As any other module it can be used in a script, provided the jar file is in the 
 
 {{GitHubEmbed|org=fiji|repo=TrackMate|source=../../../scripts/CallTrackMateMultiChannel.py}}
 
-== Making TrackMate macro recordable with a 64-line script. ==
+== Making TrackMate macro recordable with a 64-line script ==
 
 Contributed by @imagejan during a NEUBIAS course. Quoting from Jan:
 
