@@ -889,16 +889,13 @@ Animator().run('start')
 </source>
 
 
-== Calling TrackMate with multi-channel analyzer. ==
+== Calling TrackMate with multi-channel analyzer ==
 
 TrackMate allows for the addition of jar files that contain extra TrackMate modules. The [[TrackMate#Downloadable_jars|multi-channel spot mean intensity analyzer]] is such a module.
 
 As any other module it can be used in a script, provided the jar file is in the plugins or jars folder of Fiji:
 
 {{GitHubEmbed|org=fiji|repo=TrackMate|source=../../../scripts/CallTrackMateMultiChannel.py}}
-
-
-
 
 == Making TrackMate macro recordable with a 64-line script. ==
 
