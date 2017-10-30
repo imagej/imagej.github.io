@@ -6,86 +6,83 @@
 
 <div style="float: left">
 === Principal investigators ===
-* {{Person|Eliceiri}}<sup>2</sup> (ImageJ/Fiji, OME)
-* {{Person|Tomancak}}<sup>3</sup> (ImageJ/Fiji)
-* [http://www.broadinstitute.org/~anne/ Anne Carpenter]<sup>4</sup> (CellProfiler, ImageJ)
-* [http://www.informatik.uni-konstanz.de/berthold/mitglieder/prof-dr-michael-berthold/ Michael Berthold]<sup>9</sup> (KNIME)
-* [http://www.lifesci.dundee.ac.uk/people/jason-swedlow Jason Swedlow]<sup>10,11</sup> (OME)
+* {{Person|Eliceiri}}<ref name="loci">[[LOCI|Laboratory for Optical and Computation]] (LOCI) at [http://wisc.edu/ UW-Madison]</ref> (ImageJ/Fiji, OME)
+* {{Person|Tomancak}}<ref name="mpicbg">[http://mpi-cbg.de/ Max Planck Institute of Molecular Cell Biology and Genetics] (MPI-CBG) at Dresden</ref> (ImageJ/Fiji)
+* [http://www.broadinstitute.org/~anne/ Anne Carpenter]<ref name="broad">[http://www.broadinstitute.org/ Broad Institute] of MIT and Harvard</ref> (CellProfiler, ImageJ)
+* [http://www.informatik.uni-konstanz.de/berthold/mitglieder/prof-dr-michael-berthold/ Michael Berthold]<ref name="unikn">[http://www.uni-konstanz.de/en/welcome/ University of Konstanz], Germany</ref><ref name="knime">[https://www.knime.com/ KNIME GmbH]</ref> (KNIME)
+* [http://www.lifesci.dundee.ac.uk/people/jason-swedlow Jason Swedlow]<ref name="glencoe">[http://glencoesoftware.com/ Glencoe Software], Inc.</ref><ref name="dundee">[http://www.dundee.ac.uk/ University of Dundee], Scotland</ref> (OME)
 
 === {{Logo | ImageJ | size=32px}}[[ImageJ]] ===
-* {{Person|Rasband}}<sup>1</sup> (lead, [[ImageJ 1.x]])
-* {{Person|Rueden}}<sup>2</sup> (lead, [[ImageJ2]])
-* {{Person|Dietzc}}<sup>9</sup>
-* {{Person|Bnorthan}}<sup>13</sup>
-* {{Person|Hinerm}}<sup>2</sup> (Sep 2010-Jun 2016)
-* {{Person|Leek}}<sup>4</sup> (Jan 2010-Apr 2016)
-* {{Person|Schindelin}}<sup>2</sup> (Sep 2011-Nov 2014)
-* {{Person|Grislis}}<sup>2</sup> (Jan 2010-Dec 2013)
-* {{Person|Bdezonia}}<sup>2</sup> (Jan 2010-Nov 2013)
-* {{Person|Harris}}<sup>5</sup> (Nov 2009-Jan 2012)
-* Adam Fraser<sup>4</sup> (Nov 2009-Aug 2011)
-* {{Person|Lentz}}<sup>2</sup> (Nov 2009-Feb 2011)
+* {{Person|Rasband}}<ref name="nih">[http://www.nih.gov/ National Institutes of Health]</ref> (lead, [[ImageJ 1.x]])
+* {{Person|Rueden}}<ref name="loci"/> (lead, [[ImageJ2]])
+* {{Person|Dietzc}}<ref name="unikn"/><ref name="knime"/>
+* {{Person|Bnorthan}}<ref name="truenorth">[http://www.truenorth-ia.com/ True North Intelligent Algorithms LLC]</ref>
+* {{Person|Hinerm}}<ref name="loci"/> (Sep 2010-Jun 2016)
+* {{Person|Leek}}<ref name="broad"/> (Jan 2010-Apr 2016)
+* {{Person|Schindelin}}<ref name="loci"/> (Sep 2011-Nov 2014)
+* {{Person|Grislis}}<ref name="loci"/> (Jan 2010-Dec 2013)
+* {{Person|Bdezonia}}<ref name="loci"/> (Jan 2010-Nov 2013)
+* {{Person|Harris}}<ref name="mbl">[http://www.mbl.edu/ Marine Biological Laboratory] (MBL) at Woods Hole</ref> (Nov 2009-Jan 2012)
+* Adam Fraser<ref name="broad"/> (Nov 2009-Aug 2011)
+* {{Person|Lentz}}<ref name="loci"/> (Nov 2009-Feb 2011)
 * See also [http://forum.imagej.net/users ImageJ forum heroes]
 
 === {{Logo | ImgLib2 | size=32px}}[[ImgLib2]] ===
-* {{Person|Pietzsch}}<sup>3</sup> (lead)
-* {{Person|StephanP}}<sup>3</sup>
-* {{Person|Saalfeld}}<sup>3,12</sup>
+* {{Person|Pietzsch}}<ref name="mpicbg"/> (lead)
+* {{Person|StephanP}}<ref name="mpicbg"/><ref name="mdc"/>
+* {{Person|Saalfeld}}<ref name="mpicbg"/><ref name="janelia"/>
 </div>
 
 <div style="float: left">
 
 === {{Logo | Fiji | size=32px}}[[Fiji]] ===
-* {{Person|Rueden}}<sup>2</sup> (lead)
-* {{Person|JeanYvesTinevez}}<sup>8</sup>
-* {{Person|Iarganda}}<sup>14</sup>
-* {{Person|StephanP}}<sup>3</sup>
-* {{Person|Saalfeld}}<sup>3,12</sup>
-* {{Person|Pietzsch}}<sup>3</sup>
-* {{Person|Eglinger}}
-* {{Person|Tiago}}
-* {{Person|White}}
-* {{Person|Landini}}
-* {{Person|Kharrington}}<sup>15</sup>
-* {{Person|Twagner}}<sup>16</sup>
-* {{Person|Hinerm}}<sup>2</sup> (former)
-* {{Person|Albertcardona}}<sup>6,12</sup> (founder)
-* {{Person|Schindelin}}<sup>2</sup> (founder)
+* {{Person|Rueden}}<ref name="loci"/> (lead)
+* {{Person|JeanYvesTinevez}}<ref name="pasteur">[http://www.pasteur.fr/en Institut Pasteur], Paris, France</ref>
+* {{Person|Iarganda}}<ref name="basque">[http://www.ikerbasque.net/ Ikerbasque], Basque Foundation for Science, Spain</ref>
+* {{Person|StephanP}}<ref name="mpicbg"/><ref name="mdc"/>
+* {{Person|Saalfeld}}<ref name="mpicbg"/><ref name="janelia"/>
+* {{Person|Pietzsch}}<ref name="mpicbg"/>
+* {{Person|Eglinger}}<ref name="fmi">Friedrich Miescher Institute for Biomedical Research (FMI), Basel, Switzerland</ref>
+* {{Person|Tiago}}<ref name="mcgill">[https://www.mcgill.ca/ McGill University]</ref>
+* {{Person|Hadim}}<ref name="mcgill"/>
+* {{Person|White}}<ref name="ge">GE Healthcare (Applied Precision, Inc.)</ref>
+* {{Person|Landini}}<ref name="birmingham">University of Birmingham</ref>
+* {{Person|Kharrington}}<ref name="idaho">[http://www.uidaho.edu University of Idaho], Moscow</ref>
+* {{Person|Twagner}}<ref name="dortmund">[http://www.fh-dortmund.de University of Applied Sciencs and Arts Dortmund], Germany</ref>
+* {{Person|Hinerm}}<ref name="loci"/> (former)
+* {{Person|Albertcardona}}<ref name="eth">[https://www.ini.uzh.ch/ Institute of Neuroinformatics], [https://www.ethz.ch/en.html Uni/ETH Zurich]</ref><ref name="janelia">[http://janelia.org/ HHMI Janelia Research Campus]</ref> (founder)
+* {{Person|Schindelin}}<ref name="loci"/> (former, founder)
 * See also [https://github.com/fiji/fiji/graphs/contributors graph of Fiji contributors]
 
 === [[BigDataViewer]] ===
-* {{Person|Pietzsch}}<sup>3</sup> (lead)
-* {{Person|StephanP}}<sup>3</sup>
+* {{Person|Pietzsch}}<ref name="mpicbg"/> (lead)
+* {{Person|StephanP}}<ref name="mpicbg"/><ref name="mdc">[https://www.mdc-berlin.de/13800178/en/bimsb Berlin Institute of Medical Systems Biology (BIMSB)] of the [https://www.mdc-berlin.de/en Max Delbrück Center (MDC)]</ref>
 
 === [[TrakEM2]] ===
-* {{Person|Albertcardona}}<sup>6,12</sup> (lead)
-* {{Person|Saalfeld}}<sup>3,12</sup>
+* {{Person|Albertcardona}}<ref name="eth"/><ref name="janelia"/> (lead)
+* {{Person|Saalfeld}}<ref name="mpicbg"/><ref name="janelia"/>
 </div>
 
 <div style="float: left">
 
 === {{Logo | SCIFIO | size=32px}}[[SCIFIO]] ===
-* {{Person|Rueden}}<sup>2</sup> (lead)
-* {{Person|Hinerm}}<sup>2</sup> (founder)
+* {{Person|Rueden}}<ref name="loci"/> (lead)
+* {{Person|Hinerm}}<ref name="loci"/> (former, founder)
 
 === {{Logo | CellProfiler | size=32px}}[[CellProfiler]] ===
-* {{Person|0x00B1}}<sup>4</sup> (lead)
-* {{Person|Leek}}<sup>4</sup> (former)
+* {{Person|0x00B1}}<ref name="broad"/> (lead)
+* {{Person|Leek}}<ref name="broad"/> (former)
 
 === {{Logo | KNIME | size=32px}}[[KNIME|KNIME Image Processing]] ===
-* {{Person|Dietzc}}<sup>9</sup> (lead)
-* {{Person|hornm}}<sup>9</sup>
-* {{Person|tibuch}}<sup>9</sup>
-* {{Person|Squareys}}<sup>9</sup>
-* {{Person|Gab1one}}<sup>9</sup>
-* {{Person|AndreasBurger}}<sup>9</sup>
-* {{Person|seebacherd}}<sup>9</sup> (former)
-* {{Person|MichaelZinsmaier}}<sup>9</sup> (former)
+* {{Person|Dietzc}}<ref name="unikn"/><ref name="knime"/> (lead)
+* {{Person|hornm}}<ref name="unikn"/>
+* {{Person|tibuch}}<ref name="unikn"/><ref name="mpicbg"/>
+* {{Person|Squareys}}<ref name="unikn"/><ref name="knime"/>
+* {{Person|Gab1one}}<ref name="unikn"/><ref name="knime"/>
 
 === {{Logo | OME | size=32px}}[[OME]] ===
-* {{Person|Moore}}<sup>10,11</sup> (co-lead)
-* {{Person|jburel}}<sup>11</sup> (co-lead)
-* Chris Allan<sup>10</sup> (co-lead)
+* {{Person|Moore}}<ref name="glencoe"/><ref name="dundee"/> (co-lead)
+* {{Person|jburel}}<ref name="dundee"/> (co-lead)
 * See also [http://openmicroscopy.org/site/about/who-ome OME Teams]
 </div>
 
@@ -102,20 +99,5 @@ Our deep thanks to {{Person|Rasband}}, author of [[ImageJ1]], for all his suppor
 
 <div style="float: left">
 === Institutions ===
-# [http://www.nih.gov/ National Institutes of Health]
-# [[LOCI|Laboratory for Optical and Computation]] (LOCI) at [http://wisc.edu/ UW-Madison]
-# [http://mpi-cbg.de/ Max Planck Institute of Molecular Cell Biology and Genetics] (MPI-CBG) at Dresden
-# [http://www.broadinstitute.org/ Broad Institute] of MIT and Harvard
-# [http://www.mbl.edu/ Marine Biological Laboratory] (MBL) at Woods Hole
-# [https://www.ini.uzh.ch/ Institute of Neuroinformatics], [https://www.ethz.ch/en.html Uni/ETH Zurich]
-# [http://www.uni-wuerzburg.de/en/ueber/university/ University of Wuerzburg], Germany
-# [http://www.pasteur.fr/en Institut Pasteur], Paris, France
-# [http://www.uni-konstanz.de/en/welcome/ University of Konstanz], Germany
-# [http://glencoesoftware.com/ Glencoe Software], Inc.
-# [http://www.dundee.ac.uk/ University of Dundee], Scotland
-# [http://janelia.org/ HHMI Janelia Research Campus]
-# [http://www.truenorth-ia.com/ True North Intelligent Algorithms LLC]
-# [http://www.ikerbasque.net/ Ikerbasque], Basque Foundation for Science, Spain
-# [http://www.uidaho.edu University of Idaho], Moscow
-# [http://www.fh-dortmund.de University of Applied Sciencs and Arts Dortmund], Germany
+{{reflist}}
 </div>
