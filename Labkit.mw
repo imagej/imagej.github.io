@@ -1,0 +1,30 @@
+Labkit is a FIJI plugin for labeling regions of an image.
+
+== Installion ==
+
+Labkit can be installed from the ImageJ update site: http://sites.imagej.net/Maarzt/
+
+For details see: [[Following_an_update_site]]
+
+== Start ==
+
+In ImageJ open the image you want to create labels for.
+Select the image, and from the menu choose Plugins > Segmentation > Labkit.
+
+== Usage ==
+
+=== Basic Navigation ===
+
+* {{key press|Ctrl|Shift|mouse-wheel}} to zoom in and out
+* {{key press|right-click|drag}} to move the image
+* {{key press|left-click|drag}} to rotate a 3d image
+* {{key press|mouse-wheel}} to scroll through the z-slices of a 3d image
+
+=== Create Labels ===
+
+When {{key press|Space}} is pressed, while the mouse is over the image, a circle around the mouse pointer will appear.
+* {{key press|Space|left click}} mark the pixels inside the circle
+* {{key press|Space|right click}} remove the mark from the pixels inside the circle.
+* {{key press|Space|mouse wheel}} change the size of the circle used to mark pixels.
+
+By default pixels can be marked as "foreground" or "background". To switch between these two labels use {{key press|N}}.
