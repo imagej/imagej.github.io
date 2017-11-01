@@ -7,7 +7,7 @@
 * {{key|F}} - Finish a path. Note that you can finish a path by pressing {{key|Y}} twice.
 * {{key|C}} - Cancel a path. Note that you can finish a path by pressing {{key|N}} twice.
 * {{key|Esc}} - Abort current operation.
-* {{key|G}} - Select the path nearest to the mouse pointer. ''Mnemonic: <u>G</u>roup paths around pointer.''
+* {{key|G}} - Select the path nearest to the mouse pointer. ''Mnemonic: <u>G</u>roup paths around pointer.'' Holding  {{key|Shift|G}} adds the path nearest to the mouse pointer to the current list of selected paths.
 
 
 * {{key|S}} -Toggle cursor <u>S</u>napping: If enabled, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window<sup>1</sup>. This facilitates accurate [[Simple_Neurite_Tracer:_Accurate_point_placement|positioning of path points]] and it is described in more detail in this [https://github.com/fiji/Simple_Neurite_Tracer/issues/1 issue].
