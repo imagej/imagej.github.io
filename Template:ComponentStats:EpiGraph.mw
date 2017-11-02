@@ -2,7 +2,7 @@
 | project = '''EpiGraph: an open-source method to quantify epithelial organization'''
 | name = Epigraph
 | url = https://imagej.net/Epigraph
-| source = {{GitHub | org=fiji | repo=Epigraph | tag=Epigraph-1.0.0}}
+| source = https://github.com/ComplexOrganizationOfLivingMatter/Epigraph
 | license = [[GPLv3]]
 | release = {{Maven | a=Trainable_Segmentation | v=1.0.0 | label=1.0.0}}
 | date = Fri Dec 1 2017 12:26:22 GMT+0100 (CEST)
