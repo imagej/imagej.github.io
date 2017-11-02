@@ -5,7 +5,7 @@
 | maintainer             = [[User:Benoit|Benoit Lombardot]]
 | released               = 22 March 2016
 | filename               = [[File:Manual Drift Correction-1.0.0.jar.zip]]
-| source                 = [https://git.mpi-cbg.de/bioimage-informatics/Manual_registration mpi-cbg git]
+| source                 = [https://github.com/mpicbg-scicomp/Manual_drift_correction github]
 | category               = [[:Category:Plugins|Plugins]], [[:Category:Registration|Registration]]
 }}
 
