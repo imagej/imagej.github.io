@@ -36,6 +36,11 @@ For an explanation of how ImgLib2 has changed from ImgLib1, see the [[Changes fr
 
 See the [[How To Migrate Code From ImgLib To ImgLib2]] page for details on how to update your ImgLib1-based code to use ImgLib2.
 
+== API Version History ==
+
+A history of API changes is available at:
+https://abi-laboratory.pro/java/tracker/timeline/imglib2/
+
 == Other links ==
 
 * [[ImgLib2 Discussion|ImgLib2 development discussion]]
