@@ -3,22 +3,10 @@
 |}{{TOC}}
 
 == Introduction ==
-The [[EpiGraph]] is a Fiji plugin that combines coomputational geometry and graph theory to measure the degree of arrangement in any made by computational or natural tessellation. Here, a tessellation is treated as a network in which the edges are defined by the regions contacts. A network can be splitted up into different subgraphs named graphlets. The comparison of the quantity of each type of graphlets with the reference tessellations provide the Graphlet degree Distribution Distances (GDDs). This plugin has into account three different reference patterns: a "hexagonal lattice", a "random Voronoi Diagram" (generated Voronoi from seeds located ramdomly) and a "Voronoi Diagram 5" (generated using the Lloyd algorithm at the step 5, beginning from the seeds of the random Voronoi Diagram). They have been used to compute a set of GDDs that quantify organization: GDDH, GDDRV and GDDV5 respectively.
+The [[EpiGraph]] is a Fiji plugin that combines coomputational geometry and graph theory to measure the degree of arrangement in any made by computational or natural tessellation. Here, a tessellation is treated as a network in which the edges are defined by the regions contacts. A network can be splitted up into different subgraphs named graphlets. The comparison of the quantity of each type of graphlets with the reference tessellations provide the Graphlet degree Distribution Distances (GDDs) as a marker of arrangement. This plugin has into account three different reference patterns: a "hexagonal lattice", a "random Voronoi Diagram" (generated Voronoi from seeds located ramdomly) and a "Voronoi Diagram 5" (generated using the Lloyd algorithm at the step 5, beginning from the seeds of the random Voronoi Diagram). They have been used to compute a set of GDDs that quantify organization: GDDH, GDDRV and GDDV5 respectively.
 
-It contains a collection of visualization tools, together with graphical user interfaces for easy access to this functionality. 
-
-
+It contains a set of visualization tools, together with graphical user interfaces for easy extraction and analisys of information. The collected data of arrangement can be exported to excel tables for being processed with another tools as well.
 
 
-
-
-
-
-
-
-
-
-
-
-To encourage the sharing of resources, EpiGraph is published under an
+On top, to encourage the sharing of resources, [[EpiGraph]] is published under an
 open-source (GPLv3) license, which can be downloaded from https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/LICENSE.
