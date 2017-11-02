@@ -12,8 +12,17 @@ On top, to encourage the sharing of resources, [[EpiGraph]] is published under a
 == Pipeline ==
 
 === Installing and uninstalling ===
-
 === Calculation of GDDs ===
+==== Using default parameters ====
+==== Using invalid region ====
+==== Using 4-connectivity ====
+==== Using ROIs ====
+==== Exporting graphlets data ====
+=== Exporting and importing GDDs data ===
+==== Exporting ====
+==== Importing ====
+=== Visualizing results ===
+=== General usability ===
 
 
 == Limitations ==
