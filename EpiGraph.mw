@@ -2,30 +2,31 @@
 |style="vertical-align:top" |
 |}{{TOC}}
 
-== Introduction ==
+== '''Introduction''' ==
 The [[EpiGraph]] is a Fiji plugin that combines coomputational geometry and graph theory to measure the degree of arrangement in any made by computational or natural tessellation. Here, a tessellation is treated as a network in which the edges are defined by the regions contacts. A network can be splitted up into different subgraphs named graphlets. The comparison of the quantity of each type of graphlets with the reference tessellations provide the Graphlet degree Distribution Distances (GDDs) as a marker of arrangement. This plugin has into account three different reference patterns: a "hexagonal lattice", a "random Voronoi Diagram" (generated Voronoi from seeds located ramdomly) and a "Voronoi Diagram 5" (generated using the Lloyd algorithm at the step 5, beginning from the seeds of the random Voronoi Diagram). They have been used to compute a set of GDDs that quantify organization: GDDH, GDDRV and GDDV5 respectively.
 
 It contains a set of visualization tools, together with graphical user interfaces for easy extraction and analisys of information. The collected data of arrangement can be exported to excel tables for being processed with another tools as well.
 
 On top, to encourage the sharing of resources, [[EpiGraph]] is published under an open-source (GPLv3) license, which can be downloaded from https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/LICENSE.
 
-== Pipeline ==
+== '''Pipeline''' ==
+EpiGraph consists in a pipeline of 5 very simple steps. First, the skeleton of a mosaic image is uploaded and the individual cells are identified.  Second, there is a step where the user selects the distance threshold to identify two cells as neighbours. Here it is possible to select different thresholds and to check the number of neighbours of every cell in each case. Third, a ROI is selected. There are several possibilities such as a default ROI from the image or the selection of individual cells. Fourth, the graphlet information for the selected cells is calculated. These data are used to obtain the GDDH, GDDRV and GDDV5. These values are incorporated to a table. The fifth step includes the classification and labelling of different images in order to represent them in a new window. This final phase allows exporting the representation of the data in a three-dimensional graph. The next videos explain in detail each operation:
+=== '''Installing and uninstalling''' ===
 
-=== Installing and uninstalling ===
-=== Calculation of GDDs ===
-    ==== Using default parameters ====
-    ==== Using invalid region ====
-    ==== Using 4-connectivity ====
-    ==== Using ROIs ====
-    ==== Exporting graphlets data ====
-=== Exporting and importing GDDs data ===
-    ==== Exporting ====
-    ==== Importing ====
-=== Visualizing results ===
-=== General usability ===
-
-
-== Limitations ==
+=== '''Calculation of GDDs''' ===
+==== -Using default parameters ====
+==== -Using invalid region ====
+==== -Using 4-connectivity ====
+==== -Using ROIs ====
+==== -Exporting graphlets data ====
+=== '''Exporting and importing GDDs data''' ===
+==== -Exporting ====
+==== -Importing ====
+=== '''Visualizing results''' ===
+=== '''General usability''' ===
 
 
-== Graphical user interface ==
+== '''Limitations''' ==
+
+
+== '''Graphical user interface''' ==
