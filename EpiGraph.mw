@@ -28,5 +28,14 @@ EpiGraph consists in a pipeline of 5 very simple steps. First, the skeleton of a
 
 == '''Limitations''' ==
 
+Although Epigraph accepts a wide range of images as inputs, we have specified some minimum requirements. It doesn’t accept images bigger than 3000 pixels of width or 3000 pixels of height, since process them could be computationally intensive. In addition, EpiGraph only accepts single images. Stack of images should be adapted to single frames before uploading it to EpiGraph. 
+Computers with little RAM memory (less than 16gb) will work but with a series of restrictions. For ensuring the usability, it is not recommended computing images with a high number of cells (more than 1000) due to a possible lack of memory. In the same way, we suggest skeletonizing the edges of the images and using a small radius (lower than 10) to calculate the cells neighbourhood. Choosing an elevated radius value could slow down the work queue, increasing the use of RAM memory. On the other hand, the computers with greater RAM memory will work for more complex images and a wide range of radius. 
+
+If anyone of these requirements are not satisfied, the program alert the user allowing him/her to change the image provided. Importantly, the images and the ROIs require a minimum number of cells in order to get coherent graphlets. 
+
+Regarding the 3D visualization tool, it allows the user to see the position of the samples from different angles. However, the resolution of the exported file is only 72 pixels per inch (dpi). This could be too low for publications and therefore EpiGraph provides an excel table with all the information needed to represent it with other programs.
+
+In summary, we have generated a very accessible open source method to produce a quantitative description of epithelial tissue arrangements. We anticipate that this tool will improve the study of tissue morphogenesis by incorporating the epithelial organization as result of the effect of mutations or diseases.
+
 
 == '''Graphical user interface''' ==
