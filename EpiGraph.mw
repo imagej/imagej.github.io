@@ -13,14 +13,14 @@ On top, to encourage the sharing of resources, [[EpiGraph]] is published under a
 
 === Installing and uninstalling ===
 === Calculation of GDDs ===
-==== Using default parameters ====
-==== Using invalid region ====
-==== Using 4-connectivity ====
-==== Using ROIs ====
-==== Exporting graphlets data ====
+    ==== Using default parameters ====
+    ==== Using invalid region ====
+    ==== Using 4-connectivity ====
+    ==== Using ROIs ====
+    ==== Exporting graphlets data ====
 === Exporting and importing GDDs data ===
-==== Exporting ====
-==== Importing ====
+    ==== Exporting ====
+    ==== Importing ====
 === Visualizing results ===
 === General usability ===
 
