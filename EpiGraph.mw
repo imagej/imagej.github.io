@@ -13,7 +13,7 @@ It contains a set of visualization tools, together with graphical user interface
 On top, to encourage the sharing of resources, [[EpiGraph]] is published under an open-source (GPLv3) license, which can be downloaded from https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/LICENSE.
 
 == '''Pipeline''' ==
-EpiGraph consists in a pipeline of 5 very simple steps. First, the skeleton of a mosaic image is uploaded and the individual cells are identified.  Second, there is a step where the user selects the distance threshold to identify two cells as neighbours. Here it is possible to select different thresholds and to check the number of neighbours of every cell in each case. Third, a ROI is selected. There are several possibilities such as a default ROI from the image or the selection of individual cells. Fourth, the graphlet information for the selected cells is calculated. These data are used to obtain the GDDH, GDDRV and GDDV5. These values are incorporated to a table. The fifth step includes the classification and labelling of different images in order to represent them in a new window. This final phase allows exporting the representation of the data in a three-dimensional graph. The next videos explain in detail each operation:
+EpiGraph consists in a pipeline of 5 very simple steps. First, the skeleton of a mosaic image is uploaded and the individual cells are identified.  Second, there is a step where the user selects the distance threshold to identify two cells as neighbours. Here it is possible to select different thresholds and to check the number of neighbours of every cell in each case. Third, a ROI is selected. There are several possibilities such as a default ROI from the image or the selection of individual cells. Fourth, the graphlet information for the selected cells is calculated. These data are used to obtain the GDDH, GDDRV and GDDV5. These values are incorporated to a table. The fifth step includes the classification and labelling of different images in order to represent them in a new window. This final phase allows exporting the representation of the data in a three-dimensional graph. The next videos explain in detail each operation and the three GUI windows are showed as well:
 === Installing and uninstalling ===
 
 {{#widget:YouTube|id=lbFh60PODBs|width=420}}
@@ -72,6 +72,3 @@ If anyone of these requirements are not satisfied, the program alert the user al
 Regarding the 3D visualization tool, it allows the user to see the position of the samples from different angles. However, the resolution of the exported file is only 72 pixels per inch (dpi). This could be too low for publications and therefore EpiGraph provides an excel table with all the information needed to represent it with other programs.
 
 In summary, we have generated a very accessible open source method to produce a quantitative description of epithelial tissue arrangements. We anticipate that this tool will improve the study of tissue morphogenesis by incorporating the epithelial organization as result of the effect of mutations or diseases.
-
-
-== '''Graphical user interface''' ==
