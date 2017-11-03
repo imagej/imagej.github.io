@@ -8,11 +8,11 @@
 | date = Fri Dec 1 2017 12:26:22 GMT+0100 (CEST)
 | devStatus = {{DevStatus | developer=yes | incubating=no | obsolete=no}}
 | supportStatus = {{SupportStatus | debugger=yes | reviewer=yes | support=yes}}
-| founders = Pablo Vicente Munuera, Pedro J. Gómez Gálvez, Luis M. Escudero Cuadrado
-| leads = Luis M. Escudero Cuadrado
-| developers = Pablo Vicente Munuera, Pedro J. Gómez Gálvez
-| debuggers = Pablo Vicente Munuera, Pedro J. Gómez Gálvez
-| reviewers = Pablo Vicente Munuera, Pedro J. Gómez Gálvez
-| support = Pablo Vicente Munuera, Pedro J. Gómez Gálvez
-| maintainers = Pablo Vicente Munuera, Pedro J. Gómez Gálvez
+| founders = {{Person|Pablovm1990}}, {{Person|Pedgomgal1}}, {{Person|LMEscudero}}
+| leads = {{Person|LMEscudero}}
+| developers = {{Person|Pablovm1990}}, {{Person|Pedgomgal1}}
+| debuggers = {{Person|Pablovm1990}}, {{Person|Pedgomgal1}}
+| reviewers = {{Person|Pablovm1990}}, {{Person|Pedgomgal1}}
+| support = {{Person|Pablovm1990}}, {{Person|Pedgomgal1}}
+| maintainers = {{Person|Pablovm1990}}, {{Person|Pedgomgal1}}
 }}
