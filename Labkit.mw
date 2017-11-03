@@ -8,8 +8,8 @@ For details see: [[Following_an_update_site]]
 
 == Start ==
 
-In ImageJ open the image you want to create labels for.
-Select the image, and from the menu choose Plugins > Segmentation > Labkit.
+Use ImageJ to open the image you want to create labels for.
+In ImageJ, select the image, and from the menu choose Plugins > Segmentation > Labkit.
 
 == Usage ==
 
