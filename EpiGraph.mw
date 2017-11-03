@@ -1,9 +1,9 @@
+{{ambox | text =Please note that, this plugin is focused in biology research. This web page doesn't provide a complete explanation of usability. A deep detailed information can be found in the manuscript:'''EpiGraph: an open-source method to quantify epithelial organization''' 
+}}
+
 {{ComponentStats:EpiGraph}}{|
 |style="vertical-align:top" |
 |}{{TOC}}
-
-{{ambox | text =Please note that, this plugin is focused in biology research. This web page doesn't provide a complete explanation of usability. A deep detailed information can be found in the manuscript:'''EpiGraph: an open-source method to quantify epithelial organization''' 
-}}
 
 == '''Introduction''' ==
 The [[EpiGraph]] is a Fiji plugin that combines computational geometry and graph theory to measure the degree of arrangement in any made by computational or natural tessellation. Here, a tessellation is treated as a network in which the edges are defined by the regions contacts. A network can be splitted up into different subgraphs named graphlets. The comparison of the quantity of each type of graphlets with the reference tessellations provide the Graphlet degree Distribution Distances (GDDs) as a marker of arrangement. This plugin has into account three different reference patterns: a "hexagonal lattice", a "random Voronoi Diagram" (generated Voronoi from seeds located ramdomly) and a "Voronoi Diagram 5" (generated using the Lloyd algorithm at the step 5, beginning from the seeds of the random Voronoi Diagram). They have been used to compute a set of GDDs that quantify organization: GDDH, GDDRV and GDDV5 respectively.
