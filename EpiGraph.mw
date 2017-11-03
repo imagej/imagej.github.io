@@ -16,24 +16,34 @@ On top, to encourage the sharing of resources, [[EpiGraph]] is published under a
 EpiGraph consists in a pipeline of 5 very simple steps. First, the skeleton of a mosaic image is uploaded and the individual cells are identified.  Second, there is a step where the user selects the distance threshold to identify two cells as neighbours. Here it is possible to select different thresholds and to check the number of neighbours of every cell in each case. Third, a ROI is selected. There are several possibilities such as a default ROI from the image or the selection of individual cells. Fourth, the graphlet information for the selected cells is calculated. These data are used to obtain the GDDH, GDDRV and GDDV5. These values are incorporated to a table. The fifth step includes the classification and labelling of different images in order to represent them in a new window. This final phase allows exporting the representation of the data in a three-dimensional graph. The next videos explain in detail each operation:
 === Installing and uninstalling ===
 
-{{#widget:YouTube|id=jLY6vOnO2a8|width=350}}  
-{{#widget:YouTube|id=AvLEqYKzWlE|width=350}}
-{{#widget:YouTube|id=lbFh60PODBs|width=350}}
-
-https://imagej.net/_images/4/42/EpiGraphInstalling1.mov
+{{#widget:YouTube|id=lbFh60PODBs|width=420}}
+{{#widget:YouTube|id=jLY6vOnO2a8|width=420}} 
+{{#widget:YouTube|id=kLHAy5ZsPVo|width=420}} 
 
 === Calculation of GDDs ===
  ''-Using default parameters'' 
+{{#widget:YouTube|id=DUY-uXXujoQ|width=420}} 
  ''-Using invalid region'' 
+{{#widget:YouTube|id=2f-B53Sw_IA|width=420}} 
+{{#widget:YouTube|id=kt50A2c2f4A|width=420}} 
  ''-Using 4-connectivity'' 
+{{#widget:YouTube|id=ao0B-t_Y_9s|width=420}} 
  ''-Using ROIs'' 
+{{#widget:YouTube|id=2CfLji7ySLg|width=420}} 
+{{#widget:YouTube|id=wFQxgnfR7-8|width=420}} 
  ''-Exporting graphlets data''
+{{#widget:YouTube|id=F4CcScDBUQo|width=420}} 
 === Exporting and importing GDDs data ===
  ''-Exporting'' 
+{{#widget:YouTube|id=8nTLhN_TA5Y|width=420}} 
  ''-Importing'' 
-=== Visualizing results ===
-=== General usability ===
+{{#widget:YouTube|id=tAzX83AdzLM|width=420}} 
 
+=== Visualizing results ===
+{{#widget:YouTube|id=93IvY8M07r4|width=420}} 
+{{#widget:YouTube|id=jLY6vOnO2a8|width=420}} 
+=== General usability ===
+{{#widget:YouTube|id=ZDfsSGkZCnw|width=420}} 
 
 == '''Limitations''' ==
 
