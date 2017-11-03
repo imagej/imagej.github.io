@@ -12,16 +12,17 @@ On top, to encourage the sharing of resources, [[EpiGraph]] is published under a
 == '''Pipeline''' ==
 EpiGraph consists in a pipeline of 5 very simple steps. First, the skeleton of a mosaic image is uploaded and the individual cells are identified.  Second, there is a step where the user selects the distance threshold to identify two cells as neighbours. Here it is possible to select different thresholds and to check the number of neighbours of every cell in each case. Third, a ROI is selected. There are several possibilities such as a default ROI from the image or the selection of individual cells. Fourth, the graphlet information for the selected cells is calculated. These data are used to obtain the GDDH, GDDRV and GDDV5. These values are incorporated to a table. The fifth step includes the classification and labelling of different images in order to represent them in a new window. This final phase allows exporting the representation of the data in a three-dimensional graph. The next videos explain in detail each operation:
 === Installing and uninstalling ===
+{{[[File:EpiGraphInstalling1.mov]]}}
 
 === Calculation of GDDs ===
-==== ''-Using default parameters'' ====
-==== ''-Using invalid region'' ====
-==== ''-Using 4-connectivity'' ====
-==== ''-Using ROIs'' ====
-==== ''-Exporting graphlets data'' ====
+ ''-Using default parameters'' 
+ ''-Using invalid region'' 
+ ''-Using 4-connectivity'' 
+ ''-Using ROIs'' 
+ ''-Exporting graphlets data''
 === Exporting and importing GDDs data ===
-==== ''-Exporting'' ====
-==== ''-Importing'' ====
+ ''-Exporting'' 
+ ''-Importing'' 
 === Visualizing results ===
 === General usability ===
 
