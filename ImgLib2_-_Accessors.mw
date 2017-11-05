@@ -4,7 +4,7 @@ In ImgLib2, images are manipulated using ''Accessors''.
 For pixel images, you can think of an accessor as a movable reference to a pixel.
 * You can move it around the image (for example make it reference a pixel at specific coordinates).
 * You can de-reference it to get the pixel value.
-* And of course, you can ask it's current position.
+* And of course, you can ask its current position.
 
 The accessors provided by ImgLib2 typically implement '''Cursor''' or '''RandomAccess'''.
 '''Cursor''' and '''RandomAccess''' are aggregations of interfaces covering the above three points.
