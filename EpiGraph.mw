@@ -24,17 +24,17 @@ EpiGraph consists in a pipeline of 5 very simple steps. First, the skeleton of a
 
 === Calculation of GDDs ===
 
-[http://www.example.com ''-Using default parameters'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/4.1%20-%20Calculate%20graphlet%20(default%20parameters).mp4 ''-Using default parameters'']
 
-[http://www.example.com ''-Using invalid region'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/4.2.2%20-%20Calculate%20graphlets%20determining%20an%20invalid%20region%20default%20parameters.mp4 ''-Using invalid region'']
 
-[http://www.example.com ''-Using 4-connectivity'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/4.2.3%20-%20Calculate%20graphlets%20using%204-connectivity%20and%20radius%202.mp4 ''-Using 4-connectivity'']
  
-[http://www.example.com ''-Using ROIs - 1'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/4.3.1%20-%20Calculate%20graphlets%20determining%20rectangular%20ROIs%20and%20Mo10.mp4 ''-Using a rectangular ROI'']
 
-[http://www.example.com ''-Using ROIs - 2'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/4.3.2%20-%20Calculate%20graphlets%20selecting%20cells%20and%20Mo29.mp4 ''-Using individual cells as ROIs'']
 
-[http://www.example.com ''-Exporting graphlets data'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/4.5%20-%20Exporting%20graphlets%20data%20(default).mp4 ''-Exporting graphlets data'']
 
 === Exporting and importing GDDs data ===
   
