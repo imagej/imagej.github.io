@@ -16,11 +16,11 @@ On top, to encourage the sharing of resources, [[EpiGraph]] is published under a
 EpiGraph consists in a pipeline of 5 very simple steps. First, the skeleton of a mosaic image is uploaded and the individual cells are identified.  Second, there is a step where the user selects the distance threshold to identify two cells as neighbours. Here it is possible to select different thresholds and to check the number of neighbours of every cell in each case. Third, a ROI is selected. There are several possibilities such as a default ROI from the image or the selection of individual cells. Fourth, the graphlet information for the selected cells is calculated. These data are used to obtain the GDDH, GDDRV and GDDV5. These values are incorporated to a table. The fifth step includes the classification and labelling of different images in order to represent them in a new window. This final phase allows exporting the representation of the data in a three-dimensional graph. The next videos explain in detail each operation and the three GUI windows are showed as well:
 === Installing and uninstalling ===
 
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/tutorials/2.3%20Installing%20EpiGraph%20from%20FIJI.mp4 ''-Installation - 1'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/2.3%20Installing%20EpiGraph%20from%20FIJI.mp4 ''-Installation - 1'']
 
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/tutorials/2.1%20-%20Installing%20Epigraph_v1.mp4 ''-Installation - 2'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/2.1%20-%20Installing%20Epigraph_v1.mp4 ''-Installation - 2'']
  
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/tutorials/2.4%20-%20Uninstalling%20Epigraph.mp4 ''-Uninstallation'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/2.4%20-%20Uninstalling%20Epigraph.mp4 ''-Uninstallation'']
 
 === Calculation of GDDs ===
 
