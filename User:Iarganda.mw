@@ -27,4 +27,5 @@ Included in [[MorphoLibJ]]:
 * [[Classic Watershed]]
 * [[Distance Transform Watershed]]
 * [[Marker-controlled Watershed]]
+* [[Interactive_Marker-controlled_Watershed]]
 * [[Morphological Segmentation]]
