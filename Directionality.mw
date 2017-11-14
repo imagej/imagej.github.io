@@ -233,6 +233,8 @@ rt.show('Fit param for y = a + (b-a)*exp(-(x-c)*(x-c)/(2*d*d)')
 
 Since there is no publication associated with this plugin, it is hard tracking where it is used. However people wrote me and helped building the following list. The Directionality plugin has been used at least in the following publications: 
 
+* Deravi, Leila F., Nina R. Sinatra, Christophe O. Chantre, Alexander P. Nesmith, Hongyan Yuan, Sahm K. Deravi, Josue A. Goss et al. "Design and Fabrication of Fibrous Nanomaterials Using Pull Spinning." Macromolecular Materials and Engineering 302, no. 3 (2017).
+
 * Natalie Reznikov, Rotem Almany-Magal, Ron Shahar, Steve Weiner, [https://doi.org/10.1016/j.bone.2012.10.034 Three-dimensional imaging of collagen fibril organization in rat circumferential lamellar bone using a dual beam electron microscope reveals ordered and disordered sub-lamellar structures], Bone, Volume 52, Issue 2, February 2013, Pages 676-683, ISSN 8756-3282.
 
 * Natalie Reznikov, Ron Shahar, Steve Weiner, [https://doi.org/10.1016/j.bone.2013.10.023  Three-dimensional structure of human lamellar bone: The presence of two different materials and new insights into the hierarchical organization], Bone, Volume 59, February 2014, Pages 93-104, ISSN 8756-3282. 
