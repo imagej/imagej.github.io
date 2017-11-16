@@ -16,7 +16,7 @@ The easiest way to install ''MyofibrilJ'' is by [[MyofibrilJ#Installation|adding
 == References ==
 
 == Installation ==
-The easiest way to install ''MyofibrilJ'' is by first [[Following_an_update_site|adding]] the update site by clicking the ''Add update site'' button in the site management dialog button and filling in the name of your choice for the site and http://sites.imagej.net/MyofibrilJ/ for the URL, and then by subscribing to it.
+The easiest way to install ''MyofibrilJ'' is by first [[Following_an_update_site#Add_update_sites|adding]] the update site, by clicking the ''Add update site'' button in the site management dialog button and filling in the name of your choice for the site and http://sites.imagej.net/MyofibrilJ/ for the URL, and then by subscribing to it.
 
 == License ==
 
