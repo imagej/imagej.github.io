@@ -8,6 +8,12 @@
 | status                 = stable
 }}
 
-Documentation for the Tubeness plugin can be found here: http://homepages.inf.ed.ac.uk/s9808248/imagej/tubeness/
+
+
+{{ambox | text = A multithreaded implementation of the original IJ1 Tubeness plugin has been [https://github.com/imagej/imagej-ops/pull/527 developed] by {{Person| JeanYvesTinevez}} in the context of [[ImageJ_Ops]].
+}}
+
+
+The original documentation for the IJ1 Tubeness plugin can be found at http://homepages.inf.ed.ac.uk/s9808248/imagej/tubeness/.
 
 [[Category:Plugins]]
