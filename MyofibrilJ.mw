@@ -1,0 +1,26 @@
+<seo metak="Fourier analysis, autocorrelation" metad="Fourier analysis, autocorrelation" />
+{{Infobox
+| software        = ImageJ/Fiji
+| name            = MyofribilJ
+| maintainer     = Giovanni Cardone
+| author          = Giovanni Cardone and Maria Spletter
+| released        = November 2017
+| category        = [[:Category:Analysis|Analysis]], [[:Category:Scripting|Scripting]], [[:Category:Plugins|Plugins]]
+}}
+
+A set of scripts to analyse myofibrils. 
+The easiest way to install ''MyofibrilJ'' is by [[MyofibrilJ#Installation|adding]] MyofibrilJ to the update sites in your Fiji Installation.
+
+== Usage ==
+
+== References ==
+
+== Installation ==
+The easiest way to install ''MyofibrilJ'' is by first [[Following_an_update_site|adding]] the update site by clicking the ''Add update site'' button in the site management dialog button and filling in the name of your choice for the site and http://sites.imagej.net/MyofibrilJ/ for the URL, and then by subscribing to it.
+
+== License ==
+
+
+[[Category:Scripting]]
+[[Category:Analysis]]
+[[Category:Plugins]]
