@@ -41,7 +41,7 @@ The automatic loader tries to assign the stacks to different channels, illuminat
 
 === Patterns in filenames ===
 
-In addition to 
+In addition to metadata ''within'' the files, when the dataset consists of multiple files, we can also use '''numerical''' patterns in the filenames to represent view attributes. If we could detect patterns in the used files, they will be shown and you can decide what attribute they represent (or choose to ignore them).
 
 === Calibration (Voxel size) ===
 
