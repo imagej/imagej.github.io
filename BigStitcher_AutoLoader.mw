@@ -64,7 +64,11 @@ A simpler and less interactive, but Macro-scriptable version of the above. You w
 
 
 
+== (Optional) Move Tile to regular grid (Macro-scriptable) ==
 
+If you selected to move tiles to a regular grid manually,
+
+[[File:BigStitcherAutoLoader6a.png|thumb|300px|Select the importer and the xml to save the metadata.]]
 
 
 
@@ -76,7 +80,3 @@ A simpler and less interactive, but Macro-scriptable version of the above. You w
 == (Optional) Move Tiles to regular grid interactively ==
 
 [[File:BigStitcherAutoLoader6b.png|thumb|300px|Select the importer and the xml to save the metadata.]]
-
-== (Optional) Move Tile to regular grid (Macro-scriptable) ==
-
-[[File:BigStitcherAutoLoader6a.png|thumb|300px|Select the importer and the xml to save the metadata.]]
