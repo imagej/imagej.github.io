@@ -2,7 +2,7 @@ When calling '''BigStitcher > BigStitcher''' from the Fiji plugins menu, it will
 
 [[File:BigStitcher_import_exisitng_0.png|center]]
 
-[[File:BigStitcher_importer_1.png|thumb|300px|Select the importer and the xml to save the metadata.]]
+[[File:BigStitcher_importer_1.png|thumb|300px|Select the importer and the name of the xml file to save the metadata to.]]
 In order to '''define a new dataset''', please click the respective button on the left side of the dialog. This will open a new window in which you can define how to import the image data. Since there is huge variety of data formats produced by various microscopy companies and self-built setups, we developed multiple types of importers:
 * '''[[BigStitcher_AutoLoader|Automatic Loader (Bioformats)]]'''
 
