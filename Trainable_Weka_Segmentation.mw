@@ -311,7 +311,7 @@ run("Trainable Weka Segmentation");
 
 // wait for the plugin to load
 wait(3000);
-selectWindow("Trainable Weka Segmentation v3.2.19");
+selectWindow("Trainable Weka Segmentation v3.2.20");
 
 // add one region of interest to each class
 makeRectangle(367, 0, 26, 94);
