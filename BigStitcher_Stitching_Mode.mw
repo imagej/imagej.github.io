@@ -1,6 +1,6 @@
 *After opening a XML file the main windows will appear in the '''Stitching Mode'''. In this mode all necessary steps for image stitching are performed
 
-*I the center of the window a list shows all available views for given Timepoint and Angle.
+*In the center of the window a list shows all available views for given Timepoint and Angle.
 
 *At the top the name of the currently open .XML will appear.
 
