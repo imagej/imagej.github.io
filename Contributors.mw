@@ -7,8 +7,9 @@
 
 <div style="float: left">
 === Principal investigators ===
-* {{Person|Eliceiri}}<ref name="loci">[[LOCI|Laboratory for Optical and Computation]] (LOCI) at [http://wisc.edu/ UW-Madison]</ref> (ImageJ/Fiji, OME)
-* {{Person|Tomancak}}<ref name="mpicbg">[http://mpi-cbg.de/ Max Planck Institute of Molecular Cell Biology and Genetics] (MPI-CBG) at Dresden</ref> (ImageJ/Fiji)
+* {{Person|Eliceiri}}<ref name="loci">[[LOCI|Laboratory for Optical and Computation]] (LOCI) at [http://wisc.edu/ UW-Madison]</ref> (ImageJ, Fiji, OME)
+* {{Person|Tomancak}}<ref name="mpicbg">[http://mpi-cbg.de/ Max Planck Institute of Molecular Cell Biology and Genetics] (MPI-CBG) at Dresden</ref> (Fiji)
+* {{Person|Jug}}<ref name="mpicbg">[http://mpi-cbg.de/ Max Planck Institute of Molecular Cell Biology and Genetics] (MPI-CBG) at Dresden</ref> (Fiji)
 * [http://www.broadinstitute.org/~anne/ Anne Carpenter]<ref name="broad">[http://www.broadinstitute.org/ Broad Institute] of MIT and Harvard</ref> (CellProfiler, ImageJ)
 * [http://www.informatik.uni-konstanz.de/berthold/mitglieder/prof-dr-michael-berthold/ Michael Berthold]<ref name="unikn">[http://www.uni-konstanz.de/en/welcome/ University of Konstanz], Germany</ref><ref name="knime">[https://www.knime.com/ KNIME GmbH]</ref> (KNIME)
 * [http://www.lifesci.dundee.ac.uk/people/jason-swedlow Jason Swedlow]<ref name="glencoe">[http://glencoesoftware.com/ Glencoe Software], Inc.</ref><ref name="dundee">[http://www.dundee.ac.uk/ University of Dundee], Scotland</ref> (OME)
