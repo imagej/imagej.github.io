@@ -25,13 +25,13 @@ Thank you for your support.
 |-
 ! colspan=3 | Core projects
 |-
-| {{Logo | ImageJ1}}
-| [[ImageJ 1.x]]
-| {{Publication | ImageJ}}
-|-
 | {{Logo | ImageJ2}}
 | [[ImageJ2]]
 | {{Publication | ImageJ2}}
+|-
+| {{Logo | ImageJ1}}
+| [[ImageJ 1.x]]
+| {{Publication | ImageJ}}
 |-
 ! colspan=3 | Distributions of ImageJ
 |-
