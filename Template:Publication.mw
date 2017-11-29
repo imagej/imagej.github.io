@@ -241,23 +241,26 @@
 | last3 = Hiner | first3 = M. C.
 | last4 = DeZonia | first4 = B. E.
 | last5 = Walter | first5 = A. E.
-| last6 = Eliceiri | first6 = K. W.
+| last6 = Arena | first6 = E. T.
+| last7 = Eliceiri | first7 = K. W.
 | year = 2017
-| journal = arXiv preprint
+| journal = BMC Bioinformatics
 | url = http://arxiv.org/abs/1701.05940
 | title = ImageJ2: ImageJ for the next generation of scientific image data}}.
 
-| ImageJ2 = {{Citation | last = Schindelin | first = J.
-| last2 = Rueden | first2 = C. T.
+| ImageJ2 = {{Citation | last = Rueden | first = C. T.
+| last2 = Schindelin | first2 = J.
 | last3 = Hiner | first3 = M. C.
-| last4 = Eliceiri | first4 = K. W.
-| year = 2015
-| journal = Molecular Reproduction and Development
-| url = http://onlinelibrary.wiley.com/doi/10.1002/mrd.22489/full
-| title = The ImageJ ecosystem: An open platform for biomedical image analysis
-| volume = 
-| pages = 
-| pmid = 26153368}} ({{Scholar | cluster=2492786182850473580}}).
+| last4 = DeZonia | first4 = B. E.
+| last5 = Walter | first5 = A. E.
+| last6 = Arena | first6 = E. T.
+| last7 = Eliceiri | first7 = K. W.
+| year = 2017
+| journal = BMC Bioinformatics
+| volume = 18:529
+| url = https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1934-z
+| doi = https://doi.org/10.1186/s12859-017-1934-z
+| title = ImageJ2: ImageJ for the next generation of scientific image data}}.
 
 | ImgLib2 = {{Citation | last = Pietzsch | first = T.
 | last2 = Preibisch | first2 = S.
