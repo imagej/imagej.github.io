@@ -174,7 +174,7 @@ ImageJ has benefitted from many hackathons over the years:
 |- valign="top"
 | style="white-space: nowrap" | [[2016-12-20 - Fiji + KNIP hackathon|2016 Dec 6 -<br>2016 Dec 16]]
 |[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
-|{{Person|Jug}}, {{Person|Pietzsch}}, {{Person|Tomancak}}, {{Person|Rueden}}, {{Person|Saalfeld}}, {{Person|hanslovsky}}, {{Person|kephale}}, {{Person|rimadoma}}, {{Person|tinevez}}, {{Person|dietzc}}, {{Person|patrick-winter-knime}}, {{Person|skalarproduktraum}}, {{Person|royerloic}}, {{Person|Haesleinhuepf}}, {{Person|hkmoon}}, {{Person|tibuch}}, {{Person|MarcelWiedenmann}}, {{Person|hoerldavid}}, {{Person|milkyklim}}, {{Person|maarzt}}, {{Person|xulman}}, Carsten Haubold, Jonas Massa
+|{{Person|Jug}}, {{Person|Pietzsch}}, {{Person|Tomancak}}, {{Person|Rueden}}, {{Person|Saalfeld}}, {{Person|hanslovsky}}, {{Person|kephale}}, {{Person|rimadoma}}, {{Person|tinevez}}, {{Person|dietzc}}, {{Person|patrick-winter-knime}}, {{Person|skalarproduktraum}}, {{Person|royerloic}}, {{Person|Haesleinhuepf}}, {{Person|hkmoon}}, {{Person|tibuch}}, {{Person|MarcelWiedenmann}}, {{Person|hoerldavid}}, {{Person|milkyklim}}, {{Person|maarzt}}, {{Person|xulman}}, {{Person|Chaubold}}, Jonas Massa
 |[[Fiji]] & [[KNIP]]
 |- valign="top"
 |2017 Jun 7 -<br>2017 Jun 14
@@ -184,12 +184,12 @@ ImageJ has benefitted from many hackathons over the years:
 |- valign="top"
 | style="white-space: nowrap" | [[2017-09-25 - KNIME Image Processing hackathon|2017 Sep 20 -<br>2017 Sep 29]]
 |[https://www.knime.org/contact KNIME Konstanz Regional Office]<br>Konstanz, Germany
-|{{Person|dietzc}}, {{Person|maarzt}}, {{Person|tibuch}}, {{Person|imagejan}}, {{Person|gab1one}}, {{Person|AlexanderFillbrunn}}, Jon Fuller, {{Person|Squareys}}, {{Person|chaubold}}, {{Person|stelfrich}}, {{Person|hornm}}, {{Person|fjug}}, {{Person|Treiblesschorle}}, {{Person|milkyklim}}, {{Person|kmader}}, Julianus Pfeuffer, {{Person|tpietzsch}}, {{Person|mp007}}, {{Person|StephanPreibisch}}, Jonas Probst, René Rahn, {{Person|ctrueden}}, {{Person|SimonSchmid}}, {{Person|frauzufall}}, {{Person|xulman}}, {{Person|MarcelWiedenmann}}, {{Person|HedgehogCode}}, {{Person|patrick-winter-knime}}
+|{{Person|dietzc}}, {{Person|maarzt}}, {{Person|tibuch}}, {{Person|imagejan}}, {{Person|gab1one}}, {{Person|AlexanderFillbrunn}}, Jon Fuller, {{Person|Squareys}}, {{Person|Chaubold}}, {{Person|stelfrich}}, {{Person|hornm}}, {{Person|fjug}}, {{Person|Treiblesschorle}}, {{Person|milkyklim}}, {{Person|kmader}}, Julianus Pfeuffer, {{Person|tpietzsch}}, {{Person|mp007}}, {{Person|StephanPreibisch}}, Jonas Probst, René Rahn, {{Person|ctrueden}}, {{Person|SimonSchmid}}, {{Person|frauzufall}}, {{Person|xulman}}, {{Person|MarcelWiedenmann}}, {{Person|HedgehogCode}}, {{Person|patrick-winter-knime}}
 |[[KNIME]] Image Processing, [[ImageJ Ops]], [http://ilastik.org/ Ilastik]
 |- valign="top"
 | style="white-space: nowrap" | [[2017-12-04 - Fiji + KNIP hackathon|2017 Dec 4 -<br>2017 Dec 15]]
 |[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
-|{{Person|Jug}}, {{Person|Pietzsch}}, {{Person|Tomancak}}, {{Person|Rueden}}, {{Person|hanslovsky}}, {{Person|kephale}}, {{Person|rimadoma}}, {{Person|tinevez}}, {{Person|dietzc}}, {{Person|skalarproduktraum}}, {{Person|royerloic}}, {{Person|Haesleinhuepf}}, {{Person|hkmoon}}, {{Person|tibuch}}, {{Person|MarcelWiedenmann}}, {{Person|hoerldavid}}, {{Person|milkyklim}}, {{Person|maarzt}}, {{Person|xulman}}, Carsten Haubold
+|{{Person|Jug}}, {{Person|Pietzsch}}, {{Person|Tomancak}}, {{Person|Rueden}}, {{Person|hanslovsky}}, {{Person|kephale}}, {{Person|rimadoma}}, {{Person|tinevez}}, {{Person|dietzc}}, {{Person|skalarproduktraum}}, {{Person|royerloic}}, {{Person|Haesleinhuepf}}, {{Person|hkmoon}}, {{Person|tibuch}}, {{Person|MarcelWiedenmann}}, {{Person|hoerldavid}}, {{Person|milkyklim}}, {{Person|maarzt}}, {{Person|xulman}}, {{Person|Chaubold}}
 |[[Fiji]] & [[KNIP]]
 |-
 |colspan="4" style="border-bottom: 1px solid gray"|
