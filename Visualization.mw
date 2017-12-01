@@ -84,7 +84,7 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
 |A tool for 3D reslicing and threshold-enabled 3D visualization.
 |
 * Non-hardware accelerated volume rendering in different modalities.
-* [/plugins/volume-viewer.html Documentation]
+* [https://imagej.net/plugins/volume-viewer.html Documentation]
 | [[File:Volviewer.png|500px]]
 |-
 |[[SciView]]
