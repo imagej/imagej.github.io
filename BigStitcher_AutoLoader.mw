@@ -76,8 +76,20 @@ If you specify more than one layer in z, the x and y pattern will be repeated fo
 
 == Loading/Re-saving option ==
 
-[[File:BigStitcherAutoLoader4.png|thumb|300px|Select the importer and the xml to save the metadata.]]
-[[File:BigStitcherAutoLoader5.png|thumb|300px|Select the importer and the xml to save the metadata.]]
+After you have assigned attributes to the images in your dataset, you will be presented with option for how you want to load the data.
+
+If you tick '''Use virtual images (cached)''', images will be loaded plane-by-plane as-needed. This is useful if you want to have a quick look at a very large dataset, but will come with a slight performance hit. We recommend to re-save the dataset as multi-resolution HDF5 as you start to work on it (this can be done later on as well).
+
+If your raw data are stored as multiple stacks per file, a bug in BioFormats will cause them to always have an equal number of z-slices. All stacks will have the size of the largest stack and smaller stacks will be filled up with zeroes.
+Ticking '''check stack sizes''' will cause BigStitcher to load all stacks and remove the zero-valued volume at the end of each stack.
+
+Finally, you can opt to '''resave as HDF5'' immediately. We recommend you do this unless you just want to have a quick look at the data. The data can also be resaved as multiresolution HDF5 later on. 
+
+=== Options for re-saving as HDF5 ===
+[[File:BigStitcherAutoLoader4.png|thumb|300px|Options for loading or re-saving the dataset.]]
+
+
+[[File:BigStitcherAutoLoader5.png|thumb|300px|Options for re-saving as multi-resolution HDF5.]]
 
 == (Optional) Move Tiles to regular grid interactively ==
 
