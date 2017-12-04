@@ -133,8 +133,7 @@ Per default, variable values are persisted between runs of a script. This means 
 <source lang="python">
 #@Integer(label="An integer!",value=15,persist=false) someInt
 </source>
-
-[[Warning | Currently, "two scripts which declare the same parameter name, even with different types, will stomp each other." See [https://github.com/scijava/scijava-common/issues/193].]]
+{{Warning | Currently, "two scripts which declare the same parameter name, even with different types, will stomp each other." See [https://github.com/scijava/scijava-common/issues/193].}}
 
 === Multiple Choice ===
 
