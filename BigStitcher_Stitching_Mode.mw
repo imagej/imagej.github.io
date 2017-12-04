@@ -1,5 +1,7 @@
 After opening a XML file the main windows will appear in the '''Stitching Mode'''. In this mode all necessary steps for image stitching are performed
 
+=== The main window ===
+
 [[File:BigStitcher_Overview_1.png|center|1000px]]
 
 * At the top of the window '''(1)''', you can switch between Stitching and MultiView mode. 
@@ -12,6 +14,7 @@ After opening a XML file the main windows will appear in the '''Stitching Mode''
 
 * In Stitching mode, only one Timepoint and Angle is displayed. Different Timepoints or Angles are accesed by the drop-down menu at the bottom '''(4)'''.
 
+=== The BigDataViewer window ===
 
 If the dataset is in a format suitable for quick visualization by [[BigDataViewer]] (e.g. multiresolution HDF5 or virtually loading), a BigDataViewer window in which selected Views can be visualized will open along with the BigStitcher main window. For other datasets, you can open BigDataViewer manually via the menu.
 
