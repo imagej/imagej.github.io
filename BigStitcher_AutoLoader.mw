@@ -93,12 +93,13 @@ Finally, you can opt to '''resave as HDF5''' immediately. We recommend you do th
 
 If you chose to resave your dataset as HDF5 in the previous dialog, you will be presented with options for the creating the multi-resolution pyramid and saving it. 
 
-* '''manual mipmap setup''' allows you to specify the subampling factors in the form <code>{subsampling factor in x, subsampling factor in y, subsampling factor in z}</code>, e.g. <code>{1,1,1}</code> for the original images. The multiple subsampling factors have to separated by commas and placed between brackets. Furthermore, the data will be split into ''chunks'', e.g. 16x16x16 pixels. You can specify the chunk size per subsampling level in the same format as the subsampling factors. 
-Generally, we try to pick meaningful defaults here, so you should not have to change these settings.
+* '''manual mipmap setup''' allows you to specify the subampling factors in the form <code>{subsampling factor in x, subsampling factor in y, subsampling factor in z}</code>, e.g. <code>{1,1,1}</code> for the original images. The multiple subsampling factors have to separated by commas and placed between brackets. Furthermore, the data will be split into ''chunks'', e.g. 16x16x16 pixels. You can specify the chunk size per subsampling level in the same format as the subsampling factors. Generally, we try to pick meaningful defaults here, so ''you should not have to change these settings''.
 
-*
+* '''split hdf5''' allows saving the dataset to multiple files (by default, it is saved to one big file). You can choose the number of time points and setups (views within time points) per file here (<code>0</code> means no splitting). You can use this if your filesystem places limits on file sizes.
 
-*
+* You can tick to '''use deflate compression''' for '''lossless''' compression of your output. If your original data are uncompressed, this may greatly reduce the size of the written files, to a point that the resaved data are actually smaller than the original data (on the other hand, not compressing when you have compressed raw data will increase the output size). Since the performance hit of decompressing data is small and IO bandwidth is much likelier to be a bottleneck, we recommend you compress the HDF5 file 
+
+* Finally, you can choose the '''export path''', i.e. the directory the .h5 file(s) are saved to.
 
 [[File:BigStitcherAutoLoader5.png|thumb|300px|Options for re-saving as multi-resolution HDF5.]]
 
