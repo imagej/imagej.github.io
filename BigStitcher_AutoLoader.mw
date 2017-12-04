@@ -107,4 +107,10 @@ If you chose to resave your dataset as HDF5 in the previous dialog, you will be 
 
 == (Optional) Move Tiles to regular grid interactively ==
 
+If you selected '''Move Tiles to Grid (interactive)''' earlier on, a [[BigDataViewer]] window will open at this point and display the images in your dataset.
+
+You will be presented with a dialog to specify the parameters of the grid, i.e. the pattern of the tiles, how many tiles there are and by how much they overlap. The effects of your settings will be displayed in the BigDataViewer window and updated on-the-fly. 
+
+As with the macro-scriptable version of this dialog, if there are multiple angles in the dataset, the dialog will be shown for each of them and if you specify more than one layer in z, the x and y pattern will be repeated for every layer. 
+
 [[File:BigStitcherAutoLoader6b.png|thumb|300px|Select the importer and the xml to save the metadata.]]
