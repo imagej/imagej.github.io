@@ -1,18 +1,19 @@
-*After opening a XML file the main windows will appear in the '''Stitching Mode'''. In this mode all necessary steps for image stitching are performed
+After opening a XML file the main windows will appear in the '''Stitching Mode'''. In this mode all necessary steps for image stitching are performed
 
-*In the center of the window a list shows all available views for given Timepoint and Angle.
+[[File:BigStitcher_Overview_1.png|center|1000px]]
 
-*At the top the name of the currently open .XML will appear.
+* At the top of the window '''(1)''', you can switch between Stitching and MultiView mode. 
 
-*"Info" shows extended information of all Views in the current XML file.
+* Also at the top of the window '''(2)''' the name of the currently open .XML will appear. '''Info''' shows extended information of all Views in the current XML file. The '''Save''' button saves all current changes done to the XML.
 
-*The "Save" button saves all current changes done to the XML.
+* In the center of the window a list '''(3)''' shows all available views for the selected Timepoint and Angle.
 
-*The views can be grouped by different attributes. In this case views are grouped by Channels and Illuminations. Different Timepoints or Angles are accesed by the drop-down menu at the bottom.
+* The views can be grouped by different attributes '''(5)'''. In this case views are grouped by Channels and Illuminations.
 
-[[File:BigStitcher_Overview_1.png|left|1000px]]
+* In Stitching mode, only one Timepoint and Angle is displayed. Different Timepoints or Angles are accesed by the drop-down menu at the bottom '''(4)'''.
 
-*The selected Views can be visualized using the BigDataViewer
+
+The selected Views can be visualized using the BigDataViewer
 [[File:BigStitcher_Overview_2.png|center]]
-*Right-click on the desired views will open a menu with further options.
+Right-click on the desired views will open a menu with further options.
 [[File:BigStitcher_Overview_3.png|center]]
