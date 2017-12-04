@@ -91,7 +91,7 @@ Finally, you can opt to '''resave as HDF5''' immediately. We recommend you do th
 
 === Options for re-saving as HDF5 ===
 
-If you chose to resave your dataset as HDF5 in the previous dialog, you will be presented with options for the creating the multi-resolution pyramid and saving it. 
+If you chose to resave your dataset as HDF5 in the previous dialog, you will be presented with options for the creating the multi-resolution pyramid and saving it. For an in-depth explanation of the options, have a look at the [[BigDataViewer#Exporting_from_ImageJ_Stacks|BigDataViewer documentation]].
 
 * '''manual mipmap setup''' allows you to specify the subampling factors in the form <code>{subsampling factor in x, subsampling factor in y, subsampling factor in z}</code>, e.g. <code>{1,1,1}</code> for the original images. The multiple subsampling factors have to separated by commas and placed between brackets. Furthermore, the data will be split into ''chunks'', e.g. 16x16x16 pixels. You can specify the chunk size per subsampling level in the same format as the subsampling factors. Generally, we try to pick meaningful defaults here, so ''you should not have to change these settings''.
 
