@@ -13,7 +13,12 @@ After opening a XML file the main windows will appear in the '''Stitching Mode''
 * In Stitching mode, only one Timepoint and Angle is displayed. Different Timepoints or Angles are accesed by the drop-down menu at the bottom '''(4)'''.
 
 
-The selected Views can be visualized using the BigDataViewer
+If the dataset is in a format suitable for quick visualization by [[BigDataViewer]] (e.g. multiresolution HDF5 or virtually loading), a BigDataViewer window in which selected Views can be visualized will open along with the BigStitcher main window. For other datasets, you can open BigDataViewer manually via the menu.
+
 [[File:BigStitcher_Overview_2.png|center]]
-Right-click on the desired views will open a menu with further options.
+
+=== The right-click menu ===
+
+Select the views you wish to process in the main window and right-click to open a menu with further options.
+
 [[File:BigStitcher_Overview_3.png|center]]
