@@ -66,11 +66,11 @@ A simpler and less interactive, but Macro-scriptable version of the above. You w
 
 == (Optional) Move Tile to regular grid (Macro-scriptable) ==
 
-If you selected to move tiles to a regular grid manually,
+If you selected to move tiles to a regular grid manually, you will be presented with a dialog to specify the parameters of the grid ''for every angle in the dataset'', i.e. the pattern of the tiles, how many tiles there are and by how much they overlap.
 
-[[File:BigStitcherAutoLoader6a.png|thumb|300px|Select the importer and the xml to save the metadata.]]
+If you specify more than one layer in z, the x and y pattern will be repeated for every layer.
 
-
+[[File:BigStitcherAutoLoader6a.png|thumb|300px|Options for manually moving tiles to a grid (macro-scriptable).]]
 
 == Loading/Re-saving option ==
 
