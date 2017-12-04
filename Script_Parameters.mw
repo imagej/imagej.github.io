@@ -126,6 +126,14 @@ Default values are also supported as parameter properties:
 #@Integer(label="An integer!",value=15) someInt
 </source>
 
+=== Persistence ===
+
+Per default, variable values are persisted between runs of a script. This means that parameter values from a previous run are used as starting value. Please note that a persisted value will overwrite a defined [Default value|default value].
+
+<source lang="python">
+#@Integer(label="An integer!",value=15,persist=false) someInt
+</source>
+
 === Multiple Choice ===
 
 Any parameter can be turned into a multiple-choice selector by adding a <code>choices = {...}</code> property:
