@@ -26,6 +26,11 @@ A single-purpose loader to import '''diSPIM''' datasets produced by MicroManager
 
 ''Note: Only one xml per directory is supported right now, even if they have a different filename. ''
 
+
+Go back to the [[BigStitcher#Documentation|main page]]
+
+
+<!--
 *Open BigStitcher from the Plugin menu. In the " Select dataset for Stitching Explorer" select "define a new dataset". 
 [[File:BigStitcher_Import_1.png|center]]
 *Select the type of multi-view dataset and specify desired filename
@@ -57,3 +62,4 @@ For the example above the numerical pattern represents different angles. Therefo
 [[File:BigStitcher_import_6.png|center]] 
 *If you selected the "resave as HDF5" option you given further resaving options. It`is recommended to use deflate compression to save disk space.
 [[File:BigStitcher_import_7.png|center]]
+-->
