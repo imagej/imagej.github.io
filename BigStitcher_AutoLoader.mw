@@ -83,11 +83,22 @@ If you tick '''Use virtual images (cached)''', images will be loaded plane-by-pl
 If your raw data are stored as multiple stacks per file, a bug in BioFormats will cause them to always have an equal number of z-slices. All stacks will have the size of the largest stack and smaller stacks will be filled up with zeroes.
 Ticking '''check stack sizes''' will cause BigStitcher to load all stacks and remove the zero-valued volume at the end of each stack.
 
-Finally, you can opt to '''resave as HDF5'' immediately. We recommend you do this unless you just want to have a quick look at the data. The data can also be resaved as multiresolution HDF5 later on. 
+You will also be able to specify the '''dataset save path''', i.e. the directory the XML dataset definition will be save to.
 
-=== Options for re-saving as HDF5 ===
+Finally, you can opt to '''resave as HDF5''' immediately. We recommend you do this unless you just want to have a quick look at the data. The data can also be resaved as multiresolution HDF5 later on. 
+
 [[File:BigStitcherAutoLoader4.png|thumb|300px|Options for loading or re-saving the dataset.]]
 
+=== Options for re-saving as HDF5 ===
+
+If you chose to resave your dataset as HDF5 in the previous dialog, you will be presented with options for the creating the multi-resolution pyramid and saving it. 
+
+* '''manual mipmap setup''' allows you to specify the subampling factors in the form <code>{subsampling factor in x, subsampling factor in y, subsampling factor in z}</code>, e.g. <code>{1,1,1}</code> for the original images. The multiple subsampling factors have to separated by commas and placed between brackets. Furthermore, the data will be split into ''chunks'', e.g. 16x16x16 pixels. You can specify the chunk size per subsampling level in the same format as the subsampling factors. 
+Generally, we try to pick meaningful defaults here, so you should not have to change these settings.
+
+*
+
+*
 
 [[File:BigStitcherAutoLoader5.png|thumb|300px|Options for re-saving as multi-resolution HDF5.]]
 
