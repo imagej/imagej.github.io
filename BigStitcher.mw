@@ -37,23 +37,35 @@ Since image data is produced in a variety of formats, the first step is to assem
 
 * [[BigStitcher_Define_new_dataset|Defining a new dataset]]
 
-Once a dataset was defined and the XML file was saved, you can quickly load any dataset
+Once a dataset was defined and the XML file was saved, you can quickly load any dataset:
 
 * [[BigStitcher_Open_existing|Opening an existing dataset]]
 
 === UI Overview ===
 
+The BigStitcher can run in two modes depending on whether you want to align tiled images imaged from the same direction (Stitching mode) or align tiled acquisitions from different angles or time points (MultiView mode).
+The following sections give an overview of the UI in both modes: 
+
 *[[BigStitcher_Stitching_Mode|Stitching mode]]
 
 *[[BigStitcher_MultiView_Mode|MultiView mode]]
 
+*[[BigStitcher_BDV|Inspect data using BigDataViewer]]
+
 === Pre-alignment ===
 
-*Inspect data using BigDataViewer
+Ideally, the location of tiles should have been loaded from metadata while importing a dataset. With the BigStitcher you can, however, also move views to a regular grid manually, load view locations from a ''tile configuration'' file or manually translate single views. 
+
+*[[BigStitcher_manual_translation|Manually align views]]
+
+Many lightsheet microscopes offer illumination of the sample from multiple directions. Since typically one illumination direction produces the best image for a given point in the sample, you might want to discard images illuminated from other directions.
 
 *[[BigStitcher_Select_illumination|Illumination selection]]
 
+
 === Stitching ===
+
+
 
 *[[BigStitcher_Pairwise_shift|Pairwise shift calculation]]
 
@@ -61,9 +73,15 @@ Once a dataset was defined and the XML file was saved, you can quickly load any 
 
 *[[BigStitcher_Global_optimization|Global optimization]]
 
+In addition to the standard stitching pipeline, we also offer advanced functionality, such as different algorithms for determining pairwise shifts:
+
+*[[BigStitcher_Advanced_stitching|Advanced stitching]]
+
 === MultiView registration===
 
-*Manual translation
+Once you have aligned the views imaged from the same angles to each other, you can then proceed to align those groups of views to each other, using [[Multiview-Reconstruction]].
+
+This process consists of finding ''interest points'' such as nuclei or fiducial beads in the single views, matching corresponding interest points in other views and then aligning the views based on the corresponding interest points.
 
 *[[BigStitcher_Interest_points|Interest point detection]]
 
