@@ -29,14 +29,14 @@ Perhaps [https://github.com/saalfeldlab/n5/issues/15 make it versioned]?  Becaus
 * the block grid does not need to be filled dense, some blocks could be missing
 * attributes are stored in an additional JSON file
 * Discussion: should we define standard now as to how data should be stored in there to prevent an emergence of a zoo of different flavors as there is for HDF5?
-    * how to do time series where each timestep / angle could have different image size
-    * if we want a general "N5 viewer" for images, we'd have to add calibration data
-    * put this information around the N5 dataset, because it behaves more like a dataset within an H5 file.
-    * at least add a version number!
+** how to do time series where each timestep / angle could have different image size
+** if we want a general "N5 viewer" for images, we'd have to add calibration data
+** put this information around the N5 dataset, because it behaves more like a dataset within an H5 file.
+** at least add a version number!
 * why another file format?
-    * parallel writes (awesome for clusters with shared filesystem)
-    * provides 
-    * couldn't this just be another flavor of HDF5?
+** parallel writes (awesome for clusters with shared filesystem)
+** provides 
+** couldn't this just be another flavor of HDF5?
 
 == Hackathon Progress ==
 
