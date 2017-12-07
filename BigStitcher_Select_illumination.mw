@@ -1,13 +1,17 @@
-* When views have more than one illumination, you can select the best one by right-click on the desired views and selecting "Select Best Illuminations"
+When views have more than one illumination, you can select the best one by selecting the views you wish to process and clicing {{bc|Preprocessing|Select Best Illuminations}} in the '''right-click menu'''.
 
-*Select which views should be processed and if you want to review the selections before applying.
+* Ticking '''Process only selection''' will limit the illumination selection to the views currently selected in the main window. Select which views should be processed and if you want to review the selections before applying.
+
+* In the '''Selection method''' you can choose by which method the best illumination is determined. At the moment, tho only option is selection of the brightest (highest mean intensity) view.
 
 [[File:BigStitcher_Illu_1.png|center]]
 
-* If the "Show selection results before applying" option was selected a new windows showing the assigned illumination for all selected views will appear. The selected illumination can be manually changed by selecting the right Illumination attribute.
+* If the '''Show selection results before applying''' option was selected a new window showing the assigned illumination for all selected views will appear. The selected illumination can be manually changed for each view by changing the Illumination attribute in the list.
 
 [[File:BigStitcher_Illu_2.png|center]]
 
-*After selecting the best illumination, only the chosen illumination will be used for the stitching and will appear in the DataViewer.
+After selecting the best illumination, only the chosen illumination will be used for the stitching and will appear in the BigDataViewer.
 
 [[File:BigStitcher_Illu_3.png|center]]
+
+Go back to the [[BigStitcher#Documentation|main page]]
