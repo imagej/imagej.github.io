@@ -20,23 +20,22 @@ https://twitter.com/hashtag/hackdd17?vertical=default&src=hash
 For more info on H5, check out the github repository [https://github.com/saalfeldlab/n5/ here].
 
 Perhaps [https://github.com/saalfeldlab/n5/issues/15 make it versioned]?  Because ''a duck is not always a duck...''
-
-* Philip Hanslovsky presented it
 * feels like HDF5, but stores chunks(blocks) in separate files in the file system.
 * is a Java library, but Constantin Pape already wrote a C++/python version of it: z5 (also matches "zarr" library), https://github.com/constantinpape/z5
-* there is a special type for label blocks
-* blocks can have a halo
-* the block grid does not need to be filled dense, some blocks could be missing
 * attributes are stored in an additional JSON file
 * Discussion: should we define standard now as to how data should be stored in there to prevent an emergence of a zoo of different flavors as there is for HDF5?
 ** how to do time series where each timestep / angle could have different image size
 ** if we want a general "N5 viewer" for images, we'd have to add calibration data
 ** put this information around the N5 dataset, because it behaves more like a dataset within an H5 file.
-** at least add a version number!
+** at least add a version number! Because _a duck is not always a duck..._
 * why another file format?
 ** parallel writes (awesome for clusters with shared filesystem)
-** provides 
+** there is a special type for label blocks
+** blocks can have a halo
+** the block grid does not need to be filled dense, some blocks could be missing
 ** couldn't this just be another flavor of HDF5?
+* are parallel writes to the same block prevented by some kind of locks?
+* the HDF5 team should be included in the discussions to learn from their mistakes - there is lots of information on parallel writing of HDF5 files out there
 
 == Hackathon Progress ==
 
