@@ -2,7 +2,7 @@ When views have more than one illumination, you can select the best one by selec
 
 * Ticking '''Process only selection''' will limit the illumination selection to the views currently selected in the main window. Select which views should be processed and if you want to review the selections before applying.
 
-* In the '''Selection method''' you can choose by which method the best illumination is determined. At the moment, tho only option is selection of the brightest (highest mean intensity) view.
+* In the '''Selection method''' you can choose by which method the best illumination is determined. At the moment, the only option is selection of the brightest (highest mean intensity) view.
 
 [[File:BigStitcher_Illu_1.png|center]]
 
