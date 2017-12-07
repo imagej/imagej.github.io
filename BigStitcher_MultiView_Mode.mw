@@ -6,7 +6,16 @@ The '''MultiView Mode''' can be accessed by clicking the "MultiView" button in t
 
 [[File:BigStitcher_Overview_4.png|center]]
 
-* Selecting the desired views and right-clicking in the main view list brings up a menu with the possible actions that can be performed.
+=== The right0click menu ===
+
+Selecting the desired views and right-clicking in the main view list brings up a menu with the possible actions that can be performed.
+
+* '''Displaying''' shows functions for visualizing your data in BigDataViewer or ImageJ. 
+* '''Processing''' shows the functions in the interest-point-based multi-view registration pipeline.
+* '''Calibration/Transforamtions''' shows functions for inspecting or modifying the view transformations.
+* '''Interest Points''' shows functions for visualizing and removing interest points.
+* '''Modifications''' shows functions for resaving the dataset.
+
 [[File:BigStitcher_Overview_5.png|center]]
 
 Go back to the [[BigStitcher#Documentation|main page]]
