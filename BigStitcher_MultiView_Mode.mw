@@ -1,13 +1,12 @@
-*The '''MultiView Mode''' can be accessed by selecting "MultiView" in the main window.
+The '''MultiView Mode''' can be accessed by clicking the "MultiView" button in the main window.
 
-*All the views from different angles will be shown.
+* All the views from different angles, channels or time points will be shown.
 
-*The views can be grouped by Illuminations or Tiles.
+* The views can be grouped by Illuminations or Tiles (they are grouped by default, but can be ungrouped by unticking the respective option at the bottom of the main window).
 
 [[File:BigStitcher_Overview_4.png|center]]
 
-*Right-click on the desired views brings a menu with the possible actions that can be performed.
+* Selecting the desired views and right-clicking in the main view list brings up a menu with the possible actions that can be performed.
 [[File:BigStitcher_Overview_5.png|center]]
-
 
 Go back to the [[BigStitcher#Documentation|main page]]
