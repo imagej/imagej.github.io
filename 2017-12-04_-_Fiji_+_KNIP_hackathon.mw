@@ -15,9 +15,9 @@ https://twitter.com/hashtag/hackdd17?vertical=default&src=hash
 
 == Technical Discussions ==
 
-=== H5, not HDF5 ===
+=== N5, not HDF5 ===
 
-For more info on H5, check out the github repository [https://github.com/saalfeldlab/n5/ here].
+For more info on N5, check out the github repository [https://github.com/saalfeldlab/n5/ here].
 
 * feels like HDF5, but stores chunks(blocks) in separate files in the file system.
 * is a Java library, but Constantin Pape already wrote a C++/python version of it: z5 (also matches "zarr" library), https://github.com/constantinpape/z5
