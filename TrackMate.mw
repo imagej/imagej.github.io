@@ -176,6 +176,17 @@ Thanks to Travis, the extension we are aware of are built automatically and can 
 | This plugin implements the find maxima detection algorithm for TrackMateas in the <i>Process -> Find Maxima...</i> command. The results are almost the same. Subpixel accuracy is activated by default.
 | [https://github.com/thorstenwagner/ij-trackmate-findmaxima/releases/latest on Github]
 | [https://github.com/thorstenwagner/ij-trackmate-findmaxima on Github]
+|-
+| Track analysis
+| This extension ships several track analyzers that yield more statistics on tracks. Such as:
+* TOTAL_DISTANCE_TRAVELED
+* MAX_DISTANCE_TRAVELED
+* TRACK_CONFINMENT_RATIO
+* MEAN_STRAIGHT_LINE_SPEED
+* LINEARITY_OF_FORWARD_PROGRESSION
+* MEAN_DIRECTIONAL_CHANGE_RATE
+| [http://maven.imagej.net/content/repositories/snapshots/sc/fiji/TrackMate_trackanalysis/0.0.1-SNAPSHOT/TrackMate_trackanalysis-0.0.1-20170614.171211-1.jar on ImageJ nexys]
+| [https://github.com/tinevez/TrackMate-TrackAnalysis on Github]
 |}
 
 
