@@ -2,8 +2,19 @@
 
 In the '''right-click menu''' you can find various functions for manually arranging the views in your dataset under {{bc|Preprocessing|Arrange Views}}.
 
-[[File:BigStitcher_Arrange_Views001.png|center|500px]]
+[[File:BigStitcher_Arrange_Views001.png|center|600px]]
 
 === Manually translate views ===
+
+Clicking '''Manually translate Views''' will bring up a new window that allows you to manually move the selected views along the x-, y- or z-axis using three sliders.
+
+* If the BigDataViewer is open, the result of your translation will be previewed in real time (the views surrounding the views that you are moving will be displayed in ''gray'').
+* You can select other views via the '''BigStitcher main window''' - if you have moved the currently selected views, you will be asked to discard or apply the current transformation.
+* Clicking '''Close''' will close the transformation window - if you have moved the currently selected views, you will be asked to discard or apply the current transformation.
+* Clicking '''Apply''' will apply the current translation and leave the ''transformation window'' open for further movement of views
+
+{{Notice|The range of movement is limited, if you wish to move views by a large amount, you have to repeatedly apply a translation}}
+
+[[File:BigStitcher_Arrange_Views002.png|center|800px]]
 === Read Locations From File ===
 === Move Tiles To Regular Grid ... ===
