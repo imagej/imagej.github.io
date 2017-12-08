@@ -1,8 +1,8 @@
 == Manual View Arrangement ==
 
-Under {{bc|Preprocessing|Arrange Views}} you can find various functions for manually arranging the views in your dataset.
+In the '''right-click menu''' you can find various functions for manually arranging the views in your dataset under {{bc|Preprocessing|Arrange Views}}.
 
-[[File:BigStitcher_Arrange_Views001.png|center]]
+[[File:BigStitcher_Arrange_Views001.png|center|500px]]
 
 === Manually translate views ===
 === Read Locations From File ===
