@@ -18,6 +18,16 @@ Clicking '''Manually translate Views''' will bring up a new window that allows y
 [[File:BigStitcher_Arrange_Views002.png|center|800px]]
 === Read Locations From File ===
 
+Clicking '''Read Locations From File''' will bring up a new window that allows you to load view locations saved in a '''tile configuration''' file.
+
+* To load a tile configuration file you can drag and drop a file to the '''Tile configuration file''' field at the top of the window, type the path manually or click '''Browse...''' to search for the file.
+* If the file could be read successfully, the locations specified in it will be displayed in the table in the middle of the window.
+* If the BigDataViewer is open, the effects of applying the tile configuration will be previewed immediately
+* Ticking '''pixel units''' will interpret the locations in the files as locations in pixels (to be exact, as '''pixels along the axis with the smallest pixels'''). Otherwise, locations will be interpreted in the pixel size unit from metadata (e.g. microns).
+* Ticking '''keep rotation from metadata''' will rotate views according to their '''Angle''' after moving them to the specified locations.
+
+{{Warning|Clicking '''Apply''' will overwrite the transformations stored in your dataset (except for the pixel calibration, the translation from the tile configuration and, optionally, a rotation)}}
+
 [[File:BigStitcher_Arrange_Views003.png|center|800px]]
 
 === Move Tiles To Regular Grid ... ===
