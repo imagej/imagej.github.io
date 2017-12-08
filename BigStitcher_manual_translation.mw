@@ -15,7 +15,13 @@ Clicking '''Manually translate Views''' will bring up a new window that allows y
 
 {{Notice|The range of movement is limited, if you wish to move views by a large amount, you have to repeatedly apply a translation}}
 
+==== Tile Configuration file format ====
+
+'''Tile configurations''' are just plain text files that adhere to a simple format:
+
+* The file has to contain a header specifying the number of dimensions in the form: <source> dim=3 </source>
 [[File:BigStitcher_Arrange_Views002.png|center|800px]]
+
 === Read Locations From File ===
 
 Clicking '''Read Locations From File''' will bring up a new window that allows you to load view locations saved in a '''tile configuration''' file.
