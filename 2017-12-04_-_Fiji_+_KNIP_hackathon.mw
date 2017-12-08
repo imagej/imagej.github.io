@@ -37,6 +37,8 @@ For more info on N5, check out the github repository [https://github.com/saalfel
 * the HDF5 team should be included in the discussions to learn from their mistakes - there is lots of information on parallel writing of HDF5 files out there
 * Try to write a N5 dataset into a FUSE filesystem/file??? Could this be a work-around for the many-small-files issue?
 
+=== BigDataViewer ===
+
 == Hackathon Progress ==
 
 
