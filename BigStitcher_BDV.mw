@@ -9,4 +9,14 @@ For help on using BigDataViewer, you can either click {{bc|Help|Show Help}} in t
 
 In the BigDataViewer window accompanying the BigStitcher, you can switch between color schemes by pressing {{Key|c}} in the BigSitcher main window. A single press will switch between per-view and per-channel coloring. Pressing {{Key|c}} repeatedly will cycle through different colors.
 
+=== Displaying selected views as ImageJ images ===
+
+In addition to toggling the BigDataViewer, you can also display selected views one-by-one as standard ImageJ images using the '''Displaying''' functions in the '''right-click menu'''.
+
+* Using {{bc|Displaying|Display Raw Image(s)}} in the ''right-click menu'', you can open the selected views as 16-bit or 32-bit images in ImageJ.
+
+* Using {{bc|Displaying|Max-Projection}}, you can generate a maximum-intensity projection of the selected view stacks and display them as ImageJ images.
+
+
+
 Go back to the [[BigStitcher#Documentation|main page]]
