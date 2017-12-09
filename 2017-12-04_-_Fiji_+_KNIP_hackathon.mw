@@ -65,5 +65,7 @@ We discussed opportunities to improvement for the Bdv design:
 ** the label block format together with the fact that datasets can be stored sparse could be a great foundation for label storage / communication
 ** played around with [https://github.com/constantinpape/z5 Constantin Pape's C++/Python N5] reader as available format on the [https://github.com/ilastik/ilastik/tree/apistar-add-n5 ilastik server]
 ** noticed that the only thing needed to serve a N5 dataset on the web is to serve the directory contents. Philipp wrote a [https://github.com/hanslovsky/n5-rest N5 REST reader] for BigCAT to talk to the ilastik server that way
+* worked on some caching problems in the ''ilastik server''
+* discussed possible interfaces between Matthias Arzt's LabKit and ilastik-backend for interactive segmentation in ImageJ/BigDataViewer with an ilastik classifier backend
 
 [[Category:News]]
