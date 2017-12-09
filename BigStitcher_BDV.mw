@@ -1,4 +1,4 @@
-=== Displaying selected views in BigDataViewer ===
+== Displaying selected views in BigDataViewer ==
 
 If your dataset is in a format suitable for quick visualization by [[BigDataViewer]] (e.g. multiresolution HDF5 or virtually loading), a BigDataViewer window in which selected Views can be visualized will open along with the BigStitcher main window. For other datasets, you can open BigDataViewer manually via the '''right-click menu''' by clicking {{bc|Displaying|Display in BigDataViewer(on/off)}}. If a BigDataViewer window is currently open, clicking this will close it.
 
