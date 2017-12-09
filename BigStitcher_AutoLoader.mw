@@ -66,7 +66,7 @@ A simpler and less interactive, but Macro-scriptable version of the above. You w
 
 == (Optional) Move Tile to regular grid (Macro-scriptable) ==
 
-If you selected to move tiles to a regular grid manually, you will be presented with a dialog to specify the parameters of the grid, i.e. the pattern of the tiles, how many tiles there are and by how much they overlap.
+If you selected to move tiles to a regular grid manually, you will be presented with a dialog to specify the parameters of the grid, i.e. the pattern of the tiles, how many tiles there are and by how much they overlap ([[BigStitcher_manual_translation#Move_Tiles_To_Regular_Grid_...|details]]).
 
 If there are multiple angles in the dataset, the dialog will be shown for each of them. 
 
