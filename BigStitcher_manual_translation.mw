@@ -52,3 +52,5 @@ Clicking '''Move Tiles To Regular Grid ...''' will bring up a new window that al
 {{Warning|Clicking '''Apply''' will overwrite the transformations stored in your dataset (except for the pixel calibration, the translation from the tile configuration and, optionally, a rotation)}}
 
 [[File:BigStitcher_Arrange_Views004.png|center|800px]]
+
+Go back to the [[BigStitcher#Documentation|main page]]
