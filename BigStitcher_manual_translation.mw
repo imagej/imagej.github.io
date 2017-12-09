@@ -45,6 +45,8 @@ Clicking '''Read Locations From File''' will bring up a new window that allows y
 Clicking '''Move Tiles To Regular Grid ...''' will bring up a new window that allows you to move the ''selected'' views into a regular grid. If the BigDataViewer is open, every change you make in this window will be previewed in real time.
 
 * At the top of the '''Regular Grid Options''' window, there are several buttons corresponding to different arrangements of the views (e.g. row-by-row, snake row-by-row, ...). Clicking one of these buttons will move the selected views into the corresponding pattern.
-* Below, you can specify the dimensions of the grid (tiles per row, column, ...). Note that if you specify more than one layer in z, the pattern selected above will be repeated in every layer. 
+* Below, you can specify the '''dimensions of the grid''' (tiles per row, column, ...). Note that if you specify more than one layer in z, the pattern selected above will be repeated in every layer.
+* With the  '''overlap''' sliders, you can specify by how much your views overlap in each dimension. By default, changing one slider will also change the others. To specify different overlaps for each dimension, unclick the 'link' button.
+* At the bottom, there are buttons to '''cancel''' the grid arrangement process or '''Apply Transformation'''. If your dataset contains multiple timepoints, you will be asked whether you want to apply the transformation to all timepoints or just the currently selected one.
 
 [[File:BigStitcher_Arrange_Views004.png|center|800px]]
