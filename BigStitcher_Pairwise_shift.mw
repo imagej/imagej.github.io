@@ -2,7 +2,11 @@ The first step in stitching a tiled dataset is determining the pairwise shifts b
 
 * If you just want to determine pairwise shifts and skip the other steps, you can use {{bc|Step-by-step Stitching|Calculate Pairwise Shifts...|Phase Correlation}}
 
+* Aside from the default '''Phase correlation''' algorithm for shift determination, we also offer alignment via the Lucas-Kanade method or interest point registration, as well as expert view grouping options. For those advanced methods, refer to [[BigStitcher_Advanced_stitching]]
+
 [[File:BigStitcher_stitch_0.png|center|600px]]
+
+=== Pairwise shift calculation ===
 
 * Now you can choose what instances of the grouped attributes should be used for the pairwise shift calculation. In this case the Views are grouped by Channel and Illumination. For the channels the average of all channels will be used as well as for the illuminations.
 [[File:BigStitcher_stitch_1.png|center]]
