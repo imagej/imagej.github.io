@@ -15,7 +15,7 @@ In addition to toggling the BigDataViewer, you can also display selected views o
 
 * Using {{bc|Displaying|Display Raw Image(s)}} in the ''right-click menu'', you can open the selected views as 16-bit or 32-bit images in ImageJ.
 
-* Using {{bc|Displaying|Max-Projection}}, you can generate a maximum-intensity projection of the selected view stacks and display them as ImageJ images.
+* Using {{bc|Displaying|Max-Projection}}, you can generate maximum-intensity projections of the selected view stacks and display them as ImageJ images.
 
 
 
