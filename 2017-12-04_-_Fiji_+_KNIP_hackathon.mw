@@ -42,4 +42,12 @@ For more info on N5, check out the github repository [https://github.com/saalfel
 == Hackathon Progress ==
 
 
+=== ilastik - (Dominik Kutra, Carsten Haubold) ===
+
+* developed an ImageJ2 plugin that allows to stream raw data and predictions from the ''work in progress'' ilastik processing backend: https://github.com/ilastik/org.ilastik.bdvsource
+* discussed with Philipp Hanslovsky about the benefits of using the N5 format for communication
+** the label block format together with the fact that datasets can be stored sparse could be a great foundation for label storage / communication
+** played around with [https://github.com/constantinpape/z5 Constantin Pape's C++/Python N5] reader as available format on the [https://github.com/ilastik/ilastik/tree/apistar-add-n5 ilastik server]
+** noticed that the only thing needed to serve a N5 dataset on the web is to serve the directory contents. Philipp wrote a [https://github.com/hanslovsky/n5-rest N5 REST reader] for BigCAT to talk to the ilastik server that way
+
 [[Category:News]]
