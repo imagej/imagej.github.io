@@ -1,5 +1,8 @@
-*In the '''Stitching Mode''' select the views for the pairwise shit calculation. Then right-click and select "Calculate Pairwise Shift".
-[[File:BigStitcher_stitch_0.png|center]]
+The first step in stitching a tiled dataset is determining the pairwise shifts between the views. In the '''Stitching Mode''' select the views for the pairwise shift calculation. Then right-click and select {{bc|Stitching Wizard|Stitch dataset...}}. The '''Stitching wizard''' will guide you through the three steps of pairwise shift determination, link verification and global optimization. 
+
+* If you just want to determine pairwise shifts and skip the other steps, you can use {{bc|Step-by-step Stitching|Calculate Pairwise Shifts...|Phase Correlation}}
+
+[[File:BigStitcher_stitch_0.png|center|600px]]
 
 * Now you can choose what instances of the grouped attributes should be used for the pairwise shift calculation. In this case the Views are grouped by Channel and Illumination. For the channels the average of all channels will be used as well as for the illuminations.
 [[File:BigStitcher_stitch_1.png|center]]
