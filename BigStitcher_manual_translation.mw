@@ -21,6 +21,8 @@ Clicking '''Manually translate Views''' will bring up a new window that allows y
 
 * The file has to contain a header line specifying the number of dimensions in the form: <source> dim=3 </source>
 * The locations if Views are specified by lines of the following form (the position has to have the same dimensionality specified in the header): <source> ViewSetupID;TimePointID;(position_x, position_y, ... ) </source>
+* The ''time point ID'' can be left blank - in that case, the transformation for the view will be used ''at all time points''': <source> ViewSetupID;;(position_x, position_y, ... ) </source>
+* Lines starting with '''#''' (comments) are ignored: <source># this is a comment. </source>
 
 [[File:BigStitcher_Arrange_Views002.png|center|800px]]
 
