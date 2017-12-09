@@ -26,7 +26,7 @@ Select the views you wish to process in the main window and right-click to open 
 
 [[File:BigStitcher_Overview_3.png|left|500px]]
 
-* '''Displaying (1)''' shows functions for displaying the data in BigDataViewer or  in ImageJ.
+* '''Displaying (1)''' shows functions for displaying the data in BigDataViewer or  in ImageJ ([[BigStitcher_BDV|details]]).
 * '''Preprocessing (2)''' shows functions for manually moving views ([[BigStitcher_manual_translation|details]]) and selecting the best illuminations ([[BigStitcher_Select_illumination|details]]).
 * '''Stitching Wizard (3)''' shows functions that guide you through the stitching process.
 * '''Step-by-step Stitching (4)''' shows functions to execute the individual steps of the stitching process.
