@@ -42,4 +42,9 @@ Clicking '''Read Locations From File''' will bring up a new window that allows y
 
 === Move Tiles To Regular Grid ... ===
 
+Clicking '''Move Tiles To Regular Grid ...''' will bring up a new window that allows you to move the ''selected'' views into a regular grid. If the BigDataViewer is open, every change you make in this window will be previewed in real time.
+
+* At the top of the '''Regular Grid Options''' window, there are several buttons corresponding to different arrangements of the views (e.g. row-by-row, snake row-by-row, ...). Clicking one of these buttons will move the selected views into the corresponding pattern.
+* Below, you can specify the dimensions of the grid (tiles per row, column, ...). Note that if you specify more than one layer in z, the pattern selected above will be repeated in every layer. 
+
 [[File:BigStitcher_Arrange_Views004.png|center|800px]]
