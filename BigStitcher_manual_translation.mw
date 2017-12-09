@@ -49,4 +49,6 @@ Clicking '''Move Tiles To Regular Grid ...''' will bring up a new window that al
 * With the  '''overlap''' sliders, you can specify by how much your views overlap in each dimension. By default, changing one slider will also change the others. To specify different overlaps for each dimension, unclick the 'link' button.
 * At the bottom, there are buttons to '''cancel''' the grid arrangement process or '''Apply Transformation'''. If your dataset contains multiple timepoints, you will be asked whether you want to apply the transformation to all timepoints or just the currently selected one.
 
+{{Warning|Clicking '''Apply''' will overwrite the transformations stored in your dataset (except for the pixel calibration, the translation from the tile configuration and, optionally, a rotation)}}
+
 [[File:BigStitcher_Arrange_Views004.png|center|800px]]
