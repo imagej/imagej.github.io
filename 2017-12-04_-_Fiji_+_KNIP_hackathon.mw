@@ -39,6 +39,22 @@ For more info on N5, check out the github repository [https://github.com/saalfel
 
 === BigDataViewer ===
 
+* There is a fork of BigDataViewer for JavaFx. [https://github.com/hanslovsky/bigdataviewer-core/tree/bigcat-javafx]
+* BigDataViewer will be splitted into a UI independent part, and the Swing UI. This will make it possible to merge the JavaFx and Swing Version of BigDataViewer .
+
+We discussed opportunities to improvement for the Bdv design:
+* Slim the core of bdv, make it less smart and more predictable.
+* Bdv handle for different UI toolkits,
+* Use property pattern for settings like active source ...
+* Actively add/remove views
+* Update views (force cache-dropping) - for BDV add/remove views
+* Access to color settings, overlap rendering, …
+* Allow Grouping of views (externally is ok)
+* Consider Accumulator / Composite that works with type other than ARGBType
+* Make it easy to disable or replace Dialogs
+* Make it easy to remove an overlay
+* BdvVistools show function for converters/volatile
+
 == Hackathon Progress ==
 
 
