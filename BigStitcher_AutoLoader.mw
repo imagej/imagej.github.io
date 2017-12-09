@@ -113,4 +113,4 @@ You will be presented with a dialog to specify the parameters of the grid, i.e. 
 
 As with the macro-scriptable version of this dialog, if there are multiple angles in the dataset, the dialog will be shown for each of them and if you specify more than one layer in z, the x and y pattern will be repeated for every layer. 
 
-[[File:BigStitcherAutoLoader6b.png|thumb|300px|Select the importer and the xml to save the metadata.]]
+[[File:BigStitcher_Arrange_Views004.png|thumb|300px|Select the importer and the xml to save the metadata.]]
