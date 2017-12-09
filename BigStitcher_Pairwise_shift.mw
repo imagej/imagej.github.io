@@ -8,13 +8,19 @@ The first step in stitching a tiled dataset is determining the pairwise shifts b
 
 === Pairwise shift calculation ===
 
-After starting the stitching process, you need to 
-* Now you can choose what instances of the grouped attributes should be used for the pairwise shift calculation. In this case the Views are grouped by Channel and Illumination. For the channels the average of all channels will be used as well as for the illuminations.
+After starting the stitching process, you need to specify how to handle multiple channels (if present) and which downsampling to use.
+
+* If your dataset has multiple channels, you will be asked which channel to use for the stitching. You can also average the channels for the stitching process.
+
 [[File:BigStitcher_stitch_1.png|center|600px]]
 
-* Choose the the downsampling in x,y,z to the used for the calculation. Select a predefined downsampling factor or choose your own.
+* Next, choose the the downsampling in x,y,z to be used for the calculation. Select a predefined downsampling factor or choose your own. 
+
+{{Notice|In our experience, some downsampling (2-4x) improves results over using raw image data, as it reduces noise in the images. It also dramatically speeds up computations, so we advise using moderate downsampling in this step }}
+
 [[File:BigStitcher_stitch_2.png|center|600px]]
 
+* Stitching...
 
 {{Warning| When calculating pairwise shifts, we use only the '''overlapping parts of two views'''. This reduces the amount of data we have to look at and speeds up the computation, but might lead to incorrect results if the initial overlap (e.g. the positions loaded from metadata or manual grid specification) of the images is too small. }}
 
