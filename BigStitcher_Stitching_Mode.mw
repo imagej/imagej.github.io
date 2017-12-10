@@ -32,7 +32,7 @@ Select the views you wish to process in the main window and right-click to open 
 * '''Step-by-step Stitching (4)''' shows functions to execute the individual steps of the stitching process.
 * '''Fusion (5)''' shows functions for the fusion of views (or parts thereof) into single output images.
 * '''Calibration/Transformations (6)''' shows functions for removing transformations from the dataset. 
-* '''Modifications (7)''' shows functions for resaving the dataset.
+* '''Modifications (7)''' shows functions for resaving the dataset, e.g. as multiresolution HDF5, ([[BigStitcher_AutoLoader#Options_for_re-saving_as_HDF5|details]]).
 
 
 Go back to the [[BigStitcher#Documentation|main page]]
