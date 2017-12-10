@@ -16,10 +16,14 @@ The Interactive Link Explorer allows you to to preview the pairwise links of a v
 *If the BigDataViewer is open, you can see a preview of the transformations for the selected view and its neighbours. At the same time in the '''Interactive Link Explorer''' window, the calculated cross correlation value and calculated shift will appear.
 **Here, you can also filter links by correlation coefficient, shift dimensions or shift magnitude.
 **Selecting a single view pair in the Link Explorer will highlight the two views in the BigDataViewer
-**Right-clicking 
-*Apply your filtering criteria to the actual view by clicking "Apply" or to all links in all views by clicking "Apply to all links". You can also manually delete links by selecting the corresponding link and right-click "delete link"
+**Right-clicking on a link in the link explorer brings up a menu that allows you to remove this specific link.
 
-*Once satisfied with the results close the "Link Explorer" and continue with the [[BigStitcher_Global_optimization|global optimization]].
+* In the link explorer window you can set a minimum and maximum value for the '''cross correlation''' of the shifts.
+* You can also set filters for '''maximum''' shift in any dimension or the total shift magnitude.
+
+* Apply your filtering criteria to the actual views by clicking '''Apply Filter'''. 
+
+* Once you are satisfied with the results, you can click '''Apply & Run Global Optimization''' to continue with the [[BigStitcher_Global_optimization|global optimization]] immediately.
 
 [[File:BigStitcher_stitch_4_1.png|center|1000px]]
 <!--[[File:BigStitcher_stitch_4_2.png]]-->
