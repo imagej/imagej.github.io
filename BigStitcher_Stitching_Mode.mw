@@ -29,7 +29,10 @@ Select the views you wish to process in the main window and right-click to open 
 * '''Displaying (1)''' shows functions for displaying the data in BigDataViewer or  in ImageJ ([[BigStitcher_BDV|details]]).
 * '''Preprocessing (2)''' shows functions for manually moving views ([[BigStitcher_manual_translation|details]]) and selecting the best illuminations ([[BigStitcher_Select_illumination|details]]).
 * '''Stitching Wizard (3)''' shows functions that guide you through the stitching process.
-* '''Step-by-step Stitching (4)''' shows functions to execute the individual steps of the stitching process, [[BigStitcher_Pairwise_shift|Pairwise shift calculation]], [[BigStitcher_Preview_Pairwise_shift|Link Preview and Verification]] and [[BigStitcher_Global_optimization|Global Optimization]]
+* '''Step-by-step Stitching (4)''' shows functions to execute the individual steps of the stitching process, [[BigStitcher_Pairwise_shift|Pairwise shift calculation]], [[BigStitcher_Preview_Pairwise_shift|Link Preview and Verification]] and [[BigStitcher_Global_optimization|Global Optimization]].
+
+There are also several advanced expert functions for the individual steps in the stitching pipeline ([[BigStitcher_Advanced_stitching|details]]).
+
 * '''Fusion (5)''' shows functions for the fusion of views (or parts thereof) into single output images.
 * '''Calibration/Transformations (6)''' shows functions for removing transformations from the dataset. 
 * '''Modifications (7)''' shows functions for resaving the dataset, e.g. as multiresolution HDF5 ([[BigStitcher_AutoLoader#Options_for_re-saving_as_HDF5|details]]).
