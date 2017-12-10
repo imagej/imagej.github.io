@@ -2,7 +2,7 @@
 
 *Once the pairwise shifts between views has been calculated you can preview the links and correlation coefficients. It is important to screen the results and remove erroneous links.
 
-[[File:BigStitcher_stitch_4_0.png|600px]]
+[[File:BigStitcher_stitch_4_0.png|center|600px]]
 
 == Interactive Link Preview ==
 
@@ -13,5 +13,5 @@
 
 *Once satisfied with the results close the "Link Explorer" and continue with the [[BigStitcher_Global_optimization|global optimization]].
 
-[[File:BigStitcher_stitch_4_1.png|1000px]]
+[[File:BigStitcher_stitch_4_1.png|center|1000px]]
 <!--[[File:BigStitcher_stitch_4_2.png]]-->
