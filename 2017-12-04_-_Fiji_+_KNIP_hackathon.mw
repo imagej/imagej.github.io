@@ -55,6 +55,14 @@ We discussed opportunities to improvement for the Bdv design:
 * Make it easy to remove an overlay
 * BdvVistools show function for converters/volatile
 
+=== Matrix and Vector libraries ===
+
+* Discussion notes: https://docs.google.com/document/d/12a_9AhFMJywm7y-SfZHuWB5cXwEkpCGt03Sxq8JVfMI/edit
+* Compared different matrix and vector libaries: https://github.com/imglib/imglib2-matrix-shootout
+* Conclusion: 
+** use ojAlgo for N-D matrix operations
+** vector3 and vector4 is a complicated conclusion. probably use mastodon and JOML
+
 == Hackathon Progress ==
 
 
