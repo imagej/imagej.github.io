@@ -15,11 +15,25 @@ What are then possible ways to open an image when you are writing an Python / Gr
 
 === Use a parameter of type Dataset ===
 
-Add a line
-<syntaxhighlight lang="python">
-# @Dataset image
-</syntaxhighlight>
+When the following script is run in ImageJ.
+ImageJ will ask to user to select two Images, before it runs the script.
 
-==
+<source lang="python">
+# @Dataset firstImage
+# @Dataset secondImage
+# @UIService ui
+ui.show(firstImage)
+ui.show(secondImage)
+</source>
+
+=== Use the DatasetIOService ===
+
+<source lang="python">
+# @DatasetIOService io
+# @UIService ui
+path = "C:\Path\to\the\image.tif"
+image = io.open(path)
+ui.show(image)
+</source>
 
 == From Java ==
