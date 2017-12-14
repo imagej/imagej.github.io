@@ -68,4 +68,11 @@ We discussed opportunities to improvement for the Bdv design:
 * worked on some caching problems in the ''ilastik server''
 * discussed possible interfaces between Matthias Arzt's LabKit and ilastik-backend for interactive segmentation in ImageJ/BigDataViewer with an ilastik classifier backend
 
+=== SciView - (Kyle Harrington, Ulrik Günther, Curtis Rueden) ===
+
+* set up automatic deployment of Fiji update site that works on all operating sustems
+* imglib2 images as textures on 3D objects
+* imagej2-style logging
+* public availability of SciView plugin
+
 [[Category:News]]
