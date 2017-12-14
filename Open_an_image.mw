@@ -1,9 +1,9 @@
 '''How to open an image in ImageJ2?'''
 
 The answer to this question depends on how you use ImageJ.
-* Do you want the open an image using the graphical user interface?
-* Are you writing a script?
-* Are you using Java, to develop an ImageJ2 plugin or do write your one program using ImgLib2 and ImageJ libraries?
+* Do you want the open an image using the graphical user interface? ([[#From the GUI]])
+* Are you writing a script? ([[#From a Script]])
+* Are you using Java, to develop an ImageJ2 plug-in or do write your one program using ImgLib2 and ImageJ libraries? ([[#From Java]])
 
 == From the GUI ==
 
