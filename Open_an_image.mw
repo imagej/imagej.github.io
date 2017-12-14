@@ -11,4 +11,15 @@ In the menu select "File > Open ..." or "File > Import > ...".
 
 == From a Script ==
 
+What are then possible ways to open an image when you are writing an Python / Groovy / ... script in ImageJ?
+
+=== Use a parameter of type Dataset ===
+
+Add a line
+<syntaxhighlight lang="python">
+# @Dataset image
+</syntaxhighlight>
+
+==
+
 == From Java ==
