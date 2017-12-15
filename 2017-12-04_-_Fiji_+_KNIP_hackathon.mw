@@ -63,6 +63,13 @@ We discussed opportunities to improvement for the Bdv design:
 ** use ojAlgo for N-D matrix operations
 ** vector3 and vector4 is a complicated conclusion. probably use mastodon and JOML
 
+=== ImageJ/Fiji parallelization ===
+
+* initial focus on embarassingly parallel data
+* specific parallel (cluster) implementation will be abstracted
+* from the system architecture point of view, the design can be inspired by the search bar feature implementation
+* started use case definition
+
 == Hackathon Progress ==
 
 
