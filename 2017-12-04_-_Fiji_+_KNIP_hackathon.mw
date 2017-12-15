@@ -83,4 +83,11 @@ We discussed opportunities to improvement for the Bdv design:
 * imagej2-style logging
 * public availability of SciView plugin
 
+=== ImageJ server - (Curtis Rueden, Petr Bainar) ===
+* discussed its design with respect to the ImageJ/Fiji architecture as well as its future use cases
+* identified the most imminent issues, raised them on [https://github.com/imagej/imagej-server/issues GitHub] and brainstormed possible solutions
+* worked on a new JavaScript client with enhanced UI, making use of the Angular framework
+* demoed the new client to the community
+* encouraged members of the community to use annotations specifying whether a SciJava plugin can run headless or not
+
 [[Category:News]]
