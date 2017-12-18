@@ -132,4 +132,13 @@ We discussed opportunities to improvement for the Bdv design:
 * In response to a question from {{Person|tischi}} and {{Person|hoerldavid}}, filed a PR to enable the high-level Bio-Formats API to accept file patterns directly ({{GitHub | org=openmicroscopy | repo=bioformats | pr=3019 | label=openmicroscopy/bioformats#3019}}).
 * Fixed new and existing Java-8 installations of Fiji to work properly with Bio-Formats again ([http://forum.imagej.net/t/fiji-and-bioformats-conflicting-jars/5736/9?u=ctrueden 1]). This entailed creating a script that instructs users of the old Java 6 version of Fiji to please enable the Fiji-Legacy update site, and instructs users of the new Java 8 version of Fiji to please enable the Java-8 update site.
 
+=== ClearControl / ClearVolume / ClearCL (Robert Haase, Loic Royer) ===
+
+* Made Image Quality / Focus measurements from Royer et Al. Nat. Biotechnol. (2016) available as [https://github.com/haesleinhuepf/AutoPilotImageQualityMetrics Fiji plugin] on a preliminarily update site
+* Added support for image quality measurements in regions, tissue depth (rings) or tiled over the whole image
+* Fixed bugs regarding discovery of OpenCL files distributed using [https://github.com/ClearVolume/ClearCL ClearCLs] mechanism
+* Adapted [https://github.com/ClearControl ClearControl] software to run on another microscope
+* Revived code for controlling filter wheels and deformable mirrors
+* Merged changes from Max to ClearControl-lightsheet preparing his time stepping procedures
+
 [[Category:News]]
