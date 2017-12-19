@@ -150,4 +150,16 @@ We discussed opportunities to improvement for the Bdv design:
 * Improved Usability of the Labkit plugin. ({{GitHub | org=maarzt | repo=imglib2-labkit | label=maarzt/imglib2-labkit}})
 * Benchmark of different sparse ROI implementations.
 
+=== ImgLib2 ROIs - (Alison Walter, Tobias Pietzsch, Curtis Rueden) ===
+* Changes related to: {{GitHub | org=imglib | repo=imglib2-roi | pr=29 | label=imglib2/imglib2-roi#29}}
+** Improved transform operation for ROIs
+** Fixed boundary computation for transformed ROIs
+** Added knownConstant to ROIs for determining if a ROI will always return <code>false</code> or <code>true</code>
+** Removed <code>type</code> parameter for wrappers in <code>Masks</code> static methods, <code>BoolType</code> by default
+
+=== ImageJ-OMERO - (Alison Walter, Josh Moore) ===
+* Added integration test structure ({{GitHub | org=imagej | repo=imagej-omero | pr=69 | label=imagej/imagej-omero#69}})
+* Began adding integration tests ({{GitHub | org=imagej | repo=imagej-omero | pr=70 | label=imagej/imagej-omero#70}})
+* Discussed ROI support and ROI conversions
+
 [[Category:News]]
