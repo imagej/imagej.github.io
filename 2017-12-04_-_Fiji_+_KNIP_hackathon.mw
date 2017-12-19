@@ -141,4 +141,13 @@ We discussed opportunities to improvement for the Bdv design:
 * Revived code for controlling filter wheels and deformable mirrors
 * Merged changes from Max to ClearControl-lightsheet preparing his time stepping procedures
 
+=== ImgLib2 IJ - (Matthias Arzt) ===
+
+* Add a wrapper for IJ1 VirtualStack, based on imglib2-caches to support large virtual stacks. ({{GitHub | org=imglib | repo=imglib2-ij | pr=12 | label=imglib/imglib2-ij#12}})
+* Refactored, wrappers for ImagePlus ({{GitHub | org=imglib | repo=imglib2-ij | pr=11 | label=imglib/imglib2-ij#12}})
+
+=== Labkit - (Matthias Arzt) ===
+* Improved Usability of the Labkit plugin. ({{GitHub | org=maarzt | repo=imglib2-labkit | label=maarzt/imglib2-labkit}})
+* Benchmark of different sparse ROI implementations.
+
 [[Category:News]]
