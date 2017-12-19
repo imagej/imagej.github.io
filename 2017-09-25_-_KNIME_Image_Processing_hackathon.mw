@@ -57,6 +57,8 @@ There was a big focus this time on machine learning, particularly deep learning 
 * Worked on reviewing and integrating "dynamic bookmarks" feature by [https://github.com/maxkleinhenz/bigdataviewer-core Max Kleinhenz] into BigDataViewer.
 * Minor BigDataViewer features to help {{Person|tibuch}} with [https://github.com/knime-ip/knip-bdv Big Data Viewer GUI].
 
+=== Matthias Arzt ===
+
 == Technical discussions ==
 
 * Fiji component and application releases: today and in the future ({{Person|ctrueden}}, {{Person|fjug}}, {{Person|tpietzsch}})
