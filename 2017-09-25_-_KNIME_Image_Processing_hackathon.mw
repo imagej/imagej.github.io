@@ -59,6 +59,11 @@ There was a big focus this time on machine learning, particularly deep learning 
 
 === Matthias Arzt ===
 
+* Worked on revamp of the scijava logging framework.
+* Worked on LoopBuilder, as tool for writing loops on images with imglib2.
+* Got an introduction on KNIME Node development by Tim Oliver and Stefan Hilfrich
+* Created a KNIME image processing plugin for image segmentation based on Labkit / Trainable Segmentation.
+
 == Technical discussions ==
 
 * Fiji component and application releases: today and in the future ({{Person|ctrueden}}, {{Person|fjug}}, {{Person|tpietzsch}})
