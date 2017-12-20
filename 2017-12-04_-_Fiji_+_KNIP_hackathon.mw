@@ -162,4 +162,21 @@ We discussed opportunities to improvement for the Bdv design:
 * Began adding integration tests ({{GitHub | org=imagej | repo=imagej-omero | pr=70 | label=imagej/imagej-omero#70}})
 * Discussed ROI support and ROI conversions
 
+=== BigCAT (Philipp Hanslovsky) ===
+* [https://github.com/saalfeldlab/bigcat/commits/javafx-generic-listeners relevant bigcat branch]
+* Added Painting Functionality
+** Multi-scale WIP
+** Used for dense annotations but can be used for label creation for classifier training
+* Added open dialogs for N5 and HDF5
+** Auto-discovery
+** Channels
+** Time series
+** multi-scale
+** User guidance in case of invalid input
+* Created a mock server to access local file system through http rest api
+** [https://github.com/hanslovsky/n5-rest hanslovsky/n5-rest]
+* Confirmed time series and multi-channel capabilities
+* Connected to ilastik backend (Dominik Kutra, Carsten Haubold)
+* Tried to re-introduce scenery for 3D rendering together with {{Person|Skalarproduktraum}} (WIP)
+
 [[Category:News]]
