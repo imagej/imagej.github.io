@@ -21,7 +21,7 @@ Classic Image Processing (CIP) is an image procesing toolbox which provides func
 
 Link to function user documentation are provided in the table below.
 
-{|
+{| class="wikitable"
 |- 
 ! Format
 ! Filter
