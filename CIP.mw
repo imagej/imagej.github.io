@@ -23,16 +23,22 @@ Link to function user documentation are provided in the table below.
 
 {| class="wikitable"
 |- 
-! Format
 ! Filter
-! Math
 ! Segmentation
+! Format
+! Math
 ! Utilities
 |- 
+| [[CIP Filter#gauss|gauss]]
+| [[CIP Segmentation#threshold|threshold]]
 | [[CIP Format#create|create]] 
-| [[CIP Filter#gaussian|gaussian]]
 | [[CIP Math#add|add]]
-| [[CIP Segmentation#gaussian|gaussian]]
+| [[CIP Utilities#measure|measure]]
+|- 
+| [[CIP Filter#erosion|erosion]]
+| [[CIP Segmentation#maxima|maxima]]
+| [[CIP Format#duplicate|duplicate]] 
+| [[CIP Math#sub|sub]]
 | [[CIP Utilities#show|show]]
 |}
 
