@@ -37,15 +37,18 @@ If you want to use CIP in your ImageJ script simply add the CIP update site to y
 To look into the source compilation and installation I invite you to look on the [https://github.com/benoalo/CIP github repository] of the project
 
 
+
+=Sample scripts=
+
+I will link the example script from the githu repo very soon
+
+
+
 =Cite=
+
 
 
 
 =History=
 
 * 2017-12-20 : version 0.1.0 , first alpha version of CIP is made available on CIP  update site
-
-
-=Sample scripts=
-
-I will link the example script from the githu repo very soon
