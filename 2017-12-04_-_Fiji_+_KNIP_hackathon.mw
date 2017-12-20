@@ -179,4 +179,11 @@ We discussed opportunities to improvement for the Bdv design:
 * Connected to ilastik backend (Dominik Kutra, Carsten Haubold)
 * Tried to re-introduce scenery for 3D rendering together with {{Person|Skalarproduktraum}} (WIP)
 
+=== scyjava & imglyb (Philipp Hanslovsky, Curtis Rueden) ===
+* Made plan to separate Java and Python code in imglyb
+* Created [https://github.com/scijava/scyjava scyjava] python wrapper around [https://github.com/kivy/pyjnius pyjnius] to allow for runtime resolution of jars/classes that are not on the classpath yet.
+** For now: Facilitiate groovy grape, might switch to more generic scijava-grab library later on.
+** Removes fat jar requirement of imglyb and will make it easier to distribute
+** Currently WIP as jnius.autoclass does not accept custom class loaders as parameter: ({{GitHub | org=kivy | repo=pyjnius | issue=316 | label=kivy/pyjnius#70}})
+
 [[Category:News]]
