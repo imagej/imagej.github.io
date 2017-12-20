@@ -1,7 +1,11 @@
 
 = CIP : Classic Image Processing =
 
-Classic Image Processing (CIP) is an image procesing toolbox which provides functions for scripting in ImageJ. Its principal goal is to facilitate image analysis workflow construction as well as to provide an accessible entry point to learn the programming of such workflow. CIP philosophy is to integrate users concerns at the center of its design which reflects in its [[CIP#Phylosophy |main features]]: '''Integration''' to ImageJ ecosystem, functionalities '''Discoverability''', '''Simplicity''' of use and '''Essential''' set of tools
+Classic Image Processing (CIP) is an image procesing toolbox which provides functions for scripting in ImageJ. Its principal goal is to facilitate image analysis workflow construction as well as to provide an accessible entry point to learn the programming of such workflow. CIP philosophy is to integrate users concerns at the center of its design which reflects in its [[CIP#Phylosophy |main features]]:
+* '''Integration''' to ImageJ ecosystem,
+* '''Discoverability''' of its functionnalities,
+* '''Simplicity''' of use and
+* '''Essential''' set of tools
 
 =Tools category=
 
