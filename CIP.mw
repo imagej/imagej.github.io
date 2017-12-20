@@ -18,7 +18,7 @@ Classic Image Processing (CIP) is an image procesing toolbox which provides func
 * '''Utilies''':
 
 
-==Philosophy==
+=Philosophy=
 
 CIP philosophy is to integrate users concerns at the center of its design which reflects in its main features:
 
@@ -28,8 +28,7 @@ CIP philosophy is to integrate users concerns at the center of its design which 
 
 * '''Simplicity''' of use: Learning programming is demanding, that why CIP hides some of its difficulty. for instance CIP requires no class and package import. It Also manipulates only 3 specific data type (Image, Region and Table) avoiding the need for complex data structure. Finally, CIP functions never modifies there input parameters so you always know what is happening to your data.
 
-* An '''essential''' set of tools: CIP gathers the 10% of tools that will do 90% of the job done allowing one to go straight to his analysis goal. All the function selected are also already adopted by the community, avoiding specialized variant that could be confusing for novice users. Finally, for completeness CIP provides basic visualisation and measure tool allowing one to code full pipeline without requiring additionnal toolset. 
-
+* An '''essential''' set of tools: CIP gathers the 10% of tools that will do 90% of the job done allowing one to go straight to his analysis goal. All the function selected are also already adopted by the community, avoiding specialized variant that could be confusing for novice users. Finally, for completeness CIP provides basic visualisation and measure tool allowing one to code full pipeline without requiring additionnal toolset.
 
 =Installation=
 
