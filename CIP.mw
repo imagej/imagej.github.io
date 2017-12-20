@@ -2,10 +2,14 @@
 = CIP : Classic Image Processing =
 
 Classic Image Processing (CIP) is an image procesing toolbox which provides functions for scripting in ImageJ. Its principal goal is to facilitate image analysis workflow construction as well as to provide an accessible entry point to learn the programming of such workflow. CIP philosophy is to integrate users concerns at the center of its design which reflects in its [[CIP#Phylosophy |main features]]:
-* '''Integration''' to ImageJ ecosystem,
-* '''Discoverability''' of its functionnalities,
-* '''Simplicity''' of use and
-* '''Essential''' set of tools
+
+* '''Integration''' to ImageJ ecosystem: CIP can be easily used in combination other ImageJ1 and ImageJ2 plugins. For instance, it can process seamlessly all usual imageJ image type (ImagePlus, Dataset, ImgPlus, Img) wihtout requiring any conversion.
+
+* '''Discoverability''' of its functionnalities: CIP provides a complete user documentation that explain function usage, details their parameters and provides simple examples. Function parameters can be named or made optionnal while similar functions will have similar signatures to allow more intuitive learning. For the same reason the same functions are used for 2D and 3D images. 
+
+* '''Simplicity''' of use: Learning programming is demanding, that why CIP hides some of its difficulty. for instance CIP requires no class and package import. It Also manipulates only 3 specific data type (Image, Region and Table) avoiding the need for complex data structure. Finally, CIP functions never modifies there input parameters so you always know what is happening to your data.
+
+* An '''essential''' set of tools: CIP gathers the 10% of tools that will do 90% of the job done allowing one to go straight to his analysis goal. All the function selected are also already adopted by the community, avoiding specialized variant that could be confusing for novice users. Finally, for completeness CIP provides basic visualisation and measure tool allowing one to code full pipeline without requiring additionnal toolset.
 
 =Tools category=
 
@@ -15,18 +19,8 @@ Classic Image Processing (CIP) is an image procesing toolbox which provides func
 * '''Segmentation'''
 * '''Utilies''':
 
+Link to function user documentation are provided in the table below.
 
-=Philosophy=
-
-CIP philosophy is to integrate users concerns at the center of its design which reflects in its main features:
-
-* '''Integration''' to ImageJ ecosystem: CIP can be easily used in combination other ImageJ1 and ImageJ2 plugins. For instance, it can process seamlessly all usual imageJ image type (ImagePlus, Dataset, ImgPlus, Img) wihtout requiring any conversion.
-
-* '''Discoverability''' of its functionnalities: CIP provides a complete user documentation that explain function usage, details their parameters and provides simple examples. Function parameters can be named or made optionnal while similar functions will have similar signatures to allow more intuitive learning. For the same reason the same functions are used for 2D and 3D images. 
-
-* '''Simplicity''' of use: Learning programming is demanding, that why CIP hides some of its difficulty. for instance CIP requires no class and package import. It Also manipulates only 3 specific data type (Image, Region and Table) avoiding the need for complex data structure. Finally, CIP functions never modifies there input parameters so you always know what is happening to your data.
-
-* An '''essential''' set of tools: CIP gathers the 10% of tools that will do 90% of the job done allowing one to go straight to his analysis goal. All the function selected are also already adopted by the community, avoiding specialized variant that could be confusing for novice users. Finally, for completeness CIP provides basic visualisation and measure tool allowing one to code full pipeline without requiring additionnal toolset.
 
 =Installation=
 
@@ -46,7 +40,11 @@ I will link the example script from the githu repo very soon
 
 
 
-
 =History=
 
 * 2017-12-20 : version 0.1.0 , first alpha version of CIP is made available on CIP  update site
+
+
+=Development plan=
+
+This setion provide the main development directions as well as a list of functions that we intend to implement per category
