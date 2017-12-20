@@ -21,6 +21,20 @@ Classic Image Processing (CIP) is an image procesing toolbox which provides func
 
 Link to function user documentation are provided in the table below.
 
+{|
+|- 
+! Format
+! Filter
+! Math
+! Segmentation
+! Utilities
+|- 
+| [[CIP Format#create|create]] 
+| [[CIP Filter#gaussian|gaussian]]
+| [[CIP Math#add|add]]
+| [[CIP Segmentation#gaussian|gaussian]]
+| [[CIP Utilities#show|show]]
+|}
 
 =Installation=
 
