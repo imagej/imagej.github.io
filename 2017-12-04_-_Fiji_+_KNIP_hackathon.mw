@@ -186,4 +186,15 @@ We discussed opportunities to improvement for the Bdv design:
 ** Removes fat jar requirement of imglyb and will make it easier to distribute
 ** Currently WIP as jnius.autoclass does not accept custom class loaders as parameter: ({{GitHub | org=kivy | repo=pyjnius | issue=316 | label=kivy/pyjnius#70}})
 
+=== Image Sequence Registration Plugin (Christian Tischer) ===
+* Wrote an ImageJ2 plugin for image sequence registration
+* Source code on [https://github.com/tischi/fiji-plugin-imageRegistration github] 
+* Installation via new Fiji Update site EMBL-CBA
+* The code is written such that additional registration modalities can be readily added
+* Current functionality
+** Accepts N-dimensional input, allowing the user to select which axes to register
+** Translational registration using phase-correlation
+** Translational and rotational registration, using phase-correlation for translation and "brute-force" testing of all rotations within user specified range
+** Region of interest selection 
+
 [[Category:News]]
