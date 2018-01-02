@@ -1,7 +1,11 @@
 =gauss=
 
+gauss creates a gaussian blurred image. it is often use to remove the small scale details of an image.
 
-===Input/Output===
+
+===Usage===
+
+outputImage = cip.gauss( <u>inputImage<\u> , <u>radius<\u> , boundary , pixelSize )
 
 ===Example===
 
