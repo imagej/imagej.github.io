@@ -49,43 +49,44 @@ Link to function user documentation are provided in the table below.
 | [[CIP Segmentation#watershed|watershed]]
 | [[CIP Format#slice|slice]]
 | [[CIP Math#mul|mul]]
-| '''...'''
+| [[CIP Utilities#region|region]]
 |- 
 | [[CIP Filter#opening|opening]]
 | [[CIP Segmentation#label|label]]
 | [[CIP Format#project|project]]
 | [[CIP Math#div|div]]
-| '''...'''
+| [[CIP Utilities#toIJ1|toIJ1]]
 |- 
 | [[CIP Filter#closing|closing]]
 | skeleton
 | concatenate
 | [[CIP Math#sin|sin]]
-| '''...'''
+| [[CIP Utilities#toIJ2|toIJ2]]
 |- 
 | [[CIP Filter#tophat|tophat]]
 | edge
 | '''...'''
 | [[CIP Math#cos|cos]], [[CIP Math#sin|sin]], [[CIP Math#tan|tan]], [[CIP Math#acos|acos]], [[CIP Math#asin|asin]], [[CIP Math#atan|atan]]
-| '''...'''
+| | [[CIP Utilities#spacing|spacing]]
+
 |- 
 | [[CIP Filter#distance|distance]]
 | '''...'''
 | '''...'''
 | [[CIP Math#pow|pow]], [[CIP Math#sqrt|sqrt]]
-| '''...'''
+| [[CIP Utilities#unit|unit]]
 |- 
 | [[CIP Filter#median|median]]
 | '''...'''
 | '''...'''
 | [[CIP Math#floor|floor]], [[CIP Math#ceil|ceil]], [[CIP Math#round|round]]
-| '''...'''
+| [[CIP Utilities#axes|axes]]
 |- 
 | [[CIP Filter#invert|invert]]
 | '''...'''
 | '''...'''
 | [[CIP Math#log|log]], [[CIP Math#exp|exp]]
-| '''...'''
+| [[CIP Utilities#list|list]]
 |- 
 | gradient
 | '''...'''
