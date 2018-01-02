@@ -48,49 +48,55 @@ Link to function user documentation are provided in the table below.
 | [[CIP Filter#dilation|dilation]]
 | [[CIP Segmentation#watershed|watershed]]
 | [[CIP Format#slice|slice]]
-| '''...'''
+| [[CIP Math#mul|mul]]
 | '''...'''
 |- 
 | [[CIP Filter#opening|opening]]
-| edge
+| [[CIP Segmentation#label|label]]
 | [[CIP Format#project|project]]
-| '''...'''
+| [[CIP Math#div|div]]
 | '''...'''
 |- 
 | [[CIP Filter#closing|closing]]
 | skeleton
 | concatenate
-| '''...'''
+| [[CIP Math#sin|sin]]
 | '''...'''
 |- 
 | [[CIP Filter#tophat|tophat]]
+| edge
 | '''...'''
-| '''...'''
-| '''...'''
+| [[CIP Math#cos|cos]], [[CIP Math#sin|sin]], [[CIP Math#tan|tan]], [[CIP Math#acos|acos]], [[CIP Math#asin|asin]], [[CIP Math#atan|atan]]
 | '''...'''
 |- 
 | [[CIP Filter#distance|distance]]
 | '''...'''
 | '''...'''
-| '''...'''
+| [[CIP Math#pow|pow]], [[CIP Math#sqrt|sqrt]]
 | '''...'''
 |- 
 | [[CIP Filter#median|median]]
 | '''...'''
 | '''...'''
+| [[CIP Math#floor|floor]], [[CIP Math#ceil|ceil]], [[CIP Math#round|round]]
 | '''...'''
+|- 
+| [[CIP Filter#invert|invert]]
+| '''...'''
+| '''...'''
+| [[CIP Math#log|log]], [[CIP Math#exp|exp]]
 | '''...'''
 |- 
 | gradient
 | '''...'''
 | '''...'''
-| '''...'''
+| [[CIP Math#sign|sign]], [[CIP Math#abs|abs]]
 | '''...'''
 |- 
 | laplacian
 | '''...'''
 | '''...'''
-| '''...'''
+| [[CIP Math#min|min]], [[CIP Math#max|max]]
 | '''...'''
 |- 
 | hessian
