@@ -5,16 +5,17 @@ gauss creates a gaussian blurred image. it is often use to remove the small scal
 
 ===Usage===
 
-outputImage = '''cip.gauss'''( <u>inputImage</u> , <u>radius</u> , boundary , pixelSize )
+<code>outputImage = '''cip.gauss'''( <u>inputImage</u> , <u>radius</u> , boundary , pixelSize )</code>
 
 
-Input
-* inputImage
-* radius
-* boundary
-* pixelSize
-Ouput
-* outputImage
+;Input
+:inputImage
+:radius
+:boundary
+:pixelSize
+
+;Ouput
+:outputImage
 
 ===Example===
 
