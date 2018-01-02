@@ -45,7 +45,61 @@ Link to function user documentation are provided in the table below.
 | [[CIP Math#sub|sub]]
 | [[CIP Utilities#show|show]]
 |- 
+| '''[[CIP Filter#dilation|dilation]]'''
 | '''...'''
+| '''...'''
+| '''...'''
+| '''...'''
+|- 
+| '''[[CIP Filter#opening|opening]]'''
+| '''...'''
+| '''...'''
+| '''...'''
+| '''...'''
+|- 
+| '''[[CIP Filter#closing|closing]]'''
+| '''...'''
+| '''...'''
+| '''...'''
+| '''...'''
+|- 
+| '''[[CIP Filter#tophat|tophat]]'''
+| '''...'''
+| '''...'''
+| '''...'''
+| '''...'''
+|- 
+| '''[[CIP Filter#distance|distance]]'''
+| '''...'''
+| '''...'''
+| '''...'''
+| '''...'''
+|- 
+| '''[[CIP Filter#median|median]]'''
+| '''...'''
+| '''...'''
+| '''...'''
+| '''...'''
+|- 
+| [[CIP Filter#gradient|gradient]]
+| '''...'''
+| '''...'''
+| '''...'''
+| '''...'''
+|- 
+| [[CIP Filter#laplacian|laplacian]]
+| '''...'''
+| '''...'''
+| '''...'''
+| '''...'''
+|- 
+| [[CIP Filter#hessian|hessian]]
+| '''...'''
+| '''...'''
+| '''...'''
+| '''...'''
+|- 
+| [[CIP Filter#fillholes|fillholes]]
 | '''...'''
 | '''...'''
 | '''...'''
