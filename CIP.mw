@@ -46,19 +46,19 @@ Link to function user documentation are provided in the table below.
 | [[CIP Utilities#show|show]]
 |- 
 | [[CIP Filter#dilation|dilation]]
-| '''...'''
+| [[CIP Segmentation#watershed|watershed]]
 | '''...'''
 | '''...'''
 | '''...'''
 |- 
 | [[CIP Filter#opening|opening]]
-| '''...'''
+| edge
 | '''...'''
 | '''...'''
 | '''...'''
 |- 
 | [[CIP Filter#closing|closing]]
-| '''...'''
+| skeleton
 | '''...'''
 | '''...'''
 | '''...'''
