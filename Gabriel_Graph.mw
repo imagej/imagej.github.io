@@ -15,11 +15,11 @@
 Gabriel Graph Implementation for ImageJ/Fiji
 See https://en.wikipedia.org/wiki/Gabriel_graph for implementation
 
-[[File:Gabriel_Graph_Dialog.png]]
+[[File:Gabriel_Graph_Dialog.png|200px|thumb|right]]
 
 == Details ==
 The algorithm goes through each pair of points and looks for the shortest distance between two points that does not contain any other point within the circle whose diameter is defined by the two points being queried.
-It is built to run in parallel as per the implementation of [http://albert.rierol.net/imagej_programming_tutorials.html#Multithreaded programming for ImageJ|Alber Cardona's ImageJ Tutorials]
+It is built to run in parallel as per the implementation of [http://albert.rierol.net/imagej_programming_tutorials.html Albert Cardona's ImageJ Tutorials]
 
 
 == Use ==
@@ -31,7 +31,7 @@ If selected, it will create a new results table with each point, its computed ne
 
 If selected, it will overlay the Gabriel Graph onto the image.
 
-[[File:Gabriel_Graph_Processing_Example.png|thumb|width=400|right|Result of Plugin on  image]]
+[[File:Gabriel_Graph_Processing_Example.png|400px|thumb|right|Result of Plugin on  image]]
 
 == Macro Recordable ==
 
