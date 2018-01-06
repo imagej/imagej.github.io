@@ -69,7 +69,26 @@ CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/
 
 =opening=
 
+This filter performs an erosion followed by a dilation. It erases small and thin  objects.
 
+<code>outputImage = '''cip.opening'''( '''inputImage*''' , '''radius*''' , '''shape''', '''boundary''' ,'''output''', '''pixelSize''')</code>
+
+;Input
+:'''inputImage*''' : the image process
+:'''radius*''' : a integer or list of integer representing the half size of the filter window along the image axis.
+:'''shape''' : a string in {'<u>rectangle</u>', 'disk'} describing the shape of the window used for the processing.
+:'''boundary''' : a string in {'min', 'max', 'same', '<u>mirror</u>', 'periodic'}, default is mirror
+:'''output''' : a string in {<u>'same'</u>, 'full'} describing whether the output can be modified by the filter, 'full', or not, 'same'.
+:'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
+
+;Ouput
+:outputImage: the processed image.
+
+===Example===
+
+===Implementation===
+
+CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Opening.java imglib2 dilation class] from the morphology package.
 
 =closing=
 
