@@ -7,7 +7,7 @@ __NOTOC__
 gauss creates a gaussian blurred image. it convolves the image with a gaussian weighted window. Gaussian blurring is commonly used for image denoising as it smoothes out small details.
 
 
-<code>outputImage = '''cip.gauss'''( '''inputImage*''' , '''radius*''' , '''boundary''' , '''pixelSize''' )</code>
+<code>'''outputImage = cip.gauss( inputImage* , radius* , boundary , pixelSize)'''</code>
 
 ;Input
 :'''inputImage*''' : the image process
@@ -16,7 +16,7 @@ gauss creates a gaussian blurred image. it convolves the image with a gaussian w
 :'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
 
 ;Ouput
-:outputImage: the processed image. it always as the same size as the input image.
+:'''outputImage''': the processed image. it always as the same size as the input image.
 
 ===Example===
 
