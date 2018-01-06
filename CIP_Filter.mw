@@ -2,13 +2,13 @@
 
 gauss creates a gaussian blurred image. it is often use to remove the small scale details of an image.
 
-<code>outputImage = '''cip.gauss'''( '''inputImage*''' , '''radius*''' , boundary , pixelSize )</code>
+<code>outputImage = '''cip.gauss'''( '''inputImage*''' , '''radius*''' , '''boundary''' , '''pixelSize''' )</code>
 
 ;Input
 :'''inputImage*''' : the image process
 :'''radius*''' : a scalar or list of scalar representing the standard deviation of the gaussian kernel standard deviation along the image axis
-:boundary : a string in {'min', 'max', 'same', 'zero', '<u>mirror</u>', 'periodic'}, default is mirror
-:pixelSize : a scalar or list of scalar along image dimension. pixel size default to 1.
+:'''boundary''' : a string in {'min', 'max', 'same', 'zero', '<u>mirror</u>', 'periodic'}, default is mirror
+:'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
 
 ;Ouput
 :outputImage: the processed image. it always as the same size as the input image.
