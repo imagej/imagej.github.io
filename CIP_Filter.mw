@@ -13,7 +13,8 @@ gauss creates a gaussian blurred image. it is often use to remove the small scal
 ;Ouput
 :outputImage
 
-===Example===
+===Usage===
+Gaussian blurring is commonly used for image denoising.
 
 ===Implementation===
 
