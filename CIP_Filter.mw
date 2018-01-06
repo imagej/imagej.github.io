@@ -1,6 +1,7 @@
 =gauss=
 
-gauss creates a gaussian blurred image. it is often use to remove the small scale details of an image.
+gauss creates a gaussian blurred image. it convolves the image with a gaussian weighted wondow. Gaussian blurring is commonly used for image denoising as it smoothes out small details.
+
 
 <code>outputImage = '''cip.gauss'''( '''inputImage*''' , '''radius*''' , '''boundary''' , '''pixelSize''' )</code>
 
@@ -13,8 +14,8 @@ gauss creates a gaussian blurred image. it is often use to remove the small scal
 ;Ouput
 :outputImage: the processed image. it always as the same size as the input image.
 
-===Usage===
-Gaussian blurring is commonly used for image denoising.
+===Example===
+
 
 ===Implementation===
 CIP gauss implementation wraps the gauss ops, itself relying on the [https://github.com/imglib/imglib2-algorithm/tree/master/src/main/java/net/imglib2/algorithm/gauss3 imglib2 gauss3 implementation].
