@@ -1,4 +1,4 @@
-{{TOC|limit=2}}
+{{TOC|limit=1}}
 
 
 =gauss=
@@ -95,7 +95,7 @@ CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/
 
 This filter performs a dilation followed by an erosion. It closes small holes and thin gaps between or inside objects.
 
-<code>outputImage = '''cip.closing'''( '''inputImage*''' , '''radius*''' , '''shape''', '''boundary''' ,'''output''', '''pixelSize''')</code>
+<code>'''outputImage = cip.closing( inputImage* , radius* , shape, boundary, output, pixelSize)'''</code>
 
 ;Input
 :'''inputImage*''' : the image process
@@ -108,14 +108,27 @@ This filter performs a dilation followed by an erosion. It closes small holes an
 ;Ouput
 :'''outputImage''': the processed image.
 
-===Example===
 
-===Implementation===
-
-CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Closing.java imglib2 Closing class] from the morphology package.
 
 
 =tophat=
+
+This filter subtract an oping of the input image to the input image. It removes  object larger than the user selected radius in image while keeping smaller scale details.
+
+<code>'''outputImage = cip.closing(inputImage*, radius*, shape, boundary, output, pixelSize)'''</code>
+
+;Input
+:'''inputImage*''' : the image process
+:'''radius*''' : a integer or list of integer representing the half size of the filter window along the image axis.
+:'''shape''' : a string in {'<u>rectangle</u>', 'disk'} describing the shape of the window used for the processing.
+:'''boundary''' : a string in {'min', 'max', 'same', '<u>mirror</u>', 'periodic'}, default is mirror
+:'''output''' : a string in {<u>'same'</u>, 'full'} describing whether the output can be modified by the filter, 'full', or not, 'same'.
+:'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
+
+;Ouput
+:'''outputImage''': the processed image.
+
+
 
 =distance=
 
