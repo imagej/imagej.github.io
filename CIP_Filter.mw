@@ -14,7 +14,7 @@ gauss creates a gaussian blurred image. it convolves the image with a gaussian w
 :'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
 
 ;Ouput
-:outputImage: the processed image. it always as the same size as the input image.
+:'''outputImage''': the processed image. it always as the same size as the input image.
 
 ===Example===
 
@@ -37,12 +37,12 @@ erosion shrinks the region in an image by a certain radius. It works both with b
 :'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
 
 ;Ouput
-:outputImage: the processed image.
+:'''outputImage''': the processed image.
 
 ===Example===
 
 ===Implementation===
-CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Erosion.java imglib2 erosion class] from the morphology package.
+CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Erosion.java imglib2 Erosion class] from the morphology package.
 
 
 =dilate=
@@ -60,12 +60,12 @@ this filter dilate the region in an image by a certain radius. It works both wit
 :'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
 
 ;Ouput
-:outputImage: the processed image.
+:'''outputImage''': the processed image.
 
 ===Example===
 
 ===Implementation===
-CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Dilation.java imglib2 dilation class] from the morphology package.
+CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Dilation.java imglib2 Dilation class] from the morphology package.
 
 =opening=
 
@@ -82,15 +82,38 @@ This filter performs an erosion followed by a dilation. It erases small and thin
 :'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
 
 ;Ouput
-:outputImage: the processed image.
+:'''outputImage''': the processed image.
 
 ===Example===
 
 ===Implementation===
 
-CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Opening.java imglib2 dilation class] from the morphology package.
+CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Opening.java imglib2 Opening class] from the morphology package.
+
 
 =closing=
+
+This filter performs a dilation followed by an erosion. It closes small holes and thin gaps between or inside objects.
+
+<code>outputImage = '''cip.closing'''( '''inputImage*''' , '''radius*''' , '''shape''', '''boundary''' ,'''output''', '''pixelSize''')</code>
+
+;Input
+:'''inputImage*''' : the image process
+:'''radius*''' : a integer or list of integer representing the half size of the filter window along the image axis.
+:'''shape''' : a string in {'<u>rectangle</u>', 'disk'} describing the shape of the window used for the processing.
+:'''boundary''' : a string in {'min', 'max', 'same', '<u>mirror</u>', 'periodic'}, default is mirror
+:'''output''' : a string in {<u>'same'</u>, 'full'} describing whether the output can be modified by the filter, 'full', or not, 'same'.
+:'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
+
+;Ouput
+:'''outputImage''': the processed image.
+
+===Example===
+
+===Implementation===
+
+CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Closing.java imglib2 Closing class] from the morphology package.
+
 
 =tophat=
 
