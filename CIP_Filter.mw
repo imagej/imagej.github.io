@@ -7,18 +7,18 @@ gauss creates a gaussian blurred image. it convolves the image with a gaussian w
 
 <code>outputImage = '''cip.gauss'''( '''inputImage*''' , '''radius*''' , '''boundary''' , '''pixelSize''' )</code>
 
-;Input
+;<span style="font-size:115%">'''Input'''</span>
 :'''inputImage*''' : the image process
 :'''radius*''' : a scalar or list of scalar representing the standard deviation of the gaussian kernel standard deviation along the image axis
 :'''boundary''' : a string in {'min', 'max', 'same', 'zero', '<u>mirror</u>', 'periodic'}, default is mirror
 :'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
 
-;Ouput
+;<span style="font-size:115%">'''Output'''</span>
 :'''outputImage''': the processed image. it always as the same size as the input image.
 
-===Example===
 
-===Implementation===
+<span style="font-size:115%">Implementation</span>
+
 CIP gauss implementation wraps the gauss ops, itself relying on the [https://github.com/imglib/imglib2-algorithm/tree/master/src/main/java/net/imglib2/algorithm/gauss3 imglib2 gauss3 implementation].
 
 
@@ -28,7 +28,7 @@ erosion shrinks the region in an image by a certain radius. It works both with b
 
 <code>outputImage = '''cip.erode'''( '''inputImage*''' , '''radius*''' , '''shape''', '''boundary''' ,'''output''', '''pixelSize''')</code>
 
-;Input
+;<span style="font-size:115%">'''Input'''</span>
 :'''inputImage*''' : the image process
 :'''radius*''' : a integer or list of integer representing the half size of the filter window along the image axis.
 :'''shape''' : a string in {'<u>rectangle</u>', 'disk'} describing the shape of the window used for the processing.
@@ -36,12 +36,11 @@ erosion shrinks the region in an image by a certain radius. It works both with b
 :'''output''' : a string in {<u>'same'</u>, 'full'} describing whether the output can be modified by the filter, 'full', or not, 'same'.
 :'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
 
-;Ouput
+;<span style="font-size:115%">'''Output'''</span>
 :'''outputImage''': the processed image.
 
-===Example===
+;<span style="font-size:115%">'''Implementation'''</span>
 
-===Implementation===
 CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Erosion.java imglib2 Erosion class] from the morphology package.
 
 
@@ -51,7 +50,7 @@ this filter dilate the region in an image by a certain radius. It works both wit
 
 <code>outputImage = '''cip.dilate'''( '''inputImage*''' , '''radius*''' , '''shape''', '''boundary''' ,'''output''', '''pixelSize''')</code>
 
-;Input
+;<span style="font-size:115%">'''Input'''</span>
 :'''inputImage*''' : the image process
 :'''radius*''' : a integer or list of integer representing the half size of the filter window along the image axis.
 :'''shape''' : a string in {'<u>rectangle</u>', 'disk'} describing the shape of the window used for the processing.
@@ -59,12 +58,11 @@ this filter dilate the region in an image by a certain radius. It works both wit
 :'''output''' : a string in {<u>'same'</u>, 'full'} describing whether the output can be modified by the filter, 'full', or not, 'same'.
 :'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
 
-;Ouput
+;<span style="font-size:115%">'''Output'''</span>
 :'''outputImage''': the processed image.
 
-===Example===
+;<span style="font-size:115%">'''Implementation'''</span>
 
-===Implementation===
 CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Dilation.java imglib2 Dilation class] from the morphology package.
 
 =opening=
@@ -73,7 +71,7 @@ This filter performs an erosion followed by a dilation. It erases small and thin
 
 <code>outputImage = '''cip.opening'''( '''inputImage*''' , '''radius*''' , '''shape''', '''boundary''' ,'''output''', '''pixelSize''')</code>
 
-;Input
+;<span style="font-size:115%">'''Input'''</span>
 :'''inputImage*''' : the image process
 :'''radius*''' : a integer or list of integer representing the half size of the filter window along the image axis.
 :'''shape''' : a string in {'<u>rectangle</u>', 'disk'} describing the shape of the window used for the processing.
@@ -81,12 +79,10 @@ This filter performs an erosion followed by a dilation. It erases small and thin
 :'''output''' : a string in {<u>'same'</u>, 'full'} describing whether the output can be modified by the filter, 'full', or not, 'same'.
 :'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
 
-;Ouput
+;<span style="font-size:115%">'''Output'''</span>
 :'''outputImage''': the processed image.
 
-===Example===
-
-===Implementation===
+;<span style="font-size:115%">'''Implementation'''</span>
 
 CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Opening.java imglib2 Opening class] from the morphology package.
 
@@ -97,7 +93,7 @@ This filter performs a dilation followed by an erosion. It closes small holes an
 
 <code>'''outputImage = cip.closing( inputImage* , radius* , shape, boundary, output, pixelSize)'''</code>
 
-;Input
+;<span style="font-size:115%">'''Input'''</span>
 :'''inputImage*''' : the image process
 :'''radius*''' : a integer or list of integer representing the half size of the filter window along the image axis.
 :'''shape''' : a string in {'<u>rectangle</u>', 'disk'} describing the shape of the window used for the processing.
@@ -105,7 +101,7 @@ This filter performs a dilation followed by an erosion. It closes small holes an
 :'''output''' : a string in {<u>'same'</u>, 'full'} describing whether the output can be modified by the filter, 'full', or not, 'same'.
 :'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
 
-;Ouput
+;<span style="font-size:115%">'''Output'''</span>
 :'''outputImage''': the processed image.
 
 
@@ -117,7 +113,7 @@ This filter subtract an oping of the input image to the input image. It removes 
 
 <code>'''outputImage = cip.closing(inputImage*, radius*, shape, boundary, output, pixelSize)'''</code>
 
-;Input
+;<span style="font-size:115%">'''Input'''</span>
 :'''inputImage*''' : the image process
 :'''radius*''' : a integer or list of integer representing the half size of the filter window along the image axis.
 :'''shape''' : a string in {'<u>rectangle</u>', 'disk'} describing the shape of the window used for the processing.
@@ -125,7 +121,7 @@ This filter subtract an oping of the input image to the input image. It removes 
 :'''output''' : a string in {<u>'same'</u>, 'full'} describing whether the output can be modified by the filter, 'full', or not, 'same'.
 :'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
 
-;Ouput
+;<span style="font-size:115%">'''Output'''</span>
 :'''outputImage''': the processed image.
 
 
