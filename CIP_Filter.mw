@@ -65,8 +65,7 @@ this filter dilate the region in an image by a certain radius. It works both wit
 ===Example===
 
 ===Implementation===
-CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Erosion.java imglib2 erosion class] from the morphology package.
-
+CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Dilation.java imglib2 dilation class] from the morphology package.
 
 =opening=
 
