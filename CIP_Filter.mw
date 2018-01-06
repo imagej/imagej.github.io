@@ -1,6 +1,6 @@
 =gauss=
 
-gauss creates a gaussian blurred image. it convolves the image with a gaussian weighted wondow. Gaussian blurring is commonly used for image denoising as it smoothes out small details.
+gauss creates a gaussian blurred image. it convolves the image with a gaussian weighted window. Gaussian blurring is commonly used for image denoising as it smoothes out small details.
 
 
 <code>outputImage = '''cip.gauss'''( '''inputImage*''' , '''radius*''' , '''boundary''' , '''pixelSize''' )</code>
