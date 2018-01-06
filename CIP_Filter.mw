@@ -1,6 +1,8 @@
+__TOC__
 
-
+<div class="toccolours mw-collapsible mw-collapsed">
 =gauss=
+<div class="mw-collapsible-content">
 
 gauss creates a gaussian blurred image. it convolves the image with a gaussian weighted window. Gaussian blurring is commonly used for image denoising as it smoothes out small details.
 
@@ -21,6 +23,9 @@ gauss creates a gaussian blurred image. it convolves the image with a gaussian w
 
 ===Implementation===
 CIP gauss implementation wraps the gauss ops, itself relying on the [https://github.com/imglib/imglib2-algorithm/tree/master/src/main/java/net/imglib2/algorithm/gauss3 imglib2 gauss3 implementation].
+
+</div>
+</div>
 
 =erode=
 
