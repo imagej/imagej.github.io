@@ -1,13 +1,9 @@
-__NOTOC__
+{{TOC|limit=2}}
 
 
-<div class="toccolours mw-collapsible mw-collapsed">
 =gauss=
-<div class="mw-collapsible-content">
-
 
 gauss creates a gaussian blurred image. it convolves the image with a gaussian weighted window. Gaussian blurring is commonly used for image denoising as it smoothes out small details.
-
 
 <code>outputImage = '''cip.gauss'''( '''inputImage*''' , '''radius*''' , '''boundary''' , '''pixelSize''' )</code>
 
@@ -22,18 +18,15 @@ gauss creates a gaussian blurred image. it convolves the image with a gaussian w
 
 ===Example===
 
-
 ===Implementation===
 CIP gauss implementation wraps the gauss ops, itself relying on the [https://github.com/imglib/imglib2-algorithm/tree/master/src/main/java/net/imglib2/algorithm/gauss3 imglib2 gauss3 implementation].
 
-</div>
-</div>
 
 =erode=
 
 erosion shrinks the region in an image by a certain radius. It works both with binary and graylevel images. This effect is obtained by replacing each pixel value by the minimum value found in a window surrounding that pixel.
 
-<code>outputImage = '''cip.erode'''( '''inputImage*''' , '''radius*''' , '''shape''', '''boundary''' ,'''output''', '''pixelSize''', '''nthread''')</code>
+<code>outputImage = '''cip.erode'''( '''inputImage*''' , '''radius*''' , '''shape''', '''boundary''' ,'''output''', '''pixelSize''')</code>
 
 ;Input
 :'''inputImage*''' : the image process
@@ -44,17 +37,40 @@ erosion shrinks the region in an image by a certain radius. It works both with b
 :'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
 
 ;Ouput
-:outputImage: the processed image. it always as the same size as the input image.
+:outputImage: the processed image.
 
 ===Example===
-
 
 ===Implementation===
 CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Erosion.java imglib2 erosion class] from the morphology package.
 
-=dilation=
+
+=dilate=
+
+this filter dilate the region in an image by a certain radius. It works both with binary and graylevel images. This effect is obtained by replacing each pixel value by the maximum value found in a window surrounding that pixel.
+
+<code>outputImage = '''cip.dilat'''( '''inputImage*''' , '''radius*''' , '''shape''', '''boundary''' ,'''output''', '''pixelSize''')</code>
+
+;Input
+:'''inputImage*''' : the image process
+:'''radius*''' : a integer or list of integer representing the half size of the filter window along the image axis.
+:'''shape''' : a string in {'<u>rectangle</u>', 'disk'} describing the shape of the window used for the processing.
+:'''boundary''' : a string in {'min', 'max', 'same', '<u>mirror</u>', 'periodic'}, default is mirror
+:'''output''' : a string in {<u>'same'</u>, 'full'} describing whether the output can be modified by the filter, 'full', or not, 'same'.
+:'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
+
+;Ouput
+:outputImage: the processed image.
+
+===Example===
+
+===Implementation===
+CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Erosion.java imglib2 erosion class] from the morphology package.
+
 
 =opening=
+
+
 
 =closing=
 
