@@ -1,3 +1,5 @@
+{{toclimit|limit=1}}
+
 =gauss=
 
 gauss creates a gaussian blurred image. it convolves the image with a gaussian weighted window. Gaussian blurring is commonly used for image denoising as it smoothes out small details.
