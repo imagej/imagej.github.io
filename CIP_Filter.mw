@@ -49,7 +49,7 @@ CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/
 
 this filter dilate the region in an image by a certain radius. It works both with binary and graylevel images. This effect is obtained by replacing each pixel value by the maximum value found in a window surrounding that pixel.
 
-<code>outputImage = '''cip.dilat'''( '''inputImage*''' , '''radius*''' , '''shape''', '''boundary''' ,'''output''', '''pixelSize''')</code>
+<code>outputImage = '''cip.dilate'''( '''inputImage*''' , '''radius*''' , '''shape''', '''boundary''' ,'''output''', '''pixelSize''')</code>
 
 ;Input
 :'''inputImage*''' : the image process
