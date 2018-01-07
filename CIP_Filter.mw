@@ -149,4 +149,19 @@ This filter is used to denoise image. It is well suited to remove impulse noise.
 <span style="font-size:110%">'''Implementation'''</span><br>
 The function relies on ops that implement a brute force approach of the median filtering. It would be possible to implement more efficient approach using histogram and cord decomposition such ImageJ1 implementation for 2D image.
 
-=invert=
+='''invert'''=
+
+<span style="font-size:110%">'''Description'''</span><br>
+This function invert the gray value of the input image such that each pixel value I is replaced by max+min-I , where are min (resp max) are the minimum (resp maximum) intensity in the input image.
+
+<span style="font-size:110%">'''Signature'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.invert(inputImage*)</code>
+
+<span style="font-size:110%">'''Input'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''' : the image to process<br>
+
+<span style="font-size:110%">'''Output'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''outputImage''': the processed image.
+
+<span style="font-size:110%">'''Implementation'''</span><br>
+The function implementation uses ops map function
