@@ -107,10 +107,10 @@ The implementation successively applies CIP erosion and dilation functions.
 
 =tophat=
 
-<span style="font-size:115%">'''Output'''</span><br>
+<span style="font-size:115%">'''Description'''</span><br>
 This filter subtract an opening of the input image to the input image. It removes  object larger than the user selected radius in image while keeping smaller scale details.
 
-<span style="font-size:115%">'''Output'''</span><br>
+<span style="font-size:115%">'''Signature'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.closing(inputImage*, radius*, shape, boundary, output, pixelSize)</code>
 
 <span style="font-size:115%">'''Input'''</span><br>
