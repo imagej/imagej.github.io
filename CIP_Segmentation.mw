@@ -7,8 +7,9 @@ This page describes the segmentation function of the [[CIP|CIP scripting]] packa
 <span style="font-size:110%">'''Description'''</span><br>
 this function creates a binary image from an input graylevel image
 
-<span style="font-size:110%">'''Signature'''</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.threshold( inputImage* , threshold*)</code><br>
+<span style="font-size:110%">'''Signatures'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.threshold( inputImage* , threshold*)</code>
+
 &nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage, threshold = cip.threshold( inputImage* , method*, output)</code>
 
 <span style="font-size:110%">'''Input'''</span><br>
