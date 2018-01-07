@@ -42,25 +42,25 @@ Erosion shrinks the region in an image by a certain radius. It works both with b
 <span style="font-size:115%">'''Implementation'''</span><br>
 CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Erosion.java imglib2 Erosion class] from the morphology package.
 
-=dilate=
+='''dilate'''=
 
+<span style="font-size:110%">'''Description'''</span><br>
 this filter dilate the region in an image by a certain radius. It works both with binary and graylevel images. This effect is obtained by replacing each pixel value by the maximum value found in a window surrounding that pixel.
 
-<code>outputImage = cip.dilate( inputImage* , radius*, shape, boundary, output, pixelSize)</code>
+<span style="font-size:110%">'''Signature'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.dilate( inputImage* , radius*, shape, boundary, output, pixelSize)</code>
 
-;<span style="font-size:115%">'''Input'''</span>
-:'''inputImage*''' : the image process
-:'''radius*''' : a integer or list of integer representing the half size of the filter window along the image axis.
-:'''shape''' : a string in {'<u>rectangle</u>', 'disk'} describing the shape of the window used for the processing.
-:'''boundary''' : a string in {'min', 'max', 'same', '<u>mirror</u>', 'periodic'}, default is mirror
-:'''output''' : a string in {<u>'same'</u>, 'full'} describing whether the output can be modified by the filter, 'full', or not, 'same'.
-:'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
+<span style="font-size:110%">'''Input'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''' : the image process<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''radius*''' : a integer or list of integer representing the half size of the filter window along the image axis.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''shape''' : a string in {'<u>rectangle</u>', 'disk'} describing the shape of the window used for the processing.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''boundary''' : a string in {'min', 'max', 'same', '<u>mirror</u>', 'periodic'}, default is mirror<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
 
-;<span style="font-size:115%">'''Output'''</span>
-:'''outputImage''': the processed image.
+<span style="font-size:110%">'''Output'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''outputImage''': the processed image.
 
-;<span style="font-size:115%">'''Implementation'''</span>
-
+<span style="font-size:110%">'''Implementation'''</span>
 CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Dilation.java imglib2 Dilation class] from the morphology package.
 
 =opening=
