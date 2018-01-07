@@ -105,7 +105,7 @@ This filter performs a dilation followed by an erosion. It closes small holes an
 <span style="font-size:110%">'''Implementation'''</span><br>
 The implementation successively applies CIP erosion and dilation functions.
 
-=tophat=
+='''tophat'''=
 
 <span style="font-size:115%">'''Description'''</span><br>
 This filter subtract an opening of the input image to the input image. It removes  object larger than the user selected radius in image while keeping smaller scale details.
