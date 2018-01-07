@@ -48,7 +48,7 @@ CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/
 this filter dilate the region in an image by a certain radius. It works both with binary and graylevel images. This effect is obtained by replacing each pixel value by the maximum value found in a window surrounding that pixel.
 
 <span style="font-size:110%">'''Signature'''</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.dilate( inputImage* , radius*, shape, boundary, output, pixelSize)</code>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.dilate( inputImage* , radius*, shape, boundary, pixelSize)</code>
 
 <span style="font-size:110%">'''Input'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''' : the image process<br>
@@ -69,7 +69,7 @@ CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/
 This filter performs an erosion followed by a dilation. It erases small and thin  objects.
 
 <span style="font-size:110%">'''Signature'''</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.opening( inputImage* , radius* , shape, boundary, output, pixelSize)</code>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.opening( inputImage* , radius* , shape, boundary, pixelSize)</code>
 
 <span style="font-size:110%">'''Input'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''' : the image process<br>
@@ -78,10 +78,10 @@ This filter performs an erosion followed by a dilation. It erases small and thin
 &nbsp;&nbsp;&nbsp;&nbsp;'''boundary''' : a string in {'min', 'max', 'same', '<u>mirror</u>', 'periodic'}, default is mirror<br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
 
-<span style="font-size:115%">'''Output'''</span><br>
+<span style="font-size:110%">'''Output'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''outputImage''': the processed image.
 
-<span style="font-size:115%">'''Implementation'''</span><br>
+<span style="font-size:110%">'''Implementation'''</span><br>
 CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Opening.java imglib2 Opening class] from the morphology package.
 
 ='''closing'''=
@@ -90,7 +90,7 @@ CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/
 This filter performs a dilation followed by an erosion. It closes small holes and thin gaps between or inside objects.
 
 <span style="font-size:110%">'''Signature'''</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.closing( inputImage* , radius* , shape, boundary, output, pixelSize)</code>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.closing( inputImage* , radius* , shape, boundary, pixelSize)</code>
 
 <span style="font-size:110%">'''Input'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''' : the image process<br>
@@ -107,23 +107,23 @@ The implementation successively applies CIP erosion and dilation functions.
 
 ='''tophat'''=
 
-<span style="font-size:115%">'''Description'''</span><br>
+<span style="font-size:110%">'''Description'''</span><br>
 This filter subtract an opening of the input image to the input image. It removes  object larger than the user selected radius in image while keeping smaller scale details.
 
-<span style="font-size:115%">'''Signature'''</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.closing(inputImage*, radius*, shape, boundary, output, pixelSize)</code>
+<span style="font-size:110%">'''Signature'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.closing(inputImage*, radius*, shape, boundary, pixelSize)</code>
 
-<span style="font-size:115%">'''Input'''</span><br>
+<span style="font-size:110%">'''Input'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''' : the image process<br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''radius*''' : a integer or list of integer representing the half size of the filter window along the image axis.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''shape''' : a string in {'<u>rectangle</u>', 'disk'} describing the shape of the window used for the processing.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''boundary''' : a string in {'min', 'max', 'same', '<u>mirror</u>', 'periodic'}, default is mirror<br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
 
-<span style="font-size:115%">'''Output'''</span><br>
+<span style="font-size:110%">'''Output'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''outputImage''': the processed image.
 
-<span style="font-size:115%">'''Implementation'''</span><br>
+<span style="font-size:110%">'''Implementation'''</span><br>
 The function relies on ops for subtraction and CIP for the opening.
 
 ='''distance'''=
