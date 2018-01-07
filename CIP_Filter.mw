@@ -1,7 +1,7 @@
 {{TOC|limit=1}}
 
 
-=gauss=
+='''gauss'''=
 
 <span style="font-size:110%">'''Description'''</span><br>
 gauss creates a gaussian blurred image. it convolves the image with a gaussian weighted window. Gaussian blurring is commonly used for image denoising as it smoothes out small details.
@@ -14,7 +14,6 @@ gauss creates a gaussian blurred image. it convolves the image with a gaussian w
 &nbsp;&nbsp;&nbsp;&nbsp;'''radius*''' : a scalar or list of scalar representing the standard deviation of the gaussian kernel standard deviation along the image axis<br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''boundary''' : a string in {'min', 'max', 'same', 'zero', '<u>mirror</u>', 'periodic'}, default is mirror<br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
-
 
 <span style="font-size:110%">'''Output'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''outputImage''': the processed image. it always as the same size as the input image.
