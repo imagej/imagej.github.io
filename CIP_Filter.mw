@@ -126,7 +126,24 @@ This filter subtract an opening of the input image to the input image. It remove
 <span style="font-size:115%">'''Implementation'''</span><br>
 The function relies on ops for subtraction and CIP for the opening.
 
-=distance=
+='''distance'''=
+
+<span style="font-size:110%">'''Description'''</span><br>
+this function create an image where each pixel value correspond between the distance of that pixel to the closest background object in the input image
+
+<span style="font-size:110%">'''Signature'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.distance(inputImage*, threshold, pixelSize)</code>
+
+<span style="font-size:110%">'''Input'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''' : the image process<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''threshold''' : if the input image is not binary that value can be used to threshold the image. if the input image is binary that value is ignored<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''pixelSize''' : a scalar or a list of scalar representing pixel size along image dimension. Default is 1.
+
+<span style="font-size:110%">'''Output'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''outputImage''': the processed image.
+
+<span style="font-size:110%">'''Implementation'''</span><br>
+The function relies on ops distance function implementation.
 
 ='''median'''=
 
