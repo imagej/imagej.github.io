@@ -25,8 +25,24 @@ this function creates a binary image from an input graylevel image
 <span style="font-size:110%">'''Implementation'''</span><br>
 the threshold method wraps ops threshold methods
 
-=label=
+='''label'''=
+<span style="font-size:110%">'''Description'''</span><br>
+This function threshold an image and label its connected component (i.e. it sets the pixels of each region to a distinct integer value). 
 
+<span style="font-size:110%">'''Signature'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.label( inputImage* , threshold)</code>
+
+<span style="font-size:110%">'''Input'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''' : the image to process<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''threshold''' : a scalar value to threshold the image. If the input image is binary no threshold is needed<br>
+
+<span style="font-size:110%">'''Output'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''outputImage''': a label map (an image with background 0 and where each identified region has a distinct integer value).
+
+<span style="font-size:110%">'''Implementation'''</span><br>
+The labeling is performed our custom implementation. It uses a union find approach relying pixel runs to speed up to labeling process. The source code is available on [https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/RleCCL.java github]. The principle of the algorithm was described in [1].
+
+[1] Cabaret, Laurent, Lionel Lacassagne, and Louiza Oudni. "A review of world's fastest connected component labeling algorithms: Speed and energy estimation." Design and Architectures for Signal and Image Processing (DASIP), 2014 Conference on. IEEE, 2014.
 
 =maxima=
 
