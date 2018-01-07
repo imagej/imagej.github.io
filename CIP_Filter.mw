@@ -107,22 +107,24 @@ The implementation successively applies CIP erosion and dilation functions.
 
 =tophat=
 
-This filter subtract an oping of the input image to the input image. It removes  object larger than the user selected radius in image while keeping smaller scale details.
+<span style="font-size:115%">'''Output'''</span><br>
+This filter subtract an opening of the input image to the input image. It removes  object larger than the user selected radius in image while keeping smaller scale details.
 
-<code>outputImage = cip.closing(inputImage*, radius*, shape, boundary, output, pixelSize)</code>
+<span style="font-size:115%">'''Output'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.closing(inputImage*, radius*, shape, boundary, output, pixelSize)</code>
 
-;<span style="font-size:115%">'''Input'''</span>
-:'''inputImage*''' : the image process
-:'''radius*''' : a integer or list of integer representing the half size of the filter window along the image axis.
-:'''shape''' : a string in {'<u>rectangle</u>', 'disk'} describing the shape of the window used for the processing.
-:'''boundary''' : a string in {'min', 'max', 'same', '<u>mirror</u>', 'periodic'}, default is mirror
-:'''output''' : a string in {<u>'same'</u>, 'full'} describing whether the output can be modified by the filter, 'full', or not, 'same'.
-:'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
+<span style="font-size:115%">'''Input'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''' : the image process<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''radius*''' : a integer or list of integer representing the half size of the filter window along the image axis.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''shape''' : a string in {'<u>rectangle</u>', 'disk'} describing the shape of the window used for the processing.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''boundary''' : a string in {'min', 'max', 'same', '<u>mirror</u>', 'periodic'}, default is mirror<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
 
-;<span style="font-size:115%">'''Output'''</span>
-:'''outputImage''': the processed image.
+<span style="font-size:115%">'''Output'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''outputImage''': the processed image.
 
-
+<span style="font-size:115%">'''Implementation'''</span><br>
+The function relies on ops for subtraction and CIP for the opening.
 
 =distance=
 
