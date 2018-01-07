@@ -128,6 +128,25 @@ The function relies on ops for subtraction and CIP for the opening.
 
 =distance=
 
-=median=
+='''median'''=
+
+<span style="font-size:110%">'''Description'''</span><br>
+This filter is used to denoise image. It is well suited to remove impulse noise.Compare to the gaussian filter it preserve edges better but has higher computationnal cost. Its basic principle is to replace a pixel value with the median value in a window surrounding that pixel.
+
+<span style="font-size:110%">'''Signature'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.median(inputImage*, radius*, shape, boundary, pixelSize)</code>
+
+<span style="font-size:110%">'''Input'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''' : the image process<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''radius*''' : a integer or list of integer representing the half size of the filter window along the image axis.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''shape''' : a string in {'<u>rectangle</u>', 'disk'} describing the shape of the window used for the processing.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''boundary''' : a string in {'min', 'max', 'same', '<u>mirror</u>', 'periodic'}, default is mirror<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
+
+<span style="font-size:110%">'''Output'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''outputImage''': the processed image.
+
+<span style="font-size:110%">'''Implementation'''</span><br>
+The function relies on ops that implement a brute force approach of the median filtering. It would be possible to implement more efficient approach using histogram and cord decomposition such ImageJ1 implementation for 2D image.
 
 =invert=
