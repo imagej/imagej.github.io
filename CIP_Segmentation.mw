@@ -2,8 +2,27 @@ __TOC__
 
 This page describes the segmentation function of the [[CIP|CIP scripting]] package
 
-=threshold=
+='''threshold'''=
 
+<span style="font-size:110%">'''Description'''</span><br>
+this function creates a binary image from an input graylevel image
+
+<span style="font-size:110%">'''Signature'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.threshold( inputImage* , threshold*)</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage, threshold = cip.threshold( inputImage* , method*, output)</code>
+
+<span style="font-size:110%">'''Input'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''' : the image to process<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''threshold*''' : a scalar value use to threshold the image<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''method*''' : a string in {'huang', 'ij1', 'intermodes', 'isoData', 'li', 'maxEntropy', 'maxLikelihood', 'mean', 'minError', 'minimum', 'moments', 'otsu', 'percentile', 'renyiEntropy', 'rosin', 'shanbhag', 'triangle', 'yen'}.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''output''' : a string in {'image', 'value', 'both'}defining the type of output.
+
+<span style="font-size:110%">'''Output'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''outputImage''': the processed image.
+&nbsp;&nbsp;&nbsp;&nbsp;'''threshold''': the threshold value calculated for the image and method provided as input.
+
+<span style="font-size:110%">'''Implementation'''</span><br>
+the threshold method wraps ops threshold methods
 
 =label=
 
