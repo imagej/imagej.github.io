@@ -7,16 +7,17 @@
 gauss creates a gaussian blurred image. it convolves the image with a gaussian weighted window. Gaussian blurring is commonly used for image denoising as it smoothes out small details.
 
 <span style="font-size:110%">'''Signature'''</span><br>
-<code>outputImage = cip.gauss( inputImage* , radius* , boundary , pixelSize)</code>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.gauss( inputImage* , radius* , boundary , pixelSize)</code>
 
 <span style="font-size:110%">'''Input'''</span><br>
-'''inputImage*''' : the image process
-<br>'''radius*''' : a scalar or list of scalar representing the standard deviation of the gaussian kernel standard deviation along the image axis
-<br>'''boundary''' : a string in {'min', 'max', 'same', 'zero', '<u>mirror</u>', 'periodic'}, default is mirror
-<br>'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
+&nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''' : the image process<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''radius*''' : a scalar or list of scalar representing the standard deviation of the gaussian kernel standard deviation along the image axis<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''boundary''' : a string in {'min', 'max', 'same', 'zero', '<u>mirror</u>', 'periodic'}, default is mirror<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''pixelSize''' : a scalar or list of scalar along image dimension. Default is 1.
+
 
 <span style="font-size:110%">'''Output'''</span><br>
-'''outputImage''': the processed image. it always as the same size as the input image.
+&nbsp;&nbsp;&nbsp;&nbsp;'''outputImage''': the processed image. it always as the same size as the input image.
 
 <span style="font-size:110%">'''Implementation'''</span><br>
 CIP gauss implementation wraps the gauss ops, itself relying on the [https://github.com/imglib/imglib2-algorithm/tree/master/src/main/java/net/imglib2/algorithm/gauss3 imglib2 gauss3 implementation].
