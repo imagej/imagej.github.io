@@ -74,6 +74,4 @@ Each maxima detection method rely on a custom implementation
 '''[https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/WindowMaxima.java Distance]''' is simpler but efficient approach that pass a filter window over the image and check is all pixel values in the window are lower or equal to the center pixel. This method can make errors if image contains plato.<br>
 '''[https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/MultiScaleMaxima.java MultiScale]''' method builds a difference of gaussian pyramid and detection in that scale space. The implementation principle is well described in [2].
 
-
-
 =watershed=
