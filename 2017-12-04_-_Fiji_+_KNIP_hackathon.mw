@@ -197,4 +197,14 @@ We discussed opportunities to improvement for the Bdv design:
 ** Translational and rotational registration, using phase-correlation for translation and "brute-force" testing of all rotations within user specified range
 ** Region of interest selection 
 
+=== Mastodon (Jean-Yves Tinevez, Tobias Pietzsch) ===
+* User-assigned tags
+* Editable TrackScheme graph
+* Revised action handling to allow to switch keymaps
+* Navigate-to-branch-child/parent/sibling act1ions
+* Preferences dialog
+** Render settings for BDV view
+** Keymap configuration
+* Code cleanup
+
 [[Category:News]]
