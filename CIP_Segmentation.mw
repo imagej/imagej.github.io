@@ -47,7 +47,7 @@ The labeling is performed our custom implementation. It uses a union find approa
 
 ='''maxima'''=
 <span style="font-size:110%">'''Description'''</span><br>
-This function detect the intensity maxima of an imaget and return a labeled image of these maximage. 
+This function detects the intensity maxima of an imaget and return a labeled image of these maximage. 
 
 <span style="font-size:110%">'''Signature'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.maxima( inputImage* , threshold, heightMin, areaMin, distanceMin, scaleMin, scaleMax, method, pixelSize)</code>
