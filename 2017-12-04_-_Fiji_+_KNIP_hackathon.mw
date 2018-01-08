@@ -201,7 +201,7 @@ We discussed opportunities to improvement for the Bdv design:
 * User-assigned tags
 * Editable TrackScheme graph
 * Revised action handling to allow to switch keymaps
-* Navigate-to-branch-child/parent/sibling act1ions
+* Navigate-to-branch-child/parent/sibling actions
 * Preferences dialog
 ** Render settings for BDV view
 ** Keymap configuration
