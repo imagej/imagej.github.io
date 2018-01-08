@@ -1,5 +1,6 @@
 __TOC__
 
+
 This page describes the segmentation function of the [[CIP|CIP scripting]] package
 
 ='''threshold'''=
@@ -44,7 +45,35 @@ The labeling is performed our custom implementation. It uses a union find approa
 
 [1] Cabaret, Laurent, Lionel Lacassagne, and Louiza Oudni. "A review of world's fastest connected component labeling algorithms: Speed and energy estimation." Design and Architectures for Signal and Image Processing (DASIP), 2014 Conference on. IEEE, 2014.
 
-=maxima=
+='''maxima'''=
+<span style="font-size:110%">'''Description'''</span><br>
+This function detect the intensity maxima of an imaget and return a labeled image of these maximage. 
+
+<span style="font-size:110%">'''Signature'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.maxima( inputImage* , threshold, heightMin, areaMin, distanceMin, scaleMin, scaleMax, method, pixelSize)</code>
+
+<span style="font-size:110%">'''Input'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''' : the image to process<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''threshold''' : the minimum intensity of the maxima<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''heightMin''' : the minimum dynamics of the maxima peak. defining this value triggers an extended maxima detection unless scale parameters are defined<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''areaMin''' : the minimum area in pixel of the maxima peak. if heightMin is defined this value is ignored. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''areaMin''' : the minimum distance in pixel between the maxima. if heightMin or areaMin are defined this value is ignored.  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''scaleMin''' : if that value is defined a multiscale maxima detection is ran and this value represent the minimum scale  of the maxima<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''scaleMax''' : if that value is defined a multiscale maxima detection is ran and this value represent the maximum scale  of the maxima<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''method''' : a string in {'classic', 'height', 'area', 'distance', 'multiscale'} defining the method to be used for maxima detection<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''pixelSize''' : a scalar or a list of scalar defining pixel size to use for multiscale detection. by default this value is 1<br>
+
+<span style="font-size:110%">'''Output'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''outputImage*''' : a label image of the detected maxima<br>
+
+<span style="font-size:110%">'''Implementation'''</span><br>
+Each maxima detection method rely on a custom implementation
+
+'''[https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/Maxima.java Classic]''' method is a union find implementation of maxima detection<br>
+'''[https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/HMaxima.java Height]''' and '''[https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/AreaMaxima.java Area]''' methods are derived from attribute filtering approaches [1] simply using a different attribute peak height or area as criteria to merge peaks and stop their extension.<br>
+'''[https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/WindowMaxima.java Distance]''' is simpler but efficient approach that pass a filter window over the image and check is all pixel values in the window are lower or equal to the center pixel. This method can make errors if image contains plato.<br>
+'''[https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/MultiScaleMaxima.java MultiScale]''' method builds a difference of gaussian pyramid and detection in that scale space. The implementation principle is well described in [2].
+
 
 
 =watershed=
