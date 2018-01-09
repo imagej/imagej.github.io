@@ -208,7 +208,7 @@ We discussed opportunities to improvement for the Bdv design:
 * Code cleanup
 
 
-=== TrackMate & MaMuT (Ulrik Gunther, Kyle Harrington, Jean-Yves Tinevez) ===
+=== TrackMate & MaMuT (Ulrik Günther, Kyle Harrington, Jean-Yves Tinevez) ===
 * Prototype of a 3D viewer for [[TrackMate]] and [[MaMuT]] based on [[SciView]] and [[Scenery]].
 
 
