@@ -7,7 +7,8 @@ This page provides user documentation for the Math category of the [[CIP|CIP]] s
 <span style="font-size:110%">'''Description'''</span><br>
 the binary operators receive 2 inputs and produce one output applying the mathematical operation to the inputs. input can be a scalar or an image if one of the input is an image the operation is applied pixelwise. The output is an image is one of the input is an image or a scalar is both input are a number
 
-<span style="font-size:110%">'''Signature'''</span><br>
+<span style="font-size:110%">'''Signatures'''</span><br>
+
 &nbsp;&nbsp;&nbsp;&nbsp;<code>c = cip.add( a* , b* )</code> assigns a + b to c
 
 &nbsp;&nbsp;&nbsp;&nbsp;<code>c = cip.sub( a* , b* )</code> assigns a - b to c
@@ -29,6 +30,39 @@ The function implementation rely on ops map and math operation. Further more the
 ='''unary operator'''=
 <span style="font-size:110%">'''Description'''</span><br>
 the unary operator receive one input and produces one ouput, applying the specified operation to the input. Input can be an image or a scalar. output is of the same type as the input.
+
+<span style="font-size:110%">'''Signatures'''</span><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.sin( a )</code> calculate the trigonometric sinus function. a is in radian 
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.cos( a )</code> calculate the trigonometric cosinus function. a is in radian 
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.tan( a )</code> calculate the trigonometric tangent function. a is in radian
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.asin( a )</code> calculate the trigonometric arcsinus function. b is in radian 
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.acos( a )</code> calculate the trigonometric arccosinus function. b is in radian 
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.atan( a )</code> calculate the trigonometric arctangent function. b is in radian
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.sqrt( a )</code> calculate the sqare root of a
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.floor( a )</code> replace a by the closest integer such that abs(a)>abs(b)
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.ceil( a )</code> replace a by the closest integer such that abs(a)<abs(b)
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.round( a )</code> replace a by to the closest integer
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.log( a )</code> calculates the neperian logarithm of a
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.exp( a )</code> calculates the exponential of a
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.sign( a )</code> replace a 1 if a>0, 0 if a=0 and -1 if a<0
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.abs( a )</code> calculates absolute value of a
+
+<span style="font-size:110%">'''Implementation'''</span><br>
+The function implementation rely on ops map and java Math implementation. Further more the pixel or scalar type is updated to avoid any clipping of the resulting number in the operation. for instance the logarithm of an integer will be a float value. 
 
 
 =Note=
