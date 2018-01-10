@@ -1,0 +1,35 @@
+__TOC__
+
+
+This page provides user documentation for the Math category of the [[CIP|CIP]] scripting package
+
+='''binary operator'''=
+<span style="font-size:110%">'''Description'''</span><br>
+the binary operators receive 2 inputs and produce one output applying the mathematical operation to the inputs. input can be a scalar or an image if one of the input is an image the operation is applied pixelwise. The output is an image is one of the input is an image or a scalar is both input are a number
+
+<span style="font-size:110%">'''Signature'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>c = cip.add( a* , b* )</code> assigns a + b to c
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>c = cip.sub( a* , b* )</code> assigns a - b to c
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>c = cip.mul( a* , b* )</code> assigns a . b to c
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>c = cip.div( a* , b* )</code> assigns a / b to c
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>c = cip.pow( a* , b* )</code> assigns a<sup>b</sup> to c
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>c = cip.min( a* , b* )</code> assigns the minimum of a and b to c
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>c = cip.max( a* , b* )</code> assigns the maximum of a and b to c
+
+<span style="font-size:110%">'''Implementation'''</span><br>
+The function implementation rely on ops map and math operation. Further more the pixelor scalar type is updated to avoid any clipping of the resulting number  in the operation. for instance a division between 2 integer image will create a float image. 
+
+
+='''unary operator'''=
+<span style="font-size:110%">'''Description'''</span><br>
+the unary operator receive one input and produces one ouput, applying the specified operation to the input. Input can be an image or a scalar. output is of the same type as the input.
+
+
+=Note=
+It would be interesting to have these functions working for list or arrays
