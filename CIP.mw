@@ -60,7 +60,7 @@ Link to function user documentation are provided in the table below.
 | [[CIP Filter#closing|closing]]
 | 
 | 
-| [[CIP Math#cos|unary operator]], [[CIP Math#unary operator|sin]], [[CIP Math#unary operator|tan]], [[CIP Math#unary operator|acos]], [[CIP Math#unary operator|asin]], [[CIP Math#unary operator|atan]]
+| [[CIP Math#unary operator|cos]], [[CIP Math#unary operator|sin]], [[CIP Math#unary operator|tan]], [[CIP Math#unary operator|acos]], [[CIP Math#unary operator|asin]], [[CIP Math#unary operator|atan]]
 | [[CIP Utilities#toIJ2|toIJ2]]
 |- 
 | [[CIP Filter#tophat|tophat]]
