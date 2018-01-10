@@ -168,3 +168,9 @@ History of version available of SCF_MPI_CBG update site
 
 * 2017-09-21: version 1.1.0
 ** Add the possibility to export a mask that can be directly analyzed with the particle analyzer. the run(...) or IJ.run(...) were updated to reflect the additional parameter
+
+* 2018-01-10: version 1.2.1
+** this version corrects a long standing bug such that object could be splitter by changing threshold  while the 2 new region kept the same labeling. now the new regions are either relabeled either only the highest remaining region is kept. the choice is made depending on allow splitting parameter.
+** the exported image is not a virtual stack anymore avoiding issue with further processing
+** the exported image name is also updated the reflect more faithfully the name of the input image
+** the threshold and seed slider are now linear: as a result the value displayed in the user interface is directly related to image intensity. which make parameter reading easier.
