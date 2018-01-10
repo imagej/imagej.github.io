@@ -60,38 +60,32 @@ Link to function user documentation are provided in the table below.
 | [[CIP Filter#closing|closing]]
 | 
 | 
-| [[CIP Math#sin|sin]]
+| [[CIP Math#cos|cos]], [[CIP Math#sin|sin]], [[CIP Math#tan|tan]], [[CIP Math#acos|acos]], [[CIP Math#asin|asin]], [[CIP Math#atan|atan]]
 | [[CIP Utilities#toIJ2|toIJ2]]
 |- 
 | [[CIP Filter#tophat|tophat]]
 | 
 | 
-| [[CIP Math#cos|cos]], [[CIP Math#sin|sin]], [[CIP Math#tan|tan]], [[CIP Math#acos|acos]], [[CIP Math#asin|asin]], [[CIP Math#atan|atan]]
+| [[CIP Math#pow|pow]], [[CIP Math#sqrt|sqrt]]
 | [[CIP Utilities#spacing|spacing]]
 |- 
 | [[CIP Filter#distance|distance]]
 | 
 | 
-| [[CIP Math#pow|pow]], [[CIP Math#sqrt|sqrt]]
+| [[CIP Math#floor|floor]], [[CIP Math#ceil|ceil]], [[CIP Math#round|round]]
 | [[CIP Utilities#unit|unit]]
 |- 
 | [[CIP Filter#median|median]]
 | 
 | 
-| [[CIP Math#floor|floor]], [[CIP Math#ceil|ceil]], [[CIP Math#round|round]]
+| [[CIP Math#log|log]], [[CIP Math#exp|exp]]
 | [[CIP Utilities#axes|axes]]
 |- 
 | [[CIP Filter#invert|invert]]
 | 
 | 
-| [[CIP Math#log|log]], [[CIP Math#exp|exp]]
-| [[CIP Utilities#list|list]]
-|- 
-| 
-| 
-| 
 | [[CIP Math#sign|sign]], [[CIP Math#abs|abs]]
-| 
+| [[CIP Utilities#list|list]]
 |- 
 | 
 | 
