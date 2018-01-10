@@ -36,61 +36,61 @@ Link to function user documentation are provided in the table below.
 | [[CIP Filter#gauss|gauss]]
 | [[CIP Segmentation#threshold|threshold]]
 | [[CIP Format#create|create]] 
-| [[CIP Math#add|add]]
+| [[CIP Math#binary operator|add]]
 | [[CIP Utilities#measure|measure]]
 |- 
 | [[CIP Filter#erosion|erosion]]
 | [[CIP Segmentation#maxima|maxima]]
 | [[CIP Format#duplicate|duplicate]] 
-| [[CIP Math#sub|sub]]
+| [[CIP Math#binary operator|sub]]
 | [[CIP Utilities#show|show]]
 |- 
 | [[CIP Filter#dilation|dilation]]
 | [[CIP Segmentation#watershed|watershed]]
 | [[CIP Format#slice|slice]]
-| [[CIP Math#mul|mul]]
+| [[CIP Math#binary operator|mul]]
 | [[CIP Utilities#region|region]]
 |- 
 | [[CIP Filter#opening|opening]]
 | [[CIP Segmentation#label|label]]
 | [[CIP Format#project|project]]
-| [[CIP Math#div|div]]
+| [[CIP Math#binary operator|div]]
 | [[CIP Utilities#toIJ1|toIJ1]]
 |- 
 | [[CIP Filter#closing|closing]]
 | 
 | 
-| [[CIP Math#cos|cos]], [[CIP Math#sin|sin]], [[CIP Math#tan|tan]], [[CIP Math#acos|acos]], [[CIP Math#asin|asin]], [[CIP Math#atan|atan]]
+| [[CIP Math#cos|unary operator]], [[CIP Math#unary operator|sin]], [[CIP Math#unary operator|tan]], [[CIP Math#unary operator|acos]], [[CIP Math#unary operator|asin]], [[CIP Math#unary operator|atan]]
 | [[CIP Utilities#toIJ2|toIJ2]]
 |- 
 | [[CIP Filter#tophat|tophat]]
 | 
 | 
-| [[CIP Math#pow|pow]], [[CIP Math#sqrt|sqrt]]
+| [[CIP Math#binary operator|pow]], [[CIP Math#unary operator|sqrt]]
 | [[CIP Utilities#spacing|spacing]]
 |- 
 | [[CIP Filter#distance|distance]]
 | 
 | 
-| [[CIP Math#floor|floor]], [[CIP Math#ceil|ceil]], [[CIP Math#round|round]]
+| [[CIP Math#unary operator|floor]], [[CIP Math#unary operator|ceil]], [[CIP Math#unary operator|round]]
 | [[CIP Utilities#unit|unit]]
 |- 
 | [[CIP Filter#median|median]]
 | 
 | 
-| [[CIP Math#log|log]], [[CIP Math#exp|exp]]
+| [[CIP Math#unary operator|log]], [[CIP Math#unary operator|exp]]
 | [[CIP Utilities#axes|axes]]
 |- 
 | [[CIP Filter#invert|invert]]
 | 
 | 
-| [[CIP Math#sign|sign]], [[CIP Math#abs|abs]]
+| [[CIP Math#unary operator|sign]], [[CIP Math#unary operator|abs]]
 | [[CIP Utilities#list|list]]
 |- 
 | 
 | 
 | 
-| [[CIP Math#min|min]], [[CIP Math#max|max]]
+| [[CIP Math#binary operator|min]], [[CIP Math#binary operator|max]]
 | 
 |}
 
