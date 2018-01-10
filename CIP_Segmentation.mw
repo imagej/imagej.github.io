@@ -83,9 +83,9 @@ Watershed algorithm partitions an image in regions and outputs a label image of 
 
 &nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''' : the image to process<br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''threshold''' : an intensity value at which the region growing will stop<br>
-&nbsp;&nbsp;&nbsp;&nbsp;'''heightMin''' : the minimum dynamics of the maxima used to initialize the watershed<br>
-&nbsp;&nbsp;&nbsp;&nbsp;'''peakFlooding''' : the image to process<br>
-&nbsp;&nbsp;&nbsp;&nbsp;'''method''' : a string in {'<u>gray</u>','binary'} defining if the watershed is calculated on the gray level image or a distance map <br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''heightMin''' : the minimum dynamics of the maxima used to initialize the watershed. default is 5 percent of the image dynamics<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''peakFlooding''' : a percentage of peak flooding. 0 mean the region will be reduced to its maxima while 100 give the full region.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''method''' : a string in {'<u>gray</u>','binary'} defining if the watershed is calculated on the gray level image or a distance map<br>
 
 <span style="font-size:110%">'''Signature, Input 2'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.watershed( inputImage* , seed, threshold)</code>
