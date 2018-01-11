@@ -4,6 +4,29 @@ __TOC__
 This page provides user documentation for the Format category of the [[CIP|CIP]] scripting package
 
 ='''create'''=
+<span style="font-size:110%">'''Description'''</span><br>
+this function allows to create image specifying their size, value, pixel type and name.
+
+<span style="font-size:110%">'''Signatures'''</span><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.create( extent*, value, type, name)</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;will create an image of size extent initialized with the specified value, pixel type and name. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.create( inputImage*, value, type, name)</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;will create an image of the same size as inputImage, initialized with the specified value, pixel type and name.
+
+<span style="font-size:110%">'''Input'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''' : an image which size will be used to create an the image process<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''extent*''' : a list of scalars specifying the dimensions of the image to create<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''value''' : value a scalar which value is used to initialize the new image<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''type''' : a string in {'bit', 'uint8', 'int8', 'uint16', 'int16', 'uint32', 'int32', 'uint64', 'int64', '<u>float</u>', 'double'} defining the pixel type of the output. denomination such as 'short' or 'ushort' or 'unsignedshort' can also be used.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''name''' : a string used for the new image name.<br>
+
+<span style="font-size:110%">'''Output'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''outputImage''' : an image with the specified size, value, pixel type and name.
+
+<span style="font-size:110%">'''Implementation'''</span><br>
+the function wraps the ops img function in the namespace create
 
 ='''duplicate'''=
 
