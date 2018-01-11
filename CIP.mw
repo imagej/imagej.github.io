@@ -1,5 +1,15 @@
 __TOC__
 
+{{Infobox
+| software               = ImageJ/Fiji
+| name                   = CIP
+| author                 = [[User:Benoit|Benoit Lombardot]]
+| maintainer             = [[User:Benoit|Benoit Lombardot]]
+| released               = January 2018
+| filename               = CIP update site
+| source                 = https://github.com/benoalo/CIP
+| category               = [[:Category:Scripting|Scripting]]
+}}
 
 [[File:CIP basic concept.PNG|center|600px|CIP: ]]
 <div align="center">'''Figure 1''': CIP is a simple toolbox to learn and prototype image analysis workflow in ImageJ. It hides ImageJ complexity while making it easy to combine ImageJ packages for more specific tasks. </div>
