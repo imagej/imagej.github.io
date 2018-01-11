@@ -30,6 +30,28 @@ the function wraps the ops img function in the namespace create
 
 ='''duplicate'''=
 
+<span style="font-size:110%">'''Description'''</span><br>
+The function duplicate an input image or a crop if the input image
+
+<span style="font-size:110%">'''Signature'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.duplicate( inputImage*, origin, size, method)</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;will duplicate the input image within the specified boundary.
+
+<span style="font-size:110%">'''Input'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''' : the image to duplicate<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''origin''' : a list of scalar specifying the origin of the region to duplicate. if not provided the input image origin is used<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''size''' : a list of scalar specifying the extent of the region to duplicate. if not provided the max minus the origin is choosen for each dimension<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''method''' : a string in {'deep', '<u>shallow</u>'} specifying whether the output will copy the data or have a reference to the input data.<br>
+
+<span style="font-size:110%">'''Output'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''outputImage*''' : the duplicated image<br>
+
+<span style="font-size:110%">'''Implementation'''</span><br>
+the shallow copy is done with Views.offsetInterval in ImgLib2 and the deep copy is done with the ops function copy().rai().
+
+<span style="font-size:110%">'''Note'''</span><br>
+Currently if the origin or origin+size are out of the image the function will give an error it would be nice to specify a boundary condition and allow image frame to be extended.
+
 ='''slice'''=
 
 ='''project'''=
