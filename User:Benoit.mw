@@ -2,12 +2,32 @@ Hi there!
 
 I am doing Image analysis consulting at Scionics GmbH and the Max Planck Institute of Cell Molecular Biology and Genetics (MPI-CBG) in Dresden. Project are focused on Light Microscopy, Electron Microscopu and High Content Screening data.
 
-Image analysis tools:
+----
+
+[[File:MinCostSurf Ex2 SurfaceSelection.PNG|right|266px|thumb|Minimum Cost S surface projection]]
+
+[[File:InteractiveWatershed_illustration.PNG|right|200px|thumb|Interactive watershed]]
+
+[[File:CIP basic concept.PNG|right|266px|thumb|CIP: simple script for simple analysis]]
+
+
+==Image analysis tools I developped==
 * [[Manual drift correction plugin]] : A simple script for doing manual sequence registration with minimal user input. sparsely annotate a reference point and its trajectory will be interpolated in between.
+
+
 * [[Minimum Cost Z surface Projection]] provide tools and plugin to detect 2D surface in 3D data. one can retrieve the altitute map of the surface and an image with the signal of the surface.
+
+
 * [[Interactive Watershed]]: Process watershed once then adjust its parameter interactively while the result is overlaid to the image . That is the function of this plugin. It very praticle for data exploration and Yes it works in 3D
+
+
 * [[CIP]] a toolbox to simplify scripting in ImageJ. Well suited to do you first step in image analysis scripting, teaching and workflow prototyping.
 
-other project described on imagej wiki
+
+----
+
+
+== Other project described on imagej wiki ==
+
 * [[MS-ECS-2D]] update site. [https://scholar.google.de/scholar?cluster=14136988997245303669&hl=fr&as_sdt=0,5 A collaboration] with Vastenhouw lab and Myers lab at MPI-CBG
 * [[CElegansBeadsAnalysis plugin]]. [https://scholar.google.de/scholar?cluster=14574708122410072857&hl=fr&as_sdt=0,5 A collaboration] with the Kurzchalia lab at MPI-CBG (my first IJ script/plugin ;-)
