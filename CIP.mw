@@ -114,7 +114,13 @@ To look into the source compilation and installation I invite you to look on the
 
 =Sample scripts=
 
-I will link the example script from the githu repo very soon
+[[File:CIP example 2D.PNG|center|800px|CIP: ]]
+<div align="center">'''Figure 3''': Example a workflow performing the cropping, filtering segmentation and visualisation of a 2D image. Raw data:  Platynereis embryo, acquisition: Mette Handberg-Thorsager from Tomancak lab, MPI-CBG, Dresden in collaboration with Keller lab, HHMI - Janelia Research Campus</div>
+
+
+[[File:CIP example 3D.PNG|center|800px|CIP: ]]
+<div align="center">'''Figure 3''': Example a workflow performing the cropping, filtering segmentation and visualisation of a 2D image. Raw data:  Platynereis embryo, acquisition: Mette Handberg-Thorsager from Tomancak lab, MPI-CBG, Dresden in collaboration with Keller lab, HHMI - Janelia Research Campus</div>
+
 
 
 
