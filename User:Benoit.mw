@@ -8,6 +8,6 @@ Image analysis tools:
 * [[Interactive Watershed]]: Process watershed once then adjust its parameter interactively while the result is overlaid to the image . That is the function of this plugin. It very praticle for data exploration and Yes it works in 3D
 * [[CIP]] a toolbox to simplify scripting in ImageJ. Well suited to do you first step in image analysis scripting, teaching and workflow prototyping.
 
-published user project:
-* [[MS-ECS-2D]] update site
-* [[CElegansBeadsAnalysis plugin]] (my first IJ script/plugin ;-)
+other project described on imagej wiki
+* [[MS-ECS-2D]] update site. [https://scholar.google.de/scholar?cluster=14136988997245303669&hl=fr&as_sdt=0,5 A collaboration] with Vastenhouw lab and Myers lab at MPI-CBG
+* [[CElegansBeadsAnalysis plugin]]. [https://scholar.google.de/scholar?cluster=14574708122410072857&hl=fr&as_sdt=0,5 A collaboration] with the Kurzchalia lab at MPI-CBG (my first IJ script/plugin ;-)
