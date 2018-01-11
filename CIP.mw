@@ -18,8 +18,10 @@ Classic Image Processing (CIP) is an image procesing toolbox which provides func
 * An '''essential''' set of tools: CIP gathers the 10% of tools that will get the job done, allowing one to go straight to the tool he needs. The function selected are also well adopted by the community to facilitate exchange and understanding. Finally, CIP provides basic visualisation and measure tools making autonomous in many use case.
 
 =Tools categories=
-[[File:CIP generic pipeline.PNG|center|700px]]
+Image analysis workflows require the user to perform stereotypic steps: enhance signal, define and characterize region, visualize and assess results. This recurring process allows to create one function per task and to organize these functions in categories with similar roles, input and output: Format, Filter, Segment, Math, Assess.
 
+[[File:CIP generic pipeline.PNG|center|700px]]
+<div align="center">'''Figure 2''': Many analysis workflow are composed of generic tasks. </div>
 
 * '''Format''': These functions are used to managed image data, combine them or reduce their dimensionnality. They take one or multiple image as input and return one image as output. These function will generally provide an ouput which size and/or dimensionality can be different from the input
  
@@ -29,7 +31,7 @@ Classic Image Processing (CIP) is an image procesing toolbox which provides func
 
 * '''Segmentation''': Segmentation functions allow to define regions in an image. Applied to an input image they create so called label image that defines the pixel where the object lays. Each region is attributed a particular label, an integer value, that can be used to retrieve the object later. Watershed, thresholding spot and line detection can be found here. 
 
-* '''Utilies''': in that category are tools to facilitate data visualisation and measures that will be needed in every pipeline once the image processing is done.
+* '''Assess''': in that category are tools to facilitate data visualisation and measures that will be needed in every pipeline once the image processing is done.
 
 Link to function user documentation are provided in the table below.
 
@@ -39,7 +41,7 @@ Link to function user documentation are provided in the table below.
 ! Segmentation
 ! Format
 ! Math
-! Utilities
+! Assess
 |- 
 | [[CIP Filter#gauss|gauss]]
 | [[CIP Segmentation#threshold|threshold]]
@@ -135,7 +137,7 @@ This section provide the main development directions as well as a list of functi
 ! Segmentation
 ! Format
 ! Math
-! Utilities
+! Assess
 |- 
 | gradient
 | skeleton
