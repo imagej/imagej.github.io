@@ -18,6 +18,8 @@ Classic Image Processing (CIP) is an image procesing toolbox which provides func
 * An '''essential''' set of tools: CIP gathers the 10% of tools that will get the job done, allowing one to go straight to the tool he needs. The function selected are also well adopted by the community to facilitate exchange and understanding. Finally, CIP provides basic visualisation and measure tools making autonomous in many use case.
 
 =Tools categories=
+[[File:CIP generic pipeline.PNG|center|700px]]
+
 
 * '''Format''': These functions are used to managed image data, combine them or reduce their dimensionnality. They take one or multiple image as input and return one image as output. These function will generally provide an ouput which size and/or dimensionality can be different from the input
  
