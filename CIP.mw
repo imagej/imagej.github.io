@@ -118,11 +118,14 @@ To look into the source compilation and installation I invite you to look on the
 <div align="center">'''Figure 3''': Example a workflow performing the cropping, filtering segmentation and visualisation of a 2D image. Raw data:  Platynereis embryo, acquisition: Mette Handberg-Thorsager from Tomancak lab, MPI-CBG, Dresden in collaboration with Keller lab, HHMI - Janelia Research Campus</div>
 
 
+{{GitHubEmbed|org=benoalo|repo=CIP|path=wiki_examples/2D_nuclei.py}}
+
+
 [[File:CIP example 3D.PNG|center|800px|CIP: ]]
 <div align="center">'''Figure 3''': Example a workflow performing the cropping, filtering segmentation and visualisation of a 2D image. Raw data:  Platynereis embryo, acquisition: Mette Handberg-Thorsager from Tomancak lab, MPI-CBG, Dresden in collaboration with Keller lab, HHMI - Janelia Research Campus</div>
 
 
-
+{{GitHubEmbed|org=benoalo|repo=CIP|path=wiki_examples/3D_nuclei_segmentation.py}}
 
 =Cite=
 
