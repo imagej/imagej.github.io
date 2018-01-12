@@ -152,14 +152,6 @@ Link to function user documentation are provided in the table below.
 |}
 
 
-=Cite=
-
-
-
-=History=
-
-* 2017-12-20 : version 0.1.0 , first public version of CIP is made available on CIP update site. The package is still under development
-
 =Development plan=
 
 This section provide the main development directions as well as a list of functions that we intend to implement per category
@@ -196,3 +188,12 @@ This section provide the main development directions as well as a list of functi
 | 
 | 
 |}
+
+
+=Cite=
+
+
+
+=History=
+
+* 2017-12-20 : version 0.1.0 , first public version of CIP is made available on CIP update site. The package is still under development
