@@ -33,7 +33,7 @@ The function implementation rely on ops map and math operation. Further more the
 <span style="font-size:110%">'''Description'''</span><br>
 the unary operator receive one input and produces one ouput, applying the specified operation to the input. Input can be an image or a scalar. output is of the same type as the input.
 
-<span style="font-size:110%">'''Signatures'''</span><br>
+<span style="font-size:110%">'''Signatures trigonometry'''</span><br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.sin( a )</code> calculate the trigonometric sinus function. a is in radian 
 
@@ -47,7 +47,7 @@ the unary operator receive one input and produces one ouput, applying the specif
 
 &nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.atan( a )</code> calculate the trigonometric arctangent function. b is in radian
 
-&nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.sqrt( a )</code> calculate the sqare root of a
+<span style="font-size:110%">'''Signatures rounding'''</span><br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.floor( a )</code> replace a by the closest integer such that abs(a)>abs(b)
 
@@ -55,13 +55,17 @@ the unary operator receive one input and produces one ouput, applying the specif
 
 &nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.round( a )</code> replace a by to the closest integer
 
+<span style="font-size:110%">'''Other Signatures'''</span><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.sqrt( a )</code> calculate the sqare root of a
+
 &nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.log( a )</code> calculates the neperian logarithm of a
 
 &nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.exp( a )</code> calculates the exponential of a
 
-&nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.sign( a )</code> replace a 1 if a>0, 0 if a=0 and -1 if a<0
-
 &nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.abs( a )</code> calculates absolute value of a
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.sign( a )</code> replace a 1 if a>0, 0 if a=0 and -1 if a<0
 
 <span style="font-size:110%">'''Implementation'''</span><br>
 The function implementation rely on ops map and java Math implementation. Further more the pixel or scalar type is updated to avoid any clipping of the resulting number in the operation. for instance the logarithm of an integer will be a float value.
