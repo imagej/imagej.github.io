@@ -2,12 +2,7 @@ __TOC__
 
 
 This page provides user documentation for the Format category of the [[CIP|CIP]] scripting package. the function can have 5 types of input and output:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;'''Image''':any image type in: IJ1 ImagePlus, IJ2 Dataset, IJ2 ImgPlus, ImgLib2 Img, ImgLib2 RandomAccessInterval (RAI), CIP image which implements RAI and adds a thin layer of metadata (units, pixel size, axes names). output image are always a CIP image. Converters allows to get back to IJ1 or IJ2 format if needed.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;'''Region''':any type in: IJ1 Roi, ImgLib2 IterableRegion, or CIP regions which implement IterableRegion and a thin layer of metadata.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;'''Table''': a a dictionnary that maps strings to object, most likely string or scalar but possibly Region or Image too
-&nbsp;&nbsp;&nbsp;&nbsp;'''Scalar(s)''': a numeric value (or a list of numeric values) as available in script langage.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;'''String(s)''': an string of character or list of it as available in script langage<br>
-&nbsp;&nbsp;&nbsp;&nbsp;'''Logic''': a boolean (i.e. true or false value).<br>
+{{CIP types}}
 
 ='''create'''=
 <span style="font-size:110%">'''Description'''</span><br>
