@@ -8,7 +8,7 @@ This page provides user documentation for the utility functions of the [[CIP]] p
 ='''measure'''=
 
 <span style="font-size:110%">'''Description'''</span><br>
-
+This function performs measures in image and region and return them as a table.
 
 <span style="font-size:110%">'''Signature'''</span><br>
 
