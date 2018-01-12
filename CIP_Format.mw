@@ -54,6 +54,25 @@ Currently if the origin or origin+size are out of the image the function will gi
 
 ='''slice'''=
 
+<span style="font-size:110%">'''Description'''</span><br>
+This function reduce input image dimensionality by duplicating a region of the same size as the input except along a selected dimension where the input is duplicated only at a particular position.
+
+<span style="font-size:110%">'''Signature'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>outputImage = cip.slice( inputImage*, dimensions, position, method)</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;will duplicate the input at the specified position olong the specified dimension(s).
+
+<span style="font-size:110%">'''Input'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''' : the image to process<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''dimensions''' : a scalar or a list of scalars specifying the dimension(s) to slice<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''position''' : a scalar or list of scalars the same size as dimensions indicating the position to duplicate along the specified dimension.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''method''' : a string in {'deep', '<u>shallow</u>'} specifying whether the output will copy the data or have a reference to the input data.<br>
+
+<span style="font-size:110%">'''Output'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''outputImage*''' : the duplicated image. the single diemension are dropped so the image dimensionnality is smaller than the input dimensionnality.<br>
+
+<span style="font-size:110%">'''Implementation'''</span><br>
+The shallow copy is done with Views.offsetInterval in ImgLib2 and the deep copy also apply the ops function copy().rai().
+
 ='''project'''=
 
 ='''concatenate'''=
