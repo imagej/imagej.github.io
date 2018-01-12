@@ -38,7 +38,7 @@ If one would like to contribute or simply toy with the source code of the librar
 
 ==Documentation organisation==
 
-To build a script with CIP, follow one of the examples below or try one of the [[https://github.com/benoalo/CIP/tree/master/scripts|project repository]] examples.
+To build a script with CIP, follow one of the examples below or try one of the [https://github.com/benoalo/CIP/tree/master/scripts|project repository] examples.
 
 To get information on a function follow the link in the function table in the [[CIP#Tools categories|categories]] section or directly go to one of the category pages:
 [[CIP Format|Format]], 
