@@ -7,6 +7,31 @@ This page provides user documentation for the utility functions of the [[CIP]] p
 
 ='''measure'''=
 
+<span style="font-size:110%">'''Description'''</span><br>
+
+
+<span style="font-size:110%">'''Signature'''</span><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>outputTable = cip.measure( inputImage* ,measures*, unit, prefix )</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;perform the specified measures on the entire input image.
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>outputTable = cip.measure( regions* ,measures*, source, unit, prefix )</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;perform the specified measures for each of the provided region. if provided the source image is used for intensity measure.<br>
+
+<span style="font-size:110%">'''Input'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''' : the image to measure<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''regions*''' : a region or list of regions to be measured.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''measures*''' : a string or a list of strings taken from {'min', 'max', 'mean', 'stddev', 'median', 'position', 'boundary', 'size'}  and representing the measure to be performed<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''source''' : a image that will be used to perform the intensity based measure if the input is of type region. if not provided the measure will be done on the input object intensity<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''unit''' : is a boolean value indicating to use or not the image pixel size. Default is true.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''prefix''' : is a string that will be set at the beginning of each column header in the output. It can be used for instance to differentiate measures performed on the same object with different source image. Default is an empty string.
+
+<span style="font-size:110%">'''Output'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''outputTable''': the measures table. Each column represent one of the requested measure while the first column provides a reference to the measures object. Each row contains the measures performed for a particular object.
+
+<span style="font-size:110%">'''Implementation'''</span><br>
+The measure function instanciate a toolbox adapted for the object to measure. the toolbox can receive new measures tools to extend the existing measure set.
+
 ='''show'''=
 
 ='''region'''=
