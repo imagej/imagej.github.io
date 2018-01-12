@@ -2,7 +2,6 @@
 
 This page describes the type and usage of parameters in [[CIP]] package. 
 
-
 =Types=
 
 *'''Image''':any image type in: IJ1 ImagePlus, IJ2 Dataset, IJ2 ImgPlus, ImgLib2 Img, ImgLib2 RandomAccessInterval (RAI), CIP image which implements RAI and adds a thin layer of metadata (units, pixel size, axes names). output image are always a CIP image. Converters allows to get back to IJ1 or IJ2 format if needed.
