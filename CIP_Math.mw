@@ -62,8 +62,4 @@ the unary operator receive one input and produces one ouput, applying the specif
 &nbsp;&nbsp;&nbsp;&nbsp;<code>b = cip.abs( a )</code> calculates absolute value of a
 
 <span style="font-size:110%">'''Implementation'''</span><br>
-The function implementation rely on ops map and java Math implementation. Further more the pixel or scalar type is updated to avoid any clipping of the resulting number in the operation. for instance the logarithm of an integer will be a float value. 
-
-
-=Note=
-It would be interesting to have these functions working for list or arrays
+The function implementation rely on ops map and java Math implementation. Further more the pixel or scalar type is updated to avoid any clipping of the resulting number in the operation. for instance the logarithm of an integer will be a float value.
