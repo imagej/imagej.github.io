@@ -15,7 +15,7 @@ In CIP each function has '''required parameters that must be provided''' for the
 
 There are different ways of skiping an optionnal parameters:
 * if they are at the end of the signature you can just drop them. <br> <code>example</code> or even <br> <code>example</code>
-* if they are in the middle of the signature you can either <br> <code>example</code>
+* if they are in the middle of the signature you can either
 ** replace them by the null value of your scripting langage. <br> <code>example</code>
 ** drop the parameter and used named parameter for the remaining parameter you need <br> <code>example</code>
 
