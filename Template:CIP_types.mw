@@ -3,12 +3,12 @@
 
 ==Types==
 
-&nbsp;&nbsp;&nbsp;&nbsp;'''Image''':any image type in: IJ1 ImagePlus, IJ2 Dataset, IJ2 ImgPlus, ImgLib2 Img, ImgLib2 RandomAccessInterval (RAI), CIP image which implements RAI and adds a thin layer of metadata (units, pixel size, axes names). output image are always a CIP image. Converters allows to get back to IJ1 or IJ2 format if needed.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;'''Region''':any type in: IJ1 Roi, ImgLib2 IterableRegion, or CIP regions which implement IterableRegion and a thin layer of metadata.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;'''Table''': a a dictionnary that maps strings to object, most likely string or scalar but possibly Region or Image too
-&nbsp;&nbsp;&nbsp;&nbsp;'''Scalar(s)''': a numeric value (or a list of numeric values) as available in script langage.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;'''String(s)''': a string of character or list of string as available in script langage<br>
-&nbsp;&nbsp;&nbsp;&nbsp;'''Logic''': a boolean (i.e. true or false value).<br>
+*'''Image''':any image type in: IJ1 ImagePlus, IJ2 Dataset, IJ2 ImgPlus, ImgLib2 Img, ImgLib2 RandomAccessInterval (RAI), CIP image which implements RAI and adds a thin layer of metadata (units, pixel size, axes names). output image are always a CIP image. Converters allows to get back to IJ1 or IJ2 format if needed.
+*'''Region''':any type in: IJ1 Roi, ImgLib2 IterableRegion, or CIP regions which implement IterableRegion and a thin layer of metadata.
+*'''Table''': a a dictionnary that maps strings to object, most likely string or scalar but possibly Region or Image too
+*'''Scalar(s)''': a numeric value (or a list of numeric values) as available in script langage.
+*'''String(s)''': a string of character or list of string as available in script langage
+*'''Logic''': a boolean (i.e. true or false value).
 
 ==Required and Optionnal Parameters==
 In CIP each function has '''required parameters that must be provided''' for the function to run and some '''optionnal parameter that can be skipped''' if you don't need them. if an optionnal parameters is not provided it will be replaced by a sensible default value described in the documentation
