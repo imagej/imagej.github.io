@@ -11,13 +11,15 @@
 *'''Logic''': a boolean (i.e. true or false value).
 
 ==Required and Optionnal Parameters==
-In CIP each function has '''required parameters that must be provided''' for the function to run and some '''optionnal parameter that can be skipped''' if you don't need them. if an optionnal parameters is not provided it will be replaced by a sensible default value described in the documentation
+In CIP each function has '''required parameters that must be provided''' for the function to run. This parameters are indicated by an '''*''' in the documentation.
+
+Each function als has some '''optionnal parameter that can be skipped''' if you don't need them. If an optionnal parameters is not provided it will be replaced by a sensible default value described in the documentation
 
 There are different ways of skiping an optionnal parameters:
-* if they are at the end of the signature you can just drop them. <br> <code>example</code> or even <br> <code>example</code>
+* if they are at the end of the signature you can just drop them and the function will work using defaults value for them. <br> <code>out = cip.gauss(myImage, myRadius,myBoundary)</code> or even <br> <code>out = cip.gauss(myImage, myRadius)</code>
 * if they are in the middle of the signature you can either
-** replace them by the null value of your scripting langage. <br> <code>example</code>
-** drop the parameter and used named parameter for the remaining parameter you need <br> <code>example</code>
+** replace them by the null value of your scripting langage. <br> <code>cip.gauss(myImage, myRadius, None, myPixelSize)</code> where None is the null value in Jython
+** drop the parameter and used named parameter for the remaining parameter you need <br> <code>cip.gauss(myImage, myRadius, 'pixelsize', myPixelSize)</code> that is maybe easier to read.
 
 ==Positional and Named Parameters==
 
