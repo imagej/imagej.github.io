@@ -2,6 +2,8 @@
 
 
 This page provides user documentation for the filter functions of the [[CIP]] package<br>
+One can found additionnal information on the function parameters (type, optionnal/required, positionnal/named) on the [[CIP Parameters|parameters documentation]] page.
+
 
 ='''gauss'''=
 
@@ -184,6 +186,3 @@ This function invert the gray value of the input image such that each pixel valu
 
 <span style="font-size:110%">'''Implementation'''</span><br>
 The function implementation uses ops map function
-
-
-{{CIP types}}
