@@ -52,18 +52,23 @@ For information on the parameters, their type, whether they are optionnal or req
 
 ==Script example==
 
-[[File:CIP example 2D.PNG|center|800px|CIP: ]]
-<div align="center">'''Figure 3''': Example a workflow performing the cropping, filtering segmentation and visualisation of a 2D image. Raw data:  Platynereis embryo, acquisition: Mette Handberg-Thorsager from Tomancak lab, MPI-CBG, Dresden in collaboration with Keller lab, HHMI - Janelia Research Campus</div>
 
+The following script  shows how to segment 2d object in an image and visualize them. The workflow is illustrated in the '''Figure 3'''.
 
 {{GitHubEmbed|org=benoalo|repo=CIP|path=wiki_examples/2D_nuclei.py}}
 
 
-[[File:CIP example 3D.PNG|center|800px|CIP: ]]
+[[File:CIP example 2D.PNG|center|800px|CIP: ]]
 <div align="center">'''Figure 3''': Example a workflow performing the cropping, filtering segmentation and visualisation of a 2D image. Raw data:  Platynereis embryo, acquisition: Mette Handberg-Thorsager from Tomancak lab, MPI-CBG, Dresden in collaboration with Keller lab, HHMI - Janelia Research Campus</div>
 
 
+The following script shows a 3d nuclei segmentation and the measure and displau of nuclei size. The workflow is illustrated in the '''Figure 4'''.
+
 {{GitHubEmbed|org=benoalo|repo=CIP|path=wiki_examples/3D_nuclei_segmentation.py}}
+
+
+[[File:CIP example 3D.PNG|center|800px|CIP: ]]
+<div align="center">'''Figure 4''': Example a workflow performing the cropping, filtering segmentation and visualisation of a 2D image. Raw data:  Platynereis embryo, acquisition: Mette Handberg-Thorsager from Tomancak lab, MPI-CBG, Dresden in collaboration with Keller lab, HHMI - Janelia Research Campus</div>
 
 =Tools categories=
 Image analysis workflows require the user to perform stereotypic steps: enhance signal, define and characterize region, visualize and assess results. This recurring process allows to create one function per task and to organize these functions in categories with similar roles, input and output: Format, Filter, Segment, Math, Assess.
