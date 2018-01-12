@@ -1,8 +1,9 @@
 __TOC__
 
 
-This page provides user documentation for the Format category of the [[CIP|CIP]] scripting package. the function can have 5 types of input and output:<br>
-{{CIP types}}
+This page provides user documentation for the Format category of the [[CIP|CIP]] scripting package.
+
+One can found additionnal information on the function parameters (type, optionnal/required, positionnal/named) on the [[CIP Parameters|parameters documentation]] page.
 
 ='''create'''=
 <span style="font-size:110%">'''Description'''</span><br>
