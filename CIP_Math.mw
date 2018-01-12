@@ -3,6 +3,8 @@ __TOC__
 
 This page provides user documentation for the Math category of the [[CIP|CIP]] scripting package
 
+One can found additionnal information on the function parameters (type, optionnal/required, positionnal/named) on the [[CIP Parameters|parameters documentation]] page.
+
 ='''binary operator'''=
 <span style="font-size:110%">'''Description'''</span><br>
 the binary operators receive 2 inputs and produce one output applying the mathematical operation to the inputs. input can be a scalar or an image if one of the input is an image the operation is applied pixelwise. The output is an image is one of the input is an image or a scalar is both input are a number
