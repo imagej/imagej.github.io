@@ -75,5 +75,25 @@ The shallow copy is done with Views.offsetInterval in ImgLib2 and the deep copy 
 
 ='''project'''=
 
+<span style="font-size:110%">'''Description'''</span><br>
+This function reduce input image dimensionality by applying an operation to all the pixel along user specified dimension(s). sum, max and ,min operation are currently implemented.
+
+<span style="font-size:110%">'''Signature'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>valMap, argMap = cip.project( inputImage*, dimension, method, outputType)</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;create a projected image along the specified dimension(s) with the specified method.
+
+<span style="font-size:110%">'''Input'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''' : the image to process<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''dimensions''' : a scalar or a list of scalars specifying the dimension(s) to slice<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''position''' : a scalar or list of scalars the same size as dimensions indicating the position to duplicate along the specified dimension(s).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''outputType''' : a string in {'<u>projection</u>', 'argument', 'both'} specifying whether the output should be the projected image, the argument of the projection or both. if the argument construction is not applicable the argument has the value of the number of slice.<br>
+
+<span style="font-size:110%">'''Output'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''valMap''' : the projected image. The singleton dimension(s) are dropped so the image dimensionnality is effectively smaller than the input dimensionnality.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''argMap''' : the argument of the projection. that is for a max projection for instance the postions at the pixel value was maximum along the projection dimension.<br>
+
+<span style="font-size:110%">'''Implementation'''</span><br>
+The [https://github.com/benoalo/CIP/blob/master/src/main/java/invizio/cip/misc/Project2CIP.java projection] is implemented as part of CIP.
+
 ='''concatenate'''=
 To be implemented
