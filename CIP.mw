@@ -122,7 +122,13 @@ To look into the source compilation and installation I invite you to look on the
 
 
 
-=Sample scripts=
+=Getting started=
+
+To build a script with CIP, follow one of the examples below or try one of the [[https://github.com/benoalo/CIP/tree/master/scripts|project repository]] examples.
+
+To get information on a function follow the link in the function table in the [[CIP#Tools categories|categories]] section.
+
+For information the parameters, their type wheter they are optionnal of required, how to pass them please have a look at [[CIP Paramters| Parameters]] page.
 
 [[File:CIP example 2D.PNG|center|800px|CIP: ]]
 <div align="center">'''Figure 3''': Example a workflow performing the cropping, filtering segmentation and visualisation of a 2D image. Raw data:  Platynereis embryo, acquisition: Mette Handberg-Thorsager from Tomancak lab, MPI-CBG, Dresden in collaboration with Keller lab, HHMI - Janelia Research Campus</div>
