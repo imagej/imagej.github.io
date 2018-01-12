@@ -37,7 +37,6 @@ If you want to use CIP in your ImageJ script simply add the CIP update site to y
 
 To look into the source compilation and installation I invite you to look on the [https://github.com/benoalo/CIP github repository] of the project
 
-
 ==Documentation organisation==
 
 To build a script with CIP, follow one of the examples below or try one of the [[https://github.com/benoalo/CIP/tree/master/scripts|project repository]] examples.
@@ -60,9 +59,6 @@ For information on the parameters, their type, whether they are optionnal or req
 
 
 {{GitHubEmbed|org=benoalo|repo=CIP|path=wiki_examples/3D_nuclei_segmentation.py}}
-
-
-
 
 =Tools categories=
 Image analysis workflows require the user to perform stereotypic steps: enhance signal, define and characterize region, visualize and assess results. This recurring process allows to create one function per task and to organize these functions in categories with similar roles, input and output: Format, Filter, Segment, Math, Assess.
