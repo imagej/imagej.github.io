@@ -22,5 +22,5 @@ There are different ways of skiping an optionnal parameters:
 ==Positional and Named Parameters==
 
 There are 2 ways to pass the parameters to a CIP function: 
-* by passing in the same position and order as the example signature provided in the documentation. If we take the gauss function as example it would write as follows:
-* by passing a string/value
+* by passing in the same position and order as the example signature provided in the documentation. If we take the gauss function as example it would write as follows using only the required parameters: <br> <code> out = gauss(in , myRadius )</code>
+* by passing a string/value <br> <code>out = gauss(in , 'radius', myRadius) </code>  or even <br><code>out = gauss('radius', myRadius, 'inputImage', in )</code>
