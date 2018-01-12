@@ -41,7 +41,12 @@ To look into the source compilation and installation I invite you to look on the
 
 To build a script with CIP, follow one of the examples below or try one of the [[https://github.com/benoalo/CIP/tree/master/scripts|project repository]] examples.
 
-To get information on a function follow the link in the function table in the [[CIP#Tools categories|categories]] section.
+To get information on a function follow the link in the function table in the [[CIP#Tools categories|categories]] section or directly go to one of the category pages:
+[[CIP Format|Format]], 
+[[CIP Filter|Filter]], 
+[[CIP Math|Math]], 
+[[CIP Segmentation|Segment]], 
+[[CIP Utilities|Assess]].
 
 For information on the parameters, their type, whether they are optionnal or required and more one can consult the [[CIP Parameters| Parameters]] page.
 
