@@ -77,6 +77,20 @@ The show function relies on IJ1 component as a starting point as this is the way
 
 ='''region'''=
 
+<span style="font-size:110%">'''Description'''</span><br>
+This function is a converter is that IJ1 or IJ2 object and convert them to CIP regions.
+
+<span style="font-size:110%">'''Signature'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>region = cip.region( image, name )</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp; will convert an image to a region or a list of region.
+
+<span style="font-size:110%">'''Input'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''image''' : an image that will be interpreted as a mask if it has boolean type or as a label image otherwise.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''name''' : a string that will be used to name the region. if there are multiple region the name will be appended with a scalar to differentiate the regions.
+
+<span style="font-size:110%">'''Output'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''region''': a region if the input is boolean a list of region otherwise.
+
 ='''toIJ1'''=
 
 ='''toIJ2'''=
