@@ -1,0 +1,178 @@
+{{Infobox
+| software               = Fiji
+| name                   = LimeSeg
+| logo                   = 
+| maintainer             = {{Person|NicolasChiaruttini}}
+| author                 = {{Person|NicolasChiaruttini}}, {{Person|SarahMachado}}
+| source                 = {{GitHub | org=fiji | repo=LimeSeg}}
+| status                 = 
+| released               = expected 01/2018
+| category               = [[:Category:Segmentation|Segmentation]], [[:Category:Plugins]]
+}}
+
+'''A Fiji plugin for the segmentation of 3D objects. '''
+
+Enable the [http://sites.imagej.net/LimeSeg/ LimeSeg update site] (http://sites.imagej.net/LimeSeg/) to get it.
+
+
+__TOC__
+
+== Publication. ==
+
+TODO / Coming soon.
+
+== Presentation. ==
+
+LimeSeg is a modular 3D segmentation plugin. It is a particle-based active contour method. It can segment objects from 3D images where 3D objects are labelled on their outline, like cells labeled on their membrane, as shown in the image below (source of the image : https://loci.wisc.edu/sample-data/dub).
+
+[Image Timepoint 19]
+
+LimeSeg can be used with simple commands provided by the plugin (under Plugins>LimeSeg in ImageJ menu), or on a more advanced manner with scripting capabilities of ImageJ (macro commands of ImageJ1 or preferentially with groovy scripts).
+
+== Commands : basic usage ==
+
+
+=== Single object segmentation ===
+==== Sphere Seg command ====
+The command Sphere Seg (Plugins>LimeSeg>Sphere Seg) is the easiest way to use LimeSeg. It allows to segment a 3D object starting from a spherical seed. We provide a small tutorial example to show and explain how to use it:
+
+1. Open the sample image. To do this, do File>Import>URL.. and enter the address https://raw.githubusercontent.com/NicoKiaru/TestImages/master/StanfordBunny/Rabbit.tif
+
+2. Draw a circular ROI that is contained within the bunny. And save it in the ROI manager (only this ROi should be contained in the ROI manager).
+[Image rabbit]
+
+3. Execute the Sphere Seg command : Plugins>LimeSeg>Sphere Seg
+
+4. You need to provide the four most important parameters (D_0, F_pressure, Z_Scale, Range_In_D_0 units). 
+
+[Image command]
+* '''D_0''': this parameter expressed in numbers of pixels is the characteristic lowest feature size that you want LimeSeg to detect. A low value (around 1 pixel) will lead to fine details being detected, at the cost of speed. A too high value will lead to important details being missed. Typically the value will be between 1 and 20 pixels. This parameter is in fact the equilibrium spacing between particles used to delimintate the 3D shape.
+* '''F_pressure''' is the "default pressure" exerted on the surface. It also called balloon force in related active contour methods. A positive value will lead to expansion of the surface by default, while a negative value will lead to shrinking. Typical range are from -0.03 to 0.03. 
+* '''Z_Scale''' is the physical ratio of the spacing between slices (Z spacing) and between pixels (X or Y spacing). The CT scan of the bunny is isotropic, hence this ratio is 1. If the Z spacing was 1 um for Z and 200 nm for XY, this parameter should have been set to 5.
+* '''Range in d0 units''' is the size overwhich each particle will look for a local maxima. A value of 2 with a D_0 of 2 means that a local maxima will be looked for within a layer of 2*2 = [-4;+4] pixels around the surface. Typical values are within the range 0.5 to 10.
+Other parameters are as follows:
+* '''show 3D''' : if checked, displays a 3D view of the segmented objects. For more options, see #ref 3D viewer (TODO).
+* '''same cell''': should be unchecked. Useful in case of multiple seeds are used, see #ref multiple objects (TODO).
+* '''Optimisation steps''' : number of optimization steps. If set to -1, the optimization will take place until convergence is met.
+* '''real size XY''' : in physical units the size of a XY pixel. It is useful to get surface and volume data of the segmented object.
+
+To segment this demo image, please choose the parameters as in this image:
+[Image parameters]
+After convergence, you should see in object like this:
+[Image]
+You can go through the 2D image and you should see some point ROI points along the objects, like this:
+[Image]
+Also the 3D viewer should be like this:
+[Image]
+Other outputs are provided as an ImageJ table:
+(TODO) Explain output table.
+
+
+'''Troubleshooting''' 
+* if the circle ROI is too small, the sphere will disappear immediately -> make a bigger circular ROI.
+* if the circle ROI is too big or not fully contained into the bunny, the surface could leak outside -> recenter the ROI.
+* "the segmentation goes crazy and I'd like to stop it". You can either execute the command '''Plugins>LimeSeg>Stop Optimisation''', or you can set a value different from -1 in the number of optimisation steps parameter (10000 steps is enough for this demo case).
+
+As you can see in the 2D View and in the 3D Viewer, the ears of the bunny are cut. This is mainly due to the D_0 parameter being too big. You can visualize this in the 2D viewer : points are are too far apart, and they cannot reproduce the sharp curvature of the bunny ears.
+You can also visualize this in the 3D viewer, but you'll need to do a manipulation to see it clearly : you need to change the view mode from 3D mesh to the surface particles ([https://en.wikipedia.org/wiki/Surfel SURFELs]) used by LimeSeg. For that, launch '''Plugins > LimeSeg > Show GUI'''. This launches the Graphical User Interface of LimeSeg. Click the tab '''Current Cell''' Tab, then in front of '''setCell3DDisplayView''' type 0 and then click on the '''setCell3DDisplayView''' button (typing enter is not enough!). The bunny now displays particles, and you can see that there are too few particles to reproduce the curvature of the bunny ears.
+[Image]
+
+There are multiple ways to overcome this problem. But before doing them, one would want to erase the current segmentation result. To do this, there are two possibilities. 1 - If it is only the last segmentation that you don't like (as it is the case here), you can launch the command : Plugins > LimeSeg > Cancel Last Optimisation. 2 - If you'd like to erase all objects segmented by LimeSeg, then launch the command : Plugins > LimeSeg > Clear all.
+
+You can now relaunch the Sphere Seg command with more appropriate parameters. A set of parameter that works directly is 1.5 0.025 3 : reducing D_0 allows to detect finer details. Notice however that the optimization takes more time with a lower D_0. The ears are now in better shape:
+[Image]
+
+In the previous example, the bunny ears do not show up with D_0=2. Getting a lower D_0 value can help the process. However this is at the cost of speed. There are two alternative approaches that can be useful.
+
+
+==== Refining a segmentation result ====
+The first approah consists in get a roughly defined shape with a high D_0 value. For instance do D_0 = 2, and then refining it. To do that:
+1 - As described in ref plus haut, segment with D_0 = 2 with the Sphere Seg command.
+2 - Refine the shape with the command Plugins>LimeSeg>Refine/Coarsen
+Choose the following parameters:
+D_0 _ end = 1.
+Image
+3 - You can then resume the current optimisation with the command "Resume segmentation" and these parameters:
+Image
+You should then see the ears now correctly segmented. 
+[Image]
+
+
+==== Segmenting a single object starting from multiple spheres ====
+
+An alternative approach is to set multiple seed spheres in the object. This can help LimeSeg to go faster and not "forget" any part of the object. [TODO : with an extract of the ER FIB SEM Dataset]
+
+=== Multiple objects segmentation ===
+
+It is possible to segment multiple non overlapping objects with LimeSeg. The most basic way to do this is through the Sphere Seg command. In order too to an example, you can open the test image fo C Elegans with File>Import>URL.. 
+This is a timepoint extracted from this dataset:
+
+https://raw.githubusercontent.com/NicoKiaru/TestImages/master/CElegans/dub19-half.tif
+
+Like previously, you can store a single circular ROI in the ROI manager and launch the Sphere Seg command. These set of parameters work nicely:
+* 
+* 
+* 
+
+In this kind of image, you'd probably like to segment multiple cells. You can do this one at a time, but sometimes one segmented surface will leak onto another, because the frontiers are sometimes not well defined. One way to avoid this is to segment multiple cells in parallel and avoid surface overlap. LimeSeg can do this : you can define several seeds defining several objects. In this case, the surfaces will repell each other, a bit resembling watershed methods in that aspect.
+
+The fastest one to do this is by storing in the ROi manager several circular ROI. Like in this image:
+
+You can then launch the Sphere Seg command with the previously defined parameters, but be sure to uncheck the sameCell checkbox.
+
+You should obtain an image similar to this:
+
+If you want to segment the whole embryo, you'll need to provide the location of the cell centers, and then launch the command. The following groovy script will segment the demo image here:
+
+[groovy script]
+
+And the result image:
+[image]
+
+You can now store several circular ROI in the ROI manager. When launching the Sphere Seg command, keep same cell unchecked and put the following parameters, which behave nicely in this dataset:
+
+The colors are chosen randomly and you should be able to vizualize the result both in 2D and 3D, similar to this:
+[Images]
+
+The output table also displays the surface and volume of the segmented cells.
+
+==== Cancelling a segmentation result ====
+To erase the last launched segmentation command, you can launch the command : Plugins > LimeSeg > Cancel Last Optimisation
+
+==== Clearing all segmented objects ====
+* launch the command : Plugins > LimeSeg > Clear all
+
+== 3D Viewer ==
+So far LimeSeg provides its own 3D vizualizer. In LimeSeg GUI, several options are available for the 3D Viewer. The 3D view can be moved with arrows, rotated with mouse dragging, and zoomed/unzoomed with the mouse wheel.
+
+* Image synchronization
+First of all, the 3D viewer is synchronized with a selected ImageJ image. This image is automatically set by the user selection during a command launch. However, it can also be set with LimeSeg GUI (Plugins>LimeSeg>Show GUI). To select this image, go to the STATE tab, then choose the proper image by clicking on img, then click on "setWorkingImage" button (do not forget this, otherwise the image selection has no effect).
+
+The synchronization occurs since the current slice is highlighted (downlighted...) in the 3D view in synchronization with the selected slice in the 2D view. Also change frame will change the 3D object displayed in case of a multiframe image.
+
+* Other 3D View parameters.
+The other parameters can be modified within the 3D View Panel. In LimeSeg GUI, the command is executed once the user clicks on the left most button. The other text area are parameters that should be specified before clicking the command button.
+** set3DViewMode If the parameter is 0, all the volumes of the 3D objects are displayed, like this:
+1 : the objects are cropped at the position of zposition (cut above)
+2 : (cut below)
+3 : only the current slice is displayed (cut above and below).
+8 : If an optimization is occuring, the optimized dots are displayed (green, dots which have converged, red, dots which have not converged).
+
+== 3D objects handling in LimeSeg ==
+
+Each time a command is performed which is generating objects, these objects are stored within a global array variable (LimeSeg.allCells). Manipulation of these objects with LimeSeg commands is very basic (they can all be erased with clear all command, or the last created objects can be erased with the cancel last optimization command).
+
+It is possible to manipulate these objects with two methods : with LimeSeg GUI or with imageJ scripting.
+
+1 - Manipulating 3D Objects with LimeSeg GUI
+
+First of all, open LimeSeg GUI (Plugins>LimeSeg>Show GUI). You can then vizualize all the 3D objects created by clickling on the show Table button in the STATE tab. If you have created several objects, they should appear in the tab. 
+
+[TODO]
+
+== Opening / Saving / Exporting LimeSeg objects ==
+[TODO]
+
+== Groovy scripting : advanced usage ==
+
+[TODO]
