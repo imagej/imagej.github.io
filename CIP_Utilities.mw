@@ -63,6 +63,12 @@ show display CIP data within IJ1 component: hyperstack viewer, results table and
 &nbsp;&nbsp;&nbsp;&nbsp;'''handle''': a string with the name of the results table where the data will be appended.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''reset''': a boolean indication whether or not to reset the results table.
 
+<span style="font-size:110%">'''Signature: string'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>handle = cip.show( message* )</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp; will display the message in IJ1 log window.
+
+&nbsp;&nbsp;&nbsp;&nbsp;'''message''' a string to display in the IJ1 log window.
+
 <span style="font-size:110%">'''Output'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''handle''': a string with the name of the created results table or image window.
 
