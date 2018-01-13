@@ -114,6 +114,25 @@ Is a converter that converts image to ImagePlus and CIP regions to rois.
 
 ='''toIJ2'''=
 
+<span style="font-size:110%">'''Description'''</span><br>
+Converts an image (of any type handled by CIP) to an IJ2 Dataset and a region (of any type handled by CIP) to an Imglib2 IterableRegion.
+
+<span style="font-size:110%">'''Signature'''</span><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>IJ2_image = cip.toIJ2( image* )</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;converts an image to an IJ2 Dataset.
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code>IJ2_region = cip.toIJ2( region* )</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;converts an image to an ImgLib2 IterableRegion.
+
+<span style="font-size:110%">'''Input'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''image*''' : an image to convert<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''region*''': a region or a list of region to convert
+
+<span style="font-size:110%">'''Output'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''IJ2_image''': an image of type Dataset<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''IJ2_region''': a list of Iterable region
+
 ='''spacing'''=
 
 ='''unit'''=
