@@ -163,4 +163,16 @@ Retrieves the units of the input image
 
 ='''axes'''=
 
+<span style="font-size:110%">'''Description'''</span><br>
+Retrieves the axes names of the input image
+
+<span style="font-size:110%">'''Signature'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code> axseName = cip.axes( inputImage* )</code>
+
+<span style="font-size:110%">'''Input'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''' : the image process<br>
+
+<span style="font-size:110%">'''Output'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''axesName''' : a list of string representing the input image axes names along each image dimension <br>
+
 ='''list'''=
