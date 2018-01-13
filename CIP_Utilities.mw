@@ -93,6 +93,25 @@ This function is a converter is that IJ1 or IJ2 object and convert them to CIP r
 
 ='''toIJ1'''=
 
+<span style="font-size:110%">'''Description'''</span><br>
+Is a converter that converts image to ImagePlus and CIP regions to rois.
+
+<span style="font-size:110%">'''Signature'''</span><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code> IJ1_image = cip.gauss( image*)</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;converts an image (of any type) to an ImagePlus.
+
+&nbsp;&nbsp;&nbsp;&nbsp;<code> IJ1_roi = cip.gauss( region*)</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;converts a region (of any type) to Rois.
+
+<span style="font-size:110%">'''Input'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''image''' : the image to convert to IJ1 ImagePlus.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''region''': a region or a list of region to convert to a list of list of Rois (where each list of Rois represents the 2d contours of a 3D object)
+
+<span style="font-size:110%">'''Output'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''IJ1_image''' : and ImagePlus version of the input image<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''IJ1_rois''' : a list of list of Rois. each of the input region will be represented by a list of Rois where each Roi is the contour of a 2d  section through the region.
+
 ='''toIJ2'''=
 
 ='''spacing'''=
