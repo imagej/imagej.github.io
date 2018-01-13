@@ -135,6 +135,18 @@ Converts an image (of any type handled by CIP) to an IJ2 Dataset and a region (o
 
 ='''spacing'''=
 
+<span style="font-size:110%">'''Description'''</span><br>
+Retrieves the pixel size of the input image
+
+<span style="font-size:110%">'''Signature'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code> pixelSize = cip.spacing( inputImage* )</code>
+
+<span style="font-size:110%">'''Input'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''' : the image process<br>
+
+<span style="font-size:110%">'''Output'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''pixelSize''' : a list of scalars representing the input image pixel size along each image dimension <br>
+
 ='''unit'''=
 
 ='''axes'''=
