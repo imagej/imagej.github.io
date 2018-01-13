@@ -38,29 +38,29 @@ The measure function instanciate a toolbox adapted for the object to measure. th
 show display CIP data within IJ1 component: hyperstack viewer, results table and log window. this ensures easy communication and reuse of the data by the rest of imageJ ecosystem.
 
 <span style="font-size:110%">'''Signature: image'''</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<code>handle = cip.show( inputImage* , lut )</code>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>handle = cip.show( inputImage* , lut )</code><br
 &nbsp;&nbsp;&nbsp;&nbsp;will display an hyperstack viewer with the name of the image and the requested color luts.
 
-&nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''': the image to display.
-&nbsp;&nbsp;&nbsp;&nbsp;'''lut''': a string or a list of string representing a Look Up Table available in ImageJ menu. For basic colors using the first letter of the lut is enough ('r' in place of 'red' or 'rgb' in place of ['red','green','blue']). 
+&nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''': the image to display.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''lut''': a string or a list of string representing a Look Up Table available in ImageJ menu. For basic colors using the first letter of the lut is enough ('r' in place of 'red' or 'rgb' in place of ['red','green','blue']).
 
 <span style="font-size:110%">'''Signature: region'''</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<code>cip.show( handle* , region*, color, width, scalar, reset )</code>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>cip.show( handle* , region*, color, width, scalar, reset )</code><br>
 &nbsp;&nbsp;&nbsp;&nbsp; will add region contours to the overlay of the image pointed by handle and with the specified properties: color, width, scalars.
 
-&nbsp;&nbsp;&nbsp;&nbsp;'''handle''': a string with the name of the window where region(s) will be displayed the image to display.
-&nbsp;&nbsp;&nbsp;&nbsp;'''region''': a region or list of regions. this works with bot 2d and 3d regions.
-&nbsp;&nbsp;&nbsp;&nbsp;'''color''': a string representing a colors or a lut available in imageJ menu. default is 'lila'. Colors have priority on lut of the same name.
-&nbsp;&nbsp;&nbsp;&nbsp;'''width''': a scalar representing contour width in point. default is 1. 
-&nbsp;&nbsp;&nbsp;&nbsp;'''scalars''': a list of scalars representing a region attribute and being used to choose region color in the lut. default is [1,2,..., n] where n is the number of region provided as input.
+&nbsp;&nbsp;&nbsp;&nbsp;'''handle''': a string with the name of the window where region(s) will be displayed the image to display.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''region''': a region or list of regions. this works with bot 2d and 3d regions.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''color''': a string representing a colors or a lut available in imageJ menu. default is 'lila'. Colors have priority on lut of the same name.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''width''': a scalar representing contour width in point. default is 1.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''scalars''': a list of scalars representing a region attribute and being used to choose region color in the lut. default is [1,2,..., n] where n is the number of region provided as input.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''reset''': a boolean indication whether or not to reset the overlay.
 
 <span style="font-size:110%">'''Signature: table'''</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<code>handle = cip.show( inputTable* , handle, reset)</code>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>handle = cip.show( inputTable* , handle, reset)</code><br>
 &nbsp;&nbsp;&nbsp;&nbsp; will display an IJ1 results table with same headers and rows as the input table.
 
-&nbsp;&nbsp;&nbsp;&nbsp;'''region''': a table to display.
-&nbsp;&nbsp;&nbsp;&nbsp;'''handle''': a string with the name of the results table where the data will be appended.
+&nbsp;&nbsp;&nbsp;&nbsp;'''table''': a table to display.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''handle''': a string with the name of the results table where the data will be appended.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''reset''': a boolean indication whether or not to reset the results table.
 
 <span style="font-size:110%">'''Output'''</span><br>
