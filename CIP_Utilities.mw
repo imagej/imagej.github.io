@@ -180,7 +180,7 @@ Retrieves the axes names of the input image
 <span style="font-size:110%">'''Description'''</span><br>
 utility functions creating a Java list of object from a list of object.
 
-The function was motivation by a peculiarity of Jython scripting langage. In Jython passing a list to CIP function (i.e. a java function) can be wrongly interpreted causing problem down the line. To avoid that list(...) converts a list of object to a java list of object.
+The function was created for a technical reason. In Jython passing a list to CIP function (i.e. a java function) can be wrongly interpreted causing problem down the line. To avoid that list(...) converts a list of object to a java list of object.
 
 <span style="font-size:110%">'''Signature'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;<code>a list of scalar = cip.list(  scalar1 , scalar2, ... )</code><br>
