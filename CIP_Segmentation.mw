@@ -99,6 +99,7 @@ Watershed algorithm partitions an image in regions and outputs a label image of 
 <span style="font-size:110%">'''Output'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''outputImage''' : a label image of the detected maxima<br>
 
-
 <span style="font-size:110%">'''Implementation'''</span><br>
-Both seeded watershed and H-watershed are implemented after the image foresting transform approach [1]. implementation can be found [https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/SeededWatershed.java here] and [https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/HWatershed.java there]
+Both seeded watershed and H-watershed are implemented based on the image foresting transform approach [1]. The H-watershed adds the construction of a hierarchical tree of segment that can be used in further applications. Both  implementations can be found [https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/SeededWatershed.java here] and [https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/HWatershed.java there]
+
+[1] Lotufo, R. D. A., Falcão, A. X., & Zampirolli, F. A. (2002). IFT-watershed from gray-scale marker. In Computer Graphics and Image Processing, 2002. Proceedings. XV Brazilian Symposium on (pp. 146-152). IEEE.
