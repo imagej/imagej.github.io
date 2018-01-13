@@ -81,31 +81,31 @@ Link to function user documentation are provided in the table below.
 | [[CIP Filter#gauss|gauss]]
 | [[CIP Segmentation#threshold|threshold]]
 | [[CIP Format#create|create]] 
-| [[CIP Math#binary operator|add]]
+| [[CIP Math#binary operator|add]], [[CIP Math#binary operator|sub]]
 | [[CIP Utilities#measure|measure]]
 |- 
 | [[CIP Filter#erosion|erosion]]
 | [[CIP Segmentation#maxima|maxima]]
 | [[CIP Format#duplicate|duplicate]] 
-| [[CIP Math#binary operator|sub]]
+| [[CIP Math#binary operator|mul]], [[CIP Math#binary operator|div]]
 | [[CIP Utilities#show|show]]
 |- 
 | [[CIP Filter#dilation|dilation]]
 | [[CIP Segmentation#watershed|watershed]]
 | [[CIP Format#slice|slice]]
-| [[CIP Math#binary operator|mul]]
+| [[CIP Math#unary operator|cos]], [[CIP Math#unary operator|sin]], [[CIP Math#unary operator|tan]]
 | [[CIP Utilities#region|region]]
 |- 
 | [[CIP Filter#opening|opening]]
 | [[CIP Segmentation#label|label]]
 | [[CIP Format#project|project]]
-| [[CIP Math#binary operator|div]]
+| [[CIP Math#unary operator|acos]], [[CIP Math#unary operator|asin]], [[CIP Math#unary operator|atan]]
 | [[CIP Utilities#toIJ1|toIJ1]]
 |- 
 | [[CIP Filter#closing|closing]]
 | 
 | 
-| [[CIP Math#unary operator|cos]], [[CIP Math#unary operator|sin]], [[CIP Math#unary operator|tan]], [[CIP Math#unary operator|acos]], [[CIP Math#unary operator|asin]], [[CIP Math#unary operator|atan]]
+| [[CIP Math#binary operator|min]], [[CIP Math#binary operator|max]]
 | [[CIP Utilities#toIJ2|toIJ2]]
 |- 
 | [[CIP Filter#tophat|tophat]]
@@ -131,15 +131,7 @@ Link to function user documentation are provided in the table below.
 | 
 | [[CIP Math#unary operator|sign]], [[CIP Math#unary operator|abs]]
 | [[CIP Utilities#list|list]]
-|- 
-| 
-| 
-| 
-| [[CIP Math#binary operator|min]], [[CIP Math#binary operator|max]]
-| 
 |}
-
-
 
 =Script example=
 
