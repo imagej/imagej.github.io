@@ -38,32 +38,35 @@ The command Sphere Seg (Plugins>LimeSeg>Sphere Seg) is the easiest way to use Li
 
 1. Open the sample image. To do this, do File>Import>URL.. and enter the address https://raw.githubusercontent.com/NicoKiaru/TestImages/master/StanfordBunny/Rabbit.tif
 
-2. Draw a circular ROI that is contained within the bunny. And save it in the ROI manager (only this ROi should be contained in the ROI manager).
-[Image rabbit]
+2. Draw a circular ROI that is contained within the bunny. And save it in the ROI manager (only this ROI should be contained in the ROI manager).
+
+[[File:LimeSeg-RabbitWithCircularROI.png]]
 
 3. Execute the Sphere Seg command : Plugins>LimeSeg>Sphere Seg
 
-4. You need to provide the four most important parameters (D_0, F_pressure, Z_Scale, Range_In_D_0 units). 
-
-[Image command]
-* '''D_0''': this parameter expressed in numbers of pixels is the characteristic lowest feature size that you want LimeSeg to detect. A low value (around 1 pixel) will lead to fine details being detected, at the cost of speed. A too high value will lead to important details being missed. Typically the value will be between 1 and 20 pixels. This parameter is in fact the equilibrium spacing between particles used to delimintate the 3D shape.
-* '''F_pressure''' is the "default pressure" exerted on the surface. It also called balloon force in related active contour methods. A positive value will lead to expansion of the surface by default, while a negative value will lead to shrinking. Typical range are from -0.03 to 0.03. 
+4. You need to provide the four most important parameters: 
+* '''D_0''': this parameter expressed in numbers of pixels (it can be a real value like 1.2 pixels) is the smallest feature size that you want LimeSeg to detect. A low value (~ 1 pixel) will lead to fine details being detected, at the cost of speed. A too high value will lead to important details being missed. The value is typically between 1 and >20 pixels. (More precisely, D_0 is the equilibrium spacing between the particles used by LimeSeg to delineate the 3D shape.)
+* '''F_pressure''' is the "default pressure" exerted on the surface. It also called balloon force in related active contour methods. A positive value will lead to expansion of the surface by default, while a negative value will lead to shrinking. Its typical range is [-0.03..0.03]. 
 * '''Z_Scale''' is the physical ratio of the spacing between slices (Z spacing) and between pixels (X or Y spacing). The CT scan of the bunny is isotropic, hence this ratio is 1. If the Z spacing was 1 um for Z and 200 nm for XY, this parameter should have been set to 5.
-* '''Range in d0 units''' is the size overwhich each particle will look for a local maxima. A value of 2 with a D_0 of 2 means that a local maxima will be looked for within a layer of 2*2 = [-4;+4] pixels around the surface. Typical values are within the range 0.5 to 10.
-Other parameters are as follows:
+* '''Range in d0 units''' is the size over which each particle will look for a local maximum. A value of 2 with a D_0 of 2 means that a local maximum will be looked for within a layer of 2*2 = [-4..+4] pixels around the surface. Typical values are from 0.5 to >10.
+5. Other parameters:
 * '''show 3D''' : if checked, displays a 3D view of the segmented objects. For more options, see #ref 3D viewer (TODO).
-* '''same cell''': should be unchecked. Useful in case of multiple seeds are used, see #ref multiple objects (TODO).
+* '''same cell''': Do not matter in a single ROI is provided. Useful in case multiple seeds are used, see #ref multiple objects (TODO).
 * '''Optimisation steps''' : number of optimization steps. If set to -1, the optimization will take place until convergence is met.
-* '''real size XY''' : in physical units the size of a XY pixel. It is useful to get surface and volume data of the segmented object.
+* '''real size XY''' : the size of a XY pixel in physical units. Useful to get the correct  surface and volume data of the segmented object.
 
 To segment this demo image, please choose the parameters as in this image:
-[Image parameters]
-After convergence, you should see in object like this:
-[Image]
-You can go through the 2D image and you should see some point ROI points along the objects, like this:
-[Image]
+
+[[File:LimeSeg-SphereSegParameters.png]]
+
+After convergence, you can go through the 2D image and you should see some points along the objects, like this:
+
+[[File:LimeSeg-Rabbit2DOverlay.png]]
+
 Also the 3D viewer should be like this:
-[Image]
+
+[[File:LimeSeg-3DRabbit-NoEars.png]]
+
 Other outputs are provided as an ImageJ table:
 (TODO) Explain output table.
 
@@ -83,7 +86,6 @@ You can now relaunch the Sphere Seg command with more appropriate parameters. A 
 [Image]
 
 In the previous example, the bunny ears do not show up with D_0=2. Getting a lower D_0 value can help the process. However this is at the cost of speed. There are two alternative approaches that can be useful.
-
 
 ==== Refining a segmentation result ====
 The first approah consists in get a roughly defined shape with a high D_0 value. For instance do D_0 = 2, and then refining it. To do that:
