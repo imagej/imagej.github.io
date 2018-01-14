@@ -25,9 +25,9 @@ TODO / Coming soon.
 
 LimeSeg is a modular 3D segmentation plugin. It is a particle-based active contour method. It can segment objects from 3D images where 3D objects are labelled on their outline, like cells labeled on their membrane, as shown in the image below (source of the image : https://loci.wisc.edu/sample-data/dub).
 
-[Image Timepoint 19]
+[[File:Dub-scaled0.5XY-Tp19.png]]
 
-LimeSeg can be used with simple commands provided by the plugin (under Plugins>LimeSeg in ImageJ menu), or on a more advanced manner with scripting capabilities of ImageJ (macro commands of ImageJ1 or preferentially with groovy scripts).
+LimeSeg can be used with simple commands provided by the plugin (under Plugins>LimeSeg in ImageJ menu), or on a more advanced manner with scripting capabilities of ImageJ (macro commands of ImageJ1 or preferentially with [[Groovy_Scripting|groovy scripts]]).
 
 == Commands : basic usage ==
 
