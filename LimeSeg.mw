@@ -102,7 +102,7 @@ The shape is now more precise, as you can see in the 2D view and in 3D:
 
 [[File:LimeSeg_2D3DViews_Refined_Vesicle.png]]
 
-==== Segmenting a single object starting from multiple spheres ====
+==== Alternative ways to segment a single object: multiple spheres and skeletons ====
 
 If the object you want to segment is tortuous or big, starting with a single spherical may not give good results. Here are two alternative ways to segment a single object.
 
