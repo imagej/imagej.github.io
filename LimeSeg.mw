@@ -34,15 +34,15 @@ LimeSeg can be used with simple commands provided by the plugin (under Plugins>L
 
 === Single object segmentation ===
 ==== Sphere Seg command ====
-The command Sphere Seg (Plugins>LimeSeg>Sphere Seg) is the easiest way to use LimeSeg. It allows to segment a 3D object starting from a spherical seed. Here's an example to show how to use it:
+The command Sphere Seg ('''Plugins>LimeSeg>Sphere Seg''') is the easiest way to use LimeSeg. It allows to segment a 3D object starting from a spherical seed. Here's an example to show how to use it:
 
-1. Open a sample vesicle image. To do this, do File>Import>URL.. and enter the address https://raw.githubusercontent.com/NicoKiaru/TestImages/master/Vesicles/Vesicles.tif
+1. Open a sample vesicle image. To do this, do '''File>Import>URL..''' and enter the address https://raw.githubusercontent.com/NicoKiaru/TestImages/master/Vesicles/Vesicles.tif
 
 2. Draw a circular ROI that is contained within the vesicle And save it in the ROI manager with the t key or with Edit>Selection>Add To Manager (only this ROI should be contained in the ROI manager).
 
 [[File:LimeSeg_Seed_Vesicle.png]]
 
-3. Execute the Sphere Seg command : Plugins>LimeSeg>Sphere Seg
+3. Execute the Sphere Seg command : '''Plugins>LimeSeg>Sphere Seg'''
 
 4. You need to provide the four most important parameters: 
 * '''D_0''': this parameter expressed in numbers of pixels (it can be a real value like 1.2 pixels) is the smallest feature size that you want LimeSeg to detect. A low value (~ 1 pixel) will lead to fine details being detected, at the cost of speed. A too high value will lead to important details being missed. The value is typically between 1 and >20 pixels. (More precisely, D_0 is the equilibrium spacing between the particles used by LimeSeg to delineate the 3D shape.)
@@ -78,26 +78,17 @@ Other outputs are provided as an ImageJ table:
 * '''Channel''' : Channel where the object has been segmented
 * '''Mesh?''' : indicates where a mesh has been reconstructed from the object surfels
 * ''' Euler characteristic''' : [[https://en.wikipedia.org/wiki/Euler_characteristic Euler characteristic]] of the reconstructed mesh. This value needs to be 2 for a simply closed surface, 0 for a torus, etc. If its value is not in accordance with your expectations, the surface and volume values will be wrong.
-* ''' Free edges''' : Number of free edges of the 3D reconstructed mesh. Should be equall to zero to trust the givent surface and volume.
+* ''' Free edges''' : Number of free edges of the 3D reconstructed mesh. Should be equal to zero to trust the given surface and volume.
 * ''' Surface ''' : Surface of the object in (XY_pixels)^2 units
 * ''' Volume ''' : Surface of the object in (XY_pixels)^3 units
 * ''' Real Surface ''' : Physical surface of the object
 * ''' Real Volume ''' : Physical volume of the object
-'''Troubleshooting''' 
-* if the circle ROI is too small, the sphere will disappear immediately -> make a bigger circular ROI.
-* if the circle ROI is too big or not fully contained into the bunny, the surface could leak outside -> recenter the ROI.
+
+'''Troubleshooting'''
+ 
+* If the circle ROI is too small, the sphere will disappear immediately -> make a bigger circular ROI.
+* If the circle ROI is too big or not fully contained into the  vesicle, the surface could leak outside -> recenter the ROI.
 * "the segmentation goes crazy and I'd like to stop it". You can either execute the command '''Plugins>LimeSeg>Stop Optimisation''', or you can set a value different from -1 in the number of optimisation steps parameter (10000 steps is enough for this demo case).
-
-As you can see in the 2D View and in the 3D Viewer, the ears of the bunny are cut. This is mainly due to the D_0 parameter being too big. You can visualize this in the 2D viewer : points are are too far apart, and they cannot reproduce the sharp curvature of the bunny ears.
-You can also visualize this in the 3D viewer, but you'll need to do a manipulation to see it clearly : you need to change the view mode from 3D mesh to the surface particles ([https://en.wikipedia.org/wiki/Surfel SURFELs]) used by LimeSeg. For that, launch '''Plugins > LimeSeg > Show GUI'''. This launches the Graphical User Interface of LimeSeg. Click the tab '''Current Cell''' Tab, then in front of '''setCell3DDisplayView''' type 0 and then click on the '''setCell3DDisplayView''' button (typing enter is not enough!). The bunny now displays particles, and you can see that there are too few particles to reproduce the curvature of the bunny ears.
-[Image]
-
-There are multiple ways to overcome this problem. But before doing them, one would want to erase the current segmentation result. To do this, there are two possibilities. 1 - If it is only the last segmentation that you don't like (as it is the case here), you can launch the command : Plugins > LimeSeg > Cancel Last Optimisation. 2 - If you'd like to erase all objects segmented by LimeSeg, then launch the command : Plugins > LimeSeg > Clear all.
-
-You can now relaunch the Sphere Seg command with more appropriate parameters. A set of parameter that works directly is 1.5 0.025 3 : reducing D_0 allows to detect finer details. Notice however that the optimization takes more time with a lower D_0. The ears are now in better shape:
-[Image]
-
-In the previous example, the bunny ears do not show up with D_0=2. Getting a lower D_0 value can help the process. However this is at the cost of speed. There are two alternative approaches that can be useful.
 
 ==== Refining a segmentation result ====
 The first approah consists in get a roughly defined shape with a high D_0 value. For instance do D_0 = 2, and then refining it. To do that:
