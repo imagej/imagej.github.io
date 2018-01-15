@@ -91,17 +91,16 @@ Other outputs are provided as an ImageJ table:
 * "the segmentation goes crazy and I'd like to stop it". You can either execute the command '''Plugins>LimeSeg>Stop Optimisation''', or you can set a value different from -1 in the number of optimisation steps parameter (10000 steps is enough for this demo case).
 
 ==== Refining a segmentation result ====
-The first approah consists in get a roughly defined shape with a high D_0 value. For instance do D_0 = 2, and then refining it. To do that:
-1 - As described in ref plus haut, segment with D_0 = 2 with the Sphere Seg command.
-2 - Refine the shape with the command Plugins>LimeSeg>Refine/Coarsen
-Choose the following parameters:
-D_0 _ end = 1.
-Image
-3 - You can then resume the current optimisation with the command "Resume segmentation" and these parameters:
-Image
-You should then see the ears now correctly segmented. 
-[Image]
+It is possible to refine a segmentation by decreasing D_0 after a first roughly defined shape is found. Doing a first segmentation at a high D_0 and then decreasing it by refinement is usually faster than starting the segmentation at a low D_0 value. This can be done after a first segmentation by using the '''Plugins>LimeSeg>Coarsen/Refine''' command.
 
+For instance, in the vesicle example:
+1 - Right after the convergence is reached for D_0 = 4, launch the "Plugins>LimeSeg>Coarsen/Refine" command with these parameters: 
+Choose the following parameters: D_0_ini = 4; D_0_end = 2; range_in_D_O_units=2.
+2 - After the command is finished, you need to resume the segmentation until convergence is newly reached. To do this, execute the command '''Plugins>LimeSeg>Resume Seg'''. You can keep F_pressure to zero, since no bias is required anymore, and set the real size of the pixel as before (0.133).
+
+The shape is now more precise, as you can see in the 2D view and in 3D:
+
+[[File:LimeSeg_2D3DViews_Refined_Vesicle.png]]
 
 ==== Segmenting a single object starting from multiple spheres ====
 
