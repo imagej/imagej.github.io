@@ -46,8 +46,8 @@ The command Sphere Seg (Plugins>LimeSeg>Sphere Seg) is the easiest way to use Li
 
 4. You need to provide the four most important parameters: 
 * '''D_0''': this parameter expressed in numbers of pixels (it can be a real value like 1.2 pixels) is the smallest feature size that you want LimeSeg to detect. A low value (~ 1 pixel) will lead to fine details being detected, at the cost of speed. A too high value will lead to important details being missed. The value is typically between 1 and >20 pixels. (More precisely, D_0 is the equilibrium spacing between the particles used by LimeSeg to delineate the 3D shape.)
-* '''F_pressure''' is the "default pressure" exerted on the surface. It also called balloon force in related active contour methods. A positive value will lead to expansion of the surface by default, while a negative value will lead to shrinking. Its typical range is [-0.03..0.03]. 
-* '''Z_Scale''' is the physical ratio of the spacing between slices (Z spacing) and between pixels (X or Y spacing). The vesicles was imaged with pixels of 133 nm and a z-spacing of 340 nm. Hence this parameter should be set to 340/133 ~ 2.54.
+* '''F_pressure''' is the "default pressure" exerted on the surface (also called balloon force in related active contour methods). A positive value will lead to expansion of the surface by default, while a negative value will lead to shrinking. Its typical range is [-0.03..0.03]. 
+* '''Z_Scale''' is the physical ratio of the spacing between slices (Z spacing) and between pixels (X or Y spacing). The vesicles were imaged with pixels of 133 nm and a z-spacing of 340 nm. Hence this parameter should be set to 340/133 ~ 2.54.
 * '''Range in d0 units''' is the size over which each particle will look for a local maximum. A value of 2 with a D_0 of 2 means that a local maximum will be looked for within a layer of 2*2 = [-4..+4] pixels around the surface. Typical values are from 0.5 to >10.
 5. Other parameters:
 * '''show 3D''' : if checked, displays a 3D view of the segmented objects. For more options, see #ref 3D viewer (TODO).
