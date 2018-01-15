@@ -34,11 +34,11 @@ LimeSeg can be used with simple commands provided by the plugin (under Plugins>L
 
 === Single object segmentation ===
 ==== Sphere Seg command ====
-The command Sphere Seg (Plugins>LimeSeg>Sphere Seg) is the easiest way to use LimeSeg. It allows to segment a 3D object starting from a spherical seed. We provide a small tutorial example to show and explain how to use it:
+The command Sphere Seg (Plugins>LimeSeg>Sphere Seg) is the easiest way to use LimeSeg. It allows to segment a 3D object starting from a spherical seed. Here's an example to show how to use it:
 
-1. Open the sample image. To do this, do File>Import>URL.. and enter the address https://raw.githubusercontent.com/NicoKiaru/TestImages/master/Vesicles/Vesicles.tif
+1. Open a sample vesicle image. To do this, do File>Import>URL.. and enter the address https://raw.githubusercontent.com/NicoKiaru/TestImages/master/Vesicles/Vesicles.tif
 
-2. Draw a circular ROI that is contained within the bunny. And save it in the ROI manager (only this ROI should be contained in the ROI manager).
+2. Draw a circular ROI that is contained within the vesicle And save it in the ROI manager with the t key or with Edit>Selection>Add To Manager (only this ROI should be contained in the ROI manager).
 
 [[File:LimeSeg_Seed_Vesicle.png]]
 
@@ -47,13 +47,13 @@ The command Sphere Seg (Plugins>LimeSeg>Sphere Seg) is the easiest way to use Li
 4. You need to provide the four most important parameters: 
 * '''D_0''': this parameter expressed in numbers of pixels (it can be a real value like 1.2 pixels) is the smallest feature size that you want LimeSeg to detect. A low value (~ 1 pixel) will lead to fine details being detected, at the cost of speed. A too high value will lead to important details being missed. The value is typically between 1 and >20 pixels. (More precisely, D_0 is the equilibrium spacing between the particles used by LimeSeg to delineate the 3D shape.)
 * '''F_pressure''' is the "default pressure" exerted on the surface. It also called balloon force in related active contour methods. A positive value will lead to expansion of the surface by default, while a negative value will lead to shrinking. Its typical range is [-0.03..0.03]. 
-* '''Z_Scale''' is the physical ratio of the spacing between slices (Z spacing) and between pixels (X or Y spacing). The CT scan of the bunny is isotropic, hence this ratio is 1. If the Z spacing was 1 um for Z and 200 nm for XY, this parameter should have been set to 5.
+* '''Z_Scale''' is the physical ratio of the spacing between slices (Z spacing) and between pixels (X or Y spacing). The vesicles was imaged with pixels of 133 nm and a z-spacing of 340 nm. Hence this parameter should be set to 340/133 ~ 2.54.
 * '''Range in d0 units''' is the size over which each particle will look for a local maximum. A value of 2 with a D_0 of 2 means that a local maximum will be looked for within a layer of 2*2 = [-4..+4] pixels around the surface. Typical values are from 0.5 to >10.
 5. Other parameters:
 * '''show 3D''' : if checked, displays a 3D view of the segmented objects. For more options, see #ref 3D viewer (TODO).
-* '''same cell''': Do not matter in a single ROI is provided. Useful in case multiple seeds are used, see #ref multiple objects (TODO).
+* '''same cell''': this parameter is not important in this case, since only a single ROI is provided. It will become useful when multiple seeds are needed, see #ref multiple objects (TODO) and #single big objects.
 * '''Optimisation steps''' : number of optimization steps. If set to -1, the optimization will take place until convergence is met.
-* '''real size XY''' : the size of a XY pixel in physical units. Useful to get the correct  surface and volume data of the segmented object.
+* '''real size XY''' : the size of a XY pixel in physical units. Here a pixel is 133 nm. To get the volume and surface in microns squared and microns cubed units, set this parameter to 0.133.
 
 To segment this demo image, please choose the parameters as in this image:
 
@@ -63,14 +63,26 @@ After convergence, you can go through the 2D image and you should see some point
 
 [[File:LimeSeg_2DView_Vesicle.png]]
 
-Also the 3D viewer should be like this:
+Also the 3D viewer should give a 3D View of the vesicle:
 
 [[File:LimeSeg_3DView_Vesicle.png]]
 
 Other outputs are provided as an ImageJ table:
-(TODO) Explain output table.
+[[File:LimeSeg_Results_Vesicle.png]]
 
 
+* '''Cell_Name''' : each 3D object that LimeSeg generated is a "Cell" object. By default, these objects have a String identifier: Cell_0, Cell_1, Cell_2...
+* '''Number of Surfels''' : number of surface elements in the generated 3D object. This number is also the number of vertex within the 3D Mesh.
+* '''Center X,Y,Z''' : position of the center of mass of the object Vertexes, expressed in pixels for XY, and in slice number for Z (using IJ1 numbering)
+* '''Frame''' : frame where the object has been segmented
+* '''Channel''' : Channel where the object has been segmented
+* '''Mesh?''' : indicates where a mesh has been reconstructed from the object surfels
+* ''' Euler characteristic''' : [[https://en.wikipedia.org/wiki/Euler_characteristic Euler characteristic]] of the reconstructed mesh. This value needs to be 2 for a simply closed surface, 0 for a torus, etc. If its value is not in accordance with your expectations, the surface and volume values will be wrong.
+* ''' Free edges''' : Number of free edges of the 3D reconstructed mesh. Should be equall to zero to trust the givent surface and volume.
+* ''' Surface ''' : Surface of the object in (XY_pixels)^2 units
+* ''' Volume ''' : Surface of the object in (XY_pixels)^3 units
+* ''' Real Surface ''' : Physical surface of the object
+* ''' Real Volume ''' : Physical volume of the object
 '''Troubleshooting''' 
 * if the circle ROI is too small, the sphere will disappear immediately -> make a bigger circular ROI.
 * if the circle ROI is too big or not fully contained into the bunny, the surface could leak outside -> recenter the ROI.
