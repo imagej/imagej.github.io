@@ -36,11 +36,11 @@ LimeSeg can be used with simple commands provided by the plugin (under Plugins>L
 ==== Sphere Seg command ====
 The command Sphere Seg (Plugins>LimeSeg>Sphere Seg) is the easiest way to use LimeSeg. It allows to segment a 3D object starting from a spherical seed. We provide a small tutorial example to show and explain how to use it:
 
-1. Open the sample image. To do this, do File>Import>URL.. and enter the address https://raw.githubusercontent.com/NicoKiaru/TestImages/master/StanfordBunny/Rabbit.tif
+1. Open the sample image. To do this, do File>Import>URL.. and enter the address https://raw.githubusercontent.com/NicoKiaru/TestImages/master/Vesicles/Vesicles.tif
 
 2. Draw a circular ROI that is contained within the bunny. And save it in the ROI manager (only this ROI should be contained in the ROI manager).
 
-[[File:LimeSeg-RabbitWithCircularROI.png]]
+[[File:LimeSeg_Seed_Vesicle.png]]
 
 3. Execute the Sphere Seg command : Plugins>LimeSeg>Sphere Seg
 
@@ -57,15 +57,15 @@ The command Sphere Seg (Plugins>LimeSeg>Sphere Seg) is the easiest way to use Li
 
 To segment this demo image, please choose the parameters as in this image:
 
-[[File:LimeSeg-SphereSegParameters.png]]
+[[File:LimeSeg_Parameters_Vesicle.png]]
 
 After convergence, you can go through the 2D image and you should see some points along the objects, like this:
 
-[[File:LimeSeg-Rabbit2DOverlay.png]]
+[[File:LimeSeg_2DView_Vesicle.png]]
 
 Also the 3D viewer should be like this:
 
-[[File:LimeSeg-3DRabbit-NoEars.png]]
+[[File:LimeSeg_3DView_Vesicle.png]]
 
 Other outputs are provided as an ImageJ table:
 (TODO) Explain output table.
