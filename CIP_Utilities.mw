@@ -29,6 +29,13 @@ This function performs measures in image and region and return them as a table.
 <span style="font-size:110%">'''Output'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''outputTable''': the measures table. Each column represent one of the requested measure while the first column provides a reference to the measures object. Each row contains the measures performed for a particular object.
 
+<span style="font-size:110%">'''Example'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>regions = cip.region(labelMap)</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>table = cip.measure(regions,  ’size’ , ’nuclei’ )</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>cip.show( table )</code><br>
+In the first line labelMap is the left image in the illustration below. In the second line, 'size' is the measure performed, 'nuclei' is used to customize region names (see object column in the illustration below).
+[[File:CIP_measure.PNG|none|400px]]<br>
+
 <span style="font-size:110%">'''Implementation'''</span><br>
 The measure function instanciate a toolbox adapted for the object to measure. the toolbox can receive new measures tools to extend the existing measure set.
 
