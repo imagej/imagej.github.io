@@ -99,6 +99,10 @@ This function reduce input image dimensionality by applying an operation to all 
 &nbsp;&nbsp;&nbsp;&nbsp;'''valMap''' : the projected image. The singleton dimension(s) are dropped so the image dimensionnality is effectively smaller than the input dimensionnality.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''argMap''' : the argument of the projection. that is for a max projection for instance the postions at the pixel value was maximum along the projection dimension.<br>
 
+<span style="font-size:110%">'''Example'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>img2 = cip.project( img1 , 'dimension',2 )</code>
+[[File:CIP_project.PNG|none|400px]]<br>
+
 <span style="font-size:110%">'''Implementation'''</span><br>
 The [https://github.com/benoalo/CIP/blob/master/src/main/java/invizio/cip/misc/Project2CIP.java projection] is implemented as part of CIP.
 
