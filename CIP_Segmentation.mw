@@ -25,6 +25,10 @@ this function creates a binary image from an input graylevel image
 &nbsp;&nbsp;&nbsp;&nbsp;'''outputImage''': the processed image.
 &nbsp;&nbsp;&nbsp;&nbsp;'''threshold''': the threshold value calculated for the image and method provided as input.
 
+<span style="font-size:110%">'''Example'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>img2 = cip.threshold( img1 , 500 )</code>
+[[File:CIP_threshold.PNG|none|400px]]<br>
+
 <span style="font-size:110%">'''Implementation'''</span><br>
 the threshold method wraps ops threshold methods
 
