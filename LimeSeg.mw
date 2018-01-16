@@ -186,6 +186,27 @@ To erase the last launched segmentation command, you can launch the command : ''
 ==== Erasing all 3D objects ====
 * Command '''Plugins>LimeSeg>Clear all'''
 
+== Graphical user interface ==
+The command Plugins>LimeSeg> Show GUI displays LimeSeg GUI. This graphical interface allows to do almost almost everything in LimeSeg, however its structure needs to understand a bit more the core structure of LimeSeg. Each tab provided on the left of LimeSeg correspond to specific actions that will be detailed below, but before the structure of LimeSeg will be developed.
+
+LimeSeg mainly consists of:
+* A "State"
+* Objects that are segmented
+* An Optimizer
+* Viewers
+
+The "State" of LimeSeg basically represents on which 3D image LimeSeg is currently working on. It consists of :
+1. A working image, which can be set within State>setWorkingImage
+2. A current frame, (LimeSeg.currentFrame)
+3. A current channel, (LimeSeg.currentChannel)
+
+
+
+
+
+
+
+
 == 3D Viewer ==
 So far LimeSeg provides its own 3D vizualizer. In LimeSeg GUI, several options are available for the 3D Viewer. The 3D view can be moved with arrows, rotated with mouse dragging, and zoomed/unzoomed with the mouse wheel.
 
