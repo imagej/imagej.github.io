@@ -144,7 +144,7 @@ https://raw.githubusercontent.com/NicoKiaru/TestImages/master/CElegans/dub19-hal
 Like previously, you can store a single circular ROI in the ROI manager and launch the Sphere Seg command. This set of parameters work nicely:
 * D_0 = 4
 * F_Pressure = 0.015
-* Range_in_D0_units = 2
+* Range_in_D0_units = 1.5
 * ZScale=3.5
 
 In this kind of image, you'd probably like to segment multiple cells. You can do this one at a time, but sometimes one segmented surface will leak onto another, because the frontiers are sometimes not well defined. One way to avoid this is to segment multiple cells in parallel and avoid surface overlap. LimeSeg can do this : you can define several seeds defining several objects. In this case, the surfaces will repel each other, a bit resembling watershed methods in that aspect.
@@ -173,6 +173,7 @@ The colors are chosen randomly and you should be able to vizualize the result bo
 [Images]
 
 The output table also displays the surface and volume of the segmented cells.
+
 === Others commands ===
 ==== Cancelling a segmentation result ====
 To erase the last launched segmentation command, you can launch the command : '''Plugins > LimeSeg > Cancel Last Optimisation'''
