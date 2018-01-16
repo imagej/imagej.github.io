@@ -48,11 +48,12 @@ The function duplicate an input image or a crop if the input image
 <span style="font-size:110%">'''Output'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''outputImage*''' : the duplicated image<br>
 
+<span style="font-size:110%">'''Example'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>img2 = cip.duplicate( img1 , 'origin', [300,200], 'size', [150,150] )</code>
+[[File:CIP_duplicate.PNG|none|400px]]<br>
+
 <span style="font-size:110%">'''Implementation'''</span><br>
 the shallow copy is done with Views.offsetInterval in ImgLib2 and the deep copy is done with the ops function copy().rai().
-
-<span style="font-size:110%">'''Note'''</span><br>
-Currently if the origin or origin+size are out of the image the function will give an error it would be nice to specify a boundary condition and allow image frame to be extended.
 
 ='''slice'''=
 
