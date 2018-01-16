@@ -141,38 +141,50 @@ This is a timepoint extracted from this dataset:
 
 https://raw.githubusercontent.com/NicoKiaru/TestImages/master/CElegans/dub19-half.tif
 
-Like previously, you can store a single circular ROI in the ROI manager and launch the Sphere Seg command. These set of parameters work nicely:
-* 
-* 
-* 
+Like previously, you can store a single circular ROI in the ROI manager and launch the Sphere Seg command. This set of parameters work nicely:
+* D_0 = 4
+* F_Pressure = 0.015
+* Range_in_D0_units = 2
+* ZScale=3.5
 
-In this kind of image, you'd probably like to segment multiple cells. You can do this one at a time, but sometimes one segmented surface will leak onto another, because the frontiers are sometimes not well defined. One way to avoid this is to segment multiple cells in parallel and avoid surface overlap. LimeSeg can do this : you can define several seeds defining several objects. In this case, the surfaces will repell each other, a bit resembling watershed methods in that aspect.
+In this kind of image, you'd probably like to segment multiple cells. You can do this one at a time, but sometimes one segmented surface will leak onto another, because the frontiers are sometimes not well defined. One way to avoid this is to segment multiple cells in parallel and avoid surface overlap. LimeSeg can do this : you can define several seeds defining several objects. In this case, the surfaces will repel each other, a bit resembling watershed methods in that aspect.
 
-The fastest one to do this is by storing in the ROi manager several circular ROI. Like in this image:
+You can define multiple seeds (one per cell) simply by storing multiple circular ROIs in the ROI manager. Like in this image:
 
-You can then launch the Sphere Seg command with the previously defined parameters, but be sure to uncheck the sameCell checkbox.
+[[File:missing]]
+
+Of course the seeds can be located at different planes.
+
+You can then launch the '''Plugins>LimeSeg>Sphere Seg''' command with the previously defined parameters, but '''be sure to uncheck the sameCell checkbox''' (otherwise surfaces will merge).
 
 You should obtain an image similar to this:
+
+[[File:missing]]
 
 If you want to segment the whole embryo, you'll need to provide the location of the cell centers, and then launch the command. The following groovy script will segment the demo image here:
 
 [groovy script]
 
-And the result image:
-[image]
+Providing the result image:
 
-You can now store several circular ROI in the ROI manager. When launching the Sphere Seg command, keep same cell unchecked and put the following parameters, which behave nicely in this dataset:
+[image]
 
 The colors are chosen randomly and you should be able to vizualize the result both in 2D and 3D, similar to this:
 [Images]
 
 The output table also displays the surface and volume of the segmented cells.
-
+=== Others commands ===
 ==== Cancelling a segmentation result ====
-To erase the last launched segmentation command, you can launch the command : Plugins > LimeSeg > Cancel Last Optimisation
+To erase the last launched segmentation command, you can launch the command : '''Plugins > LimeSeg > Cancel Last Optimisation'''
 
 ==== Clearing all segmented objects ====
-* launch the command : Plugins > LimeSeg > Clear all
+* launch the command : '''Plugins > LimeSeg > Clear all'''
+
+==== Stopping a segmentation in progress ====
+* Command '''Plugins>LimeSeg>Stop optimization'''
+
+==== Erasing all 3D objects ====
+* Command '''Plugins>LimeSeg>Clear all'''
 
 == 3D Viewer ==
 So far LimeSeg provides its own 3D vizualizer. In LimeSeg GUI, several options are available for the 3D Viewer. The 3D view can be moved with arrows, rotated with mouse dragging, and zoomed/unzoomed with the mouse wheel.
