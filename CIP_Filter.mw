@@ -23,6 +23,10 @@ gauss creates a gaussian blurred image. it convolves the image with a gaussian w
 <span style="font-size:110%">'''Output'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''outputImage''': the processed image. it always as the same size as the input image.
 
+<span style="font-size:110%">'''Example'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>img2 = cip.gauss( img1 , 5 )</code>
+[[File:CIP_gauss.PNG|none|400px]]<br>
+
 <span style="font-size:110%">'''Implementation'''</span><br>
 CIP gauss implementation wraps the gauss ops, itself relying on the [https://github.com/imglib/imglib2-algorithm/tree/master/src/main/java/net/imglib2/algorithm/gauss3 imglib2 gauss3 implementation].
 
