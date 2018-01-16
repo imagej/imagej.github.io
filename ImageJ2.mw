@@ -33,6 +33,16 @@ ImageJ2 provides a wealth of new features and capabilities:
 ** Plugins appear in the menu automatically without plugins.config files.
 ** Reusable in many contexts: [[KNIME]], [[CellProfiler]], [[OMERO]], [[headless]]...
 
+=== Integrated search bar ===
+
+[[File:Search-bar.png|600px]]
+
+The search bar finds commands, and can search the ImageJ wiki as well as the [http://forum.imagej.net/ ImageJ Forum] if you check those respective checkboxes.
+
+For power users and developers, the search bar supports execution of "code snippets"—single lines of code for performing tasks—by starting the query with <code>!</code>. Any code that works in the [[Script Interpreter]] should be usable as a code snippet.
+
+Developers can extend the capabilities of the search bar by writing [https://github.com/scijava/scijava-search/blob/scijava-search-0.3.1/src/main/java/org/scijava/search/Searcher.java#L36-L46 Searcher] plugins.
+
 === Improved image I/O with the SCIFIO library ===
 
 ImageJ2 uses the [[SCIFIO]] library (SCientific Image Format Input and Output)  by default for most image input tasks. You can change this behavior at any time by running {{bc | Edit | Options | ImageJ2}} and modifying the ''Use SCIFIO when opening files'' option.
