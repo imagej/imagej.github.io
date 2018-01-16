@@ -148,6 +148,10 @@ This filter subtract an opening of the input image to the input image. It remove
 <span style="font-size:110%">'''Output'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''outputImage''': the processed image.
 
+<span style="font-size:110%">'''Example'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>img2 = cip.tophat( img1 , 5, 'disk' )</code>
+[[File:CIP_tophat.PNG|none|500px]]<br>
+
 <span style="font-size:110%">'''Implementation'''</span><br>
 The function relies on ops for subtraction and CIP for the opening.
 
