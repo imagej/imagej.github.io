@@ -73,6 +73,10 @@ This function reduce input image dimensionality by duplicating a region of the s
 <span style="font-size:110%">'''Output'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''outputImage*''' : the duplicated image. The singleton dimension(s) are dropped so the image dimensionnality is effectively smaller than the input dimensionnality.<br>
 
+<span style="font-size:110%">'''Example'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>img2 = cip.slice( img1 , 'dimension', 2, 'position', 0 )</code>
+[[File:CIP_slice.PNG|none|400px]]<br>
+
 <span style="font-size:110%">'''Implementation'''</span><br>
 The shallow copy is done with Views.offsetInterval in ImgLib2 and the deep copy also apply the ops function copy().rai().
 
