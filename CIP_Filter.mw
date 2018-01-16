@@ -221,5 +221,9 @@ This function invert the gray value of the input image such that each pixel valu
 <span style="font-size:110%">'''Output'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''outputImage''': the processed image.
 
+<span style="font-size:110%">'''Example'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>img2 = cip.invert( img1 )</code>
+[[File:CIP_invert.PNG|none|400px]]<br>
+
 <span style="font-size:110%">'''Implementation'''</span><br>
 The function implementation uses ops map function
