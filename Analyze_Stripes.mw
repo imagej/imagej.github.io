@@ -4,9 +4,9 @@
 | name                   = Analyze_Stripes
 | author                 = Justin R. Bickford
 | maintainer             = Justin R. Bickford
-| filename               = [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=macro:analyze_stripes_v2.4.5.ijm Analyze_Stripes_v2.4.5.ijm]
+| filename               = [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=macro:analyze_stripes_v2.4.5b.ijm Analyze_Stripes_v2.4.5b.ijm]
 | released               = 9 August 2013
-| latest version         = 26 July 2017
+| latest version         = 16 January 2018
 | status                 = stable
 | category               = [[:Category:Analysis|Analysis]]
 | website                = [http://imagejdocu.tudor.lu/doku.php?id=macro:analyze_stripes Analyze_Stripes website]
@@ -19,6 +19,10 @@ Analyze_Stripes is a Fiji (or ImageJ) macro designed to automatically measure th
 == Documentation ==
 
 Complete documentation may be found at the [http://imagejdocu.tudor.lu/doku.php?id=macro:analyze_stripes Analyze_Stripes website]. 
+
+== News ==
+
+v2.4.5b fixes a rather crippling issue with the stripe orientation angle calculation that severely impacted the edge roughness calculation.
 
 [[Category:Plugins]]
 [[Category:Analysis]]
