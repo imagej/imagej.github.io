@@ -113,7 +113,8 @@ Watershed algorithm partitions an image in regions and outputs a label image of 
 &nbsp;&nbsp;&nbsp;&nbsp;'''outputImage''' : a label image of the detected maxima<br>
 
 <span style="font-size:110%">'''Example'''</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<code>img2 = cip.watershed( img1 , 'threshold', 500, 'hmin', 300 )</code>
+<code>img2 = cip.watershed( img1 , 'threshold', 500, 'hmin', 300 )</code><br>
+In that example the starting point of the watershed are the extended maxima of the input image.
 [[File:CIP_watershed.PNG|none|400px]]<br>
 
 <span style="font-size:110%">'''Implementation'''</span><br>
