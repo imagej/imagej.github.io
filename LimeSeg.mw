@@ -126,12 +126,13 @@ It is possible to define more precisely the seeds used to segment images. This c
 
 2. Using a few ROIs approximately define the contour of the embryo at certains slices, like in the image shown above:
 
-[[File:missing]]
+[[File:LimeSeg_Skeleton_Example.png]]
 
 You need to begin and end with a single point ROI, otherwise the shape will not be closed. Also, the ROIs need to be drawn clockwise and should starts always at the same angle (start on top for instance).
 
 3. Launch the '''Plugins>LimeSeg>Skeleton Seg''' command, without anything else in the ROI manager. Using the parameters D_0=10, F_pressure = 0, range_in _d0_units=2 and Z_scale=3.5 should give correct results, like shown below:
-[[File:missing]]
+
+[[File:LimeSeg_CElegans_Global.png]]
 
 === Multiple objects segmentation ===
 
