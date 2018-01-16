@@ -98,6 +98,10 @@ This filter performs an erosion followed by a dilation. It erases small and thin
 <span style="font-size:110%">'''Output'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''outputImage''': the processed image.
 
+<span style="font-size:110%">'''Example'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>img2 = cip.opening( img1 , 5 )</code>
+[[File:CIP_opening.PNG|none|400px]]<br>
+
 <span style="font-size:110%">'''Implementation'''</span><br>
 CIP function wraps the [https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Opening.java imglib2 Opening class] from the morphology package.
 
