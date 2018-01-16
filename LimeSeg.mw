@@ -111,6 +111,7 @@ If the object you want to segment is tortuous or big, starting with a single sph
 The sample image accessible here: https://raw.githubusercontent.com/NicoKiaru/TestImages/master/ER/ER-FIB-SEM-Small.tif (use '''File>Import>URL''') is a piece of endoplasmic reticulum and is pretty tortuous. While you may get a correct result with one circular ROI as a seed and with the '''Sphere Seg''' command (D_0 = 2 and F_pressure=0.02 gives good results), one can also store several circular ROI in the ROI manager at different places in the piece of ER. Lauching the '''Sphere Seg''' command and checking the '''same Cell''' checkbox will lead to a faster segmentation. When the different seeds meet, they will merge into a single surface.
 
 For instance for three spherical seeds:
+
 [[File:LimeSeg_3D_MultipleSeeds.png]]
 
 Final result:
