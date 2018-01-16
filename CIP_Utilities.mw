@@ -79,6 +79,14 @@ show display CIP data within IJ1 component: hyperstack viewer, results table and
 <span style="font-size:110%">'''Output'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''handle''': a string with the name of the created results table or image window.
 
+<span style="font-size:110%">'''Example'''</span><br>
+This example demonstrate how to label a gray level image and overlay the contour of the detected region on orignal image.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>labelMap = cip.label(img, 'threshold', 500)</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>regions = cip.region(labelMap)</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>h = cip.show(img) 	# display img</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>cip.show(h, regions, 'glasbey' ) 	# overlay the region contour to img</code><br>
+[[File:CIP_show_region.PNG|none|650px]]<br>
+
 <span style="font-size:110%">'''Implementation'''</span><br>
 The show function relies on IJ1 component as a starting point as this is the way data are displayed when downloading a fresh version of Fiji. this also ensure that this data can easily be seen and processed the usual way by any imageJ plugins.
 
