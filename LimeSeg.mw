@@ -151,15 +151,17 @@ In this kind of image, you'd probably like to segment multiple cells. You can do
 
 You can define multiple seeds (one per cell) simply by storing multiple circular ROIs in the ROI manager. Like in this image:
 
-[[File:missing]]
+[[File:LimeSeg-MultiSeeds-SphereSeg.png]]
 
 Of course the seeds can be located at different planes.
 
-You can then launch the '''Plugins>LimeSeg>Sphere Seg''' command with the previously defined parameters, but '''be sure to uncheck the sameCell checkbox''' (otherwise surfaces will merge).
+You can then launch the '''Plugins>LimeSeg>Sphere Seg''' command with the previously defined parameters, but '''be sure to uncheck the sameCell checkbox''' (otherwise surfaces will merge):
+
+[[File:LimeSeg-MultiSeeds-Param.png]]
 
 You should obtain an image similar to this:
 
-[[File:missing]]
+[[File:LimeSeg-MultiSeeds-Output.png]]
 
 If you want to segment the whole embryo, you'll need to provide the location of the cell centers, and then launch the command. The following groovy script will segment the demo image here:
 
