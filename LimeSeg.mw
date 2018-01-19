@@ -23,8 +23,13 @@ TODO / Coming soon.
 
 == Video tutorials ==
 
-Probably the fastest to learn how to use LimeSeg at a basic level. You can find [https://www.youtube.com/playlist?list=PLrEbS8VRQh9qhFYH-9YnVwzMDQBGfCKVj here a playlist containing all the tutorials].
-*  Single object segmentation [http://www.example.com link title]
+Probably the fastest to learn how to use LimeSeg at a basic level. You can find [https://www.youtube.com/playlist?list=PLrEbS8VRQh9qhFYH-9YnVwzMDQBGfCKVj here a playlist containing all the tutorials]. This playlist contains tutorials for:
+* [https://www.youtube.com/watch?v=ZAFzMa0eZ0w Single object segmentation]
+* [https://www.youtube.com/watch?v=u4BwSHclTMM Multiple objects segmentation]
+* [https://www.youtube.com/watch?v=3MtdKeM1xTU Segmentation refinement]
+* [https://www.youtube.com/watch?v=3J4RpjE7Gsg Single object segmentation with multiple seeds]
+* [https://www.youtube.com/watch?v=GmJA4w9gNO4 An example of a C. Elegans embryo segmentation (one time point)]
+* [https://www.youtube.com/watch?v=Ta911ULSWUI Single object segmentation with a pre-defined shape]
 
 == Presentation. ==
 
