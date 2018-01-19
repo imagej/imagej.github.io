@@ -194,13 +194,10 @@ The segmentation needs to be stopped before applying this command.
 
 ==== Clearing all segmented objects ====
 * launch the command : '''Plugins > LimeSeg > Clear all'''
-This erases all objects segmented by LimeSeg so far.
+Should be used cautiously : this erases all objects segmented by LimeSeg so far.
 
 ==== Stopping a segmentation in progress ====
 * Command '''Plugins>LimeSeg>Stop optimization'''
-
-==== Erasing all 3D objects ====
-* Command '''Plugins>LimeSeg>Clear all'''
 
 == Graphical user interface ==
 The command Plugins>LimeSeg> Show GUI displays LimeSeg GUI. This graphical interface allows to do almost almost everything in LimeSeg, however its structure needs to understand a bit more the core structure of LimeSeg. Each tab provided on the left of LimeSeg correspond to specific actions that will be detailed below, but before the structure of LimeSeg will be developed.
