@@ -39,7 +39,7 @@ LimeSeg is a modular 3D segmentation plugin. It is a particle-based active conto
 
 LimeSeg can be used with simple commands provided by the plugin (under Plugins>LimeSeg in ImageJ menu), or on a more advanced manner with scripting capabilities of ImageJ (macro commands of ImageJ1 or preferentially with [[Groovy_Scripting|groovy scripts]]).
 
-== Commands : basic usage ==
+= Commands : basic usage =
 
 
 === Single object segmentation ===
