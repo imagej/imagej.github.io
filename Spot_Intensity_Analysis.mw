@@ -23,12 +23,14 @@ In the second phase the intensities of each spot at each time point is calculate
 
 If there is significant movement during the time-lapse image, you will first need to "de-jitter" using another ImageJ plugin.
 
-History:
-- version 0.3 (2018-01-18). Updated to match changes in jfreechart library
-- version 0.22 (2017-07-04. Use Gaussian blur to determine background rather than rolling ball. Use floats rather than longs in calculations to avoid clipping and negative values. Should result in better precision and better background estimate.
- 
+
 
 [[File:SpotIntensityAnalysisScreenshot.png]]  [[File:SpotIntensityAnalysisTable.png]]
+
+<b>History:</b><br/>
+2018-01-18 - Version 0.3. Updated to match changes in jfreechart library<br/>
+2017-07-04 - Version 0.22. Use Gaussian blur to determine background rather than rolling ball. Use floats rather than longs in calculations to avoid clipping and negative values. Should result in better precision and better background estimate.<br/>
+ 
 
 [[Category:Particle_analysis]]
 [[Category:Plugins]]
