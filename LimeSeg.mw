@@ -87,7 +87,7 @@ Other outputs are provided as an ImageJ table:
 * '''Frame''' : frame where the object has been segmented
 * '''Channel''' : Channel where the object has been segmented
 * '''Mesh?''' : indicates where a mesh has been reconstructed from the object surfels
-* ''' Euler characteristic''' : [[https://en.wikipedia.org/wiki/Euler_characteristic Euler characteristic]] of the reconstructed mesh. This value needs to be 2 for a simply closed surface, 0 for a torus, etc. If its value is not in accordance with your expectations, the surface and volume values will be wrong.
+* ''' Euler characteristic''' : [https://en.wikipedia.org/wiki/Euler_characteristic Euler characteristic] of the reconstructed mesh. This value needs to be 2 for a simply closed surface, 0 for a torus, etc. If its value is not in accordance with your expectations, the surface and volume values will be wrong.
 * ''' Free edges''' : Number of free edges of the 3D reconstructed mesh. Should be equal to zero to trust the given surface and volume.
 * ''' Surface ''' : Surface of the object in (XY_pixels)^2 units
 * ''' Volume ''' : Surface of the object in (XY_pixels)^3 units
