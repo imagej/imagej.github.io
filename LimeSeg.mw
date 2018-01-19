@@ -192,6 +192,7 @@ To erase the last launched segmentation command, you can launch the command : ''
 
 ==== Clearing all segmented objects ====
 * launch the command : '''Plugins > LimeSeg > Clear all'''
+This erases all objects segmented by LimeSeg so far.
 
 ==== Stopping a segmentation in progress ====
 * Command '''Plugins>LimeSeg>Stop optimization'''
