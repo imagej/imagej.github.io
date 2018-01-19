@@ -6,7 +6,7 @@
 | filename               = 
 | source                 = {{GitHub|org=nicost|repo=spotCounter|}}
 | released               = 2015/07/30
-| latest version         = 2017/08/10 (Version 0.13)
+| latest version         = 2018/01/18 (Version 0.14)
 | status                 = 
 | category               = [[:Category:Particle_analysis]]
 }}
@@ -19,6 +19,10 @@ be automatically copied to the System Clipboard. When selecting "Append new resu
 of certain experiments in the lab.
 
 To install this plugin check the "ValelabUtils" update site in the Fiji updater. 
+
+History:
+2018-01-18 - Version 0.14: Updated build system.  Now is compiled to Java 8 bytecode.
+2017-08-10 - Version 0.13: Added "append" option.  Also adds the name of the data to the table.
 
 [[File:SpotCounter.jpg]]   [[File:spotCounterV013.png]]  [[File:SpotCounterResults.gif]]
 
