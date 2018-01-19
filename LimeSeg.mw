@@ -21,6 +21,11 @@ __TOC__
 
 TODO / Coming soon.
 
+== Video tutorials ==
+
+Probably the fastest to learn how to use LimeSeg at a basic level. You can [https://www.youtube.com/playlist?list=PLrEbS8VRQh9qhFYH-9YnVwzMDQBGfCKVj here a playlist containing all the tutorials].
+*  Single object segmentation [http://www.example.com link title]
+
 == Presentation. ==
 
 LimeSeg is a modular 3D segmentation plugin. It is a particle-based active contour method. It can segment objects from 3D images where 3D objects are labelled on their outline, like cells labeled on their membrane, as shown in the image below (source of the image : https://loci.wisc.edu/sample-data/dub).
