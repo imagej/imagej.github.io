@@ -253,6 +253,16 @@ You can now browse through timepoints and notice that the 3D Viewer is synchroni
 
 In LimeSeg GUI, click '''newCell''' in the STATE tab. You can see that a '''cell_0''' has appeared at the end of the Cells explorer table.
 
+==== 'Populating' a Cell ====
+The newly Created cell_0 is empty, as you can see in the Cells explorer windows. Two ways can be used to populate the cell. Both implies the use of Clipped Dots 'buffer' object. Also, a prerequisite to act of this cell is to make sure that it is the current active cell. The current or active cell name is played in the LimeSeg state panel (Cells: current=...) and it is highlighted in blue in the Cells explorer window. To change the current Cell of LimeSeg you can:
+
+* double click on the Cells explorer
+* or by using '''selectCellById''' in the STATE pane (fill in the parameter before clicking)
+* or by using '''selectCellByNumber''' in the STATE pane (fill in the parameter before clicking)
+
+1. Creating a sphere
+Go to the '''Clipped Dots''' tab, at the right of the makeSphere button, fill in the 4 white boxes. They correspond to the centre of the sphere (x,y,z coordinate in slice number, radius). All units except z are in pixels. Enter 180, 130, 19, 50 for instance. Then click the '''makeSphere''' button. A sphere object has been created in the clipped dots buffer objects. This can be vizualized in the lower panel of LimeSeg GUI (Clipped dots: #dots=). To put the sphere   
+
 ==== Deleting a Cell ====
 As an example, we will delete the newly created Cell '''cell_0'''. First of all, you need to set the cell that you want to delete as the '''currentCell''' of LimeSeg. To do this, several options are possible
 
