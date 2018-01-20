@@ -210,7 +210,53 @@ LimeSeg is composed of multiple parts. It can:
 * '''Display''' these 3D objects both in 2D with point Roi and in 3D with its own vizualizer
 
 === LimeSeg 3D objects management ===
-To help understand how LimeSeg does this, please download this image sample (https://raw.githubusercontent.com/NicoKiaru/TestImages/master/CElegans/dub-0.5xy-TP1-22.tif), and the corresponding segmented dataset output (unzip file https://raw.githubusercontent.com/NicoKiaru/TestImages/master/LimeSegOutput/DubSeg.zip).
+To help understand how LimeSeg does this, please download this sample dataset output (unzip file https://raw.githubusercontent.com/NicoKiaru/TestImages/master/LimeSegOutput/DubSeg.zip).
+
+Open Fiji, then launch LimeSeg GUI ('''Plugins>LimeSeg>Show GUI''').
+LimeSeg graphical user interface pops up (click ok on the warning message).
+The GUI consists of an upper panel that can apply different actions on LimeSeg. 
+Tabs separate the different kinds of objects where actions can be applied. 
+
+[[Adds image upper part]]
+
+The lower part contains information about LimeSeg state.
+
+[[Adds image lower part]]
+
+To load the sample dataset onto LimeSeg, do the following actions:
+
+1. Unzip the zip dataset sample
+
+2. In LimeSeg GUI I/O tab, click '''Load From:''' button
+
+3. Select the '''DubSeg''' folder that you have unzipped. Click ok. Note that selecting the folder do not open it. To open the data, you need to do the step 4.
+
+4. Click '''loadStateFromXmlPly''' button in LimeSeg GUI
+
+Now click '''showTable''' in the '''STATE''' tab. This creates a '''Cells explorer''' table which shows all the 3D objects segmented by LimeSeg and how they are organized. Each column represents a '''Cell''' object which name is at the top of the tab, like '''cell_2'''. Rows are timepoints. A cell object may contain many '''CellT''' objects, which stands for '''Cell''' at a specific '''T'''imepoint. For instance, the Cell '''cell_56''' contains 10 CellT objects, for timepoints 12 to 22.
+
+[[missing image]]
+
+==== Vizualizing 3D Objects ====
+In LimeSeg GUI, go to 3D View, click '''make3DViewVisible''', then '''putAllCellsTo3DDisplay'''. This displays the C Elegans embryo, but only at the first timepoint (timepoint 1 by convention in ImageJ1). However as seen in the table, many more objects exist. To be able to see the evolution over time, LimeSeg has to be linked to an ImageJ image (ImagePlus). To link LimeSeg with the proper image, download the image sample (https://raw.githubusercontent.com/NicoKiaru/TestImages/master/CElegans/dub-0.5xy-TP1-22.tif) and open it in Fiji.
+
+Now you need to link the Image with LimeSeg. To do that:
+
+1. Click '''Img:''' in the STATE tab of LimeSeg GUI, and select the image. Click OK. '''This has no effect at this step'''.
+
+2. Once the image is selected, click '''setWorkingImage'''
+
+Notice that the image name appears in the LimeSeg GUI down panel.
+You can now browse through timepoints and notice that the 3D Viewer is synchronized with the current displayed timepoint.
+
+==== Creating a new Cell ====
+
+In LimeSeg GUI, click '''newCell''' in the STATE tab. You can see that a '''cell_0''' has appeared at the end of the Cells explorer table.
+
+==== Deleting a Cell ====
+As an example, we will delete the newly created Cell '''cell_0'''. First of all, you need to set the cell that you want to delete as the '''currentCell''' of LimeSeg. To do this, several options are possible
+
+image sample , and the corresponding segmented
 
 === LimeSeg optimizer usage ===
 To allow for a proper usage of LimeSeg optimizer, the way it can function is modular.
