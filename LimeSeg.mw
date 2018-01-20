@@ -261,7 +261,18 @@ The newly Created cell_0 is empty, as you can see in the Cells explorer windows.
 * or by using '''selectCellByNumber''' in the STATE pane (fill in the parameter before clicking)
 
 1. Creating a sphere
-Go to the '''Clipped Dots''' tab, at the right of the makeSphere button, fill in the 4 white boxes. They correspond to the centre of the sphere (x,y,z coordinate in slice number, radius). All units except z are in pixels. Enter 180, 130, 19, 50 for instance. Then click the '''makeSphere''' button. A sphere object has been created in the clipped dots buffer objects. This can be vizualized in the lower panel of LimeSeg GUI (Clipped dots: #dots=). To put the sphere   
+
+Go to the '''Clipped Dots''' tab, at the right of the makeSphere button, fill in the 4 white boxes. They correspond to the centre of the sphere (x,y,z coordinate in slice number, radius). All units except z are in pixels. Enter 180, 130, 19, 100 for instance. Then click the '''makeSphere''' button. A sphere object has been created in the clipped dots buffer objects. This can be vizualized in the lower panel of LimeSeg GUI (Clipped dots: #dots=). 
+
+2. Pasting the sphere into a Cell Object
+
+To put the sphere into the current Cell, go to the Current CellT tab, and click '''pasteDotsToCellT'''. Notice that the Cells explorer now displays C(7906) for the currentCell at the TimePoint 1. And the 3D viewer is updated. Now this sphere was pasted at the TimePoint 1, why ? The active timepoint is actually another parameter that can be set within LimeSeg. It is written in frame in LimeSeg GUI lower panel. To change this parameter, go to STATE tab and in front of the setCurrentFrame button, type 10 for instance. Now click the '''setCurrentFrame''' button. If you now reclick '''pasteDotsToCellT''', the clipped dots are pasted are the timepoint 10.
+
+3. Deleting a Cell Timpepoint (CellT object)
+
+Set properly the active Cell (see above how to select the active cell) and the active timepoint (STATE > setCurrentFrame).
+
+Click '''Current CellT > clearDotsFromCellT'''
 
 ==== Deleting a Cell ====
 As an example, we will delete the newly created Cell '''cell_0'''. First of all, you need to set the cell that you want to delete as the '''currentCell''' of LimeSeg. To do this, several options are possible
