@@ -210,9 +210,7 @@ LimeSeg is composed of multiple parts. It can:
 * '''Display''' these 3D objects both in 2D with point Roi and in 3D with its own vizualizer
 
 === LimeSeg 3D objects management ===
-To help understand how LimeSeg does this, please download this image sample ([http:// link missing], and the corresponding segmented dataset output [http:// link missing]).
-
-TODO
+To help understand how LimeSeg does this, please download this image sample (https://raw.githubusercontent.com/NicoKiaru/TestImages/master/CElegans/dub-0.5xy-TP1-22.tif), and the corresponding segmented dataset output (unzip file https://raw.githubusercontent.com/NicoKiaru/TestImages/master/LimeSegOutput/DubSeg.zip).
 
 === LimeSeg optimizer usage ===
 To allow for a proper usage of LimeSeg optimizer, the way it can function is modular.
