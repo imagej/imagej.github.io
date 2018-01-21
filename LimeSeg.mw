@@ -348,8 +348,6 @@ The other parameters can be modified within the 3D View Panel. In LimeSeg GUI, t
 
 8 : If an optimization is occuring, the optimized dots are displayed (green, dots which have converged, red, dots which have not converged).
 
-== Opening / Saving / Exporting LimeSeg objects ==
-[TODO]
 
 == Groovy scripting : advanced usage ==
 [TODO]
