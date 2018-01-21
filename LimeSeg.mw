@@ -278,8 +278,6 @@ As an example, we will delete the newly created Cell '''cell_0'''. First of all,
 
 Click in the tab '''Current Cell''' the button '''clearCurrentCell'''
 
-image sample , and the corresponding segmented
-
 === LimeSeg optimizer usage ===
 To allow for a proper usage of LimeSeg optimizer, the way it can function is modular.
 
