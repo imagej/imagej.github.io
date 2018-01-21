@@ -319,9 +319,6 @@ To save the current objects of LimeSeg, choose an EMPTY folder in LimeSeg GUI I/
 
 To open previously saved data, select the folder with the LoadFrom: button then click loadStateFromXmlPly button. This erases all previous data contained in LimeSeg.
 
-== LimeSeg groovy scripting with examples ==
-TODO
-
 == Graphical user interface ==
 The command '''Plugins>LimeSeg> Show GUI''' displays LimeSeg GUI. This graphical interface allows to do almost almost everything in LimeSeg. Each action (meaning button you click) is recordable if you have opened the plugins>macro>Record recorder.
 
