@@ -251,11 +251,11 @@ You can now browse through timepoints and notice that the 3D Viewer is synchroni
 In LimeSeg GUI, click '''newCell''' in the STATE tab. You can see that a '''cell_0''' has appeared at the end of the Cells explorer table.
 
 ==== 'Populating' a Cell ====
-A prerequisite to act on a specific cell is to make sure that it is the current cell (or active cell). The current or active cell name is played in the LimeSeg state panel (Cells: current=...) and its column is highlighted in blue in the Cells explorer window. To change the current Cell of LimeSeg you can either:
+A prerequisite to act on a specific cell is to make sure that it is the current cell (or active cell). The current or active cell name is displayed in the LimeSeg state panel (Cells: current=...) and its column is highlighted in blue in the Cells explorer window. To change the current Cell of LimeSeg you can either:
 
 * Double click on it on the Cells explorer table
-* Use the '''selectCellById''' button in the STATE pane (fill in the parameter before clicking)
-* Use the '''selectCellByNumber''' button in the STATE pane (fill in the parameter before clicking)
+* Use the '''selectCellById''' button in the STATE pane (fill in the string id parameter on the right (like 'cell_10') before clicking)
+* Use the '''selectCellByNumber''' button in the STATE pane (fill in the numeric parameter on the right before clicking)
 
 Make sure the current Cell is cell_0. It should be empty. You can check this in the Cells explorer windows. Two ways can be used to populate the cell. Both implies the use of Clipped Dots 'buffer' object that will contain either simple shapes or copies of existing CellT objects.
 
