@@ -232,7 +232,7 @@ To load the sample dataset onto LimeSeg, do the following actions:
 
 Now click '''showTable''' in the '''STATE''' tab. This creates a '''Cells explorer''' table which shows all the 3D objects segmented by LimeSeg and how they are organized. Each column represents a '''Cell''' object which name is at the top of the tab, like '''cell_2'''. Rows are timepoints. A cell object may contain many '''CellT''' objects, which stands for '''Cell''' at a specific '''T'''imepoint. For instance, the Cell '''cell_56''' contains 10 CellT objects, for timepoints 12 to 22.
 
-[[missing image]]
+[[File:LimeSeg-CellExplorer.png]]
 
 ==== Vizualizing 3D Objects ====
 In LimeSeg GUI, go to 3D View, click '''make3DViewVisible''', then '''putAllCellsTo3DDisplay'''. This displays the C Elegans embryo, but only at the first timepoint (timepoint 1 by convention in ImageJ1). However as seen in the table, many more objects exist. To be able to see the evolution of the embryo over time, LimeSeg has to be linked to an ImageJ image (ImagePlus). To link LimeSeg with the proper image, download the image sample (https://raw.githubusercontent.com/NicoKiaru/TestImages/master/CElegans/dub-0.5xy-TP1-22.tif) and open it in Fiji.
