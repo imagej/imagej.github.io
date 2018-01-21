@@ -244,7 +244,7 @@ Now you need to link the Image with LimeSeg:
 2. Once the image is selected, click '''setWorkingImage'''
 
 Notice that the image name appears in the LimeSeg GUI down panel.
-You can now browse through timepoints and notice that the 3D Viewer is synchronized with the current displayed timepoint.
+You can now browse through timepoints and notice that the 3D Viewer is synchronized with the current displayed timepoint. The 3D Viewer is also synchronized with the z Slice which appears downlighted in the 3D Viewer.
 
 ==== Creating a new Cell ====
 
