@@ -200,7 +200,7 @@ Should be used cautiously : this erases all objects segmented by LimeSeg so far.
 * Command '''Plugins>LimeSeg>Stop optimization'''
 
 == LimeSeg 3D Viewer (basic) ==
-So far LimeSeg provides its own 3D vizualizer. The 3D viewer looks at a specific point in 3D. Mouse dragging allows to rotate around this point. Zoom/zoom out can be done with the mouse wheel.
+So far LimeSeg provides its own 3D vizualizer. The 3D viewer looks at a specific point in 3D. Arrows keyboard allow to move this central point. Mouse dragging allows to rotate around this point. Zoom/zoom out can be done with the mouse wheel.
 
 = Advanced usage=
 == Graphical user interface ==
