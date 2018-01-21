@@ -308,9 +308,13 @@ The synchronization occurs since the current slice is highlighted (downlighted..
 * Other 3D View parameters.
 The other parameters can be modified within the 3D View Panel. In LimeSeg GUI, the command is executed once the user clicks on the left most button. The other text area are parameters that should be specified before clicking the command button.
 ** set3DViewMode If the parameter is 0, all the volumes of the 3D objects are displayed, like this:
+
 1 : the objects are cropped at the position of zposition (cut above)
+
 2 : (cut below)
+
 3 : only the current slice is displayed (cut above and below).
+
 8 : If an optimization is occuring, the optimized dots are displayed (green, dots which have converged, red, dots which have not converged).
 
 == 3D objects handling in LimeSeg ==
