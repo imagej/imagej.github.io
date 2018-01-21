@@ -300,6 +300,13 @@ We now suppose that you already have created 3D objects that you want to optimiz
 ** Go to the Current CellT tab, and click 'putCurrentCellTToOptimizer
 ** Notice in the GUI down panel, the number of dots in Optimizer #dots: should increase
 
+* Set the Optimizer parameters.
+** Similarly to Z_scale, you can set various parameters for the Optimizer
+** f_pressure
+** d_0 (this should be done before)
+** and many others... (needs full documentation)
+
+
 * You now need to run the optimizer
 ** In the Optimizer tab, set the number of optimization step you want to perform (-1 means until convergence), then click '''runOptimisation'''
 
