@@ -317,17 +317,6 @@ The other parameters can be modified within the 3D View Panel. In LimeSeg GUI, t
 
 8 : If an optimization is occuring, the optimized dots are displayed (green, dots which have converged, red, dots which have not converged).
 
-== 3D objects handling in LimeSeg ==
-Each time a command is performed which is generating objects, these objects are stored within a global array variable (LimeSeg.allCells). Manipulation of these objects with LimeSeg commands is very basic (they can all be erased with clear all command, or the last created objects can be erased with the cancel last optimization command).
-
-It is possible to manipulate these objects with two methods : with LimeSeg GUI or with imageJ scripting.
-
-1 - Manipulating 3D Objects with LimeSeg GUI
-
-First of all, open LimeSeg GUI (Plugins>LimeSeg>Show GUI). You can then vizualize all the 3D objects created by clickling on the show Table button in the STATE tab. If you have created several objects, they should appear in the tab. 
-
-[TODO]
-
 == Opening / Saving / Exporting LimeSeg objects ==
 [TODO]
 
