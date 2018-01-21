@@ -203,6 +203,13 @@ Should be used cautiously : this erases all objects segmented by LimeSeg so far.
 So far LimeSeg provides its own 3D vizualizer. The 3D viewer looks at a specific point in 3D. Mouse dragging allows to rotate around this point. Zoom/zoom out can be done with the mouse wheel.
 
 = Advanced usage=
+== Graphical user interface ==
+The command '''Plugins>LimeSeg> Show GUI''' displays LimeSeg GUI. This graphical interface allows to do almost almost everything in LimeSeg. Each action (meaning button you click) is recordable if you have opened the plugins>macro>Record recorder.
+
+To execute the script in ImageJ1 macro language, just add '''run("Show GUI");''' as the first line of your script.
+
+To execute the script in Groovy, replace '''Ext.''' by '''LimeSeg.''', and put '''import eu.kiaru.limeseg.LimeSeg;''' at the beginning of the script.
+
 == LimeSeg structure ==
 LimeSeg is composed of multiple parts. It can:
 * '''Manage''' 3D objects (creation, deletion, copying, pasting, saving, opening...), 
@@ -318,13 +325,6 @@ If you download and unzip the sample file  https://raw.githubusercontent.com/Nic
 To save the current objects of LimeSeg, choose an EMPTY folder in LimeSeg GUI I/O Tab, with the button '''WriteTo:''', then click on the '''saveStateToXmlPly ''' button.
 
 To open previously saved data, select the folder with the LoadFrom: button then click loadStateFromXmlPly button. This erases all previous data contained in LimeSeg.
-
-== Graphical user interface ==
-The command '''Plugins>LimeSeg> Show GUI''' displays LimeSeg GUI. This graphical interface allows to do almost almost everything in LimeSeg. Each action (meaning button you click) is recordable if you have opened the plugins>macro>Record recorder.
-
-To execute the script in ImageJ1 macro language, just add '''run("Show GUI");''' as the first line of your script.
-
-To execute the script in Groovy, replace '''Ext.''' by '''LimeSeg.''', and put '''import eu.kiaru.limeseg.LimeSeg;''' at the beginning of the script.
 
 == LimeSeg 3D Viewer (advanced) ==
 
