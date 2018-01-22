@@ -2,8 +2,8 @@
 | software               = Fiji
 | name                   = LimeSeg
 | logo                   = 
-| maintainer             = {{Person|Nicolas Chiaruttini}}
-| author                 = {{Person|Nicolas Chiaruttini}}, {{Person|Sarah Machado}}
+| maintainer             = {{Person|NicoKiaru}}
+| author                 = {{Person|NicoKiaru}}, {{Person|Sarah Machado}}
 | source                 = {{GitHub | org=NicoKiaru | repo=LimeSeg}}
 | status                 = 
 | released               = 01/2018
