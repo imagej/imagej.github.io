@@ -4,9 +4,9 @@
 | logo                   = 
 | maintainer             = {{Person|NicolasChiaruttini}}
 | author                 = {{Person|NicolasChiaruttini}}, {{Person|SarahMachado}}
-| source                 = {{GitHub | org=fiji | repo=LimeSeg}}
+| source                 = {{GitHub | org=NicoKiaru | repo=LimeSeg}}
 | status                 = 
-| released               = expected 01/2018
+| released               = 01/2018
 | category               = [[:Category:Segmentation|Segmentation]], [[:Category:Plugins]]
 }}
 
