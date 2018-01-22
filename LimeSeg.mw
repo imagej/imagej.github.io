@@ -136,7 +136,7 @@ It is possible to define more precisely the seeds used to segment images. This c
 
 2. Using a few ROIs approximately define the contour of the embryo at certains slices, like in the image shown above:
 
-[[File:LimeSeg_Skeleton_Example.png]]
+[[File:LimeSeg_Skeleton_Example.png|1000px]]
 
 You need to begin and end with a single point ROI, otherwise the shape will not be closed. Also, the ROIs need to be drawn clockwise and should starts always at the same angle (start on top for instance).
 
