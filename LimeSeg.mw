@@ -78,7 +78,7 @@ Also the 3D viewer should give a 3D View of the vesicle:
 [[File:LimeSeg_3DView_Vesicle.png]]
 
 Other outputs are provided as an ImageJ table:
-[[File:LimeSeg_Results_Vesicle.png]]
+[[File:LimeSeg_Results_Vesicle.png|1000px]]
 
 
 * '''Cell_Name''' : each 3D object that LimeSeg generated is a "Cell" object. By default, these objects have a String identifier: Cell_0, Cell_1, Cell_2...
