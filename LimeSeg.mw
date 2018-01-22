@@ -349,4 +349,4 @@ The other parameters can be modified within the 3D View Panel. In LimeSeg GUI, t
 = Script examples =
 Example scripts (ImageJ1 and groovy) are available here:
 
-[https://github.com/NicoKiaru/LimeSeg/tree/master/example_scripts]
+https://github.com/NicoKiaru/LimeSeg/tree/master/example_scripts
