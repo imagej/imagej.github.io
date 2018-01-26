@@ -306,8 +306,10 @@ addExample(0, 1,
 // train classifier
 if (!wekaSegmentation.trainClassifier())
 	throw new RuntimeException("Uh oh! No training today.");
-  
+// apply classifier to image
 output = wekaSegmentation.applyClassifier(image);
+// set same LUT as in the plugin GUI
+output.setLut( Utils.getGoldenAngleLUT() );
 output.show();
 </source>
 
