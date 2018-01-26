@@ -172,6 +172,7 @@ Very frequently we might end up having to process a large number of images using
 // @String(label="Result mode",choices={"Labels","Probabilities"}) resultMode
 
 import trainableSegmentation.WekaSegmentation;
+import trainableSegmentation.utils.Utils;
 import ij.io.FileSaver;
 import ij.IJ;
 import ij.ImagePlus;
@@ -200,6 +201,9 @@ for ( i = 0; i < listOfFiles.length; i++ )
         {                   
             // apply classifier and get results (0 indicates number of threads is auto-detected)
             result = segmentator.applyClassifier( image, 0, getProbs );
+
+            // assign same LUT as in GUI
+            result.setLut( Utils.getGoldenAngleLUT() );
             
             // save result as TIFF in output folder
             outputFileName = listOfFiles[ i ].getName().replaceFirst("[.][^.]+$", "") + ".tif";
