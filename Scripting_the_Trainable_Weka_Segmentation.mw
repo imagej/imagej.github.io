@@ -232,6 +232,7 @@ import ij.process.StackConverter;
 import trainableSegmentation.FeatureStack;
 import trainableSegmentation.FeatureStackArray;
 import trainableSegmentation.WekaSegmentation;
+import trainableSegmentation.utils.Utils;
   
 image = IJ.openImage(System.getProperty("ij.dir") + "/samples/clown.jpg");
 if (image.getStackSize() > 1)
