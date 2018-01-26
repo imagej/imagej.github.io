@@ -2,10 +2,10 @@
 | project = Fiji
 | name = Trainable Segmentation
 | url = https://imagej.net/Trainable_Segmentation
-| source = {{GitHub | org=fiji | repo=Trainable_Segmentation | tag=Trainable_Segmentation-3.2.19}}
+| source = {{GitHub | org=fiji | repo=Trainable_Segmentation | tag=Trainable_Segmentation-3.2.21}}
 | license = [[GPLv3]]
-| release = {{Maven | g=sc.fiji | a=Trainable_Segmentation | v=3.2.20 | label=3.2.20}}
-| date = Mon Nov 20 2017 11:56:00 GMT+0200 (CEST)
+| release = {{Maven | g=sc.fiji | a=Trainable_Segmentation | v=3.2.21 | label=3.2.21}}
+| date = Fri Jan 26 2018 12:10:00 GMT+0200 (CEST)
 | devStatus = {{DevStatus | developer=yes | incubating=no | obsolete=no}}
 | supportStatus = {{SupportStatus | debugger=yes | reviewer=yes | support=yes}}
 | founders = {{Person|vkaynig}}, {{Person|dscho}}
