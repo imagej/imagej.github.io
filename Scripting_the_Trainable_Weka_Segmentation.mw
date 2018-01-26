@@ -95,6 +95,17 @@ testImage = IJ.openImage( "test-image.tif" );
 result = segmentator.applyClassifier( testImage );
 </source>
 
+===Use same label colors as in the GUI===
+If you like the lookup table used in the plugin GUI, you can set it to your result labels programmatically as well:
+<source lang="java">
+import trainableSegmentation.utils.Utils;
+// apply classifier and get results as labels (same as before)
+result = segmentator.applyClassifier( image, 0, false );
+
+// assign same LUT as in GUI
+result.setLut( Utils.getGoldenAngleLUT() );           
+</source>
+
 === Save/Load operations ===
 If the classifier you trained is good enough for your purposes, you may want to save it into a file:
 
