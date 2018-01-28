@@ -1,6 +1,7 @@
 {{Infobox
 | name = IsletJ
 | software = ImageJ
+| author = Jan Švihlík and {{Person|Schier}}
 | maintainer = {{Person|Schier}}
 | status = Active
 }}IsletJ is a plugin for analysis of microscopy images of Langerhans islets in [[ImageJ]]. It provides free, open source tool for analysis of islets diameter and number and for extimation of sample purity (ratio of endocrine/exocrine tissue).
