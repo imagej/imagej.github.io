@@ -199,3 +199,5 @@ This section provide the main development directions as well as a list of functi
 =History=
 
 * 2017-12-20 : version 0.1.0 , first public version of CIP is made available on CIP update site. The package is still under development
+
+* 2018-01-29 : version 0.1.1 , add a help function
