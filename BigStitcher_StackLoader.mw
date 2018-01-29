@@ -1,6 +1,14 @@
-init Stack loaders
+== Stack-based dataset import ==
 
-See also: the [[MVR-DefineDataset|dataset definition documentation]] in [[Multiview-Reconstruction]]/
+[[File:BigStitcher_Stack_Import1.png|thumb|300px|Step 1: select the .czi file to load.]]
+
+[[File:BigStitcher_Stack_Import2.png|thumb|300px|Step 2: select the .czi file to load.]]
+
+[[File:BigStitcher_Stack_Import3.png|thumb|300px|Verification of files in dataset.]]
+
+[[File:BigStitcher_Stack_Import4.png|thumb|300px|Step 3: select the .czi file to load.]]
+
+See also: the [[MVR-DefineDataset|dataset definition documentation]] in [[Multiview-Reconstruction]].
 
 Go back to the [[BigStitcher_Define_new_dataset|dataset definition overview]]
 
