@@ -131,6 +131,12 @@ Link to function user documentation are provided in the table below.
 | 
 | [[CIP Math#unary operator|sign]], [[CIP Math#unary operator|abs]]
 | [[CIP Utilities#list|list]]
+|- 
+| 
+| 
+| 
+| 
+| [[CIP Utilities#help|help]]
 |}
 
 =Script example=
