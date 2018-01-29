@@ -205,3 +205,8 @@ The function was created for a technical reason. In Jython passing a list to CIP
 &nbsp;&nbsp;&nbsp;&nbsp;<code>a list of scalar = cip.list(  string1 , string2, ... )</code><br> 
 &nbsp;&nbsp;&nbsp;&nbsp;<code>a list of scalar = cip.list( [string1 , string2, ...] )</code><br>
 &nbsp;&nbsp;&nbsp;&nbsp;converts a list of string to a java list of string
+
+
+='''help'''=
+
+TODO
