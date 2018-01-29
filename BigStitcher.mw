@@ -95,3 +95,5 @@ In order to fuse the aligned data into a "classical image" and for example save 
 Once you decided to fuse everything or defined a specific bounding box, you can start the fusion process. If you want to check how the fused area will look like, you can do a '''quick preview''' by for example choosing {{bc | Quick Display Transformed/Fused Image | All Views [978 x 1428 x 173 px] | Downsampled 4x}}. This will immediately pop up an ''ImageJ Virtual Stack'' (browsing is somewhat slow) containing a fusion of all selected views 4x downsampled (multiple channels or illuminations will be fused together). 
 
 *[[BigStitcher_Fuse|Fuse & Export]]
+
+== Example Datasets ==
