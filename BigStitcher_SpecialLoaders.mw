@@ -2,6 +2,21 @@
 
 == Zeiss Lightsheet Z.1 Dataset (Bioformats) ==
 
+If you select to load a '''Zeiss Lightsheet Z.1 Dataset''', you will first be asked for the first '''.czi-file''' in the dataset. If your dataset is just a single file, pick that file. If your dataset consists of multiple files, pick the one without a numeric suffix.
+
+[[File:BigStitcher_CZI_Import1.png|thumb|300px|Select the importer and the name of the xml file to save the metadata to.]]
+
+We will then parse the dataset and show the metadata we could extract in the next dialog. There are a few changes you can make at this moment:
+* aaa
+
+[[File:BigStitcher_CZI_Import2.png|thumb|300px|Select the importer and the name of the xml file to save the metadata to.]]
+
+[[File:BigStitcher_CZI_Import3.png|thumb|300px|Select the importer and the name of the xml file to save the metadata to.]]
+
 
 
 == MicroManager diSPIM Dataset ==
+
+
+Go back to the [[BigStitcher_Define_new_dataset|dataset definition overview]]
+Go back to the [[BigStitcher#Documentation|main page]]
