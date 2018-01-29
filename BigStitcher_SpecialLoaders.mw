@@ -1,5 +1,7 @@
 = Special Dataset Importers =
 
+In addition to the more generic [[BigStitcher_AutoLoader|Automatic Loader]] and [[BigStitcher_StackLoaders|Stack loaders]], we also offer single-purpose loaders for images acquired on a '''Zeiss Lightsheet Z.1''' or a '''diSPIM''' controlled via [[MicroManager]].
+
 == Zeiss Lightsheet Z.1 Dataset (Bioformats) ==
 
 [[File:BigStitcher_CZI_Import1.png|thumb|300px|Step 1: select the .czi file to load.]]
