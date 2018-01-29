@@ -4,12 +4,11 @@
 
 [[File:BigStitcher_CZI_Import1.png|thumb|300px|Step 1: select the .czi file to load.]]
 
-If you select to load a '''Zeiss Lightsheet Z.1 Dataset''', you will first be asked for the first '''.czi-file''' in the dataset. If your dataset is just a single file, pick that file. If your dataset consists of multiple files, pick the one without a numeric suffix.
-
+If you select to load a '''Zeiss Lightsheet Z.1 Dataset''', you will first be asked for the first '''.czi-file''' in the dataset (Step 1). If your dataset is just a single file, pick that file. If your dataset consists of multiple files, pick the one without a numeric suffix.
 
 [[File:BigStitcher_CZI_Import2.png|thumb|300px|Step 2: Reviewing metadata detected in CZI-dataset.]]
 
-We will then parse the dataset and show the metadata we could extract in the next dialog. There are a few changes you can make at this moment:
+We will then parse the dataset and show the metadata we could extract in the next dialog (Step 2). There are a few changes you can make at this moment:
 * The Angle, Tiles, Channels, Illumination Directions and Time Points that were detected in the dataset will be shown and you can rename them.
 * The calibration (pixel distances) will be shown. You can select '''Modify calibration''' to change it manually in the next step.
 * The '''rotation axis''' of a multi-Angle dataset will be shown at the bottom of the dialog.
@@ -19,15 +18,15 @@ We will then parse the dataset and show the metadata we could extract in the nex
 
 [[File:BigStitcher_CZI_Import3.png|thumb|200px|Step 3: Modifying calibration and rotation axis.]]
 
-If you chose to modify the calibration or the rotation axis, a third dialog will be displayed in which you can manually set the following thinks:
+If you chose to modify the calibration or the rotation axis, a third dialog will be displayed in which you can manually set the following thinks (Step 3):
 * The pixel distance in every dimension (x,y and z).
 * The unit the pixel distance is measured in.
 * Which axis the different acquisition angles are rotated around. 
 
 After working through these steps, your dataset will be opened in [[BigStitcher]].
 
-== MicroManager diSPIM Dataset ==
 
+== MicroManager diSPIM Dataset ==
 
 Go back to the [[BigStitcher_Define_new_dataset|dataset definition overview]]
 
