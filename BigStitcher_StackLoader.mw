@@ -1,14 +1,24 @@
 == Stack-based dataset import ==
 
-[[File:BigStitcher_Stack_Import1.png|thumb|300px|Step 1: select the .czi file to load.]]
-
-[[File:BigStitcher_Stack_Import2.png|thumb|300px|Step 2: select the .czi file to load.]]
-
-[[File:BigStitcher_Stack_Import3.png|thumb|300px|Verification of files in dataset.]]
-
-[[File:BigStitcher_Stack_Import4.png|thumb|300px|Step 3: select the .czi file to load.]]
-
 See also: the [[MVR-DefineDataset|dataset definition documentation]] in [[Multiview-Reconstruction]].
+
+The '''Manual Loader (Bioformats)''' and '''Manual Loader (TIFF Only, ImageJ Opener)''' provide a robust way of importing datasets into BigStitcher.
+
+=== Step 1: Defining what to look for ===
+
+[[File:BigStitcher_Stack_Import1.png|thumb|300px|Step 1: Defining attributes of data in Manual loader.]]
+
+=== Step 2: File pattern and additional options ===
+
+[[File:BigStitcher_Stack_Import2.png|thumb|300px|Step 2: Defining file pattern and additional options.]]
+
+[[File:BigStitcher_Stack_Import3.png|thumb|300px| Verification of files in dataset.]]
+
+=== Step 3: Verify calibration ===
+
+[[File:BigStitcher_Stack_Import4.png|thumb|300px|Step 3: Verifying/modifying calibration.]]
+
+Once you click '''OK''', your dataset should be displayed in the [[BigStitcher_Stitching_Mode|BigStitcher main window]].
 
 Go back to the [[BigStitcher_Define_new_dataset|dataset definition overview]]
 
