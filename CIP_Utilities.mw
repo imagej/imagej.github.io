@@ -45,7 +45,7 @@ The measure function instanciate a toolbox adapted for the object to measure. th
 show display CIP data within IJ1 component: hyperstack viewer, results table and log window. this ensures easy communication and reuse of the data by the rest of imageJ ecosystem.
 
 <span style="font-size:110%">'''Signature: image'''</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<code>handle = cip.show( inputImage* , lut )</code><br
+&nbsp;&nbsp;&nbsp;&nbsp;<code>handle = cip.show( inputImage* , lut )</code><br>
 &nbsp;&nbsp;&nbsp;&nbsp;will display an hyperstack viewer with the name of the image and the requested color luts.
 
 &nbsp;&nbsp;&nbsp;&nbsp;'''inputImage*''': the image to display.<br>
@@ -60,7 +60,7 @@ show display CIP data within IJ1 component: hyperstack viewer, results table and
 &nbsp;&nbsp;&nbsp;&nbsp;'''color''': a string representing a colors or a lut available in imageJ menu. default is 'lila'. Colors have priority on lut of the same name.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''width''': a scalar representing contour width in point. default is 1.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''scalars''': a list of scalars representing a region attribute and being used to choose region color in the lut. default is [1,2,..., n] where n is the number of region provided as input.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;'''reset''': a boolean indication whether or not to reset the overlay.
+&nbsp;&nbsp;&nbsp;&nbsp;'''reset''': a boolean indication whether or not to reset the overlay. The default is false.
 
 <span style="font-size:110%">'''Signature: table'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;<code>handle = cip.show( inputTable* , handle, reset)</code><br>
@@ -68,7 +68,7 @@ show display CIP data within IJ1 component: hyperstack viewer, results table and
 
 &nbsp;&nbsp;&nbsp;&nbsp;'''table''': a table to display.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''handle''': a string with the name of the results table where the data will be appended.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;'''reset''': a boolean indication whether or not to reset the results table.
+&nbsp;&nbsp;&nbsp;&nbsp;'''reset''': a boolean indication whether or not to reset the results table. The default is false.
 
 <span style="font-size:110%">'''Signature: string'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;<code>handle = cip.show( message* )</code><br>
