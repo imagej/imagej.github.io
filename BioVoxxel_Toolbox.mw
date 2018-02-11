@@ -19,7 +19,7 @@ Purpose: The "Extended Particle Analyzer" is based on the ImageJ "Analyze Partic
 
 Example: If you want to extract/analyze only particles with a certain Feret's Angle or exclude elongated structures using the aspect ratio (AR) or circilarity you can specify so in the initial dialog box.
 
-[[File:ExtendedParticleAnalyzer.png|750px]]
+[[File:ExtendedParticleAnalyzer v2.png|750px]]
 
 How to: Key in minimal and maximal exclusion values connected with a hyphen. You can use integers as well as numbers containing decimal places. "Redirect" redirects the analysis to a grayscale image which enables to analyze skewness, kurtosis as well as the new measure coefficient of variance (cov). The option "Keep borders (correction)" eliminates particles from 2 edges and keeps particles touching the two borders of choice. This corrects the particle count for edge touching particles.
 
@@ -35,9 +35,13 @@ Feret's AR = [maximum caliper diameter] / [minimum caliper diameter]
 
 Coefficient of variance (CoV) = [intensity standard deviation] / [intensity mean]
 
+
+'''The new version from 11th February 2018 (included from BioVoxxel_Plugins-2.0.1) on contains 2 checkboxes which enable the choice between pixel and calibrated units in images which are spatially calibrated. The checkbox "Pixel units" is equivalent to the checkbox with the same label in the standard IJ Analyze Particels... function and uses pixels instead of calibrated units to limit the analysis with the respective parameters. The checkbox "output in pixels" gives the option to separately choose if the results table should be in specific units or pixels (depending on the image calibration). Older Macros should still run, while the keyword "pixel" needs to be shifted before the definition of the area parameter.'''
+
+
 Form: plugin (recordable, ''uses smart recording --> records only fields which have been changed by the user while recording. Default entries will not be recorded. It is already sufficient to cut a zero after the comma without changing the actual parameter value to make the recorder recognize that the entry should be recorded!'') 
 
-Status: Maintenance active (current version: 2.5.0)
+Status: Maintenance active
 
 Suggestions are welcome!
 
