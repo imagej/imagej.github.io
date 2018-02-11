@@ -19,7 +19,7 @@ Purpose: The "Extended Particle Analyzer" is based on the ImageJ "Analyze Partic
 
 Example: If you want to extract/analyze only particles with a certain Feret's Angle or exclude elongated structures using the aspect ratio (AR) or circilarity you can specify so in the initial dialog box.
 
-[[File:AdvancedParticleAnalyzer.png|750px]]
+[[File:ExtendedParticleAnalyzer.png|750px]]
 
 How to: Key in minimal and maximal exclusion values connected with a hyphen. You can use integers as well as numbers containing decimal places. "Redirect" redirects the analysis to a grayscale image which enables to analyze skewness, kurtosis as well as the new measure coefficient of variance (cov). The option "Keep borders (correction)" eliminates particles from 2 edges and keeps particles touching the two borders of choice. This corrects the particle count for edge touching particles.
 
