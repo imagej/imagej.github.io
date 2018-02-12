@@ -239,7 +239,7 @@ You can now run the project from this dialog. You only need to perform this conf
 
 ==Adding new plugins==
 
-The easiest method is to start with a [https://github.com/imagej/minimal-ij1-plugin/zipball/master minimal project], renamed to the desired name of your plugin. By convention, the project directory should match the base name of the <code>.jar</code> file to be generated.
+The easiest method is to start with a [https://github.com/imagej/example-legacy-plugin minimal project], renamed to the desired name of your plugin. By convention, the project directory should match the base name of the <code>.jar</code> file to be generated.
 
 The format of such a <code>pom.xml</code> is described briefly on the [[Maven]] page.
 
@@ -259,7 +259,7 @@ After that, ask Eclipse to import it: {{bc | File | Import | Maven | Import Exis
 * [[Writing plugins]]
 * [[How to contribute to an existing plugin or library|Contributing to a plugin]]
 |
-* {{GitHub|org=imagej|repo=minimal-ij1-plugin|label=minimal-ij1-plugin}} project template
+* {{GitHub|org=imagej|repo=example-legacy-plugin|label=example-legacy-plugin}} project template
 * [[Introduction into Developing Plugins]]
 |}
 
