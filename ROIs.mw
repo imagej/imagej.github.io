@@ -1,5 +1,127 @@
-{{Outdated}}
-In [[wikipedia:Image processing|image processing]], two of the most often needed yet complex operations are [[wikipedia:Segmentation (image processing)|segmentation]] and [[wikipedia:Image registration|registration]]. Regions of interest (ROIs) are an effective way of expressing and visualizing the results of a segmentation. But ROIs are a deceptively complex topic, difficult to implement well in a software package.
+{{WIP}}
+In [[wikipedia:Image processing|image processing]], two of the most often needed yet complex operations are [[wikipedia:Segmentation (image processing)|segmentation]] and [[wikipedia:Image registration|registration]]. Regions of interest (ROIs) are an effective way of expressing and visualizing the results of a segmentation. For the current implementation of ROIs in ImageJ, see the [https://github.com/imglib/imglib2-roi imglib2-roi] repository.
+
+= Introduction =
+
+The base interface for all ROIs is '''MaskPredicate'''. '''MaskPredicate''' extends Java's '''Predicate''' whose <code>test(...)</code> method is used to determine if a given point is inside or outside a ROI. 
+
+ROIs are further separated into discrete and continuous space ROIs, which can be bounded or unbounded. '''Mask''' is the base interface for all discrete space ROIs, and '''MaskInterval''' is the base interface for all bounded discrete space ROIs. Similarly, '''RealMask''' is the base interface for all continuous space ROIs, and '''RealMaskRealInterval''' is the base interface for all bounded continuous space ROIs.
+
+Concrete implementations of geometric ROIs (i.e. ellipsoids, polylines, etc.) can be retrieve from '''GeomMasks'''. The below example creates a 3D sphere centered at (12.5, 6, 93.25) with a radius of 0.5.
+
+<source lang="java">
+final double[] center = new double[] { 12.5, 6, 93.25 };
+final double radius = 0.5;
+final Sphere sphere = GeomMasks.closedWritableSphere( center, radius );
+</source>
+
+== Naming ==
+
+All n-dimensional geometric ROIs should be named with the name of their 3D counterpart. For example, an n-dimensional hyper-ellipsoid would just be named 'ellpisoid'. If a ROI implementation is not n-dimensional, its dimensionality should be stated in the name. For example, '''Polygon2D''' which is a 2D polygon.
+
+Additionally, ROIs prefixed with "Writable" are mutable. ROIs without this prefix are assumed to be immutable.
+
+== BoundaryType ==
+
+The boundary behavior of a ROI is given by its '''BoundaryType''' enum which has three values.
+* '''CLOSED''' - all points on the boundary are considered inside
+* '''OPEN''' - all points on the boundary are considered outside
+* '''UNSPECIFIED''' - some points on the boundary may be inside while others are outside
+
+== KnownConstant ==
+
+The '''KnownConstant''' enum is used for determining if a ROI returns <code>false</code> for all locations, or <code>true</code> for all locations. This is useful for determining if the result of an operation between ROIs results in "empty" space or "all" space.
+* '''ALL_FALSE''' - ROI is known to return <code>false</code> for all locations
+* '''ALL_TRUE''' - ROI is known to return <code>true</code> for all locations
+* '''UNKNOWN''' - it is undetermined what the ROI returns for all locations, most ROIs have this
+
+= Combining ROIs =
+
+ROIs can be combined via a number of operations, namely: <code>and</code>, <code>or</code>, <code>negate</code>, <code>minus</code>, and <code>xor</code>. '''RealMask'''s also have a <code>transform</code> operation. Combined ROIs are '''CompositeMaskPredicate'''s, which preserves the provenance of the composite ROI. For each '''CompositeMaskPredicate''' it is possible to retrieve the operator and operands. This results in a "tree" of ROIs.
+
+The below example creates a composite ROI:
+<source lang="java>
+final Sphere s1 = new ClosedWritableSphere( new double[] { 0, 0, 0 }, 3.5 );
+final Sphere s2 = new ClosedWritableSphere( new double[] { 1, 2, 0 }, 1.5 );
+final Sphere s3 = new ClosedWritableSphere( new double[] { 2, 2, 0 }, 1.5 );
+final RealMaskRealInterval composite = s1.and( s2.minus( s3 ) ).and( s3 ).or( s1.minus( s3.negate() ) );
+</source>
+
+The resulting composite ROI has the resulting "tree":
+<pre>
+leaf  (net.imglib2.roi.geom.real.ClosedWritableSphere@a4)
+OR  (net.imglib2.roi.composite.DefaultBinaryCompositeRealMaskRealInterval@5a050f05)
+ +--AND  (net.imglib2.roi.composite.DefaultBinaryCompositeRealMaskRealInterval@d5189b46)
+ |   +--AND  (net.imglib2.roi.composite.DefaultBinaryCompositeRealMaskRealInterval@f1bb9aa6)
+ |   |   +--leaf  (net.imglib2.roi.geom.real.ClosedWritableSphere@a4)
+ |   |   +--MINUS  (net.imglib2.roi.composite.DefaultBinaryCompositeRealMaskRealInterval@516e3be)
+ |   |       +--leaf  (net.imglib2.roi.geom.real.ClosedWritableSphere@7d)
+ |   |       +--leaf  (net.imglib2.roi.geom.real.ClosedWritableSphere@8a)
+ |   +--leaf  (net.imglib2.roi.geom.real.ClosedWritableSphere@8a)
+ +--MINUS  (net.imglib2.roi.composite.DefaultBinaryCompositeRealMaskRealInterval@fcc5e4e3)
+     +--leaf  (net.imglib2.roi.geom.real.ClosedWritableSphere@a4)
+     +--NEGATE  (net.imglib2.roi.composite.DefaultUnaryCompositeRealMask@c2ea3a1e)
+         +--leaf  (net.imglib2.roi.geom.real.ClosedWritableSphere@8a)
+</pre>
+
+Note that the same ROI can be used in multiple operations within the same composite.
+
+{| class="wikitable"
+! Operation 
+!colspan="3"|BoundaryType
+|-
+!
+! open
+! closed
+! unspecified
+|-
+! negate
+|closed
+|open
+|unspecified
+|-
+! transform<sup>1<sup>
+|open
+|closed
+|unspecified
+|-
+! transform<sup>2<sup>
+|unspecified
+|unspecified
+|unspecified
+|}
+1. Transform is [[wikipedia:Continuous_function|continuous]] (preserves boundary behavior) and will preserve the interval bounds
+
+2. Transform is discontinuous or doesn't preserve bounds
+
+{| class="wikitable"
+!colspan="4"|Operand BoundaryType
+|-
+! Left
+!colspan="3"|Right
+|-
+!
+! open
+! closed
+! unspecified
+|-
+! open
+|
+|
+|
+|-
+! closed
+|
+|
+|
+|-
+! unspecified
+|
+|
+|
+|}
+
+= Converting to RandomAccessible =
 
 = Discussion =
 
@@ -7,56 +129,4 @@ In [[wikipedia:Image processing|image processing]], two of the most often needed
 * [https://groups.google.com/d/msg/fiji-devel/AdeqZKffIUU/9SoisoaivWwJ S. Preibisch: Imglib or ImageJ2 and ROIs - Where is a pixel?] – Two kinds of ROIs: discrete and continuous
 * [https://groups.google.com/d/msg/fiji-devel/AdeqZKffIUU/FU2Js4zNPG0J D. White: Imglib or ImageJ2 and ROIs - A pixel is not a little square] – Alvy Ray's classic article
 * [https://groups.google.com/d/msg/fiji-devel/E9SSt9z2zRQ/Slc1BLzuvtcJ J. Tinevez: ImageJ class hierarchy suggestions] – a proposed interface-driven design for ROIs
-
-There is clearly is a division between ROIs as a data structure, and ROIs for display. For clarity, we propose the following terminology:
-
-{| class="wikitable"
-|'''Type'''
-|'''Region'''
-|'''Annotation'''
-|-
-|'''Sampling'''
-|Discrete (i.e., mask over the pixels)<sup>1</sup>
-|Continuous
-|-
-|'''Shapes'''
-|Rectangles, closed polygons, segmentation results
-|Lines, points, point markers, floating text
-|-
-|'''Usage'''
-|Identify areas for algorithmic processing
-|Visualization
-|-
-|'''Overlap'''
-|Can be a problem for some data structures<sup>2</sup>
-|Typically fine
-|}
-
-# But there could be value in allowing regions with non-integer or non-binary boundaries. For example, a region with alpha channel would allow for a &quot;fuzzy&quot; boundary representing the confidence level of inclusion within the region, that can be later adjusted with a threshold.
-# For example, CellProfiler represents segmentation results using an 8-bit mask, with 0 as background, 1 as the first region, 2 as the second region, etc.
-
-= Shortcomings =
-
-Johannes Schindelin summarizes the shortcomings of ROIs in [[ImageJ 1.x]]:
-
-* only 2D (extends identically to n dimensions)—in Fiji, we only have several 3D extensions to ImageJ's ROIs, but they are in effect stacks of 2D ROIs, while it would be pretty interesting to have a proper surface model for 3D ROIs, at least as an option
-* no distinction between region of interest and lines/points of interest
-* tries to fit in a geometrical model, where the geometry of pixels is a highly ambiguous thing (just think about it: what does a ROI containing exactly one pixel look like?)
-* is way too tied in with the rest of the GUI (some ROIs even know which ImagePlus they belong to!)
-* no common interface, rather a base class that describes rectangular (about the most unnatural shape of regions of interest in biological data) regions of interest
-* no notion of disconnected regions of interest (it is possible to have compound regions of interest, but some algorithms consider them as separate particles while others treat the union as one region of interest)
-* inherent limitation to integer coordinates
-* no clear-cut distinction between the necessary interfaces, such as visualization, geometrical measures, determining whether a pixel is considered inside/outside
-* (added by Gabriel Landini) inconsistent behavior regarding boundary pixels of ROIs, illustrated by the Draw command (try maximizing a rectangular ROI and applying it with the Draw command; only two borders are drawn because the other two are outside the image)
-
-= Relevant Java code =
-
-* java.awt.{{Javadoc | project = Java | package = java/awt | class = Area}}
-* java.awt.{{Javadoc | project = Java | package = java/awt | class = Shape}}
-* ini.trakem2.display.{{GitHub | org = fiji | repo = TrakEM2 | path = TrakEM2_/src/main/java/ini/trakem2/display/AreaWrapper.java | label = AreaWrapper}}
-* javax.media.jai.[http://docs.oracle.com/cd/E17802_01/products/products/java-media/jai/forDevelopers/jai-apidocs/javax/media/jai/ROI.html ROI]
-* javax.media.jai.[http://docs.oracle.com/cd/E17802_01/products/products/java-media/jai/forDevelopers/jai-apidocs/javax/media/jai/ROIShape.html ROIShape]
-* [http://www.randelshofer.ch/oop/jhotdraw/ JHotDraw]
-* [http://leonardosketch.org/ Leonardo]
-
-Use of the JAI classes would not imply use of JAI generally. ROIShape is independent  of other JAI classes; ROI is dependent on an iterator.
+* [http://forum.imagej.net/t/implementation-plan-for-imglib2-rois-2d/2531 Implementation plan for Imglib2-rois 2D] - forum discussion regarding ROI API
