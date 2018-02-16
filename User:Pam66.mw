@@ -1,4 +1,4 @@
-Paolo Miocchi is the developer of the Steerable3D (open-source) plugin for the enhancement of tubular structures in 3D image stack.
+Paolo Miocchi (IRCSS - Fondazione Santa Lucia [http://www.hsantalucia.it/]) is the developer of the Steerable3D (open-source) plugin for the enhancement of tubular structures in 3D image stack.
 <p>In the figure below an example of filter application is reported. The figure on the left is the inverted "projected minimum" of a 3D image stack of a (non-filtered) portion of a spinal cord. Bright pixels mostly correspond to vessels lumen. The figure on the right is the "projected maximum" of the stack resulting by the filter application. It can be seen how the blood vessels are visually enhanced and the dense nerve fibres network in the white matter region.</p>
 [[File:S3D_example.jpg]]
 
