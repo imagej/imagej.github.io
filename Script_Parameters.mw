@@ -145,7 +145,7 @@ Any parameter can be turned into a multiple-choice selector by adding a <code>ch
 
 === Files and Folders ===
 
-By default, a <code>#@File</code> parameter will create a chooser for a single file. Here is an example in python:
+By default, a <code>#@ File</code> parameter will create a chooser for a single file. Here is an example in python:
 
 <source lang="python">
 #@ File(label="Select a file") myFile
