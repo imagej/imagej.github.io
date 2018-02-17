@@ -5,9 +5,9 @@
 The rules for <code>#@parameter</code> use are as follows:
 
 <ol>
-<li>Parameter declarations begin with <code>#@</code>. Each such line contains a single parameter declaration and nothing else.</li>
-<li><code>#@type variableName</code> will declare an input of the indicated type, assigned to the specified name.</li>
-<li><code>#@output type outputName</code> will declare the variable of the specified name as an output parameter with the given type.</li>
+<li>Parameter declarations begin with <code>#@</code>. Each such line contains a single parameter declaration or script directive and nothing else.</li>
+<li><code>#@ Type variableName</code> will declare an input of the indicated type, assigned to the specified name.</li>
+<li><code>#@output Type outputName</code> will declare the variable of the specified name as an output parameter with the given type.</li>
 </ol>
 
 {{Testimonial
@@ -101,7 +101,7 @@ Properties are your way to customize how an <code>#@parameter</code> should be h
 Widgets are the User Interface elements shown to users to collect input information. For example, instead of just displaying "Name" to the user, we can add a custom label to the field of our <code>Greeting.py</code> script as follows:
 
 <source lang="python">
-#@String(label="Please enter your name") name
+#@ String(label="Please enter your name") name
 #@output String greeting
 
 greeting = "Hello, " + name + "!"
@@ -112,7 +112,7 @@ greeting = "Hello, " + name + "!"
 We can add a <code>description</code> property to provide mouse-over text for our field:
 
 <source lang="python">
-#@String(label="Please enter your name", description="Your name") name
+#@ String(label="Please enter your name", description="Your name") name
 #@output String greeting
 
 greeting = "Hello, " + name + "!"
@@ -123,7 +123,7 @@ greeting = "Hello, " + name + "!"
 Default values are also supported as parameter properties:
 
 <source lang="python">
-#@Integer(label="An integer!",value=15) someInt
+#@ Integer(label="An integer!",value=15) someInt
 </source>
 
 === Persistence ===
@@ -131,7 +131,7 @@ Default values are also supported as parameter properties:
 Per default, variable values are persisted between runs of a script. This means that parameter values from a previous run are used as starting value. Please note that a persisted value will overwrite a defined [[#Default value|default value]].
 
 <source lang="python">
-#@Integer(label="An integer!",value=15,persist=false) someInt
+#@ Integer(label="An integer!",value=15,persist=false) someInt
 </source>
 {{Warning | Currently, "two scripts which declare the same parameter name, even with different types, will stomp each other." See [https://github.com/scijava/scijava-common/issues/193].}}
 
@@ -140,7 +140,7 @@ Per default, variable values are persisted between runs of a script. This means 
 Any parameter can be turned into a multiple-choice selector by adding a <code>choices = {...}</code> property:
 
 <source lang="python">
-#@String(label="What mythical monster would you like to unleash?",choices={"Kraken","Cyclops","Medusa","Fluffy bunny"}) monsterChoice
+#@ String(label="What mythical monster would you like to unleash?",choices={"Kraken","Cyclops","Medusa","Fluffy bunny"}) monsterChoice
 </source>
 
 === Files and Folders ===
@@ -148,7 +148,7 @@ Any parameter can be turned into a multiple-choice selector by adding a <code>ch
 By default, a <code>#@File</code> parameter will create a chooser for a single file. Here is an example in python:
 
 <source lang="python">
-#@File(label="Select a file") myFile
+#@ File(label="Select a file") myFile
 
 print(myFile)
 </source>
@@ -158,7 +158,7 @@ The exact same code works for the [[Macros|ImageJ1 Macro language]], too.
 If you want to select a directory instead, use a <code>style</code> property:
 
 <source lang="python">
-#@File(label="Select a directory", style="directory") myDir
+#@ File(label="Select a directory", style="directory") myDir
 
 print(myDir)
 </source>
@@ -168,8 +168,8 @@ print(myDir)
 You can influence the visual style of some of the input widgets. See previous paragraph for an example for how to switch from file to folder selection. You can also switch 
 
 <source lang="python">
-#@String(choices={"Option 1", "Option 2"}, style="listBox") myChoice123
-#@String(choices={"Option A", "Option B"}, style="radioButtonHorizontal") myChoiceABC
+#@ String(choices={"Option 1", "Option 2"}, style="listBox") myChoice123
+#@ String(choices={"Option A", "Option B"}, style="radioButtonHorizontal") myChoiceABC
 
 print(myChoice123)
 print(myChoiceABC)
