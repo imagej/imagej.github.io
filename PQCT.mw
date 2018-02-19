@@ -63,7 +63,7 @@ The main tool for pQCT image analysis. You must open an image first before runni
 
 ----
 
-* '''Scaling coefficient''': Used as the coefficient to scale the raw integer values read from the image file into ''BMD'' values , i.e. the raw-value term <math>b</math> in <math>y = a+bx</math> (N.B. in case of Stratec files a value of <math>2^15</math> is subtracted prior to applying the scaling to account for the fact that the values were stored as 16-bit signed integers , while ImageJ uses 16-bit unsigned integers. Also, the scaling is retrieved from a list of Stratec .TYP-files according to the image header information. In case of DICOM-files, the DICOM scaling (typically <math>y = -1000+1x</math>) is applied prior to applying this scaling.).
+* '''Scaling coefficient''': Used as the coefficient to scale the raw integer values read from the image file into ''BMD'' values , i.e. the raw-value term <math>b</math> in <math>y = a+bx</math> (N.B. in case of Stratec files a value of <math>2^{15}</math> is subtracted prior to applying the scaling to account for the fact that the values were stored as 16-bit signed integers , while ImageJ uses 16-bit unsigned integers. Also, the scaling is retrieved from a list of Stratec .TYP-files according to the image header information. In case of DICOM-files, the DICOM scaling (typically <math>y = -1000+1x</math>) is applied prior to applying this scaling.).
 
 * '''Scaling constant''': Used as the constant in scaling the raw integer values read from the image file into ''BMD'' values, i.e. term <math>a</math> in <math>y = a+bx</math>.
 
@@ -118,3 +118,113 @@ The main tool for pQCT image analysis. You must open an image first before runni
 * '''Save visual result image on disk''': If ticked, will save visual result image on disk into the path given in the text box below. Useful e.g. for batch processing, allowing visual inspection of the results after running the batch.
 
 * '''Image save path''': If the above check box is ticked, the path given in this text box is used as the path into which the visual result images are saved to, i.e. c:/path/to/save/to/. remember to add the trailing /. Either / or \ may be used in the path.
+
+== Distribution analysis results ==
+
+=== Alignment ===
+* Endo- and pericortical radii, and endo-, mid- and pericortical densities are produced for each <math>10^\circ</math> sector.
+* The sector from <math>0^\circ</math> to <math>10^\circ</math> always opens directly to right in the visual result image.
+* Sectors increase into clockwise direction in the visual results image, or counter clockwise, if results are flipped.
+** If you have selected flip distribution results, the sectors are still the same, but you will notice that the visual distribution result has been mirrored about the horizontal axis. This flipping is implemented by reversing the distribution results vectors and by making sure that the sector from <math>0^\circ</math> to <math>10^\circ</math> remains the same.
+** The color of the line used to delineate the endo- and pericortical border indicates in which direction the sector angle increases. <math>0^\circ</math> is blue and <math>360^\circ</math> is green/red.
+** In addition, the original and rotated x- and y- axes are highlighted in the visual image (the origin of which is the origin of the distribution results). The axes extend from origin towards positive coordinate values, green/cyan x-axis and blue/purple y-axis.
+
+=== Result headings ===
+;Alpha [deg]
+: how many degrees were the results rotated
+;Rotation correction [deg]
+: correction for centering sector 0
+;Distance between bones[mm]
+: distance between the center of bone areas for two bones
+;MuD [mg/cm³]
+: muscle density (including possible intramuscular fat)
+;MuA [cm²]
+: muscle area (including possible intramuscular fat)
+;LeanMuD [mg/cm³]
+: muscle density (excluding possible intramuscular fat)
+;LeanMuA [cm²]
+: muscle area (excluding possible intramuscular fat)
+;IntraFatD [mg/cm³]
+: intramuscular fat density
+;IntraFatA [cm²]
+: intramuscular fat area
+;FatD [mg/cm³]
+: total fat density (both intramuscular and subcutaneous)
+;FatA [cm²]
+: total fat area (both intramuscular and subcutaneous)
+;SubCutFatD [mg/cm³]
+: subcutaneous fat density
+;SubCutFatA [cm²]
+: subcutaneous fat area
+;LimbD [mg/cm³]
+: limb density (including bones)
+;LimbA [cm²]
+: limb area (including bones)
+;Density weighted fat percentage [%]
+: percentage of fat from the total
+;MaMassD [g/cm³]
+: marrow mass density converted from hydroxyapatite equivalent densities (HA). Works for CT, where water is given a HA value of zero
+;StratecMaMassD [g/cm³]
+: marrow mass density converted from hydroxyapatite equivalent densities (HA) to mass density. Works for Stratec pQCT, where fat is given a HA value of 0
+;MaD [mg/cm³]
+: marrow density
+;MaA [mm²]
+: area included into the marrow analysis (N.B. != MeA)
+;CoD [mg/cm³]
+: cortical density
+;CoA [mm²]
+: cortical area
+;Stratec CoD [mg/cm³]
+: cortical density (pixels need not be contiguous as in the analyses conducted by Stratec software. However, if pixels aren't contiguous, incorrect ROI is typically defined automatically by the plug-in and the analysis will fail)
+;Stratec CoA [mm²]
+: cortical area (pixels need not be contiguous as in the analyses conducted by Stratec software. However, if pixels aren't contiguous, incorrect ROI is typically defined automatically by the plug-in and the analysis will fail)
+;SSI [mm³]
+: Strength strain index (= density weighted section modulus)
+;SSImax [mm³]
+: Maximal strength strain index
+;SSImin [mm³]
+: Minimal strength strain index
+;IPo [mm<sup>4</sup>]
+: Polar second moment of area (=polar cross-sectional moment of inertia)
+;Imax [mm<sup>4</sup>]
+: Maximal second moment of area (=maximal cross-sectional moment of inertia)
+;Imin [mm<sup>4</sup>]
+: minimal second moment of area (=minimal cross-sectional moment of inertia
+;dwIPo [mg/cm]
+: density weighted polar second moment of area (=polar cross-sectional moment of inertia)
+;dwImax [mg/cm]
+: density weighted maximal second moment of area (=maximal cross-sectional moment of inertia)
+;dwImin [mg/cm]
+: density weighted minimal second moment of area (=minimal cross-sectional moment of inertia
+;ToD [mg/cm³]
+: total density
+;ToA[mm²]
+: total area
+;MeA [mm²]
+: non-cortical area (= ToA - CoA)
+;BSId[g²/cm<sup>4</sup>]
+: compressive strength index (=ToD²*ToA)
+
+=== Interpretation ===
+'''Polar distribution'''<br />
+[[File:polar.png]]<br />
+The mean of the three radial divisions within a given sector is reported as the density of that sector.
+Applies to: 
+* 0° - 10° ... 350° - 360° mineral mass [mg]
+* Polar sector #0 ... #35 vBMD [mg/cm³]
+
+'''Radial distribution'''<br />
+[[File:radial.png]]<br />
+The mean of the thirty six 10° sectors within a given anatomical ring is reported as the density of that ring. Applies to: 
+* Radial division #0 ... #2 vBMD [mg/cm³]
+
+'''Polar and radial distribution'''<br />
+* Combination of the two above 
+* Division X sector 0° - 10° ... 350° - 360° vBMD [mg/cm³]
+* 0° - 10° ... 350° - 360° endo/mid/pericortical vBMD [mg/cm³]
+
+'''Radii distribution'''<br />
+* 0° - 10° ... 350° - 360° concentric analysis pericortical radius [mm]
+* 0° - 10° ... 350° - 360° endo/pericortical radius [mm]
+[[File:radii.png]]<br />
+Endo- and pericortical radii are given as the distance from the centroid of the marrow cavity to the endo- and pericortical border, respectively. The radii are calculated prior to peeling off the layers of pixels from endosteal and periosteal border.
