@@ -487,7 +487,7 @@ Algorithms work for both 2D or 3D images. Default connectivity 4 (resp. 6) is us
 * '''Remove Border Labels''' is similar to "kill borders" function, but operates faster as no morphological reconstruction is required.
 * '''Select Label(s)''' enters a set of labels, and creates a new label image containing only the selected labels.
 * '''Crop Label''' creates a new binary image containing only the label specified by the user. The size of the new image is fitted to the region.
-* '''Replace Value''' replaces the value of a region by another value. Can be used to “clear” a label, by replacing its value by 0, or to merge to adjacent regions.
+* '''Replace/Remove Label(s)''' replaces the value of a region by another value. Can be used to “clear” a label, by replacing its value by 0, or to merge to adjacent regions.
 * '''Label Boundaries''' creates a new binary image containing value 255 for pixels/voxels having a neighbour with a different value.
 * '''Keep / Remove Largest Label''' identifies the largest label, and keeps it or removes it.
 * '''Label Size Opening''' computes the size (area in 2D, volume in 3D) of each region, and removes all labels whose size is below the value specified by the user.
