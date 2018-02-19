@@ -1,0 +1,120 @@
+{{Infobox
+| name                   = pQCT
+| author                 = Timo Rantalainen
+| maintainer             = [[User:Rdom|Richard Domander]]
+| software               = ImageJ/Fiji
+| source                 = {{GitHub|org=Fiji|repo=PQCT}}
+| released               = Feb 9<sup>th</sup>, 2018
+| latest version         = 0.2.0, Feb 9<sup>th</sup>, 2018
+| status                 = stable
+}}{{TOC}}
+
+== Summary ==
+
+This package contains tools for Stractec pQCT soft-tissue and bone images. They were originally developed by Timo Rantalainen.
+
+== Installation ==
+1) {{bc | Help | Update...}}
+
+2) Manage update sites
+
+3) Check the box for "PQCT"
+
+4) Close the list
+
+5) Click ''"Apply changes"''
+
+6) Restart Fiji / ImageJ
+
+7) A new sub-directory called pQCT appears under Plugins
+
+8) The update system will now inform you when a new version of the pQCT is available
+
+== Distribution analysis ==
+{{bc | Plugins | pQCT | Distribution Analysis}}
+
+The main tool for pQCT image analysis. You must open an image first before running this tool.
+
+[[Image:http://bonej.org/images/selections.png]]
+
+* '''Flip horizontal''': flips the image horizontally
+
+* '''Flip vertical''': flips the image vertically
+
+* '''No filtering''': prevents ''3x3'' median filtering of bone and ''7x7'' filtering of soft tissue.
+
+*'''Measurement tube''': removes the tube used for lower limb measurements with some versions of the XCT3000 measurement device.
+
+----
+
+*'''Air threshold''': threshold for foreground pixels (all tissue). Pixels with values less than this are considered background.
+ 
+* '''Fat threshold''': pixels with values <math>air \leq x < fat</math> are considered fat tissue.
+
+* '''Muscle threshold''': threshold value for muscle tissue.
+
+* '''Marrow threshold''': separates marrow from bone. Pixels <math>\leq</math> the threshold within bone area are considered marrow.
+
+* '''Soft tissue threshold''': separates bone from soft-tissue. Pixels <math>\geq</math> the threshold are considered soft-tissue.
+
+* '''Area threshold''': separates bone from everything else. Used for total area (''ToA'') and bmd (''ToD'') as well as for cortical area (''CoA'') and ''SSI'' and ''BSId'' calculations.
+
+* '''BMD threshold''': separates cortical bone from everything else. Used for density distribution and cortical density (CoD) analyses.
+
+----
+
+* '''Scaling coefficient''': Used as the coefficient to scale the raw integer values read from the image file into ''BMD'' values , i.e. the raw-value term <math>b</math> in <math>y = a+bx</math> (N.B. in case of Stratec files a value of <math>2^15</math> is subtracted prior to applying the scaling to account for the fact that the values were stored as 16-bit signed integers , while ImageJ uses 16-bit unsigned integers. Also, the scaling is retrieved from a list of Stratec .TYP-files according to the image header information. In case of DICOM-files, the DICOM scaling (typically <math>y = -1000+1x</math>) is applied prior to applying this scaling.).
+
+* '''Scaling constant''': Used as the constant in scaling the raw integer values read from the image file into ''BMD'' values, i.e. term <math>a</math> in <math>y = a+bx</math>.
+
+----
+
+* '''ROI selection''': Chooses which bone is analysed. Results are always produced for one bone at a time.
+
+* '''Soft Tissue ROI selection''': Used to define, which soft tissue area is analysed. Results are always produced for one soft tissue area at a time.
+
+* '''Rotation selection''': Used to define, how the mass distribution, concentric density distribution and density distribution results are aligned.
+
+----
+
+* '''Analyse cortical results''': Whether (ticked) or not to analyse ''ToA'', ''ToD'', ''SSI'', ''CoA'', ''CoD'' and ''BSId''.
+
+* '''Analyse mass distribution''': Whether (ticked) or not to analyse mass distribution.
+
+* '''Analyse concentric density distribution''': Whether (ticked) or not to analyse concentric density distribution. Useful for e.g. distal bone without medullary cavity. Analyses density distribution in 10 anatomical concentric rings starting from the center of the bone area.
+
+* '''Analyse density distribution''': Whether (ticked) or not to analyse density distribution. N.B. will not produce meaningful results for bones without medullary cavity.
+
+* '''Analyse soft tissues''': Whether (ticked) or not to analyse soft tissues.
+
+* '''Prevent peeling PVE pixels''': Whether (ticked) or not to prevent peeling outermost and innermost layer of pixels in density distribution analysis. Useful e.g. for enabling analysis in subjects with thin cortices. N.B. having included PVE pixels should be kept in mind while interpreting the results!
+
+* '''Allow cleaving''': Used to separate bone/soft tissue areas, which are connected with a narrow struct. Cleaving is made by looking at the ratios of distances between two points along the edge and the shortest distance between the points. If the maximum of the ratio is high enough, the highest ratio points will be connected with a straight line and one of the resulting edges will be discarded. E.g. for a circle, the maximum ratio is <math>\frac{\pi}{2} / d \approx 1.57</math> and for a square it's <math>\frac{2}{\sqrt{2}} = \sqrt{2} \approx 1.41</math>.
+
+* '''Suppress result image''': The analysis pops up a result image, which may be suppressed by ticking this box. Useful e.g. for batch processing.
+
+* '''Limit ROI search to manually selected''': If ticked, only manually delineated ROI will be searched for a bone and soft tissue (The ROI selected with ImageJ ROI tools prior to executing the Distribution Analysis is used).
+
+* '''Set distribution results rotation manually''': If ticked, the density distribution results will be rotated according to the value given in the text box below.
+
+* '''Manual rotation''': If the box above is ticked, the density distribution results will be rotated according to the degree value given here (useful, e.g. when the automatic rotation fails).
+
+----
+
+* '''Guess flip''': If ticked, will allow trying to guess whether results need to be flipped.
+
+* '''Guess right''': If ticked, will try to guess whether results need to be flipped. If selected bone is closer to image left/upper border (Stacked not ticked or ticked, respectively), the results are not flipped.
+
+* '''Guess larger''': If ticked, will try to guess whether results need to be flipped. If larger bone is closer to image left/upper border (Stacked not ticked or ticked, respectively), the results are not flipped.
+
+* '''Stacked bones''': Used only if guess right or guess larger is ticked. Stacked means that the bones are expected to be on top of each other in the image (e.g. tibial mid-shaft in Stratec images).
+
+* '''Guess stacked''': Used only if guess right or guess larger is ticked. Tries to guess whether the bones are stacked. The default guess is not, but if the y-axis distance of the centers of the two largest bones differs by more than 1.1 time the x-axis distance, the bones are considered stacked.
+
+* '''Invert flip guess''': If ticked will invert the flip guess made by guess right or guess larger. Useful for e.g. analyzing two bones from the same image in order to align the distribution results similarly.
+
+* '''Flip distribution results''': If ticked, the distribution results will be flipped to a mirror image. Useful for e.g. comparing left to right leg.
+
+* '''Save visual result image on disk''': If ticked, will save visual result image on disk into the path given in the text box below. Useful e.g. for batch processing, allowing visual inspection of the results after running the batch.
+
+* '''Image save path''': If the above check box is ticked, the path given in this text box is used as the path into which the visual result images are saved to, i.e. c:/path/to/save/to/. remember to add the trailing /. Either / or \ may be used in the path.
