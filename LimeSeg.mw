@@ -12,14 +12,14 @@
 
 '''A Fiji plugin for the segmentation of 3D objects. '''
 
-Enable the [http://sites.imagej.net/LimeSeg/ LimeSeg update site] (http://sites.imagej.net/LimeSeg/) to get it.
+ [https://imagej.net/Following_an_update_site Enable the LimeSeg update site] to get it.
 
 
 __TOC__
 
 == Publication. ==
 
-TODO / Coming soon.
+[https://doi.org/10.1101/267534]
 
 == Video tutorials ==
 
