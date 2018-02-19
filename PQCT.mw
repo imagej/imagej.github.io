@@ -35,7 +35,7 @@ This package contains tools for Stractec pQCT soft-tissue and bone images. They 
 
 The main tool for pQCT image analysis. You must open an image first before running this tool.
 
-[[Image:http://bonej.org/images/selections.png]]
+[[Image:selections.png]]
 
 * '''Flip horizontal''': flips the image horizontally
 
