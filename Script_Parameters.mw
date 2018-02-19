@@ -78,7 +78,7 @@ A list of possible data types and the corresponding widgets is provided:
 |-
 | | <code>File</code>
 | file chooser
-| | <code>open</code> {{!}} <code>save</code> {{!}} <code>directory</code>
+| | <code>open</code> {{!}} <code>save</code> {{!}} <code>directory</code> {{!}} <code>extensions:</code>
 |}
 
 By implementing {{Javadoc | project = SciJava | package = org/scijava/widget | class = InputWidget}} it is possible to extend this list.
@@ -154,6 +154,14 @@ print(myFile)
 </source>
 
 The exact same code works for the [[Macros|ImageJ1 Macro language]], too.
+
+You can set restrictions on accepted file types based on file extension (using a <code>style</code> property):
+
+<source lang="python">
+#@ File(label="Select an image file", style="extensions:png/jpg") myImageFile
+
+print(myImageFile)
+</source>
 
 If you want to select a directory instead, use a <code>style</code> property:
 
