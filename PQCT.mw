@@ -250,14 +250,12 @@ Can be used to save a new version of the given image file, where selected metada
 Use this plug-in to open Stratec pQCT images. NB {{bc | File | Open}} or dragging the file doesn't work.
 
 == Test images ==
+You can download the [http://bonej.org/images/SyntheticData.zip package] that contains test images for the analyses. The source to produce the synthetic data and the expected results are also included.
 
-You can download the package [[Media:SyntheticData.zip]] that contains test images for the analyses. The source to produce the synthetic data and the expected results are also included.
-
-To easily run the test, use the macro [[Media:SyntheticDataMacro.zip]]. Instructions:
+To easily run the test, use the provided [http://bonej.org/images/SyntheticDataTest.ijm macro]. Instructions:
 
 # Prepare the .ijm macro file before the first time you run it
-## Unzip the .ijm file
-## Open the SyntheticDataTest.ijm
+## Open SyntheticDataTest.ijm
 ## Change the paths on line 2 and 3 to ones that match your computer, e.g.: line 2: sourceDir = C:/your/path/to/synthetic/images/. line 3: visualDir = C:/your/path/to/visual/results/. Remember the trailing "/" characters. N.B. The paths need to exist prior to executing the macro. In addition, windows operating system does not seem to work if the path contains spaces. If you are working with windows and do have spaces in your path, replace the / with \\.
 ## Save the .ijm file
 # Open Fiji / ImageJ
