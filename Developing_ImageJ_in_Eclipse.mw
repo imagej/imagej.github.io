@@ -249,6 +249,26 @@ Next, you will put your Java sources into <code>src/main/java/</code> and adjust
 
 After that, ask Eclipse to import it: {{bc | File | Import | Maven | Import Existing Maven Project}}.
 
+==Viewing Dependency Source==
+
+When jumping into a dependency class in Eclipse (using {{Key|F3}}), you may see a message stating "Source not found".
+
+For Maven dependencies there must be a <code>-sources</code> classifier JAR in the repository along side the main JAR. For example, <code>imagej-common</code> has an <code>imagej-common-0.24.4.jar</code> and an <code>imagej-common-0.24.4-sources.jar</code>. In theory, the Eclipse M2E plugin should download this <code>-sources</code> JAR and automatically display it to you when you jump to the class.
+
+However, if for some reason this doesn't happen you can try the following steps.
+
+#Try right-clicking the JAR in the Maven dependencies in Eclipse, and selecting "Download Sources". This should force Eclipse to download the <code>-sources</code> JAR.
+#Check that the <code>-sources</code> JAR has been downloaded locally. 
+#* Navigate to <code><path-to-.m2-repo>/repository/<groupId>/<artifactId>/<version></code> and see if there is a <code>-sources</code> JAR there.
+#* If it is not, then in a terminal navigate to the folder containing your project's pom.xml file. And then from the command line run <br /><code>mvn dependency:get -Dartifact=groupId:artifactId:version:packaging:classifier</code>.
+#**For example if a project depended on imagej-common and you needed to retrieve the <code>-sources</code> JAR, the command you'd type would be:<br /> <code>mvn dependency:get -Dartifact=net.imagej:imagej-common:0.24.4:jar:sources</code>
+#If the <code>-sources</code> JAR was there, you could check its contents by running the following command from the terminal:<br /><code>jar tr <path-to-.m2-repo>/repository/<groupId>/<artifactId>/<version>/<jar-name>-sources.jar</code>.
+#*If the file in question isn't there, then unfortunately this project doesn't have source for that class.
+
+If the class you're trying to view is a part of the JRE and you're on Linux, you may need to run <code>sudo apt install openjdk-<java-version-number>-sources</code> to retrieve the sources.
+
+Note that doing this only allows you to view the source code, it does '''not''' allow you to edit it. If you need to edit these files, see the [[Architecture#Using_snapshot_couplings_during_development|snapshot coupling]] section for more information.
+
 == See also ==
 
 {| class="wikitable nicetable"
