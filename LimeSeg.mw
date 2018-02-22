@@ -324,7 +324,7 @@ We now suppose that you already have created 3D objects that you want to optimiz
 
 If you download and unzip the sample file  https://raw.githubusercontent.com/NicoKiaru/TestImages/master/LimeSegOutput/DubSeg.zip, you will see that the folder contains an xml file which contains the last segmentation parameters (LimeSegParams.xml) and one folder per Cell object. In each folder, named according to the Cell id object, a CellParams.xml file contains the parameters specific to the Cell object, and CellT objects (Cell at a specific timepoint), consists of files T_x.ply where x is the timepoint number and where ply is the standard 3D format used. [https://en.wikipedia.org/wiki/PLY_(file_format) PLY] file format is standard and can be used in many other 3D software.
 
-To save the current objects of LimeSeg, choose an EMPTY folder in LimeSeg GUI I/O Tab, with the button '''WriteTo:''', then click on the '''saveStateToXmlPly ''' button.
+To save the current objects of LimeSeg, choose an EMPTY folder in LimeSeg GUI I/O Tab ('''Plugins>LimeSeg> Show GUI'''), with the button '''WriteTo:''', then click on the '''saveStateToXmlPly ''' button.
 
 To open previously saved data, select the folder with the LoadFrom: button then click loadStateFromXmlPly button. This erases all previous data contained in LimeSeg.
 
