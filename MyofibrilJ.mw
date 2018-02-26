@@ -9,7 +9,7 @@
 }}
 
 == Introduction ==
-The MyofibrilJ plugin provides two scripts to analyse fibril morphology. Given a fluorescence image of muscle fibers, the scripts measure myofibrils dimensions and sarcomere length. The scripts were initially developed for the analysis of both longitudinal- and cross-sections of myofibrils stained with rhodamine-phalloidin.
+The MyofibrilJ plugin provides two scripts to analyse fibril morphology. Given a fluorescence image of muscle fibers, the scripts measure myofibrils dimensions and sarcomere length. The scripts were initially developed for the analysis of both longitudinal and cross sections of myofibrils stained with rhodamine-phalloidin.
 
 == Details ==
 Two distinct commands are provided to analyse either cross-sections or longitudinal sections of fibers. 
