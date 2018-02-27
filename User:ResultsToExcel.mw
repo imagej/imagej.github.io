@@ -82,7 +82,7 @@ New tutorial for v1.1.0 coming soon
 
 
 Dependencies:
-jars/commons-collections4
+jars/commons-collections4,
 jars/xmlbeans.jar,
 jars/poi-ooxml.jar,
 jars/poi-ooxml-schemas.jar,
