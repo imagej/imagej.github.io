@@ -1,9 +1,11 @@
 
 plugins/Read_and_Write_Excel-1.0.2.jar (Installation instructions at bottom of this page)
 
-Created in Eclipse IDE Mars.1 release (4.5.1), using the java jdk1.6.0_45 for ImageJ/Fiji compatibility.
+Coming soon: plugins/Read_and_Write_Excel-1.1.0
 
-Release date:
+Created in Eclipse IDE Neon release (4.6.0), now requires java jre 1.8.
+
+Release dates:
 
 19 Nov 2015 v1.0.0
 
@@ -11,19 +13,40 @@ Release date:
 
 10 April 2017 v1.0.2
 
+27 Feb 2018 v1.1.0 (This version contains many new features that have been added by Brenden Kromhout https://github.com/bkromhout)
+
 Description :
-This plugin extracts data from the Results Table and adds it to a sheet-tab "A" in an .xlsx Excel file on the user's desktop. The plugin will create a file named "Rename me after writing is done" on the desktop if none-exists already, and will update this file if it has already been created. Data is added to the latest sheet (created as "A" if the file is new). Within the latest sheet, data will be added adjacent to previous data. Results Table column headers are added automatically.
+By default, this plugin extracts data from the Results Table and adds it to a sheet-tab "A" in an .xlsx Excel file on the user's desktop. The plugin will create a file named "Rename me after writing is done" on the desktop if none-exists already, and will update this file if it has already been created. Data is added to the latest sheet (created as "A" if the file is new) or to a user specified sheet using a passed argument (see below). Within the latest sheet, data will be added adjacent to previous data. Results Table column headers are added automatically. A row count is added by default but the user can choose to deny this with a passed argument.
 
 This plugin can be called from a macro using:
-run("Read and Write Excel");
-and it works very well with batching.
+run("Read and Write Excel"); 
+and it works very well with batching. A major change for v1.1.0, is that, if called slightly differently (see below), the plugin is now much better at handling large data sets and/or excel files that become large over time.
 
-The title of the first open image will be added as a label for exported results data by default. The argument function can also be used to overwrite this, so that the user may provide their own title for each export:
-run("Read and Write Excel", "This is my new title");
+The title of the '''most recent''' open image will now be added as a label for exported results data by default, instead of the first open image. An argument function can also be used to overwrite this, so that the user may provide their own title for each export:
+run("Read and Write Excel", "dataset_label=This_is_my_new_title");
+'''Please note, the provided title should not contain spaces between words'''.
+
+OPTIONAL ARGUMENTS will be parsed from the second argument string as follows. 
+
+"no_count_column" Prevents the plugin from adding a "Count" column automatically. 
+
+"file=" The path to the excel file to use (uses the default desktop file otherwise) Example "file=[/Users/antinos/Desktop/My_file.xlsx]" will create and/or append the specified file.
+
+"sheet=" Which sheet in the excel file to put the results in. Example "sheet=banana" will create and/or append a sheet named 'banana'.
+
+"dataset_label=" The label to write in the cell above the data in the excel file. Example "dataset_label=My_new_results_data_label" will use the specified title. Strings and numbers can still be fed to the custom title modifier from a loop but avoid introducing spaces e.g "dataset_label=Table_" + i
+
+Join arguments as follows: run("Read and Write Excel", "no_count_column file=[/Users/antinos/Documents/My_cool_file.xlsx] sheet=Custom_name_here dataset_label=Table_" As you can see, '''spaces are important to delimit arguments''', hence us avoiding them within custom fields.
+
+"file_mode=" This requires a slightly different way of calling the plugin but '''is very useful for expected large datasets'''. There are three options. "file_mode=read_and_open" Will just open an excel file (the one you specify with file=)...make sure you do write_and_close when you're done or you'll have problems. 
+"file_mode=write_and_close" Will just write everything you've queued with queue_write, then close the excel file. 
+"file_mode=queue_write" Will queue something to be written to the excel file you've opened previously with read_and_open
+
+see https://github.com/bkromhout/Read_and_Write_Excel_Modified for examples.
 
 I am aware that another Excel_Writer plugin exists but it did not work for me very well (hence me creating this). I did not consult their source code but did find out about Apache POI(*) from them.
 
-If you decide to consult my source-code, please excuse odd methods and strange notes. I have taught myself Java to write this.
+Since Brenden modified the plugin, the code is now a lot neater. Feel free to consult it as per your needs.
 
 (*)This plugin uses the Apache POI api, which is distributed under the terms of the Apache Licence (available from https://poi.apache.org/legal.html). I believe this software to be free and open source.
 
@@ -37,8 +60,14 @@ Version 1.0.2 changes:
 2) all data is now exported as string/text into the generated spreadsheet. This is sub-optimal, in that cells will then need to be converted back to a number format in the spreadsheet, but was required to immediately fix an issue whereby string data (when it exists within the Results table) was not being handled properly by the plugin
 3) Replaced the legacy data import function of the argument line (note 1 above) with an allowance for user supplied headings for each import; the argument now accepts a string title (e.g "this is my new title") that will then be used to label the results when exported.
 
+Version 1.1.0 changes: 
+1) Brenden Kromhout added the optional argument features mentioned above and described on his GitHub repo 
+2) Data imported into an .xlsx file is now recognised as either text or numbers automatically 
+3) An imageJ progress bar is now visible for each export 
+4) Now using the latest Apache POI releases (3.17)
+
 Author:
-Anthony Sinadinos
+Anthony Sinadinos and Brenden Kromhout
 
 Platforms:
 Multi
@@ -48,9 +77,12 @@ Input/Output.
 Export data to file. Batch tested.
 
 Link:
-YouTube tutorial (https://www.youtube.com/watch?v=79rzUae-7N8)
+YouTube tutorial (https://www.youtube.com/watch?v=79rzUae-7N8) 
+New tutorial for v1.1.0 coming soon
+
 
 Dependencies:
+jars/commons-collections4
 jars/xmlbeans.jar,
 jars/poi-ooxml.jar,
 jars/poi-ooxml-schemas.jar,
