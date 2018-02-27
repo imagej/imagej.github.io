@@ -1,0 +1,30 @@
+{{Infobox
+| software               = ImageJ
+| name                   = FPBioimage Helper Plugin
+| logo                     = [[File:FPB_Logo.png|96px]]
+| author                 = [http://fpb.ceb.cam.ac.uk FPBioimage]<br/> Marcus Fantham
+| source                 = {{GitHub|org=fpBioimage|repo=FPBioimageHelper-FIJI}}
+}}FPBioimage is an interactive tool for viewing volumetric data in the web browser. To quickly share 3D data with your collaborators using FPBioimage, we provide this useful plugin for ImageJ and FIJI.
+{{TOC}}
+
+== Installation ==
+
+Add FPBioimage to your 'Update' sites:
+
+# Launch the updater by selecting '''Update''' from the '''Help''' menu.
+# Click the '''Manage update sites''' button.
+# Tick the '''FPBioimage''' box: [[File:FPB-manage-update-sites.png|700px|center]]
+# Click the '''Close''' button. The updater should now want to install or update some files: [[File:FPB-jars-to-update.png|700px|center]]
+# Click the '''Apply changes''' button.
+# Restart Fiji when prompted.
+
+=== Manual Installation ===
+
+If you want to install FPBioimage manually, copy the [https://github.com/fpBioImage/FPBioimageHelper-FIJI/releases|latest .jar release] to the Fiji/plugins folder. 
+
+== Source code ==
+The source code for the FPBioimage FIJI plugin is {{GitHub | org = fpbioimage | repo = FPBioimageHelper-FIJI}}.
+To contribute to the FPBioimage web app can also be accessed {{GitHub | org = fpbioimage | repo = unity}}. 
+
+== Publication ==
+* {{Publication | FPBioimage}}
