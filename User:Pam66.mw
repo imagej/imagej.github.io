@@ -3,7 +3,7 @@ Paolo Miocchi (IRCSS - Fondazione Santa Lucia [http://www.hsantalucia.it/en/ircc
 [[File:S3D_example.jpg]]
 
 <h2>Instructions to download the plugin</h2>
-<p>Open Fiji [https://fiji.sc/] and click the <b>Help>Update...</b> menu item and then click on the <b>Manage update sites</b> button. A window will appear with update sites listed in alphabetical order. Click in the box of "Steerable3D" site name and on the <b>Close</b> button. Click on the <b>Apply changes</b> button and Fiji should automatically download the plugin each time it is updated.</p>
+<p>Open Fiji [https://fiji.sc/] and click the <b>Help>Update...</b> menu item and then click on the <b>Manage update sites</b> button. A window will appear with update sites listed in alphabetical order. Click in the box of "Steerable3D" site name and on the <b>Close</b> button. Click on the <b>Apply changes</b> button and Fiji should automatically download the plugin each time it is updated. It is possible that a "Resolve dependencies" window will appears before the download. In that case click on the <b>Update</b> and then on the <b>OK</b> button.</p>
 
 Useful links:
 
