@@ -77,3 +77,7 @@ To continue with your upload, you have to resolve the pending downloads in one o
 * If you deleted files locally to make them obsolete, mark the files "Keep as-is".
 
 The ''View changes'' option is helpful to identify what downloads are pending. Once all of these are at a neutral state—with everything up-to-date or keep as-is—you can start flagging your files for upload as intended.
+
+Other options to check if still not resolved:
+* Be sure to set your upload password for your currently logged-in wiki account. Just click [[Special:ChangeUploadPassword|Set/change upload password]] under the MORE TOOLS section at the bottom of any wiki page.
+* Be sure that under “Manage update sites” that your credentials are inserted for your update site. See [[How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site|Uploading files to your update site]] on the ImageJ wiki to double-check how to do this.
