@@ -6,8 +6,8 @@ The rules for <code>#@parameter</code> use are as follows:
 
 <ol>
 <li>Parameter declarations begin with <code>#@</code>. Each such line contains a single parameter declaration or script directive and nothing else.</li>
-<li><code>#@ Type variableName</code> will declare an input of the indicated type, assigned to the specified name.</li>
-<li><code>#@output Type outputName</code> will declare the variable of the specified name as an output parameter with the given type.</li>
+<li><code>#@ Type variableName</code> will declare an input of the indicated type, assigned to the specified name. (The use of a space between <code>#@</code> and <code>Type</code> is encouraged, but not required.)</li>
+<li><code>#@output Type outputName</code> will declare the variable of the specified name as an output parameter with the given type. (For the <code>output</code> directive and other script directives, no space is allowed between <code>#@</code> and the directive.)</li>
 </ol>
 
 {{Testimonial
