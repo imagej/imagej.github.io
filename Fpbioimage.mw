@@ -31,7 +31,7 @@ Note that, to ensure color appears correctly in the web app, images must be of t
 
 FPBioimage Helper will set the XYZ voxel ratio from the image properties (Image > Properties...), although you can overwrite this data in the plugin in case it is incorrect. 
 
-== One-click Macro ===
+== One-click Macro ==
 
 Copy the following macro to the bottom of the Fiji/macros/StartupMacros.fiji.ijm file to add a macro button for one-click uploading to FPBioimage. 
 
