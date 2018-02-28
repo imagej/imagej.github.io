@@ -31,10 +31,34 @@ Note that, to ensure color appears correctly in the web app, images must be of t
 
 FPBioimage Helper will set the XYZ voxel ratio from the image properties (Image > Properties...), although you can overwrite this data in the plugin in case it is incorrect. 
 
+== One-click Macro ===
+
+Copy the following macro to the bottom of the Fiji/macros/StartupMacros.fiji.ijm file to add a macro button for one-click uploading to FPBioimage. 
+
+<source lang="js">
+macro "FPB Upload Action Tool - C111F00ffCeeeD21D24D71D81Dc1Dd1De1CfffL3137L393eL4161L4464D49D4bD4eD59D5bD5eD6aD6cD6dL9197D99D9bD9cDa1Da4Db1Db4DbbDc2Dc3DcaDccDdb" {
+	rW = getWidth();
+	rH = getHeight();
+	t = getTitle();
+    index = indexOf(t, ' ');
+    if (index>-1){t = substring(t, 0, index);}
+    index = indexOf(t, '.');
+    if (index>-1){t = substring(t, 0, index);}
+
+	if (rW>500){rW = 499;}
+	if (rH>500){rH = 499;}
+	getVoxelSize(vW, vH, vD, x);
+
+	run("FPBioimage Helper", "unique=" + t + " x-voxel=" +vW + " y-voxel=" + vH + " z-voxel=" + vD + " x-resolution=" + rW + " y-resolution=" + rH + " upload");
+}
+</source>
+
 == Source code ==
+
 The source code for the FPBioimage FIJI plugin is {{GitHub | org = fpbioimage | repo = FPBioimageHelper-FIJI}}.
 
 The source code for the FPBioimage web app can also be accessed {{GitHub | org = fpbioimage | repo = unity}}. 
 
 == Publication ==
+
 * Fantham, M. and Kaminski, C.F. (2017). [https://www.nature.com/articles/nphoton.2016.273 A new online tool for visualization of volumetric data]. Nature photonics, 11(2), 69.
