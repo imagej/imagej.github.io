@@ -1,9 +1,7 @@
 
-plugins/Read_and_Write_Excel-1.0.2.jar (Installation instructions at bottom of this page)
+Coming soon: plugins/Read_and_Write_Excel-1.1.0 (Installation instructions at bottom of this page)
 
-Coming soon: plugins/Read_and_Write_Excel-1.1.0
-
-Created in Eclipse IDE Neon release (4.6.0), now requires java jre 1.8.
+Created in Eclipse IDE Neon release (4.6.0), and now requires java jre 1.8.
 
 Release dates:
 
@@ -77,8 +75,8 @@ Input/Output.
 Export data to file. Batch tested.
 
 Link:
-YouTube tutorial (https://www.youtube.com/watch?v=79rzUae-7N8) 
-New tutorial for v1.1.0 coming soon
+YouTube tutorial v1.0.1 (https://www.youtube.com/watch?v=79rzUae-7N8) 
+New tutorial for v1.1.0 (https://youtube.com/watch?v=dLkoB25MTIY)
 
 
 Dependencies:
