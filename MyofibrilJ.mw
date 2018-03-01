@@ -2,8 +2,8 @@
 {{Infobox
 | software        = ImageJ/Fiji
 | name            = MyofribilJ
-| maintainer     = Giovanni Cardone
-| author          = Giovanni Cardone and Maria Spletter
+| maintainer      = {{Person|Gcardone}}
+| author          = {{Person|Gcardone}} and Maria Spletter
 | released        = November 2017
 | category        = [[:Category:Analysis|Analysis]], [[:Category:Scripting|Scripting]], [[:Category:Plugins|Plugins]]
 }}
