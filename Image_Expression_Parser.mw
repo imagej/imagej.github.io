@@ -188,14 +188,15 @@ See ''ImgLibGaussConv'' for an example. In this example, you will also see how e
 It is possible to call the plugin from another class or in a scripting language. For instance in Python:
 
 <source lang="python">
-import mpicbg.imglib.image.ImagePlusAdapter
-import mpicbg.imglib.image.display.imagej.ImageJFunctions
-import fiji.process.Image_Expression_Parser
+from ij import WindowManager
+from net.imglib2.img import ImagePlusAdapter
+from net.imglib2.img.display.imagej import ImageJFunctions
+from fiji.process import Image_Expression_Parser
 
 
 # Make an ImgLib image from the current image
 imp = WindowManager.getCurrentImage()
-img = mpicbg.imglib.image.ImagePlusAdapter.wrap(imp)
+img = ImagePlusAdapter.wrap(imp)
 
 # In python, the map can be a dictionary, relating 
 # variable names to images
@@ -203,7 +204,7 @@ map = {'A': img}
 expression = 'A^2'
 
 # Instantiate plugin
-parser = fiji.process.Image_Expression_Parser()
+parser = Image_Expression_Parser()
 
 # Configure & execute
 parser.setImageMap(map)
@@ -212,8 +213,7 @@ parser.process()
 result = parser.getResult() # is an ImgLib image
 
 # Copy result to an ImagePlus and display it
-result_imp = mpicbg.imglib.image.display.imagej.ImageJFunctions.copyToImagePlus(result)
-result_imp.show()
+result_imp = ImageJFunctions.show(result)
 result_imp.resetDisplayRange()
 result_imp.updateAndDraw()
 </source>
