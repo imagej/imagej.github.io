@@ -73,6 +73,8 @@ Many lightsheet microscopes offer illumination of the sample from multiple direc
 
 *[[BigStitcher_Global_optimization|Global optimization]]
 
+*[[BigStitcher_ICP_refinement|Affine refinement of registration via ICP]]
+
 In addition to the standard stitching pipeline, we also offer advanced functionality, such as different algorithms for determining pairwise shifts:
 
 *[[BigStitcher_Advanced_stitching|Advanced stitching]]
