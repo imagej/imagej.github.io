@@ -41,14 +41,17 @@ Note that '''both''' stopping conditions have to be met for the optimization to 
 
 == Expert view grouping ==
 
-*Select weather all instances of an attribute or just the specified views should be processed.
+In the next two dialogs, you will be asked which views to include in the global optimization. They are the same as in [[BigStitcher_Advanced_stitching]].
 
-[[File:BigStitcher_stitch_6.png|center]]
+* In the first dialog, you can select whether all instances of an attribute or just the currently selected views should be processed. For example, in the example below, we align all Channels, Tiles and Illuminations, but only for the currently selected timepoint and angle.
 
-*Select how to process the different attributes.
+[[File:BigStitcher_stitch_6.png|center|600px]]
 
-[[File:BigStitcher_stitch_8.png|center]]
+*Select how to process the different attributes. For example, in the figure below, we will ''treat TimePoints and Angles individually'', which means that we will run the global optimization separately for each time point and angle. Likewise, we ''group Channels and Illuminations'', meaning that we will align all channels and illumination directions for a tile the same way. Finally, we ''compare'' Tiles, which means that tiles will be aligned relatively to each other.
 
+[[File:BigStitcher_stitch_8.png|center|600px]]
+
+{{Warning|Theoretically, you can use the second dialog to align arbitrary groupings of the data, e.g. compare Channels but group Tiles for chromatic shift correction. Note that you have to have done the ''pairwise shift calculation'' for the same grouping of the data, otherwise, we can find no pairwise shifts to use in the global optimization}}
 
 == Fixing views ==
 
