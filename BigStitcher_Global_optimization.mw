@@ -55,5 +55,15 @@ In the next two dialogs, you will be asked which views to include in the global 
 
 == Fixing views ==
 
-*Select what view to fix and use as starting point 
-[[File:BigStitcher_stitch_9.png|center]]
+Finally, you will be asked which view groups to fix in each subset that you chose to ''treat individually''. The selected groups will be left where they are and all others will be aligned relative to them.
+
+Note that if you select multiple fixed groups, it might lead to worse results as the original location (e.g. from metadata) might not agree with the calculated relative position of the views. 
+<!-- 
+TODO: this crashes at the moment.
+If you already ran the alignment for some of the views, however, you can fix them and align new views relative to them. -->
+
+Normally, the best idea is to select one view group to fix, using it as a starting point that all other views will be moved relative to.
+
+
+
+[[File:BigStitcher_stitch_9.png|center|400px]]
