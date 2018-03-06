@@ -1,3 +1,5 @@
+= Intro =
+
 After calculating and previewing pairwise shift results you can proceed to the global optimization. Since the position of a tile with multiple neighbors is usually not unambiguously defined by the pairwise shifts, this step will iteratively update the transformations of the tiles until a consensus is reached that minimizes the deviation of each tile from the locations proposed by the calculated pairwise shifts.
 
 Furthermore, we apply a few tweaks to improve the results:
