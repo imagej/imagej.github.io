@@ -1,10 +1,45 @@
-*After calculating and previewing pairwise shift results you can proceed to the global optimization.
+After calculating and previewing pairwise shift results you can proceed to the global optimization. Since the position of a tile with multiple neighbors is usually not unambiguously defined by the pairwise shifts, this step will iteratively update the transformations of the tiles until a consensus is reached that minimizes the deviation of each tile from the locations proposed by the calculated pairwise shifts.
 
-*This can be done automatically after exiting the Preview Mode or by selecting the respective tiles and right-click "Optimize Globally and Apply Shift"
+Furthermore, we apply a few tweaks to improve the results:
 
-*Now, select the cross-correlation, relative error and absolute error threshold. Also specify if a two-round optimization is desired and if weak links between overlapping views should be allowed. 
+* If the global optimization does not find an alignment with sufficiently low error, we will automatically drop disagreeing links from the tile-network and re-run the process. In the worst case, this is repeated until we end up with a ''minimal spanning tree'' of the link network.
+
+* If there are multiple ''connected components'' in the link network (e.g. distant colonies of cells with large stretches of background between them where we cannot calculate reliable pairwise shifts), we will first align the components using the calculated pairwise shifts and then align the "islands" relative to each other using the locations defined in the metadata (or through manual pre-alignment).
+
+= Simple Mode =
+
+The '''simple mode''' of global optimization does not require any user input, as we use reasonable default values for all parameters.
+The simple global optimization is run automatically if you click through the '''Stitching wizard''' (in no-expert mode) or can be accessed from the main menu under {{bc|Optimize Globally And Apply Shift|Simple Mode}}.
+
+This will immediately update the tile locations in the BigDataViewer, if it is open. If you want to un-do this step, you can click {{bc|Remove Transformation|Latest/Newest Transformation}} in the main menu. 
+
+{{Notice|We will not save the results to the project XML file automatically, click the '''Save''' button in the main window to do that.}}
+
+= Expert Mode =
+
+
+*Now, select the cross-correlation, relative error and absolute error threshold. Also specify if a two-round optimization is desired and if weak links between overlapping views should be allowed.
+
+== Optimization strategy and convergence criteria ==
+
+In the first dialog, you will be asked for the optimization strategy to apply:
+
+* '''Simple One-Round:''' run the global optimization once, taking all the links in the tile-network (that were not filtered out previously) into consideration. This is the fastest strategy, but it might lead to bad results if you have not carefully filtered out bad pairwise shifts or if there are multiple unconnected regions.
+* '''One-Round with iterative dropping of bad links:''' run the optimization iteratively, removing the worst link in the network until the average error of the tiles falls below certain thresholds (see below). This strategy is more robust against a few "bad" links, but will not move unconnected regions relative to each other.
+* '''Two-Round using Metadata to align unconnected Tiles:''' first, run '''Two-Round using Metadata to align unconnected Tiles''' and then use shifts from metadata to align connected components relative to each other (while keeping the results from the first round within a component).  
+
+{{Notice|The computational cost of the global optimization is relatively minor in comparison to the pairwise shift calculation. We therefore recommend to use the '''Two-Round using Metadata to align unconnected Tiles''' strategy (and do so by default in the Simple Mode).}}
+
+If you opt for any of the '''iterative strategies''', you have to consider the two error thresholds, which determine when to stop dropping bad links and re-doing the optimization:
+
+* '''relative error threshold:''' the optimization will be repeated until the biggest error of any tile is smaller than the average error times he threshold.
+* '''absolute error threshold:''' the optimization will be repeated until the average error of the tiles 
+
+Note that '''both''' stopping conditions have to be met for the optimization to finish.
 
 [[File:BigStitcher_stitch_5.png|center]]
+
+== Expert view grouping ==
 
 *Select weather all instances of an attribute or just the specified views should be processed.
 
@@ -13,6 +48,9 @@
 *Select how to process the different attributes.
 
 [[File:BigStitcher_stitch_8.png|center]]
+
+
+== Fixing views ==
 
 *Select what view to fix and use as starting point 
 [[File:BigStitcher_stitch_9.png|center]]
