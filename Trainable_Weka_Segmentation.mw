@@ -152,6 +152,8 @@ The detailed implementation of these 2D filters can be found in the [https://git
 *'''Difference of Gaussian''': calculates two [[wikipedia:Gaussian blur|Gaussian blur]] images from the original image and subtracts one from the other. <math>\sigma</math> values are varied as usual, so <math>\frac{n(n-1)}{2}</math> feature images are added to the stack.
 * '''Minimum, Maximum, Mean, Variance, Median''': the voxels within a radius of <math>\sigma</math> voxels from the target pixel are subjected to the pertinent operation (mean/min etc.) and the target voxel is set to that value.
 
+'''Sigma units''': all 3D features use a common sigma which is in voxel units. However, since the voxel can be anisotropic, the sigma size will be adjusted accordingly to account for it. Therefore, you need to make sure the input image calibration is correct when you call the plugin.
+
 ===== Feature options =====
 
 * '''Membrane thickness''': expected value of the membrane thickness, 1 pixel by default. The more accurate, the more precise the filter will be. Only available for 2D features.
