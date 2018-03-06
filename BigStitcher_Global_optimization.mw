@@ -17,8 +17,7 @@ This will immediately update the tile locations in the BigDataViewer, if it is o
 
 = Expert Mode =
 
-
-*Now, select the cross-correlation, relative error and absolute error threshold. Also specify if a two-round optimization is desired and if weak links between overlapping views should be allowed.
+If you click on {{bc|Optimize Globally And Apply Shift|Expert Mode}} or proceed to the global optimization from the '''Stitching wizard''' in '''expert mode''', you will be asked for a few extra parameters before the your views are aligned.
 
 == Optimization strategy and convergence criteria ==
 
