@@ -21,3 +21,17 @@ We currently support three different ways of calculating pairwise shifts.
 == Interest point-based shift calculation ==
 
 = Advanced view grouping =
+
+In the expert mode of the stitching steps, we offer advanced options for view grouping (in addition to the channel and illumination grouping available via the UI) and batch processing.
+
+In the next two dialogs, you will be asked which views to include in the calculations and how to group them.
+
+* In the first dialog, you can select whether all instances of an attribute or just the currently selected views should be processed. For example, in the example below, we use all Channels, Tiles and Illuminations, but only for the currently selected timepoint and angle.
+
+[[File:BigStitcher_stitch_6.png|center|600px]]
+
+*Select how to process the different attributes. For example, in the figure below, we will ''treat TimePoints and Angles individually'', which means that we will compute shifts between view pairs separately for each time point and angle. Likewise, we ''group Channels and Illuminations'', meaning that we will combine all channels and illumination directions for a tile into one image beforw calculating shifts. Finally, we ''compare'' Tiles, which means that shifts will be calculated between tiles.
+
+[[File:BigStitcher_stitch_8.png|center|600px]]
+
+{{Warning|Theoretically, you can use the second dialog to generate arbitrary groupings of the data, e.g. compare Channels but group Tiles for chromatic shift correction. Not all of these groupings might make sense and not all of them can be properly visualized in the UI (e.g. for ''interactive link preview''). Note that you have to use for the same grouping of the data in the subsequent ''global optimization'' step.}}
