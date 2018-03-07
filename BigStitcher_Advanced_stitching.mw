@@ -16,6 +16,14 @@ We currently support three different ways of calculating pairwise shifts.
 
 First, you will be asked which views to include in the calculation and how to group them. See the [[BigStitcher_Advanced_stitching#Advanced_view_grouping|Advanced view grouping section below]] for details.
 
+Next, you will be asked how to treat grouped views and which downsampling of the images to use. This is the same as in the simple mode, so please look [[BigStitcher_Pairwise_shift#Pairwise_shift_calculation|to the corresponding page]] for details.
+
+Finally, you will be asked for parameters for the actual phase correlation calculation:
+
+*
+*
+*
+
 == Iterative alignment via Lucas-Kanade algorithm ==
 
 First, you will be asked which views to include in the calculation and how to group them. See the [[BigStitcher_Advanced_stitching#Advanced_view_grouping|Advanced view grouping section below]] for details.
