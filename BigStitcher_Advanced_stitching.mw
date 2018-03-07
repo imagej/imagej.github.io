@@ -1,8 +1,20 @@
 = Overview =
 
+In addition to the default Phase Correlation-based pairwise shift determination, we offer some alternative methods and advanced parameterization, as well as non-standard grouping of the views in your dataset.
+
+[[File:BigStitcher_stitch_0.png|center|600px]]
+
+If you want to proceed straight to the next steps after calculating the shifts, we offer the same options under {{bc|Stitching Wizard|Stitch dataset (expert) ...}}
+
 = Advanced pairwise shift calculation =
 
+We currently support three different ways of calculating pairwise shifts.
+
+{{Notice|We strongly advice to try the default '''Phase Correlation''' first, as it tends to give the most robust results in comparison to the more specialized methods below.}}
+
 == Advanced phase correlation ==
+
+
 
 == Iterative alignment via Lucas-Kanade algorithm ==
 
