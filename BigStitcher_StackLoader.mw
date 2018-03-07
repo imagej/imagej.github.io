@@ -56,7 +56,7 @@ Finally, you can choose to '''Show list of filenames'''. If you select this and 
 
 === Step 3: Verify calibration ===
 
-If you chose to manually specify the voxel sizes or load them from metadata and display for verification, you will can specify them in the next dialog. If you opted to use a different voxel size for each view, you can set the pixel distances and units for each view in this dialog, otherwise, one calibration will be used for all.
+If you chose to manually specify the voxel sizes or load them from metadata and display for verification, you can modify them in the next dialog. If you opted to use a different voxel size for each view, you can set the pixel distances and units for each view in this dialog, otherwise, one calibration will be used for all.
 
 [[File:BigStitcher_Stack_Import4.png|thumb|300px|Step 3: Verifying/modifying calibration.]]
 
