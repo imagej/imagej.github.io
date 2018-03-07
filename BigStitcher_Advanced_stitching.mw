@@ -46,7 +46,16 @@ Finally, you will be asked for two parameters:
 
 == Interest point-based shift calculation ==
 
+Finally, you can use the interest point-based registration of the [[Multiview-Reconstruction]] to determine pairwise shifts. In the right-click menu, you can choose whether to do the alignment with '''new interest points''' or '''existing interest points''' (if they exist).
+
 First, you will be asked which views to include in the calculation and how to group them. See the [[BigStitcher_Advanced_stitching#Advanced_view_grouping|Advanced view grouping section below]] for details.
+
+If you chose to detect new interest points, you will then have to proceed through the steps of interest point detection. Please refer to the [[BigStitcher_Interest_points|corresponding section]] of this Wiki for detailed instructions.
+
+Next, the image pairs will be registered using the interest points. Please refer to the [[BigStitcher_Registration|corresponding section]] of this Wiki for detailed instructions. Note that the transformation model is restricted to a simple translation at the moment and you can only use the following strategies:
+* Fast descriptor-based (rotation invariant)
+* Fast descriptor-based (translation invariant)
+* Precise descriptor-based (translation invariant)
 
 = Advanced view grouping =
 
