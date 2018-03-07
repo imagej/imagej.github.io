@@ -1,5 +1,8 @@
 (Return to the main [[Simple Neurite Tracer]] page)
 
+{{ambox | text =SNT is mostly a keyboard-based program. Shortcuts are typically single keystrokes and do not require other modifier keys to be pressed. Most are highlighted in the user interface. E.g., to toggle the ''<u>H</u>essian analysis'' checkbox, one only needs to press its highlighted letter, i.e., {{key|H}}.
+}}
+
 ===Key Shortcuts===
 
 * {{key|Y}} - Confirm the current temporary path. ''Mnemonic: <u>Y</u>es.''
@@ -18,8 +21,8 @@
 
 * {{key|+}} - Zoom in (Simultaneously on all views).
 * {{key|-}} - Zoom out (Simultaneously on all views)
-* {{key|5}} - Toggle ''View paths'' choice: ''Parts in nearby slices'' / ''Projected through all slices''. Mnemonic: <u>5</u> is ImageJ's shortcut for "default" view ({{bc|Image|Zoom|View 100%}}).
-* {{Key|enter}} - Brings the tracing image/SNT window to front
+* {{key|Z}} - Toggles depth-rendering choice of existing paths: ''Parts in nearby slices'' / ''<u>Z-</u>stack projection.
+* {{Key|enter}} - Shuttles the window focus between  the tracing image and the SNT window
 
 
 There are more complex key and mouse combinations used in:
