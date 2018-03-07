@@ -18,7 +18,11 @@ First, you will be asked which views to include in the calculation and how to gr
 
 == Iterative alignment via Lucas-Kanade algorithm ==
 
+First, you will be asked which views to include in the calculation and how to group them. See the [[BigStitcher_Advanced_stitching#Advanced_view_grouping|Advanced view grouping section below]] for details.
+
 == Interest point-based shift calculation ==
+
+First, you will be asked which views to include in the calculation and how to group them. See the [[BigStitcher_Advanced_stitching#Advanced_view_grouping|Advanced view grouping section below]] for details.
 
 = Advanced view grouping =
 
