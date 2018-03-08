@@ -62,7 +62,6 @@ Many lightsheet microscopes offer illumination of the sample from multiple direc
 
 *[[BigStitcher_Select_illumination|Illumination selection]]
 
-
 === Stitching ===
 
 Stitching consists of aligning multiple overlapping image tiles using a translation model. If your dataset consists of tiled acquisitions from multiple angles, the stitching should be done for all angles independently before aligning the angles using Multiview Reconstruction:
