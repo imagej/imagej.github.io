@@ -65,13 +65,17 @@ Many lightsheet microscopes offer illumination of the sample from multiple direc
 
 === Stitching ===
 
+Stitching consists of aligning multiple overlapping image tiles using a translation model. If your dataset consists of tiled acquisitions from multiple angles, the stitching should be done for all angles independently before aligning the angles using Multiview Reconstruction:
 
+The basic stitching pipeline consists of 3 steps:
 
 *[[BigStitcher_Pairwise_shift|Pairwise shift calculation]]
 
 *[[BigStitcher_Preview_Pairwise_shift|Previewing and filtering pairwise shifts]]
 
 *[[BigStitcher_Global_optimization|Global optimization]]
+
+Additionally, we offer the possibility to refine the alignment with a more complex affine transformation model using the iterative Closest Point (ICP) algorithm:
 
 *[[BigStitcher_ICP_refinement|Affine refinement of registration via ICP]]
 
