@@ -1,19 +1,65 @@
+== Overview ==
+
 *For registration of views to each other interest points have to be detected.
+
 
 *In '''Multiview Mode''' choose the desired views and by right-click select the "Detect Interest Points" option.
 
-*Select the detection method and give a label for the detection. 
+
+=== Basic Parameters ===
+
+In the first dialog, you can select the detection method and give a '''label''' to interest points that will be detected (e.g "beads" or "nuclei").
+
+The '''type of interest point detection''' can be:
+*'''Difference-of-Mean (Integral image based):''' slightly faster, but slightly less accurate
+*'''Difference-of-Gaussian:''' more accurate, but slightly slower (can be GPU-accelerated with some work, however)
+
+You can activate some advanced parameterization by selecting '''Define anisotropy for segmentation''', '''Set minimal and maximal intensity''' or '''Limit amount of detections'''. This will unlock additional options in the next dialog (see below for detailed explanations).
+
+If the views you selected contain multiple ''tiles'' or ''illumination directions'', you can choose to '''group''' the views. The same minimum and maximum intensity will be used for all views in a group (see explanation below). This will virtually fuse the views into one image for the interest point detection preview, which can be very time consuming if you are not using a multi-resolution ImgLoader (i.e. if you have not re-saved the data as HDF5).
 
 [[File:BigStitcher_Register_1.png|center]]
 
-*For Difference of Gaussian choose the parameters and the downsampling factor.
+=== Advanced Parameters ===
 
-[[File:BigStitcher_Register_2.png|center]]
+In the next dialog, you will be asked for some more parameters for the interest point detection.
 
-*Now choose the view that will be used to check for the detection parameters. Using the sliders you can specify how much percentage in z of the image should be displayed.
+Under '''Subpixel localization''', you can select whether to do subpixel-accurate detection of interest points using a 3-dimensional quadratic fit or not (the third option ''Gaussian mask localization fit'' is not implemented yet at the moment).
+
+'''Interest point specification''' determines the size and threshold of spots for which to look. There are some presets, as well as:
+* '''Advanced ...''', which lets you manually set the values for threshold and sigma/radius.
+* '''Interactive...''', which lets you interactively change the values and display a preview of detections.
+
+Next, you can choose to '''downsample''' your images (or use precomputed downsampled versions) to significantly speed up the interest point detection. Note that if you downsample a lot, you should use subpixel localization to counteract the corresponding inaccuracy.
+
+If you chose to '''Set minimal and maximal intensity''' in the previous dialog, you will be asked for those values here. Their meaning is the following: If you do NOT set the minimum and maximum, the threshold you will select in the next step is relative to the min/max of ''each individual image''. This might lead to more false positive and false negative detections if the individual images vary in brightness. Setting '''Minimal intensity''' and '''Maximal intensity''' causes the same values to be used for ''ALL images'' and counteract these problems. Note that if you chose to '''group''' views earlier, the minimum and maximum of the whole group will be used for each image in the group.
+
+If you chose to '''Define anisotropy for segmentation''' in the previous dialog, you will be asked for '''Image sigmas in X, Y and Z''' here. If you acquired your images with pixel sizes and z-spacing of <math>\approx \frac{d}{2}</math> (optimal sampling) with <math>d</math> being the resolution of you microscope (<math>d_{xy} = \frac{\lambda}{2NA}</math> and <math>d_{z} = \frac{2\lambda}{NA^2}</math>), you can leave the default value of 0.5 here. Otherwise, increase the image sigma when you have ''oversampling'' (smaller pixel distances) or decrease it for ''undersampling'' (larger pixels). Note that it is only necessary to change the image sigmas if you over- or undersample differently in x,y and z. If you over- or undersampled by the same factor in x,y and z, you can also ignore these parameters and just set sigma/radius accordingly in the next step.
+
+If you chose to '''Limit amount of detections''' in the previous dialog, you will be asked for the '''Maximum number of detections (highest n)''' to keep and which '''Type iof detections to use'''. This can be:
+* '''Brightest''': keep only the "brightest" detections (highest maxima or lowest minima).
+* '''Weakest (above threshold)''': keep only the "weakest" detections that were not excluded via the threshold (lowest maxima or highest minima)
+* '''Around median (of those above threshold)''': keep only the detections closest to the median absolute intensity (of the detections above the threshold)
+
+Finally, when doing Difference-of-Gaussian detection, you can choose whether to compute the necessary convolution operations on the CPU or a GPU under '''"Compute on"'''. 
+GPU-accelerated detection requires a CUDA-capable NVIDA graphics card.
+You also have to compile the [[Multiview-Reconstruction#Download|required libraries]] for your system first (see the corresponding GitHib pages for details).
+There is an ''approximate'' and an ''accurate'' version of the GPU-accelerated convolutions - the ''approximate'' version is slightly faster but might produce some artifacts around the edges of your images.
+
+[[File:BigStitcher_Register_2.png|center|600px]]
+
+=== Interactive detection preview ===
+
+If you opted for '''Interactive Interest point specification''' in the previous dialog, you will first be asked for one view (or view group) in which to preview the detection.
+
+If you are using '''grouped views''', you can specify how much percentage in z of the image should be displayed in the preview using the sliders.
+
+Furthermore, if you are using '''grouped views''', you can choose to '''Use min/max of this fusion for all groups''' (see above for details about the meaning of the min/max values).
 
 [[File:BigStitcher_Register_3.png|center]]
 
-*The fused image will appear together with a windows where the values for the interest point detection can be specified. Change "Sigma 1" and the "Threshold" until satisfied with the detection. You can interactively go through the Z-stack and preview the detected interest points. To apply parameters to all selected views, select "Done".
+If you click OK, the (fused) image will appear in an ImageJ-window together with a window in which the values for the interest point detection parameters can be specified. You can change '''Sigma 1''' (Difference-of-Gaussian) or '''Radius 1''' (Difference-of-Mean) to specify the size of objects to look as well as the '''Threshold''' (intensity of objects to look for) and whether to look for minima, maxima or both. The results will be previewed in the ImageJ-window. You can interactively go through the Z-stack and preview the detected interest points. To start the detection process in all selected views, click "Done".
+
+{{Notice|The interest point detection can take a long time, especially if you do little or no downsampling. Have a look at the log widow for updates on the progress.}}
 
 [[File:BigStitcher_Register_4_1.png]][[File:BigStitcher_Register_4_2.png]]
