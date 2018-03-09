@@ -36,7 +36,7 @@ If you chose to '''Set minimal and maximal intensity''' in the previous dialog, 
 
 If you chose to '''Define anisotropy for segmentation''' in the previous dialog, you will be asked for '''Image sigmas in X, Y and Z''' here. If you acquired your images with pixel sizes and z-spacing of <math>\approx \frac{d}{2}</math> (optimal sampling) with <math>d</math> being the resolution of you microscope (<math>d_{xy} = \frac{\lambda}{2NA}</math> and <math>d_{z} = \frac{2\lambda}{NA^2}</math>), you can leave the default value of 0.5 here. Otherwise, increase the image sigma when you have ''oversampling'' (smaller pixel distances) or decrease it for ''undersampling'' (larger pixels). Note that it is only necessary to change the image sigmas if you over- or undersample differently in x,y and z. If you over- or undersampled by the same factor in x,y and z, you can also ignore these parameters and just set sigma/radius accordingly in the next step.
 
-If you chose to '''Limit amount of detections''' in the previous dialog, you will be asked for the '''Maximum number of detections (highest n)''' to keep and which '''Type iof detections to use'''. This can be:
+If you chose to '''Limit amount of detections''' in the previous dialog, you will be asked for the '''Maximum number of detections (highest n)''' to keep and which '''Type of detections to use'''. This can be:
 * '''Brightest''': keep only the "brightest" detections (highest maxima or lowest minima).
 * '''Weakest (above threshold)''': keep only the "weakest" detections that were not excluded via the threshold (lowest maxima or highest minima)
 * '''Around median (of those above threshold)''': keep only the detections closest to the median absolute intensity (of the detections above the threshold)
@@ -63,3 +63,21 @@ If you click OK, the (fused) image will appear in an ImageJ-window together with
 {{Notice|The interest point detection can take a long time, especially if you do little or no downsampling. Have a look at the log widow for updates on the progress.}}
 
 [[File:BigStitcher_Register_4_1.png]][[File:BigStitcher_Register_4_2.png]]
+
+=== GPU-accelerated Difference-of-Gaussian ===
+
+If you chose to use GPU-accelerated detection and compiled the library for separable convolution from [[https://github.com/StephanPreibisch/SeparableConvolutionCUDALib]], you will have to go through a few more steps until the interest point detection starts.
+
+First, you have to specify the '''CUDA directory''' in which to look for the compiled library (an .so file on Linux/Mac or a .dll on Windows).
+
+[[File:BigStitcher_interestpoint_gpu-1.png|center]]
+
+Next, you have to select the actual library file to use (there might be multiple, be sure to pick the library for '''separable convolution''', not the ''Fourier convolution'' used in [[Multi-View_Deconvolution]]).
+
+[[File:BigStitcher_interestpoint_gpu-2.png|center]]
+
+In the last dialog, you can choose which '''Device''' (GPU) to use (if you have multiple) and how many '''Percent of GPU Memory to use'''. We advice to stick to ~80 percent to avoid collisions with other processes that might be using the GPU.
+
+Click '''OK''' once more to start the interest point detection.
+
+[[File:BigStitcher_interestpoint_gpu-3.png|center]]
