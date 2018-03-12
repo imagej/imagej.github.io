@@ -4,9 +4,9 @@
 | name                   = Analyze_Stripes
 | author                 = Justin R. Bickford
 | maintainer             = Justin R. Bickford
-| filename               = [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=macro:analyze_stripes_v2.4.5b.ijm Analyze_Stripes_v2.4.5b.ijm]
+| filename               = [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=macro:analyze_stripes_v2.5.ijm Analyze_Stripes_v2.5.ijm]
 | released               = 9 August 2013
-| latest version         = 16 January 2018
+| latest version         = 12 March 2018
 | status                 = stable
 | category               = [[:Category:Analysis|Analysis]]
 | website                = [http://imagejdocu.tudor.lu/doku.php?id=macro:analyze_stripes Analyze_Stripes website]
@@ -22,7 +22,7 @@ Complete documentation may be found at the [http://imagejdocu.tudor.lu/doku.php?
 
 == News ==
 
-v2.4.5b fixes a rather crippling issue with the stripe orientation angle calculation that severely impacted the edge roughness calculation.
+v2.5 fixes an issue with the roiManager("Combine") function.
 
 [[Category:Plugins]]
 [[Category:Analysis]]
