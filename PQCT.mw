@@ -264,6 +264,10 @@ To easily run the test, use the provided [http://bonej.org/images/SyntheticDataT
 # When the macro has finished, you should see the Results table
 # Open the resulting file with excel or open office or some other suitable program and the results should match the ones within the Synthetic data provided above.
 
+== Known issues ==
+
+- [http://forum.imagej.net/t/stratec-pqct-cortical-density-distribution-analysis-failure-on-fiji-imagej-1-51u/9692 Errors in cortical density distribution analysis]
+
 == Citation ==
 
 If you use this program, or the Stratec pQCT file format reader in your work, please cite the pertinent papers.
