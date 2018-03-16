@@ -53,5 +53,6 @@ The plugin is currently limited to single (i.e., 2D) images of 16-bit integer da
 == See also ==
 
 * [[TensorFlow]], the machine learning library this plugin uses.
+* [https://research.googleblog.com/2018/03/using-deep-learning-to-facilitate.html Using Deep Learning to Facilitate Scientific Image Analysis] post on Google Research Blog
 
 [[Category:Citable]]
