@@ -20,3 +20,6 @@ This plugin generates images from mathematical functions and primitive patterns 
 - Functions to image: The function value of a two- or three-dimensional function f(x, y) or f(x, y, z) is interpreted as the intensity value of the image.
 
 - Conditional to image: Generate primitive patterns using boolean expressions with ImageJ macro code. The conditional will be executed for each pixel in the image inside the given coordinate range.
+
+== Source ==
+See the source code: https://github.com/IamMM/Image_Synthesizer
