@@ -3,12 +3,11 @@
 {{Infobox
 | software               = ImageJ / Fiji plugins
 | name                   = Image Synthesizer
-| maintainer             = Maximilian Maske
 | author                 = Maximilian Maske
 | released               = 19.03.2018
-| latest version         = 19.03.2018
 | category               = [[:Category:Plugins|Plugins]]
 | website                = http://wiki.imagej.net/Image_Synthesizer
+| source code         = https://github.com/IamMM/Image_Synthesizer
 }}
 
 __TOC__
