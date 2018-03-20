@@ -1,3 +1,49 @@
-*Select desired views to be fused in the '''MuliView Mode'''.
+== Introduction ==
+
+
+
+== Quick fusion ==
+
+The '''quick fusion''' can be accessed by selecting '''Quick Display Transformed/Fused Image(s)''' from the main menu in both Stitching (under <code>Fusion</code>) and Multiview mode (under <code>Displaying</code>).
+
+Selecting the menu item will open a sub-menu showing all [[BigStitcher_BoundingBox|Bounding Boxes]] as well as the '''fusion mode''' ('''Virtual''', '''Cached''' or '''Precompute Image''', see below for details).
+
+The currently selected fusion mode is highlighted in red, clicking on another one will switch to that mode.
+
+Finally, selecting a bounding box will open another sub-menu in which you can select the downsampling level to fuse. Click the desired level to fuse the image(s) and display the result in a new ImageJ-window.
+
+[[File:BigStitcher_Fusion_Quick.png|center|700px]]
+
+{{Notice|The quick fusion will fuse '''all selected images''', including multiple channels/illuminations/time points, into one final image. To prevent e.g. a fusion of multiple channels, make sure to select only the images you need, ungrouping the views in the main window, if necessary.}}
+
+
+== Advanced Fusion ==
+
+For advanced fusion options, select the desired views to be fused in the main window and click '''Image Fusion...''' in the right-click menu.
+
+This will bring up a new dialog showing the fusion options:
 
 [[File:BigStitcher_Fusion_1.png|center]]
+
+* '''Bounding Box:''' Here, you can select which sub-volume ([[BigStitcher_BoundingBox|Bounding Boxe]]) of the dataset to fuse. The options '''All Views''' and '''Currently Selected Views''' are always available, even if you did not manually specify a bounding box.
+
+* '''Downsampling:''' The factor by which to downsample the image (in each dimension). Note that the resulting image will have the same pixel size in x,y and z, unless you choose to preserve original anisotropy (see below).
+
+* '''Pixel Type:''' Whether to produce '''16-bit unsigned integer''' or '''32-bit floating point''' output. 32-bit results need twice as much disk/memory space but accurately represent the non-whole number results of the fusion. Selecting 16-bit output will round the output down to the next whole number (integer).
+
+* '''Interpolation:''' Since the individual images were probably shifted to sub-pixel locations during the alignment process, we have to use '''interpolation''' to determine the intensity values at the pixels of the resulting image. You can choose whether to do '''Nearest Neighbour''' (faster, slightly "pixellated" results) or '''Linear Interpolation''' (smoother results, slightly slower). 
+
+* '''Image:''' How to create the resulting image in memory, can be:
+** '''Virtual:''' Display or start saving the fused stacks immediately, calculating each plane on-the-fly. This way, you can fuse images larger than your computers RAM, but if you switch between planes, the calculation has to be repeated every time.
+** '''Cached:''' like virtual, but keeping previously calculated planes in memory. The caching introduces a small computational overhead but for displaying, this is a good compromise between the unresponsive virtual mode and the memory-hungry pre-computed mode.
+** '''Precompute Image:''' Calculate the whole fused stack before displaying or saving it. This might take a significant amount of time and have large memory requirements if you fuse large volumes, but the calculations have to be done only once.
+
+* '''Blend images smoothly:''' The fusion process is a '''weighted average''' of the input images. Smooth blending causes less weight to be placed on border pixels of the input images (a cosine-shaped fade-out). If you deselect this, the fusion will simply average the images at each point, resulting in visible image borders in some cases (e.g. uneven illumination).
+* '''Use content-based fusion:''' Select this to additionally weight the pixels to be averaged by the local entropy of the input images, giving greater importance to images with more structure/less blur. Use this to achieve better results in regions where some of the input images are blurred (e.g. because they were far from the objective). Because we have to calculate additional weight images for content-based fusion, this greatly increases memory requirements. 
+
+* '''Preserve original data anisotropy:''' By default, the fused image will have the same pixel distance in x,y and z. For non-multiview images (e.g. when stitching a "normal" tiled acquisition from one angle), this typically constitutes an unnecessary upsampling in z (if the original z pixel distance was larger than in x and y). By selecting this, we will use the original pixel sizes for the fused image. This option is not available when fusing multiple angles.
+
+* Produce one fused image for:
+* Fused image:
+
+At the bottom of the dialog, you will be presented with a preview of how big the resulting image will be and how much memory is needed for the fusion calculations.
