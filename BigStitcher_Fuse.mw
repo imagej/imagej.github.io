@@ -25,7 +25,7 @@ This will bring up a new dialog showing the fusion options:
 
 [[File:BigStitcher_Fusion_1.png|center]]
 
-* '''Bounding Box:''' Here, you can select which sub-volume ([[BigStitcher_BoundingBox|Bounding Boxe]]) of the dataset to fuse. The options '''All Views''' and '''Currently Selected Views''' are always available, even if you did not manually specify a bounding box.
+* '''Bounding Box:''' Here, you can select which sub-volume ([[BigStitcher_BoundingBox|Bounding Box]]) of the dataset to fuse. The options '''All Views''' and '''Currently Selected Views''' are always available, even if you did not manually specify a bounding box.
 
 * '''Downsampling:''' The factor by which to downsample the image (in each dimension). Note that the resulting image will have the same pixel size in x,y and z, unless you choose to preserve original anisotropy (see below).
 
