@@ -303,7 +303,7 @@ By default, the viewer will jump to time-points multiples of 5: 0, 5, 10, etc.  
 
 If you are on a time-point not a multiple of the time-step, the next key-press will move to the closest multiple. The goal of these commands is to quickly generate a lineage that extends deeply in time by skipping some frames. But the time-points we reach with these commands are always the same multiples, so the annotated frames are all the same when using the stepwise time browsing. 
 
-Below is an example from an actual annotation, peeking ahead the lineage visualizer we will describe in the next section. Inn this view , cells are arranged by lineage, time running from top to bottom. Time-points are lines of alternating color. You can see that except when cells are dividing or when there is an ambiguity, this user only annotated time-points multiples of 5. This leads to a sparser annotation, generated faster.
+Below is an example from an actual annotation, peeking ahead the lineage visualizer we will describe in the next section. In this view, cells are arranged by lineage, time running from top to bottom. Time-points are lines of alternating color. You can see that except when cells are dividing or when there is an ambiguity, this user only annotated time-points multiples of 5. This leads to a sparser annotation, generated faster.
 
 [[Image:bdv-MaMuT_TrackSchemeStepwiseTimeBrowsing.png|500px]]
 
