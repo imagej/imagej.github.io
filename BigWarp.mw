@@ -142,6 +142,10 @@ dialog.
 |}
 
 === Commands shared with BigDataViewer ===
+* [[BigDataViewer#Displaying_Multiple_Sources|Displaying multiple stacks ("sources")]]
+* [[BigDataViewer#Grouping_Sources|Grouping sources]]
+* [[BigDataViewer#Adjusting_Brightness_and_Color|Adjusting brightness and color]]
+* [[BigDataViewer#Bookmarking_Locations_and_Orientations|Bookmarking views (locations and orientations)]]
 ====Mouse navigation====
 {| border="1" style="border-collapse:collapse;"
 | style="padding: 5px;" | {{key press|left-click|drag}}
