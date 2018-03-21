@@ -141,7 +141,7 @@ dialog.
 | style="padding: 5px;" | Export moving image as a Virtual ImagePlus.
 |}
 
-=== Commands shared with bigdatviewer ===
+=== Commands shared with BigDataViewer ===
 ====Mouse navigation====
 {| border="1" style="border-collapse:collapse;"
 | style="padding: 5px;" | {{key press|left-click|drag}}
