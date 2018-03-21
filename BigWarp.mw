@@ -210,7 +210,7 @@ A virtual ImagePlus is generally faster to generate but slower to browse,
 whereas an in-memory ImagePlus will be slower to generate but faster to browse.
 
 The exported image will have the same dimensions as the target image.
-''Note: Take care when exporting very large data sets.''
+''Note: Take care when exporting very large data sets as they can cause out-of-memory exceptions.''
 
 [[Category:Plugins]]
 [[Category:Visualization]]
