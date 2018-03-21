@@ -142,10 +142,6 @@ dialog.
 |}
 
 === Commands shared with BigDataViewer ===
-* [[BigDataViewer#Displaying_Multiple_Sources|Displaying multiple stacks ("sources")]]
-* [[BigDataViewer#Grouping_Sources|Grouping sources]]
-* [[BigDataViewer#Adjusting_Brightness_and_Color|Adjusting brightness and color]]
-* [[BigDataViewer#Bookmarking_Locations_and_Orientations|Bookmarking views (locations and orientations)]]
 ====Mouse navigation====
 {| border="1" style="border-collapse:collapse;"
 | style="padding: 5px;" | {{key press|left-click|drag}}
@@ -205,7 +201,7 @@ Landmarks can be exported and imported from plain text files using the drop down
 
 [[Image:Bigwarp_export.png]]
 
-The warped moving image can be exported as an in-memory or [http://rsbweb.nih.gov/ij/docs/guide/146-8.html virtual] ImagePlus.
+The warped moving image can be exported as an in-memory or [http://imagej.net/docs/guide/146-8.html virtual] ImagePlus.
 A virtual ImagePlus is generally faster to generate but slower to browse,
 whereas an in-memory ImagePlus will be slower to generate but faster to browse.
 
