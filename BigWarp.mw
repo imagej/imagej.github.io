@@ -141,6 +141,60 @@ dialog.
 | style="padding: 5px;" | Export moving image as a Virtual ImagePlus.
 |}
 
+=== Commands shared with bigdatviewer ===
+====Mouse navigation====
+{| border="1" style="border-collapse:collapse;"
+| style="padding: 5px;" | {{key press|left-click|drag}}
+| style="padding: 5px;" | Rotate (pan and tilt) around the point where the mouse was clicked.
+|-
+| style="padding: 5px;" | {{key press|right-click|drag}} or {{key press|middle-click|drag}}
+| style="padding: 5px;" | Translate in the XY-plane.
+|-
+| style="padding: 5px;" | {{key press|mouse-wheel}}
+| style="padding: 5px;" | Move along the z-axis.
+|-
+| style="padding: 5px;" | {{key press|Cmd|mouse-wheel}} or {{key press|Shift|Ctrl|mouse-wheel}}
+| style="padding: 5px;" | Zoom in and out.
+|}
+====Keyboard navigation====
+{| border="1" style="border-collapse:collapse;"
+| style="padding: 5px;" | {{key press|X}}, {{key press|Y}}, {{key press|Z}}
+| style="padding: 5px;" | Select keyboard rotation axis.
+|-
+| style="padding: 5px;" | {{key press|Left}}, {{key press|Right}}
+| style="padding: 5px;" | Rotate clockwise or counter-clockwise around the choosen rotation axis.
+|-
+| style="padding: 5px;" | {{key press|Up}}, {{key press|Down}}
+| style="padding: 5px;" | Zoom in or out.
+|-
+| style="padding: 5px;" | {{key press|,}}, {{key press|.}}
+| style="padding: 5px;" | Move forward or backward along the Z-axis.
+|-
+| style="padding: 5px;" | {{key press|Shift|X}}
+| style="padding: 5px;" | Rotate to the ZY-plane of the current source. (Look along the X-axis of the current source.)
+|-
+| style="padding: 5px;" | {{key press|Shift|Y}} or {{key press|Shift|A}}
+| style="padding: 5px;" | Rotate to the XZ-plane of the current source. (Look along the Y-axis of the current source.)
+|-
+| style="padding: 5px;" | {{key press|Shift|Z}}
+| style="padding: 5px;" | Rotate to the XY-plane of the current source. (Look along the Z-axis of the current source.)
+|-
+| style="padding: 5px;" | {{key press|[}} or {{key press|N}}
+| style="padding: 5px;" | Move to previous timepoint.
+|-
+| style="padding: 5px;" | {{key press|]}} or {{key press|M}}
+| style="padding: 5px;" | Move to next timepoint.
+|}
+
+
+For all navigation commands you can hold {{key press|Shift}} to rotate and browse
+10x faster, or hold {{key press|Ctrl}} to rotate and browse
+10x slower.
+For example, {{key press|Left}} rotates by
+1° clockwise, while {{key press|Shift|Left}} rotates by
+10°, and {{key press|Ctrl|Left}} rotates by
+0.1°.
+
 === Import and Export ===
 
 Landmarks can be exported and imported from plain text files using the drop down menu in the landmark table panel ( ''File {{arrow}} Export (Import) landmarks.'' )
