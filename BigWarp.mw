@@ -23,8 +23,11 @@ Press {{key press|F1}} at any time to open a help page with a listing of navigat
 Landmark placements is done in ''Landmark mode'' which you enter by holding {{key press|Spacebar}}.
 Users place pairs of corresponding points on  
 
-The following table shows the available landmark placement commands and keystrokes. 
+The following table shows the available commands and keystrokes for landmark placement, warping. 
 {| border="1" style="border-collapse:collapse;"
+| style="padding: 5px;" | {{key press|T}}
+| style="padding: 5px;" | Toggle between warped view and raw view or moving image.
+|-
 | style="padding: 5px;" | {{key press|Ctrl}}+{{key press|O}}
 | style="padding: 5px;" | Open landmarks from saved file.
 |-
