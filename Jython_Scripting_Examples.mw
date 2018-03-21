@@ -992,6 +992,7 @@ printing a line to the log window, like:
 === Add a key listener to the canvas of every open image ===
 
 <source lang="python">
+from ij import IJ, WindowManager
 from java.awt.event import KeyEvent, KeyAdapter
  
 def doSomething(imp, keyEvent):
