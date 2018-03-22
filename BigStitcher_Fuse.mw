@@ -43,7 +43,16 @@ This will bring up a new dialog showing the fusion options:
 
 * '''Preserve original data anisotropy:''' By default, the fused image will have the same pixel distance in x,y and z. For non-multiview images (e.g. when stitching a "normal" tiled acquisition from one angle), this typically constitutes an unnecessary upsampling in z (if the original z pixel distance was larger than in x and y). By selecting this, we will use the original pixel sizes for the fused image. This option is not available when fusing multiple angles.
 
-* Produce one fused image for:
-* Fused image:
+* '''Produce one fused image for:''' To no blend all the selected views into one image, the Fusion can fuse different subgroups of the selected views, with the options being:
+** '''Each timepoint & channel:''' produce one output image for each timepoint and channel combination (fusing tiles, angles and illumination directions)
+** '''Each timepoint, channel & illumination:''' produce one output image for each timepoint, channel and illumination direction combination (fusing tiles and angles)
+** '''All views together:''' fuse all input views into one image. Take care not to select, e.g. multiple channels, in the main window as they will all be fused together (unless this is specifically what you want).
+** '''Each view:''' produce one "fused" image for each input image. This will create an image of the bounding box with the view placed according to the transformations determined in the previous steps.
+* '''Fused image:''' How to save or display the fused images. The options are:
+** '''Display using ImageJ:'''
+** '''Save as (compressed) TIFF stacks:'''
+** '''Save as new XML project (TIFF):'''
+** '''Save as new XML project (HDF5):'''
+** '''Append to current XML project (HDF5):'''
 
 At the bottom of the dialog, you will be presented with a preview of how big the resulting image will be and how much memory is needed for the fusion calculations.
