@@ -1,6 +1,8 @@
 == Introduction ==
 
+While BigStitcher (using [[BigDataViewer]]) is great for displaying the alignment results and manually inspecting your data, subsequent processing steps by other ImageJ-plugins or different programms typically require "classical" (single) images (the aligned "image" that the BigDataViewer shows is calculated on-the-fly from the input images and not saved).
 
+The process of creating single image stacks from multiple transformed/aligned input images is called '''Image Fusion'''. We offer two ways of creating fused images in BidStitcher and [[MultiviewReconstruction]]:
 
 == Quick fusion ==
 
@@ -48,11 +50,20 @@ This will bring up a new dialog showing the fusion options:
 ** '''Each timepoint, channel & illumination:''' produce one output image for each timepoint, channel and illumination direction combination (fusing tiles and angles)
 ** '''All views together:''' fuse all input views into one image. Take care not to select, e.g. multiple channels, in the main window as they will all be fused together (unless this is specifically what you want).
 ** '''Each view:''' produce one "fused" image for each input image. This will create an image of the bounding box with the view placed according to the transformations determined in the previous steps.
+
 * '''Fused image:''' How to save or display the fused images. The options are:
-** '''Display using ImageJ:'''
-** '''Save as (compressed) TIFF stacks:'''
-** '''Save as new XML project (TIFF):'''
-** '''Save as new XML project (HDF5):'''
-** '''Append to current XML project (HDF5):'''
+** '''Display using ImageJ:''' Keep the results in memory and display the as "classical" ImageJ images. Use this if you want to immediately process the results further or save the in a different format using the export options of ImageJ.
+** '''Save as (compressed) TIFF stacks:''' Save the results immediately to TIFF stacks. The resulting files will be put in the same directory as the project XML file.
+** '''Save as new XML project (TIFF):''' Save as TIFF stacks and also create a new XML project for them (useful if you want to visualize them again using BigDataViewer, but still need "simple TIFFs" for other processing steps).
+** '''Save as new XML project (HDF5):''' Save the results to a multi-resolution HDF5 file and create a new XML project file for them.
+** '''Append to current XML project (HDF5):''' Save the results to a multi-resolution HDF5 file and link them into the '''current project'''. Only works if the current project was already re-saved as HDF5.
 
 At the bottom of the dialog, you will be presented with a preview of how big the resulting image will be and how much memory is needed for the fusion calculations.
+
+Finally, click '''OK''' to start the fusion process.
+
+If you chose to save the result as a new project, you will be asked where to save the .xml project file and the TIFF/HDF5 files for the fused views in a new dialog.
+
+Furthermore, if you chose to save to the current or a new project as HDF5, you will be asked for [[BigStitcher_AutoLoader#Options_for_re-saving_as_HDF5|options on how to save to HDF5]].
+
+Go back to the [[BigStitcher#Documentation|main page]]
