@@ -12,9 +12,11 @@ The dialog will also list the currently '''Existing Bounding Boxes'''
 
 === Modify pre-defined Bounding Box ===
 
+First, you will be asked for the existing bounding box that you want to modify:
 
+[[File:BigStitcher_BBox_existing.png|center|400px]]
 
-[[File:BigStitcher_BBox_existing.png|center|600px]]
+In the next dialog, you can modify the bounding box by adjusting the sliders for the minima and maxima. The size and memory/disk space requirements of a fusion will also be previewed. Clicking '''OK''' will generate the new, modified Mounding Box.
 
 [[File:BigStitcher_BBox_modify.png|center|600px]]
 
@@ -22,7 +24,7 @@ The dialog will also list the currently '''Existing Bounding Boxes'''
 
 This will open a new window allowing you to modify your bounding box by adjusting the sliders for the minima and maxima. If the BigDataViewer is open, the bounding box will be previewed there. 
 
-[[File:BigStitcher_BBox_interactive.png|center|600px]]
+[[File:BigStitcher_BBox_interactive.png|center|700px]]
 
 After clicking '''OK''', another dialog will show a preview of the bounding box size and expected memory/disk space requirements for a fused image of the contents of the bounding box. Click '''OK''' again to complete the definition.
 
@@ -33,3 +35,5 @@ This will simply show the '''Manually define Bounding Box'''-dialog, preset to a
 === Automatically find Bounding Box through image filtering ===
 
 [[File:BigStitcher_BBox_auto.png|center|600px]]
+
+Go back to the [[BigStitcher#Documentation|main page]]
