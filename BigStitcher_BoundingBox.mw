@@ -40,7 +40,7 @@ You will be asked for the following parameters:
 
 * '''Background intensity (%)''': relative intensity of background to the maximal intensity in the images, used for thresholding.
 * '''Size of objects to be discarded''': size of the box-minimum-filter that is applied to the image before thresholding, effectively removing isolated objects smaller than that.
-* '''Downsampling''': by how much to downsample the fused image. Since fusion can be a time and memory-consuming process, we recommend to use a large (<math>>4/math>) downsampling factor, especially if your dataset is big. 
+* '''Downsampling''': by how much to downsample the fused image. Since fusion can be a time and memory-consuming process, we recommend to use a large (<math>>4</math>) downsampling factor, especially if your dataset is big. 
 * ''' Display image used for segmentation''': selecting this will show the fused and the filtered images.
 
 [[File:BigStitcher_BBox_auto.png|center|600px]]
