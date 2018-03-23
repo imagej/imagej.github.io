@@ -13,8 +13,14 @@ If you run MATLAB R2017b and later, you don't need to do this, as it ships and u
 == Prerequisites ==
 
 * Add the [[List_of_update_sites|ImageJ-MATLAB]] update site.
+*# You go to <code>Fiji > Update...</code>
+*# Once checking status is done, open <code>Manage update sites</code>
+*# Tick <code>ImageJ-MATLAB</code>
+*# And then click <code>Apply changes</code> on ImageJ Updater
+*# This will literally update and replace the existing, non-functional <code>ImageJ.m</code> file in the scripts folder with the genuine one.
 * You will need to install your own licensed copy of [http://www.mathworks.com/products/matlab/ MATLAB]. All that is provided with ImageJ are adapters for evaluating scripts written in ImageJ to [[MATLAB]], and converters between ImageJ and [[MATLAB]] data structures.
 * MATLAB ships with Java 7, but ImageJ requires Java 8. You will need to change your MATLAB installation to use Java 8, by following the instructions for your platform: [http://www.mathworks.com/matlabcentral/answers/130359-how-do-i-change-the-java-virtual-machine-jvm-that-matlab-is-using-on-windows Windows], [http://www.mathworks.com/matlabcentral/answers/103056-how-do-i-change-the-java-virtual-machine-jvm-that-matlab-is-using-for-mac-os macOS] or [http://www.mathworks.com/matlabcentral/answers/130360-how-do-i-change-the-java-virtual-machine-jvm-that-matlab-is-using-for-linux-os Linux].
+** The command <code>version -java</code> will return the current Java version used by MATLAB
 * If you're new to [[MATLAB]], first check out Mathworks' [http://www.mathworks.com/help/matlab/getting-started-with-matlab.html getting started guide].
 * If you're familiar with the [[MATLAB]] language but haven't written .m scripts before, look through the [http://www.mathworks.com/help/matlab/scripts.html script examples].
 
