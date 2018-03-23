@@ -84,7 +84,7 @@ In addition to the standard stitching pipeline, we also offer advanced functiona
 
 === MultiView registration===
 
-Once you have aligned the views imaged from the same angles to each other, you can then proceed to align those groups of views to each other, using [[Multiview-Reconstruction]].
+Once you have aligned the views imaged from the same angles to each other, you can then proceed to align those groups of views to each other, using [[Multiview-Reconstruction]]. For this, switch to [[BigStitcher_MultiView_Mode|MultiView mode]] in the main window.
 
 This process consists of finding ''interest points'' such as nuclei or fiducial beads in the single views, matching corresponding interest points in other views and then aligning the views based on the corresponding interest points.
 
@@ -92,7 +92,7 @@ This process consists of finding ''interest points'' such as nuclei or fiducial 
 
 *[[BigStitcher_Registration|Registration using interest points]]
 
-In [[BigStitcher_MultiView_Mode|MultiView mode]], we also offer various ways of visualizing and managing interest points:
+In MultiView mode, we also offer various ways of visualizing and managing interest points:
 
 *[[BigStitcher_Interest_point_management|Interest point management]]
 
