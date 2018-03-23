@@ -34,6 +34,17 @@ This will simply show the '''Manually define Bounding Box'''-dialog, preset to a
 
 === Automatically find Bounding Box through image filtering ===
 
+This method will try to automatically find a bounding box around the sample by applying a '''minimum filter''' and then '''thresholding''' a downsampled version of the fused image.
+
+You will be asked for the following parameters:
+
+* '''Background intensity (%)''': relative intensity of background to the maximal intensity in the images, used for thresholding.
+* '''Size of objects to be discarded''': size of the box-minimum-filter that is applied to the image before thresholding, effectively removing isolated objects smaller than that.
+* '''Downsampling''': by how much to downsample the fused image. Since fusion can be a time and memory-consuming process, we recommend to use a large (<math>>4/math>) downsampling factor, especially if your dataset is big. 
+* ''' Display image used for segmentation''': selecting this will show the fused and the filtered images.
+
 [[File:BigStitcher_BBox_auto.png|center|600px]]
+
+After clicking '''OK''', the bounding box will be estimated and another dialog will show a preview of the bounding box size and expected memory/disk space requirements for a fused image of the contents of the bounding box. Click '''OK''' again to complete the definition.
 
 Go back to the [[BigStitcher#Documentation|main page]]
