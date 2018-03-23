@@ -119,8 +119,14 @@ Once you decided to fuse everything or defined a specific bounding box, you can 
 
 === (MultiView) Deconvolution ===
 
-[[BigStitcher_PSF|Point Spread Function (PSF)]]
+In addition to simple view fusion, we can additionally perform '''Deconvolution''' of the resulting images, ideally using a '''Point Spread Function (PSF)''' extracted from the input images themselves (e.g. if they contain sub-diffraction-sized fluorescent beads).
 
-[[BigStitcher_Deconvolution|(MultiView) Deconvolution]]
+The first step in this process is assigning PSFs to the views you want to deconvolve:
+
+*[[BigStitcher_PSF|Point Spread Function (PSF) management]]
+
+After assigning PSFs to all the views you want to process, you can proceed with the deconvolution itself: 
+
+*[[BigStitcher_Deconvolution|(MultiView) Deconvolution]]
 
 == Example Datasets ==
