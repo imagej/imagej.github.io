@@ -1,10 +1,15 @@
 == Overview ==
 
-*For registration of views to each other interest points have to be detected.
+Many processing steps of BigStitcher and [[Multiview-Reconstruction]] rely on the detection of '''Interest Points''', i.e. bright or dark spots, in the images. The classical example is the alignment of multi-angle views by matching corresponding interest points in two images and aligning the points, and thus the images, to each other. 
 
+In '''Multiview Mode''', interest point detection can be started by selecting the desired views, right-clicking and selecting the {{bc|Processing|Detect Interest Points...}} option in the main menu.
 
-*In '''Multiview Mode''' choose the desired views and by right-click select the "Detect Interest Points" option.
+Other uses of interest points are:
 
+* Expert-mode stitching via Interest Points (see [[BigStitcher_Advanced_stitching]] for details)
+* Affine Refinement of Tile registrations and Chromatic aberration correction via ICP (see [[BigStitcher_ICP_refinement]] for details)
+
+Furthermore, detecting sub-diffraction-sized beads is the default way of extracting a [[BigStitcher_PSF|Point Spread Function (PSF)]] for [[BigStitcher_Deconvolution|(MultiView) Deconvolution]].
 
 === Basic Parameters ===
 
@@ -81,3 +86,5 @@ In the last dialog, you can choose which '''Device''' (GPU) to use (if you have 
 Click '''OK''' once more to start the interest point detection.
 
 [[File:BigStitcher_interestpoint_gpu-3.png|center]]
+
+Go back to the [[BigStitcher#Documentation|main page]]
