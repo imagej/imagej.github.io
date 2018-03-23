@@ -1,0 +1,35 @@
+If you want to fuse or deconvolve a sub-volume of your dataset (other than ''all views'' or the ''currently selected views''), you have to specify that volume by defining a '''Bounding Box'''. 
+
+The Bounding Box Definition can be started by clicking '''Define Bounding Box...''' in the main menu, located under <code>Fusion</code> (Stitching mode) or <code>Displaying</code> (MultiView mode).
+
+== Bounding Box Definition ==
+
+In the first dialog, you can specify how to define you bounding box in the '''Bounding Box''' drop-down menu. The available options are explained in detail below. In addition, you can give your Bounding box a name under '''Bounding Box Name'''.
+
+The dialog will also list the currently '''Existing Bounding Boxes'''  
+
+[[File:BigStitcher_BBox_main.png|center|600px]]
+
+=== Modify pre-defined Bounding Box ===
+
+
+
+[[File:BigStitcher_BBox_existing.png|center|600px]]
+
+[[File:BigStitcher_BBox_modify.png|center|600px]]
+
+=== Define using the BigDataViewer interactively ===
+
+This will open a new window allowing you to modify your bounding box by adjusting the sliders for the minima and maxima. If the BigDataViewer is open, the bounding box will be previewed there. 
+
+[[File:BigStitcher_BBox_interactive.png|center|600px]]
+
+After clicking '''OK''', another dialog will show a preview of the bounding box size and expected memory/disk space requirements for a fused image of the contents of the bounding box. Click '''OK''' again to complete the definition.
+
+=== Maximal Bounding Box spanning all transformed views===
+
+This will simply show the '''Manually define Bounding Box'''-dialog, preset to a bounding box enclosing all selected views. You can use the sliders to modify the minima and maxima of the bounding box. Click '''OK''' to finish the definition. 
+
+=== Automatically find Bounding Box through image filtering ===
+
+[[File:BigStitcher_BBox_auto.png|center|600px]]
