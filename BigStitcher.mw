@@ -92,6 +92,10 @@ This process consists of finding ''interest points'' such as nuclei or fiducial 
 
 *[[BigStitcher_Registration|Registration using interest points]]
 
+In [[BigStitcher_MultiView_Mode|MultiView mode]], we also offer various ways of visualizing and managing interest points:
+
+*[[BigStitcher_Interest_point_management|Interest point management]]
+
 === Fusion ===
 In order to fuse the aligned data into a "classical image" and for example save it as TIFF, it is necessary to define the area that should be fused. This is done by defining a '''Bounding Box'''. By default, the software will always ''pre-compute two Bounding Boxes'' covering ''(a) the area covered by all views'' and ''(b) the area covered by the currently selected views''. This means that only if you want to specify a certain (sub)area, for example because there are a lot of empty pixels around your imaged object you need to define a bounding box. To really minimize the fused area, might also want to first [[BigStitcher_ReorientSample|re-orient your sample]] first. More details on Bounding Boxes can be found here:
 
@@ -100,5 +104,7 @@ In order to fuse the aligned data into a "classical image" and for example save 
 Once you decided to fuse everything or defined a specific bounding box, you can start the fusion process. If you want to check how the fused area will look like, you can do a '''quick preview''' by for example choosing {{bc | Quick Display Transformed/Fused Image | All Views [978 x 1428 x 173 px] | Downsampled 4x}}. This will immediately pop up an ''ImageJ Virtual Stack'' (browsing is somewhat slow) containing a fusion of all selected views 4x downsampled (multiple channels or illuminations will be fused together). 
 
 *[[BigStitcher_Fuse|Fuse & Export]]
+
+=== (MultiView) Deconvolution ===
 
 == Example Datasets ==
