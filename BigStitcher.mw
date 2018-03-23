@@ -96,14 +96,24 @@ In MultiView mode, we also offer various ways of visualizing and managing intere
 
 *[[BigStitcher_Interest_point_management|Interest point management]]
 
-=== Fusion ===
-In order to fuse the aligned data into a "classical image" and for example save it as TIFF, it is necessary to define the area that should be fused. This is done by defining a '''Bounding Box'''. By default, the software will always ''pre-compute two Bounding Boxes'' covering ''(a) the area covered by all views'' and ''(b) the area covered by the currently selected views''. This means that only if you want to specify a certain (sub)area, for example because there are a lot of empty pixels around your imaged object you need to define a bounding box. To really minimize the fused area, might also want to first [[BigStitcher_ReorientSample|re-orient your sample]] first. More details on Bounding Boxes can be found here:
+Once the views in your dataset have been aligned, a typical last step is to create a "classical image" that can be used by other ImageJ-plugins or other programs altogether. The process of merging multiple aligned images into one resulting image is called '''Image Fusion''':
+
+*[[BigStitcher_Fuse|Fuse & Export]]
+
+Often, you might not want to fuse the whole sample, but rather a smaller sub-volume (defined by a '''Bounding Box'''). To do this, you have to define a bounding box to use in the fusion:
 
 *[[BigStitcher_BoundingBox|Bounding Box Definition]]
 
-Once you decided to fuse everything or defined a specific bounding box, you can start the fusion process. If you want to check how the fused area will look like, you can do a '''quick preview''' by for example choosing {{bc | Quick Display Transformed/Fused Image | All Views [978 x 1428 x 173 px] | Downsampled 4x}}. This will immediately pop up an ''ImageJ Virtual Stack'' (browsing is somewhat slow) containing a fusion of all selected views 4x downsampled (multiple channels or illuminations will be fused together). 
+All bounding boxes will be axis-aligned in the '''global coordinate system''' of your dataset (determined by the coordinate system of the first view). Sometimes, the sample is "tilted" in respect to this coordinate system, leading to unnecessarily big dark space around the sample in the fused image. We therefore offer various ways of '''re-orienting''' the sample for more space-efficient fusion:
 
-*[[BigStitcher_Fuse|Fuse & Export]]
+*[[BigStitcher_ReorientSample|Sample re-orientation and manual transformation]]
+<!-- === Fusion ===
+In order to fuse the aligned data into a "classical image" and for example save it as TIFF, it is necessary to define the area that should be fused. This is done by defining a '''Bounding Box'''. By default, the software will always ''pre-compute two Bounding Boxes'' covering ''(a) the area covered by all views'' and ''(b) the area covered by the currently selected views''. This means that only if you want to specify a certain (sub)area, for example because there are a lot of empty pixels around your imaged object you need to define a bounding box. To really minimize the fused area, might also want to first [[BigStitcher_ReorientSample|re-orient your sample]] first. More details on Bounding Boxes can be found here:
+
+
+
+Once you decided to fuse everything or defined a specific bounding box, you can start the fusion process. If you want to check how the fused area will look like, you can do a '''quick preview''' by for example choosing {{bc | Quick Display Transformed/Fused Image | All Views [978 x 1428 x 173 px] | Downsampled 4x}}. This will immediately pop up an ''ImageJ Virtual Stack'' (browsing is somewhat slow) containing a fusion of all selected views 4x downsampled (multiple channels or illuminations will be fused together). 
+-->
 
 === (MultiView) Deconvolution ===
 
