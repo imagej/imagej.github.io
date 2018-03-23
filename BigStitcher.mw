@@ -108,6 +108,7 @@ Once you decided to fuse everything or defined a specific bounding box, you can 
 === (MultiView) Deconvolution ===
 
 [[BigStitcher_PSF|Point Spread Function (PSF)]]
+
 [[BigStitcher_Deconvolution|(MultiView) Deconvolution]]
 
 == Example Datasets ==
