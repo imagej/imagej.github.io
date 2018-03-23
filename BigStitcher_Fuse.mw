@@ -52,8 +52,8 @@ This will bring up a new dialog showing the fusion options:
 ** '''Each view:''' produce one "fused" image for each input image. This will create an image of the bounding box with the view placed according to the transformations determined in the previous steps.
 
 * '''Fused image:''' How to save or display the fused images. The options are:
-** '''Display using ImageJ:''' Keep the results in memory and display the as "classical" ImageJ images. Use this if you want to immediately process the results further or save the in a different format using the export options of ImageJ.
-** '''Save as (compressed) TIFF stacks:''' Save the results immediately to TIFF stacks. The resulting files will be put in the same directory as the project XML file.
+** '''Display using ImageJ:''' Keep the results in memory and display them as "classical" ImageJ images. Use this if you want to immediately process the results further or save the in a different format using the export options of ImageJ.
+** '''Save as (compressed) TIFF stacks:''' Save the results immediately to TIFF stacks. The resulting files will be put in the same directory as the current project XML file.
 ** '''Save as new XML project (TIFF):''' Save as TIFF stacks and also create a new XML project for them (useful if you want to visualize them again using BigDataViewer, but still need "simple TIFFs" for other processing steps).
 ** '''Save as new XML project (HDF5):''' Save the results to a multi-resolution HDF5 file and create a new XML project file for them.
 ** '''Append to current XML project (HDF5):''' Save the results to a multi-resolution HDF5 file and link them into the '''current project'''. Only works if the current project was already re-saved as HDF5.
