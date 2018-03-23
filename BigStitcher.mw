@@ -96,6 +96,8 @@ In MultiView mode, we also offer various ways of visualizing and managing intere
 
 *[[BigStitcher_Interest_point_management|Interest point management]]
 
+=== Fusion ===
+
 Once the views in your dataset have been aligned, a typical last step is to create a "classical image" that can be used by other ImageJ-plugins or other programs altogether. The process of merging multiple aligned images into one resulting image is called '''Image Fusion''':
 
 *[[BigStitcher_Fuse|Fuse & Export]]
