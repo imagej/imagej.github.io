@@ -12,9 +12,9 @@ Selecting the desired views and right-clicking in the main view list brings up a
 
 * '''Displaying''' shows functions for visualizing your data in BigDataViewer or ImageJ. 
 * '''Processing''' shows the functions in the interest-point-based multi-view registration pipeline.
-* '''Calibration/Transforamtions''' shows functions for inspecting or modifying the view transformations.
+* '''Calibration/Transformations''' shows functions for inspecting or modifying the view transformations.
 * '''Interest Points''' shows functions for visualizing and removing interest points.
-* '''Modifications''' shows functions for resaving the dataset.
+* '''Modifications''' shows functions for re0saving the dataset.
 
 [[File:BigStitcher_Overview_5.png|center]]
 
