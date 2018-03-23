@@ -6,8 +6,8 @@ In '''Multiview Mode''', interest point detection can be started by selecting th
 
 Other uses of interest points are:
 
-* Expert-mode stitching via Interest Points (see [[BigStitcher_Advanced_stitching]] for details)
-* Affine Refinement of Tile registrations and Chromatic aberration correction via ICP (see [[BigStitcher_ICP_refinement]] for details)
+* Expert-mode stitching via Interest Points (click [[BigStitcher_Advanced_stitching|here]] for details)
+* Affine Refinement of Tile registrations and Chromatic aberration correction via ICP (click [[BigStitcher_ICP_refinement|here]] for details)
 
 Furthermore, detecting sub-diffraction-sized beads is the default way of extracting a [[BigStitcher_PSF|Point Spread Function (PSF)]] for [[BigStitcher_Deconvolution|(MultiView) Deconvolution]].
 
