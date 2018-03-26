@@ -19,6 +19,8 @@ If you click '''Interest Point Explorer (on/off)''', a new window will open that
 * in how many of the selected views points '''are present'''
 * the '''Parameters''' used for detection
 
+You can right-click on a line in the list and click '''Delete''' to delete the interest points.
+
 [[File:BigStitcher_ips_explorer_bdv_all.png|thumb|300px|all interest points as an overlay in BigDataViewer]]
 
 [[File:BigStitcher_ips_explorer_bdv_corresponding.png|thumb|300px|'''corresponding''' interest points as an overlay in BigDataViewer]]
@@ -26,7 +28,6 @@ If you click '''Interest Point Explorer (on/off)''', a new window will open that
 [[File:BigStitcher_ips_explorer_panel.png|center|600px]]
 
 If the BigDataViewer is open, clicking on '''#Detections''' or '''#Corresponding''' will overly the detected or corresponding interest points in the BigDataViewer. All points will be displayed at once, with the points in the currently displayed image plane drawn in '''red''' and the points from other planes in '''green'''.
-
 
 == Manage Interest Points ==
 
