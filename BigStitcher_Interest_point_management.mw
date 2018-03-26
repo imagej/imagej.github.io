@@ -69,8 +69,7 @@ Clicking one of these will first ask for the name of the '''Interest Points''' t
 Clicking '''OK''' will open the selected projection in a new ImageJ window with the interest points highlighted in '''green'''. You can then select ROIs using the default tools of ImageJ and '''Remove all detections INside ROI''' or '''Remove all detections OUTside ROI''' in the new '''Remove detections'''-window. You can repeat the process if you want.  When you are happy with the result, click '''Done''' to create the new, thinned-out interest points.
 
 
-[[File:BigStitcher_ips_manual_remove_example.png|center|800px]]
-
+[[File:BigStitcher_ips_manual_remove_example.png|center|1000px]]
 
 == Visualize Interest Points ==
 
