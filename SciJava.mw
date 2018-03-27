@@ -28,18 +28,19 @@ All components in this collection are managed by SciJava's [[Bill of Materials]]
 
 The following projects are part of the '''[[:Category:SciJava|SciJava pledge]]''' to work together, reuse code and synergize wherever possible:
 {| class="nicetable"
-| style="vertical-align: middle" | {{Logo | ImageJ2}}
-| style="vertical-align: middle" | [[File:Cellprofiler-logo.png | x64px | link=CellProfiler]]
-| style="vertical-align: middle" | [[File:Knime-logo.jpg | x54px | link=KNIME]]
-| style="vertical-align: middle" | [[File:Omero-logo.png | x32px | link=OMERO]]
-| colspan=2 style="vertical-align: middle" | [[File:Scenery-logo.png | x72px | link=https://github.com/scenerygraphics/scenery]]
+| style="text-align: center; vertical-align: middle" | {{Logo | ImageJ2}}
+| style="text-align: center; vertical-align: middle" | [[File:Cellprofiler-logo.png | x64px | link=CellProfiler]]
+| colspan=2 style="text-align: center; vertical-align: middle" | [[File:Knime-logo.jpg | x54px | link=KNIME]]
+| style="text-align: center; vertical-align: middle" | [[File:Omero-logo.png | x32px | link=OMERO]]
+| colspan=2 style="text-align: center; vertical-align: middle" | [[File:Scenery-logo.png | x72px | link=https://github.com/scenerygraphics/scenery]]
 |-
-| style="vertical-align: middle" | {{Logo | Fiji}}
-| style="vertical-align: middle" | [[File:Icy-logo.png | x48px | link=Icy]]
-| style="vertical-align: middle" | {{Logo | Micro-Manager | size=48px}}
-| style="vertical-align: middle" | [[File:Bio-formats-logo.png | x28px | link=Bio-Formats]]
-| style="vertical-align: middle" | {{Logo | Alida | size=48px}}
-| style="vertical-align: middle" | {{Logo | MiToBo | size=48px}}
+| style="text-align: center; vertical-align: middle" | {{Logo | Fiji}}
+| style="text-align: center; vertical-align: middle" | [[File:Icy-logo.png | x48px | link=Icy]]
+| style="text-align: center; vertical-align: middle" | {{Logo | Micro-Manager | size=48px}}
+| style="text-align: center; vertical-align: middle" | {{Logo | VCell | size=48px}}
+| style="text-align: center; vertical-align: middle" | [[File:Bio-formats-logo.png | x28px | link=Bio-Formats]]
+| style="text-align: center; vertical-align: middle" | {{Logo | Alida | size=48px}}
+| style="text-align: center; vertical-align: middle" | {{Logo | MiToBo | size=48px}}
 |}
 
 See the [[Architecture]] and [[Governance]] pages, as well as the [http://scijava.org/ SciJava web site], for further details.
