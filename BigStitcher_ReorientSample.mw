@@ -29,3 +29,11 @@ Under this menu item, you have the option to remove '''Latest/Newest Transformat
 As every registration step adds a new transformation, you can use '''Remove Latest/Newest Transformation''' to '''un-do''' a bad registration (note that there is no re-do, it will be gone forever, unless you saved before).
 
 == Interactively Reorient Sample ==
+
+Clicking this will open up a new window that listens for the '''global transformation''' of the BigDataViewer. You can then '''Apply the Transformation''' from BDV to all selected views. This is a convenient way of interactively re-orienting the sample, e.g. to be aligned to the coordinate system axes.
+
+You can choose to '''Ignore scaling factor from BigDataViewer''' - this way, we will extract the sample rotation, but not any effects of zooming. Note that the scaling depends on the BDV window size, among other things, and you can achieve a zoom-out when fusing by using downsampling - we suggest to ignore the scaling unless you know what you are doing.
+
+[[File:BigStitcher_registration_reorient.png|center|400px]]
+
+Note that the identity transformation corresponds to an xy-View of the data in BDV. To avoid confusion, we advise to reset the view (by clicking {{Key|Shift|Z}} in the BDV window) before you start the interactive reorientation.
