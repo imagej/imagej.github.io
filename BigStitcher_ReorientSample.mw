@@ -12,7 +12,7 @@ These functions can be found under <code>Calibration/Transformations</code> in t
 
 Using '''Specify Calibration''', you can change the voxel distance and length unit for the selected views.
 
-[[File:BigStitcher_registration_calibration.png|center|600px]]
+[[File:BigStitcher_registration_calibration.png|center|500px]]
 
 {{Warning|As mentioned in the dialog, this will only change the metadata and leave computed registrations (including the scaling to isotropic x,y and z-resolution) as-is. Use '''Apply Transformation(s)''' and '''Apply on top of Calibration''' to update the isotropy scaling. This will remove other transformations however, so please make sure that the calibration is set correctly '''before''' starting any registration/stitching.}}
 
