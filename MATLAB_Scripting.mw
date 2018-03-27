@@ -104,9 +104,53 @@ addpath('/Applications/Fiji.app/scripts') % Update for your ImageJ installation 
 ImageJ;
 </source>
 
+Now, you should see a new ImageJ instance shows up as a window. 
+
+In the MATLAB command window, you'll see something like this:
+
+<source>
+--------------------------------------------------------------
+ImageJ-MATLAB 0.7.2: MATLAB to ImageJ Interface
+--------------------------------------------------------------
+JVM> Version: 1.8.0_144
+JVM> Total amount of memory: 370176 Kb
+JVM> Amount of free memory: 122756 Kb
+
+-- Welcome to ImageJ-MATLAB --
+ImageJ-MATLAB consists of an extensible set of commands for passing information between ImageJ and MATLAB.
+See the individual sections below for a list of available commands.
+
+For more information and examples see:
+	http://imagej.net/MATLAB-Scripting
+
+--- MATLAB Command Plugins ---
+
+-- ImageJ MATLAB commands --
+
+Usage: IJM.[command]
+	help - prints a brief description of available commands
+	getDataset - creates a MATLAB matrix from the active ImageJ image
+	getDatasetAs(name) - creates a MATLAB matrix from the active ImageJ image, and assigns it to the specified variable name
+	show(name) - takes the MATLAB matrix with the specified name and displays it as an image
+
+
+
+--------------------------------------------------------------
+Status> ImageJ is running.
+--------------------------------------------------------------
+</source>
+
+
+
 The startup process automatically injects the ImageJ classpath into the [[MATLAB]] classpath, merging the two. At this point, you'll have a working ImageJ and can now [[#Creating MATLAB scripts inside ImageJ|run MATLAB scripts as normal]] with access to the full unified classpath.
 
-Additionally, the {{GitHub|org=scijava|repo=scripting-matlab|label=Scripting-MATLAB}} library also includes an extensible [[MATLAB]] command framework. This allows for the creation of utility classes that will be automatically populated into [[MATLAB]] variables for easy access. For example, you could use ImageJ to open a dataset and perform thresholding (or any other processing steps), then in [[MATLAB]] use the <code>IJM.importDataset</code> command to set the active dataset as a [[MATLAB]] matrix variable, for further analysis.
+The following commands work in MATLAB command window to open a sample image in ImageJ.
+<source>
+imp = ij.IJ.openImage("http://imagej.nih.gov/ij/images/boats.gif");
+imp.show()
+</source>
+
+Additionally, the {{GitHub|org=scijava|repo=scripting-matlab|label=Scripting-MATLAB}} library also includes an extensible [[MATLAB]] command framework. This allows for the creation of utility classes that will be automatically populated into [[MATLAB]] variables for easy access. For example, you could use ImageJ to open a dataset and perform thresholding (or any other processing steps), then in [[MATLAB]] use the <code>IJM.getDatasetAs(name)</code> command to set the active dataset as a [[MATLAB]] matrix variable with a specified name, for further analysis.
 
 For example, instead of using a script as [[#Creating MATLAB scripts inside ImageJ|described above]], we could achieve the same result by executing the following commands in the MATLAB prompt:
 
