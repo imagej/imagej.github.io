@@ -24,4 +24,8 @@ The '''Bake BDV manual transform''' will take the manual transformations for the
 
 == Remove Transformation ==
 
+Under this menu item, you have the option to remove '''Latest/Newest Transformation''' or the '''First/Oldest Transformation''' (typically the '''calibration''') for all selected views.
+
+As every registration step adds a new transformation, you can use '''Remove Latest/Newest Transformation''' to '''un-do''' a bad registration (note that there is no re-do, it will be gone forever, unless you saved before).
+
 == Interactively Reorient Sample ==
