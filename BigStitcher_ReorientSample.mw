@@ -30,7 +30,7 @@ As every registration step adds a new transformation, you can use '''Remove Late
 
 == Interactively Reorient Sample ==
 
-Clicking this will open up a new window that listens for the '''global transformation''' of the BigDataViewer. You can then '''Apply the Transformation''' from BDV to all selected views. This is a convenient way of interactively re-orienting the sample, e.g. to be aligned to the coordinate system axes.
+Clicking this will open up a new window that listens for the '''global transformation''' of the BigDataViewer. You can then '''Apply the Transformation''' from BDV to all selected views. This is a convenient way of interactively re-orienting the sample, e.g. to be aligned to the coordinate system axes, by simply rotating it in the BigDataViewer.
 
 You can choose to '''Ignore scaling factor from BigDataViewer''' - this way, we will extract the sample rotation, but not any effects of zooming. Note that the scaling depends on the BDV window size, among other things, and you can achieve a zoom-out when fusing by using downsampling - we suggest to ignore the scaling unless you know what you are doing.
 
