@@ -16,7 +16,7 @@ These functions can be found under <code>Calibration/Transformations</code> in t
 
 The BigDataViewer offers its own functionality for transforming views or view groups. Clicking {{Key|t}} in the BigDataViewer window will start the transformation. Now, you can transform the views via clicking and dragging the mouse. Click {{Key|t}} again to apply the transformation or {{Key|Esc}} to cancel the transformation.
 
-The transformation will affect the '''current view (group)'''. Views or groups can be selected in the '''visibility and grouping''' window (press {{Key|F6}} in BigDataViewer or open it via the menu). For details on view transformation in BigDataViewer, please refer to the corresponding {{BigDataViewer#Usage|documentation}}.
+The transformation will affect the '''current view (group)'''. Views or groups can be selected in the '''visibility and grouping''' window (press {{Key|F6}} in BigDataViewer or open it via the menu). For details on view transformation in BigDataViewer, please refer to the corresponding [[BigDataViewer#Usage|documentation]].
 
 Normally, the manual transformations from BDV are not propagated to BigStitcher/Multiview Reconstruction and thus will be lost once you close the BigDataViewer.
 
