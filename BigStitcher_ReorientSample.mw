@@ -1,0 +1,27 @@
+In addition to the manual view alignment functionality in '''Stitching mode''' (see [[BigStitcher_manual_translation|here]] for details), which focuses on the translational alignment of tiled images, we offer offer complementary functions for '''manually transforming''' images and '''managing transformations''' in '''MultiView mode'''.
+
+These functions can be found under <code>Calibration/Transformations</code> in the main menu of the MultiView mode.
+
+[[File:BigStitcher_registration_menu.png|center|600px]]
+
+== Registration Explorer ==
+
+[[File:BigStitcher_registration_explorer.png|center|800px]]
+
+== Specify Calibration ==
+
+== Apply Transformation(s) ==
+
+== Bake BDV manual transform ==
+
+The BigDataViewer offers its own functionality for transforming views or view groups. Clicking {{Key|t}} in the BigDataViewer window will start the transformation. Now, you can transform the views via clicking and dragging the mouse. Click {{Key|t}} again to apply the transformation or {{Key|Esc}} to cancel the transformation.
+
+The transformation will affect the '''current view (group)'''. Views or groups can be selected in the '''visibility and grouping''' window (press {{Key|F6}} in BigDataViewer or open it via the menu). For details on view transformation in BigDataViewer, please refer to the corresponding {{BigDataViewer#Usage|documentation}}.
+
+Normally, the manual transformations from BDV are not propagated to BigStitcher/Multiview Reconstruction and thus will be lost once you close the BigDataViewer.
+
+The '''Bake BDV manual transform''' will take the manual transformations for the selected views from BigDataViewer and append them to the dataset's registrations.
+
+== Remove Transformation ==
+
+== Interactively Reorient Sample ==
