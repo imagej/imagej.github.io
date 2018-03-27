@@ -34,6 +34,9 @@ Clicking this will open up a new window that listens for the '''global transform
 
 You can choose to '''Ignore scaling factor from BigDataViewer''' - this way, we will extract the sample rotation, but not any effects of zooming. Note that the scaling depends on the BDV window size, among other things, and you can achieve a zoom-out when fusing by using downsampling - we suggest to ignore the scaling unless you know what you are doing.
 
-[[File:BigStitcher_registration_reorient.png|center|400px]]
+[[File:BigStitcher_registration_reorient.png|center|500px]]
 
 Note that the identity transformation corresponds to an xy-View of the data in BDV. To avoid confusion, we advise to reset the view (by clicking {{Key|Shift|Z}} in the BDV window) before you start the interactive reorientation.
+
+
+Go back to the [[BigStitcher#Documentation|main page]]
