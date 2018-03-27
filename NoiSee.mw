@@ -1,0 +1,26 @@
+{{WIP}}
+{{Infobox
+| software               = ImageJ
+| name                   = NoiSee
+| author                 = {{Person|Ehrenfeu}}
+| maintainer             = {{Person|Ehrenfeu}}
+| update site            = NoiSee
+| source                 = 
+| released               = 2018
+| status                 = active
+| category               = [[:Category:Analysis|Analysis]]
+}}
+
+'''NoiSee''' - An easy-to-use ImageJ macro for measuring SNR (signal-to-noise ratio) of light microscopes.
+
+
+== Usage ==
+
+
+== Example ==
+
+
+== Citation ==
+
+
+[[Category:Plugins]]
