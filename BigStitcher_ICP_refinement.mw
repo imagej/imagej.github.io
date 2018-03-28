@@ -1,0 +1,9 @@
+The default stitching pipeline of BigStitcher will calculate a '''translational alignment''' of your images. In some cases, however, there might also be more complex transformations (such as rotations between tiles or scaling between channels due to '''chromatic aberrations''') between the images. To account for such '''affine transformations''' between the images, we offer the possibility to '''Refine the Alignment''' using the '''ICP (Iterative Closest Point)''' algorithm combined with global optimization.
+
+{{Notice|The ICP algorithm assumes that the images are already roughly aligned. You should therefore use it as a '''last step''' after stitching your dataset.}}
+
+== Simple refinement ==
+
+{{bc|Registration Refinement (optional)|Refine with ICP}}
+
+== Expert refinement ==
