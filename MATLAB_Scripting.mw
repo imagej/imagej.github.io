@@ -2,7 +2,7 @@
 
 If you run MATLAB R2017b and later, you don't need to do this, as it ships and uses Java 8 already.
 }}
-{{Learn | languages}}ImageJ-MATLAB is an extension which:
+{{Learn | languages}}'''ImageJ-MATLAB''' is an extension which:
 * Translates data between ImageJ images and MATLAB matrices.
 * Enables execution of MATLAB scripts from inside ImageJ's [[Script Editor]].
 * Lets you launch ImageJ and interact with it from inside MATLAB.
