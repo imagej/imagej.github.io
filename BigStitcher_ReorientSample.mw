@@ -59,9 +59,9 @@ For '''Rigid models''', you can specify how to define the transformation(s):
 
 [[File:BigStitcher_registration_rigid.png|center|500px]]
 
-'''Matrix''': same as for '''Affine''' (see above)
-'''Interactively using the BigDataViewer''': same as '''Interactively Reorient Sample''' (see below)
-'''Rotation around axis''': allows you to specify an axis around which to to rotate and by how many degrees
+*'''Matrix''': same as for '''Affine''' (see above)
+*'''Interactively using the BigDataViewer''': same as '''Interactively Reorient Sample''' (see below)
+*'''Rotation around axis''': allows you to specify an axis around which to to rotate and by how many degrees
 
 [[File:BigStitcher_registration_rotation.png|center|500px]]
 
