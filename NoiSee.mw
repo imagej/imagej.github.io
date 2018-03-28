@@ -5,7 +5,7 @@
 | author                 = {{Person|Ehrenfeu}}
 | maintainer             = {{Person|Ehrenfeu}}
 | update site            = NoiSee
-| source                 = 
+| source                 = {{GitHub|org=imcf|repo=noisee}}
 | released               = 2018
 | status                 = active
 | category               = [[:Category:Analysis|Analysis]]
