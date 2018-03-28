@@ -5,7 +5,7 @@
 | source = {{GitHub | org=fiji | repo=Trainable_Segmentation | tag=Trainable_Segmentation-3.2.23}}
 | license = [[GPLv3]]
 | release = {{Maven | g=sc.fiji | a=Trainable_Segmentation | v=3.2.23 | label=3.2.23}}
-| date = Tue Mar 28 2018 11:17:00 GMT+0200 (CEST)
+| date = Wed Mar 28 2018 11:17:00 GMT+0200 (CEST)
 | devStatus = {{DevStatus | developer=yes | incubating=no | obsolete=no}}
 | supportStatus = {{SupportStatus | debugger=yes | reviewer=yes | support=yes}}
 | founders = {{Person|vkaynig}}, {{Person|dscho}}
