@@ -104,7 +104,7 @@ addpath('/Applications/Fiji.app/scripts') % Update for your ImageJ installation 
 ImageJ;
 </source>
 
-Now, you should see a new ImageJ instance shows up as a window.
+Now, you should see a new ImageJ instance shows up as a window. [[File:ImageJ_launched_from_MATLAB.png|400px]]
 
 In your base workspace, you'll find a variable <code>JVM</code>, which is a <code>net.imagej.matlab.ImageJMATLABCommands</code> object.
 
@@ -156,12 +156,15 @@ The following JAVA commands work in MATLAB command window to open a sample image
 imp = ij.IJ.openImage("http://imagej.nih.gov/ij/images/boats.gif");
 imp.show()
 </source>
+[[File:boats_screenshot.png|400px]]
+
 
 The following will open a MATLAB array data as an image in ImageJ.
 <source>
 corn_gray = imread('corn.tif',3);
 IJM.show('corn_gray')
 </source>
+[[File:corn_gray.png|400px]]
 
 Additionally, the {{GitHub|org=scijava|repo=scripting-matlab|label=Scripting-MATLAB}} library also includes an extensible [[MATLAB]] command framework. This allows for the creation of utility classes that will be automatically populated into [[MATLAB]] variables for easy access. For example, you could use ImageJ to open a dataset and perform thresholding (or any other processing steps), then in [[MATLAB]] use the <code>IJM.getDatasetAs(name)</code> command to set the active dataset as a [[MATLAB]] matrix variable with a specified name, for further analysis.
 
