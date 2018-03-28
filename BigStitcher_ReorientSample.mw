@@ -6,7 +6,23 @@ These functions can be found under <code>Calibration/Transformations</code> in t
 
 == Registration Explorer ==
 
-[[File:BigStitcher_registration_explorer.png|center|800px]]
+Clicking '''Registration Explorer (on/off)''' will open up a new window listing all transformations that are currently applied to the selected view (groups).
+
+Each '''Transformation''' consists of a 3x4 matrix (3D affine transformation + translation), of which all entries <math>m_{row, column}</math> are listed in this window.
+
+Note that the final transformation of a view is determined by applying the individual transformations '''last-to-first'''.
+
+[[File:BigStitcher_registration_explorer.png|center|900px]]
+
+You have a few options of modifying the transformations here:
+
+* double-clicking on an entry allows you to change that entry by hand
+* right-clicking on a transformation allows you to:
+** '''Delete''' it
+** '''Copy''' it
+** '''Paste''' a previously copied transformation (either before or after the selected transformation or overwriting the currently selected transformation)
+
+If the BigDataViewer is open, you can immediately see the effects of your changes.
 
 == Specify Calibration ==
 
