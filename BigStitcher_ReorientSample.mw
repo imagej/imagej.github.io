@@ -34,6 +34,23 @@ Using '''Specify Calibration''', you can change the voxel distance and length un
 
 == Apply Transformation(s) ==
 
+The '''Apply Transformation(s)''' option gives you a variety of possibilities of adding new transformations for the selected images.
+
+In the first dialog, you have to specify the '''Transformation Model''', which can be:
+* '''Identity (no transfromation)''': useful, if you have [[aaa|changed the calibration]] and just want to re-calculate the isotropic scaling.
+* '''Translation'''
+* '''Rigid''': translation and rotation
+* '''Affine''': full flexibiity
+
+Also, you have to select what to '''Append''' the new transformation on top of:
+* '''Identity''': removes all existing transformations and keeps just the new one
+* '''Calibration''': removes all existing calibrations, re-calculates isotropic scaling and the adds the new transformation
+* '''Current view transformations''': keep all existing transformations and add the new one
+
+Furthermore, you can select '''Same transformation for all angles''' to generate one transformation for all views. Otherwise, you will be asked to specify a separate transformation for all angles of the selected views.
+
+[[]]
+
 == Bake BDV manual transform ==
 
 The BigDataViewer offers its own functionality for transforming views or view groups. Clicking {{Key|t}} in the BigDataViewer window will start the transformation. Now, you can transform the views via clicking and dragging the mouse. Click {{Key|t}} again to apply the transformation or {{Key|Esc}} to cancel the transformation.
