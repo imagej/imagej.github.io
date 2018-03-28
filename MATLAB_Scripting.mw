@@ -197,3 +197,11 @@ IJM.show('mask') % display the mask array in ImageJ
 [[Category:Scripting]]
 [[Category:MATLAB]]
 [[Category:Citable]]
+
+= See also =
+
+* [[Creating Imglib2 images in MATLAB]]
+* [[Using TrackMate from MATLAB]]
+* [[Analyzing TrackMate results with MATLAB]]
+* [[Comparison of Matlab functions and Ops]]
+* [[Miji]] (legacy)
