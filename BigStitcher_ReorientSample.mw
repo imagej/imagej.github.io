@@ -51,7 +51,7 @@ Furthermore, you can select '''Same transformation for all angles''' to generate
 
 [[File:BigStitcher_registration_apply_main.png|center|500px]]
 
-For '''Translation''' or '''Affine Models''', you will be asked for the shift vector or the transformation matrix in the next dialog (if you chose NOT to use the same transformation for all angles, you will be asked for multiple vectors/matrices):
+For '''Translation''' or '''Affine Models''', you will be asked for the shift vector or the transformation matrix in the next dialog (if you chose NOT to use the same transformation for all angles, you will be asked for multiple vectors/matrices). Please provide them as '''comma-separated numbers''' (for matrices: row-by-row).
 
 [[File:BigStitcher_registration_translation.png|center|500px]] [[File:BigStitcher_registration_affine.png|center|500px]]
 
