@@ -104,7 +104,15 @@ addpath('/Applications/Fiji.app/scripts') % Update for your ImageJ installation 
 ImageJ;
 </source>
 
-Now, you should see a new ImageJ instance shows up as a window. 
+Now, you should see a new ImageJ instance shows up as a window.
+
+In your base workspace, you'll find a variable <code>JVM</code>, which is a <code>net.imagej.matlab.ImageJMATLABCommands</code> object.
+
+* <code>IJM.getDataset()</code> will create a MATLAB array from the active ImageJ image using its window title as the variable name (<code>.</code> will be escaped with <code>_</code>).
+
+* <code>IJM.getDatasetAs(name)</code> will create a MATLAB array from the active ImageJ image using the variable name <code>name</code> (as string).
+
+* <code>IJM.show(name)</code> will display an image in ImageJ out of a MATLAB array specified by <code>name</code> (as string)
 
 In the MATLAB command window, you'll see something like this:
 
@@ -140,6 +148,7 @@ Status> ImageJ is running.
 --------------------------------------------------------------
 </source>
 
+
 The startup process automatically injects the ImageJ classpath into the [[MATLAB]] classpath, merging the two. At this point, you'll have a working ImageJ and can now [[#Creating MATLAB scripts inside ImageJ|run MATLAB scripts as normal]] with access to the full unified classpath.
 
 The following JAVA commands work in MATLAB command window to open a sample image in ImageJ.
@@ -148,7 +157,7 @@ imp = ij.IJ.openImage("http://imagej.nih.gov/ij/images/boats.gif");
 imp.show()
 </source>
 
-The following will open a MATLAB array data as an image in ImageJ. For more about IJM methods, see [https://github.com/imagej/imagej-matlab/blob/master/src/main/java/net/imagej/matlab/ImageJMATLABCommands.java the source code].
+The following will open a MATLAB array data as an image in ImageJ.
 <source>
 corn_gray = imread('corn.tif',3);
 IJM.show('corn_gray')
