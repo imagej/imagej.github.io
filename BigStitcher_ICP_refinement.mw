@@ -4,6 +4,24 @@ The default stitching pipeline of BigStitcher will calculate a '''translational 
 
 == Simple refinement ==
 
-{{bc|Registration Refinement (optional)|Refine with ICP}}
+The ICP refinement can be found in the main (right-click) menu of the Stiching mode under {{bc|Registration Refinement (optional)|Refine with ICP}}:
+
+[[File:BigStitcher_icp_01.png|center|700px]]
+
+ICP is an interest-point-based algorithm, meaning that we have to first detect interest points in the sample before aligning the images. In '''simple mode''', we do this automatically, with a just a few adjustable parameters.
+
+In the sub-menu, you can set the 3 main parameters:
+* '''Downsampling''': By how much to downsample the images for interest point detection. Higher downsampling greatly reduces compute times but too high settings might reduce the quality of the results. We suggest to start with high downsampling and only decrease it if you are not happy with the results.
+* '''Threshold''': Intensity threshold for the points to be detected. The threshold should be low enough to detect enough interest points but a too low setting will lead to spurious detections that might throw off the alignment.
+* '''Adjustment''': By how much the algorithm is allowed to move the images. Typically, the images should already be roughly aligned at this point, so we advise to stick to low settings.
+
+The current selection is displayed in '''red''', other options in '''gray'''. Click on a preset or hover over it with the cursor for a short time to select it.
+
+Finally, you can start the refinement by clicking:
+* '''Simple (tile registration)''': will try to refine the alignment of the tiles of you data (multiple channels are transformed the same way) 
+* '''Simple (chromatic aberration)''': will try to correct chromatic aberrations by transforming channels (all tiles of one channel will be transformed the same way).
+* '''Simple (all together)''': will try to both refine the tile alignment and correct chromatic aberrations in one step.
+
+{{Notice|For '''chromatic aberration correction''', it is necessary to detect the same interest points in all channels, so only use that if your sample has autofluorescent structures visible in all channels or you added fiducial beads that fluoresce in all channels}}
 
 == Expert refinement ==
