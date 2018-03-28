@@ -36,7 +36,7 @@ Once you have detected interest points, a dialog with expert options will pop up
 * '''ICP maximum error''': the maximum allowed error for point matching. Increasing this value leads to a coarser alignment.
 * '''Transformation Model''': The type of transformation to compute (Translation, Rigid or Affine).
 * '''Regularize Model''': check to compute transformations of another type simultaneously and return a weighted average
-* '''Group Channels:''' Whether to groups channels (i.e. transform them together) or not. You can also select '''Only channel ...''', in which case the tiles of the all other channel will be un-grouped (overriding the following option). 
+* '''Group Channels:''' Whether to groups channels (i.e. transform them together) or not. You can also select '''Only channel ...''', in which case the tiles of the other channels will be un-grouped (overriding the following option). 
 * '''Group Tiles:''' Whether to groups tiles (i.e. transform them together) or not.
 * '''Group Illuminations:''' Whether to groups illuminations (i.e. transform them together) or not.
 
