@@ -20,7 +20,7 @@ The current selection is displayed in '''red''', other options in '''gray'''. Cl
 Finally, you can start the refinement by clicking:
 * '''Simple (tile registration)''': will try to refine the alignment of the tiles of you data (multiple channels are transformed the same way) 
 * '''Simple (chromatic aberration)''': will try to correct chromatic aberrations by transforming channels (all tiles of one channel will be transformed the same way).
-* '''Simple (all together)''': will try to both refine the tile alignment and correct chromatic aberrations in one step.
+* '''Simple (all together)''': will try to both refine the tile alignment and correct chromatic aberrations in one step. If you have multiple illuminations (and have not selected one of them yet), they will also be aligned.
 
 {{Notice|For '''chromatic aberration correction''', it is necessary to detect the same interest points in all channels, so only use that if your sample has autofluorescent structures visible in all channels or you added fiducial beads that fluoresce in all channels}}
 
@@ -32,4 +32,17 @@ First, if you did not detect any interest points yet, you will be taken to the [
 
 Once you have detected interest points, a dialog with expert options will pop up. In this dialog, you can set the following parameters:
 
-* '''aa'''
+* '''Interest Points''': the interest points to use
+* '''ICP maximum error''': the maximum allowed error for point matching. Increasing this value leads to a coarser alignment.
+* '''Transformation Model''': The type of transformation to compute (Translation, Rigid or Affine).
+* '''Regularize Model''': check to compute transformations of another type simultaneously and return a weighted average
+* '''Group Channels:''' Whether to groups channels (i.e. transform them together) or not. You can also select '''Only channel ...''', in which case the tiles of the all other channel will be un-grouped (overriding the following option). 
+* '''Group Tiles:''' Whether to groups tiles (i.e. transform them together) or not.
+* '''Group Illuminations:''' Whether to groups illuminations (i.e. transform them together) or not.
+
+
+[[File:BigStitcher_icp_02.png|center|600px]]
+
+If you opted for '''Regularization''' of the transform in the previous dialog, you will be asked for the type of the second transformation model to estimate and a '''lambda''' (<math>\in\right[0,1\left]</math>), i.e. how much weight you want to give to the regularizing model in the final averaged result.
+
+[[File:BigStitcher_regularize_model.png|center|400px]]
