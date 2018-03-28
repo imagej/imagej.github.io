@@ -25,3 +25,11 @@ Finally, you can start the refinement by clicking:
 {{Notice|For '''chromatic aberration correction''', it is necessary to detect the same interest points in all channels, so only use that if your sample has autofluorescent structures visible in all channels or you added fiducial beads that fluoresce in all channels}}
 
 == Expert refinement ==
+
+Click '''Expert...''' in the '''Refine with ICP''' menu to bring up advanced options.
+
+First, if you did not detect any interest points yet, you will be taken to the [[BigStitcher_Interest_points|interest point detection]] immediately.
+
+Once you have detected interest points, a dialog with expert options will pop up. In this dialog, you can set the following parameters:
+
+* '''aa'''
