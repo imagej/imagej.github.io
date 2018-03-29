@@ -322,14 +322,15 @@
 | last4 = Stamataki | first4 = E.
 | last5 = Harich | first5 = B.
 | last6 = Preibisch | first6 = S.
-| last7 = Shorte | first7 = S.L.
-| last8 = Keller | first8 = P.J.
-| last9 = Tomancak | first9 = P.
-| last10 = Pavlopoulos | first10 = A.
-| year = 2017
-| journal = bioRxiv
-| url = http://biorxiv.org/content/early/2017/02/28/112623
-| title = Reconstruction of cell lineages and behaviors underlying arthropod limb outgrowth with multi-view light-sheet imaging and tracking. }}
+| last7 = Guignard | first7 = L.
+| last8 = Shorte | first8 = S.L.
+| last9 = Keller | first9 = P.J.
+| last10 = Tomancak | first10 = P.
+| last11 = Pavlopoulos | first11 = A.
+| year = 2018
+| journal = eLife
+| url = https://elifesciences.org/articles/34410
+| title = Multi-view light-sheet imaging and tracking with the MaMuT software reveals the cell lineage of a direct developing arthropod limb. }}
 
 | Micro-Manager = {{Citation | last = Edelstein | first = A.
 | last2 = Amodaj | first2 = N.
