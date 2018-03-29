@@ -12,7 +12,7 @@ If you run MATLAB R2017b and later, you don't need to do this, as it ships and u
 
 == Prerequisites ==
 
-* Add the [[List_of_update_sites|ImageJ-MATLAB]] update site.
+* Add the [[List_of_update_sites|ImageJ-MATLAB]] update site. See [[Following an update site]] for more detail.
 *# You go to <code>Fiji > Update...</code>
 *# Once checking status is done, open <code>Manage update sites</code>
 *# Tick <code>ImageJ-MATLAB</code>
