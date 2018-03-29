@@ -20,6 +20,8 @@ Depending on the choices you made in the previous dialog, you will be asked for 
 
 === Registration Algorithm Parameters ===
 
+==== Algo1 ====
+
 <!--
 [[File:BigStitcher_Register_5.png|center]]
 **'''Fast 3d geometric hashing (rotation invariant)'''
