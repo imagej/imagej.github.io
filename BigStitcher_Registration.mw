@@ -1,6 +1,17 @@
 *To register views, first detect the [[BigStitcher_Interest_points|interest points]]. Then select the views to be registered and by right-click choose "Register using Interest Points".
 
+== Basic Registration Options ==
+
 [[File:BigStitcher_Register_5.png|center]]
+
+
+== Specific Registration Options ==
+
+Depending on the choices you made in the previous dialog, you will be asked for some more specific parameters in the following dialog. The options here are grouped into 3 parts:
+
+*1) '''Time Series Registration Options'''
+*2) '''View Fixing and map-back Transformations'''
+*3) '''Registration Algorithm Parameters'''
 
 *Choose the registration algorithm.
 **'''Fast 3d geometric hashing (rotation invariant)'''
