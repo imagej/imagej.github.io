@@ -116,7 +116,7 @@ In your base workspace, you'll find a variable <code>JVM</code>, which is a <cod
 ** '''Limitations of <code>IJM.show()</code>:''' 
 **# A multi (>2) dimentional image or multi channel image is treated as a stack of single channel images irrespective of the dimensions. 
 **# Also, data is always handled as 32bit per channel. 
-**# In addition, although the first and second dimensions of MATLAB array are treated as rows (Y)and columns (X) in MATLAB, the axes are flipped in the result of <code>IJM.show(name)</code> (the first and second dimensions of MATLAB array are treated as X and Y, respectively).
+**# In addition, although the first and second dimensions of MATLAB array are treated as rows (Y)and columns (X) in MATLAB, the axes are transposed by <code>IJM.show(name)</code> (the first and second dimensions of MATLAB array are treated as X and Y, respectively).
 
 In the MATLAB command window, you'll see something like this:
 
