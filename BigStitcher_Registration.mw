@@ -1,19 +1,28 @@
-*To register views, first detect the [[BigStitcher_Interest_points|interest points]]. Then select the views to be registered and by right-click choose "Register using Interest Points".
+To register views, first detect the [[BigStitcher_Interest_points|interest points]]. Then select the views to be registered and by right-click choose "Register using Interest Points".
 
 == Basic Registration Options ==
 
-[[File:BigStitcher_Register_5.png|center]]
+[[File:BigStitcher_Register_basic.png|center]]
 
 
 == Specific Registration Options ==
 
 Depending on the choices you made in the previous dialog, you will be asked for some more specific parameters in the following dialog. The options here are grouped into 3 parts:
 
-*1) '''Time Series Registration Options'''
-*2) '''View Fixing and map-back Transformations'''
+*1) '''Time Series Registration Options''' (only available if the dataset has multiple time points and you chose NOT to '''register timepoints individually''' in the first dialog)
+*2) '''View Fixing and map-back Transformations''' (not available when registering relative to a '''refenence timepoint''')
 *3) '''Registration Algorithm Parameters'''
 
-*Choose the registration algorithm.
+[[File:BigStitcher_Register_scpecific.png|center]]
+
+=== Time Series Registration Options ===
+
+=== View Fixing and map-back Transformations ===
+
+=== Registration Algorithm Parameters ===
+
+<!--
+[[File:BigStitcher_Register_5.png|center]]
 **'''Fast 3d geometric hashing (rotation invariant)'''
 [[File:BigStitcher_rotation_invariant.png|center]]
 **'''Redundant geometric local descriptor (translation invariant)'''
@@ -22,3 +31,4 @@ Depending on the choices you made in the previous dialog, you will be asked for 
 [[File:BigStitcher_center_mass.png|center]]
 **'''Iterative closest-point (ICP, no invaraince)'''
 [[File:BigStitcher_Register_ICP.png|center]]
+-->
