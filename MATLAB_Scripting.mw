@@ -184,7 +184,7 @@ IJM.show('corn_gray_tp'); % show in ImageJ properly
 [[File:corn_gray.png|250px]]
 [[File:corn_gray_transposed.png|250px]]
 
-A more general solution to this issue of X-Y transposition can be achieved by <code>permute</code> function of MATLAB:
+A more general solution to this issue of X-Y transposition can be achieved by <code>permute</code> function of MATLAB. But please beware of [https://stackoverflow.com/questions/36065182/why-does-matlabs-permute-not-need-extra-memory memory demands by <code>permute</code>].
 <source>
 % I is a MATLAB array with 2 or more dimensions
 order = [{2, 1}, num2cell(3:ndims(I))];
