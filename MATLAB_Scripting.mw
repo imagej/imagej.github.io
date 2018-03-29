@@ -112,7 +112,11 @@ In your base workspace, you'll find a variable <code>JVM</code>, which is a <cod
 
 * <code>IJM.getDatasetAs(name)</code> will create a MATLAB array from the active ImageJ image using the variable name <code>name</code> (as string).
 
-* <code>IJM.show(name)</code> will display an image in ImageJ out of a MATLAB array specified by <code>name</code> (as string). '''Limitation:''' a multi (>2) dimentional image or multi channel image is treated as a stack of single channel images irrespective of the dimensions. Also, data is always handled as 32bit per channel.
+* <code>IJM.show(name)</code> will display an image in ImageJ out of a MATLAB array specified by <code>name</code> (as string). 
+** '''Limitations of <code>IJM.show()</code>:''' 
+**# A multi (>2) dimentional image or multi channel image is treated as a stack of single channel images irrespective of the dimensions. 
+**# Also, data is always handled as 32bit per channel. 
+**# In addition, although the first and second dimensions of MATLAB array are treated as rows (Y)and columns (X) in MATLAB, the axes are flipped in the result of <code>IJM.show(name)</code> (the first and second dimensions of MATLAB array are treated as X and Y, respectively).
 
 In the MATLAB command window, you'll see something like this:
 
@@ -159,12 +163,18 @@ imp.show()
 [[File:boats_screenshot.png|400px]]
 
 
-The following will open a MATLAB array data as an image in ImageJ.
+The following will open a MATLAB array data as an image in ImageJ. Note that the X and Y of the image is transposed in ImageJ in the second image (see Limitations of <code>IJM.show()</code> above).
 <source>
 corn_gray = imread('corn.tif',3);
-IJM.show('corn_gray')
+imshow(corn_gray); % show in MATLAB
+IJM.show('corn_gray'); % show in ImageJ
+corn_gray_tp = corn_gray'; % transpose array
+IJM.show('corn_gray_tp'); % show in ImageJ properly
+
 </source>
-[[File:corn_gray.png|400px]]
+[[File:corn_gray_matlab.png|250px]]
+[[File:corn_gray.png|250px]]
+[[File:corn_gray_transposed.png|250px]]
 
 Additionally, the {{GitHub|org=scijava|repo=scripting-matlab|label=Scripting-MATLAB}} library also includes an extensible [[MATLAB]] command framework. This allows for the creation of utility classes that will be automatically populated into [[MATLAB]] variables for easy access. For example, you could use ImageJ to open a dataset and perform thresholding (or any other processing steps), then in [[MATLAB]] use the <code>IJM.getDatasetAs(name)</code> command to set the active dataset as a [[MATLAB]] matrix variable with a specified name, for further analysis.
 
