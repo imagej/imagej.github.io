@@ -113,10 +113,7 @@ In your base workspace, you'll find a variable <code>JVM</code>, which is a <cod
 * <code>IJM.getDatasetAs(name)</code> will create a MATLAB array from the active ImageJ image using the variable name <code>name</code> (as string).
 
 * <code>IJM.show(name)</code> will display an image in ImageJ out of a MATLAB array specified by <code>name</code> (as string). 
-** '''Limitations of <code>IJM.show()</code>:''' 
-**# A multi (>2) dimentional image or multi channel image is treated as a stack of single channel images irrespective of the dimensions. 
-**# Also, data is always handled as 32bit per channel. 
-**# In addition, although the first and second dimensions of MATLAB array are treated as rows (Y)and columns (X) in MATLAB, the axes are transposed by <code>IJM.show(name)</code> (the first and second dimensions of MATLAB array are treated as X and Y, respectively).
+
 
 In the MATLAB command window, you'll see something like this:
 
@@ -155,7 +152,18 @@ Status> ImageJ is running.
 
 The startup process automatically injects the ImageJ classpath into the [[MATLAB]] classpath, merging the two. At this point, you'll have a working ImageJ and can now [[#Creating MATLAB scripts inside ImageJ|run MATLAB scripts as normal]] with access to the full unified classpath.
 
+=== Limitations ===
+
+==== Limitations of <code>IJM.show()</code> ====
+* A multi (>2) dimentional image or multi channel image is treated as a stack of single channel images irrespective of the dimensions. 
+* Also, data is always handled as 32bit per channel. 
+====  Limitations common to <code>IJM.show(name)</code>, <code>IJM.getDataset()</code>, <code>IJM.getDatasetAs(name)</code> ====
+* Although the first and second dimensions, respectively, of MATLAB array are treated as rows (Y)and columns (X) in MATLAB, the first and second dimensions of an array are treated as X and Y, respectively, in ImageJ. The axes are transposed by <code>IJM.show(name)</code>, <code>IJM.getDataset()</code>, <code>IJM.getDatasetAs(name)</code>.
+
+=== Examples ===
+
 The following JAVA commands work in MATLAB command window to open a sample image in ImageJ.
+
 <source>
 imp = ij.IJ.openImage("http://imagej.nih.gov/ij/images/boats.gif");
 imp.show()
@@ -175,6 +183,15 @@ IJM.show('corn_gray_tp'); % show in ImageJ properly
 [[File:corn_gray_matlab.png|250px]]
 [[File:corn_gray.png|250px]]
 [[File:corn_gray_transposed.png|250px]]
+
+A more general solution to this issue of X-Y transposition can be achieved by <code>permute</code> function of MATLAB:
+<source>
+% I is a MATLAB array with 2 or more dimensions
+order = [{2, 1}, num2cell(3:ndims(I))];
+I2 = permute(I,[order{:}]);
+IJM.show(I2) % this will show an image in proper X and Y
+</source>
+
 
 Additionally, the {{GitHub|org=scijava|repo=scripting-matlab|label=Scripting-MATLAB}} library also includes an extensible [[MATLAB]] command framework. This allows for the creation of utility classes that will be automatically populated into [[MATLAB]] variables for easy access. For example, you could use ImageJ to open a dataset and perform thresholding (or any other processing steps), then in [[MATLAB]] use the <code>IJM.getDatasetAs(name)</code> command to set the active dataset as a [[MATLAB]] matrix variable with a specified name, for further analysis.
 
