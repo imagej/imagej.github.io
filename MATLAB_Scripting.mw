@@ -112,7 +112,7 @@ In your base workspace, you'll find a variable <code>JVM</code>, which is a <cod
 
 * <code>IJM.getDatasetAs(name)</code> will create a MATLAB array from the active ImageJ image using the variable name <code>name</code> (as string).
 
-* <code>IJM.show(name)</code> will display an image in ImageJ out of a MATLAB array specified by <code>name</code> (as string). '''Limitation:''' a multi (>2) dimentional image or multi channel image is treated as a stack of single channel images irrespective of the dimensions.
+* <code>IJM.show(name)</code> will display an image in ImageJ out of a MATLAB array specified by <code>name</code> (as string). '''Limitation:''' a multi (>2) dimentional image or multi channel image is treated as a stack of single channel images irrespective of the dimensions. Also, data is always handled as 32bit per channel.
 
 In the MATLAB command window, you'll see something like this:
 
