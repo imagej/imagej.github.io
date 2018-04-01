@@ -23,9 +23,9 @@ __NOTOC__
 
 * {{key|G}} - Selects the path nearest to the mouse pointer. Holding  {{key|Shift|G}} adds the path nearest to the mouse pointer to the current list of selected paths. ''Mnemonic: <u>G</u>roup paths around pointer.''
 
-* {{key|M}} - Finds the brightest voxel (<u>M</u>aximum) above and below the current x,y position and automatically clicks on it<sup>1</sup>.
+* {{key|M}} - Finds the brightest voxel (<u>M</u>aximum) above and below the current x,y position and automatically clicks on it. If multiple maxima exist, their average positioning is used. Note that this feature assumes that neurites are brighter than background.
 
-* {{key|S}} -Toggles cursor <u>S</u>napping: If enabled, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window<sup>1</sup>. This facilitates accurate [[Simple_Neurite_Tracer:_Accurate_point_placement|positioning of path points]] and it is described in more detail in this [https://github.com/fiji/Simple_Neurite_Tracer/issues/1 issue].
+* {{key|S}} - Toggles cursor <u>S</u>napping: If enabled, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window<sup>1</sup>. This facilitates accurate [[Simple_Neurite_Tracer:_Accurate_point_placement|positioning of path points]] and it is described in more detail in this [https://github.com/fiji/Simple_Neurite_Tracer/issues/1 issue].
 
 * {{key|Control|Shift}}-click ({{key|Alt|Shift}}-click on MacOS) - Selects a point along the active path to be used as forking point (See [[Simple_Neurite_Tracer:_Step-By-Step_Instructions#Branching:_Start_a_path_on_an_existing_path|step-by-step instructions]] for more details on joining and branching.)
 
@@ -47,10 +47,19 @@ __NOTOC__
 
 * {{key|Z}} - Toggles depth-rendering choice of traced paths: ''Parts in nearby slices'' / ''<u>Z-</u>stack projection.
 
+==== Editing Paths ====
+These shortcuts become available in ''Edit Mode'', activated through the contextual menu (displayed when right-clicking on the image being traced):
+* {{key|D}} or {{key|Backspace}} - <u>D</u>eletes the active node
+* {{key|I}} or {{key|Insert}} - <u>I</u>nserts a new node at cursor position
+* {{key|M}} - <u>M</u>oves active node to cursor position
+* {{key|Z}} - Brings active node to current <u>Z</u>-plane 
+
 ==== Other ====
 There are more complex key and mouse combinations used in:
 * [[Simple Neurite Tracer: Sholl analysis]]
 * [[Simple_Neurite_Tracer:_Step-By-Step_Instructions#Branching:_Start_a_path_on_an_existing_path|Branching and joining paths]]
 
 
-<sup>1</sup> If multiple maxima exist, their average positioning is used. Note that this feature assumes that neurites are brighter than background.
+{{Tip
+| tip = SNT was designed so that its shortcuts do not collide with those of ImageJ. SNT hotkeys do not require holding down {{key|Control}} ({{key|Cmd}} on MacOS). When such a modifier key is pressed, the hotkey will no longer be intercepted by SNT. E.g., During a tracing session pressing {{key|S}} will toggle cursor snapping while Pressing {{key|Control|S}} ({{key|Cmd|S}}on MacOS) will allow you to save the traced image using IJ's built-in command {{bc|File|Save}}.
+}}
