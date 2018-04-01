@@ -217,8 +217,9 @@ The exported image will have the same dimensions as the target image.
 # Bogovic et al. "Robust registration of calcium images by learned contrast synthesis" ISBI 2016. 
 # Russell et al. "3D correlative light and electron microscopy of cultured cells using serial blockface scanning electron microscopy" J Cell Sci 130: 278-291 2017.
 # Collinson et al. "Correlating 3D light to 3D electron microscopy for systems biology" Current Opinion in Biomedical Engineering 2017 3:49-55
+# Lerner et al. "Mycobacterium tuberculosis replicates within necrotic human macrophages" J Cell Biol 2017
 # Hildebrand et al. "Whole-brain serial-section electron microscopy in larval zebrafish"  Nature  545:345–349 2017.
-# Zhang et al. "A Complete Electron Microscopy Volume Of The Brain Of Adult Drosophila melanogaster" bioarxiv 140905 2917.
+# Zhang et al. "A Complete Electron Microscopy Volume Of The Brain Of Adult Drosophila melanogaster" bioarxiv 140905 2017.
 
 
 [[Category:Plugins]]
