@@ -3,28 +3,51 @@
 {{ambox | text =SNT is mostly a keyboard-based program. Shortcuts are typically single keystrokes and do not require other modifier keys to be pressed. Most are highlighted in the user interface. E.g., to toggle the ''<u>H</u>essian analysis'' checkbox, one only needs to press its highlighted letter, i.e., {{key|H}}.
 }}
 
-===Key Shortcuts===
+__NOTOC__
+==== Interactive Prompt ====
 
-* {{key|Y}} - Confirm the current temporary path. ''Mnemonic: <u>Y</u>es.''
-* {{key|N}} - discard the current temporary path. ''Mnemonic: <u>N</u>o.''
-* {{key|F}} - Finish a path. Note that you can finish a path by pressing {{key|Y}} twice.
-* {{key|C}} - Cancel a path. Note that you can finish a path by pressing {{key|N}} twice.
-* {{key|Esc}} - Abort current operation.
-* {{key|G}} - Select the path nearest to the mouse pointer. ''Mnemonic: <u>G</u>roup paths around pointer.'' Holding  {{key|Shift|G}} adds the path nearest to the mouse pointer to the current list of selected paths.
+* {{key|Y}} - Confirms the current temporary path. ''Mnemonic: <u>Y</u>es''.
 
+* {{key|N}} - Discards the current temporary path. ''Mnemonic: <u>N</u>o''.
 
-* {{key|S}} -Toggle cursor <u>S</u>napping: If enabled, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window<sup>1</sup>. This facilitates accurate [[Simple_Neurite_Tracer:_Accurate_point_placement|positioning of path points]] and it is described in more detail in this [https://github.com/fiji/Simple_Neurite_Tracer/issues/1 issue].
-* {{key|Shift}} - Synchronizes XY, ZY and XZ views while moving the cursor when not using cursor snapping.
+* {{key|F}} - Finishes a path. Note that you can finish a path by pressing {{key|Y}} twice.
+
+* {{key|C}} - Cancels a path. Note that you can finish a path by pressing {{key|N}} twice.
+
+* {{key|Esc}} - Aborts current operation.
+
+==== Tracing ====
+* {{key|H}} - Toggles <u>H</u>essian calculation of Path curvatures.
+
+* {{key|I}} - Toggles tracing on filtered <u>I</u>mage.
+
+* {{key|G}} - Selects the path nearest to the mouse pointer. Holding  {{key|Shift|G}} adds the path nearest to the mouse pointer to the current list of selected paths. ''Mnemonic: <u>G</u>roup paths around pointer.''
+
 * {{key|M}} - Finds the brightest voxel (<u>M</u>aximum) above and below the current x,y position and automatically clicks on it<sup>1</sup>.
-* {{key|Control|Shift}}-click ({{key|Alt|Shift}}-click on MacOS) - Selects a point along the active path to be used as branching / ending point (See [[Simple_Neurite_Tracer:_Step-By-Step_Instructions#Branching:_Start_a_path_on_an_existing_path|step-by-step instructions]] for more details on joining and branching.)
 
+* {{key|S}} -Toggles cursor <u>S</u>napping: If enabled, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window<sup>1</sup>. This facilitates accurate [[Simple_Neurite_Tracer:_Accurate_point_placement|positioning of path points]] and it is described in more detail in this [https://github.com/fiji/Simple_Neurite_Tracer/issues/1 issue].
 
-* {{key|+}} - Zoom in (Simultaneously on all views).
-* {{key|-}} - Zoom out (Simultaneously on all views)
-* {{key|Z}} - Toggles depth-rendering choice of existing paths: ''Parts in nearby slices'' / ''<u>Z-</u>stack projection.
-* {{Key|enter}} - Shuttles the window focus between  the tracing image and the SNT window
+* {{key|Control|Shift}}-click ({{key|Alt|Shift}}-click on MacOS) - Selects a point along the active path to be used as forking point (See [[Simple_Neurite_Tracer:_Step-By-Step_Instructions#Branching:_Start_a_path_on_an_existing_path|step-by-step instructions]] for more details on joining and branching.)
 
+==== Navigation and Zoom ====
+* {{key|Shift}} - Synchronizes XY, ZY and XZ views while moving the cursor when not using cursor snapping.
 
+* {{Key|enter}} - Shuttles the window focus between  the tracing image and the SNT window.
+
+* {{key|+}} - Zooms in (Simultaneously on all views).
+
+* {{key|-}} - Zooms out (Simultaneously on all views).
+
+* {{key|4}} - Displays tracing view(s) at original scale.
+
+* {{key|5}} - Displays tracing view(s) at 100%.
+
+==== Path Rendering ====
+* {{key|A}} - Toggles which traced paths should be displayed: ''<u>A</u>ll'' / ''Selected''.
+
+* {{key|Z}} - Toggles depth-rendering choice of traced paths: ''Parts in nearby slices'' / ''<u>Z-</u>stack projection.
+
+==== Other ====
 There are more complex key and mouse combinations used in:
 * [[Simple Neurite Tracer: Sholl analysis]]
 * [[Simple_Neurite_Tracer:_Step-By-Step_Instructions#Branching:_Start_a_path_on_an_existing_path|Branching and joining paths]]
