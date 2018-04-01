@@ -11,7 +11,7 @@ This is a list of the most commonly requested (or most important) wishlist items
 
 * Path finding and filling are very memory hungry in large stacks.  The data structures for storing the progress of these searches should be much more efficient.
 
-* It would be nice to be able to export paths to NeuroML as well as SWC.
+* It would be nice to be able to export paths to NeuroML
 
 * The "fill volume" option works well, but currently isn't rendered in the 3D viewer and doesn't calculate radii around the path for export.  It would be useful to fit spheres within the fill to optimize the midpoint and generate radii.
 
