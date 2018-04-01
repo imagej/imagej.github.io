@@ -15,6 +15,8 @@ You can access it via ''Plugins {{arrow}} BigDataViewer {{arrow}} Big Warp'', or
 
 Open two images in ImageJ, one ''moving'' and the other ''target'' and navigate to ''Plugins {{arrow}} BigDataViewer {{arrow}} Big Warp.'' A dialog will appear prompting selection of the moving and target images.
 
+Once the two image windows and one table window open, click on a point in the moving image, then click on the corresponding point in the target image.  After you have a few moving-target point pairs, press {{key press|T}} to transform the moving image (you may need to re-navigate if the two image are very far apart: see the {{key press|Q}} and {{key press|W}} hotkeys below).
+
 === Getting Help ===
 Press {{key press|F1}} at any time to open a help page with a listing of navigation and editing commands. 
 
