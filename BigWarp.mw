@@ -211,7 +211,15 @@ A virtual ImagePlus is generally faster to generate but slower to browse,
 whereas an in-memory ImagePlus will be slower to generate but faster to browse.
 
 The exported image will have the same dimensions as the target image.
-''Note: Take care when exporting very large data sets as they can cause out-of-memory exceptions.''
+''Note: Take care when exporting very l140905arge data sets as they can cause out-of-memory exceptions.''
+
+= Publications using BigWarp =
+# Bogovic et al. "Robust registration of calcium images by learned contrast synthesis" ISBI 2016. 
+# Russell et al. "3D correlative light and electron microscopy of cultured cells using serial blockface scanning electron microscopy" J Cell Sci 130: 278-291 2017.
+# Collinson et al. "Correlating 3D light to 3D electron microscopy for systems biology" Current Opinion in Biomedical Engineering 2017 3:49-55
+# Hildebrand et al. "Whole-brain serial-section electron microscopy in larval zebrafish"  Nature  545:345–349 2017.
+# Zhang et al. "A Complete Electron Microscopy Volume Of The Brain Of Adult Drosophila melanogaster" bioarxiv 140905 2917.
+
 
 [[Category:Plugins]]
 [[Category:Visualization]]
