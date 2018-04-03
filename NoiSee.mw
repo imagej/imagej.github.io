@@ -1,7 +1,7 @@
 {{Infobox
 | software               = ImageJ
 | name                   = NoiSee
-| author                 = {{Person|Ehrenfeu}}
+| author                 = {{Person|CellKai}}, {{Person|Ehrenfeu}}
 | maintainer             = {{Person|Ehrenfeu}}
 | update site            = NoiSee
 | source                 = {{GitHub|org=imcf|repo=noisee}}
