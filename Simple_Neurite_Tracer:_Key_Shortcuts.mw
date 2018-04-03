@@ -32,15 +32,19 @@ __NOTOC__
 ==== Navigation and Zoom ====
 * {{key|Shift}} - Synchronizes XY, ZY and XZ views while moving the cursor when not using cursor snapping.
 
+* {{key|+}} - Zooms in (Simultaneously on all views) (IJ default)
+
+* {{key|-}} - Zooms out (Simultaneously on all views) (IJ default)
+
+* {{key|4}} - Displays tracing view(s) at original scale (IJ default)
+
+* {{key|5}} - Displays tracing view(s) at 100% (IJ default)
+
+* {{key|Spacebar}} - Activates the Pan tool (IJ default)
+
+* {{key|>}} / {{key|<}} - Previous/Next Z-slice (IJ default)
+
 * {{Key|enter}} - Shuttles the window focus between  the tracing image and the SNT window.
-
-* {{key|+}} - Zooms in (Simultaneously on all views).
-
-* {{key|-}} - Zooms out (Simultaneously on all views).
-
-* {{key|4}} - Displays tracing view(s) at original scale.
-
-* {{key|5}} - Displays tracing view(s) at 100%.
 
 ==== Path Rendering ====
 * {{key|A}} - Toggles which traced paths should be displayed: ''<u>A</u>ll'' / ''Selected''.
