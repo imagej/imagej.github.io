@@ -6,7 +6,7 @@
 | maintainer             = {{Person|llamero}}
 | source                 ={{GitHub|org=llamero|repo=Local_Hough_Circle}}
 | released               = February 4<sup>th</sup>, 2017
-| latest version         = March 18<sup>th</sup>, 2017 (v0.8.0)
+| latest version         = April 5th<sup>th</sup>, 2018 (v0.9.1)
 | status                 = stable, active
 | category               = [[:Category:Analysis|Analysis]], [[:Category:Feature Extraction|Feature Extraction]]
 }}
@@ -216,6 +216,9 @@ NOTE: Hough Circle Transform is only one of the plugins included in the [[UCB Vi
 This plugin is a modified version of the Hough circle transform implemented by [https://imagej.nih.gov/ij/plugins/hough-circles.html Hemerson Pistori and Eduardo Rocha Costa].  The transform algorithm was based off of an original implementation by [http://www.markschulze.net/ Mark Schulze].
 
 This plugin was developed as part of the University of California, Berkeley Vision Sciences core grant NIH P30EY003176.
+
+== Bug Report ==
+April 5, 2018 - Fixed bug where the clear radius ratio was ignored.
 
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
