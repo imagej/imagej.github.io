@@ -16,7 +16,7 @@ In the first dialog, you will be asked for some '''basic parameters''' for the r
 ** '''All-to-all timepoints matching with range('reasonable' global optimization)''': to compare each timepoint to neighboring time points in a defined range. This is a good compromise when your sample moved over time.
 * '''Registration in between views:''' Whether to compare '''Only overlapping views''' or to '''Compare all views against each other'''. When you already have a rough alignment of the views, e.g. from microscope metadata or a first round of registration, we recommend to only compare overlapping views. Comparing all views will increase the computational cost but might be necessary when you have a bad or no pre-registration.
 * '''Interest points''': the interest points to use for registration.
-* '''Group Tiles''' and '''Group illuminations''': (Only available if you have multiple Tiles or Illuminations in your dataset) Tick this to group the Tiles and/or illumination directions within one Channel/Angle/TimePoint. Grouped views will be moved together. Use this if you already aligned Tiles in Stitching mode.
+* '''Group Tiles''' and '''Group illuminations''': (Only available if you have multiple Tiles or Illuminations in your dataset) Tick this to group the Tiles and/or illumination directions within one Channel/Angle/TimePoint. Grouped views will be moved together. Use this if you already aligned Tiles in Stitching mode. Since we also have to do less comparisons this way, this will also speed up the registration process.
 
 [[File:BigStitcher_Register_basic.png|center|800px]]
 
