@@ -47,7 +47,7 @@ Furthermore, regardless of which time series registration scheme you use, you ca
 Depending on which '''Registration algorithm''' you selected in the first dialog, you will be asked for different options here. Note that the algorithms offer various levels of '''invariance:'''
 
 * '''rotation invariance''': works even if the views are rotated and shifted relative to each other (according to the current transformations). Use this e.g. when aligning views from multiple angles. 
-* '''translation invariance''': requires that the views are only shifted and not rotated relative to each other, e.g. to correct thermal drift in time series.
+* '''translation invariance''': requires that the views are only shifted and not rotated relative to each other. Use this e.g. to correct thermal drift in time series.
 * '''no invariance''': requires the views to already be roughly aligned to work. Use this for refinement of existing registrations.
 
 ==== Fast descriptor-based (rotation invariant) ====
