@@ -1,6 +1,22 @@
-To register views, first detect the [[BigStitcher_Interest_points|interest points]]. Then select the views to be registered and by right-click choose "Register using Interest Points".
+After you have [[BigStitcher_Interest_points|detected interest points]] in your images, you can proceed to register them. In '''MultiView mode''', select the views to be registered, right-click and choose {{bc|Processing|Register using Interest Points...}}.
+
+The interest point-based registration consists of two steps:
+*1) '''Pairwise Matching''' of '''corresponding''' interest points in two views/view groups. For this step, we offer a variety of algorithms (see below).
+*2) Iterative '''Global Optimization''' of the registration (estimation of consensus transformations when one view is linked to multiple others).
 
 == Basic Registration Options ==
+
+In the first dialog, you will be asked for some '''basic parameters''' for the registration.
+
+* '''Registration algorithm''': how to perform the pairwise matching of interest points. The individual algorithms are described in detail below.
+* '''Registration over time''': When your dataset contains multiple time points, you can choose to:
+** '''Register time points individually''': to process each time point after the other. This way, the different views in each time point can be aligned, but no registration between time points is performed. It is generally a good idea to first register the views of the individual time points and then perform another round of registration to align them over time (keeping the registration within timepoints from the first round).
+** '''Match against one reference time point (no global optimization)''': to align the views of all time points to a selected reference time point (In addition to aligning within the timepoints). Use this if you sample moved very little over time.
+** '''All-to-all timepoints matching (global optimization)''': to compare every time point to every other time point. This is the most computationally expensive option but will provide a globally optimal time series registration.
+** '''All-to-all timepoints matching with range('reasonable' global optimization)''': to compare each timepoint to neighboring time points in a defined range. This is a good compromise when your sample moved over time.
+* '''Registration in between views:''' Whether to compare '''Only overlapping views''' or to '''Compare all views against each other'''. When you already have a rough alignment of the views, e.g. from microscope metadata or a first round of registration, we recommend to only compare overlapping views. Comparing all views will increase the computational cost but might be necessary when you have a bad or no pre-registration.
+* '''Interest points''': the interest points to use for registration.
+* '''Group Tiles''' and '''Group illuminations''': (Only available if you have multiple Tiles or Illuminations in your dataset) Tick this to group the Tiles and/or illumination directions within one Channel/Angle/TimePoint. Grouped views will be moved together. Use this if you already aligned Tiles in Stitching mode.
 
 [[File:BigStitcher_Register_basic.png|center|800px]]
 
