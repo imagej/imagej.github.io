@@ -32,11 +32,29 @@ Depending on the choices you made in the previous dialog, you will be asked for 
 
 === Time Series Registration Options ===
 
+If you chose to perform time series registration in the previous dialog, you will be asked for specific options here.
+
+If you selected to '''Match against one reference time point (no global optimization)''' in the previous dialog, you will be asked to choose the '''reference time point''' here.
+
+When performing '''All-to-all timepoints matching with range('reasonable' global optimization)''', you will be asked for the '''range''', i.e. how may preceding and succeeding time points to compare each time point to, here.
+
+Furthermore, regardless of which time series registration scheme you use, you can select to '''Consider each time point as rigid unit'''. By selecting this, we will not move the views within a time point but only align the timepoints to each other. Use this if you performed a first round of registration using '''Register time points individually'''. 
+
 === View Fixing and map-back Transformations ===
 
 === Registration Algorithm Parameters ===
 
-==== Algo1 ====
+Depending on which '''Registration algorithm''' you selected in the first dialog, you will be asked for different options here. Note that the algorithms offer various levels of '''invariance:'''
+
+* '''rotation invariance''': works even if the views are rotated and shifted relative to each other (according to the current transformations). Use this e.g. when aligning views from multiple angles. 
+* '''translation invariance''': requires that the views are only shifted and not rotated relative to each other, e.g. to correct thermal drift in time series.
+* '''no invariance''': requires the views to already be roughly aligned to work. Use this for refinement of existing registrations.
+
+==== Fast descriptor-based (rotation invariant) ====
+==== Fast descriptor-based (translation invariant) ====
+==== Precise descriptor-based (translation invariant) ====
+==== Center of mass (translation invariant) ====
+==== Assign closest points with ICP (no invariance) ====
 
 <!--
 [[File:BigStitcher_Register_5.png|center]]
