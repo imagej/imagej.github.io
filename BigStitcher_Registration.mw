@@ -89,7 +89,10 @@ The corresponding point matches of all selected views are then iteratively align
 You can set the following parameters for this algorithm:
 * '''Transformation Model''': which type of transformation (translation, rigid transform or affine transform) to use to align the views.
 * '''Regularize model''': check to compute transformations of another type simultaneously and return a weighted average
-* '''Redundancy for descriptor matching''': the number of next nearest neighbors (after the closest 3) to consider when constructing the descriptors. A descriptor will be created for all 3-neighbor combinations, resulting in <math>{3+redundancy}\choose{3}</math> descriptors for each interest point.
+* '''Redundancy for descriptor matching''': the number of next nearest neighbors (after the closest 3) to consider when constructing the descriptors. A descriptor will be created for all 3-neighbor combinations, resulting in <math>{3+redundancy}\choose{3}</math> descriptors for each interest point. Increasing the redundancy greatly increases the computational cost of interest point matching but might lead to better matching if you have many or uniformly spaced interest points.
+* '''Significance required for a descriptor match''': In the point match filtering step: how much more similar a potential match has to be (compared to the next best one). For example, 1 means no filtering, while 10 means that the descriptor distance has to be at l0 times smaller than the next closest candidate.
+* '''Allowed error for RANSAC (px)''': By how much a point match has to deviate from the consensus model be filtered out by RANSAC. 
+* '''Number of RANSAC iterations''': RANSAC is an iterative and randomized procedure - if you have very little actual corresponding points but may candidate pairs, it may not find the corresponding subset. Increasing the number of iterations can help, but it also increases the computational cost.
 
 ==== Fast descriptor-based (translation invariant) ====
 ==== Precise descriptor-based (translation invariant) ====
