@@ -80,6 +80,8 @@ Depending on which '''Registration algorithm''' you selected in the first dialog
 
 ==== Fast descriptor-based (rotation invariant) ====
 
+[[File:BigStitcher_Register_fast_desc_rot.png|thumb|300px|Parameters for Fast descriptor-based (rotation invariant) registration]]
+
 The '''Fast descriptor-based (rotation invariant) registration''' is the default choice for aligning views from multiple angles. It first constructs a ''descriptor'' for every point based on the "constellation" of its 3 nearest neighbors and matches it to the most similar point in other views. By using a special local coordinate system, we can find the points in other views even if they were imaged from different angles.
 
 To ensure that we only match truly corresponding points, we first filter the point matches by their similarity (relative to the next best match) and then apply model-based outlier removal via the '''Random Sample Consensus (RANSAC) algorithm'''.
