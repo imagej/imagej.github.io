@@ -42,6 +42,32 @@ Furthermore, regardless of which time series registration scheme you use, you ca
 
 === View Fixing and map-back Transformations ===
 
+After the pairwise matching of the interest points is done, we perform '''global optimization''' to determine transformations for the whole set of views from the pairwise transformations.
+
+Since the registration works with ''relative transformations'' and will by default determine a non-identity transformation for all views, all views might move a little in an unpredictable (but correct relative to each other) way. 
+You might, however, want to keep one or more views where they are and only move the others relative to them.
+
+There are two, roughly equivalent, ways of achieving this:
+* '''View Fixing''': keep some view(s) at their original location in the optimization progress (restrict their transform to identity). 
+* '''Mapping back the views''': calculate a transformation that "undoes" the registration for a reference view and apply that to all views (moving the reference view back to its original location but keeping optimized relative transformations).
+
+The following settings in the '''Advanced Registration Parameters''' dialog control view fixing and mapping back:
+
+*'''Fix Views:''' You can select to fix the '''First View''', to manually '''Select Fixed Views''' or turn view fixing off by selecting '''Do not fix'''.
+*'''Map back Views:''' You can select to '''Map back to first View''' using either a Translation model or a rigid model or '''Map back to user defined view''', with the same options for transformation models. You can also turn mapping back off via '''Do not map back (use this if views are fixed)'''. Note that if your registration results in a more complex transform (e.g. Affine) than  the translation/rigid map back model, the mapping back will "undo" the registration as well as possible, but not perfectly.
+
+If you chose to '''manually''' select the views to fix or map back to, you will be asked for those views in another dialog after clicking '''OK'''.
+
+When '''registering timepoints individually''', you will be asked whether you want to fix/map back to the same view in each timepoint or select different ones for each time point.
+
+[[Img1]]
+
+When manually selecting '''views to fix''', you can choose to fix multiple views (optionally per timepoint, see above). 
+
+When '''mapping back''', you can select a single view to map back to.
+
+[[Img2]][[Img3]]
+
 === Registration Algorithm Parameters ===
 
 Depending on which '''Registration algorithm''' you selected in the first dialog, you will be asked for different options here. Note that the algorithms offer various levels of '''invariance:'''
