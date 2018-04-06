@@ -82,6 +82,16 @@ Depending on which '''Registration algorithm''' you selected in the first dialog
 ==== Fast descriptor-based (translation invariant) ====
 ==== Precise descriptor-based (translation invariant) ====
 ==== Center of mass (translation invariant) ====
+
+The '''Center of mass-based registration''' will align views not by matching individual interest points of view pairs but by aligning the center of all the interest points.
+
+This method is very simple and typically not accurate (unless you have detected ''exactly'' the same interest points in every view), but will suffice to e.g approximately stabilize a time series if none of the other methods work.
+
+Note that since we reduce all the interest points in a view to a single center of mass, we can only estimate a translation model (no rotation/scaling) using this strategy.
+
+This method has a single parameter:
+*'''Type of Center Computation:''' How to compute the center of the interest points. Can be '''Average''' (mean) or '''Median'''. The median tends to be more resistant to outliers (e.g. spurious detections outside the sample).
+
 ==== Assign closest points with ICP (no invariance) ====
 
 <!--
