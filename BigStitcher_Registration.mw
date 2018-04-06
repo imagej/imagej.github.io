@@ -60,14 +60,13 @@ If you chose to '''manually''' select the views to fix or map back to, you will 
 
 When '''registering timepoints individually''', you will be asked whether you want to fix/map back to the same view in each timepoint or select different ones for each time point.
 
-[[Img1]]
+[[File:BigStitcher_Register_fix_same_all_tps.png|center|400px]]
 
-When manually selecting '''views to fix''', you can choose to fix multiple views (optionally per timepoint, see above). 
+When manually selecting '''views to fix''', you can choose to fix multiple views (optionally, this is repeated for each timepoint, see above). 
 
 When '''mapping back''', you can select a single view to map back to.
 
-[[Img2]][[Img3]]
-
+[[File:BigStitcher_Register_fix_select.png|center|400px]][[File:BigStitcher_Register_map_back_select.png|center|400px]]
 === Registration Algorithm Parameters ===
 
 Depending on which '''Registration algorithm''' you selected in the first dialog, you will be asked for different options here. Note that the algorithms offer various levels of '''invariance:'''
