@@ -97,6 +97,13 @@ You can set the following parameters for this algorithm:
 * '''Number of RANSAC iterations''': RANSAC is an iterative and randomized procedure - if you have very little actual corresponding points but may candidate pairs, it may not find the corresponding subset. Increasing the number of iterations can help, but it also increases the computational cost.
 
 ==== Fast descriptor-based (translation invariant) ====
+
+The '''Fast descriptor-based (translation invariant) registration''' works essentially the same as the rotation inveriant version but uses axis-aligned local coordinates to construct the 3-neighbor descriptor.
+
+Because of this, we can not find corresponding points in two views that are '''roatated''' relative to each other, so make sure you already have (approximately) aligned different angles before using this registration strategy.
+
+The parameters for this algorithm and their meaning is the same as for the rotation-invariant version (see above).
+
 ==== Precise descriptor-based (translation invariant) ====
 ==== Center of mass (translation invariant) ====
 
