@@ -98,9 +98,9 @@ You can set the following parameters for this algorithm:
 
 ==== Fast descriptor-based (translation invariant) ====
 
-The '''Fast descriptor-based (translation invariant) registration''' works essentially the same as the rotation inveriant version but uses axis-aligned local coordinates to construct the 3-neighbor descriptor.
+The '''Fast descriptor-based (translation invariant) registration''' works essentially the same as the rotation invariant version but uses axis-aligned local coordinates to construct the 3-neighbor descriptor.
 
-Because of this, we can not find corresponding points in two views that are '''roatated''' relative to each other, so make sure you already have (approximately) aligned different angles before using this registration strategy.
+Because of this, we can not find corresponding points in two views that are '''rotated''' relative to each other, so make sure you already have (approximately) aligned different angles before using this registration strategy.
 
 The parameters for this algorithm and their meaning is the same as for the rotation-invariant version (see above).
 
