@@ -153,6 +153,29 @@ By default, a <code>#@ File</code> parameter will create a chooser for a single 
 print(myFile)
 </source>
 
+You can request for multiple files as well. This was shown by [https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;18cc58f.1804|a recent ImageJ Mailing List] post by Nicolas Chiaruttini.
+
+Example in ImageJ Macro Language:
+
+<source lang="python">
+#@File[] listOfPaths(label="select files or folders", style="both")
+
+print("There are "+listOfPaths.length+" paths selected.");
+
+for (i=0;i<listOfPaths.length;i++) {
+        myFile=listOfPaths[i];
+        if (File.exists(myFile)) {
+                print(myFile + " exists.");
+                if (File.isDirectory(myFile)) {
+                        print("Is a directory");
+                } else {
+                        print("Is a file");
+                }
+        }
+}
+
+</source>
+
 The exact same code works for the [[Macros|ImageJ1 Macro language]], too.
 
 You can set restrictions on accepted file types based on file extension (using a <code>style</code> property):
