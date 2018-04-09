@@ -164,7 +164,7 @@ The startup process automatically injects the ImageJ classpath into the [[MATLAB
 
 === Examples ===
 
-The following JAVA commands work in MATLAB command window to open a sample image in ImageJ.
+The following Java commands work in MATLAB command window to open a sample image in ImageJ.
 
 <source>
 imp = ij.IJ.openImage("http://imagej.nih.gov/ij/images/boats.gif");
