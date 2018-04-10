@@ -284,7 +284,7 @@ TrackMate computes and stores three kind of numerical features:
 
 By default, TrackMate only computes a very limited number of features. The GUI forces TrackMate to compute them all, but if you do scripting, you will have to explicitly configures TrackMate to compute the features you desire. This is done by adding feature analyzers to the settings object. 
 
-There are some gotchas: some feature analyzers require other numerical features to be already calculated. If something does not work, it is a good idea to directly check the preamble in the source code of the analyzers ([https://github.com/fiji/fiji/tree/master/src-plugins/TrackMate_/src/main/java/fiji/plugin/trackmate/features TrackMate feature logic]).
+There are some gotchas: some feature analyzers require other numerical features to be already calculated. If something does not work, it is a good idea to directly check the preamble in the source code of the analyzers ([https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/ TrackMate feature logic]).
 
 Finally, depending on their type, numerical features are not stored at the same place:
 * Spot features are simply conveyed by the spot object, and you can access them through <code>spot.getFeature('FEATURE_NAME')</code>
