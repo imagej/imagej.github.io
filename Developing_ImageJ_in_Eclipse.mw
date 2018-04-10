@@ -232,7 +232,7 @@ Steps are as follows:
 # Right-click your project in Eclipse and select {{bc|Run As|Run Configurations...}}
 # Scroll down to Maven Build. If you've built this project with Maven via Eclipse before there will already be a configuration for it. Otherwise you can double-click "Maven Build" to create a new run configuration.
 # Add a parameter: <code>imagej.app.directory</code> with value: <code><path/to/ImageJ.app></code> (e.g. <code>/home/hinerm/Fiji.app</code>)
-# Add a parameter: <code>delete.other.versions</code> with value: <code>true</code>
+# Add a parameter: <code>imagej.deleteOtherVersions</code> with value: <code>always</code>
 # Click <code>Apply</code>
 
 You can now run the project from this dialog. You only need to perform this configuration once though—future uses of the [http://www.vogella.com/tutorials/EclipseMaven/article.html#example_eclipsemavenproject_runningthebuild Maven Build] option will automatically copy your plugin and its dependencies to the specified ImageJ app.
