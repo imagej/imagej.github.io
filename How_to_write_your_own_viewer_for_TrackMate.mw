@@ -35,11 +35,9 @@ The factory itself has nothing particular. On top of the TrackMateModule methods
 public TrackMateModelView create( final Model model, final Settings settings, final SelectionModel selectionModel )
 </source>
 
-You can see that we can possibly pass 3 parameters to the constructor of the view itself: the model of course, but also the settings object, so that we can find there a link to the image object. The {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/visualization/hyperstack/HyperStackDisplayerFactory.java|label=HyerpStackDisplayer}} uses it to retrieve the ImagePlus over which to display the TrackMate data.
+You can see that we can possibly pass 3 parameters to the constructor of the view itself: the model of course, but also the settings object, so that we can find there a link to the image object. The {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/visualization/hyperstack/HyperStackDisplayerFactory.java|label=HyperStackDisplayer}} uses it to retrieve the ImagePlus over which to display the TrackMate data.
 
-The selection model is also offered, and the instance passed is the common one used in the GUI, so that a selection made by the user can be shared amongst all views. 
-
-
+The selection model is also offered, and the instance passed is the common one used in the GUI, so that a selection made by the user can be shared amongst all views.
 
 == The {{GitHub|org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/visualization/TrackMateModelView.java|label=TrackMateModelView}} interface. ==
 
