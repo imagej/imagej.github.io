@@ -12,7 +12,7 @@
 
 [[File:screenshot1.jpg|350px]]
 
-'''Adiposoft''' is an automated Open Source software for the analysis of adipose tissue cellularity in histological sections. Adiposoft has been developed as a plug-in for Fiji (advanced distribution of ImageJ) that can be run under Windows, Linux or MacOS X. The software, that can be downloaded and used with no license restrictions, was developed at the Imaging Unit of the Center for Applied Medical Research ([https://www.cima.es/home CIMA]), [http://www.unav.edu/en/home1 University of Navarra].
+'''Adiposoft''' is an automated Open Source software for the analysis of adipose tissue cellularity in histological sections. Adiposoft has been developed as a plug-in for Fiji (advanced distribution of ImageJ) that can be run under Windows, Linux or MacOS X. The software, that can be downloaded and used with no license restrictions, was developed at the Imaging Unit of the Center for Applied Medical Research ([https://cima.unav.edu/ CIMA]), [http://www.unav.edu/ University of Navarra].
 
 A '''paper validating Adiposoft''' was published by [http://www.jlr.org/content/53/12/2791.short Journal of Lipid Research] in 2012.
 
@@ -23,8 +23,9 @@ The accurate estimation of the number and size of adipocytes provides relevant i
 [[Image:datasetim.png|center|500px]]
 
 == Download and Installation  == 
-The latest version of Adiposoft is 1.14. (Updated April 12th, 2018)
-* Adiposoft '''Plugin''' ([https://www.dropbox.com/s/0h00x2qxolffr41/Adiposoft_-1.14.jar?dl=0]). To install the plugin, you need to have Fiji installed in your computer. You can download it from here ([https://imagej.net/Fiji/Downloads]). Then, download and copy the Adiposoft jar file into the Plugins folder inside Fiji
+The latest version of Adiposoft is 1.14. (Updated April 12th, 2018).
+# If you do not have Fiji installed in your computer, you can download it [https://imagej.net/Fiji/Downloads here].
+# Download the Adiposoft plugin [https://www.dropbox.com/s/0h00x2qxolffr41/Adiposoft_-1.14.jar?dl=0 here]. Copy the Adiposoft jar file into the Plugins folder of Fiji application's main folder. The Adiposoft tool will appear in the plugins menu the next time you start Fiji.
 
 == Running Adiposoft == 
 Go to the Plugins menu in Fiji, and click on Adiposoft. This will open the main Adiposoft dialogue window.
@@ -62,15 +63,6 @@ A set of images of histological sections obtained from three different rat tissu
 
 == Tools ==
 Metamorph Macro (Molecular Devices, USA) that automated the acquisition of the images of the histological samples with the microscope.
-
-
-== Installing Adiposoft as a FiJi plugin (for users familiar with Fiji) ==
-If you are familiar with Fiji, and you have it already installed in your computer, you can download only the plugin for Fiji from the Download section.
-
-# If you do not have Fiji installed in your computer, you can download it [http://fiji.sc/Downloads here]
-# Once Fiji is installed you should extract the Adiposoft_Fiji.zip file into the plugins folder inside Fiji ("/YourPath/Fiji/plugins/") Adiposoft tool will appear in the plugins menu the next time you start Fiji.
-
-Note: There is only limited support for PowerPC (G4/G5) Macs. See MacOSX tips for a special download link.
 
 == Adiposoft under MATLAB (advanced users) - Maintained only until December 2014 ==
 A version of Adiposoft was entirely developed using [[MATLAB]] v.7.11 and the DIPlib v2.2 C Image Processing libraries [11] under Linux OS Fedora 14. To run Adiposoft, the same or newer version of this software is required, but the OS can be different. [[MATLAB]] requires a non-free license.
