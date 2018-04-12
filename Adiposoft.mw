@@ -61,7 +61,7 @@ If you choose to run Adiposoft in Manual mode, the program analyzes the selected
 A set of images of histological sections obtained from three different rat tissue depots –retroperitoneal (RP), mesenteric (MES) and subcutaneous (SC)- can be downloaded and used to test Adiposoft. ([https://www.dropbox.com/s/yueaf8iatdoxuul/Dataset.zip?dl=0 Download])
 
 == Tools ==
-Metamorph Macro (Molecular Devices, USA) that automated the automated acquisition of the images of the histological samples with the microscope.
+Metamorph Macro (Molecular Devices, USA) that automated the acquisition of the images of the histological samples with the microscope.
 
 
 == Installing Adiposoft as a FiJi plugin (for users familiar with Fiji) ==
