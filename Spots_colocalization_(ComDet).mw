@@ -3,10 +3,10 @@
 | name                   = ComDet
 | author                 = [http://katpyxa.info Eugene Katrukha]
 | maintainer             = [mailto:katpyxa_at_gmail.com Eugene Katrukha]
-| filename               = [https://github.com/ekatrukha/ComDet/blob/master/ComDet_v_0.3.6.jar?raw=true ComDet.jar] + [https://github.com/ekatrukha/ComDet/blob/master/Jama-1.0.2.jar?raw=true Jama lib]
+| filename               = [https://github.com/ekatrukha/ComDet/blob/master/target/ComDet_-0.3.7.jar?raw=true ComDet.jar] + for ImageJ [https://math.nist.gov/javanumerics/jama/Jama-1.0.3.jar Jama lib]
 | source                 = [https://github.com/ekatrukha/ComDet github]
 | released               = 23 November 2012
-| latest version         = 20 March 2017
+| latest version         = 12 April 2018
 | status                 = stable 
 | category               = [[:Category:Colocalization]]
 | website                = [https://github.com/ekatrukha/ComDet/wiki wiki]
@@ -34,12 +34,14 @@ http://katpyxa.info/software/ComDet/ComDet_open.png
 
 If the image is not two channels image, the following dialog window will appear:  
 
-http://katpyxa.info/software/ComDet/ComDet_detection_only_v2.png
+http://katpyxa.info/software/ComDet/ComDet_detection_only_v3.png
 
-Specify estimated particles size and sensitivity (intensity) and press OK.
+Specify estimated particles size and intensity threshold (particle brightness) and press OK.
 To have good detection usually you need to play with parameters and see how it goes.  
 
-By default plugin looks only for particles of specified size. If you check "''Include larger particles?''" box, it will also try to quantify bigger spots.  
+By default, plugin looks only for particles of specified size. If you check "''Include larger particles?''" box, it will also try to quantify bigger spots.  
+
+If you choose ''Add to ROI Manager'' option ("All particles"), plugin will add detected rectangular ROIs around particles to [https://imagej.nih.gov/ij/docs/guide/146-30.html#sub:ROI-Manager... ROI Manager]. ROIs will have names in the format of d(detection# in Results table)_ch(#channel)_sl(#slice)_fr(#frame)_c(0 if particle is not colocalized and 1 if it is, see below).
 
 After pressing OK plugin runs and add rectangles in overlay on top of detected particles.
    
@@ -63,7 +65,7 @@ http://katpyxa.info/software/ComDet/ComDet_ROI_after_v2.png
 If your image contains two channels then after pressing ''Detect Particles'' the dialog will look a bit more complex:
   
 
-http://katpyxa.info/software/ComDet/ComDet_detection_and_coloc_v2.png  
+http://katpyxa.info/software/ComDet/ComDet_detection_and_coloc_v3.png  
 
 In this case you can specify the same parameters of detection for each channel separately.
 To get colocalization analysis you need to choose "''Two channels detection: Detect in both channels independently''" option and check "''Calculate colocalization?''" box. If you uncheck it, then only detection will be performed. 
@@ -76,7 +78,9 @@ After detection is finished ComDet marks detected particles with rectangles of t
 
 http://katpyxa.info/software/ComDet/ComDet_detection_and_coloc_mark_v2.png
 
-'''New in 0.3.6''': For two channels detection, there are two new options: "''Detect in channel 1(2), quantify in channel 2(1)''". In this case detection of spots will be done only in the first specified channel. For the other channel, same spots intensities would be quantified over the same area as in the "detection" channel (whether there is a spot there or not). 
+Also ''Add to ROI Manager'' option is available. ROIs will have names in the format of d(detection# in Results table)_ch(#channel)_sl(#slice)_fr(#frame)_c(0 if particle is not colocalized and 1 if it is). You can add all detected particles or only those that colocalize.
+
+For two channels detection, there are three options: "''Detect in both channels independently''" or "''Detect in channel 1(2), quantify in channel 2(1)''". In last two cases, detection of spots will be done only in the first specified channel. For the other channel, same spots intensities would be quantified over the same area as in the "detection" channel (whether there is a spot there or not). 
 
 Also ''only ROI detection'' mode (as described above) works in this case. 
 
@@ -98,6 +102,7 @@ Columns are:
 # ''IntegratedInt'' = sum of all pixels intensity inside the [https://github.com/ekatrukha/ComDet/wiki/How-does-detection-work%3F thresholded area] minus average spot-specific backgrounds. Background value is calculates as average intensity of pixels on perimeter of the rectangle.
 # ''Colocalized'' = 0 if spot does not colocalize with another and 1 if it does.
 # ''IntensityRatio'' = Ratio of spot's ''IntegratedInt'' to ''IntegratedInt'' of corresponding colocalized spot.
+# ''ColocIndex'' = corresponds to the detection index in Results table, corresponding to the particle in anothe channels (works only for two channel independent detection).
  
 == Additional info ==
 
