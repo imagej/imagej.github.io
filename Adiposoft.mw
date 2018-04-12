@@ -27,7 +27,7 @@ Download the installation package specific for your Operating System in the next
 
 == Download and Installation  == 
 The latest version of Adiposoft is 1.14. (Updated April 12th, 2018)
-* Adiposoft '''Plugin''' ([https://www.dropbox.com/s/jxvj9x6nlp5fq1f/Adiposoft_.jar?dl=0]). To install the plugin, you need to have Fiji installed in your computer. You can download it from here ([https://imagej.net/Fiji/Downloads]). Then, download and copy the Adiposoft jar file into the Plugins folder inside Fiji
+* Adiposoft '''Plugin''' ([https://www.dropbox.com/s/0h00x2qxolffr41/Adiposoft_-1.14.jar?dl=0]). To install the plugin, you need to have Fiji installed in your computer. You can download it from here ([https://imagej.net/Fiji/Downloads]). Then, download and copy the Adiposoft jar file into the Plugins folder inside Fiji
 
 == Running Adiposoft == 
 If you installed Adiposoft from one of the full version installers, you will find Adiposoft’s icon in the Applications folder (Windows, MacOS X) or in the folder selected during the installation (Linux). Depending on your operating System, you may also have a link to Adiposoft on your computer desktop.
