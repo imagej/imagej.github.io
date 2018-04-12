@@ -60,11 +60,6 @@ If you choose to run Adiposoft in Manual mode, the program analyzes the selected
 == Image DataSet ==
 A set of images of histological sections obtained from three different rat tissue depots –retroperitoneal (RP), mesenteric (MES) and subcutaneous (SC)- can be downloaded and used to test Adiposoft. ([https://www.dropbox.com/s/yueaf8iatdoxuul/Dataset.zip?dl=0 Download])
 
-== Other ImageJ plugins ==
-Other related ImageJ plugins are available for download:
-Manual Segmentation with ImageJ – (Download)
-Cells in Suspension ImageJ – (Download)
-
 == Tools ==
 Metamorph Macro (Molecular Devices, USA) that automated the automated acquisition of the images of the histological samples with the microscope.
 
