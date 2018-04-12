@@ -22,9 +22,6 @@ The accurate estimation of the number and size of adipocytes provides relevant i
 
 [[Image:datasetim.png|center|500px]]
 
-== Installation == 
-Download the installation package specific for your Operating System in the next section. To install Adiposoft, execute the installer file and follow the instructions. The full version installers install both Adipsoft and Fiji at the same time. 
-
 == Download and Installation  == 
 The latest version of Adiposoft is 1.14. (Updated April 12th, 2018)
 * Adiposoft '''Plugin''' ([https://www.dropbox.com/s/0h00x2qxolffr41/Adiposoft_-1.14.jar?dl=0]). To install the plugin, you need to have Fiji installed in your computer. You can download it from here ([https://imagej.net/Fiji/Downloads]). Then, download and copy the Adiposoft jar file into the Plugins folder inside Fiji
