@@ -6,9 +6,11 @@
 If you are passingly familiar with Git, but wish it wasn't so arcane, check out:
 * [http://think-like-a-git.net/ Think Like (a) Git - A Guide for the Perplexed]
 }}
-{{DevelopMenu | tools}}Development of ImageJ and related software relies heavily on [http://git-scm.com/ Git], a first-class [[wikipedia:Distributed version control|distributed]] [[wikipedia:Version control|version control]] system. Git saves "snapshots" of the source code, keeping a history of changes.
+{{DevelopMenu | tools}}Development of ImageJ and related software relies heavily on [http://git-scm.com/ Git]. See the [[source code]] page for information on where the Git repositories reside.
 
-See the [[source code]] page for information on where the Git repositories reside.
+== Why do we use Git? ==
+* Git is a first-class [[wikipedia:Distributed version control|distributed]] [[wikipedia:Version control|version control]] system, so we use it to keep a record of changes to avoid loss-of-work and to appropriately explain/document changes as projects develop.
+* Git history, which is composed of "snapshots" of the source code, can be used to go back at any point in time, which leads to reproducible science.
 
 == Git tutorials ==
 
