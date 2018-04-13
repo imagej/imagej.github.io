@@ -5,6 +5,12 @@
 
 Maven artifacts are published to the [[ImageJ Maven repository]].
 
+= Why do we use Maven? =
+* We need something to take source code and package it into a useable format, ''i.e.'' jar files.
+* Maven organizes dependencies for us, declaring those dependencies… as opposed to manually tracking each individual piece-of-the-puzzle.
+* Maven is a central storage location for all developers, providing the same tools to many folks.
+* Maven has an established concept of immutable release and development versioning – both of which are essential for reproducible science.
+
 = Introduction =
 
 Maven is a powerful tool to build Java projects and to manage their dependencies. It can build dependencies from sources, but if the sources are not available, it will look into Maven repositories from which to download the dependencies.
