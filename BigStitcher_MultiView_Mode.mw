@@ -14,7 +14,7 @@ Selecting the desired views and right-clicking in the main view list brings up a
 * '''Processing''' shows the functions in the interest-point-based multi-view registration pipeline.
 * '''Calibration/Transformations''' shows functions for inspecting or modifying the view transformations.
 * '''Interest Points''' shows functions for visualizing and removing interest points.
-* '''Modifications''' shows functions for re0saving the dataset.
+* '''Modifications''' shows functions for resaving the dataset.
 
 [[File:BigStitcher_Overview_5.png|center]]
 
