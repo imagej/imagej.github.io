@@ -20,4 +20,6 @@ The [[Bio-Formats]] plugins offer a more complete TIFF importer, accessible via 
 
 The [[SCIFIO]] library, the I/O library of [[ImageJ2]], imports TIFF files using code adapted from the [[Bio-Formats]] project. As such, it is similar to Bio-Formats in that it supports a wider variety of TIFFs, but is less performant than the ImageJ 1.x reader. SCIFIO is accessible via the {{bc | File | Import | Image...}} command.
 
+You can tell ImageJ2 to use SCIFIO by default via the {{bc | Edit | Options | ImageJ2...}} menu's "Use SCIFIO when opening files (BETA!)" checkbox.
+
 [[Category:Import-Export]]
