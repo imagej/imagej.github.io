@@ -1,6 +1,13 @@
-
 == Introduction ==
 
 This plugin can be used to quickly calculate the interplanar spacing values <math>d_{hkl}</math> directly within imageJ without copying the results table to another program like Excel.
 
 == Making Measurements ==
+
+Best practices for measuring spots or rings is to use imageJ's Oval tool while holding down the SHIFT key. This effectively makes for a Circle tool. Click and hold on a spot or ring and drag the circle to the other side of the direct spot. Using a circle instead of a line allows you to utilize the whole diffraction pattern instead of two diffraction spots, and helps you measure about the center of the DP. 
+
+When you tap the "m" key to make a measurement, the area should be recorded. If you don't have this enabled you can just run the ''calc dSpace'' plugin once, and it will set up imageJ to record the Area and central position of the circle. Next time you make a measurement, these values will be measured. Once you have enough rings or spots measured, you can run the plugin and it calculates the scalar component of the G vector in reciprocal units, and the d-spacing in Angstroms.
+
+== Image Requirements ==
+
+Coming soon...
