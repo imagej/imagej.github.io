@@ -1,6 +1,6 @@
 (Return to the main [[Simple Neurite Tracer]] page)
 
-{{ambox | text =SNT is mostly a keyboard-based program. Shortcuts are typically single keystrokes and do not require other modifier keys to be pressed. Most are highlighted in the user interface. E.g., to toggle the ''<u>H</u>essian analysis'' checkbox, one only needs to press its highlighted letter, i.e., {{key|H}}.
+{{ambox | text =Most SNT features are triggered by keyboard shortcuts. Shortcuts are typically single keystrokes and do not require other modifier keys to be pressed. Most are highlighted in the user interface. E.g., to toggle the ''<u>H</u>essian analysis'' checkbox, one only needs to press its highlighted letter, i.e., {{key|H}}.
 }}
 
 __NOTOC__
@@ -57,6 +57,12 @@ These shortcuts become available in ''Edit Mode'', activated through the context
 * {{key|I}} or {{key|Insert}} - <u>I</u>nserts a new node at cursor position
 * {{key|M}} - <u>M</u>oves active node to cursor position
 * {{key|Z}} - Brings active node to current <u>Z</u>-plane 
+
+==== Legacy 3D Viewer ====
+All shortcuts that are not specific to tracing canvases (XY, ZY and XZ views) ''should'' be recognized by the legacy [[Simple_Neurite_Tracer:_3D_Interaction|3D viewer]]. In addition the following are also implemented:
+* {{key|H}} - Selects the <u>H</u>and (rotation) tool
+* {{key|W}} - Selects the <u>W</u>and (selection) tool
+* {{key|Esc}} - Shuttles between the Hand and Wand tool after both have been selected at least once. 
 
 ==== Other ====
 There are more complex key and mouse combinations used in:
