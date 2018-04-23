@@ -129,6 +129,16 @@ This method has a single parameter:
 
 ==== Assign closest points with ICP (no invariance) ====
 
+In addition to the descriptor-based registration algorithm, we also offer registration via a slightly modified version of the [https://en.wikipedia.org/wiki/Point_set_registration#Iterative_closest_point| Iterative Closest Point (ICP)] algorithm.
+
+ICP works by matching each point in one image to the closest point in the other (if one exists within a defined search radius) and then estimating a transformation from the matched points via least squares. The points of the first image are then transformed by the current transformation estimate and the process is repeated until nothing changes or for a maximum number of iterations.
+
+Note that since ICP uses, as the name implies, the closest points in two images, it only works if the images are already roughly aligned (it has no invariance to translation or rotation). It should therefore be used to refine existing registrations, but not to compute registrations de-novo.
+
+In the parameter dialog, you can set the two parameters described above:
+*'''Maximal distance for correspondence (px)''': How close the neighboring points in the two images have to be for a match. Decreasing this can lead to a finer registration, but the pre-registration has to be good enough. Alternatively, a larger distance will lead to a coarser alignment but might still work with worse pre-registrations.
+*'''Maximal number of iterations''': for how many iterations to run. Ideally, the algorithm should converge beforehand. If you keep running for the maximum number of iterations, increasing this might help.
+
 === Regularization Options ===
 
 === Grouping Options ===
