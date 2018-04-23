@@ -47,6 +47,7 @@ I am also coordinating and/or leading and/or advising and/or helping with, but n
 # (with {{Person|etarena}}) '''[[Coloc 2]]''' algorithms in [[ImageJ Ops]].
 # (with {{Person|Gab1one}}) '''SCIFIO''' and '''SciJava I/O''' architecture.
 # (with {{Person|PetrBainar}} et. al) '''ImageJ Server''' and parallelization of ImageJ on high-performance computing (HPC) clusters ({{GitHub | org=PetrBainar | repo=scijava-parallel | label=PetrBainar/scijava-parallel}}).
+# (with {{Person|stelfrich}}) '''ImageJ Launcher''' bug-fixes and improvements.
 # (with {{Person|maarzt}}) '''ImageJ Legacy''' improved image translation between [[ImageJ1]] and [[ImageJ2]].
 # (with {{Person|Kharrington}}) '''ImageJ in 3D.''' Unification of ImageJ 3D visualization efforts around [[ClearVolume]] and the [[SciView]].
 # (with {{Person|jcschaff}}) '''ImageJ + [[Virtual Cell]]''' integration.
