@@ -150,6 +150,17 @@ If you opted for '''Regularization''' of the transform in the previous dialog, y
 
 === Grouping Options ===
 
+If you chose to '''group tiles or illuminations''' in the first dialog, you will be asked how to perform the grouping in another dialog.
+
+[[File:BigStitcher_register_grouping.png|center|600px]]
+
+The options for '''Interest point grouping''' are:
+
+*'''Group interest points (simply combine all in one virtual view)''': Replace the grouped views by one virtual view in the global optimization. Interest points that are detected in multiple images are '''merged'''. This is faster but might lead to inaccurate registration if the views within the groups are not properly per-registered and the merge distance is set too high (e.g. tiles were not properly stitched beforehand).
+*'''do not group interest points, compute views independently''': Use the views as-is, but group in the global optimization (compute the same transformation all views in a group). 
+
+Furthermore, you can specify the '''interest point merge distance'''. If you choose to '''group interest points''', points from multiple images that lie within this distance to each other will be replaced by their center.
+
 <!--
 [[File:BigStitcher_Register_5.png|center]]
 **'''Fast 3d geometric hashing (rotation invariant)'''
