@@ -129,6 +129,9 @@ This method has a single parameter:
 
 ==== Assign closest points with ICP (no invariance) ====
 
+
+[[File:BigStitcher_Register_icp.png|thumb|300px|Parameters for ICP-based (no invariance) registration]]
+
 In addition to the descriptor-based registration algorithm, we also offer registration via a slightly modified version of the [https://en.wikipedia.org/wiki/Point_set_registration#Iterative_closest_point| Iterative Closest Point (ICP)] algorithm.
 
 ICP works by matching each point in one image to the closest point in the other (if one exists within a defined search radius) and then estimating a transformation from the matched points via least squares. The points of the first image are then transformed by the current transformation estimate and the process is repeated until nothing changes or for a maximum number of iterations.
