@@ -110,7 +110,7 @@ The '''Precise descriptor-based (translation invariant) registration''' work ess
 
 In addition the the parameters for the '''Fast descriptor-based registration''', you can set one additional parameter for the precise version:
 
-* '''Number of neighbors for the descriptors''': how many neighbors of each point to use for the descriptor construction. More neighbors will lead to a more specific matching. In images with a lot if (potentially spurious) detections, you might also want to increase descriptor redundancy. Be aware that this might increase the computation time considerably - depending on this parameter and the selected redundancy level, we will construct <math>{#neighbors+redundancy}\choose{#neighbors}</math> descriptors for each point.
+* '''Number of neighbors for the descriptors''': how many neighbors of each point to use for the descriptor construction. More neighbors will lead to a more specific matching. In images with a lot if (potentially spurious) detections, you might also want to increase descriptor redundancy. Be aware that this might increase the computation time considerably - depending on this parameter and the selected redundancy level, we will construct <math>{\#neighbors+redundancy}\choose{\#neighbors}</math> descriptors for each point.
 
 ==== Center of mass (translation invariant) ====
 
