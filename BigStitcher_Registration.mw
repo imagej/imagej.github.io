@@ -38,7 +38,9 @@ If you selected to '''Match against one reference time point (no global optimiza
 
 When performing '''All-to-all timepoints matching with range('reasonable' global optimization)''', you will be asked for the '''range''', i.e. how may preceding and succeeding time points to compare each time point to, here.
 
-Furthermore, regardless of which time series registration scheme you use, you can select to '''Consider each time point as rigid unit'''. By selecting this, we will not move the views within a time point but only align the timepoints to each other. Use this if you performed a first round of registration using '''Register time points individually'''. 
+Furthermore, regardless of which time series registration scheme you use, you can select to '''Consider each time point as rigid unit'''. By selecting this, we will not move the views within a time point but only align the timepoints to each other. Use this if you performed a first round of registration using '''Register time points individually'''.
+
+In multi-timepoint datasets (even when not registering timepoints relative to each other), you can also tick to '''Show timeseries statistics''' at the bottom of the dialog. This will cause a graph of the '''registration errors over time''' to be displayed after the registration is complete.
 
 === View Fixing and map-back Transformations ===
 
