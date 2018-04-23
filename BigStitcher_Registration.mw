@@ -106,6 +106,8 @@ The parameters for this algorithm and their meaning is the same as for the rotat
 
 ==== Precise descriptor-based (translation invariant) ====
 
+[[File:BigStitcher_Register_prec_desc_tr.png|thumb|300px|Parameters for Precise descriptor-based (translation invariant) registration]]
+
 The '''Precise descriptor-based (translation invariant) registration''' work essentially the same as the fast descriptor-based registration algorithms with the main difference being that you can manually specify the '''number of neighbors''' of an interest point to use for constructing the point descriptor. Due to the more flexible descriptors, it lacks the specific optimizations for 3 neighbors and is slightly slower than the fast versions.
 
 In addition the the parameters for the '''Fast descriptor-based registration''', you can set one additional parameter for the precise version:
