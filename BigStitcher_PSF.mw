@@ -1,0 +1,20 @@
+== Overview ==
+
+For deconvolution, it is necessary to have a '''Point spread function (PSF)''' for each image you want to deconvolve. An ideal PSF should represent how a point emitter smaller than the diffraction limit of your optical setup is imaged by your microscope.
+
+PSFs can be be calculated theoretically, but this requires exact modeling of your microscope, so it is more common to use images of sub-diffraction fluorescent beads to estimate the PSF. Since it is common to use fluorescent beads for multi-view registration, you might already have a source of PSFs in you data.
+
+Functions for assigning PSFs to images and managing PSFs can be found in '''MultiView mode''' in the right-click menu under {{bc|Processing|Point Spread Functions}}.
+
+'''TODO: img'''
+
+== PSF management ==
+
+=== Extracting PSFs ===
+
+
+'''TODO: img'''
+
+=== Assigning PSFs ===
+=== Averaging PSFs ===
+=== Displaying PSFs ===
