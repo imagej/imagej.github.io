@@ -105,6 +105,13 @@ Because of this, we can not find corresponding points in two views that are '''r
 The parameters for this algorithm and their meaning is the same as for the rotation-invariant version (see above).
 
 ==== Precise descriptor-based (translation invariant) ====
+
+The '''Precise descriptor-based (translation invariant) registration''' work essentially the same as the fast descriptor-based registration algorithms with the main difference being that you can manually specify the '''number of neighbors''' of an interest point to use for constructing the point descriptor. Due to the more flexible descriptors, it lacks the specific optimizations for 3 neighbors and is slightly slower than the fast versions.
+
+In addition the the parameters for the '''Fast descriptor-based registration''', you can set one additional parameter for the precise version:
+
+* '''Number of neighbors for the descriptors''': how many neighbors of each point to use for the descriptor construction. More neighbors will lead to a more specific matching. In images with a lot if (potentially spurious) detections, you might also want to increase descriptor redundancy. Be aware that this might increase the computation time considerably - depending on this parameter and the selected redundancy level, we will construct <math>{#neighbors+redundancy}\choose{#neighbors}</math> descriptors for each point.
+
 ==== Center of mass (translation invariant) ====
 
 The '''Center of mass-based registration''' will align views not by matching individual interest points of view pairs but by aligning the center of all the interest points.
@@ -117,6 +124,10 @@ This method has a single parameter:
 *'''Type of Center Computation:''' How to compute the center of the interest points. Can be '''Average''' (mean) or '''Median'''. The median tends to be more resistant to outliers (e.g. spurious detections outside the sample).
 
 ==== Assign closest points with ICP (no invariance) ====
+
+=== Regularization Options ===
+
+=== Grouping Options ===
 
 <!--
 [[File:BigStitcher_Register_5.png|center]]
