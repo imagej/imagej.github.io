@@ -6,6 +6,6 @@ Specify a list of people as per the [[Template:Person|person template]]. If the 
 <pre>{{PersonList|Rasband|Rueden|Dietzc|marktsuchida|Jane Doe}}</pre>
 {{PersonList|Rasband|Rueden|Dietzc|marktsuchida|Jane Doe}}
 
-<pre>{{PersonList|Pietzch|Saalfeld|StephanPreibisch}}</pre>
-{{PersonList|Pietzch|Saalfeld|StephanPreibisch}}
+<pre>{{PersonList|Pietzsch|Saalfeld|StephanP}}</pre>
+{{PersonList|Pietzsch|Saalfeld|StephanP}}
 </noinclude>
