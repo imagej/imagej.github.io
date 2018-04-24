@@ -34,12 +34,12 @@ ImageJ has benefitted from many hackathons over the years:
 |- valign="top"
 |[http://www.hhmi.org/sites/default/files/Bulletin/2007/November/nov2007_fulltext.pdf 2007 Summer]
 |[http://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
-| {{PersonList | Albertcardona | bene51 | jefferis | hanchuan | Schindelin | StephanP | Saalfeld | rasband | Arnim Jenett | Julie Simpson | Torsten Rohlfing | Yuriy Mishchenko}}
+| {{PersonList|Albertcardona|bene51|jefferis|hanchuan|Schindelin|StephanP|Saalfeld|rasband|Arnim Jenett|Julie Simpson|Torsten Rohlfing|Yuriy Mishchenko}}
 |Neuroscience
 |- valign="top"
 | style="white-space: nowrap" | [[TaskList|2008 Apr 21 -<br>2008 Apr 30]]
 |[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
-|{{PersonList | Albertcardona | bene51 | ysis | White | frederikfly | JeanYvesTinevez | Schindelin | Hinerm | StephanP | Saalfeld | Tomancak}}
+|{{PersonList|Albertcardona|bene51|ysis|White|frederikfly|JeanYvesTinevez|Schindelin|Hinerm|StephanP|Saalfeld|Tomancak}}
 |[[Fiji]]
 |- valign="top"
 | style="white-space: nowrap" | 2008 Dec 8 -<br>2008 Dec 13
@@ -49,157 +49,157 @@ ImageJ has benefitted from many hackathons over the years:
 |- valign="top"
 | style="white-space: nowrap" | [[2009-03-12 - Dresden Hackathon 2009|2009 Mar 23 -<br>2009 Apr 03]]
 |[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
-|{{PersonList | Schindelin | Albertcardona | JeanYvesTinevez | bene51 | Iarganda | White | Hinerm | Tomancak | StephanP | Saalfeld | Raju Tomer | Misha Kudryashev}}
+|{{PersonList|Schindelin|Albertcardona|JeanYvesTinevez|bene51|Iarganda|White|Hinerm|Tomancak|StephanP|Saalfeld|Raju Tomer|Misha Kudryashev}}
 |Segmentation
 |- valign="top"
 | style="white-space: nowrap" | [[2010-03-14 - Hackathon at EMBL|2010 Mar 14 -<br>2010 Mar 27]]
 |[http://www.embl.de/ EMBL]<br>Heidelberg, Germany
-|{{PersonList | Albertcardona | Saalfeld | bene51 | cmci | Rueden | Schindelin | Iarganda | Lindsey | Hinerm | StephanP | Harris | vkaynig}}
+|{{PersonList|Albertcardona|Saalfeld|bene51|cmci|Rueden|Schindelin|Iarganda|Lindsey|Hinerm|StephanP|Harris|vkaynig}}
 |[[Fiji]]
 |- valign="top"
 | style="white-space: nowrap" | 2010 Oct 12 -<br>2010 Oct 23
 |[http://www.lbnl.gov/ LBNL]<br>Berkeley CA, USA
-|{{PersonList | frederikfly | Schindelin}}
+|{{PersonList|frederikfly|Schindelin}}
 |Running [[Micro-Manager]] inside [[Fiji]]
 |- valign="top"
 | style="white-space: nowrap" | [[2011 Hackathon in Madison|2011 Jan 27 -<br>2011 Feb 13]]
 |[http://discovery.wisc.edu/ WID]<br>Madison, WI, USA
-|{{PersonList | Iarganda | paulbarber | Albertcardona | Bdezonia | arthuredelstein | afraser | frederikfly | Grislis | Harris | hinerm | luisibanez | LeeKamentsky | Lindsey | Linkert | Hinerm | Pietzsch | StephanP | Rueden | Saalfeld | Schindelin | bene51 | Tomancak | Eliceiri | Lentz | LeeKamentsky | Mark Rowley}}
+|{{PersonList|Iarganda|paulbarber|Albertcardona|Bdezonia|arthuredelstein|afraser|frederikfly|Grislis|Harris|hinerm|luisibanez|LeeKamentsky|Lindsey|Linkert|Hinerm|Pietzsch|StephanP|Rueden|Saalfeld|Schindelin|bene51|Tomancak|Eliceiri|Lentz|LeeKamentsky|Mark Rowley}}
 |Multidimensional visualization
 |- valign="top"
 | style="white-space: nowrap" | [[2011-12-14 - Fiji Hackathon in Dresden|2011 Dec 9 -<br>2011 Dec 19]]
 |[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
-|{{PersonList | jburel | Stephane-D | Bdezonia | Dietzc | Michaeldoube | Fab14 | frederikfly | hornm | White | tomka | alex-krull | Linkert | Hinerm | Moore | Pietzsch | StephanP | Rueden | Schindelin | bene51 | Tomancak | Peter-Gabriel-Pitrone | Eliceiri | Fernando Carrilo, Jiri Matas, Jurgen Mayer}}
+|{{PersonList|jburel|Stephane-D|Bdezonia|Dietzc|Michaeldoube|Fab14|frederikfly|hornm|White|tomka|alex-krull|Linkert|Hinerm|Moore|Pietzsch|StephanP|Rueden|Schindelin|bene51|Tomancak|Peter-Gabriel-Pitrone|Eliceiri|Fernando Carrilo, Jiri Matas, Jurgen Mayer}}
 |Interoperability
 |- valign="top"
 | style="white-space: nowrap" | 2012 Oct
 |[http://www.uni-konstanz.de/en/welcome/ Universität Konstanz]<br>Konstanz, Germany
-|{{PersonList | hornm | Dietzc | Pietzsch | Schindelin}}
+|{{PersonList|hornm|Dietzc|Pietzsch|Schindelin}}
 |[[KNIME]]+[[Fiji]]
 |- valign="top"
 | style="white-space: nowrap" | 2013 Jan 22 -<br>2013 Jan 25
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|{{PersonList | thewtex | Rueden | Schindelin | hinerm}}
+|{{PersonList|thewtex|Rueden|Schindelin|hinerm}}
 |{{GitHub|org=scifio|repo=scifio-imageio|label=SCIFIO ImageIO plugin}}
 |- valign="top"
 | style="white-space: nowrap" | [[2013-04-22 - Trainable Segmentation Hackathon|2013 Apr 14 -<br>2013 Apr 18]]
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|{{PersonList | Iarganda | Schindelin | Rueden}}
+|{{PersonList|Iarganda|Schindelin|Rueden}}
 |[[Trainable Weka Segmentation]]
 |- valign="top"
 |[[2013-05-03 - ImgLib2 Hackathon in Madison|2013 Apr 27 -<br>2013 May 3]]
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|{{PersonList | StephanP | Pietzsch | Rueden | Schindelin | Bdezonia | hinerm | Grislis}}
+|{{PersonList|StephanP|Pietzsch|Rueden|Schindelin|Bdezonia|hinerm|Grislis}}
 |[[ImgLib2]]
 |- valign="top"
 | style="white-space: nowrap" | 2013 Sep 9 -<br>2013 Sep 13
 |[http://www.pasteur.fr/en Institut Pasteur]<br>Paris France
-|{{PersonList | Pietzsch | JeanYvesTinevez}}
+|{{PersonList|Pietzsch|JeanYvesTinevez}}
 |[[MaMuT]], [[BigDataViewer]]
 |- valign="top"
 | style="white-space: nowrap" | 2013 Nov 14 -<br>2013 Nov 27
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|{{PersonList | Dietzc | Schindelin | Rueden}}
+|{{PersonList|Dietzc|Schindelin|Rueden}}
 |[[KNIME]]+[[ImageJ]]
 |- valign="top"
 | style="white-space: nowrap" | [[2014-04-04 - Announcing ImageJ Ops|2014 Mar 4 -<br>2014 Mar 13]]
 |[http://www.uni-konstanz.de/en/welcome/ Universität Konstanz]<br>Konstanz, Germany
-|{{PersonList | Rueden | Schindelin | Dietzc | hornm}}
+|{{PersonList|Rueden|Schindelin|Dietzc|hornm}}
 |[[ImageJ Ops]]
 |- valign="top" |
 | style="white-space: nowrap" | 2014 Mar 11 -<br>2014 Mar 13
 |[https://www.facebook.com/heimathafenWiesbaden Heimathafen]<br>Wiesbaden, Germany
-|{{PersonList | Moore | Rueden}}
+|{{PersonList|Moore|Rueden}}
 |{{GitHub|org=imagej|repo=imagej-omero|label=ImageJ-OMERO}}
 |- valign="top"
 | style="white-space: nowrap" | 2014 Mar 20 -<br>2014 Mar 21
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|{{PersonList | jburel | pwalczysko | Rueden}}
+|{{PersonList|jburel|pwalczysko|Rueden}}
 |{{GitHub|org=imagej|repo=imagej-omero|label=ImageJ-OMERO}}
 |- valign="top"
 | style="white-space: nowrap" | 2014 Jul 7 -<br>2014 Jul 10
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|{{PersonList | marktsuchida | ChrisWeisiger | Schindelin | stuyvenberg | Rueden | hinerm}}
+|{{PersonList|marktsuchida|ChrisWeisiger|Schindelin|stuyvenberg|Rueden|hinerm}}
 |[https://micro-manager.org/ Micro-Manager] and [http://openspim.org/ OpenSPIM]
 |- valign="top"
 | style="white-space: nowrap" | [[2014-10-01 - ImageJ Ops Hackathon|2014 Sep 14 -<br>2014 Sep 18]]
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|{{PersonList | Dietzc | bnorthan | hinerm | Rueden | apal4 | yuminguw | Awalter2 | Ginger Pocock}}
+|{{PersonList|Dietzc|bnorthan|hinerm|Rueden|apal4|yuminguw|Awalter2|Ginger Pocock}}
 |[[ImageJ Ops]] + [[KNIME]]
 |- valign="top"
 |2014 Oct 13 -<br>2014 Oct 17
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|{{PersonList | Pietzsch | StephanP | Saalfeld | Schindelin | Rueden | hinerm}}
+|{{PersonList|Pietzsch|StephanP|Saalfeld|Schindelin|Rueden|hinerm}}
 |[[ImgLib2]]
 |- valign="top"
 |2015 Jan 19 -<br>2015 Jan 27
 |[http://www.freiraeume-kn.de/standort.htm FREIRÄUME]<br>Konstanz, Germany
-|{{PersonList | Dietzc | Rueden | hinerm | LeeKamentsky | Pietzsch | Jug | Schindelin | Iarganda | gab1one | seebacherd | kmader | angrauma | Squareys | tibuch | patrick-winter-knime | AndreasBurger | Tobias Kötter}}
+|{{PersonList|Dietzc|Rueden|hinerm|LeeKamentsky|Pietzsch|Jug|Schindelin|Iarganda|gab1one|seebacherd|kmader|angrauma|Squareys|tibuch|patrick-winter-knime|AndreasBurger|Tobias Kötter}}
 |[[ImageJ Ops]] + [[KNIME]] + [[CellProfiler]] + more
 |- valign="top"
 | style="white-space: nowrap" | 2015 Apr 12 -<br>2015 Apr 17
 |[http://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
-|{{PersonList | StephanP | Pietzsch | Saalfeld | Tomancak}}
+|{{PersonList|StephanP|Pietzsch|Saalfeld|Tomancak}}
 |[[Multiview-Reconstruction]] and [[BigDataViewer]]
 |- valign="top"
 | style="white-space: nowrap" | 2015 June 29 -<br>2015 July 3
 |[https://www.mdc-berlin.de/13800178/en/bimsb BIMSB/MDC]<br>Berlin, Germany
-|{{PersonList | StephanP | Dietzc | emmenlau | StephanJanosch}}
+|{{PersonList|StephanP|Dietzc|emmenlau|StephanJanosch}}
 |Parallelization of [[Multiview-Reconstruction]]<br>and integration with ImageJ Ops & KNIME
 |- valign="top"
 | style="white-space: nowrap" | [[2015-07-27 - Janelia Hackathon|2015 Jul 27 -<br>2015 Jul 31]]
 |[http://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
-|{{PersonList | Saalfeld | Rueden | hinerm | Pietzsch | tomka | bhoeckendorf | fernandoamat | Phillip Keller}}
+|{{PersonList|Saalfeld|Rueden|hinerm|Pietzsch|tomka|bhoeckendorf|fernandoamat|Phillip Keller}}
 |[[SCIFIO]] performance and generality
 |- valign="top"
 | style="white-space: nowrap" | [[Conference 2015 Hackathon|2015 Sep 05 -<br>2015 Sep 15]]
 |[http://discovery.wisc.edu/ WID] + [[LOCI]]<br>Madison, WI, USA
-|{{PersonList | Rueden | hinerm | Dietzc | Pietzsch | Saalfeld | bnorthan | Jug | thewtex | jaywarrick | Tiago | biovoxxel | etarena | Awalter2 | LeonYang5114 | yuminguw | guneetsinghmehta | Bio7 | kbellve | Akramhar | Omsai | marktsuchida | ChrisWeisiger}}
+|{{PersonList|Rueden|hinerm|Dietzc|Pietzsch|Saalfeld|bnorthan|Jug|thewtex|jaywarrick|Tiago|biovoxxel|etarena|Awalter2|LeonYang5114|yuminguw|guneetsinghmehta|Bio7|kbellve|Akramhar|Omsai|marktsuchida|ChrisWeisiger}}
 |[[ImageJ2]] Learnathon + [[ImageJ Ops]]
 |- valign="top"
 | style="white-space: nowrap" | [[2016-01-29 - KNIME Image Processing hackathon|2016 Jan 12 -<br>2016 Jan 22]]
 |[https://www.knime.org/contact KNIME Konstanz Regional Office]<br>Konstanz, Germany
-|{{PersonList | Dietzc | Rueden | Hinerm | hornm | Pietzsch | Jug | royerloic | skalarproduktraum | Haesleinhuepf | Stelfrich | kmader | Kharrington | Eglinger | drtjre | tibuch | Squareys | seebacherd | patrick-winter-knime | AlexanderFillbrunn | Nico Hoffmann | Timo Sachsenberg | Julianus Pfeuffer | Temesgen H. Dadi}}
+|{{PersonList|Dietzc|Rueden|Hinerm|hornm|Pietzsch|Jug|royerloic|skalarproduktraum|Haesleinhuepf|Stelfrich|kmader|Kharrington|Eglinger|drtjre|tibuch|Squareys|seebacherd|patrick-winter-knime|AlexanderFillbrunn|Nico Hoffmann|Timo Sachsenberg|Julianus Pfeuffer|Temesgen H. Dadi}}
 |[[KNIME]] Image Processing
 |- valign="top"
 | style="white-space: nowrap" | [[2016-06-23 - ImgLib2 hackathon|2016 Jun 19 -<br>2016 Jun 28]]
 |[http://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
-|{{PersonList | Saalfeld | Pietzsch | Rueden | Dietzc | Kharrington}}
+|{{PersonList|Saalfeld|Pietzsch|Rueden|Dietzc|Kharrington}}
 |Metadata rich images
 |- valign="top"
 | style="white-space: nowrap" | [[2016-07-21 - KNIME Image Processing hackathon|2016 Jul 5 -<br>2016 Jul 14]]
 |[https://www.knime.org/contact KNIME Konstanz Regional Office]<br>Konstanz, Germany
-|{{PersonList | Dietzc | patrick-winter-knime | Pietzsch | skalarproduktraum | Rueden | hornm | Stelfrich | Kharrington | Rdom | kmader | AndreasBurger | MarcelWiedenmann | SimonSchmid | irrwitz | Squareys | AlexanderFillbrunn | Eglinger | tibuch | StefanoWoerner | cmongis | hoerldavid | Nico Hoffmann}}
+|{{PersonList|Dietzc|patrick-winter-knime|Pietzsch|skalarproduktraum|Rueden|hornm|Stelfrich|Kharrington|Rdom|kmader|AndreasBurger|MarcelWiedenmann|SimonSchmid|irrwitz|Squareys|AlexanderFillbrunn|Eglinger|tibuch|StefanoWoerner|cmongis|hoerldavid|Nico Hoffmann}}
 |[[KNIME]] Image Processing + 3D viz
 |- valign="top"
 | style="white-space: nowrap" | [[2016-12-20 - Fiji + KNIP hackathon|2016 Dec 6 -<br>2016 Dec 16]]
 |[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
-|{{PersonList | Jug | Pietzsch | Tomancak | Rueden | Saalfeld | hanslovsky | kephale | rimadoma | tinevez | dietzc | patrick-winter-knime | skalarproduktraum | royerloic | Haesleinhuepf | hkmoon | tibuch | MarcelWiedenmann | hoerldavid | milkyklim | maarzt | xulman | Chaubold | Jonas Massa}}
+|{{PersonList|Jug|Pietzsch|Tomancak|Rueden|Saalfeld|hanslovsky|kephale|rimadoma|tinevez|dietzc|patrick-winter-knime|skalarproduktraum|royerloic|Haesleinhuepf|hkmoon|tibuch|MarcelWiedenmann|hoerldavid|milkyklim|maarzt|xulman|Chaubold|Jonas Massa}}
 |[[Fiji]] & [[KNIP]]
 |- valign="top"
 |2017 Jun 7 -<br>2017 Jun 14
 |[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
-|{{PersonList | dietzc | Rueden}}
+|{{PersonList|dietzc|Rueden}}
 |[[ImageJ Ops]]
 |- valign="top"
 | style="white-space: nowrap" | [[2017-09-25 - KNIME Image Processing hackathon|2017 Sep 20 -<br>2017 Sep 29]]
 |[https://www.knime.org/contact KNIME Konstanz Regional Office]<br>Konstanz, Germany
-|{{PersonList | dietzc | maarzt | tibuch | imagejan | gab1one | AlexanderFillbrunn | Jon Fuller | Squareys | Chaubold | stelfrich | hornm | fjug | Treiblesschorle | milkyklim | kmader | Julianus Pfeuffer | tpietzsch | mp007 | StephanPreibisch | Jonas Probst | René Rahn | ctrueden | SimonSchmid | frauzufall | xulman | MarcelWiedenmann | HedgehogCode | patrick-winter-knime}}
+|{{PersonList|dietzc|maarzt|tibuch|imagejan|gab1one|AlexanderFillbrunn|Jon Fuller|Squareys|Chaubold|stelfrich|hornm|fjug|Treiblesschorle|milkyklim|kmader|Julianus Pfeuffer|tpietzsch|mp007|StephanPreibisch|Jonas Probst|René Rahn|ctrueden|SimonSchmid|frauzufall|xulman|MarcelWiedenmann|HedgehogCode|patrick-winter-knime}}
 |[[KNIME]] Image Processing, [[ImageJ Ops]], [http://ilastik.org/ Ilastik]
 |- valign="top"
 | style="white-space: nowrap" | 2017 Oct 17 -<br>2017 Oct 18
 |[https://health.uconn.edu/ UConn Health]<br>Farmington, CT, USA
-|{{PersonList | jcschaff | Rueden}}
+|{{PersonList|jcschaff|Rueden}}
 |[[Virtual Cell]] + [[ImageJ]]
 |- valign="top"
 | style="white-space: nowrap" | [[2017-12-04 - Fiji + KNIP hackathon|2017 Dec 4 -<br>2017 Dec 15]]
 |[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
-|{{PersonList | Jug | Pietzsch | Tomancak | Rueden | hanslovsky | kephale | rimadoma | tinevez | dietzc | skalarproduktraum | royerloic | Haesleinhuepf | hkmoon | tibuch | MarcelWiedenmann | hoerldavid | milkyklim | maarzt | xulman | Chaubold | Pbainar | Awalter2}}
+|{{PersonList|Jug|Pietzsch|Tomancak|Rueden|hanslovsky|kephale|rimadoma|tinevez|dietzc|skalarproduktraum|royerloic|Haesleinhuepf|hkmoon|tibuch|MarcelWiedenmann|hoerldavid|milkyklim|maarzt|xulman|Chaubold|Pbainar|Awalter2}}
 |[[Fiji]] & [[KNIP]]
 |- valign="top"
 | style="white-space: nowrap" | 2018 Apr 22 -<br>2018 May 2
 |University of Idaho<br>Moscow, ID, USA
-|{{PersonList | Kharrington | Saalfeld | Dietzc | Rueden | Maarzt | Pietzsch | royerloic | Bnorthan | skalarproduktraum | marktsuchida | Robert Wiese}}
+|{{PersonList|Kharrington|Saalfeld|Dietzc|Rueden|Maarzt|Pietzsch|royerloic|Bnorthan|skalarproduktraum|marktsuchida|Robert Wiese}}
 |[[SciView]]
 |-
 |colspan="4" style="border-bottom: 1px solid gray"|
