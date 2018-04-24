@@ -47,4 +47,11 @@ The launcher can do all kinds of things, like:
 
 The launcher comes with ImageJ1, ImageJ2 and Fiji.
 
-But up-to-date versions can always be [http://jenkins.imagej.net/job/ImageJ-launcher/ downloaded from Jenkins] if you like.
+If you want to test the latest UNSTABLE version, it can downloaded here:
+
+{|
+| [[Image:Win.png | alt=Windows (32-bit) | link=http://maven.imagej.net/service/local/artifact/maven/redirect?r=snapshots&g=net.imagej&a=imagej-launcher&v=LATEST&e=exe&c=win32 | x24px]] [http://maven.imagej.net/service/local/artifact/maven/redirect?r=snapshots&g=net.imagej&a=imagej-launcher&v=LATEST&e=exe&c=win32 ImageJ-win32.exe]
+| [[Image:Win.png | alt=Windows (64-bit) | link=http://maven.imagej.net/service/local/artifact/maven/redirect?r=snapshots&g=net.imagej&a=imagej-launcher&v=LATEST&e=exe&c=win64 | x24px]] [http://maven.imagej.net/service/local/artifact/maven/redirect?r=snapshots&g=net.imagej&a=imagej-launcher&v=LATEST&e=exe&c=win64 ImageJ-win64.exe]
+| [[Image:Osx.png | alt=MacOS | link=http://maven.imagej.net/service/local/artifact/maven/redirect?r=snapshots&g=net.imagej&a=imagej-launcher&v=LATEST&e=exe&c=macosx | x24px]] [http://maven.imagej.net/service/local/artifact/maven/redirect?r=snapshots&g=net.imagej&a=imagej-launcher&v=LATEST&e=exe&c=macosx ImageJ-macosx]
+| [[Image:Tux.png | alt=Linux (64-bit) | link=http://maven.imagej.net/service/local/artifact/maven/redirect?r=snapshots&g=net.imagej&a=imagej-launcher&v=LATEST&e=exe&c=linux64 | x24px]] [http://maven.imagej.net/service/local/artifact/maven/redirect?r=snapshots&g=net.imagej&a=imagej-launcher&v=LATEST&e=exe&c=linux64 ImageJ-linux64]
+|}
