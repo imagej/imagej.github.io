@@ -55,3 +55,5 @@ If you want to test the latest UNSTABLE version, it can downloaded here:
 | [[Image:Osx.png | alt=MacOS | link=http://maven.imagej.net/service/local/artifact/maven/redirect?r=snapshots&g=net.imagej&a=imagej-launcher&v=LATEST&e=exe&c=macosx | x24px]] [http://maven.imagej.net/service/local/artifact/maven/redirect?r=snapshots&g=net.imagej&a=imagej-launcher&v=LATEST&e=exe&c=macosx ImageJ-macosx]
 | [[Image:Tux.png | alt=Linux (64-bit) | link=http://maven.imagej.net/service/local/artifact/maven/redirect?r=snapshots&g=net.imagej&a=imagej-launcher&v=LATEST&e=exe&c=linux64 | x24px]] [http://maven.imagej.net/service/local/artifact/maven/redirect?r=snapshots&g=net.imagej&a=imagej-launcher&v=LATEST&e=exe&c=linux64 ImageJ-linux64]
 |}
+
+After download, rename to match the filename given above. For MacOS and Linux binaries, set the executable bit using <code>chmod +x</code>. Then replace the launcher with the new one, keeping a backup of the previous launcher in case the new one does not work.
