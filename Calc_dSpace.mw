@@ -22,3 +22,7 @@ The preferred image is a .dm3 file (Gatan’s format) that is properly calibrate
 >>> Another way to verify your image calibrations have been done properly is to call up the image info window in imageJ (just type the letter “i”) and look for a line like this: ''root.ImageList.1.ImageData.Calibrations.Dimension.0.Units = 1/nm''. If it = nm, then it won’t work.
 
 >>> You can enable a somewhat useful text window that summarizes your results by opening up the plugin in a text editor and delete the leading slashes on line 40.
+
+== Gallery ==
+
+[[File:Fig_1.jpg|center|2144*1141px]]
