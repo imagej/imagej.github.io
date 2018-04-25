@@ -1,13 +1,24 @@
-== Introduction ==
 
-This plugin can be used to quickly calculate the interplanar spacing values <math>d_{hkl}</math> directly within imageJ without copying the results table to another program like Excel.
+== Overview ==
 
-== Making Measurements ==
+This plugin can be used to quickly calculate the interplanar spacing values d_{hkl} directly within imageJ without copying the results table to another program like Excel to then convert measurements into d-values, which saves you time. It is also remarkably easy to use, accurate, and robust for both spot and ring electron diffraction patterns.
 
-Best practices for measuring spots or rings is to use imageJ's Oval tool while holding down the SHIFT key. This effectively makes for a Circle tool. Click and hold on a spot or ring and drag the circle to the other side of the direct spot. Using a circle instead of a line allows you to utilize the whole diffraction pattern instead of two diffraction spots, and helps you measure about the center of the DP. 
+== How it works ==
 
-When you tap the "m" key to make a measurement, the area should be recorded. If you don't have this enabled you can just run the ''calc dSpace'' plugin once, and it will set up imageJ to record the Area and central position of the circle. Next time you make a measurement, these values will be measured. Once you have enough rings or spots measured, you can run the plugin and it calculates the scalar component of the G vector in reciprocal units, and the d-spacing in Angstroms.
+Use imageJ’s circle tool (shift + oval tool) to measure the spot/ring patterns concentric to the (000) direct beam. From the area measurement, the radius (G) is found. From G = 1/d in reciprocal space, the d-spacing is calculated for each measurement made. The calculated values for G and d are added to the imageJ Results window in new columns. You might have to try it once before it works right, so it sets the measurements in imageJ to measure the area and centroid of the circle.
 
 == Image Requirements ==
 
-Coming soon...
+You need to have a properly calibrated diffraction pattern for the calculations to work right. Most TEM operators use Gatan’s Digital Micrograph software for image collection. If you are using DM then it is likely that this plugin will work right away on your images, or will work with some minor effort on the part of your TEM technician. 
+
+The preferred image is a .dm3 file (Gatan’s format) that is properly calibrated in reciprocal space (see Gatan’s documentation). The easiest way to check this is that the scale bar in your images is displayed in DM with 1/nm units.
+
+== Tips ==
+
+>>> If you hold down both control and shift while clicking on one of the white squares on the circle and dragging, the circle expands and contracts concentrically.
+
+>>> The centroid is there to display the x and y position of the center of the circles you are drawing. Use it to make sure it is at the center of the direct spot (000), and that it stays there throughout your measurements.
+
+>>> Another way to verify your image calibrations have been done properly is to call up the image info window in imageJ (just type the letter “i”) and look for a line like this: ''root.ImageList.1.ImageData.Calibrations.Dimension.0.Units = 1/nm''. If it = nm, then it won’t work.
+
+>>> You can enable a somewhat useful text window that summarizes your results by opening up the plugin in a text editor and delete the leading slashes on line 40.
