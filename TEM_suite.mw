@@ -1,0 +1,7 @@
+This is a suite of TEM plugins for FIJI that are designed for the graduate research assistant that is constantly indexing electron diffraction patterns for his or her research. There are three plugins so far that should be useful:
+1. [[calc dSpace|calc dSpace]] is a simple way to find interplanar spacing values in imageJ.
+2. [[get dSpace|get dSpace]] is a more accurate and advanced way of finding d-spacing.
+3. [[pub Montage|pub Montage]] is a high quality montaging plugin designed for figure submission to a peer review journal.
+
+== Getting Started ==
+Coming Soon
