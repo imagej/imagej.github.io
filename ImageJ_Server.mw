@@ -14,13 +14,9 @@ Client software can:
 
 == Installation ==
 
-Coming soon.
-
-<!--
 * [[Following an update site|Enable]] the Server [[update site]].
-* Control the server from the {{bc | Plugins | Utilities | Image Server}} menu.
+* Start the server via the {{bc | Plugins | Utilities | Start Server}} command.
 * Or launch ImageJ in server mode using the <code>--server</code> flag.
--->
 
 == Documentation ==
 
