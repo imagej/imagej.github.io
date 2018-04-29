@@ -1,7 +1,18 @@
-This is a suite of TEM plugins for FIJI that are designed for the graduate research assistant who is constantly indexing electron diffraction patterns for his or her research. Included in the suite are:
+This is a suite of TEM plugins for FIJI that are designed for the Electron Microscipist who is constantly indexing electron diffraction patterns. Included in the suite are:
 # [[calc dSpace|calc dSpace]] is a simple way to find interplanar spacing values in imageJ.
 # [[get dSpace|get dSpace]] is a more accurate and advanced way of finding d-spacing.
 # [[pub Montage|pub Montage]] is a high quality montaging plugin designed for figure submission to a peer review journal.
 
 == Getting Started ==
-Coming Soon
+* Installation via FIJI updater:
+# ''Help'' > ''Update''
+# Click the ''Manage update sites'' button in the ImageJ Updater Window.
+# In the new widow scroll down to the TEM suite entry and check the box in the left hand column.
+# Close the ''Manage Update Sites'' window and click the ''Apply Changes'' button on the ImageJ Updater Window.
+
+This will install the plugin in a plugin/sripts/TEM folder, which has the advantage of creating it's own menu item in ImageJ, so you don't have to go hunting for it in the massive Plugins menu.
+
+* Manual Installation:
+# The actual scripts text can be viewed on the [[http://sites.imagej.net/Makoten/plugins/Scripts/TEM/ update site]] if you click on the plugin you want.
+# Copy the text of the desired plugin into a file and save it wherever you wish to save it in ImageJ.
+# Restart ImageJ.
