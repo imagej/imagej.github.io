@@ -13,6 +13,8 @@ This is a suite of TEM plugins for FIJI that are designed for the Electron Micro
 This will install the plugin in a plugin/sripts/TEM folder, which has the advantage of creating it's own menu item in ImageJ, so you don't have to go hunting for it in the massive Plugins menu.
 
 * Manual Installation:
-# The actual scripts text can be viewed on the [[http://sites.imagej.net/Makoten/plugins/Scripts/TEM/ update site]] if you click on the plugin you want.
-# Copy the text of the desired plugin into a file and save it wherever you wish to save it in ImageJ.
+# The text of these scripts can be viewed on the [http://sites.imagej.net/Makoten/plugins/Scripts/TEM/ update site] 
+# Click on the plugin you want.
+# Copy the text of the desired plugin and paste it into a blank file in imageJ.
+# Save it wherever you wish to access the file with a .ijm file extension.
 # Restart ImageJ.
