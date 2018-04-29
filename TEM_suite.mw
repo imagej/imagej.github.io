@@ -7,7 +7,7 @@ This is a suite of TEM plugins for FIJI that are designed for the Electron Micro
 * Installation via FIJI updater:
 # ''Help'' > ''Update''
 # Click the ''Manage update sites'' button in the ImageJ Updater Window.
-# In the new widow scroll down to the TEM suite entry and check the box in the left hand column.
+# In the Manage update sites widow scroll down to the '''TEM suite''' entry and check the box in the left hand column.
 # Close the ''Manage Update Sites'' window and click the ''Apply Changes'' button on the ImageJ Updater Window.
 
 This will install the plugin in a plugin/sripts/TEM folder, which has the advantage of creating it's own menu item in ImageJ, so you don't have to go hunting for it in the massive Plugins menu.
