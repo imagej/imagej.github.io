@@ -4,7 +4,7 @@
 | name            = MyofribilJ
 | maintainer      = {{Person|Gcardone}}
 | author          = {{Person|Gcardone}} and Maria Spletter
-| source          = [https://github.com/giocard/MyofibrilJ on GitHub]
+| source          = {{GitHub|org=giocard|repo=MyofibrilJ }}
 | released        = November 2017
 | category        = [[:Category:Analysis|Analysis]], [[:Category:Scripting|Scripting]], [[:Category:Plugins|Plugins]]
 }}
