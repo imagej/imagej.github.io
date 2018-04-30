@@ -15,7 +15,7 @@ The MyofibrilJ plugin provides two scripts to analyse fibril morphology. Given a
 == Usage ==
 Two distinct commands, ''analyse myofibrils crosswise'' and ''analyse myofibrils lengthwise'', are provided to analyse cross-sections and longitudinal sections of fibers, respectively.
 In both cases:
-* open one or more images to analyse, all of them displaying either longitudinal or cross sections of fibrils
+* open one or more images to analyse, all of them displaying either only longitudinal or only cross sections of fibrils
 * for each multi-channel or stack image, display the slice and the channel of interest. Optionally, draw a ROI to focus on a portion of the image (recommended to exclude empty regions)
 * launch the script specific for the images displayed 
 The script will process all the images and generate a table with results, along with some control images
@@ -34,7 +34,15 @@ An initial estimate of the diameter of the fibrils is obtained by finding the fi
 == References ==
 
 == Installation ==
-The easiest way to install ''MyofibrilJ'' is by first [[Following_an_update_site#Add_update_sites|adding]] the update site, by clicking the ''Add update site'' button in the site management dialog button and filling in the name of your choice for the site and http://sites.imagej.net/MyofibrilJ/ for the URL, and then by subscribing to it.
+The easiest way to install ''MyofibrilJ'' is by [[Following_an_update_site#Add_update_sites|adding]] its update site. Specifically:
+* launch Fiji and go to the menu ''Help/Update...''
+* once the dialog window ''ImageJ Updater'' is opened, click on the ''Manage update sites'' button
+*  click on the ''Add update site'' button in the site management dialog, and a new, empty line will appear at the end of the list
+* in the column ''Name'', fill in a name of your choice, e.g. Myofibril
+* in the column ''URL'', type http://sites.imagej.net/MyofibrilJ/
+* mark the check button at the beginning of the line, in order to subscribe
+* click on the ''Close'' button and then on ''Apply changes''
+* after the update process is completed, close Fji and reopen it. From the main menu you can now select ''MyofibrilJ'' and launch one of the scripts available.
 
 == License ==
 
