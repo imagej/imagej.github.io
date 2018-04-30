@@ -203,6 +203,9 @@ Imagej.app/jars/Lib/
 
 The advantage of this approach is that you can share your packages easily. For example you can upload the JAR file to an [[Update_Sites|update site]].
 
+NB : Script implementing "ImageJ menu macro" and "utilitary scripts" that are used as imported modules in other macros should be packed in separate jar files ! Indeed, if not explicitly mentioned, the jython interpreter only looks in the Jars/Lib folder to import module, so the .jar containing the "utilitary scripts" should be put there, while the jar containing the "ImageJ menu macro" can be put either in the Plugin or script/Plugin folder. However the scripts contained in this second jar will not be visible by the Jython interpreter.
+This is the reason why a given project is rather distributed in 2 different jar files as explained [http://forum.imagej.net/t/using-self-written-jython-modules-in-imagej/2280 here].  
+  
 === Using maven to build packages ===
 
 Using maven you can automate the packaging of Jython code into JAR files. This approach is only recommended if you already use maven, as installing and learning how to use maven is not worth the time saving of automated packaging.
