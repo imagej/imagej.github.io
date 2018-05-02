@@ -6,7 +6,7 @@ PSFs can be be calculated theoretically, but this requires exact modeling of you
 
 Functions for assigning PSFs to images and managing PSFs can be found in '''MultiView mode''' in the right-click menu under {{bc|Processing|Point Spread Functions}}.
 
-'''TODO: img of menu'''
+[[File:BigStitcher_psf_menu.png|center|500px]]
 
 == PSF management ==
 
@@ -16,7 +16,7 @@ Functions for assigning PSFs to images and managing PSFs can be found in '''Mult
 
 '''Extracting''' PSFs is the process of taking previously [[BigStitcher_Interest_points|detected interest points]] and creating PSFs from them. Clicking this menu entry will bring up the PSF extraction dialog:
 
-'''TODO: img of extraction dialog'''
+[[File:BigStitcher_psf_extraction.png|center|500px]]
 
 Here, you have a few options:
 
@@ -36,7 +36,7 @@ The '''Assign PSF''' sub-menu contains functions for assigning '''existing PSFs'
 
 It also contains an '''Advanced...''' option allowing for more flexible re-assignment and loading of external PSFs from files. Clicking this will bring up the following dialog:
 
-'''Img: advanced dialog'''
+[[File:BigStitcher_psf_assignment_advanced.png|center|500px]]
 
 The options here are:
 
