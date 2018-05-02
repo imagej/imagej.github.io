@@ -31,15 +31,41 @@ Click '''OK''' to turn the selected interest points into PSFs. This will generat
 
 
 === Assigning PSFs ===
+
+The '''Assign PSF''' sub-menu contains functions for assigning '''existing PSFs''' to the selected Images. It contains a '''Assign from view''' entry that allows you to quickly assign the PSF of one view to all selected views.
+
+It also contains an '''Advanced...''' option allowing for more flexible re-assignment and loading of external PSFs from files. Clicking this will bring up the following dialog:
+
+'''Img: advanced dialog'''
+
+The options here are:
+
+*'''Assign existing PSF to all selected views''': After selecting this, you will be asked for one view in the next step. The PSF from this view will be assigned to all selected views (same as the quick assign in the menu).
+*'''Assign new PSF to all selected views''': After selecting this, you will be asked for a '''PSF file''' in the next step. The PSF in that file will be assigned to all selected views. The PSF files have to be 3D TIFF stacks with odd dimension sizes and the center of the PSF at the center of the image.
+*'''Duplicate PSFs from other channel''': After selecting this, you will be asked for a source and target channsel. For all selected views of the '''target''' channel, we will assign the PSF from the corresponding view in the '''source''' channel.
+*'''Duplicate PSFs from other timepoint''': After selecting this, you will be asked for a timepoint. For all selected views, we will select the corresponding view at the selected timepoint and copy the PSF of that view.
+
+
 === Averaging PSFs ===
+
+You can use this sub-menu to replace the individual PSFs of the selected views by their average PSF or simply display the averaged PSF. The available options are:
+
+*'''Display only''': display the average PSF of the selected views as an ImageJ image.
+*'''Display only (remove Min Projections)''': display the average PSF of the selected views as an ImageJ image, subtract minimum intensity projections from the average (see above).
+*'''Assign to all input views''': average the PSFs of all selected views and assign the average PSF to all of them.
+*'''Assign to all input views (remove Min Projections)''': average the PSFs of all selected views and assign the average PSF to all of them, subtract minimum intensity projections from the average (see above).
+*'''Display & assign to all input views''': average the PSFs of all selected views and assign the average PSF to all of them and also display the resulting PSF in ImageJ.
+*'''Display & assign to all input views (remove Min Projections)''': average the PSFs of all selected views and assign the average PSF to all of them, subtract minimum intensity projections from the average (see above). Also display the resulting PSF in ImageJ.
+
+
 === Displaying PSFs ===
 
 You can use the function in this sub-menu to quickly display your PSFs as ImageJ images. The available options are:
 
-*'''Raw PSF''': show the raw PSF for each selected view.
-*'''Raw PSF''': show the raw PSF for each selected view.
-*'''Raw PSF''': show the raw PSF for each selected view.
-*'''MIP of averaged PSF''': show the raw PSF for each selected view.
-*'''Raw PSF''': show the raw PSF for each selected view.
+*'''Raw PSF for each view''': show the raw PSF for each selected view.
+*'''Averaged PSF''': show averaged PSF of all selected views.
+*'''Averaged transformed PSF''': show averaged PSF of all selected views, with the individual PSFs transformed to world coordinates according to the registrations of the views.
+*'''Maximum Projection of averaged PSF''': show a Maximum intensity projection of the averaged PSF of all selected views. Note that the projection will be done '''along the smallest (px) axis of the PSF'''.
+*'''Maximum Projection of averaged transformed PSF''': show a maximum intensity projection of the averaged PSF transformed to world coordinates according to the view registrations.
 
 Go back to the [[BigStitcher#Documentation|main page]]
