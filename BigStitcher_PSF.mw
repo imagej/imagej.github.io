@@ -6,15 +6,40 @@ PSFs can be be calculated theoretically, but this requires exact modeling of you
 
 Functions for assigning PSFs to images and managing PSFs can be found in '''MultiView mode''' in the right-click menu under {{bc|Processing|Point Spread Functions}}.
 
-'''TODO: img'''
+'''TODO: img of menu'''
 
 == PSF management ==
 
+
+
 === Extracting PSFs ===
 
+'''Extracting''' PSFs is the process of taking previously [[BigStitcher_Interest_points|detected interest points]] and creating PSFs from them. Clicking this menu entry will bring up the PSF extraction dialog:
 
-'''TODO: img'''
+'''TODO: img of extraction dialog'''
+
+Here, you have a few options:
+
+*'''Interest Points''': which interest points to use for PSF creation.
+*'''Use corresponding interest points''': check this to only use interest points that have a correspondence in another image. This only works if you have already performed [[BigStitcher_Registration|registration]] with those points. This is useful to quickly exclude spurious detections, but for the best results, you might want to [[BigStitcher_Interest_point_management#Remove_interactively|manually curate a set of points that only consists of beads]].
+*'''Remove min intensity projection from PSF''': check this to remove the minimal intensity projection (thrice, in x, y and z) from the resulting averaged PSF. This should reduce background noise.
+*'''PSF size''': the volume (in raw image pixels) to cut around the interest points for PSF generation. The default typically works well for reasonably sampled images, but you might want to increase the size if you have oversampling.
+
+Click '''OK''' to turn the selected interest points into PSFs. This will generate a single PSF for all selected views (the interest points in each view will be averaged).
+
+{{Notice|We will save the extracted PSFs as TIFF files in your project directory once you click '''Save''' in the main window. This is necessary for subsequent steps such as deconvolution, so make sure to save.}}
+
 
 === Assigning PSFs ===
 === Averaging PSFs ===
 === Displaying PSFs ===
+
+You can use the function in this sub-menu to quickly display your PSFs as ImageJ images. The available options are:
+
+*'''Raw PSF''': show the raw PSF for each selected view.
+*'''Raw PSF''': show the raw PSF for each selected view.
+*'''Raw PSF''': show the raw PSF for each selected view.
+*'''MIP of averaged PSF''': show the raw PSF for each selected view.
+*'''Raw PSF''': show the raw PSF for each selected view.
+
+Go back to the [[BigStitcher#Documentation|main page]]
