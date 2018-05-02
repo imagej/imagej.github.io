@@ -78,14 +78,15 @@ If you specify more than one layer in z, the x and y pattern will be repeated fo
 
 After you have assigned attributes to the images in your dataset, you will be presented with option for how you want to load the data.
 
-If you tick '''Use virtual images (cached)''', images will be loaded plane-by-plane as-needed. This is useful if you want to have a quick look at a very large dataset, but will come with a slight performance hit. We recommend to re-save the dataset as multi-resolution HDF5 as you start to work on it (this can be done later on as well).
+Under '''how to load images''', you can choose how to load your dataset:
+* If you select '''Load raw data''', images will be fully loaded every time you access them. You can use this for small datasets, but for large datasets this can become prohibitively slow.
+* If you select '''Load raw data virtually (with caching)''', images will be loaded plane-by-plane as-needed (with caching of previously loaded planes if you have enough memory). This is useful if you want to have a quick look at a very large dataset, but will come with a slight performance hit. We recommend to re-save the dataset as multi-resolution HDF5 as you start to work on it (this can be done later on as well).
+* You can also choose to '''Re-save as multiresolution HDF5''' immediately. We recommend you do this unless you just want to have a quick look at the data. The data can also be resaved as multiresolution HDF5 later on. 
 
 If your raw data are stored as multiple stacks per file, a bug in BioFormats will cause them to always have an equal number of z-slices. All stacks will have the size of the largest stack and smaller stacks will be filled up with zeroes.
 Ticking '''check stack sizes''' will cause BigStitcher to load all stacks and remove the zero-valued volume at the end of each stack.
 
 You will also be able to specify the '''dataset save path''', i.e. the directory the XML dataset definition (and HDF5 file if you choose to re-save immediately) will be saved to.
-
-Finally, you can opt to '''resave as HDF5''' immediately. We recommend you do this unless you just want to have a quick look at the data. The data can also be resaved as multiresolution HDF5 later on. 
 
 [[File:BigStitcherAutoLoader4.png|thumb|300px|Options for loading or re-saving the dataset.]]
 
