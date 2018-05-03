@@ -207,3 +207,5 @@ This section provide the main development directions as well as a list of functi
 * 2017-12-20 : version 0.1.0 , first public version of CIP is made available on CIP update site. The package is still under development
 
 * 2018-01-29 : version 0.1.1 , add a help function
+
+* 2018-05-03 : version 0.1.2 , minimal backcompatible updates of a few functions signatures for consistency. cip.show( handle*, region*, ...) becomes cip.show(region*, handle, ...), if no handle is provided region are shown on the current image. Update parameter name for create, slice and show function.
