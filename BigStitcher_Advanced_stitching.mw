@@ -14,10 +14,7 @@ We currently support three different ways of calculating pairwise shifts.
 
 == Advanced phase correlation ==
 
-First, 
-
 Next, you will be asked how to treat grouped views and which downsampling of the images to use. This is the same as in the simple mode, so please look [[BigStitcher_Pairwise_shift#Pairwise_shift_calculation|to the corresponding page]] for details.
-
 
 * '''number of peaks to check:''' the output of the Fourier-based phase correlation is a phase correlation matrix (PCM) with, ideally, a single intensity peak corresponding to the shift vector between the input images. However, due to noise, there might actually be multiple peaks in the PCM. Each peak can also correspond to multiple (8) shifts due to the circular nature of the phase correlation, so we have to verify all possible shifts by calculating the cross correlation of the shifted images to determine the correct one. We can do the verification for not just the highest PCM-peak, but the ''n'' highest peaks. This parameter specifies how many peaks to consider. Increasing it might improve results in very noisy images, but it will also increase the computation time. 
 * '''minimal overlap:''' when checking multiple possible shifts, we can immediately discard some of them if the resulting overlap is to big. You can increase this parameter to restrict the results to small shifts (minimal overlap of 100 would correspond to NO shift) if you already have a rough alignment of the views.
