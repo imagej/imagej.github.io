@@ -48,7 +48,7 @@ Finally, you will be asked for two parameters:
 
 Finally, you can use the interest point-based registration of the [[Multiview-Reconstruction]] to determine pairwise shifts. In the right-click menu, you can choose whether to do the alignment with '''new interest points''' or '''existing interest points''' (if they exist).
 
-First, you will be asked which views to include in the calculation and how to group them. See the [[BigStitcher_Advanced_stitching#Advanced_view_grouping|Advanced view grouping section below]] for details.
+Also in the menu, you can activate or deactivate '''Show expert grouping options'''. If it is activated, you will be asked which views to include in the calculation and how to group them. See the [[BigStitcher_Advanced_stitching#Advanced_view_grouping|Advanced view grouping section below]] for details.
 
 If you chose to detect new interest points, you will then have to proceed through the steps of interest point detection. Please refer to the [[BigStitcher_Interest_points|corresponding section]] of this Wiki for detailed instructions.
 
