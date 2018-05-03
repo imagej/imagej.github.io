@@ -38,6 +38,7 @@ If you opt for any of the '''iterative strategies''', you have to consider the t
 
 Note that '''both''' stopping conditions have to be met for the optimization to finish.
 
+* '''show expert grouping options''': click this to show expert grouping options in the next dialog (see below).
 [[File:BigStitcher_stitch_5.png|center|600px]]
 
 == Expert view grouping ==
