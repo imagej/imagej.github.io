@@ -29,17 +29,15 @@ Next, you will be asked how to treat grouped views and which downsampling of the
 
 The Lucas-Kanade Algorithm can align two images by iteratively minimizing the difference between them via Gradient descent an the transformation parameters. It can in theory be used for more complex transformation models, such as affine transforms, but at the moment, we restrict it to a simple translation. Lucas-Kanade tends to produce good, subpixel-accurate alignments. It requires, however, that the images '''are already roughly aligned''', otherwise the optimization often fails to determine the correct shift.  
 
-First, you will be asked which views to include in the calculation and how to group them. See the [[BigStitcher_Advanced_stitching#Advanced_view_grouping|Advanced view grouping section below]] for details.
+First, you will be asked for three parameters:
+
+* '''maximum iterations:''' how many Gradient descent iterations to run. You might want to increase this parameter if the prior alignment is far off (however, the method generally performs poorly in such cases) or if you set the minimum parameter change very low. If no optimum was found after the maximum iteration number, we consider the alignment to have failed and return no shift for the image pair.
+* '''minimum parameter change for convergence:''' the optimization will run until the change in length for the current estimate for the shift vector falls below this threshold (in pixels). Lower values might provide more accurate alignments but increase computation times.
+* '''show expert grouping options''': if you activate this, you will be asked which views to include in the calculation and how to group them in another dialog. See the [[BigStitcher_Advanced_stitching#Advanced_view_grouping|Advanced view grouping section below]] for details.
 
 Next, you will be asked how to treat grouped views and which downsampling of the images to use. This is the same as in the simple mode, so please look [[BigStitcher_Pairwise_shift#Pairwise_shift_calculation|to the corresponding page]] for details.
 
-Finally, you will be asked for two parameters:
-
-* '''maximum iterations:''' how many Gradient descent iterations to run. You might want to increase this parameter if the prior alignment is far off (however, the method generally performs poorly in such cases) or if you set the minimum parameter change very low. If no optimum was found after the maximum iteration number, we consider the alignment to have failed and return no shift for the image pair.
-* '''minimum parameter change for convergence:''' the optimization will run until the change in length for the current estimate for the shift vector falls below this threshold (in pixels). Lower values might provide more accurate alignments but increase computation times. 
-
 [[File:BigStitcher_stitch_advanced_lk.png|center|600px]]
-
 
 == Interest point-based shift calculation ==
 
