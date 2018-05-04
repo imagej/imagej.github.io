@@ -238,7 +238,7 @@ I16 = uint16(I);
 imp3 = ijmshow(I16,'XYCZT') % ImagePlus, 16-bit, 171x196x2x5x51 
 </source>
 
-[[File:Image003.png |250px]]
+[[File:Image003.png |150px]]
 
 = Source =
 
