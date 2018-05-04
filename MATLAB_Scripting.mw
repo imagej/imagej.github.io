@@ -177,7 +177,7 @@ log4j:WARN Please initialize the log4j system properly.
 
 The following Java commands work in MATLAB command window to open a sample image in ImageJ.
 
-<source>
+<source lang="matlab">
 imp = ij.IJ.openImage("http://imagej.nih.gov/ij/images/boats.gif");
 imp.show()
 </source>
@@ -186,7 +186,7 @@ imp.show()
 ==== Opening a MATLAB array as an image in ImageJ ====
 
 The following will open a MATLAB array data as an image in ImageJ. Note that the X and Y of the image is transposed in ImageJ in the second image (see Limitations of <code>IJM.show()</code> above).
-<source>
+<source lang="matlab">
 corn_gray = imread('corn.tif',3);
 imshow(corn_gray); % show in MATLAB
 IJM.show('corn_gray'); % show in ImageJ
@@ -199,7 +199,7 @@ IJM.show('corn_gray_tp'); % show in ImageJ properly
 [[File:corn_gray_transposed.png|250px]]
 
 A more general solution to this issue of X-Y transposition can be achieved by <code>permute</code> function of MATLAB. But please beware of [https://stackoverflow.com/questions/36065182/why-does-matlabs-permute-not-need-extra-memory memory demands by <code>permute</code>].
-<source>
+<source lang="matlab">
 % I is a MATLAB array with 2 or more dimensions
 order = [{2, 1}, num2cell(3:ndims(I))];
 I2 = permute(I,[order{:}]);
