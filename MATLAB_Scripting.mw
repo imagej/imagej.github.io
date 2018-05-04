@@ -100,7 +100,7 @@ Instead, you can [[#Running ImageJ within MATLAB|launch ImageJ inside MATLAB]] a
 The ImageJ update site provides an <code>ImageJ.m</code> script that will start up an ImageJ instance inside a running [[MATLAB]] application. Launching the script is the same as for [[Miji]]:
 
 <source lang="matlab">
-addpath('/Applications/Fiji.app/scripts') % Update for your ImageJ installation as appropriate
+addpath '/Applications/Fiji.app/scripts' % Update for your ImageJ installation as appropriate
 ImageJ;
 </source>
 
