@@ -168,6 +168,7 @@ The startup process automatically injects the ImageJ classpath into the [[MATLAB
 * <code>IJM</code> object is always added to the MATLAB base workspace. In order to access <code>IJM</code> methods from within a MATLAB function, you'll need to  use <code>assignin</code>, <code>evalin</code>, and/or <code>global</code> (see [http://forum.imagej.net/t/how-can-i-use-imagej-from-within-a-matlab-function/10297 here for details])
 
 === Examples ===
+==== Accessing ImageJ Java API from MATLAB ====
 
 The following Java commands work in MATLAB command window to open a sample image in ImageJ.
 
@@ -177,6 +178,7 @@ imp.show()
 </source>
 [[File:boats_screenshot.png|400px]]
 
+==== Opening a MATLAB array as an image in ImageJ ====
 
 The following will open a MATLAB array data as an image in ImageJ. Note that the X and Y of the image is transposed in ImageJ in the second image (see Limitations of <code>IJM.show()</code> above).
 <source>
@@ -200,6 +202,9 @@ IJM.show(I2) % this will show an image in proper X and Y
 </source>
 
 
+
+==== Retrieving a MATLAB array data from an image in ImageJ ====
+
 Additionally, the {{GitHub|org=scijava|repo=scripting-matlab|label=Scripting-MATLAB}} library also includes an extensible [[MATLAB]] command framework. This allows for the creation of utility classes that will be automatically populated into [[MATLAB]] variables for easy access. For example, you could use ImageJ to open a dataset and perform thresholding (or any other processing steps), then in [[MATLAB]] use the <code>IJM.getDatasetAs(name)</code> command to set the active dataset as a [[MATLAB]] matrix variable with a specified name, for further analysis.
 
 For example, instead of using a script as [[#Creating MATLAB scripts inside ImageJ|described above]], we could achieve the same result by executing the following commands in the MATLAB prompt:
@@ -215,6 +220,18 @@ rval(~mask) = 0; % subtract mask from original dataset
 IJM.show('rval') % display the rval array in ImageJ
 IJM.show('mask') % display the mask array in ImageJ
 </source>
+
+==== Opening a 5D MATLAB array as a Hyperstack in ImageJ ====
+
+If you use <code>ijmshow</code>, [https://github.com/kouichi-c-nakamura/ijmshow/ a wrapper of <code>IJM.show()</code>], you can open a 5D MATLAB array as a Hyperstack in ImageJ with a simple syntax. Also, you can open a variable in a MATLAB function with ImageJ as well.
+
+<source>
+imp = IJ.openImage("http://imagej.nih.gov/ij/images/Spindly-GFP.zip");
+IJM.getDatasetAs('I');
+imp3 = ijmshow(I,'XYCZT')
+</source>
+
+[[File:Image003.png |250px]]
 
 = Source =
 
