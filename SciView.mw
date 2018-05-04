@@ -1,7 +1,7 @@
 {{Infobox
 | name                   = SciView
 | software               = ImageJ
-| author                 = {{Person|Kharrington}}, {{Person|skalarproduktraum}}, {{Person|haesleinhuepf}}
+| author                 = {{Person|Kharrington}}, {{Person|skalarproduktraum}}, {{Person|Rueden}}
 | filename               = 
 | source                 = [https://github.com/kephale/SciView SciView]
 | released               = in development
@@ -11,4 +11,8 @@
 | website                = https://github.com/scenerygraphics/SciView
 }}== Purpose ==
 
-This plugin provides 3D visualization capabilities for images and meshes using the [https://github.com/ClearVolume/scenery Scenery] and [[ClearVolume]] infrastructure. An ambition of this plugin is to serve as a modern replacement to [[3D Viewer]]. SciView also integrates [[ImageJ2]] functionality, including [[ImageJ Ops]].
+This plugin provides 3D visualization and virtual reality capabilities for images and meshes using the [https://github.com/scenerygraphics/scenery Scenery]. SciView integrates [[ImageJ2]] functionality, including [[ImageJ Ops]] and [[ImageJ Mesh]], to provide the ability to interact with image and mesh data in 3D and interface with the popular [[Fiji]] software ecosystem. 
+
+An update site is available: [[http://sites.imagej.net/SciView/|http://sites.imagej.net/SciView/]]
+
+There have been a number of contributors to the project: Stephan Saalfeld, Tobias Pietzsch, Loic Royer, and Robert Haase. Development has taken place at hackathons such as the first [[2018-04-04_22-_SciView_hackathon|SciView hackathon]]).
