@@ -230,10 +230,12 @@ IJM.show('mask') % display the mask array in ImageJ
 
 If you use <code>ijmshow</code>, [https://github.com/kouichi-c-nakamura/ijmshow/ a wrapper of <code>IJM.show()</code>], you can open a 5D MATLAB array as a Hyperstack in ImageJ with a simple syntax. Also, you can open a variable in a MATLAB function with ImageJ as well.
 
-<source>
-imp = IJ.openImage("http://imagej.nih.gov/ij/images/Spindly-GFP.zip");
-IJM.getDatasetAs('I');
-imp3 = ijmshow(I,'XYCZT')
+<source lang="matlab">
+imp = ij.IJ.openImage("http://imagej.nih.gov/ij/images/Spindly-GFP.zip");
+imp.show();
+IJM.getDatasetAs('I'); % I is 5-D double with the size of 171x196x2x5x51 in MATLAB
+I16 = uint16(I);
+imp3 = ijmshow(I16,'XYCZT') % ImagePlus, 16-bit, 171x196x2x5x51 
 </source>
 
 [[File:Image003.png |250px]]
