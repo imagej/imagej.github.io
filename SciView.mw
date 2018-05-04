@@ -13,6 +13,6 @@
 
 This plugin provides 3D visualization and virtual reality capabilities for images and meshes using the [https://github.com/scenerygraphics/scenery Scenery]. SciView integrates [[ImageJ2]] functionality, including [[ImageJ Ops]] and [[ImageJ Mesh]], to provide the ability to interact with image and mesh data in 3D and interface with the popular [[Fiji]] software ecosystem. 
 
-An update site is available: [[http://sites.imagej.net/SciView/|http://sites.imagej.net/SciView/]]
+An update site is available: http://sites.imagej.net/SciView/
 
 There have been a number of contributors to the project: Stephan Saalfeld, Tobias Pietzsch, Loic Royer, and Robert Haase. Development has taken place at hackathons such as the first [[2018-04-04_22-_SciView_hackathon|SciView hackathon]]).
