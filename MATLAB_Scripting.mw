@@ -276,7 +276,7 @@ IJM.show('I16') % ImagePlus, 32-bit, 171x196x1x1x510
 imp4 = ijmshow(I16,'XYCZT') % ImagePlus, 16-bit, 171x196x2x5x51 
 </source>
 
-<code>IJM.show(name)</code> cannot reproduce the dimensions and the data type.
+<code>IJM.show(name)</code> cannot reproduce the dimensions and the data type. Channels (C), slices (Z), and frames (T) are all treated as frames. Image type is 32 bit.
 [[File:IJMshow_Image006.png |150px]]
 
 <code>ijmshow</code> can keep the dimensions and the data type.
