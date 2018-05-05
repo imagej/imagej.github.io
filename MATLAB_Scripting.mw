@@ -263,16 +263,23 @@ end
 
 ==== Opening a 2D-5D MATLAB array as a Hyperstack in ImageJ ====
 
-If you use <code>ijmshow</code>, [https://github.com/kouichi-c-nakamura/ijmshow/ a wrapper of <code>IJM.show()</code>], you can open a 2D-5D MATLAB array as a Hyperstack with the right image type (8bit, 16bit, and 32bit for uint8, uint16, and other types of MATLAB array, respectively) in ImageJ with a simple syntax. Also, you can use <code>ijmshow</code> within a MATLAB function.
+If you use <code>ijmshow</code>, [https://github.com/kouichi-c-nakamura/ijmshow/ a wrapper of <code>IJM.show(name)</code>], you can open a 2D-5D MATLAB array as a Hyperstack with the right image type (8bit, 16bit, and 32bit for uint8, uint16, and other types of MATLAB array, respectively) in ImageJ with a simple syntax. Also, you can use <code>ijmshow</code> within a MATLAB function.
 
 <source lang="matlab">
 imp = ij.IJ.openImage("http://imagej.nih.gov/ij/images/Spindly-GFP.zip");
 imp.show();
 IJM.getDatasetAs('I'); % I is 5-D double with the size of 171x196x2x5x51 in MATLAB
 I16 = uint16(I);
-imp3 = ijmshow(I16,'XYCZT') % ImagePlus, 16-bit, 171x196x2x5x51 
+
+IJM.show('I16') % ImagePlus, 32-bit, 171x196x1x1x510
+
+imp4 = ijmshow(I16,'XYCZT') % ImagePlus, 16-bit, 171x196x2x5x51 
 </source>
 
+<code>IJM.show(name)</code> cannot reproduce the dimensions and the data type.
+[[File:IJMshow_Image006.png |150px]]
+
+<code>ijmshow</code> can keep the dimensions and the data type.
 [[File:Image003.png |150px]]
 
 = Source =
