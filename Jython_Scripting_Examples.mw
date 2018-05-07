@@ -1909,13 +1909,12 @@ The simplest way is to place the jython script file into fiji/plugins/ folder or
 
 If you want to have the Jython script show up in a place outside the Plugins menu, just put the file into an appropriate subdirectory of fiji/plugins/Scripts/; for example, if you put a Jython script called Animation_.py into fiji/plugins/Scripts/File/New/, it will be available as {{bc | File | New | Animation}}.
 
+To populate an update site, the updater let the possibility to directly upload jython scripts as .py (or $py.class for the one that resides in the <code>Jars/Lib</code> folder).  
+Alternatively if you want to bundle multiple scripts you can pack them into a jar archive as described below.
+
 === Distributing jython scripts in a .jar file ===
 
 PLEASE NOTE: there is no need to do the following -- unless you want to bundle a couple of scripts in one package. See entry above.
-
-The easiest way to distribute a (single) Jython script is to start the [[Script Editor]], open the Jython script and make the bundle with {{bc | File | Export as .jar}}.
-
-Alternatively -- or if you want to bundle multiple scripts -- you can do it the manual way:
 
 The whole idea is to be able to distribute an entire collection of scripts in a single .jar file, for best convenience.
 
@@ -1937,6 +1936,8 @@ ip.setValue(255)
 ip.fill(ip.getMask())
 imp.show()
 </source>
+
+==== Manual packaging ====
 
 Place both scripts under a folder named <i>scripts/</i> .
 
@@ -1981,8 +1982,20 @@ For clarity, this is a summary of the files in the folder:
  scripts/create_new_image.py
  plugins.config
 
+==== With Maven ====
+Even if you are not familiar with Maven, packaging the py script into a jar is rather straightforward.  
 
-Notice, though, that <b>you don't need to do the .jar packaging at all</b>. Just place the python scripts directly under fiji/plugins/My Scripts/ and they will appear in the menus as regular plugins.
+First make sure that you have installed Maven and a java jdk and add the path to those 2 in your environment variables (see [https://maven.apache.org/install.html Maven installation]). 
+
+Then download a zip of this [https://github.com/m-entrup/imagej-jython-package Github repository]. And follow the guidelines : 
+* place your script in a subfolder of <code>Ressources</code>
+* eventually modify the pom file according to your dependencies (see [https://imagej.net/Building_a_POM Building a POM] 
+* then open a command line in the folder and type <code>mvn package</code>.    
+Eventually you can also type <code>mvn -Dimagej.app.directory=/path/to/your/Fiji.app -Dimagej.deleteOtherVersions=older</code> to have the dependencies automatically coped to an ImageJ installation : handy to test your package on a fresh installation.   
+
+NB : This latter command with the dependencies was [http://forum.imagej.net/t/use-opencv-within-jython-macro/10320/18?u=lthomas reported not to function with windows Powershell], although the normal packaging works. Use a different command line tool in this case.
+
+Notice, though, that <b>you don't need to do the .jar packaging at all</b>. Just place the python scripts directly under fiji/plugins/My Scripts/ and they will appear in the menus as regular plugins, and similarly be handle by the updater to populate an update site.
 
 = Jython examples in Fiji =
 
