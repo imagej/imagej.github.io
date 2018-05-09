@@ -1,12 +1,23 @@
+<div style="float:right;">
+{{Infobox
+| software       = ImageJ/Fiji
+| name           = PillarTracker
+| maintainer     = {{Person|Xu Xiaochun}}
+| source         = {{GitHub|org=scottreen|repo=PillarTracker}}
+| released       = April 2018
+| latest version = '''1.1.6 May 2018'''
+}}
+</div>
+
 This plugin enables user to track pillars with drift correction and visualize the trajectories and deflections. 
 
 It can be automatically downloaded and installed by Fiji's updater(''Help->Update...''). Activate the '''PillarTracker''' checkbox in ''Manage update sites''. For more details about how to update Fiji in a most convenient way, please refer to our documentation here. However, if user doesn't want to use the updater for some reason, one can still download it from following link, and then install it manually. 
 
-Latest version: [https://drive.google.com/file/d/0B3hxvkn3VvhCWUlMZ29OTEZ6ZWs Pillar_Tracker_GUI-1.1.6-SNAPSHOT.zip] (797 KB)
+Latest version: [https://drive.google.com/file/d/0B3hxvkn3VvhCWUlMZ29OTEZ6ZWs Pillar_Tracker_GUI-1.1.6-SNAPSHOT.zip] (<1 MB)
 
 [https://drive.google.com/file/d/0B3hxvkn3VvhCVWJsdUN3eDUyNkk PillarTracker_Documentation.pdf] (~3 MB)
 
-[https://drive.google.com/file/d/0B3hxvkn3VvhCYjFCaWx5dnNpSlE Sample_Files.zip] (61.8 MB)
+[https://drive.google.com/file/d/0B3hxvkn3VvhCYjFCaWx5dnNpSlE Sample_Files.zip] (61.9 MB)
 
 '''Update History:'''
 
