@@ -2,15 +2,19 @@
 {{Infobox
 | software       = ImageJ/Fiji
 | name           = PillarTracker
+| author         = {{Person|Xu Xiaochun}}, {{Person|Felix Martin Margadant}}
 | maintainer     = {{Person|Xu Xiaochun}}
 | source         = {{GitHub|org=scottreen|repo=PillarTracker}}
-| released       = April 2018
+| released       = June 2017
 | latest version = '''1.1.6 May 2018'''
+| status         = stable, active
+| category       = [[:Category:Tracking|Tracking]], [[:Category:Visualization|Visualization]], [[:Category:Filtering|Filtering]], [[:Category:Analysis|Analysis]]
 }}
 </div>
 
 This plugin enables user to track pillars with drift correction and visualize the trajectories and deflections. 
 
+== Installation ==
 It can be automatically downloaded and installed by Fiji's updater(''Help->Update...''). Activate the '''PillarTracker''' checkbox in ''Manage update sites''. For more details about how to update Fiji in a most convenient way, please refer to our documentation here. However, if user doesn't want to use the updater for some reason, one can still download it from following link, and then install it manually. 
 
 Latest version: [https://drive.google.com/file/d/0B3hxvkn3VvhCWUlMZ29OTEZ6ZWs Pillar_Tracker_GUI-1.1.6-SNAPSHOT.zip] (<1 MB)
@@ -19,7 +23,7 @@ Latest version: [https://drive.google.com/file/d/0B3hxvkn3VvhCWUlMZ29OTEZ6ZWs Pi
 
 [https://drive.google.com/file/d/0B3hxvkn3VvhCYjFCaWx5dnNpSlE Sample_Files.zip] (61.9 MB)
 
-'''Update History:'''
+== Update History ==
 
 
 version '''1.1.6''' (Apr. 03, 2018)
@@ -83,7 +87,7 @@ version '''1.0.9'''
  (2).support fast localization algorithm: center of mass(CM).
 
 
-'''Acknowledgement'''
+== Acknowledgement ==
 
 This work is funded by Mechanobiology Institute,Singapore.
 
