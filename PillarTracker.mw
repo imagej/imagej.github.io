@@ -8,7 +8,7 @@
 | released       = June 2017
 | latest version = '''1.1.6 May 2018'''
 | status         = stable, active
-| category       = [[:Category:Tracking|Tracking]], [[:Category:Visualization|Visualization]], [[:Category:Filtering|Filtering]], [[:Category:Analysis|Analysis]]
+| category       = [[:Category:Tracking|Tracking]], [[:Category:Visualization|Visualization]], [[:Category:Filtering|Filtering]], [[:Category:Analysis|Analysis]], [[:Category:Plugins|Plugins]]
 }}
 </div>
 
@@ -26,7 +26,7 @@ Latest version: [https://drive.google.com/file/d/0B3hxvkn3VvhCWUlMZ29OTEZ6ZWs Pi
 == Update History ==
 
 
-version '''1.1.6''' (Apr. 03, 2018)
+version '''1.1.6''' (since Apr. 03, 2018)
  (1).save text of trajectories and deflections as CSV file, separately.
 
  (2).basic Statistic in Drift Analysis.
@@ -96,3 +96,9 @@ If you have any suggestion or comment, please email to:
 MR Xu Xiaochun (mbixxc@nus.edu.sg)
 
 DR Felix Martin Margadant (mbifmm@nus.edu.sg)
+
+[[Category:Tracking]]
+[[Category:Visualization]]
+[[Category:Analysis]]
+[[Category:Filtering]]
+[[Category:Plugins]]
