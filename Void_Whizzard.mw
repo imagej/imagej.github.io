@@ -1,1 +1,9 @@
+== PURPOSE ==
+The Void Whizzard facilitates analysis of images from the Void Spot Assay (VSA, also known as Voiding Spot on Paper, VSOP). The plugin packages macros for image straightening and cropping, background subtraction and thresholding, spotfinding and determination of area, volume and quantity. The Void Whizzard facilitates batch processing of images to save time and increase objectivity of analysis.
+ 
+== INSTRUCTIONS ==
+An instruction manual is available here: [[Media:Void Whizzard User Guide v1.3.pdf]]
+== HOW TO CITE: ==
 Coming soon...
+
+                                   [[File:Void Whizzard.PNG]]
