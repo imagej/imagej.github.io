@@ -21,7 +21,7 @@ This is a wait-for-user window that stalls the plugin until you are ready for it
 === Direct Beam Spot ===
 After you click "OK" to proceed, each diffraction spot is measured and labelled, and a new window pops up (shown below) that the asks you to help the software find the direct beam spot. This is the most critical part of the process because the center of the direct beam is the point from which all distances are calculated.
 [[File:Direct_Beam_Center_1.jpg|300px|center]]
-If you ''have not'' used a beamstop to cover the direct beam spot, then a simpler window appears that just asks you which label corresponds to the direct beam, and the centroid of that spot is used for the calculations. For example, in the image below, spot 24 is the direct beam spot.
+If you ''have not'' used a beamstop to cover the direct beam spot in you image, then a simpler window appears that just asks you which label corresponds to the direct beam, and the centroid of that spot is used for the calculations. For example, in the image below, spot 24 is the direct beam spot.
 
 If you ''have'' used a beamstop in your image, then you must enter the labels corresponding to a spot pair in the image that have mirror symmetry in any plane drawn through the direct beam center and normal to the image plane. For example, in the image below, spots 12 and 39 would be a good choice. 
 
