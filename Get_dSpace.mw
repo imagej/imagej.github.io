@@ -7,7 +7,7 @@ A threshold is applied to the diffraction pattern that the user can manipulate s
 === Getting Started ===
 This is the window that opens up when you first start the plugin. All you need for the plugin to work is an opened diffraction pattern that is calibrated and saved as a .dm3 file.
 [[File:First_Window1.jpg|550px|center]]
-*'''Minimum diffraction spot size:''' is on less pixel than the number of pixels you choose as constituting a diffraction spot. It is good for ignoring cosmic rays that might be captured in you SADP, and small fringe spots that sometimes show up near diffraction spots.
+*'''Minimum diffraction spot size:''' is one less pixel than the number of pixels you choose as constituting a diffraction spot. It is good for ignoring cosmic rays that might be captured in you SADP, and small fringe spots that sometimes show up near diffraction spots.
 *'''Beamstop Status:''' choose the appropriate option regarding whether or not a beamstop was used to block the direct beam.
 *'''Display modes:''' these options allow the user to operate the plugin in three different modes. The ''Measurements'' mode does not give you a summary plot or table, which is convenient if you are optimizing your settings for a single SADP. The ''Summary'' mode closes the two measurement windows (so you don't have to) and only shows the summary table and plot. ''All'' leaves all four windows open, so you see everything.
 *'''d-spacing list:''' yet a fifth window that you can enable, which allows you to view the list of d-spacing values in a text window on a single line.
