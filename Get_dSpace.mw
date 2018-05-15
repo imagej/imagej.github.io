@@ -31,6 +31,9 @@ For example, with the beamstop retracted, the direct beam will have a d-spacing 
 
 === Measurements ===
 [[File:Measurements_1.jpg|900px|center]]
+The image on the left is an example of a thresholded measured and labeled diffraction pattern. The table on the right lists the measurements made for each spot in the image that was larger than the minimum spot size set on the first window ("cal dSpace"). The row numbers correspond to the labels in the image, which allows you to track the measurements and really probe the DP. Especially if you want to label the spots in a single crystal pattern like the one shown (strontium titanate) with the appropriate Miller indices.
+
+If the ''Summary'' option is selected these windows will be closed automatically, but if the ''Measurements'' option is selected on the first window then only these windows will be displayed.
 
 === Results Windows ===
 [[File:Results_Windows_1.jpg|900px|center]]
