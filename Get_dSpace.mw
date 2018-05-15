@@ -37,3 +37,6 @@ If the ''Summary'' option is selected these windows will be closed automatically
 
 === Results Windows ===
 [[File:Results_Windows_1.jpg|900px|center]]
+These windows make up the final step of the get dSpace plugin. The plot on the left compares the individual measurements for each spot (blue circles) in the image to the average values for like planes (red squares). This is where the ''binning size'' comes into play from before. In general, larger bin sizes are needed for larger d-values(>2.5 A), and smaller bin sizes are needed for smaller d-values (<2.5 A). The plot gives a nice visual representation of how successful the binning was, and the table gives a numerical representation of the same.
+
+The table on the right summarizes the results for your sample. It lists the row number, the number of spots averaged to obtain the d-spacing (spot count), the d-spacing (in Angstroms), and the uncertainty in the measurement (in Angstroms). The uncertainty is obtained using the three sigma rule. The uncertainty should decrease as d decreases, if you see a larger value than expected and a high spot count then there might be different planes being treated as one. This is the case for row 7 in the example table.
