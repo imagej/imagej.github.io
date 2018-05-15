@@ -25,6 +25,6 @@ The preferred image is a .dm3 file (Gatan’s format) that is properly calibrate
 
 * Another way to verify your image calibrations have been done properly is to call up the image info window in imageJ (just type the letter “i”) and look for a line like this: ''root.ImageList.1.ImageData.Calibrations.Dimension.0.Units = 1/nm''. If it = nm, then it won’t work.
 
-* You can enable a somewhat useful text window that summarizes your results by opening up the plugin in a text editor and deleting the leading slashes on line 40.
+* You can enable a somewhat useful text window that summarizes your results by opening up the plugin in a text editor and deleting the leading slashes on line 29.
 
 * The plugin may not work right the first time you try to use it, this would be because you do not have the area measurement enabled. Running the plugin will set the measurements it needs, so if you redo your measurements with the circle tool, it should work the second time.
