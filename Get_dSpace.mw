@@ -21,11 +21,13 @@ This is a wait-for-user window that stalls the plugin until you are ready for it
 === Direct Beam Spot ===
 After you click "OK" to proceed, each diffraction spot is measured and labelled, and a new window pops up (shown below) that the asks you to help the software find the direct beam spot. This is the most critical part of the process because the center of the direct beam is the point from which all distances are calculated.
 [[File:Direct_Beam_Center_1.jpg|300px|center]]
-If you ''have not'' used a beamstop, then a simpler window appears that just asks you which label corresponds to the direct beam, and the centroid of that spot is used for the calculations. For example, in the image below, spot 24 is the direct beam spot.
+If you ''have not'' used a beamstop to cover the direct beam spot, then a simpler window appears that just asks you which label corresponds to the direct beam, and the centroid of that spot is used for the calculations. For example, in the image below, spot 24 is the direct beam spot.
 
-If you ''have'' used a beamstop to cover the direct beam then you must enter the labels corresponding to a spot pair in the image that have mirror symmetry in any plane drawn through the direct beam and perpendicular to the image plane. For example, in the image below, spots 12 and 39 would be a good choice. Note: you can use this setup for an image without the beamstop too, if you just enter the direct beam spot twice. 
+If you ''have'' used a beamstop in your image, then you must enter the labels corresponding to a spot pair in the image that have mirror symmetry in any plane drawn through the direct beam center and normal to the image plane. For example, in the image below, spots 12 and 39 would be a good choice. 
 
-Finally, there is a box for artifacts in the image. Artifacts usually occur as a result of the beamstop or small spurious spots that form near the direct beam spot in lower contrast regions. The number entered in this box is the number of values that are trimmed from the list of d-spacing. Just remember you are removing your largest values of d. For example, with the beamstop retracted, the direct beam will have a d-spacing of infinity, so it is an artifact that we would want to remove. The beamstop ''retracted'' option does this automatically, but it doesn't let you remove more spots, to do that you can use the beamstop ''inserted'' option.
+Finally, there is a box for artifacts in the image. Artifacts usually occur as a result of the beamstop or small spurious spots that form near the direct beam spot in lower contrast regions. The number entered in this box is the number of values that are trimmed from the list of d-spacing. Just remember you are removing your largest values of d. 
+
+For example, with the beamstop retracted, the direct beam will have a d-spacing of infinity, so it is an artifact that should be removed. The beamstop ''retracted'' option does this automatically, but it doesn't let you remove more spots, to do that you can use the beamstop ''inserted'' option, and just enter the direct beam label twice.
 
 === Measurements ===
 [[File:Measurements_1.jpg|900px|center]]
