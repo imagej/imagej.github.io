@@ -6,7 +6,7 @@ A threshold is applied to the diffraction pattern that the user can manipulate s
 == Directions ==
 === Getting Started ===
 This is the window that opens up when you first start the plugin. All you need for the plugin to work is an opened diffraction pattern that is calibrated and saved as a .dm3 file.
-[[File:First_Window1.jpg|550px|center]]
+[[File:First_Window1.jpg|450px|center]]
 *'''Minimum diffraction spot size:''' is one less pixel than the number of pixels you choose as constituting a diffraction spot. It is good for ignoring cosmic rays that might be captured in your DP, and small fringe spots that sometimes show up near diffraction spots.
 *'''Beamstop Status:''' choose the appropriate option regarding whether or not a beamstop was used to block the direct beam.
 *'''Binning Size:''' this sets a value in the plugin that is used to distinguish between like planes (110, 101, and 011) and different planes (100, 110, 111,...). 
