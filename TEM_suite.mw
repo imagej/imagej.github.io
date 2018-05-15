@@ -18,8 +18,9 @@ This will install the plugins in a plugin/sripts/TEM folder, which has the advan
 [[File:Menu.jpg|center]]
 
 == Manual Installation ==
+If you want to just use one of the plugins or you want to place them in a different location, follow these steps:
 # The text of these scripts can be viewed on the [http://sites.imagej.net/Makoten/plugins/Scripts/TEM/ update site] 
-# Click on the plugin you want.
-# Copy the text of the desired plugin and paste it into a blank file in imageJ.
+# Click on the plugin you want (make sure it is the most recent release).
+# Copy the text of the desired plugin and paste it into a blank IJ1 macro file in imageJ.
 # Save it wherever you wish to access the file with a .ijm file extension.
 # Restart ImageJ.
