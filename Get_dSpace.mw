@@ -2,3 +2,20 @@ This plugin provides a more impartial and mathematically sound way of calculatin
 
 == How it Works ==
 A threshold is applied to the diffraction pattern that the user can manipulate so it suites their image. The centroid of the thresholded region is then found, and the d-spacing value is calculated for each spot as the inverse of the distance from the center spot. If you did not use a beamstop for image capture, the direct beam spot corresponds to one of the spots in the image, and the user tells the plugin which spot to use. If a beamstop was used for image capture, then the user picks a pair of spots symmetric about the direct beam spot and the plugin finds the center from those two positions. It then bins the measurements according to their difference and plots the values for the user to see and confirm that it is binning like reflections and coming up with an accurate value for that plane.
+
+== Directions ==
+=== Getting Started ===
+[[File:First Window|center]]
+This is the first window you see when you start the plugin.
+
+=== Adjust Threshold ===
+[[File:Adjust Threshold|center]]
+
+=== Direct Beam Spot ===
+[[File:Direct Beam Center|center]]
+
+=== Measurements ===
+[[File:Measurements|center]]
+
+=== Results Windows ===
+[[File:Results Windows|center]]
