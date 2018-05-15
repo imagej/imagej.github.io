@@ -3,8 +3,9 @@ This is a suite of TEM plugins for FIJI that are designed for the Electron Micro
 # [[get dSpace|get dSpace]] is a more accurate and advanced way of finding d-spacing.
 # [[pub Montage|pub Montage]] is a high quality montaging plugin designed for figure submission to a peer review journal.
 
-== Getting Started ==
-* Installation via FIJI updater:
+
+== Installation via FIJI updater ==
+The easiest way to install the TEM suite of plugins is to use the FIJI updater:
 # ''Help'' > ''Update''
 # Click the ''Manage update sites'' button in the ''ImageJ Updater Window''.
 # In the ''Manage update sites window'' scroll down to the '''TEM suite''' entry and check the box in the left hand column.
@@ -14,7 +15,7 @@ This is a suite of TEM plugins for FIJI that are designed for the Electron Micro
 
 This will install the plugins in a plugin/sripts/TEM folder, which has the advantage of creating it's own menu item in ImageJ, so you don't have to go hunting for it in the massive Plugins menu.
 
-* Manual Installation:
+== Manual Installation ==
 # The text of these scripts can be viewed on the [http://sites.imagej.net/Makoten/plugins/Scripts/TEM/ update site] 
 # Click on the plugin you want.
 # Copy the text of the desired plugin and paste it into a blank file in imageJ.
