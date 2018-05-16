@@ -1,7 +1,7 @@
 
 == Overview ==
 
-This plugin can be used to quickly calculate the interplanar spacing values <math>d_{hkl}</math> directly within imageJ without copying the results table to another program like Excel to then convert measurements into d-values, which saves you time. It is also remarkably easy to use, accurate, and robust for both spot and ring electron diffraction patterns.
+This plugin can be used to quickly calculate the interplanar spacing values ''(d)'' directly within imageJ without copying the results table to another program like Excel to then convert measurements into d-values, which saves you time. It is also remarkably easy to use, accurate, and robust for both spot and ring electron diffraction patterns.
 
 == How it works ==
 
