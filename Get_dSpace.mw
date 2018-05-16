@@ -36,9 +36,8 @@ The image on the left is an example of a thresholded measured and labeled diffra
 If the ''Summary'' option is selected these windows will be closed automatically, but if the ''Measurements'' option is selected on the first window then only these windows will be displayed.
 
 === Results Windows ===
-[[File:Results_Windows_2.jpg|900px|center]]
 These windows make up the final step of the get dSpace plugin. The plot on the left compares the individual measurements for each spot (blue circles) in the image to the average values for like planes (red squares). This is where the ''binning size'' comes into play from before. In general, larger bin sizes are needed for larger d-values(>2.5 A), and smaller bin sizes are needed for smaller d-values (<2.5 A). The plot gives a nice visual representation of how successful the binning was, and the table gives a numerical representation of the same.
-
+[[File:Results_Windows_2.jpg|900px|center]]
 The table on the right summarizes the results for your sample. It lists the row number, the number of spots averaged to obtain the d-spacing (spot count), the d-spacing (in Angstroms), and the uncertainty in the measurement (in Angstroms). The uncertainty is obtained using the three sigma rule. The uncertainty should decrease with decreasing d-values.
 
 If you see a larger value than expected and a high spot count then there might be different planes being treated as one. This is the case for row 7 in the example table. However, it is unlikely that this error will prevent me from indexing this list to STO. Keep in mind that the unique planes for most materials are the ones with larger d-values. Therefore, the larger d-spacings are more important for indexing, which is why there are two large binning size options and only one small option.
