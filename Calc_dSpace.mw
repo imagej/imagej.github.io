@@ -18,6 +18,7 @@ The example below is from a single crystalline STO (strontium titanate) sample. 
 [[File:New_Fig_1.jpg|800px|center]]
 The table on the left shows the raw imageJ measurements that were made by drawing a circle and pressing the "m" key on the keyboard. The table on the right is the result of the plugin. Just go to the TEM menu and select ''calc dSpace''. The calculation is automatic.
 [[File:New_Fig_2.jpg|800px|center]]
+There are 3 new columns in the Results window: G, d, 2% error. The scalar component of the G vector in reciprocal space is found and measured in 1/nm since these are the image units. The d-spacing is listed in Angstroms, and the 2% error is just 2% of the d-spacing. While it is ''not'' an actual uncertainty measurement, it can help you index your sample.
 
 == Tips ==
 
