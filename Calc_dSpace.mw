@@ -22,11 +22,7 @@ The table on the left is the raw imageJ measurements that were made by drawing a
 == Tips ==
 
 # If you hold down both control and shift while clicking on one of the white squares on the circle and dragging, the circle expands and contracts concentrically.
-
 # The centroid is there to display the x and y position of the center of the circles you are drawing. Use it to make sure it is at the center of the direct spot (000), and that it stays there throughout your measurements.
-
 # Another way to verify your image calibrations have been done properly is to call up the image info window in imageJ (just type the letter “i”) and look for a line like this: ''root.ImageList.1.ImageData.Calibrations.Dimension.0.Units = 1/nm''. If it = nm, then it won’t work.
-
 # You can enable a somewhat useful text window that summarizes your results by opening up the plugin in a text editor and deleting the leading slashes on line 29.
-
 # The plugin may not work right the first time you try to use it, this would be because you do not have the area measurement enabled. Running the plugin will set the measurements it needs, so if you redo your measurements with the circle tool, it should work the second time.
