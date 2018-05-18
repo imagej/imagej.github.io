@@ -3,24 +3,25 @@ This is a suite of TEM plugins for FIJI that are designed for the Electron Micro
 # [[get dSpace|get dSpace]] is a more accurate and advanced way of finding d-spacing.
 # [[pub Montage|pub Montage]] is a high quality montaging plugin designed for figure submission to a peer review journal.
 
-
-== Installation via FIJI updater ==
+== Getting Started ==
+= Installation via FIJI updater =
 The easiest way to install the TEM suite of plugins is to use the FIJI updater:
-# ''Help'' > ''Update''
+# Download and install [[FIJI]]
+# Start the updater with ''Help'' > ''Update''
 # Click the ''Manage update sites'' button in the ''ImageJ Updater Window''.
 # In the ''Manage update sites window'' scroll down to the '''TEM suite''' entry and check the box in the left hand column.
 # Close the ''Manage Update Sites'' window and click the ''Apply Changes'' button on the ''ImageJ Updater Window''.
-# ''Help'' > ''Refresh Menus''
 # Restart ImageJ.
 
 This will install the plugins in a plugin/sripts/TEM folder, which has the advantage of creating it's own menu item in ImageJ, so you don't have to go hunting for it in the massive Plugins menu.
 
 [[File:Menu.jpg|center]]
 
-== Manual Installation ==
+= Manual Installation =
 If you want to just use one of the plugins or you want to place them in a different location, follow these steps:
 # The text of these scripts can be viewed on the [http://sites.imagej.net/Makoten/plugins/Scripts/TEM/ update site] 
-# Click on the plugin you want (make sure it is the most recent release).
-# Copy the text of the desired plugin and paste it into a blank IJ1 macro file in imageJ.
-# Save it wherever you wish to access the file with a .ijm file extension.
-# Restart ImageJ.
+# Click on the plugin you want (make sure it is the most recent release)
+# Copy the text of the desired plugin and paste it into a blank text file
+# Save it with the extension .ijm in the desired location within your imageJ application
+# Go to ''Help'' => ''Refresh Menus''
+# Restart ImageJ
