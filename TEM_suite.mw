@@ -1,4 +1,4 @@
-This is a suite of TEM plugins for FIJI that are designed for the Electron Microscipist who is constantly indexing electron diffraction patterns. Included in the suite are:
+This is a suite of useful imageJ plugins that are designed for analysis of images and diffraction patterns taken on a Transmission Electron Microscope (TEM). Included in the suite are:
 # [[calc dSpace|calc dSpace]] is a simple way to find interplanar spacing values in imageJ.
 # [[get dSpace|get dSpace]] is a more accurate and advanced way of finding d-spacing.
 # [[pub Montage|pub Montage]] is a high quality montaging plugin designed for figure submission to a peer review journal.
