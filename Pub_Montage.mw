@@ -1,9 +1,50 @@
-A montaging plugin designed with submission to peer review journals in mind. More info coming soon.
+This is a montaging plugin designed with submission to peer review journals in mind, however its versatility lends it to different applications. Peer review journals sometimes ask that your submitted figures uphold a certain ppi (pixels per inch), and to do that you need to know the width of your image in both pixels and inches. Often collected images in a TEM or SEM are not calibrated in inches but rather they are calibrated in nanometers or microns, if they are calibrated at all. This makes it hard to ensure your figures have the required ppi. 
 
-[[File:Temp.jpg|center|800px]]
-[[File:montage10.jpg|left|200px]]
-[[File:montage9.jpg|center|400px]]
-[[File:montage14.jpg|right|200px]]
+Since imageJ can set the image scale to any unit you want, it can be used to set ppi. This plugin does considerably more than that. I can also arrange multiple images into a single image montage, which is a nice way of showing different TEM and SEM images. It works with any file type that imageJ can read, and you can build pretty much any arrangement you want.
+
+[[File:Temp.jpg|center|1070px]]
+[[File:montage10.jpg|left|510px]]
+[[File:montage14.jpg|right|500px]]
+[[File:montage9.jpg|left|510px]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 == Directions ==
+There are two objects upon which this plugin can operate: 
+# A series of open images all containing the same size and aspect ratio.
+# An image stack like the fly brain example stack [File => Open Samples => Fly Brian (1MB)]. Using this ready-made stack for practice is a great way to get started!
