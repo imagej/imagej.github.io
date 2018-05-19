@@ -3,46 +3,7 @@ This is a montaging plugin designed with submission to peer review journals in m
 Since imageJ can set the image scale to any unit you want, it can be used to set ppi. This plugin does considerably more than that. I can also arrange multiple images into a single image montage, which is a nice way of showing different TEM and SEM images. It works with any file type that imageJ can read, and you can build pretty much any arrangement you want.
 
 [[File:Temp.jpg|center|1070px]]
-[[File:montage10.jpg|left|510px]]
-[[File:montage14.jpg|right|500px]]
-[[File:montage9.jpg|left|510px]]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[[File:Temp2.jpg|center|1070px]]
 
 == Directions ==
 There are two objects upon which this plugin can operate: 
