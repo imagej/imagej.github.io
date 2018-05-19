@@ -208,21 +208,18 @@ I2 = permute(I,[order{:}]);
 IJM.show(I2) % this will show an image in proper X and Y
 </source>
 
-If you wish to use <code>IJM.show(name)</code> in a MATLAB function, you can achieve that by using <code>assignin</code> and <code>evalin</code> as below:
+If you wish to show an image with ImageJ from within a MATLAB function, you can achieve that by using <code>[https://github.com/kouichi-c-nakamura/copytoImagePlus copytoImagePlus ]</code> as below:
 
 <source lang="matlab">
 function demofun()
 
 corn_gray = imread('corn.tif',3);
-corn_gray_tp = corn_gray'; % transpose array
 
-assignin('base','corn_gray_tp',corn_gray_tp)
-evalin('base','IJM.show(''corn_gray_tp'')')
-evalin('base','clear corn_gray_tp')
+imp = copytoImagePlus(corn_gray);
+imp.show();
 
 end
 </source>
-
 
 ==== Retrieving a MATLAB array data from an image in ImageJ ====
 
