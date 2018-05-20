@@ -9,7 +9,7 @@ Since imageJ can set the image scale to any unit you want, this plugin sets it t
 
 == Directions ==
 There are two objects upon which this plugin can operate: 
-# A series of open images all containing the same size and aspect ratio.
+# A collection of open images.
 # An image stack.
 
 If you have a bunch of images open in imageJ, the plugin starts by converting those images into a stack. So basically, it needs a stack to create the montage. If you don't have one it will created one for you.
