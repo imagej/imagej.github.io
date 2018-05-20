@@ -47,3 +47,6 @@ The ppi for this image is thus 517 pix / 3.2 inches = 162. This is rather low, b
 # You cannot make a montage of a single image.
 # You can make an odd montage (e.g. 5 images). Blank regions are allowed.
 # The label option supports up to 78 images. The list goes a, b, c,...; aa, bb, cc,...; aaa, bbb, ccc,...
+
+== '''Image Requirements''' ==
+Any file type that imageJ can read can be used to build a montage.
