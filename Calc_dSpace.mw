@@ -13,7 +13,7 @@ You need to have a properly calibrated diffraction pattern for the calculations 
 
 The preferred image is a .dm3 file (Gatan’s format) that is properly calibrated in reciprocal space (see Gatan’s documentation). The easiest way to check this is that the scale bar in your images is displayed in DM with 1/nm units.
 
-== Gallery ==
+== Example ==
 The example below is from a single crystalline STO (strontium titanate) sample. It illustrates how the measurements should be made in order to ensure the plugin is calculating the d-spacing values accurately. Make your measurements working from the inner most spots/rings outwards. 
 [[File:New_Fig_1.jpg|800px|center]]
 The table on the left shows the raw imageJ measurements that were made by drawing a circle and pressing the "m" key on the keyboard. The table on the right is the result of the plugin. Just go to the TEM menu and select ''calc dSpace''. The calculation is automatic.
