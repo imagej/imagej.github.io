@@ -14,7 +14,7 @@ For example, the fly brain example stack that comes with the FIJI distribution o
 
 === Main Window ===
 The main window is shown to the right. It puts the controls at your fingertips from the beginning. In most cases after you click "OK" on this window, the plugin will proceed directly to building your montage unless you have selected the "Yes" option for editing the stack order.
-
+[[File:Window1.jpg|right|400px]]
 # '''Number of Rows:''' This sets the number of rows in your montage.
 # '''Number of Columns:''' This sets the number of columns in your montage.
 # '''Image scaling factor:''' The number entered in the box to the right will be multiplied by the image resolution to scale the image size up or down. Entering "1" preserves the native resolution. The advantage here is that you can build montages without losing any information in your images. This is important for ppi, since you want to make sure your figures are not compressed unnecessarily. For example, Microsoft Office tends to compress images to 220 ppi, which is too low for most journals.
@@ -24,7 +24,7 @@ The main window is shown to the right. It puts the controls at your fingertips f
 # '''Include filename/label?''' This gives you a couple of options on how you want the images labeled in the montage. The filename can be entered into a text window, a letter label can be added, or nothing can be added to the images.
 # '''Include Border?''' If you wish to include a border around the montage, then select "Yes". This is useful if you want a few images to appear as a single page appended to a word document. This feature combined with a image width entry of 8.5 inches, will create a "page" with the same width as a standard piece of letter paper. You can append the image to a pdf of your word file in most pdf editors.
 
-[[File:Window1.jpg|right|400px]]
+
 
 === Optional Stack Editing ===
 
