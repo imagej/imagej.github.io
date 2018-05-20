@@ -28,7 +28,7 @@ The main window is shown to the right. It puts the controls at your fingertips f
 # '''Include filename/label?''' This gives you a couple of options on how you want the images labeled in the montage. The filename can be entered into a text window, a letter label can be added, or nothing can be added to the images.
 # '''Include Border?''' If you wish to include a border around the montage, then select "Yes". This is useful if you want a few images to appear as a single page appended to a word document. This feature combined with a image width entry of 8.5 inches, will create a "page" with the same width as a standard piece of letter paper. You can append the image to a pdf of your word file in most pdf editors.
 
-=== '''Optional Stack Editing''' ===
+                  === '''Optional Stack Editing''' ===
 [[File:Window2.jpg|left|100px]]
 
 The easiest way to open a bunch of images in imageJ is to drag and drop your selected bunch of images onto the imageJ user interface. However, if you do it this way, the order in which the stack is built will probably not be the order you want. This option lets you edit your stack before the plugin builds the montage. 
