@@ -19,7 +19,7 @@ This is the window that opens up when you first start the plugin. All you need f
 
 === '''Adjust Threshold''' ===
 [[File:Adjust_Threshold_1.jpg|300px|right]]
-Once you click the "OK" button on the first window. Your DP will be duplicated, and converted to 8-bit. The auto threshold routine is run and the [https://imagej.nih.gov/ij/docs/guide/146-28.html#sub:Threshold...[T usual threshold window] appears. You can use the sliders to adjust thresholding levels to optimize your image. When you are happy with the thresholding, click the "OK" button on the window below to proceed. 
+Once you click the "OK" button on the first window. Your DP will be duplicated, and converted to 8-bit. The auto threshold routine is run and the [https://imagej.nih.gov/ij/docs/guide/146-28.html#sub:Threshold... usual threshold window] appears. You can use the sliders to adjust thresholding levels to optimize your image. When you are happy with the thresholding, click the "OK" button on the window below to proceed. 
 
 This is a wait-for-user window that stalls the plugin until you are ready for it to move forward.
 
