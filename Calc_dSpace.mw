@@ -9,7 +9,7 @@ Use imageJ’s circle tool (shift + oval tool) to measure the spot/ring patterns
 
 == Image Requirements ==
 
-You need to have a properly calibrated diffraction pattern for the calculations to work. Most TEM operators use Gatan’s Digital Micrograph software for image collection. If you are using DM, then it is likely that this plugin will work right away, or will work with the help of your TEM technician. 
+You need to have a properly calibrated diffraction pattern for the calculations to work. Most TEMs use Gatan’s Digital Micrograph software for image collection. If you are using DM, then it is likely that this plugin will work right away, or will work with the help of your TEM technician. 
 
 The preferred image is a .dm3 file (Gatan’s format) that is properly calibrated in reciprocal space (see Gatan’s documentation). The easiest way to check this is that the scale bar in your images is displayed in DM with 1/nm units.
 
