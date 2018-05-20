@@ -11,3 +11,18 @@ There are two objects upon which this plugin can operate:
 # An image stack.
 
 For example, the fly brain example stack that comes with the FIJI distribution of imageJ [''File => Open Samples => Fly Brian (1MB)''] is a pre-made stack consisting of 57 images that you can access to learn how to use this plugin.
+
+=== Main Window ===
+
+[[File:Window1.jpg|right|400px]]
+
+=== Optional Stack Editing ===
+
+[[File:Window2.jpg|right|100px]]
+
+
+[[File:Window3.jpg|left|200px]]
+
+=== Tips and Tricks ===
+
+[[File:Window4.jpg|right|400px]]
