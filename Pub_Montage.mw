@@ -10,7 +10,9 @@ There are two objects upon which this plugin can operate:
 # A series of open images all containing the same size and aspect ratio.
 # An image stack.
 
-For example, the fly brain example stack that comes with the FIJI distribution of imageJ [''File => Open Samples => Fly Brian (1MB)''] is a pre-made stack consisting of 57 images that you can access to learn how to use this plugin.
+If you have a bunch of images open in imageJ, the plugin starts by converting those images into a stack. So basically, it needs a stack to create the montage. If you don't have one it will created one for you.
+
+This means that any stack can be used. For example, the fly brain stack that comes with the FIJI distribution of imageJ [''File => Open Samples => Fly Brian (1MB)''] is a pre-made stack consisting of 57 images that you can access to learn how to use this plugin.
 
 === Main Window ===
 The main window is shown to the right. It puts the controls at your fingertips from the beginning. In most cases after you click "OK" on this window, the plugin will proceed directly to building your montage unless you have selected the "Yes" option for editing the stack order.
@@ -36,3 +38,5 @@ The plugin is interrupted and two windows popup. One is an "Action Required" win
 The image to the right shows the montage created by the setup shown above in the main window. Note that the fly brain stack contains images that are 256x256 pixels. The montage header shows the size of the montage, which is 3.20x4.82 inches. The montage width in pixels is now 517. That is 256 + 256 + 5, or one image + another image + the border separating the images. The border is set to be 1/50 of the image width, which turns out to be 5 in this example.
 
 The ppi for this image is thus 517 pix / 3.2 inches = 162. This is rather low, but it is low because the original image resolution is rather low. While this montage has a low ppi, it is important to note that no image information was lost in building the montage from the stack. Thus the montage allows you to present your images in the highest possible resolution, and the smallest possible file size. If the file size becomes extreme, however, you can downsize the images. Reducing the image resolution by 1/2 reduces the file size by 1/4.
+
+== Tips ==
