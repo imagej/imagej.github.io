@@ -13,6 +13,16 @@ There are two objects upon which this plugin can operate:
 For example, the fly brain example stack that comes with the FIJI distribution of imageJ [''File => Open Samples => Fly Brian (1MB)''] is a pre-made stack consisting of 57 images that you can access to learn how to use this plugin.
 
 === Main Window ===
+The main window is shown to the right. It puts the controls at your fingertips from the beginning. In most cases after you click "OK" on this window, the plugin will proceed directly to building your montage unless you have selected the "Yes" option for editing the stack order.
+
+# '''Number of Rows:''' This sets the number of rows in your montage.
+# '''Number of Columns:''' This sets the number of columns in your montage.
+# '''Image scaling factor:''' The number entered in the box to the right will be multiplied by the image resolution to scale the image size up or down. Entering "1" preserves the native resolution. The advantage here is that you can build montages without losing any information in your images. This is important for ppi, since you want to make sure your figures are not compressed unnecessarily. For example, Microsoft Office tends to compress images to 220 ppi, which is too low for most journals.
+# '''Image Width (inches):''' This sets the desired image width in inches thereby completing the setting of ppi. Journals will tell you how wide each type of image should be, so you just enter that information here.
+# '''Close stack after?''' If you are optimizing your montage it is handy to keep the stack open after you build the montage. If you are doing something routine, it is convenient to have the plugin close the stack for you.
+# '''Edit stack order?''' If you say "Yes" to this option, then the plugin will be paused after the stack is created, and you will be asked to edit the stack with the stack editor window (see next section).
+# '''Include filename/label?''' This gives you a couple of options on how you want the images labeled in the montage. The filename can be entered into a text window, a letter label can be added, or nothing can be added to the images.
+# '''Include Border?''' If you wish to include a border around the montage, then select "Yes". This is useful if you want a few images to appear as a single page appended to a word document. This feature combined with a image width entry of 8.5 inches, will create a "page" with the same width as a standard piece of letter paper. You can append the image to a pdf of your word file in most pdf editors.
 
 [[File:Window1.jpg|right|400px]]
 
