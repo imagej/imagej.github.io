@@ -25,8 +25,8 @@ The main window is shown to the right. It puts the controls at your fingertips f
 # '''Include Border?''' If you wish to include a border around the montage, then select "Yes". This is useful if you want a few images to appear as a single page appended to a word document. This feature combined with a image width entry of 8.5 inches, will create a "page" with the same width as a standard piece of letter paper. You can append the image to a pdf of your word file in most pdf editors.
 
 === Optional Stack Editing ===
-[[File:Window2.jpg|right|100px]]
-[[File:Window3.jpg|left|200px]]
+[[File:Window2.jpg|left|100px]]
+[[File:Window3.jpg|right|200px]]
 The easiest way to open a bunch of images in imageJ is to drag and drop your selected bunch of images onto the imageJ user interface. However, if you do it this way, the order in which the stack is built will probably not be the order you want. This option lets you edit your stack before the montage is built. Two window popup. One is an "Action Required" window that just pauses the plugin until you select "OK", i.e. after you are satisfied with the stack. The other window is a stack sorter that imageJ supplies. For more info on how to use it please click [http://www.optinav.info/Stack-Sorter.htm link here].
 
 === Tips and Tricks ===
