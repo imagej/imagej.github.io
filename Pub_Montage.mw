@@ -24,15 +24,9 @@ The main window is shown to the right. It puts the controls at your fingertips f
 # '''Include filename/label?''' This gives you a couple of options on how you want the images labeled in the montage. The filename can be entered into a text window, a letter label can be added, or nothing can be added to the images.
 # '''Include Border?''' If you wish to include a border around the montage, then select "Yes". This is useful if you want a few images to appear as a single page appended to a word document. This feature combined with a image width entry of 8.5 inches, will create a "page" with the same width as a standard piece of letter paper. You can append the image to a pdf of your word file in most pdf editors.
 
-
-
 === Optional Stack Editing ===
-
 [[File:Window2.jpg|right|100px]]
-
-
 [[File:Window3.jpg|left|200px]]
 
 === Tips and Tricks ===
-
 [[File:Window4.jpg|right|400px]]
