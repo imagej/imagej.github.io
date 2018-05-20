@@ -8,7 +8,7 @@ If you did not use a beamstop for image capture, the direct beam spot correspond
 The plugin then makes an attempt at binning the measurements according to their d-spacing, and plots both the binned and averaged values along side measured values. This gives the user a chance to conceptualize and evaluate the results.
 
 == '''Directions''' ==
-=== Getting Started ===
+=== '''Getting Started''' ===
 This is the window that opens up when you first start the plugin. All you need for the plugin to work is an opened diffraction pattern that is calibrated and saved as a .dm3 file.
 [[File:First_Window_2.jpg|800px|center]]
 *'''Minimum diffraction spot size:''' is one less pixel than the number of pixels you choose as constituting a diffraction spot. It is good for ignoring cosmic rays that might be captured in your DP, and small fringe spots that sometimes show up near the edges of diffraction spots.
