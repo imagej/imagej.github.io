@@ -16,7 +16,7 @@ If you have a bunch of images open in imageJ, the plugin starts by converting th
 
 This means that any stack can be used. For example, the fly brain stack that comes with the FIJI distribution of imageJ [''File => Open Samples => Fly Brian (1MB)''] is a pre-made stack consisting of 57 images that you can access to learn how to use this plugin.
 
-=== Main Window ===
+=== '''Main Window''' ===
 The main window is shown to the right. It puts the controls at your fingertips from the beginning. In most cases after you click "OK" on this window, the plugin will proceed directly to building your montage unless you have selected the "Yes" option for editing the stack order.
 [[File:Window1.jpg|right|400px]]
 # '''Number of Rows:''' This sets the number of rows in your montage.
@@ -28,14 +28,14 @@ The main window is shown to the right. It puts the controls at your fingertips f
 # '''Include filename/label?''' This gives you a couple of options on how you want the images labeled in the montage. The filename can be entered into a text window, a letter label can be added, or nothing can be added to the images.
 # '''Include Border?''' If you wish to include a border around the montage, then select "Yes". This is useful if you want a few images to appear as a single page appended to a word document. This feature combined with a image width entry of 8.5 inches, will create a "page" with the same width as a standard piece of letter paper. You can append the image to a pdf of your word file in most pdf editors.
 
-=== Optional Stack Editing ===
+=== '''Optional Stack Editing''' ===
 [[File:Window2.jpg|left|100px]]
 
 The easiest way to open a bunch of images in imageJ is to drag and drop your selected bunch of images onto the imageJ user interface. However, if you do it this way, the order in which the stack is built will probably not be the order you want. This option lets you edit your stack before the montage is built. 
 [[File:Window3.jpg|right|200px]]
 The plugin is interrupted and two windows popup. One is an "Action Required" window that just pauses the plugin until you select "OK", i.e. after you are satisfied with the stack. The other window is a stack sorter that imageJ supplies. For more info on how to use it please click [http://www.optinav.info/Stack-Sorter.htm here].
 
-=== Results ===
+=== '''Results''' ===
 [[File:Window4.jpg|right|400px]]
 The image to the right shows the montage created by the setup shown above in the main window. Note that the fly brain stack contains images that are 256x256 pixels. The montage header shows the size of the montage, which is 3.20x4.82 inches. The montage width in pixels is now 517. That is 256 + 256 + 5, or one image + another image + the border separating the images. The border is set to be 1/50 of the image width, which turns out to be 5 in this example.
 
