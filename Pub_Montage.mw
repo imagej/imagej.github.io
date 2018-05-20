@@ -27,7 +27,7 @@ The main window is shown to the right. It puts the controls at your fingertips f
 === Optional Stack Editing ===
 [[File:Window2.jpg|left|100px]]
 [[File:Window3.jpg|right|200px]]
-The easiest way to open a bunch of images in imageJ is to drag and drop your selected bunch of images onto the imageJ user interface. However, if you do it this way, the order in which the stack is built will probably not be the order you want. This option lets you edit your stack before the montage is built. Two window popup. One is an "Action Required" window that just pauses the plugin until you select "OK", i.e. after you are satisfied with the stack. The other window is a stack sorter that imageJ supplies. For more info on how to use it please click [http://www.optinav.info/Stack-Sorter.htm link here].
+The easiest way to open a bunch of images in imageJ is to drag and drop your selected bunch of images onto the imageJ user interface. However, if you do it this way, the order in which the stack is built will probably not be the order you want. This option lets you edit your stack before the montage is built. Two window popup. One is an "Action Required" window that just pauses the plugin until you select "OK", i.e. after you are satisfied with the stack. The other window is a stack sorter that imageJ supplies. For more info on how to use it please click [http://www.optinav.info/Stack-Sorter.htm here].
 
 === Tips and Tricks ===
 [[File:Window4.jpg|right|400px]]
