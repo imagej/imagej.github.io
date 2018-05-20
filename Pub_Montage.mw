@@ -41,3 +41,5 @@ The image to the right shows the montage created by the setup shown above in the
 The ppi for this image is thus 517 pix / 3.2 inches = 162. This is rather low, but it is low because the original image resolution is rather low. While this montage has a low ppi, it is important to note that no image information was lost in building the montage from the stack. Thus the montage allows you to present your images in the highest possible resolution, and the smallest possible file size. If the file size becomes extreme, however, you can downsize the images. Reducing the image resolution by 1/2 reduces the file size by 1/4.
 
 == Tips ==
+# The plugin usually remembers your previous choices in the main window.
+#
