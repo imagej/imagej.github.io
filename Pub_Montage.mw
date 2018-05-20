@@ -44,3 +44,6 @@ The ppi for this image is thus 517 pix / 3.2 inches = 162. This is rather low, b
 == Tips ==
 # The plugin usually remembers your previous choices in the main window.
 # Use like images for the montage, i.e. same size and aspect ratio.
+# You cannot make a montage of a single image.
+# You can make an odd montage (e.g. 5 images). Blank regions are allowed.
+# The label option supports up to 78 images. The list goes a, b, c,...; aa, bb, cc,...; aaa, bbb, ccc,...
