@@ -3,7 +3,7 @@ This is a suite of useful imageJ plugins that are designed for analysis of image
 # [[get dSpace|get dSpace]] is a more accurate and advanced way of finding d-spacing.
 # [[pub Montage|pub Montage]] is a high quality montaging plugin designed for figure submission to a peer review journal.
 
-== '''Getting Started''' ==
+== Getting Started ==
 The following are ways of installing this suite of plugins. The first way is the easiest and fastest method, but the second way offers more freedom. 
 === '''Installation via FIJI updater''' ===
 The easiest way to install the TEM suite of plugins is to use the FIJI updater:
