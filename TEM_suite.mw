@@ -5,7 +5,7 @@ This is a suite of useful imageJ plugins that are designed for analysis of image
 
 == Getting Started ==
 The following are ways of installing this suite of plugins. The first way is the easiest and fastest method, but the second way offers more freedom. 
-=== '''Installation via FIJI updater''' ===
+'''Installation via FIJI updater:''' 
 The easiest way to install the TEM suite of plugins is to use the FIJI updater:
 # Download and install [https://fiji.sc/ FIJI]
 # Start the updater with ''Help'' > ''Update''
@@ -18,7 +18,7 @@ This will install the plugins in a plugin/sripts/TEM folder, which has the advan
 
 [[File:Menu.jpg|center]]
 
-=== '''Manual Installation''' ===
+'''Manual Installation:''' 
 If you want to just use one of the plugins or you want to place them in a different location, follow these steps:
 # The text of these scripts can be viewed on the [http://sites.imagej.net/Makoten/plugins/Scripts/TEM/ update site] 
 # Click on the plugin you want (make sure it is the most recent release)
