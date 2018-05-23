@@ -1,1 +1,16 @@
 The second DAIS Learnathon is held at CSBD (MPI-CBG) in Dresden from June 4th to June 8th, 2018.
+
+= Preparation =
+<ol>
+  <li>Follow the Gitter channel for news: https://gitter.im/juglab/DaisLearnathon18</li>
+  <li>Bring your laptop</li>
+  <li>Make sure, you have the following stuff installed:
+    <ul>
+      <li>Eclipse (Oxygen) or IntelliJ</li>
+      <li>GIT</li>
+      <li>Maven</li>
+      <li>bash or zsh</li>
+      <li>Jupyter + the SciJava kernel (... installation instructions will follow ...)</li>
+    </ul>
+  </li>
+</ol>
