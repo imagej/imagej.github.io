@@ -10,7 +10,12 @@ The second DAIS Learnathon is held at CSBD (MPI-CBG) in Dresden from June 4th to
       <li>GIT</li>
       <li>Maven</li>
       <li>bash or zsh</li>
-      <li>Jupyter + the SciJava kernel (... installation instructions will follow ...)</li>
+      <li>Miniconda or Anaconda
+        <ul>
+          <li>Install [https://conda.io/miniconda.html Miniconda] if you do not have installed it or Anaconda already. (We need the version for Python 3!)</li>
+          <li>Your <code>.bashrc</code> or <code>.zshrc</code> will need a line like this: <code>export PATH="/Users/someforders/miniconda3/bin:$PATH"</code></li>
+        </ul>
+      </li>
     </ul>
   </li>
 </ol>
