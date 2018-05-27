@@ -8,7 +8,7 @@
 | date = Wed Jul 19 12:00:45 CDT 2017
 | devStatus = {{DevStatus | developer=yes | incubating=no | obsolete=no}}
 | supportStatus = {{SupportStatus | debugger=yes | reviewer=yes | support=yes}}
-| founders = {{User|MicrotubuleTracker}}
+| founders = {{MicrotubuleTracker}}
 | leads = {{Person|MicrotubuleTracker}}
 | developers = {{Person|MicrotubuleTracker}}, {{Person|StephanP}}
 | debuggers = {{Person|MicrotubuleTracker}}
