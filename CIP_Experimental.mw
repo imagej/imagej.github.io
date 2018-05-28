@@ -24,6 +24,9 @@ This function allow to track the region defined in a list of label map image and
 &nbsp;&nbsp;&nbsp;&nbsp;'''measure''': a measure table providing all the necessary information to analyze and display the tracks. The measure rows provide spot position ordered by trackId, branchId (i.e. the sub branch of a track) and time. The branch graph for each track is defined by the parameter branchIn and branch out indicatin the branchId of the connected branch. The measure table can be visualized with cip.show <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;'''trackmate model''': a TrackmateModel instance that can be further used for visualisation or saving the track information to disk. One can refer to [[Scripting_TrackMate| trackmate scripting resource]] for more information on how to use trackmate model. [[CIP_Utilities#show|cip.show]] also provide some convenience to display result in trackschme or in image overlay.
 
+<span style="font-size:110%">'''Example'''</span><br>
+one can find an example script [https://github.com/benoalo/CIP/blob/master/scripts/tracking_cip.py here]
+
 <span style="font-size:110%">'''Implementation'''</span><br>
 the track function detect the position of labelmap region at each time step load this information in trackmate[1,2] data structures before running the trackmate [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/tracking/sparselap/SparseLAPTracker.java tracking algorithm]. the tracking 
 
