@@ -76,6 +76,12 @@ This function detects the intensity maxima of an imaget and return a labeled ima
 <span style="font-size:110%">'''Output'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''outputImage''' : a label image of the detected maxima<br>
 
+<span style="font-size:110%">'''Experimental feature'''</span><br>
+
+For the multiscale maxima method it is possible to use a parameter defining the type of output returned by the function<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''output''' : a string in {'image', 'measure', 'both'}, the default value is 'image'. If the parameter value is 'image' the function return a labelMap image. If the value is 'measure' the function a [[CIP_Utilities#measure|measure table]] indicating object position and scale. The idea is to give more flexibility in the visualisation of the detections. Eventually returning sphere regions with appropriate radii could be more convenient as they could be visualized right away with cip.show <br>
+
+
 <span style="font-size:110%">'''Example'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;<code>img2 = cip.maxima( img1 , 'hmin', 200 )</code>
 [[File:CIP_maxima.PNG|none|400px]]
@@ -88,6 +94,9 @@ Each maxima detection method rely on a custom implementation
 '''[https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/HMaxima.java Height]''' and '''[https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/AreaMaxima.java Area]''' methods are derived from attribute filtering approaches [1] simply using a different attribute peak height or area as criteria to merge peaks and stop their extension.<br>
 '''[https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/WindowMaxima.java Distance]''' is simpler but efficient approach that pass a filter window over the image and check is all pixel values in the window are lower or equal to the center pixel. This method can make errors if image contains plato.<br>
 '''[https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/MultiScaleMaxima.java MultiScale]''' method builds a difference of gaussian pyramid and detection in that scale space. The implementation principle is well described in [2].
+
+[1] Meijster, A., & Wilkinson, M. H. (2002). A comparison of algorithms for connected set openings and closings. IEEE Transactions on Pattern Analysis and Machine Intelligence, 24(4), 484-494.
+[2] Lowe, D. G. (2004). Distinctive image features from scale-invariant keypoints. International journal of computer vision, 60(2), 91-110.
 
 ='''watershed'''=
 <span style="font-size:110%">'''Description'''</span><br>
