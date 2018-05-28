@@ -96,6 +96,7 @@ Each maxima detection method rely on a custom implementation
 '''[https://github.com/benoalo/ImgAlgo/blob/master/src/main/java/invizio/imgalgo/label/MultiScaleMaxima.java MultiScale]''' method builds a difference of gaussian pyramid and detection in that scale space. The implementation principle is well described in [2].
 
 [1] Meijster, A., & Wilkinson, M. H. (2002). A comparison of algorithms for connected set openings and closings. IEEE Transactions on Pattern Analysis and Machine Intelligence, 24(4), 484-494.
+
 [2] Lowe, D. G. (2004). Distinctive image features from scale-invariant keypoints. International journal of computer vision, 60(2), 91-110.
 
 ='''watershed'''=
