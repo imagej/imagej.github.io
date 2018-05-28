@@ -212,6 +212,6 @@ This section provide the main development directions as well as a list of functi
 
 * (wip) 2018-05-28 : version 0.2.0 , tracking, watershed and maxima update
 ** add an experimental cip.track function allowing to track regions in a list of labelmap. it uses trackmate LapTracker below the hood thus allowing splitting, merging and discontinous tracks. resulting track can be visualized with cip.show both in trackscheme or hyperstack viewer.
-** cip.watershed(img, threshold, ...) labeling is more consistant, each connected component (region) has a distinct label and region with height inferior to hMin are no displayed.
-** the multiscale maxima detection was debugged and now give consistant results. It works in 2d/3d and takes into account data anisotropy. As an experiment it is possible to return multiscale maxima detection as a list of measures.
+** cip.watershed(img, threshold, ...) labeling is more consistant, each connected component (region) has a distinct label and region with height inferior to hMin are no displayed. This feature was added with ImgAlgo-0.1.1.jar
+** the multiscale maxima detection was debugged and now give consistant results. It works in 2d/3d and takes into account data anisotropy. As an experiment it is possible to return multiscale maxima detection as a list of measures. multiscale maxima debugging also occured in ImgAlgo-0.1.2.jar update.
 ** corresponding documentation is on the work
