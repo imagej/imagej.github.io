@@ -26,17 +26,17 @@ EpiGraph consists in a pipeline of 5 very simple steps. First, the skeleton of a
 
 === Calculation of GDDs ===
 
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/4.1%20-%20Calculate%20graphlet%20(default%20parameters).mp4 ''-Using default parameters'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/3.1%20Calculate%20Graphlets%20default.mp4 ''3.1. Using default parameters'']
 
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/4.2.2%20-%20Calculate%20graphlets%20determining%20an%20invalid%20region%20default%20parameters.mp4 ''-Using invalid region'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/3.2%20Calculate%20Graphlets%20using%20invalid%20region%2C%20square%20form%20and%20Mo7.mp4 ''3.2. Using invalid region, squared form and Mo7'']
 
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/4.2.3%20-%20Calculate%20graphlets%20using%204-connectivity%20and%20radius%202.mp4 ''-Using 4-connectivity'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/3.3%20Calculate%20Graphlets%20connectivity%204.mp4 ''3.3. Using 4-connectivity'']
  
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/4.3.1%20-%20Calculate%20graphlets%20determining%20rectangular%20ROIs%20and%20Mo10.mp4 ''-Using a rectangular ROI'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/3.4%20Calculate%20Graphlets%20set%20of%20ROIs%20connectivity%204.mp4 ''3.4. Selecting different ROIs and 4-connectivity'']
 
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/4.3.2%20-%20Calculate%20graphlets%20selecting%20cells%20and%20Mo29.mp4 ''-Using individual cells as ROIs'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/3.5%20Calculate%20Graphlets%20%20Mo29%2C%20Mo17%2C%20Mo10%20and%20Mo7.mp4 ''3.5. Combining Mo29, Mo17, Mo10 and Mo7'']
 
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/4.5%20-%20Exporting%20graphlets%20data%20(default).mp4 ''-Exporting graphlets data'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/4%20Exporting%20Graphlets%20ZIP.mp4 ''4. Export graphlets data'']
 
 === Exporting and importing GDDs data ===
   
