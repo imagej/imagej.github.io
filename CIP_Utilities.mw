@@ -86,8 +86,6 @@ show display CIP data within IJ1 component: hyperstack viewer, results table and
 &nbsp;&nbsp;&nbsp;&nbsp;'''track style''' a string in {<u>'all'</u>,'local','backward','forward','selection'}. 'all' is the default. depending of the value the track are shown entirely ('all'), a few step before('backward') or after ('forward') current time, both before and after ('local').<br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''track depth''' a scalar defining the number of step draw in 'local', 'backward' and 'forward' track style. Default is 10.
 
-
-
 <span style="font-size:110%">'''Output'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''handle''': a string with the name of the created results table or image window.
 
@@ -98,6 +96,8 @@ This example demonstrate how to label a gray level image and overlay the contour
 &nbsp;&nbsp;&nbsp;&nbsp;<code>h = cip.show(img) 	# display img</code><br>
 &nbsp;&nbsp;&nbsp;&nbsp;<code>cip.show(h, regions, 'glasbey' ) 	# overlay the region contour to img</code><br>
 [[File:CIP_show_region.PNG|none|650px]]<br>
+
+An example script displaying tracks can found [https://github.com/benoalo/CIP/blob/master/scripts/tracking_cip.py here]
 
 <span style="font-size:110%">'''Implementation'''</span><br>
 The show function relies on IJ1 component as a starting point as this is the way data are displayed when downloading a fresh version of Fiji. this also ensure that this data can easily be seen and processed the usual way by any imageJ plugins.
