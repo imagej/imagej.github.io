@@ -76,6 +76,18 @@ show display CIP data within IJ1 component: hyperstack viewer, results table and
 
 &nbsp;&nbsp;&nbsp;&nbsp;'''message''' a string to display in the IJ1 log window.
 
+<span style="font-size:110%">'''Signature: track (Experimental)'''</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<code>cip.show( TrackmateModel*, image, mode, track style, track depth )</code><br>
+&nbsp;&nbsp;&nbsp;&nbsp; will display tracks detected with trackmate or cip.track in trackscheme or overlaid in an hyperstack viewer.
+
+&nbsp;&nbsp;&nbsp;&nbsp;'''TrackMateModel*''' a TrackMate model object returned by cip.track or created with the trackmate api.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''image''' an image on which the track can be displayed, if not provided an empty image the same size as the one used for the tracking will be used.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''mode''' a string in {<u>'image'</u>,'trackscheme','all'}. default is 'image'. When image is chosen tract are displayed in image overlay. With 'trackscheme' the trackscheme ui is used to display the tracks.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''track style''' a string in {<u>'all'</u>,'local','backward','forward','selection'}. 'all' is the default. depending of the value the track are shown entirely ('all'), a few step before('backward') or after ('forward') current time, both before and after ('local').<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'''track depth''' a scalar defining the number of step draw in 'local', 'backward' and 'forward' track style. Default is 10.
+
+
+
 <span style="font-size:110%">'''Output'''</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;'''handle''': a string with the name of the created results table or image window.
 
