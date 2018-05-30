@@ -3,7 +3,7 @@
 | software               = Fiji
 | author                 = Stephan Saalfeld
 | maintainer             = Stephan Saalfeld
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=Transform_Affine.java in gitweb]
+| source                 = [https://github.com/axtimwalde/mpicbg/blob/master/mpicbg_/src/main/java/Transform_Affine.java in gitweb]
 | released               =  June 6<sup>th</sup>, 2008
 | latest version         = November 9<sup>th</sup>, 2008
 | status                 = stable
