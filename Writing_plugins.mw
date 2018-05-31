@@ -179,7 +179,7 @@ If you know the function you want to modify but can't determine its location in 
 
 == Example projects ==
 
-Remember the {{GitHub|org=imagej|repo=imagej|label=imagej/tutorials repository}} we [[#Requirements|said you should clone]]? Now's the time to put it to use!
+Remember the {{GitHub|org=imagej|repo=tutorials|label=imagej/tutorials repository}} we [[#Requirements|said you should clone]]? Now's the time to put it to use!
 
 Because the ImageJ API is designed to be maximally flexible and extensible, if you're just getting started with development it can be overwhelming to figure out exactly which part of the code base you should be working on. The <code>imagej/tutorials</code> repository contains a selection of minimal projects illustrating how your own project(s) could be structured to perform common tasks. Most of these projects also have extensive documentation via comments in the code, to highlight particular functions and use cases.
 
