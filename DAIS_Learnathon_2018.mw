@@ -6,7 +6,7 @@ The second DAIS Learnathon is held at CSBD (MPI-CBG) in Dresden from June 4th to
   <li>Bring your laptop</li>
   <li>Make sure you have the following stuff installed:
     <ul>
-      <li>Eclipse Oxygen (recommended for starters) or IntelliJ</li>
+      <li>Eclipse Oxygen (recommended for starters) or IntelliJ<br /><b>If you prefer IntelliJ, please also install Eclipse Oxygen for the KNIME sessions.</b></li>
       <li>GIT</li>
       <li>Maven</li>
       <li>bash or zsh</li>
