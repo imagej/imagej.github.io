@@ -16,6 +16,7 @@ The second DAIS Learnathon is held at CSBD (MPI-CBG) in Dresden from June 4th to
           <li>Your <code>.bashrc</code> or <code>.zshrc</code> has to include the path to your conda installation: <code>export PATH="/PATH_TO_INSTALLATION/miniconda3/bin:$PATH"</code></li>
         </ul>
       </li>
+      <li>KNIME 3.5.3 ([https://www.knime.com/downloads/download-knime https://www.knime.com/downloads/download-knime])</li>
     </ul>
   </li>
 </ol>
