@@ -1,14 +1,12 @@
 {{Userbox
 | name = Florian Jug
 | title = Grand Poobah
-| affiliation = MPI-CBG Dresden
+| affiliation = [https://www.mpi-cbg.de/ MPI-CBG Dresden]
 | forum = fjug
 | github = fjug
 | osrc = fjug
-| website = http://myerslab.mpi-cbg.de/people/jug/
+| scholar = vYInKgwAAAAJ
+| website = https://www.mpi-cbg.de/jug
 }}
 
-Labsite: https://www.mpi-cbg.de/jug
-
-Official homepage: https://www.mpi-cbg.de/en/research-groups/current-groups/florian-jug/group-leader/
-Google scholar page: https://scholar.google.com/citations?user=vYInKgwAAAAJ&hl=en
+Florian Jug is a group leader at MPI-CBG. With {{Person|Tomancak}}, he leads the [[DAIS|Dresden Analysis-of-Images Suite (DAIS)]] project. He is also the one to blame for the [[ClearVolume|ClearVolume plugin for Fiji]].
