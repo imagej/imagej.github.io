@@ -27,8 +27,4 @@ Slides online:
 Ignore everything below here... UNDER CONSTRUCTION!
 
 Git repos to clone:
-* <code>https://github.com/imagej/tutorials</code>
-* <code>https://github.com/imagej/imagej</code>
-* <code>https://github.com/scijava/scijava-common</code> (optional)
-* <code>https://github.com/imagej/imagej-ops</code> (optional)
-* <code>https://github.com/imglib/imglib2</code> (optional)
+* <code>git@github.com:imagej/example-imagej-command.git</code>
