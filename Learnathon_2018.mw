@@ -1,0 +1,32 @@
+The second DAIS Learnathon took place from June 3 until June 9 2018.
+
+==Schedule==
+
+See [https://indico.mpi-cbg.de/event/50/other-view?view=standard this page]!
+
+==Setting up your system==
+
+Check if you have this set up:
+<ul>
+  <li>Eclipse (Neon)</li>
+  <li>bash / zsh</li>
+  <li>GIT</li>
+  <li>Maven</li>
+  <li>Gitter</li>
+</ul>
+
+==Monday==
+
+===Intro session...===
+
+===Start a Maven project with Eclipse===
+
+Slides online:
+* <code>https://cloud.mpi-cbg.de/index.php/s/yoFINAFUAH8Y2jC#pdfviewer</code>
+
+Git repos to clone:
+* <code>https://github.com/imagej/tutorials</code>
+* <code>https://github.com/imagej/imagej</code>
+* <code>https://github.com/scijava/scijava-common</code> (optional)
+* <code>https://github.com/imagej/imagej-ops</code> (optional)
+* <code>https://github.com/imglib/imglib2</code> (optional)
