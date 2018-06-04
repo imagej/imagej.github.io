@@ -31,15 +31,15 @@ Git repos to clone:
 
 Notes:
 In case you want to switch to the legacy UI (ImageJ 1), you change the dependencies section in your POM to...
-<code>
-	<dependencies>
-		<dependency>
-			<groupId>net.imagej</groupId>
-			<artifactId>imagej</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>net.imagej</groupId>
-			<artifactId>imagej-legacy</artifactId>
-		</dependency>
-	</dependencies>
-</code>
+<source lang="xml">
+<dependencies>
+	<dependency>
+		<groupId>net.imagej</groupId>
+		<artifactId>imagej</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>net.imagej</groupId>
+		<artifactId>imagej-legacy</artifactId>
+	</dependency>
+</dependencies>
+</source>
