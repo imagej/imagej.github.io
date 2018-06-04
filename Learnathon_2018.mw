@@ -28,3 +28,18 @@ Ignore everything below here... UNDER CONSTRUCTION!
 
 Git repos to clone:
 * <code>git@github.com:imagej/example-imagej-command.git</code>
+
+Notes:
+In case you want to switch to the legacy UI (ImageJ 1), you change the dependencies section in your POM to...
+<code>
+	<dependencies>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej-legacy</artifactId>
+		</dependency>
+	</dependencies>
+</code>
