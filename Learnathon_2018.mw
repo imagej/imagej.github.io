@@ -41,3 +41,10 @@ In case you want to switch to the legacy UI (ImageJ 1), you change the dependenc
 	</dependency>
 </dependencies>
 </source>
+
+===Introduction to ImgLib2===
+
+Git repos to clone:
+* [https://github.com/imglib/imglib2-introductory-workshop <code>https://github.com/imglib/imglib2-introductory-workshop.git</code>]
+
+([https://github.com/imglib/imglib2-introductory-workshop/blob/master/Introduction-ImgLib2.pdf Slides] are contained in the repository.)
