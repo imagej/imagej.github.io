@@ -67,4 +67,11 @@ Git repos to clone:
 
 ===Jupyter Notebooks===
 * [https://github.com/imagej/tutorials ImageJ Tutorials]
+* Installation:
+** [https://conda.io/miniconda.html Anaconda] (we suggest miniconda) should be installed on your system.
+** Clone to a place of your choice: <code>git clone https://github.com/imagej/tutorials</code>
+** go into the tutorials folder you just cloned
+** create a conda environment: <code>conda env create</code>
+** activate the new environment: <code>source activate scijava</code>
+** start jupyter notebook: <code>jupyter notebook</code>
 * Useful link to [https://github.com/twosigma/beakerx beakerx]
