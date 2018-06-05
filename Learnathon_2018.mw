@@ -63,7 +63,10 @@ Git repos to clone:
 * [http://imagej.github.io/tutorials http://imagej.github.io/tutorials ImageJ Tutorial Notebooks]
 
 ===ImageJ Legacy===
-* [https://github.com/maarzt/imagej-legacy-course ImageJ Legacy Exercises]
+The ImageJ Legacy Course covered the topics: images, tables, regions of interest and command execution.
+* [https://github.com/maarzt/imagej-legacy-course ImageJ Legacy Exercises (Slides Included)]
+* Last years [https://github.com/maarzt/imagej-legacy-course/blob/master/slides/ij_legacy_cheetsheet.pdf cheatsheet]
+* Last years course [https://github.com/mpicbg-scicomp/ij2course-images/blob/master/slides/ij_legacy.pdf Slides] [https://github.com/mpicbg-scicomp/ij2course-images Old Exercise 1] [https://github.com/mpicbg-scicomp/ij2course-regions Old Exercise 2] [https://github.com/mpicbg-scicomp/ij2course-tables Old Exercise 3]
 
 ===Jupyter Notebooks===
 * [https://github.com/imagej/tutorials ImageJ Tutorials]
