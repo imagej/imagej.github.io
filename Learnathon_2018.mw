@@ -79,3 +79,12 @@ The ImageJ Legacy Course covered the topics: images, tables, regions of interest
 ** start jupyter notebook: <code>jupyter notebook</code>
 * Useful link to [https://github.com/twosigma/beakerx beakerx]
 * [https://github.com/imagej/imagej.py Python client for ImageJ]
+
+==Wednesday==
+
+===KNIME Usage===
+* Download and install the KNIME Analytics Platform from [https://www.knime.com/downloads/download-knime here]
+
+===KNIME Development Introduction===
+* Make sure you have Eclipse Oxygen installed
+* Clone https://github.com/knime-ip/knip-course
