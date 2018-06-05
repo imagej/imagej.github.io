@@ -90,4 +90,5 @@ The ImageJ Legacy Course covered the topics: images, tables, regions of interest
 
 ===KNIME Development Introduction===
 * Make sure you have Eclipse Oxygen installed
+* Clone https://github.com/knime-ip/knip-sdk-setup
 * Clone https://github.com/knime-ip/knip-course
