@@ -54,11 +54,11 @@ Git repos to clone:
 ==Tuesday==
 
 ===ImageJ2 and SciJava===
-Search for stuff in our ecosystem: [https://search.imagej.net https://search.imagej.net]
-[https://github.com/imagej/presentations/blob/gh-pages/2018-06-05-dais-learnathon/SciJava%20and%20ImageJ%20Ops.ipynb SciJava and ImageJ Ops Jupyter notebook / slides]
+* Search for stuff in our ecosystem: [https://search.imagej.net https://search.imagej.net]
+* [https://github.com/imagej/presentations/blob/gh-pages/2018-06-05-dais-learnathon/SciJava%20and%20ImageJ%20Ops.ipynb SciJava and ImageJ Ops Jupyter notebook / slides]
 
 ===ImageJ2 Ops===
-[http://imagej.github.io/tutorials http://imagej.github.io/tutorials ImageJ Tutorial Notebooks]
+* [http://imagej.github.io/tutorials http://imagej.github.io/tutorials ImageJ Tutorial Notebooks]
 
 ===ImageJ Legacy===
-[https://github.com/maarzt/imagej-legacy-course ImageJ Legacy Exercises]
+* [https://github.com/maarzt/imagej-legacy-course ImageJ Legacy Exercises]
