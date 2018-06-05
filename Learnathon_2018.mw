@@ -78,3 +78,4 @@ The ImageJ Legacy Course covered the topics: images, tables, regions of interest
 ** activate the new environment: <code>source activate scijava</code>
 ** start jupyter notebook: <code>jupyter notebook</code>
 * Useful link to [https://github.com/twosigma/beakerx beakerx]
+* [https://github.com/imagej/imagej.py Python client for ImageJ]
