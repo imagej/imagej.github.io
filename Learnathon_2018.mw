@@ -99,3 +99,8 @@ The ImageJ Legacy Course covered the topics: images, tables, regions of interest
 * Import <code>maven-projects/create-a-new-op</code> in Eclipse.
 * See also the [[Adding new ops]] guide
 * See also the "Extending ImageJ: Ops" notebook linked from [http://imagej.github.io/tutorials here]
+
+===ImageJ Server===
+* https://github.com/imagej/imagej-server
+* [https://github.com/imagej/imagej.py/tree/master/imagej/server imagej.server Python module]
+* [http://forum.imagej.net/t/remote-hpc-cluster-parallelization-support-in-scijava-plugins/10755 Remote HPC cluster parallelization support in SciJava plugins]
