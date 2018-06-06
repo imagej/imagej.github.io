@@ -93,3 +93,9 @@ The ImageJ Legacy Course covered the topics: images, tables, regions of interest
 * Make sure you have Eclipse Oxygen installed
 * Clone https://github.com/knime-ip/knip-sdk-setup
 * Clone https://github.com/knime-ip/knip-course
+
+===Developing ImageJ Ops===
+* Clone https://github.com/imagej/tutorials (but you already have it, right?)
+* Import maven-projects/create-a-new-op in Eclipse.
+* See also the [https://imagej.net/Adding_new_ops Adding new ops] guide
+* See also the "Extending ImageJ: Ops" notebook linked from [http://imagej.github.io/tutorials here]
