@@ -105,3 +105,13 @@ The ImageJ Legacy Course covered the topics: images, tables, regions of interest
 * [https://github.com/imagej/imagej.py/tree/master/imagej/server imagej.server Python module]
 * [https://github.com/CellProfiler/notebooks/blob/master/cellprofiler_with_imagej_server.ipynb Example Jupyter notebook using imagej-server]
 * [http://forum.imagej.net/t/remote-hpc-cluster-parallelization-support-in-scijava-plugins/10755 Remote HPC cluster parallelization support in SciJava plugins]
+
+==Thursday==
+
+=== ClearVolume and BDV VisTools===
+* [[Media:Jug_BigDataAnd3dViz.pdf|Slides]]
+* Repositories to be cloned:
+** <code>https://github.com/fjug/TutorialClearVolume.git</code>
+** <code>https://github.com/fjug/TutorialBigDataViewer.git</code>
+* ImgLib2 Cache Examples (optional): <code>https://github.com/imglib/imglib2-cache-examples.git</code>
+* Vistools live here: <code>https://github.com/bigdataviewer/bigdataviewer-vistools.git</code>
