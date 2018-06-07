@@ -115,3 +115,10 @@ The ImageJ Legacy Course covered the topics: images, tables, regions of interest
 ** <code>https://github.com/fjug/TutorialBigDataViewer.git</code>
 * ImgLib2 Cache Examples (optional): <code>https://github.com/imglib/imglib2-cache-examples.git</code>
 * Vistools live here: <code>https://github.com/bigdataviewer/bigdataviewer-vistools.git</code>
+
+=== scenery & SciView ===
+* Slides: (coming soon)
+* Repositories to be cloned:
+** <code>https://github.com/skalarproduktraum/sciview-tutorial.git</code>
+* scenery repo: <code>https://github.com/scenerygraphics/scenery</code>
+* SciView repo: <code>https://github.com/scenerygraphics/SciView</code>
