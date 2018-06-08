@@ -123,6 +123,10 @@ The ImageJ Legacy Course covered the topics: images, tables, regions of interest
 * scenery repo: <code>https://github.com/scenerygraphics/scenery</code>
 * SciView repo: <code>https://github.com/scenerygraphics/SciView</code>
 
+=== KNIME ImageJ2 Integration ===
+* Course: <code>https://github.com/knime-ip/knip-course</code> (Take a look at the README.md)
+* KNIP ImageJ2 repo: <code>https://github.com/knime-ip/knip-imagej2</code>
+
 == Friday ==
 
 === Imglib2 Algorithm ===
