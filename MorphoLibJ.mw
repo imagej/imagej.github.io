@@ -421,7 +421,7 @@ agreement (or error) between the labels. Following Tustison & Gee (2009)<ref nam
 | year = 2009
 | doi = 10.1007/BF01189221
 }}</ref>, and given a
-source image <math>S</math> and a target image <math>T</math>, this plugin provides the following overlap measurements in two different result tables (one with the total values for all labels and one with values for individual labels):
+source image <math>S</math> and a target image <math>T</math>, this plugin (under {{bc | Plugins | MorphoLibJ | Analyze | Label Overlap Measures}}) provides the following overlap measurements in two different result tables (one with the total values for all labels and one with values for individual labels):
 * Target Overlap for each individual labeled region <math>r</math>:
 :<math>TO_{r}=\frac{|S_{r}\cap T_{r}|}{|T_{r}|}</math>
 * Total Overlap (for all regions):
