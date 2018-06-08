@@ -410,6 +410,43 @@ Other measurements are provided for pairs of grayscale and label 2D or 3D images
 
 The plugin calculates the '''mean''', '''standard deviation''', '''maximum''', '''minimum''', '''median''', '''mode''', '''skewness''' and '''kurtosis''' of the intensity value distribution of each labeled region in the grayscale image. The results are displayed as well in an ImageJ ''ResultsTable''.
 
+=== Label Overlap Measures ===
+Given two label images, there are different measures that allow us to evaluate the overlap
+agreement (or error) between the labels. Following Tustison & Gee (2009)<ref name="Tustison2009>{{ cite journal
+| title =  Introducing Dice, Jaccard, and other label overlap measures to ITK
+| author = Tustison, NJ and Gee, JC
+| journal = The Insight Journal
+| pages = 1-4
+| issue = July-December
+| year = 2009
+| doi = 10.1007/BF01189221
+}}</ref>, and given a
+source image <math>S</math> and a target image <math>T</math>, this plugin provides the following overlap measurements in two different result tables (one with the total values for all labels and one with values for individual labels):
+* Target Overlap for each individual labeled region <math>r</math>:
+:<math>TO_{r}=\frac{|S_{r}\cap T_{r}|}{|T_{r}|}</math>
+* Total Overlap (for all regions):
+:<math>TO=\frac{\sum_{r}{|S_{r}\cap T_{r}|}}{\sum_{r}{|T_{r}|}}</math>
+* [https://en.wikipedia.org/wiki/Jaccard_index Jaccard Index] or Union Overlap for each individual labeled region <math>r</math>:
+:<math>UO_{r}=2\frac{|S_{r}\cap T_{r}|}{|S_{r}\cup T_{r}|}</math>
+* [https://en.wikipedia.org/wiki/Jaccard_index Jaccard Index] or Union Overlap for all regions:
+:<math>UO=2\frac{\sum_{r}|S_{r}\cap T_{r}|}{\sum_{r}|S_{r}\cup T_{r}|}</math>
+* [https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient Dice Coefficient] or Mean Overlap for each individual labeled region <math>r</math>:
+:<math>MO_{r}=2\frac{|S_{r}\cap T_{r}|}{|S_{r}|+|T_{r}|}</math>
+* [https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient Dice Coefficient] or Mean Overlap for all regions:
+:<math>MO=2\frac{\sum_{r}|S_{r}\cap T_{r}|}{\sum_{r}\left(|S_{r}|+|T_{r}|\right)}</math>
+* Volume Similarity for each individual labeled region <math>r</math>:
+:<math>VS_{r}=2\frac{|S_{r}|-|T_{r}|}{|S_{r}|+|T_{r}|}</math>
+* Volume Similarity for all regions:
+:<math>VS=2\frac{\sum_{r}\left(|S_{r}|-|T_{r}|\right)}{\sum_{r}\left(|S_{r}|+|T_{r}|\right)}</math>
+* False Negative Error for each individual labeled region <math>r</math>:
+:<math>FN_{r}=\frac{|T_{r}\setminus S_{r}|}{|T_{r}|}</math>
+* False Negative Error for all regions:
+:<math>FN=\frac{\sum_{r}|T_{r}\setminus S_{r}|}{\sum_{r}|T_{r}|}</math>
+* False Positive Error for each individual labeled region <math>r</math>:
+:<math>FP_{r}=\frac{|S_{r}\setminus T_{r}|}{|S_{r}|}</math>
+* False Positive Error for all regions:
+:<math>FP=\frac{\sum_{r}|S{}_{r}\setminus T{}_{r}|}{\sum_{r}|S_{r}|}</math>
+
 === Spatial organization ===
 The region adjacency graph plugin gives access to the neighborhood relationship between adjacent regions. This can be particularly informative for exploring collections of cells within cellular tissues (Florindo ''et al.'', 2016<ref name="Florindo2016">{{cite conference
 | title                    = Identifying plant species using architectural features in leaf microscopy images
