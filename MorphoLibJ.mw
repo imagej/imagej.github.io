@@ -404,7 +404,7 @@ The plugin calculating these measurements is found under {{bc | Plugins | Morpho
 * '''Sphericity index''': defined as <math>36\pi V^{2}/S^{3}</math>.
 * '''Inertia ellipse / ellipsoid''': returns the centroid (center of gravity) as well as the size and the orientation of the inertia ellipse or ellipsoid of each particle. Radii are sorted in decreasing order. Angles are given in degrees, and correspond to the azimut ("yaw"), the elevation ("pitch"), and the roll around the main axis.
 
-==== Intensity measurements ====
+=== Intensity measurements ===
 
 Other measurements are provided for pairs of grayscale and label 2D or 3D images ({{bc | Plugins | MorphoLibJ | Analyze | Intensity Measurements 2D/3D}}). The label image can correspond to a segmented particle, or to a more generic region of interest. 
 
