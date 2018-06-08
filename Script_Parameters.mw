@@ -153,7 +153,7 @@ By default, a <code>#@ File</code> parameter will create a chooser for a single 
 print(myFile)
 </source>
 
-You can request for multiple files as well. This was shown by [https://list.nih.gov/cgi-bin/wa.exe?A2=IMAGEJ;18cc58f.1804|a recent ImageJ Mailing List] post by Nicolas Chiaruttini.
+You can request for multiple files or folders as well.
 
 Example in ImageJ Macro Language:
 
