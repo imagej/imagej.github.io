@@ -5,7 +5,7 @@
 | software               = ImageJ/Fiji
 | source                 = {{GitHub|org=Fiji|repo=PQCT}}
 | released               = Feb 9<sup>th</sup>, 2018
-| latest version         = 2.0.0, Feb 9<sup>th</sup>, 2018
+| latest version         = 3.0.0, Jun 8<sup>th</sup>, 2018
 | status                 = stable
 }}{{TOC}}
 
@@ -263,10 +263,6 @@ To easily run the test, use the provided [http://bonej.org/images/SyntheticDataT
 # Find your .ijm file
 # When the macro has finished, you should see the Results table
 # Open the resulting file with excel or open office or some other suitable program and the results should match the ones within the Synthetic data provided above.
-
-== Known issues ==
-
-- [http://forum.imagej.net/t/stratec-pqct-cortical-density-distribution-analysis-failure-on-fiji-imagej-1-51u/9692 Errors in cortical density distribution analysis]
 
 == BoneJ and pQCT ==
 [http://bonej.org BoneJ] and pQCT are separating. If you install pQCT from the update site as described above, you won't need BoneJ. The former is still included in JAR available at bonej.org, but they will become completely independent. In the meanwhile, please don't install both pQCT from the update site, and the BoneJ JAR.
