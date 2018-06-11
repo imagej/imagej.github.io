@@ -134,3 +134,13 @@ After assigning PSFs to all the views you want to process, you can proceed with 
 *[[BigStitcher_Deconvolution|(MultiView) Deconvolution]]
 
 == Example Datasets ==
+
+We prepared a 2D and 3D version of a tiled dataset for testing the BigStitcher on a small example. We suggest to run BigStitcher on these first before applying it to your dataset. This allows you to quickly test features in an environment where you can easily ask for advice on GitHub or the ImageJ Forum. We will add a larger, multi-view, dataset as a showcase item in the future.
+
+=== 2D multi-tile dataset (2.8 MB) ===
+
+This dataset is a maximum intensity projection of the nervous system of a Drosophila larva containing 6 tiles and 3 channels each. You can download the raw input at http://preibischlab.mdc-berlin.de/BigStitcher/Grid_2d.zip and a reconstructed BigStitcher project at http://preibischlab.mdc-berlin.de/BigStitcher/Grid_2d_h5_aligned.zip. In the reconstructed project, the images were imported into the BigStitcher using the AutoLoader (with immediate resaving as HDF5 and Movement to a regular 2-by-3 grid with 10% overlap between the tiles). We calculated pairwise shifts using phase correlation with default parameters, using the precomputed 2x2 downsampling and averaging the channels. We ignored links with correlation <math><0.7</math> and calculated the final registration using the two-round global optimization with strict constraints. 
+
+===3D multi-tile dataset (123 MB) ===
+
+This dataset is a 3d confocal scan of the nervous system of a Drosophila larva containing 6 tiles and 3 channels each, channels are distributed over different files. You can download the raw input at http://preibischlab.mdc-berlin.de/BigStitcher/Grid_3d.zip and the reconstructed project at http://preibischlab.mdc-berlin.de/BigStitcher/Grid_3d_h5_aligned.zip. In the reconstructed project, we ran the same import and reconstruction steps as for the 2d dataset and in addition performed affine refinement of the registration using IPC with default parameters and simple tile refinement to create the final reconstructed project.
