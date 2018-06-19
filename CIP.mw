@@ -229,4 +229,7 @@ This section provide the main development directions as well as a list of functi
 
 * 2018-06-11 : version 0.2.1 correct a regression that prevented the visualisation of 3d regions
 
-* 2018-06-19 : version 0.2.2 correct a bug in median measure
+* 2018-06-19 : version 0.2.2 bug corrections
+** correct a bug in median measure
+** cip.project(...): change outputType parameter name to output
+** cip.project(...): correct a bug preventing to use output='both'
