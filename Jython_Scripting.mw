@@ -80,6 +80,71 @@ To read more about the used features, the following list provides links to addit
 
 {{GitHubEmbed|org=imagej|repo=imagej-scripting|path=src/main/resources/script_templates/Tutorials/Wiki_Jython_Tutorial_3.py}}
 
+=== Importing Java module and classes ===
+Another great feature of Jython is the possibility to use functions from Java jar package that resides in the jar folder of imageJ. 
+
+==== ImageJ and Fiji API ====
+ The following API documentation lists all available module and functions :
+* [http://javadoc.scijava.org/ImageJ1/ ImageJ]
+* [http://javadoc.scijava.org/Fiji/ Fiji]
+
+Those package are built-in with Fiji, but any package that resides in the jars folder can be imported provided you know the path to the class.
+
+Let's show one example with the ImageJ package and the class [http://javadoc.scijava.org/ImageJ1/ij/plugin/frame/RoiManager.html RoiManager]. According to the javadoc the RoiManager class resides in <code>ij.plugin.frame</code>. Therefore the code will look like :
+
+<code>
+from ij.plugin.frame import RoiManager
+RM = RoiManager()        # we create an instance of the RoiManager class
+rm = RM.getRoiManager()  # "activate" the RoiManager otherwise it can behave strangely 
+</code>
+
+==== Using openCV in Jython ====
+It is even possible to use most of opencv functionalities within Jython: For that the most simple is to enable the IJopenCV update site that will automatically download the necessary packages. 
+
+A manual installation is also possible by putting the jar packages in the jar folder of imageJ. They are avalaible on the [https://github.com/joheras/IJ-OpenCV IJopenCV github], which even provides a maven option. '''NB : the version on Github and the update sites are not identical and not compatible''' 
+
+The 1st things to know about openCV is that most functions works with openCV matrix object. Hopefully, the IJopenCV provides a converter :
+<source lang="python">
+#@ ImagePlus ImP 
+from ijopencv	import ImageConverter
+
+Converter = ImageConverter() # create an instance of the converter
+
+# Convert to a matrice
+ImCv = Converter.convertTo(ImP)
+
+# Do some processing in openCV
+#...
+# Convert back to an ImagePlus
+ImP2 = Converter.convertFrom(ImCv)
+</source>
+
+Such kind of converter is also available for PointRoi to opencv keypoints...
+
+Now to use opencv function, we use the [http://bytedeco.org/javacpp-presets/opencv/apidocs/ JavaCPP API] that contains almost all functions of opencv.
+An simple example : creating an identity matrix of size 3x3
+ 
+<source lang="python">
+from org.bytedeco.javacpp.opencv_core	import Mat,CvMat
+
+Id = Mat().eye(3,3,0).asMat()
+
+print Id
+print CvMat(Id) # nice to visualise the matrix
+</source>
+NB : The <code>org.bytedeco.javacpp.opencv_core.Mat</code> object is different than the <code>org.opencv.core.Mat</code> !! They dont have exactly the same attributes and functions. In Fiji we always use the <code>org.bytedeco.javacpp.opencv_core.Mat</code>.
+
+Similarly there is some apparent redudancy for the function in the javacpp API. ex : Transform exists in 3 different places :
+* <code>org.opencv.core.Core.transform</code>
+This one takes <code>org.opencv.core.Mat</code> as input. It is currently challenging to have such object in Fiji.
+
+* <code>org.bytedeco.javacpp.opencv_core.cvTransform</code>
+using <code>CvArr</code> as input, but even if you manage to convert your input as a <code>CvArr</code> it crashes Fiji. Apparently it is a deprecated version.
+
+* <code>org.bytedeco.javacpp.opencv_core.transform</code>
+That's the one to use ! It takes only <code>org.bytedeco.javacpp.opencv_core.Mat</code> as input, which is the most approriate in Fiji/Jython 
+
+
 == Self written Jython modules for ImageJ ==
 
 In Jython you can write all commands line by line in a single file and execute it. To create a neat program, [https://docs.python.org/2/tutorial/controlflow.html#defining-functions functions] and [https://docs.python.org/2/tutorial/classes.html classes] can be used to structure code. To prevent using copy&past for regularly used functions and classes, [https://docs.python.org/2/tutorial/modules.html modules] are the way to choose. Modules are files that contain functions and classes to import into other files.
