@@ -86,7 +86,10 @@ ImageJ2 is funded from a variety of sources. See the [[Funding]] page for detail
 For the moment, we suggest using "The ImageJ ecosystem" paper for citations. But we recommend both of the above for learning about ImageJ2 in depth.
 
 == Presentations ==
-* "The ImageJ2 platform, and the Fiji distribution of ImageJ" [ [https://vimeo.com/140929687 video], [https://imagej.github.io/presentations/2015-09-03-imagej2-and-fiji/ slides] ]
+* 2017-Feb-16 "What's New in ImageJ2?" [ [http://imagej.github.io/presentations/2017-02-16-imagej2-neubias/ slides] ]
+* 2015-Sep-03 "The ImageJ2 platform, and the Fiji distribution of ImageJ" [ [https://vimeo.com/140929687 video], [https://imagej.github.io/presentations/2015-09-03-imagej2-and-fiji/ slides] ]
+* 2012-Oct-24 "ImageJ2: Current Status and Future Directions" [ [http://conference.imagej.net/2012/curtis-rueden/2012-10-24-imagej-conference.odp slides] ]
+* 2010-Oct-27 "ImageJDev: Next Generation ImageJ" [ [http://conference.imagej.net/2010/curtis-rueden/2010-10-27-ImageJDev.pdf slides] ]
 
 [[Category:Software]]
 [[Category:ImageJ2]]
