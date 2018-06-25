@@ -175,8 +175,10 @@ This is a modification of Sauvola's thresholding method to deal with low contras
 | first4 = M
 | year = 2011
 | journal = International Conference on Communications and Signal Processing (ICCSP)
+| url = https://ieeexplore.ieee.org/document/5739305/
 | pages = 218-220
 | title = Adaptive local thresholding for detection of nuclei in diversity stained cytology images. 
+| doi = 10.1109/ICCSP.2011.5739305
 }}
 
 In this method, the threshold t is computed as:
