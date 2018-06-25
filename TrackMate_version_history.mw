@@ -345,3 +345,11 @@ Noted by Hadrien Mary.
 
 * Fix improper image factory for very large images.
 Noted by Christian Tischer.
+
+== 25/06/2018 - v3.8.0 ==
+
+* As advised by @ctrueden: do not use java.awt.Robot for capture, but instead directly paint into a BufferedImage. The capture is now much quicker (as fast as painting, no need to wait), more robust, and the code as fewer lines as well. It is so perfect that I wonder why I could not think of this before.
+
+* Set the calibration properly, even if this is a capture.
+
+* And give a better title to the imp.
