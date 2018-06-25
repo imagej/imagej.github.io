@@ -1,30 +1,35 @@
 {{Learn | scripting}}{{TOC}}
 = Overview =
 
-A fundamental benefit to creating [[Scripting|scripts and macros]] in [[ImageJ]] is the ability to reuse their functionality on more than one image. Although this can be done manually, there are multiple ways to easily automate this batch processing.
+A fundamental benefit to creating [[Scripting|scripts and macros]] in [[ImageJ]] is the ability to **reuse** their functionality **on more than one image**. Although this can be done manually, there are multiple ways to easily automate this batch processing.
 
 = General workflow =
 
-# Create a basic macro which operates on the active image.
+# Create a basic macro/script which operates on the active image or on a single file.
 #* The [[Introduction into Macro Programming#The_recorder|macro recorder]] is an excellent way to generate macro code.
 #* The [[Introduction into Macro Programming]] explains the principles of macro writing.
 # Apply your macro to a group of images.
 #* These images do not need to be open in ImageJ already—they will be read in as part of the batch process.
 #* See below for details.
 
-= Easy option =
+= Option 1 - {{bc | Process | Batch | Macro...}} =
 
 The fastest way to start batch conversion is via the [http://imagej.net/docs/guide/146-29.html#toc-Subsubsection-29.12.3 {{bc | Process | Batch | Macro...}}] command. This will open a dialog (below) that will allow you to specify an input and output directory. You can select an output file format, and then use the <code>Add Macro Code</code> drop-down to generate a macro with the desired functionality.
 
 [[Image:BatchProcess.png|center]]
 
-= Flexible option =
+= Option 2 - Script Template =
 
 Open the [[Using_the_Script_Editor|script editor]], select {{bc | Templates | ImageJ 1.x | Batch | Process Folder (IJ1 Macro)}}. This will generate the following boilerplate:
 
 [[Image:Process_folder_ij1.png|center|762px]]
 
 Lines 26 and 27 can now be edited, replaced with the functional macro code you would like to apply to all images of a given type in a folder. Furthermore you can now modify the batch processing logic itself, for example if you need to customize what (if any) output information is saved.
+
+= Option 3 - Batch Processing with Script Parameters =
+
+{{Notice|This section is currently being expanded to document the current state of the [https://github.com/scijava/batch-processor/ SciJava Batch Processor]. The Batch Processor is a new addition to the SciJava/ImageJ framework. If you encounter any issues, please report/ask on the [[forum]].}}
+
 
 = See also =
 
