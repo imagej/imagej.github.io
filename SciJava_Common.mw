@@ -32,6 +32,7 @@ Here are a few of SciJava Common's major core services:
 * '''{{Javadoc | project = SciJava | package = org/scijava/options | class = OptionsService}}''' - Tools for managing program settings.
 * '''{{Javadoc | project = SciJava | package = org/scijava/platform | class = PlatformService}}''' - Provides hooks for extending the application's behavior depending on the deployment platform (operating system, version of Java, etc.).
 * '''{{Javadoc | project = SciJava | package = org/scijava/plugin | class = PluginService}}''' - Tracks available plugins, and provides the infrastructure for executing them (using the {{Javadoc | package = org/scijava/module | class = ModuleService}}).
+* '''{{Javadoc | project = SciJava | package = org/scijava/script | class = ScriptService}}''' - Provides utilities for running scripts and macros.
 * '''{{Javadoc | project = SciJava | package = org/scijava/app | class = StatusService}}''' - Publishes status updates for ongoing operations.
 * '''{{Javadoc | project = SciJava | package = org/scijava/thread | class = ThreadService}}''' - Manages multithreading.
 * '''{{Javadoc | project = SciJava | package = org/scijava/tool | class = ToolService}}''' - Tracks available tools—logic binding user input to behavior—as well as the active tool (selected on the toolbar).
