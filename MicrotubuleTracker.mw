@@ -107,3 +107,11 @@ After completing the analysis for one directory of trajectory files the user can
 
 [[Image:Ransacfirst.png|600px]]
 Click here to see some examples of the [[MTrack-Ransac fits]].
+
+== Example ==
+
+An example movie showing several growing/shrinking microtubules is available for download [here]. To perform the analysis of this movie we suggest using the following parameters, listed in order they have to be selected in the GUI:
+
+# Put the example file 'MTrack_Demo.tif' into an empty directory, the results will be stored here
+# Run the MicroTubule Tracker
+# Select 'Simple Mode', 'Concatenated Seed Image followed by time-lapse images', choose the file, microscope parameters are automatically loaded from file
