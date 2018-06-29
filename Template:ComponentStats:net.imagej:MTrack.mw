@@ -8,7 +8,7 @@
 | date = Wed Jul 19 12:00:45 CDT 2017
 | devStatus = {{DevStatus | developer=yes | incubating=no | obsolete=no}}
 | supportStatus = {{SupportStatus | debugger=yes | reviewer=yes | support=yes}}
-| founders = {{Person|StephanP}}, {{Person|SimoneR}}, {{Person|VarunKapoor}}
+| founders = {{Person|SimoneR}}, {{Person|StephanP}}, {{Person|VarunKapoor}}
 | leads = {{Person|VarunKapoor}}
 | developers = {{Person|VarunKapoor}}, {{Person|StephanP}}
 | debuggers = {{Person|VarunKapoor}}, {{Person|StephanP}}, {{Person|SimoneR}}, {{Person|WillH}}, {{Person|ChristophH}}
