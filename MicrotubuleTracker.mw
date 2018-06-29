@@ -116,5 +116,6 @@ An example movie showing several growing/shrinking microtubules is available for
 # The ''correct endpoints of 6 microtubule seeds will be identified'' (one is too short and could be added manually), click '''Next>''' to continue
 # Click '''Confirm the end(s) and track''' to process all 241 time-points, the expected runtime is around 6-7 min.
 ## Note the few warnings of missed assignments can be safely ignored, these timepoints will simply be missing, which does not create any further problems as long as it is not happening in the majority of cases.
+# You are now able to review the tracking results in the ImageJ windows, click '''Enter RANSAC stage>''' to continue
 
 == References ==
