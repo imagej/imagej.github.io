@@ -111,7 +111,8 @@ An example movie showing several growing/shrinking microtubules is available for
 
 # Put the example file '''MTrack_Demo.tif''' into an empty directory, the results will be stored here
 # Run the MicroTubule Tracker
-# Select '''Simple Mode''', '''Concatenated Seed Image followed by time-lapse images''', choose the file, microscope parameters are automatically loaded from file, and finally click '''Next>'''
+# Select '''Simple Mode''', '''Concatenated Seed Image followed by time-lapse images''', choose the file, microscope parameters are automatically loaded from file, and finally click '''Next>''' to continue
 # Using the default MSER parameters ''7 microtubule seeds will be identified'', click '''Find Endpoints''' to continue
+# The ''correct endpoints of 6 microtubule seeds'' (one is too short and could be added manually) will identified, click '''Next>''' to continue
 
 == References ==
