@@ -119,6 +119,7 @@ An example movie showing several growing/shrinking microtubules is available for
 # You are now able to review the tracking results in the ImageJ windows, click '''Enter RANSAC stage>''' to continue
 # Click '''Select directory of MTrack generated files''' and select the directory that now contains all the text files with the tracking results
 # To adjust the parameters to automatically derive microtubule dynamics '''select one of the microtubule seed end points''', for example '''MTrack_DemoSeedLabel1Plus.txt''', which will be displayed in the '''Microtubule Length Plot''' window
-# Since shorter growth events are identified with the standard parameters, change the '''Minimum number of timepoints to 20 using the slider or by typing it and pressing return'''
+# Since shorter growth events are not identified using the standard parameters, change the '''Minimum number of timepoints to 20''' using the slider or by typing it and pressing return
+# Optionally, change the '''Linear Function (only)''' to '''Linearized Quadratic Function''' to achieve a fit with a lower error
 
 == References ==
