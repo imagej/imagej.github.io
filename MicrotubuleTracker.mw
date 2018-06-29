@@ -114,7 +114,7 @@ An example movie showing several growing/shrinking microtubules is available for
 # Select '''Simple Mode''', '''Concatenated Seed Image followed by time-lapse images''', choose the file, microscope parameters are automatically loaded from file, and finally click '''Next>''' to continue
 # Using the default MSER parameters ''7 microtubule seeds will be identified'', click '''Find Endpoints''' to continue
 # The ''correct endpoints of 6 microtubule seeds will be identified'' (one is too short and could be added manually), click '''Next>''' to continue
-# Click '''Confirm the end(s) and track''' to process all 241 time-points, the expected runtime is around 3 min.
+# Click '''Confirm the end(s) and track''' to process all 241 time-points, the expected runtime is around 6-7 min.
 ## Note the few warnings of missed assignments can be safely ignored, these timepoints will simply be missing, which does not create any further problems as long as it is not happening in the majority of cases.
 
 == References ==
