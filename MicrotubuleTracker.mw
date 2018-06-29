@@ -5,7 +5,7 @@ MTrack is a tool, which detects, tracks, and measures the behavior of fluorescen
 
 MTrack is a bi-modular tool. The first module detects microtubule seeds and tracks the growing microtubule ends and creates trajectories. The second module uses these trajectories to fit models of dynamic behavior (polymerization and depolymerization velocities, catastrophe and rescue frequencies) and is able to compute population statistics such as length distributions.
  
- Click here to download a demo TIRF movie, which you can use to make yourself familiar with MTrack. Click here for a step-by-step guide to use the demo movie.
+ To make yourself familiar with MTrack, please consult the [[Example]] section below.
 
 
 Logo designed by Tobias Kletter.
