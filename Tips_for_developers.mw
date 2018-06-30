@@ -276,6 +276,9 @@ rt.addValue("bratwurst", -1);
 rt.show("Results");
 </source>
 
+== How to find equivalent API commands between ImageJ1 and ImageJ2?==
+[[ImageJ1-ImageJ2 cheat sheet]] is available.
+
 = Tips for Graphical User Interface (GUI) programming =
 
 == Programming with Swing components ==
