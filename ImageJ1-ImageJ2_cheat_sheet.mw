@@ -21,6 +21,34 @@ ij.ui().showUI();</source>
 |<source lang="java">Img<T> realImg = ImageJFunctions.wrapReal(imp);</source>
 <source lang="java">Img<FloatType> floatImg = ImageJFunctions.convertFloat(imp);</source>
 <source lang="java">Img<FloatType> realImg2 = ImageJFunctions.wrap(imp);</source>
+|-
+|Show regions
+|<source lang="java">imagePlus.setRoi(roi)</source>
+|<source lang="java">Img<BitType> mask; // = ...
+ImagePlus maskImp =ImageJFunctions.wrap(mask, "mask");
+// threshold the mask to get an ROI
+ImageProcessor imageProcessor = maskImp.getProcessor();
+imageProcessor.setThreshold(128,128,ImageProcessor NO_LUT_UPDATE);
+Roi roi = new ThresholdToSelection().convert(imageProcessor);
+imagePlus.setRoi(roi);</source>
+|-
+|Run plugins
+|<source lang="java">IJ.run(imagePlus,"Normalisation","");</source>
+|<source lang="java">ij.command().run(ImageNormalizerIJ2Plugin.class,false, new Object[]{"input", img, "ij", ij});
+IJ.run(imagePlus,"Normalisation (IJ2)", "");
+// don't forget the IJ legacy dependency
+<dependency>
+  <groupId>net.imagej</groupId>
+  <artifactId>imagej-legacy</artifactId>
+</dependency></source>
+|-
+|Define plugins
+|<source lang="java">public class ImageNormalizerPlugin implements PluginFilter {
+resources/plugins.config:
+Pluins>Filtering, "Normalisation", NormalizerPlugin
+}</source>
+|<source lang="java">@Plugin(type = Command.class, menuPath = "Plugins>Normalization")
+public class ImageNormalizerIJ2Plugin implements Command {</source>
 |}
 
 
