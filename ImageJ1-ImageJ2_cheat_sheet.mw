@@ -1,7 +1,7 @@
 This page summarizes translation of basic operations of ImageJ1 and ImageJ2 API. Based on the work of Robert Hasse, Scientific Computing Facility, MPI CBG Dresden.
 
 {| class="wikitable"
-! style="text-align:left;"| Item
+! style="text-align:left;"| Task
 ! ImageJ1
 ! ImageJ2
 |-
