@@ -18,7 +18,7 @@ ij.ui().showUI();</source>
 |-
 |Convert image types
 |<source lang="java">ImagePlus imp = ImageJFunctions.wrap(img,"Title");</source>
-|<source lang="java">Img<T> realImg = ImageJFunctions.wrapReal(imp);<source>
+|<source lang="java">Img<T> realImg = ImageJFunctions.wrapReal(imp);</source>
 <source lang="java">Img<FloatType> floatImg = ImageJFunctions.convertFloat(imp);</source>
 <source lang="java">Img<FloatType> realImg2 = ImageJFunctions.wrap(imp);</source>
 |}
