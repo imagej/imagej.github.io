@@ -178,6 +178,10 @@ Yes, although it is not recommended. You will lose most of the advantages of Ima
 
 Yes, see the [https://github.com/imagej/tutorials/tree/master/maven-projects/call-modern-from-legacy call-modern-from-legacy] tutorial example.
 
+== How do I find equivalent commands between ImageJ1 and ImageJ2 API? ==
+
+[[ImageJ1-ImageJ2 cheat sheet]] is available.
+
 = [[Fiji]] =
 
 == What is the difference between Fiji and ImageJ? ==
