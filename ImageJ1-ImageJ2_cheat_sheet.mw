@@ -1,0 +1,31 @@
+This page summarizes translation of basic operations of ImageJ1 and ImageJ2 API. Based on the work of Robert Hasse, Scientific Computing Facility, MPI CBG Dresden.
+
+{| class="wikitable"
+! style="text-align:left;"| Item
+! ImageJ1
+! ImageJ2
+|-
+|Starting ImageJ
+|<source lang="java">ij.ImageJ</source>
+|<source lang="java">ImageJ ij = new net.imagej.ImageJ();
+ij.ui().showUI();</source>
+|-
+|Show images
+|<source lang="java">imagePlus.show()</source>
+|<source lang="java">ij.ui().show(testImg);</source>
+<source lang="java">ImageJFunctions.show(testImg);</source>
+<source lang="java">ImageJFunctions.wrap(testImg,"testImg").show();</source>
+|-
+|Convert image types
+|<source lang="java">ImagePlus imp = ImageJFunctions.wrap(img,"Title");</source>
+|<source lang="java">Img<T> realImg = ImageJFunctions.wrapReal(imp);<source>
+<source lang="java">Img<FloatType> floatImg = ImageJFunctions.convertFloat(imp);</source>
+<source lang="java">Img<FloatType> realImg2 = ImageJFunctions.wrap(imp);</source>
+|}
+
+
+
+== See also ==
+
+
+https://github.com/mpicbg-scicomp/ij2course-images/blob/master/slides/ij_legacy_cheetsheet.pdf
