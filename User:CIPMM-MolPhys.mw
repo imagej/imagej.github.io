@@ -17,6 +17,7 @@ The main purpose of LRoi is to create equally sized regions of interest (ROIs) a
 
 Open the LRoi plugin and specify the number of ROIs you want to create, the ROI width and height.
 
+[[File:LRoi.png]]
 
 
 The ROI height is used to adjust the length of your seed line w.r.t. its center point. This can be used as an drawing aid, since it might sometimes be difficult to draw a line with a speciffic length by hand.
@@ -24,6 +25,7 @@ LRoi ensures, that your seeding line will have the exact length you specified.
 
 This line is then subdivided into the number of ROIs you want to create with your specified width.
 
+[[File:ROIs.png]]
 
 == Advanced usage ==
 Besides creating equally sized ROIs along a seeding line, LRoi also allows to create ROIs perpendicular to that line, cross-shaped, as a regular grid or custom sized grid.
