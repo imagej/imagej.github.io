@@ -1,4 +1,5 @@
 Welcome!
+
 This is the official plugin repository of hte department of molecular physiology at the Center for Integrative Physiology and Molecular Medicine (CIPMM) at Saarland University.
 
 Currently, this repository contains a plugin called 'LRoi', which helps you creating sets of equally sized ROIs.
@@ -10,9 +11,9 @@ You can install LRoi (and all future plugins) by simply adding the following upd
 
 == Usage ==
 The main purpose of LRoi is to create equally sized regions of interest (ROIs) along a seeding line (hence LRoi). To create a number of ROIs, simply select the line drawing tool of ImageJ and draw a line on an opened image or image stack.
-Open the LRoi plugin and specify the number of ROIs you want to create, the ROI width and the ROI height.
+Open the LRoi plugin and specify the number of ROIs you want to create, the ROI width and height.
 
-The ROI height is used to adjust the length of your seed line w.r.t. its center point. This is can be used as an drawing aid, since it might sometimes be difficult to draw line of a speciffic length by hand.
+The ROI height is used to adjust the length of your seed line w.r.t. its center point. This can be used as an drawing aid, since it might sometimes be difficult to draw a line with a speciffic length by hand.
 LRoi ensures, that your seeding line will have the exact length you specified.
 
 This line is then subdivided into the number of ROIs you want to create with your specified width.
@@ -21,7 +22,7 @@ This line is then subdivided into the number of ROIs you want to create with you
 == Advanced usage ==
 Besides creating equally sized ROIs along a seeding line, LRoi also allows to create ROIs perpendicular to that line, cross-shaped, as a regular grid or custom sized grid.
 
-These advanced ROI creation schemes can be activated by simply clicking the respective checkbox.
+These advanced ROI creation schemes can be activated by simply clicking the respective checkbox in the LRoi window.
 Regular ROI grids are defined by the number of pixels they should include (If you define a grid size of 8, each grid cell will be 8 by 8 pixels large).
 
 Custom ROI grids on the other hand ar defined by specifying the number of columns and rows of the desired ROI grid.
