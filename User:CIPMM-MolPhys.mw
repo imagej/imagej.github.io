@@ -12,7 +12,7 @@ You can install LRoi (and all future plugins) by simply adding the following upd
 == Usage ==
 The main purpose of LRoi is to create equally sized regions of interest (ROIs) along a seeding line (hence LRoi). To create a number of ROIs, simply select the line drawing tool of ImageJ and draw a line on an opened image or image stack.
 
-[[File:LineTool.png]]
+[[File:LineTool.png]] [[File:SeedingLine.png]]
 
 
 Open the LRoi plugin and specify the number of ROIs you want to create, the ROI width and height.
