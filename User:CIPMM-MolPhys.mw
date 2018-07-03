@@ -25,7 +25,7 @@ LRoi ensures, that your seeding line will have the exact length you specified.
 
 This line is then subdivided into the number of ROIs you want to create with your specified width.
 
-[[File:ROIs.png]]
+[[File:ROIs_example.png]]
 
 == Advanced usage ==
 Besides creating equally sized ROIs along a seeding line, LRoi also allows to create ROIs perpendicular to that line, cross-shaped, as a regular grid or custom sized grid.
