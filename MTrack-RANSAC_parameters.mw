@@ -2,7 +2,7 @@ RANSAC is a non-deterministic algorithm that fits a function to data points by m
 
 * Max Error (in pixels) : This determines the maximum tolerance of RANSAC fits on both events, growth (red) and shrinkage (blue) events. A high maximum error value will classify more data points as inliers, a low maximum error will classify more data points as outliers.inliers.
 
-* Minimum number of time points : This determines the minimum number of data points that define a growth event. If you choose 20, only events that last for 20 time points will be considered to be a growth event. Shrinkage events, on the opposite, are much shorter and are allowed to last only 2 data points. This of course will heavily depend on the 
+* Minimum number of time points : This determines the minimum number of data points that define a growth event. If you choose 20, only events that last for 20 time points will be considered to be a growth event. Shrinkage events, on the opposite, are much shorter and are allowed to last only 2 data points. 
 
 * Maximum gap : This determines the number of time points to define two consecutive events as independent events.
 
