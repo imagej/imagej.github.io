@@ -26,6 +26,22 @@ There are three threshold methods currently implemented
 
 Please see the publication '''van Hell and Schatz, Fourier shell correlation threshold criteria, Journal of Structural Biology 151, 2005'''<ref>{{Cite journal| doi = 10.1016/j.jsb.2005.05.009| issn = 1047-8477| volume = 151| issue = 3| pages = 250–262| last1 = van Heel| first1 = Marin| last2 = Schatz| first2 = Michael| title = Fourier shell correlation threshold criteria| journal = Journal of Structural Biology| date = 2005-09}}</ref> for more information on the calculation of these criteria.
 
+= Updates =
+===July 2018===
+Following information kindly provided by Alex Herbert and Miguel Lermo, we have proceeded to correct the following bugs
+
+# FRC_ Plugin was added to package ch.epfl.biop.frc (instead of no package)
+# POM was updated to use latest pom-scijava version
+# FIRE number is now computed correctly by checking image size
+# Images are ensured to be a multiple of two by adding one pixel of padding as needed
+# Angles are converted to radians, ensuring a better radial sampling
+
+
+These bugs were present in the first FRC code we had adapted for this plugin, and were recently brought to our attention. In case your images are not powers of two, check the value of the FIRE number as it might not be correct with the previous version of the code. 
+
+
+If you are using FRC to compare different images or conditions, and your images do not change size, then the relative differences are still perfectly valid, but absolute values might be off.
+
 === Image Calibration ===
 We recommend you use a calibrated image so that your results are in calibrated units (microns, millimeters, etc..) directly. The plugin will always return both the non calibrated values and the calibrated ones as separate columns.
 
