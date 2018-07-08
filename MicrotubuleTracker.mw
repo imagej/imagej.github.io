@@ -126,5 +126,9 @@ An example movie showing several growing/shrinking microtubules is available for
 # To adjust the parameters to automatically derive microtubule dynamics '''select one of the microtubule seed end points''', for example '''MTrack_DemoSeedLabel1Plus.txt''', which will be displayed in the '''Microtubule Length Plot''' window
 # Since shorter growth events are not identified using the standard parameters, change the '''Minimum number of timepoints to 20''' using the slider or by typing it and pressing return
 # Optionally, change the '''Linear Function (only)''' to '''Linearized Quadratic Function''' to achieve a fit with a lower error
-
+==Citation==
+Please note that MTrack is available through Fiji, and is based on a publication. If you use it
+successfully for your research please be so kind to cite our work:
+Varun Kapoor, William G. Hirst, Christoph Hentschel, Stephan Preibisch and Simone Reber,
+“MTrack: Automated Detection and Tracking of Dynamic Microtubules” (BioRvix)
 == References ==
