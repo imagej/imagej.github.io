@@ -46,6 +46,7 @@ Please choose an output file name and directory. The trajectory files will be wr
 ==== Microscope Parameters====
 The program automatically reads the metadata shown as pixel size (micrometer in x and y) and frame rate (in seconds). If the metadata could not be read properly, the user can change the values. In addition, the user is asked to enter the Sigma(X) and Sigma(Y) of the Point-Spread-Function (PSF) of the microscope in pixel units see here for [[more explanation]]. For your convenience, our software comes with an inbuilt PSF analyzer tool, which
 can optionally determine the PSF of your microscope from bead images by fitting a Gaussian function.
+When you input any parameters, please ensure that you use decimal number formatting only.
 
 ==== Preprocessing====
 As mentioned before, for recognizing microtubules in the image, preprocessing is essential, in advanced mode we provide the user with an option to do pseudo-flat field correction and to apply a median filter of certain radius (e.g. r=2 pixels). Optionally user can load their own preprocessed movie.
