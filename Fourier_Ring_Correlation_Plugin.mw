@@ -27,7 +27,11 @@ There are three threshold methods currently implemented
 Please see the publication '''van Hell and Schatz, Fourier shell correlation threshold criteria, Journal of Structural Biology 151, 2005'''<ref>{{Cite journal| doi = 10.1016/j.jsb.2005.05.009| issn = 1047-8477| volume = 151| issue = 3| pages = 250–262| last1 = van Heel| first1 = Marin| last2 = Schatz| first2 = Michael| title = Fourier shell correlation threshold criteria| journal = Journal of Structural Biology| date = 2005-09}}</ref> for more information on the calculation of these criteria.
 
 = Updates =
-===July 2018===
+
+=== January 2018 ===
+The plugin was moved to a new location, to help sort our plugins.
+
+=== July 2018 ===
 Following information kindly provided by Alex Herbert and Miguel Lermo, we have proceeded to correct the following bugs
 
 # FRC_ Plugin was added to package ch.epfl.biop.frc (instead of no package)
@@ -54,14 +58,14 @@ This places it in a "BIOP" Folder in the plugins directory of Fiji/ImageJ
 === Direct Use ===
 [[File:frc-dialog-std.png |500px|thumb|right|Plugin Dialog choices Standard Use]]
 
-Call up the plugin using ''Plugins->BIOP->FRC->FRC Calculation...''.
+Call up the plugin using ''Plugins->BIOP->Image Analysis->FRC->FRC Calculation...''.
 
 You need two images open to perform the FRC. 
 
 === Batch Mode ===
 [[File:Frc-dialog-batch.png |500px|thumb|right|Plugin Dialog choices in Batch mode]]
 
-There is also a Batch Option under ''Plugins->BIOP->FRC->FRC Calculation (Batch)...''
+There is also a Batch Option under ''Plugins->BIOP->Image Analysis->FRC->FRC Calculation (Batch)...''
 
 This dialog needs two folders. 
 The plugin will open one folder, and perform the FRC for each image that has an image in the second folder '''with the same name'''.
