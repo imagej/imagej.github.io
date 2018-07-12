@@ -111,7 +111,7 @@ Click here to see some examples of the [[MTrack-Ransac fits]].
 
 == Example ==
 
-An example movie with several dynamic microtubules is available for download [here]. To perform the analysis of this movie:
+An example movie with several dynamic microtubules is available for download [http://preibischlab.mdc-berlin.de/download/MTrack/MTrack_Demo.tif.zip here]. To perform the analysis of this movie:
 
 # Put the demo movie '''MTrack_Demo.tif''' into an empty directory, the results will also be stored here.
 # To run the MicroTubule Tracker.
@@ -127,6 +127,7 @@ An example movie with several dynamic microtubules is available for download [he
 # To adjust the parameters to automatically derive microtubule dynamics '''select one of the microtubule seed end points''', for example '''MTrack_DemoSeedLabel1Plus.txt''', which will be displayed in the '''Microtubule Length Plot''' window
 # Since shorter growth events are not identified using the standard parameters, change the '''Minimum number of timepoints to 20''' using the slider or by typing it and pressing return
 # Optionally, change the '''Linear Function (only)''' to '''Linearized Quadratic Function''' to achieve a fit with a lower error
+
 ==Citation==
 Please note that MTrack is available through Fiji, and is based on a publication. If you use it
 successfully for your research please be so kind to cite our work:
