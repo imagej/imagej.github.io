@@ -23,7 +23,7 @@ See [http://loci.wisc.edu/software/bio-formats LOCI's Bio-Formats site] for a hi
 
 What follows is a brief overview of the available plugins. You will find them all under the "Bio-Formats" submenu of Plugins. See the [http://www.openmicroscopy.org/site/products/bio-formats Bio-Formats web site] for additional information about Bio-Formats in general.
 
-See especially the [http://www.openmicroscopy.org/site/support/bio-formats/users/user-info.html#using-bio-formats-with-imagej-and-fiji Using Bio-Formats] page for detailed instructions.
+See especially the [https://docs.openmicroscopy.org/bio-formats/5.9.0/users/imagej/load-images.html#using-bio-formats-to-load-images-into-imagej Using Bio-Formats] page for detailed instructions.
 
 === Bio-Formats Importer ===
 
