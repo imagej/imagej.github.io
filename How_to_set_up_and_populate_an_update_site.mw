@@ -118,6 +118,13 @@ Once your login information is set you can ''Close'' the update site window.
 Click on the ''Advanced mode'' button and set the view options to see your plugins:
 
 * If your have never uploaded your plugins, select ''View local-only files''
+'''For .ijm macro''', the files must be located in the ''macro'' or ''scripts'' folder (or any subfolder in it). 
+ 
+'''For .py scripts''', they can be either in the ''Jars/Lib'' or ''scripts'' folder (or any subfolder).
+
+Out of those folder, the updater might not see them.
+
+
 * If you are uploading new versions of your plugins, select ''View locally modified files only''
 
 In this case, the plugin we'll be uploading is contained in ''A_Jolly_Useful_Plugin.jar''.
