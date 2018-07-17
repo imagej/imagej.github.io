@@ -7,7 +7,7 @@
 | latest version         = 15. October 2015
 | source                 =[https://github.com/biovoxxel/BioVoxxel_Toolbox GitHub]
 | category               = [[:Category:Particle analysis|Particle analysis]], [[:Category:Binary|Binary]], [[:Category:Filtering|Filtering]]
-}}You can setup an automatic update for the BioVoxxel Toolbox. Just run the [[Updater]] ({{bc | Help | Update...}}) and switch in the main window to 'Advanced mode'. Then click on 'Manage update sites'. Here you simply need to activate the "BioVoxxel" [[update site]].
+}}You can setup an automatic update for the BioVoxxel Toolbox. Just run the [[Updater]] ({{bc | Help | Update...}}) and switch in the main window to 'Advanced mode'. Then click on 'Manage update sites'. Here you simply need to activate the "BioVoxxel". See here how to follow an update site [http://imagej.net/Following_an_update_site follow an update site]
 
 You will find all functions of the BioVoxxel Toolbox under the icon of the green BioVoxxel cube after selecting BioVoxxel Toolbox from the More Tools Icon (last Icon in the ImageJ/Fiji Icon list with the double arrow).
 
