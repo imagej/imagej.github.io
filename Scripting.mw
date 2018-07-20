@@ -118,6 +118,14 @@ If you aren't able to find your script, you can always run the [[Using_the_Comma
 
 Commands added to the menu in the described way can be called from other scripts. Use the [[macro recorder]] to get the required code for doing so.
 
+== Adding Jar-packaged scripts to the menu ==
+
+Scripts can be packaged in a JAR file for easier distribution to your colleagues and via Update Manager. For this purpose, [https://github.com/imagej/example-script-collection example-script-collection] can be used as a template Maven project. 
+
+Inside the example-script-collection jar, the scripts are in <code>./resources/scripts.</code>  and therefore get added to the menu when the jar is on the classpath (i.e. in <code>./plugins/</code> or <code>./jars/</code>).
+
+ImageJ2 (and therefore Fiji) looks for scripts in subfolders of <code>./scripts/</code> as it is already described in the previous section, and for jars in <code>./jars/</code>. ImageJ1 recognizes plugins and scripts in <code>./plugins/</code>
+
 = Running scripts in headless mode =
 
 See the [[Scripting Headless]] page for instructions on executing scripts headlessly.
