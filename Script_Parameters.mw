@@ -180,6 +180,14 @@ for (i=0;i<listOfPaths.length;i++) {
 
 The exact same code works for the [[Macros|ImageJ1 Macro language]], too.
 
+If you want to select files only, use a <code>style</code> property:
+
+<source lang="python">
+#@ File(label="Select a file", style="file") myFile
+
+print(myFile)
+</source>
+
 You can set restrictions on accepted file types based on file extension (using a <code>style</code> property):
 
 <source lang="python">
