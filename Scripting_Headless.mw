@@ -30,7 +30,13 @@ we could run this script with the command:
 ./ImageJ-linux64 --ij2 --headless --run hello.py 'name="Mr Kraken"'
 </source>
 
-Note that the <code>name</code> parameter must be enclosed in double quotes, since it is a string literal.
+Note that the <code>name</code> parameter must be enclosed in double quotes, since it is a string literal.  
+
+On Windows systems, single/double quotes might be inverted though, such that strings are enclosed in single quotes while the list of argument as well as the path to the py script are in double quotes.
+
+<source>
+ImageJ-win64.exe --ij2 --headless --run "PathTo/hello.py" "name='Mr Kraken'"
+</source>
 
 == Multiple parameters ==
 
