@@ -1,3 +1,30 @@
 '''Photoswitching FRET experiment analysis'''
 
 These macros and plugins are designed to analyze experiments in which photoswitchable fluorescent proteins have been switched off.  The kinetics of their decays in the presence and absence of an acceptor can be used to determine a FRET efficiency.
+
+The macros are designed to be used with images collected through an image splitter and may be of limited use.  However, someone with a working knowledge of the ImageJ macro language can adapt them in a straightforward manner to accommodate most images.  They can can be found here.
+
+https://sites.imagej.net/Pattersg/macros/
+
+
+'''psFRET_TProfiler'''
+
+This plugin was designed to accomplish the same goal of the macros above except it should hopefully be more versatile.  A downloadable jar is available here.
+
+https://sites.imagej.net/Pattersg/plugins/
+
+The source code is available on GitHub.
+
+https://github.com/pattersg/psFRET_TProfiler
+
+
+'''Photoswitching_Pixel_Fitter'''
+
+This plugin is designed to extract values at every pixel and fit the fluorescence decays to a single exponential with offset equation.  Multi-exponential fitting is not implemented.
+A downloadable jar file is available here.
+
+https://sites.imagej.net/Pattersg/plugins/
+
+The source code is available on GitHub.
+
+https://github.com/pattersg/Photoswitching_pixel_fitter
