@@ -3,13 +3,20 @@
 
 This ImageJ macro automates tasks (open, set threshold, save ROI, measure) to process a set of fluorescence images.
 
-Step 1 - Batch processing of selected directory
-o List all files containing user-defined extension (.czi - .zvi - .tif - .nd2) within selected directory and sub-directories.
-o Apply the user-defined threshold (default 290) then analyse particles above the threshold.
-o Group pixels above the threshold in one Region Of Interest and save this ROI in a zip file in the image directory.
-Step 2 – Check by user of selected Region Of Interest and measure
-o Open images one by one to check the auto-selected ROI.
-o User can confirm the ROI, modify it directly or remove image from further analysis.
+
+== Batch processing of selected directory - Step 1 ==
+
+- List all files containing user-defined extension (.czi - .zvi - .tif - .nd2) within selected directory and sub-directories.
+
+- Apply the user-defined threshold (default 290) then analyse particles above the threshold.
+
+- Group pixels above the threshold in one Region Of Interest and save this ROI in a zip file in the image directory.
+
+== Check by user of selected Region Of Interest and measure - Step 2 ==
+
+- Open images one by one to check the auto-selected ROI.
+
+- User can confirm the ROI, modify it directly or remove image from further analysis.
 
 [[File:Exemple.jpg]]
 
