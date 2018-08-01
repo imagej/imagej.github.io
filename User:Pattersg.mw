@@ -1,1 +1,3 @@
 '''Photoswitching FRET experiment analysis'''
+
+These macros and plugins are designed to analyze experiments in which photoswitchable fluorescent proteins have been switched off.  The kinetics of their decays in the presence and absence of an acceptor can be used to determine a FRET efficiency.
