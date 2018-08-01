@@ -1,0 +1,34 @@
+
+== Description ==
+
+This ImageJ macro automates tasks (open, set threshold, save ROI, measure) to process a set of fluorescence images.
+
+Step 1 - Batch processing of selected directory
+o List all files containing user-defined extension (.czi - .zvi - .tif - .nd2) within selected directory and sub-directories.
+o Apply the user-defined threshold (default 290) then analyse particles above the threshold.
+o Group pixels above the threshold in one Region Of Interest and save this ROI in a zip file in the image directory.
+Step 2 – Check by user of selected Region Of Interest and measure
+o Open images one by one to check the auto-selected ROI.
+o User can confirm the ROI, modify it directly or remove image from further analysis.
+
+[[File:Exemple.jpg]]
+
+
+== Options ==
+
+The macro displays a dialog box to set analysis options:
+
+'''Threshold value''' – set lower threshold value for pixel intensity, segmenting the image into features of interest (above threshold) and background.
+Threshold value has to be defined for each acquisition system (microscope + camera + exposure time).
+
+'''File type''' – select image type between CZI, ZVI (Zeiss Vision Image), ND2 (Nikon) or TIFF (Tagged Image File Format).
+
+'''Create ROIs''' – Step 1, analyses pixels above the user-defined threshold value and automatically saves Regions Of Interest zip file in the image directory (Figure 1).
+
+'''Measure ROIs''' – Step 2 of image analysis to check individually and measure previously created ROIs. With Step 1 not checked and Step 2 checked user can reanalyze previous data.
+
+'''Overwrite existing ROIs''' – if selected, the macro will overwrite ROIs zip files without prompting the user many times.
+
+'''Silent Mode''' - if selected, the macro will measure all images with their associated ROI without prompting the user many times. Useful to reanalyze previous data.
+
+'''Restart Mode''' - when auto processing is cancelled accidentally, this mode checks the last ROI created and restart analysis from this point.
