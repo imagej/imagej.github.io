@@ -1,0 +1,65 @@
+[[Category:Analysis‏‎]]
+== Description ==
+[[File:FAST_Processing.png|thumb|right|550px|Description of the Image processing pipeline of FAST macro.]]
+This ImageJ macro automates tasks (open, set threshold, save Region Of Interest, measure) to process a set of fluorescence images.
+
+
+=== Step 1: Batch processing of selected work directory ===
+
+# List all files containing user-defined extension (.czi - .zvi - .tif - .nd2) within selected directory and sub-directories.
+# Apply the user-defined threshold (default 290) then analyse particles above the threshold.
+# Group pixels above the threshold in one Region Of Interest and save this ROI in a zip file in the image directory.
+
+=== Step 2: Check by user of selected Region Of Interest and measure ===
+
+# Open images one by one to check the auto-selected ROI.
+# User can confirm the ROI, modify it directly or remove image from further analysis.
+# Measure of fluorescence in selected ROI.
+
+
+== Startup Options ==
+
+The macro displays a dialog box to set analysis options:
+
+; '''Threshold value''' : set lower threshold value for pixel intensity, segmenting the image into features of interest (above threshold) and background.<br><span style="color: red;"> '''''Threshold value has to be defined for each acquisition system (microscope + camera + exposure time + filetype)'''''.</span>
+
+; '''File type''' : select image type between CZI, ZVI (Zeiss Vision Image), ND2 (Nikon) or TIFF (Tagged Image File Format).
+
+; '''Create ROIs''' : Step 1, analyses pixels above the user-defined threshold value and automatically saves Regions Of Interest zip file in the image directory.
+
+; '''Measure ROIs''' : Step 2 of image analysis to check individually and measure previously created ROIs. With Step 1 unchecked and Step 2 checked user can reanalyse previous data.
+
+; '''Overwrite existing ROIs''' : if selected, the macro will overwrite ROIs zip files without prompting the user many times.
+
+; '''Silent Mode''' : if selected, the macro will measure all images with their associated ROI without prompting the user many times. Useful for reanalysis of previous data.
+
+; '''Restart Mode''' : when auto processing is cancelled accidentally, this mode checks the last ROI created and restart analysis from this point.
+
+== Validation of selected Regions Of Interest ==
+
+After completion of Step 1 of image processing, images and their corresponding ROIs need to be validated by the user.
+
+Each image and the corresponding ROI is opened automatically.
+A dialog box is displayed with options.
+* If the area is correct the user must click OK to proceed with next image.
+* If the area contains non-specific signal, select ''redefine area manually'' to edit the ROI.
+* The dialog box allows to exclude current image from analysis (e.g. blurred image).
+Just select the radio button option needed then click OK or ENTER to continue.
+
+If you selected to ''redefine area manually'', a new dialog box is displayed to get access to the ImageJ toolbar and modify the yellow selection. The user-defined threshold is then automatically applied.
+
+Select the appropriate tool in ImageJ toolbar: Freehand (default) OR Wand tool.
+To remove non-specific fluorescence, use Freehand tool and hold ALT key while selecting area to remove from ROI.
+To add area to the previously selected ROI, hold SHIFT key while selecting new area to add.
+
+Click OK to validate the new ROI: fluorescence is then measured and the zip file is automatically updated.
+In case the selection is empty after manual correction the macro discard the image from analysis.
+
+After completion of Step 2, a list of all measured images with filename is displayed in the Result Table window of ImageJ.
+
+This table can be automatically saved as a csv or xls file in the work directory selected at startup.
+
+
+== Related Resources ==
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [http://www.gnu.org/licenses/gpl.txt Free Software Foundation]. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
