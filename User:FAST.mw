@@ -1,22 +1,20 @@
-
+[[Category:Analysis‏‎]]
 == Description ==
-
+[[File:FAST_Processing.png|thumb|right|550px|Description of the Image processing pipeline of FAST macro.]]
 This ImageJ macro automates tasks (open, set threshold, save Region Of Interest, measure) to process a set of fluorescence images.
 
 
-Step 1: Batch processing of selected work directory
+=== Step 1: Batch processing of selected work directory ===
 
 # List all files containing user-defined extension (.czi - .zvi - .tif - .nd2) within selected directory and sub-directories.
 # Apply the user-defined threshold (default 290) then analyse particles above the threshold.
 # Group pixels above the threshold in one Region Of Interest and save this ROI in a zip file in the image directory.
 
-Step 2: Check by user of selected Region Of Interest and measure
+=== Step 2: Check by user of selected Region Of Interest and measure ===
 
 # Open images one by one to check the auto-selected ROI.
 # User can confirm the ROI, modify it directly or remove image from further analysis.
 # Measure of fluorescence in selected ROI.
-
-[[File:Exemple.jpg]]
 
 
 == Startup Options ==
