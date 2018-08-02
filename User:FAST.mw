@@ -58,3 +58,8 @@ In case the selection is empty after manual correction the macro discard the ima
 After completion of Step 2, a list of all measured images with filename is displayed in the Result Table window of ImageJ.
 
 This table can be automatically saved as a csv or xls file in the work directory selected at startup.
+
+
+== Related Resources ==
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [http://www.gnu.org/licenses/gpl.txt Free Software Foundation]. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
