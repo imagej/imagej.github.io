@@ -8,7 +8,7 @@ ImageJ: requires v1.49o or newer.
 
 Use the ImageJ Updater and follow the instructions to [https://imagej.net/Following_an_update_site add FAST and follow updates] from the available update sites (http://sites.imagej.net/FAST)
 
-After this a new command should appear in '{{bc | Plugins | FAST }}'.
+After this new commands should appear in '{{bc | Plugins | FAST }}'.
 
 === Step 1: Batch processing of selected work directory ===
 
