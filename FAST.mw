@@ -34,7 +34,7 @@ The macro displays a dialog box to set analysis options:
 
 ; '''Create ROIs''' : Step 1, analyses pixels above the user-defined threshold value and automatically saves Regions Of Interest zip file in the image directory.
 
-; '''Measure ROIs''' : Step 2 of image analysis to check individually and measure previously created ROIs. With Step 1 unchecked and Step 2 checked user can reanalyse previous data.
+; '''Measure ROIs''' : Step 2 of image analysis to check individually and measure previously created ROIs. (With Step 1 unchecked and Step 2 checked, user can reanalyse previous data).
 
 ; '''Overwrite existing ROIs''' : if selected, the macro will overwrite ROIs zip files without prompting the user many times.
 
