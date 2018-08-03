@@ -95,7 +95,7 @@ Instead, you can [[#Running ImageJ within MATLAB|launch ImageJ inside MATLAB]] a
 
 == Running ImageJ within MATLAB ==
 
-{{Notice | If you need to run ImageJ with Java 8 (for example, if the [http://imagej.net/List_of_update_sites Java-8 update site] is enabled) then you need to update MATLAB to [http://www.mathworks.com/matlabcentral/answers/130359-how-do-i-change-the-java-virtual-machine-jvm-that-matlab-is-using-on-windows run with Java 8] as well.}}
+{{Notice | MATLAB versions prior to R2017b need to be [http://www.mathworks.com/matlabcentral/answers/130359-how-do-i-change-the-java-virtual-machine-jvm-that-matlab-is-using-on-windows tweaked to use Java 8] instead of Java 7.}}
 
 The ImageJ update site provides an <code>ImageJ.m</code> script that will start up an ImageJ instance inside a running [[MATLAB]] application. Launching the script is the same as for [[Miji]]:
 
