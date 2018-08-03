@@ -4,11 +4,11 @@
 This ImageJ macro automates tasks (open, set threshold, save Region Of Interest, measure) to process a set of fluorescence images.
 
 == Installation ==
-ImageJ: requires v1.49o or newer. Use the [https://imagej.net/Updater ImageJ Updater] and select FAST or
-Download [https://imagej.net/FAST FAST_Analyse.ijm] and copy it into the ImageJ/plugins folder and either restart ImageJ or run the '{{bc | Help | Update Menus}}' command.
+ImageJ: requires v1.49o or newer.
+
+Use the ImageJ Updater and follow the instructions to [https://imagej.net/Following_an_update_site add FAST and follow updates] from the available update sites (http://sites.imagej.net/FAST)
+
 After this a new command should appear in '{{bc | Plugins | FAST }}'.
-
-
 
 === Step 1: Batch processing of selected work directory ===
 
@@ -21,7 +21,6 @@ After this a new command should appear in '{{bc | Plugins | FAST }}'.
 # Open images one by one to check the auto-selected ROI.
 # User can confirm the ROI, modify it directly or remove image from further analysis.
 # Measure of fluorescence in selected ROI.
-
 
 == Startup Options ==
 
