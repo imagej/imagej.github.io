@@ -13,7 +13,7 @@ Use the ImageJ Updater and follow the instructions to [https://imagej.net/Follow
 After this new commands should appear in '{{bc | Plugins | FAST }}'.
 
 [[File:FAST_Processing.png|thumb|right|500px|Description of the Image processing pipeline of FAST macro.]]
-=== Step 1: Batch processing of selected work directory ===
+=== Step 1: Auto processing of selected work directory ===
 
 # List all files containing user-defined extension (.czi - .zvi - .tif - .nd2) within selected directory and sub-directories.
 # Apply the user-defined threshold (default 290) then analyse particles above the threshold.
@@ -45,16 +45,19 @@ The macro displays a dialog box to set analysis options:
 ; '''Restart Mode''' : when auto processing is cancelled accidentally, this mode checks the last ROI created and restart analysis from this point.
 
 == Validation of selected Regions Of Interest ==
-
+[[File:FAST_ROI-check.png|200px|thumb|right|User validation of defined ROI]]
 After completion of Step 1 of image processing, images and their corresponding ROIs need to be validated by the user.
 
 Each image and the corresponding ROI are opened automatically.
 A dialog box is displayed with options.
+
 * If the area is correct the user must click {{key press|OK}} to proceed with next image.
-* If the area contains non-specific signal, select {{key press|Yes}} for ''redefine area manually'' to edit the ROI.
+* If the area contains non-specific signal, select {{key press|Yes}} to ''redefine area manually'' and edit the ROI.
 * The dialog box allows to exclude current image from analysis (e.g. blurred image).
 Just select the radio button option needed then click {{key press|OK}} or {{key press|⏎ENTER}} to continue.
 
+
+[[File:FAST_ROI-edition.png|200px|thumb|right|Dialog box to redefine area]]
 If you selected to ''redefine area manually'', a new dialog box is displayed to get access to the ImageJ toolbar and modify the yellow selection. The user-defined threshold is then automatically applied.
 
 Select the appropriate tool in ImageJ toolbar: Freehand (default) OR Wand tool.
@@ -66,7 +69,7 @@ In case the selection is empty after manual correction the macro discard the ima
 
 After completion of Step 2, a list of all measured images with filename is displayed in the Result Table window of ImageJ.
 
-This table can be automatically saved as a csv or xls file in the work directory selected at startup.
+This table is automatically saved as a csv file in the work directory selected at startup.
 
 
 == Related Resources ==
