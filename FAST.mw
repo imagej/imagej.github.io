@@ -50,10 +50,10 @@ After completion of Step 1 of image processing, images and their corresponding R
 
 Each image and the corresponding ROI are opened automatically.
 A dialog box is displayed with options.
-* If the area is correct the user must click OK to proceed with next image.
+* If the area is correct the user must click {{key press|OK}} to proceed with next image.
 * If the area contains non-specific signal, select ''redefine area manually'' to edit the ROI.
 * The dialog box allows to exclude current image from analysis (e.g. blurred image).
-Just select the radio button option needed then click OK or ENTER to continue.
+Just select the radio button option needed then click {{key press|OK}} or {{key press|⏎ENTER}} to continue.
 
 If you selected to ''redefine area manually'', a new dialog box is displayed to get access to the ImageJ toolbar and modify the yellow selection. The user-defined threshold is then automatically applied.
 
@@ -61,7 +61,7 @@ Select the appropriate tool in ImageJ toolbar: Freehand (default) OR Wand tool.
 To remove non-specific fluorescence, use Freehand tool and hold {{key press|Alt}} while selecting area to remove from ROI.
 To add area to the previously selected ROI, hold {{key press|Shift}} while selecting new area to add.
 
-Click OK to validate the new ROI: fluorescence is then measured and the zip file is automatically updated.
+Click {{key press|OK}} to validate the new ROI: fluorescence is then measured and the zip file is automatically updated.
 In case the selection is empty after manual correction the macro discard the image from analysis.
 
 After completion of Step 2, a list of all measured images with filename is displayed in the Result Table window of ImageJ.
