@@ -41,9 +41,6 @@ Note that this will automatically modify your <code>.travis.yml</code> file.
 <li>Add the following script as <code>.travis/build.sh</code>:
 <br>{{GitHubEmbed|org=imagej|repo=imagej-common|path=.travis/build.sh}}
 </li>
-<li>Create a <code>settings.xml</code> in your repository with the following contents:
-<br>{{GitHubEmbed|org=imagej|repo=imagej-common|path=.travis/settings.xml}}
-</li>
 <li>Commit all your files with Git and push them back to your repository. If everything works as intended, you should start seeing new builds in your [https://travis-ci.org Travis dashboard] with each new commit, with corresponding SNAPSHOT artifacts automatically deployed to [http://maven.imagej.net/index.html#view-repositories maven.imagej.net].
 </li>
 </ol>
