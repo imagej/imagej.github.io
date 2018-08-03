@@ -9,9 +9,7 @@ https://sites.imagej.net/Pattersg/macros/
 
 '''psFRET_TProfiler'''
 
-This plugin was designed to accomplish the same goal of the macros above except it should hopefully be more versatile.  A downloadable jar is available [[https://sites.imagej.net/Pattersg/plugins/psFRET_TProfiler-0.1.0-SNAPSHOT.jar-20180801100747]].
-
-https://sites.imagej.net/Pattersg/plugins/
+This plugin was designed to accomplish the same goal of the macros above except it should hopefully be more versatile.  A downloadable jar is available here [https://sites.imagej.net/Pattersg/plugins/psFRET_TProfiler-0.1.0-SNAPSHOT.jar-20180801100747].
 
 The source code is available on GitHub.
 
@@ -21,9 +19,7 @@ https://github.com/pattersg/psFRET_TProfiler
 '''Photoswitching_Pixel_Fitter'''
 
 This plugin is designed to extract values at every pixel and fit the fluorescence decays to a single exponential with offset equation.  Multi-exponential fitting is not implemented.
-A downloadable jar file is available here.
-
-https://sites.imagej.net/Pattersg/plugins/
+A downloadable jar file is available here [https://sites.imagej.net/Pattersg/plugins/Photoswitching_Pixel_Fitter-0.1.0-SNAPSHOT.jar-20180803061440].
 
 The source code is available on GitHub.
 
