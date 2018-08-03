@@ -26,7 +26,7 @@ After this new commands should appear in '{{bc | Plugins | FAST }}'.
 # Measure of fluorescence in selected ROI.
 
 == Startup Options ==
-
+[[File:FAST_Options.png|thumb|right|Options dialog box]]
 The macro displays a dialog box to set analysis options:
 
 ; '''Threshold value''' : set lower threshold value for pixel intensity, segmenting the image into features of interest (above threshold) and background.
@@ -51,7 +51,7 @@ After completion of Step 1 of image processing, images and their corresponding R
 Each image and the corresponding ROI are opened automatically.
 A dialog box is displayed with options.
 * If the area is correct the user must click {{key press|OK}} to proceed with next image.
-* If the area contains non-specific signal, select ''redefine area manually'' to edit the ROI.
+* If the area contains non-specific signal, select {{key press|Yes}} for ''redefine area manually'' to edit the ROI.
 * The dialog box allows to exclude current image from analysis (e.g. blurred image).
 Just select the radio button option needed then click {{key press|OK}} or {{key press|⏎ENTER}} to continue.
 
