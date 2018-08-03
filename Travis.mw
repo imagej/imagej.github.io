@@ -17,7 +17,7 @@ Deploying your library to a [[Maven]] repository makes it available for other de
 == Requirements ==
 * Host your [[open-source]] project on [[GitHub]].
 * Log in to [https://travis-ci.org/auth Travis CI] with your corresponding GitHub account and enable your repository.
-* Contact an ImageJ admin in [[Chat#Gitter|Gitter]] or [http://forum.imagej.net/ the ImageJ forum] and request that they file a PR which adds Travis support to your repository.
+* Contact an ImageJ admin in [[Chat#Gitter|Gitter]] or [http://forum.image.sc/ the Image.sc Forum] and request that they file a PR which adds Travis support to your repository.
 
 == Instructions ==
 <div style="overflow: hidden">
@@ -36,7 +36,7 @@ $ travis encrypt MAVEN_PASS=travis_maven_password --add env.global
 
 Note that this will automatically modify your <code>.travis.yml</code> file.
 
-'''If you are not a core ImageJ maintainer, you probably do not have this password.''' Finish the rest of these steps below, then start a topic on the [http://forum.imagej.net/ ImageJ Forum] asking for a core ImageJ maintainer to file a PR to your repository adding this encrypted variable.
+'''If you are not a core ImageJ maintainer, you probably do not have this password.''' Finish the rest of these steps below, then start a topic on the [http://forum.image.sc/ Image.sc Forum] asking for a core ImageJ maintainer to file a PR to your repository adding this encrypted variable.
 </li>
 <li>Add the following script as <code>.travis/build.sh</code>:
 <br>{{GitHubEmbed|org=imagej|repo=imagej-common|path=.travis/build.sh}}
