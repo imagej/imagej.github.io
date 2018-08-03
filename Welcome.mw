@@ -41,7 +41,7 @@ __NOTOC__
 
 <h2 class="header-stripe" style="margin-left: -20px; margin-right: -20px; border:solid black; border-left: 2px; border-right: 2px">Join the Community</h2>
 {|
-| style="font-size: large; vertical-align: top; white-space: nowrap; padding: 12px" | [http://forum.imagej.net ImageJ Forum]
+| style="font-size: large; vertical-align: top; white-space: nowrap; padding: 12px" | [https://forum.image.sc Image.sc Forum]
 | style="padding: 10px; font-size: 1.1em" | A great place to ask and answer questions, and become part of the community that has driven ImageJ's success.
 |-
 | style="font-size: large; vertical-align: top; white-space: nowrap; padding: 12px" | [[Issues|GitHub Issues]]
