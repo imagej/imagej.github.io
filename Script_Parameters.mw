@@ -58,6 +58,10 @@ A list of possible data types and the corresponding widgets is provided:
 | numeric field
 | | <code>slider</code> {{!}} <code>spinner</code> {{!}} <code>scroll bar</code>
 |-
+| | <code>float</code>
+| numeric field
+| | <code>slider</code> {{!}} <code>spinner</code> {{!}} <code>scroll bar</code>
+|-
 | | <code>BigInteger</code> {{!}} <code>BigDecimal</code>
 | numeric field
 | | <code>slider</code> {{!}} <code>spinner</code> {{!}} <code>scroll bar</code>
