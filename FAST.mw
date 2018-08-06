@@ -60,6 +60,8 @@ Just select the radio button option needed then click {{key press|OK}} or {{key 
 [[File:FAST_ROI-edition.png|200px|thumb|right|Dialog box to redefine area]]
 If you selected to ''redefine area manually'', a new dialog box is displayed to get access to the ImageJ toolbar and modify the selection. The user-defined threshold is then automatically applied.
 
+[[File:FAST_Thr-ROI.png|500px|thumb|center|Example of thresholded image and corrected ROI]]
+
 Select the appropriate tool in ImageJ toolbar: Freehand (default) OR Wand tool.
 To remove non-specific fluorescence, use Freehand tool and hold {{key press|Alt}} while selecting area to remove from ROI.
 To add area to the previously selected ROI, hold {{key press|Shift}} while selecting new area to add.
@@ -71,7 +73,6 @@ In case the selection is empty after manual correction the macro discards the im
 After completion of Step 2, a list of all measured images with filename is displayed in the Result Table window of ImageJ.
 
 This table is automatically saved as a csv file in the work directory selected at startup.
-
 
 == Related Resources ==
 
