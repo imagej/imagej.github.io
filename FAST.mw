@@ -77,8 +77,6 @@ This table is automatically saved as a ''csv'' file in the work directory select
 
 == Related Resources ==
 
-This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [http://www.gnu.org/licenses/gpl.txt Free Software Foundation]. Comments or improvements are welcome.
+This program is free software; you can redistribute it and/or modify it under the terms of the [http://www.gnu.org/licenses/gpl.html GNU General Public License] as published by the Free Software Foundation. [https://imagej.net/User:C.TURI%C3%88S Comments or improvements are welcome]. It is distributed in the hope that it will be useful, but '''"AS IS" without warranty of any kind'''. See the [http://www.gnu.org/licenses/gpl.html GNU General Public License] for more details.
 
-This program is distributed in the hope that it will be useful, but "as is" without warranty of any kind. See the [http://www.gnu.org/licenses/gpl.txt GNU General Public License] for more details.
-
-It has been developed within the framework of the [http://www.oecd.org/chemicalsafety/testing/oecd-guidelines-testing-chemicals-related-documents.htm OECD Work plan for the Test Guidelines Programme (TGP)] - Project  2.46:  New  Test Guideline  for  the  Detection  of  Endocrine  Active  Substances,  acting  through estrogen receptors using transgenic cyp 19a1b-GFP Zebrafish Embryos (EASZY assay).
+This program has been developed within the framework of the [http://www.oecd.org/chemicalsafety/testing/oecd-guidelines-testing-chemicals-related-documents.htm OECD Work plan for the Test Guidelines Programme (TGP)] - Project  2.46:  New  Test Guideline  for  the  Detection  of  Endocrine  Active  Substances,  acting  through estrogen receptors using transgenic cyp 19a1b-GFP Zebrafish Embryos (EASZY assay).
