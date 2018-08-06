@@ -62,8 +62,8 @@ If you selected to ''redefine area manually'', a new dialog box is displayed to 
 
 [[File:FAST_Thr-ROI.png|500px|thumb|center|Example of thresholded image and corrected ROI]]
 
-Select the appropriate tool in ImageJ toolbar: Freehand (default) OR Wand tool.
-To remove non-specific fluorescence, use Freehand tool and hold {{key press|Alt}} while selecting area to remove from ROI.
+Select the appropriate tool in ImageJ toolbar: [[File:Freehand.png]] Freehand (default) OR [[File:Wand-tool.png]] Wand tool.
+To remove non-specific fluorescence, use selected tool and hold {{key press|Alt}} while unwanted area to remove it from ROI.
 To add area to the previously selected ROI, hold {{key press|Shift}} while selecting new area to add.
 
 Click {{key press|OK}} to validate the new ROI.
