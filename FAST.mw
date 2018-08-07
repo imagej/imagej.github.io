@@ -30,7 +30,7 @@ New commands should then appear in '{{bc | Plugins | FAST }}'.
 The macro displays a dialog box to set analysis options:
 
 ; '''Threshold value''' : set threshold value for pixel intensity, segmenting the image into features of interest (above threshold) and background.
-{{Tip | id = Threshold | tip ='''''Threshold value has to be defined for each acquisition system (microscope + camera + exposure time + file-type)'''''.}}
+{{Tip | id = Threshold | tip ='''''Threshold value must be defined for each acquisition system (microscope + camera + exposure time + file-type)'''''.}}
 
 ; '''File type''' : select image type between CZI (Carl Zeiss Image), ZVI (Zeiss Vision Image), ND2 (Nikon) or TIFF (Tagged Image File Format).
 
