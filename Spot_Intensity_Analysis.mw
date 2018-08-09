@@ -12,7 +12,12 @@
 
 Simple ImageJ/Fiji plugin to plot intensity of a spot over time.  
 
-To install this plugin check the "ValelabUtils" update site in the Fiji updater.
+
+== Installation ==
+
+To install this plugin check the "ValelabUtils" [[Following_an_update_site|update site]] in the Fiji updater.
+
+== Usage ==
 
 This plugin has two phases, in the first phase it detects spots. It does so by scanning for local maxima in the image with a box of user-defined size ("Spot radius (pixels)"). Local maxima are accepted when the maximum is higher than a user-defined number ("Noise tolerance") over the average of the 4 corners of the box. An image constructed by averaging the first n images ("Check First n Frames") is used for the spot finding.  This same image is used to calculate the background (which is currently done using the ImageJ Background tool using a ball radius of 100 and "Sliding paraboloid" checked).
 
@@ -27,10 +32,11 @@ If there is significant movement during the time-lapse image, you will first nee
 
 [[File:SpotIntensityAnalysisScreenshot.png]]  [[File:SpotIntensityAnalysisTable.png]]
 
-<b>History:</b><br/>
-2018-01-18 - Version 0.3. Updated to match changes in jfreechart library<br/>
-2017-07-04 - Version 0.22. Use Gaussian blur to determine background rather than rolling ball. Use floats rather than longs in calculations to avoid clipping and negative values. Should result in better precision and better background estimate.<br/>
- 
+== History ==
+
+* 2018-01-18 - Version 0.3. Updated to match changes in jfreechart library<br/>
+* 2017-07-04 - Version 0.22. Use Gaussian blur to determine background rather than rolling ball. Use floats rather than longs in calculations to avoid clipping and negative values. Should result in better precision and better background estimate.<br/>
+
 
 [[Category:Particle_analysis]]
 [[Category:Plugins]]
