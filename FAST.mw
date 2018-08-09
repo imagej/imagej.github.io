@@ -12,7 +12,7 @@ Requirements:
 {{Tip | id = bioformat| tip = Saving ''bioformats_package.jar'' in .\ImageJ.app\plugins\ seems to be the best way to use the macro in stable conditions.}}
 Use the ImageJ Updater and see the instructions [http://imagej.net/How_to_follow_a_3rd_party_update_site How to follow a 3rd party update site] select FAST (http://sites.imagej.net/FAST) from the available site list.
 
-New commands should then appear in '{{bc | Plugins | FAST }}'.
+New commands should then appear in ImageJ '{{bc | Plugins | FAST }}' menu.
 
 == Image Processing ==
 [[File:FAST_Processing.png|thumb|right|500px|Description of the Image processing pipeline of FAST macro.]]
