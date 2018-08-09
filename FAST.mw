@@ -6,12 +6,15 @@
 This ImageJ macro automates tasks (open, set threshold, save Region Of Interest, measure) to process a set of single-channel fluorescence images.
 
 == Installation ==
-ImageJ: requires v1.49o or newer.
-
-Use the ImageJ Updater and see the instructions [http://imagej.net/How_to_follow_a_3rd_party_update_site How to follow a 3rd party update site] select FATS (http://sites.imagej.net/FAST) from the available site list.
+Requirements:
+* [http://imagej.net/Downloads ImageJ] v1.49o or newer.
+* [https://www.openmicroscopy.org/bio-formats/downloads/ Bio-Formats 5.x] or newer.
+{{Tip | id = bioformat| tip = Saving ''bioformats_package.jar'' in .\ImageJ.app\plugins\ seems to be the best way to use the macro in stable conditions.}}
+Use the ImageJ Updater and see the instructions [http://imagej.net/How_to_follow_a_3rd_party_update_site How to follow a 3rd party update site] select FAST (http://sites.imagej.net/FAST) from the available site list.
 
 New commands should then appear in '{{bc | Plugins | FAST }}'.
 
+== Image Processing ==
 [[File:FAST_Processing.png|thumb|right|500px|Description of the Image processing pipeline of FAST macro.]]
 === Step 1: Auto processing of images within the selected work directory ===
 
