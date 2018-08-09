@@ -1,7 +1,7 @@
 [[Category:Analysis‏‎]]
 [[Category:Segmentation]]
-== Description ==
-FAST: '''F'''luorescence image '''A'''nalysi'''S''' '''T'''ool
+== '''F'''luorescence image '''A'''nalysi'''S''' '''T'''ool: FAST ==
+=== Description ===
 
 This ImageJ macro automates tasks (open, set threshold, save Region Of Interest, measure) to process a set of single-channel fluorescence images.
 
