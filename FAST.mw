@@ -18,7 +18,7 @@ New commands should then appear in ImageJ '{{bc | Plugins | FAST }}' menu.
 [[File:FAST_Processing.png|thumb|right|500px|Description of the Image processing pipeline of FAST macro.]]
 === Step 1: Auto processing of images within the selected work directory ===
 
-# List all files containing user-defined extension (.czi - .zvi - .tif - .nd2) within selected directory and sub-directories.
+# List all files containing user-defined extension (e.g. czi - zvi - tif - nd2) within selected directory and sub-directories.
 # Apply the user-defined threshold (default 290) then analyse pixels above the threshold.
 # Group pixels above the threshold in one Region Of Interest and save this ROI in a zip file in the image directory.
 
