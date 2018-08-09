@@ -64,7 +64,7 @@ Select the appropriate tool in ImageJ toolbar: [[File:Freehand.png]] Freehand (d
 * To add area to the previously selected ROI, hold {{key press|Shift}} while selecting new area to add.
 
 
-Click {{key press|OK}} to validate the new ROI.
+Click {{key press|OK}} to confirm the new ROI.
 Fluorescence is then measured and the ROI zip file is automatically updated.
 {{Tip | id = Selection| tip = In case the selection is empty after manual correction, the macro discards the image from analysis.}}
 
