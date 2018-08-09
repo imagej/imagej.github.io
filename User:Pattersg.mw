@@ -1,15 +1,21 @@
 '''Photoswitching FRET experiment analysis'''
 
 These macros and plugins are designed to analyze experiments in which photoswitchable fluorescent proteins have been switched off.  The kinetics of their decays in the presence and absence of an acceptor can be used to determine a FRET efficiency.
+These are meant to be updated through Fiji's updater using the URL to this page in the update site list.  However, links to .ijm files or java archive files are indicated below. You will need to remove the timestamps and checksums from the names before using.  Simply removing everything after .ijm or .jar in the file name before placing in the macros or plugins folder, respectively, should suffice.
 
-The macros are designed to be used with images collected through an image splitter and may be of limited use.  However, someone with a working knowledge of the ImageJ macro language can adapt them in a straightforward manner to accommodate most images.  They can can be found here.
 
-https://sites.imagej.net/Pattersg/macros/
+'''psFRET analysis macros'''
+
+The macros are designed to be used with images collected through an image splitter and may be of limited use.  However, someone with a working knowledge of the ImageJ macro language can adapt them in a straightforward manner to accommodate most images.  
+
+The Dual-View image analysis macro can be downloaded from here [https://sites.imagej.net/Pattersg/plugins/psFRET_TProfiler-0.1.0-SNAPSHOT.jar-20180809161114].
+
+The curve-fitting macro can be downloaded from here [https://sites.imagej.net/Pattersg/macros/psFRET_curve_fitting_analysis.ijm-20180801100628]
 
 
 '''psFRET_TProfiler'''
 
-This plugin was designed to accomplish the same goal of the macros above except it should hopefully be more versatile.  A downloadable jar is available here [https://sites.imagej.net/Pattersg/plugins/psFRET_TProfiler-0.1.0-SNAPSHOT.jar-20180801100747].
+This plugin was designed to accomplish the same goal of the macros above except it should hopefully be more versatile.  A downloadable jar is available here [https://sites.imagej.net/Pattersg/plugins/psFRET_TProfiler-0.1.0-SNAPSHOT.jar-20180809161114].
 
 The source code is available on GitHub.
 
