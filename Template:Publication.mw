@@ -96,6 +96,69 @@
 | pages = 1076-1079
 | pmid = 20817052}} ({{Scholar | cluster=16814410598979768336}}).
 
+| CellProfiler = {{Citation | last = Carpenter | first = A. E.
+| last2 = Jones | first2 = T. R.
+| last3 = Lamprecht | first3 = M. R.
+| last4 = Clarke | first4 = C.
+| last5 = Kang | first5 = I. H.
+| last6 = Friman | first6 = O.
+| last7 = Guertin | first7 = D. A.
+| last8 = Chang | first8 = J. H.
+| last9 = Lindquist | first9 = R. A.
+| last10 = Moffat | first10 = J.
+| last11 = Golland | first11 = P.
+| last12 = Sabatini | first12 = D. M.
+| year = 2006 Oct 31
+| journal = Genome Biology
+| url = http://www.biomedcentral.com/1465-6906/7/R100
+| title = CellProfiler: image analysis software for identifying and quantifying cell phenotypes
+| volume = 7(10)
+| pages = R100
+| doi = 10.1186/gb-2006-7-10-r100
+| pmid = 17076895}} ({{Scholar | cluster=11680963210515374635}}).
+
+| CellProfiler2 = {{Citation | last = Kamentsky | first = L.
+| last2 = Jones | first2 = T. R.
+| last3 = Fraser | first3 = A.
+| last4 = Bray | first4 = M. A.
+| last5 = Logan | first5 = D. J.
+| last6 = Madden | first6 = K. L.
+| last7 = Ljosa | first7 = V.
+| last8 = Rueden | first8 = C.
+| last9 = Eliceiri = first9 = K. W.
+| last10 = Carpenter | first10 = A. E.
+| year = 2011 Feb 23
+| journal = Bioinformatics
+| url = http://bioinformatics.oxfordjournals.org/content/27/8/1179.short
+| title = Improved structure, function and compatibility for CellProfiler: modular high-throughput image analysis software
+| volume = 27(8)
+| pages = 1179-1180
+| pmid = 21349861}} ({{Scholar | cluster=16024072332807687249}}).
+
+| CellProfiler3 = {{Citation | last = McQuin | first = C.
+| last2 = Goodman | first2 = A.
+| last3 = Chernyshev | first3 = V.
+| last4 = Kamentsky | first4 = L.
+| last5 = Cimini | first5 = B. A.
+| last6 = Karhohs | first6 = K. W.
+| last7 = Doan | first7 = M.
+| last8 = Ding | first8 = L.
+| last9 = Rafelski | first9 = S. M.
+| last10 = Thirstrup | first10 = D.
+| last11 = Wiegraebe | first11 = W.
+| last12 = Singh | first12 = S.
+| last13 = Becker | first13 = T.
+| last14 = Caicedo | first14 = J. C.
+| last15 = Carpenter | first15 = A. E.
+| year = 2018 Jul 3
+| journal = PLOS Biology
+| url = http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2005970
+| title = CellProfiler 3.0: Next-generation image processing for biology
+| volume = 16(7)
+| pages = e2005970
+| doi = 10.1371/journal.pbio.2005970
+| pmid = 29969450}} ({{Scholar | cluster=9343647822273300584}}).
+
 | ClearVolume = {{Citation | last = Royer | first = L. A.
 | last2 = Weigert | first2 = M.
 | last3 = Günther | first3 = U.
