@@ -4,8 +4,8 @@
 
 The ImageJ Jenkins currently performs a small number of key services:
 
-* [http://jenkins.imagej.net/job/Synchronize-and-deploy-IJ1/ Automatic deployment of ImageJ 1.x] and [http://jenkins.imagej.net/job/ImageJ1-releases/ building of installers for ImageJ 1.x].
-* Keeping [https://jenkins.imagej.net/view/Mirrors/ Git repository mirrors in sync].
+* [https://jenkins.imagej.net/job/Synchronize-and-deploy-IJ1/ Automatic deployment of ImageJ 1.x] and [https://jenkins.imagej.net/job/ImageJ1-releases/ building of installers for ImageJ 1.x].
+* [https://jenkins.imagej.net/job/Stable-Fiji-Java-8/ Building the latest Fiji download bundles].
 
 For an up-to-date list, see the [https://jenkins.imagej.net/view/Active/ list of active Jenkins jobs].
 
