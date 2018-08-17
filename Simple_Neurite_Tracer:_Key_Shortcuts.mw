@@ -21,8 +21,6 @@ __NOTOC__
 
 * {{key|I}} - Toggles tracing on filtered <u>I</u>mage.
 
-* {{key|G}} - Selects the path nearest to the mouse pointer. Holding  {{key|Shift|G}} adds the path nearest to the mouse pointer to the current list of selected paths. ''Mnemonic: <u>G</u>roup paths around pointer.''
-
 * {{key|M}} - Finds the brightest voxel (<u>M</u>aximum) above and below the current x,y position and automatically clicks on it. If multiple maxima exist, their average positioning is used. Note that this feature assumes that neurites are brighter than background.
 
 * {{key|S}} - Toggles cursor <u>S</u>napping: If enabled, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window<sup>1</sup>. This facilitates accurate [[Simple_Neurite_Tracer:_Accurate_point_placement|positioning of path points]] and it is described in more detail in this [https://github.com/fiji/Simple_Neurite_Tracer/issues/1 issue].
@@ -40,23 +38,25 @@ __NOTOC__
 
 * {{key|5}} - Displays tracing view(s) at 100% (IJ default)
 
-* {{key|Spacebar}} - Activates the Pan tool (IJ default)
+* {{key|Spacebar}} - Activates the Pan (Hand) tool (IJ default)
 
-* {{key|>}} / {{key|<}} - Previous/Next Z-slice (IJ default)
+* {{key|>}} / {{key|<}} - Previous/Next Z-slice, or Previous/Next channel, depending on the ''Reverse CZT oder of ">" and "<"'' choice set in IJ's {{bc|Edit|Options|Misc..}} prompt (IJ default)
 
 * {{Key|enter}} - Shuttles the window focus between  the tracing image and the SNT window.
 
-==== Path Rendering ====
+==== Path Handling ====
 * {{key|A}} - Toggles which traced paths should be displayed: ''<u>A</u>ll'' / ''Selected''.
+
+* {{key|G}} - Selects the nearest path to the mouse cursor. Holding  {{key|Shift|G}} adds the path nearest to the mouse cursor to the current list of selected paths. ''Mnemonic: <u>G</u>roup paths around cursor.''
 
 * {{key|Z}} - Toggles depth-rendering choice of traced paths: ''Parts in nearby slices'' / ''<u>Z-</u>stack projection.
 
-==== Editing Paths ====
-These shortcuts become available in ''Edit Mode'', activated through the contextual menu (displayed when right-clicking on the image being traced):
+==== Path Editing ====
+These shortcuts become available in ''Edit Mode'', activated through the contextual menu (displayed when right-clicking on a tracing canvas):
 * {{key|D}} or {{key|Backspace}} - <u>D</u>eletes the active node
 * {{key|I}} or {{key|Insert}} - <u>I</u>nserts a new node at cursor position
 * {{key|M}} - <u>M</u>oves active node to cursor position
-* {{key|Z}} - Brings active node to current <u>Z</u>-plane 
+* {{key|B}} - <u>B</u>rings active node to current Z-plane 
 
 ==== Legacy 3D Viewer ====
 All shortcuts that are not specific to tracing canvases (XY, ZY and XZ views) ''should'' be recognized by the legacy [[Simple_Neurite_Tracer:_3D_Interaction|3D viewer]]. In addition the following are also implemented:
