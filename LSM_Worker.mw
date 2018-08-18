@@ -1,0 +1,538 @@
+<B>LSM_Worker manual</B>
+<BR>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=4><SPAN LANG="en-US"><I><B>LSM_Worker
+</B></I></SPAN></FONT><FONT SIZE=4><SPAN LANG="en-US"><I>extracts
+Leaf Surface Morphology from Laser Scanning Microscopy images</I></SPAN></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US"><B>Installation:</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+Download LSM_Worker.jar to the plugins folder, and restart ImageJ
+(Fiji), there will be a new "LSM_Worker" command in the
+Plugins menu.</SPAN></FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US"><B>Description:</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+The plugin can work with multi-channel multi-frame 3D images in *.lsm
+format obtained from a laser scanning microscope. </SPAN></FONT><FONT SIZE=3>The
+main functionality of the plugin includes:</FONT></P>
+<UL>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3>Assembly
+	and visualization of images.</FONT></P>
+	<LI><P CLASS="western" STYLE="margin-bottom: 0cm; border: none; padding: 0cm">
+	<FONT SIZE=3><SPAN LANG="en-US">Improve image quality (elimination
+	of shear and overlap, application of the anisotropic diffusion
+	algorithm).</SPAN></FONT></P>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm; border: none; padding: 0cm">
+	<FONT SIZE=3>Linear operations with intensity values from different
+	channels.</FONT></P>
+	<LI><P CLASS="western" STYLE="margin-bottom: 0cm; border: none; padding: 0cm">
+	<FONT SIZE=3><SPAN LANG="en-US">Detection a 2D leaf surface.</SPAN></FONT></P>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm; border: none; padding: 0cm">
+	<FONT SIZE=3>Application of the segmentation algorithm for cellular
+	and nuclear layers.</FONT></P>
+	<LI><P CLASS="western" STYLE="margin-bottom: 0cm; border: none; padding: 0cm">
+	<FONT SIZE=3><SPAN LANG="en-US">Manual correction of segmented
+	regions.</SPAN></FONT></P>
+	<LI><P CLASS="western" STYLE="margin-bottom: 0cm; border: none; padding: 0cm">
+	<FONT SIZE=3><SPAN LANG="en-US">M</SPAN></FONT><FONT SIZE=3>a</FONT><FONT SIZE=3><SPAN LANG="en-US">r</SPAN></FONT><FONT SIZE=3>king</FONT><FONT SIZE=3><SPAN LANG="en-US">
+	of</SPAN></FONT><FONT SIZE=3> </FONT><FONT SIZE=3><SPAN LANG="en-US">c</SPAN></FONT><FONT SIZE=3>ell</FONT><FONT SIZE=3><SPAN LANG="en-US">
+	</SPAN></FONT><FONT SIZE=3>groups.</FONT></P>
+	<LI><P CLASS="western" STYLE="margin-bottom: 0cm; border: none; padding: 0cm">
+	<FONT SIZE=3><SPAN LANG="en-US">Calculation of volumes for cells and
+	nuclei.</SPAN></FONT></P>
+	<LI><P CLASS="western" STYLE="margin-bottom: 0cm; border: none; padding: 0cm">
+	<FONT SIZE=3><SPAN LANG="en-US">Comparison of cells and nuclei by
+	mutual arrangement.</SPAN></FONT></P>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm; border: none; padding: 0cm">
+	<FONT SIZE=3>Download images in tiff format for single-channel
+	processing (multiple images for each channel can be downloaded).</FONT></P>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm; border: none; padding: 0cm">
+	<FONT SIZE=3>Saving results in the form of tables and intermediate
+	images, obtained at any stage of processing.</FONT></P>
+</UL>
+[[File:English_manual_uz_html_m7831868e.png|1000px|thumb|center]]
+
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=4><B>Getting
+started</B></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">After
+starting the plugin, select a 3D image lsm-file. The plugin works
+only with lsm-files.</SPAN></FONT></P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<SPAN CLASS="sd-abs-pos" STYLE="position: absolute; top: 0cm; left: 0cm; width: 216px"><IMG SRC="English%20manual_uz_html_m75ce2a0c.png" NAME="image23.png" WIDTH=216 HEIGHT=238 BORDER=0></SPAN><FONT SIZE=3>As
+soon as the information from the file is read, a window will be
+displayed showing the necessary information to form a complete
+multi-frame multi-channel 3D image (uploading window is showed in
+fig.1). To continue working with the plugin, one must specify:</FONT></P>
+[[File:English_manual_uz_html_m75ce2a0c.png|200px|thumb|right|Fig 1. Image upload options]]
+<UL>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">The
+	number of fragments on X axis and Y axis.</SPAN></FONT></P>
+</UL>
+<UL>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">The
+	overlap percentage. The part of the total area at the junction of
+	the fragments is indicated as a percentage.  </SPAN></FONT>
+	</P>
+</UL>
+<UL>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><SPAN ID="Врезка1" DIR="LTR" STYLE="position: absolute; top: 1.64cm; left: -0.03cm; width: 5.77cm; height: 1.24cm; border: 1px solid #ffffff; padding: 0.14cm 0.26cm; background: #ffffff">
+		<BR><BR>
+	</SPAN><FONT SIZE=3><SPAN LANG="en-US">If necessary, you can reduce
+	the amount of memory consumed by compressing the image (reducing the
+	size and depth of color). </SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>Choosing
+	this option will result in data loss and possible deterioration of
+	the information received, but for stable operation of the plug-in,
+	the memory consumption during the download phase should not exceed
+	50% of the available RAM.</B></SPAN></FONT>
+	</P>
+</UL>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">After
+you specify all the necessary information, click “OK” and
+wait for the image formation.</SPAN></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=4><B>The
+main window of LSM_Worker</B></FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">The
+window header displays basic information about the image, including
+the current slice number and the total number of slices, the size of
+one slice in pixels and in microns, the color depth, and the image
+size. In the central part of the main window, there is a
+layer-by-layer display of the image formed from the frames for the
+selected channel (the default is channel 1). At the bottom part of
+the main window, there are buttons and fields for working with the
+image.</SPAN></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">Functions
+of the buttons:</SPAN></FONT></P>
+<UL>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">The
+	</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>“Get original
+	image”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+	button cancels all changes and returns the original image.</SPAN></FONT></P>
+</UL>
+<UL>
+	<LI><P CLASS="western" STYLE="margin-bottom: 0cm; border: none; padding: 0cm">
+	<FONT SIZE=3><SPAN LANG="en-US">The </SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>“Apply
+	offset”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+	button is responsible for shifting frames on the specified number of
+	pixels. Reusing this option shifts frames relative to their original
+	positions (not the current one).</SPAN></FONT></P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">The
+	</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>“Cut Image”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+	button cuts the selected area for all channels from the source
+	image. Before applying this function, you must select a rectangular
+	fragment in the image using the standard ImageJ tool.</SPAN></FONT></P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">The
+	</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>“Diffusion”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+	button allows one to apply an anisotropic diffusion filter layer by
+	layer for all slices of the selected channel. This button calls the
+	plugin [https://imagej.nih.gov/ij/plugins/anisotropic-diffusion-2d.html Anisotropic diffusion 2D].</SPAN></FONT></P>
+	<LI><P CLASS="western" STYLE="margin-bottom: 0cm; border: none; padding: 0cm">
+	<FONT SIZE=3><SPAN LANG="en-US">The </SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>“MorfSegmentation”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+	button starts the plugin “Morphological Segmentation”
+	(for more information, see section “The module of
+	morphological segmentation by means of watersheds”).</SPAN></FONT></P>
+</UL>
+<UL>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">The
+	</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>“Cells/Nucleus
+	Info”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"> button
+	maps the segmented images of the cell walls and nuclei and displays
+	the result in the table (for more details see section “Comparison
+	of cells and nuclei images” section).</SPAN></FONT></P>
+</UL>
+<UL>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">The
+	</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>“Pix Graph”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+	button allows one to plot the intensity change depending on the
+	layer number (“depth” of the image). After clicking the
+	button, one must point the pixel on the image by the mouse. This
+	information may be used to visualize the influence of the parameter
+	of the maximum “Threshold”, which is used for
+	construction of 2D projection for the surface layer (see details
+	below). This option helps to select this parameter and to study the
+	specificity of the image.</SPAN></FONT></P>
+</UL>
+<P LANG="en-US" CLASS="western" STYLE="margin-left: 0.75cm; margin-bottom: 0cm">
+<BR>
+</P>
+[[File:English_manual_uz_html_m7937f04c.png|900px|thumb|center]]
+<P LANG="en-US" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.75cm; margin-bottom: 0cm">
+<FONT SIZE=3>Fig.2 Main window of the LSM_Worker plugin</FONT></P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 1.27cm; margin-bottom: 0cm">
+<FONT SIZE=3><B>Description of the main window (Fig. 2)</B></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5cm; margin-bottom: 0cm; border: none; padding: 0cm">
+<FONT SIZE=3><SPAN LANG="en-US"><B>A. </B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">Area
+for switching between image channels. The standard situation is the
+presence in the image of two channels: the channel for the image of
+the cells (channel 1) and the channel for the image of the cell
+nuclei (channel 2). The additional channel 3 is generated
+artificially by calculating the linear combination between pixels of
+the first and second channels. </SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>Many
+functions, such as segmentation, depend on the selected image
+channel.</B></SPAN></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5cm; margin-bottom: 0cm">
+<FONT SIZE=3><SPAN LANG="en-US"><B>B. </B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">Area
+for specifying the parameters for constructing a 2D projection of the
+upper cell-level walls. The “Get 2D Image” button builds
+this projection depending on the specified parameters:</SPAN></FONT></P>
+<UL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">The
+	</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>Diving value</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+	indicates how much pixels should be descended from the surface
+	layer.</SPAN></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US"><B>Lattice
+	size</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"> specifies the
+	number of pixels between adjacent nodes for the algorithm of
+	construction and calculation of the surface layer.</SPAN></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">The
+	maximum “threshold” (</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>Threshold</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">)
+	determines the optimal maximum of intensity. The maximum point is
+	called optimal if it is a local maximum and if moving toward it to
+	the left (the intensity increases), the intensity change at a single
+	step (dx = 1) is greater than the set parameter “threshold”.</SPAN></FONT></P>
+</UL>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5cm; margin-bottom: 0cm">
+<FONT SIZE=3><B>С</B></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>.</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+A block of buttons for loading a new image and saving the current
+image. Loading an image replaces the current image for the selected
+channel with a new one, for the first and second channel. After
+downloading, a number of options are disabled. Reloading an image
+places this image on the selected channel. Thus, it is possible to
+upload an image consecutively for each channel. All original meta
+information is stored for the new image. This approach allows one to
+download images that belong to the source, in different formats. The
+correspondence of the images is not checked and lies on the
+conscience of the expert interacting with the plugin. The ability to
+save an intermediate stage of work, and then reopen the file and
+continue processing, is an additional functionality.</SPAN></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5cm; margin-bottom: 0cm">
+<FONT SIZE=3><SPAN LANG="en-US"><B>D.</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+The </SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>“Open
+segmentation”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+button opens segmented image.</SPAN></FONT></P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5cm; margin-bottom: 0cm">
+<BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=4><SPAN LANG="en-US"><B><SPAN STYLE="background: #f3f3f3">The
+window for working with leaf surface </SPAN></B></SPAN></FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">The
+surface of any cell layer can be selected by constructing the
+projection of the cellular structure onto the leaf surface from the
+original 3D-confocal image. In the process of constructing the leaf
+surface of the cell layer, it is usually considered that the maximum
+of intensity is concentrated on the upper layer.  Figure 3 shows the
+surface layer of the sample in the ZoX plane. It shows that the cell
+walls of the upper cell layer are well colored, unlike the lower
+walls.</SPAN></FONT></P>
+[[File:English_manual_uz_html_m6c7637a1.png|1000px|thumb|center]]
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">Fig.3
+ZoX-projection of cell walls structure</SPAN></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT SIZE=3>The first step is to determine the plane of the most
+colored cell layer of the leaf surface.</FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">Firstly,
+to isolate the upper surface, it is necessary to determine the range
+of layers on which the plane of intensely stained cell walls is
+located.  The </SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>“Pix
+Graph”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"> button
+is used to plot the intensity change depending on the layer number.
+With this option, it is possible to study the dependence of the
+intensity on the number of the slice in 3D images (see fig. 3).</SPAN></FONT></P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="" CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+[[File:English_manual_uz_html_2bfeaac3.png|800px|thumb|center]]
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">Fig.
+4  Samples of plots for intensity distribution over the 3D image
+slices</SPAN></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">Points
+of local maxima corresponding to the pixels with the greatest
+intensity build the upper surface of the leaf.</SPAN></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"> <FONT SIZE=3><SPAN LANG="en-US">The
+following parameters are used to build a leaf surface.</SPAN></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-right: 0.28cm; margin-top: 0.21cm; margin-bottom: 0cm">
+<FONT SIZE=3><SPAN LANG="en-US"><I>Threshold</I></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+is the parameter responsible for specifying the local maximum of the
+intensity.  The point of the upper surface of the leaf is the optimal
+local maximum, in the right half-neighborhood of which the rate of
+falling of the graph of the signal intensity exceeds the value of the
+specified parameter. </SPAN></FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-right: 0.28cm; margin-top: 0.21cm; margin-bottom: 0cm">
+<FONT SIZE=3><SPAN LANG="en-US"><I>Diving value</I></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+is the parameter responsible for the distance between the plane of
+the leaf surface and the plane of the cut. This parameter is selected
+individually depending on the intensity of staining of the sample and
+the height of the cells of the upper layer, as well as the underlying
+layers.</SPAN></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-right: 0.28cm; margin-top: 0.18cm; margin-bottom: 0cm">
+<FONT SIZE=3><SPAN LANG="en-US"><I>Lattice size</I></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+is a parameter that determines the density of the grid, allows one to
+optimize the process of constructing the leaf curve surface with
+minimal construction errors. The increase in the parameter value is
+directly proportional to the absolute distance between the axes and
+leads to a decrease in their number, speeding up the process of
+constructing the leaf surface. Zero value of this parameter is
+equivalent to building an axis in each pixel. After constructing a
+discrete surface of the leaf, an automatic approximation of the
+values ​is performed to smooth the resulting surface.</SPAN></FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">To
+work with the selected surface cell layer, an additional window was 
+developed (fig. 5). This window visualize the result in the form of a
+2D plane image and a corresponding “surface mask”. The
+“surface mask” is a 2D image, where the value of each
+pixel is equal to the number of slice from the original image.
+Applying a “surface mask” to the original 3D image allows
+one to obtain a 2D image of the upper cell layer structure.</SPAN></FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">To
+switch between the “surface mask” tab and the “2D
+cell structure” tab, one should change the flag “Image
+Mask”.</SPAN></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+[[File:English_manual_uz_html_m75ddb95f.png|1000px|thumb|center]]
+<P LANG="en-US" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm">
+<FONT SIZE=3>Fig. 5 Screenshot of the window for working with
+superficial cell layer</FONT></P>
+<P LANG="en-US" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">Changes
+in pixels values of the “surface mask” entail changes in
+the process of the leaf surface constructing. Smoothing of the
+“surface mask” leads to an improvement of the quality for
+the resulting image of cell structure. As a rule the standard
+processing functions integrated into ImageJ (the median filter, gray
+morphology function) are useful.</SPAN></FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">After
+the improvement 2D segmentation could be evaluated by pressing the
+“MorfSegmentation” button.</SPAN></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=4><SPAN LANG="en-US"><B>The
+segmentation module by the marked watershed segmentation algorithm</B></SPAN></FONT></P>
+
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 115%">
+[http://imagej.net/Morphological_Segmentation Morphological Segmentation]
+integrated into LSM_Worker implements the segmentation of the image.
+The plugin Morphological Segmentation combines morphological
+operations, such as extended minima and morphological gradient, with
+watershed flooding algorithms to segment grayscale images.
+The main plugin’s window is shown in Figure 6.</P>
+
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">This
+plugin can </SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">process
+images with cell walls</SPAN></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B><SPAN STYLE="background: #ffffff">
+</SPAN></B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">(Border
+Image) and images with cell nuclei (Object Image). During the work
+with the plugin Morphological_Segmentation one should specify the
+parameter Tolerance, which indicates the intensity of </SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">local
+minimum</SPAN></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">. This
+parameter requires an individual manual calibration depending on the
+image.</SPAN></FONT></P>
+<P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+[[File:English_manual_uz_html_m3fb0e365.png|1000px|thumb|center]]
+<P LANG="en-US" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm">
+<FONT SIZE=3>Fig. 6 Screenshot of the window for the plugin
+Morphological_Segmentation</FONT></P>
+<P LANG="en-US" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">After
+pressing the button “Run” one should waiting for the
+segmentation processing. If it is necessary, you also could change
+the Tolerance value and repeat segmentation. Then import the result image carrying out the following steps:</SPAN></FONT></P>
+<OL>
+	<OL>
+		<OL TYPE=i>
+			<OL>
+				<LI><P STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 115%">
+				<FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT FACE="Calibri, sans-serif"><FONT SIZE=3><SPAN LANG="en-US">Choose</SPAN></FONT></FONT><FONT FACE="Calibri, sans-serif"><SPAN LANG="en-US">
+				</SPAN></FONT><FONT FACE="Calibri, sans-serif"><FONT SIZE=3><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">result image display type</SPAN></SPAN></FONT></FONT><FONT FACE="Calibri, sans-serif"><FONT SIZE=3><SPAN LANG="en-US">
+				as</SPAN></FONT></FONT><FONT FACE="Calibri, sans-serif"><FONT SIZE=3><SPAN LANG="en-US">
+				“Catchment basins” </SPAN></FONT></FONT><FONT FACE="Calibri, sans-serif"><FONT SIZE=3><SPAN LANG="en-US">(</SPAN></FONT></FONT><FONT FACE="Calibri, sans-serif"><FONT SIZE=3><SPAN LANG="en-US">Results</SPAN></FONT></FONT><FONT FACE="Calibri, sans-serif"><FONT SIZE=3><SPAN LANG="en-US">
+				-> Display). </SPAN></FONT></FONT></FONT></FONT>
+				</P>
+				<LI><P STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 115%">
+				<FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT FACE="Calibri, sans-serif"><FONT SIZE=3><SPAN LANG="en-US">Create
+				the window with segmented image (press </SPAN></FONT></FONT><FONT FACE="Calibri, sans-serif"><FONT SIZE=3><SPAN LANG="en-US">“Create
+				Image”) </SPAN></FONT></FONT></FONT></FONT>
+				</P>
+				<LI><P STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 115%">
+				<FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT FACE="Calibri, sans-serif"><FONT SIZE=3><SPAN LANG="en-US">Close
+				the main window of Morphological_Segmentation plugin and return
+				back to the window of LSM_Worker plugin.</SPAN></FONT></FONT></FONT></FONT></P>
+				<LI><P STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 115%">
+				<FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT FACE="Calibri, sans-serif"><FONT SIZE=3><SPAN LANG="en-US">The
+				button “MorfSegmentation” will change to the button
+				“</SPAN></FONT></FONT><FONT FACE="Calibri, sans-serif"><FONT SIZE=3><SPAN LANG="en-US"><B>Get
+				result</B></SPAN></FONT></FONT><FONT FACE="Calibri, sans-serif"><FONT SIZE=3><SPAN LANG="en-US">”.
+				The button “</SPAN></FONT></FONT><FONT FACE="Calibri, sans-serif"><FONT SIZE=3><SPAN LANG="en-US"><B>Get
+				result</B></SPAN></FONT></FONT><FONT FACE="Calibri, sans-serif"><FONT SIZE=3><SPAN LANG="en-US">”
+				opens the window with segmented image. </SPAN></FONT></FONT></FONT></FONT>
+				</P>
+			</OL>
+		</OL>
+	</OL>
+</OL>
+<P LANG="en-US" STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 115%">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=4><B>The
+window for working with segmented image</B></FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">A
+colorized 3D/2D image is a result of segmentation through the plugin
+Morphological_Segmentation, integrated with LSM_Worker. An additional
+window is used to edit segmented regions.</SPAN></FONT></P>
+<BR>
+[[File:English_manual_uz_html_m1bab5a50.jpg|1000px|thumb|center]]
+<P LANG="en-US" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm">
+<FONT SIZE=3>Fig. 7 Screenshot of the window for working with
+segmented image</FONT></P>
+<P LANG="en-US" CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">Description
+of the window for working with segmented image: </SPAN></FONT>
+</P>
+<OL>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">Fix
+	the minimal amount of pixels for a segmented area. After choosing
+	the parameter </SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">“</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>Pixels
+	in bad region</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">”
+	all elements with less amount of pixels will be removed from further
+	consideration.</SPAN></FONT></P>
+	<LI><P STYLE="margin-bottom: 0cm; border: none; padding: 0cm"><FONT SIZE=3><SPAN LANG="en-US">The
+	</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>“Delete
+	Boundary Cells”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+	button will delete objects on the border of image.</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>
+	</B></SPAN></FONT>
+	</P>
+	<LI><P STYLE="margin-bottom: 0cm; border: none; padding: 0cm"><FONT SIZE=3><SPAN LANG="en-US">The
+	</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>“Show
+	original image”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+	button will return the original image. </SPAN></FONT>
+	</P>
+	<LI><P STYLE="margin-bottom: 0cm; border: none; padding: 0cm"><FONT SIZE=3><SPAN LANG="en-US">The
+	</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>“Select
+	cells”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+	button allows choosing segmented areas. Indices of selected areas
+	are displayed at the bottom of the window.</SPAN></FONT></P>
+</OL>
+<P CLASS="western" STYLE="text-indent: 0.5cm; margin-bottom: 0cm; border: none; padding: 0cm">
+<FONT SIZE=3><SPAN LANG="en-US"><B>E.</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+Delete selected segmented areas.</SPAN></FONT></P>
+<P CLASS="western" STYLE="text-indent: 0.5cm; margin-bottom: 0cm; border: none; padding: 0cm">
+<FONT SIZE=3><SPAN LANG="en-US"><B>F.</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+The </SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>“Combine”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+button unite segmented areas after selection (button “Select
+cells” will change to button “Combine”).  </SPAN></FONT>
+</P>
+<P CLASS="western" STYLE="text-indent: 0.5cm; margin-bottom: 0cm; border: none; padding: 0cm">
+<FONT SIZE=3><SPAN LANG="en-US"><B>G.</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+The </SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>“Group”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+button group segmented areas after selection. Group indexes will be
+indicated in the results table</SPAN></FONT></P>
+<P CLASS="western" STYLE="text-indent: 0.5cm; margin-bottom: 0cm; border: none; padding: 0cm">
+<FONT SIZE=3><SPAN LANG="en-US"><B>H.</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>“Contact
+nucleus”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+corrects over segmented nuclei by association of bordering objects of
+nuclei segmentation.</SPAN></FONT></P>
+<P CLASS="western" STYLE="text-indent: 0.5cm; margin-bottom: 0cm; border: none; padding: 0cm">
+<FONT SIZE=3><SPAN LANG="en-US"><B>I.</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+The </SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>“Count
+pixels”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+button displays the resulted measurements in csv-file. Navigation
+between tables and segmented areas is realized by selection an
+element in the table. The color of corresponding segmented area will
+changes. The index of the area in the resulting table is displayed at
+the bottom of the window when you click on it.</SPAN></FONT></P>
+<P CLASS="western" STYLE="text-indent: 0.5cm; margin-bottom: 0cm; border: none; padding: 0cm">
+<FONT SIZE=3><SPAN LANG="en-US"><B>J. </B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">The
+</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>“Save”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+button saves results image in tif-file.</SPAN></FONT></P>
+<P CLASS="western" STYLE="text-indent: 0.5cm; margin-bottom: 0cm; border: none; padding: 0cm">
+<FONT SIZE=3><SPAN LANG="en-US"><B>K.</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+The </SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>“Cancel”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+button cancels changes and returns to the original image.</SPAN></FONT></P>
+<P CLASS="western" STYLE="text-indent: 0.5cm; margin-bottom: 0cm; border: none; padding: 0cm">
+<FONT SIZE=3><SPAN LANG="en-US"><B>L.</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+The flag </SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>“Nucleus
+image”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+indicates the image with nuclei. </SPAN></FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=4><B>Comparison
+of cells and nuclei images </B></FONT>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US"><B>The algorithm: 	</B></SPAN></FONT></P>
+<OL type="A">
+	<LI><P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">Run LSM_Worker and open original 3D image.</SPAN></FONT></P>
+	<LI><P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">Select a set of points distant from the leaf surface by a distance d. </SPAN></FONT>[[File:English_manual_uz_html_64c8230d.png|600px|thumb|center]]</P>
+	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3>Make a segmentation of resulting 2D image (Border Image) and count
+	objects’ volumes. C1 is a resulting table.</FONT></P>
+</OL>
+[[File:English_manual_uz_html_m66ff0f30.png|600px|thumb|left]]
+	<LI><P STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">Make
+	a “nuclei segmentation” of original 3D image (Object
+	Image) and count volumes of segmented areas (C1 is a resulting
+	table}.</SPAN></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="text-indent: 0.5cm; margin-bottom: 0cm">
+<BR>
+</P>
+	<LI><P STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">Mark
+	the image with nuclei by the “</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>Nucleus
+	image”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"> flag
+	in the checkbox.</SPAN></FONT></P>
+[[File:English_manual_uz_html_ae32c15.png|600px|thumb|left]]
+	<LI><P STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">Calculate
+	the correspondence between cells and nuclei by pressing the button
+	“C</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>ell-nucleus”.
+	</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><U>It is necessary
+	to keep all resulting tables and segmentation windows opened for
+	correct work.</U></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><U><B>
+	</B></U></SPAN></FONT>
+	</P>
+[[File:English_manual_uz_html_m70237ad3.png|1000px|thumb|center]]
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US"><B>G.</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+Table columns: </SPAN></FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-left: 1.27cm; margin-bottom: 0cm">
+<FONT SIZE=3>1. cell number;</FONT></P>
+<P CLASS="western" STYLE="margin-left: 1.27cm; margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">2.
+cell volume;</SPAN></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-left: 1.27cm; margin-bottom: 0cm">
+<FONT SIZE=3>3. nucleus number;</FONT></P>
+<P CLASS="western" STYLE="margin-left: 1.27cm; margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">4.
+nucleus volume;</SPAN></FONT></P>
+<P CLASS="western" STYLE="text-indent: 1.25cm; margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">5.
+fraction of pixels laying into the cell area. When there are mistakes
+in segmentation, the value P is less then one.</SPAN></FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><IMG SRC="English%20manual_uz_html_m7446267b.gif" NAME="Графический объект1" ALIGN=ABSMIDDLE WIDTH=48 HEIGHT=30 BORDER=0>
+<FONT SIZE=3><SPAN LANG="en-US">, where k is quantitate of cell’s
+pixels; n is quantitate of pixels into the inner cell area. In the
+case of incomplete overlapping of the nucleus region by the inner
+space of the cell </SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><I>p</I></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+becomes less than one. </SPAN></FONT>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><B>H.</B></FONT><FONT SIZE=3>
+</FONT><FONT SIZE=3><SPAN LANG="en-US">Resulting image </SPAN></FONT>
+</P>
+[[File:English_manual_uz_html_e86db9c.png|800px|thumb|center]]
