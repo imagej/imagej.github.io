@@ -408,30 +408,21 @@ segmented image</FONT></P>
 <P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">Description
 of the window for working with segmented image: </SPAN></FONT>
 </P>
-<OL>
-	<LI><P STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">Fix
-	the minimal amount of pixels for a segmented area. After choosing
-	the parameter </SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">“</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>Pixels
-	in bad region</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">”
-	all elements with less amount of pixels will be removed from further
-	consideration.</SPAN></FONT></P>
-	<LI><P STYLE="margin-bottom: 0cm; border: none; padding: 0cm"><FONT SIZE=3><SPAN LANG="en-US">The
-	</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>“Delete
-	Boundary Cells”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
-	button will delete objects on the border of image.</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>
-	</B></SPAN></FONT>
-	</P>
-	<LI><P STYLE="margin-bottom: 0cm; border: none; padding: 0cm"><FONT SIZE=3><SPAN LANG="en-US">The
-	</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>“Show
-	original image”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
-	button will return the original image. </SPAN></FONT>
-	</P>
-	<LI><P STYLE="margin-bottom: 0cm; border: none; padding: 0cm"><FONT SIZE=3><SPAN LANG="en-US">The
-	</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>“Select
-	cells”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
-	button allows choosing segmented areas. Indices of selected areas
-	are displayed at the bottom of the window.</SPAN></FONT></P>
-</OL>
+<P CLASS="western" STYLE="text-indent: 0.5cm; margin-bottom: 0cm; border: none; padding: 0cm">
+<FONT SIZE=3><SPAN LANG="en-US"><B>A.</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+Fix the minimal amount of pixels for a segmented area. After choosing the parameter
+<B>“Pixels in bad region”</B> all elements with less amount of pixels will be removed from
+further consideration.</SPAN></FONT></P>
+<P CLASS="western" STYLE="text-indent: 0.5cm; margin-bottom: 0cm; border: none; padding: 0cm">
+<FONT SIZE=3><SPAN LANG="en-US"><B>B.</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+The <B>“Delete Boundary Cells”</B> button will delete objects on the border of image.</SPAN></FONT></P>
+<P CLASS="western" STYLE="text-indent: 0.5cm; margin-bottom: 0cm; border: none; padding: 0cm">
+<FONT SIZE=3><SPAN LANG="en-US"><B>C.</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+The <B>“Show original image”</B> button will return the original image.</SPAN></FONT></P>
+<P CLASS="western" STYLE="text-indent: 0.5cm; margin-bottom: 0cm; border: none; padding: 0cm">
+<FONT SIZE=3><SPAN LANG="en-US"><B>D.</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+The <B>“Select cells”</B> button allows choosing segmented areas. Indices of selected areas are
+displayed at the bottom of the window.</SPAN></FONT></P>
 <P CLASS="western" STYLE="text-indent: 0.5cm; margin-bottom: 0cm; border: none; padding: 0cm">
 <FONT SIZE=3><SPAN LANG="en-US"><B>E.</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
 Delete selected segmented areas.</SPAN></FONT></P>
@@ -480,38 +471,32 @@ indicates the image with nuclei. </SPAN></FONT>
 <P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=4><B>Comparison
 of cells and nuclei images </B></FONT>
 </P>
-<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US"><B>The algorithm: 	</B></SPAN></FONT></P>
-<OL type="A">
-	<LI><P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">Run LSM_Worker and open original 3D image.</SPAN></FONT></P>
-	<LI><P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">Select a set of points distant from the leaf surface by a distance d. </SPAN></FONT>[[File:English_manual_uz_html_64c8230d.png|600px|thumb|center]]</P>
-	<LI><P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3>Make a segmentation of resulting 2D image (Border Image) and count
-	objects’ volumes. C1 is a resulting table.</FONT></P>
-</OL>
-[[File:English_manual_uz_html_m66ff0f30.png|600px|thumb|left]]
-	<LI><P STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">Make
-	a “nuclei segmentation” of original 3D image (Object
-	Image) and count volumes of segmented areas (C1 is a resulting
-	table}.</SPAN></FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US"><B>The algorithm: </B></SPAN></FONT></P>
+
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><B>A. </B><SPAN LANG="en-US">Run LSM_Worker and open original 3D image. </SPAN></FONT>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><B>B. </B><SPAN LANG="en-US">Select a set of points distant from the leaf surface by a distance d. </SPAN></FONT>
+</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><B>C. </B><SPAN LANG="en-US">Make a segmentation of resulting 2D image (Border Image) and count objects’ volumes.
+C1 is a resulting table. </SPAN></FONT>
+</P>
+[[File:English_manual_uz_html_m66ff0f30.png|600px|thumb|center]]
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><B>D. </B><SPAN LANG="en-US">Make a “nuclei segmentation” of original 3D image (Object Image) and count volumes of
+segmented areas (C1 is a resulting table}. </SPAN></FONT>
+</P>
 <P LANG="en-US" CLASS="western" STYLE="text-indent: 0.5cm; margin-bottom: 0cm">
 <BR>
 </P>
-	<LI><P STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">Mark
-	the image with nuclei by the “</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>Nucleus
-	image”</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"> flag
-	in the checkbox.</SPAN></FONT></P>
-[[File:English_manual_uz_html_ae32c15.png|600px|thumb|left]]
-	<LI><P STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">Calculate
-	the correspondence between cells and nuclei by pressing the button
-	“C</SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>ell-nucleus”.
-	</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><U>It is necessary
-	to keep all resulting tables and segmentation windows opened for
-	correct work.</U></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><U><B>
-	</B></U></SPAN></FONT>
-	</P>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><B>I. </B><SPAN LANG="en-US">Mark the image with nuclei by the <B>“Nucleus image”</B> flag in the checkbox. </SPAN></FONT>
+</P>
+[[File:English_manual_uz_html_ae32c15.png|600px|thumb|center]]
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><B>E. </B><SPAN LANG="en-US">Calculate the correspondence between cells and nuclei by pressing the button <B>“Cell-nucleus”</B>. <U>It is necessary to keep all resulting tables and segmentation windows opened for
+correct work.</U> </SPAN></FONT>
+</P>
 [[File:English_manual_uz_html_m70237ad3.png|1000px|thumb|center]]
 <P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><BR>
 </P>
-<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US"><B>G.</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US"><B>G. </B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
 Table columns: </SPAN></FONT>
 </P>
 <P LANG="en-US" CLASS="western" STYLE="margin-left: 1.27cm; margin-bottom: 0cm">
@@ -525,14 +510,13 @@ nucleus volume;</SPAN></FONT></P>
 <P CLASS="western" STYLE="text-indent: 1.25cm; margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">5.
 fraction of pixels laying into the cell area. When there are mistakes
 in segmentation, the value P is less then one.</SPAN></FONT></P>
-<P CLASS="western" STYLE="margin-bottom: 0cm"><IMG SRC="English%20manual_uz_html_m7446267b.gif" NAME="Графический объект1" ALIGN=ABSMIDDLE WIDTH=48 HEIGHT=30 BORDER=0>
+<P CLASS="western" STYLE="margin-bottom: 0cm">[[File:English_manual_uz_html_m7446267b.gif]]
 <FONT SIZE=3><SPAN LANG="en-US">, where k is quantitate of cell’s
 pixels; n is quantitate of pixels into the inner cell area. In the
 case of incomplete overlapping of the nucleus region by the inner
 space of the cell </SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><I>p</I></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
 becomes less than one. </SPAN></FONT>
 </P>
-<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><B>H.</B></FONT><FONT SIZE=3>
-</FONT><FONT SIZE=3><SPAN LANG="en-US">Resulting image </SPAN></FONT>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><B>H. </B><SPAN LANG="en-US">Resulting image </SPAN></FONT>
 </P>
 [[File:English_manual_uz_html_e86db9c.png|800px|thumb|center]]
