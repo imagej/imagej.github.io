@@ -356,9 +356,7 @@ pressing the button “Run” one should waiting for the
 segmentation processing. If it is necessary, you also could change
 the Tolerance value and repeat segmentation. Then import the result image carrying out the following steps:</SPAN></FONT></P>
 <OL>
-	<OL>
-		<OL TYPE=i>
-			<OL>
+
 				<LI><P STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 115%">
 				<FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT FACE="Calibri, sans-serif"><FONT SIZE=3><SPAN LANG="en-US">Choose</SPAN></FONT></FONT><FONT FACE="Calibri, sans-serif"><SPAN LANG="en-US">
 				</SPAN></FONT><FONT FACE="Calibri, sans-serif"><FONT SIZE=3><SPAN LANG="en-US"><SPAN STYLE="background: #ffffff">result image display type</SPAN></SPAN></FONT></FONT><FONT FACE="Calibri, sans-serif"><FONT SIZE=3><SPAN LANG="en-US">
@@ -384,9 +382,6 @@ the Tolerance value and repeat segmentation. Then import the result image carryi
 				result</B></SPAN></FONT></FONT><FONT FACE="Calibri, sans-serif"><FONT SIZE=3><SPAN LANG="en-US">”
 				opens the window with segmented image. </SPAN></FONT></FONT></FONT></FONT>
 				</P>
-			</OL>
-		</OL>
-	</OL>
 </OL>
 <P LANG="en-US" STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 115%">
 <BR>
