@@ -5,12 +5,17 @@ Simple macros for fiji to analyze videos and images of neurons activations.
 
 
 Author: Thomas Vuillaume
+
 Source: http://sites.imagej.net/NeuronDetector/
 
 License: MIT
 
 You may reproduce, modify and use this software freely.
-You may cite directly the software and version used,
+
+Please cite:    
+
+<img src="https://zenodo.org/badge/DOI/10.5281/zenodo.1400718.svg" alt="DOI"> - https://doi.org/10.5281/zenodo.1400718
+
 
 
 ---- 
