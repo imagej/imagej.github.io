@@ -7,8 +7,8 @@
 {{!}}-
 }}
 {{#if:{{{forum|}}}|
-! ImageJ Forum
-{{!}} [http://forum.imagej.net/users/{{{forum}}} {{{forum}}}]
+! Image.sc Forum
+{{!}} [http://forum.image.sc/users/{{{forum}}} {{{forum}}}]
 {{!}}-
 }}
 {{#if:{{{github|}}}|
