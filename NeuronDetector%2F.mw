@@ -17,9 +17,12 @@ Please cite:
 <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.1400718.svg" alt="DOI"> - https://doi.org/10.5281/zenodo.1400718
 
 ----
-== Example ==
+<nowiki>Insert non-formatted text here</nowiki>== Example ==
 
-[[File:Example.gif]]
+
+
+
+[[File:Example.gif|400px]]
 [[File:example_neurons_activation_postprocessed.gif]]
 [[File:example_neurons_activation_objects_map.gif]]
 
