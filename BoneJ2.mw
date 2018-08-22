@@ -5,6 +5,8 @@
 | author                 = {{Person|Michaeldoube}}, {{Person|Rdom}}, {{Person|Alessandro Felder}}
 | maintainer             = {{Person|Michaeldoube}}, {{Person|Rdom}}, {{Person|Alessandro Felder}}
 | source                 = {{GitHub|org=bonej-org|repo=BoneJ2}}
+| released               = Dec 11<sup>th</sup>, 2017
+| latest version         = cuneiform-experimental, Jun 28<sup>th</sup>, 2018
 | status                 = Active, Experimental
 }}
 
@@ -15,6 +17,14 @@ This version works with the latest Fiji, and complies with the modern ImageJ [[a
 As the code is still experimental, it's still likely to change a lot. This means any scripts using the code might break, results can change, and plug-ins gain and lose parameters. Tools marked with ''WIP'' (work in progress), are more likely to undergo large changes. 
 
 == Installation ==
+# [http://imagej.net/Downloads Download] the latest version of Fiji for your operating system
+# Launch Fiji
+# Select in the menu ''Help'' &gt; ''Update...''
+# Click ''Manage update sites``
+# Check ''BoneJ experimental``
+# Click ''Close''
+# Click ''Apply changes''
+After the downloads have finished, close and restart Fiji.
 
 == Analyse skeleton == 
 
