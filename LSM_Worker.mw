@@ -72,9 +72,7 @@ fig.1). To continue working with the plugin, one must specify:</FONT></P>
 	</P>
 </UL>
 <UL>
-	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><SPAN ID="Врезка1" DIR="LTR" STYLE="position: absolute; top: 1.64cm; left: -0.03cm; width: 5.77cm; height: 1.24cm; border: 1px solid #ffffff; padding: 0.14cm 0.26cm; background: #ffffff">
-		<BR><BR>
-	</SPAN><FONT SIZE=3><SPAN LANG="en-US">If necessary, you can reduce
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">If necessary, you can reduce
 	the amount of memory consumed by compressing the image (reducing the
 	size and depth of color). </SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US"><B>Choosing
 	this option will result in data loss and possible deterioration of
