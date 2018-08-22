@@ -7,7 +7,7 @@ Leaf Surface Morphology from Laser Scanning Microscopy images</I></SPAN></FONT><
 <P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><BR>
 </P>
 <P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US"><B>Installation:</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
-You can [https://imagej.net/Following_an_update_site follow an update site] 	http://sites.imagej.net/Bionet.nsc/ (LSM-W2 in the [https://imagej.net/List_of_update_sites#Available_update_sites Optional Update Sites]).</SPAN></FONT></P>
+You can [https://imagej.net/Following_an_update_site follow an update site] 	with URL http://sites.imagej.net/Bionet.nsc/ (LSM-W2 in the [https://imagej.net/List_of_update_sites#Available_update_sites Optional Update Sites]).</SPAN></FONT></P>
 <P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US"><B>Description:</B></SPAN></FONT><FONT SIZE=3><SPAN LANG="en-US">
 The plugin can work with multi-channel multi-frame 3D images in *.lsm
 format obtained from a laser scanning microscope. </SPAN></FONT><FONT SIZE=3>The
