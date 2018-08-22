@@ -16,7 +16,10 @@ This version works with the latest Fiji, and complies with the modern ImageJ [[a
 
 As the code is still experimental, it's still likely to change a lot. This means any scripts using the code might break, results can change, and plug-ins gain and lose parameters. Tools marked with ''WIP'' (work in progress), are more likely to undergo large changes. 
 
+Below is the documentation for the plug-ins included in BoneJ experimental.
+
 == Installation ==
+[[File:Install-bonej.png|400 px|Installation steps]]
 # [http://imagej.net/Downloads Download] the latest version of Fiji for your operating system
 # Launch Fiji
 # Select in the menu ''Help'' &gt; ''Update...''
@@ -26,6 +29,17 @@ As the code is still experimental, it's still likely to change a lot. This means
 # Click ''Apply changes''
 After the downloads have finished, close and restart Fiji.
 
-== Analyse skeleton == 
+== Analyse skeleton ==
+Menu path ''Plugins > BoneJ > Analyse skeleton''
 
-== Where is my favourite plug-in? ==
+This plug-in simply includes [[AnalyzeSkeleton]] in BoneJ. It adds some additional validation to check that your image suits the tool. It also skeletonizes your image by calling [[Skeletonize3D]] if needed.
+
+== Skeletonise ==
+Menu path ''Plugins > BoneJ > Skeletonise''
+
+This plug-in simply includes [[Skeletonize3D]] in BoneJ. It adds some additional validation to check that your image suits the tool.
+
+==== Differences to BoneJ1 ====
+Calls the latest version of [[Skeletonize3D]].
+
+== Where is my favorite plug-in? ==
