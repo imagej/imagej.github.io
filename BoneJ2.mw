@@ -80,6 +80,6 @@ Calls the latest version of [[Skeletonize3D]].
 == Where is my favorite plug-in? ==
 We've decided to remove some plug-ins from BoneJ (note that some have just not been documented here yet). These include ''Interpolate ROIs'', ''Neck shaft angle'', ''Optimise threshold'', ''Plateness'' and ''Structure model index'' have been discontinued. ''Dilate'' and ''Erode'' come pre-packaged with ImageJ, so there's no need to include them.
 
-Support for ''Kontron IMG'', ''Scanco ISQ'' and ''Stratec pQCT'' file formats have been moved to [[SCIFIO]]. Just run _Edit  &gt; Options  &gt; ImageJ2_, and check ''Use SCIFIO when opening files''. When the option is enabled, the files can be open from `File > Open` or dragging and dropping them like any other format. 
+Support for ''Kontron IMG'', ''Scanco ISQ'' and ''Stratec pQCT'' file formats have been moved to [[SCIFIO]]. Just run ''Edit  &gt; Options  &gt; ImageJ2'', and check ''Use SCIFIO when opening files''. When the option is enabled, these files can be opened from `File > Open` or dragging and dropping them like any other format. 
 
 ''Distribution analysis'' and other pQCT related tools can now be downloaded independently from the [[PQCT]] update site.
