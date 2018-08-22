@@ -10,7 +10,7 @@
 | status                 = Active, Experimental
 }}
 
-There's a new experimental, modernized BoneJ available through the ImageJ [http://imagej.net/Updater updater]. It's update site is called [http://sites.imagej.net/BoneJ BoneJ experimental].
+There's a new experimental, modernized BoneJ available through the ImageJ [http://imagej.net/Updater updater]. Its update site is called [http://sites.imagej.net/BoneJ BoneJ experimental].
 
 This version works with the latest Fiji, and complies with the modern ImageJ [[architecture]]. Most plug-ins also now support hyperstacks, i.e. images with multiple channels or time frames.
 
