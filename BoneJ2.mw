@@ -30,14 +30,45 @@ Below is the documentation for the plug-ins included in BoneJ experimental.
 After the downloads have finished, close and restart Fiji.
 
 == Analyse skeleton ==
-Menu path ''Plugins > BoneJ > Analyse skeleton''
+Menu path ''Plugins > BoneJ > Analyse skeleton''.
 
 This plug-in simply includes [[AnalyzeSkeleton]] in BoneJ. It adds some additional validation to check that your image suits the tool. It also skeletonizes your image by calling [[Skeletonize3D]] if needed.
 
+==== Suitable images ====
+The input image must be 2D or 3D, 8-bit and binary. Hyperstacks are not supported.
+
+==== Differences to BoneJ1 ====
+Calls the latest version of [[AnalyzeSkeleton]].
+
+== Local thickness ==
+Menu path ''Plugins >BoneJ > Thickness''.
+
+This plug-in includes [[Local_Thickness]] in BoneJ, and provides some additional options &amp; results. Local thickness measures ''the diameter of the largest sphere that fits inside the object and contains the point'' for each point i.e. foreground voxel in an image. The plug-in calculates mean and standard deviation of the trabecular thickness (Tb.Th) or trabecular spacing (Tb.Sp) directly from pixel values in the resulting thickness map. Foreground voxels are considered trabeculae, and background voxels are the spacing. Processing time is heavily dependent on feature size (in pixels); large features can take a very long time to process.
+
+==== Suitable images ====
+The input image must be 3D, 8-bit and binary. Hyperstacks are not supported.
+
+==== Parameters ====
+* '''Calculate''': chooses which thickness maps to calculate - trabecular thickness, trabecular spacing, or both. In order to calculate trabecular spacing, the image voxels are inverted.
+* '''Show thickness maps''': display the calculated thickness maps or not.
+* '''Mask thickness maps''': remove artifacts from the thickness maps. Artifacts are foreground voxels not present in the original image.
+* '''Crop to ROI manager''': create thickness maps only from the area bounded by the ROIs in the ROI manager. Checking this option requires you've added ROIs to the ROI manager.
+
+==== Results ====
+* The mean and standard deviation for each thickness map calculated.
+* Displays thickness map images if ''Show thickness maps'' was selected. 
+
+==== Differences to BoneJ1 ====
+* Calls the latest version of [[Local_Thickness]].
+* Thickness values for background voxels are marked ''NaN'' instead of ''0''.
+
 == Skeletonise ==
-Menu path ''Plugins > BoneJ > Skeletonise''
+Menu path ''Plugins > BoneJ > Skeletonise''.
 
 This plug-in simply includes [[Skeletonize3D]] in BoneJ. It adds some additional validation to check that your image suits the tool.
+
+==== Suitable images ====
+The input image must be 2D or 3D, 8-bit and binary. Hyperstacks are not supported.
 
 ==== Differences to BoneJ1 ====
 Calls the latest version of [[Skeletonize3D]].
