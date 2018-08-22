@@ -11,7 +11,7 @@
 
 == Experimental release ==
 
-There's a new experimental, modernized BoneJ available through the ImageJ [http://imagej.net/Updater updater]. It's update site is ''BoneJ experimental''. Detailed installation instructions are available on [https://github.com/bonej-org/BoneJ2/wiki/Installing-BoneJ GitHub]. This software is not yet stable, but it works with the latest Fiji. 
+There's a new modernized version of BoneJ available through the ImageJ [http://imagej.net/Updater updater]. Read more about [[BoneJ experimental]].
 
 == Installation ==
 
