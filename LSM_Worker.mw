@@ -55,7 +55,7 @@ started</B></FONT></P>
 starting the plugin, select a 3D image lsm-file. The plugin works
 only with lsm-files.</SPAN></FONT></P>
 <P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
-<SPAN CLASS="sd-abs-pos" STYLE="position: absolute; top: 0cm; left: 0cm; width: 216px"><IMG SRC="English%20manual_uz_html_m75ce2a0c.png" NAME="image23.png" WIDTH=216 HEIGHT=238 BORDER=0></SPAN><FONT SIZE=3>As
+<FONT SIZE=3>As
 soon as the information from the file is read, a window will be
 displayed showing the necessary information to form a complete
 multi-frame multi-channel 3D image (uploading window is showed in
