@@ -43,21 +43,28 @@ Calls the latest version of [[AnalyzeSkeleton]].
 == Connectivity ==
 Menu path ''Plugins &gt; BoneJ &gt; Connectivity''.
 
-For BoneJ samples it's recommended that you run purify before measuring connectivity.
+The Connectivity plug-in is designed to estimate the number of connected structures i.e. trabeculae in a trabecular network. This ''connectivity'' measure is related to a topological number ''χ'' known as ''Euler characteristic'', ''Euler number'' or ''Euler-Poincaré characteristic'. Mathematically defined connectivity is ''= 1 - (χ + Δχ)''. Roughly speaking, ''χ'' describes the shape or structure of a topological space. It can also be expressed as ''χ = objects - handles + cavities'', where a handle is a hole that goes through an object (e.g the hole in a doughnut, or the ear of a coffee mug), and a cavity is enclosed inside one. When measuring trabecular cubes, you need to add ''Δχ'' to ''χ'' to get a more accurate estimate of the connectivity of the whole network. The term ''Δχ'' corrects for the change in the topology of an object, when it's cut to pieces. 
+
+NB some other Euler characteristic implementations report ''χ + Δχ'' as ''χ'', i.e. in them the correction ''Δχ'' is implicit.
 
 ==== Suitable images ====
-The input image must be 3D and binary
+The input image must be 3D and binary. The plug-in assumes that there is only one particle in the foreground; to achieve this, run ''Purify''. Having more than one object often leads to negative connectivity.
 
 ==== Results ====
-* '''Euler characteristic (χ)''': describes the shape of the objects in the image. ''χ = objects - handles + cavities'', where a handle is a hole that punctures an object, and a cavity is enclosed inside one.
-* '''Corrected Euler (χ + Δχ)''':
-* '''Connectivity''':
-* '''Conn. density''':
+* '''Euler characteristic (χ)''': describes the shape of the object(s) in the image, ''χ = objects - handles + cavities''.
+* '''Corrected Euler (χ + Δχ)''': the Euler characteristic of the part corrected for edge effects to fit the whole.
+* '''Connectivity''': gives an estimate of the number of connected trabeculae in the image. Equal to ''1 - (χ + Δχ)''.
+* '''Conn. density''': connectivity divided by unit volume. 
+
 The measures are reported separately for each 3D subspace in the image, i.e. for each channel and time frame.
 
 ==== Differences to BoneJ1 ====
 * Supports hyperstacks
-* The old version reported ''Corrected Euler (χ + Δχ)'' incorrectly as ''Δχ'
+* The old version reported ''Corrected Euler (χ + Δχ)'' incorrectly as ''Δχ''
+
+==== Related publications ====
+Odgaard A, Gundersen HJG (1993), ''Quantification of connectivity in cancellous bone, with special emphasis on 3-D reconstructions'', Bone 14: 173-182, [http://dx.doi.org/10.1016/8756-3282(93)90245-6 doi:10.1016/8756-3282(93)90245-6.]
+Toriwaki J, Yonekura T (2002), ''Euler number and connectivity indexes of a three dimensional digital picture'', [http://www.scipress.org/journals/forma/abstract/1703/17030183.html Forma 17: 183-209]
 
 == Local thickness ==
 Menu path ''Plugins &gt; BoneJ &gt; Thickness''.
@@ -97,8 +104,8 @@ The input image must be 2D or 3D, 8-bit and binary. Hyperstacks are not supporte
 Calls the latest version of [[Skeletonize3D]].
 
 == Where is my favorite plug-in? ==
-We've decided to remove some plug-ins from BoneJ (note that some have just not been documented here yet). These include ''Interpolate ROIs'', ''Neck shaft angle'', ''Optimise threshold'', ''Plateness'' and ''Structure model index'' have been discontinued. ''Dilate'' and ''Erode'' come pre-packaged with ImageJ, so there's no need to include them.
+We've decided to remove some plug-ins from BoneJ experimental (note that some have just not been documented here yet). These include ''Interpolate ROIs'', ''Neck shaft angle'', ''Optimise threshold'', ''Plateness'' and ''Structure model index'' have been discontinued. ''Dilate'' and ''Erode'' come pre-packaged with ImageJ, so there's no need to include them.
 
-Support for ''Kontron IMG'', ''Scanco ISQ'' and ''Stratec pQCT'' file formats have been moved to [[SCIFIO]]. Just run ''Edit  &gt; Options  &gt; ImageJ2'', and check ''Use SCIFIO when opening files''. When the option is enabled, these files can be opened from `File > Open` or dragging and dropping them like any other format. 
+Support for ''Kontron IMG'', ''Scanco ISQ'' and ''Stratec pQCT'' file formats has been moved to [[SCIFIO]]. Just run ''Edit  &gt; Options  &gt; ImageJ2'', and check ''Use SCIFIO when opening files''. When the option is enabled, these kinds of files can be opened from `File > Open` or dragging &amp; dropping them like any other format. 
 
 ''Distribution analysis'' and other pQCT related tools can now be downloaded independently from the [[PQCT]] update site.
