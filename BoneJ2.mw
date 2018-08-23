@@ -30,7 +30,7 @@ Below is the documentation for the plug-ins included in BoneJ experimental.
 After the downloads have finished, close and restart Fiji.
 
 == Analyse skeleton ==
-Menu path ''Plugins > BoneJ > Analyse skeleton''.
+Menu path ''Plugins &gt; BoneJ &gt; Analyse skeleton''.
 
 This plug-in simply includes [[AnalyzeSkeleton]] in BoneJ. It adds some additional validation to check that your image suits the tool. It also skeletonizes your image by calling [[Skeletonize3D]] if needed.
 
@@ -40,8 +40,27 @@ The input image must be 2D or 3D, 8-bit and binary. Hyperstacks are not supporte
 ==== Differences to BoneJ1 ====
 Calls the latest version of [[AnalyzeSkeleton]].
 
+== Connectivity ==
+Menu path ''Plugins &gt; BoneJ &gt; Connectivity''.
+
+For BoneJ samples it's recommended that you run purify before measuring connectivity.
+
+==== Suitable images ====
+The input image must be 3D and binary
+
+==== Results ====
+* '''Euler characteristic (χ)''': describes the shape of the objects in the image. ''χ = objects - handles + cavities'', where a handle is a hole that punctures an object, and a cavity is enclosed inside one.
+* '''Corrected Euler (χ + Δχ)''':
+* '''Connectivity''':
+* '''Conn. density''':
+The measures are reported separately for each 3D subspace in the image, i.e. for each channel and time frame.
+
+==== Differences to BoneJ1 ====
+* Supports hyperstacks
+* The old version reported ''Corrected Euler (χ + Δχ)'' incorrectly as ''Δχ'
+
 == Local thickness ==
-Menu path ''Plugins >BoneJ > Thickness''.
+Menu path ''Plugins &gt; BoneJ &gt; Thickness''.
 
 This plug-in includes [[Local_Thickness]] in BoneJ, and provides some additional options &amp; results. Local thickness measures ''the diameter of the largest sphere that fits inside the object and contains the point'' for each point i.e. foreground voxel in an image. The plug-in calculates mean and standard deviation of the trabecular thickness (Tb.Th) or trabecular spacing (Tb.Sp) directly from pixel values in the resulting thickness map. Foreground voxels are considered trabeculae, and background voxels are the spacing. Processing time is heavily dependent on feature size (in pixels); large features can take a very long time to process.
 
@@ -67,7 +86,7 @@ Dougherty R, Kunzelmann K (2007), ''Computing local thickness of 3D structures w
 Hildebrand T, Rüegsegger P (1997), ''A new method for the model-independent assessment of thickness in three-dimensional images'', J. Microsc., 185: 67-75, [http://dx.doi.org/10.1046/j.1365-2818.1997.1340694.x doi:10.1046/j.1365-2818.1997.1340694.x]
 
 == Skeletonise ==
-Menu path ''Plugins > BoneJ > Skeletonise''.
+Menu path ''Plugins &gt; BoneJ &gt;Skeletonise''.
 
 This plug-in simply includes [[Skeletonize3D]] in BoneJ. It adds some additional validation to check that your image suits the tool.
 
