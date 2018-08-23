@@ -103,9 +103,36 @@ The input image must be 2D or 3D, 8-bit and binary. Hyperstacks are not supporte
 ==== Differences to BoneJ1 ====
 Calls the latest version of [[Skeletonize3D]].
 
+== Surface fraction ==
+Menu path ''Plugins &gt; BoneJ &gt; Fraction &gt; Surface fraction''
+
+''Surface fraction'' calculates the fraction of bone volume in an image by comparing surface meshes created from bone particles and the whole image. A mesh is a collection of triangular faces that defines the shape of an object in 3D graphics. The plug-in assumes that all foreground voxels represent bone. 
+
+More formally defined, ''Surface fraction'' calculates the fraction ''BV/TV'', which is the volume of mineralised bone ''BV'' per unit volume of the sample ''TV''.
+
+==== Suitable images ====
+The input image must be 3D and binary.
+
+==== Results ====
+* ''Bone volume'': volume of the surface mesh created from bone voxels.
+* ''Total volume'': volume of the surface mesh created from the whole image.
+* ''Volume ratio'': ratio of bone to total volume.
+
+The measures are reported separately for each 3D subspace in the image, i.e. for each channel and time frame.
+
+==== Differences to BoneJ1 ====
+* Supports hyperstacks.
+* Results differ, because the marching cubes and mesh volume implementations are different.
+
 == Where is my favorite plug-in? ==
 We've decided to remove some plug-ins from BoneJ experimental (note that some have just not been documented here yet). These include ''Interpolate ROIs'', ''Neck shaft angle'', ''Optimise threshold'', ''Plateness'' and ''Structure model index'' have been discontinued. ''Dilate'' and ''Erode'' come pre-packaged with ImageJ, so there's no need to include them.
 
 Support for ''Kontron IMG'', ''Scanco ISQ'' and ''Stratec pQCT'' file formats has been moved to [[SCIFIO]]. Just run ''Edit  &gt; Options  &gt; ImageJ2'', and check ''Use SCIFIO when opening files''. When the option is enabled, these kinds of files can be opened from `File > Open` or dragging &amp; dropping them like any other format. 
 
 ''Distribution analysis'' and other pQCT related tools can now be downloaded independently from the [[PQCT]] update site.
+
+== License ==
+BoneJ experimental is free, open-source software. You can redistribute it and/or modify it under the terms of the [https://github.com/bonej-org/BoneJ2/blob/master/LICENCE.md BSD 2-clause license]. The software is provided "as is" and any warranties are disclaimed. In no event shall the copyright holder or contributors be liable.
+
+== Citation ==
+If you'd like to cite the software, we will soon publish a paper about BoneJ experimental. We recommend you cite the specific release used in your research.
