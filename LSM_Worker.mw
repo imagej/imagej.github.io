@@ -1,4 +1,4 @@
-<B>LSM-W<math>^2</math> manual</B>
+<B>LSM-W2 manual</B>
 <BR>
 [[File:Untitled-7_small.png |200px|thumb|right]]
 <P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=4><SPAN LANG="en-US"><I><B>LSM-W2
@@ -87,7 +87,7 @@ wait for the image formation.</SPAN></FONT></P>
 <P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><BR>
 </P>
 <P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=4><B>The
-main window of LSM_Worker</B></FONT></P>
+main window of LSM-W2</B></FONT></P>
 <P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">The
 window header displays basic information about the image, including
 the current slice number and the total number of slices, the size of
@@ -155,7 +155,7 @@ of the buttons:</SPAN></FONT></P>
 </P>
 [[File:English_manual_uz_html_m7937f04c.png|900px|thumb|center]]
 <P LANG="en-US" CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.75cm; margin-bottom: 0cm">
-<FONT SIZE=3>Fig.2 Main window of the LSM_Worker plugin</FONT></P>
+<FONT SIZE=3>Fig.2 Main window of the LSM-W2 plugin</FONT></P>
 <P LANG="en-US" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
 <BR>
 </P>
@@ -322,7 +322,7 @@ segmentation module by the marked watershed segmentation algorithm</B></SPAN></F
 
 <P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 115%">
 [http://imagej.net/Morphological_Segmentation Morphological Segmentation]
-integrated into LSM_Worker implements the segmentation of the image.
+integrated into LSM-W2 implements the segmentation of the image.
 The plugin Morphological Segmentation combines morphological
 operations, such as extended minima and morphological gradient, with
 watershed flooding algorithms to segment grayscale images.
@@ -369,7 +369,7 @@ the Tolerance value and repeat segmentation. Then import the result image carryi
 				<LI><P STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 115%">
 				<FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT FACE="Calibri, sans-serif"><FONT SIZE=3><SPAN LANG="en-US">Close
 				the main window of Morphological_Segmentation plugin and return
-				back to the window of LSM_Worker plugin.</SPAN></FONT></FONT></FONT></FONT></P>
+				back to the window of LSM-W2 plugin.</SPAN></FONT></FONT></FONT></FONT></P>
 				<LI><P STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 115%">
 				<FONT FACE="Courier New, monospace"><FONT SIZE=2><FONT FACE="Calibri, sans-serif"><FONT SIZE=3><SPAN LANG="en-US">The
 				button “MorfSegmentation” will change to the button
@@ -387,7 +387,7 @@ the Tolerance value and repeat segmentation. Then import the result image carryi
 window for working with segmented image</B></FONT></P>
 <P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US">A
 colorized 3D/2D image is a result of segmentation through the plugin
-Morphological_Segmentation, integrated with LSM_Worker. An additional
+Morphological_Segmentation, integrated with LSM-W2. An additional
 window is used to edit segmented regions.</SPAN></FONT></P>
 <BR>
 [[File:English_manual_uz_html_m1bab5a50.jpg|1000px|thumb|center]]
@@ -465,7 +465,7 @@ of cells and nuclei images </B></FONT>
 </P>
 <P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><SPAN LANG="en-US"><B>The algorithm: </B></SPAN></FONT></P>
 
-<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><B>A. </B><SPAN LANG="en-US">Run LSM_Worker and open original 3D image. </SPAN></FONT>
+<P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><B>A. </B><SPAN LANG="en-US">Run LSM-W2 and open original 3D image. </SPAN></FONT>
 </P>
 <P CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=3><B>B. </B><SPAN LANG="en-US">Select a set of points distant from the leaf surface by a distance d. </SPAN></FONT>
 </P>
