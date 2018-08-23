@@ -65,7 +65,7 @@ To expand the projects you can also right click on the top-level "ImageJ Project
 
 * [https://www.youtube.com/watch?v=Ac-6gJ2eRb0 Developing ImageJ 1.x plugins with NetBeans] screencast
 * {{GitHub|org=imagej|repo=example-legacy-plugin|label=example-legacy-plugin}} project template
-* [[Introduction into Developing Plugins]] tutorial
+* [[Developing Plugins for ImageJ 1.x]] tutorial
 
 [[Category:Development]]
 [[Category:IDEs]]
