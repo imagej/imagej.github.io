@@ -280,7 +280,7 @@ Note that doing this only allows you to view the source code, it does '''not''' 
 * [[How to contribute to an existing plugin or library|Contributing to a plugin]]
 |
 * {{GitHub|org=imagej|repo=example-legacy-plugin|label=example-legacy-plugin}} project template
-* [[Introduction into Developing Plugins]]
+* [[Developing Plugins for ImageJ 1.x]]
 |}
 
 [[Category:Development]]
