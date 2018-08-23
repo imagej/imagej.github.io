@@ -43,7 +43,7 @@ Calls the latest version of [[AnalyzeSkeleton]].
 == Connectivity ==
 Menu path ''Plugins &gt; BoneJ &gt; Connectivity''.
 
-The Connectivity plug-in is designed to estimate the number of connected structures i.e. trabeculae in a trabecular network. This ''connectivity'' measure is related to a topological number ''χ'' known as ''Euler characteristic'', ''Euler number'' or ''Euler-Poincaré characteristic'. Mathematically defined connectivity is ''= 1 - (χ + Δχ)''. Roughly speaking, ''χ'' describes the shape or structure of a topological space. It can also be expressed as ''χ = objects - handles + cavities'', where a handle is a hole that goes through an object (e.g the hole in a doughnut, or the ear of a coffee mug), and a cavity is enclosed inside one. When measuring trabecular cubes, you need to add ''Δχ'' to ''χ'' to get a more accurate estimate of the connectivity of the whole network. The term ''Δχ'' corrects for the change in the topology of an object, when it's cut to pieces. 
+The Connectivity plug-in is designed to estimate the number of connected structures i.e. trabeculae in a trabecular network. This ''connectivity'' measure is related to a topological number ''χ'' known as ''Euler characteristic'', ''Euler number'' or ''Euler-Poincaré characteristic''. Mathematically defined connectivity is ''= 1 - (χ + Δχ)''. Roughly speaking, ''χ'' describes the shape or structure of a topological space. It can also be expressed as ''χ = objects - handles + cavities'', where a handle is a hole that goes through an object (e.g the hole in a doughnut, or the ear of a coffee mug), and a cavity is enclosed inside one. When measuring trabecular cubes, you need to add ''Δχ'' to ''χ'' to get a more accurate estimate of the connectivity of the whole network. The term ''Δχ'' corrects for the change in the topology of an object, when it's cut to pieces. 
 
 NB some other Euler characteristic implementations report ''χ + Δχ'' as ''χ'', i.e. in them the correction ''Δχ'' is implicit.
 
@@ -63,8 +63,8 @@ The measures are reported separately for each 3D subspace in the image, i.e. for
 * The old version reported ''Corrected Euler (χ + Δχ)'' incorrectly as ''Δχ''
 
 ==== Related publications ====
-Odgaard A, Gundersen HJG (1993), ''Quantification of connectivity in cancellous bone, with special emphasis on 3-D reconstructions'', Bone 14: 173-182, [http://dx.doi.org/10.1016/8756-3282(93)90245-6 doi:10.1016/8756-3282(93)90245-6.]
-Toriwaki J, Yonekura T (2002), ''Euler number and connectivity indexes of a three dimensional digital picture'', [http://www.scipress.org/journals/forma/abstract/1703/17030183.html Forma 17: 183-209]
+* Odgaard A, Gundersen HJG (1993), ''Quantification of connectivity in cancellous bone, with special emphasis on 3-D reconstructions'', Bone 14: 173-182, [http://dx.doi.org/10.1016/8756-3282(93)90245-6 doi:10.1016/8756-3282(93)90245-6.]
+* Toriwaki J, Yonekura T (2002), ''Euler number and connectivity indexes of a three dimensional digital picture'', [http://www.scipress.org/journals/forma/abstract/1703/17030183.html Forma 17: 183-209]
 
 == Local thickness ==
 Menu path ''Plugins &gt; BoneJ &gt; Thickness''.
@@ -89,8 +89,8 @@ The input image must be 3D, 8-bit and binary. Hyperstacks are not supported.
 * Thickness values for background voxels are marked ''NaN'' instead of ''0''.
 
 ==== Related publications ====
-Dougherty R, Kunzelmann K (2007), ''Computing local thickness of 3D structures with ImageJ'', Microsc. Microanal., 13: 1678-1679, [http://dx.doi.org/10.1017/S1431927607074430 doi:10.1017/S1431927607074430]
-Hildebrand T, Rüegsegger P (1997), ''A new method for the model-independent assessment of thickness in three-dimensional images'', J. Microsc., 185: 67-75, [http://dx.doi.org/10.1046/j.1365-2818.1997.1340694.x doi:10.1046/j.1365-2818.1997.1340694.x]
+* Dougherty R, Kunzelmann K (2007), ''Computing local thickness of 3D structures with ImageJ'', Microsc. Microanal., 13: 1678-1679, [http://dx.doi.org/10.1017/S1431927607074430 doi:10.1017/S1431927607074430]
+* Hildebrand T, Rüegsegger P (1997), ''A new method for the model-independent assessment of thickness in three-dimensional images'', J. Microsc., 185: 67-75, [http://dx.doi.org/10.1046/j.1365-2818.1997.1340694.x doi:10.1046/j.1365-2818.1997.1340694.x]
 
 == Skeletonise ==
 Menu path ''Plugins &gt; BoneJ &gt;Skeletonise''.
