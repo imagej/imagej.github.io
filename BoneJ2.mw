@@ -92,6 +92,20 @@ The input image must be 3D, 8-bit and binary. Hyperstacks are not supported.
 * Dougherty R, Kunzelmann K (2007), ''Computing local thickness of 3D structures with ImageJ'', Microsc. Microanal., 13: 1678-1679, [http://dx.doi.org/10.1017/S1431927607074430 doi:10.1017/S1431927607074430]
 * Hildebrand T, Rüegsegger P (1997), ''A new method for the model-independent assessment of thickness in three-dimensional images'', J. Microsc., 185: 67-75, [http://dx.doi.org/10.1046/j.1365-2818.1997.1340694.x doi:10.1046/j.1365-2818.1997.1340694.x]
 
+== Purify (WIP) ==
+Purify locates all particles in 3D and removes all but the largest foreground and background particles.
+
+==== Suitable images ====
+The input image must be 3D, 8-bit and binary.
+
+==== Parameters ====
+* '''Labelling algorithm''':
+** '''Mapped''': Non-recursive, memory efficient and fast.
+** '''Multithreaded''': use multiple cores and job chunking to reduce recursion. Fast on small stacks and if you have many CPU cores.
+** '''Linear''': Non-recursive but heavy on RAM and single-threaded. Fast on big stacks, but only if you have the memory.
+
+==== Results ====
+
 == Skeletonise ==
 Menu path ''Plugins &gt; BoneJ &gt;Skeletonise''.
 
