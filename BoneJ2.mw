@@ -9,8 +9,8 @@
 | latest version         = cuneiform-experimental, Jun 28<sup>th</sup>, 2018
 | status                 = Active, Experimental
 }}
-
-There's a new experimental, modernized BoneJ available through the ImageJ [http://imagej.net/Updater updater]. Its update site is called [http://sites.imagej.net/BoneJ BoneJ experimental].
+BoneJ is a collection of skeletal biology plug-ins for ImageJ.
+This is the new experimental, modernized version of the software available through the ImageJ [http://imagej.net/Updater updater]. Its update site is called [http://sites.imagej.net/BoneJ BoneJ experimental]. For the old ImageJ1 version, see [[BoneJ]].
 
 This version works with the latest Fiji, and complies with the modern ImageJ [[architecture]]. Most plug-ins also now support hyperstacks, i.e. images with multiple channels or time frames.
 
