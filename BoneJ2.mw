@@ -49,12 +49,11 @@ Menu path ''Plugins &gt; BoneJ &gt; Fraction &gt; Area/Volume fraction''
 A 2D or 3D binary image
 
 ==== Results ====
-* Results will be for ''area'' if image is 2D and ''volume'' if 3D 
-* ''Bone volume'': volume of the bone voxels.
-* ''Total volume'': volume of the whole image.
-* ''Volume ratio'': ratio of bone to total volume.
+* '''Bone volume''': volume of the bone voxels.
+* '''Total volume''': volume of the whole image.
+* '''Volume ratio''': ratio of bone to total volume.
 
-The measures are reported separately for each 2D/3D subspace in the image, i.e. for each channel and time frame.
+The measures are reported separately for each 2D/3D subspace in the image, i.e. for each channel and time frame. Results will be for ''area'' if image is 2D.
 
 ==== Differences to BoneJ1 ====
 * In BoneJ1 the plug-in was called ''Volume fraction''
@@ -149,9 +148,9 @@ More formally defined, ''Surface fraction'' calculates the fraction ''BV/TV'', w
 The input image must be 3D and binary.
 
 ==== Results ====
-* ''Bone volume'': volume of the surface mesh created from bone voxels.
-* ''Total volume'': volume of the surface mesh created from the whole image.
-* ''Volume ratio'': ratio of bone to total volume.
+* '''Bone volume''': volume of the surface mesh created from bone voxels.
+* '''Total volume''': volume of the surface mesh created from the whole image.
+* '''Volume ratio''': ratio of bone to total volume.
 
 The measures are reported separately for each 3D subspace in the image, i.e. for each channel and time frame.
 
