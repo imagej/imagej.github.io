@@ -86,6 +86,25 @@ The measures are reported separately for each 3D subspace in the image, i.e. for
 * Odgaard A, Gundersen HJG (1993), ''Quantification of connectivity in cancellous bone, with special emphasis on 3-D reconstructions'', Bone 14: 173-182, [http://dx.doi.org/10.1016/8756-3282(93)90245-6 doi:10.1016/8756-3282(93)90245-6.]
 * Toriwaki J, Yonekura T (2002), ''Euler number and connectivity indexes of a three dimensional digital picture'', [http://www.scipress.org/journals/forma/abstract/1703/17030183.html Forma 17: 183-209]
 
+== Fit ellipsoid ==
+Menu path ''Plugins &gt; BoneJ &gt; Fit ellipsoid''.
+
+Finds the ellipsoid that best fits a set of point or multi-point ROIs in the ROI Manager. _Fit ellipsoid_ may fail to fit an ellipsoid. The more points you add, the more likely it is to succeed.
+
+==== Suitable images ====
+A 3D image.
+
+==== Parameters ====
+* '''ROI Manager''': ROIs with at least nine points in the ROI Manager.
+
+==== Results ====
+* '''Radii''': the radii ''a'', ''b'' and ''c'' of the fitted ellipsoid. Radius ''a'' is the shortest and ''c'' the longest.
+* '''Centroid''': ''x'', ''y'' and ''z'' coordinates of the ellipsoid centre point.
+
+==== Differences from BoneJ1 ====
+* Supports multi-point ROIs.
+* Plug-in cancels if an ellipsoid can't be found, instead of reporting invalid results.
+
 == Local thickness ==
 Menu path ''Plugins &gt; BoneJ &gt; Thickness''.
 
