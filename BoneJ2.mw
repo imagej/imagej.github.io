@@ -89,7 +89,7 @@ The measures are reported separately for each 3D subspace in the image, i.e. for
 == Fit ellipsoid ==
 Menu path ''Plugins &gt; BoneJ &gt; Fit ellipsoid''.
 
-Finds the ellipsoid that best fits a set of point or multi-point ROIs in the ROI Manager. _Fit ellipsoid_ may fail to fit an ellipsoid. The more points you add, the more likely it is to succeed.
+Finds the ellipsoid that best fits a set of point or multi-point ROIs in the ROI Manager. ''Fit ellipsoid'' may fail to fit an ellipsoid. The more points you add, the more likely it is to succeed.
 
 ==== Suitable images ====
 A 3D image.
