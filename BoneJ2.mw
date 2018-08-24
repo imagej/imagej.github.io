@@ -40,6 +40,27 @@ The input image must be 2D or 3D, 8-bit and binary. Hyperstacks are not supporte
 ==== Differences to BoneJ1 ====
 Calls the latest version of [[AnalyzeSkeleton]].
 
+== Area/Volume fraction ==
+Menu path ''Plugins &gt; BoneJ &gt; Fraction &gt; Area/Volume fraction''
+
+''Area/Volume fraction'' calculates the fraction of bone in an image by it to the whole image. It counts all the foreground voxels, which it assumes represent bone, and compares them to the total number of voxels in the image. More formally defined, the plug-in calculates the fraction ''BV/TV'', which is the volume of mineralised bone ''BV'' per unit volume of the sample ''TV''. In case of a 2D image, it calculates the fraction ''BA/TA'', which is the area of bone per unit area of the sample.
+
+==== Suitable images ====
+A 2D or 3D binary image
+
+==== Results ====
+* Results will be for ''area'' if image is 2D and ''volume'' if 3D 
+* ''Bone volume'': volume of the bone voxels.
+* ''Total volume'': volume of the whole image.
+* ''Volume ratio'': ratio of bone to total volume.
+
+The measures are reported separately for each 2D/3D subspace in the image, i.e. for each channel and time frame.
+
+==== Differences to BoneJ1 ====
+* In BoneJ1 the plug-in was called ''Volume fraction''
+* Can process 2D images
+* Supports hyperstacks 
+
 == Connectivity ==
 Menu path ''Plugins &gt; BoneJ &gt; Connectivity''.
 
@@ -137,6 +158,7 @@ The measures are reported separately for each 3D subspace in the image, i.e. for
 ==== Differences to BoneJ1 ====
 * Supports hyperstacks.
 * Results differ, because the marching cubes and mesh volume implementations are different.
+* In BoneJ1 this plug-in was called ''Volume fraction''
 
 == Where is my favorite plug-in? ==
 We've decided to remove some plug-ins from BoneJ experimental (note that some have just not been documented here yet). These include ''Interpolate ROIs'', ''Neck shaft angle'', ''Optimise threshold'', ''Plateness'' and ''Structure model index'' have been discontinued. ''Dilate'' and ''Erode'' come pre-packaged with ImageJ, so there's no need to include them.
