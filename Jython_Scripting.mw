@@ -109,6 +109,7 @@ The 1st things to know about openCV is that most functions works with openCV mat
 #@ ImagePlus ImP 
 from ijopencv.ij      import ImagePlusMatConverter
 from ijopencv.opencv  import MatImagePlusConverter
+from ij               import ImagePlus
 
 # Convert ImagePlus (actually the contained ImageProcessor) to Matrix object
 imp2mat = ImagePlusMatConverter()
@@ -116,9 +117,10 @@ ImMat = imp2mat.toMat(imp.getProcessor())
 print ImMat
 
 # Convert Matrix object to ImageProcessor
-mat2imp = MatImagePlusConverter()
-NewIP  = mat2imp.toImageProcessor(ImMat)
-print NewIP
+mat2ip = MatImagePlusConverter()
+NewIP  = mat2ip.toImageProcessor(ImMat)
+NewImp = ImagePlus("Matrix converted back to ImagePlus", NewIP)
+print NewImP
 </source>
 
 Such kind of converter is also available for PointRoi to opencv keypoints...
