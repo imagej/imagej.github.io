@@ -18,7 +18,7 @@ Unfortunately, life scientists often lack access to such infrastructure.
 
 Addressing this issue is particularly challenging as Fiji is an extraordinarily extensible platform and new plugins emerge incessantly.
 So far, plugin developers have typically implemented task parallelization within a particular plugin, but no universal approach has yet been incorporated into the SciJava architecture.
-In this paper we propose the concept of integrating parallelization support into one of the SciJava libraries, thereby enabling developers to access remote resources (e.g., remote HPC infrastructure) and delegate plugin-specific tasks to its compute nodes.
+Here we propose the concept of integrating parallelization support into one of the SciJava libraries, thereby enabling developers to access remote resources (e.g., remote HPC infrastructure) and delegate plugin-specific tasks to its compute nodes.
 As the cluster-specific details are hidden in respective interface implementations, the plugins can remain extensible and technology-agnostic.
 In addition, the proposed solution is highly scalable, meaning that any additional resources can be efficiently utilized.
 
