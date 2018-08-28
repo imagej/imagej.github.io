@@ -4,7 +4,7 @@
 | author                 = Jan Kožusznik, Petr Bainar, Jana Klímová, Michal Krumnikl, Pavel Moravec, Václav Svatoň, Pavel Tomancak
 | maintainer             = jan.kozusznik@vsb.cz
 | released               = August 2018
-| latest version         = August 2018
+| development status     = active
 | category               = [[:Category:Transform|Transform]], [[:Category:Registration|Registration]], [[:Category:Deconvolution|Deconvolution]]
 | source               = [https://code.it4i.cz/fiji/haas-java-client]
 }}
