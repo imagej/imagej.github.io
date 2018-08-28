@@ -10,7 +10,17 @@
 }}
 
 = Introduction =
-This plugin
+Imaging techniques have emerged as a crucial means of understanding the structure and function of living organisms in primary research, as well as medical diagnostics.
+In order to maximize information gain, achieving as high spatial and temporal resolution as practically possible is desired.
+However, long-term time-lapse recordings at the single-cell level produce vast amounts of multidimensional image data, which cannot be processed on a personal computer in a timely manner, therefore requiring utilization of high-performance computing (HPC) clusters.
+For example, processing a 2.2 TB dataset of drosophila embryonic development, taking a week on a single computer, was brought down to 13 hours by employing an HPC cluster supporting parallel execution of individual tasks \cite{Schmied2014,Schmied2016}.
+Unfortunately, life scientists often lack access to such infrastructure.
+
+Addressing this issue is particularly challenging as Fiji is an extraordinarily extensible platform and new plugins emerge incessantly.
+So far, plugin developers have typically implemented task parallelization within a particular plugin, but no universal approach has yet been incorporated into the SciJava architecture.
+In this paper we propose the concept of integrating parallelization support into one of the SciJava libraries, thereby enabling developers to access remote resources (e.g., remote HPC infrastructure) and delegate plugin-specific tasks to its compute nodes.
+As the cluster-specific details are hidden in respective interface implementations, the plugins can remain extensible and technology-agnostic.
+In addition, the proposed solution is highly scalable, meaning that any additional resources can be efficiently utilized.
 
 = Description =
 
@@ -19,4 +29,4 @@ This plugin
 = Usage =
 
 
-== Citation ==
+= Citation =
