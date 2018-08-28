@@ -103,7 +103,7 @@ It is even possible to use most of opencv functionalities within Jython/Fiji. Th
 
 A manual installation is also possible by putting the jar packages in the jar folder of imageJ. They are avalaible on the [https://github.com/joheras/IJ-OpenCV IJopenCV github], which even provides a maven option.  
 
-The 1st things to know about openCV is that most functions works with openCV matrix object. Hopefully, the IJopenCV provides some converters :
+The first thing to know about OpenCV is that most functions work with an OpenCV matrix object. Fortunately, the IJ-OpenCV project provides some converters :
 
 <source lang="python">
 #@ ImagePlus ImP 
