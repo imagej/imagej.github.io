@@ -99,24 +99,26 @@ rm = RM.getRoiManager()  # "activate" the RoiManager otherwise it can behave str
 </code>
 
 ==== Using openCV in Jython ====
-It is even possible to use most of opencv functionalities within Jython: For that the most simple is to enable the IJopenCV update site that will automatically download the necessary packages. 
+It is even possible to use most of opencv functionalities within Jython/Fiji. There are several options (see the [https://imagej.net/OpenCV wiki page about opencv]), yet the most straight forward is probably IJ-OpenCV which is available via the update sites.  It will automatically download the necessary packages and dependencies in your Fiji installation. 
 
-A manual installation is also possible by putting the jar packages in the jar folder of imageJ. They are avalaible on the [https://github.com/joheras/IJ-OpenCV IJopenCV github], which even provides a maven option. '''NB : the version on Github and the update sites are not identical and not compatible''' 
+A manual installation is also possible by putting the jar packages in the jar folder of imageJ. They are avalaible on the [https://github.com/joheras/IJ-OpenCV IJopenCV github], which even provides a maven option.  
 
-The 1st things to know about openCV is that most functions works with openCV matrix object. Hopefully, the IJopenCV provides a converter :
+The 1st things to know about openCV is that most functions works with openCV matrix object. Hopefully, the IJopenCV provides some converters :
+
 <source lang="python">
 #@ ImagePlus ImP 
-from ijopencv	import ImageConverter
+from ijopencv.ij      import ImagePlusMatConverter
+from ijopencv.opencv  import MatImagePlusConverter
 
-Converter = ImageConverter() # create an instance of the converter
+# Convert ImagePlus (actually the contained ImageProcessor) to Matrix object
+imp2mat = ImagePlusMatConverter()
+ImMat = imp2mat.toMat(imp.getProcessor())
+print ImMat
 
-# Convert to a matrice
-ImCv = Converter.convertTo(ImP)
-
-# Do some processing in openCV
-#...
-# Convert back to an ImagePlus
-ImP2 = Converter.convertFrom(ImCv)
+# Convert Matrix object to ImageProcessor
+mat2imp = MatImagePlusConverter()
+NewIP  = mat2imp.toImageProcessor(ImMat)
+print NewIP
 </source>
 
 Such kind of converter is also available for PointRoi to opencv keypoints...
@@ -142,8 +144,7 @@ This one takes <code>org.opencv.core.Mat</code> as input. It is currently challe
 using <code>CvArr</code> as input, but even if you manage to convert your input as a <code>CvArr</code> it crashes Fiji. Apparently it is a deprecated version.
 
 * <code>org.bytedeco.javacpp.opencv_core.transform</code>
-That's the one to use ! It takes only <code>org.bytedeco.javacpp.opencv_core.Mat</code> as input, which is the most approriate in Fiji/Jython 
-
+That's the one to use ! It takes only <code>org.bytedeco.javacpp.opencv_core.Mat</code> as input, which is the most approriate in Fiji/Jython
 
 == Self written Jython modules for ImageJ ==
 
