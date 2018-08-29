@@ -29,6 +29,9 @@ In addition, the proposed solution is highly scalable, meaning that any addition
 
 
 == HEAppE middleware ==
+Accessing a remote HPC cluster is often burdened by administrative overhead due to more or less complex security policies enforced by HPC centers. This barrier can be substantially lowered by employing a middleware tool based on the HPC-as-a-Service concept. To facilitate access to HPC from the Fiji environment, we utilize an in-house HEAppE Middleware framework [http://heappe.eu] allowing end users to access an HPC system through web services and remotely execute pre-defined tasks. Furthermore, HEAppE is designed to be universal and applicable to various HPC architectures.
+
+We developed a Fiji plugin underlain by HEAppE, which enables users to steer workflows running on a remote HPC resource. As a representative workflow we use a Snakemake based SPIM data processing pipeline operating on large image datasets. The Snakemake workflow engine resolves dependencies between subsequent steps and executes in parallel any tasks appearing to be independent, such as processing of individual time points of a time-lapse acquisition.
 
 = Instalation =
 
