@@ -4,7 +4,7 @@
 Simple macros for fiji to analyze videos and images of neurons activations.
 
 
-Author: Thomas Vuillaume
+Authors: Thomas Vuillaume, Marina Messina
 
 Source: http://sites.imagej.net/NeuronDetector/
 
@@ -17,6 +17,7 @@ Please cite:
 <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.1400718.svg" alt="DOI"> - https://doi.org/10.5281/zenodo.1400718
 
 ----
+
 == Example ==
 
 Example video obtained with GCampf6 marker | Processed video | Object map obtained with [https://imagej.net/3D_Objects_Counter 3D Objects Counter]
