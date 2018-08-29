@@ -1,0 +1,1 @@
+Lateral (left) and cross-sectional (right) views of registered (Row 1), fused (Row 2), and deconvolved embryo volumes (Row 3), corresponding to Time point 1 (Column 1), Time point 45 (Column 2), and Time point 90 (Column 3)
