@@ -57,7 +57,7 @@ Execution of the ''Snakemake'' pipeline from the implemented Fiji plugin was tes
 
 The pipeline was tested on a dataset used in experiments run on the Madmax cluster at MPI-CBG [https://imagej.net/Automated_workflow_for_parallel_Multiview_Reconstruction]. The Madmax cluster had 44 nodes with two Intel Xeon E5-2640, 2.5 GHz CPUs with 6 cores each (average CPU PassMark 9 498). In comparison, Salomon nodes are equipped with two Intel Xeon E5-2680v3, 2.5 GHz CPU with 12 cores each (average CPU PassMark 18 626). Salomon is running a newer generation of Xeon processors (Haswell) providing double the performance of the Sandy Bridge architecture used on Madmax.
 
-Using the developed plugin, we executed the pipeline on the Salomon supercomputer at IT4Innovations in Ostrava, Czech Republic. As the test data set we used 90 time-point SPIM acquisition of a Drosophila melanogaster embryo expressing FlyFos fluorescent GFP fusion reporter for the nrv2 gene.
+Using the developed plugin, we executed the pipeline on the Salomon supercomputer at IT4Innovations in Ostrava, Czech Republic. As the test data set we used 90 time-point SPIM acquisition of a ''Drosophila melanogaster'' embryo expressing FlyFos fluorescent GFP fusion reporter for the ''nrv2'' gene.
 The embryo was imaged with Lightsheet Z.1 SPIM microscope (Carl Zeiss Microscopy) from 5 views every 15 minutes from cellular blastoderm stage until late stages of fruitfly embryogenesis. The data transfer and pipeline execution on Salomon using 90 nodes took 6 hours 37 minutes. For comparison, processing of the same dataset on a common PC took 44 hours and 8 minutes.
 
 = Citation =
