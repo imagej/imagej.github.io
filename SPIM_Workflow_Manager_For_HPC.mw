@@ -41,7 +41,7 @@ Pipeline input parameters are entered by a user into a config.yaml configuration
 shows results of registration, fusion and deconvolution in different time points.
 
 = Instalation =
-After you install and launch Fiji, go to {{bc | Help | Update... | Manage update sites}}, tick {{bc P2E-IT4Innovations}} and close the window. Then click {{bc Apply changes}} and restart Fiji.
+After you install [https://imagej.net/Fiji/Downloads] and launch Fiji, go to {{bc | Help | Update... | Manage update sites}}, tick ''P2E-IT4Innovations'' and close the window. Then click ''Apply changes'' and restart Fiji.
 
 = Usage =
 
