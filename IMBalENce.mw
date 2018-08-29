@@ -1,1 +1,30 @@
-FEI SEM metadata and set scale tool
+{{Infobox
+| software               = Fiji
+| name                   = FEI SEM metadata and auto-scale tool
+| author                 = {{Zhou|XU}}
+| maintainer             = Zhou XU ([mailto:zhou.xu@monash.edu])
+| filename               = [https://github.com/demisjohn/Microscope-Measurement-Tools/archive/master.zip  Microscope-Measurement-Tools.zip]
+| source                 = {{GitHub|org=demisjohn|repo=Microscope-Measurement-Tools}}
+| released               = Aug. 30<sup>th</sup>, 2018
+| latest version         = 1.0
+| status                 = beta
+| website                = [https://github.com/demisjohn/Microscope-Measurement-Tools Microscope Measurement Tools at GitHub]
+}}
+Set FEI SEM(FIB) scale and display acquisition metadata using Tiff tags Metadata
+
+[[Category:Macro]]
+
+
+== Description ==
+The macro reads the metadata from TIFF tags embedded in the SEM images and print out the important ones in the imageJ log screen (might be useful for replicating previous experiment conditions). The scale of the image is also automatically set image scale using the scan pixel size (see the screen dump below). So dimensions can be directly measured on the screen in um or nm, auto-adjusted based on HFW.
+
+
+== Installation & Usage Manual ==
+For installation, you will need the original ImageJ + Bio-formats plugin which you can download from here. Alternatively, the ImageJ Fiji variant comes with all pre-requisites, from here. Then copy the attached .txt file to \ImageJ folder\macros and install through the menu (image below). 
+
+To use, open your SEM image in ImageJ. Click the macro through the menu. Done.
+
+== Author(s) ==
+This simple ImageJ macro was created by {{Zhou|XU}}, 2018.
+
+Please feel free to add other functions to the macro!
