@@ -436,7 +436,7 @@ The measures are reported separately for each 3D subspace in the image, i.e. for
 == Where is my favorite plug-in? ==
 We've decided to remove some plug-ins from BoneJ experimental. ''Interpolate ROIs'', ''Neck shaft angle'', ''Plateness'' and ''Structure model index'' have been discontinued. ''Dilate'' and ''Erode'' come pre-packaged with ImageJ, so there's no need to include them.
 
-Support for ''Kontron IMG'', ''Scanco ISQ'' and ''Stratec pQCT'' file formats has been moved to [[SCIFIO]]. Just run ''Edit  &gt; Options  &gt; ImageJ2'', and check ''Use SCIFIO when opening files''. When the option is enabled, these kinds of files can be opened from `File > Open` or dragging &amp; dropping them like any other format. 
+Support for ''Kontron IMG'', ''Scanco ISQ'' and ''Stratec pQCT'' file formats has been moved to [[SCIFIO]]. Just run ''Edit  &gt; Options  &gt; ImageJ2'', and check ''Use SCIFIO when opening files''. When the option is enabled, these kinds of files can be opened from ''File > Open'' or dragging &amp; dropping them like any other format. 
 
 ''Distribution analysis'' and other pQCT related tools can now be downloaded independently from the [[PQCT]] update site.
 
