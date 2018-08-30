@@ -1,9 +1,8 @@
 {{Infobox
 | software               = Fiji
 | name                   = FEI SEM metadata and auto-scale tool
-| author                 = {{Zhou|XU}}
-| maintainer             = Zhou XU ([mailto:zhou.xu@monash.edu
-zhou.xu@monash.edu])
+| author                 = {{Zhou XU}}
+| maintainer             = Zhou XU ([mailto:zhou.xu@monash.edu ])
 | filename               = []
 | source                 = {{}}
 | released               = Aug. 30<sup>th</sup>, 2018
@@ -22,62 +21,12 @@ The macro reads the metadata from TIFF tags embedded in the SEM images and print
 
 == Installation & Usage Manual ==
 
-// if the image is acquired by electron beam, then
-Ext.getMetadataValue("[EScan] PixelWidth", value1);
-Ext.getMetadataValue("[Beam] HV", HV);
-Ext.getMetadataValue("[Beam] ImageMode", ImageMode);
-
-Ext.getMetadataValue("[EBeamDeceleration] ModeOn", EBeamDecelerationMode);
-Ext.getMetadataValue("[EBeamDeceleration] LandingEnergy", LandingEnergy);
-Ext.getMetadataValue("[EBeamDeceleration] StageBias", StageBias);
-
-Ext.getMetadataValue("[EBeam] BeamMode", BeamMode);
-Ext.getMetadataValue("[EBeam] BeamCurrent", BeamCurrent);
-Ext.getMetadataValue("[EBeam] ApertureDiameter", AptDia);
-Ext.getMetadataValue("[EBeam] LensMode", LensMode);
-Ext.getMetadataValue("[EBeam] WD", WD);
-Ext.getMetadataValue("[EScan] Dwell", Dwell);
-Ext.getMetadataValue("[Scan] HorFieldsize", HFW);
-
-// if the image is acquired by ion beam, then...
-// will update later
-
-print("Image File : " + id);
-print("[Beam] HV : " + HV);
-print("[Beam] ImageMode : " + ImageMode);
-
-BeamCurrent = parseFloat(BeamCurrent)*1E9; // in nA
-AptDia = parseFloat(AptDia)*1E6; // in um
-WD = parseFloat(WD)*1E3; // in mm
-Dwell = parseFloat(Dwell)*1E6; // in us
-
-
-print("[EBeam Deceleration] ModeOn : " + EBeamDecelerationMode);
-print("[EBeam Deceleration] LandingEnergy : " + LandingEnergy + " V");
-print("[EBeam Deceleration] StageBias : " + StageBias + " V");
-print("[EBeam] Beam Mode : " + BeamMode);
-print("[EBeam] Beam Current : " + BeamCurrent + " uA");
-print("[EBeam] Aperture Diameter : " + AptDia + " um");
-print("[EBeam] Lens Mode : " + LensMode + " mode");
-print("[EBeam] Working Distance : " + WD + " mm");
-print("[EScan] Dwell Time : " + Dwell + " us");
-print("\n");
-
-if(parseFloat(HFW) > 0.00001) {
-setVoxelSize(1E6*value1, 1E6*value1, 1, "um");
-}
-
-else {
-setVoxelSize(1E9*value1, 1E9*value1, 1, "nm");
-}
-
-Ext.close();
 
 For installation, you will need the original ImageJ + Bio-formats plugin which you can download from here. Alternatively, the ImageJ Fiji variant comes with all pre-requisites, from here. Then copy the attached .txt file to \ImageJ folder\macros and install through the menu (image below). 
 
 To use, open your SEM image in ImageJ. Click the macro through the menu. Done.
 
 == Author(s) ==
-This simple ImageJ macro was created by {{Zhou|XU}}, 2018.
+This simple ImageJ macro was created by {{Zhou XU}}, 2018.
 
 Please feel free to add other functions to the macro!
