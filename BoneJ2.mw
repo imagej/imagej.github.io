@@ -194,6 +194,27 @@ A 3D image.
 * '''Radius''': length of radius
 * '''Images (optional)''': images containing a copy of the original data within the sphere, or within cubes bounding or bounded by the sphere.
 
+== Fractal dimension ==
+Menu path ''Plugins &gt; BoneJ &gt; Fractal dimension''.
+
+This plug-in estimates the fractal dimension of an image by applying the box-counting algorithm. In this algorithm grids of diminishing size are scanned over the image, and the number of boxes containing at least one foreground voxel is counted. As the box size decreases and the grid becomes finer, the proportion of foreground boxes increases in a fractal structure. See [https://en.wikipedia.org/wiki/Box_counting Wikipedia] for further details. BoneJ uses a fixed-grid scan, with an option to try to find the optimal covering.
+
+The box counting algorithm produces a set of (log(n), -log(m)) points, where n = number of boxes with foreground, and m = box size. These points are then passed to a curve-fitting algorithm, which returns the slope of the linear function which describes them (regression fit). The coefficient of the slope is the fractal dimension.
+
+The success of the algorithm depends a lot on the input parameters, so it's worth trying different values to find the most accurate measure for your image.
+
+==== Suitable images ====
+A 2D or 3D binary image.
+
+==== Parameters ====
+
+==== Results ====
+
+==== Differences to BoneJ1 ====
+
+==== Related publications ====
+Fazzalari NL, Parkinson IH (1996), ''Fractal dimension and architecture of trabecular bone'', J Pathol, 178: 100-5, [http://dx.doi.org/10.1002/(SICI)1096-9896(199601)178:1%3C100::AID-PATH429%3E3.0.CO;2-K doi:10.1002/(SICI)1096-9896(199601)178:1<100::AID-PATH429>3.0.CO;2-K].
+
 == Local thickness ==
 Menu path ''Plugins &gt; BoneJ &gt; Thickness''.
 
