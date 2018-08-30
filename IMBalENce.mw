@@ -1,8 +1,9 @@
 {{Infobox
 | software               = Fiji
 | name                   = FEI SEM metadata and auto-scale tool
-| author                 = {{Zhou XU}}
-| maintainer             = Zhou XU ([mailto:zhou.xu@monash.edu ])
+| author                 = Zhou XU
+| maintainer             = Zhou XU ([mailto:zhou.xu@monash.edu
+])
 | filename               = []
 | source                 = {{}}
 | released               = Aug. 30<sup>th</sup>, 2018
@@ -27,6 +28,6 @@ For installation, you will need the original ImageJ + Bio-formats plugin which y
 To use, open your SEM image in ImageJ. Click the macro through the menu. Done.
 
 == Author(s) ==
-This simple ImageJ macro was created by {{Zhou XU}}, 2018.
+This simple ImageJ macro was created by Zhou XU, 2018.
 
 Please feel free to add other functions to the macro!
