@@ -416,6 +416,9 @@ Menu path ''Plugins &gt; BoneJ &gt; Surface area''
 
 ''Surface area'' creates a mesh from the bone in the image, and then calculates the area of the surface of the mesh. A mesh is a collection of triangular faces that defines the shape of an object in 3D graphics. The plug-in assumes that all foreground voxels represent bone.
 
+==== Suitable images ====
+A 3D binary image.
+
 ==== Parameters ====
 * '''Export STL file(s)''': if checked, then the meshes created from the image are saved as .stl-files. A dialog opens for you to select a folder for the files.
 
@@ -424,9 +427,6 @@ Menu path ''Plugins &gt; BoneJ &gt; Surface area''
 * '''STL-file''': the mesh created from the bone image
 
 The surface area is reported and an .stl-file saved separately for each 3D subspace in the image. 
-
-==== Suitable images ====
-A 3D binary image.
 
 ==== Differences to BoneJ1 ====
 * Supports hyperstacks.
