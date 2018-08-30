@@ -262,6 +262,47 @@ An 8-bit or 16-bit image.
 ** '''Inverse eigenvector matrix''': used to map voxel positions in the aligned image back to voxel positions in the original image
 * Optional 3D display of principal axes
 
+== Optimise threshold (WIP) ==
+Menu path: ''Plugins &gt; BoneJ &gt; Optimise Threshold''
+
+Several histogram-based methods exist for automatic determination of threshold for binary segmentation, but in ImageJ these are currently limited to pixel values in a single slice. The result can be excluding high values in a stack that are higher than the highest value in the current slice. This plugin uses all the pixels in a stack to construct a histogram and uses ImageJ's built-in isodata algorithm to determine the threshold. It optionally tests values either side of the initial auto-threshold for connectivity, because connectivity is very sensitive to image noise. The plugin attempts to find the threshold that results in minimal connectivity. Purification, erosion and dilation can improve the connectivity estimate, so Purify is always called, and erosion and dilation are applied as part of a sequence: purify, erode, purify, dilate.
+
+==== Suitable images ====
+An 8-bit of 16-bit image
+
+==== Parameters ====
+* '''Threshold Only''': Determine the threshold from the stack histogram only
+* '''Apply Threshold''': Replace the input image with a thresholded version
+* '''Show Plot''': Display a graph showing connectivity versus threshold
+* '''Tests''': Number of different thresholds to test for connectivity
+* '''Range''': Proportion of the initial threshold to test above and below initial thresholds
+* '''Subvolume Size''': Size of the volume to test for connectivity. Set small for a faster run and large to test the whole stack
+* '''Erosion Cycles''': Number of times to erode the stack after initial purification
+* '''Dilation Cycles''': Number of times to dilate the stack after secondary purification
+
+==== Results ====
+* '''Thresholded stack (optional)'''
+* '''Plot of connectivity versus threshold (optional)'''
+* '''Log of optimal threshold value'''
+
+== Orientation (WIP) ==
+Menu path: ''Plugins &gt; BoneJ &gt; Orientation''
+
+Sets the direction in a 2D image, without rotating the image or changing it in any way. ''Slice Geometry'' (see below) uses ''Orientation'' to calculate diameter, second moments of area and section moduli around anatomic axes set by the user.
+
+==== Suitable images ====
+A 2D image.
+
+==== Parameters ====
+* '''Orientation''': input field displays current orientation (clockwise from 12 o'clock) and takes keyboard input
+* '''deg / rad''': display and set orientation in degrees or radians
+* '''Principal direction''': the main direction, the head of which is displayed in red
+* '''Secondary direction''': the orthogonal direction
+* '''Reflect''': swap the labels on this axis
+
+==== Results ====
+* '''Orientation axes''': draws the axes of the orientation on the image.
+
 == Purify (WIP) ==
 Menu path: ''Plugins &gt; BoneJ &gt; Purify''
 
@@ -300,6 +341,76 @@ The input image must be 2D or 3D, 8-bit and binary. Hyperstacks are not supporte
 ==== Differences to BoneJ1 ====
 Calls the latest version of [[Skeletonize3D]].
 
+== Slice geometry (WIP) ==
+Menu path ''Plugins &gt; BoneJ &gt; Slice Geometry''
+
+Slice Geometry calculates cross-sectional geometric properties of shapes: cross-sectional area, centroid, mean density, second moment of area, section modulus, Feret diameter and local thickness (2D and 3D). Measurements can be limited to a rectangular ROI. If your bone is not well aligned with the image axes, you may find it useful to align the bone to its principal axes using Moments of Inertia or by exporting a transformed volume from the ImageJ 3D Viewer. Importantly, no assumption of geometry is made for any of the measurements.
+
+==== Suitable images ====
+A 2D or 3D binary image.
+
+==== Parameters ====
+* '''Bone''': Slice Geometry will guess from your image title the bone it is working on. If it is wrong, correct it. If your bone of interest isn't listed, email me.
+* '''2D Thickness''': Run Thickness on a per-slice basis; this fits circles rather than spheres
+* '''3D Thickness''': Run Thickness on the whole stack, fitting spheres, then report results per slice
+* '''Draw Axes''': Draw axes on an annotated copy of the stack
+* '''Draw Centroids''': Draw centroids on an annotated copy of the stack
+* '''Annotated Copy (2D)''': Create a new stack showing the centroids and principal axes
+* '''3D Annotation''': Display the stack, principal axes and centroids in the 3D viewer
+* '''Process Stack''': Calculate parameters for all slices in the stack
+* '''Clear Results''': Remove all data in the results table without saving, prior to calculating parameters
+* '''Use Orientation''': Also calculate parameters based on directions defined in Orientation
+* '''HU Calibrated''': Allows you to enter your thresholds in Hounsfield units (HU) or uncalibrated units
+* '''Bone Min''': minimum pixel value to use in calculations
+* '''Bone Max''': maximum pixel value to use in calculations
+* '''Slope''': <math>m</math> where physical density <math>= m * pixel value + c</math>
+* '''Y Intercept''': <math>c</math> where physical density <math>= m * pixel value + c</math>
+* '''Note''': density-weighted calculations are only applied to centroid determination at present
+* '''Partial volume compensation''': Use model that assumes Gaussian blur of imaging modality and linear transform between pixel value and sample 'density' to correct for blurred and pixelated images (e.g. small bone in clinical CT)
+* '''Background''': pixel value that corresponds to zero bone density (could be the 'fat', 'air' or 'muscle' pixel value)
+* '''Foreground''': pixel value that corresponds to 100% bone density
+* '''A rectangular ROI (optional)''': if there's a ROI, calculations are limited to its area.
+
+==== Results ====
+* '''Images (optional)''': displays the result images selected in the parameters
+* '''Bone code''': Unique numeric identifier for the anatomic name of each bone. Further bone codes can be added to BoneJ on request
+* '''Slice''': slice number indicating which slice contributed image data for this row of the results
+* '''CSA''': cross-sectional area
+* '''X cent.''': Centroid x-coordinate
+* '''Y cent.''': Centroid y-coordinate
+* '''Density''': mean physical density, calculated from pixel values and calibration coefficients
+* '''wX cent''': Density-weighted x-coordinate of centroid
+* '''wY cent''': Density-weighted y-coordinate of centroid
+* '''Theta''': angle of minor axis (axis for Imin, the long axis of your specimen's cross section) from the horizontal, ranging from <math>-\pi/2</math> to <math>\pi/2</math>, with positive as clockwise
+* '''R1''': maximum chord length from minor axis
+* '''R2''': maximum chord length from major axis
+* '''Imin''': Second moment of area around major axis
+* '''Imax''': Second moment of area around minor axis
+* '''Ipm''': Product moment of area (= 0 if no errors are present, e.g. due to pixelation)
+* '''Zmax''': Section modulus around major axis (Imax / R2)
+* '''Zmin''': Section modulus around minor axis (Imin / R1)
+* '''Zpol''': Polar section modulus
+* '''Feret Min''': Minimum caliper width
+* '''Feret Max''': Maximum caliper width
+* '''Feret Angle''': Orientation of maximum caliper width
+* '''Perimeter''': Distance around external surface
+* '''Max Thick 2D''': Maximum thickness determined by local thickness in 2D
+* '''Mean Thick 2D''': Mean thickness determined by local thickness in 2D
+* '''SD Thick 2D''': Standard deviation of the mean thickness determined by local thickness in 2D
+* '''Max Thick 3D''': Maximum thickness in this slice determined by local thickness in 3D
+* '''Mean Thick 3D''': Mean thickness in this slice determined by local thickness in 3D
+* '''SD Thick 3D''': Standard deviation of the mean thickness in this slice determined by local thickness in 3D Directional measurements, using Orientation directions, and the specimen's slice centroid
+* '''A (rad)''': Principal orientation (direction A)
+* '''B (rad)''': Secondary orientation (direction B)
+* '''IAa''': Second moment of area around Aa axis
+* '''IBb''': Second moment of area around Bb axis
+* '''ZAa''': Section modulus around Aa axis
+* '''ZBb''': Section modulus around Bb axis
+* '''RAa''': maximum chord length from Aa axis
+* '''RBb''': maximum chord length from Bb axis
+* '''DAa''': Calliper diameter in direction of Aa
+* '''DBb''': Calliper diameter in direction of Bb
+
 == Surface fraction ==
 Menu path ''Plugins &gt; BoneJ &gt; Fraction &gt; Surface fraction''
 
@@ -323,7 +434,7 @@ The measures are reported separately for each 3D subspace in the image, i.e. for
 * In BoneJ1 this plug-in was called ''Volume fraction''
 
 == Where is my favorite plug-in? ==
-We've decided to remove some plug-ins from BoneJ experimental (note that some have just not been documented here yet). These include ''Interpolate ROIs'', ''Neck shaft angle'', ''Optimise threshold'', ''Plateness'' and ''Structure model index'' have been discontinued. ''Dilate'' and ''Erode'' come pre-packaged with ImageJ, so there's no need to include them.
+We've decided to remove some plug-ins from BoneJ experimental. ''Interpolate ROIs'', ''Neck shaft angle'', ''Plateness'' and ''Structure model index'' have been discontinued. ''Dilate'' and ''Erode'' come pre-packaged with ImageJ, so there's no need to include them.
 
 Support for ''Kontron IMG'', ''Scanco ISQ'' and ''Stratec pQCT'' file formats has been moved to [[SCIFIO]]. Just run ''Edit  &gt; Options  &gt; ImageJ2'', and check ''Use SCIFIO when opening files''. When the option is enabled, these kinds of files can be opened from `File > Open` or dragging &amp; dropping them like any other format. 
 
