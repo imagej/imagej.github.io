@@ -199,18 +199,30 @@ Menu path ''Plugins &gt; BoneJ &gt; Fractal dimension''.
 
 This plug-in estimates the fractal dimension of an image by applying the box-counting algorithm. In this algorithm grids of diminishing size are scanned over the image, and the number of boxes containing at least one foreground voxel is counted. As the box size decreases and the grid becomes finer, the proportion of foreground boxes increases in a fractal structure. See [https://en.wikipedia.org/wiki/Box_counting Wikipedia] for further details. BoneJ uses a fixed-grid scan, with an option to try to find the optimal covering.
 
-The box counting algorithm produces a set of (log(n), -log(m)) points, where n = number of boxes with foreground, and m = box size. These points are then passed to a curve-fitting algorithm, which returns the slope of the linear function which describes them (regression fit). The coefficient of the slope is the fractal dimension.
+The box counting algorithm produces a pair of <math>(log(n), -log(m))</math> values for each iteration it runs. Here <math>n = number of boxes with foreground</math>, and <math>m = box size</math>. These pairs are passed to a curve-fitting algorithm, which returns the slope of the linear function which describes them ([https://en.wikipedia.org/wiki/Linear_regression regression fit]). The coefficient of this slope is the fractal dimension.
 
-The success of the algorithm depends a lot on the input parameters, so it's worth trying different values to find the most accurate measure for your image.
+Fractal dimension is markedly influenced by the parameters selected for the box counting algorithm, so it's worth running it several times with different values to find a more accurate measure for your image.
 
 ==== Suitable images ====
 A 2D or 3D binary image.
 
 ==== Parameters ====
+* ''Starting box size (px)'': the size (sides) in pixels of a box in the sampling grid in the first iteration of the algorithm.
+* ''Smallest box size (px)'': the minimum size in pixels of a box in the grid. When box size becomes smaller than this limit, the algorithm iterates one more time, and stops.
+* ''Box scaling factor'': the term used to divide the box size after iteration. For example, a scaling factor of <math>2.0</math> halves the size at each step.
+* ''Grid translations'': how many times at each iteration the grid is moved to try to the find the optimal covering. The optimal covering covers the objects in the image with the least amount of boxes. The larger the parameter the more likely it is that optimal covering is found. However, this slows down the plug-in considerably.
+* ''Automatic parameters'': if checked, then the plug-in runs with default parameters.
+* ''Show points'': if checked, then the plug-in displays the <math>(log(n), -log(m))</math> values it calculated.    
 
 ==== Results ====
+* ''Fractal dimension'': the [https://en.wikipedia.org/wiki/Fractal_dimension fractal dimension] of the image. For example, the Koch snow flake has a fractal dimension of 1.262.
+* ''R²'': the [https://en.wikipedia.org/wiki/Coefficient_of_determination coefficient of determination] of the line fitted to the <math>(log(n), -log(m))</math> points.
+
+The measures are reported separately for each 3D subspace in the image, i.e. for each channel and time frame.
 
 ==== Differences to BoneJ1 ====
+* Supports hyperstacks
+* Algorithm parameters can be changed by the user.
 
 ==== Related publications ====
 Fazzalari NL, Parkinson IH (1996), ''Fractal dimension and architecture of trabecular bone'', J Pathol, 178: 100-5, [http://dx.doi.org/10.1002/(SICI)1096-9896(199601)178:1%3C100::AID-PATH429%3E3.0.CO;2-K doi:10.1002/(SICI)1096-9896(199601)178:1<100::AID-PATH429>3.0.CO;2-K].
