@@ -1,6 +1,7 @@
 {{Infobox
 | name                   = MorphoLibJ
 | software               = IJPB-plugins
+| update site            = IJPB-plugins
 | author                  = [https://github.com/dlegland David Legland], {{Person|Iarganda}}
 | maintainer             = [https://github.com/dlegland David Legland], {{Person|Iarganda}}
 | source                 = {{GitHub|org=ijpb|repo=MorphoLibJ}}
