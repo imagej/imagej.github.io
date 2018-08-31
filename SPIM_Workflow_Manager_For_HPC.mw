@@ -49,7 +49,7 @@ Now you should see the plugin under {{bc | Plugins | Multiview Reconstruction | 
 For creating a new job, the plugin provides a wizard allowing the user to specify input and output data paths as well as to set up a configuration file ''config.yaml'', which effectively characterizes the dataset and defines settings for individual workflow tasks. The plugin supports uploading local input image data to the remote HPC resource, providing information on the progress and estimated remaining time.
 
 Once a job execution is selected by the user, the configuration file is sent to the cluster via HEAppE, which is responsible for the job life cycle from this point on. The user can display a detailed progress dashboard showing current states of all individual computational tasks for the selected job as well as output logs useful for debugging.
-[[File:ui_screens.PNG|1000px]]
+[[File:ui_screens.PNG|1200px]]
 
 Following a successfully finished pipeline, the user can interactively examine the processed SPIM image data using the BigDataServer [https://imagej.net/BigDataViewer] as well as download resultant data and a summary file containing key information about the performed job. Importantly, the user can edit the corresponding local configuration file in a common text editor, and restart an interrupted, finished, or failed job.
 
