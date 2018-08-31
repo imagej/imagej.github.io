@@ -199,16 +199,16 @@ Menu path ''Plugins &gt; BoneJ &gt; Fractal dimension''.
 
 This plug-in estimates the fractal dimension of an image by applying the box-counting algorithm. In this algorithm grids of diminishing size are scanned over the image, and the number of boxes containing at least one foreground voxel is counted. As the box size decreases and the grid becomes finer, the proportion of foreground boxes increases in a fractal structure. See [https://en.wikipedia.org/wiki/Box_counting Wikipedia] for further details. BoneJ uses a fixed-grid scan, with an option to try to find the optimal covering.
 
-The box counting algorithm produces a pair of <math>(log(n), -log(m))</math> values for each iteration it runs. Here <math>n = number of boxes with foreground</math>, and <math>m = box size</math>. These pairs are passed to a curve-fitting algorithm, which returns the slope of the linear function which describes them ([https://en.wikipedia.org/wiki/Linear_regression regression fit]). The coefficient of this slope is the fractal dimension.
+The box counting algorithm produces a pair of <math>(log(n), -log(m))</math> values for each iteration it runs. Here n = number of boxes with foreground, and m = box size. These pairs are passed to a curve-fitting algorithm, which returns the slope of the linear function which describes them ([https://en.wikipedia.org/wiki/Linear_regression regression fit]). The coefficient of this slope is the fractal dimension.
 
-Fractal dimension is markedly influenced by the parameters selected for the box counting algorithm, so it's worth running it several times with different values to find a more accurate measure for your image.
+Fractal dimension is markedly influenced by the parameters selected for the box counting algorithm, so it's worth running it several times with different values to find an accurate measure for your image.
 
 ==== Suitable images ====
 A 2D or 3D binary image.
 
 ==== Parameters ====
 * ''Starting box size (px)'': the size (sides) in pixels of a box in the sampling grid in the first iteration of the algorithm.
-* ''Smallest box size (px)'': the minimum size in pixels of a box in the grid. When box size becomes smaller than this limit, the algorithm iterates one more time, and stops.
+* ''Smallest box size (px)'': the minimum size in pixels of a box in the grid. When box size becomes smaller than this limit, the algorithm iterates one more time, and then stops.
 * ''Box scaling factor'': the term used to divide the box size after iteration. For example, a scaling factor of <math>2.0</math> halves the size at each step.
 * ''Grid translations'': how many times at each iteration the grid is moved to try to the find the optimal covering. The optimal covering covers the objects in the image with the least amount of boxes. The larger the parameter the more likely it is that optimal covering is found. However, this slows down the plug-in considerably.
 * ''Automatic parameters'': if checked, then the plug-in runs with default parameters.
@@ -456,7 +456,7 @@ A 3D binary image.
 * '''Export STL file(s)''': if checked, then the meshes created from the image are saved as .stl-files. A dialog opens for you to select a folder for the files.
 
 ==== Results ====
-* '''Surface area''': the surface are of the bone mesh
+* '''Surface area''': the surface area of the bone mesh
 * '''STL-file''': the mesh created from the bone image
 
 The surface area is reported and an .stl-file saved separately for each 3D subspace in the image. 
@@ -469,7 +469,7 @@ The surface area is reported and an .stl-file saved separately for each 3D subsp
 == Surface fraction ==
 Menu path ''Plugins &gt; BoneJ &gt; Fraction &gt; Surface fraction''
 
-''Surface fraction'' calculates the fraction of bone volume in an image by comparing surface meshes created from bone particles and the whole image. A mesh is a collection of triangular faces that defines the shape of an object in 3D graphics. The plug-in assumes that all foreground voxels represent bone. 
+''Surface fraction'' calculates the fraction of bone volume in an image by comparing meshes created from bone particles and the whole image. A mesh is a collection of triangular faces that defines the shape of an object in 3D graphics. The plug-in assumes that all foreground voxels represent bone. 
 
 More formally defined, ''Surface fraction'' calculates the fraction ''BV/TV'', which is the volume of mineralised bone ''BV'' per unit volume of the sample ''TV''.
 
@@ -477,8 +477,8 @@ More formally defined, ''Surface fraction'' calculates the fraction ''BV/TV'', w
 The input image must be 3D and binary.
 
 ==== Results ====
-* '''Bone volume''': volume of the surface mesh created from bone voxels.
-* '''Total volume''': volume of the surface mesh created from the whole image.
+* '''Bone volume''': volume of the mesh created from bone voxels.
+* '''Total volume''': volume of the mesh created from the whole image.
 * '''Volume ratio''': ratio of bone to total volume.
 
 The measures are reported separately for each 3D subspace in the image, i.e. for each channel and time frame.
