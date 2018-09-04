@@ -49,11 +49,11 @@ A 3D binary image.
 The plug-in is intended to analyse the "texture" of an object thus it suits samples of a larger whole, e.g. a trabecular cube that fills the whole stack. The results for whole objects such as the pre-packaged _Bat Cochlea Volume_ ImageJ sample image are not really meaningful.
 
 ==== Parameters ====
-* ''Directions'': number of times sampling is performed from different directions. The minimum is <math>9</math>, because that's how many independent variables the algorithm needs to solve the "shape" of the orientation in the image.
+* '''Directions''': number of times sampling is performed from different directions. The minimum is <math>9</math>, because that's how many independent variables the algorithm needs to solve the "shape" of the orientation in the image.
 
 ==== Results ====
-* ''Degree of anisotropy'': how much orientation there is in the structure. <math>0.0</math> means the image is completely isotropic, the sample has no directionality whatsoever. <math>1.0</math> means there is very strong orientation in the structure of the image. Note that these are theoretical minimum and maximum values. Due the stochastic nature of the algorithm, even an empty stack will have non-zero degree of anisotropy.
-* ''Radii of fitted ellipsoid'' (optional): the lengths of the radii <math>a \leq b \leq c</math> of the ellipsoid fitted on the MIL points. Degree of anisotropy <math>= 1.0 - \frac{a}{c}</math>.
+* '''Degree of anisotropy''': how much orientation there is in the structure. <math>0.0</math> means the image is completely isotropic, the sample has no directionality whatsoever. <math>1.0</math> means there is very strong orientation in the structure of the image. Note that these are theoretical minimum and maximum values. Due the stochastic nature of the algorithm, even an empty stack will have non-zero degree of anisotropy.
+* '''Radii of fitted ellipsoid''' (optional): the lengths of the radii <math>a \leq b \leq c</math> of the ellipsoid fitted on the MIL points. Degree of anisotropy <math>= 1.0 - a/c</math>.
 
 The measures are reported separately for each 3D subspace in the image, i.e. for each channel and time frame.
 
