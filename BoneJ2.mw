@@ -45,12 +45,18 @@ Menu path ''Plugins &gt; BoneJ &gt; Anisotropy''.
 
 Anisotropy is used to quantify the directionality of trabecular bone. It tells whether the trabeculae have a certain orientation, or if they're randomly aligned. The method to measure anisotropy is fairly complex and consists of multiple steps:
 
-1. Find mean intercept length (MIL) vectors from <math>n</math> directions
-2. Plot MIL vectors into a point cloud
-3. Solve the equation of an ellipsoid that best fits the point cloud
-4. Calculate the degree of anisotropy from the radii of the ellipsoid
+# Find mean intercept length (MIL) vectors from <math>n</math> directions
+# Plot MIL vectors into a point cloud
+# Solve the equation of an ellipsoid that best fits the point cloud
+# Calculate the degree of anisotropy from the radii of the ellipsoid
 
 It's important to note that algorithm is stochastic and does not guarantee exact results. Thus it's recommended to run it several times to establish the degree of anisotropy in your image.
+
+[[File:MilCube.png|400 px|Installation steps]]
+
+In the first step the algorithm draws parallel lines over the input image in direction <math>\mathbf{v}</math>. The direction is chosen randomly. Each line segment in the image stack is sampled to find points where it changes from background to foreground, i.e. where the line enters an object. The points are called ''phase changes''. After the sampling is complete, the algorithm forms a ''MIL vector'', whose length is the total length of the line segments divided by the total number of phase changes found. The MIL vector has the same direction as <math>\mathbf{v}</math>. Drawing and sampling the lines is repeated for <math>n</math> directions, and the method creates ''n'' MIL vectors.
+
+After the MIL vectors have been calculated, they are added to a point cloud (a collection of points) around the origin. Then the method tries solve the equation of an ellipsoid that would fit the cloud. There may be no solution, especially if there are few points. That is, the fitting may fail at which point the plug-in stops. The radii of this ellipsoid determine the degree of anisotropy (see [http://imagej.net/index.php?title=BoneJ_experimental&action=submit#Results results]).
 
 ==== Suitable images ====
 A 3D binary image.
@@ -59,7 +65,9 @@ The plug-in is intended to analyse the "texture" of an object thus it suits samp
 
 ==== Parameters ====
 * '''Directions''': number of times sampling is performed from different directions. The minimum is <math>9</math>, because that's how many independent variables the algorithm needs to solve the "shape" of the orientation in the image.
-* '''Lines per dimension''': controls how many parallel lines are drawn for each direction. For example, if ''lines per dimension'' is <math>2</math> then the plane is divided into <math>4</math> equal sections, and a line is drawn from each. The origin point of each line is randomly located within their section.
+* '''Lines per dimension''': controls how many parallel lines are drawn per each direction. For example, if ''lines per dimension'' is <math>2</math> then ''Anisotropy'' draws <math>4</math> lines. In this case, the origin points of the lines are randomly selected from within the <math>4</math> equal sections of the sampling plane (see above detailed explanation). The number is squared, because the location of the origins can vary in two dimensions.
+
+then the plane is divided into <math>4</math> equal sections, and a line is drawn from each. The origin point of each line is randomly located within their section.
 * '''Sampling increment''': controls how often each line is sampled. The default is <math>1.0</math>, which means that after each step a unit vector (a <math>1\_px</math> long line) is added to the position along a sampling line. The number of samples taken per line depends on the length of the line segment within the image stack.
 * '''Recommended minimum''': if checked, then the above three parameters are set to the recommended minimum values. In our tests we found that with these values the results are quite stable, and fitting unlikely to fail. However, these minimums are not guaranteed to be the best settings for your image.
 * '''Show radii''': if checked, then the radii of the fitted ellipsoid are shown in the results table.
