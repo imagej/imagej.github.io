@@ -43,6 +43,15 @@ Calls the latest version of [[AnalyzeSkeleton]].
 == Anisotropy ==
 Menu path ''Plugins &gt; BoneJ &gt; Anisotropy''.
 
+Anisotropy is used to quantify the directionality of trabecular bone. It tells whether the trabeculae have a certain orientation, or if they're randomly aligned. The method to measure anisotropy is fairly complex and consists of multiple steps:
+
+1. Find mean intercept length (MIL) vectors from <math>n</math> directions
+2. Plot MIL vectors into a point cloud
+3. Solve the equation of an ellipsoid that best fits the point cloud
+4. Calculate the degree of anisotropy from the radii of the ellipsoid
+
+It's important to note that algorithm is stochastic and does not guarantee exact results. Thus it's recommended to run it several times to establish the degree of anisotropy in your image.
+
 ==== Suitable images ====
 A 3D binary image.
 
