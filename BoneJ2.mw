@@ -40,6 +40,31 @@ The input image must be 2D or 3D, 8-bit and binary. Hyperstacks are not supporte
 ==== Differences to BoneJ1 ====
 Calls the latest version of [[AnalyzeSkeleton]].
 
+== Anisotropy ==
+Menu path ''Plugins &gt; BoneJ &gt; Anisotropy''.
+
+==== Suitable images ====
+A 3D binary image.
+
+The plug-in is intended to analyse the "texture" of an object thus it suits samples of a larger whole, e.g. a trabecular cube that fills the whole stack. The results for whole objects such as the pre-packaged _Bat Cochlea Volume_ ImageJ sample image are not really meaningful.
+
+==== Parameters ====
+* ''Directions'': number of times sampling is performed from different directions. The minimum is <math>9</math>, because that's how many independent variables the algorithm needs to solve the "shape" of the orientation in the image.
+
+==== Results ====
+* ''Degree of anisotropy'': how much orientation there is in the structure. <math>0.0</math> means the image is completely isotropic, the sample has no directionality whatsoever. <math>1.0</math> means there is very strong orientation in the structure of the image. Note that these are theoretical minimum and maximum values. Due the stochastic nature of the algorithm, even an empty stack will have non-zero degree of anisotropy.
+* ''Radii of fitted ellipsoid'' (optional): the lengths of the radii <math>a \leq b \leq c</math> of the ellipsoid fitted on the MIL points. Degree of anisotropy <math>= 1.0 - \frac{a}{c}</math>.
+
+The measures are reported separately for each 3D subspace in the image, i.e. for each channel and time frame.
+
+==== Differences to BoneJ1 ====
+* The results of this Anisotropy do not stabilize, so it's not repeated automatically like in BoneJ1. However, the results vary less between runs.
+* MIL vectors are drawn differently. In BoneJ1 they're drawn in sphere-shapes around random seed points. Here parallel lines from different directions are drawn through the whole stack. We think this method produces more uniform sampling, i.e. there's less chance of a directional bias.
+
+==== Related publications ====
+* Odgaard A (1997), ''Three-dimensional methods for quantification of cancellous bone architecture'', Bone, 20, 315-328, [http://dx.doi.org/10.1016/S8756-3282(97)00007-0 doi:10.1016/S8756-3282(97)00007-0]
+* Harrigan TP, Mann RW (1984), ''Characterization of microstructural anisotropy in orthotropic materials using a second rank tensor'', J Mater Sci, 19, 761-767, [http://dx.doi.org/10.1007/BF00540446 doi:10.1007/BF00540446]
+
 == Area/Volume fraction ==
 Menu path ''Plugins &gt; BoneJ &gt; Fraction &gt; Area/Volume fraction''
 
