@@ -282,7 +282,11 @@ Menu path ''Plugins &gt; BoneJ &gt; Intertrabecular angles''.
 
 The plug-in was designed to analyse the angles between trabeculae of cancellous bone. First it calls [[Skeletonize3D]] to thin the input image (if necessary). Then it calls [[AnalyzeSkeleton]], which creates a graph of the largest skeleton (by number of nodes) in the thinned image. The graph consists of nodes and the edges that connect them. Nodes are also known as vertices, and edges as branches. Roughly speaking the edges correspond to trabeculae and o
 
-The graph is often not a perfect representation of the trabecular network in the input image. ''Intertrabecular angles'' offers many options to adjust the graph's topology and filter out artefacts that may obfuscate or the skew results. First it allows you to filter out nodes with too many or too few edges. Secondly it can be used to prune very short edges, which often do not represent actual trabeculae. 
+The graph is often not a perfect representation of the trabecular network in the input image. ''Intertrabecular angles'' offers many options to adjust the graph's topology and filter out artefacts that may obfuscate or skew the results. First it allows you to filter out nodes with too many or too few edges. Secondly it can be used to prune very short edges, which often do not represent actual trabeculae. 
+
+Edge pruning works differently for inner and outer edges. An outer edge does not interconnect sub-graphs. In other words, one of the end points of an outer edge only has one connection: the edge itself. 
+
+The pruning also removes loops and redundant parallel edges. The former connects to the same node on both ends, and the latter connects two nodes that are already connected by another edge. 
 
 These pruning and filtering features were added so that we can replicate and continue from the research of [https://doi.org/10.1016/j.actbio.2016.08.040 Reznikov et al.]
 
