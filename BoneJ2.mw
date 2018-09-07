@@ -277,6 +277,34 @@ The measures are reported separately for each 3D subspace in the image, i.e. for
 ==== Related publications ====
 Fazzalari NL, Parkinson IH (1996), ''Fractal dimension and architecture of trabecular bone'', J Pathol, 178: 100-5, [http://dx.doi.org/10.1002/(SICI)1096-9896(199601)178:1%3C100::AID-PATH429%3E3.0.CO;2-K doi:10.1002/(SICI)1096-9896(199601)178:1<100::AID-PATH429>3.0.CO;2-K].
 
+== Intertrabecular angles ==
+Menu path ''Plugins &gt; BoneJ &gt; Intertrabecular angles''.
+
+==== Suitable images ====
+An 8-bit, binary 2D or 3D iamge. Hyperstacks are not supported.
+
+==== Parameters ====
+*'''Minimum valence''': minimum number of branches for a node to be included in the analysis.
+*'''Maximum valence''': maximum number of branches for a node to be included in the analysis.
+*'''Minimum trabecular length (px)''': minimum length for a branch to be preserved in the pruning. 
+** This length is also displayed in the units of the image calibration
+*'''Margin (px)''': minimum distance of a node from image stack edges to be included in the analysis. Having nodes too close to the edges can make the results less accurate, because you get more branches that do not terminate.
+*'''Iterate pruning''': repeat pruning until no more new short branches are discovered. When true, the topology of the graph is likely to change more in the pruning.
+*'''Use clusters''': if true then the pruning result is independent of the order in which the graph is traversed. False corresponds with methodology in Reznikov's article. See above for more details.
+*'''Print centroids''': Print the centroids (center coordinates) of the node pairs at the ends of each edge.
+*'''Print % culled edges''': Print statistics of different types of edges pruned.
+
+==== Results ====
+*'''Intertrabecular angles''': angles between each branch of each node included in the analysis. Sorted by node type i.e. valence.
+*'''Centroids''' (optional): A table of the center coordinates of the node pairs at the ends of each edge.
+*'''Culled edge percentages''' (optional): A table showing the percentages of different kinds of edges pruned, compared to the total number of edges in the analysed graph.
+
+==== Differences to BoneJ1 ====
+* Intertrabecular angles generalizes the idea of ''Triple point angles'' for any types of points. It also provides more tools for adjusting the graph for analysis.
+
+==== Related publications ====
+Reznikov, N et al. (2016), ''Inter-trabecular angle: A parameter of trabecular bone architecture in the human proximal femur that reveals underlying topological motifs'', Acta Biomaterialia, 44: 65--72, [https://doi.org/10.1016/j.actbio.2016.08.040 doi:j.actbio.2016.08.040].
+
 == Local thickness ==
 Menu path ''Plugins &gt; BoneJ &gt; Thickness''.
 
