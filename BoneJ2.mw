@@ -280,6 +280,12 @@ Fazzalari NL, Parkinson IH (1996), ''Fractal dimension and architecture of trabe
 == Intertrabecular angles ==
 Menu path ''Plugins &gt; BoneJ &gt; Intertrabecular angles''.
 
+The plug-in was designed to analyse the angles between trabeculae of cancellous bone. First it calls [[Skeletonize3D]] to thin the input image (if necessary). Then it calls [[AnalyzeSkeleton]], which creates a graph of the largest skeleton (by number of nodes) in the thinned image. The graph consists of nodes and the edges that connect them. Nodes are also known as vertices, and edges as branches. Roughly speaking the edges correspond to trabeculae and o
+
+The graph is often not a perfect representation of the trabecular network in the input image. ''Intertrabecular angles'' offers many options to adjust the graph's topology and filter out artefacts that may obfuscate or the skew results. First it allows you to filter out nodes with too many or too few edges. Secondly it can be used to prune very short edges, which often do not represent actual trabeculae. 
+
+These pruning and filtering features were added so that we can replicate and continue from the research of [https://doi.org/10.1016/j.actbio.2016.08.040 Reznikov et al.]
+
 ==== Suitable images ====
 An 8-bit, binary 2D or 3D iamge. Hyperstacks are not supported.
 
@@ -298,6 +304,7 @@ An 8-bit, binary 2D or 3D iamge. Hyperstacks are not supported.
 *'''Intertrabecular angles''': angles between each branch of each node included in the analysis. Sorted by node type i.e. valence.
 *'''Centroids''' (optional): A table of the center coordinates of the node pairs at the ends of each edge.
 *'''Culled edge percentages''' (optional): A table showing the percentages of different kinds of edges pruned, compared to the total number of edges in the analysed graph.
+*'''Skeleton''' (optional): if the plug-in had to skeletonise the input image, it displays the result of the thinning.
 
 ==== Differences to BoneJ1 ====
 * Intertrabecular angles generalizes the idea of ''Triple point angles'' for any types of points. It also provides more tools for adjusting the graph for analysis.
