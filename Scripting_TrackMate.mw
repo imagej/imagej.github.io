@@ -961,7 +961,7 @@ if detector.process():
         print peak.getDoublePosition(0), peak.getDoublePosition(1), peak.getDoublePosition(2)
         # Add the current peak to the Roi manager
         roi = PointRoi(peak.getDoublePosition(0) / cal.pixelWidth, peak.getDoublePosition(1) / cal.pixelHeight)
-        # Set the Z position of the peak
+        # Set the Z position of the peak otherwise the peaks are all set on the same slice
         roi.setPosition(int(round(peak.getDoublePosition(2) / cal.pixelDepth))+1)
         rm.addRoi(roi)
     # Show all ROIs on the image
