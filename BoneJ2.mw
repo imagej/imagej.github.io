@@ -277,17 +277,17 @@ The measures are reported separately for each 3D subspace in the image, i.e. for
 ==== Related publications ====
 Fazzalari NL, Parkinson IH (1996), ''Fractal dimension and architecture of trabecular bone'', J Pathol, 178: 100-5, [http://dx.doi.org/10.1002/(SICI)1096-9896(199601)178:1%3C100::AID-PATH429%3E3.0.CO;2-K doi:10.1002/(SICI)1096-9896(199601)178:1<100::AID-PATH429>3.0.CO;2-K].
 
-== Intertrabecular angles ==
-Menu path ''Plugins &gt; BoneJ &gt; Intertrabecular angles''.
+== Inter-trabecular angles ==
+Menu path ''Plugins &gt; BoneJ &gt; Inter-trabecular Angles''.
 
 The plug-in was designed to analyse the angles between trabeculae of cancellous bone. First it calls [[Skeletonize3D]] to thin the input image (if necessary). Then it calls [[AnalyzeSkeleton]], which creates a graph of the largest skeleton (by number of nodes) in the thinned image. The graph consists of nodes and the edges that connect them. Nodes are also known as vertices, and edges as branches. Roughly speaking the edges correspond to trabeculae and the nodes to the junction points, where trabeuculae meet.
 
-The graph is often not a perfect representation of the trabecular network in the input image. ''Intertrabecular angles'' offers many options to adjust the graph's topology and filter out artefacts that may obfuscate or skew the results. First it allows you to filter out nodes with too many or too few edges. Secondly it can be used to prune very short edges, which often do not represent actual trabeculae. 
+The graph is often not a perfect representation of the trabecular network in the input image. ''Inter-trabecular angles'' offers many options to adjust the graph's topology and filter out artefacts that may obfuscate or skew the results. First it allows you to filter out nodes with too many or too few edges. Secondly it can be used to prune very short edges, which often do not represent actual trabeculae. 
 
 [[File:Ita_types.png|left|150 px|Types of edges in pruning]]
 Pruning works differently for different types of edges. There are four kinds: outer, dead-end, inner and short. An outer edge doesn't interconnect different parts of a graph. In other words, one (and only one) of its endpoints connects to only one branch, i.e. the edge itself. In the figure the outer edge is colored black. A dead-end (blue) is an outer edge whose length is less than the minimum set by the user, i.e. it's a short, outer edge. An inner edge (green) connects to end points with more than one branch. A short edge is an inner edge, whose length is less than the set minimum. When a dead-end is pruned, it with its "lonely" end-point are removed from the graph. When a short edge is pruned, it and it's endpoints are removed, and a new node is placed at the midpoint of the former. This new node connects to all the branches the previous nodes connected to.
 
-''Intertrabecular angles'' offers two further options to control pruning: ''iteration'' and ''clustering''. Iteration repeats pruning until no new short edges are found. Sometimes pruning can create new short edges, and thus the graph may still have them after one iteration. However, iteration can alter the structure of the graph too dramatically. Clustering searches for all nodes connected by short edges, before removing any. In the figure, clustering pruning would remove the four nodes and the red edges between them in one go. It would create a new node at the center of the previous four, and connect it to the blue and green edges. When pruning is not clustering, it removes edges one-by-one. This changes the end result depending on the order the edges are traversed. Clustering creates the same result each time. 
+''Inter-trabecular angles'' offers two further options to control pruning: ''iteration'' and ''clustering''. Iteration repeats pruning until no new short edges are found. Sometimes pruning can create new short edges, and thus the graph may still have them after one iteration. However, iteration can alter the structure of the graph too dramatically. Clustering searches for all nodes connected by short edges, before removing any. In the figure, clustering pruning would remove the four nodes and the red edges between them in one go. It would create a new node at the center of the previous four, and connect it to the blue and green edges. When pruning is not clustering, it removes edges one-by-one. This changes the end result depending on the order the edges are traversed. Clustering creates the same result each time. 
 
 Pruning also removes loops and redundant parallel edges. The former connects to the same node on both ends, and the latter connects two nodes that are already connected by another edge. 
 
@@ -308,13 +308,13 @@ An 8-bit, binary 2D or 3D image. Hyperstacks are not supported.
 *'''Print % culled edges''': Print statistics of different types of edges pruned.
 
 ==== Results ====
-*'''Intertrabecular angles''': angles between each branch of each node included in the analysis. Sorted into columns according to the number of branches per node. For example, column ''"3"'' shows the angles between branches of nodes with three branches.
+*'''Inter-trabecular angles''': angles between each branch of each node included in the analysis. Sorted into columns according to the number of branches per node. For example, column ''"3"'' shows the angles between branches of nodes with three branches.
 *'''Centroids''' (optional): A table of the center coordinates of the node pairs at the ends of each edge.
 *'''Culled edge percentages''' (optional): A table showing the percentages of different kinds of edges pruned, compared to the total number of edges in the analysed graph.
 *'''Skeleton''' (optional): if the plug-in had to skeletonise the input image, it displays the result of the thinning.
 
 ==== Differences to BoneJ1 ====
-* Intertrabecular angles generalizes the idea of ''Triple point angles'' for any types of points. It also provides more tools for adjusting the graph for analysis.
+* Inter-trabecular angles generalizes the idea of ''Triple point angles'' for any types of points. It also provides more tools for adjusting the graph for analysis.
 
 ==== Related publications ====
 Reznikov, N et al. (2016), ''Inter-trabecular angle: A parameter of trabecular bone architecture in the human proximal femur that reveals underlying topological motifs'', Acta Biomaterialia, 44: 65--72, [https://doi.org/10.1016/j.actbio.2016.08.040 doi:j.actbio.2016.08.040].
