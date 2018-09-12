@@ -27,15 +27,18 @@ print('Hello ' + name)
 we could run this script with the command:
 
 <source>
-./ImageJ-linux64 --ij2 --headless --run hello.py 'name="Mr Kraken"'
+./ImageJ-linux64 --ij2 --headless --console --run hello.py 'name="Mr Kraken"'
 </source>
 
 Note that the <code>name</code> parameter must be enclosed in double quotes, since it is a string literal.  
 
+The optional <code>--console</code> argument allows to have <code>print</code>, <code>IJ.log</code> and error statements returned to the console window.
+
+
 On Windows systems, single/double quotes might be inverted though, such that strings are enclosed in single quotes while the list of argument as well as the path to the py script are in double quotes.
 
 <source>
-ImageJ-win64.exe --ij2 --headless --run "PathTo/hello.py" "name='Mr Kraken'"
+ImageJ-win64.exe --ij2 --headless --console --run "PathTo/hello.py" "name='Mr Kraken'"
 </source>
 
 == Multiple parameters ==
@@ -52,5 +55,5 @@ print('Hello ' + name1 + " and " + name2)
 then these are filled by using a comma-separated list of parameter pairs—e.g.:
 
 <source>
-./ImageJ-linux64 --ij2 --headless --run hello.py 'name1="Mr",name2="Mrs Kraken"'
+./ImageJ-linux64 --ij2 --headless --console --run hello.py 'name1="Mr",name2="Mrs Kraken"'
 </source>
