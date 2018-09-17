@@ -1,15 +1,15 @@
 {{Infobox
 | name                   = Labkit 
-| update site            = Maarzt
+| update site            = Labkit
 | author                  = {{Person|Maarzt}}
 | maintainer             = {{Person|Maarzt}}
 | source                 = {{GitHub|org=maarzt|repo=imglib2-labkit}}
 }}
 Labkit is a FIJI plugin for labeling regions of an image.
 
-== Installion ==
+== Installation ==
 
-Labkit can be installed from the ImageJ update site: http://sites.imagej.net/Maarzt/
+Labkit can be installed from the ImageJ update site: http://sites.imagej.net/Labkit/
 
 For details see: [[Following_an_update_site]]
 
