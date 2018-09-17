@@ -1,3 +1,10 @@
+{{Infobox
+| name                   = Labkit 
+| update site            = Maarzt
+| author                  = {{Person|Maarzt}}
+| maintainer             = {{Person|Maarzt}}
+| source                 = {{GitHub|org=maarzt|repo=imglib2-labkit}}
+}}
 Labkit is a FIJI plugin for labeling regions of an image.
 
 == Installion ==
