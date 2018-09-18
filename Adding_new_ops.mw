@@ -99,7 +99,7 @@ print(ops.run("gcf", 20, 7))
 
 = Group your Ops in a Namespace =
 
-Calling our Ops by name is not type-safe, and importing each interface is tedious. If you are going to provide a collection of Ops, a useful way to package them is within a custom [http://javadoc.imagej.net/ImageJ/net/imagej/ops/Namespace.html Namespace].
+Calling our Ops by name is not type-safe, and importing each interface is tedious. If you are going to provide a collection of Ops, a useful way to package them is within a custom [http://javadoc.scijava.org/ImageJ/net/imagej/ops/Namespace.html Namespace].
 
 == Create your Interface(s) ==
 
