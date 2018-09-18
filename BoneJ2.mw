@@ -2,8 +2,8 @@
 | name                   = BoneJ experimental
 | software               = ImageJ
 | logo                     = [[File:Bonej-icon.png|96px]]
-| author                 = {{Person|Michaeldoube}}, {{Person|Rdom}}, {{Person|Alessandro Felder}}
-| maintainer             = {{Person|Michaeldoube}}, {{Person|Rdom}}, {{Person|Alessandro Felder}}
+| author                 = {{Person|Michaeldoube}}, {{Person|Rdom}}, {{Person|Alessandrofelder}}
+| maintainer             = {{Person|Michaeldoube}}, {{Person|Rdom}}, {{Person|Alessandrofelder}}
 | source                 = {{GitHub|org=bonej-org|repo=BoneJ2}}
 | released               = Dec 11<sup>th</sup>, 2017
 | latest version         = cuneiform-experimental, Jun 28<sup>th</sup>, 2018
