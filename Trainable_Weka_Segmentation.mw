@@ -348,7 +348,7 @@ The plugin GUI is independent from the plugin methods. The methods are implement
 
 For examples on how to use the plugin methods from scripts, have a look at the [[Scripting_the_Trainable_Segmentation|Trainable Weka Segmentation scripting]] page.
 
-The '''[http://javadoc.imagej.net/Fiji/trainableSegmentation/package-tree.html API] of the WekaSegmentation''' library is available [http://javadoc.imagej.net/Fiji/trainableSegmentation/package-tree.html here].
+The '''[javadoc.scijava.org/Fiji/?trainableSegmentation/package-summary.html API] of the WekaSegmentation''' library is available [http://javadoc.scijava.org/Fiji/?trainableSegmentation/package-tree.html here].
 
 == Versatility ==
 [[File:TWS-application-examples.png|thumb|right|700px|'''Examples of application of Trainable Weka Segmentation'''. From left to right and from top to bottom: original image of the [https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/BSDS300/html/dataset/images/color/42049.html Berkeley Segmentation Dataset (Test Image #42049 (color)]), probability of boundaries after training, semantic segmentation into 3 classes (sky, tree, eagle), and detected object using the probability maps of the semantic segmentation and some post-processing ([[Level Sets]] from maximum and bounding box selection).]]
