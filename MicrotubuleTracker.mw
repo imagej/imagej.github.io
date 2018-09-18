@@ -96,12 +96,12 @@ movie can be run (again) in batch mode.
 Microtubules show a dynamic behavior known as dynamic instability, which is characterized by four parameters (1) polymerization velocity (vp, nm/sec), (2) depolymerization velocity (vd, nm/sec), (3) catastrophe frequency (fcat, sec-1), and (4) rescue frequency (fres, sec-1). Using the trajectories created in Module 1 (The .txt file contains frame number, total length (in px and μm), track ID, x and y position
 (pixel and μm) and the length increment from the previous frame (px and micrometer). Module 2 derives these dynamic parameters by fitting models using RANSAC. (Read more on [[MTrack-RANSAC models]]).
 
-If not forwarded by Module 1, Module 2 can be selected by  {{bc|Plugins|MTrack|Ranssac Rate Analyzer}}
+If not forwarded by Module 1, Module 2 can be selected by  {{bc|Plugins|MTrack|Ransac Rate Analyzer}}
 
 The panel that opens will allow the user to select individual files containing trajectories which were generated in the first module, which will be displayed as length versus time plots on which RANSAC fits a model of microtubule dynamics using
 the default parameters. Read more about the [[MTrack-RANSAC parameters]].
 
-Clicking "Auto Compute Velocity and Frequencies" auto computes the growth/shrink rates and catastrophe and rescue frequency for all the files. If a file is empty, a warning message will show up with a blank plot.
+Clicking "Auto Compute Velocity and Frequencies" auto computes the growth/shrink velocities and catastrophe and rescue frequency for all the files. If a file is empty, a warning message will show up with a blank plot.
 
 
 In addition, the user can obtain microtubule length distribution for a certain time point or a time-averaged distribution. In the length distribution plot, the mean length, and the standard deviation will be displayed after fitting an exponential decay curve to the obtained distribution.
