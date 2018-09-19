@@ -50,13 +50,13 @@ can optionally determine the PSF of your microscope from bead images by fitting 
 
 When you input any parameters, please ensure that you use decimal number formatting only.
 
-Press Next to proceed, and 3 screens and one panel will open. They show the original movie, the preprocessed movie, and the “active image”, which representing the seeds and is typically the first frame of the movie. Every successfully recognized seed will be marked with a red ellipse.
+Press Next to proceed. Three screens and one panel will open. They show the original movie, the preprocessed movie, and the “active image”, which represents the seeds and is typically the first frame of the movie. Every successfully recognized seed will be marked with a red ellipse.
 
 ==== MSER parameters====
 The default algorithm to identify the seeds as objects is called Maximally Stable Extremal Regions (MSER) <ref>  
-Robust wide-baseline stereo from maximally stable extremal regions, J Matas, O Chum, M Urban, T Pajdla Image and vision computing 22 (10), 761-767.  </ref>.Read more about [[MSER parameters]]. If seeds are not recognized or two very close seeds are recognized as one, the user can change the MSER parameters using the adjustable sliders. The effect will be displayed live on the “active image”. Once most seeds are correctly recognized as objects, click “Find endpoints” to detect the ends of each seed with sub-pixel accuracy. 
+Robust wide-baseline stereo from maximally stable extremal regions, J Matas, O Chum, M Urban, T Pajdla Image and vision computing 22 (10), 761-767.  </ref>. Read more about [[MSER parameters]]. If a single seed is not recognized or two very close seeds are recognized as one, the user can change the MSER parameters using the adjustable sliders. The effect will be displayed live on the “active image”. Once most seeds are correctly recognized as objects, click “Find endpoints” to detect the ends of each seed with sub-pixel accuracy. 
 
-The end-points will be displayed as green circles and a “Next” button appears on the panel which allows the user to flip to the next panel.
+The end-points will be displayed as green circles. A “Next” button appears on the panel, which allows the user to flip to the next panel.
 
 [[Image:MserSimple.png|300px]]
 
@@ -67,36 +67,38 @@ give you several options:
 
 [[Image:Options.png|300px]]
 
-Deselect and select ends
+'''Deselect and select ends'''
 
-If an end was wrongly recognized or two points are too close, you can deselect an end by left
+In case an end has been wrongly recognized, the user can deselect an end by left
 clicking on it in the image. The program will remember and allow to re-select this end by
 clicking Shift + left click (pink circle will mark the end). In case an end has not been
 recognized, use Shift + Alt + left click to select a user defined end (orange circle will mark the
 end). Read more on [[microtubule polarity and (+) end vs. (-) end tracking]].
 
-You can select the start and end time over which the tracking will be performed by entering
+'''Select time'''
+
+The user can select the start and end time over which the tracking will be performed by entering
 the frame numbers.
+Click “Confirm ends and track” to perform the actual tracking, which will be performed
+“live” (progress bar will show). 
+
 Yellow ellipses mark seeds to be tracked, red ellipses mark seeds which won’t be tracked.
 Green circles mark ends to be tracked.
-Orange circles mark user defined ends and will be tracked.
-Click “Confirm ends and track” to perform the actual tracking, which will be performed
-“live” (progress bar will show). A yellow crosshair will show the current position of the tracking
-on each marked microtubule end. A "Success" frame will let you know about the end of the
+Orange circles mark user defined ends that will be tracked. During tracking, a yellow crosshair will show the current position of the tracking
+on each marked microtubule. A "Success" frame will let you know about the end of the
 tracking. Two movies will be displayed, the “Track ID” movie, which can be used to link the
 trajectories to individual microtubules and an “Overlay movie”, in which the user can
 recapitulate the tracking. The trajectory of each end is individually saved as .txt file and
-numbered according to the track ID.
+numbered according to the track ID. Each trajectory will contain the following information: frame number, total microtubule length (in px and μm), track ID, x and y position (px and μm) and the length increment from the previous frame (px and µm).
 After successful tracking, the user has the option to save the selected ends, so that the
 movie can be run (again) in batch mode.
 
 ===Module 2 - Microtubule dynamics===
-Microtubules show a dynamic behavior known as dynamic instability, which is characterized by four parameters (1) polymerization velocity (vp, nm/sec), (2) depolymerization velocity (vd, nm/sec), (3) catastrophe frequency (fcat, sec-1), and (4) rescue frequency (fres, sec-1). Using the trajectories created in Module 1 (The .txt file contains frame number, total length (in px and μm), track ID, x and y position
-(pixel and μm) and the length increment from the previous frame (px and micrometer). Module 2 derives these dynamic parameters by fitting models using RANSAC. (Read more on [[MTrack-RANSAC models]]).
+Microtubules show a dynamic behavior known as dynamic instability, which is characterized by four parameters (1) polymerization velocity (vp, nm/sec), (2) depolymerization velocity (vd, nm/sec), (3) catastrophe frequency (fcat, sec-1), and (4) rescue frequency (fres, sec-1). Module 2 derives these dynamic parameters by fitting models using RANSAC. (Read more on [[MTrack-RANSAC models]]).
 
-If not forwarded by Module 1, Module 2 can be selected by  {{bc|Plugins|MTrack|Ransac Rate Analyzer}}
+If not forwarded by Module 1, Module 2 can be selected by  {{bc|Plugins|MTrack|Microtubule Dynamics Analyzer}}
 
-The panel that opens will allow the user to select individual files containing trajectories which were generated in the first module, which will be displayed as length versus time plots on which RANSAC fits a model of microtubule dynamics using
+The panel that opens will allow the user to select individual files containing trajectories, which were generated in the first module. The trajectory will be displayed as length versus time plot, on which RANSAC fits a model of microtubule dynamics using
 the default parameters. Read more about the [[MTrack-RANSAC parameters]].
 
 Clicking "Auto Compute Velocity and Frequencies" auto computes the growth/shrink velocities and catastrophe and rescue frequency for all the files. If a file is empty, a warning message will show up with a blank plot.
