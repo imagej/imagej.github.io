@@ -28,7 +28,7 @@ The welcome panel will open.
 
 ==== Choose Mode====
 For a first analysis of your data, we suggest using the simple mode, in which we have pre-selected a number of parameters. In case you are unsatisfied with the outcome of the tracking you can use the
-[[advanced mode(MTrack)]] to fine-tune settings. When analyzing more than one movie, you can select [[batch mode(MTrack)]] and run many movies simultaneously. However, before running the program in batch mode, you
+[[advanced mode (MTrack)]] to fine-tune settings. When analyzing more than one movie, you can select [[batch mode (MTrack)]] and run many movies simultaneously. However, before running the program in batch mode, you
 have to at least run the program once in single or advanced mode to select and save the required parameters. The following intro is on simple mode.
 
 ==== Select Movie====
@@ -92,7 +92,7 @@ numbered according to the track ID.
 After successful tracking, the user has the option to save the selected ends, so that the
 movie can be run (again) in batch mode.
 
-===Module 2- Microtubule dynamics===
+===Module 2 - Microtubule dynamics===
 Microtubules show a dynamic behavior known as dynamic instability, which is characterized by four parameters (1) polymerization velocity (vp, nm/sec), (2) depolymerization velocity (vd, nm/sec), (3) catastrophe frequency (fcat, sec-1), and (4) rescue frequency (fres, sec-1). Using the trajectories created in Module 1 (The .txt file contains frame number, total length (in px and μm), track ID, x and y position
 (pixel and μm) and the length increment from the previous frame (px and micrometer). Module 2 derives these dynamic parameters by fitting models using RANSAC. (Read more on [[MTrack-RANSAC models]]).
 
