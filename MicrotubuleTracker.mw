@@ -62,36 +62,23 @@ The end-points will be displayed as green circles. A “Next” button appears o
 
 ==== Options====
 
-Before starting the actual tracking of the dynamically growing microtubules, the program will
-give you several options:
+Before starting the actual tracking of the dynamically growing microtubules, the program will give you several options:
 
 [[Image:Options.png|300px]]
 
 '''Deselect and select ends'''
 
 In case an end has been wrongly recognized, the user can deselect an end by left
-clicking on it in the image. The program will remember and allow to re-select this end by
-clicking Shift + left click (pink circle will mark the end). In case an end has not been
-recognized, use Shift + Alt + left click to select a user defined end (orange circle will mark the
-end). Read more on [[microtubule polarity and (+) end vs. (-) end tracking]].
+clicking on it in the image. The program will remember and allow to re-select this end by clicking Shift + left click (pink circle will mark the end). In case an end has not been recognized, use Shift + Alt + left click to select a user defined end (orange circle will mark the end). Read more on [[microtubule polarity and (+) end vs. (-) end tracking]].
 
 '''Select time'''
 
-The user can select the start and end time over which the tracking will be performed by entering
-the frame numbers.
-Click “Confirm ends and track” to perform the actual tracking, which will be performed
-“live” (progress bar will show). 
+The user can select the start and end time over which the tracking will be performed by entering the frame numbers.
+Click “Confirm ends and track” to perform the actual tracking, which will be performed “live” (progress bar will show). 
 
-Yellow ellipses mark seeds to be tracked, red ellipses mark seeds which won’t be tracked.
-Green circles mark ends to be tracked.
-Orange circles mark user defined ends that will be tracked. During tracking, a yellow crosshair will show the current position of the tracking
-on each marked microtubule. A "Success" frame will let you know about the end of the
-tracking. Two movies will be displayed, the “Track ID” movie, which can be used to link the
-trajectories to individual microtubules and an “Overlay movie”, in which the user can
-recapitulate the tracking. The trajectory of each end is individually saved as .txt file and
-numbered according to the track ID. Each trajectory will contain the following information: frame number, total microtubule length (in px and μm), track ID, x and y position (px and μm) and the length increment from the previous frame (px and µm).
-After successful tracking, the user has the option to save the selected ends, so that the
-movie can be run (again) in batch mode.
+Yellow ellipses mark seeds to be tracked, red ellipses mark seeds which won’t be tracked. Green circles mark ends to be tracked. Orange circles mark user defined ends that will be tracked. During tracking, a yellow crosshair will show the current position of the tracking
+on each marked microtubule. A "Success" frame will let you know about the end of the tracking. Two movies will be displayed, the “Track ID” movie, which can be used to link the trajectories to individual microtubules and an “Overlay movie”, in which the user can recapitulate the tracking. The trajectory of each end is individually saved as .txt file and numbered according to the track ID. Each trajectory will contain the following information: frame number, total microtubule length (in px and μm), track ID, x and y position (px and μm) and the length increment from the previous frame (px and µm).
+After successful tracking, the user has the option to save the selected ends, so that the movie can be run (again) in batch mode.
 
 ===Module 2 - Microtubule dynamics===
 Microtubules show a dynamic behavior known as dynamic instability, which is characterized by four parameters (1) polymerization velocity (vp, nm/sec), (2) depolymerization velocity (vd, nm/sec), (3) catastrophe frequency (fcat, sec-1), and (4) rescue frequency (fres, sec-1). Module 2 derives these dynamic parameters by fitting models using RANSAC. (Read more on [[MTrack-RANSAC models]]).
@@ -102,7 +89,6 @@ The panel that opens will allow the user to select individual files containing t
 the default parameters. Read more about the [[MTrack-RANSAC parameters]].
 
 Clicking "Auto Compute Velocity and Frequencies" auto computes the polymerization/depolymerization velocities and catastrophe and rescue frequency for all the files. If a file is empty, a warning message will show up with a blank plot.
-
 
 In addition, the user can obtain microtubule length distribution for a certain time point or a time-averaged distribution. In the length distribution plot, the mean length, and the standard deviation will be displayed after fitting an exponential decay curve to the obtained distribution.
 
@@ -125,7 +111,10 @@ An example movie with several dynamic microtubules is available for download [ht
 # Each microtubule trajectory will be saved.
 # You are now able to review the tracking results in the ImageJ windows, click '''Enter RANSAC stage>''' to continue.
 # Click '''Select directory of MTrack generated files''' and select the directory that now contains all the text files with the tracking results.
-# To adjust the parameters to automatically derive microtubule dynamics '''select one of the microtubule seed end points''', for example '''MTrack_DemoSeedLabel1Plus.txt''', which will be displayed in the '''Microtubule Length Plot''' window.
+# To adjust the parameters to automatically derive microtubule dynamics '''select one of the microtubule seed end points''', for example '''MTrack_DemoSeedLabel1Plus.txt''', which will be displayed in the '''Microtubule Length Plot''' window. The final read out of all labels tracked in the demo movie is shown below:
+
+'''===> Bild einfügen'''
+
 # Since shorter growth events are not identified using the standard parameters, change the '''Minimum number of timepoints to 20''' using the slider or by typing it and pressing return.
 # Optionally, change the '''Linear Function (only)''' to '''Linearized Quadratic Function''' to achieve a fit with a lower error.
 
