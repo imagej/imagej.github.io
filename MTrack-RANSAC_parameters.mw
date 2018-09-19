@@ -1,6 +1,6 @@
 RANSAC is a non-deterministic algorithm that fits a function to data points by maximizing the number of data points that support the function fit (inliers), given an error epsilon. In order to constrain the form of segments it finds there are certain parameters that user may have to choose to suit to their data. They are enumerated here.
 
-* Max Error (in pixels) : This determines the maximum tolerance of RANSAC fits on both events, growth (red) and shrinkage (blue) events. A high maximum error value will classify more data points as inliers, a low maximum error will classify more data points as outliers.inliers.
+* Max Error (in pixels) : This determines the maximum tolerance of RANSAC fits on both events, growth (red) and shrinkage (blue) events. A high maximum error value will classify more data points as inliers, a low maximum error will classify more data points as outliers.
 
 * Minimum number of time points : This determines the minimum number of data points that define a growth event. If you choose 20, only events that last for 20 time points will be considered to be a growth event. Shrinkage events, on the opposite, are much shorter and are allowed to last only 2 data points. 
 
