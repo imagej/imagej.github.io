@@ -101,7 +101,7 @@ If not forwarded by Module 1, Module 2 can be selected by  {{bc|Plugins|MTrack|M
 The panel that opens will allow the user to select individual files containing trajectories, which were generated in the first module. The trajectory will be displayed as length versus time plot, on which RANSAC fits a model of microtubule dynamics using
 the default parameters. Read more about the [[MTrack-RANSAC parameters]].
 
-Clicking "Auto Compute Velocity and Frequencies" auto computes the growth/shrink velocities and catastrophe and rescue frequency for all the files. If a file is empty, a warning message will show up with a blank plot.
+Clicking "Auto Compute Velocity and Frequencies" auto computes the polymerization/depolymerization velocities and catastrophe and rescue frequency for all the files. If a file is empty, a warning message will show up with a blank plot.
 
 
 In addition, the user can obtain microtubule length distribution for a certain time point or a time-averaged distribution. In the length distribution plot, the mean length, and the standard deviation will be displayed after fitting an exponential decay curve to the obtained distribution.
@@ -115,19 +115,19 @@ Click here to see some examples of the [[MTrack-Ransac fits]].
 An example movie with several dynamic microtubules is available for download [http://preibischlab.mdc-berlin.de/download/MTrack/MTrack_Demo.tif.zip here]. To perform the analysis of this movie:
 
 # Put the demo movie '''MTrack_Demo.tif''' into an empty directory, the results will also be stored here.
-# To run the MicroTubule Tracker.
-# Select '''Plugins''', '''Microtubule Detection and Tracking'''.
+# To run the MicroTubule Tracker:
+# Select '''Plugins''', '''MTrack''', '''Microtubule Detection and Tracking''',
 # Select '''Simple Mode''', '''Concatenated Seed Image followed by time-lapse images''', choose the file, the microscope parameters will be automatically loaded, finally click '''Next>''' to continue.
 # Using the default MSER parameters ''7 microtubule seeds will be identified'', click '''Find Endpoints''' to continue.
-# The ''correct endpoints of 6 microtubule seeds will be identified'' (one is too short and could be added manually), click '''Next>''' to continue.
+# The ''correct endpoints of 6 microtubule seeds will be identified'' (one is too short and can be added manually), click '''Next>''' to continue.
 # Click '''Confirm the end(s) and track''' to track the microtubules over all 241 time-points. The expected runtime is around 6-7 min.
 ## ''Note: the few warnings of missed assignments can be safely ignored, these timepoints will simply be missing, which does not create any further problems as long as it is not happening in the majority of cases.''
-# Each microtubule trajectory will be saved
+# Each microtubule trajectory will be saved.
 # You are now able to review the tracking results in the ImageJ windows, click '''Enter RANSAC stage>''' to continue.
-# Click '''Select directory of MTrack generated files''' and select the directory that now contains all the text files with the tracking results
-# To adjust the parameters to automatically derive microtubule dynamics '''select one of the microtubule seed end points''', for example '''MTrack_DemoSeedLabel1Plus.txt''', which will be displayed in the '''Microtubule Length Plot''' window
-# Since shorter growth events are not identified using the standard parameters, change the '''Minimum number of timepoints to 20''' using the slider or by typing it and pressing return
-# Optionally, change the '''Linear Function (only)''' to '''Linearized Quadratic Function''' to achieve a fit with a lower error
+# Click '''Select directory of MTrack generated files''' and select the directory that now contains all the text files with the tracking results.
+# To adjust the parameters to automatically derive microtubule dynamics '''select one of the microtubule seed end points''', for example '''MTrack_DemoSeedLabel1Plus.txt''', which will be displayed in the '''Microtubule Length Plot''' window.
+# Since shorter growth events are not identified using the standard parameters, change the '''Minimum number of timepoints to 20''' using the slider or by typing it and pressing return.
+# Optionally, change the '''Linear Function (only)''' to '''Linearized Quadratic Function''' to achieve a fit with a lower error.
 
 ==Citation==
 Please note that MTrack is available through Fiji, and is based on a publication. If you use it
