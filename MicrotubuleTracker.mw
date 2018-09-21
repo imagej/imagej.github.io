@@ -107,8 +107,7 @@ An example movie with several dynamic microtubules is available for download [ht
 # Select '''Simple Mode''', '''Concatenated Seed Image followed by time-lapse images''', choose the file, the microscope parameters will be automatically loaded, finally click '''Next>''' to continue.
 # Using the default MSER parameters ''7 microtubule seeds will be identified'', click '''Find Endpoints''' to continue.
 # The correct endpoints of 6 microtubule seeds will be identified (one is too short and can be added manually), click '''Next>''' to continue.
-# Click '''Confirm the end(s) and track''' to track the microtubules over all 241 time-points. The expected runtime is around 6-7 min.
-      ''Note: the few warnings of missed assignments can be safely ignored, these timepoints will simply be missing, which does not create any further problems as long as it is not happening in the majority of cases.''
+# Click '''Confirm the end(s) and track''' to track the microtubules over all 241 time-points. The expected runtime is around 6-7 min. ''Note: the few warnings of missed assignments can be safely ignored, these timepoints will simply be missing, which does not create any further problems as long as it is not happening in the majority of cases.''
 # Each microtubule trajectory will be saved.
 # You are now able to review the tracking results in the ImageJ windows, click '''Enter RANSAC stage>''' to continue.
 # Click '''Select directory of MTrack generated files''' and select the directory that now contains all the text files with the tracking results. The assignment which file belongs to which seed the user can get via the labelled seed end points in the 'Display Tracks' window which appears after tracking the microtubules in module 1.
