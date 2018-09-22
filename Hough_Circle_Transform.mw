@@ -219,6 +219,7 @@ This plugin was developed as part of the University of California, Berkeley Visi
 
 == Bug Report ==
 April 5, 2018 - Fixed bug where the clear radius ratio was ignored.
+
 September 21, 2018 - Fixed bug where repeated calls to the plugin would result in a memory leak.
 
 == License ==
