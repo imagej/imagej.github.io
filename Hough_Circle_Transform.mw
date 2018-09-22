@@ -6,7 +6,7 @@
 | maintainer             = {{Person|llamero}}
 | source                 ={{GitHub|org=llamero|repo=Local_Hough_Circle}}
 | released               = February 4<sup>th</sup>, 2017
-| latest version         = April 5th<sup>th</sup>, 2018 (v0.9.1)
+| latest version         = September 21<sup>st</sup>, 2018 (v1.0.0)
 | status                 = stable, active
 | category               = [[:Category:Analysis|Analysis]], [[:Category:Feature Extraction|Feature Extraction]]
 }}
@@ -219,6 +219,7 @@ This plugin was developed as part of the University of California, Berkeley Visi
 
 == Bug Report ==
 April 5, 2018 - Fixed bug where the clear radius ratio was ignored.
+September 21, 2018 - Fixed bug where repeated calls to the plugin would result in a memory leak.
 
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
