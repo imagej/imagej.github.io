@@ -6,7 +6,7 @@ This tutorial explains how to upload changes to core [[ImageJ]] and [[Fiji]] lib
 
 The typical workflow is:
 
-# Update {{GitHub | org=fiji | repo=fiji | label=Fiji.git}} to depend on the latest {{GitHub | org=fiji | repo=pom-fiji | label=pom-fiji}}
+# Update {{GitHub | org=fiji | repo=fiji | label=Fiji.git}} to depend on the latest {{GitHub | org=scijava | repo=pom-scijava | label=pom-scijava}}
 # Use <code>mvn -Dimagej.app.directory=$HOME/Desktop/Fiji.app/ -Ddelete.other.versions=true</code> to install into an existing (up-to-date) Fiji installation
 # NOTE: if there are any version downgrades at this point, this indicates dependency skew. Fiji.git should be updated appropriately, restarting from step 1
 # Upload changes to ImageJ update site
