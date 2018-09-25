@@ -29,7 +29,7 @@ If you have found a bug, please [[Bug reporting best practices|submit a bug repo
 | [http://list.nih.gov/archives/imagej.html Archives]
 |}
 
-== SciJava (supporting libraries) ==
+== Supporting and related software ==
 
 {| class="wikitable" style="width: 100%"
 |-
@@ -40,17 +40,8 @@ If you have found a bug, please [[Bug reporting best practices|submit a bug repo
 | valign="top" |
 [http://groups.google.com/group/scijava SciJava]
 |
-For [[SciJava]] discussion.
+For discussion of [[SciJava]] supporting libraries.
 | [http://groups.google.com/group/scijava Archives]
-|}
-
-== ImageJ plugins ==
-
-{| class="wikitable" style="width: 100%"
-|-
-! style="width: 120px" | List
-! Description
-! style="width: 100px" | Archives
 |-
 | valign="top" |
 [http://lists.openmicroscopy.org.uk/mailman/listinfo/ome-users/ OME-users]
@@ -63,27 +54,6 @@ For [[Bio-Formats]] and [[OMERO]] issues and discussion.
 |
 For [[Bio-Formats]] and [[OMERO]] programming questions.
 | [http://lists.openmicroscopy.org.uk/pipermail/ome-devel/ Archives]
-|-
-| valign="top" |
-[http://imagej.net/mailman/listinfo/slim-curve SLIM-Curve]
-|
-For [[SLIM Curve]] issues and discussion.
-| [http://loci.wisc.edu/pipermail/slim-curve/ Archives]
-|-
-| valign="top" |
-[http://loci.wisc.edu/mailman/listinfo/loci-software LOCI Software]
-|
-For [http://loci.wisc.edu/software LOCI software], ''excluding'' collaborations such as ImageJ, SCIFIO and Bio-Formats.
-| [http://loci.wisc.edu/pipermail/loci-software/ Archives]
-|}
-
-== Related and similar projects ==
-
-{| class="wikitable" style="width: 100%"
-|-
-! style="width: 120px" | List
-! Description
-! style="width: 100px" | Archives
 |-
 | valign="top" |
 [http://lists.sourceforge.net/lists/listinfo/micro-manager-general μManager]
