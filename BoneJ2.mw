@@ -592,7 +592,7 @@ Support for ''Kontron IMG'', ''Scanco ISQ'' and ''Stratec pQCT'' file formats ha
 
 ''Distribution analysis'' and other pQCT related tools can now be downloaded independently from the [[PQCT]] update site.
 
-== License ==
+== Licence ==
 BoneJ experimental is free, open-source software. You can redistribute it and/or modify it under the terms of the [https://github.com/bonej-org/BoneJ2/blob/master/LICENCE.md BSD 2-clause license]. The software is provided "as is" and any warranties are disclaimed. In no event shall the copyright holder or contributors be liable.
 
 == Citation ==
