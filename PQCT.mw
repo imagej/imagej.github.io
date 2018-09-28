@@ -1,7 +1,6 @@
 {{Infobox
 | name                   = pQCT
 | author                 = Timo Rantalainen
-| maintainer             = [[User:Rdom|Richard Domander]]
 | software               = ImageJ/Fiji
 | source                 = {{GitHub|org=Fiji|repo=PQCT}}
 | released               = Feb 9<sup>th</sup>, 2018
