@@ -151,7 +151,7 @@ The [[ImageJ 1.x]] project is developed at the National Institutes of Health, a 
 
 == Developers: How to use this page ==
 
-If you will be creating and/or consuming open source code, you should familiarize yourself with the options for [http://softwarefreedom.org/resources/2012/ManagingCopyrightInformation.html managing copyright information]. There are numerous tools for assisting in license management; in ImageJ projects, for example, the [http://mojo.codehaus.org/license-maven-plugin/ license-maven-plugin] is used to maintain file-scope copyright notices.
+If you will be creating and/or consuming open source code, you should familiarize yourself with the options for [http://softwarefreedom.org/resources/2012/ManagingCopyrightInformation.html managing copyright information]. There are numerous tools for assisting in license management; in ImageJ projects, for example, the [https://www.mojohaus.org/license-maven-plugin/ license-maven-plugin] is used to maintain file-scope copyright notices.
 
 === Linking to these libraries ===
 
