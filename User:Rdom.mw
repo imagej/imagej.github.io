@@ -1,10 +1,9 @@
 {{Userbox
 | name = Richard Domander
-| affiliation = [http://www.rvc.ac.uk/ Royal Veterinary College, London, UK]
 | forum = rimadoma
 | github = rimadoma
 | linkedin = in/richarddomander
 }}
-Richard Domander develops [http://imagej.net/BoneJ_experimental BoneJ] at the RVC in London, United Kingdom. In addition to BoneJ he's contributed code to SCIFIO, AnalyzeSkeleton, ImageJ and others. He's also written tutorials about what he has learned in his role.
+Richard Domander developed [http://imagej.net/BoneJ_experimental BoneJ] at the Royal Veterinary College in London, United Kingdom from Oct 2015 until Sep 2018. His work was funded by the Wellcome trust.
 
-Richard's taken part in several of the ImageJ hackathons learning from others and having discussions about the future of the platform. He always thinks there's always something to improve in his code.
+In addition to BoneJ Richard has contributed code to SCIFIO, AnalyzeSkeleton, ImageJ and others. He's also written tutorials about what he has learned in his role. In his role Richard took part in several of the ImageJ hackathons learning from others and having discussions about the future of the platform.
