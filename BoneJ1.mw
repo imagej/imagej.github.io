@@ -1,9 +1,9 @@
 {{Infobox
-| name                   = BoneJ
+| name                   = BoneJ 1.x
 | software               = ImageJ
 | logo                     = [[File:Bonej-icon.png|96px]]
-| author                 = {{Person|Michaeldoube}}
-| maintainer             = {{Person|Michaeldoube}}
+| author                 = {{Person|Mdoube}}
+| maintainer             = {{Person|Mdoube}}
 | source                 = {{GitHub|org=mdoube|repo=BoneJ}}
 | status                 = Active
 | website                = http://bonej.org/
