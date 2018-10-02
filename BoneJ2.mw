@@ -596,4 +596,4 @@ Support for ''Kontron IMG'', ''Scanco ISQ'' and ''Stratec pQCT'' file formats ha
 BoneJ experimental is free, open-source software. You can redistribute it and/or modify it under the terms of the [https://github.com/bonej-org/BoneJ2/blob/master/LICENCE.md BSD 2-clause license]. The software is provided "as is" and any warranties are disclaimed. In no event shall the copyright holder or contributors be liable.
 
 == Citation ==
-If you'd like to cite the software, we will soon publish a paper about BoneJ experimental. We recommend you cite the specific release used in your research.
+If you'd like to cite the software, we will soon publish a paper about BoneJ experimental. You can read the draft (and send us your feedback) as we're writing it [https://v1.overleaf.com/read/yxdkwpcdkjzj for Wellcome Open Research on Overleaf]. We recommend you cite the specific release used in your research.
