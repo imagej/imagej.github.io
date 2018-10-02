@@ -586,7 +586,7 @@ The BoneJ plug-ins print their results into a shared result table. This is becau
 Note that some of the plug-ins (marked with ''WIP'') still use a ImageJ1 style results table that works slightly differently. As they are modernized they'll move to use the same new table than others.
 
 == Where is my favorite plug-in? ==
-We've decided to remove some plug-ins from BoneJ experimental. ''Interpolate ROIs'', ''Neck shaft angle'', ''Plateness'' and ''Structure model index'' have been discontinued. ''Dilate'' and ''Erode'' come pre-packaged with ImageJ, so there's no need to include them.
+We've decided to remove some plug-ins from BoneJ experimental. ''Neck shaft angle'', ''Plateness'' and ''Structure model index'' have been discontinued. ''Interpolate ROIs'', ''Dilate'' and ''Erode'' come pre-packaged with ImageJ, so there's no need to include them in BoneJ.
 
 Support for ''Kontron IMG'', ''Scanco ISQ'' and ''Stratec pQCT'' file formats has been moved to [[SCIFIO]]. Just run ''Edit  &gt; Options  &gt; ImageJ2'', and check ''Use SCIFIO when opening files''. When the option is enabled, these kinds of files can be opened from ''File > Open'' or dragging &amp; dropping them like any other format. 
 
