@@ -585,6 +585,52 @@ The BoneJ plug-ins print their results into a shared result table. This is becau
 
 Note that some of the plug-ins (marked with ''WIP'') still use a ImageJ1 style results table that works slightly differently. As they are modernized they'll move to use the same new table as the others.
 
+== Usage reporting ==
+Menu path '' Edit &gt; Options &gt; BoneJ Usage (Modern | Legacy)''
+
+==== What is collected? ====
+
+BoneJ uses Google Analytics to report when a plugin's run() method completes successfully.
+
+<code>
+ht<span>tp://</span>www.google-analytics.com/__utm.gif?utmwv=5.2.5&utms=0&utmn=1074354874&utmhn=bonej.org&utmt=event&utme=5(Plugin%20Usage*org.bonej.wrapperPlugins.wrapperUtils.UsageReporterOptions*0.5.1)&utmcs=UTF-8&utmsr=3840x1080&utmvp=3840x1080&utmsc=24-bit&utmul=en-gb&utmje=0&utmcn=1&utmdt=bonej.org%20Usage%20Statistics&utmhid=512699200&utmr=-&utmp=%2Fstats&utmac=UA-366405-8&utmcc=__utma%3D1589599318.1327557233.1538550102.1538550102.1538550102.2%3B%2B__utmz%3D1589599318.1538550102.79.42.utmcsr%3Dgoogle%7Cutmccn%3D(organic)%7Cutmcmd%3Dorganic%7Cutmctr%3DBoneJ%20Usage%20Reporter%3B
+</code>
+
+A one-pixel GIF image is requested from Google, with a rather long set of parameters. Reported details are:
+
+* A unique ID which is stored in your ImageJ preferences between sessions
+* Your screen resolution
+* The name of the plugin's Java class
+* The version of BoneJ
+* The first time, last time and current time you ran a BoneJ plugin
+* Your system language and character map
+* Google also records your IP address as all webservers do in their logs
+* Some of these values are saved in your preferences
+* Your operating system and Java version are reported in the user agent ID
+
+==== What does the report look like? ====
+
+Data are collated with the Analytics report already used to track hits on bonej.org.
+
+==== For what is the data used? ====
+
+So far, BoneJ has been supported mainly by grants to scientists. We wish to create quantitative reports that detail how much BoneJ is being used in the community, so that decisions to fund further development can be made rationally.
+
+In addition, development resources are limited so it is useful to see which features are used heavily and can be consolidated, while little-used features can be abandoned or made more useful.
+
+==== That is noble but my work is top secret ====
+
+If you are uncomfortable with this level of data collection then please opt out, at the dialog which is prompted on first run, or by running '' Edit &gt; Options &gt; BoneJ Usage (Modern | Legacy) ''. Hitting Cancel (Legacy) or unchecking the box (Modern) will prevent any report from being gathered or sent and will also clear any values that were previously saved.
+
+You can opt back in by running '' Edit &gt; Options  &gt; BoneJ Usage (Modern | Legacy)'', checking the box (Modern only) and hitting OK.
+
+==== Can I see the report? ====
+
+At the moment the report is kept private. If there is a strong will from the user community, who created the data in the first place, the report could be made more open. Please feel free to discuss on the user forum.
+How is it implemented?
+
+You can read the code on Github and in every copy of BoneJ. If you turn on ImageJ's debug mode (in '' Edit &gt; Options &gt; Misc. '') the URL and the GIF response will be logged to ImageJ's log window.
+
 == Where is my favourite plug-in? ==
 We have removed some plug-ins from BoneJ. ''Neck shaft angle'', ''Plateness'' and ''Structure model index'' have been discontinued. ''Interpolate ROIs'', [http://imagej.net/3D_Binary_Filters ''Dilate 3D'' and ''Erode 3D''] come pre-packaged with ImageJ, so they are no longer included in BoneJ2.
 
