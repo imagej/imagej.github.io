@@ -628,7 +628,6 @@ You can opt back in by running '' Edit &gt; Options  &gt; BoneJ Usage (Modern | 
 
 At the moment the report is kept private. If there is a strong will from the user community, who created the data in the first place, the report could be made more open. Please feel free to discuss on the user forum.
 
-
 ==== How is it implemented? ====
 
 You can read the code on Github and in every copy of BoneJ. If you turn on ImageJ's debug mode (in '' Edit &gt; Options &gt; Misc. '') the URL and the GIF response will be logged to ImageJ's log window.
