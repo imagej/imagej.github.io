@@ -11,10 +11,25 @@ This page summarizes translation of basic operations of ImageJ1 and ImageJ2 API.
 ij.ui().showUI();</source>
 |-
 |Show images
-|<source lang="java">imagePlus.show()</source>
+|imp is an ImagePlus object <source lang="java">imp.show()</source>
 |<source lang="java">ij.ui().show(testImg);</source>
 <source lang="java">ImageJFunctions.show(testImg);</source>
 <source lang="java">ImageJFunctions.wrap(testImg,"testImg").show();</source>
+|-
+|Open an image file
+|<code>IJ.openImage()</code> returns an <code>ImagePlus</code> object without showing. <source lang="java">ImagePlus imp = IJ.openImage("/path/to/image.tif");
+imp.show();</source>
+<source lang="java">ImagePlus imp = IJ.openImage("http://www.example.org/path/to/image.tif");  
+imp.show();</source>
+<code>IJ.open()</code> automatically shows the image without returning ImagePlus.
+<source lang="java">IJ.open("/path/to/image.tif");
+ImagePlus imp = IJ.getImage()</source>
+<source lang="java">IJ.open("http://www.example.org/path/to/image.tif");ImagePlus imp = IJ.getImage()</source>
+|<source lang="java"></source>
+|-
+|Save an image file
+|<source lang="java">IJ.saveasTiff(imp, "/path/to/image.tif")</source>
+|<source lang="java"></source>
 |-
 |Convert image types
 |Convert from ImageJ2 Img object to ImageJ1 ImagePlus object: <source lang="java">ImagePlus imp = ImageJFunctions.wrap(img,"Title");</source>
