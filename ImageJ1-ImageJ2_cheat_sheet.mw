@@ -16,9 +16,15 @@ ij.ui().showUI();</source>
 <source lang="java">ImageJFunctions.show(testImg);</source>
 <source lang="java">ImageJFunctions.wrap(testImg,"testImg").show();</source>
 |-
-|Retrieve an object from an open image
+|Retrieve an active image object
 |<source lang="java">ImagePlus imp = IJ.getImage();</source>
-|<source lang="java"></source>
+|Script parameter (the same for <code>Dataset</code>, <code>ImagePlus</code>, etc.):
+<source lang="java">#@ Img image</source>
+In Java code:
+<source lang="java">@Parameter
+private Img image;</source>
+Using <code>ImageDisplayService</code>:
+<source lang="java">Dataset image = ij.imageDisplay().getActiveDataset();</source>
 |-
 |Open an image file
 |<code>IJ.openImage()</code> returns an <code>ImagePlus</code> object without showing. <source lang="java">ImagePlus imp = IJ.openImage("/path/to/image.tif");
@@ -30,11 +36,13 @@ imp.show();</source>
 ImagePlus imp = IJ.getImage()</source>
 <source lang="java">IJ.open("http://www.example.org/path/to/image.tif");
 ImagePlus imp = IJ.getImage()</source>
-|<source lang="java"></source>
+|Using <code>DatasetIOService</code>:
+<source lang="java">Dataset image = ij.scifio().datasetIO().open(path);</source>
 |-
 |Save an image file
 |<source lang="java">IJ.saveasTiff(imp, "/path/to/image.tif")</source>
-|<source lang="java"></source>
+|Using <code>DatasetIOService</code>:
+<source lang="java">ij.scifio().datasetIO().save(dataset, "/path/to/image.tif");</source>
 |-
 |Convert image types
 |Convert from ImageJ2 Img object to ImageJ1 ImagePlus object: <source lang="java">ImagePlus imp = ImageJFunctions.wrap(img,"Title");</source>
