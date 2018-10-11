@@ -319,7 +319,7 @@ An 8-bit, binary 2D or 3D image. Hyperstacks are not supported.
 ==== Related publications ====
 Reznikov, N et al. (2016), ''Inter-trabecular angle: A parameter of trabecular bone architecture in the human proximal femur that reveals underlying topological motifs'', Acta Biomaterialia, 44: 65--72, [https://doi.org/10.1016/j.actbio.2016.08.040 doi:j.actbio.2016.08.040].
 
-== Local thickness ==
+== Thickness ==
 Menu path ''Plugins &gt; BoneJ &gt; Thickness''.
 
 This plug-in includes [[Local_Thickness]] in BoneJ, and provides some additional options &amp; results. Local thickness measures ''the diameter of the largest sphere that fits inside the object and contains the point'' for each point i.e. foreground voxel in an image. The plug-in calculates mean and standard deviation of the trabecular thickness (Tb.Th) or trabecular spacing (Tb.Sp) directly from pixel values in the resulting thickness map. Foreground voxels are considered trabeculae, and background voxels are the spacing. Processing time is heavily dependent on feature size (in pixels); large features can take a very long time to process.
