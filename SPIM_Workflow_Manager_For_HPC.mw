@@ -45,7 +45,7 @@ After you install [https://imagej.net/Fiji/Downloads] and launch Fiji, go to {{b
 
 = Usage =
 Now you should see the plugin under {{bc | Plugins | Multiview Reconstruction | SPIM Workflow Manager for HPC}}. Upon plugin invocation from the application menu, you are prompted for HEAppE credentials. Following a successful login, the main window containing all jobs arranged in a table is displayed. In this context, the term ''job'' is used for a single pipeline run with specified parameters. The plugin actively inquires information on the created jobs from HEAppE and updates the table as appropriate.
-[[File:Flowchart.PNG|1200px]]
+[[File:Flowchart.PNG|600px]]
 
 For creating a new job, the plugin provides a wizard allowing you to specify input and output data paths as well as to set up a configuration file ''config.yaml'', which effectively characterizes the dataset and defines settings for individual workflow tasks. The plugin supports uploading local input image data to the remote HPC resource, providing information on the progress and estimated remaining time.
 
