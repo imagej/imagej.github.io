@@ -24,6 +24,15 @@ If you run MATLAB R2017b and later, you don't need to do this, as it ships and u
 * If you're new to [[MATLAB]], first check out Mathworks' [http://www.mathworks.com/help/matlab/getting-started-with-matlab.html getting started guide].
 * If you're familiar with the [[MATLAB]] language but haven't written .m scripts before, look through the [http://www.mathworks.com/help/matlab/scripts.html script examples].
 
+=== Memory issue ===
+* In order to handle large images, the default Java Heap Memory size assigned won't be enough and you may get the error <code>java.lang.OutOfMemoryError: Java heap space</code>.
+* From MATLAB R2010a onward, you can increase the Jave Heap Memory size from '''Preferences > General > Java Heap Memory'''. [[File:MATLAB_java_heap_memory.png]]
+* However, the maximum value allowed in the Preferences can still be too small for your purpose. In that case, you can directly edit <code>matlab.prf</code> file in the folder specified by the <code>prefdir<\code> MATLAB function (eg. <code>C:\Users\xxxxxxx\AppData\Roaming\MathWorks\MATLAB\R2018b</code>). Find the parameter <code>JavaMemHeapMax</code> in the file and increase the number that follows the capital I (in MB) to increase the maximum Java heap memory size. The change will be reflected by the Preferences as above.
+<source>
+JavaMemHeapMax=I25000
+</source>
+* Alternatively, this can also be done by creating a <code>java.opts</code> file in [https://mathworks.com/help/matlab/matlab_env/matlab-startup-folder.html the startup directory] and overriding the default memory settings (see [https://mathworks.com/help/matlab/matlab_env/java-opts-file.html this documentation] for more information). For instance, <code>-Xmx512m</code> in your <code>java.opts</code> file may be a good start point.
+
 == Creating MATLAB scripts inside ImageJ ==
 
 Using the [[Script Editor]] you will be able to select [[MATLAB]] from the [[Script_Editor#Choosing_a_language | language menu]]. You can also install and run .m scripts via the [[Scripting_Help#Creating_scripts_and_using_.22refresh_scripts.22 | standard script plugin infrastructure]].
