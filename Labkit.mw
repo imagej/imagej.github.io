@@ -5,7 +5,10 @@
 | maintainer             = {{Person|Maarzt}}
 | source                 = {{GitHub|org=maarzt|repo=imglib2-labkit}}
 }}
-Labkit is a FIJI plugin for labeling regions of an image.
+Labkit is a FIJI plugin for:
+* automatic image segmentation
+* labeling regions of an image
+The automatic image segmentation functionality is comparable to Trainable Weka Segmenation, but it's better suited for large 3d images. And it has a nice Big Data Viewer based editor.
 
 == Installation ==
 
