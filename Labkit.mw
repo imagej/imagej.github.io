@@ -12,9 +12,7 @@ The automatic image segmentation functionality is comparable to Trainable Weka S
 
 == Installation ==
 
-Labkit can be installed from the ImageJ update site: http://sites.imagej.net/Labkit/
-
-For details see: [[Following_an_update_site]]
+Labkit can be installed from the ImageJ update site: http://sites.imagej.net/Labkit/ (For details on how to install an update site click [[Following_an_update_site|here]].)
 
 == Start ==
 
