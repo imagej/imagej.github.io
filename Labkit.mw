@@ -30,18 +30,38 @@ Follow these steps, expain how to segment an image:
 # In the side bar of Labkit, under the heading "Segmentation" you will find an entry "Classifier #1". And next to it there is a play button (black triangle). Click it, to train the Classifier. After a moment you will see the automatic segmentation of your image.
 # From Labkit's main menu select "Segmentation -> Show Segmentation Result in ImageJ", to export your segmentation into ImageJ.
 
-=== Basic Navigation ===
+== Basic Navigation ==
 
+Labkit is based on Big Data Viewer. Navigation the image works as in Big Data Viewer, and many short cuts work too. Click [[BigDataViewer|here]] for a description of the short cuts.
 * {{key press|Ctrl|Shift|mouse-wheel}} to zoom in and out
 * {{key press|right-click|drag}} to move the image
 * {{key press|left-click|drag}} to rotate a 3d image
 * {{key press|mouse-wheel}} to scroll through the z-slices of a 3d image
 
-=== Create Labels ===
+== Tricks ==
 
-When {{key press|Space}} is pressed, while the mouse is over the image, a circle around the mouse pointer will appear.
-* {{key press|Space|left click}} mark the pixels inside the circle
-* {{key press|Space|right click}} remove the mark from the pixels inside the circle.
-* {{key press|Space|mouse wheel}} change the size of the circle used to mark pixels.
+Important to know:
+* If there's a black window, where the image should be? You might need to change the contrast settings: Click on the image, and then press {{key press|S}} on the keyboard. A dialog shows up. Use it to adjust the contrast.
+* There can be more than two labels, just click on the add label button.
+* Labels can be renamed, by double clicking on them.
+* To change the label color, just click on the colored rectangle left of the labels name.
+Keyboard. 
+* {{key press|D|mouse-wheel}} to change the size of the brush tool.
 
-By default pixels can be marked as "foreground" or "background". To switch between these two labels use {{key press|N}}.
+== Drawing Tool Shortcuts ==
+* {{key press|D|left-click}} to draw with the pencil tool.
+* {{key press|E|left-click}} to erase with the pencil tool.
+* {{key press|F|left click}} to use the flood fill tool.
+* {{key press|R|left-click}} to remove a connected component.
+* {{key press|N}} - switch to next label
+
+== Open & Save - Import & Export ==
+* Things you can save, open, import or export:
+** Labeling - As *.tif or *.labeling
+** Bitmap - (One layer of the labeling) As *.tif
+** Classifier - As *.classifier, only Labkit is able to work with them.
+** Segmentation result - As *.tif, or show to ImageJ
+** Segmentation's probability Map - As *.tif, or show in ImageJ
+* The word "Labeling" is used to refer to the colorfully displayed areas overlayed on top of the image.
+* Labkit's file format for Labelings is *.labeling. It works greate for very large files with very few labels. (This file format is likely to be imporved and changed in the futur.)
+* The labeling can be saved and opened as *.tif as well. (This is a good option for not to big images. And can be used by any other tool.)
