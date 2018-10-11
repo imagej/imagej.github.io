@@ -61,6 +61,17 @@ These shortcuts become available in ''Edit Mode'', activated through the context
 * {{key|M}} - <u>M</u>oves active node to cursor position.
 * {{key|B}} - <u>B</u>rings active node to current Z-plane.
 
+==== Reconstruction Viewer ====
+* {{key|left}} {{key|right}} {{key|up}} {{key|down}} Rotate (Left-click & drag)
+* {{key|+}} {{key|-}} Zoom (Scroll)
+* {{key|A}} Toggle <u>A</u>xes
+* {{key|C}} Toggle <u>C</u>amera Mode
+* {{key|D}} Toggle <u>D</u>ark Mode
+* {{key|M}} Display Object <u>M</u>anager
+* {{key|R}} <u>R</u>eset View
+* {{key|S}} Save <u>S</u>creenshot
+* {{key|H}} <u>H</u>elp (as Notification) ({{key|F1}} shows Help on a dedicated window)
+
 ==== Legacy 3D Viewer ====
 All shortcuts that are not specific to tracing canvases (XY, ZY and XZ views) ''should'' be recognized by the legacy [[Simple_Neurite_Tracer:_3D_Interaction|3D viewer]]. In addition the following are also implemented:
 * {{key|H}} - Selects the <u>H</u>and (rotation) tool.
