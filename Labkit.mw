@@ -14,10 +14,7 @@ The automatic image segmentation functionality is comparable to Trainable Weka S
 
 Labkit can be installed from the ImageJ update site: http://sites.imagej.net/Labkit/ (For details on how to install an update site click [[Following_an_update_site|here]].)
 
-== Start ==
-
-Use ImageJ to open the image you want to create labels for.
-In ImageJ, select the image, and from the menu choose Plugins > Segmentation > Labkit.
+To start Labkit: In ImageJ, open the image you want to work and from the menu choose Plugins > Segmentation > Labkit.
 
 == Basic Usage ==
 
