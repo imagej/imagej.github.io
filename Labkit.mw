@@ -16,9 +16,9 @@ Labkit can be installed from the ImageJ update site: http://sites.imagej.net/Lab
 
 To start Labkit in ImageJ, first open the image you want to work with, and then select Plugins > Segmentation > Labkit from the main menu.
 
-== Basic Usage ==
+== Quick Start ==
 
-Follow these steps, expain how to segment an image:
+Follow these steps to segment an image:
 # Open an image in ImageJ.
 # Start Labkit by selecting "Plugins > Segmentation > Labkit" from the menu.
 # Labkit should start and display the image. If it shows a black window instead of the image: Click {{key press|S}} and adjust the contrast.
