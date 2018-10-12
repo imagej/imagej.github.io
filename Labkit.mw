@@ -35,14 +35,12 @@ Labkit is based on Big Data Viewer. Navigation the image works as in Big Data Vi
 * {{key press|left-click|drag}} to rotate a 3d image
 * {{key press|mouse-wheel}} to scroll through the z-slices of a 3d image
 
-== Tricks ==
+== Tips & Tricks ==
 
-Important to know:
 * If there's a black window, where the image should be? You might need to change the contrast settings: Click on the image, and then press {{key press|S}} on the keyboard. A dialog shows up. Use it to adjust the contrast.
-* There can be more than two labels, just click on the add label button.
+* There can be more than two labels, just click on the "Add label" button...
 * Labels can be renamed, by double clicking on them.
 * To change the label color, just click on the colored rectangle left of the labels name.
-Keyboard. 
 * {{key press|D|mouse-wheel}} to change the size of the brush tool.
 
 == Drawing Tool Shortcuts ==
