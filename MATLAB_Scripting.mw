@@ -32,6 +32,7 @@ If you run MATLAB R2017b and later, you don't need to do this, as it ships and u
 JavaMemHeapMax=I25000
 </source>
 * Alternatively, this can also be done by creating a <code>java.opts</code> file in [https://mathworks.com/help/matlab/matlab_env/matlab-startup-folder.html the startup directory] and overriding the default memory settings (see [https://mathworks.com/help/matlab/matlab_env/java-opts-file.html this documentation] for more information). For instance, <code>-Xmx512m</code> in your <code>java.opts</code> file may be a good start point.
+* For the common "Out of Memory" error, see [[Troubleshooting#OutOfMemoryError| the Troubleshooting page]].
 
 == Creating MATLAB scripts inside ImageJ ==
 
