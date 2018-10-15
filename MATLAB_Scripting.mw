@@ -178,7 +178,7 @@ imp.show();
 img = copytoImg(I);
 net.imglib2.img.display.imagej.ImageJFunctions.show(img);
 </source>
-==== Retrieve an image data as a MATLAB array I from ImageJ ====
+==== Retrieve an image data in ImageJ as a MATLAB array <code>I</code>  ====
 
 * using <code>IJM</code> 
 <source>
