@@ -161,8 +161,44 @@ Status> ImageJ is running.
 
 The startup process automatically injects the ImageJ classpath into the [[MATLAB]] classpath, merging the two. At this point, you'll have a working ImageJ and can now [[#Creating MATLAB scripts inside ImageJ|run MATLAB scripts as normal]] with access to the full unified classpath.
 
-=== Known Issues===
+=== Useful Commands ===
 
+==== Show a MATLAB array <code>I</code> as an image in ImageJ ====
+* using <code>IJM</code>
+<source>
+IJM.show('I');
+</source>
+* using ImageJ1 <code>ImagePlus</code> ([https://github.com/kouichi-c-nakamura/copytoImagePlus see])
+<source>
+imp = copytoImagePlus(I);
+imp.show();
+</source>
+* using ImgLib2 <code>ArrayImg</code>
+<source>
+img = copytoImg(I);
+net.imglib2.img.display.imagej.ImageJFunctions.show(img);
+</source>
+==== Retrieve an image data as a MATLAB array I from ImageJ ====
+
+* using <code>IJM</code> 
+<source>
+IJM.getDataset();
+</source>
+<source>
+IJM.getDatasetAs('I');
+</source>
+
+* from ImgLib2 <code>Img</code> 
+<source>
+I = copytoMATLAB(img);
+</source>
+
+==== Quit the ImageJ instance from MATLAB command line ====
+<source>
+ij.IJ.run("Quit","");
+</source>
+
+=== Known Issues===
 
 ==== Common Issues ====
 * Although the first and second dimensions, respectively, of MATLAB array are treated as rows (Y)and columns (X) in MATLAB, the first and second dimensions of an array are treated as X and Y, respectively, in ImageJ. The axes are transposed by <code>IJM.show(name)</code>, <code>IJM.getDataset()</code>, <code>IJM.getDatasetAs(name)</code>. (See discussion [http://forum.imagej.net/t/ijm-show-in-imagej-matlab-does-not-support-multi-dimentional-or-multi-channel-images/10156 here for details])
