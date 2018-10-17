@@ -43,7 +43,16 @@ Actually running a [[MATLAB]] script from ImageJ is effectively like calling [ht
 Options for controlling the startup of [[MATLAB]], or killing existing [[MATLAB]] processes (e.g. if hidden) can be accessed via:
    {{bc | Edit | Options | MATLAB...}}
 
+[[File:MATLAB_options.png]]
+
+<blockquote>
 NB: because the script is being passed from ImageJ to a remote [[MATLAB]], [[MATLAB]] will not have access to ImageJ's classpath. Objects can be passed as variables to [[MATLAB]] (e.g. by using @ annotation) but only if they are valid [[MATLAB]] classes or specially handled classes.
+
+Scripts requiring ImageJ classes without auto-conversion support should [[#Running ImageJ within MATLAB | launch ImageJ from within MATLAB]].
+
+eg. a script using <code>[https://javadoc.scijava.org/ImageJ1/ij/IJ.html ij.IJ]</code> commands needs to be run from within MATLAB (or you'll need to add Java class paths to MATLAB search path before calling <code>ij.IJ</code> commands).
+
+</blockquote>
 
 For example, by default all [http://matlabcontrol.googlecode.com/svn/javadocs/doc/matlabcontrol/extensions/MatlabNumericArray.html MatlabNumericArrays] will be converted to matrices within [[MATLAB]]. We also support auto-conversion of ImageJ Datasets out of the box, which can be read in by scripts using "@matrix" parameters:
 
@@ -65,7 +74,8 @@ mask = imdilate(mask,se); % perform dilation on the mask
 rval(~mask) = 0; % subtract mask from original dataset
 </source>
 
-This script will take the active Dataset, set it as an array variable named "data" in [[MATLAB]], and set the matrixSum output value to the sum of the first three dimensions of the dataset. Scripts requiring ImageJ classes without auto-conversion support should [[#Running ImageJ within MATLAB | launch ImageJ from within MATLAB]].
+This script will take the active Dataset, set it as an array variable named "data" in [[MATLAB]], and set the matrixSum output value to the sum of the first three dimensions of the dataset. 
+
 
 
 === Global state ===
@@ -101,7 +111,6 @@ Most of the ImageJ scripting languages have implicit return values. As mentioned
 When running ImageJ externally, [[MATLAB]] will not have ImageJ classes in its classpath - so they can not simply be imported. Although [[MATLAB]] does support [http://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html editing its classpath] this is NOT recommended, as the classes loaded by [[MATLAB]] will not be the same as those loaded in ImageJ.
 
 Instead, you can [[#Running ImageJ within MATLAB|launch ImageJ inside MATLAB]] and have it take care of managing the class loading for you. [[MATLAB]] then supports the use of import statements to [http://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html#f46341 simplify class names].
-
 
 == Running ImageJ within MATLAB ==
 
