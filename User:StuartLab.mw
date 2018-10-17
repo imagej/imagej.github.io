@@ -16,7 +16,10 @@ Our lab homepage can be found [https://brocku.ca/mathematics-science/biology/dir
 |-
 | Apply Generic LUT
 | Applies a LUT (lookup table) that ranges from (0,0,0) to (r,g,b) in RGB colourspace to an open image .
-| NA
-| [https://github.com/StuartLab/imagej-tools/blob/master/scripts/Apply_Generic_LUT.py GitHub]
+| <ref>https://imagej.net/User:StuartLab/Apply_Generic_LUT</ref>
+| <ref>https://github.com/StuartLab/imagej-tools/blob/master/scripts/Apply_Generic_LUT.py</ref>
 |-
 |}
+
+<h1>Links</h1>
+<references/>
