@@ -15,7 +15,7 @@ If you run MATLAB R2017b and later, you don't need to do this, as it ships and u
 * Add the [[List_of_update_sites|ImageJ-MATLAB]] update site. See [[Following an update site]] for more detail.
 *# You go to <code>Help > Update...</code>
 *# Once checking status is done, open <code>Manage update sites</code>
-*# Tick <code>ImageJ-MATLAB</code> and then <code>Close</code>
+*# Tick <code>ImageJ-MATLAB</code> and then <code>Close</code> [[File:Manage_update_sites_ImageJ_MATLAB.png]]
 *# And then click <code>Apply changes</code> on ImageJ Updater
 *# This will literally update and replace the existing, non-functional <code>ImageJ.m</code> file in the scripts folder with the genuine one.
 * You will need to install your own licensed copy of [http://www.mathworks.com/products/matlab/ MATLAB]. All that is provided with ImageJ are adapters for evaluating scripts written in ImageJ to [[MATLAB]], and converters between ImageJ and [[MATLAB]] data structures.
