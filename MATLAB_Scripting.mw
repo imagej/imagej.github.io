@@ -199,37 +199,37 @@ The startup process automatically injects the ImageJ classpath into the [[MATLAB
 
 ==== Show a MATLAB array <code>I</code> as an image in ImageJ ====
 * using <code>IJM</code>
-<source>
+<source lang="matlab">
 IJM.show('I');
 </source>
 * using ImageJ1 <code>ImagePlus</code> ([https://github.com/kouichi-c-nakamura/copytoImagePlus see])
-<source>
+<source lang="matlab">
 imp = copytoImagePlus(I);
 imp.show();
 </source>
 * using ImgLib2 <code>ArrayImg</code>
-<source>
+<source lang="matlab">
 img = copytoImg(I);
 net.imglib2.img.display.imagej.ImageJFunctions.show(img);
 </source>
 ==== Retrieve an image data in ImageJ as a MATLAB array <code>I</code>  ====
 
 * using <code>IJM</code> with the current window title as the variable name 
-<source>
+<source lang="matlab">
 IJM.getDataset();
 </source>
 * using <code>IJM</code> with the variable name <code>I</code>
-<source>
+<source lang="matlab">
 IJM.getDatasetAs('I');
 </source>
 
 * from ImgLib2 <code>Img</code> 
-<source>
+<source lang="matlab">
 I = copytoMATLAB(img);
 </source>
 
 ==== Quit the ImageJ instance from MATLAB command line ====
-<source>
+<source lang="matlab">
 ij.IJ.run("Quit","");
 </source>
 
