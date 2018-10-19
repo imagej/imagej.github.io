@@ -38,7 +38,32 @@ JavaMemHeapMax=I25000
 
 Using the [[Script Editor]] you will be able to select [[MATLAB]] from the [[Script_Editor#Choosing_a_language | language menu]]. You can also install and run .m scripts via the [[Scripting_Help#Creating_scripts_and_using_.22refresh_scripts.22 | standard script plugin infrastructure]].
 
-Actually running a [[MATLAB]] script from ImageJ is effectively like calling [http://www.mathworks.com/help/matlab/ref/eval.html eval] on the script's contents. The script will be evaluated as such in a remote [[MATLAB]] instance (which will be launched automatically, if needed). Note that only scripts, not functions, can be evaluated in this way. See [http://www.mathworks.com/help/matlab/learn_matlab/scripts-and-functions.html the MATLAB documentation] for an explanation of these concepts.
+Actually running a [[MATLAB]] script from ImageJ is effectively like calling <code>[http://www.mathworks.com/help/matlab/ref/eval.html eval]</code> on the script's contents. The script will be evaluated as such in a remote [[MATLAB]] instance (which will be launched automatically, if needed). Note that only scripts, not functions, can be evaluated in this way. See [http://www.mathworks.com/help/matlab/learn_matlab/scripts-and-functions.html the MATLAB documentation] for an explanation of these concepts.
+<blockquote>
+NB: Because of the similarity to <code>eval</code>, when you need to assign character vector or string with special characters, they need to be '''escaped'''. A typical example is the handling of file/folder paths in Windows. Thus,
+
+<source lang="matlab">
+s = 'C:\Users\xxxxx\Desktop'
+</source>
+will end up in an error in MATLAB:
+<source>
+Warning: Escaped character '\U' is not valid. See 'doc sprintf' for
+supported special characters. 
+scijava_script523255 =
+    's = 'C:'
+Error: Character vector is not terminated properly.
+</source>
+You need to escape backslashes as below:
+<source lang="matlab">
+s = 'C:\\Users\\xxxxx\\Desktop'
+</source>
+<source>
+s =
+    'C:\Users\xxxxx\Desktop'
+</source>
+For more details, see documetation for <code>sprintf</code> and learn about Special Characters.
+
+</blockquote>
 
 Options for controlling the startup of [[MATLAB]], or killing existing [[MATLAB]] processes (e.g. if hidden) can be accessed via:
    {{bc | Edit | Options | MATLAB...}}
