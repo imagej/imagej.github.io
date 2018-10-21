@@ -170,7 +170,7 @@ Thanks to Travis, the extension we are aware of are built automatically and can 
 * Multi-channel spot mean intensity analyzer: Computes the mean intensity of spots in up to 10 channels.
 * Multi-channel track mean intensity analyzer: Computes the track mean intensity of its spots in up to 10 channels.
 * ROI exporter: Exports spots as ImageJ ROIs.
-| Jean-Yves Tinevez
+| Benoit Lombardo & Jean-Yves Tinevez
 | [http://maven.imagej.net/service/local/repositories/releases/content/org/scijava/TrackMate_extras/0.0.4/TrackMate_extras-0.0.4.jar on ImageJ maven Nexus]
 | [https://github.com/tinevez/TrackMate-extras on Github]
 |-
