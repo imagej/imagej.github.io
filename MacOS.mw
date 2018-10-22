@@ -31,15 +31,9 @@ See also the [[Frequently Asked Questions]] page.
 
 == How do I run ImageJ with Java 6? ==
 
-''Note: It should no longer be necessary to reinstall Java 6 on macOS. ImageJ should work fine with Java 8.''
-
-Newer versions of macOS come without Java installed. However, users can reinstall Apple's Java 6 on macOS by [http://support.apple.com/kb/DL1572 following these instructions].
-
-Alternately, if you are a developer looking to install the Java 6 Development Kit, you must log in to [https://developer.apple.com/downloads/ Apple Developer downloads] with your Apple ID, search for "java for os x" and download the latest package ("Java for OS X 2013-005 Developer Package" at the time of this writing).
+It is unfortunately no longer feasible to install Apple Java 6 on current versions of macOS. However, ImageJ should work OK with Java 8. If you have difficulties, please post on the [https://forum.image.sc/ Image.sc Forum].
 
 At any time, you can verify which Javas are installed on your system using {{GitHub|org=ctrueden|repo=ctr-scripts|path=java-info|label=this script}}.
-
-Note however that, per [[#On OS X|the limitations]] of <code>--java-home</code>, you will have to jump through some hoops in order to run ImageJ with Java 6 if you also have Java 7 and/or 8 installed.
 
 == How do I run ImageJ on Yosemite? ==
 
