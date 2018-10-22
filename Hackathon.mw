@@ -206,6 +206,11 @@ ImageJ has benefitted from many hackathons over the years:
 |University of Idaho<br>Moscow, ID, USA
 |{{PersonList|Kharrington|Saalfeld|Dietzc|Rueden|Maarzt|Pietzsch|royerloic|Bnorthan|skalarproduktraum|marktsuchida|Robert Wiese}}
 |[[SciView]]
+|- valign="top"
+| style="white-space: nowrap" | 2019 Jan 17 -<br>2019 Jan 29
+|[https://events.it4i.cz/indico/event/18/ IT4I]<br>Ostrava, Czech Republic
+|?
+|[https://imagej.net/SPIM_Workflow_Manager_For_HPC Parallelization and HPC]
 |-
 |colspan="4" style="border-bottom: 1px solid gray"|
 |}
