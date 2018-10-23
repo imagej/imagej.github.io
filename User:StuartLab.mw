@@ -19,10 +19,10 @@ Our lab homepage can be found [https://brocku.ca/mathematics-science/biology/dir
 | <ref>https://imagej.net/User:StuartLab/Apply_Generic_LUT</ref>
 | <ref>https://github.com/StuartLab/imagej-tools/blob/master/scripts/Apply_Generic_LUT.py</ref>
 |-
-| DPI Dialog
-| Easily resize images to publisher specifications without artificially smoothing (uses nearest neighbour interpolation ONLY).
-| <ref>https://imagej.net/User:StuartLab/DPI_Dialog</ref>
-| <ref>https://github.com/StuartLab/imagej-tools/blob/master/scripts/DPI_Dialog.py</ref>
+| Batch Bot
+| Applies a macro to a folder of images saving all output image windows (not just the selected) to an output folder). Eventually Batch Bot will recieve more functionality to enable easily generating and sharing processing pipelines (including preprocessing and post processing).
+| <ref>https://imagej.net/User:StuartLab/Batch_Bot</ref>
+| <ref>https://github.com/StuartLab/imagej-tools/blob/master/scripts/Batch_Bot.py</ref>
 |-
 | Render OS-SIM Optical Sections
 | Implements various algorithms allowing for optical sections to be generated from structured illumination microscopy datasets.
