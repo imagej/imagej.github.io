@@ -29,6 +29,11 @@ Our lab homepage can be found [https://brocku.ca/mathematics-science/biology/dir
 | <ref>https://imagej.net/User:StuartLab/Render_OS-SIM_Optical_Sections</ref>
 | <ref>https://github.com/ScienceToolkit/ij-ossim</ref>
 |-
+| ROI Cropping Tool
+| Crop an image using all Rois stored in the RoiManager. You can simultaneously project stacks using a maximum intensity projection, select a single time point, and save the crops to file.
+| <ref>https://imagej.net/User:StuartLab/ROI_Cropping_Tool</ref>
+| <ref>https://github.com/ScienceToolkit/ROI_Cropping_Tool.py</ref>
+|-
 |}
 
 <h1>Links</h1>
