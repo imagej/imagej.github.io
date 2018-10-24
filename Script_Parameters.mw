@@ -58,7 +58,7 @@ A list of possible data types and the corresponding widgets is provided:
 | numeric field
 | | <code>slider</code> {{!}} <code>spinner</code> {{!}} <code>scroll bar</code>
 |-
-| | <code>float</code>
+| | <code>Float</code>
 | numeric field
 | | <code>slider</code> {{!}} <code>spinner</code> {{!}} <code>scroll bar</code>
 |-
@@ -86,6 +86,8 @@ A list of possible data types and the corresponding widgets is provided:
 | file chooser
 | | <code>open</code> {{!}} <code>save</code> {{!}} <code>directory</code> {{!}} <code>extensions:</code>
 |}
+
+NB : <code>float</code> is also an accepted field but the decimal part is not displayed in the form compared to <code>Float</code> (mind the capital F).
 
 By implementing {{Javadoc | project = SciJava | package = org/scijava/widget | class = InputWidget}} it is possible to extend this list.
 
