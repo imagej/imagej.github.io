@@ -78,17 +78,17 @@ ImageJ has benefitted from many hackathons over the years:
 |[[KNIME]]+[[Fiji]]
 |- valign="top"
 | style="white-space: nowrap" | 2013 Jan 22 -<br>2013 Jan 25
-|[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
+|[[LOCI]]<br>Madison, WI, USA
 |{{PersonList|thewtex|Rueden|Schindelin|hinerm}}
 |{{GitHub|org=scifio|repo=scifio-imageio|label=SCIFIO ImageIO plugin}}
 |- valign="top"
 | style="white-space: nowrap" | [[2013-04-22 - Trainable Segmentation Hackathon|2013 Apr 14 -<br>2013 Apr 18]]
-|[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
+|[[LOCI]]<br>Madison, WI, USA
 |{{PersonList|Iarganda|Schindelin|Rueden}}
 |[[Trainable Weka Segmentation]]
 |- valign="top"
 |[[2013-05-03 - ImgLib2 Hackathon in Madison|2013 Apr 27 -<br>2013 May 3]]
-|[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
+|[[LOCI]]<br>Madison, WI, USA
 |{{PersonList|StephanP|Pietzsch|Rueden|Schindelin|Bdezonia|hinerm|Grislis}}
 |[[ImgLib2]]
 |- valign="top"
@@ -98,7 +98,7 @@ ImageJ has benefitted from many hackathons over the years:
 |[[MaMuT]], [[BigDataViewer]]
 |- valign="top"
 | style="white-space: nowrap" | 2013 Nov 14 -<br>2013 Nov 27
-|[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
+|[[LOCI]]<br>Madison, WI, USA
 |{{PersonList|Dietzc|Schindelin|Rueden}}
 |[[KNIME]]+[[ImageJ]]
 |- valign="top"
@@ -113,22 +113,22 @@ ImageJ has benefitted from many hackathons over the years:
 |{{GitHub|org=imagej|repo=imagej-omero|label=ImageJ-OMERO}}
 |- valign="top"
 | style="white-space: nowrap" | 2014 Mar 20 -<br>2014 Mar 21
-|[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
+|[[LOCI]]<br>Madison, WI, USA
 |{{PersonList|jburel|pwalczysko|Rueden}}
 |{{GitHub|org=imagej|repo=imagej-omero|label=ImageJ-OMERO}}
 |- valign="top"
 | style="white-space: nowrap" | 2014 Jul 7 -<br>2014 Jul 10
-|[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
+|[[LOCI]]<br>Madison, WI, USA
 |{{PersonList|marktsuchida|ChrisWeisiger|Schindelin|stuyvenberg|Rueden|hinerm}}
 |[https://micro-manager.org/ Micro-Manager] and [http://openspim.org/ OpenSPIM]
 |- valign="top"
 | style="white-space: nowrap" | [[2014-10-01 - ImageJ Ops Hackathon|2014 Sep 14 -<br>2014 Sep 18]]
-|[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
+|[[LOCI]]<br>Madison, WI, USA
 |{{PersonList|Dietzc|bnorthan|hinerm|Rueden|apal4|yuminguw|Awalter2|Ginger Pocock}}
 |[[ImageJ Ops]] + [[KNIME]]
 |- valign="top"
 |2014 Oct 13 -<br>2014 Oct 17
-|[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
+|[[LOCI]]<br>Madison, WI, USA
 |{{PersonList|Pietzsch|StephanP|Saalfeld|Schindelin|Rueden|hinerm}}
 |[[ImgLib2]]
 |- valign="top"
@@ -178,12 +178,12 @@ ImageJ has benefitted from many hackathons over the years:
 |[[Fiji]] & [[KNIP]]
 |- valign="top"
 |2017 Feb 21 -<br>2017 Feb 26
-|[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
+|[[LOCI]]<br>Madison, WI, USA
 |{{PersonList|Pietzsch|Saalfeld|Dietzc|Rueden|Awalter2}}
 |[[ImgLib2]]
 |- valign="top"
 |2017 Jun 7 -<br>2017 Jun 14
-|[http://loci.wisc.edu/ LOCI]<br>Madison, WI, USA
+|[[LOCI]]<br>Madison, WI, USA
 |{{PersonList|dietzc|Rueden}}
 |[[ImageJ Ops]]
 |- valign="top"
@@ -207,9 +207,25 @@ ImageJ has benefitted from many hackathons over the years:
 |{{PersonList|Kharrington|Saalfeld|Dietzc|Rueden|Maarzt|Pietzsch|royerloic|Bnorthan|skalarproduktraum|marktsuchida|Robert Wiese}}
 |[[SciView]]
 |- valign="top"
+|[[2018-10-26 - ImageJ Fall 2018 Update|2018 May 16 -<br>2018 May 18]]
+|[https://www.galvanize.com/san-francisco Galvanize]<br>San Francisco, CA, USA
+|{{PersonList|Dan Toloudis (AICS)|Dyche Mullins (UCSF)|Lisa Harrylock (AICS)|Tom Goddard (UCSF)|Molly Maleckar (AICS)|Tom Ferrin (UCSF)|Graham Johnson (AICS)|Samuel Lord (UCSF/HHMI)|Basu Chaudhuri (AICS)|Ambrose Carr (CZI)|Megan Riel-Megan (AICS)|Jeremy Freeman (CZI)|Dave Williams (AICS)|Nicholas Sofroniew (CZI)|{{Person|Rueden}}|Arne Bakker (CZI)|Syuan-Ming Guo (CZ Biohub)|Andréa Clavijo (CZI)|Deep Ganguli (CZI)|Shalin Mehta (CZ Biohub)|Tony Tung (CZI)|Sarah Kefayati (CZ Biohub)|Anitha Krishnan (CZ Biohub)|{{Person|0x00b1}}|Norah Klintberg (CZ Biohub)|Eric Perlman Johns (Hopkins)|Oana Carja (CZ Biohub)
+Benny Lin U Texas (Austin)|Jeremy Maitlen-Shephard (Google)}}
+|Bioimage Analysis in JavaScript, Python + Java
+|- valign="top"
+|[[2018-10-31 - Fall 2018 Madison Hackathon|2018 Oct 31 -<br>2018 Nov 06]]
+|[[LOCI]]<br>Madison, WI, USA
+|{{PersonList|Dietzc|Pietzsch|Marktsuchida|Rueden}}
+|ImgLib2, Micro-Manager
+|- valign="top"
+|[[2018-12-06 - I2K 2018 Dresden Hackathon|2018 Dec 06 -<br>2018 Dec 12]]
+|[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
+|TBD
+|Hacking
+|- valign="top"
 |[https://events.it4i.cz/indico/event/18/ 2019 Jan 17 -<br>2019 Jan 29]
 |[https://www.it4i.cz/?lang=en IT4Innovations]<br>Ostrava, Czech Republic
-|?
+|TBD
 |[https://imagej.net/SPIM_Workflow_Manager_For_HPC Parallelization and HPC]
 |-
 |colspan="4" style="border-bottom: 1px solid gray"|
