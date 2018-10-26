@@ -84,7 +84,8 @@ To read more about the used features, the following list provides links to addit
 Another great feature of Jython is the possibility to use functions from Java jar package that resides in the jar folder of imageJ. 
 
 ==== ImageJ and Fiji API ====
- The following API documentation lists all available module and functions :
+
+The following API documentation lists all available module and functions :
 * [http://javadoc.scijava.org/ImageJ1/ ImageJ]
 * [http://javadoc.scijava.org/Fiji/ Fiji]
 
@@ -93,8 +94,8 @@ Those package are built-in with Fiji, but any package that resides in the jars f
 Let's show one example with the ImageJ package and the class [http://javadoc.scijava.org/ImageJ1/ij/plugin/frame/RoiManager.html RoiManager]. According to the javadoc the RoiManager class resides in <code>ij.plugin.frame</code>. Therefore the code will look like :
 
 <code>
-from ij.plugin.frame import RoiManager
-RM = RoiManager()        # we create an instance of the RoiManager class
+from ij.plugin.frame import RoiManager <br> 
+RM = RoiManager()        # we create an instance of the RoiManager class <br> 
 rm = RM.getRoiManager()  # "activate" the RoiManager otherwise it can behave strangely 
 </code>
 
