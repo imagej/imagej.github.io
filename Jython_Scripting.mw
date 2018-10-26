@@ -93,11 +93,11 @@ Those package are built-in with Fiji, but any package that resides in the jars f
 
 Let's show one example with the ImageJ package and the class [http://javadoc.scijava.org/ImageJ1/ij/plugin/frame/RoiManager.html RoiManager]. According to the javadoc the RoiManager class resides in <code>ij.plugin.frame</code>. Therefore the code will look like :
 
-<code>
-from ij.plugin.frame import RoiManager <br> 
-RM = RoiManager()        # we create an instance of the RoiManager class <br> 
+<source lang="python">
+from ij.plugin.frame import RoiManager
+RM = RoiManager()        # we create an instance of the RoiManager class
 rm = RM.getRoiManager()  # "activate" the RoiManager otherwise it can behave strangely 
-</code>
+</source>
 
 ==== Using openCV in Jython ====
 It is even possible to use most of opencv functionalities within Jython/Fiji. There are several options (see the [https://imagej.net/OpenCV wiki page about opencv]), yet the most straight forward is probably IJ-OpenCV which is available via the update sites.  It will automatically download the necessary packages and dependencies in your Fiji installation. 
