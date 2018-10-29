@@ -18,7 +18,7 @@ It is [[wikipedia:Hackathon|not clear whether Sun's marketing team or OpenBSD we
 
 Ever since, OpenBSD held annual hackathons during which OpenBSD was improved in leaps and bounds.
 
-In 2007, the first hackathon revolving around neuro-science was taking place at [http://www.hhmi.org/janelia/ HHMI Janelia Research Campus]. In a sense, it can be seen as the first Fiji hackathon, since Fiji was born in the wake of that hackathon, and probably would not have happened without it.
+In 2007, the first hackathon revolving around neuro-science was taking place at [https://janelia.org/ HHMI Janelia Research Campus]. In a sense, it can be seen as the first Fiji hackathon, since Fiji was born in the wake of that hackathon, and probably would not have happened without it.
 
 = ImageJ hackathons =
 
@@ -32,13 +32,13 @@ ImageJ has benefitted from many hackathons over the years:
 |-
 |colspan="4" class="section-major"|ImageJ Hackathons
 |- valign="top"
-|[http://www.hhmi.org/sites/default/files/Bulletin/2007/November/nov2007_fulltext.pdf 2007 Summer]
-|[http://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
+|[https://www.hhmi.org/sites/default/files/Bulletin/2007/November/nov2007_fulltext.pdf 2007 Summer]
+|[https://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
 | {{PersonList|Albertcardona|bene51|jefferis|hanchuan|Schindelin|StephanP|Saalfeld|rasband|Arnim Jenett|Julie Simpson|Torsten Rohlfing|Yuriy Mishchenko}}
 |Neuroscience
 |- valign="top"
 | style="white-space: nowrap" | [[TaskList|2008 Apr 21 -<br>2008 Apr 30]]
-|[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
+|[https://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
 |{{PersonList|Albertcardona|bene51|ysis|White|frederikfly|JeanYvesTinevez|Schindelin|Hinerm|StephanP|Saalfeld|Tomancak}}
 |[[Fiji]]
 |- valign="top"
@@ -48,32 +48,32 @@ ImageJ has benefitted from many hackathons over the years:
 |[[Fiji]]
 |- valign="top"
 | style="white-space: nowrap" | [[2009-03-12 - Dresden Hackathon 2009|2009 Mar 23 -<br>2009 Apr 03]]
-|[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
+|[https://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
 |{{PersonList|Schindelin|Albertcardona|JeanYvesTinevez|bene51|Iarganda|White|Hinerm|Tomancak|StephanP|Saalfeld|Raju Tomer|Misha Kudryashev}}
 |Segmentation
 |- valign="top"
 | style="white-space: nowrap" | [[2010-03-14 - Hackathon at EMBL|2010 Mar 14 -<br>2010 Mar 27]]
-|[http://www.embl.de/ EMBL]<br>Heidelberg, Germany
+|[https://www.embl.de/ EMBL]<br>Heidelberg, Germany
 |{{PersonList|Albertcardona|Saalfeld|bene51|cmci|Rueden|Schindelin|Iarganda|Lindsey|Hinerm|StephanP|Harris|vkaynig}}
 |[[Fiji]]
 |- valign="top"
 | style="white-space: nowrap" | 2010 Oct 12 -<br>2010 Oct 23
-|[http://www.lbnl.gov/ LBNL]<br>Berkeley CA, USA
+|[https://www.lbl.gov/ LBNL]<br>Berkeley CA, USA
 |{{PersonList|frederikfly|Schindelin}}
 |Running [[Micro-Manager]] inside [[Fiji]]
 |- valign="top"
 | style="white-space: nowrap" | [[2011 Hackathon in Madison|2011 Jan 27 -<br>2011 Feb 13]]
-|[http://discovery.wisc.edu/ WID]<br>Madison, WI, USA
+|[https://discovery.wisc.edu/ WID]<br>Madison, WI, USA
 |{{PersonList|Iarganda|paulbarber|Albertcardona|Bdezonia|arthuredelstein|afraser|frederikfly|Grislis|Harris|hinerm|luisibanez|LeeKamentsky|Lindsey|Linkert|Hinerm|Pietzsch|StephanP|Rueden|Saalfeld|Schindelin|bene51|Tomancak|Eliceiri|Lentz|LeeKamentsky|Mark Rowley}}
 |Multidimensional visualization
 |- valign="top"
 | style="white-space: nowrap" | [[2011-12-14 - Fiji Hackathon in Dresden|2011 Dec 9 -<br>2011 Dec 19]]
-|[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
+|[https://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
 |{{PersonList|jburel|Stephane-D|Bdezonia|Dietzc|Michaeldoube|Fab14|frederikfly|hornm|White|tomka|alex-krull|Linkert|Hinerm|Moore|Pietzsch|StephanP|Rueden|Schindelin|bene51|Tomancak|Peter-Gabriel-Pitrone|Eliceiri|Fernando Carrilo, Jiri Matas, Jurgen Mayer}}
 |Interoperability
 |- valign="top"
 | style="white-space: nowrap" | 2012 Oct
-|[http://www.uni-konstanz.de/en/welcome/ Universität Konstanz]<br>Konstanz, Germany
+|[https://www.uni-konstanz.de/en/ Universität Konstanz]<br>Konstanz, Germany
 |{{PersonList|hornm|Dietzc|Pietzsch|Schindelin}}
 |[[KNIME]]+[[Fiji]]
 |- valign="top"
@@ -93,7 +93,7 @@ ImageJ has benefitted from many hackathons over the years:
 |[[ImgLib2]]
 |- valign="top"
 | style="white-space: nowrap" | 2013 Sep 9 -<br>2013 Sep 13
-|[http://www.pasteur.fr/en Institut Pasteur]<br>Paris France
+|[https://www.pasteur.fr/en Institut Pasteur]<br>Paris France
 |{{PersonList|Pietzsch|JeanYvesTinevez}}
 |[[MaMuT]], [[BigDataViewer]]
 |- valign="top"
@@ -103,7 +103,7 @@ ImageJ has benefitted from many hackathons over the years:
 |[[KNIME]]+[[ImageJ]]
 |- valign="top"
 | style="white-space: nowrap" | [[2014-04-04 - Announcing ImageJ Ops|2014 Mar 4 -<br>2014 Mar 13]]
-|[http://www.uni-konstanz.de/en/welcome/ Universität Konstanz]<br>Konstanz, Germany
+|[https://www.uni-konstanz.de/en/ Universität Konstanz]<br>Konstanz, Germany
 |{{PersonList|Rueden|Schindelin|Dietzc|hornm}}
 |[[ImageJ Ops]]
 |- valign="top" |
@@ -120,7 +120,7 @@ ImageJ has benefitted from many hackathons over the years:
 | style="white-space: nowrap" | 2014 Jul 7 -<br>2014 Jul 10
 |[[LOCI]]<br>Madison, WI, USA
 |{{PersonList|marktsuchida|ChrisWeisiger|Schindelin|stuyvenberg|Rueden|hinerm}}
-|[https://micro-manager.org/ Micro-Manager] and [http://openspim.org/ OpenSPIM]
+|[https://micro-manager.org/ Micro-Manager] and [https://openspim.org/ OpenSPIM]
 |- valign="top"
 | style="white-space: nowrap" | [[2014-10-01 - ImageJ Ops Hackathon|2014 Sep 14 -<br>2014 Sep 18]]
 |[[LOCI]]<br>Madison, WI, USA
@@ -138,7 +138,7 @@ ImageJ has benefitted from many hackathons over the years:
 |[[ImageJ Ops]] + [[KNIME]] + [[CellProfiler]] + more
 |- valign="top"
 | style="white-space: nowrap" | 2015 Apr 12 -<br>2015 Apr 17
-|[http://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
+|[https://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
 |{{PersonList|StephanP|Pietzsch|Saalfeld|Tomancak}}
 |[[Multiview-Reconstruction]] and [[BigDataViewer]]
 |- valign="top"
@@ -148,12 +148,12 @@ ImageJ has benefitted from many hackathons over the years:
 |Parallelization of [[Multiview-Reconstruction]]<br>and integration with ImageJ Ops & KNIME
 |- valign="top"
 | style="white-space: nowrap" | [[2015-07-27 - Janelia Hackathon|2015 Jul 27 -<br>2015 Jul 31]]
-|[http://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
+|[https://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
 |{{PersonList|Saalfeld|Rueden|hinerm|Pietzsch|tomka|bhoeckendorf|fernandoamat|Phillip Keller}}
 |[[SCIFIO]] performance and generality
 |- valign="top"
 | style="white-space: nowrap" | [[Conference 2015 Hackathon|2015 Sep 05 -<br>2015 Sep 15]]
-|[http://discovery.wisc.edu/ WID] + [[LOCI]]<br>Madison, WI, USA
+|[https://discovery.wisc.edu/ WID] + [[LOCI]]<br>Madison, WI, USA
 |{{PersonList|Rueden|hinerm|Dietzc|Pietzsch|Saalfeld|bnorthan|Jug|thewtex|jaywarrick|Tiago|biovoxxel|etarena|Awalter2|LeonYang5114|yuminguw|guneetsinghmehta|Bio7|kbellve|Akramhar|Omsai|marktsuchida|ChrisWeisiger}}
 |[[ImageJ2]] Learnathon + [[ImageJ Ops]]
 |- valign="top"
@@ -163,7 +163,7 @@ ImageJ has benefitted from many hackathons over the years:
 |[[KNIME]] Image Processing
 |- valign="top"
 | style="white-space: nowrap" | [[2016-06-23 - ImgLib2 hackathon|2016 Jun 19 -<br>2016 Jun 28]]
-|[http://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
+|[https://janelia.org/ HHMI Janelia]<br>Ashburn, VA, USA
 |{{PersonList|Saalfeld|Pietzsch|Rueden|Dietzc|Kharrington}}
 |Metadata rich images
 |- valign="top"
@@ -173,7 +173,7 @@ ImageJ has benefitted from many hackathons over the years:
 |[[KNIME]] Image Processing + 3D viz
 |- valign="top"
 | style="white-space: nowrap" | [[2016-12-20 - Fiji + KNIP hackathon|2016 Dec 6 -<br>2016 Dec 16]]
-|[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
+|[https://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
 |{{PersonList|Jug|Pietzsch|Tomancak|Rueden|Saalfeld|hanslovsky|kephale|rimadoma|tinevez|dietzc|patrick-winter-knime|skalarproduktraum|royerloic|Haesleinhuepf|hkmoon|tibuch|MarcelWiedenmann|hoerldavid|milkyklim|maarzt|xulman|Chaubold|Jonas Massa}}
 |[[Fiji]] & [[KNIP]]
 |- valign="top"
@@ -198,7 +198,7 @@ ImageJ has benefitted from many hackathons over the years:
 |[[Virtual Cell]] + [[ImageJ]]
 |- valign="top"
 | style="white-space: nowrap" | [[2017-12-04 - Fiji + KNIP hackathon|2017 Dec 4 -<br>2017 Dec 15]]
-|[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
+|[https://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
 |{{PersonList|Jug|Pietzsch|Tomancak|Rueden|hanslovsky|kephale|rimadoma|tinevez|dietzc|skalarproduktraum|royerloic|Haesleinhuepf|hkmoon|tibuch|MarcelWiedenmann|hoerldavid|milkyklim|maarzt|xulman|Chaubold|Pbainar|Awalter2}}
 |[[Fiji]] & [[KNIP]]
 |- valign="top"
@@ -219,7 +219,7 @@ Benny Lin (U Texas Austin)|Jeremy Maitlen-Shephard (Google)}}
 |ImgLib2, Micro-Manager
 |- valign="top"
 |[[2018-12-06 - I2K 2018 Dresden Hackathon|2018 Dec 06 -<br>2018 Dec 14]]
-|[http://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
+|[https://mpi-cbg.de/ MPI-CBG]<br>Dresden, Germany
 |TBD
 |Hacking
 |- valign="top"
