@@ -1,13 +1,25 @@
 <h1>Overview</h1>
-
+MiNA is a simplified workflow for analyzing mitochondrial morphology using fluorescence images or 3D stacks in Fiji. The workflow makes use of ImageJ Ops [[ImageJ_Ops | ImageJ Ops]], [[3D_Viewer | 3D Viewer]], [[Skeletonize3D | Skeletonize (2D/3D)]], [[AnalyzeSkeleton | Analyze Skeleton]]<ref>Ignacio Arganda-Carreras, Rodrigo Fernandez-Gonzalez, Arrate Munoz-Barrutia, Carlos Ortiz-De-Solorzano, [https://doi.org/10.1002/jemt.20829 "3D reconstruction of histological sections: Application to mammary gland tissue"], Microscopy Research and Technique, Volume 73, Issue 11, pages 1019–1029, October 2010.</ref>, and [[Ridge_Detection | Ridge Detection]]<ref>Steger, C., 1998. [https://doi.org/10.1109/34.659930 "An unbiased detector of curvilinear structures."] IEEE Transactions on Pattern Analysis and Machine Intelligence, 20(2), pp.113–125.</ref>. In short, the tool estimates mitochondrial footprint (or volume) from a segmented copy of the image as well as the lengths of mitochondrial structures using a topological skeleton. The values are reported in a table and overlays (or a 3D rendering) are generated to assess the accuracy of the analysis.
 
 <h1>Installation</h1>
+To install MiNA and the additional plugins, scripts, and macro tools our lab uses bundled with it, we suggest adding our update site (<i>"StuartLab"</i>). By this method, you will receive automatic updates everytime the [[Updater | updater]] is run ensuring you get new features and bug fixes as soon as they are available. To add the update site in your installation of Fiji:
 
+<ol>
+<li>Open Fiji.</li>
+<li>Run the updater (<i>Help &rarr; Update...</i>).</li>
+<li>Navigate to the update site manager (<i>Manage update sites</i>).</li>
+<li>Add the "StuartLab" and "Biomedgroup" sites by checking the checkbox beside the site.</li>
+<li>Close the site manager dialog (<i>Close</i>).</li>
+<li>Apply the changes (<i>Apply changes</i>).</li>
+</ol>
 
 <h1>Usage Example</h1>
 
 
-<h1>Reporting Issues and Suggestions</h1>
-
+<h1>Reporting Bugs and Suggestions</h1>
+The source code for MiNA is available on [https://github.com/ScienceToolkit/MiNA Github]. Software bugs can be reported using the [https://github.com/ScienceToolkit/MiNA/issues issue tracker]. If you think of a useful feature, there is a discussion page on [https://gitter.im/MiNA-Suggestions/Lobby Gitter] for the project and if you implement your own feature, fix a bug, or extend the tool and want to contribute it back to the project you can always make a [https://github.com/ScienceToolkit/MiNA/pulls pull request].
 
 <h1>References</h1>
+<references/>
+
+<h1>Additional Attributions</h1>
