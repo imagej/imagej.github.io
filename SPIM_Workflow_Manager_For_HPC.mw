@@ -41,7 +41,7 @@ Pipeline input parameters are entered by a user into a ''config.yaml'' configura
 [[File:Drosophila.PNG|800px]]
 
 = Instalation =
-After you install [https://imagej.net/Fiji/Downloads] and launch Fiji, go to {{bc | Help | Update... | Manage update sites}}, tick ''P2E-IT4Innovations'' and close the window. Then click ''Apply changes'' and restart Fiji.
+After you install and launch [https://imagej.net/Fiji/Downloads Fiji], go to {{bc | Help | Update... | Manage update sites}}, tick ''P2E-IT4Innovations'' and close the window. Then click ''Apply changes'' and restart Fiji.
 
 = Usage =
 Now you should see the plugin under {{bc | Plugins | Multiview Reconstruction | SPIM Workflow Manager for HPC}}. Upon plugin invocation from the application menu, you are prompted for HEAppE credentials. Following a successful login, the main window containing all jobs arranged in a table is displayed. In this context, the term ''job'' is used for a single pipeline run with specified parameters. The plugin actively inquires information on the created jobs from HEAppE and updates the table as appropriate.
