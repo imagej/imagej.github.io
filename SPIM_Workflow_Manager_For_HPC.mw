@@ -13,7 +13,7 @@
 Imaging techniques have emerged as a crucial means of understanding the structure and function of living organisms in primary research, as well as medical diagnostics.
 In order to maximize information gain, achieving as high spatial and temporal resolution as practically possible is desired.
 However, long-term time-lapse recordings at the single-cell level produce vast amounts of multidimensional image data, which cannot be processed on a personal computer in a timely manner, therefore requiring utilization of high-performance computing (HPC) clusters.
-For example, processing a 2.2 TB dataset of drosophila embryonic development, taking a week on a single computer, was brought down to 13 hours by employing an HPC cluster supporting parallel execution of individual tasks [https://imagej.net/Automated_workflow_for_parallel_Multiview_Reconstruction].
+For example, processing a 2.2 TB dataset of drosophila embryonic development, taking a week on a single computer, was brought down to 13 hours by employing an HPC cluster supporting parallel execution of individual tasks [https://imagej.net/Automated_workflow_for_parallel_Multiview_Reconstruction [automated workflow]].
 Unfortunately, life scientists often lack access to such infrastructure.
 
 Addressing this issue is particularly challenging as Fiji is an extraordinarily extensible platform and new plugins emerge incessantly.
