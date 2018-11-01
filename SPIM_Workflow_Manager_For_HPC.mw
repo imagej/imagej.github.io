@@ -9,7 +9,7 @@
 | source               = [https://code.it4i.cz/fiji/haas-java-client on github]
 }}
 
-= Introduction =
+= Background =
 Imaging techniques have emerged as a crucial means of understanding the structure and function of living organisms in primary research, as well as medical diagnostics.
 In order to maximize information gain, achieving as high spatial and temporal resolution as practically possible is desired.
 However, long-term time-lapse recordings at the single-cell level produce vast amounts of multidimensional image data, which cannot be processed on a personal computer in a timely manner, therefore requiring utilization of high-performance computing (HPC) clusters.
