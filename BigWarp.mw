@@ -211,7 +211,7 @@ A virtual ImagePlus is generally faster to generate but slower to browse,
 whereas an in-memory ImagePlus will be slower to generate but faster to browse.
 
 The exported image will have the same dimensions as the target image.
-''Note: Take care when exporting very l140905arge data sets as they can cause out-of-memory exceptions.''
+''Note: Take care when exporting very large data sets as they can cause out-of-memory exceptions.''
 
 = Tutorials = 
 * An example of a 2d warping by [http://kiaru.eu/cv-rapide/ Nicolas Chiaruttini] in response to [https://forum.image.sc/t/superimpose-atlas-image-onto-microscope-picture/20593 this forum post]
