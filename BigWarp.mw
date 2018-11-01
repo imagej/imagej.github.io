@@ -218,12 +218,12 @@ The exported image will have the same dimensions as the target image.
 {{#widget:YouTube|id=zNur6mk9VXg|width=420}}
 
 = Publications using BigWarp =
-# Bogovic et al. "Robust registration of calcium images by learned contrast synthesis" ISBI 2016. 
-# Russell et al. "3D correlative light and electron microscopy of cultured cells using serial blockface scanning electron microscopy" J Cell Sci 130: 278-291 2017.
-# Collinson et al. "Correlating 3D light to 3D electron microscopy for systems biology" Current Opinion in Biomedical Engineering 2017 3:49-55
-# Lerner et al. "Mycobacterium tuberculosis replicates within necrotic human macrophages" J Cell Biol 2017
-# Hildebrand et al. "Whole-brain serial-section electron microscopy in larval zebrafish"  Nature  545:345–349 2017.
-# Zhang et al. "A Complete Electron Microscopy Volume Of The Brain Of Adult Drosophila melanogaster" bioarxiv 140905 2017.
+# Bogovic et al. [https://ieeexplore.ieee.org/document/7493463 "Robust registration of calcium images by learned contrast synthesis"] ISBI 2016. 
+# Russell et al. [https://www.ncbi.nlm.nih.gov/pubmed/27445312 "3D correlative light and electron microscopy of cultured cells using serial blockface scanning electron microscopy"] J Cell Sci 130: 278-291 2017.
+# Collinson et al. [https://www.sciencedirect.com/science/article/pii/S2468451117300685 "Correlating 3D light to 3D electron microscopy for systems biology"] Current Opinion in Biomedical Engineering 2017 3:49-55
+# Lerner et al. [http://jcb.rupress.org/content/216/3/583 "Mycobacterium tuberculosis replicates within necrotic human macrophages"] J Cell Biol 2017
+# Hildebrand et al. [https://www.nature.com/articles/nature22356 "Whole-brain serial-section electron microscopy in larval zebrafish"]  Nature  545:345–349 2017.
+# Zhang et al. [https://www.cell.com/cell/fulltext/S0092-8674(18)30787-6 "A Complete Electron Microscopy Volume Of The Brain Of Adult Drosophila melanogaster"] Cell 174:3 P730-743.e22, 2018.
 
 
 [[Category:Plugins]]
