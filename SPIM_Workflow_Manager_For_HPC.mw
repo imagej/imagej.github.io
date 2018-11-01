@@ -9,6 +9,9 @@
 | source               = [https://code.it4i.cz/fiji/haas-java-client on github]
 }}
 
+= About the plugin =
+SPIM Workflow Manager for HPC is a Fiji plugin developed at IT4Innovations, Ostrava, Czech Republic. The plugin enables biology users to upload data to the remote cluster, monitor computation progress, and examine and download results via the local Fiji installation.
+
 = Background =
 Imaging techniques have emerged as a crucial means of understanding the structure and function of living organisms in primary research, as well as medical diagnostics.
 In order to maximize information gain, achieving as high spatial and temporal resolution as practically possible is desired.
@@ -24,13 +27,6 @@ In addition, the proposed solution is highly scalable, meaning that any addition
 
 = Description =
 
-== HEAppE middleware ==
-Accessing a remote HPC cluster is often burdened by administrative overhead due to more or less complex security policies enforced by HPC centers. This barrier can be substantially lowered by employing a middleware tool based on the HPC-as-a-Service concept. To provide this simple and intuitive access to the supercomputing infrastructure an in-house application framework called High-End Application Execution [http://heappe.eu (HEAppE)] Middleware has been developed. This middleware provides HPC capabilities to the users and third-party applications without the need to manage the running jobs from the command-line interface of the HPC scheduler on the cluster.
-
-To facilitate access to HPC from the Fiji environment, we utilize the in-house HEAppE Middleware framework allowing end users to access an HPC system through web services and remotely execute pre-defined tasks. Furthermore, HEAppE is designed to be universal and applicable to various HPC architectures. HEAppE also provides the mapping between the external users and internal cluster service accounts that are being used for the actual job submission to the cluster. It simplifies the access to the computation resources from the security and administrative point of view. For security purposes, users are permitted to run only a pre-prepared set of so-called command templates. Each command template defines an arbitrary script or an executable file which is to be run on the cluster, a set of input parameters modifiable at runtime, any dependencies or third-party software it might require, and the type of queue that should be used for the processing.
-
-We developed a Fiji plugin underlain by HEAppE, which enables users to steer workflows running on a remote HPC resource. As a representative workflow we use a ''Snakemake'' based SPIM data processing pipeline operating on large image datasets. The ''Snakemake'' workflow engine resolves dependencies between subsequent steps and executes in parallel any tasks appearing to be independent, such as processing of individual time points of a time-lapse acquisition.
-
 == SPIM data processing pipeline ==
 SPIM ("Selective/Single Plane Illumination Microscopy") typically images living biological samples from multiple angles (views) collecting several 3D image stacks to cover the entire biological specimen. The 3D image stacks, representing one time point in a long-term time-lapse acquisition, need to be registered to each other which is typically achieved using fluorescent beads as fiduciary markers.
 After the registration, the individual views within one time point need to be combined into a single output image either by content-based fusion or multi-view deconvolution [https://imagej.net/Multiview-Reconstruction [Multiview-reconstruction]]. The living specimen can move during acquisition, necessitating an intermediate step of time-lapse registration. Whereas parallel processing of individual time points has proven to be beneficial, the time-lapse registration takes only a few seconds and can therefore be performed on a single computing node without the need for parallelization.
@@ -39,6 +35,13 @@ The sheer amount of the SPIM data requires conversion from raw microscopy data t
 
 Pipeline input parameters are entered by a user into a ''config.yaml'' configuration file. In the first step, the .czi raw data are concurrently resaved into the HDF5 container in parallel on the cluster. Similarly, the individual time points are registered in parallel using fluorescent beads as fiduciary markers on the cluster. Subsequently, a non-parallel job executed by ''Snakemake'' consolidate the registration XML files into a single one, followed by time-lapse registration using the beads segmented during the spatial registration step. After this, the pipeline diverge into either parallel content-based fusion or parallel multi-view deconvolution. To achieve this divergence in practice, the ''Snakemake'' pipeline is launched from the Fiji plugin as two separate jobs using two different ''config.yaml'' files set to execute content-based fusion and deconvolution respectively. In the final stage of the pipeline, the fusion/deconvolution output is saved into a new HDF5 container. Figure below shows results of registration, fusion and deconvolution in different time points.
 [[File:Drosophila.PNG|800px]]
+
+== HEAppE middleware ==
+Accessing a remote HPC cluster is often burdened by administrative overhead due to more or less complex security policies enforced by HPC centers. This barrier can be substantially lowered by employing a middleware tool based on the HPC-as-a-Service concept. To provide this simple and intuitive access to the supercomputing infrastructure an in-house application framework called High-End Application Execution [http://heappe.eu (HEAppE)] Middleware has been developed. This middleware provides HPC capabilities to the users and third-party applications without the need to manage the running jobs from the command-line interface of the HPC scheduler on the cluster.
+
+To facilitate access to HPC from the Fiji environment, we utilize the in-house HEAppE Middleware framework allowing end users to access an HPC system through web services and remotely execute pre-defined tasks. Furthermore, HEAppE is designed to be universal and applicable to various HPC architectures. HEAppE also provides the mapping between the external users and internal cluster service accounts that are being used for the actual job submission to the cluster. It simplifies the access to the computation resources from the security and administrative point of view. For security purposes, users are permitted to run only a pre-prepared set of so-called command templates. Each command template defines an arbitrary script or an executable file which is to be run on the cluster, a set of input parameters modifiable at runtime, any dependencies or third-party software it might require, and the type of queue that should be used for the processing.
+
+We developed a Fiji plugin underlain by HEAppE, which enables users to steer workflows running on a remote HPC resource. As a representative workflow we use a ''Snakemake'' based SPIM data processing pipeline operating on large image datasets. The ''Snakemake'' workflow engine resolves dependencies between subsequent steps and executes in parallel any tasks appearing to be independent, such as processing of individual time points of a time-lapse acquisition.
 
 = Instalation =
 After you install and launch [https://imagej.net/Fiji/Downloads Fiji], go to {{bc | Help | Update... | Manage update sites}}, tick ''P2E-IT4Innovations'' and close the window. Then click ''Apply changes'' and restart Fiji.
