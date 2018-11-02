@@ -7,6 +7,7 @@ MTrack is a bi-modular tool. The first module detects microtubule seeds, tracks 
  
  To make yourself familiar with MTrack, please go to the [[#Example|Example section]], where you are able to download an example TIRF movie and you will find detailed instruction for running it.
 
+For using MTrack in movies which have very low signal to noise ratio you should create a denoised image to be used for segmentation and upload it along with the original movie. In this setting the microtubules pixels are identified from the segmentation movie while the actual measurment is always done on the original movie. To make yourself familiar with this setting please go to the [[#Low SNR Example|Low SNR Example section]] where we detail this approach with a demo movie.
 == Installation ==
 
 # Click ''Help ▶ Update....''
@@ -114,6 +115,22 @@ An example movie with several dynamic microtubules is available for download [ht
 # To adjust the parameters to automatically derive microtubule dynamics '''select one of the microtubule seed end points''' in the panel Ransac velocity and Statistics Analyzer. The selceted file  will be displayed in the '''Microtubule Length Plot''' window and some parameters will be shown in an extra window. For the example file '''MTrack_DemoSeedLabel1Plus.txt''' all growth events are successfully detected. The catastrophes are shorter than the default setting, therefore the user needs to click 'Detect catastrophies without fit' to ensure a working data evaluation. Furthermore the user can adjust  parameters like "Minimum number of timepoints" manually or can change the fitting function to achieve a better fit of the data.
 
 All dynamic parameters are saved in a .txt file call 'Allaverages'. For a better presentation the user can copy and paste the data from the .txt file to Excel or an equivalent software.
+
+==Low SNR Example ==
+
+An example movie with a single simulated microtubule at low SNR and the same microtubule without the noise is available for download [http://preibischlab.mdc-berlin.de/download/MTrack/LowSNRMTrack_Demo.tif.zip here]
+To perform the analysis of such microtubules:
+
+# Put the demo movies '''LowSNRMTrack_Demo.tif''' and '''DenoisedMTrack_Demo.tif''' into an empty directory, the results will also be stored here.
+# To run the MicroTubule Tracker:
+# Select '''Plugins''' ▶ '''MTrack''' ▶ '''Microtubule Detection and Tracking''',
+# Select '''Advanced Mode''', '''Concatenated Seed Image followed by time-lapse images''', choose the LowSNR movie , the microscope parameters will be automatically loaded, finally click '''Next>''' to continue.
+#In the second panel load the denoised movie and click on '''Load preprocessed movie and go next'''
+#In the panel labelled  '''Object recognition methods''' select MSER from the drop down menu. The microtubule would be correctly identified, click  ''' next''' to go to the second panel where MSER parameters are dispalyed. Now click '''Find Endpoints''' to continue.
+#Click '''next''' to go to the next panel. Using the slider in the panel '''Deselect and select ends''' identify the non-growing end of the microtubule and deselect it from further calculations by doing a left click near it, the green circle should turn pink implying that the end has been deselected.  
+# Select'''Do MSER based segmentation''' from the '''Select segmentation method'''  as the choice of segmentation over time. Now click '''Next''' to go to the next panel.  
+#To track the microtubules over all 100 time-points click on '''Start tracking''' from the '''Tracker options''' panel  . The expected runtime is around 5 min. 
+# The microtubule trajectory will be saved.
 
 
 ==Citation==
