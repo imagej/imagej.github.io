@@ -128,7 +128,7 @@ To perform the analysis of such microtubules:
 #In the second panel load the denoised movie and click on '''Load preprocessed movie and go next'''
 #In the panel labelled  '''Object recognition methods''' select MSER from the drop down menu. The microtubule would be correctly identified, click  ''' next''' to go to the second panel where MSER parameters are dispalyed. Now click '''Find Endpoints''' to continue.
 #Click '''next''' to go to the next panel. Using the slider in the panel '''Deselect and select ends''' identify the non-growing end of the microtubule and deselect it from further calculations by doing a left click near it, the green circle should turn pink implying that the end has been deselected.  
-# Select'''Do MSER based segmentation''' from the '''Select segmentation method'''  as the choice of segmentation over time. Now click '''Next''' to go to the next panel.  
+# Select '''Do MSER based segmentation''' from the '''Select segmentation method'''  as the choice of segmentation over time. Now click '''Next''' to go to the next panel.  
 #To track the microtubules over all 100 time-points click on '''Start tracking''' from the '''Tracker options''' panel  . The expected runtime is around 5 min. 
 # The microtubule trajectory will be saved.
 
