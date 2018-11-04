@@ -1,8 +1,8 @@
-plugins/Read_and_Write_Excel-1.1.1
+plugins/Read_and_Write_Excel-1.1.2
 
 Authors: Anthony Sinadinos and Brenden Kromhout
 
-Description : By default, this plugin extracts data from the Results Table and adds it to a sheet-tab "A" in an .xlsx Excel file on the user's desktop. The plugin will create a file named "Rename me after writing is done" on the desktop if none-exists already, and will update this file if it has already been created. Data is added to the latest sheet (created as "A" if the file is new) or to a user specified sheet using a passed argument (see below). Within the latest sheet, data will be added adjacent to previous data. Results Table column headers are added automatically. A row count is added by default but the user can choose to deny this with a passed argument.
+Description : By default, this plugin extracts data from the Results Table and adds it to a sheet-tab "A" in an .xlsx Excel file on the user's desktop. The plugin will create a file named "Rename me after writing is done" on the desktop if none-exists already, and will update this file if it has already been created. Data is added to the latest sheet (created as "A" if the file is new) or to a user specified sheet using a passed argument (see below). Within the latest sheet, data will be added adjacent to previous data, unless an argument is passed to stack results data into existing columns of the spreadsheet. Results Table column headers are added automatically. A row count is added by default but the user can choose to deny this with a passed argument.
 
 This plugin can be called from a macro using: run("Read and Write Excel"); and it works very well with batching. A major change for v1.1.0, is that, if called slightly differently (see below), the plugin is now much better at handling large data sets and/or excel files that become large over time.
 
@@ -11,6 +11,8 @@ The title of the most recent open image will now be added as a label for exporte
 OPTIONAL ARGUMENTS will be parsed from the second argument string as follows.
 
 "no_count_column" Prevents the plugin from adding a "Count" column automatically.
+
+"stack_results" Causes the plugin to export results data underneath pre-existing data (instead of adjacent to it). NOTE: The dataset label for the now stacked data will be that determined for the most recent import. 
 
 "file=" The path to the excel file to use (uses the default desktop file otherwise) Example "file=[/Users/antinos/Desktop/My_file.xlsx]" will create and/or append the specified file.
 
