@@ -15,8 +15,10 @@ Release dates:
 
 02 July 2018 v1.1.1
 
+04 Nov 2018 v1.1.2
+
 Description :
-By default, this plugin extracts data from the Results Table and adds it to a sheet-tab "A" in an .xlsx Excel file on the user's desktop. The plugin will create a file named "Rename me after writing is done" on the desktop if none-exists already, and will update this file if it has already been created. Data is added to the latest sheet (created as "A" if the file is new) or to a user specified sheet using a passed argument (see below). Within the latest sheet, data will be added adjacent to previous data. Results Table column headers are added automatically. A row count is added by default but the user can choose to deny this with a passed argument.
+By default, this plugin extracts data from the Results Table and adds it to a sheet-tab "A" in an .xlsx Excel file on the user's desktop. The plugin will create a file named "Rename me after writing is done" on the desktop if none-exists already, and will update this file if it has already been created. Data is added to the latest sheet (created as "A" if the file is new) or to a user specified sheet using a passed argument (see below). Within the latest sheet, data will be added adjacent to previous data, unless an argument is passed to stack data underneath pre-existing column headers and data. Results Table column headers are added automatically. A row count is added by default but the user can choose to deny this with a passed argument.
 
 This plugin can be called from a macro using:
 run("Read and Write Excel"); 
@@ -28,7 +30,9 @@ run("Read and Write Excel", "dataset_label=This_is_my_new_title");
 
 OPTIONAL ARGUMENTS will be parsed from the second argument string as follows. 
 
-"no_count_column" Prevents the plugin from adding a "Count" column automatically. 
+"no_count_column" Prevents the plugin from adding a "Count" column automatically.
+
+"stack_results" Causes the plugin to export results data underneath pre-existing data (instead of adjacent to it). NOTE: The dataset label for the now stacked data will be that determined for the most recent import.
 
 "file=" The path to the excel file to use (uses the default desktop file otherwise) Example "file=[/Users/antinos/Desktop/My_file.xlsx]" will create and/or append the specified file.
 
@@ -68,6 +72,10 @@ Version 1.1.0 changes:
 
 Version 1.1.1 changes:
 1) Fixed an error whereby the plugin would fail to export data if the 'Label' column of the results table contained empty cells. Empty cells are now replace with a "null" string/text upon export.
+
+Version 1.1.2 changes:
+1) Added an argument so that results data can be exported so that it appears underneath pre-existing data in the created/amended .xlsx file. To implement this function, call the plugin with the argument "stack_results".
+
 
 Author:
 Anthony Sinadinos and Brenden Kromhout
