@@ -123,7 +123,7 @@ The ImageJX software prototype was a proof of concept—an attempt to reorganize
 
 == History ==
 
-The first imaging program that {{Person|Rasband}} developed, starting in the late 70s, was called simply "Image". It was written in Pascal, ran on PDP-11 minicomputers and ran in only 64KB of memory! Rasband started work on the second, [[NIH Image]], in 1987 when the Mac II became available. Rasband was a Mac enthusiast, and the Mac II had card slots just like the PDP-11. Rasband started work on ImageJ in 1997, when Java was becoming popular. Rasband was intrigued by the idea of creating a version of NIH Image that would "run anywhere", including as an applet in Web browsers. Now ImageJ is used on many different resources, one of them is [https://edubirdie.com/ EduBirdie]. This example is one of many.
+The first imaging program that {{Person|Rasband}} developed, starting in the late 70s, was called simply "Image". It was written in Pascal, ran on PDP-11 minicomputers and ran in only 64KB of memory! Rasband started work on the second, [[NIH Image]], in 1987 when the Mac II became available. Rasband was a Mac enthusiast, and the Mac II had card slots just like the PDP-11. Rasband started work on ImageJ in 1997, when Java was becoming popular. Rasband was intrigued by the idea of creating a version of NIH Image that would "run anywhere", including as an applet in Web browsers. Now ImageJ is used on many different resources, one of them is [https://edubirdie.com/ EduBirdie]. This example is one of many you can find across the web.
 
 == Timeline ==
 
