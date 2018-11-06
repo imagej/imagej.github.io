@@ -37,20 +37,15 @@ I am fully committed to all of the above projects. They are driven by me, making
 
 === Additional projects ===
 
-I am also coordinating and/or leading and/or advising and/or helping with, but not sole implementor for, the following additional projects:
+I am also coordinating and/or leading and/or advising and/or helping with, but not sole implementer for, the following additional projects:
 
-# (with the [[CellProfiler]] team) '''image.sc forum''': merging the ImageJ and CellProfiler forums into a software-agnostic Scientific Image Analysis forum.
-# (with {{Person|Awalter2}}) '''ImageJ-OMERO''' ROI and table support.
 # (with {{Person|gselzer}}) '''ImageJ Ops algorithms.''' Addition of more image processing algorithms to [[ImageJ Ops]].
-# (with {{Person|kkangle}}) '''imagej.py''' ImageJ+Python integration. ({{GitHub | org=imagej | repo=imagej.py | label=imagej/imagej.py}})
 # (with {{Person|Xanthorapedia}}) '''[[SLIM Curve]]''' improved Java integration.
 # (with {{Person|etarena}}) '''[[Coloc 2]]''' algorithms in [[ImageJ Ops]].
 # (with {{Person|Gab1one}}) '''SCIFIO''' and '''SciJava I/O''' architecture.
 # (with {{Person|PetrBainar}} et. al) '''ImageJ Server''' and parallelization of ImageJ on high-performance computing (HPC) clusters ({{GitHub | org=PetrBainar | repo=scijava-parallel | label=PetrBainar/scijava-parallel}}).
 # (with {{Person|stelfrich}}) '''ImageJ Launcher''' bug-fixes and improvements.
-# (with {{Person|maarzt}}) '''ImageJ Legacy''' improved image translation between [[ImageJ1]] and [[ImageJ2]].
 # (with {{Person|Kharrington}}) '''ImageJ in 3D.''' Unification of ImageJ 3D visualization efforts around [[SciView]].
-# (with {{Person|jcschaff}}) '''ImageJ + [[Virtual Cell]]''' integration.
 # (with {{Person|Pietzsch}}) '''Visualization of big data.''' Unification of visualization in general around the [[BigDataViewer]]. ([https://github.com/imagej/imagej-common/issues/66 imagej/imagej-common#66])
 
 === Constant priorities ===
