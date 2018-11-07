@@ -17,7 +17,7 @@ See the [[wikipedia:BSD licenses|Wikipedia article on BSD licenses]] for more in
 | name = Modified BSD License
 | shortname = BSD-3
 | description = The '''Modified''' or '''New BSD''' (or '''BSD 3-clause''') license is the same as BSD-2, but with an additional clause prohibiting the names of the authors from being used to endorse or promote products relating to the software.
-| url = http://choosealicense.com/licenses/bsd-2-clause/
+| url = http://choosealicense.com/licenses/bsd-3-clause/
 | choosealicense = bsd-3-clause
 | osswatch = modbsd
 | osi = BSD-3-Clause
