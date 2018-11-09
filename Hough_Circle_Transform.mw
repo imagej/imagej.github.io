@@ -2,8 +2,8 @@
 | name                   = Hough Circle Transform
 | software               = plugin
 | update site            = UCB Vision Sciences
-| author                 = {{Person|llamero}}
-| maintainer             = {{Person|llamero}}
+| author                 = {{Person|Llamero}}
+| maintainer             = {{Person|Llamero}}
 | source                 ={{GitHub|org=llamero|repo=Local_Hough_Circle}}
 | released               = February 4<sup>th</sup>, 2017
 | latest version         = September 21<sup>st</sup>, 2018 (v1.0.0)
