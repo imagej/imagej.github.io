@@ -1,8 +1,8 @@
 {{Infobox
 | name                   = Quiver Plot
 | software               = plugin
-| author                  = {{Person|llamero}}
-| maintainer             = {{Person|llamero}}
+| author                  = {{Person|Llamero}}
+| maintainer             = {{Person|Llamero}}
 | source                 = {{GitHub|org=llamero|repo=Quiver_Plot}}
 | released               = January 11<sup>th</sup>, 2017
 | latest version       = March 17<sup>th</sup>, 2017 (v0.2.0)
