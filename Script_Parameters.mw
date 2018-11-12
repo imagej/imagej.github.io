@@ -84,7 +84,7 @@ A list of possible data types and the corresponding widgets is provided:
 |-
 | | <code>File</code>
 | file chooser
-| | <code>open</code> {{!}} <code>save</code> {{!}} <code>directory</code> {{!}} <code>extensions:</code>
+| | <code>open</code> {{!}} <code>save</code> {{!}} <code>file</code> {{!}}  <code>directory</code> {{!}} <code>extensions:</code>
 |}
 
 
