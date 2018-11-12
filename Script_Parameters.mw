@@ -147,6 +147,24 @@ Per default, variable values are persisted between runs of a script. This means 
 </source>
 {{Warning | Currently, "two scripts which declare the same parameter name, even with different types, will stomp each other." See [https://github.com/scijava/scijava-common/issues/193].}}
 
+
+=== Visibility ===
+
+This property set if the parameter should be displayed, editable and/or recorded.
+
+- "NORMAL": parameter is included in the history for purposes of data provenance, and included as a parameter when recording scripts.
+
+- "TRANSIENT": parameter is excluded from the history for the purposes of data provenance, but still included as a parameter when recording scripts.
+
+- "INVISIBLE": parameter is excluded from the history for the purposes of data provenance, and also excluded as a parameter when recording scripts. This option should only be used for parameters with no effect on the final
+output, such as a "verbose" flag.
+
+- "MESSAGE": parameter value is intended as a message only, not editable by the user nor included as an input or output parameter.
+
+<source lang="python">
+#@String  (visibility="MESSAGE", value="This string is displayed in the form and not editable") out
+</source>
+
 === Multiple Choice ===
 
 Any parameter can be turned into a multiple-choice selector by adding a <code>choices = {...}</code> property:
