@@ -137,9 +137,13 @@ Id = Mat().eye(3,3,0).asMat()
 print Id
 print CvMat(Id) # nice to visualise the matrix
 </source>
-NB : The <code>org.bytedeco.javacpp.opencv_core.Mat</code> object is different than the <code>org.opencv.core.Mat</code> !! They dont have exactly the same attributes and functions. In Fiji we always use the <code>org.bytedeco.javacpp.opencv_core.Mat</code>.
 
-Similarly there is some apparent redudancy for the function in the javacpp API. ex : Transform exists in 3 different places :
+{{Warning | The <code>org.bytedeco.javacpp.opencv_core.Mat</code> object is different than the <code>org.opencv.core.Mat</code> !! They don't have exactly the same attributes and functions. In Fiji you should always use the objects from <code>org.bytedeco.javacpp</code>.}}
+
+
+Similarly there is some apparent redudancy for the function in the javacpp API.
+
+ex : Transform exists in 3 different places :
 * <code>org.opencv.core.Core.transform</code>
 This one takes <code>org.opencv.core.Mat</code> as input. It is currently challenging to have such object in Fiji.
 
