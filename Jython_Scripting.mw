@@ -80,10 +80,10 @@ To read more about the used features, the following list provides links to addit
 
 {{GitHubEmbed|org=imagej|repo=imagej-scripting|path=src/main/resources/script_templates/Tutorials/Wiki_Jython_Tutorial_3.py}}
 
-=== Importing Java module and classes ===
+== Importing Java module and classes ==
 Another great feature of Jython is the possibility to use functions from Java jar package that resides in the jar folder of imageJ. 
 
-==== ImageJ and Fiji API ====
+=== ImageJ and Fiji API ===
 
 The following API documentation lists all available module and functions :
 * [http://javadoc.scijava.org/ImageJ1/ ImageJ]
@@ -99,12 +99,12 @@ RM = RoiManager()        # we create an instance of the RoiManager class
 rm = RM.getRoiManager()  # "activate" the RoiManager otherwise it can behave strangely 
 </source>
 
-==== Using openCV in Jython ====
+=== Using openCV in Jython ===
 It is even possible to use most of opencv functionalities within Jython/Fiji. There are several options (see the [https://imagej.net/OpenCV wiki page about opencv]), yet the most straight forward is probably IJ-OpenCV which is available via the update sites.  It will automatically download the necessary packages and dependencies in your Fiji installation. 
 
 A manual installation is also possible by putting the jar packages in the jar folder of imageJ. They are avalaible on the [https://github.com/joheras/IJ-OpenCV IJopenCV github], which even provides a maven option.  
 
-===== Matrices ===== 
+==== Matrices ==== 
 The first thing to know about OpenCV is that most functions work with an OpenCV matrix object. Fortunately, the IJ-OpenCV project provides some converters :
 
 <source lang="python">
@@ -173,7 +173,7 @@ using <code>CvArr</code> as input, but even if you manage to convert your input 
 That's the one to use ! It takes only <code>org.bytedeco.javacpp.opencv_core.Mat</code> as input, which is the most approriate in Fiji/Jython
 
 
-===== Scalar =====
+==== Scalar ====
 In addition to Matrices, opencv allows to use Scalar objects
 A scalar is a 4 item element (v0, v1, v2, v3).
 If v1=v2=v3=0 then the Scalar is real.
@@ -196,7 +196,7 @@ print Complex
 </source>
 
 
-===== Operations =====
+==== Operations ====
 It is possible to perform some operations between matrices, or between Scalar and matrices.
 
 <source lang="python">
