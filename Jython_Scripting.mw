@@ -104,6 +104,7 @@ It is even possible to use most of opencv functionalities within Jython/Fiji. Th
 
 A manual installation is also possible by putting the jar packages in the jar folder of imageJ. They are avalaible on the [https://github.com/joheras/IJ-OpenCV IJopenCV github], which even provides a maven option.  
 
+===== Matrices ===== 
 The first thing to know about OpenCV is that most functions work with an OpenCV matrix object. Fortunately, the IJ-OpenCV project provides some converters :
 
 <source lang="python">
@@ -127,15 +128,33 @@ print NewImP
 Such kind of converter is also available for PointRoi to opencv keypoints...
 
 Now to use opencv function, we use the [http://bytedeco.org/javacpp-presets/opencv/apidocs/ JavaCPP API] that contains almost all functions of opencv.
-An simple example : creating an identity matrix of size 3x3
  
 <source lang="python">
-from org.bytedeco.javacpp.opencv_core	import Mat,CvMat
+from org.bytedeco.javacpp.opencv_core	import Mat, CvMat, vconcat
 
+## Typical matrices ##
+
+# Identity Matrix of size (3x3) and type 8-bit
 Id = Mat().eye(3,3,0).asMat()
-
 print Id
-print CvMat(Id) # nice to visualise the matrix
+print CvMat(Id) # handy to visualise the matrix
+
+# Matrix of ones (3x3) 
+One = Mat().ones(3,3,0).asMat()
+
+# Matrix of zeros (3x3) 
+Zero = Mat().zeros(3,3,0).asMat()
+
+# Custom Matrices
+# 1D-Matrix can be initialize from a list
+# For 2D (or more) we have to concatenate 1D-Matrices
+
+Row1 = Mat([1,2,3,4,5]) # 1D matrix 
+Row2 = Mat([6,7,8,9,10])
+
+TwoColumn = Mat()              # initialise output
+vconcat(Col1, Col2, TwoColumn) # output stored in TwoColumn
+print CvMat(TwoColumn)
 </source>
 
 {{Warning | The <code>org.bytedeco.javacpp.opencv_core.Mat</code> object is different than the <code>org.opencv.core.Mat</code> !! They don't have exactly the same attributes and functions. In Fiji you should always use the objects from <code>org.bytedeco.javacpp</code>.}}
@@ -152,6 +171,51 @@ using <code>CvArr</code> as input, but even if you manage to convert your input 
 
 * <code>org.bytedeco.javacpp.opencv_core.transform</code>
 That's the one to use ! It takes only <code>org.bytedeco.javacpp.opencv_core.Mat</code> as input, which is the most approriate in Fiji/Jython
+
+
+===== Scalar =====
+In addition to Matrices, opencv allows to use Scalar objects
+A scalar is a 4 item element (v0, v1, v2, v3).
+If v1=v2=v3=0 then the Scalar is real.
+
+<source lang="python">
+from org.bytedeco.javacpp.opencv_core	import Scalar
+
+# Real scalar can be initiated with a float parameters
+Number = Scalar(5.0)
+Number = Scalar(float(5))
+print Number
+
+# Using an integer as parameter has a different meaning
+Empty = Scalar(5) # This initiate an empty Scalar object of size 5
+print Empty
+
+# Alternatively one can set the other values of the Scalar
+Complex = Scalar(1,2,3,4)
+print Complex
+</source>
+
+
+===== Operations =====
+It is possible to perform some operations between matrices, or between Scalar and matrices.
+
+<source lang="python">
+from org.bytedeco.javacpp.opencv_core	import Scalar, Mat, subtract
+
+A = Mat([1,2,3,4,5])
+B = Mat([1,2,-3,-4,0])
+
+Number = Scalar(10.0)
+
+## Number - B ( B-Number is also possible)
+Expr = subtract(Number,B)
+print CvMat(Expr.asMat())
+
+## A - B
+Out = Mat() 
+subtract(A,B,Out)
+print CvMat(Out)
+</source>
 
 == Self written Jython modules for ImageJ ==
 
