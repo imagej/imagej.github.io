@@ -16,7 +16,7 @@ Deploying your library to a [[Maven]] repository makes it available for other de
 
 == Requirements ==
 * Host your [[open-source]] project on [[GitHub]].
-* Log in to [https://travis-ci.org/auth Travis CI] with your corresponding GitHub account and enable your repository.
+* Log in to [https://travis-ci.com/auth Travis CI] with your corresponding GitHub account and enable your repository.
 * Contact an ImageJ admin in [[Chat#Gitter|Gitter]] or [http://forum.image.sc/ the Image.sc Forum] and request that they file a PR which adds Travis support to your repository.
 
 == Instructions ==
