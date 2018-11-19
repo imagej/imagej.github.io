@@ -213,6 +213,16 @@ whereas an in-memory ImagePlus will be slower to generate but faster to browse.
 The exported image will have the same dimensions as the target image.
 ''Note: Take care when exporting very large data sets as they can cause out-of-memory exceptions.''
 
+=== Apply transforms ===
+
+Often, it is important to apply transforms estimated with one image to other images in the same space.  
+
+If you have moving and target images open in Fiji [https://github.com/saalfeldlab/bigwarp/blob/master/scripts/Apply_Bigwarp_Xfm.groovy this script] to transform the moving image into the space of the target image.  You will need to provide a file containing the saved landmark point pairs.
+
+To manually specify the field-of-view (FOV) of the target space, use [https://github.com/saalfeldlab/bigwarp/blob/master/scripts/Apply_Bigwarp_Xfm_FOV.groovy this script]
+
+To make the scripts above appear in your Fiji Plugins menu, simply copy them into the <code>/plugins/Scripts folder</code> in your Fiji installation.
+
 = Tutorials = 
 * An example of a 2d warping by [http://kiaru.eu/cv-rapide/ Nicolas Chiaruttini] in response to [https://forum.image.sc/t/superimpose-atlas-image-onto-microscope-picture/20593 this forum post]
 {{#widget:YouTube|id=zNur6mk9VXg|width=420}}
