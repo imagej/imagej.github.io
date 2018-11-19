@@ -217,8 +217,10 @@ The exported image will have the same dimensions as the target image.
 * An example of a 2d warping by [http://kiaru.eu/cv-rapide/ Nicolas Chiaruttini] in response to [https://forum.image.sc/t/superimpose-atlas-image-onto-microscope-picture/20593 this forum post]
 {{#widget:YouTube|id=zNur6mk9VXg|width=420}}
 
+= Publication = 
+* {{Publication | BigWarp}}
+
 = Publications using BigWarp =
-# Bogovic et al. [https://ieeexplore.ieee.org/document/7493463 "Robust registration of calcium images by learned contrast synthesis"] ISBI 2016. 
 # Russell et al. [https://www.ncbi.nlm.nih.gov/pubmed/27445312 "3D correlative light and electron microscopy of cultured cells using serial blockface scanning electron microscopy"] J Cell Sci 130: 278-291 2017.
 # Collinson et al. [https://www.sciencedirect.com/science/article/pii/S2468451117300685 "Correlating 3D light to 3D electron microscopy for systems biology"] Current Opinion in Biomedical Engineering 2017 3:49-55
 # Lerner et al. [http://jcb.rupress.org/content/216/3/583 "Mycobacterium tuberculosis replicates within necrotic human macrophages"] J Cell Biol 2017
@@ -230,3 +232,4 @@ The exported image will have the same dimensions as the target image.
 [[Category:Visualization]]
 [[Category:Transform]]
 [[Category:Registration]]
+[[Category:Citable]]
