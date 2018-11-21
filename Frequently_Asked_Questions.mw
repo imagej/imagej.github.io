@@ -37,7 +37,7 @@ See the [[MacOS]] page.
 
 === On Windows ===
 
-Install Java 8, and delete or rename the <code>ImageJ.app\java</code> and/or <code>ImageJ.app\jre</code> folders, if they exist. If this does not result in Fiji using the expected Java version, check the Environment Variables ({{bc | Control Panel | System and Security | System | Advanced Settings | Advanced | Environment Variables}}) for the variable "JAVA_HOME".  Update or create this variable as needed; its value should be the desired JDK or JRE that you would like to use for Fiji (for instance: "C:\Program Files\Java\jdk1.8.0_51"). See also [http://stackoverflow.com/questions/1672281/environment-variables-for-java-installation Java environment variable setup].
+Install Java 8, and delete or rename the <code>ImageJ.app\java</code> and/or <code>ImageJ.app\jre</code> folders, if they exist. If this does not result in ImageJ using the expected Java version, check the Environment Variables ({{bc | Control Panel | System and Security | System | Advanced Settings | Advanced | Environment Variables}}) for the variable "JAVA_HOME".  Update or create this variable as needed; its value should be the desired JDK or JRE that you would like to use for ImageJ (for instance: "C:\Program Files\Java\jdk1.8.0_172"). See also [http://stackoverflow.com/questions/1672281/environment-variables-for-java-installation Java environment variable setup].
 
 === On OS X ===
 
@@ -46,11 +46,11 @@ Use the <code>--java-home</code> command line option:
  /Applications/ImageJ.app/Contents/MacOS/ImageJ-macosx --java-home \
    '/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home'
 
-Note: the <code>--java-home</code> flag does not support Apple Java installations. Specifying Apple Javas with this flag will give an error message about being unable to find <code>lib/server/libjvm.dylib</code>. However, Fiji will fall back to Apple Java if no other Java installations are available.
+Note: the <code>--java-home</code> flag does not support Apple Java installations. Specifying Apple Javas with this flag will give an error message about being unable to find <code>lib/server/libjvm.dylib</code>. However, ImageJ will fall back to Apple Java if no other Java installations are available.
 
 In particular, this means that to run Java 6 on the latest macOS versions, you must do '''''ONE''''' of the following:
 * '''''EITHER:''''' Remove all installations of Java 7 and Java 8 ([https://www.java.com/en/download/help/mac_uninstall_java.xml remove the JRE] and [http://docs.oracle.com/javase/7/docs/webnotes/install/mac/mac-jdk.html#uninstall remove all JDKs]).
-* '''''OR:''''' Launch ImageJ explicitly using <code>java</code>. Here is a sample invocation (copy and paste into Terminal):
+* '''''OR:''''' Launch ImageJ explicitly using <code>java</code>. Here is a sample invocation for Fiji (copy and paste into Terminal):
 <pre>
 export J6="$(/usr/libexec/java_home -v 1.6)"
 export IJ_HOME=/Applications/Fiji.app
@@ -72,7 +72,7 @@ One downside of doing this is that ImageJ will launch in a separate process, whi
 Start Automator and select to create an ''Application''. Double-click ''Run Shell Script'' in the Library/Utilities folder and replace the text content — cat — with the following:
 
  open -a "Fiji.app" --args --java-home \
-  '/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/'
+  '/Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/'
 
 Save anywhere you like.
 
@@ -108,7 +108,7 @@ Otherwise, you can drag 'n drop the .jar files onto the ImageJ window, or use {{
 
 == How do I downgrade ImageJ? ==
 
-Downgrading is generally not recommended as a longterm solution, but can be handy to avoid new bugs that crop up.
+Downgrading is generally not recommended as a long-term solution, but can be handy to avoid new bugs that crop up.
 
 ''If you need to downgrade to avoid a critical bug, please [[Bugs|report that bug]] to the developers so that it can be fixed in a future version!''
 
@@ -138,18 +138,18 @@ See [[Troubleshooting#If_ImageJ_does_not_start_up|If ImageJ does not start up]] 
 
 == The Updater always says ''Connection refused''. Maybe it does not use the proxy? ==
 
-Indeed, an earlier version of the Updater does not use your system-wide network proxy settings. This is fixed in the meantime, but you need to update the updater using [http://fiji.sc/downloads/Heidelberg/Update_Fiji_Using_Proxy.bsh this script] (just download it and open it in ImageJ).
+Indeed, an earlier version of the Updater does not use your system-wide network proxy settings. This is fixed in the meantime, but you need to update the updater using [https://downloads.imagej.net/fiji/Heidelberg/Update_Fiji_Using_Proxy.bsh this script] (just download it and open it in ImageJ).
 
 Alternatively, you can update the updater manually like this:
 
 * open the [[Script Editor]] with {{bc | File | New | Script}}
-* set the language to ''Beanshell'' in the ''Language'' menu of the editor
+* set the language to ''BeanShell'' in the ''Language'' menu of the editor
 * paste the following code (and adjust it to match your settings):
 <source lang="java">
 import ij.IJ;
 
 System.setProperty("java.net.useSystemProxies", "true");
-IJ.run("Update Fiji");
+IJ.run("Update...");
 </source>
 * run the script via the ''Run'' menu
 
