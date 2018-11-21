@@ -90,7 +90,7 @@ The term ''headless'' refers to running ImageJ without a graphical desktop, e.g.
 
 == How can I verify that my ImageJ is really 100% up to date? ==
 
-ImageJ will report itself as "up to date" as long as all files installed in your ImageJ match the latest versions from the remote update sites. However, there are cases where your ImageJ may report itself as "up to date" but still be missing critical files, or have mismatching versions (e.g., the dreaded "NoSuchMethodError").
+ImageJ will report itself as "up to date" as long as all files installed in your ImageJ match the latest versions from the remote update sites. However, there are cases where your ImageJ may report itself as "up to date" but still be missing critical files, or have mismatching versions (e.g., the dreaded <code>[[Troubleshooting#NoSuchMethodError_or_NoClassDefFoundError|NoSuchMethodError]]</code>).
 
 To be certain, run {{bc | Help | Update...}}, and click the "Advanced mode" button. Then verify the following View Options:
 
