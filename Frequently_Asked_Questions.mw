@@ -134,9 +134,7 @@ See [[Troubleshooting#If_ImageJ_does_not_start_up|If ImageJ does not start up]] 
 
 == The Updater always says ''Connection refused''. Maybe it does not use the proxy? ==
 
-Indeed, an earlier version of the Updater does not use your system-wide network proxy settings. This is fixed in the meantime, but you need to update the updater using [https://downloads.imagej.net/fiji/Heidelberg/Update_Fiji_Using_Proxy.bsh this script] (just download it and open it in ImageJ).
-
-Alternatively, you can update the updater manually like this:
+Indeed, an earlier version of the Updater does not use your system-wide network proxy settings. You can [[Downloads|download a new ImageJ]] to receive the fix. Or you can update the Updater manually like this:
 
 * open the [[Script Editor]] with {{bc | File | New | Script}}
 * set the language to ''BeanShell'' in the ''Language'' menu of the editor
