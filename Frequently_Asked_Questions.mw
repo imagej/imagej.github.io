@@ -126,11 +126,7 @@ The safest way to ensure these conventions is to use the {{bc | File | Export as
 
 == I tried to update ImageJ via {{bc | Help | Update}}, but it throws an exception instead? ==
 
-The easiest way to get back a functional updater is to import [http://update.imagej.net/bootstrap.js this URL] via {{bc | File | Import | URL...}}.
-
-If that does not work, please delete the files ''ij-ui-swing-updater-2.0.0-SNAPSHOT.jar'', ''ij-updater-core-2.0.0-SNAPSHOT.jar'' and ''ij-core-2.0.0-SNAPSHOT.jar'' from the ''ImageJ.app/jars/'' directory (MacOSX users, {{key|Ctrl}}+{{key|click}} on the ImageJ icon and select ''Open Package Contents'' and open the ''jars/'' directory you see there). After that, the Updater should magically repair itself.
-
-If that still fails, please download a fresh copy from [[Downloads|here]].
+Please download a fresh copy from [[Downloads|here]].
 
 == I updated ImageJ via {{bc | Help | Update}}, and now it does not start anymore! ==
 
