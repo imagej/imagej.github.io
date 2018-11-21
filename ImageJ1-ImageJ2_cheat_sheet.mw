@@ -75,6 +75,7 @@ imagePlus.setRoi(roi);</source>
 |<source lang="java">IJ.run(imagePlus,"Normalisation","");</source>
 |<source lang="java">
 ij.command().run(ImageNormalizerIJ2Plugin.class, true, "input", img, "ij", ij);
+</source>
 |-
 |Define plugins
 |<source lang="java">
@@ -82,7 +83,7 @@ public class ImageNormalizerPlugin implements PluginFilter {
   ...
 }
 </source>
-resources/plugins.config:
+In <code>resources/plugins.config</code>:
 <source>
 Plugins>Filtering, "Normalisation", NormalizerPlugin
 </source>
