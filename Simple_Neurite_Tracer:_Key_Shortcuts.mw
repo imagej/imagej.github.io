@@ -14,7 +14,7 @@ These shortcuts are always available:
 
 * {{key|C}} - Cancels a path. Note that you can finish a path by pressing {{key|N}} twice.
 
-* {{key|Esc}} - Aborts current operation.
+* {{key|Esc}} - Aborts current operation / Exits current mode
 
 ==== Tracing ====
 These shortcuts are available when running SNT in ''Tracing Mode'':
