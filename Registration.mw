@@ -25,6 +25,12 @@ Here we summarize some of the Registration plugins in ImageJ.
 * The extracted sets of corresponding landmarks and the calculated transformations are used in [https://imagej.net/TrakEM2 TrakEM2], [https://imagej.net/Register_Virtual_Stack_Slices Register Virtual Stack Slices] and [https://imagej.net/BUnwarpJ BUnwarpJ] for image registration.
 |[[File:Tem-42-33-f.png|500px]] MOPS feature correspondences (example 1)
 |-
+|[https://imagej.net/Linear_Stack_Alignment_with_SIFT Linear Stack Alignment with SIFT]
+|A tool for aligning image stacks
+|
+* A lightweight SIFT-implementation for Java after the paper of David Lowe<ref>{{cite journal |author=Lowe D | title=Distinctive Image Features from Scale-Invariant Keypoints | journal=International Journal of Computer Vision | year=2004 | volume=60 | number=2 | pages=91-110}}</ref>.
+|
+|-
 |[https://imagej.net/BUnwarpJ BUnwarpJ]
 |A tool for registration, essentially an algorithm for elastic and consistent image registration
 |
