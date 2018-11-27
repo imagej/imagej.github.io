@@ -1,5 +1,39 @@
 {{WIP}}
 {{Learn | techniques}}
-{{BigNotice | See [[:Category:Registration]] for pages about image registration.}}
+
+== What is Registration? ==
 
 [[wikipedia:Image registration|Image registration]] is the process of transforming different sets of data into one coordinate system. Data may be multiple photographs, data from different sensors, times, depths, or viewpoints. It is used in computer vision, medical imaging, biological imaging and brain mapping, military automatic target recognition, and compiling and analyzing images and data from satellites. Registration is necessary in order to be able to compare or integrate the data obtained from these different measurements.
+
+== Recommended ImageJ Plugins for Registration ==
+
+Here we summarize some of the Registration plugins in ImageJ. 
+
+{| class="wikitable"
+|-
+|'''Plugin Name'''
+|'''Short Description'''
+|'''Highlights'''
+|'''Plugin Snapshot'''
+|-
+|[http://imagej.net/Feature_Extraction Feature Extraction]
+|A tool for identifying a set of corresponding points of interest in two images and export them as PointRoi.
+|
+* Interest points are detected using the Difference of Gaussian detector
+* Uses the [https://en.wikipedia.org/wiki/Scale-invariant_feature_transform Scale Invariant Feature Transform (SIFT)] and [http://matthewalunbrown.com/papers/cvpr05.pdf Multi-Scale Oriented Patches (MOPS)] for local feature description
+* Established matches are filtered using the [https://en.wikipedia.org/wiki/Random_sample_consensus Random Sample Consensus (RANSAC)]
+* The extracted sets of corresponding landmarks and the calculated transformations are used in [https://imagej.net/TrakEM2 TrakEM2], [https://imagej.net/Register_Virtual_Stack_Slices Register Virtual Stack Slices] and [https://imagej.net/BUnwarpJ BUnwarpJ] for image registration.
+|[[File:Tem-42-33-f.png|500px]] MOPS feature correspondences (example 1)
+|-
+|[https://imagej.net/BUnwarpJ BUnwarpJ]
+|A tool for registration, essentially an algorithm for elastic and consistent image registration
+|
+* Performs 2D image registration based on elastic deformations represented by B-splines
+* Invertibility of the deformations is enforced through a consistency restriction
+* Get started with the detailed [https://imagej.net/BUnwarpJ#User_Manual user manual]
+|[[File:BUnwarpJ_scheme.png|500px]]
+|}
+
+== Other pages and tools for Registration in ImageJ ==
+
+See [https://imagej.net/Category:Registration Category:Registration] for other ImageJ pages and tools about image registration.
