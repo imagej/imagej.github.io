@@ -16,28 +16,28 @@ __TOC__
 
 === <big>Overview</big> ===
 ----
-[[File:02b_Hotaling_Visual_Abstract.png|500px|thumb|right|alt=Alt|Overview of DiameterJ analysis flow - (''Top'') SEM image --> segmented image --> stylized Euclidean distance transform. (''Bottom'') A few of the graphs capable of being produced from data given by DiameterJ]] DiameterJ<ref name="Hotaling" /> is a two step process of image analysis:
+[[File:02b_Hotaling_Visual_Abstract.png|500px|thumb|right|alt=Alt|Overview of DiameterJ analysis flow - (''Top'') SEM image --> segmented image --> stylized Euclidean distance transform. (''Bottom'') A few of the graphs capable of being produced from data given by DiameterJ]] 
+DiameterJ<ref name="Hotaling" />は2つのステップで画像解析します:
 
-# Image Segmentation into a binary image (black and white pixels only)
-#*Sixteen default segmentation algorithms have been included with DiameterJ in the "Segment SRM" and "Segment Mixed" plugins.  However, these algorithms may not work for all SEM images.  
-#*If the user is not happy with the results of the segmentation algorithms (i.e. the black and white images do not produce an accurate representation of the original image) then DiameterJ will still work with any binary image that has been segmented through some other means.
-# Analysis of Segmented image
-#*All measures given by DiameterJ are in pixels by default
-#*DiameterJ has been validated with over 130 digital images created ''in silico'' and with scanning electron microscope images of reference wires with known diameters.  
-#*:-  <b>Fibers that are smaller than 10px or greater than 10% of the smallest dimension of the image produce 10% or greater error</b>
-#*:-  For now DiameterJ only analyzes .tif, jpeg, png, .bmp, and .gif files
-#*:-  Fibers must be less than 512px in diameter to be analyzed
+# 画像をバイナリイメージ（黒白ピクセルのみ）に分割します。
+#*DiameterJの16の初期設定分割アルゴリズムが「Segment SRM」「Segment Mixed」プラグインで組み込まれます。ただしこれらのアルゴリズムはすべてのSEMイメージで使われるわけではありません。
+#*もし、ユーザーが分割アルゴリズムに満足いかなかった場合でも（言い換えれば白黒イメージがオリジナル画像の正確な表現になっていない場合でも）、他の方法で分割された画像を解析できる場合もあります。
+# 分割画像の解析
+#*DiameterJの測定はすべて、初期設定ではピクセル数で表現されます。
+#*DiameterJの正当性は、130以上の合成デジタル画像、および直径が分かっている繊維が写っている電子顕微鏡画像で確認されました。
+#*:-  <b>10ピクセル以下の繊維がある場合、および最小繊維径の繊維の数が10%を超える場合、10%以上の誤差が生じます。</b>
+#*:-  現在のDiameterJは、.tif, jpeg, png, .bmp, .gifの画像のみを解析できます。
+#*:-  512ピクセルを超える繊維は解析できません。
+あなたが仕事でDiameterJを使う場合には、参考資料の欄に[http://www. ここ]を示すか、または次の記述をしてください。
 
-If you would like to cite DiameterJ in your work, citation information can be found [http://www. here] or use the below: 
-
-==== Citation/Reference Information ====
+==== 出典/参照情報 ====
 : Hotaling NA, Bharti K, Kriel H, Simon Jr. CG. DiameterJ: A validated open source nanofiber diameter measurement tool. Biomaterials 2015;61:327–38. doi:10.1016/j.biomaterials.2015.05.015.
 
 http://www.sciencedirect.com/science/article/pii/S0142961215004652
 
-=== Download Link ===
-: For ImageJ 1.48 or newer:  [http://imagej.net/_images/c/cc/DiameterJ_1-018.zip DiameterJ v. 1.018 for ImageJ]
-: For Fiji latest release: [http://imagej.net/_images/6/65/DiameterJ_Fiji_-_1-018.zip DiameterJ v. 1.018 for Fiji]
+=== ダウンロードリンク ===
+: ImageJ 1.48以降:  [http://imagej.net/_images/c/cc/DiameterJ_1-018.zip DiameterJ v. 1.018 for ImageJ]
+: Fiji最新版: [http://imagej.net/_images/6/65/DiameterJ_Fiji_-_1-018.zip DiameterJ v. 1.018 for Fiji]
 
 === <big>How DiameterJ Works</big> ===
 ----
