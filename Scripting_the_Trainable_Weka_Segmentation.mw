@@ -174,31 +174,34 @@ rf.setSeed( (new java.util.Random()).nextInt() );
 segmentator.setClassifier( rf );
 </source>
 
-= Example: apply classifier to all images in folder =
-Very frequently we might end up having to process a large number of images using a classifier that we interactively trained with the GUI of the [[Trainable Weka Segmentation]] plugin. The following [[Beanshell]] script shows how to load a classifier from file, apply it to all images contained in a folder and save the results in another folder defined by the user:
+= Example: apply classifier to all images in folder '''by tiles''' =
+In some cases, we may have to apply a saved classifier to very large images, which together with a large number of image features may fill the RAM of our machine. To prevent running into out-of-memory exceptions, the following [[Beanshell]] script shows how to load a classifier from file, apply it to all images contained in a folder by subdividing them into smaller pieces, and save the results in another folder defined by the user:
 <source lang="java">
 // @File(label="Input directory", description="Select the directory with input images", style="directory") inputDir
 // @File(label="Output directory", description="Select the output directory", style="directory") outputDir
 // @File(label="Weka model", description="Select the Weka model to apply") modelPath
 // @String(label="Result mode",choices={"Labels","Probabilities"}) resultMode
-
+// @Integer(label="Number of tiles in X:", description="Number of image subdivisions in the X direction", value=3) xTiles
+// @Integer(label="Number of tiles in Y:", description="Number of image subdivisions in the Y direction", value=3) yTiles
+// @Integer(label="Number of tiles in Z (set to 0 for 2D processing):", description="Number of image subdivisions in the Z direction (ignored when using 2D images)", value=3) zTiles
+ 
 import trainableSegmentation.WekaSegmentation;
 import trainableSegmentation.utils.Utils;
 import ij.io.FileSaver;
 import ij.IJ;
 import ij.ImagePlus;
- 
+  
 // starting time
 startTime = System.currentTimeMillis();
- 
+  
 // caculate probabilities?
 getProbs = resultMode.equals( "Probabilities" );
-
+ 
 // create segmentator
-segmentator = new WekaSegmentation();
+segmentator = new WekaSegmentation( zTiles > 0 );
 // load classifier
 segmentator.loadClassifier( modelPath.getCanonicalPath() );
- 
+  
 // get list of input images
 listOfFiles = inputDir.listFiles();
 for ( i = 0; i < listOfFiles.length; i++ )
@@ -209,18 +212,27 @@ for ( i = 0; i < listOfFiles.length; i++ )
         // try to read file as image
         image = IJ.openImage( listOfFiles[i].getCanonicalPath() );
         if( image != null )
-        {                   
+        {
+        	tilesPerDim = new int[ 2 ];
+        	if( image.getNSlices() > 1 )
+        	{
+        		tilesPerDim = new int[ 3 ];
+        		tilesPerDim[ 2 ] = zTiles;
+        	}
+        	tilesPerDim[ 0 ] = xTiles;
+        	tilesPerDim[ 1 ] = yTiles;
+        	
             // apply classifier and get results (0 indicates number of threads is auto-detected)
-            result = segmentator.applyClassifier( image, 0, getProbs );
+            result = segmentator.applyClassifier( image, tilesPerDim, 0, getProbs );
 
-            if( !getProbs )
+			if( !getProbs )
             	// assign same LUT as in GUI
             	result.setLut( Utils.getGoldenAngleLUT() );
-            
+             
             // save result as TIFF in output folder
             outputFileName = listOfFiles[ i ].getName().replaceFirst("[.][^.]+$", "") + ".tif";
             new FileSaver( result ).saveAsTiff( outputDir.getPath() + File.separator + outputFileName );
- 
+  
             // force garbage collection (important for large images)
             result = null; 
             image = null;
@@ -231,6 +243,7 @@ for ( i = 0; i < listOfFiles.length; i++ )
 // print elapsed time
 estimatedTime = System.currentTimeMillis() - startTime;
 IJ.log( "** Finished processing folder in " + estimatedTime + " ms **" );
+System.gc();
 </source>
 
 = Example: define your own features =
