@@ -14,7 +14,7 @@ Fiji any version [http://imagej.net/_images/6/65/DiameterJ_Fiji_-_1-018.zip Diam
 '''DiameterJ'''<ref name="Hotaling">Hotaling NA, Bharti K, Kriel H, Simon Jr. CG. DiameterJ: A validated open source nanofiber diameter measurement tool. Biomaterials 2015;61:327–38. doi:10.1016/j.biomaterials.2015.05.015 http://www.sciencedirect.com/science/article/pii/S0142961215004652</ref>はフリーでオープンソースのImageJ、ImageJ 2、Fiji用プラグインです。National Institute of Standards and Technologyで開発されました。DiameterJは検証済みのナノファイバーの直径解析ツールです。DiameterJは画像を分析し、ナノファイバーまたはマイクロファイバーの繊維軸方向に沿った直径を見つけることができ、得られたデータのヒストグラムを作成します。一般的な統計情報、たとえば平均繊維径、繊維径の最頻値(mode)なども求められます。DiameterJには[http://bigwww.epfl.ch/demo/orientation/ OrientationJ]が付属しており<ref name="OrientationJ"/>、ImageJ/Fijiの"Analyze Particles"のような感じで繊維の方向を分析することができ、これにより孔径や孔に関する統計情報を得ることもできます。
 __TOC__
 
-=== <big>Overview</big> ===
+=== <big>概要</big> ===
 ----
 [[File:02b_Hotaling_Visual_Abstract.png|500px|thumb|right|alt=Alt|Overview of DiameterJ analysis flow - (''Top'') SEM image --> segmented image --> stylized Euclidean distance transform. (''Bottom'') A few of the graphs capable of being produced from data given by DiameterJ]] 
 DiameterJ<ref name="Hotaling" />は2つのステップで画像解析します:
@@ -39,14 +39,15 @@ http://www.sciencedirect.com/science/article/pii/S0142961215004652
 : ImageJ 1.48以降:  [http://imagej.net/_images/c/cc/DiameterJ_1-018.zip DiameterJ v. 1.018 for ImageJ]
 : Fiji最新版: [http://imagej.net/_images/6/65/DiameterJ_Fiji_-_1-018.zip DiameterJ v. 1.018 for Fiji]
 
-=== <big>How DiameterJ Works</big> ===
+=== <big>DiameterJの仕組み</big> ===
 ----
-[[File:Figure_1.png|right|thumb|400px|alt=Alt|Diagram of DiameterJ code]] The overall goal of the DiameterJ<ref name="Hotaling" /> algorithm was to be able to analyze an 8-bit SEM image of any resolution using a desktop computer in less than 60 seconds.  For a block diagram and overview of how the DiameterJ algorithm analyzes fiber diameter and other scaffold properties see below.
+[[File:Figure_1.png|right|thumb|400px|alt=Alt|Diagram of DiameterJ code]] 
+DiameterJの目標<ref name="Hotaling" />は、8ビットのSEM画像をどんな解像度であろうとも60秒以内にデスクトップコンピューターで解析することです。この下に、DiameterJのアルゴリズムがどのように繊維径を解析し、その他の骨組みがどのようになっているのかを示す図を挙げます。
+
 ==== Segmentation ====
+SEM画像は、まずImageJ/Fijiが持つ様々な閾値化技術を駆使して、白黒分割を行います。Segment SRMとSegment Mixed pluginsは、他の分割アルゴリズムに自動的に組み込まれます。具体的には、我々は、SEM画像に写るナノファイバーの解析に適した[[Statistical Region Merging]]アルゴリズム<ref name=nock/>を発見しました。これは我々が、Johannes Schindelinが開発した偉大な業績である[[Statistical Region Merging]]アルゴリズムが繊維直径を横切る混合繊維の解析を可能にし、深さ方向に存在する繊維の状態を再現することができることに気づいたためです。これに加えて、我々はOtsu<ref>Otsu N. A threshold selection method from gray-level histograms. Automatica 1975;11:23–7.</ref> , Huang<ref>Huang L-K, Wang M-JJ. Image thresholding by minimizing the measures of fuzziness. Pattern Recognit 1995;28:41–51. doi:10.1016/0031-3203(94)E0043-K.</ref>, Kittler (min error)<ref>Kittler J, Illingworth J. Minimum error thresholding. Pattern Recognit 1986;19:41–7. doi:10.1016/0031-3203(86)90030-0.</ref>, Doyle (percentile) <ref>Doyle, W (1962), "Operation useful for similarity-invariant pattern recognition", Journal of the Association for Computing Machinery 9: 259-267, doi:10.1145/321119.321123</ref>,Zack (triangle)<ref>Zack GW, Rogers WE, Latt SA (1977), "Automatic measurement of sister chromatid exchange frequency", J. Histochem. Cytochem. 25 (7): 741–53, PMID 70454</ref>らが開発した一般的な画像分割アルゴリズムも使用しました。
 
-SEM micrographs were first segmented using a variety of thresholding techniques available in ImageJ/Fiji. Both the Segment SRM and Segment Mixed plugins are automated inclusions of others segmentation algorithm work.  Specifically, we have found that for SEM images of nanofibers the [[Statistical Region Merging]] algorithm<ref>R. Nock, F. Nielsen (2004), "Statistical Region Merging", IEEE Trans. Pattern Anal. Mach. Intell. 26 (11): 1452-1458</ref> developed by Johannes Schindelin does a great job of blending fibers across their diameter and by depth to create great representations of the fibers when they are segmented.  Additionally, we use more conventional segmentation algorithms developed by Otsu<ref>Otsu N. A threshold selection method from gray-level histograms. Automatica 1975;11:23–7.</ref> , Huang<ref>Huang L-K, Wang M-JJ. Image thresholding by minimizing the measures of fuzziness. Pattern Recognit 1995;28:41–51. doi:10.1016/0031-3203(94)E0043-K.</ref>, Kittler (min error)<ref>Kittler J, Illingworth J. Minimum error thresholding. Pattern Recognit 1986;19:41–7. doi:10.1016/0031-3203(86)90030-0.</ref>, Doyle (percentile) <ref>Doyle, W (1962), "Operation useful for similarity-invariant pattern recognition", Journal of the Association for Computing Machinery 9: 259-267, doi:10.1145/321119.321123</ref>, or Zack (triangle)<ref>Zack GW, Rogers WE, Latt SA (1977), "Automatic measurement of sister chromatid exchange frequency", J. Histochem. Cytochem. 25 (7): 741–53, PMID 70454</ref>
-
-After segmentation all images had remaining noise and morphological features that were smoothed according to the protocols outlined by D'Amore<ref>D’Amore A, Stella JA, Wagner WR, Sacks MS. Characterization of the complete fiber network topology of planar fibrous tissues and scaffolds. Biomaterials 2010;31:5345–54. doi:10.1016/j.biomaterials.2010.03.052.</ref> and by Gonzalez<ref>Gonzalez RC, Eddins SL. Digital Image Processing Using [[MATLAB]], 2nd ed. 2nd edition. S.I.: Gatesmark Publishing; 2001.</ref>.  Briefly, successive rounds of noise removal (via ImageJ’s despeckle command) were performed until no change in the image was found. Erosion (through ImageJs erode command, and dilation (through ImageJs dilate command), and a final erosion (through ImageJs erode command), operations served to refine the image, highlighting fiber edges and eliminating isolated pixel areas.  The described morphological procedures were performed to improve the precision of the centerline determinations as per the method developed by Lam et. al.<ref>Lam L, Lee S-W, Suen CY. Thinning Methodologies-A Comprehensive Survey. IEEE Trans Pattern Anal Mach Intell 1992;14:869–85. doi:10.1109/34.161346.</ref>.
+画像分割した後は、残されたノイズや形状上の特徴を、D'Amore<ref name=damore/>とGonzalez<ref gonzalez/>が示した手順を基本に平滑化しました。簡単に言えば、ImageJのノイズ除去コマンドを、画像の変化が無くなるまで数回繰り返しています。そして、ImageJsの浸食コマンド、拡張コマンド、そして最終的には浸食コマンドを使い、繊維の境界を際立たせ、孤立したピクセルエリアを消去します。センターラインの決定の精度を良くするため、我々はLamらが開発した手法<ref name=lam/>を利用した。
 
 [[File:Segmentation.png|600px|alt=Alt|Original image--> Segmented image with no processing--> Segmented image after smoothing and noise removal]]
 
@@ -277,6 +278,10 @@ Help is welcome in any/all of these improvements!
 == References ==
 {{reflist|refs=
 <ref name="OrientationJ">R. Rezakhaniha, A. Agianniotis, J. T. C. Schrauwen, A. Griffa, D. Sage, C. V. C. Bouten, F. N. van de Vosse, M. Unser and N. Stergiopulos, Experimental investigation of collagen waviness and orientation in the arterial adventitia using confocal laser scanning microscopy, Biomechanics and modeling in mechanobiology, SpringerLink (DOI: 10.1007/s10237-011-0325-z)</ref>
+<ref name=nock>R. Nock, F. Nielsen (2004), "Statistical Region Merging", IEEE Trans. Pattern Anal. Mach. Intell. 26 (11): 1452-1458</ref>
+<ref name=damore>D’Amore A, Stella JA, Wagner WR, Sacks MS. Characterization of the complete fiber network topology of planar fibrous tissues and scaffolds. Biomaterials 2010;31:5345–54. doi:10.1016/j.biomaterials.2010.03.052.</ref>
+<ref gonzalez>Gonzalez RC, Eddins SL. Digital Image Processing Using [[MATLAB]], 2nd ed. 2nd edition. S.I.: Gatesmark Publishing; 2001.</ref>
+<ref name=lam>Lam L, Lee S-W, Suen CY. Thinning Methodologies-A Comprehensive Survey. IEEE Trans Pattern Anal Mach Intell 1992;14:869–85. doi:10.1109/34.161346.</ref>
 }}
 
 == External Links ==
