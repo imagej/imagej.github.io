@@ -97,6 +97,10 @@ In the tutorial, the layers are imported following an existing set of layers, i.
 
 {{Clear}}
 
+== Video tutorial on 3D reconstruction from serial section ==
+
+{{#widget:SWITCHtube|id=c3f982f2}}
+
 == See Also ==
 
 * [[TrakEM2 Scripting]]
