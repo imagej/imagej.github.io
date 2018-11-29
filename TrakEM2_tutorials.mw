@@ -44,7 +44,7 @@ See also the feature extraction and alignment [http://www.ini.uzh.ch/~acardona/h
 ; Overlap
 : multiple arealists can coexist in space (the normal mode; arealists are independent).
 ; Exclude
-: when painting in an arealist, do not allow paint to ocurr over any other existing arealist.
+: when painting in an arealist, do not allow paint to occur over any other existing arealist.
 ; Erode
 : when painting in an arealist, paint in the current but erase any other arealist.
 
