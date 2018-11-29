@@ -17,7 +17,7 @@ Here we summarize some of the Registration plugins in ImageJ.
 |'''Plugin Snapshot'''
 |-
 |[http://imagej.net/Feature_Extraction Feature Extraction]
-|A tool for identifying a set of corresponding points of interest in two images and export them as PointRoi.
+|A tool for identifying a set of corresponding points of interest in two images
 |
 * Interest points are detected using the Difference of Gaussian detector
 * Uses the [https://en.wikipedia.org/wiki/Scale-invariant_feature_transform Scale Invariant Feature Transform (SIFT)] and [http://matthewalunbrown.com/papers/cvpr05.pdf Multi-Scale Oriented Patches (MOPS)] for local feature description
