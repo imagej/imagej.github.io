@@ -32,7 +32,7 @@ Here we summarize some of the Registration plugins in ImageJ.
 |
 |-
 |[https://imagej.net/BUnwarpJ BUnwarpJ]
-|A tool for registration, essentially an algorithm for elastic and consistent image registration
+|A tool for elastic and consistent image registration
 |
 * Performs 2D image registration based on elastic deformations represented by B-splines
 * Invertibility of the deformations is enforced through a consistency restriction
