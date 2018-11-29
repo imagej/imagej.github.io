@@ -36,8 +36,15 @@ Here we summarize some of the Registration plugins in ImageJ.
 |
 * Performs 2D image registration based on elastic deformations represented by B-splines
 * Invertibility of the deformations is enforced through a consistency restriction
-* Get started with the detailed [https://imagej.net/BUnwarpJ#User_Manual user manual]
+* Get started with the detailed [https://imagej.net/BUnwarpJ#User_Manual BUnwarpJ user manual]
 |[[File:BUnwarpJ_scheme.png|500px]]
+|-
+|[https://imagej.net/TrakEM2 TrakEM2]
+|A tool for morphological data mining, three-dimensional modeling and image stitching, '''registration''', editing and annotation.
+|
+* Registers floating image tiles to each other using SIFT and global optimization algorithms.
+* See the [https://www.ini.uzh.ch/~acardona/trakem2_manual.html#registration TrakEM2 sser manual section on registration]
+|[[File:Trakem2-snap.jpg|500px]]
 |}
 
 == Other pages and tools for Registration in ImageJ ==
