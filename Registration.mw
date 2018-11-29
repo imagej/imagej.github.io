@@ -40,11 +40,18 @@ Here we summarize some of the Registration plugins in ImageJ.
 |[[File:BUnwarpJ_scheme.png|500px]]
 |-
 |[https://imagej.net/TrakEM2 TrakEM2]
-|A tool for morphological data mining, three-dimensional modeling and image stitching, '''registration''', editing and annotation.
+|A tool for morphological data mining, three-dimensional modeling and image stitching, '''registration''', editing and annotation
 |
 * Registers floating image tiles to each other using SIFT and global optimization algorithms.
 * See the [https://www.ini.uzh.ch/~acardona/trakem2_manual.html#registration TrakEM2 sser manual section on registration]
 |[[File:Trakem2-snap.jpg|500px]]
+|-
+|[https://imagej.net/Register_Virtual_Stack_Slices Register Virtual Stack Slices]
+|A tool that takes a sequence of image slices stored in a folder and delivers a list of registered image slices
+|
+* The plugin can perform 6 types of image registration techniques: Translation, Rigid (translation + rotation), Similarity (translation + rotation + isotropic scaling), Affine, Elastic (via [https://imagej.net/BUnwarpJ BUnwarpJ] with cubic B-splines), and Moving least squares
+* All models are aided by automatically extracted [https://imagej.net/Feature_Extraction SIFT features]
+|[[File:Rvs_scheme.png|500px]]
 |}
 
 == Other pages and tools for Registration in ImageJ ==
