@@ -84,7 +84,7 @@ A user interface prompts the user to supply a number of parameters summarized be
 | Ridge detection only. This defines the Low Contrast value for the ridge detection plugin. 
 |-
 | Line width
-| Ridge detection only. The expected with of the line like mitochondrial features. 
+| Ridge detection only. The expected width of the line like mitochondrial features. 
 |-
 | Line length
 | The minimum line length to be included in the analysis. Setting this above 0 can aid in removing spurious small lines.
