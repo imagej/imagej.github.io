@@ -35,7 +35,7 @@ Often, you will not need to worry about this plugin to import your data, because
 
 The '''Bio-Formats Exporter''' is a plugin for exporting data to disk.
 
-It can save to the open [http://www.openmicroscopy.org/site/support/file-formats/ome-tiff OME-TIFF] file format, as well as several movie formats (e.g., QuickTime, AVI) and graphics formats (e.g., PNG, JPEG).
+It can save to the open [https://docs.openmicroscopy.org/latest/ome-model/#ome-tiff OME-TIFF] file format, as well as several movie formats (e.g., QuickTime, AVI) and graphics formats (e.g., PNG, JPEG).
 
 === Bio-Formats Remote Importer ===
 
