@@ -51,8 +51,11 @@ SEM画像は、まずImageJ/Fijiが持つ様々な閾値化技術を駆使して
 
 [[File:Segmentation.png|600px|alt=Alt|Original image--> Segmented image with no processing--> Segmented image after smoothing and noise removal]]
 
-==== Super Pixel Diameter ==== 
-After image segmentation white pixels were summed for total fiber area in each image. Two different center-lines were then calculated for the image, one using an axial thinning algorithm developed by Zhang and Suen<ref>Zhang TY, Suen CY. A Fast Parallel Algorithm for Thinning Digital Patterns. Commun ACM 1984;27:236–9. doi:10.1145/357994.358023.</ref>(Skeletonize command in ImageJ) and the other using a Voronoi tessellation<ref>Okabe A. Spatial Tessellations: Concepts and Applications of Voronoi Diagrams. 2 edition. Chichester ; New York: Wiley; 2000.</ref> (Voronoi command in ImageJ).  The axial thinning algorithm is very sensitive to changes in the fiber surface resulting in branches to areas that were not necessarily new fibers. The Voronoi algorithm essentially maximizes the distance between discrete black pixel clusters and thus is completely insensitive to fiber morphology.  The length of each center-line was then averaged and the total area of fibers was divided by the average of the axially thinned and Voronoi center-line lengths.  The two centerline lengths were averaged based on results from analyzing digital synthetic images and the finding that one method consistently overestimated fiber length while the other consistently underestimated fiber length.
+==== Super Pixel Diameter ====
+画像の白黒化の後、白いピクセルの箇所は繊維を意味します。それぞれの画像について、繊維方向は仮に2種類計算されます。ひとつはZhangとSuenによる<ref name=zhang/>もので(ImageJのSkeletonizeコマンド)、もう一つはVoronoiのテッセレーション（平面充填）<ref name=okabe/>です(ImageJのVoronoiコマンド)。繊維径を測定するアルゴリズムは、必ずしも新しい繊維を意味しない枝分かれに非常に敏感です。Voronoiアルゴリズムは黒いピクセルの塊の距離が最大となるよう設定するので、このような形のものに影響されません。それぞれの繊維の中心線の長さが平均化され、繊維が占める場所は平均厚みとVoronoiの中心線の長さで分けられます。2つの中心線の長さは、デジタル合成された画像の解析と、　結果によって平均化されます。
+
+
+The two centerline lengths were averaged based on results from analyzing digital synthetic images and the finding that one method consistently overestimated fiber length while the other consistently underestimated fiber length.
 
 The Super Pixel name was chosen because the fiber area, in pixels, was divided by the center-line lengths, in pixels; thus producing a unitless value that is equivalent to mean fiber diameter (fiber length x diameter = fiber area). This value is therefore a transformed pixel unit and is equivalent to the mean fiber diameter under the assumption that the fibers are just long rectangles when segmented into 2D shapes.   
 
@@ -112,15 +115,15 @@ Please go to [https://sites.google.com/site/diameterj/ Learn DiameterJ] to take 
 ! scope="col" width="50%" | '''"File Source Name"_Total Summary.csv Continued'''
 |- valign="top"
 |
-#Super Pixel: The mean fiber diameter as calculated using a super pixel determination.  A detailed explanation of how this algorithm  works can be found above. 
-#Histogram Mean: The mean fiber diameter as calculated by fitting a Gaussian Curve to the radius data and finding the curves mean value.  
-#Histogram SD: The standard dev. of the Gaussian fit of the radius histogram
-#Histogram Mode: Most occurring fiber diameter in the histogram
-#Histogram Median: Middle fiber diameter in the histogram
-#Histogram Min. Diam.: The smallest diameter measured
-#Histogram Max. Diam.: The largest diameter measured
-#Histogram Integrated Density: The product of length of the fibers and the average radius
-#Histogram Raw Integrated Density: The sum of the radii at all pixels in the image or selection
+#Super Pixel: スーパーピクセルの決定から計算された平均繊維径。計算方法の詳しいアルゴリズムは上で解説しています。
+#Histogram Mean: 繊維径の分布にガウス曲線を当てはめて求めた、曲線の平均値
+#Histogram SD: 当てはめたガウス曲線から計算した繊維径ヒストグラムの標準偏差。
+#Histogram Mode: ヒストグラムの最頻値。
+#Histogram Median: 繊維径の中央値。
+#Histogram Min. Diam.: 測定された最小繊維径。
+#Histogram Max. Diam.: 測定された最大繊維径。
+#Histogram Integrated Density: 繊維長と平均繊維半径の積算値。
+#Histogram Raw Integrated Density: 画像全体、または選択範囲の全てのピクセルの半径の合計。
 #Diameter Skewness: The third order moment about the mean
 #Diameter Kurtosis: The fourth order moment about the mean.
 |
@@ -282,6 +285,8 @@ Help is welcome in any/all of these improvements!
 <ref name=damore>D’Amore A, Stella JA, Wagner WR, Sacks MS. Characterization of the complete fiber network topology of planar fibrous tissues and scaffolds. Biomaterials 2010;31:5345–54. doi:10.1016/j.biomaterials.2010.03.052.</ref>
 <ref gonzalez>Gonzalez RC, Eddins SL. Digital Image Processing Using [[MATLAB]], 2nd ed. 2nd edition. S.I.: Gatesmark Publishing; 2001.</ref>
 <ref name=lam>Lam L, Lee S-W, Suen CY. Thinning Methodologies-A Comprehensive Survey. IEEE Trans Pattern Anal Mach Intell 1992;14:869–85. doi:10.1109/34.161346.</ref>
+<ref name=zhang>Zhang TY, Suen CY. A Fast Parallel Algorithm for Thinning Digital Patterns. Commun ACM 1984;27:236–9. doi:10.1145/357994.358023.</ref>
+<ref name=okabe>Okabe A. Spatial Tessellations: Concepts and Applications of Voronoi Diagrams. 2 edition. Chichester ; New York: Wiley; 2000.</ref>
 }}
 
 == External Links ==
