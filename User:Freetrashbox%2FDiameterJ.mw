@@ -11,7 +11,8 @@ Fiji any version [http://imagej.net/_images/6/65/DiameterJ_Fiji_-_1-018.zip Diam
 | status                  = v X.003 (first version released publicly)
 | category               = [[:Category:Plugins|Plugins]] [[:Category:Analysis|Analysis]]
 }}
-'''DiameterJ'''<ref name="Hotaling">Hotaling NA, Bharti K, Kriel H, Simon Jr. CG. DiameterJ: A validated open source nanofiber diameter measurement tool. Biomaterials 2015;61:327–38. doi:10.1016/j.biomaterials.2015.05.015 http://www.sciencedirect.com/science/article/pii/S0142961215004652</ref>はフリーでオープンソースのImageJ、ImageJ 2、Fiji用プラグインです。National Institute of Standards and Technologyで開発されました。DiameterJは検証済みのナノファイバーの直径解析ツールです。DiameterJは画像を分析し、ナノファイバーまたはマイクロファイバーの繊維軸方向に沿った直径を見つけることができ、得られたデータのヒストグラムを作成します。一般的な統計情報、たとえば平均繊維径、繊維径の最頻値(mode)なども求められます。DiameterJには[http://bigwww.epfl.ch/demo/orientation/ OrientationJ]が付属しており<ref name="OrientationJ"/>、ImageJ/Fijiの"Analyze Particles"のような感じで繊維の方向を分析することができ、これにより孔径や孔に関する統計情報を得ることもできます。
+'''DiameterJ'''<ref name="Hotaling">Hotaling NA, Bharti K, Kriel H, Simon Jr. CG. DiameterJ: A validated open source nanofiber diameter measurement tool. Biomaterials 2015;61:327–38. doi:10.1016/j.biomaterials.2015.05.015 http://www.sciencedirect.com/science/article/pii/S0142961215004652</ref>はフリーでオープンソースのImageJ、ImageJ 2、Fiji用プラグインです。National Institute of Standards and Technologyで開発されました。DiameterJは検証済みのナノファイバーの直径解析ツールです。DiameterJは画像を分析し、ナノファイバーまたはマイクロファイバーの繊維軸方向に沿った直径を見つけることができ、得られたデータのヒストグラムを作成します。一般的な統計情報、たとえば平均繊維径、繊維径の最頻値(mode)なども求められます。DiameterJには[http://bigwww.epfl.ch/demo/orientation/ OrientationJ]が付属しており<ref name="OrientationJ">R. Rezakhaniha, A. Agianniotis, J. T. C. Schrauwen, A. Griffa, D. Sage, C. V. C. Bouten, F. N. van de Vosse, M. Unser and N. Stergiopulos, Experimental investigation of collagen waviness and orientation in the arterial adventitia using confocal laser scanning microscopy, Biomechanics and modeling in mechanobiology, SpringerLink (DOI: 10.1007/s10237-011-0325-z)</ref>
+、ImageJ/Fijiの"Analyze Particles"のような感じで繊維の方向を分析することができ、これにより孔径や孔に関する統計情報を得ることもできます。
 __TOC__
 
 === <big>概要</big> ===
@@ -45,14 +46,14 @@ http://www.sciencedirect.com/science/article/pii/S0142961215004652
 DiameterJの目標<ref name="Hotaling" />は、8ビットのSEM画像をどんな解像度であろうとも60秒以内にデスクトップコンピューターで解析することです。この下に、DiameterJのアルゴリズムがどのように繊維径を解析し、その他の骨組みがどのようになっているのかを示す図を挙げます。
 
 ==== Segmentation ====
-SEM画像は、まずImageJ/Fijiが持つ様々な閾値化技術を駆使して、白黒分割を行います。Segment SRMとSegment Mixed pluginsは、他の分割アルゴリズムに自動的に組み込まれます。具体的には、我々は、SEM画像に写るナノファイバーの解析に適した[[Statistical Region Merging]]アルゴリズム<ref name=nock/>を発見しました。これは我々が、Johannes Schindelinが開発した偉大な業績である[[Statistical Region Merging]]アルゴリズムが繊維直径を横切る混合繊維の解析を可能にし、深さ方向に存在する繊維の状態を再現することができることに気づいたためです。これに加えて、我々はOtsu<ref>Otsu N. A threshold selection method from gray-level histograms. Automatica 1975;11:23–7.</ref> , Huang<ref>Huang L-K, Wang M-JJ. Image thresholding by minimizing the measures of fuzziness. Pattern Recognit 1995;28:41–51. doi:10.1016/0031-3203(94)E0043-K.</ref>, Kittler (min error)<ref>Kittler J, Illingworth J. Minimum error thresholding. Pattern Recognit 1986;19:41–7. doi:10.1016/0031-3203(86)90030-0.</ref>, Doyle (percentile) <ref>Doyle, W (1962), "Operation useful for similarity-invariant pattern recognition", Journal of the Association for Computing Machinery 9: 259-267, doi:10.1145/321119.321123</ref>,Zack (triangle)<ref>Zack GW, Rogers WE, Latt SA (1977), "Automatic measurement of sister chromatid exchange frequency", J. Histochem. Cytochem. 25 (7): 741–53, PMID 70454</ref>らが開発した一般的な画像分割アルゴリズムも使用しました。
+SEM画像は、まずImageJ/Fijiが持つ様々な閾値化技術を駆使して、白黒分割を行います。Segment SRMとSegment Mixed pluginsは、他の分割アルゴリズムに自動的に組み込まれます。具体的には、我々は、SEM画像に写るナノファイバーの解析に適した[[Statistical Region Merging]]アルゴリズム<ref name="nock">R. Nock, F. Nielsen (2004), "Statistical Region Merging", IEEE Trans. Pattern Anal. Mach. Intell. 26 (11): 1452-1458</ref>を発見しました。これは我々が、Johannes Schindelinが開発した偉大な業績である[[Statistical Region Merging]]アルゴリズムが繊維直径を横切る混合繊維の解析を可能にし、深さ方向に存在する繊維の状態を再現することができることに気づいたためです。これに加えて、我々はOtsu<ref>Otsu N. A threshold selection method from gray-level histograms. Automatica 1975;11:23–7.</ref> , Huang<ref>Huang L-K, Wang M-JJ. Image thresholding by minimizing the measures of fuzziness. Pattern Recognit 1995;28:41–51. doi:10.1016/0031-3203(94)E0043-K.</ref>, Kittler (min error)<ref>Kittler J, Illingworth J. Minimum error thresholding. Pattern Recognit 1986;19:41–7. doi:10.1016/0031-3203(86)90030-0.</ref>, Doyle (percentile) <ref>Doyle, W (1962), "Operation useful for similarity-invariant pattern recognition", Journal of the Association for Computing Machinery 9: 259-267, doi:10.1145/321119.321123</ref>,Zack (triangle)<ref>Zack GW, Rogers WE, Latt SA (1977), "Automatic measurement of sister chromatid exchange frequency", J. Histochem. Cytochem. 25 (7): 741–53, PMID 70454</ref>らが開発した一般的な画像分割アルゴリズムも使用しました。
 
-画像分割した後は、残されたノイズや形状上の特徴を、D'Amore<ref name=damore/>とGonzalez<ref gonzalez/>が示した手順を基本に平滑化しました。簡単に言えば、ImageJのノイズ除去コマンドを、画像の変化が無くなるまで数回繰り返しています。そして、ImageJsの浸食コマンド、拡張コマンド、そして最終的には浸食コマンドを使い、繊維の境界を際立たせ、孤立したピクセルエリアを消去します。センターラインの決定の精度を良くするため、我々はLamらが開発した手法<ref name=lam/>を利用した。
+画像分割した後は、残されたノイズや形状上の特徴を、D'Amore<ref name="damore">D’Amore A, Stella JA, Wagner WR, Sacks MS. Characterization of the complete fiber network topology of planar fibrous tissues and scaffolds. Biomaterials 2010;31:5345–54. doi:10.1016/j.biomaterials.2010.03.052.</ref>とGonzalez<ref name="gonzalez">Gonzalez RC, Eddins SL. Digital Image Processing Using [[MATLAB]], 2nd ed. 2nd edition. S.I.: Gatesmark Publishing; 2001.</ref>が示した手順を基本に平滑化しました。簡単に言えば、ImageJのノイズ除去コマンドを、画像の変化が無くなるまで数回繰り返しています。そして、ImageJsの浸食コマンド、拡張コマンド、そして最終的には浸食コマンドを使い、繊維の境界を際立たせ、孤立したピクセルエリアを消去します。センターラインの決定の精度を良くするため、我々はLamらが開発した手法<ref name="lam">Lam L, Lee S-W, Suen CY. Thinning Methodologies-A Comprehensive Survey. IEEE Trans Pattern Anal Mach Intell 1992;14:869–85. doi:10.1109/34.161346.</ref>を利用した。
 
 [[File:Segmentation.png|600px|alt=Alt|Original image--> Segmented image with no processing--> Segmented image after smoothing and noise removal]]
 
 ==== Super Pixel Diameter ====
-画像の白黒化の後、白いピクセルの箇所は繊維を意味します。それぞれの画像について、繊維方向は仮に2種類計算されます。ひとつはZhangとSuenによる<ref name=zhang/>もので(ImageJのSkeletonizeコマンド)、もう一つはVoronoiのテッセレーション（平面充填）<ref name=okabe/>です(ImageJのVoronoiコマンド)。繊維径を測定するアルゴリズムは、必ずしも新しい繊維を意味しない枝分かれに非常に敏感です。Voronoiアルゴリズムは黒いピクセルの塊の距離が最大となるよう設定するので、このような形のものに影響されません。それぞれの繊維の中心線の長さが平均化され、繊維が占める場所は平均厚みとVoronoiの中心線の長さで分けられます。2つの中心線の長さは、デジタル合成された画像の解析と、　結果によって平均化されます。
+画像の白黒化の後、白いピクセルの箇所は繊維を意味します。それぞれの画像について、繊維方向は仮に2種類計算されます。ひとつはZhangとSuenによる<ref name="zhang">Zhang TY, Suen CY. A Fast Parallel Algorithm for Thinning Digital Patterns. Commun ACM 1984;27:236–9. doi:10.1145/357994.358023.</ref>もので(ImageJのSkeletonizeコマンド)、もう一つはVoronoiのテッセレーション（平面充填）<ref name="okabe">Okabe A. Spatial Tessellations: Concepts and Applications of Voronoi Diagrams. 2 edition. Chichester ; New York: Wiley; 2000.</ref>です(ImageJのVoronoiコマンド)。繊維径を測定するアルゴリズムは、必ずしも新しい繊維を意味しない枝分かれに非常に敏感です。Voronoiアルゴリズムは黒いピクセルの塊の距離が最大となるよう設定するので、このような形のものに影響されません。それぞれの繊維の中心線の長さが平均化され、繊維が占める場所は平均厚みとVoronoiの中心線の長さで分けられます。2つの中心線の長さは、デジタル合成された画像の解析と、　結果によって平均化されます。
 
 
 The two centerline lengths were averaged based on results from analyzing digital synthetic images and the finding that one method consistently overestimated fiber length while the other consistently underestimated fiber length.
@@ -124,17 +125,17 @@ Please go to [https://sites.google.com/site/diameterj/ Learn DiameterJ] to take 
 #Histogram Max. Diam.: 測定された最大繊維径。
 #Histogram Integrated Density: 繊維長と平均繊維半径の積算値。
 #Histogram Raw Integrated Density: 画像全体、または選択範囲の全てのピクセルの半径の合計。
-#Diameter Skewness: The third order moment about the mean
-#Diameter Kurtosis: The fourth order moment about the mean.
+#Diameter Skewness: 分布の歪度。平均の3次モーメント
+#Diameter Kurtosis: 分布の尖度。平均の4次モーメント
 |
-#Fiber Length: The total length of the Fiber centerlines in the segmented image.
-#Mean Pore Area:  (Total number of black pixels counted in pores) / (Total number of pores in image)
-#Pore Area SD: The standard deviation of all pore areas measured
-#Min. Pore Area: The minimum pore area measured
-#Max Pore Area: The maximum pore area measured
-#Percent Porosity: (Total number of black pixels) / (Total pixels in an image)
-#Intersection Density (100x100px):  (Number of fiber overlaps)*10000 / (Total pixels in image)
-#Characteristic Length: (Total length of all fiber centerlines) / (# of fiber overlaps)
+#Fiber Length: 繊維長。2値化画像に含まれる繊維の中央線の合計長さ。
+#Mean Pore Area: 平均開孔面積。（穴として数えられた黒色ピクセルの数）÷（画像中の穴の数）
+#Pore Area SD: 測定された全ての穴の面積の標準偏差。
+#Min. Pore Area: 測定された最小の穴面積。
+#Max Pore Area: 測定された最大の穴面積。
+#Percent Porosity: 開孔率。（黒色ピクセルの合計数）÷（画像中のピクセルの合計数）
+#Intersection Density (100x100px): 100x100pxに含まれる繊維交差点の数密度。（繊維が重なった箇所の数）×10000÷（画像の総ピクセル数）
+#Characteristic Length: （繊維中央線の合計長さ）÷（繊維交差点の数）
 |- style="text-align:center" valign="top"
 | colspan=2 | <h4> <big>Histograms Folder</big> </h4>
 |- valign="top"
@@ -279,15 +280,7 @@ Finally, we'd like to encourage everyone to do peak fitting of the diameter hist
 Help is welcome in any/all of these improvements!
 
 == References ==
-{{reflist|refs=
-<ref name="OrientationJ">R. Rezakhaniha, A. Agianniotis, J. T. C. Schrauwen, A. Griffa, D. Sage, C. V. C. Bouten, F. N. van de Vosse, M. Unser and N. Stergiopulos, Experimental investigation of collagen waviness and orientation in the arterial adventitia using confocal laser scanning microscopy, Biomechanics and modeling in mechanobiology, SpringerLink (DOI: 10.1007/s10237-011-0325-z)</ref>
-<ref name=nock>R. Nock, F. Nielsen (2004), "Statistical Region Merging", IEEE Trans. Pattern Anal. Mach. Intell. 26 (11): 1452-1458</ref>
-<ref name=damore>D’Amore A, Stella JA, Wagner WR, Sacks MS. Characterization of the complete fiber network topology of planar fibrous tissues and scaffolds. Biomaterials 2010;31:5345–54. doi:10.1016/j.biomaterials.2010.03.052.</ref>
-<ref gonzalez>Gonzalez RC, Eddins SL. Digital Image Processing Using [[MATLAB]], 2nd ed. 2nd edition. S.I.: Gatesmark Publishing; 2001.</ref>
-<ref name=lam>Lam L, Lee S-W, Suen CY. Thinning Methodologies-A Comprehensive Survey. IEEE Trans Pattern Anal Mach Intell 1992;14:869–85. doi:10.1109/34.161346.</ref>
-<ref name=zhang>Zhang TY, Suen CY. A Fast Parallel Algorithm for Thinning Digital Patterns. Commun ACM 1984;27:236–9. doi:10.1145/357994.358023.</ref>
-<ref name=okabe>Okabe A. Spatial Tessellations: Concepts and Applications of Voronoi Diagrams. 2 edition. Chichester ; New York: Wiley; 2000.</ref>
-}}
+{{reflist}}
 
 == External Links ==
 * [http://bigwww.epfl.ch/demo/orientation/ OrientationJ]
