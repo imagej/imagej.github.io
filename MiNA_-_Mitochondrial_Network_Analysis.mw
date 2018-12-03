@@ -118,6 +118,16 @@ Running the tool will generate an image with an overlay of the binarized mitocho
 | branch length stdevp
 | The standard deviation (population) of the length of all the lines used to represent the mitochondrial structures.
 |-
+|-
+| summed branch lengths mean
+| The mean of the sum of the lengths of branches for each independent structure (as represented by the morphological/topological skeleton). This is the sum of all branch lengths divided by the number of independent skeletons.
+|-
+| summed branch lengths median
+| The median of the sum of the lengths of branches for each independent structure (as represented by the morphological/topological skeleton).
+|-
+| summed branch lengths stdevp
+| The standard deviation of the sum of the lengths of branches for each independent structure (as represented by the morphological/topological skeleton).
+|-
 | network branches mean
 | The mean number of attached lines used to represent each structure.
 |-
