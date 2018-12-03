@@ -72,6 +72,11 @@ The {{Javadoc | package = org/scijava/ui | class = UIService}} then takes care o
 
 When modules are added, removed or changed (via {{Javadoc | package = org/scijava/module/event | class = ModulesAddedEvent}}, {{Javadoc | package = org/scijava/module/event | class = ModulesRemovedEvent}}, {{Javadoc | package = org/scijava/module/event | class = ModulesUpdatedEvent}}), the <code>MenuService</code> listens and updates the associated <code>ShadowMenu</code>(s) accordingly. It notifies interested parties that it has done so by firing a corresponding event: {{Javadoc | package = org/scijava/menu/event | class = MenusAddedEvent}}, {{Javadoc | package = org/scijava/menu/event | class = MenusRemovedEvent}}, or {{Javadoc | package = org/scijava/menu/event | class = MenusUpdatedEvent}}.
 
+= API Version History =
+
+A history of API changes is available at:
+https://abi-laboratory.pro/java/tracker/timeline/scijava-common/
+
 = Further reading =
 
 * [http://scijava.org/ SciJava web site]
