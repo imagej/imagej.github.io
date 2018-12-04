@@ -37,6 +37,23 @@ The '''Bio-Formats Exporter''' is a plugin for exporting data to disk.
 
 It can save to the open [https://docs.openmicroscopy.org/latest/ome-model/#ome-tiff OME-TIFF] file format, as well as several movie formats (e.g., QuickTime, AVI) and graphics formats (e.g., PNG, JPEG).
 
+* Animated PNG (*.png)
+* [https://en.wikipedia.org/wiki/Audio_Video_Interleave Audio Video Interleave] (*.avi)
+* [https://github.com/CellH5/cellh5 CellH5] File Format (*.ch5)
+* Encausupated PostScript (*.eps, *.epsi)
+* [https://en.wikipedia.org/wiki/Image_Cytometry_Standard Image Cytometry Standard] (*.ids, *.ics)
+* Java source code (*.java)
+* JPEG (*.jpg, *.jpeg, *.jpe)
+* JPEG-2000 (*.jp2)
+* [https://docs.openmicroscopy.org/latest/ome-model/ome-tiff/ OME-TIFF] (*.ome.tif, *.ome.tiff, *.ome.tf2, *.ome.tf8, *.ome.btf)
+* [https://docs.openmicroscopy.org/latest/ome-model/ome-xml/ OME-XML] (*.ome, *.ome.xml)
+* QuickTime (*.mov)
+* Tagged Image File Format (TIFF) (*.tif, *.tiff, *.tf2, *.tf8, *.btf)
+* [https://github.com/Vaa3D/Vaa3D_Wiki/wiki/Vaa3D-Wiki Vaa3d] (*.v3draw)
+* [http://www.emouseatlas.org/emap/analysis_tools_resources/software/woolz.html Woolz] (*.wlz)
+
+'''Note:''' For OME-TIFF and TIFF formats, the file extensions '''*.tif''' and '''*.tiff''' are associated with the standard 32-bit TIFF, which has a 4GB size limit. On the other hand, the file extensions '''*.tf2''', '''*.tf8''', and '''*.btf''' are automatically associated with [https://www.awaresystems.be/imaging/tiff/bigtiff.html the 64-bit BigTIFF format], which can store much bigger data.
+
 === Bio-Formats Remote Importer ===
 
 The '''Bio-Formats Remote Importer''' is a plugin for importing data from a remote URL.
