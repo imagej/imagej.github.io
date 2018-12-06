@@ -58,5 +58,5 @@ Labkit is based on Big Data Viewer. Navigation the image works as in Big Data Vi
 ** Segmentation result - As *.tif, or show to ImageJ
 ** Segmentation's probability Map - As *.tif, or show in ImageJ
 * The word "Labeling" is used to refer to the colorfully displayed areas overlayed on top of the image.
-* Labkit's file format for Labelings is *.labeling. It works greate for very large files with very few labels. (This file format is likely to be imporved and changed in the futur.)
+* Labkit's file format for Labelings is *.labeling. It works greate for very large files with very few labels. (This file format is likely to be improved and changed in the future.)
 * The labeling can be saved and opened as *.tif as well. (This is a good option for not to big images. And can be used by any other tool.)
