@@ -34,6 +34,15 @@ The two passwords can differ. This can be source of confusion during setting up 
 
 You can also manually [[Special:ChangeUploadPassword|change or initialize your upload password]].
 
+== Group update site ==
+In addition to personal update sites, it is possible for groups of people to share an update site.
+
+To create such an update site, you need to have a group email and set up a personal update site for that email with an appropriate user name.
+
+Then make sure that all users who should be allowed to upload to that update site have personal update sites, too (they do not need to use them).
+
+Once all that is done, send a mail to the Fiji mailing list requesting that the users be granted upload permission to the group update site. An administrator will then add the user names to the Require user line in the respective .htaccess file.
+
 == Adding an update site on your own server ==
 
 If you have an own server or web space with WebDAV, SFTP or SSH access, you can create a directory in that web space and initialize it as an update site, too. Just call the updater with {{bc | Help | Update}} and click the ''Manage update sites'' button:
