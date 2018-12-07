@@ -1588,7 +1588,8 @@ Other accepted primitive array types are:
 But now suppose you want a two-dimensional double array, the equivalent of '''double[][]''' in java. How to do that? Here's how:
 
 <source lang="python">
-from jarray import array
+from jarray    import array
+from java.lang import Class
 
 data = [[1.0, 2.0], [3.0, 4.0]]
 twoDimArr = array(data, Class.forName('[D'))
@@ -1600,6 +1601,7 @@ For a three-dimensional array in jython, you'd just add another '''[''' (square 
 
 <source lang="python">
 from jarray import array
+from java.lang import Class
 
 data = [[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]]
 threeDimArr = array(data, Class.forName('[[D'))
@@ -1637,7 +1639,6 @@ print twoDimArr
 #prints: array([D, [array('d', [0.0, 0.0, 0.0]), array('d', [0.0, 0.0, 0.0]),
 # array('d', [0.0, 0.0, 0.0]), array('d', [0.0, 0.0, 0.0]), array('d', [0.0, 0.0, 0.0])])
 </source>
-
 
 === Inline java code inside jython: the Weaver ===
 
