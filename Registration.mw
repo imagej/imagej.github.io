@@ -5,6 +5,8 @@
 
 [[wikipedia:Image registration|Image registration]] is the process of transforming different sets of image data into one coordinate system. Image data may be multiple photographs, data from different sensors, times, depths, or viewpoints. It is used in computer vision, medical imaging, biological imaging and brain mapping, military automatic target recognition, and compiling and analyzing images and data from satellites. Registration is necessary in order to be able to compare or integrate the data obtained from these different measurements.
 
+Essentially, image registration is used to align two or more images of the same scene.  The transformation function, the method for modifying the spatial relationship between pixels, needs to be estimated/modeled in order to register the two images.  The input image is the image that will be transformed, and the reference image is the one against which the input is registered.  Geometric distortions causing differences in angle, orientation, shifting, and distance need to be taken into account.  One of the most common methods to do image registration uses ''points'' that correspond to locations known in both the input and reference images.  Tools exist in ImageJ that can automatically detect such ''correspondence points'' to then estimate the transformation function.
+
 == Recommended ImageJ Plugins for Registration ==
 
 Here we summarize some of the Registration plugins in ImageJ. 
