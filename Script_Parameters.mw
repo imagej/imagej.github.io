@@ -164,6 +164,8 @@ output, such as a "verbose" flag.
 #@String  (visibility=MESSAGE, value="This string is displayed in the form and not editable") out
 </source>
 
+{{Warning | Currently if a script containing a MESSAGE string is recorded with the macro recorder and the resulting recorded code executed, a window will show up containing only the MESSAGE string This is unexpected and wil l be corrected in the future.}}
+
 === Multiple Choice ===
 
 Any parameter can be turned into a multiple-choice selector by adding a <code>choices = {...}</code> property:
