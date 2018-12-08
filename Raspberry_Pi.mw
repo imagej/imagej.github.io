@@ -15,7 +15,7 @@ The following steps describe how to create a desktop icon to launch FIJI on a Ra
 #Dowload the Fiji icon image: [https://imagej.net/_images/thumb/a/ae/Fiji-icon.png/48px-Fiji-icon.png Fiji icon link]
 #Press ctrl + alt + t to open the terminal window
 #Type: <code> nano FIJI launcher.desktop </code> and press return.  This will load Nano which will allow you to create a desktop icon.
-#Type the following code, replacing "/path/to" with the paths to the ImageJ.sh file and the Fiji icon:
+#Type the following code, replacing "/path/to" with the paths to the ImageJ.sh file and the Fiji icon: 
 <source lang="linux-config">
 [Desktop Entry]
 Name=Fiji launcher
@@ -28,9 +28,9 @@ Type=Application
 Categories=Education
 </source>
 #Press Ctrl + x and then press Y to exit and save the new desktop icon.
-#Enter you desired file name, such as "Fiji Launcher.desktop" and press return.  Once complete, an icon should be visible on the desktop.
+#Enter your desired file name, such as "Fiji Launcher.desktop" and press return.  Once complete, an icon should be visible on the desktop.
 #Press Ctrl + x to return to the terminal window
-#In the terminal window, type the following to navigate to the Desktop: <code> cd ~/Desktop <code>
+#In the terminal window, type the following to navigate to the Desktop: <code> cd ~/Desktop </code>
 #Then type the following to make the new icon executable: <code>chmod +x "Fiji Launcher.desktop"</code>
 
 
