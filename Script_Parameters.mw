@@ -87,10 +87,9 @@ A list of possible data types and the corresponding widgets is provided:
 | | <code>open</code> {{!}} <code>save</code> {{!}} <code>file</code> {{!}}  <code>directory</code> {{!}} <code>extensions:</code>
 |}
 
-
-{{Warning | <code>float</code> is also an accepted field but the decimal part is not displayed in the form compared to <code>Float</code> (mind the capital F).}}
-
-{{Warning | A single <code>#@ImagePlus</code> field will not show up in the input form, instead the current image will automatically be processed. The idea is to stick to the IJ macro language. However if 2 <code>#@ImagePlus</code> are present then they will be rendered as drop-down buttons.}}
+{{Warning | <code>float</code> is also an accepted field but the decimal part is not displayed in the form compared to <code>Float</code> (mind the capital F).<br>
+A related [https://github.com/scijava/scijava-common/issues/302 issue] occurs with <code>int</code> and <code>double</code> when a default value is set in the code and entered in the form, the value is not properly recalled at the next run. Use <code>Integer</code> and <code>Double</code> instead.}}
+{{Warning | A single <code>#@ImagePlus</code> or <code>#@Dataset</code>   field will not show up in the input form, instead the current image will automatically be processed. The idea is to stick to the IJ macro language. However if 2 <code>#@ImagePlus</code> (or respectively <code>#@Dataset</code>) are present then they will be rendered as drop-down buttons.}}
 
 
 By implementing {{Javadoc | project = SciJava | package = org/scijava/widget | class = InputWidget}} it is possible to extend this list.
