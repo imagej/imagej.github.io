@@ -152,9 +152,9 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 |-
 | rowspan=3 style="vertical-align: middle" | {{Logo | Fiji}}
 | '''[[Fiji]]'''
-| {{Person|Schindelin}}<br>{{Person|Albertcardona}}
-| {{Person|Rueden}}<br>{{Person|Schindelin}}<sup>2</sup>
-| {{Person|Rueden}}<br>{{Person|Schindelin}}<sup>2</sup>
+| {{Person|Schindelin}}<br>{{Person|Albertcardona}}<br>{{Person|Tomancak}}
+| {{Person|Rueden}}
+| {{Person|Rueden}}<br>Gabriella Turek
 | [https://github.com/orgs/fiji/people List on GitHub]
 | See [[Contributors]]
 |-
@@ -175,7 +175,7 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 | {{Logo | SLIM Curve}}
 | '''[[SLIM Curve]]'''
 | Paul Barber<br>{{Person|Rueden}}
-| Paul Barber<sup>3</sup><br>{{Person|Rueden}}<sup>3</sup>
+| Paul Barber<sup>2</sup><br>{{Person|Rueden}}<sup>2</sup>
 | {{Person|Msagar}}<br>{{Person|Rueden}}
 | [https://github.com/orgs/slim-curve/people List on GitHub]
 | [https://github.com/slim-curve/slim-plugin/graphs/contributors Info on GitHub]
@@ -237,8 +237,7 @@ Here is a summary of roles for projects in the [[SciJava]] ecosystem.
 | [https://github.com/mitobo-hub/mitobo/graphs/contributors Info on GitHub]
 |}
 <sup>1</sup> Pietzsch leads on day to day issues. Pietzsch, Preibisch and Saalfeld vote on primary decisions, with Pietzsch's vote breaking ties.
-<br><sup>2</sup> Schindelin is currently on sabbatical from Fiji; see [https://groups.google.com/d/msg/fiji-devel/coIgXLws0eI/TZlwjXLyks0J this thread on fiji-devel].
-<br><sup>3</sup> Barber leads development of the {{GitHub | org=slim-curve | repo=slim-curve | label=SLIM Curve C library}}; Rueden leads development of the {{GitHub | org=slim-curve | repo=slim-plugin | label=SLIM Curve plugin for ImageJ}}.
+<br><sup>2</sup> Barber leads development of the {{GitHub | org=slim-curve | repo=slim-curve | label=SLIM Curve C library}}; Rueden leads development of the {{GitHub | org=slim-curve | repo=slim-plugin | label=SLIM Curve plugin for ImageJ}}.
 
 == Further reading ==
 
