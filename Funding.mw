@@ -20,7 +20,13 @@ SCIFIO's development is now funded indirectly by various institutions as part of
 
 == ImgLib2 ==
 
-The [[ImgLib2]] project was developed by {{Person|Saalfeld}}, {{Person|StephanP}} and {{Person|Pietzsch}} of the [http://mpi-cbg.de/research/research-groups/pavel-tomancak.html Tomancak lab] at [http://mpi-cbg.de/ MPI-CBG]. In recent years, [[ImgLib2]] is funded indirectly by the various involved software efforts, including the Tomancak and Saalfeld labs as well as UW-Madison [[LOCI]]. The ImgLib2 project as a whole is organized and maintained by {{Person|Pietzsch}} of MPI-CBG, {{Person|Saalfeld}} of Janelia Research Campus, and {{Person|Rueden}} of UW-Madison [[LOCI]].
+The [[ImgLib2]] project was developed by {{Person|Saalfeld}}, {{Person|StephanP}} and {{Person|Pietzsch}} of the [https://mpi-cbg.de/research/research-groups/pavel-tomancak.html Tomancak lab] at [https://mpi-cbg.de/ MPI-CBG].
+
+The ImgLib2 project as a whole is organized and maintained by {{Person|Pietzsch}} of MPI-CBG, {{Person|Saalfeld}} of Janelia Research Campus, and {{Person|Rueden}} of UW-Madison [[LOCI]].
+
+[[ImgLib2]] is currently funded by [https://bmbf.org/ Bundesministerium für Bildung und Forschung (BMBF)] grant 031L0102.
+
+[[ImgLib2]] is also funded indirectly by the various involved software efforts, including the [https://www.mpi-cbg.de/tomancak Tomancak], [https://www.mpi-cbg.de/jug Jug] and [https://www.janelia.org/lab/saalfeld-lab Saalfeld] labs as well as UW-Madison [[LOCI]].
 
 == SciJava ==
 
