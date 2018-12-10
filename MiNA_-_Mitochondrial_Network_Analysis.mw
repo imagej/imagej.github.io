@@ -77,10 +77,10 @@ A user interface prompts the user to supply a number of parameters summarized be
 | Use ridge detection (2D only)
 | Check if ridge detection is to be used. If it is unchecked, the analysis will proceed with iterative thinning to generate the morphological skeleton. Note that ridge detection is only available for 2D images currently.
 |-
-| Maximum threshold
+| High contrast
 | Ridge detection only. This defines the High Contrast value for the ridge detection plugin. 
 |-
-| Minimum threshold
+| Low contrast
 | Ridge detection only. This defines the Low Contrast value for the ridge detection plugin. 
 |-
 | Line width
