@@ -4,21 +4,21 @@ The Eliceiri lab, also known as the [http://loci.wisc.edu/ Laboratory for Optica
 
 LOCI plays a very active role in the ImageJ community:
 * LOCI launched the [[ImageJ2]], [[SCIFIO]] and [[SciJava Common]] projects, and continues to drive their development.
-* LOCI developers maintain the [[Fiji]] project.
-* LOCI founded, and continues to support, the [[Bio-Formats]] project.
+* Together with [[CSBD]]/[[MPI-CBG]], LOCI maintains the [[Fiji]] project.
+* LOCI founded the [[Bio-Formats]] project, and led the project's development for several years.
 * LOCI regularly funds and hosts [[hackathons]] intended to foster community development of [[open source]] biological software projects.
 * LOCI hosts the <code>imagej.net</code> web services, as well as related services including <code>fiji.sc</code> and <code>openspim.org</code>.
 
-LOCI is a partner of the [http://openmicroscopy.org/ Open Microscopy Environment consortium], as well a founding member of the [[SciJava]] collaboration.
+LOCI is a founding member of the [[SciJava]] collaboration, and a partner of the [http://openmicroscopy.org/ Open Microscopy Environment consortium].
 
 == Developers ==
 * {{Person|Eliceiri}} (PI)
 * {{Person|Rueden}} (lead)
 * {{Person|Etarena}} (developer)
-* {{Person|Awalter2}} (student)
-* {{Person|Leon}} (student)
+* {{Person|Awalter2}} (developer)
 
 == Alumni ==
+* {{Person|Leon}} (Sep 2015 - May 2017)
 * {{Person|Alecneevel}} (Jul 2015-Jan 2017)
 * {{Person|Hinerm}} (Sep 2010-Jun 2016)
 * {{Person|Schindelin}} (Sep 2011-Nov 2014)
