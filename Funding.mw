@@ -30,7 +30,11 @@ Core [[SciJava]] libraries are funded indirectly by the various involved softwar
 
 The [[Fiji]] distribution of [[ImageJ]] for the life sciences is a broad collection of plugins by many authors across the worldwide community.
 
-Fiji development is funded indirectly by various institutions as part of their respective research and development goals. Fiji as a whole is organized and maintained as part of the ImageJ2 effort by {{Person|Rueden}} of UW-Madison [[LOCI]].
+Fiji as a whole is organized and maintained by:
+* {{Person|Rueden}} of UW-Madison [[LOCI]], currently supported by CZI as a [https://www.chanzuckerberg.com/newsroom/czi-announces-support-for-open-source-software-efforts-to-improve-biomedical-imaging Imaging Software Fellow].
+* {{Person|turekg}} of [[CSBD]]/[[MPI-CBG]] as part of a funded Fiji Software Sustainability Grant (DFG TO563/8-1).
+
+Fiji development is also funded indirectly by various institutions as part of their respective research and development goals.
 
 == DAIS ==
 The Dresden Analysis-of-Images Suite ([[DAIS]]) is a partner project of [https://www.denbi.de/network/center-for-integrative-bioinformatics-cibi/21-about/508-portfolio-of-center-for-integrative-bioinformatics-cibi CIBI] in the German Network for Bioinformatics Infrastructure ([https://www.denbi.de de.NBI)].
