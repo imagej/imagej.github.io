@@ -12,7 +12,7 @@ Historically, [[ImageJ 1.x]] was funded internally by the [http://rsbweb.nih.gov
 
 In recent years, ImageJ2 development has been funded by several sources, including a [http://www.wellcome.ac.uk/ Wellcome Trust] Strategic Award (Ref: 095931) for the [[OMERO]] project, and substantial development effort at the University of Konstanz, University of Wisconsin-Madison and elsewhere.
 
-The ImageJ2 project as a whole is maintained by {{Person|Rueden}} of UW-Madison [[LOCI]], currently supported by CZI as a [https://www.chanzuckerberg.com/newsroom/czi-announces-support-for-open-source-software-efforts-to-improve-biomedical-imaging Imaging Software Fellow].
+The ImageJ2 project as a whole is maintained by {{Person|Rueden}} of UW-Madison [[LOCI]], currently supported by CZI as an [https://www.chanzuckerberg.com/newsroom/czi-announces-support-for-open-source-software-efforts-to-improve-biomedical-imaging Imaging Software Fellow].
 
 == SCIFIO ==
 
@@ -34,14 +34,14 @@ The ImgLib2 project as a whole is organized and maintained by {{Person|Pietzsch}
 
 Core [[SciJava]] libraries are funded indirectly by the various involved software efforts, including [[ImageJ2]], [[KNIME]], [[OMERO]] and [[CellProfiler]].
 
-The SciJava project as a whole is organized and maintained by {{Person|Rueden}} of UW-Madison [[LOCI]], currently supported by CZI as a [https://www.chanzuckerberg.com/newsroom/czi-announces-support-for-open-source-software-efforts-to-improve-biomedical-imaging Imaging Software Fellow].
+The SciJava project as a whole is organized and maintained by {{Person|Rueden}} of UW-Madison [[LOCI]], currently supported by CZI as an [https://www.chanzuckerberg.com/newsroom/czi-announces-support-for-open-source-software-efforts-to-improve-biomedical-imaging Imaging Software Fellow].
 
 == Fiji ==
 
 The [[Fiji]] distribution of [[ImageJ]] for the life sciences is a broad collection of plugins by many authors across the worldwide community.
 
 Fiji as a whole is organized and maintained by:
-* {{Person|Rueden}} of UW-Madison [[LOCI]], currently supported by CZI as a [https://www.chanzuckerberg.com/newsroom/czi-announces-support-for-open-source-software-efforts-to-improve-biomedical-imaging Imaging Software Fellow].
+* {{Person|Rueden}} of UW-Madison [[LOCI]], currently supported by CZI as an [https://www.chanzuckerberg.com/newsroom/czi-announces-support-for-open-source-software-efforts-to-improve-biomedical-imaging Imaging Software Fellow].
 * {{Person|turekg}} of [[CSBD]]/[[MPI-CBG]] as part of a funded Fiji Software Sustainability Grant (DFG TO563/8-1).
 
 Fiji development is also funded indirectly by various institutions as part of their respective research and development goals.
