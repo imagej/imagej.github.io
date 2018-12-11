@@ -3,7 +3,7 @@
 | name = CSBDeep Fiji Plugin
 | url = https://imagej.net/CSBDeep
 | source = {{GitHub | org=CSBDeep | repo=CSBDeep_fiji | tag=csbdeep-0.3.3}}
-| license = [[Simplified BSD License]]
+| license = [[BSD-2]]
 | release = {{Maven | g=de.csbdresden | a=csbdeep | v=0.3.3 | label=0.3.3}}
 | date = Tue Dec 11 00:00:00 CDT 2018
 | devStatus = {{DevStatus | developer=yes | incubating=yes | obsolete=no}}
