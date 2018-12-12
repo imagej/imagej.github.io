@@ -5,26 +5,34 @@
 == Approaches ==
 
 There are three common methods for constructing an uber-JAR:
-
-* '''Unshaded.''' Unpack all JAR files, then repack them into a single JAR.
-** '''Pro:''' Works with Java's default class loader.
-** '''Con:''' Files present in multiple JAR files with the same path (e.g., <code>META-INF/services/javax.script.ScriptEngineFactory</code>) will overwrite one another, resulting in faulty behavior.
-** '''Tools:''' [http://maven.apache.org/plugins/maven-assembly-plugin/ Maven Assembly Plugin], [http://classworlds.codehaus.org/uberjar.html Classworlds Uberjar]
-* '''Shaded.''' Same as unshaded, but rename (i.e., "shade") all packages of all dependencies.
-** '''Pro:''' Works with Java's default class loader. Avoids some (not all) dependency version clashes.
-** '''Con:''' Files present in multiple JAR files with the same path (e.g., <code>META-INF/services/javax.script.ScriptEngineFactory</code>) will overwrite one another, resulting in faulty behavior. As a work around, adding the following lines to the shade plugin section of the pom will apply the appending tranform to multiple resources with the same name (in this case <code>org.scijava.plugin.Plugin</code> files). 
-<code>
+<ul>
+<li>'''Unshaded.''' Unpack all JAR files, then repack them into a single JAR.
+  <ul>
+  <li>'''Pro:''' Works with Java's default class loader.</li>
+  <li>'''Con:''' Files present in multiple JAR files with the same path (e.g., <code>META-INF/services/javax.script.ScriptEngineFactory</code>) will overwrite one another, resulting in faulty behavior.</li>
+  <li>'''Tools:''' [http://maven.apache.org/plugins/maven-assembly-plugin/ Maven Assembly Plugin], [http://classworlds.codehaus.org/uberjar.html Classworlds Uberjar]</li>
+  </ul>
+</li>
+<li>'''Shaded.''' Same as unshaded, but rename (i.e., "shade") all packages of all dependencies.
+  <ul>
+  <li>'''Pro:''' Works with Java's default class loader. Avoids some (not all) dependency version clashes.</li>
+  <li>'''Con:''' Files present in multiple JAR files with the same path (e.g., <code>META-INF/services/javax.script.ScriptEngineFactory</code>) will overwrite one another, resulting in faulty behavior. As a workaround, if you use [[Maven]], you can add the following lines to the shade plugin section of the POM  to apply the appending tranform to multiple resources with the same name (in this case <code>org.scijava.plugin.Plugin</code> files):
+<source lang=xml>
 <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
-
 <resource>META-INF/json/org.scijava.plugin.Plugin</resource>
-
 </transformer>
-</code>
-** '''Tools:''' [http://maven.apache.org/plugins/maven-shade-plugin/ Maven Shade Plugin]
-* '''JAR of JARs'''. The final JAR file contains the other JAR files embedded within.
-** '''Pro:''' Avoids dependency version clashes. All resource files are preserved.
-** '''Con:''' Needs to bundle a special "bootstrap" classloader to enable Java to load classes from the wrapped JAR files. Debugging class loader issues becomes more complex.
-** '''Tools:''' [http://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fref-export-jar.htm Eclipse JAR File Exporter], [http://one-jar.sourceforge.net/ One-JAR].
+</source>
+  </li>
+  <li>'''Tools:''' [http://maven.apache.org/plugins/maven-shade-plugin/ Maven Shade Plugin]</li>
+  </ul>
+</li>
+<li>'''JAR of JARs'''. The final JAR file contains the other JAR files embedded within.
+  <ul>
+  <li>'''Pro:''' Avoids dependency version clashes. All resource files are preserved.</li>
+  <li>'''Con:''' Needs to bundle a special "bootstrap" classloader to enable Java to load classes from the wrapped JAR files. Debugging class loader issues becomes more complex.</li>
+  <li>'''Tools:''' [http://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fref-export-jar.htm Eclipse JAR File Exporter], [http://one-jar.sourceforge.net/ One-JAR].</li>
+  </ul>
+</li>
 
 == Discussion ==
 
