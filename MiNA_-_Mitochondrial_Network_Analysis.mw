@@ -140,6 +140,7 @@ Running the tool will generate an image with an overlay of the binarized mitocho
 | user comment
 | The comment supplied by the user. If key value pairs are provided, they will be put in an appropriate column (as shown in Figure 5).
 |}
+''*Note that the analysis parameters are also stored in the output table for reference. This will be made optional in a future update.''
 
 <h1>Reporting Bugs and Suggestions</h1>
 The source code for MiNA is available on [https://github.com/ScienceToolkit/MiNA Github]. Software bugs can be reported using the [https://github.com/ScienceToolkit/MiNA/issues issue tracker]. If you think of a useful feature, there is a discussion page on [https://gitter.im/MiNA-Suggestions/Lobby Gitter] for the project and if you implement your own feature, fix a bug, or extend the tool and want to contribute it back to the project you can always make a [https://github.com/ScienceToolkit/MiNA/pulls pull request].
