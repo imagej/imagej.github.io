@@ -38,13 +38,9 @@ You can also manually [[Special:ChangeUploadPassword|change or initialize your u
 To allow the distribution of plugins and macros with intuitive update site names, a given user/wiki account can own several update sites for separate projects. This can be requested on the forum (see [https://forum.image.sc/t/distributing-several-update-sites/21219/2?u=lthomas related post]).
 
 == Group update site ==
-In addition to personal update sites, it is possible for groups of people to share an update site.
+In addition to [[personal update sites]], it is possible for groups of people to share an update site.
 
-To create such an update site, you need to have a group email and set up a personal update site for that email with an appropriate user name.
-
-Then make sure that all users who should be allowed to upload to that update site have personal update sites, too (they do not need to use them).
-
-Once all that is done, send a mail to the Fiji mailing list requesting that the users be granted upload permission to the group update site. An administrator will then add the user names to the Require user line in the respective .htaccess file.
+To create such an update site, post on the [https://forum.image.sc/tags/imagej Image.sc Forum] requesting the creation of the site on <code>sites.imagej.net</code>, including the desired name of the site, as well as the wiki usernames to be granted upload permission to the group update site. An administrator will then create the site skeleton and grant those users upload permission to the new site.
 
 == Adding an update site on your own server ==
 
