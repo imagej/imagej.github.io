@@ -41,7 +41,7 @@ In addition to cloning the [https://github.com/imagej/imagej-ops imagej-ops] its
 The Ops matching framework provides '''extensibility.''' Ops are plugins, so any developer can override the behavior of a particular op as needed—e.g., for improved performance of a special case. See "Design goals" above.
 
 === Can a C/C++ or MATLAB function be converted to an op? ===
-Yes, but there is no automagic wrapping of native/external functionality in Ops.  The [https://github.com/imagej/ops-experiments ops-experimeents] project is an ongoing effort to work out a maven based build system for ops that use native code.  The efforts so far have focused on wrapping, cuda, mkl and tensorflow implementations of deconvolution algorithms using [https://github.com/bytedeco/javacpp javacpp].
+Yes, but there is no automagic wrapping of native/external functionality in Ops.  The [https://github.com/imagej/ops-experiments ops-experiments] project is an ongoing effort to work out a maven based build system for ops that use native code.  The efforts so far have focused on wrapping, cuda, mkl and tensorflow implementations of deconvolution algorithms using [https://github.com/bytedeco/javacpp javacpp].
 
 === Is there a list of Ops somewhere with brief descriptions of their functionalities? ===
 
