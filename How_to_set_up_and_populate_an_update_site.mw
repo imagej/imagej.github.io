@@ -40,7 +40,7 @@ To allow the distribution of plugins and macros with intuitive update site names
 == Group update site ==
 In addition to [[personal update sites]], it is possible for groups of people to share an update site.
 
-To create such an update site, post on the [https://forum.image.sc/tags/imagej Image.sc Forum] requesting the creation of the site on <code>sites.imagej.net</code>, including the desired name of the site, as well as the wiki usernames to be granted upload permission to the group update site. An administrator will then create the site skeleton and grant those users upload permission to the new site.
+To create such an update site, post on the [https://forum.image.sc/tags/imagej Image.sc Forum], or in the [https://gitter.im/imagej/imagej imagej Gitter channel], requesting the creation of the site on <code>sites.imagej.net</code>, including the desired name of the site, as well as the wiki usernames to be granted upload permission to the group update site. An administrator will then create the site skeleton and grant those users upload permission to the new site.
 
 == Adding an update site on your own server ==
 
