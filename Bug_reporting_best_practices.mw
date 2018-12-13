@@ -81,7 +81,7 @@ The [[Report a Bug]] dialog provides several pieces of critical information. Som
 * Activated update sites
 * Files not up-to-date
 
-The [[List_of_update_sites|default update sites]] are intended to be fairly stable, but if you have additional update sites enabled there can be a risk of skewed or out of date dependencies (due to changes in core libraries), and some update sites are intentionally experimental.
+The {{ListOfUpdateSites|default update sites}} are intended to be fairly stable, but if you have additional update sites enabled there can be a risk of skewed or out of date dependencies (due to changes in core libraries), and some update sites are intentionally experimental.
 
 Furthermore, if you have any '''LOCAL_ONLY''' or '''MODIFIED''' files, their behavior can not be guaranteed - as they do not match what's on the active update sites and thus can not be automatically updated in response to changes in their dependencies.
 
