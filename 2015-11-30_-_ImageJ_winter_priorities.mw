@@ -4,7 +4,7 @@ Here is a status update from the ImageJ team at [[LOCI]]: where we're at, what's
 
 First and foremost, we're on the cusp of submitting a paper describing the structure of ImageJ2, which is a critical step towards future funding efforts.
 
-On the technical side, {{Person|Rueden}} just wrote the first ImageJ code using Java 8 functionality, which will continue drive our {{GitHub | org=imagej | repo=imagej | issue=135 | label=need to migrate}}. One recent and fundamental step in this direction is the release of the [[List_of_update_sites|3D update site]]: providing Java 7- and 8-compatible versions of 3D ImageJ plugins (previously relegated to Java 6).
+On the technical side, {{Person|Rueden}} just wrote the first ImageJ code using Java 8 functionality, which will continue drive our {{GitHub | org=imagej | repo=imagej | issue=135 | label=need to migrate}}. One recent and fundamental step in this direction is the release of the {{ListOfUpdateSites|3D update site}}: providing Java 7- and 8-compatible versions of 3D ImageJ plugins (previously relegated to Java 6).
 
 ==Next steps==
 
