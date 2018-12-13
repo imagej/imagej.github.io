@@ -52,7 +52,7 @@ We have continued to flesh out example code for developers. There are now [https
 
 === SLIM Plugin ===
 
-The SLIM Plugin is being refactored for ImageJ2 but is not yet available. Meanwhile, the version available from the [[List of update sites|LOCI update site]] can be used for lifetime fitting with Fiji. See the [[SLIM Curve]] page for details.
+The SLIM Plugin is being refactored for ImageJ2 but is not yet available. Meanwhile, the version available from the {{ListOfUpdateSites|LOCI update site}} can be used for lifetime fitting with Fiji. See the [[SLIM Curve]] page for details.
 
 === Compatibility ===
 
@@ -141,7 +141,7 @@ The following is a more detailed list of changes for this release:
 * The SSH uploader now works even with OS X servers.
 * The updater handles Micro-Manager's circular dependency between <code>MMJ_.jar</code> and <code>MMCore.jar</code> gracefully now.
 * The updater has special handling for DropBox-backed update sites.
-* The "Manage Update Sites" dialog in the advanced mode got a major overhaul: it now presents a list of pre-defined update sites (read from the [[List of update sites|list of update sites]]) for easy activation, and allows convenient initialization of a personal update site ([http://sites.imagej.net/ http://sites.imagej.net/]).
+* The "Manage Update Sites" dialog in the advanced mode got a major overhaul: it now presents a list of pre-defined update sites (read from the {{ListOfUpdateSites}}) for easy activation, and allows convenient initialization of a personal update site ([http://sites.imagej.net/ http://sites.imagej.net/]).
 
 === MiniMaven ===
 
