@@ -1,4 +1,4 @@
-This account is used to manage the [http://sites.imagej.net/OMERO-5.1/ OMERO 5.1 update site]. See also [[List of update sites]].{{Warning | Java 7 or later is required to use this update site!}}
+This account is used to manage the [http://sites.imagej.net/OMERO-5.1/ OMERO 5.1 update site]. See also {{ListOfUpdateSites}}.{{Warning | Java 7 or later is required to use this update site!}}
 To activate it:
 
 * [[Update_Sites|''Help>Update'']]
