@@ -5,7 +5,7 @@ This plugin allows for importing detections and tracks contained in CSV files in
 
 == Installation. ==
 
-This plugin lives on a separate [[List_of_update_sites|update site]]. If you want to use it, you first need to subscribe to the update site named <code>TrackMateCSVImporter</code>, as explained [[Following_an_update_site|here]].
+This plugin lives on a separate {{ListOfUpdateSites|update site}}. If you want to use it, you first need to subscribe to the update site named <code>TrackMateCSVImporter</code>, as explained [[Following_an_update_site|here]].
 
 The importer can be found in the {{bc|  Plugins | Tracking | TrackMate CSV importer}} menu.
 
