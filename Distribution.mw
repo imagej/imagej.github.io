@@ -32,7 +32,7 @@ The first goal is to get your extension into the hands of users.
 |-
 | style="background: #dfd; vertical-align: top" |
 * '''[[How to set up and populate an update site| Create your update site]]''', then '''[[How to set up and populate an update site#Uploading_files_to_your_update_site|upload your extension to it]]'''.
-* You may add your update site to the list of built-in sites by editing the '''[[list of update sites]]''' page.
+* You may add your update site to the list of built-in sites by editing the '''{{ListOfUpdateSites}}''' page.
 * To release a new version, '''[[How to set up and populate an update site#Uploading_files_to_your_update_site|upload it to the update site]]'''.
 | style="background: #dfd; vertical-align: top" |
 * Users '''[[How to follow a 3rd party update site|enable the update site]]''' to receive your extension.
