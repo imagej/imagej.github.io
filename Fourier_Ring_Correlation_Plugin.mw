@@ -50,7 +50,7 @@ Please see the publication '''van Hell and Schatz, Fourier shell correlation thr
 We recommend you use a calibrated image so that your results are in calibrated units (microns, millimeters, etc..) directly. The plugin will always return both the non calibrated values and the calibrated ones as separate columns.
 
 = Installation =
-This plugin is available from the [[List of update sites|PTBIOP Update Site]]
+This plugin is available from the {{ListOfUpdateSites|PTBIOP Update Site}}
 This places it in a "BIOP" Folder in the plugins directory of Fiji/ImageJ
 
 = Use =
