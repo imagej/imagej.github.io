@@ -42,7 +42,7 @@ Thresholds are created by the Adjust Threshold command. This command It utilizes
 
 The ImageJ updater has been enhanced to support "personal" update sites, which are hosted at [http://sites.imagej.net/ http://sites.imagej.net/], in a subdirectory matching your account on the [http://imagej.net/ ImageJ wiki] (which is also the [http://fiji.sc/ Fiji wiki], at least for the time being). In this way, every ImageJ user can have their own update site to distribute their plugins via the ImageJ updater, without needing to create a web site or find hosting space on a web server.
 
-The "Manage update sites" dialog in the advanced mode also got a major overhaul: it now presents a list of pre-defined update sites (read from the [[List of update sites|list of update sites]]) for easy activation, and allows convenient initialization of a personal update site ([http://sites.imagej.net/ http://sites.imagej.net/]).
+The "Manage update sites" dialog in the advanced mode also got a major overhaul: it now presents a list of pre-defined update sites (read from the {{ListOfUpdateSites}}) for easy activation, and allows convenient initialization of a personal update site ([http://sites.imagej.net/ http://sites.imagej.net/]).
 
 See below for a complete list of updater improvements.
 
