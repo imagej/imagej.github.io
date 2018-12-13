@@ -10,7 +10,7 @@
 | category        = [[:Category:Analysis|Analysis]], [[:Category:Scripting|Scripting]], [[:Category:Plugins|Plugins]]
 }}
 
-A [[BAR]] script (written in [[Beanshell_Scripting|BeanShell]]) that retrieves local maxima and minima from an ImageJ plot. The easiest way to install ''Find Peaks'' is by [[BAR#Installation|subscribing]] to the BAR [[List_of_update_sites|update site]].
+A [[BAR]] script (written in [[Beanshell_Scripting|BeanShell]]) that retrieves local maxima and minima from an ImageJ plot. The easiest way to install ''Find Peaks'' is by [[BAR#Installation|subscribing]] to the BAR {{ListOfUpdateSites|update site}}.
 
 == Options ==
 [[File:FindPeaksSnapshot.png|thumb|right|550px|Analysis of synthetic data plotted from a .csv file. CSV files can be imported into ImageJ by drag and drop, or by using <span style="border-bottom:1px dotted #ccc;">File▷ Import▷ Results</span>. Once [[#options|options]] are specified, coordinates of retrieved peaks are logged to the table of a new plot window]]
