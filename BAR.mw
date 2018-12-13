@@ -13,7 +13,7 @@
 {{TOC}}
 '''BAR''': A collection of '''B'''roadly '''A'''pplicable '''R'''outines.
 
-The collection contains [[Macros]], [[Scripts]] and [[Plugins]] focused on Data Analysis, Image Annotation and Image Segmentation. It is curated using {{GitHub|org=tferr|repo=Scripts#ij-bar|label=GitHub}} and distributed as an optional [[List_of_update_sites|update site]].
+The collection contains [[Macros]], [[Scripts]] and [[Plugins]] focused on Data Analysis, Image Annotation and Image Segmentation. It is curated using {{GitHub|org=tferr|repo=Scripts#ij-bar|label=GitHub}} and distributed as an optional {{ListOfUpdateSites|update site}}.
 
 == Installation ==
 Run {{bc|Help|Update...}} and choose ''Manage update sites''. Activate the ''BAR'' checkbox in the alphabetically-sorted list of update sites. Press ''OK'', then ''Apply changes''. Restart ImageJ. That's it. Enjoy BAR!
