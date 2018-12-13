@@ -165,7 +165,7 @@ That's it - you're done. Now, anyone who wants a copy of your plugins merely nee
 
 == Publishing your update site ==
 
-If you want your update site to be listed in the ImageJ update manager, just edit the wiki page : [[list of update sites]].
+If you want your update site to be listed in the ImageJ update manager, just edit the wiki page : {{ListOfUpdateSites}}.
 
 [[Category:Tutorials]]
 
