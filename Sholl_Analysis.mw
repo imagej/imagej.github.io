@@ -295,7 +295,7 @@ This section discusses some aspects that should be taken into account when segme
 :* Median Filtering (2D/3D), e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ Filters▷</span>, <span style="border-bottom:1px dotted #ccc;">Plugins▷ 3D▷</span>
 :* [[Anisotropic_Diffusion_2D|Anisotropic Diffusion]], <span style="border-bottom:1px dotted #ccc;">Plugins▷ Process▷ Anisotropic Diffusion 2D</span>
 :* Sobel Edge Detection, e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ Find Edges</span>
-:* Shen-Castan Edge Detector ([[BAR]] [[List_of_update_sites|update site]]), <span style="border-bottom:1px dotted #ccc;">BAR▷ Segmentation▷</span>
+:* Shen-Castan Edge Detector ([[BAR]] {{ListOfUpdateSites|update site}}), <span style="border-bottom:1px dotted #ccc;">BAR▷ Segmentation▷</span>
 :* Frequency filters, e.g., <span style="border-bottom:1px dotted #ccc;">Process▷ FFT▷ Bandpass Filter...</span> 
 <span id="Uneven_Illumination"></span>
 ;Uneven Illumination
@@ -308,15 +308,15 @@ This section discusses some aspects that should be taken into account when segme
 :* [[Auto Local Threshold|Local Threshold]], <span style="border-bottom:1px dotted #ccc;">Image▷ Adjust▷</span>
 :* [[RATS:_Robust_Automatic_Threshold_Selection|Robust Automatic Threshold Selection]], <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
 :* [[Level_Sets|Level Sets]], <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
-:* [[Morphological Segmentation]] (IJPB-plugins [[List_of_update_sites|update site]]), <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
-:* [[Squassh]], split-Bregman Image Segmentation (Segmentation and Quantification of Sub-cellular Shapes, MOSAIC ToolSuite [[List_of_update_sites|update site]]), , <span style="border-bottom:1px dotted #ccc;">Plugins▷ Mosaic▷ Segmentation▷</span>
+:* [[Morphological Segmentation]] (IJPB-plugins {{ListOfUpdateSites|update site}}), <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
+:* [[Squassh]], split-Bregman Image Segmentation (Segmentation and Quantification of Sub-cellular Shapes, MOSAIC ToolSuite {{ListOfUpdateSites|update site}}), , <span style="border-bottom:1px dotted #ccc;">Plugins▷ Mosaic▷ Segmentation▷</span>
 <span id="Semi-Automated_Segmentation"></span>
 ;Semi-Automated Segmentation
 :Object detection and image segmentation in images with poor signal-to-noise will likely require decisions taken by a human operator. This is frequently done using hand-crafted workflows using either ImageJ's built-in tools or external add ons. Examples:
 :* [[Lasso selection|Blow/Lasso Tool]], <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
-:* Scripts from the [[BAR]] [[List_of_update_sites|update site]], <span style="border-bottom:1px dotted #ccc;">BAR▷ [[BAR#Segmentation|Segmentation]]▷</span>
+:* Scripts from the [[BAR]] {{ListOfUpdateSites|update site}}, <span style="border-bottom:1px dotted #ccc;">BAR▷ [[BAR#Segmentation|Segmentation]]▷</span>
 {{Tip
-|tip = For additional image processing tools have a look at the growing list of  [[List_of_update_sites|update sites]]. For more information on image processing have a look at [[:Category:Tutorials|tutorials]], [[:Category:Segmentation|segmentation]] and the [http://imagej.net/docs/guide/ ImageJ User Guide].
+|tip = For additional image processing tools have a look at the growing list of  {{ListOfUpdateSites|update sites}}. For more information on image processing have a look at [[:Category:Tutorials|tutorials]], [[:Category:Segmentation|segmentation]] and the [http://imagej.net/docs/guide/ ImageJ User Guide].
 }}
 
 == Batch Processing ==
