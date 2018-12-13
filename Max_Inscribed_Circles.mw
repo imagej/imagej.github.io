@@ -29,7 +29,7 @@ By using a Local Maxima Finder, we can draw multiple circles on a single pass, p
 
 That way when there are plenty of circles that are the same size, we can draw them all at the same time. 
 == Installation == 
-This plugin is available from the [[List of update sites|BIOP Update Site]]
+This plugin is available from the {{ListOfUpdateSites|BIOP Update Site}}
 This places it in a "BIOP" Folder in the plugins directory of Fiji/ImageJ
 
 == Use ==
