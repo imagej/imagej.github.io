@@ -16,7 +16,7 @@ I. F. Sbalzarini and P. Koumoutsakos. '''Feature Point Tracking and Trajectory A
 
 All information on how to install the tools, documentation and developer information is available on the [http://mosaic.mpi-cbg.de/?q=downloads/imageJ MOSAIC group website].
 
-The plugins are available in Fiji through a dedicated [[List_of_update_sites|'''update site''']].
+The plugins are available in Fiji through a dedicated {{ListOfUpdateSites|'''update site'''}}.
 
 We are looking forward to more contributions from the MOSAIC group in the future.
 
