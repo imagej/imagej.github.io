@@ -45,4 +45,4 @@ Wagner, T and Lipinski, H 2013. IJBlob: An ImageJ Library for Connected Componen
 * '''Fractal Box Dimension''': Estimated fractal dimension by the box count algorithm. The default box-sizes are “2,3,4,6,8,12,16,32,64”.
 
 =Installation=
-You could simply use our update site "[[List of update sites|Biomedgroup]]" to install the shape filter plugin.
+You could simply use our update site "{{ListOfUpdateSites|Biomedgroup}}" to install the shape filter plugin.
