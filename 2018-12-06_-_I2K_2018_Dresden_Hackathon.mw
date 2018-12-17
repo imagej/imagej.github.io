@@ -15,7 +15,17 @@ Gitter channel: https://gitter.im/juglab/Hack1812
 
 * Discussion between: Deborah, Robert, Curtis, Matthias
 * How can we make the scripting in ImageJ2 easier?
+* Setup a table, of scripting examples in IJ1 and IJ2. Improve the IJ2 API where ever it's obviously required.
+* Write a SimpleIJ gateway, that provides really simple methods for the most frequent tasks in ImageJ.
+* A ImageJ2 script recorder could improve the IJ2 API, as it clearly shows where the API is to verbos. 
 
 === Big Data Server ===
 
-* Discussion about a mechanism for secure user authentication in Big Data Server (and ImageJ Server).
+* Discussion Tobias, Gabriella and Matthias about a mechanism for secure user authentication in Big Data Server (and ImageJ Server).
+* It's needed by biologists, that want to share there data with specific users.
+* ImageJ Server would also benefit, if the access to the API could be authenticated in a similar way.
+
+=== Octtree Like, Compressed, Fast, Bitmaps for Imglib2 ===
+
+* Tobias develops a data structure to store bitmap. For iteration, efficient pixels access and little memory foot print at the same time.
+* Such data structures can be used to better express labels in imglib2. Even instance segmentations that consist of millions of labels, can be accessed efficiently if a cell image like cache is used.
