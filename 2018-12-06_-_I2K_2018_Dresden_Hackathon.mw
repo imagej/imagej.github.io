@@ -1,1 +1,21 @@
 From Monday, December 3, 2018 through Friday, December 7, 2018, the [https://mpi-cbg.de/ Max Planck Institute of Molecular Cell Biology and Genetics] hosts ~10 developers at the [http://www.csbdresden.de/ Center for Systems Biology] in Dresden, Germany for a [[hackathon]] to develop KNIME Image Processing and [[ImageJ2]]/[[Fiji]] core infrastructure and [[plugins]].
+
+Gitter channel: https://gitter.im/juglab/Hack1812
+
+== Topics / Technical Discussions ==
+
+=== Labkit as Labeling Editor for KNIME Image Processing ===
+
+* Node for editing labels in KNIME based on [[Labkit]] was created.
+* Work is not entirely finish. We plan to finish this work during the  Ostrava Hackathon.
+* Labkit was extended, and is now able to handle multiple images.
+* A labeling datatype to store labels, and track modifications was developed.
+
+=== Simple ImageJ API ===
+
+* Discussion between: Deborah, Robert, Curtis, Matthias
+* How can we make the scripting in ImageJ2 easier?
+
+=== Big Data Server ===
+
+* Discussion about a mechanism for secure user authentication in Big Data Server (and ImageJ Server).
