@@ -8,14 +8,14 @@ These are meant to be updated through Fiji's updater using the URL to this page 
 
 The macros are designed to be used with images collected through an image splitter and may be of limited use.  However, someone with a working knowledge of the ImageJ macro language can adapt them in a straightforward manner to accommodate most images.  
 
-The Dual-View image analysis macro can be downloaded from here [https://sites.imagej.net/Pattersg/plugins/psFRET_TProfiler-0.1.0-SNAPSHOT.jar-20180809161114].
+The Dual-View image analysis macro can be downloaded from here [https://sites.imagej.net/Pattersg/plugins/psFRET_TProfiler-0.1.0-SNAPSHOT.jar-20181217151301].
 
-The curve-fitting macro can be downloaded from here [https://sites.imagej.net/Pattersg/macros/psFRET_curve_fitting_analysis.ijm-20180801100628]
+The curve-fitting macro can be downloaded from here [https://sites.imagej.net/Pattersg/macros/psFRET_curve_fitting_analysis.ijm-20181217151301]
 
 
 '''psFRET_TProfiler'''
 
-This plugin was designed to accomplish the same goal of the macros above except it should hopefully be more versatile.  A downloadable jar is available here [https://sites.imagej.net/Pattersg/plugins/psFRET_TProfiler-0.1.0-SNAPSHOT.jar-20180809161114].
+This plugin was designed to accomplish the same goal of the macros above except it should hopefully be more versatile.  A downloadable jar is available here [https://sites.imagej.net/Pattersg/plugins/psFRET_TProfiler-0.1.0-SNAPSHOT.jar-20181217151301].
 
 The source code is available on GitHub.
 
@@ -25,7 +25,7 @@ https://github.com/pattersg/psFRET_TProfiler
 '''Photoswitching_Pixel_Fitter'''
 
 This plugin is designed to extract values at every pixel and fit the fluorescence decays to a single exponential with offset equation.  Multi-exponential fitting is not implemented.
-A downloadable jar file is available here [https://sites.imagej.net/Pattersg/plugins/Photoswitching_Pixel_Fitter-0.1.0-SNAPSHOT.jar-20180803061440].
+A downloadable jar file is available here [https://sites.imagej.net/Pattersg/plugins/Photoswitching_Pixel_Fitter-0.1.0-SNAPSHOT.jar-20181217151301].
 
 The source code is available on GitHub.
 
