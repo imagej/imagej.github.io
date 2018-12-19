@@ -1,4 +1,4 @@
-<includeonly>[[File:{{{image}}}|alt={{{title}}}|{{#if:{{{link|}}}|link={{{link}}}|}}|{{{title}}}]]
+<includeonly>[[File:{{{image}}}{{#if:{{{width|}}}|{{!}}{{{width}}}|}}|alt={{{title}}}|{{#if:{{{link|}}}|link={{{link}}}|}}|{{{title}}}]]
 
 = '''{{{section|{{{title}}}}}}''' =
 * '''Location:''' {{{location}}}
