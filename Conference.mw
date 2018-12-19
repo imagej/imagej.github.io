@@ -1,71 +1,68 @@
 == ImageJ User and Developer Conferences ==
 
-Approximately every two years, there is a conference focused on [[ImageJ]]-based software, including both the core program itself, as well as applications and [[plugins]] thereof.
+[[File:Imagej-conference-logo.png]]
+
+Approximately every two years from 2006 through 2015, there was a conference focused on [[ImageJ]]-based software, including both the core program itself, as well as applications and [[plugins]] thereof.
+
+As the community has grown, and the ecosystem of imaging software tools has grown increasingly powerful and diverse, and the scope of the conferences has grown as well. In 2018, the conference name was changed to communicate this evolution of scope.
 
 === Future conferences ===
 
-The [[Fiji]] and [[ImageJ2]] development teams at Max Planck Institute of Molecular Cell Biology and Genetics in Dresden and [[LOCI]] in UW-Madison are pleased to announce the continuation of the ImageJ conference.
+The [[Fiji]] and [[ImageJ]] development teams at Max Planck Institute of Molecular Cell Biology and Genetics in Dresden and [[LOCI]] in UW-Madison are pleased to announce the continuation of the ImageJ conference.
 
 * September 17-18, 2020, University of Wisconsin, Madison
 
-If you have any questions or if you are interested in hosting a future ImageJ conference, please start a thread on the [https://forum.image.sc/ Image.sc Forum].
+If you have any questions or if you are interested in hosting a future conference focused on scientific imaging software, please start a thread on the [https://forum.image.sc/ Image.sc Forum].
 
 === Past conferences ===
 
 {| class="wikitable nicetable"
-!colspan="4" style="border-bottom: 1px solid gray"|[[File:Imagej-conference-logo.png]]
 |-
-|style="vertical-align: bottom;"|'''#'''
-|style="vertical-align: bottom;"|'''Conference'''
-|style="vertical-align: bottom;"|'''Dates'''
-|style="vertical-align: bottom;"|'''Location'''
+!style="vertical-align: bottom;"|'''#'''
+!style="vertical-align: bottom;"|'''Conference'''
+!style="vertical-align: bottom;"|'''Dates'''
+!style="vertical-align: bottom;"|'''Location'''
 |-
-|1
-|[[Conference 2006|ImageJ User and Developer Conference 2006]]
-|18 - 19 May 2006
-|[http://www.tudor.lu/en CRP Henri Tudor], Luxembourg
+|6
+|[[I2K 2018|From Images to Knowledge with ImageJ & Friends]]
+|6 - 8 December 2018
+|[https://www.embl.de/ EMBL], Heidelberg, Germany
 |-
-|2
-|[[Conference 2008|ImageJ User and Developer Conference 2008]]
-|7 - 8 November 2008
-|[http://www.tudor.lu/en CRP Henri Tudor], Luxembourg
+| -
+|[http://eubias.org/NEUBIAS/neubias2020-conference/symposium2017-lisbon/ NEUBIAS 2020, Oeiras-Lisbon 2017]
+|15 - 17 February 2017
+|Lisbon, Portugal
 |-
-|3
-|[[Conference 2010|ImageJ User and Developer Conference 2010]]
-|27 - 29 October 2010
-|[http://www.mondorf.lu/en Mondorf Domaine Thermal], Luxembourg
+|5
+|[[Conference 2015|ImageJ User and Developer Conference 2015]]
+|3 - 4 September 2015
+|[http://discovery.wisc.edu/ Wisconsin Institutes for Discovery], Madison, WI, USA
 |-
 |4
 |[[Conference 2012|ImageJ User and Developer Conference 2012]]
 |24 - 26 October 2012
 |[http://www.mondorf.lu/en Mondorf Domaine Thermal], Luxembourg
 |-
-|5
-|[[Conference 2015|ImageJ User and Developer Conference 2015]]
-|3 - 4 September 2015
-|[http://discovery.wisc.edu/ Wisconsin Institutes for Discovery], Madison, WI, USA
-|}
-
-== Related conferences ==
-
-Some other conferences have been strongly related to ImageJ:
-
-{| class="wikitable nicetable"
-|style="vertical-align: bottom;"|'''Conference'''
-|style="vertical-align: bottom;"|'''Dates'''
-|style="vertical-align: bottom;"|'''Location'''
-|-
-| [https://www.embl.de/training/events/2018/IMJ18-01/ I2K]
-| December 6-8, 2018
-| EMBL Heidelberg, Germany
-|-
-| [http://eubias.org/NEUBIAS/neubias2020-conference/symposium2017-lisbon/ NEUBIAS 2020, Oeiras-Lisbon 2017]
-| 15 - 17 February 2017
-| Lisbon, Portugal
-|-
+| -
 |[[ISBI 2012|Bioimage analysis workshop - ISBI 2012]]
 |30 April - 1 May 2012
 |Barcelona, Spain
+|-
+|3
+|[[Conference 2010|ImageJ User and Developer Conference 2010]]
+|27 - 29 October 2010
+|[http://www.mondorf.lu/en Mondorf Domaine Thermal], Luxembourg
+|-
+|2
+|[[Conference 2008|ImageJ User and Developer Conference 2008]]
+|7 - 8 November 2008
+|[http://www.tudor.lu/en CRP Henri Tudor], Luxembourg
+|-
+|1
+|[[Conference 2006|ImageJ User and Developer Conference 2006]]
+|18 - 19 May 2006
+|[http://www.tudor.lu/en CRP Henri Tudor], Luxembourg
+|-
 |}
 
 [[Category:Conference]]
