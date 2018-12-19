@@ -3,7 +3,7 @@
 = '''{{{section|{{{title}}}}}}''' =
 * '''Location:''' {{{location}}}
 * '''Dates:''' {{{dates}}}
-{{#if:{{{link|}}}|See the [{{{link}}} {{{title}}} web site] for details!|}}
+{{#if:{{{link|}}}|See the [{{{link}}} {{{label|{{{title}}}}}} web site] for details!|}}
 [[Category:Conference]]</includeonly>
 <noinclude>== Usage ==
 <pre>
