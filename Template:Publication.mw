@@ -339,6 +339,18 @@
 | title = ImageJ2: ImageJ for the next generation of scientific image data
 | pmid = 29187165}} ({{Scholar | cluster=8433857897174342172}}).
 
+| ImagePy = {{Citation | last = Wang | First = A.
+| last2 = Yan | first2 = X.
+| last3 = Wei | first3 = Z.
+| year = 2018
+| journal = Bioinformatics
+| volume = 34(18)
+| pages = 3238-3240
+| url = https://academic.oup.com/bioinformatics/article/34/18/3238/4989871
+| doi = 10.1093/bioinformatics/bty313
+| title = ImagePy: an open-source, Python-based and platform-independent software package for bioimage analysis
+| pmid = 29718132}} ({{Scholar | cluster=2736756300866278703}}).
+
 | ImgLib2 = {{Citation | last = Pietzsch | first = T.
 | last2 = Preibisch | first2 = S.
 | last3 = Tomancak | first3 = P.
