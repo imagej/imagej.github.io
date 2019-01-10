@@ -8,11 +8,21 @@ The operation of the Batch versions of the processing steps is essentially the s
 
 Macro-scriptable versions of the Multiview Reconstruction steps can be found in the Fiji menu under: {{bc|Plugins|Multiview Reconstruction|Batch Processing}}
 
-== Recording processing steps ==
+== Example: Recording processing steps ==
+
+Clicking {{bc|Plugins|Macros|Record...}} in the Fiji will bring up the macro recorder that compiles most actions performed in Fiji as a executable script.
+
+In the following example, we performed the following macro-recordable steps of BigStitcher:
+
+* Import a dataset (available [[BigStitcher#3D multi-tile dataset (123 MB)|here]]), arange the tiles into a regular grid and re-save the data as HDF5.
+* Perform pairwise shift calculation via Phase correlation, filter the links by thresholding on the correlation coefficient and globally optimize the alignment.
+* Fuse the Tiles and save the results as TIFF
 
 [[File:BigStitcher_Headless_Recorder.png|center|800px]]
 
-== Modifying and Calling the macro ==
+Clicking '''Generate''' in the macro recorder will pop up the Fiji script editor with a new script containing the recorded commands. You can save or '''Run''' the created script.
+
+== Example: Modifying and Calling the macro ==
 
 Calling the macro generated after clicking '''Generate''' will just perform the same steps on the same dataset again. By providing some parameters to the script as an argument string and substitution them in the recorded commands, a script for headless, batch operation of BigStitcher can be generated.
 
