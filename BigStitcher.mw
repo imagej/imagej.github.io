@@ -133,6 +133,12 @@ After assigning PSFs to all the views you want to process, you can proceed with 
 
 *[[BigStitcher_Deconvolution|(MultiView) Deconvolution]]
 
+=== Headless Operation ===
+
+We provide a macro-scriptable version of most processing steps in BigStitcher. They can be recorded using the [[Macro#The recorder|Macro Recorder]] and the resulting script can be adapted, e.g. for batch processing.
+
+*[[BigStitcher_Headless|Headless operation of BigStitcher]]
+
 == Example Datasets ==
 
 We prepared a 2D and 3D version of a tiled dataset for testing the BigStitcher on a small example. We suggest to run BigStitcher on these first before applying it to your dataset. This allows you to quickly test features in an environment where you can easily ask for advice on GitHub or the ImageJ Forum. We will add a larger, multi-view, dataset as a showcase item in the future.
