@@ -3,7 +3,7 @@
 
 == Quick start ==
 
-Check the [http://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/ImageJ_Tutorials_and_Demo.ipynb ImageJ tutorial notebooks]!
+Check the [https://imagej.github.io/tutorials ImageJ tutorial notebooks]!
 
 == What is ImageJ? ==
 
@@ -106,7 +106,7 @@ See the [[source code]] page for further details.
 
 == Tutorials ==
 
-Start with the [http://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/ImageJ_Tutorials_and_Demo.ipynb ImageJ tutorial notebooks]!
+Start with the [https://imagej.github.io/tutorials ImageJ tutorial notebooks]!
 
 {| class="wikitable nicetable"
 | '''Learning the ImageJ API'''
