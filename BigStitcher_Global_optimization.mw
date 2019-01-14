@@ -33,8 +33,8 @@ In the first dialog, you will be asked for the optimization strategy to apply:
 
 If you opt for any of the '''iterative strategies''', you have to consider the two error thresholds, which determine when to stop dropping bad links and re-doing the optimization:
 
-* '''relative error threshold:''' the optimization will be repeated until the biggest error of any tile is smaller than the average error times he threshold.
-* '''absolute error threshold:''' the optimization will be repeated until the average error of the tiles 
+* '''relative error threshold:''' the optimization will be repeated until the largest error of any tile is smaller than the average error of all tiles times the threshold. Lowering this threshold emphasizes consistent quality of the alignment.
+* '''absolute error threshold:''' the optimization will be repeated until the average error of the tiles falls below this value, which should be set the average magnitude of displacements (in pixels) that is still "acceptable" after alignment.
 
 Note that '''both''' stopping conditions have to be met for the optimization to finish.
 
