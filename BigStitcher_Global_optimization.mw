@@ -10,8 +10,11 @@ Furthermore, we apply a few tweaks to improve the results:
 
 = Simple Mode =
 
-The '''simple mode''' of global optimization does not require any user input, as we use reasonable default values for all parameters.
+The '''simple mode''' of global optimization requires only selection of an optimization strategy and no explicit setting of the threshold parameters.
 The simple global optimization is run automatically if you click through the '''Stitching wizard''' (in no-expert mode) or can be accessed from the main menu under {{bc|Optimize Globally And Apply Shift|Simple Mode}}.
+
+[[File:BigStitcher_optimize_simple1.png|center|600px]]
+
 
 This will immediately update the tile locations in the BigDataViewer, if it is open. If you want to un-do this step, you can click {{bc|Remove Transformation|Latest/Newest Transformation}} in the main menu. 
 
