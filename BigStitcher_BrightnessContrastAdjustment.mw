@@ -5,10 +5,16 @@ Even after correcting for fixed-pattern noise (see [[BigStitcher_Flatfield_corre
 
 The brightness and contrast adjustment is available in '''Multiview mode''' under {{bc|Processing|Intensity Adjustment}}.
 
+[[File:BigStitcher_Intensity_Adjustment_menu.png|center|500px]]
+
 {{Notice|Calculating the intensity adjustment requires the images to be aligned, therefore use it as a last step after registration before fusing the dataset.}}
 
 === Usage ===
 
+[[File:BigStitcher_Intensity_Adjustment_dialog.png|center|600px]]
+
 ==== Displaying ====
 
 ==== Removing ====
+
+Go back to the [[BigStitcher#Documentation|main page]]
