@@ -73,38 +73,38 @@ A new diameter was then calculated using the new corrected length and the total 
 ==== Fiber Orientation ====
 Fiber orientation was determined using a well-established plug-in for ImageJ called [http://bigwww.epfl.ch/demo/orientation/ OrientationJ]<ref name="OrientationJ" />.  To determine fiber orientation an axial thinning algorithm was used and then the centerline was enlarged by 2 pixels (using the Enlarge command in ImageJ) to ensure accurate measure of the line.  Within OrientationJ a Fourier gradient was used with a gaussian window of 7 pixels.  The subsequent frequency histogram of fiber orientation was then saved as an image.  OrientationJ limits access to the raw data for this histogram; thus, if the user desires the raw data they must use the "OrientationJ Distribution" plugin.  In the Fiji version of DiameterJ the [[Directionality]]<ref name="Directionality"> Liu. Scale space approach to directional analysis of images. Appl. Opt. (1991) vol. 30 (11) pp. 1369-1373</ref> plugin, written by Jean-Yves Tinevez, can also be used to obtain the raw distribution data.  This approach is considerably slower and less elegant (pop-up windows remain open) than OrientationJ but for now it is the only way to obtain the raw orientation data in batch.
 
-=== <big>How to Use DiameterJ</big> ===
+=== <big>DiameterJの使い方</big> ===
 ----
-====<big>Learn DiameterJ Training Module</big>====
+====<big>DiameterJトレーニングモジュール</big>====
 
-An in-depth training, called [https://sites.google.com/site/diameterj/ Learn DiameterJ], has been developed for users of DiameterJ. In total the training as been broken into 7 components:  
+詳しい使い方を知るには、DiameterJユーザーのために開発された[https://sites.google.com/site/diameterj/ Learn DiameterJ]を御使用ください。トレーニングは主に7つの科目からできています:
 
-# Initial Installation/Training/Use of DiameterJ
-#* Overview of how to install DiameterJ
-#* Training documents explaining general features of DiameterJ software/operation
-#* Detailed description of how to convert pixels to units for analysis 
-#* Quiz to ensure understanding of concepts covered in the training documents
-# Pre-Test 
-#* For research purposes, this training is not required to learn how to use DiameterJ
-#* However, we'd appreciate it if you took the Pre-Test so that we can publish training results later
-# Training 1 -  Cropping and Segmenting
-#* How to crop images for use with DiameterJ
-#* How to segment images using DiameterJ
-#* Segmentation selection criteria for selecting the best segmentation from the options available
-# Training 2 - Manual Segmentation
-#* This training covers how to efficiently manually correct image segmentations
-# Training 3 - Assessment of Fiber Diameter 
-#* Determining average fiber diameter, 
-#* Identifican and use of histograms of the fiber diameter 
-#* Multiple fiber diameters identification
-#* Selection criteria for when to accept a fiber analysis
-# Training 4 - Other Metric Assessment
-#* How to use DiameterJ to assess other metrics of scaffolds
-# Post-Test
-#* For research purposes, this training is not required to learn how to use DiameterJ
-#* However, we'd appreciate it if you took the Post-Test so that we can publish training results later
+# 初期設定/トレーニング/DiameterJの使い方
+#* DiameterJのインストール方法概要
+#* DiameterJのソフトウェア内容、操作法を解説するトレーニング文書
+#* 単位をピクセルから長さに変える方法
+#* クイズ形式で、トレーニング内容を確実にします
+# プレテスト
+#* 解析目的であれば、必ずしもこのトレーニングは必要ありません。
+#* ただし、あなたが受けたプレテストの結果の公表に同意頂ければ、我々は感謝します。
+# Training 1 -  切り抜きと領域の区分け
+#* DiameterJで解析するための画像の切り抜き
+#* DiameterJを使って領域を区分けする方法
+#* いくつかの選択肢の中から、最もよい分割結果を選ぶ方法
+# Training 2 - 手動操作による領域の区分け
+#* このトレーニングで、自動区分けされた結果を効率的に手修正する方法を説明します。
+# Training 3 - 繊維径の評価 
+#* 平均繊維径を決定します。
+#* 繊維径のヒストグラムの識別と使用法
+#* 複数ピークを持つ分布の識別
+#* 繊維分析結果を完了させるタイミング
+# Training 4 - その他の計測に関する注意
+#* 構造を表すその他の数値をDiameterJで求める方法
+# 事後テスト
+#* 解析目的であれば、必ずしもこのトレーニングは必要ありません。
+#* ただし、あなたが受けたプレテストの結果の公表に同意頂ければ、我々は感謝します。
 
-Please go to [https://sites.google.com/site/diameterj/ Learn DiameterJ] to take the training!
+トレーニングのために[https://sites.google.com/site/diameterj/ Learn DiameterJ] にアクセスして下さい!
 
 === <big>DiameterJ Output</big> ===
 ----
