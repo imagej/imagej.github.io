@@ -26,6 +26,8 @@ First, since the adjustment is calculates for pixel intensities in overlapping a
 
 ==== Displaying ====
 
+Clicking '''List all''' in the intensity adjustment sub-menu will list the current intensity adjustment for each image in the dataset.
+
 ==== Removing ====
 
 Go back to the [[BigStitcher#Documentation|main page]]
