@@ -117,8 +117,6 @@ All bounding boxes will be axis-aligned in the '''global coordinate system''' of
 If the brightness of the various Views/Tiles in you dataset differs (e.g. due to bleaching), you have the option of determining an optimized brightness and contrast adjustment that will be applied during the fusion process:
 
 *[[BigStitcher_BrightnessContrastAdjustment|Brightness and Contrast Adjustment]]
-
-
 <!-- === Fusion ===
 In order to fuse the aligned data into a "classical image" and for example save it as TIFF, it is necessary to define the area that should be fused. This is done by defining a '''Bounding Box'''. By default, the software will always ''pre-compute two Bounding Boxes'' covering ''(a) the area covered by all views'' and ''(b) the area covered by the currently selected views''. This means that only if you want to specify a certain (sub)area, for example because there are a lot of empty pixels around your imaged object you need to define a bounding box. To really minimize the fused area, might also want to first [[BigStitcher_ReorientSample|re-orient your sample]] first. More details on Bounding Boxes can be found here:
 
