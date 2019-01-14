@@ -30,4 +30,6 @@ Clicking '''List all''' in the intensity adjustment sub-menu will list the curre
 
 ==== Removing ====
 
+Clicking '''Remove''' in the sub-menu will remove the intensity adjustment from the currently selected image(s).
+
 Go back to the [[BigStitcher#Documentation|main page]]
