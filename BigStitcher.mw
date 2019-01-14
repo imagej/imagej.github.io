@@ -114,7 +114,7 @@ All bounding boxes will be axis-aligned in the '''global coordinate system''' of
 
 *[[BigStitcher_ReorientSample|Sample re-orientation and manual transformation]]
 
-If the brightness of the various Views/Tiles in you dataset differs, you have the option of determining an optimized brightness and contrast adjustment that will be applied during the fusion process:
+If the brightness of the various Views/Tiles in you dataset differs (e.g. due to bleaching), you have the option of determining an optimized brightness and contrast adjustment that will be applied during the fusion process:
 
 *[[BigStitcher_BrightnessContrastAdjustment|Brightness and Contrast Adjustment]]
 
