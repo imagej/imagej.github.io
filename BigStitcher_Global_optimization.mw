@@ -15,6 +15,12 @@ The simple global optimization is run automatically if you click through the '''
 
 [[File:BigStitcher_optimize_simple1.png|center|600px]]
 
+The options available here are:
+
+* '''Do not find wrong links nor handle not connected tiles:''' run the global optimization once, taking all the links in the tile-network (that were not filtered out previously) into consideration. This is the fastest strategy, but it might lead to bad results if you have not carefully filtered out bad pairwise shifts or if there are multiple unconnected regions.
+* '''Wrong link identification only:''' run the optimization iteratively, removing the worst link in the network until the average error of the tiles falls below certain thresholds (presets STRICT and RELAXED). This strategy is more robust against a few "bad" links, but will not move unconnected regions relative to each other.
+* '''Identify wrong links and handle unconnected Tiles:''' first, run optimization with wrong link identification (with threshold presets STRICT and RELAXED) and then use shifts from metadata to align connected components relative to each other (while keeping the results from the first round within a component).  
+* '''Show full options dialog:''' Allow for the manual setting of thresholds in the next step.
 
 This will immediately update the tile locations in the BigDataViewer, if it is open. If you want to un-do this step, you can click {{bc|Remove Transformation|Latest/Newest Transformation}} in the main menu. 
 
@@ -28,9 +34,9 @@ If you click on {{bc|Optimize Globally And Apply Shift|Expert Mode}} or proceed 
 
 In the first dialog, you will be asked for the optimization strategy to apply:
 
-* '''Simple One-Round:''' run the global optimization once, taking all the links in the tile-network (that were not filtered out previously) into consideration. This is the fastest strategy, but it might lead to bad results if you have not carefully filtered out bad pairwise shifts or if there are multiple unconnected regions.
-* '''One-Round with iterative dropping of bad links:''' run the optimization iteratively, removing the worst link in the network until the average error of the tiles falls below certain thresholds (see below). This strategy is more robust against a few "bad" links, but will not move unconnected regions relative to each other.
-* '''Two-Round using Metadata to align unconnected Tiles:''' first, run '''Two-Round using Metadata to align unconnected Tiles''' and then use shifts from metadata to align connected components relative to each other (while keeping the results from the first round within a component).  
+* '''Simple One-Round:''' same as '''Do not find wrong links nor handle not connected tiles:''' (see above)
+* '''One-Round with iterative dropping of bad links:''' same as '''Wrong link identification only:''' (see above)
+* '''Two-Round using Metadata to align unconnected Tiles:''' same as '''Identify wrong links and handle unconnected Tiles:''' (see above)
 
 {{Notice|The computational cost of the global optimization is relatively minor in comparison to the pairwise shift calculation. We therefore recommend to use the '''Two-Round using Metadata to align unconnected Tiles''' strategy (and do so by default in the Simple Mode).}}
 
