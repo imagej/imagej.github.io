@@ -22,7 +22,18 @@ First, since the adjustment is calculates for pixel intensities in overlapping a
 *'''Downsampling''' By how much to downsample the images for the calculation. Since in this step we are only interested in larger-scale intensity variations, we recommend to downsample a lot.
 *'''Max inliers''' How much pixels to consider at most for each image pair. 
 
+Below, you can set various regularization parameters for the intensity adjustment function that is fitted to the data. In detail, we will fit a weighted average of the original image intensity ''I''(x) and a weighted average of a linear transformation ''I''(x) * &alpha; + &beta;1 and an additive offset ''I''(x) + &beta;2 with weights &lambda;1 and &lambda;2:
 
+&lambda;2 * ''I''(x) + (1-&lambda;2) * (&lambda;1 * (''I''(x) + &beta;2) + (1 - &lambda;1) * (''I''(x) * &alpha; + &beta;1) )
+
+
+The options at the bottom of the dialog set the values for &lambda;1 and &lambda;2:
+
+*'''Affine intensity mapping (Scale & Offset)''' enables a linear transform of the intensities instead of just an additive offset.
+*'''Offset only intensity regularization''' corresponds to &lambda;1. Higher values give more weight to an offset-correction vs. a scale and offset correction. Note that if '''Affine intensity mapping''' is deselected, &lambda;1 =1 automatically, so only an offset transform will be calculated.
+*'''Unmodified intensity regularization''' corresponds to &lambda;2. Higher values give more weight to an identiy transformation, i.e. leaving the corrected intensity values as close to the original as possible.
+
+{{Notice|If &lambda;1 and &lambda;2 are both set to 0, the fitted transformation might converge to ''I''(x) * 0 + &beta;1, i.e. setting all intensities equal. To prevent this, please always use values &ge; 0 for at least one of the regularization parameters.}}
 
 ==== Displaying ====
 
