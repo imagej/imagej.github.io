@@ -5,7 +5,8 @@
 | maintainer             = {{Person|Iarganda}}
 | source                 = {{GitHub|org=ijpb|repo=ijpb-plugins}}
 | released               = September 9<sup>th</sup>, 2017
-| latest version         = July 2<sup>nd</sup>, 2018 ([[MorphoLibJ]] v1.3.6)| status                 = stable, active
+| latest version         = October 23<sup>rd</sup>, 2018 ([[MorphoLibJ]] v1.4.0)
+| status                 = stable, active
 | category               = [[:Category:Segmentation|Segmentation]], [[:Category:Mathematical_morphology|Mathematical morphology]]
 }}
 
