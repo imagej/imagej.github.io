@@ -1,0 +1,400 @@
+= Upgrading the ImageJ / Fiji updater =
+
+There is a [https://imagej.net/Updater wiki page] documenting the Updater from user perspective, this page is setting a stage for the changes that will be made to the updater.
+
+== Basics ==
+
+Fiji is an image processing software melting ImageJ1 with novel ImageJ2 functionalities based on scijava and imglib2.
+
+The core plugins written in Java, versioned via Maven and distributed via update sites. But update sites can be used to distribute any type of files (e.g. scripts or binaries). ## User perspective [[File:user-updater.png]] - the user downloads packaged Fiji from website - some update sites are enabled by default and will serve all core updates (see [[#list-of-update-sites|update site chapter]]) - each time Fiji is started, these update sites are checked for new content - in case there is new content, the user will be asked to approve the updates
+
+[[File:user_updatesite.png]] - the user can manually add additional update sites which will then also be checked for updates on startup
+
+== Update site maintainer perspective ==
+
+* the maintainer has Fiji installed
+* the maintainer adds new or updated plugins to the installation
+** .. by adding them manually
+** .. by installing them via maven
+* the maintainer uses the updater to select the changed / new files and upload them to the update site
+
+== Fiji release maintainer perspective ==
+
+* ?
+* melting pot? other scripts?
+
+== The official list of update sites<a name="list-of-update-sites"></a> ==
+
+You can access the list of official update sites here: https://imagej.github.io/list-of-update-sites/. Anything on this list can be installed from Fiji by opening the updater, clicking <code>Manage update sites</code> and clicking the check mark of the list entry.
+
+Anyone who wants to add or change this list needs to create a pull request on https://github.com/imagej/list-of-update-sites.
+
+These are the update sites enabled by default: 
+* ImageJ 
+* Fiji 
+* Java 8
+
+There are historical reasons for the existence of multiple default update sites, e.g. old Fiji installations running on Java 6 will not receive updates served via the Java 8 update site.
+
+== <code>db.xml</code>: The database structure of the updater ==
+
+The updater uses its own XML structure to handle versioning of update site uploads. The structure is used on the update sites to log which files were uploaded but also locally for ones Fiji installation to cache the content of the activated update sites.
+
+=== The remote update site <code>db.xml</code> file ===
+
+An update site database file contains a <code>plugin</code> tag for each file that was ever uploaded to the update site. The tag contains a <code>version</code> if the file is currently used and <code>previous-version</code> tags for all the past versions of this file. In case of a deprecated file there is no <code>version</code> tag.
+
+<source lang="xml">
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE pluginRecords [
+<!ELEMENT pluginRecords ((update-site | disabled-update-site)*, plugin*)>
+<!ELEMENT update-site EMPTY>
+<!ELEMENT disabled-update-site EMPTY>
+<!ELEMENT plugin (platform*, category*, version?, previous-version*)>
+<!ELEMENT version (description?, dependency*, link*, author*)>
+<!ELEMENT previous-version EMPTY>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT dependency EMPTY>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT platform (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ATTLIST update-site name CDATA #REQUIRED>
+<!ATTLIST update-site url CDATA #REQUIRED>
+<!ATTLIST update-site ssh-host CDATA #IMPLIED>
+<!ATTLIST update-site upload-directory CDATA #IMPLIED>
+<!ATTLIST update-site description CDATA #IMPLIED>
+<!ATTLIST update-site maintainer CDATA #IMPLIED>
+<!ATTLIST update-site timestamp CDATA #REQUIRED>
+<!ATTLIST disabled-update-site name CDATA #REQUIRED>
+<!ATTLIST disabled-update-site url CDATA #REQUIRED>
+<!ATTLIST disabled-update-site ssh-host CDATA #IMPLIED>
+<!ATTLIST disabled-update-site upload-directory CDATA #IMPLIED>
+<!ATTLIST disabled-update-site description CDATA #IMPLIED>
+<!ATTLIST disabled-update-site maintainer CDATA #IMPLIED>
+<!ATTLIST disabled-update-site timestamp CDATA #REQUIRED>
+<!ATTLIST plugin update-site CDATA #IMPLIED>
+<!ATTLIST plugin filename CDATA #REQUIRED>
+<!ATTLIST plugin executable CDATA #IMPLIED>
+<!ATTLIST dependency filename CDATA #REQUIRED>
+<!ATTLIST dependency timestamp CDATA #IMPLIED>
+<!ATTLIST dependency overrides CDATA #IMPLIED>
+<!ATTLIST version timestamp CDATA #REQUIRED>
+<!ATTLIST version checksum CDATA #REQUIRED>
+<!ATTLIST version filesize CDATA #REQUIRED>
+<!ATTLIST previous-version filename CDATA #IMPLIED>
+<!ATTLIST previous-version timestamp CDATA #REQUIRED>
+<!ATTLIST previous-version checksum CDATA #REQUIRED>]>
+<pluginRecords>
+    <plugin filename="jars/itext-2.1.5.jar">
+        <previous-version timestamp="20120404210913" checksum="f90b43422e5be48eada0dc1602a9bea6caa6c592" filename="jars/itext-2.1.5.jar"/>
+        <previous-version timestamp="20080423173821" checksum="a88a4b46ddcdcf0312b0fe03b1900412bdb71873" filename="jars/itext-1.3.jar"/>
+        <previous-version timestamp="20080801134354" checksum="a88a4b46ddcdcf0312b0fe03b1900412bdb71873" filename="jars/itext-1.3.jar"/>
+    </plugin>
+    <plugin filename="jars/jai_imageio-1.0.1.jar">
+        <previous-version timestamp="20120404210913" checksum="a08f259a26fa457b66cd0fcd67c89f938e64c0f3" filename="jars/jai_imageio-4.4-imagej-2.0.0-beta1.jar"/>
+        <previous-version timestamp="20120518211518" checksum="e47b1c0e97ecbcf813174aa0919d1e22a5d217df" filename="jars/jai_imageio-4.4-imagej-2.0.0-beta2.1.jar"/>
+        <previous-version timestamp="20120713182620" checksum="87f0853fd9ea404b2ce5985609f9a6b495c3f721" filename="jars/jai_imageio-4.4.0.jar"/>
+        <previous-version timestamp="20120722182530" checksum="86fad81cb22a66464a9dac213790898ffdb9574d" filename="jars/jai_imageio-4.4-SNAPSHOT.jar"/>
+        <previous-version timestamp="20120724094913" checksum="4adeba18117744ef1c2dfbaa30577a5324877d95" filename="jars/jai_imageio-4.4-SNAPSHOT.jar"/>
+        <previous-version timestamp="20080501153041" checksum="74a298ee3cc2bcec3c7fa03bf24a8d08be3baf58" filename="jars/jai_imageio.jar"/>
+        <previous-version timestamp="20120731172159" checksum="32e82fe9a1c1a8371fb725c67376426511847b5f" filename="jars/jai_imageio-4.4-SNAPSHOT.jar"/>
+        <previous-version timestamp="20120807204836" checksum="6db4a1ddabfea787391830295ce6baa079d0d6da" filename="jars/jai_imageio-4.4-SNAPSHOT.jar"/>
+        <previous-version timestamp="20120912153445" checksum="770f78c1d77ab395dacfc01af188eba0b4ce4f58" filename="jars/jai_imageio-4.4.2.jar"/>
+        <previous-version timestamp="20121012025544" checksum="3ca141dd0e7bcc97d028bf164e5a120e55fabe30" filename="jars/jai_imageio-4.4.4.jar"/>
+        <previous-version timestamp="20121020192927" checksum="ae3e30dc06cceea1a0bf03d837188689d583ff6c" filename="jars/jai_imageio-4.4.4.jar"/>
+        <previous-version timestamp="20121106220203" checksum="9776c16d51ffbc8165a4f93ca9d00a0ba6e7da73" filename="jars/jai_imageio-4.4.5.jar"/>
+        <previous-version timestamp="20121211060332" checksum="3ca141dd0e7bcc97d028bf164e5a120e55fabe30" filename="jars/jai_imageio-4.4.5.jar"/>
+        <previous-version timestamp="20130131205114" checksum="f7795ac4e3d00a386bfeff947d4da1eeaffed678" filename="jars/jai_imageio-4.5-SNAPSHOT.jar"/>
+        <previous-version timestamp="20130411222556" checksum="ab4bb60f754b765f3f095d8851524c36d2449fd3" filename="jars/jai_imageio-4.5-SNAPSHOT.jar"/>
+        <previous-version timestamp="20130507160207" checksum="139ef926cfd887dc15e359df984ef2c124d0c3de" filename="jars/jai_imageio-4.4.9-SNAPSHOT.jar"/>
+        <previous-version timestamp="20130620192406" checksum="9b8a1d36fe119b298cdb90c81f2c44730d1fa1d6" filename="jars/jai_imageio-4.4.8.jar"/>
+        <previous-version timestamp="20130716162630" checksum="e5852db5bd833fddeec7dc72601f8b037a59375a" filename="jars/jai_imageio-1.0.1.jar"/>
+    </plugin>
+    <plugin filename="jars/lwf-stubs-4.4.8.jar">
+        <previous-version timestamp="20120404210913" checksum="79306ce7fc25148381c47a792072fa3c77c49163" filename="jars/lwf-stubs-4.4-imagej-2.0.0-beta1.jar"/>
+        <previous-version timestamp="20120518211518" checksum="a21325f2fb086c10e3fbaa9521893e8e87182ece" filename="jars/lwf-stubs-4.4-imagej-2.0.0-beta2.1.jar"/>
+        <previous-version timestamp="20120713182620" checksum="c32b8e83de4ccc3f0bbe26c1a39ff3710945b4e8" filename="jars/lwf-stubs-4.4.0.jar"/>
+        <previous-version timestamp="20120722182530" checksum="0306dc1cce13691f95309522a16f44ecd52a94fb" filename="jars/lwf-stubs-4.4-SNAPSHOT.jar"/>
+        <previous-version timestamp="20120724094913" checksum="bb728cada3ea166528747dd744b4239ba124400d" filename="jars/lwf-stubs-4.4-SNAPSHOT.jar"/>
+        <previous-version timestamp="20120912153445" checksum="273a299c25ebd884b784e6ea913a726ab25fb7fb" filename="jars/lwf-stubs-4.4.4.jar"/>
+        <previous-version timestamp="20121012025544" checksum="8dd17a337c29c7373763375196a937465afb87a5" filename="jars/lwf-stubs-4.4.4.jar"/>
+        <previous-version timestamp="20121020192927" checksum="56891a3ea1b9136cdab4f8c676e8d57bbef5039a" filename="jars/lwf-stubs-4.4.4.jar"/>
+        <previous-version timestamp="20121106220203" checksum="2e19bd44a71ae1259cbe397a5dfe4d5215e0ffaa" filename="jars/lwf-stubs-4.4-SNAPSHOT.jar"/>
+        <previous-version timestamp="20121211060332" checksum="8dd17a337c29c7373763375196a937465afb87a5" filename="jars/lwf-stubs-4.4.5.jar"/>
+        <previous-version timestamp="20130411222556" checksum="b82475904dc68eaa33ec6616bcc6262684b61b9e" filename="jars/lwf-stubs-4.5-SNAPSHOT.jar"/>
+        <previous-version timestamp="20130620192406" checksum="d6c8166154254811e6c35c34f2c0ad06bf9ba99e" filename="jars/lwf-stubs-4.4.8.jar"/>
+    </plugin>
+...
+  <plugin filename="jars/imagej-scripting-0.2.3.jar">
+      <version checksum="7801698fb9d1ab18a12d7b1943ccfed68a47a721" timestamp="20160211155454" filesize="10655">
+          <description>ImageJ applications and examples for SciJava script languages.</description>
+          <author>Christian Dietz</author>
+          <author>Mark Hiner</author>
+          <author>Curtis Rueden</author>
+          <author>Brian Northan</author>
+      </version>
+      <previous-version timestamp="20150902204935" checksum="d5d13fd98aa63b47cf4166ef32111e4f212ca6da" filename="jars/imagej-scripting-0.1.0.jar"/>
+      <previous-version timestamp="20151017013410" checksum="6cd4fb894e063c5bf3ec6a5a8f8750a1838eddb0" filename="jars/imagej-scripting-0.2.1.jar"/>
+      <previous-version timestamp="20151122015629" checksum="79e256801cc78937dbc65eef93387a1a5f56c4eb" filename="jars/imagej-scripting-0.2.2.jar"/>
+  </plugin>
+  <plugin filename="jars/autocomplete-2.5.8.jar">
+      <version checksum="702542d82d5a1475612690a32ca82990f31323d0" timestamp="20151113174007" filesize="145982">
+          <dependency filename="jars/rsyntaxtextarea.jar" timestamp="20150914114133"/>
+      </version>
+      <previous-version timestamp="20150914165303" checksum="9a09c3ab28bd5d0c526ae259a21f10ae63a4a065" filename="jars/autocomplete-2.5.7.jar"/>
+  </plugin>
+  <plugin filename="jars/imagej-deprecated-0.1.1.jar">
+      <version checksum="1c96b0c0ac6f333e0b3ad3c24ba4f3943b76f74c" timestamp="20151122015629" filesize="717206">
+          <description>Deprecated ImageJ packages.</description>
+          <dependency filename="jars/imglib2.jar" timestamp="20150902203209"/>
+          <dependency filename="jars/imagej-common.jar" timestamp="20150914114132"/>
+          <dependency filename="jars/scijava-common.jar" timestamp="20150914114133"/>
+          <dependency filename="jars/udunits.jar" timestamp="20150914114132"/>
+          <dependency filename="jars/imglib2-roi.jar" timestamp="20150914114132"/>
+          <author>Christian Dietz</author>
+          <author>Curtis Rueden</author>
+          <author>Martin Horn</author>
+          <author>Mark Hiner</author>
+      </version>
+      <previous-version timestamp="20150914165303" checksum="5bb1165d50f6d1570d925e925f9d9f7421da9822" filename="jars/imagej-deprecated-0.1.0.jar"/>
+  </plugin>
+  <plugin filename="jars/imglib2-algorithm-fft-0.1.2.jar">
+      <version checksum="235e7c25ce2e135a46cbc7e021b5878078a6f3ae" timestamp="20150914165303" filesize="19754">
+          <description>Image processing algorithms related to Fast Fourier Transforms.</description>
+          <dependency filename="jars/mines-jtk.jar" timestamp="20150914114133"/>
+          <dependency filename="jars/imglib2.jar" timestamp="20150902203209"/>
+      </version>
+  </plugin>
+  <plugin filename="jars/commons-math3-3.5.jar">
+      <version checksum="a728db6629449706bbc339bfbfebfdcb1656cf20" timestamp="20151017013410" filesize="2038489">
+          <description>The Apache Commons Math project is a library of lightweight, self-contained mathematics and statistics components addressing the most common practical problems not immediately available in the Java programming language or commons-lang.</description>
+          <author>Mikkel Meyer Andersen</author>
+          <author>Bill Barker</author>
+          <author>Sébastien Brisard</author>
+          <author>Albert Davidson Chou</author>
+          <author>Mark Diggory</author>
+          <author>Robert Burrell Donkin</author>
+          <author>Luc Maisonobe</author>
+          <author>Tim O'Brien</author>
+          <author>J. Pietschmann</author>
+          <author>Dimitri Pourbaix</author>
+          <author>Gilles Sadowski</author>
+          <author>Phil Steitz</author>
+          <author>Greg Sterijevski</author>
+          <author>Brent Worden</author>
+          <author>Thomas Neidhart</author>
+          <author>Evan Ward</author>
+      </version>
+  </plugin>
+</pluginRecords>
+</source>
+
+=== The local Fiji <code>db.xml</code> file ===
+
+A freshly downlodaed Fiji <code>db.xml</code> file additionally contains entries for the update sites which are enabled by default:
+
+<source lang="xml"><update-site name="ImageJ" url="http://update.imagej.net/" timestamp="20181128223928"/>
+<update-site name="Fiji" url="http://update.fiji.sc/" timestamp="20171213124524"/>
+<update-site name="Java-8" url="http://sites.imagej.net/Java-8/" timestamp="20181204081238"/></source>
+Once the user opens the list of update sites, the updater is accessing the official list of update sites (see the [[#list-of-update-sites|update site chapter]]) and adding entries for the disabled but available update sites to the database.
+
+The database also contains entries for all the files that are managed by update sites. Each file is represented by a <code>plugin</code> tag. The tag contains information about the update site that is associated with this file and its previous versions from that update site.
+
+For more details check out this example of a the <code>db.xml</code> of a local Fiji installation:
+<source lang="xml">
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE pluginRecords [
+<!ELEMENT pluginRecords ((update-site | disabled-update-site)*, plugin*)>
+<!ELEMENT update-site EMPTY>
+<!ELEMENT disabled-update-site EMPTY>
+<!ELEMENT plugin (platform*, category*, version?, previous-version*)>
+<!ELEMENT version (description?, dependency*, link*, author*)>
+<!ELEMENT previous-version EMPTY>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT dependency EMPTY>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT platform (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ATTLIST update-site name CDATA #REQUIRED>
+<!ATTLIST update-site url CDATA #REQUIRED>
+<!ATTLIST update-site ssh-host CDATA #IMPLIED>
+<!ATTLIST update-site upload-directory CDATA #IMPLIED>
+<!ATTLIST update-site description CDATA #IMPLIED>
+<!ATTLIST update-site maintainer CDATA #IMPLIED>
+<!ATTLIST update-site timestamp CDATA #REQUIRED>
+<!ATTLIST disabled-update-site name CDATA #REQUIRED>
+<!ATTLIST disabled-update-site url CDATA #REQUIRED>
+<!ATTLIST disabled-update-site ssh-host CDATA #IMPLIED>
+<!ATTLIST disabled-update-site upload-directory CDATA #IMPLIED>
+<!ATTLIST disabled-update-site description CDATA #IMPLIED>
+<!ATTLIST disabled-update-site maintainer CDATA #IMPLIED>
+<!ATTLIST disabled-update-site timestamp CDATA #REQUIRED>
+<!ATTLIST plugin update-site CDATA #IMPLIED>
+<!ATTLIST plugin filename CDATA #REQUIRED>
+<!ATTLIST plugin executable CDATA #IMPLIED>
+<!ATTLIST dependency filename CDATA #REQUIRED>
+<!ATTLIST dependency timestamp CDATA #IMPLIED>
+<!ATTLIST dependency overrides CDATA #IMPLIED>
+<!ATTLIST version timestamp CDATA #REQUIRED>
+<!ATTLIST version checksum CDATA #REQUIRED>
+<!ATTLIST version filesize CDATA #REQUIRED>
+<!ATTLIST previous-version filename CDATA #IMPLIED>
+<!ATTLIST previous-version timestamp CDATA #REQUIRED>
+<!ATTLIST previous-version checksum CDATA #REQUIRED>]>
+<pluginRecords>
+  <update-site name="ImageJ" url="http://update.imagej.net/" timestamp="20181129053928"/>
+  <update-site name="Fiji" url="http://update.fiji.sc/" timestamp="20171213194524"/>
+  <disabled-update-site name="Fiji-Legacy" url="http://sites.imagej.net/Fiji-Legacy/" description="Restores old Fiji plugins which never made the transition to Maven, as well as obsolete libraries no longer used by current Fiji installations." timestamp="0"/>
+  <update-site name="Java-8" url="http://sites.imagej.net/Java-8/" timestamp="20181207191837"/>
+  <disabled-update-site name="2015-Conference" url="http://sites.imagej.net/2015-Conference/" description="A collection of plugins highlighting the latest features of ImageJ. As seen in Wayne Rasband's opening talk at the 2015 conference!" timestamp="0"/>
+  ...
+  <disabled-update-site name="XitoSBML" url="http://sites.imagej.net/XitoSBML/" description="XitoSBML is an ImageJ plugin which creates a Spatial SBML model from segmented images. XitoSBML is not just a converter, but also a spatial model editor so that users can add molecules(species), reactions and advection/diffusion coefficients to the converted Spatial SBML model." timestamp="0"/><disabled-update-site name="Xlib" url="http://sites.imagej.net/Xlib/" description="Xlib is a set of prospective ImageJ plugins: automated imaging tools for filtering, data reconstruction, quantitative data evaluation and data import, tools for interactive segmentation, visualization and management of image data." timestamp="0"/><disabled-update-site name="Zoom-in-movie" url="http://sites.imagej.net/ZOOM-in-movie/" description="Zoom-in-movie is a simple tool for creating zoom-in movies with logarithmic approach and dynamic scalebar. Simply select ROI on your image and select Plugins/Zoom-in movie to run the plugin. Thanks to Eugene Katrukha for the initial implementation." timestamp="0"/>
+    <plugin update-site="ImageJ" filename="jars/itext-2.1.5.jar">
+        <previous-version timestamp="20120404210913" checksum="f90b43422e5be48eada0dc1602a9bea6caa6c592" filename="jars/itext-2.1.5.jar"/>
+        <previous-version timestamp="20080423173821" checksum="a88a4b46ddcdcf0312b0fe03b1900412bdb71873" filename="jars/itext-1.3.jar"/>
+        <previous-version timestamp="20080801134354" checksum="a88a4b46ddcdcf0312b0fe03b1900412bdb71873" filename="jars/itext-1.3.jar"/>
+    </plugin>
+    <plugin update-site="ImageJ" filename="jars/jai_imageio-1.0.1.jar">
+        <previous-version timestamp="20120404210913" checksum="a08f259a26fa457b66cd0fcd67c89f938e64c0f3" filename="jars/jai_imageio-4.4-imagej-2.0.0-beta1.jar"/>
+        <previous-version timestamp="20120518211518" checksum="e47b1c0e97ecbcf813174aa0919d1e22a5d217df" filename="jars/jai_imageio-4.4-imagej-2.0.0-beta2.1.jar"/>
+        <previous-version timestamp="20120713182620" checksum="87f0853fd9ea404b2ce5985609f9a6b495c3f721" filename="jars/jai_imageio-4.4.0.jar"/>
+        <previous-version timestamp="20120722182530" checksum="86fad81cb22a66464a9dac213790898ffdb9574d" filename="jars/jai_imageio-4.4-SNAPSHOT.jar"/>
+        <previous-version timestamp="20120724094913" checksum="4adeba18117744ef1c2dfbaa30577a5324877d95" filename="jars/jai_imageio-4.4-SNAPSHOT.jar"/>
+        <previous-version timestamp="20080501153041" checksum="74a298ee3cc2bcec3c7fa03bf24a8d08be3baf58" filename="jars/jai_imageio.jar"/>
+        <previous-version timestamp="20120731172159" checksum="32e82fe9a1c1a8371fb725c67376426511847b5f" filename="jars/jai_imageio-4.4-SNAPSHOT.jar"/>
+        <previous-version timestamp="20120807204836" checksum="6db4a1ddabfea787391830295ce6baa079d0d6da" filename="jars/jai_imageio-4.4-SNAPSHOT.jar"/>
+        <previous-version timestamp="20120912153445" checksum="770f78c1d77ab395dacfc01af188eba0b4ce4f58" filename="jars/jai_imageio-4.4.2.jar"/>
+        <previous-version timestamp="20121012025544" checksum="3ca141dd0e7bcc97d028bf164e5a120e55fabe30" filename="jars/jai_imageio-4.4.4.jar"/>
+        <previous-version timestamp="20121020192927" checksum="ae3e30dc06cceea1a0bf03d837188689d583ff6c" filename="jars/jai_imageio-4.4.4.jar"/>
+        <previous-version timestamp="20121106220203" checksum="9776c16d51ffbc8165a4f93ca9d00a0ba6e7da73" filename="jars/jai_imageio-4.4.5.jar"/>
+        <previous-version timestamp="20121211060332" checksum="3ca141dd0e7bcc97d028bf164e5a120e55fabe30" filename="jars/jai_imageio-4.4.5.jar"/>
+        <previous-version timestamp="20130131205114" checksum="f7795ac4e3d00a386bfeff947d4da1eeaffed678" filename="jars/jai_imageio-4.5-SNAPSHOT.jar"/>
+        <previous-version timestamp="20130411222556" checksum="ab4bb60f754b765f3f095d8851524c36d2449fd3" filename="jars/jai_imageio-4.5-SNAPSHOT.jar"/>
+        <previous-version timestamp="20130507160207" checksum="139ef926cfd887dc15e359df984ef2c124d0c3de" filename="jars/jai_imageio-4.4.9-SNAPSHOT.jar"/>
+        <previous-version timestamp="20130620192406" checksum="9b8a1d36fe119b298cdb90c81f2c44730d1fa1d6" filename="jars/jai_imageio-4.4.8.jar"/>
+        <previous-version timestamp="20130716162630" checksum="e5852db5bd833fddeec7dc72601f8b037a59375a" filename="jars/jai_imageio-1.0.1.jar"/>
+    </plugin>
+    <plugin update-site="Fiji" filename="jars/lwf-stubs-4.4.8.jar">
+        <previous-version timestamp="20120404210913" checksum="79306ce7fc25148381c47a792072fa3c77c49163" filename="jars/lwf-stubs-4.4-imagej-2.0.0-beta1.jar"/>
+        <previous-version timestamp="20120518211518" checksum="a21325f2fb086c10e3fbaa9521893e8e87182ece" filename="jars/lwf-stubs-4.4-imagej-2.0.0-beta2.1.jar"/>
+        <previous-version timestamp="20120713182620" checksum="c32b8e83de4ccc3f0bbe26c1a39ff3710945b4e8" filename="jars/lwf-stubs-4.4.0.jar"/>
+        <previous-version timestamp="20120722182530" checksum="0306dc1cce13691f95309522a16f44ecd52a94fb" filename="jars/lwf-stubs-4.4-SNAPSHOT.jar"/>
+        <previous-version timestamp="20120724094913" checksum="bb728cada3ea166528747dd744b4239ba124400d" filename="jars/lwf-stubs-4.4-SNAPSHOT.jar"/>
+        <previous-version timestamp="20120912153445" checksum="273a299c25ebd884b784e6ea913a726ab25fb7fb" filename="jars/lwf-stubs-4.4.4.jar"/>
+        <previous-version timestamp="20121012025544" checksum="8dd17a337c29c7373763375196a937465afb87a5" filename="jars/lwf-stubs-4.4.4.jar"/>
+        <previous-version timestamp="20121020192927" checksum="56891a3ea1b9136cdab4f8c676e8d57bbef5039a" filename="jars/lwf-stubs-4.4.4.jar"/>
+        <previous-version timestamp="20121106220203" checksum="2e19bd44a71ae1259cbe397a5dfe4d5215e0ffaa" filename="jars/lwf-stubs-4.4-SNAPSHOT.jar"/>
+        <previous-version timestamp="20121211060332" checksum="8dd17a337c29c7373763375196a937465afb87a5" filename="jars/lwf-stubs-4.4.5.jar"/>
+        <previous-version timestamp="20130411222556" checksum="b82475904dc68eaa33ec6616bcc6262684b61b9e" filename="jars/lwf-stubs-4.5-SNAPSHOT.jar"/>
+        <previous-version timestamp="20130620192406" checksum="d6c8166154254811e6c35c34f2c0ad06bf9ba99e" filename="jars/lwf-stubs-4.4.8.jar"/>
+    </plugin>
+    <plugin update-site="Java-8" filename="jars/jfreechart-1.5.0.jar">
+        <version checksum="f94b8d66dc0310ce25f113115893fe7b3f3b7b00" timestamp="20171226155229" filesize="1559088">
+            <description>
+        JFreeChart is a class library, written in Java, for generating charts.
+        Utilising the Java2D APIs, it currently supports bar charts, pie charts,
+        line charts, XY-plots and time series plots.
+    </description>
+            <dependency filename="jars/jcommon.jar" timestamp="20120802125300"/>
+            <author>David Gilbert</author>
+        </version>
+        <previous-version timestamp="20120802184342" checksum="55d8499ceb048f735c19c99acc2891200cc584a8" filename="jars/jfreechart-1.0.14.jar"/>
+        <previous-version timestamp="20150209211029" checksum="c4eeeb8f973da71707dacc9191687020b5a2effe" filename="jars/jfreechart-1.0.19.jar"/>
+    </plugin>
+    <plugin update-site="ImageJ" filename="jars/imagej-launcher-4.0.5.jar">
+        <version checksum="6691bf3087046120e3218b183681d6dcf415f629" timestamp="20160422225140" filesize="23302">
+            <description>The executable which runs ImageJ. Its purpose is also to make sure that updates downloaded by the ImageJ Updater will be put into place before starting the Java Virtual Machine. It was formerly known as the Fiji launcher.</description>
+            <author>Johannes Schindelin</author>
+            <author>Curtis Rueden</author>
+            <author>Mark Hiner</author>
+        </version>
+        <previous-version timestamp="20140516211031" checksum="dbd54d8d8c80c288aeed18a9ddda26908a7cb127" filename="jars/imagej-launcher-3.0.2.jar"/>
+        <previous-version timestamp="20140603151316" checksum="b7fee8a5335541b65d574a2dca79b92bed5d9674" filename="jars/imagej-launcher-3.1.0.jar"/>
+        <previous-version timestamp="20140607183739" checksum="77f95ce3727483d8c2bc3d6b96c6f734414454b5" filename="jars/imagej-launcher-3.1.1.jar"/>
+        <previous-version timestamp="20140808175806" checksum="20ce9959b97fd0d652d4d19cc1f51668cd39026a" filename="jars/imagej-launcher-3.1.6.jar"/>
+        <previous-version timestamp="20160118170322" checksum="f74a7e6b5b96f4d7c2e78b5097538059f73f487c" filename="jars/imagej-launcher-4.0.2.jar"/>
+        <previous-version timestamp="20160121115531" checksum="c42c3c6afcbdeb7658a04fcef98880d6d2bcf212" filename="jars/imagej-launcher-4.0.3.jar"/>
+    </plugin>
+...
+    <plugin update-site="Fiji" filename="luts/blue_orange_icb.lut">
+        <version checksum="a4cec22b96c306321ba4c7b3ff30df9fa7919616" timestamp="20090918172547" filesize="800"/>
+        <previous-version timestamp="20080801134354" checksum="a4cec22b96c306321ba4c7b3ff30df9fa7919616" filename="luts/blue_orange_icb.lut"/>
+        <previous-version timestamp="20090918172547" checksum="a4cec22b96c306321ba4c7b3ff30df9fa7919616" filename="luts/blue_orange_icb.lut"/>
+    </plugin>
+    <plugin update-site="Fiji" filename="luts/brgbcmyw.lut">
+        <version checksum="c9e396a3f83ee8cebf1ed28d3e2d53296cc908e7" timestamp="20090918172547" filesize="768"/>
+        <previous-version timestamp="20080801134354" checksum="c9e396a3f83ee8cebf1ed28d3e2d53296cc908e7" filename="luts/brgbcmyw.lut"/>
+        <previous-version timestamp="20090918172547" checksum="c9e396a3f83ee8cebf1ed28d3e2d53296cc908e7" filename="luts/brgbcmyw.lut"/>
+    </plugin>
+    <plugin update-site="Java-8" filename="jars/imagej-plugins-batch-0.1.1.jar">
+        <version checksum="add1b652ceb6789d98127350b3ecaa07ac7cee2e" timestamp="20181204141527" filesize="5771">
+            <description>Batch Processor Plugins for ImageJ</description>
+            <dependency filename="jars/scijava-common.jar" timestamp="20181203224318"/>
+            <dependency filename="jars/imglib2.jar" timestamp="20181129185450"/>
+            <dependency filename="jars/imagej-common.jar" timestamp="20181202184728"/>
+            <dependency filename="jars/scifio.jar" timestamp="20181023232442"/>
+            <dependency filename="jars/batch-processor.jar" timestamp="20181204085812"/>
+            <author>Jan Eglinger</author>
+        </version>
+    </plugin>
+    <plugin update-site="Java-8" filename="jars/unsafe-fences-1.0.jar">
+        <version checksum="0ec1697640486e01b61c89cf8e244ec7afe76031" timestamp="20181204141527" filesize="3329"/>
+    </plugin>
+    <plugin update-site="Java-8" filename="jars/dirgra-0.3.jar">
+        <version checksum="3d9471be06eaf475a96f6b1f57addf18fc98a889" timestamp="20181204141527" filesize="16400">
+            <description>Simple Directed Graph</description>
+            <author>Thomas E. Enebo</author>
+        </version>
+    </plugin>
+</pluginRecords>
+</source>
+
+
+== Future plans ==
+
+=== Version terminology ===
+
+* '''Updater V0''': The current updater
+* '''Updater V1''': Intermediate solution to serve HTTPS updates to anyone whose Java version supports it, accessing list of available update sites list via HTTPS and containing HTTPS links if supported, minimal changes
+* '''Updater V2''': Next-generation version of the Updater
+
+=== Routing for available update sites / updater upgrades ===
+
+[[File:availablesitesrouting.png]]
+
+A server providing the official update sites serves different content depending if the updater is requesting them via HTTP or HTTPS. The current updater (V0) should receive an upgrade to V1 via HTTP and HTTPS. The updater V1 should only be able to upgrade to V2 if a connection via HTTPS can be established. Starting from V2 official updates will only be shipped via HTTPS.
+
+=== Updater V1 ===
+
+Relevant PRs / issues: 
+* [https://github.com/imagej/imagej-updater/issues/70 Issue for new updater]
+* [https://github.com/imagej/imagej-updater/issues/66 Update cached update site links issue]
+* [https://github.com/imagej/imagej-updater/pull/67 Support redirects PR] 
+* [https://github.com/imagej/imagej-updater/pull/71 V1 updater PR]
+
+=== Features for Updater V2 or later (this list is quite incomplete) ===
+
+==== List of available update sites ====
+
+* add ID
+* add mirrors
+
+==== Updater (backend) ====
+
+* handle update site IDs
+* handle mirrors
+* versioning of updater log.xml (implement xml reader depending on version)
+* maybe improve conflict management by utilizing maven
+* import / export / backup functionality
+
+==== db.xml ====
+
+* add upload entry with changelog and authors
+* separate parts for cache / user preferences
+
+==== Updater (frontend) ====
+
+* mirror choice
+* show authors and changelog
+* improved communication of conflicts
+* import / export / backup functionality
