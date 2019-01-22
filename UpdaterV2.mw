@@ -51,6 +51,8 @@ The updater uses its own XML structure to handle versioning of update site uploa
 
 An update site database file contains a <code>plugin</code> tag for each file that was ever uploaded to the update site. The tag contains a <code>version</code> if the file is currently used and <code>previous-version</code> tags for all the past versions of this file. In case of a deprecated file there is no <code>version</code> tag.
 
+For details check out this example of a remote update site database file:
+
 <source lang="xml">
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE pluginRecords [
 <!ELEMENT pluginRecords ((update-site | disabled-update-site)*, plugin*)>
