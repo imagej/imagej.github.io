@@ -6,9 +6,16 @@ There is a [https://imagej.net/Updater wiki page] documenting the Updater from u
 
 Fiji is an image processing software melting ImageJ1 with novel ImageJ2 functionalities based on scijava and imglib2.
 
-The core plugins written in Java, versioned via Maven and distributed via update sites. But update sites can be used to distribute any type of files (e.g. scripts or binaries). ## User perspective [[File:user-updater.png]] - the user downloads packaged Fiji from website - some update sites are enabled by default and will serve all core updates (see [[#list-of-update-sites|update site chapter]]) - each time Fiji is started, these update sites are checked for new content - in case there is new content, the user will be asked to approve the updates
+The core plugins written in Java, versioned via Maven and distributed via update sites. But update sites can be used to distribute any type of files (e.g. scripts or binaries). 
 
-[[File:user_updatesite.png]] - the user can manually add additional update sites which will then also be checked for updates on startup
+== User perspective ==
+ [[File:user-updater.png]] 
+* the user downloads packaged Fiji from website 
+* some update sites are enabled by default and will serve all core updates (see update site chapter) 
+* each time Fiji is started, these update sites are checked for new content 
+* in case there is new content, the user will be asked to approve the updates
+[[File:user_updatesite.png]] 
+* the user can manually add additional update sites which will then also be checked for updates on startup
 
 == Update site maintainer perspective ==
 
@@ -23,7 +30,7 @@ The core plugins written in Java, versioned via Maven and distributed via update
 * ?
 * melting pot? other scripts?
 
-== The official list of update sites<a name="list-of-update-sites"></a> ==
+== The official list of update sites ==
 
 You can access the list of official update sites here: https://imagej.github.io/list-of-update-sites/. Anything on this list can be installed from Fiji by opening the updater, clicking <code>Manage update sites</code> and clicking the check mark of the list entry.
 
