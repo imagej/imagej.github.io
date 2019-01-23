@@ -400,7 +400,12 @@ Relevant PRs / issues:
 
 * add upload entry with changelog and authors
 * separate parts for cache / user preferences
-* add MAVEN links
+
+=== Maven integration ===
+
+* look at Eclipse: update site management, local installation version management
+* use locally cached files (.m2)
+* download files from maven repository
 
 ==== Updater (frontend) ====
 
