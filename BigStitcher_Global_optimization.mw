@@ -50,6 +50,14 @@ Note that '''both''' stopping conditions have to be met for the optimization to 
 * '''show expert grouping options''': click this to show expert grouping options in the next dialog (see below).
 [[File:BigStitcher_stitch_5.png|center|600px]]
 
+=== Intuition for setting the error thresholds ===
+
+Setting the thresholds can be a bit tricky, because both too high and too low values might lead to undesired results. Intuitively, one would set the 'absolute error'  as low as is still acceptable and the 'relative error' rather low to ensure consistent quality. Setting the thresholds too low, however, will result in links being dropped until only a spanning tree of the link graph remains, in which case there is an "error-less" solution for placing the tiles, but it might  be sub-optimal due to the emphasis on the remaining links.
+
+Since the processing time for the global optimization is comparatively short and results are immediately displayed in BigDataViewer, manual optimization of these meta-parameters should be feasible, either starting with high values and lowering them or starting with low values and increasing them until the best and most consistent alignment is produced.
+
+We found, however, that the default values of 3.5px absolute error and 2.5 relative error work well in many cases. To give the user a bit more flexibility without confusing them with setting the values directly, we added "STRICT" (default thresholds) and "RELAXED" (default thresholds x2) presets (see above).
+
 == Expert view grouping ==
 
 In the next two dialogs, you will be asked which views to include in the global optimization. They are the same as in [[BigStitcher_Advanced_stitching]].
