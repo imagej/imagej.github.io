@@ -400,6 +400,7 @@ Relevant PRs / issues:
 
 * add upload entry with changelog and authors
 * separate parts for cache / user preferences
+* add MAVEN links
 
 ==== Updater (frontend) ====
 
