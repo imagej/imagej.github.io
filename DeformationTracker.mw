@@ -41,4 +41,4 @@ Embryo cells with Actin, Membrane channel and segmentation mask image respective
 
 Please run the program at least once before running it in batch mode over a directory of such timelapse images.
 
-The microscope parameters are read from the channel 1 image and are displayed in the Pixel calibration boxes in the panel below. If the parameters can not be read from the metadata, the user can input the pixel size and timeframe to second conversion.
+The microscope parameters are read from the channel 1 image and are displayed in the Pixel calibration boxes in the microscope parameters panel box in the welcome screen (shown above). If the parameters can not be read from the metadata, the user can input the pixel size and timeframe to second conversion.
