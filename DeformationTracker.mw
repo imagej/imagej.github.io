@@ -25,4 +25,6 @@ The welcome panel will open.
 ==== Choose Mode====
 For a first analysis of your data, we suggest using the Curvature Measurement with Superpixel segmentation, in which we have pre-selected a number of parameters. Please run the program at least once before running it in batch mode over a directory of such timelapse images.
 
-For Embryo cells, the user has the option of either only loading the actin channel (left drop down menu) or also the membrane channel (right dropdown menu) along with it. The microscope parameters are read from the channel 1 image and are displayed in the Pixel calibration boxes below. The user is also expected to upload a segmented image of the cells along with the other images mentioned above. These images should be opened in Fiji before starting the plugin.
+For Embryo cells, the user has the option of either only loading the actin channel (left drop down menu) or also the membrane channel (right dropdown menu) along with it. The microscope parameters are read from the channel 1 image and are displayed in the Pixel calibration boxes below. The user is also expected to upload a segmented image of the cells along with the other images mentioned above. 
+
+"These images should be opened in Fiji before starting the plugin."
