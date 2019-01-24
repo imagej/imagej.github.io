@@ -34,13 +34,9 @@ The user has the option of either running the calculation on a single channel or
 
 As an example, for Embryo cells the user can select the actin channel image from the left drop down menu and membrane channel image from the right dropdown menu. A segmented image of the cells must also be provided. For a single cell this would be a binary image of the cell and if multiple cells are present in the timelapse image then the segmentation image must be an integer labelled image where each integer label corresponds uniquely to a cell.
 
-Embryo cells with Actin and Membrane channel respectively:
+Embryo cells with Actin, Membrane channel and segmentation mask image respectively:
 
-[[Image:Ch1.png|300px]][[Image:Ch2.png|300px]]
-
-Segmentation Image:
-
-[[Image:Seg.png|300px]]
+[[Image:Ch1.png|300px]][[Image:Ch2.png|300px]][[Image:Seg.png|300px]]
 
 
 Please run the program at least once before running it in batch mode over a directory of such timelapse images.
