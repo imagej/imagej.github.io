@@ -27,7 +27,9 @@ The welcome panel will open.
 
 For a first analysis of your data, we suggest using the Curvature Measurement with Superpixel segmentation, in which we have pre-selected a number of parameters. The timelapse images and the segmentation image described below must be opened in Fiji before starting ETrack.
 
-For Embryo cells, the user has the option of either only loading the actin channel (left drop down menu) or also the membrane channel (right dropdown menu) along with it. A segmented image of the cells must also be provided. For a single cell this would be a binary image of the cell and if multiple cells are present in the timelapse image then the segmentation image must be an integer labelled image where each integer label corresponds uniquely to a cell.
+For Embryo cells, the user has the option of either running the calculation on a single channel or two channels. For a single channel calculation please select an open timelapse image from the dropdown menu. For a double channel calculation select "Load a second channel option" and another drop down menu appears where a second timelapse image can be selected from the open images.
+
+As an example, for Embryo cells the user can select the actin channel image from the left drop down menu and membrane channel image from the right dropdown menu. A segmented image of the cells must also be provided. For a single cell this would be a binary image of the cell and if multiple cells are present in the timelapse image then the segmentation image must be an integer labelled image where each integer label corresponds uniquely to a cell.
 
 Please run the program at least once before running it in batch mode over a directory of such timelapse images.
 
