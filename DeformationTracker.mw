@@ -12,3 +12,10 @@ For using ETrack you have to provide a superpixel segmentation map of your cells
 # Click ''Close'' and then click ''Apply changes''.
 # Restart Fiji.
 # Launch the plugin with ''Plugins ▶ ETrack''.
+
+== Usage ==
+
+=== Automated Curvature Measurement ===
+A typical dataset consists of a single two-dimensional (2d) image of the cells whose surface is oscillating over time. 
+The file format
+can be any format readable by Fiji/Bioformats (.tif, .nd2, … ). To run the tracker select {{bc|Plugins|ETrack|Automated angle and curvature measurement}}
