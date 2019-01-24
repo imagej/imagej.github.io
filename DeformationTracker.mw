@@ -23,8 +23,12 @@ can be any format readable by Fiji/Bioformats (.tif, .nd2, … ). To run the tra
 The welcome panel will open.
 
 ==== Choose Mode====
-For a first analysis of your data, we suggest using the Curvature Measurement with Superpixel segmentation, in which we have pre-selected a number of parameters. Please run the program at least once before running it in batch mode over a directory of such timelapse images.
 
-For Embryo cells, the user has the option of either only loading the actin channel (left drop down menu) or also the membrane channel (right dropdown menu) along with it. The microscope parameters are read from the channel 1 image and are displayed in the Pixel calibration boxes below. The user is also expected to upload a segmented image of the cells along with the other images mentioned above. 
 
-These images should be opened in Fiji before starting the plugin.
+For a first analysis of your data, we suggest using the Curvature Measurement with Superpixel segmentation, in which we have pre-selected a number of parameters. The timelapse images and the segmentation image described below must be opened in Fiji before starting ETrack.
+
+For Embryo cells, the user has the option of either only loading the actin channel (left drop down menu) or also the membrane channel (right dropdown menu) along with it. A segmented image of the cells must also be provided. For a single cell this would be a binary image of the cell and if multiple cells are present in the timelapse image then the segmentation image must be an integer labelled image where each integer label corresponds uniquely to a cell.
+
+Please run the program at least once before running it in batch mode over a directory of such timelapse images.
+
+The microscope parameters are read from the channel 1 image and are displayed in the Pixel calibration boxes in the panel below. If the parameters can not be read from the metadata, the user can input the pixel size and timeframe to second conversion.
