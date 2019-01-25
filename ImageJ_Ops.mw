@@ -15,8 +15,8 @@ Ops has three major design goals:
 
 Start by reading these Jupyter notebooks:
 
-* [https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1_-_Using_ImageJ/2_-_Introduction_to_ImageJ_Ops.ipynb Using ImageJ Ops] - to call ops from your scripts.
-* [https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/2_-_Extending_ImageJ/4_-_Writing_Op_plugins.ipynb Writing Op plugins] - to write your own ops.
+* [https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1-Using-ImageJ/2-ImageJ-Ops.ipynb Using ImageJ Ops] - to call ops from your scripts.
+* [https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/2-Extending-ImageJ/4-Ops.ipynb Writing Op plugins] - to write your own ops.
 
 Ops are a special type of ImageJ plugin, so a basic understanding of the [[Writing_Plugins|SciJava plugin framework]] is strongly recommended.
 
@@ -28,8 +28,8 @@ In addition to cloning the [https://github.com/imagej/imagej-ops imagej-ops] its
 == Tutorials and workshops ==
 
 * [[Adding_new_ops|Step-by-step guide: Adding new ops]]
-* [http://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1_-_Using_ImageJ/2_-_Introduction_to_ImageJ_Ops.ipynb ImageJ Tutorial: Introduction to ImageJ Ops]
-* [http://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/2_-_Extending_ImageJ/4_-_Writing_Op_plugins.ipynb Extending ImageJ: Ops]
+* [https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/1-Using-ImageJ/2-ImageJ-Ops.ipynb ImageJ Tutorial: Introduction to ImageJ Ops]
+* [https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/2-Extending-ImageJ/4-Ops.ipynb Extending ImageJ: Ops]
 * "Scripting in ImageJ - An introduction to ImageJ Ops" (February 2017 NEUBIAS2020) – [http://imagej.github.io/presentations/2017-02-12-imagej-ops-neubias/#/ slides]
 * "ImageJ2 scripts: Parameters + ImageJ Ops" (ImageJ conference 2015) – [https://imagej.github.io/presentations/2015-09-04-imagej2-scripting/ slides], [https://vimeo.com/140098817 video 1], [https://vimeo.com/140098835 video 2]
 * "The ImageJ Ops Framework: Image processing made easy" (January 2015) – [https://imagej.github.io/presentations/2015-01-12-imagej-ops/ slides]
