@@ -331,7 +331,6 @@ The input image must be 3D, 8-bit and binary. Hyperstacks are not supported.
 * '''Calculate''': chooses which thickness maps to calculate - trabecular thickness, trabecular spacing, or both. In order to calculate trabecular spacing, the image voxels are inverted.
 * '''Show thickness maps''': display the calculated thickness maps or not.
 * '''Mask thickness maps''': remove artifacts from the thickness maps. Artifacts are foreground voxels not present in the original image.
-* '''Crop to ROI manager''': create thickness maps only from the area bounded by the ROIs in the ROI manager. Checking this option requires you've added ROIs to the ROI manager.
 
 ==== Results ====
 * The mean and standard deviation for each thickness map calculated.
@@ -339,7 +338,6 @@ The input image must be 3D, 8-bit and binary. Hyperstacks are not supported.
 
 ==== Differences to BoneJ1 ====
 * Calls the latest version of [[Local_Thickness]].
-* Thickness values for background voxels are marked ''NaN'' instead of ''0''.
 
 ==== Related publications ====
 * Dougherty R, Kunzelmann K (2007), ''Computing local thickness of 3D structures with ImageJ'', Microsc. Microanal., 13: 1678-1679, [http://dx.doi.org/10.1017/S1431927607074430 doi:10.1017/S1431927607074430]
