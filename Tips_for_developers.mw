@@ -2,7 +2,7 @@
 
 = Compile & Execute a Class =
 
-You do not need to call ''javac'' yourself with a long classpath:
+You do not need to call <code>javac</code> yourself with a long ''classpath'':
 
 <source lang="bash">
 $ ./fiji --javac YourClass.java
@@ -26,15 +26,19 @@ Once you have working code, you can turn it into a proper plugin (this is easies
 
 Sometimes, the compiler complains about a class not having a certain method or interface, but you ''know'' it must contain it.  More often than not, that class exists in different versions in your classpath.  Find out with
 
-  $ ./fiji bin/find-jar-for-class.py the.class.youre.looking.For
+<source lang="bash">
+$ ./fiji bin/find-jar-for-class.py the.class.youre.looking.For
+</source>
 
 If you want to do that with an installed Fiji (i.e. when bin/ is missing), you can start the [[Script Editor]] and execute a BeanShell like this:
 
+<source lang="java">
  import ij.IJ;
          
  print(IJ.getClassLoader()
          .loadClass("the.class.youre.looking.For")
          .getResource("For.class").toString());
+</source>
 
 This will output the URL to the ''.class'' file, including the path to the enclosing ''.jar'' file.
 
@@ -81,7 +85,7 @@ This is available since ImageJ 1.43g, as well as the option to set a different e
 
 == How to show a plot ==
 
-ImageJ offers the ''ij.gui.Plot'' class to make a window showing a plot. Use it like this:
+ImageJ offers the <code>ij.gui.Plot</code> class to make a window showing a plot. Use it like this:
 
 <source lang="java">
 Plot plot = new Plot("The window title", "labels on the x-axis", "labels on the y-axis",
@@ -102,7 +106,7 @@ Plot update = new Plot("Dummy", "x labels", "y labels", x_values, y_values);
 window.drawPlot(update);
 </source>
 
-To add another plot to the same window, use the ''addPoints()'' method:
+To add another plot to the same window, use the <code>addPoints()</code> method:
 
 <source lang="java">
 plot.addPoints(float_array_of_x_values, float_array_of_y_values, Plot.LINE);
@@ -120,11 +124,11 @@ plot.setColor(Color.BLUE);
 plot.draw();
 </source>
 
-You might need to adjust the bounding box if the second plot does not match the bounding box of the first one by using the ''setLimits()'' method before the call to ''plot.draw();''
+You might need to adjust the bounding box if the second plot does not match the bounding box of the first one by using the <code>setLimits()</code> method before the call to <code>plot.draw();</code>
 
 == Duplicate, or convert between, ''ImageProcessor'' types ==
 
-The ''ImageProcessor'' class has several useful methods: [http://fiji.sc/javadoc/ij/process/ImageProcessor.html#duplicate() duplicate()], [http://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToByte(boolean) convertToByte()], [http://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToFloat() convertToFloat()],
+The <code>ImageProcessor</code> class has several useful methods: [http://fiji.sc/javadoc/ij/process/ImageProcessor.html#duplicate() duplicate()], [http://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToByte(boolean) convertToByte()], [http://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToFloat() convertToFloat()],
 [http://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToRGB() convertToRGB()], and [http://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToShort(boolean) convertToShort()].
 
 This [http://fiji.sc/javadoc/ij/process/ImageProcessor.html class] also has some other goodies, such as methods for convolution.
@@ -155,11 +159,11 @@ import ij.Prefs;
     Prefs.savePreferences();
 </source>
 
-'''Note:''' do <u>not</u> use the ''getString()'' or ''getInt()''; These methods do not have any setter methods, and they do <u>not</u> access the same values as the ''get()'' method (''get()'' actually prefixes the keys with a dot)!
+'''Note:''' do <u>not</u> use the <code>getString()</code> or <code>getInt()</code>; These methods do not have any setter methods, and they do <u>not</u> access the same values as the <code>get()</code> method (<code>get()</code> actually prefixes the keys with a dot)!
 
 == How to turn a number into a string, using a given number of decimal places ==
 
-Use the ''d2s()'' method of the ''ij.IJ'' class:
+Use the <code>d2s()</code> method of the <code>ij.IJ</code> class:
 
 <source lang="java">
 String message = "The current temperature is " + IJ.d2s(degrees, 1) + "° Celsius";
@@ -291,9 +295,9 @@ When programming with Swing, beware that Swing is not thread safe. Swing's golde
 
 :''Once a Swing component has been realized, all code that might affect or depend on the state of that component should be executed in the event-dispatching thread.''
 
-When has a Swing component been realized? When it is visible inside Window or JFrame that got a call to ''setVisible(true)''. This implies that its ''paint(Graphics)'' method has been called or will be called soon.
+When has a Swing component been realized? When it is visible inside Window or ''JFrame'' that got a call to <code>setVisible(true)</code>. This implies that its <code>paint(Graphics)</code> method has been called or will be called soon.
 
-These are the methods that can realize a component, or rather, methods called on a Window or Frame or JFrame that will realize all its children components:
+These are the methods that can realize a component, or rather, methods called on a ''Window'' or ''Frame'' or ''JFrame'' that will realize all its children components:
 
 <source lang="java">
 setVisible(true)
@@ -301,7 +305,7 @@ show()
 pack() // this might surprise you
 </source>
 
-There is a class which helps you with all this: [http://download.oracle.com/javase/6/docs/api/javax/swing/SwingUtilities.html SwingUtilities]. Example: to call ''pack()'' from within the constructor (which might or might not be called from the Event Dispatch Thread):
+There is a class which helps you with all this: [http://download.oracle.com/javase/6/docs/api/javax/swing/SwingUtilities.html SwingUtilities]. Example: to call <code>pack()</code> from within the constructor (which might or might not be called from the Event Dispatch Thread):
 
 <source lang="java">
 if (SwingUtilities.isEventDispatchThread())
