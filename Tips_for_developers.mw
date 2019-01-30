@@ -4,11 +4,15 @@
 
 You do not need to call ''javac'' yourself with a long classpath:
 
+<source lang="bash">
 $ ./fiji --javac YourClass.java
+</source>
 
-and you can call its main() method just as easy:
+and you can call its <code>main()</code> method just as easy:
 
+<source lang="bash">
 $ ./fiji YourClass.class argument1 argument2
+</source>
 
 = Rapidly Prototype a Plugin =
 
@@ -22,7 +26,7 @@ Once you have working code, you can turn it into a proper plugin (this is easies
 
 Sometimes, the compiler complains about a class not having a certain method or interface, but you ''know'' it must contain it.  More often than not, that class exists in different versions in your classpath.  Find out with
 
-$ ./fiji bin/find-jar-for-class.py the.class.youre.looking.For
+  $ ./fiji bin/find-jar-for-class.py the.class.youre.looking.For
 
 If you want to do that with an installed Fiji (i.e. when bin/ is missing), you can start the [[Script Editor]] and execute a BeanShell like this:
 
