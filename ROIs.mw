@@ -17,7 +17,7 @@ final Sphere sphere = GeomMasks.closedWritableSphere( center, radius );
 
 == Naming ==
 
-All n-dimensional geometric ROIs should be named with the name of their 3D counterpart. For example, an n-dimensional hyper-ellipsoid would just be named 'ellpisoid'. If a ROI implementation is not n-dimensional, its dimensionality should be stated in the name. For example, '''Polygon2D''' which is a 2D polygon.
+All n-dimensional geometric ROIs should be named with the name of their 3D counterpart. For example, an n-dimensional hyper-ellipsoid would just be named 'ellipsoid'. If a ROI implementation is not n-dimensional, its dimensionality should be stated in the name. For example, '''Polygon2D''' which is a 2D polygon.
 
 Additionally, ROIs prefixed with "Writable" are mutable. ROIs without this prefix are assumed to be immutable.
 
