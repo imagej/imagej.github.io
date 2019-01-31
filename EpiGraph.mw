@@ -40,9 +40,9 @@ EpiGraph consists of a pipeline of 5 very simple steps. First, the skeleton of a
 
 === Exporting and importing GDDs data ===
   
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/5.1%20Exporting%20main%20table%20Graphlets.mp4 ''5.1. Exporting the main table of GDDs calculations'']
-  
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/tutorials/5.2.%20Importing%20Graphlets%20excel%20and%20deleting%20Graphlets%20rows.mp4 ''5.2. Importing GDDs excel and deleting data rows'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/tutorials/exportingGraphlets.mp4 ''11. Export graphlets results'']
+
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/tutorials/importExportExcel.mp4 ''12. Export and import GDDs - main window'']
 
 === Visualizing results ===
 
