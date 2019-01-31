@@ -48,14 +48,6 @@ EpiGraph consists of a pipeline of 5 very simple steps. First, the skeleton of a
 
 [https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/tutorials/visualizingWindow.mp4 ''13.  Visualization window'']
 
-=== General usability ===
-
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/7.%20General%20overview.mp4 ''7. A general overview of the whole pipeline'']
-
-=== Solving image size issue ===
- 
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/8.%20Solving%20image%20size%20issue.mp4 ''8. Resizing image'']
-
 == '''Limitations''' ==
 
 EpiGraph only accepts single images right now. A stack of images should be adapted to single frames before uploading it to EpiGraph. Also, computers with little RAM memory (less than 16gb) will work but with a series of restrictions. For ensuring the usability, it is not recommended computing images with a high number of cells (more than 1000) due to a possible lack of memory. In the same way, we suggest skeletonizing the edges of the images and using a small radius (lower than 3) to calculate the cell's neighbourhood. Likewise, we warn if the input image is large (either 3000px of height or 3000px of width) in the case you have limited resources. Choosing an elevated radius value could slow down the work queue, increasing the use of RAM memory. On the other hand, computers with greater RAM memory will work with more complex and larger images and a wide range of radius. 
