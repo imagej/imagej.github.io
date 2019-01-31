@@ -24,17 +24,19 @@ EpiGraph consists of a pipeline of 5 very simple steps. First, the skeleton of a
 
 === Calculation of GDDs ===
 
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/3.1%20Calculate%20Graphlets%20default.mp4 ''3.1. Default parameters'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/tutorials/calculateGraphlets_default.mp4 ''4. Calculate graphlets - default'']
 
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/3.2%20Calculate%20Graphlets%20using%20invalid%20region%2C%20square%20form%20and%20Mo7.mp4 ''3.2. Selecting invalid region, squared form and Mo7'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/tutorials/invalidRegion.mp4 ''5. Calculate graphlets - select invalid region'']
 
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/3.3%20Calculate%20Graphlets%20connectivity%204.mp4 ''3.3. Using 4-connectivity'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/tutorials/graphletsSquareShape.mp4 ''6. Calculate graphlets - squared shape'']
  
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/3.4%20Calculate%20Graphlets%20set%20of%20ROIs%20connectivity%204.mp4 ''3.4. Taking different ROIs and 4-connectivity'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/tutorials/mo29_mo17_mo10_mo7.mp4 ''7. Calculate graphlets - 4 kind of motifs'']
 
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/3.5%20Calculate%20Graphlets%20%20Mo29%2C%20Mo17%2C%20Mo10%20and%20Mo7.mp4 ''3.5. Combining Mo29, Mo17, Mo10 and Mo7'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/tutorials/connectivity4.mp4 ''8. Calculate graphlets - 4-connectivity']
 
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/4%20Exporting%20Graphlets%20ZIP.mp4 ''4. Exporting graphlets data'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/tutorials/roiSelection.mp4 ''9. Calculate graphlets - ROI selection'']
+
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/tutorials/largeImage.mp4 ''10. Calculate graphlets - large image'']
 
 === Exporting and importing GDDs data ===
   
