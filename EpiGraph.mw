@@ -24,19 +24,19 @@ EpiGraph consists of a pipeline of 5 very simple steps. First, the skeleton of a
 
 === Calculation of GDDs ===
 
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/tutorials/calculateGraphlets_default.mp4 ''4. Calculate graphlets - default'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/calculateGraphlets_default.mp4 ''4. Calculate graphlets - default'']
 
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/tutorials/invalidRegion.mp4 ''5. Calculate graphlets - select invalid region'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/invalidRegion.mp4 ''5. Calculate graphlets - select invalid region'']
 
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/tutorials/graphletsSquareShape.mp4 ''6. Calculate graphlets - squared shape'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/graphletsSquareShape.mp4 ''6. Calculate graphlets - squared shape'']
  
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/tutorials/mo29_mo17_mo10_mo7.mp4 ''7. Calculate graphlets - 4 kind of motifs'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/mo29_mo17_mo10_mo7.mp4 ''7. Calculate graphlets - 4 kind of motifs'']
 
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/tutorials/connectivity4.mp4 ''8. Calculate graphlets - 4-connectivity'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/connectivity4.mp4 ''8. Calculate graphlets - 4-connectivity'']
 
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/tutorials/roiSelection.mp4 ''9. Calculate graphlets - ROI selection'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/roiSelection.mp4 ''9. Calculate graphlets - ROI selection'']
 
-[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/blob/master/tutorials/largeImage.mp4 ''10. Calculate graphlets - large image'']
+[https://github.com/ComplexOrganizationOfLivingMatter/Epigraph/raw/master/tutorials/largeImage.mp4 ''10. Calculate graphlets - large image'']
 
 === Exporting and importing GDDs data ===
   
