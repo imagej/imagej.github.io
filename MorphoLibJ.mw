@@ -584,9 +584,13 @@ One advantage of this organization of the library and the use of public static m
 Let's see an example in a complete [[BeanShell_Scripting|Beanshell script]] that takes the active 2D or 3D image and finds a reasonable segmentation combining a set of morphological operations (gradient, extended minima and watershed):
 
 <source lang="java">
-// @ImagePlus imp
+// @ImagePlus(label="Input image",description="Image to segment") imp
+// @Integer(label="Gradient radius",description="Radius of the morphological gradient",value=2) radius
+// @Integer(label="Tolerance",description="Local extrema dynamic",value=3) tolerance
+// @String(label="Connectivity",description="Local connectivity", choices={"6","26"}) strConn
+// @Boolean(label="Calculate dams",description="Flag to use dams in watershed",value=true) dams
 // @OUTPUT ImagePlus resultImage
- 
+  
 // ImageJ imports
 import ij.IJ;
 import ij.ImagePlus;
@@ -597,25 +601,39 @@ import inra.ijpb.morphology.MinimaAndMaxima3D;
 import inra.ijpb.morphology.Morphology;
 import inra.ijpb.morphology.Strel3D;
 import inra.ijpb.watershed.Watershed;
-  
-// create structuring element (cube of radius 1)
-strel = Strel3D.Shape.CUBE.fromRadius( 1 );
-// apply morphological gradient to input image
-image = Morphology.gradient( imp.getImageStack(), strel );
-// find regional minima on gradient image with dynamic value of 30 and 6-connectivity
-regionalMinima = MinimaAndMaxima3D.extendedMinima( image, 30, 6 );
+import inra.ijpb.data.image.Images3D;
+
+// convert connectivity string to int
+conn = Integer.parseInt( strConn );
+
+if( radius != 0 )
+{
+	// create structuring element (cube of radius 'radius')
+	strel = Strel3D.Shape.CUBE.fromRadius( radius );
+	// apply morphological gradient to input image
+	image = Morphology.gradient( imp.getImageStack(), strel );
+
+}
+else
+	image = imp.getImageStack();
+// find regional minima on gradient image with dynamic value of 'tolerance' and 'conn'-connectivity
+regionalMinima = MinimaAndMaxima3D.extendedMinima( image, tolerance, conn );
 // impose minima on gradient image
-imposedMinima = MinimaAndMaxima3D.imposeMinima( image, regionalMinima, 6 );
+imposedMinima = MinimaAndMaxima3D.imposeMinima( image, regionalMinima, conn );
 // label minima using connected components (32-bit output)
-labeledMinima = BinaryImages.componentsLabeling( regionalMinima, 6, 32 );
+labeledMinima = BinaryImages.componentsLabeling( regionalMinima, conn, 32 );
 // apply marker-based watershed using the labeled minima on the minima-imposed 
-// gradient image (the "true" value indicates the use of dams in the output)
-resultStack = Watershed.computeWatershed( imposedMinima, labeledMinima, 6, true );
-  
+// gradient image (the last value indicates the use of dams in the output)
+resultStack = Watershed.computeWatershed( imposedMinima, labeledMinima, conn, dams );
+   
 // create image with watershed result
 resultImage = new ImagePlus( "watershed", resultStack );
 // assign right calibration
 resultImage.setCalibration( imp.getCalibration() );
+// optimize display range
+Images3D.optimizeDisplayRange( resultImage );
+// set same slice as input
+resultImage.setSlice( imp.getCurrentSlice() );
 </source>
 
 ==== Label visualization in 3D viewer ====
