@@ -584,12 +584,12 @@ One advantage of this organization of the library and the use of public static m
 Let's see an example in a complete [[BeanShell_Scripting|Beanshell script]] that takes the active 2D or 3D image and finds a reasonable segmentation combining a set of morphological operations (gradient, extended minima and watershed):
 
 <source lang="java">
-// @ImagePlus(label="Input image",description="Image to segment") imp
-// @Integer(label="Gradient radius",description="Radius of the morphological gradient",value=2) radius
-// @Integer(label="Tolerance",description="Local extrema dynamic",value=3) tolerance
-// @String(label="Connectivity",description="Local connectivity", choices={"6","26"}) strConn
-// @Boolean(label="Calculate dams",description="Flag to use dams in watershed",value=true) dams
-// @OUTPUT ImagePlus resultImage
+#@ ImagePlus(label="Input image",description="Image to segment") imp
+#@ Integer(label="Gradient radius",description="Radius of the morphological gradient",value=2) radius
+#@ Integer(label="Tolerance",description="Local extrema dynamic",value=3) tolerance
+#@ String(label="Connectivity",description="Local connectivity", choices={"6","26"}) strConn
+#@ Boolean(label="Calculate dams",description="Flag to use dams in watershed",value=true) dams
+#@OUTPUT ImagePlus resultImage
   
 // ImageJ imports
 import ij.IJ;
@@ -640,7 +640,7 @@ resultImage.setSlice( imp.getCurrentSlice() );
 Making use of MorphoLibJ's label methods and the [[3D_Viewer|ImageJ 3D Viewer]]'s visualization tools it is quite simple to create a script to display each label of an image as 3D surfaces of the corresponding colors provided by the image look-up table:
 
 <source lang="java">
-// @ImagePlus imp
+#@ ImagePlus imp
 
 import inra.ijpb.label.LabelImages;
 import ij3d.Image3DUniverse;
