@@ -48,11 +48,15 @@ These shortcuts are always available:
 
 ==== Path Handling ====
 These shortcuts are always available:
-* {{key|A}} - Toggles which traced paths should be displayed: ''<u>A</u>ll'' / ''Selected''.
+* {{key|1}} - Toggles the first visibility filter: Whether all traced paths should be displayed or just selected ones
+
+* {{key|2}} - Toggles the second visibility filter: Whether all nodes should be displayed across the Z-stack or just those in nearby Z-slices
+
+* {{key|3}} - Toggles the third visibility filter: Whether paths from all channels/frames should be displayed or just those in the active channel/frame
+
+* {{key|1}} - Toggles the First visibility filter: Whether all traced paths should be displayed or just selected ones
 
 * {{key|G}} - Selects the nearest path to the mouse cursor. Holding  {{key|Shift|G}} adds the path nearest to the mouse cursor to the current list of selected paths. ''Mnemonic: <u>G</u>roup paths around cursor.'' Note that Paths can only be edited one at a time, and thus {{key|Shift|G}} is disabled in ''Edit Mode''.
-
-* {{key|Z}} - Toggles depth-rendering choice of traced paths: ''Parts in nearby slices'' / ''<u>Z-</u>stack projection.
 
 ==== Path Editing ====
 These shortcuts become available in ''Edit Mode'', activated through the contextual menu (displayed when right-clicking on a tracing canvas):
