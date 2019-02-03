@@ -606,6 +606,7 @@ import inra.ijpb.data.image.Images3D;
 // convert connectivity string to int
 conn = Integer.parseInt( strConn );
 
+image = null;
 if( radius != 0 )
 {
 	// create structuring element (cube of radius 'radius')
