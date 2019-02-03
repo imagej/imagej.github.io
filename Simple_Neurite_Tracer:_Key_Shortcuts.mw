@@ -54,8 +54,6 @@ These shortcuts are always available:
 
 * {{key|3}} - Toggles the third visibility filter: Whether paths from all channels/frames should be displayed or just those in the active channel/frame
 
-* {{key|1}} - Toggles the First visibility filter: Whether all traced paths should be displayed or just selected ones
-
 * {{key|G}} - Selects the nearest path to the mouse cursor. Holding  {{key|Shift|G}} adds the path nearest to the mouse cursor to the current list of selected paths. ''Mnemonic: <u>G</u>roup paths around cursor.'' Note that Paths can only be edited one at a time, and thus {{key|Shift|G}} is disabled in ''Edit Mode''.
 
 ==== Path Editing ====
