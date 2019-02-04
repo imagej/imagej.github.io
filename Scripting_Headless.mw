@@ -57,3 +57,8 @@ then these are filled by using a comma-separated list of parameter pairs—e.g.:
 <source>
 ./ImageJ-linux64 --ij2 --headless --console --run hello.py 'name1="Mr",name2="Mrs Kraken"'
 </source>
+
+Similarly for Windows (again respect single/double quotes),
+<source>
+ImageJ-win64.exe --ij2 --headless --console --run "PathTo/hello.py" "name1='Mr', name2='Kraken'"
+</source>
