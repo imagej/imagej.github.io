@@ -428,9 +428,9 @@ source image <math>S</math> and a target image <math>T</math>, this plugin (unde
 * Total Overlap (for all regions):
 :<math>TO=\frac{\sum_{r}{|S_{r}\cap T_{r}|}}{\sum_{r}{|T_{r}|}}</math>
 * [https://en.wikipedia.org/wiki/Jaccard_index Jaccard Index] or Union Overlap for each individual labeled region <math>r</math>:
-:<math>UO_{r}=2\frac{|S_{r}\cap T_{r}|}{|S_{r}\cup T_{r}|}</math>
+:<math>UO_{r}=\frac{|S_{r}\cap T_{r}|}{|S_{r}\cup T_{r}|}</math>
 * [https://en.wikipedia.org/wiki/Jaccard_index Jaccard Index] or Union Overlap for all regions:
-:<math>UO=2\frac{\sum_{r}|S_{r}\cap T_{r}|}{\sum_{r}|S_{r}\cup T_{r}|}</math>
+:<math>UO=\frac{\sum_{r}|S_{r}\cap T_{r}|}{\sum_{r}|S_{r}\cup T_{r}|}</math>
 * [https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient Dice Coefficient] or Mean Overlap for each individual labeled region <math>r</math>:
 :<math>MO_{r}=2\frac{|S_{r}\cap T_{r}|}{|S_{r}|+|T_{r}|}</math>
 * [https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient Dice Coefficient] or Mean Overlap for all regions:
