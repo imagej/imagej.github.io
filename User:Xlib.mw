@@ -32,6 +32,7 @@ The plugins includes:
 *  Skeletonization of binary masks
 *  Removal of horizontal and vertical stripes
 *  Generalized image transforms
+*  Wavelet decomposition and reconstruction
 ----
 *  Filtered backprojection of projections
 *  Conversion of sets of projections to sinograms and vice versa
