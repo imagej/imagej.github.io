@@ -266,8 +266,8 @@ So far, the following attribute filtering plugins are available within MorphoLib
 
 == Measurements ==
 [[MorphoLibJ]] contains several tools for quantifying the size, the shape, or the spatial organization, from '''binary or label''' 2D and 3D images. The aim is to facilitate the management of label images, contrary to the built-in “Analyze Particles...” function that operates directly on a grayscale image. 
-=== Particle analysis ===
-This section describes the methods implemented in MorphoLibJ for describing individual particles, represented as label images (one label for each particle). We first define and describe the implemented features, then we present the plugins that integrate them.
+=== Region analysis ===
+This section describes the methods implemented in MorphoLibJ for describing individual regions, represented as label images (one label for each region). We first define and describe the implemented features, then we present the plugins that integrate them.
 ==== Intrinsic volumes ====
 [[Image:MorphoLibJ-Euler-number.png|thumb|400px|Illustration of Euler Number definition. Left: three particles with Euler numbers equal to 1, 0 and -1, respectively. Right: example of a 3D particle with an Euler number equal to -1, corresponding to the subtraction of 1 connected components minus two handles.]]The intrinsic volumes are a set of features with interesting mathematical properties that are commonly used for describing individual particles as well as binary microstructrues. In the planar case, they correspond to the area, the perimeter and the Euler number. The Euler number is a topological characteristic that equals the number of connected components minus the number of holes.
 
