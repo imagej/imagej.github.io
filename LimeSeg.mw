@@ -11,8 +11,6 @@
 | category               = [[:Category:Segmentation|Segmentation]], [[:Category:Plugins]]
 }}
 
-{{ComponentStats:eu.kiaru:limeseg}}
-{{ComponentStats:sc.fiji:bigdataviewer_fiji}}
 
 '''A Fiji plugin for the segmentation of 3D objects. '''
 
