@@ -44,6 +44,7 @@ The following plugins are included:
 *  [[#Skeletonization 2D 3D|"Skeletonization 2D 3D"]]: Skeletonization of binary masks
 *  [[#Stripe Filter|"Stripe Filter"]]: Removal of horizontal and vertical stripes
 *  [[#Transform 2D 3D|"Transform 2D 3D"]]: Generalized image transforms
+*  [[#Wavelets 2D|"Wavelets 2D"]]: Wavelet decomposition and reconstruction
 '''Reconstruction:'''
 *  [[#Filtered Backprojection|"Filtered Backprojection"]]: Filtered backprojection of projections
 *  [[#Projections Sinograms|"Projections Sinograms"]]: Conversion of sets of projections into sinograms and vice versa
@@ -706,7 +707,7 @@ In shape analysis, topological features can be captured from skeletons of the ma
 }}
 
 === Stripe Filter ===
-Striping artifacts may occur due to undesired effects during data acquisition.  Defect detector pixels might be the reason of stripes in the projections of computed tomography measurements resulting in ring artifacts after reconstruction.  Waterfall artifacts might be the reason for stripes when accessing 3D data using FIB-nanotomography.  Both types of artifacts can be erased by a technique for stripe filtering based on the combination of Wavelet and Fourier transform [Münch2009].  The potential of the stripe filtering plugin is shown in the figure below by applying it to a gray level image (top) and to a RGB image (bottom).
+Striping artifacts may occur due to undesired effects during data acquisition.  Defect detector pixels might be the reason of stripes in the projections of computed tomography measurements resulting in ring artifacts after reconstruction.  Waterfall artifacts might be the reason for stripes when accessing 3D data using FIB-nanotomography.  Both types of artifacts can be erased by a technique for stripe filtering based on the combination of wavelet and Fourier transform [Münch2009].  The potential of the stripe filtering plugin is shown in the figure below by applying it to a gray level image (top) and to a RGB image (bottom).
 
 {|
 |style="vertical-align:top" |[[Image:xFig6_12_1.jpg|thumb|right|600px|Gray level (top) and RGB (bottom) image containing horizontal stripes (left) and the results of the stripe filtering plugin (right).]]
@@ -749,6 +750,14 @@ defines a translation by (10, -20) followed by a rotation by 30 in degrees in 2D
 defines a scaling by (0.5, 0.8, 1.5) followed by a rotation by (-10, 20, 30) in degrees around (0, 0, 0), followd by a translation by (11, -22, 33) in 3D.
 
 The corresponding homogeneous 4x4 (for 3D, or 3x3 for 2D) matrix operation is always indicated on the fly.  Of course, the specification of the 4x4 (or 3x3) homogeneous matrix itself is possible as well.  Moreover, the transformation of cartesian to cylindrical or spherical coordinates or vice versa is supported.  Also, resampling into another pixel size is feasible.
+
+[[Image:xFig6_15_lenna.jpg|thumb|right|550px|Well known Lenna image (left), its wavelet decomposition at decomposition level 2 by using the Haar wavelet when providing a nice view (top center) and a reconstructible format (bottom center), and finally, its reconstruction (right).]]
+=== Wavelets 2D ===
+This program provides wavelets decomposition and reconstruction of 2D images.  The decomposed set of wavelets can be chosen to be either reconstructible or non-reconstructible, i.e. just for visual presentation.  If it is selected to be reconstructible, the image quality might be not really perceptionally ideal for presentation purpose.  Hence for creating more attractive wavelet images, the choice of non-reconstructible wavelets might be preferred.  The term "non-reconstructible" means that the sets of wavelets are normalized and cropped at the boundaries and therefore miss information for proper reconstruction.  In the case of color images due to the restricted color resolution (8 bits per channel only), reconstruction might be feasible, however, the results usually are far beyond acceptable quality.  Therefore for color images if reconstructability is required, we recommend splitting into R,G,B channels and processsing of each channel separately in order to achieve floating point rather than 8 bit resolution.  
+
+After a wavelet decomposition, the wavelet specifications (e.g. "db2" for the Daubechies 2 wavelets) together with the normalization parameters (boundary handling, output normalization) are stored to the image as additional info.  Thereby if a wavelet decomposition is saved to TIFF image file format, this additional image information is being stored to the image file header.  Consequently, the respective wavelet settings will be automatically recovered when the wavelet plugin is launched to such image.
+
+The example to the right shows a Haar wavelet decomposition of the "Lenna" image which is well known in the wavelet community.  A graphically nice (top center) as well as a reconstructible version (bottom center) is presented.  Reconstruction (right) is possible only from the reconstructible version.  Since "Lenna" is a colour image and colour images are usually resolved with 8 bits per R,G,B-channel only, the reconstruction is not perfect but still acceptable for this example.  In contrast, gray level images result in wavelet decompositions in floating point format and therefore allow perfect reconstructions.
 
 == Reconstruction ==
 Plugins of this section support preprocessing and reconstruction of images from projection data for CT imaging.
