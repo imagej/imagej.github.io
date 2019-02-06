@@ -395,8 +395,8 @@ This plugin computes several geodesic measures for each particle in a label imag
 * '''x1, y1''': coordinates of one of the geodesic extremities of the particle.
 * '''x2, y2''': coordinates of another geodesic extremity of the particle.
 
-===== Particle Analysis 3D =====
-The plugin calculating these measurements is found under {{bc | Plugins | MorphoLibJ | Analyze | Particle Analysis 3D}}. The results are provided in an ImageJ Results table, whose name contains the name of the original image.
+===== Region Analysis 3D =====
+The plugin calculating these measurements is found under {{bc | Plugins | MorphoLibJ | Analyze | Region Analysis 3D}}. The results are provided in an ImageJ Results table, whose name contains the name of the original image.
 
 * '''Label''': the label of the particle measured on the current line (it can be different from the row number if some labels do no exist in original image).
 * '''Bounding box''': the minimal and maximal coordinates in each direction for each label.
