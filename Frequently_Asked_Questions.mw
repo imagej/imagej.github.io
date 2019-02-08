@@ -476,4 +476,4 @@ See the [[Open Source]] page!
 
 == Is Java still free and open source? I heard Oracle is charging for Java now! ==
 
-Java is still free and open source. The only reason to pay Oracle for a Java license is to continue receiving commercial support from Oracle after January 2019 for the _Oracle version of Java 8_. If you use OpenJDK, you are fine. If you use an older version of Oracle Java 8 (such as the one currently shipping with [[Fiji]]), you are fine. See [https://medium.com/@javachampions/java-is-still-free-c02aef8c9e04 this article] for details.
+Java is still free and open source. The only reason to pay Oracle for a Java license is to continue receiving commercial support from Oracle after January 2019 for the ''Oracle version of Java 8''. If you use OpenJDK, you are fine. If you use an older version of Oracle Java 8 (such as the one currently shipping with [[Fiji]]), you are fine. See [https://medium.com/@javachampions/java-is-still-free-c02aef8c9e04 this article] for details.
