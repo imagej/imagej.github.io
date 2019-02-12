@@ -268,7 +268,7 @@ The function <code>getProperty()</code> accepts many more strings. A list can be
 
 == Self written Jython packages for ImageJ ==
 
-On the way to perfectly organize Jython code, [https://docs.python.org/2/tutorial/modules.html#packages packages] are the next step. In Jython, folders that contain modules are made packages by adding the file <code>__init__.py</code>. This file can be empty. An folder structure can look like this:
+On the way to perfectly organize Jython code, [https://docs.python.org/2/tutorial/modules.html#packages packages] are the next step. A Jython package is a folder that contain a set of modules scripts together with a <code>__init__.py</code> file. This file can be empty. Below is a typical structure for the <code>Imagej.app/jars/Lib</code> folder:
 
 <source>
 Imagej.app/jars/Lib/
@@ -311,13 +311,13 @@ from myPackage2 import *
 stackProcessing.aFunction()
 </source>
 
-The reason for the last import to fail is the empty <code>__init__.py</code>. We have to define which modules of the package are imported when using <code>import *</code>. This is done by setting the variable <code>__all__</code> at <code>__init__.py</code>. For <code>myPackage2</code> this line of code is needed:
+The reason for the last import to fail is the empty <code>__init__.py</code>. We have to define which modules of the package are imported when using <code>import *</code>. This is done by setting the variable <code>__all__</code> in the <code>__init__.py</code>. For <code>myPackage2</code> this line of code is needed:
 
 <source lang='python'>
 __all__ = ["mathTools", "stackProcessing"]
 </source>
 
-Besides setting this variable, the file can contain normal Jython code that is executed on import.
+Besides setting this variable, the <code>__init__.py</code> file can contain normal Jython code that is executed upon import of the package.
 
 == Bundle packages in a JAR file ==
 
