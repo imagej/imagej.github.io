@@ -22,7 +22,7 @@ Complete documentation may be found at the [http://imagejdocu.tudor.lu/doku.php?
 
 == News ==
 
-v2.5 fixes an issue with the roiManager("Combine") function.
+v2.6 fixes a new issue with the roiManager("Combine") function.
 
 [[Category:Plugins]]
 [[Category:Analysis]]
