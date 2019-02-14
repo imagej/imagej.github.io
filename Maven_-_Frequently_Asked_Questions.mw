@@ -32,12 +32,18 @@ This will tell you:
 
 Note that this will only work if your project compiles successfully. In other words, it is easier to start with "too many" dependencies and pare down, rather than trying to "build up" from zero.
 
-= What's this: ''Property 'imagej.app.directory' unset; Skipping copy-jars'' =
+= What's this: ''Property 'imagej.app.directory' or 'scijava.app.directory' unset; Skipping copy-jars'' =
 
-This is part of the {{GitHub|org=imagej|repo=imagej-maven-plugin|label=imagej-maven-plugin}} (enabled for you by pom-scijava). As you suspected, it copies your plugin's ''.jar'' file to your ImageJ plugins folder. But you have to specify where:
+This is part of the {{GitHub|org=imagej|repo=imagej-maven-plugin|label=imagej-maven-plugin}} (enabled for you by pom-scijava). 
+For pom-scijava>=24.0.0, imagej-maven-plugin was replaced by {{GitHub|org=scijava|repo=scijava-maven-plugin|label=scijava-maven-plugin}}.<br> 
+As you suspected, it copies your plugin's ''.jar'' file together with its dependencies to your ImageJ jars or plugins folder. To do so, you have to provide the path to your ImageJ.app (or Fiji.app) as an additional argument to Maven:
 
 <source lang="bash">
-mvn -Dimagej.app.directory=/Applications/ImageJ.app
+mvn -Dimagej.app.directory=YourPath/ImageJ.app
+</source>
+or for pom-scijava>=24.0.0,
+<source lang="bash">
+mvn -Dscijava.app.directory=YourPath/ImageJ.app
 </source>
 
 You can cause this to happen automatically by creating a file <code>$HOME/.m2/settings.xml</code> where <code>$HOME</code> is your home directory, with the following contents:
