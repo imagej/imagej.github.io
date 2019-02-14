@@ -29,7 +29,7 @@ There are three common methods for constructing an uber-JAR:
 <li>'''JAR of JARs'''. The final JAR file contains the other JAR files embedded within.
   <ul>
   <li>'''Pro:''' Avoids dependency version clashes. All resource files are preserved.</li>
-  <li>'''Con:''' Needs to bundle a special "bootstrap" classloader to enable Java to load classes from the wrapped JAR files. Debugging class loader issues becomes more complex.</li>
+  <li>'''Con:''' Needs to bundle a special "bootstrap" classloader to enable Java to load classes from the wrapped JAR files. Debugging class loader issues becomes more complex.  Using getResource() calls when there are MANY contained jars can be problematic, due to locking inside misc.sun.URLClassPath.</li>
   <li>'''Tools:''' [http://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2Freference%2Fref-export-jar.htm Eclipse JAR File Exporter], [http://one-jar.sourceforge.net/ One-JAR].</li>
   </ul>
 </li>
