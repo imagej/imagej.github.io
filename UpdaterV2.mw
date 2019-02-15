@@ -361,6 +361,8 @@ For more details check out this example of a the <code>db.xml</code> of a local 
 
 == Future plans ==
 
+Vision: Make people looking forward to getting updates, because they get to know about improvements and have full control to handle situation or revert changes in case things go south.
+
 === Version terminology ===
 
 * '''Updater V0''': The current updater
