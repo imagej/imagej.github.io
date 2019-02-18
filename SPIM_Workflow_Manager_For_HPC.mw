@@ -6,7 +6,7 @@
 | released               = August 2018
 | latest version         = November 2018
 | category               = [[:Category:Transform|Transform]], [[:Category:Registration|Registration]], [[:Category:Deconvolution|Deconvolution]]
-| source               = [https://code.it4i.cz/fiji/haas-java-client on github]
+| source               = [https://github.com/fiji-hpc/hpc-workflow-manager/ on github]
 }}
 
 = About the plugin =
