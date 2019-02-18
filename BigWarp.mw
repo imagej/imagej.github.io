@@ -22,7 +22,7 @@ Press {{key press|F1}} at any time to open a help page with a listing of navigat
 
 === Landmark point placement and display in the viewer ===
 
-Landmark placements is done in ''Landmark mode'' which you enter by holding {{key press|Spacebar}}. Users place pairs of corresponding points on the moving and target images.  
+Landmark placements is done in ''Landmark mode'' which you enter by pressing {{key press|Spacebar}}. Users place pairs of corresponding points on the moving and target images.  
 
 The following table shows the available commands and keystrokes for landmark placement, warping. 
 {| border="1" style="border-collapse:collapse;"
@@ -35,7 +35,7 @@ The following table shows the available commands and keystrokes for landmark pla
 | style="padding: 5px;" | {{key press|Ctrl}}+{{key press|S}}
 | style="padding: 5px;" | Save current landmarks to a file.
 |-
-| style="padding: 5px;" | hold {{key press|Spacebar}}
+| style="padding: 5px;" | {{key press|Spacebar}}
 | style="padding: 5px;" | Toggle ''Landmark mode'' 
 |-
 | style="padding: 5px;" | <''Landmark mode''>+{{key press|left-click}}
