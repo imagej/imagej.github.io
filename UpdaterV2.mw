@@ -30,6 +30,15 @@ The core plugins written in Java, versioned via Maven and distributed via update
 * ?
 * melting pot? other scripts?
 
+== Class perspective ==
+
+* on Startup, the command <code>net.imagej.updater.CheckForUpdates</code> is called.
+* <code>CheckForUpdates</code> calls <code>net.imagej.updater.UpToDate</code>
+* <code>UpToDate</code> checks if the user wants to ignore updates, checks the internet connection, checks write access, etc..
+* <code>UpToDate</code> also checks if any of the enabled update sites have different URLs on the available list of update sites (since Updater V1) and whether any update sites have a newer update timestamp than the one locally stored for that update site
+* in case there are updates, <code>net.imagej.ui.swing.updater.ImageJUpdater</code> is called
+* <code>ImageJUpdater</code> is the command creating the graphical user interfaces for dealing with updated files and update site URLs
+
 == The official list of update sites ==
 
 You can access the list of official update sites here: https://imagej.github.io/list-of-update-sites/. Anything on this list can be installed from Fiji by opening the updater, clicking <code>Manage update sites</code> and clicking the check mark of the list entry.
