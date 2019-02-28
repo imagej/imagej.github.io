@@ -19,5 +19,6 @@ Image>Adjust>Brightness/Contrast
 Process>Filters>Gaussian blur 3D with ". sigma"= 1.
 
 Vector Line 3D Filter - enhances white fibers of varying thickness. Crossection of the fibers need not be circular. Parameter "sigma" corresponds to the largest scale.
+
 Example: [https://imagej.net/_images/e/e9/Capillaries_heart.zip Image of capillaries in embryonic heart].
 Vector Line 3D Filter with parameters "sigma"= 4, "scale number"= 2.
