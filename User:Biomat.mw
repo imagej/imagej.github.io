@@ -10,6 +10,7 @@ Preprocessing example:
 Stack Linear Contrast with parameters "first"= 1 and "last"= 3.
 Process>Filters>Gaussian blur 3D with " sigma"= 1.
 Lipschitz 3D Filter with parameter "slope"= 2.
+
 == Plugins for detection of fibres in 3D image. ==
 Tensor Line 3D Filter - enhances white fibers of uniform width sparsely distributed on dark background.
 
