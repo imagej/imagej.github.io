@@ -8,8 +8,8 @@ Preprocessing example:
 
 Image of capillaries in brain [https://imagej.net/_images/2/2e/Capillaries_brain.zip].
 
-Stack Linear Contrast with parameters first= 1 and last= 3.
+Stack Linear Contrast with parameters "first"= 1 and "last"= 3.
 
-Process>Filters>Gaussian blur 3D with sigma= 1.
+Process>Filters>Gaussian blur 3D with " sigma"= 1.
 
-Lipschitz 3D Filter with parameter slope= 2.
+Lipschitz 3D Filter with parameter "slope"= 2.
