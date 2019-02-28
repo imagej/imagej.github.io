@@ -1,0 +1,9 @@
+
+== Plugins for 3D image preprocessing. ==
+Stack Linear Contrast - multiplies images in stack by coefficient obtained by linear interpolation of the "first" and "last" coefficient. A simple tool for compensation of contrast decreasing with depth within thick sample.
+Lipschitz 3D Filter - top hat - subtracts slowly varying background calculated as lower Lipschitz envelope from the image.
+Preprocessing example:
+Image [https://imagej.net/_images/2/2e/Capillaries_brain.zip].
+Stack Linear Contrast with parameters first= 1 and last= 3.
+Process>Filters>Gaussian blur 3D with sigma= 1.
+Lipschitz 3D Filter with parameter slope= 2.
