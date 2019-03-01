@@ -26,7 +26,7 @@ The basic setup looks as following:
 
 - Run the program in the manual mode (or even in the batch mode using ImageJ macro) to process the data. 
 
-''' Fixing the Image Anisotropy '''
+''' Fixing Image Anisotropy '''
 
 Since the resolution in z-axis might be much worse than the resolution in x- and y-axis we should perform the correction for that. To do that one will use the beads images acquired with the same microscope under the same conditions as the normal (data) images.  
 
