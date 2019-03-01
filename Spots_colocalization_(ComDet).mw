@@ -3,7 +3,7 @@
 | name                   = ComDet
 | author                 = [http://katpyxa.info Eugene Katrukha]
 | maintainer             = [mailto:katpyxa_at_gmail.com Eugene Katrukha]
-| filename               = [https://github.com/ekatrukha/ComDet/blob/master/target/ComDet_-0.4.0.jar?raw=true ComDet.jar] + for ImageJ [https://math.nist.gov/javanumerics/jama/Jama-1.0.3.jar Jama lib]
+| filename               = [https://github.com/ekatrukha/ComDet/blob/master/target/ComDet_-0.4.1.jar?raw=true ComDet.jar] + for ImageJ [https://math.nist.gov/javanumerics/jama/Jama-1.0.3.jar Jama lib]
 | source                 = [https://github.com/ekatrukha/ComDet github]
 | released               = 23 November 2012
 | latest version         = 23 January 2019
@@ -110,7 +110,7 @@ Columns are:
  
 == Additional info ==
 
-For detection explanation, see [https://github.com/ekatrukha/ComDet/wiki/How-does-detection-work%3F How does detection work?]. Also [https://github.com/ekatrukha/ComDet/wiki/Updates-history updates history] is available.
+For detection explanation, see [https://github.com/ekatrukha/ComDet/wiki/How-does-detection-work%3F How does detection work?] Also [https://github.com/ekatrukha/ComDet/wiki/Updates-history updates history] is available.
 
 [[Category:Plugins]]
 [[Category:Colocalization]]
