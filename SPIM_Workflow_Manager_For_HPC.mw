@@ -69,3 +69,4 @@ The data transfer and pipeline execution on Salomon using 90 nodes took 9 hours 
 
 = Citation =
 Please note that the plugin SPIM Workflow Manager for HPC available through Fiji is based on a publication. If you use it successfully for your research please be so kind to cite our work:
+Jan Kožusznik, Petr Bainar, Jana Klímová, Michal Krumnikl, Pavel Moravec, Václav Svatoň, Pavel Tomančák; SPIM Workflow Manager for HPC, ''Bioinformatics'', , btz140, [https://doi.org/10.1093/bioinformatics/btz140]
