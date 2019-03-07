@@ -1,0 +1,58 @@
+{{Infobox
+| software               = ImageJ
+| name                   = ContourLines
+| author                 = [http://katpyxa.info Eugene Katrukha]
+| maintainer             = [mailto:katpyxa_at_gmail.com Eugene Katrukha]
+| filename               = [https://github.com/ekatrukha/ContourLines/blob/master/target/ContourLines_-0.0.3.jar?raw=true ContourLines_.jar]
+| source                 = [https://github.com/ekatrukha/ContourLines github]
+| released               = 07 March 2019
+| latest version         = 07 March 2019
+| status                 = stable 
+| category               = [[:Category:Stacks|Stacks]]
+| website                = [https://github.com/ekatrukha/ContourLines]
+}}
+
+Plugin generating contour lines with equal spacing on top of an image (using overlay).  
+Based/inspired by [https://github.com/anvaka/streamlines streamlines] project by [https://github.com/anvaka anvaka] and [http://web.cs.ucdavis.edu/~ma/SIGGRAPH02/course23/notes/papers/Jobard.pdf this publication] (use it for citation).
+   
+http://katpyxa.info/software/ContourLines/CL2.gif
+
+== Parameters ==
+
+After plugin launch, rendering parameters window will appear  
+
+http://katpyxa.info/software/ContourLines/CL_parameters_dialog.png
+
+=== Smoothing radius ===
+To find the "vector field of an image", plugin calculates convolution of image with [http://campar.in.tum.de/Chair/HaukeHeibelGaussianDerivatives derivative of Gaussian] in *x* and *y* to estimate intensity gradient at each point. You can specify smoothing radius (SD of Gaussian). The larger the value, less small intensity details are available. For example, here are two images, the left one is build with smoothing radius of 2.0, while the right one with smoothing radius of 10.0 pixels.
+
+http://katpyxa.info/software/ContourLines/smoothing_2_line_0.05_distance_3.png http://katpyxa.info/software/ContourLines/smoothing_10_line_0.05_distance_3.png  
+
+Notice that the small spot in the right top corner "disappeared".
+
+=== Line integration step ===
+
+This parameter defines, how precisely contour generation routine follows gradient vector field of the image. Smaller value result in more precise contour lines, but also take longer time to generate them. Example below illustrates integration step of 0.05 (left) versus 0.5 pixels (right).
+
+http://katpyxa.info/software/ContourLines/smoothing_2_line_0.05_distance_3.png http://katpyxa.info/software/ContourLines/smoothing_2_line_0.5_distance_3.png 
+
+=== Distance between lines ===
+
+Well, how densely you want contour lines to be plotted. Left image is 3 px, right image is 10 px.
+
+http://katpyxa.info/software/ContourLines/smoothing_2_line_0.05_distance_3.png http://katpyxa.info/software/ContourLines/smoothing_2_line_0.05_distance_10.png 
+
+=== Use single color ===
+
+With this option checked, plugin will use current selected color (in toolbar or Color Picker) to build lines. Example:
+
+http://katpyxa.info/software/ContourLines/smoothing_2_line_0.05_distance_3_single_color.png 
+
+=== Use color lookup tables (LUT) ===
+
+Plugin will use one of the installed ImageJ/Fiji lookup tables (LUTs) to color code each contour with its average intensity. Pay attention, that current minimum and maximum of intensity would be taken from "Brightness/Contrast" settings of the image. In works better if your image uses "dark-to-bright" LUT and you check "Invert LUT" option for contours. In this case brighter lines would be on top of dark image areas and vice versa. In the example below the left image uses inverted "Thermal" LUT for contours, while contour LUT of the image on the right is not inverted.
+
+http://katpyxa.info/software/ContourLines/smoothing_2_line_0.05_distance_3.png http://katpyxa.info/software/ContourLines/smoothing_2_line_0.05_distance_3_not_inverted_thermal.png 
+
+=== License ===
+MIT
