@@ -8,7 +8,6 @@
 | released               = 07 March 2019
 | latest version         = 07 March 2019
 | status                 = stable 
-| category               = [[:Category:Stacks|Stacks]]
 | website                = [https://github.com/ekatrukha/ContourLines]
 }}
 
@@ -42,6 +41,13 @@ Well, how densely you want contour lines to be plotted. Left image is 3 px, righ
 
 http://katpyxa.info/software/ContourLines/smoothing_2_line_0.05_distance_3.png http://katpyxa.info/software/ContourLines/smoothing_2_line_0.05_distance_10.png 
 
+=== Stop line at fraction of distance ===
+
+This parameter is a fraction of previous and it defines when the line integration will stop. I.e. end of each line cannot come closer than this distance to already existing lines. For example, on the left image parameter's value is 0.5, while on the right it is 0.1.  
+
+http://katpyxa.info/software/ContourLines/smoothing_2_line_0.05_distance_3_x.png
+http://katpyxa.info/software/ContourLines/smoothing_2_line_0.05_distance_3_single_color_end_0.1.png 
+
 === Use single color ===
 
 With this option checked, plugin will use current selected color (in toolbar or Color Picker) to build lines. Example:
@@ -54,5 +60,14 @@ Plugin will use one of the installed ImageJ/Fiji lookup tables (LUTs) to color c
 
 http://katpyxa.info/software/ContourLines/smoothing_2_line_0.05_distance_3.png http://katpyxa.info/software/ContourLines/smoothing_2_line_0.05_distance_3_not_inverted_thermal.png 
 
-=== License ===
-MIT
+=== Remove open contours ===
+
+Plugin will remove open contours (contours with free ends). Examples are below, left image includes open contours, while the right one not.
+
+http://katpyxa.info/software/ContourLines/smoothing_2_line_0.05_distance_3_x.png
+http://katpyxa.info/software/ContourLines/smoothing_2_line_0.05_distance_3_single_color_closed_only.png
+
+
+== Updates history ==
+
+* v.0.0.4 added criteria for line integration end. Added a possibility to remove open contours.
