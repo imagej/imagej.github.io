@@ -5,6 +5,8 @@
 | maintainer             = {{Person|Maarzt}}
 | source                 = {{GitHub|org=maarzt|repo=imglib2-labkit}}
 }}
+[[File:Labkit_Illustration.jpg|700px]]
+
 Labkit is a FIJI plugin for:
 * automatic image segmentation
 * labeling regions of an image
