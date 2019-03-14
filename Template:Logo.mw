@@ -1,5 +1,6 @@
 <includeonly>{{#switch: {{{1}}}
 | Alida = [[File:Alida-logo.jpg | {{{align|}}} | x{{{size|48px}}} | link={{{link|Alida}}}]]
+| Android = [[File:Android-robot.svg | {{{align|}}} | x{{{size|48px}}} | link={{{link|Android}}}]]
 | Bio-Formats = [[File:Bio-formats-icon.png | {{{align|}}} | x{{{size|48px}}} | link={{{link|Bio-Formats}}}]]
 | Bio7 = [[File:Bio7-icon.png | {{{align|}}} | x{{{size|48px}}} | link={{{link|Bio7}}}]]
 | BoneJ = [[File:Bonej-icon.png | {{{align|}}} | x{{{size|48px}}} | link={{{link|BoneJ}}}]]
@@ -23,9 +24,11 @@
 | MiToBo = [[File:MiToBo-logo.png | {{{align|}}} | x{{{size|48px}}} | link={{{link|MiToBo}}}]]
 | OME = [[File:Ome-icon.png | {{{align|}}} | x{{{size|48px}}} | link={{{link|OME}}}]]
 | OMERO = [[File:Omero-icon.png | {{{align|}}} | x{{{size|48px}}} | link={{{link|OMERO}}}]]
+| Orbit = [[File:Orbit-logo.png | {{{align|}}} | {{{size|48px}}} | link={{{link|Orbit}}}]]
 | OS X = [[File:osx.png | {{{align|}}} | {{{size|48px}}} | link={{{link|MacOS}}}]]
 | Pi = [[File:Pi.svg | {{{align|}}} | {{{size|48px}}} | link={{{link|Raspberry Pi}}}]]
 | Plugin = [[File:plugin.png | {{{align|}}} | {{{size|48px}}} | link={{{link|Plugins}}}]]
+| QuPath = [[File:QuPath-logo.png | {{{align|}}} | {{{size|48px}}} | link={{{link|QuPath}}}]]
 | SCIFIO = [[File:Scifio-icon.png | {{{align|}}} | x{{{size|48px}}} | link={{{link|SCIFIO}}}]]
 | SciJava = [[File:Scijava-icon.png | {{{align|}}} | x{{{size|48px}}} | link={{{link|SciJava}}}]]
 | SLIM Curve = [[File:Slim-curve-icon.png | {{{align|}}} | x{{{size|48px}}} | link={{{link|SLIM Curve}}}]]
