@@ -1,7 +1,6 @@
-== ImageJ ==
+Running ImageJ on Android won't work, because:
 
+* [[ImageJ 1.x]] uses AWT, which is not available on Android
+* [[ImageJ2]] was built with a separation of concerns in mind (see [[Architecture]] page for technical details), but there is no infrastructure in place to ensure that all ImageJ2 APIs are Android-compatible. It would be a feasible project, but potentially a lot of work, to do that.
 
-
-== ImgLib ==
-
-== ImageJ2 ==
+See [https://forum.image.sc/t/using-imagej-with-android/2517 this forum thread] for further details and discussion.
