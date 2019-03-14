@@ -2,7 +2,7 @@
 
 == Status of ImageJ on Android ==
 
-Running ImageJ on Android does not currently work, because:
+The Android operating system uses a modified version of the Java virtual machine. So in principle, running ImageJ on Android devices is feasible. However, running ImageJ on Android does not currently work, because:
 
 * [[ImageJ 1.x]] uses AWT, which is not available on Android
 * [[ImageJ2]] was built with a separation of concerns in mind (see [[Architecture]] page for technical details), but there is no infrastructure in place to ensure that all ImageJ2 APIs are Android-compatible. It would be a feasible project, but potentially a lot of work, to do that. The community would welcome efforts in this direction!
