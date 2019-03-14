@@ -7,18 +7,22 @@
 
 # Install Java 8 on your Pi. Verify it works using <code>java -version</code> from the command line.
 # Download and install the [http://downloads.imagej.net/fiji/latest/fiji-nojre.zip platform-independent "no JRE" distribution of Fiji].
-# Download the [https://github.com/imagej/imagej/blob/master/bin/ImageJ.sh ImageJ.sh] shell script, set its executable bit (<code>chmod +x ImageJ.sh</code>) and run it to launch ImageJ. Note that the shell script supports only a subset of the functionality of the native [[ImageJ Launcher]], but it should be able to run ImageJ successfully.
-#Move the ImageJ.sh file to the Fiji.app folder
+# Download the [https://github.com/imagej/imagej/blob/master/bin/ImageJ.sh ImageJ.sh] shell script
+# Move the ImageJ.sh file to the Fiji.app folder
+# Set the executable bit (<code>chmod +x ImageJ.sh</code>)
+# Run it (<code>./ImageJ.sh</code>) to launch ImageJ.
 
-The following steps describe how to create a desktop icon to launch FIJI on a Raspberry Pi:
+Note that the shell script supports only a subset of the functionality of the native [[ImageJ Launcher]], but it should be able to run ImageJ successfully.
 
-#Dowload the Fiji icon image: [https://imagej.net/_images/thumb/a/ae/Fiji-icon.png/48px-Fiji-icon.png Fiji icon link]
-#Press ctrl + alt + t to open the terminal window
-#Type: <code> nano FIJI launcher.desktop </code> and press return.  This will load Nano which will allow you to create a desktop icon.
-#Type the following code, replacing "/path/to" with the paths to the ImageJ.sh file and the Fiji icon: 
+The following steps describe how to create a desktop icon to launch Fiji on a Raspberry Pi:
+
+# Download the Fiji icon image: [https://imagej.net/_images/thumb/a/ae/Fiji-icon.png/48px-Fiji-icon.png Fiji icon link]
+# Press {{key|ctrl|alt|t}} to open the terminal window
+# Type <code>nano Fiji.desktop</code> and press return. This will load Nano which will allow you to create a desktop icon.
+# Type the following code, replacing <code>/path/to</code> with the paths to the <code>ImageJ.sh</code> file and the Fiji icon:
 <source lang="linux-config">
 [Desktop Entry]
-Name=Fiji launcher
+Name=Fiji
 Version=1.0
 Comment=Launches Fiji
 Exec=/path/to/ImageJ.sh
@@ -27,11 +31,11 @@ Terminal=false
 Type=Application
 Categories=Education
 </source>
-#Press Ctrl + x and then press Y to exit and save the new desktop icon.
-#Enter your desired file name, such as "Fiji Launcher.desktop" and press return.  Once complete, an icon should be visible on the desktop.
-#Press Ctrl + x to return to the terminal window
-#In the terminal window, type the following to navigate to the Desktop: <code> cd ~/Desktop </code>
-#Then type the following to make the new icon executable: <code>chmod +x "Fiji Launcher.desktop"</code>
+# Press {{key|ctrl|x}} and then press {{key|Y}} to exit and save the new desktop icon.
+# Enter your desired file name, such as <code>Fiji.desktop</code> and press return. Once complete, an icon should be visible on the desktop.
+# Press {{key|ctrl|x}} to return to the terminal window
+# In the terminal window, type the following to navigate to the Desktop <code> cd ~/Desktop</code>
+# Then type the following to make the new icon executable <code>chmod +x Fiji.desktop</code>
 
 
 = 3D Visualization =
