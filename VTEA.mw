@@ -13,8 +13,21 @@ __TOC__
 
 =Volumetric Tissue Exploration and Analysis=
 
+'''Three-dimensional tissue cytometry.'''  Three-dimensional tissue cytometry(3DTC) enables the quantitative measurement of whole cells while retaining their morphology, localization and associations-think of it as in situ flow cytometry.  How can we do 3DTC?  Volumetric tissue exploration and analysis!
 
-{{Notice | VTEA is still under active development.}}
+'''In order for it to be useful it needs to be:'''
+
+'''Free and easy to get.'''  We opted to use ImageJ/FIJI as the distribution platform because it has an excellent and robust community of contributors.  Practically, it provides the mechanisms for updating, a number of image processing tools and is built on a simple and powerful extensible framework.
+
+'''Easy to use.'''  We designed VTEA to organize the most common workflow in 3DTC inclusive of image processing (to manage imaging artifacts), segmentation (extensible to bring in edge deep learning approaches into a common framework of analysis) and exploration and analysis with flow cytometry like plots, gating, mapping to image with ROI gating and  tools for high dimensionality data (clustering, PCA, tSNE).
+
+'''Mesoscale 3D analysis.'''  We built segmentation to handle massive datasets (>10 GB, LS connect 3D), to operate seamlessly on an embedded database to enable analysis of 100’s of thousands and incorporated tools for clustering and dimensionality reduction to facilitate analysis of spectrally imaged datasets-up to 8 channels.
+
+'''Original image referencing.'''  The power of 3DTC in VTEA enables the localization of identified cells in the analysis space in the original image, ''in situ'', and in 3D with [[ClearVolume]].
+
+'''Methods for analyzing big data.'''  Techniques commonly used in single cell transcriptomic are available with a number of clustering approaches (e.g. Ward hierarchical,  K-means, etc) and dimensionality reduction (e.g. PCA and tSNE).
+
+{{Notice | VTEA is still under active development.  Version 1.0 is about to be released.}}
 
 This brief [[Media:Demostration.mov|video]] describes VTEA's core behaviors.  VTEA's utility has been demonstrated in this [http://jasn.asnjournals.org/content/early/2017/02/01/ASN.2016091027.full paper].
 
