@@ -1,5 +1,5 @@
 {{Infobox
-| name                   = Big Data Processor 2 
+| name                   = BigDataProcessor2 
 | update site            = EMBL-CBA
 | author                 = Ashis Ravindran & Christian Tischer
 | maintainer             = Ashis Ravindran & Christian Tischer
@@ -15,7 +15,7 @@ BigDataProcessor2 is a FIJI plugin for efficient inspection and processing of bi
 
 BigDataProcessor2 can be installed from the ImageJ update site: http://sites.imagej.net/EMBL-CBA/ (For details on how to install an update site click [[Following_an_update_site|here]].)
 
-To start Labkit in ImageJ, first open the image you want to work with, and then select Plugins > Segmentation > Labkit from the main menu.
+To start BigDataProcessor2 in ImageJ, select Plugins > BigDataTools > BigDataProcessor2 from the main menu.
 
 == More information ==
 
