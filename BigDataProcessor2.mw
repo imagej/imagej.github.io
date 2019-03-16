@@ -1,8 +1,8 @@
 {{Infobox
 | name                   = Big Data Processor 2 
 | update site            = EMBL-CBA
-| author                  = {{Person|Ashis Ravindran} & {Person|Christian Tischer}}
-| maintainer             = {{Person|Ashis Ravindran} & {Person|Christian Tischer}}
+| author                  = { {Person|AshisRavindran} & {Person|ChristianTischer}}
+| maintainer             = {{Person|AshisRavindran} & {Person|ChristianTischer}}
 | source                 = {{GitHub|org=tischi|repo=fiji-plugin-bigDataProcessor2}}
 }}
 
