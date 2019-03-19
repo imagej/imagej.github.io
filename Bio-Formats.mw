@@ -2,11 +2,11 @@
 | software               = ImageJ
 | name                   = OME Bio-Formats plugins
 | logo                     = [[File:Bio-formats-icon.png|96px]]
-| author                 = [http://openmicroscopy.org/ Open Microscopy Environment]:<br/>- [[LOCI|UW-Madison LOCI]]<br/>- [http://www.glencoesoftware.com/ Glencoe Software]<br/>- [http://www.dundee.ac.uk/ University of Dundee]
+| author                 = [https://www.openmicroscopy.org/ Open Microscopy Environment]:<br/>- [[LOCI|UW-Madison LOCI]]<br/>- [https://www.glencoesoftware.com/ Glencoe Software]<br/>- [https://www.dundee.ac.uk/ University of Dundee]
 | maintainer             = OME development team
-| filename               = [http://downloads.openmicroscopy.org/bio-formats/ See Bio-Formats Downloads page]
+| filename               = [https://downloads.openmicroscopy.org/bio-formats/ See Bio-Formats Downloads page]
 | source                 = {{GitHub|org=openmicroscopy|repo=bioformats}}
-| latest version         = [http://downloads.openmicroscopy.org/bio-formats/ See Bio-Formats Downloads page]
+| latest version         = [https://downloads.openmicroscopy.org/bio-formats/ See Bio-Formats Downloads page]
 | status                 = active
 | category               = [[:Category:Import-Export]]
 }}{{TOC}}
@@ -17,11 +17,11 @@ Import data from many life sciences file formats, and export to several open for
 
 == History ==
 
-See [http://loci.wisc.edu/software/bio-formats LOCI's Bio-Formats site] for a historical narrative of the project.
+See [https://loci.wisc.edu/software/bio-formats LOCI's Bio-Formats site] for a historical narrative of the project.
 
 == Documentation ==
 
-What follows is a brief overview of the available plugins. You will find them all under the "Bio-Formats" submenu of Plugins. See the [http://www.openmicroscopy.org/site/products/bio-formats Bio-Formats web site] for additional information about Bio-Formats in general.
+What follows is a brief overview of the available plugins. You will find them all under the "Bio-Formats" submenu of Plugins. See the [https://www.openmicroscopy.org/bio-formats/ Bio-Formats web site] for additional information about Bio-Formats in general.
 
 See especially the [https://docs.openmicroscopy.org/latest/bio-formats/users/imagej/load-images.html#using-bio-formats-to-load-images-into-imagej Using Bio-Formats] page for detailed instructions.
 
@@ -50,7 +50,7 @@ It can save to the open [https://docs.openmicroscopy.org/latest/ome-model/#ome-t
 * QuickTime (*.mov)
 * Tagged Image File Format (TIFF) (*.tif, *.tiff, *.tf2, *.tf8, *.btf)
 * [https://github.com/Vaa3D/Vaa3D_Wiki/wiki/Vaa3D-Wiki Vaa3d] (*.v3draw)
-* [http://www.emouseatlas.org/emap/analysis_tools_resources/software/woolz.html Woolz] (*.wlz)
+* [https://www.emouseatlas.org/emap/analysis_tools_resources/software/woolz.html Woolz] (*.wlz)
 
 '''Note:''' For OME-TIFF and TIFF formats, the file extensions '''*.tif''' and '''*.tiff''' are associated with the standard 32-bit TIFF, which has a 4GB size limit. On the other hand, the file extensions '''*.tf2''', '''*.tf8''', and '''*.btf''' are automatically associated with [https://www.awaresystems.be/imaging/tiff/bigtiff.html the 64-bit BigTIFF format], which can store much bigger data.
 
@@ -153,7 +153,7 @@ To enable the Bio-Formats update site:
 The Bio-Formats source code is {{GitHub | org = openmicroscopy | repo = bioformats}}.
 
 == Reporting bugs ==
-To report a bug in Bio-Formats, please see [http://www.openmicroscopy.org/site/support/bio-formats/about/bug-reporting.html reporting a bug in Bio-Formats].
+To report a bug in Bio-Formats, please see [https://docs.openmicroscopy.org/latest/bio-formats/about/bug-reporting.html reporting a bug in Bio-Formats].
 
 == Publication ==
 * {{Publication | Bio-Formats}}
