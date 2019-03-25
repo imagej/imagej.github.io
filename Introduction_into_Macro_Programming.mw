@@ -206,6 +206,7 @@ else {
 
 = Loops =
 
+== 1st example ==
 To repeat instructions several times, loops are used. Example:
 
 <source lang="java">
@@ -227,6 +228,20 @@ In this example, the variable ''i'' is first initialized to zero, then the condi
 Even if the counter variable was not used inside the code block in this example, you are free to do so, of course.
 
 Note that starting with 0 and testing for the condition "smaller than 10" will result in the code block being run 10 times. It is the standard way to execute a certain block of code a fixed number of times.
+
+== Looping over slices of a stack ==
+To loop over a stack, one can use the variable <code>nSlices</code>.
+
+<source lang="java">
+#@ImagePlus (label="Some stack") image
+
+selectImage(image);
+for (i=1; i<=nSlices; i++) {
+    setSlice(i);
+    run("Duplicate...", "title=Slice");
+    // do some processing
+}
+</source>
 
 = The recorder =
 
