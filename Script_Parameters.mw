@@ -186,7 +186,7 @@ By default, a <code>#@ File</code> parameter will create a chooser for a single 
 print(myFile)
 </source>
 
-You can request for multiple files or folders as well.
+You can request for multiple files or folders as well. However multiple files/folders input are not yet macro-recordable.
 
 Example in ImageJ Macro Language:
 
@@ -211,12 +211,14 @@ for (i=0;i<listOfPaths.length;i++) {
 
 The exact same code works for the [[Macros|ImageJ1 Macro language]], too.
 
-If you want to select files only, use a <code>style</code> property:
+If you want to select files or folders exclusively, use a <code>style</code> property:
 
 <source lang="python">
 #@ File(label="Select a file", style="file") myFile
+#@ File(label="Select a directory", style="directory") myDir
 
 print(myFile)
+print(myFolder)
 </source>
 
 You can set restrictions on accepted file types based on file extension (using a <code>style</code> property):
@@ -225,14 +227,6 @@ You can set restrictions on accepted file types based on file extension (using a
 #@ File(label="Select an image file", style="extensions:png/jpg") myImageFile
 
 print(myImageFile)
-</source>
-
-If you want to select a directory instead, use a <code>style</code> property:
-
-<source lang="python">
-#@ File(label="Select a directory", style="directory") myDir
-
-print(myDir)
 </source>
 
 === Styles ===
