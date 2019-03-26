@@ -12,9 +12,9 @@
 }}
 
 == Plugins for 3D image preprocessing. ==
-Stack Linear Contrast - multiplies images in stack by coefficient obtained by linear interpolation of the "first" and "last" coefficient. A simple tool for compensation of contrast decreasing with depth within thick sample.
+'''Stack Linear Contrast''' - multiplies images in stack by coefficient obtained by linear interpolation of the "first" and "last" coefficient. A simple tool for compensation of contrast decreasing with depth within thick sample.
 
-Lipschitz 3D Filter - top hat - subtracts slowly varying background calculated as lower Lipschitz envelope from the image.
+'''Lipschitz 3D''' Filter - top hat - subtracts slowly varying background calculated as lower Lipschitz envelope from the image.
 
 Preprocessing example: 
 
@@ -24,14 +24,14 @@ Preprocessing example:
 {{bc | Plugins | Biomat | Lipschitz 3D Filter}} with parameter "slope"= 2.
 
 == Plugins for detection of fibres in 3D image. ==
-Tensor Line 3D Filter - enhances white fibers of uniform width sparsely distributed on dark background.
+'''Tensor Line 3D Filter''' - enhances white fibers of uniform width sparsely distributed on dark background.
 
 Example: [https://imagej.net/_images/e/e8/Capillaries_adipose.zip Image of capillaries in adipose tissue].
 {{bc | Plugins | Biomat | Tensor Line 3D Filter}} with "sigma" set to 3,
 {{bc | Image | Adjust | Brightness/Contrast}} and
 {{bc | Process | Filters | Gaussian blur 3D}} with "sigma"= 1.
 
-Vector Line 3D Filter - enhances white fibers of varying thickness. Crossection of the fibers need not be circular. Parameter "sigma" corresponds to the largest scale.
+'''Vector Line 3D Filter''' - enhances white fibers of varying thickness. Crossection of the fibers need not be circular. Parameter "sigma" corresponds to the largest scale.
 
 Example: [https://imagej.net/_images/e/e9/Capillaries_heart.zip Image of capillaries in embryonic heart].
 {{bc | Plugins | Biomat | Vector Line 3D Filter}} with parameters "sigma"= 4, "scale number"= 2.
