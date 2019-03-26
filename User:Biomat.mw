@@ -1,37 +1,5 @@
-{{Infobox
-| software               = ImageJ
-| name                   = Biomat
-| maintainer             = [mailto:jiri.janacek_at_fgu.cas.cz Jiří Janáček]
-| author                 = Jiří Janáček
-| source                 = {{GitHub|org=jiri-janacek|repo=biomat}}
-| released               = 03/26/2019
-| latest version         = 03/26/2019
-| status                 = 
-| category               = [[:Category:Plugins]]
-| website                = 
-}}
+[[Biomat]] - plugins for 3D image preprocessing and detection of fibres in 3D image.
 
-== Plugins for 3D image preprocessing. ==
-'''Stack Linear Contrast''' - multiplies images in stack by coefficient obtained by linear interpolation of the "first" and "last" coefficient. A simple tool for compensation of contrast decreasing with depth within thick sample.
+Further ImageJ projects: [[Anisotropic Diffusion 2D]], [https://imagej.nih.gov/ij/plugins/anisotropic-diffusion-2d.html original Anisotropic Diffusion 2D],  [https://imagej.nih.gov/ij/plugins/lipschitz/index.html Lipschitz filter 2D], [https://imagej.nih.gov/ij/plugins/sampling-window/index.html Sampling window 2D and Disector 3D].
 
-'''Lipschitz 3D''' Filter - top hat - subtracts slowly varying background calculated as lower Lipschitz envelope from the image.
-
-Preprocessing example: 
-[https://imagej.net/_images/2/2e/Capillaries_brain.zip Image of capillaries in brain]
-* {{bc | Plugins | Biomat | Stack Linear Contrast}} with parameters (multiplyers) "first"= 1.0 and "last"= 3.0
-* {{bc | Process | Filters | Gaussian blur 3D}} with "sigma"= 1 pixel
-* {{bc | Plugins | Biomat | Lipschitz 3D Filter}} with parameter "slope"= 2 / pixel
-
-== Plugins for detection of fibres in 3D image. ==
-'''Tensor Line 3D Filter''' - enhances white fibers of uniform width sparsely distributed on dark background.
-
-Example: 
-[https://imagej.net/_images/e/e8/Capillaries_adipose.zip Image of capillaries in adipose tissue].
-* {{bc | Plugins | Biomat | Tensor Line 3D Filter}} with "sigma" set to 3 pixels
-* {{bc | Image | Adjust | Brightness/Contrast}}
-* {{bc | Process | Filters | Gaussian blur 3D}} with "sigma"= 1 pixel
-
-'''Vector Line 3D Filter''' - enhances white fibers of varying thickness. Crossection of the fibers need not be circular. Parameter "sigma" in pixels corresponds to the largest diameter.
-
-Example: [https://imagej.net/_images/e/e9/Capillaries_heart.zip Image of capillaries in embryonic heart].
-* {{bc | Plugins | Biomat | Vector Line 3D Filter}} with parameters "sigma"= 4 pixels, "scale number"= 2
+Author [mailto:jiri.janacek_at_fgu.cas.cz Jiří Janáček], [http://www2.biomed.cas.cz/~janacek/ www]
