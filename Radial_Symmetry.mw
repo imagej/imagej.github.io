@@ -34,18 +34,13 @@ Open the image with the beads and navigate to the 'Plugins' > 'Radial Symmetry L
 
 You will see the dialog window:
 
-[[File:2017-09-20-a-coef-initial-choose-image.png|x200px|center]]
 [[File:Calculate-anisotropy-coefficient.png|x300px|center]]
 
 Choose the image for detection and set 'Gauss Fit' as a detection method. You can also try to use Radial Symmetry as a detection method but in this case Gauss fit gives better results. 
 
 Once ok is pressed you will see 2 windows: 
 
-[[File:2017-09-20-a-coef-adjust-dog.png|x200px|center]]
-
-[[File:2017-09-20-a-coef-adjust-dog-image.png|x400px|center]]
-
-[[File:Adjust-difference-of-gaussian-values-initial.png|x300px|center]]
+[[File:Adjust-difference-of-gaussian-values.png|x300px|center]]
 
 [[File:One-spot-overlay.png|x500px|center]]
 
@@ -69,15 +64,11 @@ There are 2 different modes of processing images: interactive and manual. The In
 
 Open the image and navigate to the 'Plugins' menu under 'Radial Symmetry Localization' > 'Radial Symmetry'.
 
-[[File:2017-09-20-rs-choose-image.png|x200px|center]]
-
-Ensure that the correct image is chosen. 
-
-Once OK button is pressed another window will pop up. 
-
-[[File:2017-09-20-rs-set-parameters.png|x400px|center]]
+Window will pop up. 
 
 [[File:Radial-symmetry-initital-gui-ransac-on.png|x500px|center]]
+
+Ensure that the correct image is chosen. 
 
 There you have to setup some general parameters. Let us go though them quickly:
 
@@ -103,16 +94,11 @@ After that you will see multiple windows.
 
 Difference of Gaussian window to adjust the corresponding parameters. This window is necessary to get rid of the false pre-detections. In general, we could skip this part but then the computations would take too much time. Adjust the parameters so that you do not have too many false detections. But also do not try to get rid of all of them – they will be discarded in the next computation step anyways. 
 
-[[File:2017-09-20-rs-adjust-dog.png|x200px|center]]
-
-[[File:Adjust-difference-of-gaussian-values-initial.png|x300px|center]]
+[[File:Adjust-difference-of-gaussian-values.png|x300px|center]]
 
 RANSAC window is the 'main' window of the whole plugin. Therefore, we will give a more detailed explanation for the parameters here. 
 
-[[File:2017-09-20-rs-adjust-ransac.png|x400px|center]]
-
 [[File:Interactive-adjust-ransac-values.png|x500px|center]]
-
 
 'Support region radius' defines the radius of the spots we are looking for. You might want to play with this parameter. Sometimes it is useful to increase the radius and decrease the inlier ratio at the same time. 
 
@@ -121,11 +107,6 @@ RANSAC window is the 'main' window of the whole plugin. Therefore, we will give 
 'Max error' 
 
 While moving the sliders you will see the updates in the two images. 
-
-<gallery mode="packed" heights=400px >
-File:2017-09-20-rs-interactive-window.png|Pre-detecions
-File:2017-09-20-rs-ransac-image.png|RANSAC Support Regions
-</gallery>
 
 <gallery mode="packed" heights=500px >
 File:Multipe-dots-interactive-dog-rs-roi.png|Pre-detecions
@@ -138,18 +119,11 @@ Once the parameters are adjusted hit any of the 'Done' buttons and wait a bit wh
 
 You will see the result table with the coordinates, time, channel and intensity values in the corresponding columns. 
 
-[[File:2017-09-20-rs-result-values.png|x300px|center]]
-
 [[File:Histogram-detections.png|x400px|center]]
 
 [[File:Results-interactive.png|x400px|center]]
 
 Besides that you will get 2 images: one of them showing the overlay of the initial image with the regions that we used for the spots search, another one showing the 3D overlay for the detected spots.
-
-<gallery mode="packed" heights=400px >
-File:2017-09-20-rs-result-ransac.png|RANSAC Support Regions
-File:2017-09-20-rs-result-overlay.png|Detected Spots
-</gallery>
 
 <gallery mode="packed" heights=500px >
 File:Inliers-ransac.png|RANSAC Support Regions
@@ -162,8 +136,6 @@ In the manual mode you can skip all the hassle of the parameters adjustment and 
 
 After you choose 'Parameters's mode' manual in the 'Setup window' you will see all the parameters you have set already in the interactive mode. All you have to do now is to press 'OK' button and wait for the results. 
 
-[[File:2017-09-20-rs-set-manual.png|x300px|center]]
-
 [[File:Manual-set-parameters.png|x400px|center]]
 
-[[File:Reults-manual.png|x400px|center]]
+[[File:Results-interactive.png|x400px|center]]
