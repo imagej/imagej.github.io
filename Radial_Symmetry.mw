@@ -152,8 +152,8 @@ File:2017-09-20-rs-result-overlay.png|Detected Spots
 </gallery>
 
 <gallery mode="packed" heights=500px >
-File:Inliers-ransac.png|Detected Spots
-File:Multiple-dots-detections.png|RANSAC Support Regions
+File:Inliers-ransac.png|RANSAC Support Regions
+File:Multiple-dots-detections.png|Detected Spots
 </gallery>
 
 ''' Manual mode: '''
