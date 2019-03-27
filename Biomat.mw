@@ -7,7 +7,6 @@
 | released               = 03/26/2019
 | latest version         = 03/26/2019
 | status                 = 
-| category               =  [[:Category:Plugins|Plugins]]
 | website                = 
 }}
 
@@ -35,3 +34,5 @@ Example:
 
 Example: [https://imagej.net/_images/e/e9/Capillaries_heart.zip Image of capillaries in embryonic heart].
 * {{bc | Plugins | Biomat | Vector Line 3D Filter}} with parameters "sigma"= 4 pixels, "scale number"= 2
+
+[[Category:Plugins]]
