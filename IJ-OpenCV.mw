@@ -1,4 +1,5 @@
-IJ-OpenCV is a Java library that allows the communication of ImageJ and [[OpenCV|OpenCV]]. The [https://github.com/joheras/IJ-OpenCV github page of IJ-OpenCV] contains all the information to download and install this library.   
+IJ-OpenCV is a Java library that allows the communication of ImageJ and [[OpenCV|OpenCV]]. The [https://github.com/joheras/IJ-OpenCV github page of IJ-OpenCV] contains all the information to download and install this library.  
+The [https://github.com/joheras/IJ-OpenCV/wiki wiki section] of the repository will help you to get started, and a set of examples are also provided. 
 
 There are several benefits provided by the communication of ImageJ and OpenCV obtained thanks to the IJ-OpenCV library. From the ImageJ perspective, this tool is enhanced with several computer vision and machine learning algorithms, avoiding the re-implementation of methods and the connection with several external libraries. From the OpenCV point of view, this library is improved with a simple-to-use GUI and with the functionality to manage regions of interest.
 
