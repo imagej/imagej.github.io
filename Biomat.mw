@@ -36,3 +36,4 @@ Example: [https://imagej.net/_images/e/e9/Capillaries_heart.zip Image of capilla
 * {{bc | Plugins | Biomat | Vector Line 3D Filter}} with parameters "sigma"= 4 pixels, "scale number"= 2
 
 [[Category:Plugins]]
+[[Category:Filtering]]
