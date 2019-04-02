@@ -1,0 +1,37 @@
+(Return to the main [[SNT]] page)
+
+== Tracing ==
+<ol>
+	<li>
+	<span id="faq:confirmtemp"></span>'''Having to confirm indivual segments is too cumbersome for me. Is it possible to click in succession, without interrruption'''?
+	</li>
+	<dl><dd>
+	Yes. Uncheck the ''Confirm temporary segments'' in the ''Options'' tab (''Temporay Paths'' section).
+	</dd></dl>
+	<li>
+	<span id="faq:intensities"></span>'''How can I browse voxel intensities around processes'''?
+	</li>
+	<dl><dd>
+	Righ-click on the image canvas and select ''Pause SNT'' from the contextual menu. Voxel intensities will be reported in the ImageJ status bar.
+	</dd></dl>
+	<li>
+	<span id="faq:groupimages"></span>'''Is there a way to process one image after another in a fast way'''?
+	</li>
+	<dl><dd>
+	Yes. Have a look at these [https://forum.image.sc/t/simple-neurite-tracer-for-multiple-2d-images/22564/6?u=tferr detailed instructions].
+	</dd></dl>
+</ol>
+
+
+
+== General ==
+<ol>
+	<li>
+	<span id="faq:documentation"></span>'''How can I improve SNT documentation'''?
+	</li>
+	<dl><dd>
+	[[Help:Contents#New_accounts|Create an account]] on this wiki. Once you have created one, you can edit contents at will. Don't be shy. All changes are undoable!
+	</dd></dl>
+</ol>
+
+(Return to the main [[SNT]] page)
