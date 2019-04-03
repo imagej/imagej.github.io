@@ -31,6 +31,29 @@ The aim of this page is not to teach how to program in Python. This purpose is m
 
 That is why more complex examples are used that are fully functional. Just copy the code to the [[Using_the_Script_Editor|Script Editor]] and try them by yourself. Extensive in-line documentation is used to explain the implementation.
 
+=== Hello World ===
+==== - With print ====
+There are 2 ways to print some information back to the user.<br>
+The first one is a classical python print statement, that will print some information to the console. <br>
+<code>print "Hello world"</code><br>
+You can print any kind of variable and objects.<br>
+<code>print "This is a string followed by an int", 10</code>
+
+NB1 : If used in a plugin, and no console window is open then the printed information will not be visible to the user (contrary to the <code>log</code> function below)
+
+NB2 : Using numerous print statements might slow down the execution time when used in a plugin (not observed when executing from the script interpreter).
+
+
+==== - With IJ.log() ====
+<pre><code>
+from ij import IJ
+IJ.log("Hello world")
+IJ.log("This is a string followed by an int " + str(10))
+</code></pre>
+Contrary to the print statement the log function display some output into a log window (newly open if not already open), and accept only a string as argument.
+
+
+
 === Image selection using the GenericDialog class ===
 
 This example script will create up to 10 new images and create a GenericDialog to select 3 of them. Finally the names of the selected images are printed to the Log window. It is recommended to copy the code to the [[Using_the_Script_Editor|Script Editor]] and run it by yourself.
