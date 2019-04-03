@@ -17,6 +17,8 @@ The core plugins written in Java, versioned via Maven and distributed via update
 [[File:user_updatesite.png]] 
 * the user can manually add additional update sites which will then also be checked for updates on startup
 
+Updates will be downloaded to <code>Fiji.app/updates</code>.  The launcher is moving the updates to their final destination on the next reboot (?). 
+
 == Update site maintainer perspective ==
 
 * the maintainer has Fiji installed
