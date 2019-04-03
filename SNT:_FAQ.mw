@@ -3,7 +3,7 @@
 == Tracing ==
 <ol>
 	<li>
-	<span id="faq:confirmtemp"></span>'''Having to confirm indivual segments is too cumbersome for me. Is it possible to click in succession, without interrruption'''?
+	<span id="faq:confirmtemp"></span>'''Having to confirm indivual segments is too cumbersome for me. Is it possible to  trace without interruption, by clicking in succession'''?
 	</li>
 	<dl><dd>
 	Yes. Uncheck the ''Confirm temporary segments'' in the ''Options'' tab (''Temporay Paths'' section).
@@ -26,6 +26,12 @@
 
 == General ==
 <ol>
+	<li>
+	<span id="faq:imageseq"></span>'''How can I import an image sequence into SNT'''?
+	</li>
+	<dl><dd>
+	Loading of images that require input options is handled by ImageJ directly. To load a directory of images (e.g., one file per Z-slice), run {{bc|color=white|File| Import|Image Sequence}} and select the first file in the sequence, adjusting any needed parameters in the subsequent dialog prompt. Once the sequence is imported adjust voxel dimensions using {{bc|color=white|Image|Properties...}}. To save yourself from having to go through these steps again, you should save the imported stack as a single TIFF file using {{bc|color=white|File|Save As|Tiff...}}
+	</dd></dl>
 	<li>
 	<span id="faq:documentation"></span>'''How can I improve SNT documentation'''?
 	</li>
