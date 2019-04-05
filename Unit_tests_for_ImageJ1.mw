@@ -1,8 +1,8 @@
-{{Project|ImageJ1}}We have [[2011-10-07 - Unit tests for ImageJ 1.45|written a substantial number of unit tests]] to exercise [[ImageJ 1.x]] functionality. You can find them in the {{GitHub|org=imagej|repo=ij1-tests|label=ij1-tests repository}}:
+{{Project|ImageJ1}}There are a [[2011-10-07 - Unit tests for ImageJ 1.45|substantial number of unit tests]] to exercise [[ImageJ 1.x]] functionality. You can find them in the {{GitHub|org=imagej|repo=ij1-tests|label=ij1-tests repository}}:
 <source lang="bash">
 git clone git://github.com/imagej/ij1-tests
 </source>
-There is a [http://jenkins.imagej.net/job/ImageJ1-unit-tests/ Jenkins job] that automatically runs the tests with each new version of ImageJ 1.x.
+There is a [[Travis]] job [https://travis-ci.com/imagej/ij1-tests here] that automatically runs the tests with each new version of ImageJ 1.x.
 
 === Running the tests ===
 
@@ -18,7 +18,7 @@ Or from Eclipse:
 
 === Using a different version of ImageJ1 ===
 
-You can change which version of ImageJ1 is tested by overridding the <code>imagej1.version</code> property:
+You can change which version of ImageJ1 is tested by overriding the <code>imagej1.version</code> property:
 <source lang="bash">
 mvn -Dimagej1.version=1.48a clean test
 </source>
