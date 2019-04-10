@@ -55,7 +55,7 @@ When you decide to complete the path you should see in the path '''list''' '''(m
 Supposing you want the end of a path that you're tracing to join onto an existing path, you just use the same modifier key when selecting the end point of the last part of the path. To go into that in more detail, if you're half way through tracing a path like this:
 [[Image:Snt-ej-cropped-half-finished-2.png|center]]
 
-... and you want the final part of that path to join up with the existing path running from the bottom to the top of the image. First, select that path in the path list, so that it turns green:
+... and you want the final part of that path to join up with the existing path running from the '''bottom to the top''' '''(top-left to top-right)''' of the image. First, select that path in the path list, so that it turns green:
 [[Image:Snt-ej-cropped-selected-destination-path-2.png|center]]
 
 Now hold down {{key|Alt|Shift}} '''or {{key|Alt|Shift}} on MacOS''' to restrict the end point to be a "join" on that existing path. Click (while still holding down the modifier keys) to start the search for that end point and make it join the existing path. If the search can find a path to the end point, the result should look like this:
