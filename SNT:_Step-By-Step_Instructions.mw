@@ -14,7 +14,7 @@ Move through the image stack to find the start point of a path, then click there
 A small blue '''square''' (circle) should appear, showing the start of the path:
 [[Image:Snt-cropped-after-starting.png|center]]
 Move through the stack to find a subsequent point further along the same neuron, blood vessel, or whatever, and click there. During tracing, if a part cannot be found immediately, you may see the progress of the search in cyan:
-[[Image:Snt-cropped-mid-tracing.png|center]]
+[[File:Example.jpg]]
 You can scroll through the stack while such a search is in progress - if it appears not be making good progress, it's probably best to click '''"Abandon search"''' ("Cancel/Esc") (or press {{key|Esc}}) and pick a point closer to the start point.
 
 ===3. Confirm the temporary path===
