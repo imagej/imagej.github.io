@@ -58,7 +58,7 @@ Supposing you want the end of a path that you're tracing to join onto an existin
 ... and you want the final part of that path to join up with the existing path running from the bottom to the top of the image. First, select that path in the path list, so that it turns green:
 [[Image:Snt-ej-cropped-selected-destination-path-2.png|center]]
 
-Now hold down {{key|Alt|Shift}} '''(or {{key|Alt|Shift}} on MacOS)''' to restrict the end point to be a "join" on that existing path. Click (while still holding down the modifier keys) to start the search for that end point and make it join the existing path. If the search can find a path to the end point, the result should look like this:
+Now hold down {{key|Alt|Shift}} '''or {{key|Alt|Shift}} on MacOS''' to restrict the end point to be a "join" on that existing path. Click (while still holding down the modifier keys) to start the search for that end point and make it join the existing path. If the search can find a path to the end point, the result should look like this:
 [[Image:Snt-ej-cropped-end-join-created-2.png|center]]
 
 If you're happy with that, confirming the temporary path will automatically complete the whole path, since if you're creating an end join there cannot be any more to the path. The result will look like this:
