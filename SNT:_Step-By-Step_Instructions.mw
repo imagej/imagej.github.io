@@ -19,7 +19,7 @@ You can scroll through the stack while such a search is in progress - if it appe
 
 ===3. Confirm the temporary path===
 Once the search has found that point, it is shown in blue (to indicate that this is still a temporary path) and you are asked to confirm (by clicking "Yes" or pressing  {{key|Y}}) that this path is following the route through the stack that you expect. If it is not, then click "No" {{key|N}} and you'll go back to step 2.
-[[Image:Snt-cropped-confirmation.png|center]]
+[[Image:Snt-cropped-confirmation-2.png|center]]
 
 ===4. After confirming the temporary path===
 Assuming you confirmed the path, the confirmed path will appear in red, like this:
