@@ -36,7 +36,7 @@ Before you pick a start point for your '''first''' '''(second)''' path, the trac
 [[Image:Snt-sb-before-selecting-2.png|center]]
 
 ===1. Select the path to branch off===
-To select the path you want to branch off from, you can either select it in the path list, or press {{key|G}} while your mouse pointer is over the path.  When the path is first selected, it will be shown in the default green color, as below:
+To select the path you want to branch off from, you can either select it in the path '''list''' '''(manager)''', or press {{key|G}} while your mouse pointer is over the path.  When the path is first selected, it will be shown in the default green color, as below:
 [[Image:Snt-sb-before-starting-path-2.png|center]]
 
 ===2. Click while holding the branch modifier to start the branch===
