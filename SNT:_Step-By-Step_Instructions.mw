@@ -17,7 +17,7 @@ Several things should be noted:
 * Snapping occurs in 2D if Z=0.
 * The XZ, ZY views are synchronized when 3D snapping is active (i.e., Z>0).
 
-If you prefer precise control over the exact placement of points, feel free to disable this feature. Now, to begin tracing, move through the image stack to find the start point of a path, then click there with the left mouse button.
+If you prefer precise control over the exact placement of points, feel free to disable this feature. Now, to begin tracing, move through the image stack to find the start point of a path then click there with the left mouse button.
 
 ===2. Click a subsequent point===
 A small blue circle should appear, showing the start of the path:
