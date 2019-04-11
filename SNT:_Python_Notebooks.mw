@@ -1,2 +1,2 @@
 =Python Notebooks=
-Direct access to the SNT API from Python is made possible through the pyimagej module.
+Direct access to the SNT API from Python is made possible through the pyimagej module. This enables full integration between SNT and any library in the Python ecosystem.
