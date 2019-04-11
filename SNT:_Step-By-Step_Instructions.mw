@@ -11,11 +11,11 @@ Before you pick a start point for your first path, the tracer will look like thi
 Move through the image stack to find the start point of a path, then click there with the left mouse button.
 
 ===2. Click a subsequent point===
-A small blue '''square''' '''(circle)''' should appear, showing the start of the path:
+A small blue circle should appear, showing the start of the path:
 [[Image:Snt-cropped-after-starting-2.png|center]]
 Move through the stack to find a subsequent point further along the same neuron, blood vessel, or whatever, and click there. During tracing, if a part cannot be found immediately, you may see the progress of the search in cyan:
 [[Image:Snt-cropped-mid-tracing-2.png|center]]
-You can scroll through the stack while such a search is in progress - if it appears '''(to)''' not be making good progress, it's probably best to click '''"Abandon search"''' '''("Cancel/Esc")''' (or press {{key|C}}/{{key|Esc}}) and pick a point closer to the start point.
+You can scroll through the stack while such a search is in progress - if it appears to not be making good progress, it's probably best to click "Cancel/Esc" (or press {{key|C}}/{{key|Esc}}) and pick a point closer to the start point.
 
 ===3. Confirm the temporary path===
 Once the search has found that point, '''it''' '''(the path)''' is shown in blue (to indicate that this is still a temporary path) and you are asked to confirm (by clicking "Yes" or pressing  {{key|Y}}) that this path is following the route through the stack that you expect. If it is not, then click "No" {{key|N}} and you'll go back to step 2.
