@@ -40,7 +40,7 @@ To select the path you want to branch off from, you can either select it in the 
 [[Image:Snt-sb-before-starting-path-2.png|center]]
 
 ===2. Click while holding the branch modifier to start the branch===
-To force the start of the new path to be a branch off the selected path, hold down the {{key|Alt|Shift}} keys while you move the mouse to find the right point under the red cross-hairs.  Then click with the left mouse button - {{key|Alt|Shift}} should still be held down.  Finally release the keys. '''N.B. on MacOS you must use  {{key|Alt|Shift}} instead.''' Once you've '''started a path''' '''(created a fork point)''', it looks like this: (We''ve zoomed in further on the fork point)
+To force the start of the new path to be a branch off the selected path, hold down the {{key|Alt|Shift}} keys while you move the mouse to find the right point under the red cross-hairs.  Then click with the left mouse button - {{key|Alt|Shift}} should still be held down.  Finally release the keys. Once you've created a fork point, it looks like this: (We''ve zoomed in further on the fork point)
 [[Image:Snt-sb-started-branch-2.png|center]]
 
 ===3. Continue adding to the path as normal===
