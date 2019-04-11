@@ -1,2 +1,8 @@
 =Python Notebooks=
 Direct access to the SNT API from the [https://www.python.org/ Python] programming language is made possible with the [https://pypi.org/project/pyimagej/ pyimagej] module. This enables full integration between SNT and any library in the Python ecosystem.
+==Getting Started==
+To initialize Fiji from Python:
+<source lang="python">
+import imagej
+ij = imagej.init('sc.fiji:fiji')
+</source>
