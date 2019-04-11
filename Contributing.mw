@@ -11,7 +11,7 @@ If you are an ImageJ user, contributing documentation is an easy way to give bac
 
 If you are a plugin author, please consider [[Distribution#Documenting_your_extension|documenting your plugin on this site]].
 
-When in doubt, discuss your ideas publicly on the ImageJ [[forum]]!
+When in doubt, discuss your ideas publicly on the Image.sc [[Forum]]!
 
 == ImageJ2 ==
 Submit patches to [[ImageJ2]] via [https://help.github.com/articles/using-pull-requests/ pull requests] against [https://github.com/imagej ImageJ2's source on GitHub].
