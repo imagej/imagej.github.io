@@ -15,7 +15,7 @@ Several things should be noted:
 * To streamline the computation:  XYZ dimensions are constrained  to even numbers and limited range.
 * Snapping occurs in 2D if Z=0.
 * The XZ, ZY views are synchronized when 3D snapping is active (i.e., Z>0).
-[[File:cursor-snap.png]]
+
 To begin tracing, move through the image stack to find the start point of a path, then click there with the left mouse button.
 
 ===2. Click a subsequent point===
