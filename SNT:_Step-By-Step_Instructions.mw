@@ -24,7 +24,7 @@ Once the search has found that point, the path is shown in blue (to indicate tha
 ===4. After confirming the temporary path===
 Assuming you confirmed the path, the confirmed path will appear in red, like this:
 [[Image:Snt-cropped-confirmed-2.png|center]]
-Now you are essentially back at step 2. Normally you will go on '''top''' '''(to)''' pick further points along the structure. However, if you have finished with that path, click "Finish Path" {{key|F}} and you will go back to step 1.
+Now you are essentially back at step 2. Normally you will go on to pick further points along the structure. However, if you have finished with that path, click "Finish Path" {{key|F}} and you will go back to step 1.
 
 ===5. After completing a path===
 If you completed that path it '''will''' '''(would)''' be shown in magenta:
