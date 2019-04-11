@@ -18,7 +18,7 @@ Move through the stack to find a subsequent point further along the same neuron,
 You can scroll through the stack while such a search is in progress - if it appears to not be making good progress, it's probably best to click "Cancel/Esc" (or press {{key|C}}/{{key|Esc}}) and pick a point closer to the start point.
 
 ===3. Confirm the temporary path===
-Once the search has found that point, '''it''' '''(the path)''' is shown in blue (to indicate that this is still a temporary path) and you are asked to confirm (by clicking "Yes" or pressing  {{key|Y}}) that this path is following the route through the stack that you expect. If it is not, then click "No" {{key|N}} and you'll go back to step 2.
+Once the search has found that point, the path is shown in blue (to indicate that this is still a temporary path) and you are asked to confirm (by clicking "Yes" or pressing  {{key|Y}}) that this path is following the route through the stack that you expect. If it is not, then click "No" {{key|N}} and you'll go back to step 2.
 [[Image:Snt-cropped-confirmation-2.png|center]]
 
 ===4. After confirming the temporary path===
