@@ -8,14 +8,15 @@ These "step-by-step" instructions below assume that you have done the preliminar
 ===1. Pick a start point===
 Before you pick a start point for your first path, the tracer will look like this:
 [[Image:Snt-cropped-before-starting-2.png|center|]]
-You may notice that, by default, the cursor snaps to the local maximum intensity pixel in its vicinity. To accomplish this, it takes the cuboid of the specified dimensions (in pixels) centered on the current cursor position and searches quickly for the brightest voxel(s) in that neighborhood, moving the cursor to that position. If the "Z" parameter is greater than 0, it moves to the z-plane in which that maximum was found. Several things should be noted:
-- It assumes signal is brighter than background as typically found in fluorescent images.
-- If multiple maxima exist (e.g., when signal is saturated), it snaps to their centroid.
-- To streamline the computation:  XYZ dimensions are constrained  to even numbers and limited range.
-- Snapping occurs in 2D if Z=0.
-- The XZ, ZY views are synchronized when 3D snapping is active (i.e., Z>0).
+You may notice that, by default, the cursor snaps to the local maximum intensity pixel in its vicinity. To accomplish this, it takes the cuboid of the specified dimensions (in pixels) centered on the current cursor position and searches quickly for the brightest voxel(s) in that neighborhood, moving the cursor to that position. If the "Z" parameter is greater than 0, it moves to the z-plane in which that maximum was found.  
+Several things should be noted:
+* It assumes signal is brighter than background as typically found in fluorescent images.
+* If multiple maxima exist (e.g., when signal is saturated), it snaps to their centroid.
+* To streamline the computation:  XYZ dimensions are constrained  to even numbers and limited range.
+* Snapping occurs in 2D if Z=0.
+* The XZ, ZY views are synchronized when 3D snapping is active (i.e., Z>0).
 
-Move through the image stack to find the start point of a path, then click there with the left mouse button.
+To begin tracing, move through the image stack to find the start point of a path, then click there with the left mouse button.
 
 ===2. Click a subsequent point===
 A small blue circle should appear, showing the start of the path:
