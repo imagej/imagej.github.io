@@ -6,8 +6,18 @@ To initialize Fiji from Python:
 import imagej
 ij = imagej.init('sc.fiji:fiji')
 </source>
-Then, import the SNT classes you will need. For example, to download a neuron reconstruction from the MouseLight database, you would import the MouseLightLoader class:
+Then, import the SNT classes you need. For example, to download a neuron reconstruction from the MouseLight database and calculate summary statistics on it, you would import the [http://javadoc.scijava.org/Fiji/tracing/io/MouseLightLoader MouseLightLoader] and [http://javadoc.scijava.org/Fiji/tracing/analysis/TreeStatistics.html TreeStatistics] classes:
+
 <source lang="python">
-from jnius import autoclass, cast
+from jnius import autoclass
 MouseLightLoader = autoclass('tracing.io.MouseLightLoader')
+TreeStatistics   = autoclass('tracing.analysis.TreeStatistics')
+</source>
+Now you can access all the attributes and methods these classes offer. Let's get a summary of the inter-node distances for a cortical motor neuron (UUID = "AA0100" in the MouseLight database). 
+<source lang="python">
+d_stats = TreeStatistics(tree)
+metric = TreeStatistics.INTER_NODE_DISTANCE
+summary_stats = d_stats.getSummaryStats(metric)
+d_stats.getHistogram(metric).show()
+print("The average inter-node distance is %d" % summary_stats.getMean())
 </source>
