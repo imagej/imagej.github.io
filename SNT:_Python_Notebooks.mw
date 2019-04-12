@@ -8,5 +8,6 @@ ij = imagej.init('sc.fiji:fiji')
 </source>
 Then, import the SNT classes you will need. For example, to download a neuron reconstruction from the MouseLight database, you would import the MouseLightLoader class:
 <source lang="python">
+from jnius import autoclass, cast
 MouseLightLoader = autoclass('tracing.io.MouseLightLoader')
 </source>
