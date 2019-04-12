@@ -3,10 +3,10 @@ Direct access to the SNT API from the [https://www.python.org/ Python] programmi
 ==Installing pyimagej==
 Follow the instructions given [https://github.com/imagej/pyimagej#installation here]
 ==Getting Started==
-To initialize Fiji from Python:
+To initialize Fiji from Python with GUI capabilities:
 <source lang="python">
 import imagej
-ij = imagej.init('sc.fiji:fiji')
+ij = imagej.init('sc.fiji:fiji', headless=False)
 </source>
 Then, use [https://github.com/kivy/pyjnius pyjnius] (bundled with pyimagej) to import the SNT (Java) classes you need. For example, to download a neuron reconstruction from the MouseLight database and calculate summary statistics on it, you would import the [http://javadoc.scijava.org/Fiji/tracing/io/MouseLightLoader MouseLightLoader] and [http://javadoc.scijava.org/Fiji/tracing/analysis/TreeStatistics.html TreeStatistics] classes:
 
