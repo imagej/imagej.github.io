@@ -26,9 +26,9 @@ if not loader.idExists():
     return
 
 a_tree = loader.getTree('axon', None) # compartment, color
-d_stats = TreeStatistics(a_tree)
+s_stats = TreeStatistics(a_tree)
 metric = TreeStatistics.INTER_NODE_DISTANCE
-summary_stats = d_stats.getSummaryStats(metric)
-d_stats.getHistogram(metric).show()
+summary_stats = s_stats.getSummaryStats(metric)
+s_stats.getHistogram(metric).show()
 print("The average inter-node distance is %d" % summary_stats.getMean())
 </source>
