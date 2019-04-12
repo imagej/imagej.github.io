@@ -1,4 +1,4 @@
-=Python Notebooks=
+==Introduction==
 Direct access to the SNT API from the [https://www.python.org/ Python] programming language is made possible through the [https://pypi.org/project/pyimagej/ pyimagej] module. This enables full integration between SNT and any library in the Python ecosystem.
 ==Installing pyimagej==
 Follow the instructions given [https://github.com/imagej/pyimagej#installation here]
