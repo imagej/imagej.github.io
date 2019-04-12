@@ -8,7 +8,7 @@ To initialize Fiji from Python:
 import imagej
 ij = imagej.init('sc.fiji:fiji')
 </source>
-Then, import the SNT classes you need. For example, to download a neuron reconstruction from the MouseLight database and calculate summary statistics on it, you would import the [http://javadoc.scijava.org/Fiji/tracing/io/MouseLightLoader MouseLightLoader] and [http://javadoc.scijava.org/Fiji/tracing/analysis/TreeStatistics.html TreeStatistics] classes:
+Then, use [https://github.com/kivy/pyjnius pyjnius] (bundled with pyimagej) to import the SNT (Java) classes you need. For example, to download a neuron reconstruction from the MouseLight database and calculate summary statistics on it, you would import the [http://javadoc.scijava.org/Fiji/tracing/io/MouseLightLoader MouseLightLoader] and [http://javadoc.scijava.org/Fiji/tracing/analysis/TreeStatistics.html TreeStatistics] classes:
 
 <source lang="python">
 from jnius import autoclass
