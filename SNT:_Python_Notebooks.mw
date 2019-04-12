@@ -17,18 +17,20 @@ TreeStatistics   = autoclass('tracing.analysis.TreeStatistics')
 </source>
 Now you can access all the attributes and methods these classes offer. Let's get a summary of the inter-node distances for a specific mouse cortical motor neuron (UUID = "AA0100" in the MouseLight database). 
 <source lang="python">
-loader = MouseLightLoader("AA0100")  # one of the largest cells in the database
-if not loader.isDatabaseAvailable():
-    ui.showDialog("Could not connect to ML database", "Error")
-    return
-if not loader.idExists():
-    ui.showDialog("Somehow the specified id was not found", "Error")
-    return
+def run():
+    loader = MouseLightLoader("AA0100")  # one of the largest cells in the 
+database
+    if not loader.isDatabaseAvailable():
+        ui.showDialog("Could not connect to ML database", "Error")
+        return
+    if not loader.idExists():
+        ui.showDialog("Somehow the specified id was not found", "Error")
+        return
 
-a_tree = loader.getTree('axon', None) # compartment, color
-s_stats = TreeStatistics(a_tree)
-metric = TreeStatistics.INTER_NODE_DISTANCE
-summary_stats = s_stats.getSummaryStats(metric)
-s_stats.getHistogram(metric).show()
-print("The average inter-node distance is %d" % summary_stats.getMean())
+    a_tree = loader.getTree('axon', None) # compartment, color
+    s_stats = TreeStatistics(a_tree)
+    metric = TreeStatistics.INTER_NODE_DISTANCE
+    summary_stats = s_stats.getSummaryStats(metric)
+    s_stats.getHistogram(metric).show()
+    print("The average inter-node distance is %d" % summary_stats.getMean())
 </source>
