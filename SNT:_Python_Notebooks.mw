@@ -18,13 +18,12 @@ TreeStatistics   = autoclass('tracing.analysis.TreeStatistics')
 Now you can access all the attributes and methods these classes offer. Let's get a summary of the inter-node distances for a specific mouse cortical motor neuron (UUID = "AA0100" in the MouseLight database). 
 <source lang="python">
 def run():
-    loader = MouseLightLoader("AA0100")  # one of the largest cells in the 
-database
+    loader = MouseLightLoader("AA0100")
     if not loader.isDatabaseAvailable():
-        ui.showDialog("Could not connect to ML database", "Error")
+        print("Could not connect to ML database", "Error")
         return
     if not loader.idExists():
-        ui.showDialog("Somehow the specified id was not found", "Error")
+        print("Somehow the specified id was not found", "Error")
         return
 
     a_tree = loader.getTree('axon', None) # compartment, color
