@@ -89,22 +89,22 @@ First, select the one or more paths that you want to fill out from in the path m
 
 [[Image:Snt-initial-filling.png|frame|center|A few seconds after selecting "Fill Out Path(s)" with 3 branched paths selected]]
 
-The filler continues to explore the image starting from the path until you click "Pause" in the dialog. However, the fill which is shown only includes those points up to a certain threshold distance from the path. (Note that in this section "distance" doesn't mean a real physical distance, but a measure which takes into account the intensity values of the pixels which must be passed through when moving away from the path.) Information about the current threshold and the progress of the search is shown in the dialog.
+The filler continues to explore the image starting from the path until you click "Pause"/"Stop" in the dialog. However, the fill which is shown only includes those points up to a certain threshold distance from the path. (Note that in this section "distance" doesn't mean a real physical distance, but a measure which takes into account the intensity values of the pixels which must be passed through when moving away from the path.) Information about the current threshold and the progress of the search is shown in the dialog.
 [[Image:Snt-filling-statistics.png|frame|right|The filling-related part of the dialog (outdated screenshot).]]
 
-The top line ("Not reached by search yet") is updated as you move your mouse over the image. If the point under the mouse has been reached by the search then it will show you that point's distance from the path. In the line below, the input box shows your current threshold distance: so if this is set to 0.2 then that means that all points less than 0.2 from the path are included in the fill (and shown in green in the image.) The number in parentheses at the right of this line show the maximum distance from the path that has been completely explored.
+The "Cursor position:" state under "Search Status" is updated as you move your mouse over the image. If the point under the mouse has been reached by the search then it will show you that point's distance from the path. Otherwise, it will read "Not reached by search yet". Two lines above, the "Current threshold distance:" shows your current threshold distance: so if this is set to 0.2 then that means that all points less than 0.2 from the path are included in the fill (and shown in green in the image.) The "Max. explored distance:" state under this line show the maximum distance from the path that has been completely explored.
 
 You can change the fill threshold in one of three ways:
 * Clicking on a point in the image that has been reached by the search (This is the most intuitive way of altering the threshold).
-* Changing the threshold in the input box manually and clicking the "Set" button below it.
-* Clicking the "Set Max" button below the threshold input box, which sets the threshold to the maximum explored distance (the value shown in parentheses).
+* Manually changing the threshold in the "Specify manually:" input box and clicking the "Apply" button beside it.
+* Clicking the "Use explored maximum" button below the threshold input box and clicking "Apply", which sets the threshold to the maximum explored distance (the value shown in "Max. explored distance:" under the "Search Status" dialog).
 
 Anyway, assuming that you want to use the first of these approaches, you should use the approach described below. It is difficult to set the threshold accurately from the image unless you zoom in, so first zoom on part of the path that you want to set the threshold for:
 [[Image:Snt-zoomed-filling.png|frame|center|After having zoomed in on part of the fill]]
 
 {{Clear}}
 
-Since the the solid green fill obscures the intensity value of the points in the fill, I suggest that you switch to the semi-transparent view of the fill at this stage by selecting the "Transparent fill display" option in the dialog. This should show you something like this:
+Since the the solid green fill obscures the intensity value of the points in the fill, I suggest that you switch to the semi-transparent view of the fill at this stage by selecting the "Transparent overlay" option in the "Rendering Options" dialog. Note that this may slow down filling. This should show you something like this:
 
 [[Image:Snt-transparent-filling.png|frame|center|Having made the fill transparent]]
 
@@ -116,7 +116,7 @@ As you can see in this image, the threshold is set too far from the path, since 
 
 {{Clear}}
 
-If you are happy with this, then you might as well click "Pause" so that your computer isn't spending all its CPU on continuing to explore the image. Then you can either save the fill (which will add it to the fill list) by clicking "Save Fill", discard the fill by clicking "Cancel Fill" or use the "Create Image Stack from Fill" button to view the same image stack, but with only the points in that fill preserved. One reason why you might want to do this is that you can then smooth that image and use the [[3D Viewer]] to do a surface rendering of the neuron. Perhaps then you could overlay that onto a volume rendering of the complete image (see available [[Simple_Neurite_Tracer#Tutorials|tutorials]]). Or, you could save those fill stacks for each of the neurons you fill and then combine them in ImageJ using "RGB Merge".
+If you are happy with this, then you might as well click "Pause" so that your computer isn't spending all its CPU on continuing to explore the image. Then you can either: 1) save the fill (which will add it to the fill list) by clicking "Stash Progress", 2) discard the fill by either clicking "Stop" while filling is in progress or, if you stashed the fill, select it in the fill list and click "Delete Fill(s)", or 3) use the "Image Stack..." button to view the same image stack, but with only the points in that fill preserved. One reason why you might want to do this is that you can then smooth that image and use the [[3D Viewer]] to do a surface rendering of the neuron. Perhaps then you could overlay that onto a volume rendering of the complete image (see available [[Simple_Neurite_Tracer#Tutorials|tutorials]]). Or, you could save those fill stacks for each of the neurons you fill and then combine them in ImageJ using "RGB Merge".
 
 The image stack you would get from the image used in this example might look something like this:
 [[Image:Snt-filling-viewed.png|frame|center|Having selected the "Create Image from Fill" option]]
