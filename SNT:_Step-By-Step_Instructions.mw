@@ -1,43 +1,40 @@
-(Return to the main [[Simple Neurite Tracer]] page)
+(Return to the main [[SNT]] page)
 <div class="toclimit-3">
-=Step-by-Step Tracer Instructions=
-These "step-by-step" instructions below assume that you have done the preliminary steps described on the [[Simple Neurite Tracer: Basic Instructions]] page including starting up the plugin and turning on "Hessian-based analysis". 
 
-==Trace a basic path:==
+=Tracing=
+These instructions assume that you have done the preliminary steps described on the [[Simple Neurite Tracer: Basic Instructions]] page including starting up the plugin, enabling A* search, and turning on "Hessian-based analysis".
 
-===1. Pick a start point===
-Before you pick a start point for your first path, the tracer will look like this:
-[[Image:Snt-cropped-before-starting-2.png|center|]]
+==I. Picking a Start Point==
+[[Image:Snt-cropped-before-starting-2.png|right|thumb|400px|Choosing a starting point]]
 You may notice that, by default, the cursor snaps to the local maximum intensity pixel in its vicinity. To accomplish this, it takes the cuboid of the specified dimensions (in pixels) centered on the current cursor position and searches quickly for the brightest voxel(s) in that neighborhood, moving the cursor to that position. If the "Z" parameter is greater than 0, it moves to the z-plane in which that maximum was found.  
 Several things should be noted:
 * It assumes signal is brighter than background as typically found in fluorescent images.
-[[File:cursor-snap.png|right]]
+[[File:cursor-snap.png|right|border]]
 * If multiple maxima exist (e.g., when signal is saturated), it snaps to their centroid.
-* To streamline the computation:  XYZ dimensions are constrained  to even numbers and limited range.
+* To streamline the computation:  XYZ dimensions are constrained to even numbers and limited range.
 * Snapping occurs in 2D if Z=0.
 * The XZ, ZY views are synchronized when 3D snapping is active (i.e., Z>0).
 
-If you prefer precise control over the exact placement of points, feel free to disable this feature. Now, to begin tracing, move through the image stack to find the start point of a path then click there with the left mouse button.
+If you prefer to manually control the placement of nodes, feel free to disable this feature. Now, to begin tracing, move through the image stack to find the start point of a path then click there with the left mouse button.
 
-===2. Click a subsequent point===
-A small blue circle should appear, showing the start of the path:
-[[Image:Snt-cropped-after-starting-2.png|center]]
-Move through the stack to find a subsequent point further along the same neuron, blood vessel, or whatever, and click there. During tracing, if a part cannot be found immediately, you may see the progress of the search in cyan:
-[[Image:Snt-cropped-mid-tracing-2.png|center]]
-You can scroll through the stack while such a search is in progress - if it appears to not be making good progress, it's probably best to click "Cancel/Esc" (or press {{key|C}}/{{key|Esc}}) and pick a point closer to the start point.
+==II. Picking a Subsequent Point==
+[[Image:Snt-cropped-after-starting-2.png|right|thumb|400px|First point of a path selected]]
+[[Image:Snt-cropped-mid-tracing-2.png|right|thumb|400px|A* search animated progress]]
+A small circle should appear, highlighting the start of the path. Move through the stack to find a subsequent point further along the same structure to be traced (neuron, blood vessel, etc.), and click there.
 
-===3. Confirm the temporary path===
-Once the search has found that point, the path is shown in blue (to indicate that this is still a temporary path) and you are asked to confirm (by clicking "Yes" or pressing  {{key|Y}}) that this path is following the route through the stack that you expect. If it is not, then click "No" {{key|N}} and you'll go back to step 2.
-[[Image:Snt-cropped-confirmation-2.png|center]]
+If a path between the two points cannot be found immediately, you may see the animated progress of the search. You can scroll through the stack while such a search progresses: If it appears to not be making good progress, it's probably best to press the "Cancel/Esc" button (shortcut: {{key|C}}/{{key|Esc}}) and pick a point closer to the start point.
+{{Tip| id = external-traces|tip = Increase''Z'' in the ''Cursor Auto-snapping'' panel for automated Z-navigation on signal mouseover.}}
 
-===4. After confirming the temporary path===
-Assuming you confirmed the path, the confirmed path will appear in red, like this:
-[[Image:Snt-cropped-confirmed-2.png|center]]
-Now you are essentially back at step 2. Normally you will go on to pick further points along the structure. However, if you have finished with that path, click "Finish Path" {{key|F}} and you will go back to step 1.
+==III. Confirming the Temporary Segment==
+Once the search has reached the target point, the path is shown in cyan (to indicate that this is still a temporary path) and you are asked to confirm (by clicking "Yes" or pressing  {{key|Y}}) that this path is following the route through the image that you expect. If it is not, then click "No" {{key|N}} and you'll go back to the [[#II. Picking a Subsequent Point|previous step]]. Assuming you confirmed the path, the confirmed path will appear in red. Now you are essentially back at [[#II. Picking a Subsequent Point|step II]]. Normally you will go on to pick further points along the structure. However, if you have finished with that path, click "Finish Path" {{key|F}} and you will go back to [[#I. Picking a Start Point|step I]]. If you completed that path it would be shown in magenta.
+<div align="center">
+<ul> 
+<li style="display:inline-block;"> [[Image:Snt-cropped-confirmation-2.png|none|thumb|250px|A* search completed]] </li>
+<li style="display:inline-block;"> [[Image:Snt-cropped-confirmed-2.png|none|thumb|250px|A confirmed segment]] </li>
+<li style="display:inline-block;"> [[Image:Snt-cropped-completed-path-2.png|none|thumb|250px|A completeted path]] </li>
+</ul>
+</div>
 
-===5. After completing a path===
-If you completed that path it would be shown in magenta:
-[[Image:Snt-cropped-completed-path-2.png|center]]
 
 ==Branching: Start a path on an existing path==
 
