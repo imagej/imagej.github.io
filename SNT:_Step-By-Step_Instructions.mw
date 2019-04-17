@@ -95,7 +95,7 @@ The filler continues to explore the image starting from the path until you click
 The "Cursor position:" state under "Search Status" is updated as you move your mouse over the image. If the point under the mouse has been reached by the search then it will show you that point's distance from the path. Otherwise, it will read "Not reached by search yet". Two lines above, the "Current threshold distance:" shows your current threshold distance: so if this is set to 0.2 then that means that all points less than 0.2 from the path are included in the fill (and shown in green in the image.) The "Max. explored distance:" state under this line show the maximum distance from the path that has been completely explored.
 
 You can change the fill threshold in one of three ways:
-* Clicking on a point in the image that has been reached by the search (This is the most intuitive way of altering the threshold).
+* Clicking on a point in the image that has been reached by the search (This is the most intuitive way of altering the threshold). It may be helpful to disable the "Enable Snapping within: XY-Z" feature for the cursor while doing this.
 * Manually changing the threshold in the "Specify manually:" input box and clicking the "Apply" button beside it.
 * Clicking the "Use explored maximum" button below the threshold input box and clicking "Apply", which sets the threshold to the maximum explored distance (the value shown in "Max. explored distance:" under the "Search Status" dialog).
 
