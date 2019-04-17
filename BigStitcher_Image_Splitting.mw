@@ -26,8 +26,11 @@ Here, you can set
 
 * The path of the '''New XML File''' to which the split dataset will be saved.
 * '''Split Result''' Here, you can select
-** '''Display''' to show the dataset in BigStitcher after splitting. '''You need to manually click SAVE to commit the changes'''
+** '''Display''' to show the dataset in BigDataViewer after splitting. '''You need to manually click SAVE to commit the changes'''
 ** '''Save & Close''' to immediately save the split dataset.
+
+
+You can the open the split dataset (XML) as you would any other dataset and reconstruct it in BigStitcher.
 
 
 Go back to the [[BigStitcher#Documentation|main page]]
