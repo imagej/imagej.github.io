@@ -1,0 +1,89 @@
+(Return to the main [[SNT]] page)
+
+{{ambox | text =Most SNT features are triggered by keyboard shortcuts. Shortcuts are typically single keystrokes and do not require other modifier keys to be pressed. Most are highlighted in the user interface. E.g., to toggle the ''<u>H</u>essian analysis'' checkbox, one only needs to press its highlighted letter, i.e., {{key|H}}.
+}}
+
+__NOTOC__
+==== Interactive Prompt ====
+These shortcuts are always available: 
+* {{key|Y}} - Confirms the current temporary path. ''Mnemonic: <u>Y</u>es''.
+
+* {{key|N}} - Discards the current temporary path. ''Mnemonic: <u>N</u>o''.
+
+* {{key|F}} - Finishes a path. Note that you can finish a path by pressing {{key|Y}} twice.
+
+* {{key|C}} - Cancels a path. Note that you can finish a path by pressing {{key|N}} twice.
+
+* {{key|Esc}} - Aborts current operation / Exits current mode
+
+==== Tracing ====
+These shortcuts are available when running SNT in ''Tracing Mode'':
+* {{key|H}} - Toggles <u>H</u>essian calculation of Path curvatures.
+
+* {{key|I}} - Toggles tracing on filtered <u>I</u>mage.
+
+* {{key|M}} - Finds the brightest voxel (<u>M</u>aximum) above and below the current x,y position and automatically clicks on it. If multiple maxima exist, their average positioning is used. Note that this feature assumes that neurites are brighter than the background.
+
+* {{key|S}} - Toggles cursor <u>S</u>napping: If enabled, the plugin will automatically move the cursor to the brightest voxel within the specified x,y,z snapping window<sup>1</sup>. This facilitates accurate [[Simple_Neurite_Tracer:_Accurate_point_placement|positioning of path points]] and it is described in more detail in this [https://github.com/fiji/Simple_Neurite_Tracer/issues/1 issue].
+
+* {{key|Alt|Shift}}-click - Selects a point along the active path to be used as forking point (See [[SNT:_Step-By-Step_Instructions#Branching:_Start_A_Path_On_An_Existing_Path|step-by-step instructions]] for more details on joining and branching).
+
+==== Navigation and Zoom ====
+These shortcuts are always available:
+* {{key|Shift}} - Synchronizes XY, ZY, and XZ views while moving the cursor when not using cursor snapping.
+
+* {{key|+}} - Zooms in (Simultaneously on all views) (IJ default).
+
+* {{key|-}} - Zooms out (Simultaneously on all views) (IJ default).
+
+* {{key|4}} - Displays tracing view(s) at original scale (IJ default).
+
+* {{key|5}} - Displays tracing view(s) at 100% (IJ default).
+
+* {{key|Spacebar}} - Activates the Pan (Hand) tool (IJ default).
+
+* {{key|>}} / {{key|<}} - Previous/Next Z-slice, or Previous/Next channel, depending on the ''Reverse CZT oder of ">" and "<"'' choice set in IJ's {{bc|Edit|Options|Misc..}} prompt (IJ default).
+
+* {{Key|enter}} - Shuttles the window focus between the tracing image and the SNT window.
+
+==== Path Handling ====
+These shortcuts are always available:
+* {{key|1}} - Toggles the first visibility filter: Whether all traced paths should be displayed or just selected ones
+
+* {{key|2}} - Toggles the second visibility filter: Whether all nodes should be displayed across the Z-stack or just those in nearby Z-slices
+
+* {{key|3}} - Toggles the third visibility filter: Whether paths from all channels/frames should be displayed or just those in the active channel/frame
+
+* {{key|G}} - Selects the nearest path to the mouse cursor. Holding  {{key|Shift|G}} adds the path nearest to the mouse cursor to the current list of selected paths. ''Mnemonic: <u>G</u>roup paths around cursor.'' Note that Paths can only be edited one at a time, and thus {{key|Shift|G}} is disabled in ''Edit Mode''.
+
+==== Path Editing ====
+These shortcuts become available in ''Edit Mode'', activated through the contextual menu (displayed when right-clicking on a tracing canvas):
+* {{key|D}} or {{key|Backspace}} - <u>D</u>eletes the active node.
+* {{key|I}} or {{key|Insert}} - <u>I</u>nserts a new node at cursor position.
+* {{key|M}} - <u>M</u>oves active node to cursor position.
+* {{key|B}} - <u>B</u>rings active node to current Z-plane.
+
+==== Reconstruction Viewer ====
+* {{key|left}} {{key|right}} {{key|up}} {{key|down}} Rotate (Left-click & drag)
+* {{key|+}} {{key|-}} Zoom (Scroll)
+* {{key|A}} Toggle <u>A</u>xes
+* {{key|C}} Toggle <u>C</u>amera Mode
+* {{key|D}} Toggle <u>D</u>ark Mode
+* {{key|F}} <u>F</u>it View to Visible Objects
+* {{key|R}} <u>R</u>eset View
+* {{key|S}} Save <u>S</u>creenshot
+* {{key|H}} <u>H</u>elp (as Notification) ({{key|F1}} shows Help on a dedicated window)
+
+==== Legacy 3D Viewer ====
+All shortcuts that are not specific to tracing canvases (XY, ZY and XZ views) ''should'' be recognized by the [[SNT:_Step-By-Step_Instructions#Legacy_3D_Viewer|Legacy 3D viewer]]. In addition the following are also implemented:
+* {{key|H}} - Selects the <u>H</u>and (rotation) tool.
+* {{key|W}} - Selects the <u>W</u>and (selection) tool.
+* {{key|Esc}} - Shuttles between the Hand and Wand tool after both have been selected at least once.
+
+==== Other ====
+There are other key and mouse combinations used in e.g., [[SNT: Sholl Analysis], and [[SNT:_Step-By-Step_Instructions#Branching:_Start_A_Path_On_An_Existing_Path|Branching and Joining Paths]], that are listed in the contextual menu, displayed when righ-clicking a tracing canvas.
+
+
+{{Tip
+| tip = SNT was designed so that its shortcuts do not collide with those of ImageJ. SNT hotkeys do not require holding down {{key|Control}} ({{key|Cmd}} on MacOS). When such a modifier key is pressed, the hotkey will no longer be intercepted by SNT. E.g., During a tracing session pressing {{key|S}} will toggle cursor snapping while Pressing {{key|Control|S}} ({{key|Cmd|S}}on MacOS) will allow you to save the traced image using IJ's built-in command {{bc|File|Save}}.
+}}
