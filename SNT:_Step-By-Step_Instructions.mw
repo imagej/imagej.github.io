@@ -100,7 +100,7 @@ You can change the fill threshold in one of three ways:
 * Clicking the "Use explored maximum" button below the threshold input box and clicking "Apply", which sets the threshold to the maximum explored distance (the value shown in "Max. explored distance:" under the "Search Status" dialog).
 
 Anyway, assuming that you want to use the first of these approaches, you should use the approach described below. It is difficult to set the threshold accurately from the image unless you zoom in, so first zoom on part of the path that you want to set the threshold for:
-[[Image:Snt-zoomed-filling.png|frame|center|After having zoomed in on part of the fill]]
+[[Image:Snt-zoomed-filling-2.png|frame|center|After having zoomed in on part of the fill]]
 
 {{Clear}}
 
