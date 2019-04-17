@@ -25,7 +25,7 @@ A small circle should appear, highlighting the start of the path. Move through t
 If a path between the two points cannot be found immediately, you may see the animated progress of the search. You can scroll through the stack while such a search progresses: If it appears to not be making good progress, it's probably best to press the "Cancel/Esc" button (shortcut: {{key|C}}/{{key|Esc}}) and pick a point closer to the start point.
 {{Tip| id = external-traces|tip = Increase''Z'' in the ''Cursor Auto-snapping'' panel for automated Z-navigation on signal mouseover.}}
 
-==III. Confirming the Temporary Segment==
+==III. Confirming a Temporary Segment==
 Once the search has reached the target point, the path is shown in cyan (to indicate that this is still a temporary path) and you are asked to confirm (by clicking "Yes" or pressing  {{key|Y}}) that this path is following the route through the image that you expect. If it is not, then click "No" {{key|N}} and you'll go back to the [[#II. Picking a Subsequent Point|previous step]]. Assuming you confirmed the path, the confirmed path will appear in red. Now you are essentially back at [[#II. Picking a Subsequent Point|step II]]. Normally you will go on to pick further points along the structure. However, if you have finished with that path, click "Finish Path" {{key|F}} and you will go back to [[#I. Picking a Start Point|step I]]. If you completed that path it would be shown in magenta.
 <div align="center">
 <ul> 
@@ -71,3 +71,15 @@ If you're happy with that, confirming the temporary path will automatically comp
 [[Image:Snt-ej-cropped-path-completed-2.png|center]]
 
 Note that the path list incidates that this new path (1) ends on the existing one (0).
+
+== Filtered Image==
+WIP
+
+==Legacy 3D Viewer==
+WIP: Recycle contents from [[Simple Neurite Tracer: 3D Interaction]]
+
+=Fitting=
+WIP
+
+=Filling=
+WIP: Recycle contents from [[Simple_Neurite_Tracer:_Basic_Instructions#Filling_Out_Neurons]]
