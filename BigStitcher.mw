@@ -66,6 +66,12 @@ Furthermore, you might want to correct your images for uneven brightness across 
 
 *[[BigStitcher_Flatfield_correction|Flatfield correction]]
 
+=== Quality Control ===
+
+To quantify image quality throughout a dataset, we allow for the calculation of (relative) Fourier Ring Correlation (FRC) in the images. You can use this functionality to assess whether image quality/resolution is constant throughout the sample or it decreases, e.g. as you go deeper into the sample.
+
+*[[BigStitcher_FRC|FRC Quality Control]]
+
 === Stitching ===
 
 Stitching consists of aligning multiple overlapping image tiles using a translation model. If your dataset consists of tiled acquisitions from multiple angles, the stitching should be done for all angles independently before aligning the angles using Multiview Reconstruction:
@@ -99,6 +105,18 @@ This process consists of finding ''interest points'' such as nuclei or fiducial 
 In MultiView mode, we also offer various ways of visualizing and managing interest points:
 
 *[[BigStitcher_Interest_point_management|Interest point management]]
+
+=== Blocked and Non-Rigid Refinement ===
+
+In some cases, especially when aligning images illuminated from different sides or rotated views, even affine registration with MultiView registration or ICP might still produce suboptimal results. We support two ways of increasing registration quality further.
+
+The first improvement is to ''split the images of the dataset into virtual blocks'', allowing for a more fine-grained registration using the same registration tools available for the whole images:
+
+*[[BigStitcher_Image_Splitting|Virtual image splitting]]
+
+Additionally, we support (moving least squares) non-rigid refinement during '''Image Fusion'''. Since this is a time-consuming operation we implemented a quick virtual preview for inspection of the alignment in BigDataViewer.
+
+*[[BigStitcher_NonRigid|Non-Rigid Alignment and Preview]]
 
 === Fusion ===
 
