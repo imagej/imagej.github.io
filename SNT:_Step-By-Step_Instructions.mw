@@ -87,7 +87,7 @@ There is a simple facility in this plugin for "filling out" paths to volumes. Th
 
 First, select the one or more paths that you want to fill out from in the path manager and select "Fill -> Fill Out..." in the path manager menu options. The selected paths are shown in green so that you can check that you're starting from the right ones. After a couple of seconds if you scroll through the stack you should be able to see a thick green surround the path:
 
-[[Image:Snt-initial-filling.png|frame|center|A few seconds after selecting "Fill Out Path(s)" with 3 branched paths selected]]
+[[Image:Snt-initial-filling-2.png|frame|center|A few seconds after selecting "Fill Out Path(s)" with 3 branched paths selected]]
 
 The filler continues to explore the image starting from the path until you click "Pause" or "Stop" in the dialog. However, the fill which is shown only includes those points up to a certain threshold distance from the path. (Note that in this section "distance" doesn't mean a real physical distance, but a measure which takes into account the intensity values of the pixels which must be passed through when moving away from the path.) Information about the current threshold and the progress of the search is shown in the dialog.
 [[Image:Snt-filling-statistics.png|frame|right|The filling-related part of the dialog (outdated screenshot).]]
