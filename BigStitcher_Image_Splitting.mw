@@ -16,7 +16,7 @@ First, you will be asked for the '''dataset (XML project file) to split'''. Sele
 
 After selecting the dataset to split and clicking '''OK''', the following dialog will appear:
 
-[[File:BigStitcher_splitting_dialog.png|center|800px]]
+[[File:BigStitcher_splitting_dialog.png|center|600px]]
 
 Here, you can set
 * '''New Image Size''' to specify the approximate size of the split images in X, Y and Z, in pixels.
