@@ -122,6 +122,6 @@ If you are happy with this, then you might as well click "Pause" so that your co
 * Use the "Image Stack..." button to view the same image stack, but with only the points in that fill preserved. One reason why you might want to do this is that you can then smooth that image and use the [[3D Viewer]] to do a surface rendering of the neuron. Perhaps then you could overlay that onto a volume rendering of the complete image (see available [[Simple_Neurite_Tracer#Tutorials|tutorials]]). Or, you could save those fill stacks for each of the neurons you fill and then combine them in ImageJ using "RGB Merge".
 
 The image stack you would get from the image used in this example might look something like this:
-[[Image:Snt-filling-viewed.png|frame|center|Having selected the "Create Image from Fill" option]]
+[[Image:Snt-filling-viewed-2.png|frame|center|Having selected the "Create Image from Fill" option]]
 
 {{Clear}}
