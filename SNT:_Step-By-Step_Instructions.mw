@@ -106,7 +106,7 @@ Anyway, assuming that you want to use the first of these approaches, you should 
 
 Since the the solid green fill obscures the intensity value of the points in the fill, I suggest that you switch to the semi-transparent view of the fill at this stage by selecting the "Transparent overlay" option in the "Rendering Options" dialog. Note that this may slow down filling. This should show you something like this:
 
-[[Image:Snt-transparent-filling.png|frame|center|Having made the fill transparent]]
+[[Image:Snt-transparent-filling-2.png|frame|center|Having made the fill transparent]]
 
 {{Clear}}
 
