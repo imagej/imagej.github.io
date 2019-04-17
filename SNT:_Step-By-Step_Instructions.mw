@@ -116,7 +116,10 @@ As you can see in this image, the threshold is set too far from the path, since 
 
 {{Clear}}
 
-If you are happy with this, then you might as well click "Pause" so that your computer isn't spending all its CPU on continuing to explore the image. Then you can either: 1) save the fill (which will add it to the fill list) by clicking "Stash Progress", 2) discard the fill by either clicking "Stop" while filling is in progress or, if you stashed the fill, select it in the fill list and click "Delete Fill(s)", or 3) use the "Image Stack..." button to view the same image stack, but with only the points in that fill preserved. One reason why you might want to do this is that you can then smooth that image and use the [[3D Viewer]] to do a surface rendering of the neuron. Perhaps then you could overlay that onto a volume rendering of the complete image (see available [[Simple_Neurite_Tracer#Tutorials|tutorials]]). Or, you could save those fill stacks for each of the neurons you fill and then combine them in ImageJ using "RGB Merge".
+If you are happy with this, then you might as well click "Pause" so that your computer isn't spending all its CPU on continuing to explore the image. Then you can either: 
+* Save the fill (which will add it to the fill list) by clicking "Stash Progress". 
+* Discard the fill by either clicking "Stop" while filling is in progress or, if you stashed the fill, select it in the fill list and click "Delete Fill(s)". 
+* Use the "Image Stack..." button to view the same image stack, but with only the points in that fill preserved. One reason why you might want to do this is that you can then smooth that image and use the [[3D Viewer]] to do a surface rendering of the neuron. Perhaps then you could overlay that onto a volume rendering of the complete image (see available [[Simple_Neurite_Tracer#Tutorials|tutorials]]). Or, you could save those fill stacks for each of the neurons you fill and then combine them in ImageJ using "RGB Merge".
 
 The image stack you would get from the image used in this example might look something like this:
 [[Image:Snt-filling-viewed.png|frame|center|Having selected the "Create Image from Fill" option]]
