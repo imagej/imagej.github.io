@@ -90,7 +90,8 @@ To open the viewer, navigate to the "3D" menu tab in the SNT dialog and look for
 ** ''Compare reconstruction against''
 If you choose "New with image..." for Viewer and press "Apply", the viewer window will appear with the currently open image.
 
-[[File:SNT-Legacy-3D-Viewer.png|center|thumb|3D viewer showing OP_1.tif]]
+[[File:SNT-Legacy-3D-Viewer.png|center|thumb|400px|3D viewer showing OP_1.tif]]
+
 ===II.Basic Tracing===
 In order to select points for tracing in the 3D Viewer, you need to use the "Wand" tool.  In order to rotate the view, you need to either use the "Hand" tool or drag the mouse while holding the scroll wheel. To translate the image, hold {{key|Shift}} and the scroll wheel while dragging the mouse. Once you have selected each of these once, you should be able to switch between them by pressing the {{key|Esc}} key.
 
