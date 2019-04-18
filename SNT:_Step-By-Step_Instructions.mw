@@ -75,6 +75,7 @@ WIP
 
 ==Legacy 3D Viewer==
 SNT comes bundled with a 3D viewer which has both visualization and tracing capabilities. To open the viewer, navigate the the "3D" menu tab in the SNT dialog and look for "Legacy 3D Viewer". You will see 3 parameters:
+[[File:SNT-3D-Dialog.png|right|thumb|The 3D part of the dialog]]
 * '''Viewer''' 
 ** New with image - Instantiate viewer with the currently opened image. This enables one to trace in 3D as well as explore the image stack in an intuitive way.
 ** New without image - Instantiate viewer without an image. Useful for visualizing reconstructions and surface meshes (WaveFront or STL).
