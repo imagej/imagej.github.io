@@ -6,7 +6,7 @@
 | maintainer             = {{Person|Michaeldoube}}, {{Person|Alessandrofelder}}
 | source                 = {{GitHub|org=bonej-org|repo=BoneJ2}}, [https://doi.org/10.5281/zenodo.1427262 doi:10.5281/zenodo.1427262]
 | released               = Dec 11<sup>th</sup>, 2017
-| latest version         = cuneiform-experimental-patch2, Sep 24<sup>th</sup>, 2018
+| latest version         = Apr 18<sup>th</sup>, 2019
 | status                 = Active, Experimental
 }}
 BoneJ is a collection of skeletal biology plug-ins for ImageJ.
