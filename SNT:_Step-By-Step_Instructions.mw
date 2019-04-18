@@ -85,8 +85,8 @@ SNT comes bundled with a 3D viewer which has both visualization and tracing capa
 * Actions
 ** Apply Color Labels
 ** Compare reconstruction against
-If you choose "New with image..." for Viewer and press "Apply", the viewer window will appear.
-[[File:SNT-Legacy-3D-Viewer.png]]
+If you choose "New with image..." for Viewer and press "Apply", the viewer window will appear with the currently open image.
+[[File:SNT-Legacy-3D-Viewer.png|center]]
 
 =Fitting=
 WIP
