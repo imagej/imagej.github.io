@@ -57,16 +57,16 @@ From this point on, you can carry on adding nodes to the branched path as [[#II.
 
 ==Joining: End A Path On An Existing Path==
 Supposing you want the end of a path that you're tracing to join onto an existing path, you just use the same modifier key when selecting the end point of the last part of the path. To go into that in more detail, if you're half way through tracing a path like this:
-[[Image:Snt-ej-cropped-half-finished-2.png|center]]
+[[Image:Snt-ej-cropped-half-finished-2.png|center|thumb]]
 
 ... and you want the final part of that path to join up with the existing path running from the top-left to top-right of the image. First, select that path in the path list, so that it turns green:
-[[Image:Snt-ej-cropped-selected-destination-path-2.png|center]]
+[[Image:Snt-ej-cropped-selected-destination-path-2.png|center|thumb]]
 
 Now hold down {{key|Alt|Shift}} to restrict the end point to be a "join" on that existing path. Click (while still holding down the modifier keys) to start the search for that end point and make it join the existing path. If the search can find a path to the end point, the result should look like this:
-[[Image:Snt-ej-cropped-end-join-created-2.png|center]]
+[[Image:Snt-ej-cropped-end-join-created-2.png|center|thumb]]
 
 If you're happy with that, confirming the temporary path will automatically complete the whole path, since if you're creating an end join there cannot be any more to the path. The result will look like this:
-[[Image:Snt-ej-cropped-path-completed-2.png|center]]
+[[Image:Snt-ej-cropped-path-completed-2.png|center|thumb]]
 
 Note that the path list incidates that this new path (1) ends on the existing one (0).
 
