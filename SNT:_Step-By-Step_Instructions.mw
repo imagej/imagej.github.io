@@ -92,7 +92,7 @@ If you choose "New with image..." for Viewer and press "Apply", the viewer windo
 
 In order to select points for tracing in the 3D Viewer, you need to use the "Wand" tool.  In order to rotate the view, you need to either use the "Hand" tool or drag the mouse while holding the scroll wheel. To translate the image, hold {{key|Shift}} and the scroll wheel while dragging the mouse. Once you have selected each of these once, you should be able to switch between them by pressing the {{key|Esc}} key.
 
-[[File:Fiji-toolbar-wand-and-hand-2.png|thumb]]
+[[File:Fiji-toolbar-wand-and-hand-2.png]]
 
 The following key shortcuts also work in the 3D Viewer:
 
