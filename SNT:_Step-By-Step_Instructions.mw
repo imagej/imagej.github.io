@@ -88,7 +88,8 @@ To open the viewer, navigate to the "3D" menu tab in the SNT dialog and look for
 * '''Actions'''
 ** ''Apply Color Labels''
 ** ''Compare reconstruction against''
-If you choose "New with image..." for Viewer and press "Apply", the viewer window will appear with the currently open image.
+If you choose "New with image..." for Viewer and press "Apply", a prompt will appear asking you to choose the resampling factor for the image.
+[[File:SNT-Image-Resampling-Factor.png|right|thumb]] Then, the viewer window will appear with the currently open image.
 
 [[File:SNT-Legacy-3D-Viewer.png|center|thumb|400px|3D viewer showing OP_1.tif]]
 
