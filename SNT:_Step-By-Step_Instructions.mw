@@ -77,7 +77,7 @@ WIP
 SNT comes bundled with a 3D viewer which has both visualization and tracing capabilities. To open the viewer, navigate the the "3D" menu tab in the SNT dialog and look for "Legacy 3D Viewer". You will see 3 parameters:
 * Viewer 
 ** New with image - Instantiate viewer with the currently opened image. This enables one to trace in 3D as well as explore the image stack in an intuitive way.
-** New without image - Instantiate viewer without an image. Useful for visualizing reconstructions.
+** New without image - Instantiate viewer without an image. Useful for visualizing reconstructions and surface meshes (WaveFront or STL).
 * Mode - the render style for the reconstruction
 ** Lines and discs 
 ** Lines - render paths as nodes connected by 1D lines
