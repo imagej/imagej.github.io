@@ -107,17 +107,18 @@ You can still create branches and joins in the 3D Viewer as you would in the 2D 
 WIP
 
 =Filling=
-
 There is a simple facility in this plugin for "filling out" paths to volumes. This is not particularly sophisticated, but often good enough for a rough visualization of the shape of a neuron beyond what can be seen from the traced path.
-
-First, select the one or more paths that you want to fill out from in the path manager and select "Fill -> Fill Out..." in the path manager menu options. The selected paths are shown in green so that you can check that you're starting from the right ones. After a couple of seconds if you scroll through the stack you should be able to see a thick green surround the path:
+===I.Starting the Fill===
+First, select the one or more paths that you want to fill out from in the Path Manager and select "Fill -> Fill Out..." in the Path Manager menu options. The selected paths are shown in green so that you can check that you're starting from the right ones. After a couple of seconds if you scroll through the stack you should be able to see a thick green surround the path:
 
 [[Image:Snt-initial-filling-2.png|center|thumb|400px|A few seconds after selecting "Fill Out..." with 1 path selected]]
 
-[[Image:Snt-filling-statistics-2.png|right|thumb|The filling-related part of the dialog.]]
-The filler continues to explore the image starting from the path until you click "Pause" or "Stop" in the dialog. However, the fill which is shown only includes those points up to a certain threshold distance from the path. (Note that in this section "distance" doesn't mean a real physical distance, but a measure which takes into account the intensity values of the pixels which must be passed through when moving away from the path.) Information about the current threshold and the progress of the search is shown in the dialog.
 
+The filler continues to explore the image starting from the path until you click "Pause" or "Stop" in the dialog. However, the fill which is shown only includes those points up to a certain threshold distance from the path. (Note that in this section "distance" doesn't mean a real physical distance, but a measure which takes into account the intensity values of the pixels which must be passed through when moving away from the path.) Information about the current threshold and the progress of the search is shown in the dialog.
+[[Image:Snt-filling-statistics-2.png|right|thumb|The filling-related part of the dialog.]]
 The "Cursor position:" state under "Search Status" is updated as you move your mouse over the image. If the point under the mouse has been reached by the search then it will show you that point's distance from the path. Otherwise, it will read "Not reached by search yet". Two lines above, the "Current threshold distance:" shows your current threshold distance: so if this is set to 0.2 then that means that all points less than 0.2 from the path are included in the fill (and shown in green in the image.) The "Max. explored distance:" state under this line show the maximum distance from the path that has been completely explored.
+
+===II.Adjusting the Fill Threshold===
 
 You can change the fill threshold in one of three ways:
 * Clicking on a point in the image that has been reached by the search (This is the most intuitive way of altering the threshold). It may be helpful to disable the "Enable Snapping within: XY-Z" feature for the cursor while doing this.
@@ -141,6 +142,7 @@ As you can see in this image, the threshold is set too far from the path, since 
 
 {{Clear}}
 
+===III.Completing the Fill===
 If you are happy with this, then you might as well click "Pause" so that your computer isn't spending all its CPU on continuing to explore the image. Then you can either: 
 * Save the fill (which will add it to the fill list) by clicking "Stash Progress". 
 * Discard the fill by either clicking "Stop" while filling is in progress or, if you stashed the fill, select it in the fill list and click "Delete Fill(s)". 
