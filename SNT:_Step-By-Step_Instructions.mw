@@ -78,6 +78,10 @@ SNT comes bundled with a 3D viewer which has both visualization and tracing capa
 * Viewer 
 ** New with image - Instantiate viewer with the currently opened image. This enables one to trace in 3D as well as explore the image stack in an intuitive way.
 ** New without image - Instantiate viewer without an image. Useful for visualizing reconstructions.
+* Mode - the render style for the reconstruction
+** Lines and discs 
+** Lines - render paths as nodes connected by 1D lines
+** Surface reconstructions - render paths as tubular surfaces
 
 =Fitting=
 WIP
