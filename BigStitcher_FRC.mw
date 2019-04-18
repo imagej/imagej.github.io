@@ -1,0 +1,28 @@
+== Overview ==
+
+[[File:BigStitcher_FRC_overview.png|center|600px]]
+
+== Usage ==
+
+In the main window of BigStitcher, select the images in which you want to perform quality control, right click and select {{bc|Quality (optional)|Image Quality Estimation (FRC)...}}. This will bring up the following dialog:
+
+[[File:BigStitcher_FRC_dialog.png|center|600px]]
+
+Many parameters are similar to [[BigStitcher_Fuse|Image Fusion]]: You can set a bounding box for the resulting image, downsampling and whether to display or save results.
+
+{{Notice|By default, Quality is estimated in relatively large blocks of the (full resolution) images, downsampling only affects how large the blocks are "rendered" in the resulting image. Using high downsampling should be okay here.}}
+
+Parameters that are important to the actual quality estimation are:
+
+* '''Relative FRC''' When this is activated we will not only integrate the FRC curve of the current image plane <math>n</math> and it's neighbouring planes, but subtract a LOESS-smoothed FRC curve of planes <math>n+5</math> and <math>n-5</math> before integration. This reduces the effect of high-frequency fixed-pattern noise (e.g. sCMOS dark noise) on the quality metric. This means we have to calculate a second FRC curve, essentially doubling the computation time for this step.
+
+* '''Smooth Local FRC''' To get a smoother estimate of Quality, we can not only calculate FRC between image planes <math>(n,n+1)</math>, but also <math>(n,n-1)</math> and average the integrals of the two curves. This increases computation time since we have to calculate yet another FRC curve.
+
+The following two parameters essentially control the sampling of quality estimates in the images:
+
+* '''FRC FFT Size''' Using the whole image planes for FRC calculation would give us ''only one value per z position''. We therefore split the image planes into blocks and calculate FRC independently. This parameter controls the block size. Smaller blocks will give more localized quality information, but are also more susceptible to noise.
+
+* '''FRC stepsize (z)''' Calculating (r)FRC at every plane of the images might is computationally expensive. We therefore only calculate quality at a subset of the image planes. Using this parameter, you can set the distance of planes at which a quality check is performend. 
+
+
+Go back to the [[BigStitcher#Documentation|main page]]
