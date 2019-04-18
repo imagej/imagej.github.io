@@ -87,7 +87,21 @@ SNT comes bundled with a 3D viewer which has both visualization and tracing capa
 ** Apply Color Labels
 ** Compare reconstruction against
 If you choose "New with image..." for Viewer and press "Apply", the viewer window will appear with the currently open image.
+
 [[File:SNT-Legacy-3D-Viewer.png|center|thumb|3D viewer showing OP_1.tif]]
+
+In order to select points for tracing in the 3D Viewer, you need to use the "Wand" tool.  In order to rotate the view, you need to use the "Hand" tool.  Once you have selected each of these once, you should be able to switch between them by pressing the {{key|Esc}} key.
+
+[[File:Fiji-toolbar-wand-and-hand.png]]
+
+The following key shortcuts also work in the 3D Viewer:
+
+* {{key|Y}} confirm the temporary path segment
+* {{key|N}} cancel the temporary path segment
+* {{key|F}} complete the current path
+* {{key|G}} select the current path under the mouse pointer
+
+You can still create branches and joins in the 3D Viewer as you would in the 2D viewer.  First select the path you want to branch off, or join to by pressing {{key|G}} while the mouse pointer is over that path.  (It should turn green.)  Then create the join or branch by holding down the join modifier key ({{key|Alt}} and clicking at the right point on the selected path.
 
 =Fitting=
 WIP
