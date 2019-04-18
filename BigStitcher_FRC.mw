@@ -31,4 +31,7 @@ The following two parameters essentially control the sampling of quality estimat
 * '''FRC stepsize (z)''' Calculating (r)FRC at every plane of the images might is computationally expensive. We therefore only calculate quality at a subset of the image planes. Using this parameter, you can set the distance of planes at which a quality check is performend. 
 
 
+After clicking '''OK''', quality images will be generated and displayed or saved.
+
+
 Go back to the [[BigStitcher#Documentation|main page]]
