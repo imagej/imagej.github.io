@@ -112,9 +112,9 @@ There is a simple facility in this plugin for "filling out" paths to volumes. Th
 
 First, select the one or more paths that you want to fill out from in the path manager and select "Fill -> Fill Out..." in the path manager menu options. The selected paths are shown in green so that you can check that you're starting from the right ones. After a couple of seconds if you scroll through the stack you should be able to see a thick green surround the path:
 
-[[Image:Snt-initial-filling-2.png|frame|center|A few seconds after selecting "Fill Out..." with 1 path selected]]
+[[Image:Snt-initial-filling-2.png|center|thumb|400px|A few seconds after selecting "Fill Out..." with 1 path selected]]
 
-[[Image:Snt-filling-statistics-2.png|frame|right|The filling-related part of the dialog.]]
+[[Image:Snt-filling-statistics-2.png|right|thumb|The filling-related part of the dialog.]]
 The filler continues to explore the image starting from the path until you click "Pause" or "Stop" in the dialog. However, the fill which is shown only includes those points up to a certain threshold distance from the path. (Note that in this section "distance" doesn't mean a real physical distance, but a measure which takes into account the intensity values of the pixels which must be passed through when moving away from the path.) Information about the current threshold and the progress of the search is shown in the dialog.
 
 The "Cursor position:" state under "Search Status" is updated as you move your mouse over the image. If the point under the mouse has been reached by the search then it will show you that point's distance from the path. Otherwise, it will read "Not reached by search yet". Two lines above, the "Current threshold distance:" shows your current threshold distance: so if this is set to 0.2 then that means that all points less than 0.2 from the path are included in the fill (and shown in green in the image.) The "Max. explored distance:" state under this line show the maximum distance from the path that has been completely explored.
@@ -125,19 +125,19 @@ You can change the fill threshold in one of three ways:
 * Clicking the "Use explored maximum" button below the threshold input box and clicking "Apply", which sets the threshold to the maximum explored distance (the value shown in "Max. explored distance:" under the "Search Status" dialog).
 
 Anyway, assuming that you want to use the first of these approaches, you should use the approach described below. It is difficult to set the threshold accurately from the image unless you zoom in, so first zoom on part of the path that you want to set the threshold for:
-[[Image:Snt-zoomed-filling-2.png|frame|center|After having zoomed in on part of the fill]]
+[[Image:Snt-zoomed-filling-2.png|center|thumb|400px|After having zoomed in on part of the fill]]
 
 {{Clear}}
 
 Since the the solid green fill obscures the intensity value of the points in the fill, I suggest that you switch to the semi-transparent view of the fill at this stage by selecting the "Transparent overlay" option in the "Rendering Options" dialog. Note that this may slow down filling. This should show you something like this:
 
-[[Image:Snt-transparent-filling-2.png|frame|center|Having made the fill transparent]]
+[[Image:Snt-transparent-filling-2.png|center|thumb|400px|Having made the fill transparent]]
 
 {{Clear}}
 
 As you can see in this image, the threshold is set too far from the path, since there are many completely dark points under the green fill, as well as points on different paths than those of interest. Experiment with clicking on different points closer to the path in order to adjust the threshold until you are happy with it. You might end up with something like this:
 
-[[Image:Snt-refined-filling-2.png|frame|center|Having refined the fill by clicking closer to the path]]
+[[Image:Snt-refined-filling-2.png|center|thumb|400px|Having refined the fill by clicking closer to the path]]
 
 {{Clear}}
 
@@ -147,6 +147,6 @@ If you are happy with this, then you might as well click "Pause" so that your co
 * Use the "Image Stack..." button to view the same image stack, but with only the points in that fill preserved. You can choose either a grayscale image or binary mask. One reason why you might want to do this is that you can then smooth that image and use the [[3D Viewer]] to do a surface rendering of the neuron. Perhaps then you could overlay that onto a volume rendering of the complete image (see available [[Simple_Neurite_Tracer#Tutorials|tutorials]]). Or, you could save those fill stacks for each of the neurons you fill and then combine them in ImageJ using "RGB Merge".
 
 The image stack you would get from the image used in this example might look something like this:
-[[Image:Snt-filling-viewed-2.png|frame|center|Having selected the "Image Stack... -> As Grayscale Image..." option]]
+[[Image:Snt-filling-viewed-2.png|center|thumb|500px|Having selected the "Image Stack... -> As Grayscale Image..." option]]
 
 {{Clear}}
