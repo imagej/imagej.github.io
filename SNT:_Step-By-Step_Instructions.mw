@@ -4,7 +4,7 @@
 =Tracing=
 These instructions assume that you have done the preliminary steps described on the [[Simple Neurite Tracer: Basic Instructions]] page including starting up the plugin, enabling A* search, and turning on "Hessian-based analysis".
 
-==I. Picking a Start Point==
+==I. Pick A Start Point==
 [[Image:Snt-cropped-before-starting-2.png|right|thumb|400px|Choosing a starting point]]
 You may notice that, by default, the cursor snaps to the local maximum intensity pixel in its vicinity. To accomplish this, it takes the cuboid of the specified dimensions (in pixels) centered on the current cursor position and searches quickly for the brightest voxel(s) in that neighborhood, moving the cursor to that position. If the "Z" parameter is greater than 0, it moves to the z-plane in which that maximum was found.  
 Several things should be noted:
@@ -17,7 +17,7 @@ Several things should be noted:
 
 If you prefer to manually control the placement of nodes, feel free to disable this feature. Now, to begin tracing, move through the image stack to find the start point of a path then click there with the left mouse button.
 
-==II. Picking a Subsequent Point==
+==II. Pick A Subsequent Point==
 [[Image:Snt-cropped-after-starting-2.png|right|thumb|400px|First point of a path selected]]
 [[Image:Snt-cropped-mid-tracing-2.png|right|thumb|400px|A* search animated progress]]
 A small circle should appear, highlighting the start of the path. Move through the stack to find a subsequent point further along the same structure to be traced (neuron, blood vessel, etc.), and click there.
@@ -25,39 +25,37 @@ A small circle should appear, highlighting the start of the path. Move through t
 If a path between the two points cannot be found immediately, you may see the animated progress of the search. You can scroll through the stack while such a search progresses: If it appears to not be making good progress, it's probably best to press the "Cancel/Esc" button (shortcut: {{key|C}}/{{key|Esc}}) and pick a point closer to the start point.
 {{Tip| id = external-traces|tip = Increase''Z'' in the ''Cursor Auto-snapping'' panel for automated Z-navigation on signal mouseover.}}
 
-==III. Confirming a Temporary Segment==
+==III. Confirm A Temporary Segment==
 Once the search has reached the target point, the path is shown in cyan (to indicate that this is still a temporary path) and you are asked to confirm (by clicking "Yes" or pressing  {{key|Y}}) that this path is following the route through the image that you expect. If it is not, then click "No" {{key|N}} and you'll go back to the [[#II. Picking a Subsequent Point|previous step]]. Assuming you confirmed the path, the confirmed path will appear in red. Now you are essentially back at [[#II. Picking a Subsequent Point|step II]]. Normally you will go on to pick further points along the structure. However, if you have finished with that path, click "Finish Path" {{key|F}} and you will go back to [[#I. Picking a Start Point|step I]]. If you completed that path it would be shown in magenta.
 <div align="center">
 <ul> 
 <li style="display:inline-block;"> [[Image:Snt-cropped-confirmation-2.png|none|thumb|250px|A* search completed]] </li>
 <li style="display:inline-block;"> [[Image:Snt-cropped-confirmed-2.png|none|thumb|250px|A confirmed segment]] </li>
-<li style="display:inline-block;"> [[Image:Snt-cropped-completed-path-2.png|none|thumb|250px|A completeted path]] </li>
+<li style="display:inline-block;"> [[Image:Snt-cropped-completed-path-2.png|none|thumb|250px|A completed path]] </li>
 </ul>
 </div>
 
 
-==Branching: Start a path on an existing path==
+==Branching: Start A Path On An Existing Path==
+===I. Select The Path To Branch Off===
+To select the path you want to branch off from, you can either select it in the Path Manager, or press {{key|G}} while the mouse pointer is near the path. When the path is first selected, it will be shown in the default green color.
+[[Image:Snt-sb-selecting-by-G.gif|center|thumb|600px|[[SNT:_Key_Shortcuts#Path_Handling|Holding 'G']] will select the closest path to the mouse pointer]]
 
-Before you pick a start point for your second path, the tracer will look like this: (We''ve zoomed in on the region of interest)
-[[Image:Snt-sb-before-selecting-2.png|center]]
+===II. Select The Fork Point===
+[[Image:Snt-sb-started-branch-2.png|right|thumb|400px|A newly created fork point]]
+To force the start of the new path to be a branch off the selected path, hold down the {{key|Alt|Shift}} keys while you move the mouse to find the branch point under the red cross-hairs, now decorated with a "Fork Point" annotation. With {{key|Alt|Shift}} held down, click with the left mouse button. Finally, release the keys. Note that it is also possible to zoom into the branch point, right-click on the image and choose ''Fork at Nearest Node'' from the contextual menu.
 
-===1. Select the path to branch off===
-To select the path you want to branch off from, you can either select it in the path manager, or press {{key|G}} while your mouse pointer is over the path.  When the path is first selected, it will be shown in the default green color, as below:
-[[Image:Snt-sb-before-starting-path-2.png|center]]
+===III. Extend The Path===
+From this point on, you can carry on adding nodes to the branched path as [[#II._Pick_A_Subsequent_Point|above]], i.e., 1) Create a temporary path and 2) Confirm it. When you decide to complete the path you should see in the Path Manager that it has been recorded as starting on the existing path.
+<div align="center">
+<ul> 
+<li style="display:inline-block;"> [[Image:Snt-sb-temporary-path-2.png|none|thumb|250px|1) Temporary path branching-off]] </li>
+<li style="display:inline-block;"> [[Image:Snt-sb-confirmed-path-2.png|none|thumb|250px|2) Temporary path confirmed]] </li>
+<li style="display:inline-block;"> [[Image:Snt-sb-completed-branch-2.png|none|thumb|250px|3) Branched (child) path completed]] </li>
+</ul>
+</div>
 
-===2. Click while holding the branch modifier to start the branch===
-To force the start of the new path to be a branch off the selected path, hold down the {{key|Alt|Shift}} keys while you move the mouse to find the right point under the red cross-hairs.  Then click with the left mouse button - {{key|Alt|Shift}} should still be held down.  Finally release the keys. Once you've created a fork point, it looks like this: (We''ve zoomed in further on the fork point)
-[[Image:Snt-sb-started-branch-2.png|center]]
-
-===3. Continue adding to the path as normal===
-From this point on, you can carry on adding to the path as above, e.g. create a temporary path:
-[[Image:Snt-sb-temporary-path-2.png|center]]
-... and confirm it:
-[[Image:Snt-sb-confirmed-path-2.png|center]]
-When you decide to complete the path you should see in the path manager that it has been recorded as starting on the existing path:
-[[Image:Snt-sb-completed-branch-2.png|center]]
-
-==Joining: End a path on an existing path==
+==Joining: End A Path On An Existing Path==
 Supposing you want the end of a path that you're tracing to join onto an existing path, you just use the same modifier key when selecting the end point of the last part of the path. To go into that in more detail, if you're half way through tracing a path like this:
 [[Image:Snt-ej-cropped-half-finished-2.png|center]]
 
