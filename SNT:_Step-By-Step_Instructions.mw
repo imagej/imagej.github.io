@@ -80,8 +80,8 @@ SNT comes bundled with a 3D viewer which has both visualization and tracing capa
 ** New without image - Instantiate viewer without an image. Useful for visualizing reconstructions and surface meshes (WaveFront or STL).
 * Mode - the render style for the reconstruction
 ** Lines and discs 
-** Lines - render paths as nodes connected by 1D lines
-** Surface reconstructions - render paths as tubular surfaces
+** Lines - Render paths as nodes connected by 1D lines
+** Surface reconstructions - Render paths as tubular surfaces
 * Actions
 ** Apply Color Labels
 ** Compare reconstruction against
