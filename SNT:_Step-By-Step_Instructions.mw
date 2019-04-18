@@ -68,7 +68,7 @@ Now hold down {{key|Alt|Shift}} to restrict the end point to be a "join" on that
 If you're happy with that, confirming the temporary path will automatically complete the whole path, since if you're creating an end join there cannot be any more to the path. The result will look like this:
 [[Image:Snt-ej-cropped-path-completed-2.png|center|thumb|400px|Confirmed join]]
 
-Note that the path list incidates that this new path (1) ends on the existing one (0).
+Note that the path list indicates that this new path (1) ends on the existing one (0).
 
 == Filtered Image==
 WIP
