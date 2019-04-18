@@ -82,6 +82,9 @@ SNT comes bundled with a 3D viewer which has both visualization and tracing capa
 ** Lines and discs 
 ** Lines - render paths as nodes connected by 1D lines
 ** Surface reconstructions - render paths as tubular surfaces
+* Actions
+** Apply Color Labels
+** Compare reconstruction against
 
 =Fitting=
 WIP
