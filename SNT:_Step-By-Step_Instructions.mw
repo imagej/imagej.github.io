@@ -2,20 +2,11 @@
 <div class="toclimit-3">
 
 =Tracing=
-These instructions assume that you have done the preliminary steps described on the [[Simple Neurite Tracer: Basic Instructions]] page including starting up the plugin, enabling A* search, and turning on "Hessian-based analysis".
+These instructions assume that you have read the [[SNT: Overview]] page, including starting up the plugin, enabling [[SNT:_Overview#Auto-snapping|Cursor Auto-snapping]], and [[SNT:_Overview#Auto-tracing|Auto-tracing]] options.
 
 ==I. Pick A Start Point==
 [[Image:Snt-cropped-before-starting-2.png|right|thumb|400px|Choosing a starting point]]
-You may notice that, by default, the cursor snaps to the local maximum intensity pixel in its vicinity. To accomplish this, it takes the cuboid of the specified dimensions (in pixels) centered on the current cursor position and searches quickly for the brightest voxel(s) in that neighborhood, moving the cursor to that position. If the "Z" parameter is greater than 0, it moves to the z-plane in which that maximum was found.  
-Several things should be noted:
-* It assumes signal is brighter than background as typically found in fluorescent images.
-[[File:cursor-snap.png|right|border]]
-* If multiple maxima exist (e.g., when signal is saturated), it snaps to their centroid.
-* To streamline the computation:  XYZ dimensions are constrained to even numbers and limited range.
-* Snapping occurs in 2D if Z=0.
-* The XZ, ZY views are synchronized when 3D snapping is active (i.e., Z>0).
-
-If you prefer to manually control the placement of nodes, feel free to disable this feature. Now, to begin tracing, move through the image stack to find the start point of a path then click there with the left mouse button.
+You may notice that, by default, the cursor With [[SNT:_Overview#Auto-snapping|snaps]] to the brightest pixel in its vicinity. If you prefer to manually control the placement of nodes, feel free to toggle feature by pressing {{key|S}}. Now, to begin tracing, move through the image stack to find the start point of a path then click there with the left mouse button.
 
 ==II. Pick A Subsequent Point==
 [[Image:Snt-cropped-after-starting-2.png|right|thumb|400px|First point of a path selected]]
@@ -43,10 +34,10 @@ To select the path you want to branch off from, you can either select it in the 
 
 ===II. Select The Fork Point===
 [[Image:Snt-sb-started-branch-2.png|right|thumb|400px|A newly created fork point]]
-To force the start of the new path to be a branch off the selected path, hold down the {{key|Alt|Shift}} keys while you move the mouse to find the branch point under the red cross-hairs, now decorated with a "Fork Point" annotation. With {{key|Alt|Shift}} held down, click with the left mouse button. Finally, release the keys. Note that it is also possible to zoom into the branch point, right-click on the image and choose ''Fork at Nearest Node'' from the contextual menu.
+To force the start of the new path to be a branch of the selected path, hold down the {{key|Alt|Shift}} keys while you move the mouse to find the branch point under the red cross-hairs, now decorated with a "Fork Point" annotation. With {{key|Alt|Shift}} held down, click with the left mouse button. Finally, release the keys. Note that it is also possible to zoom into the branch point, right-click on the image and choose ''Fork at Nearest Node'' from the contextual menu.
 
 ===III. Extend The Path===
-From this point on, you can carry on adding nodes to the branched path as [[#II._Pick_A_Subsequent_Point|above]], i.e., 1) Create a temporary path and 2) Confirm it. When you decide to complete the path you should see in the Path Manager that it has been recorded as starting on the existing path.
+From this point on, you can carry on adding nodes to the branched path as [[#II._Pick_A_Subsequent_Point|above]], i.e., Create a temporary path and confirm it. When you decide to complete the path you should see in the Path Manager that it has been recorded as a child of the existing path.
 <div align="center">
 <ul> 
 <li style="display:inline-block;"> [[Image:Snt-sb-temporary-path-2.png|none|thumb|250px|1) Temporary path branching-off]] </li>
@@ -56,13 +47,13 @@ From this point on, you can carry on adding nodes to the branched path as [[#II.
 </div>
 
 ==Joining: End A Path On An Existing Path==
-Supposing you want the end of a path that you're tracing to join onto an existing path, you just use the same modifier key when selecting the end point of the last part of the path. To go into that in more detail, if you're half way through tracing a path like this:
+Supposing you want the end of a path that you're tracing to join onto an existing path, you just use the same modifier key when selecting the end point of the last part of the path. To go into that in more detail, if you're halfway through tracing a path like this:
 [[Image:Snt-ej-cropped-half-finished-2.png|center|thumb|400px|Unfinished join segment, in red - disconnected]]
 
 ... and you want the final part of that path to join up with the existing path running from the top-left to top-right of the image. First, select that path in the path list, so that it turns green:
 [[Image:Snt-ej-cropped-selected-destination-path-2.png|center|thumb|400px|Selected path to join to, in green]]
 
-Now hold down {{key|Alt|Shift}} to restrict the end point to be a "join" on that existing path. Click (while still holding down the modifier keys) to start the search for that end point and make it join the existing path. If the search can find a path to the end point, the result should look like this:
+Now hold down {{key|Alt|Shift}} to restrict the endpoint to be a "join" on that existing path. Click (while still holding down the modifier keys) to start the search for that endpoint and make it join the existing path. If the search can find a path to the end point, the result should look like this:
 [[Image:Snt-ej-cropped-end-join-created-2.png|center|thumb|400px|Connected path to join, unconfirmed]]
 
 If you're happy with that, confirming the temporary path will automatically complete the whole path, since if you're creating an end join there cannot be any more to the path. The result will look like this:
@@ -105,7 +96,7 @@ The following key shortcuts also work in the 3D Viewer:
 * {{key|F}} complete the current path
 * {{key|G}} select the current path under the mouse pointer
 
-You can still create branches and joins in the 3D Viewer as you would in the 2D viewer.  First select the path you want to branch off, or join to by pressing {{key|G}} while the mouse pointer is over that path.  (It should turn green.)  Then create the join or branch by holding down the join modifier key ({{key|Alt}} and clicking at the right point on the selected path.
+You can still create branches and joins in the 3D Viewer as you would in the 2D viewer.  First, select the path you want to branch off, or join to by pressing {{key|G}} while the mouse pointer is over that path.  (It should turn green.)  Then create the join or branch by holding down the join modifier key ({{key|Alt}} and clicking at the right point on the selected path.
 
 =Fitting=
 WIP
@@ -120,7 +111,7 @@ First, select the one or more paths that you want to fill out from in the Path M
 
 The filler continues to explore the image starting from the path until you click "Pause" or "Stop" in the dialog. However, the fill which is shown only includes those points up to a certain threshold distance from the path. (Note that in this section "distance" doesn't mean a real physical distance, but a measure which takes into account the intensity values of the pixels which must be passed through when moving away from the path.) Information about the current threshold and the progress of the search is shown in the dialog.
 [[Image:Snt-filling-statistics-2.png|right|thumb|The filling-related part of the dialog.]]
-The "Cursor position:" state under "Search Status" is updated as you move your mouse over the image. If the point under the mouse has been reached by the search then it will show you that point's distance from the path. Otherwise, it will read "Not reached by search yet". Two lines above, the "Current threshold distance:" shows your current threshold distance: so if this is set to 0.2 then that means that all points less than 0.2 from the path are included in the fill (and shown in green in the image.) The "Max. explored distance:" state under this line show the maximum distance from the path that has been completely explored.
+The "Cursor position:" state under "Search Status" is updated as you move your mouse over the image. If the point under the mouse has been reached by the search then it will show you that point's distance from the path. Otherwise, it will read "Not reached by search yet". Two lines above, the "Current threshold distance:" shows your current threshold distance: so if this is set to 0.2 then that means that all points less than 0.2 from the path are included in the fill (and shown in green in the image.) The "Max. explored distance:" state under this line shows the maximum distance from the path that has been completely explored.
 
 ===II.Adjusting the Fill Threshold===
 
