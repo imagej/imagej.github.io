@@ -1,0 +1,8 @@
+==Tracing==
+===Cursor Snapping===
+If active (the default) the cursor snaps to the brightest voxel in its vicinity. To accomplish this, SNT takes the cuboid of the specified dimensions (in pixels) centered on the current cursor position and searches quickly for local maxima in that neighborhood, moving the cursor to that position. The Z-plane in which the maximum was found is automatically selected if the "Z" parameter is greater than 0. Noteworthy:
+* This feature assumes the signal is brighter than the background as typically found in fluorescent images.
+* If multiple maxima exist (e.g., when the signal is saturated), it snaps to their centroid.[[File:cursor-snap.png|right|border]]
+* To streamline the computation:  XYZ dimensions are constrained to even numbers and limited range.
+* Snapping occurs in 2D (i.e., in the active plane) if Z=0.
+* The XZ, ZY views are synchronized when 3D snapping is active (i.e., Z>0).
