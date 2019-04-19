@@ -1,4 +1,6 @@
-==Tracing==
+==Main==
+This tab aggregated widgets for tracing and frequent operations.
+
 ===Cursor Snapping===
 If active (the default) the cursor snaps to the brightest voxel in its vicinity. To accomplish this, SNT takes the cuboid of the specified dimensions (in pixels) centered on the current cursor position and searches quickly for local maxima in that neighborhood, moving the cursor to that position. The Z-plane in which the maximum was found is automatically selected if the "Z" parameter is greater than 0. Noteworthy:
 * This feature assumes the signal is brighter than the background as typically found in fluorescent images.
@@ -6,3 +8,28 @@ If active (the default) the cursor snaps to the brightest voxel in its vicinity.
 * To streamline the computation:  XYZ dimensions are constrained to even numbers and limited range.
 * Snapping occurs in 2D (i.e., in the active plane) if Z=0.
 * The XZ, ZY views are synchronized when 3D snapping is active (i.e., Z>0).
+
+===Auto-tracing===
+
+
+===Tracing on Filtered Image===
+
+
+===Filters for Visibility of Paths===
+
+
+===Default Path Colors===
+
+
+==Options==
+This tab aggregated widgets for advanced settings.
+
+===Data Source===
+
+===Views===
+
+===Temporary Paths===
+
+===UI Interaction===
+
+===Misc===
