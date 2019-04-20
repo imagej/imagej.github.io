@@ -20,6 +20,8 @@ To process a single image, load your image ("test.tif", say) into Fiji and selec
 Save the result by doing {{bc | File | Save As}} with the same extension as the original image ("test-filtered.tif", for example). Then, with SNT open, go to the main dialog tab and look for "Tracing on Filtered Image". Click "Browse" to load the filtered image, select "SNT" for the parser and press "Load". Finally, toggle the "Trace on filtered Image" checkbox. Now the path-finding will occur on the filtered image.
 [[File:filtered-image-load.png|left|thumb]]
 [[File:filtered-image-toggle.png|center|thumb]]
+To display the image, from the SNT dialog to go {{bc | View | Show Filtered Image}}
+[[File:display-filtered-image.png]]
 
 ===Filters for Visibility of Paths===
 
