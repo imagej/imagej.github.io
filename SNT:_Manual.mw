@@ -16,7 +16,7 @@ A quick way to improve the quality and efficiency of the search is to enable "He
 * '''Sigma''' - Controls the spatial scale of the filtering. A  lower value of sigma will capture small structural details but is more sensitive to noise. A larger value of sigma will capture larger scale structure, but may lose some local shape characteristics. It is generally advisable to pick a value which reflects the average radius of the structures you are tracing.
 * '''Maximum''' - The maximum pixel intensity on the ''Tubeness'' image beyond which the cost function for A* search is minimized.
 These parameters may be chosen manually (if you already have statistics on the image) or visually (generally more intuitive). If you choose "Visually", the dialog will prompt you to click on a representative portion of the image which has meaningful structure. Once you click there, a palette will be generated showing increasing values of sigma.
-[[File:Sigma-palette-location.png|center|thumb|400px]]
+[[File:Sigma-palette-location.png|center|thumb|400px|Representative region in image]]
 <div align="center">
 <ul> 
 <li style="display:inline-block;"> [[Image:Sigma-palette-max.png|none|thumb|250px|Adjusted Max - maximum]] </li>
