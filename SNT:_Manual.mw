@@ -10,7 +10,7 @@ If active (the default) the cursor snaps to the brightest voxel in its vicinity.
 * The XZ, ZY views are synchronized when 3D snapping is active (i.e., Z>0).
 
 ===Auto-tracing===
-By default, SNT uses the A* search algorithm to find paths between two manually selected points. To build paths manually, toggle this feature. 
+By default, SNT uses the [https://en.wikipedia.org/wiki/A*_search_algorithm A* search algorithm] to find paths between two manually selected points. To build paths manually, toggle this feature. 
 [[File:SNT-auto-tracing.png|left|thumb|Auto-tracing dialog]]
 
 ===Tracing on Filtered Image===
