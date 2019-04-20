@@ -15,7 +15,7 @@ By default, SNT uses the [https://en.wikipedia.org/wiki/A*_search_algorithm A* s
 A quick way to improve the quality and efficiency of the search is to enable "Hessian-based analysis", which filters the image for tube-like structures. Two parameters need to be chosen:
 * '''Sigma''' - Controls the spatial scale of the filtering. A  lower value of sigma will capture small structural details but is more sensitive to noise. A larger value of sigma will capture larger scale structure, but may lose some local shape characteristics. It is generally advisable to pick a value which reflects the average radius of the structures you are tracing.
 * '''Maximum''' - The maximum pixel intensity on the ''Tubeness'' image beyond which the cost function for A* search is minimized.
-These parameters may be chosen manually (if you already have statistics on the image) or visually (generally more intuitive). If you choose "Visually", the dialog will prompt you to click on a representative portion of the image which has meaningful structure. Once you click there, a palette will be generated showing increasing values of sigma.
+These parameters may be chosen manually (if you already have statistics on the image) or visually (generally more intuitive). If you choose "Visually", the dialog will prompt you to click on a representative portion of the image which has meaningful structure. Once you click there, a palette will be generated showing increasing values of sigma applied to that chunk of the image.
 [[File:Sigma-palette-location.png|center|thumb|400px|Representative region in image]]
 <div align="center">
 <ul> 
@@ -24,6 +24,8 @@ These parameters may be chosen manually (if you already have statistics on the i
 <li style="display:inline-block;"> [[Image:Sigma-palette-min.png|none|thumb|250px|Adjusted Max - minimum]] </li>
 </ul>
 </div>
+Experiment with moving the "Adjusted Max" slider to find a setting which captures the important structures you are interested in, while taking care to avoid over or under-saturation. In the former case, the search might consider pixels outside of the tubular structures. In the latter case, the search might take longer or not finish at all, since each pixel will carry greater cost than it should. It is usually safe to choose a value somewhere near the median. Once you have chosen this value, click on the square in the palette with the sigma that best fits your application. Then, press "Apply" and the values will be transferred to the interface. This will run a Gaussian convolution on the image, which may take some time depending on its size. Once it's done, path-finding will occur on the Hessian image. To display this image during tracing, go to {{bc | View | Show Hessian (Tubeness) Image}}
+[[File:original-hessian-side-by-side.png|center|thumb|500px]]
 
 ===Tracing on Filtered Image===
 SNT's "Hessian-based analysis" option for filtering for tube-like structures is a quick way of improving the efficiency and accuracy of path-finding. However, if your data requires tailored pre-processing, you may also choose to trace on a user-specified filtered image. For example, one might use Frangi et al.'s method to enhance vessel-like structures.
