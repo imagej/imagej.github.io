@@ -10,7 +10,8 @@ If active (the default) the cursor snaps to the brightest voxel in its vicinity.
 * The XZ, ZY views are synchronized when 3D snapping is active (i.e., Z>0).
 
 ===Auto-tracing===
-
+By default, SNT uses the A* search algorithm to find paths between two manually selected points. To build paths manually, toggle this feature. 
+[[File:SNT-auto-tracing.png|left|thumb|Auto-tracing dialog]]
 
 ===Tracing on Filtered Image===
 SNT's "Hessian-based analysis" option for filtering for tube-like structures is a quick way of improving the efficiency and accuracy of path-finding. However, if your data requires tailored pre-processing, you may also choose to trace on a user-specified filtered image. For example, one might use Frangi et al.'s method to enhance vessel-like structures.
