@@ -15,8 +15,7 @@ If active (the default) the cursor snaps to the brightest voxel in its vicinity.
 ===Tracing on Filtered Image===
 SNT's "Hessian-based analysis" option for filtering for tube-like structures is a quick way of improving the efficiency and accuracy of path-finding. However, if your data requires tailored pre-processing, you may also choose to trace on a user-specified filtered image. For example, one might use Frangi et al.'s method to enhance vessel-like structures.
 ====A single image====
-To process a single image, load your image ("test.tif", say) into Fiji and select {{bc | Plugins | Process | Frangi Vesselness}}.  (There is more information about this plugin [[Frangi|on its page]].)  By way of example, let's say that you select 4 scales from half the x voxel separation to twice that value. Assuming you image has isotropic resolution,  the parameters would look like this. 
-[[File:frangi-parameters.png|right|thumb|Parameters for Frangi Vesselness]]
+To process a single image, load your image ("test.tif", say) into Fiji and select {{bc | Process | Filters | Frangi Vesselness}}.  (There is more information about this plugin [[Frangi|on its page]].)  By way of example, let's say that you select 1 scale, which is twice the x voxel separation. Assuming you image has isotropic resolution, the parameters would look like this.
 
 ===Filters for Visibility of Paths===
 
