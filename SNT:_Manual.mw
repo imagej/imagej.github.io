@@ -13,9 +13,10 @@ If active (the default) the cursor snaps to the brightest voxel in its vicinity.
 By default, SNT uses the [https://en.wikipedia.org/wiki/A*_search_algorithm A* search algorithm] to automatically find paths between two manually selected points. To manually place each node in a path, toggle this feature off. 
 [[File:SNT-auto-tracing.png|right|thumb|Auto-tracing dialog]]
 A quick way to improve the quality and efficiency of the search is to enable "Hessian-based analysis", which filters the image for tube-like structures. Two parameters need to be chosen:
-* '''Sigma''' - Controls the spatial scale of the filtering. A  lower value of sigma will capture small structural details but is more sensitive to noise. A larger value of sigma will capture larger scale structure, but may lose some local shape characteristics. It is generally advisable to pick a value which reflects the average radius of the structures you are tracing.
+* '''Sigma''' - Controls the spatial scale of the filtering. A  lower value of sigma will capture small structural details but is more sensitive to noise. A larger value of sigma will consider larger scale structure, but may be less sensitive to local shape characteristics. It is generally advisable to pick a value which reflects the average radius of the structures you are tracing.
 * '''Maximum''' - The maximum pixel intensity on the ''Tubeness'' image beyond which the cost function for A* search is minimized.
-These parameters may be chosen manually (if you already have statistics on the image) or visually (generally more intuitive). If you choose "Visually", the dialog will prompt you to click on a representative portion of the image which has meaningful structure. Once you click there, a palette will be generated showing increasing values of sigma applied to that chunk of the image.
+
+These parameters may be chosen "Manually" (if you already have a quantitative understanding of the image) or "Visually" (generally more intuitive). If you choose "Visually", the dialog will prompt you to click on a representative portion of the image which has meaningful structure. Once you click there, a palette will be generated showing increasing values of sigma applied to that chunk of the image.
 [[File:Sigma-palette-location.png|center|thumb|400px|Representative region in image]]
 <div align="center">
 <ul> 
