@@ -72,6 +72,12 @@ for( i = 0; i < files.length; ++i ) {
 
 ===Filters for Visibility of Paths===
 
+By default, the entire path is projected onto the current Z-slice. This is useful to see how much has been completed, and gives a sense of the overall structure of the reconstruction. However, SNT provides 3 additional visibility options for paths:
+[[File:Path-visibility-filters.png|right|thumb]]
+# Only selected paths (hide deselected) - Only show paths that have been manually selected in the Path Manger or with the {{Key|G}} key ({{Key|Shift}}+{{Key|G}} to select multiple paths).
+# Only nodes within X nearby Z-slices - Only show nodes within X number of Z-slices on either side of the current slice.
+# Only paths from active channel/frame - If tracing on a multi-channel image or an image with a time axis, only show paths from the active channel/frame
+Any combination of these options may be toggled at once.
 
 ===Default Path Colors===
 
