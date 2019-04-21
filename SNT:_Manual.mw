@@ -27,7 +27,7 @@ These parameters may be chosen "Manually" (if you already have a quantitative un
 </div>
 {{clear}}
 Experiment with moving the "Adjusted Max" slider to find a setting which captures the important structures you are interested in, while taking care to avoid over or under-saturation. In the former case, the search might consider pixels outside of the tubular structures. In the latter case, the search might take longer or not finish at all, since each pixel will carry greater cost than it should. It is usually safe to choose a value somewhere near the median. Once you have chosen this value, click on the square in the palette with the sigma that best fits your application (its border will turn green) then press "Apply". The parameters will be transferred to the interface and a Gaussian convolution will be run over the image, which may take some time depending on its size. Once it's done, path-finding will occur on the Hessian image. To display this image during tracing, go to {{bc | View | Show Hessian (Tubeness) Image}} from the SNT dialog.
-[[File:original-hessian-side-by-side.png|center|thumb|500px|Original (left) and Hessian (right)]]
+[[File:original-hessian-side-by-side.png|center|thumb|600px|Original (left) and Hessian (right)]]
 
 ===Tracing on Filtered Image===
 SNT's "Hessian-based analysis" option provides a convenient and easy way to pre-process your data. However, if your data requires tailored pre-processing, you may also choose to trace on a user-specified filtered image. For example, one might use the [https://link.springer.com/content/pdf/10.1007%252FBFb0056195.pdf Frangi et al. 1998] method to enhance vessel-like structures.
