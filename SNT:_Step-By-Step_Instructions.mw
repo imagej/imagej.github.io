@@ -120,21 +120,19 @@ You can change the fill threshold in one of three ways:
 * Manually changing the threshold in the "Specify manually:" input box and clicking the "Apply" button beside it.
 * Clicking the "Use explored maximum" button below the threshold input box and clicking "Apply", which sets the threshold to the maximum explored distance (the value shown in "Max. explored distance:" under the "Search Status" dialog).
 
-Anyway, assuming that you want to use the first of these approaches, you should use the approach described below. It is difficult to set the threshold accurately from the image unless you zoom in, so first zoom on part of the path that you want to set the threshold for:
-[[Image:Snt-zoomed-filling-2.png|center|thumb|400px|After having zoomed in on part of the fill]]
+Anyway, assuming that you want to use the first of these approaches, you should use the approach described below. It is difficult to set the threshold accurately from the image unless you zoom in, so first zoom on part of the path that you want to set the threshold for.
 
-{{Clear}}
+Since the the solid green fill obscures the intensity value of the points in the fill, I suggest that you switch to the semi-transparent view of the fill at this stage by selecting the "Transparent overlay" option in the "Rendering Options" dialog. Note that this may slow down filling.
 
-Since the the solid green fill obscures the intensity value of the points in the fill, I suggest that you switch to the semi-transparent view of the fill at this stage by selecting the "Transparent overlay" option in the "Rendering Options" dialog. Note that this may slow down filling. This should show you something like this:
+As you can see in the middle image, the threshold is set too far from the path, since there are many completely dark points under the green fill, as well as points on different paths than those of interest. Experiment with clicking on different points closer to the path in order to adjust the threshold until you are happy with it. You might end up with something like the rightmost image:
 
-[[Image:Snt-transparent-filling-2.png|center|thumb|400px|Having made the fill transparent]]
-
-{{Clear}}
-
-As you can see in this image, the threshold is set too far from the path, since there are many completely dark points under the green fill, as well as points on different paths than those of interest. Experiment with clicking on different points closer to the path in order to adjust the threshold until you are happy with it. You might end up with something like this:
-
-[[Image:Snt-refined-filling-2.png|center|thumb|400px|Having refined the fill by clicking closer to the path]]
-
+<div align="center">
+<ul> 
+<li style="display:inline-block;"> [[Image:Snt-zoomed-filling-2.png|none|thumb|250px|Fill, opaque]] </li>
+<li style="display:inline-block;"> [[Image:Snt-transparent-filling-2.png|none|thumb|250px|Fill, with "Transparent overlay" enabled]] </li>
+<li style="display:inline-block;"> [[Image:Snt-refined-filling-2.png|none|thumb|250px|Fill, refined]] </li>
+</ul>
+</div>
 {{Clear}}
 
 ===III.Completing the Fill===
