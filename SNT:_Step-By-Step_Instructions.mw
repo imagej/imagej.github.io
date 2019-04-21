@@ -114,6 +114,9 @@ Before the fitting process begins, SNT will prompt you to specify two parameters
 * Max. Radius - Defines (in pixels) the largest radius allowed in the fit. It constrains the optimization to minimize fitting artifacts caused by neighboring structures
 ** Default = 40px on each side of the path
 
+[[File:Before-fitting.png]]
+[[File:After-fitting.png]]
+
 =Filling=
 There is a simple facility in this plugin for "filling out" paths to volumes. This is not particularly sophisticated, but often good enough for a rough visualization of the shape of a neuron beyond what can be seen from the traced path.
 ===I.Starting the Fill===
