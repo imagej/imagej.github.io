@@ -129,7 +129,7 @@ As you can see in the middle image, the threshold is set too far from the path, 
 <div align="center">
 <ul> 
 <li style="display:inline-block;"> [[Image:Snt-zoomed-filling-2.png|none|thumb|250px|Fill, opaque]] </li>
-<li style="display:inline-block;"> [[Image:Snt-transparent-filling-2.png|none|thumb|250px|Fill, with "Transparent overlay" enabled]] </li>
+<li style="display:inline-block;"> [[Image:Snt-transparent-filling-2.png|none|thumb|250px|Fill, with "Transparent overlay" on]] </li>
 <li style="display:inline-block;"> [[Image:Snt-refined-filling-2.png|none|thumb|250px|Fill, refined]] </li>
 </ul>
 </div>
