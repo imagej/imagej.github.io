@@ -80,7 +80,7 @@ By default, the entire path is projected onto the current Z-slice. This is usefu
 Any combination of these options may be toggled at once.
 
 ===Default Path Colors===
-Path colors in SNT indicate status of the path. The default color indicators are:
+Path color in SNT indicates status of the path. The default color indicators are:
 * Green - Finished path, selected for interaction.
 * Magenta - Finished path, deselected meaning it cannot be extended or edited.
 * Cyan - Temporary path segment, unconfirmed.
