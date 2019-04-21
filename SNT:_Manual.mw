@@ -81,6 +81,7 @@ Any combination of these options may be toggled at once.
 
 ===Default Path Colors===
 Path color in SNT indicates status of the path. The default color indicators are:
+[[File:Default-path-colors.png]]
 * Green - Finished path, selected for interaction.
 * Magenta - Finished path, deselected meaning it cannot be extended or edited.
 * Cyan - Temporary path segment, unconfirmed.
