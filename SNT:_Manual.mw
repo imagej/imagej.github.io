@@ -80,16 +80,19 @@ By default, the entire path is projected onto the current Z-slice. This is usefu
 Any combination of these options may be toggled at once.
 
 ===Default Path Colors===
-Path color in SNT indicates status of the path. The default color indicators are:
-[[File:Default-path-colors.png|right|thumb]]
-* Green - Finished path, selected for interaction.
-* Magenta - Finished path, deselected meaning it cannot be extended or edited.
-* Cyan - Temporary path segment, unconfirmed.
-* Red - Temporary path segment, confirmed.
+Path color in SNT indicates status of the path. The default color indicators are: [[File:Default-path-colors.png|right|thumb|300px]]
 [[File:CMYK-color-model.png|right|thumb|300px]]
-The default colors for finished paths can be changed to any color in the CMYK model.
-Selected paths can be assigned custom color tags from the Path Manager. To change color of all paths, deselect all paths first. For example, to color certain paths Yellow and others Blue, first select all the paths you want to tag as Yellow, go to {{bc | Tag | Color}} then choose the desired swatch. If you hover the mouse cursor over a swatch, it will display a tooltip with its RGB value. Repeat this step for the other paths with blue [[File:Path-manager-color-tag.png|center|thumb]]
-[[File:Color-tag-result.png]]
+* <pre style="color: green">Green</pre> - Finished path, selected for interaction.
+* <pre style="color: #FF00FF">Magenta</pre> - Finished path, deselected meaning it cannot be extended or edited.
+* <pre style="color: #00FFFF">Cyan</pre> - Temporary path segment, unconfirmed.
+* <pre style="color: red">Red</pre> - Temporary path segment, confirmed.
+
+The default colors for finished paths can be changed to any color in the CMYK model. Press the "Selected" or "Deselected" button under "Default Path Colors" to change the default color of selected and deselected paths, respectively.
+
+Selected paths can be assigned custom color tags from the Path Manager. For example, to color certain paths Yellow and others Blue, first select all the paths you want to tag as Yellow, go to {{bc | Tag | Color}} then choose the desired swatch. If you hover the mouse cursor over a swatch, it will display a tooltip with its RGB value. Repeat this step for the other paths with blue. To change color of all paths, deselect all paths first.
+{{clear}}
+[[File:Path-manager-color-tag.png|left|thumb]] 
+[[File:Color-tag-result.png|center|thumb|result]]
 {{clear}}
 
 ==Options==
