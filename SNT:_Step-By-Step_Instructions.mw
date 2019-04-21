@@ -99,9 +99,9 @@ The following key shortcuts also work in the 3D Viewer:
 You can still create branches and joins in the 3D Viewer as you would in the 2D viewer.  First, select the path you want to branch off, or join to by pressing {{key|G}} while the mouse pointer is over that path.  (It should turn green.)  Then create the join or branch by holding down the join modifier key ({{key|Alt}} and clicking at the right point on the selected path.
 
 =Fitting=
-SNT can fit paths, which is the assignment of a circular cross section to each path node. This allows radius estimation and midpoint refinement for existing nodes with sub-voxel accuracy. To fit path(s), select the desired paths in the Path Manager (or select none if you want to fit all paths) and go to the "Refine/Fit" menu in the same window. There are three options:
+SNT can fit paths, which is the assignment of a circular cross-section to each path node. This allows radius estimation and midpoint refinement for existing nodes with sub-voxel accuracy. To fit path(s), select the desired paths in the Path Manager (or select none if you want to fit all paths) and go to the "Refine/Fit" menu in the same window. There are three options:
 [[File:Fit-manager.png|right|thumb]]
-* Fit Paths/Un-fit paths/Apply Existing Fit - Fits the selected paths or un-fits them if they have alredy been fitted. If you generated a preview of the fit you can apply that result.
+* Fit Paths/Un-fit paths/Apply Existing Fit - 1) Fits the selected paths or 2) un-fits them if they have alredy been fitted. 3) If you generated a preview of the fit you can apply that result. This option will change depending on context.
 * Explore/Preview Fit - Carves out a region of the image along and around the path. Scrolling through this image will display the result of the fitting operation for each node on the path.
 * Discard Fit - Deletes the existing fit(s) for the selected path(s), or all fits if no paths are selected.
 
