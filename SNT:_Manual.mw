@@ -34,8 +34,12 @@ SNT's "Hessian-based analysis" option provides a convenient and easy way to pre-
 To process a single image, load your image ("test.tif", say) into Fiji and select {{bc | Process | Filters | Frangi Vesselness}}.  (There is more information about this plugin [[Frangi|on its page]].)  By way of example, let's say that you select two scales, from twice the x voxel separation to five times that value. We apply a Gaussian convolution at each scale. Assuming your image has isotropic resolution, the parameters would look like this.
 [[File:frangi-parameters.png|center|thumb|Frangi parameters]]
 Save the result by doing {{bc | File | Save As}} with the same extension as the original image ("test-filtered.tif", for example). Then, with SNT open, go to the main dialog tab and look for "Tracing on Filtered Image". Click "Browse" to load the filtered image, select "SNT" for the parser and press "Load". Finally, toggle the "Trace on filtered Image" checkbox. Now the path-finding will occur on the filtered image.
-[[File:filtered-image-load.png|left|thumb]]
-[[File:filtered-image-toggle.png|center|thumb]]
+<div align="center">
+<ul> 
+<li style="display:inline-block;"> [[Image:filtered-image-load.png|none|thumb|300px|Step 1]] </li>
+<li style="display:inline-block;"> [[Image:filtered-image-toggle.png|none|thumb|300px|Step 2]] </li>
+</ul>
+</div>
 To display the image, from the SNT dialog go to {{bc | View | Show Filtered Image}}
 [[File:display-filtered-image.png|center|thumb|400px|Side-by-side original and filtered images]]
 
