@@ -16,7 +16,7 @@ A quick way to improve the quality and efficiency of the pathfinding is to enabl
 * '''Sigma''' - Controls the spatial scale of the filtering. A  lower value of sigma will capture small structural details but is more sensitive to noise. A larger value of sigma will consider larger scale structure, but may be less sensitive to local shape characteristics. It is generally advisable to pick a value which reflects the average radius of the structures you are tracing.
 * '''Maximum''' - The maximum pixel intensity on the ''Tubeness'' image beyond which the cost function for A* search is minimized.
 
-These parameters may be chosen "Manually" (if you already have a quantitative understanding of the image) or "Visually" (generally more intuitive). If you choose "Visually", the dialog will prompt you to click on a representative portion of the image which has meaningful structure. Once you click there, a palette will be generated showing increasing values of sigma applied to that chunk of the image.
+These parameters may be chosen "Manually" (if you already have a quantitative understanding of the image) or "Visually" (generally more intuitive). If you choose "Visually", the dialog will prompt you to click on a representative portion of the image which has meaningful structure. Once you click there, a 9-square palette will be generated showing increasing values of sigma (from top-left to bottom-right) applied to that chunk of the image.
 [[File:Sigma-palette-location.png|left|thumb|400px|Representative region in image]]
 <div align="right">
 <ul> 
