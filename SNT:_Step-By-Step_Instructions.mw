@@ -104,7 +104,7 @@ SNT can fit paths, which is the assignment of a circular cross-section to each p
 * Fit Paths/Un-fit paths/Apply Existing Fit - 1) Fits the selected paths or 2) un-fits them if they have alredy been fitted. 3) If you generated a preview of the fit you can apply that result. This option will change depending on context.
 * Explore/Preview Fit - Carves out a region of the image along and around the path. Scrolling through this image will display the result of the fitting operation for each node on the path.
 * Discard Fit - Deletes the existing fit(s) for the selected path(s), or all fits if no paths are selected.
-[[File:Explore-fit-preview.png|center|thumb]]
+[[File:Explore-fit-preview.png|right|thumb|Slice in "Explore/Preview Fit" image stack]]
 
 =Filling=
 There is a simple facility in this plugin for "filling out" paths to volumes. This is not particularly sophisticated, but often good enough for a rough visualization of the shape of a neuron beyond what can be seen from the traced path.
