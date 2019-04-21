@@ -88,7 +88,7 @@ Path color in SNT indicates status of the path. The default color indicators are
 * Red - Temporary path segment, confirmed.
 [[File:CMYK-color-model.png|right|thumb|300px]]
 The default colors for finished paths can be changed to any color in the CMYK model.
-Selected paths can be assigned custom color tags from the Path Manager. To change color of all paths, deselect all paths first [[File:Path-manager-color-tag.png|center|thumb]]
+Selected paths can be assigned custom color tags from the Path Manager. To change color of all paths, deselect all paths first. For example, to color certain paths Yellow and others Blue, first select all the paths you want to tag as Yellow, go to {{bc | Tag | Color}} then choose the desired swatch. If you hover the mouse cursor over a swatch, it will display a tooltip with its RGB value. Repeat this step for the other paths with blue [[File:Path-manager-color-tag.png|center|thumb]]
 {{clear}}
 
 ==Options==
