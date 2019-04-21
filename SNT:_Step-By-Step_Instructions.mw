@@ -114,7 +114,7 @@ Before computing the fit, SNT will prompt you to specify two parameters:
 * Max. Radius - Defines (in pixels) the largest radius allowed in the fit. It constrains the optimization to minimize fitting artifacts caused by neighboring structures
 ** Default = 40px on each side of the path
 
-Assuming you chose options 1) & 2) for "Type of Refinement", a fit path might look like the rightmost image. Notice how the nodes follow the center line of the structure more closely, and how each node now has a non-zero radius approximating the structure.
+Assuming you chose options 1) & 2) for "Type of Refinement", a fit path might look like the rightmost image below. Notice how the nodes follow the center line of the structure more closely, and how each node now has a non-zero radius approximating that of the tube.
 <div align="center">
 <ul> 
 <li style="display:inline-block;"> [[Image:Before-fitting.png|none|thumb|250px|Before fitting]] </li>
