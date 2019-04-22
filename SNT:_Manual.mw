@@ -82,10 +82,10 @@ Any combination of these options may be toggled at once.
 ===Default Path Colors===
 Path color in SNT indicates status of the path. The default color indicators are: [[File:Default-path-colors.png|right|thumb|300px]]
 [[File:CMYK-color-model.png|right|thumb|300px]]
-* <pre style="color: green">Green</pre> - Finished path, selected for interaction.
-* <pre style="color: #FF00FF">Magenta</pre> - Finished path, deselected meaning it cannot be extended or edited.
-* <pre style="color: #00FFFF">Cyan</pre> - Temporary path segment, unconfirmed.
-* <pre style="color: red">Red</pre> - Temporary path segment, confirmed.
+* <pre style="color: green;font-size:20px">Green</pre> - Finished path, selected for interaction.
+* <pre style="color: #FF00FF;font-size:20px">Magenta</pre> - Finished path, deselected meaning it cannot be extended or edited.
+* <pre style="color: #00FFFF;font-size:20px">Cyan</pre> - Temporary path segment, unconfirmed.
+* <pre style="color: red;font-size:20px">Red</pre> - Temporary path segment, confirmed.
 
 The default colors for finished paths can be changed to any color in the CMYK model. To do so, press the "Selected" or "Deselected" button under "Default Path Colors" in the SNT "Main" dialog tab.
 
