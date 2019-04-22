@@ -116,7 +116,7 @@ This tab aggregated widgets for advanced settings.
 <li style="display:inline-block;"> [[Image:OP1-with-MIP.png|none|thumb|300px|Image with MIP overlay at 30%]] </li>
 </ul>
 </div>
-* '''Draw diameters in XY view''' - Displays the stored diameter (if any) for all existing nodes. Each diameter is drawn as a line segment with length = diameter, which is bisected by the orthogonal tangent vector of the path at that node.
+* '''Draw diameters in XY view''' - Displays the stored diameter (if any) for all existing nodes. Each diameter is drawn as a line segment with length = diameter, which is bisected by the orthogonal tangent vector to the path at that node.
 <div align="center">
 <ul> 
 <li style="display:inline-block;"> [[Image:Draw-diameters-disabled.png|none|thumb|300px|Draw diameters in XY view - disabled]] </li>
