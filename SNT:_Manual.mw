@@ -124,6 +124,7 @@ This tab aggregated widgets for advanced settings.
 <li style="display:inline-block;"> [[Image:Draw-diameters-enabled.png|none|thumb|300px|Draw diameters in XY view - enabled]] </li>
 </ul>
 </div>
+* '''Apply zoom changes to all views''' - Synchronizes zoom changes between XY, XZ, and ZY views. Only applies to zoom changes made after having enabled this setting.
 
 ===Temporary Paths===
 
