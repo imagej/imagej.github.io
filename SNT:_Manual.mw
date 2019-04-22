@@ -109,12 +109,14 @@ This tab aggregated widgets for advanced settings.
 ===Data Source===
 
 ===Views===
+* '''Overlay MIP(s) at X% opacity''' - Overlays the [https://en.wikipedia.org/wiki/Maximum_intensity_projection Maximum Intensity Projection] of the image onto the current Z-slice at specified opacity. 
 <div align="center">
 <ul> 
-<li style="display:inline-block;"> [[Image:OP1-without-MIP.png|none|thumb|400px|Image without MIP overlay]] </li>
-<li style="display:inline-block;"> [[Image:OP1-with-MIP.png|none|thumb|400px|Image with MIP overlay at 30%]] </li>
+<li style="display:inline-block;"> [[Image:OP1-without-MIP.png|none|thumb|300px|Image without MIP overlay]] </li>
+<li style="display:inline-block;"> [[Image:OP1-with-MIP.png|none|thumb|300px|Image with MIP overlay at 30%]] </li>
 </ul>
 </div>
+* '''Draw diameters in XY view''' - Displays the stored diameter for all existing nodes. Each diameter is drawn as a line with length = diameter which is bisected by the tangent vector of the path at a particular node.
 
 ===Temporary Paths===
 
