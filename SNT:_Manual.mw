@@ -126,6 +126,7 @@ This tab aggregated widgets for advanced settings.
 </div>
 * '''Apply zoom changes to all views''' - Apply a zoom change to the XY, XZ, and ZY views. May resize windows.
 * '''Resize Canvas''' - If using a display canvas to view reconstructions, reset its dimensions to the default. (Currently, this command is only available for display canvases, to resize an image go to IJ's command {{ bc | Image | Adjust | Canvas Size...}}
+* '''Display ZY/XZ views''' - If currently using the XY only view, display the ZY and XZ views as well.
 
 ===Temporary Paths===
 
