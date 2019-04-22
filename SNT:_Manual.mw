@@ -92,8 +92,12 @@ The default colors for finished paths can be changed to any color in the CMYK mo
 Selected paths can be assigned custom color tags from the Path Manager. For example, to color certain paths Yellow and others Blue, first select all the paths you want to tag as Yellow, go to {{bc | Tag | Color}} then choose the desired swatch. Repeat this step for the other paths with blue. To change color of all paths, deselect all paths first.
 {{Tip| id = color-swatches|tip = Hover the mouse cursor over a color swatch to display a tooltip with its RGB value.}}
 {{clear}}
-[[File:Path-manager-color-tag.png|left|thumb]] 
-[[File:Color-tag-result.png|center|thumb|result]]
+<div align="center">
+<ul> 
+<li style="display:inline-block;"> [[Image:Path-manager-color.png|none|thumb|300px|Color tagging]] </li>
+<li style="display:inline-block;"> [[Image:Color-tag-result.png|none|thumb|300px|Result]] </li>
+</ul>
+</div>
 {{clear}}
 
 ==Options==
