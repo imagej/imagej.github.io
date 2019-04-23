@@ -132,7 +132,7 @@ This tab aggregated widgets for advanced settings.
 [[File:SNT-temporary-paths-dialog.png|right|thumb|"Temporary Paths" widget]]
 * '''Confirm temporary segments''' - If active, prompts for either confirmation or denial of whether or not to keep a temporary path segment. If inactive, automatically confirms the path segment created on each left-click after starting a path (first click). Applies to both auto-traced and manually traced path segments. The following two settings are only toggle-able when this setting is active.
 ** '''Pressing 'Y' twice finishes path''' - Finishes a temporary path on two successive {{key|Y}} key presses.
-** '''Pressing 'N' twice cancels path''' - Discards a temporary path, including the start node, on two successive {{key|N}} key presses.
+** '''Pressing 'N' twice cancels path''' - Discards a temporary or unconfirmed path, including the start node, on two successive {{key|N}} key presses.
 
 ===UI Interaction===
 
