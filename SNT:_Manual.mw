@@ -136,9 +136,9 @@ This tab aggregated widgets for advanced settings.
 
 ===UI Interaction===
 * Colors - The default color for the following items:
-** <pre style="color: #FF0000">Canvas annotations</pre>
-** <pre style="color: #008200">Fills</pre>
-** Unconfirmed paths 
-** Temporary paths
+** <pre style="color: #FF0000;font-size:20px">Canvas annotations</pre>
+** <pre style="color: #008200;font-size:20px">Fills</pre>
+** <pre style="color: #00FFFF;font-size:20px">Unconfirmed paths</pre> 
+** <pre style="color: #FF0000;font-size:20px">Temporary paths</pre>
 
 ===Misc===
