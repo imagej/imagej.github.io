@@ -23,7 +23,7 @@ To start Elastix in ImageJ, select `Plugins > Registration > Elastix > Elastix` 
 
 You can cite this plugin like this:
 
-- Tischer, C. (2019). ElastixWrapper: Fiji plugin for 3D image registration with elastix. Zenodo. http://doi.org/10.5281/zenodo.2602549
+- C. Tischer (2019). ElastixWrapper: Fiji plugin for 3D image registration with elastix. Zenodo. http://doi.org/10.5281/zenodo.2602549
 
 Please also cite the original elastix software:
 
