@@ -110,7 +110,7 @@ This tab aggregated widgets for advanced settings.
 
 ===Views===
 [[File:SNT-views-widget.png|right|thumb|"Views" widget]]
-* '''Overlay MIP(s) at X% opacity''' - Overlays the [https://en.wikipedia.org/wiki/Maximum_intensity_projection Maximum Intensity Projection] of the image onto the current Z-slice at specified opacity. 
+* '''Overlay MIP(s) at X% opacity''' - Overlay the [https://en.wikipedia.org/wiki/Maximum_intensity_projection Maximum Intensity Projection] of the image onto the current Z-slice at specified opacity. 
 <div align="left">
 <ul> 
 <li style="display:inline-block;"> [[Image:OP1-without-MIP.png|none|thumb|300px|Image without MIP overlay]] </li>
