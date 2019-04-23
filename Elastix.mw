@@ -1,10 +1,10 @@
 {{Infobox
-| name                   = BigDataProcessor2 
+| name                   = Elastix 
 | software               = Fiji
 | update site            = EMBL-CBA
-| author                 = Ashis Ravindran & Christian Tischer
-| maintainer             = Ashis Ravindran & Christian Tischer
-| source                 = {{GitHub|org=tischi|repo=fiji-plugin-bigDataProcessor2}}
+| author                 = Christian Tischer
+| maintainer             = Christian Tischer
+| source                 = {{GitHub|org=embl-cba|repo=fiji-plugin-elastixWrapper}}
 }}
 
 
