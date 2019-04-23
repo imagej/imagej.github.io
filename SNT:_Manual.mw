@@ -135,5 +135,10 @@ This tab aggregated widgets for advanced settings.
 ** '''Pressing 'N' twice cancels path''' - Discard a temporary or unconfirmed path, including the start node, on two successive {{key|N}} key presses.
 
 ===UI Interaction===
+* Colors - The default color for the following items:
+** Canvas annotations
+** Fills
+** Unconfirmed paths 
+** Temporary paths
 
 ===Misc===
