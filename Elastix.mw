@@ -15,12 +15,11 @@ Elastix is a FIJI plugin that wraps [http://elastix.isi.uu.nl/ elastix] into a g
 
 == Installation ==
 
-Elastix can be installed from the ImageJ update site: http://sites.imagej.net/EMBL-CBA. For details on how to install an update site click [[Following_an_update_site|here]].
+Elastix is available from the ImageJ update site: http://sites.imagej.net/EMBL-CBA. For details on how to install an update site click [[Following_an_update_site|here]].
 
-To use this plugin you also need to install elastix itself, as described [here](
-https://github.com/embl-cba/fiji-plugin-elastixWrapper/blob/master/README.md#install-elastix-binary)
+To use this plugin you also need to install elastix itself, as described [https://github.com/embl-cba/fiji-plugin-elastixWrapper/blob/master/README.md#install-elastix-binary here].
 
-To start Elastix in ImageJ, select `Plugins > Registration > Elastix > Elastix` from the main menu.
+To start Elastix in ImageJ, select Plugins > Registration > Elastix > Elastix from the main menu.
 
 == Citation ==
 
