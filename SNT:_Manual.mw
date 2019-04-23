@@ -124,7 +124,7 @@ This tab aggregated widgets for advanced settings.
 <li style="display:inline-block;"> [[Image:Draw-diameters-enabled.png|none|thumb|300px|Draw diameters in XY view - enabled]] </li>
 </ul>
 </div>
-* '''Apply zoom changes to all views''' - If a zoom change is applied to any one of the XY, ZY or XZ views, apply the same change to the two other views. May resize windows.
+* '''Apply zoom changes to all views''' - If a zoom change is applied to any one of the XY, ZY or XZ views, apply the same change to the two other views if they are open. May resize windows.
 * '''Resize Canvas''' - If using a display canvas to view reconstructions, reset its dimensions to the default. (Currently, this command is only available for display canvases, to resize an image go to IJ's command {{ bc | Image | Adjust | Canvas Size...}}
 * '''Display ZY/XZ views''' - If currently using the XY only view, display the ZY and XZ views as well.
 
