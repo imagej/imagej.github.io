@@ -1,0 +1,32 @@
+{{Infobox
+| name                   = BigDataProcessor2 
+| software               = Fiji
+| update site            = EMBL-CBA
+| author                 = Ashis Ravindran & Christian Tischer
+| maintainer             = Ashis Ravindran & Christian Tischer
+| source                 = {{GitHub|org=tischi|repo=fiji-plugin-bigDataProcessor2}}
+}}
+
+
+== Overview ==
+
+
+Elastix is a FIJI plugin that wraps [http://elastix.isi.uu.nl/ elastix] into a graphical user interface. Elastix is a collection of algorithms that are commonly used to solve image registration problems. Both 2D and 3D as well as multi-channel registrations are supported. Several rigid (translation, Euler, similarity, and affine) as well as locally deformable (BSpline) registrations are supported. For more information please visit the GitHub [https://github.com/embl-cba/fiji-plugin-elastixWrapper#fiji-plugins-for-running-elastix-and-transformix README].
+
+== Installation ==
+
+Elastix can be installed from the ImageJ update site: http://sites.imagej.net/EMBL-CBA. For details on how to install an update site click [[Following_an_update_site|here]].
+
+To start Elastix in ImageJ, select `Plugins > Registration > Elastix > Elastix` from the main menu.
+
+== Citation ==
+
+You can cite this plugin like this:
+
+- Tischer, C. (2019). ElastixWrapper: Fiji plugin for 3D image registration with elastix. Zenodo. http://doi.org/10.5281/zenodo.2602549
+
+Please also cite the original elastix software:
+
+- S. Klein, M. Staring, K. Murphy, M.A. Viergever, J.P.W. Pluim, "elastix: a toolbox for intensity based medical image registration," IEEE Transactions on Medical Imaging, vol. 29, no. 1, pp. 196 - 205, January 2010.
+
+- D.P. Shamonin, E.E. Bron, B.P.F. Lelieveldt, M. Smits, S. Klein and M. Staring, "Fast Parallel Image Registration on CPU and GPU for Diagnostic Classification of Alzheimer’s Disease", Frontiers in Neuroinformatics, vol. 7, no. 50, pp. 1-15, January 2014.
