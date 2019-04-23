@@ -87,7 +87,7 @@ Path coloring in SNT indicates status of the path. The default color indicators 
 * <pre style="color: #00FFFF;font-size:20px">Cyan</pre> - Unconfirmed paths.
 * <pre style="color: #FF0000;font-size:20px">Red</pre> - Temporary paths.
 
-The default colors for finished paths can be changed to any color in the [https://en.wikipedia.org/wiki/CMYK_color_model CMYK color model]. To do so, press the "Selected" or "Deselected" button in the "Default Path Colors" widget.
+The default color for each path type can be changed to any color in the [https://en.wikipedia.org/wiki/CMYK_color_model CMYK color model]. To do so for selected and deselected paths, press the "Selected" or "Deselected" button in the "Default Path Colors" widget. For unconfirmed and temporary paths, go to the "Colors" option in the "UI Interaction" widget.
 
 The "Enforce default colors (ignore color tags)" option, if active, will force all paths to conform to the default colors specified by the "Selected" and "Deselected" color buttons. Any custom color tags will be ignored until the option is toggled OFF.
 
