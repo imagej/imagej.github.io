@@ -105,6 +105,8 @@ Selected paths can be assigned custom color tags in the Path Manager. To do so, 
 This tab aggregated widgets for advanced settings.
 
 ===Data Source===
+[[File:SNT-data-source-widget.png|right|thumb|"Data Source" widget]]
+If tracing on a multi-dimensional image (i.e., one with multiple data channels and/or a time axis), a particular channel/frame can be loaded into the views by selecting each and pressing the "Reload" button.
 
 ===Views===
 [[File:SNT-views-widget.png|right|thumb|"Views" widget]]
