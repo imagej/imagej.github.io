@@ -139,5 +139,6 @@ This tab aggregated widgets for advanced settings.
 ** <pre style="color: #00FFFF;font-size:20px">Cyan</pre> - Unconfirmed paths 
 ** <pre style="color: #FF0000;font-size:20px">Red</pre> -Temporary paths
 * '''Path nodes rendering scale''' - (default is 16 pixels) Adjusts the radius of the circles representing path nodes. A path node is rendered as a circle centered at the XYZ coordinate of the point annotation.
+* '''Activate canvas on mouse hovering''' - If active, moving the mouse cursor over the any of the views automatically brings the view window into focus, allowing it to receive input.
 
 ===Misc===
