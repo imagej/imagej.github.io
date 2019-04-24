@@ -143,3 +143,7 @@ This tab aggregated widgets for advanced settings.
 * '''Activate canvas on mouse hovering''' - If active, moving the mouse cursor over the any of the views automatically brings the view window into focus, allowing it to receive input.
 
 ===Misc===
+* '''Remember window locations''' - If active, preserves the position of dialogs across restarts.
+* '''Use compression when saving traces'''
+* '''Skip confirmation dialogs''' - If active, forgoes the "Are you sure?" prompt preceding major actions.
+* '''Debug mode''' - If active, logs detailed information about actions in the console.
