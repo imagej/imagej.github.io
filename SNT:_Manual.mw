@@ -133,8 +133,8 @@ This tab aggregated widgets for advanced settings.
 ** '''Pressing 'N' twice cancels path''' - Discard a temporary or unconfirmed path, including the start node, on two successive {{key|N}} key presses.
 
 ===UI Interaction===
-* '''Colors''' - The default color for the following items (can be changed to any color in the CMYK color model):
 [[File:SNT-UI-interaction-widget.png|right|thumb|"UI Interaction" widget]]
+* '''Colors''' - The default color for the following items (can be changed to any color in the CMYK color model):
 ** <pre style="color: #FF0000;font-size:20px">Red</pre> - Canvas annotations
 ** <pre style="color: #008200;font-size:20px">Dark Green</pre> - Fills
 ** <pre style="color: #00FFFF;font-size:20px">Cyan</pre> - Unconfirmed paths 
