@@ -135,10 +135,10 @@ This tab aggregated widgets for advanced settings.
 ===UI Interaction===
 [[File:SNT-UI-interaction-widget.png|right|thumb|"UI Interaction" widget]]
 * '''Colors''' - The default color for the following items (can be changed to any color in the CMYK color model):
-** <pre style="color: #FF0000;font-size:20px">Red</pre> - Canvas annotations
-** <pre style="color: #008200;font-size:20px">Dark Green</pre> - Fills
+** <pre style="color: #FF0000;font-size:20px">Red</pre> - Canvas annotations: these indicate the various possible states of the UI, and are shown in the top-left corner of the views ("Tracing Paused", "Choosing Sigma", etc...)
+** <pre style="color: #008200;font-size:20px">Dark Green</pre> - Fills: the pixels that have been reached by the Fill search.
 ** <pre style="color: #00FFFF;font-size:20px">Cyan</pre> - Unconfirmed paths 
-** <pre style="color: #FF0000;font-size:20px">Red</pre> -Temporary paths
+** <pre style="color: #FF0000;font-size:20px">Red</pre> - Temporary paths
 * '''Path nodes rendering scale''' - (default is 2 pixels at default zoom level) Adjusts the radius of the circles representing path nodes. A path node is rendered as a circle centered at the XYZ coordinate of the point annotation.
 * '''Activate canvas on mouse hovering''' - If active, moving the mouse cursor over the any of the views automatically brings the view window into focus, allowing it to receive input.
 
