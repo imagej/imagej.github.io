@@ -147,3 +147,4 @@ This tab aggregated widgets for advanced settings.
 * '''Use compression when saving traces'''
 * '''Skip confirmation dialogs''' - If active, forgoes the "Are you sure?" prompt preceding major actions.
 * '''Debug mode''' - If active, logs detailed information about actions in the console.
+The "Reset Preferences..." button, when pressed, will reset all options to their defaults. A restart of SNT may be required for changes to take effect.
