@@ -33,3 +33,6 @@ def run():
     s_stats.getHistogram(metric).show()
     print("The average inter-node distance is %d" % summary_stats.getMean())
 </source>
+
+==Advanced Examples==
+The [https://github.com/fiji/Simple_Neurite_Tracer/tree/pyimagej/src/main/resources/script_templates/Neuroanatomy/pyimagej/notebooks Notebooks] directory in the SNT [https://github.com/fiji/Simple_Neurite_Tracer GitHub repository ] contains examples which can be executed on [https://mybinder.readthedocs.io/en/latest/ Binder].
