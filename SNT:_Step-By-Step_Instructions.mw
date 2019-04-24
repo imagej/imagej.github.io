@@ -62,7 +62,7 @@ If you're happy with that, confirming the temporary path will automatically comp
 Note that the path list indicates that this new path (1) ends on the existing one (0).
 
 == Filtered Image==
-see [[SNT:_Overview#Tracing_on_Filtered_Image]]
+see [[SNT:_Overview#Tracing_on_Filtered_Image|Tracing on Filtered Image]]
 
 ==Legacy 3D Viewer==
 SNT comes bundled with a 3D viewer with visualization and tracing capabilities. 
