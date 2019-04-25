@@ -1,0 +1,15 @@
+{{Infobox
+| software               = ImageJ - except 1.52n
+| name                   = Multi-Template Matching
+| author                 = {{Person|Lthomas}}, J.Gehrig
+| maintainer             = {{Person|Lthomas}}
+| update site            = Multi-Template-Matching
+| source                 = {{GitHub|org=LauLauThom|repo=MultiTemplateMatching}}
+| released               = 2019
+| status                 = active
+| category               = [[:Category:Analysis|Analysis]][[:Category:Feature Extraction|Feature Extraction]]
+}}
+
+See the wiki section of the github repository for the documentation including video tutorials.
+ 
+[[Category:Plugins|Citable|Feature Extraction|Jython]]
