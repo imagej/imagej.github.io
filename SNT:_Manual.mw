@@ -10,23 +10,36 @@ If active (the default) the cursor snaps to the brightest voxel in its vicinity.
 * The XZ, ZY views are synchronized when 3D snapping is active (i.e., Z>0).
 
 ===Auto-tracing===
-If active, SNT uses the [https://en.wikipedia.org/wiki/A*_search_algorithm A* search algorithm] to automatically construct paths between two manually selected points. To manually place nodes in a path, toggle this feature OFF. 
+By default, SNT uses the [https://en.wikipedia.org/wiki/A*_search_algorithm A* search algorithm] to automatically construct paths between two manually selected points. To manually place nodes in a path, toggle this feature OFF. 
 [[File:SNT-auto-tracing.png|right|thumb|"Auto-tracing" widget]]
 A quick way to improve the quality and efficiency of the pathfinding is to enable "Hessian-based analysis", which filters the image for tube-like structures. Two parameters should be specified:
-* '''Sigma''' - Controls the spatial scale of the filter. A  lower Sigma will capture small scale structure but is more sensitive to noise. A larger Sigma will consider larger scale structure, but is less sensitive to local shape characteristics. It is generally advised to pick a value which reflects the average radius of the structures to be traced.
-* '''Maximum''' - The maximum pixel intensity on the ''Tubeness'' image beyond which the cost function for A* search is minimized.
+* '''Sigma''' - Controls the spatial scale of the filter. A  lower Sigma will capture small scale structure but is more sensitive to noise. A larger Sigma will consider larger scale structures but is less sensitive to local shape characteristics. It is generally advised to pick a value which reflects the average radius of the structures to be traced.
+* '''Maximum''' The maximum pixel intensity on the ''Tubeness'' image beyond which the cost function for A* search is minimized.
 
 These parameters may be chosen "Manually" (if you already have a quantitative understanding of the image) or "Visually" (generally more intuitive). If you choose "Visually", the dialog will prompt you to click on a representative region of the image which has meaningful structure. Once you click there, a 9-square palette is generated showing increasing values of sigma (from top-left to bottom-right) applied to that chunk of the image. The palette is an image stack which can be scrolled through with the mouse wheel.
-[[File:Sigma-palette-location.png|left|thumb|400px|Representative region in image]]
-<div align="right">
-<ul> 
-<li style="display:inline-block;"> [[Image:Sigma-palette-max.png|none|thumb|250px|Adjusted Max - oversaturated]] </li>
-<li style="display:inline-block;"> [[Image:Sigma-palette-mid.png|none|thumb|250px|Adjusted Max - default]] </li>
-<li style="display:inline-block;"> [[Image:Sigma-palette-min.png|none|thumb|250px|Adjusted Max - undersaturated]] </li>
-</ul>
-</div>
+<center>
+{|
+|-
+|
+|colspan="3" style="text-align:center;font-size:90%" |Adusting max
+|-
+| [[Image:Sigma-palette-location.png|thumb|250px]]
+| [[Image:Sigma-palette-max.png|none|thumb|200px]]
+| [[Image:Sigma-palette-mid.png|none|thumb|200px]]
+| [[Image:Sigma-palette-min.png|none|thumb|200px]]
+|-
+|style="text-align:center;font-size:90%" |Representative region in image
+|style="text-align:center;font-size:90%" |Oversaturated
+|style="text-align:center;font-size:90%" |Default
+|style="text-align:center;font-size:90%" |Undersaturated
+|-
+|colspan="4" style="text-align:center;" |Choosing ''sigma'' and ''max.'' parameters visually for hessian analysis. With saturated ''max'', the cost function for A* search is equivalent across the signal. Also, note how lower sigma values cause the axon to be dimmer on the center and brighter on the edges, while higher sigma values eliminate detail from the structure.
+|-
+|}
+</center>
+
 {{clear}}
-Experiment with different values of the "Adjusted Max" to find a setting which captures the structures you are interested in, while taking care to avoid over or under-saturation. In the former case, the search might consider pixels outside of the tubular structures, giving a less accurate result. In the latter case, the search might take significantly longer, since each pixel will carry greater cost than is reasonable. It is usually safe to choose a value somewhere near the median. Once you have chosen this value, click on the square in the palette with the sigma that best fits your application (its border will turn green) then press "Apply". The parameters will be transferred to the interface and a Gaussian convolution will be run over the image, which may take some time depending on its size. Once it's done, pathfinding will occur on the Hessian image. To display this image during tracing, go to {{bc | View | Show Hessian (Tubeness) Image}} from the SNT dialog.
+Experiment with different values of the ''Adjusted max.'' to find a setting which captures the structures you are interested in while taking care to avoid over or under-saturation. In the former case, the search might consider pixels outside of the tubular structures, giving a less accurate result. In the latter case, the search might take significantly longer, since each pixel will carry greater cost than is reasonable. It is usually safe to choose a value somewhere near the default. Once you have chosen this value, click on the square in the palette with the sigma that best fits your application (its border will turn green) then press "Apply". The parameters will be transferred to the interface and a Gaussian convolution will be run over the image, which may take some time depending on its size. Once it's done, pathfinding will occur on the Hessian image. To display this image during tracing, go to {{bc | View | Show Cached/Loaded Hessian (Tubeness) Image}} from the SNT dialog.
 [[File:original-hessian-side-by-side.png|center|thumb|600px|Original (left) and Hessian (right)]]
 
 ===Tracing on Filtered Image===
