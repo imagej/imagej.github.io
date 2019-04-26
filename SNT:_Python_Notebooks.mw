@@ -15,7 +15,7 @@ from jnius import autoclass
 MouseLightLoader = autoclass('tracing.io.MouseLightLoader')
 TreeStatistics   = autoclass('tracing.analysis.TreeStatistics')
 </source>
-Now you can access all the attributes and methods these classes offer. Let's get a summary of the inter-node distances for a specific mouse cortical motor neuron (UUID = "AA0100" in the MouseLight database). 
+Now you can access all the attributes and methods these classes offer. Let's get a summary of the inter-node distances for a specific mouse cortical motor neuron (ID = "AA0100" in the [http://ml-neuronbrowser.janelia.org/ MouseLight database]). 
 <source lang="python">
 def run():
     loader = MouseLightLoader("AA0100")
