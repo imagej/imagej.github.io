@@ -10,6 +10,22 @@
 | category               = [[:Category:Analysis|Analysis]][[:Category:Feature Extraction|Feature Extraction]]
 }}
 
-See the wiki section of the github repository for the documentation including video tutorials.
- 
+
+= Installation =
+
+Activate the '''IJ-OpenCV''' update site and the '''Multi-Template-Matching update sites'''.
+
+= Documentation =
+See the wiki section of the github repository for the documentation including video tutorials !
+
+= Citations =
+If you use this plugin for your research please cite:<br>
+
+Multi-Template Matching: a versatile tool for object-localization in microscopy images;<br>
+Laurent SV Thomas, Jochen Gehrig<br>
+bioRxiv 619338; doi: https://doi.org/10.1101/619338
+
+= Video Tutorials = 
+Check our serie of [https://www.youtube.com/watch?v=KlzIqSG5XBU&list=PLHZOgc1s26MJ8QjYau7NcG5k0zh9SjHpo video tutorials]!
+
 [[Category:Plugins|Citable|Feature Extraction|Jython]]
