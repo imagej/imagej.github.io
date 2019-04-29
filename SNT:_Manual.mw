@@ -1,5 +1,6 @@
-==Main==
-This tab aggregated widgets for tracing and frequent operations.
+=Main Dialog=
+==Main Tab==
+This home tab aggregated widgets for tracing and frequent operations.
 
 ===Cursor Auto-snapping===
 If active (the default) the cursor snaps to the brightest voxel in its vicinity. To accomplish this, SNT takes the cuboid of the specified dimensions (in pixels) centered on the current cursor position and searches quickly for local maxima in that neighborhood, moving the cursor to that position. The Z-plane in which the maximum was found is automatically selected if the "Z" parameter is greater than 0. Noteworthy:
@@ -114,7 +115,7 @@ Selected paths can be assigned custom color tags in the Path Manager. To do so, 
 </div>
 {{clear}}
 
-==Options==
+==Options Tab==
 This tab aggregated widgets for advanced settings.
 
 ===Data Source===
@@ -164,3 +165,9 @@ If tracing on a multi-dimensional image (i.e., one with multiple data channels a
 * '''Skip confirmation dialogs''' - If active, forgoes the "Are you sure?" prompt preceding major actions.
 * '''Debug mode''' - If active, logs detailed information about actions in the console.
 The "Reset Preferences..." button, when pressed, will reset all options to their defaults. A restart of SNT may be required for changes to take effect.
+
+== 3D Tab ==
+
+=Path Manager=
+=Fill Manager=
+Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling Walkthrough]]
