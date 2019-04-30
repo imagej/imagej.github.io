@@ -22,7 +22,7 @@ Artifacts are files, most commonly a '''[[wikipedia:JAR_%28file_format%29|JAR]]'
 }}
 # '''In development.''' The source code is modified to add new features, fix bugs, etc... these modifications are expressed as ''commits'' by [[Git]], whether on your local filesystem, a topic branch, or a repository fork.
 # '''On master.''' When you have a set of one or more ''commits'' that you are happy with (i.e. the feature is complete, or the bug is fixed) they are moved to the <code>master</code> branch of the project's repository on GitHub. This ensures the <code>master</code> branch is always ''release ready''.
-# '''Released.''' When there is a need to make the current <code>master</code> branch public (i.e. it has a critical bug fix or cool new feature that users have requested) [[Maven]] is used to ''cut a release'', which is then ''deployed as an artifact'' to the [http://maven.imagej.net/index.html#welcome ImageJ Maven repository]. Developers can now use the new version in their own projects.
+# '''Released.''' When there is a need to make the current <code>master</code> branch public (i.e. it has a critical bug fix or cool new feature that users have requested) [[Maven]] is used to ''cut a release'', which is then ''deployed as an artifact'' to the [https://maven.scijava.org/ SciJava Maven repository]. Developers can now use the new version in their own projects.
 # '''Managed.''' The new release artifact must be verified to work in the combined runtime environment with other SciJava components. Once it has been tested to work, the version listed in the SciJava component collection [[BOM|Bill of Materials (BOM)]] can be updated accordingly.
 # '''Uploaded.''' Finally, the new release artifact can be uploaded to its associated ImageJ [[update site]], making it available to end users.
 
@@ -43,7 +43,7 @@ To provide users with an updated version of an artifact (phases 3, 4 and 5) the 
 
 Topic branches are great for isolating potentially disruptive and/or unfinished changes from the master branch, so that it always remains release ready. However, pushing directly to master has a huge time savings over filing a PR and awaiting review for days, weeks or months. Getting changes onto master quickly has many advantages:
 * '''Fewer conflicts.''' It avoids conflicts between multiple long-running topic branches.
-* '''SNAPSHOT builds.''' [[Travis]] builds the change into the latest SNAPSHOT build, making it available from the [[ImageJ Maven repository]].
+* '''SNAPSHOT builds.''' [[Travis]] builds the change into the latest SNAPSHOT build, making it available from the [[SciJava Maven repository]].
 * '''Faster support.''' Supporting the community is less convoluted, with changes released to users more rapidly. Yes, you can link to changes on a topic branch. And yes, you can upload binary builds from that branch. But each extra manual step costs time—better to link directly to the latest SNAPSHOT build. There are even ImageJ [[update sites]] which serve the latest builds from master, to make it easier for non-technical users to test changes.
 * '''Less complex.''' The more topic branches you have—and in particular, the more integration branches you have—the more complex the system becomes, the more supporting tooling, CI jobs, etc. are needed. And the more developer time is needed to maintain the tooling, sort through topic branches, keep track of open PRs... leaving less time for developing new features and fixing bugs.
 
@@ -96,7 +96,7 @@ The [https://github.com/scijava/scijava-scripts/blob/master/release-version.sh r
 * Install the <code>release-version.sh</code> script. The best way to do this is to clone the [https://github.com/scijava/scijava-scripts SciJava-scripts] repository. That will give you access to other useful scripts and help keep them all up to date.
 * ('''optional''') If you want to easily use these scripts from any directory, you can [http://askubuntu.com/q/97897 add the scijava-scripts folder to your PATH].
 * Verify that your project's parent is pom-scijava version 17.1.1 or newer. If the parent version is too old, or is not pom-scijava, then upgrade it. Ask on the [[forum]] if you need assistance.
-* If your component is to be released to the ImageJ Maven repository, then add the following line to the properties section of your POM: <code><releaseProfiles>deploy-to-imagej</releaseProfiles></code>
+* If your component is to be released to the SciJava Maven repository, then add the following line to the properties section of your POM: <code><releaseProfiles>deploy-to-imagej</releaseProfiles></code>
 * Ensure the repository for your project is linked with a [[Travis CI]] job that automatically builds and deploys Maven artifacts in response to changes on GitHub. If you're not sure if your project has this automation, ask for help on the [[forum]].
 
 === Steps to release ===
