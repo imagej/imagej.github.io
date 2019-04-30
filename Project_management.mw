@@ -10,17 +10,17 @@ See the [[Git]] pages for more information, tutorials, etc.
 
 ImageJ uses [[Maven]] for its project infrastructure.
 
-SciJava projects use the [http://maven.imagej.net/ ImageJ Maven repository] (using [http://www.sonatype.com/nexus Sonatype Nexus]) for managing SciJava libraries. Such a repository serves two main purposes:
+SciJava projects use the [https://maven.scijava.org/ SciJava Maven repository] (using [http://www.sonatype.com/nexus Sonatype Nexus]) for managing SciJava libraries. Such a repository serves two main purposes:
 
 === Deployment ===
 
-The main purpose of the ImageJ Maven repository is to serve the artifacts that are not yet ready to be deployed to OSS Sonatype. Typically, these components are [[Versioning|versioned at 0.x]]—i.e., still in incubation. Once components reach 1.0.0, we try to [http://maven.apache.org/guides/mini/guide-central-repository-upload.html release them to the central Maven repository via OSS Sonatype].
+The main purpose of the SciJava Maven repository is to serve the artifacts that are not yet ready to be deployed to OSS Sonatype. Typically, these components are [[Versioning|versioned at 0.x]]—i.e., still in incubation. Once components reach 1.0.0, we try to [http://maven.apache.org/guides/mini/guide-central-repository-upload.html release them to the central Maven repository via OSS Sonatype].
 
 This purpose is also crucial for agile development across multiple components. For more details, see [http://blog.sonatype.com/2008/11/nine-reasons-to-use-a-repository-manager-sonatype-nexus/ Nine Reasons to Use a Repository Manager] and [http://books.sonatype.com/nexus-book/reference/repoman.html Repository Management with Nexus].
 
 === Proxying ===
 
-The ImageJ Maven repository's secondary purpose is to serve as a fast, local mirror of Maven Central as well as several useful third-party repositories.
+The SciJava Maven repository's secondary purpose is to serve as a fast, local mirror of Maven Central as well as several useful third-party repositories.
 
 It acts as a unified, on-demand mirror for these public Maven repositories, reducing load on the remote servers and potentially reducing local build times.
 
@@ -31,9 +31,9 @@ Developers can benefit from the mirror by adding the following section to their 
         ...
         <mirrors>
                 <mirror>
-                        <id>imagej-mirror</id>
-                        <name>ImageJ's public mirror repository</name>
-                        <url>http://maven.imagej.net/content/groups/public</url>
+                        <id>scijava-mirror</id>
+                        <name>SciJava public mirror repository</name>
+                        <url>https://maven.scijava.org/content/groups/public</url>
                         <mirrorOf>*</mirrorOf>
                 </mirror>
         </mirrors>
