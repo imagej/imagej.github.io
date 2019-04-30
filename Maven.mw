@@ -1,9 +1,9 @@
 {{Notice | If Maven is completely new to you, read:
-* [http://maven.apache.org/what-is-maven.html What is Maven?]
-* [http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html Maven in 5 Minutes]}}
-{{DevelopMenu | tools}}{{Minibox | logo=Maven-icon.png | size=51px | blurb=<br>'''Apache Maven''' is a [[wikipedia:Convention over configuration|convention over configuration]] build automation tool.}}[[ImageJ]], [[Fiji]] and other [[SciJava]] projects use [http://maven.apache.org/ Maven] for their project infrastructure.
+* [https://maven.apache.org/what-is-maven.html What is Maven?]
+* [https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html Maven in 5 Minutes]}}
+{{DevelopMenu | tools}}{{Minibox | logo=Maven-icon.png | size=51px | blurb=<br>'''Apache Maven''' is a [[wikipedia:Convention over configuration|convention over configuration]] build automation tool.}}[[ImageJ]], [[Fiji]] and other [[SciJava]] projects use [https://maven.apache.org/ Maven] for their project infrastructure.
 
-Maven artifacts are published to the [[ImageJ Maven repository]].
+Maven artifacts are published to the [[SciJava Maven repository]].
 
 = Why do we use Maven? =
 * We need something to take source code and package it into a useable format, ''i.e.'' jar files.
@@ -85,21 +85,20 @@ As you can see, dependencies are referenced using the same ''groupId'', ''artifa
 
 Once your dependencies are declared, Maven will download them on demand from the Internet. However, for Maven to find the dependencies, it has to know where to look.
 
-Out of the box, Maven will look in the so-called [http://search.maven.org/ Maven Central repository]. Some ImageJ and SciJava components are deployed there, including the [[Architecture#Maven_component_structure|pom-scijava parent POM]] which declares important metadata, such as the [[Bill of Materials]]: current artifact versions intended to work together.
+Out of the box, Maven will look in the so-called [https://search.maven.org/ Maven Central repository]. Some ImageJ and SciJava components are deployed there, including the [[Architecture#Maven_component_structure|pom-scijava parent POM]] which declares important metadata, such as the [[Bill of Materials]]: current artifact versions intended to work together.
 
-However, many other SciJava and ImageJ components are not yet deployed to Maven Central, but instead to the [[ImageJ Maven repository]]. To gain access to this repository from your project, add the following configuration block to your ''pom.xml'':
+However, many other SciJava and ImageJ components are not yet deployed to Maven Central, but instead to the [[SciJava Maven repository]]. To gain access to this repository from your project, add the following configuration block to your ''pom.xml'':
 
 <source lang="xml">
 <repositories>
-  <!-- NB: for project parent -->
   <repository>
-    <id>imagej.public</id>
-    <url>http://maven.imagej.net/content/groups/public</url>
+    <id>scijava.public</id>
+    <url>https://maven.scijava.org/content/groups/public</url>
   </repository>
 </repositories>
 </source>
 
-As a rule of thumb: components [[Versioning|versioned at 0.x]] are deployed to the ImageJ Maven repository, while those at 1.x or later are deployed to Maven Central.
+As a rule of thumb: components [[Versioning|versioned at 0.x]] are deployed to the SciJava Maven repository, while those at 1.x or later are deployed to Maven Central.
 
 == Releases and snapshots ==
 
@@ -121,25 +120,25 @@ In the context of [[SciJava]], you will most likely never write a ''pom.xml'' fr
 
 = How to find a dependency's groupId/artifactId/version (GAV)? =
 
-Most popular open source libraries upon which you might want to depend are stored in the [http://search.maven.org/ Maven Central repository]. However, the ImageJ and Fiji JARs are not yet stored there, but in the [[Architecture#Maven_repositories|ImageJ Maven repository]]. Fortunately, you can search both at once, by visiting:
+Most popular open source libraries upon which you might want to depend are stored in the [https://search.maven.org/ Maven Central repository]. However, the ImageJ and Fiji JARs are not yet stored there, but in the [[Architecture#Maven_repositories|SciJava Maven repository]]. Fortunately, you can search both at once, by visiting:
 
-  http://maven.imagej.net/
+  https://maven.scijava.org/
 
-For example, let's suppose you want to depend on the [http://snakeyaml.org snakeyaml] library. Typing "snakeyaml" into the search box at [http://maven.imagej.net maven.imagej.net] tells us to use a <code>groupId</code> of <code>org.yaml</code>, <code>artifactId</code> of <code>snakeyaml</code>, with available versions ranging from <code>1.4</code> to <code>1.10</code>. In the case of many results, you can click the "Drill down" link to view more details of that specific GAV combination. You can also click an entry to get a formatted <code>dependency</code> block for direct copy-pasting into your POM.
+For example, let's suppose you want to depend on the [http://snakeyaml.org snakeyaml] library. Typing "snakeyaml" into the search box at [https://maven.scijava.org maven.scijava.org] tells us to use a <code>groupId</code> of <code>org.yaml</code>, <code>artifactId</code> of <code>snakeyaml</code>, with available versions ranging from <code>1.4</code> to <code>1.10</code>. In the case of many results, you can click the "Drill down" link to view more details of that specific GAV combination. You can also click an entry to get a formatted <code>dependency</code> block for direct copy-pasting into your POM.
 
 {{Tip | tip=If your dependencies are in Maven Central, you can use the [https://github.com/ingenieux/quickdeps quickdeps] tool to quickly generate dependency blocks, by scanning your project's bytecode.}}
 
 = Depending on libraries outside the core repositories =
 
-If you need to depend on a library that is not present in either Maven Central or the ImageJ Maven repository, first double check the project's web site for any documentation on using their library with Maven. They might provide their own public Maven repository which you could use instead (by [http://maven.apache.org/guides/mini/guide-multiple-repositories.html adding a <code>&lt;repository&gt;</code> to the <code>&lt;repositories&gt;</code> section of your POM]).
+If you need to depend on a library that is not present in either Maven Central or the SciJava Maven repository, first double check the project's web site for any documentation on using their library with Maven. They might provide their own public Maven repository which you could use instead (by [https://maven.apache.org/guides/mini/guide-multiple-repositories.html adding a <code>&lt;repository&gt;</code> to the <code>&lt;repositories&gt;</code> section of your POM]).
 
 If there are no public repositories containing your dependency, you have two options:
 
 * If the dependency is itself an ImageJ plugin, consider [[Fiji_contribution_requirements|contributing it to Fiji]]. Plugins distributed with Fiji are [[Fiji_contribution_requirements#Maven_artifacts|made available as Maven artifacts]], and thus will benefit both users and developers.
 
-* If the dependency is narrower in scope, you could [[Mailing Lists|contact the ImageJ & Fiji maintainers]] to get your needed dependency added to the ImageJ Maven repository. Note that you will then be responsible for distributing the dependency with your code—so ensure it is [[Licensing|licensed appropriately]].
+* If the dependency is narrower in scope, you could [[Mailing Lists|contact the ImageJ & Fiji maintainers]] to get your needed dependency added to the SciJava Maven repository. Note that you will then be responsible for distributing the dependency with your code—so ensure it is [[Licensing|licensed appropriately]].
 
-Finally, for local testing you can [http://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html install the dependency into your local Maven repository cache yourself]. The command is <code>mvn install:install-file</code>. For example, if you have a library <code>foo.jar</code> to install, you could run:
+Finally, for local testing you can [https://maven.apache.org/guides/mini/guide-3rd-party-jars-local.html install the dependency into your local Maven repository cache yourself]. The command is <code>mvn install:install-file</code>. For example, if you have a library <code>foo.jar</code> to install, you could run:
 
   mvn install:install-file -Dfile=/path/to/foo.jar -DgroupId=org.foo \
     -DartifactId=foo -Dversion=1.0.0 -Dpackaging=jar
@@ -153,10 +152,9 @@ When in doubt, [[Help|contact the community]] with your questions.
 = Further reading =
 
 * Our very own [[Maven - Frequently Asked Questions|Maven FAQ]]
-* [http://maven.apache.org/guides/getting-started/ Maven's Getting Started]
-* [http://books.sonatype.com/mvnref-book/reference/public-book.html Maven: The Complete Reference]
-* [http://books.sonatype.com/mvnex-book/reference/public-book.html Maven by Example]
-* [http://books.sonatype.com/nexus-book/reference/ Nexus Book: Repository Management with Nexus]
+* [https://maven.apache.org/guides/getting-started/ Maven's Getting Started]
+* [https://books.sonatype.com/mvnref-book/reference/index.html Maven: The Complete Reference]
+* [https://books.sonatype.com/mvnex-book/reference/index.html Maven by Example]
 
 [[Category:Development]]
 [[Category:Maven]]
