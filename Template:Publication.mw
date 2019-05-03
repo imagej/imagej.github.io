@@ -1,5 +1,22 @@
 <includeonly>{{#switch: {{{1}}}
 
+
+| 3Dscript = {{Citation | last = Schmid | first = B.
+| last2 = Tripal | first2 = P.
+| last3 = Fraaß | first3 = T.
+| last4 = Kersten | first4 = C.
+| last5 = Ruder | first5 = B.
+| last6 = Grüneboom | first6 = A.
+| last7 = Huisken | first7 = J.
+| last8 = Palmisano | first8 = R.
+| year = 2019
+| journal = Nature methods
+| url = https://www.nature.com/articles/s41592-019-0359-1
+| title = 3Dscript: animating 3D/4D microscopy data using a natural-language-based syntax
+| volume = 16(4)
+| pages = 278–280
+| pmid = 30886414}} ({{Scholar | cluster=5464881898236181205}}).
+
 | 3D Viewer = {{Citation | last = Schmid | first = B.
 | last2 = Schindelin | first2 = J.
 | last3 = Cardona | first3 = A.
