@@ -180,6 +180,10 @@ The "Reset Preferences..." button, when pressed, will reset all options to their
 This tab aggregates widgets related to 3D interaction.
 ===Reconstruction Viewer===
 The Reconstruction Viewer is an advanced OpenGL visualization tool. For performance reasons, some Path Manager changes may need to be synchronized manually from RV controls. To open Reconstruction Viewer with the currently loaded tracings, press ''Open Reconstruction Viewer''. For more information, see the Reconstruction Viewer wiki page.
+===Legacy 3D Viewer===
+The Legacy 3D Viewer is a functional tracing canvas but it depends on outdated services that are now deprecated. It may not function reliably on recent operating systems. For usage instructions, see [[SNT:_Step-By-Step_Instructions#Legacy_3D_Viewer|Legacy 3D Viewer]]
+===SciView=== 
+[[SciView|SciView]] is IJ2's modern replacement for the Legacy 3D Viewer providing 3D visualization and virtual reality capabilities for both images and meshes. It is not yet available in SNT.
 
 =Path Manager=
 =Fill Manager=
