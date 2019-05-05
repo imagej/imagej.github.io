@@ -187,5 +187,7 @@ The Legacy 3D Viewer is a functional tracing canvas but it depends on outdated s
 {{clear}}
 
 =Path Manager=
+[[File:SNT-Path-Manager.png|right|thumb|Path Manager]]
+
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling Walkthrough]]
