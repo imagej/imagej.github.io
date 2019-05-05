@@ -178,6 +178,8 @@ The "Reset Preferences..." button, when pressed, will reset all options to their
 == 3D Tab ==
 [[File:SNT-3D-Tab.png|right|thumb|"3D" menu tab]]
 This tab aggregates widgets related to 3D interaction.
+===Reconstruction Viewer===
+The Reconstruction Viewer is an advanced OpenGL visualization tool. For performance reasons, some Path Manager changes may need to be synchronized manually from RV controls. To open Reconstruction Viewer with the currently loaded tracings, press ''Open Reconstruction Viewer''. For more information, see the Reconstruction Viewer wiki page.
 
 =Path Manager=
 =Fill Manager=
