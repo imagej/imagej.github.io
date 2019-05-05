@@ -188,7 +188,7 @@ The Legacy 3D Viewer is a functional tracing canvas but it depends on outdated s
 
 =Path Manager=
 [[File:SNT-Path-Manager.png|right|thumb|Path Manager]]
-The Path Manager dialog displays all existing paths in a hierarchical structure (tree), where one path is "primary" (path 0) and all other paths (paths 1...N) are children of the primary path. The dialog also contains several menus with various editing, tagging, refinement/fitting, filling and analysis options. Paths can be searched for in the text filter by their names and/or tags.
+The Path Manager dialog displays all existing paths in a hierarchical structure (tree), where one path is "primary" (path 0) and all other paths (paths 1...N) are children of the primary path. The dialog also contains several menus with various editing, tagging, refinement/fitting, filling and analysis options. Paths can be searched for and highlighted in the text filter by their names and/or tags.
 
 ===Edit===
 * '''Delete''' - Remove selected path(s) from the Path Manager. This will also delete them from the tracing and update the canvas accordingly.
