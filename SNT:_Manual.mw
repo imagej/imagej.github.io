@@ -197,7 +197,7 @@ The Path Manager dialog displays all existing paths in a hierarchical structure 
 * '''Disconnect''' -  Disconnect the selected path from all of its connections.
 * '''Merge''' - merge the selected paths (at least two) into one path. Note the starting node of path ''i'' is merged to the endpoint of path ''i+1''
 * '''Specify Radius''' - Specify a constant radius to be applied to all the nodes of selected path(s). This setting only applies to unfitted paths and overrides and existing values.
-* '''Ramer-Douglas-Peuker Downsampling''' - Given an inputted maximum permitted distance between nodes, perform [https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm| Ramer-Douglas-Peucker] downsampling on the selected path(s). N.B.: 
+* '''Ramer-Douglas-Peuker Downsampling''' - Given an inputted maximum permitted distance between nodes, perform [https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm Ramer-Douglas-Peucker] downsampling on the selected path(s). N.B.: 
 **This operation cannot be undone. 
 ** Paths can only be downsampled: Smaller inter-node distances will not be interpolated. 
 ** It is advised to choose a value at least twice the smallest voxel separation.
