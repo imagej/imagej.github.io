@@ -248,7 +248,7 @@ This menu contains several options which provide quick ways to analyze and visua
 * '''Distribution Analysis''' Plot a histogram of the selected metric.
 ** ''Measurement'' - Drop-down menu with the available metrics.
 * '''Measure''' Show a table of summary statistics for selected paths.
-[[File:SNT-Path-Manager-Measurements.png]]
+[[File:SNT-Path-Manager-Measurements.png|center|thumb|800px|Measurements table for OP_1]]
 
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling Walkthrough]]
