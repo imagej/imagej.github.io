@@ -247,7 +247,7 @@ This menu contains several options which provide quick ways to analyze and visua
 [[File:SNT-Branch-Order-Histogram.png|right|thumb|Branch Order histogram]]
 * '''Distribution Analysis''' Plot a histogram of the selected metric.
 ** ''Measurement'' - Drop-down menu with the available metrics.
-* '''Measure''' Show a table of summary statistics for selected paths.
+* '''Measure''' Show a table of summary statistics for selected paths. If measuring multiple tracings, the table can be sorted by column.
 [[File:SNT-Path-Manager-Measurements.png|center|thumb|800px|Measurements table for OP_1]]
 
 =Fill Manager=
