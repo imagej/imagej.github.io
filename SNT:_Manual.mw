@@ -257,7 +257,7 @@ This menu contains several options which provide quick ways to analyze and visua
 * '''Convert to ROIs''' Allows conversion of paths to ROIs (Regions of Interest). Creates an instance of the [https://imagej.nih.gov/ij/docs/guide/146-30.html#fig:The-ROI-Manager ROI Manager]
 ** ''Convert'' Drop-down menu specifying the compartment to convert.
 ** ''View'' Drop-down menu specifying which view to overlay the ROIs.
-** ''Impose SWC colos''
+** ''Impose SWC colors''
 ** ''Adopt path diameter as line thickness''
 ** ''Discard existing ROIs in ROI Manager''
 [[File:SNT-Convert-To-ROIs.png|left|thumb]]
