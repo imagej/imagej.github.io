@@ -222,6 +222,8 @@ The Path Manager dialog displays all existing paths in a hierarchical structure 
 * '''Remove All Tags''' Remove all tags from selected paths. SWC-type tags are preserved.
 ===Refine/Fit===
 see [[SNT:_Step-By-Step_Instructions#Fitting|Fitting]] in the Step-By-Step Instructions wiki page.
+===Fill=== 
+* '''Fill Out''' Begins the filling process for selected paths. For detailed instructions see [[SNT:_Step-By-Step_Instructions#Filling|Filling]] in the Step-By-Step Instructions page.
 
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling Walkthrough]]
