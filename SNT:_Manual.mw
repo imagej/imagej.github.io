@@ -237,7 +237,7 @@ See [[SNT:_Step-By-Step_Instructions#Fitting|Fitting]] in the Step-By-Step Instr
 ===Analyze===
 This menu contains several options which provide quick ways to analyze and visualize numerical properties of paths. 
 
-* '''Color Coding''' Assigns color codes to paths based on a metric. 
+* '''Color Coding''' Assigns color codes to paths based on the chosen metric. 
 ** ''Color by'' Drop-down menu containing the metrics which inform the color mapping. 
 ** ''LUT'' Drop-down menu containing the LUTs (Look Up Tables) that define the color palettes. The LUTs are those that come packaged with ImageJ. The selected LUT is displayed in the color bar directly underneath.
 ** ''Rec. Viewer Color Map'' If active, opens an instance of the Reconstruction Viewer with the selected paths color coded with the selected LUT.
@@ -271,6 +271,7 @@ This menu contains several options which provide quick ways to analyze and visua
 [[File:SNT-Projected-Skeleton-OP1.png|Skeleton of OP_1, Z-projected]]
 * '''Save as SWC''' Exports selected paths as an [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html SWC] file. Note the paths to be exported must include a primary path (i.e., one a the top level in the Path Manager tree).
 {{clear}}
+
 ===Text Filter===
 [[File:SNT-Path-Manager-Text-Filter.png|right|thumb]]
 The text filter allows paths to be searched by any characters in the path name string and by color. The name string includes all tags.
