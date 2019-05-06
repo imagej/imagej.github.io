@@ -266,6 +266,8 @@ This menu contains several options which provide quick ways to analyze and visua
 * '''Plot Profile''' Uses the pixel intensity values under point annotations to generate a pixel intensity vs. distance plot for selected paths.
 [[File:SNT-Path-Profile-Graph.png|left|thumb]]
 {{clear}}
+* '''Skeletonize''' Creates a binary skeleton image from the selected paths.
+[[File:SNT-Path-Manager-Skeletonize.png]]
 
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling Walkthrough]]
