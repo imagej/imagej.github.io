@@ -260,6 +260,7 @@ This menu contains several options which provide quick ways to analyze and visua
 ** ''Impose SWC colos''
 ** ''Adopt path diameter as line thickness''
 ** ''Discard existing ROIs in ROI Manager''
+[[File:SNT-Convert-To-ROIs.png|left|thumb]]
 
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling Walkthrough]]
