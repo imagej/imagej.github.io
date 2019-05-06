@@ -263,7 +263,7 @@ This menu contains several options which provide quick ways to analyze and visua
 [[File:SNT-Convert-To-ROIs.png|left|thumb]]
 [[File:SNT-ROI-Manager.png|center|thumb|ROI Manager]]
 {{clear}}
-* '''Plot Profile''' Plots the pixel intensity vs. distance graph for selected paths. The pixels are taken from the corresponding point annotations in a path.
+* '''Plot Profile''' Uses the pixel intensity values under point annotations to generate a pixel intensity vs. distance plot for selected paths.
 [[File:SNT-Path-Profile-Graph.png|left|thumb]]
 {{clear}}
 
