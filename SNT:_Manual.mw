@@ -202,6 +202,7 @@ The Path Manager dialog displays all existing paths in a hierarchical structure 
 ** Paths can only be downsampled: Smaller inter-node distances will not be interpolated. 
 ** It is advised to choose a value at least twice the smallest voxel separation.
 ===Tag===
+[[File:SNT-Path-Manager-Tag.png|right|thumb|"Tag" menu]]
 * '''Type''' Type of neurite compartment. SNT provides four basic types associated with neuronal structures, as well as the ability to define custom tags:
 ** ''Basal Dendrite''
 ** ''Apical Dendrite''
@@ -220,6 +221,7 @@ The Path Manager dialog displays all existing paths in a hierarchical structure 
 ** ''Mean Radius'' - Path mean radius.
 * '''Custom''' Specify a custom tag string.
 * '''Remove All Tags''' Remove all tags from selected paths. SWC-type tags are preserved.
+
 ===Refine/Fit===
 See [[SNT:_Step-By-Step_Instructions#Fitting|Fitting]] in the Step-By-Step Instructions wiki page.
 
