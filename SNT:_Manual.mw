@@ -263,6 +263,9 @@ This menu contains several options which provide quick ways to analyze and visua
 [[File:SNT-Convert-To-ROIs.png|left|thumb]]
 [[File:SNT-ROI-Manager.png|center|thumb|ROI Manager]]
 {{clear}}
+* '''Plot Profile''' Plots the pixel intensity vs. distance graph for selected paths. The pixels are taken from the corresponding point annotations in a path.
+[[File:SNT-Path-Profile-Graph.png|left|thumb]]
+{{clear}}
 
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling Walkthrough]]
