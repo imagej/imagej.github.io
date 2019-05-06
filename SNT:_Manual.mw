@@ -243,7 +243,7 @@ This menu contains several options which provide quick ways to analyze and visua
 ** ''Rec. Viewer Color Map'' If active, opens an instance of the Reconstruction Viewer with the selected paths color coded with the selected LUT.
 ** ''Rec. Plotter Color Map'' If active, open an instance of the Reconstruction Plotter with the selected paths color coded with the selected LUT.
 ** ''Remove Existing Color Coding'' Removes existing color coding from the selected paths.
-
+[[File:SNT-Color-Mapped-OP1.png|center|thumb|OP_1 color coded by branch order]]
 * '''Distribution Analysis''' Plot a histogram of the selected metric.
 ** ''Measurement'' - Drop-down menu with the available metrics.
 [[File:SNT-Distribution-Analysis.png|left|thumb|Distribution Analysis prompt]]
