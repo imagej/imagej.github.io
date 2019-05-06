@@ -201,6 +201,8 @@ The Path Manager dialog displays all existing paths in a hierarchical structure 
 **This operation cannot be undone. 
 ** Paths can only be downsampled: Smaller inter-node distances will not be interpolated. 
 ** It is advised to choose a value at least twice the smallest voxel separation.
+[[File:SNT-Path-Manager-Edit.png|right|thumb|"Edit" menu]]
+
 ===Tag===
 [[File:SNT-Path-Manager-Tag.png|right|thumb|"Tag" menu]]
 * '''Type''' Type of neurite compartment. SNT provides four basic types associated with neuronal structures, as well as the ability to define custom tags:
