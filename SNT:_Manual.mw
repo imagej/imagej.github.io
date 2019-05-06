@@ -243,12 +243,21 @@ This menu contains several options which provide quick ways to analyze and visua
 ** ''Rec. Viewer Color Map'' If active, opens an instance of the Reconstruction Viewer with the selected paths color coded with the selected LUT.
 ** ''Rec. Plotter Color Map'' If active, open an instance of the Reconstruction Plotter with the selected paths color coded with the selected LUT.
 ** ''Remove Existing Color Coding'' Removes existing color coding from the selected paths.
-[[File:SNT-Distribution-Analysis.png|right|thumb|Distribution Analysis prompt]]
-[[File:SNT-Branch-Order-Histogram.png|right|thumb|Branch Order histogram]]
+
 * '''Distribution Analysis''' Plot a histogram of the selected metric.
 ** ''Measurement'' - Drop-down menu with the available metrics.
+[[File:SNT-Distribution-Analysis.png|left|thumb|Distribution Analysis prompt]]
+[[File:SNT-Branch-Order-Histogram.png|center|thumb|Branch Order histogram]]
+{{clear}}
 * '''Measure''' Show a table of summary statistics for selected paths. If measuring multiple tracings, the table can be sorted by column.
-[[File:SNT-Path-Manager-Measurements.png|center|thumb|800px|Measurements table for OP_1]]
+[[File:SNT-Path-Manager-Measurements.png|left|thumb|1000px|Measurements table for OP_1]]
+{{clear}}
+* '''Convert to ROIs''' Allows conversion of paths to ROIs (Regions of Interest). Creates an instance of the [https://imagej.nih.gov/ij/docs/guide/146-30.html#fig:The-ROI-Manager ROI Manager]
+** ''Convert'' Drop-down menu specifying the compartment to convert.
+** ''View'' Drop-down menu specifying which view to overlay the ROIs.
+** ''Impose SWC colos''
+** ''Adopt path diameter as line thickness''
+** ''Discard existing ROIs in ROI Manager''
 
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling Walkthrough]]
