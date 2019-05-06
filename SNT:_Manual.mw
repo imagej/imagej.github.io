@@ -191,16 +191,35 @@ The Legacy 3D Viewer is a functional tracing canvas but it depends on outdated s
 The Path Manager dialog displays all existing paths in a hierarchical structure (tree), where one path is "primary" (path 0) and all other paths (paths 1...N) are children of the primary path. The dialog also contains several menus with various editing, tagging, refinement/fitting, filling and analysis options. Paths can be searched for and highlighted in the text filter by their names and/or tags.
 
 ===Edit===
-* '''Delete''' - Remove selected path(s) from the Path Manager. This will also delete them from the tracing and update the canvas accordingly.
-* '''Rename''' - Rename the selected path.
-* '''Make Primary''' - Make the selected path the primary path, moving it to the top of the tree. Note that this alters the path ordering.
-* '''Disconnect''' -  Disconnect the selected path from all of its connections.
-* '''Merge''' - Merge the selected paths (at least two) into one path. Note the starting node of path ''i'' is merged to the endpoint of path ''i+1''
-* '''Specify Radius''' - Specify a constant radius to be applied to all the nodes of selected path(s). This setting only applies to unfitted paths and overrides any existing values.
-* '''Ramer-Douglas-Peuker Downsampling''' - Given an inputted maximum permitted distance between nodes, perform [https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm Ramer-Douglas-Peucker] downsampling on the selected path(s). N.B.: 
+* '''Delete''' Remove selected path(s) from the Path Manager. This will also delete them from the tracing and update the canvas accordingly.
+* '''Rename''' Rename the selected path.
+* '''Make Primary''' Make the selected path the primary path, moving it to the top of the tree. Note that this alters the path ordering.
+* '''Disconnect'''  Disconnect the selected path from all of its connections.
+* '''Merge''' Merge the selected paths (at least two) into one path. Note the starting node of path ''i'' is merged to the endpoint of path ''i+1''
+* '''Specify Radius''' Specify a constant radius to be applied to all the nodes of selected path(s). This setting only applies to unfitted paths and overrides any existing values.
+* '''Ramer-Douglas-Peuker Downsampling''' Given an inputted maximum permitted distance between nodes, perform [https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm Ramer-Douglas-Peucker] downsampling on the selected path(s). N.B.: 
 **This operation cannot be undone. 
 ** Paths can only be downsampled: Smaller inter-node distances will not be interpolated. 
 ** It is advised to choose a value at least twice the smallest voxel separation.
+===Tag===
+* '''Type''' Type of neurite compartment. SNT provides four basic types associated with neuronal structures, as well as the ability to define custom tags:
+** ''Basal Dendrite''
+** ''Apical Dendrite''
+** ''Axon''
+** ''Custom''
+** ''Soma''
+** ''Undefined''
+* '''Color''' Assigns a color to selected paths. Custom colors can be chosen using the CMYK palette.
+* '''Image Metadata''' Tag path with any of three types of metadata:
+** ''Traced Channel''
+** ''Traced Frame''
+** ''Slice Labels''
+* '''Morphology''' Three morphometric properties:
+** ''Branch Order'' Centrifugal [https://www.mbfbioscience.com/help/nx11/Content/Branch%20order/Branch_Order.htm branch order] of the path.
+** ''Length'' - Path length.
+** ''Mean Radius'' - Path mean radius.
+* '''Custom''' Specify a custom tag string.
+* '''Remove All Tags''' Remove all tags from selected paths. SWC-type tags are preserved.
 
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling Walkthrough]]
