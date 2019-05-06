@@ -243,8 +243,21 @@ This menu contains several options which provide quick ways to analyze and visua
 ** ''Rec. Viewer Color Map'' If active, opens an instance of the Reconstruction Viewer with the selected paths color coded with the selected LUT.
 ** ''Rec. Plotter Color Map'' If active, open an instance of the Reconstruction Plotter with the selected paths color coded with the selected LUT.
 ** ''Remove Existing Color Coding'' Removes existing color coding from the selected paths.
-[[File:SNT-Path-Manager-Color-Mapper.png|left|thumb|Color Mapper]]
-[[File:SNT-Color-Mapped-OP1.png|center|thumb|OP_1 color coded by branch order]]
+<center>
+{|
+|-
+|
+|colspan="2" style="text-align:left;font-size:90%" |After choosing metric: Branch Order, LUT: Ice, showing the Reconstruction Viewer with the color-mapped OP_1 tracing. 
+|-
+| [[Image:SNT-Path-Manager-Color-Mapper.png|center|thumb|300px]]
+| [[Image:SNT-Color-Mapped-OP1.png|none|center|thumb|300px]]
+|-
+|style="text-align:center;font-size:90%" | Color Mapper prompt
+|style="text-align:center;font-size:90%" | OP_1 with color mapping
+|-
+|}
+</center>
+
 {{clear}}
 * '''Distribution Analysis''' Plots a histogram of the selected metric.
 ** ''Measurement'' - Drop-down menu with the available metrics.
