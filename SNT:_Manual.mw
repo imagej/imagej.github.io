@@ -226,6 +226,7 @@ The Path Manager dialog displays all existing paths in a hierarchical structure 
 * '''Remove All Tags''' Remove all tags from selected paths. SWC-type tags are preserved.
 
 ===Refine/Fit===
+[[File:Fit-manager.png|right|thumb|"Refine/Fit" menu]]
 See [[SNT:_Step-By-Step_Instructions#Fitting|Fitting]] in the Step-By-Step Instructions wiki page.
 
 ===Fill=== 
