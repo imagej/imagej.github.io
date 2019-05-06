@@ -234,6 +234,14 @@ See [[SNT:_Step-By-Step_Instructions#Fitting|Fitting]] in the Step-By-Step Instr
 [[File:SNT-Path-Manager-Fill.png|right|thumb|"Fill" menu]]
 * '''Fill Out''' Begins the filling process for selected paths. For detailed instructions see [[SNT:_Step-By-Step_Instructions#Filling|Filling]] in the Step-By-Step Instructions page.
 {{clear}}
+===Analyze===
+This menu contains several options which provide quick ways to analyze and visualize paths.
+* '''Color Coding''' Assign color codes to paths based one of twelve metrics. 
+** ''Color by'' Drop-down menu containing the metrics which color mapping is based off of. 
+** ''LUT'' Drop-down menu containing the LUTs (Look Up Tables) that define the color palettes. The LUTs are those that come packaged with ImageJ. The selected LUT is displayed in the color bar directly underneath.
+** ''Rec. Viewer Color Map'' If active, opens an instance of the Reconstruction Viewer with the selected paths color coded with the selected LUT.
+** ''Rec. Plotter Color Map'' If active, open an instance of the Reconstruction Plotter with the selected paths color coded with the selected LUT.
+** ''Remove Existing Color Coding'' Removes existing color coding from the selected paths.
 
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling Walkthrough]]
