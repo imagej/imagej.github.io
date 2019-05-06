@@ -220,6 +220,8 @@ The Path Manager dialog displays all existing paths in a hierarchical structure 
 ** ''Mean Radius'' - Path mean radius.
 * '''Custom''' Specify a custom tag string.
 * '''Remove All Tags''' Remove all tags from selected paths. SWC-type tags are preserved.
+===Refine/Fit===
+see [[https://imagej.net/SNT:_Step-By-Step_Instructions#Fitting Fitting]] in the Step-By-Step Instructions wiki page.
 
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling Walkthrough]]
