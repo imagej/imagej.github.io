@@ -236,14 +236,16 @@ See [[SNT:_Step-By-Step_Instructions#Fitting|Fitting]] in the Step-By-Step Instr
 {{clear}}
 ===Analyze===
 This menu contains several options which provide quick ways to analyze and visualize numerical properties of paths. 
-[[File:SNT-Path-Manager-Color-Mapper.png|right|thumb|Color Mapper]]
+
 * '''Color Coding''' Assign color codes to paths based on a metric. 
 ** ''Color by'' Drop-down menu containing the metrics which inform the color mapping. 
 ** ''LUT'' Drop-down menu containing the LUTs (Look Up Tables) that define the color palettes. The LUTs are those that come packaged with ImageJ. The selected LUT is displayed in the color bar directly underneath.
 ** ''Rec. Viewer Color Map'' If active, opens an instance of the Reconstruction Viewer with the selected paths color coded with the selected LUT.
 ** ''Rec. Plotter Color Map'' If active, open an instance of the Reconstruction Plotter with the selected paths color coded with the selected LUT.
 ** ''Remove Existing Color Coding'' Removes existing color coding from the selected paths.
+[[File:SNT-Path-Manager-Color-Mapper.png|left|thumb|Color Mapper]]
 [[File:SNT-Color-Mapped-OP1.png|center|thumb|OP_1 color coded by branch order]]
+{{clear}}
 * '''Distribution Analysis''' Plot a histogram of the selected metric.
 ** ''Measurement'' - Drop-down menu with the available metrics.
 [[File:SNT-Distribution-Analysis.png|left|thumb|Distribution Analysis prompt]]
