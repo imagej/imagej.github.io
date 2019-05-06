@@ -269,6 +269,7 @@ This menu contains several options which provide quick ways to analyze and visua
 * '''Skeletonize''' Creates a binary skeleton image from the selected paths.
 [[File:SNT-Path-Manager-Skeletonize.png]]
 [[File:SNT-Projected-Skeleton-OP1.png|Skeleton of OP_1, Z-projected]]
+* '''Save as SWC''' Exports selected paths as an [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html SWC] file. Note the paths must include a primary path (i.e., one a the top level in the Path Manager tree).
 
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling Walkthrough]]
