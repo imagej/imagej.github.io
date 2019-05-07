@@ -6,6 +6,8 @@ Logging is a technique for reporting messages and/or events during program execu
 
 See [[wikipedia:Java logging framework|Wikipedia's article on Java logging frameworks]] for further reading.
 
+See also this nice article: [https://stackify.com/logging-java/ The State of Logging in Java] (May 2018).
+
 == Why use a logging framework? What's wrong with <code>System.out.println</code>? ==
 
 First of all, <code>System.out.println</code> is rather verbose. But more importantly, it is a bit inflexible: you cannot explicitly specify metadata such as the "severity" or "level" of the message, an associated exception stack trace, the source of the message, or other details. And you cannot customize the logging behavior based on context (e.g., log certain kinds of messages to a file, while others go to stdout).
