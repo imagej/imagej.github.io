@@ -299,7 +299,7 @@ This menu contains several options which provide quick ways to analyze and visua
 |}
 </center>
 {{clear}}
-* '''Skeletonize''' Creates a binary skeleton image from the selected paths.
+* '''Skeletonize''' Outputs a binary image that is a topographic skeleton, ie, it generates an empty (zero-filled) image of the same dimensions of the one being traced, then paints a pixel at each node coordinates following the topographic rules of bitmap skeletons in which fork points, tips and slab voxels are determined by voxel connectivity.
 <center>
 {|
 |-
