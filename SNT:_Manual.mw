@@ -269,7 +269,7 @@ This menu contains several options which provide quick ways to analyze and visua
 </center>
 {{clear}}
 * '''Measure''' Shows a table of summary statistics for selected paths. If measuring multiple tracings, the table can be sorted by column.
-[[File:SNT-Path-Manager-Measurements.png|left|thumb|1000px|Measurements table for OP_1]]
+[[File:SNT-Path-Manager-Measurements.png|center|thumb|1000px|Measurements table for OP_1]]
 {{clear}}
 * '''Convert to ROIs''' Allows conversion of paths to ROIs (Regions of Interest). Creates an instance of the [https://imagej.nih.gov/ij/docs/guide/146-30.html#fig:The-ROI-Manager ROI Manager]
 ** ''Convert'' Drop-down menu specifying the compartment to convert.
