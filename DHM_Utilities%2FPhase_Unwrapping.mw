@@ -1,0 +1,41 @@
+{{Component
+| project = ImageJ
+| name    = Phase Unwrapping
+| source = {{GitHub | org=sudgy | repo=phase-unwrapping}}
+| license = [[LGPLv3]]
+| devStatus = {{DevStatus | developer=yes | incubating=no | obsolete=no}}
+| supportStatus = {{SupportStatus | debugger=yes | reviewer=yes | support=yes}}
+| founders = {{Person|David Cohoe}} ([mailto:dcohoe@pdx.edu])
+| leads = {{Person|David Cohoe}}
+| developers = {{Person|David Cohoe}}
+| debuggers = {{Person|David Cohoe}}
+| reviewers = {{Person|David Cohoe}}
+| support = {{Person|David Cohoe}}
+| maintainers = {{Person|David Cohoe}}
+}}
+
+Phase Unwrapping is a plugin to perform phase unwrapping on a phase image, with a focus on unwrapping images produced by DHM (possibly created using [[DHM Utilities/Reconstruction]]).  It currently has support for two different algorithms.  The first is a quality-guided unwrapping method, and the second is a double-wavelength unwrapping method.
+
+== Quality-Based Unwrapping ==
+
+The quality-based unwrapping algorithm works on the principle that some pixels should be considered "better" than others when it comes to how well they represent the true phase value of the image.  To determine these values, the algorithm uses a "quality" mapping which assigns a quality value to every pixel in the image.  Several quality types come built in to the plugin, and it is possible to create your own in your own plugins.
+
+To unwrap the image, the algorithm starts with the center pixel.  It then looks at the four adjacent pixels and picks the one with the highest quality, unwrapping it relative to itself.  It then looks at the six adjacent pixels and picks the one with the highest quality, unwrapping it relative to an adjacent pixel that has already been unwrapped with the highest quality.  This process repeats until the entire image has been unwrapped.
+
+To perform quality-based unwrapping, run the command "Plugins > DHM > Phase Unwrapping > Quality Guided".  Here is a description of all of the parameters:
+* Phase Image: The phase image that you want to unwrap.
+* Quality: What algorithm you wish to use to compute the quality mapping.  Depending on the quality type, it may add additional parameters that will appear directly after this one.
+* Single Frame: If the phase image is a stack, select this if you do not want to unwrap the whole stack.
+* Pixel Phase Value: The pixel value difference that represents one period in the phase.
+* Output Type: Image type for the output.  If 32-bit is selected, the scale will be the same as the original image.  If 32-bit radians is selected, the original scale will be scaled down to [0, 2π].
+* Show Progress: Show the progress during unwrapping.  This algorithm can take some time, especially with larger images, so this can be used to alleviate boredom while waiting.
+
+It is also possible to unwrap a single image or a stack of images programmatically using the <code>QualityUnwrappingOp</code> and <code>QualityUnwrappingStackOp</code> Ops.  See the documentation for more details on how to do this.
+
+=== Pre-defined Quality Types ===
+
+=== Creating a Custom Quality Type ===
+
+== Double Wavelength Unwrapping ==
+
+[[Category:Plugins]]
