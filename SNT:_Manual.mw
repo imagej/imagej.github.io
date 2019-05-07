@@ -112,7 +112,7 @@ The default color for each path type can be changed to any color in the [https:/
 
 The "Enforce default colors (ignore color tags)" option, if active, will force all paths to conform to the default colors specified by the "Selected" and "Deselected" color buttons. Any custom color tags will be ignored until the option is toggled OFF.
 
-Selected paths can be assigned custom color tags in the Path Manager. To do so, go to {{bc | Tag | Color}} then choose the desired swatch. Each path can be assigned any color. To change color of all paths, deselect all paths first.
+Selected paths can be assigned custom color tags in the Path Manager. To do so, go to {{bc | Tag | Color}} then choose the desired swatch. Each path can be assigned any color. To change color of all paths, deselect all paths first. Metric-based color mapping of paths can be done in the Path Manager through the {{bc|Analyze|Color Coding}} menu option. See [[SNT:_Overview#Analyze|here]].
 {{Tip| id = color-swatches|tip = Hover the mouse cursor over a color swatch to display a tooltip with its RGB value.}}
 {{clear}}
 <div align="center">
