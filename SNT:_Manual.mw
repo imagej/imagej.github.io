@@ -246,14 +246,10 @@ This menu contains several options which provide quick ways to analyze and visua
 <center>
 {|
 |-
-|
-|colspan="2" style="text-align:left;font-size:90%" |After choosing metric: Branch Order, LUT: Ice, showing the Reconstruction Viewer with the color-mapped OP_1 tracing. 
+|colspan="2" style="text-align:center;font-size:90%" |After choosing metric: Branch Order, LUT: Ice, showing the Reconstruction Viewer with the color-mapped OP_1 tracing. 
 |-
-| [[Image:SNT-Path-Manager-Color-Mapper.png|center|thumb|300px]]
-| [[Image:SNT-Color-Mapped-OP1.png|none|center|thumb|300px]]
-|-
-|style="text-align:center;font-size:90%" | Color Mapper prompt
-|style="text-align:center;font-size:90%" | OP_1 with color mapping
+| [[Image:SNT-Path-Manager-Color-Mapper.png|center|thumb|300px|Color Mapper prompt]]
+| [[Image:SNT-Color-Mapped-OP1.png|none|center|thumb|300px|OP_1 color-mapped]]
 |-
 |}
 </center>
@@ -261,8 +257,16 @@ This menu contains several options which provide quick ways to analyze and visua
 {{clear}}
 * '''Distribution Analysis''' Plots a histogram of the selected metric.
 ** ''Measurement'' - Drop-down menu with the available metrics.
-[[File:SNT-Distribution-Analysis.png|left|thumb|Distribution Analysis prompt]]
-[[File:SNT-Branch-Order-Histogram.png|center|thumb|Branch Order histogram]]
+<center>
+{|
+|-
+|colspan="2" style="text-align:center;font-size:90%" |Choosing Branch Order for the measurement. 
+|-
+| [[Image:SNT-Distribution-Analysis.png|center|thumb|300px|Distribution Analysis prompt]]
+| [[Image:SNT-Branch-Order-Histogram.png|none|center|thumb|250px|Branch Order histogram]]
+|-
+|}
+</center>
 {{clear}}
 * '''Measure''' Shows a table of summary statistics for selected paths. If measuring multiple tracings, the table can be sorted by column.
 [[File:SNT-Path-Manager-Measurements.png|left|thumb|1000px|Measurements table for OP_1]]
