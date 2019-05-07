@@ -315,7 +315,8 @@ This menu contains several options which provide quick ways to analyze and visua
 {{clear}}
 
 ===Text Filter===
-[[File:SNT-Path-Manager-Text-Filter.png|right|thumb]]
+[[File:SNT-Path-Manager-Text-Filter.png|right|thumb|Text Filter]]
+[[File:SNT-Path-Manager-Filtering-Menu.png|right|thumb|Advanced Filtering Menu]]
 The text filter allows paths to be searched by any characters in the path name string and by color. The name string includes all tags.
 
 =Fill Manager=
