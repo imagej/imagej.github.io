@@ -337,6 +337,12 @@ The Advanced Filtering Menu [[File:SNT-Text-Filter-Advanced-Button.png]] provide
 ** ''Display No. of Matches'' Displays the number of phrase matches in the bottom left corner of the Path Manager dialog.
 ** ''Replace'' Replaces all occurrences of the matched phrase in the path name string for currently selected paths. 
 ** ''Clear History'' Erases the previously searched phrases in the text filter drop-down menu.
+** ''Tips & Shortcuts''
+*** Case-insensitive by default. Wildcards ? (any character), and * (any string) can also be used.
+*** Press the ''Highlight All'' button or Ctrl+A to select all the paths filtered by the search string.
+*** Press and hold Ctrl while pressing the up/down keys to select multiple filtered paths.
+*** Press the up/down keys to find the next/previous occurrence of the filtering string.
+*** Uncheck ''Display No. of Matches'' to improve search performance.
 
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling Walkthrough]]
