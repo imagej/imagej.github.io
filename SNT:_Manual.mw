@@ -289,7 +289,15 @@ This menu contains several options which provide quick ways to analyze and visua
 </center>
 {{clear}}
 * '''Plot Profile''' Uses the pixel intensity values under point annotations to generate a pixel intensity vs. distance plot for selected paths.
-[[File:SNT-Path-Profile-Graph.png|left|thumb]]
+<center>
+{|
+|-
+|colspan="2" style="text-align:center;font-size:90%" |Intensity profile for Path 0 of OP_1. 
+|-
+| [[Image:SNT-Path-Profile-Graph.png|center|thumb|400px|]]
+|-
+|}
+</center>
 {{clear}}
 * '''Skeletonize''' Creates a binary skeleton image from the selected paths.
 [[File:SNT-Path-Manager-Skeletonize.png]]
