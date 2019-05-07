@@ -307,7 +307,7 @@ This menu contains several options which provide quick ways to analyze and visua
 <center>
 {|
 |-
-|colspan="2" style="text-align:center;font-size:90%" |Converting paths to topographic skeletons with default parameters.
+|colspan="2" style="text-align:center;font-size:90%" |Converting paths to a topographic skeleton with default parameters.
 |-
 | [[Image:SNT-Path-Manager-Skeletonize.png|center|thumb|300px|Skeletonize prompt]]
 | [[Image:SNT-Projected-Skeleton-OP1.png|none|center|thumb|250px|Skeleton of OP_1, Z-projected]]
