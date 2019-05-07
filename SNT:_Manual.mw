@@ -236,7 +236,7 @@ See [[SNT:_Step-By-Step_Instructions#Fitting|Fitting]] in the Step-By-Step Instr
 {{clear}}
 ===Analyze===
 This menu contains several options which provide quick ways to analyze and visualize numerical properties of paths. 
-
+[[File:SNT-Path-Manager-Analyze-Menu.png|right|thumb|"Analyze" menu]]
 * '''Color Coding''' Assigns color codes to paths based on the chosen metric. 
 ** ''Color by'' Drop-down menu containing the metrics which inform the color mapping. 
 ** ''LUT'' Drop-down menu containing the LUTs (Look Up Tables) that define the color palettes. The LUTs are those that come packaged with ImageJ. The selected LUT is displayed in the color bar directly underneath.
