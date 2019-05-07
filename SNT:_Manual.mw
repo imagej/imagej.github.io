@@ -331,8 +331,10 @@ The Advanced Filtering Menu [[File:SNT-Text-Filter-Advanced-Button.png]] provide
 * '''Text Filtering''' Contains options for advanced text filtering
 ** ''Case Sensitive Matching'' treats uppercase and lowercase characters as distinct.
 ** ''Enable Wildcards'' Allows the use of the question mark (?) and asterisk (*) wildcards.
-*** ''?''  Matches exactly one character. For example, the pattern 123? will match 123 and 1234, but not 12345. 
-*** ''*''  Matches zero or more characters. For example, doc* matches doc and document but not dodo.
+*** ''"?"''  Matches exactly one character. For example, the pattern 123? will match 123 and 1234, but not 12345. 
+*** ''"*"''  Matches zero or more characters. For example, doc* matches doc and document but not dodo.
+** ''Loop After First/Last Hit'' Cycles back to the first/last matched phrase upon pressing the Up/Down Arrow Button at the end of the list of matches.
+** ''Display No. of Matches'' Displays the number of phrase matches in the bottom left corner of the Path Manager dialog.
 
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling Walkthrough]]
