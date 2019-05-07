@@ -277,8 +277,16 @@ This menu contains several options which provide quick ways to analyze and visua
 ** ''Impose SWC colors''
 ** ''Adopt path diameter as line thickness''
 ** ''Discard existing ROIs in ROI Manager''
-[[File:SNT-Convert-To-ROIs.png|left|thumb]]
-[[File:SNT-ROI-Manager.png|center|thumb|ROI Manager]]
+<center>
+{|
+|-
+|colspan="2" style="text-align:center;font-size:90%" |Converting paths to ROIs with the default parameters. 
+|-
+| [[Image:SNT-Convert-To-ROIs.png|center|thumb|300px|Convert to ROIs prompt]]
+| [[Image:SNT-ROI-Manager.png|none|center|thumb|250px|ROI Manager]]
+|-
+|}
+</center>
 {{clear}}
 * '''Plot Profile''' Uses the pixel intensity values under point annotations to generate a pixel intensity vs. distance plot for selected paths.
 [[File:SNT-Path-Profile-Graph.png|left|thumb]]
