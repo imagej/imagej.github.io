@@ -335,6 +335,8 @@ The Advanced Filtering Menu [[File:SNT-Text-Filter-Advanced-Button.png]] provide
 *** ''"*"''  Matches zero or more characters. For example, doc* matches doc and document but not dodo.
 ** ''Loop After First/Last Hit'' Cycles back to the first/last matched phrase upon pressing the Up/Down Arrow Button at the end of the list of matches.
 ** ''Display No. of Matches'' Displays the number of phrase matches in the bottom left corner of the Path Manager dialog.
+** ''Replace'' Replaces all occurrences of the matched phrase in the path name string for currently selected paths. 
+** ''Clear History'' Erases the previously searched phrases in the text filter drop-down menu.
 
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling Walkthrough]]
