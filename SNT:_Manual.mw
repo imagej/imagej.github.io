@@ -213,7 +213,7 @@ The Path Manager dialog displays all existing paths in a hierarchical structure 
 ** ''Custom''
 ** ''Soma''
 ** ''Undefined''
-* '''Color''' Assigns a color to selected paths. Custom colors can be chosen using the CMYK palette.
+* '''Color''' Assigns a color to selected paths. Custom colors can be chosen using the CMYK palette or mapped using the Color Mapper.
 * '''Image Metadata''' Tag path with any of three types of metadata:
 ** ''Traced Channel''
 ** ''Traced Frame''
