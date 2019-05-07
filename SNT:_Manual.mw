@@ -300,8 +300,17 @@ This menu contains several options which provide quick ways to analyze and visua
 </center>
 {{clear}}
 * '''Skeletonize''' Creates a binary skeleton image from the selected paths.
-[[File:SNT-Path-Manager-Skeletonize.png]]
-[[File:SNT-Projected-Skeleton-OP1.png|Skeleton of OP_1, Z-projected]]
+<center>
+{|
+|-
+|colspan="2" style="text-align:center;font-size:90%" |Converting paths to topographic skeletons with default parameters.
+|-
+| [[Image:SNT-Path-Manager-Skeletonize.png|center|thumb|300px|Skeletonize prompt]]
+| [[Image:SNT-Projected-Skeleton-OP1.png|none|center|thumb|250px|Skeleton of OP_1, Z-projected]]
+|-
+|}
+</center>
+{{clear}}
 * '''Save as SWC''' Exports selected paths as an [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html SWC] file. Note the paths to be exported must include a primary path (i.e., one a the top level in the Path Manager tree).
 {{clear}}
 
