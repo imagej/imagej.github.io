@@ -271,7 +271,7 @@ This menu contains several options which provide quick ways to analyze and visua
 * '''Measure''' Shows a table of summary statistics for selected paths. If measuring multiple tracings, the table can be sorted by column.
 [[File:SNT-Path-Manager-Measurements.png|center|thumb|1000px|Measurements table for OP_1]]
 {{clear}}
-* '''Convert to ROIs''' Allows conversion of paths to ROIs (Regions of Interest). Creates an instance of the [https://imagej.nih.gov/ij/docs/guide/146-30.html#fig:The-ROI-Manager ROI Manager]
+* '''Convert to ROIs''' Allows conversion of paths to [https://imagej.nih.gov/ij/docs/guide/146-10.html#sec:Selections-Intro ROIs] (Regions of Interest). Creates an instance of the [https://imagej.nih.gov/ij/docs/guide/146-30.html#fig:The-ROI-Manager ROI Manager]
 ** ''Convert'' Drop-down menu specifying the compartment to convert.
 ** ''View'' Drop-down menu specifying which view to overlay the ROIs.
 ** ''Impose SWC colors''
