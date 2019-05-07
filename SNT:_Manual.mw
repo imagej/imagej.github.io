@@ -328,6 +328,11 @@ The text filter allows paths to be searched by any characters in the path name s
 ===Advanced Text Filtering===
 [[File:SNT-Path-Manager-Filtering-Menu.png|right|thumb|Advanced Filtering Menu]]
 The Advanced Filtering Menu [[File:SNT-Text-Filter-Advanced-Button.png]] provides more sophisticated means of filtering paths, including support for wildcards (?*), color and morphology tag matching.
+* '''Text Filtering''' Contains options for advanced text filtering
+** ''Case Sensitive Matching'' treats uppercase and lowercase characters as distinct.
+** ''Enable Wildcards'' Allows the use of the question mark (?) and asterisk (*) wildcards.
+*** ''?''  Matches exactly one character. For example, the pattern 123? will match 123 and 1234, but not 12345. 
+*** ''*''  Matches zero or more characters. For example, doc* matches doc and document but not dodo.
 
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling Walkthrough]]
