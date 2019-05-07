@@ -316,11 +316,14 @@ This menu contains several options which provide quick ways to analyze and visua
 
 ===Text Filter===
 [[File:SNT-Path-Manager-Text-Filter.png|right|thumb|Text Filter]]
-[[File:SNT-Path-Manager-Filtering-Menu.png|right|thumb|Advanced Filtering Menu]]
 The text filter allows paths to be searched by any characters in the path name string and by color. The name string includes all tags.
 * '''Up Arrow Button''' [[File:SNT-Text-Filter-Up-Arrow-Button.png]] Finds next occurrence of the entered phrase.
 * '''Down Arrow Button''' [[File:SNT-Text-Filter-Down-Arrow-Button.png]] Finds previous occurrence of the entered phrase.
 * '''Balloon Button''' [[File:SNT-Text-Filter-Balloon-Button.png]] Highlights all occurrences of the entered phrase.
+{{clear}}
+===Advanced Text Filtering===
+[[File:SNT-Path-Manager-Filtering-Menu.png|right|thumb|Advanced Filtering Menu]]
+The Advanced Filtering Menu [[File:SNT-Text-Filter-Advanced-Button.png]] provides more sophisticated means of filtering paths, including support for wildcards (?*), color and morphology tag matching.
 
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling Walkthrough]]
