@@ -356,6 +356,7 @@ The Advanced Filtering Menu [[File:SNT-Text-Filter-Advanced-Button.png]] provide
 ** ''No. of Nodes'' Filters for paths with node count within the inputted range.
 [[File:SNT-Path-Manager-Branch-Order-Filter.png|center|thumb]]
 [[File:SNT-Path-Manager-Length-Filter.png|center|none|thumb]]
+[[File:SNT-Path-Manager-Mean-Radius-Filter.png|center|none|thumb]]
 [[File:SNT-Path-Manager-Node-Count-Filter.png|center|none|thumb]]
 
 =Fill Manager=
