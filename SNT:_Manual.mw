@@ -355,11 +355,16 @@ The Advanced Filtering Menu [[File:SNT-Text-Filter-Advanced-Button.png]] provide
 ** ''Mean Radius'' Filters for paths of mean radius within the inputted range. Note that the paths of interest must have ''Mean Radius'' tags. To tag paths with their mean radius, use {{bc|Tag|Morphology|Mean Radius}}. See [[SNT:_Overview#Tag|Tag]] for more information.
 ** ''No. of Nodes'' Filters for paths with node count within the inputted range.
 ** ''SWC Type'' Filters for paths with the selected SWC type tags. Note that the paths of interest must have ''Type'' tags. To tag paths with SWC types, use {{bc|Tag|Type}}. See [[SNT:_Overview#Tag|Tag]] for more information.
-[[File:SNT-Path-Manager-Branch-Order-Filter.png|center|thumb]]
-[[File:SNT-Path-Manager-Length-Filter.png|center|none|thumb]]
-[[File:SNT-Path-Manager-Mean-Radius-Filter.png|center|none|thumb]]
-[[File:SNT-Path-Manager-Node-Count-Filter.png|center|none|thumb]]
-[[File:SNT-Path-Manager-SWC-Type-Filter.png|center|none|thumb]]
+
+<div align="center">
+<ul> 
+<li style="display:inline-block;"> [[Image:SNT-Path-Manager-Branch-Order-Filter.png|none|thumb|200px|1) Branch Order filter prompt]] </li>
+<li style="display:inline-block;"> [[Image:SNT-Path-Manager-Length-Filter.png|none|thumb|200px|2) Length filter prompt]] </li>
+<li style="display:inline-block;"> [[Image:SNT-Path-Manager-Mean-Radius-Filter.png|none|thumb|200px|3) Mean Radius filter prompt]] </li>
+<li style="display:inline-block;"> [[Image:SNT-Path-Manager-Node-Count-Filter.png|none|thumb|200px|4) No. of Nodes filter prompt]] </li>
+<li style="display:inline-block;"> [[Image:SNT-Path-Manager-SWC-Type-Filter.png|none|thumb|200px|5) SWC Type filter prompt]] </li>
+</ul>
+</div>
 
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling Walkthrough]]
