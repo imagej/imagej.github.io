@@ -66,6 +66,7 @@ Right-clicking on any of the image views will bring up a menu with various editi
 [[Image:SNT-Path-Edit-Right-Click-Menu.png|right|thumb|250px]]
 * '''Select Nearest Path''' Will select the path closest to the mouse cursor. Note that the nearest path may also be selected with the {{key|G}} key. {{key|Shift}} + {{key|G}} allow multiple paths be to selected.
 * '''Fork at Nearest Node''' Creates a fork point at the node closest to the mouse cursor. Note that this may also be accomplished by holding {{key|Shift}} + {{key|Alt}} and then left-clicking near the node. Once a fork point is made, the branch may be extended as described in [[SNT:_Step-By-Step_Instructions#Branching:_Start_A_Path_On_An_Existing_Path|III. Extend The Path]].
+* '''Continue Extending Path''' Allows continued tracing of previously finished paths. Note only one path may be extended at a time. To extend a path, select it first then place additional nodes as shown in [[SNT:_Step-By-Step_Instructions#II._Pick_A_Subsequent_Point| II. Pick A Subsequent Point]].
 
 == Filtered Image==
 see [[SNT:_Overview#Tracing_on_Filtered_Image|Tracing on Filtered Image]]
