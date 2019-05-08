@@ -354,10 +354,12 @@ The Advanced Filtering Menu [[File:SNT-Text-Filter-Advanced-Button.png]] provide
 ** ''Length'' Filters for paths of length within the inputted range. Note that the paths of interest must have ''Length'' tags. To tag paths with their length, use {{bc|Tag|Morphology|Length}}. See [[SNT:_Overview#Tag|Tag]] for more information. 
 ** ''Mean Radius'' Filters for paths of mean radius within the inputted range. Note that the paths of interest must have ''Mean Radius'' tags. To tag paths with their mean radius, use {{bc|Tag|Morphology|Mean Radius}}. See [[SNT:_Overview#Tag|Tag]] for more information.
 ** ''No. of Nodes'' Filters for paths with node count within the inputted range.
+** ''SWC Type'' Filters for paths with the selected SWC type tags. Note that the paths of interest must have ''Type'' tags. To tag paths with SWC types, use {{bc|Tag|Type}}. See [[SNT:_Overview#Tag|Tag]] for more information.
 [[File:SNT-Path-Manager-Branch-Order-Filter.png|center|thumb]]
 [[File:SNT-Path-Manager-Length-Filter.png|center|none|thumb]]
 [[File:SNT-Path-Manager-Mean-Radius-Filter.png|center|none|thumb]]
 [[File:SNT-Path-Manager-Node-Count-Filter.png|center|none|thumb]]
+[[File:SNT-Path-Manager-SWC-Type-Filter.png|center|none|thumb]]
 
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling Walkthrough]]
