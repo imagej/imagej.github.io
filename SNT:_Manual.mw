@@ -346,7 +346,7 @@ The Advanced Filtering Menu [[File:SNT-Text-Filter-Advanced-Button.png]] provide
 *** Uncheck ''Display No. of Matches'' to improve search performance.
 
 [[File:SNT-Path-Manager-Text-Filter-Color-Filters.png|right|thumb|]]
-* '''Color Filters''' Allows filtering of paths by color code. Custom colors may be selected by right-clicking an empty swatch, which will bring up the CMYK palette.
+* '''Color Filters''' Allows filtering of paths by color code. Custom colors may be selected by right-clicking an empty swatch, which will bring up the CMYK palette. The chosen color is temporarily saved in that swatch.
 
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling Walkthrough]]
