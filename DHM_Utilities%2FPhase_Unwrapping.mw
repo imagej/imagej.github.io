@@ -60,4 +60,24 @@ The <code>Quality</code> interface includes several default methods that you may
 
 == Double Wavelength Unwrapping ==
 
+The double wavelength unwrapping algorithm is based off of the double wavelength algorithm described in many places in the literature.  Given two images of the same thing in different wavelengths, the two images are subtracted, than anything less than zero is increased by one wavelength.  This result is called the coarse map.  This, in effect, changes the phase image into a phase image of a longer "beat frequency".  The idea is that sometimes the shortness of the wavelengths is an issue when it comes to unwrapping, and by producing a phase image of a longer wavelength, those issues can be avoided.  The algorithm is also much faster than other unwrapping algorithms.
+
+However, there are a few issues with the algorithm.  The first is that it amplifies the noise present in the original images.  To compensate for this, the algorithm can be extended.  The coarse map can be rounded to one of the individual wavelengths, and then the original image of that wavelength can be added.  This result is called the fine map.  In theory, this works well, but in practice, the coarse map never really lines up with one of the original images, and doing this process causes the whole image to be rounded and have sudden small jumps.
+
+Another issue is that the algorithm doesn't work that well in complicated situations.  We have not determined any exact reasons for why this is the case, but it might be due to how different wavelengths propagate differently near objects.  It has never worked in a place that a single-wavelength algorithm would have worked, so the only real advantage that this algorithm has after these issues is that it is faster.  It still has the problems of extra noise or extra rounding.
+
+There is still another issue: the final image can still be wrapped.  You can always use a single-wavelength unwrapping algorithm afterwards, but at that point, you might as well just use the single-wavelength algorithm in the first place.
+
+If you can find ways to improve our implementation of the algorithm, please let us know.
+
+To use this algorithm in ImageJ, run the command "Plugins > DHM > Phase Unwrapping > Double Wavelength".  Here is a description of all of the parameters:
+* Phase Image 1: The first phase image to use.
+* Wavelength 1: The wavelength of light used to create the first image.  There are no units on it because the actual value of the wavelength is not important, only the difference between it and the other wavelength is important.
+* Phase Image 2: The second phase image to use.
+* Wavelength 2: The wavelength of light used to create the second image.
+* Pixel Phase Value: The pixel value difference that represents one period in the phase.
+* Show Intermediate Steps: Whether or not to show all of the steps taken during the process.  It is mainly used for debug purposes, but it might help when trying to determine what is going on.  If it is off, only the coarse map and the fine map are shown.
+
+It is also possible to unwrap a single image or a stack of images programmatically using the DoubleWavelengthOp and DoubleWavelengthStackOp Ops. See the documentation for more details on how to do this.
+
 [[Category:Plugins]]
