@@ -62,8 +62,9 @@ If you're happy with that, confirming the temporary path will automatically comp
 Note that the path list indicates that this new path (1) ends on the existing one (0).
 
 ==Editing Paths==
-Right-clicking on any of the views will bring up a menu with various editing tools.
-[[Image:SNT-Path-Edit-Right-Click-Menu.png]]
+Right-clicking on any of the image views will bring up a menu with various editing tools.
+[[Image:SNT-Path-Edit-Right-Click-Menu.png|right|thumb|250px]]
+
 == Filtered Image==
 see [[SNT:_Overview#Tracing_on_Filtered_Image|Tracing on Filtered Image]]
 
