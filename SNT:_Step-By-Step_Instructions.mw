@@ -62,8 +62,10 @@ If you're happy with that, confirming the temporary path will automatically comp
 Note that the path list indicates that this new path (1) ends on the existing one (0).
 
 ==Editing Paths==
-Right-clicking on any of the image views will bring up a menu with various editing tools.
+Right-clicking on any of the image views will bring up a menu with various editing tools. The corresponding keyboard shortcuts are shown to the right of each option.
 [[Image:SNT-Path-Edit-Right-Click-Menu.png|right|thumb|250px]]
+* '''Select Nearest Path''' Will select the path closest to the mouse cursor. Note that the nearest path may also be selected with the {{key|G}} key. {{key|Shift}} + {{key|G}} allow multiple paths be to selected.
+* '''Fork at Nearest Node''' Creates a fork point at the node closest to the mouse cursor. Note that this may also be accomplished by holding {{key|Shift}} + {{key|Alt}} and then left-clicking near the node. Once a fork point is made, the branch may be extended as described in [[SNT:_Step-By-Step_Instructions#Branching:_Start_A_Path_On_An_Existing_Path|III. Extend The Path]].
 
 == Filtered Image==
 see [[SNT:_Overview#Tracing_on_Filtered_Image|Tracing on Filtered Image]]
