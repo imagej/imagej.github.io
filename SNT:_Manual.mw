@@ -348,5 +348,8 @@ The Advanced Filtering Menu [[File:SNT-Text-Filter-Advanced-Button.png]] provide
 [[File:SNT-Path-Manager-Text-Filter-Color-Filters.png|right|thumb|]]
 * '''Color Filters''' Allows filtering of paths by color code. Custom colors may be selected by right-clicking an empty swatch, which will bring up the CMYK palette. The chosen color is temporarily saved in that swatch.
 
+* '''Morphology Filters''' Allows filtering of paths by select morphological properties.
+** ''Branch Order''' Filters for paths belonging to branch orders in the input range. Note that the paths of interest must have branch order tags. [[File:SNT-Path-Manager-Branch-Order-Filter.png]]
+
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling Walkthrough]]
