@@ -76,6 +76,8 @@ Pressing ''Edit Path'' with a single path selected will activate Edit Mode, allo
 * '''Move Active Node to Cursor Position''' {{key|M}} Moves the active node to the cursor position.
 * '''Bring Active Node to Current Z-plane''' {{key|B}} Moves the active node to the current Z-plane in the image view. Note that the translation is only done in Z, X and Y coordinates are unchanged.
 
+{{clear}}
+
 == Filtered Image==
 see [[SNT:_Overview#Tracing_on_Filtered_Image|Tracing on Filtered Image]]
 
