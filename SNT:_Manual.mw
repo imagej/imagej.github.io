@@ -345,5 +345,8 @@ The Advanced Filtering Menu [[File:SNT-Text-Filter-Advanced-Button.png]] provide
 *** Press the up/down keys to find the next/previous occurrence of the filtering string.
 *** Uncheck ''Display No. of Matches'' to improve search performance.
 
+* '''Color Filters''' Allows filtering paths by color code. 
+[[File:SNT-Path-Manager-Text-Filter-Color-Filters.png|right|thumb|]]
+
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling Walkthrough]]
