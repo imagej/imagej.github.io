@@ -345,10 +345,10 @@ The Advanced Filtering Menu [[File:SNT-Text-Filter-Advanced-Button.png]] provide
 *** Press the up/down keys to find the next/previous occurrence of the filtering string.
 *** Uncheck ''Display No. of Matches'' to improve search performance.
 
-[[File:SNT-Path-Manager-Text-Filter-Color-Filters.png|right|thumb|"Color Filters" prompt]]
+[[File:SNT-Path-Manager-Text-Filter-Color-Filters.png|right|thumb|"Color Filters" menu]]
 * '''Color Filters''' Allows filtering of paths by color code. Custom colors may be selected by right-clicking an empty swatch, which will bring up the CMYK palette. The chosen color is temporarily saved in that swatch.
 {{clear}}
-[[File:SNT-Path-Manager-Morphology-Filters.png|right|thumb|"Morphology" filter menu]]
+[[File:SNT-Path-Manager-Morphology-Filters.png|right|thumb|"Morphology Filters" menu]]
 * '''Morphology Filters''' Allows filtering of paths by select morphological properties.
 ** ''Branch Order'' Filters for paths belonging to branch orders in the inputted range. Note that the paths of interest must have Branch Order tags. To tag paths with their centrifugal branch orders, use {{bc|Tag|Morphology|Branch Order}}. See [[SNT:_Overview#Tag|Tag]] for more information. [[File:SNT-Path-Manager-Branch-Order-Filter.png|right|thumb]]
 ** ''Length'' Filters for paths with length inside the inputted range. Note that the paths of interest must have Length tags. To tag paths with their length, use {{bc|Tag|Morphology|Length}}. See [[SNT:_Overview#Tag|Tag]] for more information. [[File:SNT-Path-Manager-Length-Filter.png|right|thumb]]
