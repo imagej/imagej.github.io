@@ -34,6 +34,22 @@ It is also possible to unwrap a single image or a stack of images programmatical
 
 === Pre-defined Quality Types ===
 
+==== None ====
+
+This assigns every pixel a quality value of zero.  The exact result this produces is unspecified, and should only be used if you have no residues (a closed curve whose line integral is not zero) whatsoever in your original image.
+
+==== Fringe Visibility ====
+
+Calculates the quality based on the [https://en.wikipedia.org/wiki/Interferometric_visibility Interferometric Visibility].  Higher visibility values correspond to higher quality values.  This quality type requires the hologram as an extra parameter.
+
+==== Gradient ====
+
+This calculates the quality based on the magnitude of the gradient of an arbitrary image.  A lower gradient value corresponds to a higher quality value.
+
+==== Phase Gradient ====
+
+This is similar to the gradient quality, but it uses the phase image and considers the wrapping of phase values in its calculations.  It is what the author has found to produce the best results out of all of the current quality types.
+
 === Creating a Custom Quality Type ===
 
 == Double Wavelength Unwrapping ==
