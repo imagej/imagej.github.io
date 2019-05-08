@@ -52,6 +52,12 @@ This is similar to the gradient quality, but it uses the phase image and conside
 
 === Creating a Custom Quality Type ===
 
+To create a custom quality type, you must first include this plugin as a dependency and then create a Scijava Plugin whose type is <code>Quality.class</code> and implements the <code>Quality</code> interface (or, preferably, extends <code>AbstractQuality</code>).  Once you have created the plugin class, it will automatically show up in the quality-guided unwrapping command.  The name of the plugin will be the string that shows up in the dialog.  The priority of the plugin will dictate where on the list it goes.
+
+The <code>Quality</code> interface includes several default methods that you may want to override.  For more information on what you need to do, please check the javadocs, which you can build from the github repository.
+
+<code>Quality</code> uses our custom [https://github.com/sudgy/dynamic-parameters Dynamic Parameters] to process inputs, because some of the parameters may change.  If you do not require any extra inputs in your quality type, you do not need to worry about using this.  However, if you do require extra inputs, you must override <code>param()</code> with your dynamic parameter.  If you require multiple parameters, you should use a <code>HoldingParameter</code> that has all of your parameters.
+
 == Double Wavelength Unwrapping ==
 
 [[Category:Plugins]]
