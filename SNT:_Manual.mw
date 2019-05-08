@@ -329,6 +329,7 @@ The text filter allows paths to be searched by any characters in the path name s
 [[File:SNT-Path-Manager-Filtering-Menu.png|right|thumb|"Advanced Filtering Menu"]]
 The Advanced Filtering Menu [[File:SNT-Text-Filter-Advanced-Button.png]] provides more sophisticated means of filtering paths, including support for wildcards (?*), color and morphology tag matching.
 [[File:SNT-Advanced-Text-Filtering-Text-Filtering-Menu.png|right|thumb|"Text Filtering" menu]]
+[[File:SNT-Path-Manager-Text-Filter-Replace-Prompt.png|right|thumb|"Replace" prompt]]
 * '''Text Filtering''' Contains options for advanced text filtering
 ** ''Case Sensitive Matching'' treats uppercase and lowercase characters as distinct.
 ** ''Enable Wildcards'' Allows the use of the question mark (?) and asterisk (*) wildcards.
