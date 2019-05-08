@@ -75,7 +75,7 @@ Pressing ''Edit Path'' with a single path selected will activate Edit Mode, allo
 * '''Insert New Node At Cursor Position''' {{key|I}} Inserts a new node at the cursor position. The inserted node is placed between the active node and the parent of the active node.
 * '''Move Active Node to Cursor Position''' {{key|M}} Moves the active node to the cursor position.
 * '''Bring Active Node to Current Z-plane''' {{key|B}} Moves the active node to the current Z-plane in the image view. Note that the translation is only done in Z. XY positions are unchanged.
-* '''Connect To (Start Join)''' Allows two existing paths to be merged. To do so, 1) select a path and enter Edit Mode, hovering over the node to join in order to activate it. 2) Select the second path and hover over the second join node to activate it. 3) Open the contextual menu and go to ''Connect To (Start Join)'' and choose the initial path from the list. Now the second path is a child of the first. Note that one of the connecting nodes must be a start or an end node.
+* '''Connect To (Start Join)''' Allows two existing paths to be merged. To do so, 1) select a path and enter Edit Mode, hovering over the node to join in order to activate it. 2) Select the second path and hover over the second join node to activate it. 3) Open the contextual menu and go to ''Connect To (Start Join)'' and choose the initial path. Now the second path is a child of the first. Note that one of the connecting nodes must be a start or an end node.
 <div align="center">
 <ul> 
 <li style="display:inline-block;"> [[Image:SNT-Edit-Path-Connect-To-Step-1.png|none|thumb|200px|1) Select parent path and activate first join node]] </li>
