@@ -6,7 +6,7 @@ These instructions assume that you have read the [[SNT: Overview]] page, includi
 
 ==I. Pick A Start Point==
 [[Image:Snt-cropped-before-starting-2.png|right|thumb|400px|Choosing a starting point]]
-You may notice that, by default, the cursor With [[SNT:_Overview#Auto-snapping|snaps]] to the brightest pixel in its vicinity. If you prefer to manually control the placement of nodes, feel free to toggle feature by pressing {{key|S}}. Now, to begin tracing, move through the image stack to find the start point of a path then click there with the left mouse button.
+You may notice that, by default, the cursor [[SNT:_Overview#Auto-snapping|snaps]] to the brightest pixel in its vicinity. If you prefer to manually control the placement of nodes, feel free to toggle feature by pressing {{key|S}}. Now, to begin tracing, move through the image stack to find the start point of a path then click there with the left mouse button.
 
 ==II. Pick A Subsequent Point==
 [[Image:Snt-cropped-after-starting-2.png|right|thumb|400px|First point of a path selected]]
