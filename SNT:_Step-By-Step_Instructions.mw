@@ -73,6 +73,8 @@ Pressing ''Edit Path'' with a single path selected will activate Edit Mode, allo
 * '''Reset Active Node''' Clears the active node from the mouse cursor.
 * '''Delete Active Node''' {{key|D}} or {{key|Backspace}} Permanently removes the active node from the path.
 * '''Insert New Node At Cursor Position''' {{key|I}} Inserts a new node at the cursor position. The inserted node is placed between the active node and the parent of the active node.
+* '''Move Active Node to Cursor Position''' {{key|M}} Moves the active node to the cursor position.
+* '''Bring Active Node to Current Z-plane''' {{key|B}} Moves the active node to the current Z-plane in the image view. Note that the translation is only done in Z, X and Y coordinates are unchanged.
 
 == Filtered Image==
 see [[SNT:_Overview#Tracing_on_Filtered_Image|Tracing on Filtered Image]]
