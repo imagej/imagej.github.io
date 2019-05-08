@@ -64,8 +64,8 @@ Note that the path list indicates that this new path (1) ends on the existing on
 ==Contextual Menu==
 Right-clicking on any of the image views will bring up a menu with various editing tools. The corresponding keyboard shortcuts are shown to the right of each option.
 [[Image:SNT-Path-Edit-Right-Click-Menu.png|right|thumb|250px]]
-* '''Select Nearest Path''' Will select the path closest to the mouse cursor. Note that the nearest path may also be selected with the {{key|G}} key. {{key|Shift}} + {{key|G}} allow multiple paths be to selected.
-* '''Fork at Nearest Node''' Creates a fork point at the node closest to the mouse cursor. Note that this may also be accomplished by holding {{key|Shift}} + {{key|Alt}} and then left-clicking near the node. Once a fork point is made, the branch may be extended as described in [[SNT:_Step-By-Step_Instructions#Branching:_Start_A_Path_On_An_Existing_Path|III. Extend The Path]].
+* '''Select Nearest Path''' {{key|G}} or {{key|Shift}}+{{key|G}} Will select the path closest to the mouse cursor. 
+* '''Fork at Nearest Node''' {{key|Shift}}+{{key|Alt}}+{{key|Left Click}} Creates a fork point at the node closest to the mouse cursor. Once a fork point is made, the branch may be extended as described in [[SNT:_Step-By-Step_Instructions#Branching:_Start_A_Path_On_An_Existing_Path|III. Extend The Path]].
 * '''Continue Extending Path''' Allows continued tracing of previously finished paths. Note only one path may be extended at a time. To extend a path, select it first then place additional nodes as shown in [[SNT:_Step-By-Step_Instructions#II._Pick_A_Subsequent_Point| II. Pick A Subsequent Point]].
 ===Editing Paths===
 Pressing ''Edit Path'' with a single path selected will activate Edit Mode, allowing use of the menu options under the ''Edit Path'' option. When ''Edit Mode'' is active, moving the mouse cursor along the path will activate the nearest node and synchronize the current Z-slice to the location of that node. Note that the ability to create new paths is temporarily disabled when in Edit Mode.
