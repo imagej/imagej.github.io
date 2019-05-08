@@ -25,3 +25,33 @@ Note that, for multiseries files (e.g. mvd2), the same calibration is used for a
 When in doubt, consult the [http://imagejdocu.tudor.lu/lib/exe/fetch.php?media=plugin:analysis:metroloj:metroloj.pdf MetroloJ Manual] for detailed protocols.   
 
 For OMERO stuff, you need the [https://www.openmicroscopy.org/omero/downloads/ OMERO Plugin for ImageJ].
+
+
+----
+
+
+'''References:'''
+
+
+Schneider, C. A.; Rasband, W. S. & Eliceiri, K. W. (2012), "NIH Image to ImageJ: 25 years of image analysis", Nature methods 9(7): 671-675, PMID 22930834
+
+Schindelin, J.; Arganda-Carreras, I. & Frise, E. et al. (2012), "Fiji: an open-source platform for biological-image analysis", Nature methods 9(7): 676-682, PMID 22743772, doi:10.1038/nmeth.2019
+
+
+
+'''Uses the following plugins:  '''
+
+bioformats (https://www.openmicroscopy.org/bio-formats/)  
+
+Melissa Linkert, Curtis T. Rueden, Chris Allan, Jean-Marie Burel, Will Moore, Andrew Patterson, Brian Loranger, Josh Moore, Carlos Neves, Donald MacDonald, Aleksandra Tarkowska, Caitlin Sticco, Emma Hill, Mike Rossner, Kevin W. Eliceiri, and Jason R. Swedlow (2010) Metadata matters: access to image data in the real world. The Journal of Cell Biology 189(5), 777-782. doi: 10.1083/jcb.201004104
+
+
+'''Uses code from:'''
+
+MetroloJ (http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:metroloj:start)  
+
+Cédric Matthews and Fabrice P. Cordelieres, MetroloJ : an ImageJ plugin to help monitor microscopes' health, in ImageJ User & Developer Conference 2010 proceedings
+
+TrackMate (https://imagej.net/TrackMate)  
+
+Tinevez, JY.; Perry, N. & Schindelin, J. et al. (2016), "TrackMate: An open and extensible platform for single-particle tracking.", Methods 115: 80-90, PMID 27713081
