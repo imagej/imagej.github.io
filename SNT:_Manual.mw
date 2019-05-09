@@ -159,7 +159,7 @@ If tracing on a multi-dimensional image (i.e., one with multiple data channels a
 
 ===UI Interaction===
 [[File:SNT-UI-interaction-widget.png|right|thumb|"UI Interaction" widget]]
-* '''Colors''' - The default color for the following items (can be changed to any color in the CMYK color model):
+* '''Colors''' The default color for the following items (can be changed to any color in the CMYK color model):
 ** <pre style="color: #FF0000;font-size:20px">Red</pre> Canvas annotations: these indicate the various possible states of the UI, and are shown in the top-left corner of the views ("Tracing Paused", "Choosing Sigma", etc...)
 ** <pre style="color: #008200;font-size:20px">Dark Green</pre> Fills: the pixels that have been reached by the Fill search.
 ** <pre style="color: #00FFFF;font-size:20px">Cyan</pre> Unconfirmed paths 
