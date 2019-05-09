@@ -223,6 +223,52 @@ To manually specify the field-of-view (FOV) of the target space, use [https://gi
 
 To make the scripts above appear in your Fiji Plugins menu, simply copy them into the <code>/plugins/Scripts folder</code> in your Fiji installation.
 
+==== Warp 2d ImageJ ROIs ====
+
+Download and install [https://github.com/saalfeldlab/bigwarp/blob/master/scripts/Apply_Bigwarp_Xfm_IjRoi2d.groovy this script]. 
+
+Usage:
+# Run the script downloadable above.
+# Indicate which open images correspond to the moving and fixed images in bigwarp.
+# Select the csv file that stores bigwarp landmarks.
+# Indicate whether you want to transform an ROI from moving to target space or vice versa.
+# Click OK.
+
+Note that the resulting ROI will be densely sampled. This is because an ROI with a particular shape may not have the same shape after being warped (i.e., a circle may not still be circular after being warped).  
+
+Example:
+In this example, we've chosen the boats sample as the moving image, the bridge sample as the target image, and have added some landmarks that transform the boats image.
+
+To warp an ROI from the moving boats image to the fixed bridge image, we run the script with the options:
+<blockquote>
+* Fixed image: boats
+* Moving image: bridge
+* Landmark file: <our landmarks file>
+* Moving to target
+</blockquote>
+
+The results are shown in the "Forward example" below.
+
+To warp an ROI from the moving boats image to the fixed bridge image, we run the script with the options:
+<blockquote>
+* Fixed image: boats
+* Moving image: bridge
+* Landmark file: <our landmarks file>
+* Target to moving
+</blockquote>
+
+The results are shown in the "Inverse example" below.
+
+{|
+| Forward example (click to expand)
+| Inverse example (click to expand)
+|-
+| [[Image:bigwarp_warp_roi_fwd.png|600px]]
+| [[Image:bigwarp_warp_roi_inv.png|600px]]
+|}
+
+Note, at this time ImageJ ROIs are 2D objects.  We recommend using another approach for 3D regions of interest.
+
 = Tutorials = 
 * An example of a 2d warping by [http://kiaru.eu/cv-rapide/ Nicolas Chiaruttini] in response to [https://forum.image.sc/t/superimpose-atlas-image-onto-microscope-picture/20593 this forum post]
 {{#widget:YouTube|id=zNur6mk9VXg|width=420}}
