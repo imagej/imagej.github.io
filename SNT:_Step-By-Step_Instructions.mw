@@ -48,19 +48,21 @@ From this point on, you can carry on adding nodes to the branched path as [[#II.
 </div>
 
 ==Joining: End A Path On An Existing Path==
-Supposing you want the end of a path that you're tracing to join onto an existing path, you just use the same modifier key when selecting the end point of the last part of the path. To go into that in more detail, if you're halfway through tracing a path like this:
-[[Image:Snt-ej-cropped-half-finished-2.png|center|thumb|400px|Unfinished join segment, in red - disconnected]]
-
-... and you want the final part of that path to join up with the existing path running from the top-left to top-right of the image. First, select that path in the path list, so that it turns green:
-[[Image:Snt-ej-cropped-selected-destination-path-2.png|center|thumb|400px|Selected path to join to, in green]]
-
-Now hold down {{key|Alt|Shift}} to restrict the endpoint to be a "join" on that existing path. Click (while still holding down the modifier keys) to start the search for that endpoint and make it join the existing path. If the search can find a path to the end point, the result should look like this:
-[[Image:Snt-ej-cropped-end-join-created-2.png|center|thumb|400px|Connected path to join, unconfirmed]]
-
-If you're happy with that, confirming the temporary path will automatically complete the whole path, since if you're creating an end join there cannot be any more to the path. The result will look like this:
-[[Image:Snt-ej-cropped-path-completed-2.png|center|thumb|400px|Confirmed join]]
-
-Note that the path list indicates that this new path (1) ends on the existing one (0).
+{|
+|-
+|
+Supposing you want the end of a path that you're tracing to join onto an existing path, you just use the same modifier key when selecting the end point of the last part of the path. To go into that in more detail, if you're halfway through tracing a path like [1]:
+|[[Image:Snt-ej-cropped-half-finished-2.png|center|thumb|350px|<span style="text-align:center;font-size:90%">[1] Unfinished join segment, in red - disconnected</span>]]
+|-
+|... and you want the final part of that path to join up with the existing path running from the top-left to top-right of the image. First, select that path in the path list (or using the {{key|G}} shortcut) as in [2]:
+|[[Image:Snt-ej-cropped-selected-destination-path-2.png|center|thumb|350px|<span style="text-align:center;font-size:90%">[2] Selected path to join to, in green</span>]]
+|-
+|Now hold down {{key|Alt|Shift}} to restrict the endpoint to be a "join" on that existing path. Click (while still holding down the modifier keys) to start the search for that endpoint and make it join the existing path. If the search can find a path to the end point, the result should look like [3]:
+|[[Image:Snt-ej-cropped-end-join-created-2.png|center|thumb|350px|<span style="text-align:center;font-size:90%">[3] Connected path to join, unconfirmed</span>]]
+|-
+|If you're happy with the result, confirming the temporary path will automatically complete the whole path, since if you're creating an end join there cannot be any more to the path. Note that the path list indicates that this new ''Path (1)'' ends on the existing ''Path (0)''. The result will look like [4]:
+|[[Image:Snt-ej-cropped-path-completed-2.png|center|thumb|350px|<span style="text-align:center;font-size:90%">[4] Confirmed join</span>]]
+|}
 
 =Fitting=
 [[File:Fit-manager.png|right|thumb]]
