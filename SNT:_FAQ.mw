@@ -38,6 +38,12 @@
 	<dl><dd>
 	[[Help:Contents#New_accounts|Create an account]] on this wiki. Once you have created one, you can edit contents at will. Don't be shy. All changes are undoable!
 	</dd></dl>
+	<li>
+	<span id="faq:swc"></span>'''What is a SWC file'''?
+	</li>
+	<dl><dd>
+	It is the most widely adopted format for encoding neuronal reconstructions, in which information is stored in plain text. It was first described by (Cannon et al., 1998) and since then became a somewhat loose ''lingua franca'' of a neuron's three dimensional structure. It is described in more detail [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html here] and [https://neuroinformatics.nl/swcPlus/ here]. SNT supports all known variants of the format including [https://www.nature.com/articles/sdata2017207 ESWC] and [https://neuroinformatics.nl/swcPlus/ SWC+]. The extension stems from the last names of Stockley, Wheal, and Cole, who developed a neat computer system for reconstructing neuronal cells ( Stockley et al., 1993). Confusingly, it is also a [https://en.wikipedia.org/wiki/Adobe_SWC_file deprecated file format] used by Adobe.
+	</dd></dl>
 </ol>
 
 (Return to the main [[SNT]] page)
