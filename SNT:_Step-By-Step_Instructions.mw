@@ -111,10 +111,10 @@ If you choose "New with image..." for Viewer and press "Apply", a prompt will ap
 [[File:SNT-Legacy-3D-Viewer.png|center|thumb|400px|3D viewer showing OP_1.tif]]
 
 ===II.Tracing and Navigation===
-* '''Select points for tracing''' - select the "Wand" tool in the main Fiji toolbar and click over the region you want to trace. Tracing works the same way as in the 2.5D view, i.e., click somewhere in the image to create a starting point, then click further along the structure of interest to find a path between the two points, then confirm or deny the temporary segment, etc...
-* '''Rotate the view''' - either use the "Hand" tool and left-click while dragging mouse ''or'' drag mouse while holding the scroll wheel.
-* '''Translate the image''' - hold {{key|Shift}} and the scroll wheel while dragging the mouse. 
-* '''Adjust zoom depth''' - scroll the mouse wheel.
+* '''Select points for tracing'''  Select the "Wand" tool in the main Fiji toolbar and click over the region you want to trace. Tracing works the same way as in the 2.5D view, i.e., click somewhere in the image to create a starting point, then click further along the structure of interest to find a path between the two points, then confirm or deny the temporary segment, etc...
+* '''Rotate the view'''  Either use the "Hand" tool and left-click while dragging mouse ''or'' drag mouse while holding the scroll wheel.
+* '''Translate the image''' Hold {{key|Shift}} and the scroll wheel while dragging the mouse. 
+* '''Adjust zoom depth''' Scroll the mouse wheel.
 Once you have selected each of these tools (Wand and Hand) once, you should be able to switch between them by pressing the {{key|Esc}} key.
 [[File:Fiji-toolbar-wand-and-hand-2.png]]
 
