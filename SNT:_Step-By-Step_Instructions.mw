@@ -2,13 +2,14 @@
 <div class="toclimit-3">
 
 =Tracing=
-These instructions assume that you have read the [[SNT: Overview]] page, including starting up the plugin, enabling [[SNT:_Overview#Auto-snapping|Cursor Auto-snapping]], and [[SNT:_Overview#Auto-tracing|Auto-tracing]] options.
+These instructions assume that you have read the [[SNT: Overview|Overview]] page, including starting up the plugin, enabling [[SNT:_Overview#Auto-snapping|Cursor Auto-snapping]], and [[SNT:_Overview#Auto-tracing|Auto-tracing]] options.
 
-==I. Pick A Start Point==
+==Starting A Path==
+===I. Pick The Starting Point===
 [[Image:Snt-cropped-before-starting-2.png|right|thumb|400px|Choosing a starting point]]
 You may notice that, by default, the cursor [[SNT:_Overview#Auto-snapping|snaps]] to the brightest pixel in its vicinity. If you prefer to manually control the placement of nodes, feel free to toggle feature by pressing {{key|S}}. Now, to begin tracing, move through the image stack to find the start point of a path then click there with the left mouse button.
 
-==II. Pick A Subsequent Point==
+===II. Pick A Subsequent Point===
 [[Image:Snt-cropped-after-starting-2.png|right|thumb|400px|First point of a path selected]]
 [[Image:Snt-cropped-mid-tracing-2.png|right|thumb|400px|A* search animated progress]]
 A small circle should appear, highlighting the start of the path. Move through the stack to find a subsequent point further along the same structure to be traced (neuron, blood vessel, etc.), and click there.
@@ -16,7 +17,7 @@ A small circle should appear, highlighting the start of the path. Move through t
 If a path between the two points cannot be found immediately, you may see the animated progress of the search. You can scroll through the stack while such a search progresses: If it appears to not be making good progress, it's probably best to press the "Cancel/Esc" button (shortcut: {{key|C}}/{{key|Esc}}) and pick a point closer to the start point.
 {{Tip| id = external-traces|tip = Increase''Z'' in the ''Cursor Auto-snapping'' panel for automated Z-navigation on signal mouseover.}}
 
-==III. Confirm A Temporary Segment==
+===III. Confirm The Temporary Segment===
 Once the search has reached the target point, the path is shown in cyan (to indicate that this is still a temporary path) and you are asked to confirm (by clicking "Yes" or pressing  {{key|Y}}) that this path is following the route through the image that you expect. If it is not, then click "No" {{key|N}} and you'll go back to the [[#II. Picking a Subsequent Point|previous step]]. Assuming you confirmed the path, the confirmed path will appear in red. Now you are essentially back at [[#II. Picking a Subsequent Point|step II]]. Normally you will go on to pick further points along the structure. However, if you have finished with that path, click "Finish Path" {{key|F}} and you will go back to [[#I. Picking a Start Point|step I]]. If you completed that path it would be shown in magenta.
 <div align="center">
 <ul> 
@@ -90,46 +91,6 @@ Pressing ''Edit Path'' with a single path selected will activate Edit Mode, allo
 
 {{clear}}
 
-== Filtered Image==
-see [[SNT:_Overview#Tracing_on_Filtered_Image|Tracing on Filtered Image]]
-
-==Legacy 3D Viewer==
-SNT comes bundled with a 3D viewer with visualization and tracing capabilities. 
-===I.Starting the Viewer===
-To open the viewer, navigate to the "3D" menu tab in the SNT dialog and look for "Legacy 3D Viewer". You will see 3 parameters:
-[[File:SNT-3D-Dialog.png|right|thumb|"Legacy 3D Viewer" widget]]
-* '''Viewer''' 
-** ''New with image'' - Instantiate viewer with the currently opened image. This enables one to trace in 3D as well as explore the image stack in an intuitive way.
-** ''New without image'' - Instantiate viewer without an image. Useful for visualizing reconstructions and surface meshes (WaveFront or STL). For more advanced use cases in this regard, see the dedicated [[SNT:_Reconstruction_Viewer|Reconstruction Viewer]]
-* '''Mode''' - the render style for the reconstruction
-** ''Lines and discs''
-** ''Lines'' - Render paths as nodes connected by 1D lines
-** ''Surface reconstructions'' - Render paths as tubular surfaces
-* '''Actions'''
-** ''Apply Color Labels''
-** ''Compare reconstruction against''
-If you choose "New with image..." for Viewer and press "Apply", a prompt will appear asking you to choose the resampling factor for the image.
-[[File:SNT-Image-Resampling-Factor.png|center|thumb]] Then, the viewer window will appear with the currently open image.
-
-[[File:SNT-Legacy-3D-Viewer.png|center|thumb|400px|3D viewer showing OP_1.tif]]
-
-===II.Tracing and Navigation===
-* '''Selecting points for tracing'''  Select the "Wand" tool in the main Fiji toolbar and click over the region you want to trace. Tracing works the same way as in the 2.5D view, i.e., click somewhere in the image to create a starting point, then click further along the structure of interest to find a path between the two points, then confirm or deny the temporary segment, etc...
-* '''Rotation'''  Either use the "Hand" tool and left-click while dragging mouse ''or'' drag mouse while holding the scroll wheel.
-* '''Translation''' Hold {{key|Shift}} and the scroll wheel while dragging the mouse. 
-* '''Adjusting zoom depth''' Scroll the mouse wheel.
-Once you have selected each of these tools (Wand and Hand) once, you should be able to switch between them by pressing the {{key|Esc}} key.
-[[File:Fiji-toolbar-wand-and-hand-2.png]]
-
-The following key shortcuts also work in the 3D Viewer:
-
-* {{key|Y}} confirm the temporary path segment
-* {{key|N}} cancel the temporary path segment
-* {{key|F}} complete the current path
-* {{key|G}} select the current path under the mouse pointer
-
-You can still create branches and joins in the 3D Viewer as you would in the 2D viewer.  First, select the path you want to branch off, or join to by pressing {{key|G}} while the mouse pointer is over that path.  (It should turn green.)  Then create the join or branch by holding down the join modifier key ({{key|Alt}} and clicking at the right point on the selected path.
-
 =Fitting=
 SNT can use the fluorescent signal around traced paths to optimize curvatures and estimate the thickness of traced structures. The optimization algorithm uses pixel intensities to fit circular cross-sections around each node. Once computed, fitted cross-sections can be used to: 1) Infer the radius of nodes, and/or 2) refine node positioning, by snapping their coordinates to the cross-section centroid. To fit path(s), select the desired paths in the Path Manager (or select none if you want to fit all paths) and go to the "Refine/Fit" menu in the same window. There are three options:
 [[File:Fit-manager.png|right|thumb]]
@@ -176,7 +137,7 @@ You can change the fill threshold in one of three ways:
 
 Anyway, assuming that you want to use the first of these approaches, you should use the approach described below. It is difficult to set the threshold accurately from the image unless you zoom in, so first zoom on part of the path that you want to set the threshold for.
 
-Since the the solid green fill obscures the intensity value of the points in the fill, I suggest that you switch to the semi-transparent view of the fill at this stage by selecting the "Transparent overlay" option in the "Rendering Options" dialog. Note that this may slow down filling.
+Since the solid green fill obscures the intensity value of the points in the fill, I suggest that you switch to the semi-transparent view of the fill at this stage by selecting the "Transparent overlay" option in the "Rendering Options" dialog. Note that this may slow down filling.
 
 As you can see in the middle image, the threshold is set too far from the path, since there are many completely dark points under the green fill, as well as points on different paths than those of interest. Experiment with clicking on different points closer to the path in order to adjust the threshold until you are happy with it. You might end up with something like the rightmost image:
 
@@ -198,4 +159,39 @@ If you are happy with this, then you might as well click "Pause" so that your co
 The image stack you would get from the image used in this example might look something like this:
 [[Image:Snt-filling-viewed-2.png|center|thumb|500px|Having selected the "Image Stack... -> As Grayscale Image..." option]]
 
-{{Clear}}
+==Legacy 3D Viewer==
+SNT comes bundled with a 3D viewer with visualization and tracing capabilities. 
+===I.Starting the Viewer===
+To open the viewer, navigate to the "3D" menu tab in the SNT dialog and look for "Legacy 3D Viewer". You will see 3 parameters:
+[[File:SNT-3D-Dialog.png|right|thumb|"Legacy 3D Viewer" widget]]
+* '''Viewer''' 
+** ''New with image'' - Instantiate viewer with the currently opened image. This enables one to trace in 3D as well as explore the image stack in an intuitive way.
+** ''New without image'' - Instantiate viewer without an image. Useful for visualizing reconstructions and surface meshes (WaveFront or STL). For more advanced use cases in this regard, see the dedicated [[SNT:_Reconstruction_Viewer|Reconstruction Viewer]]
+* '''Mode''' - the render style for the reconstruction
+** ''Lines and discs''
+** ''Lines'' - Render paths as nodes connected by 1D lines
+** ''Surface reconstructions'' - Render paths as tubular surfaces
+* '''Actions'''
+** ''Apply Color Labels''
+** ''Compare reconstruction against''
+If you choose "New with image..." for Viewer and press "Apply", a prompt will appear asking you to choose the resampling factor for the image.
+[[File:SNT-Image-Resampling-Factor.png|center|thumb]] Then, the viewer window will appear with the currently open image.
+
+[[File:SNT-Legacy-3D-Viewer.png|center|thumb|400px|3D viewer showing OP_1.tif]]
+
+===II.Tracing and Navigation===
+* '''Selecting points for tracing'''  Select the "Wand" tool in the main Fiji toolbar and click over the region you want to trace. Tracing works the same way as in the 2.5D view, i.e., click somewhere in the image to create a starting point, then click further along the structure of interest to find a path between the two points, then confirm or deny the temporary segment, etc...
+* '''Rotation'''  Either use the "Hand" tool and left-click while dragging mouse ''or'' drag mouse while holding the scroll wheel.
+* '''Translation''' Hold {{key|Shift}} and the scroll wheel while dragging the mouse. 
+* '''Adjusting zoom depth''' Scroll the mouse wheel.
+Once you have selected each of these tools (Wand and Hand) once, you should be able to switch between them by pressing the {{key|Esc}} key.
+[[File:Fiji-toolbar-wand-and-hand-2.png]]
+
+The following key shortcuts also work in the 3D Viewer:
+
+* {{key|Y}} confirm the temporary path segment
+* {{key|N}} cancel the temporary path segment
+* {{key|F}} complete the current path
+* {{key|G}} select the current path under the mouse pointer
+
+You can still create branches and joins in the 3D Viewer as you would in the 2D viewer.  First, select the path you want to branch off, or join to by pressing {{key|G}} while the mouse pointer is over that path.  (It should turn green.)  Then create the join or branch by holding down the join modifier key ({{key|Alt}} and clicking at the right point on the selected path.
