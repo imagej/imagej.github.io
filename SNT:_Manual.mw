@@ -185,7 +185,7 @@ The Legacy 3D Viewer is a functional tracing canvas but it depends on outdated s
 {{clear}}
 
 
-==Contextual Menu==
+=Contextual Menu=
 Right-clicking on any of the image views will bring up a menu with various editing tools. The corresponding keyboard shortcuts are shown to the right of each option.
 [[Image:SNT-Path-Edit-Right-Click-Menu.png|right|thumb|250px|Contextual Menu]]
 * '''Select Nearest Path''' {{key|G}} or {{key|Shift}}+{{key|G}} Will select the path closest to the mouse cursor. 
@@ -213,6 +213,7 @@ Pressing ''Edit Path'' with a single path selected will activate Edit Mode, allo
 </div>
 
 {{clear}}
+
 =Path Manager=
 [[File:SNT-Path-Manager.png|right|thumb|Path Manager]]
 The Path Manager dialog displays all existing paths in a hierarchical structure (tree), where one path is "primary" (path 0) and all other paths (paths 1...N) are children of the primary path. The dialog also contains several menus with various editing, tagging, refinement/fitting, filling and analysis options. Paths can be searched by name and/or tags in the text filter, with more sophisticated search capabilities in the Advanced Filtering Menu. 
