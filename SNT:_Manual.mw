@@ -214,11 +214,11 @@ The Path Manager dialog displays all existing paths in a hierarchical structure 
 ** ''Soma''
 ** ''Undefined''
 * '''Color''' Assigns the color shown in the swatch to selected paths. Custom colors can be manually chosen using the CMYK palette or mapped using the {{bc|Analyze|Color Coding}} option in the Path Manager.
-* '''Image Metadata''' Tag path with any of three types of metadata:
+* '''Image Metadata''' Tag paths with any of three types of metadata:
 ** ''Traced Channel''
 ** ''Traced Frame''
 ** ''Slice Labels''
-* '''Morphology''' Three morphometric properties:
+* '''Morphology''' Tag paths with any of three morphometric properties:
 ** ''Branch Order'' Centrifugal [https://www.mbfbioscience.com/help/nx11/Content/Branch%20order/Branch_Order.htm branch order] of the path.
 ** ''Length'' - Path length.
 ** ''Mean Radius'' - Path mean radius.
