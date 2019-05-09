@@ -35,5 +35,5 @@ def run():
 </source>
 
 ==Advanced Examples==
-The [https://github.com/fiji/Simple_Neurite_Tracer/tree/pyimagej/src/main/resources/script_templates/Neuroanatomy/pyimagej/notebooks Notebooks] directory in the SNT [https://github.com/fiji/Simple_Neurite_Tracer GitHub repository ] contains examples which can be executed on [https://mybinder.readthedocs.io/en/latest/ Binder].
-For example, to run the convex_hull notebook in Binder, follow this link: [https://mybinder.org/v2/gh/fiji/Simple_Neurite_Tracer/scijava?filepath=%2Fnotebooks%2Fconvex_hull.ipynb convex_hull.ipynb]
+The [https://github.com/fiji/Simple_Neurite_Tracer/tree/scijava/notebooks Notebooks] directory in the SNT [https://github.com/fiji/Simple_Neurite_Tracer GitHub repository] contains examples which are executable on [https://mybinder.readthedocs.io/en/latest/ Binder].
+For example, to run the convex_hull notebook via [https://mybinder.org/ mybinder.org], follow this link: [https://mybinder.org/v2/gh/fiji/Simple_Neurite_Tracer/scijava?filepath=%2Fnotebooks%2Fconvex_hull.ipynb convex_hull.ipynb]
