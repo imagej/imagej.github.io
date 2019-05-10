@@ -21,9 +21,9 @@ If a path between the two points cannot be found immediately, you may see the an
 Once the search has reached the target point, the path is shown in cyan (to indicate that this is still a temporary path) and you are asked to confirm (by clicking "Yes" or pressing  {{key|Y}}) that this path is following the route through the image that you expect. If it is not, then click "No" {{key|N}} and you'll go back to the [[#II. Picking a Subsequent Point|previous step]]. Assuming you confirmed the path, the confirmed path will appear in red. Now you are essentially back at [[#II. Picking a Subsequent Point|step II]]. Normally you will go on to pick further points along the structure. However, if you have finished with that path, click "Finish Path" {{key|F}} and you will go back to [[#I. Picking a Start Point|step I]]. If you completed that path it would be shown in magenta.
 <div align="center">
 <ul> 
-<li style="display:inline-block;"> [[Image:Snt-cropped-confirmation-2.png|none|thumb|250px|A* search completed]] </li>
-<li style="display:inline-block;"> [[Image:Snt-cropped-confirmed-2.png|none|thumb|250px|A confirmed segment]] </li>
-<li style="display:inline-block;"> [[Image:Snt-cropped-completed-path-2.png|none|thumb|250px|A completed path]] </li>
+<li style="display:inline-block;"> [[Image:Snt-cropped-confirmation-2.png|none|thumb|325px|A* search completed]] </li>
+<li style="display:inline-block;"> [[Image:Snt-cropped-confirmed-2.png|none|thumb|325px|A confirmed segment]] </li>
+<li style="display:inline-block;"> [[Image:Snt-cropped-completed-path-2.png|none|thumb|325px|A completed path]] </li>
 </ul>
 </div>
 
@@ -31,7 +31,7 @@ Once the search has reached the target point, the path is shown in cyan (to indi
 ==Branching: Start A Path On An Existing Path==
 ===I. Select The Path To Branch Off===
 To select the path you want to branch off from, you can either select it in the Path Manager, or press {{key|G}} while the mouse pointer is near the path. When the path is first selected, it will be shown in the default green color.
-[[Image:Snt-sb-selecting-by-G.gif|center|thumb|600px|[[SNT:_Key_Shortcuts#Path_Handling|Holding 'G']] will select the closest path to the mouse pointer]]
+[[Image:Snt-sb-selecting-by-G.gif|center|thumb|500px|[[SNT:_Key_Shortcuts#Path_Handling|Holding 'G']] will select the closest path to the mouse pointer]]
 
 ===II. Select The Fork Point===
 [[Image:Snt-sb-started-branch-2.png|right|thumb|400px|A newly created fork point]]
@@ -41,9 +41,9 @@ To force the start of the new path to be a branch of the selected path, hold dow
 From this point on, you can carry on adding nodes to the branched path as [[#II._Pick_A_Subsequent_Point|above]], i.e., Create a temporary path and confirm it. When you decide to complete the path you should see in the Path Manager that it has been recorded as a child of the existing path.
 <div align="center">
 <ul> 
-<li style="display:inline-block;"> [[Image:Snt-sb-temporary-path-2.png|none|thumb|250px|1) Temporary path branching-off]] </li>
-<li style="display:inline-block;"> [[Image:Snt-sb-confirmed-path-2.png|none|thumb|250px|2) Temporary path confirmed]] </li>
-<li style="display:inline-block;"> [[Image:Snt-sb-completed-branch-2.png|none|thumb|250px|3) Branched (child) path completed]] </li>
+<li style="display:inline-block;"> [[Image:Snt-sb-temporary-path-2.png|none|thumb|325px|1) Temporary path branching-off]] </li>
+<li style="display:inline-block;"> [[Image:Snt-sb-confirmed-path-2.png|none|thumb|325px|2) Temporary path confirmed]] </li>
+<li style="display:inline-block;"> [[Image:Snt-sb-completed-branch-2.png|none|thumb|325px|3) Branched (child) path completed]] </li>
 </ul>
 </div>
 
