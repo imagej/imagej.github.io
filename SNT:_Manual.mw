@@ -186,7 +186,7 @@ The Legacy 3D Viewer is a functional tracing canvas but it depends on outdated s
 
 =Contextual Menu=
 Right-clicking on any of the image views will bring up a menu with various editing tools. The corresponding keyboard shortcuts are shown to the right of each option.
-[[Image:SNT-Path-Edit-Right-Click-Menu.png|right|thumb|250px|Contextual Menu]]
+[[Image:SNT-Path-Edit-Right-Click-Menu.png|right|thumb|250px|Contextual menu]]
 * '''Select Nearest Path''' {{key|G}} or {{key|Shift}}+{{key|G}} Will select the path closest to the mouse cursor. 
 * '''Fork at Nearest Node''' {{key|Shift}}+{{key|Alt}}+{{key|Left Click}} Creates a fork point at the node closest to the mouse cursor. Once a fork point is made, the branch may be extended as described in [[SNT:_Step-By-Step_Instructions#Branching:_Start_A_Path_On_An_Existing_Path|III. Extend The Path]].
 * '''Continue Extending Path''' Allows continued tracing of previously finished paths. Note only one path may be extended at a time. To extend a path: first select it, choose this option, then place additional nodes as shown in [[SNT:_Step-By-Step_Instructions#II._Pick_A_Subsequent_Point| II. Pick A Subsequent Point]].
@@ -194,24 +194,20 @@ Right-clicking on any of the image views will bring up a menu with various editi
 * '''Pause Tracing''' Disables tracing functions until this option is inactivated. "Tracing Paused" [[SNT:_Overview#UI_Interaction|canvas annotations]] in the views indicate this state.
 * '''Sholl Analysis at Nearest Node''' {{key|Shift}}+{{key|Alt}}+{{Key|A}} Runs the [[Sholl_Analysis|Sholl Analysis]] plugin found in {{bc|Analyze|Sholl|Sholl Analysis (From Tracings)}}. Note the ''Center'' parameter, which sets the center point of the analysis, is left out as this value is given by the selected node.
 ===Editing Paths===
-Pressing ''Edit Path'' with a single path selected will activate Edit Mode, allowing use of the menu options under the ''Edit Path'' option. When ''Edit Mode'' is active, moving the mouse cursor along the path will activate the nearest node and synchronize the current Z-slice to the location of that node. Note that the ability to create new paths is temporarily disabled when in Edit Mode.
-[[Image:SNT-Path-Edit-Right-Click-Menu-Active.png|right|thumb|250px|Edit Mode active]]
+Pressing ''Edit Path'' with a single path selected will activate ''Edit Mode'', allowing use of the menu options under the ''Edit Path'' option. When ''Edit Mode'' is active, moving the mouse cursor along the path will activate the nearest node and synchronize the current Z-slice to the location of that node. Note that the ability to create new paths is temporarily disabled when in ''Edit Mode''.
+[[Image:SNT-Path-Edit-Right-Click-Menu-Active.png|right|thumb|250px]]
 * '''Reset Active Node''' Clears the active node from the cursor.
 * '''Delete Active Node''' {{key|D}} or {{key|Backspace}} Permanently removes the active node from the path.
 * '''Insert New Node At Cursor Position''' {{key|I}} Inserts a new node at the cursor position. The inserted node is placed between the active node and the parent of the active node.
 * '''Move Active Node to Cursor Position''' {{key|M}} Moves the active node to the cursor position.
 * '''Bring Active Node to Current Z-plane''' {{key|B}} Moves the active node to the current Z-plane in the image view. Note that the translation is only done in Z. XY positions are unchanged.
 * '''Connect To (Start Join)''' Allows two existing paths to be merged. To do so, 1) select a path and enter Edit Mode, hovering over the node to join in order to activate it. 2) Select the second path and hover over the second join node to activate it. 3) Open the contextual menu and go to ''Connect To (Start Join)'' and choose the initial path. Now the second path is a child of the first. Note that one of the connecting nodes must be a start or an end node.
-<div align="center">
-<ul> 
-<li style="display:inline-block;"> [[Image:SNT-Edit-Path-Connect-To-Step-1.png|none|thumb|200px|1) Select parent path and activate first join node]] </li>
-<li style="display:inline-block;"> [[Image:SNT-Edit-Path-Connect-To-Step-2.png|none|thumb|200px|2) Select second path and activate second join node]] </li>
-<li style="display:inline-block;"> [[Image:SNT-Edit-Path-Connect-To-Step-3.png|none|thumb|200px|3) Connect child path to parent path]] </li>
-<li style="display:inline-block;"> [[Image:SNT-Edit-Path-Connect-To-Result.png|none|thumb|200px|4) Joined paths result]] </li>
-</ul>
-</div>
-
-{{clear}}
+<div align="center"><ul> 
+<li style="display: inline-block;"> [[Image:SNT-Edit-Path-Connect-To-Step-1.png|thumb|none|250px|1) Select parent path and activate first join node]] </li>
+<li style="display: inline-block;"> [[Image:SNT-Edit-Path-Connect-To-Step-2.png|thumb|none|250px|2) Select child path and activate second join node]] </li>
+<li style="display: inline-block;"> [[Image:SNT-Edit-Path-Connect-To-Step-3.png|thumb|none|320px|3) Use contextual-menu option to connect child path to parent path]] </li>
+<li style="display: inline-block;"> [[Image:SNT-Edit-Path-Connect-To-Result.png|thumb|none|250px|4) Joined result<br>&nbsp;]] </li>
+</ul></div>
 
 =Path Manager=
 [[File:SNT-Path-Manager.png|right|thumb|Path Manager]]
