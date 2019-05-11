@@ -164,12 +164,12 @@ If tracing on a multi-dimensional image (i.e., one with multiple data channels a
 * '''Activate canvas on mouse hovering''' If active, moving the mouse cursor over the any of the views automatically brings the view window into focus, allowing it to receive input.
 
 ===Misc===
-[[File:SNT-misc-options.png|right|thumb|"Misc" widget]]
-* '''Remember window locations''' If active, preserves the position of dialogs across restarts.
-* '''Use compression when saving traces''' If active, uses [https://en.wikipedia.org/wiki/Gzip Gzip] compression (lossless) to reduce the storage footprint of the ".traces" file.
-* '''Skip confirmation dialogs''' If active, forgoes the "Are you sure?" prompt preceding major actions.
+* '''Skip confirmation dialogs''' If active, forgoes the ''Are you sure?'' prompt preceding major actions. Note that this option does not apply to irreversible actions such as deleting paths.
 * '''Debug mode''' If active, logs detailed information about actions in the console.
-The "Reset Preferences..." button, when pressed, will reset all options to their defaults. A restart of SNT may be required for changes to take effect.
+* '''Preferences...''' Allows setting other options, namely:
+** Whether the position of dialogs should be remembered across restarts
+** Whether [https://en.wikipedia.org/wiki/Gzip Gzip] compression (lossless) should be used to reduce the storage footprint of ".traces" files.
+** "Reset Preferences..." Allows the reset of all options to their defaults. A restart of SNT may be required for changes to take effect.
 
 == 3D Tab ==
 [[File:SNT-3D-Tab.png|right|thumb|300px|"3D" menu tab]]
