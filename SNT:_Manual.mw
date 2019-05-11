@@ -208,39 +208,25 @@ Pressing ''Edit Path'' with a single path selected will activate ''Edit Mode'', 
 The Path Manager dialog displays all existing paths in a hierarchical structure (tree), where one path is "primary" (path 0) and all other paths (paths 1...N) are children of the primary path. The dialog also contains several menus with various editing, tagging, refinement/fitting, filling and analysis options. Paths can be searched by name and/or tags in the text filter, with more sophisticated search capabilities in the Advanced Filtering Menu. 
 
 ===Edit===
-* '''Delete''' Remove selected path(s) from the Path Manager. This will also delete them from the tracing and update the canvas accordingly.
-* '''Rename''' Rename the selected path.
-* '''Make Primary''' Make the selected path the primary path, moving it to the top of the tree. Note that this alters the path ordering.
-* '''Disconnect'''  Disconnect the selected path from all of its connections.
-* '''Merge''' Merge the selected paths (at least two) into one path. Note the starting node of path ''i'' is merged to the endpoint of path ''i+1''
-* '''Specify Radius''' Specify a constant radius to be applied to all the nodes of selected path(s). This setting only applies to unfitted paths and overrides any existing values. 
+* '''Delete''' Removes selected path(s) from the Path Manager.
+* '''Rename''' Renames the selected path.
+* '''Make Primary''' Makes the selected path the primary path, moving it to the top of the tree. Note that this will alter the reconstruction topology.
+* '''Disconnect'''  Disconnects the selected path from all of its connections (Undoable operation)
+* '''Merge''' Merges the selected paths (at least two) into one. Note the starting node of path ''i'' is merged to the endpoint of path ''i+1''
+* '''Specify Radius''' Assigns a constant radius to all the nodes of selected path(s). This setting only applies to unfitted paths and overrides any existing values. 
 [[File:SNT-Path-Manager-Edit.png|right|thumb|200px|"Edit" menu]]
-* '''Ramer-Douglas-Peuker Downsampling''' Given an inputted maximum permitted distance between adjacent nodes, perform [https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm Ramer-Douglas-Peucker] downsampling on the selected path(s). N.B.: 
-**This operation cannot be undone. 
-** Paths can only be downsampled: Smaller inter-node distances will not be interpolated. 
-** It is advised to choose a value at least twice the smallest voxel separation.
-{{clear}}
+* '''Ramer-Douglas-Peuker Downsampling''' Given an inputted maximum permitted distance between adjacent nodes, performs [https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm Ramer-Douglas-Peucker] downsampling on the selected path(s).
 
 ===Tag===
-[[File:SNT-Path-Manager-Tag.png|right|thumb|"Tag" menu]]
-* '''Type''' Type of neurite compartment. SNT provides four basic types associated with neuronal structures, as well as the ability to define custom tags:
-** ''Basal Dendrite''
-** ''Apical Dendrite''
-** ''Axon''
-** ''Custom''
-** ''Soma''
-** ''Undefined''
-* '''Color''' Assigns the color shown in the swatch to selected paths. Custom colors can be manually chosen using the CMYK palette or mapped using the {{bc|Analyze|Color Coding}} option in the Path Manager.
-* '''Image Metadata''' Tag paths with any of three types of metadata:
-** ''Traced Channel''
-** ''Traced Frame''
-** ''Slice Labels''
-* '''Morphology''' Tag paths with any of three morphometric properties:
-** ''Branch Order'' Centrifugal [https://www.mbfbioscience.com/help/nx11/Content/Branch%20order/Branch_Order.htm branch order] of the path.
-** ''Length'' - Path length.
-** ''Mean Radius'' - Path mean radius.
-* '''Custom''' Specify a custom tag string.
-* '''Remove All Tags''' Remove all tags from selected paths. SWC-type tags are preserved.
+[[File:SNT-Path-Manager-Tag.png|right|thumb|]]
+Assigns tags to Paths. Tags are organized in the following categories:
+* '''Type''' Type of neurite compartment (''Axon'', ''(Basal) Dendrite'', etc.), as used by the SWC format. It is also possible to pair each type with a color tag by enabling the respective option in {{bc|Tag|Options..}}<br>These tags are considered to be essential annotations and all paths are assigned the ''Undefined''-type tag when created. For this reason they are not eliminated by the ''Remove All Tags'' command.
+* '''Color''' A preset swatch color, a custom one chosen from the color chooser.  Note that is also possible to assign mapping LUTs using the {{bc|Analyze|Color Coding}} command.
+* '''Image Metadata''' Information on hyperstack position details  (e.g., channel or frame on which a path was traced).
+* '''Morphology''' Morphometric properties, such as ''Path length'', ''Path mean radius'' or ''[[Strahler Analysis|branch order]]''.
+* '''Custom''' Ad-hoc comments.
+Note that only SWC-type tags are preserved across restarts when saving traces in the SWC format. All others require data to be saved in SNT's own .Traces format.
+
 
 ===Refine/Fit===
 [[File:Fit-manager.png|right|thumb|"Refine/Fit" menu]]
