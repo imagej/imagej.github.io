@@ -183,14 +183,16 @@ The Legacy 3D Viewer is a functional tracing canvas but it depends on outdated s
 {{clear}}
 
 
+=Menu Commands=
+
 =Contextual Menu=
 Right-clicking on any of the image views will bring up a menu with various editing tools. The corresponding keyboard shortcuts are shown to the right of each option.
 [[Image:SNT-Path-Edit-Right-Click-Menu.png|right|thumb|250px|Contextual menu]]
 * '''Select Nearest Path''' {{key|G}} or {{key|Shift}}+{{key|G}} Will select the path closest to the mouse cursor. 
-* '''Fork at Nearest Node''' {{key|Shift}}+{{key|Alt}}+{{key|Left Click}} Creates a fork point at the node closest to the mouse cursor. Once a fork point is made, the branch may be extended as described in [[SNT:_Step-By-Step_Instructions#Branching:_Start_A_Path_On_An_Existing_Path|III. Extend The Path]].
-* '''Continue Extending Path''' Allows continued tracing of previously finished paths. Note only one path may be extended at a time. To extend a path: first select it, choose this option, then place additional nodes as shown in [[SNT:_Step-By-Step_Instructions#II._Pick_A_Subsequent_Point| II. Pick A Subsequent Point]].
-* '''Pause SNT''' Disables core functionality until this option is inactivated. "SNT Paused" [[SNT:_Overview#UI_Interaction|canvas annotations]] in the views indicate this state.
-* '''Pause Tracing''' Disables tracing functions until this option is inactivated. "Tracing Paused" [[SNT:_Overview#UI_Interaction|canvas annotations]] in the views indicate this state.
+* '''Fork at Nearest Node''' {{key|Shift}}+{{key|Alt}}+{{key|Left Click}} Creates a fork point at the node closest to the mouse cursor. Once a fork point is made, the branch may be extended as described in [[SNT:_Step-By-Step_Instructions#Branching:_Start_A_Path_On_An_Existing_Path|Step-By-Step Instructions]].
+* '''Continue Extending Path''' Allows continued tracing of previously finished paths. Note only one path may be extended at a time. To extend a path: first select it, choose this option, then place additional nodes as shown in [[SNT:_Step-By-Step_Instructions#II._Pick_A_Subsequent_Point|Step-By-Step Instructions]].
+* '''Pause SNT''' Waives all keyboard and mouse inputs to ImageJ, allowing you to interleave image processing routines with tracing operations. Note that if the image contents change while SNT is paused, the image should be reloaded so that SNT is aware of the changes. Tracing views are annotated with the ''SNT Paused'' [[SNT:_Overview#UI_Interaction|label]] to indicate this state. 
+* '''Pause Tracing''' Disables tracing functions until this option is deselected. Tracing views are annotated with the ''Tracing Paused'' [[SNT:_Overview#UI_Interaction|label]] to indicate this state.
 * '''Sholl Analysis at Nearest Node''' {{key|Shift}}+{{key|Alt}}+{{Key|A}} Runs the [[Sholl_Analysis|Sholl Analysis]] plugin found in {{bc|Analyze|Sholl|Sholl Analysis (From Tracings)}}. Note the ''Center'' parameter, which sets the center point of the analysis, is left out as this value is given by the selected node.
 ===Editing Paths===
 [[Image:SNT-Path-Edit-Right-Click-Menu-Active.png|right|thumb|250px]]
