@@ -185,12 +185,12 @@ The following key shortcuts also work in the 3D Viewer:
 You can still create branches and joins in the 3D Viewer as you would in the 2D viewer.  First, select the path you want to branch off, or join to by pressing {{key|G}} while the mouse pointer is over that path.  (It should turn green.)  Then create the join or branch by holding down the join modifier key ({{key|Alt}} and clicking at the right point on the selected path.
 
 =Generating ''Filtered Images''=
-This section describes how to generate ''Filtered Images'' outside SNT. 
+This section describes how to generate [[SNT:_Overview#Tracing_on_Filtered_Image|Filtered Images]] outside SNT. 
 
 ====A Single Image====
 Note that the filtering used in this walk-through (''[[Frangi]] Vesselness'') is supported directly by SNT. However, this tutorial will assume you need to tweak SNT defaults.
 To process a single image with the Frangi Vesselness filter, pause SNT, and select {{bc | Process | Filters | Frangi Vesselness}}. By way of example, let's say you select two scales, twice the x voxel separation and five times that value. We apply a Gaussian convolution at each scale. Assuming your image has isotropic resolution with pixel width = pixel height = pixel depth = 1, the parameters would be:
-[[File:frangi-parameters.png|center|thumb|Frangi parameters]]
+[[File:frangi-parameters.png|center|thumb|]]
 Save the result using {{bc | File | Save As|Tiff...}} ("test-filtered.tif", for example). Then, in SNT's look for the "Tracing on Filtered Image" widget in the ''Main'' tab. Click "Browse" to specify the filtered image, and press "Load" from the ''Gear'' drop-down menu. Finally, toggle the "Trace on filtered Image" checkbox (you can do so using {{key|I}}. Now the pathfinding will occur on the filtered image.
 <div align="center">
 <ul> 
