@@ -183,3 +183,46 @@ The following key shortcuts also work in the 3D Viewer:
 * {{key|G}} select the current path under the mouse pointer
 
 You can still create branches and joins in the 3D Viewer as you would in the 2D viewer.  First, select the path you want to branch off, or join to by pressing {{key|G}} while the mouse pointer is over that path.  (It should turn green.)  Then create the join or branch by holding down the join modifier key ({{key|Alt}} and clicking at the right point on the selected path.
+
+=Generating ''Filtered Images''=
+This section describes how to generate ''Filtered Images'' outside SNT. 
+
+====A Single Image====
+Note that the filtering used in this walk-through (''[[Frangi]] Vesselness'') is supported directly by SNT. However, this tutorial will assume you need to tweak SNT defaults.
+To process a single image with the Frangi Vesselness filter, pause SNT, and select {{bc | Process | Filters | Frangi Vesselness}}. By way of example, let's say you select two scales, twice the x voxel separation and five times that value. We apply a Gaussian convolution at each scale. Assuming your image has isotropic resolution with pixel width = pixel height = pixel depth = 1, the parameters would be:
+[[File:frangi-parameters.png|center|thumb|Frangi parameters]]
+Save the result using {{bc | File | Save As|Tiff...}} ("test-filtered.tif", for example). Then, in SNT's look for the "Tracing on Filtered Image" widget in the ''Main'' tab. Click "Browse" to specify the filtered image, and press "Load" from the ''Gear'' drop-down menu. Finally, toggle the "Trace on filtered Image" checkbox (you can do so using {{key|I}}. Now the pathfinding will occur on the filtered image.
+<div align="center">
+<ul> 
+<li style="display:inline-block;"> [[Image:filtered-image-load.png|none|thumb|300px|Step 1]] </li>
+<li style="display:inline-block;"> [[Image:filtered-image-toggle.png|none|thumb|300px|Step 2]] </li>
+</ul>
+</div>
+To display the image in a separate window, from the SNT dialog go to {{bc | View | Show Filtered Image}}
+[[File:display-filtered-image.png|center|thumb|500px|Side-by-side original and filtered images]]
+
+====Preprocess Multiple Images====
+
+The easiest way to preprocess multiple images is to record a macro for processing a single image, then wrap it in a loop to iterate over all files in a directory. For example:
+
+<source lang="java">
+d = getDirectory("Select a directory");
+files = getFileList(d);
+
+extension = ".tif";
+
+for( i = 0; i < files.length; ++i ) {
+    filename = files[i];
+    if( endsWith(filename,extension) ) {
+        l = lengthOf(filename);
+        el = lengthOf(extension);
+        basename = substring(filename,0,l-el);
+        expected_window_name = "vesselness of "+filename;
+        output_filename = d + File.separator + basename + ".tubes.tif";
+        open(filename);
+        run("Frangi Vesselness (imglib, experimental)", "number=1 minimum=0.288387 maximum=0.288387");
+        selectWindow(expected_window_name);
+        saveAs("Tiff", output_filename);
+    }
+}
+</source>
