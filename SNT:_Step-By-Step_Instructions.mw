@@ -78,32 +78,6 @@ If both nodes were terminal paths are merged together, otherwise one will become
 <li style="display: inline-block;"> [[Image:SNT-Edit-Path-Connect-To-Result.png|thumb|none|250px|4) Joined result<br>&nbsp;]] </li>
 </ul></div>
 
-=Fitting=
-[[File:Fit-manager.png|right|thumb]]
-SNT can use the fluorescent signal around traced paths to optimize curvatures and estimate the thickness of traced structures. The optimization algorithm uses pixel intensities to fit circular cross-sections around each node. Once computed, fitted cross-sections can be used to: 1) Infer the radius of nodes, and/or 2) refine node positioning, by snapping their coordinates to the cross-section centroid. To fit path(s), select the desired paths in the Path Manager (or select none if you want to fit all paths) and go to the "Refine/Fit" menu in the same window. There are three options:
-
-* '''Fit Paths/Un-fit paths/Apply Existing Fit'''  This option will change depending on which paths are currently selected. You can use it to 1) Fit selected paths, 2) un-fit paths that have already been fitted, or 3) apply a generated preview of the fit.
-* '''Explore/Preview Fit''' Carves out a region of the image along and around each path node, generating an annotated image with the result of the fitting operation.
-* '''Discard Fit''' Deletes the existing fit(s) for the selected path(s), or all fits if no paths are selected.
-[[File:Fit-parameter-prompt.png|right|thumb|250px|Fitting parameters]]
-[[File:Explore-fit-preview.png|right|thumb|250px|Slice in "Explore/Preview Fit" image stack]]
-
-Before computing the fit, SNT will prompt you to specify two parameters:
-* '''Type of Refinement'''
-** 1) ''Assign radii of fitted cross-sections to nodes''
-** 2) ''Snap node coordinates to cross-section centroids''
-** 1) & 2) ''Assign fitted radii and snap node coordinates''
-* '''Max. Radius''' Defines (in pixels) the largest radius allowed in the fit. It constrains the optimization to minimize fitting artifacts caused by neighboring structures
-** Default = 40px on each side of the path
-
-Assuming you chose options 1) & 2) for "Type of Refinement", a fit path might look like the rightmost image below. Notice how the nodes follow the center line of the structure more closely, and how each node now has a non-zero radius approximating that of the traced axon.
-<div align="left">
-<ul> 
-<li style="display:inline-block;"> [[Image:Before-fitting.png|none|thumb|350px|Before fitting]] </li>
-<li style="display:inline-block;"> [[Image:After-fitting.png|none|thumb|350px|Fitted path]] </li>
-</ul>
-</div>
-
 =Filling=
 There is a simple facility in this plugin for "filling out" paths to volumes. This is not particularly sophisticated, but often good enough for a rough visualization of the shape of a neuron beyond what can be seen from the traced path.
 ===I.Starting the Fill===
@@ -121,7 +95,7 @@ The "Cursor position:" state under "Search Status" is updated as you move your m
 You can change the fill threshold in one of three ways:
 * Clicking on a point in the image that has been reached by the search (This is the most intuitive way of altering the threshold). It may be helpful to disable the "Enable Snapping within: XY-Z" feature for the cursor while doing this.
 * Manually changing the threshold in the "Specify manually:" input box and clicking the "Apply" button beside it.
-* Clicking the "Use explored maximum" button below the threshold input box and clicking "Apply", which sets the threshold to the maximum explored distance (the value shown in "Max. explored distance:" under the "Search Status" dialog).
+* Clicking the "Use explored maximum" button below the threshold input box and click "Apply", which sets the threshold to the maximum explored distance (the value shown in "Max. explored distance:" under the "Search Status" dialog).
 
 Anyway, assuming that you want to use the first of these approaches, you should use the approach described below. It is difficult to set the threshold accurately from the image unless you zoom in, so first zoom on part of the path that you want to set the threshold for.
 
@@ -142,7 +116,7 @@ As you can see in the middle image, the threshold is set too far from the path, 
 If you are happy with this, then you might as well click "Pause" so that your computer isn't spending all its CPU on continuing to explore the image. Then you can either: 
 * Save the fill (which will add it to the fill list) by clicking "Stash Progress". 
 * Discard the fill by either clicking "Stop" while filling is in progress or, if you stashed the fill, select it in the fill list and click "Delete Fill(s)". 
-* Use the "Image Stack..." button to view the same image stack, but with only the points in that fill preserved. You can choose either a grayscale image or binary mask. One reason why you might want to do this is that you can then smooth that image and use the [[3D Viewer]] to do a surface rendering of the neuron. Perhaps then you could overlay that onto a volume rendering of the complete image (see available [[Simple_Neurite_Tracer#Tutorials|tutorials]]). Or, you could save those fill stacks for each of the neurons you fill and then combine them in ImageJ using "RGB Merge".
+* Use the "Image Stack..." button to view the same image stack, but with only the points in that fill preserved. You can choose either a grayscale image or a binary mask. One reason why you might want to do this is that you can then smooth that image and use the [[3D Viewer]] to do a surface rendering of the neuron. Perhaps then you could overlay that onto a volume rendering of the complete image (see available [[Simple_Neurite_Tracer#Tutorials|tutorials]]). Or, you could save those fill stacks for each of the neurons you fill and then combine them in ImageJ using "RGB Merge".
 
 The image stack you would get from the image used in this example might look something like this:
 [[Image:Snt-filling-viewed-2.png|center|thumb|500px|Having selected the "Image Stack... -> As Grayscale Image..." option]]
@@ -200,7 +174,7 @@ Save the result using {{bc | File | Save As|Tiff...}} ("test-filtered.tif", for 
 To display the image in a separate window, from the SNT dialog use {{bc|Show Cached Image}} from the ''gear'' menu or {{bc | View | Show Filtered Image}}.
 [[File:display-filtered-image.png|center|thumb|500px|Side-by-side original and filtered images]]
 
-====Preprocess Multiple Images====
+====Multiple Images====
 The easiest way to preprocess multiple images is to record a macro for processing a single image, then wrap it in a loop to iterate over all files in a directory. For example, using IJ1 macro language:
 <source lang="java">
 d = getDirectory("Select a directory");
@@ -228,3 +202,5 @@ TBD:
 * FIXME: It is confusing that for single images we use {{bc | Process | Filters | Frangi Vesselness}} for multiple {{bc | Plugins | Process | Frangi Vesselness (imglib, experimental)}}
 * Update snapshots of the ''Filtered Images'' widget
 * Include IJ-ops example
+
+(Return to the main [[SNT]] page)
