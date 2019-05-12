@@ -14,6 +14,7 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 * {{bc|Import| Remote Databases|}} TBD
 * {{bc|Export (All Paths)}} TBD
 ===Scripts===
+TBD
 ===View===
 Contains commands for organizing tracing views on screen, plus commands for displaying cached data used for auto-tracing.
 
@@ -66,53 +67,26 @@ Other options are also available in the ''gear'' drop-down menu:
 * '''Cache All Hessian Computations''' By default SNT computes the Hessian matrix on a "compute-as-you-go" basis, which saves memory but increases the pathfinding time. If you have enough RAM, you can use this option to compute once the matrix and for the full image and cache the result, which in certain cases, can lead to almost-instantaneous searches. Note that this computation adopts the current values of sigma and max. reported in the widget, so you should adjust those before running this command.
 
 * '''Flush Cached Data''' Removes cached data from memory
-* '''Load Precomputed "Tubeness Image"''' This (advanced) option prompts you to load a file of a ''Tubeness image'' generated elsewhere. This is useful if e.g., you want to experiment algorithms from other software packages, or your own. Note that loaded image is assumed to have compatible dimensions with the image currently being traced.
+* '''Load Precomputed "Tubeness Image"''' This (advanced) option prompts you to load a file of a ''Tubeness image'' generated elsewhere. This is useful if e.g., you want o experiment algorithms from other software packages, or your own. Note that loaded image is assumed to have compatible dimensions with the image currently being traced.
 * '''Show Cached "Tubeness Image"''' Displays the ''Tubeness'' data currently cached. Useful for debugging purposes. Also mirrored in {{bc | View | Show Cached/Loaded Hessian (Tubeness) Image}}.
-[[File:original-hessian-side-by-side.png|center|thumb|600px|Original (left) and Hessian (right)]]
+[[File:original-hessian-side-by-side.png|center|thumb|600px|Original (left) and Hessian (right) TBD: Replace with MIPs]]
 
 ===Tracing on Filtered Image===
-SNT's "Hessian-based analysis" option provides a convenient and easy way to preprocess your data. However, if your data require tailored preprocessing, you may also trace on a user-specified filtered image. For example, one might use the [https://link.springer.com/content/pdf/10.1007%252FBFb0056195.pdf Frangi et al. 1998] method to enhance vessel-like structures in the image.
-====A Single Image====
-To process a single image with the Frangi Vesselness filter, load it ("test.tif", say) into Fiji and select {{bc | Process | Filters | Frangi Vesselness}}.  (There is more information about this plugin [[Frangi|on its page]].)  By way of example, let's say you select two scales, twice the x voxel separation and five times that value. We apply a Gaussian convolution at each scale. Assuming your image has isotropic resolution with pixel width = pixel height = pixel depth = 1, the parameters would be:
-[[File:frangi-parameters.png|center|thumb|Frangi parameters]]
-Save the result by doing {{bc | File | Save As}} with the same extension as the original image ("test-filtered.tif", for example). Then, with SNT open, go to the main dialog tab and look for the "Tracing on Filtered Image" widget. Click "Browse" to load the filtered image, select "SNT" for the parser and press "Load". Finally, toggle the "Trace on filtered Image" checkbox. Now the pathfinding will occur on the filtered image.
-<div align="center">
-<ul> 
-<li style="display:inline-block;"> [[Image:filtered-image-load.png|none|thumb|300px|Step 1]] </li>
-<li style="display:inline-block;"> [[Image:filtered-image-toggle.png|none|thumb|300px|Step 2]] </li>
-</ul>
-</div>
-To display the image in a separate window, from the SNT dialog go to {{bc | View | Show Filtered Image}}
-[[File:display-filtered-image.png|center|thumb|500px|Side-by-side original and filtered images]]
+This is one of SNT's most advanced features. "Hessian-based analysis" provides a convenient and easy way to perform auto-tracing on pre-process data in which voxels defining the traced structure are scored by their likelihood of ''belonging'' to a tube-like structure. However, it is just one approach for "tubeness" classification. What if your data requires different filtering?, or you want to experiment with other approaches?, or the perfect pre-processing algorithm for your images is not yet available in ImageJ? ''Tracing on Filtered Image'' is the answer to these questions: It allows you to feed SNT with pre-processed data on which the A*star search will operate. Here are two specific usages for this option:
+*'''Frangi ''Vesselness'' filtering''' For certain datasets Frangi filtering ([https://link.springer.com/content/pdf/10.1007%252FBFb0056195.pdf Frangi et al. 1998]) is more effective than [[Tubeness]] at enhancing tube-like structures in the image. However, it is more computation intensive, and thus, less suitable to be adopted by the "compute-as-needed" approach used in Hessian-based analysis. Thus, one can import a pre-computed Frangi-filtered image using this option.
+*'''Hessian-analysis at multiple scales''' Let's consider a structure formed simultaneously by very thick and very thin processes. To trace it one would need to adjust continuously the sigma parameter while tracing. Instead, to trace structures of variable diameters more effectively, the Hessian image associated with the second sigma could be loaded as ''Filtered Image''.
+*'''Adopting probability maps''' Pre-classified images (using e.g., machine learning) could also be loaded here.
 
-====Preprocess Multiple Images====
+Importantly, this option can be toggled at will, during tracing. Indeed, one can ping-pong between ''filtered image'' and tracing image simply, by pressing {{key|I}}, the shortcut for the ''Trace on filtered '''I'''mage'' checkbox.
 
-The easiest way to preprocess multiple images is to record a macro for processing a single image, then wrap it in a loop to iterate over all files in a directory. For example:
+'''Filtered Image options''' can be specified in the ''gear'' drop-down menu, including commands for Loading/displaying the image file and the powerful ''Generate Filtered Image'' command:
 
-<source lang="java">
-d = getDirectory("Select a directory");
-files = getFileList(d);
+TBD
 
-extension = ".tif";
+See the [[SNT:_Step-By-Step_Instructions#Generating_Filtered_Images|Generating Filtered Images walk-through]] for more details
 
-for( i = 0; i < files.length; ++i ) {
-    filename = files[i];
-    if( endsWith(filename,extension) ) {
-        l = lengthOf(filename);
-        el = lengthOf(extension);
-        basename = substring(filename,0,l-el);
-        expected_window_name = "vesselness of "+filename;
-        output_filename = d + File.separator + basename + ".tubes.tif";
-        open(filename);
-        run("Frangi Vesselness (imglib, experimental)", "number=1 minimum=0.288387 maximum=0.288387");
-        selectWindow(expected_window_name);
-        saveAs("Tiff", output_filename);
-    }
-}
-</source>
 
 ===Filters for Visibility of Paths===
-
 By default, the entire path is projected onto the current Z-slice. This is useful to see how much has been completed and gives a sense of the overall structure of the reconstruction. However, SNT provides 3 additional visibility options for paths:
 [[File:Path-visibility-filters.png|right|thumb|"Filters for visibility of paths" widget]]
 # '''Only selected paths (hide deselected)''' Only show paths that have been manually selected in the Path Manager or with the {{Key|G}} key ({{Key|Shift}}+{{Key|G}} to select multiple paths).
