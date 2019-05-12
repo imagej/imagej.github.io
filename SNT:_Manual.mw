@@ -336,9 +336,6 @@ The text filter allows paths to be searched by any characters in the path name s
 * '''Up Arrow Button''' [[File:SNT-Text-Filter-Up-Arrow-Button.png]] Finds next occurrence of the entered phrase.
 * '''Down Arrow Button''' [[File:SNT-Text-Filter-Down-Arrow-Button.png]] Finds previous occurrence of the entered phrase.
 * '''Balloon Button''' [[File:SNT-Text-Filter-Balloon-Button.png]] Highlights all occurrences of the entered phrase.
-{{clear}}
-
-[[File:SNT-Path-Manager-Filtering-Menu.png|right|thumb|"Advanced Filtering Menu"]]
 The Advanced Filtering Menu [[File:SNT-Text-Filter-Advanced-Button.png]] provides more sophisticated means of filtering paths, including support for wildcards (?*), color and morphology tag matching.
 [[File:SNT-Advanced-Text-Filtering-Text-Filtering-Menu.png|right|thumb|"Text Filtering" menu]]
 [[File:SNT-Path-Manager-Text-Filter-Replace-Prompt.png|right|thumb|"Replace" prompt]]
