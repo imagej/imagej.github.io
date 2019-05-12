@@ -197,8 +197,8 @@ Save the result using {{bc | File | Save As|Tiff...}} ("test-filtered.tif", for 
 <li style="display:inline-block;"> [[Image:filtered-image-toggle.png|none|thumb|300px|Step 2]] </li>
 </ul>
 </div>
-To display the image in a separate window, from the SNT dialog use {bc|Show Cached Image}} from the ''gear'' menu or {{bc | View | Show Filtered Image}}.
-[[File:display-filtered-image.png|center|thumb|500px|Side-by-side original and filtered images TBD: Replace with MPIs]]
+To display the image in a separate window, from the SNT dialog use {{bc|Show Cached Image}} from the ''gear'' menu or {{bc | View | Show Filtered Image}}.
+[[File:display-filtered-image.png|center|thumb|500px|Side-by-side original and filtered images]]
 
 ====Preprocess Multiple Images====
 The easiest way to preprocess multiple images is to record a macro for processing a single image, then wrap it in a loop to iterate over all files in a directory. For example, using IJ1 macro language:
@@ -224,5 +224,7 @@ for( i = 0; i < files.length; ++i ) {
 }
 </source>
 TBD: 
+* Use MIPs for side-by-side original and filtered images
 * FIXME: It is confusing that for single images we use {{bc | Process | Filters | Frangi Vesselness}} for multiple {{bc | Plugins | Process | Frangi Vesselness (imglib, experimental)}}
+* Update snapshots of the ''Filtered Images'' widget
 * Include IJ-ops example
