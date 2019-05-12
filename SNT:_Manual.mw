@@ -1,5 +1,7 @@
 (Return to the main [[SNT]] page)
 <div class="toclimit-3">
+=Startup Prompt=
+TBD
 =Main Dialog=
 ==Menu Commands==
 ===File===
@@ -83,7 +85,7 @@ Importantly, this option can be toggled at will, during tracing. Indeed, one can
 
 TBD
 
-See the [[SNT:_Step-By-Step_Instructions#Generating_Filtered_Images|Generating Filtered Images walk-through]] for more details.
+See the [[SNT:_Step-By-Step_Instructions#Generating_Filtered_Images|Generating Filtered Images]] walk-through for more details.
 
 ===Filters for Visibility of Paths===
 By default, the entire path is projected onto the current Z-slice. This is useful to see how much has been completed and gives a sense of the overall structure of the reconstruction. However, SNT provides 3 additional visibility options for paths:
@@ -167,7 +169,7 @@ This tab aggregates widgets related to 3D interaction.
 ===Reconstruction Viewer===
 The Reconstruction Viewer is an advanced OpenGL visualization tool. For performance reasons, some Path Manager changes may need to be synchronized manually from RV controls. To open Reconstruction Viewer with the currently loaded tracings, press ''Open Reconstruction Viewer''. For more information, see the Reconstruction Viewer wiki page.
 ===Legacy 3D Viewer===
-The Legacy 3D Viewer is a functional tracing canvas but it depends on outdated services that are now deprecated. It may not function reliably on recent operating systems. For usage instructions, see [[SNT:_Step-By-Step_Instructions#Legacy_3D_Viewer|Legacy 3D Viewer]]
+The Legacy 3D Viewer is a functional tracing canvas but it depends on outdated services that are now deprecated. It may not function reliably on recent operating systems. For usage instructions, see [[SNT:_Step-By-Step_Instructions#Tracing_in_the_Legacy_3D_Viewer|Tracing using the Legacy 3D Viewer]].
 ===SciView=== 
 [[SciView|SciView]] is IJ2's modern replacement for the Legacy 3D Viewer providing 3D visualization and virtual reality capabilities for both images and meshes. It is not yet available in SNT.
 {{clear}}
@@ -242,8 +244,8 @@ Assuming you chose to fit both centroids and radii, a fitted path might look lik
 
 ===Fill=== 
 [[File:SNT-Path-Manager-Fill.png|right|thumb|"Fill" menu]]
-* '''Fill Out''' Begins the filling process for selected paths. For detailed instructions see [[SNT:_Step-By-Step_Instructions#Filling|Filling]] in the Step-By-Step Instructions page.
-{{clear}}
+* '''Fill Out''' Begins the filling process for selected paths. For detailed instructions see [[SNT:_Step-By-Step_Instructions#Filling|Filling: Step-By-Step Instructions]].
+
 ===Analyze===
 This menu contains several options which provide quick ways to analyze and visualize numerical properties of paths. 
 [[File:SNT-Path-Manager-Analyze-Menu.png|right|thumb|"Analyze" menu]]
@@ -378,4 +380,4 @@ The Advanced Filtering Menu [[File:SNT-Text-Filter-Advanced-Button.png]] provide
 </div>
 
 =Fill Manager=
-Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling Walkthrough]]
+Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling: Step-By-Step Instructions]].
