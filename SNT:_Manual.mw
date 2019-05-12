@@ -72,7 +72,7 @@ Other options are also available in the ''gear'' drop-down menu:
 [[File:original-hessian-side-by-side.png|center|thumb|600px|Original (left) and Hessian (right) TBD: Replace with MIPs]]
 
 ===Tracing on Filtered Image===
-This is one of SNT's most advanced features. "Hessian-based analysis" provides a convenient and easy way to perform auto-tracing on pre-process data in which voxels defining the traced structure are scored by their likelihood of ''belonging'' to a tube-like structure. However, it is just one approach for "tubeness" classification. What if your data requires different filtering?, or you want to experiment with other approaches?, or the perfect pre-processing algorithm for your images is not yet available in ImageJ? ''Tracing on Filtered Image'' is the answer to these questions: It allows you to feed SNT with pre-processed data on which the A*star search will operate. Here are two specific usages for this option:
+This is one of SNT's most advanced features. [[#Auto-tracing|Hessian-based analysis]] provides a convenient and easy way to perform auto-tracing on pre-process data in which voxels defining the traced structure are scored by their likelihood of ''belonging'' to a tube-like structure. However, it is just one approach for "tubeness" classification. What if your data requires different filtering?, or you want to experiment with other approaches?, or the perfect pre-processing algorithm for your images is not yet available in ImageJ? ''Tracing on Filtered Image'' is the answer to these questions: It allows you to feed SNT with pre-processed data on which the A*star search will operate. Here are two specific usages for this option:
 *'''Frangi ''Vesselness'' filtering''' For certain datasets Frangi filtering ([https://link.springer.com/content/pdf/10.1007%252FBFb0056195.pdf Frangi et al. 1998]) is more effective than [[Tubeness]] at enhancing tube-like structures in the image. However, it is more computation intensive, and thus, less suitable to be adopted by the "compute-as-needed" approach used in Hessian-based analysis. Thus, one can import a pre-computed Frangi-filtered image using this option.
 *'''Hessian-analysis at multiple scales''' Let's consider a structure formed simultaneously by very thick and very thin processes. To trace it one would need to adjust continuously the sigma parameter while tracing. Instead, to trace structures of variable diameters more effectively, the Hessian image associated with the second sigma could be loaded as ''Filtered Image''.
 *'''Adopting probability maps''' Pre-classified images (using e.g., machine learning) could also be loaded here.
@@ -83,8 +83,7 @@ Importantly, this option can be toggled at will, during tracing. Indeed, one can
 
 TBD
 
-See the [[SNT:_Step-By-Step_Instructions#Generating_Filtered_Images|Generating Filtered Images walk-through]] for more details
-
+See the [[SNT:_Step-By-Step_Instructions#Generating_Filtered_Images|Generating Filtered Images walk-through]] for more details.
 
 ===Filters for Visibility of Paths===
 By default, the entire path is projected onto the current Z-slice. This is useful to see how much has been completed and gives a sense of the overall structure of the reconstruction. However, SNT provides 3 additional visibility options for paths:
