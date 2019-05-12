@@ -187,10 +187,13 @@ for( i = 0; i < files.length; ++i ) {
     }
 }
 </source>
-TBD: 
-* Use MIPs for side-by-side original and filtered images
-* FIXME: It is confusing that for single images we use {{bc | Process | Filters | Frangi Vesselness}} for multiple {{bc | Plugins | Process | Frangi Vesselness (imglib, experimental)}}
-* Update snapshots of the ''Filtered Images'' widget
-* Include IJ-ops example
+TBD:
+* Filtered Images
+** Use MIPs for side-by-side original and filtered images
+** FIXME: It is confusing that for single images we use {{bc | Process | Filters | Frangi Vesselness}} for multiple {{bc | Plugins | Process | Frangi Vesselness (imglib, experimental)}}
+** Update snapshots of the ''Filtered Images'' widget
+** Include IJ-ops example
+* Point-accuracy
+**Make new section based on [[Simple Neurite Tracer: Accurate point placement]]
 
 (Return to the main [[SNT]] page)
