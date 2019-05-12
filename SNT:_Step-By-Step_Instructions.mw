@@ -78,6 +78,33 @@ If both nodes were terminal paths are merged together, otherwise one will become
 <li style="display: inline-block;"> [[Image:SNT-Edit-Path-Connect-To-Result.png|thumb|none|250px|4) Joined result<br>&nbsp;]] </li>
 </ul></div>
 
+==Tracing in the Legacy 3D Viewer==
+It remains possible to trace in the legacy 3D Viewer. 
+[[File:SNT-3D-Dialog.png|right|thumb|"Legacy 3D Viewer" widget]]
+===I.Starting the Viewer===
+To open the viewer, select the ''3D'' menu tab in the SNT dialog and look for ''Legacy 3D Viewer''. You will see 3 parameters:
+[[File:SNT-Image-Resampling-Factor.png|right|thumb]]
+* Select ''New with image'' from the ''Viewer'' drop-down menu (selecting ''New without image'' would only allow you to look at reconstructions without the underlying signal). Note that you can recycle existing viewers you may have open by choosing there window titles from the drop-down menu.
+* Select the preferred rendering style from the ''Mode'' drop-down menu.
+* Once you ''Apply'' the viewer choice, a prompt will appear asking you to choose the resampling factor for the image. Then, the viewer window will appear with the currently open image.
+[[File:SNT-Legacy-3D-Viewer.png|right|thumb|300px|3D viewer showing OP_1.tif]]
+
+===II.Tracing and Navigation===
+* '''Selecting points for tracing'''  Select the "Wand" tool in the main Fiji toolbar and click over the region you want to trace. Tracing works the same way as in the 2.5D view, i.e., click somewhere in the image to create a starting point, then click further along the structure of interest to find a path between the two points, then confirm or deny the temporary segment, etc...
+* '''Rotation'''  Either use the "Hand" tool and left-click while dragging mouse ''or'' drag mouse while holding the scroll wheel.
+* '''Translation''' Hold {{key|Shift}} and the scroll wheel while dragging the mouse. 
+* '''Adjusting zoom depth''' Scroll the mouse wheel.
+Once you have selected each of these tools (Wand and Hand) once, you should be able to switch between them by pressing the {{key|Esc}} key.
+[[File:Fiji-toolbar-wand-and-hand-2.png|center]]
+
+The following key shortcuts also work in the 3D Viewer:
+
+* {{key|Y}} confirm the temporary path segment
+* {{key|N}} cancel the temporary path segment
+* {{key|F}} complete the current path
+* {{key|G}} select the current path under the mouse pointer
+
+You can still create branches and joins in the 3D Viewer as you would in the 2D viewer.  First, select the path you want to branch off, or join to by pressing {{key|G}} while the mouse pointer is over that path.  (It should turn green.)  Then create the join or branch by holding down the join modifier key ({{key|Alt}} and clicking at the right point on the selected path.
 =Filling=
 There is a simple facility in this plugin for "filling out" paths to volumes. This is not particularly sophisticated, but often good enough for a rough visualization of the shape of a neuron beyond what can be seen from the traced path.
 ===I.Starting the Fill===
@@ -120,43 +147,6 @@ If you are happy with this, then you might as well click "Pause" so that your co
 
 The image stack you would get from the image used in this example might look something like this:
 [[Image:Snt-filling-viewed-2.png|center|thumb|500px|Having selected the "Image Stack... -> As Grayscale Image..." option]]
-
-==Legacy 3D Viewer==
-SNT comes bundled with a 3D viewer with visualization and tracing capabilities. 
-===I.Starting the Viewer===
-To open the viewer, navigate to the "3D" menu tab in the SNT dialog and look for "Legacy 3D Viewer". You will see 3 parameters:
-[[File:SNT-3D-Dialog.png|right|thumb|"Legacy 3D Viewer" widget]]
-* '''Viewer''' 
-** ''New with image'' - Instantiate viewer with the currently opened image. This enables one to trace in 3D as well as explore the image stack in an intuitive way.
-** ''New without image'' - Instantiate viewer without an image. Useful for visualizing reconstructions and surface meshes (WaveFront or STL). For more advanced use cases in this regard, see the dedicated [[SNT:_Reconstruction_Viewer|Reconstruction Viewer]]
-* '''Mode''' - the render style for the reconstruction
-** ''Lines and discs''
-** ''Lines'' - Render paths as nodes connected by 1D lines
-** ''Surface reconstructions'' - Render paths as tubular surfaces
-* '''Actions'''
-** ''Apply Color Labels''
-** ''Compare reconstruction against''
-If you choose "New with image..." for Viewer and press "Apply", a prompt will appear asking you to choose the resampling factor for the image.
-[[File:SNT-Image-Resampling-Factor.png|center|thumb]] Then, the viewer window will appear with the currently open image.
-
-[[File:SNT-Legacy-3D-Viewer.png|center|thumb|400px|3D viewer showing OP_1.tif]]
-
-===II.Tracing and Navigation===
-* '''Selecting points for tracing'''  Select the "Wand" tool in the main Fiji toolbar and click over the region you want to trace. Tracing works the same way as in the 2.5D view, i.e., click somewhere in the image to create a starting point, then click further along the structure of interest to find a path between the two points, then confirm or deny the temporary segment, etc...
-* '''Rotation'''  Either use the "Hand" tool and left-click while dragging mouse ''or'' drag mouse while holding the scroll wheel.
-* '''Translation''' Hold {{key|Shift}} and the scroll wheel while dragging the mouse. 
-* '''Adjusting zoom depth''' Scroll the mouse wheel.
-Once you have selected each of these tools (Wand and Hand) once, you should be able to switch between them by pressing the {{key|Esc}} key.
-[[File:Fiji-toolbar-wand-and-hand-2.png]]
-
-The following key shortcuts also work in the 3D Viewer:
-
-* {{key|Y}} confirm the temporary path segment
-* {{key|N}} cancel the temporary path segment
-* {{key|F}} complete the current path
-* {{key|G}} select the current path under the mouse pointer
-
-You can still create branches and joins in the 3D Viewer as you would in the 2D viewer.  First, select the path you want to branch off, or join to by pressing {{key|G}} while the mouse pointer is over that path.  (It should turn green.)  Then create the join or branch by holding down the join modifier key ({{key|Alt}} and clicking at the right point on the selected path.
 
 =Generating ''Filtered Images''=
 This section describes how to generate [[SNT:_Overview#Tracing_on_Filtered_Image|Filtered Images]] outside SNT. Note that the filtering used in this walk-through (''[[Frangi]] Vesselness'') is already supported directly by SNT. This tutorial will assume you need to perform the filtering with adjusted parameters.
