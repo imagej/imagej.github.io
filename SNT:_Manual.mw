@@ -4,7 +4,7 @@
 [[Image:SNT-Startup-Prompt.png|right|thumb]]
 
 * '''Image'''/'''Image File''' Allows selection of the image to display in the views. If an image is already displayed in ImageJ, it may be selected in the drop-down menu. Alternatively, an image path may be specified by clicking ''Browse'' and choosing the image in the File Explorer. If no image is chosen, SNT will create an empty display canvas from the computed bounding box of the reconstruction file (if provided). If no reconstruction is provided, no placeholder image is created.
-* '''Reconstrucion file''' The reconstruction file to import. If an image is loaded, the reconstruction is rendered on the image. Otherwise, it is rendered in an empty display canvas.
+* '''Reconstrucion file''' The path of the reconstruction file to import. If an image is loaded, the reconstruction is rendered on the image. Otherwise, it is rendered in an empty display canvas.
 * '''User interface''' Specifies which views to display. The default setting provides the XY, ZY and XZ views. Memory and screen space can be saved by choosing the ''Only XY view'' option.
 * '''Tracing Channel''' Specifies the image channel to trace on. If tracing on a single-channel image, leave this option as the default value (1).
 
