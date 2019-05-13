@@ -41,6 +41,9 @@ Updates will be downloaded to <code>Fiji.app/updates</code>.  The launcher is mo
 * in case there are updates, <code>net.imagej.ui.swing.updater.ImageJUpdater</code> is called
 * <code>ImageJUpdater</code> is the command creating the graphical user interfaces for dealing with updated files and update site URLs
 
+=== Changes on V2 ===
+* In case there are updates, <code>UpToDate</code> will tell the <code>UpdateService</code> which can be used to open the ImageJUpdater directly or just trigger a notification indicator in the UI
+
 == The official list of update sites ==
 
 You can access the list of official update sites here: https://imagej.github.io/list-of-update-sites/. Anything on this list can be installed from Fiji by opening the updater, clicking <code>Manage update sites</code> and clicking the check mark of the list entry.
