@@ -331,40 +331,16 @@ This menu contains several options which provide quick ways to analyze and visua
 {{clear}}
 
 ==Filter Toolbar==
-[[File:SNT-Path-Manager-Text-Filter.png|right|thumb|Text Filter]]
-The text filter allows paths to be searched by any characters in the path name string and by color. The name string includes all tags.
-* '''Up Arrow Button''' [[File:SNT-Text-Filter-Up-Arrow-Button.png]] Finds next occurrence of the entered phrase.
-* '''Down Arrow Button''' [[File:SNT-Text-Filter-Down-Arrow-Button.png]] Finds previous occurrence of the entered phrase.
-* '''Balloon Button''' [[File:SNT-Text-Filter-Balloon-Button.png]] Highlights all occurrences of the entered phrase.
-The Advanced Filtering Menu [[File:SNT-Text-Filter-Advanced-Button.png]] provides more sophisticated means of filtering paths, including support for wildcards (?*), color and morphology tag matching.
-[[File:SNT-Advanced-Text-Filtering-Text-Filtering-Menu.png|right|thumb|"Text Filtering" menu]]
-[[File:SNT-Path-Manager-Text-Filter-Replace-Prompt.png|right|thumb|"Replace" prompt]]
-* '''Text Filtering''' Contains options for advanced text filtering
-** ''Case Sensitive Matching'' treats uppercase and lowercase characters as distinct.
-** ''Enable Wildcards'' Allows the use of the question mark (?) and asterisk (*) wildcards.
-*** ''"?"''  Matches exactly one character. For example, the pattern 123? will match 123 and 1234, but not 12345. 
-*** ''"*"''  Matches zero or more characters. For example, doc* matches doc and document but not dodo.
-** ''Loop After First/Last Hit'' Cycles back to the first/last matched phrase upon pressing the Up/Down Arrow Button at the end of the list of matches.
-** ''Display No. of Matches'' Displays the number of phrase matches in the bottom left corner of the Path Manager dialog.
-** ''Replace'' Replaces all occurrences of the matched phrase in the path name string for currently selected paths. 
-** ''Clear History'' Erases the previously searched phrases in the text filter drop-down menu.
-** ''Tips & Shortcuts''
-*** Case-insensitive by default. Wildcards ? (any character), and * (any string) can also be used.
-*** Press the ''Highlight All'' button or Ctrl+A to select all the paths filtered by the search string.
-*** Press and hold Ctrl while pressing the up/down keys to select multiple filtered paths.
-*** Press the up/down keys to find the next/previous occurrence of the filtering string.
-*** Uncheck ''Display No. of Matches'' to improve search performance.
-
+[[File:SNT-Path-Manager-Text-Filter.png|right|thumb|]]
+The filter toolbar allows paths to be searched and filtered quickly using tags (colors, annotations, SWC-type, etc.) or morphometric properties. The text field is used for text-based searches (recent searches can be recovered through its drop-down menu). The [[File:SNT-Text-Filter-Up-Arrow-Button.png]] and [[File:SNT-Text-Filter-Down-Arrow-Button.png]] buttons find the next/previous occurrence of the entered phrase (shortcuts: {{key|up}} {{key|down}}), while the [[File:SNT-Text-Filter-Balloon-Button.png]] button highlights all occurrences of the entered phrase. Settings for advance text-based filtering can be accessed through the [[File:SNT-Text-Filter-Advanced-Button.png]], including wildcard support, case sensitive matching, and replace-by-pattern. In addition, the ''Advanced Filtering Menu'' [[File:SNT-Text-Filter-Advanced-Button.png]] provides other sophisticated means of filtering paths:
 [[File:SNT-Path-Manager-Text-Filter-Color-Filters.png|right|thumb|"Color Filters" menu]]
-* '''Color Filters''' Allows filtering of paths by color code. Custom colors may be selected by right-clicking an empty swatch, which will bring up the CMYK palette. The chosen color is temporarily saved in that swatch.
-{{clear}}
-[[File:SNT-Path-Manager-Morphology-Filters.png|right|thumb|"Morphology Filters" menu]]
-* '''Morphology Filters''' Allows filtering of paths by select morphological properties.
-** ''Branch Order'' Filters for paths of branch order in the inputted range. Note that the paths of interest must have ''Branch Order'' tags. To tag paths with their centrifugal branch orders, use {{bc|Tag|Morphology|Branch Order}}. See [[SNT:_Overview#Tag|Tag]] for more information. 
-** ''Length'' Filters for paths of length within the inputted range. Note that the paths of interest must have ''Length'' tags. To tag paths with their length, use {{bc|Tag|Morphology|Length}}. See [[SNT:_Overview#Tag|Tag]] for more information. 
-** ''Mean Radius'' Filters for paths of mean radius within the inputted range. Note that the paths of interest must have ''Mean Radius'' tags. To tag paths with their mean radius, use {{bc|Tag|Morphology|Mean Radius}}. See [[SNT:_Overview#Tag|Tag]] for more information.
+* '''Color Filters''' Allows filtering of paths by color tags. Custom colors may be selected by right-clicking an empty swatch, which will bring up the CMYK palette. The chosen color is temporarily saved in that swatch.
+* '''Morphology Filters''' Allows filtering of paths by selected morphological properties. Note that these filters do not require paths to be labeled using {{bc|Tag|Morphology|&nbsp;}}.
+** ''Branch Order'' Filters for paths of [[Strahler Analysis|branch order]] in the inputted range. Example queries: <tt>1-2</tt>: selects all primary and secondary branches; <tt>max-max</tt>: selects all terminal branches. 
+** ''Length'' Filters for paths of length within the inputted range. Example queries: <tt>10-20</tt>: selects all paths with lengths between 10 and 20μm; <tt>max-max</tt>: selects the longest path(s).
+** ''Mean Radius'' Filters for paths of mean radius within the inputted range.
 ** ''No. of Nodes'' Filters for paths with node count within the inputted range.
-** ''SWC Type'' Filters for paths with the selected SWC type tags. Note that the paths of interest must have ''Type'' tags. To tag paths with SWC types, use {{bc|Tag|Type}}. See [[SNT:_Overview#Tag|Tag]] for more information.
+** ''SWC Type'' Filters for paths with the selected SWC type tags. Note that the paths of interest must have been [[SNT:_Overview#Tag|tagged]] using  the{{bc|Tag|Type|&nbsp;}} menu.
 
 <div align="center">
 <ul> 
