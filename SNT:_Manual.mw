@@ -38,7 +38,7 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 </ul>
 </div>
 
-* {{bc|Reconstruction Plotter...}} Plots a 2D projection of all existing paths with spatial controls. If paths are assigned color tags, use {{bc|Actions|Render final (colorized) plot}} to render the (static) plot with color-mapped paths, with the final orientation specified by the control panel.
+* {{bc|Reconstruction Plotter...}} Plots a 2D projection of all existing paths. A control panel is included which allows adjustment of the spatial orientation of the tracing. If paths are assigned color tags, use {{bc|Actions|Render final (colorized) plot}} from the control panel to render the (static) plot with color-mapped paths, with the final orientation matching that of the dynamic plot.
 <div align="left">
 <ul> 
 <li style="display:inline-block;"> [[Image:SNT-Reconstruction-Plotter-Example.png|none|thumb]] </li>
