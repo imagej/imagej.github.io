@@ -14,7 +14,7 @@ Each of these options may be changed once SNT is opened.
 Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 * {{bc|Choose Tracing Image|}} Specifies the image to trace on. To trace on an image currently open in ImageJ, use ''From Open Image...''. A prompt with the currently open images will appear, allowing selection of one.  To browse for an image, use ''From File...''. [[Image:SNT-From-Open-Image-Prompt.png|right|thumb|"From Open Image..." prompt]]
 * {{bc|Import| Labels (AmiraMesh)}} Allows import and rendering of AmiraMesh files, the native file format of the [https://amira.zib.de/ Amira] data visualization software. [[Image:SNT-Amira-Mesh-Example-Image.png|right|thumb|AmiraMesh Fly brain]]
-* {{bc|Import| Remote Databases|}} TBD
+* {{bc|Import| Remote Databases|}} Allows remote import of neuronal reconstructions from the [http://www.flycircuit.tw/ FlyCircuit], [http://ml-neuronbrowser.janelia.org/ MouseLight] and [http://neuromorpho.org/ NeuroMorpho] databases. [[File:SNT-MouseLight-Remote-Loader-Prompt.png|right|thumb|MouseLight reconstruction loader prompt]]
 * {{bc|Export (All Paths)}} TBD
 
 ===Utilities===
