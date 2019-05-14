@@ -38,7 +38,14 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 </ul>
 </div>
 
-* {{bc|Export (All Paths)}} TBD
+* {{bc|Reconstruction Plotter...}} Plots a 2D projection of all existing paths with spatial controls. If paths are assigned color tags, use {{bc|Actions|Render final (colorized) plot}} to render the (static) plot with color-mapped paths, with the final orientation specified by the control panel.
+<div align="left">
+<ul> 
+<li style="display:inline-block;"> [[Image:SNT-Reconstruction-Plotter-Example.png|none|thumb]] </li>
+<li style="display:inline-block;"> [[Image:SNT-Reconstruction-Plotter-Controls.png|none|thumb]] </li>
+<li style="display:inline-block;"> [[Image:SNT-Reconstruction-Plotter-Colored.png|none|thumb]] </li>
+</ul>
+</div>
 
 ===Scripts===
 TBD
