@@ -12,10 +12,11 @@ Each of these options may be changed once SNT is opened.
 ==Menu Commands==
 ===File===
 Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
-* {{bc|Choose Tracing Image|}} TBD
+* {{bc|Choose Tracing Image|}} Specifies the image to trace on. To trace on an image currently open in ImageJ, use ''From Open Image...''. A prompt with the currently open images will appear, allowing selection of one.  To browse for an image, use ''From File...''. [[Image:SNT-From-Open-Image-Prompt.png|right|thumb]]
 * {{bc|Import| Labels (AmiraMesh)}} TBD
 * {{bc|Import| Remote Databases|}} TBD
 * {{bc|Export (All Paths)}} TBD
+
 ===Utilities===
 * {{bc|Choose Tracing Image|}} TBD
 * {{bc|Import| Labels (AmiraMesh)}} TBD
