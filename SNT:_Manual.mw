@@ -15,7 +15,7 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 * {{bc|Choose Tracing Image|}} Specifies the image to trace on. To trace on an image currently open in ImageJ, use ''From Open Image...''. A prompt with the currently open images will appear, allowing selection of one.  To browse for an image, use ''From File...''. [[Image:SNT-From-Open-Image-Prompt.png|right|thumb|"From Open Image..." prompt]]
 * {{bc|Import| Labels (AmiraMesh)}} Allows import and rendering of AmiraMesh files, the native file format of the [https://amira.zib.de/ Amira] data visualization software. [[Image:SNT-Amira-Mesh-Example-Image.png|right|thumb|AmiraMesh Fly brain]]
 * {{bc|Import| Remote Databases|}} Allows import of neuronal reconstructions from the [http://www.flycircuit.tw/ FlyCircuit], [http://ml-neuronbrowser.janelia.org/ MouseLight] and [http://neuromorpho.org/ NeuroMorpho] remote databases. [[File:SNT-MouseLight-Remote-Loader-Prompt.png|right|thumb|MouseLight reconstruction loader prompt]]
-* {{bc|Export (All Paths)}} TBD
+* {{bc|Export (All Paths)}} Allows export of all traced paths in the [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html SWC] file format, a widely used standard for representing neuronal reconstructions which is supported by most annotation and visualization software. Additionally, useful numeric properties of paths can be stored in a CSV file by choosing the ''CSV Properties...'' export option.
 
 ===Utilities===
 * {{bc|Choose Tracing Image|}} TBD
