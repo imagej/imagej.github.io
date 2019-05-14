@@ -31,8 +31,13 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 [[Image:SNT-Sholl-Analysis-How-to-Menu.png|left|thumb]]
 {{clear}}
 * {{bc|Strahler Analysis}} Conducts Strahler Analysis on existing paths, producing a table of analysis results and a Strahler plot.
-[[Image:SNT-Strahler-Analysis-Table.png]]
-[[Image:SNT-Strahler-Analysis-Plot.png]]
+<div align="left">
+<ul> 
+<li style="display:inline-block;"> [[Image:SNT-Strahler-Analysis-Table.png|none|thumb|Strahler Analysis table for OP_1]] </li>
+<li style="display:inline-block;"> [[Image:SNT-Strahler-Analysis-Plot.png|none|thumb|Strahler Analysis plot for OP_1]] </li>
+</ul>
+</div>
+
 * {{bc|Export (All Paths)}} TBD
 
 ===Scripts===
