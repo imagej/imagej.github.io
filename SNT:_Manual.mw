@@ -13,7 +13,7 @@ Each of these options may be changed once SNT is opened.
 ===File===
 Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 * {{bc|Choose Tracing Image|}} Specifies the image to trace on. To trace on an image currently open in ImageJ, use ''From Open Image...''. A prompt with the currently open images will appear, allowing selection of one.  To browse for an image, use ''From File...''. [[Image:SNT-From-Open-Image-Prompt.png|right|thumb|"From Open Image..." prompt]]
-* {{bc|Import| Labels (AmiraMesh)}} TBD
+* {{bc|Import| Labels (AmiraMesh)}} Allows import and rendering of AmiraMesh files, the native file format of the [https://amira.zib.de/ Amira] data visualization software.
 * {{bc|Import| Remote Databases|}} TBD
 * {{bc|Export (All Paths)}} TBD
 
