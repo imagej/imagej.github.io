@@ -27,7 +27,9 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 
 ===Utilities===
 * {{bc|Quick Measurements|}} Shows a table with summary statistics for all existing paths. To measure only selected paths, use {{bc|Analyze|Measure}} in the Path Manager. 
-* {{bc|Import| Labels (AmiraMesh)}} TBD
+* {{bc|Sholl Analysis...}} Shows a help menu which describes how to conduct [[Simple_Neurite_Tracer:_Sholl_analysis|Sholl Analysis]] from within SNT on existing paths.
+[[Image:SNT-Sholl-Analysis-How-to-Menu.png|left|thumb]]
+{{clear}}
 * {{bc|Import| Remote Databases|}} TBD
 * {{bc|Export (All Paths)}} TBD
 
