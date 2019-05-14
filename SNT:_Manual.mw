@@ -28,8 +28,11 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 ===Utilities===
 * {{bc|Quick Measurements|}} Shows a table with summary statistics for all existing paths. To measure only selected paths, use {{bc|Analyze|Measure}} in the Path Manager. 
 * {{bc|Sholl Analysis...}} Shows a help menu which describes how to conduct [[Simple_Neurite_Tracer:_Sholl_analysis|Sholl Analysis]] from within SNT on existing paths.
-[[Image:SNT-Sholl-Analysis-How-to-Menu.png|left|thumb]]
-{{clear}}
+<div align="left">
+<ul> 
+<li style="display:inline-block;"> [[Image:SNT-Sholl-Analysis-How-to-Menu.png|none|thumb|200px]] </li>
+</ul>
+</div>
 * {{bc|Strahler Analysis}} Conducts Strahler Analysis on existing paths, producing a table of analysis results and a Strahler plot.
 <div align="left">
 <ul> 
@@ -37,7 +40,6 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 <li style="display:inline-block;"> [[Image:SNT-Strahler-Analysis-Plot.png|none|thumb|Strahler Analysis plot for OP_1]] </li>
 </ul>
 </div>
-
 * {{bc|Reconstruction Plotter...}} Plots a dynamic 2D projection of all existing paths. A control panel is included which allows adjustment of the spatial orientation of the tracing. If paths are assigned color tags, use {{bc|Actions|Render final (colorized) plot}} from the control panel to render the (static) plot with color-mapped paths, with the final orientation matching that of the dynamic plot.
 <div align="left">
 <ul> 
@@ -47,7 +49,12 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 </ul>
 </div>
 * {{bc|Compare Reconstructions...}} Given two input reconstruction files, runs ''Quick Measurements'' on both and generates a plot with summary statistics, allowing for quick morphometric comparisons.
-[[Image:SNT-Compare-Reconstructions-Table.png|left|thumb]]
+<div align="left">
+<ul> 
+<li style="display:inline-block;"> [[Image:SNT-Compare-Reconstructions-Table.png|none|thumb|600px|Comparison of OP_1 and OP_2]] </li>
+</ul>
+</div>
+{{clear}}
 
 ===Scripts===
 TBD
