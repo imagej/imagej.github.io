@@ -46,6 +46,8 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 <li style="display:inline-block;"> [[Image:SNT-Reconstruction-Plotter-Colored.png|none|thumb]] </li>
 </ul>
 </div>
+* {{bc|Compare Reconstructions...}} Given two input reconstruction files, runs ''Quick Measurements'' on both and generates a plot with summary statistics, allowing for quick morphometric comparisons.
+[[Image:SNT-Compare-Reconstructions-Table.png|left|thumb]]
 
 ===Scripts===
 TBD
