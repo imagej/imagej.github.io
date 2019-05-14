@@ -22,6 +22,7 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 [[Image:SNT-MouseLight-Remote-Loader-Prompt.png|left|thumb|MouseLight reconstruction loader prompt]]
 {{clear}}
 * {{bc|Export (All Paths)}} Allows export of all traced paths in the [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html SWC] file format, a widely used standard for representing neuronal reconstructions which is supported by most annotation and visualization software. Additionally, useful numeric properties of paths can be stored in a CSV file by choosing the ''CSV Properties...'' export option.
+[[Image:SNT-Path-CSV-Properties-Example-Spreadsheet.png|left]]
 
 ===Utilities===
 * {{bc|Choose Tracing Image|}} TBD
