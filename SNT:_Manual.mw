@@ -26,10 +26,11 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 {{clear}}
 
 ===Utilities===
-* {{bc|Choose Tracing Image|}} TBD
+* {{bc|Quick Measurements|}} Shows a table with summary statistics for all existing paths. To measure only selected paths, use {{bc|Analyze|Measure}} in the Path Manager. 
 * {{bc|Import| Labels (AmiraMesh)}} TBD
 * {{bc|Import| Remote Databases|}} TBD
 * {{bc|Export (All Paths)}} TBD
+
 ===Scripts===
 TBD
 ===View===
