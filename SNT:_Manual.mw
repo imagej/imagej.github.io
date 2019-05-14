@@ -30,7 +30,9 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 * {{bc|Sholl Analysis...}} Shows a help menu which describes how to conduct [[Simple_Neurite_Tracer:_Sholl_analysis|Sholl Analysis]] from within SNT on existing paths.
 [[Image:SNT-Sholl-Analysis-How-to-Menu.png|left|thumb]]
 {{clear}}
-* {{bc|Import| Remote Databases|}} TBD
+* {{bc|Strahler Analysis}} Conducts Strahler Analysis on existing paths, producing a table of analysis results and a Strahler plot.
+[[Image:SNT-Strahler-Analysis-Table.png]]
+[[Image:SNT-Strahler-Analysis-Plot.png]]
 * {{bc|Export (All Paths)}} TBD
 
 ===Scripts===
