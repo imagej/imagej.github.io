@@ -1,4 +1,4 @@
-(Return to the main [[SNT]] page)
+{{SNTNavBar}}
 <div class="toclimit-3">
 =Startup Prompt=
 [[Image:SNT-Startup-Prompt.png|right|thumb]]
@@ -408,3 +408,4 @@ The filter toolbar allows paths to be searched and filtered quickly using tags (
 
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling: Step-By-Step Instructions]].
+{{SNTNavBar}}
