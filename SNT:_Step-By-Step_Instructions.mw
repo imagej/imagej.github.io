@@ -215,7 +215,7 @@ for filename in file_list:
         l = len(filename)
         el = len(extension)
         basename = filename[0:l-el]
-        output_filepath = image_dir + '\\' + basename + "_Frangi.tif"
+        output_filepath = image_dir + '/' + basename + "_Frangi.tif"
         ij.io().save(output, output_filepath)
         
 print('Done.')
