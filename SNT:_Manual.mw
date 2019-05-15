@@ -115,7 +115,7 @@ Other options are also available in the ''gear'' drop-down menu:
 * '''Flush Cached Data''' Removes cached data from memory
 * '''Load Precomputed "Tubeness Image"''' This (advanced) option prompts you to load a file of a ''Tubeness image'' generated elsewhere. This is useful if e.g., you want o experiment algorithms from other software packages, or your own. Note that loaded image is assumed to have compatible dimensions with the image currently being traced.
 * '''Show Cached "Tubeness Image"''' Displays the ''Tubeness'' data currently cached. Useful for debugging purposes. Also mirrored in {{bc | View | Show Cached/Loaded Hessian (Tubeness) Image}}.
-[[File:original-hessian-side-by-side.png|center|thumb|600px|Original (left) and Hessian (right) TBD: Replace with MIPs]]
+[[File:original-hessian-side-by-side.png|center|thumb|400px|OP_1 "Tubeness" image overlay at 80% opacity]]
 
 ===Tracing on Filtered Image===
 This is one of SNT's most advanced features. [[#Auto-tracing|Hessian-based analysis]] provides a convenient and easy way to perform auto-tracing on pre-process data in which voxels defining the traced structure are scored by their likelihood of ''belonging'' to a tube-like structure. However, it is just one approach for "tubeness" classification. What if your data requires different filtering?, or you want to experiment with other approaches?, or the perfect pre-processing algorithm for your images is not yet available in ImageJ? ''Tracing on Filtered Image'' is the answer to these questions: It allows you to feed SNT with pre-processed data on which the A*star search will operate. Here are two specific usages for this option:
