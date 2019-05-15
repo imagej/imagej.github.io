@@ -3,19 +3,19 @@
 == Tracing ==
 <ol>
 	<li>
-	<span id="faq:confirmtemp"></span>'''Having to confirm indivual segments is too cumbersome for me. Is it possible to  trace without interruption, by clicking in succession'''?
+	<span id="confirmtemp"></span>'''Having to confirm indivual segments is too cumbersome for me. Is it possible to  trace without interruption, by clicking in succession'''?
 	</li>
 	<dl><dd>
 	Yes. Uncheck the ''Confirm temporary segments'' in the ''Options'' tab (''Temporay Paths'' section).
 	</dd></dl>
 	<li>
-	<span id="faq:intensities"></span>'''How can I browse voxel intensities around processes'''?
+	<span id="intensities"></span>'''How can I browse voxel intensities around processes'''?
 	</li>
 	<dl><dd>
 	Righ-click on the image canvas and select ''Pause SNT'' from the contextual menu. Voxel intensities will be reported in the ImageJ status bar.
 	</dd></dl>
 	<li>
-	<span id="faq:groupimages"></span>'''Is there a way to process one image after another in a fast way'''?
+	<span id="groupimages"></span>'''Is there a way to process one image after another in a fast way'''?
 	</li>
 	<dl><dd>
 	Yes. Have a look at these [https://forum.image.sc/t/simple-neurite-tracer-for-multiple-2d-images/22564/6?u=tferr detailed instructions].
@@ -27,19 +27,19 @@
 == General ==
 <ol>
 	<li>
-	<span id="faq:imageseq"></span>'''How can I import an image sequence into SNT'''?
+	<span id="imageseq"></span>'''How can I import an image sequence into SNT'''?
 	</li>
 	<dl><dd>
 	Loading of images that require input options is handled by ImageJ directly. To load a directory of images (e.g., one file per Z-slice), run {{bc|color=white|File| Import|Image Sequence}} and select the first file in the sequence, adjusting any needed parameters in the subsequent dialog prompt. Once the sequence is imported adjust voxel dimensions using {{bc|color=white|Image|Properties...}}. To save yourself from having to go through these steps again, you should save the imported stack as a single TIFF file using {{bc|color=white|File|Save As|Tiff...}}
 	</dd></dl>
 	<li>
-	<span id="faq:documentation"></span>'''How can I improve SNT documentation'''?
+	<span id="documentation"></span>'''How can I improve SNT documentation'''?
 	</li>
 	<dl><dd>
 	[[Help:Contents#New_accounts|Create an account]] on this wiki. Once you have created one, you can edit contents at will. Don't be shy. All changes are undoable!
 	</dd></dl>
 	<li>
-	<span id="faq:swc"></span>'''What is a SWC file'''?
+	<span id="swc"></span>'''What is a SWC file'''?
 	</li>
 	<dl><dd>
 	It is the most widely adopted format for encoding neuronal reconstructions, in which information is stored in plain text. It was first described by (Cannon et al., 1998) and since then became a somewhat loose ''lingua franca'' of a neuron's three dimensional structure. It is described in more detail [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html here] and [https://neuroinformatics.nl/swcPlus/ here]. SNT supports all known variants of the format including [https://www.nature.com/articles/sdata2017207 ESWC] and [https://neuroinformatics.nl/swcPlus/ SWC+]. The extension stems from the last names of Stockley, Wheal, and Cole, who developed a neat computer system for reconstructing neuronal cells ( Stockley et al., 1993). Confusingly, it is also a [https://en.wikipedia.org/wiki/Adobe_SWC_file deprecated file format] used by Adobe.
