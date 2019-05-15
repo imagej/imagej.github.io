@@ -169,19 +169,19 @@ The easiest way to preprocess multiple images is to record a macro for processin
 <source lang="java">
 d = getDirectory("Select a directory");
 files = getFileList(d);
-
+ 
 extension = ".tif";
-
+ 
 for( i = 0; i < files.length; ++i ) {
     filename = files[i];
     if( endsWith(filename,extension) ) {
         l = lengthOf(filename);
         el = lengthOf(extension);
         basename = substring(filename,0,l-el);
-        expected_window_name = "vesselness of "+filename;
+        expected_window_name = "result";
         output_filename = d + File.separator + basename + ".tubes.tif";
         open(filename);
-        run("Frangi Vesselness (imglib, experimental)", "number=1 minimum=0.288387 maximum=0.288387");
+        run("Frangi Vesselness"); // arguments can be specified here
         selectWindow(expected_window_name);
         saveAs("Tiff", output_filename);
     }
