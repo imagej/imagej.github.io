@@ -1,4 +1,4 @@
-(Return to the main [[SNT]] page)
+{{SNTNavBar}}
 <div class="toclimit-3">
 
 =Tracing=
@@ -196,4 +196,4 @@ TBD:
 * Point-accuracy
 **Make new section based on [[Simple Neurite Tracer: Accurate point placement]]
 
-(Return to the main [[SNT]] page)
+{{SNTNavBar}}
