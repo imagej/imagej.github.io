@@ -1,36 +1,26 @@
 {{SNTNavBar}}
-<div class="toclimit-3">
+<div class="toclimit-2">
 =Startup Prompt=
 [[Image:SNT-Startup-Prompt.png|right|thumb]]
-Each of these options may be changed once SNT is opened.
-* '''Image'''/'''Image File''' Allows selection of the image to display in the views. If an image is already displayed in ImageJ, it may be selected in the drop-down menu. Alternatively, an image path may be specified by clicking ''Browse'' and choosing an image. If no image is chosen, SNT will create an empty display canvas from the computed bounding box of the reconstruction file (if provided). If no reconstruction is provided, no placeholder image is created.
-* '''Reconstrucion file''' The path of the reconstruction file to import. If an image is loaded, the reconstruction is rendered on the image. Otherwise, it is rendered in an empty display canvas. Noteworthy: If ".traces" or ".swc" files exist in the same directory as the image selected in ''Image File'', SNT will automatically populate this field with the reconstruction file with the minimum [https://en.wikipedia.org/wiki/Levenshtein_distance Levenshtein distance] to the image filename.
-* '''User interface''' Specifies which views to display. The default setting provides the XY, ZY and XZ views. Memory and screen space can be saved by choosing the ''Only XY view'' option.
-* '''Tracing Channel''' Specifies the image channel to trace on. If tracing on a single-channel image, leave this option as the default value (1).
+SNT is initialized by running {{bc|Plugins|NeuroAnatomy|SNT...}}. All the options in the startup prompt can be set once SNT is opened, but the startup prompt provides the convenience of setting the most important parameters at once.
+* '''Image'''/'''Image File''' The image to be traced/analyzed (optional). The drop-down menu will list all images currently open in ImageJ. Alternatively, an image path may be specified by clicking ''Browse'' and choosing an image file. If no image is chosen, SNT will create an empty display canvas from the computed bounding box of the reconstruction file (if provided).
+* '''Reconstrucion file''' The path of the reconstruction file to be imported (optional). SNT will automatically try to guess if there is a reconstruction file associated with the chosen image by looking at all the reconstruction files (<tt>.traces</tt>, <tt>.(e)swc</tt>, or <tt>.json</tt>) in the image directory, and choosing one that more [https://en.wikipedia.org/wiki/Levenshtein_distance closely matches] the image filename.
+* '''User interface''' Specifies which views to display for 3D images. The default setting provides the XY, ZY, and XZ views and allows for more [[SNT:_Step-By-Step_Instructions#Accurate_Point_Placement|accurate node placement]] but requires more RAM.
+* '''Tracing Channel''' Specifies the image channel to trace on (this option is ignored with single-channel images).
 
 =Main Dialog=
 ==Menu Commands==
 ===File===
 Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
-* {{bc|Choose Tracing Image|}} Specifies the image to trace on. To trace on an image currently open in ImageJ, use ''From Open Image...''. A prompt with the currently open images will appear, allowing selection of one.  To browse for an image, use ''From File...''. 
-<div align="left">
-<ul> 
-<li style="display:inline-block;"> [[Image:SNT-From-Open-Image-Prompt.png|none|thumb|200px|"From Open Image..." prompt]] </li>
-</ul>
-</div>
-* {{bc|Import| Labels (AmiraMesh)}} Allows import and rendering of AmiraMesh files, the native file format of the [https://amira.zib.de/ Amira] data visualization software. 
-<div align="left">
-<ul> 
-<li style="display:inline-block;"> [[Image:SNT-Amira-Mesh-Example-Image.png|none|thumb|200px|AmiraMesh Fly brain]] </li>
-</ul>
-</div>
-* {{bc|Import| Remote Databases|}} Allows import of neuronal reconstructions from the [http://www.flycircuit.tw/ FlyCircuit], [http://ml-neuronbrowser.janelia.org/ MouseLight] and [http://neuromorpho.org/ NeuroMorpho] remote databases. 
-<div align="left">
-<ul> 
-<li style="display:inline-block;"> [[Image:SNT-MouseLight-Remote-Loader-Prompt.png|none|thumb|200px|MouseLight reconstruction loader prompt]] </li>
-</ul>
-</div>
-* {{bc|Export (All Paths)}} Allows export of all traced paths in the [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html SWC] file format, a widely used standard for representing neuronal reconstructions which is supported by most annotation and visualization software. Additionally, useful numeric properties of paths can be stored in a CSV file by choosing the ''CSV Properties...'' export option.
+[[Image:SNT-From-Open-Image-Prompt.png|right|thumb|200px|]]
+* {{bc|Choose Tracing Image|&nbsp;}} Specifies the image to trace on without having to restart SNT. To trace on an image currently open in ImageJ, use ''From Open Image...''. A prompt with the currently open images will appear, allowing selection of one.  To browse for an image file, use ''From File...''. You should toggle the ''validate spatial calibration'' checkbox to ensure the image to be imported is compatible with the existing one.
+
+* {{bc|Import| Labels (AmiraMesh)...}} This option assumes you are tracing on the same spatial coordinates of an annotated neuropil, for which compartments have been segmented (''labeled'') and stored in an [https://amira.zib.de/ Amira] labels file. Once loaded, SNT will report the name of the compartments in the ImageJ status bar when hovering over the image.
+
+[[Image:SNT-MouseLight-Remote-Loader-Prompt.png|right|thumb|200px|]]
+* {{bc|Import| Remote Databases|&nbsp;}} Allows import of neuronal reconstructions from the [http://www.flycircuit.tw/ FlyCircuit], [https://ml-neuronbrowser.janelia.org/ MouseLight] and [http://neuromorpho.org/ NeuroMorpho] remote databases. 
+
+* {{bc|Export (All Paths)|&nbsp;}} Allows export of all traced paths in the [[SNT:_FAQ#swc|SWC]] file format, the most common format for representing neuronal reconstructions. Note that you can also export subsets of paths using the [[#Path Manager|Path Manager]]. Additionally, useful numeric properties of paths can be stored in a CSV file by choosing the ''CSV Properties...'' export option.
 <div align="left">
 <ul> 
 <li style="display:inline-block;"> [[Image:SNT-Path-CSV-Properties-Example-Spreadsheet.png|none|thumb|600px|OP_1 CSV Properties snapshot in LibreOffice]] </li>
