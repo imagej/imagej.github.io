@@ -127,7 +127,8 @@ Importantly, this option can be toggled at will, during tracing. Indeed, one can
 
 '''Filtered Image options''' can be specified in the ''gear'' drop-down menu, including commands for Loading/displaying the image file and the powerful ''Generate Filtered Image'' command:
 
-TBD
+[[Image:SNT-Tracing-On-Filtered-Image-Gear-Options.png|right|thumb]]
+
 
 See the [[SNT:_Step-By-Step_Instructions#Generating_Filtered_Images|Generating Filtered Images]] walk-through for more details.
 
