@@ -238,4 +238,11 @@ TBD:
 * Point-accuracy
 **Make new section based on [[Simple Neurite Tracer: Accurate point placement]]
 
+=Accurate Point Placement=
+This section describes methods to increase the accuracy of node placement.
+==Step by Step==
+When starting up, make sure that "Three pane view" is turned on:
+[[Image:SNT-Three-Pane-View-Enabled-Startup-Prompt.png]]
+
+{{clear}}
 {{SNTNavBar}}
