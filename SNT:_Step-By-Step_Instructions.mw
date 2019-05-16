@@ -242,7 +242,12 @@ TBD:
 This section describes methods to increase the accuracy of node placement.
 ==Step by Step==
 When starting up, make sure that "Three pane view" is turned on:
+
 [[Image:SNT-Three-Pane-View-Enabled-Startup-Prompt.png]]
+
+Find the approximate location of your start point by moving your mouse in the XY window, holding down Shift to synchronize the view in the other panes:
+
+[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-1.png]]
 
 {{clear}}
 {{SNTNavBar}}
