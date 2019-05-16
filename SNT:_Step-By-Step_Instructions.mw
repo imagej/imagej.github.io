@@ -190,35 +190,44 @@ for( i = 0; i < files.length; ++i ) {
 The same process can be accomplished in a script using [[ImageJ_Ops|ImageJ Ops]]. For example, in Jython:
 <source lang="python">
 # @ImageJ ij
+# @File(label="Directory containing your images", style="directory") image_dir
 import os
 
-image_dir = r'/path/to/your/images' # Replace with directory containing your images
-extension = ".tif"
-file_list = os.listdir(image_dir)
-for filename in file_list:    
-    if filename.endswith(extension): # Only process ".tif" files
-        image_path = image_dir + '/' + filename
-        input_image = ij.io().open(image_path)
-        # Convert input image to float, since we are dealing with derivatives.
-        converted_input = ij.op().run("convert.float32", input_image)
+def run(image_directory):
+    image_directory = str(image_directory)
+    if image_directory is not None:
+        extension = ".tif"
+        file_list = os.listdir(image_directory)
+        for filename in file_list:
+            if filename.endswith(extension):  # Only process ".tif" files
+                print('Processing ' + str(filename))
+                image_path = image_directory + '/' + filename
+                input_image = ij.io().open(image_path)
+                # Convert input image to float, since we are dealing with derivatives.
+                converted_input = ij.op().run("convert.float32", input_image)
 
-        # Frangi Vesselness parameters
-        spacing = [1,1,1] # Assuming the image has isotropic resolution
-        scale = 2 # Twice the voxel separation
+                # Frangi Vesselness parameters
+                spacing = [1, 1, 1]  # Assuming the image has isotropic resolution
+                scale = 2  # Twice the voxel separation
 
-        # Run the plugin
-        output = ij.op().run("create.img", converted_input) # Make placeholder image for result
-        ij.op().run("frangiVesselness", output, converted_input, spacing, scale)
-        
-        # Save the result using the same base name as the image, adding "_Frangi.tif".
-        # For example, the output for OP_1.tif would be named OP_1_Frangi.tif
-        l = len(filename)
-        el = len(extension)
-        basename = filename[0:l-el]
-        output_filepath = image_dir + '/' + basename + "_Frangi.tif"
-        ij.io().save(output, output_filepath)
-        
-print('Done.')
+                # Create placeholder image then run the Frangi op.
+                output = ij.op().run("create.img", converted_input)
+                ij.op().run("frangiVesselness", output, converted_input, spacing, scale)
+
+                # Save the result using the same base name as the image, adding "_Frangi.tif".
+                # For example, the output for OP_1.tif would be named OP_1_Frangi.tif
+                l = len(filename)
+                el = len(extension)
+                basename = filename[0:l - el]
+                output_filepath = image_directory + '/' + basename + "_Frangi.tif"
+                ij.io().save(output, output_filepath)
+
+        print('Done.')
+
+    else:
+        print('No image directory was selected, exiting...')
+
+run(image_dir)
 </source>
 TBD:
 * Filtered Images
