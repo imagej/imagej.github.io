@@ -249,5 +249,13 @@ Find the approximate location of your start point by moving your mouse in the XY
 
 [[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-1.png]]
 
+When you press + to zoom in, all the panes will zoom in on the point that the crosshairs is over, so each time you press +, make sure you move your mouse pointer so that it's still over the structure of interest:
+
+[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-2.png]]
+
+
+
+
+
 {{clear}}
 {{SNTNavBar}}
