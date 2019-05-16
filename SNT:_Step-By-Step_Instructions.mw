@@ -194,8 +194,8 @@ The same process can be accomplished in a script using [[ImageJ_Ops|ImageJ Ops]]
 import os
 
 def run(image_directory):
-    image_directory = str(image_directory)
     if image_directory is not None:
+        image_directory = str(image_directory)
         extension = ".tif"
         file_list = os.listdir(image_directory)
         for filename in file_list:
