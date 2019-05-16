@@ -1,12 +1,10 @@
 <seo metak="snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy" metad="snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy" />
+{{SNTNavBar}}
 {{ComponentStats:sc.fiji:Simple_Neurite_Tracer}}
-The ImageJ framework for semi-automated tracing of neurons and tubular structures.
-{{TOC}}
-
-{{Warning | this page is under construction}}
+<div class="toclimit-2">
 
 == Introduction ==
-SNT is a complete framework for tracing and analysis of neurons other tube-like structures (e.g., blood vessels). It supports multichannel and time-lapse images,  sophisticated hardware accelerated 3D visualization tools, [[SciView]] integration, and an extensive repertoire of tools for morphometric analysis.
+SNT is ImageJ's complete framework for tracing and analysis of neurons other tube-like structures (e.g., blood vessels). It supports multichannel and time-lapse images,  sophisticated hardware accelerated 3D visualization tools, [[SciView]] integration, and an extensive repertoire of tools for morphometric analysis.
 
 [[Image:SimpleNeuriteTracer2.png|thumb|center|800px|SNT Overview]]
 
