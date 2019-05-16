@@ -127,14 +127,15 @@ Importantly, this option can be toggled at will, during tracing. Indeed, one can
 
 '''Filtered Image options''' can be specified in the ''gear'' drop-down menu, including commands for Loading/displaying the image file and the powerful ''Generate Filtered Image'' command:
 
-[[Image:SNT-Tracing-On-Filtered-Image-Gear-Options.png|right|thumb]]
-[[Image:SNT-Generate-Filtered-Image-Prompt.png|right|thumb]]
+[[Image:SNT-Tracing-On-Filtered-Image-Gear-Options.png|right|thumb|200px]]
+[[Image:SNT-Generate-Filtered-Image-Prompt.png|right|thumb|200px]]
 * '''Load Specified File''' Loads the filtered image specified in the ''File'' textbox. 
 * '''Show Path in File Explorer''' Opens the directory containing the filtered image specified in the ''File'' textbox in the File Explorer GUI.
 * '''Generate Filtered Image''' Enables processing of the currently open image directly from SNT. Three routines are currently supported: ''Frangi'', ''Frangi (without Gaussian)'' and ''Tubeness''. Supports saving and display of the resulting image. Noteworthy: It is assumed that the current sigma value in the Auto-tracing widget reflects the size of structures to be filtered. If that is not the case, the sigma should be adjusted before running this command.
 * '''Show Cached image''' Displays the currently loaded filtered image in a separate window.
 
 See the [[SNT:_Step-By-Step_Instructions#Generating_Filtered_Images|Generating Filtered Images]] walk-through for more details.
+{{clear}}
 
 ===Filters for Visibility of Paths===
 By default, the entire path is projected onto the current Z-slice. This is useful to see how much has been completed and gives a sense of the overall structure of the reconstruction. However, SNT provides 3 additional visibility options for paths:
