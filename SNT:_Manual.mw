@@ -64,6 +64,10 @@ TBD
 ===View===
 Contains commands for organizing tracing views on screen, plus commands for displaying cached data used for auto-tracing.
 
+* '''Arrange Views''' Resets the view pane positions to the default.
+* '''Hide Tracing Canvas''' Allows toggling of the visibility of the three view panes as well as the Legacy 3D View window.
+* '''Show Cached ''Filtered Image''''' Displays the cached filtered image in a separate window. Note a filtered image must be loaded in order to use this feature. The process of loading a filtered image is detailed in [[SNT:_Step-By-Step_Instructions#Generating_Filtered_Images|Generating Filtered Images]].
+* '''Show Cached ''Hessian Tubeness Image''''' Displays the cached ''Hessian (Tubeness) image'' in a separate window. Note, one must first enable ''Hessian-based analysis'' then run either the ''Cache All Hessian Computations'' or ''Load Precomputed "Tubeness" Image'' commands in order to use this feature. This process is detailed in the "Auto-tracing" section of the [[SNT:_Overview#Main_Dialog|Main Dialog]] overview guide.
 
 ==Main Tab==
 This home tab aggregated widgets for tracing and frequent operations.
