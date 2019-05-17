@@ -241,33 +241,33 @@ TBD:
 =Accurate Point Placement=
 This section describes methods to increase the accuracy of node placement.
 ==Step by Step==
-When starting up, make sure that "Three pane view" is turned on:
+When starting up, make sure that "Default: XY, ZY and XZ views" is selected:
 
 [[Image:SNT-Three-Pane-View-Enabled-Startup-Prompt.png]]
 
 Find the approximate location of your start point by moving your mouse in the XY window, holding down {{key|Shift}} to synchronize the view in the other panes:
 
-[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-1.png]]
+[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-1.png|400px]]
 
 When you press {{key|+}} to zoom in, all the panes will zoom in on the point that the crosshairs is over, so each time you press {{key|+}}, make sure you move your mouse pointer so that it's still over the structure of interest:
 
-[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-2.png]]
+[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-2.png|400px]]
 
-To make sure you're clicking in the centre of the structure, try moving the mouse and scroll wheel in each of the panes (holding down {{key|Shift}} so synchronize the views in all three panes). When you're happy with the point under the crosshairs, click to start the path:
+To make sure you're clicking in the center of the structure, try moving the mouse and scroll wheel in each of the panes (holding down {{key|Shift}} so synchronize the views in all three panes). When you're happy with the point under the crosshairs, left-click to start the path:
 
-[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-3.png]]
+[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-3.png|400px]]
 
 Zoom out again with the {{key|-}} key, and similarly zoom in on the next point you want to be on your path to place it precisely:
 
-[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-4.png]]
+[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-4.png|400px]]
 
-The path along the neuron may not follow the center line:
+The path along the neuron may not follow the center line perfectly:
 
-[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-5.png]]
+[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-5.png|400px]]
 
-... but you can later improve that with the "Fit Volume" option, which tries to fix the midline and radius to sub-voxel accuracy:
+... but you can later improve that with the {{bc|Refine/Fit|Fit Path...}} option in the Path Manager, which tries to fix the midline and radius to sub-voxel accuracy:
 
-[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-6.png]]
+[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-6.png|400px]]
 
 {{clear}}
 {{SNTNavBar}}
