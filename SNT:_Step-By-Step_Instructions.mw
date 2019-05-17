@@ -265,5 +265,9 @@ The path along the neuron may not follow the center line:
 
 [[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-5.png]]
 
+... but you can later improve that with the "Fit Volume" option, which tries to fix the midline and radius to sub-voxel accuracy:
+
+[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-6.png]]
+
 {{clear}}
 {{SNTNavBar}}
