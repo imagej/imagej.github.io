@@ -240,7 +240,7 @@ TBD:
 
 =Accurate Point Placement=
 This section describes methods to increase the accuracy of node placement.
-==Step by Step==
+===Step by Step===
 When starting up, make sure that "Default: XY, ZY and XZ views" is selected:
 
 [[Image:SNT-Three-Pane-View-Enabled-Startup-Prompt.png]]
