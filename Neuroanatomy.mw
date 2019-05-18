@@ -48,7 +48,7 @@ Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/java/ipnat/skel|la
 |- valign="top"
 |Tracings importer
 | {{bc|File|Import|Tracings (Traces/(e)SWC)...}}
-| Renders traced reconstructions ([[Simple_Neurite_Tracer:_.traces_File_Format|.traces]] - [[Simple Neurite Tracer]]'s format - and [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html .swc] files) in ImageJ's [[3D Viewer]] or as skeletonized image stacks.
+| Renders traced reconstructions ([[SNT:_.traces_File_Format|.traces]] - [[SNT]]'s format - and [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html .swc] files) in ImageJ's [[3D Viewer]] or as skeletonized image stacks.
 Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/java/ipnat/|label=Java plugin}}.
 |-
 |Traces converter
