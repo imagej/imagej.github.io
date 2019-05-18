@@ -1,8 +1,8 @@
-= Simple Neurite Tracer =
+[[Category:SNT]][[Category:Neuroanatomy]][[Category:Import-Export]][[Category:Data]]
+{{SNTNavBar}}__NOTOC__ 
+== SNT's File Format ==
 
-== File Format ==
-
-The .traces files that are saved by Simple Neurite Tracer are gzip compressed XML. The plugin will also load uncompressed XML files, but by default they are saved in the compressed form.
+The .traces files that are saved by [[SNT]] are gzipped compressed XML. SNT will also load uncompressed XML files, but by default, they are saved in the compressed form.
 
 The XML DTD is included in the DOCTYPE of each file. The root element is always &lt;tracings&gt;, and this can contain the following elements:
 
@@ -77,3 +77,4 @@ The <tt>&lt;fill&gt;</tt> element represents a fill around a path. It contains a
 * <tt>previousid</tt><nowiki>: If present, this ID gives you previous node on the shortest route from the original paths to this point. It is not present for the points on the original paths, which also have a </nowiki><tt>distance</tt> attibute equal to 0.
 * <tt>distance</tt><nowiki>: This is the minimum "distance" so far found for any route moving from any point on the original paths to this node. (The complete route can be reconstructed by following </nowiki><tt>previousid</tt>s.)
 * <tt>status</tt><nowiki>: this attribute can either have the value </nowiki><tt>open</tt> or <tt>closed</tt>, which have their conventional meanings in A* search.
+{{SNTNavBar}}
