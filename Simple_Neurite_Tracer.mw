@@ -53,7 +53,7 @@ Hopefully, you should be able to use this software easily by following the sugge
 * [[Simple Neurite Tracer: Old Screencast2]]
 
 == Technical Documentation ==
-The native file format of the plugin is documented at: [[Simple Neurite Tracer: .traces File Format]]. (<code>.traces</code> files are just gzipped XML, so easy to parse.)  There's also an example {{GitHub|org=tferr|repo=hIPNAT|path=src/main/resources/scripts/|label=script}} on the [[Neuroanatomy]] update site showing how to batch convert each .traces file to multiple SWC files.
+The native file format of the plugin is documented at: [[SNT: .traces File Format]]. (<code>.traces</code> files are just gzipped XML, so easy to parse.)  There's also an example {{GitHub|org=tferr|repo=hIPNAT|path=src/main/resources/scripts/|label=script}} on the [[Neuroanatomy]] update site showing how to batch convert each .traces file to multiple SWC files.
 
 SNT is also easy to use programmatically. For instance, the example in {{GitHub|org=fiji|repo=Simple_Neurite_Tracer|source=tracing/Albert_Test.java|label=Albert_Test.java}} shows how to use the code to find a path between two arbitrary points in an image stack.
 
