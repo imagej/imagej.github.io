@@ -20,6 +20,12 @@
 	<dl><dd>
 	Yes. Have a look at these [https://forum.image.sc/t/simple-neurite-tracer-for-multiple-2d-images/22564/6?u=tferr detailed instructions].
 	</dd></dl>
+	<li>
+	<span id="imageseq"></span>'''How can I import an image sequence into SNT'''?
+	</li>
+	<dl><dd>
+	Loading of images that require input options is handled by ImageJ directly. To load a directory of images (e.g., one file per Z-slice), run {{bc|color=white|File| Import|Image Sequence}} and select the first file in the sequence, adjusting any needed parameters in the subsequent dialog prompt. Once the sequence is imported adjust voxel dimensions using {{bc|color=white|Image|Properties...}}. To save yourself from having to go through these steps again, you should save the imported stack as a single TIFF file using {{bc|color=white|File|Save As|Tiff...}}
+	</dd></dl>
 </ol>
 
 
@@ -27,22 +33,47 @@
 == General ==
 <ol>
 	<li>
-	<span id="imageseq"></span>'''How can I import an image sequence into SNT'''?
+	<span id="swc"></span>'''What is a SWC file'''?
 	</li>
 	<dl><dd>
-	Loading of images that require input options is handled by ImageJ directly. To load a directory of images (e.g., one file per Z-slice), run {{bc|color=white|File| Import|Image Sequence}} and select the first file in the sequence, adjusting any needed parameters in the subsequent dialog prompt. Once the sequence is imported adjust voxel dimensions using {{bc|color=white|Image|Properties...}}. To save yourself from having to go through these steps again, you should save the imported stack as a single TIFF file using {{bc|color=white|File|Save As|Tiff...}}
+	It is the most widely adopted format for encoding neuronal reconstructions, in which information is stored in plain text. It was first described by (Cannon et al., 1998) and since then became a somewhat loose ''lingua franca'' of a neuron's three dimensional structure. It is described in more detail [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html here] and [https://neuroinformatics.nl/swcPlus/ here]. SNT supports all known variants of the format including [https://www.nature.com/articles/sdata2017207 ESWC] and [https://neuroinformatics.nl/swcPlus/ SWC+]. The extension stems from the last names of Stockley, Wheal, and Cole, who developed a neat computer system for reconstructing neuronal cells ( Stockley et al., 1993). Confusingly, it is also a [https://en.wikipedia.org/wiki/Adobe_SWC_file deprecated file format] used by Adobe.
+	</dd></dl>
+	<li>
+	<span id="fileformats"></span>'''In which format should I save my tracings: TRACES or SWC'''?
+	</li>
+	<dl><dd>
+When tracing 4D or 5D images, <tt>TRACES</tt> is preferable because the channel and/or time frame associated with the data are stored. With simpler 2/3D images <tt>TRACES</tt> is also preferable to preserve [[SNT:_Overview#Tag|Path Manager tags]] across restarts. Note that the {{bc|[[SNT:_Overview#Scripts|Scripts]]|&nbsp;}} provides a batch converter for  <tt>TRACES</tt> &rarr; <tt>SWC</tt>  conversion. The following table summarizes the differences between the two formats:
+{| class="wikitable" style="width: 100%"|
+! 
+! style="text-align: center;" | SWC
+! style="text-align: center;" | TRACES
+|-
+| style="width: 20%"| No. reconstructions / file
+| style="width: 40%"|  Only one. When multiple reconstructions exits, SNT splits them across multiple files appending unique suffixes to filenames
+| style="width: 40%"|  Multiple reconstructions per file allowed
+|-
+| Image metadata
+| Only spatial calibration
+| Stored. Including channel and frame of the traced structure
+|-
+| [[SNT:_Overview#Tag|Path Manager tags]]
+| Not stored
+| Stored
+|-
+| Format
+| Plain text
+| XML or compressed XML (as per [[SNT:_Overview#Misc|preferences]])
+|-
+| Presence
+| Ubiquitous among reconstruction software
+| Exlusive to SNT. But open and easily parsable
+|}
 	</dd></dl>
 	<li>
 	<span id="documentation"></span>'''How can I improve SNT documentation'''?
 	</li>
 	<dl><dd>
 	[[Help:Contents#New_accounts|Create an account]] on this wiki. Once you have created one, you can edit contents at will. Don't be shy. All changes are undoable!
-	</dd></dl>
-	<li>
-	<span id="swc"></span>'''What is a SWC file'''?
-	</li>
-	<dl><dd>
-	It is the most widely adopted format for encoding neuronal reconstructions, in which information is stored in plain text. It was first described by (Cannon et al., 1998) and since then became a somewhat loose ''lingua franca'' of a neuron's three dimensional structure. It is described in more detail [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html here] and [https://neuroinformatics.nl/swcPlus/ here]. SNT supports all known variants of the format including [https://www.nature.com/articles/sdata2017207 ESWC] and [https://neuroinformatics.nl/swcPlus/ SWC+]. The extension stems from the last names of Stockley, Wheal, and Cole, who developed a neat computer system for reconstructing neuronal cells ( Stockley et al., 1993). Confusingly, it is also a [https://en.wikipedia.org/wiki/Adobe_SWC_file deprecated file format] used by Adobe.
 	</dd></dl>
 </ol>
 
