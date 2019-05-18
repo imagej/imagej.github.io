@@ -66,7 +66,7 @@ When tracing 4D or 5D images, <tt>TRACES</tt> is preferable because the channel 
 |-
 | Presence
 | Ubiquitous among reconstruction software
-| Exlusive to SNT. But open and easily parsable
+| Exlusive to SNT. But [[SNT:_.traces_File_Format|open and easily parsable]]
 |}
 	</dd></dl>
 	<li>
