@@ -189,27 +189,35 @@ import os
 
 def run(image_directory):
     if image_directory is not None:
+        # Get all files in the chosen directory
         image_directory = str(image_directory)
-        extension = ".tif"
         file_list = os.listdir(image_directory)
+        extension = ".tif"
+
         for filename in file_list:
             if filename.endswith(extension):  # Only process ".tif" files
                 print('Processing ' + str(filename))
+                # Load the image
                 image_path = image_directory + '/' + filename
                 input_image = ij.io().open(image_path)
-                # Convert input image to float, since we are dealing with derivatives.
+                # Convert input image to float, since we are dealing with derivatives
                 converted_input = ij.op().run("convert.float32", input_image)
 
-                # Frangi Vesselness parameters
-                spacing = [1, 1, 1]  # Assuming the image has isotropic resolution
-                scale = 2  # Twice the voxel separation
+                # Obtain spatial calibration of the image
+                x_spacing = converted_input.averageScale(0)
+                y_spacing = converted_input.averageScale(1)
+                z_spacing = converted_input.averageScale(2)
 
-                # Create placeholder image then run the Frangi op.
+                # Frangi Vesselness parameters
+                spacing = [x_spacing, y_spacing, z_spacing]
+                scale = 2  # Twice the x-voxel separation
+
+                # Create placeholder image then run the Frangi op
                 output = ij.op().run("create.img", converted_input)
                 ij.op().run("frangiVesselness", output, converted_input, spacing, scale)
 
-                # Save the result using the same base name as the image, adding "_Frangi.tif".
-                # For example, the output for OP_1.tif would be named OP_1_Frangi.tif
+                # Save the result using the same base name as the image, adding "_Frangi.tif"
+                # For example, the output for "OP_1.tif" would be named "OP_1_Frangi.tif"
                 l = len(filename)
                 el = len(extension)
                 basename = filename[0:l - el]
@@ -220,6 +228,7 @@ def run(image_directory):
 
     else:
         print('No image directory was selected, exiting...')
+
 
 run(image_dir)
 </source>
