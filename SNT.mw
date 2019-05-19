@@ -2,7 +2,7 @@
 {{SNTNavBar}}
 {{ComponentStats:sc.fiji:Simple_Neurite_Tracer}}
 <div class="toclimit-2">
-
+[[Category:SNT]][[Category:Neuroanatomy]]
 == Introduction ==
 SNT is ImageJ's complete framework for tracing and analysis of neurons other tube-like structures (e.g., blood vessels). It supports multichannel and time-lapse images,  sophisticated hardware accelerated 3D visualization tools, [[SciView]] integration, and an extensive repertoire of tools for morphometric analysis.
 
