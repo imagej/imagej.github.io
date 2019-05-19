@@ -233,34 +233,33 @@ TBD:
 
 =Accurate Point Placement=
 This section describes methods to increase the accuracy of node placement.
-===Step by Step===
-When starting up, make sure that "Default: XY, ZY and XZ views" is selected:
 
-[[Image:SNT-Three-Pane-View-Enabled-Startup-Prompt.png]]
+{|
+|-
+|Accurate node placement requires ''XY'', ''ZY'' and ''XZ'' views to be visible. You can do so at [[SNT:_Overview#Startup_Prompt|startup]], by making sure that ''Default: XY, ZY and XZ views'' is selected, or by clicking in ''Display ZY/XZ Views'' in the [[SNT:_Overview#Options_Tab|Options tab]] if you have already started SNT.
+|[[Image:SNT-Three-Pane-View-Enabled-Startup-Prompt.png]]
+|-
+|Find the approximate location of your start point by moving your mouse in the XY window, holding down {{key|Shift}} to synchronize the view in the other panes. At this point, you should enable cursor [[SNT:_Overview#Cursor_Auto-snapping|auto-snapping]] in the [[SNT:_Overview#Main_Tab|Main tab]] using suitable parameters for your image.
+|[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-1.png|350px]]
+|-
+|When you press {{key|+}} to zoom in, all the panes will zoom in on the point that the crosshair is over, so each time you press {{key|+}}, make sure you move your mouse pointer so that it's still over the structure of interest. You may want to adjust in the [[SNT:_Overview#Views|Views]] widget ([[SNT:_Overview#Options_Tab|Options tab]])  whether all views should zoom synchronously.<br>
+At this point, you should adjust a suitable [[SNT:_Overview#Cursor_Auto-snapping|snapping neighborhood]] both in 2D (XY) and 3D (Z). Note that when Z-snapping is enabled, all views become synchronized,
+|[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-2.png|350px]]
+|-
+|Locate the center of the structure to be clicked on. If [[SNT:_Overview#Cursor_Auto-snapping|cursor auto-snapping]] is enabled, simply mouse over the structure, otherwise, try moving the mouse and scroll wheel in each of the panes (holding down {{key|Shift}} so synchronize the views in all three panes). Note that you can toggle the cursor auto-snapping feature at will, by pressing the [[SNT:_Key_Shortcuts|shortcut]] {{key|S}}. Also, note that you can "click" on the [[SNT:_Key_Shortcuts#Tracing|brightest voxel]] of a voxel column, by pressing {{key|M}}.
 
-Find the approximate location of your start point by moving your mouse in the XY window, holding down {{key|Shift}} to synchronize the view in the other panes:
+When you're happy with the point under the crosshairs, left-click to start the path:
+|[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-3.png|350px]]
+|-
+|Zoom out again with the {{key|-}} key, and similarly zoom in on the next point you want to be on your path to place it precisely:
+|[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-4.png|350px]]
+|-
+|The path along the neuron may not follow the center line perfectly:
+|[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-5.png|350px]]
+|-
+|... but you can later improve that with the {{bc|Refine/Fit|Fit Path...}} option in the [[SNT:_Overview#Path_Manager|Path Manager]], which tries to align the path to the midline of the structure to sub-voxel accuracy:
+|[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-6.png|350px]]
+|-
+|}
 
-[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-1.png|400px]]
-
-When you press {{key|+}} to zoom in, all the panes will zoom in on the point that the crosshairs is over, so each time you press {{key|+}}, make sure you move your mouse pointer so that it's still over the structure of interest:
-
-[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-2.png|400px]]
-
-To make sure you're clicking in the center of the structure, try moving the mouse and scroll wheel in each of the panes (holding down {{key|Shift}} so synchronize the views in all three panes). When you're happy with the point under the crosshairs, left-click to start the path:
-
-[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-3.png|400px]]
-
-Zoom out again with the {{key|-}} key, and similarly zoom in on the next point you want to be on your path to place it precisely:
-
-[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-4.png|400px]]
-
-The path along the neuron may not follow the center line perfectly:
-
-[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-5.png|400px]]
-
-... but you can later improve that with the {{bc|Refine/Fit|Fit Path...}} option in the Path Manager, which tries to fix the midline and radius to sub-voxel accuracy:
-
-[[Image:SNT-Accurate-Point-Placement-Walkthrough-Updated-6.png|400px]]
-
-{{clear}}
 {{SNTNavBar}}
