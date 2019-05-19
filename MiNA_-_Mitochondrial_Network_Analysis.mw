@@ -80,16 +80,16 @@ A user interface prompts the user to supply a number of parameters summarized be
 | Check if ridge detection is to be used. If it is unchecked, the analysis will proceed with iterative thinning to generate the morphological skeleton. Note that ridge detection is only available for 2D images currently.
 |-
 | High contrast
-| Ridge detection only. This defines the High Contrast value for the ridge detection plugin. 
+| <b>Only required when using ridge detection!</b> This defines the High Contrast value for the ridge detection plugin. 
 |-
 | Low contrast
-| Ridge detection only. This defines the Low Contrast value for the ridge detection plugin. 
+| <b>Only required when using ridge detection!</b> This defines the Low Contrast value for the ridge detection plugin. 
 |-
 | Line width
-| Ridge detection only. The expected width of the line like mitochondrial features. 
+| <b>Only required when using ridge detection!</b> The expected width of the line like mitochondrial features. 
 |-
 | Line length
-| The minimum line length to be included in the analysis. Setting this above 0 can aid in removing spurious small lines.
+| <b>Only required when using ridge detection!</b> The minimum line length to be included in the analysis. Setting this above 0 can aid in removing spurious small lines.
 |-
 | User comment
 | A user comment to store in the table. This supports key-value pairs, which is useful for storing condition information. For example, if I wanted a column "oxygen" and a column "glucose" to store the culture conditions, I could use the comment "oxygen=18,glucose=high" to add the value 18 to a column titled oxygen and the value high to another column titled glucose.
