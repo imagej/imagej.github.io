@@ -1,0 +1,43 @@
+[[Category:SNT]][[Category:Neuroanatomy]][[Category:Scripting]]
+{{SNTNavBar}}
+
+
+==Python Notebooks==
+Direct access to the SNT API from the [https://www.python.org/ Python] programming language is made possible through the [https://pypi.org/project/pyimagej/ pyimagej] module. This enables full integration between SNT and any library in the Python ecosystem.
+==Installing pyimagej==
+Follow the instructions given [https://github.com/imagej/pyimagej#installation here]
+==Getting Started==
+To initialize Fiji from Python with GUI capabilities:
+<source lang="python">
+import imagej
+ij = imagej.init('sc.fiji:fiji', headless=False)
+</source>
+Then, use [https://github.com/kivy/pyjnius pyjnius] (bundled with pyimagej) to import the SNT (Java) classes you need. For example, to download a neuron reconstruction from the MouseLight database and calculate summary statistics on it, you would import the [http://javadoc.scijava.org/Fiji/tracing/io/MouseLightLoader MouseLightLoader] and [http://javadoc.scijava.org/Fiji/tracing/analysis/TreeStatistics.html TreeStatistics] classes:
+
+<source lang="python">
+from jnius import autoclass
+MouseLightLoader = autoclass('tracing.io.MouseLightLoader')
+TreeStatistics   = autoclass('tracing.analysis.TreeStatistics')
+</source>
+Now you can access all the attributes and methods these classes offer. Let's get a summary of the inter-node distances for a specific mouse cortical motor neuron (ID = "AA0100" in the [http://ml-neuronbrowser.janelia.org/ MouseLight database]). 
+<source lang="python">
+def run():
+    loader = MouseLightLoader("AA0100")
+    if not loader.isDatabaseAvailable():
+        print("Could not connect to ML database", "Error")
+        return
+    if not loader.idExists():
+        print("Somehow the specified id was not found", "Error")
+        return
+
+    a_tree = loader.getTree('axon', None) # compartment, color
+    s_stats = TreeStatistics(a_tree)
+    metric = TreeStatistics.INTER_NODE_DISTANCE
+    summary_stats = s_stats.getSummaryStats(metric)
+    s_stats.getHistogram(metric).show()
+    print("The average inter-node distance is %d" % summary_stats.getMean())
+</source>
+
+==Advanced Examples==
+The [https://github.com/fiji/Simple_Neurite_Tracer/tree/scijava/notebooks Notebooks] directory in the SNT [https://github.com/fiji/Simple_Neurite_Tracer GitHub repository] contains examples which are executable on [https://mybinder.readthedocs.io/en/latest/ Binder].
+For example, to run the convex_hull notebook via [https://mybinder.org/ mybinder.org], follow this link: [https://mybinder.org/v2/gh/fiji/Simple_Neurite_Tracer/scijava?filepath=%2Fnotebooks%2Fconvex_hull.ipynb convex_hull.ipynb]
