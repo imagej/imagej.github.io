@@ -68,7 +68,7 @@ Supposing you want the end of a path that you're tracing to join onto an existin
 ==Merging/Joining Paths==
 Two paths can be merged or joined in ''Edit Mode''. To do so:
 # Select a path and enter ''Edit Mode'' (by right-clicking on the image canvas to access its [[SNT:_Overview#Contextual_Menu|Contextual menu]])
-# Activate the node to be merge by hovering over it
+# Activate the node to be merged by hovering over it
 # Select the second path by using the {{Key|G}} [[SNT: Key_Shortcuts|shortcut]] and activate the second merging node by hovering over it
 # Open the contextual menu and select the initial path from the ''Connect To (Start Join)'' / ''Connect To (End Join)'' menu.
 If both nodes are terminal, the paths are merged together. Otherwise, one path will become a child of the other.  Note that one of the nodes must be terminal, to ensure no loops are created.
