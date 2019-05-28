@@ -92,7 +92,7 @@ I'll use this page to document the changes made to the ImageJ Updater in the abo
 === ImageJUpdater implements UpdaterUI [[http://www.plantuml.com/plantuml/uml/bLHDRzim3BtxL-Yu0TaVs66eqQ9OXc8hcdftJQ9JejG7H3fPz-kdA7MDM6tZtYJolSSd4jG5YquoE6e4XK2jdTx2ZovQBP0KkaZWm0khvr2tLf_u4COUmNvkJl5Vliq4lYeE3bHC49Lv0FF8ZKcGK-eQ2VWo484H3BuIcWEor94v2Zn3hvDsKB5FiXDrGH59JpT1M_JRANnQSeDPQKxCMbEsyjeE4bm-sExkvWXh9dJcre3tJD-c8C44wWGfmqfVlz_VtsusGumXoVcXx7No2dk5di4C2Mf6kzD8-WyLXvmfFVxj65AvZWQQ6UgjXp38JzXtYHRKGO-2cl0VjDwsrfRuh53LRUoLX_rgxDX2MvaL4p1uMKqMnv7TmGvXVn385Bv2JM5RstyDDKtkjUnxJJgUsnXJs87z6DqY6vq-I7e4YB_e45em6HqZFPNBYmGlRNNXhlkNfzMWQgOCSWMz7aWoPidc9g2WxHHglRqiNyxWpc_4W_QMe2m6-Yslb0c-9pJ2P_yM1lcDZBa7pGLuEpZw3m00 src]] ===
 * called from startup in case there are updates available (see last line in previous diagram)
 * called via Help > Update...
-<code>                                                                                                                                                                                                             
+<source>                                                                                                                                                                                                             
      ┌─────────────┐                                                                                                                       ┌────────────┐          ┌──────────────┐                                
      │ImageJUpdater│                                                                                                                       │ProtocolUtil│          │AvailableSites│                                
      └──────┬──────┘                                                                                                                       └─────┬──────┘          └──────┬───────┘                                
@@ -171,7 +171,7 @@ I'll use this page to document the changes made to the ImageJ Updater in the abo
      │ImageJUpdater│                │FilesCollection│          │UpdaterFrame│          │UpdateSite│          │AutomatedURLUpdate│          │ProtocolUtil│          │AvailableSites│          │ReviewSiteURLsDialog│
      └─────────────┘                └───────────────┘          └────────────┘          └──────────┘          └──────────────────┘          └────────────┘          └──────────────┘          └────────────────────┘
 
-</code>
+</source>
 
 === Manually add update site and edit URL [[http://www.plantuml.com/plantuml/uml/ZOuzpi8m343tdC8Nw0K-VKALg9XW0VK0LcqgIswA6cVWzjGiAUK7njZllRXEXfFbGOE9ASC1OqRLAo0Hv0kXCIGn1em4J6BG7lSGJlCeDO8wzb1jO2VAQJkgScSoHlXplRtRJePkOWyj9Yl38sKx-swy4kVVGtcvzh0hvlB2TJonVUqurF0PiphxCTV_aklVvlwhweccWjOSAGzw0m00 src]] ===
 <source>
