@@ -214,7 +214,7 @@ I'll use this page to document the changes made to the ImageJ Updater in the abo
 </source>
 
 
-=== Official update site and edit URL [[http://www.plantuml.com/plantuml/uml/XP5H2i8m38RVUufSO1SGaOdYao8eEq1Sin78rh5cdjziFhGuS2-5_lc_huMKKN7KgHEdh49mRngk6GMcmQCIHBR33TQnUC1UuMb9F5ibjExuHXPy2IqX50Uui50y1H6gbKCFEq3lgzcrT5mzqgpDab_296bg_9TOWzNZwj9jmV9P8hCFh-IHTDjZfLlmt31v2_xwsarVAkMUVL6iQbtsPaczjoLz0000 src]] ===
+=== Manually editing the URL of an official update site [[http://www.plantuml.com/plantuml/uml/XP5H2i8m38RVUufSO1SGaOdYao8eEq1Sin78rh5cdjziFhGuS2-5_lc_huMKKN7KgHEdh49mRngk6GMcmQCIHBR33TQnUC1UuMb9F5ibjExuHXPy2IqX50Uui50y1H6gbKCFEq3lgzcrT5mzqgpDab_296bg_9TOWzNZwj9jmV9P8hCFh-IHTDjZfLlmt31v2_xwsarVAkMUVL6iQbtsPaczjoLz0000 src]] ===
 <source>                                     
      ┌───────────┐          ┌──────────────┐          ┌───────────────┐                                               
      │SitesDialog│          │AvailableSites│          │FilesCollection│                                               
@@ -246,7 +246,6 @@ I'll use this page to document the changes made to the ImageJ Updater in the abo
      │SitesDialog│          │AvailableSites│          │FilesCollection│          │UpdateSite│          │UpdateSiteURL│
      └───────────┘          └──────────────┘          └───────────────┘          └──────────┘          └─────────────┘
 </source>
-
 
 == Relevant PRs / issues ==
 * [https://github.com/imagej/imagej-updater/issues/70 Issue for new updater]
