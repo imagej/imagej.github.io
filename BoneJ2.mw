@@ -330,7 +330,7 @@ The input image must be 3D, 8-bit and binary. Hyperstacks are not supported.
 ==== Parameters ====
 * '''Calculate''': chooses which thickness maps to calculate - trabecular thickness, trabecular spacing, or both. In order to calculate trabecular spacing, the image voxels are inverted.
 * '''Show thickness maps''': display the calculated thickness maps or not.
-* '''Mask thickness maps''': remove artifacts from the thickness maps. Artifacts are foreground voxels not present in the original image.
+* '''Mask thickness maps''': remove artifacts from the thickness maps. Artifacts are foreground voxels not present in the original image. Resets to true for each run, because unmasked pixels bias the result.
 
 ==== Results ====
 * The mean and standard deviation for each thickness map calculated.
