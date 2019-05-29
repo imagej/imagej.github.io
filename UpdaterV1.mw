@@ -9,244 +9,29 @@ I'll use this page to document the changes made to the ImageJ Updater in the abo
 * The updater is smarter about updating URLs of official sites (= listed on the list of available update sites) in case they change remotely
 * There is an interface to review updates to the URLs of active update sites
 
+== UpdateSite URL representation ==
+[[http://www.plantuml.com/plantuml/uml/ZP11ImCn48Nl-HKX9olsqAkKqY881RLWwG-ODhCrEfk4RA8K_F7EsgqsRhPucttlovktCsyYX9Xg4iP631NiKAebJx0bdDuRmjNs5NTnfaHPbjFFyLYsIdFdY5Wppee_tr9Db7JCgHhiGScDrn1nRIAAt_4RkcwXoJcnUNuOWXOfkfeDpSmHwIs-bO_Wf-iOZDtVdANEPFgP6v5jupT7Ncgi855aROYedJQLGPqZxETy2fJPXUOIUbB-fC6so5Mtc1D7kRy_-YFHpsPtwnmXM6dnW-M5zy6zeowptOeM3LH6kCmJstcVCle2JOSE05pyCW3Uq-4VoB8w_TSGzeReLwGl19ckR3afFq0EdYuCdJ0ISxGwrVG5 src]]
+[[File:FilesCollectionClass.png]]
 
-=== Manually add update site and edit URL [[http://www.plantuml.com/plantuml/uml/XOun3i8m303tlC8Vw0SGGfMec601zG5MRIfBReeQP-3tn5CZYkYImRuxfqs6Y-L9WuafmmrZHjKt817a5w4n92aFHW8cCUZlLmYFCagTeCuZD2UuY78wpweycCmH3gxtRhEJOLZOGzNao_38kYs-6x_4SZrKOAtvRZMh7sxYYMstur37JypgxD_Sk9zpQDCvDiq6e_Laov7of1y0 src]] ===
-<source>
-     ┌───────────┐          ┌───────────────┐                                               
-     │SitesDialog│          │FilesCollection│                                               
-     └─────┬─────┘          └───────┬───────┘                                               
-           │     addUpdateSite      │                                                       
-           │───────────────────────>│                       │                               
-           │                        │                       │                               
-           │                        │     create       ┌──────────┐                         
-           │                        │────────────────> │UpdateSite│                 │       
-           │                        │                  └────┬─────┘                 │       
-           │                        │                       │     create     ┌─────────────┐
-           │                        │                       │ ──────────────>│UpdateSiteURL│
-           │                        │                       │                └──────┬──────┘
-           │                    setURL                      │                       │       
-           │───────────────────────────────────────────────>│                       │       
-           │                        │                       │                       │       
-           │                        │                       │     setDefaultURL     │       
-           │                        │                       │ ─────────────────────>│       
-           │                        │                       │                       │       
-           │                    getURL                      │                       │       
-           │───────────────────────────────────────────────>│                       │       
-           │                        │                       │                       │       
-           │                        │                       │        getURL         │       
-           │                        │                       │ ─────────────────────>│       
-           │                        │                       │                       │       
-           │                        │     defaultURL        │                       │       
-           │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│       
-     ┌─────┴─────┐          ┌───────┴───────┐          ┌────┴─────┐          ┌──────┴──────┐
-     │SitesDialog│          │FilesCollection│          │UpdateSite│          │UpdateSiteURL│
-     └───────────┘          └───────────────┘          └──────────┘          └─────────────┘
-</source>
+== Manually add update site and edit URL ==
+ [[http://www.plantuml.com/plantuml/uml/XOun3i8m303tlC8Vw0SGGfMec601zG5MRIfBReeQP-3tn5CZYkYImRuxfqs6Y-L9WuafmmrZHjKt817a5w4n92aFHW8cCUZlLmYFCagTeCuZD2UuY78wpweycCmH3gxtRhEJOLZOGzNao_38kYs-6x_4SZrKOAtvRZMh7sxYYMstur37JypgxD_Sk9zpQDCvDiq6e_Laov7of1y0 src]]
+[[File:PersonalSiteSequence.png]]
 
 
-=== Manually edit the URL of an official update site [[http://www.plantuml.com/plantuml/uml/XP5H2i8m38RVUufSO1SGaOdYao8eEq1Sin78rh5cdjziFhGuS2-5_lc_huMKKN7KgHEdh49mRngk6GMcmQCIHBR33TQnUC1UuMb9F5ibjExuHXPy2IqX50Uui50y1H6gbKCFEq3lgzcrT5mzqgpDab_296bg_9TOWzNZwj9jmV9P8hCFh-IHTDjZfLlmt31v2_xwsarVAkMUVL6iQbtsPaczjoLz0000 src]] ===
-<source>                                     
-     ┌───────────┐          ┌──────────────┐          ┌───────────────┐                                               
-     │SitesDialog│          │AvailableSites│          │FilesCollection│                                               
-     └─────┬─────┘          └──────┬───────┘          └───────┬───────┘                                               
-           │                       │      addUpdateSite       │                                                       
-           │                       │ ────────────────────────>│                       │                               
-           │                       │                          │                       │                               
-           │                       │                          │     create       ┌──────────┐                         
-           │                       │                          │────────────────> │UpdateSite│                 │       
-           │                       │                          │                  └────┬─────┘                 │       
-           │                       │                          │                       │     create     ┌─────────────┐
-           │                       │                          │                       │ ──────────────>│UpdateSiteURL│
-           │                       │                          │                       │                └──────┬──────┘
-           │                       │         setURL           │                       │                       │       
-           │─────────────────────────────────────────────────────────────────────────>│                       │       
-           │                       │                          │                       │                       │       
-           │                       │                          │                       │    setModifiedURL     │       
-           │                       │                          │                       │ ─────────────────────>│       
-           │                       │                          │                       │                       │       
-           │                       │         getURL           │                       │                       │       
-           │─────────────────────────────────────────────────────────────────────────>│                       │       
-           │                       │                          │                       │                       │       
-           │                       │                          │                       │        getURL         │       
-           │                       │                          │                       │ ─────────────────────>│       
-           │                       │                          │                       │                       │       
-           │                       │                   modifiedURL                    │                       │       
-           │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│       
-     ┌─────┴─────┐          ┌──────┴───────┐          ┌───────┴───────┐          ┌────┴─────┐          ┌──────┴──────┐
-     │SitesDialog│          │AvailableSites│          │FilesCollection│          │UpdateSite│          │UpdateSiteURL│
-     └───────────┘          └──────────────┘          └───────────────┘          └──────────┘          └─────────────┘
-</source>
+== Manually edit the URL of an official update site ==
+[[http://www.plantuml.com/plantuml/uml/lOz1ReCm44NtFiLSm1UeAaJLggjMaH9nW0aUev46ZF0uvu_D1Yj4OPSDYp_l_O_RgBXe6iKegn2SlEUUKI3D3fKWSlwOEJCvdd5IkEGa_cGa3ERhXYnu5Lf3i0tyib3y3YBKAuS9FW2TwzQkmfX-eL9R9O-6RQfhzelnJEpEVwO2YrRVDhFwuLtvG7hGiq5rpwUrEyoHnoG5VJaPZoTNw3yuzaokmEzwmbXjjZIvDCeT src]]
+[[File:OfficialSiteSequence.png]]
 
-== Update Check on Startup [[http://www.plantuml.com/plantuml/uml/ZPFH3fiW68NlVGfUe2-mB4kTOch6r2XisLN3y5yaHJ3uwrv_EDfaRMFS7Pxp_GUEudb6wN4PJO8Q3H0nzHA1P0Ee6t6MT7_jASdXbrmCHhi3lse5vFGfWeNpqPZ91-8Ncxog0HGJTtbu28JQt4GgrEicF9paiNZ1BQpWMnYrxT-2FvvE_wBPXMPVhboq5SslTL7iHSw3MqmVCrcG_55mIx-MLNvbAQVjNgYIzhlN2CTPQJXSnNxi1UcvyGv18VJCAOdQsQFCfgqvpNXepUeivMLTxOVdi89nqt7fd7wZh6xs6mzoXGhmj_Etp5aBwd-E6ZuBAokQA0-RK6W3S-QCYTDFMxruOJWE7K21wP-GxNKwvOn0RHxtxy9vqtNBD3cFJt2wIctaJmETZXTwa7EiiWcYPVTUYGTSl2MYoLDEqy-ClZMFMuyJYXayTr6-_oBlneR7bHVbdJg3xPVH_040 src]]==
+== Update Check on Startup ==
 * this is the `onEvent` Method of the `DefaultUpdateService` which is called when the ImageJ UI is shown 
-<source>                                                                                    
-                                                                                                                                                                                                                
-     ┌────────────────────┐          ┌───────────────┐          ┌────────┐                                           ┌────────────┐          ┌──────────────┐          ┌──────────────────┐          ┌─────────┐
-     │DefaultUpdateService│          │CheckForUpdates│          │UpToDate│                                           │ProtocolUtil│          │AvailableSites│          │PromptUserToUpdate│          │UpdaterUI│
-     └─────────┬──────────┘          └───────┬───────┘          └───┬────┘                                           └─────┬──────┘          └──────┬───────┘          └────────┬─────────┘          └────┬────┘
-               │             run             │                      │                                                      │                        │                           │                         │     
-               │ ───────────────────────────>│                      │                                                      │                        │                           │                         │     
-               │                             │                      │                                                      │                        │                           │                         │     
-               │                             │       check         ┌┴┐                                                     │                        │                           │                         │     
-               │                             │────────────────────>│ │                                                     │                        │                           │                         │     
-               │                             │                     │ │                                                     │                        │                           │                         │     
-               │                             │                     │ │────┐                                                │                        │                           │                         │     
-               │                             │                     │ │    │ neverRemind                                    │                        │                           │                         │     
-               │                             │                     │ │<───┘                                                │                        │                           │                         │     
-               │                             │                     │ │                                                     │                        │                           │                         │     
-               │                             │  CHECK_TURNED_OFF   │ │                                                     │                        │                           │                         │     
-               │                             │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                                                     │                        │                           │                         │     
-               │                             │                     │ │                                                     │                        │                           │                         │     
-               │                             │                     │ │────┐                                                │                        │                           │                         │     
-               │                             │                     │ │    │ shouldRemindLater                              │                        │                           │                         │     
-               │                             │                     │ │<───┘                                                │                        │                           │                         │     
-               │                             │                     │ │                                                     │                        │                           │                         │     
-               │                             │    REMIND_LATER     │ │                                                     │                        │                           │                         │     
-               │                             │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                                                     │                        │                           │                         │     
-               │                             │                     │ │                                                     │                        │                           │                         │     
-               │                             │                     │ │────┐                                                │                        │                           │                         │     
-               │                             │                     │ │    │ canWrite                                       │                        │                           │                         │     
-               │                             │                     │ │<───┘                                                │                        │                           │                         │     
-               │                             │                     │ │                                                     │                        │                           │                         │     
-               │                             │     READ_ONLY       │ │                                                     │                        │                           │                         │     
-               │                             │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                                                     │                        │                           │                         │     
-               │                             │                     │ │                                                     │                        │                           │                         │     
-               │                             │                     │ │────┐                                                │                        │                           │                         │     
-               │                             │                     │ │    │ isProtectedLocation                            │                        │                           │                         │     
-               │                             │                     │ │<───┘                                                │                        │                           │                         │     
-               │                             │                     │ │                                                     │                        │                           │                         │     
-               │                             │ PROTECTED_LOCATION  │ │                                                     │                        │                           │                         │     
-               │                             │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                                                     │                        │                           │                         │     
-               │                             │                     │ │                                                     │                        │                           │                         │     
-               │                             │                     │ │────┐                                                │                        │                           │                         │     
-               │                             │                     │ │    │ isDeveloper                                    │                        │                           │                         │     
-               │                             │                     │ │<───┘                                                │                        │                           │                         │     
-               │                             │                     │ │                                                     │                        │                           │                         │     
-               │                             │     DEVELOPER       │ │                                                     │                        │                           │                         │     
-               │                             │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                                                     │                        │                           │                         │     
-               │                             │                     │ │                                                     │                        │                           │                         │     
-               │                             │                     │ │────┐                                                │                        │                           │                         │     
-               │                             │                     │ │    │ haveNetworkConnection                          │                        │                           │                         │     
-               │                             │                     │ │<───┘                                                │                        │                           │                         │     
-               │                             │                     │ │                                                     │                        │                           │                         │     
-               │                             │      OFFLINE        │ │                                                     │                        │                           │                         │     
-               │                             │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                            │                        │                        │                           │                         │     
-               │                             │                     │ │                            │                        │                        │                           │                         │     
-               │                             │                     │ │       create       ┌───────────────┐                │                        │                           │                         │     
-               │                             │                     │ │ ──────────────────>│FilesCollection│                │                        │                           │                         │     
-               │                             │                     │ │                    └───────┬───────┘                │                        │                           │                         │     
-               │                             │                     │ │            read            │                        │                        │                           │                         │     
-               │                             │                     │ │ ──────────────────────────>│                        │                        │                           │                         │     
-               │                             │                     │ │                            │                        │                        │                           │                         │     
-               │                             │                     │ │                  checkHTTPSSupport                  │                        │                           │                         │     
-               │                             │                     │ │ ────────────────────────────────────────────────────>                        │                           │                         │     
-               │                             │                     │ │                            │                        │                        │                           │                         │     
-               │                             │                     │ │                            hasUpdateSiteURLUpdates  │                        │                           │                         │     
-               │                             │                     │ │ ─────────────────────────────────────────────────────────────────────────────>                           │                         │     
-               │                             │                     └┬┘                            │                        │                        │                           │                         │     
-               │                             │     UPDATEABLE       │                             │                        │                        │                           │                         │     
-               │                             │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│                             │                        │                        │                           │                         │     
-               │                             │                      │                             │                        │                        │                           │                         │     
-               │                             │                      │                             │          run           │                        │                           │                         │     
-               │                             │──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────>                         │     
-               │                             │                      │                             │                        │                        │                           │                         │     
-               │                             │                      │                             │                        │                        │                           │           run           │     
-               │                             │                      │                             │                        │                        │                           │ ───────────────────────>│     
-     ┌─────────┴──────────┐          ┌───────┴───────┐          ┌───┴────┐                ┌───────┴───────┐          ┌─────┴──────┐          ┌──────┴───────┐          ┌────────┴─────────┐          ┌────┴────┐
-     │DefaultUpdateService│          │CheckForUpdates│          │UpToDate│                │FilesCollection│          │ProtocolUtil│          │AvailableSites│          │PromptUserToUpdate│          │UpdaterUI│
-     └────────────────────┘          └───────────────┘          └────────┘                └───────────────┘          └────────────┘          └──────────────┘          └──────────────────┘          └─────────┘
-</source>
+[[http://www.plantuml.com/plantuml/uml/ZPFH3fiW68NlVGfUe2-mB4kTOch6r2XisLN3y5yaHJ3uwrv_EDfaRMFS7Pxp_GUEudb6wN4PJO8Q3H0nzHA1P0Ee6t6MT7_jASdXbrmCHhi3lse5vFGfWeNpqPZ91-8Ncxog0HGJTtbu28JQt4GgrEicF9paiNZ1BQpWMnYrxT-2FvvE_wBPXMPVhboq5SslTL7iHSw3MqmVCrcG_55mIx-MLNvbAQVjNgYIzhlN2CTPQJXSnNxi1UcvyGv18VJCAOdQsQFCfgqvpNXepUeivMLTxOVdi89nqt7fd7wZh6xs6mzoXGhmj_Etp5aBwd-E6ZuBAokQA0-RK6W3S-QCYTDFMxruOJWE7K21wP-GxNKwvOn0RHxtxy9vqtNBD3cFJt2wIctaJmETZXTwa7EiiWcYPVTUYGTSl2MYoLDEqy-ClZMFMuyJYXayTr6-_oBlneR7bHVbdJg3xPVH_040 src]]
+[[File:UpdateCheckStartupSequence.png]]
 
-=== ImageJUpdater implements UpdaterUI [[http://www.plantuml.com/plantuml/uml/bLJDRjim3BxxANJSWEG5Xc6eqQ9OXcuhcdftHQ8zehGaY7IoxkcdE4srM6tZtYH-Fo95IXSiEihGKoKe16hLwmw-DS5gWQYm3mGzE67r56fMwWFlmzWYs8_LAN_vPMBmIR7lGOK8GPdVO1wuCX4IfAwHW2yz4HX1xmgZAI5P7PH7WoVgTTGzbEh_qImDEWeQ3Dg9kerUlF7K2D89K6yrajuGh560voGcyV76Qukko-6JD4UhQYfCNXajwgi7yNrQsERkva2hCZjfIqBsA98-gJRHnbvylR-_NQ-747oKimhaDPWXmdTlf_QVbyifcqVk-UdOwUWKjWhTAuf9DvAanJyDGnotnrEh2Ukrss6G7x1h8iqu1nqAQiA_K3jRMpl6ouFASTZNus2tKDhQtB6vAIPnYC3WH6q6KGbApTAk0xl8wHzdv0ws2BkzOUBn5MhoNLdQIwmyAY-YRrpWOLs74FqMxFla5jde-4xH0q3uIVlGZAxf4EXnt3nRyDoh7xMhzhcqabGyMGQvWbOF98apvwk8G5xR7AgTlHp_nQ4__rhI75Y2yT6WwtYXZ7SjeH4--m4oo2zat11K5-3iqDC_ src]] ===
+== ImageJUpdater implements UpdaterUI ==
 * called from startup in case there are updates available (see last line in previous diagram)
 * called via Help > Update...
-<source>                                                                             
-                                                                                                                                                                                                                   
-     ┌─────────────┐                                                                   ┌────────────┐          ┌──────────────┐                                                                                    
-     │ImageJUpdater│                                                                   │ProtocolUtil│          │AvailableSites│                                                                                    
-     └──────┬──────┘                                                                   └─────┬──────┘          └──────┬───────┘                                                                                    
-            ────┐                                                                            │                        │                                                                                            
-                │ some prep checks                                                           │                        │                                                                                            
-            <───┘                           │                                                │                        │                                                                                            
-            │                               │                                                │                        │                                                                                            
-            │       create          ┌───────────────┐                                        │                        │                                                                                            
-            │─────────────────────> │FilesCollection│                │                       │                        │                                                                                            
-            │                       └───────┬───────┘                │                       │                        │                                                                                            
-            │                     create    │                  ┌────────────┐                │                        │                                                                                            
-            │────────────────────────────────────────────────> │UpdaterFrame│                │                        │                                                                                            
-            │                               │                  └─────┬──────┘                │                        │                                                                                            
-            │     tryLoadingCollection      │                        │                       │                        │                                                                                            
-            │──────────────────────────────>│                        │                       │                        │                       │                                                                    
-            │                               │                        │                       │                        │                       │                                                                    
-            │                               │                        │                 create│                        │                  ┌──────────┐                                                              
-            │                               │──────────────────────────────────────────────────────────────────────────────────────────> │UpdateSite│                   │                                          
-            │                               │                        │                       │                        │                  └────┬─────┘                   │                                          
-            │                               │                        │                       │                        │                       │     create     ┌──────────────────┐                                
-            │                               │                        │                       │                        │                       │ ──────────────>│AutomatedURLUpdate│                                
-            │                               │                        │                       │                        │                       │                └────────┬─────────┘                                
-            │                               checkHTTPSSupport        │                       │                        │                       │                         │                                          
-            │───────────────────────────────────────────────────────────────────────────────>│                        │                       │                         │                                          
-            │                               │                        │                       │                        │                       │                         │                                          
-            │                               │ isSecureMode           │                       │                        │                       │                         │                                          
-            │───────────────────────────────────────────────────────────────────────────────>│                        │                       │                         │                                          
-            │                               │                        │                       │                        │                       │                         │                                          
-            │                               │    secure              │                       │                        │                       │                         │                                          
-            │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│                        │                       │                         │                                          
-            │                               │                        │                       │                        │                       │                         │                                          
-            ────┐                           │                        │                       │                        │                       │                         │                                          
-                │ warn if insecure          │                        │                       │                        │                       │                         │                                          
-            <───┘                           │                        │                       │                        │                       │                         │                                          
-            │                               │                        │                       │                        │                       │                         │                                          
-            │                               │          fixUserSitesProtocol                  │                        │                       │                         │                                          
-            │────────────────────────────────────────────────────────────────────────────────────────────────────────>│                       │                         │                                          
-            │                               │                        │                       │                        │                       │                         │                                          
-            │                               │                        │                       │                        │                    setNewUrl                    │                                          
-            │                               │                        │                       │                        │ ────────────────────────────────────────────────>                                          
-            │                               │                        │                       │                        │                       │                         │                                          
-            │                               │         initializeAndAddSites                  │                        │                       │                         │                                          
-            │────────────────────────────────────────────────────────────────────────────────────────────────────────>│                       │                         │                                          
-            │                               │                        │                       │                        │                       │                         │                                          
-            │                               │                        │if new, addUpdateSite  │                        │                       │                         │                                          
-            │                               │<────────────────────────────────────────────────────────────────────────│                       │                         │                                          
-            │                               │                        │                       │                        │                       │                         │                                          
-            │                               │                        │                       │                        │      if present but URL changed, setNewUrl      │                                          
-            │                               │                        │                       │                        │ ────────────────────────────────────────────────>                              │           
-            │                               │                        │                       │                        │                       │                         │                              │           
-            │                               │                        │                       │   create               │                       │                         │                    ┌────────────────────┐
-            │──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────> │ReviewSiteURLsDialog│
-            │                               │                        │                       │                        │                       │                         │                    └─────────┬──────────┘
-            │                               │                        │                       │                        │                       │                         │       setUpdateApproved      │           
-            │                               │                        │                       │                        │                       │                         │ <─────────────────────────────           
-            │                               │                        │                       │                        │                       │                         │                              │           
-            │                               │                        │                       │                        │                       │                         │            discard           │           
-            │                               │                        │                       │                        │                       │                         │ <─────────────────────────────           
-            │                               │                        │                       │                        │                       │                         │                              │           
-            │                               │                        │                       │                        │                       │                         │          keepOldURL          │           
-            │                               │                        │                       │                        │                       │                         │ <─────────────────────────────           
-            │                               │                        │                       │                        │                       │                         │                              │           
-            │                               │          applySitesURLUpdates                  │                        │                       │                         │                              │           
-            │────────────────────────────────────────────────────────────────────────────────────────────────────────>│                       │                         │                              │           
-            │                               │                        │                       │                        │                       │                         │                              │           
-            │                               │                        │                       │                        │                 applyIfApproved                 │                              │           
-            │                               │                        │                       │                        │ ────────────────────────────────────────────────>                              │           
-            │                               │                        │                       │                        │                       │                         │                              │           
-            │                               │                        │                       │                        │                       │      setDefaultURL      │                              │           
-            │                               │                        │                       │                        │                       │ <────────────────────────                              │           
-            │                               │                        │                       │                        │                       │                         │                              │           
-            │ reloadCollectionAndChecksum   │                        │                       │                        │                       │                         │                              │           
-            │──────────────────────────────>│                        │                       │                        │                       │                         │                              │           
-            │                               │                        │                       │                        │                       │                         │                              │           
-            ────┐                           │                        │                       │                        │                       │                         │                              │           
-                │ handle warnings, conflicts│                        │                       │                        │                       │                         │                              │           
-            <───┘                           │                        │                       │                        │                       │                         │                              │           
-            │                               │                        │                       │                        │                       │                         │                              │           
-            │                      setVisible                        │                       │                        │                       │                         │                              │           
-            │───────────────────────────────────────────────────────>│                       │                        │                       │                         │                              │           
-     ┌──────┴──────┐                ┌───────┴───────┐          ┌─────┴──────┐          ┌─────┴──────┐          ┌──────┴───────┐          ┌────┴─────┐          ┌────────┴─────────┐          ┌─────────┴──────────┐
-     │ImageJUpdater│                │FilesCollection│          │UpdaterFrame│          │ProtocolUtil│          │AvailableSites│          │UpdateSite│          │AutomatedURLUpdate│          │ReviewSiteURLsDialog│
-     └─────────────┘                └───────────────┘          └────────────┘          └────────────┘          └──────────────┘          └──────────┘          └──────────────────┘          └────────────────────┘
-
-</source>
+[[http://www.plantuml.com/plantuml/uml/bLJDRjim3BxxANJSWEG5Xc6eqQ9OXcuhcdftHQ8zehGaY7IoxkcdE4srM6tZtYH-Fo95IXSiEihGKoKe16hLwmw-DS5gWQYm3mGzE67r56fMwWFlmzWYs8_LAN_vPMBmIR7lGOK8GPdVO1wuCX4IfAwHW2yz4HX1xmgZAI5P7PH7WoVgTTGzbEh_qImDEWeQ3Dg9kerUlF7K2D89K6yrajuGh560voGcyV76Qukko-6JD4UhQYfCNXajwgi7yNrQsERkva2hCZjfIqBsA98-gJRHnbvylR-_NQ-747oKimhaDPWXmdTlf_QVbyifcqVk-UdOwUWKjWhTAuf9DvAanJyDGnotnrEh2Ukrss6G7x1h8iqu1nqAQiA_K3jRMpl6ouFASTZNus2tKDhQtB6vAIPnYC3WH6q6KGbApTAk0xl8wHzdv0ws2BkzOUBn5MhoNLdQIwmyAY-YRrpWOLs74FqMxFla5jde-4xH0q3uIVlGZAxf4EXnt3nRyDoh7xMhzhcqabGyMGQvWbOF98apvwk8G5xR7AgTlHp_nQ4__rhI75Y2yT6WwtYXZ7SjeH4--m4oo2zat11K5-3iqDC_ src]]
+[[File:ImageJUpdaterSequence.png]]
 
 == Command line usage ==
 <source>ImageJ --update refresh-update-sites --simulate</source>
