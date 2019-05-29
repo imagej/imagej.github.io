@@ -9,6 +9,74 @@ I'll use this page to document the changes made to the ImageJ Updater in the abo
 * The updater is smarter about updating URLs of official sites (= listed on the list of available update sites) in case they change remotely
 * There is an interface to review updates to the URLs of active update sites
 
+
+=== Manually add update site and edit URL [[http://www.plantuml.com/plantuml/uml/XOun3i8m303tlC8Vw0SGGfMec601zG5MRIfBReeQP-3tn5CZYkYImRuxfqs6Y-L9WuafmmrZHjKt817a5w4n92aFHW8cCUZlLmYFCagTeCuZD2UuY78wpweycCmH3gxtRhEJOLZOGzNao_38kYs-6x_4SZrKOAtvRZMh7sxYYMstur37JypgxD_Sk9zpQDCvDiq6e_Laov7of1y0 src]] ===
+<source>
+     ┌───────────┐          ┌───────────────┐                                               
+     │SitesDialog│          │FilesCollection│                                               
+     └─────┬─────┘          └───────┬───────┘                                               
+           │     addUpdateSite      │                                                       
+           │───────────────────────>│                       │                               
+           │                        │                       │                               
+           │                        │     create       ┌──────────┐                         
+           │                        │────────────────> │UpdateSite│                 │       
+           │                        │                  └────┬─────┘                 │       
+           │                        │                       │     create     ┌─────────────┐
+           │                        │                       │ ──────────────>│UpdateSiteURL│
+           │                        │                       │                └──────┬──────┘
+           │                    setURL                      │                       │       
+           │───────────────────────────────────────────────>│                       │       
+           │                        │                       │                       │       
+           │                        │                       │     setDefaultURL     │       
+           │                        │                       │ ─────────────────────>│       
+           │                        │                       │                       │       
+           │                    getURL                      │                       │       
+           │───────────────────────────────────────────────>│                       │       
+           │                        │                       │                       │       
+           │                        │                       │        getURL         │       
+           │                        │                       │ ─────────────────────>│       
+           │                        │                       │                       │       
+           │                        │     defaultURL        │                       │       
+           │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│       
+     ┌─────┴─────┐          ┌───────┴───────┐          ┌────┴─────┐          ┌──────┴──────┐
+     │SitesDialog│          │FilesCollection│          │UpdateSite│          │UpdateSiteURL│
+     └───────────┘          └───────────────┘          └──────────┘          └─────────────┘
+</source>
+
+
+=== Manually edit the URL of an official update site [[http://www.plantuml.com/plantuml/uml/XP5H2i8m38RVUufSO1SGaOdYao8eEq1Sin78rh5cdjziFhGuS2-5_lc_huMKKN7KgHEdh49mRngk6GMcmQCIHBR33TQnUC1UuMb9F5ibjExuHXPy2IqX50Uui50y1H6gbKCFEq3lgzcrT5mzqgpDab_296bg_9TOWzNZwj9jmV9P8hCFh-IHTDjZfLlmt31v2_xwsarVAkMUVL6iQbtsPaczjoLz0000 src]] ===
+<source>                                     
+     ┌───────────┐          ┌──────────────┐          ┌───────────────┐                                               
+     │SitesDialog│          │AvailableSites│          │FilesCollection│                                               
+     └─────┬─────┘          └──────┬───────┘          └───────┬───────┘                                               
+           │                       │      addUpdateSite       │                                                       
+           │                       │ ────────────────────────>│                       │                               
+           │                       │                          │                       │                               
+           │                       │                          │     create       ┌──────────┐                         
+           │                       │                          │────────────────> │UpdateSite│                 │       
+           │                       │                          │                  └────┬─────┘                 │       
+           │                       │                          │                       │     create     ┌─────────────┐
+           │                       │                          │                       │ ──────────────>│UpdateSiteURL│
+           │                       │                          │                       │                └──────┬──────┘
+           │                       │         setURL           │                       │                       │       
+           │─────────────────────────────────────────────────────────────────────────>│                       │       
+           │                       │                          │                       │                       │       
+           │                       │                          │                       │    setModifiedURL     │       
+           │                       │                          │                       │ ─────────────────────>│       
+           │                       │                          │                       │                       │       
+           │                       │         getURL           │                       │                       │       
+           │─────────────────────────────────────────────────────────────────────────>│                       │       
+           │                       │                          │                       │                       │       
+           │                       │                          │                       │        getURL         │       
+           │                       │                          │                       │ ─────────────────────>│       
+           │                       │                          │                       │                       │       
+           │                       │                   modifiedURL                    │                       │       
+           │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│       
+     ┌─────┴─────┐          ┌──────┴───────┐          ┌───────┴───────┐          ┌────┴─────┐          ┌──────┴──────┐
+     │SitesDialog│          │AvailableSites│          │FilesCollection│          │UpdateSite│          │UpdateSiteURL│
+     └───────────┘          └──────────────┘          └───────────────┘          └──────────┘          └─────────────┘
+</source>
+
 == Update Check on Startup [[http://www.plantuml.com/plantuml/uml/ZPFH3fiW68NlVGfUe2-mB4kTOch6r2XisLN3y5yaHJ3uwrv_EDfaRMFS7Pxp_GUEudb6wN4PJO8Q3H0nzHA1P0Ee6t6MT7_jASdXbrmCHhi3lse5vFGfWeNpqPZ91-8Ncxog0HGJTtbu28JQt4GgrEicF9paiNZ1BQpWMnYrxT-2FvvE_wBPXMPVhboq5SslTL7iHSw3MqmVCrcG_55mIx-MLNvbAQVjNgYIzhlN2CTPQJXSnNxi1UcvyGv18VJCAOdQsQFCfgqvpNXepUeivMLTxOVdi89nqt7fd7wZh6xs6mzoXGhmj_Etp5aBwd-E6ZuBAokQA0-RK6W3S-QCYTDFMxruOJWE7K21wP-GxNKwvOn0RHxtxy9vqtNBD3cFJt2wIctaJmETZXTwa7EiiWcYPVTUYGTSl2MYoLDEqy-ClZMFMuyJYXayTr6-_oBlneR7bHVbdJg3xPVH_040 src]]==
 * this is the `onEvent` Method of the `DefaultUpdateService` which is called when the ImageJ UI is shown 
 <source>                                                                                    
@@ -178,73 +246,6 @@ I'll use this page to document the changes made to the ImageJ Updater in the abo
      │ImageJUpdater│                │FilesCollection│          │UpdaterFrame│          │ProtocolUtil│          │AvailableSites│          │UpdateSite│          │AutomatedURLUpdate│          │ReviewSiteURLsDialog│
      └─────────────┘                └───────────────┘          └────────────┘          └────────────┘          └──────────────┘          └──────────┘          └──────────────────┘          └────────────────────┘
 
-</source>
-
-=== Manually add update site and edit URL [[http://www.plantuml.com/plantuml/uml/XOun3i8m303tlC8Vw0SGGfMec601zG5MRIfBReeQP-3tn5CZYkYImRuxfqs6Y-L9WuafmmrZHjKt817a5w4n92aFHW8cCUZlLmYFCagTeCuZD2UuY78wpweycCmH3gxtRhEJOLZOGzNao_38kYs-6x_4SZrKOAtvRZMh7sxYYMstur37JypgxD_Sk9zpQDCvDiq6e_Laov7of1y0 src]] ===
-<source>
-     ┌───────────┐          ┌───────────────┐                                               
-     │SitesDialog│          │FilesCollection│                                               
-     └─────┬─────┘          └───────┬───────┘                                               
-           │     addUpdateSite      │                                                       
-           │───────────────────────>│                       │                               
-           │                        │                       │                               
-           │                        │     create       ┌──────────┐                         
-           │                        │────────────────> │UpdateSite│                 │       
-           │                        │                  └────┬─────┘                 │       
-           │                        │                       │     create     ┌─────────────┐
-           │                        │                       │ ──────────────>│UpdateSiteURL│
-           │                        │                       │                └──────┬──────┘
-           │                    setURL                      │                       │       
-           │───────────────────────────────────────────────>│                       │       
-           │                        │                       │                       │       
-           │                        │                       │     setDefaultURL     │       
-           │                        │                       │ ─────────────────────>│       
-           │                        │                       │                       │       
-           │                    getURL                      │                       │       
-           │───────────────────────────────────────────────>│                       │       
-           │                        │                       │                       │       
-           │                        │                       │        getURL         │       
-           │                        │                       │ ─────────────────────>│       
-           │                        │                       │                       │       
-           │                        │     defaultURL        │                       │       
-           │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│       
-     ┌─────┴─────┐          ┌───────┴───────┐          ┌────┴─────┐          ┌──────┴──────┐
-     │SitesDialog│          │FilesCollection│          │UpdateSite│          │UpdateSiteURL│
-     └───────────┘          └───────────────┘          └──────────┘          └─────────────┘
-</source>
-
-
-=== Manually editing the URL of an official update site [[http://www.plantuml.com/plantuml/uml/XP5H2i8m38RVUufSO1SGaOdYao8eEq1Sin78rh5cdjziFhGuS2-5_lc_huMKKN7KgHEdh49mRngk6GMcmQCIHBR33TQnUC1UuMb9F5ibjExuHXPy2IqX50Uui50y1H6gbKCFEq3lgzcrT5mzqgpDab_296bg_9TOWzNZwj9jmV9P8hCFh-IHTDjZfLlmt31v2_xwsarVAkMUVL6iQbtsPaczjoLz0000 src]] ===
-<source>                                     
-     ┌───────────┐          ┌──────────────┐          ┌───────────────┐                                               
-     │SitesDialog│          │AvailableSites│          │FilesCollection│                                               
-     └─────┬─────┘          └──────┬───────┘          └───────┬───────┘                                               
-           │                       │      addUpdateSite       │                                                       
-           │                       │ ────────────────────────>│                       │                               
-           │                       │                          │                       │                               
-           │                       │                          │     create       ┌──────────┐                         
-           │                       │                          │────────────────> │UpdateSite│                 │       
-           │                       │                          │                  └────┬─────┘                 │       
-           │                       │                          │                       │     create     ┌─────────────┐
-           │                       │                          │                       │ ──────────────>│UpdateSiteURL│
-           │                       │                          │                       │                └──────┬──────┘
-           │                       │         setURL           │                       │                       │       
-           │─────────────────────────────────────────────────────────────────────────>│                       │       
-           │                       │                          │                       │                       │       
-           │                       │                          │                       │    setModifiedURL     │       
-           │                       │                          │                       │ ─────────────────────>│       
-           │                       │                          │                       │                       │       
-           │                       │         getURL           │                       │                       │       
-           │─────────────────────────────────────────────────────────────────────────>│                       │       
-           │                       │                          │                       │                       │       
-           │                       │                          │                       │        getURL         │       
-           │                       │                          │                       │ ─────────────────────>│       
-           │                       │                          │                       │                       │       
-           │                       │                   modifiedURL                    │                       │       
-           │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│       
-     ┌─────┴─────┐          ┌──────┴───────┐          ┌───────┴───────┐          ┌────┴─────┐          ┌──────┴──────┐
-     │SitesDialog│          │AvailableSites│          │FilesCollection│          │UpdateSite│          │UpdateSiteURL│
-     └───────────┘          └──────────────┘          └───────────────┘          └──────────┘          └─────────────┘
 </source>
 
 == Relevant PRs / issues ==
