@@ -24,7 +24,17 @@ A collection of specialized plugins for ImageJ providing tracking of a needle-li
 | year = 2015
 | publisher = American Chemical Society
 | doi = 10.1021/acs.chemrev.5b00398
-}}</ref>).
+}}</ref> and an example of the bending process quantification in ref.<ref name="Cizhik2018>{{ cite journal
+| title =  Quantification of photoinduced bending of dynamic molecular crystals: from macroscopic strain to kinetic constants and activation energies
+| author = Stanislav Chizhik, Anatoly Sidelnikov, Boris Zakharov, Panče Naumov and Elena Boldyreva
+| journal = Chemical Science
+| volume = 9
+| number = 8
+| pages= 2319-2335 
+| year = 2018
+| publisher = The Royal Society of Chemistry
+| doi = http://dx.doi.org/10.1039/C7SC04863G
+}}</ref> ).
 
 [[Image:photobend_demo.gif|thumb|right|Animation of the photobend time lapse (~1500x playback speed)]]
 
