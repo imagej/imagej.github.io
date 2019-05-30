@@ -87,7 +87,7 @@ Add update site PhotoBend to install the plugins automatically.
 
 * [[Update_Sites|{{bc|Help|Update...}}]]
 * Click ''Manage update sites''
-* Add and check new update site:  Name=''PhotoBend'' URL="http://sites.imagej.net/Anotherche/"
+* Add and check new update site:  Name=''PhotoBend'',  URL="http://sites.imagej.net/Anotherche/"
 * Click ''Close''
 * (You can skip this optional step by default) In the list of new jar files that are proposed to be installed from the update site, you can unchek files that do not need to be installed (for example, files not related to your operating system or processor architecture). To do this, change "Install / Update" to "Keep as is" for those files.  
 * Click ''Apply changes''
