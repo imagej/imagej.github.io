@@ -86,9 +86,9 @@ Add update site PhotoBend to install the plugins automatically.
 Warning: the plugins depend on several libraries which will be installed in local Fiji jars folder. Check for versions inconsistencies if you use these libraries with other plugins.
 The dependencies are:
 
-* javacv. Version 1.3.2 (opencv-version.jar file is copied into plugins folder to prevent automatic overwriting by Fiji updater)
-* joda-time. Version 2.9.4
-* metadata-extractor. Version 2.9.1
+* javacv. Version 1.4 (opencv-version.jar file is copied into plugins folder to prevent automatic overwriting by Fiji updater)
+* xmpcore. Version 5.1.3
+* metadata-extractor. Version 2.11.0
 
 == References ==
 <references />
