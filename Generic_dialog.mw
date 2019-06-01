@@ -35,3 +35,37 @@ if GUI.wasOKed():
     inChoice = GUI.getNextChoice() # one could alternatively call the getNextChoiceIndex too
     inNum = Win.getNextNumber() # This always return a double (ie might need to cast to int)
 </source>
+
+== Image and file inputs ==
+By default, script and plugins process the last selected image.<br>
+However sometime one needs to specify different images or files as input.<br>
+The subclass [https://javadoc.scijava.org/Fiji/fiji/util/gui/GenericDialogPlus.html GenericDialogPlus] provides a couple of handful methods for such cases, while all methods shown above are inherited from the GenericDialog class.
+
+<source lang="python">
+from fiji.util.gui import GenericDialogPlus
+
+# Create an instance of GenericDialogPlus
+GUI = GenericDialogPlus("an enhanced GenericDialog")
+
+# Add possibility to choose some images already opened in Fiji
+GUI.addImageChoice("Image1","Some description for image1")
+GUI.addImageChoice("Image2","Some description for image2")
+
+
+# The GenericDialogPlus also allows to select files, folder or both using a browse button
+GUI.addFileField("Some file path", "DefaultFilePath")
+GUI.addDirectoryField("Some folder path", "DefaultFolderPath")
+GUI.addDirectoryOrFileField("Some Path", "DefaultPath")
+
+GUI.showDialog()
+
+# Recover the inputs in order of "appearance"
+if GUI.wasOKed():
+    ImpImage1 = GUI.getNextImage() # This method directly returns the ImagePlus object
+    ImpImage2 = GUI.getNextImage()
+    
+    # Path are recovered as string
+    FilePath   = GUI.getNextString()
+    FolderPath = GUI.getNextString()
+    SomePath   = GUI.getNextString()
+</source>
