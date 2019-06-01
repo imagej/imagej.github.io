@@ -6,13 +6,32 @@ Here is an example in Jython.
 <source lang="python">
 from ij.gui import GenericDialog
 
+# Create an instance of GenericDialog
 GUI = GenericDialog("My first GUI")
-GUI.addMessage("Some information to display at the top of the GUI")
-GUI.addCheckbox("Activate some option", True)
-GUI.addStringField("Type some input text :", "initial text")
-GUI.addChoice("Choose one option among a list", ["Choice1", "Choice2"], "Choice1")
-GUI.addNumericField("Some integer", 10, 0)
-GUI.addHelp(r"https://imagej.net/Generic_dialog")
 
+# Add some GUI elements (Ok and Cancel button are present by default)
+# Elements are stacked on top of each others by default (unless specified)
+GUI.addMessage("Some information to display at the top of the GUI")
+GUI.addStringField("Type some input text :", "initial text")
+GUI.addCheckbox("This is a tickbox->Activate some option", True)
+
+# We can add elements next to each other using the addToSameRow method
+GUI.addToSameRow() # The next item is appended next to the tick box
+GUI.addChoice("Choose one option among a list", ["Choice1", "Choice2"], "Choice1") # Choice1 is default here
+
+GUI.addNumericField("Some integer", 10, 0) # 0 for no decimal part
+
+# Add a Help button in addition to the default OK/Cancel
+GUI.addHelp(r"https://imagej.net/Generic_dialog") # clicking the help button will open the provided URL in the default browser
+
+# Show dialog, the rest of the code is not executed before OK or Cancel is clicked
 GUI.showDialog() # dont forget to actually display the dialog at some point
+
+
+# If the GUI is closed by clicking OK, then recover the inputs in order of "appearance"
+if GUI.wasOKed():
+    inString = GUI.getNextString()
+    inBool = GUI.getNextBoolean()
+    inChoice = GUI.getNextChoice() # one could alternatively call the getNextChoiceIndex too
+    inNum = Win.getNextNumber() # This always return a double (ie might need to cast to int)
 </source>
