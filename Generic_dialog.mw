@@ -1,3 +1,18 @@
 The [https://javadoc.scijava.org/ImageJ1/ij/gui/GenericDialog.html Generic Dialog] class is part of ImageJ1 and can be used to make simple graphical user interfaces for scripts and plugins. It requires a bit more of work than with the [[Script Parameters|script parameters]] option but offers more possibilities.<br>
 Fiji offers an additional [https://javadoc.scijava.org/Fiji/fiji/util/gui/GenericDialogPlus.html GenericDialogPlus] subclass which include additional GUI item like a file input with a browse button.<br>
 Like the script parameters, plugins using the Generic Dialog (or one of its subclass) are macro recordable.
+
+Here is an example in Jython.
+<source lang="python">
+from ij.gui import GenericDialog
+
+GUI = GenericDialog("My first GUI")
+GUI.addMessage("Some information to display at the top of the GUI")
+GUI.addCheckbox("Activate some option", True)
+GUI.addStringField("Type some input text :", "initial text")
+GUI.addChoice("Choose one option among a list", ["Choice1", "Choice2"], "Choice1")
+GUI.addNumericField("Some integer", 10, 0)
+GUI.addHelp(r"https://imagej.net/Generic_dialog")
+
+GUI.showDialog() # dont forget to actually display the dialog at some point
+</source>
