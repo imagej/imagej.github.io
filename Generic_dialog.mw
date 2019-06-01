@@ -1,0 +1,3 @@
+The [https://javadoc.scijava.org/ImageJ1/ij/gui/GenericDialog.html Generic Dialog] class is part of ImageJ1 and can be used to make simple graphical user interfaces for scripts and plugins. It requires a bit more of work than with the [[Script Parameters|script parameters]] option but offers more possibilities.<br>
+Fiji offers an additional [https://javadoc.scijava.org/Fiji/fiji/util/gui/GenericDialogPlus.html GenericDialogPlus] subclass which include additional GUI item like a file input with a browse button.<br>
+Like the script parameters, plugins using the Generic Dialog (or one of its subclass) are macro recordable.
