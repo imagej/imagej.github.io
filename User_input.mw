@@ -1,0 +1,8 @@
+Even though one could use any Java library to make a Graphical User Interface (GUI) for a script or plugin, there are mostly 2 ways to make GUI in Fiji.<br>
+
+== [[Script parameters|Script Parameters]] ==
+This is the simplest option to make a GUI in Fiji.<br>
+It uses a generic notation like <code>#@ ParameterType VariableName</code>.
+
+== [[Generic dialog|GenericDialog]]  ==
+This class (and its subclasses) offers more possibilities than the script parameters but requires more coding.
