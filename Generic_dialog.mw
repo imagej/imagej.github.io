@@ -1,3 +1,4 @@
+== Introduction ==
 The [https://javadoc.scijava.org/ImageJ1/ij/gui/GenericDialog.html Generic Dialog] class is part of ImageJ1 and can be used to make simple graphical user interfaces for scripts and plugins. It requires a bit more of work than with the [[Script Parameters|script parameters]] option but offers more possibilities.<br>
 Fiji offers an additional [https://javadoc.scijava.org/Fiji/fiji/util/gui/GenericDialogPlus.html GenericDialogPlus] subclass which include additional GUI item like a file input with a browse button.<br>
 Like the script parameters, plugins using the Generic Dialog (or one of its subclass) are macro recordable.
@@ -80,3 +81,9 @@ For instance the previous code saved as <code>GUI_.py</code> in <code>Fiji.app/s
 <source>
 run("GUI ", "image1=MyImage1.tif image2=MyImage2.tif some_file=DefaultFilePath some_folder=DefaultFolderPath some_path=DefaultPath");
 </source>
+
+== Recalling previous entries using the Persistence service ==
+TO DO
+
+== Custom buttons ==
+TO DO
