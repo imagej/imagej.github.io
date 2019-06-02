@@ -53,9 +53,9 @@ GUI.addImageChoice("Image2","Some description for image2")
 
 
 # The GenericDialogPlus also allows to select files, folder or both using a browse button
-GUI.addFileField("Some file path", "DefaultFilePath")
-GUI.addDirectoryField("Some folder path", "DefaultFolderPath")
-GUI.addDirectoryOrFileField("Some Path", "DefaultPath")
+GUI.addFileField("Some_file path", "DefaultFilePath")
+GUI.addDirectoryField("Some_folder path", "DefaultFolderPath")
+GUI.addDirectoryOrFileField("Some_Path", "DefaultPath")
 
 GUI.showDialog()
 
@@ -68,4 +68,15 @@ if GUI.wasOKed():
     FilePath   = GUI.getNextString()
     FolderPath = GUI.getNextString()
     SomePath   = GUI.getNextString()
+</source>
+
+== Macro-recording ==
+Just like script parameters, plugins using the GenericDialog class are macro-recordable.<br>
+One important thing to note is the name of the variable in the recorded command. This name is actually the first word of the string used as label for each item, with lowercase letters only.<br>
+A single word is not very intuitive to understand a parameter in most cases. To include the next words of the label in the recorded command replace the space with underscores, as in <code>some_file</code> above.   
+ 
+For instance the previous code saved as <code>GUI_.py</code> in <code>Fiji.app/scripts/Plugins/Test</code> yields the following recorded command:<br>
+
+<source>
+run("GUI ", "image1=MyImage1.tif image2=MyImage2.tif some_file=DefaultFilePath some_folder=DefaultFolderPath some_path=DefaultPath");
 </source>
