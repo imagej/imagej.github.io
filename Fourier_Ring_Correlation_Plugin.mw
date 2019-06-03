@@ -33,9 +33,9 @@ If you are using FRC to compare different images or conditions, and your images 
 
 === June 2019 ===
 A remark from Brian Patton, University of Strathclyde, Glasgow says that the original computation for the numerator was wrong, namely:
-numerator[i] = dataA1[i] * dataA2[i] + dataB1[i] * dataB2[i];
+<code>code|numerator[i] = dataA1[i] * dataA2[i] + dataB1[i] * dataB2[i];</code>
 And should be instead:
-abs((FFT(Image1)*Complex_Conj(FFT(Image2)))
+<code>abs((FFT(Image1)*Complex_Conj(FFT(Image2)))</code>
 
 = Purpose =
 Making use of the Fourier Ring Correlation Implementation by Alex Herbert
