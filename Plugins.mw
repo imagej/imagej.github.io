@@ -21,7 +21,7 @@ If the plugin is not available via update site, but packaged as ''.jar'' file, o
 
 === Installing plugins manually ===
 
-If the plugin you want is not distributed via an ImageJ update site, please encourage the plugin's maintainer to do so! Anyone can create their own [[personal update site]] hosted on [http://sites.imagej.net/ sites.imagej.net], freeing plugin authors from the burden of distribution and server maintenance.
+If the plugin you want is not distributed via an ImageJ update site, please encourage the plugin's maintainer to do so! Anyone can create a [[personal update site]] as well as additional dedicated update sites (for a particular plugin) hosted on [http://sites.imagej.net/ sites.imagej.net], to easily share and maintain updated plugins.
 
 In the meantime, to install a plugin manually, follow the plugin's installation instructions, if any. The plugin will consist of one or more files which must be downloaded and (typically) placed in ImageJ's <tt>plugins</tt> folder:
 * If the file suffix is <tt>.jar</tt> or <tt>.class</tt> then it is usually enough to simply restart ImageJ after dropping the file into <tt>plugins</tt>.
