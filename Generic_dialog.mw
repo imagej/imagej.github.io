@@ -82,8 +82,72 @@ For instance the previous code saved as <code>GUI_.py</code> in <code>Fiji.app/s
 run("GUI ", "image1=MyImage1.tif image2=MyImage2.tif some_file=DefaultFilePath some_folder=DefaultFolderPath some_path=DefaultPath");
 </source>
 
-== Recalling previous entries using the Persistence service ==
-TO DO
+== Recalling previous entries using the PrefService ==
+It is convenient to have the previously entered parameters recalled at the next run of a given plugin. This is happening automatically for Script parameters (unless specified differently) but not for the GenericDialog class.<br>
+Fortunately, it is still possible to make it works using the PrefService.
+
+Services are some ImageJ2/SciJava features that can be though as some kind of package import at runtime. Here the link to the [https://javadoc.scijava.org/SciJava/org/scijava/prefs/PrefService.html PrefService Javadoc].<br>
+And below is a Jython example of how to use it.
+
+<source lang=python>
+#@PrefService prefs 
+from fiji.util.gui import GenericDialogPlus 
+ 
+# Create GUI 
+Win = GenericDialogPlus("Some GUI")
+ 
+Win.addImageChoice("Image", prefs.get(None, "Image", "DefaultImage") ) 
+Win.addCheckbox("Activate some option", prefs.getInt(None, "doOption", False) ) # in theory we should use the getBoolean method but it does not work for Jython, the wrong method signature is matched
+Win.addStringField("Some_string", prefs.get(None, "someString", "initial")) 
+Win.addChoice("Some_choice", ["Choice1","Choice2"], prefs.get(None, "someChoice", "DefaultChoice")) 
+Win.addNumericField("Some_integer", prefs.getInt(None, "N", 1), 0)  
+Win.addNumericField("Some_float", prefs.getFloat(None, "Decimal", 0.5), 2) 
+ 
+Win.showDialog() 
+ 
+if Win.wasOKed(): 
+	image      = Win.getNextImage() 
+	doOption   = Win.getNextBoolean()
+	someString = Win.getNextString() 
+	someChoice = Win.getNextChoice() 
+	N          = int(Win.getNextNumber()) # cast to int : getNextNumber always return a double
+	Decimal = Win.getNextNumber()
+	 
+	# Save in memory using PrefService 
+	prefs.put(None, "Image", image.getTitle()) 
+	prefs.put(None, "doOption", doOption) 
+	prefs.put(None, "someString", someString) 
+	prefs.put(None, "someChoice", someChoice ) 
+	prefs.put(None, "N", N) 
+	prefs.put(None, "Decimal", Decimal) 
+</source>
+
+The first step is to "import" the PrefService and to assign it a name, here prefs.
+
+Then there are 2 methods to respectively recover and store some parameter values from the PrefService, namely <code>get</code> and <code>put</code>.
+
+Let's start with <code>get</code>. This method is define for the different datatype <code>getInt</code>, <code>getFloat</code>, <code>getBoolean</code>. An exception for String there is no <code>getString</code> just <code>get</code>.<br>
+Also in Jython the <code>getBoolean</code> method is not mapping the right Java signature, so use <code>getInt</code> instead as illustrated above.
+
+There are 3 arguments for the <code>get</code> methods:
+
+- the 1st one is the Plugin class for which to associate the parameter persistence. Leave it None (or Null in other languages) to use the default.
+
+- the 2nd argument is the name of the variable to recall from memory/the preferences, it should be the same name used by the <code>put</code> method for that parameter.
+
+- the last parameter is the default value to use if no variable with such name exist in memory ie the first time you run your script or if you reset the preferences.
+
+
+The method <code>put</code> is even simpler as there is only a single method that takes also 3 arguments:
+
+- The 1st is like for <code>get</code> an optional Plugin class
+
+- The 2nd argument is the name used to store the parameter value in memory/in the preferences, it is the same name used by <code>get</code> to recover the previously entered value.
+
+- The 3rd value is the value to store in memory with the name in argument 2. If the parameter was already existing in memory the value is updated to this newly provided value.
+
+Therefore in the script above, the default values for the GenericDialog fields are initialized to the values available in memory, or some default values if there are missing in memory.<br>
+Once the GUI is oked, the values in memory are updated with the newly typed values, using the <code>put</code> method.
 
 == Custom buttons ==
 TO DO
