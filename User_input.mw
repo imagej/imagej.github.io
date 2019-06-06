@@ -10,11 +10,6 @@ There are as many notations/lines as there are items to put in the GUI, and the 
 
 See the [[script parameters]] page for further details.
 
-In practice, the script parameters are 
-
-but they do not offer as many options as the <code>GenericDialog</code> class (no custom layout, no Help button, no custom button).
-
-
 == GenericDialog ==
 
 The [[generic dialog|GenericDialog]] class—part of [[ImageJ1]]—offers more flexibility than the [[script parameters]], including custom layout and buttons, but requires more coding—e.g., successive calls to the plugin do not automatically remember previously entered values. Plugins coded using <code>GenericDialog</code> are also not automatically usable in other [[SciJava]] tools such as [[KNIME]] or [[ImageJFX]].
