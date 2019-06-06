@@ -1,4 +1,4 @@
-Even though one could use any Java library to make a Graphical User Interface (GUI) for a script or plugin, there are mostly 2 ways to make GUI in Fiji.<br>All those methods can be used with the scripting languages (including the IJ macro language for the script parameters). 
+Even though one could use any Java library to make a Graphical User Interface (GUI) for a script or plugin, there are mostly 2 recommended ways to collect input from the user in Fiji.<br>All those methods can be used with the scripting languages (including the IJ macro language for the script parameters). 
 
 == [[Script parameters|Script Parameters]] ==
 This is the simplest option to make a GUI in Fiji.<br>
