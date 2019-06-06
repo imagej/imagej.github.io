@@ -1,6 +1,6 @@
 == Introduction ==
-The [https://javadoc.scijava.org/ImageJ1/ij/gui/GenericDialog.html Generic Dialog] class is part of [[ImageJ1]] and can be used to make simple graphical user interfaces for scripts and plugins. It requires a bit more of work than with the [[Script Parameters|script parameters]] option but offers more possibilities.<br>
-Fiji offers an additional [https://javadoc.scijava.org/Fiji/fiji/util/gui/GenericDialogPlus.html GenericDialogPlus] subclass which include additional GUI item like a file input with a browse button.<br>
+The {{Javadoc | project = ImageJ1 | package = ij/gui | class = GenericDialog}} class is part of [[ImageJ1]] and can be used to make simple graphical user interfaces for scripts and plugins. It requires a bit more of work than with the [[Script Parameters|script parameters]] option but offers more possibilities.<br>
+Fiji offers an additional {{Javadoc | project = Fiji | package = fiji/util/gui | class = GenericDialogPlus}} subclass which include additional GUI item like a file input with a browse button.<br>
 Like the script parameters, plugins using the Generic Dialog (or one of its subclass) are macro recordable.
 
 Here is an example in Jython.
@@ -40,7 +40,7 @@ if GUI.wasOKed():
 == Image and file inputs ==
 By default, script and plugins process the last selected image.<br>
 However sometime one needs to specify different images or files as input.<br>
-The subclass [https://javadoc.scijava.org/Fiji/fiji/util/gui/GenericDialogPlus.html GenericDialogPlus] provides a couple of handful methods for such cases, while all methods shown above are inherited from the GenericDialog class.
+The subclass {{Javadoc | project = Fiji | package = fiji/util/gui | class = GenericDialogPlus}} provides a couple of handful methods for such cases, while all methods shown above are inherited from the GenericDialog class.
 
 <source lang="python">
 from fiji.util.gui import GenericDialogPlus
@@ -86,11 +86,11 @@ run("GUI ", "image1=MyImage1.tif image2=MyImage2.tif some_file=DefaultFilePath s
 It is convenient to have the previously entered parameters recalled at the next run of a given plugin. This is happening automatically for Script parameters (unless specified differently) but not for the GenericDialog class.<br>
 Fortunately, it is still possible to make it works using the PrefService.
 
-Services are some ImageJ2/SciJava features that can be though as some kind of package import at runtime. Here the link to the [https://javadoc.scijava.org/SciJava/org/scijava/prefs/PrefService.html PrefService Javadoc].<br>
+Services are some ImageJ2/SciJava features that can be though as some kind of package import at runtime. Here's the link to the {{Javadoc | project = SciJava | package = org/scijava/prefs | class = PrefService}}.<br>
 And below is a Jython example of how to use it.
 
 <source lang=python>
-#@PrefService prefs 
+#@ PrefService prefs 
 from fiji.util.gui import GenericDialogPlus 
  
 # Create GUI 
