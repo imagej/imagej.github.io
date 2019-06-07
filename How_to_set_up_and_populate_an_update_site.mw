@@ -141,7 +141,7 @@ Select the file to upload, click under the ''Stats/Action'' column, or right-cli
 
 [[Image:Upload-to-update-site.png|770px]]
 
-{{Notice | The ''Upload to <update site name>'' option is only available if you entered your [[#Start the updater and check your update site|wiki credentials]] and no other changes are pending. This is to avoid potentially corrupting your ImageJ installation. If the Upload option is not available, select the ''View changes'' view and resolve any pending changes - e.g. by updating or reverting to '''Keep as-is'''.}}
+{{Notice | The ''Upload to <update site name>'' option is only available if you entered your [[#Start the updater and check your update site|wiki credentials]] and no other changes are pending. Be aware that the password for the update site [[Update_site_FAQ#How_do_I_set_a_password_for_my_personal_update_site.3F|''is not'' your Wiki password]]. This is to avoid potentially corrupting your ImageJ installation. If the Upload option is not available, select the ''View changes'' view and resolve any pending changes - e.g. by updating or reverting to '''Keep as-is'''.}}
 
 === Modifying Dependencies ===
 
