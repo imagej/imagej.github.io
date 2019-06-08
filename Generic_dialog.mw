@@ -86,7 +86,8 @@ run("GUI ", "image1=MyImage1.tif image2=MyImage2.tif some_file=DefaultFilePath s
 It is convenient to have the previously entered parameters recalled at the next run of a given plugin. This is happening automatically for Script parameters (unless specified differently) but not for the GenericDialog class.<br>
 Fortunately, it is still possible to make it works using the PrefService.
 
-Services are some ImageJ2/SciJava features that can be though as some kind of package import at runtime. Here's the link to the {{Javadoc | project = SciJava | package = org/scijava/prefs | class = PrefService}}.<br>
+Services are some ImageJ2/SciJava features that can be though of as some kind of package import at runtime. They are not available in a plain ImageJ1, thus an alternative to recall parameter in ImageJ1 is to use a temp file to store the previously entered parameters.<br>
+Here's the link to the {{Javadoc | project = SciJava | package = org/scijava/prefs | class = PrefService}}.<br>
 And below is a Jython example of how to use it.
 
 <source lang=python>
