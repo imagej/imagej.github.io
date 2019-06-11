@@ -148,15 +148,15 @@ This section describes how to generate [[SNT:_Overview#Tracing_on_Filtered_Image
 To process a single image with the Frangi Vesselness filter, pause SNT, and select {{bc | Process | Filters | Frangi Vesselness}}. By way of example, let's say you need to enhance strucutres at two scales: twice the x voxel separation and five times that value. We apply a Gaussian convolution at each scale. Assuming your image has isotropic resolution with pixel width = pixel height = voxel depth = 1, the parameters would be:
 [[File:frangi-parameters.png|center|thumb|]]
 {{Tip| id = image-spacing|tip = To get the spatial calibration for your image, go to {{bc|Image|Properties...}} ({{key|Ctrl}}+{{key|Shift}}+{{key|P}}) in the main Fiji dialog.}}
-Save the result using {{bc | File | Save As|Tiff...}} ("test-filtered.tif", for example). Then, in SNT's dialog look for the "Tracing on Filtered Image" widget in the ''Main'' tab. Click "Browse" to specify the filtered image, and press "Load Specified File" from the ''Gear'' drop-down menu. Finally, toggle the "Trace on filtered Image" checkbox (you can do so using {{key|I}}. Now the pathfinding will occur on the filtered image. To view a MIP of the filtered image "over" the original image during tracing, toggle the "Render in overlay at X% opacity" checkbox.
+Save the result using {{bc | File | Save As|Tiff...}} ("test-filtered.tif", for example). Then, in SNT's dialog look for the "Tracing on Secondary Image" widget in the ''Main'' tab. Click the file folder button to specify the secondary image. Next, toggle the "Trace on Secondary Image" checkbox (you can do so using {{key|I}}. Now the pathfinding will occur on the secondary image. To view a MIP of the secondary image "over" the original image during tracing, toggle the "Render in overlay at X% opacity" checkbox.
 <div align="center">
 <ul> 
 <li style="display:inline-block;"> [[Image:filtered-image-load.png|none|thumb|300px|Step 1]] </li>
 <li style="display:inline-block;"> [[Image:filtered-image-toggle.png|none|thumb|300px|Step 2]] </li>
 </ul>
 </div>
-To display the image in a separate window, from the SNT dialog use {{bc|Show Cached Image}} from the ''gear'' menu or {{bc | View | Show Filtered Image}}.
-[[File:display-filtered-image.png|center|thumb|500px|Side-by-side original and filtered images]]
+To display the image in a separate window, from the SNT dialog use {{bc|Show Cached Image}} from the ''gear'' menu or {{bc | View | Show Cached ''Secondary Image''}}.
+[[File:display-filtered-image.png|center|thumb|500px|Secondary Image Overlay at 50% Opacity]]
 
 ====Multiple Images====
 The easiest way to preprocess multiple images is to record a macro for processing a single image, then wrap it in a loop to iterate over all files in a directory. For example, using IJ1 macro language:
