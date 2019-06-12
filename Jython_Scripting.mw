@@ -45,14 +45,12 @@ NB2 : Using numerous print statements might slow down the execution time when us
 
 
 ==== - With IJ.log() ====
-<pre><code>
+<source lang=python>
 from ij import IJ
 IJ.log("Hello world")
 IJ.log("This is a string followed by an int " + str(10))
-</code></pre>
+</source>
 Contrary to the print statement the log function display some output into a log window (newly open if not already open), and accept only a string as argument.
-
-
 
 === Image selection using the GenericDialog class ===
 
