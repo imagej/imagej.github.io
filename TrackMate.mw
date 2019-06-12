@@ -123,6 +123,8 @@ The [http://www.sciencedirect.com/science/article/pii/S1046202316303346  TrackMa
 * [[Using TrackMate with MATLAB]] documents the [[MATLAB]] functions shipped with Fiji that allows importing data generated with TrackMate into [[MATLAB]].
 * [[TrackMate Performance]] reports various measures of the performance of its components. Performance reports include execution time and memory usage.
 * [[TrackMate Accuracy]] reports various measures of the accuracy of its components. Accuracy reports how well TrackMate can generate scientifically correct results, and compare its output to known ground truth.
+* Various very useful tips and tricks contributed by users:
+** Dave Mason on using pivot tables to get track statistics based on spot features: [https://forum.image.sc/t/mean-intensity-of-tracks-using-trackmate/11848/5]
 
 === For developers ===
 
