@@ -108,7 +108,7 @@ The ImageJ Legacy Course covered the topics: images, tables, regions of interest
 ==Thursday==
 
 === ClearVolume and BDV VisTools===
-* [[Media:Jug_BigDataAnd3dViz.pdf|Slides]]
+* [[https://github.com/fiji/learnathon-2018/blob/master/Jug_BigDataAnd3dViz.pdf|Slides]]
 * Repositories to be cloned:
 ** <code>https://github.com/fjug/TutorialClearVolume.git</code>
 ** <code>https://github.com/fjug/TutorialBigDataViewer.git</code>
