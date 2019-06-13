@@ -151,4 +151,38 @@ Therefore in the script above, the default values for the GenericDialog fields a
 Once the GUI is oked, the values in memory are updated with the newly typed values, using the <code>put</code> method.
 
 == Custom buttons ==
-TO DO
+Using the [https://javadoc.scijava.org/Fiji/fiji/util/gui/GenericDialogPlus.html GenericDialogPlus] provided with Fiji, it is possible to add custom buttons and associated actions to a GUI.<br>
+To do so, we have to import the [https://docs.oracle.com/javase/7/docs/api/java/awt/event/ActionListener.html ActionListener] interface from <code>java.awt.event</code>.<br> 
+We then create a class that implements this interface, and that contains a single method named <code>actionPerformed</code>, which will be called anytime the user interacts with an item that is linked to this event-listening class, like a button.<br>
+
+In the following jython example, we define 2 buttons A and B, both associated to the same event-handling class named <code>ButtonClic</code>.<br>
+If any of the button is clicked, the <code>actionPerformed</code> method of <code>ButtonClic</code> is called. However the source of the event is different (button A or B), and thus we can define different commands to execute for each case.<br>
+For more complicated cases, one could also create different event-handling classes to assign to different set of GUI items. 
+
+<source lang=python>
+from fiji.util.gui    import GenericDialogPlus
+from java.awt.event   import ActionListener
+
+
+class ButtonClic(ActionListener):
+	'''Class which unique function is to handle the button clics'''
+
+	def actionPerformed(self, event): # self (or this in Java) to state that the method will be associated to the class instances
+		
+		# Check from where comes the event 
+		Source = event.getSource() # returns the Button object
+		print Source 
+
+		# Do an action depending on the button clicked
+		if Source.label == "A":
+			print "You clicked A\n"
+
+		elif Source.label == "B":
+			print "You clicked B\n"
+		
+
+Win = GenericDialogPlus("GUI with custom buttons")
+Win.addButton("A", ButtonClic() ) # We associate the button objects to some instance of the ButtonClic class
+Win.addButton("B", ButtonClic() )
+Win.showDialog()
+</source>
