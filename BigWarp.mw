@@ -122,16 +122,16 @@ Press {{key press|F8}} to bring up a transformation type selection window
 | style="padding: 5px;" | The smoothest deformable transformation that maps moving landmarks exactly to the corresponding target landmarks.
 |-
 | style="padding: 5px;" | Affine
-| style="padding: 5px;" | Linear transform with translation, rotation, independent scales and shear (12 degree of freedom)
+| style="padding: 5px;" | Linear transform with translation, rotation, independent scales and shear (12 degrees of freedom)
 |-
 | style="padding: 5px;" | Similarity
-| style="padding: 5px;" | Linear transform with translation, rotation, and one scale parameter (7 degree of freedom)
+| style="padding: 5px;" | Linear transform with translation, rotation, and one scale parameter (7 degrees of freedom)
 |-
 | style="padding: 5px;" | Rotation
-| style="padding: 5px;" | Linear transform with translation, and rotation (6 degree of freedom)
+| style="padding: 5px;" | Linear transform with translation, and rotation (6 degrees of freedom)
 |-
 | style="padding: 5px;" | Translation
-| style="padding: 5px;" | Translation only (3 degree of freedom)
+| style="padding: 5px;" | Translation only (3 degrees of freedom)
 |}
 
 === Navigation and Visualization ===
