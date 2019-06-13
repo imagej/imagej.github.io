@@ -52,6 +52,10 @@ point for the target image.
 | style="padding: 5px;" | <''Landmark mode''>+{{key press|Ctrl}}+{{key press|left-click}}
 | style="padding: 5px;" | "Pin" a point.  Add a landmark at the same location for both moving and target images.
 |-
+
+| style="padding: 5px;" | <''Landmark mode''>+{{key press|Ctrl}}+{{key press|Shift}}+{{key press|left-click}}
+| style="padding: 5px;" | Place a point in the "other" space.  Place a moving landmark from the fixed window, and vice versa.
+|-
 | style="padding: 5px;" | {{key press|Ctrl}} + {{key press|Z}}
 | style="padding: 5px;" | Undo the last landmark point change.
 |-
