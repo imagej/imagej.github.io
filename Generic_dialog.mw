@@ -132,20 +132,16 @@ Also in Jython the <code>getBoolean</code> method is not mapping the right Java 
 
 There are 3 arguments for the <code>get</code> methods:
 
-- the 1st one is the Plugin class for which to associate the parameter persistence. Leave it None (or Null in other languages) to use the default.
-
-- the 2nd argument is the name of the variable to recall from memory/the preferences, it should be the same name used by the <code>put</code> method for that parameter.
-
-- the last parameter is the default value to use if no variable with such name exist in memory ie the first time you run your script or if you reset the preferences.
+# The Plugin class for which to associate the parameter persistence. Leave it None (or Null in other languages) to use the default.
+# The name of the variable to recall from memory/the preferences, it should be the same name used by the <code>put</code> method for that parameter.
+# The default value to use if no variable with such name exist in memory ie the first time you run your script or if you reset the preferences.
 
 
 The method <code>put</code> is even simpler as there is only a single method that takes also 3 arguments:
 
-- The 1st is like for <code>get</code> an optional Plugin class
-
-- The 2nd argument is the name used to store the parameter value in memory/in the preferences, it is the same name used by <code>get</code> to recover the previously entered value.
-
-- The 3rd value is the value to store in memory with the name in argument 2. If the parameter was already existing in memory the value is updated to this newly provided value.
+# Like for <code>get</code> an optional Plugin class
+# The name used to store the parameter value in memory/in the preferences, it is the same name used by <code>get</code> to recover the previously entered value.
+# The value to store in memory with the name in argument 2. If the parameter was already existing in memory the value is updated to this newly provided value.
 
 Therefore in the script above, the default values for the GenericDialog fields are initialized to the values available in memory, or some default values if there are missing in memory.<br>
 Once the GUI is oked, the values in memory are updated with the newly typed values, using the <code>put</code> method.
