@@ -95,24 +95,24 @@ And below is a Jython example of how to use it.
 from fiji.util.gui import GenericDialogPlus 
  
 # Create GUI 
-Win = GenericDialogPlus("Some GUI")
+gui = GenericDialogPlus("Some GUI")
  
-Win.addImageChoice("Image", prefs.get(None, "Image", "DefaultImage") ) 
-Win.addCheckbox("Activate some option", prefs.getInt(None, "doOption", False) ) # in theory we should use the getBoolean method but it does not work for Jython, the wrong method signature is matched
-Win.addStringField("Some_string", prefs.get(None, "someString", "initial")) 
-Win.addChoice("Some_choice", ["Choice1","Choice2"], prefs.get(None, "someChoice", "DefaultChoice")) 
-Win.addNumericField("Some_integer", prefs.getInt(None, "N", 1), 0)  
-Win.addNumericField("Some_float", prefs.getFloat(None, "Decimal", 0.5), 2) 
+gui.addImageChoice("Image", prefs.get(None, "Image", "DefaultImage") ) 
+gui.addCheckbox("Activate some option", prefs.getInt(None, "doOption", False) ) # in theory we should use the getBoolean method but it does not work for Jython, the wrong method signature is matched
+gui.addStringField("Some_string", prefs.get(None, "someString", "initial")) 
+gui.addChoice("Some_choice", ["Choice1","Choice2"], prefs.get(None, "someChoice", "DefaultChoice")) 
+gui.addNumericField("Some_integer", prefs.getInt(None, "N", 1), 0)  
+gui.addNumericField("Some_float", prefs.getFloat(None, "Decimal", 0.5), 2) 
  
-Win.showDialog() 
+gui.showDialog() 
  
-if Win.wasOKed(): 
-	image      = Win.getNextImage() 
-	doOption   = Win.getNextBoolean()
-	someString = Win.getNextString() 
-	someChoice = Win.getNextChoice() 
-	N          = int(Win.getNextNumber()) # cast to int : getNextNumber always return a double
-	Decimal = Win.getNextNumber()
+if gui.wasOKed(): 
+	image      = gui.getNextImage() 
+	doOption   = gui.getNextBoolean()
+	someString = gui.getNextString() 
+	someChoice = gui.getNextChoice() 
+	N          = int(gui.getNextNumber()) # cast to int : getNextNumber always return a double
+	Decimal = gui.getNextNumber()
 	 
 	# Save in memory using PrefService 
 	prefs.put(None, "Image", image.getTitle()) 
