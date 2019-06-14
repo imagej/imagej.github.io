@@ -155,7 +155,7 @@ Using the [https://javadoc.scijava.org/Fiji/fiji/util/gui/GenericDialogPlus.html
 To do so, we have to import the [https://docs.oracle.com/javase/7/docs/api/java/awt/event/ActionListener.html ActionListener] interface from <code>java.awt.event</code>.<br> 
 We then create a class that implements this interface, and that contains a single method named <code>actionPerformed</code>, which will be called anytime the user interacts with an item that is linked to this event-listening class, like a button.<br>
 
-In the following jython example, we define 2 buttons A and B, both associated to the same event-handling class named <code>ButtonClic</code>.<br>
+In the folloguig jython example, we define 2 buttons A and B, both associated to the same event-handling class named <code>ButtonClic</code>.<br>
 If any of the button is clicked, the <code>actionPerformed</code> method of <code>ButtonClic</code> is called. However the source of the event is different (button A or B), and thus we can define different commands to execute for each case.<br>
 For more complicated cases, one could also create different event-handling classes to assign to different set of GUI items. 
 
@@ -181,8 +181,8 @@ class ButtonClic(ActionListener):
 			print "You clicked B\n"
 		
 
-Win = GenericDialogPlus("GUI with custom buttons")
-Win.addButton("A", ButtonClic() ) # We associate the button objects to some instance of the ButtonClic class
-Win.addButton("B", ButtonClic() )
-Win.showDialog()
+gui = GenericDialogPlus("GUI with custom buttons")
+gui.addButton("A", ButtonClic() ) # We associate the button objects to some instance of the ButtonClic class
+gui.addButton("B", ButtonClic() )
+gui.showDialog()
 </source>
