@@ -46,29 +46,29 @@ The subclass {{Javadoc | project = Fiji | package = fiji/util/gui | class = Gene
 from fiji.util.gui import GenericDialogPlus
 
 # Create an instance of GenericDialogPlus
-GUI = GenericDialogPlus("an enhanced GenericDialog")
+gui = GenericDialogPlus("an enhanced GenericDialog")
 
 # Add possibility to choose some images already opened in Fiji
-GUI.addImageChoice("Image1","Some description for image1")
-GUI.addImageChoice("Image2","Some description for image2")
+gui.addImageChoice("Image1","Some description for image1")
+gui.addImageChoice("Image2","Some description for image2")
 
 
 # The GenericDialogPlus also allows to select files, folder or both using a browse button
-GUI.addFileField("Some_file path", "DefaultFilePath")
-GUI.addDirectoryField("Some_folder path", "DefaultFolderPath")
-GUI.addDirectoryOrFileField("Some_Path", "DefaultPath")
+gui.addFileField("Some_file path", "DefaultFilePath")
+gui.addDirectoryField("Some_folder path", "DefaultFolderPath")
+gui.addDirectoryOrFileField("Some_Path", "DefaultPath")
 
-GUI.showDialog()
+gui.showDialog()
 
 # Recover the inputs in order of "appearance"
-if GUI.wasOKed():
-    ImpImage1 = GUI.getNextImage() # This method directly returns the ImagePlus object
-    ImpImage2 = GUI.getNextImage()
+if gui.wasOKed():
+    ImpImage1 = gui.getNextImage() # This method directly returns the ImagePlus object
+    ImpImage2 = gui.getNextImage()
     
     # Path are recovered as string
-    FilePath   = GUI.getNextString()
-    FolderPath = GUI.getNextString()
-    SomePath   = GUI.getNextString()
+    FilePath   = gui.getNextString()
+    FolderPath = gui.getNextString()
+    SomePath   = gui.getNextString()
 </source>
 
 == Macro-recording ==
