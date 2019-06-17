@@ -34,10 +34,12 @@ I'll use this page to document the changes made to the ImageJ Updater in the abo
 <source>ImageJ --update refresh-update-sites --updateall</source>
 <source>ImageJ --update refresh-update-sites --keepall</source>
 
-== Relevant PRs / issues ==
+== Relevant PRs ==
+# [https://github.com/imagej/imagej-updater/pull/71 V1 imagej-updater PR]
+# [https://github.com/imagej/imagej-ui-swing/pull/81 V1 imagej-swing-ui PR]
+# [https://github.com/imagej/imagej-plugins-uploader-webdav/pull/3 V1 imagej-plugins-uploader-webdav PR]
+# [https://github.com/imagej/imagej-updater/pull/67 Support redirects PR] 
+
+== Relevant Issues ==
 * [https://github.com/imagej/imagej-updater/issues/70 Issue for new updater]
 * [https://github.com/imagej/imagej-updater/issues/66 Update cached update site links issue]
-* [https://github.com/imagej/imagej-updater/pull/67 Support redirects PR] 
-* [https://github.com/imagej/imagej-updater/pull/71 V1 imagej-updater PR]
-* [https://github.com/imagej/imagej-ui-swing/pull/81 V1 imagej-swing-ui PR]
-* [https://github.com/imagej/imagej-plugins-uploader-webdav/pull/3 V1 imagej-plugins-uploader-webdav PR]
