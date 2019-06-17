@@ -9,7 +9,6 @@ I'll use this page to document the changes made to the ImageJ Updater in the abo
 * The updater is smarter about updating URLs of official sites (= listed on the list of available update sites) in case they change remotely
 ** It shows a approval dialog for activated update sites, when the URL changed in the official list of update sites.
 ** Supports migration from http to https for sites.imagej.net.
-* There is an interface to review updates to the URLs of active update sites
 
 == UpdateSite URL representation ==
 [[http://www.plantuml.com/plantuml/uml/ZPB1Ri8m38RlVGehfp6Dmwu88T2aIMXZI4CyW6bSbYrDeZHbGjh3pnrTIscAEDNz_o-_xJRp8g0FPQuJPGBv35C2iUGATvgcpqhJUlT9QPY992x3z6SyXaefdgpMh2bhaejt48y2B7CYHtCKi7KI0srKeAGj_w3x2kBdeWmsPqDktrzFI2zp0YjqqqtmokmVpY9dK3PrSPu_WHCC1dEA6gNNNNrdhIOqWDpoG77FPfbA5GwS_29olCFAIiKOLfDtmVwcW3sfUwIWmCvTE_Ievo-CVE7EbrYaMJkgeM-M5yvvUo0PP-km2lKwZd3tDxPlwVo1HOqE07iArm5qJXzlG9RP_rv3MFMZrbfU2LBriF6ao0TemEOQrS8ecPEHPQv_0G00 src]]
