@@ -38,7 +38,21 @@ You can also view the [https://imagej.net/2017-06-18_-_DAIS_learnathon 2017 Lear
 
 See [https://indico.mpi-cbg.de/event/162/timetable/#20190623 this page]!
 
-==Setting up your system==
+==Preparation==
+
+=== Knowledge === 
+
+We expect the course participants to be comfortable with:
+# Using the Terminal / Unix Shell.
+# Using Git Versioning Tool
+# Programming Java
+If you didn't use the Terminal / Unix yet. Please go through chapters 1 to 3 of this online tutorial https://swcarpentry.github.io/shell-novice/.
+
+If you don't know git, please have a look at this tutorial: http://swcarpentry.github.io/git-novice/
+
+=== Software ===
+
+'''Bring your Laptop''' and make sure you have a Terminal, Git, and a Java IDE (Eclipse or IntelliJ) installed.
 
 ==Monday==
 
