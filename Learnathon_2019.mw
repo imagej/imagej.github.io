@@ -46,9 +46,12 @@ We expect the course participants to be comfortable with:
 # Using the Terminal / Unix Shell.
 # Using Git Versioning Tool
 # Programming Java
+
 If you didn't use the Terminal / Unix yet. Please go through chapters 1 to 3 of this online tutorial https://swcarpentry.github.io/shell-novice/.
 
-If you don't know git, please have a look at this tutorial: http://swcarpentry.github.io/git-novice/
+If you don't know git, please have a look at this tutorial: http://swcarpentry.github.io/git-novice/.
+
+There many beginner books for Java. If you want to be well prepared, you may also want to learn about generics in Java.
 
 === Software ===
 
