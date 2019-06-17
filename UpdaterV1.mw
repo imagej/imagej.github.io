@@ -3,7 +3,7 @@
 I'll use this page to document the changes made to the ImageJ Updater in the about to be released version called V1.
 
 == What's different ==
-* Added a check whether Java supports the HTTPS certificate of the imagej.net server
+* Added a check whether Java version supports the HTTPS certificates.
 * Depending on what's supported, the updater will use HTTPS or HTTP links for the update sites on imagej.net (and throw a warning in case HTTPS is not supported)
 * Uploading via HTTPS is working now, both basic and digest authentication supported
 * The updater is smarter about updating URLs of official sites (= listed on the list of available update sites) in case they change remotely
