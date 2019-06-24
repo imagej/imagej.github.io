@@ -100,6 +100,14 @@ Or if you cloned the 'viewing-images' repository independently, place 'images' d
 
 Slides can be found [https://bnorthan.github.io/viewing-images-tutorial/slides/#/ here]
 
+'''15:00-16:00 ImageJ-Ops: DoG Pyramid'''
+
+[https://github.com/imagej/tutorials ImageJ Tutorials]
+
+[https://github.com/imagej/tutorials/tree/master/maven-projects/widget-demo Widget-Demo] showing all different widgets for all available input @Parameters. 
+
+[https://github.com/tibuch/DoG_Pyramid DoG Pyramid example.]
+
 ==Tuesday==
 
 ==Wednesday==
