@@ -108,6 +108,17 @@ Slides can be found [https://bnorthan.github.io/viewing-images-tutorial/slides/#
 
 [https://github.com/tibuch/DoG_Pyramid DoG Pyramid example.]
 
+'''16:00 - 16:30 Image and point transform concepts'''
+
+Concepts:
+* [http://alvyray.com/Memos/CG/Microsoft/6_pixel.pdf pixels are not little squares]
+* "Forward" transforms apply to points, "inverse" transforms apply for images. [https://github.com/bogovicj/transforms_tutorial/blob/5d9194e38898f942f00fe5e76dd4ca823aa6281d/resources/2019_DAIS.pdf Here's why]
+* Image cropping does not translate/move your image - respect the origin.
+* Save any transformation you apply to disk, because:
+** You can retransform an image from the original image + transform,
+** You can ''not'' get a transformation back from the transformed image.
+
+
 ==Tuesday==
 
 ==Wednesday==
