@@ -63,6 +63,14 @@ There many beginner books for Java. If you want to be well prepared, you may als
 '''Bring your Laptop''' and make sure you have a Terminal, Git, and a Java IDE (Eclipse or IntelliJ) installed.
 
 ==Monday==
+'''9:00 - 10:00'''
+* Welcome by [https://twitter.com/haesleinhuepf/status/1143052112798060544 Florian Jug] and Pavel Tomancak.
+* [https://twitter.com/PavelTomancak/status/1143079972506128386 Scientific speed dating]
+'''10:00 - 12:00 ImageJ2 API beating'''
+* [https://github.com/fiji/learnathon-2019/tree/master/ImageJ2_API_beating slides]
+* [https://github.com/haesleinhuepf/daisLEARNATHON2019/blob/step2_empty_workspace/src/main/java/de/mpicbg/imagej/CellCountingWorkflow.java Coding a ImageJ2 plugin template]
+* [https://github.com/haesleinhuepf/daisLEARNATHON2019/blob/what_we_did_at_dais_learnation_2019/src/main/java/de/mpicbg/imagej/CellCountingWorkflow.java Coding a workflow with ImageJ2]
+* [https://github.com/haesleinhuepf/daisLEARNATHON2019/blob/step9_put_results_table/src/main/java/de/mpicbg/imagej/CellCountingWorkflow.java Translating a workflow to the GPU]
 
 '''13:00-14:00 Reading and Writing Images'''
 
