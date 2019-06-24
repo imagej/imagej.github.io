@@ -62,6 +62,12 @@ There many beginner books for Java. If you want to be well prepared, you may als
 
 ==Monday==
 
+'''13:00-14:00 Reading and Writing Images'''
+
+Please <code>git clone</code> the following repository: https://github.com/fiji/simplified-io
+
+This repository is, as its creator Gaby Turek sais, putting lipstick on a pig. Never the less, it is very useful if you just want to open an image from disk or from some remote source. It is also useful to save TIFF files. The sole intention of this repository is to make simple desires simple. (Yes, there are 1000 ways to open an image in ImageJ/Fiji, and this is yet another way... but since it is only wrapping other ways to open/save images, we will attempt to keep simplified-io stable even if we change what actually happens behind the scenes.)
+
 ==Tuesday==
 
 ==Wednesday==
