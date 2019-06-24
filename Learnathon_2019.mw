@@ -68,7 +68,7 @@ There many beginner books for Java. If you want to be well prepared, you may als
 We will now use Simplified-IO, which is, as its creator Gaby Turek sais, putting lipstick on a pig. Never the less, it is very useful if you just want to open an image from disk or from some remote source. It is also useful to save TIFF files. The sole intention of this repository is to make loading and saving simple. (Yes, there are 1000 ways to open an image in ImageJ/Fiji, and this is yet another way... but since it is only wrapping other ways to open/save images, we will attempt to keep simplified-io stable even if we change what actually happens behind the scenes.)
 
 For this little lecture our aim is to:
-* Start a new Maven project called <code>simplified-io-lecture</code> or similar.
+* Start a new Maven project called <code>io-lecture</code> or similar.
 * Either use the POM from an earlier project of yours, or be inspired by this page: [https://imagej.net/Building_a_POM https://imagej.net/Building_a_POM]
 * If you do so, be sure that you also create folders <code>src/main/java</code> next to the new POM. Then import into your IDE (e.g. Eclipse).
 * Please update the version of the SciJava parent POM to the latest version. Find out what version this is by using [https://maven.scijava.org/#nexus-search;quick~pom-scijava https://maven.scijava.org/#nexus-search;quick~pom-scijava].
