@@ -76,6 +76,7 @@ For this little lecture our aim is to:
 * Now please try to open the image at [http://imagej.net/images/t1-head.zip http://imagej.net/images/t1-head.zip] and show it on your screen.
 ** How to load the image might be seen in the readme at [https://github.com/fiji/simplified-io https://github.com/fiji/simplified-io].
 ** Soon we will learn more about how to view images, but for now you can, for example, use <code>ij.ui().show( "img", loadedImage )</code>, which is available as soon as you started an ImageJ2 via <code>final ImageJ ij = new ImageJ()</code>.
+* Just for fun you might also want to save the image you just loaded.
 
 
 '''14:00-14:30 Viewing Images'''
