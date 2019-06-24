@@ -68,6 +68,16 @@ Please <code>git clone</code> the following repository: https://github.com/fiji/
 
 This repository is, as its creator Gaby Turek sais, putting lipstick on a pig. Never the less, it is very useful if you just want to open an image from disk or from some remote source. It is also useful to save TIFF files. The sole intention of this repository is to make simple desires simple. (Yes, there are 1000 ways to open an image in ImageJ/Fiji, and this is yet another way... but since it is only wrapping other ways to open/save images, we will attempt to keep simplified-io stable even if we change what actually happens behind the scenes.)
 
+'''14:00-14:30 Viewing Images'''
+
+Please download the [Learnathon 2019](https://github.com/fiji/learnathon-2019) reop.  Or get the code [here](https://github.com/bnorthan/viewing-images-tutorial)
+
+The images are [here](https://www.dropbox.com/home/ImagesLearnathon)
+
+Unzip and place the 'images' directory beside the learnathon-2019/ directory
+
+Slides can be found [here](https://bnorthan.github.io/viewing-images-tutorial/slides/#/)
+
 ==Tuesday==
 
 ==Wednesday==
