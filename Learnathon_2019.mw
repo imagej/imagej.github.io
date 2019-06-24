@@ -65,10 +65,17 @@ There many beginner books for Java. If you want to be well prepared, you may als
 
 '''13:00-14:00 Reading and Writing Images'''
 
-We will now use Simplified-IO, which is, as its creator Gaby Turek sais, putting lipstick on a pig. Never the less, it is very useful if you just want to open an image from disk or from some remote source. It is also useful to save TIFF files. The sole intention of this repository is to make simple desires simple. (Yes, there are 1000 ways to open an image in ImageJ/Fiji, and this is yet another way... but since it is only wrapping other ways to open/save images, we will attempt to keep simplified-io stable even if we change what actually happens behind the scenes.)
+We will now use Simplified-IO, which is, as its creator Gaby Turek sais, putting lipstick on a pig. Never the less, it is very useful if you just want to open an image from disk or from some remote source. It is also useful to save TIFF files. The sole intention of this repository is to make loading and saving simple. (Yes, there are 1000 ways to open an image in ImageJ/Fiji, and this is yet another way... but since it is only wrapping other ways to open/save images, we will attempt to keep simplified-io stable even if we change what actually happens behind the scenes.)
 
-Please <code>git clone</code> the following repository: https://github.com/fiji/simplified-io
-
+For this little lecture our aim is to:
+* Start a new Maven project called <code>simplified-io-lecture</code> or similar.
+* Either use the POM from an earlier project of yours, or be inspired by this page: [https://imagej.net/Building_a_POM https://imagej.net/Building_a_POM]
+* If you do so, be sure that you also create folders <code>src/main/java</code> next to the new POM. Then import into your IDE (e.g. Eclipse).
+* Please update the version of the SciJava parent POM to the latest version. Find out what version this is by using [https://maven.scijava.org/#nexus-search;quick~pom-scijava https://maven.scijava.org/#nexus-search;quick~pom-scijava].
+* You will have to add the suitable dependency to your POM in order to use Simplified-IO. The readme at [https://github.com/fiji/simplified-io https://github.com/fiji/simplified-io] will tell you more...
+* Now please try to open the image at [http://imagej.net/images/t1-head.zip http://imagej.net/images/t1-head.zip] and show it on your screen.
+** How to load the image might be seen in the readme at [https://github.com/fiji/simplified-io https://github.com/fiji/simplified-io].
+** Soon we will learn more about how to view images, but for now you can, for example, use <code>ij.ui().show( "img", loadedImage )</code>, which is available as soon as you started an ImageJ2 via <code>final ImageJ ij = new ImageJ()</code>.
 
 
 '''14:00-14:30 Viewing Images'''
