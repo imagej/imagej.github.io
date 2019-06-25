@@ -18,6 +18,39 @@ Reconstruction is a plugin to reconstruct holograms and perform numerical propag
 
 ==Overview==
 
+When running the command, a dialog box will pop up asking for parameters for all enabled plugins.  The parameters that are always there are as follows:
+* Hologram(s): The hologram stack to reconstruct.  This plugin is capable of reconstructing a stack of images through time.
+* Wavelength: The wavelength of light used to acquire the hologram.
+* Image Width: The width of the hologram, in real units.
+* Image Height: The height of the hologram, in real units.
+* t slice selection: The time slices to reconstruct from the original hologram stack.  See below for more info on how each choice works.
+* Z plane selection: The z planes to propagate to.  See below for more info on how each choice works.
+
+Once you have finished with the dialog, the command will perform the following algorithm:
+* From the original hologram, get the filter on the Fourier transform of the hologram to use.
+* For each time slice selected, do the following:
+** Filter the hologram
+** For each z plane selected, do the following:
+*** Propagate the field
+Plugins can insert their own operations at any point during this process.  For example, the Reference Hologram plugin removes noise after filtering each time slice, and the Result plugin gets the final result after propagating the field.
+
+===t slice selection===
+
+The t slice selection sets which frames of the hologram stack you want to reconstruct.  It will not show up if the hologram you selected only has one time slice.  The different options for choosing t slices are as follows:
+* Single: Reconstruct only a single frame from the hologram stack.
+* Current Frame: Reconstruct only the current selected frame from the hologram stack.
+* All: Reconstruct all frames from the hologram stack.
+* List: Reconstruct any arbitrary frames, as a comma-separated list of time values.
+* Range: Reconstruct a range of t slices, given a starting point, ending point, and step size.  For example, if your starting point was 2, your ending point 8, and your step size 2, it would reconstruct slices 2, 4, 6, and 8.
+* Continuous Range: The same as Range, but with the step size set to one.
+
+===Z plane selection===
+
+The Z plane selection sets which z values you want to propagate to.  The different options for choosing z value are as follows:
+* Single: Propagate only to a single particular z value.
+* List: Propagate to any arbitrary z values, as a comma-separated list of time values.
+* Range: Propagate to a range of z planes, given a starting point, ending point, and step size.  For example, if your starting point was -1 μm, your ending point 1 μm, and your step size 0.5 μm, it would propagate to -1 μm, -0.5 μm, 0 μm, 0.5 μm, and 1 μm.
+
 ==Default Plugins in Detail==
 
 ===Filter===
@@ -51,5 +84,7 @@ Reconstruction is a plugin to reconstruct holograms and perform numerical propag
 ===Result===
 
 ===Status===
+
+==Options==
 
 ==Creating Your Own Plugin==
