@@ -55,13 +55,31 @@ The Z plane selection sets which z values you want to propagate to.  The differe
 
 ===Filter===
 
+The Filter plugin acquires and applies a filter on the Fourier transform of the hologram.  When run from the command, it will show a window with the Fourier transform and ask the user to select an ROI for the filter.  When running the command from code, you may use whatever ROI you wish.  Many other plugins use the Filter plugin as well so that they can use the same filter.
+
 ===Polynomial Tilt Correction===
+
+The Polynomial Tilt Correction plugin performs tilt correction using a polynomial fit to the phase, as specified in [https://www.osapublishing.org/ao/abstract.cfm?uri=ao-45-5-851 this] paper.  The gist of the algorithm is that you find horizontal and vertical lines that <em>should</em> be flat, then find a polynomial fit to those lines, and subtract those polynomials from the phase.  When you use this plugin, on the dialog it will ask for the polynomial degree to use.  In our use, the only issues we have had were a linear tilt from a bad selection for the filter, but you may use whatever you wish.
+
+The flat line determination is the interesting part.  This is configurable through plugins, with three defaults:
 
 ====Auto====
 
+The Auto plugin determines the flat lines automatically.  For each direction, it picks up to ten lines and finds the polynomial fit on each one.  It then uses a least-squares approach to find which polynomial fits its respective line the best, and then chooses that line.  It has no extra parameters.
+
 ====Middle====
 
+The Middle plugin uses the lines crossing through the middle of the image as the flat lines.  It has no extra parameters.
+
 ====Manual====
+
+The Manual plugin lets the user input their own lines.  It has several extra parameters:
+* Pixel value for horizontal line: The y pixel value that the horizontal line will be on.
+* Horizontal line start: The x pixel value that the horizontal line will start at.
+* Horizontal line end: The x pixel value that the horizontal line will end at.
+* Pixel value for vertical line: The x pixel value that the vertical line will be on.
+* Vertical line start: The y pixel value that the vertical line will start at.
+* Vertical line end: The y pixel value that the vertical line will end at.
 
 ===Reference Hologram===
 
