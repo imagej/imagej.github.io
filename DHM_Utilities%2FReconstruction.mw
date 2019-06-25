@@ -15,3 +15,41 @@
 }}
 
 Reconstruction is a plugin to reconstruct holograms and perform numerical propagation, with a focus on holograms produced by DHM.  The plugin is highly extendable, with anybody able to add new plugins within it to perform whatever process they want at any point in the reconstruction pipeline.  By default, it includes support for angular spectrum propagation, and for various noise removal techniques such as a reference hologram and a polynomial fit algorithm.
+
+==Overview==
+
+==Default Plugins in Detail==
+
+===Filter===
+
+===Polynomial Tilt Correction===
+
+====Auto====
+
+====Middle====
+
+====Manual====
+
+===Reference Hologram===
+
+====None====
+
+====Single Image====
+
+====Single Image With Offset====
+
+====Median====
+
+====Median With Offset====
+
+====Self====
+
+===Propagation===
+
+====Angular Spectrum====
+
+===Result===
+
+===Status===
+
+==Creating Your Own Plugin==
