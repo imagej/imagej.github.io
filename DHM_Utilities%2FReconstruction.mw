@@ -34,6 +34,8 @@ Once you have finished with the dialog, the command will perform the following a
 *** Propagate the field
 Plugins can insert their own operations at any point during this process.  For example, the Reference Hologram plugin removes noise after filtering each time slice, and the Result plugin gets the final result after propagating the field.
 
+You can run the entire thing yourself in code using <code>ReconstructionOp</code>.  See the documentation for more details on how to use it.
+
 ===t slice selection===
 
 The t slice selection sets which frames of the hologram stack you want to reconstruct.  It will not show up if the hologram you selected only has one time slice.  The different options for choosing t slices are as follows:
@@ -121,7 +123,11 @@ This plugin actually propagates the data.  It is based off of Opto-Digital's [ht
 
 ===Result===
 
+The Result plugin gets the result of the whole command and finds a way to display it to the user.  It adds four checkboxes to the dialog near the bottom for which parts of the resulting fields you want: the amplitude, the phase, the real part, and the imaginary part.  It also adds a choice for if you want an 8-bit, 16-bit, or 32-bit image.  Finally, to actually get the result, in the command you can either save it to a file, or if not, it will display it directly.  If running the command in a program, you can set the method it calls once it's finished to whatever you like.
+
 ===Status===
+
+The Status plugin just updates the status bar during the command's running.
 
 ==Options==
 
