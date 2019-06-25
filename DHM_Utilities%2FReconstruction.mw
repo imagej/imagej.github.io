@@ -73,7 +73,7 @@ The Middle plugin uses the lines crossing through the middle of the image as the
 
 ====Manual====
 
-The Manual plugin lets the user input their own lines.  It has several extra parameters:
+The Manual plugin lets the user input their own lines.  Because the edges of the reconstructed images are always a little strange, it is advised to not use values near the edge.  It has several extra parameters:
 * Pixel value for horizontal line: The y pixel value that the horizontal line will be on.
 * Horizontal line start: The x pixel value that the horizontal line will start at.
 * Horizontal line end: The x pixel value that the horizontal line will end at.
@@ -83,21 +83,41 @@ The Manual plugin lets the user input their own lines.  It has several extra par
 
 ===Reference Hologram===
 
+The Reference Hologram plugin corrects noise issues using a reference hologram as specified in [https://www.osapublishing.org/oe/abstract.cfm?uri=oe-14-10-4300 this] paper.  The plugin also has support for using the reference hologram to deal with amplitude noise as well, as specified in [https://iopscience.iop.org/article/10.1088/0957-0233/19/7/074007/pdf this] paper.  When the reference hologram is enabled, you have the option to use it to cancel phase and/or amplitude.  There still seems to be a few issues with the amplitude reference hologram, so use it at your own discretion.  Also, for most reference hologram algorithms, there is the option to use the same ROI.  Checking this box will make the reference hologram use the same filter as everything else.
+
+The method of acquiring the reference hologram is configurable through plugins, with several defaults:
+
 ====None====
+
+Don't use a reference hologram.
 
 ====Single Image====
 
+Use a single image as your reference hologram.
+
 ====Single Image With Offset====
+
+Use a single image at a time as your reference hologram, but pick them relative to the current time slice being reconstructed.  The offset is added to the original hologram time slice, and the result is what time slice to use for the reference hologram.
 
 ====Median====
 
+Use the median of an image stack as your reference hologram.  You may select certain time slices here like for the time parameter above.
+
 ====Median With Offset====
+
+Use the median of an image stack as your reference hologram, but pick the slices relative to the current time slice being reconstructed.  You may select certain time slices here like for the time parameter above.  The offset is added to the original hologram time slice, and the result is what is considered frame 1 for calculating the median.
 
 ====Self====
 
+Use the current hologram itself as the reference hologram.  The idea is to use the very center of the Fourier transform to remove just the large-scale issues while keeping the small-scale samples intact.  As such, this doesn't allow you to use the "use same ROI" option.
+
 ===Propagation===
 
+The Propagation plugin sets up the data for propagation.  Because there are different methods of propagation, this is configurable through plugins.  Currently, the only default method of propagation is Angular Spectrum.
+
 ====Angular Spectrum====
+
+This plugin actually propagates the data.  It is based off of Opto-Digital's [https://unal-optodigital.github.io/NumericalPropagation/ Numerical Propagation] plugin, but it has been changed slightly to allow for faster computations when propagating to many z and time slices.
 
 ===Result===
 
