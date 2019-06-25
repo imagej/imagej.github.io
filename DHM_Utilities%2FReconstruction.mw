@@ -18,7 +18,7 @@ Reconstruction is a plugin to reconstruct holograms and perform numerical propag
 
 ==Overview==
 
-When running the command, a dialog box will pop up asking for parameters for all enabled plugins.  The parameters that are always there are as follows:
+To run the command, run "Plugins > DHM > Reconstruction".  When running the command, a dialog box will pop up asking for parameters for all enabled plugins.  The parameters that are always there are as follows:
 * Hologram(s): The hologram stack to reconstruct.  This plugin is capable of reconstructing a stack of images through time.
 * Wavelength: The wavelength of light used to acquire the hologram.
 * Image Width: The width of the hologram, in real units.
@@ -130,5 +130,11 @@ The Result plugin gets the result of the whole command and finds a way to displa
 The Status plugin just updates the status bar during the command's running.
 
 ==Options==
+
+Every plugin has options that can be changed in the "Plugins > DHM > Reconstruction Options" command.  Here the units for some of the values can be changed, plugins can be enabled/disabled, and plugins can put their own options here too.  Here are the options that the default plugins have:
+
+===Propagation/Angular Spectrum===
+
+The Angular Spectrum plugin can cache a lot of its processing to speed up the process.  However, when performing a large amount of reconstructions, the memory used could increase too much.  You can change the cutoff point of the cache size here, or disable caching entirely.
 
 ==Creating Your Own Plugin==
