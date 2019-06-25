@@ -31,6 +31,7 @@ You can also view the [https://imagej.net/2017-06-18_-_DAIS_learnathon 2017 Lear
 ''''I am a PhD student in the Jug-Lab at MPI-CBG / CSBD. I work on content-aware image restoration applications for electron microscopy data. I learned about the ImageJ-Universe via KNIME Image Processing, contributed to imagej-ops and I am a fan of BigDataViewer."''
 
 '''Pavel Moravec'''
+''''I am a researcher at IT4Innovations National Supercomputing Center and a member of a group working on making the ImageJ2 / FIJI run in massive parallel High-Performance Computing environments and solving issues associated with such tasks. Our group works on processing large image data, especially from electron microscopy data, with batch processing pipelines. For this task, we are developing the scijava-parallel library with ParallelService and an extensions to imagej-server and its clients. In future, we consider extending the ParallelService  to cloud environment as well. I am also dealing with issues arising from the need to transfer data to and from the HPC environment.''''
 
 '''[https://imagej.net/User:Pietzsch Tobias Pietzsch]'''
 ''''I'm a postdoc in the Jug and Zechner labs at MPI-CBG / CSBD. I am the coauthor and maintainer of ImgLib2, BigDataViewer, BigVolumeViewer, Mastodon, etc."''
