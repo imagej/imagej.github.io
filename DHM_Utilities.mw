@@ -13,6 +13,9 @@
 | maintainers = {{Person|David Cohoe}}
 }}
 
-DHM Utilities is a collection of plugins for use in Digital Holographic Microscopy.  It is not finished yet and I'll update this wiki page once I have finished it.
+DHM Utilities is a collection of plugins for use in Digital Holographic Microscopy.  It is not completely finished yet, but the following parts are complete and have wiki pages:
+* [[DHM Utilities/Reconstruction]]
+* [[DHM Utilities/Phase Unwrapping]]
+I'll update this wiki page when I have finished everything.
 
 [[Category:Plugins]]
