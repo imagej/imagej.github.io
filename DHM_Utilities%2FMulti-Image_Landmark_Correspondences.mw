@@ -1,0 +1,15 @@
+{{Component
+| project = ImageJ
+| name    = Reconstruction
+| source = {{GitHub | org=sudgy | repo=multi-landmark}}
+| license = [[LGPLv3]]
+| devStatus = {{DevStatus | developer=yes | incubating=no | obsolete=no}}
+| supportStatus = {{SupportStatus | debugger=yes | reviewer=yes | support=yes}}
+| founders = {{Person|David Cohoe}} ([mailto:dcohoe@pdx.edu])
+| leads = {{Person|David Cohoe}}
+| developers = {{Person|David Cohoe}}
+| debuggers = {{Person|David Cohoe}}
+| reviewers = {{Person|David Cohoe}}
+| support = {{Person|David Cohoe}}
+| maintainers = {{Person|David Cohoe}}
+}}
