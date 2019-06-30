@@ -1,11 +1,3 @@
-= Look where they used ImageJ last week! =
-Alternatively, view the ImageJ usage map for [[Usage_Yearly|the last year]].
+The statistics for website visits and ImageJ updates are aggregated into a publicly viewable form at the following URL:
 
-{{#widget:UsageMap
-|url=map-7.html
-|width=775
-|height=600
-|border=0
-}}
-
-Here's a [[KNIME]] workflow that uses the same data to plot a map using R and ggplot2: [[File:Usage Map.zip]]
+{{BigLink | url=https://juglab.mpi-cbg.de/matomo/}}
