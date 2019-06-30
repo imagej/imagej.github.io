@@ -1,12 +1,1 @@
-{{AboutMenu}}= Look where they used ImageJ in the past year! =
-
-Be patient; it takes a little while to load. ;-)
-
-Alternatively, view the ImageJ usage map for [[Usage_weekly|the last week]].
-
-{{#widget:UsageMap
-|url=map-365.html
-|width=775
-|height=600
-|border=0
-}}
+#REDIRECT [[Usage]]
