@@ -21,9 +21,10 @@ See the [[Licensing]] page for details.
 
 Fiji is supported by several laboratories and institutions:
 
-* [[LOCI]] in Madison, Wisconsin, USA, home of [[ImageJ2]].
-* [http://www.mpi-cbg.de/research/research-groups/pavel-tomancak.html The Tomancak Laboratory] in Dresden, Germany.
-* [https://www.janelia.org/lab/saalfeld-lab The Saalfeld Lab] at [https://www.janelia.org/ Janelia Research Campus].
+* The [[LOCI|Eliceiri/LOCI]] lab at [https://wisc.edu/ UW-Madison], home of [[ImageJ2]].
+* The [https://www.mpi-cbg.de/research-groups/current-groups/pavel-tomancak/research-focus/ Tomancak Lab] at [https://mpi-cbg.de/ MPI-CBG].
+* The [https://www.mpi-cbg.de/research-groups/current-groups/florian-jug/research-focus/ Jug Lab] at [https://mpi-cbg.de/ MPI-CBG].
+* The [https://www.janelia.org/lab/saalfeld-lab Saalfeld Lab] at [https://www.janelia.org/ Janelia Research Campus].
 * Individuals at many other institutions worldwide.
 
 See the [[Contributors]] page for a complete list.
