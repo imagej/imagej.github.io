@@ -141,3 +141,19 @@ The presentation and exercises can be found here: https://github.com/maarzt/imag
 '''13:00 - 15:00: KNIME Introduction'''
 
 == Friday ==
+
+'''9:00 - 12:00 KNIME Image Processing Basics'''
+
+Material can be found here https://github.com/knime-ip/knip-course
+
+'''13:00 - 14:00 Inklib, Using imglib2 from Kotlin'''
+
+https://github.com/hanslovsky/imklib-tutorial
+
+'''14:00 - 15:00 SciJava Parallel Demonstration'''
+
+https://github.com/fiji-hpc/scijava-parallel
+
+'''15:00 - 16:00 Update Sites'''
+
+[[How to set up and populate an update site]]
