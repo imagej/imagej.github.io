@@ -12,36 +12,36 @@ Historically, [[ImageJ 1.x]] was funded internally by the [http://rsbweb.nih.gov
 
 In recent years, ImageJ2 development has been funded by several sources, including a [http://www.wellcome.ac.uk/ Wellcome Trust] Strategic Award (Ref: 095931) for the [[OMERO]] project, and substantial development effort at the University of Konstanz, University of Wisconsin-Madison and elsewhere.
 
-The ImageJ2 project as a whole is maintained by {{Person|Rueden}} of UW-Madison [[LOCI]], currently supported by CZI as an [https://www.chanzuckerberg.com/newsroom/czi-announces-support-for-open-source-software-efforts-to-improve-biomedical-imaging Imaging Software Fellow].
+The ImageJ2 project as a whole is maintained by {{Person|Rueden}} of the [[LOCI|Eliceiri/LOCI lab]], currently supported by CZI as an [https://www.chanzuckerberg.com/newsroom/czi-announces-support-for-open-source-software-efforts-to-improve-biomedical-imaging Imaging Software Fellow].
 
 == SCIFIO ==
 
-[[SCIFIO]] was funded by the [http://nsf.gov/ National Science Foundation], award number [http://www.nsf.gov/awardsearch/showAward?AWD_ID=1148362 1148362]. It was initially developed by {{Person|Hinerm}} and {{Person|Rueden}} of UW-Madison [[LOCI]].
+[[SCIFIO]] was funded by the [http://nsf.gov/ National Science Foundation], award number [http://www.nsf.gov/awardsearch/showAward?AWD_ID=1148362 1148362]. It was initially developed by {{Person|Hinerm}} and {{Person|Rueden}} of the [[LOCI|Eliceiri/LOCI lab]].
 
-SCIFIO's development is now funded indirectly by various institutions as part of their respective research and development goals. SCIFIO as a whole is organized and maintained as part of the ImageJ2 effort by {{Person|Rueden}} of UW-Madison [[LOCI]].
+SCIFIO's development is now funded indirectly by various institutions as part of their respective research and development goals. SCIFIO as a whole is organized and maintained as part of the ImageJ2 effort by {{Person|Rueden}} of the [[LOCI|Eliceiri/LOCI lab]].
 
 == ImgLib2 ==
 
 The [[ImgLib2]] project was developed by {{Person|Saalfeld}}, {{Person|StephanP}} and {{Person|Pietzsch}} of the [https://mpi-cbg.de/research/research-groups/pavel-tomancak.html Tomancak lab] at [https://mpi-cbg.de/ MPI-CBG].
 
-The ImgLib2 project as a whole is organized and maintained by {{Person|Pietzsch}} of MPI-CBG, {{Person|Saalfeld}} of Janelia Research Campus, and {{Person|Rueden}} of UW-Madison [[LOCI]].
+The ImgLib2 project as a whole is organized and maintained by {{Person|Pietzsch}} of MPI-CBG, {{Person|Saalfeld}} of Janelia Research Campus, and {{Person|Rueden}} of the [[LOCI|Eliceiri/LOCI lab]].
 
 [[ImgLib2]] is currently funded by [https://bmbf.org/ Bundesministerium für Bildung und Forschung (BMBF)] grant 031L0102.
 
-[[ImgLib2]] is also funded indirectly by the various involved software efforts, including the [https://www.mpi-cbg.de/tomancak Tomancak], [https://www.mpi-cbg.de/jug Jug] and [https://www.janelia.org/lab/saalfeld-lab Saalfeld] labs as well as UW-Madison [[LOCI]].
+[[ImgLib2]] is also funded indirectly by the various involved software efforts, including the [https://www.mpi-cbg.de/tomancak Tomancak], [https://www.mpi-cbg.de/jug Jug] and [https://www.janelia.org/lab/saalfeld-lab Saalfeld] labs as well as the [[LOCI|Eliceiri/LOCI lab]].
 
 == SciJava ==
 
 Core [[SciJava]] libraries are funded indirectly by the various involved software efforts, including [[ImageJ2]], [[KNIME]], [[OMERO]] and [[CellProfiler]].
 
-The SciJava project as a whole is organized and maintained by {{Person|Rueden}} of UW-Madison [[LOCI]], currently supported by CZI as an [https://www.chanzuckerberg.com/newsroom/czi-announces-support-for-open-source-software-efforts-to-improve-biomedical-imaging Imaging Software Fellow].
+The SciJava project as a whole is organized and maintained by {{Person|Rueden}} of the [[LOCI|Eliceiri/LOCI lab]], currently supported by CZI as an [https://www.chanzuckerberg.com/newsroom/czi-announces-support-for-open-source-software-efforts-to-improve-biomedical-imaging Imaging Software Fellow].
 
 == Fiji ==
 
 The [[Fiji]] distribution of [[ImageJ]] for the life sciences is a broad collection of plugins by many authors across the worldwide community.
 
 Fiji as a whole is organized and maintained by:
-* {{Person|Rueden}} of UW-Madison [[LOCI]], currently supported by CZI as an [https://www.chanzuckerberg.com/newsroom/czi-announces-support-for-open-source-software-efforts-to-improve-biomedical-imaging Imaging Software Fellow].
+* {{Person|Rueden}} of the [[LOCI|Eliceiri/LOCI lab]], currently supported by CZI as an [https://www.chanzuckerberg.com/newsroom/czi-announces-support-for-open-source-software-efforts-to-improve-biomedical-imaging Imaging Software Fellow].
 * {{Person|turekg}} of [[CSBD]]/[[MPI-CBG]] as part of a funded Fiji Software Sustainability Grant (DFG TO563/8-1).
 
 Fiji development is also funded indirectly by various institutions as part of their respective research and development goals.
