@@ -166,6 +166,13 @@ output, such as a "verbose" flag.
 #@ Integer (label="Some integer parameter") my_int
 </source>
 
+You can [https://forum.image.sc/t/multiline-messages-in-dialog-widgets/183 use HTML] to format the message string, for example:
+[[File:ScijavaMultilineMessage.png|thumb]]
+<source lang="python">
+#@ String (visibility=MESSAGE, value="<html>Message line 1<br/>Message line 2<p>Let's make a list<ul><li>item a</li><li>item b</li></ul></html>") docmsg
+#@ Integer anIntParam
+</source>
+
 {{Warning | Currently if a script containing a MESSAGE string is recorded with the macro recorder and the resulting recorded code executed, a window will show up containing only the MESSAGE string This is unexpected and will be corrected in the future.}}
 
 === Multiple Choice ===
