@@ -158,11 +158,11 @@ This property set if the parameter should be displayed, editable and/or recorded
 - INVISIBLE: parameter is excluded from the history for the purposes of data provenance, and also excluded as a parameter when recording scripts. This option should only be used for parameters with no effect on the final
 output, such as a "verbose" flag.
 
-- MESSAGE: parameter value is intended as a message only, not editable by the user nor included as an input or output parameter.
+- MESSAGE: parameter value is intended as a message only, not editable by the user nor included as an input or output parameter. The option <code>required</code> should be set to false.
 
 [[File:ScriptParam_MESSAGEstring.JPG|thumb]]
 <source lang="python">
-#@ String (visibility=MESSAGE, value="This is a documentation line") msg
+#@ String (visibility=MESSAGE, value="This is a documentation line", required=false) msg
 #@ Integer (label="Some integer parameter") my_int
 </source>
 
