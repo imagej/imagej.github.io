@@ -24,7 +24,7 @@ The plugin currently has a bug in that it creates an excess number of levels, wh
 
 == Installation ==
 
-The plugin can be downloaded from the [http://jenkins.imagej.net/job/deep-zoom-plugin/ deep-zoom ImageJ Jenkins job].
+The plugin can be downloaded from the [[SciJava Maven repository]] as [https://maven.scijava.org/#nexus-search;gav~loci~deep_zoom-plugin[[User:Rueden|Rueden]] ([[User talk:Rueden|talk]]) loci:deep_zoom-plugin].
 
 Copy the plugin jar to ImageJ's plugins folder.  Once restarted the plugin will appear in ImageJ's 'File/Save As...' menu as 'Deep Zoom...'.
 
