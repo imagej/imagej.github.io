@@ -1,12 +1,3 @@
-{{DevelopMenu | tools}}{{Minibox | logo=Jenkins.png | blurb='''Jenkins:''' Serving the ImageJ community, 2010 - 2017!}}ImageJ has a [http://jenkins.imagej.net/ Jenkins server]: a continuous integration system which automatically checks the code for build and test errors.
-
-{{Notice | ImageJ and SciJava projects are in the midst of transitioning to [[Travis CI]] and [[AppVeyor]] for CI services. When this transition is complete, the ImageJ Jenkins server will be retired.}}
-
-The ImageJ Jenkins currently performs a small number of key services:
-
-* [https://jenkins.imagej.net/job/Synchronize-and-deploy-IJ1/ Automatic deployment of ImageJ 1.x] and [https://jenkins.imagej.net/job/ImageJ1-releases/ building of installers for ImageJ 1.x].
-* [https://jenkins.imagej.net/job/Stable-Fiji-Java-8/ Building the latest Fiji download bundles].
-
-For an up-to-date list, see the [https://jenkins.imagej.net/view/Active/ list of active Jenkins jobs].
+{{DevelopMenu | tools}}{{Minibox | logo=Jenkins.png | blurb='''Jenkins:''' Serving the ImageJ community, 2010 - 2019!}}ImageJ had a Jenkins server: a continuous integration system which automatically checked the code for build and test errors. As of 2019, the [[ImageJ]] and [[SciJava]] projects have transitioned to [[Travis CI]] and [[AppVeyor]] for CI services.
 
 [[Category:Development]]
