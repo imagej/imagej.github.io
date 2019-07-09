@@ -39,8 +39,8 @@ You can script the plugin. Here is an example :
 == Related links ==
 * [[Multi_Kymograph]] : The first kymograph bundled with Fiji, with support for multiple Line ROIs
 * Source code on GitHub : https://github.com/fiji/KymographBuilder
-* Maven : http://maven.imagej.net/#nexus-search;quick~kymographbuilder
-* Jenkins : http://jenkins.imagej.net/job/KymographBuilder/
+* Maven : https://maven.scijava.org/#nexus-search;quick~kymographbuilder
+* Travis CI : https://travis-ci.org/fiji/KymographBuilder
 
 == Authors ==
 
