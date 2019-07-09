@@ -2,7 +2,7 @@ This page will give you an idea how Fiji's source code is organized.  Every dire
 
 == The Fiji launcher ==
 
-The [[Fiji Launcher]] is now called ''ImageJ launcher'' and lives {{GitHub|org=imagej|repo=imagej-launcher|label=in its own repository}}. It is [http://jenkins.imagej.net/job/ImageJ-launcher built by Jenkins].
+The [[Fiji Launcher]] is now called ''ImageJ launcher'' and lives {{GitHub|org=imagej|repo=imagej-launcher|label=in its own repository}}. It is [https://travis-ci.org/imagej/imagej-launcher built by Travis CI].
 
 == The plugins ==
 
