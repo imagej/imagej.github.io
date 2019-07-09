@@ -2,6 +2,8 @@
 {{TOC}}
 = Services =
 
-[[ImageJ]] and [[SciJava]] projects are in the process of transitioning from [[Jenkins]] to AppVeyor for [[Windows]] builds. Stay tuned.
+Most [[ImageJ]] and [[SciJava]] builds use [[Travis CI]]. However, for Windows-specific builds, AppVeyor is used.
+
+See e.g. the [https://ci.appveyor.com/project/scijava/imagej-launcher ImageJ Launcher] build.
 
 [[Category:Development]]
