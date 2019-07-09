@@ -10,7 +10,6 @@
 {{MenuItem | [[Downloading and Building Fiji From Source|Building Fiji from source]] }}
 {{MenuItem | [[Developing Fiji]] }}
 {{MenuItem | [[Fiji/Contribution requirements|Contribution requirements]] }}
-{{MenuItem | [[Supported Compilers|Supported compilers]] }}
 }}
 }}{{Project|Fiji}}
 <noinclude>
