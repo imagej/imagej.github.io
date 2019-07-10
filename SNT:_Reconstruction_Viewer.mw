@@ -1,0 +1,12 @@
+{{SNTNavBar}}
+[[Category:SNT]][[Category:Neuroanatomy]]
+<div class="toclimit-3">
+
+SNT's Reconstruction Viewer is a powerful OpenGL 3D visualization tool for both surface meshes and reconstructions
+* It can be used as a standalone program or from withing SNT
+* Features:
+** Advanced rendering supporting axes, transparency, color interpolation and path smoothing
+** Interactive scenes (controlled rotations, panning, zoom, scaling, animation, "dark"/"light" mode)
+** Tools for management and customization of scene elements
+** Ability to render both local and remote files on the same scene
+** Loading of surface meshes of several template brains (Drosophila and Allen CCF (Allen Mouse Brain Atlas))
