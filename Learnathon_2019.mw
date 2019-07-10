@@ -148,6 +148,14 @@ The course went through the last two examples in https://github.com/imglib/imgli
 
 Presentation & Exercises: https://github.com/maarzt/imagej-roi-course
 
+
+'''13:30 - 15:00 Spatial transformations with imglib2'''
+
+The course consisted of three examples of transforming points and images, as well as a demonstration of rendering transformed points as an image.
+
+https://github.com/bogovicj/transforms_tutorial
+
+
 ==Thursday==
 
 '''9:00 - 12:00: SciJava - Services, Plugins, Commands & Context'''
@@ -162,7 +170,7 @@ The presentation and exercises can be found here: https://github.com/maarzt/imag
 
 Material can be found here https://github.com/knime-ip/knip-course
 
-'''13:00 - 14:00 Inklib, Using imglib2 from Kotlin'''
+'''13:00 - 14:00 Imklib, Using imglib2 from Kotlin'''
 
 https://github.com/hanslovsky/imklib-tutorial
 
