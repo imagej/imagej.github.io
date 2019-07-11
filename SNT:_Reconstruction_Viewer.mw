@@ -13,3 +13,7 @@ SNT's Reconstruction Viewer is a powerful OpenGL 3D visualization tool for both 
 
 =Starting the Viewer=
 The Reconstruction Viewer may be used as either a stand-alone program or from within SNT. To open Reconstruction Viewer as a stand-alone program, go to {{bc|Plugins|NeuroAnatomy|Reconstruction Viewer}}. To open the program from within SNT, use the "Open Reconstruction Viewer" option in the 3D tab of the SNT dialog. If there are any tracings currently loaded in SNT, they will be displayed in Reconstruction Viewer after opening. Note that, for performance reasons, some Path Manager changes may need to be synchronized manually from RV controls.
+
+=Scene Interaction=
+[[Image:reconstruction-viewer-example-scene.png|right|thumb|400px|]]
+The display canvas supports multiple modes of interaction, including controlled rotations, panning, zoom, scaling, animation, and alternation between "dark" and "light" modes.
