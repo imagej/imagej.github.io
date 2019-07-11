@@ -229,7 +229,7 @@ If you are already at the limits of your computer's physical memory, the next st
 
 This error usually means that your image planes are larger than the maximum supported size.
 
-[[ImageJ1]] only supports image planes with '''2 gigapixels''' (2^31 = 2,147,488,281; in case of a square image, 46341 x 46341 pixels) or less. If your data has extremely large image planes—e.g., 50000 x 50000 pixels—you may need to analyze region by region. One way to do this is using the "Crop on import" feature of the [[Bio-Formats]] plugin.
+[[ImageJ1]] only supports image planes with '''2 gigapixels''' (2^31 = 2147483648 pixels; in case of a square image, the maximum allowed is 46340 x 46340 pixels) or less. If your data has extremely large image planes—e.g., 50000 x 50000 pixels—you may need to analyze region by region. Note that if pixel data is stored in 16bit format, one pixel takes double the memory size, so the maximum size allowed is halved (1073741824 pixels). One way to do this is using the "Crop on import" feature of the [[Bio-Formats]] plugin.
 
 [[ImageJ2]] supports larger image planes internally, but uses the [[ImageJ1]] user interface by default, which once again limits visualization to 2 gigapixels. The [[Contributors|ImageJ2 team]] is working to lift these size restrictions; see {{GitHub | org=imagej | repo=imagej | issue=87 | label=imagej/imagej#87}}.
 
