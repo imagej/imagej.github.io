@@ -17,3 +17,16 @@ The Reconstruction Viewer may be used as either a stand-alone program or from wi
 =Scene Interaction=
 [[Image:reconstruction-viewer-example-scene.png|right|thumb|400px|]]
 The display canvas supports multiple modes of interaction, including controlled rotations, panning, zoom, scaling, animation, and alternation between "dark" and "light" modes.
+
+*'''Panning'''  {{Key|Right-Click}} + {{Key|Drag}}
+*'''Rotation''' {{Key|Left-Click}} + {{Key|Drag}} or Left/Right arrow keys
+*'''Zoom'''     Scroll the mouse wheel or use the {{Key|+}}/{{Key|-}} keys
+*'''Animation''' Double {{Key|Left-Click}}
+*'''Snap to Top/Side View''' {{Key|Ctrl}} + {{key|Left-Click}}
+*'''Toggle Axes''' {{Key|A}}
+*'''Toggle Camera Mode''' {{key|C}}
+*'''Toggle Dark Mode''' {{key|D}}
+*'''Fit View to Visible Objects''' {{key|F}}
+*'''Reset View''' {{key|R}}
+*'''Snapshot''' {{key|S}}
+*'''Help''' {{key|H}} (notification) or {{key|F1}} (list)
