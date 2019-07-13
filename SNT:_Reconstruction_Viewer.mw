@@ -30,3 +30,14 @@ The display canvas supports multiple modes of interaction, including controlled 
 *'''Reset View''' {{key|R}}
 *'''Snapshot''' {{key|S}}
 *'''Help''' {{key|H}} (notification) or {{key|F1}} (list)
+
+=RV Controls=
+==Scene Controls==
+This menu provides control over the rendered scene.
+*'''Fit to Visible Objects''' Computes a bounding box containing all objects of the scene and adjusts the zoom level to ensure all objects are within the camera focus.
+*'''Stretch-to-Fill''' Stretches the projection on the whole viewport.
+*'''Impose Isotropic Scale''' Squares the aspect ratio of the selected dimensions, leaving the others unchanged.
+*'''Reload Scene''' Resets the zoom level to the default, fitting all scene objects into the camera view. The current rotation setting remains unchanged. Note if some drawables in the 3D scene are not being rendered properly when this option is selected, it will prompt to rebuild the scene completely.
+*'''Rebuild Scene''' Clears all objects from the scene then rebuilds them from scratch. 
+*'''Wipe Scene''' Removes all objects from the scene. Note this action cannot be undone.
+*'''Sync Path Manager Changes''' If the 3D scene contains any trees that are currently stored in the Path Manager, re-render these trees to reflect any change in the path structure given by the Path Manager.
