@@ -69,7 +69,6 @@ This menu relates to the import, customization and management of rendered recons
 <li style="display:inline-block;"> [[Image:reconstruction-viewer-color-mapping-individual.png|left|thumb|200px|Branch Order and Ice LUT]] </li>
 </ul>
 </div>
-
 **'''Color Coding (Group of Cells)...''' Applies morphometric color coding to a selected group of reconstruction. Note that this option uses the chosen LUT to assign a homogeneous color to each reconstruction in the group based on the chosen metric.
 <div align="left">
 <ul>
