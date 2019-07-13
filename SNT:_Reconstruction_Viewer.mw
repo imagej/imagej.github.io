@@ -49,7 +49,7 @@ This menu relates to the import, customization and management of rendered recons
 *'''Import File...''' Imports and renders a single reconstruction file (".swc" or ".traces"). A color may be chosen on import or applied later using the "Customize" sub-menu. Note that loaded files will not be listed in the Path Manager.
 *'''Import Directory...''' Imports and renders all reconstruction files in a directory. A single color may be applied to all reconstructions or they may be colored uniquely. Note that loaded files will not be listed in the Path Manager.
 *'''Load from Database''' Allows import and rendering of reconstruction files fetched from the FlyCircuit, MouseLight and NeuroMorpho remote databases.
-*'''Customize''' A sub-menu containing color-coding and rendering options for plotted reconstructions. 
+*'''Customize''' A sub-menu containing color coding and rendering options for plotted reconstructions. 
 **'''Assign Color...''' Assigns the chosen color to all selected reconstructions.
 **'''Color Coding (Individual Cells)...''' Applies morphometric color mapping to selected reconstructions. The chosen LUT is used to assign a metric-based color gradient to each reconstruction.
 **'''Color Coding (Group of Cells)...''' Applies morphometric color coding to a selected group of reconstruction. Note that this option uses the chosen LUT to assign a homogeneous color to each reconstruction in the group based on the chosen metric.
