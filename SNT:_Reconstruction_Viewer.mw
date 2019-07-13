@@ -66,20 +66,20 @@ This menu relates to the import, customization and management of rendered recons
 **'''Color Coding (Individual Cells)...''' Applies morphometric color mapping to selected reconstructions. The chosen LUT is used to assign a metric-based color gradient to each reconstruction.
 <div align="left">
 <ul> 
-<li style="display:inline-block;"> [[Image:reconstruction-viewer-color-mapping-individual.png|left|thumb|400px|]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-color-mapping-individual.png|left|thumb|200px|Branch Order and Ice LUT]] </li>
 </ul>
 </div>
 
 **'''Color Coding (Group of Cells)...''' Applies morphometric color coding to a selected group of reconstruction. Note that this option uses the chosen LUT to assign a homogeneous color to each reconstruction in the group based on the chosen metric.
 <div align="left">
-<ul> 
-<li style="display:inline-block;"> [[Image:reconstruction-viewer-color-mapping-group.png|left|thumb|400px|]] </li>
+<ul>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-color-mapping-group.png|left|thumb|200px|No. Branch Points and Ice LUT]] 
 </ul>
 </div>
 **'''Color Each Cell Uniquely''' Applies a unique and homogeneous color to each selected reconstruction. Note this option will override any previously applied color mapping to the selected reconstructions.
 <div align="left">
 <ul> 
-<li style="display:inline-block;"> [[Image:reconstruction-viewer-color-mapping-unique.png|left|thumb|400px|]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-color-mapping-unique.png|left|thumb|200px|Unique Color Coding]] </li>
 </ul>
 </div>
 **'''Thickness...''' Specifies a constant thickness to be applied to the selected reconstructions. Note this value will only affect how Paths are displayed in the Reconstruction Viewer.
