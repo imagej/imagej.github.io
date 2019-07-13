@@ -33,6 +33,7 @@ The display canvas supports multiple modes of interaction, including controlled 
 
 =RV Controls=
 ==Scene Controls==
+[[Image:reconstruction-viewer-scene-controls.png|right|thumb|400px|]]
 This menu provides control over the rendered scene.
 *'''Fit to Visible Objects''' Computes a bounding box containing all objects of the scene and adjusts the zoom level to ensure all objects are within the camera focus.
 *'''Stretch-to-Fill''' Stretches the projection on the whole viewport.
