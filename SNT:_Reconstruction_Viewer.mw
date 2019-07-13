@@ -37,10 +37,10 @@ The display canvas supports multiple modes of interaction, including controlled 
 This menu provides control over the rendered scene.
 *'''Fit to Visible Objects''' Computes a bounding box containing all objects of the scene and adjusts the zoom level to ensure all objects are within the camera view.
 *'''Stretch-to-Fill''' Stretches the projection on the whole viewport.
-<div align="center">
+<div align="left">
 <ul> 
-<li style="display:inline-block;"> [[Image:reconstruction-viewer-not-stretched.png|none|thumb|200px|Draw diameters - disabled]] </li>
-<li style="display:inline-block;"> [[Image:reconstruction-viewer-stretched.png|none|thumb|200px|Draw diameters - enabled]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-not-stretched.png|none|thumb|200px|Stretch-to-Fill - disabled]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-stretched.png|none|thumb|200px|Stretch-to-Fill - enabled]] </li>
 </ul>
 </div>
 *'''Impose Isotropic Scale''' Squares the aspect ratio of the selected dimensions, leaving the others unchanged.
