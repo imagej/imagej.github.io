@@ -35,7 +35,7 @@ The display canvas supports multiple modes of interaction, including controlled 
 ==Scene Controls==
 [[Image:reconstruction-viewer-scene-controls.png|right|thumb|400px|]]
 This menu provides control over the rendered scene.
-*'''Fit to Visible Objects''' Computes a bounding box containing all objects of the scene and adjusts the zoom level to ensure all objects are within the camera focus.
+*'''Fit to Visible Objects''' Computes a bounding box containing all objects of the scene and adjusts the zoom level to ensure all objects are within the camera view.
 *'''Stretch-to-Fill''' Stretches the projection on the whole viewport.
 *'''Impose Isotropic Scale''' Squares the aspect ratio of the selected dimensions, leaving the others unchanged.
 *'''Reload Scene''' Resets the zoom level to the default, fitting all scene objects into the camera view. The current rotation setting remains unchanged. Note if some drawables in the 3D scene are not being rendered properly when this option is selected, it will prompt to rebuild the scene completely.
