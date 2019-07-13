@@ -64,11 +64,24 @@ This menu relates to the import, customization and management of rendered recons
 *'''Customize''' A sub-menu containing color coding and rendering options for plotted reconstructions. 
 **'''Assign Color...''' Assigns the chosen homogeneous color to all selected reconstructions.
 **'''Color Coding (Individual Cells)...''' Applies morphometric color mapping to selected reconstructions. The chosen LUT is used to assign a metric-based color gradient to each reconstruction.
-[[Image:reconstruction-viewer-color-mapping-individual.png|left|thumb|400px|]]
+<div align="left">
+<ul> 
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-color-mapping-individual.png|left|thumb|400px|]] </li>
+</ul>
+</div>
+
 **'''Color Coding (Group of Cells)...''' Applies morphometric color coding to a selected group of reconstruction. Note that this option uses the chosen LUT to assign a homogeneous color to each reconstruction in the group based on the chosen metric.
-[[Image:reconstruction-viewer-color-mapping-group.png|left|thumb|400px|]]
+<div align="left">
+<ul> 
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-color-mapping-group.png|left|thumb|400px|]] </li>
+</ul>
+</div>
 **'''Color Each Cell Uniquely''' Applies a unique and homogeneous color to each selected reconstruction. Note this option will override any previously applied color mapping to the selected reconstructions.
-[[Image:reconstruction-viewer-color-mapping-unique.png|left|thumb|400px|]]
+<div align="left">
+<ul> 
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-color-mapping-unique.png|left|thumb|400px|]] </li>
+</ul>
+</div>
 **'''Thickness...''' Specifies a constant thickness to be applied to the selected reconstructions. Note this value will only affect how Paths are displayed in the Reconstruction Viewer.
 **'''Translate...''' Specifies a translation to be applied to the selected reconstructions. To avoid overwriting data from a tracing session, this command is only available in the standalone viewer.
 *'''Remove Selected...''' Deletes the selected reconstructions from the scene.
