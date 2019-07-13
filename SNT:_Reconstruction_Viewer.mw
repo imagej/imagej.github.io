@@ -42,3 +42,6 @@ This menu provides control over the rendered scene.
 *'''Rebuild Scene''' Clears all objects from the scene then rebuilds them from scratch. 
 *'''Wipe Scene''' Removes all objects from the scene. Note this action cannot be undone.
 *'''Sync Path Manager Changes''' If the 3D scene contains any trees that are currently stored in the Path Manager, re-render these trees to reflect any change in the path structure given by the Path Manager.
+
+==Manage and Customize Neuronal Arbors==
+[[Image:reconstruction-manage-arbors-menu.png|right|thumb|400px|]]
