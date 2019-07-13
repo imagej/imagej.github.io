@@ -82,6 +82,12 @@ This menu relates to the import, customization and management of rendered recons
 </ul>
 </div>
 **'''Thickness...''' Specifies a constant thickness to be applied to the selected reconstructions. Note this value will only affect how Paths are displayed in the Reconstruction Viewer.
+<div align="left">
+<ul> 
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-thickness-1.png|left|thumb|200px|Unique Color Coding]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-thickness-5.png|left|thumb|200px|Unique Color Coding]] </li>
+</ul>
+</div>
 **'''Translate...''' Specifies a translation to be applied to the selected reconstructions. To avoid overwriting data from a tracing session, this command is only available in the standalone viewer.
 *'''Remove Selected...''' Deletes the selected reconstructions from the scene.
 *'''Remove All...''' Deletes all reconstructions from the scene.
