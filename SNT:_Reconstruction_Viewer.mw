@@ -46,8 +46,8 @@ This menu provides control over the rendered scene.
 *'''Impose Isotropic Scale''' Squares the aspect ratio of the selected dimensions, leaving the others unchanged.
 <div align="left">
 <ul> 
-<li style="display:inline-block;"> [[Image:reconstruction-viewer-aspect-ratio-none.png|none|thumb|200px|Stretch-to-Fill - disabled]] </li>
-<li style="display:inline-block;"> [[Image:reconstruction-viewer-aspect-ratio-ZY.png|none|thumb|200px|Stretch-to-Fill - enabled]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-aspect-ratio-none.png|none|thumb|200px|Impose Isotropic Scale - None]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-aspect-ratio-ZY.png|none|thumb|200px|Impose Isotropic Scale -ZY]] </li>
 </ul>
 </div>
 *'''Reload Scene''' Resets the zoom level to the default, fitting and centering all scene objects into the camera view. The current rotation setting remains unchanged. Note if some drawables in the 3D scene are not being rendered properly when this option is selected, it will prompt to rebuild the scene completely.
