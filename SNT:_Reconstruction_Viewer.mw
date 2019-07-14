@@ -116,3 +116,10 @@ This menu contains several Drosophila and Mouse reference brains.
 *'''Mouse (Adult): Allen CCF Navigator''' Import and navigation system for the Allen Adult Mouse Common Coordinate Framework. Selecting this option imports the Whole Brain reference, and presents a GUI allowing search and import of Mouse Brain ontologies contained in the Allen Common Coordinate Framework v3.
 *'''Zebrafish (Embryonic)'''
 **'''Max Planck ZBA''' Max Planck Zebrafish Brain Atlas
+
+==Analyze and Measure== 
+This menu houses several functions to measure and analyze loaded reconstructions.
+*'''Measure''' Shows a table of summary statistics for selected reconstructions. If measuring multiple tracings, the table can be sorted by column.
+*'''Distribution Analysis...''' Plots a histogram of the selected metric. If multiple reconstructions are selected, a single analysis is conducted on the group.
+*'''Sholl Analysis...''' Runs the [[Sholl_Analysis|Sholl Analysis]] plugin found in {{bc|Analyze|Sholl|Sholl Analysis (From Tracings)}}. Note only one reconstruction may be analysed at a time.
+*'''Strahler Analysis''' Conducts Strahler Analysis on the selected reconstruction. Note only one reconstruction may be analysed at a time.
