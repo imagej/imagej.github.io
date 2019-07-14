@@ -118,6 +118,7 @@ This menu contains several Drosophila and Mouse reference brains.
 **'''Max Planck ZBA''' Max Planck Zebrafish Brain Atlas
 
 ==Analyze and Measure== 
+[[Image:reconstruction-viewer-measurement-menu.png|right|thumb|400px|]]
 This menu houses several functions to measure and analyze loaded reconstructions.
 *'''Measure''' Shows a table of summary statistics for selected reconstructions. If measuring multiple tracings, the table can be sorted by column.
 *'''Distribution Analysis...''' Plots a histogram of the selected metric. If multiple reconstructions are selected, a single analysis is conducted on the group.
