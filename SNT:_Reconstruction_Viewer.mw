@@ -91,3 +91,12 @@ This menu relates to the import, customization and management of rendered recons
 **'''Translate...''' Specifies a translation to be applied to the selected reconstructions. To avoid overwriting data from a tracing session, this command is only available in the standalone viewer.
 *'''Remove Selected...''' Deletes the selected reconstructions from the scene.
 *'''Remove All...''' Deletes all reconstructions from the scene.
+
+==Manage and Customize 3D Meshes==
+*'''Import OBJ File(s)...''' Allows import and rendering of Wavefront OBJ files, commonly used to represent surface meshes of anatomical structures. 
+*'''Customize''' sub-menu providing control over rendering parameters of surface meshes.
+**'''All Parameters...''' Allows adjustment of the color and transparency of the selected mesh(es) and their computed bounding boxes in a single menu.
+**'''Color...''' Sets the color of the selected mesh(es).
+**'''Transparency...''' Sets the transparency of the selected mesh(es).
+*'''Remove Selected...''' Deletes the selected mesh(es) from the scene.
+*'''Remove All...''' Deletes all imported mesh(es) from the scene.
