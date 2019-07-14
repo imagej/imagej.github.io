@@ -101,3 +101,12 @@ This menu relates to the import, customization and management of rendered recons
 **'''Transparency...''' Sets the transparency of the selected mesh(es).
 *'''Remove Selected...''' Deletes the selected mesh(es) from the scene.
 *'''Remove All...''' Deletes all imported mesh(es) from the scene.
+
+==Reference Brains==
+This menu contains several Drosophila and Mouse reference brains.
+[[Image:reconstruction-reference-brains-menu.png|right|thumb|400px|]]
+*'''Drosophila (Adult)''' 
+**'''FlyCircuit''' FlyCircuit Drosophila reference brain
+**'''JFRC2 (VFB)''' Janelia Farm Research Campus Virtual Fly Brain
+**'''JFRC3''' Janelia Farm Research Campus Drosophila reference brain (Version 3)
+**'''Adult VNS'''  Adult Drosophila ventral nervous system reference
