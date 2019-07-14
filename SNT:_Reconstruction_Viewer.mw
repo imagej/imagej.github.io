@@ -110,3 +110,9 @@ This menu contains several Drosophila and Mouse reference brains.
 **'''JFRC2 (VFB)''' Janelia Farm Research Campus Virtual Fly Brain
 **'''JFRC3''' Janelia Farm Research Campus Drosophila reference brain (Version 3)
 **'''Adult VNS'''  Adult Drosophila ventral nervous system reference
+*'''Drosophila (Embryonic)''' 
+**'''Larva L1''' Drosophila 1st instar larval stage
+**'''Larva L3''' Drosophila 3rd instar larval stage
+*'''Mouse (Adult): Allen CCF Navigator''' Import and navigation system for the Allen Adult Mouse Common Coordinate Framework. Selecting this option imports the Whole Brain reference, and presents a GUI allowing search and import of Mouse Brain ontologies contained in the Allen Common Coordinate Framework v3.
+*'''Zebrafish (Embryonic)'''
+**'''Max Planck ZBA''' Max Planck Zebrafish Brain Atlas
