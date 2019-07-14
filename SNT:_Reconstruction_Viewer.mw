@@ -123,3 +123,16 @@ This menu houses several functions to measure and analyze loaded reconstructions
 *'''Distribution Analysis...''' Plots a histogram of the selected metric. If multiple reconstructions are selected, a single analysis is conducted on the group.
 *'''Sholl Analysis...''' Runs the [[Sholl_Analysis|Sholl Analysis]] plugin found in {{bc|Analyze|Sholl|Sholl Analysis (From Tracings)}}. Note only one reconstruction may be analysed at a time.
 *'''Strahler Analysis''' Conducts Strahler Analysis on the selected reconstruction. Note only one reconstruction may be analysed at a time.
+
+==Tool and Utilities==
+*'''Debug Mode''' Logs detailed information about plugin usage to the Console.
+*'''Take Snapshot''' Saves a PNG image of the current scene to disk. The default directory may be changed in the Reconstruction Viewer ''Preferences''.
+*'''Record Rotation''' Animates a rotation of the current scene and saves each frame to disk. The save directory, rotation degree, duration and frames per second may be adjusted in the Reconstruction Viewer ''Preferences''.
+*'''Color Legends''' Contains options relating to the adding and management of LUT-based color legends.
+*'''Keyboard & Mouse Sensitivity''' A sub-menu with options for sensitivity of mouse and keyboard scene interaction. Note that a default shared sensitivity parameter can be specified for panning, zooming and rotating (using hotkeys) in the Reconstruction Viewer ''Preferences''.
+**'''Pan Accuracy''' Sets the responsiveness of panning. A lower step size is more responsive.
+**'''Rotation Steps'''Sets the number of degrees of a single rotation step. Note this preference only applies to rotations made with the Left/Right Arrow keys.
+**'''Zoom Steps''' Sets the percentage of a single zoom step.
+*'''Keyboard Shortcuts...''' Shows a list of all Reconstruction Viewer keyboard shortcuts.
+*'''Preferences...''' Configurable preferences for snapshot recordings, keyboard and mouse controls, and the preferred scripting language for the Viewer. Preferences persist across plugin sessions.
+*'''Script This Viewer...''' Opens an instance of the Script Editor with pre-loaded extensible boilerplate code for advanced scripting of Reconstruction Viewer. For an example of the scripting capabilities of Reconstruction Viewer, see ''Reconstruction Viewer Demo (Python)'' at {{bc|Templates|Neuroanatomy|Analysis}} in the Script Editor.
