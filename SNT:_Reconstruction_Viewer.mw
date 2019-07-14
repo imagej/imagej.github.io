@@ -126,6 +126,7 @@ This menu houses several functions to measure and analyze loaded reconstructions
 *'''Strahler Analysis''' Conducts Strahler Analysis on the selected reconstruction. Note only one reconstruction may be analysed at a time.
 
 ==Tool and Utilities==
+[[Image:reconstruction-viewer-tools-menu.png|right|thumb|400px]]
 *'''Debug Mode''' Logs detailed information about plugin usage to the Console.
 *'''Take Snapshot''' Saves a PNG image of the current scene to disk. The default directory may be changed in the Reconstruction Viewer ''Preferences''.
 *'''Record Rotation''' Animates a rotation of the current scene and saves each frame to disk. The save directory, rotation degree, duration and frames per second may be adjusted in the Reconstruction Viewer ''Preferences''.
