@@ -93,6 +93,7 @@ This menu relates to the import, customization and management of rendered recons
 *'''Remove All...''' Deletes all reconstructions from the scene.
 
 ==Manage and Customize 3D Meshes==
+[[Image:reconstruction-viewer-mesh-controls.png|right|thumb|400px|]]
 *'''Import OBJ File(s)...''' Allows import and rendering of Wavefront OBJ files, commonly used to represent surface meshes of anatomical structures. 
 *'''Customize''' sub-menu providing control over rendering parameters of surface meshes.
 **'''All Parameters...''' Allows adjustment of the color and transparency of the selected mesh(es) and their computed bounding boxes in a single menu.
