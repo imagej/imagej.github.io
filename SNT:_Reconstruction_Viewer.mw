@@ -75,7 +75,7 @@ This menu relates to the import, customization and management of rendered recons
 <li style="display:inline-block;"> [[Image:reconstruction-viewer-color-mapping-group.png|none|thumb|200px|No. Branch Points and Ice LUT]] 
 </ul>
 </div>
-**'''Color Each Cell Uniquely''' Applies a unique and homogeneous color to each selected reconstruction. Note this option will override any previously applied color mapping to the selected reconstructions.
+**'''Color Each Cell Uniquely''' Applies a unique homogeneous color to each selected reconstruction. Note this option will override any previously applied color mapping to the selected reconstructions.
 <div align="left">
 <ul> 
 <li style="display:inline-block;"> [[Image:reconstruction-viewer-color-mapping-unique.png|none|thumb|200px|Unique Color Coding]] </li>
