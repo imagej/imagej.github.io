@@ -104,8 +104,8 @@ This menu relates to the import, customization and management of rendered recons
 *'''Remove All...''' Deletes all imported mesh(es) from the scene.
 <div align="left">
 <ul> 
-<li style="display:inline-block;"> [[Image:reconstruction-viewer-obj-transparency-5.png|none|thumb|200px|Transparency = 5%]] </li>
-<li style="display:inline-block;"> [[Image:reconstruction-viewer-obj-transparency-95.png|none|thumb|200px|Transparency = 95%]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-obj-transparency-5.png|none|thumb|300px|Transparency = 5%]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-obj-transparency-95.png|none|thumb|300px|Transparency = 95%]] </li>
 </ul>
 </div>
 {{clear}}
