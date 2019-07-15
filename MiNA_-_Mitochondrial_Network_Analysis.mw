@@ -156,9 +156,9 @@ Please ensure you have read through the full wiki page prior to using the tool. 
 </ol>
 
 <h1>Reporting Bugs and Suggestions</h1>
-The source code for MiNA is available on [https://github.com/ScienceToolkit/MiNA Github]. Software bugs can be reported using the [https://github.com/ScienceToolkit/MiNA/issues issue tracker]. If you think of a useful feature or have a general question, there is a discussion page on [https://gitter.im/MiNA-Suggestions/Lobby Gitter] for the project and if you implement your own feature, fix a bug, or extend the tool and want to contribute it back to the project you can always make a [https://github.com/ScienceToolkit/MiNA/pulls pull request].
+The source code for MiNA is available on [https://github.com/StuartLab/MiNA Github]. Software bugs can be reported using the [https://github.com/StuartLab/MiNA/issues issue tracker]. If you implement your own feature, fix a bug, or extend the tool and want to contribute it back to the project you can always make a [https://github.com/ScienceToolkit/MiNA/pulls pull request].
 
-When reporting bugs, please provide the steps required to reproduce the issue. Before reporting, try running the updater (Help &rarr; Update...) and, if that fails, reinstalling Fiji and adding the update sites as described in the installation section. Please only report software bugs with with the [https://github.com/ScienceToolkit/MiNA/issues issue tracker]. Generic questions can be asked either by email or, preferably, using the [https://gitter.im/MiNA-Suggestions/Lobby Gitter] chat room.
+When reporting bugs, please provide the steps required to reproduce the issue. Before reporting, try running the updater (Help &rarr; Update...) and, if that fails, reinstalling Fiji and adding the update sites as described in the installation section. Please only report software bugs with with the [https://github.com/StuartLab/MiNA/issues issue tracker]. Also, be sure to check the FAQ (frequently asked questions) in the [https://github.com/StuartLab/MiNA/blob/master/README.md README.md] first. 
 
 <h1>References</h1>
 <references/>
