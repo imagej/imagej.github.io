@@ -1,40 +1,4 @@
 <h1>About Us</h1>
 We are a research group at Brock University in St. Catharines, Ontario. The focus of our research is on the molecular mechanisms involved in aging and longevity. Mitochondria, via their contribution to energy metabolism, cell death pathways, and redox-regulated signal transduction pathways, are thought to be important effectors of longevity.  We use a comparative approach to study these in mammalian species, including those that are exceptionally long-lived.  We are also exploring the ability of small molecules including selective estrogen receptor modulators and phytoestrogens to modulate mitochondrial function and affect aging and longevity.
 
-As a molecular biology research group, fluorescence microscopy and image-based assays are an important part of our work. We routinely develop macros, scripts, and plugins for use in Fiji to support our efforts. The source code for our tools are available on GitHub and an Update Site is provided to facilitate installation of the tools for use. The tools are provided as-is. Improvement suggestions and bugs can be reported through the GitHub Issues tracker associated with each tool. A Wiki page is provided for each with the links to source code, associated publication DOIs, and use instructions. Links to each can be found below.
-
 Our lab homepage can be found [https://brocku.ca/mathematics-science/biology/directory/jeff-stuart/ here].
-
-<h1>Our Tools</h1>
-<h2>Miscellaneous</h2>
-{| class="wikitable"
-|-
-! Title
-! Description
-! Page
-! Source
-|-
-| Apply Generic LUT
-| Applies a LUT (lookup table) that ranges from (0,0,0) to (r,g,b) in RGB colourspace to an open image .
-| <ref>https://imagej.net/User:StuartLab/Apply_Generic_LUT</ref>
-| <ref>https://github.com/StuartLab/imagej-tools/blob/master/scripts/Apply_Generic_LUT.py</ref>
-|-
-| Batch Bot
-| Applies a macro to a folder of images saving all output image windows (not just the selected) to an output folder). Eventually Batch Bot will recieve more functionality to enable easily generating and sharing processing pipelines (including preprocessing and post processing).
-| <ref>https://imagej.net/User:StuartLab/Batch_Bot</ref>
-| <ref>https://github.com/StuartLab/imagej-tools/blob/master/scripts/Batch_Bot.py</ref>
-|-
-| Render OS-SIM Optical Sections
-| Implements various algorithms allowing for optical sections to be generated from structured illumination microscopy datasets.
-| <ref>https://imagej.net/User:StuartLab/Render_OS-SIM_Optical_Sections</ref>
-| <ref>https://github.com/ScienceToolkit/ij-ossim</ref>
-|-
-| ROI Cropping Tool
-| Crop an image using all Rois stored in the RoiManager. You can simultaneously project stacks using a maximum intensity projection, select a single time point, and save the crops to file.
-| <ref>https://imagej.net/User:StuartLab/ROI_Cropping_Tool</ref>
-| <ref>https://github.com/ScienceToolkit/ROI_Cropping_Tool.py</ref>
-|-
-|}
-
-<h1>Links</h1>
-<references/>
