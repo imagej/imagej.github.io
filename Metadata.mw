@@ -3,8 +3,8 @@
 = What is metadata? =
 
 When acquiring images in microscopy, the image files that are stored contain two main things:
-* 1) image data, which are essentially 'pixel values'
-* 2) metadata, information on the image data including pixel size, bit depth, dimension and objective information, etc.
+# ''image data'', which is essentially 'pixel values'
+# ''metadata'', information on the image data including pixel size, bit depth, dimension and objective information, etc.
 
 Metadata is essential to correctly read image data; for example, to have accurate measurements, the image needs to be calibrated according to the correct/associated pixel size.  Saving and preserving metadata is key in quantitative image analysis.
 
