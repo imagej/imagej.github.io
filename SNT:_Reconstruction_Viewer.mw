@@ -126,8 +126,8 @@ This menu contains several Drosophila and Mouse reference brains.
 **'''Max Planck ZBA''' Max Planck Zebrafish Brain Atlas
 <div align="center">
 <ul> 
-<li style="display:inline-block;"> [[Image:reconstruction-flycircuit-reference.png|none|thumb|300px|FlyCircuit]] </li>
-<li style="display:inline-block;"> [[Image:reconstruction-viewer-whole-mouse-thalamus.png|none|thumb|300px|Allen Mouse CCF Whole Brain + Thalamus]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-flycircuit-reference.png|none|thumb|300px|FlyCircuit Drosophila (Adult)]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-whole-mouse-thalamus.png|none|thumb|300px|Allen Adult Mouse Whole Brain + Thalamus]] </li>
 <li style="display:inline-block;"> [[Image:reconstruction-viewer-zebrafish-reference.png|none|thumb|300px|Max Planck ZBA]] </li>
 </ul>
 </div>
