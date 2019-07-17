@@ -124,6 +124,13 @@ This menu contains several Drosophila and Mouse reference brains.
 *'''Mouse (Adult): Allen CCF Navigator''' Import and navigation system for the Allen Adult Mouse Common Coordinate Framework. Selecting this option imports the Whole Brain reference, and presents a GUI allowing search and import of Mouse Brain ontologies contained in the Allen Common Coordinate Framework v3.
 *'''Zebrafish (Embryonic)'''
 **'''Max Planck ZBA''' Max Planck Zebrafish Brain Atlas
+<div align="center">
+<ul> 
+<li style="display:inline-block;"> [[Image:reconstruction-flycircuit-reference.png|none|thumb|200px|FlyCircuit]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-whole-mouse-thalamus.png|none|thumb|200px|Allen Mouse CCF Whole Brain + Thalamus]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-zebrafish-reference.png|none|thumb|200px|Max Planck ZBA]] </li>
+</ul>
+</div>
 
 ==Analyze and Measure== 
 [[Image:reconstruction-viewer-measurement-menu.png|right|thumb|400px|]]
