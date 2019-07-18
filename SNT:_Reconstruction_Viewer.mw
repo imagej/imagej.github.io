@@ -151,10 +151,16 @@ This menu houses several functions to measure and analyze loaded reconstructions
 *'''Distribution Analysis...''' Plots a histogram of the selected metric. If multiple reconstructions are selected, a single analysis is conducted on the group.
 <div align="left">
 <ul> 
-<li style="display:inline-block;"> [[Image:reconstruction-viewer-AA0100-distribution-analysis.png|none|thumb|300px|AA0100 Branch Order Histogram]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-AA0100-distribution-analysis.png|none|thumb|200px|AA0100 Branch Order Histogram]] </li>
 </ul>
 </div>
 *'''Sholl Analysis...''' Runs the [[Sholl_Analysis|Sholl Analysis]] plugin found in {{bc|Analyze|Sholl|Sholl Analysis (From Tracings)}}. Note only one reconstruction may be analysed at a time.
+<div align="left">
+<ul> 
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-AA0100-sholl-table.png|none|thumb|200px|AA0100 Branch Order Histogram]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-AA0100-sholl-plot.png|none|thumb|200px|AA0100 Branch Order Histogram]] </li>
+</ul>
+</div>
 *'''Strahler Analysis''' Conducts Strahler Analysis on the selected reconstruction. Note only one reconstruction may be analysed at a time.
 
 ==Tool and Utilities==
