@@ -122,6 +122,12 @@ This menu contains several Drosophila and Mouse reference brains.
 **'''Larva L1''' Drosophila 1st instar larval stage
 **'''Larva L3''' Drosophila 3rd instar larval stage
 *'''Mouse (Adult): Allen CCF Navigator''' Import and navigation system for the Allen Adult Mouse Common Coordinate Framework. Selecting this option imports the Whole Brain reference, and presents a GUI allowing search and import of Mouse Brain ontologies contained in the Allen Common Coordinate Framework v3.
+<div align="left">
+<ul> 
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-allen-ccf-ontology.png|none|thumb|300px|Allen CCF Navigator]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-allen-ccf-thalamus-info.png|none|thumb|300px|Allen CCF Ontology Info]] </li>
+</ul>
+</div>
 *'''Zebrafish (Embryonic)'''
 **'''Max Planck ZBA''' Max Planck Zebrafish Brain Atlas
 <div align="center">
