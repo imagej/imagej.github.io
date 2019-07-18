@@ -145,7 +145,7 @@ This menu houses several functions to measure and analyze loaded reconstructions
 *'''Measure''' Shows a table of summary statistics for selected reconstructions. If measuring multiple tracings, the table can be sorted by column.
 <div align="left">
 <ul> 
-<li style="display:inline-block;"> [[Image:reconstruction-viewer-measurements-AA0100.png|none|thumb|880px|]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-measurements-AA0100.png|none|thumb|900px|AA0100 measurements]] </li>
 </ul>
 </div>
 *'''Distribution Analysis...''' Plots a histogram of the selected metric. If multiple reconstructions are selected, a single analysis is conducted on the group.
