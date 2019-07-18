@@ -157,11 +157,17 @@ This menu houses several functions to measure and analyze loaded reconstructions
 *'''Sholl Analysis...''' Runs the [[Sholl_Analysis|Sholl Analysis]] plugin found in {{bc|Analyze|Sholl|Sholl Analysis (From Tracings)}}. Note only one reconstruction may be analysed at a time.
 <div align="left">
 <ul> 
-<li style="display:inline-block;"> [[Image:reconstruction-viewer-AA0100-sholl-table.png|none|thumb|200px|AA0100 Branch Order Histogram]] </li>
-<li style="display:inline-block;"> [[Image:reconstruction-viewer-AA0100-sholl-plot.png|none|thumb|200px|AA0100 Branch Order Histogram]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-AA0100-sholl-table.png|none|thumb|200px|AA0100 Sholl Table]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-AA0100-sholl-plot.png|none|thumb|200px|AA0100 Sholl Plot]] </li>
 </ul>
 </div>
 *'''Strahler Analysis''' Conducts Strahler Analysis on the selected reconstruction. Note only one reconstruction may be analysed at a time.
+<div align="left">
+<ul> 
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-AA0100-strahler-table.png|none|thumb|200px|AA0100 Strahler Table]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-AA0100-strahler-plot.png|none|thumb|200px|AA0100 Strahler Plot]] </li>
+</ul>
+</div>
 
 ==Tool and Utilities==
 [[Image:reconstruction-viewer-tools-menu.png|right|thumb|400px]]
