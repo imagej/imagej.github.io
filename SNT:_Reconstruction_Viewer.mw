@@ -145,10 +145,15 @@ This menu houses several functions to measure and analyze loaded reconstructions
 *'''Measure''' Shows a table of summary statistics for selected reconstructions. If measuring multiple tracings, the table can be sorted by column.
 <div align="left">
 <ul> 
-<li style="display:inline-block;"> [[Image:reconstruction-viewer-measurements-AA0100.png|none|thumb|900px|AA0100 measurements]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-measurements-AA0100.png|none|thumb|900px|AA0100 Measurements]] </li>
 </ul>
 </div>
 *'''Distribution Analysis...''' Plots a histogram of the selected metric. If multiple reconstructions are selected, a single analysis is conducted on the group.
+<div align="left">
+<ul> 
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-AA0100-distribution-analysis.png|none|thumb|300px|AA0100 Branch Order Histogram]] </li>
+</ul>
+</div>
 *'''Sholl Analysis...''' Runs the [[Sholl_Analysis|Sholl Analysis]] plugin found in {{bc|Analyze|Sholl|Sholl Analysis (From Tracings)}}. Note only one reconstruction may be analysed at a time.
 *'''Strahler Analysis''' Conducts Strahler Analysis on the selected reconstruction. Note only one reconstruction may be analysed at a time.
 
