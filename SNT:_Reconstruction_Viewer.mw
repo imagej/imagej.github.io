@@ -143,6 +143,7 @@ This menu contains several Drosophila and Mouse reference brains.
 [[Image:reconstruction-viewer-measurement-menu.png|right|thumb|400px|]]
 This menu houses several functions to measure and analyze loaded reconstructions.
 *'''Measure''' Shows a table of summary statistics for selected reconstructions. If measuring multiple tracings, the table can be sorted by column.
+[[Image:reconstruction-viewer-measurements-AA0100.png|left|thumb|600px|]]
 *'''Distribution Analysis...''' Plots a histogram of the selected metric. If multiple reconstructions are selected, a single analysis is conducted on the group.
 *'''Sholl Analysis...''' Runs the [[Sholl_Analysis|Sholl Analysis]] plugin found in {{bc|Analyze|Sholl|Sholl Analysis (From Tracings)}}. Note only one reconstruction may be analysed at a time.
 *'''Strahler Analysis''' Conducts Strahler Analysis on the selected reconstruction. Note only one reconstruction may be analysed at a time.
