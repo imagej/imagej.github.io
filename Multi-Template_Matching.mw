@@ -17,7 +17,10 @@
 Activate the '''IJ-OpenCV''' update site and the '''Multi-Template-Matching update sites'''.
 
 = Documentation =
-See the wiki section of the github repository for the documentation including video tutorials !
+See the [https://github.com/LauLauThom/MultiTemplateMatching/wiki wiki section] of the github repository for the documentation including video tutorials !
+
+= Related work =
+We also distribute a python package for Multi-Template-Matching available on [https://pypi.org/project/Multi-Template-Matching/ PyPI].  
 
 = Citations =
 If you use this plugin for your research please cite:<br>
