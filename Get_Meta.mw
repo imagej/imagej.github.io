@@ -5,7 +5,7 @@ This plugin extracts the metadata from DM3 files and saves the information in a 
 
 == '''How it works''' ==
 
-It asks you to choose the directory in which the images are saved, and then it loops through the list of images extracting and saving the image info to text files.
+It asks you to choose the directory in which the images are saved, and then it loops through the list of images extracting and saving the image info to text files of the same name.
 
 == '''Image Requirements''' ==
 
