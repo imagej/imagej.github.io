@@ -2,6 +2,7 @@ This is a suite of useful imageJ plugins that are designed for analysis of image
 # [[calc dSpace|calc dSpace]] is a simple way to find interplanar spacing values in imageJ.
 # [[get dSpace|get dSpace]] is a more accurate and advanced way of finding d-spacing.
 # [[pub Montage|pub Montage]] is a high quality montaging plugin designed for figure submission to a peer review journal.
+# [[get Meta|get Meta]] extracts the metadata from all the DM3 files in the directory and saves them to a text file within that directory.
 
 == Getting Started ==
 The following are ways of installing this suite of plugins. The first way is the easiest and fastest method, but the second way offers more freedom. 
