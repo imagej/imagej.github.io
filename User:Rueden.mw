@@ -13,20 +13,20 @@
 | scholar = VqKfxYcAAAAJ
 | orcid = 0000-0001-7055-6707
 | arxiv = rueden_c_1
-| website = http://restlesscoder.net/
-}}Curtis Rueden directs the [http://loci.wisc.edu/software/home software development efforts] of [[LOCI]]. He is the principal architect of [[ImageJ2]], and the current maintainer of the [[Fiji]] distribution of ImageJ.
+| website = https://restlesscoder.net/
+}}Curtis Rueden directs the [https://loci.wisc.edu/software/home software development efforts] of [[LOCI]]. He is the principal architect of [[ImageJ2]], and the current maintainer of the [[Fiji]] distribution of ImageJ.
 
 == What is Curtis working on? ==
 
 === Primary projects ===
 
-Here is a summary of my current projects, in priority order. I try to keep this list up to date.
+Here is a summary of my current projects, in priority order. (Last updated: 2019-Aug-05)
 
-# '''SciJava Ops''' ([https://github.com/scijava/scijava-ops scijava/scijava-ops]) and '''SciJava Common 3.''' ([https://github.com/scijava/scijava-common/compare/sjc3 scijava/scijava-common@sjc3])
 # '''[[LOCI]] web server downsizing.''' Retiring obsolete services.
-# '''Document community expectations.''' Formally define and clarify who is responsible for maintaining which plugins, to what extents ([http://forum.imagej.net/t/project-developer-roles/206 Project developer roles], [https://github.com/ctrueden/ctr-scripts/blob/master/dev-find ctrueden/ctr-scripts:dev-find], [https://github.com/fiji/fiji/blob/master/bin/team-hints.perl fiji/fiji:bin/team-hints.perl])
+# '''Document community expectations.''' Formally define and clarify who is responsible for maintaining which plugins, to what extents ([https://forum.image.sc/t/project-developer-roles/206 Project developer roles], [https://github.com/ctrueden/ctr-scripts/blob/master/dev-find ctrueden/ctr-scripts:dev-find], [https://github.com/fiji/fiji/blob/master/bin/team-hints.perl fiji/fiji:bin/team-hints.perl])
+# '''SciJava Common 3.''' ([https://github.com/scijava/scijava-common/compare/sjc3 scijava/scijava-common@sjc3])
 # '''ImageJ + Java 8.''' Complete the migration to Java 8 with a Java-6-compatible stub classpath that checks your Java version and tells you how to upgrade to Java 8 if needed. Retire the Java-8 update site, distributing its contents back onto the ImageJ and Fiji update sites.
-# '''GitHub issue reporting plugin.''' The Fiji BugZilla is now static content only. The remainder of the [http://trac.imagej.net/ ImageJ Trac] needs to be migrated to GitHub Issues. The [[Report a Bug]] plugin needs to send reports to GitHub instead. ([https://github.com/scijava/scijava-plugins-issues-github scijava/scijava-plugins-issues-github])
+# '''GitHub issue reporting plugin.''' The Fiji BugZilla and ImageJ Trac are now static content only. The [[Report a Bug]] plugin needs to send reports to GitHub instead. ([https://github.com/scijava/scijava-plugins-issues-github scijava/scijava-plugins-issues-github])
 # '''Rich Image.''' Improve the [[ImageJ Common]] data model to support metadata (e.g., spatial transformations) as a first-class citizen. ([https://github.com/imagej/imagej-common/compare/rich imagej/imagej-common@rich], [https://github.com/imagej/janelia-hackathon-2016 imagej/janelia-hackathon-2016])
 # '''SCIFIO blockization.''' ([https://github.com/scifio/scifio/issues/283 scifio/scifio#283])
 # '''ImageJ Launcher.''' Switch to a JavaFX-based native launcher. Retire the current ImageJ Launcher. ([https://github.com/imagej/imagej-launcher/issues/33 imagej/imagej-launcher#33])
@@ -38,10 +38,9 @@ I am fully committed to all of the above projects. They are driven by me, making
 
 I am also coordinating and/or leading and/or advising and/or helping with, but not sole implementer for, the following additional projects:
 
-# (with {{Person|gselzer}}) '''[[ImageJ Ops]].'''
+# (with {{Person|gselzer}}) '''SciJava Ops''' ([https://github.com/scijava/scijava-ops scijava/scijava-ops]) and '''[[ImageJ Ops]].'''
 # (with {{Person|Xanthorapedia}}) '''[[SLIM Curve]].'''
 # (with {{Person|etarena}}) '''[[Coloc 2]]''' algorithms in [[ImageJ Ops]].
-# (with {{Person|stelfrich}}) '''ImageJ Launcher''' bug-fixes and improvements.
 # (with {{Person|Kharrington}} and {{Person|skalarproduktraum}}) '''ImageJ in 3D.''' Unification of ImageJ 3D visualization efforts around [[SciView]].
 # (with {{Person|Pietzsch}}) '''Visualization of big data.''' Unification of visualization in general around the [[BigDataViewer]]. ([https://github.com/imagej/imagej-common/issues/66 imagej/imagej-common#66])
 
@@ -51,12 +50,9 @@ Finally, I have the following continuous priorities:
 
 # Mentoring student programmers at [[LOCI]]
 # Coordinating programming efforts at [[LOCI]]
-# Questions on the [[Image.sc Forum]]
-# [[Bugs|Bug reports]]
-# [https://github.com/search?q=is%3Apr+is%3Aopen+user%3Afiji+user%3Aimagej+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve&type=Issues Pull requests]
-# Email (~300 messages per day as of this writing)
+# User support – questions on the [[Image.sc Forum]], [[Bugs|bug reports]], [https://github.com/search?q=is%3Apr+is%3Aopen+user%3Afiji+user%3Aimagej+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve&type=Issues pull requests], email
 # Server maintenance and troubleshooting
-# Project management tasks (e.g., managing [[Issues]])
+# Project management tasks (e.g., managing [[issues]])
 
 On average, I spend ~0-2 hours per day on my primary projects above. The rest is spent on these constant priorities.
 
@@ -75,15 +71,15 @@ So you want to be an effective software developer? Use tools!
 * Supreme code completion
 * Super useful debugger
 | [http://vrapper.sourceforge.net/ Vrapper]
-| Vim-fu inside Eclipse – almost as good as the real thing
+| Vim-fu inside Eclipse – almost as good as the real thing
 |-
-| [http://jd.benow.ca/ JD-ECLIPSE]
-| Automatic decompilation when browsing classes
+| [https://ecd-plugin.github.io/ Enhanced Class Decompiler]
+| Automatic decompilation when browsing classes in Eclipse
 |-
 | colspan=4 |
 |-
-! rowspan=7 | [http://www.vim.org/ Vim]
-| rowspan=7 | Best editor! Crazy fast [http://vim.wikia.com/wiki/Macros macros]
+! rowspan=7 | [https://www.vim.org/ Vim]
+| rowspan=7 | Great editor. Crazy fast [https://vim.wikia.com/wiki/Macros macros]
 | [https://github.com/VundleVim/Vundle.vim Vundle]
 | Manage your vim plugins like a boss
 |-
@@ -106,12 +102,12 @@ So you want to be an effective software developer? Use tools!
 |-
 | colspan=4 |
 |-
-! rowspan=6 | [http://www.zsh.org/ Zsh]
-| rowspan=6 | Awesome shell – even [http://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692 better than bash]
+! rowspan=6 | [https://www.zsh.org/ Zsh]
+| rowspan=6 | Awesome shell – even [https://www.slideshare.net/jaguardesignstudio/why-zsh-is-cooler-than-your-shell-16194692 better than bash]
 | [https://github.com/tarjoilija/zgen zgen]
 | Lightweight plugin manager
 |-
-| [http://ohmyz.sh/ oh-my-zsh]
+| [https://ohmyz.sh/ oh-my-zsh]
 | Your terminal never felt ''this'' good before:
 * '''git''' - awesome git completion and aliases
 * '''mvn''' - mvn completion, highlighting, aliases
@@ -143,7 +139,7 @@ So you want to be an effective software developer? Use tools!
 | colspan=4 |
 |-
 ! [[GitHub]]
-| colspan=3 | If you don't have a GitHub account, [http://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/ you don't exist]
+| colspan=3 | If you don't have a GitHub account, [https://blog.codinghorror.com/how-to-stop-sucking-and-be-awesome-instead/ you don't exist]
 |-
 | colspan=4 |
 |-
@@ -154,4 +150,4 @@ So you want to be an effective software developer? Use tools!
 See also:
 * The [[Dotfiles]] setup guide
 * [[Development#Key_developer_tools|Key developer tools]] on this wiki
-* [http://loci.wisc.edu/software/developing-loci-software LOCI developer getting started guide]
+* [https://loci.wisc.edu/software/developing-loci-software LOCI developer getting started guide]
