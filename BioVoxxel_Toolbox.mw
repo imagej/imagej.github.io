@@ -440,9 +440,7 @@ Method: Circle ROIs of the specified size are initially distributed with suffici
 
 Form: plugin, recordable
 
-Status: maintenance active
-
-Future: Suggestions are welcome!
+Status: stable, not further maintained 
 
 ----
 
