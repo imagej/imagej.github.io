@@ -29,6 +29,6 @@ Did you observe a problem with your metadata via a GUI?  Was there no data at al
 === Using the Command Line ===
 Bio-Formats has a whole host of information regarding extracting, processing, and validating OME-XML.  So check out [https://docs.openmicroscopy.org/ome-model/5.6.3/ome-tiff/tools.html their resources] for more detailed information.
 
-In brief, there are a host of [https://docs.openmicroscopy.org/bio-formats/6.2.0/users/comlinetools/ command line tools available via Bio-Formats] to properly inspect and validate the XML in an OME-TIFF file.
+In brief, there are [https://docs.openmicroscopy.org/bio-formats/6.2.0/users/comlinetools/ command line tools available via Bio-Formats] to properly inspect and validate the XML in an OME-TIFF file.
 
 Both the <code>tiffcomment</code> and <code>xmlvalid</code> commands are used; <code>tiffcomment</code> extracts the XML from the file and <code>xmlvalid</code> validates the XML and prints any errors to the console.  See [https://docs.openmicroscopy.org/bio-formats/6.2.0/users/comlinetools/xml-validation.html this page] for more details.
