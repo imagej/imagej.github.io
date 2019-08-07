@@ -11,7 +11,7 @@ Metadata is essential to correctly read image data; for example, to have accurat
 = How can I see my image's metadata? =
 
 
-= ''How do I open/read my metadata?'' =
+= How do I open/read my metadata? =
 
 To start, try a high level API approach via a GUI...
 === Using a GUI ===
@@ -24,6 +24,7 @@ OR
 [[OMEVisual]] is another tool that can visualize OME metadata; it is a [[Fiji]] plugin.
 
 These tools allow you to quickly check if your metadata 'looks' correct... are there the correct number of image blocks (i.e. one per tile if multi-scan image)?  Are the dimensions correct?  etc.
+
 = ''What if I cannot read my metadata via a GUI?!'' =
 
 Did you observe a problem with your metadata via a GUI?  Was there no data at all?  Or was metadata missing?  If this is the case, then perhaps there are structural issues with your metadata that require a bit more in-depth inspection via command line tools.
