@@ -428,8 +428,6 @@ Output: The output is on purpose very sparse and gives only the ImageJ ROI Manag
 
 Application: The algorithm was already successfully applied in the quantification of clusters from different cell populations in microscopic mouse retina samples [Link once the manuscript is accepted and published]
 
-
-
 Limitation: works on 2D binary images only and does not detect clusters inside other clusters
 
 =Cluster Indicator=
