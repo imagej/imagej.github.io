@@ -25,7 +25,7 @@ OR
 
 These tools allow you to quickly check if your metadata 'looks' correct... are there the correct number of image blocks (i.e. one per tile if multi-scan image)?  Are the dimensions correct?  etc.
 
-= ''What if I cannot read my metadata via a GUI?!'' =
+= What if I cannot read my metadata via a GUI?! =
 
 Did you observe a problem with your metadata via a GUI?  Was there no data at all?  Or was metadata missing?  If this is the case, then perhaps there are structural issues with your metadata that require a bit more in-depth inspection via command line tools.
 
