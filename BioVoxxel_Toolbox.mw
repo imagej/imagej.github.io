@@ -252,7 +252,7 @@ Form of Flat-field correction: macro
 
 form of Pseudo Flat-field correction: plugin
 
-Status: maintenance active
+Status: maintenance active, problems with specific stacks (fill be addressed soon)
 
 Future: suggestions are welcome!
 
@@ -287,9 +287,7 @@ If a new plot line is added to an existing plot the choice "Draw grid lines" is 
 
 Form: macro
 
-Status: maintenance active!
-
-Future: potentially also display using scaled units!
+Status: deprecated
  
 ----
 
@@ -303,9 +301,7 @@ How To: The line can be either straight, freehand or segmented and needs to be d
 
 Form: macro
 
-Status: maintenance active!
-
-Future: will be implemented for 32-bit images as well. The upper intensity limit will be made individually adjustable. Suggestions welcome!
+Status: deprecated
 
 ----
 =Adaptive Filter= 
@@ -416,6 +412,26 @@ Future: Suggestions are welcome!
 
 ----
 
+=SSIDC Cluster Indicator=
+
+Meaning: Shape and size invariant DBSCAN based clustering
+pronounce SSID like "acid" clustering :-)
+
+Purpose: Indicating clusters of binary image objects after segmentation based on a shape and size invariant density based clustering [https://de.wikipedia.org/wiki/DBSCAN DBSCAN]
+
+Advantage and HowTo: the algorithm detects clusters of any size, shape and number! The user does not need to have any prior knowledge or estimation of a number of clusters (as for e.g. k-means). 
+The only input needed is the isotropic distance (in pixel) the user wants (epsilon in DBSCAN) to check around each object and a desired minimum density (number of objects inside the given distance). The algorithm reaches out equidistantly from the object shape. Therefore, amorphous shapes of particles do not matter. Furthermore, the size is not relevant, since the distance is taken from the outside of the object.
+If size and shape should be ignored, the plugin can be run on the thresholded (min=1 max=255) ultimate points of the binary objects [►Process ►Binary ►Ultimate Points]
+Clusters are also detected in an overlapping but still separate manner if some objects might belong to several clusters but do not belong to their core points.
+
+Output: The output is on purpose very sparse and gives only the ImageJ ROI Manager. From there cluster numbers and individual amount of objects per cluster can easily be analyzed e.g. using a macro on the ROI manager and the corresponding image 
+
+Application: The algorithm was already successfully applied in the quantification of clusters from different cell populations in microscopic mouse retina samples [Link once the manuscript is accepted and published]
+
+
+
+Limitation: works on 2D binary images only and does not detect clusters inside other clusters
+
 =Cluster Indicator=
 
 Purpose: The "Cluster Indicator" is thought to detect local particle clusters in a binary image. Different particle sizes can be taken into account.
@@ -440,7 +456,7 @@ Method: Circle ROIs of the specified size are initially distributed with suffici
 
 Form: plugin, recordable
 
-Status: stable, not further maintained 
+Status: stable, not further actively maintained 
 
 ----
 
