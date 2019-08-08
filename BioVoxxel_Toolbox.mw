@@ -415,7 +415,8 @@ Future: Suggestions are welcome!
 =SSIDC Cluster Indicator=
 
 Meaning: Shape and size invariant DBSCAN based clustering
-pronounce SSID like "acid" clustering :-)
+
+Pronounce: SSID like "acid" clustering :-)
 
 Purpose: Indicating clusters of binary image objects after segmentation based on a shape and size invariant density based clustering [https://de.wikipedia.org/wiki/DBSCAN DBSCAN]
 
