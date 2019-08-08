@@ -416,7 +416,7 @@ Future: Suggestions are welcome!
 
 Meaning: Shape and size invariant DBSCAN based clustering
 
-Pronounce: SSID like "acid" clustering :-)
+Pronounce: S-SID C like "acid" C  ;-)
 
 Purpose: Indicating clusters of binary image objects after segmentation based on a shape and size invariant density based clustering [https://de.wikipedia.org/wiki/DBSCAN DBSCAN]
 
