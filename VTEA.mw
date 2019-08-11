@@ -25,8 +25,6 @@ __TOC__
 
 '''Original image referencing.'''  The power of 3DTC in VTEA enables the localization of identified cells in the analysis space in the original image, ''in situ'', and in 3D with [[ClearVolume]].
 
-'''Methods for analyzing big data.'''  Coming soon!
-
 {{Notice | VTEA is still under active development.  Version 1.0 is tentatively planned for an October release..}}
 
 This brief [[Media:Demostration.mov|video]] describes VTEA's core behaviors.  VTEA's utility has been demonstrated in this [http://jasn.asnjournals.org/content/early/2017/02/01/ASN.2016091027.full paper].
