@@ -4,7 +4,7 @@
 | author                = Seth Winfree ([mailto:winfrees@iu.edu])
 | maintainer            = Seth Winfree ([mailto:winfrees@iu.edu])
 | source                = {{GitHub|org=icbm-iupui|repo=volumetric-tissue-exploration-analysis}} 
-| status                = v0.5.2, beta, 1.0.a on deck.
+| status                = v0.7, alpha, 1.0.a on deck.
 | category              = [[:Category:Segmentation|Segmentation]],[[:Category:Visualization|Visualization]],[[:Category:Plugins|Plugins]]
 }}
 __TOC__
@@ -19,23 +19,21 @@ __TOC__
 
 '''Free and easy to get.'''  We opted to use ImageJ/FIJI as the distribution platform because it has an excellent and robust community of contributors.  Practically, it provides the mechanisms for updating, a number of image processing tools and is built on a simple and powerful extensible framework.
 
-'''Easy to use.'''  We designed VTEA to organize the most common workflow in 3DTC inclusive of image processing (to manage imaging artifacts), segmentation (extensible to bring in edge deep learning approaches into a common framework of analysis) and exploration and analysis with flow cytometry like plots, gating, mapping to image with ROI gating and  tools for high dimensionality data (clustering, PCA, tSNE).
+'''Easy to use.'''  We designed VTEA to organize the most common workflow in 3DTC inclusive of image processing (to manage imaging artifacts), segmentation (extensible to bring in edge deep learning approaches into a common framework of analysis) and exploration and analysis with flow cytometry like plots, gating, mapping to image with ROI gating and  tools for high dimensionality data.
 
-'''Mesoscale 3D analysis.'''  We built segmentation to handle massive datasets (>10 GB, LS connect 3D), to operate seamlessly on an embedded database to enable analysis of 100’s of thousands and incorporated tools for clustering and dimensionality reduction to facilitate analysis of spectrally imaged datasets-up to 8 channels.
+'''Mesoscale 3D analysis.'''  We built segmentation to handle massive datasets  and  to operate seamlessly on an embedded database to enable analysis of 100’s of thousands and incorporated tools for clustering and dimensionality reduction to facilitate analysis of spectrally imaged datasets-up to 8 channels.
 
 '''Original image referencing.'''  The power of 3DTC in VTEA enables the localization of identified cells in the analysis space in the original image, ''in situ'', and in 3D with [[ClearVolume]].
 
-'''Methods for analyzing big data.'''  Techniques commonly used in single cell transcriptomic are available with a number of clustering approaches (e.g. Ward hierarchical,  K-means, etc) and dimensionality reduction (e.g. PCA and tSNE).
+'''Methods for analyzing big data.'''  Coming soon!
 
-{{Notice | VTEA is still under active development.  Version 1.0 is about to be released.}}
+{{Notice | VTEA is still under active development.  Version 1.0 is tentatively planned for an October release..}}
 
 This brief [[Media:Demostration.mov|video]] describes VTEA's core behaviors.  VTEA's utility has been demonstrated in this [http://jasn.asnjournals.org/content/early/2017/02/01/ASN.2016091027.full paper].
 
 We developed VTEA out of a need to unify the various tasks involved in image processing, segmenting, exploring and analyzing large 3D fluorescence light microscopy image volumes ranging from 50-100s of microns thick.  Our solution is predicated upon the idea that ''image processing, segmentation and analysis of 3D image volumes is best implemented with a bidirectional interactive user interface from image processing to analysis''.
 
 Importantly, our solution is in its infancy.  In fact, the tools are relatively simple ones drawn from ImageJ's core functions.  These first tools represent only the beginning of our vision for VTEA.  We are currently planning to leverage the SciJava framework to make VTEA easily extensible and continue to build both upon existing tools in ImageJ/Fiji and our own novel approaches.
-
-
 
 == Installing ==
 
