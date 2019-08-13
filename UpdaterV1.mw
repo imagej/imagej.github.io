@@ -10,36 +10,33 @@ I'll use this page to document the changes made to the ImageJ Updater in the abo
 ** It shows a approval dialog for activated update sites, when the URL changed in the official list of update sites.
 ** Supports migration from http to https for sites.imagej.net.
 
-== UpdateSite URL representation ==
-[[http://www.plantuml.com/plantuml/uml/ZPB1Ri8m38RlVGehfp6Dmwu88T2aIMXZI4CyW6bSbYrDeZHbGjh3pnrTIscAEDNz_o-_xJRp8g0FPQuJPGBv35C2iUGATvgcpqhJUlT9QPY992x3z6SyXaefdgpMh2bhaejt48y2B7CYHtCKi7KI0srKeAGj_w3x2kBdeWmsPqDktrzFI2zp0YjqqqtmokmVpY9dK3PrSPu_WHCC1dEA6gNNNNrdhIOqWDpoG77FPfbA5GwS_29olCFAIiKOLfDtmVwcW3sfUwIWmCvTE_Ievo-CVE7EbrYaMJkgeM-M5yvvUo0PP-km2lKwZd3tDxPlwVo1HOqE07iArm5qJXzlG9RP_rv3MFMZrbfU2LBriF6ao0TemEOQrS8ecPEHPQv_0G00 src]]
-[[File:FilesCollectionClass.png]]
+== Previous version ==
+[[http://www.plantuml.com/plantuml/uml/fLDDZnCn3BtFh_1nLvfMg-K41xJLIaYBu092ukh6xjIGEAF4qsdvzSm7gcYcG2MEjfxVUtbsdh9XiYxuoiGymql0Xjz_QGcD4yXOVLjriigzQ0CFwyV7zKDzxi-meVrw_GhkieJMoqwOxgjBdjNRWlWDv1WOsiGjk3sxxxbgCPauQL4DDWSKZrlFdyKuLoun6iCxyPoVe_ViJA8kDGh0e39FBf25m00K5HFqyeCtIXkYMHW7dWCQbuQAyRyJ_ZVLh-S758KvSiXYVCjemrRe9ROkAUIfy36s40-SVhDBaFzWR1clx42vhm69vd17RCLAiynDAwBOguz8Bqfy7C9_diwX2-V45dilwf7swySFO_SJ8qtNbHYfkcnU4xyq3dS1pUrXUmB5mFMKJ1BYyPteHyuJy56oYJRtfOth0WtRlBDpzF_-6djKyWmz9Xs4SWqkwiwBirmziL8N_4y0 src]]
+[[File:UpdaterV0.png]]
 
-== Manually add update site and edit URL ==
- [[http://www.plantuml.com/plantuml/uml/VP0n3i8m34NtdC8N20T0K5K2CS42wW6inYgMJ8eQP-3sE7H9Cx3yuUUzdoXzKbmqlyGfgn3SC6OK-G260FaTK0aIMs0CG84LXliLtCEgT6QKUGBVmOM5qcaMeL5vZh0l-l2p2-d6XSfGrRI6xwfJyrUZlMU3959xYwkwbj0dfrrU18vW-NTiMiTgvE3zbYaRFSLWl_K5 src]]
-[[File:PersonalSiteSequence.png]]
+Issues:
+* locally saved update sites will just override the ones coming from the list of available update sites (matching by name), therefore remotely changed URLs will not reach the user
+* always using HTTP by default
+* no check if HTTPS is supported, adding an HTTPS address will throw error
+
+== New version ==
+ [[http://www.plantuml.com/plantuml/uml/pPHDRzim38Rl_XKyjaLIhDkj68O67VOnf4FHDC2khCGuN6L9e-Yqtg-VFzOQSGmukmtmHQ_9H-Gha5T9KRGiNAQiZk1hWJbzMqUBIWBSd7xEIvwd9_Ovl3b_--xyOlQgTs6rV55_S9AuY8utJFOqsmVDFmp8bv12GH258fWjcSUKHHHbmn6zmcA7xF31qOgLqY7i4pjAry4vCih1mzbPJJH2g3GTV0agrJAWPP_tSZOCgpD_t2mRzOxGjZKBeStsn74-MjlTl-AnWhxStz-krieEBhlcMs5LnXX4fvrxGl706_2X8q4wDbDe8vIsVMqfGwEyGnsy_05gy28rYpqhe-FVjF1sOMs76uID9QfKdqbx-TYyA1HHw5KVxM8Ak-VzXf__zfb8ceXR2HfCS9cGbk87wHCst23xlgPZSWkId9R1e6iixFwI-p_wAl2HLgNGTomeBOJMdd-Lz0y5zMtKj4JQWE24FHXC1BuvSG8V5CeMFGEq5amelPASlbJgGeWGTYITMHRI-7LJGmWd1QhPmaFLNZrhcSAMca529uIs0dhcfEppquoy7Op0-_dyq2IpHP-FxQSxsZ4zDM7hksNwoEX2_hgX0Bq5ooawh8uOD8pHLJMcYqalpXonveHSGDjB2s-lsrrR5lr33jA6Qt2Sd9D2EQndOldKNbb7xVPYdwSPcE0tZescx8gyBGlt1m00 src]]
+[[File:UpdaterV1.png]]
 
 == Update Check on Startup ==
-* this is the `onEvent` Method of the `DefaultUpdateService` which is called when the ImageJ UI is shown 
-[[http://www.plantuml.com/plantuml/uml/bPDHZfmm44J_EGKNc0j4KRG4FDfHl8309CeNSaolnbhZHdP3hXyJJqPXLeZaawhgHnSsJvwaetaq2Maoa7RJ80dI_0hgBKMRjh_jAIdWLSw6ejs2MxI2zFGf1i_eek7J3wcRRVAeXc0t2Ip2GqYerKsa8hq4uUuazyWsRc41ry2exV0E_F5q-ZkQFxFyIo-wfcH5NvtFUqX_nTaCaSc3v8x03Nkvb4NFCy6QFQYIzflJ1CUiB2nNykzx8ErhXmIAOE2e96cqHyowgGJBHMZDgpmJbwhSXnUmWC7fk7J1lZ9UrVkDhtA14kWdkhSShGNrBwk6O-6NaYNAmIgSjG6Vep5nUlEg1oyCnw63KCWCcyZwEL6XwKYRF_VlMOYwRUTfGaURSBP8RUGF0wsE5_egVQoo2bt3RxsEUdPraGcMVUPiWx-Zuc5mwUa51_sgOVWFeWEQdGrABwf-LT_DnjhZH9q79p3Ajz_pmTXivhhBBVK4TfX7ymi0 src]]
+* this is the `onEvent` Method of the `DefaultUpdateService` which is called when the ImageJ UI is shown. It now includes a check for changed URLs of active update sites. 
+[[http://www.plantuml.com/plantuml/uml/bPDXZfim48N_Smeka0jKLRKK76rKBo0mhVeBkMPMiTQnqNYWrw-9qwYaHNH_yjwRZtco_UH98aqNav0c0sat3f8WpS-Wtb9dq_PgZqa1ht8o5EqMSDOAqiEd63mwZ8PFFwGusUHH3S5k5Au87o6X5ZUHYlGSXBkJt2Fhk8KPi86BjiDVu8-7mv_H_9dbNthHDIKh-kfut4BwivlC49ayIBW7RjZBgInwdWdMR46LjDzG4-opih1SoRzlWRIlqH4eWe4x9KaxkyUicqgmN8JMlCepSQhARNW1CnWtxfSks5V6gtgxyLdEK0BzTFYMEsj1_S-guLZugMI9GbY4epRWSsTCd5xzwi4Bmt5e9nGomohoB4JTTgJDxyjt5Tff71tIAfdDKXlvmq2husq-InzxB4BNy5kflP9TNMI2PPyvM-7lg7WIN7fwSOD-rJ2yWuX04zgWzABg5_LVxwr6Tncfyu32HVdsDX-CrMROdMwf9x33T36_0000 src]]
 [[File:UpdateCheckStartupSequence.png]]
-
-== ImageJUpdater implements UpdaterUI ==
-* called from startup in case there are updates available (see last line in previous diagram)
-* called via Help > Update...
-[[http://www.plantuml.com/plantuml/uml/fLJ1Rjim3BtxAtHiWUG7Xc6eqQ5Ojc8hcdftrg8zehGaY7IoxkkdEFKCs-tiOKUHxpq-YfIkH25gst2cf8ncrq2DdujWGJ4QQW9ZWqx5l8IAdRcGKvWgGdkPZV7R3nE1TqPyWoP43ARyWUMJP06YKaa1dFQYDn4Q72NkebTVUYwKU9J83q0CZunxKfIiZ0YAveOOvTepOwdatSpL591ydPczmCZ8b3tA3jGLHJG-ttgmvEeXF2hPjP5DYKbhoCwyvgtw1XHjSNzxXcK3Ed7dWB-O7jrqWdL3-lJmSBVVjo7ug8iCEUEa8qtGxxVR6HpBDkBotXmXEaEL8VSMOxmAYLBHpnUGOEo2VUriZ7tpaWJrAnwBo2kgaICbOFg5kREvjLryNcY-5QUk71ut1gmT1hVMOYA7Y89EpMEh9gNIpC3LQ3U3_NvLxl50U3m99fny961Vprfx5JLip6lPXGjCaJo4w0zeBofWmSl_LT7O_gl84sBungTGDi_FdfYWVac415WnUWY1dxl37q5PEx-EkwlwpbPwIyar_qr4zc27KExiTVVhjitoYqjRP1cxXqUkbeqflQkOIfN57r5GlvDGQZwxGcVRXdy3 src]]
-[[File:ImageJUpdaterSequence.png]]
 
 == Command line usage ==
 <source>ImageJ --update refresh-update-sites --simulate</source>
 <source>ImageJ --update refresh-update-sites</source>
 <source>ImageJ --update refresh-update-sites --updateall</source>
-<source>ImageJ --update refresh-update-sites --keepall</source>
 
 == Relevant PRs ==
 # [https://github.com/imagej/imagej-updater/pull/71 V1 imagej-updater PR]
 # [https://github.com/imagej/imagej-ui-swing/pull/81 V1 imagej-swing-ui PR]
 # [https://github.com/imagej/imagej-plugins-uploader-webdav/pull/3 V1 imagej-plugins-uploader-webdav PR]
-# [https://github.com/imagej/imagej-updater/pull/67 Support redirects PR] 
 
 == Relevant Issues ==
 * [https://github.com/imagej/imagej-updater/issues/70 Issue for new updater]
