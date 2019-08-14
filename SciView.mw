@@ -17,3 +17,12 @@ This plugin provides 3D visualization and virtual reality capabilities for image
 An update site is available: http://sites.imagej.net/SciView/
 
 There have been a number of contributors to the project: Stephan Saalfeld, Tobias Pietzsch, Loic Royer, and Robert Haase. Development has taken place at hackathons such as the first [[2018-04-04_22-_SciView_hackathon|SciView hackathon]]).
+
+=== Shortcuts ===
+The full list of SciView's shortcuts can be accessed through the {{bc|Help|&nbsp;}}menu. Basic navigation is accomplished using the following controls:
+* Drag - Move around
+* {{key|Shift|}}+Drag - Rotate around selected node
+* Single-click - Select node
+* Double-click - Centers clicked node
+* {{key|Shift|}}+Scroll - Zoom
+* {{key|W}} {{key|A}} {{key|S}} {{key|D}} - Move around (hold {{key|Shift}} for slow movement)
