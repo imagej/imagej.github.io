@@ -64,15 +64,24 @@ These shortcuts become available in ''Edit Mode'', activated through the context
 * {{key|B}} - <u>B</u>rings active node to current Z-plane.
 
 ==== Reconstruction Viewer ====
-* {{key|left}} {{key|right}} {{key|up}} {{key|down}} Rotate (Left-click & drag)
-* {{key|+}} {{key|-}} Zoom (Scroll)
-* {{key|A}} Toggle <u>A</u>xes
-* {{key|C}} Toggle <u>C</u>amera Mode
-* {{key|D}} Toggle <u>D</u>ark Mode
-* {{key|F}} <u>F</u>it View to Visible Objects
-* {{key|R}} <u>R</u>eset View
-* {{key|S}} Save <u>S</u>creenshot
-* {{key|H}} <u>H</u>elp (as Notification) ({{key|F1}} shows Help on a dedicated window)
+* {{key|left}} {{key|right}} {{key|up}} {{key|down}} - Rotate (Left-click & drag)
+* {{key|+}} {{key|-}} - Zoom (Scroll)
+* {{key|A}} - Toggle <u>A</u>xes
+* {{key|C}} - Toggle <u>C</u>amera Mode
+* {{key|D}} - Toggle <u>D</u>ark Mode
+* {{key|F}} - <u>F</u>it View to Visible Objects
+* {{key|R}} - <u>R</u>eset View
+* {{key|S}} - Save <u>S</u>creenshot
+* {{key|H}} - <u>H</u>elp (as Notification) ({{key|F1}} shows Help on a dedicated window)
+
+==== SciView ====
+* Drag - Move around
+* {{key|Shift|}}+Drag - Rotate around selected node
+* Single-click - Select node
+* Double-click - Centers clicked node
+* {{key|Shift|}}+Scroll - Zoom
+* {{key|W}} {{key|A}} {{key|S}} {{key|D}} - Move around (hold {{key|Shift}} for slow movement)
+See [[SciView]]'s {{bc|Help|&nbsp;}}menu for a full list of shortcuts.
 
 ==== Legacy 3D Viewer ====
 All shortcuts that are not specific to tracing canvases (XY, ZY and XZ views) ''should'' be recognized by the [[SNT:_Step-By-Step_Instructions#Legacy_3D_Viewer|Legacy 3D viewer]]. In addition the following are also implemented:
