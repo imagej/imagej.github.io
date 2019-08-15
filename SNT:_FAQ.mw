@@ -33,6 +33,24 @@
 == General ==
 <ol>
 	<li>
+	<span id="citing"></span>'''How do I cite SNT'''?
+	</li>
+	<dl><dd>
+SNT is based on multiple publications. To cite SNT:
+* Ferreira T, et al. ('''2019''') (TBD)
+To reference other plugins that enhance SNT:
+* '''[[Sholl Analysis]]''': Ferreira T, Blackman A, Oyrer J, Jayabal A, Chung A, Watt A, Sjöström J, van Meyel D. ('''2014'''), [http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html Neuronal morphometry directly from bitmap images], ''Nature Methods'' 11(10): 982–984
+* '''[[SNT: Tubular Geodesics|Tubular Geodesics]]''': Türetken E, Benmansour F, Fua P. [https://infoscience.epfl.ch/record/176222/files/turetken_et_al_2012.pdf?version=1 Automated Reconstruction of Tree Structures using Path Classifiers and Mixed Integer Programming]. <i>IEEE Conference on Computer Vision and Pattern Recognition</i>, Providence, Rhode Island, 2012.
+To cite the original Simple Neurite Tracer publication:
+* Longair MH, Baker DA, Armstrong JD. [http://bioinformatics.oxfordjournals.org/content/early/2011/07/04/bioinformatics.btr390.long Simple Neurite Tracer: Open Source software for reconstruction, visualization and analysis of neuronal processes]. <i>Bioinformatics</i> 2011
+	</dd></dl>
+	<li>
+	<span id="snt"></span>'''What is the difference between SNT and Simple Neurite Tracer'''?
+	</li>
+	<dl><dd>
+Simple Neurite Tracer was the first Fiji plugin dedicated to visualization and reconstruction of neurons, developed by [[User:Mark|Mark Longair]] and [[#citing|published in 2011]], to become the single most cited open-source software for semi-automated 3D reconstructions. In the wake of ImageJ2 development, a new team of developers lead by [[User:Tiago|Tiago Ferreira]] took on the effort of modernizing its code base. The project quickly snowballed beyond the re-write of the software, and focused on establishing a complete framework for reconstruction, visualization, quantification and modelling of neuronal morphology. Several name changes were proposed for this "next-gen" Simple Neurite Tracer (''Not so Simple Neurite Tracer'', ''Smart Neurite Tracer'', to name a few), but in the end it was decided to adopt the acronym of the original software, as an homage to Mark's outstanding work. You can follow the entire history of the plugin on {{GitHub|org=fiji|repo=Simple_Neurite_Tracer|label=GitHub}}.
+	</dd></dl>
+	<li>
 	<span id="swc"></span>'''What is a SWC file'''?
 	</li>
 	<dl><dd>
