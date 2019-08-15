@@ -45,11 +45,11 @@
 * {{Person|Saalfeld}}<ref name="mpicbg"/><ref name="janelia"/>
 * {{Person|Pietzsch}}<ref name="mpicbg"/>
 * {{Person|Eglinger}}<ref name="fmi">[https://www.fmi.ch/ Friedrich Miescher Institute] for Biomedical Research (FMI), Basel, Switzerland</ref>
-* {{Person|Tiago}}<ref name="mcgill">[https://www.mcgill.ca/ McGill University]</ref>
+* {{Person|Tiago}}<ref name="janelia"/><ref name="mcgill">[https://www.mcgill.ca/ McGill University]</ref>
 * {{Person|Hadim}}<ref name="mcgill"/>
 * {{Person|White}}<ref name="ge">GE Healthcare (Applied Precision, Inc.)</ref>
 * {{Person|Landini}}<ref name="birmingham">University of Birmingham</ref>
-* {{Person|Kharrington}}<ref name="idaho">[http://www.uidaho.edu University of Idaho], Moscow</ref>
+* {{Person|Kharrington}}<ref name="idaho">[http://www.uidaho.edu University of Idaho], Moscow</ref><ref name="janelia"/>
 * {{Person|Twagner}}<ref name="dortmund">[http://www.fh-dortmund.de University of Applied Sciencs and Arts Dortmund], Germany</ref>
 * {{Person|Hinerm}}<ref name="loci"/> (former)
 * {{Person|Albertcardona}}<ref name="eth">[https://www.ini.uzh.ch/ Institute of Neuroinformatics], [https://www.ethz.ch/en.html Uni/ETH Zurich]</ref><ref name="janelia">[http://janelia.org/ HHMI Janelia Research Campus]</ref> (founder)
@@ -59,6 +59,10 @@
 === [[BigDataViewer]] ===
 * {{Person|Pietzsch}}<ref name="mpicbg"/> (lead)
 * {{Person|StephanP}}<ref name="mpicbg"/><ref name="mdc">[https://www.mdc-berlin.de/13800178/en/bimsb Berlin Institute of Medical Systems Biology (BIMSB)] of the [https://www.mdc-berlin.de/en Max Delbrück Center (MDC)]</ref>
+
+=== [[SNT]] ===
+* {{Person|Tiago}}<ref name="janelia"/> (lead)
+* {{Person|Kharrington}}<ref name="idaho"/><ref name="janelia"/>
 
 === [[TrakEM2]] ===
 * {{Person|Albertcardona}}<ref name="eth"/><ref name="janelia"/> (lead)
