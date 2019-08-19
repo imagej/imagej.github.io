@@ -1,4 +1,4 @@
-{{Warning | This tutorial was written in 2010-11, and contains out-of-date or no-longer-accurate information.}}
+{{Warning | This tutorial was written in 2010-11, and contains out-of-date or no-longer-accurate information. A potential alternative for using OpenCL in ImageJ is [https://imagej.net/Clij CLIJ].}}
 
 This tutorial is meant to help you leverage OpenCL from Java for use with ImageJ.
 
