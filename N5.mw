@@ -1,1 +1,8 @@
-This update site distributes the [https://github.com/saalfeldlab/n5 N5] libraries so they can be used in Fiji/ ImageJ scripts.
+N5 is a library and [[wikipedia:Application_programming_interface|API]] for storing large chunked n-dimensional tensors, and arbitrary meta-data in a hierarchy of groups similar to [[wikipedia:Hierarchical_Data_Format|HDF5]].
+
+The N5 [[update site]] distributes the N5 libraries so they can be used in ImageJ scripts.
+
+See the [https://github.com/saalfeldlab/n5 N5 repository] for further details.
+
+[[Category:Development]]
+[[Category:Update_Sites]]
