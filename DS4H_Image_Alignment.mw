@@ -11,19 +11,37 @@
 }}
 
 
+
 == Description ==
 
-Data Science for Health (DS4H) Image Alignment is a plugin developed to align biological images by manually specifying visible reference marks.
-Warping of the single original images is done according to a least-squares method that approximates the solution of the mathematical overdetermined system, so to define the registration matrix then used for aligning the different images.
+"Data Science for Health (DS4H) Image Alignment" is a user-friendly tool freely provided as an ImageJ/Fiji plugin. 
 
-It also considers rotations and scale changes in case the images to be aligned are dilated/shrinked.
+With DS4H Image Alignment images can be easily aligned (i.e. co-registered) by defining with a few clicks some well visible reference marks. 
 
-Finally, it provides an iterative subroutine for a fine alignment, to easily reach good image co-registration quality. 
+The implemented least-squares method automatically approximates the solution of the mathematical overdetermined system, so to define the registration matrix then used for aligning the different images. It also considers rotations and scale changes in case of object dilation/shrink. Finally, it provides an iterative subroutine for a fine alignment, to easily reach a very good image co-registration quality.
 
-== Image support ==
+DS4H Image Alignment has been implemented in Java as a plugin for ImageJ/Fiji. It works with “.svs” files, but also all the medical imaging formats included in the [[Bio-formats]] library.
 
-All the most common biological image formats (like .tiff, .svs, .ndpi2, etc.) are supported and openable directly from the plugin.
-This has been possible thanks to the use of the [[Bio-formats]] library.
+DS4H Image Alignment is freely available at: [www.filippopiccinini.it/DS4H-IA.html], together with a sample dataset and a video tutorial.
+
+
+
+== Contact Us ==
+
+The Data Science for Health (DS4H) group: 
+
+Filippo Piccinini
+Istituto Scientifico Romagnolo per lo Studio e la Cura dei Tumori (IRST) IRCCS, Meldola (FC), Italy
+filippo.piccinini@irst.emr.it
+
+Antonella Carbonaro
+Department of Computer Science and Engineering (DISI), University of Bologna, Bologna, Italy
+antonella.carbonaro@unibo.it
+
+Stefano Belli
+Master's Degree Student in Computer Sciences, University of Bologna, Italy
+stefano.belli4@studio.unibo.it
+
 
 [[Category:Tutorials]]
 [[Category:Plugins]]
