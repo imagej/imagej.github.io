@@ -22,7 +22,7 @@ The implemented least-squares method automatically approximates the solution of 
 
 DS4H Image Alignment has been implemented in Java as a plugin for ImageJ/Fiji. It works with “.svs” files, but also all the medical imaging formats included in the [[Bio-formats]] library.
 
-DS4H Image Alignment is freely available at: [www.filippopiccinini.it/DS4H-IA.html], together with a sample dataset and a video tutorial.
+DS4H Image Alignment is freely available at: [[www.filippopiccinini.it/DS4H-IA.html]], together with a sample dataset and a video tutorial.
 
 
 
