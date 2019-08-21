@@ -12,14 +12,16 @@
 }}
 
 
+
 == Description ==
 
-Data Science for Health (DS4H) Image Alignment is a plugin developed to align biological images by manually specifying visible reference marks.
-Warping of the single original images is done according to a least-squares method that approximates the solution of the mathematical overdetermined system, so to define the registration matrix then used for aligning the different images.
+"Data Science for Health (DS4H) Image Alignment" is a user-friendly tool freely provided as an ImageJ/Fiji plugin. With DS4H Image Alignment,images can be easily aligned (i.e. co-registered) by defining with a few clicks some well visible reference marks. 
 
-It also considers rotations and scale changes in case the images to be aligned are dilated/shrinked.
+The implemented least-squares method automatically approximates the solution of the mathematical overdetermined system, so to define the registration matrix then used for aligning the different images. It also considers rotations and scale changes in case of object dilation/shrink. Finally, it provides an iterative subroutine for a fine alignment, to easily reach a very good image co-registration quality. 
 
-Finally, it provides an iterative subroutine for a fine alignment, to easily reach good image co-registration quality. 
+DS4H Image Alignment has been implemented in Java as a plugin for ImageJ/Fiji. It works with “.svs” files, but also all the medical imaging formats included in Bio-Formats. It is freely available at: www.filippopiccinini.it/DS4H-IA.html, together with a sample dataset and a video tutorial.
+
+
 
 == Image support ==
 
