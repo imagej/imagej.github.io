@@ -2,9 +2,7 @@
 | software               = ImageJ
 | name                   = DS4H Image alignment
 | maintainer             = {{DS4H}}
-| author                 = Stefano Belli;
-Antonella Carbonaro;
-Filippo Piccinini
+| author                 = Stefano Belli; Antonella Carbonaro; Filippo Piccinini
 
 | source                 = {{GitHub|org=fiji|repo=VIB|source=Align_Image.java}}
 | released               = 08/06/2019
@@ -16,17 +14,17 @@ Filippo Piccinini
 
 == Description ==
 
-Data Science for Health (DS4H) Image Alignment is a plugin developed to overlap biological images by specifying few visible reference marks.
-The overlapping is done by automatically implementing a least-squares method that approximates the solution of the mathematical overdetermined system, so to define the registration matrix then used for aligning the different images.
+Data Science for Health (DS4H) Image Alignment is a plugin developed to align biological images by manually specifying visible reference marks.
+Warping of the single original images is done according to a least-squares method that approximates the solution of the mathematical overdetermined system, so to define the registration matrix then used for aligning the different images.
 
-It also considers rotations and scale changes in case the images to be aligned are dilated/shrinked. 
+It also considers rotations and scale changes in case the images to be aligned are dilated/shrinked.
 
-Finally, it provides an iterative subroutine for a fine alignment, to easily reach a very good image co-registration quality. 
+Finally, it provides an iterative subroutine for a fine alignment, to easily reach good image co-registration quality. 
 
 == Image support ==
 
-All the most common biological image formats (like .svs, .ndpi2 etc.) are supported and openable directly from the plugin.
-This has been possible Thanks to the use of the [[Bio-formats]] library.
+All the most common biological image formats (like .tiff, .svs, .ndpi2, etc.) are supported and openable directly from the plugin.
+This has been possible thanks to the use of the [[Bio-formats]] library.
 
 [[Category:Tutorials]]
 [[Category:Plugins]]
