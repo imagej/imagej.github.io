@@ -27,6 +27,22 @@ DS4H Image Alignment is freely available at: [[www.filippopiccinini.it/DS4H-IA.h
 DS4H Image Alignment has been implemented in Java as a plugin for ImageJ/Fiji. It works with “.svs” files, but also all the medical imaging formats included in the [[Bio-formats]] library.
 
 
+
+== Download ==
+
+DS4H Image Alignment is freely available, together with a sample dataset and a video tutorial. 
+
+To install DS4H Image Alignment follow the instructions reported on the Video Tutorial. Basically, you have to copy the DS4H Image Alignment ".jar" file in the plugins folder of Imagej/Fiji.
+
+- ImageJ/Fiji plugin (".jar" file), to be copied in the plugins folder of Imagej/Fiji.
+
+- Sample dataset (1 MB), with a few images useful to test DS4H Image Alignment.
+
+- Video tutorial, to learn how to use DS4H Image Alignment:
+
+
+
+
 == Contact Us ==
 
 The Data Science for Health (DS4H) group: 
