@@ -41,13 +41,11 @@ DS4H Image Alignment is freely available, together with a sample dataset and a v
 
 To install DS4H Image Alignment follow the instructions reported on the Video Tutorial. Basically, you have to copy the DS4H Image Alignment ".jar" file in the plugins folder of Imagej/Fiji.
 
-- ImageJ/Fiji plugin (".jar" file), to be copied in the plugins folder of Imagej/Fiji.
+- [[ImageJ/Fiji plugin|https://sites.imagej.net/DS4H/plugins/jars/]] (".jar" file), to be copied in the plugins folder of Imagej/Fiji.
 
 - Sample dataset (1 MB), with a few images useful to test DS4H Image Alignment.
 
 - Video tutorial, to learn how to use DS4H Image Alignment.
-
-
 
 == Reference ==
 
