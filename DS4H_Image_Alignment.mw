@@ -20,7 +20,6 @@ Align (i.e. co-register) 2D images
 
 
 
-
 == Description ==
 
 "Data Science for Health (DS4H) Image Alignment" is a user-friendly tool freely provided as an ImageJ/Fiji plugin. With DS4H Image Alignment, 2D images can be easily aligned (i.e. co-registered) by defining with a few clicks some well visible reference marks. 
@@ -46,6 +45,26 @@ To install DS4H Image Alignment follow the instructions reported on the Video Tu
 - Sample dataset (1 MB), with a few images useful to test DS4H Image Alignment.
 
 - Video tutorial, to learn how to use DS4H Image Alignment:
+
+
+
+== Reference ==
+
+Please, when using/referring to "DS4H Image Alignment", cite:
+
+Jenny Bulgarelli, Marcella Tazzari*, Anna Maria Granato, Laura Ridolfi, Serena Maiocchi, Francesco De Rosa, Massimiliano Petrini, Elena Pancisi, Giorgia Gentili, Barbara Vergani, Filippo Piccinini, Antonella Carbonaro, Biagio Eugenio Leone, Giovanni Foschi, Valentina Ancarani, Massimo Framarini, Massimo Guidoboni, "Dendritic cell vaccination in metastatic melanoma turns “non-T cell inflamed” into “T-cell inflamed” tumors". 2019.
+
+
+
+== License ==
+
+Copyright (C) 2019, the Data Science for Health (DS4H) group. All rights reserved.
+
+Image Alignment and the material available on the Image Alignment website is licensed under the: GNU General Public License version 3
+
+- This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+- This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 
 
