@@ -1,6 +1,5 @@
 {{Infobox
-| software               = ImageJ
-| name                   = DS4H Image alignment
+| name                   = DS4H Image Alignment
 | maintainer             = DS4H
 | author                 = Stefano Belli; Antonella Carbonaro; Filippo Piccinini
 | source                 = {{GitHub|org=Luxor001|repo=DS4H-Image-Alignment}}
