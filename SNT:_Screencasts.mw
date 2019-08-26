@@ -1,6 +1,7 @@
 [[Category:SNT]][[Category:Neuroanatomy]]
 {{SNTNavBar}}
 __NOTOC__
+This page contains a list of screencasts that describe SNT capabilities.
 
 === Introduction To Tracing: ===
 <br>
@@ -14,9 +15,15 @@ __NOTOC__
 <br>
 <br>
 
+=== Analyzing Reconstructions: ===
+<br>
+{{#widget:YouTube|id=inZl4zS7oc4|width=600}}
+<br>
+<br>
+
 
 = Old Screencasts =
-These are likely too outdated to be useful.
+These are old [[SNT:_FAQ#snt|Simple Neurite Tracer]] screencasts that are likely too outdated to be useful.
 
 === Basic Usage of [[SNT:_FAQ#snt|Simple Neurite Tracer]]: ===
 <br>
