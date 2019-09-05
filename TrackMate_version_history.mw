@@ -353,3 +353,9 @@ Noted by Christian Tischer.
 * Set the calibration properly, even if this is a capture.
 
 * And give a better title to the imp.
+
+== 06/09/2019 - v4.0.1 ==
+
+* Properly use the ManualDetectorFactory in scripts: does not crash nor remove existing spots.
+
+* Display the true plugin version on the GUI. It was displaying 3.8.0 but we were on 4.0.0 for quite some time.
