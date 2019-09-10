@@ -29,7 +29,7 @@ There are various options:
 A special purpose of BigDataViewer is to visualise multi-view light sheet microscopy datasets.
 Our custom XML/HDF5  is a special purpose hierarchical data format that optimises access to any part of large-multi view datasets using ImgLib2.
 You can download a small dataset from
-[http://fly.mpi-cbg.de/~pietzsch/bdv-example/ here], comprising two views and three time-points.
+[https://fly.mpi-cbg.de/~pietzsch/bdv-example/ here], comprising two views and three time-points.
 This is an excerpt of a 6 angle 715 time-point sequence of ''drosophila melanogaster'' embryonal development, imaged with a Zeiss Lightsheet Z.1.
 Download both the XML and the HDF5 file and place them somewhere next to each other.
 
