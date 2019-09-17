@@ -221,6 +221,23 @@ should be changed. Optionally also:
 <url>
 </source>
 
+Finally add at least one of the following dependencies for ImageJ plugin support:   
+
+<source lang="xml">
+<dependencies>
+	// support for ImageJ2 plugins
+	<dependency>
+	    <groupId>net.imagej</groupId>
+	    <artifactId>imagej</artifactId>
+	</dependency>
+	// support for ImageJ 1.x plugins
+	<dependency>
+	    <groupId>net.imagej</groupId>
+	    <artifactId>ij</artifactId>
+	</dependency>
+</dependencies>
+</source>
+
 == Further readings ==
 
 * [https://github.com/imagej/minimal-ij1-plugin/blob/master/README.md README.md] of the [https://github.com/imagej/minimal-ij1-plugin Minimal Maven based ImageJ 1.x plugin]
