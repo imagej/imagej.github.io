@@ -504,5 +504,36 @@ Add this to your pom.xml:
     <version>8.8.3</version>
 </dependency>
 </source>
+
+== Log4j warning in IntelliJ IDEA ==
+Some of the tutorials seem to be missing a configuration file for Log4. IntelliJ will warn you about this as soon as you try to try to build the project:
+
+<source>
+log4j:WARN No appenders could be found for logger (org.bushe.swing.event.EventService).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+</source>
+
+The missing config file is called <code>log4j.xml</code> and has to be located in  <code>.../src/main/resources/</code>:
+
+<source lang="xml">
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration debug="true" xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+    <appender name="fileAppender" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="demoApplication.log"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
+        </layout>
+    </appender>
+
+    <root>
+        <priority value ="debug"></priority>
+        <appender-ref ref="fileAppender"></appender-ref>
+    </root>
+
+</log4j:configuration>
+</source>
+
 [[Category:News]]
 [[Category:ImageJ2]]
