@@ -456,5 +456,33 @@ More information can be read here: [[2015-12-22 - The road to Java 8]]
 
 Turn your local customized Fiji into a redistributable package that can then be installed on other machines e.g. in your lab: use the [[Make Fiji Package]] command.
 
+== Continuous Integration with Travis CI ==
+If you want to share your plugin in the ImageJ updater automatically [[Automatic Update Site Uploads]], contribute to the ImageJ project [[Fiji/Contribution requirements]] or work in a team with multiple developers, you may want to build, test and deploy your Plugin with [[Travis CI]]. If you are hosting your code in a public [[GitHub]] repository this service is free for you. After signing in with your [[GitHub]] account you can activate single repositories for [[Travis CI]]. Travis then automatically clones your repository with every change and runs a build according to the <code>.travis.yml</code> configuration file in your root directory.
+
+<source lang="yml">
+	# specify compiler
+	language: java
+	sudo: false # faster builds
+	jdk: openjdk8
+	
+	# maven build
+	install: true
+	script: mvn clean verify
+	
+	# cache maven dir for performance
+	cache:
+	  directories:
+	    - $HOME/.m2
+</source>
+
+In case you are working with GUI tests, you may want to activate a virtual display as well:
+
+<source lang="yml>
+	# virtual display variable for gui tests
+		dist: xenial
+		services:
+		  - xvfb
+</source>
+
 [[Category:News]]
 [[Category:ImageJ2]]
