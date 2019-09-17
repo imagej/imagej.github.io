@@ -126,11 +126,11 @@ This feature analyzer focuses on the track "location" in time and it's displacem
 
 Measure the time in physical units (seconds, etc.) between the first spot of the track in time, and the last spot of the track in time.
 
-==== Track start. ===
+==== Track start. ====
 
 Measure at what time (in physical units) the first spot of the track occurs.
 
-==== Track stop. ===
+==== Track stop. ====
 
 Same thing for the last spot of the track in time.
 
