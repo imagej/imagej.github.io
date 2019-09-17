@@ -219,6 +219,8 @@ You can search by class for Maven artifacts. For example, [http://maven.imagej.n
 
 If you are comfortable with command-line tools, you can also use the [https://maven.apache.org/plugins/maven-dependency-plugin/ Maven Dependency Plugin] which enables you to do things like download local copies of the dependency jars for inspection.
 
+Also [https://mvnrepository.com mvnrepository.com] is a good resource to find repositories with code you can easily copy and paste in your <code>pom.xml</code>.
+
 == Manage Java versions ==
 
 On Linux several java version can be installed. Select the preferred version in a terminal window (e.g. bash):
