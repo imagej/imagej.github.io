@@ -387,7 +387,9 @@ Maven is more than just a build tool, it is a project management tool. It allows
 
 Maven is declarative, whereas Ant is procedural. In Ant, you say "do X, then do Y, then do Z." Whereas in Maven, you say "my code is here, my resources are there, and please use these plugins." One advantage of the latter is that Maven provides a standardized build sequence (called the "build lifecycle") making it compatible with all the major IDEs.
 
-== How to migrate an existing Netbeans project to a Maven project? ==
+== How to migrate an existing project to a Maven project? ==
+
+'''In Netbeans'''       
 
 Adapted from [http://stackoverflow.com/q/7548008 StackOverflow #7548008]:
 
@@ -401,6 +403,22 @@ Adapted from [http://stackoverflow.com/q/7548008 StackOverflow #7548008]:
 * Move <code>src/java</code> to <code>src/main/java</code>.
 * Open your project again in NetBeans. It should be a Maven project now.
 * Delete the unnecessary <code>NewMavenProject</code> project.
+    
+
+'''In IntelliJ IDEA'''    
+* Create a new Maven Project with {{bc|File|New Project}}
+* Select Maven on the left and click ''Next''
+* Choose your custom GroupID (eg. com.yourwebsite) and an ArtifactID as single identifier for this project (eg. project_name) 
+* Note that for ImageJ 1.x Plugins a "_" in the project name/ identifier is required for ImageJ 1.x Plugins
+* The project structure required by Maven will be created for you
+* For Git support (recommended): {{bc|VCS|Import into Version Control|Git}}
+* Copy all <code>.java</code> files into ''[project_name]/src/main/java''
+* Copy your <code>plugins.config</code> file into ''[project_name]/src/main/resources''
+* In the main project directory ''[project_name]/'' you can find a <code>pom.xml</code> which has to be edited like the example shown in the previous chapter
+* If your IDE asks to import all Maven changes you have to allow this
+* Expand the Maven window which can be found on one of the edges in the IntelliJ window and select your project 
+* Here you can right-click and ''Run Maven Build'' or alternatively press the green arrow above it in the Maven window to build your project
+* The build process will generate two <code>.jar</code> file under ''[project_name]/targets/''
 
 == Enable the ImageJ 1.x UI, instead of the ImageJ2 Swing UI ==
 
