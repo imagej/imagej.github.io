@@ -140,6 +140,55 @@ Measure the distance (still in physical units) between the last spot of the trac
 
 Careful: This is different from the track excursion. The value reported here simply measure the length of a straight line that extends between the first spot to the last spot.  If the track makes a gigantic excursion but comes back exactly at its starting point, the track displacement will still be 0.
 
+
+
+=== Track index. ===
+
+[https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/track/TrackIndexAnalyzer.java code on github]
+
+This analyzer simply assign an integer number to tracks. It can be the track ID or the track index.
+
+==== Track index. ====
+
+The track index is simply an integer number that goes from 0 to the number of tracks minus one, over all the tracks visible or not.
+
+==== Track ID. ====
+
+The track ID is an integer number that does not necessarily start from 0. It is used internally to identify uniquely a track in a TrackMate session. The absolute value of the track ID is meaningless. 
+
+
+
+=== Track location. ===
+
+[https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/track/TrackLocationAnalyzer.java code on github]
+
+This analyzer yields feature values about the spatial location of tracks. This location is in physical units, and is defined by taking the mean of the location of spots that compose the track, 
+
+==== X Location (mean). ====
+
+The mean of the X position of all the spots in the track.
+
+==== Y Location (mean). ====
+
+Same thing for the Y location. 
+
+==== Z Location (mean). ====
+
+Guess what?
+
+
+
+=== Track Velocity. ===
+
+[https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/track/TrackSpeedStatisticsAnalyzer.java code on github]
+
+Feature values related to velocity. 
+Normally velocity values given by this analyzer are calculated using the '''link velocity'''. The link velocity (or velocity) is defined for a single link between two spots (distance between the two spots divided by the time difference). The feature values are built upon this link feature, and is also referred in TrackMate (somewhat incorrectly) as the instantaneous velocity. 
+
+==== Mean velocity. ====
+
+The mean of the link velocity over all the links of the track.
+
 == Spot trackers ==
 
 === LAP trackers ===
