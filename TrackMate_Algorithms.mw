@@ -189,6 +189,18 @@ Normally velocity values given by this analyzer are calculated using the '''link
 
 The mean of the link velocity over all the links of the track.
 
+==== Maximal velocity, Minimal velocity, Median velocity and Velocity standard deviation. ====
+
+Same thing, but taking the max, min, median and standard deviation respectively. 
+All these feature values take the link velocities of a track as a distribution they summarize. 
+
+
+=== Track spot quality. ===
+
+[https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/track/TrackSpotQualityFeatureAnalyzer.java code on github]
+
+This feature analyzer simply takes the mean, max, min, median and standard deviation of the distribution of the '''Quality''' values of all the spots in a track. In this respect, it is similar to the previous analyzer (Track velocity) that does the same for link velocity. ...
+
 == Spot trackers ==
 
 === LAP trackers ===
