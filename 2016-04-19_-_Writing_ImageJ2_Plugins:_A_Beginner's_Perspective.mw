@@ -78,7 +78,7 @@ A somewhat outdated but rather detailed description how to work with an older ve
 
 Using JAR works for local development, but it will cause you various problems later. For example, if you share your source code, you will need to commit this JAR along with your NetBeans project files to your repository, to ensure everyone else uses the same version of ImageJ that you do.}}
 
-== Using NetBeans with Maven ==
+== Build ImageJ with NetBeans, Git and Maven ==
 
 Using Maven to develop your plugins is a much better approach. You will not have to commit any JAR files to source control. You can pin your code to fixed, known versions of its dependencies that will provide [[reproducible builds]] for many years to come.
 
@@ -111,6 +111,27 @@ The repository {{GitHub | org=imagej | repo=imagej1 | label=imagej/imagej1}}, fo
 Side note: I am not expert NetBeans user, therefore I could not figure out another way:
 
 To import several projects from GitHub I always had to close all open project in NetBeans before I could import another project. If somebody knows a better way, please add here.}}
+
+== Build the ImageJ Tutorial Plugin with IntelliJ IDEA, Git and Maven ==
+
+'''Setup IntelliJ'''
+* Make sure you have a version of Java SDK 1.8.x installed
+* Make sure to activate Maven and Git Plugins when installing IntelliJ
+* However these plugins can be activated in the main settings at any time
+
+'''Import and build the project:'''
+* Run IntelliJ IDEA
+* Choose {{bc|File|New|Project from Version Control|Git}} from the main menu
+''ImageJ 1.x Plugin'' 
+* For the Repository URL, enter: <code>https://github.com/imagej/example-legacy-plugin.git</code> and choose a local folder you want the project to be stored in
+''ImageJ2 Plugin''   
+* For the Repository URL, enter: <code>https://github.com/imagej/tutorials.git</code> and choose a local folder you want the project to be stored in
+'''Import'''
+* Click Clone and all sources will be downloaded and opened as a new Project
+* If IntelliJ asks to import all Maven changes you have to allow this
+* Expand the Maven window which can be found on one of the edges in the IntelliJ window and select your project 
+* Here you can right-click and "Run Maven Build" or alternatively press the green arrow above it in the Maven window to build your project
+* The build process will generate two <code>.jar</code> file under ''[project_name]/targets/'' that can be installed in your local ImageJ installation
 
 = Details of Writing Plugins =
 
