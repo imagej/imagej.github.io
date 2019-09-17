@@ -100,7 +100,7 @@ The number of gap. A gap is a link between two spots that span more than one fra
 ==== Longest gap. ====
 
 The size of the longest gap. That is: the number of frames that are skipped over by the longest gap in the track.
-For instance, a gap between a spot in frame 2 and a spot in frame 4 would generate a gap os size 1 (the frame 3).
+For instance, a gap between a spot in frame 2 and a spot in frame 4 would generate a gap of size 1 (the frame 3).
 
 ==== Number of split events. ====
 
