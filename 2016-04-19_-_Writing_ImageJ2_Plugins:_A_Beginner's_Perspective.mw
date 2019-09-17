@@ -456,6 +456,43 @@ More information can be read here: [[2015-12-22 - The road to Java 8]]
 
 Turn your local customized Fiji into a redistributable package that can then be installed on other machines e.g. in your lab: use the [[Make Fiji Package]] command.
 
+== Tests wit JUnit5 ==
+
+In IntelliJ IDEA you may want to make sure that the JUnit5 Plugin is activated. The next step would be to append the following lines to your <code>pom.xml</code> file:
+
+<source lang="xml">
+<dependency> 
+<groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-engine</artifactId>
+    <version>5.5.1</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>org.junit.platform</groupId>
+    <artifactId>junit-platform-runner</artifactId>
+    <version>1.5.1</version>
+    <scope>test</scope>
+</dependency>
+
+<build>
+    <plugins>
+        <plugin>
+            <!-- fix maven tests -->
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M3</version>
+            <configuration>
+                <excludes>
+                    <exclude>some test to exclude here</exclude>
+                </excludes>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+</source>
+
+'''Note:''' if you want to test GUI tests with TravisCI you have to activate a virtual display as described in the Travis CI chapter.
+
 == Continuous Integration with Travis CI ==
 If you want to share your plugin in the ImageJ updater automatically [[Automatic Update Site Uploads]], contribute to the ImageJ project [[Fiji/Contribution requirements]] or work in a team with multiple developers, you may want to build, test and deploy your Plugin with [[Travis CI]]. If you are hosting your code in a public [[GitHub]] repository this service is free for you. After signing in with your [[GitHub]] account you can activate single repositories for [[Travis CI]]. Travis then automatically clones your repository with every change and runs a build according to the <code>.travis.yml</code> configuration file in your root directory.
 
