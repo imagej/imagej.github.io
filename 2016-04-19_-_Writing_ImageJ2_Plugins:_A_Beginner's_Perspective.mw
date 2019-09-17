@@ -116,7 +116,7 @@ To import several projects from GitHub I always had to close all open project in
 
 == Tutorials ==
 
-* For ImageJ 1.x: [[Introduction into Developing Plugins]]
+* For ImageJ 1.x: [[Introduction into Developing Plugins]] and [https://github.com/imagej/example-legacy-plugin Example Legacy Plugin]
 * For ImageJ2: [[Writing plugins]] (Note: The instruction "Update your parent POM" in [[Writing plugins#Update_your_POM]] just means that the version number should be adjusted to reflect the latest available version of the parent POM file on GitHub.)
 * [[ImgLib2 Examples]]
 * [[Developing ImgLib2]]
