@@ -199,7 +199,40 @@ All these feature values take the link velocities of a track as a distribution t
 
 [https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/track/TrackSpotQualityFeatureAnalyzer.java code on github]
 
-This feature analyzer simply takes the mean, max, min, median and standard deviation of the distribution of the '''Quality''' values of all the spots in a track. In this respect, it is similar to the previous analyzer (Track velocity) that does the same for link velocity. ...
+This feature analyzer simply takes the mean, max, min, median and standard deviation of the distribution of the '''Quality''' values of all the spots in a track. In this respect, it is similar to the previous analyzer (Track velocity) that does the same for link velocity. 
+
+
+=== Linear track analysis. ===
+
+This feature analyzer comes from a TrackMate extra. It is available as a jar that you should download separately and drop into the jars folder of you Fiji installation. Check [[TrackMate#Extensions]] to get it.
+
+It was written to add track descriptor that would help characterize the track motility. I simply took some of the feature described in the following paper:
+
+''Methods for cell and particle tracking.'', Meijering E, Dzyubachyk O, Smal I., Methods Enzymol. '''2012''';504:183-200. [https://www.sciencedirect.com/science/article/pii/B9780123918574000094 link to paper].
+
+
+==== Total distance traveled. ====
+
+This feature value reports the full distance the particle traveled throughout the track. 
+It is computed by taking the sum of the link distance (distance from the source spot to the target spot of the link, for all links). 
+
+It really report how much the particle 'walked'. For instance, if a particle travels along a equilateral triangle of size 10 µm, going back to its starting point, this feature will return 30 µm. While the '''Track displacement''' feature described above will return 0 µm.
+
+==== Max distance traveled. ====
+
+This feature reports the distance to the furthest point of the track, with respect to the first spot in time of the track. 
+To get this value we simply computes the straight-line distance between each spot of the track to the first spot of the track, and returns the largest distance.
+
+This distance is a "straight-line" distance. In our example above with the particle that walks over a triangle, this feature value would be 10 µm.
+
+==== Confinment ratio. ====
+
+The confinment ratio tells how "efficient" was a track displacement in getting far away from its starting point.
+It is defined as the net-displacement divided by the total-distance. The net-displacement is given by the '''Track displacement''' feature, and the total distance is given by the '''Total distance traveled''' feature.
+
+It is a unitless value that ranges from 0 to 1. Values close to 0 indicate a confined movement, where the particle would stay close to its starting point. Values close to 1 indicate that the particle travels along a line with a constant orientation.
+
+==== Mean straight line speed. ====
 
 == Spot trackers ==
 
