@@ -24,28 +24,32 @@ The search engines will point you to both [http://imagej.net/ http://imagej.net/
 You will need:
 
 * Java
-* [[IDE]] (for example: [[Eclipse]] or [[NetBeans]])
+* [[IDE]] (for example: [[Eclipse]], [[NetBeans]] or [[IntelliJ_IDEA]])  is highly recommended
 * [[Git]]
 * [[Maven|Apache Maven]]
-* [[Source code|ImageJ2 source code]]
+* [[Source code|ImageJ2 source code]] is an optional help
 
-Environment used for testing this guide:
+Environments used for testing this guide:
 
-* Debian Jessie
-* OpenJDK 1.8.0
-* NetBeans IDE version 8.0.2
-* Git 2.1.4
-* Apache Maven 3.0.5
+* Debian Jessie | macOS 10.14.x
+* OpenJDK 1.8.x
+* NetBeans IDE version 8.0.2 | IntelliJ IDEA 2019.2.2 (Community Edition)
+* Git 2.x
+* Apache Maven 3.x
 
 [[Git]] is a source-code-management system with revision control.
 
 [[Maven]] is a build automation tool used primarily for Java projects.
 
-The ImageJ wiki [[Project management|mentions another software tool]], called [[Jenkins]], which is according to Wikipedia "an open source continuous integration tool written in Java", whatever this means. Tools like Maven and Jenkins make it more complicated for casual developers to understand the workflow of ImageJ at the beginning. However, these tools are well maintained by the community so that you will not have to think about them too much initially, and they facilitate the programming process. For example, concerning "Jenkins" it is enough to know that "continuous integration" means merging all developer working copies to a shared mainline several times a day. For the development of a single plugin for our personal use we can ignore Jenkins for the moment. It works in the background and does its job. That's all we need to know.
+Both Git and Maven have build in support in current versions of the IDEs mentioned above.
+
+Earlier versions of the ImageJ wiki [[Project management|mentioned another software tool]], called [[Jenkins]], which is according to Wikipedia "an open source continuous integration tool written in Java". This tool was later replaced by a similar working service called [[Travis CI]]. Tools like Maven and Travis CI make it more complicated for casual developers to understand the workflow of ImageJ Plugin development at the beginning. However, these tools are well maintained by the community so that you will not have to think about them too much initially and they facilitate the programming process.    
+For example, concerning "Travis CI" it is enough to know that "Continuous Integration" means merging all developer working copies to a shared mainline several times a day. Here the work of multiple developers is compiled and tested on a single machine to ensure that the combined code produces a working project at any time. For the development of a single plugin for our personal use we can ignore "Travis CI" for the moment. It will be important if you want to share your plugin in the ImageJ updater or even contribute to the ImageJ project.
 
 All [[source code]] is on [[GitHub]]. As ImageJ nowadays is a rather complex project its development is split into several [[Architecture|ImageJ subprojects]]. For a beginner it is hard to understand the interaction of the different available projects which all contribute under the label "[[SciJava]]" to ImageJ2. The nice thing is, that Maven will help to pull in the necessary code from all ImageJ subprojects automatically with the help of configurations files which are supplied by the ImageJ2 developer community. The ImageJ wiki provides a very first overview of the [[Architecture|SciJava ecosystem]] of ImageJ2.
 
-These configuration files contains information about the project and various configuration detail used by Maven to build the project(s). The configuration files are named <code>pom.xml</code> where pom stands for "Project Object Model", whatever this means. The <code>pom.xml</code> files help to organize everything needed to build ImageJ. You can use any Maven-based project you want with that approach, not just ImageJ. So e.g. you can import {{GitHub|org=fiji|repo=fiji|label=fiji/fiji}} that way, or an individual plugin such as {{GitHub|org=fiji|repo=AnalyzeSkeleton|label=fiji/AnalyzeSkeleton}}.
+To make Maven work we need so called <code>pom.xml</code> files. These configuration file contains information about the project and various configuration details used by Maven to build the project(s).   
+The <code>pom.xml</code> files help to organize everything needed to build ImageJ. You can use any Maven-based project you want with that approach, not just ImageJ. So e.g. you can import {{GitHub|org=fiji|repo=fiji|label=fiji/fiji}} that way, or an individual plugin such as {{GitHub|org=fiji|repo=AnalyzeSkeleton|label=fiji/AnalyzeSkeleton}}.
 
 In general, there are two alternative strategies to develop your plugin:
 
