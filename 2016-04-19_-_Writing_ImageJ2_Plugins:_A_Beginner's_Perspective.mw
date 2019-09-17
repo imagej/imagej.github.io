@@ -7,6 +7,8 @@
 
 Before you consider to write your own [[plugin]] for [[ImageJ]], please note that writing a [[script]] has a much lower barrier to entry than Java plugin development.
 
+Also you may want to have a look at [[Introduction_into_Macro_Programming]] as an easy way to automate repetitive tasks with existing tools and plugins.
+
 == Finding information ==
 
 * The top-level source of information is [[Welcome|the ImageJ wiki]].
