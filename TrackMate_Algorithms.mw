@@ -114,6 +114,32 @@ This is the opposed event: a spot would merge at least two branches, and would l
 
 Complex events are the rest: When a spot link to more than one spot in the previous frame and more than one spot in the next frame.
 
+
+
+=== Track duration analyzer. ===
+
+[https://github.com/fiji/TrackMate/blob/master/src/main/java/fiji/plugin/trackmate/features/track/TrackDurationAnalyzer.java code on github]
+
+This feature analyzer focuses on the track "location" in time and it's displacement. 
+
+==== Duration of track. ====
+
+Measure the time in physical units (seconds, etc.) between the first spot of the track in time, and the last spot of the track in time.
+
+==== Track start. ===
+
+Measure at what time (in physical units) the first spot of the track occurs.
+
+==== Track stop. ===
+
+Same thing for the last spot of the track in time.
+
+==== Track displacement. ====
+
+Measure the distance (still in physical units) between the last spot of the track and the first spot of the track in time. 
+
+Careful: This is different from the track excursion. The value reported here simply measure the length of a straight line that extends between the first spot to the last spot.  If the track makes a gigantic excursion but comes back exactly at its starting point, the track displacement will still be 0.
+
 == Spot trackers ==
 
 === LAP trackers ===
