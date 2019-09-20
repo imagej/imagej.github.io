@@ -207,13 +207,13 @@ ImageJ has benefitted from many hackathons over the years:
 |{{PersonList|Kharrington|Saalfeld|Dietzc|Rueden|Maarzt|Pietzsch|royerloic|Bnorthan|skalarproduktraum|marktsuchida|Robert Wiese}}
 |[[SciView]]
 |- valign="top"
-|[[2018-10-26 - ImageJ Fall 2018 Update|2018 May 16 -<br>2018 May 18]]
+|2018 May 16 -<br>2018 May 18
 |[https://www.galvanize.com/san-francisco Galvanize]<br>San Francisco, CA, USA
 |{{PersonList|Dan Toloudis (AICS)|Dyche Mullins (UCSF)|Lisa Harrylock (AICS)|Tom Goddard (UCSF)|Molly Maleckar (AICS)|Tom Ferrin (UCSF)|Graham Johnson (AICS)|Samuel Lord (UCSF/HHMI)|Basu Chaudhuri (AICS)|Ambrose Carr (CZI)|Megan Riel-Megan (AICS)|Jeremy Freeman (CZI)|Dave Williams (AICS)|Nicholas Sofroniew (CZI)|{{Person|Rueden}}|Arne Bakker (CZI)|Syuan-Ming Guo (CZ Biohub)|Andréa Clavijo (CZI)|Deep Ganguli (CZI)|Shalin Mehta (CZ Biohub)|Tony Tung (CZI)|Sarah Kefayati (CZ Biohub)|Anitha Krishnan (CZ Biohub)|{{Person|0x00b1}}|Norah Klintberg (CZ Biohub)|Eric Perlman (Johns Hopkins)|Oana Carja (CZ Biohub)
 Benny Lin (U Texas Austin)|Jeremy Maitlen-Shephard (Google)}}
 |Bioimage Analysis in JavaScript, Python + Java
 |- valign="top"
-|[[2018-10-31 - Fall 2018 Madison Hackathon|2018 Oct 31 -<br>2018 Nov 06]]
+|2018 Oct 31 -<br>2018 Nov 06
 |[[LOCI]]<br>Madison, WI, USA
 |{{PersonList|Dietzc|Pietzsch|marktsuchida|Rueden}}
 |ImgLib2, Micro-Manager
@@ -227,6 +227,11 @@ Benny Lin (U Texas Austin)|Jeremy Maitlen-Shephard (Google)}}
 |[https://www.it4i.cz/?lang=en IT4Innovations]<br>Ostrava, Czech Republic
 |{{PersonList|Jug|Pietzsch|Tomancak|dietzc|tibuch|MarcelWiedenmann|maarzt|xulman|Pbainar|Awalter2|gab1one|Treiblesschorle|mp007|frauzufall|HedgehogCode| John Bogovic| Nicolas Chiaruttini| Jana Klímová| Jan Kožusznik| Michal Krumnikl| Manan Lalit| Emil Melnikov| Pavel Moravec| Václav Svatoň| Christian Tischer| Gabriella Turek| Tomas Vicar| Marwan Zouinkhi}}
 |[https://imagej.net/SPIM_Workflow_Manager_For_HPC Parallelization and HPC]
+|-
+|2019 Sep 18 -<br>2019 Sep 24
+|[https://www.knime.org/contact KNIME Konstanz Regional Office]<br>Konstanz, Germany
+|{{PersonList|mr-c|sverhoeven|ctrueden|dietzc|tpietzsch|MarcelWiedenmann|DanielBogenrieder|frauzufall|HedgehogCode|AtR1an|LauLauThom|KFDing|frankprotopapa|ChristianAlbrecht|gab1one|Treiblesschorle}}
+|[[KNIME]]
 |-
 |colspan="4" style="border-bottom: 1px solid gray"|
 |}
