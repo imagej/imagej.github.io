@@ -9,7 +9,7 @@
 | source               = [https://github.com/fiji-hpc/scijava-parallel on github]
 }}
 
-Scijava-parallel is a framework that should provide an access point for using computational resources such are remote computers or HPC cluster. It hides details about configuration and initialisation of such resources.
+Scijava-parallel is a framework that should provide an access point for using computational resources such are remote computers or HPC clusters. It hides details about configuration and initialisation of such resources.
 
 == Types of users ==
 Scijava-parallel is designed to be used be three type of users and we call them: ''developers'', ''users'' and ''providers''.
