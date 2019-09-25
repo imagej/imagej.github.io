@@ -34,3 +34,7 @@ Base type ParallelParadimg contains three methods:
 * ''getStatus'' - returns status indicating whether is paradigm initialized or disposed.
 
 First parallelization paradigm was type ''RPCParadigm'' that has methods:
+<source lang="java">
+  List<Map<String, Object>> runAll(String commandName, List<Map<String, Object>> parameters)
+  List<CompletableFuture<Map<String, Object>>> runAllAsync(String commandName, List<Map<String, Object>> parameters);
+</source>
