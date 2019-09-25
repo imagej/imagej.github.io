@@ -39,3 +39,4 @@ First parallelization paradigm was type ''RPCParadigm'' that has methods:
   List<CompletableFuture<Map<String, Object>>> runAllAsync(String commandName, List<Map<String, Object>> parameters);
 </source>
 The methods cause parallel execution of specified command for parameters. A size of a parameters defines how many executions is performed. Parallelization and distribution of requests is solved by used parallel paradigm implementation.
+Three implementations of parallel paradigm exist:
