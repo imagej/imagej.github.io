@@ -216,6 +216,8 @@ The features calculated there will help you determine whether a tracked object m
 Please note that the feature values listed in this paragraph are only properly defined bor '''linear tracks''', that is tracks with no fusion nor split events.
 
 
+[[File:TrackMate track features.png]]
+
 
 ==== Total distance traveled. ====
 
