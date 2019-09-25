@@ -22,4 +22,4 @@ A Fiji user provides configurations for parallel paradigm implementations.
 The configurations are called profiles. 
 Users also selects one configuration that is used when some code requests for parallel paradigm.
 
-A parallel paradigm provider
+A parallel paradigm provider offers new parallel paradigm implementations or new types of parallel paradigm.
