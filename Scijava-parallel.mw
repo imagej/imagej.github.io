@@ -1,0 +1,10 @@
+{{Infobox
+| name                   =  Scijava-parallel
+| software               = Fiji
+| author                 = Petr Bainar, Jan Kožusznik
+| maintainer             = Jan Kožusznik
+| released               = November 2019
+| latest version         = November 2019
+| category               = [[:Category:Framework]]
+| source               = [https://github.com/fiji-hpc/scijava-parallel on github]
+}}
