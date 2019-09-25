@@ -32,3 +32,5 @@ Base type ParallelParadimg contains three methods:
 * ''init'' - initializes resources required for and used by parallel paradigm; 
 * ''close'' - disposes initialized resource;
 * ''getStatus'' - returns status indicating whether is paradigm initialized or disposed.
+
+First parallelization paradigm was type ''RPCParadigm'' that has methods:
