@@ -11,7 +11,7 @@
 
 Scijava-parallel is a framework that should provide an access point for using computational resources such are remote computers or HPC cluster. It hides details about configuration and initialisation of such resources.
 
-== Types of user ==
+== Types of users ==
 Scijava-parallel is designed to be used be three type of users and we call them: ''developers'', ''users'' and ''providers''.
 
 Developer is a user who uses its defined API for accessing to configured  computational resources such are HPC cluster or remote computers. Remote computational resources are accessible through components that implements interface derived from interface ParallelParadigm. These components are called specific ''parallel paradigms'' implementation and specialized interface are called ''parallel paradigms''.
