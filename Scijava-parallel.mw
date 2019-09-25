@@ -25,4 +25,4 @@ Users also selects one configuration that is used when some code requests for pa
 A parallel paradigm provider offers new parallel paradigm implementations or new types of parallel paradigm.
 
 == Developers ==
-Developers obtains parallel paradigm implementation that is in selected profile by method getParadigmOfType. There is specified
+Developers obtain parallel paradigm implementation that is in selected profile by method getParadigmOfType. Desired parallel paradigm is specified when the method is used and when parallel paradigm implementation does not implement the type ''null'' value is returned.
