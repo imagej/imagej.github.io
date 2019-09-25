@@ -204,11 +204,17 @@ This feature analyzer simply takes the mean, max, min, median and standard devia
 
 === Linear track analysis. ===
 
+[https://github.com/tinevez/TrackMate-TrackAnalysis/blob/master/src/main/java/fiji/plugin/trackmate/features/track/LinearTrackDescriptor.java code on github]
+
 This feature analyzer comes from a TrackMate extra. It is available as a jar that you should download separately and drop into the jars folder of you Fiji installation. Check [[TrackMate#Extensions]] to get it.
 
-It was written to add track descriptor that would help characterize the track motility. I simply took some of the feature described in the following paper:
+It was written to add track descriptor that would help characterize the track motility type. 
+The features calculated there will help you determine whether a tracked object moves 'efficiently' or has an apparently random motion, etc. I simply took some of the feature described in the following paper:
 
 ''Methods for cell and particle tracking.'', Meijering E, Dzyubachyk O, Smal I., Methods Enzymol. '''2012''';504:183-200. [https://www.sciencedirect.com/science/article/pii/B9780123918574000094 link to paper].
+
+Please note that the feature values listed in this paragraph are only properly defined bor '''linear tracks''', that is tracks with no fusion nor split events.
+
 
 
 ==== Total distance traveled. ====
@@ -218,6 +224,14 @@ It is computed by taking the sum of the link distance (distance from the source 
 
 It really report how much the particle 'walked'. For instance, if a particle travels along a equilateral triangle of size 10 µm, going back to its starting point, this feature will return 30 µm. While the '''Track displacement''' feature described above will return 0 µm.
 
+<center>
+  <math>
+    \text{ total distance travelled } = \sum_{i} d_{i,i+1}
+  </math>
+</center>
+
+where ''di,i+1'' is the distance from one spot to the next spot in the track.
+
 ==== Max distance traveled. ====
 
 This feature reports the distance to the furthest point of the track, with respect to the first spot in time of the track. 
@@ -225,14 +239,69 @@ To get this value we simply computes the straight-line distance between each spo
 
 This distance is a "straight-line" distance. In our example above with the particle that walks over a triangle, this feature value would be 10 µm.
 
-==== Confinment ratio. ====
+<center>
+  <math>
+    \text{max distance traveled} = \text{Max}_{i,j} ( d_{ij} )
+  </math>
+</center>
 
-The confinment ratio tells how "efficient" was a track displacement in getting far away from its starting point.
+where ''dij'' is the distance from any spot ''i'' to any spot ''j'' in the track.
+
+==== Confinement ratio. ====
+
+The confinement ratio tells how "efficient" was a track displacement in getting far away from its starting point.
 It is defined as the net-displacement divided by the total-distance. The net-displacement is given by the '''Track displacement''' feature, and the total distance is given by the '''Total distance traveled''' feature.
+
+<center>
+  <math>
+    \text{confinement ratio} = \frac{ \text{net distance} }{ \text{ total distance travelled } }
+  </math>
+</center>
 
 It is a unitless value that ranges from 0 to 1. Values close to 0 indicate a confined movement, where the particle would stay close to its starting point. Values close to 1 indicate that the particle travels along a line with a constant orientation.
 
+Sometimes this value is called differently in other papers. For instance in [http://jcb.rupress.org/content/jcb/217/9/3031.full.pdf De Pascalis ''et al.'', 2018], is called '''persistence'''.
+
+
 ==== Mean straight line speed. ====
+
+The mean straight line speed is the defined as the net displacement (''Track displacement'' feature) divided by the track total time. 
+
+<center>
+  <math>
+    \text{mean straight line speed} = \frac{ \text{net distance} }{ \text{ total track time } }
+  </math>
+</center>
+
+
+It is the speed that would have an object that moves at constant speed along a straight line from the first spot to the last spot of the track.
+
+
+==== Linearity of forward progression. ====
+
+This value is simply the ratio between the '''mean straight line speed''' and the '''track mean speed'''.
+
+
+<center>
+  <math>
+    \text{linearity of forward progression} = \frac{ \text{mean straight line speed} }{ \text{ mean speed } }
+  </math>
+</center>
+
+If the track is linear and if the time interval between two spots is always the same, then this value is equal to the ''confinement ration'' value.
+
+
+==== Mean directional change. ====
+
+This value measure the angle between two succeeding links, averaged over all the links of a track.
+
+<center>
+  <math>
+    \text{ mean directional change } = \frac{1}{N} \sum \alpha_{i,i+1}
+  </math>
+</center>
+
+where ''αi,i+1'' is the angle between two succeeding links, in radians.
 
 == Spot trackers ==
 
