@@ -27,3 +27,8 @@ A parallel paradigm provider offers new parallel paradigm implementations or new
 == Developers ==
 Developers obtain parallel paradigm implementation that is in selected profile by method getParadigmOfType. Desired parallel paradigm is specified when the method is used and when parallel paradigm implementation does not implement the type ''null'' value is returned.
 [[File:ParallelService.png]]
+
+Base type ParallelParadimg contains three methods: 
+* ''init'' - initializes resources required for and used by parallel paradigm; 
+* ''close'' - disposes initialized resource;
+* ''getStatus'' - returns status indicating whether is paradigm initialized or disposed.
