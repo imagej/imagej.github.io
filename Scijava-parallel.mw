@@ -61,6 +61,6 @@ When is a profile being created then a user specifies implementation of a associ
 Paradigm managers are supplied together with parallel paradigm implementations by parallel paradigm providers.
 Paradigm managers manage resources used by parallel paradigm implementation.
 There are available three paradigm managers that differs in a location where start a server handling requests:
-* Inprocess FSTPRC - in an actual running instance of Fiji;
-* Local FSTRPC - on local machine as an another process;
-* FSTRPC on HPC - on remote HPC cluster through ssh.
+* ''Inprocess FSTPRC'' - in an actual running instance of Fiji;
+* ''Local FSTRPC'' - on local machine as an another process;
+* ''FSTRPC on HPC'' - on remote HPC cluster through ssh.
