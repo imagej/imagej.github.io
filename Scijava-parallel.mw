@@ -48,4 +48,4 @@ Three implementations of parallel paradigm exist:
 
 == Fiji users ==
 Scijava-parallel offers plugin that allows management of paradigms and profiles. It is accessible from menu ''Plugins > Scijava parallel > Paradigm Profiles Manager''. The plugin shows a form:
-[[File:Example.jpg]]
+[[File:ParadigmProfilesManager.png]]
