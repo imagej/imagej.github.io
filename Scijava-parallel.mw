@@ -40,4 +40,6 @@ First parallelization paradigm was type ''RPCParadigm'' that has methods:
 </source>
 The methods cause parallel execution of specified command for parameters. A size of a parameters defines how many executions is performed. Parallelization and distribution of requests is solved by used parallel paradigm implementation.
 Three implementations of parallel paradigm exist:
-* LocalMultithreadedParadigm in [https://github.com/fiji-hpc/scijava-parallel scijava-parallel] that executes commands in actually runing JVM and uses multiple threads for parallelization.
+* LocalMultithreadedParadigm in the module [https://github.com/fiji-hpc/scijava-parallel scijava-parallel] that executes commands in the same instance of running Fiji and uses multiple threads for parallelization.
+
+* FSTRPCParadigm in the module [https://github.com/fiji-hpc/scijava-parallel-fst scijava-parallel-fst] that executes commands in a different instances of running Fiji. The Fiji can run in a different computer or a HPC cluster. Communication is realized through TCP/IP and data are serialized by library [https://github.com/RuedigerMoeller/fast-serialization fst].
