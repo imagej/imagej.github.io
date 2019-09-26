@@ -1,5 +1,5 @@
 {{Infobox
-| name                   =  Scijava-parallel
+| name                   = Scijava-parallel
 | software               = Fiji
 | author                 = Petr Bainar, Jan Kožusznik
 | maintainer             = Jan Kožusznik
@@ -45,3 +45,7 @@ Three implementations of parallel paradigm exist:
 * [[FSTRPCParadigm]] in the module [https://github.com/fiji-hpc/scijava-parallel-fst scijava-parallel-fst] that executes commands in different instances of running Fiji. The Fiji can run in a different computer or a HPC cluster. Communication is realized through TCP/IP and data are serialized by library [https://github.com/RuedigerMoeller/fast-serialization fst].
 
 * ''ImageJServerParadigm'' in the module [https://github.com/fiji-hpc/scijava-parallel-imagej-server scijava-parallel-imagej-server] that also executes commands in different instances of running Fiji. The paradigm uses ability of [https://github.com/imagej/imagej-server/ imagej-server] to execute commands through its provided REST API.
+
+== Fiji users ==
+Scijava-parallel offers plugin that allows management of paradigms and profiles. It is accessible from menu ''Plugins > Scijava parallel > Paradigm Profiles Manager''. The plugin shows a form:
+[[File:Example.jpg]]
