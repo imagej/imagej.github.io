@@ -40,3 +40,4 @@ First parallelization paradigm was type ''RPCParadigm'' that has methods:
 </source>
 The methods cause parallel execution of specified command for parameters. A size of a parameters defines how many executions is performed. Parallelization and distribution of requests is solved by used parallel paradigm implementation.
 Three implementations of parallel paradigm exist:
+* LocalMultithreadedParadigm in [https://github.com/fiji-hpc/scijava-parallel scijava-parallel] that executes commands in actually runing JVM and uses multiple threads for parallelization.
