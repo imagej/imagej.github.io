@@ -55,3 +55,6 @@ Profiles could be:
 * edited - button ''Edit'' in the central part;
 * deleted - button ''Delete'' in the central part;
 * selected - button ''Select'' in the central part;
+
+=== Profile creation ===
+When is a profile being created then a user specifies implementation of a associated paradigm - [[FSTRPCParadigm]] is selected in the screenshot - paradigm manager. Paradigm managers are supplied together with parallel paradigm implementations by
