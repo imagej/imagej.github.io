@@ -70,4 +70,4 @@ It is allow to provide basic settings during a profile creation. Required settin
 
 === Profile section ===
 This action marks a paradigm profile as selected. An instance of paradigm associated with a selected profile is returned as result from the method ''getParadigmOfType'' in case that the parallel paradigm implementation provides (implements an interface) a requested parallel paradigm type.
-The only one profile could be marked as selected but we see it as implementation detail that could be changed in the future.
+In the present implementation of the parallel service, the only one profile could be marked as selected but we see it as an implementation detail that could be changed in the future.
