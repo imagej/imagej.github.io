@@ -57,4 +57,6 @@ Profiles could be:
 * selected - button ''Select'' in the central part;
 
 === Profile creation ===
-When is a profile being created then a user specifies implementation of a associated paradigm - [[FSTRPCParadigm]] is selected in the screenshot - paradigm manager. Paradigm managers are supplied together with parallel paradigm implementations by
+When is a profile being created then a user specifies implementation of a associated paradigm - [[FSTRPCParadigm]] is selected in the screenshot - paradigm manager. 
+Paradigm managers are supplied together with parallel paradigm implementations by parallel paradigm providers.
+Paradigm managers manage resources used by parallel paradigm implementation and determines.
