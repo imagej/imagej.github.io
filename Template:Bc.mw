@@ -10,7 +10,10 @@ Up to 10 menu elements can be used:
 will be rendered as:
 {{bc|Menu1|Menu2|Menu3|(...)|Menu9|Command}}
 
-If the parameter '''color''' is set to white, arrows will be displayed white otherwise the default arrow is displayed filled with black for better visibility.
+If the parameter '''color''' is set to black or white, arrows will be displayed as black or white triangles respectively, otherwise the default arrow is displayed as a smaller rightward chevron symbol.
+<pre>{{bc|color=black|Menu1|Menu2|Menu3|(...)|Menu9|Command}}</pre>
+will be rendered as:
+{{bc|color=black|Menu1|Menu2|Menu3|(...)|Menu9|Command}}
 <pre>{{bc|color=white|Menu1|Menu2|Menu3|(...)|Menu9|Command}}</pre>
 will be rendered as:
 {{bc|color=white|Menu1|Menu2|Menu3|(...)|Menu9|Command}}
