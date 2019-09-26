@@ -42,6 +42,6 @@ The methods cause parallel execution of specified command for parameters. A size
 Three implementations of parallel paradigm exist:
 * ''LocalMultithreadedParadigm'' in the module [https://github.com/fiji-hpc/scijava-parallel scijava-parallel] that executes commands in the same instance of running Fiji and uses multiple threads for parallelization.
 
-* ''FSTRPCParadigm'' in the module [https://github.com/fiji-hpc/scijava-parallel-fst scijava-parallel-fst] that executes commands in a different instances of running Fiji. The Fiji can run in a different computer or a HPC cluster. Communication is realized through TCP/IP and data are serialized by library [https://github.com/RuedigerMoeller/fast-serialization fst].
+* ''FSTRPCParadigm'' in the module [https://github.com/fiji-hpc/scijava-parallel-fst scijava-parallel-fst] that executes commands in different instances of running Fiji. The Fiji can run in a different computer or a HPC cluster. Communication is realized through TCP/IP and data are serialized by library [https://github.com/RuedigerMoeller/fast-serialization fst].
 
-* ''ImageJServerParadigm'' in the module [https://github.com/fiji-hpc/scijava-parallel-imagej-server scijava-parallel-imagej-server] that also executes commands in a different instances of running Fiji. The paradigm uses ability of [https://github.com/imagej/imagej-server/ imagej-server] to execute commands through its provided REST API.
+* ''ImageJServerParadigm'' in the module [https://github.com/fiji-hpc/scijava-parallel-imagej-server scijava-parallel-imagej-server] that also executes commands in different instances of running Fiji. The paradigm uses ability of [https://github.com/imagej/imagej-server/ imagej-server] to execute commands through its provided REST API.
