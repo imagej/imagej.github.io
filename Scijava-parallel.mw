@@ -69,5 +69,10 @@ It is allow to provide basic settings during a profile creation. Required settin
 ''Local FSTPRC'' paradigm manager requires to provide path to a Fiji installation in a local filesystem whilst ''FSTRPC on HPC'' requires to provide information allowing connection to remote HPC cluster - host name,credentials - and location of a Fiji installation on HPC cluster.
 
 === Profile section ===
-This action marks a paradigm profile as selected. An instance of paradigm associated with a selected profile is returned as result from the method ''getParadigmOfType'' in case that the parallel paradigm implementation provides (implements an interface) a requested parallel paradigm type.
+This action marks a paradigm profile as selected. 
+An instance of paradigm associated with a selected profile is returned as result from the method ''getParadigmOfType'' in case that the parallel paradigm implementation provides (implements an interface) a requested parallel paradigm type.
 In the present implementation of the parallel service, the only one profile could be marked as selected but we see it as an implementation detail that could be changed in the future.
+
+=== Parallel paradigm management ===
+The manager allows to user also basic management of parallelization paradigm implementation in a selected profile.
+A user can initialize and close profile by check box ''Paradigm Active''.
