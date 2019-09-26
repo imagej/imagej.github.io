@@ -64,3 +64,6 @@ There are available three paradigm managers that differs in a location where sta
 * ''Inprocess FSTPRC'' - in an actual running instance of Fiji;
 * ''Local FSTRPC'' - on local machine as an another process;
 * ''FSTRPC on HPC'' - on remote HPC cluster through ssh.
+
+It is allow to provide basic settings during a profile creation. Required settings follow from a selected paradigm manager.
+''Local FSTPRC'' paradigm manager requires to provide path to a Fiji installation in a local filesystem whilst ''FSTRPC on HPC'' requires to provide information allowing connection to remote HPC cluster - host name,credentials - and location of a Fiji installation on HPC cluster.
