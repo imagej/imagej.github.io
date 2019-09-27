@@ -100,4 +100,4 @@ A developer make non-abstract child of the class ParadigmManagerUsingRunner. The
 [[File:paradigm-manager-using-runner.jpg]]
 
 == Installation ==
-Scijava-parallel could be installed directly into Fiji from its update site [https://sites.imagej.net/Scijava-parallel/  https://sites.imagej.net/Scijava-parallel/]. We also provide modified version of [https://imagej.net/Labkit Labkit] that has support for scijava-parallel on own update site [https://sites.imagej.net/Imglib2-labkit-cluster/ https://sites.imagej.net/Imglib2-labkit-cluster/]. This version of Labkit only demonstrates working with scijava-parallel and it is not meant as a production software.
+Scijava-parallel could be installed directly into Fiji from its update site [https://sites.imagej.net/Scijava-parallel/  https://sites.imagej.net/Scijava-parallel/]. We also provide modified version of [https://imagej.net/Labkit Labkit] that has support for scijava-parallel. This version of Labkit has own update site [https://sites.imagej.net/Imglib2-labkit-cluster/ https://sites.imagej.net/Imglib2-labkit-cluster/]. It only demonstrates scijava-parallel and it is not meant as a production software.
