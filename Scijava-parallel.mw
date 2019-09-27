@@ -78,3 +78,5 @@ The manager allows to user also basic management of parallelization paradigm imp
 A user can initialize and close profile by the check box ''Paradigm Active''.
 The paradigm manager ''FSTRPC on HPC'' offers a possibility to leave a Fiji, that is started in a job on a remote HPC, running whilst is an associated parallel paradigm implementation closed.
 This property is specified by a user during
+
+== Parallel paradigm providers ==
