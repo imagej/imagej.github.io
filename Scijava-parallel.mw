@@ -94,4 +94,4 @@ The framework provides interface ''ParadigmManager'' and its implementation is u
 
 A class ParadigmManagerUsingRunner supports very often scenario how ParallelizationParadigm is initialized: external software is launched - is is always Fiji in case of existing implementation - and parallelization paradigm is initialized with information how to access the software (host name, port number). It works with profile type ''ParadigmProfileUsingRunner'' that contains object of a type ''RunnerSettings'' or its subtype (e.g. LocalImagejRunnerSettings). ParadigmManagerUsingRunner starts external software through an interface ''ServerRunner''.
 
-ParadigmManagerUsingRunner is subclassed and a developer only implements two abstract methods: ''getTypeOfRunner'' and ''initParadigm''.
+A developer make non-abstract child of the class ParadigmManagerUsingRunner. The  child need to implement only two abstract methods: ''getTypeOfRunner'' and ''initParadigm''. It is possible to create a new implementation of ''ServerRunner'' or reuse one from existing: LocalImagejRunner, HPCImageJRunner.
