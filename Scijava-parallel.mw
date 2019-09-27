@@ -90,7 +90,7 @@ The parallelization paradigm implementation very often also requires some specif
 
 The framework provides interface ''ParadigmManager'' and its implementation is used by the framework for a profile creation (method ''createProfile'') and its editing (method ''editProfile''). Parallelization paradigm implementation is initialized by method''prepareParadigm''. Parallelization paradigm provider implements the interface ''ParadigmManager'' and annotates it as ''@Plugin'' with a type ''ParadigmManager''.
 
-[[File:paradigm-manager.png]]
+[[File:paradigm-manager.jpg]]
 
 A class ParadigmManagerUsingRunner supports very often scenario how ParallelizationParadigm is initialized: external software is launched - is is always Fiji in case of existing implementation - and parallelization paradigm is initialized with information how to access the software (host name, port number). It works with profile type ''ParadigmProfileUsingRunner'' that contains object of a type ''RunnerSettings'' or its subtype (e.g. LocalImagejRunnerSettings). ParadigmManagerUsingRunner starts external software through an interface ''ServerRunner''. ParadigmManagerUsingRunner edits settings with an object that implements ''RunnerSettingsEditor''. Implementing class should be annotated with the annotation ''@Plugin'' with the type ''RunnerSettingsEditor''. It enables to scijava-parallel find an editor for a given type of settings. There are registered editors for existing implementations of RunnerSettings.
 
