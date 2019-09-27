@@ -16,20 +16,20 @@ Scijava-parallel is designed to be used be three typea of users and we call them
 
 Developer is a user who uses its defined API for accessing to configured  computational resources. 
 Remote computational resources are accessible through components that implements interface derived from interface ParallelParadigm. 
-These components are called ''parallel paradigm implementations'' and specialised interfaces are called ''parallel paradigms''. 
+These components are called ''parallelization paradigm implementations'' and specialised interfaces are called ''parallelization paradigms''. 
 
-A Fiji user provides configurations for parallel paradigm implementations. 
+A Fiji user provides configurations for parallelization paradigm implementations. 
 The configurations are called profiles. 
-Users also selects one configuration that is used when some code requests for parallel paradigm.
+Users also selects one configuration that is used when some code requests for parallelization paradigm.
 
-A parallel paradigm provider offers new parallel paradigm implementations or new types of parallel paradigm.
+A parallelization paradigm provider offers new parallelization paradigm implementations or new types of parallelization paradigm.
 
 == Developers ==
-Developers obtain parallel paradigm implementation that is in selected profile by method getParadigmOfType. Desired parallel paradigm is specified when the method is used and when parallel paradigm implementation does not implement the type ''null'' value is returned.
+Developers obtain parallelization paradigm implementation that is in selected profile by method getParadigmOfType. Desired parallelization paradigm is specified when the method is used and when parallelization paradigm implementation does not implement the type ''null'' value is returned.
 [[File:ParallelService.png]]
 
 Base type ParallelParadimg contains three methods: 
-* ''init'' - initializes resources required for and used by parallel paradigm; 
+* ''init'' - initializes resources required for and used by parallelization paradigm; 
 * ''close'' - disposes initialized resource;
 * ''getStatus'' - returns status indicating whether is paradigm initialized or disposed.
 
@@ -38,8 +38,8 @@ First parallelization paradigm was type ''RPCParadigm'' that has methods:
   List<Map<String, Object>> runAll(String commandName, List<Map<String, Object>> parameters)
   List<CompletableFuture<Map<String, Object>>> runAllAsync(String commandName, List<Map<String, Object>> parameters);
 </source>
-The methods cause parallel execution of specified command for parameters. A size of a parameters defines how many executions is performed. Parallelization and distribution of requests is solved by used parallel paradigm implementation.
-Three implementations of parallel paradigm exist:
+The methods cause parallel execution of specified command for parameters. A size of a parameters defines how many executions is performed. Parallelization and distribution of requests is solved by used parallelization paradigm implementation.
+Three implementations of parallelization paradigm exist:
 * ''LocalMultithreadedParadigm'' in the module [https://github.com/fiji-hpc/scijava-parallel scijava-parallel] that executes commands in the same instance of running Fiji and uses multiple threads for parallelization.
 
 * [[FSTRPCParadigm]] in the module [https://github.com/fiji-hpc/scijava-parallel-fst scijava-parallel-fst] that executes commands in different instances of running Fiji. The Fiji can run in a different computer or a HPC cluster. Communication is realized through TCP/IP and data are serialized by library [https://github.com/RuedigerMoeller/fast-serialization fst].
@@ -59,8 +59,8 @@ Profiles could be:
 
 === Profile creation and editing ===
 When is a profile being created then a user specifies implementation of a associated paradigm - [[FSTRPCParadigm]] is selected in the screenshot - paradigm manager. 
-Paradigm managers are supplied together with parallel paradigm implementations by parallel paradigm providers.
-Paradigm managers manage resources used by parallel paradigm implementation.
+Paradigm managers are supplied together with parallelization paradigm implementations by parallelization paradigm providers.
+Paradigm managers manage resources used by parallelization paradigm implementation.
 There are available three paradigm managers that differs in a location where start a server handling requests:
 * ''Inprocess FSTPRC'' - in an actual running instance of Fiji;
 * ''Local FSTRPC'' - on local machine as an another process;
@@ -71,13 +71,13 @@ It is allow to provide basic settings during a profile creation. Required settin
 
 === Profile selection ===
 This action marks a paradigm profile as selected. 
-An instance of paradigm associated with a selected profile is returned as result from the method ''getParadigmOfType'' in case that the parallel paradigm implementation provides (implements an interface) a requested parallel paradigm type.
+An instance of paradigm associated with a selected profile is returned as result from the method ''getParadigmOfType'' in case that the parallelization paradigm implementation provides (implements an interface) a requested parallelization paradigm type.
 In the present implementation of the parallel service, the only one profile could be marked as selected but we see it as an implementation detail that could be changed in the future.
 
-=== Parallel paradigm management ===
+=== Parallelization paradigm management ===
 The manager allows to user also basic management of parallelization paradigm implementation in a selected profile.
 A user can initialize and close profile by the check box ''Paradigm Active''.
-The paradigm manager ''FSTRPC on HPC'' offers a possibility to leave a Fiji, that is started in a job on a remote HPC, running whilst is an associated parallel paradigm implementation closed.
+The paradigm manager ''FSTRPC on HPC'' offers a possibility to leave a Fiji, that is started in a job on a remote HPC, running whilst is an associated parallelization paradigm implementation closed.
 This property is specified by a user during
 
 == Parallelization paradigm providers ==
