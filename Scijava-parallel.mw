@@ -98,3 +98,6 @@ A class ParadigmManagerUsingRunner supports very often scenario how Parallelizat
 A developer make non-abstract child of the class ParadigmManagerUsingRunner. The  child need to implement only two abstract methods: ''getTypeOfRunner'' and ''initParadigm''. It is possible to create a new implementation of ''ServerRunner'' or reuse one from existing: LocalImagejRunner, HPCImageJRunner.
 
 [[File:paradigm-manager-using-runner.jpg]]
+
+== Installation ==
+Scijava-parallel could be installed directly into Fiji from its update site [https://sites.imagej.net/Scijava-parallel/  https://sites.imagej.net/Scijava-parallel/].
