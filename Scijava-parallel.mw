@@ -85,3 +85,5 @@ Parallelization paradigm implementation requires only to implement one or more p
 @Plugin(type = ParallelizationParadigm.class)
 public class MPIParadigmImpl implements MPIParadigm
 </source>
+
+The parallelization paradigm implementation very often also requires some specific initialization. Settings for the initialization is expected in an instance of ''ParallelizationParadigmProfile'' or its subclass. Scijava-parallel offers framework for a profile creation, its storing in persistent storage and paradigm initialization with contained settings.
