@@ -81,7 +81,7 @@ This property is specified by a user during
 
 == Parallelization paradigm providers ==
 Parallelization paradigm implementation requires only to implement one or more parallelization paradigms and annotate this class as plugin:
-<code lang="java">
+<source lang="java">
 @Plugin(type = ParallelizationParadigm.class)
 public class MPIParadigmImpl implements MPIParadigm
-</code>
+</source>
