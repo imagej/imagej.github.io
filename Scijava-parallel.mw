@@ -96,4 +96,4 @@ A class ParadigmManagerUsingRunner supports very often scenario how Parallelizat
 
 A developer make non-abstract child of the class ParadigmManagerUsingRunner. The  child need to implement only two abstract methods: ''getTypeOfRunner'' and ''initParadigm''. It is possible to create a new implementation of ''ServerRunner'' or reuse one from existing: LocalImagejRunner, HPCImageJRunner.
 
-[[File:paradigm-manager-using-runner.png]]
+[[File:paradigm-manager-using-runner.jpg]]
