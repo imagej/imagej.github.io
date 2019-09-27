@@ -91,4 +91,4 @@ The parallelization paradigm implementation very often also requires some specif
 The framework provides interface ''ParadigmManager'' and its implementation is used by the framework for a profile creation (method ''createProfile'') and its editing (method ''editProfile''). Parallelization paradigm implementation is initialized by method''prepareParadigm''.
 [[File:paradigm-manager.png]]
 
-A class ParadigmManagerUsingRunner supports very often scenario how ParallelizationParadigm is initialized: external software is launched - is is always Fiji in case of existing implementation - and parallelization paradigm is initialized with information how to access the software (host name, port number).
+A class ParadigmManagerUsingRunner supports very often scenario how ParallelizationParadigm is initialized: external software is launched - is is always Fiji in case of existing implementation - and parallelization paradigm is initialized with information how to access the software (host name, port number). It works with profile type ''ParadigmProfileUsingRunner'' that contains object of a type ''RunnerSettings'' or its subtype.
