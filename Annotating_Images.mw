@@ -82,7 +82,7 @@ Adding text is done with the toolbar’s text button. Click the toolbar, click t
 
 It is possible to add a line, box, or text to each slice in a stack. After adding to a single slice and selecting "''Edit/Draw''", you will be asked if  you want to apply the selection to every slice. Keep in mind that there is no undo option for this operation.
 
-Adding text to a stack is a slightly different process. You can draw a text box by following the same steps, but on a stack, keyboard shortcut {{key|Ctrl}}+{{key|D}} will overlay the text on the current slice, while shortcut {{key|Ctrl}}+{{key|B}} will draw the text on every slice of the stack.
+Adding text to a stack is a slightly different process. You can draw a text box by following the same steps, but on a stack, keyboard shortcut {{key|Ctrl}}+{{key|B}} will overlay the text on the current slice, while shortcut {{key|Ctrl}}+{{key|D}} will draw the text on every slice of the stack.
 
 === Adding timestamps ===
 
