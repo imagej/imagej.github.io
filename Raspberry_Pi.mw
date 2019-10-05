@@ -5,12 +5,18 @@
 = Installation =
 {{ImageJ1 | You might notice there is as an <code>imagej</code> package available from your package manager. Please be aware that this provides [[ImageJ 1.x]] only, packaged by a third party, without cooperation from the core ImageJ development team. You will not have access to any [[ImageJ2]]-specific features such as [[Script parameters|parameterized scripts]], and you will likely have permissions errors because it is a system-wide ImageJ installation.}}The following steps describe how to install ImageJ on a Raspberry Pi:
 
-# Install Java 8 on your Pi. Verify it works using <code>java -version</code> from the command line.
+# Open the terminal.
+# Install Java 8 on your Pi (<code>sudo apt-get install openjdk-8-jre</code>).
+# Choose Java 8 (<code>sudo update-alternatives --config java</code>).
+# Verify it works using <code>java -version</code>.
 # Download and install the [http://downloads.imagej.net/fiji/latest/fiji-nojre.zip platform-independent "no JRE" distribution of Fiji].
 # Download the [https://github.com/imagej/imagej/blob/master/bin/ImageJ.sh ImageJ.sh] shell script
 # Move the ImageJ.sh file to the Fiji.app folder
 # Set the executable bit (<code>chmod +x ImageJ.sh</code>)
 # Run it (<code>./ImageJ.sh</code>) to launch ImageJ.
+
+You may also need to disable (comment out) <code>assistive_technologies=org.GNOME.Accessibility.AtkWrapper</code>
+in <code>/etc/java-8-openjdk/accessibility.properties</code>.
 
 Note that the shell script supports only a subset of the functionality of the native [[ImageJ Launcher]], but it should be able to run ImageJ successfully.
 
