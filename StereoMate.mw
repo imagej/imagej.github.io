@@ -1,8 +1,8 @@
 {{Infobox
 | software               = FIJI
 | name                   = StereoMate
-| author                 = {{Person|Sjwest}}
-| maintainer           = Steven J. West
+| author                 = {{Person|stevenjwest}}
+| maintainer           = {{Person|stevenjwest}}
 | filename               = Stereo_Mate.jar
 | source                 = [https://github.com/stevenjwest/StereoMate]
 | released               = August 2019
