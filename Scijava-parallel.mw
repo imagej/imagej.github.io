@@ -9,18 +9,18 @@
 | source               = [https://github.com/fiji-hpc/scijava-parallel on github]
 }}
 
-Scijava-parallel is a framework that should provide an access point for using computational resources such as remote computers or HPC clusters. It hides details about configuration and initialisation of such resources.
+Scijava-parallel is a framework that provides an access point for using computational resources such as remote computers or HPC clusters. It hides details about configuration and initialization of such resources.
 
 == Types of users ==
-Scijava-parallel is designed to be used be three types of users and we call them: ''developers'', ''Fiji users'' and ''parallelization paradigm providers''.
+Scijava-parallel is designed to be used by three types of users and we call them: ''developers'', ''Fiji users'' and ''parallelization paradigm providers''.
 
-Developer is a user who uses its defined API for accessing to configured  computational resources. 
-Remote computational resources are accessible through components that implements interface derived from interface ParallelParadigm. 
-These components are called ''parallelization paradigm implementations'' and specialised interfaces are called ''parallelization paradigms''. 
+A Developer is a user who uses its defined API for accessing configured computational resources. 
+Remote computational resources are accessible through components that implement an interface derived from the interface ParallelParadigm. 
+These components are called ''parallelization paradigm implementations'' and specialized interfaces are called ''parallelization paradigms''. 
 
 A Fiji user provides configurations for parallelization paradigm implementations. 
 The configurations are called profiles. 
-Users also selects one configuration that is used when some code requests for parallelization paradigm.
+Users also select one configuration that is used when some code requests a parallelization paradigm.
 
 A parallelization paradigm provider offers new parallelization paradigm implementations or new types of parallelization paradigm.
 
@@ -31,63 +31,63 @@ Developers obtain parallelization paradigm implementation that is in selected pr
 Base type ParallelParadimg contains three methods: 
 * ''init'' - initializes resources required for and used by parallelization paradigm; 
 * ''close'' - disposes initialized resource;
-* ''getStatus'' - returns status indicating whether is paradigm initialized or disposed.
+* ''getStatus'' - returns status indicating whether the paradigm is initialized or disposed.
 
-First parallelization paradigm was type ''RPCParadigm'' that has methods:
+First parallelization paradigm is type ''RPCParadigm'' that has methods:
 <source lang="java">
   List<Map<String, Object>> runAll(String commandName, List<Map<String, Object>> parameters)
   List<CompletableFuture<Map<String, Object>>> runAllAsync(String commandName, List<Map<String, Object>> parameters);
 </source>
-The methods cause parallel execution of specified command for parameters. A size of a parameters defines how many executions is performed. Parallelization and distribution of requests is solved by used parallelization paradigm implementation.
+The methods cause parallel execution of specified command for parameters. A size of a parameters defines how many executions are performed. Parallelization and distribution of requests is solved by the parallelization paradigm implementation used.
 Three implementations of parallelization paradigm exist:
 * ''LocalMultithreadedParadigm'' in the module [https://github.com/fiji-hpc/scijava-parallel scijava-parallel] that executes commands in the same instance of running Fiji and uses multiple threads for parallelization.
 
-* [[FSTRPCParadigm]] in the module [https://github.com/fiji-hpc/scijava-parallel-fst scijava-parallel-fst] that executes commands in different instances of running Fiji. The Fiji can run in a different computer or a HPC cluster. Communication is realized through TCP/IP and data are serialized by library [https://github.com/RuedigerMoeller/fast-serialization fst].
+* [[FSTRPCParadigm]] in the module [https://github.com/fiji-hpc/scijava-parallel-fst scijava-parallel-fst] that executes commands in different instances of running Fiji. Fiji can run in a different computer or an HPC cluster. Communication is realized through TCP/IP and data are serialized by library [https://github.com/RuedigerMoeller/fast-serialization fst].
 
 * ''ImageJServerParadigm'' in the module [https://github.com/fiji-hpc/scijava-parallel-imagej-server scijava-parallel-imagej-server] that also executes commands in different instances of running Fiji. The paradigm uses ability of [https://github.com/imagej/imagej-server/ imagej-server] to execute commands through its provided REST API.
 
 == Fiji users ==
-Scijava-parallel offers plugin that allows management of paradigms and profiles. It is accessible from menu ''Plugins > Scijava parallel > Paradigm Profiles Manager''. The plugin shows a form:
+Scijava-parallel offers plugin that allows management of paradigms and profiles. It is accessible from menu ''Plugins > Scijava parallel > Paradigm Profiles Manager''. The plugin shows the following form:
 
 [[File:ParadigmProfilesManager.png]]
 
-Profiles could be:
+Profiles can be:
 * created - button ''Create'' at the bottom;
 * edited - button ''Edit'' in the central part;
-* deleted - button ''Delete'' in the central part;
-* selected - button ''Select'' in the central part;
+* deleted - button ''Delete'' in the central part; and
+* selected - button ''Select'' in the central part.
 
 === Profile creation and editing ===
-When is a profile being created then a user specifies implementation of a associated paradigm - [[FSTRPCParadigm]] is selected in the screenshot - paradigm manager. 
+During the creation of a profile a user specifies the implementation of an associated paradigm - [[FSTRPCParadigm]] is selected in the screenshot - paradigm manager. 
 Paradigm managers are supplied together with parallelization paradigm implementations by parallelization paradigm providers.
-Paradigm managers manage resources used by parallelization paradigm implementation.
-There are available three paradigm managers that differs in a location where start a server handling requests:
+Paradigm managers manage resources used by a parallelization paradigm implementation.
+There are three paradigm managers available that differ in the location where they start a server handling requests:
 * ''Inprocess FSTPRC'' - in an actual running instance of Fiji;
 * ''Local FSTRPC'' - on local machine as an another process;
 * ''FSTRPC on HPC'' - on remote HPC cluster through ssh.
 
-It is allow to provide basic settings during a profile creation. Required settings follow from a selected paradigm manager.
-''Local FSTPRC'' paradigm manager requires to provide path to a Fiji installation in a local filesystem whilst ''FSTRPC on HPC'' requires to provide information allowing connection to remote HPC cluster - host name,credentials - and location of a Fiji installation on HPC cluster.
+This is done in order to allow the user to provide basic settings during a profile creation. The settings required change according to the selected paradigm manager.
+''Local FSTPRC'' paradigm manager requires the user to provide the path to a Fiji installation in a local filesystem while ''FSTRPC on HPC'' requires the user to provide information that will allow connection to a remote HPC cluster - host name,credentials - and the location of a Fiji installation on HPC cluster.
 
 === Profile selection ===
 This action marks a paradigm profile as selected. 
-An instance of paradigm associated with a selected profile is returned as result from the method ''getParadigmOfType'' in case that the parallelization paradigm implementation provides (implements an interface) a requested parallelization paradigm type.
-In the present implementation of the parallel service, the only one profile could be marked as selected but we see it as an implementation detail that could be changed in the future.
+An instance of the paradigm associated with a selected profile is returned as the result of calling the method ''getParadigmOfType'' in case that the parallelization paradigm implementation provides (implements an interface) a requested parallelization paradigm type.
+In the present implementation of the parallel service, only one profile can be marked as selected but we see it as an implementation detail that could be changed in the future.
 
 === Parallelization paradigm management ===
-The manager allows to user also basic management of parallelization paradigm implementation in a selected profile.
-A user can initialize and close profile by the check box ''Paradigm Active''.
-The paradigm manager ''FSTRPC on HPC'' offers a possibility to leave a Fiji, that is started in a job on a remote HPC, running whilst is an associated parallelization paradigm implementation closed.
+The manager permits the user to perform basic management of the parallelization paradigm implementation in a selected profile.
+A user can initialize and close a profile by the check box ''Paradigm Active''.
+The paradigm manager ''FSTRPC on HPC'' offers a possibility to leave a Fiji, that is started in a job on a remote HPC, running while is an associated parallelization paradigm implementation closed.
 This property is specified by a user during
 
 == Parallelization paradigm providers ==
-Parallelization paradigm implementation requires only to implement one or more parallelization paradigms and annotate this class as plugin:
+A Parallelization paradigm implementation requires only to implement one or more parallelization paradigms and to annotate this class as plugin:
 <source lang="java">
 @Plugin(type = ParallelizationParadigm.class)
 public class MPIParadigmImpl implements MPIParadigm
 </source>
 
-The parallelization paradigm implementation very often also requires some specific initialization. Settings for the initialization is expected in an instance of ''ParallelizationParadigmProfile'' or its subclass. Scijava-parallel offers a framework for a profile creation, its storing in persistent storage and paradigm initialization with contained settings. The framework provides an user interface described earlier.
+The parallelization paradigm implementation very often also requires some specific initialization. Settings for the initialization are expected in an instance of ''ParallelizationParadigmProfile'' or its subclass. Scijava-parallel offers a framework for a profile creation, its storing in persistent storage and paradigm initialization with contained settings. The framework provides the user interface described earlier.
 
 The framework provides interface ''ParadigmManager'' and its implementation is used by the framework for a profile creation (method ''createProfile'') and its editing (method ''editProfile''). Parallelization paradigm implementation is initialized by method''prepareParadigm''. Parallelization paradigm provider implements the interface ''ParadigmManager'' and annotates it as ''@Plugin'' with a type ''ParadigmManager''.
 
@@ -95,9 +95,9 @@ The framework provides interface ''ParadigmManager'' and its implementation is u
 
 A class ParadigmManagerUsingRunner supports very often scenario how ParallelizationParadigm is initialized: external software is launched - is is always Fiji in case of existing implementation - and parallelization paradigm is initialized with information how to access the software (host name, port number). It works with profile type ''ParadigmProfileUsingRunner'' that contains object of a type ''RunnerSettings'' or its subtype (e.g. LocalImagejRunnerSettings). ParadigmManagerUsingRunner starts external software through an interface ''ServerRunner''. ParadigmManagerUsingRunner edits settings with an object that implements ''RunnerSettingsEditor''. Implementing class should be annotated with the annotation ''@Plugin'' with the type ''RunnerSettingsEditor''. It enables to scijava-parallel find an editor for a given type of settings. There are registered editors for existing implementations of RunnerSettings.
 
-A developer make non-abstract child of the class ParadigmManagerUsingRunner. The  child need to implement only two abstract methods: ''getTypeOfRunner'' and ''initParadigm''. It is possible to create a new implementation of ''ServerRunner'' or reuse one from existing: LocalImagejRunner, HPCImageJRunner.
+A developer makes non-abstract child of the class ParadigmManagerUsingRunner. The  child need to implement only two abstract methods: ''getTypeOfRunner'' and ''initParadigm''. It is possible to create a new implementation of ''ServerRunner'' or reuse one from existing: LocalImagejRunner, HPCImageJRunner.
 
 [[File:paradigm-manager-using-runner.jpg]]
 
 == Installation ==
-Scijava-parallel could be installed directly into Fiji from its update site [https://sites.imagej.net/Scijava-parallel/  https://sites.imagej.net/Scijava-parallel/]. We also provide modified version of [https://imagej.net/Labkit Labkit] that has support for scijava-parallel. This version of Labkit has own update site [https://sites.imagej.net/Imglib2-labkit-cluster/ https://sites.imagej.net/Imglib2-labkit-cluster/]. It only demonstrates scijava-parallel and it is not meant as a production software.
+Scijava-parallel can be installed directly into Fiji from its update site [https://sites.imagej.net/Scijava-parallel/  https://sites.imagej.net/Scijava-parallel/]. We also provide modified version of [https://imagej.net/Labkit Labkit] that has support for scijava-parallel. This version of Labkit has own update site [https://sites.imagej.net/Imglib2-labkit-cluster/ https://sites.imagej.net/Imglib2-labkit-cluster/]. It only demonstrates scijava-parallel and it is not meant as a production software.
