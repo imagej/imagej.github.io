@@ -33,3 +33,21 @@ When you are sure that the form is filled-in correctly press the “Create” bu
 
 === How to start a job ===
 If you have created a new job, the main window should look roughly like Figure 5.
+
+Here you can see the following columns:
+* “Job ID” - Job’s identification number;
+* “Status” – The job’s current status which can be:
+** “Unknown” – the state of the job is not known;
+** “Configuring” – the job is being configured;
+** “Queued” – the job is in a queue and where there are available nodes it will be executed;
+** “Running” – the job was executed is currently running;
+** “Finished” – the job has stopped running successfully, completing its tasks;
+** “Failed” – the job has stopped running unsuccessfully, it did not complete its tasks;
+** “Canceled” – the job was stopped by the user; and
+** Disposed – the job was disposed.
+* “Creation time” – the time when the job was created.
+* “Start time” – the time when the job was last started.
+* “End time” – the time when the job last ended.
+* “Upload” – whether the job was uploaded.
+* “Download” – whether the job was downloaded.
+* “Workflow Type”- whether it is SPIM or Macro workflow type.
