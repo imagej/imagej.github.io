@@ -431,7 +431,7 @@ Application: The algorithm was already successfully applied in the quantificatio
 
 Limitation: works on 2D binary images only and does not detect clusters inside other clusters
 
-=Cluster Indicator=
+=Cluster Indicator= (depricated)
 
 Purpose: The "Cluster Indicator" is thought to detect local particle clusters in a binary image. Different particle sizes can be taken into account.
 
