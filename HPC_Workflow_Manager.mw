@@ -19,6 +19,8 @@ Press "Ok" and the dialog will should disappear, and a progress dialog should ap
 === How to create a new job ===
 After the connection to the HPC Cluster is made and the jobs are downloaded from the cluster you should see a window like the one in Figure 2. If it is the first time you run this plugin the table will be empty.
 
+[[File:hpc-workflow-manager-main-empty.png |500px|thumb|center|Example of the main window of the HPC Workflow Manager, it displays all jobs ever submitted by the user, in this case it is empty as it is the first time the plugin is used.]]
+
 Right click in the empty table or an empty row of the table to display the context menu, an example of the context menu is featured in Figure 3.
 
 Select the first option “Create a new job”. The “Create job” window will appear. From the “Workflow Type” section select the “Macro Execution” option.
@@ -33,7 +35,7 @@ In the “Output data location” section leave the default option, “Output da
 Now, the filled-in form should look like Figure 4. If you are using Linux save the “HelloWorld” example script in your home directory (“~/HelloWorld/user.ijm”) and use that path instead of “C:/Documents/HelloWorld”.
 When you are sure that the form is filled-in correctly press the “Create” button.
 
-[[File:hpc-workflow-manager-main-empty.png |500px|thumb|center|Example of the main window of the HPC Workflow Manager, it displays all jobs ever submitted by the user, in this case it is empty as it is the first time the plugin is used.]]
+[[File:hpc-workflow-manager-create-job.png |300px|thumb|center| Example of a new Macro job configuration.]]
 
 === How to start a job ===
 If you have created a new job, the main window should look roughly like Figure 5.
