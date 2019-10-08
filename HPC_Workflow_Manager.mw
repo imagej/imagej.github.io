@@ -51,3 +51,9 @@ Here you can see the following columns:
 * “Upload” – whether the job was uploaded.
 * “Download” – whether the job was downloaded.
 * “Workflow Type”- whether it is SPIM or Macro workflow type.
+
+Right click on the new job to display the context menu (of Figure 3). You will notice that there are new enabled items.
+
+Before you can start the job, you need to upload your script (“user.ijm”). To do this you must select the “Upload data” item from the context menu.
+
+A timer will appear in the download column. When it has completed the uploading the cell that corresponds to the job should indicate that it is “Done” (Figure 6).
