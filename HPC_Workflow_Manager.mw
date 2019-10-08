@@ -16,3 +16,20 @@ Press "Ok" and the dialog will should disappear, and a progress dialog should ap
 
 === How to create a new job ===
 After the connection to the HPC Cluster is made and the jobs are downloaded from the cluster you should see a window like the one in Figure 2. If it is the first time you run this plugin the table will be empty.
+
+Right click in the empty table or an empty row of the table to display the context menu, an example of the context menu is featured in Figure 3.
+
+Select the first option “Create a new job”. The “Create job” window will appear. From the “Workflow Type” section select the “Macro Execution” option.
+
+In the input data location, you must provide a directory which contains your Macro script (it should be named “user.ijm”). If this is the first time you are using the HPC Workflow plugin with Macro support, you can use the example found in the following link: 
+https://github.com/MKrumnikl/Ij1MPIWrapper/tree/addFeatureScatter/src/main/resources/ExampleScripts/HelloWorld 
+
+In the node configuration select four nodes (4) by pressing the up arrow in the numeric field four times.
+
+In the “Output data location” section leave the default option, “Output data location”, selected.
+
+Now, the filled-in form should look like Figure 4. If you are using Linux save the “HelloWorld” example script in your home directory (“~/HelloWorld/user.ijm”) and use that path instead of “C:/Documents/HelloWorld”.
+When you are sure that the form is filled-in correctly press the “Create” button.
+
+=== How to start a job ===
+If you have created a new job, the main window should look roughly like Figure 5.
