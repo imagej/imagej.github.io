@@ -57,3 +57,37 @@ Right click on the new job to display the context menu (of Figure 3). You will n
 Before you can start the job, you need to upload your script (“user.ijm”). To do this you must select the “Upload data” item from the context menu.
 
 A timer will appear in the download column. When it has completed the uploading the cell that corresponds to the job should indicate that it is “Done” (Figure 6).
+
+Now that the script file is uploaded the job can be started. Right click the row of the job and select “Start Job” from the context menu.
+
+To make the source code of the user cleaner and easier to understand the special functions that make parallelism available to the user are appended to the user script on upload and a new file is created called “mpitest.txt” which is the file that will be executed on the cluster.
+
+To inspect the submitted file (for example for debugging) you can right click the job and select “Open macro in Editor” where you can see the contents of the user script along with the appended function definitions that provide parallelism.
+
+Finally, to start the job right click on the job and select the “Start job” item from the context menu.
+
+=== Inspecting progress ===
+There are two ways to inspect the progress of a job.
+
+The first one is by looking at the “Status” of a job. This way you can see whether a job is running on the HPC Cluster or not. In the case of Figure 7 the job is “Queued”.
+
+However, this is a very coarse-grained way to see the progress of the job and when it starts running it does not provide any useful information until it has ended (“Finished”, “Failed” etc.).
+
+The second way is to open the “Job dashboard” for the desired job by either double click the job’s row or right click and select the “Job dashboard” context menu item. Note that the job must be in the state “Running” for this functionality to work, you may open the window earlier and it will start displaying the progress when the state changes automatically.
+
+Select the tab “Macro Progress” and ignore the rest of the tabs for now (see section Job dashboard for descriptions of the rest of the tabs).
+
+To view the progress, click on the “Macro Progress” if it is not already selected (it should be selected by default). Please be patient while the progress is loading. There is a status bar on the lower right corner of the window where you can monitor the process of getting the progress from the HPC Cluster (the progress is stored in a separate progress file for each compute node of the HPC Cluster it is run).
+
+=== Job dashboard ===
+In the “Job dashboard” there are five tabs. “Macro Progress”, “Error output”, “Other output”, “Job directories” and “Data upload”.  
+* “Macro Progress” – this tab is described in the previous section Inspecting progress;
+* “Error output” - the error output and warnings that are redirected from the HPC Cluster live;
+* “Other output”- the redirected standard output from the cluster in the tab;
+* “Job directories” – contains a listing of the job directories (Input, Output and Working); and
+* “Data upload” – contains a listing of the files that were uploaded;
+
+=== How to download the results ===
+Once the job has finished you can right click and select the item “Download result” which will now have become available.
+
+When the timer in the “Download” column has finished and the state is “Done” the files will have been transferred. You can see the downloaded files by right clicking the job and selecting the item “Open job sub-directory”.
