@@ -25,26 +25,26 @@ Users also select one configuration that is used when some code requests a paral
 A parallelization paradigm provider offers new parallelization paradigm implementations or new types of parallelization paradigm.
 
 == Developers ==
-Developers obtain parallelization paradigm implementation that is in selected profile by method getParadigmOfType. Desired parallelization paradigm is specified when the method is used and when parallelization paradigm implementation does not implement the type ''null'' value is returned.
+Developers obtain parallelization paradigm implementation that is in selected profile by method getParadigmOfType. Desired parallelization paradigm is specified when the method is called. If the parallelization paradigm implementation does not exist, ''null'' value type is returned.
 [[File:ParallelService.png]]
 
 Base type ParallelParadimg contains three methods: 
-* ''init'' - initializes resources required for and used by parallelization paradigm; 
-* ''close'' - disposes initialized resource;
+* ''init'' - initializes resources required for run and used by parallelization paradigm; 
+* ''close'' - disposes initialized resources;
 * ''getStatus'' - returns status indicating whether the paradigm is initialized or disposed.
 
-First parallelization paradigm is type ''RPCParadigm'' that has methods:
+The first parallelization paradigm of type ''RPCParadigm'' has methods:
 <source lang="java">
   List<Map<String, Object>> runAll(String commandName, List<Map<String, Object>> parameters)
   List<CompletableFuture<Map<String, Object>>> runAllAsync(String commandName, List<Map<String, Object>> parameters);
 </source>
-The methods cause parallel execution of specified command for parameters. A size of a parameters defines how many executions are performed. Parallelization and distribution of requests is solved by the parallelization paradigm implementation used.
-Three implementations of parallelization paradigm exist:
-* ''LocalMultithreadedParadigm'' in the module [https://github.com/fiji-hpc/scijava-parallel scijava-parallel] that executes commands in the same instance of running Fiji and uses multiple threads for parallelization.
+The methods cause parallel execution of specified command for parameters. A size of a parameters define how many executions are to be performed. Parallelization and distribution of requests is solved internally by parallelization paradigm implementation.
+There are three implementations of parallelization paradigms:
+* ''LocalMultithreadedParadigm'' in the module [https://github.com/fiji-hpc/scijava-parallel scijava-parallel] executes commands in the same instance of running Fiji and uses multiple threads for parallelization.
 
-* [[FSTRPCParadigm]] in the module [https://github.com/fiji-hpc/scijava-parallel-fst scijava-parallel-fst] that executes commands in different instances of running Fiji. Fiji can run in a different computer or an HPC cluster. Communication is realized through TCP/IP and data are serialized by library [https://github.com/RuedigerMoeller/fast-serialization fst].
+* [[FSTRPCParadigm]] in the module [https://github.com/fiji-hpc/scijava-parallel-fst scijava-parallel-fst] executes commands in different instances of running Fiji. Fiji can run in a different computer or an HPC cluster. Communication is realized through TCP/IP connection and data are serialized by fst library [https://github.com/RuedigerMoeller/fast-serialization fst].
 
-* ''ImageJServerParadigm'' in the module [https://github.com/fiji-hpc/scijava-parallel-imagej-server scijava-parallel-imagej-server] that also executes commands in different instances of running Fiji. The paradigm uses ability of [https://github.com/imagej/imagej-server/ imagej-server] to execute commands through its provided REST API.
+* ''ImageJServerParadigm'' in the module [https://github.com/fiji-hpc/scijava-parallel-imagej-server scijava-parallel-imagej-server] also executes commands in different instances of running Fiji. The paradigm uses ability of [https://github.com/imagej/imagej-server/ imagej-server] to execute commands through its provided REST API.
 
 == Fiji users ==
 Scijava-parallel offers plugin that allows management of paradigms and profiles. It is accessible from menu ''Plugins > Scijava parallel > Paradigm Profiles Manager''. The plugin shows the following form:
