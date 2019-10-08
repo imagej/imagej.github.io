@@ -86,7 +86,7 @@ Select the tab “Macro Progress” and ignore the rest of the tabs for now (see
 To view the progress, click on the “Macro Progress” if it is not already selected (it should be selected by default). Please be patient while the progress is loading. There is a status bar on the lower right corner of the window where you can monitor the process of getting the progress from the HPC Cluster (the progress is stored in a separate progress file for each compute node of the HPC Cluster it is run).
 
 === Job dashboard ===
-In the “Job dashboard” there are five tabs. “Macro Progress”, “Error output”, “Other output”, “Job directories” and “Data upload”.  
+In the “Job dashboard” there are the following five tabs:
 * “Macro Progress” – this tab is described in the previous section Inspecting progress;
 * “Error output” - the error output and warnings that are redirected from the HPC Cluster live;
 * “Other output”- the redirected standard output from the cluster in the tab;
