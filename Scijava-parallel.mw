@@ -47,7 +47,7 @@ There are three implementations of parallelization paradigms:
 * ''ImageJServerParadigm'' in the module [https://github.com/fiji-hpc/scijava-parallel-imagej-server scijava-parallel-imagej-server] also executes commands in different instances of running Fiji. The paradigm uses ability of [https://github.com/imagej/imagej-server/ imagej-server] to execute commands through its provided REST API.
 
 == Fiji users ==
-Scijava-parallel offers plugin that allows management of paradigms and profiles. It is accessible from menu ''Plugins > Scijava parallel > Paradigm Profiles Manager''. The plugin shows the following form:
+Scijava-parallel offers plugin that provides management of paradigms and profiles. It is accessible from menu ''Plugins > Scijava parallel > Paradigm Profiles Manager''. The plugin shows the following form:
 
 [[File:ParadigmProfilesManager.png]]
 
@@ -59,15 +59,15 @@ Profiles can be:
 
 === Profile creation and editing ===
 During the creation of a profile a user specifies the implementation of an associated paradigm - [[FSTRPCParadigm]] is selected in the screenshot - paradigm manager. 
-Paradigm managers are supplied together with parallelization paradigm implementations by parallelization paradigm providers.
+Paradigm managers are supplied by parallelization paradigm providers together with parallelization paradigm implementations.
 Paradigm managers manage resources used by a parallelization paradigm implementation.
 There are three paradigm managers available that differ in the location where they start a server handling requests:
 * ''Inprocess FSTPRC'' - in an actual running instance of Fiji;
-* ''Local FSTRPC'' - on local machine as an another process;
-* ''FSTRPC on HPC'' - on remote HPC cluster through ssh.
+* ''Local FSTRPC'' - on a local machine as an another process;
+* ''FSTRPC on HPC'' - on a remote HPC cluster through ssh.
 
-This is done in order to allow the user to provide basic settings during a profile creation. The settings required change according to the selected paradigm manager.
-''Local FSTPRC'' paradigm manager requires the user to provide the path to a Fiji installation in a local filesystem while ''FSTRPC on HPC'' requires the user to provide information that will allow connection to a remote HPC cluster - host name,credentials - and the location of a Fiji installation on HPC cluster.
+This is done in order to allow the user to provide basic settings during a profile creation. The settings required changes according to the selected paradigm manager.
+''Local FSTPRC'' paradigm manager requires the user to provide the path to a Fiji installation in a local filesystem while ''FSTRPC on HPC'' requires the user to provide information that will allow connection to a remote HPC cluster - host name, credentials - and the location of a Fiji installation on HPC cluster.
 
 === Profile selection ===
 This action marks a paradigm profile as selected. 
@@ -75,10 +75,10 @@ An instance of the paradigm associated with a selected profile is returned as th
 In the present implementation of the parallel service, only one profile can be marked as selected but we see it as an implementation detail that could be changed in the future.
 
 === Parallelization paradigm management ===
-The manager enables the user to perform basic management of the parallelization paradigm implementation in a selected profile.
-A user can initialize and close a profile by the check box ''Paradigm Active''.
+The manager enables the user to perform basic management of the parallelization paradigm implementation in the selected profile.
+The user can initialize and close the profile by the check box ''Paradigm Active''.
 The paradigm manager ''FSTRPC on HPC'' offers a possibility to leave a Fiji, that is started in a job on a remote HPC, running while is an associated parallelization paradigm implementation closed.
-This property is specified by a user during
+This property is specified by the user during
 
 == Parallelization paradigm providers ==
 A Parallelization paradigm implementation requires only to implement one or more parallelization paradigms and to annotate this class as plugin:
