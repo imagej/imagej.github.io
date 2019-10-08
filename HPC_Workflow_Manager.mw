@@ -91,3 +91,31 @@ In the “Job dashboard” there are five tabs. “Macro Progress”, “Error o
 Once the job has finished you can right click and select the item “Download result” which will now have become available.
 
 When the timer in the “Download” column has finished and the state is “Done” the files will have been transferred. You can see the downloaded files by right clicking the job and selecting the item “Open job sub-directory”.
+
+== How to write a parallel Macro ==
+=== Prerequisites ===
+If you are new to Macro programming it is suggested to read the following wiki page https://imagej.net/Introduction_into_Macro_Programming first. This will provide you with a sufficient introduction to the basics of Macro programming in Fiji.
+
+You should also be familiar with the graphical user interface of the HPC Workflow Client.
+
+=== How to use parallelization function (by example) ===
+Writing a small parallel script will make you familiar with the parallelization functionality offered to help you start using parallelism on Macro scripts.
+
+=== How to use the progress reporting functions (by example) ===
+The first step is to add all tasks by using the “parAddTasks()” function. Simply call this method after “parInit()” as many times as the tasks that you want to have including a unique description for each one of them. The description must be unique. The tasks are automatically assigned an auto-incremented id in the order they were added.
+
+The second step is to call the “parReportTasks()” function which will output to each node’s progress log a listing of the task id along with the task’s description.
+
+Notice that the task ids may differ between nodes as a task may be added only in one node if so desired by the user.
+
+The third step is to call the “parReportProgress()” function which will add the current progress to the progress report file.
+
+Note that progress can be only a percentage between 0 and 100 and it cannot move backwards.
+
+Other information may be reported by calling the “parReportText()” function.
+
+=== Available functions (list) ===
+Many of the functions have MPI equivalent, this will also be listed in the table to aid people familiar with MPI. This is because the current implementation uses OpenMPI 4. Note however that this does not mean that this will be a wrapper for MPI for Fiji Macro and the underling implementation may and probably will change.
+
+== Installation ==
+HPC Workflow client will be available to install through its update site.
