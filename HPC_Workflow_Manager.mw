@@ -33,7 +33,7 @@ In the “Output data location” section leave the default option, “Output da
 Now, the filled-in form should look like Figure 4. If you are using Linux save the “HelloWorld” example script in your home directory (“~/HelloWorld/user.ijm”) and use that path instead of “C:/Documents/HelloWorld”.
 When you are sure that the form is filled-in correctly press the “Create” button.
 
-[[File:hpc-workflow-manager-main-empty.png |500px|thumb|center|Example of the main window of the HPC Workflow, it displays all jobs ever submitted by the user, in this case it is empty as it is the first time the plugin is used.]]
+[[File:hpc-workflow-manager-main-empty.png |500px|thumb|center|Example of the main window of the HPC Workflow Manager, it displays all jobs ever submitted by the user, in this case it is empty as it is the first time the plugin is used.]]
 
 === How to start a job ===
 If you have created a new job, the main window should look roughly like Figure 5.
