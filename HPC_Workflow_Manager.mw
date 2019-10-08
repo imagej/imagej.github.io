@@ -122,7 +122,7 @@ Other information may be reported by calling the “parReportText()” function.
 Many of the functions have MPI equivalent, this will also be listed in the table to aid people familiar with MPI. This is because the current implementation uses OpenMPI 4. Note however that this does not mean that this will be a wrapper for MPI for Fiji Macro and the underling implementation may and probably will change.
 
 {| class="wikitable"
-|-
+|+ Parallelization functions
 ! Function name !! Input !! Output !! Description !! MPI equivalent
 |-
 | parInt || None      || None || Initializes parallelization, it should be at the beginning of the parallel code. || MPI_Init
@@ -138,14 +138,19 @@ Many of the functions have MPI equivalent, this will also be listed in the table
 | parScatterEqually || An array to split and send, the rank of the node that will split and send the array. || An array. || This will try to split an array to equal parts send it from the given rank. It will also receive the part of the array it should and return it (including the rank that send the parts). In case the number of array elements is not equally divisible it will send any extra elements to the first rank (0). || None
 |-
 | parScatter || An array to split and send, number of elements to send, number of elements to receive and the rank of the node to send the elements. || An array. || This works like parScatterEqually but in this case the user is responsible for providing the parameters to split the array. || MPI_Scatter
+|}
+
+{| class="wikitable"
+|+ Progress log functions
+! Function name !! Input !! Output !! Description
 |-
-| parReportProgress || Task id (ex 8), progress percentage (ex 85 %) || None || Outputs progress in percentage for a specified task in the node’s progress log. || None
+| parReportProgress || Task id (ex 8), progress percentage (ex 85 %) || None || Outputs progress in percentage for a specified task in the node’s progress log.
 |-
-| parReportText || Text || None || Outputs given text to the node’s log. || None
+| parReportText || Text || None || Outputs given text to the node’s log.
 |-
-| parAddTask || Description || Index of added task. || Creates a new task with the description provided. || None
+| parAddTask || Description || Index of added task. || Creates a new task with the description provided.
 |-
-| parReportTasks || None || None || Outputs all task ids with their descriptions. || None
+| parReportTasks || None || None || Outputs all task ids with their descriptions.
 |}
 
 == Installation ==
