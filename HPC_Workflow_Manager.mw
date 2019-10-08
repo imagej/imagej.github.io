@@ -1,0 +1,6 @@
+
+== General Information ==
+The HPC Workflow Manager Client supports two workflow types:
+* SPIM; and
+* Macro.
+This guide will only explain how to use the newly added Macro workflow type.
