@@ -4,3 +4,15 @@ The HPC Workflow Manager Client supports two workflow types:
 * SPIM; and
 * Macro.
 This guide will only explain how to use the newly added Macro workflow type.
+
+== How to use ==
+=== How to start the plugin ===
+From the Fiji menu bar select Plugins > Multiview Reconstruction > HPC Workflow Manager and fill in the Login dialog that will appear. For example, see the filled in dialog in Figure 1.
+
+=== How to login ===
+You need to enter the username, password, and email for your account. If it is the first time you use this installation of the program you must create a new directory anywhere to use as a working directory. If you have used HPC Workflow manager in the past you can use an already existing working directory. Select the working directory by clicking on the browse button or typing the path. The directory must already exist.
+
+Press "Ok" and the dialog will should disappear, and a progress dialog should appear. If not, then a new message should inform you of the error made during filling in the dialog.
+
+=== How to create a new job ===
+After the connection to the HPC Cluster is made and the jobs are downloaded from the cluster you should see a window like the one in Figure 2. If it is the first time you run this plugin the table will be empty.
