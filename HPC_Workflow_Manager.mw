@@ -14,7 +14,7 @@ You need to enter the username, password, and email for your account. If it is t
 
 Press "Ok" and the dialog will should disappear, and a progress dialog should appear. If not, then a new message should inform you of the error made during filling in the dialog.
 
-[[File:hpc-workflow-manager-login.png |500px|thumb|right|Example of a filled in login dialog]]
+[[File:hpc-workflow-manager-login.png |500px|thumb|right|Example of a filled in login dialog.]]
 
 === How to create a new job ===
 After the connection to the HPC Cluster is made and the jobs are downloaded from the cluster you should see a window like the one in Figure 2. If it is the first time you run this plugin the table will be empty.
