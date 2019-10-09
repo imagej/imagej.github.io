@@ -219,6 +219,15 @@ Which means that the rest of the nodes do not have a cake. You will understand w
 
 Node number one wants to divide them equally. This is why <code>parScatterEqually()</code> must be used.
 
+<code>parScatterEqually</code> will at the same time send and receive the cake piece or pieces (array items). It needs three arguments, the array to split as well as send (scatter), the length of the sent array, and which node is to spit the array and send it. Thus, in this case, you must add the bellow line after the “if” statement’s body:
+
+<source lang="java">
+  receivedPieces = parScatterEqually(cake, 4, 1); // Do NOT use lengthOf(cake);
+</source>
+
+remember the rest of the nodes do not have a cake and cannot know its size!
+All nodes including one (1) will receive parts of the cake. Since there are more than three pieces of cake the first node (rank == 0) will get the extra piece. (<code>parScatterEqually()</code> will always give any extra array elements to the first node, to avoid this one must use <code>parScatter()</code> and specify exactly how many elements is each node to receive).
+
 Lastly, something important to remember is that nodes do not share memory. Each node is separate, they can only communicate through messages (sending data). Currently only by calling parScatterEqually or <code>parScatter</code>.
 
 === How to use the progress reporting functions (by example) ===
