@@ -101,7 +101,7 @@ When the timer in the “Download” column has finished and the state is “Don
 
 == How to write a parallel Macro ==
 === Prerequisites ===
-If you are new to Macro programming it is suggested to read the following wiki page https://imagej.net/Introduction_into_Macro_Programming first. This will provide you with a sufficient introduction to the basics of Macro programming in Fiji.
+If you are new to Macro programming it is suggested to read [[Introduction into Macro Programming]] first. This will provide you with a sufficient introduction to the basics of Macro programming in Fiji.
 
 You should also be familiar with the graphical user interface of the HPC Workflow Client.
 
