@@ -109,6 +109,118 @@ You should also be familiar with the graphical user interface of the HPC Workflo
 === How to use parallelization function (by example) ===
 Writing a small parallel script will make you familiar with the parallelization functionality offered to help you start using parallelism on Macro scripts.
 
+==== Simple Greeting Example ====
+Let's write a simple “greeting” Macro script where each node will greet the rest with a print message and wait for the rest to greet it as well. Then it will announce its departure and end. No node should finish before all of them have introduced themselves. Let’s start:
+
+First, we can write a serial version:
+<source lang="java">
+print(“The greeting program.”);
+print(“Hello I am a single node.”);
+print(“Bye, from the only node.”);
+</source>
+
+Now let’s parallelize this by adding a call to <code>parInit()</code> at the beginning in order to start the parallel execution of the program. We must also add a call to <code>parFinilize()</code> at the end of our program to stop the parallelization. The code should now look like this:
+<source lang="java">
+print(“The greeting program.”);
+parInit();
+  print(“Hello I am a single node.”);
+  print(“Bye, from the only node.”);
+parFinilize();
+</source>
+
+Notice that we want the first print to be executed only once that is why it is called before calling <code>parInit()</code>.
+
+Very well, our program is now parallelized. However, the messages no longer make sense.
+
+We should get the id of the node and print it instead as well as the total number of the nodes (just for fun).
+
+To get the id of the node (that is its rank) we must call parGetRank().
+<source lang="java">
+print(“The greeting program.”);
+parInit();
+  myRank = parGetRank();
+  print(“Hello I am node number: ”+myRank);
+  print(“Bye, from node number: ”+myRank);
+parFinilize();
+</source>
+
+To greet all of the nodes let’s add the total number of nodes used to run the script (size) as well by calling get size <code>parGetSize()</code>. 
+Add the following line after getting the rank to get the size:
+
+<source lang="java">
+  size = parGetSize();
+</source>
+
+And modify the first print to read:
+
+<source lang="java">
+  print(“Hello to all “+size+” nodes. I am node number: ”+myRank);
+</source>
+
+Very well, our program is now parallelized. Unfortunately, it is incorrect.
+
+If you run it enough times you will notice that sometimes a node will “depart” before all of them give their greetings. This is because some nodes may execute their code faster or slower, there is no guaranty that each line will execute at the same time, or which one will execute first between nodes.
+
+For example, if there are two (2) nodes the redirected output in the “Other output” tab could look like this:
+
+<source lang="text">
+The greeting program.
+Hello I am node number: 1
+Bye, form node number: 1
+Hello I am node number: 0
+Bye, from node number: 0
+</source>
+
+To correct this we will put a barrier to the flow of the execution of the code.
+ Any node that calls this function will stop until every node has also called this function.
+
+Do this by adding calling <code>parBarrier()</code> bellow the greeting and above the announcement of the departure of the node.
+<source lang="java">
+  print(“Hello I am node number: ”+myRank);
+  parBarrier();
+  print(“Bye, from node number: ”+myRank);
+</source>
+
+The script will run correctly now, for example for three (3) nodes the following output may be printed:
+
+<source lang="text">
+Hello I am node number: 1
+Hello I am node number: 3
+Hello I am node number: 0
+Bye, form node number: 3
+Bye, from node number: 0
+Bye, from node number: 1
+</source>
+
+Which is correct.
+Now let us imagine that node number one (1) and only node number one (1) brought with it a cake. And wants to share that information by printing it. You can have code executed in only specific nodes by using an “if” statement and comparing the rank like so:
+
+<source lang="java">
+ if(myRank == 1){
+   print(“I brought the cake.”);
+ }
+</source>
+
+Add the above snippet anywhere in the parallel region (that is between parInit() and parFinilize()).
+
+Great, now since node one brought the cake it would like to share it with the rest of the nodes. Let’s imagine that the cake is an array made out of numbers. Like the following one:
+
+<source lang="java">
+  cake = newArray(1, 2, 3, 4);
+</source>
+
+There are four pieces of the cake. Add the above line inside the “if” statement’s body. Above the “if” statement add the following:
+
+<source lang="java">
+  cake = newArray(0);
+</source>
+
+Which means that the rest of the nodes do not have a cake. You will understand why this is necessary later.
+
+Node number one wants to divide them equally. This is why <code>parScatterEqually()</code> must be used.
+
+Lastly, something important to remember is that nodes do not share memory. Each node is separate, they can only communicate through messages (sending data). Currently only by calling parScatterEqually or <code>parScatter</code>.
+
 === How to use the progress reporting functions (by example) ===
 The first step is to add all tasks by using the “parAddTasks()” function. Simply call this method after “parInit()” as many times as the tasks that you want to have including a unique description for each one of them. The description must be unique. The tasks are automatically assigned an auto-incremented id in the order they were added.
 
