@@ -7,37 +7,37 @@ This guide will only explain how to use the newly added Macro workflow type.
 
 == How to use ==
 === How to start the plugin ===
-From the Fiji menu bar select Plugins > Multiview Reconstruction > HPC Workflow Manager and fill in the Login dialog that will appear. For example, see the filled in dialog in Figure 1.
+From the Fiji menu bar select Plugins > Multiview Reconstruction > HPC Workflow Manager and fill in the Login dialog that will appear. For example, see the filled-in dialog in Figure 1.
 
 
 [[File:hpc-workflow-manager-login.png |500px|thumb|right|Figure 1: Example of a filled in login dialog.]]
 
 === How to login ===
-You need to enter the username, password, and email for your account. If it is the first time you use this installation of the program you must create a new directory anywhere to use as a working directory. If you have used HPC Workflow manager in the past you can use an already existing working directory. Select the working directory by clicking on the browse button or typing the path. The directory must already exist.
+You need to enter the username, password, and email for your account. If it is the first time you use this installation of the plugin you must create a new directory anywhere to use as a working directory. If you have used HPC Workflow Manager in the past you can use an already existing working directory. Select the working directory by clicking on the browse button or typing the path. The directory must already exist.
 
-Press "Ok" and the dialog will should disappear, and a progress dialog should appear. If not, then a new message should inform you of the error made during filling in the dialog.
+Press "Ok" and the dialog should disappear, and a progress dialog should appear. If not, then a new message should inform you of the error made during filling in the dialog. Correct the error and try again.
 
 === How to create a new job ===
 After the connection to the HPC Cluster is made and the jobs are downloaded from the cluster you should see a window like the one in Figure 2. If it is the first time you run this plugin the table will be empty.
 
-[[File:hpc-workflow-manager-main-empty.png |500px|thumb|center|Figure 2: Example of the main window of the HPC Workflow Manager, it displays all jobs ever submitted by the user, in this case it is empty as it is the first time the plugin is used.]]
+[[File:hpc-workflow-manager-main-empty.png |500px|thumb|center|Figure 2: Example of the main window of the HPC Workflow Manager, it displays all jobs ever submitted by the user, in this case, it is empty as it is the first time the plugin is used.]]
 
-Right click in the empty table or an empty row of the table to display the context menu, an example of the context menu is featured in Figure 3.
+Right-click in the empty table or an empty row of the table to display the context menu, an example of the context menu is featured in Figure 3.
 
-[[File:hpc_workflow_manager_context_menu.png |200px|thumb|right| Context menu press right click on an empty row or empty table to display.]]
+[[File:hpc_workflow_manager_context_menu.png |200px|thumb|right| Figure 3: Context menu press right click on an empty row or empty table to display.]]
 
-Select the first option “Create a new job”. The “Create job” window will appear. From the “Workflow Type” section select the “Macro Execution” option.
+Select the first option “Create a new job”. The “Create job” window will appear. From the “Workflow Type” section, select the “Macro Execution” option.
 
-In the input data location, you must provide a directory which contains your Macro script (it should be named “user.ijm”). If this is the first time you are using the HPC Workflow plugin with Macro support, you can use the example found [https://github.com/MKrumnikl/Ij1MPIWrapper/tree/addFeatureScatter/src/main/resources/ExampleScripts/HelloWorld here].
+In the input data location, you must provide a directory that contains your Macro script (the script must be named “user.ijm”). If this is the first time you are using the HPC Workflow plugin with Macro support, you can use the example found [https://github.com/MKrumnikl/Ij1MPIWrapper/tree/addFeatureScatter/src/main/resources/ExampleScripts/HelloWorld here].
 
-In the node configuration select four nodes (4) by pressing the up arrow in the numeric field four times.
+In the node configuration, select four nodes (4) by pressing the up arrow in the spinner four times.
 
-In the “Output data location” section leave the default option, “Output data location”, selected.
+In the “Output data location” section leave the default option, “Job subdirectory”, selected.
 
 Now, the filled-in form should look like Figure 4. If you are using Linux save the “HelloWorld” example script in your home directory (“~/HelloWorld/user.ijm”) and use that path instead of “C:/Documents/HelloWorld”.
 When you are sure that the form is filled-in correctly press the “Create” button.
 
-[[File:hpc-workflow-manager-create-job.png |300px|thumb|center| Example of a new Macro job configuration.]]
+[[File:hpc-workflow-manager-create-job.png |300px|thumb|center| Figure 4: Example of a new Macro job configuration.]]
 
 === How to start a job ===
 If you have created a new job, the main window should look roughly like Figure 5.
@@ -47,8 +47,8 @@ Here you can see the following columns:
 * “Status” – The job’s current status which can be:
 ** “Unknown” – the state of the job is not known;
 ** “Configuring” – the job is being configured;
-** “Queued” – the job is in a queue and where there are available nodes it will be executed;
-** “Running” – the job was executed is currently running;
+** “Queued” – the job is in a queue and when there are available nodes it will be executed;
+** “Running” – the job was executed and it is currently running;
 ** “Finished” – the job has stopped running successfully, completing its tasks;
 ** “Failed” – the job has stopped running unsuccessfully, it did not complete its tasks;
 ** “Canceled” – the job was stopped by the user; and
@@ -60,45 +60,45 @@ Here you can see the following columns:
 * “Download” – whether the job was downloaded.
 * “Workflow Type”- whether it is SPIM or Macro workflow type.
 
-Right click on the new job to display the context menu (of Figure 3). You will notice that there are new enabled items.
+Right-click on the new job to display the context menu (of Figure 3). You will notice that there are new enabled items.
 
 Before you can start the job, you need to upload your script (“user.ijm”). To do this you must select the “Upload data” item from the context menu.
 
 A timer will appear in the download column. When it has completed the uploading the cell that corresponds to the job should indicate that it is “Done” (Figure 6).
 
-Now that the script file is uploaded the job can be started. Right click the row of the job and select “Start Job” from the context menu.
+Now that the script file is uploaded the job can be started. Right-click the row of the job and select “Start Job” from the context menu.
 
 To make the source code of the user cleaner and easier to understand the special functions that make parallelism available to the user are appended to the user script on upload and a new file is created called “mpitest.txt” which is the file that will be executed on the cluster.
 
 To inspect the submitted file (for example for debugging) you can right click the job and select “Open macro in Editor” where you can see the contents of the user script along with the appended function definitions that provide parallelism.
 
-Finally, to start the job right click on the job and select the “Start job” item from the context menu.
+Finally, to start the job, right-click on the job and select the “Start job” item from the context menu.
 
 === Inspecting progress ===
 There are two ways to inspect the progress of a job.
 
-The first one is by looking at the “Status” of a job. This way you can see whether a job is running on the HPC Cluster or not. In the case of Figure 7 the job is “Queued”.
+The first one is by looking at the “Status” of a job. This way you can see whether a job is running on the HPC Cluster or not. In the case of Figure 7, the job is “Queued”.
 
 However, this is a very coarse-grained way to see the progress of the job and when it starts running it does not provide any useful information until it has ended (“Finished”, “Failed” etc.).
 
-The second way is to open the “Job dashboard” for the desired job by either double click the job’s row or right click and select the “Job dashboard” context menu item. Note that the job must be in the state “Running” for this functionality to work, you may open the window earlier and it will start displaying the progress when the state changes automatically.
+The second way is to open the “Job dashboard” for the desired job by either double-clicking the job’s row or right-click and select the “Job dashboard” context menu item. Note that the job must be in the state “Running” for this functionality to work, you may open the window earlier and it will start displaying the progress when the state changes automatically.
 
 Select the tab “Macro Progress” and ignore the rest of the tabs for now (see section Job dashboard for descriptions of the rest of the tabs).
 
-To view the progress, click on the “Macro Progress” if it is not already selected (it should be selected by default). Please be patient while the progress is loading. There is a status bar on the lower right corner of the window where you can monitor the process of getting the progress from the HPC Cluster (the progress is stored in a separate progress file for each compute node of the HPC Cluster it is run).
+To view the progress, click on the “Macro Progress” if it is not already selected (it should be selected by default). Please be patient while the progress is loading. There is a status bar on the lower right corner of the window where you can monitor the process of getting the progress from the HPC Cluster (the progress is stored in a separate progress file for each compute node of the HPC Cluster it is run on).
 
 === Job dashboard ===
 In the “Job dashboard” there are the following five tabs:
 * “Macro Progress” – this tab is described in the previous section Inspecting progress;
-* “Error output” - the error output and warnings that are redirected from the HPC Cluster live;
-* “Other output”- the redirected standard output from the cluster in the tab;
+* “Error output” - the error output and warnings that are redirected live from the HPC Cluster;
+* “Other output”- the live redirected standard output from the cluster in the tab;
 * “Job directories” – contains a listing of the job directories (Input, Output and Working); and
 * “Data upload” – contains a listing of the files that were uploaded;
 
 === How to download the results ===
-Once the job has finished you can right click and select the item “Download result” which will now have become available.
+Once the job has finished you can right-click and select the item “Download result” which will now have become available.
 
-When the timer in the “Download” column has finished and the state is “Done” the files will have been transferred. You can see the downloaded files by right clicking the job and selecting the item “Open job sub-directory”.
+When the timer in the “Download” column has finished and the state is “Done” the files will have been transferred. You can see the downloaded files by right-clicking the job and selecting the item “Open job sub-directory”.
 
 == How to write a parallel Macro ==
 === Prerequisites ===
@@ -112,34 +112,36 @@ Writing a small parallel script will make you familiar with the parallelization 
 === How to use the progress reporting functions (by example) ===
 The first step is to add all tasks by using the “parAddTasks()” function. Simply call this method after “parInit()” as many times as the tasks that you want to have including a unique description for each one of them. The description must be unique. The tasks are automatically assigned an auto-incremented id in the order they were added.
 
+You may store the id of the task added in a variable for easier handling later on.
+
 The second step is to call the “parReportTasks()” function which will output to each node’s progress log a listing of the task id along with the task’s description.
 
 Notice that the task ids may differ between nodes as a task may be added only in one node if so desired by the user.
 
 The third step is to call the “parReportProgress()” function which will add the current progress to the progress report file.
 
-Note that progress can be only a percentage between 0 and 100 and it cannot move backwards.
+Note that progress can be only a percentage between 0 and 100 and it cannot move backward.
 
 Other information may be reported by calling the “parReportText()” function.
 
 === Available functions (list) ===
-Many of the functions have MPI equivalent, this will also be listed in the table to aid people familiar with MPI. This is because the current implementation uses OpenMPI 4. Note however that this does not mean that this will be a wrapper for MPI for Fiji Macro and the underling implementation may and probably will change.
+Many of the functions have an MPI equivalent, this will also be listed in the table to aid people familiar with MPI. This is because the current implementation uses OpenMPI 4. Note however that this does not mean that this will be a wrapper for MPI for Fiji Macro and the underlying implementation may and probably will change.
 
 {| class="wikitable"
 |+ Parallelization functions
 ! Function name !! Input !! Output !! Description !! MPI equivalent
 |-
-| parInt || None      || None || Initializes parallelization, it should be at the beginning of the parallel code. || MPI_Init
+| parInt || None      || None || Initializes parallelization, it should be called at the beginning of the parallel code. || MPI_Init
 |-
-| parFinalize || None || None || Finalizes parallelization, it should be at the end of the parallel code. || MPI_Finalize
+| parFinalize || None || None || Finalizes parallelization, it should be called at the end of the parallel code. || MPI_Finalize
 |-
 | parGetRank || None || Id of the current node. || Returns the id of the current node. || MPI_Comm_rank
 |-
 | parGetSize || None || Total number of nodes. || Returns the total number of nodes. || MPI_Comm_size
 |-
-| parBarrier || None || None || Parallel barrier, all nodes must reach this point for any of them to continue further. Provides synchronization. || MPI_Barrier
+| parBarrier || None || None || Parallel barrier, all nodes must reach the point of calling this function for any of them to continue further. Provides synchronization. || MPI_Barrier
 |-
-| parScatterEqually || An array to split and send, the rank of the node that will split and send the array. || An array. || This will try to split an array to equal parts send it from the given rank. It will also receive the part of the array it should and return it (including the rank that send the parts). In case the number of array elements is not equally divisible it will send any extra elements to the first rank (0). || None
+| parScatterEqually || An array to split and send, the rank of the node that will split and send the array. || An array. || This will try to split an array to equal parts send it from the given rank. It will also receive the part of the array it should and return it (including the rank that sends the parts). In case the number of array elements is not equally divisible it will send any extra elements to the first rank (0). || None
 |-
 | parScatter || An array to split and send, number of elements to send, number of elements to receive and the rank of the node to send the elements. || An array. || This works like parScatterEqually but in this case the user is responsible for providing the parameters to split the array. || MPI_Scatter
 |}
