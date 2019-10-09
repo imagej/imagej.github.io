@@ -20,7 +20,7 @@ Press "Ok" and the dialog will should disappear, and a progress dialog should ap
 === How to create a new job ===
 After the connection to the HPC Cluster is made and the jobs are downloaded from the cluster you should see a window like the one in Figure 2. If it is the first time you run this plugin the table will be empty.
 
-[[File:hpc-workflow-manager-main-empty.png |500px|thumb|center|Example of the main window of the HPC Workflow Manager, it displays all jobs ever submitted by the user, in this case it is empty as it is the first time the plugin is used.]]
+[[File:hpc-workflow-manager-main-empty.png |500px|thumb|center|Figure 2: Example of the main window of the HPC Workflow Manager, it displays all jobs ever submitted by the user, in this case it is empty as it is the first time the plugin is used.]]
 
 Right click in the empty table or an empty row of the table to display the context menu, an example of the context menu is featured in Figure 3.
 
