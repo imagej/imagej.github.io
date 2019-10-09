@@ -134,7 +134,7 @@ Very well, our program is now parallelized. However, the messages no longer make
 
 We should get the id of the node and print it instead as well as the total number of the nodes (just for fun).
 
-To get the id of the node (that is its rank) we must call parGetRank().
+To get the id of the node (that is its rank) we must call <code>parGetRank()</code>.
 <source lang="java">
 print(“The greeting program.”);
 parInit();
@@ -201,7 +201,7 @@ Now let us imagine that node number one (1) and only node number one (1) brought
  }
 </source>
 
-Add the above snippet anywhere in the parallel region (that is between parInit() and parFinilize()).
+Add the above snippet anywhere in the parallel region (that is between <code>parInit()</code> and <code>parFinilize()</code>).
 
 Great, now since node one brought the cake it would like to share it with the rest of the nodes. Let’s imagine that the cake is an array made out of numbers. Like the following one:
 
@@ -231,19 +231,19 @@ All nodes including one (1) will receive parts of the cake. Since there are more
 Lastly, something important to remember is that nodes do not share memory. Each node is separate, they can only communicate through messages (sending data). Currently only by calling parScatterEqually or <code>parScatter</code>.
 
 === How to use the progress reporting functions (by example) ===
-The first step is to add all tasks by using the “parAddTasks()” function. Simply call this method after “parInit()” as many times as the tasks that you want to have including a unique description for each one of them. The description must be unique. The tasks are automatically assigned an auto-incremented id in the order they were added.
+The first step is to add all tasks by using the <code>parAddTasks()</code> function. Simply call this method after <code>parInit()</code> as many times as the tasks that you want to have including a unique description for each one of them. The description must be unique. The tasks are automatically assigned an auto-incremented id in the order they were added.
 
 You may store the id of the task added in a variable for easier handling later on.
 
-The second step is to call the “parReportTasks()” function which will output to each node’s progress log a listing of the task id along with the task’s description.
+The second step is to call the <code>parReportTasks()</code> function which will output to each node’s progress log a listing of the task id along with the task’s description.
 
 Notice that the task ids may differ between nodes as a task may be added only in one node if so desired by the user.
 
-The third step is to call the “parReportProgress()” function which will add the current progress to the progress report file.
+The third step is to call the <code>parReportProgress()</code> function which will add the current progress to the progress report file.
 
 Note that progress can be only a percentage between 0 and 100 and it cannot move backward.
 
-Other information may be reported by calling the “parReportText()” function.
+Other information may be reported by calling the <code>parReportText()</code> function.
 
 === Available functions (list) ===
 Many of the functions have an MPI equivalent, this will also be listed in the table to aid people familiar with MPI. This is because the current implementation uses OpenMPI 4. Note however that this does not mean that this will be a wrapper for MPI for Fiji Macro and the underlying implementation may and probably will change.
