@@ -219,7 +219,7 @@ Which means that the rest of the nodes do not have a cake. You will understand w
 
 Node number one wants to divide them equally. This is why <code>parScatterEqually()</code> must be used.
 
-<code>parScatterEqually</code> will at the same time send and receive the cake piece or pieces (array items). It needs three arguments, the array to split as well as send (scatter), the length of the sent array, and which node is to spit the array and send it. Thus, in this case, you must add the bellow line after the “if” statement’s body:
+<code>parScatterEqually()</code> will at the same time send and receive the cake piece or pieces (array items). It needs three arguments, the array to split as well as send (scatter), the length of the sent array, and which node is to spit the array and send it. Thus, in this case, you must add the bellow line after the “if” statement’s body:
 
 <source lang="java">
   receivedPieces = parScatterEqually(cake, 4, 1); // Do NOT use lengthOf(cake);
