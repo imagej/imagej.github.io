@@ -237,7 +237,7 @@ parInit();
   size = parGetSize();
   print("Hello to all "+size+" nodes. I am node number: "+myRank);
   cake = newArray(0);
-  if(myRan == 1){
+  if(myRank == 1){
     print("I brought the cake.");
     cake = newArray(1, 2, 3, 4);
   }
