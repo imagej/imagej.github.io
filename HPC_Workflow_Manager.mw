@@ -201,7 +201,7 @@ Now let us imagine that node number one (1) and only node number one (1) brought
  }
 </source>
 
-Add the above snippet anywhere in the parallel region (that is between <code>parInit()</code> and <code>parFinilize()</code>).
+Add the above snippet anywhere in the parallel region (that is between <code>parInit()</code> and <code>parFinilize()</code>) and before calling <code> parBarrier()</code>.
 
 Great, now since node one brought the cake it would like to share it with the rest of the nodes. Let’s imagine that the cake is an array made out of numbers. Like the following one:
 
@@ -225,10 +225,32 @@ Node number one wants to divide them equally. This is why <code>parScatterEquall
   receivedPieces = parScatterEqually(cake, 4, 1); // Do NOT use lengthOf(cake);
 </source>
 
-remember the rest of the nodes do not have a cake and cannot know its size!
+Remember the rest of the nodes do not have a cake and cannot know its size!
 All nodes including one (1) will receive parts of the cake. Since there are more than three pieces of cake the first node (rank == 0) will get the extra piece. (<code>parScatterEqually()</code> will always give any extra array elements to the first node, to avoid this one must use <code>parScatter()</code> and specify exactly how many elements is each node to receive).
 
-Lastly, something important to remember is that nodes do not share memory. Each node is separate, they can only communicate through messages (sending data). Currently only by calling parScatterEqually or <code>parScatter</code>.
+Now you may print the piece or pieces that the node received. This is the last step of the example in this section. Overall, the code should now look like this:
+
+<source lang="java">
+print(“The greeting program.”);
+parInit();
+  myRank = parGetRank();
+  size = parGetSize();
+  print(“Hello to all "+size+" nodes. I am node number: ”+myRank);
+  cake = newArray(0);
+  if(myRan == 1){
+    print("I brought the cake.");
+    cake = newArray(1, 2, 3, 4);
+  }
+  receivedPieces = parScatterEqually(cake, 4, 1);
+  parBarrier();
+  for(i = 0; i < lengthOf(receivedPieces); i++){
+    print("I node number "+myRank+" received piece: "+receivedPieces[i]);
+  }
+  print(“Bye, from node number: ”+myRank);
+parFinilize();
+</source>
+
+Lastly, something important to remember is that nodes do not share memory. Each node is separate, they can only communicate through messages (sending data). Currently only by calling <code>parScatterEqually()</code> or <code>parScatter()</code>.
 
 === How to use the progress reporting functions (by example) ===
 The first step is to add all tasks by using the <code>parAddTasks()</code> function. Simply call this method after <code>parInit()</code> as many times as the tasks that you want to have including a unique description for each one of them. The description must be unique. The tasks are automatically assigned an auto-incremented id in the order they were added.
