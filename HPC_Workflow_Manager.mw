@@ -276,7 +276,7 @@ The example can be split into four(4) tasks:
 # Each node receives some pieces of the cake. (The node receives the elements of the array, node one also sends the pieces to all nodes including itself.)
 # Each node announces the pieces that they got. (Print the elements in the received array.)
 
-Take a look at the code featured at the end of this section which will be acplained in detail here.
+Take a look at the code featured at the end of this section which will be explained in detail here.
 
 Notice that task number three (3) is nested in an <code>if</code> statement. This is because we want only one node to create the cake (data). 
 
@@ -306,7 +306,7 @@ parInit();
 
   parReportProgress(introductionTask,0);
   print("Hello to all "+size+" nodes. I am node number: "+myRank);
-  parReportProgress(introductionTask,100);
+  parReportProgress(introductionTask, 100);
   
   cake = newArray(0);
   if(myRank == 1){
