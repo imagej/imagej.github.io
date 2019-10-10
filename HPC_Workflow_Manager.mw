@@ -267,6 +267,76 @@ Note that progress can be only a percentage between 0 and 100 and it cannot move
 
 Other information may be reported by calling the <code>parReportText()</code> function.
 
+==== Expanding on the greeting example ====
+Expanding on the previous example of the nodes greeting each other and sharing a cake we now add the necessary function calls to report the progress of each task.
+
+The example can be split into four(4) tasks:
+# A node introduces itself to all other nodes. (Gets the rank and size and prints them.)
+# Node number one (1) gets the cake. (Creates the array with the data.)
+# Each node receives some pieces of the cake. (The node receives the elements of the array, node one also sends the pieces to all nodes including itself.)
+# Each node announces the pieces that they got. (Print the elements in the received array.)
+
+Take a look at the code featured at the end of this section which will be acplained in detail here.
+
+Notice that task number three (3) is nested in an <code>if</code> statement. This is because we want only one node to create the cake (data). 
+
+In a real problem, the data could be a giant dataset that is available only on one computer and we want to send parts of it to the other nodes that will perform some computations using their part of the data.
+
+Be careful, since the task is added only on node one (1) the index of the tasks after it differs in the rest of the nodes.
+
+For example, the following two nodes will have different task numbers for the same tasks in the list presented earlier in this section: 
+* node zero (0) will have: list(1) -> id(0), list(3) -> id(1), list(4) -> id(2).
+* while node (1) will have: list(1) -> id(0), list(2) -> id(1), list(3) -> id(2), list(4) -> id(3).
+This can cause great difficulty, this is why it is suggested to always store the id returned when adding the task in a variable and use it instead.
+
+<source lang="java">
+print("The greeting program. Now with progress reporting!");
+parInit();
+  introductionTask = parAddTask("Introduction to other nodes.");
+  
+  myRank = parGetRank();
+  size = parGetSize();
+  
+  if(myRank == 1){
+	cakeTask = parAddTask("Get the cake.");
+  }
+  getPieceTask = parAddTask("Get the cake pieces.");
+  annoucementTask = parAddTask("Anounce the pieces you got.");
+  parReportTasks();
+
+  parReportProgress(introductionTask,0);
+  print("Hello to all "+size+" nodes. I am node number: "+myRank);
+  parReportProgress(introductionTask,100);
+  
+  cake = newArray(0);
+  if(myRank == 1){
+    parReportProgress(cakeTask, 0);
+    print("I brought the cake.");
+    cake = newArray(30);
+      for(i = 0; lengthOf(cake); i++){
+        cake[i] = i;
+        parReportProgress(cakeTask, i/30 * 100);
+      }
+      parReportProgress(cakeTask, 100);
+  }
+  
+  parReportProgress(getPieceTask, 0);
+  receivedPieces = parScatterEqually(cake, 4, 1);
+  parReportProgress(getPieceTask, 100);
+  
+  parBarrier();
+  
+  parReportProgress(annoucementTask, 0);
+  for(i = 0; i < lengthOf(receivedPieces); i++){
+    print("I node number "+myRank+" received piece: "+receivedPieces[i]);
+	parReportProgress(i/lengthOf(receivedPieces)*100);
+  }
+  parReportProgress(annoucementTask, 100);
+  
+  print("Bye, from node number: "+myRank);
+parFinilize();
+</source>
+
 === Available functions (list) ===
 Many of the functions have an MPI equivalent, this will also be listed in the table to aid people familiar with MPI. This is because the current implementation uses OpenMPI 4. Note however that this does not mean that this will be a wrapper for MPI for Fiji Macro and the underlying implementation may and probably will change.
 
