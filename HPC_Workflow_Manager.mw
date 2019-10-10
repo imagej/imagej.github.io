@@ -109,7 +109,7 @@ You should also be familiar with the graphical user interface of the HPC Workflo
 === How to use parallelization function (by example) ===
 Writing a small parallel script will make you familiar with the parallelization functionality offered to help you start using parallelism on Macro scripts.
 
-==== Simple Greeting Example ====
+==== Simple greeting example ====
 Let's write a simple “greeting” Macro script where each node will greet the rest with a print message and wait for the rest to greet it as well. Then it will announce its departure and end. No node should finish before all of them have introduced themselves. Let’s start:
 
 First, we can write a serial version:
