@@ -114,17 +114,17 @@ Let's write a simple “greeting” Macro script where each node will greet the 
 
 First, we can write a serial version:
 <source lang="java">
-print(“The greeting program.”);
-print(“Hello I am a single node.”);
-print(“Bye, from the only node.”);
+print("The greeting program.");
+print("Hello I am a single node.");
+print("Bye, from the only node.");
 </source>
 
 Now let’s parallelize this by adding a call to <code>parInit()</code> at the beginning in order to start the parallel execution of the program. We must also add a call to <code>parFinilize()</code> at the end of our program to stop the parallelization. The code should now look like this:
 <source lang="java">
-print(“The greeting program.”);
+print("The greeting program.");
 parInit();
-  print(“Hello I am a single node.”);
-  print(“Bye, from the only node.”);
+  print("Hello I am a single node.");
+  print("Bye, from the only node.");
 parFinilize();
 </source>
 
@@ -136,11 +136,11 @@ We should get the id of the node and print it instead as well as the total numbe
 
 To get the id of the node (that is its rank) we must call <code>parGetRank()</code>.
 <source lang="java">
-print(“The greeting program.”);
+print("The greeting program.");
 parInit();
   myRank = parGetRank();
-  print(“Hello I am node number: ”+myRank);
-  print(“Bye, from node number: ”+myRank);
+  print("Hello I am node number: "+myRank);
+  print("Bye, from node number: "+myRank);
 parFinilize();
 </source>
 
@@ -154,7 +154,7 @@ Add the following line after getting the rank to get the size:
 And modify the first print to read:
 
 <source lang="java">
-  print(“Hello to all “+size+” nodes. I am node number: ”+myRank);
+  print("Hello to all "+size+" nodes. I am node number: "+myRank);
 </source>
 
 Very well, our program is now parallelized. Unfortunately, it is incorrect.
@@ -176,9 +176,9 @@ To correct this we will put a barrier to the flow of the execution of the code.
 
 Do this by adding calling <code>parBarrier()</code> bellow the greeting and above the announcement of the departure of the node.
 <source lang="java">
-  print(“Hello I am node number: ”+myRank);
+  print("Hello I am node number: "+myRank);
   parBarrier();
-  print(“Bye, from node number: ”+myRank);
+  print("Bye, from node number: "+myRank);
 </source>
 
 The script will run correctly now, for example for three (3) nodes the following output may be printed:
@@ -197,7 +197,7 @@ Now let us imagine that node number one (1) and only node number one (1) brought
 
 <source lang="java">
  if(myRank == 1){
-   print(“I brought the cake.”);
+   print("I brought the cake.");
  }
 </source>
 
@@ -209,7 +209,7 @@ Great, now since node one brought the cake it would like to share it with the re
   cake = newArray(1, 2, 3, 4);
 </source>
 
-There are four pieces of cake. Add the above line inside the “if” statement’s body. Above the “if” statement add the following:
+There are four pieces of cake. Add the above line inside the <code>if</code> statement’s body. Above the <code>if</code> statement add the following:
 
 <source lang="java">
   cake = newArray(0);
@@ -231,11 +231,11 @@ All nodes including one (1) will receive parts of the cake. Since there are more
 Now you may print the piece or pieces that the node received. This is the last step of the example in this section. Overall, the code should now look like this:
 
 <source lang="java">
-print(“The greeting program.”);
+print("The greeting program.");
 parInit();
   myRank = parGetRank();
   size = parGetSize();
-  print(“Hello to all "+size+" nodes. I am node number: ”+myRank);
+  print("Hello to all "+size+" nodes. I am node number: "+myRank);
   cake = newArray(0);
   if(myRan == 1){
     print("I brought the cake.");
@@ -246,7 +246,7 @@ parInit();
   for(i = 0; i < lengthOf(receivedPieces); i++){
     print("I node number "+myRank+" received piece: "+receivedPieces[i]);
   }
-  print(“Bye, from node number: ”+myRank);
+  print("Bye, from node number: "+myRank);
 parFinilize();
 </source>
 
