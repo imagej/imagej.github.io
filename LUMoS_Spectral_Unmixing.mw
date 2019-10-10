@@ -1,3 +1,8 @@
 Learning Unsupervised Means of Spectra (LUMoS) is a blind spectral unmixing method that uses k-means clustering to separate different features of a fluorescence microscopy image into a multi-channel image in which each output channel corresponds to a single fluorophpore. 
 
 Additional information including a user guide and be found [https://www.urmc.rochester.edu/research/multiphoton/image-analysis/spectral-unmixing.aspx here].
+
+
+If you use this program in your work, please cite the pertinent [https://doi.org/10.1101/797993 paper]:
+
+McRae TD, Oleksyn D, Miller J, Gao Y-R. Robust blind spectral unmixing for fluorescence microscopy using unsupervised learning. bioRxiv. 2019; 797993. doi:10.1101/797993
