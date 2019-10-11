@@ -12,11 +12,40 @@
 [[Category:Color processing]]
 [[Category:Colocalization]]
 
-Learning Unsupervised Means of Spectra (LUMoS) is a blind spectral unmixing method that uses k-means clustering to separate different features of a fluorescence microscopy image into a multi-channel image in which each output channel corresponds to a single fluorophpore. 
+=Introduction=
 
-Additional information including a user guide and be found [https://www.urmc.rochester.edu/research/multiphoton/image-analysis/spectral-unmixing.aspx here].
+Learning Unsupervised Means of Spectra (LUMoS) is a blind spectral unmixing method that uses k-means clustering to separate different features of a fluorescence microscopy image into a multi-channel image in which each output channel corresponds to a single fluorophore. 
+
+=Spectral Overlap=
+
+Due to the overlapping emission spectra of fluorophores, fluorescence microscopy images often have bleed-through problems, leading to a false positive detection. This problem is almost unavoidable when the samples are labeled with three or more fluorophores and completely unavoidable when fluorophores outnumber detection channels.
+
+[[File:spectral overlap.png|center|1000px]]
+
+=''K''-means clustering=
+''K''-means is an unsupervised learning clustering technique. Given a set of input datapoints, ''k''-means clusters the points into ''k'' different groups based on their values. K-means defines clusters by iteratively calculating the centroid of each cluster and assigning datapoints to the nearest cluster centroid. This process is depicted below:
+
+[[File:k-means.png|center|600px]]
+
+=''K''-means for spectral unmixing=
+In the context of spectral unmixing, the inputs to ''k''-means are individual pixels. Each pixel is represented by a ''1 x n'' vector where ''n'' is the number of detection channels in the image. This vector is referred to as the "spectral signature" of the pixel. Pixels with similar spectral signatures are grouped into the same cluster. Each cluster is then represented as an inividual channel in the output image. The output channels correspond to unmixed fluorophores. This process will also separate background, autofluorescence and colocalization into distinct output channels. 
+
+[[File:spectral unmixing example.png|center|800px]]
+
+=Usage=
+
+A user guide for this plugin with step by step instructions can be found [[Media:Spectral Unmixing User Guide.pdf | here]].
+
+=See Also=
+The following are alternative spectral unmixing ImageJ plugins. These plugins both use linear algebra based approaches. Linear unmixing approaches are not applicable in cases where fluorophores outnumber detection channels. Additionally, they both require manual ROI selection or single-fluorophore references which can be laborious to acquire. Apart from these constraints, both of these plugins can be very useful tools in the right settings.  
+
+[https://imagej.nih.gov/ij/plugins/spectral-unmixing.html Spectral Unmixing Plugins] by Joachim Walter
+
+[https://imagej.nih.gov/ij/plugins/spectral-unmixing-plugin.html Spectral Unmixing Plugin] by Seth Gammon
 
 
-If you use this program in your work, please cite the pertinent [https://doi.org/10.1101/797993 paper]:
+=References=
+
+If you use this program to generate a publication, please cite the following  [https://doi.org/10.1101/797993 reference]:
 
 McRae TD, Oleksyn D, Miller J, Gao Y-R. Robust blind spectral unmixing for fluorescence microscopy using unsupervised learning. bioRxiv. 2019; 797993. doi:10.1101/797993
