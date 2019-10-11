@@ -1,3 +1,17 @@
+{{Infobox
+| software               = ImageJ/Fiji
+| name                   = LUMoS Spectral Unmixing
+| author                 = Tristan McRae
+| maintainer             = Tristan McRae
+| released               = June 2019
+| source                 = [https://github.com/tristan-mcrae-rochester/Multiphoton-Image-Analysis/blob/master/Spectral%20Unmixing/Code/ImageJ-FIJI/LUMoS_Spectral_Unmixing.java GitHub]
+| category               = [[:Category:Plugins|Plugins]], [[:Category:Color processing|Color Processing]], [[:Category:Colocalization|Colocalization]]
+}}
+
+[[Category:Plugins]]
+[[Category:Color processing]]
+[[Category:Colocalization]]
+
 Learning Unsupervised Means of Spectra (LUMoS) is a blind spectral unmixing method that uses k-means clustering to separate different features of a fluorescence microscopy image into a multi-channel image in which each output channel corresponds to a single fluorophpore. 
 
 Additional information including a user guide and be found [https://www.urmc.rochester.edu/research/multiphoton/image-analysis/spectral-unmixing.aspx here].
