@@ -10,7 +10,7 @@
 These tools have been developed to facilitate blind i.e., unbiased analysis of (image) data.
 
 == Installation ==
-To install on Fiji, check the update site called “'''Blind Analysis Tools'''”. To install on ImageJ, download the .jar file here, save it in the Plugins folder and restart ImageJ. “Blind Analysis Tools” will appear under the Plugins menu.
+To install on Fiji, check the update site called “'''Blind Analysis Tools'''”. To install on ImageJ 1.x, download the .jar file [https://github.com/ahtsaJ/Blind-Analysis-Tools/releases/tag/v1.0 here], save it in the Plugins folder and restart ImageJ. “Blind Analysis Tools” will appear under the Plugins menu.
 
 == File Name Encrypter ==
 This tool copies randomly selected (image) files to a new subfolder (output folder, name: “BlindRandomFiles” + timestamp) with encrypted names. A mapping file (name: “Mappings” + timestamp) is also saved, which maps encrypted names to original names. The tool first asks to choose a directory containing files and to select file extensions of interest. Only the files with the selected extensions are considered hereafter. The number of available files (''n'') is displayed at the top.
