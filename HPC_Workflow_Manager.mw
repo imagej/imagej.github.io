@@ -323,7 +323,7 @@ parInit();
     parReportProgress(cakeTask, 0);
     print("I brought the cake.");
     cake = newArray(30);
-      for(i = 0; lengthOf(cake); i++){
+      for(i = 0; i < lengthOf(cake); i++){
         cake[i] = i;
         parReportProgress(cakeTask, i/30 * 100);
       }
