@@ -339,7 +339,7 @@ parInit();
   parReportProgress(annoucementTask, 0);
   for(i = 0; i < lengthOf(receivedPieces); i++){
     print("I node number "+myRank+" received piece: "+receivedPieces[i]);
-	parReportProgress(i/lengthOf(receivedPieces)*100);
+	parReportProgress(annoucementTask, i/lengthOf(receivedPieces)*100);
   }
   parReportProgress(annoucementTask, 100);
   
