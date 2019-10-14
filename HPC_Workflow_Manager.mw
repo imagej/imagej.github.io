@@ -300,7 +300,6 @@ For example, the following two nodes will have different task numbers for the sa
 This can cause great difficulty, this is why it is suggested to always store the id returned when adding the task in a variable and use it instead.
 
 <source lang="java">
-print("The greeting program. Now with progress reporting!");
 parInit();
   introductionTask = parAddTask("Introduction to other nodes.");
   
@@ -308,7 +307,8 @@ parInit();
   size = parGetSize();
   
   if(myRank == 1){
-	cakeTask = parAddTask("Get the cake.");
+    print("The greeting program. Now with progress reporting!");
+    cakeTask = parAddTask("Get the cake.");
   }
   getPieceTask = parAddTask("Get the cake pieces.");
   annoucementTask = parAddTask("Anounce the pieces you got.");
