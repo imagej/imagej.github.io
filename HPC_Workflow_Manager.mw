@@ -127,14 +127,12 @@ print("Bye, from the only node.");
 
 Now let’s parallelize this by adding a call to <code>parInit()</code> at the beginning in order to start the parallel execution of the program. We must also add a call to <code>parFinalize()</code> at the end of our program to stop the parallelization. The code should now look like this:
 <source lang="java">
-print("The greeting program.");
 parInit();
+  print("The greeting program.");
   print("Hello I am a single node.");
   print("Bye, from the only node.");
 parFinalize();
 </source>
-
-Notice that we want the first print to be executed only once that is why it is called before calling <code>parInit()</code>.
 
 Very well, our program is now parallelized. However, the messages no longer make sense.
 
@@ -142,13 +140,17 @@ We should get the id of the node and print it instead as well as the total numbe
 
 To get the id of the node (that is its rank) we must call <code>parGetRank()</code>.
 <source lang="java">
-print("The greeting program.");
-parInit();
+parInit();  
   myRank = parGetRank();
+  if (myRank == 0){
+    print("The greeting program.");
+  }
   print("Hello I am node number: "+myRank);
   print("Bye, from node number: "+myRank);
 parFinalize();
 </source>
+
+Notice that we also nested the first <code>print()</code> in an <code>if</code> statement comparing the rank with the first one (0), this is done in order to print this message only once. You may choose any rank of the available nodes, it is not necessary to use the first one although it is the convention.
 
 To greet all of the nodes let’s add the total number of nodes used to run the script (size) as well by calling get size <code>parGetSize()</code>. 
 Add the following line after getting the rank to get the size:
@@ -237,9 +239,11 @@ All nodes including one (1) will receive parts of the cake. Since there are more
 Now you may print the piece or pieces that the node received. This is the last step of the example in this section. Overall, the code should now look like this:
 
 <source lang="java">
-print("The greeting program.");
 parInit();
   myRank = parGetRank();
+  if(myRank == 0){
+    print("The greeting program.");
+  }
   size = parGetSize();
   print("Hello to all "+size+" nodes. I am node number: "+myRank);
   cake = newArray(0);
