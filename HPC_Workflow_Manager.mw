@@ -42,6 +42,8 @@ When you are sure that the form is filled-in correctly press the “Create” bu
 === How to start a job ===
 If you have created a new job, the main window should look roughly like Figure 5.
 
+[[File:hpc-workflow-manager-created-job.png |300px|thumb|center| Figure 5: A new Macro job has been created.]]
+
 Here you can see the following columns:
 * “Job ID” - Job’s identification number;
 * “Status” – The job’s current status which can be:
