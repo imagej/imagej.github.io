@@ -68,6 +68,8 @@ Before you can start the job, you need to upload your script (“user.ijm”). T
 
 A timer will appear in the download column. When it has completed the uploading the cell that corresponds to the job should indicate that it is “Done” (Figure 6).
 
+[[File:hpc-workflow-manager-upload-job.png |300px|thumb|center| Figure 6: Uploading files (in this case just the user’s script) is done.]]
+
 Now that the script file is uploaded the job can be started. Right-click the row of the job and select “Start Job” from the context menu.
 
 To make the source code of the user cleaner and easier to understand the special functions that make parallelism available to the user are appended to the user script on upload and a new file is created called “mpitest.txt” which is the file that will be executed on the cluster.
