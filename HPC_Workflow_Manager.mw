@@ -125,13 +125,13 @@ print("Hello I am a single node.");
 print("Bye, from the only node.");
 </source>
 
-Now let’s parallelize this by adding a call to <code>parInit()</code> at the beginning in order to start the parallel execution of the program. We must also add a call to <code>parFinilize()</code> at the end of our program to stop the parallelization. The code should now look like this:
+Now let’s parallelize this by adding a call to <code>parInit()</code> at the beginning in order to start the parallel execution of the program. We must also add a call to <code>parFinalize()</code> at the end of our program to stop the parallelization. The code should now look like this:
 <source lang="java">
 print("The greeting program.");
 parInit();
   print("Hello I am a single node.");
   print("Bye, from the only node.");
-parFinilize();
+parFinalize();
 </source>
 
 Notice that we want the first print to be executed only once that is why it is called before calling <code>parInit()</code>.
@@ -147,7 +147,7 @@ parInit();
   myRank = parGetRank();
   print("Hello I am node number: "+myRank);
   print("Bye, from node number: "+myRank);
-parFinilize();
+parFinalize();
 </source>
 
 To greet all of the nodes let’s add the total number of nodes used to run the script (size) as well by calling get size <code>parGetSize()</code>. 
@@ -207,7 +207,7 @@ Now let us imagine that node number one (1) and only node number one (1) brought
  }
 </source>
 
-Add the above snippet anywhere in the parallel region (that is between <code>parInit()</code> and <code>parFinilize()</code>) and before calling <code> parBarrier()</code>.
+Add the above snippet anywhere in the parallel region (that is between <code>parInit()</code> and <code>parFinalize()</code>) and before calling <code> parBarrier()</code>.
 
 Great, now since node one brought the cake it would like to share it with the rest of the nodes. Let’s imagine that the cake is an array made out of numbers. Like the following one:
 
@@ -253,7 +253,7 @@ parInit();
     print("I node number "+myRank+" received piece: "+receivedPieces[i]);
   }
   print("Bye, from node number: "+myRank);
-parFinilize();
+parFinalize();
 </source>
 
 Lastly, something important to remember is that nodes do not share memory. Each node is separate, they can only communicate through messages (sending data). Currently only by calling <code>parScatterEqually()</code> or <code>parScatter()</code>.
@@ -340,7 +340,7 @@ parInit();
   parReportProgress(annoucementTask, 100);
   
   print("Bye, from node number: "+myRank);
-parFinilize();
+parFinalize();
 </source>
 
 === Available functions (list) ===
