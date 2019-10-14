@@ -83,6 +83,8 @@ There are two ways to inspect the progress of a job.
 
 The first one is by looking at the “Status” of a job. This way you can see whether a job is running on the HPC Cluster or not. In the case of Figure 7, the job is “Queued”.
 
+[[File:hpc-workflow-manager-queued-job.png |300px|thumb|center| Figure 7: Job is queued.]]
+
 However, this is a very coarse-grained way to see the progress of the job and when it starts running it does not provide any useful information until it has ended (“Finished”, “Failed” etc.).
 
 The second way is to open the “Job dashboard” for the desired job by either double-clicking the job’s row or right-click and select the “Job dashboard” context menu item. Note that the job must be in the state “Running” for this functionality to work, you may open the window earlier and it will start displaying the progress when the state changes automatically.
