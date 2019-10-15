@@ -60,8 +60,6 @@ If you use eclipse you can import our code formatter `doc/eclipse-code-formatter
 
 == GPU support ==
 
-For GPU support we load the TensorFlow JNI with GPU support manually when a command is initialized. This means that the GPU version of the TensorFLow JNI must be accessible in the java library path (For example `Fiji.app/lib/linux64` in a Fiji installation).
-
 See the according [https://github.com/CSBDeep/CSBDeep_website/wiki/CSBDeep-in-Fiji-–-Installation#gpu-support CSBDeep Wiki page] for a detailed installation guide.
 
 === Muliple GPUs ===
