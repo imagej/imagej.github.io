@@ -1,5 +1,16 @@
 Fluorescence lifetime analysis in ImageJ.
 
-Documentation coming soon. For now, see the source code at:
+The FLIMJ plugin for ImageJ provides the ability to analyze FLIM data within ImageJ, using the [https://flimlib.github.io/ FLIMLib] library. The plugin can be installed into the [[Fiji]] distribution of ImageJ simply by enabling the FLIMJ [[update site]]. Features include:
+
+* Fit individual pixels, entire images per-pixel, or do global analysis on entire images, using FLIMLib's rapid lifetime determination (RLD), Levenberg-Marquardt (LMA) or global analysis (Global) fitting algorithms
+* Single, double and triple exponential fits
+* Gaussian, Poisson and Maximum Likelihood Estimation noise models
+* Produce one or several fitted images depending which parameters (A, τ, Z, χ2) are chosen for visualization
+* Full control over the start and end fit cutoffs known as "cursors"
+* Binning options for various kernel sizes to reduce noise and boost intensity when fitting per-pixel
+* Support for so-called "excitation" or "prompt" files containing a recorded system response function to be convolved with the exponential fit
+* Batch processing support for analyzing many lifetime images as part of a [[scripting]] workflow
+
+More documentation coming soon. For now, see the source code at:
 
 {{BigLink | url=https://github.com/slim-curve/flimj-ops}}
