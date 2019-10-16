@@ -1,5 +1,3 @@
-Fluorescence lifetime analysis in ImageJ.
-
 The FLIMJ plugin for ImageJ provides the ability to analyze FLIM data within ImageJ, using the [https://flimlib.github.io/ FLIMLib] library. The plugin can be installed into the [[Fiji]] distribution of ImageJ simply by enabling the FLIMJ [[update site]]. Features include:
 
 * Fit individual pixels, entire images per-pixel, or do global analysis on entire images, using FLIMLib's rapid lifetime determination (RLD), Levenberg-Marquardt (LMA) or global analysis (Global) fitting algorithms
