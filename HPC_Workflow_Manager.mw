@@ -95,11 +95,11 @@ To view the progress, click on the “Macro Progress” if it is not already sel
 
 === Job dashboard ===
 In the “Job dashboard” there are the following five tabs:
-* “Macro Progress” – this tab is described in the previous section Inspecting progress;
-* “Error output” - the error output and warnings that are redirected live from the HPC Cluster;
-* “Other output”- the live redirected standard output from the cluster in the tab;
-* “Job directories” – contains a listing of the job directories (Input, Output and Working); and
-* “Data upload” – contains a listing of the files that were uploaded;
+* “Macro Progress” – this tab is described in the previous section Inspecting progress (click [https://imagej.net/File:Hpc-workflow-manager-macro-progress.png here ] );
+* “Error output” - the error output and warnings that are redirected live from the HPC Cluster (click [https://imagej.net/File:Hpc-workflow-manager-error-output.png here ] );
+* “Other output”- the live redirected standard output from the cluster in the tab (click [https://imagej.net/File:Hpc-workflow-manager-other-output.png here ] );
+* “Job directories” – contains a listing of the job directories (Input, Output and Working) (click [https://imagej.net/File:Hpc-workflow-manager-job-directories.png here ] ); and
+* “Data upload” – contains a listing of the files that were uploaded (click [https://imagej.net/File:Hpc-workflow-manager-data-upload.png here ] );
 
 === How to download the results ===
 Once the job has finished you can right-click and select the item “Download result” which will now have become available.
