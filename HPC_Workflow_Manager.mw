@@ -157,7 +157,9 @@ parInit();
 parFinalize();
 </source>
 
-Notice that we also nested the first <code>print()</code> in an <code>if</code> statement comparing the rank with the first one (0), this is done in order to print this message only once. You may choose any rank of the available nodes, it is not necessary to use the first one although it is the convention.
+Notice that we also nested the first <code>print()</code> in an <code>if</code> statement comparing the rank with the first one (0), this is done in order to print this message only once. 
+
+You may choose any rank of the available nodes, it is not necessary to use the first one although it is the convention. You may run the script with a different amount of nodes in the future and the only rank that is guaranteed to exist is zero (0), this is because there will always be at least one node executing the script and it will have rank zero (0) assigned to it. Thus, the code surrounded in the <code>if</code> statement with rank zero will always be executed and executed by only one node.
 
 To greet all of the nodes let’s add the total number of nodes used to run the script (size) as well by calling get size <code>parGetSize()</code>. 
 Add the following line after getting the rank to get the size:
