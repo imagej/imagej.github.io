@@ -1,9 +1,16 @@
 
 == General information ==
+HPC Workflow Manager is a Fiji plugin, it enables users to parallelize Macro scripts, define tasks, report the progress of the tasks, upload data to the remote cluster, monitor computation progress, and examine and download the results via their local Fiji installation.
+
+HPC Workflow Manager is developed at IT4Innovations, Ostrava, Czech Republic.
+
+=== Workflow types ===
 The HPC Workflow Manager Client supports two workflow types:
 * SPIM; and
 * Macro.
 This guide will only explain how to use the newly added Macro workflow type.
+
+If you are interested in the SPIM workflow type visit [https://imagej.net/SPIM_Workflow_Manager_For_HPC this] page.
 
 == How to use ==
 === How to start the plugin ===
