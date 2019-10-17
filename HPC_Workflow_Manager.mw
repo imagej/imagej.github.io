@@ -299,12 +299,12 @@ Notice that task number three (3) is nested in an <code>if</code> statement. Thi
 
 In a real problem, the data could be a giant dataset that is available only on one computer and we want to send parts of it to the other nodes that will perform some computations using their part of the data.
 
-Be careful, since the task is added only on node one (1) the index of the tasks after it differs in the rest of the nodes.
+Be careful, since the task is added only on node one (1) the indices of the tasks after it will be different in the rest of the nodes by one.
 
 For example, the following two nodes will have different task numbers for the same tasks in the list presented earlier in this section: 
 * node zero (0) will have: list(1) -> id(0), list(3) -> id(1), list(4) -> id(2).
 * while node (1) will have: list(1) -> id(0), list(2) -> id(1), list(3) -> id(2), list(4) -> id(3).
-This can cause great difficulty, this is why it is suggested to always store the id returned when adding the task in a variable and use it instead.
+This can cause great difficulty, this is why it is suggested to always store the task id returned when adding the task in a variable and use it instead.
 
 <source lang="java">
 parInit();
@@ -353,6 +353,8 @@ parInit();
   print("Bye, from node number: "+myRank);
 parFinalize();
 </source>
+
+[[File:hpc-workflow-manager-progress-no-task.png |300px|thumb|center| Figure 9: The job has finished and all the progress indicators are present. Note that the task "Get the cake" has a progress indicator only on node one (1) as expected. This is because this task was added in an <code>if</code> statement checking that the rank is one.]]
 
 === Available functions (list) ===
 Many of the functions have an MPI equivalent, this will also be listed in the table to aid people familiar with MPI. This is because the current implementation uses OpenMPI 4. Note however that this does not mean that this will be a wrapper for MPI for Fiji Macro and the underlying implementation may and probably will change.
