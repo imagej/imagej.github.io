@@ -245,10 +245,21 @@ Export the warped moving image by clicking ''File {{arrow}} > Export as ImagePlu
 
 [[Image:Bigwarp_export.png]]
 
+The default parameters will result in the exported image having the same dimensions as the target image.  ''Note: Take care when exporting very large data sets as they can cause out-of-memory exceptions.''
+
+* Resolution
+** Target: ''The output will have the same resolution as the target image''
+** Moving: ''The output will have the same resolution as the moving image''
+** Specified: ''The output will have the resolution given in the fields below (in the same units as the moving and target images).''
+
+* Field of view
+** Target: ''The output will have the same field of view as the target image''
+** Moving: ''The output field of view will be the smallest bounding box that contains the warped moving images (approximated)''
+** Specified (pixel): '' The output field of view will be that given by the Offset and Field of View parameter fields where both are in units of pixels''** ** Specified (physical): '' The output field of view will be that given by the Offset and Field of View parameter fields where both are in the physical units of the moving and target images''
+
+
 The warped moving image can be exported as an in-memory or [http://imagej.net/docs/guide/146-8.html virtual] ImagePlus.  A virtual ImagePlus is generally faster to generate but slower to browse, whereas an in-memory ImagePlus will be slower to generate but faster to browse.
 
-The exported image will have the same dimensions as the target image.
-''Note: Take care when exporting very large data sets as they can cause out-of-memory exceptions.''
 
 [[Image:BigwarpLandmarkCenteredExport.png|600px]]
 
