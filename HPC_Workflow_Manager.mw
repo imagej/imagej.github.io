@@ -1,8 +1,19 @@
 
 == General information ==
+=== What is HPC Workflow Manager ===
 HPC Workflow Manager is a Fiji plugin, it enables users to parallelize Macro scripts, define tasks, report the progress of the tasks, upload data to the remote cluster, monitor computation progress, and examine and download the results via their local Fiji installation.
 
 HPC Workflow Manager is developed at IT4Innovations, Ostrava, Czech Republic.
+
+=== Why use HPC Workflow Manager ===
+''"Today, parallel processing solves some of our biggest problems in much the same way that settlers of the Old West solved their biggest problems using parallel oxen. If they were using an ox to move a tree and the ox was not big enough or strong enough, they certainly didn’t try to grow a bigger ox—they used two oxen. If our computer isn’t fast enough or powerful enough, instead of trying to develop a faster, more powerful computer, why not simply use multiple computers?"''
+-Essentials of Computer Organization and Architecture, 5th Edition by Null
+
+The end of major serial execution performance gains due to limitations in Moore's law means that it is no longer possible to solve problems with big datasets and/or computational requirements just by getting a newer processor and hopping that the existing serial programs will perform better. Instead, more processors in parallel must be used. Personal computers have been moving in this direction for many years by adding multiple cores, accelerating performance through the use of GPUs, bringing memory closer to the CPU, etc. Still, there are massive datasets that require even more performance. Such performance can only be found today in supercomputers.
+
+Life scientists are one category of users that can truly benefit from such a stratospheric amount of performance.
+
+Access to supercomputers can often be difficult to get. HPC Workflow Manager aims to reduce the difficulty of obtaining access for the individual user and provide an integrated to Fiji via plugin way which is easy to use through its graphical user interface method for users to add parallelization support to existing Macro scripts.
 
 === Workflow types ===
 The HPC Workflow Manager Client supports two workflow types:
