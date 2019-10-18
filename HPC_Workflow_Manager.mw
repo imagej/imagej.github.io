@@ -81,7 +81,7 @@ Now that the script file is uploaded the job can be started. Right-click the row
 
 To make the source code of the user cleaner and easier to understand the special functions that make parallelism available to the user are appended to the user script on upload and a new file is created called “mpitest.txt” which is the file that will be executed on the cluster.
 
-To inspect the submitted file (for example for debugging) you can right click the job and select “Open Macro in editor” where you can see the contents of the user script along with the appended function definitions that provide parallelism.
+To inspect the submitted file (for example for debugging) you can right-click the job and select “Open Macro in editor” where you can see the contents of the user script along with the appended function definitions that provide parallelism.
 
 Finally, to start the job, right-click on the job and select the “Start job” item from the context menu.
 
