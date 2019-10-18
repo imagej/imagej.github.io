@@ -11,4 +11,8 @@ The FLIMJ plugin for ImageJ provides the ability to analyze FLIM data within Ima
 
 More documentation coming soon. For now, see the source code at:
 
-{{BigLink | url=https://github.com/slim-curve/flimj-ops}}
+{{BigLink | url=https://github.com/flimlib/flimj-ui}}
+
+And:
+
+{{BigLink | url=https://github.com/flimlib/flimj-ops}}
