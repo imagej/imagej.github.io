@@ -43,7 +43,7 @@ To facilitate access to HPC from the Fiji environment, we utilize the in-house H
 
 We developed a Fiji plugin underlain by HEAppE, which enables users to steer workflows running on a remote HPC resource. As a representative workflow we use a ''Snakemake'' based SPIM data processing pipeline operating on large image datasets. The ''Snakemake'' workflow engine resolves dependencies between subsequent steps and executes in parallel any tasks appearing to be independent, such as processing of individual time points of a time-lapse acquisition.
 
-= Instalation =
+= Installation =
 After you install and launch [https://imagej.net/Fiji/Downloads Fiji], go to {{bc | Help | Update... | Manage update sites}}, tick ''P2E-IT4Innovations'' and close the window. Then click ''Apply changes'' and restart Fiji.
 
 = Usage =
