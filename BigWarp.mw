@@ -241,14 +241,17 @@ Landmarks can be exported and imported from plain text files using the drop down
 
 === Export warped images ===
 
+Export the warped moving image by clicking ''File {{arrow}} > Export as ImagePlus'' or using the  {{key press|Ctrl}}+{{key press|E}} keyboard shortcut.
+
 [[Image:Bigwarp_export.png]]
 
-The warped moving image can be exported as an in-memory or [http://imagej.net/docs/guide/146-8.html virtual] ImagePlus.
-A virtual ImagePlus is generally faster to generate but slower to browse,
-whereas an in-memory ImagePlus will be slower to generate but faster to browse.
+The warped moving image can be exported as an in-memory or [http://imagej.net/docs/guide/146-8.html virtual] ImagePlus.  A virtual ImagePlus is generally faster to generate but slower to browse, whereas an in-memory ImagePlus will be slower to generate but faster to browse.
 
 The exported image will have the same dimensions as the target image.
 ''Note: Take care when exporting very large data sets as they can cause out-of-memory exceptions.''
+
+[[Image:BigwarpLandmarkCenteredExport.png|600px]]
+
 
 === Apply transforms ===
 
