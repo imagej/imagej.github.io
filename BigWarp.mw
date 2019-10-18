@@ -235,9 +235,11 @@ For example, {{key press|Left}} rotates by
 10°, and {{key press|Ctrl|Left}} rotates by
 0.1°.
 
-=== Import and Export ===
+=== Save and load landmarks ===
 
 Landmarks can be exported and imported from plain text files using the drop down menu in the landmark table panel ( ''File {{arrow}} Export (Import) landmarks.'' )
+
+=== Export warped images ===
 
 [[Image:Bigwarp_export.png]]
 
