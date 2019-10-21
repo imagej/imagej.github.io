@@ -1,0 +1,118 @@
+(Return to the main [[3D Viewer]] page)
+
+
+== 1. Basic Usage ==
+
+=== How to display a stack ===
+
+After you have started the 3D viewer, click on '->File->Add content'. A
+dialog window opens, asking for some information:
+
+* '''Image:''' The image which should be displayed in the viewer. The user can select from a list of all open images.
+* '''Name:''' A name for the 3D object. The default is the image title.
+* '''Display as:''' Stacks can be displayed as volume renderings, orthoslices, surfaces or surface plots.
+* '''Color:''' The color of the 3D object.
+* '''Threshold:''' For surfaces, this is the isovalue of the surface. For all other display modes, this value is the lower threshold of displayed values.
+* '''Resampling factor:''' Large images require downsampling before displaying, to be rendered interactively. A value of 2 means here that the image is downsampled by a factor of 2 in x-, y- and z-direction.
+* '''Channels:''' If displaying color images, this specifies the color channels which are to be displayed.
+
+After clicking OK, the 3D object appears in the viewer window.
+
+
+
+=== How to interact with the viewer (rotate, shift, zoom) ===
+
+The user can rotate, translate and zoom in the 3D space: Two sorts of trans-
+formations are distinguished:
+
+==== 1. Transformation of the view: ====
+
+===== Rotation: =====
+Select the 'Hand' tool in ImageJ's tool bar. If no 3D object is selected,
+dragging with the left mouse button rotates the view around the universe
+center.
+
+===== Translation: =====
+Dragging while pressing the 'Shift' key shifts the view.
+
+===== Zooming: =====
+Zooming is done by selecting the 'Glas' tool in ImageJ's tool bar and drag
+with the left mouse button. On many platforms, it is alternatively possible to
+scroll (while the 'Hand' tool is selected) for zooming.
+
+==== 2. Transformation of objects: ====
+
+Individual objects can be transformed with the same key/mouse combinations.
+To transform a specific object, that object needs to be selected. An object
+is selected by a single left mouse click. Selection is indicated by a red
+bounding box.
+
+
+
+=== How to change the color, transparency... of a 3D object ===
+
+Color, transparency, threshold and displayed channels of color images are
+so-called attributes of 3D objects. These attributes have the following
+meaning:
+* '''Color:''' The color of the 3D object. If 'None' is selected, the color is taken from the stack image.
+* '''Transparency:''' The transparency of the 3D object: A value of 0 means fully transparent, a value of 1 means fully opaque.
+* '''Threshold:''' In case of surfaces, the threshold specifies the isovalue of the surface. Otherwise, it specifies the lower threshold of displayed pixels.
+* '''Channels:''' In color images, the channels attribute specifies the channels to be displayed. In greyscale images, this attribute has no effect.
+
+The attributes can be changed by
+
+# Select the corresponding object by clicking on it
+# Click on -> Edit -> Attributes and select the attribute you want to
+   change.
+
+
+
+=== How to make animations and movie recordings ===
+
+To animate the view, click on ->View->Start animation. The view begins
+immediately to rotate around the y-axis. If you now want to record such an
+animation, click on ->View->Start recording. The animation is now recorded
+for one full 360° rotation. The result is displayed in a stack.
+
+If you want to include the recording in a presentation, save it via ImageJ's
+Save as AVI function. You can incorporate the resulting movie file in powerpoint
+presentations.
+
+To stop an animation, click on ->View->Stop animation.
+
+
+
+=== How to reset the view ===
+You can reset the 3D universe to its initial view by clicking on
+->View->Reset View. This resets the view.
+
+Note however, that this does not change the transformation of individual
+3D objects. To reset them, too, select each object and click on
+->Transformation->Reset transformation.
+
+
+
+=== How to hide the coordinate system ===
+There are two types of coordinate systems: One global coordinate system, which
+indicates the origin of the universe, and one local coordinate system for
+each object.
+
+For hiding the global coordinate system, have a look at "How to general view settings"
+
+For hiding the local coordinate system, select the object and click on
+->Edit->Hide/Show and disable 'Show coordinate system'.
+
+See "How to general view settings" for how you can avoid to show local coordinate systems in general.
+
+
+
+=== How to change the background color ===
+To change the background color of the 3D world, click on
+->View->Change background color. A dialog opens, which lets you interactively
+adjust the background color.
+
+To use the current background color by default, see "How to change general view settings".
+
+
+
+== 2. Surfaces ==
