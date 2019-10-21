@@ -414,4 +414,12 @@ Many of the functions have an MPI equivalent, this will also be listed in the ta
 |}
 
 == Installation ==
-HPC Workflow client will be available to install through its update site.
+HPC Workflow Manager client is available to install through its update site.
+
+=== Instructions ===
+* [https://imagej.net/Fiji/Downloads Download] install and launch Fiji;
+* go to {{bc | Help | Update... | Manage update sites}};
+* tick "P2E-IT4Innovations";
+* close the window;
+* click "Apply changes"; and
+* restart Fiji.
