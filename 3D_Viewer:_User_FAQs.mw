@@ -175,4 +175,4 @@ The 3D viewer offers the possibility to edit volumes. To crop volumes,
 # Select an object by clicking on it.
 # Use one of ImageJ's selection tools to draw a region of interest (ROI).
 # Click on ->Edit->Fill selection to erase the volume which is covered
-   by the ROI. (Erasing means actually filling it with black).
+by the ROI. (Erasing means actually filling it with black).
