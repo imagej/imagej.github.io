@@ -116,3 +116,37 @@ To use the current background color by default, see "How to change general view 
 
 
 == 2. Surfaces ==
+
+=== What is the idea of a surface ===
+Intuitively, the surface of an object is understood as the border between
+the object and the background. One common way to find a surface is to choose
+a threshold which divides object and background: Values above the threshold
+are assumed to belong to the object, values below are assumed to belong to
+the background. To construct a surface, an algorithm like the marching cubes
+algorithm can be utilized.
+
+
+
+=== How to change the color, transparency... of a surface ===
+See "How to change the color, transparency... of a 3D object"
+
+
+
+=== How to change the isovalue of a surface ===
+See "How to change the color, transparency... of a 3D object"
+
+
+
+=== How to smooth a surface ===
+In order to smooth the surface of a 3D object, select the object and click on
+->Edit->Smooth surface.
+
+You can also smooth all displayed surfaces by clicking on
+->Edit->Smooth all surfaces
+
+
+
+=== How to export surfaces ===
+The displayed surfaces can be exported to files in different surface file
+formats. Currently supported is Wavefront (.obj) and Drawing Interchange Format
+(.dxf).
