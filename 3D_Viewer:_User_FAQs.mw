@@ -150,3 +150,29 @@ You can also smooth all displayed surfaces by clicking on
 The displayed surfaces can be exported to files in different surface file
 formats. Currently supported is Wavefront (.obj) and Drawing Interchange Format
 (.dxf).
+
+
+
+
+
+== 3. Volumes ==
+
+=== What are volumes/volume renderings? ===
+A volume rendering generates the 3D effect by putting the slices of a stack
+one behind another, separated by a certain distance. To each pixel in each
+slice a transparency value is assigned, which depends on the pixel's brightness.
+
+
+
+=== How to change the color, transparency, ... of a volume ===
+See "How to change the color, transparency... of a 3D object"
+
+
+
+=== How to edit volumes? ===
+The 3D viewer offers the possibility to edit volumes. To crop volumes,
+
+# Select an object by clicking on it.
+# Use one of ImageJ's selection tools to draw a region of interest (ROI).
+# Click on ->Edit->Fill selection to erase the volume which is covered
+   by the ROI. (Erasing means actually filling it with black).
