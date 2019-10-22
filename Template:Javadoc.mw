@@ -9,9 +9,9 @@ See also the {{Javadoc | project = ImageJ1 | package = ij/process | class = Imag
 </pre>
 See also the {{Javadoc | project = ImageJ1 | package = ij/process | class = ImageProcessor}} class.
 <pre>
-See also the {{Javadoc | package = org/scijava | class = Context}} class.
+See also the {{Javadoc | package = net/imagej | class = ImageJ}} class.
 </pre>
-See also the {{Javadoc | package = org/scijava | class = Context}} class.
+See also the {{Javadoc | package = net/imagej | class = ImageJ}} class.
 <pre>
 See also the {{Javadoc | package = org/scijava/module | class = ModuleService | anchor = getModules()}} method.
 </pre>
