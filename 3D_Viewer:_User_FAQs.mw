@@ -122,7 +122,7 @@ The displayed surfaces can be exported to files in different surface file format
 
 == Volumes ==
 
-=== What are volumes/volume renderings? ===
+=== What are volumes/volume renderings ===
 A volume rendering generates the 3D effect by putting the slices of a stack one behind another, separated by a certain distance. To each pixel in each slice a transparency value is assigned, which depends on the pixel's brightness. [[#top|Top]]
 
 
@@ -132,7 +132,7 @@ See [[#How to change the color, transparency... of a 3D object]]
 
 
 
-=== How to edit volumes? ===
+=== How to edit volumes ===
 The 3D viewer offers the possibility to edit volumes. To crop volumes,
 # Select an object by clicking on it.
 # Use one of ImageJ's selection tools to draw a region of interest (ROI).
@@ -146,7 +146,7 @@ The 3D viewer offers the possibility to edit volumes. To crop volumes,
 
 == Orthoslices: ==
 
-=== What are orthoslices? ===
+=== What are orthoslices ===
 Orthoslices are three orthogonal slices through the volume. The three slices show one xy-plane, one xz-plane and one yz-plane. [[#top|Top]]
 
 
@@ -174,19 +174,19 @@ See [[#How to change the displayed slice]]
 
 == 2D Surface Plots ==
 
-=== What are surface plots? ===
+=== What are surface plots ===
 A surface plot displays a 2D slice as a 3D plot: The x- and y-coordinate correspond to the x- and y-coordinate in the 2D slice, the z-coordinate is the pixel value at (x, y).
 
 A 3D surface plot always shows one slice a time. When a 3D surface plot is opened in the viewer, the currently selected slice is displayed. When changing the slice of the original image stack, the view is automatically updated. [[#top|Top]]
 
 
 
-=== How to change the color, transparency, ... of surface plots? ===
+=== How to change the color, transparency, ... of surface plots ===
 See [[#How to change the color, transparency... of a 3D object]]
 
 
 
-=== How to interactively change the displayed slice? ===
+=== How to interactively change the displayed slice ===
 A 3D surface plot always shows one slice a time. When a 3D surface plot is opened in the viewer, the currently selected slice is displayed. When changing the slice of the original image stack, the view is automatically updated. [[#top|Top]]
 
 
@@ -318,14 +318,14 @@ Click 'Cancel' if you don't want to change the transformation. [[#top|Top]]
 
 
 
-=== Can I save/reload the current transformation of a 3D object? ===
+=== Can I save/reload the current transformation of a 3D object ===
 To save the current transformation of a 3D object, select that object and click on ->Transformation->Save transform. You can specify a file to which the current transformation is stored.
 
 To load a transformation, click on ->Transformation->Set transform. In the opening window, you can choose a previously stored transformation file. [[#top|Top]]
 
 
 
-=== How to save a transformed object? ===
+=== How to save a transformed object ===
 The 3D viewer allows to load an image stack and display it as a 3D object. This object can be transformed. See e.g.
 
 * [[#How to interact with the viewer]]
@@ -354,7 +354,7 @@ In both cases, a window opens which shows a list of named points for the selecte
 
 
 
-=== How to add/remove points? ===
+=== How to add/remove points ===
 To add  points, do the following:
 * Select a 3D object by clicking on it
 * Select ImageJ's 'POINT' tool
@@ -399,12 +399,12 @@ To hide the points, click on ->Edit->Point List->Hide Point list. The point list
 
 == Registration ==
 
-=== Which kinds of registration is supported? ===
+=== Which kinds of registration is supported ===
 At the moment, only rigid landmark-based registration is supported. [[#top|Top]]
 
 
 
-=== How can two 3D objects be registered? ===
+=== How can two 3D objects be registered ===
 To initiate registration, load at least two objects into the viewer and click on ->Edit->Register
 
 You are now guided step by step through landmark selection of model and reference image and through the registration process.
@@ -413,7 +413,7 @@ Please note that the images are locked after registration, to prevent unintended
 
 
 
-=== How can the results be saved? ===
+=== How can the results be saved ===
 See [[#How to save a transformed object]]
 
 [[#top|Top]]
