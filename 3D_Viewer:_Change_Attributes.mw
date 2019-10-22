@@ -19,7 +19,7 @@ Changing attributes like color and transparency of a Content is very easy. First
 	univ.show();
 </source>
 
-The stack is than displayed in the universe as an isosurface. Calling the addXXX() method returns a reference to the created Content:
+The stack is than displayed in the universe as an isosurface. Calling the <code>addXXX()</code> method returns a reference to the created Content:
 <pre class="brush: java; first-line: 31; font-size: '100%';">
 	// Add the image as an isosurface
 	Content c = univ.addMesh(imp);
@@ -44,7 +44,7 @@ Each Content has the following list of attributes. Not all the attributes have a
 * '''color:''' This is the color of Content. Null means, that the default color is used. The default color of a volume rendering and of orthoslices is the color taken from the image, that of an isosurface is the color of the isovalue. The default color of a surface plot is a gradient from red (intensity 0) to blue (intensity 255).
 * '''transparency:''' The transparency of a Content.
 * '''threshold:''' For isosurfaces, this is the iso-value (threshold) of the surface, which is assumed to be the value which separates the object from its background. For volumes and orthoslices, the threshold defines the lowest pixel intensity which is displayed. However, this may change in the future, so that is has no effect on orthoslices and volumes. For surface plots, the threshold has no meaning.
-* '''channels: The color channels to be displayed. If displaying a greyscale image, the this attribute has no meaning. If, however, displaying color images, this attribute specifies which of the red, blue and/or green channel is displayed.
+* '''channels:''' The color channels to be displayed. If displaying a greyscale image, the this attribute has no meaning. If, however, displaying color images, this attribute specifies which of the red, blue and/or green channel is displayed.
 * '''shaded:''' This attribute has no effect for volume renderings and orthoslices, but for all surface types it defines whether the surfaces are shaded or shown in wireframe.
 
 
