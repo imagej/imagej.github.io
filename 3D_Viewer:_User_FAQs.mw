@@ -32,18 +32,9 @@ formations are distinguished:
 
 ==== 1. Transformation of the view: ====
 
-===== Rotation: =====
-Select the 'Hand' tool in ImageJ's tool bar. If no 3D object is selected,
-dragging with the left mouse button rotates the view around the universe
-center.
-
-===== Translation: =====
-Dragging while pressing the 'Shift' key shifts the view.
-
-===== Zooming: =====
-Zooming is done by selecting the 'Glas' tool in ImageJ's tool bar and drag
-with the left mouse button. On many platforms, it is alternatively possible to
-scroll (while the 'Hand' tool is selected) for zooming.
+;Rotation: Select the 'Hand' tool in ImageJ's tool bar. If no 3D object is selected, dragging with the left mouse button rotates the view around the universe center.
+;Translation: Dragging while pressing the 'Shift' key shifts the view.
+;Zooming: Zooming is done by selecting the 'Glas' tool in ImageJ's tool bar and drag with the left mouse button. On many platforms, it is alternatively possible to scroll (while the 'Hand' tool is selected) for zooming.
 
 ==== 2. Transformation of objects: ====
 
@@ -306,3 +297,86 @@ settings, startup options and options which are applied immediately.
 #** '''Center:''' The center of the virtual world. The center is automatically calculated from the displayed 3D objects.
 
 [[#top|Top]]
+
+
+
+
+
+== Transformations ==
+
+=== The concept of transformations ===
+There are two types of transformations in the 3D viewer: Global transformations and local transformations. Global transformations refer to transformations of the whole view, no individual objects are transformed, but the whole 3D world together. Local transformations refer to transformations of individual objects.
+
+Transformations can be made interactively with the mouse. See [[#How to interact with the viewer]] for more information.
+
+Alternatively, transformations of individual objects can be altered more exactly, by specifying transformations matrices. Transformations can be set for 3D objects, or applied (concatenated with the current transformation) to 3D objects. Transformations can be saved and reloaded. And finally, it is possible to export a transformed object to a stack image. [[#top|Top]]
+
+
+
+=== How to apply a specific transformation to a 3D object ===
+Applying a transformation to a 3D object means to concatenate the specified transformation with the current transformation of the object.
+
+To apply a transformation, select an object and click on ->Transformation->Apply transform. A window opens, which asks you for a transformation matrix. The matrix is supposed to be given as a (3x4) matrix, row by row. All the individual values should be separated by a space character.
+
+Example:
+         |  a11 a12 a13 a14 |
+         |  a21 a22 a23 a24 |
+         |  a31 a32 a33 a34 |
+         |    0   0   0   1 |
+
+
+should be specified as "a11 a12 a13 a14 a21 a22 a23 a24 a31 a32 a33 a34" (without the '"').
+
+The window also allows you to load a transformation from a file. [[#top|Top]]
+
+
+
+=== How to set a specific transformation for a 3D object ===
+Setting a transformation of a 3D object does not concatenate transformations. See [[#How to apply a specific transformation to a 3D object]] to concatenate transformations.
+
+To set a transformation, select an object and click on ->Transformation->Set transform. A window opens, which asks you for a transformation matrix. The matrix is supposed to be given as a (3x4) matrix, row by row. All the individual values should be separated by a space character.
+
+Example:
+         |  a11 a12 a13 a14 |
+         |  a21 a22 a23 a24 |
+         |  a31 a32 a33 a34 |
+         |    0   0   0   1 |
+
+
+should be specified as "a11 a12 a13 a14 a21 a22 a23 a24 a31 a32 a33 a34" (without the '"').
+
+The window also allows you to load a transformation from a file. [[#top|Top]]
+
+
+
+=== How can I see the current transformation of a 3D object ===
+To see the current transformation matrix of a 3D object, select that object and click for example on -> Transformation -> Set Transform. The window which opens shows the current transformation of the object. A (3x4) matrix is shown, row by row in one line.
+
+Example:
+         |  a11 a12 a13 a14 |
+         |  a21 a22 a23 a24 |
+         |  a31 a32 a33 a34 |
+         |    0   0   0   1 |
+
+
+is shown as "a11 a12 a13 a14 a21 a22 a23 a24 a31 a32 a33 a34" (without the '"').
+
+Click 'Cancel' if you don't want to change the transformation. [[#top|Top]]
+
+
+
+=== Can I save/reload the current transformation of a 3D object? ===
+To save the current transformation of a 3D object, select that object and click on ->Transformation->Save transform. You can specify a file to which the current transformation is stored.
+
+To load a transformation, click on ->Transformation->Set transform. In the opening window, you can choose a previously stored transformation file. [[#top|Top]]
+
+
+
+=== How to save a transformed object? ===
+The 3D viewer allows to load an image stack and display it as a 3D object. This object can be transformed. See e.g.
+
+* [[#How to interact with the viewer]]
+* [[#How to apply a specific transformation to a 3D object]]
+* [[#How to set a specific transformation for a 3D object]]
+
+Now such a transformed object can be exported to a stack image again. To do so, click on ->Transformation->Export transformed image. The resulting stack image can of course also be saved via ImageJ's 'Save as' commands. [[#top|Top]]
