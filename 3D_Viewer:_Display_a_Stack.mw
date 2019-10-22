@@ -84,8 +84,8 @@ the long form takes as parameters:
 In the short form, the missing parameters are set to their default values, which are:
 * '''color:''' null
 * '''name:''' the title of the image
-* '''threshold:''' defined by the return value of Content.getDefaultThreshold()
-* '''resampling factor:''' defined by the return value of Content.getDefaultResamplingFactor()
+* '''threshold:''' defined by the return value of <code>Content.getDefaultThreshold()</code>
+* '''resampling factor:''' defined by the return value of <code>Content.getDefaultResamplingFactor()</code>
 
 <pre class="brush: java; first-line: 1; font-size: '100%';">
       public Content addContent(ImagePlus image, int type);
