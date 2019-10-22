@@ -38,7 +38,7 @@ Full documentation for developers with tutorials and explained code snippets can
 
 === Javadocs === 
 
-The Fiji Javadocs povide detailed information about the [http://fiji.sc/javadoc/ij3d/package-summary.html 3D Viewer API]
+The Fiji Javadocs provide detailed information about the {{Javadoc | package = ij3d | class = package-summary | label = 3D Viewer API}}.
 
 == FAQ ==
 
