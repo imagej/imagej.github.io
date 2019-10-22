@@ -9,7 +9,6 @@
 
 
 === How to display a stack ===
-
 After you have started the 3D viewer, click on '->File->Add content'. A
 dialog window opens, asking for some information:
 
@@ -26,37 +25,28 @@ After clicking OK, the 3D object appears in the viewer window. [[#top|Top]]
 
 
 === How to interact with the viewer (rotate, shift, zoom) ===
-
-The user can rotate, translate and zoom in the 3D space: Two sorts of trans-
-formations are distinguished:
+The user can rotate, translate and zoom in the 3D space: Two sorts of transformations are distinguished:
 
 ==== 1. Transformation of the view: ====
-
 ;Rotation: Select the 'Hand' tool in ImageJ's tool bar. If no 3D object is selected, dragging with the left mouse button rotates the view around the universe center.
 ;Translation: Dragging while pressing the 'Shift' key shifts the view.
 ;Zooming: Zooming is done by selecting the 'Glas' tool in ImageJ's tool bar and drag with the left mouse button. On many platforms, it is alternatively possible to scroll (while the 'Hand' tool is selected) for zooming.
 
 ==== 2. Transformation of objects: ====
-
-Individual objects can be transformed with the same key/mouse combinations.
-To transform a specific object, that object needs to be selected. An object
-is selected by a single left mouse click. Selection is indicated by a red
-bounding box. [[#top|Top]]
+Individual objects can be transformed with the same key/mouse combinations. To transform a specific object, that object needs to be selected. An object
+is selected by a single left mouse click. Selection is indicated by a red bounding box. [[#top|Top]]
 
 
 
 === How to change the color, transparency... of a 3D object ===
 
-Color, transparency, threshold and displayed channels of color images are
-so-called attributes of 3D objects. These attributes have the following
-meaning:
+Color, transparency, threshold and displayed channels of color images are so-called attributes of 3D objects. These attributes have the following meaning:
 * '''Color:''' The color of the 3D object. If 'None' is selected, the color is taken from the stack image.
 * '''Transparency:''' The transparency of the 3D object: A value of 0 means fully transparent, a value of 1 means fully opaque.
 * '''Threshold:''' In case of surfaces, the threshold specifies the isovalue of the surface. Otherwise, it specifies the lower threshold of displayed pixels.
 * '''Channels:''' In color images, the channels attribute specifies the channels to be displayed. In greyscale images, this attribute has no effect.
 
 The attributes can be changed by
-
 # Select the corresponding object by clicking on it
 # Click on -> Edit -> Attributes and select the attribute you want to change.
 
@@ -66,46 +56,34 @@ The attributes can be changed by
 
 === How to make animations and movie recordings ===
 
-To animate the view, click on ->View->Start animation. The view begins
-immediately to rotate around the y-axis. If you now want to record such an
-animation, click on ->View->Start recording. The animation is now recorded
-for one full 360° rotation. The result is displayed in a stack.
+To animate the view, click on ->View->Start animation. The view begins immediately to rotate around the y-axis. If you now want to record such an animation, click on ->View->Start recording. The animation is now recorded for one full 360° rotation. The result is displayed in a stack.
 
-If you want to include the recording in a presentation, save it via ImageJ's
-'Save as AVI' function. You can incorporate the resulting movie file in powerpoint presentations.
+If you want to include the recording in a presentation, save it via ImageJ's 'Save as AVI' function. You can incorporate the resulting movie file in powerpoint presentations.
 
 To stop an animation, click on ->View->Stop animation.  [[#top|Top]]
 
 
 
 === How to reset the view ===
-You can reset the 3D universe to its initial view by clicking on
-->View->Reset View. This resets the view.
+You can reset the 3D universe to its initial view by clicking on ->View->Reset View. This resets the view.
 
-Note however, that this does not change the transformation of individual
-3D objects. To reset them, too, select each object and click on
-->Transformation->Reset transformation. [[#top|Top]]
+Note however, that this does not change the transformation of individual 3D objects. To reset them, too, select each object and click on ->Transformation->Reset transformation. [[#top|Top]]
 
 
 
 === How to hide the coordinate system ===
-There are two types of coordinate systems: One global coordinate system, which
-indicates the origin of the universe, and one local coordinate system for
-each object.
+There are two types of coordinate systems: One global coordinate system, which indicates the origin of the universe, and one local coordinate system for each object.
 
 For hiding the global coordinate system, have a look at "How to general view settings"
 
-For hiding the local coordinate system, select the object and click on
-->Edit->Hide/Show and disable 'Show coordinate system'.
+For hiding the local coordinate system, select the object and click on ->Edit->Hide/Show and disable 'Show coordinate system'.
 
 See [[#How to general view settings]] for how you can avoid to show local coordinate systems in general. [[#top|Top]]
 
 
 
 === How to change the background color ===
-To change the background color of the 3D world, click on
-->View->Change background color. A dialog opens, which lets you interactively
-adjust the background color.
+To change the background color of the 3D world, click on ->View->Change background color. A dialog opens, which lets you interactively adjust the background color.
 
 To use the current background color by default, see [[#How to change general view settings]]. [[#top|Top]]
 
@@ -116,12 +94,7 @@ To use the current background color by default, see [[#How to change general vie
 == Surfaces ==
 
 === What is the idea of a surface ===
-Intuitively, the surface of an object is understood as the border between
-the object and the background. One common way to find a surface is to choose
-a threshold which divides object and background: Values above the threshold
-are assumed to belong to the object, values below are assumed to belong to
-the background. To construct a surface, an algorithm like the marching cubes
-algorithm can be utilized. [[#top|Top]]
+Intuitively, the surface of an object is understood as the border between the object and the background. One common way to find a surface is to choose a threshold which divides object and background: Values above the threshold are assumed to belong to the object, values below are assumed to belong to the background. To construct a surface, an algorithm like the marching cubes algorithm can be utilized. [[#top|Top]]
 
 
 
@@ -136,18 +109,14 @@ See [[#How to change the color, transparency... of a 3D object]]
 
 
 === How to smooth a surface ===
-In order to smooth the surface of a 3D object, select the object and click on
-->Edit->Smooth surface.
+In order to smooth the surface of a 3D object, select the object and click on ->Edit->Smooth surface.
 
-You can also smooth all displayed surfaces by clicking on
-->Edit->Smooth all surfaces [[#top|Top]]
+You can also smooth all displayed surfaces by clicking on ->Edit->Smooth all surfaces [[#top|Top]]
 
 
 
 === How to export surfaces ===
-The displayed surfaces can be exported to files in different surface file
-formats. Currently supported is Wavefront (.obj) and Drawing Interchange Format
-(.dxf). [[#top|Top]]
+The displayed surfaces can be exported to files in different surface file formats. Currently supported is Wavefront (.obj) and Drawing Interchange Format (.dxf). [[#top|Top]]
 
 
 
@@ -156,9 +125,7 @@ formats. Currently supported is Wavefront (.obj) and Drawing Interchange Format
 == Volumes ==
 
 === What are volumes/volume renderings? ===
-A volume rendering generates the 3D effect by putting the slices of a stack
-one behind another, separated by a certain distance. To each pixel in each
-slice a transparency value is assigned, which depends on the pixel's brightness. [[#top|Top]]
+A volume rendering generates the 3D effect by putting the slices of a stack one behind another, separated by a certain distance. To each pixel in each slice a transparency value is assigned, which depends on the pixel's brightness. [[#top|Top]]
 
 
 
@@ -169,11 +136,10 @@ See [[#How to change the color, transparency... of a 3D object]]
 
 === How to edit volumes? ===
 The 3D viewer offers the possibility to edit volumes. To crop volumes,
-
 # Select an object by clicking on it.
 # Use one of ImageJ's selection tools to draw a region of interest (ROI).
-# Click on ->Edit->Fill selection to erase the volume which is covered
-by the ROI. (Erasing means actually filling it with black).
+# Click on ->Edit->Fill selection to erase the volume which is covered by the ROI. (Erasing means actually filling it with black).
+
 [[#top|Top]]
 
 
@@ -183,8 +149,7 @@ by the ROI. (Erasing means actually filling it with black).
 == Orthoslices: ==
 
 === What are orthoslices? ===
-Orthoslices are three orthogonal slices through the volume. The three
-slices show one xy-plane, one xz-plane and one yz-plane. [[#top|Top]]
+Orthoslices are three orthogonal slices through the volume. The three slices show one xy-plane, one xz-plane and one yz-plane. [[#top|Top]]
 
 
 
@@ -194,13 +159,9 @@ See [[#How to change the color, transparency... of a 3D object]]
 
 
 === How to change the displayed slice ===
-The position of the three slices can be changed. To do so, click on
--> Edit -> Adjust slices. A dialog opens, which lets you adjust interactively
-the position of each of the three slices.
+The position of the three slices can be changed. To do so, click on -> Edit -> Adjust slices. A dialog opens, which lets you adjust interactively the position of each of the three slices.
 
-There exist also keyboard shortcuts to adjust the slices: hold one of the
-x, y, and z key pressed and use either the arrow keys or mouse scrolling to
-adjust the slices.
+There exist also keyboard shortcuts to adjust the slices: hold one of the x, y, and z key pressed and use either the arrow keys or mouse scrolling to adjust the slices.
 
 To hide a slice, hold one of the x, y or z key pressed and hit the 'space' bar. [[#top|Top]]
 
@@ -216,14 +177,9 @@ See [[#How to change the displayed slice]]
 == 2D Surface Plots ==
 
 === What are surface plots? ===
-A surface plot displays a 2D slice as a 3D plot: The x- and y-coordinate
-correspond to the x- and y-coordinate in the 2D slice, the z-coordinate
-is the pixel value at (x, y).
+A surface plot displays a 2D slice as a 3D plot: The x- and y-coordinate correspond to the x- and y-coordinate in the 2D slice, the z-coordinate is the pixel value at (x, y).
 
-A 3D surface plot always shows one slice a time. When a 3D surface plot
-is opened in the viewer, the currently selected slice is displayed. When
-changing the slice of the original image stack, the view is automatically
-updated. [[#top|Top]]
+A 3D surface plot always shows one slice a time. When a 3D surface plot is opened in the viewer, the currently selected slice is displayed. When changing the slice of the original image stack, the view is automatically updated. [[#top|Top]]
 
 
 
@@ -281,8 +237,7 @@ See [[#How to change general view settings]]
 
 
 === How to change general view settings ===
-Some general view settings can be changed and made permanent by clicking on ->View->View settings. A dialog window opens, asking the user for settings. There are two types of
-settings, startup options and options which are applied immediately.
+Some general view settings can be changed and made permanent by clicking on ->View->View settings. A dialog window opens, asking the user for settings. There are two types of settings, startup options and options which are applied immediately.
 
 # Startup options:
 #* '''Width and Height''' The window dimensions of the 3D viewer.
@@ -380,3 +335,87 @@ The 3D viewer allows to load an image stack and display it as a 3D object. This 
 * [[#How to set a specific transformation for a 3D object]]
 
 Now such a transformed object can be exported to a stack image again. To do so, click on ->Transformation->Export transformed image. The resulting stack image can of course also be saved via ImageJ's 'Save as' commands. [[#top|Top]]
+
+
+
+
+
+== Point Lists ==
+
+=== What is meant by 'point list' and why can they be useful ===
+Point lists represent a list of named points. They can be used for marking regions in/on 3D objects, for example. One particular usage of point lists is the landmark based registration. (See [[#How can two 3D objects be registered]]). Each 3D object owns a point list. This list is not shown by default, however. [[#top|Top]]
+
+
+
+=== How to show the point list of an object ===
+There are two ways to show the point list of a 3D object:
+* Click on ->Edit->Point list->Show Point list or
+* Select ImageJ's point tool and click on a selected object.
+
+In both cases, a window opens which shows a list of named points for the selected object. [[#top|Top]]
+
+
+
+=== How to add/remove points? ===
+To add  points, do the following:
+* Select a 3D object by clicking on it
+* Select ImageJ's 'POINT' tool
+* Click somewhere on the selected object.
+    
+The point is added and appears in the point list window.
+
+To remove a point, either
+* Press shift and click on the point you want to remove. ImageJ's 'POINT' tool has to be selected for that operation or
+* Right-click on the point in the point list window and click on 'Remove'.
+
+The point disappears. [[#top|Top]]
+
+
+
+=== How to change the position of a point ===
+You can interactively drag the point of interest. ImageJ's 'POINT' tool has to be selected. Click with the left mouse button on the point and drag it to the desired position. [[#top|Top]]
+
+
+
+=== How to save a point list to file and how to reload it ===
+Point lists can be stored to file and be reloaded. To do so, select an object and click on -> Edit -> Point list -> Save Point list or on ->Edit->Point list->Load Point list respectively. Choose the file containing the point lists. [[#top|Top]]
+
+
+
+=== How to highlight a point from the list in the 3D view ===
+Sometimes, one wishes to know where a particular point from the point list window is located in the 3D world. To highlight a point from the point list window, just left-click on it. It gets animated then. [[#top|Top]]
+
+
+
+=== How to hide the points ===
+To hide the points, click on ->Edit->Point List->Hide Point list. The point list window is closed automatically. [[#top|Top]]
+
+
+
+=== How to close the list window ===
+To hide the points, click on ->Edit->Point List->Hide Point list. The point list window is closed automatically. [[#top|Top]]
+
+
+
+
+
+== Registration ==
+
+=== Which kinds of registration is supported? ===
+At the moment, only rigid landmark-based registration is supported. [[#top|Top]]
+
+
+
+=== How can two 3D objects be registered? ===
+To initiate registration, load at least two objects into the viewer and click on ->Edit->Register
+
+You are now guided step by step through landmark selection of model and reference image and through the registration process.
+
+Please note that the images are locked after registration, to prevent unintended user interaction. To be able to transform the objects again, select each of them and inactivate ->Transformation->Lock [[#top|Top]]
+
+
+
+=== How can the results be saved? ===
+See [[#How to save a transformed object]]
+
+[[#top|Top]]
