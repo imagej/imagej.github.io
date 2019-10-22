@@ -1,7 +1,7 @@
 (Return to the main [[3D Viewer]] page)
 
 
-== 1. Basic Usage ==
+== 1 Basic Usage ==
 
 === How to display a stack ===
 
@@ -16,7 +16,7 @@ dialog window opens, asking for some information:
 * '''Resampling factor:''' Large images require downsampling before displaying, to be rendered interactively. A value of 2 means here that the image is downsampled by a factor of 2 in x-, y- and z-direction.
 * '''Channels:''' If displaying color images, this specifies the color channels which are to be displayed.
 
-After clicking OK, the 3D object appears in the viewer window.
+After clicking OK, the 3D object appears in the viewer window. [[#top|Top]]
 
 
 
@@ -45,7 +45,7 @@ scroll (while the 'Hand' tool is selected) for zooming.
 Individual objects can be transformed with the same key/mouse combinations.
 To transform a specific object, that object needs to be selected. An object
 is selected by a single left mouse click. Selection is indicated by a red
-bounding box.
+bounding box. [[#top|Top]]
 
 
 
@@ -62,8 +62,9 @@ meaning:
 The attributes can be changed by
 
 # Select the corresponding object by clicking on it
-# Click on -> Edit -> Attributes and select the attribute you want to
-   change.
+# Click on -> Edit -> Attributes and select the attribute you want to change.
+
+[[#top|Top]]
 
 
 
@@ -75,10 +76,9 @@ animation, click on ->View->Start recording. The animation is now recorded
 for one full 360° rotation. The result is displayed in a stack.
 
 If you want to include the recording in a presentation, save it via ImageJ's
-Save as AVI function. You can incorporate the resulting movie file in powerpoint
-presentations.
+'Save as AVI' function. You can incorporate the resulting movie file in powerpoint presentations.
 
-To stop an animation, click on ->View->Stop animation.
+To stop an animation, click on ->View->Stop animation.  [[#top|Top]]
 
 
 
@@ -88,7 +88,7 @@ You can reset the 3D universe to its initial view by clicking on
 
 Note however, that this does not change the transformation of individual
 3D objects. To reset them, too, select each object and click on
-->Transformation->Reset transformation.
+->Transformation->Reset transformation. [[#top|Top]]
 
 
 
@@ -102,7 +102,7 @@ For hiding the global coordinate system, have a look at "How to general view set
 For hiding the local coordinate system, select the object and click on
 ->Edit->Hide/Show and disable 'Show coordinate system'.
 
-See "How to general view settings" for how you can avoid to show local coordinate systems in general.
+See [[#How to general view settings]] for how you can avoid to show local coordinate systems in general. [[#top|Top]]
 
 
 
@@ -111,11 +111,11 @@ To change the background color of the 3D world, click on
 ->View->Change background color. A dialog opens, which lets you interactively
 adjust the background color.
 
-To use the current background color by default, see "How to change general view settings".
+To use the current background color by default, see [[#How to change general view settings]]. [[#top|Top]]
 
 
 
-== 2. Surfaces ==
+== 2 Surfaces ==
 
 === What is the idea of a surface ===
 Intuitively, the surface of an object is understood as the border between
@@ -123,17 +123,17 @@ the object and the background. One common way to find a surface is to choose
 a threshold which divides object and background: Values above the threshold
 are assumed to belong to the object, values below are assumed to belong to
 the background. To construct a surface, an algorithm like the marching cubes
-algorithm can be utilized.
+algorithm can be utilized. [[#top|Top]]
 
 
 
 === How to change the color, transparency... of a surface ===
-See "How to change the color, transparency... of a 3D object"
+See [[#How to change the color, transparency... of a 3D object]]
 
 
 
 === How to change the isovalue of a surface ===
-See "How to change the color, transparency... of a 3D object"
+See [[#How to change the color, transparency... of a 3D object]]
 
 
 
@@ -142,30 +142,30 @@ In order to smooth the surface of a 3D object, select the object and click on
 ->Edit->Smooth surface.
 
 You can also smooth all displayed surfaces by clicking on
-->Edit->Smooth all surfaces
+->Edit->Smooth all surfaces [[#top|Top]]
 
 
 
 === How to export surfaces ===
 The displayed surfaces can be exported to files in different surface file
 formats. Currently supported is Wavefront (.obj) and Drawing Interchange Format
-(.dxf).
+(.dxf). [[#top|Top]]
 
 
 
 
 
-== 3. Volumes ==
+== 3 Volumes ==
 
 === What are volumes/volume renderings? ===
 A volume rendering generates the 3D effect by putting the slices of a stack
 one behind another, separated by a certain distance. To each pixel in each
-slice a transparency value is assigned, which depends on the pixel's brightness.
+slice a transparency value is assigned, which depends on the pixel's brightness. [[#top|Top]]
 
 
 
 === How to change the color, transparency, ... of a volume ===
-See "How to change the color, transparency... of a 3D object"
+See [[#How to change the color, transparency... of a 3D object]]
 
 
 
@@ -176,3 +176,36 @@ The 3D viewer offers the possibility to edit volumes. To crop volumes,
 # Use one of ImageJ's selection tools to draw a region of interest (ROI).
 # Click on ->Edit->Fill selection to erase the volume which is covered
 by the ROI. (Erasing means actually filling it with black).
+[[#top|Top]]
+
+
+
+
+
+== 4 Orthoslices: ==
+
+=== What are orthoslices? ===
+Orthoslices are three orthogonal slices through the volume. The three
+slices show one xy-plane, one xz-plane and one yz-plane. [[#top|Top]]
+
+
+
+=== How to change the color, transparency, ... of orthoslices ===
+See [[#How to change the color, transparency... of a 3D object]]
+
+
+
+=== How to change the displayed slice ===
+The position of the three slices can be changed. To do so, click on
+-> Edit -> Adjust slices. A dialog opens, which lets you adjust interactively
+the position of each of the three slices.
+
+There exist also keyboard shortcuts to adjust the slices: hold one of the
+x, y, and z key pressed and use either the arrow keys or mouse scrolling to
+adjust the slices.
+
+To hide a slice, hold one of the x, y or z key pressed and hit the 'space' bar. [[#top|Top]]
+
+
+=== How to hide a slice ===
+See [[#How to change the displayed slice]]
