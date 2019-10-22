@@ -1,7 +1,12 @@
 (Return to the main [[3D Viewer]] page)
 
 
-== 1 Basic Usage ==
+
+
+
+== Basic Usage ==
+
+
 
 === How to display a stack ===
 
@@ -115,7 +120,9 @@ To use the current background color by default, see [[#How to change general vie
 
 
 
-== 2 Surfaces ==
+
+
+== Surfaces ==
 
 === What is the idea of a surface ===
 Intuitively, the surface of an object is understood as the border between
@@ -155,7 +162,7 @@ formats. Currently supported is Wavefront (.obj) and Drawing Interchange Format
 
 
 
-== 3 Volumes ==
+== Volumes ==
 
 === What are volumes/volume renderings? ===
 A volume rendering generates the 3D effect by putting the slices of a stack
@@ -182,7 +189,7 @@ by the ROI. (Erasing means actually filling it with black).
 
 
 
-== 4 Orthoslices: ==
+== Orthoslices: ==
 
 === What are orthoslices? ===
 Orthoslices are three orthogonal slices through the volume. The three
@@ -205,6 +212,7 @@ x, y, and z key pressed and use either the arrow keys or mouse scrolling to
 adjust the slices.
 
 To hide a slice, hold one of the x, y or z key pressed and hit the 'space' bar. [[#top|Top]]
+
 
 
 === How to hide a slice ===
