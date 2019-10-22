@@ -245,7 +245,7 @@ Some general view settings can be changed and made permanent by clicking on ->Vi
 #* '''Apply changes now''' If activated, the changes in the settings above are immediately applied, otherwise, they are first applied at the next application start.
 # Immediately applied options:
 #* '''Show local coordinate system by default''' If activated, the local coordinate system of 3D objects is shown when new objects are loaded in the 3D viewer. If inactivated, the coordinate system is omitted. Note: This only affects newly added 3D objects. Already displayed objects are not affected.
-#* '''Global rotation around Center/Origin''' Global rotations (see [[#How to interact with the viewer]]) can have two possible centers:
+#* '''Global rotation around Center/Origin''' Global rotations (see [[#How to interact with the viewer (rotate, shift, zoom)]]) can have two possible centers:
 #** '''Origin:''' The origin of the virtual world. This is in most cases the lower left corner of 3D objects. You can make the origin visible by showing the global coordinate system (see above).
 #** '''Center:''' The center of the virtual world. The center is automatically calculated from the displayed 3D objects.
 
@@ -260,7 +260,7 @@ Some general view settings can be changed and made permanent by clicking on ->Vi
 === The concept of transformations ===
 There are two types of transformations in the 3D viewer: Global transformations and local transformations. Global transformations refer to transformations of the whole view, no individual objects are transformed, but the whole 3D world together. Local transformations refer to transformations of individual objects.
 
-Transformations can be made interactively with the mouse. See [[#How to interact with the viewer]] for more information.
+Transformations can be made interactively with the mouse. See [[#How to interact with the viewer (rotate, shift, zoom)]] for more information.
 
 Alternatively, transformations of individual objects can be altered more exactly, by specifying transformations matrices. Transformations can be set for 3D objects, or applied (concatenated with the current transformation) to 3D objects. Transformations can be saved and reloaded. And finally, it is possible to export a transformed object to a stack image. [[#top|Top]]
 
@@ -328,7 +328,7 @@ To load a transformation, click on ->Transformation->Set transform. In the openi
 === How to save a transformed object ===
 The 3D viewer allows to load an image stack and display it as a 3D object. This object can be transformed. See e.g.
 
-* [[#How to interact with the viewer]]
+* [[#How to interact with the viewer (rotate, shift, zoom)]]
 * [[#How to apply a specific transformation to a 3D object]]
 * [[#How to set a specific transformation for a 3D object]]
 
