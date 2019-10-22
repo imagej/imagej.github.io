@@ -28,15 +28,13 @@ After clicking OK, the 3D object appears in the viewer window. [[#top|Top]]
 The user can rotate, translate and zoom in the 3D space: Two sorts of transformations are distinguished:
 
 ==== 1. Transformation of the view: ====
-;Rotation: Select the 'Hand' tool in ImageJ's tool bar. If no 3D object is selected, dragging with the left mouse button rotates the view around the universe center.
-;Translation: Dragging while pressing the 'Shift' key shifts the view.
-;Zooming: Zooming is done by selecting the 'Glas' tool in ImageJ's tool bar and drag with the left mouse button. On many platforms, it is alternatively possible to scroll (while the 'Hand' tool is selected) for zooming.
+* '''Rotation:''' Select the 'Hand' tool in ImageJ's tool bar. If no 3D object is selected, dragging with the left mouse button rotates the view around the universe center.
+* '''Translation:''' Dragging while pressing the 'Shift' key shifts the view.
+* '''Zooming:''' Zooming is done by selecting the 'Glas' tool in ImageJ's tool bar and drag with the left mouse button. On many platforms, it is alternatively possible to scroll (while the 'Hand' tool is selected) for zooming.
 
 ==== 2. Transformation of objects: ====
 Individual objects can be transformed with the same key/mouse combinations. To transform a specific object, that object needs to be selected. An object
 is selected by a single left mouse click. Selection is indicated by a red bounding box. [[#top|Top]]
-
-
 
 === How to change the color, transparency... of a 3D object ===
 
