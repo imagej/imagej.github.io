@@ -18,6 +18,9 @@ Beyond this, a lot more screencasts can be found [[3D_Viewer:_Screencasts|here]]
 * Transformations
 * 3D Content in PDFs
 
+== For users ==
+Comprehensive usage guidelines in form of FAQs and tutorials can be found [[3D_Viewer:_User_FAQs|here]].
+
 == For developers ==
 
 A lot of functions of the 3D Viewer are macro-recordable. However, if that is not enough (or if the function is not recorded properly), it is better to [[Introduction into Developing Plugins|write a plugin]]. In the latter case no macros should be called from Java, as that would limit the code to work with the currently active 3D Viewer (even if the user clicked somewhere else).
@@ -31,7 +34,7 @@ univ.addMesh(yourImagePlus, null, "somename", 50, new boolean[] {true, true, tru
 ...
 </source>
 
-Until everything is migrated to this wiki, the original website provides the [http://132.187.25.13/ij3d/?category=Documentation&page=Developer_HowTos full 3D Viewer developer documentation].
+Full documentation for developers with tutorials and explained code snippets can be found [[3D_Viewer:_Developer_Documentation|here]].
 
 === Javadocs === 
 
