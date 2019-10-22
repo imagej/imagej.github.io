@@ -9,8 +9,9 @@ You can download example source code for this HowTo [[3D_Viewer:_Example_code|he
 
 
 The following figure shows a simplified class diagram which shows the class hierarchy and relationship of the most important classes for users ofthe API:
-<img width=600 src=sites/Documentation/devdoc/images/classes.png>
-[<a href=sites/Documentation/devdoc/images/classes.png>click to enlarge</a>]
+[[Image:3DViewer-class-diagram.png|thumb|center|600px|Simplified class diagram showing the core classes of the 3D Viewer.]]
+
+
 
 === The class hierarchy of the universe classes ===
 
