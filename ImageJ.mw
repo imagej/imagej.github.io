@@ -13,6 +13,17 @@ There are a few different flavors of ImageJ with very similar names, and some co
 |'''Initiated'''
 |'''Status'''
 |-
+|[[File:Fiji-icon.png|64px]]
+|[[Fiji]]
+|[[Contributors|Fiji contributors]]
+| 
+'''F'''iji '''i'''s '''J'''ust '''I'''mageJ, with extras. It is a distribution of ImageJ with many plugins useful for scientific image analysis in fields such as life sciences. It is actively maintained, with updates released often.
+
+We recommend Fiji as the preferred version of ImageJ.
+
+|[[User:Schindelin#A_short_story_about_Fiji|Dec. 2007]]
+|Active
+|-
 |[[File:imagej2-icon.png|64px]]
 |[[ImageJ2]]<br>
 ImageJDev
@@ -37,17 +48,7 @@ ImageJA is a project that provides a clean [[Git]] history of ImageJ1, with a pr
 It is what ImageJ2's legacy support uses at its core.
 |Jul. 2005
 |Active
-|-
-|[[File:Fiji-icon.png|64px]]
-|[[Fiji]]
-|[[Contributors|Fiji contributors]]
-| 
-'''F'''iji '''i'''s '''J'''ust '''I'''mageJ, with extras. It is a distribution of ImageJ with many plugins useful for scientific image analysis in fields such as life sciences. It is actively maintained, with updates released often.
 
-We recommend Fiji as the preferred version of ImageJ.
-
-|[[User:Schindelin#A_short_story_about_Fiji|Dec. 2007]]
-|Active
 |-
 |
 |[[ImageJFX]]
