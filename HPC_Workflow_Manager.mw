@@ -385,7 +385,7 @@ Many of the functions have an MPI equivalent, this will also be listed in the ta
 |+ Parallelization functions
 ! Function name !! Input !! Output !! Description !! MPI equivalent
 |-
-| parInt || None      || None || Initializes parallelization, it should be called at the beginning of the parallel code. || MPI_Init
+| parInit || None      || None || Initializes parallelization, it should be called at the beginning of the parallel code. || MPI_Init
 |-
 | parFinalize || None || None || Finalizes parallelization, it should be called at the end of the parallel code. || MPI_Finalize
 |-
