@@ -360,7 +360,7 @@ parInit();
   }
   
   parReportProgress(getPieceTask, 0);
-  receivedPieces = parScatterEqually(cake, 4, 1);
+  receivedPieces = parScatterEqually(cake, 10, 1);
   parReportProgress(getPieceTask, 100);
   
   parBarrier();
