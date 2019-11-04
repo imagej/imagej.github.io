@@ -398,6 +398,10 @@ Many of the functions have an MPI equivalent, this will also be listed in the ta
 | parScatterEqually || An array to split and send, the length of the array to send, the rank of the node that will split and send the array. || An array. || This will try to split an array to equal parts send it from the given rank. It will also receive the part of the array it should and return it (including the rank that sends the parts). In case the number of array elements is not equally divisible it will send any extra elements to the first rank (0). || None
 |-
 | parScatter || An array to split and send, number of elements to send, number of elements to receive and the rank of the node to send the elements. || An array. || This works like parScatterEqually but in this case the user is responsible for providing the parameters to split the array. || MPI_Scatter
+|-
+| Gather || array to send, number of items to send, number of items to receive, receiver's rank|| An array. || All ranks send an equal amount of array items to a single node of a given rank. Be careful, the receiveCount parameter should be the count of items received from each rank separately. This is the inverse operation of parScatter. || MPI_Gather
+|-
+| GatherEqually ||  array to send, number of elements in received array, receiver's rank || An array. || The given rank will receive an array send in parts by all ranks. This is the inverse operation of the parScatterEqually. || None
 |}
 
 {| class="wikitable"
