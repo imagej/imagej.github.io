@@ -62,9 +62,7 @@ If you have created a new job, the main window should look roughly like Figure 5
 
 [[File:hpc-workflow-manager-created-job.png |300px|thumb|center| Figure 5: A new Macro job has been created.]]
 
-Before you can start the job, you need to upload your script (“user.ijm”). To do this you must select the “Upload data” item from the context menu.
-
-If your script also needs data, they should also be located in the same directory that the user's script is in.
+Before you can start the job, you need to upload your script (“user.ijm”). To do this you must select the “Upload data” item from the context menu. If your script also needs data, they should also be located in the same directory that the user's script is in. The data will be uploaded along with the Macro script file.
 
 A timer will appear in the download column. When it has completed uploading the data and user's script the cell that corresponds to the job should indicate that it is “Done” (Figure 6).
 
