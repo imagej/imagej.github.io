@@ -424,7 +424,7 @@ Many of the functions have an MPI equivalent, this will also be listed in the ta
 
 If you need help remembering the functions and what they do you may use autocompletion to get help. Just type "par" and a list of options will appear. There is a link to this page in the autocomplete help. An example is provided in figure 10.
 
-[[File:hpc-workflow-manager-autocomplete.png |300px|thumb|center| Figure 10: Function autocompletion example.]]
+[[File:hpc-workflow-manager-autocomplete.png |300px|thumb|center| Figure 11: Function autocompletion example.]]
 
 == Installation ==
 HPC Workflow Manager client is available to install through its update site.
