@@ -57,12 +57,23 @@ When you are sure that the form is filled-in correctly press the “Create” bu
 
 [[File:hpc-workflow-manager-create-job.png |300px|thumb|center| Figure 4: Example of a new Macro job configuration.]]
 
-=== How to start a job ===
+=== How to upload the data and the user's script ===
 If you have created a new job, the main window should look roughly like Figure 5.
 
 [[File:hpc-workflow-manager-created-job.png |300px|thumb|center| Figure 5: A new Macro job has been created.]]
 
-Here you can see the following columns:
+Before you can start the job, you need to upload your script (“user.ijm”). To do this you must select the “Upload data” item from the context menu.
+
+If your script also needs data, they should also be located in the same directory that the user's script is in.
+
+A timer will appear in the download column. When it has completed uploading the data and user's script the cell that corresponds to the job should indicate that it is “Done” (Figure 6).
+
+[[File:hpc-workflow-manager-upload-job.png |300px|thumb|center| Figure 6: Uploading files (in this case just the user’s script) is done.]]
+
+Now that the script file is uploaded the job can be started.
+
+=== How to start a job ===
+Let's inspect figure 6 closer. In the figure you can see the following columns:
 * “Job ID” - Job’s identification number;
 * “Status” – The job’s current status which can be:
 ** “Unknown” – the state of the job is not known;
@@ -82,13 +93,7 @@ Here you can see the following columns:
 
 Right-click on the new job to display the context menu (of Figure 3). You will notice that there are new enabled items.
 
-Before you can start the job, you need to upload your script (“user.ijm”). To do this you must select the “Upload data” item from the context menu.
-
-A timer will appear in the download column. When it has completed the uploading the cell that corresponds to the job should indicate that it is “Done” (Figure 6).
-
-[[File:hpc-workflow-manager-upload-job.png |300px|thumb|center| Figure 6: Uploading files (in this case just the user’s script) is done.]]
-
-Now that the script file is uploaded the job can be started. Right-click the row of the job and select “Start Job” from the context menu.
+Right-click the row of the job and select “Start Job” from the context menu.
 
 To make the source code of the user cleaner and easier to understand the special functions that make parallelism available to the user are appended to the user script on upload and a new file is created called “mpitest.txt” which is the file that will be executed on the cluster.
 
