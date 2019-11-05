@@ -57,7 +57,7 @@ When you are sure that the form is filled-in correctly press the “Create” bu
 
 [[File:hpc-workflow-manager-create-job.png |300px|thumb|center| Figure 4: Example of a new Macro job configuration.]]
 
-=== How to upload the data and the user's script ===
+=== How to upload the data and the Macro script ===
 If you have created a new job, the main window should look roughly like Figure 5.
 
 [[File:hpc-workflow-manager-created-job.png |300px|thumb|center| Figure 5: A new Macro job has been created.]]
