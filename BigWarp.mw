@@ -86,9 +86,6 @@ Some changes to landmarks can be done by interacting with the landmark table.
 | style="padding: 5px;" | {{key press|Esc}}
 | style="padding: 5px;" | Deselect all rows.
 |-
-| style="padding: 5px;" | <''Landmark mode''>+{{key press|left-click}}
-| style="padding: 5px;" | Removes one landmark.
-|-
 | style="padding: 5px;" | {{key press|right-click}} {{arrow}} Delete
 | style="padding: 5px;" | Deletes a landmark pair (row in the table).
 |-
