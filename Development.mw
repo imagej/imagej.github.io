@@ -3,7 +3,8 @@
 
 == Quick start ==
 
-Check the [https://imagej.github.io/tutorials ImageJ tutorial notebooks]!
+* '''Learn to write [[Scripting|ImageJ scripts]]''' from the [https://imagej.github.io/tutorials ImageJ tutorial notebooks].
+* '''Learn to use ImageJ from Java''' with the [https://github.com/imagej/tutorials/tree/master/maven-projects ImageJ tutorial Maven projects].
 
 == What is ImageJ? ==
 
