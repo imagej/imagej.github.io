@@ -2,6 +2,7 @@
 
 = Getting started =
 
+* Read the [https://imagej.github.io/tutorials ImageJ tutorial notebooks] to learn how to write ImageJ scripts.
 * Press the {{key|[}} key to open the [[Script Editor]] (or {{key|Shift}}-{{key|[}} to open the [[Script Interpreter]]).
 * Optionally, choose a template from the ''Templates'' menu to get you started.
 * Otherwise, choose your language from the ''Language'' menu.
