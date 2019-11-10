@@ -1,3 +1,8 @@
+{{Notice | This guide discusses how to modify an already-existing [[plugin]], and contribute your changes back.<br>
+* If you are interested in developing a '''new''' plugin instead, see [[Writing plugins]].<br>
+* If you have completed a plugin that you would like to '''share with the community''', see [[Distribution|Distributing your plugins]].
+}}
+
 <div style="float: left; padding-right: 1em">__TOC__</div>{{DevelopMenu | tutorials}}== Introduction ==
 Sometimes you may want to contribute to an already existing ImageJ plugin or library. For example, a bug is found in one plugin and you want to fix it, or you would like to improve one library by adding more functions. This tutorial describes step by step how to do it with a practical case.
 
