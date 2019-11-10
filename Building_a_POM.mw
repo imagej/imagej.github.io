@@ -132,4 +132,10 @@ Simply copy and paste any or all of these into your POM's <code><dependency></co
 	<groupId>net.imagej</groupId>
 	<artifactId>imagej-legacy</artifactId>
 </dependency>
+
+<!-- Include all Fiji plugins when running -->
+<dependency>
+	<groupId>sc.fiji</groupId>
+	<artifactId>fiji</artifactId>
+</dependency>
 </source>
