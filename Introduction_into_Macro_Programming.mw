@@ -69,7 +69,7 @@ specifiedRadius = 3;
 //run("Median...", "radius=specifiedRadius");  // BAD - will literally pass "specifiedRadius"
 run("Median...", "radius=" + specifiedRadius); // GOOD - will correctly pass the radius variable value
 </source>
-'''Note:''' when concatenating strings, whenspace will not automatically be added. So care must be taken, for example when spaces are ''desired''.
+'''Note:''' when concatenating strings, whitespace will not automatically be added. So care must be taken, for example when spaces are ''desired''.
 <source lang="java">
 // We want to use the "Li white" threshold
 
