@@ -55,7 +55,7 @@ msg = "Those days are over, " + name;
 
 '''Note:''' a common pitfall is to include the name of a variable in a string. The following code demonstrates this:
 
-('''BAD''' lines are commented out to discourage copying them. If you paste this code in the [[Script_Editor|script editor]], you can uncomment these lines to see the their errors)
+('''BAD''' lines are commented out to discourage copying them. If you paste this code in the [[Script_Editor|script editor]], you can uncomment these lines to see their errors)
 
 <source lang="java">
 title = "Macro";
