@@ -17,6 +17,7 @@ This is the window that opens up when you first start the plugin. All you need f
 *'''Binning Size:''' this sets a value in the plugin that is used to distinguish between like planes (110, 101, and 011) and different planes (100, 110, 111,...). 
 *'''Display modes:''' these options allow the user to operate the plugin in three different modes. The ''Measurements'' mode does not give you a summary plot or table, which is convenient if you are optimizing your settings for a single DP. The ''Summary'' mode closes the two measurement windows (so you don't have to) and only shows the summary table and plot. ''All'' leaves all four windows open, so you see everything.
 *'''d-spacing list:''' yet a fifth window that you can enable, which allows you to view the list of d-spacing values in a text window on a single line.
+*'''ring overlay:''' not shown in the image above, but a new option that draws circles on the diffraction pattern that correspond to the measurements made, and adds an inset with a list of d-values. See [[calc dSpace]] for more info.
 
 === '''Adjust Threshold''' ===
 [[File:Adjust_Threshold_1.jpg|300px|right]]
