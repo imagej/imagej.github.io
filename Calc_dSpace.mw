@@ -15,6 +15,8 @@ The first, and most basic mode, is '''calculate''' where the calculated values f
 
 The final mode is '''Overlay & Crop''', which is more of a publication-ready mode that actually crops the diffraction pattern down to the size of the measured region. This is more suitable for publication, as it zooms to the measured region and makes the image square. This image is best saved as a jpeg first and then saved as a tiff if that is the preferred format.
 
+[[File:CropExample.jpeg|400px|center]]
+
 == '''Image Requirements''' ==
 
 You need to have a properly calibrated diffraction pattern for the calculations to work. Most TEMs use Gatan’s Digital Micrograph software for image collection. If you are using DM, then it is likely that this plugin will work right away, or will work with the help of your TEM technician. 
