@@ -1,7 +1,1 @@
-This page collects [[news]] posts describing the '''current status''' of [[ImageJ]]. It is intended to clearly communicate what is going on with ImageJ "at the moment":
-
-* Current best practices for setting up and using ImageJ.
-* Current major pitfalls and [[bugs]] in various environments.
-* Current issues with ImageJ's online services (e.g., the [[personal update sites]]).
-
-Since ImageJ is actively developed, these details change frequently and this sort of information quickly falls out of date. Therefore, we post each status update with a date stamp, so that you can easily tell the recency of each update.
+#REDIRECT [[News]]
