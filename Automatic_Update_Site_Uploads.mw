@@ -65,7 +65,7 @@ unzip fiji-linux64.zip
 
 # Install the package
 cd $TRAVIS_BUILD_DIR/
-mvn clean install -Dimagej.app.directory=$IJ_PATH -Ddelete.other.versions=true
+mvn clean install -Dscijava.app.directory=$IJ_PATH -Ddelete.other.versions=true
 
 # Deploy the package
 # Deploy the package
@@ -97,10 +97,10 @@ in your repository, the <code>.travis.yml</code> will automatically be updated a
 
 == Non-Mavenized Files ==
 
-Travis CI is capable of building many languages besides Java. If you cannot use Maven with an <code>imagej.app.directory</code> then you need to replace the following line of your <code>.travis.yml</code>:
+Travis CI is capable of building many languages besides Java. If you cannot use Maven with a <code>scijava.app.directory</code> then you need to replace the following line of your <code>.travis.yml</code>:
 
 <source lang="yaml">
-  - mvn clean install -Dimagej.app.directory="$(pwd)" -Ddelete.other.versions=true
+  - mvn clean install -Dscijava.app.directory="$(pwd)" -Ddelete.other.versions=true
 </source>
 
 with a sequence of commands that will move your build artifacts to the appropriate <code>/jars</code> or <code>/plugins</code> directory, as appropriate for your update site.
