@@ -4,9 +4,9 @@
 
 [[ImageJ]] and [[SciJava]] projects use Travis in a variety of ways:
 
-* Perform builds of SciJava projects. Travis deploys <code>SNAPSHOT</code> builds to the [http://maven.imagej.net/ ImageJ Maven repository] in response to pushes to each code repository's <code>master</code> branch. So any downstream projects depending on a version of <code>LATEST</code> for a given component will match the last successful Travis build—i.e., the latest code on <code>master</code>.
+* Perform builds of SciJava projects. Travis deploys <code>SNAPSHOT</code> builds to the [https://maven.scijava.org/ SciJava Maven repository] in response to pushes to each code repository's <code>master</code> branch. So any downstream projects depending on a version of <code>LATEST</code> for a given component will match the last successful Travis build—i.e., the latest code on <code>master</code>.
 * Run each project's associated [[wikipedia:Unit testing|unit tests]]. Travis is instrumental in early detection of new bugs introduced to the codebase.
-* Perform [[releases]] of [[SciJava]] projects. Travis deploys release builds to the appropriate Maven repository—typically either the ImageJ Maven repository or [https://oss.sonatype.org/ OSS Sonatype].
+* Perform [[releases]] of [[SciJava]] projects. Travis deploys release builds to the appropriate Maven repository—typically either the SciJava Maven repository or [https://oss.sonatype.org/ OSS Sonatype].
 * Keep the [[javadoc]] site updated.
 * Keep other web resources updated.
 
