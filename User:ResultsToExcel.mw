@@ -1,5 +1,5 @@
 
-plugins/Read_and_Write_Excel-1.1.4 (Installation instructions at bottom of this page)
+plugins/Read_and_Write_Excel-1.1.5 (Installation instructions at bottom of this page)
 
 Created in Eclipse IDE Neon release (4.6.0), and now requires java jre 1.8.
 
@@ -20,6 +20,8 @@ Release dates:
 Jan 2019 v1.1.3
 
 17 Apr 2019 v1.1.4
+
+30 Nov 2019 v1.1.5
 
 Description :
 By default, this plugin extracts data from the Results Table and adds it to a sheet-tab "A" in an .xlsx Excel file on the user's desktop. The plugin will create a file named "Rename me after writing is done" on the desktop if none-exists already, and will update this file if it has already been created. Data is added to the latest sheet (created as "A" if the file is new) or to a user specified sheet using a passed argument (see below). Within the latest sheet, data will be added adjacent to previous data, unless an argument is passed to stack data underneath pre-existing column headers and data. Results Table column headers are added automatically. A row count is added by default but the user can choose to deny this with a passed argument.
@@ -85,6 +87,9 @@ Version 1.1.3 changes:
 
 Version 1.1.4 changes:
 1) Bug fix. Label column issue fixed. Label data was not being exported; it now is.
+
+Version 1.1.5 changes:
+1) Bug fix. Export can now proceed when there are non-Label-column empty cells.
 
 
 Author:
