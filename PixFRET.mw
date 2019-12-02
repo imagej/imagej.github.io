@@ -14,6 +14,9 @@
 
 To install the plugin, activate the '''PixFRET''' [[How_to_follow_a_3rd_party_update_site|update site]] and restart Fiji.
 
+== Usage ==
+Please refer to the [[Media:PixFRET_userguide.pdf|user guide (PDF)]].
+
 == Publication ==
 * {{Citation | last = Feige| first = J.
 | last2 = Sage | first2 = D.
