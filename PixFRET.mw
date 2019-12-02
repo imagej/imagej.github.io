@@ -4,8 +4,8 @@
 | author                 = Jerome Feige, Daniel Sage, Walter Wahli, Beatrice Desvergne, Laurent Gelman
 | maintainer             = {{Person|Eglinger}}
 | source                 = {{GitHub|org=fmi-basel|repo=pixfret}}
-| released               = 
-| latest version         = 
+| released               = Nov 29, 2019
+| latest version         = 1.5.2
 | status                 = stable
 | category               = [[:Category:Analysis|Analysis]]
 }}
