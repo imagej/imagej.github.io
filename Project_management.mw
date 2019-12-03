@@ -46,7 +46,7 @@ ImageJ uses [[Travis CI]], a cloud-based continuous integration (CI) system, whi
 
 == Issue tracking ==
 
-SciJava software projects manage tasks and priorities using [https://github.com/organizations/imagej/dashboard/issues/repos GitHub Issues]:
+SciJava software projects manage tasks and priorities using [https://guides.github.com/features/issues/ GitHub Issues]:
 
 You can search issues using the ImageJ search portal's GitHub button here:
 
