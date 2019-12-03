@@ -53,7 +53,7 @@ You can search issues using this ImageJ search portal's GitHub button here:
 {{BigLink | url=https://search.imagej.net/}}
 
 
-Previously, some projects used [https://trac.edgewall.org/ Trac] for issue tracking and roadmapping, but all Trac issues have now been migrated to GitHub. The old Trac-based issues are still available as a [https://imagej.github.io/tickets/ read-only archive].
+Previously, some projects used [https://trac.edgewall.org/ Trac] for issue tracking and roadmapping, but all Trac issues have now been migrated to GitHub. The old Trac-based issues are still available as read-only archives: [https://imagej.github.io/tickets/ ImageJ]; [https://uw-loci.github.io/tickets/ LOCI/Bio-Formats].
 
 === What are issues for? ===
 
