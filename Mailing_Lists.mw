@@ -40,31 +40,10 @@ If you have found a bug, please [[Bug reporting best practices|submit a bug repo
 |
 For discussion of [[SciJava]] supporting libraries.
 | [http://groups.google.com/group/scijava Archives]
-|-
-| valign="top" |
-[http://lists.openmicroscopy.org.uk/mailman/listinfo/ome-users/ OME-users]
-|
-For [[Bio-Formats]] and [[OMERO]] issues and discussion.
-| [http://lists.openmicroscopy.org.uk/pipermail/ome-users/ Archives]
-|-
-| valign="top" |
-[http://lists.openmicroscopy.org.uk/mailman/listinfo/ome-devel/ OME-devel]
-|
-For [[Bio-Formats]] and [[OMERO]] programming questions.
 | [http://lists.openmicroscopy.org.uk/pipermail/ome-devel/ Archives]
 |-
 | valign="top" |
 [http://lists.sourceforge.net/lists/listinfo/micro-manager-general μManager]
 | [[Micro-Manager]]: open source software package for control of automated microscopes.
 | [http://sourceforge.net/p/micro-manager/mailman/micro-manager-general/ Archives]
-|-
-| valign="top" |
-[http://lists.sourceforge.net/lists/listinfo/bioimagexd-users BioImageXD]
-| [[BioImageXD]]: open source software package for analyzing, processing and visualizing multi-dimensional microscopy images.
-| [http://sourceforge.net/p/bioimagexd/mailman/bioimagexd-users/ Archives]
-|-
-| valign="top" |
-[http://groups.google.com/group/icy-software Icy]
-| [[Icy]]: an open community platform for bioimage informatics.
-| [http://groups.google.com/group/icy-software Archives]
 |}
