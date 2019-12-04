@@ -22,9 +22,7 @@ If you have found a bug, please [[Bug reporting best practices|submit a bug repo
 |-
 | valign="top" |
 [http://imagej.net/list.html ImageJ]
-| For general user and developer discussion about [[ImageJ]].
-
-<span style="font-size: smaller">With ~2000 members, this list is the '''best mailing list to use for help''' with your specific use case.</span>
+| For general user and developer discussion about [[ImageJ]], mostly focused on [[ImageJ1]]. For a larger community of [[ImageJ2]] and [[Fiji]] users, the [https://forum.image.sc/ Image.sc Forum] is preferred.
 | [http://imagej.1557.x6.nabble.com/ Nabble]
 | [http://list.nih.gov/archives/imagej.html Archives]
 |}
