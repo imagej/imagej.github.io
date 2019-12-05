@@ -32,6 +32,9 @@ See the [[source code]] page for details on obtaining the Fiji source code.
 
 = Other downloads =
 
+== Archive ==
+You can download previous Fiji builds by date stamp from the [https://downloads.imagej.net/fiji/archive/ archive].
+
 == Life-Line Fiji versions ==
 
 This sections offers older downloads of Fiji, preserved just prior to introducing major changes. The idea is that if something goes horribly wrong, you can fall back to a stable version.
