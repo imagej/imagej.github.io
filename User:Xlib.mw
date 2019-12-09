@@ -4,10 +4,10 @@
 | name                   = Xlib
 | maintainer             = Beat Münch
 | author                 = Beat Münch
-| filename               = [ftp://ftp.empa.ch/pub/empa/outgoing/BeatsRamsch/lib/xlib_.jar xlib_.jar] 
+| filename               = [[#https://sites.imagej.net/Xlib/plugins/xlib_.jar-20191001174205|xlib_.jar]]
 | released               = 01.06.2015
-| latest version         = 01.10.2019
-| status                 = maintained actively as of October 2019
+| latest version         = 01.12.2019
+| status                 = maintained actively as of December 2019
 | category               = [[:Category:Plugins|Plugins]]
 | website                = http://wiki.imagej.net/Xlib
 }}
