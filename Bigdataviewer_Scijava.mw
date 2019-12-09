@@ -194,3 +194,7 @@ run("Current IJ1 Image [ImgLib2]");
 run("Set Sources Color", "c=255,51,51 sourceindexstring=0"); 
 run("Transform Sources (Affine, string)", "sourceindexstring=0 bdvh_out=Bdv output_mode=[Add To Bdv] stringmatrix=[1,-0.1,0,250,\n 0,0.5,0.1,0,\n 0,0,1,0, \n 0,0,0,1] transforminplace=false");
 </source>
+
+=== List of all commands ===
+The list of commands of this repository is available in the git repository : 
+https://github.com/BIOP/bigdataviewer_scijava
