@@ -184,3 +184,13 @@ for (int i=0;i<2;i++) {
 				"output_mode", "Add To Bdv").get()
 }
 </source>
+==== IJ1 Macro Language ====
+Opens blobs and deforms it and append it in BigDataViewer:
+<source>
+
+run("Create Empty BDV Frame", "is2d=false windowtitle=Bdv px=0.0 py=0.0 pz=-1.0 s=850.0");
+run("Blobs (25K)");
+run("Current IJ1 Image [ImgLib2]");
+run("Set Sources Color", "c=255,51,51 sourceindexstring=0"); 
+run("Transform Sources (Affine, string)", "sourceindexstring=0 bdvh_out=Bdv output_mode=[Add To Bdv] stringmatrix=[1,-0.1,0,250,\n 0,0.5,0.1,0,\n 0,0,1,0, \n 0,0,0,1] transforminplace=false");
+</source>
