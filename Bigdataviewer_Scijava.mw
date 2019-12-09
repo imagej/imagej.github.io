@@ -12,7 +12,7 @@ By using Scijava framework to store BigDataViewer windows through its <code>BdvH
 
 In practice, Bdv windows created via the commands from this update site  are put by default in the <code>ObjectService</code>. To get a reference to these windows:
 
-* In groovy, add this at the beginnign of your script
+* In groovy, add this at the beginning of your script
 <source lang="python">
 #@bdv.util.BdvHandle bdvh
 </source>
