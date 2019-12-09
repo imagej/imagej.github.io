@@ -40,3 +40,38 @@ This repo provide an implementation of all the command from the repository bigda
 ** registration
 ** export
 ** import
+
+== Examples ==
+=== Video ===
+==== 1 - Simple ====
+https://www.youtube.com/watch?v=-q5qIdH9Idw (1 minute)
+* Open a sample image. 
+* Change display settings. 
+* Double clicking on the source in the bdv window translate the window to the origin of the source
+
+==== 2 - IJ Script example ====
+https://youtu.be/IjIW5bOn4P8 (3 minutes)
+* Create Bdv Window
+* Start IJ1 recorder
+* Open a voronoi image
+* Create an affine transform
+* Transform source with affine transform
+* Make a loop and execute it
+* Modify display settings
+
+==== 3 -  Procedural + Warping + Export (xml hdf5 and ImagePlus) ====
+https://youtu.be/uOYWn7tUsf0 (7 minutes)
+* Open a procedural image ( mandelbrot )
+* Create new Bdv Window
+* Open voronoi in this new window
+* Warp one into another using BigWarp
+* Create a new bdv window
+* Transfer initial Voronoi Image into this window
+* Transfer transformed fractal into this window
+* Resample transformed Mandelbrot like Voronoi
+* Save initial voronoi and transformed resampled mandelbrot into a new dataset
+* Close everything
+* Reopen saved dataset
+* Apply correct display settings
+
+Resampling is necessary because XML/Hdf5 do not allow to save procedural images.
