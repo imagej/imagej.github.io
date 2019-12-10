@@ -1,6 +1,9 @@
 [[Category:SNT]][[Category:Neuroanatomy]][[Category:Scripting]]
 {{SNTNavBar}}
 
+==SNT API==
+The full up-to-date SNT API can be found at [http://fiji.github.io/SNT/ http://fiji.github.io/SNT/]
+
 ==Script Templates==
 SNT comes pre-packaged with a variety of script templates demonstrating 
 various analysis, tracing, image processing and utility routines. 
@@ -56,7 +59,7 @@ This menu hosts script templates containing extensible boilerplate code in sever
 Direct access to the SNT API from the [https://www.python.org/ Python] programming language is made possible through the [https://pypi.org/project/pyimagej/ pyimagej] module. This enables full integration between SNT and any library in the Python ecosystem.
 ==Installing pyimagej==
 Follow the instructions given [https://github.com/imagej/pyimagej#installation here]
-==Getting Started==
+===Getting Started===
 To initialize Fiji from Python with GUI capabilities:
 <source lang="python">
 import imagej
@@ -88,6 +91,9 @@ def run():
     print("The average inter-node distance is %d" % summary_stats.getMean())
 </source>
 
-==Advanced Examples==
+===Advanced Examples===
 The [https://github.com/fiji/Simple_Neurite_Tracer/tree/scijava/notebooks Notebooks] directory in the SNT [https://github.com/fiji/Simple_Neurite_Tracer GitHub repository] contains examples which are executable on [https://mybinder.readthedocs.io/en/latest/ Binder].
 For example, to run the convex_hull notebook via [https://mybinder.org/ mybinder.org], follow this link: [https://mybinder.org/v2/gh/fiji/Simple_Neurite_Tracer/scijava?filepath=%2Fnotebooks%2Fconvex_hull.ipynb convex_hull.ipynb]
+
+==Packaging Scripts with SNT==
+To have your own scripts listed in the Script Editor's ''Templates'' menu, save them in the ''scripts'' directory while including ''SNT'' in the filename (e.g., C:\Users\user1\Desktop\Fiji.app\scripts\My_SNT_Script.py).
