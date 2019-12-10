@@ -23,6 +23,19 @@ various analysis, tracing, image processing and utility routines.
 
 '''SciView_Demo.groovy'''  Exemplifies how bridge SNT with [https://imagej.net/SciView SciView].
 
+===Sholl===
+
+'''Extensive_Sholl_Stats.groovy'''  Exemplifies how to perform linear and polynomial regression on tabular Sholl data. 
+
+===Boilerplate===
+This menu hosts script templates containing extensible boilerplate code in several programming languages. The most essential imports and script parameters are included to facilitate rapid development.
+
+'''BSH.bsh''' A boilerplate script template in the [https://beanshell.github.io/ BeanShell] programming language. 
+
+'''GVY.groovy''' A boilerplate script template in the [https://groovy-lang.org/ Apache Groovy] programming language.
+
+'''PY.py''' - A boilerplate script template in the [https://www.python.org/ Python] programming language.
+
 ==Python Notebooks==
 Direct access to the SNT API from the [https://www.python.org/ Python] programming language is made possible through the [https://pypi.org/project/pyimagej/ pyimagej] module. This enables full integration between SNT and any library in the Python ecosystem.
 ==Installing pyimagej==
