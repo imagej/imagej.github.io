@@ -36,6 +36,12 @@ This menu hosts script templates containing extensible boilerplate code in sever
 
 '''PY.py''' - A boilerplate script template in the [https://www.python.org/ Python] programming language.
 
+===Tracing===
+
+'''Scripted_Tracing_Demo.py'''  Exemplifies how to programmatically perform A* tracing between two points without GUI interaction, which allows for automated tracing of relatively simple structures (e.g., neurospheres neurites, microtubule bundles, etc). In this demo, points are retrieved from the SWC file of SNT's "demo tree", effectively recreating the initial SWC data.
+
+'''Scripted_Tracing_Demo_(Interactive).py'''  Exemplifies how to programmatically interact with a running instance of SNT to perform auto-tracing tasks.
+
 ==Python Notebooks==
 Direct access to the SNT API from the [https://www.python.org/ Python] programming language is made possible through the [https://pypi.org/project/pyimagej/ pyimagej] module. This enables full integration between SNT and any library in the Python ecosystem.
 ==Installing pyimagej==
