@@ -1,11 +1,11 @@
 As announced in the forum [https://forum.image.sc/t/getting-bigdataviewer-instance-in-an-imagej-command/21110/8 here] and [https://forum.image.sc/t/fiji-commands-for-bigdataviewer/25601 here], this repository aims at a better integration of BigDataViewer into FIJI by using the Scijava Framework.
 
+== Installation ==
+Enable the [https://imagej.net/Following_an_update_site update site] (https://biop.epfl.ch/Fiji-Update-Bdv/) to activate bigdataviewer_scijava commands. All commands from this update site are present in the github repository [https://github.com/BIOP/bigdataviewer_scijava bigdataviewer_scijava]. A [https://github.com/BIOP/bigdataviewer_scijava#list-of-all-commands-of-the-repository list of all commands] can be found in the repository.
+
 == Goals ==
 * '''Modularity for bigdataviewer!''' Being able to combine scripts or code for display and processing. This update site creates a way to access an existing BDV instance when scripting or writing java code.
 * '''Provide a set of macro recordable commands for bigdataviewer'''. Makes it possible to script basic actions on BigDataViewer with the IJ1 recorder.
-
-== Installation ==
-Enable the update site (link TO BE DONE) to activate bigdataviewer_scijava commands. All commands from this update site are present in the repository [https://github.com/BIOP/bigdataviewer_scijava bigdataviewer_scijava].
 
 == What you can do with this update site ==
 By using Scijava framework to store BigDataViewer windows through its <code>BdvHandle</code> interface, it is possible to communicate bdv instances between scripts and commands (see [https://imagej.net/Script_Parameters script parameter page]). This also facilitates the use of FIJI GUI because the commands of this repository can be chained  easily. Any script or Command which declares a <code>BdvHandle</code> parameter can retrieve or provide reference to existing BigDataViewer instances.
