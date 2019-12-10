@@ -42,6 +42,16 @@ This menu hosts script templates containing extensible boilerplate code in sever
 
 '''Scripted_Tracing_Demo_(Interactive).py'''  Exemplifies how to programmatically interact with a running instance of SNT to perform auto-tracing tasks.
 
+===Utilities===
+
+'''Convert_Traces_to_SWC.py'''  Converts all .traces files in a directory into SWC.
+
+'''Filter_Multiple_Images.py'''  Bulk filtering of image files using Frangi Vesselness.
+
+'''Measure_Multiple_Files.py'''  Bulk measurements of reconstruction files using SNT.
+
+'''Take_Snapshot.py'''  Displays a WYSIWYG image of a tracing canvas. Exemplifies how to script SNT using SNTService.
+
 ==Python Notebooks==
 Direct access to the SNT API from the [https://www.python.org/ Python] programming language is made possible through the [https://pypi.org/project/pyimagej/ pyimagej] module. This enables full integration between SNT and any library in the Python ecosystem.
 ==Installing pyimagej==
