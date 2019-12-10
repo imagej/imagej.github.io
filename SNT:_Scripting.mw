@@ -1,6 +1,27 @@
 [[Category:SNT]][[Category:Neuroanatomy]][[Category:Scripting]]
 {{SNTNavBar}}
 
+==Script Templates==
+SNT comes pre-packaged with a variety of script templates demonstrating 
+various analysis, tracing, image processing and utility routines. 
+===Analysis===
+'''Analysis_Demo.py'''  A Jython demo of how SNT can analyze neuronal reconstructions fetched from online databases such as MouseLight, NeuroMorpho or FlyCircuit. This demo requires internet connection and assumes you've already ran Analysis_Demo_(Interactive).py 
+
+'''Analysis_Demo_(Interactive).py'''  Exemplifies how to programmatically interact with a running instance of SNT to analyze traced data. Because of all the GUI updates, this approach is _significantly slower_ than analyzing reconstructions directly (see Analysis_Demo.py for comparison)
+
+'''Download_ML_Data.groovy'''  Exemplifies how to programmatically retrieve data from MouseLight's database at [//ml-neuronbrowser.janelia.org ml-neuronbrowser.janelia.org]: It iterates through all the neurons in the server and downloads data (both JSON and SWC formats) for cells with soma associated with the specified Allen Reference Atlas (ARA) compartment. Downloaded files will contain all metadata associated with the cell (i.e., labeling used, strain, etc.) For advanced queries, have a look at MouseLightQuerier.
+
+'''Get_Branch_Points_in_Brain_Compartment.groovy'''  Exemplifies how to extract morphometric properties of a MouseLight cell associated with a specific brain region/neuropil compartment. Requires internet connection.
+
+'''Graph_Analysis.py'''  Demonstrates how to handle neurons as graph structures [https://en.wikipedia.org/wiki/Graph_theory (graph theory)] in which nodes connected by edges define the morphology of the neuron. SNT represents neurons as directed graphs (assuming the root -typically the soma- as origin) and allows data be processed using the powerful [https://jgrapht.org/ jgrapht] library. In this demo, the [http://mathworld.wolfram.com/GraphDiameter.html graph diameter] (i.e., the length of the longest shortest path or the longest graph geodesic) of a cellular compartment is computed for a neuron fetched from the MouseLight database.
+
+'''Reconstruction_Viewer_Demo.py'''  Exemplifies how to render reconstructions and neuropil annotations in a stand-alone Reconstruction Viewer. Requires internet connection.
+
+'''Render_Cell_Collection.groovy'''  Exemplifies how to quickly render large collections of cells from a directory of files (900 MouseLight reconstructions rendered in ~30s on a 4 core i7 (ubuntu 18.10) without a discrete graphics card).
+
+'''Render_Cell_Collection_(MultiPanel_Figure).groovy'''  Exemplifies how to generate a publication-quality multi-panel figure in which multiple reconstructions are sorted and color-coded by a specified morphometric trait (cable length in this example). The script prompts for a directory containing the reconstruction files to be analyzed. If no directory is specified, the script will parse a collection of dendritic arbors from the MouseLight database instead.
+
+'''SciView_Demo.groovy'''  Exemplifies how bridge SNT with [https://imagej.net/SciView SciView].
 
 ==Python Notebooks==
 Direct access to the SNT API from the [https://www.python.org/ Python] programming language is made possible through the [https://pypi.org/project/pyimagej/ pyimagej] module. This enables full integration between SNT and any library in the Python ecosystem.
