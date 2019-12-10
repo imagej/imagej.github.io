@@ -96,4 +96,4 @@ The [https://github.com/fiji/Simple_Neurite_Tracer/tree/scijava/notebooks Notebo
 For example, to run the convex_hull notebook via [https://mybinder.org/ mybinder.org], follow this link: [https://mybinder.org/v2/gh/fiji/Simple_Neurite_Tracer/scijava?filepath=%2Fnotebooks%2Fconvex_hull.ipynb convex_hull.ipynb]
 
 ==Packaging Scripts with SNT==
-To have your own scripts listed in the Script Editor's ''Templates'' menu, save them in the ''scripts'' directory while including ''SNT'' in the filename (e.g., C:\Users\user1\Desktop\Fiji.app\scripts\My_SNT_Script.py).
+TBD
