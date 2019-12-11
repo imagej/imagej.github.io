@@ -5,8 +5,9 @@
 The full up-to-date SNT API can be found at [http://fiji.github.io/SNT/ http://fiji.github.io/SNT/]
 
 ==Script Templates==
-SNT comes pre-packaged with a variety of script templates demonstrating 
-various analysis, tracing, image processing and utility routines. 
+SNT comes packaged with script templates demonstrating 
+various analysis, tracing, image processing and utility routines. These templates can be found both in the ''Scripts'' menu of the SNT dialog and in the {{bc|Templates|Neuroanatomy}} menu of Fiji's Script Editor. Scripts can be written in any language supported by Fiji's Script Editor.
+
 ===Analysis===
 '''Analysis_Demo.py'''  A Jython demo of how SNT can analyze neuronal reconstructions fetched from online databases such as MouseLight, NeuroMorpho or FlyCircuit. This demo requires internet connection and assumes you've already ran Analysis_Demo_(Interactive).py 
 
