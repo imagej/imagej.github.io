@@ -66,7 +66,7 @@ Dialog.addChoice("Type:", newArray("8-bit", "16-bit", "32-bit", "RGB"));
 Dialog.addCheckbox("Ramp", true);
 
 // One can add a Help button that opens a webpage
-Dialog.addHelp("https://imagej.nih.gov/ij/macros/DialogDemo.txt");
+Dialog.addHelp("https://imagej.net/macros/DialogDemo.txt");
 
 // Finally show the GUI, once all parameters have been added
 Dialog.show();
@@ -86,7 +86,7 @@ print("Choice:", inChoice);
 print("Do something (1=True, 0=False):", inBoolean);
 </source>
 
-See the section "Dialog" of the [https://imagej.nih.gov/ij/developer/macro/functions.html Macro functions reference] for more details.
+See the section "Dialog" of the [https://imagej.net/developer/macro/functions.html Macro functions reference] for more details.
 
 == Image and file inputs ==
 By default, script and plugins process the last selected image.<br>
