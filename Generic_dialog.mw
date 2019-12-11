@@ -3,6 +3,7 @@ The {{Javadoc | project = ImageJ1 | package = ij/gui | class = GenericDialog}} c
 Fiji offers an additional {{Javadoc | project = Fiji | package = fiji/util/gui | class = GenericDialogPlus}} subclass which include additional GUI item like a file input with a browse button.<br>
 Like the script parameters, plugins using the Generic Dialog (or one of its subclass) are macro recordable.
 
+=== In Jython (or similar scripting language) ===
 Here is an example in Jython.
 <source lang="python">
 from ij.gui import GenericDialog
@@ -35,6 +36,54 @@ if gui.wasOKed():
     inBool = gui.getNextBoolean()
     inChoice = gui.getNextChoice() # one could alternatively call the getNextChoiceIndex too
     inNum = Win.getNextNumber() # This always return a double (ie might need to cast to int)
+</source>
+
+=== In the macro language ===
+There are 2 options to generate a GUI in the ImageJ macro language.<br>
+The first option is convenient if only a single or few parameters are requested.<br>
+It will open a dedicated input window for every parameter requested ie if there are multiple parameters, several windows will successively show up.
+
+<source lang="java">
+someNumber = getNumber("Some number", 0); // 0 is the default here
+someString = getString("Some string", "DefaultValue");
+</source>
+
+The list of possible inputs is the same than for the second option with the Dialog.<br>
+Using Dialog (the 2nd option), a single input window will show up with all parameters. This requires a little bit more coding than the 1st option, but is more elegant.
+
+<source lang="java">
+Dialog.create("My inputs");
+Dialog.addMessage("Some message to display");
+
+var min = 0;
+var max = 10;
+var default = 5;
+Dialog.addSlider("Some slider", min, max, default);
+Dialog.addNumber("Some number", 0);
+Dialog.addString("Some string", "DefaultString");
+
+Dialog.addChoice("Type:", newArray("8-bit", "16-bit", "32-bit", "RGB"));
+Dialog.addCheckbox("Ramp", true);
+
+// One can add a Help button that opens a webpage
+Dialog.addHelp("https://imagej.nih.gov/ij/macros/DialogDemo.txt");
+
+// Finally show the GUI, once all parameters have been added
+Dialog.show();
+
+// Once the Dialog is OKed the rest of the code is executed
+// ie one can recover the values in order of appearance 
+inNumber1 = Dialog.getNumber(); // Sliders are number too
+inNumber2 = Dialog.getNumber();
+inString  = Dialog.getString();
+inChoice  = Dialog.getChoice();
+inBoolean = Dialog.getCheckbox();
+
+print("Number1:", inNumber1);
+print("Number2:", inNumber2);
+print(inString);
+print("Choice:", inChoice);
+print("Do something (1=True, 0=False):", inBoolean);
 </source>
 
 == Image and file inputs ==
