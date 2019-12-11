@@ -86,6 +86,8 @@ print("Choice:", inChoice);
 print("Do something (1=True, 0=False):", inBoolean);
 </source>
 
+See the section "Dialog" of the [https://imagej.nih.gov/ij/developer/macro/functions.html Macro functions reference] for more details.
+
 == Image and file inputs ==
 By default, script and plugins process the last selected image.<br>
 However sometime one needs to specify different images or files as input.<br>
