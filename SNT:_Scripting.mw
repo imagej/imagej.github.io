@@ -96,5 +96,122 @@ def run():
 The [https://github.com/fiji/Simple_Neurite_Tracer/tree/scijava/notebooks Notebooks] directory in the SNT [https://github.com/fiji/Simple_Neurite_Tracer GitHub repository] contains examples which are executable on [https://mybinder.readthedocs.io/en/latest/ Binder].
 For example, to run the convex_hull notebook via [https://mybinder.org/ mybinder.org], follow this link: [https://mybinder.org/v2/gh/fiji/Simple_Neurite_Tracer/scijava?filepath=%2Fnotebooks%2Fconvex_hull.ipynb convex_hull.ipynb]
 
+==Scripting Reconstruction Viewer==
+Programmatic control over an open instance of Reconstruction Viewer can be achieved by selecting the {{bc|Tools & Utilities|Script This Viewer...}} command from RV Controls. This command will open an instance of Fiji's script editor with a boilerplate template containing the most essential imports and script parameters used by Reconstruction Viewer. The default programming language for this template can be chosen from the drop-down menu of the ''Preferred Language'' option after navigating to {{bc|Tools & Utilities|Preferences...}} from the RV Controls. Currently supported languages include Python, Apache Groovy and BeanShell.
+
+The following script exemplifies how to extend the boilerplate template to control the Viewer in real-time.
+
+<source lang="python">
+#@Context context
+#@DatasetService ds
+#@DisplayService display
+#@ImageJ ij
+#@LegacyService ls
+#@LogService log
+#@LUTService lut
+#@SNTService snt
+#@UIService ui
+
+
+"""
+file:	
+version: 
+info:	
+"""
+
+from sc.fiji.snt import (Path, PathAndFillManager, SNT, SNTUI, Tree)
+from sc.fiji.snt.analysis import (MultiTreeColorMapper, PathProfiler, RoiConverter,
+		TreeAnalyzer, TreeColorMapper, TreeStatistics)
+from sc.fiji.snt.analysis.graph import GraphUtils
+from sc.fiji.snt.analysis.sholl import TreeParser
+from sc.fiji.snt.annotation import (AllenCompartment, AllenUtils, VFBUtils, ZBAtlasUtils)
+from sc.fiji.snt.io import (FlyCircuitLoader, MouseLightLoader, NeuroMorphoLoader)
+from sc.fiji.snt.plugin import (SkeletonizerCmd, StrahlerCmd)
+from sc.fiji.snt.util import (BoundingBox, PointInImage, SNTColor, SWCPoint)
+from sc.fiji.snt.viewer import (Annotation3D, OBJMesh, MultiViewer2D, Viewer2D, Viewer3D)
+
+# Documentation Resources: https://imagej.net/SNT:_Scripting
+# SNT API: https://javadoc.scijava.org/Fiji/index.html?sc/fiji/snt/package-summary.html
+# Rec. Viewer's API: https://javadoc.scijava.org/Fiji/sc/fiji/snt/viewer/Viewer3D.html
+# Tip: Programmatic control of the Viewer's scene can be set using the Console info
+# produced when calling viewer.logSceneControls() or pressing 'L' when viewer is frontmost
+
+# If opening this template from the standalone RV, the instance ID of the Viewer (e.g., 2)
+# will be automatically passed as a parameter to getRecViewer()
+viewer = snt.getRecViewer()
+
+
+# Added code begins here ##################################################################
+import time
+
+def do_stuff(viewer):
+
+	viewer.logSceneControls()
+	
+	# Load a neuron from Mouse Secondary Motor Area from the MouseLight database.
+	loader = MouseLightLoader("AA0100")
+	if not loader.isDatabaseAvailable():
+		ui.showDialog("Could not connect to ML database", "Error")
+		return
+	if not loader.idExists():
+		ui.showDialog("Somehow the specified id was not found", "Error")
+		return
+
+	# Extract SWC points with tag "axon".
+	axon = loader.getTree('axon')
+	# Do the same for the dendrites.
+	dendrites = loader.getTree('dendrites')
+
+	# Load the Allen CCF Mouse Reference Brain
+	# and add it to the scene.
+	viewer.loadRefBrain('mouse')
+
+	# Add both Trees to the scene.
+	viewer.addTree(axon)
+	viewer.addTree(dendrites)
+
+	# Get the OBJMesh object represnting the maximum depth Allen CCF compartment
+	# containing the soma point and add it to the scene.
+	soma_annotation = next(iter(loader.getNodes("soma"))).getAnnotation()
+	viewer.addMesh(soma_annotation.getMesh())
+
+	# Enforce side perspective.
+	viewer.setViewMode(Viewer3D.ViewMode.SIDE)
+
+	# Next, we will applying a color mapping to the axon
+	# using branch order as the metric and the Ice Lut.
+	# Make an instance of TreeColorMapper using SciJava context.
+	mapper = TreeColorMapper(context)
+	# Get the net.imglib2.display.ColorTable object.
+	lut = mapper.getColorTable('Ice.lut')
+	# Color code the axon and render in scene.
+	# The min and max values returned by the mapper are used
+	# to set the range of the color bar legend.
+	bounds = viewer.colorCode(axon.getLabel(), TreeColorMapper.BRANCH_ORDER, lut)
+	viewer.addColorBarLegend(lut, bounds[0], bounds[1])
+	# Display a text annotation of the cell ID and metric used by the mapper.
+	scene_annotation = "{}: Branch Order".format(axon.getLabel())
+	viewer.addLabel(scene_annotation)
+
+	# Begin a rotation animation for the objects in scene.
+	viewer.setAnimationEnabled(True)
+	# Wait some time before applying a new color mapping
+	# based on path distances, using a different LUT (Fire).
+	time.sleep(5)
+	
+	lut = mapper.getColorTable('Fire.lut')
+	# Remap the axon Tree and update scene.
+	bounds = viewer.colorCode(axon.getLabel(), TreeColorMapper.PATH_DISTANCE, lut)
+	viewer.addColorBarLegend(lut, bounds[0], bounds[1])
+	scene_annotation = "{}: Path Distance".format(axon.getLabel())
+	viewer.addLabel(scene_annotation)
+	
+
+do_stuff(viewer)
+
+</source>
+
+ 
+
 ==Packaging Scripts with SNT==
 TBD
