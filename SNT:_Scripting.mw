@@ -97,7 +97,7 @@ The [https://github.com/fiji/Simple_Neurite_Tracer/tree/scijava/notebooks Notebo
 For example, to run the convex_hull notebook via [https://mybinder.org/ mybinder.org], follow this link: [https://mybinder.org/v2/gh/fiji/Simple_Neurite_Tracer/scijava?filepath=%2Fnotebooks%2Fconvex_hull.ipynb convex_hull.ipynb]
 
 ==Scripting Reconstruction Viewer==
-Programmatic control over an open instance of Reconstruction Viewer can be achieved by selecting the {{bc|Tools & Utilities|Script This Viewer...}} command from RV Controls. This command will open an instance of Fiji's script editor with a boilerplate template containing the most essential imports and script parameters used by Reconstruction Viewer. The default programming language for this template can be chosen from the drop-down menu of the ''Preferred Language'' option after navigating to {{bc|Tools & Utilities|Preferences...}} from the RV Controls. Currently supported languages include Python, Apache Groovy and BeanShell.
+Programmatic control over an open instance of Reconstruction Viewer (either called from within SNT or as a standalone application) can be achieved by selecting the {{bc|Tools & Utilities|Script This Viewer...}} command from RV Controls. This command will open an instance of Fiji's script editor with a boilerplate template containing the most essential imports and script parameters used by Reconstruction Viewer. The default programming language for this template can be chosen from the drop-down menu of the ''Preferred Language'' option after navigating to {{bc|Tools & Utilities|Preferences...}} from the RV Controls. Currently supported languages include Python, Apache Groovy and BeanShell.
 
 The following script exemplifies how to extend the boilerplate template to control the Viewer in real-time.
 
@@ -210,8 +210,6 @@ def do_stuff(viewer):
 do_stuff(viewer)
 
 </source>
-
- 
 
 ==Packaging Scripts with SNT==
 TBD
