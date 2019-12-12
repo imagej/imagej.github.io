@@ -102,15 +102,15 @@ Programmatic control over an open instance of Reconstruction Viewer (either call
 The following script exemplifies how to extend the boilerplate template to control the Viewer in real-time.
 
 <source lang="python">
-#@Context context
-#@DatasetService ds
-#@DisplayService display
-#@ImageJ ij
-#@LegacyService ls
-#@LogService log
-#@LUTService lut
-#@SNTService snt
-#@UIService ui
+#@ Context context
+#@ DatasetService ds
+#@ DisplayService display
+#@ ImageJ ij
+#@ LegacyService ls
+#@ LogService log
+#@ LUTService lut
+#@ SNTService snt
+#@ UIService ui
 
 
 """
