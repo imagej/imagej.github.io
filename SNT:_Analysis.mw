@@ -4,7 +4,7 @@
 
 =Sholl Analysis=
 [[Image:Snt-Sholl-Coarse-Intructions.png|right|thumb|200px|Initiating Sholl Analysis: coarse method]]
-To initiate [https://imagej.net/Sholl_Analysis Sholl Analysis], you must select a focal point. You can do it coarsely by right-clicking near a node and choosing ''Sholl Analysis at Nearest Node'' from the contextual menu (Shortcut: {{key|Alt}} + {{key|Shift}} + {{key|A}}.  
+To initiate [https://imagej.net/Sholl_Analysis Sholl Analysis] on a tracing in the canvas, you must select a focal point. You can do it coarsely by right-clicking near a node and choosing ''Sholl Analysis at Nearest Node'' from the contextual menu (Shortcut: {{key|Alt}} + {{key|Shift}} + {{key|A}}.  
 
 Alternatively, for precise positioning of the center of analysis:
 # Mouse over the path of interest. Press {{key|G}} to activate it.
@@ -20,7 +20,7 @@ Alternatively, for precise positioning of the center of analysis:
 
 {{clear}}
 
-The Sholl dialog created by this approach differs slightly from the dialog created by running the {{bc|Analyze|Sholl|Sholl Analysis (From Tracings)...}} plugin in the main Fiji menu. First, the center of analysis is automatically taken from the nearest (or exact) node where the user clicks.  Another advantage is that the display canvas allows the radius step size to be previewed visually. To do this, toggle on the ''Preview'' checkbox under the ''Sampling'' section and experiment with different step sizes.
+The Sholl dialog created by this approach differs slightly from the dialog created by running the {{bc|Analyze|Sholl|Sholl Analysis (From Tracings)...}} plugin in the main Fiji menu. First, the center of analysis is automatically taken from the nearest (or exact) node where the user clicks. In addition to morphology and custom tag filters, the ''Path filtering'' drop-down menu provides an additional option to restrict the analysis to the subset of paths selected in the Path Manager. Another advantage is that the display canvas allows the radius step size to be previewed visually. To do this, toggle on the ''Preview'' checkbox under the ''Sampling'' section and experiment with different step sizes.
 
 <div align="center">
 <ul> 
