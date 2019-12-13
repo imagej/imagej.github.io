@@ -21,8 +21,8 @@ Alternatively, for precise positioning of the center of analysis:
 The Sholl dialog created by this approach differs slightly from the dialog created by running the {{bc|Analyze|Sholl|Sholl Analysis (From Tracings)...}} plugin in the main Fiji menu. First, the center of analysis is automatically taken from the nearest (or exact) node where the user clicks.  Another advantage is that the display canvas allows the radius step size to be previewed visually. To do this, toggle on the ''Preview'' checkbox under the ''Sampling'' section and experiment with different step sizes.
 <div align="center">
 <ul> 
-<li style="display:inline-block;"> [[Image:Snt-Sholl-preview-step-size-1.png|none|thumb|200px|1) Select path]] </li>
-<li style="display:inline-block;"> [[Image:Snt-Sholl-preview-step-size-2.png|none|thumb|200px|1) Select path]] </li>
+<li style="display:inline-block;"> [[Image:Snt-Sholl-preview-step-size-1.png|none|thumb|200px|Step Size = 0]] </li>
+<li style="display:inline-block;"> [[Image:Snt-Sholl-preview-step-size-2.png|none|thumb|200px|Step Size = 5]] </li>
 </ul>
 </div>
 
