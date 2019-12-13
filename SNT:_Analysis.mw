@@ -26,5 +26,6 @@ The Sholl dialog created by this approach differs slightly from the dialog creat
 </ul>
 </div>
 
+In addition to the Sholl Profile plot and table, the output of the analysis can be visualized as a color mapping of the reconstruction and as a [https://imagej.net/Simple_Neurite_Tracer:_Sholl_analysis#Sholl_Image Sholl Image]. To color code the tracing, choose ''Color coded paths'' from the ''Annotations'' drop-down menu and select a Lut from the ''Annotations Lut'' drop-down menu before pressing ''Run Analysis''.  To output the Sholl Image, choose ''3D viewer labels image'' from the ''Annotations'' drop-down menu and select the desired Lut before running the analysis.
 
 {{SNTNavBar}}
