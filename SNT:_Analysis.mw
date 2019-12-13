@@ -3,16 +3,18 @@
 <div class="toclimit-3">
 
 =Sholl Analysis=
-[[Image:Snt-Sholl-Coarse-Intructions.png|right|thumb|300px|Initiating Sholl Analysis: First method]]
+[[Image:Snt-Sholl-Coarse-Intructions.png|right|thumb|200px|Initiating Sholl Analysis: coarse method]]
 To initiate [https://imagej.net/Sholl_Analysis Sholl Analysis], you must select a focal point. You can do it coarsely by right-clicking near a node and choosing ''Sholl Analysis at Nearest Node'' from the contextual menu (Shortcut: {{key|Alt}} + {{key|Shift}} + {{key|A}}.  
 
-{{clear}}
-
+Alternatively, for precise positioning of the center of analysis:
+# Mouse over the path of interest. Press {{key|G}} to activate it.
+# Press {{key|Alt}}+{{key|Shift}} to select a node along the path.
+# Press {{key|Alt}}+{{key|Shift}}+{{key|A}} to start analysis.
 <div align="center">
 <ul> 
-<li style="display:inline-block;"> [[Image:Snt-Sholl-Precise-Step-1.png|none|thumb|325px|1) Select path]] </li>
-<li style="display:inline-block;"> [[Image:Snt-Sholl-Precise-Step-2.png|none|thumb|325px|2) Snap cursor to node along path]] </li>
-<li style="display:inline-block;"> [[Image:Snt-Sholl-Precise-Step-3.png|none|thumb|325px|3) After pressing "Alt+Shift+A"]] </li>
+<li style="display:inline-block;"> [[Image:Snt-Sholl-Precise-Step-1.png|none|thumb|200px|1) Select path]] </li>
+<li style="display:inline-block;"> [[Image:Snt-Sholl-Precise-Step-2.png|none|thumb|200px|2) Snap cursor to node]] </li>
+<li style="display:inline-block;"> [[Image:Snt-Sholl-Precise-Step-3.png|none|thumb|350px|3) Press "Alt+Shift+A"]] </li>
 </ul>
 </div>
 
