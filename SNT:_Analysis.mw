@@ -17,8 +17,11 @@ Alternatively, for precise positioning of the center of analysis:
 <li style="display:inline-block;"> [[Image:Snt-Sholl-Precise-Step-3.png|none|thumb|146px|3) Press "Alt+Shift+A"]] </li>
 </ul>
 </div>
+
 {{clear}}
+
 The Sholl dialog created by this approach differs slightly from the dialog created by running the {{bc|Analyze|Sholl|Sholl Analysis (From Tracings)...}} plugin in the main Fiji menu. First, the center of analysis is automatically taken from the nearest (or exact) node where the user clicks.  Another advantage is that the display canvas allows the radius step size to be previewed visually. To do this, toggle on the ''Preview'' checkbox under the ''Sampling'' section and experiment with different step sizes.
+
 <div align="center">
 <ul> 
 <li style="display:inline-block;"> [[Image:Snt-Sholl-preview-step-size-1.png|none|thumb|200px|Step Size = 0]] </li>
@@ -27,5 +30,12 @@ The Sholl dialog created by this approach differs slightly from the dialog creat
 </div>
 
 In addition to the Sholl Profile plot and table, the output of the analysis can be visualized as a color mapping of the reconstruction and as a [https://imagej.net/Simple_Neurite_Tracer:_Sholl_analysis#Sholl_Image Sholl Image]. To color code the tracing, choose ''Color coded paths'' from the ''Annotations'' drop-down menu and select a Lut from the ''Annotations Lut'' drop-down menu before pressing ''Run Analysis''.  To output the Sholl Image, choose ''3D viewer labels image'' from the ''Annotations'' drop-down menu and select the desired Lut before running the analysis.
+
+<div align="center">
+<ul> 
+<li style="display:inline-block;"> [[Image:Snt-Sholl-Color-Map.png|none|thumb|200px|Step Size = 0]] </li>
+<li style="display:inline-block;"> [[Image:Snt-Sholl-Color-Map-Mask.png|none|thumb|200px|Step Size = 5]] </li>
+</ul>
+</div>
 
 {{SNTNavBar}}
