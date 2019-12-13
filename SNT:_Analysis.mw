@@ -33,8 +33,8 @@ In addition to the Sholl Profile plot and table, the output of the analysis can 
 
 <div align="center">
 <ul> 
-<li style="display:inline-block;"> [[Image:Snt-Sholl-Color-Map.png|none|thumb|200px|Step Size = 0]] </li>
-<li style="display:inline-block;"> [[Image:Snt-Sholl-Color-Map-Mask.png|none|thumb|200px|Step Size = 5]] </li>
+<li style="display:inline-block;"> [[Image:Snt-Sholl-Color-Map.png|none|thumb|200px|Color coded tracing - Ice Lut]] </li>
+<li style="display:inline-block;"> [[Image:Snt-Sholl-Color-Map-Mask.png|none|thumb|200px|Sholl Image - Ice Lut]] </li>
 </ul>
 </div>
 
