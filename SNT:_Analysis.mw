@@ -4,7 +4,7 @@
 
 =Sholl Analysis=
 To initiate [https://imagej.net/Sholl_Analysis Sholl Analysis], you must select a focal point. You can do it coarsely by right-clicking near a node and choosing ''Sholl Analysis at Nearest Node'' from the contextual menu (Shortcut: {{key|Alt}} + {{key|Shift}} + {{key|A}}.  
-[[Image:Snt-Sholl-Coarse-Intructions.png|right|thumb|400px|Initiating Sholl Analysis: First method]]
+[[Image:Snt-Sholl-Coarse-Intructions.png|right|thumb|300px|Initiating Sholl Analysis: First method]]
 
 
 {{SNTNavBar}}
