@@ -40,4 +40,14 @@ In addition to the Sholl Profile plot and table, the output of the analysis can 
 </ul>
 </div>
 
+=Strahler Analysis=
+To conduct [https://imagej.net/Strahler_Analysis Strahler Analysis] on the current contents of the Path Manager, choose the {{bc|Utilities|Strahler Analysis}} command in the main SNT dialog. This command will output the results of the analysis as a table and plot. These figures contains statistics on the group of paths associated with each Horton-Strahler Number. Note that this feature analyzes traced reconstructions. To run Strahler analysis on images, use the {{bc|Analyze|Skeleton|Strahler Analysis...}} plugin in the main Fiji dialog.
+
+<div align="left">
+<ul> 
+<li style="display:inline-block;"> [[Image:SNT-Strahler-Analysis-Table.png|none|thumb|200px|Strahler Analysis table for OP_1]] </li>
+<li style="display:inline-block;"> [[Image:SNT-Strahler-Analysis-Plot.png|none|thumb|200px|Strahler Analysis plot for OP_1]] </li>
+</ul>
+</div>
+
 {{SNTNavBar}}
