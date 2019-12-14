@@ -50,4 +50,7 @@ To conduct [https://imagej.net/Strahler_Analysis Strahler Analysis] on the curre
 </ul>
 </div>
 
+=Custom Analyses=
+It is possible to script your own analysis routines. See [https://imagej.net/SNT:_Scripting SNT:_Scripting] for the link to SNT's API as well as script templates demonstrating a range of analysis possibilities.
+
 {{SNTNavBar}}
