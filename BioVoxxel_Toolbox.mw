@@ -109,7 +109,7 @@ Purpose: The "Speckle Inspector" is able to identify bigger features by the numb
 
 How to: In the setup dialog the user can enter the 2 images to be analyzed as well as lower and upper limits of speckle numbers, speckle sizes, object size and object circularity to determine characteristics which include/exclude speckles and features from the analysis according to the entered parameters.
 
-[[File:SpeckleInspector1.png|750px]]
+[[File:SpeckleInspector1.png|1000px]]
 
 The macro gives different outputs. The optical output is an color-coded image, where positive features (lying inbetween the determined minimum and maximum parameters) are colord in magenta, features containing less than the specified minimum speckle numbers are colored in blue and features containing more than the specified maximum speckle numbers are colored in green. In the same image the features are numbered to identify them in the respective speckle list as well as the ROI manager. Furthermore, they contain the number of "speckles" per feature in brackets. The second output are all feature selection ROIs in the ImageJ/Fiji ROI manager. Moreover a list of all features and respective speckle numbers is given if "show speckle list" was ticked. The "statistics log" window depicts an analysis of the features showing overall numbers of features and speckles as well as the numbers for the features lying below, inbetween, and above the thresholds.
 You can also choose if you want to see the RoiManager for the objects rois to further analyze the original image.
