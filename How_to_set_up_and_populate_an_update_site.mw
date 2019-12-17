@@ -37,7 +37,7 @@ You can also manually [[Special:ChangeUploadPassword|change or initialize your u
 === Dedicated plugin update sites ===
 Rather than having a single update site for many plugins, it is highly advised to set up dedicated update sites for each plugin that could be of interest to the community.<br>
 Such dedicated update site can have a more intuitive name.<br>
-A given user/wiki account can own several update sites. To request a new update site for your user account, post your request on the forum (see [https://forum.image.sc/t/distributing-several-update-sites/21219/2?u=lthomas related post]).
+A given user/wiki account can own several update sites. To request a new update site for your user account, post your request on the forum (see [https://forum.image.sc/t/distributing-several-update-sites/21219/2?u=lthomas related post]), or on the [https://gitter.im/imagej/imagej ImageJ Gitter].
 
 == Group update site ==
 In addition to [[personal update sites]], it is possible for groups of people to share an update site.
