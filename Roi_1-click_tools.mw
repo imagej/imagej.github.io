@@ -1,0 +1,27 @@
+{{Infobox
+| software               = ImageJ
+| name                   = ROI 1-click tools
+| author                 = {{Person|Lthomas}}
+| maintainer             = {{Person|Lthomas}}
+| update site            = ROI 1-click tools
+| source                 = {{GitHub|org=LauLauThom|repo=Fiji-RoiClickTools}}
+| released               = 2019
+| status                 = active
+| category               = [[:Category:Analysis|Analysis]]
+}}
+
+= Installation =
+In Fiji, activate the '''ROI 1-click tools''' update site.<br>
+In ImageJ, copy the file ''RoiClicTools.ijm'' to ''ImageJ\macros\toolsets''
+
+= Credits =
+If you use these tools please cite:<br>
+
+Laurent Thomas (2019, December 16)<br>
+ImageJ/Fiji 1-click ROI Tools (Version 1)<br>
+Zenodo - http://doi.org/10.5281/zenodo.3577888
+
+
+[[Category:Plugins]]
+[[Category:Update Sites]]
+[[Category:Macro Tools]]
