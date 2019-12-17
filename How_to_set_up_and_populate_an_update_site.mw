@@ -163,7 +163,8 @@ Check that your plugins are now registered as ImageJ plugins by selecting the ''
 
 [[Image:UpdaterFinalScreen.jpg|770px]]
 
-That's it - you're done. Now, anyone who wants a copy of your plugins merely needs to [[How to follow a 3rd party update site|add your update site]] to the Update manger via the URL you specified, and your plugins will be downloaded and updated in their ImageJ installations just like the standard ImageJ plugins.
+That's it - you're done. Now, anyone who wants a copy of your plugins merely needs to [[How to follow a 3rd party update site|add your update site]] to the Update manger via the URL you specified, and your plugins will be downloaded and updated in their ImageJ installations just like the standard ImageJ plugins.<br>
+For even more visibility and practicability, you can ask to have your update site listed in the Fiji Updater (see section below).
 
 == Publishing your update site ==
 
