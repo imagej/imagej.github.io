@@ -1,0 +1,99 @@
+
+== General ==
+
+IsletJ2 is a tool implemented as an ImageJ plugin that segments and reports properties of the Langerhans islets. The plugin was available already in 2018 under name IsletJ. However, many changes have been implemented since then. The original version can be found [https://imagej.net/IsletJ here].
+
+Perhaps the most noticable change is the new graphical user interface (GUI). We made the GUI simpler and hopefully, more comfortable to use.
+
+Despite being invisible to the eyes of users, massive changes have been done in the plugin core. The whole plugin has been rewritten from the ground up, resulting in more modular and extensible code and lesser demands on computing resources. The plugin, however, still employs the same approach as before.
+
+== Installation ==
+
+The plugin was tested to work with ImageJ 1.52 (Fiji distribution) and Java 8. Follow these steps (a general procedure to install an ImageJ plugin) to install the plugin:
+
+# Start ImageJ and start updater using <code>Help</code> – <code>Update...</code>.
+# Click <code>Manage update sites</code> and add a new site using <code>Add update site</code>, then enter a name (e.g., <code>IsletJ2</code>) and URL <code>https://sites.imagej.net/IsletJ2/</code>. Close the dialog.
+# Click <code>Apply changes</code> to fetch and install the plugin.
+# Restart ImageJ.
+
+== Training == 
+
+The training procedure consists of three consecutive phases:
+
+# sample loading,
+# ground truth verification,
+# and model training.
+
+In the first phase, a user select a directory that contains input images together with their corresponding ground truth images. IsletJ2 expects the names of the input files to have a specific format consisting of a prefix, a single underscore, and a number. The plugin uses the prefix to group the images and the ground truths, respectively, which means that all the images must have a common
+prefix, and the same holds for the ground truths as well. The underscore serves purely as a delimiter between the preceding prefix and the following number. Finally, the number connects an image with its ground truth. For example, the names can be set as follows.
+
+<source>
+gt_01.png
+gt_02.png
+image_01.png
+image_02.png
+</source>
+
+After the images are loaded and displayed to a user, the user should verify that the plugin recognized the images and ground truths correctly. If the retrieved segmentations are correct, it is possible to advance to the last phase.
+
+The last phase deals with model training. It is required to set a path where a model will be saved. Then, after pressing the <code>Train</code> button, the plugin will extract features from the images and start training the model.
+
+'''Note:''' When the training starts, the values of the form inputs are saved and will be used to pre-fill the form in the next training.
+
+'''Note:''' The training will probably take several minutes (depending on the number and size of the input images, or your computer performance). It also uses a lot of CPU and operational memory.
+
+=== Training protocol ===
+
+Once the training finishes, a protocol is composed and saved to the same directory as the trained model. The protocol is a CSV file with two columns per row. Each row represents a single training example: the first and the second column contain paths to the example image and ground truth, respectively. The protocol name has a particular form, namely <code>isletj_MODEL_YYYY-MM-DD_hh-mm-ss.csv</code>, where <code>MODEL</code> is the model name, and <code>YYYY-MM-DD_hh-mm-ss</code> specifies the date and time when the protocol was created, e.g., <code>isletj_model-file.gz_2019-12-19_14-23-31.csv</code>.
+
+== Analysis ==
+
+The analysis assumes that there is a trained model somewhere in the file system.
+
+Contrary to the training, the analysis form is straightforward. It consists of five inputs that specify:
+
+# a path to a directory containing images to analyze,
+# the size of a pixel in micrometers,
+# the minimal diameter of islets to consider,
+# a path to the trained model,
+# a path to a directory to save the analysis output.
+
+The selected input directory must exist and must contain at least one image. Currently, the plugin supports PNG format.
+
+The output directory must exist; and if it is not empty, the plugin will ask for a confirmation. The directory will contain a segmentation for each input image and a protocol.
+
+'''Note:''' The input values will be saved and pre-filled for further analyses.
+
+=== Analysis protocol ===
+
+Similarly to the training protocol, the analysis protocol is a CSV file. There is a row for each input image and consists of 4+15 columns:
+
+# path to the input image,
+# the number of recognized islets,
+# elliptical volume (in IEQ),
+# spherical volume (in IEQ),
+# the last 15 columns are for 15 different bins with diameter frequencies (based on the histogram of Ricordi).
+
+== Tips ==
+
+=== Keyboard shortcuts ===
+
+Should you use the plugin very frequently, it would be perhaps useful to access its features via some keyboard shortcuts.
+
+A new keyboard shortcut can be defined using <code>Plugins</code> – <code>Shortcuts</code> – <code>Add Shortcut...</code> in the top menu. In the displayed window, pick a shortcut of your choice (e.g., <code>F12</code>) and select <code>Analyze</code> or <code>Train</code> as the command.
+
+See [https://imagej.net/docs/guide/146-31.html#toc-Subsection-31.2.2 ImageJ docs] for more information on how to manage keyboard shortcuts in ImageJ.
+
+=== Determining the pixel size ===
+
+Take a photo of a stage micrometer and open the photo in Fiji. Use a straight line to measure the distance from 0 to 4. Then open <code>Analyze</code> – <code>Set Scale...</code> and fill the <code>Known distance</code> input. Fiji will compute the number of pixels per micrometer. Invert the number to get the number of micrometers per pixel.
+
+[[File:Micrometer.png|center|frame|How to measure the pixel size. Taken from the [https://github.com/jschier/IsletJ/blob/master/pdf/IsletJ_Guide_2.pdf documentation] of the original plugin version.]]
+
+== Acknowledgements ==
+
+The current implementation is heavily inspired by the previous implementation done by ''Jan Schier''.
+
+The method used in the plugin was developed and described in the following work:
+
+* Habart, D. ''et al.'' (2016) ‘Automated Analysis of Microscopic Images of Isolated Pancreatic Islets’, ''Cell Transplantation'', 25(12), pp. 2145–2156. doi: 10.3727/096368916X692005.
