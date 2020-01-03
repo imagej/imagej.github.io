@@ -47,6 +47,6 @@ These are meant to be updated through Fiji's updater using the URL to this page 
 
 '''psAFRET analysis macros'''
 
-The Dual-View image psAFRET analysis macro can be downloaded from here [].
+The Dual-View image psAFRET analysis macro can be downloaded from here [https://sites.imagej.net/Pattersg/macros/PS_AFRET_dual_view_image_analysis.ijm-20200103105654].
 
-The curve-fitting and anisotropy calculation macro can be downloaded from here []
+The curve-fitting and anisotropy calculation macro can be downloaded from here [https://sites.imagej.net/Pattersg/macros/PS_AFRET_r_calculation.ijm-20200103105654]
