@@ -35,6 +35,11 @@ https://github.com/pattersg/Photoswitching_pixel_fitter
 
 
 
+
+
+
+
+
 '''Photoswitching Anisotropy FRET experiment analysis'''
 
 These macros are designed to analyze experiments in which photoswitchable fluorescent proteins have been switched off while monitoring anisotropy.
