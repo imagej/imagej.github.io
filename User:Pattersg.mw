@@ -8,9 +8,9 @@ These are meant to be updated through Fiji's updater using the URL to this page 
 
 The macros are designed to be used with images collected through an image splitter and may be of limited use.  However, someone with a working knowledge of the ImageJ macro language can adapt them in a straightforward manner to accommodate most images.  
 
-The Dual-View image analysis macro can be downloaded from here [https://sites.imagej.net/Pattersg/macros/psFRET_dual_view_image_analysis.ijm-20180801100053].
+The Dual-View image analysis macro can be downloaded or copied from here [https://sites.imagej.net/Pattersg/macros/psFRET_dual_view_image_analysis.ijm-20180801100053].
 
-The curve-fitting macro can be downloaded from here [https://sites.imagej.net/Pattersg/macros/psFRET_curve_fitting_analysis.ijm-20181217151301]
+The curve-fitting macro can be downloaded or copied from here [https://sites.imagej.net/Pattersg/macros/psFRET_curve_fitting_analysis.ijm-20181217151301]
 
 
 '''psFRET_TProfiler'''
@@ -47,6 +47,6 @@ These are meant to be updated through Fiji's updater using the URL to this page 
 
 '''psAFRET analysis macros'''
 
-The Dual-View image psAFRET analysis macro can be downloaded from here [https://sites.imagej.net/Pattersg/macros/PS_AFRET_dual_view_image_analysis.ijm-20200103105654].
+The Dual-View image psAFRET analysis macro can be downloaded or copied from here [https://sites.imagej.net/Pattersg/macros/PS_AFRET_dual_view_image_analysis.ijm-20200103105654].
 
-The curve-fitting and anisotropy calculation macro can be downloaded from here [https://sites.imagej.net/Pattersg/macros/PS_AFRET_r_calculation.ijm-20200103105654]
+The curve-fitting and anisotropy calculation macro can be downloaded or copied from here [https://sites.imagej.net/Pattersg/macros/PS_AFRET_r_calculation.ijm-20200103105654]
