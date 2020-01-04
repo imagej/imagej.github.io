@@ -35,6 +35,9 @@ This guide covers the process of migrating a page from the ImageJ Documentation 
 </ol>
 </li>
 <li>
+<b>Add categories to your page</b> so that it is classified correctly. The Colocalization Finder page is in the <code>plugins/analysis</code> subtree, so we will add <code><nowiki>[[Category:Analysis]]</nowiki></code> and <code><nowiki>[[Category:Plugins]]</nowiki></code>. These tags go at the very bottom of the wiki markup, each one on its own line. See [[Special:Categories]] for a complete list of available categories on imagej.net.
+</li>
+<li>
 <b>Fix any remaining errors and imperfections.</b> Inspect the rendered page, noting any problems. Then scroll down below the page to find the text box containing the wiki markup code.
 <ul>
 <li>The <code>&lt;note warning&gt;...&lt;/note&gt;</code> block can become a <code><nowiki>{{Warning | ...}}</nowiki></code> block. (See documentation for [[Template:Warning]], [[Template:Notice]], [[Template:Tech]], [[Template:Box]], [[Template:Tip]], and [[:Category:Boxes|other boxes]].)</li>
