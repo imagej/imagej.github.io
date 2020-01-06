@@ -343,6 +343,8 @@ without quotation marks, spaces, or any other characters.  Csv files storing big
 
 The "normal" BigWarp plugin accessible through ''Plugins {{arrow}} Big Data Viewer {{arrow}} BigWarp'' works well for small- and medium-sized images but not for very large volumes (that do not fit into memory).  For very large volumes, we recommend first [https://imagej.net/BigDataViewer#Exporting_Datasets_for_the_BigDataViewer converting the volume to bigdataviewer's xml/hdf5 format], then using [https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_ImagePlus_or_Xml.groovy this script] to run BigWarp using the xml/h5 file(s). See also [https://forum.image.sc/t/issue-with-big-warp/31472 this forum post.]
 
+[https://raw.githubusercontent.com/saalfeldlab/bigwarp/master/scripts/BigWarp_N5.groovy This script] enables you to run BigWarp using images stored using [https://github.com/saalfeldlab/n5 N5].
+
 
 = Tutorials = 
 * An example of a 2d warping by [http://kiaru.eu/cv-rapide/ Nicolas Chiaruttini] in response to [https://forum.image.sc/t/superimpose-atlas-image-onto-microscope-picture/20593 this forum post.]
