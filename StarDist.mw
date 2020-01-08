@@ -14,7 +14,7 @@ See the [https://github.com/mpicbg-csbd/stardist main repository] for links to o
 # Select <code>Help > Update...</code> from the menu bar.
 # Click on the button `Manage update sites`.
 # Scroll down the list and tick the checkboxes for update sites <code>CSBDeep</code> and <code>StarDist</code>, then click the <code>Close</code> button
-[[File: StarDist_update_site.png]]
+[[File: StarDist_update_site.png|512px]]
 # Click on <code>Apply changes</code> to install the plugin.
 # Restart Fiji.
 
@@ -24,20 +24,20 @@ Open the image that should be segmented. Note, that currently only 2D and 2D+tim
 
 {| class="wikitable"
 |-
-| [[File: StarDist_usage_param_pred.jpg|300px]]
+| [[File: StarDist_usage_param_pred.jpg|400px]]
 | Select a neural network model from the dropdown list: this can be either <ul><li> a pretrained model. We currently provide <code>Versatile...</code> and <code>DSB 2018...</code> that were both trained on the [https://data.broadinstitute.org/bbbc/BBBC038/ DSB 2018 nuclei segmentation challenge dataset]<li> a user-trained model ([https://github.com/mpicbg-csbd/stardist via the training code]) that has been exported as zip file or url (specified later on)</ul> ''Additionally one can change/disable the input image normalization if necessary'
 |-
-| [[File: StarDist_usage_param_nms.jpg|300px]]
+| [[File: StarDist_usage_param_nms.jpg|400px]]
 | Adjust the postprocessing (Non-Maximum-Suppression NMS) parameter <ul> <li> the higher the ''Object Threshold'' the fewer objects will be selected <li> the higher the ''Overlap Threshold'' the more objects are allowed to overlap </ul> 
 It is recommended to load the default NMS parameters of the current model (see below)
 |- 
-| [[File: StarDist_usage_param_advanced.jpg|300px]]
+| [[File: StarDist_usage_param_advanced.jpg|400px]]
 | Advanced options <ul><li> Specifying the user-trained model file or URL <li>  Number of tiles (increase if out of GPU memory e.g. for larger images) <li> Load default NMS parameter for the current model (see above)</ul>
 |-
 |}
 After running the plugin, the result will be displayed as label image and as regions in the ROI-manager:
  
-[[File: StarDist_usage_result.jpg|300px]]
+[[File: StarDist_usage_result.jpg|512px]]
 
 
 
