@@ -1,1 +1,4 @@
-stub
+This is the ImageJ/Fiji plugin for [https://github.com/mpicbg-csbd/stardist StarDist], which can be used to apply already trained models to new images.<br>
+''Note: The plugin (currently) only supports 2D image and time lapse data''
+
+See the [https://github.com/mpicbg-csbd/stardist main repository] for links to our publications and the full-featured Python package that can also be used to train new models.
