@@ -4,7 +4,7 @@
 
 This is the ImageJ/Fiji plugin for [https://github.com/mpicbg-csbd/stardist StarDist], a cell/nuclei detection method for microscopy images with star-convex shape priors.
 The plugin can be used to apply already trained models to new images. Currently, it only supports 2D image and time lapse data.
-See the [https://github.com/mpicbg-csbd/stardist main repository] for links to our publications and the full-featured Python package that can also be used to train new models.
+See the [https://github.com/mpicbg-csbd/stardist main repository] for links to our publications and the full-featured Python package that can also be used to train new models. If you encounter problems with the plugin, please file an issue [https://github.com/mpicbg-csbd/stardist-imagej here].
 
 [[File: Stardist_screenshot_small.jpg|640px]]
 
