@@ -13,7 +13,8 @@ See the [https://github.com/mpicbg-csbd/stardist main repository] for links to o
 # Start Fiji (or download and install it from [https://fiji.sc here] first.
 # Select <code>Help > Update...</code> from the menu bar.
 # Click on the button `Manage update sites`.
-# Scroll down the list and tick the checkboxes for update sites <code>CSBDeep</code> and <code>StarDist</code>, then click the <code>Close</code> button. (If <code>StarDist</code> is missing, click <code>Add update site</code> and add it manually with URL https://sites.imagej.net/StarDist.)
+# Scroll down the list and tick the checkboxes for update sites <code>CSBDeep</code> and <code>StarDist</code>, then click the <code>Close</code> button
+[[File: StarDist_update_site.png]]
 # Click on <code>Apply changes</code> to install the plugin.
 # Restart Fiji.
 
@@ -42,8 +43,6 @@ After running the plugin, the result will be displayed as label image and as reg
 
 == Citation ==
 
-Please cite the paper(s) if you are using the plugin in your research:
+Please cite the paper if you are using the plugin in your research:
 
 * Uwe Schmidt, Martin Weigert, Coleman Broaddus, and Gene Myers. [https://arxiv.org/abs/1806.03535 Cell Detection with Star-convex Polygons]. International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI), Granada, Spain, September 2018.
-
-* Martin Weigert, Uwe Schmidt, Robert Haase, Ko Sugawara, and Gene Myers. [https://arxiv.org/abs/1908.03636 *Star-convex Polyhedra for 3D Object Detection and Segmentation in Microscopy*].arXiv, 2019
