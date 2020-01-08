@@ -10,17 +10,16 @@ See the [https://github.com/mpicbg-csbd/stardist main repository] for links to o
 
 == Installation ==
 
-# Start Fiji (or download and install it from [https://fiji.sc here] first.
+# Start Fiji (or download and install it from [https://fiji.sc here] first).
 # Select <code>Help > Update...</code> from the menu bar.
-# Click on the button `Manage update sites`.
-# Scroll down the list and tick the checkboxes for update sites <code>CSBDeep</code> and <code>StarDist</code>, then click the <code>Close</code> button
-[[File: StarDist_update_site.png|512px]]
+# Click on the button <code>Manage update sites</code>.
+# Scroll down the list and tick the checkboxes for update sites <code>CSBDeep</code> and <code>StarDist</code>, then click the <code>Close</code> button.<br />(If <code>StarDist</code> is missing, click <code>Update URLs</code> to refresh the list of update sites.)<br />[[File: StarDist_update_site.png|512px]]
 # Click on <code>Apply changes</code> to install the plugin.
 # Restart Fiji.
 
 == Usage ==
 
-Open the image that should be segmented. Note, that currently only 2D and 2D+time images are supported. Start the plugin with <code>Plugins>StarDist>StarDist 2D</code>. The following parameters can be set:
+Open the image that should be segmented. Note, that currently only 2D and 2D+time images are supported. Start the plugin from <code>Plugins > StarDist > StarDist 2D</code>. The following parameters can be set:
 
 {| class="wikitable"
 |-
