@@ -33,7 +33,7 @@ If in doubt, load the default NMS parameters of the selected built-in model (see
 The segmented objects can be returned as a ''Label Image'' or in the ''ROI Manager'' (or both).
 |- 
 | [[File: StarDist_usage_param_advanced.jpg|400px]]
-| Advanced options: <ul><li> Specify a user-trained model file or URL <li>  Number of tiles (increase only in case of GPU memory limitations/errors, i.e. for larger images) <li> Load default NMS parameters for the selected built-in model <li> Restore all defaults parameters</ul>
+| Advanced options: <ul><li> Specify a user-trained model file or URL <li>  Increase the number of tiles (in case of GPU memory limitations/errors, i.e. for larger images) <li> Load default NMS parameters for the selected built-in model. <li> Restore all default parameters.</ul>
 |-
 |}
 Example of running the plugin, showing the returned label image and ROIs overlaid on the input image:
