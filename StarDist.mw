@@ -24,7 +24,7 @@ Open the image that should be segmented. Note, that currently only 2D and 2D+tim
 {| class="wikitable"
 |-
 | [[File: StarDist_usage_param_pred.jpg|400px]]
-| Select a neural network model from the dropdown list, which can be one of the following: <ul><li>''A built-in model''. We currently provide <code>Versatile...</code> and <code>DSB 2018...</code> that were both trained on a subset of the [https://data.broadinstitute.org/bbbc/BBBC038/ DSB 2018 nuclei segmentation challenge dataset].<li>''A custom user-trained model'' ([https://github.com/mpicbg-csbd/stardist via the training code]) that has been exported as a zip file and can be loaded from a file or URL (see ''Advanced options'' below).</ul> If necessary, one can change/disable the percentile-based input image normalization
+| Select a neural network model from the dropdown list, which can be one of the following: <ul><li>''A built-in model''. We currently provide <code>Versatile...</code> and <code>DSB 2018...</code> that were both trained on a subset of the [https://data.broadinstitute.org/bbbc/BBBC038/ DSB 2018 nuclei segmentation challenge dataset].<li>''A custom user-trained model'' ([https://github.com/mpicbg-csbd/stardist via the training code]) that has been exported as a zip file and can be loaded from a file or URL (see ''Advanced options'' below).</ul> If necessary, one can change/disable the percentile-based input image normalization.
 |-
 | [[File: StarDist_usage_param_nms.jpg|400px]]
 | Adjust the NMS (non-maximum suppression) postprocessing parameters: <ul> <li> ''Probability/Score Threshold'' - higher values lead to fewer segmented objects, but will likely avoid false positives. <li> ''Overlap Threshold'' - higher values allow segmented objects to overlap substantially.</ul> 
@@ -39,8 +39,6 @@ The segmented objects can be returned as a ''Label Image'' or in the ''ROI Manag
 Example of running the plugin, showing the returned label image and ROIs overlaid on the input image:
  
 [[File: StarDist_usage_result.jpg|512px]]
-
-
 
 == Citation ==
 
