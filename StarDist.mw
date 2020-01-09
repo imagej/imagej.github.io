@@ -24,17 +24,19 @@ Open the image that should be segmented. Note, that currently only 2D and 2D+tim
 {| class="wikitable"
 |-
 | [[File: StarDist_usage_param_pred.jpg|400px]]
-| Select a neural network model from the dropdown list: this can be either <ul><li> a pretrained model. We currently provide <code>Versatile...</code> and <code>DSB 2018...</code> that were both trained on the [https://data.broadinstitute.org/bbbc/BBBC038/ DSB 2018 nuclei segmentation challenge dataset]<li> a user-trained model ([https://github.com/mpicbg-csbd/stardist via the training code]) that has been exported as zip file or url (specified later on)</ul> ''Additionally one can change/disable the input image normalization if necessary'
+| Select a neural network model from the dropdown list, which can be one of the following: <ul><li>''A built-in model''. We currently provide <code>Versatile...</code> and <code>DSB 2018...</code> that were both trained on a subset of the [https://data.broadinstitute.org/bbbc/BBBC038/ DSB 2018 nuclei segmentation challenge dataset].<li>''A custom user-trained model'' ([https://github.com/mpicbg-csbd/stardist via the training code]) that has been exported as a zip file and can be loaded from a file or URL (see ''Advanced options'' below).</ul> If necessary, one can change/disable the percentile-based input image normalization
 |-
 | [[File: StarDist_usage_param_nms.jpg|400px]]
-| Adjust the postprocessing (Non-Maximum-Suppression NMS) parameter <ul> <li> the higher the ''Object Threshold'' the fewer objects will be selected <li> the higher the ''Overlap Threshold'' the more objects are allowed to overlap </ul> 
-It is recommended to load the default NMS parameters of the current model (see below)
+| Adjust the NMS (non-maximum suppression) postprocessing parameters: <ul> <li> ''Probability/Score Threshold'' - higher values lead to fewer segmented objects, but will likely avoid false positives. <li> ''Overlap Threshold'' - higher values allow segmented objects to overlap substantially.</ul> 
+If in doubt, load the default NMS parameters of the selected built-in model (see below).
+
+The segmented objects can be returned as a ''Label Image'' or in the ''ROI Manager'' (or both).
 |- 
 | [[File: StarDist_usage_param_advanced.jpg|400px]]
-| Advanced options <ul><li> Specifying the user-trained model file or URL <li>  Number of tiles (increase if out of GPU memory e.g. for larger images) <li> Load default NMS parameter for the current model (see above)</ul>
+| Advanced options: <ul><li> Specify a user-trained model file or URL <li>  Number of tiles (increase only in case of GPU memory limitations/errors, i.e. for larger images) <li> Load default NMS parameters for the selected built-in model <li> Restore all defaults parameters</ul>
 |-
 |}
-After running the plugin, the result will be displayed as label image and as regions in the ROI-manager:
+Example of running the plugin, showing the returned label image and ROIs overlaid on the input image:
  
 [[File: StarDist_usage_result.jpg|512px]]
 
