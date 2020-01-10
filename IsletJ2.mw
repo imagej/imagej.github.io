@@ -74,6 +74,20 @@ Similarly to the training protocol, the analysis protocol is a CSV file. There i
 # spherical volume (in IEQ),
 # the last 15 columns are for 15 different bins with diameter frequencies (based on the histogram of Ricordi).
 
+== Demo ==
+
+The following steps show basic interaction with the plugin.
+
+# Download a demo [https://imagej.net/_images/5/59/Isletj-demo.zip dataset] and extract the archive. Directory <code>isletj-demo</code> will be created containing one image and its ground truth segmentation.
+# Start ImageJ and open the dialog for training (<code>Plugins</code> – <code>IsletJ</code> – <code>Train</code>).
+# Select the extracted directory, set the prefixes of examples and GTs to <code>img_</code> and <code>gt_</code>, respectively, and click <code>Load</code> to load the dataset. Images (only a single one in this case) from the dataset will be displayed, and respective segmentations will be applied to the images resulting in green bordered regions.
+# Ensure that the segmentations were loaded correctly and click <code>Ok</code>.
+# Select a file path where the trained model should be saved and start training by clicking on <code>Train</code>. The name of the model can be arbitrary, but we suggest to use suffix <code>.gz</code> since then compression will be used, resulting in a smaller size of the model. 
+# Wait until the training finishes. It should take only a few seconds in case of the demo.
+# Close the dialog for training and open the one for analysis (<code>Plugins</code> – <code>IsletJ</code> – <code>Analyze</code>).
+# Select the extracted directory as before (we will analyze the training image for the demo purposes), set an appropriate pixel size (e.g., 2.355 μm) and minimal size of islets (e.g., 0 μm), and select the previously trained model.
+# Select an output directory and click <code>Analyze</code>.
+
 == Tips ==
 
 === Keyboard shortcuts ===
