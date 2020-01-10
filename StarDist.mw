@@ -1,14 +1,13 @@
-[[File: StarDist_logo.jpg|right|128px]]
 {{Infobox
-| software               = StarDist
 | name                   = StarDist
+| software                   = ImageJ
 | update site          = StarDist
 | author                 = Uwe Schmidt, Martin Weigert
 | maintainer           = Uwe Schmidt, Martin Weigert
 | source                 = {{GitHub|org=mpicbg-csbd|repo=stardist-imagej}}
 | website               = https://github.com/mpicbg-csbd/stardist
 }}
-
+[[File: StarDist_logo.jpg|right|128px]]
 == Overview == 
 
 This is the ImageJ/Fiji plugin for [https://github.com/mpicbg-csbd/stardist StarDist], a cell/nuclei detection method for microscopy images with star-convex shape priors.
