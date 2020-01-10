@@ -29,7 +29,11 @@ See the [https://github.com/mpicbg-csbd/stardist main repository] for links to o
 
 == Usage ==
 
-Open the image that should be segmented. Note, that currently only 2D and 2D+time images are supported. Start the plugin from <code>Plugins > StarDist > StarDist 2D</code>. The following parameters can be set:
+Open the image that should be segmented. Note, that currently only 2D and 2D+time images are supported. Suitable test images can for instance be found at the [https://data.broadinstitute.org/bbbc/BBBC008/BBBC008_v1_images.zip Broad Bioimage Benchmark Collection]<ref>Carpenter et al., Genome Biology, 2006</ref>:
+
+[[File: StarDist_usage_input.png|x240px]]
+
+Start the plugin from <code>Plugins > StarDist > StarDist 2D</code>. The following parameters can be set:
 
 {| class="wikitable"
 |-
@@ -46,9 +50,9 @@ The segmented objects can be returned as a ''Label Image'' or in the ''ROI Manag
 | Advanced options: <ul><li> Specify a user-trained model file or URL <li>  Increase the number of tiles (in case of GPU memory limitations/errors, i.e. for larger images) <li> Load default NMS parameters for the selected built-in model. <li> Restore all default parameters.</ul>
 |-
 |}
-Example of running the plugin, showing the returned label image and ROIs overlaid on the input image:
+Example of running the plugin, showing the returned label image and ROIs overlaid on the input image (check <code>Show All</code> in the ROI Manager):
  
-[[File: StarDist_usage_result.jpg|512px]]
+[[File: StarDist_usage_output.png|x240px]]
 
 == Citation ==
 
