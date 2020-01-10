@@ -1,10 +1,21 @@
 [[File: StarDist_logo.jpg|right|128px]]
+{{Infobox
+| software               = StarDist
+| name                   = StarDist
+| update site          = StarDist
+| author                 = Uwe Schmidt, Martin Weigert
+| maintainer           = Uwe Schmidt, Martin Weigert
+| source                 = {{GitHub|org=mpicbg-csbd|repo=stardist-imagej}}
+| website               = https://github.com/mpicbg-csbd/stardist
+}}
 
 == Overview == 
 
 This is the ImageJ/Fiji plugin for [https://github.com/mpicbg-csbd/stardist StarDist], a cell/nuclei detection method for microscopy images with star-convex shape priors.
-The plugin can be used to apply already trained models to new images. Currently, it only supports 2D image and time lapse data.
+The plugin can be used to apply already trained models to new images. 
 See the [https://github.com/mpicbg-csbd/stardist main repository] for links to our publications and the full-featured Python package that can also be used to train new models. If you encounter problems with the plugin, please file an issue [https://github.com/mpicbg-csbd/stardist-imagej here].
+
+''The plugin currently only supports 2D image and time lapse data. If you have 3D data, please use our [https://github.com/mpicbg-csbd/stardist python library].''
 
 [[File: Stardist_screenshot_small.jpg|640px]]
 
@@ -45,3 +56,5 @@ Example of running the plugin, showing the returned label image and ROIs overlai
 Please cite the paper if you are using the plugin in your research:
 
 * Uwe Schmidt, Martin Weigert, Coleman Broaddus, and Gene Myers. [https://arxiv.org/abs/1806.03535 Cell Detection with Star-convex Polygons]. International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI), Granada, Spain, September 2018.
+
+[[Category:Plugins]] [[Category:Segmentation]] [[Category:Deep Learning]]
