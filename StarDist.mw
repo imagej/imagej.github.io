@@ -13,7 +13,7 @@ See the [https://github.com/mpicbg-csbd/stardist main repository] for links to o
 # Start Fiji (or download and install it from [https://fiji.sc here] first).
 # Select <code>Help > Update...</code> from the menu bar.
 # Click on the button <code>Manage update sites</code>.
-# Scroll down the list and tick the checkboxes for update sites <code>CSBDeep</code> and <code>StarDist</code>, then click the <code>Close</code> button.<br />(If <code>StarDist</code> is missing, click <code>Update URLs</code> to refresh the list of update sites.)<br />[[File: StarDist_update_site.png|512px]]
+# Scroll down the list and tick the checkboxes for update sites <code>CSBDeep</code> and <code>StarDist</code>, then click the <code>Close</code> button.<br />(If <code>StarDist</code> is missing, click <code>Update URLs</code> to refresh the list of update sites.)<br />[[File: StarDist_update_site2.png|320px]][[File: StarDist_update_site.png|320px]]
 # Click on <code>Apply changes</code> to install the plugin.
 # Restart Fiji.
 
