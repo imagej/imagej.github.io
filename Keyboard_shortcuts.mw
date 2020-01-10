@@ -33,7 +33,7 @@ macro "Macro 1 [1]" {
 </source>
 
 === Option 2: Associate shortcut to a plugin menu entry ===
-The second possibility consist in saving the macro code as a small script file into the ./Fiji.app/scripts/Plugins/ folder, so that it appears in the menu upon restart.<br> 
+The second possibility consist in saving the macro code as a small script file into the <code>./Fiji.app/scripts/Plugins/</code> folder, so that it appears in the menu upon restart.<br> 
 Then you can register a shortcut using {{bc|Plugins|Shortcuts|Add Shortcut…}}
 
 [[Category:User interface]]
