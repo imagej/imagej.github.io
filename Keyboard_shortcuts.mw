@@ -2,7 +2,7 @@
 
 == Listing all keyboard shortcuts ==
 
-For a verbose list of keyboard shortcuts, call {{bc | Plugins | Shortcuts | List shortcuts...}}
+For a verbose list of keyboard shortcuts, call {{bc | Plugins | Shortcuts | List Shortcuts}}.
 
 == The Command Launcher ==
 
@@ -34,6 +34,6 @@ macro "Macro 1 [1]" {
 
 === Option 2: Associate shortcut to a plugin menu entry ===
 The second possibility consist in saving the macro code as a small script file into the ./Fiji.app/scripts/Plugins/ folder, so that it appears in the menu upon restart.<br> 
-Then you can register a shortcut using Plugins > Shortcuts > Add Shortcut…
+Then you can register a shortcut using {{bc|Plugins|Shortcuts|Add Shortcut…}}
 
 [[Category:User interface]]
