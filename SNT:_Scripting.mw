@@ -215,3 +215,8 @@ do_stuff(viewer)
 </source>
 
 ==Packaging Scripts with SNT==
+There are two ways to have your own scripts appear in SNT's ''Scripts'' menu. The easiest way is to go to {{bc|Scripts|New...}} from the SNT dialog. This command will open an instance of Fiji's Script Editor with pre-loaded boilerplate code in the scripting language of your choice. If you save the script and then choose {{bc|Scripts|Reload...}}, your new script will appear in the full list of scripts found at {{bc|Scripts|Full List...}}.
+
+Alternatively, you can save scripts into the "scripts" sub-directory under the main Fiji directory while including ''SNT'' in the filename (e.g., C:\Users\user1\Desktop\Fiji.app\scripts\My_SNT_Script.py).
+
+If you would like to have your scripts distributed with Fiji, please submit a pull request to SNT's [https://github.com/fiji/SNT Github repository].
