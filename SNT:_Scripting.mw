@@ -21,10 +21,6 @@ various analysis, tracing, image processing and utility routines. These template
 
 '''Reconstruction_Viewer_Demo.py'''  Exemplifies how to render reconstructions and neuropil annotations in a stand-alone Reconstruction Viewer. Requires internet connection.
 
-'''Render_Cell_Collection.groovy'''  Exemplifies how to quickly render large collections of cells from a directory of files (900 MouseLight reconstructions rendered in ~30s on a 4 core i7 (ubuntu 18.10) without a discrete graphics card).
-
-'''Render_Cell_Collection_(MultiPanel_Figure).groovy'''  Exemplifies how to generate a publication-quality multi-panel figure in which multiple reconstructions are sorted and color-coded by a specified morphometric trait (cable length in this example). The script prompts for a directory containing the reconstruction files to be analyzed. If no directory is specified, the script will parse a collection of dendritic arbors from the MouseLight database instead.
-
 '''SciView_Demo.groovy'''  Exemplifies how bridge SNT with [https://imagej.net/SciView SciView].
 
 ===Sholl===
@@ -46,7 +42,9 @@ This menu hosts script templates containing extensible boilerplate code in sever
 
 '''Scripted_Tracing_Demo_(Interactive).py'''  Exemplifies how to programmatically interact with a running instance of SNT to perform auto-tracing tasks.
 
-===Utilities===
+'''Take_Snapshot.py'''  Displays a WYSIWYG image of a tracing canvas. Exemplifies how to script SNT using SNTService.
+
+===Batch===
 
 '''Convert_Traces_to_SWC.py'''  Converts all .traces files in a directory into SWC.
 
@@ -54,7 +52,11 @@ This menu hosts script templates containing extensible boilerplate code in sever
 
 '''Measure_Multiple_Files.py'''  Bulk measurements of reconstruction files using SNT.
 
-'''Take_Snapshot.py'''  Displays a WYSIWYG image of a tracing canvas. Exemplifies how to script SNT using SNTService.
+'''Measure_Multiple_Files_(With_Options).groovy''' Bulk measurements (with options to choose a subset of measurements) of reconstruction files using SNT.
+
+'''Render_Cell_Collection.groovy'''  Exemplifies how to quickly render large collections of cells from a directory of files (900 MouseLight reconstructions rendered in ~30s on a 4 core i7 (ubuntu 18.10) without a discrete graphics card).
+
+'''Render_Cell_Collection_(MultiPanel_Figure).groovy'''  Exemplifies how to generate a publication-quality multi-panel figure in which multiple reconstructions are sorted and color-coded by a specified morphometric trait (cable length in this example). The script prompts for a directory containing the reconstruction files to be analyzed. If no directory is specified, the script will parse a collection of dendritic arbors from the MouseLight database instead.
 
 ==Python Notebooks==
 Direct access to the SNT API from the [https://www.python.org/ Python] programming language is made possible through the [https://pypi.org/project/pyimagej/ pyimagej] module. This enables full integration between SNT and any library in the Python ecosystem.
