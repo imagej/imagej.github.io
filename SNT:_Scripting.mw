@@ -5,6 +5,7 @@
 The full up-to-date SNT API can be found at [http://fiji.github.io/SNT/ http://fiji.github.io/SNT/]
 
 ==Script Templates==
+[[Image:Snt-Scripts-Menu-Full-List.png|right|thumb|300px|SNT Scripts Menu]]
 SNT comes packaged with script templates demonstrating 
 various analysis, tracing, image processing and utility routines. These templates can be found both in the ''Scripts'' menu of the SNT dialog and in the {{bc|Templates|Neuroanatomy}} menu of Fiji's Script Editor. Scripts can be written in any language supported by Fiji's Script Editor.
 
@@ -214,4 +215,3 @@ do_stuff(viewer)
 </source>
 
 ==Packaging Scripts with SNT==
-[[Image:Snt-Scripts-Menu-Full-List.png|right|thumb|300px|SNT Scripts Menu]]
