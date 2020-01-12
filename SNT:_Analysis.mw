@@ -74,7 +74,7 @@ Fine-grained programmatic control over SNT's Graph objects is achieved using the
 [[Image:Snt-Dendrogram-Viewer.png|none|thumb|300px|Dendrogram Viewer]]
 
 =Comparing Reconstructions=
-The {{bc|Utilities|Compare Reconstructions...}} command will bring up a prompt which gives the user the option to compare two single reconstruction files or multiple groups of reconstruction files.
+The {{bc|Utilities|Compare Reconstructions...}} command will bring up a prompt which gives the user the option to compare two single reconstruction files against multiple metrics, or multiple groups of reconstruction files against a single metric.
 
 [[Image:Snt-Compare-Reconstructions-Single-Or-Group-Choice.png|none|thumb|200px|]]
 
