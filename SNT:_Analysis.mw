@@ -95,11 +95,15 @@ The file selection prompt for this option allows selection of up to four directo
 
 <div align="center">
 <ul> 
-<li style="display:inline-block;"> [[Image:Snt-Compare-Reconstruction-Group-Render1.png|none|thumb|200px|]] </li>
-<li style="display:inline-block;"> [[Image:Snt-Compare-Reconstruction-Group-Render2.png|none|thumb|200px|]] </li>
-<li style="display:inline-block;"> [[Image:Snt-Compare-Reconstruction-Group-Statistics-Window.png|none|thumb|]] </li>
+<li style="display:inline-block;"> [[Image:Snt-Compare-Reconstruction-Group-Render1.png|none|thumb|350px|]] </li>
+<li style="display:inline-block;"> [[Image:Snt-Compare-Reconstruction-Group-Render2.png|none|thumb|350px|]] </li>
+</ul>
+</div>
+<div align="center">
+<ul> 
+<li style="display:inline-block;"> [[Image:Snt-Compare-Reconstruction-Group-Statistics-Window.png|none|thumb|300px]] </li>
 <li style="display:inline-block;"> [[Image:Snt-Compare-Reconstruction-Group-Box-Plot.png|none|thumb|200px|]] </li>
-<li style="display:inline-block;"> [[Image:Snt-Compare-Reconstruction-Group-Histogram.png|none|thumb|200px|]] </li>
+<li style="display:inline-block;"> [[Image:Snt-Compare-Reconstruction-Group-Histogram.png|none|thumb|300px|]] </li>
 </ul>
 </div>
 
