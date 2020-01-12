@@ -47,8 +47,18 @@ To conduct [https://imagej.net/Strahler_Analysis Strahler Analysis] on the curre
 
 <div align="left">
 <ul> 
-<li style="display:inline-block;"> [[Image:SNT-Strahler-Analysis-Table.png|none|thumb|200px|Strahler Analysis table for OP_1]] </li>
-<li style="display:inline-block;"> [[Image:SNT-Strahler-Analysis-Plot.png|none|thumb|200px|Strahler Analysis plot for OP_1]] </li>
+<li style="display:inline-block;"> [[Image:SNT-Strahler-Analysis-Table.png|none|thumb|200px|Strahler Analysis table]] </li>
+<li style="display:inline-block;"> [[Image:SNT-Strahler-Analysis-Plot.png|none|thumb|200px|Strahler Analysis plot]] </li>
+</ul>
+</div>
+
+=Path Order Analysis=
+Found at {{bc|Analysis|Path Order Analysis}} in the main SNT dialog, this option analyzes the Paths in the Path Manager based on [https://www.mbfbioscience.com/help/nx11/Content/Branch%20order/Branch_Order.htm Branch Order]. Produces a table of results and a plot similar to the ''Strahler Analysis'' option. 
+
+<div align="left">
+<ul> 
+<li style="display:inline-block;"> [[Image:SNT-Path-Order-Analysis-Table.png|none|thumb|200px|Path Order Analysis table]] </li>
+<li style="display:inline-block;"> [[Image:SNT-Path-Order-Analysis-Plot.png|none|thumb|200px|Path Order Analysis plot]] </li>
 </ul>
 </div>
 
