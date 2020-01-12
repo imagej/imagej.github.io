@@ -64,15 +64,24 @@ Batch measurements of reconstructions can be accomplished via scripting. See ''M
  results]]
 {{clear}}
 
-=Create Dendrogram=
+=Dendrogram Viewer=
 [[Image:Snt-Dendrogram-Shortcuts.png|right|thumb|140px|Dendrogram Viewer shortcuts]]
 Found at {{bc|Utilities|Create Dendrogram}}, this option generates a [https://en.wikipedia.org/wiki/Dendrogram Dendrogram] based off the contents of the Path Manager, providing a high-level overview of neurite branching topology. 
 
 The viewer provides controls for orientation, zoom level, panning, vertex editing and traversal as well as options to display vertex labels and edge weights (which by default are the euclidean distances between adjacent vertices). To see the available key shortcuts, right click on the viewer and choose ''Available Shortcuts...''. The plot may be exported in several file formats, including HTML, PNG and SVG.
 
-Fine-grained programmatic control over SNT's Graph objects can achieved using the [https://jgrapht.org/javadoc/ JGraphT API] in a script.  Also relevant is the [http://fiji.github.io/SNT/sc/fiji/snt/analysis/graph/package-frame.html sc.fiji.snt.analysis.graph] package which provides high-level tools for Graph creation and conversion.
+Fine-grained programmatic control over SNT's Graph objects is achieved using the [https://jgrapht.org/javadoc/ JGraphT API] in a script.  Also relevant is the [http://fiji.github.io/SNT/sc/fiji/snt/analysis/graph/package-frame.html sc.fiji.snt.analysis.graph] package which provides high-level tools for Graph creation and conversion.
 [[Image:Snt-Dendrogram-Viewer.png|none|thumb|300px|Dendrogram Viewer]]
 
+=Comparing Reconstructions=
+The {{bc|Utilities|Compare Reconstructions...}} command will bring up a prompt which gives the user the option to compare two single reconstruction files or multiple groups of reconstruction files.
+[[Image:Snt-Compare-Reconstructions-Single-Or-Group-Choice.png|left|thumb|200px|]]
+If you select, ''Compare two files'' and press ''OK'', a file chooser dialog will appear allowing the user to select the two reconstruction files and their respective colors for display in Reconstruction Viewer.
+[[Image:Snt-Compare-Reconstructions-Single-File-Chooser.png|left|thumb|200px|]]
+[[Image:Snt-Compare-Reconstructions-Single-3DViewer-Result.png|right|thumb|200px|]]
+Use the ''Browse'' button to select the two files and press 'OK' to run the analysis. The results will include a table containing results of the ''Quick Measurements'' function for both reconstructions, as well as an instance of the 3D Reconstruction Viewer displaying both reconstructions. 
+[[Image:Snt-Compare-Reconstructions-Single-Measurements-Table.png|left|thumb|900px|]]
+{{clear}}
 =Custom Analyses=
 It is possible to script your own analysis routines. See [https://imagej.net/SNT:_Scripting SNT:_Scripting] for the link to SNT's API as well as script templates demonstrating a range of analysis possibilities.
 
