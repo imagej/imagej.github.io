@@ -78,7 +78,7 @@ The {{bc|Utilities|Compare Reconstructions...}} command will bring up a prompt w
 
 [[Image:Snt-Compare-Reconstructions-Single-Or-Group-Choice.png|none|thumb|200px|]]
 
-If you select, ''Compare two files'' and press ''OK'', a file chooser dialog will appear allowing the user to select the two reconstruction files and their respective colors for display in Reconstruction Viewer.
+If you select, ''Compare two files'' and press ''OK'', a file chooser dialog will appear allowing the user to select two SWC files and their respective colors for display in Reconstruction Viewer.
 
 [[Image:Snt-Compare-Reconstructions-Single-File-Chooser.png|none|thumb|200px|]]
 
@@ -87,6 +87,22 @@ If you select, ''Compare two files'' and press ''OK'', a file chooser dialog wil
 Use the ''Browse'' button to select the two files and press 'OK' to run the analysis. The results will include a table containing results of the ''Quick Measurements'' function for both reconstructions, as well as an instance of the 3D Reconstruction Viewer displaying both reconstructions. 
 [[Image:Snt-Compare-Reconstructions-Single-Measurements-Table.png|left|thumb|900px|]]
 {{clear}}
+To instead compare multiple groups of reconstruction files against a single metric, choose ''Compare groups of cells (two or more)'' in the initial prompt. 
+
+[[Image:Snt-Compare-Reconstructions-Group-File-Chooser.png|none|thumb|200px|]]
+
+The file selection prompt for this option allows selection of up to four directories containing SWC files. The metric to compare against is chosen from the ''Metric'' drop-down menu. Optionally, the user may restrict the analysis to specific neurite compartments. After making your selections, press ''OK'' to run the analysis. The result include multi-panel figure(s) rendering up to ten reconstructions from each group, a window with the metric statistics on each group, a box-plot and a histogram. These figures can all be exported as PNG or SVG.
+
+<div align="center">
+<ul> 
+<li style="display:inline-block;"> [[Image:Snt-Compare-Reconstruction-Group-Render1.png|none|thumb|200px|]] </li>
+<li style="display:inline-block;"> [[Image:Snt-Compare-Reconstruction-Group-Render2.png|none|thumb|200px|]] </li>
+<li style="display:inline-block;"> [[Image:Snt-Compare-Reconstruction-Group-Statistics-Window.png|none|thumb|]] </li>
+<li style="display:inline-block;"> [[Image:Snt-Compare-Reconstruction-Group-Box-Plot.png|none|thumb|200px|]] </li>
+<li style="display:inline-block;"> [[Image:Snt-Compare-Reconstruction-Group-Histogram.png|none|thumb|200px|]] </li>
+</ul>
+</div>
+
 =Custom Analyses=
 It is possible to script your own analysis routines. See [https://imagej.net/SNT:_Scripting SNT:_Scripting] for the link to SNT's API as well as script templates demonstrating a range of analysis possibilities.
 
