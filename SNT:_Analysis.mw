@@ -19,20 +19,15 @@ Alternatively, for precise positioning of the center of analysis:
 <li style="display:inline-block;"> [[Image:Snt-Sholl-Precise-Step-3.png|none|thumb|146px|3) Sholl dialog]] </li>
 </ul>
 </div>
-
 {{clear}}
-
 The Sholl dialog created by this approach differs slightly from the dialog created by running the {{bc|Analyze|Sholl|Sholl Analysis (From Tracings)...}} plugin in the main Fiji menu. First, the center of analysis is automatically taken from the nearest (or exact) node where the user clicks. In addition to morphology and custom tag filters, the ''Path filtering'' drop-down menu provides an additional option to restrict the analysis to the subset of paths selected in the Path Manager. Another advantage is that the display canvas allows the radius step size to be previewed visually. To do this, toggle on the ''Preview'' checkbox under the ''Sampling'' section and experiment with different step sizes.
-
 <div align="center">
 <ul> 
 <li style="display:inline-block;"> [[Image:Snt-Sholl-preview-step-size-1.png|none|thumb|200px|Step Size = 0]] </li>
 <li style="display:inline-block;"> [[Image:Snt-Sholl-preview-step-size-2.png|none|thumb|200px|Step Size = 5]] </li>
 </ul>
 </div>
-
 In addition to the Sholl Profile plot and table, the output of the analysis can be visualized as a color mapping of the reconstruction and as a [https://imagej.net/Simple_Neurite_Tracer:_Sholl_analysis#Sholl_Image Sholl Image]. To color code the tracing, choose ''Color coded paths'' from the ''Annotations'' drop-down menu and select a Lut from the ''Annotations Lut'' drop-down menu before pressing ''Run Analysis''.  To output the Sholl Image, choose ''3D viewer labels image'' from the ''Annotations'' drop-down menu and select the desired Lut before running the analysis.
-
 <div align="center">
 <ul> 
 <li style="display:inline-block;"> [[Image:Snt-Sholl-Profile-Plot-New.png|none|thumb|305px|Sholl Profile Plot]] </li>
@@ -41,17 +36,14 @@ In addition to the Sholl Profile plot and table, the output of the analysis can 
 <li style="display:inline-block;"> [[Image:Snt-Sholl-Color-Map-Mask.png|none|thumb|200px|Sholl Image - Ice Lut]] </li>
 </ul>
 </div>
-
 =Strahler Analysis=
 To conduct [https://imagej.net/Strahler_Analysis Strahler Analysis] on the current contents of the Path Manager, choose the {{bc|Utilities|Strahler Analysis}} command in the main SNT dialog. This command will output the results of the analysis as a table and plot. These figures contains statistics on the group of paths associated with each Horton-Strahler Number. Note that this feature analyzes traced reconstructions. To run Strahler analysis on images, use the {{bc|Analyze|Skeleton|Strahler Analysis...}} plugin in the main Fiji dialog.
-
 <div align="left">
 <ul> 
 <li style="display:inline-block;"> [[Image:SNT-Strahler-Analysis-Table.png|none|thumb|200px|Strahler Analysis table]] </li>
 <li style="display:inline-block;"> [[Image:SNT-Strahler-Analysis-Plot.png|none|thumb|200px|Strahler Analysis plot]] </li>
 </ul>
 </div>
-
 =Path Order Analysis=
 Found at {{bc|Analysis|Path Order Analysis}} in the main SNT dialog, this option analyzes the Paths in the Path Manager based on [https://www.mbfbioscience.com/help/nx11/Content/Branch%20order/Branch_Order.htm Branch Order]. Produces a table of results and a plot similar to the ''Strahler Analysis'' option. 
 
@@ -61,10 +53,8 @@ Found at {{bc|Analysis|Path Order Analysis}} in the main SNT dialog, this option
 <li style="display:inline-block;"> [[Image:SNT-Path-Order-Analysis-Plot.png|none|thumb|200px|Path Order Analysis plot]] </li>
 </ul>
 </div>
-
-
 =Measurements=
-[[Image:Snt-Measurements-List.png|right|thumb|150px|''Measure...'' dialog]]
+[[Image:Snt-Measurements-List.png|right|thumb|120px|''Measure...'' dialog]]
 SNT provides several ways to measure reconstructions. A comprehensive selection of measurements can be found by going to {{bc|Analysis|Measure...}}. in the main SNT dialog. To quickly measure tracings with a common set of statistics, choose {{bc|Analysis|Quick Measurements}}. In both cases the results of the measurements are displayed in a table. 
 
 To get measurements only on a select group of Paths, first select the Paths you want to measure in the Path Manager and choose either option from the  {{bc|Analyze}} menu in the Path Manager. 
