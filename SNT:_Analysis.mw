@@ -70,7 +70,7 @@ Found at {{bc|Utilities|Create Dendrogram}}, this option generates a [https://en
 
 The viewer provides controls for orientation, zoom level, panning, vertex editing and traversal as well as options to display vertex labels and edge weights (which by default are the euclidean distances between adjacent vertices). To see the available key shortcuts, right click on the viewer and choose ''Available Shortcuts...''. The plot may be exported in several file formats, including HTML, PNG and SVG.
 
-Fine-grained programmatic control over SNT's Graph objects is achieved using the [https://jgrapht.org/javadoc/ JGraphT API] in a script.  Also relevant is the [http://fiji.github.io/SNT/sc/fiji/snt/analysis/graph/package-frame.html sc.fiji.snt.analysis.graph] package which provides high-level tools for Graph creation and conversion.
+Fine-grained programmatic control over SNT's Graph objects is achieved using the [https://jgrapht.org/javadoc/ JGraphT API] in a script.  Also relevant is the [http://fiji.github.io/SNT/sc/fiji/snt/analysis/graph/package-frame.html sc.fiji.snt.analysis.graph] package which provides high-level tools for Graph creation and conversion. See ''Graph_Analysis.py'' in the SNT [https://imagej.net/SNT:_Scripting#Script_Templates Script Templates] for a basic example.
 [[Image:Snt-Dendrogram-Viewer.png|none|thumb|300px|Dendrogram Viewer]]
 
 =Comparing Reconstructions=
