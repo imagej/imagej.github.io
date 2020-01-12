@@ -74,12 +74,12 @@ Batch measurements of reconstructions can be accomplished via scripting. See ''M
  results]]
 {{clear}}
 =Create Dendrogram=
-[[Image:Snt-Dendrogram-Shortcuts.png|right|thumb|150px|Dendrogram Viewer shortcuts]]
-Found at {{bc|Utilities|Create Dendrogram}}, this option generates a [[https://en.wikipedia.org/wiki/Dendrogram Dendrogram]] based off the contents of the Path Manager, providing a high-level overview of neurite branching topology. 
+[[Image:Snt-Dendrogram-Shortcuts.png|right|thumb|140px|Dendrogram Viewer shortcuts]]
+Found at {{bc|Utilities|Create Dendrogram}}, this option generates a [https://en.wikipedia.org/wiki/Dendrogram Dendrogram] based off the contents of the Path Manager, providing a high-level overview of neurite branching topology. 
 
-The viewer provides controls for orientation, zoom level, panning as well as options to display vertex labels and edge weights (which by default are the euclidean distances between adjacent vertices). 
+The viewer provides controls for orientation, zoom level, panning, vertex editing and traversal as well as options to display vertex labels and edge weights (which by default are the euclidean distances between adjacent vertices). To see the available key shortcuts, right click on the viewer and choose ''Available Shortcuts...''. The plot may be exported in several file formats, including HTML, PNG and SVG.
 
-The plot may be exported in several file formats, including HTML, PNG and SVG. To see the available key shortcuts, right click on the viewer and choose ''Available Shortcuts...''.
+Fine-grained programmatic control over SNT's Graph objects can achieved using the [https://jgrapht.org/javadoc/ JGraphT API] in a script.  Also relevant is the [http://fiji.github.io/SNT/sc/fiji/snt/analysis/graph/package-frame.html sc.fiji.snt.analysis.graph] package which provides high-level tools for Graph creation and conversion.
 [[Image:Snt-Dendrogram-Viewer.png|none|thumb|300px|Dendrogram Viewer]]
 
 =Custom Analyses=
