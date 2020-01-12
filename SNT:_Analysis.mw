@@ -59,10 +59,11 @@ SNT provides several ways to measure reconstructions. A comprehensive selection 
 
 To get measurements only on a select group of Paths, first select the Paths you want to measure in the Path Manager and choose either option from the  {{bc|Analyze}} menu in the Path Manager. 
 
-Batch measurements of reconstructions can be accomplished via scripting. See ''Measure_Multiple_Files.py'' in the SNT [[https://imagej.net/SNT:_Scripting#Script_Templates Script Templates]] for a basic example.
+Batch measurements of reconstructions can be accomplished via scripting. See ''Measure_Multiple_Files.py'' in the SNT [https://imagej.net/SNT:_Scripting#Script_Templates Script Templates] for a basic example.
 [[Image:Snt-Measure-Results-Table.png|none|thumb|1000px|''Measure...'' 
  results]]
 {{clear}}
+
 =Create Dendrogram=
 [[Image:Snt-Dendrogram-Shortcuts.png|right|thumb|140px|Dendrogram Viewer shortcuts]]
 Found at {{bc|Utilities|Create Dendrogram}}, this option generates a [https://en.wikipedia.org/wiki/Dendrogram Dendrogram] based off the contents of the Path Manager, providing a high-level overview of neurite branching topology. 
