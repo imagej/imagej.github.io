@@ -74,7 +74,7 @@ Batch measurements of reconstructions can be accomplished via scripting. See ''M
  results]]
 {{clear}}
 =Create Dendrogram=
-[[Image:Snt-Dendrogram-Shortcuts.png|right|thumb|300px|Dendrogram Viewer shortcuts]]
+[[Image:Snt-Dendrogram-Shortcuts.png|right|thumb|150px|Dendrogram Viewer shortcuts]]
 Found at {{bc|Utilities|Create Dendrogram}}, this option generates a [[https://en.wikipedia.org/wiki/Dendrogram Dendrogram]] based off the contents of the Path Manager, providing a high-level overview of neurite branching topology. 
 
 The viewer provides controls for orientation, zoom level, panning as well as options to display vertex labels and edge weights (which by default are the euclidean distances between adjacent vertices). 
