@@ -3,8 +3,10 @@
 <div class="toclimit-3">
 
 =Sholl Analysis=
+There are two [https://imagej.net/Sholl_Analysis Sholl Analysis] commands available in SNT's ''Analysis'' menu. The {{bc|Analysis|Shuoll Analysis...}} option provides a set of pre-defined focal points the user can choose from. Note for the morphology-based focal points (e.g., ''Soma'', ''Root node(s): Primary apical dendrite(s)'') , the relevant morphology tag(s) must be assigned to the set of paths considered by the analysis. To select a focal point manually, see the following section.
+==Sholl Analysis (by Focal Point)==
 [[Image:Snt-Sholl-Coarse-Intructions.png|right|thumb|200px|Initiating Sholl Analysis: coarse method]]
-To initiate [https://imagej.net/Sholl_Analysis Sholl Analysis] on a tracing in the canvas, you must select a focal point. You can do it coarsely by right-clicking near a node and choosing ''Sholl Analysis at Nearest Node'' from the contextual menu (Shortcut: {{key|Alt}} + {{key|Shift}} + {{key|A}}.  
+It is also possible to initiate [https://imagej.net/Sholl_Analysis Sholl Analysis] on a tracing in the canvas by manually selecting a focal point. You can do it coarsely by right-clicking near a node and choosing ''Sholl Analysis at Nearest Node'' from the contextual menu (Shortcut: {{key|Alt}} + {{key|Shift}} + {{key|A}}.  
 
 Alternatively, for precise positioning of the center of analysis:
 # Mouse over the path of interest. Press {{key|G}} to activate it.
