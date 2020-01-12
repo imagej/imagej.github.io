@@ -64,11 +64,15 @@ Found at {{bc|Analysis|Path Order Analysis}} in the main SNT dialog, this option
 
 
 =Measurements=
-[[Image:Snt-Measurements-List.png|right|thumb|200px|''Measure...'' dialog]]
-SNT provides several ways to measure reconstructions. A comprehensive selection of measurements can be found by going to {{bc|Analysis|Measure...}}. in the main SNT dialog. To quickly measure tracings with a common set of statistics, choose {{bc|Analysis|Quick Measurements}}. In both cases the results of the measurements are displayed in a table. To get measurements only on a select group of Paths, first select the Paths you want to measure in the Path Manager and choose either option from the  {{bc|Analyze}} menu in the Path Manager. Batch measurements of reconstructions can be accomplished via scripting. See ''Measure_Multiple_Files.py'' in the SNT [[https://imagej.net/SNT:_Scripting#Script_Templates Script Templates]] for a basic example.
-[[Image:Snt-Measure-Results-Table.png|thumb|200px|''Measure...'' 
- results]]
+[[Image:Snt-Measurements-List.png|right|thumb|150px|''Measure...'' dialog]]
+SNT provides several ways to measure reconstructions. A comprehensive selection of measurements can be found by going to {{bc|Analysis|Measure...}}. in the main SNT dialog. To quickly measure tracings with a common set of statistics, choose {{bc|Analysis|Quick Measurements}}. In both cases the results of the measurements are displayed in a table. 
 
+To get measurements only on a select group of Paths, first select the Paths you want to measure in the Path Manager and choose either option from the  {{bc|Analyze}} menu in the Path Manager. 
+
+Batch measurements of reconstructions can be accomplished via scripting. See ''Measure_Multiple_Files.py'' in the SNT [[https://imagej.net/SNT:_Scripting#Script_Templates Script Templates]] for a basic example.
+[[Image:Snt-Measure-Results-Table.png|none|thumb|1000px|''Measure...'' 
+ results]]
+{{clear}}
 
 =Custom Analyses=
 It is possible to script your own analysis routines. See [https://imagej.net/SNT:_Scripting SNT:_Scripting] for the link to SNT's API as well as script templates demonstrating a range of analysis possibilities.
