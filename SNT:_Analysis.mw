@@ -75,10 +75,15 @@ Fine-grained programmatic control over SNT's Graph objects is achieved using the
 
 =Comparing Reconstructions=
 The {{bc|Utilities|Compare Reconstructions...}} command will bring up a prompt which gives the user the option to compare two single reconstruction files or multiple groups of reconstruction files.
-[[Image:Snt-Compare-Reconstructions-Single-Or-Group-Choice.png|left|thumb|200px|]]
+
+[[Image:Snt-Compare-Reconstructions-Single-Or-Group-Choice.png|none|thumb|200px|]]
+
 If you select, ''Compare two files'' and press ''OK'', a file chooser dialog will appear allowing the user to select the two reconstruction files and their respective colors for display in Reconstruction Viewer.
-[[Image:Snt-Compare-Reconstructions-Single-File-Chooser.png|left|thumb|200px|]]
+
+[[Image:Snt-Compare-Reconstructions-Single-File-Chooser.png|none|thumb|200px|]]
+
 [[Image:Snt-Compare-Reconstructions-Single-3DViewer-Result.png|right|thumb|200px|]]
+
 Use the ''Browse'' button to select the two files and press 'OK' to run the analysis. The results will include a table containing results of the ''Quick Measurements'' function for both reconstructions, as well as an instance of the 3D Reconstruction Viewer displaying both reconstructions. 
 [[Image:Snt-Compare-Reconstructions-Single-Measurements-Table.png|left|thumb|900px|]]
 {{clear}}
