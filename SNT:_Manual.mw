@@ -50,7 +50,8 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 {{clear}}
 
 ===Scripts===
-TBD
+See [https://imagej.net/SNT:_Scripting SNT: Scripting].
+
 ===View===
 Contains commands for organizing tracing views on screen, plus commands for displaying cached data used for auto-tracing.
 
