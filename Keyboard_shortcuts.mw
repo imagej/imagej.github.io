@@ -21,18 +21,23 @@ To open new images, type {{key|Ctrl}}+{{key|O}} (on Mac, {{key|Command}}+{{key|O
 You can also [http://imagej.net/docs/guide/146-31.html#toc-Subsection-31.2 assign your own keyboard shortcuts]!
 
 == Assign a shortcut to a macro ==
-There are 2 options to assign a keyboard shortcut to a macro.<br>
+There are 3 options to assign a keyboard shortcut to a macro.<br>
 
-=== Option 1: StartupMacros ===
-Either put the code of the macro in the file macro>StartupMacros.ijm (or StartupMacros.fiji.ijm in Fiji) to have it installed automatically.<br>
-The code of the macro must declared a keyboard shortcut in square bracket as such
+=== Option 1: Edit the StartupMacros file ===
+Either put the code of the macro in the file macro>StartupMacros.ijm (or StartupMacros.fiji.ijm in Fiji) to have it installed automatically at startup.<br>
+The code of the macro must declare a keyboard shortcut in square bracket as such
 <source>
 macro "Macro 1 [1]" {
     print("The user pressed '1'");
     } 
 </source>
 
-=== Option 2: Associate shortcut to a plugin menu entry ===
+=== Option 2: Save the macro(s) as a toolset ===
+The shortcut should be defined in square bracket like for option 1, but instead of editing the existing StartupMacros file, the macros(s) can be saved as a separate MyShortcut.ijm or .txt file in the ImageJ/Fiji subfolder <code>macros/toolsets</code>.<br>
+Then restart ImageJ/Fiji and click the {{bc|>>}} at the rightmost side of the fiji toolbar and click the entry MyShortcut. This will install your macros and thus activate the associated shortcuts.<br>
+This option is more convenient to distribute macros with keyboard shortcuts to colleagues or via an update site.
+
+=== Option 3: Associate shortcut to a plugin menu entry ===
 The second possibility consist in saving the macro code as a small script file into the <code>./Fiji.app/scripts/Plugins/</code> folder, so that it appears in the menu upon restart.<br> 
 Then you can register a shortcut using {{bc|Plugins|Shortcuts|Add Shortcut…}}
 
