@@ -104,6 +104,20 @@ If you choose ''Visually'', the dialog will prompt you to click on a representat
 
 Experiment with different ''Adjusted max.'' values to find a setting which captures the structures you are interested in while taking care to avoid over or under-saturation. In the former case, the search might consider pixels outside of the tubular structures, giving a less accurate result. In the latter case, the search might take significantly longer, since each pixel will carry greater cost than is reasonable. It is usually safe to choose a value somewhere near the default. Once you have chosen this value, click on the square in the palette with the sigma that best fits your application (its border will turn green) then press "Apply". The parameters will be transferred to the interface and a Gaussian convolution will be run over the image, which may take some time depending on its size. Once it's done, pathfinding will occur on the Hessian (a.k.a. ''Tubeness'') image.
 
+The {{bc|Estimate Radii (Local Thickness)...}} option in the Hessian gear menu will run the ''Local Thickness (complete process)'' plugin found in {{bc|Analyze|Local Thickness|Local Thickness (complete process)}} in the main Fiji dialog. This allows automated radii estimation of processes across the image, which can inform the choice of sigma. The user can set the Z-slice range for the analysis to consider, as well as the pixel intensity threshold (pixel values below the threshold are treated as background).
+[[Image:Snt-Estimate-Thickness-Prompt.png|none|thumb|200px]]
+The parameters are:
+* '''First Z-slice'''  The starting slice of the image to be considered in the estimation.
+* '''Last Z-slice'''  The end slice of the image to be considered in the estimation.
+* '''Dimmest intensity (approx.)''' Pixel values below this value are treated as background when computing the distance map. Use -1 to adopt the default cutoff value (half of the image max).
+Pressing ''OK'' will output a color-mapped image (based off local radius) and a histogram showing the distribution of radii across the image. To calibrate the Hessian analysis for smaller processes, one might select a sigma value closer to the minimum estimated thickness, or the opposite for larger processes. 
+<div align="left">
+<ul> 
+<li style="display:inline-block;"> [[Image:Snt-Estimate-Radii-Image-Result.png|none|thumb|200px]] </li>
+<li style="display:inline-block;"> [[Image:Snt-Estimate-Radii-Histogram-Result.png|none|thumb|200px]] </li>
+</ul>
+</div>
+
 Other options are also available in the ''gear'' drop-down menu:
 * '''Cached Computations (Main/Secondary Image)''' By default SNT computes the Hessian matrix on a "compute-as-you-go" basis, which saves memory but increases the pathfinding time. If you have enough RAM, you can use this set of options to compute the matrix once for the full image and cache the result, which in certain cases, can lead to almost-instantaneous searches. Note that this computation adopts the current values of sigma and max. reported in the widget, so you should adjust those before running this command.
 * '''Flush Cached Data''' Removes cached data from memory
