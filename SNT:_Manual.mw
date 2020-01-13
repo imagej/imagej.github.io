@@ -52,13 +52,8 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 <li style="display:inline-block;"> [[Image:SNT-Reconstruction-Plotter-Colored.png|none|thumb|200px]] </li>
 </ul>
 </div>
+* {{bc|Compare Reconstructions...}} Allows morphometric conparison of two single reconstruction files or multiple groups of reconstruction files. See [https://imagej.net/SNT:_Analysis#Comparing_Reconstructions Comparing Reconstructions] for details. 
 * {{bc|Create Dendrogram}}  Generates a Dendrogram plot of a connected component (i.e, one rooted tree structure in the Path Manager). See [https://imagej.net/SNT:_Analysis#Dendrogram_Viewer Dendrogram Viewer] for details. 
-* {{bc|Compare Reconstructions...}} Given two input reconstruction files, runs ''Quick Measurements'' on both and generates a plot with summary statistics, allowing for quick morphometric comparisons.
-<div align="left">
-<ul> 
-<li style="display:inline-block;"> [[Image:SNT-Compare-Reconstructions-Table.png|none|thumb|600px|Comparison of OP_1 and OP_2]] </li>
-</ul>
-</div>
 {{clear}}
 
 ===Scripts===
