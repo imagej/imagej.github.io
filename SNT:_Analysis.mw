@@ -45,7 +45,7 @@ To conduct [https://imagej.net/Strahler_Analysis Strahler Analysis] on the curre
 </ul>
 </div>
 =Path Order Analysis=
-Found at {{bc|Analysis|Path Order Analysis}} in the main SNT dialog, this option analyzes the Paths in the Path Manager based on [https://www.mbfbioscience.com/help/nx11/Content/Branch%20order/Branch_Order.htm Branch Order]. Produces a table of results and a plot similar to the ''Strahler Analysis'' option. 
+Found at {{bc|Analysis|Path Order Analysis}} in the main SNT dialog, this option analyzes the Paths in the Path Manager based on [https://www.mbfbioscience.com/help/nx11/Content/Branch%20order/Branch_Order.htm Branch Order]. Produces a table of results and a plot similar to the ''Strahler Analysis'' option, with morphometric statistics on the group of paths associated with each Branch Order. 
 
 <div align="left">
 <ul> 
@@ -53,6 +53,7 @@ Found at {{bc|Analysis|Path Order Analysis}} in the main SNT dialog, this option
 <li style="display:inline-block;"> [[Image:SNT-Path-Order-Analysis-Plot.png|none|thumb|200px|Path Order Analysis plot]] </li>
 </ul>
 </div>
+
 =Measurements=
 [[Image:Snt-Measurements-List.png|right|thumb|120px|''Measure...'' dialog]]
 SNT provides several ways to measure reconstructions. A comprehensive selection of measurements can be found by going to {{bc|Analysis|Measure...}}. in the main SNT dialog. To quickly measure tracings with a common set of statistics, choose {{bc|Analysis|Quick Measurements}}. In both cases the results of the measurements are displayed in a table. 
