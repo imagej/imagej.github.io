@@ -29,12 +29,12 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 </div>
 {{clear}}
 ===Analysis===
-* {{bc|Analysis|Path Order Analysis}}  Produces a table and plot from morphometric statistics on the group of paths associated with each Branch Order. See [https://imagej.net/SNT:_Analysis#Path_Order_Analysis] for details.
-* {{bc|Analysis|Sholl Analysis...}} Brings up the [https://imagej.net/Sholl_Analysis Sholl Analysis] dialog with a pre-defined set of focal points the user can choose from. See [https://imagej.net/SNT:_Analysis#Sholl_Analysis] for details.
-* {{bc|Analysis|Sholl Analysis (by Focal Point)...}} Allows precise positioning of the focal point used by Sholl Analysis. See [https://imagej.net/SNT:_Analysis#Sholl_Analysis_.28by_Focal_Point.29] for details.
-* {{bc|Strahler Analysis}} Conducts [https://imagej.net/Strahler_Analysis Strahler Analysis] on existing paths, producing a table of analysis results and a Strahler plot. See [https://imagej.net/SNT:_Analysis#Strahler_Analysis] for details.
-* {{bc|ANalysis|Measure...}}  Provides a comprehensive selection of measurements to apply to one connected component (i.e., rooted tree structure) from the Path Manager. See [https://imagej.net/SNT:_Analysis#Measurements] for details.
-* {{bc|Quick Measurements|}} Shows a table with summary statistics for all existing paths. To measure only selected paths, use {{bc|Analyze|Measure}} in the Path Manager. See [https://imagej.net/SNT:_Analysis#Measurements] for details.
+* {{bc|Analysis|Path Order Analysis}}   Produces a table and plot from morphometric statistics on the group of paths associated with each Branch Order. See [https://imagej.net/SNT:_Analysis#Path_Order_Analysis] for details.
+* {{bc|Analysis|Sholl Analysis...}}  Brings up the [https://imagej.net/Sholl_Analysis Sholl Analysis] dialog with a pre-defined set of focal points the user can choose from. See [https://imagej.net/SNT:_Analysis#Sholl_Analysis] for details.
+* {{bc|Analysis|Sholl Analysis (by Focal Point)...}}  Allows precise positioning of the focal point used by Sholl Analysis. See [https://imagej.net/SNT:_Analysis#Sholl_Analysis_.28by_Focal_Point.29] for details.
+* {{bc|Strahler Analysis}}  Conducts [https://imagej.net/Strahler_Analysis Strahler Analysis] on existing paths, producing a table of analysis results and a Strahler plot. See [https://imagej.net/SNT:_Analysis#Strahler_Analysis] for details.
+* {{bc|Analysis|Measure...}}   Provides a comprehensive selection of measurements to apply to one connected component (i.e., rooted tree structure) from the Path Manager. See [https://imagej.net/SNT:_Analysis#Measurements] for details.
+* {{bc|Quick Measurements|}}  Shows a table with summary statistics for all existing paths. To measure only selected paths, use {{bc|Analyze|Measure}} in the Path Manager. See [https://imagej.net/SNT:_Analysis#Measurements] for details.
 
 ===Utilities===
 * {{bc|Reconstruction Plotter...}} Plots a dynamic 2D projection of all existing paths. A control panel is included which allows adjustment of the spatial orientation of the tracing. If paths are assigned color tags, use {{bc|Actions|Render final (colorized) plot}} from the control panel to render the (static) plot with color-mapped paths, with the final orientation matching that of the dynamic plot.
