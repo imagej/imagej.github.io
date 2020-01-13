@@ -400,16 +400,6 @@ The filter toolbar allows paths to be searched and filtered quickly using tags (
 ** ''No. of Nodes'' Filters for paths with node count within the inputted range.
 ** ''SWC Type'' Filters for paths with the selected SWC type tags. Note that the paths of interest must have been [[SNT:_Overview#Tag|tagged]] using  the{{bc|Tag|Type|&nbsp;}} menu.
 
-<div align="center">
-<ul> 
-<li style="display:inline-block;"> [[Image:SNT-Path-Manager-Branch-Order-Filter.png|none|thumb|200px|1) Branch Order filter prompt]] </li>
-<li style="display:inline-block;"> [[Image:SNT-Path-Manager-Length-Filter.png|none|thumb|200px|2) Length filter prompt]] </li>
-<li style="display:inline-block;"> [[Image:SNT-Path-Manager-Mean-Radius-Filter.png|none|thumb|200px|3) Mean Radius filter prompt]] </li>
-<li style="display:inline-block;"> [[Image:SNT-Path-Manager-Node-Count-Filter.png|none|thumb|200px|4) No. of Nodes filter prompt]] </li>
-<li style="display:inline-block;"> [[Image:SNT-Path-Manager-SWC-Type-Filter.png|none|thumb|200px|5) SWC Type filter prompt]] </li>
-</ul>
-</div>
-
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling: Step-By-Step Instructions]].
 {{SNTNavBar}}
