@@ -28,7 +28,8 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 </ul>
 </div>
 {{clear}}
-
+===Analysis===
+* {{bc|Analysis|Path Order Analysis}}  Produces a table and plot from morphometric statistics on the group of paths associated with each Branch Order. See [https://imagej.net/SNT:_Analysis#Path_Order_Analysis Path Order Analysis] for details. 
 ===Utilities===
 * {{bc|Quick Measurements|}} Shows a table with summary statistics for all existing paths. To measure only selected paths, use {{bc|Analyze|Measure}} in the Path Manager. 
 * {{bc|Sholl Analysis...}} Shows a help menu which describes how to conduct [[Simple_Neurite_Tracer:_Sholl_analysis|Sholl Analysis]] from within SNT on existing paths.
