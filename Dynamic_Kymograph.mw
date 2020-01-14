@@ -1,8 +1,8 @@
 {{Infobox
 | name = Dynamic_Kymograph
 | software = Fiji
-| author = rudyzhou
-| maintainer = rudyzhou
+| author = {{Person|Rudy Zhou}}
+| maintainer = {{Person|Rudy Zhou}}
 | source = {{GitHub|org=rudyzhou|repo=Dynamic_Kymograph}}
 }}
 
