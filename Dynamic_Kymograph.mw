@@ -4,7 +4,6 @@
 | author = {{Person|Rudy Zhou}}
 | maintainer = {{Person|Rudy Zhou}}
 | released = 26 July 2018
-| license = {{License|GPL}}
 | source = {{GitHub|org=rudyzhou|repo=Dynamic_Kymograph}}
 | category = [[:Category:Plugins|Plugins]]
 }}
@@ -25,6 +24,10 @@ See [https://github.com/rudyzhou/Dynamic_Kymograph https://github.com/rudyzhou/D
 == Authors ==
 
 * Rudy Zhou - [rudyzhou](https://github.com/rudyzhou)
+
+== License ==
+
+This project is licensed under the [https://imagej.net/GPL GNU General Public License].
 
 == Acknowledgements ==
 
