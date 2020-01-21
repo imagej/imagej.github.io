@@ -35,7 +35,7 @@ In the context of spectral unmixing, the inputs to ''k''-means are individual pi
 =Usage=
 To install the plugin in your ImageJ or Fiji installation, add the update site LUMoS. The procedure to follow an update site [[Following_an_update_site|can be found here]].
 
-Alternatively, a full Fiji distribution with LUMoS already packaged can be downloaded [https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/multiphoton-core/documents/Fiji-app-for-LUMoS-spectral-unmixing.zip here]. 
+Alternatively, a full Fiji distribution with LUMoS already packaged can be downloaded. Unlike the update site, this packaged download is PC only. [https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/multiphoton-core/documents/Fiji-app-for-LUMoS-spectral-unmixing.zip here]. 
 
 A user guide for this plugin with step by step instructions can be found [[Media:Spectral Unmixing User Guide.pdf | here]].
 
