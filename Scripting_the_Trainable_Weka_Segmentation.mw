@@ -177,10 +177,10 @@ segmentator.setClassifier( rf );
 = Example: apply classifier to all images in folder =
 Very frequently we might end up having to process a large number of images using a classifier that we interactively trained with the GUI of the [[Trainable Weka Segmentation]] plugin. The following [[Beanshell]] script shows how to load a classifier from file, apply it to all images contained in a folder and save the results in another folder defined by the user:
 <source lang="java">
-// @File(label="Input directory", description="Select the directory with input images", style="directory") inputDir
-// @File(label="Output directory", description="Select the output directory", style="directory") outputDir
-// @File(label="Weka model", description="Select the Weka model to apply") modelPath
-// @String(label="Result mode",choices={"Labels","Probabilities"}) resultMode
+#@ File(label="Input directory", description="Select the directory with input images", style="directory") inputDir
+#@ File(label="Output directory", description="Select the output directory", style="directory") outputDir
+#@ File(label="Weka model", description="Select the Weka model to apply") modelPath
+#@ String(label="Result mode",choices={"Labels","Probabilities"}) resultMode
 
 import trainableSegmentation.WekaSegmentation;
 import trainableSegmentation.utils.Utils;
@@ -237,13 +237,13 @@ IJ.log( "** Finished processing folder in " + estimatedTime + " ms **" );
 In some cases, we may have to apply a saved classifier to very large images, which together with a large number of image features may fill the RAM of our machine. To prevent running into out-of-memory exceptions, the following [[Beanshell]] script shows how to load a classifier from file, apply it to all images contained in a folder by subdividing them into smaller pieces, and save the results in another folder defined by the user:
 
 <source lang="java">
-// @File(label="Input directory", description="Select the directory with input images", style="directory") inputDir
-// @File(label="Output directory", description="Select the output directory", style="directory") outputDir
-// @File(label="Weka model", description="Select the Weka model to apply") modelPath
-// @String(label="Result mode",choices={"Labels","Probabilities"}) resultMode
-// @Integer(label="Number of tiles in X:", description="Number of image subdivisions in the X direction", value=3) xTiles
-// @Integer(label="Number of tiles in Y:", description="Number of image subdivisions in the Y direction", value=3) yTiles
-// @Integer(label="Number of tiles in Z (set to 0 for 2D processing):", description="Number of image subdivisions in the Z direction (ignored when using 2D images)", value=3) zTiles
+#@ File(label="Input directory", description="Select the directory with input images", style="directory") inputDir
+#@ File(label="Output directory", description="Select the output directory", style="directory") outputDir
+#@ File(label="Weka model", description="Select the Weka model to apply") modelPath
+#@ String(label="Result mode",choices={"Labels","Probabilities"}) resultMode
+#@ Integer(label="Number of tiles in X:", description="Number of image subdivisions in the X direction", value=3) xTiles
+#@ Integer(label="Number of tiles in Y:", description="Number of image subdivisions in the Y direction", value=3) yTiles
+#@ Integer(label="Number of tiles in Z (set to 0 for 2D processing):", description="Number of image subdivisions in the Z direction (ignored when using 2D images)", value=3) zTiles
  
 import trainableSegmentation.WekaSegmentation;
 import trainableSegmentation.utils.Utils;
@@ -412,11 +412,11 @@ Here is a simple script in '''Beanshell''' doing the following:
 # Apply the trained classifier to a test image (2D or stack).
 
 <source lang="java">
-// @ImagePlus(label="Training image", description="Stack or a single 2D image") image
-// @ImagePlus(label="Label image", description="Image of same size as training image containing binary class labels") labels
-// @ImagePlus(label="Test image", description="Stack or a single 2D image") testImage
-// @Integer(label="Num. of samples", description="Number of training samples per class and slice",value=2000) nSamplesToUse
-// @OUTPUT ImagePlus prob
+#@ ImagePlus(label="Training image", description="Stack or a single 2D image") image
+#@ ImagePlus(label="Label image", description="Image of same size as training image containing binary class labels") labels
+#@ ImagePlus(label="Test image", description="Stack or a single 2D image") testImage
+#@ Integer(label="Num. of samples", description="Number of training samples per class and slice",value=2000) nSamplesToUse
+#@OUTPUT ImagePlus prob
 import ij.IJ;
 import trainableSegmentation.WekaSegmentation;
 import hr.irb.fastRandomForest.FastRandomForest;
@@ -491,11 +491,11 @@ IJ.log( "** Finished script in " + estimatedTime + " ms **" );
 The following [[Beanshell]] script shows how to segment a 2D color image or stack in an automatic fashion using the [[wikipedia:CIELAB|CIELab color space]] and two possible clustering schemes: [[wikipedia:K-means|k-means]] and [[wikipedia:Expectation–maximization_algorithm|expectation maximization]]  (note: if you do not have Weka's ClassificationViaClustering classifier installed, check [[Trainable_Weka_Segmentation_-_How_to_install_new_classifiers|how to install new classifiers via Weka's package manager]]).
 
 <source lang=java>
-// @ImagePlus image
-// @int(label="Num. of clusters", description="Number of expected clusters", value=5) numClusters
-// @int(label="Num. of samples", description="Number of training samples per cluster", value=1000) numSamples
-// @String(label="Clustering method",choices={"SimpleKMeans","EM"}) clusteringChoice
-// @OUTPUT ImagePlus output
+#@ ImagePlus image
+#@ int(label="Num. of clusters", description="Number of expected clusters", value=5) numClusters
+#@ int(label="Num. of samples", description="Number of training samples per cluster", value=1000) numSamples
+#@ String(label="Clustering method",choices={"SimpleKMeans","EM"}) clusteringChoice
+#@OUTPUT ImagePlus output
 import ij.IJ;
 import ij.ImageStack;
 import ij.ImagePlus;
