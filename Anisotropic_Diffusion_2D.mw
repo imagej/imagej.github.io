@@ -1,4 +1,4 @@
-{{ComponentStats:sc.fiji:Anisotropic_Diffusion_2D}}This plugin implement the anisotropic diffusion filter in 2D. Anisotropic filters are a class of filter that reduces noise in an image while trying to preserve sharp edges. See also [http://imagej.net/plugins/anisotropic-diffusion-2d.html this page of the ImageJ 1.x web site].
+{{ComponentStats:sc.fiji:Anisotropic_Diffusion_2D}}This plugin implement the anisotropic diffusion filter in 2D. Anisotropic filters are a class of filter that reduces noise in an image while trying to preserve sharp edges. See also [https://imagej.net/plugins/anisotropic-diffusion-2d.html this page of the ImageJ 1.x web site].
 
 == Documentation ==
 
