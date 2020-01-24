@@ -121,7 +121,7 @@ Example of registration results using the shrinking constraint:
 == API documentation ==
 The latest documentation of the package can be found here: 
 
-[http://fiji.sc/javadoc/register_virtual_stack/package-summary.html http://fiji.sc/javadoc/register_virtual_stack/package-summary.html]
+[https://fiji.sc/javadoc/register_virtual_stack/package-summary.html https://fiji.sc/javadoc/register_virtual_stack/package-summary.html]
 
 == Scripting / PlugIn ==
 
@@ -152,7 +152,7 @@ reference_name, p, use_shrinking_constraint)
 
 == See also ==
 * [[Transform Virtual Stack Slices]], to see how to load the saved transforms.
-* [http://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=mpicbg/imagefeatures/FloatArray2DSIFT.java;hb=HEAD FloatArray2DSIFT.java] which contains the subclass Param which is the 'sift' member of the Register_Virtual_Stack_Slices.Param subclass.
+* [https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=mpicbg/imagefeatures/FloatArray2DSIFT.java;hb=HEAD FloatArray2DSIFT.java] which contains the subclass Param which is the 'sift' member of the Register_Virtual_Stack_Slices.Param subclass.
 * {{GitHub|org=fiji|repo=register_virtual_stack_slices|source=register_virtual_stack/Register_Virtual_Stack_MT.java|label=Register_Virtual_Stack_MT.java}}, including the Param subclass.
 * [[Elastic_Alignment_and_Montage|Elastic Alignment and Montage plugin]], for elastic registration/montage of large datasets using spring meshes (local deformations).
 
