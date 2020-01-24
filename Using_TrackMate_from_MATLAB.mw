@@ -22,7 +22,7 @@ Note that we used the fully qualified name for TrackMate classes, ''e.g.'' <code
 
 <source lang="matlab">
 % Get currently selected image
-% imp = ij.IJ.openImage('http://fiji.sc/samples/FakeTracks.tif')
+% imp = ij.IJ.openImage('https://fiji.sc/samples/FakeTracks.tif')
 imp = ij.ImagePlus('/Users/tinevez/Desktop/Data/FakeTracks.tif');
 imp.show()
    
@@ -140,7 +140,7 @@ import fiji.plugin.trackmate.visualization.hyperstack.*
 %--------------------
 
 % Get currently selected image
-% imp = IJ.openImage('http://fiji.sc/samples/FakeTracks.tif')
+% imp = IJ.openImage('https://fiji.sc/samples/FakeTracks.tif')
 imp = ImagePlus('/Users/tinevez/Desktop/Data/FakeTracks.tif');
 imp.show()
     
