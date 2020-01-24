@@ -3,12 +3,12 @@
 | name                   = Kalman Stack Filter
 | author                 = Christopher Philip Mauer
 | filename               = Kalman_Stack_Filter.class
-| source                 = [http://imagej.net/plugins/download/Kalman_Stack_Filter.java Kalman_Stack_Filter.java]
+| source                 = [https://imagej.net/plugins/download/Kalman_Stack_Filter.java Kalman_Stack_Filter.java]
 | released               = 23 May 2003
 | latest version         = 17 November 2006
 | status                 = stable (not yet in fiji update)
 | category               = [[:Category:Filtering|Filtering]]
-| website                = [http://imagej.net/plugins/kalman.html]
+| website                = [https://imagej.net/plugins/kalman.html]
 }}
 
 
@@ -18,7 +18,7 @@ This plugin implements a recursive prediction/correction algorithm which is base
 
 == Documentation ==
 
-The [http://imagej.net/plugins/kalman.html ImageJ website] offer a very complete documentation for its usage. Please refer to it. 
+The [https://imagej.net/plugins/kalman.html ImageJ website] offer a very complete documentation for its usage. Please refer to it. 
 
 
 [[Category:Filtering]]
