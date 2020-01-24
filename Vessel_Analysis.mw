@@ -3,7 +3,7 @@
 | software              = Fiji
 | author                = Nivetha Govindaraju, {{Person|M farna}}
 | maintainer            = {{Person|M farna}} ([mailto:mai.elfarnawany@gmail.com mai.elfarnawany@gmail.com])
-| filename               = [http://imagej.net/File:Vessel_Analysis.zip  Vessel Analysis.zip]
+| filename               = [https://imagej.net/File:Vessel_Analysis.zip  Vessel Analysis.zip]
 | released              = June 14<sup>th</sup>, 2016
 | latest version        = 1.1
 | status                = stable
@@ -25,18 +25,18 @@ as well as making diameter measurements for multiple vessels in RGB images of va
 
 Vessel Analysis can be added to Fiji (version 1.47g or higher required). 
 
-Download the [http://imagej.net/File:Vessel_Analysis.zip Vessel Analysis.zip] package and save an unzipped copy in Fiji's Plugins folder.
+Download the [https://imagej.net/File:Vessel_Analysis.zip Vessel Analysis.zip] package and save an unzipped copy in Fiji's Plugins folder.
 Open a new session in Fiji and you should now see Vessel Analysis listed near the bottom of the Plugins drop down menu.
 
 Before using the plugin, make sure your version of Fiji comes pre-downloaded with the Auto Threshold and Geometry to Distance plugins. They should be listed under:
 o Image > Adjust > Auto Threshold
 o Analyze > Local Thickness > Geometry to Distance Map
 
-Also make sure you install [http://imagej.net/plugins/mexican-hat/index.html Mexican Hat Filter]  plugin
+Also make sure you install [https://imagej.net/plugins/mexican-hat/index.html Mexican Hat Filter]  plugin
 
 == '''Usage:''' ==
 
-Detailed Instructions [http://imagej.net/File:Vessel_Analysis_User_Manual.pdf HERE]
+Detailed Instructions [https://imagej.net/File:Vessel_Analysis_User_Manual.pdf HERE]
 
 Open a multi-channel image in Fiji and execute the Vessel Analysis plugin via Plugins > Vessel Analysis > Vessel Analysis (complete). The "complete" program will guide you through preprocessing steps to prepare the image for vascular density and diameter measurements.
 
