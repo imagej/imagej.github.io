@@ -305,7 +305,7 @@ Here are several ways to do so:
 #* Type the name of the command.
 #* Press {{key|Down}} to select it.
 #* Click the Source button.
-#* This will open the source from the [http://imagej.net/source/ ImageJ web site online source].
+#* This will open the source from the [https://imagej.net/source/ ImageJ web site online source].
 #* Note: this method is very convenient, but only works for core [[ImageJ 1.x]] sources (e.g., not [[ImageJ2]] code, not [[Fiji]] code, etc.).
 # '''Using GitHub:'''
 #* Using the Command Finder, locate your command, taking note of the Class column's value. 
@@ -322,7 +322,7 @@ Here are several ways to do so:
 #* Run the command whose source you want to see.
 #** E.g., {{bc | Process | Binary | Make Binary}}.
 #** Again, select it from the menu directly, not using the Command Finder.
-#* This will open the source using the [http://fiji.sc/git fiji.sc gitweb interface].
+#* This will open the source using the [https://fiji.sc/git fiji.sc gitweb interface].
 
 In the future, we plan to make this easier by having one single easy command for viewing the source code.
 
@@ -376,7 +376,7 @@ We are working to create an architecture where the programs work together and pr
 
 [[Fiji]] and [[ImageJ2]] are fundamentally the same software, using the same [[launcher]]. So from the standpoint of development effort, the ImageJ2 and Fiji projects have indeed merged. ImageJ2 is the core software, and several pieces of infrastructure originally developed for Fiji have now migrated to ImageJ2 (e.g., the [[Updater]], [[Launcher]] and [[Script Editor]] components). At heart, Fiji is just a big collection of life sciences plugins (though "Fijabcolsp" doesn't have quite the same ring to it). In other words, Fiji is just an ImageJ update site ("Fijaius")&mdash;and as such, you can obtain a working Fiji installation by downloading ImageJ2, running the updater, and enabling the Fiji update site.
 
-All of that said, we do not want to get rid of the two distinct project names, since people are familiar with both. But we are integrating resources when feasible: e.g., the [http://imagej.net/ ImageJ wiki] and the [http://fiji.sc/ Fiji wiki] are really both the same wiki with different skins, to make cross-linking more seamless. But we want to ensure it is clear that ImageJ is not a life-sciences-specific project, whereas Fiji is. Historically, because Fiji has a life sciences focus, there have been some users who refused to switch from vanilla [[ImageJ1]] to Fiji even though Fiji makes users' lives easier in lots of ways. With ImageJ2, we want to avoid such misconceptions.
+All of that said, we do not want to get rid of the two distinct project names, since people are familiar with both. But we are integrating resources when feasible: e.g., the [https://imagej.net/ ImageJ wiki] and the [https://fiji.sc/ Fiji wiki] are really both the same wiki with different skins, to make cross-linking more seamless. But we want to ensure it is clear that ImageJ is not a life-sciences-specific project, whereas Fiji is. Historically, because Fiji has a life sciences focus, there have been some users who refused to switch from vanilla [[ImageJ1]] to Fiji even though Fiji makes users' lives easier in lots of ways. With ImageJ2, we want to avoid such misconceptions.
 
 More effort is still needed to clarify web resources, to explain concisely and clearly where people should go in different circumstances. We also have plans to make bug reporting simpler and easier across the projects.
 
@@ -410,11 +410,11 @@ As a complete example, if you were interested in the [[2D Histogram]] command:
 
 == I have a problem that is not covered on this page! ==
 
-If you have an issue that is not mentioned here, you might want to [[Help|ask on one of the mailing lists, or via IRC]], or [http://fiji.sc/bugzilla/ enter a bug report].
+If you have an issue that is not mentioned here, you might want to [[Help|ask on one of the mailing lists, or via IRC]], or [https://fiji.sc/bugzilla/ enter a bug report].
 
 == How to report issues? ==
 
-Use the {{bc | Help | [[Report a Bug]]}} command, which adds a ticket report to the [http://fiji.sc/bugzilla/ Fiji bug tracker]. While private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in ImageJ. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
+Use the {{bc | Help | [[Report a Bug]]}} command, which adds a ticket report to the [https://fiji.sc/bugzilla/ Fiji bug tracker]. While private mail might seem more desirable sometimes, but it is almost always inferior to the open process we established in ImageJ. For starters, bug reporters are unlikely to know who would be the best person to address the issue.
 
 == I reported an issue, but it is still not fixed! Why not? ==
 
@@ -422,7 +422,7 @@ Use the {{bc | Help | [[Report a Bug]]}} command, which adds a ticket report to 
 
 There are not many professional developers whose formal jobs include responding to and addressing bug reports. These developers are not paid ''solely'' to fix bugs—rather, they are working to solve scientific problems and to advance the software's capabilities. And their attention is spread thin across many projects: [https://github.com/imagej ImageJ], [https://github.com/fiji Fiji], [https://github.com/scifio SCIFIO], [https://github.com/scijava SciJava], [https://github.com/uw-loci LOCI], [https://github.com/openmicroscopy OME], [https://github.com/imglib ImgLib2], [https://github.com/openspim OpenSPIM], [https://github.com/slim-curve SLIM Curve], [https://github.com/maven-nar NAR plugin for Maven], and others.
 
-The organizations above total over 300 source code repositories, many of which have dozens of open issues in their issue trackers. There are also several hundred tickets in the [http://trac.imagej.net/ old ImageJ issue tracker] that are pending migration to GitHub Issues, as well as over a hundred [http://fiji.sc/bugzilla/buglist.cgi?resolution=--- open issues in the Fiji Bugzilla].
+The organizations above total over 300 source code repositories, many of which have dozens of open issues in their issue trackers. There are also several hundred tickets in the [http://trac.imagej.net/ old ImageJ issue tracker] that are pending migration to GitHub Issues, as well as over a hundred [https://fiji.sc/bugzilla/buglist.cgi?resolution=--- open issues in the Fiji Bugzilla].
 
 So please understand that just because we have not responded to a bug report, does not mean we are uninterested in fixing it. It's just that we are very busy, and can use all the help we can get!
 
