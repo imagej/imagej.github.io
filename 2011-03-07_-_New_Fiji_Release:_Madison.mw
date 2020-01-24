@@ -258,7 +258,7 @@ When looking at a specific file and number in a developer checkout of Fiji, the 
 
 The submodules have been moved into the modules/ directory.
 
-You can use the short-cut URL http://fiji.sc/<filename> for source files in Fiji's Git-managed repositories.
+You can use the short-cut URL https://fiji.sc/<filename> for source files in Fiji's Git-managed repositories.
 
 Added IntegralImages as library components to the mpicbg submodule for rapid box-filter operations (mean, scale, difference of mean, ...). Thanks to Stephan Saalfeld.
 
