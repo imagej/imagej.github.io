@@ -195,7 +195,7 @@ Currently we provide a single database of images prepared for CoverMaker. The da
 {| class="wikitable" style="text-align: center;"
 | Database type || scaled tiles || originals (DO NOT unzip)
 |-
-| Drosophila Embryo ''in situ'' || [http://fiji.sc/samples/12_9.tif 12_9.tif]  (16.6MB) || [http://fiji.sc/samples/originals.zip originals.zip] (1.45GB)
+| Drosophila Embryo ''in situ'' || [https://fiji.sc/samples/12_9.tif 12_9.tif]  (16.6MB) || [https://fiji.sc/samples/originals.zip originals.zip] (1.45GB)
 |}
 
 '''Important note :''' Do not unzip the orinals.zip archive. The CoverMaker is able to extract the relevant images.
