@@ -3,7 +3,7 @@
 | name                   = Linear Stack Alignment with SIFT
 | maintainer             = Stephan Saalfeld
 | author                 = Stephan Saalfeld
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=SIFT_Align.java;hb=HEAD in gitweb]
+| source                 = [https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=SIFT_Align.java;hb=HEAD in gitweb]
 | latest version         = June 2008
 | category               = [[:Category:Registration]]
 | website                = http://fly.mpi-cbg.de/~saalfeld/Projects/javasift.html
