@@ -17,7 +17,7 @@ __TOC__
 
 == Installation. ==
 
-MaMuT is a Fiji plugin that depends on its components to run. Download Fiji from [http://fiji.sc/#download its website] if you do not have it already.  
+MaMuT is a Fiji plugin that depends on its components to run. Download Fiji from [https://fiji.sc/#download its website] if you do not have it already.  
 
 MaMuT is not shipped with Fiji by default; you have to install it in Fiji. Thanks to the ImageJ [[Updater|'''Updater''']], there is not much to do. Simply follow the instructions on how to [[How_to_follow_a_3rd_party_update_site|'''follow a 3rd party site''']], and subscribe to the MaMuT update site. Here is briefly how to do it. 
 
