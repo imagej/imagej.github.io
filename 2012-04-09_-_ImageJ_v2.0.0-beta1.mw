@@ -49,7 +49,7 @@ The structure of an ImageJ2 update site is identical to that of a Fiji update si
 
 [[File:3d-viewer.png|430px|thumb|The T1 Head sample dataset visualized using Fiji's 3D Viewer plugin, installed via the Fiji update site.]] You can install the entire Fiji plugins collection into ImageJ2, by adding the Fiji update site. Choose {{bc | Help | Update...}} from the menu, click Advanced Mode, Manage update sites, then Add, type Fiji for the name, and for the update site URL, enter:
 
-<blockquote><code>http://fiji.sc/update/</code></blockquote>
+<blockquote><code>https://fiji.sc/update/</code></blockquote>
 Once you have installed the Fiji plugins and restarted ImageJ2, they will be available for use. For example, on the left, we see the T1 Head sample image visualized in 3D using Fiji's [[3D Viewer]].
 
 There are over 350 plugins that are part of the Fiji distribution, and being able to bring them all into ImageJ2 is a huge step toward full backward compatibility with ImageJ1. Of course, we have not had time to exhaustively test all these plugins, but many should work, and we welcome [[Bugs|bug reports]] regarding those that do not.
