@@ -6,7 +6,7 @@
 | '''[[License]]'''
 | '''[[Team]]'''
 |-
-| [http://scif.io/ SCIFIO Core]
+| [https://scif.io/ SCIFIO Core]
 | SCIFIO is a library for scientific N-dimensional image I/O.
 | {{GitHub | org=scifio | repo=scifio}}
 | {{Maven | g=io.scif | a=scifio | label=scifio}}
