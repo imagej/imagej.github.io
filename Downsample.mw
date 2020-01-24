@@ -6,7 +6,7 @@ Sound downsampling of an image requires the elimination of image frequencies hig
 
 ==Download==
 
-Get a snapshot from the git repository here: [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob_plain;f=plugins/Examples/downsample_.js downsample_.js].
+Get a snapshot from the git repository here: [https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=blob_plain;f=plugins/Examples/downsample_.js downsample_.js].
 
 ==Documentation==
 
