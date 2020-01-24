@@ -128,10 +128,10 @@ You might need to adjust the bounding box if the second plot does not match the 
 
 == Duplicate, or convert between, ''ImageProcessor'' types ==
 
-The <code>ImageProcessor</code> class has several useful methods: [http://fiji.sc/javadoc/ij/process/ImageProcessor.html#duplicate() duplicate()], [http://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToByte(boolean) convertToByte()], [http://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToFloat() convertToFloat()],
-[http://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToRGB() convertToRGB()], and [http://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToShort(boolean) convertToShort()].
+The <code>ImageProcessor</code> class has several useful methods: [https://fiji.sc/javadoc/ij/process/ImageProcessor.html#duplicate() duplicate()], [https://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToByte(boolean) convertToByte()], [https://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToFloat() convertToFloat()],
+[https://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToRGB() convertToRGB()], and [https://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToShort(boolean) convertToShort()].
 
-This [http://fiji.sc/javadoc/ij/process/ImageProcessor.html class] also has some other goodies, such as methods for convolution.
+This [https://fiji.sc/javadoc/ij/process/ImageProcessor.html class] also has some other goodies, such as methods for convolution.
 
 == How to store settings persistently ==
 
