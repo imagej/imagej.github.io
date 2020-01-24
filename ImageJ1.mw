@@ -14,7 +14,7 @@ ImageJ was originally developed in 1997 as a cross-platform version of [[NIH Ima
 The current version of ImageJ is often referred to as [[ImageJ2]], to differentiate it from ImageJ 1.x. The ImageJ2 distribution actually includes the latest version of ImageJ1 as well, along with a [[ImageJ Legacy|legacy layer]] for backwards compatibility, which transparently converts between IJ1 and IJ2 data structures as needed.
 
 == See also ==
-* [http://imagej.net/index.html ImageJ 1.x documentation]
+* [https://imagej.net/index.html ImageJ 1.x documentation]
 
 == Publication ==
 * {{Citation | last = Schneider | first = C. A.
