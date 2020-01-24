@@ -212,7 +212,7 @@ When opening a file, ImageJ first checks whether it can natively handle the form
 Because both these plugins are under active development, it is important that you keep them updated. The OME Bio-Formats library can be updated using its self-updating plugin (<span class="menuitem">Plugins ▷ LOCI ▷ Update LOCI Plugin…</span>) or Fiji↑’s built-in updater (<span class="menuitem">Help ▷ Update Fiji…</span>). The following websites provide more information on the OME Bio-Formats:
 
 * http://loci.wisc.edu/bio-formats/imagej
-* http://fiji.sc/Bio-Formats
+* https://fiji.sc/Bio-Formats
 * http://loci.wisc.edu/bio-formats/using-bio-formats
 
 In addition, the ImageJ web site lists [http://imagej.nih.gov/ij/plugins/#io more than sixty plugins] that recognize more ‘exotic’ file formats. The ImageJ Documentation Portal also maintains a (somewhat outdated) [http://imagejdocu.tudor.lu/doku.php?id=faq:general:which_file_formats_are_supported_by_imagej list of file formats] that are supported by ImageJ.
@@ -276,7 +276,7 @@ Figure 2 '''Stacks and Hyperstacks in ImageJ:<span class="sans"></span>''' <sp
 
 <div class="See">
 
-<span class="small">[[#sub:StacksMenu|Stacks Menu↓]], [http://fiji.sc/wiki/index.php/Stack_Manipulation Stack Manipulations] on Fiji website, [http://imagej.nih.gov/ij/plugins/image5d.html Image5D]</span>
+<span class="small">[[#sub:StacksMenu|Stacks Menu↓]], [https://fiji.sc/wiki/index.php/Stack_Manipulation Stack Manipulations] on Fiji website, [http://imagej.nih.gov/ij/plugins/image5d.html Image5D]</span>
 
 </div>
 ===Virtual Stacks===
@@ -303,7 +303,7 @@ ImageJ appends a ‘(V)’ to the window title of virtual stacks and hyperstacks
 
 <div class="See">
 
-<span class="small">[http://www.loci.wisc.edu/ome/formats.html LOCI Bio-Formats] and [http://fiji.sc/wiki/index.php/Register_Virtual_Stack_Slices RegisterVirtualStackSlices] plugins, [http://imagej.nih.gov/ij/macros/Process_Virtual_Stack.txt Process Virtual Stack] and [http://imagej.nih.gov/ij/macros/VirtualStackFromList.txt VirtualStackFromList] macros </span>
+<span class="small">[http://www.loci.wisc.edu/ome/formats.html LOCI Bio-Formats] and [https://fiji.sc/wiki/index.php/Register_Virtual_Stack_Slices RegisterVirtualStackSlices] plugins, [http://imagej.nih.gov/ij/macros/Process_Virtual_Stack.txt Process Virtual Stack] and [http://imagej.nih.gov/ij/macros/VirtualStackFromList.txt VirtualStackFromList] macros </span>
 
 </div>
 <div class="float">
@@ -694,7 +694,7 @@ Figure 9 '''3D Viewer (Fiji 1.46o), bringing hardware-accelerated 3D visuali
 
 <div class="Description">
 
-<span class="Description-entry">3D Filters</span> Specialized [[#index-ThreeD-Filters_3D-Filters|↓]][[#index-3D-Filters|↓]]3D filters such as <span class="menuitem">Process ▷ Filters ▷ [[#sub:Gaussian-Blur-3D...|<span class="menuitem">Gaussian Blur 3D…</span>↓]]</span> can be installed to perform 3D operations. Examples are the [http://imagejdocu.tudor.lu/doku.php?id=plugin:morphology:3d_binary_morphological_filters:start 3D processing package] by Thomas Boudier <span class="bibcites">[[[#biblio-84|<span class="bib-index">34</span>]]]</span> and the [http://fiji.sc/wiki/index.php/3D_Binary_Filters 3D binary filters] by Benjamin Schmid.
+<span class="Description-entry">3D Filters</span> Specialized [[#index-ThreeD-Filters_3D-Filters|↓]][[#index-3D-Filters|↓]]3D filters such as <span class="menuitem">Process ▷ Filters ▷ [[#sub:Gaussian-Blur-3D...|<span class="menuitem">Gaussian Blur 3D…</span>↓]]</span> can be installed to perform 3D operations. Examples are the [http://imagejdocu.tudor.lu/doku.php?id=plugin:morphology:3d_binary_morphological_filters:start 3D processing package] by Thomas Boudier <span class="bibcites">[[[#biblio-84|<span class="bib-index">34</span>]]]</span> and the [https://fiji.sc/wiki/index.php/3D_Binary_Filters 3D binary filters] by Benjamin Schmid.
 
 </div>
 <div class="Description">
@@ -709,7 +709,7 @@ Figure 9 '''3D Viewer (Fiji 1.46o), bringing hardware-accelerated 3D visuali
 </div>
 <div class="Description">
 
-<span class="Description-entry">Simple Neurite Tracer</span> [http://fiji.sc/wiki/index.php/Simple_Neurite_Tracer Simple Neurite Tracer] [[#index-Simple-Neurite-Tracer|↓]]allows semi-automated segmentation of tubular structures in 3D <span class="bibcites">[[[#biblio-128|<span class="bib-index">78</span>]]]</span>
+<span class="Description-entry">Simple Neurite Tracer</span> [https://fiji.sc/wiki/index.php/Simple_Neurite_Tracer Simple Neurite Tracer] [[#index-Simple-Neurite-Tracer|↓]]allows semi-automated segmentation of tubular structures in 3D <span class="bibcites">[[[#biblio-128|<span class="bib-index">78</span>]]]</span>
 
 </div>
 <div class="Description">
@@ -719,7 +719,7 @@ Figure 9 '''3D Viewer (Fiji 1.46o), bringing hardware-accelerated 3D visuali
 </div>
 <div class="See">
 
-<span class="menuitem">Image ▷ Stacks ▷ [[#sub:3D-Project...|<span class="menuitem">3D Project…</span>↓]]</span>/<span class="menuitem">[[#sub:Orthogonal-Views|Orthogonal Views [H]↓]]</span>, <span class="menuitem">Analyze ▷ [[#sub:Surface-Plot...|Surface Plot…↓]]</span>, [[#infobox:Skeletonize-vs-Skeletonize3D|22↓]] [[#infobox:Skeletonize-vs-Skeletonize3D|Skeletonize vs Skeletonize 3D↓]], [http://fiji.sc/wiki/index.php/Special:Search?search=3d&fulltext=Search 3D tools in Fiji], [http://www.longair.net/edinburgh/imagej/three-pane-crop/ Three Pane Crop], [http://imagejdocu.tudor.lu/doku.php?id=tutorial:working:3d_image_processing_and_analysis_with_imagej 3D image processing tutorials] on the ImageJ wikipage
+<span class="menuitem">Image ▷ Stacks ▷ [[#sub:3D-Project...|<span class="menuitem">3D Project…</span>↓]]</span>/<span class="menuitem">[[#sub:Orthogonal-Views|Orthogonal Views [H]↓]]</span>, <span class="menuitem">Analyze ▷ [[#sub:Surface-Plot...|Surface Plot…↓]]</span>, [[#infobox:Skeletonize-vs-Skeletonize3D|22↓]] [[#infobox:Skeletonize-vs-Skeletonize3D|Skeletonize vs Skeletonize 3D↓]], [https://fiji.sc/wiki/index.php/Special:Search?search=3d&fulltext=Search 3D tools in Fiji], [http://www.longair.net/edinburgh/imagej/three-pane-crop/ Three Pane Crop], [http://imagejdocu.tudor.lu/doku.php?id=tutorial:working:3d_image_processing_and_analysis_with_imagej 3D image processing tutorials] on the ImageJ wikipage
 
 </div>
 ==Settings and Preferences[[|]]<span class="unknown">\improvement</span>==
