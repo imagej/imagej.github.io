@@ -15,7 +15,7 @@ The ellipse splitting plugin splits binary objects which could approximated by a
 
 ''A. Fitzgibbon, M. Pilu, and R. B. Fisher, “Direct least square fitting of ellipses,” IEEE Trans. Pattern Anal. Mach. Intell., vol. 21, no. 5, pp. 476–480, May 1999.''
 
-Here we used the implementation of [http://fiji.sc/BoneJ BoneJ].
+Here we used the implementation of [https://fiji.sc/BoneJ BoneJ].
 
 The generall approach of the ellipse fitting plugin is as follows:
  1. Given the binary input image I
@@ -64,9 +64,9 @@ Furthermore it outputs several important features:
 
 == Installation ==
 
-Simply turn on the [http://fiji.sc/How_to_follow_a_3rd_party_update_site Biomedgroup update site], which includes the ellipse splitting plugin.
+Simply turn on the [https://fiji.sc/How_to_follow_a_3rd_party_update_site Biomedgroup update site], which includes the ellipse splitting plugin.
 
-If you use ImageJ just copy the ij-ellipessplit.jar file in your plugins folder and copy the [http://sourceforge.net/projects/geom-java/files/gpcj/ GPCJ 2.2.0 ]  and the latest [http://fiji.sc/IJ_Blob ij-blob] jar file into the plugins/jars folder.
+If you use ImageJ just copy the ij-ellipessplit.jar file in your plugins folder and copy the [http://sourceforge.net/projects/geom-java/files/gpcj/ GPCJ 2.2.0 ]  and the latest [https://fiji.sc/IJ_Blob ij-blob] jar file into the plugins/jars folder.
 
 == How to cite ==
 
