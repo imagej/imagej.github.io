@@ -2,13 +2,13 @@
 | software               = ImageJ
 | name                   = RGB Profiler
 | author                 = Christophe Laummonerie, Jerome Mutterer
-| filename               = [http://imagej.net/plugins/download/RGB_Profiler.class RGB_Profiler.class] 
-| source                 = [http://imagej.net/plugins/download/RGB_Profiler.java RGB_Profiler.java]
+| filename               = [https://imagej.net/plugins/download/RGB_Profiler.class RGB_Profiler.class] 
+| source                 = [https://imagej.net/plugins/download/RGB_Profiler.java RGB_Profiler.java]
 | released               = 2 February 2004
 | latest version         = 2 February 2004
 | status                 = first version
 | category               = [[:Category:Color processing|Color processing]]
-| website                = [http://imagej.net/plugins/rgb-profiler.html]
+| website                = [https://imagej.net/plugins/rgb-profiler.html]
 }}
 
 == Purpose ==
