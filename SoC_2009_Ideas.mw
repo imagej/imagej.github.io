@@ -12,7 +12,7 @@ All projects have the following basic requirements:
 * Unless otherwise stated, projects will require programming in Java.
 * All materials must be released under the [http://www.gnu.org/copyleft/gpl.html GNU General Public License (GPL)], version 2.
 * Individual students shall retain copyright on their works.
-* Projects must be tracked and managed in Git, and published on [http://fiji.sc/cgi-bin/gitweb.cgi] (we will provide you with an account).
+* Projects must be tracked and managed in Git, and published on [https://fiji.sc/cgi-bin/gitweb.cgi] (we will provide you with an account).
 * Weekly project status reports should be sent to the project's mentors.  Each status report should outline what was accomplished that week, any issues that prevented that week's goals from being completed, and your goals for the next week.  This will help you to break your project down into manageable chunks, and will also help the project's mentors to better support your efforts.
 
 Interested students are encouraged to read the
@@ -85,7 +85,7 @@ This project requires a bit of knowledge in compiling C++ code on Linux, MacOSX 
 
 == Add more regression tests ==
 
-Whenever releasing Fiji, or after major changes, we would like to be reasonably safe that we did not break things that used to work before.  We already have a few [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=tests tests], but hardly enough.
+Whenever releasing Fiji, or after major changes, we would like to be reasonably safe that we did not break things that used to work before.  We already have a few [https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=tests tests], but hardly enough.
 
 This project involves making a list of all the functionality Fiji provides already, and ideally to implement basic tests for all of them.
 
@@ -174,6 +174,6 @@ The project would consist of
  * [[SoC2009Application]]
 
 = Other links =
- * [http://imagej.net ImageJ's homepage]
+ * [https://imagej.net ImageJ's homepage]
  * [http://groups.google.com/group/fiji-devel Fiji's developer mailing list]
  * [[IRC|#fiji-devel channel]] on irc.freenode.net
