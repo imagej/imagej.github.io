@@ -190,7 +190,7 @@ Notice that, for this script to work for you, you will have to edit two lines:
 Be sure as well to create as many layers as you need. If you don't know, use the  <i>getLayer</i> method on the <i>layerset</i> variable, which has the ability to create a new layer when asked to get one for a Z for which a layer doesn't exist yet.
 
 Documentation you may want to look at:
-[http://fiji.sc/javadoc/ini/trakem2/Project.html#newFSProject(java.lang.String,%20ini.trakem2.tree.TemplateThing,%20java.lang.String) Project.newFSProject], [http://fiji.sc/javadoc/ini/trakem2/display/Patch.html#createPatch(ini.trakem2.Project,%20java.lang.String) Patch.createPatch], [http://fiji.sc/javadoc/ini/trakem2/display/Layer.html#add(ini.trakem2.display.Displayable) Layer.add], [http://fiji.sc/javadoc/mpicbg/trakem2/align/Align.html Align], [http://fiji.sc/javadoc/mpicbg/trakem2/align/AlignTask.html AlignTask],
+[https://fiji.sc/javadoc/ini/trakem2/Project.html#newFSProject(java.lang.String,%20ini.trakem2.tree.TemplateThing,%20java.lang.String) Project.newFSProject], [https://fiji.sc/javadoc/ini/trakem2/display/Patch.html#createPatch(ini.trakem2.Project,%20java.lang.String) Patch.createPatch], [https://fiji.sc/javadoc/ini/trakem2/display/Layer.html#add(ini.trakem2.display.Displayable) Layer.add], [https://fiji.sc/javadoc/mpicbg/trakem2/align/Align.html Align], [https://fiji.sc/javadoc/mpicbg/trakem2/align/AlignTask.html AlignTask],
 
 
 <source lang="python">
@@ -239,9 +239,9 @@ param = Align.ParamOptimize()  # which extends Align.Param
 param.sift.maxOctaveSize = 512
 #  ... above, adjust other parameters as necessary
 # See:
-#    features: http://fiji.sc/javadoc/mpicbg/trakem2/align/Align.Param.html
-#    transformation models: http://fiji.sc/javadoc/mpicbg/trakem2/align/Align.ParamOptimize.html
-#    sift: http://fiji.sc/javadoc/mpicbg/imagefeatures/FloatArray2DSIFT.Param.html
+#    features: https://fiji.sc/javadoc/mpicbg/trakem2/align/Align.Param.html
+#    transformation models: https://fiji.sc/javadoc/mpicbg/trakem2/align/Align.ParamOptimize.html
+#    sift: https://fiji.sc/javadoc/mpicbg/imagefeatures/FloatArray2DSIFT.Param.html
 AlignTask.montageLayers(param, layerset.getLayers(), False, False, False, False)
 
 # 5. Resize width and height of the world to fit the montages
@@ -651,9 +651,9 @@ print mean, stdDev, median
 
 === Calibrating and setting the Z dimension ===
 
-Each [http://fiji.sc/javadoc/ini/trakem2/display/Layer.html Layer] stores a Z coordinate and a thickness value with <i>double</i> precision. The Z  coordinate is in pixels.
+Each [https://fiji.sc/javadoc/ini/trakem2/display/Layer.html Layer] stores a Z coordinate and a thickness value with <i>double</i> precision. The Z  coordinate is in pixels.
 
-How to compute the Z coordinate of a [http://fiji.sc/javadoc/ini/trakem2/display/Layer.html Layer]: suppose that the calibration specifies 4x4x50 nm. This means 4 nm/px in the X axis, 4 nm/px in the Y axis, and 50 nm/px in the Z axis. It is assumed that you set this values by right-clicking on the canvas window and choosing "Display - Calibration...", which opens the familiar ImageJ dialog for image calibration.
+How to compute the Z coordinate of a [https://fiji.sc/javadoc/ini/trakem2/display/Layer.html Layer]: suppose that the calibration specifies 4x4x50 nm. This means 4 nm/px in the X axis, 4 nm/px in the Y axis, and 50 nm/px in the Z axis. It is assumed that you set this values by right-clicking on the canvas window and choosing "Display - Calibration...", which opens the familiar ImageJ dialog for image calibration.
 
 Then you have to compute the thickness of a section relative to X axis coordinates. To do so:
 
@@ -691,13 +691,13 @@ layerset.getProject().getLayerTree().updateUILater()
 
 = Interacting with Treeline, AreaTree and Connector =
 
-All three types: "treeline", "areatree", and "connector" are expressed by homonimous classes that inherit from the abstract class [http://fiji.sc/javadoc/ini/trakem2/display/Tree.html ini.trakem2.display.Tree].
+All three types: "treeline", "areatree", and "connector" are expressed by homonimous classes that inherit from the abstract class [https://fiji.sc/javadoc/ini/trakem2/display/Tree.html ini.trakem2.display.Tree].
 
-A [http://fiji.sc/javadoc/ini/trakem2/display/Tree.html Tree] is a [http://fiji.sc/javadoc/ini/trakem2/display/Displayable.html Displayable] and hence presents properties such as title, alpha, color, locked, visible ... which are accessible with their homonimous set and get methods (e.g. <I>setAlpha(0.8f);</i>, <i>getAlpha();</i> etc.)
+A [https://fiji.sc/javadoc/ini/trakem2/display/Tree.html Tree] is a [https://fiji.sc/javadoc/ini/trakem2/display/Displayable.html Displayable] and hence presents properties such as title, alpha, color, locked, visible ... which are accessible with their homonimous set and get methods (e.g. <I>setAlpha(0.8f);</i>, <i>getAlpha();</i> etc.)
 
-The [http://fiji.sc/javadoc/ini/trakem2/display/Tree.html Tree] consists of a root [http://fiji.sc/javadoc/ini/trakem2/display/Node.html Node] and public methods to access it and modify it.
+The [https://fiji.sc/javadoc/ini/trakem2/display/Tree.html Tree] consists of a root [https://fiji.sc/javadoc/ini/trakem2/display/Node.html Node] and public methods to access it and modify it.
 
-The root [http://fiji.sc/javadoc/ini/trakem2/display/Node.html Node] gives access to the rest of the nodes of the [http://fiji.sc/javadoc/ini/trakem2/display/Tree.html Tree]. From the canvas, a user would push 'r' on a selected Treeline, AreaTree or Connector to bring the field of view to where the root node is. From code, we would call:
+The root [https://fiji.sc/javadoc/ini/trakem2/display/Node.html Node] gives access to the rest of the nodes of the [https://fiji.sc/javadoc/ini/trakem2/display/Tree.html Tree]. From the canvas, a user would push 'r' on a selected Treeline, AreaTree or Connector to bring the field of view to where the root node is. From code, we would call:
 
 <source lang="python">
 # Acquire a reference the selected object in the Display
@@ -706,29 +706,29 @@ t = Display.getFront().getActive()
 root = t.getRoot()
 </source>
 
-Now that we have a reference to the root [http://fiji.sc/javadoc/ini/trakem2/display/Node.html Node], we'll ask it to give us the entire collection of subtree nodes: all nodes in the [http://fiji.sc/javadoc/ini/trakem2/display/Tree.html Tree]:
+Now that we have a reference to the root [https://fiji.sc/javadoc/ini/trakem2/display/Node.html Node], we'll ask it to give us the entire collection of subtree nodes: all nodes in the [https://fiji.sc/javadoc/ini/trakem2/display/Tree.html Tree]:
 
 <source lang="python">
 nodes = root.getSubtreeNodes()
 </source>
 
-The [http://fiji.sc/javadoc/ini.trakem2/display/Node.NodeCollection.html NodeCollection] is lazy and doesn't do caching. If you are planning on calling size() on it, and then iterating its nodes, you would end up iterating the whole sequence twice. So let's start by duplicating it:
+The [https://fiji.sc/javadoc/ini.trakem2/display/Node.NodeCollection.html NodeCollection] is lazy and doesn't do caching. If you are planning on calling size() on it, and then iterating its nodes, you would end up iterating the whole sequence twice. So let's start by duplicating it:
 
 <source lang="python">
 nodes = [nd for nd in nodes]
 </source>
 
-Each [http://fiji.sc/javadoc/ini/trakem2/display/Node.html Node] has:
+Each [https://fiji.sc/javadoc/ini/trakem2/display/Node.html Node] has:
 <ol>
-  <li>X, Y coordinates, relative to the local coordinate system of the Tree that contains the [http://fiji.sc/javadoc/ini/trakem2/display/Node.html Node].</li>
- <li>A reference to a layer (get it with nd.getLayer()). The [http://fiji.sc/javadoc/ini/trakem2/display/Layer.html Layer] has a getZ() method to get the Z coordinate (in pixels).</li>
+  <li>X, Y coordinates, relative to the local coordinate system of the Tree that contains the [https://fiji.sc/javadoc/ini/trakem2/display/Node.html Node].</li>
+ <li>A reference to a layer (get it with nd.getLayer()). The [https://fiji.sc/javadoc/ini/trakem2/display/Layer.html Layer] has a getZ() method to get the Z coordinate (in pixels).</li>
  <li>A data field, which can be a radius or a java.awt.geom.Area (see below).</li>
 </ol>
 
-Each [http://fiji.sc/javadoc/ini/trakem2/display/Node.html Node] contains a [http://fiji.sc/javadoc/ini/trakem2/display/Node.html#getData() getData()] public method to acquire whatever it is that it has:
+Each [https://fiji.sc/javadoc/ini/trakem2/display/Node.html Node] contains a [https://fiji.sc/javadoc/ini/trakem2/display/Node.html#getData() getData()] public method to acquire whatever it is that it has:
 <ul>
- <li>Treeline and Connector: its nodes [http://fiji.sc/javadoc/ini/trakem2/display/Node.html#getData() getData()] return a radius. The default value is zero.</li>
- <li>AreaTree: its nodes [http://fiji.sc/javadoc/ini/trakem2/display/Node.html#getData() getData()] return a [http://fiji.sc/javadoc/java/awt/geom/Area.html java.awt.geom.Area] instance, or null if none yet assigned to it.</li>
+ <li>Treeline and Connector: its nodes [https://fiji.sc/javadoc/ini/trakem2/display/Node.html#getData() getData()] return a radius. The default value is zero.</li>
+ <li>AreaTree: its nodes [https://fiji.sc/javadoc/ini/trakem2/display/Node.html#getData() getData()] return a [https://fiji.sc/javadoc/java/awt/geom/Area.html java.awt.geom.Area] instance, or null if none yet assigned to it.</li>
 </ul>
 
 == Obtaining the X,Y,Z coordinates of all nodes in a Tree ==
@@ -808,7 +808,7 @@ The centrality is the measure of how important is a node in tree, according to h
 
 The method we use is [http://www.informatik.uni-konstanz.de/~brandes/ Ulrik Brande]'s fast algorithm for computing betweenness centrality (see the [http://www.google.com/url?sa=t&source=web&cd=1&ved=0CBcQFjAA&url=http%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fdownload%3Fdoi%3D10.1.1.11.2024%26rep%3Drep1%26type%3Dpdf&ei=krO5TPKvNMXN4AbS4OHdDQ&usg=AFQjCNELHtt9Gb5KHMzRCeTsqI1uDoqxew paper]).
 
-The method [http://fiji.sc/javadoc/ini/trakem2/display/Tree.html#computeCentrality() computeCentrality()] of class [http://fiji.sc/javadoc/ini/trakem2/display/Tree.html Tree] returns as a [http://fiji.sc/javadoc/java/util/Map.html Map] of [http://fiji.sc/javadoc/ini/trakem2/display/Node.html Node] instance vs. its centrality value:
+The method [https://fiji.sc/javadoc/ini/trakem2/display/Tree.html#computeCentrality() computeCentrality()] of class [https://fiji.sc/javadoc/ini/trakem2/display/Tree.html Tree] returns as a [https://fiji.sc/javadoc/java/util/Map.html Map] of [https://fiji.sc/javadoc/ini/trakem2/display/Node.html Node] instance vs. its centrality value:
 
 <source lang="python">
 from ini.trakem2.display import Display
@@ -860,7 +860,7 @@ Display3D.show(tree.getProject().findProjectThing(tree))
 
 == Compute the degree of every node ==
 
-The degree of a node is the number of parent nodes that separate it from the root node. It's a built-in function in [http://fiji.sc/javadoc/ini/trakem2/display/Tree.html Tree] (and also in [http://fiji.sc/javadoc/ini/trakem2/display/Tree.html Node]):
+The degree of a node is the number of parent nodes that separate it from the root node. It's a built-in function in [https://fiji.sc/javadoc/ini/trakem2/display/Tree.html Tree] (and also in [https://fiji.sc/javadoc/ini/trakem2/display/Tree.html Node]):
 
 In the following example, we colorize the tree based on the degree of the node: the closer to the root, the hotest:
 
@@ -897,7 +897,7 @@ Display3D.show(tree.getProject().findProjectThing(tree))
 
 == Find branch nodes or end nodes ==
 
-The [http://fiji.sc/javadoc/ini/trakem2/display/Tree.html Tree] class offers methods to obtain the list of all branch points, end points, or both:
+The [https://fiji.sc/javadoc/ini/trakem2/display/Tree.html Tree] class offers methods to obtain the list of all branch points, end points, or both:
 
 <source lang="python">
 from ini.trakem2.display import Display
@@ -993,11 +993,11 @@ for node, targets in outgoing.iteritems():
 </source>
 
 
-Similarly, we could compute the incomming connections. There is a convenience method [http://fiji.sc/javadoc/ini/trakem2/display/Tree.html#findConnectors() findConnectors()] in class [http://fiji.sc/javadoc/ini/trakem2/display/Tree.html Tree] to return two lists: that of the outgoing and that of the incomming Connector instances. From these, one can easily get the connectivity graph, which you may also get by right-clicking on a Display and going for "Export - Connectivity graph...".
+Similarly, we could compute the incomming connections. There is a convenience method [https://fiji.sc/javadoc/ini/trakem2/display/Tree.html#findConnectors() findConnectors()] in class [https://fiji.sc/javadoc/ini/trakem2/display/Tree.html Tree] to return two lists: that of the outgoing and that of the incomming Connector instances. From these, one can easily get the connectivity graph, which you may also get by right-clicking on a Display and going for "Export - Connectivity graph...".
 
 == How to find out the network of all arbors, related via Connector instances ==
 
-The easiest way is to iterate all connectors and find out which objects they are relating. A [http://fiji.sc/javadoc/ini/trakem2/display/Connector.html Connector] object has an origin (the root node) and any number of targets (all children nodes of the root node). Each node has a radius; any other object in the TrakEM2 project that intersects with the world coordinates of that radius will be considered associated as an origin or a target.
+The easiest way is to iterate all connectors and find out which objects they are relating. A [https://fiji.sc/javadoc/ini/trakem2/display/Connector.html Connector] object has an origin (the root node) and any number of targets (all children nodes of the root node). Each node has a radius; any other object in the TrakEM2 project that intersects with the world coordinates of that radius will be considered associated as an origin or a target.
 
 <source lang="python">
 from ini.trakem2.display import Display, Connector, Tree
@@ -1178,7 +1178,7 @@ t = TextWindow("Balls CSV", csv, 400, 400)
 
 = Generate 3D meshes =
 
-In TrakEM2, 3D meshes are generated as a list of [http://javadoc.imagej.net/Java3D/index.html?org/scijava/vecmath/Point3f.html Point3f] for each object. Then the list is wrapped into any of the subclasses of [http://fiji.sc/javadoc/customnode/CustomMesh.html CustomMesh] of the 3D Viewer library, such as a [http://fiji.sc/javadoc/customnode/CustomTriangleMesh.html CustomTriangleMesh] or a [http://fiji.sc/javadoc/customnode/CustomLineMesh.html CustomLineMesh]. Then these mesh objects are encapsulated into a [http://fiji.sc/javadoc/ij3d/Content.html Content] object and added to an instance of the [http://fiji.sc/javadoc/ij3d/Image3DUniverse.html Image3DUniverse], which is the main window of the 3D Viewer.
+In TrakEM2, 3D meshes are generated as a list of [http://javadoc.imagej.net/Java3D/index.html?org/scijava/vecmath/Point3f.html Point3f] for each object. Then the list is wrapped into any of the subclasses of [https://fiji.sc/javadoc/customnode/CustomMesh.html CustomMesh] of the 3D Viewer library, such as a [https://fiji.sc/javadoc/customnode/CustomTriangleMesh.html CustomTriangleMesh] or a [https://fiji.sc/javadoc/customnode/CustomLineMesh.html CustomLineMesh]. Then these mesh objects are encapsulated into a [https://fiji.sc/javadoc/ij3d/Content.html Content] object and added to an instance of the [https://fiji.sc/javadoc/ij3d/Image3DUniverse.html Image3DUniverse], which is the main window of the 3D Viewer.
 
 Of course, via scripting many of these steps may be skipped. Below are several examples on how to generate meshes programmatically and save them in [http://www.martinreddy.net/gfx/3d/OBJ.spec Wavefront] format.
 
@@ -1233,7 +1233,7 @@ Just like for an AreaList (see above), but extract the triangles with:
 triangles = areatree.generateMesh(1, resample).verts
 </source>
 
-The [http://fiji.sc/javadoc/ini/trakem2/display/AreaTree.html AreaTree]'s generateMesh returns a [http://fiji.sc/javadoc/ini/trakem2/display/Tree.MeshData.html MeshData] object with the list of vertices and the list of colors of each vertex. The <i>generateTriangles</i> method of an [http://fiji.sc/javadoc/ini/trakem2/display/AreaTree.html AreaTree] returns a list of [http://javadoc.imagej.net/Java3D/index.html?org/scijava/vecmath/Point3f.html Point3f] that are ready for creating a [http://fiji.sc/javadoc/customnode/CustomLineMesh.html CustomLineMesh] (in PAIRWISE mode) to represent the skeleton.
+The [https://fiji.sc/javadoc/ini/trakem2/display/AreaTree.html AreaTree]'s generateMesh returns a [https://fiji.sc/javadoc/ini/trakem2/display/Tree.MeshData.html MeshData] object with the list of vertices and the list of colors of each vertex. The <i>generateTriangles</i> method of an [https://fiji.sc/javadoc/ini/trakem2/display/AreaTree.html AreaTree] returns a list of [http://javadoc.imagej.net/Java3D/index.html?org/scijava/vecmath/Point3f.html Point3f] that are ready for creating a [https://fiji.sc/javadoc/customnode/CustomLineMesh.html CustomLineMesh] (in PAIRWISE mode) to represent the skeleton.
 
 = Save the project while running a task =
 
@@ -1300,7 +1300,7 @@ print "done!"
 
 From the right-click menu, one may choose "Export - Make flat image", which opens a dialog that lets one choose between 8-bit and RGB. These snapshots are created from the mipmaps, which are all 8-bit or RGB images.
 
-On occasions, one wants to create a flattened montage of images in their original bit depth, such as 16-bit or 32-bit. For this purpose, the static function [http://fiji.sc/javadoc/ini/trakem2/display/Patch.html#makeFlatImage(int,%20ini.trakem2.display.Layer,%20java.awt.Rectangle,%20double,%20java.util.Collection,%20java.awt.Color,%20boolean) Patch.makeFlatImage] exists.
+On occasions, one wants to create a flattened montage of images in their original bit depth, such as 16-bit or 32-bit. For this purpose, the static function [https://fiji.sc/javadoc/ini/trakem2/display/Patch.html#makeFlatImage(int,%20ini.trakem2.display.Layer,%20java.awt.Rectangle,%20double,%20java.util.Collection,%20java.awt.Color,%20boolean) Patch.makeFlatImage] exists.
 
 Here is an example that, for a given Layer and set of selected Patch instances (image tiles) in it, it makes a 16-bit flat montage image and returns it as an ImageJ's ImageProcessor, at 50% the original scale.
 
@@ -1334,7 +1334,7 @@ imp.show()
 </source>
 
 
-For other output types, use ImagePlus.GRAY8, .GRAY16, GRAY32 or .COLOR_RGB, as listed in the documentation for the [http://fiji.sc/javadoc/ij/ImagePlus.html ImagePlus] class.
+For other output types, use ImagePlus.GRAY8, .GRAY16, GRAY32 or .COLOR_RGB, as listed in the documentation for the [https://fiji.sc/javadoc/ij/ImagePlus.html ImagePlus] class.
 
 = Enrich the GUI of TrakEM =
 
@@ -1393,7 +1393,7 @@ All the following are included in Fiji's plugins/Examples/TrakEM2_Example_Script
 *{{GitHub|repo=fiji|path=plugins/Examples/TrakEM2_Example_Scripts/T2_set_all_transforms_to_identity.py|label=Set all transforms to identity}} for TrakEM2 objects.
 *{{GitHub|repo=fiji|path=plugins/Examples/TrakEM2_Example_Scripts/T2_Select_All.py|label=Select All}} objects in TrakEM2.
 *{{GitHub|repo=fiji|path=plugins/Examples/TrakEM2_Example_Scripts/Measure_AreaLists.py|label=Measure AreaList}} in TrakEM2.
-* A [https://github.com/acardona/Fiji-TrakEM2-scripts/tree/master/TrakEM2 collection of scripts for TrakEM2], hosted by github. Mostly related to inspecting and analyzing [http://fiji.sc/javadoc/ini/trakem2/display/Treeline.html Treeline], [http://fiji.sc/javadoc/ini/trakem2/display/AreaTree.html AreaTree] and [http://fiji.sc/javadoc/ini/trakem2/display/Connector.html Connector] instances, when used for neural circuit reconstruction.
+* A [https://github.com/acardona/Fiji-TrakEM2-scripts/tree/master/TrakEM2 collection of scripts for TrakEM2], hosted by github. Mostly related to inspecting and analyzing [https://fiji.sc/javadoc/ini/trakem2/display/Treeline.html Treeline], [https://fiji.sc/javadoc/ini/trakem2/display/AreaTree.html AreaTree] and [https://fiji.sc/javadoc/ini/trakem2/display/Connector.html Connector] instances, when used for neural circuit reconstruction.
 
 [[Category:Scripting]]
 [[Category:TrakEM2]]
