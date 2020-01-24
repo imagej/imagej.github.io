@@ -26,9 +26,9 @@ print("Pixel Spacing: "+ pixelSpacing);
 == How to work with DICOM headers from a macro? ==
 
 See these [[macro]] functions:
-* [http://imagej.net/developer/macro/functions.html#getImageInfo getImageInfo()]
-* [http://imagej.net/developer/macro/functions.html#getInfo getInfo(DICOM_TAG)]
-* [http://imagej.net/developer/macro/functions.html#getMetadata getMetadata("Info")]
+* [https://imagej.net/developer/macro/functions.html#getImageInfo getImageInfo()]
+* [https://imagej.net/developer/macro/functions.html#getInfo getInfo(DICOM_TAG)]
+* [https://imagej.net/developer/macro/functions.html#getMetadata getMetadata("Info")]
 
 An example using <code>getInfo()</code>:
 <source lang="javascript">
