@@ -23,7 +23,7 @@ Do you need image data to try your algorithms on? Do you lack expert ground trut
 * [http://www.openmicroscopy.org/site/support/file-formats/ome-tiff/ome-tiff-data Sample OME-TIFF data on openmicroscopy.org], thanks to Josh Bembenek.[[File:tubhiswt4D.png|right|140px|''C. elegans'' embryo coexpressing tubulin histone GFP]]
 :The dataset consists of tubulin histone GFP coexpressing ''C. elegans'' embryos. All image planes were collected at 512x512 resolution in 8-bit grayscale. 
 
-* [http://fiji.sc/datasets/migrating-macrophages.tif.tar.bz2 Migrating macrophages] in response to stimuli.
+* [https://fiji.sc/datasets/migrating-macrophages.tif.tar.bz2 Migrating macrophages] in response to stimuli.
 :4D data set, kindly provided by Dirk Sieger and [http://www.embl.de/research/units/dev_biology/peri/ Francesca Peri], EMBL.[[File:Migrating-macrophages.gif|right|140px|Macrophages in 4D]]
 :'''The challenge''': trace the macrophages in 4D, and measure their shape volumes, surfaces, positions and pixel value intensities.
 :The file is a tif hyperstack that can be loaded directly into the [[3D Viewer]].
