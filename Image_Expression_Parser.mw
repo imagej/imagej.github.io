@@ -224,7 +224,7 @@ Here is another example in [[Javascript]] contributed by Jeff Hanson:
 
 <source lang="javascript">
 // This script was created as an javascript equivalent of the Python example here:
-//   http://fiji.sc/Image_Expression_Parser#Calling_the_plugin_from_elsewhere
+//   https://fiji.sc/Image_Expression_Parser#Calling_the_plugin_from_elsewhere
 
 importClass(Packages.fiji.process.Image_Expression_Parser); 
 importClass(java.util.HashMap);
