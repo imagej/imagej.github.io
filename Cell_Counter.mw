@@ -1,6 +1,6 @@
 {{ComponentStats:sc.fiji:Cell_Counter}}This plugin will open a new cell counter GUI. On the left are the counter types and counters, on the right the action buttons.
 
-{{Notice|Please consider using the built-in [http://imagej.net/docs/guide/146-19.html#sec:Multi-point-Tool Multi-Point Tool] in ImageJ, as this tool now replicates most of the functionality of Cell Counter.}}
+{{Notice|Please consider using the built-in [https://imagej.net/docs/guide/146-19.html#sec:Multi-point-Tool Multi-Point Tool] in ImageJ, as this tool now replicates most of the functionality of Cell Counter.}}
 
 == Bugs ==
 May not work correctly after using '''Load Markers''' to load more than 8 counter types from an XML file. Opens off-screen on 1024 pixel wide and smaller monitors.
@@ -42,7 +42,7 @@ Add the following macros to ''ImageJ/macros/StartupMacros.txt'', restart ImageJ,
 * <u>2006/02/14</u>: Added "Save Markers" and "Load Markers" buttons
 * <u>2006/03/06</u>: Added "Export Image" and "Measure" buttons
 * <u>2006/03/12</u>: Add "Show Numbers" checkbox
-* <u>2008/02/29</u>: Updated to work with [http://imagej.net/plugins/grid.html Grid] plugin
+* <u>2008/02/29</u>: Updated to work with [https://imagej.net/plugins/grid.html Grid] plugin
 * <u>2008/08/27</u>: Added "Show All" checkbox; works with hyperstacks and composite color images
 * <u>2008/09/02</u>: Added setType() method to support macros
 * <u>2008/09/22</u>: Out of focus markers displayed as outlines
