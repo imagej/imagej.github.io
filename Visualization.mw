@@ -4,13 +4,13 @@
 == Getting Started with Simple Visualization Options in ImageJ ==
 === Pseudocolor Image Look-Up Tables (LUTs) ===
 
-A [http://imagej.net/Color_Image_Processing#Pseudo-color pseudocolor image] is a single channel gray image (8, 16 or 32-bit) that has color assigned to it via a lookup table, i.e. a [https://en.wikipedia.org/wiki/Lookup_table#Lookup_tables_in_image_processing LUT]. A LUT is a predefined table of gray values with matching red, green, and blue values so that shadows of gray are displayed as colorized pixels. Thus, differences in color in the pseudo-colored image reflect differences in intensity of the object rather than differences in color of the specimen that has been imaged.
+A [https://imagej.net/Color_Image_Processing#Pseudo-color pseudocolor image] is a single channel gray image (8, 16 or 32-bit) that has color assigned to it via a lookup table, i.e. a [https://en.wikipedia.org/wiki/Lookup_table#Lookup_tables_in_image_processing LUT]. A LUT is a predefined table of gray values with matching red, green, and blue values so that shadows of gray are displayed as colorized pixels. Thus, differences in color in the pseudo-colored image reflect differences in intensity of the object rather than differences in color of the specimen that has been imaged.
 
-The [http://imagej.net/docs/guide/146-19.html#sub:LUTMenu LUT Menu] of ImageJ contains a large collection of lookup tables that can be applied to a pseudocolor image.
+The [https://imagej.net/docs/guide/146-19.html#sub:LUTMenu LUT Menu] of ImageJ contains a large collection of lookup tables that can be applied to a pseudocolor image.
 
 Note: in the ImageJ 1.x user interface, LUTs are always 8-bit. When working with an image of higher bit depth, its intensity values are binned into 256 levels between minimum and maximum (see section Brightness/Contrast), and the LUT is applied onto these binned levels.
 
-More information on this topic can be found on the [http://imagej.net/Color_Image_Processing Color Image Processing] page.
+More information on this topic can be found on the [https://imagej.net/Color_Image_Processing Color Image Processing] page.
 
 Fluorescence images are usually acquired without color information (i.e. by monochrome cameras or with photomultipliers): each channel contains just intensity values. To display a multi-channel fluorescence image in composite mode (i.e. an overlay of all channels), each channel can be assigned a '''monochrome false-color LUT''', e.g. 'Red', 'Green', 'Blue', 'Cyan', 'Magenta', 'Yellow', etc.
 
@@ -52,7 +52,7 @@ For further reading about color maps, see <ref>http://peterkovesi.com/projects/c
 
 === Adjusting your Image in ImageJ ===
 
-The [http://imagej.net/docs/guide/146-28.html#toc-Subsection-28.2 Adjust submenu] contains commands that adjust [http://imagej.net/docs/guide/146-28.html#sub:Brightness/Contrast...%5BC%5D Brightness/Contrast], [http://imagej.net/docs/guide/146-28.html#sub:Threshold...%5BT%5D Threshold] levels, and image [http://imagej.net/docs/guide/146-28.html#sub:Size... Size].
+The [https://imagej.net/docs/guide/146-28.html#toc-Subsection-28.2 Adjust submenu] contains commands that adjust [https://imagej.net/docs/guide/146-28.html#sub:Brightness/Contrast...%5BC%5D Brightness/Contrast], [https://imagej.net/docs/guide/146-28.html#sub:Threshold...%5BT%5D Threshold] levels, and image [https://imagej.net/docs/guide/146-28.html#sub:Size... Size].
 
 === Visualization of Volumetric Image Data ===
 Here we summarize some of the 3D visualization plugins in ImageJ.
@@ -105,9 +105,9 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
 # [https://imagej.nih.gov/ij/docs/guide/146-30.html#sub:Surface-Plot... Surface Plot]
 
 === Available Plugins for Making Plots in ImageJ ===
-# [http://imagej.net/Quiver_Plot Quiver Plot] 
+# [https://imagej.net/Quiver_Plot Quiver Plot] 
 === Plotting tools available via scripting... ===
-# JFreeChart (used by [http://imagej.net/Directionality Directionality])
+# JFreeChart (used by [https://imagej.net/Directionality Directionality])
 # [http://matplotlib.org/ Matplotlib]
 
 == Making Figures in ImageJ ==
@@ -129,17 +129,17 @@ Here we summarize some of the 'big data' visualization plugins in ImageJ.
 |'''Highlights'''
 |'''Plugin Snapshot'''
 |-
-|[http://imagej.net/BigDataViewer BigDataViewer]
+|[https://imagej.net/BigDataViewer BigDataViewer]
 |A tool for interactive browsing of arbitrarily large image datasets.
 |
 * Arbitrary slicing, zooming, etc.
 * For multi-angle, multi-channel, time-series, etc.
 * Adding overlays, annotations, etc.
 * Reusable software components
-* Used as data backend and/or visualization frontend by [http://imagej.net/Multiview-Reconstruction MultiView Reconstruction], [http://imagej.net/MaMuT MaMuT], [http://imagej.net/BigWarp BigWarp], etc.
+* Used as data backend and/or visualization frontend by [https://imagej.net/Multiview-Reconstruction MultiView Reconstruction], [https://imagej.net/MaMuT MaMuT], [https://imagej.net/BigWarp BigWarp], etc.
 |[[File:bdv.png|500px]]
 |-
-|[http://imagej.net/Multiview-Reconstruction MultiView Reconstruction]
+|[https://imagej.net/Multiview-Reconstruction MultiView Reconstruction]
 |A tool for registration, fusion, deconvolution, and visualization of multiview microscopy images.
 |
 * Designed for lightsheet fluorescence microscopy
@@ -159,18 +159,18 @@ Here we summarize the more advanced analysis plugins in ImageJ using the above '
 |'''More Details...'''
 |'''Plugin Snapshot'''
 |-
-|[http://imagej.net/MaMuT MaMuT] ('''Ma'''ssive '''Mu'''lti-view '''T'''racker)
+|[https://imagej.net/MaMuT MaMuT] ('''Ma'''ssive '''Mu'''lti-view '''T'''racker)
 |A tool for manual and semi-automatic tracking in multiple views.
 |
 * Allows browsing, annotating, and curating annotations for large image data
-* Combines [http://imagej.net/BigDataViewer BigDataViewer] and [http://imagej.net/TrackMate TrackMate] 
-* Ships [http://imagej.net/TrackScheme TrackScheme], the lineage browser taken from [http://imagej.net/TrackMate TrackMate] 
+* Combines [https://imagej.net/BigDataViewer BigDataViewer] and [https://imagej.net/TrackMate TrackMate] 
+* Ships [https://imagej.net/TrackScheme TrackScheme], the lineage browser taken from [https://imagej.net/TrackMate TrackMate] 
 |[[File:MaMuT.png|500px]]
 |-
-|[http://imagej.net/BigWarp BigWarp]
+|[https://imagej.net/BigWarp BigWarp]
 |A tool for manual, interactive, landmark-based deformable image alignment.
 |
-* Uses [http://imagej.net/BigDataViewer BigDataViewer] for visualization and navigation
+* Uses [https://imagej.net/BigDataViewer BigDataViewer] for visualization and navigation
 * Uses a [[wikipedia:Thin_plate_spline|Thin Plate Spline]] implemented {{GitHub|org=saalfeldlab|repo=bigwarp|label=in Java}} to build a deformation from point correspondences
 * Enables landmark pair placement and displays the effects of the warp on-the-fly
 |[[File:BigWarp.png|400px]]
