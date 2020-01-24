@@ -89,8 +89,8 @@ To generate the orientation map image, a HSB image is made by taking
 
 Here is two images stack made to test the plugin accuracy:
 
-* [http://fiji.sc/tinevez/directionality/VaryingDirection.tif VaryingDirection.tif, 2.5MB]
-* [http://fiji.sc/tinevez/directionality/VaryingAmount.tif VaryingAmount.tif, 2.5MB]
+* [https://fiji.sc/tinevez/directionality/VaryingDirection.tif VaryingDirection.tif, 2.5MB]
+* [https://fiji.sc/tinevez/directionality/VaryingAmount.tif VaryingAmount.tif, 2.5MB]
 
 <code>VaryingDirection.tif</code> is a 5 slices 16-bit stack made of artificial structures. Each slice is 512x512 pixels, and contains 2000 rods of length 100 pixels in average. 1000 of these rods have a random orientation, the others 1000 have an orientation varying from -60º to 60º from the first slice to the last one. The image is blurred by a gaussian of std 1, and corrupted by Poisson noise. You can use it to determine the accuracy of angle detection. The amount should be close and below 50%.
 
