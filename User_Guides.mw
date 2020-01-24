@@ -1,8 +1,8 @@
 {{Learn}}<div style="display: table">
 {{Book
 | image=Imagej-user-guide.jpg |
-| link=http://imagej.net/docs/guide/
-| description=The [http://imagej.net/docs/guide/ ImageJ User Guide] provides a thorough description of [[ImageJ]]'s built-in functions.
+| link=https://imagej.net/docs/guide/
+| description=The [https://imagej.net/docs/guide/ ImageJ User Guide] provides a thorough description of [[ImageJ]]'s built-in functions.
 }}
 {{Book
 | image=Fiji-cookbook.png
