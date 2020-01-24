@@ -321,7 +321,7 @@ the improvement 2D segmentation could be evaluated by pressing the
 segmentation module by the marked watershed segmentation algorithm</B></SPAN></FONT></P>
 
 <P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 115%">
-[http://imagej.net/Morphological_Segmentation Morphological Segmentation]
+[https://imagej.net/Morphological_Segmentation Morphological Segmentation]
 integrated into LSM-W2 implements the segmentation of the image.
 The plugin Morphological Segmentation combines morphological
 operations, such as extended minima and morphological gradient, with
