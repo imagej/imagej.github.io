@@ -3,7 +3,7 @@
 | software               = Fiji
 | author                  = {{Person|Saalfeld}} ([mailto:saalfeld@mpi-cbg.de])
 | maintainer             = {{Person|Saalfeld}}
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=tree;f=mpicbg/ij/plugin]
+| source                 = [https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=tree;f=mpicbg/ij/plugin]
 | released               = March 11<sup>th</sup>, 2011
 | latest version         = October 22<sup>nd</sup>, 2011
 | status                 = experimental, active
