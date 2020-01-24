@@ -2,11 +2,11 @@
 | name                   = SciJava
 | software               = SciJava
 | logo                     = [[File:Scijava-logo.png|128px]]
-| author                 = [http://scijava.org/ SciJava consortium]
+| author                 = [https://scijava.org/ SciJava consortium]
 | maintainer             = {{Person|Rueden}}
 | source                 = [https://github.com/scijava on GitHub]
 | status                 = Active
-| website                = http://scijava.org/
+| website                = https://scijava.org/
 }}SciJava is a collaboration of projects providing software for scientific computing&mdash;an effort to cooperate and reuse code when feasible.
 
 == The SciJava component collection ==
@@ -43,4 +43,4 @@ The following projects are part of the '''[[:Category:SciJava|SciJava pledge]]''
 | style="text-align: center; vertical-align: middle" | {{Logo | MiToBo | size=48px}}
 |}
 
-See the [[Architecture]] and [[Governance]] pages, as well as the [http://scijava.org/ SciJava web site], for further details.
+See the [[Architecture]] and [[Governance]] pages, as well as the [https://scijava.org/ SciJava web site], for further details.
