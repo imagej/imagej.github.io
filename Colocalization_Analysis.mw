@@ -21,7 +21,7 @@ Other methods include ICCS (image cross correlation spectroscopy) and a derivati
 
 ==== Object-based overlap analysis ====
 
-This cookbook does not cover object-based overlap analysis, since it requires segmenting the image into objects and background, and that is a whole branch of image processing in itself. See the [http://imagej.net/plugins/track/jacop.html JACoP imageJ plugin] for object based methods.
+This cookbook does not cover object-based overlap analysis, since it requires segmenting the image into objects and background, and that is a whole branch of image processing in itself. See the [https://imagej.net/plugins/track/jacop.html JACoP imageJ plugin] for object based methods.
 
 
 ==== Do state the spatial resolution explicitly! ====
@@ -57,7 +57,7 @@ After setting thresholds in both colour channels, we see the scatterplot or 2D H
 
 Let's open a sample data set that we know should have very good colocalization because the 2 subunits of a dimeric protein are stained with green and red dyes respectively. The methods of Pearson, Manders, Costes and Li should work very well for this sample, but maybe we can see some problems with the data? Maybe we can decide if the data is suitable for this analysis or not? 
 
-'''Open this sample data file [http://fiji.sc/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif].''' Then use the "Image-Color-Split Channels" menu command to get a separate z stack for the 2 dyes (you can throw the blue one away!).
+'''Open this sample data file [https://fiji.sc/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif].''' Then use the "Image-Color-Split Channels" menu command to get a separate z stack for the 2 dyes (you can throw the blue one away!).
 
 If you like, you can change the look up tables of the images (LUTs) so one is "green" and one is "magenta". Of course the colors here are always false. These false colors are only useful to tell which channel is which. The optoelectronic detectors we use only see photons, and don't know what color they are; that is determined by the fluorescence emission filters we use. There is no such thing as a green dye or a red dye, since they have broad emission spectra not a single wavelength corresponding to a certain "color".
 If I want to show DAPI in green and EGFP as magenta, there is nothing "wrong" about that.  
@@ -121,7 +121,7 @@ We need to think carefully about the correct or adequate spatial resolution in x
 <span style="color: red">Note: this plugin is no longer under active development and support. Use [[Coloc 2]] instead, which does the same thing, only better.</span>
 
 <p>
-The [[Colocalization Threshold]] plugin performs several functions for you in one go. With the "green" and "red" stacks of the [http://fiji.sc/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif] dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2. You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot" (see also [[#Why_scatter_plots.3F|Why scatter plots?]]), and others off. You can explore the options in Set options. Turn ALL the options on the first time you use it, so you see what it can do. 
+The [[Colocalization Threshold]] plugin performs several functions for you in one go. With the "green" and "red" stacks of the [https://fiji.sc/samples/colocsample1bRGB_BG.tif colocsample1bRGB_BG.tif] dataset open and the channels split (see above) choose the menu item "Analyze-Colocalization-Colocalization Threshold". Next select the right stacks for the analysis in Channel1 and Channel2. You can use a region of interest (ROI) if you like, which should be defined before you run the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot" (see also [[#Why_scatter_plots.3F|Why scatter plots?]]), and others off. You can explore the options in Set options. Turn ALL the options on the first time you use it, so you see what it can do. 
 </p>
 
 <p>
