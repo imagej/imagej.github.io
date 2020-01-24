@@ -1,6 +1,6 @@
-{{ComponentStats:sc.fiji:Image_5D}}This page supersedes the [http://imagej.net/plugins/image5d.html original Image5D page] from the ImageJ 1.x documentation.
+{{ComponentStats:sc.fiji:Image_5D}}This page supersedes the [https://imagej.net/plugins/image5d.html original Image5D page] from the ImageJ 1.x documentation.
 
-{{Notice|Please consider using the built-in [http://imagej.net/docs/guide/146-8.html hyperstacks] functionality in ImageJ, since it is newer and more well-integrated than this old Image5D plugin.}}
+{{Notice|Please consider using the built-in [https://imagej.net/docs/guide/146-8.html hyperstacks] functionality in ImageJ, since it is newer and more well-integrated than this old Image5D plugin.}}
 
 == Installation ==
 
@@ -12,7 +12,7 @@ Image5D is distributed as part of [[Fiji]], so no installation is necessary beyo
 [[Image:Image5D-gray.jpg|374px|right]]
 [[Image:Image5D-overlay.jpg|374px|right]]
 
-These plugins extend image stacks to 5 dimensions: x, y, channel (color), slice (z), frame (t). Unlike the [http://imagej.net/plugins/hypervolume-browser.html HyperVolume Browser], an Image5D has a "true" 5D format. That way plugins working on stacks should usually work as expected on the currently displayed stack of an Image5D (just try a z-projection to see what this means). Image5Ds are displayed in a window with two scrollbars for slice and time below the image and a panel with controls to change the current channel and its color to the right of the image. A dropdown menu allows to change the display of the channels. Options are one channel in gray, one channel in color and an overlay of selected channels.
+These plugins extend image stacks to 5 dimensions: x, y, channel (color), slice (z), frame (t). Unlike the [https://imagej.net/plugins/hypervolume-browser.html HyperVolume Browser], an Image5D has a "true" 5D format. That way plugins working on stacks should usually work as expected on the currently displayed stack of an Image5D (just try a z-projection to see what this means). Image5Ds are displayed in a window with two scrollbars for slice and time below the image and a panel with controls to change the current channel and its color to the right of the image. A dropdown menu allows to change the display of the channels. Options are one channel in gray, one channel in color and an overlay of selected channels.
 
 In the one channel color and overlay modes one can open a panel to select the display color of a channel or to edit a more refined LUT with the ImageJ LUT Editor.
 
@@ -33,14 +33,14 @@ See the [https://github.com/fiji/Image_5D/issues GitHub issue tracker]
 
 === Sample data ===
 
-A sample 5D data set [http://imagej.net/images/Spindly-GFP.zip is available]. In consists of HeLa cells with an H2B-GFP construct to stain the chromatin imaged in fluorescence and transmission. A large part of the GFP fluorescence is bleached in the second frame and the cells go through mitosis, later. It has 2 channels, 24 slices and 7 frames. The file (Spindly-GFP.zip) is a TIFF stack contained in a ZIP archive. To view it with Image5D, open it using ''File/Open'' or drag and drop, then convert it to an Image5D using {{bc|Plugins|Image5D|Stack to Image5D}}.
+A sample 5D data set [https://imagej.net/images/Spindly-GFP.zip is available]. In consists of HeLa cells with an H2B-GFP construct to stain the chromatin imaged in fluorescence and transmission. A large part of the GFP fluorescence is bleached in the second frame and the cells go through mitosis, later. It has 2 channels, 24 slices and 7 frames. The file (Spindly-GFP.zip) is a TIFF stack contained in a ZIP archive. To view it with Image5D, open it using ''File/Open'' or drag and drop, then convert it to an Image5D using {{bc|Plugins|Image5D|Stack to Image5D}}.
 
-A sample [http://imagej.net/macros/images/MyoblastCells.zip 16-bit RGB data set] of triple labeled cloned myoblast cells is also available. To view it with Image5D, open it using ''File/Open'' or drag and drop, then convert it to an Image5D using {{bc|Plugins|Image5D|Stack to Image5D}}. This image is courtasy of Dr. Angelica Keller and Juliette Peltzer, Faculte des Sciences et Technologies, Universite Paris 12 Val de Marne, France.
+A sample [https://imagej.net/macros/images/MyoblastCells.zip 16-bit RGB data set] of triple labeled cloned myoblast cells is also available. To view it with Image5D, open it using ''File/Open'' or drag and drop, then convert it to an Image5D using {{bc|Plugins|Image5D|Stack to Image5D}}. This image is courtasy of Dr. Angelica Keller and Juliette Peltzer, Faculte des Sciences et Technologies, Universite Paris 12 Val de Marne, France.
 
 == See also ==
 
 * [[Sync Windows]]
-* [http://imagej.net/plugins/spectral-unmixing.html Spectral Unmixing Plugins]
+* [https://imagej.net/plugins/spectral-unmixing.html Spectral Unmixing Plugins]
 * [http://www.imagescience.org/meijering/software/transformj/ TransformJ], [http://www.imagescience.org/meijering/software/featurej/ FeatureJ], [http://www.imagescience.org/meijering/software/randomj/ RandomJ] and [http://www.imagescience.org/meijering/software/mtrackj/ MTrackJ]
 
 == History ==
