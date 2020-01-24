@@ -2,12 +2,12 @@
 | software               = ImageJ
 | name                   = Sigma Filter
 | author                 = Michael Schmid and Tony Collins
-| filename               = [http://imagej.net/plugins/download/Sigma_Filter_Plus.class Sigma_Filter_Plus.class]
-| source                 = [http://imagej.net/plugins/download/Sigma_Filter_Plus.java Sigma_Filter_Plus.java]
+| filename               = [https://imagej.net/plugins/download/Sigma_Filter_Plus.class Sigma_Filter_Plus.class]
+| source                 = [https://imagej.net/plugins/download/Sigma_Filter_Plus.java Sigma_Filter_Plus.java]
 | released               = 25 October 2007
 | status                 = 1st version
 | category               = [[:Category:Filtering|Filtering]]
-| website                = [http://imagej.net/plugins/sigma-filter.html]
+| website                = [https://imagej.net/plugins/sigma-filter.html]
 }}
 
 == Purpose ==
