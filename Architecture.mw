@@ -18,14 +18,6 @@ The [[ImageJ]] project, and related projects in the [[SciJava]] software ecosyst
 
 == Organizational structure ==
 
-<imagemap>
-Image:SciJava_Organization_Hierarchy.svg|right|frame|SciJava organizations
-rect 43 178 277 307 [https://github.com/imglib]
-rect 43 83 216 147 [https://github.com/scifio]
-rect 30 50 230 260 [https://github.com/imagej]
-rect 1 1 261 291 [https://github.com/scijava]
-</imagemap>
-
 There are four organizations on [https://github.com/ GitHub] which form the backbone of the [[SciJava]] ecosystem:
 
 * [https://github.com/scijava scijava] - for [[SciJava]] core components: general-purpose, non-image-specific libraries.
