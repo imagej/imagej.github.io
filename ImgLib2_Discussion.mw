@@ -143,7 +143,7 @@ You'd only want to implement Transformable in cases where the object has interna
 Now it obviously can be made to work for ROIs and it can be made to work to combine two linear transformations (dot product of matrices, right?). But other things are more complex and require more thought. At the end of it, each output is a function of the inputs and the trick is to composite a function that performs the operation. For a transform T1 to be transformable by transform T2, it seems that you need to combine and reduce an equation on the inputs of T1 for each of the outputs of T2. It's a difficult enough problem that you might not want to make a transform generally transformable - you might want to have compositors with special knowledge regarding which classes can be combined to yield a new one and how it's done.
 
 ====Out-Of-Bounds Handling====
-In imglib2, out-of-bounds access is handled by [http://fiji.sc/cgi-bin/gitweb.cgi?p=imglib.git;a=blob;f=imglib/src/main/java/mpicbg/imglib/ExtendedRandomAccessibleInterval.java;h=31dacac73d7c4377d2e2335681b3417e2c8665f4;hb=refs/heads/imglib2-dirty <code>ExtendedRandomAccessibleInterval</code>]
+In imglib2, out-of-bounds access is handled by [https://fiji.sc/cgi-bin/gitweb.cgi?p=imglib.git;a=blob;f=imglib/src/main/java/mpicbg/imglib/ExtendedRandomAccessibleInterval.java;h=31dacac73d7c4377d2e2335681b3417e2c8665f4;hb=refs/heads/imglib2-dirty <code>ExtendedRandomAccessibleInterval</code>]
 If you have a <code>RandomAccessibleInterval</code> you can wrap it into
 an <code>ExtendedRandomAccessibleInterval</code> which extends to infinity.
 Like so:
@@ -424,7 +424,7 @@ public interface RealTransformedRealRandomAccessible< T > extends RealRandomAcce
 
 Note, that <code>RealTransform</code> implementations do not yet exist.
 However the ideas are in place, see 
-[http://fiji.sc/wiki/index.php/ImgLib2_Discussion#Transformation_Hierarchies Transformation Hierarchies] above.
+[https://fiji.sc/wiki/index.php/ImgLib2_Discussion#Transformation_Hierarchies Transformation Hierarchies] above.
 The interfaces to be implemented can be found in packages <code>net.imglib2.concatenate</code> and <code>net.imglib2.transform</code>.
 
 Examples of implementation of the integer version of these interfaces can be found in <code>net.imglib2.transform.integer</code> (These are the ones I did for views).
