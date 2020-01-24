@@ -2,7 +2,7 @@
 {{Warning | The "Report a Bug" plugin is currently being rewritten to report issues to GitHub, rather than to the now-defunct Fiji BugZilla. In the meantime, please report bugs via the [[Forum]] or [https://github.com/imagej/imagej/issues on GitHub] instead.}}
 {{ComponentStats:sc.fiji:Bug_Submitter}}== Report a Bug ==
 
-To be able to track issues better, the Fiji project has a [http://fiji.sc/bugzilla BugZilla] instance. However, BugZilla's user interface can be quite intimidating to somebody who just wants to report a bug. Therefore, Fiji offers an easier way to report a bug:
+To be able to track issues better, the Fiji project has a [https://fiji.sc/bugzilla BugZilla] instance. However, BugZilla's user interface can be quite intimidating to somebody who just wants to report a bug. Therefore, Fiji offers an easier way to report a bug:
 
 [[Image:Report_a_Bug-menu.jpg]]
 
