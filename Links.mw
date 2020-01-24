@@ -1,7 +1,7 @@
 * [https://plus.google.com/u/0/112060674582400644206/ ImageJ's Google+ page]
 * [https://plus.google.com/u/0/111207545597136714163/ Fiji's Google+ page]
-* [http://imagej.net/index.html ImageJ 1.x documentation]
-* [http://imagej.net/docs/user-guide.pdf ImageJ User Manual]
+* [https://imagej.net/index.html ImageJ 1.x documentation]
+* [https://imagej.net/docs/user-guide.pdf ImageJ User Manual]
 * [http://blogs.qub.ac.uk/ccbg/fluorescence-image-analysis-intro/ Fluorescence image analysis introduction]
 * [http://imagejdocu.tudor.lu/doku.php ImageJ Documentation Wiki]
 * [http://imagej-dev.org/2010/04/07/recent-fiji-imagej2-presentations About the relationship between ImageJ2 and Fiji]
@@ -13,7 +13,7 @@
 Links to the contributors' personal pages can be found [[Contributors|here]].
 
 == More ImageJ plugins ==
-* Plugins on the [http://imagej.net/plugins/index.html ImageJ website], specifically [http://imagej.net/plugins/index.html#more links to external websites]
+* Plugins on the [https://imagej.net/plugins/index.html ImageJ website], specifically [https://imagej.net/plugins/index.html#more links to external websites]
 * Plugins on the [http://imagejdocu.tudor.lu/doku.php?id=plugin:start ImageJ Documentation Wiki]
 * The Biomedical Imaging Group in Lausanne has [http://bigwww.epfl.ch/algorithms.html many interesting plugins].
 * Christian Henden has some interesting plugins (mainly in the Public Domain), including 3D threshold methods: http://www.pvv.org/~perchrh/imagej/
@@ -85,7 +85,7 @@ If you're still unsure and think that your code is not good enough, then publish
 
 == Miscellaneous ==
 
-* An [http://imagej.net/docs/install/osx.html#icon explanation] where ImageJ's icon's [http://www.arsmachina.com/s-hart1209.htm microscope] comes from.
+* An [https://imagej.net/docs/install/osx.html#icon explanation] where ImageJ's icon's [http://www.arsmachina.com/s-hart1209.htm microscope] comes from.
  
 ==Imaging Networks and Facilities==
 * [https://ifn.mpi-cbg.de Imaging Facility Network (Dresden Biopolis)]
