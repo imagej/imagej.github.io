@@ -112,8 +112,8 @@ The segmentator will be applied to the selected image or stack and the result wi
 
 ==API documentation==
 The latest documentation of the package can be found here:
-* For the SIOX plugin: [http://fiji.sc/javadoc/siox/package-summary.html http://fiji.sc/javadoc/siox/package-summary.html] 
-* For the SIOX library: [http://fiji.sc/javadoc/org/siox/package-summary.html http://fiji.sc/javadoc/org/siox/package-summary.html]
+* For the SIOX plugin: [https://fiji.sc/javadoc/siox/package-summary.html https://fiji.sc/javadoc/siox/package-summary.html] 
+* For the SIOX library: [https://fiji.sc/javadoc/org/siox/package-summary.html https://fiji.sc/javadoc/org/siox/package-summary.html]
 
 ==References==
 Most Comprehensive Work:
@@ -129,12 +129,12 @@ Still Image Approach:
 * G. Friedland, K. Jantz, T. Lenz, F. Wiesel, R. Rojas: A Practical Approach to Boundary-Accurate Multi-Object Extraction from Still Images and Videos, to appear in Proceedings of the IEEE International Symposium on Multimedia (ISM2006), San Diego (California), December, 2006.
 
 ==ImageJ version==
-Thanks to {{Person|Rasband}}, there is an [http://imagej.net/plugins/siox/index.html ImageJ] version of this plugin without Fiji dependencies:
+Thanks to {{Person|Rasband}}, there is an [https://imagej.net/plugins/siox/index.html ImageJ] version of this plugin without Fiji dependencies:
 
-[http://imagej.net/plugins/siox/index.html http://imagej.net/plugins/siox/index.html]
+[https://imagej.net/plugins/siox/index.html https://imagej.net/plugins/siox/index.html]
 
 ==Licenses==
-The [http://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Siox_Segmentation/org;h=902e7e0379b36f7f03b512552fb899861d866fa9;hb=d451306e290fb55a31052cbfc5426eaa70df17d6 SIOX Java library] developed by [http://www.gerald-friedland.org/ Gerald Friedland], [http://www.inf.fu-berlin.de/~jantz Kristian Jantz] and [http://www.inf.fu-berlin.de/~knipping Lars Knipping] is licensed under the '''Apache License''', Version 2.0 (the "License"): [http://www.apache.org/licenses/LICENSE-2.0 http://www.apache.org/licenses/LICENSE-2.0]. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+The [https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=tree;f=src-plugins/Siox_Segmentation/org;h=902e7e0379b36f7f03b512552fb899861d866fa9;hb=d451306e290fb55a31052cbfc5426eaa70df17d6 SIOX Java library] developed by [http://www.gerald-friedland.org/ Gerald Friedland], [http://www.inf.fu-berlin.de/~jantz Kristian Jantz] and [http://www.inf.fu-berlin.de/~knipping Lars Knipping] is licensed under the '''Apache License''', Version 2.0 (the "License"): [http://www.apache.org/licenses/LICENSE-2.0 http://www.apache.org/licenses/LICENSE-2.0]. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
 The Fiji plugin GUI, developed by {{Person|Iarganda}}, [http://fly.mpi-cbg.de/~saalfeld/ Stephan Saalfeld] and {{Person|Schindelin}} is free software; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
 
