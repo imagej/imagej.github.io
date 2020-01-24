@@ -209,7 +209,7 @@ imp.show()
 
 <source lang="python">
 # 1 - Obtain an image
-blobs = IJ.openImage("http://imagej.net/images/blobs.gif")
+blobs = IJ.openImage("https://imagej.net/images/blobs.gif")
 # Make a copy with the same properties as blobs image:
 imp = blobs.createImagePlus()
 ip = blobs.getProcessor().duplicate()
@@ -257,7 +257,7 @@ table = ResultsTable()
 roim = RoiManager(True)
 # Create a ParticleAnalyzer, with arguments:
 # 1. options (could be SHOW_ROI_MASKS, SHOW_OUTLINES, SHOW_MASKS, SHOW_NONE, ADD_TO_MANAGER, and others; combined with bitwise-or)
-# 2. measurement options (see [http://imagej.net/developer/api/ij/measure/Measurements.html Measurements])
+# 2. measurement options (see [https://imagej.net/developer/api/ij/measure/Measurements.html Measurements])
 # 3. a ResultsTable to store the measurements
 # 4. The minimum size of a particle to consider for measurement
 # 5. The maximum size (idem)
@@ -368,11 +368,11 @@ finally:
 The easiest way is to grab an image and call an ImageJ command to show its histogram:
 
 <source lang="python">
-imp = IJ.openImage("http://imagej.net/images/blobs.gif")
+imp = IJ.openImage("https://imagej.net/images/blobs.gif")
 IJ.run(imp, "Histogram", "")
 </source>
 
-How ImageJ does it, internally, has to do with the [http://imagej.net/developer/api/ij/process/ImageStatistics.html ImageStatisics] class:
+How ImageJ does it, internally, has to do with the [https://imagej.net/developer/api/ij/process/ImageStatistics.html ImageStatisics] class:
 
 <source lang="python">
 stats = imp.getStatistics()
@@ -398,7 +398,7 @@ print stats.histogram
 
 The histogram, area and mean are computed by default. Other values like the median need to be specified.
 
-To calculate other parameters, specify them by bitwise-or composition (see flags in [http://imagej.net/developer/api/ij/measure/Measurements.html Measurements]):
+To calculate other parameters, specify them by bitwise-or composition (see flags in [https://imagej.net/developer/api/ij/measure/Measurements.html Measurements]):
 
 <source lang="python">
 stats = imp.getStatistics(Measurements.MEAN | Measurements.MEDIAN | Measurements.AREA)
@@ -421,7 +421,7 @@ print "mean:", stats.mean, "median:", stats.median, "area:", stats.area
 
 
 
-To display the histogram window ourselves, we may use the [http://imagej.net/developer/api/ij/gui/HistogramWindow.html HistogramWindow] class:
+To display the histogram window ourselves, we may use the [https://imagej.net/developer/api/ij/gui/HistogramWindow.html HistogramWindow] class:
 
 <source lang="python">
 hwin = HistogramWindow(imp)
@@ -556,7 +556,7 @@ Notice we used:
 
 Suppose you have a 4D multicolor image, and want to obtain a stack of slices corresponding to a specific color channel and time frame.
 
-The [http://fiji.sc/javadoc/ij/CompositeImage.html CompositeImage] is a stack whose slices are interpreted as belonging to specific color channels, Z slices and time frames. To find out which slice corresponds to what, use the <i>getStackIndex</i> method of the [http://fiji.sc/javadoc/ij/ImagePlus.html ImagePlus], which translates between color channels, z slices and time frames to the slice index in the underlying [http://fiji.sc/javadoc/ij/ImageStack.html ImageStack].
+The [https://fiji.sc/javadoc/ij/CompositeImage.html CompositeImage] is a stack whose slices are interpreted as belonging to specific color channels, Z slices and time frames. To find out which slice corresponds to what, use the <i>getStackIndex</i> method of the [https://fiji.sc/javadoc/ij/ImagePlus.html ImagePlus], which translates between color channels, z slices and time frames to the slice index in the underlying [https://fiji.sc/javadoc/ij/ImageStack.html ImageStack].
 
 <source lang="python">
 from ij import IJ, ImagePlus, ImageStack
@@ -1101,7 +1101,7 @@ run()
 
 === Apply a binary mask to every slice in an image stack ===
 
-Will work with regular stacks and with any kind of complex stack like a composite image or a 4d volume. Keep in mind that all stack types in ImageJ consists of a sequence of 2d images, each editable with an [http://imagej.net/developer/api/ij/process/ImageProcessor.html ImageProcessor] obtained from the [http://imagej.net/developer/api/ij/ImageStack.html ImageStack] that one can get from the [http://imagej.net/developer/api/ij/ImagePlus.html ImagePlus]. (The [http://imagej.net/developer/api/ij/ImagePlus.html ImagePlus] being what the opener or the [http://imagej.net/developer/api/ij/WindowManager.html WindowManager] provides.)
+Will work with regular stacks and with any kind of complex stack like a composite image or a 4d volume. Keep in mind that all stack types in ImageJ consists of a sequence of 2d images, each editable with an [https://imagej.net/developer/api/ij/process/ImageProcessor.html ImageProcessor] obtained from the [https://imagej.net/developer/api/ij/ImageStack.html ImageStack] that one can get from the [https://imagej.net/developer/api/ij/ImagePlus.html ImagePlus]. (The [https://imagej.net/developer/api/ij/ImagePlus.html ImagePlus] being what the opener or the [https://imagej.net/developer/api/ij/WindowManager.html WindowManager] provides.)
 
 <source lang="python">
 # Albert Cardona 2012-10-05 for Sara Abrahamsson
@@ -1198,7 +1198,7 @@ for i in range(0, nseries):
 
 First note that the FFMPEG I/O plugin was a proof-of-concept that is completely '''unmaintained'''.
 
-Then open the [[Fiji Updater]], push the "Manage update sites" at the bottom left of the dialog, and install the [http://fiji.sc/~schindelin/ffmpeg-plugins/ FFMPEG] plugin by {{Person|Schindelin}} by ticking its checkbox, as [[How_to_follow_a_3rd_party_update_site|explained in more detail here]].
+Then open the [[Fiji Updater]], push the "Manage update sites" at the bottom left of the dialog, and install the [https://fiji.sc/~schindelin/ffmpeg-plugins/ FFMPEG] plugin by {{Person|Schindelin}} by ticking its checkbox, as [[How_to_follow_a_3rd_party_update_site|explained in more detail here]].
 
 See also the Java source code for the {{GitHub|repo=fiji|tag=8164ae68|path=native/FFMPEG_IO/plugin/src/main/java/fiji/ffmpeg/IO.java|label=IO}} class from the [https://github.com/fiji/fiji/tree/8164ae68/native/FFMPEG_IO/plugin/src/main/java/fiji/ffmpeg/ FFMPEG plugin source code site].
 
@@ -1286,8 +1286,8 @@ IJ.run(imp,"Make Binary","")
 IJ.run(imp,"Skeletonize","")
 
 # run AnalyzeSkeleton
-# (see http://fiji.sc/AnalyzeSkeleton 
-# and http://fiji.sc/javadoc/skeleton_analysis/package-summary.html)
+# (see https://fiji.sc/AnalyzeSkeleton 
+# and https://fiji.sc/javadoc/skeleton_analysis/package-summary.html)
 skel = AnalyzeSkeleton_()
 skel.setup("",imp)
 skelResult = skel.run(skel.NONE, False, True, None, True, True)
@@ -1692,7 +1692,7 @@ from ij import IJ, ImagePlus, ImageStack
 from fiji.scripting import Weaver
 
 # The currently open image, an 8-bit stack
-imp = IJ.openImage("http://imagej.net/images/bat-cochlea-volume.zip")
+imp = IJ.openImage("https://imagej.net/images/bat-cochlea-volume.zip")
 
 slices = [None, None]
 
@@ -1732,7 +1732,7 @@ from ij import IJ, ImagePlus, ImageStack
 from fiji.scripting import Weaver
 
 # The currently open image, an 8-bit stack
-imp = IJ.openImage("http://imagej.net/images/bat-cochlea-volume.zip")
+imp = IJ.openImage("https://imagej.net/images/bat-cochlea-volume.zip")
 
 w = Weaver.method(
   """
