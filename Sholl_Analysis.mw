@@ -57,7 +57,7 @@ Press ''More» Cf. Segmentation'' to visually confirm which phase of the segment
 Note the reversal of ''[[#Cf._Segmentation|Cf. Segmentation]] output'' and how the ''[[#Output_Options|intersections mask]]'' no longer decorates the axonal processes but the interstitial spaces between them. The consequences of the phase inversion are twofold:  1) the program oversamples (cf. hue ramps on upper left of ''Intersections mask'') and 2) the program detects artifacts induced by the edges of the image (cf. top-right and bottom-right corners of mask where intersections are sampled in the absence of real axons at those locations). Also, note that the initial black and white image would ''look the same'' under an inverted lookup table  ({{bc|color=white|Image|Lookup Tables|Invert LUT}}).
 |}
 {{Tip
-| tip = With binary images, ''Sholl Analysis'' treats  zero intensities as the background, independently of the image lookup table or the state of the ''Black background option'' in <span style="border-bottom:1px dotted #ccc;">Process▷ Binary▷ Options...</span> As with any other [http://imagej.net/docs/guide/146-29.html#infobox:blackBackground ImageJ routine], confusing background with foreground pixels will lead to aberrant results, including: 1) overestimation of branches and 2) artifacts at distances intersecting the boundaries of the image canvas.}}
+| tip = With binary images, ''Sholl Analysis'' treats  zero intensities as the background, independently of the image lookup table or the state of the ''Black background option'' in <span style="border-bottom:1px dotted #ccc;">Process▷ Binary▷ Options...</span> As with any other [https://imagej.net/docs/guide/146-29.html#infobox:blackBackground ImageJ routine], confusing background with foreground pixels will lead to aberrant results, including: 1) overestimation of branches and 2) artifacts at distances intersecting the boundaries of the image canvas.}}
 <span id="Traces"></span>
 == Analysis of Traced Cells ==
 [[ File:ShollTracingsPrompt.png|400px|right |Main prompt (version 3.6.8), when input is traced data ({{bc|color=white|Analysis|Sholl|Sholl Analysis (Tracings)...}})]]In this mode, the plugin analyzes reconstructed arbors. This is particularly relevant for stainings that do not allow single-cell resolution. The plugin is macro recordable and [[#Batch Processing|batch processing]] is also possible.
@@ -316,7 +316,7 @@ This section discusses some aspects that should be taken into account when segme
 :* [[Lasso selection|Blow/Lasso Tool]], <span style="border-bottom:1px dotted #ccc;">Plugins▷ Segmentation▷</span>
 :* Scripts from the [[BAR]] {{ListOfUpdateSites|update site}}, <span style="border-bottom:1px dotted #ccc;">BAR▷ [[BAR#Segmentation|Segmentation]]▷</span>
 {{Tip
-|tip = For additional image processing tools have a look at the growing list of  {{ListOfUpdateSites|update sites}}. For more information on image processing have a look at [[:Category:Tutorials|tutorials]], [[:Category:Segmentation|segmentation]] and the [http://imagej.net/docs/guide/ ImageJ User Guide].
+|tip = For additional image processing tools have a look at the growing list of  {{ListOfUpdateSites|update sites}}. For more information on image processing have a look at [[:Category:Tutorials|tutorials]], [[:Category:Segmentation|segmentation]] and the [https://imagej.net/docs/guide/ ImageJ User Guide].
 }}
 
 == Batch Processing ==
@@ -338,7 +338,7 @@ Any macro or script must allow the Sholl Analysis plugin to access the ROI marki
 Now that all the images are marked, we just need to ask ImageJ to generate some lines of code. We will open the Macro Recorder (<span style="border-bottom:1px dotted #ccc;">Plugins▷ Macros▷ Record...</span>) and run ''Sholl Analysis'' on one of the images to find out how to call the plugin with suitable parameters. In this example, we will use the ImageJ macro language. The single line of code that appears in the recorder window will look something like this:
 <source lang="java">
 // Recording Sholl Analysis version 3.4.3
-// Visit http://imagej.net/Sholl_Analysis#Batch_Processing for scripting examples
+// Visit https://imagej.net/Sholl_Analysis#Batch_Processing for scripting examples
 run("Sholl Analysis...", "starting=10 ending=400 radius_step=0 infer fit linear polynomial=[8th degree] semi-log normalizer=Volume create save do");
 </source>
 
@@ -494,13 +494,13 @@ The [[Citing|authoritative reference]] for Fiji:
 		<span id="faq:image-types"></span>'''The plugin complains about a wrong image type. Why?'''
 	</li>
 	<dl><dd>
-		The plugin does not parse RGB images, but will process any grayscale image (8/16-bit), including multi-channel (composite) images. This is intentional: RGB images are inflexible and images of fluorescence-labeled cells are typically non-RGB images. As explained in the [http://imagej.net/docs/guide/ ImageJ User Guide], RGB images can be converted using {{bc|color=white|Image|Color|Channels Tool...}} or {{bc|color=white|Image|Type|}} commands.
+		The plugin does not parse RGB images, but will process any grayscale image (8/16-bit), including multi-channel (composite) images. This is intentional: RGB images are inflexible and images of fluorescence-labeled cells are typically non-RGB images. As explained in the [https://imagej.net/docs/guide/ ImageJ User Guide], RGB images can be converted using {{bc|color=white|Image|Color|Channels Tool...}} or {{bc|color=white|Image|Type|}} commands.
 	</dd></dl>
 	<li>
 		<span id="faq:compartments"></span>'''I cannot see the hemicircle/hemisphere option. Why?'''
 	</li>
 	<dl><dd>
-		This option is only available if an orthogonal line has been created by holding {{key press|Shift}} when using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>. See the [http://imagej.net/docs/guide/ ImageJ User Guide] for the full list of key modifiers that can be used while creating straight line ROIs.
+		This option is only available if an orthogonal line has been created by holding {{key press|Shift}} when using the <span style="border-bottom:1px dotted #ccc;">Straight Line Selection Tool</span>. See the [https://imagej.net/docs/guide/ ImageJ User Guide] for the full list of key modifiers that can be used while creating straight line ROIs.
 	</dd></dl>
 	<li>
 		<span id="faq:z-position"></span>'''With 3D and 4D images, how do I set the Z-position and of the center?'''
@@ -528,7 +528,7 @@ The [[Citing|authoritative reference]] for Fiji:
 		<span id="faq:Sholl-table"></span>'''How can I save/edit the ''Sholl Results'' table?'''
 	</li>
 	<dl><dd>
-		Select the table, then choose <span style="border-bottom:1px dotted #ccc;">File▷ Save As…</span>The filename extension can be specified using the ''More » Options...'' command (see the [http://imagej.net/docs/guide/ ImageJ User Guide] for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
+		Select the table, then choose <span style="border-bottom:1px dotted #ccc;">File▷ Save As…</span>The filename extension can be specified using the ''More » Options...'' command (see the [https://imagej.net/docs/guide/ ImageJ User Guide] for details). Single cells cannot be modified from within ImageJ, but custom extensions (e.g., .csv, .xls or .ods) will allow the table to be imported by other spreadsheet applications.
 	</dd></dl>
 	<li>
 		<span id="faq:precision"></span>'''Can I modify the way data is displayed?'''
