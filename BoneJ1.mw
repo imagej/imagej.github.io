@@ -11,7 +11,7 @@
 
 == Experimental release ([[BoneJ2]]) ==
 
-There's a new modernized version of BoneJ available through the ImageJ [http://imagej.net/Updater updater]. Read more about [[BoneJ2]].
+There's a new modernized version of BoneJ available through the ImageJ [https://imagej.net/Updater updater]. Read more about [[BoneJ2]].
 
 == Installation ==
 
@@ -29,7 +29,7 @@ For technical details about ImageJ and Fiji using Java 6 vs. Java 8, see the [[J
 
 == BoneJ and pQCT ==
 
-BoneJ and pQCT plug-ins are in the process of separation. The latter have their own [http://imagej.net/PQCT| update site], and they don't need BoneJ to work. However, if you download <code>BoneJ_.jar</code> from [http://bonej.org/ http://bonej.org/] it still includes older versions of the pQCT tools.  
+BoneJ and pQCT plug-ins are in the process of separation. The latter have their own [https://imagej.net/PQCT| update site], and they don't need BoneJ to work. However, if you download <code>BoneJ_.jar</code> from [http://bonej.org/ http://bonej.org/] it still includes older versions of the pQCT tools.  
 
 == Publication ==
 * {{Publication | BoneJ}}
