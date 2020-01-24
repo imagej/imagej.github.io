@@ -162,7 +162,7 @@ and Verena Kaynig, and many other helpers.
 
 * The [[Update_Fiji|Fiji Updater]] offers to update Java on Windows and Linux in the Advanced Mode, thanks to one of the rare less-exciting talks at the ELMI meeting.
 
-* The [http://fiji.sc/webstart/Fiji.jnlp Java WebStart] generator was fixed, and is now run every night.
+* The [https://fiji.sc/webstart/Fiji.jnlp Java WebStart] generator was fixed, and is now run every night.
 
 * The [[SPIM Registration]] plugin was added, offering multi-angle registration and reconstruction typically needed in Selective Plane Illumination Microscopy (thanks to Stephan Preibisch, Stephan Saalfeld and Pavel Tomancak).
 
@@ -178,7 +178,7 @@ and Verena Kaynig, and many other helpers.
 
 * There are two nightly builds, one including all the submodules, and the other to make sure that Fiji builds using Java 5 (which we are stuck to, because [[MacOSX_tips#Running_Fiji_on_Java_1.5_.2832-bit.29|there will not be any Java 6 for MacOSX 10.4, or for 32-bit MacOSX 10.5]]).
 
-* The [http://fiji.sc/javadoc/ full javadocs] are built after the nightly build.
+* The [https://fiji.sc/javadoc/ full javadocs] are built after the nightly build.
 
 * Developers can upload new plugins or updates from the [[Fiji Updater]] GUI, if they have the write permissions on the server (includes bug fixes by Mark Longair).
 
@@ -196,7 +196,7 @@ and Verena Kaynig, and many other helpers.
 
 * The [[Script Editor]] recognizes exceptions thrown during the execution of a script and offers to jump to the next/previous location in the stacktrace.
 
-* You can ask the [[Script Editor]] to open the [http://fiji.sc/javadoc/ JavaDoc] for a given class using {{bc | Tools | Open Help on Class...}}
+* You can ask the [[Script Editor]] to open the [https://fiji.sc/javadoc/ JavaDoc] for a given class using {{bc | Tools | Open Help on Class...}}
 
 * The [[Using Weka|WEKA library]] is now part of Fiji; the {{GitHub|org=fiji|repo=fiji-compat|source=fiji/FijiClassLoader.java|label=FijiClassLoader}} is now an instance of URLClassLoader just because of that (thanks for Verena Kaynig, Albert Cardona and Ignacio Arganda-Carreras for the prodding).
 
@@ -226,7 +226,7 @@ and Verena Kaynig, and many other helpers.
 
 * You can make your own "View on Fiji Development" movie, as seen on our [http://youtube.com/fijichannel YouTube channel], using the combined-gource-video.bsh script (requires {{GitHub|org=dscho|repo=Gource|label=Gource}}).
 
-* The [[VIB Protocol|VIB]] sources were moved from a submodule directly into [http://fiji.sc/fiji.git fiji.git].
+* The [[VIB Protocol|VIB]] sources were moved from a submodule directly into [https://fiji.sc/fiji.git fiji.git].
 
 * The sources for plugins and libraries are now expected to live either in submodules, or in ''src-plugins/<name>/<package>/<class-name>.java'', where ''<name>'' is the base name of the resulting ''.jar'' file.
 
