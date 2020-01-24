@@ -25,7 +25,7 @@ If the plugin you want is not distributed via an ImageJ update site, please enco
 
 In the meantime, to install a plugin manually, follow the plugin's installation instructions, if any. The plugin will consist of one or more files which must be downloaded and (typically) placed in ImageJ's <tt>plugins</tt> folder:
 * If the file suffix is <tt>.jar</tt> or <tt>.class</tt> then it is usually enough to simply restart ImageJ after dropping the file into <tt>plugins</tt>.
-* If the file suffix is <tt>.java</tt> then you typically must execute the [http://imagej.net/docs/guide/146-31.html#toc-Subsection-31.5 Compile and Run] command on the file to first compile it to a <tt>.class</tt>. After running this command once and restarting ImageJ, the plugin will become available in ImageJ's <tt>Plugins</tt> menu.
+* If the file suffix is <tt>.java</tt> then you typically must execute the [https://imagej.net/docs/guide/146-31.html#toc-Subsection-31.5 Compile and Run] command on the file to first compile it to a <tt>.class</tt>. After running this command once and restarting ImageJ, the plugin will become available in ImageJ's <tt>Plugins</tt> menu.
 
 See also the [[Installing 3rd party plugins]] guide.
 
@@ -35,7 +35,7 @@ In addition to looking in the <tt>plugins</tt> folder of ImageJ itself, ImageJ a
 
 === Configuring where ImageJ looks for plugins ===
 
-Power users may wish to configure exactly which folder(s) ImageJ scans for plugins. The default folder is the <tt>plugins</tt> folder of the ImageJ installation. However, this can be overridden using the <tt>plugins.dir</tt> system property. See the ImageJ web site's article [http://imagej.net/docs/menus/plugins.html#dir Changing Location of Plugins Directory].
+Power users may wish to configure exactly which folder(s) ImageJ scans for plugins. The default folder is the <tt>plugins</tt> folder of the ImageJ installation. However, this can be overridden using the <tt>plugins.dir</tt> system property. See the ImageJ web site's article [https://imagej.net/docs/menus/plugins.html#dir Changing Location of Plugins Directory].
 
 === Multiple plugin directories ===
 
