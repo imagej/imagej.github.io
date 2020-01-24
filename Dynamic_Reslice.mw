@@ -3,7 +3,7 @@
 | software               = [[Fiji_Plugins]]
 | author                 = Jean-Yves Tinevez & Albert Cardona from an ImageJ class
 | maintainer             = Jean-Yves Tinevez ([mailto:tinevez_at_mpi-cbg_dot_de tinevez_at_mpi-cbg_dot_de])
-| filename               = [http://fiji.sc/tinevez/Dynamic_Reslice.jar Dynamic_Reslice.jar]
+| filename               = [https://fiji.sc/tinevez/Dynamic_Reslice.jar Dynamic_Reslice.jar]
 | source                 = {{GitHub|org=fiji|repo=Fiji_Plugins|source=fiji/stacks/Dynamic_Reslice.java}}
 | released               = 22 April 2009
 | latest version         = v1.2 (23 April 2009)
@@ -25,7 +25,7 @@ dynamically this slice as the ROI is displaced or deformed.
 
 === ImageJ ===
 
-Download the jar file [http://fiji.sc/tinevez/Dynamic_Reslice.jar Dynamic_Reslice.jar] 
+Download the jar file [https://fiji.sc/tinevez/Dynamic_Reslice.jar Dynamic_Reslice.jar] 
 and drop it into the ''plugins'' menu. The plugin will appear in the {{bc | Plugins | Dynamic_Reslice}} menu.
 
 === Fiji ===
@@ -67,7 +67,7 @@ ystart = 50
 
 
 # Fetch the t1-head stack from URL
-source_imp = IJ.openImage('http://imagej.net/images/t1-head.zip')
+source_imp = IJ.openImage('https://imagej.net/images/t1-head.zip')
 source_imp.show()
 
 # Select middle slice (does not matter)
