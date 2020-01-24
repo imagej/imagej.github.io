@@ -18,8 +18,8 @@ The improved system is described below.
 The relevant lines for /etc/apt/sources.list, if you don't mind trying the experimental versions of these packages, are:
 
 <code>
-    deb http://fiji.sc/downloads/apt-experimental/ ./
-    deb-src http://fiji.sc/downloads/apt-experimental/ ./
+    deb https://fiji.sc/downloads/apt-experimental/ ./
+    deb-src https://fiji.sc/downloads/apt-experimental/ ./
 </code>
 
 The packages are targetting Ubuntu 10.04 (Lucid Lynx) and Debian testing (squeeze) later than August 2010.
