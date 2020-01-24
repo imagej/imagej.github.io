@@ -1,7 +1,7 @@
 {{Component
 | project = Fiji
 | name = Deformation Tracker
-| url = http://imagej.net/DeformationTracker
+| url = https://imagej.net/DeformationTracker
 | source = {{GitHub | org=KapoorLab | repo=Bubbleator}}
 | license = [[GPLv3]]
 
