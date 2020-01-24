@@ -54,7 +54,7 @@ Finally click on the "Merge" button or use the shortcut "S".
 
 == Example ==
 
-During this example, you can look at the different step with the [http://fiji.sc/3D_Viewer 3DViewer], or with [https://www.blender.org/ Blender].
+During this example, you can look at the different step with the [https://fiji.sc/3D_Viewer 3DViewer], or with [https://www.blender.org/ Blender].
 <ol>
 <li>Download the meshes of a mitochondria in the shape of a donut divided in 4 parts [[Media:MitoDonut Meshes.zip]]</li>
 <li>Launch the plugin, and give the directory containing the .obj file</li>
@@ -68,7 +68,7 @@ During this example, you can look at the different step with the [http://fiji.sc
 == Reference ==
 
 This plugin haven't been published yet, but if you want to cite you can always refer to it as 
-T. Boissonnet,"Stack Object Combiner plugin for ImageJ", http://imagej.net/StackObjectCombiner, October 2015
+T. Boissonnet,"Stack Object Combiner plugin for ImageJ", https://imagej.net/StackObjectCombiner, October 2015
 
 == Contact ==
 
