@@ -56,7 +56,7 @@ importClass(Packages.ij.IJ);
 // global variables 'base_url' and 'names'
 // and local variable 'imp', the latter visible within the loop only:
 
-base_url = "http://imagej.net/images/";
+base_url = "https://imagej.net/images/";
 
 names = ["blobs.gif", "boats.gif", "bridge.gif"];
 
@@ -626,7 +626,7 @@ imp.show();
 
 Also URLs (in this case, we call directly <i>show()</i>, not keeping the returned image pointer into any variable):
 <source lang="javascript">
-IJ.openImage("http://imagej.net/images/blobs.gif").show();
+IJ.openImage("https://imagej.net/images/blobs.gif").show();
 </source>
 
 Create an image from scratch, including LUT:
