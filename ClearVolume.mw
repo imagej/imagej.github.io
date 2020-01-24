@@ -38,7 +38,7 @@ See ClearVolume in action!
 
 == Installing ClearVolume in Fiji or ImageJ2 ==
 
-# Download Fiji or ImageJ2 from [http://imagej.net/Downloads here].
+# Download Fiji or ImageJ2 from [https://imagej.net/Downloads here].
 # Start Fiji/ImageJ2 and launch the updater ('''Help - Update...''')
 # Click on '''Manage update sites''', tick the box next to '''ClearVolume''', and hit '''Close'''.
 # If you use an older Fiji installation you MUST also check and install the '''Java-8''' update site. For more recent Fiji installations this update site will already be selected.
