@@ -10,7 +10,7 @@ However, you still need to understand how we store and manipulate links in Track
 
 == Simple, undirected graphs. ==
 
-TrackMate stores the results of the detection step as spots in a [http://fiji.sc/javadoc/fiji/plugin/trackmate/SpotCollection.html SpotCollection]. The tracking results are mainly links between these spots so we needed a structure to hold them. We went for the most general one, and picked a mathematical graph.
+TrackMate stores the results of the detection step as spots in a [https://fiji.sc/javadoc/fiji/plugin/trackmate/SpotCollection.html SpotCollection]. The tracking results are mainly links between these spots so we needed a structure to hold them. We went for the most general one, and picked a mathematical graph.
 
 [[wikipedia:Graph (mathematics)|Mathematical graphs]] are mathematical structures that hold objects ('''vertices''') and links between them ('''edges''', we will use the two terms interchangeably). TrackMate relies specifically on a specialization: it uses an undirected, simple weighted graph.
 * Undirected means that a link between A and B is the same as a link between B and A. There is no specific direction and it cannot be exploited. However, you will see that the API offers specific tools that can fake a direction. Indeed, since we deal mainly with time-lapse data, we would like to make it possible to say that we iterate a graph following the time direction.
@@ -37,7 +37,7 @@ They all are specialization of the simple graph, and offer special tools that ca
 
 Since we are Java coders, we use a Java library to manipulate these graphs, and for this we rely on the excellent [http://jgrapht.org/ JGraphT] library. Why a graph? Why not storing a list of successors and a list of predecessors for each spot? Or directly have a track object that would save some time on determining what are the tracks? Well, because a graph is very handy and simple to use when creating links. When you will write your own tracker, and found a link you want to add the model, the only thing you have to do is: <code>graph.addEdge(A, B)</code>. You don't have to care whether A belongs to a track and if yes to what track, you don't need to see the whole graph globally, you can just focus on the local link. Adding a link in the code is always very simple.
 
-Then of course, you still need a way to know how many tracks are there in the model, and what are they made of. But this is the job of TrackMate. It offers the API that hides the graph and deals in track. This is done via a component of the model, the [http://fiji.sc/javadoc/fiji/plugin/trackmate/TrackModel.html TrackModel]. But in the tracker we will not use this. We will be given a simple graph, and will have to flesh it out with spots and links between these spots. When the tracker completes, TrackMate will build and maintains a list of tracks from it. 
+Then of course, you still need a way to know how many tracks are there in the model, and what are they made of. But this is the job of TrackMate. It offers the API that hides the graph and deals in track. This is done via a component of the model, the [https://fiji.sc/javadoc/fiji/plugin/trackmate/TrackModel.html TrackModel]. But in the tracker we will not use this. We will be given a simple graph, and will have to flesh it out with spots and links between these spots. When the tracker completes, TrackMate will build and maintains a list of tracks from it. 
 
 The price to pay for this simplicity is that - when tracking - it is not trivial to get the global information. For instance, it is easy to query whether a link exists between two spots, but the graph does not see the tracks directly. If you need them, you either have to build them from the graph, either have to maintain them locally. But more on this below. 
 
@@ -54,7 +54,7 @@ In TrackMate, particle linking algorithms implements the [https://github.com/fij
 * A link with the same spot for source and target is not allowed.
 * A link with the source spot and the target spot in the same frame is not allowed. This must be enforced by implementations.
 
-There is also an extra method to pass a instance of [http://fiji.sc/javadoc/fiji/plugin/trackmate/Logger.html Logger] to log the tracking process progresses. That's all. 
+There is also an extra method to pass a instance of [https://fiji.sc/javadoc/fiji/plugin/trackmate/Logger.html Logger] to log the tracking process progresses. That's all. 
 
 
 
