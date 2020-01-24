@@ -17,7 +17,7 @@ Also you may want to have a look at [[Introduction_into_Macro_Programming]] as a
 * [[Fiji]] is available at: {{GitHub | org=fiji | repo=fiji | label=fiji/fiji}}
 * For additional help, use the [[ImageJ Forum]].
 
-The search engines will point you to both [http://imagej.net/ http://imagej.net/] and [http://developer.imagej.net/ http://developer.imagej.net/]. Avoid using [http://developer.imagej.net/ http://developer.imagej.net/] for anything these days. It is a legacy site, in the process of being totally phased out. If you are looking for downloads, see the [[Downloads]] page.
+The search engines will point you to both [https://imagej.net/ https://imagej.net/] and [http://developer.imagej.net/ http://developer.imagej.net/]. Avoid using [http://developer.imagej.net/ http://developer.imagej.net/] for anything these days. It is a legacy site, in the process of being totally phased out. If you are looking for downloads, see the [[Downloads]] page.
 
 == Configure your environment ==
 
