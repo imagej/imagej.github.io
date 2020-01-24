@@ -2,12 +2,12 @@
 | software               = ImageJ
 | name                   = Maximum Entropy Threshold
 | author                 = Jerek Sacha
-| filename               = [http://imagej.net/plugins/download/Entropy_Threshold.class Entropy_Threshold.class] (1,418 Bytes)
-| source                 = [http://imagej.net/plugins/download/Entropy_Threshold.java Entropy_Threshold.java] (2,755 Bytes)
+| filename               = [https://imagej.net/plugins/download/Entropy_Threshold.class Entropy_Threshold.class] (1,418 Bytes)
+| source                 = [https://imagej.net/plugins/download/Entropy_Threshold.java Entropy_Threshold.java] (2,755 Bytes)
 | released               = 13 February 2004 
 | status                 = unknown
 | category               = [[:Category:Segmentation|Segmentation]]
-| website                = [http://imagej.net/plugins/entropy.html]
+| website                = [https://imagej.net/plugins/entropy.html]
 }}
 
 == Purpose ==
