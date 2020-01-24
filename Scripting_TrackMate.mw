@@ -10,11 +10,11 @@ __TOC__
 
 Since we are calling the internals of TrackMate, we must get to know a bit of its guts. I have tried to come up with a rational design; though not always successfully. There is 3 main classes to interact with in a script:
 
-* Model ([http://fiji.sc/javadoc/fiji/plugin/trackmate/Model.html <code>fiji.plugin.trackmate.Model</code>]) is the class in charge of <u>storing the data</u>. It cannot do anything to create it. It can help you follow manual modifications you would made in the manual editing mode, interrogate it, ... but it is conceptually just a data recipient. 
+* Model ([https://fiji.sc/javadoc/fiji/plugin/trackmate/Model.html <code>fiji.plugin.trackmate.Model</code>]) is the class in charge of <u>storing the data</u>. It cannot do anything to create it. It can help you follow manual modifications you would made in the manual editing mode, interrogate it, ... but it is conceptually just a data recipient. 
 
-* Settings ([http://fiji.sc/javadoc/fiji/plugin/trackmate/Settings.html <code>fiji.plugin.trackmate.Settings</code>]) is the class storing the fields that will configure TrackMate and pilot how the data is created. This is where you specify what is the source image, what are the detector and tracking algorithms to use, what are the filters to use, etc...
+* Settings ([https://fiji.sc/javadoc/fiji/plugin/trackmate/Settings.html <code>fiji.plugin.trackmate.Settings</code>]) is the class storing the fields that will configure TrackMate and pilot how the data is created. This is where you specify what is the source image, what are the detector and tracking algorithms to use, what are the filters to use, etc...
 
-* TrackMate ([http://fiji.sc/javadoc/fiji/plugin/trackmate/TrackMate.html<code>fiji.plugin.trackmate.TrackMate</code>]) is the guy that does the actual work. In scripts, we use it to actually <u>perform the analysis tasks</u>, such as generating spots from images, linking them into track, etc... It reads configuration information in the Settings object mentioned above and put the resulting data in the model.  
+* TrackMate ([https://fiji.sc/javadoc/fiji/plugin/trackmate/TrackMate.html<code>fiji.plugin.trackmate.TrackMate</code>]) is the guy that does the actual work. In scripts, we use it to actually <u>perform the analysis tasks</u>, such as generating spots from images, linking them into track, etc... It reads configuration information in the Settings object mentioned above and put the resulting data in the model.  
  
 So getting a working script is all about configuring a proper <code>Settings</code> object and calling <code>exec*</code> methods on a <code>TrackMate</code> object. Then we read the results in the <code>Model</code> object.
 
@@ -47,7 +47,7 @@ import fiji.plugin.trackmate.features.track.TrackDurationAnalyzer as TrackDurati
    
 # Get currently selected image
 #imp = WindowManager.getCurrentImage()
-imp = IJ.openImage('http://fiji.sc/samples/FakeTracks.tif')
+imp = IJ.openImage('https://fiji.sc/samples/FakeTracks.tif')
 imp.show()
    
    
@@ -319,7 +319,7 @@ import fiji.plugin.trackmate.util.TMUtils as TMUtils
   
 # Get currently selected image
 #imp = WindowManager.getCurrentImage()
-imp = IJ.openImage('http://fiji.sc/samples/FakeTracks.tif')
+imp = IJ.openImage('https://fiji.sc/samples/FakeTracks.tif')
 #imp.show()
   
   
