@@ -18,7 +18,7 @@ To open new images, type {{key|Ctrl}}+{{key|O}} (on Mac, {{key|Command}}+{{key|O
 
 == Creating your own keyboard shortcuts ==
 
-You can also [http://imagej.net/docs/guide/146-31.html#toc-Subsection-31.2 assign your own keyboard shortcuts]!
+You can also [https://imagej.net/docs/guide/146-31.html#toc-Subsection-31.2 assign your own keyboard shortcuts]!
 
 == Assign a shortcut to a macro ==
 There are 3 options to assign a keyboard shortcut to a macro.<br>
