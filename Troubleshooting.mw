@@ -135,11 +135,11 @@ You can verify whether the actual data is there by moving the mouse over the ima
 
 In many cases, ImageJ performs autoscaling by default, to improve the contrast of your image. Otherwise, in many cases with scientific images you might see only a black square (see previous question).
 
-You can override the autoscaling using the [http://imagej.net/docs/guide/146-28.html#sub:Adjust Brightness/Contrast] dialog.
+You can override the autoscaling using the [https://imagej.net/docs/guide/146-28.html#sub:Adjust Brightness/Contrast] dialog.
 
-It is important to understand that [[Principles#What_are_pixel_values.3F|your image is a collection of samples, each of which has a numerical intensity value]]. The unit of these values is rather arbitrary and unspecified, depending on the type and calibration of your detector. Your file is stored with a certain [http://imagej.net/docs/guide/146-7.html#toc-Section-7 bit depth], meaning these intensities can range from 0 (no light detected) to a particular maximum value (the most light the detector is capable of detecting). For example, 8-bit images have a maximum value of 255, whereas 16-bit images have a maximum of 65535. In practice though, especially with higher bit depths, your detector will not typically record sample intensities across that entire range of values (and if it does record a significant number of values at the maximum, you probably oversaturated your detector, which will skew your analysis!).
+It is important to understand that [[Principles#What_are_pixel_values.3F|your image is a collection of samples, each of which has a numerical intensity value]]. The unit of these values is rather arbitrary and unspecified, depending on the type and calibration of your detector. Your file is stored with a certain [https://imagej.net/docs/guide/146-7.html#toc-Section-7 bit depth], meaning these intensities can range from 0 (no light detected) to a particular maximum value (the most light the detector is capable of detecting). For example, 8-bit images have a maximum value of 255, whereas 16-bit images have a maximum of 65535. In practice though, especially with higher bit depths, your detector will not typically record sample intensities across that entire range of values (and if it does record a significant number of values at the maximum, you probably oversaturated your detector, which will skew your analysis!).
 
-Because the full range of values is typically much less than the maximum—e.g., in the case of a 12-bit detector the actual maximum range is 0-4095, and often even smaller in practice—ImageJ performs '''autoscaling''' to show you a meaningful or "pretty good" image by default, which is not just a black square (see previous question). That is: it maps the darkest actual intensity in your data to black, and the brightest actual intensity in your data to white. You can override this mapping using the [http://imagej.net/docs/guide/146-28.html#sub:Adjust Brightness/Contrast] dialog under the {{bc | Image | Adjust}} menu (shortcut: {{Key | shift}}+{{Key | C}}).
+Because the full range of values is typically much less than the maximum—e.g., in the case of a 12-bit detector the actual maximum range is 0-4095, and often even smaller in practice—ImageJ performs '''autoscaling''' to show you a meaningful or "pretty good" image by default, which is not just a black square (see previous question). That is: it maps the darkest actual intensity in your data to black, and the brightest actual intensity in your data to white. You can override this mapping using the [https://imagej.net/docs/guide/146-28.html#sub:Adjust Brightness/Contrast] dialog under the {{bc | Image | Adjust}} menu (shortcut: {{Key | shift}}+{{Key | C}}).
 
 Alternately, to disable autoscaling during initial import, you can use the [[Bio-Formats]] plugin to import your data with the "Autoscale" option turned off:
 
@@ -155,7 +155,7 @@ Further reading:
 
 == Whenever I open a file in ImageJ, the file size increases by a ridiculous amount! ==
 
-Are you using a [http://imagej.net/docs/guide/146-7.html#sub:Native-Formats compressed format] such as JPEG, PNG or ZIP? The file size on disk is smaller than the size of the pixels in memory. ImageJ reports this true (uncompressed) size of the image in the subtitle bar of the image window. For example: an uncompressed image of 16000 pixels x 16000 pixels x 32 bit (RGBA) will occupy 976 MB in memory.
+Are you using a [https://imagej.net/docs/guide/146-7.html#sub:Native-Formats compressed format] such as JPEG, PNG or ZIP? The file size on disk is smaller than the size of the pixels in memory. ImageJ reports this true (uncompressed) size of the image in the subtitle bar of the image window. For example: an uncompressed image of 16000 pixels x 16000 pixels x 32 bit (RGBA) will occupy 976 MB in memory.
 
 Note that [[Principles#Why_.28lossy.29_JPEGs_should_not_be_used_in_imaging|lossy compression is not suitable for quantitative image analysis]].
 
@@ -191,7 +191,7 @@ While ImageJ strives for [[reproducible]] analysis, there are many reasons resul
 
 This is a characteristic of the Java runtime. In many cases, Java ''never'' releases memory back to the system, so memory monitors such as Windows Task Manager will always report an ever-growing amount of RAM used by the Java process, until the JVM shuts down.
 
-The best way to monitor ImageJ's actual memory usage is to run the [http://imagej.net/docs/guide/146-31.html#toc-Subsubsection-31.3.5 Monitor Memory...] command. You can also click on the ImageJ [[status bar]] to trigger a garbage collection operation, which will typically decrease the memory use.
+The best way to monitor ImageJ's actual memory usage is to run the [https://imagej.net/docs/guide/146-31.html#toc-Subsubsection-31.3.5 Monitor Memory...] command. You can also click on the ImageJ [[status bar]] to trigger a garbage collection operation, which will typically decrease the memory use.
 
 That said, some articles suggest that you can cause Java to give back free memory to the OS under certain conditions; see:
 
