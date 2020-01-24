@@ -10,7 +10,7 @@
 | status                 = Active, Experimental
 }}
 BoneJ is a collection of skeletal biology plug-ins for ImageJ.
-This is the new experimental, modernized version of the software available through the ImageJ [http://imagej.net/Updater updater]. Its update site is called [http://sites.imagej.net/BoneJ BoneJ experimental]. For the old ImageJ1 version, see [[BoneJ]].
+This is the new experimental, modernized version of the software available through the ImageJ [https://imagej.net/Updater updater]. Its update site is called [http://sites.imagej.net/BoneJ BoneJ experimental]. For the old ImageJ1 version, see [[BoneJ]].
 
 This version works with the latest Fiji, and complies with the modern ImageJ [[architecture]]. Most plug-ins also now support hyperstacks, i.e. images with multiple channels or time frames.
 
@@ -20,7 +20,7 @@ Below is the documentation for the plug-ins included in BoneJ experimental.
 
 == Installation ==
 [[File:Install-bonej.png|400 px|Installation steps]]
-# [http://imagej.net/Downloads Download] the latest version of Fiji for your operating system
+# [https://imagej.net/Downloads Download] the latest version of Fiji for your operating system
 # Launch Fiji
 # Select in the menu ''Help'' &gt; ''Update...''
 # Click ''Manage update sites''
@@ -56,7 +56,7 @@ It's important to note that algorithm is stochastic and does not guarantee exact
 
 In the first step the algorithm draws parallel lines over the input image in direction <math>\mathbf{v}</math>. The direction is chosen randomly. Each line segment in the image stack is sampled to find points where it changes from background to foreground, i.e. where the line enters an object. The points are called ''phase changes'', in the adjacent figure they're marked with red dots. After the sampling is complete, the algorithm forms a ''MIL vector'', whose length is the total length of the line segments divided by the total number of phase changes found. The MIL vector has the same direction as <math>\mathbf{v}</math>. Drawing and sampling the lines is repeated for <math>n</math> directions, and the method creates <math>n</math> MIL vectors.
 
-After the MIL vectors have been calculated, they are added to a point cloud (a collection of points) around the origin. Then the method tries solve the equation of an ellipsoid that would fit the cloud. There may be no solution, especially if there are few points. That is, the fitting may fail at which point the plug-in stops. The radii of this ellipsoid determine the degree of anisotropy (see [http://imagej.net/index.php?title=BoneJ_experimental&action=submit#Results results]).
+After the MIL vectors have been calculated, they are added to a point cloud (a collection of points) around the origin. Then the method tries solve the equation of an ellipsoid that would fit the cloud. There may be no solution, especially if there are few points. That is, the fitting may fail at which point the plug-in stops. The radii of this ellipsoid determine the degree of anisotropy (see [https://imagej.net/index.php?title=BoneJ_experimental&action=submit#Results results]).
 
 [[File:MilCube.png|right|200 px|Projecting lines from a plane]]
 
@@ -631,7 +631,7 @@ At the moment the report is kept private. If there is a strong will from the use
 You can read the code on Github and in every copy of BoneJ. If you turn on ImageJ's debug mode (in '' Edit &gt; Options &gt; Misc. '') the URL and the GIF response will be logged to ImageJ's log window.
 
 == Where is my favourite plug-in? ==
-We have removed some plug-ins from BoneJ. ''Neck shaft angle'', ''Plateness'' and ''Structure model index'' have been discontinued. ''Interpolate ROIs'', [http://imagej.net/3D_Binary_Filters ''Dilate 3D'' and ''Erode 3D''] come pre-packaged with ImageJ, so they are no longer included in BoneJ2.
+We have removed some plug-ins from BoneJ. ''Neck shaft angle'', ''Plateness'' and ''Structure model index'' have been discontinued. ''Interpolate ROIs'', [https://imagej.net/3D_Binary_Filters ''Dilate 3D'' and ''Erode 3D''] come pre-packaged with ImageJ, so they are no longer included in BoneJ2.
 
 Support for ''Kontron IMG'', ''Scanco ISQ'' and ''Stratec pQCT'' file formats has been moved to [[SCIFIO]]. Just run ''Edit  &gt; Options  &gt; ImageJ2'', and check ''Use SCIFIO when opening files''. When the option is enabled, these kinds of files can be opened from ''File > Open'' or dragging &amp; dropping them like any other format. 
 
