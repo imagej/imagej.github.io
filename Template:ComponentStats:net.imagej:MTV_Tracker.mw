@@ -1,7 +1,7 @@
 {{Component
 | project = Fiji
 | name = Microtubule Tracker
-| url = http://imagej.net/MicrotubuleTracker
+| url = https://imagej.net/MicrotubuleTracker
 | source = {{GitHub | org=PreibischLab | repo=MTV_Tracker}}
 | license = [[GPLv3]]
 | release = {{ Maven | g=sc.fiji | a=MTV_Tracker | v=1.0.0 | label=1.0.0}}
