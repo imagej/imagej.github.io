@@ -2,7 +2,7 @@
 
 Since [[2014-06-04 - ImageJ 2.0.0 release candidate|releasing ImageJ2 into the wild]], there has been a tremendous amount of user feedback. For those who have [[Report a Bug|reported bugs]]: thank you!
 
-Of all the issues reported, one has stood out as the most tenacious and difficult to solve: [http://fiji.sc/bugzilla/show_bug.cgi?id=805 Fiji bug #805, "Fiji not closing"], colloquially known as the "Fiji won't quit!" problem. (Actually, versions of this bug existed before bug #805 was reported, but that bug is where we have been tracking the issue most recently.)
+Of all the issues reported, one has stood out as the most tenacious and difficult to solve: [https://fiji.sc/bugzilla/show_bug.cgi?id=805 Fiji bug #805, "Fiji not closing"], colloquially known as the "Fiji won't quit!" problem. (Actually, versions of this bug existed before bug #805 was reported, but that bug is where we have been tracking the issue most recently.)
 
 As of this writing, we have just released ImageJ 2.0.0-rc-9 which we believe finally solves this issue after [https://github.com/imagej/imagej-legacy/commit/f2ba2b2645fe6aa5f0a0b5591defd37881dba31f six] [https://github.com/imagej/imagej-legacy/commit/c441b81ac5b830ee8752038b3d9d86858b552634 different] [https://github.com/imagej/imagej-legacy/commit/8af9bfc4a0010374fa2390041c3735a7bbcc7e6f attempts] [https://github.com/imagej/imagej-legacy/commit/62259dab7bbe70064ccaed621ac3940ffc6aaf61 to] [https://github.com/imagej/imagej-legacy/commit/fe237a23fbde86171b8d574bdeb9c34a397dcfff fix] [https://github.com/imagej/imagej-legacy/commit/1f9b76f270e08a9c50abaf09c5938c4e08733892 it].
 
