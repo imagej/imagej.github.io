@@ -1,4 +1,4 @@
-Recently, someone [http://imagej.net/pipermail/imagej-devel/2012-July/001117.html someone asked on the mailing list] how to load and display a dataset using the [[ImageJ2]] API. Here is code that does so:
+Recently, someone [https://imagej.net/pipermail/imagej-devel/2012-July/001117.html someone asked on the mailing list] how to load and display a dataset using the [[ImageJ2]] API. Here is code that does so:
 
 <source lang="java">
 import imagej.ImageJ;
