@@ -134,7 +134,7 @@ frame couples at once, depending how many CPUs it can find.
 
 
 The image to the right is made of 2000 small gaussian blobs (sigma=1), spawned randomly 
-(you can get the original file [http://fiji.sc/tinevez/testpiv3.tif here]). The 
+(you can get the original file [https://fiji.sc/tinevez/testpiv3.tif here]). The 
 second frame was obtained by adding a shift to each blob, given by:
 
 * &Delta;Y = &alpha; &times; (X-Xm)
