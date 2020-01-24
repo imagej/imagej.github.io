@@ -43,7 +43,7 @@ Internally, we use a compatibility '''Img''' to represent the data which is as f
 
 === Example 1b - Opening an ImgLib2 image ===
 
-The typical way to open an image in ImgLib2 is to make use of the [http://scif.io/ SCIFIO] importer. Below you see two examples of how to open an image as ''(a)'' its own type (e.g. '''UnsignedByteType''') and ''(b)'' as float ('''FloatType'''). For ''(a)'' we assume, however, that the file contains some real valued numbers as defined by the interface '''RealType'''. Color images are opened as well and color is represented as its own dimension (like in the ImageJ Hyperstacks). 
+The typical way to open an image in ImgLib2 is to make use of the [https://scif.io/ SCIFIO] importer. Below you see two examples of how to open an image as ''(a)'' its own type (e.g. '''UnsignedByteType''') and ''(b)'' as float ('''FloatType'''). For ''(a)'' we assume, however, that the file contains some real valued numbers as defined by the interface '''RealType'''. Color images are opened as well and color is represented as its own dimension (like in the ImageJ Hyperstacks). 
 
 Note that for ''(a)'' we use an '''ArrayImg''' to hold the data. This means the data is held in one single java basic type array which results in optimal performance. The absolute size of image is, however, limited to 2^31-1 (~2 billion) pixels. The type of '''Img''' to use is set by passing an '''ImgOptions''' configuration when calling the '''ImgOpener'''.
 
