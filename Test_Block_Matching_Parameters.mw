@@ -4,7 +4,7 @@
 | software               = Fiji
 | author                  = {{Person|Saalfeld}} ([mailto:saalfeld@mpi-cbg.de])
 | maintainer             = {{Person|Saalfeld}}
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=tree;f=mpicbg/ij/clahe]
+| source                 = [https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=tree;f=mpicbg/ij/clahe]
 | released               = March 27<sup>th</sup>, 2012
 | latest version         = March 27<sup>th</sup>, 2012
 | status                 = experimental, active
