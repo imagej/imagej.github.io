@@ -2,7 +2,7 @@ The application for Fiji (''Fiji Is Just ImageJ'')
 
 == Description ==
 
-<p>Fiji stands for "Fiji is Just ImageJ". [http://imagej.net ImageJ] is a public domain scientific image processing application sponsored by the National Institute of Health. ImageJ runs on the Java Virtual Machine and thus has direct access to numerous and diverse public java libraries.</p>
+<p>Fiji stands for "Fiji is Just ImageJ". [https://imagej.net ImageJ] is a public domain scientific image processing application sponsored by the National Institute of Health. ImageJ runs on the Java Virtual Machine and thus has direct access to numerous and diverse public java libraries.</p>
 
 <p>Thanks to one of last year's Google Summer of Code projects, the individual components of Fiji are kept up-to-date with the Fiji Updater.</p>
 
@@ -24,9 +24,9 @@ Another benefit of the participation is the higher visibility of our project. Al
 
 Yes. We have participated in 2009. Out of 3 accepted students, we had 1 failure (the student was late starting the project, accepted a fulltime day-job in addition to the GSoC project, and was unable to accomplish even the simplest tasks set by his mentor), and 2 successes.
 
-One of the two successful projects was to provide a script editor with syntax highlighting for all the scripting languages supported by Fiji: Jython, JRuby, Clojure, Javascript and BeanShell. As a bonus, the script editor supports writing Java plugins, too: http://fiji.sc/wiki/index.php/Script_Editor
+One of the two successful projects was to provide a script editor with syntax highlighting for all the scripting languages supported by Fiji: Jython, JRuby, Clojure, Javascript and BeanShell. As a bonus, the script editor supports writing Java plugins, too: https://fiji.sc/wiki/index.php/Script_Editor
 
-The other successful project was to provide a full-fledged plugin manager.  During the project, it turned out that a full plugin manager would not be feasible, but the project's result was a versatile Fiji Updater, which was incorporated into mainline Fiji after some cleanups: http://fiji.sc/wiki/index.php/Update_Fiji
+The other successful project was to provide a full-fledged plugin manager.  During the project, it turned out that a full plugin manager would not be feasible, but the project's result was a versatile Fiji Updater, which was incorporated into mainline Fiji after some cleanups: https://fiji.sc/wiki/index.php/Update_Fiji
 
 Unfortunately, we were not able to retain the students as regular contributors, which may, or may not, be due to the tight organization of their respective studies.
 
@@ -40,7 +40,7 @@ GPL (GNU Public License), version 2, with the exception that all plugins are fre
 
 == What is the URL for your ideas page? ==
 
-http://fiji.sc/wiki/index.php/SoC_2010_Ideas
+https://fiji.sc/wiki/index.php/SoC_2010_Ideas
 
 == What is the main development mailing list for your organization? This question will be shown to students who would like to get more information about applying to your organization for GSoC 2010. If your organization uses more than one list, please make sure to include a description of the list so students know which to use ==
 
@@ -52,7 +52,7 @@ fiji-devel@googlegroups.com
 
 == Does your organization have an application template you would like to see students use? If so, please provide it now. Please note that it is a very good idea to ask students to provide you with their contact information as part of your template. Their contact details will not be shared with you automatically via the GSoC 2010 site ==
 
-http://fiji.sc/SoC_2010_Template
+https://fiji.sc/SoC_2010_Template
 
 == Who will be your backup organization administrator? ==
 
