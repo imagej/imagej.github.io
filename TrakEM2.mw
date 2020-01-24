@@ -72,7 +72,7 @@ A. Use the built-in commands from the right-click menu, such as:
 * "Adjust images - Enhance contrast layer-wise"
 * "Adjust images - Set min and max layer-wise"
 
-B. Create a preprocessor script and set it to all images. For example, a [[Beanshell Scripting|beanshell]] script to run [[CLAHE]] on each image. In the script, the <i>patch</i> and <i>imp</i> variables exist automatically, and represent the [http://fiji.sc/javadoc/ini/trakem2/display/Patch.html Patch] instance and the [http://fiji.sc/javadoc/ij/ImagePlus.html ImagePlus] instance that the Patch wraps, respectively.
+B. Create a preprocessor script and set it to all images. For example, a [[Beanshell Scripting|beanshell]] script to run [[CLAHE]] on each image. In the script, the <i>patch</i> and <i>imp</i> variables exist automatically, and represent the [https://fiji.sc/javadoc/ini/trakem2/display/Patch.html Patch] instance and the [https://fiji.sc/javadoc/ij/ImagePlus.html ImagePlus] instance that the Patch wraps, respectively.
 
 <source lang="java">
 import ij.IJ;
