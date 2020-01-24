@@ -6,8 +6,8 @@ The [[MBF Plugin Collection]] legally bundles the LuraWave LWF decoder module: [
 
 Steps to use:
 
-# [http://imagej.net/download.html Download ImageJ 1.x] and unpack it
-# [http://imagej.net/plugins/mbf/ Download the MBF Plugins Collection]
+# [https://imagej.net/download.html Download ImageJ 1.x] and unpack it
+# [https://imagej.net/plugins/mbf/ Download the MBF Plugins Collection]
 # Merge the MBF plugins into your ImageJ 1.x folder
 # Use {{bc | File | Open...}} to convert your .flex files to OME-TIFF using [[Bio-Formats]]
 
