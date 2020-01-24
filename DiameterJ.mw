@@ -3,8 +3,8 @@
 | name                   = DiameterJ
 | author                  = {{Person|DiameterJ}}
 | maintainer           = {{Person|DiameterJ}}
-| filename              = ImageJ 1.48a to 2.XXX [http://imagej.net/_images/c/cc/DiameterJ_1-018.zip DiameterJ v1.018] 
-Fiji any version [http://imagej.net/_images/6/65/DiameterJ_Fiji_-_1-018.zip DiameterJ v1.018]
+| filename              = ImageJ 1.48a to 2.XXX [https://imagej.net/_images/c/cc/DiameterJ_1-018.zip DiameterJ v1.018] 
+Fiji any version [https://imagej.net/_images/6/65/DiameterJ_Fiji_-_1-018.zip DiameterJ v1.018]
 | source                 = [https://github.com/NHotaling/DiameterJ Source Code] 
 | released              = February  2015
 | latest version      = August 5<sup>th</sup>, 2016
@@ -36,8 +36,8 @@ If you would like to cite DiameterJ in your work, citation information can be fo
 http://www.sciencedirect.com/science/article/pii/S0142961215004652
 
 === Download Link ===
-: For ImageJ 1.48 or newer:  [http://imagej.net/_images/c/cc/DiameterJ_1-018.zip DiameterJ v. 1.018 for ImageJ]
-: For Fiji latest release: [http://imagej.net/_images/6/65/DiameterJ_Fiji_-_1-018.zip DiameterJ v. 1.018 for Fiji]
+: For ImageJ 1.48 or newer:  [https://imagej.net/_images/c/cc/DiameterJ_1-018.zip DiameterJ v. 1.018 for ImageJ]
+: For Fiji latest release: [https://imagej.net/_images/6/65/DiameterJ_Fiji_-_1-018.zip DiameterJ v. 1.018 for Fiji]
 
 === <big>How DiameterJ Works</big> ===
 ----
