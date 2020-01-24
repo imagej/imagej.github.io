@@ -9,7 +9,7 @@ Fiji is Just ImageJ
 
 == Home Page URL ==
 
-http://fiji.sc
+https://fiji.sc
 
 
 == Public Email==
@@ -19,7 +19,7 @@ fiji-devel@googlegroups.com
 
 == Description ==
 
-<p>Fiji stands for "Fiji is Just ImageJ". [http://imagej.net ImageJ] is a public domain scientific image processing application sponsored by the National Institute of Health. ImageJ runs on the Java Virtual Machine and thus has direct access to numerous and diverse public java libraries.</p>
+<p>Fiji stands for "Fiji is Just ImageJ". [https://imagej.net ImageJ] is a public domain scientific image processing application sponsored by the National Institute of Health. ImageJ runs on the Java Virtual Machine and thus has direct access to numerous and diverse public java libraries.</p>
 
 <p>All Fiji project founders and contributors have written large plugin collections and ImageJ-centric applications. At some point, it was inevitable to merge our projects into a centralized and organized framework, which includes consistent and updated documentation for all its components.</p>
 
@@ -56,7 +56,7 @@ We have not applied in the past, but one of our mentors has experience from serv
 
 == What is the URL for your ideas page? ==
 
-http://fiji.sc/SoC2009Ideas
+https://fiji.sc/SoC2009Ideas
 
 
 == What is the main development mailing list for your group? ==
