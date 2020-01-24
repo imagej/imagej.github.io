@@ -3,7 +3,7 @@
 | software               = Fiji
 | author                 = Stephan Saalfeld
 | maintainer             = Stephan Saalfeld
-| source                 = [http://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=Transform_Rigid.java in gitweb]
+| source                 = [https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=Transform_Rigid.java in gitweb]
 | released               = October 10, 2008
 | latest version         = October 10, 2008
 | status                 = stable
