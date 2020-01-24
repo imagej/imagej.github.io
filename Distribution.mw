@@ -15,7 +15,7 @@ Here is a quick summary of the most recommended options:
 ** Use '''[[Maven]]''' to build and SemVer for '''[[versioning]]'''.
 ** Use '''[[Travis]]''' for continuous integration and artifact deployment to the [[SciJava Maven repository]].
 * '''Documentation.'''
-** Create a page here on the '''[http://imagej.net/ ImageJ Wiki]'''.
+** Create a page here on the '''[https://imagej.net/ ImageJ Wiki]'''.
 
 The tables below discuss additional options for these three aspects of distribution. Green items are recommended. Other options are given but not recommended for various reasons.
 
@@ -212,7 +212,7 @@ Useful extensions deserve corresponding documentation explaining how to use them
 | style="background: #dfd" | '''Disadvantages'''
 |-
 | style="background: #dfd; vertical-align: top" |
-* '''[http://imagej.net/index.php?title=Special:UserLogin&returnto=Welcome&type=signup Create an account]'''.
+* '''[https://imagej.net/index.php?title=Special:UserLogin&returnto=Welcome&type=signup Create an account]'''.
 * '''[https://www.mediawiki.org/wiki/Help:Starting_a_new_page Create a page]''' for your extension.
 | style="background: #dfd; vertical-align: top" |
 * The ImageJ wiki is part of imagej.net, the integrated ImageJ web site.
@@ -250,8 +250,8 @@ Useful extensions deserve corresponding documentation explaining how to use them
 |'''Disadvantages'''
 |-
 | style="vertical-align: top" |
-* Prepare an HTML page modeled after the [http://imagej.net/plugins/index.html list of ImageJ 1.x plugins].
-* Email it to {{Person|Rasband}}, the developer of ImageJ 1.x, and sole maintainer of the [http://imagej.net/index.html ImageJ 1.x website].
+* Prepare an HTML page modeled after the [https://imagej.net/plugins/index.html list of ImageJ 1.x plugins].
+* Email it to {{Person|Rasband}}, the developer of ImageJ 1.x, and sole maintainer of the [https://imagej.net/index.html ImageJ 1.x website].
 | style="vertical-align: top" |
 * Listed on the ImageJ 1.x website.
 | style="vertical-align: top" |
