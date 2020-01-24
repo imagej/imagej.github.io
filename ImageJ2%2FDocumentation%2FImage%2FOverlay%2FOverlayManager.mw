@@ -1,4 +1,4 @@
-ImageJ2's Overlay Manager is fairly similar to the ImageJ 1.x ROI Manager. See the [http://imagej.net/docs/menus/analyze.html#manager ImageJ 1.x documentation of its ROI Manager].
+ImageJ2's Overlay Manager is fairly similar to the ImageJ 1.x ROI Manager. See the [https://imagej.net/docs/menus/analyze.html#manager ImageJ 1.x documentation of its ROI Manager].
 
 However there are some major differences between them. For instance:
 <ul>
