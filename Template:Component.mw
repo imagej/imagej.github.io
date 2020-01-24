@@ -104,7 +104,7 @@
 {{Component
 | project = ImageJ
 | name = ImageJ 1.x
-| url = http://imagej.net/index.html
+| url = https://imagej.net/index.html
 | source = {{GitHub | org=imagej | repo=ImageJA | tag=v1.50d}}
 | license = [[Public Domain]]
 | release = {{Maven | g=net.imagej | a=ij | v=1.50d | label=1.50d}}
@@ -124,7 +124,7 @@
 {{Component
 | project = ImageJ
 | name = ImageJ 1.x
-| url = http://imagej.net/index.html
+| url = https://imagej.net/index.html
 | source = {{GitHub | org=imagej | repo=ImageJA | tag=v1.50d}}
 | license = [[Public Domain]]
 | release = {{Maven | g=net.imagej | a=ij | v=1.50d | label=1.50d}}
