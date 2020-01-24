@@ -12,10 +12,10 @@ As a consequence of its generic aims, the library allows and requires a differen
 
 ==Workshop Material==
 
-#[http://fiji.sc/~preibisch/ImgLibPresentation.pdf An overview of the workshop]
+#[https://fiji.sc/~preibisch/ImgLibPresentation.pdf An overview of the workshop]
 #[http://fly.mpi-cbg.de/~preibisch/pubs/imagejpaper2010.pdf The corresponding ImgLib publication in the Proceedings of the ImageJ Conference 2010]
-#[http://fiji.sc/~preibisch/workshop.zip Code examples and images including all libraries (16MB, for non-Fiji users)]
-#[http://fiji.sc/~preibisch/workshop2.zip Code examples and images without libraries (4MB, for Fiji users)]
+#[https://fiji.sc/~preibisch/workshop.zip Code examples and images including all libraries (16MB, for non-Fiji users)]
+#[https://fiji.sc/~preibisch/workshop2.zip Code examples and images without libraries (4MB, for Fiji users)]
 #[http://fly.mpi-cbg.de/~saalfeld/workshop3.zip Code examples without images and libraries (15KB, for Fiji users)]
 
 ==References==
