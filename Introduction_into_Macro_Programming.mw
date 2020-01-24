@@ -103,7 +103,7 @@ counter++;
 
 = Functions =
 
-Most of the time, you will call ''functions'' which implement the actions you want to execute. Functions have names, like variables, but they also have ''parameters'' that you can pass to the functions. ImageJ comes with many [http://imagej.net/developer/macro/functions.html predefined functions] that you can call to perform specific calculations or other operations.
+Most of the time, you will call ''functions'' which implement the actions you want to execute. Functions have names, like variables, but they also have ''parameters'' that you can pass to the functions. ImageJ comes with many [https://imagej.net/developer/macro/functions.html predefined functions] that you can call to perform specific calculations or other operations.
 
 This example writes ''Hello, World!'' to the ''Log'' window:
 
@@ -276,7 +276,7 @@ run("Merge Channels...",
 
 = Installing macros =
 
-To install keyboard shortcuts or tool icons, you need to [http://imagej.net/developer/macro/macros.html#tools wrap macro code in ''macro'' blocks]:
+To install keyboard shortcuts or tool icons, you need to [https://imagej.net/developer/macro/macros.html#tools wrap macro code in ''macro'' blocks]:
 
 <source lang="java">
 macro "Title of the macro" {
@@ -320,7 +320,7 @@ macro "Save As JPEG Action Tool - C000R11ee" {
 }
 </source>
 
-The icon is defined by a funny-looking string (in this case, ''C000R11ee''). To learn how to define your own icon, please have a look [http://imagej.net/developer/macro/macros.html#icons here].
+The icon is defined by a funny-looking string (in this case, ''C000R11ee''). To learn how to define your own icon, please have a look [https://imagej.net/developer/macro/macros.html#icons here].
 
 Many tools open an option dialog upon double-click on the icon. You can do that, too, by choosing a name that ends in ''Action Tool Options'':
 
@@ -639,20 +639,20 @@ macro "Split and Merge" {
 
 == More example macros ==
 
-There are quite a lot of macros on the [http://imagej.net/macros/ ImageJ website], and specifically [http://imagej.net/macros/examples/ example macros] including a few from the Macro workshop at the [http://imagejconf.tudor.lu/archive/imagej-user-and-developer-conference-2010 ImageJ conference 2010]. Since there is no categorized index, you might want to use the search facility on [http://imagej.net/developer/index.html this page].
+There are quite a lot of macros on the [https://imagej.net/macros/ ImageJ website], and specifically [https://imagej.net/macros/examples/ example macros] including a few from the Macro workshop at the [http://imagejconf.tudor.lu/archive/imagej-user-and-developer-conference-2010 ImageJ conference 2010]. Since there is no categorized index, you might want to use the search facility on [https://imagej.net/developer/index.html this page].
 
 = Overcoming limitations =
 
 Macros have a major limitation compared to the other [[scripting]] languages: they have only a [https://imagej.net/developer/macro/functions.html fixed set of built-in functions]. Sometimes, though, one needs access to functions outside this realm; in that case, there are three primary means of overcoming this limitation:
 
 == Macro extensions ==
-It is possible to implement code in [[Java]] which extends the macro language via the [http://imagej.net/developer/macro/functions.html#Ext <code>Ext</code> prefix]. However, this cannot be done within the macro itself.
+It is possible to implement code in [[Java]] which extends the macro language via the [https://imagej.net/developer/macro/functions.html#Ext <code>Ext</code> prefix]. However, this cannot be done within the macro itself.
 
 == The call function ==
-The [http://imagej.net/developer/macro/functions.html#call <code>call</code> function] can invoke Java methods directly. However, this function only supports calling <code>public static</code> Java methods which accept <code>String</code> only, and return <code>String</code> only. Most times, though, the needed function does not conform to these requirements; this approach is suitable mostly for routines designed to be called from the macro language in this way.
+The [https://imagej.net/developer/macro/functions.html#call <code>call</code> function] can invoke Java methods directly. However, this function only supports calling <code>public static</code> Java methods which accept <code>String</code> only, and return <code>String</code> only. Most times, though, the needed function does not conform to these requirements; this approach is suitable mostly for routines designed to be called from the macro language in this way.
 
 == The eval function ==
-The [http://imagej.net/developer/macro/functions.html#eval <code>eval</code> function] can execute [[JavaScript]] (or [[BeanShell]] or [[Python]]) code directly. This is a powerful and flexible approach which can invoke nearly any Java API without needing to write external Java code.
+The [https://imagej.net/developer/macro/functions.html#eval <code>eval</code> function] can execute [[JavaScript]] (or [[BeanShell]] or [[Python]]) code directly. This is a powerful and flexible approach which can invoke nearly any Java API without needing to write external Java code.
 
 Here is an example which sets the position of a [[3D Viewer]] window:
 
@@ -677,6 +677,6 @@ eval("script",
 
 = Further documentation =
 
-A complete description of the macro language, a reference of the built-in functions, and examples can be found [http://imagej.net/developer/index.html here].
+A complete description of the macro language, a reference of the built-in functions, and examples can be found [https://imagej.net/developer/index.html here].
 
 [[Category:Scripting]][[Category:Tutorials]]
