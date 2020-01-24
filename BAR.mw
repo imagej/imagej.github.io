@@ -69,7 +69,7 @@ It may be wise to allow ImageJ enough time to register all scripts before trigge
 
 '''Notes'''
 * The several <span style="border-bottom:1px dotted #ccc;">Move Menu (Context<>Main)</span> commands across <span style="border-bottom:1px dotted #ccc;"> BAR▷ </span> submenus do not use the same label and are distinguishable by extra trailing spaces. This is intentional because all ImageJ commands must have unique names.
-* Any toolset loaded via the ">>" ''More Tools'' drop down menu can define its own contextual menu (as detailed in the [http://imagej.net/docs/guide/146-21.html#sec:ContextualMenu ImageJ User Guide], the contextual menu is controlled by a macro called ''Popup Menu'' that gets loaded at startup). To have BARs immediately available when such toolsets are loaded, just append the same <tt>run("Move Menu (Context<>Main)");</tt> call described above for StartupMacros.
+* Any toolset loaded via the ">>" ''More Tools'' drop down menu can define its own contextual menu (as detailed in the [https://imagej.net/docs/guide/146-21.html#sec:ContextualMenu ImageJ User Guide], the contextual menu is controlled by a macro called ''Popup Menu'' that gets loaded at startup). To have BARs immediately available when such toolsets are loaded, just append the same <tt>run("Move Menu (Context<>Main)");</tt> call described above for StartupMacros.
 
 === Commander ===
 [[File:CommanderOverview.png|400px|thumb|Commander overview (BAR 1.1.2).]]
