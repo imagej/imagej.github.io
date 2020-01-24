@@ -19,7 +19,7 @@ Submit patches to [[ImageJ2]] via [https://help.github.com/articles/using-pull-r
 Note that since ImageJ2 has a modular [[architecture]], it is possible that your change would be more applicable to one of the supporting technologies such as [https://github.com/imglib ImgLib2], [https://github.com/scifio SCIFIO] or [https://github.com/scijava SciJava].
 
 == ImageJ1 ==
-Changes to [[ImageJ1]] are made by {{Person|Rasband}}, who is the sole [[ImageJ1]] developer. He takes patch submissions and then reworks them to fit within the project's development model and style before merging them. Attribution for the changes is noted in the release notes (see [http://imagej.net/notes.html ImageJ1's Release Notes/News]). 
+Changes to [[ImageJ1]] are made by {{Person|Rasband}}, who is the sole [[ImageJ1]] developer. He takes patch submissions and then reworks them to fit within the project's development model and style before merging them. Attribution for the changes is noted in the release notes (see [https://imagej.net/notes.html ImageJ1's Release Notes/News]). 
 
 Methods of getting the patch to Wayne include:
 * Send the modified code in a [mailto:rasbandw@mail.nih.gov private mail to Wayne]. He prefers not to discuss code on the ImageJ mailing list.
