@@ -16,7 +16,7 @@ In montage mode, [http://www.gatan.com/software/ Gatan’s DigitalMicrograph] so
 This plugin will read all Gatan’s files (.dm3) inside the folders and create a file list in a text document (.txt), in a format suitable for importing into TrakEM2, directly from their original directories. You can move the parent directory from the acquisition computer to any other suitable location, of course. The plugin will also attempt to read metadata from the files to automatically calculate the montage configuration (how many tiles in x and y) and to provide rough coordinates for the image positioning, according to image size and overlap. This information will leave the images roughly in place in the TrakEM2 workspace and makes the next step - stitching the images - much quicker.
 
 == Installation instructions ==
-The [http://fiji.sc/Jython_Scripting#Using_a_jython_script_as_a_plugin Jython plugin installation rules] apply. You must [https://dl.dropboxusercontent.com/u/5200940/3view_import_list.zip download] and copy 3view_import_list.py and MakeImportList4TrakEM2.py together in the same directory. The third file, TrakEM2_import_list.py is optional (see point 3 below). If you want to call the script from your own code, only the second file is necessary. As a suggestion only, you can follow these steps:
+The [https://fiji.sc/Jython_Scripting#Using_a_jython_script_as_a_plugin Jython plugin installation rules] apply. You must [https://dl.dropboxusercontent.com/u/5200940/3view_import_list.zip download] and copy 3view_import_list.py and MakeImportList4TrakEM2.py together in the same directory. The third file, TrakEM2_import_list.py is optional (see point 3 below). If you want to call the script from your own code, only the second file is necessary. As a suggestion only, you can follow these steps:
 
 # Copy 3view_import_list.py and MakeImportList4TrakEM2.py into Fiji directory \Fiji.app\plugins\Scripts\Plugins\Utilities.
 # To make the plugin appear in the menu, you have the option of selecting  {{bc | Plugins | Scripting | Refresh Jython Scripts}}, {{bc | Help | Refresh Menus}} or restarting Fiji. Then the menu entry ‘3View import list’ will appear under {{bc | Plugins | Utilities}} (the first Utilities folder...)
@@ -301,7 +301,7 @@ All comments, questions or suggestions are very welcome. Please send an email to
 == Acknowledgements ==
 *[http://loci.wisc.edu/people/curtis-rueden Curtis Rueden]
 *[http://www.ini.uzh.ch/~acardona/fiji-tutorial/ This page] prepared by Albert Cardona
-*[http://fiji.sc/Jython_Scripting This other page] prepared by Albert Cardona
+*[https://fiji.sc/Jython_Scripting This other page] prepared by Albert Cardona
 *Many, many people who ask and reply to questions about Python all over the Internet
 
 == See Also ==
