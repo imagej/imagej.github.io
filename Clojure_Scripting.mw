@@ -20,7 +20,7 @@ See [[Scripting Help]] for details on keybindings and how to use the interpreter
 A minimal, complete clojure example:
 <source lang="clojure">
 (import '(ij IJ))
-(def gold (IJ/openImage "http://imagej.net/images/AuPbSn40.jpg"))
+(def gold (IJ/openImage "https://imagej.net/images/AuPbSn40.jpg"))
 (.show gold)
 </source>
 
@@ -326,13 +326,13 @@ An alternative syntax is to use the java-like <i>new</i> keyword, but it's unnec
 === ImageJ Image internals: ImagePlus, ImageProcessor, ImageStack ===
 
 ImageJ has three basic objects:
-* The <b>[http://imagej.net/developer/api/ij/ImagePlus.html ImagePlus]</b>, which wraps the ImageProcessor and contains properties and pointers to the ROI (region of interest) and the ImageWindow that may be displaying the image.
-* The <b>[http://imagej.net/developer/api/ij/process/ImageProcessor.html ImageProcessor]</b>, which is an abstract class enabling the high-level manipulation of and access to pixels. Its subclasses each wraps a different kind of data type:
+* The <b>[https://imagej.net/developer/api/ij/ImagePlus.html ImagePlus]</b>, which wraps the ImageProcessor and contains properties and pointers to the ROI (region of interest) and the ImageWindow that may be displaying the image.
+* The <b>[https://imagej.net/developer/api/ij/process/ImageProcessor.html ImageProcessor]</b>, which is an abstract class enabling the high-level manipulation of and access to pixels. Its subclasses each wraps a different kind of data type:
 ** ByteProcessor - byte[]
 ** ShortProcessor - short[]
 ** FloatProcessor - float[]
 ** ColorProcessor - int[] (byte-packed ARGB, but Alpha channel is ignored)
-* The <b>[http://imagej.net/developer/api/ij/ImageStack.html ImageStack]</b> which contains unfortunately not an array of ImageProcessor, but an Object[] containing an homogeneous list of equal length byte[], or float[], etc.
+* The <b>[https://imagej.net/developer/api/ij/ImageStack.html ImageStack]</b> which contains unfortunately not an array of ImageProcessor, but an Object[] containing an homogeneous list of equal length byte[], or float[], etc.
 
 For extensive documentation, see the [http://albert.rierol.net/imagej_programming_tutorials.html#ImageJ%20programming%20basics Anatomy of an ImageJ image] ImageJ programming basics tutorial.
 
@@ -399,7 +399,7 @@ An alternative way would be to simply duplicate the processor of imp-1, and then
 === Resizing an ImageStack ===
 
 This one is harder, because an ImageStack is just a wrapper for Object[] list of pixel arrays.
-ImageJ though provides a mid-level resizing method, via the [http://imagej.net/developer/api/ij/plugin/CanvasResizer.html CanvasResizer] class:
+ImageJ though provides a mid-level resizing method, via the [https://imagej.net/developer/api/ij/plugin/CanvasResizer.html CanvasResizer] class:
 
 
 <source lang="clojure">
@@ -520,7 +520,7 @@ The above works with both single images and stacks.
 
 With [[Imglib]], pixels are stored in native arrays of primitives such as int, float, double, etc. (or other more interesting forms, such as [http://download.oracle.com/javase/1.5.0/docs/api/java/awt/Shape.html Shape]. Such pixels are accessed with intermediate proxy objects that the JIT is able to completely remove out of the way.
 
-From Clojure, there are many ways in which to access the pixels. Here we list some examples of the pixels accessed as a Collection of accessor [http://fiji.sc/javadoc/mpicbg/imglib/type/Type.html Type] objects.
+From Clojure, there are many ways in which to access the pixels. Here we list some examples of the pixels accessed as a Collection of accessor [https://fiji.sc/javadoc/mpicbg/imglib/type/Type.html Type] objects.
 
 
 === Multiply each pixel by 0.5 ===
@@ -592,15 +592,15 @@ The above, though, is unbearably verbose. A high-level access to the images enab
     (.show (ImgLib/wrap copy)))
 </source>
 
-What's more, the [http://fiji.sc/javadoc/script/imglib/math/Compute.html Compute]/inFloats method runs in parallel, with as many processors as your machine has cores. If you'd rather not execute the operation in parallel, add the desired number of threads as an argument to <i>inFloats</i>.
+What's more, the [https://fiji.sc/javadoc/script/imglib/math/Compute.html Compute]/inFloats method runs in parallel, with as many processors as your machine has cores. If you'd rather not execute the operation in parallel, add the desired number of threads as an argument to <i>inFloats</i>.
 
-All mathematical operations listed in java.lang.Math have a corresponding constructor for execution in Compute/inFloats. See the documentation for the [http://fiji.sc/javadoc/script/imglib/math/package-frame.html script.imglib.math package].
+All mathematical operations listed in java.lang.Math have a corresponding constructor for execution in Compute/inFloats. See the documentation for the [https://fiji.sc/javadoc/script/imglib/math/package-frame.html script.imglib.math package].
 
 === Normalize an image ===
 
 Assumes that <i>(IJ/getImage)</i> returns a 32-bit, float image. If that is not the case, convert the image to a float image first.
 
-The example below creates a new result image. The original image is untouched. This is accomplished with minimal friction but best performance (like hand-coded with cursors or better) by using the high-level scripting library of imglib, and the [http://fiji.sc/javadoc/script/imglib/math/Compute.html Compute]/inFloats method.
+The example below creates a new result image. The original image is untouched. This is accomplished with minimal friction but best performance (like hand-coded with cursors or better) by using the high-level scripting library of imglib, and the [https://fiji.sc/javadoc/script/imglib/math/Compute.html Compute]/inFloats method.
 
 <source lang="clojure">
 (ns test.imglib
