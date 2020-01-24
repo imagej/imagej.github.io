@@ -40,7 +40,7 @@ This is a '''complementary plugin''' of [[Register Virtual Stack Slices]]. It al
 == API documentation ==
 The latest documentation of the package can be found here: 
 
-[http://fiji.sc/javadoc/register_virtual_stack/package-summary.html http://fiji.sc/javadoc/register_virtual_stack/package-summary.html]
+[https://fiji.sc/javadoc/register_virtual_stack/package-summary.html https://fiji.sc/javadoc/register_virtual_stack/package-summary.html]
 
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
