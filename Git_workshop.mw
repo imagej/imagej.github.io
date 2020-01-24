@@ -433,7 +433,7 @@ Let's surf to http://github.com/git/hello-world and inspect the history
 * Git for Windows: http://code.google.com/p/msysgit/
 * Git for MacOSX http://code.google.com/p/git-osx-installer/
 * An overview of the underlying data model: http://eagain.net/articles/git-for-computer-scientists/
-* Fiji's ''topic branches'' tutorial: http://fiji.sc/wiki/index.php/Git_topic_branches
+* Fiji's ''topic branches'' tutorial: https://fiji.sc/wiki/index.php/Git_topic_branches
 * The ProGit book: http://progit.org/
 * The most popular repository hoster: https://github.com/
 * The original repository hoster: http://repo.or.cz/
