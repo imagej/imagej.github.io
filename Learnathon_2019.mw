@@ -84,7 +84,7 @@ For this little lecture our aim is to:
 * If you do so, be sure that you also create folders <code>src/main/java</code> next to the new POM. Then import into your IDE (e.g. Eclipse).
 * Please update the version of the SciJava parent POM to the latest version. Find out what version this is by using [https://maven.scijava.org/#nexus-search;quick~pom-scijava https://maven.scijava.org/#nexus-search;quick~pom-scijava].
 * You will have to add the suitable dependency to your POM in order to use Simplified-IO. The readme at [https://github.com/fiji/simplified-io https://github.com/fiji/simplified-io] will tell you more...
-* Now please try to open the image at [http://imagej.net/images/t1-head.zip http://imagej.net/images/t1-head.zip] and show it on your screen.
+* Now please try to open the image at [https://imagej.net/images/t1-head.zip https://imagej.net/images/t1-head.zip] and show it on your screen.
 ** How to load the image might be seen in the readme at [https://github.com/fiji/simplified-io https://github.com/fiji/simplified-io].
 ** Soon we will learn more about how to view images, but for now you can, for example, use <code>ij.ui().show( "img", loadedImage )</code>, which is available as soon as you started an ImageJ2 via <code>final ImageJ ij = new ImageJ()</code>.
 * Just for fun you might also want to save the image you just loaded.
