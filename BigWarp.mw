@@ -255,7 +255,7 @@ The default parameters will result in the exported image having the same dimensi
 ** Specified (pixel): '' The output field of view will be that given by the Offset and Field of View parameter fields where both are in units of pixels''** ** Specified (physical): '' The output field of view will be that given by the Offset and Field of View parameter fields where both are in the physical units of the moving and target images''
 
 
-The warped moving image can be exported as an in-memory or [http://imagej.net/docs/guide/146-8.html virtual] ImagePlus.  A virtual ImagePlus is generally faster to generate but slower to browse, whereas an in-memory ImagePlus will be slower to generate but faster to browse.
+The warped moving image can be exported as an in-memory or [https://imagej.net/docs/guide/146-8.html virtual] ImagePlus.  A virtual ImagePlus is generally faster to generate but slower to browse, whereas an in-memory ImagePlus will be slower to generate but faster to browse.
 
 
 [[Image:BigwarpLandmarkCenteredExport.png|600px]]
