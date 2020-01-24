@@ -35,13 +35,20 @@ There are four organizations on [https://github.com/ GitHub] which form the back
 
 Each organization contains several related components under its respective umbrella: a core library (see below) and several extensions. In social terms, each organization represents a collection of conceptually related components developed by a distinct [[Contributors|team of developers]].
 
-Additional organizations further extend this structure:
+Additional organizations can further extend this structure. For example, the [[Fiji]] project has several organizations as follows:
 
 * [https://github.com/fiji fiji] - for [[Fiji]] components
-** [https://github.com/bigdataviewer bigdataviewer] - for [[BigDataViewer]] components
-** [https://github.com/trakem2 trakem2] - for [[TrakEM2]] components
-* [https://github.com/uw-loci uw-loci] - for [[LOCI]] components
-* [https://github.com/slim-curve slim-curve] - for [[SLIM Curve]] components
+* [https://github.com/bigdataviewer bigdataviewer] - for [[BigDataViewer]] components
+* [https://github.com/trakem2 trakem2] - for [[TrakEM2]] components
+
+Furthermore, many groups maintain their own GitHub organizations with components built on SciJava et al. Here are a few examples:
+
+* [[LOCI]] – [https://github.com/uw-loci uw-loci]
+* [[FLIMJ]] – [https://github.com/flimlib flimlib]
+* [[DAIS]] – [https://github.com/TrnDy TrnDy]
+* {{Person|Jug}} – [https://github.com/juglab juglab]
+* {{Person|Saalfeld}} – [https://github.com/saalfeldlab saalfeldlab]
+* {{Person|StephanPreibisch}} – [https://github.com/PreibischLab PreibischLab]
 * <your organization here!>
 
 The diagram on the right shows organizational relationships between SciJava software components.
@@ -80,45 +87,35 @@ All components in these organizations use [[Maven]] for [[Project Management|pro
 | {{Logo | SciJava}}
 | [[SciJava]]
 | [https://github.com/scijava scijava]
-| [http://maven.imagej.net/index.html#nexus-search;gav~org.scijava org.scijava]
+| [https://maven.scijava.org/index.html#nexus-search;gav~org.scijava org.scijava]
 |-
 | {{Logo | ImageJ2}}
 | [[ImageJ]]
 | [https://github.com/imagej imagej]
-| [http://maven.imagej.net/index.html#nexus-search;gav~net.imagej net.imagej]
+| [https://maven.scijava.org/index.html#nexus-search;gav~net.imagej net.imagej]
 |-
 | {{Logo | ImgLib2}}
 | [[ImgLib2]]
 | [https://github.com/imglib imglib]
-| [http://maven.imagej.net/index.html#nexus-search;gav~net.imglib2 net.imglib2]
+| [https://maven.scijava.org/index.html#nexus-search;gav~net.imglib2 net.imglib2]
 |-
 | {{Logo | SCIFIO}}
 | [[SCIFIO]]
 | [https://github.com/scifio scifio]
-| [http://maven.imagej.net/index.html#nexus-search;gav~io.scif io.scif]
+| [https://maven.scijava.org/index.html#nexus-search;gav~io.scif io.scif]
 |-
 | rowspan=3 style="vertical-align: middle" | {{Logo | Fiji}}
 | [[Fiji]]
 | [https://github.com/fiji fiji]
-| [http://maven.imagej.net/index.html#nexus-search;gav~sc.fiji sc.fiji]
+| [https://maven.scijava.org/index.html#nexus-search;gav~sc.fiji sc.fiji]
 |-
 | [[BigDataViewer]]
 | [https://github.com/bigdataviewer bigdataviewer]
-| [http://maven.imagej.net/index.html#nexus-search;gav~sc.fiji sc.fiji]
+| [https://maven.scijava.org/index.html#nexus-search;gav~sc.fiji sc.fiji]
 |-
 | [[TrakEM2]]
 | [https://github.com/trakem2 trakem2]
-| [http://maven.imagej.net/index.html#nexus-search;gav~sc.fiji sc.fiji]
-|-
-| {{Logo | SLIM Curve}}
-| [[SLIM Curve]]
-| [https://github.com/slim-curve slim-curve]
-| [http://maven.imagej.net/index.html#nexus-search;gav~slim-curve slim-curve]
-|-
-| {{Logo | LOCI}}
-| [[LOCI]]
-| [https://github.com/uw-loci uw-loci]
-| [http://maven.imagej.net/index.html#nexus-search;gav~loci loci]
+| [https://maven.scijava.org/index.html#nexus-search;gav~sc.fiji sc.fiji]
 |}
 
 == Bill of Materials ==
