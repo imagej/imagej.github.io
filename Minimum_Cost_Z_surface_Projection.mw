@@ -64,7 +64,7 @@ Both examples illustrated in the previous section can be reproduced with the Min
 
 ==Methods and Implementation==
 
-The initial development of the plugin was initially proposed by Dagmar Kainmueller (Myers lab MPI-CBG, Dresden ). The plugin was implemented after the method of Li et al. [1]. One can refer to that paper for the principle of the surface detection. The mincut maxflow problem is solved using the GraphCut solver implemented in FIJI [http://fiji.sc/Graph_Cut Graph_Cut plugin by Jan Funke].
+The initial development of the plugin was initially proposed by Dagmar Kainmueller (Myers lab MPI-CBG, Dresden ). The plugin was implemented after the method of Li et al. [1]. One can refer to that paper for the principle of the surface detection. The mincut maxflow problem is solved using the GraphCut solver implemented in FIJI [https://fiji.sc/Graph_Cut Graph_Cut plugin by Jan Funke].
 
 Also If the plugin allows to detect only two surface with one input function, the underlying class has more flexibility and can handle any number of surface and cost function. It also allow to add crossing or non crossing constraints on any pair of surfaces as described in Li et al.
 
