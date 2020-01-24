@@ -100,7 +100,7 @@ If you want to know more about the plugin, you can look at the [[Level_Sets|docu
 == Simple Neurite Tracer ==
 This is a very nice plugin for semi automatic segmentation of thin elongated structures. It is designed to work with fluorecent images of neurons, but I am sure you can find other applications for it too!
 Fortunately Mark has already written a very nice documentation about the plugin. So there is little use in me writing everything again.
-You can find an example data set at: [http://fiji.sc/cgi-bin/gitweb.cgi?p=VIB.git;a=blob;f=test-images/c061AG-small-section.tif c061AG-small-section.tif];
+You can find an example data set at: [https://fiji.sc/cgi-bin/gitweb.cgi?p=VIB.git;a=blob;f=test-images/c061AG-small-section.tif c061AG-small-section.tif];
 So please have a look at the [http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/instructions.html documentation]
 I especially like the [http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/step-by-step/ step-by-step guide]
 
