@@ -4,7 +4,7 @@ It is a great pleasure to announce [[Downloads|a new Fiji version]] nick-named P
 
 * the [[Using the Script Editor|Script Editor]].  Just call {{bc | File | New | Script}}, select a language and start   writing a script.  The editor has syntax highlighting and you can run the   script without even saving it.
 
-For an introduction to the power of scripting, see e.g. [http://fiji.sc/wiki/index.php/Javascript_Scripting our page on Javascript].
+For an introduction to the power of scripting, see e.g. [https://fiji.sc/wiki/index.php/Javascript_Scripting our page on Javascript].
 
 Other changes include:
 
