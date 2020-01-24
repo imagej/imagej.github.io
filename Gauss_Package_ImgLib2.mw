@@ -3,7 +3,7 @@
 | name                   = Gaussian Convolution
 | author                 = Stephan Preibisch
 | maintainer           = Stephan Preibisch
-| source                 = [http://fiji.sc/git/?p=imglib.git;a=tree;f=algorithms/core/src/main/java/net/imglib2/algorithm/gauss;hb=refs/heads/master]
+| source                 = [https://fiji.sc/git/?p=imglib.git;a=tree;f=algorithms/core/src/main/java/net/imglib2/algorithm/gauss;hb=refs/heads/master]
 | released               = 20 December 2011
 | latest version         = 20 December 2011
 | status                 = active
