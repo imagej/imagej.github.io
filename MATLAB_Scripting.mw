@@ -268,7 +268,7 @@ imp.show()
 
 ==== Opening a MATLAB array as an image in ImageJ ====
 
-The following will open a MATLAB array data as an image in ImageJ. Note that the X and Y of the image is transposed in ImageJ in the second image (see Limitations of <code>IJM.show()</code> above).
+The following will open a MATLAB array data as an image in ImageJ. Note that the X and Y of the image are transposed in ImageJ in the second image (see Limitations of <code>IJM.show()</code> above).
 <source lang="matlab">
 corn_gray = imread('corn.tif',3);
 imshow(corn_gray); % show in MATLAB
