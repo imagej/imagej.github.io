@@ -237,7 +237,6 @@ ij.IJ.run("Quit","");
 
 ==== Common Issues ====
 * Although the first and second dimensions, respectively, of MATLAB array are treated as rows (Y)and columns (X) in MATLAB, the first and second dimensions of an array are treated as X and Y, respectively, in ImageJ. The axes are transposed by <code>IJM.show(name)</code>, <code>IJM.getDataset()</code>, <code>IJM.getDatasetAs(name)</code>. (See discussion [http://forum.imagej.net/t/ijm-show-in-imagej-matlab-does-not-support-multi-dimentional-or-multi-channel-images/10156 here for details])
-* At the moment, there isn't an explicit way to quit the ImageJ instance from MATLAB (If you find a way, please report to [http://forum.imagej.net/ ImageJ forum]).
 * <code>IJM</code> object is always added to the MATLAB base workspace. In order to access <code>IJM</code> methods from within a MATLAB function, you'll need to  use <code>assignin</code>, <code>evalin</code>, and/or <code>global</code> (see [http://forum.imagej.net/t/how-can-i-use-imagej-from-within-a-matlab-function/10297 here for details])
 * When launching ImageJ, you'll see the error message below:
 <source>
