@@ -31,6 +31,7 @@
 {{MenuItem | [[Scripting|Overview]] }}
 {{MenuItem | [[User input|User input]] }}
 {{MenuItem | [[Scripting basics|Basics of script writing]] }}
+{{MenuItem | [[How to use the Javadoc|How to use the Javadoc]] }}
 {{MenuItem | [[Batch Processing|Batch processing]] }}
 {{MenuItem | [[Using the Script Editor|Script Editor]] }}
 {{MenuItem | [[Script Editor Auto Import|Auto Imports]] }}
