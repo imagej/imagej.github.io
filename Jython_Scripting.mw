@@ -107,19 +107,64 @@ Another great feature of Jython is the possibility to use functions from Java ja
 
 === ImageJ and Fiji API ===
 
-The following API documentation lists all available module and functions :
+The following API documentation lists all available modules and functions :
 * [http://javadoc.scijava.org/ImageJ1/ ImageJ]
 * [http://javadoc.scijava.org/Fiji/ Fiji]
 
 Those package are built-in with Fiji, but any package that resides in the jars folder can be imported provided you know the path to the class.
 
-Let's show one example with the ImageJ package and the class [http://javadoc.scijava.org/ImageJ1/ij/plugin/frame/RoiManager.html RoiManager]. According to the javadoc the RoiManager class resides in <code>ij.plugin.frame</code>. Therefore the code will look like :
+For example, one of the main built-in ImageJ packages is called <code>ij</code>, and often Jython scripts will write something like this at the top:
+
+<source lang="python">
+from ij import IJ
+# do stuff below....
+</source>
+
+Doing this allows you to access the <code>IJ</code> ''class'' which resides in the <code>ij</code> ''package''. You can find a description of the <code>ij</code> package [https://javadoc.scijava.org/ImageJ1/ij/package-summary.html here]. What can we do with the <code>IJ</code> class? 
+Clicking on the <code>IJ</code> link brings you to the [https://javadoc.scijava.org/ImageJ1/ij/IJ.html class documentation] page for <code>IJ</code>. This class contains "static utility methods" which means you can call them with without instantiating (calling the constructor) the <code>IJ</code> class. We will cover constructors later. Looking through the documentation for <code>IJ</code>, lets focus on the method <code>createImage</code> ([https://javadoc.scijava.org/ImageJ1/ij/IJ.html#createImage-java.lang.String-int-int-int-int- docs here]). This method can be called just like you would call a method on a python class. The documentation shows you need to provide the following parameters (types in parenthesis):
+# title (string) 
+# width (int)
+# height (int) 
+# depth (int)
+# bitdepth (int)
+and it returns an <code>ImagePlus</code> object. <code>ImagePlus</code> objects are very important in ImageJ, and you will the documentation for them [https://imagej.nih.gov/ij/developer/api/ij/ImagePlus.html here]. 
+Below is an example of how to import and use the static methods on the <code>IJ</code> class to create an image. 
+
+<source lang="python">
+from ij import IJ # read this as: "from the ij package import the IJ class"
+test_img = IJ.createImage("Test image", 512, 512, 1, 8)
+# now check the type of test_img
+print(type(test_img))
+# <type 'ij.ImagePlus'>
+</source>
+
+This code shows that we have successfully created an <code>ImagePlus</code> object. 
+Looking at the documentation for the [https://javadoc.scijava.org/ImageJ1/ij/ImagePlus.html ImagePlus class], let's use a few of the methods to make sure the image was created correctly. 
+
+<source lang="python">
+from ij import IJ
+test_img = IJ.createImage("Test image", 512, 512, 1, 8)
+# check the type:
+print(type(test_img))
+# <type 'ij.ImagePlus'>
+title = test_img.getTitle()
+width = test_img.width
+height = test_img.height
+print("{} is {} wide and {} tall.".format(title, width, height))
+test_img.show()
+</source>
+ 
+We accessed the title using the <code>getTitle()</code> [https://javadoc.scijava.org/ImageJ1/ij/ImagePlus.html#getTitle-- method], which takes no arguments and returns the image name. We accessed the image width and height by accessing <code>test_img</code>'s '''fields'''. These are not methods, but contain information about the class. We could have also used the <code>getWidth()</code> and <code>getHeight()</code> methods as well. We then called the <code>show()</code> method on our test image and a (very boring) 512X512 8 bit image should have popped up. 
+
+
+Here is another example where we use the ImageJ package and the [http://javadoc.scijava.org/ImageJ1/ij/plugin/frame/RoiManager.html RoiManager] class. According to the javadoc, the RoiManager class resides in <code>ij.plugin.frame</code>. Therefore the code will look like :
 
 <source lang="python">
 from ij.plugin.frame import RoiManager
 RM = RoiManager()        # we create an instance of the RoiManager class
 rm = RM.getRoiManager()  # "activate" the RoiManager otherwise it can behave strangely 
 </source>
+
 
 === Using openCV in Jython ===
 It is even possible to use most of opencv functionalities within Jython/Fiji. There are several options (see the [https://imagej.net/OpenCV wiki page about opencv]), yet the most straight forward is probably IJ-OpenCV which is available via the update sites.  It will automatically download the necessary packages and dependencies in your Fiji installation. 
