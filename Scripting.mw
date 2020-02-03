@@ -40,7 +40,7 @@ ImageJ's [[Script Editor]] supports many different languages. The following tabl
 |-
 | colspan=2 style="background: #ddd; text-align: center; font-weight: bold" | Other options
 |-
-! [[Introduction into Developing Plugins|Java]]
+! [[Java]]
 | You can code Java plugins in the Script Editor. This is the most difficult path, but also the most powerful.
 |-
 ! [[MATLAB Scripting|MATLAB]]
