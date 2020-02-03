@@ -12,7 +12,7 @@
 
 = Installation =
 In Fiji, activate the '''ROI 1-click tools''' update site.<br>
-In ImageJ, copy the file ''RoiClicTools.ijm'' to ''ImageJ\macros\toolsets''
+In ImageJ, copy the file ''Roi 1-Click Tools.ijm'' to ''ImageJ\macros\toolsets''
 
 = Documentation = 
 See the [https://github.com/LauLauThom/Fiji-RoiClickTools Readme] of the GitHub repo.
