@@ -1,26 +1,12 @@
-{{HelpMenu}}You can file an issue in ImageJ's issue tracker using the {{bc | Help | Report a Bug}} command. Please invest the time to [[Bug reporting best practices|write a good issue report]].
-{{Warning | The "Report a Bug" plugin is currently being rewritten to report issues to GitHub, rather than to the now-defunct Fiji BugZilla. In the meantime, please report bugs via the [[Forum]] or [https://github.com/imagej/imagej/issues on GitHub] instead.}}
-{{ComponentStats:sc.fiji:Bug_Submitter}}== Report a Bug ==
+{{HelpMenu}}Please report bugs via the [[Image.sc Forum]]:
+* Start a new topic in the "Usage & Issues" category.
+* Add the <code>imagej</code> label, and any other relevant labels.
+* Include a [[Bug reporting best practices|minimal working example]] illustrating the issue.
+* If you know who is responsible for maintaining the affected part of ImageJ, please <code>@mention</code> them.
 
-To be able to track issues better, the Fiji project has a [https://fiji.sc/bugzilla BugZilla] instance. However, BugZilla's user interface can be quite intimidating to somebody who just wants to report a bug. Therefore, Fiji offers an easier way to report a bug:
+Or if you have a GitHub account, please feel welcome to report issues [https://github.com/imagej/imagej/issues on GitHub] instead.
 
-[[Image:Report_a_Bug-menu.jpg]]
-
-It will show you a simple form:
-
-[[Image:Report_a_Bug-form.jpg]]
-
-If you already have submitted a bug using this form, Fiji will remember the email address, but for security reasons, the password will not be stored by default.
-
-Please specify a concise summary of the issue, and provide a more detailed description in the lower text area. The plugin will have filled in some informations about your system already, so that you do not have to do that.
-
-=== Creating an account ===
-
-If you did not report any bugs before, you might need to register an account with the BugZilla instance. No worries, this is easy, just click on the ''Visit the Bugzilla account creation page'' button. The relevant part of the page looks like this:
-
-[[Image:Report_a_Bug-account.jpg]]
-
-Just enter your email address (which we need to notify you of fixes, or ask for more details), your real name, and hit the ''Create Account'' button.
+Thank you! 😁
 
 [[Category:Tutorials]]
 [[Category:Plugins]]
