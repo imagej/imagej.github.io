@@ -48,7 +48,7 @@ Add the plugin to your current Fiji distribution : start the Fiji updater (Help/
 ===Prepare your data===
 To begin with the training mode, you need :
 * Two 3d images of the same object. Use your own data, or the provided example dataset here (blablalien cerveau blablalien bouture).
-* A place to build an empty "Output" directory, that will be used to store the Fijiyama configuration file, the intermediate results (transforms) and the final results (transforms and images). The configuration file (*.fjm) keep a full track of your work. It is useful to save the current registration experiment (registration steps and transforms), restart later from this point, and eventually "undo" one or more actions.
+* A place to build an empty "Output" directory, that will be used to store the Fijiyama configuration file, the intermediate results (transforms) and the final results (transforms and images). The configuration file (*.fjm) keep a full track of your work. When you save the current registration experiment, the configuration stores successive registration steps and the associated computed files. When restarting later from this point, you can review the whole process, and eventually "undo" one or more actions.
 
 ===Training : two image registration===
 Start the plugin using the blabla button, and check "Two images registration". Follow the instructions to define input data and output directory. Once the registration manager is started, try the buttons, and read the "tooltip" appearing, until you feel comfortable to begin. 
