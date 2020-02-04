@@ -9,7 +9,14 @@
 | latest version         = February 11<sup>th</sup>, 2010
 | status                 = stable, active
 | category               = [[:Category:Registration|Registration]]
-}}The Fijiyama plugin is a registration and alignment tool for multimodal / multi-time series of 3d images (IRM / RX / Photo / Microscopy). This tool align and combine series of 3d images. Transforms can be estimated using two algorithms : an "iconic" one, based on SimpleItk library (www.itk.org) and a "iconic and geometric" one, Block-matching, well-suited for the complex task of multi-modal registration.
+}}Fijiyama (Yet Another Matching and Alignment tool for Fiji) is a plugin to perform registration and alignment of 3d images of the same object, acquired with various imaging devices, and/or at successive observation times, with variable orientation and positions, making it harder to analyse.
+
+This plugin helps you to register, align and combine all these data under a common reference geometry, aligned with the image axis (X,Y,Z), easing further analyses.
+As opposed to existing tools under ImageJ, Fijiyama is well-suited to medical images (MRI / X-rays registration), but work also with more common laboratory images : microscopy, photograph. 
+
+Registration of two images is achieved estimating a geometrical transform that can be applied to an image (the "moving one"), to superimpose it with another image (the "reference" one). In Fijiyama, this estimation can be computed using two algorithms : an "iconic" one, based on SimpleItk library (www.itk.org) and a "iconic and geometric" one, Block-matching, well-suited for the complex task of multi-modal registration.
+
+After the alignment is done, your images are not anymore a sparse set of informations, but a coherent multi-modal multi-time volume that you can explore easily with the ImageJ viewer, wearing different "glasses" (RX, MRI, ...) and changing observation time with one click.
 
 ==Installation of the plugin==
 To install the plugin, you can use the update site to simply add it to your current Fiji distribution
@@ -20,7 +27,7 @@ To install the plugin, you can use the update site to simply add it to your curr
 
 * N-times / M-modalities 3d series registration (main feature)
 
-* Composition of successives Itk transforms
+* Composition of successives Itk transforms in a single transform
 
 * Transformation of a 3d image (or a 4d / 5d hyperimage) with an Itk transform
 
