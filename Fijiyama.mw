@@ -51,15 +51,14 @@ To begin with the training mode, you need :
 * A place to build an empty "Output" directory, that will be used to store the Fijiyama configuration file, the intermediate results (transforms) and the final results (transforms and images). The configuration file (*.fjm) keep a full track of your work. When you save the current registration experiment, the configuration stores successive registration steps and the associated computed files. When restarting later from this point, you can review the whole process, and eventually "undo" one or more actions.
 
 ===Training : two image registration===
-Start the plugin using the blabla button, and check "Two images registration". Follow the instructions to define input data and output directory. Once the registration manager is started, try the buttons, and read the "tooltip" appearing, until you feel comfortable to begin. 
+Start Fijiyama from the "Plugins" menu of ImageJ. Click on "Two images registration", then follow the instructions to set the input images and the output directory. Once the registration manager opens, explore the manager, reading the "tooltips" pop-ups, the contextual help, and clicking the buttons and menus, until you feel comfortable to begin. 
 
-Explore the main elements of the registration manager :
-* Black log window : this log window guides you, telling what has been done, and what can be done right now
+The registration manager window has four parts (top to bottom):
+* Black log window : a guide to remember last operations, and to understand what the plugin expect from you
 
 * Settings menus and buttons : useful to set the parameters of the future action to run
 
-* Action buttons : Run, undo, abort drive the lifecycle of the action you selected using the settings menus
-
+* Action buttons : the first line (<b>Run</b>, <b>Undo</b>, <b>Abort</b>) drives the lifecycle of the selected action. <b>Save</b> can be used to "checkpoint" the experiment. <b>Export</b> is the end of the experiment : it produces the results as aligned image, according with the succession of transforms you compute. <b>Sos</b> can be pushed at any time and opens a help message, constituted of a fixed part, and a contextual part, depending on current configuration of the plugin. 
 * Actions list : this list stores the past (or future) actions on the registration pathway
 
 
