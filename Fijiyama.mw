@@ -46,7 +46,7 @@ See the plugin in action in this video :
 Add the plugin to your current Fiji distribution : start the Fiji updater (Help/Update/Manage update sites...), activate the repositories ImageJ-Itk and ImageScience, then add the Fijiyama repository, hosted on the ImageJ server (Blabla blabla lien)
 
 ===Prepare your data===
-To begin with the training mode (or simply register two images), you can use the provided example dataset : blabla. To begin with your data, collect two images of the same object, seen with different imaging tools, or at different observation times. Set these two images in an identified and specific location of your computer. Prepare also an empty directory, that will be used to store your work : the step you did, intermediate results, and final results. This way, it will be easy to save the current registration experiment, leave the plugin, and restore the experiment state later.
+To begin with the training mode, you need two 3d images of the same object. You can use your own data, or the provided example dataset here (blablalien cerveau blablalien bouture). Set these two images in an identified and specific location of your computer. Prepare also an empty directory, that will be used to store your work, to save the current registration experiment (registration steps and transforms), and restart later.
 
 ===Training : two image registration===
 Start the plugin using the blabla button, and check "Two images registration". Follow the instructions to define input data and output directory. Once the registration manager is started, try the buttons, and read the "tooltip" appearing, until you feel comfortable to begin. 
