@@ -41,7 +41,7 @@ See the plugin in action in this video :
 
 {{#widget:YouTube|id=pouetpouet}}
 
-==Get start with Fijiyama==
+==Getting started with Fijiyama==
 ===Installation===
 To install the plugin, you can use the update site to simply add it to your current Fiji distribution. In the Fiji updater (Help/Update/Manage update sites...), activate the repositories ImageJ-Itk and ImageScience, then add the Fijiyama repository, hosted on the ImageJ server (Blabla blabla lien)
 
@@ -75,8 +75,6 @@ Bla
 
 ===Apply transform to 3d/4d/5d Image===
 Bla
-
-
 
 == The maths behind ==
 Registration of two images is achieved estimating a geometrical transform that can be applied to an image (the "moving one"), to superimpose it with another image (the "reference" one). 
