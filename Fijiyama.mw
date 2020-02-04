@@ -1,0 +1,74 @@
+{{Infobox
+| software               = Fiji
+| name                   = Fijiyama
+| author                 = Romain Fernandez & Cédric Moisy
+| maintainer             = Romain Fernandez
+| filename               = Fijiyama.jar
+| source                 = {{GitHub|repo=repo_a_mettre}}
+| released               = February 11<sup>th</sup>, 2010
+| latest version         = February 11<sup>th</sup>, 2010
+| status                 = stable, active
+| category               = [[:Category:Registration|Registration]]
+}}The Fijiyama plugin is a registration and alignment tool for multimodal / multi-time series of 3d images (IRM / RX / Photo / Microscopy). This tool align and combine series of 3d images. Transforms can be estimated using two algorithms : an "iconic" one, based on SimpleItk library (www.itk.org) and a "iconic and geometric" one, Block-matching, well-suited for the complex task of multi-modal registration.
+
+==Installation of the plugin==
+To install the plugin, you can use the update site to simply add it to your current Fiji distribution
+
+==Plugin features==
+
+* Two images registration (training / settings mode)
+
+* N-times / M-modalities 3d series registration (main feature)
+
+* Composition of successives Itk transforms
+
+* Transformation of a 3d image (or a 4d / 5d hyperimage) with an Itk transform
+
+===Video demonstration===
+This movie show the plugin in action
+
+{{#widget:YouTube|id=pouetpouet}}
+
+===Prepare your data===
+To begin with the training mode (or simply register two images), you can use the provided example dataset : blabla. To begin with your data, collect two images of the same object, seen with different imaging tools, or at different observation times. Set these two images in an identified and specific location of your computer. Prepare also an empty directory, that will be used to store your work : the step you did, intermediate results, and final results. This way, it will be easy to save the current registration experiment, leave the plugin, and restore the experiment state later.
+
+===Two image registration===
+Start the plugin using the blabla button, and check "Two images registration". Follow the instructions to define input data and output directory. Once the registration manager is started, try the buttons, and read the "tooltip" appearing, until you feel comfortable to begin. 
+
+The main elements of the registration manager are :
+* Black log window : this log window guides you, telling what has been done, and what can be done right now
+
+* Settings menus and buttons : useful to set the parameters of the future action to run
+
+* Action buttons : Run, undo, abort drive the lifecycle of the action you selected using the settings menus
+
+* Actions list : this list stores the past (or future) actions on the registration pathway
+
+
+The resulting files ...blabla
+
+===Multimodal time-serie registration===
+
+[[File:img.png]]
+
+
+==Compose transforms==
+Bla
+
+==Apply transform to 3d/4d/5d Image==
+Bla
+
+
+== Citing this work ==
+R. Fernandez and C. Moisy, Fijiyama : a versatile registration tool for 3D multimodal time-lapse monitoring of biological tissues in Fiji (under review)
+
+* {{Publication | Fijiyama}}
+
+== License ==
+This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.  
+----
+[[Category:Plugins]]
+[[Category:Registration]]
+[[Category:Citable]]
