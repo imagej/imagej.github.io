@@ -93,7 +93,7 @@ Here we summarize some of the 3D visualization plugins in ImageJ.
 * Uses the [https://github.com/ClearVolume/scenery Scenery] and [[ClearVolume]] infrastructure
 * Integrates [[ImageJ2]] functionality, including [[ImageJ Ops]]
 * Aims to serve as a modern replacement to [[3D Viewer]]
-| ''in development''
+| [[File:Sciview-gameoflife.gif|500px]]
 |}
 
 == Making Plots in ImageJ ==
