@@ -20,10 +20,6 @@ Once alignment is done, your images are not anymore a sparse set of informations
 
 Alignment computation is based on Block-matching registration, an algorithm from the medical imaging world, developed to adress the complex task of multi-modal registration. Other algorithms are available in the plugin (Itk iconic registration). More about the algorithmic bases of the plugin ? See section "The maths behind", bottom of the page.
 
-===Video demonstration===
-This movie show the plugin in action
-
-{{#widget:YouTube|id=pouetpouet}}
 
 ==Plugin features==
 
@@ -34,6 +30,11 @@ This movie show the plugin in action
 * Composition of successives Itk transforms in a single transform
 
 * Transformation of a 3d image (or a 4d / 5d hyperimage) with an Itk transform
+
+===Video demonstration===
+This movie show the plugin in action
+
+{{#widget:YouTube|id=pouetpouet}}
 
 ==Get start with Fijiyama==
 ===Installation===
