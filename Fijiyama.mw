@@ -11,7 +11,7 @@
 | category               = [[:Category:Registration|Registration]]
 }}Fijiyama (Yet Another Matching and Alignment tool for Fiji) is a tool for registration and alignment of 3d images of the same object, acquired with different imaging tools (MRI, X-rays, Microscopy, Photography, ...) and/or at successive observation timepoints.
 
-==Problem position==
+===Problem position===
 When acquired with various imaging devices, 3d images can be hard to compare : Images from various devices come with variable orientations and positions. The problem is the same when a tissue cannot stay in the device during long-lasting monitoring experiment. Finally, different modalities highlights different structures, and can make images very dissimilar. In this situation, structures and phenomenons cross-analysis in the different images can be untractable.  
 
 To handle these issues, Fijiyama helps you to register, align and combine all these data under a common reference geometry, aligned with the image axis (X,Y,Z), improving further visual analyses and figures. As opposed to existing tools under ImageJ, Fijiyama is well-suited to medical images (MRI / X-rays registration), but work also with more common laboratory images : microscopy, photograph. 
@@ -20,10 +20,12 @@ Once alignment is done, your images are not anymore a sparse set of informations
 
 Alignment computation is based on Block-matching registration, an algorithm from the medical imaging world, developed to adress the complex task of multi-modal registration. Other algorithms are available in the plugin (Itk iconic registration). More about the algorithmic bases of the plugin ? See section "The maths behind", bottom of the page.
 
-==Installation of the plugin==
-To install the plugin, you can use the update site to simply add it to your current Fiji distribution
+=Video demonstration=
+This movie show the plugin in action
 
-==Plugin features==
+{{#widget:YouTube|id=pouetpouet}}
+
+===Plugin features===
 
 * Two images registration (training / settings mode)
 
@@ -33,18 +35,19 @@ To install the plugin, you can use the update site to simply add it to your curr
 
 * Transformation of a 3d image (or a 4d / 5d hyperimage) with an Itk transform
 
-===Video demonstration===
-This movie show the plugin in action
+===Get start with Fijiyama===
+==Installation==
+To install the plugin, you can use the update site to simply add it to your current Fiji distribution. In the Fiji updater (Help/Update/Manage update sites...), activate the repositories ImageJ-Itk and ImageScience, then add the Fijiyama repository, hosted on the ImageJ server (Blabla blabla lien)
 
-{{#widget:YouTube|id=pouetpouet}}
 
-===Prepare your data===
+
+==Prepare your data===
 To begin with the training mode (or simply register two images), you can use the provided example dataset : blabla. To begin with your data, collect two images of the same object, seen with different imaging tools, or at different observation times. Set these two images in an identified and specific location of your computer. Prepare also an empty directory, that will be used to store your work : the step you did, intermediate results, and final results. This way, it will be easy to save the current registration experiment, leave the plugin, and restore the experiment state later.
 
-===Two image registration===
+===Training : two image registration===
 Start the plugin using the blabla button, and check "Two images registration". Follow the instructions to define input data and output directory. Once the registration manager is started, try the buttons, and read the "tooltip" appearing, until you feel comfortable to begin. 
 
-The main elements of the registration manager are :
+Explore the main elements of the registration manager :
 * Black log window : this log window guides you, telling what has been done, and what can be done right now
 
 * Settings menus and buttons : useful to set the parameters of the future action to run
@@ -56,7 +59,7 @@ The main elements of the registration manager are :
 
 The resulting files ...blabla
 
-===Multimodal time-serie registration===
+==Multimodal time-serie registration==
 
 [[File:img.png]]
 
@@ -69,7 +72,7 @@ Bla
 
 
 
-== The maths behind ==
+=== The maths behind ===
 Registration of two images is achieved estimating a geometrical transform that can be applied to an image (the "moving one"), to superimpose it with another image (the "reference" one). 
 
 
