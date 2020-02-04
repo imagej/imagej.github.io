@@ -20,6 +20,11 @@ Once alignment is done, your images are not anymore a sparse set of informations
 
 Alignment computation is based on Block-matching registration, an algorithm from the medical imaging world, developed to adress the complex task of multi-modal registration. Other algorithms are available in the plugin (Itk iconic registration). More about the algorithmic bases of the plugin ? See section "The maths behind", bottom of the page.
 
+Image sympa 1
+
+Image sympa 2
+
+Image sympa 3
 
 ==Plugin features==
 
