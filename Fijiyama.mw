@@ -69,6 +69,8 @@ The registration manager window has four parts (top to bottom):
 
 ===Multimodal time-serie registration===
 
+Once trained with the module two images registration, you can use it to identify the best pipeline of actions to register your images, when switching from a modality to another, or when switching observation time.
+
 ===Compose transforms===
 Chain linear and/or dense transforms is a basis of the plugin for serie processing. This module is a helper module to use this function standalone.
 Guessing you already computed :
