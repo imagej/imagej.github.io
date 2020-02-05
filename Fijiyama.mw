@@ -85,7 +85,7 @@ Bla
 Registration of two images is achieved estimating a geometrical transform that can be applied to an image (the "moving one"), to superimpose it with another image (the "reference" one). 
 
 ===Transforms===
-The transform has to be chosen in a specific transform family. Below are common transform families used in registration, from the simpler (less parameters) to the tougher (more parameters). The ones in bold are integrated in Fijiyama : 
+The transform has to be chosen in a specific transform family. Below are common transform families used in registration, from the simpler (less parameters) to the tougher (more parameters). Fijiyama includes the ones in bold font : 
 * Translations
 * Rotations
 * <b>Rigid transforms</b> (Translation + Rotation)
