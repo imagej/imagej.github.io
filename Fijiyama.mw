@@ -56,7 +56,7 @@ In order to begin with the training mode, you need :
 Start Fijiyama from the "Plugins" menu of ImageJ. Click on "Two images registration", then follow the instructions to set the input images and the output directory. Once the registration manager opens, explore the manager. Read the "tooltips" pop-ups, the contextual help, and explore the menus, until you feel comfortable to begin.
 
 The registration manager window has four parts (top to bottom):
-* Black log window : a guide to remember last operations, and to understand what the plugin expect from you
+* Log window : a guide to remember last operations, and to understand what the plugin expect from you
 
 * Settings menus and buttons : useful to set the parameters of the future action to run
 
