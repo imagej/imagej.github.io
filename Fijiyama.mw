@@ -81,8 +81,6 @@ The Block-Matching algorithm (reference) is an hybrid method : it applies a simi
 == Citing this work ==
 R. Fernandez and C. Moisy, Fijiyama : a versatile registration tool for 3D multimodal time-lapse monitoring of biological tissues in Fiji (under review)
 
-* {{Publication | Fijiyama}}
-
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
 
