@@ -43,7 +43,7 @@ See the plugin in action :
 ==Getting started with Fijiyama==
 ===Installation===
 Add the plugin to your current Fiji distribution : 
-* Manage dependancies : start the Fiji updater (Help/Update/Manage update sites...), and be sure the repositories ImageJ-Itk and ImageScience are activated.
+* Manage dependancies : start the Fiji updater (Help/Update/Manage update sites...), and be sure that ImageJ-Itk and ImageScience repositories are activated.
 * Install the plugin : download the packaged plugin [[Fijiyama.jar]] into the "plugins" directory of your current Fiji. Restart Fiji, and look for Fijiyama in the plugins menu.
 
 ===Prepare your data===
