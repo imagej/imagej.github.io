@@ -52,6 +52,7 @@ In order to begin with the training mode, you need :
 * A place to build an empty "Output" directory, that will be used to store the Fijiyama configuration file, the intermediate results (transforms) and the final results (transforms and images). The configuration file (*.fjm) keep a full track of your work. When you save the current registration experiment, the configuration stores successive registration steps and the associated computed files. When restarting later from this point, you can review the whole process, and eventually "undo" one or more actions.
 
 ===Training : two image registration===
+[[File:Fijiyama_reg_manager.png|400px|thumb|right|alt text]]
 Start Fijiyama from the "Plugins" menu of ImageJ. Click on "Two images registration", then follow the instructions to set the input images and the output directory. Once the registration manager opens, explore the manager. Read the "tooltips" pop-ups, the contextual help, and explore the menus, until you feel comfortable to begin.
 
 The registration manager window has four parts (top to bottom):
@@ -61,8 +62,6 @@ The registration manager window has four parts (top to bottom):
 
 * Action buttons : the first line (<b>Run</b>, <b>Undo</b>, <b>Abort</b>) drives the lifecycle of the selected action. <b>Save</b> can be used to "checkpoint" the experiment. <b>Export</b> is the end of the experiment : it produces the results as aligned image, according with the succession of transforms you compute. <b>Sos</b> can be pushed at any time and opens a help message, constituted of a fixed part, and a contextual part, depending on current configuration of the plugin. 
 * Actions list : this list stores the past (or future) actions on the registration pathway
-
-[[File:Fijiyama_reg_manager.png|400px|thumb|right|alt text]]
 
 ===Multimodal time-serie registration===
 
