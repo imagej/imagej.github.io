@@ -103,7 +103,7 @@ The Block-Matching algorithm (reference) is an hybrid method : it applies a simi
 == Citing this work ==
 R. Fernandez and C. Moisy, Fijiyama : a versatile registration tool for 3D multimodal time-lapse monitoring of biological tissues in Fiji (under review)
 
-== Dependancies==
+== Software dependancies==
 * Itk/SimpleItk : We especially thanks the SimpleItk project, giving Itk functionalities wrapped to the Java world. Thanks to SimpleItk, the ItkTransform class used in Fijiyama is based on Itk, especially the class Transform, extending some of its functionalities. SimpleItk/Itk also provides the Itk iconic registration algorithm.
 * ImageScience : Rigid transform and similarity estimation from correspondance points are based on ImageScience and VIBLib
 
