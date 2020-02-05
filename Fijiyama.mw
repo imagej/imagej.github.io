@@ -69,7 +69,14 @@ The registration manager window has four parts (top to bottom):
 ===Multimodal time-serie registration===
 
 ===Compose transforms===
-Bla
+Chain linear and/or dense transforms is a basis of the plugin for serie processing. This module is a helper module to use this function standalone.
+Guessing you already computed :
+* the transform T12 that align  Image_1.tif with Image_2.tif
+* the transform T23 that align  Image_2.tif with Image_3.tif
+
+You may want to align Image_1 with Image_3 in order to compare the three images altogether. Therefore, applying sucessive transforms produce a blurring effect. In  order to avoid this blur, you may want to combine the two transforms in a single one to apply them in one go.
+
+This module ask the successive transforms to be composed (in the example T12 then T23), and produce the resulting combined transform.
 
 ===Apply transform to 3d/4d/5d Image===
 Bla
