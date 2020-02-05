@@ -5,10 +5,10 @@
 | maintainer             = Romain Fernandez
 | filename               = [[Fijiyama.jar]]
 | source                 = {{GitHub|repo=repo_a_mettre}}
-| released               = February 11<sup>th</sup>, 2010
-| latest version         = February 11<sup>th</sup>, 2010
+| released               = February 11<sup>th</sup>, 2020
+| latest version         = February 11<sup>th</sup>, 2020
 | status                 = stable, active
-| category              [[Category:Registration|Category:Transforms]]
+| category              [[Category:Registration]]
 }}Fijiyama (Yet Another Matching and Alignment tool for Fiji) is a tool for registration and alignment of 3d images of the same object, acquired with different imaging tools (MRI, X-rays, Microscopy, Photography, ...) and/or at successive observation timepoints.
 
 ==Problem position==
