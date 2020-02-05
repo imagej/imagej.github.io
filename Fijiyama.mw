@@ -8,8 +8,9 @@
 | released               = February 11<sup>th</sup>, 2020
 | latest version         = February 11<sup>th</sup>, 2020
 | status                 = stable, active
-| category               = [[:Category:Analysis|Analysis]], [[:Category:Filtering|Filtering]], [[:Category:Segmentation|Segmentation]], [[:Category:Mathematical_morphology|Mathematical morphology]]
-}}Fijiyama (Yet Another Matching and Alignment tool for Fiji) is a tool for registration and alignment of 3d images of the same object, acquired with different imaging tools (MRI, X-rays, Microscopy, Photography, ...) and/or at successive observation timepoints.
+| category               = [[:Category:Analysis|Analysis]], [[:Category:Transforms|Transforms]], [[:Category:Registration|Registration]]
+}}
+Fijiyama (Yet Another Matching and Alignment tool for Fiji) is a tool for registration and alignment of 3d images of the same object, acquired with different imaging tools (MRI, X-rays, Microscopy, Photography, ...) and/or at successive observation timepoints.
 
 ==Problem position==
 3d images acquired with various imaging devices come with variable orientations and positions and can be hard to analyse. Similarly, when monitoring a tissue during long-lasting experiment, the sample cannot stay in the device during long-lasting monitoring experiment, and the object seems to "move" when switching from an observation time to another. In addition, as different modalities highlights different structures, these images can be very dissimilar. In this situation, structures and phenomenons cross-analysis in the different images can be untractable.
