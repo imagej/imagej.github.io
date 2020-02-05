@@ -75,8 +75,20 @@ Bla
 Bla
 
 == The maths behind ==
-Registration of two images is achieved estimating a geometrical transform that can be applied to an image (the "moving one"), to superimpose it with another image (the "reference" one).
+Registration of two images is achieved estimating a geometrical transform that can be applied to an image (the "moving one"), to superimpose it with another image (the "reference" one). 
 
+===Transforms===
+The transform has to be chosen in a specific transform family. Common transform families, from the simpler to the tougher. The ones in bold are integrated in Fijiyama : 
+* Translations
+* Rotations
+* <b>Rigid transforms</b> (Translation + Rotation)
+* <b>Similarities</b> (Rigid + isotropic homothetic factor)
+* Linear
+* Spline
+* <b>Dense vector field</b> (one vector per voxel)
+
+
+===Optimizers===
 The Itk iconic algorithm optimizes iteratively a transform, tracking the superposition improvement using a global similarity measure between the two images.
 The Block-Matching algorithm (reference) is an hybrid method : it applies a similarity measure to compare subparts of images to identify correspondances. The correspondance are then used to compute a global transform.
 
