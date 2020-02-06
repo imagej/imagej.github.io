@@ -66,6 +66,13 @@ The registration manager window has four parts (top to bottom):
 
 * Actions list : this list stores the past (or future) actions on the registration pathway
 
+Take a tour with the two images using these menus to get started. To achieve a quite good registration of these two images, we recommend :
+* Step 1 : Start a manual registration to superimpose roughly the two volumes. Once done, click on "Position ok" (green button)
+* Step 2 : Start an automatic registration with default parameters (Block matching). If you want to monitor the registration during the run, use the fourth menu (Display automatic registration), and select the third option.
+* Step 3 : Start an axis alignment with default parameters. Align the red volume with the white line (image Z axis)
+* Step 4 : Save your work with the "Save" button
+* Step 5 : Export your work, and check for the exported files in the "Exported_files" directory
+
 ===Multimodal time-serie registration===
 
 Once trained with the module two images registration, you can use it to identify the best pipeline of actions to register your images, when switching from a modality to another, or when switching observation time.
