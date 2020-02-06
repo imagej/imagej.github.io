@@ -14,12 +14,12 @@
 Fijiyama (Yet Another Matching and Alignment tool for Fiji) is a tool for registration and alignment of 3d images of the same object, acquired with different imaging tools (MRI, X-rays, Microscopy, Photography, ...) and/or at successive observation timepoints.
 
 ==Problem position==
-3d images acquired with various imaging devices come with variable orientations and positions and can be hard to analyse. Similarly, when monitoring a tissue during long-lasting experiment, the sample cannot stay in the device during long-lasting monitoring experiment, and the object seems to "move" when switching from an observation time to another. In addition, as different modalities highlights different structures, these images can be very dissimilar. In this situation, structures and phenomenons cross-analysis in the different images can be untractable.
+3d images acquired with various imaging devices come with variable orientations and positions and can be hard to analyse. Similarly, when monitoring a tissue during long-lasting experiment, the sample cannot stay in the device during long-lasting monitoring experiment, and the object seems to "move" when switching from an observation time to another. In addition, as different modalities highlights different structures, these images can be very dissimilar. In this situation, structures and phenomenons cross-analysis in the different 3d images can be intractable.
 
-Fijiyama adress these issues helping you to register, align and combine 3d images in a common reference geometry. You can choose this geometry to align object axis with the image axis (X,Y,Z), to ease further visual analyses and figures construction. Once alignment is done, your images are not anymore a sparse set of informations, but a coherent multi-modal multi-time volume that you can explore easily with the ImageJ viewer, wearing different "glasses" (RX, MRI, ...) and changing observation time with one click.
+Fijiyama adress these issues helping you to register, align and combine 3d images in a common reference geometry. You can choose this geometry to align object axis with the image (X,Y,Z), to ease further visual analyses and figures construction. Once alignment is done, your 3d images are not anymore a sparse set of informations, but a coherent multi-modal multi-time volume that you can explore easily with the ImageJ viewer, wearing different "glasses" (RX, MRI, ...) and changing observation time with one click.
 
 ==Contribution over existing tools==
-As opposed to existing tools under ImageJ, Fijiyama is not dedicated to a specific scale and imaging device. The registration algorithms are generic purpose, which makes the versatile amongst image modalities, including common laboratory images : microscopy, photograph, and medical imaging tools (MRI / X-rays registration). 
+As opposed to existing tools under ImageJ, Fijiyama is not dedicated to a specific scale and imaging device. The registration algorithms are generic purpose, which makes them versatile amongst observation modalities, including common laboratory modalities : microscopy, photograph, and medical imaging tools (MRI / X-rays registration). 
 
 To adress the complex task of multi-modal registration, computation is based on Block-matching, an algorithm from the medical field. Other common algorithms are available in the plugin (Itk iconic registration). More about the algorithmic bases of the plugin ? See section "The maths behind", bottom of the page.
 
@@ -31,7 +31,7 @@ Image sympa 3
 
 ==Plugin features==
 
-* Two images registration (training / settings mode)
+* Two 3d images registration (training / settings mode)
 
 * N-times / M-modalities 3d series registration (main feature)
 
@@ -51,45 +51,52 @@ Add the plugin and its dependancies to your current Fiji distribution using the 
 ===Prepare your data===
 In order to begin with the training mode, you need :
 * Two 3d images of the same object. Use your own data, or the provided example dataset here : [[File : Test_dataset_01_vine_crops.zip]]
-* A place to build an empty "Output" directory, that will be used to store the Fijiyama configuration file, the intermediate results (transforms) and the final results (transforms and images). The configuration file (*.fjm) keep a full track of your work. When you save the current registration experiment, the configuration stores successive registration steps and the associated computed files. When restarting later from this point, you can review the whole process, and eventually "undo" one or more actions.
+* A place to build an empty "Output" directory, that will be used to store the Fijiyama configuration file, the intermediate results (transforms) and the final results (transforms and 3d images). The configuration file (*.fjm) keep a full track of your work. When you save the current registration experiment, the configuration stores successive registration steps and the associated computed files. When restarting later from this point, you can review the whole process, and eventually "undo" one or more actions.
 
-===Training : two images registration===
+===Training : two 3d images registration===
 [[File:Fijiyama_reg_manager.png|350px|thumb|right]]
-Start Fijiyama from the "Plugins" menu of ImageJ. Click on "Two images registration", then follow the instructions to set the input images and the output directory. Once the registration manager opens, explore the manager. Read the "tooltips" pop-ups, the contextual help, and explore the menus, until you feel comfortable to begin.
+Start Fijiyama from the "Plugins" menu of ImageJ. Click on "Two 3d images registration", then follow the instructions to set the input 3d images and the output directory. Once the registration manager opens, explore the manager. Read the "tooltips" pop-ups, the contextual help, and explore the menus, until you feel comfortable to begin.
 
 The registration manager window has four parts (top to bottom):
 * Log window : a guide to remember last operations, and to understand what the plugin expect from you
 
 * Settings menus and buttons : useful to set the parameters of the future action to run
 
-* Action buttons : the first line (<b>Start</b>, <b>Abort</b>, and <b>Undo</b>) drives the lifecycle of the current action, defined by the menus. <b>Save</b> can be used to "checkpoint" the experiment. <b>Export</b> compute the resulting aligned images, according with the succession of transforms computed. <b>Sos</b> can be used at any time. It opens a contextual help message.
+* Action buttons : the first line (<b>Start</b>, <b>Abort</b>, and <b>Undo</b>) drives the lifecycle of the current action, defined by the menus. <b>Save</b> can be used to "checkpoint" the experiment. <b>Export</b> compute the resulting aligned 3d images, according with the succession of transforms computed. <b>Sos</b> can be used at any time. It opens a contextual help message.
 
 * Actions list : this list stores the past (or future) actions on the registration pathway
 
-Take a tour with the two images using these menus to get started. To achieve a quite good registration of these two images, we recommend :
-* Step 1 : Start a manual registration to superimpose roughly the two volumes. Once done, click on "Position ok" (green button)
-* Step 2 : Start an automatic registration with default parameters (Block matching). If you want to monitor the registration during the run, use the fourth menu (Display automatic registration), and select the third option.
-* Step 3 : Start an axis alignment with default parameters. Align the red volume with the white line (image Z axis)
+Take a tour with the "two images registration" module using these menus to get started. To achieve a quite good registration of these two 3d images, we recommend :
+* Step 1 : Select "manual registration" in the first menu and run it, to superimpose roughly the two volumes (centers roughly aligned, and angle < 15 degrees). Once done, click on "Position ok" (green button)
+* Step 2 : Select an automatic registration with default parameters (Block matching). If you want to monitor the registration during the run, use the fourth menu (Display automatic registration), and select the third option. Before starting this action, notice the estimated time just under the menus, to have a rough idea of how long Fijiyama will stay busy.
+* Step 3 : Select Align both images with XYZ with default parameters. Turn the scene to estimate the overall position of the object and what can be done to make its presentation more convenient for analyses and figures. If you use the example dataset, align the red cylinder with the white lines (Z axis), and align the wounding point (a hole in the surface) with the axis X or Y.
 * Step 4 : Save your work with the "Save" button
-* Step 5 : Export your work, and check for the exported files in the "Exported_files" directory
+* Step 5 : Export your work, and check for the exported files in <Your selected output dir>/Exported_files directory
 
 ===Multimodal time-serie registration===
 
-Once trained with the module two images registration, you can use it to identify the best pipeline of actions to register your images, when switching from a modality to another, or when switching observation time.
+Once trained with the "two images" module, you can start a serie registration following these steps :
+* Prepare your data or download the example set number 2 (link blabla).
+Data names should respect a generic form, for example : img_t{Time}_mod{ModalityName}.tif , where {Time} represent the successive values for each time point, and {ModalityName} represent the name of each modality.
+With the example set, this work is already done, since the image names are : img_t1_modRX.tif , img_t1_modMRI.tif , img_t2_modMRI.tif , img_t3_modRX.tif , img_t3_modMRI.tif
+* Use the "two images" training module to identify the best pipeline of actions to register your images, from a modality to another, or from an observation time to another. 
+* Start the module "Serie registration", and follow the instruction. The manager will ask you the pipeline for inter-time registration, then for inter-modalities registration. Once done, it will compose theses steps into a full pipeline for processing all the data. You can then keep clicking "start this action", and execute all the steps.
+* Once all actions needing human intervention are done, you can use the "Chain run" button to ask Fijiyama to execute successively all the automatic steps without disturbing you
+* After the final Alignment (manual operation), and results exportation, the serie is finished. You can collect the results in <your output path>/Exported_data, and run your personal analysis on these data.
 
 ===Compose transforms===
 Chain linear and/or dense transforms is a basis of the plugin for serie processing. This module is a helper module to use this function standalone.
 Guessing you already computed :
-* the transform T12 that align  Image_1.tif with Image_2.tif
-* the transform T23 that align  Image_2.tif with Image_3.tif
+* the transform T12 that align  Image1.tif with Image2.tif
+* the transform T23 that align  Image2.tif with Image3.tif
 
-You may want to align Image_1 with Image_3 in order to compare the three images altogether. Therefore, applying sucessive transforms produce a blurring effect. In  order to avoid this blur, you may want to combine the two transforms in a single one to apply them in one go.
+You may want to align Image1 with Image3 in order to compare the three 3d images altogether. Therefore, applying sucessive transforms produce a blurring effect. In  order to avoid this blur, you may want to combine the two transforms in a single one to apply them in one go.
 
 This module ask the successive transforms to be composed (in the example T12 then T23), and produce the resulting combined transform.
 
 ===Apply transform to 3d/4d/5d Image===
 
-This module is a helper function to apply an Itk Transform to an image (3d) or an hyperimage(4d / 5d). In case of hyperimage, the transform is interpreted as a 
+This module is a helper function to apply an Itk Transform to a 3d image or to a 4d/5d hyperimage. In case of hyperimage, the transform is interpreted as a 
 3d transform, and is applied to each channel / frame of the hyperimage before they are gathered back in the shape of an hyperimage.
 
 == The maths behind ==
@@ -106,8 +113,8 @@ The transform has to be chosen in a specific transform family. Below are common 
 * <b>Dense vector field</b> (one vector per voxel)
 
 ===Optimizers===
-The Itk iconic algorithm optimizes iteratively a transform, tracking the superposition improvement using a global similarity measure between the two images.
-The Block-Matching algorithm (reference) is an hybrid method : it applies a similarity measure to compare subparts of images to identify correspondances. The correspondance are then used to compute a global transform.
+The Itk iconic algorithm optimizes iteratively a transform, tracking the superposition improvement using a global similarity measure between the two 3d images.
+The Block-Matching algorithm (reference) is an hybrid method : it applies a similarity measure to compare subparts of the 3d images to identify correspondances. The correspondance are then used to compute a global transform.
 
 == Citing this work ==
 R. Fernandez and C. Moisy, Fijiyama : a versatile registration tool for 3D multimodal time-lapse monitoring of biological tissues in Fiji (under review)
