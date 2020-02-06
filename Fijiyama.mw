@@ -53,7 +53,7 @@ In order to begin with the training mode, you need :
 * Two 3d images of the same object. Use your own data, or the provided example dataset here : [[File : Test_dataset_01_vine_crops.zip]]
 * A place to build an empty "Output" directory, that will be used to store the Fijiyama configuration file, the intermediate results (transforms) and the final results (transforms and images). The configuration file (*.fjm) keep a full track of your work. When you save the current registration experiment, the configuration stores successive registration steps and the associated computed files. When restarting later from this point, you can review the whole process, and eventually "undo" one or more actions.
 
-===Training : two image registration===
+===Training : two images registration===
 [[File:Fijiyama_reg_manager.png|350px|thumb|right]]
 Start Fijiyama from the "Plugins" menu of ImageJ. Click on "Two images registration", then follow the instructions to set the input images and the output directory. Once the registration manager opens, explore the manager. Read the "tooltips" pop-ups, the contextual help, and explore the menus, until you feel comfortable to begin.
 
