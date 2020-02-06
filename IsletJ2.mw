@@ -5,7 +5,7 @@ IsletJ2 is a tool implemented as an ImageJ plugin that segments and reports prop
 
 Perhaps the most noticable change is the new graphical user interface (GUI). We made the GUI simpler and hopefully, more comfortable to use.
 
-Despite being invisible to the eyes of users, massive changes have been done in the plugin core. The whole plugin has been rewritten from the ground up, resulting in more modular and extensible code and lesser demands on computing resources. The plugin, however, still employs the same approach as before.
+Despite being invisible to users, massive changes have been done in the plugin core. The whole plugin has been rewritten from the ground up, resulting in more modular and extensible code and lesser demands on computing resources. The plugin, however, still employs the same approach as before.
 
 == Installation ==
 
@@ -52,7 +52,7 @@ The analysis assumes that there is a trained model somewhere in the file system.
 
 Contrary to the training, the analysis form is straightforward. It consists of five inputs that specify:
 
-# a path to a directory containing images to analyze,
+# a path to a directory containing images to analyze (or choose to analyze the currently active image),
 # the size of a pixel in micrometers,
 # the minimal diameter of islets to consider,
 # a path to the trained model,
