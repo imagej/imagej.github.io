@@ -46,7 +46,7 @@ See the plugin in action with a "toy example" :
 
 ==Getting started with Fijiyama==
 ===Installation===
-Add the plugin and its dependancies to your current Fiji distribution using the Fiji update manager (Help > Update > Manage update sites...). First, activate ImageJ-Itk and IJPB-Plugins repositories : look for them in the list, and click the associated checkbox. Then, add the Fijiyama repository to the list : click "Add update site" to add an update entry. Fill the fields : name : "Fijiyama", site : https://sites.imagej.net/Fijiyama. Then click the associated checkbox. Restart Fiji, and check the installation : you should see an entry "Fijiyama" in the menu Plugins > Registration.
+Add the plugin and its dependancies to your current Fiji distribution using the Fiji update manager (Help > Update > Manage update sites...). First, activate ImageJ-Itk and IJPB-Plugins repositories : look for them in the list, and check the associated checkboxes. Then, add the Fijiyama repository to the list : click "Add update site" to add an update entry. Fill the fields : name : "Fijiyama", site : https://sites.imagej.net/Fijiyama. Then check the associated checkbox. Restart Fiji, and check the installation : you should see an entry "Fijiyama" in the menu Plugins > Registration.
 
 ===Prepare your data===
 In order to begin with the training mode, you need :
