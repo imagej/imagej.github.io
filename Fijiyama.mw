@@ -127,6 +127,16 @@ Plugin usability have also been tested on a medical case (RX vs MRI) to evaluate
 * Human abdomen, CT-scan versus MRI
 {{#widget:YouTube|id=ETCnWIqoDI0|width=480}}
 
+
+* Sorgho, MRI versus microscopy (nanozoomer)
+
+
+* Vine trunk, Photographic slices versus Mri versus CT-scan
+
+* Vine graft, CT-scan versus Mri
+
+* Vine cutting, MRI and CT-scan serie
+
 == Software dependancies==
 * Itk/SimpleItk : We especially thanks the SimpleItk project, giving Itk functionalities wrapped to the Java world. Thanks to SimpleItk, the ItkTransform class used in Fijiyama is based on Itk, especially the class Transform, extending some of its functionalities. SimpleItk/Itk also provides the Itk iconic registration algorithm.
 * ImageScience : Rigid transform and similarity estimation from correspondance points are based on ImageScience and VIBLib
