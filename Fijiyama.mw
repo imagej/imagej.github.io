@@ -90,7 +90,7 @@ Guessing you already computed :
 * the transform T12 that align  Image1.tif with Image2.tif
 * the transform T23 that align  Image2.tif with Image3.tif
 
-You may want to align Image1 with Image3 in order to compare the three 3d images altogether. Therefore, applying sucessive transforms produce a blurring effect. In  order to avoid this blur, you may want to combine the two transforms in a single one to apply them in one go.
+You may want to align Image1 with Image3 in order to compare the three 3d images altogether. Therefore, applying sucessive transforms produce a blurring effect. In  order to avoid this blur, you may want to combine the two transforms into a single one to apply them in one go.
 
 This module ask the successive transforms to be composed (in the example T12 then T23), and produce the resulting combined transform.
 
