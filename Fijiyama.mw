@@ -154,10 +154,9 @@ The plugin provides two optimizers, associated with different registration strat
 
 
 
-== Software dependancies==
-* Itk/SimpleItk : We especially thanks the SimpleItk project, giving Itk functionalities wrapped to the Java world. Thanks to SimpleItk, the ItkTransform class used in Fijiyama is based on Itk, especially the class Transform, extending some of its functionalities. SimpleItk/Itk also provides the Itk iconic registration algorithm.
+== Software dependancies and colleagues acknowledgements==
+* Itk/SimpleItk : We especially thanks the SimpleItk and ImageJ-Itk projects to bring Itk functionalities wrapped to the Java world of ImageJ. The class used in Fijiyama to define 3d transformations (ItkTransform) is based on the SimpleItk class "Transform", and extends some of its functionalities. SimpleItk/Itk also provides the Itk iconic registration algorithm.
 * ImageScience : Rigid transform and similarity estimation from correspondance points are based on ImageScience and VIBLib
-
 
 == License ==
 This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
