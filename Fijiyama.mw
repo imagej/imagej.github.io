@@ -35,9 +35,9 @@ Image sympa 3
 
 * N-times / M-modalities 3d series registration (main feature)
 
-* Composition of successives Itk transformations into a single transform
+* Composition of successives Itk transformations into a single transformation
 
-* Transformation of a 3d image (or a 4d / 5d hyperimage) with an Itk transform
+* Transformation of a 3d image (or a 4d / 5d hyperimage) with an Itk transformation
 
 ===Video demonstration===
 See the plugin in action with a "toy example" :
