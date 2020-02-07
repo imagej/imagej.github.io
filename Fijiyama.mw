@@ -147,7 +147,7 @@ Common categories of registration optimizers, associated with different registra
 * Fijiyama does not have a "geometric" registration algorithm yet. Principle of such algorithms is to extract features from each images, and to establish correspondances between extracted features. Such approach can lead to faster algorithms, but less robust, as it is difficult to define a feature extraction method that is modality-independant, object-independant, and scale-independant. But in the case of monomodal registration, such algorithms can provide great success (reference : BigStitcher).
 
 == Citing this work ==
-* Fijiyama : R. Fernandez and C. Moisy, Fijiyama : a versatile registration tool for 3D multimodal time-lapse monitoring of biological tissues in Fiji (under review)
+* R. Fernandez and C. Moisy, Fijiyama : a versatile registration tool for 3D multimodal time-lapse monitoring of biological tissues in Fiji (under review)
 
 == References ==
 * Fijiyama : R. Fernandez and C. Moisy, Fijiyama : a versatile registration tool for 3D multimodal time-lapse monitoring of biological tissues in Fiji (under review)
