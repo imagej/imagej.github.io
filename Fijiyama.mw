@@ -19,7 +19,7 @@ Fijiyama (Yet Another Matching and Alignment tool for Fiji) is a tool for regist
 Fijiyama adress these issues helping you to register, align and combine 3d images or series in a common reference geometry. You can choose this geometry to align object axis with the image (X,Y,Z), to ease further visual analyses and figures construction. Once alignment is done, your 3d images are not anymore a sparse set of informations, but a coherent multi-modal multi-time volume that you can explore easily with the ImageJ viewer, wearing different "glasses" (RX, MRI, ...) and changing observation time with one click.
 
 ==Contribution over existing tools==
-As opposed to existing tools under ImageJ, Fijiyama is not dedicated to a specific scale or imaging device. It has been tested with many observation modalities, including common laboratory modalities : microscopy, photograph, and medical imaging tools (MRI / X-rays registration), see section "Versatility tests" below. 
+As opposed to existing tools under ImageJ, Fijiyama is not dedicated to a specific scale, a specific biological tissue, or a specific imaging device. It has been tested with many observation modalities, including common laboratory modalities : microscopy, photograph, and medical imaging tools (MRI / X-rays registration), see section "Versatility tests" below. 
 
 To address the complex task of multi-modal registration, computation is based on Block-matching, a generic purpose registration algorithm, developed in the field of medical imaging. Other common algorithms are available in the plugin (Itk iconic registration). More about the algorithmic bases of the plugin ? See section "The maths behind" below.
 
