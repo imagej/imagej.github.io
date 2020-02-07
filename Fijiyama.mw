@@ -119,6 +119,17 @@ Plugin usability have also been tested on a medical case (RX vs MRI) to evaluate
 
 * Vine cutting, MRI and CT-scan serie
 
+== Common issues ==
+* Abort button : this button is hazardous with the threaded automatic registration. Depending on the current state of the automatic registration, this function can crash the plugin. We suggest you to save frequently your job to avoid this.
+* Translation with ImageJ 3D viewer under windows : Translation mode using SHIFT+drag can be hazardous. To address this, we associated surnumerous controls to the numerical keypad. Using 4 and 6 you can translate the selected volume along the X axis. Using 8 and 2 along the Y axis. Using 5 and 0, along the Z axis. Rotations can be handled with 7 and 9 (X axis), 1 and 3 (Y axis), and characters 'p' and 'o' for the Z axis. 
+* View bugs : depending on the sequence of translations / rotations applied to the scene, the view can "freeze", like if the objects are lost. Just turn the objects an 90 degrees angle, and the view come back
+* Others : please tell us. Try to "redo" your bug from start, identify the context of the error, then send a mail to corresponding author, including :
+- a compressed copy of your output dir
+- the copy of the content of the ImageJ log window (probably a hundred lines of sentences in red telling where Exceptions were encountered)
+- Any useful commentary
+- if possible, the content of the black log window
+- if possible, a link to the data used
+
 
 == The maths behind ==
 Registration of two images is achieved estimating a geometrical transform that can be applied to an image (the "moving one"), to superimpose it with another image (the "reference" one). 
