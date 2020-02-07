@@ -40,7 +40,7 @@ Image sympa 3
 * Transformation of a 3d image (or a 4d / 5d hyperimage) with an Itk transform
 
 ===Video demonstration===
-See the plugin in action :
+See the plugin in action with a "toy example" :
 
 {{#widget:YouTube|id=wPEU5TIlsTU|width=480}}
 
