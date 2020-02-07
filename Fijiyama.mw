@@ -55,7 +55,7 @@ In order to begin with the training mode, you need :
 
 Before starting registration, verify that your images are well calibrated :
 * Intensities : When opening your image with ImageJ, is there a good contrast between your interest object and the background ? If needed, use Image > Adjust > Brightness  / Contrast, and set the min and max values, then close the Brightness / Contrast window.
-* Voxel sizes : when opening your image with ImageJ, check the Properties : Image > Properties... and adjust the 4 central values. Unit of length should have another value than "pixel" ("mm", "cm", "um"). Check coherence of pixel width / height / depth. If needed, open the "info" menu (Image > Show info...), to get dicom parameters, or any other parameters. To verify if the voxel sizes are coherent, you can also open the volume in 3d using the 3d viewer (plugins > 3d viewer)
+* Voxel sizes : when opening your image with ImageJ, check the Properties : Image > Properties... and adjust the 4 central values. Unit of length should have another value than "pixel" (it can be "mm", "cm", "um" for example). Check coherence of pixel width / height / depth. If needed, open the "info" menu (Image > Show info...), to get dicom parameters, or any other parameters. To verify if the voxel sizes are coherent, you can also open the volume in 3d using the 3d viewer (plugins > 3d viewer)
 
 Once done, save your image.
 
