@@ -53,6 +53,12 @@ In order to begin with the training mode, you need :
 * Two 3d images of the same object. Use your own data, or the provided example dataset here : [[File : Test_dataset_01_vine_crops.zip]]
 * A place to build an empty "Output" directory, that will be used to store the Fijiyama configuration file, the intermediate results (transformations) and the final results (transformations and 3d images). The configuration file (*.fjm) keep a full track of your work. When you save the current registration experiment, the configuration stores successive registration steps and the associated computed files. When restarting later from this point, you can review the whole process, and eventually "undo" one or more actions.
 
+Caution : before starting registration, verify that your images are well calibrated :
+* Intensities : When opening your image with ImageJ, is there a good contrast between your interest object and the background ? If needed, use Image > Adjust > Brightness  / Contrast, and set the min and max values, then close the Brightness / Contrast window.
+* Voxel sizes : when opening your image with ImageJ, check the Properties : Image > Properties... and adjust the 4 central values. Unit of length should have another value than "pixel" ("mm", "cm", "um"). Check coherence of pixel width / height / depth. If needed, open the "info" menu (Image > Show info...), to get dicom parameters, or any other parameters. To verify if the voxel sizes are coherent, you can also open the volume in 3d using the 3d viewer (plugins > 3d viewer)
+
+Once done, save your image.
+
 ===Training : two 3d images registration===
 [[File:Fijiyama_reg_manager.png|350px|thumb|right]]
 Start Fijiyama from the "Plugins" menu of ImageJ. Click on "Two 3d images registration", then follow the instructions to set the input 3d images and the output directory. Once the registration manager opens, explore the manager. Read the "tooltips" pop-ups, the contextual help, and explore the menus, until you feel comfortable to begin.
