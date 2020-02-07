@@ -121,12 +121,11 @@ R. Fernandez and C. Moisy, Fijiyama : a versatile registration tool for 3D multi
 
 
 == Versatility tests ==
-This plugin have been tested on several data, including vegetal tissues, from micro to macro imaging, from microscopy to magnetic resonance imaging. We even tested it on a medical case (RX vs MRI) to evaluate plugin usability for "uncommon" data (see movie below). These datesets are available as example datasets if you want to check it out. Whereas definitely, the best data possible for testing Fijiyama for your work is your own images. Some common issues and solutions are are listed below. Please let us know if something went wrong with your data : send a mail to the corresponding author.
+This plugin have been tested on several data, including vegetal tissues, from micro to macro imaging, from microscopy to magnetic resonance imaging. For the robustness evaluation of the image-to-image registration algorithms, please refer to the corresponding citations (see references below).
+Plugin usability have also been tested on a medical case (RX vs MRI) to evaluate plugin usability for "uncommon" data (see movie below). These datesets are available as example datasets if you want to check it out. Whereas definitely, the best data possible for testing Fijiyama for your work is your own images. Some common issues and solutions are are listed below. Please let us know if something went wrong with your data : send a mail to the corresponding author.
 
 * Human abdomen, CT-scan versus MRI
 {{#widget:YouTube|id=ETCnWIqoDI0|width=480}}
-
-
 
 == Software dependancies==
 * Itk/SimpleItk : We especially thanks the SimpleItk project, giving Itk functionalities wrapped to the Java world. Thanks to SimpleItk, the ItkTransform class used in Fijiyama is based on Itk, especially the class Transform, extending some of its functionalities. SimpleItk/Itk also provides the Itk iconic registration algorithm.
