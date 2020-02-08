@@ -7,7 +7,6 @@ Also, the uncleaned slides can lead to this problem.
 
 This plugin '''''Adaptive Median Filter''''' (AMF) will handle this type of problems easily without any blurring or re-doing experiments.
 
-
 == Installation ==
 
 1. Add the [https://github.com/WeisongZhao/AdaptiveMedian.imagej/releases/download/v0.1.0/Adaptive_Median_Filter-0.1.0.jar Adaptive_Median_Filter-0.1.0.jar] to your imageJ plugin folder as usual and it will show up in 
