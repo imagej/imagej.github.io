@@ -44,6 +44,8 @@ See the plugin in action with a "toy example" :
 
 {{#widget:YouTube|id=QG_i50XJRfc|width=480}}
 
+More Fijiyama screencasts with various tissues / imaging devices (human abdomen, sorgho plant, vine graft, vine trunk) can be found below in the section "Versatility tests"
+
 ==Getting started with Fijiyama==
 ===Installation===
 Add the plugin and its dependancies to your current Fiji distribution using the Fiji update manager (Help > Update > Manage update sites...). First, activate ImageJ-Itk and IJPB-Plugins repositories : look for them in the list, and check the associated checkboxes. Then, add the Fijiyama repository to the list : click "Add update site" to add an update entry. Fill the fields : name : "Fijiyama", site : https://sites.imagej.net/Fijiyama. Then check the associated checkbox. Restart Fiji, and check the installation : you should see an entry "Fijiyama" in the menu Plugins > Registration.
