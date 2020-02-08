@@ -2,7 +2,7 @@
 | software               = ImageJ/Fiji
 | name                   = Adaptive Median Filter
 | maintainer             = [https://weisongzhao.github.io/ Weisong Zhao]
-| author                 = Weisong Zhao
+| author                 ={{Person|Weisong}}
 | filename               = Adaptive_Median_Filter-0.1.0.jar [https://github.com/WeisongZhao/AdaptiveMedian.imagej/releases//latest [1]]
 | source                 = GitHub [https://github.com/jumpfunky/ij-nl-means [2]]
 | latest version         = v0.1.0 (18 Feb 2019)
