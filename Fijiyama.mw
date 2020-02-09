@@ -110,22 +110,29 @@ This module is a helper function to apply an Itk Transform to a 3d image or to a
 3d transform, and is applied to each channel / frame of the hyperimage before they are gathered back in the shape of an hyperimage.
 
 == Versatility tests ==
-Usability : this plugin have been tested on several data, including vegetal tissues, from micro to macro imaging, from microscopy to magnetic resonance imaging. The lugin have also been tested on a medical case (RX vs MRI) to evaluate plugin usability for "uncommon" data (see movie below). The corresponding data are available as example datasets
+* Usability : this plugin have been tested on several data, including vegetal tissues, from micro to macro imaging, from microscopy to magnetic resonance imaging. The lugin have also been tested on a medical case (RX vs MRI) to evaluate plugin usability for "uncommon" data (see movie below). The corresponding data are available as example datasets
 
-* Human abdomen, CT-scan versus MRI
+Human abdomen, CT-scan versus MRI
 {{#widget:YouTube|id=ETCnWIqoDI0|width=480}}
 
-Registration quality : the registration algorithms used have been studied in the literature, including accuracy tests (see the corresponding papers in the section "references" below). Therefore, as we applying these algorithms to new fields, in a new implementation, we conducted a study to quantify results quality with each of our example data. 
+
+* Registration mismatch : the registration algorithms used have been studied in the literature, including accuracy tests (see the corresponding papers in the section "references" below). Therefore, as we applying these algorithms to new fields, in a new implementation, we conducted a study to quantify results quality with each of our example data. 
 A common metric in registration is the "mean resulting mismatch", measured as the average distance between corresponding points once registration is finished. This measuring process is integrated in the plugin as an extra functionality, see video below. This process, applied to the first demo case shows that the mean resulting mismatch is lower than one pixel, which can be considered as a "good" result.
 
-* Bad initialization with easy data
-{{{#widget:YouTube|id=xTOQIHieH0o|width=480}}
+Quantifying mismatch 
+{{#widget:YouTube|id=wPEU5TIlsTU|width=480}}
+
+
 
 
 Robustness :
 
 Registration robustness is the fact that the algorithm converge to the right solution, even with a bad initialization. Robustness in registration is sensitive to data type. With the toy case, Fijiyama can be considered "robust", see video below. Therefore, with more complex data (symetric objects, inter-modality, large deformations), initialization should be more accurate to get good final results (see RX/MRI below)
-{{#widget:YouTube|id=wPEU5TIlsTU|width=480}}
+
+Bad initialization with easy data
+{{{#widget:YouTube|id=xTOQIHieH0o|width=480}}
+
+
 
 Whereas definitely, the best data possible for testing Fijiyama for your work is your own images. Some common issues and solutions are are listed below. Please let us know if something went wrong with your data : send a mail to the corresponding author.
 
