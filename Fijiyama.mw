@@ -104,7 +104,7 @@ You may want to align Image1 with Image3 in order to compare the three 3d images
 
 This module ask the successive transformations to be composed (in the example T12 then T23), and produce the resulting combined transform.
 
-===Apply a transformation to 3d/4d/5d Image===
+===Apply a transformation to a 3d/4d/5d Image===
 
 This module is a helper function to apply an Itk Transform to a 3d image or to a 4d/5d hyperimage. In case of hyperimage, the transform is interpreted as a 
 3d transform, and is applied to each channel / frame of the hyperimage before they are gathered back in the shape of an hyperimage.
