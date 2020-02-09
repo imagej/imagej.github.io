@@ -112,7 +112,7 @@ This module is a helper function to apply an Itk Transform to a 3d image or to a
 == Versatility tests ==
 * Usability : this plugin have been tested on several data, including vegetal tissues, from micro to macro imaging, from microscopy to magnetic resonance imaging. The lugin have also been tested on a medical case (RX vs MRI) to evaluate plugin usability for "uncommon" data (see movie below). The corresponding data are available as example datasets
 
-*Human abdomen, CT-scan versus MRI
+Human abdomen, CT-scan versus MRI
 {{#widget:YouTube|id=ETCnWIqoDI0|width=480}}
 
 
