@@ -123,6 +123,8 @@ A common metric in registration is the "mean resulting mismatch", measured as th
 
 Robustness :
 
+Registration robustness is the fact that the algorithm converge to the right solution, even with a bad initialization. Robustness in registration is sensitive to data type. With the toy case, Fijiyama can be considered "robust", see video below. Therefore, with more complex data (symetric objects, inter-modality, large deformations), initialization should be more accurate to get good final results (see RX/MRI below)
+{{#widget:YouTube|id=wPEU5TIlsTU|width=480}}
 
 Whereas definitely, the best data possible for testing Fijiyama for your work is your own images. Some common issues and solutions are are listed below. Please let us know if something went wrong with your data : send a mail to the corresponding author.
 
