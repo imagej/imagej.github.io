@@ -118,7 +118,8 @@ Usability : this plugin have been tested on several data, including vegetal tiss
 Registration quality : the registration algorithms used have been studied in the literature, including accuracy tests (see the corresponding papers in the section "references" below). Therefore, as we applying these algorithms to new fields, in a new implementation, we conducted a study to quantify results quality with each of our example data. 
 A common metric in registration is the "mean resulting mismatch", measured as the average distance between corresponding points once registration is finished. This measuring process is integrated in the plugin as an extra functionality, see video below. This process, applied to the first demo case shows that the mean resulting mismatch is lower than one pixel, which can be considered as a "good" result.
 
-{{#widget:YouTube|id=xTOQIHieH0o|width=480}}
+* Bad initialization with easy data
+{{{#widget:YouTube|id=xTOQIHieH0o|width=480}}
 
 
 Robustness :
