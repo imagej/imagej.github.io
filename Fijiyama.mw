@@ -110,7 +110,7 @@ This module is a helper function to apply an Itk Transform to a 3d image or to a
 3d transform, and is applied to each channel / frame of the hyperimage before they are gathered back in the shape of an hyperimage.
 
 == Versatility tests ==
-Usability : this plugin have been tested on several data, including vegetal tissues, from micro to macro imaging, from microscopy to magnetic resonance imaging. Plugin usability have also been tested on a medical case (RX vs MRI) to evaluate plugin usability for "uncommon" data (see movie below). These datesets are available as example datasets if you want to check it out. 
+Usability : this plugin have been tested on several data, including vegetal tissues, from micro to macro imaging, from microscopy to magnetic resonance imaging. The lugin have also been tested on a medical case (RX vs MRI) to evaluate plugin usability for "uncommon" data (see movie below). These datesets are available as example datasets if you want to check it out. 
 
 * Human abdomen, CT-scan versus MRI
 {{#widget:YouTube|id=ETCnWIqoDI0|width=480}}
