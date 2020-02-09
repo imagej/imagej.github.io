@@ -122,7 +122,8 @@ A common metric in registration is the "mean resulting mismatch", measured as th
 
 -Video : Quantifying mismatch 
 
-{{#widget:YouTube|id=wPEU5TIlsTU|width=480}}
+{{#widget:YouTube|id=xTOQIHieH0o|width=480}}
+
 
 
 
@@ -133,7 +134,7 @@ Registration robustness is the fact that the algorithm converge to the right sol
 
 Video : Stress test with easy data
 
-{{#widget:YouTube|id=xTOQIHieH0o|width=480}}
+{{#widget:YouTube|id=wPEU5TIlsTU|width=480}}
 
 Video : Stress test with difficult data
 
