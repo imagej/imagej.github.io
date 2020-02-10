@@ -202,8 +202,7 @@ Common categories of registration optimizers, associated with different registra
 
 * Schindelin, Johannes, Ignacio Arganda-Carreras, Erwin Frise, Verena Kaynig, Mark Longair, Tobias Pietzsch, Stephan Preibisch, et al. 2012. « Fiji: An Open-Source Platform for Biological-Image Analysis ». Nature Methods 9 (7): 676-82. https://doi.org/10.1038/nmeth.2019.
 
-* Yoo, Terry S., Michael J. Ackerman, William E. Lorensen, Will Schroeder, Vikram Chalana, Stephen Aylward, Dimitris Metaxas, et Ross Whitaker. 2002. « Engineering and Algorithm
-Design for an Image Processing Api: A Technical Report on ITK--the Insight Toolkit ».
+* Yoo, Terry S., Michael J. Ackerman, William E. Lorensen, Will Schroeder, Vikram Chalana, Stephen Aylward, Dimitris Metaxas, et Ross Whitaker. 2002. « Engineering and Algorithm Design for an Image Processing Api: A Technical Report on ITK--the Insight Toolkit ».
 Studies in Health Technology and Informatics 85: 586-92.
 
 == Software dependancies and acknowledgements==
