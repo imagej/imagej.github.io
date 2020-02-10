@@ -15,7 +15,7 @@ Fijiyama (Yet Another Matching and Alignment tool for Fiji) is a tool for regist
 ==Problem position==
 3d images acquired with various imaging devices come with variable orientations and positions, depending on the setup used for each device. Even with a single device the setup can change between observations, for example when monitoring a tissue during long-lasting experiment. As the sample cannot stay in the device during long-lasting monitoring experiment, variation in orientation and position between successive observations makes the object "move" from an image to another. Adressing this problem in 2d images can be difficult, and is even harder in 3d. In addition, as different modalities highlights different structures, images from different devices can be very dissimilar. In this situation, structures and phenomenons cross-analysis in multimodal 3d images or multimodal 3d time-series can be intractable.
 
-[[File:Reg_present.png]]
+[[File:Reg_present.png|width=800]]
 
 
 
