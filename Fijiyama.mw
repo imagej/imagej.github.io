@@ -194,7 +194,7 @@ Common categories of registration optimizers, associated with different registra
 
 
 
-== Software dependancies and colleagues acknowledgements==
+== Software dependancies and acknowledgements==
 * Itk/SimpleItk : We especially thanks the SimpleItk and ImageJ-Itk projects to bring Itk functionalities wrapped to the Java world of ImageJ. The class used in Fijiyama to define 3d transformations (ItkTransform) is based on the SimpleItk class "Transform", and extends some of its functionalities. SimpleItk/Itk also provides the Itk iconic registration algorithm.
 * ImageScience : Rigid transform and similarity estimation from correspondance points are based on ImageScience and VIBLib
 
