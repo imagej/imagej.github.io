@@ -1,7 +1,6 @@
 {{Infobox
 | name                   = Fijiyama
 | software               = Fiji
-| filename               = File:Fijiyama_4.0.0.jar
 | author                 = Romain Fernandez & Cédric Moisy
 | maintainer             = Romain Fernandez
 | source                 = {{GitHub|org=Rocsg|repo=Fijiyama}}
