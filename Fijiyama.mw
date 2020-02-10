@@ -27,12 +27,6 @@ As opposed to existing tools under ImageJ, Fijiyama is not dedicated to a specif
 
 To address the complex task of multi-modal registration, computation is based on Block-matching, a generic purpose registration algorithm, developed in the field of medical imaging. Other common algorithms are available in the plugin (Itk iconic registration). More about the algorithmic bases of the plugin ? See section "The maths behind" below.
 
-Image sympa 1
-
-Image sympa 2
-
-Image sympa 3
-
 ==Plugin features==
 
 * Two 3d images registration (training / settings mode)
