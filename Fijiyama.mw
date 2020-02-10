@@ -194,21 +194,16 @@ Common categories of registration optimizers, associated with different registra
 * R. Fernandez and C. Moisy, Fijiyama : a versatile registration tool for 3D multimodal time-lapse monitoring of biological tissues in Fiji (under review)
 
 == References ==
-* Grocott, Timothy, Paul Thomas, et Andrea E. Münsterberg. 2016. « Atlas Toolkit: Fast Registration of 3D Morphological Datasets in the Absence of Landmarks ». Scientific Reports 6 (1): 1-7.
-https://doi.org/10.1038/srep20732.
+* Grocott, Timothy, Paul Thomas, et Andrea E. Münsterberg. 2016. « Atlas Toolkit: Fast Registration of 3D Morphological Datasets in the Absence of Landmarks ». Scientific Reports 6 (1): 1-7. https://doi.org/10.1038/srep20732.
 
-* Hörl, David, Fabio Rojas Rusak, Friedrich Preusser, Paul Tillberg, Nadine Randel, Raghav K. Chhetri, Albert Cardona, et al. 2019. « BigStitcher: Reconstructing High-Resolution Image
-Datasets of Cleared and Expanded Samples ». Nature Methods 16 (9): 870-74.
+* Hörl, David, Fabio Rojas Rusak, Friedrich Preusser, Paul Tillberg, Nadine Randel, Raghav K. Chhetri, Albert Cardona, et al. 2019. « BigStitcher: Reconstructing High-Resolution Image Datasets of Cleared and Expanded Samples ». Nature Methods 16 (9): 870-74.
 https://doi.org/10.1038/s41592-019-0501-0.
 
-* Ourselin, S., A. Roche, S. Prima, et N. Ayache. 2000. « Block Matching: A General Framework to Improve Robustness of Rigid Registration of Medical Images ». In Medical Image Computing and Computer-Assisted Intervention – MICCAI 2000, édité par Scott L. Delp, Anthony M. DiGoia, et Branislav Jaramaz, 1935:557-66. Berlin, Heidelberg: Springer
-Berlin Heidelberg. https://doi.org/10.1007/978-3-540-40899-4_57.
+* Ourselin, S., A. Roche, S. Prima, et N. Ayache. 2000. « Block Matching: A General Framework to Improve Robustness of Rigid Registration of Medical Images ». In Medical Image Computing and Computer-Assisted Intervention – MICCAI 2000, édité par Scott L. Delp, Anthony M. DiGoia, et Branislav Jaramaz, 1935:557-66. Berlin, Heidelberg: Springer Berlin Heidelberg. https://doi.org/10.1007/978-3-540-40899-4_57.
 
-* Schindelin, Johannes, Ignacio Arganda-Carreras, Erwin Frise, Verena Kaynig, Mark Longair, Tobias Pietzsch, Stephan Preibisch, et al. 2012. « Fiji: An Open-Source Platform for Biological-
-Image Analysis ». Nature Methods 9 (7): 676-82. https://doi.org/10.1038/nmeth.2019.
+* Schindelin, Johannes, Ignacio Arganda-Carreras, Erwin Frise, Verena Kaynig, Mark Longair, Tobias Pietzsch, Stephan Preibisch, et al. 2012. « Fiji: An Open-Source Platform for Biological-Image Analysis ». Nature Methods 9 (7): 676-82. https://doi.org/10.1038/nmeth.2019.
 
-* Yoo, Terry S., Michael J. Ackerman, William E. Lorensen, Will Schroeder, Vikram Chalana,
-Stephen Aylward, Dimitris Metaxas, et Ross Whitaker. 2002. « Engineering and Algorithm
+* Yoo, Terry S., Michael J. Ackerman, William E. Lorensen, Will Schroeder, Vikram Chalana, Stephen Aylward, Dimitris Metaxas, et Ross Whitaker. 2002. « Engineering and Algorithm
 Design for an Image Processing Api: A Technical Report on ITK--the Insight Toolkit ».
 Studies in Health Technology and Informatics 85: 586-92.
 
