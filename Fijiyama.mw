@@ -121,7 +121,7 @@ This plugin have been tested on several data, including vegetal tissues, from mi
 
 === Accuracy ===
 The registration algorithms used have been studied in the literature, including accuracy tests (see the corresponding papers in the section "references" below). Therefore, we conducted a complementary study to quantify results quality with each of our example data. 
-To evaluate the overall final alignment, we compute the mean mismatch after registration, measured as the average distance between corresponding points once registration is finished. This measuring process is integrated in the plugin as an extra functionality, see video below. This process, applied to the first demo case shows that the mean resulting mismatch is lower than one pixel, which can be considered as a "good" result.
+To evaluate the overall final alignment, we compute the mean mismatch after registration, measured as the average distance between corresponding points once registration is finished. This measuring process is integrated in the plugin as an extra functionality, to help you evaluating your future results with your data (see video below). This process, applied to the first demo case shows that the mean resulting mismatch is lower than one pixel, which can be considered as a "good" result.
 
 -Video : Quantifying mismatch 
 
