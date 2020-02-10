@@ -27,7 +27,7 @@ You can choose this geometry to align object axis with the image (X,Y,Z), to eas
 [[File:Reg_present_3.png|1000px]]
 
 ==Contribution over existing tools==
-As opposed to existing tools under ImageJ, Fijiyama is not dedicated to a specific scale, a specific biological tissue, or a specific imaging device. It has been tested with many observation modalities, including the most common laboratory modalities : microscopy, photograph, and medical imaging tools (MRI / X-rays registration), see section "Versatility tests" below. 
+As opposed to existing tools under ImageJ, Fijiyama is not dedicated to a specific scale, a specific biological tissue, or a specific imaging device. It has been tested with many observation modalities, including the most common laboratory modalities : microscopy, photograph, and medical imaging tools (MRI / X-rays registration), and many subjects (plant cutting, plant trunk, human body). See section "Versatility tests" below. 
 
 To address the complex task of multi-modal registration, computation is based on Block-matching, a generic purpose registration algorithm, developed in the field of medical imaging. Another common algorithm is available in the plugin (Itk iconic registration). More about the algorithmic bases of the plugin ? See section "The maths behind" below.
 
