@@ -15,13 +15,12 @@ Fijiyama (Yet Another Matching and Alignment tool for Fiji) is a tool for regist
 ==Problem position==
 3d images acquired with various imaging devices come with variable orientations and positions, depending on the setup used for each device. Even with a single device the setup can change between observations, for example when monitoring a tissue during long-lasting experiment. As the sample cannot stay in the device during long-lasting monitoring experiment, variation in orientation and position between successive observations makes the object "move" from an image to another. Adressing this problem in 2d images can be difficult, and is even harder in 3d. In addition, as different modalities highlights different structures, images from different devices can be very dissimilar. In this situation, structures and phenomenons cross-analysis in multimodal 3d images or multimodal 3d time-series can be intractable.
 
-[[File:Reg_present.png|1000px]]
-
-
-
+[[File:Reg_present_1.png|1000px]]
 
 
 Fijiyama adress these issues helping you to register, align and combine 3d images or series in a common reference geometry. You can choose this geometry to align object axis with the image (X,Y,Z), to ease further visual analyses and figures construction. Once alignment is done, your 3d images are not anymore a sparse set of informations, but a coherent multi-modal multi-time volume that you can explore easily with the ImageJ viewer, wearing different "glasses" (RX, MRI, ...) and changing observation time with one click.
+
+[[File:Reg_present_2.png|1000px]]
 
 ==Contribution over existing tools==
 As opposed to existing tools under ImageJ, Fijiyama is not dedicated to a specific scale, a specific biological tissue, or a specific imaging device. It has been tested with many observation modalities, including the most common laboratory modalities : microscopy, photograph, and medical imaging tools (MRI / X-rays registration), see section "Versatility tests" below. 
