@@ -129,7 +129,7 @@ This measurement process is integrated in the plugin as an extra functionality, 
 {{#widget:YouTube|id=xTOQIHieH0o|width=480}}
 
 === Robustness ===
-In registration, this is the ability to converge to the right solution, even with a bad initialization. Robustness in registration is sensitive to data type. With a toy case (see video below), Fijiyama can be considered "robust". Therefore, with more complex data (symetric objects, inter-modality, large deformations), initialization should be more accurate to get good final results (see second video)
+To evaluate robustness, we investigate the ability to converge to the right solution, even with a bad initialization. Robustness in registration is sensitive to data type. With a toy case, Fijiyama can be considered "robust", as the automatic registration can do the job even without a good initialization (see video below). Therefore, with more difficult data (symetric objects, inter-modality, large deformations), initialization should be more accurate to get good final results (see second video)
 
 Video : Stress test with easy data (same image)
 
