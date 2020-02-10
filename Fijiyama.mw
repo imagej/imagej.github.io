@@ -54,7 +54,7 @@ Add the plugin and its dependancies to your current Fiji distribution using the 
 
 ===Prepare your data===
 In order to begin with the training mode, you need :
-* Two 3d images of the same object. Use your own data, or the provided example datasets here : [[File : Case_01_toy_case_with_two_imgs.zip]] . You can start with Case_01_toy_example, and follow the steps watching the video above.
+* Two 3d images of the same object. Use your own data, or the provided example datasets here : [[File : Test_dataset_01_vine_crops.zip]] . You can start with Case_01_toy_example, and follow the steps watching the video above.
 * A place to build an empty "Output" directory, that will be used to store the Fijiyama configuration file, the intermediate results (transformations) and the final results (transformations and 3d images). The configuration file (*.fjm) keep a full track of your work. When you save the current registration experiment, the configuration stores successive registration steps and the associated computed files. When restarting later from this point, you can review the whole process, and eventually "undo" one or more actions.
 
 Before starting registration, verify that your images are well calibrated :
