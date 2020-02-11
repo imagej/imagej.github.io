@@ -85,7 +85,7 @@ In the example dataset, this is already done, since the image names are : img_t1
 
 ==Complementary features ==
 ===Compose transformations===
-Chain linear and/or dense transformations is a basis of the plugin for series processing. This module is a helper module to use this function standalone.
+Chaining linear and/or dense transformations is a basis of the plugin for series processing. This module is a helper module to use this function standalone.
 Guessing you already computed :
 * the transform T12 that aligned  Image1.tif with Image2.tif
 * the transform T23 that aligned  Image2.tif with Image3.tif
