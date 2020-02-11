@@ -5,177 +5,133 @@
 | maintainer             = Romain Fernandez
 | source                 = {{GitHub|org=Rocsg|repo=Fijiyama}}
 | released               = February 3<sup>th</sup>, 2020
-| latest version         = February 10<sup>th</sup>, 2020
+| latest version         = February 11<sup>th</sup>, 2020
 | status                 = stable, active
 | category               = [[:Category:Registration|Registration]]
 }}
 
-Fijiyama (Yet Another Matching and Alignment tool for Fiji) is a tool for registration and alignment of 3d images of the same object, acquired with different imaging tools (MRI, X-rays, Microscopy, Photography, ...) and/or at successive observation timepoints.
+'''Fijiyama''' (Yet Another Matching and Alignment tool for Fiji) is a tool for registration and alignment of 3D stacks/images collected on the same object but using different imaging modalities (MRI, X-rays, Microscopy, Photography, ...) and/or during time-lapse monitoring (successive observations of the same sample at different times). 
+==Multi-modal and/or Multi-time Registration==
+'''CONTEXT:''' 3D images acquired with various imaging devices or during monitoring experiments often come with different orientations and positions, making it difficult to analyze. Fixing this misalignment in 2D can be difficult but it is even harder in 3D. In addition, as each modality can highlights different structures, images from multiple devices can be very dissimilar. In this situation, cross-structure and -phenomenon analysis from multimodal 3D-images or time-series can be compromised.
 
-==Problem position==
-3d images acquired with various imaging devices come with variable orientations and positions, depending on the setup used for each device. Even with a single device the setup can change between observations, for example when monitoring a tissue during long-lasting experiment. As the sample cannot stay in the device during long-lasting monitoring experiment, variation in orientation and position between successive observations makes the object "move" from an image to another. Adressing this problem in 2d images can be difficult, and is even harder in 3d. In addition, as different modalities highlights different structures, images from different devices can be very dissimilar. In this situation, structures and phenomenons cross-analysis in multimodal 3d images or multimodal 3d time-series can be intractable.
+'''AIM:''' Fijiyama aims to address these issues by helping users '''to register, align and combine 3D images or time-series in a unique reference geometry'''. Therefore, stacks of 3D images a registered in a coherent multi-modal and/or multi-time volume that can be explored using other tools.
 
-[[File:Reg_present_1.png|1000px]]
+'''VERSATILITY:''' Fijiyama is not dedicated to a specific scale, a specific biological tissue, nor a specific imaging device. It has been developed for multi-modalities, including the most common imaging approaches in biology and medicine: microscopy, MRI, X-rays, photography... and therefore works in several conditions. 
 
 
-Fijiyama address these issues helping you to register, align and combine 3d images or series in a common reference geometry. 
+[[File:Reg_present_1.png|800px]]
 
-[[File:Reg_present_2.png|1000px]]
-
-You can choose this geometry to align object axis with the image (X,Y,Z), to ease further visual analyses and figures construction. Once alignment is done, your 3d images are not anymore a sparse set of informations, but a coherent multi-modal multi-time volume that you can explore easily with the ImageJ viewer, wearing different "glasses" (RX, MRI, ...) and changing observation time with one click.
-
-[[File:Reg_present_3.png|1000px]]
-
-==Contribution over existing tools==
-As opposed to existing tools under ImageJ, Fijiyama is not dedicated to a specific scale, a specific biological tissue, or a specific imaging device. It has been tested with many observation modalities, including the most common laboratory modalities : microscopy, photograph, and medical imaging tools (MRI / X-rays registration), and many subjects (plant cutting, plant trunk, human body). See section "Versatility tests" below. 
-
-To address the complex task of multi-modal registration, computation is based on Block-matching, a generic purpose registration algorithm, developed in the field of medical imaging. Another common algorithm is available in the plugin (Itk iconic registration). More about the algorithmic bases of the plugin ? See section "The maths behind" below.
-
-==Plugin features==
-
-* Two 3d images registration (training / settings mode)
-
-* N-times / M-modalities 3d series registration (main feature)
-
-* Composition of successives Itk transformations into a single transformation
-
-* Transformation of a 3d image (or a 4d / 5d hyperimage) with an Itk transformation
-
-===Video demonstration===
-See the plugin in action with an easy example : two images of a vine cutting in Magnetic resonance imaging, with a 35 days time gap between the acquisitions
+==Demo==
+An example of Fijiyama application: registration of two stacks of MRI images, acquired on a vine cutting at a 35-days interval (see "training tutorial" for details).
 
 {{#widget:YouTube|id=QG_i50XJRfc|width=480}}
 
-More Fijiyama screencasts with various tissues (human abdomen, sorgho plant, vine graft, vine trunk) and various imaging devices (microscope, CT-Xrays, MRI, Photograph) with accuracy and robustness assessments can be found below in the section "Versatility tests".
+==Plugin features==
+* Two 3D images registration (training / settings mode)
+* N-times / M-modalities 3D series registration (main feature)
+* Composition of successive Itk transformations into a single transformation
+* Transformation of a 3D image (or a 4D / 5D hyperimage) with an Itk transformation
 
-You can train on this example data, following the "training tutorial" below.
+In order to address the complex task of multi-modal registration, computation is based on Block-matching, a generic purpose registration algorithm, developed in the field of medical imaging. Another common algorithm (Itk iconic registration) is available in the plugin as an option. To learn more about the algorithmic bases of the plugin, see section "The maths behind".
 
-==Getting started with Fijiyama==
-===Installation===
-Add the plugin and its dependancies to your current Fiji distribution using the Fiji update manager (Help > Update > Manage update sites...). First, activate ImageJ-Itk and IJPB-Plugins repositories : look for them in the list, and check the associated checkboxes. Then, add the Fijiyama repository to the list : click "Add update site" to add an update entry. Fill the fields : name : "Fijiyama", site : https://sites.imagej.net/Fijiyama  . Then check the associated checkbox. Restart Fiji, and check the installation : you should see an entry "Fijiyama" in the menu Plugins > Registration.
+==Installation==
+Add the plugin and its dependencies to your current Fiji distribution using the '''Fiji update manager''' (Help > Update > Manage update sites...). First, activate both '''ImageJ-Itk''' and '''IJPB-Plugins repositories''' (by checking the associated checkboxes in the list). Then, add the '''Fijiyama''' repository to the list (by clicking on '''Add update site''' and filling the fields : name = "Fijiyama", site = https://sites.imagej.net/Fijiyama). Then check the associated checkbox. 
+Restart Fiji. The corresponding '''Fijiyama''' entry should be visible in the menu Plugins > Registration.
 
-===Prepare your data===
-In order to begin with the training mode, you need :
-* Two 3d images of the same object. Use your own data, or the provided example datasets here : [[File : Test_dataset_01_vine_crops.zip]] . You can start with Case_01_toy_example, and follow the steps watching the video above.
-* A place to build an empty "Output" directory, that will be used to store the Fijiyama configuration file, the intermediate results (transformations) and the final results (transformations and 3d images). The configuration file (*.fjm) keep a full track of your work. When you save the current registration experiment, the configuration stores successive registration steps and the associated computed files. When restarting later from this point, you can review the whole process, and eventually "undo" one or more actions.
-
-Before starting registration, verify that your images are well calibrated :
-* Intensities : When opening your image with ImageJ, is there a good contrast between your interest object and the background ? If needed, use Image > Adjust > Brightness  / Contrast, and set the min and max values, then close the Brightness / Contrast window.
-* Voxel sizes : when opening your image with ImageJ, check the Properties : Image > Properties... and adjust the 4 central values. Unit of length should have another value than "pixel" (it can be "mm", "cm", "um" for example). Check coherence of pixel width / height / depth according to your unit of length. If needed, open the "info" menu (Image > Show info...), to get dicom parameters, or any other parameters. To verify if the voxel depth is coherent with pixel size along X and Y axis, you can render your object as a 3d volume using the 3d viewer (plugins > 3d viewer).
-
-Once done, save your modified images.
-
-===Training : two 3d images registration===
+==Registration manager== 
+>>>TODO: mettre a jour la figure (le nom des menus doit correspondre au texte)<<<
 [[File:Fijiyama_reg_manager.png|350px|thumb|right]]
-Start Fijiyama from the "Plugins" menu of ImageJ. Click on "Two 3d images registration", then follow the instructions to set the input 3d images and the output directory. Once the registration manager opens, explore the manager. Read the "tooltips" pop-ups, the contextual help, and explore the menus, until you feel comfortable to begin.
+Start Fijiyama from the "Plugins" menu of ImageJ (Plugins > Registration). Click on "Two 3D images registration" and follow the instructions (choose the ''''reference'''' and '''moving'''' images, and select the ''''output'''' directory). Once the registration manager opens, explore the manager and read the "tooltips" pop-ups, the contextual help, until you feel comfortable.
 
-The registration manager window has four parts (top to bottom):
-* Log window : a guide to remember last operations, and to understand what the plugin expect from you
+The registration manager window shows four parts (top to bottom):
+* Log window : a guide to remember last operations, and to understand what the plugin expects from you
 
-* Settings menus and buttons : useful to set the parameters of the future action to run
+* Settings menus and buttons : useful to set the parameters of the future action
 
-* Action buttons : the first line (<b>Start</b>, <b>Abort</b>, and <b>Undo</b>) drives the lifecycle of the current action, defined by the menus. <b>Save</b> can be used to "checkpoint" the experiment. <b>Export</b> compute the resulting aligned 3d images, according with the succession of transformations computed. <b>Sos</b> can be used at any time. It opens a contextual help message.
+* Action buttons : the first line (<b>Start</b>, <b>Abort</b>, and <b>Undo</b>) drives the lifecycle of the current action, defined by the menus. <b>Save</b> can be used to save the progress made in the registration, as a "checkpoint". <b>Export</b> computes the resulting aligned 3D images, according with the succession of transformations performed. <b>Help</b> can be used at any time to open a contextual help message.
 
-* Actions list : this list stores the past (or future) actions on the registration pathway
+* Actions list : stores the different steps during the registration process. 
 
-Take a tour with the "two images registration" module using these menus to get started. To achieve a quite good registration of these two 3d images, we recommend :
-* Step 1 : Select "manual registration" in the first menu and run it, to superimpose roughly the two volumes (centers roughly aligned, and angle < 15 degrees). Once done, click on "Position ok" (green button)
-* Step 2 : Select an automatic registration with default parameters (Block matching). If you want to monitor the registration during the run, use the fourth menu (Display automatic registration), and select the third option. Before starting this action, notice the estimated time just under the menus, to have a rough idea of how long Fijiyama will stay busy.
-* Step 3 : Select Align both images with XYZ with default parameters. Turn the scene to estimate the overall position of the object and what can be done to make its presentation more convenient for analyses and figures. If you use the example dataset, align the red cylinder with the white lines (Z axis), and align the wounding point (a hole in the surface) with the axis X or Y.
-* Step 4 : Save your work with the "Save" button
-* Step 5 : Export your work, and check for the exported files in <Your selected output dir>/Exported_files directory
+==Preparing your data==
+In order to register your data, Fijiyama needs properly formatted dataset:
+* '''Two 3D stacks/images''' of the same object. Use your own data or the provided example datasets here : [[File : Test_dataset_01_vine_crops.zip]]. You can start with Case_01_toy_example, and follow the steps watching the video above.
+* '''An empty "Output" directory''', that will be used to store the Fijiyama configuration file, the intermediate results (transformations) and the final results (transformations and resulting 3D images). The configuration file (*.fjm) keep a full track of your work. When saving the current registration experiment, Fijiyama stores the successive registration steps and the associated computed files. When restarting later from this point, you can review the whole process, and eventually "undo" one or more steps.
 
-===Multimodal time-serie registration===
+Before starting registration, check that your images are well calibrated:
+* '''Intensities: ''' verify there is a proper contrast between your object of interest and the background when opened in ImageJ. If needed, use Image > Adjust > Brightness  / Contrast, and set the min and max values, then close the Brightness / Contrast window.
+* '''Voxel sizes: ''' using ImageJ, check the image properties (Image > Properties...) and correct the 4 central values, if needed. Unit of length '''should have another value than "pixel" ''' (it can be "mm", "cm", "µm" for example). Check coherence of pixel width / height / depth according to your unit of length. If needed, open the "info" menu (Image > Show info...), to get dicom parameters, or any other parameters. To visualize if the voxel depth is coherent with the pixel size, along X and Y axis, you can render your object as a 3D volume using the 3D viewer (plugins > 3D viewer).
+Once signal intensity and voxel sizes have been checked, save your modified images.
 
-Once trained with the "two images" module, you can start a serie registration following these steps :
-* Prepare your data or download the example set number 2 (link blabla).
-Data names should respect a generic form, for example : img_t{Time}_mod{ModalityName}.tif , where {Time} represent the successive values for each time point, and {ModalityName} represent the name of each modality.
-With the example set, this work is already done, since the image names are : img_t1_modRX.tif , img_t1_modMRI.tif , img_t2_modMRI.tif , img_t3_modRX.tif , img_t3_modMRI.tif
-* Use the "two images" training module to identify the best pipeline of actions to register your images, from a modality to another, or from an observation time to another. 
-* Start the module "Serie registration", and follow the instruction. The manager will ask you the pipeline for inter-time registration, then for inter-modalities registration. Once done, it will compose theses steps into a full pipeline for processing all the data. You can then keep clicking "start this action", and execute all the steps.
-* Once all actions needing human intervention are done, you can use the "Chain run" button to ask Fijiyama to execute successively all the automatic steps without disturbing you
-* After the final Alignment (manual operation), and results exportation, the serie is finished. You can collect the results in <your output path>/Exported_data, and run your personal analysis on these data.
+==TUTORIAL 1 : Two 3D images registration==
+In order to achieve an efficient registration of two 3D images, we recommend the following procedure:
+* '''Step 1 : ''' Prepare your data or download the example set number 1 : [[File : Test_dataset_01_vine_crops.zip]]
+* '''Step 2 : ''' Select ''''Manual registration'''' in the first menu and run it. Superimpose roughly the two volumes manually (centers should be roughly aligned, with angle < 15 degrees). Press on ''''Position ok'''' (green button) when ready. This first step will help Fijiyama finding the correct orientation. 
+* '''Step 3 : ''' Select ''''Automatic registration'''' with default parameters (Block matching). If you want to monitor the registration during the run, select the ''''Display automatic registration'''' in the “Manual registration viewer” menu. Before starting this action, notice the ''estimated time'' required to complete the action (calculated from your computer settings).
+* '''Step 4 : ''' Select ''''Align both images with XYZ'''' with default parameters. Turn the scene to improve its orientation, if needed for a more convenient representation of your data (production of figures or analyses). In the example dataset, we choose to align the red cylinder with the white lines (Z axis), and align the wounding point (a hole in the surface) with the axis X or Y.
+* '''Step 5 : ''' Save the final transformation using the ''''Save current state'''' button.
+* '''Step 6 : ''' Export the registered 3D images in the “output/Exported_data” directory previously selected, using the ''''Export results'''' button.
 
+== TUTORIAL 2 : Multimodal time-series registration==
+
+Once comfortable with the "two images registration" module, try a “series registration” following these steps :
+* '''Step 1 : ''' Prepare your data or download the example set number 2 : link '''TODO >>>>blabla<<<<'''.
+Data names should respect a generic form, for example : img_t{Time}_mod{ModalityName}.tif , where {Time} represents the successive values for each time point, and {ModalityName} represents the name of each modality.
+In the example dataset, this is already done, since the image names are : img_t1_modRX.tif , img_t1_modMRI.tif , img_t2_modMRI.tif , img_t3_modRX.tif , img_t3_modMRI.tif
+* '''Step 2 : ''' Use the "Two images" training module to identify the best pipeline of actions for registering your images, from a modality to another, or from an observation time to another. 
+* '''Step 3 : ''' Start the module ''''Series registration'''', and follow the instructions. The manager will ask the pipeline for inter-time registration, then for inter-modalities registration. Once done, it will compose these steps into a full pipeline and process. You can repeatedly press on ''''start this action'''', and execute all the steps.
+* '''Step 4 : ''' Once all actions needing human intervention are performed, use the ''''Chain run'''' button to ask Fijiyama to execute successively all the steps automatically.
+* '''Step 5 : ''' After an optional final manual alignment, and results exportation using the ''''Export results'''' button. The results are saved in the ''output/Exported_data'' directory.
+
+==TIPS ==
 ===Compose transformations===
-Chain linear and/or dense transformations is a basis of the plugin for serie processing. This module is a helper module to use this function standalone.
+Chain linear and/or dense transformations is a basis of the plugin for series processing. This module is a helper module to use this function standalone.
 Guessing you already computed :
-* the transform T12 that align  Image1.tif with Image2.tif
-* the transform T23 that align  Image2.tif with Image3.tif
+* the transform T12 that aligned  Image1.tif with Image2.tif
+* the transform T23 that aligned  Image2.tif with Image3.tif
 
-You may want to align Image1 with Image3 in order to compare the three 3d images altogether. Therefore, applying sucessive transformations produce a blurring effect. In  order to avoid this blur, you may want to combine the two transformations into a single one to apply them in one go.
+You may want to align Image1 with Image3 in order to compare the three 3D images altogether. However, applying successive transformations will result in a strong blurring effect. In order to avoid this blur, you may want to combine the two transformation steps into a single one. 
 
-This module ask the successive transformations to be composed (in the example T12 then T23), and produce the resulting combined transform.
+This module asks the successive transformations to be composed (in the example T12 then T23), and produce the resulting combined transform.
 
 ===Apply a transformation to a 3d/4d/5d Image===
+This module is a helper function to apply an Itk transformation to a 3D image or to a 4D/5D hyperimage. In case of hyperimage, the transformation is interpreted as a 3D transformation, and is applied to each channel / frame of the hyperimage before gathering them back into the shape of an hyperimage.
 
-This module is a helper function to apply an Itk Transform to a 3d image or to a 4d/5d hyperimage. In case of hyperimage, the transform is interpreted as a 
-3d transform, and is applied to each channel / frame of the hyperimage before they are gathered back in the shape of an hyperimage.
+== Versatility Tests ==
+Fijiyama plugin has been tested on several data (including vegetal and human tissues), at different scales (from micro to macro imaging), and on different imaging modalities (microscopy, MRI, X-rays, and photographies). 
 
-== Versatility tests ==
-=== Usability ===
-This plugin have been tested on several data, including vegetal tissues, from micro to macro imaging, from microscopy to magnetic resonance imaging. The plugin have also been tested on a medical case (RX vs MRI) to evaluate plugin usability for "uncommon" data (see movie below). The corresponding data are available as example datasets
-
--Video : Human abdomen, CT-scan versus MRI
-
+See an example in the video below : Human abdomen CT-scan and MRI registration
+(>>>TODO=citer la source Samuel ?<<<)
 {{#widget:YouTube|id=ETCnWIqoDI0|width=480}}
 
-=== Accuracy ===
-The registration algorithms used have been studied in the literature, including accuracy tests (see the corresponding papers in the section "references" below). Therefore, we conducted a complementary study to quantify results quality with each of our example data. 
-To evaluate the overall final alignment, we compute the mean mismatch after registration, measured as the average distance between corresponding points once registration is finished. This process, applied to the first demo case shows that the max mismatch over all measured points is 2.1 pixels, and that the mean resulting mismatch is lower than one pixel (mean=0.76 pix/27µm, std=0.45 pix/16µm) which can be considered as a "good" result for such a configuration, where the tissue undergoes large deformations during the 35 days gap between the two images.
-This measurement process is integrated in the plugin as an extra functionality, to help you evaluating your future results with your data (see video below)
 
--Video : Quantifying mismatch 
+== Accuracy Test==
+The registration algorithms used in Fijiyama have been studied in the literature, including accuracy tests (see the corresponding papers in the section "references" below). Therefore, we conducted a complementary study to evaluate results quality within each of our datasets. 
+To evaluate the overall final alignment, we computed the “mean mismatch after registration”, measured as the average distance between corresponding points in the registered volume. 
+In our first dataset, where the tissues undergo large deformations during the 35-days gap between the two images acquisition, we measured a 'maximal mismatch' (over all measured points) of 2.1 pixels, and a 'mean resulting mismatch' lower than one pixel (mean=0.76 pix/27µm, std=0.45 pix/16µm).
+
+This measurement process is integrated in the plugin as an extra functionality, to help users evaluating their results (see video below)
+
+-Video : “Accuracy Test : Quantifying mismatch” 
 
 {{#widget:YouTube|id=xTOQIHieH0o|width=480}}
 
-=== Robustness ===
-To evaluate robustness, we investigate the ability to converge to the right solution, even with a bad initialization. Robustness in registration is sensitive to data type. With a toy case, Fijiyama can be considered "robust", as the automatic registration can do the job even without a good initialization (see video below). Therefore, with more difficult data (symetric objects, inter-modality, large deformations), initialization should be more accurate to get good final results (see second video)
-
-Video : Stress test with easy data (same image)
-
-{{#widget:YouTube|id=wPEU5TIlsTU|width=480}}
-
-Video : Stress test with difficult data (MRI, march 2019 versus X-rays, april 2019)
-
-TODO
-
-=== Hall of test cases ===
-
-* Sorgho, MRI versus microscopy (nanozoomer)
-
-TODO
-
-* Vine trunk, Photographic slices versus Mri versus CT-scan
-
-TODO
-
-* Vine graft, CT-scan versus Mri
-
-{{#widget:YouTube|id=wk6QAajq2xc |width=480}}
-
-* Vine cutting, MRI and CT-scan serie
-
-TODO
-
-Definitely, the best possible data for testing Fijiyama is your own data.Common issues and solutions are listed below. Please let us know if something went wrong with your data : send a mail to the corresponding author.
-
-== Common issues ==
-* '''Big data : ''' biological image data are sometimes very large. In the field of time-lapse microscopy, [[BigStitcher]] plugin handles such data, using BigDataViewer, as its registration algorithm, perfect for monomodal data of lightsheet microscopy, is well fitted to it. But Fijiyama is based on the Blockmatching registration algorithm, robust for inter-modality. This algorithm is memory consuming and computation intensive, so consider downsampling your data before starting Fijiyama. As the transformations are expressed in the real calibrated space, the final resulting transformations could be applied to you initial (big) data to get high-resolution aligned images. By the way, if you don't subsample your data, Fijiyama will ask you authorization to do it instead, implying that each fijiyama start will begin by a long-lasting resampling step. 
-* '''Translation in 3D under Windows : '''under windows, translation mode in the 3d viewer using SHIFT+drag can be hazardous. To address this, we associated surnumerous controls to the numerical keypad. Using 4 and 6 you can translate the selected volume along the X axis. Using 8 and 2 along the Y axis. Using 5 and 0, along the Z axis. Rotations can be handled with 7 and 9 (X axis), 1 and 3 (Y axis), and characters 'p' and 'o' for the Z axis. 
-* '''3d view disappear : '''depending on the sequence of translations / rotations applied to the scene, the view can "freeze", like if the objects are lost. Just turn the objects an 90 degrees angle, and the view come back
-* '''Abort button : '''sometimes hazardous with the automatic registration. Depending on the current state of the automatic registration, this function can success or not to abort the plugin. When playing with the settings, qe suggest you to save frequently your job, in order to be prepared to restart if necessary
-* '''Others : '''please tell us. Try to "redo" your bug from start, identify the context producing the bug, then send a mail to corresponding author, including :
+==Possible issues and solutions proposed==
+* '''Dealing with large datasets : ''' biological images are sometimes very large. In the field of time-lapse microscopy, [[BigStitcher]] plugin handles such data, using BigDataViewer, as its registration algorithm, perfect for monomodal data of lightsheet microscopy, is well fitted to it. 
+Fijiyama is based on the Blockmatching registration algorithm, robust for inter-modality. This algorithm is memory consuming and computation intensive, so user might consider down sampling the data before starting Fijiyama. 
+When starting Fijiyama, it will automatically detect your computer settings and might propose to subsample your dataset to fasten the registration process. This will not impact the quality of the final results since the transformations will finally be performed in the original calibrated space and resolution.
+* '''Translation in 3D under Windows : '''under Windows, translation mode in the 3D viewer using SHIFT+drag can be hazardous. To address this, we associated surnumerous controls to the numerical keypad. Using “4” and “6” keys, you can translate the selected volume along the X axis. Using “8” and “2” along the Y axis. Using “5” and “0”, along the Z axis. Rotations can be handled with “7” and “9” (X axis), “1” and “3” (Y axis), and characters “p” and “o” for the Z axis. 
+* '''3D view disappears : '''depending on the sequence of translations / rotations applied to the scene, the viewer can "freeze". Turn the objects to a 90 degrees’ angle, and the viewer come back
+* '''Other issues ? '''please tell us ! Try to "repeat" your bug from the beginning, identify the context producing the bug, then send an email to corresponding author, including :
 - a compressed copy of your output dir
 - the copy of the content of the ImageJ log window (probably a hundred lines of sentences in red telling where Exceptions were encountered)
 - Any useful commentary
 - if possible, the content of the black log window
-- if possible, a link to the data used
-
+- if possible, a link to the dataset used
 == The maths behind ==
 Registration of two images is achieved estimating a geometrical transformation that can be applied to an image (the "moving one"), to superimpose it with another image (the "reference" one).
 
 ===Transformations===
-The transform has to be chosen in a specific transformation family. Below are common transform families used in registration, from the simpler (less parameters) to the tougher (more parameters). Fijiyama includes the ones in bold font, to cover main users needs : 
+The transformation has to be chosen in a specific transformation family. Below are common transform families used in registration, from simple (less parameters) to more complex one (more parameters). Fijiyama includes the ones in bold font, to cover main user’s needs : 
 * Translations
 * Rotations
 * <b>Rigid transformations</b> (Translation + Rotation)
@@ -185,13 +141,13 @@ The transform has to be chosen in a specific transformation family. Below are co
 * <b>Dense vector field</b> (one vector per voxel)
 
 ===Optimizers===
-Common categories of registration optimizers, associated with different registration strategies (bold when present in Fijiyama) :
-* '''Itk iconic algorithm''' optimizes iteratively a transformation. The optimization process is guided by the superposition improvement measured using a global similarity measure between the two 3d images. Choosing this measure, we assume a kind of relationship between intensities of reference and moving image, and that this relationship is valid and identical in any point of the image. That weak assumption can lead to robustness issues when dealing with multi-modal registration.
-* '''The Block-Matching algorithm''' (reference) is an hybrid method, using a similarity measure to establish correspondances between images, then using these correspondance to compute a global transformation for the whole image. Assuming that the relationship between intensities of reference and moving image can be valid in a local neighbourhood, blockmatching uses it to compare subparts of the 3d images to identify correspondances. This algorithm is the default one in Fijiyama.
-* Fijiyama does not have a "geometric" registration algorithm yet. Principle of such algorithms is to extract features from each images, and to establish correspondances between extracted features. Such approach can lead to faster algorithms, but less robust, as it is difficult to define a feature extraction method that is modality-independant, object-independant, and scale-independant. But in the case of monomodal registration, such algorithms can provide great success (reference : BigStitcher).
+Common categories of registration optimizers, associated with different registration strategies :
+* '''Itk iconic algorithm''' optimizes iteratively a transformation. The optimization process is guided by the superposition improvement measured using a global similarity measure between the two 3D images. Choosing this measure, we assume a relationship between intensities of reference and moving image, and that this relationship is valid and identical in any point of the image. That weak assumption can lead to robustness issues when dealing with multi-modal registration.
+* '''The Block-Matching algorithm''' (reference) is a hybrid method, using a similarity measure to establish correspondences between images, then using these correspondence to compute a global transformation for the whole image. Assuming that the relationship between intensities of reference and moving image can be valid in a local neighborhood, blockmatching uses it to compare subparts of the 3D images to identify correspondences. This algorithm is the default one in Fijiyama.
+* Fijiyama does not have a "geometric" registration algorithm yet. Principle of such algorithms is to extract features from each images, and to establish correspondences between extracted features. Such approach can lead to faster but less robust algorithms as it is difficult to define a feature extraction method that is modality-independant, object-independant, and scale-independant. But in the case of monomodal registration, such algorithms can provide great success (reference : BigStitcher).
 
 == Citing this work ==
-* R. Fernandez and C. Moisy, Fijiyama : a versatile registration tool for 3D multimodal time-lapse monitoring of biological tissues in Fiji (under review)
+* R. Fernandez and C. Moisy, ''“Fijiyama : a versatile registration tool for 3D multimodal time-lapse monitoring of biological tissues in Fiji”'' (under review)
 
 == References ==
 * Grocott, Timothy, Paul Thomas, et Andrea E. Münsterberg. 2016. « Atlas Toolkit: Fast Registration of 3D Morphological Datasets in the Absence of Landmarks ». Scientific Reports 6 (1): 1-7. https://doi.org/10.1038/srep20732.
@@ -204,12 +160,12 @@ Common categories of registration optimizers, associated with different registra
 
 * Yoo, Terry S., Michael J. Ackerman, William E. Lorensen, Will Schroeder, Vikram Chalana, Stephen Aylward, Dimitris Metaxas, et Ross Whitaker. 2002. « Engineering and Algorithm Design for an Image Processing Api: A Technical Report on ITK--the Insight Toolkit ». Studies in Health Technology and Informatics 85: 586-92.
 
-== Software dependancies and acknowledgements==
-* Itk/SimpleItk : We especially thanks the SimpleItk and ImageJ-Itk projects to bring Itk functionalities wrapped to the Java world of ImageJ. The class used in Fijiyama to define 3d transformations (ItkTransform) is based on the SimpleItk class "Transform", and extends some of its functionalities. SimpleItk/Itk also provides the Itk iconic registration algorithm.
-* ImageScience : Rigid transform and similarity estimation from correspondance points are based on ImageScience and VIBLib
+== Software dependencies and acknowledgements==
+* Itk/SimpleItk : We especially thanks the SimpleItk and ImageJ-Itk projects to bring Itk functionalities wrapped to the Java world of ImageJ. The class used in Fijiyama to define 3D transformations (ItkTransform) is based on the SimpleItk class "Transform", and extends some of its functionalities. SimpleItk/Itk also provides the Itk iconic registration algorithm.
+* ImageScience : Rigid transform and similarity estimation from correspondence points are based on ImageScience and VIBLib
 
 == License ==
-This program is '''free software'''; you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
+This program is an open-source '''free software''': you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.  
 ----
