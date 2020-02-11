@@ -62,7 +62,7 @@ Before starting registration, check that your images are well calibrated:
 * '''Voxel sizes: ''' using ImageJ, check the image properties (Image > Properties...) and correct the 4 central values, if needed. Unit of length '''should have another value than "pixel" ''' (it can be "mm", "cm", "µm" for example). Check coherence of pixel width / height / depth according to your unit of length. If needed, open the "info" menu (Image > Show info...), to get dicom parameters, or any other parameters. To visualize if the voxel depth is coherent with the pixel size, along X and Y axis, you can render your object as a 3D volume using the 3D viewer (plugins > 3D viewer).
 Once signal intensity and voxel sizes have been checked, save your modified images.
 
-==TUTORIAL 1 : Two 3D images registration==
+==Tutorial 1 : Two 3D images registration==
 In order to achieve an efficient registration of two 3D images, we recommend the following procedure:
 * '''Step 1 : ''' Prepare your data or download the example set number 1 : [[File : Test_dataset_01_vine_crops.zip]]
 * '''Step 2 : ''' Select ''''Manual registration'''' in the first menu and run it. Superimpose roughly the two volumes manually (centers should be roughly aligned, with angle < 15 degrees). Press on ''''Position ok'''' (green button) when ready. This first step will help Fijiyama finding the correct orientation. 
