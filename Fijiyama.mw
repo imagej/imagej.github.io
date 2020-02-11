@@ -83,7 +83,7 @@ In the example dataset, this is already done, since the image names are : img_t1
 * '''Step 4 : ''' Once all actions needing human intervention are performed, use the ''''Chain run'''' button to ask Fijiyama to execute successively all the steps automatically.
 * '''Step 5 : ''' After an optional final manual alignment, and results exportation using the ''''Export results'''' button. The results are saved in the ''output/Exported_data'' directory.
 
-==Tips ==
+==Complementary features ==
 ===Compose transformations===
 Chain linear and/or dense transformations is a basis of the plugin for series processing. This module is a helper module to use this function standalone.
 Guessing you already computed :
