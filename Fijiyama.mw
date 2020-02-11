@@ -101,9 +101,8 @@ This module is a helper function to apply an Itk transformation to a 3D image or
 Fijiyama plugin has been tested on several data (including vegetal and human tissues), at different scales (from micro to macro imaging), and on different imaging modalities (microscopy, MRI, X-rays, and photographies). 
 
 See an example in the video below : Human abdomen CT-scan and MRI registration
-(>>>TODO=citer la source Samuel ?<<<)
+(Courtesy of Samuel Merigeaud, Tridilogy SARL)
 {{#widget:YouTube|id=ETCnWIqoDI0|width=480}}
-
 
 == Accuracy Test==
 The registration algorithms used in Fijiyama have been studied in the literature, including accuracy tests (see the corresponding papers in the section "references" below). Therefore, we conducted a complementary study to evaluate results quality within each of our datasets. 
