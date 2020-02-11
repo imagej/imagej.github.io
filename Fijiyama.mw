@@ -71,7 +71,7 @@ In order to achieve an efficient registration of two 3D images, we recommend the
 * '''Step 5 : ''' Save the final transformation using the ''''Save current state'''' button.
 * '''Step 6 : ''' Export the registered 3D images in the “output/Exported_data” directory previously selected, using the ''''Export results'''' button.
 
-== TUTORIAL 2 : Multimodal time-series registration==
+== Tutorial 2 : Multimodal time-series registration==
 
 Once comfortable with the "two images registration" module, try a “series registration” following these steps :
 * '''Step 1 : ''' Prepare your data or download the example set number 2 : link '''TODO >>>>blabla<<<<'''.
