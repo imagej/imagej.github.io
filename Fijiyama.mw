@@ -131,14 +131,12 @@ When starting Fijiyama, it will automatically detect your computer settings and 
 Registration of two images is achieved estimating a geometrical transformation that can be applied to an image (the "moving one"), to superimpose it with another image (the "reference" one).
 
 ===Transformations===
-The transformation has to be chosen in a specific transformation family. Below are common transform families used in registration, from simple (less parameters) to more complex one (more parameters). Fijiyama includes the ones in bold font, to cover main user’s needs : 
-* Translations
-* Rotations
-* <b>Rigid transformations</b> (Translation + Rotation)
-* <b>Similarities</b> (Rigid + isotropic homothetic factor)
-* Linear
-* Spline
-* <b>Dense vector field</b> (one vector per voxel)
+Fijiyama handles following transformations : 
+* Rigid transformations (Translation + Rotation)
+* Similarities (Rigid + isotropic homothetic factor)
+* Dense vector field (one vector per voxel)
+
+For more details about transformations, check the supplementary data of the official publication (see section "Cite this work" below)
 
 ===Optimizers===
 Common categories of registration optimizers, associated with different registration strategies :
