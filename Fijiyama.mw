@@ -29,13 +29,13 @@ An example of Fijiyama application: registration of two stacks of MRI images, ac
 ==Plugin features==
 * Two 3D images registration (training / settings mode)
 * N-times / M-modalities 3D series registration (main feature)
-* Composition of successive Itk transformations into a single transformation
-* Transformation of a 3D image (or a 4D / 5D hyperimage) with an Itk transformation
+* Composition of successive ITK transformations into a single transformation
+* Transformation of a 3D image (or a 4D / 5D hyperimage) with an ITK transformation
 
-In order to address the complex task of multi-modal registration, computation is based on Block-matching, a generic purpose registration algorithm, developed in the field of medical imaging. Another common algorithm (Itk iconic registration) is available in the plugin as an option. To learn more about the algorithmic bases of the plugin, see section "The maths behind".
+In order to address the complex task of multi-modal registration, computation is based on Block-matching, a generic purpose registration algorithm, developed in the field of medical imaging. Another common algorithm (ITK iconic registration) is available in the plugin as an option. To learn more about the algorithmic bases of the plugin, see section "The maths behind".
 
 ==Installation==
-Add the plugin and its dependencies to your current Fiji distribution using the '''Fiji update manager''' (Help > Update > Manage update sites...). First, activate both '''ImageJ-Itk''' and '''IJPB-Plugins repositories''' (by checking the associated checkboxes in the list). Then, add the '''Fijiyama''' repository to the list (by clicking on '''Add update site''' and filling the fields : name = "Fijiyama", site = https://sites.imagej.net/Fijiyama). Then check the associated checkbox. 
+Add the plugin and its dependencies to your current Fiji distribution using the '''Fiji update manager''' (Help > Update > Manage update sites...). First, activate both '''ImageJ-ITK''' and '''IJPB-Plugins repositories''' (by checking the associated checkboxes in the list). Then, add the '''Fijiyama''' repository to the list (by clicking on '''Add update site''' and filling the fields : name = "Fijiyama", site = https://sites.imagej.net/Fijiyama). Then check the associated checkbox. 
 Restart Fiji. The corresponding '''Fijiyama''' entry should be visible in the menu Plugins > Registration.
 
 ==Registration manager== 
@@ -95,7 +95,7 @@ You may want to align Image1 with Image3 in order to compare the three 3D images
 This module asks the successive transformations to be composed (in the example T12 then T23), and produce the resulting combined transform.
 
 ===Apply a transformation to a 3d/4d/5d Image===
-This module is a helper function to apply an Itk transformation to a 3D image or to a 4D/5D hyperimage. In case of hyperimage, the transformation is interpreted as a 3D transformation, and is applied to each channel / frame of the hyperimage before gathering them back into the shape of an hyperimage.
+This module is a helper function to apply an ITK transformation to a 3D image or to a 4D/5D hyperimage. In case of hyperimage, the transformation is interpreted as a 3D transformation, and is applied to each channel / frame of the hyperimage before gathering them back into the shape of an hyperimage.
 
 == Versatility Tests ==
 Fijiyama plugin has been tested on several data (including vegetal and human tissues), at different scales (from micro to macro imaging), and on different imaging modalities (microscopy, MRI, X-rays, and photographies). 
@@ -142,7 +142,7 @@ The transformation has to be chosen in a specific transformation family. Below a
 
 ===Optimizers===
 Common categories of registration optimizers, associated with different registration strategies :
-* '''Itk iconic algorithm''' optimizes iteratively a transformation. The optimization process is guided by the superposition improvement measured using a global similarity measure between the two 3D images. Choosing this measure, we assume a relationship between intensities of reference and moving image, and that this relationship is valid and identical in any point of the image. That weak assumption can lead to robustness issues when dealing with multi-modal registration.
+* '''ITK iconic algorithm''' optimizes iteratively a transformation. The optimization process is guided by the superposition improvement measured using a global similarity measure between the two 3D images. Choosing this measure, we assume a relationship between intensities of reference and moving image, and that this relationship is valid and identical in any point of the image. That weak assumption can lead to robustness issues when dealing with multi-modal registration.
 * '''The Block-Matching algorithm''' (reference) is a hybrid method, using a similarity measure to establish correspondences between images, then using these correspondence to compute a global transformation for the whole image. Assuming that the relationship between intensities of reference and moving image can be valid in a local neighborhood, blockmatching uses it to compare subparts of the 3D images to identify correspondences. This algorithm is the default one in Fijiyama.
 * Fijiyama does not have a "geometric" registration algorithm yet. Principle of such algorithms is to extract features from each images, and to establish correspondences between extracted features. Such approach can lead to faster but less robust algorithms as it is difficult to define a feature extraction method that is modality-independant, object-independant, and scale-independant. But in the case of monomodal registration, such algorithms can provide great success (reference : BigStitcher).
 
@@ -161,7 +161,7 @@ Common categories of registration optimizers, associated with different registra
 * Yoo, Terry S., Michael J. Ackerman, William E. Lorensen, Will Schroeder, Vikram Chalana, Stephen Aylward, Dimitris Metaxas, et Ross Whitaker. 2002. « Engineering and Algorithm Design for an Image Processing Api: A Technical Report on ITK--the Insight Toolkit ». Studies in Health Technology and Informatics 85: 586-92.
 
 == Software dependencies and acknowledgements==
-* Itk/SimpleItk : We especially thanks the SimpleItk and ImageJ-Itk projects to bring Itk functionalities wrapped to the Java world of ImageJ. The class used in Fijiyama to define 3D transformations (ItkTransform) is based on the SimpleItk class "Transform", and extends some of its functionalities. SimpleItk/Itk also provides the Itk iconic registration algorithm.
+* ITK/SimpleItk : We especially thanks the SimpleItk and ImageJ-ITK projects to bring ITK functionalities wrapped to the Java world of ImageJ. The class used in Fijiyama to define 3D transformations (ItkTransform) is based on the SimpleItk class "Transform", and extends some of its functionalities. SimpleItk/ITK also provides the ITK iconic registration algorithm.
 * ImageScience : Rigid transform and similarity estimation from correspondence points are based on ImageScience and VIBLib
 
 == License ==
