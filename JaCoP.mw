@@ -1,5 +1,7 @@
 = JACoP =
 
+{{Notice | This page describes '''J'''ust '''A'''nother '''Co'''localization '''P'''lugin, not the [http://jacop.org Java Constraint Programming solver].}}
+
 '''This plug-in is a compilation of co-localization tools.'''
 
 == Authors ==
@@ -40,21 +42,22 @@ its caption to red.
 
 == References/Citation ==
 
-When using the current plugin for publication, please refer to our review [[ https://doi.org/10.1111/j.1365-2818.2006.01706.x|(S. Bolte &amp; F. P. Cordelières, A guided tour into subcellular colocalization analysis in light microscopy, Journal of Microscopy, Volume 224, Issue 3: 213-232.)]], to this webpage and of course to ImageJ. A copy of your paper being sent to both of our e-mail adresses would also be greatly appreciated !
+When using the current plugin for publication, please refer to our review [https://doi.org/10.1111/j.1365-2818.2006.01706.x|(S. Bolte &amp; F. P. Cordelières, A guided tour into subcellular colocalization analysis in light microscopy, Journal of Microscopy, Volume 224, Issue 3: 213-232.)], to this webpage and of course to ImageJ. A copy of your paper being sent to both of our e-mail adresses would also be greatly appreciated !
 
-JACoP v2.0 was released for the second ImageJ User and Developer Conference in November 2009. The conference proceedings related the plugin is available {{:plugin:analysis:jacop_2.0:just_another_colocalization_plugin:jacop_ijconf2008.pdf|here}}. 
+JACoP v2.0 was released for the second ImageJ User and Developer Conference in November 2009. The conference proceedings related the plugin is available [https://conference.imagej.net/2008/jacop_ijconf2008.pdf|here].
 
 == Installation ==
 
-Simply download {{:plugin:analysis:jacop_2.0:just_another_colocalization_plugin:jacop_.jar|JACoP_.jar}} to the Plugins folder of ImageJ, restart ImageJ and use the "JACoP" command in the Plugins menu.
+Simply download 
+[https://imagejdocu.list.lu/_media/plugin/analysis/jacop_2.0/just_another_colocalization_plugin/jacop_.jar JACoP_.jar] to the Plugins folder of ImageJ, restart ImageJ and use the "JACoP" command in the Plugins menu.
 
 == Download ==
 
-Plugin available here: {{:plugin:analysis:jacop_2.0:just_another_colocalization_plugin:jacop_.jar|JACoP_.jar}}
+Plugin available here: [https://imagejdocu.list.lu/_media/plugin/analysis/jacop_2.0/just_another_colocalization_plugin/jacop_.jar JACoP_.jar]
 
 == License ==
 
-This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program. If not, see [http://www.gnu.org/licenses/].
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program. If not, see [https://www.gnu.org/licenses/ https://www.gnu.org/licenses/].
 
 Copyright (C) 2006 Susanne Bolte &amp; Fabrice P. Cordelières 
 
