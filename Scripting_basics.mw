@@ -102,7 +102,7 @@ imagePlus.show()
 
 == ImagePlus, ImageStack and ImageProcessor Conversion ==
 
-When working with the ImageJ API you will run into the problem that you have e.g. a ImageProcessor, but what you need right now is a ImagePlus.
+When working with the ImageJ API you will run into the problem that you have e.g. a ImageProcessor, but what you need right now is a ImagePlus.  
 
 To convert one to another use these commands:
 
@@ -126,3 +126,6 @@ ip = stack.getProcessor(nframe)
 // ImageProcessor to ImageStack:
 stack.addSlice(ip)
 </source>
+
+The following scheme depicts the relations between the different classes.
+[[Image:Image_Class_Hierarchy.png|600px|center]]
