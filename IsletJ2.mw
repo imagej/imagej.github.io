@@ -90,7 +90,7 @@ The following steps show basic interaction with the plugin.
 
 == Pretrained models ==
 
-Pretrained segmentation models can be downloaded [http://ptak.felk.cvut.cz/Medical/microscopy/IKEM/IsletJ/models/ here]. Note that future versions of IsletJ2 need not support older segmentation models. However, we will try to maintain a compatible model for each version. 
+Pretrained segmentation models can be downloaded [http://ptak.felk.cvut.cz/Medical/microscopy/IKEM/IsletJ/public/ here]. Note that future versions of IsletJ2 need not support older segmentation models. However, we will try to maintain a compatible model for each version. 
 
 == Tips ==
 
