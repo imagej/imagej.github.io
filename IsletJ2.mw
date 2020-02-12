@@ -88,6 +88,10 @@ The following steps show basic interaction with the plugin.
 # Select the extracted directory as before (we will analyze the training image for the demo purposes), set an appropriate pixel size (e.g., 2.355 μm) and minimal size of islets (e.g., 0 μm), and select the previously trained model.
 # Select an output directory and click <code>Analyze</code>.
 
+== Pretrained models ==
+
+Pretrained segmentation models can be downloaded [http://ptak.felk.cvut.cz/Medical/microscopy/IKEM/IsletJ/models/ here]. Note that future versions of IsletJ2 need not support older segmentation models. However, we will try to maintain a compatible model for each version. 
+
 == Tips ==
 
 === Keyboard shortcuts ===
