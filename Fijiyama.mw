@@ -132,7 +132,7 @@ When starting Fijiyama, it will automatically detect your computer settings and 
 Registration of two images is achieved estimating a geometrical transformation that can be applied to an image (the "moving one"), to superimpose it with another image (the "reference" one).
 
 ===Transformations===
-Fijiyama handles following transformations : 
+Fijiyama handles the following transformations families : 
 * Rigid transformations (Translation + Rotation)
 * Similarities (Rigid + isotropic homothetic factor)
 * Dense vector field (one vector per voxel)
