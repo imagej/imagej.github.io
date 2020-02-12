@@ -135,7 +135,7 @@ Registration of two images is achieved estimating a geometrical transformation t
 Fijiyama handles the following transformations families : 
 * Rigid transformations (Translation + Rotation)
 * Similarities (Rigid + isotropic homothetic factor)
-* Dense vector field (one vector per voxel)
+* Dense vector field (Generic representation of a non-linear transformation)
 
 For more details about transformations, check the supplementary data of the official publication (see section "Cite this work" below)
 
