@@ -10,3 +10,8 @@ Most scijava-projects API are listed on the [https://javadoc.scijava.org scijava
 And more particulary for 
 * [https://imagej.nih.gov/ij/developer/api/overview-summary.html ImageJ]
 * [https://javadoc.scijava.org/Fiji/ Fiji]
+
+== The ImageJ1 API ==
+The diagram below depicts the relation between the different classes composing ImageJ1.
+  
+[[File:ImageJ1-API-diagram.jpg|1100px]]
