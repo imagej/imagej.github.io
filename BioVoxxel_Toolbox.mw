@@ -4,8 +4,8 @@
 | author                 = {{Person|BioVoxxel}}, {{Person|Twagner}}
 | website                = [http://www.biovoxxel.de/index.html www.biovoxxel.de]
 | maintainer             = {{Person|BioVoxxel}}
-| latest version         = 15. October 2015
-| source                 =[https://github.com/biovoxxel/BioVoxxel_Toolbox GitHub]
+| latest version         = 12. February 2020
+| source                 =[https://github.com/biovoxxel/BioVoxxel-Toolbox GitHub]
 | category               = [[:Category:Particle analysis|Particle analysis]], [[:Category:Binary|Binary]], [[:Category:Filtering|Filtering]]
 }}You can setup an automatic update for the BioVoxxel Toolbox. Just run the [[Updater]] ({{bc | Help | Update...}}) and switch in the main window to 'Advanced mode'. Then click on 'Manage update sites'. Here you simply need to activate the "BioVoxxel". See here how to follow an update site [https://imagej.net/Following_an_update_site follow an update site]
 
