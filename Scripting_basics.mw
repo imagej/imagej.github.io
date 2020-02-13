@@ -130,6 +130,17 @@ stack.addSlice(ip)
 The following scheme depicts the relations between the different classes.
 [[Image:Image_Class_Hierarchy.png|600px|center]]
 
+== Loop over Roi in Roi Manager ==
+This small IJmacro scriptlet loops over the roi in the Roi Manager, selecting one at a time.
+
+<source lang='java'>
+for (i = 0; i < roiManager("count"); i++){
+     roiManager("Select", i);
+     // do some operation
+}
+</source>
+
+
 == Links ==
 * [https://imagej.net/Developing_Plugins_for_ImageJ_1.x#ImageJ.27s_API ImageJ API examples]
 * [https://github.com/imagej/tutorials/tree/master/howtos/src/main/java/howto  ImageJ tutorials repository]
