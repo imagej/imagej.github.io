@@ -9,7 +9,7 @@
 | category               = [[:Category:Registration|Registration]]
 }}
 
-<i>Version : release candidate. Testers are welcome !</i>
+<i>Current version : Elastic eucalyptus (first release). Two images registration now available ! </i>
 
 '''Fijiyama''' (Yet Another Matching and Alignment tool for Fiji) is a tool for registration and alignment of 3D stacks/images collected on the same object but using different imaging modalities (MRI, X-rays, Microscopy, Photography, ...) and/or during time-lapse monitoring (successive observations of the same sample at different times). 
 ==Multi-modal and/or Multi-time Registration==
