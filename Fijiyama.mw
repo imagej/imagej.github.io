@@ -44,14 +44,14 @@ Restart Fiji. The corresponding '''Fijiyama''' entry should be visible in the me
 [[File:Fijiyama_reg_manager.png|350px|thumb|right]]
 Start Fijiyama from the "Plugins" menu of ImageJ (Plugins > Registration). Click on "Two 3D images registration" and follow the instructions (choose the ''''reference'''' and '''moving'''' images, and select the ''''output'''' directory). Once the registration manager opens, explore the manager and read the "tooltips" pop-ups, the contextual help, until you feel comfortable to start.
 
-The registration manager window shows four parts (top to bottom):
-* Log window : a guide to remember last operations, and to understand what the plugin expects from you
+The registration manager window contains :
+* The log window : a guide to remember last operations, and to understand what the plugin expects from you
 
-* Settings menus and buttons : useful to set the parameters of the future action
+* The settings menus and buttons : useful to set the parameters of the future action
 
-* Action buttons : the first line (<b>Start</b>, <b>Abort</b>, and <b>Undo</b>) drives the lifecycle of the current action, defined by the menus. <b>Save</b> can be used to save the progress made in the registration, as a "checkpoint". <b>Export</b> computes the resulting aligned 3D images, according with the succession of transformations performed. <b>Help</b> can be used at any time to open a contextual help message.
+* The action buttons : the first line (<b>Start</b>, <b>Abort</b>, and <b>Undo</b>) drives the lifecycle of the current action, defined by the menus. <b>Save</b> can be used to save the progress made in the registration, as a "checkpoint". <b>Export</b> computes the resulting aligned 3D images, according with the succession of transformations performed. <b>Help</b> can be used at any time to open a contextual help message.
 
-* Actions list : stores the different steps during the registration process.
+* The actions list : stores the different steps during the registration process.
 
 ==Preparing your data==
 In order to register your data, Fijiyama needs properly formatted dataset:
