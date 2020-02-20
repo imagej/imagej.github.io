@@ -12,7 +12,7 @@
 <i>Current version : Elastic eucalyptus (first release). Two images registration now available ! </i>
 <i>Next version (in preparation) : Felicity ficus, including series functionalities </i>
 
-'''Fijiyama''' (Yet Another Matching and Alignment tool for Fiji) is a generic purpose tool for multimodal registration and alignment of 3D stacks (MRI, X-rays, Microscopy, Photography, ...) and/or time-lapse monitoring
+'''Fijiyama''' (Yet Another Matching and Alignment tool for Fiji) is a generic purpose tool for multimodal registration and alignment of 3D stacks (MRI, X-rays, Microscopy, Photography, ...) and/or to assist time-lapse monitoring.
 
 ==Multi-modal time-series Registration==
 '''Context:''' 3D images acquired with various imaging devices or during monitoring experiments often come with different orientations and positions, making it difficult to analyze. Fixing this misalignment in 2D is difficult and become intractable in 3D. In addition, as each modality highlights different structures, images from multiple devices can be very dissimilar. In this situation, cross-structure and -phenomenon analysis from multimodal 3D-images or time-series can be compromised.
