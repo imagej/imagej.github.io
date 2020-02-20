@@ -14,11 +14,11 @@
 
 '''Fijiyama''' (Yet Another Matching and Alignment tool for Fiji) is a tool for registration and alignment of 3D stacks collected on the same object but using different imaging modalities (MRI, X-rays, Microscopy, Photography, ...) and/or during time-lapse monitoring (successive observations of the same sample at different times). 
 ==Multi-modal and/or Multi-time Registration==
-'''CONTEXT:''' 3D images acquired with various imaging devices or during monitoring experiments often come with different orientations and positions, making it difficult to analyze. Fixing this misalignment in 2D can be difficult but it is even harder in 3D. In addition, as each modality can highlights different structures, images from multiple devices can be very dissimilar. In this situation, cross-structure and -phenomenon analysis from multimodal 3D-images or time-series can be compromised.
+'''CONTEXT:''' 3D images acquired with various imaging devices or during monitoring experiments often come with different orientations and positions, making it difficult to analyze. Fixing this misalignment in 2D is difficult and become intractable in 3D. In addition, as each modality highlights different structures, images from multiple devices can be very dissimilar. In this situation, cross-structure and -phenomenon analysis from multimodal 3D-images or time-series can be compromised.
 
-'''AIM:''' Fijiyama aims to address these issues by helping users '''to register, align and combine 3D images or time-series in a unique reference geometry'''. Therefore, stacks of 3D images a registered in a coherent multi-modal and/or multi-time volume that can be explored using other tools.
+'''AIM:''' Fijiyama aims to address these issues by helping users '''to register, align and combine 3D images or time-series in a unique reference geometry'''. After registration, stacks are combined in a coherent multi-modal and/or multi-time volume that can be explored using the ImageJ viewer.
 
-'''VERSATILITY:''' Fijiyama is not dedicated to a specific scale, a specific biological tissue, nor a specific imaging device. It has been developed for multi-modalities, including the most common imaging approaches in biology and medicine: microscopy, MRI, X-rays, photography... and therefore works in several conditions. 
+'''VERSATILITY:''' Fijiyama is not dedicated to a specific scale, a specific biological tissue, nor a specific imaging device. It has been developed for multi-modalities, including the most common imaging approaches in biology and medicine: MRI, X-rays, photography...
 
 
 [[File:Reg_present_1.png|800px]]
