@@ -78,7 +78,7 @@ In order to achieve an efficient registration of two 3D images, we recommend the
 Once comfortable with the "two images registration" module, try a “series registration” following these steps :
 * '''Step 1 : ''' Prepare your data or download the example set number 2 : [[File : Test_dataset_04_time_series.zip]]
 Data names should respect a generic form, for example : img_t{Time}_mod{ModalityName}.tif , where {Time} represents the successive values for each time point, and {ModalityName} represents the name of each modality.
-In the example dataset, this is already done, since the image names are : MRI_D0.tif , MRI_D1.tif , MRI_D2.tif , MRI_D3.tif
+In the example dataset, this is already done, since the image names are : MRI_D0.tif , MRI_D1.tif , MRI_D2.tif , MRI_D3.tif.
 * '''Step 2 : ''' Use the "Two images" training module to identify the best pipeline of actions for registering your images, from a modality to another, or from an observation time to another. 
 * '''Step 3 : ''' Start the module ''''Series registration'''', and follow the instructions. The manager will ask the pipeline for inter-time registration, then for inter-modalities registration. Once done, it will compose these steps into a full pipeline and process. You can repeatedly press on ''''start this action'''', and execute all the steps.
 * '''Step 4 : ''' Once all actions needing human intervention are performed, use the ''''Chain run'''' button to ask Fijiyama to execute successively all the steps automatically.
