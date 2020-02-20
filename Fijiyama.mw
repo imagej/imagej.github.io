@@ -75,7 +75,10 @@ In order to achieve an efficient registration of two 3D images, we recommend the
 
 == Tutorial 2 : Multimodal time-series registration==
 
-Once comfortable with the "two images registration" module, try a “series registration” following these steps :
+Once comfortable with the "two images registration" module, try a “series registration” following these steps. If you feel lost, you can rely on the tutorial here :
+
+{{#widget:YouTube|id=DVr3LBH5ayY|width=480}}
+
 * '''Step 1 : ''' Prepare your data or download the example set number 2 : [[File : Test_dataset_04_time_series.zip]]
 Data names should respect a generic form, for example : img_t{Time}_mod{ModalityName}.tif , where {Time} represents the successive values for each time point, and {ModalityName} represents the name of each modality.
 In the example dataset, this is already done, since the image names are : MRI_D0.tif , MRI_D1.tif , MRI_D2.tif , MRI_D3.tif.
