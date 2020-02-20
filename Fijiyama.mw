@@ -118,7 +118,7 @@ The registration algorithms used in Fijiyama have been studied in the literature
 
 ==Possible issues and solutions proposed==
 * '''Dealing with large datasets : ''' biological images are sometimes very large. In the field of time-lapse microscopy, [[BigStitcher]] plugin handles such data, using BigDataViewer, as its registration algorithm, perfect for monomodal data of lightsheet microscopy, is well fitted to it. 
-Fijiyama is based on the Blockmatching registration algorithm, robust for inter-modality. This algorithm is memory consuming and computation intensive, so user might consider down sampling the data before starting Fijiyama. 
+Fijiyama is based on the Blockmatching registration algorithm, robust for inter-modality. This algorithm is memory consuming and computation intensive, so consider down sampling the data before starting Fijiyama. 
 When starting Fijiyama, it will automatically detect your computer settings and might propose to subsample your dataset to fasten the registration process. This will not impact the quality of the final results since the transformations will finally be performed in the original calibrated space and resolution.
 * '''Translation in 3D under Windows : '''under Windows, translation mode in the 3D viewer using SHIFT+drag can be hazardous. To address this, we associated surnumerous controls to the numerical keypad. Using “4” and “6” keys, you can translate the selected volume along the X axis. Using “8” and “2” along the Y axis. Using “5” and “0”, along the Z axis. Rotations can be handled with “7” and “9” (X axis), “1” and “3” (Y axis), and characters “p” and “o” for the Z axis. 
 * '''3D view disappears : '''depending on the sequence of translations / rotations applied to the scene, the viewer can "freeze". Turn the objects to a 90 degrees’ angle, and the viewer come back
@@ -128,6 +128,7 @@ When starting Fijiyama, it will automatically detect your computer settings and 
 - Any useful commentary
 - if possible, the content of the black log window
 - if possible, a link to the dataset used
+
 == The maths behind ==
 Registration of two images is achieved estimating a geometrical transformation that can be applied to an image (the "moving one"), to superimpose it with another image (the "reference" one).
 
