@@ -85,7 +85,7 @@ In the example dataset, this is already done, since the image names are : MRI_D0
 * '''Step 2 : ''' Use the "Two images" training module to identify the best pipeline of actions for registering your images, from a modality to another, or from an observation time to another. 
 * '''Step 3 : ''' Start the module ''''Series registration'''', and follow the instructions. The manager will ask the pipeline for inter-time registration, then for inter-modalities registration. Once done, it will compose these steps into a full pipeline and process. You can repeatedly press on ''''start this action'''', and execute all the steps.
 * '''Step 4 : ''' Once all actions needing human intervention are performed, use the ''''Chain run'''' button to ask Fijiyama to execute successively all the steps automatically.
-* '''Step 5 : ''' After an optional final manual alignment, and results exportation using the ''''Export results'''' button. The results are saved in the ''output/Exported_data'' directory.
+* '''Step 5 : ''' Run the last actions. The manual alignment step will set the reference geometry in the image axis, and the save and export steps will stores the actions and the results. The results are saved in the ''output/Exported_data'' directory.
 
 ==Complementary features ==
 ===Compose transformations===
