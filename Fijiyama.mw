@@ -40,7 +40,7 @@ In order to address the complex task of multi-modal registration, computation is
 Add the plugin and its dependencies to your current Fiji distribution using the '''Fiji update manager''' (Help > Update > Manage update sites...). First, activate both '''ImageJ-ITK''' and '''IJPB-Plugins repositories''' (by checking the associated checkboxes in the list). Then, add the '''Fijiyama''' repository to the list (by clicking on '''Add update site''' and filling the fields : name = "Fijiyama", site = https://sites.imagej.net/Fijiyama). Then check the associated checkbox. 
 Restart Fiji. The corresponding '''Fijiyama''' entry should be visible in the menu Plugins > Registration.
 
-==Registration manager== 
+==The registration manager window== 
 [[File:Fijiyama_reg_manager.png|350px|thumb|right]]
 Start Fijiyama from the "Plugins" menu of ImageJ (Plugins > Registration). Click on "Two 3D images registration" and follow the instructions (choose the ''''reference'''' and '''moving'''' images, and select the ''''output'''' directory). Once the registration manager opens, explore the manager and read the "tooltips" pop-ups, the contextual help, until you feel comfortable to start.
 
