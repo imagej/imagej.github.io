@@ -56,7 +56,7 @@ The registration manager window contains (see image) :
 ==Preparing your data==
 In order to register your data, Fijiyama needs properly formatted dataset:
 * '''Two 3D stacks/images''' of the same object. Use your own data or the provided example datasets here : [[File : Test_dataset_01_vine_crops.zip]] and follow the steps watching the video tutorial above.
-* '''An empty "Output" directory''', that will be used to store the Fijiyama configuration file, the intermediate results (transformations) and the final results (transformations and resulting 3D images). The configuration file (*.fjm) keep a full track of your work. When saving the current registration experiment, Fijiyama stores the successive registration steps and the associated computed files. When restarting later from this point, you can review the whole process, and eventually "undo" one or more steps.
+* '''An empty "Output" directory''', that will be used to store the Fijiyama configuration file, the intermediate results (transformations) and the final results (transformations and resulting 3D images). The configuration file (*.fjm) keep a full track of your work. When saving the current registration experiment, Fijiyama stores the successive registration steps and the associated computed files. When restarting later from this point, you can review the whole process, and "undo" one or more steps.
 
 Before starting registration, check that your images are well calibrated:
 * '''Intensities: ''' verify there is a proper contrast between your object of interest and the background when opened in ImageJ. If needed, use Image > Adjust > Brightness  / Contrast, and set the min and max values, then close the Brightness / Contrast window.
