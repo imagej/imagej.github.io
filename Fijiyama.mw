@@ -97,7 +97,7 @@ Guessing you already computed :
 
 You may want to align Image1 with Image3 in order to compare the three 3D images altogether. However, applying successive transformations will result in a strong blurring effect. In order to avoid this blur, you may want to combine the two transformation steps into a single one. 
 
-This module asks the successive transformations to be composed (in the example T12 then T23), and produce the resulting combined transform.
+Use the <b>compose transformations function</b> the successive transformations to be composed (in the example T12 then T23), and produce the resulting combined transform.
 
 ===Apply a transformation to a 3d/4d/5d Image===
 This module is a helper function to apply an ITK transformation to a 3D image or to a 4D/5D hyperimage. In case of hyperimage, the transformation is interpreted as a 3D transformation, and is applied to each channel / frame of the hyperimage before gathering them back into the shape of an hyperimage.
