@@ -34,7 +34,7 @@ An example of Fijiyama application: registration of two stacks of MRI images, ac
 * Composition of successive ITK transformations into a single transformation
 * Transformation of a 3D image (or a 4D / 5D hyperimage) with an ITK transformation
 
-In order to address the complex task of multi-modal registration, computation is based on Block-matching, a generic purpose registration algorithm, developed in the field of medical imaging. Another common algorithm (ITK iconic registration) is available in the plugin as an option. To learn more about the algorithmic bases of the plugin, see section "The maths behind".
+In order to address the complex task of multi-modal registration, computation is based on the Block Matching algorithm (Ourselin <i>et al.</i>, 2000), a generic purpose registration algorithm, developed in the field of medical imaging. Another common algorithm (ITK iconic registration) is available in the plugin as an option. To learn more about the algorithmic bases of the plugin, see section "The maths behind".
 
 ==Installation==
 Add the plugin and its dependencies to your current Fiji distribution using the '''Fiji update manager''' (Help > Update > Manage update sites...). First, activate both '''ImageJ-ITK''' and '''IJPB-Plugins repositories''' (by checking the associated checkboxes in the list). Then, add the '''Fijiyama''' repository to the list (by clicking on '''Add update site''' and filling the fields : name = "Fijiyama", site = https://sites.imagej.net/Fijiyama). Then check the associated checkbox. 
