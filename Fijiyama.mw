@@ -37,12 +37,15 @@ An example of Fijiyama application: registration of two stacks of MRI images, ac
 In order to address the complex task of multi-modal registration, computation is based on the Block Matching algorithm (Ourselin <i>et al.</i>, 2000), a generic purpose registration algorithm, developed in the field of medical imaging. Another common algorithm (Iconic registration) is available in the plugin as an option. To learn more about the algorithmic bases of the plugin, see section "The maths behind".
 
 ==Installation==
-Install Fiji : follow this link https://fiji.sc/ 
+Install Fiji : follow this link https://fiji.sc/ to download and install Fiji. Run it a first time before going on, in order to let him manage the first updates, then restart it.
 <br>
-Install Fijiyama : After starting Fiji, run the '''Fiji update manager''' (Help > Update). Click on "OK" to close the popup, then click on the button '''Manage update sites...''' to open the update list.
+Install Fijiyama : Start Fiji. Run the '''Fiji update manager''' (Help > Update). Click on "OK" to close the popup, then click on the button '''Manage update sites...''' to open the update list.
 <br>
-In the update list, first, activate both '''ImageJ-ITK''' and '''IJPB-Plugins repositories''' (by checking the associated checkboxes in the list). Then, add the '''Fijiyama''' repository to the update list list (by clicking on the button '''Add update site''' and filling the fields : name = "Fijiyama", site = https://sites.imagej.net/Fijiyama). Then check the associated checkbox. 
-Restart Fiji. The corresponding '''Fijiyama''' entry should be visible in the menu Plugins > Registration.
+In the update list :
+* Activate both '''ImageJ-ITK''' and '''IJPB-Plugins repositories''' (by checking the associated checkboxes in the list). 
+* Add the '''Fijiyama''' repository to the update list list (by clicking on the button '''Add update site''' and filling the fields : name = "Fijiyama", site = https://sites.imagej.net/Fijiyama). Then check the associated checkbox. 
+<br>
+Restart Fiji. The corresponding '''Fijiyama''' entry should be visible in the menu Plugins > Registration. If it's not the case, go back to the update manager, and check that the three repositories are checked ('''ImageJ-ITK''', '''IJPB-Plugins repositories''' and '''Fijiyama''').
 
 ==Preparing your data==
 In order to register your data, Fijiyama needs properly formatted dataset:
