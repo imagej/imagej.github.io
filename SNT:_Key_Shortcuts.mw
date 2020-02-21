@@ -65,12 +65,13 @@ These shortcuts become available in ''Edit Mode'', activated through the context
 
 ==== Reconstruction Viewer ====
 * {{key|left}} {{key|right}} {{key|up}} {{key|down}} - Rotate (with mouse: Left-click & drag)
+* {{key|shift}} + {{key|left}} {{key|right}} {{key|up}} {{key|down}} - Pan (with mouse: Right-click & drag)
 * {{key|+}} {{key|-}} - Zoom (with mouse: Scroll wheel)
 * {{key|A}} - Toggle <u>A</u>xes
 * {{key|C}} - Toggle <u>C</u>amera Mode
 * {{key|D}} - Toggle <u>D</u>ark Mode
 * {{key|F}} - <u>F</u>it View to Visible Objects
-* {{key|L}} - <u>L</u>og Scene Controls to Console
+* {{key|L}} - <u>L</u>og Scene Details to Console
 * {{key|R}} - <u>R</u>eset View
 * {{key|S}} - Save <u>S</u>creenshot
 * {{key|H}} - <u>H</u>elp (as Notification) ({{key|F1}} shows Help on a dedicated window)
