@@ -68,7 +68,7 @@ Once a registration scenario starts, you can interact with the registration mana
 * The actions list : stores the different steps during the registration process.
 
 
-==Tutorial 1 : Two 3D images registration==
+==Tutorial 1 : Two images registration==
 In order to achieve an efficient registration of two 3D images, we recommend the following procedure:
 * '''Step 1 : ''' Prepare your data or download the example set number 1 : [[File : Test_dataset_01_vine_crops.zip]]
 * '''Step 2 : ''' Select ''''Manual registration'''' in the first menu and run it. Superimpose roughly the two volumes manually (centers should be roughly aligned, with angle < 15 degrees). Press on ''''Position ok'''' (green button) when ready. This first step will help Fijiyama finding the correct orientation. 
