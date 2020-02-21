@@ -30,7 +30,7 @@ An example of Fijiyama application: registration of two stacks of MRI images, ac
 {{#widget:YouTube|id=QG_i50XJRfc|width=480}}
 
 ==Plugin features==
-* Two 3D images registration (training / settings mode)
+* Two images registration (training / settings mode)
 * N-times / M-modalities 3D series registration (main feature)
 * Composition of successive ITK transformations into a single transformation
 * Transformation of a 3D image (or a 4D / 5D hyperimage) with an ITK transformation
