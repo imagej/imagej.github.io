@@ -40,7 +40,9 @@ In order to address the complex task of multi-modal registration, computation is
 ==Installation==
 Install Fiji : follow this link https://fiji.sc/ 
 <br>
-Install Fijiyama : After starting Fiji, run the '''Fiji update manager''' (Help > Update > Manage update sites...). First, activate both '''ImageJ-ITK''' and '''IJPB-Plugins repositories''' (by checking the associated checkboxes in the list). Then, add the '''Fijiyama''' repository to the list (by clicking on '''Add update site''' and filling the fields : name = "Fijiyama", site = https://sites.imagej.net/Fijiyama). Then check the associated checkbox. 
+Install Fijiyama : After starting Fiji, run the '''Fiji update manager''' (Help > Update). Click on "OK" to close the popup, then click on the button '''Manage update sites...''' to open the update list.
+<br>
+In the update list, first, activate both '''ImageJ-ITK''' and '''IJPB-Plugins repositories''' (by checking the associated checkboxes in the list). Then, add the '''Fijiyama''' repository to the update list list (by clicking on the button '''Add update site''' and filling the fields : name = "Fijiyama", site = https://sites.imagej.net/Fijiyama). Then check the associated checkbox. 
 Restart Fiji. The corresponding '''Fijiyama''' entry should be visible in the menu Plugins > Registration.
 
 ==Preparing your data==
