@@ -4,12 +4,12 @@
 | author                 = Romain Fernandez & Cédric Moisy
 | maintainer             = Romain Fernandez
 | source                 = {{GitHub|org=Rocsg|repo=Fijiyama}}
-| released               = February 18<sup>th</sup>, 2020
+| released               = February 10<sup>th</sup>, 2020
 | status                 = stable, active
 | category               = [[:Category:Registration|Registration]]
 }}
 
-<i>Last version : Felicity ficus.</i>
+<i>Current Fijiyama version : Felicity ficus (Release date : February 21<sup>th</sup>, 2020).</i>
 
 The plugin '''Fijiyama''' (Yet Another Matching and Alignment tool for Fiji) is a generic purpose tool for multimodal registration and alignment of 3D stacks (MRI, X-rays, Microscopy, Photography, ...) and/or to assist time-lapse monitoring.
 
