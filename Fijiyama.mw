@@ -45,7 +45,7 @@ Restart Fiji. The corresponding '''Fijiyama''' entry should be visible in the me
 
 ==The registration manager window== 
 [[File:Fijiyama_reg_manager.png|350px|thumb|right]]
-In order to explore the plugin, you can use the provided example datasets here : [[File : Test_dataset_01_vine_crops.zip]] 
+In order to explore the plugin, you can use the provided example dataset here : [[File : Test_dataset_01_vine_crops.zip]] 
 Start Fijiyama from the "Plugins" menu of ImageJ (Plugins > Registration). Click on "Two images registration" and follow the instructions (choose the ''''reference'''' and '''moving''' images, and select the '''output''' directory). Once the registration manager opens, explore the manager and read the "tooltips" pop-ups, the contextual help, until you feel comfortable to start.
 
 The registration manager window contains (see image) :
