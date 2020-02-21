@@ -45,7 +45,7 @@ Restart Fiji. The corresponding '''Fijiyama''' entry should be visible in the me
 
 ==The registration manager window== 
 [[File:Fijiyama_reg_manager.png|350px|thumb|right]]
-Start Fijiyama from the "Plugins" menu of ImageJ (Plugins > Registration). Click on "Two 3D images registration" and follow the instructions (choose the ''''reference'''' and '''moving'''' images, and select the ''''output'''' directory). Once the registration manager opens, explore the manager and read the "tooltips" pop-ups, the contextual help, until you feel comfortable to start.
+Start Fijiyama from the "Plugins" menu of ImageJ (Plugins > Registration). Click on "Two images registration" and follow the instructions (choose the ''''reference'''' and '''moving'''' images, and select the ''''output'''' directory). Once the registration manager opens, explore the manager and read the "tooltips" pop-ups, the contextual help, until you feel comfortable to start.
 
 The registration manager window contains (see image) :
 * The log window : a guide to remember last operations, and to understand what the plugin expects from you
