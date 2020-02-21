@@ -9,8 +9,7 @@
 | category               = [[:Category:Registration|Registration]]
 }}
 
-<i>Current version : Elastic eucalyptus (first release). Two images registration now available ! </i>
-<i>Next version (in preparation) : Felicity ficus, including series functionalities </i>
+<i>Last version : Felicity ficus.</i>
 
 The plugin '''Fijiyama''' (Yet Another Matching and Alignment tool for Fiji) is a generic purpose tool for multimodal registration and alignment of 3D stacks (MRI, X-rays, Microscopy, Photography, ...) and/or to assist time-lapse monitoring.
 
