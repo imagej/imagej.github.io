@@ -37,7 +37,7 @@ An example of Fijiyama application: registration of two stacks of MRI images, ac
 In order to address the complex task of multi-modal registration, computation is based on the Block Matching algorithm (Ourselin <i>et al.</i>, 2000), a generic purpose registration algorithm, developed in the field of medical imaging. Another common algorithm (Iconic registration) is available in the plugin as an option. To learn more about the algorithmic bases of the plugin, see section "The maths behind".
 
 ==Installation==
-Install Fiji : follow this link https://fiji.sc/ to download and install Fiji. Run it a first time before going on, in order to let him manage the first updates, then restart it.
+Install Fiji : follow this link https://fiji.sc/ to download and install Fiji. Run it a first in order to let him manage the first updates, then restart it.
 <br>
 Install Fijiyama : Start Fiji. Run the '''Fiji update manager''' (Help > Update). Click on "OK" to close the popup, then click on the button '''Manage update sites...''' to open the update list. In this list :
 * Activate both '''ImageJ-ITK''' and '''IJPB-Plugins repositories''' (by checking the associated checkboxes in the list). 
