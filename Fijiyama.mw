@@ -54,7 +54,7 @@ In order to register your data, Fijiyama needs properly formatted dataset:
 Before starting registration, check your images calibration:
 * '''Intensities: ''' verify there is a proper contrast between your object of interest and the background when opened in ImageJ. If needed, use Image > Adjust > Brightness  / Contrast, and set the min and max values, then close the Brightness / Contrast window.
 * '''Voxel sizes: ''' using ImageJ, check the image properties (Image > Properties...) and correct the 4 central values, if needed. Unit of length '''should have another value than "pixel" ''' (it can be "mm", "cm", "µm" for example). Check coherence of pixel width / height / depth according to your unit of length. If needed, open the "info" menu (Image > Show info...), to get dicom parameters, or any other parameters. To visualize if the voxel depth is coherent with the pixel size, along X and Y axis, you can render your object as a 3D volume using the 3D viewer (plugins > 3D viewer).
-Once signal intensity and voxel sizes have been checked, save your modified images before starting Fijiyama registration, then start the '''two images registration''' mode or the '''series registration''' mode.
+Once signal intensity and voxel sizes have been checked, save your modified images. Then run Fijiyama, and select the '''two images registration''' mode or the '''series registration''' mode.
 
 ==The registration manager window== 
 [[File:Fijiyama_reg_manager.png|350px|thumb|right]]
