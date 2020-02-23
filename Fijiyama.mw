@@ -65,7 +65,7 @@ Once a registration scenario starts, you can interact with the registration mana
 
 * The action buttons : the first line (<b>Start</b>, <b>Abort</b>, and <b>Undo</b>) drives the lifecycle of the current action, defined by the menus and the current settings. <b>Save</b> can be used to save the progress made in the registration, as a "checkpoint". <b>Export</b> computes the resulting aligned 3D images, according with the succession of transformations performed. <b>Help</b> can be used at any time to open a contextual help message.
 
-* The actions list : stores the different steps during the registration process.
+* The actions list : stores the successive steps accomplished during the registration process.
 
 ==Tutorial 1 : Two images registration==
 In order to achieve an efficient registration of two 3D images, we recommend the following procedure:
