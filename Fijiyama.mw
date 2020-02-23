@@ -47,7 +47,7 @@ Restart Fiji. A '''Fijiyama''' entry should be visible in the menu Plugins > Reg
 
 ==Preparing your data==
 In order to register your data, Fijiyama needs properly formatted dataset:
-* For two images pairwise registration : '''Two 3D stacks/images''' of the same object. Use your own data or the provided example datasets here: [https://imagej.net/_images/f/fd/Test_dataset_01_vine_crops.zip case study 1, two-images registration] and follow the steps watching the video tutorial above.
+* For two images pairwise registration : '''Two 3D stacks/images''' of the same object. Use your own data or the provided example datasets here: [https://imagej.net/_images/f/fd/Test_dataset_01_vine_crops.zip case study 1, two-images registration]
 * For series registration : '''N 3D stacks/images''' of the same object. Use your own data or the provided example datasets here: [https://imagej.net/_images/c/c8/Test_dataset_04_time_series.zip case study 4, times series registration].
 * '''An empty "Output" directory''', that will be used to store the Fijiyama configuration file, the intermediate results (transformations) and the final results (transformations and resulting 3D images). The configuration file (*.fjm) keep a full track of your work. When saving the current registration experiment, Fijiyama stores the successive registration steps and the associated computed files. When restarting later from this point, you can review the whole process, and "undo" one or more steps.
 <br>
