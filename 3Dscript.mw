@@ -9,6 +9,7 @@
 | category               = [[:Category:Visualization|Visualization]], [[:Category:Plugins]]
 }}
 
+[[Image:3Dscript-Logo.png|left|160px]]
 '''3Dscript''' - Create high-quality 3D/4D animations using a natural-language based syntax
 
 In state-of-the-art 3D rendering and animation software the user typically creates an animation by specifying a number of keyframes. While intuitive, this approach becomes tedious for complex motions like simultaneous rotations around multiple axes, and even worse for accelerated and decelerated motions: The number of required keyframes increases, and creating them becomes hardly reproducible.
