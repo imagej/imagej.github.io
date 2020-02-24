@@ -1,4 +1,4 @@
-[[Biomat]] - plugins for 3D image preprocessing and detection of fibres in 3D image.
+[[Biomat]] - plugins for 3D image preprocessing, detection of fibres in 3D image and evaluation of 2D images using heat equation.
 
 Further ImageJ projects: [[Anisotropic Diffusion 2D]], [https://imagej.nih.gov/ij/plugins/anisotropic-diffusion-2d.html original Anisotropic Diffusion 2D],  [https://imagej.nih.gov/ij/plugins/lipschitz/index.html Lipschitz filter 2D], [https://imagej.nih.gov/ij/plugins/sampling-window/index.html Sampling window 2D and Disector 3D].
 
