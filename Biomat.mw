@@ -37,7 +37,9 @@ Example: [https://imagej.net/_images/e/e9/Capillaries_heart.zip Image of capilla
 
 == Plugins for evaluation of 2D images using heat equation. ==
 '''2D Tensor Color Coding''' - standard color coding of 2D tensor image. Symmetric tensor is coded as channels of 32 bit image stacks.
+
 '''2D Heat Kernel Tensor''' - second order moments of heat kernel calculated from 8 bit binary image.
+
 '''2D Tensor Statistics''' - summary of tensor image (in ROI). "Value" is average trace of the tensor, "shape" is the ratio of its eigenvalues and "angle" of the first eigenvector is measured counterclockwise from the horizontal axis. 
 
 [[Category:Plugins]]
