@@ -3,3 +3,11 @@
 ----
 
 '''Wavelet_Denoise'''
+
+<inputbox>
+type=create
+width=100
+break=no
+buttonlabel=Create new article
+default=(Article title)
+</inputbox>
