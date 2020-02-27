@@ -146,7 +146,7 @@ In Jython and other scripting languages this looks like.
 from ij.plugin.frame import RoiManager
 
 # Get number of ROIs
-RM = RoiManager.getRoiManager()
+RM = RoiManager.getInstance()
 n = RM.getCount()
 
 for i in range(n):
