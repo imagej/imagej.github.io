@@ -140,6 +140,18 @@ for (i = 0; i < roiManager("count"); i++){
 }
 </source>
 
+In Jython and other scripting languages this looks like.
+
+<source lang='java'>
+from ij.plugin.frame import RoiManager
+
+# Get number of ROIs
+RM = RoiManager.getRoiManager()
+n = RM.getCount()
+
+for i in range(n):
+   roi = RM.getRoi(i)
+</source>
 
 == Links ==
 * [https://imagej.net/Developing_Plugins_for_ImageJ_1.x#ImageJ.27s_API ImageJ API examples]
