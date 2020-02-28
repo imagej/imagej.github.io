@@ -1,3 +1,9 @@
+== Video tutorial on 3D reconstruction from serial section ==
+
+{{#widget:SWITCHtube|id=c3f982f2}}
+
+{{Clear}}
+
 == Video tutorial on the basic recipe for TrakEM2 ==
 
 [[Image:Screenshot-TrakEM2_basics_tutorial.png|thumb|250px|link=TrakEM2 basics tutorial|TrakEM2 basic tutorial]]
@@ -94,12 +100,6 @@ In the tutorial, the layers are imported following an existing set of layers, i.
 [[Image:Screenshot-TrakEM2-save-project.png|thumb|250px|link=TrakEM2 saving project tutorial|TrakEM2 saving a project]]
 
 * [[TrakEM2_saving_project_tutorial|Saving a TrakEM2 project]] into an .XML file.
-
-{{Clear}}
-
-== Video tutorial on 3D reconstruction from serial section ==
-
-{{#widget:SWITCHtube|id=c3f982f2}}
 
 == See Also ==
 
