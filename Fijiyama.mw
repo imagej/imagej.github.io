@@ -114,11 +114,29 @@ See an example in the video below : Human abdomen CT-scan and MRI registration
 {{#widget:YouTube|id=ETCnWIqoDI0|width=480}}
 
 == Accuracy Test==
-The registration algorithms used in Fijiyama have been studied in the literature, including accuracy tests (see the corresponding papers in the section "references" below). Therefore, Fijiyama can be used to quantify the resulting mismatch. This measurement process is integrated in the plugin as an extra functionality, to help users evaluating their results (see video below)
+Fijiyama can be used to quantify the resulting mismatch. This measurement process is integrated in the plugin as an extra functionality, to help users evaluating their results (see video below)
 
 -Video : “Accuracy Test : Quantifying mismatch” 
 
 {{#widget:YouTube|id=xTOQIHieH0o|width=480}}
+
+==Version tracking==
+Fijiyama is a living project, with frequent updates. Thanks to the Fiji updater, your version will be update with the latest one each time the fiji update starts.
+
+Major update include new features released, or major refactoring, while minor update (change in the release time) should not modify deeply the behaviour of the plugin, to keep results reproducible. These two informations can be seen in the launching interface of Fijiyama.
+
+Major update are symbolized with a change in the plugin version name.
+Minor update can be seen as the release time is modified.
+
+{| class="wikitable"
+!colspan="6"|Fijiyama version list
+|-
+|rowspan="2"|Dramatic Dahlia
+|Blablablablablablablablalblalbalbvalbal
+|colspan="2"|Elastic Eucalyptus
+|}
+
+
 
 ==Possible issues and solutions proposed==
 * '''Dealing with large datasets : ''' biological images are sometimes very large. In the field of time-lapse microscopy, [[BigStitcher]] plugin handles such data, using BigDataViewer, as its registration algorithm, perfect for monomodal data of lightsheet microscopy, is well fitted to it. 
