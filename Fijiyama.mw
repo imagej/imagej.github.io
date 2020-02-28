@@ -129,14 +129,16 @@ Major update are symbolized with a change in the plugin version name.
 Minor update can be seen as the release time is modified.
 
 {| class="wikitable"
-!colspan="6"|Fijiyama version list
+!colspan="7"|Fijiyama version list
 |-
 |rowspan="2"|Dramatic Dahlia
-|Blablablablablablablablalblalbalbvalbal
-|colspan="2"|Elastic Eucalyptus
+|colspan="2"|Latest release:blablabla
+|colspan="3"|Blablablablablablablablalblalbalbvalbal
+|-
+|rowspan="2"|Elastic Eucalyptus
+|colspan="2"|Blablablablablablablablalblalbalbvalbal
+|colspan="3"|Blablablablablablablablalblalbalbvalbal
 |}
-
-
 
 ==Possible issues and solutions proposed==
 * '''Dealing with large datasets : ''' biological images are sometimes very large. In the field of time-lapse microscopy, [[BigStitcher]] plugin handles such data, using BigDataViewer, as its registration algorithm, perfect for monomodal data of lightsheet microscopy, is well fitted to it. 
