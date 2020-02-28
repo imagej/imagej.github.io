@@ -125,8 +125,8 @@ Fijiyama is a living project, with frequent updates. Thanks to the Fiji updater,
 
 Major updates include new features released, or major refactoring, while minor updates (change in the release time) should not modify deeply the behaviour of the plugin, to keep results reproducible. These two informations can be seen in the launching interface of Fijiyama.
 
-Major update are symbolized with a change in the plugin version name.
-Minor update can be seen as the release time is modified.
+Major updates are symbolized with a change in the plugin version name.
+For minor updates, only the release time is modified.
 
 [[File:Versioning Fijiyama.jpeg|700px|thumb|center]]
 
