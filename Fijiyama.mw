@@ -120,7 +120,7 @@ Fijiyama can be used to quantify the resulting mismatch. This measurement proces
 
 {{#widget:YouTube|id=xTOQIHieH0o|width=480}}
 
-==Version tracking==
+==Versions of Fijiyama==
 Fijiyama is a living project, with frequent updates. Thanks to the Fiji updater, your version is updated each time the fiji update starts.
 
 Major updates include new features released, or major refactoring, while minor updates (change in the release time) should not modify deeply the behaviour of the plugin, to keep results reproducible. These two informations can be seen in the launching interface of Fijiyama.
@@ -138,17 +138,17 @@ For minor updates, only the release time is modified.
 | <b>Integration of new features</b>
 | <b>Modifications causing reproducibility issues</b>
 |-
-| Elastic Eucalyptus
+| <b>Elastic Eucalyptus</b>
 | 2020/02/10
 | 2020/02/20
 | Integration of the multimodal series registration feature. Redefinition of default settings in the settings editor.
 | Default settings changes in the settings editor
 |-
-| Felicity Ficus
+| <b>Felicity Ficus</b>
 | 2020/02/20
 | 2020/02/28
 | Integration of the time-lapse multimodal series feature
-| No
+| None
 |-
 | (Future version) Gorgeous grapevine
 | 2020/03/..
