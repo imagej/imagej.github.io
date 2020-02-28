@@ -130,19 +130,28 @@ Minor update can be seen as the release time is modified.
 
 
 {| class="wikitable"
+| Version name
+| First release
+| Last release
+| Integration of new features
+| Modifications causing reproducibility issues
+|-
 | Elastic Eucalyptus
-| First release: 2020/02/10
-| Last release: 2020/02/20
-| Integration of the multimodal series registration feature. Redefinition of default settings.
+| 2020/02/10
+| 2020/02/20
+| Integration of the multimodal series registration feature. Redefinition of default settings in the settings editor.
+| Default settings changes in the settings editor
 |-
 | Felicity Ficus
-| First release: 2020/02/20
-| Last release: 2020/02/28
+| 2020/02/20
+| 2020/02/28
 | Integration of the time-lapse multimodal series feature
+| No
 |-
 | (Future version) Gorgeous grapevine
-| First release: 2020/03/..
-| Last release: 2020/03/..
+| 2020/03/..
+| 2020/03/..
+| ...
 | ...
 |}
 
