@@ -123,7 +123,7 @@ Fijiyama can be used to quantify the resulting mismatch. This measurement proces
 ==Version tracking==
 Fijiyama is a living project, with frequent updates. Thanks to the Fiji updater, your version is updated each time the fiji update starts.
 
-Major update include new features released, or major refactoring, while minor update (change in the release time) should not modify deeply the behaviour of the plugin, to keep results reproducible. These two informations can be seen in the launching interface of Fijiyama.
+Major updates include new features released, or major refactoring, while minor updates (change in the release time) should not modify deeply the behaviour of the plugin, to keep results reproducible. These two informations can be seen in the launching interface of Fijiyama.
 
 Major update are symbolized with a change in the plugin version name.
 Minor update can be seen as the release time is modified.
