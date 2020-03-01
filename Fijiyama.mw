@@ -198,9 +198,16 @@ Common categories of registration optimizers, associated with different registra
 
 * Yoo, Terry S., Michael J. Ackerman, William E. Lorensen, Will Schroeder, Vikram Chalana, Stephen Aylward, Dimitris Metaxas, et Ross Whitaker. 2002. « Engineering and Algorithm Design for an Image Processing Api: A Technical Report on ITK--the Insight Toolkit ». Studies in Health Technology and Informatics 85: 586-92.
 
-== Software dependencies and acknowledgements==
-* ITK/SimpleItk : We especially thanks the SimpleItk and ImageJ-ITK projects to bring ITK functionalities wrapped to the Java world of ImageJ. The class used in Fijiyama to define 3D transformations (ItkTransform) is based on the ITK/SimpleITK class "Transform", and extends some of its functionalities. ITK/SimpleITK also provides the ITK iconic registration algorithm.
-* ImageScience : Rigid transform and similarity estimation from correspondence points are based on ImageScience and VIBLib
+== Software dependencies acknowledgements==
+David Legland et al for the morpholibj plugin (Legland et al., 2016)
+Johannes Schindelin et al for Fiji (Schindelin et al., 2012)
+Benjamin Schmid et al for the 3D viewer plugin developers (Schmid et al., 2010)
+The ITK and SimpleITK team (Yoo et al., 2002; Lowekamp et al., 2013)
+Erik Meijering for the Imagescience java libraries https://imagescience.org/meijering/software/imagescience/ . Rigid transform and similarity estimation from correspondence points are based on ImageScience and VIBLib
+
+
+* ITK/SimpleItk : We especially thanks the SimpleItk and ImageJ-ITK projects to bring ITK functionalities wrapped to the Java world of ImageJ. 
+* ImageScience : 
 
 == License ==
 This program is an open-source '''free software''': you can redistribute it and/or modify it under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
