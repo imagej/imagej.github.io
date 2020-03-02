@@ -34,7 +34,7 @@ An example of Fijiyama application: registration of two stacks of MRI images, ac
 * Composition of successive ITK transformations into a single transformation
 * Transformation of a 3D image (or a 4D / 5D hyperimage) with an ITK transformation
 
-In order to address the complex task of multi-modal registration, computation is based on the Block Matching algorithm (Ourselin <i>et al.</i>, 2000), a generic purpose registration algorithm, developed in the field of medical imaging. Another common algorithm (Iconic registration) is available in the plugin as an option. To learn more about the algorithmic bases of the plugin, see section "The maths behind".
+In order to address the complex task of multi-modal registration, computation is based on the Block Matching algorithm (Ourselin <i>et al.</i>, 2000), a generic purpose registration algorithm, developed in the field of medical imaging. Another algorithm, (Iconic registration) is available in the plugin as an option. To learn more about the algorithmic bases of the plugin, see section "The maths behind".
 
 ==Installation==
 Install Fiji : follow this link https://fiji.sc/ to download and install Fiji. Run it a first in order to let him manage the first updates, then restart it.
