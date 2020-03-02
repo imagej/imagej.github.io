@@ -23,6 +23,10 @@ The plugin '''Fijiyama''' (Yet Another Matching and Alignment tool for Fiji) is 
 
 [[File:Reg_present_1.png|800px]]
 
+==Data set for testing purpose==
+A comprehensive dataset can be found at this link on dryad
+
+
 ==Demo==
 An example of Fijiyama application: registration of two stacks of MRI images, acquired on a vine cutting at a 35-days interval (see "training tutorial" for details).
 
