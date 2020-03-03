@@ -57,15 +57,17 @@ Here we summarize some of the Registration plugins in ImageJ.
 |[https://imagej.net/Fijiyama Fijiyama]
 |A versatile registration tool for 3D multimodal time-lapse imaging
 |
-* User-friendly: Tutorials, test data and comprehensive documentation are available on the plugin page.
-* Generic: tissue-, scale- and modality-independent (tested on human, plant trunk, plant tissue, synapses...)
-* Versatile: Possible scenarios are two images registration (training mode) and series registration
-* Headache-free: settings auto-adjust depending on your input data
-* Automatic, under human control: Perform automatic 3D registration (two algorithms available) and manual registration (using the 3d viewer)
-* Limitations: should be avoided for big datasets, in terms of number of images (more than time points) or in terms of image size (1GB and more). Under these conditions, [https://imagej.net/TrakEM2 TrakEM2] or [https://imagej.net/BigStitcher BigStitcher] are clever tools that should be useful. 
-* Scientific sources: Block-Matching, a registration method from the biomedical world, is the default algorithm, while ITK iconic is available. Block Matching compare subparts of images <i>(blocks)</i> to identify pairs of corresponding points and optimize iteratively the transformation according to these correspondences.
-* The corresponding pairs are filtered according to the corresponding <i>blocks</i> similarity score, according to their variance, and according to their agreement with the other corresponding pairs. 
-* Transformations: Linear transformations (rigid and similarities) are estimated using [https://imagej.net/VIB-lib VIB-lib]. Non-linear transformations are estimated using gaussian interpolation
+* User-friendly: Tutorials, test data, documentation
+* Generic: tissue-, scale- and modality-independent
+* Versatile: Two images registration and series registration
+* Headache-free: settings auto-adjust
+* Automatic 3D registration (two algorithms available)
+* Manual registration (using the [https://imagej.net3D_Viewer 3D_Viewer])
+* Limitations: should be avoided for big datasets (more than 15 time points or 1GB+). Use
+[https://imagej.net/TrakEM2 TrakEM2] or [https://imagej.net/BigStitcher BigStitcher] instead.
+* Scientific sources: Block-Matching compare subparts of images to identify correspondences.
+* Linear transformations (rigid and similarities) using [https://imagej.net/VIB-lib VIB-lib]. 
+* Non-linear transformations using gaussian interpolation
 |[[File:Reg_present_3.png|500px]]
 |}
 
