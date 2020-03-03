@@ -198,6 +198,10 @@ Common categories of registration optimizers, associated with different registra
 * '''The Block-Matching algorithm''' [https://link.springer.com/content/pdf/10.1007/978-3-540-40899-4_57.pdf (Ourselin <i>et al.</i> 2000)] is a hybrid method, using a similarity measure to establish correspondences between subparts of images, then using these correspondences to compute a global transformation for the whole image. Assuming that the relationship between intensities of reference and moving images can be valid in a local neighborhood, blockmatching uses it to compare subparts of the 3D images to identify correspondences. This algorithm is the default one in Fijiyama.
 * Fijiyama does not have a "geometric" registration algorithm yet. Principle of such algorithms is to extract features from each image, and to establish correspondences between extracted features. Such approach can lead to faster but less robust algorithms as it is difficult to define a feature extraction method that is modality-independent, object-independent, and scale-independent. But for monomodal registration, such algorithms can provide great success, like [[BigStitcher]] with microscopy images
 
+
+== Limitations ==
+For big datasets (15 and more timepoints) or big images (1GB+), specific tools should be tried instead: [[BigStitcher]], [[Atlas_Toolkit]], [[TrakEM2]] or [[Elastix]] under ImageJ . For people who are not afraid to script, [http://elastix.isi.uu.nl/ Elastix] is a proper tool for series. Outside from the ImageJ world, common references are [https://www.slicer.org/ Slice] and [https://med.inria.fr/ MedInria] for two image registration, which share some algorithms with Fijiyama.
+
 == Citing this work ==
 * R. Fernandez and C. Moisy, ''“Fijiyama: a registration tool for 3D multimodal time-lapse imaging”'' (under review)
 
