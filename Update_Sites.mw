@@ -6,6 +6,17 @@
 
 For further details, see [[How to follow a 3rd party update site]].
 
+== Check if an update site is activated ==
+In Fiji, if you write macros and plugins that rely on some functionalities provided by a specific update site (dependencies), you can use the following command to check if the update site is activated, and print a message if not.<br>
+This uses the update site service.<br>
+Example in Jython.
+<source lang=java>
+#@ UpdateService updateService
+
+if not updateService.getUpdateSite("Fiji-Legacy").isActive():
+    print "Please activate the Fiji-legacy update site"
+</source>
+
 == Creating your own update site ==
 
 Anyone can share their extensions ([[plugins]], [[scripts]], etc.) by [[How to set up and populate an update site|creating their own update site]]. You can use ImageJ's [[personal update site]] service (hosted on the [http://sites.imagej.net/ ImageJ web server]), or host it on your own server.
