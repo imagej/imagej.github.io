@@ -55,7 +55,7 @@ Here we summarize some of the Registration plugins in ImageJ.
 |[[File:Rvs_scheme.png|500px]]
 |-
 |[https://imagej.net/Fijiyama Fijiyama]
-|A versatile registration tool for 3D multimodal time-lapse imaging
+|A registration tool for 3D multimodal time-lapse imaging
 |
 * User-friendly, generic and versatile
 * Headache-free: settings auto-adjust
