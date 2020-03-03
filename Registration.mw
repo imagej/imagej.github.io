@@ -58,14 +58,14 @@ Here we summarize some of the Registration plugins in ImageJ.
 |A registration tool for 3D multimodal time-lapse imaging
 |
 * User-friendly, generic and versatile
-* Settings automatic adjust based on your data
-* Movie tutorials and example datasets
 * Automatic 3D registration (two algorithms available)
 * Manual registration (using the [https://imagej.net/3D_Viewer 3D_Viewer])
-* Limitations: should be avoided for big datasets (more than 15 time points or 1GB+).
+* Movie tutorials and example datasets
+* Settings automatically adjust based on your data
 * Transformations: linear or non-linear
 * Tested on specimens: human, vine trunk, 
 * Tested on modalities: MRI, X-ray CT, Photograph
+* Limitations: should be avoided for big datasets (more than 15 time points or 1GB+).
 |[[File:Fiji_main_results.jpg|500px]]
 |}
 
