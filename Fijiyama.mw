@@ -200,7 +200,7 @@ Common categories of registration optimizers, associated with different registra
 
 
 == Limitations ==
-For big datasets (15 and more timepoints) or big images (1GB+), specific tools should be tried instead with [[ImageJ]] or [[Fiji]]. [[BigStitcher]], [[Atlas_Toolkit]], [[TrakEM2]] or the [[Elastix]] plugin are a short list of 3D registration tools. Outside from the ImageJ world, for people who are not afraid to script, [http://elastix.isi.uu.nl/ Elastix] is a proper tool for series and [https://www.slicer.org/ Slicer] can do a great job. Limiting to two-images registration, [https://med.inria.fr/ MedInria] is a very powerful and popular tool for medical images, which share some algorithmic basis with Fijiyama
+For big datasets (15 and more timepoints) or big images (1GB+), specific tools should be tried instead. In the [[ImageJ]] / [[Fiji]] world, here is a short list of the plugins for 3D registration: [[BigStitcher]], [[Atlas_Toolkit]], [[TrakEM2]] or [[Elastix]]. Outside from the ImageJ world, for people who are not afraid to script, [http://elastix.isi.uu.nl/ Elastix] is a proper tool for series and [https://www.slicer.org/ Slicer] can do a great job. Limiting to two-images registration, [https://med.inria.fr/ MedInria] is a very powerful and popular tool for medical images, which share some algorithmic basis with Fijiyama
 
 == Citing this work ==
 * R. Fernandez and C. Moisy, ''“Fijiyama: a registration tool for 3D multimodal time-lapse imaging”'' (under review)
