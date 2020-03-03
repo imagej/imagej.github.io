@@ -46,13 +46,14 @@ Watch the video tutorial on youtube:
 {{#widget:YouTube|id=scm6UPlfgzU|width=480}}
 
 In short, the steps are:
+<br>
 Install Fiji : follow this link https://fiji.sc/ to download and install Fiji. Run it a first in order to let him manage the first updates, then restart it.
 <br>
 Install Fijiyama : In Fiji, run the '''Update manager''' (Help > Update). Click on "OK" to close the popup, then click on the button '''Manage update sites...''' to open the update list. In this list :
 * Activate '''ImageJ-ITK''' (by checking the associated checkboxes in the list). 
 * Add the '''Fijiyama''' repository (by clicking on the button '''Add update site''' and filling the fields : name = "Fijiyama", site = https://sites.imagej.net/Fijiyama), then check the associated checkbox. 
 <br>
-Restart Fiji. A '''Fijiyama''' entry should be visible in the menu Plugins > Registration. If it's not the case, go back to the update manager, and check that the three repositories are checked ('''ImageJ-ITK''', '''IJPB-Plugins repositories''' and '''Fijiyama''').
+Restart Fiji. A '''Fijiyama''' entry should be visible in the menu Plugins > Registration. If it's not the case, go back to the update manager, and check that the repositories are checked ('''ImageJ-ITK''', and '''Fijiyama''').
 
 ==Preparing your data==
 In order to register your data, Fijiyama needs properly formatted dataset:
