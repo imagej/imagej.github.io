@@ -158,7 +158,7 @@ For minor updates, only the release time is modified.
 | 2020/02/20
 | 2020/03/02
 | Integration of the time-lapse multimodal series feature. Versioning of serialized files
-| None
+| 1th march: versioning of serialized files starts. Previously serialized files are then open with default values for level min, level max and block matching iterations.
 |-
 | (Future version) Gorgeous grapevine
 | 2020/03/..
