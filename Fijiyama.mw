@@ -184,9 +184,9 @@ Registration of two images is achieved estimating a geometrical transformation t
 
 ===Transformations===
 Fijiyama handles the following transformations families : 
-* Rigid transformations (translation + rotation)
-* Similarities (rigid + isotropic homothetic factor)
-* Dense vector field (A generic representation of a non-linear transformation)
+* Rigid transformations (translation + rotation), estimated using [https://imagej.net/VIB-lib VIB-lib]
+* Similarities (rigid + isotropic homothetic factor) estimated using [https://imagej.net/VIB-lib VIB-lib]
+* Dense vector field (A generic representation of a non-linear transformation), estimated using gaussian interpolation
 
 For more details about transformations, check the supplementary data of the official publication (see section "Cite this work" below)
 
