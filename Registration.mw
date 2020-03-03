@@ -63,7 +63,7 @@ Here we summarize some of the Registration plugins in ImageJ.
 * Manual registration (using the [https://imagej.net3D_Viewer 3D_Viewer])
 * Limitations: should be avoided for big datasets (more than 15 time points or 1GB+).
 * Transformations: linear or non-linear
-|[[File:Fiji_main_results.png|500px]]
+|[[File:Fiji_main_results.tif|500px]]
 |}
 
 == Other pages and tools for Registration in ImageJ ==
