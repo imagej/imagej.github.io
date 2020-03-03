@@ -13,7 +13,7 @@
 
 The plugin '''Fijiyama''' (Yet Another Matching and Alignment tool for Fiji) is a generic purpose tool for registration and alignment of 3D image series from various imaging modalities (MRI, X-rays, Microscopy, Photography, ...).
 
-==Multi-modal time-series Registration==
+==Multi-modal time-series registration==
 '''Context:''' 3D images acquired with various imaging devices or during monitoring experiments often come with different orientations and positions, making it difficult to analyze. Fixing this misalignment in 2D is difficult and become intractable in 3D. In addition, as each modality highlights different structures, images from multiple devices can be very dissimilar. In this situation, structures and phenomenon analysis can be compromised.
 
 '''Goal:''' Fijiyama aims to address these issues by helping users '''to register, align and combine multi-modal 3D images or time-series in a unique reference geometry'''. After registration, stacks are combined in a coherent multi-modal and/or multi-time volume that can be explored using the ImageJ viewer.
