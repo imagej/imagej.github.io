@@ -58,7 +58,7 @@ Here we summarize some of the Registration plugins in ImageJ.
 |A registration tool for 3D multimodal time-lapse imaging
 |
 * User-friendly, generic and versatile
-* Headache-free: settings auto-adjust
+* Settings automatic adjust based on your data
 * Movie tutorials and example datasets
 * Automatic 3D registration (two algorithms available)
 * Manual registration (using the [https://imagej.net/3D_Viewer 3D_Viewer])
