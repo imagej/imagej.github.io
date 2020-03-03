@@ -116,7 +116,7 @@ You may want to align Image1 with Image3 in order to compare the three 3D images
 Use the <b>compose transformations function</b> the successive transformations to be composed (in the example T12 then T23), and produce the resulting combined transform.
 
 ===Apply a transformation to a 3d/4d/5d Image===
-This module is a helper function to apply an ITK transformation to a 3D image or to a 4D/5D hyperimage. In case of hyperimage, the transformation is interpreted as a 3D transformation, and is applied to each channel / frame of the hyperimage before the transformed 3d images are gathered back in an hyperstack.
+This module is a helper function to apply an ITK transformation to a 3D image (and soon to a 4D/5D hyperimage in the Gorgeous Grapevine future release, the transformation being interpreted as a 3D transformation, and applied to each channel / frame of the hyperimage before the transformed 3d images are gathered back in an hyperstack).
 
 == Versatility Tests ==
 Fijiyama plugin has been tested on several data (including vegetal and human tissues), at different scales (from micro to macro imaging), and on different imaging modalities (microscopy, MRI, X-rays, and photographies). 
