@@ -20,8 +20,7 @@ The plugin '''Fijiyama''' (Yet Another Matching and Alignment tool for Fiji) is 
 
 '''Versatility:''' Fijiyama is not scale-specific, tissue-specific, nor modality-specific. It has been tested on the most common imaging approaches in biology and medicine: MRI, X-rays, photography...
 
-
-<i>Figure: Registration of (a) MRI images from a grapevine cutting: structures present at day 0 (red), day 35 (green), and at both dates (yellow) ; (b) X-ray (red) and MRI (green) images from a human abdomen ; (c) photographs (left), X-rays (center) and MRI (right) images from a grapevine trunk, in transversal (up) and longitudinal (down) views ; (d) 3D time series from a living grapevine cutting acquired by MRI, using a mask to prevent local tissue deformation from being corrected.</i>
+[[File:Reg_present_1.png|500px]]
 
 ==Dataset with DOI for testing purpose==
 A comprehensive dataset can be found at this link on dryad
