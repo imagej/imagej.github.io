@@ -3,7 +3,6 @@
 | software               = Fiji
 | author                 = Romain Fernandez & Cédric Moisy
 | maintainer             = Romain Fernandez
-| mail                   = romain.fernandezATvignevin.com
 | source                 = {{GitHub|org=Rocsg|repo=Fijiyama}}
 | released               = February 10<sup>th</sup>, 2020
 | status                 = stable, active
@@ -205,6 +204,11 @@ For big datasets (15 and more timepoints) or big images (1GB+), specific tools s
 
 == Citing this work ==
 * R. Fernandez and C. Moisy, ''“Fijiyama: a registration tool for 3D multimodal time-lapse imaging”'' (under review)
+
+== Contact ==
+Issues, feature request ? Please contact romain.fernandezATvignevin.com
+
+
 
 == References ==
 * Hörl, David, Fabio Rojas Rusak, Friedrich Preusser, Paul Tillberg, Nadine Randel, Raghav K. Chhetri, Albert Cardona, et al. 2019. « BigStitcher: Reconstructing High-Resolution Image Datasets of Cleared and Expanded Samples ». Nature Methods 16 (9): 870-74. https://doi.org/10.1038/s41592-019-0501-0.
