@@ -47,7 +47,7 @@ In order to install Fijiyama on your computer, please follow these simple steps:
 
 3. In Fiji, run the '''Update manager''' (Help > Update). Click on "OK" to close the first popup windows, then click on the button '''Manage update sites...'''. 
 
-4. In this list, Activate '''ImageJ-ITK''' (by checking the corresponding checkboxes in the list). 
+4. In this list, activate '''ImageJ-ITK''' by checking the corresponding checkboxes. 
 
 5. and add the '''Fijiyama''' repository (by clicking on the button '''Add update site''', and filling the fields : name = "Fijiyama", site = https://sites.imagej.net/Fijiyama), then check the associated checkbox. 
 
