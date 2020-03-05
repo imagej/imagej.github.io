@@ -39,7 +39,9 @@ When the script is completed, any <code>#@output</code> variables are handled by
 
 == Parameter types ==
 
-A list of possible data types and the corresponding widgets is provided:
+A list of possible data types and the corresponding widgets is provided below.<br>  
+The optional style argument defines how the widget are rendered in the input window.<br>
+See the respective widget sections for a preview of the styles. 
 
 {| style="wikitable nicetable"
 | '''Data type'''
