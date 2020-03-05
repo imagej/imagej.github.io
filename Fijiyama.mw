@@ -39,6 +39,12 @@ The following video shows an example of Fijiyama application: the registration o
 In order to address the complex task of multi-modal registration, computation is based on the Block Matching algorithm (Ourselin <i>et al.</i>, 2000), a generic purpose registration algorithm, developed in the field of medical imaging. Algorithms from ITK and Simple ITK (Elastix algorithms) are available in the plugin as an option. To learn more about the algorithmic bases of the plugin, see section "The maths behind".
 
 ==Installation==
+In order to install Fijiyama on your computer, please follow these simple steps:
+
+1.(if needed): download and install Fiji from https://fiji.sc/
+2.  
+
+
 The following video shows a tutorial for Fijiyama installation:
 
 {{#widget:YouTube|id=scm6UPlfgzU|width=480}}
