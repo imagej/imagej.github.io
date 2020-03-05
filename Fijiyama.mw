@@ -18,9 +18,9 @@ The plugin '''Fijiyama''' (Yet Another Matching and Alignment tool for Fiji) is 
 
 '''Goal:''' Fijiyama aims to address these issues by helping users '''to register, align and combine multi-modal 3D images or time-series in a unique reference geometry'''. After registration, stacks are combined in a coherent multi-modal and/or multi-time volume that can be explored using the ImageJ viewer.
 
-'''Versatility:''' Fijiyama is not scale-specific, tissue-specific, nor modality-specific. It has been tested on the most common imaging approaches in biology and medicine: MRI, X-rays, photography...
+'''Versatility:''' Fijiyama is a generic tool, efficient at any scale, tissue or imaging modality. It has been tested on the most common imaging approaches in biology and medicine: MRI, X-rays, photography...
 
-[[File:Reg_present_1.png|500px]]
+[[File:Reg_present_1.png|700px]]
 
 ==Dataset with DOI for testing purpose==
 A comprehensive dataset can be found at this link on dryad
