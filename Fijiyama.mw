@@ -41,23 +41,22 @@ In order to address the complex task of multi-modal registration, computation is
 ==Installation==
 In order to install Fijiyama on your computer, please follow these simple steps:
 
-1.(if needed): download and install Fiji from https://fiji.sc/
-2.  
+1. (if needed) Download and install Fiji from https://fiji.sc/
+
+2. (if needed) Start Fiji, run the automatic update, then restart Fiji.  
+
+3. In Fiji, run the '''Update manager''' (Help > Update). Click on "OK" to close the first popup windows, then click on the button '''Manage update sites...'''. 
+
+4. In this list, Activate '''ImageJ-ITK''' (by checking the corresponding checkboxes in the list). 
+
+5. and add the '''Fijiyama''' repository (by clicking on the button '''Add update site''', and filling the fields : name = "Fijiyama", site = https://sites.imagej.net/Fijiyama), then check the associated checkbox. 
+
+6. Restart Fiji: a new '''Fijiyama''' entry should be present in the menu Plugins > Registration. (If not, go back to the Update Manager, and check that the repositories are correctly selected :'''ImageJ-ITK''', and '''Fijiyama''').
 
 
 The following video shows a tutorial for Fijiyama installation:
 
 {{#widget:YouTube|id=scm6UPlfgzU|width=480}}
-
-In short, the steps are:
-<br>
-Install Fiji : follow this link https://fiji.sc/ to download and install Fiji. Run it a first in order to let him manage the first updates, then restart it.
-<br>
-Install Fijiyama : In Fiji, run the '''Update manager''' (Help > Update). Click on "OK" to close the popup, then click on the button '''Manage update sites...''' to open the update list. In this list :
-* Activate '''ImageJ-ITK''' (by checking the associated checkboxes in the list). 
-* Add the '''Fijiyama''' repository (by clicking on the button '''Add update site''' and filling the fields : name = "Fijiyama", site = https://sites.imagej.net/Fijiyama), then check the associated checkbox. 
-<br>
-Restart Fiji. A '''Fijiyama''' entry should be visible in the menu Plugins > Registration. If it's not the case, go back to the update manager, and check that the repositories are checked ('''ImageJ-ITK''', and '''Fijiyama''').
 
 ==Preparing your data==
 In order to register your data, Fijiyama needs properly formatted dataset:
