@@ -52,6 +52,7 @@ You should now find the plugin under the sub-menu {{bc | Plugins | MorphoLibJ | 
 # David Legland, Ignacio Arganda-Carreras, Philippe Andrey; [http://bioinformatics.oxfordjournals.org/content/early/2016/07/19/bioinformatics.btw413 MorphoLibJ: integrated library and plugins for mathematical morphology with ImageJ]. Bioinformatics 2016; 32 (22): 3532-3534. doi: 10.1093/bioinformatics/btw413
 
 == See also ==
+* [[Interactive Marker-controlled Watershed]], same idea as this plugin but with user-defined seed points.
 * [[Morphological Segmentation]], a plugin with a graphical user interface to segment 2D/3D images based on morphological operations and the watershed algorithm.
 * [[Classic Watershed]], plugin implementing the original watershed algorithm to segment 2D/3D grayscale images.
 * [http://cmm.ensmp.fr/~beucher/wtshed.html Serge Beucher's site], with graphic descriptions and animations of the watershed algorithms.
