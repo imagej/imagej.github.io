@@ -26,7 +26,7 @@ The plugin '''Fijiyama''' (Yet Another Matching and Alignment tool for Fiji) is 
 A comprehensive dataset can be found at [https://zenodo.org/record/3695736#.Xl6JaEpCdhE this link] on dryad.
 
 ==Demo==
-The following video shows an example of Fijiyama application: The registration of of two stacks of MRI 3D images, collected on grapevine cuttings at different times (see the "Training tutorial" for details).
+The following video shows an example of Fijiyama application: the registration of two stacks of MRI 3D images, collected on grapevine cuttings at different times (see the "Training tutorial" for details).
 
 {{#widget:YouTube|id=QG_i50XJRfc|width=480}}
 
