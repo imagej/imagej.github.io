@@ -1,12 +1,12 @@
 {{Learn | scripting}}
 
-== Introduction ==
+= Introduction =
 
 ImageJ and Fiji are able to run scripts written in [https://imagej.net/Scripting#Supported_languages different languages]. Besides all the differences the approach on how to use the [http://javadoc.imagej.net/ API of ImageJ] is similar for all of them. This article will introduce the basic concepts and is valid for all scripting languages.
 
 {{Notice|The examples are written in Groovy, but they are easy to adapt for any other scripting language ImageJ supports. For the ImageJ1 macro language, refer to the dedicated section in Languages.}}
 
-== Get an image and perform an action ==
+= Get an image and perform an action =
 
 First we want to learn different ways to select an image and perform an action on it. In [[ImageJ1]] the image is represented by an [http://javadoc.imagej.net/ImageJ1/ij/ImagePlus.html ImagePlus] object. The recommended way to select an ImagePlus object is to use [[Script_parameters|Script Parameters]]:
 
@@ -50,7 +50,7 @@ IJ.run(imp, "Gaussian Blur...", "sigma=" + sig)
 
 This is nearly identical to the use of <code>IJ.getImage()</code> and therefore not recommended. The WindowManager class contains some useful methods that can be used to select more than one image (e.g. <code>getImageTitles()</code> and <code>getIDList()</code>.
 
-== Opening images ==
+= Opening images =
 
 In ImageJ there are many different ways to open images (or more general datasets). We want to introduce some of them.
 
@@ -100,7 +100,7 @@ imagePlus = new Opener().openImage(filePath)
 imagePlus.show()
 </source>
 
-== ImagePlus, ImageStack and ImageProcessor Conversion ==
+= ImagePlus, ImageStack and ImageProcessor Conversion =
 
 When working with the ImageJ API you will run into the problem that you have e.g. a ImageProcessor, but what you need right now is a ImagePlus.  
 
@@ -130,7 +130,7 @@ stack.addSlice(ip)
 The following scheme depicts the relations between the different classes.
 [[Image:Image_Class_Hierarchy.png|600px|center]]
 
-== Loop over Roi in Roi Manager ==
+= Loop over Roi in Roi Manager =
 This small IJmacro scriptlet loops over the roi in the Roi Manager, selecting one at a time.
 
 <source lang='java'>
@@ -153,6 +153,74 @@ for i in range(n):
    roi = RM.getRoi(i)
 </source>
 
-== Links ==
+= Calling a script from another script =
+There are different ways to call a script from another script.<br>
+Generally, the called script is executed in the same thread than the calling script, which means that the calling script will wait that the called script terminates before going on with the rest of the execution. 
+
+== Using ImageJ1 commands ==
+ImageJ offers the possibility to call a plugin, macro or script within another one.<br>
+If the plugin is already part of the Menu, the simple command <code>run(PluginName, string Arguments)</code> (or <code>IJ.run</code> for other scripting languages) as returned by the macro-recorder will work. 
+
+However when one wants to call a home-made local macro that is not part of the ImageJ menu, one uses a different command (see below).<br>
+Here the example of a mainMacro calling a subMacro.
+
+- mainMacro
+<source lang='java'>
+IJ.log("Hello world, I'm mainMacro");
+runMacro("C:/structure/temp/subMacro.ijm");
+</source>
+
+- subMacro
+<source lang='java'>
+IJ.log("Hello world, I'm subMacro");
+</source>
+
+It is also possible to pass arguments to the subMacro, it works similar to the command line execution.<br>
+The subMacro needs to use <code>getArgument()</code> (or <code>IJ.imageJ.getArgs</code> of the ImageJ API) to recover the string of argument passed to it.
+
+- mainMacro
+<source lang='java'>
+IJ.log("Hello world, I'm mainMacro");
+runMacro("C:/structure/temp/subMacro.ijm", "Arg1,Arg2");
+</source>
+
+- subMacro
+<source lang='java'>
+Arguments = getArgument()
+IJ.log(Arguments);
+</source>
+
+The command <code>runMacro</code> works only for ijm macro.<br>
+To call a script written in another scripting languages, one should use the <code>runMacroFile(PathToScript, Arguments)</code> (respectively <code>IJ.runMacroFile</code> of the ImageJ API). Still using the <code>getArgument</code> to pass the variables from mainScript to subScript.
+
+This 1st option is however limited to ImageJ1 code style, meaning that one cannot use script parameters, or call any service in subScript.<br>
+Luckily ImageJ2 also have is own way to call a script within a script.
+
+== Using ImageJ2 command ==
+One can use the ScriptService from scijava to run a script within a script.<br>
+Here the example of a mainScript calling a subScript both in Jython.
+
+- mainScript.py
+<source lang='python'>
+#@ ScriptService scriptService
+from ij import IJ
+
+IJ.log("Hello world, I'm mainScript");
+Arguments = ["some_string", "val1", "some_int", 5]
+scriptService.run(r"SomePath/subScript.py", True, Arguments);
+</source>
+
+- subScript.py
+<source lang='python'>
+#@ String (label="some_string") some_string
+#@ Integer (label="some_int") some_int
+IJ.log(some_string)
+IJ.log(str(some_int))
+</source>
+
+subScript must use #@ Script Parameters for the inputs, and mainScript pass the arguments to subScript as a list of <code>field, value</code> 
+
+
+= Links =
 * [https://imagej.net/Developing_Plugins_for_ImageJ_1.x#ImageJ.27s_API ImageJ API examples]
 * [https://github.com/imagej/tutorials/tree/master/howtos/src/main/java/howto  ImageJ tutorials repository]
