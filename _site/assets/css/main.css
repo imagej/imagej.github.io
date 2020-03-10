@@ -2819,7 +2819,7 @@ input, select, textarea {
 	}
 
 		.main.style1 {
-			background: #ffffff;
+			background: #f0f0f0;
 		}
 
 		.main.style2 {
@@ -3318,7 +3318,7 @@ input, select, textarea {
 		/* Main */
 
 			.main {
-				padding: 5em 3em 3em 3em ;
+				padding: 2.5em 3em 3em 3em ;
 			}
 
 		/* Header */
