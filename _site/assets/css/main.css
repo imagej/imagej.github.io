@@ -2047,7 +2047,7 @@ input, select, textarea {
 		}
 
 		header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
-			margin: 0 0 1em 0;
+			margin: 0 0 0.5em 0;
 		}
 
 		header.major p {
@@ -3318,7 +3318,7 @@ input, select, textarea {
 		/* Main */
 
 			.main {
-				padding: 2.5em 3em 3em 3em ;
+				padding: 1.5em 3em 3em 3em ;
 			}
 
 		/* Header */
