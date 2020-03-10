@@ -2914,7 +2914,7 @@ input, select, textarea {
 
 	#header {
 		padding: 9em 0 9em 0 ;
-		background-color: #0b313ad2;
+		background-image: url("images/overlay7.png"), url("../../images/header.jpg");
 		color: rgba(255, 255, 255, 0.75);
 		background-position: top left,						center center,					center center;
 		background-size: auto,							cover,							cover;
@@ -3108,7 +3108,7 @@ input, select, textarea {
 
 	#footer {
 		padding: 6em 0 6em 0 ;
-		background-color: #0b313ad2;
+		background-image: url("images/overlay7.png"), url("../../images/header.jpg");
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
 		background-position: top left,						center center,					center center;
