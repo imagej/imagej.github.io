@@ -2008,7 +2008,7 @@ input, select, textarea {
 	}
 
 	header p {
-		color: #999;
+		color: #000000;
 		margin: 0 0 1.5em 0;
 		position: relative;
 	}
@@ -3008,7 +3008,9 @@ input, select, textarea {
 		}
 
 		#header p {
-			margin: 1em 0 0 0;
+			margin: 4em 0 0 0;
+			font-size: 14pt;
+			font-weight: 500;
 		}
 
 		#header .actions {
@@ -3051,6 +3053,8 @@ input, select, textarea {
 			opacity: 1;
 			position: relative;
 			z-index: 1;
+			margin: 0 3em 0 3em;
+			height: auto;
 		}
 
 			#header .inner .actions {
@@ -3297,12 +3301,12 @@ input, select, textarea {
 
 /* Medium */
 
-	@media screen and (max-width: 980px) {
+	@media screen and (max-width: 2000px) {
 
 		/* List */
 
 			ul.major-icons li {
-				padding: 2em;
+				padding: 1.0em;
 			}
 
 				ul.major-icons li .icon {
