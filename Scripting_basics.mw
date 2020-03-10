@@ -220,6 +220,24 @@ IJ.log(str(some_int))
 
 subScript must use #@ Script Parameters for the inputs, and mainScript pass the arguments to subScript as a list of <code>field, value</code> 
 
+= Calling external programs =
+Similar to the macro language, one can use the <code>exec</code> method available via [https://docs.oracle.com/javase/7/docs/api/java/lang/Runtime.html java.lang.Runtime] class.<br>
+In Jython this looks like,
+
+<source lang='python'>
+from java.lang import Runtime
+
+run = Runtime.getRuntime()
+
+# Option 1: provide a single string command
+proc = run.exec("someCommand")
+
+# Option 2: Provide a string array of command and argument
+proc = run.exec(["someExe", "Arg1", "Arg2"]) 
+
+print("Done")
+</source>
+
 
 = Links =
 * [https://imagej.net/Developing_Plugins_for_ImageJ_1.x#ImageJ.27s_API ImageJ API examples]
