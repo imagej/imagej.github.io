@@ -675,6 +675,11 @@ eval("script",
 );
 </source>
 
+== The exec function ==
+The [https://imagej.net/developer/macro/functions.html#exec <code>exec</code> function] can call any external program or process with optional arguments.<br>
+It can be used to e.g. automatically open a tabular software with a result table after analysis. IT can also be used to open a specific webpage in the default browser.<br>
+See [https://imagej.net/macros/ExecExamples.txt Examples].
+
 = Further documentation =
 
 A complete description of the macro language, a reference of the built-in functions, and examples can be found [https://imagej.net/developer/index.html here].
