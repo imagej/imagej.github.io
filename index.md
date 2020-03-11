@@ -1,6 +1,6 @@
 ---
 title: ImageJ Webpage Demo 2
-layout: default
+layout: home
 ---
 
 <!--
