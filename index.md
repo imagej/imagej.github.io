@@ -1,7 +1,8 @@
 ---
-title: ImageJ Webpage Demo 2
+title: ImageJ (Experimental)
 layout: home
 ---
+
 
 <!--
 You can use HTML elements in Markdown, such as the comment element, and they won't

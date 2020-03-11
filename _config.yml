@@ -1,2 +1,3 @@
 name: ImageJ Webpage Demo 2
 markdown: kramdown
+include: ['_pages']
