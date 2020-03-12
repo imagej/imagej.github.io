@@ -222,7 +222,8 @@ subScript must use #@ Script Parameters for the inputs, and mainScript pass the 
 
 = Calling external programs =
 Similar to the macro language, one can use the <code>exec</code> method available via [https://docs.oracle.com/javase/7/docs/api/java/lang/Runtime.html java.lang.Runtime] class.<br>
-In Jython this looks like,
+Note that the code below execute the external program and directly execute the rest of the script. It does not wait for the external process to finish (which is also possible by doing some extra command on the <code>proc</code> object).<br>
+In Jython this looks like:
 
 <source lang='python'>
 from java.lang import Runtime
@@ -237,7 +238,6 @@ proc = run.exec(["someExe", "Arg1", "Arg2"])
 
 print("Done")
 </source>
-
 
 = Links =
 * [https://imagej.net/Developing_Plugins_for_ImageJ_1.x#ImageJ.27s_API ImageJ API examples]
