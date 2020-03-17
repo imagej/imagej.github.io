@@ -46,6 +46,18 @@ Use Macro function (ver2.3.1-)
 # Select menu item ( Plugins -> OlympusViewer -> Viewer )
 # Select image file.
 # You can see that Macro command was registered.
+== Macro sample code ==
+Sample for opening images in a directory:
+<source lang="plain">
+input = "D:/image/test/";
+
+list = getFileList(input);
+for (i = 0; i < list.length; i++){
+	path = input + list[i];
+	run("Viewer", "open=[path]");
+}
+</source>
+
 == See Also ==
 This plugin uses jai-imageio.
 [[Category:Plugins]]
