@@ -6,7 +6,7 @@
 | filename               = 
 | source                 = The source code of plugin is in Olympus_Viewer.jar. The source code of native library is not provided.
 | released               = 2015/12/09: First version Ver1.1.1
-| latest version         = 2017/09/22 Ver2.2.1
+| latest version         = 2020/03/17 Ver2.3.1
 | status                 = 
 | category               = [[:Category:Import-Export]]
 | website                = 
@@ -22,13 +22,13 @@ Windows
 # Execute OlympusViewer-win.exe. This file is in self-extracting format.
 # If you agree to our end user license agreement, extract it to your specified folder.
 # Unzip the OlympusViewer-package.zip
-# Install vs2008 runtime. The runtime is in OlympusViewer-package/WinRuntime. If you use 32bit OS, install vcredist_x86.exe. If you use 64bit OS, install vcredist_x64.exe
+# Install vs2017 runtime if the runtime is not installed in your PC. The runtime is in OlympusViewer-package/WinRuntime. If you use 32bit OS, install VC_redist.x86.exe. If you use 64bit OS, install VC_redist.x64.exe
 # Copy "OlympusViewer" folder in "OlympusViewer-package" folder to the plugins folder of your ImageJ directory. If ImageJ plugin folder already has OlympusViewer folder, delete the folder before copying.
 Mac
 # Download OlympusViewer-mac.dmg [http://www.olympus-lifescience.com/OlympusImageJPlugin/OlympusViewer_Mac here]
 # Double click the dmg file.
 # If you agree to our end user license agreement, extract it.
-# Copy "OlympusViewer-Ver2.1.1" folder to the plugins folder of your ImageJ directory. If ImageJ plugin folder already has OlympusViewer folder, delete the folder before copying.
+# Copy "OlympusViewer-Ver2.3.1" folder to the plugins folder of your ImageJ directory. If ImageJ plugin folder already has OlympusViewer folder, delete the folder before copying.
 == How to use ==
 File Open
 # Select a menu item ( Plugins -> OlympusViewer -> Viewer )
@@ -41,6 +41,11 @@ Drag & Drop (ver2.1.1-)
 Virtual stack mode for large images (ver2.2.1-)
 # Select a menu item ( Plugins -&gt; OlympusViewer -&gt; DragDrop -&gt; Use Virtual Stack for large images )
 # Drop a image file.
+Use Macro function (ver2.3.1-)
+# Enable Macro Record function.
+# Select menu item ( Plugins -> OlympusViewer -> Viewer )
+# Select image file.
+# You can see that Macro command was registered.
 == See Also ==
 This plugin uses jai-imageio.
 [[Category:Plugins]]
