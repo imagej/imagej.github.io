@@ -76,7 +76,7 @@ then the plane is divided into <math>4</math> equal sections, and a line is draw
 * '''Recommended minimum''': if checked, then the above three parameters are set to the recommended minimum values. In our tests we found that with these values the results are quite stable, and fitting unlikely to fail. However, these minimums are not guaranteed to be the best settings for your image.
 * '''Show radii''': if checked, then the radii of the fitted ellipsoid are shown in the results table.
 
-==== Convergence Analysi s====
+==== Convergence Analysis ====
 It is helpful to run a convergence analysis to determine settings that lead to a stable result in a reasonable amount of time. We recommend running the following macro on a typical image from your experiments.
 
 ==== Results ====
