@@ -1,0 +1,22 @@
+{{Infobox
+| name                   = RiFRET
+| software               = ImageJ
+| author                 = J. Roszik, D. Lisboa, J. Szöllosi, G. Vereb
+| maintainer             = {{Person|Camlloyd}}
+| source                 = {{GitHub}}
+| released               = 2009
+| status                 = active
+| category               = [[:Category:Plugins]] [[:Category:Citable]]
+| website                = [https://biophys.med.unideb.hu/en/rifret https://biophys.med.unideb.hu/en/rifret]
+}}
+
+'''An ImageJ plugin for intensity-based three filter-set FRET'''
+
+== Introduction ==
+
+== Installation ==
+
+== Citation ==
+
+== See also ==
+If you are using the acceptor photobleaching FRET method, we recommend our other FRET plugin [[AccPbFRET]].
