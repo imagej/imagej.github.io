@@ -16,7 +16,7 @@ There are three common methods for constructing an uber-JAR:
 <li>'''Shaded.''' Same as unshaded, but rename (i.e., "shade") all packages of all dependencies.
   <ul>
   <li>'''Pro:''' Works with Java's default class loader. Avoids some (not all) dependency version clashes.</li>
-  <li>'''Con:''' Files present in multiple JAR files with the same path (e.g., <code>META-INF/services/javax.script.ScriptEngineFactory</code>) will overwrite one another, resulting in faulty behavior. As a workaround, if you use [[Maven]], you can add the following lines to the shade plugin section of the POM  to apply the appending tranform to multiple resources with the same name (e.g. <code>org.scijava.plugin.Plugin</code> or <code>mpicbg.spim.data.generic.sequence.ImgLoaderIo</code>). Both are annotations necessary to find interface or abstract class implementation during runtime across JARs:
+  <li>'''Con:''' Files present in multiple JAR files with the same path (e.g., <code>META-INF/services/javax.script.ScriptEngineFactory</code>) will overwrite one another, resulting in faulty behavior. As a workaround, if you use [[Maven]], you can add the following lines to the shade plugin section of the POM  to apply the appending tranform to multiple resources with the same name (e.g. <code>META-INF/json/org.scijava.plugin.Plugin</code> or <code>META-INF/json/mpicbg.spim.data.generic.sequence.ImgLoaderIo</code>). Both are annotations necessary to find interface or abstract class implementation during runtime across JARs:
 <source lang=xml>
 <transformers combine.children="append">
   <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
