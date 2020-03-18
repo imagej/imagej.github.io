@@ -1,0 +1,22 @@
+{{Infobox
+| name                   = AccPbFRET
+| software               = ImageJ
+| author                 = J. Roszik, J. Szöllosi, G. Vereb
+| maintainer             = {{Person|Camlloyd}}
+| source                 = {{GitHub}}
+| released               = 2008
+| status                 = active
+| category               = [[:Category:Plugins]] [[:Category:Citable]]
+| website                = [https://biophys.med.unideb.hu/en/accpbfret https://biophys.med.unideb.hu/en/accpbfret]
+}}
+
+'''An ImageJ plugin for analysis of acceptor photobleaching FRET images'''
+
+== Introduction ==
+
+== Installation ==
+
+== Citation ==
+
+== See also ==
+For live cell imaging, we recommend our other FRET plugin [[RiFRET]].
