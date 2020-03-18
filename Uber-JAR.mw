@@ -24,7 +24,18 @@ There are three common methods for constructing an uber-JAR:
   </transformer>
 </transformers>
 </source>
-If you need to append more than one file, you unfortunately need to list multiple '''transformer implementations''' as wildcards are not allowed. An example of a full maven-shade-plugin can be found [https://github.com/PreibischLab/multiview-reconstruction/blob/96d0f417638dab108f942e49ffa26024b48053f0/pom.xml#L271 here]. 
+If you need to append more than one file, you unfortunately need to list multiple '''transformer implementations''' as wildcards are not allowed. For appending two files, the entry would look like this:
+<source lang=xml>
+<transformers combine.children="append">
+	<transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+		<resource>META-INF/json/org.scijava.plugin.Plugin</resource>
+	</transformer>
+	<transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+		<resource>META-INF/json/mpicbg.spim.data.generic.sequence.ImgLoaderIo</resource>
+	</transformer>
+</transformers>
+</source>
+An example of a full maven-shade-plugin can be found [https://github.com/PreibischLab/multiview-reconstruction/blob/96d0f417638dab108f942e49ffa26024b48053f0/pom.xml#L271 here] (single entry) and [https://github.com/PreibischLab/BigStitcher/blob/eb1cc4af404ae83715135894920ed9c3b5e42385/pom.xml#L208 here] (multiple entries). 
   </li>
   <li>'''Tools:''' [http://maven.apache.org/plugins/maven-shade-plugin/ Maven Shade Plugin]</li>
   </ul>
