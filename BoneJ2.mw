@@ -491,7 +491,7 @@ The input image must be 2D or 3D, 8-bit and binary. Hyperstacks are not supporte
 ==== Differences to BoneJ1 ====
 Calls the latest version of [[Skeletonize3D]].
 
-== Slice geometry (WIP) ==
+== Slice geometry ==
 Menu path ''Plugins &gt; BoneJ &gt; Slice Geometry''
 
 Slice Geometry calculates cross-sectional geometric properties of shapes: cross-sectional area, centroid, mean density, second moment of area, section modulus, Feret diameter and local thickness (2D and 3D). Measurements can be limited to a rectangular ROI. If your bone is not well aligned with the image axes, you may find it useful to align the bone to its principal axes using Moments of Inertia or by exporting a transformed volume from the ImageJ 3D Viewer. Importantly, no assumption of geometry is made for any of the measurements.
@@ -534,12 +534,12 @@ A 2D or 3D binary image.
 * '''Theta''': angle of minor axis (axis for Imin, the long axis of your specimen's cross section) from the horizontal, ranging from <math>-\pi/2</math> to <math>\pi/2</math>, with positive as clockwise
 * '''R1''': maximum chord length from minor axis
 * '''R2''': maximum chord length from major axis
-* '''Imin''': Second moment of area around major axis
-* '''Imax''': Second moment of area around minor axis
-* '''Ipm''': Product moment of area (= 0 if no errors are present, e.g. due to pixelation)
-* '''Zmax''': Section modulus around major axis (Imax / R2)
-* '''Zmin''': Section modulus around minor axis (Imin / R1)
-* '''Zpol''': Polar section modulus
+* '''I<sub>min</sub>''': Second moment of area around major axis
+* '''I<sub>max</sub>''': Second moment of area around minor axis
+* '''I<sub>pm</sub>''': Product moment of area (= 0 if no errors are present, e.g. due to pixelation)
+* '''Z<sub>max</sub>''': Section modulus around major axis (''I''<sub>max</sub> / R2)
+* '''Z<sub>min</sub>''': Section modulus around minor axis (''I''<sub>min</sub> / R1)
+* '''Z<sub>pol</sub>''': Polar section modulus
 * '''Feret Min''': Minimum caliper width
 * '''Feret Max''': Maximum caliper width
 * '''Feret Angle''': Orientation of maximum caliper width
