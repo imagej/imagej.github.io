@@ -132,9 +132,9 @@ Fijiyama can be used to quantify the resulting mismatch. This measurement proces
 {{#widget:YouTube|id=xTOQIHieH0o|width=480}}
 
 ==Versions of Fijiyama==
-Fijiyama is a living project, with frequent updates. Thanks to the Fiji updater, your version is updated each time the fiji update starts.
+Fijiyama is a living project, with frequent updates. Thanks to the Fiji updater, your version is updated each time the Fiji update starts.
 
-Major updates include new features released, or major refactoring, while minor updates (change in the release time) should not modify deeply the behaviour of the plugin, to keep results reproducible. These two informations can be seen in the launching interface of Fijiyama.
+Major updates include new features released, or major refactoring, while minor updates (change in the release time) should not modify deeply the behaviour of the plugin, to keep results reproducible. These information can be seen in the launching interface of Fijiyama.
 
 Major updates are symbolized with a change in the plugin version name.
 For minor updates, only the release time is modified.
