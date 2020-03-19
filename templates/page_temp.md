@@ -1,7 +1,7 @@
 ---
 title: YOUR-POST-TITLE
 category:
-layout: post
+layout: page
 ---
 
 <!-- 
