@@ -125,7 +125,7 @@ See an example in the video below : Human abdomen CT-scan and MRI registration
 {{#widget:YouTube|id=ETCnWIqoDI0|width=480}}
 
 == Accuracy Test==
-Fijiyama can be used to quantify the resulting mismatch. This measurement process is integrated in the plugin as an extra functionality, to help users evaluating their results, as illustrated in this video : “Accuracy Test : Quantifying mismatch” 
+Fijiyama can be used to quantify the resulting mismatch. This measurement process is integrated in the plugin as an extra functionality, to help users evaluating their results, as illustrated in this video : “Fijiyama : quantifying average mismatch after registration” 
 
 {{#widget:YouTube|id=xTOQIHieH0o|width=480}}
 
