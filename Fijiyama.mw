@@ -121,7 +121,7 @@ This module is a helper function to apply an ITK transformation to a 3D image (a
 Fijiyama plugin has been tested on several data (including vegetal and human tissues), at different scales (from micro to macro imaging), and on different imaging modalities (microscopy, MRI, X-rays, and photographies). 
 
 See an example in the video below : Human abdomen CT-scan and MRI registration
-(Courtesy of Samuel Merigeaud, Tridilogy SARL)
+(Courtesy of Dr. Samuel Mérigeaud, Tridilogy SARL)
 {{#widget:YouTube|id=ETCnWIqoDI0|width=480}}
 
 == Accuracy Test==
