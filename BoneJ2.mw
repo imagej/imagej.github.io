@@ -78,7 +78,7 @@ then the plane is divided into <math>4</math> equal sections, and a line is draw
 
 ==== Convergence Analysis ====
 It is helpful to run a convergence analysis to determine settings that lead to a stable result in a reasonable amount of time. We recommend running the following macro on a typical image from your experiments.
-
+<source lang="javascript">
  //number of directions to draw probes
  nDirsMax = 32768; //<- edit to suit your needs
  //number of lines per direction
@@ -100,7 +100,7 @@ It is helpful to run a convergence analysis to determine settings that lead to a
      	row++;
      }
  }
-
+</source>
 This macro will output two tables, one with anisotropy results and one logging directions, lines, and duration. To complete the convergence analysis the two tables have to be copy-pasted into a spreadsheet so that anisotropy results can be plotted alongside timings and input parameters.
 
 ==== Results ====
