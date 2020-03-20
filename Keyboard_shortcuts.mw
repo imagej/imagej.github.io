@@ -28,7 +28,11 @@ Either put the code of the macro in the file macro>StartupMacros.ijm (or Startup
 The code of the macro must declare a keyboard shortcut in square bracket as such
 <source>
 macro "Macro 1 [1]" {
-    print("The user pressed '1'");
+    print("The user pressed '1' on the top row of the keyboard");
+    } 
+
+macro "Macro 1 [n1]" {
+    print("The user pressed '1' on the numerical keypad");
     } 
 
 macro "Macro 2 [h]" {
@@ -41,8 +45,6 @@ macro "Macro 3 [H]"{
 </source>
 
 The key defined in square bracket is case sensitive ! If a capital letter is used then the shortcut is "shift + key".
-
-For digit, the shortcut is functional with the row of digits at the top of the keyboard. It might not work with the keypad on the right.
 
 === Option 2: Save the macro(s) as a toolset ===
 The shortcut should be defined in square bracket like for option 1, but instead of editing the existing StartupMacros file, the macros(s) can be saved as a separate MyShortcut.ijm or .txt file in the ImageJ/Fiji subfolder <code>macros/toolsets</code>.<br>
