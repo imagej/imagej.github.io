@@ -1,7 +1,7 @@
 {{Infobox
 | name                   = AplimTools
 | software               = Fiji
-| author                 = Romain Fernandez
+| author                 = Romain Fernandez & Bamba Diop
 | maintainer             = Romain Fernandez
 | source                 = {{GitHub|org=Rocsg|repo=AplimTools}}
 | released               = March 23<sup>th</sup>, 2020
