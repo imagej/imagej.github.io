@@ -10,12 +10,16 @@
 }}
 
 AplimTools is a set of image processing tools for magnetic resonance images of plants. These tools were created in the context of the Aplim project (see the [https://umr-agap.cirad.fr/recherche/projets-de-recherche/aplim project official page] ).
- 
+
+<br> 
+
 ==Plugin features==
 * T1/T2/M0 maps computation from spin echo sequences (multiple TR and/or TE)
 * Time-lapse exploration of T1/T2/M0 parameters in interest areas
 
 [[File:Img_spectrum.png|900px|thumb|center|Time-lapse exploration of parameters in a plant under drought stress]]
+
+<br> 
 
 ==Installation==
 In order to install AplimTools on your computer, please follow these simple steps:
@@ -32,9 +36,7 @@ In order to install AplimTools on your computer, please follow these simple step
 
 6. Restart Fiji: a new '''AplimTools''' entry should be available in the menu Plugins > Analyze. If not, go back to the Update Manager, and check that the repositories '''ImageJ-ITK''', '''Fijiyama''', and '''AplimTools''' are correctly selected.
 
-
-
-
+<br> 
 
 ==Aplim T1/T2/M0 maps importer==
 ===The science behind===
@@ -67,6 +69,8 @@ Unit for the channels 2 and 3 are milliseconds, what mean you can use it like it
 <br>
 For time-lapse experiments, one can compute such a 4D MR hyperimage at successive timepoints, and register and combine them in a 5D MR hyperimage (the same, with an additional slicer to walk through time). Registration and data combining can be done using the plugin [Fijiyama], using the Series registration mode .
 
+<br> 
+
 ==Aplim T1/T2/M0 curves explorer ==
 ===The science behind===
 This plugin helps exploring the relaxation curves on a point, the neighbourhood of a point, or a user-defined roi, using non-linear fit (as above). The visualization of these curves (middle panels) is enriched by semi-log graphs of the T1 and T2 values (right-top panel), and a distribution of these values in the selected area (right-bottom panel). This explorer can open time-lapse 5D hyperimages, to give insight of the evolution of these parameters along the experiment.
@@ -80,15 +84,19 @@ The plugin ask for the MR hyperimage, and run the explorer.
 ===Exploring the results===
 A window appear, that let you explore your data clicking on your images. Controls are explained in the help menu that opens when hitting the 'h' key of your keyboard.
 
+<br> 
+
 == References ==
 * José G. Raya, Olaf Dietrich, Annie Horng, Jürgen Weber, Maximilian F. Reiser,
 Christian Glaser, 2010. « T2 measurement in articular cartilage: Impact of the fitting method on accuracy and precision at low SNR ». Magnetic Resonance in Medicine 63:181–193 (2010)
 
-
+<br> 
 
 == Software dependencies acknowledgements==
 * Johannes Schindelin et al for [https://imagej.net/Fiji Fiji] (Schindelin et al., 2012)
 * Karl Schmidt and Curtis Rueden for tips seen in the MRI Analysis Calculator and in the CurveFitters
+
+<br> 
 
 == License ==
 This program is an open-source '''free software''': it can be redistributed and/or modified under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
