@@ -42,8 +42,6 @@ This plugin compute M0, T1 and T2 maps pixelwise from a given set of spin-echo s
 
 First a 3d registration is computed to align precisely the successive images, using libraries of the [Fijiyama] plugin. Then the rice noise level is estimated, and the M0, T1 and T2 parameters are estimated, fitting mono or bi-exponential curves, corrected with the measured rice noise (reference : [[https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.22178 [Raya et al., 2010]]]. 
 
-
-
 ===Preparing your data===
 This plugin needs properly formatted dataset, a SL_RAW directory (whatever be its exact name) with exported data in it. To construct it, use the BionanoNMRI scripts, with the processing.bnp '''MAKE_CLEAN''' parameter set to '''yes'''.
 
@@ -68,8 +66,6 @@ The output image is a 4D MR hyperimage. The "channels" slicer helps you to explo
 Unit for the channels 2 and 3 are milliseconds, what mean you can use it like it, without any additional conversion.
 <br>
 For time-lapse experiments, one can compute such a 4D MR hyperimage at successive timepoints, and register and combine them in a 5D MR hyperimage (the same, with an additional slicer to walk through time). Registration and data combining can be done using the plugin [Fijiyama], using the Series registration mode .
-
-
 
 ==Aplim T1/T2/M0 curves explorer ==
 ===The science behind===
