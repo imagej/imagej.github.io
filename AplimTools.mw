@@ -1,7 +1,86 @@
-AplimTools is a set of image processing tools for magnetic resonance images of plants. Main features : 
-- T1/T2/M0 maps computation from spin echo sequences (multiple TR and/or TE)
-- Time-lapse exploration of T1/T2/M0 parameters in interest areas
+{{Infobox
+| name                   = AplimTools
+| software               = Fiji
+| author                 = Romain Fernandez
+| maintainer             = Romain Fernandez
+| source                 = {{GitHub|org=Rocsg|repo=AplimTools}}
+| released               = March 23<sup>th</sup>, 2020
+| status                 = unstable, active
+| category               = [[:Category:Analysis|Analysis]]
+}}
 
-The tools were created in the context of the Aplim project, to develop of magnetic resonance technologies (NMR, MRI, nanoprobes) to support integrative biology of plant response to abiotic and biotic constraints (see the [https://umr-agap.cirad.fr/recherche/projets-de-recherche/aplim Aplim projet official page] ).
+AplimTools is a set of image processing tools for magnetic resonance images of plants. These tools were created in the context of the Aplim project, to develop of magnetic resonance technologies (NMR, MRI, nanoprobes) to support integrative biology of plant response to abiotic and biotic constraints (see the [https://umr-agap.cirad.fr/recherche/projets-de-recherche/aplim Aplim projet official page] ).
+ 
+==Plugin features==
+* T1/T2/M0 maps computation from spin echo sequences (multiple TR and/or TE)
+* Time-lapse exploration of T1/T2/M0 parameters in interest areas
 
 [[File:Img_spectrum.png|900px|thumb|center|Time-lapse exploration of parameters in a plant under drought stress]]
+
+==Installation==
+In order to install AplimTools on your computer, please follow these simple steps:
+
+1. (if needed) Download and install Fiji from https://fiji.sc/ ; start Fiji, and let it automatically update. Then restart Fiji.  
+
+2. Open Fiji, run the '''Update manager''' (Help > Update). Click on "OK" to close the first popup windows, then click on the button '''Manage update sites...'''. 
+
+3. In this list, activate '''ImageJ-ITK''' by checking the corresponding checkboxes. Don't close the window, or reopen it you read this to late.
+
+4. Add the '''Fijiyama''' repository (by clicking on the button '''Add update site''', and filling the fields : name = "Fijiyama", site = https://sites.imagej.net/Fijiyama), then check the associated checkbox. Don't close the window, or reopen it you read this to late.
+
+5. Add the '''AplimTools''' repository (by clicking on the button '''Add update site''', and filling the fields : name = "AplimTools", site = https://sites.imagej.net/AplimTools), then check the associated checkbox. Now you can click on '''Close'''.
+
+6. Restart Fiji: a new '''AplimTools''' entry should be available in the menu Plugins > Analyze. If not, go back to the Update Manager, and check that the repositories '''ImageJ-ITK''', '''Fijiyama''', and '''AplimTools''' are correctly selected.
+
+
+
+
+
+==Aplim T1/T2/M0 maps importer==
+===The science behind===
+This plugin compute M0, T1 and T2 maps pixelwise from a given set of spin-echo sequences, acquired with different repetition times and/or different echo times.
+
+First a 3d registration is computed to align precisely the successive images, using libraries of the [Fijiyama] plugin. Then the rice noise level is estimated, and the M0, T1 and T2 parameters are estimated, fitting mono or bi-exponential curves, corrected with the measured rice noise (reference : [[https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.22178 [Raya et al., 2010]]]. 
+
+
+
+===Preparing your data===
+This plugin needs properly formatted dataset, a SL_RAW directory (whatever be its exact name) with exported data in it. To construct it, use the BionanoNMRI scripts, with the processing.bnp '''MAKE_CLEAN''' parameter set to '''yes'''.
+
+===Running the plugin===
+The plugin ask for the SL_RAW directory (see above), then an output directory to write results, before asking some questions about the computation you want:
+* Register data ? Answer '''No''' means you are really confident about the exact positioning of the object. You should answer '''Yes'''
+* Register T1 and T2 ? When providing T1 and T2 sequence, to get proper results and analyze, you should answer '''Yes''', in order all the exported results (T2, M0 and T1 maps being aligned)
+* Register Manually ? Answer '''Yes''' if the data are really misaligned (angle > 30 degrees, translation > the object half-size)
+* Register Dense ? Answer '''Yes''' if the object could undergo some deformations during experiments (growing, stretching in the antenna, drying...)
+* Register successive T1 ? Answer '''No''' means you are really confident about the exact positioning of the object. You should answer '''Yes'''
+* Use T2 in T1 sequence ? You should.
+After all these questions, the plugin run the registrations, and compute the maps. It can last a while (typically 1 min. for a 512 x 512 slice).
+
+Finally, the maps are concatenated in an hyperimage, saved in your output directory
+
+===Exploring the results===
+The output image is a 4D MR hyperimage. The "channels" slicer helps you to explore the 4th dimension, that is the images computed, and the input spin echo images. In detail :
+* Channels 1,2 3 are respectively the M0 map, T1 map, T2 map (see this information in the slice title, just upside the image pixels)
+* Channels 4,5, ..... NR-3 are the successive NR repetition times of the "T1 sequence", in increasing order.
+* Channels NR-2,..... NR-2+NE are the successive NE echo times of the "T2 sequence", in increasing order.
+<br>
+Unit for the channels 2 and 3 are milliseconds, what mean you can use it like it, without any additional conversion.
+<br>
+For time-lapse experiments, one can compute such a 4D MR hyperimage at successive timepoints, and register and combine them in a 5D MR hyperimage (the same, with an additional slicer to walk through time). Registration and data combining can be done using the plugin [Fijiyama], using the Series registration mode .
+
+
+
+==Aplim T1/T2/M0 curves explorer ==
+===The science behind===
+This plugin helps exploring the relaxation curves on a point, the neighbourhood of a point, or a user-defined roi, using non-linear fit (as above). The visualization of these curves (middle panels) is enriched by semi-log graphs of the T1 and T2 values (right-top panel), and a distribution of these values in the selected area (right-bottom panel). This explorer can open time-lapse 5D hyperimages, to give insight of the evolution of these parameters along the experiment.
+
+
+===Preparing your data===
+This plugin needs properly formatted dataset, a 4D MR hyperimage or a 5D MR hyperimage (see above).
+
+===Running the plugin===
+The plugin ask for the MR hyperimage, and run the explorer. 
+
+===Exploring the results===
+A window appear, that let you explore your data clicking on your images. Controls are explained in the help menu that opens when hitting the 'h' key of your keyboard.
