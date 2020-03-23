@@ -9,9 +9,9 @@ layout: page
 
 {% for category in site_categories%}
 - {{ category }}{% for page in site.pages %}{% if page.category == category %}
-    - <a href="{{ base.url }}{{ page.url }}">{{ page.title }}</a> {% endif %}{% endfor %}
+    - <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a> {% endif %}{% endfor %}
 {% endfor %}
 
-Original string (map): {{site_categories}}
+Original string (map): {{ site_categories }}
 
 </div>
