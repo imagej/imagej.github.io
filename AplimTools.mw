@@ -2,6 +2,6 @@ AplimTools is a set of image processing tools for magnetic resonance images of p
 - T1/T2/M0 maps computation from spin echo sequences (multiple TR and/or TE)
 - Time-lapse exploration of T1/T2/M0 parameters in interest areas
 
-The tools were created in the context of the Aplim project, to develop of magnetic resonance technologies (NMR, MRI, nanoprobes) to support integrative biology of plant response to abiotic and biotic constraints [[[https://umr-agap.cirad.fr/recherche/projets-de-recherche/aplim Aplim]]] .
+The tools were created in the context of the Aplim project, to develop of magnetic resonance technologies (NMR, MRI, nanoprobes) to support integrative biology of plant response to abiotic and biotic constraints [[https://umr-agap.cirad.fr/recherche/projets-de-recherche/aplim Aplim]] .
 
 [[File:Img_spectrum.png|900px|thumb|center|alt text]]
