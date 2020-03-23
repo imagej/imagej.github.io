@@ -9,7 +9,7 @@
 | category               = [[:Category:Analysis|Analysis]]
 }}
 
-AplimTools is a set of image processing tools for magnetic resonance images of plants. These tools were created in the context of the Aplim project (see the [https://umr-agap.cirad.fr/recherche/projets-de-recherche/aplim Aplim project official page] ).
+AplimTools is a set of image processing tools for magnetic resonance images of plants. These tools were created in the context of the Aplim project (see the [https://umr-agap.cirad.fr/recherche/projets-de-recherche/aplim project official page] ).
  
 ==Plugin features==
 * T1/T2/M0 maps computation from spin echo sequences (multiple TR and/or TE)
