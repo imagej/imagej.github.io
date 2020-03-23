@@ -84,3 +84,22 @@ The plugin ask for the MR hyperimage, and run the explorer.
 
 ===Exploring the results===
 A window appear, that let you explore your data clicking on your images. Controls are explained in the help menu that opens when hitting the 'h' key of your keyboard.
+
+
+== References ==
+* José G. Raya, Olaf Dietrich, Annie Horng, Jürgen Weber, Maximilian F. Reiser,
+Christian Glaser, 2010. « T2 measurement in articular cartilage: Impact of the fitting method on accuracy and precision at low SNR ». Magnetic Resonance in Medicine 63:181–193 (2010)
+
+
+
+== Software dependencies acknowledgements==
+* Johannes Schindelin et al for [https://imagej.net/Fiji Fiji] (Schindelin et al., 2012)
+* Karl Schmidt and Curtis Rueden for tips seen in the MRI Analysis Calculator and in the CurveFitters
+
+== License ==
+This program is an open-source '''free software''': it can be redistributed and/or modified under the terms of the '''GNU General Public License''' as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt http://www.gnu.org/licenses/gpl.txt]).
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.  
+----
+[[Category:Plugins]]
+[[Category:Analysis]]
