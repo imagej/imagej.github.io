@@ -11,9 +11,11 @@
 | website                = 
 }}
 
-Need to write docs here for how to use this plugin for measuring chromatic shift in multi channel z stacks, or 2D images of a field of beads, and apply the transform to the biological  images. 
+I uploaded two HowTos to YouTube that illustrate the basic usage of the plugin, which makes use of the algorithms implemented in [[BigStitcher]].
 
-I suggest a more descriptive less technical name for the plugin might be better, eg
-Multi Channel Image Alignment with Fiducial Markers (beads) or soimnething shorter
+Video 1: [https://www.youtube.com/watch?v=SKW1xwhsxdo Using the Descriptor-based Registration and automate it through macro-recording]
 
-Dan
+Video 2: [https://www.youtube.com/watch?v=5qL0jR-hqNs Calling the Descriptor-based Registration Fiji macro from the command line]
+
+
+Dan White: Need to write docs here for how to use this plugin for measuring chromatic shift in multi channel z stacks, or 2D images of a field of beads, and apply the transform to the biological  images.
