@@ -1,5 +1,6 @@
 ---
 title: YOUR-POST-TITLE
+author: YOUR NAME
 category:
 layout: post
 ---

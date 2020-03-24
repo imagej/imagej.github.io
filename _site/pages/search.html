@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Search demo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+        <section id="page" class="main style1">
+            <div class="container">
+                <header class="major special">
+					<h2>Search demo</h2>
+				</header>
+					<ul class = "actions special">
+						<li><a href="/index" class="button icon solid fa-home">Home</a></li>
+					</ul>
+					<div class="box alt"></div>
+						<!-- markdown content pushed here -->
+						<form action="search" method="get">
+    <label for="search-box">Enter text to search:</label>
+    <input type="text" id="search-box" name="query" />
+    <input type="submit" value="search" onclick="displaySearchResults();" />
+</form>
+
+<ul id="search-results"></ul>
+
+<script>
+    window.store = {
+        
+            "use-categories-html": {
+                "title": "List of categories",
+                "author": "",
+                "category": "",
+                "content": "      Analysis              Example 1              Colocalization              Example 3              Data              Example 2              Development              Example 4              Help              Example 5              Original string (map): AnalysisColocalizationDataDevelopmentHelp",
+                "url": "/use/categories.html"
+            }
+            , 
+        
+            "use-example-1-html": {
+                "title": "Example 1",
+                "author": "Edward Evans",
+                "category": "Analysis",
+                "content": "Example 1Analysis",
+                "url": "/use/example_1.html"
+            }
+            , 
+        
+            "use-example-2-html": {
+                "title": "Example 2",
+                "author": "Mel Hammond",
+                "category": "Data",
+                "content": "Example 2Data",
+                "url": "/use/example_2.html"
+            }
+            , 
+        
+            "use-example-3-html": {
+                "title": "Example 3",
+                "author": "Sam Fuzzy Face",
+                "category": "Colocalization",
+                "content": "Example 3Colocalization",
+                "url": "/use/example_3.html"
+            }
+            , 
+        
+            "use-example-4-html": {
+                "title": "Example 4",
+                "author": "Wallie the cat",
+                "category": "Development",
+                "content": "Example 4Development",
+                "url": "/use/example_4.html"
+            }
+            , 
+        
+            "use-example-5-html": {
+                "title": "Example 5",
+                "author": "Dad",
+                "category": "Help",
+                "content": "Example 5Help",
+                "url": "/use/example_5.html"
+            }
+            , 
+        
+            "": {
+                "title": "ImageJ (Experimental)",
+                "author": "",
+                "category": "",
+                "content": "",
+                "url": "/"
+            }
+            , 
+        
+            "pages-learn-html": {
+                "title": "Learn about ImageJ",
+                "author": "",
+                "category": "",
+                "content": "Paragraph 1: While in Clojure one is able to declare types if desired, it’s not required; the low computational requirements of the plugin do not invite to make it verbose unnecessarily. But java demands type declarations just so that the plugin can be compiled and thus a binary .class file generated.Section example 1Paragraph 2: While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.Section example 2Paragraph 3: While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.Section example 3Paragraph 4: While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.Markdown Table Example            Item 1      Item 2      Item 3                  A      B      C              1      2      3      ",
+                "url": "/pages/learn.html"
+            }
+            , 
+        
+            "templates-page-temp-html": {
+                "title": "YOUR-POST-TITLE",
+                "author": "YOUR NAME",
+                "category": "",
+                "content": "Enter you text here.",
+                "url": "/templates/page_temp.html"
+            }
+            , 
+        
+            "templates-post-temp-html": {
+                "title": "YOUR-POST-TITLE",
+                "author": "YOUR NAME",
+                "category": "",
+                "content": "Enter you text here.",
+                "url": "/templates/post_temp.html"
+            }
+            , 
+        
+            "pages-search-html": {
+                "title": "Search demo",
+                "author": "",
+                "category": "",
+                "content": "    Enter text to search:        ",
+                "url": "/pages/search.html"
+            }
+            , 
+        
+            "assets-css-style-css": {
+                "title": "",
+                "author": "",
+                "category": "",
+                "content": "@import \"jekyll-theme-primer\";",
+                "url": "/assets/css/style.css"
+            }
+            
+        
+    };
+</script>
+
+<script src="../assets/js/lunr.js"></script>
+
+<script src="../assets/js/search.js"></script>
+
+
+		</section>
+                    
+        <!-- Footer -->
+		<section id="footer">
+			<ul class="icons">
+				<li><a href="https://github.com/imagej" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+				<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; ImageJ/FIJI</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</section>
+
+		<!-- Scripts -->
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/jquery.scrolly.min.js"></script>
+        <script src="../assets/js/browser.min.js"></script>
+        <script src="../assets/js/breakpoints.min.js"></script>
+        <script src="../assets/js/util.js"></script>
+        <script src="../assets/js/main.js"></script>
+        <script src="../assets/js/search.js"></script>
+        <script src="../assets/js/lunr.js"></script>
+
+  </body>
+</html>

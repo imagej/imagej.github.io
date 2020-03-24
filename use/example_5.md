@@ -1,5 +1,6 @@
 ---
 title: Example 5
+author: Dad
 category: Help
 layout: post
 ---

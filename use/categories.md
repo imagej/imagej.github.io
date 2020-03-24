@@ -7,7 +7,7 @@ layout: page
 
 {% assign site_categories = site.pages | map: "category" | compact | sort | uniq %}
 
-{% for category in site_categories%}
+{% for category in site_categories %}
 - {{ category }}{% for page in site.pages %}{% if page.category == category %}
     - <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a> {% endif %}{% endfor %}
 {% endfor %}
