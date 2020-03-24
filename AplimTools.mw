@@ -76,7 +76,7 @@ For time-lapse experiments, one can compute such a 4D MR hyperimage at successiv
 ===Exploring relaxation curves===
 This plugin helps exploring the relaxation curves on a point, the neighbourhood of a point, or a user-defined roi, using non-linear fit (as above). The visualization of these curves (middle panels) is enriched by semi-log graphs of the T1 and T2 values (right-top panel), and a distribution of these values in the selected area (right-bottom panel). This explorer can open time-lapse 5D hyperimages, to give insight of the evolution of these parameters along the experiment. The explorer display informations through 6 panels : 
 
-[[File:Full-1.jpg|400px|thumb|left|Application panels]]
+[[File:Full-1.jpg|600px|thumb|left|Application panels]]
 <br>
 <br>
 <br>
