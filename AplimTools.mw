@@ -83,16 +83,7 @@ This plugin helps exploring the relaxation curves on a point, the neighbourhood 
 
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 
 <gallery perrow="4" caption="Panels" heights="200px" widths="200px">
 File:Panel_1-1.jpg|Left panels: spin echo images from T1 (top) and T2 (bottom) sequences. The yellow square shows the interest area where the tissue parameters are estimated. Its size and position can be modified dynamically.
