@@ -99,10 +99,9 @@ A window appear, that let you explore your data clicking on your images. Control
 <br>
 
 == References ==
-* José G. Raya, Olaf Dietrich, Annie Horng, Jürgen Weber, Maximilian F. Reiser,
-Christian Glaser, 2010. « T2 measurement in articular cartilage: Impact of the fitting method on accuracy and precision at low SNR ». Magnetic Resonance in Medicine 63:181–193 (2010)
+* José G. Raya, Olaf Dietrich, Annie Horng, Jürgen Weber, Maximilian F. Reiser, Christian Glaser, 2010.  « T2 measurement in articular cartilage: Impact of the fitting method on accuracy and precision at low SNR ». Magnetic Resonance in Medicine 63:181–193 (2010)
 
-<br> 
+<br>
 
 == Software dependencies acknowledgements==
 * Johannes Schindelin et al for [https://imagej.net/Fiji Fiji] (Schindelin et al., 2012)
