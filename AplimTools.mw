@@ -80,6 +80,9 @@ This plugin helps exploring the relaxation curves on a point, the neighbourhood 
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
 <gallery perrow="2" caption="Panels" heights="400px" widths="400px">
 File:Panel_1-1.jpg|Left panels: spin echo images from T1 (top) and T2 (bottom) sequences. The yellow square shows the interest area where the tissue parameters are estimated. Its size and position can be modified dynamically.
 File:Panel3-1.jpg|T1 relaxation curve (red) estimated from MRI data (blue crosses), given the measured noise level (black)
