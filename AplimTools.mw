@@ -76,6 +76,8 @@ For time-lapse experiments, one can compute such a 4D MR hyperimage at successiv
 ===Exploring relaxation curves===
 This plugin helps exploring the relaxation curves on a point, the neighbourhood of a point, or a user-defined roi, using non-linear fit (as above). The visualization of these curves (middle panels) is enriched by semi-log graphs of the T1 and T2 values (right-top panel), and a distribution of these values in the selected area (right-bottom panel). This explorer can open time-lapse 5D hyperimages, to give insight of the evolution of these parameters along the experiment. The explorer display informations through 6 panels : 
 
+[[File:Full-1.jpg|400px|thumb|left|Application panels]]
+
 <gallery perrow="2" caption="Panels" heights="400px" widths="400px">
 File:Panel_1-1.jpg|Left panels: spin echo images from T1 (top) and T2 (bottom) sequences. The yellow square shows the interest area where the tissue parameters are estimated. Its size and position can be modified dynamically.
 File:Panel3-1.jpg|T1 relaxation curve (red) estimated from MRI data (blue crosses), given the measured noise level (black)
