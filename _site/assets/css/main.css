@@ -2376,6 +2376,11 @@ input, select, textarea {
 			top: 0.25em;
 		}
 
+		.image.center {
+			margin: 0 auto;
+			display: block;
+		}
+
 		.image.left, .image.right {
 			max-width: 40%;
 		}
