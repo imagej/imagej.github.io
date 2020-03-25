@@ -1,11 +1,10 @@
 ---
-title: Search demo
+title: Search
 layout: search
 ---
 
 <form action="search" method="get">
-    <label for="search-box">Enter text to search:</label>
-    <input type="text" id="search-box" name="query">
+    <input type="text" id="search-box" name="query" placeholder="Search Imagej">
     <input type="submit" value="search" onclick="displaySearchResults();">
 </form>
 
