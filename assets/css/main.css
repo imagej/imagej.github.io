@@ -121,7 +121,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #555;
+		color: #000000;
 		font-weight: 400;
 	}
 
@@ -134,7 +134,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #555;
+		color: #000000;
 		line-height: 1em;
 		margin: 1em 0 0 0;
 	}
@@ -2034,7 +2034,7 @@ input, select, textarea {
 	}
 
 	header.major {
-		margin: 0 0 1em 0;
+		margin: 0 0 0.5em 0;
 	}
 
 		header.major:after {
@@ -2042,12 +2042,12 @@ input, select, textarea {
 			content: '';
 			display: inline-block;
 			height: 1px;
-			margin-top: 1.5em;
-			width: 6em;
+			margin-top: 0;
+			width: 8em;
 		}
 
 		header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
-			margin: 0 0 0.5em 0;
+			margin: 0 0 0 0;
 		}
 
 		header.major p {
