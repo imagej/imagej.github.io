@@ -34,8 +34,18 @@ To include a link to a YouTube video use the following syntax:
 
 ## **Header 1**
 <hr>
+
+Enter text.
+
+### **_Sub-heading 1_**
+
 Enter text.
 
 ## **Header 2**
 <hr>
+
+Enter text.
+
+### **_Sub-heading 2_**
+
 Enter text.
