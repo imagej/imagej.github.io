@@ -1,7 +1,7 @@
 ---
 title: YOUR-POST-TITLE
-author: YOUR NAME
-category:
+author: YOUR-NAME
+category: YOUR-CATEGORY
 layout: post
 ---
 
@@ -25,7 +25,17 @@ To include a link to a YouTube video use the following syntax:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4NOM-kLfDR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+-------------- Misc --------------
+
+<hr> =  addes line seperator
+
 -->
 
 
-Enter you text here.
+## **Header 1**
+<hr>
+Enter text.
+
+## **Header 2**
+<hr>
+Enter text.
