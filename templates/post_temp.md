@@ -14,10 +14,10 @@ To include images (with left, right or center,  fit alignment) use the following
 
 ![place holder image](../images/place_holder.png){: .image.left} 
 
-{: image.left} = left alignment
-{: image.right} = right alignment
-{: image.center} = center alignment
-{: image.fit} = centers and fits image (will expand an image to fit window size)
+{: .image.left} = left alignment
+{: .image.right} = right alignment
+{: .image.center} = center alignment
+{: .image.fit} = centers and fits image (will expand an image to fit window size)
 
 Note: We recommend using {: image.fit} to avoid images that escape the container (i.e. how the view on mobile).
 
