@@ -2399,6 +2399,42 @@ input, select, textarea {
 				width: 100%;
 			}
 
+/* Figure*/
+
+	.figure.left {
+		float: left;
+		width: 35%;
+		text-align: center;
+		font-size: medium;
+		text-indent: 0;
+		border: thin silver solid;
+		margin: 0.5em;
+		padding: 0.5em;
+	}
+
+	.figure.right {
+		float: right;
+		width: 35%;
+		text-align: center;
+		font-size: medium;
+		text-indent: 0;
+		border: thin silver solid;
+		margin: 0.5em;
+		padding: 0.5em;
+	}
+
+	.figure.center {
+		display: block;
+		width: 35%;
+		text-align: center;
+		font-size: medium;
+		text-indent: 0;
+		border: thin silver solid;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0.5em;
+	}
+
 /* List */
 
 	ol {
