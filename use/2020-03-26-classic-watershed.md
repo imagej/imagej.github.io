@@ -1,7 +1,7 @@
 ---
-title: YOUR-POST-TITLE
-author: YOUR-NAME
-category: YOUR-CATEGORY
+title: Classic Watershed
+author: Ignacio Arganda-Carreras
+category: Segmentation
 layout: post
 ---
 
@@ -23,7 +23,7 @@ Note: We recommend using {: image.fit} to avoid images that escape the container
 
 -------------- YouTube --------------
 
-To include a link to a YouTube video use the following syntax, using the "video-wrapper" class to ensure your video does not escape the container. Copy the iframe video URL and past it inside <div clas="video-wrapper"></div> tags:
+To include a link to a YouTube video use the following syntax, using the "video-wrapper" class to ensure your video does not escape the container. Copy the iframe video URL and past it inside <div clas="video-wrapper"></div> tags:s
 
 <div class="video-wrapper">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/4NOM-kLfDR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -35,7 +35,6 @@ To include a link to a YouTube video use the following syntax, using the "video-
 <br> = break or new line
 
 -->
-
 
 ## **Header 1**
 <hr>
