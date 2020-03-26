@@ -171,8 +171,19 @@ You should now find the plugin under the sub-menu _Plugins_ > _MorphoLibJ_ > _Se
 ## **References**
 <hr>
 
+ 1. Soille, Pierre and Vincent, Luc M (1990). "[Determining watersheds in digital pictures via flooding simulations](http://dx.doi.org/10.1117/12.24211)". Proc. SPIE 1360: 240-250. doi:[10.1117/12.24211](http://dx.doi.org/10.1117/12.24211).
+
 ## **See also**
 <hr>
 
+- [Marker-controlled Watershed](https://imagej.net/Marker-controlled_Watershed), a plugin to perform watershed by flooding from specific seed points or markers.
+- [Morphological Segmentation](https://imagej.net/Morphological_Segmentation), a plugin with a graphical user interface to segment images based on morphological operations and the watershed algorithm.
+- [Serge Beucher's site](http://cmm.ensmp.fr/~beucher/wtshed.html), with graphic descriptions and animations of the watershed algorithms.
+- [G. Bertrand's Topological Watershed site](http://www.esiee.fr/~info/tw/index.html), with papers, lecture slides and source code.
+
 ## **License**
 <hr>
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation ([http://www.gnu.org/licenses/gpl.txt](http://www.gnu.org/licenses/gpl.txt)).
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
