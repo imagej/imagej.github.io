@@ -3,7 +3,7 @@ title: Learn about ImageJ
 layout: page
 ---
 
-![place holder image](../images/place_holder.png){: .image.left}
+![place holder image](../images/placeholder.png){: .image.left}
 
 Paragraph 1: While in Clojure one is able to declare types if desired, it's not required; the low computational requirements of the plugin do not invite to make it verbose unnecessarily. But java demands type declarations just so that the plugin can be compiled and thus a binary .class file generated.
 
@@ -11,7 +11,7 @@ Paragraph 1: While in Clojure one is able to declare types if desired, it's not 
 
 Paragraph 2: While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
 
-![place holder image](../images/place_holder.png){: .image.right}
+![place holder image](../images/placeholder.png){: .image.right}
 
 ### Section example 2
 
