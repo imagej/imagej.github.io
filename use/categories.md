@@ -12,6 +12,4 @@ layout: page
     - <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a> {% endif %}{% endfor %}
 {% endfor %}
 
-Original string (map): {{ site_categories }}
-
 </div>
