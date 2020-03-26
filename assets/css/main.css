@@ -2435,6 +2435,17 @@ input, select, textarea {
 		padding: 0.5em;
 	}
 
+	.figure.row {
+		display: block;
+		width: 35%;
+		text-align: center;
+		font-size: medium;
+		text-indent: 0;
+		margin-left: 0.5em;
+		margin-right: auto;
+		padding: 0.5em;
+	}
+
 /* List */
 
 	ol {
