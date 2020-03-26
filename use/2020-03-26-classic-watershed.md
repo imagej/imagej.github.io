@@ -72,7 +72,7 @@ Overlay of watershed lines on blurred blobs.
 
 <div class="figure right" markdown="1">
 
-![Watershed flooding graph]({{site.baseurl}}/images/posts/250px-Watershed-flooding-graph.png)
+![Watershed flooding graph]({{site.baseurl}}/images/posts/250px-Watershed-flooding-graph.png){: .image.fit}
 
 Schematic overview of watershed flooding in 1D.
 
@@ -95,7 +95,7 @@ At least one image needs to be open in order to run the plugin.
 
 <div class="figure right" markdown="1">
 
-![Classic watershed dialog]({{site.baseurl}}/images/posts/Classic-Watershed-dialog.png)
+![Classic watershed dialog]({{site.baseurl}}/images/posts/Classic-Watershed-dialog.png){: .image.fit}
 
 Main dialog of the Classic Watershed plugin.
 
