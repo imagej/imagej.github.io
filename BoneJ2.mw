@@ -412,29 +412,6 @@ An 8-bit or 16-bit image.
 ** '''Inverse eigenvector matrix''': used to map voxel positions in the aligned image back to voxel positions in the original image
 * Optional 3D display of principal axes
 
-== Optimise threshold (WIP) ==
-Menu path: ''Plugins &gt; BoneJ &gt; Optimise Threshold''
-
-Several histogram-based methods exist for automatic determination of threshold for binary segmentation, but in ImageJ these are currently limited to pixel values in a single slice. The result can be excluding high values in a stack that are higher than the highest value in the current slice. This plugin uses all the pixels in a stack to construct a histogram and uses ImageJ's built-in isodata algorithm to determine the threshold. It optionally tests values either side of the initial auto-threshold for connectivity, because connectivity is very sensitive to image noise. The plugin attempts to find the threshold that results in minimal connectivity. Purification, erosion and dilation can improve the connectivity estimate, so Purify is always called, and erosion and dilation are applied as part of a sequence: purify, erode, purify, dilate.
-
-==== Suitable images ====
-An 8-bit of 16-bit image
-
-==== Parameters ====
-* '''Threshold Only''': Determine the threshold from the stack histogram only
-* '''Apply Threshold''': Replace the input image with a thresholded version
-* '''Show Plot''': Display a graph showing connectivity versus threshold
-* '''Tests''': Number of different thresholds to test for connectivity
-* '''Range''': Proportion of the initial threshold to test above and below initial thresholds
-* '''Subvolume Size''': Size of the volume to test for connectivity. Set small for a faster run and large to test the whole stack
-* '''Erosion Cycles''': Number of times to erode the stack after initial purification
-* '''Dilation Cycles''': Number of times to dilate the stack after secondary purification
-
-==== Results ====
-* '''Thresholded stack (optional)'''
-* '''Plot of connectivity versus threshold (optional)'''
-* '''Log of optimal threshold value'''
-
 == Orientation ==
 Menu path: ''Plugins &gt; BoneJ &gt; Orientation''
 
