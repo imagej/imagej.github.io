@@ -47,7 +47,16 @@ Use Macro function (ver2.3.1-)
 # Select image file.
 # You can see that Macro command was registered.
 == Macro sample code ==
-Sample for opening images in a directory:
+=== Use GUI commands ===
+* Sample for opening an image:
+<source lang="plain">
+run("Viewer", "open=D:/image/test/test.oir");
+</source>
+* Sample for opening an image which has multiple groups or levels:
+<source lang="plain">
+run("Viewer", "open=D:/image/test/test.vsi group1_level1");
+</source>
+* Sample for opening images in a directory:
 <source lang="plain">
 input = "D:/image/test/";
 
@@ -56,6 +65,46 @@ for (i = 0; i < list.length; i++){
 	path = input + list[i];
 	run("Viewer", "open=[path]");
 }
+</source>
+* Sample for batch processing:
+<source lang="plain">
+setBatchMode(true);
+
+input = "D:/image/test/";
+
+list = getFileList(input);
+for (i = 0; i < list.length; i++){
+	path = input + list[i];
+	run("Viewer", "open=[path]");
+	// process image e.g. "run("Smooth", "stack");"
+	saveAs("Tiff", "D:/image/test/out_" + i + ".tif");
+}
+</source>
+
+=== Use programming interface ===
+You can use programming interface by using ''OVMacro'' command.
+* Sample for opening an image:
+<source lang="plain">
+run("OVMacro");
+Ext.openFile("D:/image/test/test.oir");
+</source>
+* Sample for opening an image which has multiple groups or levels:
+<source lang="plain">
+run("OVMacro");
+Ext.openFile("D:/image/test/test.vsi", 1, 2); // Open Group 2, Level 3
+</source>
+* Sample for opening images in a directory:
+<source lang="plain">
+run("OVMacro");
+Ext.openFolder("D:/image/test"); // You can specify group and level like as openFile
+</source>
+* Sample for getting number of groups and levels:
+<source lang="plain">
+run("OVMacro");
+path = "D:/image/test/test.vsi";
+Ext.getGroupCount(path, groupNum); // Get total count of groups
+Ext.getLevelCount(path, groupNum-1, levelNum); // Get total count of levels
+Ext.openFile(path, groupNum-1, levelNum-1); // Open last level of the last group
 </source>
 
 == See Also ==
