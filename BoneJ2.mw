@@ -24,7 +24,7 @@ Below is the documentation for the plug-ins included in BoneJ experimental.
 # Launch Fiji
 # Select in the menu ''Help'' &gt; ''Update...''
 # Click ''Manage update sites''
-# Check ''BoneJ experimental''
+# Check ''BoneJ''
 # Click ''Close''
 # Click ''Apply changes''
 After the downloads have finished, close and restart Fiji.
