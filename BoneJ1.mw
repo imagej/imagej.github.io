@@ -15,7 +15,7 @@ There's a new modernized version of BoneJ available through the ImageJ [https://
 
 == Legacy (BoneJ v1.x) Installation ==
 
-{{Logo | ImageJ1 | size=24px}} BoneJ was designed to work with plain [[ImageJ 1.x]].
+{{Logo | ImageJ1 | size=24px}} BoneJ was originally designed to work with plain [[ImageJ 1.x]].
 
 {{Logo | Fiji | size=24px}} BoneJ can be installed into [[Fiji]], but you must '''use the Java-6 version of Fiji, not the current Java-8 version''':
 
