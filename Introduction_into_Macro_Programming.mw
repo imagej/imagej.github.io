@@ -243,6 +243,16 @@ for (i=1; i<=nSlices; i++) {
 }
 </source>
 
+== Looping over rois in RoiManager ==
+This small IJmacro scriptlet loops over the roi in the Roi Manager, selecting one at a time.
+
+<source lang='java'>
+for (i = 0; i < roiManager("count"); i++){
+     roiManager("Select", i);
+     // do some operation
+}
+</source>
+
 = The recorder =
 
 Typically, macros are not written from scratch, but recorded using the Macro Recorder: Just click on {{bc | Plugins | Macros | Record...}} and perform some actions. These actions will be recorded in the recorder window, and you can hit the ''Create'' button to open the recorded instructions in an editor:
