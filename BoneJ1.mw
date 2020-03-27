@@ -13,7 +13,7 @@
 
 There's a new modernized version of BoneJ available through the ImageJ [https://imagej.net/Updater updater]. Read more about [[BoneJ2]].
 
-== Installation ==
+== Legacy (BoneJ v1.x) Installation ==
 
 {{Logo | ImageJ1 | size=24px}} BoneJ was designed to work with plain [[ImageJ 1.x]].
 
