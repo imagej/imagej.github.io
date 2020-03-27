@@ -187,7 +187,7 @@ Removes a range of slices from a stack, so that cropping in the Z direction is p
 ==== Suitable images ====
 A 3D image.
 
-== Ellipsoid factor (WIP) ==
+== Ellipsoid factor ==
 Menu path ''Plugins &gt; BoneJ &gt; Ellipsoid factor''.
 
 Ellipsoid Factor is a new method for measuring rod/plate geometry. It uses the axis lengths from prolate, oblate and intermediate elipsoids to determine how prolate or oblate the trabecular space is at a particular point. Highly prolate (javelin-shaped, rod-like) ellipsoids have a single long axis (<math>c</math>) and two short axes (<math>a, b</math>) such that <math>a < b \ll c</math> , whereas highly oblate (discus-shaped, plate-like) ellipsoids have two longer axes (<math>b, c</math>) and one much shorter axis (<math>a</math>) so that <math>a \ll b < c</math>. Calculating <math>EF</math> as the difference in ratios, <math>EF = a/b - b/c</math> leads to a useful scale ranging from <math>-1</math> (oblate, <math>a/b \approx 0, b/c \approx 1</math>) to <math>+1</math> (prolate, <math>a/b \approx 1, b/c \approx 0</math>). <math>EF</math> of <math>0</math> indicates an intermediate ellipsoid where <math>a/b = b/c</math>, which is the case for spheres (<math>a = b = c</math>) and other ellipsoids with axis ratios <math>a:qa:q^{2}a</math>. Ellipsoid Factor runs [[Skeletonize3D]] to get the medial axis of the trabeculae, which is used as the seed for sampling. Ellipsoids are seeded from each voxel on the medial axis. A combination of dilation, contraction, rotation and a small amount of translation is run iteratively until the ellipsoid increases no further in volume.
@@ -435,7 +435,7 @@ An 8-bit of 16-bit image
 * '''Plot of connectivity versus threshold (optional)'''
 * '''Log of optimal threshold value'''
 
-== Orientation (WIP) ==
+== Orientation ==
 Menu path: ''Plugins &gt; BoneJ &gt; Orientation''
 
 Sets the direction in a 2D image, without rotating the image or changing it in any way. ''Slice Geometry'' (see below) uses ''Orientation'' to calculate diameter, second moments of area and section moduli around anatomic axes set by the user.
@@ -453,7 +453,89 @@ A 2D image.
 ==== Results ====
 * '''Orientation axes''': draws the axes of the orientation on the image.
 
-== Purify (WIP) ==
+== Particle Analyser ==
+
+Menu path: ''Plugins &gt; BoneJ &gt; Analyze &gt; Particle Analyser''
+
+Particle Analyser performs connected-components labelling. It started life as an adaptation of the 3D Object Counter, for identifying particles as part of Purify. Once it became obvious that the heavily recursive algorithm was very inefficient, especially on large stacks, particle labelling was rewritten to be multithreaded and much less recursive.
+
+A member of our group wished to study osteocyte lacunae in synchrotron microCT images, so the Particle Analyser was born from Purify's particle labelling algorithm. Other groups use Particle Analyser for soil analysis; it could be used for any porous media. Particle Analyser labels unique (unconnected) particles, then analyses each particle separately. Substantial use is made of other plugins in BoneJ, including Connectivity to get the Euler characteristic, Isosurface to get the surface area and Thickness to get the local thickness of individual particles.
+
+==== Suitable images ====
+A 2D or 3D binary image.
+
+==== Parameters ====
+* '''Exclude on sides''': don't analyse particles touching the stack sides
+* '''Feret Diameter''': measure particles' Feret diameter (slow, brute force method).
+* '''Moments of inertia''': measure each particle's moments of inertia
+* '''Thickness''': Measure each particle's local thickness. Note: does not handle anisotropic voxels due to the underlying implementation of Local Thickness.
+* '''Ellipsoids''': find the best-fit ellipsoid to the particle's surface mesh
+* '''Skeletons''': Measure branch length and count branches using [[AnalyzeSkeleton]]
+* '''Surface Area''': measure particles' surface area from surface mesh
+* '''Enclosed volume''': measure volume enclosed by each particle's surface mesh
+* '''Euler characteristic''': measure each particle's Euler characteristic and connectivity
+* '''Mask thickness map''': don't count thickness pixels overhanging the foreground
+* '''Record unit vectors''': log the unit vectors of the inertia tensor and best-fit ellipsoid's axes to the Results table
+* '''Min Volume''': smallest particle to measure or display, in calibrated units
+* '''Max Volume''': largest particle to measure or display, in calibrated units
+* '''Surface resampling''': how much to resample the stack while creating the surface mesh by marching cubes. The effect of this option can be visualised with Isosurface.
+* '''Show particle stack''': display an image containing labelled particles
+* '''Show thickness stack''': display the result of local thickness in a new stack
+* '''Show centroids (3D)''': display particles' centroids in a 3D Viewer window
+* '''Show ellipsoids (3D)''': display best-fit ellipsoids in a 3D Viewer window
+* '''Show size stack''': display an image with particles labelled by their volume
+* '''Show surfaces (3D)''': display particles' surface meshes in a 3D Viewer window
+* '''Show axes (3D)''': display principal axes (from moments of inertia) in a 3D Viewer window
+* '''Show stack (3D)''': display the original binary stack in a 3D Viewer window
+* '''Surface colours''':
+** '''Gradient''': Each particle gets a unique colour between red and green
+** '''Split''': Each particle is coloured depending on whether it is over (red) or under (yellow) the Split value
+** '''Orientation''': Each particle is coloured by its long-axis deflection from the image ''z'' axis
+* '''Split value''': Particles with volume greater than this value are coloured red, otherwise coloured yellow.
+* '''Volume resampling''': amount of voxel resampling to apply when displaying the original stack
+
+==== Output ====
+
+* '''Results'''
+** '''Label''': Image file name
+** '''ID''': unique particle identifier; this number is the label used for the particle in all calculations and output
+** '''Vol''': particle volume
+** '''x Cent''': x-coordinate of particle centroid
+** '''y Cent''': y-coordinate of particle centroid
+** '''z Cent''': z-coordinate of particle centroid
+** '''SA''': surface area (0 if too small for mesh to be produced; see warning log)
+** '''Encl. Vol''': Volume enclosed by surface mesh (0 if too small for mesh to be produced; see warning log)
+** '''I1''': moment of inertia around shortest principal axis
+** '''I2''': moment of inertia around middle principal axis
+** '''I3''': moment of inertia around longest principal axis
+** '''vX''': x component of unit vector of longest principal axis (a measure of orientation)
+** '''vY''': y component of unit vector of longest principal axis
+** '''vZ''': z component of unit vector of longest principal axis
+** '''vX1 - vZ2''': xyz components of the unit vectors of the middle and short principal axes
+** '''n Branches'' number of skeleton branches in the particle's medial axis
+** '''Branches length''' total length of the particle's medial axis
+** '''Euler (χ)''': Euler characteristic of the particle
+** '''Holes (β1)''': number of topological holes (handles) in the particle
+** '''Cavities (β2)''': number of enclosed cavities in the particle
+** '''Thickness''': mean local thickness of particle
+** '''SD Thickness''': standard deviation of the mean local thickness of particle
+** '''Max Thickness''': maximum local thickness of particle
+** '''Major radius''': length of best-fit ellipsoid's long radius
+** '''Int. radius''': length of best-fit ellipsoid's intermediate radius
+** '''Minor radius''': length of best-fit ellipsoid's short radius
+** '''V00 - V22''': elements of the 3×3 rotation matrix of the best-fit ellipsoid
+* '''Image Stacks'''
+** '''Thickness image''' showing local thickness at each point in the input image
+** '''Particle image''' showing the particle ID at each point in the input image (individual particles can be selected by thresholding for that ID value)
+** '''Size image''' showing particles labelled by their volume; particles can be selected based on volume by thresholding this image
+* '''3D Display'''
+** If any of the 3D display options are selected, an ImageJ 3D Viewer window is opened. All features are added individually, so that by hovering the mouse over a particle's surface, you can see its ID in the ImageJ status area. Results pertaining to that particle can then be looked up in the Results table. Particles can be manipulated individually, including transforming and adjusting colour or transparency.
+
+==== Citation ====
+Doube M. 2020 Multithreaded two-pass connected components labelling and particle analysis in ImageJ. bioRxiv , 2020.02.28.969139. ([https://doi.org/10.1101/2020.02.28.969139] doi:10.1101/2020.02.28.969139)
+
+
+== Purify ==
 Menu path: ''Plugins &gt; BoneJ &gt; Purify''
 
 Purify locates all particles in 3D and removes all but the largest foreground and background particles.
@@ -462,11 +544,6 @@ Purify locates all particles in 3D and removes all but the largest foreground an
 The input image must be 3D, 8-bit and binary.
 
 ==== Parameters ====
-* '''Labelling algorithm''':
-** '''Mapped''': Non-recursive, memory efficient and fast.
-** '''Multithreaded''': use multiple cores and job chunking to reduce recursion. Fast on small stacks and if you have many CPU cores.
-** '''Linear''': Non-recursive but heavy on RAM and single-threaded. Fast on big stacks, but only if you have the memory.
-* '''Chunk Size''': number of slices to use in each particle labelling thread. If images are large, set this to 2
 * '''Performance Log''': Show verbose performance information to help tune your system
 * '''Make copy''': If checked, shows the result in a new window; if unchecked the result replaces the original image.
 
