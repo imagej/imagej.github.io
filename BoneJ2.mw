@@ -532,8 +532,7 @@ A 2D or 3D binary image.
 ** If any of the 3D display options are selected, an ImageJ 3D Viewer window is opened. All features are added individually, so that by hovering the mouse over a particle's surface, you can see its ID in the ImageJ status area. Results pertaining to that particle can then be looked up in the Results table. Particles can be manipulated individually, including transforming and adjusting colour or transparency.
 
 ==== Citation ====
-Doube M. 2020 Multithreaded two-pass connected components labelling and particle analysis in ImageJ. bioRxiv , 2020.02.28.969139. ([https://doi.org/10.1101/2020.02.28.969139] doi:10.1101/2020.02.28.969139)
-
+Doube M. 2020 Multithreaded two-pass connected components labelling and particle analysis in ImageJ. bioRxiv , 2020.02.28.969139. (doi:10.1101/2020.02.28.969139) [https://doi.org/10.1101/2020.02.28.969139]
 
 == Purify ==
 Menu path: ''Plugins &gt; BoneJ &gt; Purify''
