@@ -12,7 +12,7 @@ layout: search
 
 <script>
     window.store = {
-        {% for page in site.pages %}{% if page.title == "List of categories" %}{% continue %}{% endif %}
+        {% for page in site.pages %}{% if page.title == "List of categories" %}{% continue %}{% endif %}{% if page.title == "YOUR-POST-TITLE" %}{% continue %}{% endif %}
             "{{ page.url | slugify }}": {
                 "title": "{{ page.title | xml_escape }}",
                 "author": "{{ page.author | xml_escape }}",
