@@ -7,13 +7,13 @@
   
         for (var i = 0; i < results.length; i++) {  // Iterate over the results
           var item = store[results[i].ref];
-          appendString += '<li><a href="' + item.url + '"><h2>' + item.title + '</h2></a>';
-          appendString += '<p>' + item.content.substring(0, 150) + '...</p></li>';
+          appendString += '<a href="' + item.url + '"><h2>' + item.title + '</h2></a>';
+          appendString += '<p>' + item.content.substring(0, 150) + '...</p>';
         }
   
         searchResults.innerHTML = appendString;
       } else {
-        searchResults.innerHTML = '<li>No results found</li>';
+        searchResults.innerHTML = '<h2>No results found</h2>';
       }
     }
   
