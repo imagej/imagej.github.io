@@ -1,7 +1,7 @@
 ---
 title: YOUR-POST-TITLE
 author: YOUR NAME
-category:
+category: YOUR-CATEGORY
 layout: page
 ---
 
