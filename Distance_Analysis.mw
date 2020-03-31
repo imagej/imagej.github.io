@@ -126,12 +126,12 @@ if the recorder has a problem, here are some examples of macro line:
 * run("DiAna_Analyse", "img1=imageA.tif img2=imageB.tif lab1=segA.tif lab2=segB.tif coloc distc=50.0 adja kclosest=1 dista=50.0 measure");
 == Installation ==
 
-Download and copy the following jar in your plugins folder 
-[http://drive.google.com/open?id=1rCsgalRHkmQHP7rtQ67MUXA5cNVGbdXS|diAna_1.47.jar]
+Download and copy the following jar in your plugins folder [https://drive.google.com/open?id=1rCsgalRHkmQHP7rtQ67MUXA5cNVGbdXS Diana_1.47.jar]
 
 You have also to manually download and copy into your plugins directory the [[3D_ImageJ_Suite|3D ImageJ Suite]].
 
-''Note that this version works only with {{:plugin:stacks:3d_ij_suite:mcib3d-core3.94.jar|}} and upper!"
+''Note that this version works only with 3D ImageJ library [https://drive.google.com/open?id=1a83KAeDEcCk0Lio3xXebd7Fxk83cTjy- mcib3d-core3.94.jar] and upper!"
+
 
 == Citation ==
 
