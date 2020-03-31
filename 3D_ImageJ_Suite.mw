@@ -32,15 +32,11 @@ ImageJ 1.47 or later is required. Java3D is also required, check that [[http://r
 '''NEW''' From version 3.83 and later the new version 4.0.1 of 3D_Viewer is required (please remove the 3D_Viewer plugin provided by ImageJ and replace it by {{:plugin:stacks:3d_ij_suite:3d_viewer-mcib.zip|this version}}, just unzip the file in the plugins directory). 
 
 Java 1.8 or later is required. '''The [[http://www.imagescience.org/meijering/software/featurej/|imagescience]] library is required ''' : [[http://www.imagescience.org/meijering/software/download/imagescience.jar|download]]. 
-'''Bundle''' : {{:plugin:stacks:3d_ij_suite:mcib3d-suite3.94.zip|}}
-
-Core library : {{:plugin:stacks:3d_ij_suite:mcib3d-core3.94.jar|}}
-
-Plugins : {{:plugin:stacks:3d_ij_suite:mcib3d_plugins3.94.jar|}}
+'''Bundle''' : [[Media:Mcib3d-3.96.zip]]
 
 The [[http://rsbweb.nih.gov/ij/plugins/3d-convex-hull/index.html| ConvexHull3D]] plugin is required only for mesh measurements : {{:plugin:stacks:3d_ij_suite:quickhull3d-1.0.0.jar|quickhull jar}}
 
-Sources are available on [[https://github.com/|GitHub]] for [[https://github.com/mcib3d/mcib3d-core|core]] and [[https://github.com/mcib3d/mcib3d-plugins|plugins]]. 
+Sources are available on [[https://github.com/|GitHub]] for [[https://github.com/mcib3d/mcib3d-core|core]] and [[https://github.com/mcib3d/mcib3d-plugins|plugins]].
 
 == Citation ==
 If you use the 3D suite for your publication please cite : 
