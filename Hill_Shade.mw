@@ -6,7 +6,7 @@
 
 The plugin needs an 8-bit, 16-bit or float (=32-bit) input image; pixel value (height) calibration of 8-bit and 16-bit input images is taken into account. The plugin produces a new 8-bit grayscale output image, irrespective of the type of input image. Preview is shown as an overlay of the input image, however.
 
-The math behind it: When 'Nonlinear Contrast' and 'Half Brightness for Flat Areas' are off, the brightness of the output image is proportional to the cosine of the angle between the direction perpendicular to surface and the direction to the light source (sun), i.e., the surface is shows [[wp>Lambertian reflectance]].  If that angle is 90 degrees or more, i.e. if the slope that is directed away from the sun, the output is black. It is assumed that the "Mountains" do not cast a shadow, however.
+The math behind it: When 'Nonlinear Contrast' and 'Half Brightness for Flat Areas' are off, the brightness of the output image is proportional to the cosine of the angle between the direction perpendicular to surface and the direction to the light source (sun), i.e., the surface is shows [https://en.wikipedia.org/wiki/Lambertian_reflectance Lambertian reflectance].  If that angle is 90 degrees or more, i.e. if the slope that is directed away from the sun, the output is black. It is assumed that the "Mountains" do not cast a shadow, however.
 
 == Dialog parameters ==
 [[File:Hillshade-screenshot.jpg||Dialog screen shot]]
