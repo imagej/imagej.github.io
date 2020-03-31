@@ -126,7 +126,8 @@ if the recorder has a problem, here are some examples of macro line:
 * run("DiAna_Analyse", "img1=imageA.tif img2=imageB.tif lab1=segA.tif lab2=segB.tif coloc distc=50.0 adja kclosest=1 dista=50.0 measure");
 == Installation ==
 
-Download and copy the following jar in your plugins folder {{:plugin:analysis:distance_analysis_diana_2d_3d:diana_1.44.jar|diAna_1.44.jar}}
+Download and copy the following jar in your plugins folder 
+[https://drive.google.com/open?id=1rCsgalRHkmQHP7rtQ67MUXA5cNVGbdXS|diAna_1.47.jar]
 
 You have also to manually download and copy into your plugins directory the [[3D_ImageJ_Suite|3D ImageJ Suite]].
 
