@@ -7,7 +7,7 @@ Thomas Boudier  [[File:EmailBoudier.png]], [https://www.sinica.edu.tw/en Academi
 With many contributions from J. Ollion, Laboratoire Jean Perrin, Paris, France.
 
 == Features ==
-This "suite" is composed of : 
+This ''suite'' is composed of : 
 
 * [[plugin:filter:3d_filters:start|3D Filters]] (mean, median, max, min, tophat, max local, ...) and [[plugin:filter:3d_edge_and_symmetry_filter:start|edge and symmetry filter]]
 * [[plugin:segmentation:3d_spots_segmentation:start|3D Segmentation]] (iterative thresholding, spots segmentation, watershed, ...)
