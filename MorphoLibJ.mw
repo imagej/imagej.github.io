@@ -361,13 +361,14 @@ A binary particle may be described mathematically by its moments which correspon
 Most MorphoLibJ plugins consider the current image as input, that must be either binary (only one region is considered), or label (typically the result of a connected components labeling, see [[MorphoLibJ#Utilities_for_binary_images|Utilities for binary images]]). The output is a results table (ImageJ [https://imagej.nih.gov/ij/docs/guide/146-22.html Results table]) containing one row for each label actually present within the image. The spatial calibration of the image is taken into account in all measurements. All plugins can be found under the {{bc |Plugins | MorphoLibJ | Analyze}} menu.
 
 ===== Global geometry =====
-The '''global geometry''' of particles in 2D images can be characterized with the Region Morphometry plugin (under {{bc | Plugins | MorphoLibJ | Analyze | Region Morphometry}}). For 2D particles, the area, the perimeter and derived features are implemented. The columns of the results table are:
+The '''global geometry''' of particles in 2D images can be characterized with the Analyze Regions plugin (under {{bc | Plugins | MorphoLibJ | Analyze | Analyze Regions}}). For 2D particles, the area, the perimeter and derived features are implemented. The columns of the results table are:
 
 * '''Label''': the label of the particle measured on the current line (it can be different from the row number if some labels do no exist in original image).
 * '''Area''': the number of pixels within each region, multiplied by the area of each pixel.
 * '''Perimeter''': an estimate of the perimeter, using the [[wikipedia:Crofton formula|Crofton formula]].
 * '''Circularity''' the normalized ratio of area by the square of the perimeter: <math>4\pi\cdot A/p^{2}</math>. The value should be comprised between 0 (very elongated) and 1 (close to circular). Values superior to 1 may appear due to discretization effect.
 * '''Elongation''': the normalized ratio of the square of the perimeter by the area : <math>p^{2}/\left(4\pi\cdot A\right)</math>, corresponding to the inverse of the circularity. The values range from 1 (round), and increase with elongation of the particle.
+
 ===== Largest inscribed circle or ball=====
 This plugin computes for each label the largest disk that can be enclosed within the corresponding particle. The plugin opens a dialog that allows to choose the label image to characterize, the choice of the method for computing distance, and eventually the image on which overlaid circles can be drawn. The output of the plugin includes the following information:
 
