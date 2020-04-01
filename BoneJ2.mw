@@ -721,7 +721,7 @@ Support for ''Kontron IMG'', ''Scanco ISQ'' and ''Stratec pQCT'' file formats ha
 BoneJ2 is free, open-source software. You can redistribute it and/or modify it under the terms of the [https://github.com/bonej-org/BoneJ2/blob/master/LICENCE.md BSD 2-clause licence]. The software is provided "as is" and any warranties are disclaimed. In no event shall the copyright holder or contributors be liable.
 
 == Citation ==
-If you'd like to cite the software, we will soon publish a paper about BoneJ experimental. You can read the draft (and send us your feedback) as we're writing it [https://v1.overleaf.com/read/yxdkwpcdkjzj for Wellcome Open Research on Overleaf]. We recommend you cite the specific release used in your research.
+If you'd like to cite the software, we will soon publish a paper about migrating BoneJ from ImageJ1 to ImageJ2. You can read the draft (and send us your feedback) as we're writing it [https://v1.overleaf.com/read/yxdkwpcdkjzj for Wellcome Open Research on Overleaf]. We recommend you cite the specific release used in your research.
 
 == Funding ==
 The redesign and porting effort to create BoneJ2 was supported by a [https://wellcome.ac.uk/grant-funding/people-and-projects/grants-awarded/bonej2-fullfeatured-nextgeneration-bonej-standardised Wellcome Trust Biomedical Resource and Technology Development Grant]. Interaction with [[SciView]] was assisted by a [https://royalsociety.org/grants-schemes-awards/grants/international-exchanges/ Royal Society International Exchange grant]. [[#Ellipsoid factor|''Ellipsoid Factor'']] validation and improvements were funded by the UK [https://bbsrc.ukri.org/research/grants-search/AwardDetails/?FundingReference=BB%2fP006167%2f1 BBSRC].
