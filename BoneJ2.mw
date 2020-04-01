@@ -10,13 +10,11 @@
 | status                 = Active
 }}
 BoneJ is a collection of skeletal biology plug-ins for ImageJ.
-This is the new experimental, modernized version of the software available through the ImageJ [https://imagej.net/Updater updater]. Its update site is called [http://sites.imagej.net/BoneJ BoneJ experimental]. For the old ImageJ1 version, see [[BoneJ]].
+This is the new, modernized version of the software available through the ImageJ [https://imagej.net/Updater updater]. Its update site is called [http://sites.imagej.net/BoneJ BoneJ. For the old ImageJ1 version, see [[BoneJ1]].
 
 This version works with the latest Fiji, and complies with the modern ImageJ [[architecture]]. Most plug-ins also now support hyperstacks, i.e. images with multiple channels or time frames.
 
-As the code is still experimental, it's still likely to change a lot. This means any scripts using the code might break, results can change, and plug-ins gain and lose parameters. Tools marked with ''WIP'' (work in progress), are more likely to undergo large changes. 
-
-Below is the documentation for the plug-ins included in BoneJ experimental.
+Below is the documentation for the plug-ins included in BoneJ.
 
 == Installation ==
 [[File:Install-bonej.png|400 px|Installation steps]]
