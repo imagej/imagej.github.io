@@ -51,6 +51,8 @@ This plugin needs properly formatted dataset, a SL_RAW directory (whatever be it
 * '''Create CLEAN DICOM''' set to '''no'''.
 * '''Create MASK DICOM''' set to '''no'''.
 
+and using a listSer.ser file including all the interesting data for the T1 and T2 sequences.
+
 ===Running the plugin===
 The plugin ask for the SL_RAW directory (see above), then an output directory to write results, before asking some questions about the computation you want:
 * Register data ? Answer '''No''' means you are really confident about the exact positioning of the object. You should answer '''Yes'''
