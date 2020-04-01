@@ -45,7 +45,11 @@ This plugin compute M0, T1 and T2 maps pixelwise from a given set of spin-echo s
 First a 3d registration is computed to align precisely the successive images, using libraries of the [Fijiyama] plugin. Then the rice noise level is estimated, and the M0, T1 and T2 parameters are estimated, fitting mono or bi-exponential curves, corrected with the measured rice noise (reference : [[https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.22178 [Raya et al., 2010]]]. 
 
 ===Preparing your data===
-This plugin needs properly formatted dataset, a SL_RAW directory (whatever be its exact name) with exported data in it. To construct it, use the BionanoNMRI scripts, with the processing.bnp '''MAKE_CLEAN''' parameter set to '''yes'''.
+This plugin needs properly formatted dataset, a SL_RAW directory (whatever be its exact name) with exported data in it. To construct it, use the BionanoNMRI scripts, with the processing.bnp parameters set to :
+
+* '''Create RAW DICOM''' set to '''yes'''.
+* '''Create CLEAN DICOM''' set to '''no'''.
+* '''Create MASK DICOM''' set to '''no'''.
 
 ===Running the plugin===
 The plugin ask for the SL_RAW directory (see above), then an output directory to write results, before asking some questions about the computation you want:
