@@ -564,7 +564,7 @@ A 2D or 3D binary image.
 * '''3D Annotation''': Display the stack, principal axes and centroids in the 3D viewer
 * '''Process Stack''': Calculate parameters for all slices in the stack
 * '''Clear Results''': Remove all data in the results table without saving, prior to calculating parameters
-* '''Use Orientation''': Also calculate parameters based on directions defined in Orientation
+* '''Use Orientation''': Also calculate parameters based on directions defined in [[#Orientation|Orientation]]
 * '''HU Calibrated''': Allows you to enter your thresholds in Hounsfield units (HU) or uncalibrated units
 * '''Bone Min''': minimum pixel value to use in calculations
 * '''Bone Max''': maximum pixel value to use in calculations
