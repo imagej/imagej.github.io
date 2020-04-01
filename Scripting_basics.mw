@@ -152,7 +152,7 @@ for (i = 0; i < roiManager("count"); i++){
      roiManager("Select", i);
      // do some operation
 }
-</source>
+</source lang='java'>
 
 In Jython and other scripting languages this looks like.
 
@@ -165,6 +165,16 @@ n = RM.getCount()
 
 for i in range(n):
    roi = RM.getRoi(i)
+</source>
+
+Since version 1.52v11 of ImageJ, one can directly loop over the roi in a RoiManager as followed
+
+<source lang='python'>
+from ij.plugin.frame import RoiManager
+
+# Assume a RoiManager is opened
+for roi in RoiManager.getInstance():
+	print roi
 </source>
 
 = Calling a script from another script =
