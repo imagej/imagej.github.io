@@ -152,11 +152,11 @@ for (i = 0; i < roiManager("count"); i++){
      roiManager("Select", i);
      // do some operation
 }
-</source lang='java'>
+</source>
 
 In Jython and other scripting languages this looks like.
 
-<source lang='java'>
+<source lang='python'>
 from ij.plugin.frame import RoiManager
 
 # Get number of ROIs
