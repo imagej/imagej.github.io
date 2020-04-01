@@ -417,7 +417,7 @@ An 8-bit or 16-bit image.
 == Orientation ==
 Menu path: ''Plugins &gt; BoneJ &gt; Orientation''
 
-Sets the direction in a 2D image, without rotating the image or changing it in any way. ''Slice Geometry'' (see below) uses ''Orientation'' to calculate diameter, second moments of area and section moduli around anatomic axes set by the user.
+Sets the direction in a 2D image, without rotating the image or changing it in any way. [[#Slice Geometry|''Slice Geometry'']] uses ''Orientation'' to calculate diameter, second moments of area and section moduli around anatomic axes set by the user.
 
 ==== Suitable images ====
 A 2D image.
