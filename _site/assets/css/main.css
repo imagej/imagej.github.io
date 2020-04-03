@@ -2405,7 +2405,7 @@ input, select, textarea {
 
 	.figure.left {
 		float: left;
-		max-width: 100%;
+		width: 35%;
 		text-align: center;
 		font-size: medium;
 		text-indent: 0;
@@ -2416,7 +2416,7 @@ input, select, textarea {
 
 	.figure.right {
 		float: right;
-		max-width: 100%;
+		width: 35%;
 		text-align: center;
 		font-size: medium;
 		text-indent: 0;
@@ -2427,7 +2427,7 @@ input, select, textarea {
 
 	.figure.center {
 		display: block;
-		max-width: 100%;
+		width: 35%;
 		text-align: center;
 		font-size: medium;
 		text-indent: 0;
