@@ -2038,12 +2038,12 @@ input, select, textarea {
 	}
 
 		header.major:after {
-			background: #90909080;
+			background: #000000;
 			content: '';
 			display: inline-block;
 			height: 1px;
 			margin-top: 0;
-			width: 8em;
+			width: 25%;
 		}
 
 		header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
