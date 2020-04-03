@@ -8,7 +8,7 @@ layout: page
 [Introduction](#Introduction)
 [Section 1](#Section 1)
 [Section 2](#Section 2)
-[Markdown Table](#Table)
+[Section 3](#Section 3)
 
 </div>
 

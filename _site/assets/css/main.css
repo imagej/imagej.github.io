@@ -2282,6 +2282,8 @@ input, select, textarea {
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
+			padding-left: 0.1em;
+			padding-right: 0.1em;
 		}
 
 		.icon > .label {
@@ -2444,6 +2446,34 @@ input, select, textarea {
 		margin-left: 0.5em;
 		margin-right: auto;
 		padding: 0.5em;
+	}
+
+
+/* Navigation Bar */
+
+	.topnav {
+		background-color: #495c74;
+		overflow: hidden;
+	}
+
+	.topnav a {
+		float: left;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: large;
+		font-weight: 500;
+	}
+
+	.topnav a:hover {
+		background-color: #ddd;
+		color: black;
+	}
+
+	.topnav a.active {
+		background-color: #4CAF50;
+		color: white;
 	}
 
 /* List */
