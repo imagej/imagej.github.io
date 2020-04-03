@@ -50,7 +50,13 @@ J. Ollion, J. Cochennec, F. Loll, C. Escudé, T. Boudier. ('''2013''') TANGO: A 
 GPL distribution (see [https://cecill.info/index.en.html license]). Sources available on Github (see Download)
 
 == Acknowledgements ==
-The 3D suite would like to thanks the developers of the following plugins :  [[http://www.imagescience.org/meijering/software/featurej/|Imagescience]],  [[http://www.optinav.com/Local_Thickness.htm|LocalThickness]],  [[http://rsbweb.nih.gov/ij/plugins/3d-convex-hull/index.html| ConvexHull3D]],  [[plugin:analysis:3d_object_counter:start|3D Object Counter]], [[plugin:analysis:droplet_counter:start|droplet]] and : P. Andrey, J.-F. Gilles. 
+The 3D suite would like to thanks the developers of the following plugins : 
+* [http://www.imagescience.org/meijering/software/featurej/ Imagescience]  
+* [http://www.optinav.com/Local_Thickness.htm LocalThickness]
+* [http://rsbweb.nih.gov/ij/plugins/3d-convex-hull/index.html ConvexHull3D]
+* [https://imagejdocu.list.lu/plugin/analysis/3d_object_counter/start 3D Object Counter]
+* [https://imagejdocu.list.lu/plugin/analysis/droplet_counter/start Droplet Counter] 
+* and P. Andrey, J.-F. Gilles.
 
 == Links ==
 * [[http://bonej.org/|BoneJ]] 
