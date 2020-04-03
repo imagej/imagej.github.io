@@ -21,7 +21,7 @@ This ''suite'' is composed of :
 * [https://imagejdocu.list.lu/plugin/analysis/3d_mereotopology/start 3D MereoTopology]] (Relationship between objects)
 * [https://imagejdocu.list.lu/plugin/stacks/3d_tools:start 3D Tools]] (Drawing ellipsoids and lines, cropping, ...)
 
-A 2D/3D [https://imagejdocu.list.lu/plugin/filter/3d_filters/startanalysis/spatial_statistics_2d_3d/start spatial statistics]] plugin is also available.
+A 2D/3D [https://imagejdocu.list.lu/plugin/analysis/spatial_statistics_2d_3d/start spatial statistics] plugin is also available.
 
 == Installation ==
 From version 2.7, 3D ImageJ Suite is available in Fiji as an [[http://fiji.sc/List_of_update_sites|Fiji update site]]. The '''Java8''' and '''ImageScience''' update sites must be activated in Fiji, see instructions [[https://imagej.net/Following_an_update_site|here]]. 
