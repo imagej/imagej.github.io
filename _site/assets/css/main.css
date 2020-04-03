@@ -2439,13 +2439,24 @@ input, select, textarea {
 
 	.figure.row {
 		display: block;
-		max-width: 100%;
+		width: 100%;
 		text-align: center;
 		font-size: medium;
 		text-indent: 0;
-		margin-left: 0.5em;
+		margin-left: auto;
 		margin-right: auto;
 		padding: 0.5em;
+	}
+
+	.figure table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+	.figure table td {
+		width: 20%;
+		height: 20%;
+		padding: 0.5em 0.5em 0 0.5em;
 	}
 
 

@@ -147,7 +147,7 @@ run("3-3-2 RGB");
 
 <div class="figure row" markdown="1">
 
-|![Blobs blur]({{site.baseurl}}/images/posts/200px-Blobs-blur.png)Gaussian-blurred blobs image used as input (radius = 3). | ![Blobs watershed no preprocessing]({{site.baseurl}}/images/posts/200px-Blobs-watershed-no-preprocessing.png) Watershed segmentation on original image (Min h = 0, Max h = 150). | ![Blobs blur watershed]({{site.baseurl}}/images/posts/200px-Blobs-blur-watershed.png) Watershed segmentation on Gaussian-blurred original image (radius = 3, Min h = 0, Max h = 150).|
+|![Blobs blur]({{site.baseurl}}/images/posts/200px-Blobs-blur.png){: .image.fit} Gaussian-blurred blobs image used as input (radius = 3). | ![Blobs watershed no preprocessing]({{site.baseurl}}/images/posts/200px-Blobs-watershed-no-preprocessing.png){: .image.fit} Watershed segmentation on original image (Min h = 0, Max h = 150). | ![Blobs blur watershed]({{site.baseurl}}/images/posts/200px-Blobs-blur-watershed.png){: .image.fit} Watershed segmentation on Gaussian-blurred original image (radius = 3, Min h = 0, Max h = 150).|
 
 </div>
 
