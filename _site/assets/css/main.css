@@ -2667,6 +2667,46 @@ input, select, textarea {
 					line-height: inherit;
 				}
 
+/* Sidebar */
+
+	.sidebar {
+		width: auto;
+		float: right;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #f9f9f9;
+		border: 1px solid #a0a0a0;
+		overflow-x: hidden;
+		padding: 0.5em 0.5em 0 0.5em;
+	}
+
+	.sidebar a {
+		padding: 6px 8px 6px 16px;
+		text-decoration: none;
+		font-size: medium;
+		font-weight: 500;
+		color: #000000;
+		display: block;
+	}
+
+	.sidebar li {
+		font-size: smaller;
+	}
+
+	.sidebar a:hover {
+		color: #6bd4c8;
+	}
+
+	.main {
+		padding: 0px 10px;
+	}
+
+	@media screen and (max-height: 450px) {
+		.sidebar {padding-top: 15px;}
+		.sidebar a {font-size: 18px;}
+	}
+
 /* Table */
 
 	.table-wrapper {
