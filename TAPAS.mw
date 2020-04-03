@@ -62,10 +62,9 @@ Boudier, T. Towards an Automated Processing and Analysis System for multi-dimens
 microscopy big data using ImageJ and OMERO. International Microscopy Congress IMC 19. ([[File:Abstract_1848_thomasboudier.pdf]])
 
 == License ==
-Version 0.5 and later are under GPL distribution (see [[http://www.cecill.info/licences/Licence_CeCILL_V2.1-en.html|license]]). 
-Source code is available on '''github''' : [[https://github.com/mcib3d/tapas-core|tapas-core]], [[https://github.com/mcib3d/tapas-plugins|tapas-plugins]].
+Version 0.5 and later are under GPL distribution (see [http://www.cecill.info/licences/Licence_CeCILL_V2.1-en.html license]). 
 
-
+Source code is available on '''github''' : [https://github.com/mcib3d/tapas-core tapas-core], [https://github.com/mcib3d/tapas-plugins tapas-plugins].
 
 == Change log ==
 * 19/09/2019 V0.51 : minor change, new module load attachment from Omero
