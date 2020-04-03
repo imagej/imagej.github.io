@@ -38,9 +38,13 @@ We will propose, as a beta version, the following modules :
 TAPAS was tested successfully with OMERO.insight 5.5.5 and Bioformats 6.0.1.
 
 == Usage / Tutorials ==
-     - If you want to process data stored on an Omero server, connect first to your server using''' TAPAS Connect''' inside the TAPAS menu.
-     - Create your pipeline in a text editor, check available tapas modules and how to use it in the documentation provided.
-     - Run '''TAPAS OMERO''' if you want to process data from Omero or '''TAPAS FILE''' for data on files.
+* If you want to process data stored on an Omero server, connect first to your server using''' TAPAS Connect''' inside the TAPAS menu.
+
+* Create your pipeline in a text editor, check available tapas modules and how to use it in the documentation provided.
+
+* Run ''TAPAS OMERO'' if you want to process data from Omero or ''TAPAS FILE'' for data on files.
+
+
 
 A list of tutorials :
 * Basic '''Input/Ouptput''' functionalities  [[plugin:utilities:tapas_tutorial_:input_output_i:start|here]].
@@ -52,7 +56,8 @@ A list of tutorials :
 * How to use the '''analyzeParticles''' module for segmentation and measurement [[[[plugin:utilities:tapas_tutorial_:2d_measurements_with_analyze_particles_:start|here]].
 * How to quantify '''layers distribution''' [[plugin:utilities:layers_analysis:start|here]].
 
-The list of available modules is described in {{:plugin:stacks:3d_ij_suite:tapasdescription0.5.pdf|TapasModules0.5.pdf}}. 
+The list of available modules is described in {{:plugin:stacks:3d_ij_suite:tapasdescription0.5.pdf|TapasModules0.5.pdf}}.
+
 == Citation ==
 2018 Whitehead, L., Wimmer, V., Lafouresse, F., Ratnayake, D., Currie, P., Groom, J., Rogers, K. and
 Boudier, T. Towards an Automated Processing and Analysis System for multi-dimensional light-sheet
