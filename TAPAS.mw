@@ -45,7 +45,8 @@ TAPAS was tested successfully with OMERO.insight 5.5.5 and Bioformats 6.0.1.
 * Run ''TAPAS OMERO'' if you want to process data from Omero or ''TAPAS FILES'' for data on files.
 
 A list of tutorials :
-* Basic '''Input/Ouptput''' functionalities  [[plugin:utilities:tapas_tutorial_:input_output_i:start|here]].
+* Basic '''Input/Ouptput''' functionalities 
+[https://imagejdocu.list.lu/plugin/utilities/tapas_tutorial/input_output_i/start here].
 * Create your first '''processing pipeline'''  [[plugin:utilities:tapas_tutorial_:create_your_processing_pipeline:start|here]].
 * '''Segmentation''' modules [[[[plugin:utilities:tapas_tutorial_:segmentation:start|here]]. 
 * '''Measurement''' modules  [[[[plugin:utilities:tapas_tutorial_:measurement:start|here]]. 
