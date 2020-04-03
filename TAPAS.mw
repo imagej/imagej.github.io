@@ -25,11 +25,15 @@ As for stable version 0.5 the following modules are available :
 * Calling ImageJ macros and executables
 
 == Installation ==
-     * Install [[https://imagej.nih.gov/ij/|ImageJ]] or [[http://fiji.sc/|Fiji]].
-     * Install [[plugin:stacks:3d_ij_suite:start|3D ImageJ Suite]]. It is also available as a update site in Fiji. **ImageScience** should be installed too, either from [[http://www.imagescience.org/meijering/software/featurej/|here]] or via the update site in Fiji.
-     * Install bioformats, either by downloading [[https://www.openmicroscopy.org/bio-formats/downloads/|bioformats_package.jar]] or by enabling the update site in Fiji. 
-     * If you have an OMERO server, download [[https://www.openmicroscopy.org/omero/downloads/|OMERO-insight]], unzip OMERO.insight-ij-xxx.zip into the plugins directory of ImageJ or Fiji. The version number should match the version number of your server. Please do not install OMERO-insight from the Fiji update site.
-     * Download {{:plugin:stacks:3d_ij_suite:bundle-tapas0.51.zip|bundle-tapas0.51.zip}} and unzip it into the ImageJ or Fiji directory.
+* Install [https://imagej.nih.gov/ij/ ImageJ] or [http://fiji.sc/ Fiji].
+
+* Install [[plugin:stacks:3d_ij_suite:start|3D ImageJ Suite]]. It is also available as a update site in Fiji. '''ImageScience''' should be installed too, either from [http://www.imagescience.org/meijering/software/featurej/ here] or via the update site in Fiji.
+
+* Install Bioformats, either by downloading [https://www.openmicroscopy.org/bio-formats/downloads/ bioformats_package.jar] or by enabling the update site in Fiji.
+ 
+* If you have an OMERO server, download [https://www.openmicroscopy.org/omero/downloads/ OMERO-insight], unzip OMERO.insight-ij-xxx.zip into the plugins directory of ImageJ or Fiji. The version number should match the version number of your server. Please do not install OMERO-insight from the Fiji update site.
+
+* Download {{:plugin:stacks:3d_ij_suite:bundle-tapas0.51.zip|bundle-tapas0.51.zip}} and unzip it into the ImageJ or Fiji directory.
 
 TAPAS was tested successfully with OMERO.insight 5.5.5 and Bioformats 6.0.1.
 
