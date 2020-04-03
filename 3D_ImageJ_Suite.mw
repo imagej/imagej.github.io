@@ -24,11 +24,11 @@ This ''suite'' is composed of :
 A 2D/3D [https://imagejdocu.list.lu/plugin/analysis/spatial_statistics_2d_3d/start spatial statistics] plugin is also available.
 
 == Installation ==
-From version 2.7, 3D ImageJ Suite is available in Fiji as an [[http://fiji.sc/List_of_update_sites|Fiji update site]]. The '''Java8''' and '''ImageScience''' update sites must be activated in Fiji, see instructions [[https://imagej.net/Following_an_update_site|here]]. 
+From version 2.7, '''3D ImageJ Suite''' is available in Fiji as an [http://fiji.sc/List_of_update_sites Fiji update site]. The '''Java8''' and '''ImageScience''' update sites must be activated in Fiji, see instructions [https://imagej.net/Following_an_update_site here]]. 
 
-You can also install 3D ImageJ Suite [[plugin:stacks:3d_ij_suite:start#download|manually]] and unzip it in your plugins folder. The various plugins will appear in the menu ''3D'' of the plugins list.
-You have also to manually download and copy into your plugins directory the '''imagescience.jar''' library from [[http://www.imagescience.org/meijering/software/featurej/|here]].
+You can also install '''3D ImageJ Suite''' [[plugin:stacks:3d_ij_suite:start#download|manually]] and unzip it in your plugins folder. The various plugins will appear in the menu '''3D''' of the plugins list.
 
+You have also to manually download and copy into your plugins directory the '''imagescience.jar''' library from [http://www.imagescience.org/meijering/software/featurej/ here].
 
 == Download ==
 ImageJ 1.47 or later is required. Java3D is also required, check that [[http://rsbweb.nih.gov/ij/plugins/3d-viewer/|3D Viewer]] is working. 
