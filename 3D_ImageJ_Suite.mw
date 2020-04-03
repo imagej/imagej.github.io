@@ -31,16 +31,15 @@ You can also install '''3D ImageJ Suite''' manually (see download section) and u
 You have also to manually download and copy into your plugins directory the '''imagescience.jar''' library from [http://www.imagescience.org/meijering/software/featurej/ here].
 
 == Download ==
-ImageJ 1.47 or later is required. Java3D is also required, check that [[http://rsbweb.nih.gov/ij/plugins/3d-viewer/|3D Viewer]] is working. 
+ImageJ 1.47 or later is required. Java3D is also required, check that [[3D_Viewer]] is working. 
 
-'''NEW''' From version 3.83 and later the new version 4.0.1 of 3D_Viewer is required (please remove the 3D_Viewer plugin provided by ImageJ and replace it by {{:plugin:stacks:3d_ij_suite:3d_viewer-mcib.zip|this version}}, just unzip the file in the plugins directory). 
+'''NEW''' From version 3.83 and later, for ImageJ users the new version 4.0.1 of 3D_Viewer is required (please remove the 3D_Viewer plugin provided by ImageJ and replace it by [[Media:3d_viewer-mcib.zip]], just unzip the file in the plugins directory). 
 
-Java 1.8 or later is required. '''The [[http://www.imagescience.org/meijering/software/featurej/|imagescience]] library is required ''' : [[http://www.imagescience.org/meijering/software/download/imagescience.jar|download]]. 
+Java 1.8 or later is required. '''The [http://www.imagescience.org/meijering/software/featurej/ imagescience] library is required ''' : [http://www.imagescience.org/meijering/software/download/imagescience.jar download here].
+ 
 '''Bundle''' : [[Media:Mcib3d-3.96.zip]]
 
-The [[http://rsbweb.nih.gov/ij/plugins/3d-convex-hull/index.html| ConvexHull3D]] plugin is required only for mesh measurements : {{:plugin:stacks:3d_ij_suite:quickhull3d-1.0.0.jar|quickhull jar}}
-
-Sources are available on [[https://github.com/|GitHub]] for [[https://github.com/mcib3d/mcib3d-core|core]] and [[https://github.com/mcib3d/mcib3d-plugins|plugins]].
+Sources are available on [https://github.com/ GitHub] for [https://github.com/mcib3d/mcib3d-core core] and [https://github.com/mcib3d/mcib3d-plugins plugins].
 
 == Citation ==
 If you use the 3D suite for your publication please cite : 
