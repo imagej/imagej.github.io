@@ -5,7 +5,7 @@ This is a working prototype of a new ImageJ webpage built on GitHub pages! This 
 
 ## Adding images without legends
 
-To include images without a legend (see below for images with a legend) simply use the markdown syntax followed by the `.image` tag with a position. Left, right, center and fit are available aligment positions.
+To include images without a legend (see below for images with a legend) simply use the markdown syntax followed by the `.image` tag with a position. **Left**, **right**, **center** and **fit** are available aligment positions.
 
 _Example:_
 
@@ -28,12 +28,12 @@ _Note:_ We recommend using `{: .image.fit}` instead of `{: .image.center}` to av
 
 ## Adding images with legends
 
-To include images with a legend, insert your image with the `{: .image.fit}` tag and nest them inside `<div class="figure POSITION" markdown="1"></div>` tags. Left, right and center are avaiable position options.
+To include images with a legend, insert your image with the `{: .image.fit}` tag and nest them inside `<div class="figure POSITION" markdown="1"></div>` tags. **Left**, **right** and **center** are avaiable position options.
 
 _Example:_
 
 ```
-<div class="figure center" markdown="1">
+<div class="figure right" markdown="1">
 
 ![placeholder image]({{site.baseurl}}/images/posts/placeholder.png){: .image.fit}
 
