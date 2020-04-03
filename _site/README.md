@@ -1,7 +1,80 @@
-ImageJ homepage prototype
+ImageJ.net (Experimental)
 ===
 
-This is a working prototype of a new ImageJ webpage using GitHub pages! This is a work in progress and **will change**. This template is based on Photo by HTML5 UP and has been modified.
+This is a working prototype of a new ImageJ webpage built on GitHub pages! This is a work in progress and **will change**. This template is based on Photo by HTML5 UP and has been modified for our purposes.
+
+## Adding images without legends
+
+To include images without a legend (see below for images with a legend) simply use the markdown syntax followed by the `.image` tag with a position. Left, right, center and fit are available aligment positions.
+
+_Example:_
+
+```
+![placeholder image]({{site.baseurl}})/images/placeholder.png){: .image.left}
+```
+
+![image left example](/images/readme/image-left.jpg)
+
+**The following options are available:**
+
+| Option | Result |
+| :---: | :---: |
+| {: .image.left} | left alignment |
+| {: .image.right} | right alignment |
+| {: .image.center} | center alignment |
+| {: .image.fit} | centers and fits image (recommended over .image.center)
+
+_Note:_ We recommend using `{: .image.fit}` instead of `{: .image.center}` to avoid images that escape the container (_i.e._ images may span off screen on mobile devices).
+
+## Adding images with legends
+
+To include images with a legend, insert your image with the `{: .image.fit}` tag and nest them inside `<div class="figure POSITION" markdown="1"></div>` tags. Left, right and center are avaiable position options.
+
+_Example:_
+
+```
+<div class="figure center" markdown="1">
+
+![placeholder image]({{site.baseurl}}/images/posts/placeholder.png){: .image.fit}
+
+This is the legend text.
+
+</div>
+```
+
+![figure right example](/images/readme/figure-right.jpg)
+
+_Note:_ This is space sensitive. If you indent the nested markdown line it will render as a code block instead of your image with legend.
+
+For multiple images on the same line with individual legends, compact this syntax place it inside a markdown table and use the `figure row` class.
+
+_Example:_
+
+```
+<div class="figure row" markdown="1">
+
+| ![placeholder image 1]({{site.baseurl}}/images/placeholder.png){: .image.fit} Legend 1 | ![placeholder image 2]({{site.baseurl}}/images/placeholder.png){: .image.fit} Legend 2 | ![placeholder image 3]({{site.baseurl}}/images/placeholder.png){: .image.fit} Legend 3 | 
+
+</div>
+```
+
+![figure row example](/images/readme/figure-row.jpg)
+
+## Adding YouTube videos
+
+To include a link to a YouTube video use the following syntax, using the "video-wrapper" class to ensure your video does not escape the container. Copy the iframe video URL and past it inside `<div clas="video-wrapper"></div>` tags. Dont worry about setting the width and height of the video, the wrapper will fit the video to the window.
+
+_Example:_
+
+```
+<div class="video-wrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4NOM-kLfDR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+```
+
+
+
+------------------
 
 Photon by HTML5 UP
 html5up.net | @ajlkn
