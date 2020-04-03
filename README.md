@@ -22,8 +22,6 @@ Learn
 
 </div>
 
-</div>
-
 ```
 Add anchors where apporpriate:
 
