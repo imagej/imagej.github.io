@@ -5,7 +5,10 @@ layout: page
 
 <div class="sidebar" markdown="1">
 
+Learn
+<hr>
 [Introduction](#Introduction)
+<hr>
 [Section 1](#Section 1)
 [Section 2](#Section 2)
 [Section 3](#Section 3)
@@ -16,7 +19,7 @@ layout: page
 
 Paragraph 1: While in Clojure one is able to declare types if desired, it's not required; the low computational requirements of the plugin do not invite to make it verbose unnecessarily. But java demands type declarations just so that the plugin can be compiled and thus a binary .class file generated.
 
-## <a name="Introduction"></a> Introduction
+## <a name="Introduction"></a> **Introduction**
 
 Paragraph 2: While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
 
@@ -28,7 +31,7 @@ This is the legend text.
 
 </div>
 
-### <a name="Section 1"></a> Section 1
+## <a name="Section 1"></a> **Section 1**
 
 Paragraph 3: While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
 
@@ -38,11 +41,11 @@ Paragraph 3: While both the java and clojure versions encapsulate the variables 
 
 </div>
 
-### <a name="Section 2"></a> Section 2
+## <a name="Section 2"></a> **Section 2**
 
 Paragraph 4: While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
 
-## <a name="Table"></a> Markdown Table Example
+## <a name="Section 3"></a> **Section 3**
 
 | Item 1 | Item 2 | Item 3 |
 | :---: | :---: | :---: |
