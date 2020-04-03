@@ -69,8 +69,8 @@ Source code is available on '''github''' : [[https://github.com/mcib3d/tapas-cor
 
 
 == Change log ==
-  * 19/09/2019 V0.51 : minor change, new module load attachment from Omero
-  * 29/08/2019 V0.5 : stable version. New modules (see list)
-  * 06/05/2019 V0.41beta : fix bug in input/output on Windows
-  * 05/03/2019 V0.4beta : channels and frames now start at 1, new binning option in Omero Load, module 3dfilters is renamed filters and has parameter radxy (instead of radx and rady), new tutorials on measurements and quantification
-  * 01/02/2019 V0.3beta : first beta release
+* 19/09/2019 V0.51 : minor change, new module load attachment from Omero
+* 29/08/2019 V0.5 : stable version. New modules (see list)
+* 06/05/2019 V0.41beta : fix bug in input/output on Windows
+* 05/03/2019 V0.4beta : channels and frames now start at 1, new binning option in Omero Load, module 3dfilters is renamed filters and has parameter radxy (instead of radx and rady), new tutorials on measurements and quantification
+* 01/02/2019 V0.3beta : first beta release
