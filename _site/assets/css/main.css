@@ -2708,6 +2708,24 @@ input, select, textarea {
 					line-height: inherit;
 				}
 
+/* Search */
+
+	.search h2 {
+		color: #000000;
+		margin: 0.5em 0 0 0;
+	}
+
+	.search p {
+		text-indent: 5%;
+		margin: 0 0 0 0;
+	}
+
+	.search a {
+		font-weight: 500;
+		color: #0014ca;
+		border-bottom: none;
+	}
+
 /* Sidebar */
 
 	.sidebar {
