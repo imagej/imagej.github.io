@@ -47,7 +47,7 @@ If you use the 3D suite for your publication please cite :
 J. Ollion, J. Cochennec, F. Loll, C. Escudé, T. Boudier. ('''2013''') TANGO: A Generic Tool for High-throughput 3D Image Analysis for Studying Nuclear Organization. ''Bioinformatics'' 2013 Jul 15;29(14):1840-1. [http://dx.doi.org/10.1093/bioinformatics/btt276 doi]
 
 == License ==
-GPL distribution (see [http://www.cecill.info/index.en.html license]). Sources available on Github (see Download)
+GPL distribution (see [https://cecill.info/index.en.html license]). Sources available on Github (see Download)
 
 == Acknowledgements ==
 The 3D suite would like to thanks the developers of the following plugins :  [[http://www.imagescience.org/meijering/software/featurej/|Imagescience]],  [[http://www.optinav.com/Local_Thickness.htm|LocalThickness]],  [[http://rsbweb.nih.gov/ij/plugins/3d-convex-hull/index.html| ConvexHull3D]],  [[plugin:analysis:3d_object_counter:start|3D Object Counter]], [[plugin:analysis:droplet_counter:start|droplet]] and : P. Andrey, J.-F. Gilles. 
