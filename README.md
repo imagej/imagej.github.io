@@ -3,6 +3,53 @@ ImageJ.net (Experimental)
 
 This is a working prototype of a new ImageJ webpage built on GitHub pages! This is a work in progress and **will change**. This template is based on Photo by HTML5 UP and has been modified for our purposes.
 
+## Setting up the side bar with anchors
+
+Adding a sidebar with anchor
+
+Place this at the top of the page (before content)
+
+```
+<div class="sidebar" markdown="1">
+
+Learn
+<hr>
+[Introduction](#Introduction)
+<hr>
+[Section 1](#Section 1)
+[Section 2](#Section 2)
+[Section 3](#Section 3)
+
+</div>
+
+</div>
+
+```
+Add anchors where apporpriate:
+
+Title anchors:
+
+```
+## <a name="Introduction"></a> **Introduction**
+
+<!-- content -->
+
+## <a name="Section 1"></a> **Section 1**
+
+<!-- content -->
+
+## <a name="Section 2"></a> **Section 2**
+
+<!-- content -->
+
+## <a name="Section 3"></a> **Section 3**
+
+<!-- content -->
+
+```
+
+![sidebar example](/images/readme/sidebar.jpg)
+
 ## Adding images without legends
 
 To include images without a legend (see below for images with a legend) simply use the markdown syntax followed by the `.image` tag with a position. **Left**, **right**, **center** and **fit** are available aligment positions.
@@ -46,7 +93,7 @@ This is the legend text.
 
 _Note:_ This is space sensitive. If you indent the nested markdown line it will render as a code block instead of your image with legend.
 
-For multiple images on the same line with individual legends, compact this syntax place it inside a markdown table and use the `figure row` class.
+For multiple images on the same line with individual legends, compact this syntax and place it inside a markdown table using the `figure row` class.
 
 _Example:_
 
@@ -71,9 +118,6 @@ _Example:_
     <iframe width="560" height="315" src="https://www.youtube.com/embed/4NOM-kLfDR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 ```
-
-
-
 ------------------
 
 Photon by HTML5 UP
