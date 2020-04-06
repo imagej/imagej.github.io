@@ -417,6 +417,8 @@ Menu path: ''Plugins &gt; BoneJ &gt; Orientation''
 
 Sets the direction in a 2D image, without rotating the image or changing it in any way. [[#Slice geometry|''Slice Geometry'']] optionally uses ''Orientation'' to calculate diameter, second moments of area and section moduli around anatomic axes set by the user. To apply the selected orientation to a ''Slice Geometry'' analysis, run ''Orientation'', select axes and direction, leave the ''Orientation'' window open, run ''Slice Geometry'', and select ''Use Orientation''.
 
+The option to use ''Orientation'' will be greyed out in ''Slice Geometry'' if there is no active ''Orientation'' window. Also, in the Results table you will see a list of results that relate to the particular axis pair you have chosen. ''Orientation'' can handle multiple open images and will handle different images’ orientation independently.
+
 ==== Suitable images ====
 A 2D image.
 
