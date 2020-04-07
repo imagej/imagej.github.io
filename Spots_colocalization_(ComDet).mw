@@ -3,10 +3,10 @@
 | name                   = ComDet
 | author                 = [http://katpyxa.info Eugene Katrukha]
 | maintainer             = [mailto:katpyxa_at_gmail.com Eugene Katrukha]
-| filename               = [https://github.com/ekatrukha/ComDet/blob/master/target/ComDet_-0.5.0.jar?raw=true ComDet.jar] + for ImageJ [https://math.nist.gov/javanumerics/jama/Jama-1.0.3.jar Jama lib]
+| filename               = [https://github.com/ekatrukha/ComDet/blob/master/target/ComDet_-0.5.1.jar?raw=true ComDet.jar] + for ImageJ [https://math.nist.gov/javanumerics/jama/Jama-1.0.3.jar Jama lib]
 | source                 = [https://github.com/ekatrukha/ComDet github]
 | released               = 23 November 2012
-| latest version         = 16 March 2020
+| latest version         = 7 April 2020
 | status                 = stable 
 | category               = [[:Category:Colocalization]]
 | website                = [https://github.com/ekatrukha/ComDet/wiki wiki]
