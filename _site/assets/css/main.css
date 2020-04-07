@@ -2763,10 +2763,6 @@ input, select, textarea {
 		margin: 0 0 0 0;
 	}
 
-	.sidebar li {
-		font-size: smaller;
-	}
-
 	.sidebar a:hover {
 		color: #6bd4c8;
 	}
