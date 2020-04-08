@@ -10,6 +10,10 @@
 | category               = [[:Category:Analysis|Analysis]]
 }}
 
+= New versions =
+'''08/04/2020'''
+- Add numerical keyboard shortcut, such that the 0 to 9 keys of the keypad on the right of the keyboard (not the top row) can be used to set the current roi group
+ 
 = Installation =
 In Fiji, activate the '''ROI 1-click tools''' update site.<br>
 In ImageJ, copy the file ''Roi 1-Click Tools.ijm'' to ''ImageJ\macros\toolsets''
