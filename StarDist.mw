@@ -40,7 +40,17 @@ Start the plugin from <code>Plugins > StarDist > StarDist 2D</code>. The followi
 {| class="wikitable"
 |-
 | [[File: StarDist_usage_param_pred.jpg|400px]]
-| Select a neural network model from the dropdown list, which can be one of the following: <ul><li>''A built-in model''. We currently provide <code>Versatile...</code> and <code>DSB 2018...</code> that were both trained on a subset of the [https://data.broadinstitute.org/bbbc/BBBC038/ DSB 2018 nuclei segmentation challenge dataset].<li>''A custom user-trained model'' ([https://github.com/mpicbg-csbd/stardist via the training code]) that has been exported as a zip file and can be loaded from a file or URL (see ''Advanced options'' below).</ul> If necessary, one can change/disable the percentile-based input image normalization.
+| Select a neural network model from the dropdown list, which can be one of the following:
+<ul>
+<li>''A built-in model''. We currently provide:
+<ul>
+<li><code>Versatile (fluorescent nuclei)</code> and <code>DSB 2018 (from StarDist 2D paper)</code> that were both trained on a subset of the [https://data.broadinstitute.org/bbbc/BBBC038/ DSB 2018 nuclei segmentation challenge dataset].
+<li><code>Versatile (H&E nuclei)</code> that was trained on images from the [https://monuseg.grand-challenge.org/Data/ MoNuSeg 2018 training data] and the [http://cancergenome.nih.gov/ TCGA archive].
+</ul>
+<li>''A custom user-trained model'' ([https://github.com/mpicbg-csbd/stardist via the training code]) that has been [https://github.com/mpicbg-csbd/stardist/search?q=export_TF&type=Code exported as a zip file] and can be loaded from a file or URL (see ''Advanced options'' below).
+</ul>
+If necessary, one can change/disable the percentile-based input image normalization.
+
 |-
 | [[File: StarDist_usage_param_nms.jpg|400px]]
 | Adjust the NMS (non-maximum suppression) postprocessing parameters: <ul> <li> ''Probability/Score Threshold'' - higher values lead to fewer segmented objects, but will likely avoid false positives. <li> ''Overlap Threshold'' - higher values allow segmented objects to overlap substantially.</ul> 
