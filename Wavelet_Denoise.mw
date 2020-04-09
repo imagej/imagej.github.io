@@ -84,8 +84,38 @@ Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>)
 
 7. By CTRL+SHIFT+C and pressing <i>Auto</i> adjust contrast in all images if it is useful. Do not press <i>Apply</i>.
 
-8. Apply denoising/filtration of your data. If any method or parameter is changed, “Filtered-“ (and “WT-“ and “WT-NoStretch-” if these are opened) image windows are immediately recomputed.
+8. Apply denoising/filtration of your data. If any method or parameter is changed, “Filtered-“ (and “WT-“ and “WT-NoStretch-” if these are opened) image windows are '''immediately recomputed'''.
 
 9. Play iteratively with parameters until you are satisfied with the result of denoising/filtration. It is possible to return back to default values of the dialog by pressing <i>Refresh</i>.
 
 10. If you are satisfied with the result, press <i>Done!</i> This closes the dialog, but all image windows stay open for possible next processing.
+
+'''How to use the plugin for denoising/filtering big data:'''
+
+(SIM_Lamina_32bit_488_Honeycomb_StrongBckg.tif)
+
+1. Open an image/stack.
+
+2. Run {{bc | Plugins | Wavelet_Denoise}}.
+
+3. Arrange positions of <i>Wavelet_Denoise</i> main window and <i>Synchronize Windows</i> dialog in the screen.
+
+4. Run {{bc | Window | Tile}}.
+
+5. Press <i>Synchronize All</i> in <i>Synchronize Windows</i> dialog. Or select the input image and its “WT-“ and “Filtered-“ versions for syncing if more images are opened in Fiji/Imagej.
+
+6. Find a slice of interest in a stack image with multiple slices (if such is opened).
+
+7. By CTRL+SHIFT+C and pressing <i>Auto</i> adjust contrast in all images if it is useful. Do not press <i>Apply</i>.
+
+8. Mark <i>Enable 1 Slice Preview</i> to '''avoid immediate recomputation''' of images after changing any parameter in the main dialog.
+
+9. Choose a filtration method and its power by using a corresponding slider.
+
+10. Press <i>Preview</i> button. The method and its power are applied to the data, but only to a selected slice!
+
+11. Play iteratively with parameters until you are satisfied with the result of denoising/filtration. It is also possible to go to various slices to check the quality of filtering there.
+
+12. '''Important:''' If you are satisfied with the result, '''press <i>Recomputing All Data Required</i>''' button (or uncheck Enable 1 Slice Preview). This recomputes the whole data according to active set method and its power.
+
+13. If you are satisfied with the result, press <i>Done!</i> This closes the dialog, but all image windows stay open for possible next processing.
