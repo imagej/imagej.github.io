@@ -17,7 +17,7 @@ When starting the plugin, pictures and Sync Wins dialog appear, like in the pict
 
 '''Filtration Method:'''
 
-• Nothing – no filtration applied.
+• <i>Nothing</i> – no filtration applied.
 
 • Suppress Approx. & Detail. Coeffs. (AC & DC) – suppresses some amount of the smallest coefficients, i.e. coefficients are ranked according to absolute value of their amplitude. User can set the level of suppression that equals the percentage of the coefficients to be removed (i.e., 0% means no values are suppressed, 100% means all the values are suppressed). Here, both Approximation and Detailed Coefficients are taken together as a one set when doing suppression.
 
