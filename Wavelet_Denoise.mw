@@ -39,3 +39,15 @@ If user wants to inspect values of wavelet coefficients, checking this checkbox 
 '''Show Image/Stack with Float Values of WT Coefficients (For Experts)'''
 
 If user wants to see real values of wavelet coefficients, checking this checkbox shows another picture depicting the coefficients in float precision (the image with the “WT-NoStretch-” prefix). That can be used, e.g., for analysis in Matlab.
+
+'''Enable 1 Slice Preview – Use “Synchronize All Windows”'''
+
+In a standard way, when changing any parameter or method in the dialog, “Filtered” images, and also “WT” and “WT-NoStretch-” pictures if these are opened, are recomputed instantly. This may become time-consuming when filtering big stacks with large image matrices. Then checking this box stops immediate recomputation of stacks and Preview 1 Slice button is enabled. 
+
+Now, after changing a parameter and/or a method these are applied to the data only after pressing this button. But only a slice that is active in the original image is updated. 
+
+After pressing <i>Preview 1 Slice</i> another <i>Recomputing All Data Required</i> button becomes active as well. After pressing this button parameters that were previously applied to one slice only are used for updating the whole stack of images. This button is active only if parameters set were not applied to the whole stack.
+
+It is highly useful here to apply <i>Synchronize All</i> in the <i>Sync Wins</i> dialog when going through the stack to see corresponding slices in all image stack windows.
+
+When unchecking this checkbox, the whole stack, is also recomputed according to the method and parameters set. Then plugin returns to the mode of immediate recomputation of the whole image/stack after changing parameters and both buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>) are disabled.
