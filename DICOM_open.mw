@@ -17,46 +17,47 @@ When run as a plugin the plugin will first present a directory browser to select
 
 If the DICOM series is a multi b-value diffusion dataset then use the Pulldown to select the appropriate type "Trace", "R/L", "A/P", "S/I"; DTI is not supported. Supported vendors (0008,0070) are "GE MEDICAL SYSTEMS" and "SIEMENS". Otherwise, if the DICOM series was acquired whilst varying a DICOM tag value, enter the DICOM tag and a variable name to be used in the slice's short label. Neither of these fields are required.
 
-The **Float** format causes the voxel values to be the same as in the DICOM dataset, albeit, in 32-bit FloatProcessor format.  The **Scaled** format causes the FloatProcessor values to be scaled according to the linear rescale (0028,1053) and intercept (0028,1052).  The **16-bit fixed** format causes the FloatProcessor values to be directly converted to short(s) and placed in a ShortProcessor, (i.e., Java: (short)floatvalue; not: (ShortProcessor)FloatProcessorValue, n.b., the (ShortProcessor) conversion rescales).  The **16-bit broken** format is as the DICOM plugin imported.
+The '''Float''' format causes the voxel values to be the same as in the DICOM dataset, albeit, in 32-bit FloatProcessor format.  The '''Scaled''' format causes the FloatProcessor values to be scaled according to the linear rescale (0028,1053) and intercept (0028,1052).  The '''16-bit fixed''' format causes the FloatProcessor values to be directly converted to short(s) and placed in a ShortProcessor, (i.e., Java: (short)floatvalue; not: (ShortProcessor)FloatProcessorValue, n.b., the (ShortProcessor) conversion rescales).  The '''16-bit broken''' format is as the DICOM plugin imported.
 
 == Methods ==
-''public static boolean isDICOM(File file)'' \\
-Does the file have the proper magic number ("DICM").
+<code>public static boolean isDICOM(File file)</code>
+<br>Does the file have the proper magic number ("DICM").
 
-''public static TreeMap<String,String> parseDICOM(ImagePlus imp, int s)''\\
-Return the DICOM tag/value mappings in easy to use format.  The slice ''s'' is as returned by ''ImagePlus.getStackIndex''.
+<br><code>public static TreeMap<String,String> parseDICOM(ImagePlus imp, int s)</code>
+<br>Return the DICOM tag/value mappings in easy to use format.  The slice ''s'' is as returned by ''ImagePlus.getStackIndex''.
 
-''public static ImagePlus openDICOMFloat(File dfs)''\\
-''public static ImagePlus openDICOMFloat(File[] dfs)''\\
-''public static ImagePlus openDICOMScaled(File dfs)''\\
-''public static ImagePlus openDICOMScaled(File[] dfs)''\\
-''public static ImagePlus openDICOMShort(File dfs)''\\
-''public static ImagePlus openDICOMShort(File[] dfs)''\\
-''public static ImagePlus openDICOM(File dfs, String format)''\\
-''public static ImagePlus openDICOM(File[] dfs, String format)''\\
-These methods open a DICOM dataset.  All but the last one are convenience methods that call the last one.  The DICOM dataset is not yet sorted.  With ''File dfs'', ''dfs'' can be either the parent directory of the DICOM files or a single DICOM file.  For ''File[] dfs'', ''dfs'' should be an array of DICOM files.
+<br><code>public static ImagePlus openDICOMFloat(File dfs)</code>
+<br><code>public static ImagePlus openDICOMFloat(File[] dfs)</code>
+<br><code>public static ImagePlus openDICOMScaled(File dfs)</code>
+<br><code>public static ImagePlus openDICOMScaled(File[] dfs)</code>
+<br><code>public static ImagePlus openDICOMShort(File dfs)</code>
+<br><code>public static ImagePlus openDICOMShort(File[] dfs)</code>
+<br><code>public static ImagePlus openDICOM(File dfs, String format)</code>
+<br><code>public static ImagePlus openDICOM(File[] dfs, String format)</code>
+<br>These methods open a DICOM dataset.  All but the last one are convenience methods that call the last one.  The DICOM dataset is not yet sorted.  With ''File dfs'', ''dfs'' can be either the parent directory of the DICOM files or a single DICOM file.  For ''File[] dfs'', ''dfs'' should be an array of DICOM files.
 
-''public static ImagePlus openDICOMDiff(File dfs, String format, String reqdirstr)''\\
-Opens a multi b-value diffusion dataset, whilst ignoring the directions that are not ''reqdirstr''.  ''reqdirstr'' is one of "Trace","R/L","A/P","S/I".  
+<br><code>public static ImagePlus openDICOMDiff(File dfs, String format, String reqdirstr)</code>
+<br>Opens a multi b-value diffusion dataset, whilst ignoring the spacial directions that are not ''reqdirstr''.  ''reqdirstr'' is one of "Trace","R/L","A/P","S/I".
 
-''public static ImagePlus volumeDICOM(ImagePlus imp)''\\
-Sorts the DICOM ''imp'' assuming there is only one volume.
+<br><code>public static ImagePlus volumeDICOM(ImagePlus imp)</code>
+<br>Sorts the DICOM ''imp'' assuming there is only one volume.
 
-''public static ImagePlus arrayDICOM(ImagePlus imp, String tag, String var)''\\
-Sorts DICOM ''imp'' into a hyperstack assuming ''imp'' was collected by varying the DICOM ''tag'' property.  The string ''var'' is used in conjunction with the DICOM ''tag'''s value to set each slice's label.
+<br><code>public static ImagePlus arrayDICOM(ImagePlus imp, String tag, String var)</code>
+<br>Sorts DICOM ''imp'' into a hyperstack assuming ''imp'' was collected by varying the DICOM ''tag'' property.  The string ''var'' is used in conjunction with the DICOM ''tag'''s value to set each slice's label.
 
-''public static ImagePlus[] diffusionDICOM(ImagePlus imp) throws Exception''\\
-Sorts a multi b-value diffusion dataset into a array of 4 hyperstacks, one array element for each of "Trace","R/L","A/P","S/I".  Only the array elements that existed in imp are filled in.
+<br><code>public static ImagePlus[] diffusionDICOM(ImagePlus imp) throws Exception</code>
+<br>Sorts a multi b-value diffusion dataset into a array of 4 hyperstacks, one array element for each of "Trace","R/L","A/P","S/I".  Only the array elements that existed in imp are filled in.
 
-''public static double[]  getArray(ImagePlus imp, int s, String tag)''\\
-''public static double getDouble(ImagePlus imp, int s, String tag)''\\
-''public static int getInt(ImagePlus imp, int s, String tag)''\\
-''public static String getTagValue(ImagePlus imp, int s, String tag)''\\
-''public static String getTagLine(ImagePlus imp, int s, String tag)''\\
+<br><code>public static double[]  getArray(ImagePlus imp, int s, String tag)</code>
+<br><code>public static double getDouble(ImagePlus imp, int s, String tag)</code>
+<br><code>public static int getInt(ImagePlus imp, int s, String tag)</code>
+<br><code>public static String getTagValue(ImagePlus imp, int s, String tag)</code>
+<br><code>public static String getTagLine(ImagePlus imp, int s, String tag)</code>
 Convenience methods to access DICOM tag values for a slice s. The slice ''s'' is as returned by ''ImagePlus.getStackIndex''.
 
 == Install ==
-Place the file {{ :plugin:inputoutput:dicom_open:dicom_open.java |DICOM_open.java}} in your plugins directory, then compile&run; or just place the {{ :plugin:inputoutput:dicom_open:dicom_open.class |DICOM_open.class}} file in your plugins directory and refresh the menus / restart ImageJ.  **Note that DICOM should be in uppercase in the file names.**
+Unzip [[File:DICOM open.zip]] into plugins or plugins/jars, in ImageJ1.
+
 
 == Licence ==
 GPL distribution licence.
