@@ -10,8 +10,6 @@
 | website                = 
 }}
 
-
-= DICOM_open =
 The DICOM_open plugin provides additional functionality on top of the DICOM plugin.  There were three main impetuses for developing this plugin, first was to be able to search the DICOM files for a series to open, second was to open the series and get at the actual voxel data, and, third was to properly arrange the images in a hyperstack.  
 
 DICOM datasets, that I generally come across, are stored in a hierarchical directory structure in which the directory names do not enlighten the content.  The DICOM files are database entries, and the parameters within hold the clues to which datasets may be desired.  This plugin's GUI provides an interactive interface to find the series of interest to open.  For dealing with a single hodgepodge directory of DICOM files, see [[plugin:utilities:dicom_explode|DICOM_explode plugin]].
