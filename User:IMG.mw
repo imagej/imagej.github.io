@@ -1,1 +1,13 @@
+{{Infobox
+| software               = ImageJ
+| name                   = Biomat
+| maintainer             = [mailto:jiri.janacek_at_fgu.cas.cz Jiří Janáček]
+| author                 = Jiří Janáček
+| source                 = {{GitHub|org=jiri-janacek|repo=biomat}}
+| released               = 03/26/2019
+| latest version         = 02/24/2020
+| status                 = 
+| website                = 
+}}
+
 == [[Wavelet_Denoise]] ==
