@@ -3,6 +3,7 @@
 | name                   = Wavelet_Denoise
 | author                 = [mailto:martin.capek_at_img.cas.cz Martin Čapek]
 | maintainer             = Martin Čapek
+| website                = https://imagej.net/User:IMG
 | source                 = {{GitHub|org=IMG-source|repo=Wavelet_Denoise}}
 | released               = 04/09/2020
 | latest version         = 04/09/2020
