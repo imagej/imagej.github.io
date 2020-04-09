@@ -1,5 +1,5 @@
 {{Infobox
-| software               = ImageJ
+| software               = ImageJ1
 | name                   = DICOM_open
 | author                 = Fred Damen
 | filename               = DICOM_open.jar
@@ -16,7 +16,7 @@ DICOM datasets, that I generally come across, are stored in a hierarchical direc
 
 MRI DICOM dataset's voxel data tends to be stored as 16 bit unsigned integers, i.e., magnitude data, albeit, the tags within the DICOM files say they are signed.  ImageJ does not support signed 16 bit image data.  For some reason, they add 32768 to the dataset voxel values and store them in unsigned 16 bit integer ShortProcessor(s); confusing to say the least.  This plugin provides the means to access the voxel data as someone who deals with MRI data would expect.
 
-The DICOM datasets that I open in ImageJ, contain multiple volumes, where each volume was acquired under slightly different conditions, e.g., multi b-value diffusion.  DICOM_explode plugin can sort a DICOM dataset into a top down properly sorted hyperstack, suitable for processing.
+The DICOM datasets that I open in ImageJ, contain multiple volumes, where each volume was acquired under slightly different conditions, e.g., multi b-value diffusion.  DICOM_explode plugin can sort a DICOM dataset into a top down properly sorted hyperstack, suitable for processing see F_Project plugin.
 
 == Features ==
 [[File:DICOM_open.jpg]]
