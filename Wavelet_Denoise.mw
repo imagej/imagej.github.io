@@ -8,6 +8,9 @@ When starting the plugin, pictures and Sync Wins dialog appear, like in the pict
 [[File:Wavelet_Denoise_dialog.jpg|400px|right]]
 
 Description of functionality of items in the plugin window:
+
 Refresh button – returns all items in the dialog to default values.
+
 Level of Details – number of levels of decomposition of images.
+
 Wavelet Filter – wavelet family and a kind of the applied filter (Haar 1, Daubechies 1-20, Symlets 2-20, Coiflets 1-5, Biorthogonal 1.1-6.8, Reverse Biorthogonal 1.1-6.8, Discrete Meyer 1).
