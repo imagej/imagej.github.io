@@ -30,4 +30,12 @@ When starting the plugin, pictures and <i>Sync Wins</i> dialog appear, like in t
 • <i>Suppress Detail. Coeffs. (DC)</i> – applied with “Suppress AC” value:
 Here the plugin suppresses coefficients separately, i.e. only Approximation Coefficients can be suppressed (0-100%) or only Detailed Coefficients (0-100%). However, it is possible to combine settings of both coefficients together, i.e. to set, e.g., AC to 5% and DC to 50% and both suppressions will be applied to the image simultaneously.
 
-Explanation of details of the wavelet transform and parameters mentioned can be found in the text below (<i>Čapek et al.</i>, 2020).
+Explanation of details of the wavelet transform and parameters mentioned can be found in the text below [2].
+
+'''Show WT Coefficients'''
+
+If user wants to inspect values of wavelet coefficients, checking this checkbox shows a picture depicting the coefficients that are converted to 8-bit and are intensity scaled for good visualization (the image with the “WT-” prefix).
+
+'''Show Image/Stack with Float Values of WT Coefficients (For Experts)'''
+
+If user wants to see real values of wavelet coefficients, checking this checkbox shows another picture depicting the coefficients in float precision (the image with the “WT-NoStretch-” prefix). These can be used, e.g., for analysis in Matlab.
