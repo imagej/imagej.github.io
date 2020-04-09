@@ -38,4 +38,4 @@ If user wants to inspect values of wavelet coefficients, checking this checkbox 
 
 '''Show Image/Stack with Float Values of WT Coefficients (For Experts)'''
 
-If user wants to see real values of wavelet coefficients, checking this checkbox shows another picture depicting the coefficients in float precision (the image with the “WT-NoStretch-” prefix). These can be used, e.g., for analysis in Matlab.
+If user wants to see real values of wavelet coefficients, checking this checkbox shows another picture depicting the coefficients in float precision (the image with the “WT-NoStretch-” prefix). That can be used, e.g., for analysis in Matlab.
