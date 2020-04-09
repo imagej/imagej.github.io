@@ -66,7 +66,7 @@ Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>)
 
 == Step-by-step manuals ==
 
-'''How to use the plugin for denoising/filtering small data:'''
+'''<u>How to use the plugin for denoising/filtering small data:</u>'''
 
 (SIM_Lamina_32bit_488_Honeycomb_StrongBckg_Scale-0_25.tif)
 
@@ -90,7 +90,7 @@ Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>)
 
 10. If you are satisfied with the result, press <i>Done!</i> This closes the dialog, but all image windows stay open for possible next processing.
 
-'''<u>How to use the plugin for denoising/filtering big data:<u>'''
+'''<u>How to use the plugin for denoising/filtering big data:</u>'''
 
 (SIM_Lamina_32bit_488_Honeycomb_StrongBckg.tif)
 
