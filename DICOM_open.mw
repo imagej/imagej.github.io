@@ -57,7 +57,7 @@ Convenience methods to access DICOM tag values for a slice s. The slice ''s'' is
 
 == Install ==
 Unzip [[File:DICOM open.zip]] into plugins or plugins/jars, in .
-[[https://imagej.net/_images/5/56/DICOM_open.zip]]
+[[https://imagej.net/_images/5/56/DICOM_open.zip DICOM_open.zip]]
 
 == Licence ==
 GPL distribution licence.
