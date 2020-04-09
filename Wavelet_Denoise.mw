@@ -51,3 +51,18 @@ After pressing <i>Preview 1 Slice</i> another <i>Recomputing All Data Required</
 It is highly useful here to apply <i>Synchronize All</i> in the <i>Sync Wins</i> dialog when going through the stack to see corresponding slices in all image stack windows.
 
 When unchecking this checkbox, the whole stack, is also recomputed according to the method and parameters set. Then plugin returns to the mode of immediate recomputation of the whole image/stack after changing parameters and both buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>) are disabled.
+
+'''Status Message'''
+Below these buttons there is a status message showing the progress of computation or warning messages from the plugin.
+
+'''Done!''' button closes the dialog, but all image windows stay open for possible next processing.
+
+'''Additional remarks'''
+
+• Plugin dialog is modeless. Among others, it is possible to process the input image prior applying any wavelet denoising/filtration, e.g., by smoothing, sharpening, contrast. In such cases the <i>Refresh</i> button can be useful. However, the size of the input image matrix, number of slices and the bit depth cannot be changed.
+
+• When you close any image window joined with the dialog (Input, WT, Filtered, WT-NoStretch) during running, the dialog will not continue and a warning message appears.
+
+• The sizes of input image matrices must be of power of 2, common sizes are: 64, 128, 256, 512, 1024, 2048 etc., otherwise the plugin will not start and a warning message appears again. This is due to the proper computation of levels of wavelet decomposition of images.
+
+• If you do not see data in image windows well, use {{bc | Image | Adjust-Brightness/Contrast | Auto}}. Do not press <i>Apply</i> for pixel intensity value recomputation.
