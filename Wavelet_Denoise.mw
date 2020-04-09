@@ -90,7 +90,7 @@ Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>)
 
 10. If you are satisfied with the result, press <i>Done!</i> This closes the dialog, but all image windows stay open for possible next processing.
 
-'''How to use the plugin for denoising/filtering big data:'''
+'''<u>How to use the plugin for denoising/filtering big data:<u>'''
 
 (SIM_Lamina_32bit_488_Honeycomb_StrongBckg.tif)
 
@@ -116,6 +116,6 @@ Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>)
 
 11. Play iteratively with parameters until you are satisfied with the result of denoising/filtration. It is also possible to go to various slices to check the quality of filtering there.
 
-12. '''Important:''' If you are satisfied with the result, '''press <i>Recomputing All Data Required</i>''' button (or uncheck Enable 1 Slice Preview). This recomputes the whole data according to active set method and its power.
+12. '''Important:''' If you are satisfied with the result, '''press <i>Recomputing All Data Required</i>''' button (or uncheck <i>Enable 1 Slice Preview</i>). This recomputes the whole data according to active set method and its power.
 
 13. If you are satisfied with the result, press <i>Done!</i> This closes the dialog, but all image windows stay open for possible next processing.
