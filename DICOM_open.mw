@@ -56,8 +56,8 @@ The '''Float''' format causes the voxel values to be the same as in the DICOM da
 Convenience methods to access DICOM tag values for a slice s. The slice ''s'' is as returned by ''ImagePlus.getStackIndex''.
 
 == Install ==
-Unzip [[File:DICOM open.zip]] into plugins or plugins/jars, in .
-[[https://imagej.net/_images/5/56/DICOM_open.zip DICOM_open.zip]]
+Unzip [[https://imagej.net/_images/5/56/DICOM_open.zip DICOM_open.zip]] into plugins or plugins/jars, in ImageJ1.
+
 
 == Licence ==
 GPL distribution licence.
