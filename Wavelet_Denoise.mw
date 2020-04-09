@@ -3,7 +3,7 @@
 
 [[File:Wavelet_Denoise_Pics_ImageJ_SyncWins.jpg|800px]]
  
-When starting the plugin, pictures and Sync Wins dialog appear, like in the picture above, together with the plugin dialog. The first picture is the input image, the second one is the filtered picture (“Filtered-” prefix), the third one contains the wavelet coefficients (“WT-“ prefix), that are converted to 8-bit and are intensity scaled for good visualization, the fourth picture (“WT-NoStretch-” prefix) contains float values of the wavelet coefficients without intensity scaling. The third and fourth pictures appear only after checking corresponding boxes in the main dialog. Applying Synchronize All in the Sync Wins dialog is helpful when navigating through image stacks.
+When starting the plugin, pictures and <i>Sync Wins</i> dialog appear, like in the picture above, together with the plugin dialog. The first picture is the input image, the second one is the filtered picture (“Filtered-” prefix), the third one contains the wavelet coefficients (“WT-“ prefix), that are converted to 8-bit and are intensity scaled for good visualization, the fourth picture (“WT-NoStretch-” prefix) contains float values of the wavelet coefficients without intensity scaling. The third and fourth pictures appear only after checking corresponding boxes in the main dialog. <i>Applying Synchronize All</i> in the <i>Sync Wins</i> dialog is helpful when navigating through image stacks.
 
 [[File:Wavelet_Denoise_dialog.jpg|350px|right]]
 
@@ -19,15 +19,15 @@ When starting the plugin, pictures and Sync Wins dialog appear, like in the pict
 
 • <i>Nothing</i> – no filtration applied.
 
-• Suppress Approx. & Detail. Coeffs. (AC & DC) – suppresses some amount of the smallest coefficients, i.e. coefficients are ranked according to absolute value of their amplitude. User can set the level of suppression that equals the percentage of the coefficients to be removed (i.e., 0% means no values are suppressed, 100% means all the values are suppressed). Here, both Approximation and Detailed Coefficients are taken together as a one set when doing suppression.
+• <i>Suppress Approx. & Detail. Coeffs. (AC & DC)</i> – suppresses some amount of the smallest coefficients, i.e. coefficients are ranked according to absolute value of their amplitude. User can set the level of suppression that equals the percentage of the coefficients to be removed (i.e., 0% means no values are suppressed, 100% means all the values are suppressed). Here, both Approximation and Detailed Coefficients are taken together as a one set when doing suppression.
 
-• Soft Thresholding – soft VisuShrink thresholding;
+• <i>Soft Thresholding</i> – soft VisuShrink thresholding;
 
-• Hard Thresholding – hard VisuShrink thresholding: These two tools demonstrate another use of wavelet transform for image denoising/filtering. It is accomplished using VisuShrink thresholding method and the user defines the threshold by selecting the level of denoising (that equals Sigma value of the Universal threshold; Sigma takes values 1-128) in the dialog. It can also be selected to do either Soft Thresholding or Hard Thresholding [1]. Soft thresholding generally gives a smoother image.
+• <i>Hard Thresholding</i> – hard VisuShrink thresholding: These two tools demonstrate another use of wavelet transform for image denoising/filtering. It is accomplished using VisuShrink thresholding method and the user defines the threshold by selecting the level of denoising (that equals Sigma value of the Universal threshold; Sigma takes values 1-128) in the dialog. It can also be selected to do either Soft Thresholding or Hard Thresholding [1]. Soft thresholding generally gives a smoother image.
 
-• Suppress Approx. Coeffs. (AC) – applied with “Suppress DC” value;
+• <i>Suppress Approx. Coeffs. (AC)</i> – applied with “Suppress DC” value;
 
-• Suppress Detail. Coeffs. (DC) – applied with “Suppress AC” value:
+• <i>Suppress Detail. Coeffs. (DC)</i> – applied with “Suppress AC” value:
 Here the plugin suppresses coefficients separately, i.e. only Approximation Coefficients can be suppressed (0-100%) or only Detailed Coefficients (0-100%). However, it is possible to combine settings of both coefficients together, i.e. to set, e.g., AC to 5% and DC to 50% and both suppressions will be applied to the image simultaneously.
 
-Explanation of details of the wavelet transform and parameters mentioned can be found in the text below (Čapek et al., 2020).
+Explanation of details of the wavelet transform and parameters mentioned can be found in the text below (<i>Čapek et al.</i>, 2020).
