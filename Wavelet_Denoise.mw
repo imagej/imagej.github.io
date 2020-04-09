@@ -50,7 +50,7 @@ When unchecking this checkbox, the whole stack, is also recomputed according to 
 
 '''Status Message'''
 
-Below these buttons there is a status message showing the progress of computation or warning messages from the plugin.
+Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>) there is a status message showing the progress of computation or warning messages from the plugin.
 
 '''Done!''' button closes the dialog, but all image windows stay open for possible next processing.
 
