@@ -63,3 +63,21 @@ Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>)
 • The sizes of input image matrices must be of power of 2, common sizes are: 64, 128, 256, 512, 1024, 2048 etc., otherwise the plugin will not start and a warning message appears again. This is due to the proper computation of levels of wavelet decomposition of images.
 
 • If you do not see data in image windows well, use {{bc | Image | Adjust-Brightness/Contrast | Auto}}. Do not press <i>Apply</i> for pixel intensity value recomputation.
+
+
+== Step-by-step manuals ==
+
+'''How to use the plugin for denoising/filtering small data:'''
+
+(SIM_Lamina_32bit_488_Honeycomb_StrongBckg_Scale-0_25.tif)
+
+1. Open an image/stack.
+2. Run {{bc | Plugins | Wavelet_Denoise}}.
+3. Arrange positions of <i>Wavelet_Denoise</i> main window and <i>Synchronize Windows</i> dialog in the screen.
+4. Run {{bc | Window | Tile}}.
+5. Press <i>Synchronize All</i> in <i>Synchronize Windows</i> dialog. Or select the input image and its “WT-“ and “Filtered-“ versions for syncing if more images are opened in Fiji/Imagej.
+6. Find a slice of interest in a stack image with multiple slices (if such is opened).
+7. By CTRL+SHIFT+C and pressing <i>Auto</i> adjust contrast in all images if it is useful. Do not press <i>Apply</i>.
+8. Apply denoising/filtration of your data. If any method or parameter is changed, “Filtered-“ (and “WT-“ and “WT-NoStretch-” if these are opened) image windows are immediately recomputed.
+9. Play iteratively with parameters until you are satisfied with the result of denoising/filtration. It is possible to return back to default values of the dialog by pressing <i>Refresh</i>.
+10. If you are satisfied with the result, press <i>Done!</i> This closes the dialog, but all image windows stay open for possible next processing.
