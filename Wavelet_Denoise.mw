@@ -1,3 +1,11 @@
+{{Infobox
+| software               = ImageJ/Fiji
+| name                   = Wavelet_Denoise
+| author                 = [mailto:martin.capek_at_img.cas.cz Martin Čapek]
+| source                 = {{GitHub|org=IMG-source|repo=Wavelet_Denoise}}
+| released               = 04/04/2020
+| latest version         = 02/24/2020
+}}
 
 == Plugin for wavelet-based denoising/filtering image data ==
 
