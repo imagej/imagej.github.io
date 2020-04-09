@@ -2,12 +2,7 @@
 | software               = ImageJ/Fiji
 | name                   = IMG
 | author                 = [mailto:martin.capek_at_img.cas.cz Martin Čapek]
-| maintainer             = [Martin Čapek]
-| source                 = 
-| released               = 
-| latest version         = 
-| status                 = 
-| website                = 
+| affiliation            = Light Microscopy Core Facility, Institute of Molecular Genetics of the CAS, Prague, Czech Republic
 }}
 
 == [[Wavelet_Denoise]] - plugin for wavelet-based denoising/filtering image data ==
