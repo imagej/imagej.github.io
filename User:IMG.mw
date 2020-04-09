@@ -1,11 +1,11 @@
 {{Infobox
-| software               = ImageJ
-| name                   = Biomat
-| maintainer             = [mailto:jiri.janacek_at_fgu.cas.cz Jiří Janáček]
-| author                 = Jiří Janáček
-| source                 = {{GitHub|org=jiri-janacek|repo=biomat}}
-| released               = 03/26/2019
-| latest version         = 02/24/2020
+| software               = ImageJ/Fiji
+| name                   = IMG
+| maintainer             = [mailto:martin.capek_at_img.cas.cz Martin Čapek]
+| author                 = Martin Čapek
+| source                 = 
+| released               = 
+| latest version         = 
 | status                 = 
 | website                = 
 }}
