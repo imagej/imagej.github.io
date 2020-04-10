@@ -20,8 +20,8 @@ Thomas Boudier  [[File:EmailBoudier.png]], [https://www.sinica.edu.tw/en Academi
 
 '''Segmentation of the objects'''
 * Global thresholding
-* [[plugin:segmentation:3d_spots_segmentation:start|3D spot segmentation]]
-* [[plugin:segmentation:3d_spots_segmentation:start|3D iterative segmentation]]
+
+* [https://imagejdocu.list.lu/plugin/segmentation/3d_spots_segmentation/start 3D Segmentation] (iterative thresholding, spots segmentation, ...)
 
 '''Object based co-localization and distance analysis'''
 * Colocalization from objects in image A, B, and/or A+B
@@ -135,13 +135,13 @@ You have also to manually download and copy into your plugins directory the [[3D
 
 == Citation ==
 
-Gilles J-F, Dos Santos M, Boudier T, Bolte S, Heck N. DiAna, an ImageJ tool for object-based 3D co-localization and distance analysis. Methods 2016 Nov 24.  [[http://www.sciencedirect.com/science/article/pii/S1046202316304649]]
+Gilles J-F, Dos Santos M, Boudier T, Bolte S, Heck N. DiAna, an ImageJ tool for object-based 3D co-localization and distance analysis. Methods 2016 Nov 24.  [http://www.sciencedirect.com/science/article/pii/S1046202316304649]
 
 The spot segmentation method is based on :
-Heck N, Dos Santos M, Amairi B, Salery M, Besnard A, Herzog E, Boudier T, Vanhoutte P, Caboche J. A new automated 3D detection of synaptic contacts reveals the formation of cortico-striatal synapses upon cocaine treatment in vivo. Brain Struct Funct. 2014 Jul 8. DOI 10.1007/s00429-014-0837-2.      [[http://link.springer.com/article/10.1007%2Fs00429-014-0837-2]]
+Heck N, Dos Santos M, Amairi B, Salery M, Besnard A, Herzog E, Boudier T, Vanhoutte P, Caboche J. A new automated 3D detection of synaptic contacts reveals the formation of cortico-striatal synapses upon cocaine treatment in vivo. Brain Struct Funct. 2014 Jul 8. DOI 10.1007/s00429-014-0837-2.      [http://link.springer.com/article/10.1007%2Fs00429-014-0837-2]
 == License ==
 
-GPL distribution (see [[http://www.cecill.info/index.en.html|licence]] ). Sources for plugins are available freely.
+GPL distribution (see [http://www.cecill.info/index.en.html|licence]). Sources for plugins are available freely.
 
 == Change log ==
 
