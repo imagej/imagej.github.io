@@ -1,0 +1,104 @@
+{{Infobox
+| software               = ImageJ1
+| name                   = Frames
+| author                 = Fred Damen
+| filename               = Frames.jar
+| source                 = [https://imagej.net/_images/5/56/DICOM_open.zip DICOM_open.zip]
+| released               = 1 April 2019
+| status                 = stable 
+| category               = [[:Category:Import-Export‏‎|Import-Export‏‎]]
+| website                = 
+}}
+
+These are a set of plugins that are used to work with data in the frame direction.  The F_Project plugin projects the images in the frame direction into a lower dimension using different methods. The F_Profiler pulgin plots the contents of an ROI through the frame direction.  The Frame_Slider provides sliders to step though the frames hyperstacks based on the variable/values in the slice labels.
+
+== F_Project ==
+[[File:F_Project_ScreenShot.jpg|400px]]
+
+When run as a plugin from the gui the image used is identified on the top line.  A subset of the slices and frames can be used as the source data; see syntax for ''Make Substacks...''. When the identified frames is 'label', the frames are grouped by identical labels.
+<br>'''Transpose?''' Swap frames for slices.
+
+The following summary methods as provided:
+<br>'''Sum''' Arithmetic Sum
+<br>'''Mean''' Arithmetic Mean (μ)
+<br>'''StdDev''' Standard Deviation (σ) - computed using the slow method for numerical accuracy
+<br>'''ZScore''' Z Score (μ/σ) - akin to Signal to Noise (SNR)
+<br>'''CV''' Coefficient of Variation (σ/μ)
+<br>'''Minimum''' Minimum
+<br>'''Maximum''' Maximum
+<br>'''Median''' Median
+<br>'''Center''' Weighted arithmetic mean around the median - resilient to outliers
+<br>'''Product''' Product (Π s<sub>i</sub><sup>-n</sup>)<sup>n</sup>
+<br>'''GeoMean''' Geometric Mean - prescaled product (Π s<sub>i</sub><sup>-n</sup>)
+<br>'''LinReg''' Linear least squares regression - frames returned m, b, r<sup>2</sup>
+<br>'''TheilSen''' Theil Sen Regression with Center estimator - frames m, b
+<br>'''Fit''' CurveFitter fitting - frames are model parameters, r<sup>2</sup>, Ψ<sup>2</sup>
+<br>'''Deviation''' Appends a frame with the appropriate deviation from an appropriate selected summary.
+<br>If the first slice of every frame has a Short Label that can be split by the regex " = |=| ", e.g., var = fval, and the list has unique elements, the float fval values will be used in the fittings instead of the frame number.
+
+There are also static methods provided, with the same names, albeit, all lower case, with two syntaxis: <code>method(ImagePlus,slices,frames)</code>, <code>method(ImagePlus)</code>, <code>save fit(..., int), fit(..., String)</code>. 
+
+<br><code>TreeMap<Double,String> sortFramesByLabel(ImagePlus imp) </code>
+<br>returns comma separated list of frames for each unique label.
+<br><code>
+<br>public interface Compute {
+<br>public double[] compute(double[] x, double[] y);
+<br>&nbsp;&nbsp;&nbsp;return (x == null) ? new double[NV] : process(x,y);
+<br>&nbsp;&nbsp;&nbsp;}
+<br>ImagePlus compute(ImagePlus imp, Compute fp)
+<br>ImagePlus compute(ImagePlus imp, String slices, String frames, Compute fp)
+<br>ImagePlus compute(ImagePlus imp, Compute fp, ImagePlus mask)
+<br>ImagePlus compute(ImagePlus imp, String slices, String frames, Compute fp, ImagePlus mask)
+</code>
+
+<br><code>ImagePlus[] split(ImagePlus imp)</code>
+<br>fit and compute have <code>ImagePlus[] method(..., ImagePlus[] imps);</code>
+<br><code>imps</code> is syntactic sugar.
+'''Nota bene''': Works even when there is only one slice in the Z direction.
+
+=== Uses ===
+
+==== ASL - MRI ====
+<code>
+<br>ImagePlus aslAcquired = . . .
+<br>ImagePlus tag = F_Project.mean(aslAcquired,"all","1-100-2");
+<br>ImagePlus ctl = F_Project.mean(aslAcquired,"all","2-100-2");
+<br>ImagePlus asl = ctl.duplicate();
+<br>(new ImageCaculator()).run("Subtract 32-bit stack", asl, tag);
+<br>(new ImageCaculator()).run("Divide 32-bit stack", asl, ctl);
+</code>
+==== ADC - MRI ====
+<code>/* Assuming many b-values (slicelabels = "b=%f") */
+<br>ImagePlus dwiAcquired = . . .
+<br>ImagePlus dwi = dwiAcquired.duplicate();
+<br>ImagePlus dwib0 = SubHyperstackMaker.makeSubhyperstack(dwi,"1-"+dwi.getNSlices(),"1",dwiAcquired);
+<br>for(int f=0; f<dwiAcquired.getNFrames(); f++)
+<br>&nbsp;&nbsp;&nbsp;(new ImageCalculator()).run("Divide 32-bit stack", dwi, dwib0);
+</code>
+<br><code>ImagePlus adc_etal = F_Project.fit(dwi,"Exponential");''</code>
+<br>OR with more resilience to outliers . . .
+<code>
+<br>IJ.run(dwi, "Log", "");
+<br>ImagePlus adc_etal = F_Project.theilsen(dwi);
+</code>
+
+==== Arbitrary proccessing ====
+<code>
+<br>IJ.run(mask,"Convert to Mask", "method=Huang background=Default calculate");
+<br>ImagePlus[] pimp = F_Project.compute(imp, new F_Project.Compute() {
+<br>&nbsp;&nbsp;&nbsp;@Override
+<br>&nbsp;&nbsp;&nbsp;public double[] compute(double[] x, double[] y) {
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (x == null) return new double[10]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return nonlinearFit(x,y);
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<br>&nbsp;&nbsp;&nbsp;}, mask, new ImagePlus[0]);
+</code>
+== F_Profilier ==
+== Frame_Slider ==
+== Install ==
+Place the file {{:plugin:stacks:frame_projector:new:f_project.java|}} in your plugins directory, then compile&run; or just place the 
+{{:plugin:stacks:frame_projector:new:f_project.class|}}, {{:plugin:stacks:frame_projector:f_project_1.class|}}, {{:plugin:stacks:frame_projector:f_project_compute.class|}} files in your plugins directory and refresh the menus / restart ImageJ.
+
+== ChangeLog ==
+  * 1 April 2018 - Initial Version.
+  * 1 April 2019 - Updated.
