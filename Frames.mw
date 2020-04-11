@@ -2,11 +2,13 @@
 | software               = ImageJ1
 | name                   = Frames
 | author                 = Fred Damen
+| maintainer             = Fred Damen
 | filename               = Frames.jar
-| source                 = [https://imagej.net/_images/5/56/DICOM_open.zip DICOM_open.zip]
+| source                 = [https://imagej.net/_images/3/3d/Frames.zip Frames.zip]
 | released               = 1 April 2019
+| latest version         = 1 April 2020
 | status                 = stable 
-| category               = [[:Category:Import-Export‏‎|Import-Export‏‎]]
+| category               = [[:Category:Analysis‏‎‏‎|Analysis‏‎‏‎]]
 | website                = 
 }}
 
@@ -136,9 +138,11 @@ There are also static methods provided, with the same names, albeit, all lower c
 [[File:Frame_Slider_Screenshot.jpg|400px]]
 <br>When you have one or more Hyperstacks open and want to step though the images per the variables in the slice labels, start the Frame_Slider with the dataset with the most variables, select the other datasets, and step through them using the sliders.  The datasets should all be governed by the same set of variables, i.e., The two left images are the raw data with repeats and the two right images are the mean and SNR projections, to see why click the scrollbars.
 == Install ==
-Place the file {{:plugin:stacks:frame_projector:new:f_project.java|}} in your plugins directory, then compile&run; or just place the 
-{{:plugin:stacks:frame_projector:new:f_project.class|}}, {{:plugin:stacks:frame_projector:f_project_1.class|}}, {{:plugin:stacks:frame_projector:f_project_compute.class|}} files in your plugins directory and refresh the menus / restart ImageJ.
+Unzip [https://imagej.net/_images/3/3d/Frames.zip Frames.zip] into ImageJ1 plugins (File>Show Folder>Plugins) or plugins/jars directories.  Source code in jar file.
 
 == ChangeLog ==
   * 1 April 2018 - Initial Version.
   * 1 April 2019 - Updated.
+
+[[Category:Import-Export‏‎]]
+[[Category:Plugins]]
