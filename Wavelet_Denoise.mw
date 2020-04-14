@@ -33,7 +33,7 @@ When starting the plugin, pictures and <i>Sync Wins</i> dialog appear, like in t
 
 • <i>Soft Thresholding</i> – soft VisuShrink thresholding;
 
-• <i>Hard Thresholding</i> – hard VisuShrink thresholding: These two tools demonstrate another use of wavelet transform for image denoising/filtering. It is accomplished using VisuShrink thresholding method and the user defines the threshold by selecting the level of denoising (that equals Sigma value of the Universal threshold; Sigma takes values 1-128) in the dialog. It can also be selected to do either Soft Thresholding or Hard Thresholding [1]. Soft thresholding generally gives a smoother image.
+• <i>Hard Thresholding</i> – hard VisuShrink thresholding: These two tools demonstrate another use of wavelet transform for image denoising/filtering. It is accomplished using VisuShrink thresholding method and the user defines the threshold by selecting the level of denoising (that equals Sigma value of the Universal threshold; Sigma takes values 1-128) in the dialog. It can also be selected to do either Soft Thresholding or Hard Thresholding [1-2]. Soft thresholding generally gives a smoother image.
 
 • <i>Suppress Approx. Coeffs. (AC) – applied with “Suppress DC” value</i>;
 
@@ -131,3 +131,7 @@ Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>)
 13. If you are satisfied with the result, press <i>Done!</i> This closes the dialog, but all image windows stay open for possible next processing.
 
 == References ==
+1. Rangarajan, P. et al. Image Denoising Using Wavelets: Wavelets & Time Frequency. University of Michigan, 2002.
+2. https://dsp.stackexchange.com/questions/15464/wavelet-thresholding
+3. Čapek, M., Efenberková, M., Novotný, I., Horváth, O. The wavelet-based denoising of images in Fiji/ImageJ, with example applications in structured illumination microscopy. In: Advances in Disease Models, Edited by Petr Bartůněk, Institute of Molecular Genetics AS CR, 2019, 1th publication, ISBN 978-80-88011-06-4
+Publisher: OPTIO CZ.
