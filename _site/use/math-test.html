@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Math test</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Navigation bar-->
+		<section id="nav">
+    <div class="topnav">
+        <a href="/index">Home</a>
+        <a href="/pages/search" class="icon solid fa-search">Search</a>
+        <a href="/use/categories">Use</a>
+        <a href="#">Extend</a>
+    </div>
+</section>
+		
+
+        <section id="page" class="main style1">
+            <div class="container">
+                <header class="major special">
+					<h1><strong>Math test</strong></h1>
+				</header>
+					<div class="box alt"></div>
+						<!-- markdown content pushed here -->
+						<div id="content"><div class="sidebar">
+
+  <p><a href="#MathJax Example 1">MathJax Example 1</a>
+<a href="#Example 2">Example 2</a>
+<a href="#Header 3">Header 3</a></p>
+
+</div>
+
+<h2 id="-mathjax-example-1"><a name="MathJax Example 1"></a> <strong>MathJax Example 1</strong></h2>
+<hr />
+
+<p>When <script type="math/tex">a \ne 0</script> , there are two solutions to <script type="math/tex">(ax^2 + bx + c = 0)</script> and they are</p>
+
+<script type="math/tex; mode=display">x = {-b \pm \sqrt{b^2-4ac} \over 2a}.</script>
+
+<p>Wow such pretty math!</p>
+
+<h2 id="-example-2"><a name="Example 2"></a> <em>*Example 2</em></h2>
+<hr />
+
+<script type="math/tex; mode=display">p(\theta) = \mathbf{\prod}_{i,c}p(\mathbf{\theta}^i(c))</script>
+
+<p>or</p>
+
+<script type="math/tex; mode=display">E = mc^2</script>
+
+</div>
+		</section>
+                    
+		<!-- Footer -->
+		<section id="footer">
+        <ul class="icons">
+            <li><a href="https://github.com/imagej" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+            <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy; ImageJ/FIJI</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+</section>
+
+		<!-- Scripts -->
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/jquery.scrolly.min.js"></script>
+        <script src="../assets/js/browser.min.js"></script>
+        <script src="../assets/js/breakpoints.min.js"></script>
+        <script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+		
+			<script>
+  MathJax = {
+    options: {
+      renderActions: {
+        find: [10, function (doc) {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/);
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+            const text = document.createTextNode('');
+            node.parentNode.replaceChild(text, node);
+            math.start = {node: text, delim: '', n: 0};
+            math.end = {node: text, delim: '', n: 0};
+            doc.math.push(math);
+          }
+        }, '']
+      }
+    }
+  };
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+		
+  </body>
+</html>

@@ -21,7 +21,7 @@ When $$a \ne 0$$ , there are two solutions to $$(ax^2 + bx + c = 0)$$ and they a
 
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
-More text here... bacon
+Wow such pretty math!
 
 ## <a name="Example 2"></a> **Example 2*
 <hr>
@@ -31,3 +31,4 @@ $$p(\theta) = \mathbf{\prod}_{i,c}p(\mathbf{\theta}^i(c))$$
 or
 
 $$ E = mc^2 $$
+
