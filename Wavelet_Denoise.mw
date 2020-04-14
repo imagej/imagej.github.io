@@ -132,6 +132,8 @@ Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>)
 
 == References ==
 1. Rangarajan, P. et al. Image Denoising Using Wavelets: Wavelets & Time Frequency. University of Michigan, 2002.
+
 2. https://dsp.stackexchange.com/questions/15464/wavelet-thresholding
+
 3. Čapek, M., Efenberková, M., Novotný, I., Horváth, O. The wavelet-based denoising of images in Fiji/ImageJ, with example applications in structured illumination microscopy. In: Advances in Disease Models, Edited by Petr Bartůněk, Institute of Molecular Genetics AS CR, 2019, 1th publication, ISBN 978-80-88011-06-4
 Publisher: OPTIO CZ.
