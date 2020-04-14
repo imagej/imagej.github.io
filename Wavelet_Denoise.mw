@@ -135,7 +135,7 @@ Two possibilities, how to do it:
 
 1. Use LMCF-IMG update site in Fiji.
 
-2. Download Wavelet_Denoise.jar file from [https://github.com/LMCF-IMG/Wavelet_Denoise GitHub] and put it into plugins in ImageJ/Fiji folders.
+2. Download Wavelet_Denoise.jar file from [https://github.com/LMCF-IMG/Wavelet_Denoise GitHub] and put it into plugins in ImageJ/Fiji folder.
 
 == References ==
 1. Rangarajan, P. et al. Image Denoising Using Wavelets: Wavelets & Time Frequency. University of Michigan, 2002.
