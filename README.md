@@ -1,12 +1,32 @@
 ImageJ.net (Experimental)
 ===
 
-## TODO:
+Welcome to ImageJ.net! This webpage is still a work in progress.
 
-- [ ] Math support via Mathjax.
-- [ ] UX bread crumbs.
+# TODO:
 
-This is a working prototype of a new ImageJ webpage built on GitHub pages! This is a work in progress and **will change**. This template is based on Photo by HTML5 UP and has been modified for our purposes.
+- [X] Math support via Mathjax.
+- [ ] UX bread crumbs (top of page).
+- [ ] Add infobox elements
+
+
+## Adding Equations
+
+1. Set the `use_math` variable to `true` in the front matter.
+2. Type your math forumula using TeX (you can check out how here: [LaTeX/Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics)). _Note: Because MathJax 3 broke support for MathJax 2 style equations parsed by the Kramdown, equations are only recognized by the `$$` tag._
+
+Example:
+
+```
+When $$a \ne 0$$ , there are two solutions to $$(ax^2 + bx + c = 0)$$ and they are
+
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
+Wow such pretty math!
+
+```
+
+![MathJax 3 Example](images/readme/mathjax_example.png)
 
 ## Setting up the side bar with anchors
 

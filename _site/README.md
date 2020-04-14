@@ -6,7 +6,7 @@ Welcome to ImageJ.net! This webpage is still a work in progress.
 # TODO:
 
 - [X] Math support via Mathjax.
-- [ ] UX breadcrumbs (top of page).
+- [ ] UX bread crumbs (top of page).
 - [ ] Add infobox elements
 
 
@@ -23,6 +23,7 @@ When $$a \ne 0$$ , there are two solutions to $$(ax^2 + bx + c = 0)$$ and they a
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
 Wow such pretty math!
+
 ```
 
 ![MathJax 3 Example](images/readme/mathjax_example.png)
