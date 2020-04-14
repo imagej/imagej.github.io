@@ -129,6 +129,14 @@ Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>)
 
 13. If you are satisfied with the result, press <i>Done!</i> This closes the dialog, but all image windows stay open for possible next processing.
 
+== Installation ==
+
+Two possibilities, how to do it:
+
+1. Using LMCF-IMG update site in Fiji.
+
+2. Download Wavelet_Denoise.jar file from [https://github.com/LMCF-IMG/Wavelet_Denoise GitHub] and put it into plugins in ImageJ/Fiji folders.
+
 == References ==
 1. Rangarajan, P. et al. Image Denoising Using Wavelets: Wavelets & Time Frequency. University of Michigan, 2002.
 
