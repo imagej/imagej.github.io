@@ -2,7 +2,7 @@
 title: 3D Viewer
 author: Curtis Rueden
 category: Analysis
-layout: post
+layout: page
 ---
 
 ![3D Viewer Overview](../images/posts/3D_Viewer_overview.png){: .image.fit}

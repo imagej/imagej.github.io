@@ -2,7 +2,7 @@
 title: Example 4
 author: Wallie the cat
 category: Development
-layout: post
+layout: page
 ---
 
 Example 4

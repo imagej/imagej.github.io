@@ -2,7 +2,7 @@
 title: Classic Watershed
 author: Ignacio Arganda-Carreras
 category: Segmentation
-layout: post
+layout: page
 ---
 
 <!-- 

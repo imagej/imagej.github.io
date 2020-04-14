@@ -2,7 +2,7 @@
 title: Example 5
 author: Dad
 category: Help
-layout: post
+layout: page
 ---
 
 Example 5

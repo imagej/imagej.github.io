@@ -2,7 +2,7 @@
 title: Math test
 author: Edward Evans
 category: Demo
-layout: post
+layout: page
 use_math: true
 ---
 

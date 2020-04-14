@@ -3,7 +3,7 @@ title: Learn about ImageJ
 layout: page
 category: Demo
 ---
-
+ 
 <div class="sidebar" markdown="1">
 
 Sidebar
