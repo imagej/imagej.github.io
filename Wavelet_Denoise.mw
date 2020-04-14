@@ -133,7 +133,7 @@ Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>)
 
 Two possibilities, how to do it:
 
-1. Using LMCF-IMG update site in Fiji.
+1. Use LMCF-IMG update site in Fiji.
 
 2. Download Wavelet_Denoise.jar file from [https://github.com/LMCF-IMG/Wavelet_Denoise GitHub] and put it into plugins in ImageJ/Fiji folders.
 
