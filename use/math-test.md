@@ -23,7 +23,7 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
 Wow such pretty math!
 
-## <a name="Example 2"></a> **Example 2*
+## <a name="Example 2"></a> **Example 2**
 <hr>
 
 $$p(\theta) = \mathbf{\prod}_{i,c}p(\mathbf{\theta}^i(c))$$
@@ -31,4 +31,3 @@ $$p(\theta) = \mathbf{\prod}_{i,c}p(\mathbf{\theta}^i(c))$$
 or
 
 $$ E = mc^2 $$
-

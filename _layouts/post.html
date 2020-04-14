@@ -19,7 +19,7 @@
 					<h1><strong>{{page.title}}</strong></h1>
 				</header>
 					<div class="box alt"></div>
-						<!-- markdown content pushed here -->
+						<!-- Page content -->
 						<div id="content">{{content}}</div>
 		</section>
                     
@@ -27,14 +27,10 @@
 		{% include footer.html %}
 
 		<!-- Scripts -->
-        <script src="../assets/js/jquery.min.js"></script>
-        <script src="../assets/js/jquery.scrolly.min.js"></script>
-        <script src="../assets/js/browser.min.js"></script>
-        <script src="../assets/js/breakpoints.min.js"></script>
-        <script src="../assets/js/util.js"></script>
-		<script src="../assets/js/main.js"></script>
+		{% include base-scripts.html %}
 		{% if page.use_math %}
-			{% include MathJax.html %}
+			{% include mathjax-scripts.html %}
 		{% endif %}
+		
   </body>
 </html>
