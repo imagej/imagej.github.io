@@ -1,6 +1,10 @@
 ImageJ.net (Experimental)
 ===
 
+## TODO:
+
+- [] Math support via Mathjax
+
 This is a working prototype of a new ImageJ webpage built on GitHub pages! This is a work in progress and **will change**. This template is based on Photo by HTML5 UP and has been modified for our purposes.
 
 ## Setting up the side bar with anchors
