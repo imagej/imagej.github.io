@@ -24,5 +24,4 @@ layout: search
         {% endfor %}
     };
 </script>
-<script src="../assets/js/lunr.js"></script>
-<script src="../assets/js/search.js"></script>
+{% include search-scripts.html %}

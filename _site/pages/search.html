@@ -14,7 +14,7 @@
     <div class="topnav">
         <a href="/index">Home</a>
         <a href="/pages/search" class="icon solid fa-search">Search</a>
-        <a href="/use/categories">Use</a>
+        <a href="/pages/categories">Use</a>
         <a href="#">Extend</a>
     </div>
 </section>
@@ -131,7 +131,7 @@
                 "title": "Search",
                 "author": "",
                 "category": "",
-                "content": "        ",
+                "content": "        {% include search-scripts.html %}",
                 "url": "/pages/search.html"
             }
             , 
@@ -148,9 +148,9 @@
     };
 </script>
 
-<script src="../assets/js/lunr.js"></script>
-
 <script src="../assets/js/search.js"></script>
+
+<script src="../assets/js/lunr.js"></script>
 
 </div>
 		</section>
@@ -173,7 +173,5 @@
 <script src="../assets/js/breakpoints.min.js"></script>
 <script src="../assets/js/util.js"></script>
 <script src="../assets/js/main.js"></script>
-		<script src="../assets/js/search.js"></script>
-<script src="../assets/js/lunr.js"></script>
   </body>
 </html>
