@@ -65,7 +65,7 @@ Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>)
 
 == Additional remarks ==
 
-• Plugin dialog is modeless. Among others, it is possible to process the input image prior applying any wavelet denoising/filtration, e.g., by smoothing, sharpening, contrast. In such cases the <i>Refresh</i> button can be useful. However, the size of the input image matrix, number of slices and the bit depth cannot be changed.
+• Plugin dialog is modeless. It is possible to process the input image prior applying any wavelet denoising/filtration, e.g., by smoothing, sharpening, contrast. In such cases the <i>Refresh</i> button can be useful. However, the size of the input image matrix, number of slices and the bit depth cannot be changed.
 
 • When you close any image window joined with the dialog (Input, WT, Filtered, WT-NoStretch) during running, the dialog will not continue and a warning message appears.
 
