@@ -6,7 +6,7 @@ Welcome to ImageJ.net! This webpage is still a work in progress.
 # TODO:
 
 - [X] Math support via Mathjax.
-- [ ] UX bread crumbs (top of page).
+- [X] UX bread crumbs (top of page).
 - [ ] Add infobox elements
 
 
