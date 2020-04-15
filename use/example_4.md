@@ -1,7 +1,7 @@
 ---
 title: Example 4
 author: Wallie the cat
-category: Development
+category: development
 layout: page
 ---
 
