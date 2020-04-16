@@ -7,7 +7,7 @@ layout: page
 
 ![3D Viewer Overview]({{site.baseurl}}/images/posts/3D_Viewer_overview.png){: .image.fit}
 
-{{site.baseurl}}
+{{baseurl}}
 
 This plugin images offers hardware-accelerated visualization possibilities for image stacks, using the [Java 3D](https://imagej.net/Java_3D) library. Stacks can be displayed as texture-based volume renderings, surfaces or orthoslices.
 

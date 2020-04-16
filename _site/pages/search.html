@@ -37,21 +37,21 @@
 <script>
     window.store = {
         
-            "pages-plugins-analysis-3d-viewer-html": {
+            "plugins-3d-viewer-html": {
                 "title": "3D Viewer",
                 "author": "Curtis Rueden",
                 "category": "Analysis",
                 "content": "This plugin images offers hardware-accelerated visualization possibilities for image stacks, using the Java 3D library. Stacks can be displayed as texture-based volume renderings, surfaces or orthoslices.ScreencastsHere you are a demo screencast separated into two different videos (~15 min in total) showing many of the features of the 3D viewer:        Beyond this, a lot more screencasts can be found here, covering the following topics:  Display stacks  Rendering modes and attributes  Adjusting the transfer functions  Editing volumes  Point lists  Landmark-based registration  Transformations  3D Content in PDFsFor usersComprehensive usage guidelines in form of FAQs and tutorials can be found here.For developersA lot of functions of the 3D Viewer are macro-recordable. However, if that is not enough (or if the function is not recorded properly), it is better to write a plugin. In the latter case no macros should be called from Java, as that would limit the code to work with the currently active 3D Viewer (even if the user clicked somewhere else).This code snippet should get you started:Image3DUniverse univ = new Image3DUniverse();univ.show();univ.addMesh(yourImagePlus, null, \"somename\", 50, new boolean[] {true, true, true}, 2);...Full documentation for developers with tutorials and explained code snippets can be found here.JavadocsThe Fiji Javadocs provide detailed information about the 3D Viewer API.FAQThe 3D Viewer opens a window saying An unexpected exception occurred.If in the same window, it also says:java.lang.NullPointerException:Canvas3D: null GraphicsConfigurationthe reason is most likely that your graphics setup does not have any hardware 3D acceleration. This can happen e.g. when you run ImageJ via a remote X11 connection (3D acceleration works only when the graphics are displayed on the same machine as the program runs).Unfortunately, there is not workaround/fix for this situation yet, except to use ImageJ locally when you want to use the 3D Viewer.Problem with Intel graphics cardsThere is a known problem with older Windows drivers for some Intel graphics cards. Usually, this is fixed by installing new drivers. If you would like to help make ImageJ nicer by detecting faulty driver versions, please contact us.The 3D Viewer simply crashesUnfortunately, there are quite a large number of possible reasons. Please help us by debugging the issues and contacting us with the information. You can also report a bug, which will provide a lot of additional, potentially useful information.Only a gray rectangle is shown by the 3D ViewerAs with 3D Viewer crashes, there are quite a large number of possible reasons. Please help us by debugging the issues and contacting us with the information. You can also report a bug, which will provide a lot of addidtional, potentially useful information.Publication  Schmid, B.; Schindelin, J. &amp; Cardona, A. et al. (2010), “A high-level 3D visualization API for Java and ImageJ”, BMC Bioinformatics 11(1): 1, PMID 20492697, doi:10.1038/nmeth.3392 (on Google Scholar).",
-                "url": "/pages/plugins/analysis/3d-viewer.html"
+                "url": "/plugins/3d-viewer.html"
             }
             , 
         
-            "pages-category-analysis-html": {
+            "plugins-category-analysis-html": {
                 "title": "Analysis",
                 "author": "admin",
                 "category": "admin",
                 "content": "3D Viewer Example 1 ",
-                "url": "/pages/category-analysis.html"
+                "url": "/plugins/category-analysis.html"
             }
             , 
         
@@ -136,6 +136,15 @@
             }
             , 
         
+            "plugins-html": {
+                "title": "Plugin categories",
+                "author": "",
+                "category": "",
+                "content": "  foo  Admin  Analysis  Analysis  3D Viewer  Example 1  Bacon  Example 2  Colocalization  Example 3  Demo  Learn about ImageJ  Math test  Development  Example 4  Help  Example 5  Segmentation  Classic Watershed",
+                "url": "/plugins.html"
+            }
+            , 
+        
             "pages-search-html": {
                 "title": "Search",
                 "author": "",
@@ -176,11 +185,11 @@
 </section>
 
 		<!-- Scripts -->
-		<script src="../assets/js/jquery.min.js"></script>
-<script src="../assets/js/jquery.scrolly.min.js"></script>
-<script src="../assets/js/browser.min.js"></script>
-<script src="../assets/js/breakpoints.min.js"></script>
-<script src="../assets/js/util.js"></script>
-<script src="../assets/js/main.js"></script>
+		<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.scrolly.min.js"></script>
+<script src="/assets/js/browser.min.js"></script>
+<script src="/assets/js/breakpoints.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
   </body>
 </html>
