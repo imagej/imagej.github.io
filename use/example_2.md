@@ -1,7 +1,7 @@
 ---
 title: Example 2
 author: Mel Hammond
-category: bacon
+category: Demo
 layout: page
 ---
 
