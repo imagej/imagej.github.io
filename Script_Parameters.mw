@@ -250,14 +250,6 @@ print(myFile)
 print(myDir)
 </source>
 
-You can set restrictions on accepted file types based on file extension (using a <code>style</code> property):
-
-<source lang="python">
-#@ File (label="Select an image file", style="extensions:png/jpg") myImageFile
-
-print(myImageFile)
-</source>
-
 === Styles ===
 
 You can influence the visual style of some of the input widgets. See previous paragraph for widget-specific style examples. 
