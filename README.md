@@ -8,6 +8,8 @@ Welcome to ImageJ.net! This webpage is still a work in progress.
 - [X] Math support via Mathjax.
 - [X] UX bread crumbs (top of page).
 - [ ] Add infobox elements
+- [ ] Code syntax hilighting
+- [ ] Line numbers for code
 
 
 ## Adding Equations
