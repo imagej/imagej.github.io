@@ -31,6 +31,24 @@ Once you have installed the FLIMJ plugin, it becomes available on the menu under
 
 == Usage ==
 
+=== Startup ===
+Open a dataset (such as {{GitHub|org=flimlib|repo=flimj-ops|path=test_files/test2.sdt|label=this one}}) or select an existing image display in Fiji:
+
+[[File:FLIMJ_usage_open_dataset.png]]
+
+With the desired dataset window active, launch FLIMJ from the menu under {{bc | Analyze | Lifetime | FLIMJ}} or search for "FLIMJ" in the search box:
+
+[[File:FLIMJ_first_launch.png]]
+
+{{Notice | '''FLIMJ plugin accepts only 3- or 4-dimensional datasets.''' If the dataset is opened from a file supported by [[SCIFIO]] (such as a .sdt), the dataset likely has metadata attached, which helps FLIM plugin infer the order of the X, Y, and T axes as well as the time bin size. Otherwise, the user may be asked to provide the information:
+
+[[File:FLIMJ_Lifetime_Axis_Not_Detected.png]][[File:FLIMJ_Time_Base_Info_Not_Detected.png]]
+
+If the dataset comes with a (fourth) spectral dimension, the user has to choose the spectral channel to analyze as well:
+
+[[File:FLIMJ_Multiple_Channel_Detected.png]]
+}}
+
 More documentation coming soon. For now, see the source code at:
 
 {{BigLink | url=https://github.com/flimlib/flimj-ui}}
