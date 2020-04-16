@@ -51,7 +51,7 @@ A lot of functions of the 3D Viewer are macro-recordable. However, if that is no
 
 This code snippet should get you started:
 
-```
+```java
 Image3DUniverse univ = new Image3DUniverse();
 univ.show();
 univ.addMesh(yourImagePlus, null, "somename", 50, new boolean[] {true, true, true}, 2);
