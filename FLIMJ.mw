@@ -32,22 +32,42 @@ Once you have installed the FLIMJ plugin, it becomes available on the menu under
 == Usage ==
 
 === Startup ===
+
 Open a dataset (such as {{GitHub|org=flimlib|repo=flimj-ops|path=test_files/test2.sdt|label=this one}}) or select an existing image display in Fiji:
 
-[[File:FLIMJ_usage_open_dataset.png]]
+[[File:FLIMJ_usage_open_dataset.png|300px]]
 
 With the desired dataset window active, launch FLIMJ from the menu under {{bc | Analyze | Lifetime | FLIMJ}} or search for "FLIMJ" in the search box:
 
-[[File:FLIMJ_first_launch.png]]
+[[File:FLIMJ_first_launch.png|600px]]
 
 {{Notice | '''FLIMJ plugin accepts only 3- or 4-dimensional datasets.''' If the dataset is opened from a file supported by [[SCIFIO]] (such as a .sdt), the dataset likely has metadata attached, which helps FLIM plugin infer the order of the X, Y, and T axes as well as the time bin size. Otherwise, the user may be asked to provide the information:
 
-[[File:FLIMJ_Lifetime_Axis_Not_Detected.png]][[File:FLIMJ_Time_Base_Info_Not_Detected.png]]
+[[File:FLIMJ_Lifetime_Axis_Not_Detected.png|350px]][[File:FLIMJ_Time_Base_Info_Not_Detected.png|200px]]
 
 If the dataset comes with a (fourth) spectral dimension, the user has to choose the spectral channel to analyze as well:
 
-[[File:FLIMJ_Multiple_Channel_Detected.png]]
+[[File:FLIMJ_Multiple_Channel_Detected.png|350px]]
 }}
+
+=== Fit preview ===
+
+Before fitting the entire dataset, the user may click on the intensity image or type in the coordinates in '''Preview''' panel to preview the fitted curve and parameters of the pixel under the cursor:
+
+[[File:FLIMJ_preview_preview.png|200px]]
+[[File:FLIMJ_preview_plot.png|400px]]
+[[File:FLIMJ_preview_settings.png|200px]]
+
+In the screenshots above,
+* '''X''' and '''Y''' are coordinates of the pixel cursor counting from the upper left corner.
+* '''Red curve''' denotes the fitted portion of decay between the start and end cursor.
+* '''Orange dots''' denote the photon counts in each time bin in Fit plot and denote the residual (<math>y_{data}-y_{fit}</math>) in Res plot.
+* '''Photon Count''' displays the total number of photons collected between the start and end cursor.
+* <math>z, A, \tau</math> (or <math>z_1, A_1, A_2, \tau_1, \tau_2</math> in two-component fit) are the background, initial intensity and lifetime parameters of the model.
+* <math>\chi^2</math> shows the chi-squared measure of the fit (see [[#Noise models|Noise models]]).
+
+=== Fit settings ===
+
 
 More documentation coming soon. For now, see the source code at:
 
@@ -56,3 +76,9 @@ More documentation coming soon. For now, see the source code at:
 And:
 
 {{BigLink | url=https://github.com/flimlib/flimj-ops}}
+
+
+== Advanced topics ==
+
+=== Noise models ===
+Coming soon...
