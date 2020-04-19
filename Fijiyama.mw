@@ -164,7 +164,7 @@ For minor updates, only the release time is modified.
 | 2020/03/20
 | Hyperimage support (registration of 4D / 5D multi-channels or multi-time images
 |-
-| <b>(Future release) Handsome Honeysuckle</b>
+| <b>Handsome Honeysuckle (Future release) </b>
 | Mid-may 2020
 | ...
 | New transformation models : Rigid 2D, Similarity 2D, Dense 2D. Support of extensive grandeurs (images which intensity have to raise when it is shrinked). Support of hyperimage with varying number of channels
