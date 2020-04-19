@@ -159,10 +159,16 @@ For minor updates, only the release time is modified.
 | Integration of the time-lapse multimodal series feature. Versioning of serialized files
 | 1th march: versioning of serialized files starts. Previously serialized files are then open with default values for level min, level max and block matching iterations.
 |-
-| (Future version) Gorgeous grapevine
-| 2020/03/..
-| 2020/03/..
+| <b>Gorgeous grapevine</b>
+| 2020/03/20
+| 2020/03/20
+| Hyperimage support (registration of 4D / 5D multi-channels or multi-time images
+|-
+| <b>(Future release) Handsome Honeysuckle</b>
+| Mid-may 2020
 | ...
+| Support of extensive grandeurs (images which intensity have to raise when it is shrinked
+| Support of hyperimage with varying number of channels
 | ...
 |}
 
