@@ -118,7 +118,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent !important;
-			color: #6bd4c8;
+			color: #4d959f;
 		}
 
 	strong, b {
@@ -2558,7 +2558,7 @@ input, select, textarea {
 
 	ul.breadcrumb li+li:before {
 		padding: 8px;
-		color: black;
+		color: #585858;
 		content: "/\00a0";
 	}
 
