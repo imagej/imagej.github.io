@@ -122,7 +122,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #000000;
+		color: #585858;
 		font-weight: 400;
 	}
 
@@ -2464,7 +2464,7 @@ input, select, textarea {
 /* Navigation Bar */
 
 	.topnav {
-		background-color: #495c74;
+		background-color: #4d959f;
 		overflow: hidden;
 	}
 
@@ -2479,8 +2479,8 @@ input, select, textarea {
 	}
 
 	.topnav a:hover {
-		background-color: #ddd;
-		color: black;
+		background-color: #eee;
+		color: #585858;
 	}
 
 	.topnav a.active {
@@ -2538,6 +2538,13 @@ input, select, textarea {
 		background-color: #eee;
 	}
 
+	ul.breadcrumb a {
+		color: #585858;
+		border-bottom: none;
+		font-weight: 500;
+		text-decoration: underline;
+	}
+
 	ul.breadcrumb li {
 		display: inline;
 		font-size: 18px;
@@ -2547,16 +2554,6 @@ input, select, textarea {
 		padding: 8px;
 		color: black;
 		content: "/\00a0";
-	}
-
-	ul.breadcrumb li a {
-		color: #0275d8;
-		text-decoration: none;
-	}
-
-	ul.breadcrumb li a:hover {
-		color: #01447e;
-		text-decoration: underline;
 	}
 
 /* Actions */
@@ -2742,7 +2739,7 @@ input, select, textarea {
 /* Search */
 
 	.search h2 {
-		color: #000000;
+		color: #585858;
 		margin: 0.5em 0 0 0;
 	}
 
@@ -2753,8 +2750,12 @@ input, select, textarea {
 
 	.search a {
 		font-weight: 500;
-		color: #0014ca;
+		color: #585858;
 		border-bottom: none;
+	}
+
+	.search a:hover {
+		color: #4d959f;
 	}
 
 /* Sidebar */
@@ -3011,14 +3012,14 @@ input, select, textarea {
 	}
 
 		.main.style1 {
-			background: #f0f0f0;
+			background: #fff;
 		}
 
 		.main.style2 {
 			background-color: #333;
 			color: rgba(255, 255, 255, 0.75);
 			background-attachment: fixed,							fixed;
-			background-image: url("../../images/site/overlay6.png"), url("../../images/header.jpg");
+			background-image: url("../../images/site/overlay6.png");
 			background-size: auto,							cover;
 		}
 
@@ -3106,7 +3107,7 @@ input, select, textarea {
 
 	#header {
 		padding: 9em 0 9em 0 ;
-		background-image: url("../../images/site/overlay7.png"), url("../../images/header.jpg");
+		background-image: url("../../images/site/overlay7.png");
 		color: rgba(255, 255, 255, 0.75);
 		background-position: top left,						center center,					center center;
 		background-size: auto,							cover,							cover;
@@ -3270,7 +3271,7 @@ input, select, textarea {
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
 			transition: opacity 1s ease;
-			background-image: linear-gradient(45deg, #4fa49a, #4361c2);
+			background-image: linear-gradient(45deg, #5eab9f, #4361c2);
 			content: '';
 			height: 100%;
 			left: 0;
