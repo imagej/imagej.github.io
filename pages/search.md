@@ -8,7 +8,7 @@ layout: search
     <input type="submit" value="search" onclick="displaySearchResults();">
 </form>
 
-<ul id="search-results"></ul>
+<ul id="search-results" class="search"></ul>
 
 <script>
     window.store = {

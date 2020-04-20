@@ -135,7 +135,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #000000;
+		color: #585858;
 		line-height: 1em;
 		margin: 0.25em 0 0 0;
 	}
@@ -2747,6 +2747,16 @@ input, select, textarea {
 	.search h2 {
 		color: #585858;
 		margin: 0.5em 0 0 0;
+	}
+
+	ul.search a {
+		color: #585858;
+		border-bottom: none;
+		font-weight: 500;
+	}
+
+	ul.search h2:hover {
+		color: #4d959f;
 	}
 
 	.search p {
