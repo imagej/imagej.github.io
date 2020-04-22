@@ -68,6 +68,32 @@ In the screenshots above,
 
 === Fit settings ===
 
+[[File:FLIMJ_fit_settings.png|200px|thumb|right|Options on the '''Settings''' pannel.]]
+
+Sometimes you may want to fine-tune the fitting configurations. The '''Settings''' panel and the '''Plot''' pannel. The configurations include:
+
+* '''Intensity Thresh.''': The minimal pixel intensity to be fitted.<br/>Any pixel with cumulative intensity (over all time bins) below this threshold will be skipped when the dataset is fitted. When selected for preview in the '''Preview''' panel, only the photon counts (orange dots) will be plotted. ''For those pixels, all parameters are treated as 0 both when being previewed and when the whole dataset is fitted.''
+
+* '''Kernel Size''': The radius (in pixels, excluding the center) of the binning kernel.<br/>FLIMJ plugin currently only supports the square kernel with size <math>2r+1</math> and values all equal to 1 where <math>r</math> is the radius). The binning of the dataset is performed by convolving the dataset with this kernel, which is equivalent to adding neighboring pixels into the center:
+[[File:FLIMJ_settings_binning.png|600px|thumb|center|Left to right: Intensity of dataset after binning of radius 0, 1, and 2.]]
+
+* '''χ² Target''': The <math>\chi^2</math> value below which the LM fitting will stop.<br/>The LM algorithm checks at the end of each iteration whether the fit is good enough by comparing <math>\chi^2</math> with this threshold. If the results are satisfactory, the LM algorithm will terminate.
+
+* '''Noise Model''': The noise model used for fitting (see [[#Noise models|Noise models]]).
+
+* '''Algorithm''': The algorithm used for fitting.<br/>Currently supported algorithms are:
+** '''LMA''': The Levenberg-Marquardt algorithm;
+** '''Global''': The global LMA algorithm;
+** '''Bayes''': The Bayesian fitting algorithm.
+
+* '''Instrument Response''': The dataset that contains the instrument response. (see [[#Instrument response function (IRF/prompt)|Instrument response function (IRF/prompt)]]).
+
+* '''# of Components''': The number of exponential decay terms in the model.<br/>FLIMJ plugin currently supports up to 3 components.
+
+* '''Start''' and '''End''': The ends (in ns, inclusive) of the interval during which the data is considered.<br/>The cursors can be changed by dragging in the Fit plot, clicking on the up and down buttons, or typing in values (input will be rounded to the nearest time bin marking).
+[[File:FLIMJ_settings_start_end.png|700px|thumb|center|Change of the cursors results in different fit results.]]
+
+==== Instrument response function (IRF/prompt) ====
 
 More documentation coming soon. For now, see the source code at:
 
@@ -76,7 +102,6 @@ More documentation coming soon. For now, see the source code at:
 And:
 
 {{BigLink | url=https://github.com/flimlib/flimj-ops}}
-
 
 == Advanced topics ==
 
