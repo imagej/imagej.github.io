@@ -30,6 +30,7 @@ The other parameters are related to the '''minimal and maximal volumes''' of the
 For '''8-bits''' images it is recommended to use the method ''Step'' with ''value'' between 1 and 5. For '''16-bits''' images try ''Step'' with values between 5 and 100 depending on the dynamic of your data. Note that the more threshold tested the more memory used. In order not to test low thresholds you can specify to start with the '''mean value''' of the image as the lowest threshold or specify manually the lowest threshold to start with. The image can be **filtered** before thresholding with a 3D median filter with radii proportional to the minimal volume. The '''contrast''' refers to the range of thresholds where the object exists, noise or very faint objects may have very low contrast as opposed to very contrasted object. 
 
 [[File:IterativeDotblot.png]]
+
 Iterative thresholding using different criteria, bottom left elongation, top right volume and bottom right MSER.
 
 Testing all thresholds may lead to '''objects being divided into smaller objects''' for high thresholds. For instance '''touching cells''' may result in close nuclei, at low contrast and low threshold the two nuclei may seem like touching and form only one object, however at high threshold and contrast two separate objects are  being seen. 
