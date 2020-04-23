@@ -50,7 +50,7 @@ A tutorial is also available :  [[Media:3d_seg_spot_tutorial.pdf]]
 
 [[File:Heck-orig.png]] [[File:Heck-watershed.png]][[File:Heck-seg.png]]
 
-Left slide of a 3D raw image with crowded objects with different intensities. Middle the zones around each detected local maxima, computed using watershed. Right, the final segmentation of the objects.
+Left, slice of a 3D raw image with crowded objects with different intensities. Middle, the zones around each detected local maxima, computed using watershed. Right, the final segmentation of the objects.
 
 == 3D Watershed ==
 The plugin works with two images, one containing the '''seeds''' of the objects, that can be obtained from local maxima (see [[3D Filters]]), the other image containing signal data. A first ''threshold1'' is used for seeds (only seeds with ''value > threshold1'' will be used). A second threshold is used to cluster voxels with ''values > threshold2'' In this implementation voxels are clustered to the seeds in descending order of voxel values. 
