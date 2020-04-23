@@ -16,28 +16,28 @@ Several algorithms for segmentation are proposed :
 * 3D seeds-based '''watershed''' with automatic local maxima detection for seeds.
 
 == 3D Iterative Thresholding ==
-The plugin will basically **test all thresholds** and detect objects for all thresholds, it will then try to build a //lineage// of the objects detected, linking them from one  threshold to the next threshold, taking possible splits into account. So **different objects** can be segmented with **different thresholds**, the plugin allows various criteria to pick the best threshold :
-  * **Elongation** : the threshold leading to the most round object is chosen (minimal elongation).
-* **Volume** : the threshold leading to the largest object.
-* **MSER** : the threshold where the volume of the object is most stable (minimal variation).
-* **Edges** : the threshold where the objects has maximal edges (see [[plugin:filter:3d_edge_and_symmetry_filter:start|edge plugin]]) 
+The plugin will basically '''test all thresholds''' and detect objects for all thresholds, it will then try to build a ''lineage'' of the objects detected, linking them from one  threshold to the next threshold, taking possible splits into account. So '''different objects''' can be segmented with '''different thresholds''', the plugin allows various criteria to pick the best threshold :
+ * '''Elongation''' : the threshold leading to the most round object is chosen (minimal elongation).
+* '''Volume''' : the threshold leading to the largest object.
+* '''MSER''' : the threshold where the volume of the object is most stable (minimal variation).
+* '''Edges''' : the threshold where the objects has maximal edges (see [[plugin:filter:3d_edge_and_symmetry_filter:start|edge plugin]]) 
 
-The other parameters are related to the** minimal and maximal volumes** of the objects. The **thresholds tested** can be tuned with 3 options with the //value// parameter : 
-* **Step** : threshold are tested each step //value//. 
-* **Kmeans** : histogram is analysed and clustered into //value// classes using a KMeans algorithm.
-* **Volume** : a constant number of pixels between two thresholds using //value// thresholds. 
+The other parameters are related to the '''minimal and maximal volumes''' of the objects. The ''thresholds tested''' can be tuned with 3 options with the ''value'' parameter : 
+* '''Step''' : threshold are tested each step ''value'' 
+* '''Kmeans''' : histogram is analysed and clustered into ''value'' classes using a KMeans algorithm.
+* '''Volume''' : a constant number of pixels between two thresholds using ''value'' thresholds. 
 
-For **8-bits** images it is recommended to use the method //Step// with //value// between 1 and 5. For **16-bits** images try //Step// with values between 5 and 100 depending on the dynamic of your data. Note than the more threshold tested the more memory used. In order not to test low thresholds you can specify to start with the **mean value** of the image as the lowest threshold or specify manually the lowest threshold to start with. The image can be **filtered** before thresholding with a 3D median filter with radii proportional to the minimal volume. The **contrast** refers to the range of thresholds where the object exists, noise or very faint objects may have very low contrast as opposed to very contrasted object. 
+For '''8-bits''' images it is recommended to use the method ''Step'' with ''value'' between 1 and 5. For '''16-bits''' images try ''Step'' with values between 5 and 100 depending on the dynamic of your data. Note that the more threshold tested the more memory used. In order not to test low thresholds you can specify to start with the '''mean value''' of the image as the lowest threshold or specify manually the lowest threshold to start with. The image can be **filtered** before thresholding with a 3D median filter with radii proportional to the minimal volume. The '''contrast''' refers to the range of thresholds where the object exists, noise or very faint objects may have very low contrast as opposed to very contrasted object. 
 
 {{ :plugin:segmentation:3d_spots_segmentation:dotblot.png?512 |Iterative thresholding}}
 <imgcaption Figure| Iterative thresholding using different criteria, bottom left elongation, top right volume and bottom right MSER.></imgcaption>
 
-Testing all thresholds may lead to **objects being divided into smaller objects** for high thresholds. For instance **touching cells** may result in close nuclei, at low contrast and low threshold the two nuclei may seem like touching and form only one object, however at high threshold and contrast two separate objects are  being seen. 
+Testing all thresholds may lead to '''objects being divided into smaller objects''' for high thresholds. For instance '''touching cells''' may result in close nuclei, at low contrast and low threshold the two nuclei may seem like touching and form only one object, however at high threshold and contrast two separate objects are  being seen. 
 {{ :plugin:segmentation:3d_spots_segmentation:montagetouching.png?512 |}}
 <imgcaption Figure| Dividing objects with thresholds, top left raw image with high brightness, top right raw image with adjusted contrast to distinguis the dividing nuclei, bottom left first channel of Iterative thresholding showing brighter and samller objects, bottom right second channel of Iterative thresholding showing merged nuclei for lower threshold.></imgcaption>
 
 If you find this plugin useful for your work, please cite this paper and refer to the [[plugin:stacks:3d_ij_suite:start|3D Image Suite]] page :  [[http://www.biomedcentral.com/1471-2105/15/9 | A generic classification-based method for
-segmentation of nuclei in 3D images of early embryos]] 
+segmentation of nuclei in 3D images of early embryos]]
 
 == 3D Spot Segmentation ==
 The plugin works with two images, one containing the **seeds** of the objects, that can be obtained from local maxima (see [[plugin:filter:3d_filters:start|3D filters]]), the other image containing signal data. The program computes a **local threshold** around each seeds and cluster voxels with values higher than the local threshold computed. A plugin [[tutorial:plugins:3d_maxima_finder|3D maxima Finder]] is also available to compute the seeds. 
