@@ -39,8 +39,8 @@ Testing all thresholds may lead to '''objects being divided into smaller objects
 
 Dividing objects with thresholds, top left raw image with high brightness, top right raw image with adjusted contrast to distinguish the dividing nuclei, bottom left first channel of Iterative thresholding showing brighter and smaller objects, bottom right second channel of Iterative thresholding showing merged nuclei for lower threshold.
 
-If you find this plugin useful for your work, please cite this paper and refer to the [3D Image Suite] page : [[http://www.biomedcentral.com/1471-2105/15/9  A generic classification-based method for
-segmentation of nuclei in 3D images of early embryos]]
+If you find this plugin useful for your work, please cite this paper and refer to the [[3D_Image_Suite]] page : [http://www.biomedcentral.com/1471-2105/15/9  A generic classification-based method for
+segmentation of nuclei in 3D images of early embryos]
 
 == 3D Spot Segmentation ==
 The plugin works with two images, one containing the **seeds** of the objects, that can be obtained from local maxima (see [[plugin:filter:3d_filters:start|3D filters]]), the other image containing signal data. The program computes a **local threshold** around each seeds and cluster voxels with values higher than the local threshold computed. A plugin [[tutorial:plugins:3d_maxima_finder|3D maxima Finder]] is also available to compute the seeds. 
