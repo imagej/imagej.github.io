@@ -22,7 +22,7 @@ The plugin will basically '''test all thresholds''' and detect objects for all t
 * '''MSER''' : the threshold where the volume of the object is most stable (minimal variation).
 * '''Edges''' : the threshold where the objects has maximal edges (see [[plugin:filter:3d_edge_and_symmetry_filter:start|edge plugin]]) 
 
-The other parameters are related to the '''minimal and maximal volumes''' of the objects. The ''thresholds tested''' can be tuned with 3 options with the ''value'' parameter : 
+The other parameters are related to the '''minimal and maximal volumes''' of the objects. The ''thresholds tested'' can be tuned with 3 options with the ''value'' parameter : 
 * '''Step''' : threshold are tested each step ''value'' 
 * '''Kmeans''' : histogram is analysed and clustered into ''value'' classes using a KMeans algorithm.
 * '''Volume''' : a constant number of pixels between two thresholds using ''value'' thresholds. 
