@@ -17,7 +17,7 @@ Several algorithms for segmentation are proposed :
 
 == 3D Iterative Thresholding ==
 The plugin will basically '''test all thresholds''' and detect objects for all thresholds, it will then try to build a ''lineage'' of the objects detected, linking them from one  threshold to the next threshold, taking possible splits into account. So '''different objects''' can be segmented with '''different thresholds''', the plugin allows various criteria to pick the best threshold :
- * '''Elongation''' : the threshold leading to the most round object is chosen (minimal elongation).
+* '''Elongation''' : the threshold leading to the most round object is chosen (minimal elongation).
 * '''Volume''' : the threshold leading to the largest object.
 * '''MSER''' : the threshold where the volume of the object is most stable (minimal variation).
 * '''Edges''' : the threshold where the objects has maximal edges (see [[plugin:filter:3d_edge_and_symmetry_filter:start|edge plugin]]) 
