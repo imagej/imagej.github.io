@@ -8,7 +8,7 @@ Thomas Boudier
 == Features ==
 Several algorithms for segmentation are proposed :
 
-* 3D '''hysteresis thresholding''' with two thresholds (see [[plugin:segmentation:hysteresis_thresholding:start|2D hysteresis]] for explanation).
+* 3D '''hysteresis thresholding''' with two thresholds (see [https://imagejdocu.list.lu/plugin/segmentation/hysteresis_thresholding/start 2D hysteresis] for explanation).
 * 3D '''simple segmentation''' with thresholding to label 3D objects (similar to 3D objects counter).
 * 3D '''iterative thresholding''' (find optimal threshold for each object).
 * 3D '''spot segmentation''' with various local threshold estimations.
