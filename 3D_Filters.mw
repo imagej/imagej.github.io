@@ -35,7 +35,7 @@ Available filters :
 == Download ==
 For details go to [[3D_ImageJ_Suite]].
 
-If you want fast version for non-isotropic kernels, you are invited to install the [[plugin:filter:3d_filters_with_jni:start|JNI version]].
+If you want fast version using GPU, please refer to [[CLIJ]].
 
 == Citation ==
 When using the //3D Filters// plugin for publication, please refer to :
