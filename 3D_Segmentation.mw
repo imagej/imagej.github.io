@@ -68,7 +68,7 @@ When using the ''3D Segmentation'' plugins for publication, please cite :
 J. Ollion, J. Cochennec, F. Loll, C. Escudé, T. Boudier. ('''2013''') TANGO: A Generic Tool for High-throughput 3D Image Analysis for Studying Nuclear Organization. ''Bioinformatics'' 2013 Jul 15;29(14):1840-1. [http://dx.doi.org/10.1093/bioinformatics/btt276 doi]
 
 == License ==
-GPL distribution (see [[http://www.cecill.info/index.en.html|license]]). Sources for plugins are available freely. Sources for core are available on request. 
+GPL distribution (see [http://www.cecill.info/index.en.html license]). Sources  are available freely.
 
 == Changelog ==
 * 24/10/2013 V2.7 : new Iterative Thresholding; 32-bits segmentation and labelling for large number of objects (>65 535)
