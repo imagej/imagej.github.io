@@ -28,12 +28,9 @@ Available filters :
 
 * Adaptive Nagao-like 
 
-{{:plugin:filter:3d_filters:3dvariance.png|}}
+{{:plugin:filter:3d_filters:3dvariance.png|}}[[File:3d_variance.png]]
 
 3D variance
-
-
-
 
 == Download ==
 For details go to the [[plugin:stacks:3d_ij_suite:start|3D ImageJ Suite]].
