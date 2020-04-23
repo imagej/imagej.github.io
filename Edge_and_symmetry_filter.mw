@@ -17,7 +17,7 @@ The '''radius''' parameter refer to the radius of the object whose symmetry is t
 
 The '''improved seed detection''' refer to a modified implementation to better detect seeds inside objects rather than objects themselves. 
 
-{{:plugin:stacks:3d_ij_suite:edgesymmetry.png|edge and symmetry}}
+[[File:Edgesymmetry.png]]
 
 The gradient vector is perpendicular to the edges, voxels along the direction of the gradient are highlighted and ''vote'' for the symmetry.
 
