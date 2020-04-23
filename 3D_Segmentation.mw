@@ -46,10 +46,11 @@ The plugin works with two images, one containing the **seeds** of the objects, t
 
 Three methods are available for computing the value of the local threshold and 3 methods for clustering are also proposed. The option **watershed** can be chosen to avoid merging of close spots. 
 
-A tutorial is also avalaible :   [[Media:3d_seg_spot_tutorial.pdf]]
+A tutorial is also available :  [[Media:3d_seg_spot_tutorial.pdf]]
 
-{{:plugin:segmentation:3d_spots_segmentation:heck-orig.png|Original image with Fire LUT}} {{:plugin:segmentation:3d_spots_segmentation:heck-watershed.png|Watershed segmentation of seeds}}{{:plugin:segmentation:3d_spots_segmentation:heck-seg.png|Result of spots segmentation}}
-<imgcaption Figure2|Spot segmentation. Left slide of a 3D raw image with crowded objects with different intensities. Middle the zones around each detected local maxima, comuted using watershed. Right the final segmentation of the objects.></imgcaption>
+[[File:Heck-orig.png]] [[File:Heck-watershed.png]][[File:Heck-seg.png]]
+
+Left slide of a 3D raw image with crowded objects with different intensities. Middle the zones around each detected local maxima, computed using watershed. Right, the final segmentation of the objects.
 
 == 3D Watershed ==
 The plugin works with two images, one containing the '''seeds''' of the objects, that can be obtained from local maxima (see [[3D Filters]]), the other image containing signal data. A first ''threshold1'' is used for seeds (only seeds with ''value > threshold1'' will be used). A second threshold is used to cluster voxels with ''values > threshold2'' In this implementation voxels are clustered to the seeds in descending order of voxel values. 
