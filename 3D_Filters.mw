@@ -33,9 +33,9 @@ Available filters :
 3D variance
 
 == Download ==
-For details go to the [[plugin:stacks:3d_ij_suite:start|3D ImageJ Suite]].
+For details go to [[3D_ImageJ_Suite]].
 
-If you want fast version for non-isotropic kernels, you are invited to install the [[plugin:filter:3d_filters_with_jni:start|JNI version]]. 
+If you want fast version for non-isotropic kernels, you are invited to install the [[plugin:filter:3d_filters_with_jni:start|JNI version]].
 
 == Citation ==
 When using the //3D Filters// plugin for publication, please refer to :
