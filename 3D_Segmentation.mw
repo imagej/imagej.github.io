@@ -46,7 +46,7 @@ The plugin works with two images, one containing the **seeds** of the objects, t
 
 Three methods are available for computing the value of the local threshold and 3 methods for clustering are also proposed. The option **watershed** can be chosen to avoid merging of close spots. 
 
-A tutorial is also avalaible : {{:plugin:stacks:3d_ij_suite:3d_seg_spot_tutorial.pdf|3D Spot Segmentation Manual}}.  
+A tutorial is also avalaible :   [[Media:3d_seg_spot_tutorial.pdf]]
 
 {{:plugin:segmentation:3d_spots_segmentation:heck-orig.png|Original image with Fire LUT}} {{:plugin:segmentation:3d_spots_segmentation:heck-watershed.png|Watershed segmentation of seeds}}{{:plugin:segmentation:3d_spots_segmentation:heck-seg.png|Result of spots segmentation}}
 <imgcaption Figure2|Spot segmentation. Left slide of a 3D raw image with crowded objects with different intensities. Middle the zones around each detected local maxima, comuted using watershed. Right the final segmentation of the objects.></imgcaption>
