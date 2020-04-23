@@ -34,10 +34,12 @@ For '''8-bits''' images it is recommended to use the method ''Step'' with ''valu
 Iterative thresholding using different criteria, bottom left elongation, top right volume and bottom right MSER.
 
 Testing all thresholds may lead to '''objects being divided into smaller objects''' for high thresholds. For instance '''touching cells''' may result in close nuclei, at low contrast and low threshold the two nuclei may seem like touching and form only one object, however at high threshold and contrast two separate objects are  being seen. 
-{{ :plugin:segmentation:3d_spots_segmentation:montagetouching.png?512 |}}
-<imgcaption Figure| Dividing objects with thresholds, top left raw image with high brightness, top right raw image with adjusted contrast to distinguis the dividing nuclei, bottom left first channel of Iterative thresholding showing brighter and samller objects, bottom right second channel of Iterative thresholding showing merged nuclei for lower threshold.></imgcaption>
 
-If you find this plugin useful for your work, please cite this paper and refer to the [[plugin:stacks:3d_ij_suite:start|3D Image Suite]] page :  [[http://www.biomedcentral.com/1471-2105/15/9 | A generic classification-based method for
+[[File:IterativeTouching.png]]
+
+Dividing objects with thresholds, top left raw image with high brightness, top right raw image with adjusted contrast to distinguish the dividing nuclei, bottom left first channel of Iterative thresholding showing brighter and smaller objects, bottom right second channel of Iterative thresholding showing merged nuclei for lower threshold.
+
+If you find this plugin useful for your work, please cite this paper and refer to the [3D Image Suite] page : [[http://www.biomedcentral.com/1471-2105/15/9  A generic classification-based method for
 segmentation of nuclei in 3D images of early embryos]]
 
 == 3D Spot Segmentation ==
