@@ -55,4 +55,4 @@ GPL distribution (see [[http://www.cecill.info/index.en.html|license]]).
 
 == Known Bugs ==
 
-  * ij1.47d : Bug in Color/Split, the resulting stacks have incorrect bitdepth
+* ij1.47d : Bug in Color/Split, the resulting stacks have incorrect bitdepth
