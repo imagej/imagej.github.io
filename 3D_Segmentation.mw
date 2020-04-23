@@ -56,7 +56,7 @@ Left, slice of a 3D raw image with crowded objects with different intensities. M
 The plugin works with two images, one containing the '''seeds''' of the objects, that can be obtained from local maxima (see [[3D Filters]]), the other image containing signal data. A first ''threshold1'' is used for seeds (only seeds with ''value > threshold1'' will be used). A second threshold is used to cluster voxels with ''values > threshold2'' In this implementation voxels are clustered to the seeds in descending order of voxel values. 
 An alternative implementation is available in [http://fiji.sc/Classic_Watershed Fiji classic watershed].
 
-Two plugins '''3D splitting''' and '''3D Voronoi''' are also available, more details in this brief [[tutorial:general:watershed_3d|tutorial]].
+Two plugins '''3D splitting''' and '''3D Voronoi''' are also available, more details in this brief [https://imagejdocu.list.lu/tutorial/general/watershed_3d tutorial].
 
 == Download ==
 For details go to the [[3D ImageJ Suite]].
