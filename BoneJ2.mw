@@ -370,7 +370,7 @@ The input image must be 3D, 8-bit and binary. Hyperstacks are not supported.
 * Dougherty R, Kunzelmann K (2007), ''Computing local thickness of 3D structures with ImageJ'', Microsc. Microanal., 13: 1678-1679, [http://dx.doi.org/10.1017/S1431927607074430 doi:10.1017/S1431927607074430]
 * Hildebrand T, Rüegsegger P (1997), ''A new method for the model-independent assessment of thickness in three-dimensional images'', J. Microsc., 185: 67-75, [http://dx.doi.org/10.1046/j.1365-2818.1997.1340694.x doi:10.1046/j.1365-2818.1997.1340694.x]
 
-== Moments of inertia (WIP) ==
+== Moments of inertia ==
 Menu path: ''Plugins &gt; BoneJ &gt; Moments of Inertia''
 
 Calculates the three orthogonal principal axes and moments of inertia around those axes. It includes pixels with values between upper and lower limits, which can be defined in terms of unitless grey values or Hounsfield units (HU). It optionally creates a new stack with the image centred and rotated so that the principal axes are parallel to the image stack's x, y and z axes. Calculations are limited to a rectangular ROI if one is drawn. The plugin will guess whether the image is HU calibrated, and if so, apply HU limits of bone (0-4000 HU), otherwise it will calculate auto-thresholds based on the stack's histogram. If a calibration curve is known, the coefficients can be added to get weighted calculations. Aligning a bone with Moments of Inertia may be a useful step prior to Slice Geometry if bones are not aligned with the image z axis.
@@ -389,6 +389,7 @@ An 8-bit or 16-bit image.
 * '''Align result''': Draw a new stack with the principal axes parallel to the image axes
 * '''Show axes (2D)''': Draw the axes in white on the aligned image
 * '''Show axes (3D)''': Display the stack and its principal axes in a 3D Viewer window
+* '''Record unit vectors''': Record the elements from the eigenvector matrix in the Result table; this is the orientation of the object's principal axes.
 
 ==== Results ====
 * '''Image (optional)''': a copy of the input image centered and aligned with the principal axes
@@ -406,6 +407,7 @@ An 8-bit or 16-bit image.
 * '''I1''': Moment around the shortest principal axis
 * '''I2''': Moment around the middle principal axis
 * '''I3''': Moment around the longest principal axis
+* '''Optional verbose eigenvector elements''': the 3 unit vectors' elements sorted column first (i.e. vector0{x, y, z}, vector1{x, y, z}, vector2{x, y, z}) sorted in the ''reverse'' order of the eigenvalues I1, I2 and I3.
 * '''Verbose output in Log window'''
 ** '''Eigenvalues''': Result of of eigenvalue decomposition. Moments of inertia
 ** '''Eigenvectors of principal axes''': orientation of input image
