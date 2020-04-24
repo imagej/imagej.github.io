@@ -26,6 +26,8 @@ In the case of labelled objects (as count masks) a '''Binary Close Labels''' is 
 
 [[File:Ollion-raw.png|200px]][[File:Ollion-seg.png|200px]][[File:Ollion-closeLabels.png|200px]]
 
+Nuclear regions ((c) J. Ollion, MNHN) : raw image, segmented labelled image, close labels image.
+
 == Download ==
 For details go to the [[3D ImageJ Suite]].
 
