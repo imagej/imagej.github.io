@@ -95,6 +95,17 @@ Sometimes you may want to fine-tune the fitting configurations. The '''Settings'
 
 ==== Instrument response function (IRF/prompt) ====
 
+FLIMJ plugin currently only supports the selection of IRF from a single pixel in an [[#Startup|acceptable dataset]] that is taken during a standard IRF measurement procedure (such as {{GitHub|org=flimlib|repo=flimj-ui|path=test_files/urea.sdt|label=this one using urea crystals}}). The steps are as follows:
+
+# Click on the drop-down menu, select ''From file''; select the dataset file that contains the IRF.
+# In '''Preview''' panel, select ''IRF Intensity'' for the "Show" option (you may also select ''Grayscale'' for the "as" option to deactivate pseudocoloring):[[File:FLIMJ_irf_show_irf.png|200px|thumb|center|Choose ''IRF Intensity'' to enter IRF picking mode.]]
+# Click on the image to select the candidate pixel and adjust the ''Start'' and ''End'' cursors in '''Plot''' pannel to crop out the section of interest (''IRF is plotted in green''):[[File:FLIMJ_irf_crop_irf.png|350px|thumb|center|Drag the cursors to crop IRF.]]
+# Exit the IRF picking mode by selecting other options for the "Show" in '''Preview''' panel and adjust the ''Start'' cursor to get a better fit.
+
+You may readjust the IRF by starting from step 2 above. You may also reset the IRF setting by selecting ''None'' for ''Instrument Response'' in '''Settings''' pannel or go back to a previously set IRF by choosing the corresponding filename there.
+
+== Fit the dataset ==
+
 More documentation coming soon. For now, see the source code at:
 
 {{BigLink | url=https://github.com/flimlib/flimj-ui}}
