@@ -8,6 +8,8 @@ Drag and drop the imglib2-script file into the "jars" folder of ImageJ/FIJI, and
 
 '''How it works:'''
 
+[[File:ColocByCorrelation-CorrelationImage.jpg|thumb|Correlation Image]]
+
 The plugin performs a cross-correlation in frequency space to create a correlation image. To remove non-specific correlations (from background, or high signal density), a correlation image generated from randomized images is then subtracted from the original correlation image. This occurs through cycles of:
  
 1. Randomizing Image1 using a Costes Randomization method, and a mask of all theoretically possible localizations for the signal in Image1 (i.e. a mask of the cells, or the nuclei).
@@ -27,6 +29,8 @@ The plugin can be found in the plugins menu (near the bottom) and should be star
 '''Interpreting the results:''' 
 
 After the plugin has finished, two new windows will be open:
+
+[[File:ColocByCorrelate-Graph.jpeg|thumb|Radial profile of correlation image shown above]]
 
 Correlation plot: A radial profile plot will be displayed, it contains the radial profile of the original correlation image (black line), the radial profile of the correlation after subtraction of random associations (red line), and a Gaussian curve fit to the subtracted profile (blue dots). The Y-axis is the result of the average correlation function at a given distance. While not arbitrary, it is most easily viewed as a measure of relative correlation. The range of the graph is set automatically to fit the Gaussian curve. If you wish to view all the data select More>Set Range to Fit all…
 
