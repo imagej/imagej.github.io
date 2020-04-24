@@ -18,6 +18,7 @@ A 3D '''Euclidean Distance Map''' (alos called ''EDT'') is available that takes 
 Left, raw image of a lymph node ((c) J. Groom, WEHI). Right, binary thresholded image.
 
 [[File:Groom-edt.png|200px]][[File:Groom-evf.png|200px]]
+
 Left, EDT image . Right, EVF image.
 
 
