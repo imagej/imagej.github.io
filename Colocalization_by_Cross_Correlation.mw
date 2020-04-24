@@ -18,6 +18,8 @@ The plugin performs a cross-correlation in frequency space to create a correlati
 
 After the subtraction of non-specific correlations, we generate a radial profile of this data and fit a gaussian curve to it, showing the correlation between the images at different offsets. We also generate a radial profile for the original correlation data before subtraction, as this is needed to establish a measure of confidence. The confidence is calculated as the area under the curve (AUC) of the subtracted correlation radial profile (in the range of mean ± 3×sigma) divided by the AUC of the original correlation radial profile (in same range) as a percentage. The confidence value, along with the mean and sigma of the gaussian fit are displayed in a log window. Higher values of confidence, closer to 100, indicate that two images very likely have a true spatial correlation at the indicated distance.
 
+[[File:ColocByCorrelate-Graph.jpeg|thumb|Radial profile of correlation image shown above]]
+
 '''Preparing images:''' 
 
 This plugin requires two single channel, single frame images (2D or 3D) to be analyzed, and an additional binary mask to define the randomization area (details for mask below). The two images should undergo appropriate background subtraction to lower the background pixel values to zero or near zero. Even low level background (pixel values of 10 to 20 on a 16 bit image) can lower the confidence level and result in false negatives. Additionally, the images (particularly 3D) need to be correctly scaled (Image>Properties), otherwise all axes will be assumed to have the same scale. The mask for the binary image should cover all of the theoretically possible localizations for the signals in the image that is to be randomized. Typically this will simply be a binary mask of the cell volume, however if you are analyzing nuclear proteins, this would be a mask of only the nuclei. Using an inappropriate mask will likely result in the detection of a strong correlation caused by these higher order repeating structures (e.g. you will find a correlation at distances averaging 10-15 microns, caused by the repeating structure of the cells).
@@ -30,7 +32,7 @@ The plugin can be found in the plugins menu (near the bottom) and should be star
 
 After the plugin has finished, two new windows will be open:
 
-[[File:ColocByCorrelate-Graph.jpeg|thumb|Radial profile of correlation image shown above]]
+[[File:ColocByCorrelate-GaussFit.jpg|thumb]]
 
 Correlation plot: A radial profile plot will be displayed, it contains the radial profile of the original correlation image (black line), the radial profile of the correlation after subtraction of random associations (red line), and a Gaussian curve fit to the subtracted profile (blue dots). The Y-axis is the result of the average correlation function at a given distance. While not arbitrary, it is most easily viewed as a measure of relative correlation. The range of the graph is set automatically to fit the Gaussian curve. If you wish to view all the data select More>Set Range to Fit all…
 
