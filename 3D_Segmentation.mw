@@ -42,7 +42,7 @@ Dividing objects with thresholds, top left raw image with high brightness, top r
 If you find this plugin useful for your work, please cite this paper and refer to  [[3D_ImageJ_Suite]] and this article : [http://www.biomedcentral.com/1471-2105/15/9  A generic classification-based method for segmentation of nuclei in 3D images of early embryos]
 
 == 3D Spot Segmentation ==
-The plugin works with two images, one containing the '''seeds''' of the objects, that can be obtained from local maxima (see [[3D_Filters]]), the other image containing signal data. The program computes a '''local threshold''' around each seeds and cluster voxels with values higher than the local threshold computed. Spots-like objects can be enhanced using a topHat or a [[Edge_and_symmetry_filter symmetry filter]]. A plugin [https://imagejdocu.list.lu/tutorial/plugins/3d_maxima_finder 3D maxima Finder] is also available to compute these local maxima, similarly to the find maxima in ImageJ/Fiji. 
+The plugin works with two images, one containing the '''seeds''' of the objects, that can be obtained from local maxima (see [[3D_Filters]]), the other image containing signal data. The program computes a '''local threshold''' around each seeds and cluster voxels with values higher than the local threshold computed. Spots-like objects can be enhanced using a topHat or a [[Edge_and_symmetry_filter ]]. A plugin [https://imagejdocu.list.lu/tutorial/plugins/3d_maxima_finder 3D maxima Finder] is also available to compute these local maxima, similarly to the find maxima in ImageJ/Fiji. 
 
 Three methods are available for computing the value of the local threshold and 3 methods for clustering are also proposed. The option '''watershed''' can be chosen to avoid merging of close spots. 
 
