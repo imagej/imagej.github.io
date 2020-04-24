@@ -12,7 +12,9 @@ Thomas Boudier
 A 3D '''Fill Holes''' is available, works the same way as in 2D but will not fill holes if it is not closed in the Z dimension. 
 
 A 3D '''Euclidean Distance Map''' is available that takes into account the calibration of the image stack. A 3D normalized distance map (called Eroded Volume Fraction, or '''EVF''') is also available.
+
 [[File:Groom-raw.png]][[File:Groom-bin.png]]
+
 [[File:Groom-edt.png]][[File:Groom-evf.png]]
 
 In the case of labelled objects (as count masks) a '''Binary Close Labels''' is available, that permits to performs closing on individual objects, hence avoiding objects to touch during dilatation operation.
