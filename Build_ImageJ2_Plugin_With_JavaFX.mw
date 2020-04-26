@@ -19,4 +19,4 @@ Usually a JavaFX program needs to declare a <tt>javafx.application.Application</
 
 == A minimal ImageJ 2 JavaFX plugin ==
 
-I have created a '''minimal ImageJ plugin''' that show how to use JavaFX for the UI of a plugin there : https://github.com/hadim/imagej-plugin-javafx (this plugin should maybe moved to the imagej GitHub organization so any IJ devs can more easly edit).
+I have created a '''minimal ImageJ plugin''' that show how to use JavaFX for the UI of a plugin there : https://github.com/ctrueden/imagej-plugins-javafx (this plugin should maybe moved to the imagej GitHub organization so any IJ devs can more easly edit).
