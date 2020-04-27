@@ -1,3 +1,15 @@
+{{Infobox
+| name                   = 3DSuite
+| software               = 3DSuite
+| update site            = 3DSuite
+| author                 = [https://github.com/mcib3d Thomas Boudier] 
+| maintainer             = [https://github.com/mcib3d Thomas Boudier] 
+| source                 = {{GitHub|org=mcib3d|repo=mcib3d-core}}
+| released               = July 3<sup>rd</sup>, 2014
+| latest version         = July 23<sup>rd</sup>, 2019 ([[MorphoLibJ]] v1.4.1)
+| status                 = stable, active
+| category               = [[:Category:Analysis|Analysis]], [[:Category:Filtering|Filtering]], [[:Category:Segmentation|Segmentation]], [[:Category:Mathematical_morphology|Mathematical morphology]]
+}}
 == 3D ImageJ Suite ==
 This ''suite'' provides plugins to enhance 3D capabilities of ImageJ.
 
