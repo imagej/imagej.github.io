@@ -70,8 +70,8 @@ J. Ollion, J. Cochennec, F. Loll, C. Escudé, T. Boudier. ('''2013''') TANGO: A 
 GPL distribution (see [http://www.cecill.info/index.en.html license]). Sources  are available freely.
 
 == Changelog ==
-* 24/10/2013 V2.7 : new Iterative Thresholding; 32-bits segmentation and labelling for large number of objects (>65 535)
-* 21/03/2014 V2.71: bug fix in Segment3D
-* 25/05/2015 V3.2 : improved watershed (especially for flat regions)
-* 20/08/2015 V3.4 : redesigned Watershed, record Iterative Thresholding
-* 22/08/2016 V3.83: watershed improved
+* 22/08/2016 V3.83: watershed improved.
+* 20/08/2015 V3.4 : redesigned Watershed, record Iterative Thresholding.
+* 25/05/2015 V3.2 : improved watershed (especially for flat regions).
+* 21/03/2014 V2.71: bug fix in Segment3D.
+* 24/10/2013 V2.7 : new Iterative Thresholding; 32-bits segmentation and labelling for large number of objects (>65 535).
