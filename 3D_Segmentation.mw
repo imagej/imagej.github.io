@@ -1,6 +1,6 @@
 
 == 3D Segmentation ==
-This plugin implements various algorithms to segment 3D images. 
+This plugin implements various algorithms to segment 3D images, as part of the [[3D ImageJ Suite]].
 
 == Author ==
 {{Person|Tboudier}}
