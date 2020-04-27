@@ -5,8 +5,8 @@
 | author                 = [https://github.com/mcib3d Thomas Boudier] 
 | maintainer             = [https://github.com/mcib3d Thomas Boudier] 
 | source                 = {{GitHub|org=mcib3d|repo=mcib3d-core}}
-| released               = July 3<sup>rd</sup>, 2014
-| latest version         = July 23<sup>rd</sup>, 2019 ([[MorphoLibJ]] v1.4.1)
+| released               = 25/09/2012, V2.0
+| latest version         = 30/10/2019, V3.96
 | status                 = stable, active
 | category               = [[:Category:3D|3D]], [[:Category:Analysis|Analysis]], [[:Category:Filtering|Filtering]], [[:Category:Segmentation|Segmentation]], [[:Category:Mathematical_morphology|Mathematical morphology]]
 }}
@@ -78,33 +78,33 @@ The 3D suite would like to thanks the developers of the following plugins :
 * [[MorphoLibJ]]
 
 == Change Log ==
-* 25/09/2012 V2.0 : first version 
-* 28/09/2012 V2.1 : corrected bug in display (Ellipsoid3D and RoiManager3D)
-* 12/10/2012 V2.2 : calibration bug fixed in spatial statistics
-* 22/10/2012 V2.3 : bug fixed for filters3D with 32-bits images
-* 29/10/2012 V2.3 : new macro functions for 3D Manager 
-* 08/02/2013 V2.4 : new plugin MereoTopology 3D
-* 21/03/2013 V2.5 : new design for 3D Manager
-* 28/05/2013 V2.6 : bug fixes and improvements, new filters openGray and closeGray
-* 24/10/2013 V2.7 : new segmentation Iterative thresholding; check for required libraries at startup; 32-bits segmentation and labelling
-* 21/03/2014 V2.71: bug fix in Segment3D
-* 03/06/2014 V2.8 : new plugin shape analysis. Load/save objects with calibration.
-* 03/10/2014 V2.9 : new Results Tables for 3DManager
-* 21/11/2014 V3.0 : closest object in selection for 3D Manager. Macros functions to save results for 3D Manager
-* 27/04/2015 V3.1 : bug in colocalisation (rare objects configuration) + improved split + poles in ellipsoid fitting
-* 25/05/2015 V3.2 : improved watershed (especially for flat regions)
-* 05/06/2015 V3.3 : new function closeResults saveResults 3DManager + exclude on edges
-* 20/08/2015 V3.4 : redesigned Watershed, Record Iterative Thresholding, Quantification in 32-bits images with NaN values
-* 01/09/2015 V3.5 : compatibility with ImageScience 3.0
-* 07/12/2015 V3.6 : bug fixes, new edge and symmetry filters, sync between 3D Viewer select object and 3DManager
-* 02/03/2016 V3.7 : bug fixes, new plugin exclude objects on borders
-* 18/03/2016 V3.71: new plugin 3D Maxima Finder
-* 30/03/2016 V3.74: bug fixed in EDT
-* 04/07/2016 V3.82: compatibility with new version of 3D viewer, improvements and bug fixes
-* 22/08/2016 V3.83: New plugin Radial Distance Area Ratio (RDAR), Watershed improved
-* 10/04/2017 V3.9 : Display computing time and ETC for filters, new LooknFeel for Manager  
-* 05/01/2018 V3.91: Bug fixes and improvements
-* 14/03/2018 V3.92: Bug fixes and improvements. New Roi3D overlay in 3DManager
-* 19/10/2018 V3.93: Bug fixes and improvements. New plugins MultiColoc, EVF radial analysis and density 
-* 15/01/2019 V3.94: Bug fixes and improvements. 3D Manager interface improved.
 * 30/10/2019 V3.96: Bug fixes and improvements. New plugins distances and interactions.
+* 15/01/2019 V3.94: Bug fixes and improvements. 3D Manager interface improved.
+* 19/10/2018 V3.93: Bug fixes and improvements. New plugins MultiColoc, EVF radial analysis and density.
+* 14/03/2018 V3.92: Bug fixes and improvements. New Roi3D overlay in 3DManager.
+* 05/01/2018 V3.91: Bug fixes and improvements.
+* 10/04/2017 V3.9 : Display computing time and ETC for filters, new LooknFeel for Manager.
+* 22/08/2016 V3.83: New plugin Radial Distance Area Ratio (RDAR), Watershed improved.
+* 04/07/2016 V3.82: compatibility with new version of 3D viewer, improvements and bug fixes.
+* 30/03/2016 V3.74: bug fixed in EDT.
+* 18/03/2016 V3.71: new plugin 3D Maxima Finder.
+* 02/03/2016 V3.7 : bug fixes, new plugin exclude objects on borders.
+* 07/12/2015 V3.6 : bug fixes, new edge and symmetry filters, sync between 3D Viewer select object and 3DManager.
+* 01/09/2015 V3.5 : compatibility with ImageScience 3.0.
+* 20/08/2015 V3.4 : redesigned Watershed, Record Iterative Thresholding, Quantification in 32-bits images with NaN values.
+* 05/06/2015 V3.3 : new function closeResults saveResults 3DManager + exclude on edges.
+* 25/05/2015 V3.2 : improved watershed (especially for flat regions).
+* 27/04/2015 V3.1 : bug in colocalisation (rare objects configuration) + improved split + poles in ellipsoid fitting.
+* 21/11/2014 V3.0 : closest object in selection for 3D Manager. Macros functions to save results for 3D Manager.
+* 03/10/2014 V2.9 : new Results Tables for 3DManager.
+* 03/06/2014 V2.8 : new plugin shape analysis. Load/save objects with calibration.
+* 21/03/2014 V2.71: bug fix in Segment3D.
+* 24/10/2013 V2.7 : new segmentation Iterative thresholding; check for required libraries at startup; 32-bits segmentation and labelling.
+* 28/05/2013 V2.6 : bug fixes and improvements, new filters openGray and closeGray.
+* 21/03/2013 V2.5 : new design for 3D Manager.
+* 08/02/2013 V2.4 : new plugin MereoTopology 3D.
+* 29/10/2012 V2.3 : new macro functions for 3D Manager. 
+* 22/10/2012 V2.3 : bug fixed for filters3D with 32-bits images.
+* 12/10/2012 V2.2 : calibration bug fixed in spatial statistics.
+* 28/09/2012 V2.1 : corrected bug in display (Ellipsoid3D and RoiManager3D).
+* 25/09/2012 V2.0 : first version.
