@@ -1,6 +1,6 @@
 
 == 3D Filters ==
-3D filtering using ellipsoidal neighbourhood.
+3D filtering using ellipsoidal neighbourhood, as part of the [[3D ImageJ Suite]].
 
 == Author ==
 {{Person|Tboudier}}
