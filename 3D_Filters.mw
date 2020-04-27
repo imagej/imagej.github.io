@@ -3,7 +3,7 @@
 3D filtering using ellipsoidal neighbourhood.
 
 == Author ==
-Thomas Boudier
+{{Person|Tboudier}}
 
 Matthias Labschütz contributed a fast version for isotropic kernels (for min, max and mean filtering)
 
