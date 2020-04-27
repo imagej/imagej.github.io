@@ -3,7 +3,7 @@
 This plugin implements various algorithms to segment 3D images. 
 
 == Author ==
-Thomas Boudier
+{{Person|Tboudier}}
 
 == Features ==
 Several algorithms for segmentation are proposed :
