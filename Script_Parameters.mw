@@ -250,6 +250,18 @@ print(myFile)
 print(myDir)
 </source>
 
+The single <code>File</code> parameter support the styles "''file''", "''directory''", "''open''", "''save''". 
+
+For multiple file or directories, the styles are plural
+<source lang="python">
+#@ File[] (label="Select some files", style="files") listfiles
+#@ File[] (label="Select some directories", style="directories")listdirs
+
+print(listfiles)
+print(listdirs)
+</source>
+The <code>File[]</code> parameter supports the styles "''files''", "''directories''", "''both''".
+
 === Styles ===
 
 You can influence the visual style of some of the input widgets. See previous paragraph for widget-specific style examples. 
