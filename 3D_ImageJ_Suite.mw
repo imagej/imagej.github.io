@@ -27,7 +27,7 @@ This ''suite'' is composed of :
 
 * [[3D Filters]] (mean, median, max, min, tophat, max local, ...) and [[Edge and symmetry filter]]
 * [[3D Segmentation]] (iterative thresholding, spots segmentation, watershed, ...)
-* [https://imagejdocu.list.lu/plugin/morphology/3d_mathematical_morphology_/start 3D Mathematical Morphology] tools (fill holes, binary closing, distance map, ...)
+* [3D Mathematical Morphology] tools (fill holes, binary closing, distance map, ...)
 * [https://imagejdocu.list.lu/plugin/stacks/3d_roi_manager/start 3D RoiManager] (3D display and analysis of 3D objects)
 * [https://imagejdocu.list.lu/plugin/analysis/3d_analysis/start 3D Analysis] (Geometrical measurements, Mesh measurements, Convex hull, ...)
 * [https://imagejdocu.list.lu/plugin/analysis/3d_mereotopology/start 3D MereoTopology] (Relationship between objects)
