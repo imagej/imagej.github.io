@@ -47,10 +47,10 @@ GPL distribution (see [http://www.cecill.info/index.en.html license]).
 
 == Changelog ==
 
+* 10/04/2017 : new timer for computing time
+* 28/05/2013 : new filters Open and Close
+* 22/10/2012 : bug fixed for filters3D with 32-bits images
 * 22/06/2011 : Parallelization updated
-*  22/10/2012 : bug fixed for filters3D with 32-bits images 
-*  28/05/2013 : new filters Open and Close
-*  10/04/2017 : new timer for computing time
 
 == Known Bugs ==
 
