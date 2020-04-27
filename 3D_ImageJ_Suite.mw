@@ -1,7 +1,7 @@
 {{Infobox
 | name                   = 3D ImageJ Suite
 | software               = 3DSuite
-| update site            = 3DSuite
+| update site            = 3D ImageJ Suite
 | author                 = {{Person|Tboudier}}
 | maintainer             = [https://github.com/mcib3d Thomas Boudier] 
 | source                 = {{GitHub|org=mcib3d|repo=mcib3d-core}}
