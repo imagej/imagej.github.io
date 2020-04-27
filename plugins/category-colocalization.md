@@ -1,5 +1,6 @@
 ---
 title: Colocalization
+breadcrumb: Colocalization
 author: admin
 category: admin
 layout: page

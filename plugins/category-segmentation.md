@@ -1,5 +1,6 @@
 ---
 title: Segmentation
+breadcrumb: Segmentation
 author: admin
 category: admin
 layout: page

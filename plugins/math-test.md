@@ -1,7 +1,8 @@
 ---
 title: Math test
+breadcrumb: Math test
 author: Edward Evans
-category: Demo
+category: demo
 layout: page
 use_math: true
 ---

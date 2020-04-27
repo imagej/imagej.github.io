@@ -1,8 +1,10 @@
 ---
 title: Classic Watershed
+breadcrumb: Classic Watershed
 author: Ignacio Arganda-Carreras
-category: Segmentation
+category: segmentation
 layout: page
+use_math: false
 ---
 
 <!-- 

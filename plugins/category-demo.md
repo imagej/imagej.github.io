@@ -1,5 +1,6 @@
 ---
 title: Demo
+breadcrumb: Demo
 author: admin
 category: admin
 layout: page

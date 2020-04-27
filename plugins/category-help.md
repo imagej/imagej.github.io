@@ -1,5 +1,6 @@
 ---
 title: Help
+breadcrumb: Help
 author: admin
 category: admin
 layout: page

@@ -1,8 +1,10 @@
 ---
 title: 3D Viewer
+breadcrumb: 3D Viewer
 author: Curtis Rueden
-category: Analysis
+category: analysis
 layout: page
+use_math: false
 ---
 
 ![3D Viewer Overview]({{site.baseurl}}/images/posts/3D_Viewer_overview.png){: .image.fit}
