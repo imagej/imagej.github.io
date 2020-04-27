@@ -8,7 +8,7 @@
 | released               = July 3<sup>rd</sup>, 2014
 | latest version         = July 23<sup>rd</sup>, 2019 ([[MorphoLibJ]] v1.4.1)
 | status                 = stable, active
-| category               = [[:Category:3D|3D]],[[:Category:Analysis|Analysis]], [[:Category:Filtering|Filtering]], [[:Category:Segmentation|Segmentation]], [[:Category:Mathematical_morphology|Mathematical morphology]]
+| category               = [[:Category:3D|3D]], [[:Category:Analysis|Analysis]], [[:Category:Filtering|Filtering]], [[:Category:Segmentation|Segmentation]], [[:Category:Mathematical_morphology|Mathematical morphology]]
 }}
 == 3D ImageJ Suite ==
 This ''suite'' provides plugins to enhance 3D capabilities of ImageJ.
