@@ -1,5 +1,6 @@
 ---
 title: Plugin categories
+breadcrumb: Plugins
 layout: page
 ---
 
