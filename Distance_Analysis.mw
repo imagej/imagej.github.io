@@ -126,7 +126,7 @@ if the recorder has a problem, here are some examples of macro line:
 * run("DiAna_Analyse", "img1=imageA.tif img2=imageB.tif lab1=segA.tif lab2=segB.tif coloc distc=50.0 adja kclosest=1 dista=50.0 measure");
 == Installation ==
 
-Download and copy the following jar in your plugins folder [https://drive.google.com/open?id=1rCsgalRHkmQHP7rtQ67MUXA5cNVGbdXS Diana_1.47.jar]
+Download and copy the following jar in your plugins folder [https://drive.google.com/open?id=16uBpmvTMj7HazTYD-I39kpvxnwlkCrZj Diana_1.48.jar]
 
 You have also to manually download and copy into your plugins directory the [[3D_ImageJ_Suite|3D ImageJ Suite]].
 
@@ -154,6 +154,10 @@ GPL distribution (see [http://www.cecill.info/index.en.html|licence]). Sources f
 * 21/12/2018 v.1.42: show again info in the log
 * 17/01/2019 v.1.43: correct user interface and a bug with 2D images, thanks to Chin-Chun
 * 14/05/2019 v.1.44: bugs fixed and compatibility with the last version of 3D Suite.
+* 29/10/2019 v.1.45: bugs fixed and maven update. Thanks to N. Chiaruttini
+* 24/01/2020 v.1.46: bug fixed, add coloc image in the batch
+* 24/02/2020 v.1.47: bug fixed with the shuffle in macro line
+* 28/04/2020 v1.48: add integrated density measure
 
 [[Category:Plugins]]
 [[Category:Analysis]]
