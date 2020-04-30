@@ -36,8 +36,10 @@ Fiji Is Just ImageJ—a "batteries-included" distribution of ImageJ which includ
 <hr>
 
 | :---: | :---: |
-|![Plugins]({{"/images/icons/plugins_icon.png" | relative_url}}){: .image.table} | A powerful mechanism for extending ImageJ in all kinds of useful ways. 
+| ![Techniques]({{"/images/icons/techniques_icon.png" | relative_url}}){: .image.table} | 	Image processing, colocalization, deconvolution, registration, segmentation, tracking, visualization and much more. |
+| ![Plugins]({{"/images/icons/plugins_icon.png" | relative_url}}){: .image.table} | A powerful mechanism for extending ImageJ in all kinds of useful ways. 
 | ![Extend]({{"/images/icons/extend_icon.png" | relative_url}}){: .image.table} | Automated, reproducible workflows via scripts and macros, including headless on a remote server or cluster. |
+| ![Forum]({{"/images/icons/forum_icon.png" | relative_url}}){: .image.table} | A vibrant, diverse, and helpful user community that gives rise to insightful scientific exchanges. |
 
 
 ImageJ's extensibility is the root of its effectiveness: many advanced image-processing methods are not provided by the core application, but rather are plugins written by specialists in specific fields, made available via update sites.
