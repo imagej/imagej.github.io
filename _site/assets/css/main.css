@@ -2367,6 +2367,12 @@ input, select, textarea {
 			display: block;
 		}
 
+		.image.table {
+			display: inline-block;
+			margin: 0 0 0 0;
+			vertical-align: middle;
+		}
+
 		.image.left {
 			float: left;
 			padding: 0 1.5em 1em 0;
@@ -2846,7 +2852,7 @@ input, select, textarea {
 			}
 
 		table td {
-			padding: 0.75em 0.75em;
+			padding: 0.5em 0.5em;
 		}
 
 		table th {
