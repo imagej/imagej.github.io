@@ -1,5 +1,6 @@
 ---
 title: Search
+breadcrumb: Search ImageJ
 layout: search
 ---
 

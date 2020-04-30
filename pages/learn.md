@@ -1,5 +1,6 @@
 ---
 title: Learn about ImageJ
+breadcrumb: Learn
 layout: page
 category: Demo
 ---
@@ -116,3 +117,9 @@ While both the java and clojure versions encapsulate the variables in a local na
 <div class="video-wrapper">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/4NOM-kLfDR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+A table with images, use the .image.table to make it align with text:
+
+| :---: | :---: |
+|![Plugins]({{"/images/icons/plugins_icon.png" | relative_url}}){: .image.table} | A powerful mechanism for extending ImageJ in all kinds of useful ways. 
+| ![Extend]({{"/images/icons/extend_icon.png" | relative_url}}){: .image.table} | Automated, reproducible workflows via scripts and macros, including headless on a remote server or cluster. |
