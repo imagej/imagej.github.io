@@ -6,10 +6,13 @@ Welcome to ImageJ.net! This webpage is still a work in progress.
 # TODO:
 
 - [X] Math support via Mathjax.
-- [X] UX bread crumbs (top of page).
-- [ ] Add infobox elements
+- [X] UX bread crumbs (top of page)
 - [X] Code syntax highlighting
+- [ ] Add infobox elements
 - [ ] Line numbers for code
+- [ ] Add Edit and view source links to page template
+- [ ] Add supporting pages
+	- [ ] Getting started (/use)
 
 
 ## Adding Equations
