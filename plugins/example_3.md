@@ -2,7 +2,7 @@
 title: Example 3
 breadcrumb: Example 3
 author: Sam Fuzzy Face
-category: colocalization
+category: plugins:colocalization
 layout: page
 use_math: false
 ---

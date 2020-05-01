@@ -2,7 +2,7 @@
 title: 3D Viewer
 breadcrumb: 3D Viewer
 author: Curtis Rueden
-category: analysis
+category: plugins:analysis
 layout: page
 use_math: false
 ---

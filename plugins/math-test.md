@@ -2,7 +2,7 @@
 title: Math test
 breadcrumb: Math test
 author: Edward Evans
-category: demo
+category: plugins:demo
 layout: page
 use_math: true
 ---

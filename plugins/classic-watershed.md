@@ -2,7 +2,7 @@
 title: Classic Watershed
 breadcrumb: Classic Watershed
 author: Ignacio Arganda-Carreras
-category: segmentation
+category: plugins:segmentation
 layout: page
 use_math: false
 ---

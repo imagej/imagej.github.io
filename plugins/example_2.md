@@ -2,7 +2,7 @@
 title: Example 2
 breadcrumb: Example 2
 author: Mel Hammond
-category: demo
+category: plugins:demo
 layout: page
 use_math: false
 ---

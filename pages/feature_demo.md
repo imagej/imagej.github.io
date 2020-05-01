@@ -1,9 +1,13 @@
 ---
-title: Learn about ImageJ
-breadcrumb: Learn
+title: Feature Demo
+breadcrumb: Feature Demo
 layout: page
-category: Demo
+category: plugins:Demo
 ---
+
+Front matter information:
+
+**category:** type:category (_e.g._ plugins:development populates the page only under plugins)
  
 <div class="sidebar" markdown="1">
 

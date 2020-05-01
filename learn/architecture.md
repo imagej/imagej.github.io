@@ -1,9 +1,9 @@
 ---
-title: YOUR-POST-TITLE
-breadcrumb: YOUR-BREADCRUMB
-author: YOUR-NAME
-category: YOUR-CATEGORY
-layout: post
+title: Architecture
+breadcrumb: Arhictecture
+author: admin
+category: devdocs:Development
+layout: page
 use_math: false
 ---
 
