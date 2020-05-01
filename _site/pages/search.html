@@ -14,7 +14,7 @@
     <div class="topnav">
         <a href="/index">Home</a>
         <a href="/pages/search" class="icon solid fa-search">Search</a>
-        <a href="/use">Use</a>
+        <a href="/learn">Use</a>
         <a href="#">Extend</a>
         <a href="/plugins">Plugins</a>
     </div>
@@ -41,9 +41,18 @@
             "plugins-3d-viewer-html": {
                 "title": "3D Viewer",
                 "author": "Curtis Rueden",
-                "category": "analysis",
+                "category": "plugins:analysis",
                 "content": "This plugin images offers hardware-accelerated visualization possibilities for image stacks, using the Java 3D library. Stacks can be displayed as texture-based volume renderings, surfaces or orthoslices.ScreencastsHere you are a demo screencast separated into two different videos (~15 min in total) showing many of the features of the 3D viewer:        Beyond this, a lot more screencasts can be found here, covering the following topics:  Display stacks  Rendering modes and attributes  Adjusting the transfer functions  Editing volumes  Point lists  Landmark-based registration  Transformations  3D Content in PDFsFor usersComprehensive usage guidelines in form of FAQs and tutorials can be found here.For developersA lot of functions of the 3D Viewer are macro-recordable. However, if that is not enough (or if the function is not recorded properly), it is better to write a plugin. In the latter case no macros should be called from Java, as that would limit the code to work with the currently active 3D Viewer (even if the user clicked somewhere else).This code snippet should get you started:Image3DUniverse univ = new Image3DUniverse();univ.show();univ.addMesh(yourImagePlus, null, \"somename\", 50, new boolean[] {true, true, true}, 2);...Full documentation for developers with tutorials and explained code snippets can be found here.JavadocsThe Fiji Javadocs provide detailed information about the 3D Viewer API.FAQThe 3D Viewer opens a window saying An unexpected exception occurred.If in the same window, it also says:java.lang.NullPointerException:Canvas3D: null GraphicsConfigurationthe reason is most likely that your graphics setup does not have any hardware 3D acceleration. This can happen e.g. when you run ImageJ via a remote X11 connection (3D acceleration works only when the graphics are displayed on the same machine as the program runs).Unfortunately, there is not workaround/fix for this situation yet, except to use ImageJ locally when you want to use the 3D Viewer.Problem with Intel graphics cardsThere is a known problem with older Windows drivers for some Intel graphics cards. Usually, this is fixed by installing new drivers. If you would like to help make ImageJ nicer by detecting faulty driver versions, please contact us.The 3D Viewer simply crashesUnfortunately, there are quite a large number of possible reasons. Please help us by debugging the issues and contacting us with the information. You can also report a bug, which will provide a lot of additional, potentially useful information.Only a gray rectangle is shown by the 3D ViewerAs with 3D Viewer crashes, there are quite a large number of possible reasons. Please help us by debugging the issues and contacting us with the information. You can also report a bug, which will provide a lot of addidtional, potentially useful information.Publication  Schmid, B.; Schindelin, J. &amp; Cardona, A. et al. (2010), “A high-level 3D visualization API for Java and ImageJ”, BMC Bioinformatics 11(1): 1, PMID 20492697, doi:10.1038/nmeth.3392 (on Google Scholar).",
                 "url": "/plugins/3d-viewer.html"
+            }
+            , 
+        
+            "learn-architecture-html": {
+                "title": "Architecture",
+                "author": "admin",
+                "category": "devdocs:Development",
+                "content": "  Header 1Header 2Header 3 Header 1Enter text.Sub-heading 1Enter text. Header 2Enter text.Sub-heading 2Enter text. Header 3",
+                "url": "/learn/architecture.html"
             }
             , 
         
@@ -51,7 +60,7 @@
                 "title": "Analysis",
                 "author": "admin",
                 "category": "admin",
-                "content": "3D Viewer Example 1 ",
+                "content": "3D ViewerExample 1",
                 "url": "/plugins/category-analysis.html"
             }
             , 
@@ -60,7 +69,7 @@
                 "title": "Colocalization",
                 "author": "admin",
                 "category": "admin",
-                "content": "Example 3 ",
+                "content": "Example 3",
                 "url": "/plugins/category-colocalization.html"
             }
             , 
@@ -69,7 +78,7 @@
                 "title": "Demo",
                 "author": "admin",
                 "category": "admin",
-                "content": "Example 2 Learn about ImageJ Math test ",
+                "content": "Example 2Feature DemoMath test",
                 "url": "/plugins/category-demo.html"
             }
             , 
@@ -78,7 +87,7 @@
                 "title": "Development",
                 "author": "admin",
                 "category": "admin",
-                "content": "Example 4 ",
+                "content": "Example 4",
                 "url": "/plugins/category-development.html"
             }
             , 
@@ -87,7 +96,7 @@
                 "title": "Help",
                 "author": "admin",
                 "category": "admin",
-                "content": "Example 5 ",
+                "content": "Example 5",
                 "url": "/plugins/category-help.html"
             }
             , 
@@ -96,7 +105,7 @@
                 "title": "Segmentation",
                 "author": "admin",
                 "category": "admin",
-                "content": "Classic Watershed ",
+                "content": "Classic Watershed",
                 "url": "/plugins/category-segmentation.html"
             }
             , 
@@ -104,7 +113,7 @@
             "plugins-classic-watershed-html": {
                 "title": "Classic Watershed",
                 "author": "Ignacio Arganda-Carreras",
-                "category": "segmentation",
+                "category": "plugins:segmentation",
                 "content": "    Overlay of watershed lines on blurred blobs.Introduction    Schematic overview of watershed flooding in 1D.Classic Watershed is an ImageJ/Fiji plugin to perform watershed segmentation of grayscale 2D/3D images using flooding simulations as described by Pierre Soille and Luc M. Vincent (1990).The basic idea consists of considering the input image as topographic surface and placing a water source in each regional minimum of its relief. Next the entire relief is flooded from the sources and dams are placed where the different water sources meet.All points in the surface at a given minimum constitute the catchment basin associated with that minimum. The watersheds are the zones dividing adjacent catchment basins.The first image points that are reached by water are the points at the lowest grayscale value hmin, then all image pixels are progressively reached up to the highest level hmax.UsageThe Classic Watershed plugin runs on any grayscale image (8, 16 and 32-bit) in 2D and 3D.At least one image needs to be open in order to run the plugin.    Main dialog of the Classic Watershed plugin.Image parameters:  Input image: grayscale image to flood, usually the gradient of an image.  Mask image (optional): binary image of the same dimensions as the input image which can be used to restrict the areas of application of the algorithm. Set to “None” to run the method on the whole input image.Morphological parameters:  Use diagonal connectivity: select to allow the flooding in diagonal directions (8-connectivity in 2D and 26-connectivity in 3D).  Min h: minimum grayscale value to start flooding from (by default, set to the minimum value of the image type).  Max h: maximum grayscale value to reach with flooding (by default, set to the maximum value of the image type).Output:  Labeled image containing the resulting catchment basins (with integer values 1, 2, 3…) and watershed lines (with 0 value).Over-segmentationNormally, Classic Watershed will lead to an over-segmentation of the input image, especially for noisy images with many regional minima. In that case, it is recommended to either pre-process the image before running the plugin, or merge regions based on a similarity criterion afterwards. Several denoising methods are available in Fiji/ImageJ, namely: median filtering, Gaussian blur, bilateral filtering, etc.ExampleThis short macro runs the plugin twice in the blobs sample, first without pre-processing and then after applying a Gaussian blur of radius 3:// load the Blobs sample imagerun(\"Blobs (25K)\");// invert LUT and pixel values to have dark blobsrun(\"Invert LUT\");run(\"Invert\");// run plugin on imagerun(\"Classic Watershed\", \"input=blobs mask=None use min=0 max=150\");// apply LUT to facilitate result visualizationrun(\"3-3-2 RGB\");// pre-process image with Gaussian blurselectWindow(\"blobs.gif\");run(\"Gaussian Blur...\", \"sigma=3\");rename(\"blobs-blur.gif\");// apply plugin on pre-processed imagerun(\"Classic Watershed\", \"input=blobs-blur mask=None use min=0 max=150\");// apply LUT to facilitate result visualizationrun(\"3-3-2 RGB\");                     Gaussian-blurred blobs image used as input (radius = 3).         Watershed segmentation on original image (Min h = 0, Max h = 150).         Watershed segmentation on Gaussian-blurred original image (radius = 3, Min h = 0, Max h = 150).            InstallationThe Classic Watershed plugin is part of the MorphoLibJ library. To install it, you just need to add the IJPB-plugins update site:      Select Help &gt; Update… from the Fiji menu to start the updater.        Click on Manage update sites. This brings up a dialog where you can activate additional update sites.        Activate the IJPB-plugins update site and close the dialog. Now you should see an additional jar file for download.        Click Apply changes and restart Fiji.  You should now find the plugin under the sub-menu Plugins &gt; MorphoLibJ &gt; Segmentation.Note: Classic Watershed is only one of the plugins included in the MorphoLibJ suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.References  Soille, Pierre and Vincent, Luc M (1990). “Determining watersheds in digital pictures via flooding simulations”. Proc. SPIE 1360: 240-250. doi:10.1117/12.24211.See also  Marker-controlled Watershed, a plugin to perform watershed by flooding from specific seed points or markers.  Morphological Segmentation, a plugin with a graphical user interface to segment images based on morphological operations and the watershed algorithm.  Serge Beucher’s site, with graphic descriptions and animations of the watershed algorithms.  G. Bertrand’s Topological Watershed site, with papers, lecture slides and source code.LicenseThis program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.",
                 "url": "/plugins/classic-watershed.html"
             }
@@ -113,7 +122,7 @@
             "plugins-example-1-html": {
                 "title": "Example 1",
                 "author": "Edward Evans",
-                "category": "analysis",
+                "category": "plugins:analysis",
                 "content": "Example 1Analysis",
                 "url": "/plugins/example_1.html"
             }
@@ -122,7 +131,7 @@
             "plugins-example-2-html": {
                 "title": "Example 2",
                 "author": "Mel Hammond",
-                "category": "demo",
+                "category": "plugins:demo",
                 "content": "Example 2Data",
                 "url": "/plugins/example_2.html"
             }
@@ -131,7 +140,7 @@
             "plugins-example-3-html": {
                 "title": "Example 3",
                 "author": "Sam Fuzzy Face",
-                "category": "colocalization",
+                "category": "plugins:colocalization",
                 "content": "Example 3Colocalization",
                 "url": "/plugins/example_3.html"
             }
@@ -140,7 +149,7 @@
             "plugins-example-4-html": {
                 "title": "Example 4",
                 "author": "Wallie the cat",
-                "category": "development",
+                "category": "plugins:development",
                 "content": "Example 4Development",
                 "url": "/plugins/example_4.html"
             }
@@ -149,9 +158,18 @@
             "plugins-example-5-html": {
                 "title": "Example 5",
                 "author": "Dad",
-                "category": "help",
+                "category": "plugins:help",
                 "content": "Example 5",
                 "url": "/plugins/example_5.html"
+            }
+            , 
+        
+            "pages-feature-demo-html": {
+                "title": "Feature Demo",
+                "author": "",
+                "category": "plugins:Demo",
+                "content": "Front matter information:category: type:category (e.g. plugins:development populates the page only under plugins)  Sidebar    Introduction    Left imageRight imageCenter imageFit imageFigure leftFigure rightFigure centerFigure rowMarkdown tableYouTube video IntroductionWhile in Clojure one is able to declare types if desired, it’s not required; the low computational requirements of the plugin do not invite to make it verbose unnecessarily. But java demands type declarations just so that the plugin can be compiled and thus a binary .class file generated. Left imageWhile both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure. Right imageWhile both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure. Center imageWhile both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure. Fit imageWhile both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure. Figure left    Figure legend – LeftWhile both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure. Figure right    Figure legend – RightWhile both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure. Figure center    Figure legend – CenterWhile both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure. Figure rowWhile both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.                     Row legend 1         Row legend 2         Row legend 3             Markdown table            Item 1      Item 2      Item 3                  A      B      C              1      2      3       YouTube video    A table with images, use the .image.table to make it align with text:                  A powerful mechanism for extending ImageJ in all kinds of useful ways.                    Automated, reproducible workflows via scripts and macros, including headless on a remote server or cluster.      ",
+                "url": "/pages/feature_demo.html"
             }
             , 
         
@@ -164,19 +182,19 @@
             }
             , 
         
-            "pages-learn-html": {
+            "learn-html": {
                 "title": "Learn about ImageJ",
                 "author": "",
-                "category": "Demo",
-                "content": "  Sidebar    Introduction    Left imageRight imageCenter imageFit imageFigure leftFigure rightFigure centerFigure rowMarkdown tableYouTube video IntroductionWhile in Clojure one is able to declare types if desired, it’s not required; the low computational requirements of the plugin do not invite to make it verbose unnecessarily. But java demands type declarations just so that the plugin can be compiled and thus a binary .class file generated. Left imageWhile both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure. Right imageWhile both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure. Center imageWhile both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure. Fit imageWhile both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure. Figure left    Figure legend – LeftWhile both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure. Figure right    Figure legend – RightWhile both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure. Figure center    Figure legend – CenterWhile both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure. Figure rowWhile both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.                     Row legend 1         Row legend 2         Row legend 3             Markdown table            Item 1      Item 2      Item 3                  A      B      C              1      2      3       YouTube video    A table with images, use the .image.table to make it align with text:                  A powerful mechanism for extending ImageJ in all kinds of useful ways.                    Automated, reproducible workflows via scripts and macros, including headless on a remote server or cluster.      ",
-                "url": "/pages/learn.html"
+                "category": "admin",
+                "content": "  Use    What is ImageJ?What is Fiji?What does ImageJ provide?How do I get started? What is ImageJImageJ is an open source image processing program for multidimensional image data with a focus on scientific imaging. What is Fiji?Fiji Is Just ImageJ—a “batteries-included” distribution of ImageJ which includes many useful plugins contributed by the community. What does ImageJ provide?                  Image processing, colocalization, deconvolution, registration, segmentation, tracking, visualization and much more.                    A powerful mechanism for extending ImageJ in all kinds of useful ways.                    Automated, reproducible workflows via scripts and macros, including headless on a remote server or cluster.                    A vibrant, diverse, and helpful user community that gives rise to insightful scientific exchanges.      ImageJ’s extensibility is the root of its effectiveness: many advanced image-processing methods are not provided by the core application, but rather are plugins written by specialists in specific fields, made available via update sites. How do I get started?  Get ImageJ from the Downloads page.  Read the Getting started tutorial.  Then peruse the User Guides, additional tutorials, and presentations.",
+                "url": "/learn.html"
             }
             , 
         
             "plugins-math-test-html": {
                 "title": "Math test",
                 "author": "Edward Evans",
-                "category": "demo",
+                "category": "plugins:demo",
                 "content": "  MathJax Example 1Example 2Header 3 MathJax Example 1When  , there are two solutions to  and they areWow such pretty math! Example 2or",
                 "url": "/plugins/math-test.html"
             }
@@ -197,15 +215,6 @@
                 "category": "",
                 "content": "        {% include search-scripts.html %}",
                 "url": "/pages/search.html"
-            }
-            , 
-        
-            "use-html": {
-                "title": "Use ImageJ",
-                "author": "",
-                "category": "admin",
-                "content": "Use[What is ImageJ?](#Introduction)[What is Fiji?](#Fiji)[What does ImageJ provide?](#Functions)[How do I get started?](#Getting started)##  **What is ImageJ**[![ImageJ]({{\"/images/icons/48px-Imagej2-icon.png\" | relative_url}}){: .image.left}](https://imagej.net/ImageJ)ImageJ is an open source image processing program for multidimensional image data with a focus on scientific imaging.##  **What is Fiji?**[![Fiji]({{\"/images/icons/48px-Fiji-icon.png\" | relative_url}}){: .image.left}](https://imagej.net/Fiji)Fiji Is Just ImageJ—a \"batteries-included\" distribution of ImageJ which includes many useful plugins contributed by the community.##  **What does ImageJ provide?**| :---: | :---: || ![Techniques]({{\"/images/icons/techniques_icon.png\" | relative_url}}){: .image.table} | \tImage processing, colocalization, deconvolution, registration, segmentation, tracking, visualization and much more. || ![Plugins]({{\"/images/icons/plugins_icon.png\" | relative_url}}){: .image.table} | A powerful mechanism for extending ImageJ in all kinds of useful ways. | ![Extend]({{\"/images/icons/extend_icon.png\" | relative_url}}){: .image.table} | Automated, reproducible workflows via scripts and macros, including headless on a remote server or cluster. || ![Forum]({{\"/images/icons/forum_icon.png\" | relative_url}}){: .image.table} | A vibrant, diverse, and helpful user community that gives rise to insightful scientific exchanges. |ImageJ's extensibility is the root of its effectiveness: many advanced image-processing methods are not provided by the core application, but rather are plugins written by specialists in specific fields, made available via update sites.##  **How do I get started?**- Get ImageJ from the Downloads page.- Read the Getting started tutorial.- Then peruse the User Guides, additional tutorials, and presentations.",
-                "url": "/use.html"
             }
             , 
         
