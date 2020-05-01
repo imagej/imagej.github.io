@@ -13,9 +13,7 @@ This plugin attempts to determine the average distance between non-randomly spat
 
 '''Installing the Plugin:'''
 
-This plugin requires an additional imglib2 library that does not come by default with ImageJ/FIJI. You can download the file here: https://mvnrepository.com/artifact/net.imglib2/imglib2-script/0.2.3 
-
-Drag and drop the imglib2-script file into the "jars" folder of ImageJ/FIJI, and put the plugin file into the "Plugins" folder.
+Available on the list of update sites in the Fiji updater
 
 '''How it works:'''
 
