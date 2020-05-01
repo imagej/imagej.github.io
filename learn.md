@@ -8,7 +8,7 @@ use_math: false
 
 <div class="sidebar" markdown="1">
 
-Use
+Learn
 <hr>
 [What is ImageJ?](#Introduction)
 [What is Fiji?](#Fiji)

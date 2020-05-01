@@ -1,6 +1,6 @@
 ---
-title: Plugin categories
-breadcrumb: Plugins
+title: Documentation categories
+breadcrumb: Documentation
 layout: page
 ---
 
@@ -16,7 +16,7 @@ layout: page
 
 {% assign site_categories = x | strip_newlines | downcase | split: ' ' | uniq | sort %}
 
-{% for page in site.pages %}{% if page.url contains "category-plugins" %}
+{% for page in site.pages %}{% if page.url contains "category-docs" %}
 <h2><a href="{{page.url}}">{{page.title}}</a></h2>{% endif %}
 {% endfor %}
 
