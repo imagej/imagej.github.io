@@ -2,7 +2,7 @@
 title: Architecture
 breadcrumb: Arhictecture
 author: admin
-category: devdocs:Development
+category: docs:Development
 layout: page
 use_math: false
 ---
