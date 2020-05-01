@@ -11,8 +11,10 @@ Welcome to ImageJ.net! This webpage is still a work in progress.
 - [ ] Add infobox elements
 - [ ] Line numbers for code
 - [ ] Add Edit and view source links to page template
+- [X] Add page/post type to categories
 - [ ] Add supporting pages
-	- [ ] Getting started (/use)
+	- [x] Getting started (/learn.md)
+	- [ ] Architecture (/learn/architecture.md)
 
 
 ## Adding Equations
