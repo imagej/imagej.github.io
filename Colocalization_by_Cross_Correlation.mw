@@ -1,8 +1,8 @@
 {{Infobox
 | software               = Fiji
 | name                   = Colocalization by Cross Correlation
-| maintainer             = {{Andrew|McCall}}
-| author                 = {{Andrew|McCall}}
+| maintainer             = {{Amccall}}
+| author                 = {{Amccall}}
 | source                 = {{GitHub | org=andmccall | repo=Colocalization_by_Cross_Correlation}}
 | status                 = active
 | released               = 2020
