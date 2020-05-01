@@ -24,7 +24,7 @@ Here is a summary of my current projects, in priority order. (Last updated: 2020
 
 # [https://github.com/scijava/scijava-maven-plugin scijava-maven-plugin] populate-app goal.
 # [https://github.com/scijava/pom-scijava pom-scijava] 29.0.0 release.
-# Update [[Fiji]] distribution to use JBRSDK8 version of Java.
+# Update [[Fiji]] distribution to use [https://confluence.jetbrains.com/display/JBR/JetBrains+Runtime JBRSDK8] version of Java.
 # [https://github.com/imagej/pyimagej PyImageJ] 1.0.0 bug-fixes + release.
 # '''[[LOCI]] web server downsizing.''' Retiring obsolete services.
 # [https://openjdk.java.net/projects/jigsaw/ JPMS/Jigsaw] modularization. ([https://github.com/scijava/incubator scijava/incubator])
