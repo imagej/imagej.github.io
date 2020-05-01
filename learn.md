@@ -1,6 +1,6 @@
 ---
-title: Use ImageJ
-breadcrumb: Use
+title: Learn about ImageJ
+breadcrumb: Learn
 layout: page
 category: admin
 use_math: false
