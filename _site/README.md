@@ -3,20 +3,23 @@ ImageJ.net (Experimental)
 
 Welcome to ImageJ.net! This webpage is still a work in progress.
 
-# TODO:
+# TODO (pre-live):
 
 - [X] Math support via Mathjax.
 - [X] UX bread crumbs (top of page)
 - [X] Code syntax highlighting
 - [ ] Add infobox elements
-- [ ] Add Brief description to front matter.
+- [ ] Add brief description to front matter.
 - [ ] Line numbers for code
-- [ ] Add Edit and view source links to page template
+- [X] Add Edit and view source links to page template
 - [X] Add page/post type to categories
 - [ ] Add supporting pages
 	- [x] Getting started (/learn.md)
 	- [ ] Architecture (/learn/architecture.md)
 
+# TODO (post-live):
+
+- [ ] Change base url for "edit" page from jekyll-protoype branch
 
 ## Adding Equations
 
