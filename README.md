@@ -9,6 +9,7 @@ Welcome to ImageJ.net! This webpage is still a work in progress.
 - [X] UX bread crumbs (top of page)
 - [X] Code syntax highlighting
 - [ ] Add infobox elements
+- [ ] Add Brief description to front matter.
 - [ ] Line numbers for code
 - [ ] Add Edit and view source links to page template
 - [X] Add page/post type to categories
