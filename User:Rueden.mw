@@ -20,16 +20,32 @@
 
 === Primary projects ===
 
-Here is a summary of my current projects, in priority order. (Last updated: 2019-Aug-05)
+Here is a summary of my current projects, in priority order. (Last updated: 2020-May-01)
+
+# [https://github.com/scijava/scijava-maven-plugin scijava-maven-plugin] populate-app goal.
+
+# [https://github.com/scijava/pom-scijava pom-scijava] 29.0.0 release.
+
+# Update [[Fiji]] distribution to use JBRSDK8 version of Java.
+
+# [https://github.com/imagej/pyimagej PyImageJ] 1.0.0 bug-fixes + release.
 
 # '''[[LOCI]] web server downsizing.''' Retiring obsolete services.
+
+# [https://openjdk.java.net/projects/jigsaw/ JPMS/Jigsaw] modularization. ([https://github.com/scijava/incubator scijava/incubator])
+
 # '''Document community expectations.''' Formally define and clarify who is responsible for maintaining which plugins, to what extents ([https://forum.image.sc/t/project-developer-roles/206 Project developer roles], [https://github.com/ctrueden/ctr-scripts/blob/master/dev-find ctrueden/ctr-scripts:dev-find], [https://github.com/fiji/fiji/blob/master/bin/team-hints.perl fiji/fiji:bin/team-hints.perl])
-# '''SciJava Common 3.''' ([https://github.com/scijava/scijava-common/compare/sjc3 scijava/scijava-common@sjc3])
+
 # '''ImageJ + Java 8.''' Complete the migration to Java 8 with a Java-6-compatible stub classpath that checks your Java version and tells you how to upgrade to Java 8 if needed. Retire the Java-8 update site, distributing its contents back onto the ImageJ and Fiji update sites.
+
 # '''GitHub issue reporting plugin.''' The Fiji BugZilla and ImageJ Trac are now static content only. The [[Report a Bug]] plugin needs to send reports to GitHub instead. ([https://github.com/scijava/scijava-plugins-issues-github scijava/scijava-plugins-issues-github])
+
 # '''Rich Image.''' Improve the [[ImageJ Common]] data model to support metadata (e.g., spatial transformations) as a first-class citizen. ([https://github.com/imagej/imagej-common/compare/rich imagej/imagej-common@rich], [https://github.com/imagej/janelia-hackathon-2016 imagej/janelia-hackathon-2016])
+
 # '''SCIFIO blockization.''' ([https://github.com/scifio/scifio/issues/283 scifio/scifio#283])
+
 # '''ImageJ Launcher.''' Switch to a JavaFX-based native launcher. Retire the current ImageJ Launcher. ([https://github.com/imagej/imagej-launcher/issues/33 imagej/imagej-launcher#33])
+
 # '''ImageJ Electron app.''' Shared memory between Java, JavaScript and Python. ([https://github.com/imagej/imagej-electron-app imagej/imagej-electron-app])
 
 I am fully committed to all of the above projects. They are driven by me, making progress only when I directly work on them.
@@ -38,8 +54,9 @@ I am fully committed to all of the above projects. They are driven by me, making
 
 I am also coordinating and/or leading and/or advising and/or helping with, but not sole implementer for, the following additional projects:
 
+# (with {{Person|Xanthorapedia}}) '''[[FLIMJ]].'''
 # (with {{Person|gselzer}}) '''SciJava Ops''' ([https://github.com/scijava/scijava-ops scijava/scijava-ops]) and '''[[ImageJ Ops]].'''
-# (with {{Person|Xanthorapedia}}) '''[[SLIM Curve]].'''
+# (with {{Person|elevans}}) New ImageJ web site. ([https://github.com/imagej/imagej.github.io/tree/jekyll-prototype imagej/imagej.github.io])
 # (with {{Person|etarena}}) '''[[Coloc 2]]''' algorithms in [[ImageJ Ops]].
 # (with {{Person|Kharrington}} and {{Person|skalarproduktraum}}) '''ImageJ in 3D.''' Unification of ImageJ 3D visualization efforts around [[SciView]].
 # (with {{Person|Pietzsch}}) '''Visualization of big data.''' Unification of visualization in general around the [[BigDataViewer]]. ([https://github.com/imagej/imagej-common/issues/66 imagej/imagej-common#66])
