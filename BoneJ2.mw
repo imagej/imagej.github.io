@@ -468,7 +468,7 @@ A 2D or 3D binary image.
 * '''Show ellipsoids (3D)''': display best-fit ellipsoids in a 3D Viewer window
 * '''Show size stack''': display an image with particles labelled by their volume
 * '''Show surfaces (3D)''': display particles' surface meshes in a 3D Viewer window
-* '''Show axes (3D)''': display principal axes (from moments of inertia) in a 3D Viewer window
+* '''Show axes (3D)''': display principal axes (from moments of inertia) and Feret axes, if they were selected to be calculated, in a 3D Viewer window
 * '''Show stack (3D)''': display the original binary stack in a 3D Viewer window
 * '''Surface colours''':
 ** '''Gradient''': Each particle gets a unique colour between red and green
