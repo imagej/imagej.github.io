@@ -487,6 +487,13 @@ A 2D or 3D binary image.
 ** '''y Cent''': y-coordinate of particle centroid
 ** '''z Cent''': z-coordinate of particle centroid
 ** '''SA''': surface area (0 if too small for mesh to be produced; see warning log)
+** '''Feret''': maximum caliper diameter
+** '''FeretAx''': x co-ordinate of the first point of the maximum caliper diameter
+** '''FeretAy''': y co-ordinate of the first point of the maximum caliper diameter
+** '''FeretAz''': z co-ordinate of the first point of the maximum caliper diameter
+** '''FeretBx''': x co-ordinate of the second point of the maximum caliper diameter
+** '''FeretBy''': y co-ordinate of the second point of the maximum caliper diameter
+** '''FeretBz''': z co-ordinate of the second point of the maximum caliper diameter
 ** '''Encl. Vol''': Volume enclosed by surface mesh (0 if too small for mesh to be produced; see warning log)
 ** '''I1''': moment of inertia around shortest principal axis
 ** '''I2''': moment of inertia around middle principal axis
