@@ -2,7 +2,7 @@
 | name                   = 3D ImageJ Suite
 | software               = 3DSuite
 | update site            = 3D ImageJ Suite
-| author                 = {{Person|Tboudier}}
+| author                 = {{Person|Tboudier}}, Jean Ollion
 | maintainer             = [https://github.com/mcib3d Thomas Boudier] 
 | source                 = {{GitHub|org=mcib3d|repo=mcib3d-core}}
 | released               = 25/09/2012, V2.0
