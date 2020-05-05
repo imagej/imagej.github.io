@@ -442,6 +442,8 @@ Particle Analyser performs connected-components labelling. It started life as an
 
 A member of our group wished to study osteocyte lacunae in synchrotron microCT images, so the Particle Analyser was born from Purify's particle labelling algorithm. Other groups use Particle Analyser for soil analysis; it could be used for any porous media. Particle Analyser labels unique (unconnected) particles, then analyses each particle separately. Substantial use is made of other plugins in BoneJ, including Connectivity to get the Euler characteristic, Isosurface to get the surface area and Thickness to get the local thickness of individual particles.
 
+If you use it in your published work, please cite Doube M. 2020 Multithreaded two-pass connected components labelling and particle analysis in ImageJ. bioRxiv , 2020.02.28.969139. (doi:10.1101/2020.02.28.969139) [https://doi.org/10.1101/2020.02.28.969139]
+
 ==== Suitable images ====
 A 2D or 3D binary image.
 
