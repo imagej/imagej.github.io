@@ -15,7 +15,7 @@
         <a href="/index">Home</a>
         <a href="/pages/search" class="icon solid fa-search">Search</a>
         <a href="/learn">Use</a>
-        <a href="#">Extend</a>
+        <a href="/docs">Docs</a>
         <a href="/plugins">Plugins</a>
     </div>
 </section>
@@ -47,66 +47,75 @@
             }
             , 
         
-            "learn-architecture-html": {
+            "docs-architecture-html": {
                 "title": "Architecture",
                 "author": "admin",
-                "category": "devdocs:Development",
-                "content": "  Header 1Header 2Header 3 Header 1Enter text.Sub-heading 1Enter text. Header 2Enter text.Sub-heading 2Enter text. Header 3",
-                "url": "/learn/architecture.html"
+                "category": "docs:Development",
+                "content": "  Header 1Header 2Header 3 Header 1Enter text.Sub-heading 1Enter text. Header 2Enter text.Sub-heading 2Enter text. Header 3▶",
+                "url": "/docs/architecture.html"
             }
             , 
         
-            "plugins-category-analysis-html": {
+            "docs-category-docs-development-html": {
+                "title": "Development",
+                "author": "admin",
+                "category": "docs:admin",
+                "content": "Architecture",
+                "url": "/docs/category-docs-development.html"
+            }
+            , 
+        
+            "plugins-category-plugins-analysis-html": {
                 "title": "Analysis",
                 "author": "admin",
                 "category": "admin",
                 "content": "3D ViewerExample 1",
-                "url": "/plugins/category-analysis.html"
+                "url": "/plugins/category-plugins-analysis.html"
             }
             , 
         
-            "plugins-category-colocalization-html": {
+            "plugins-category-plugins-colocalization-html": {
                 "title": "Colocalization",
                 "author": "admin",
                 "category": "admin",
                 "content": "Example 3",
-                "url": "/plugins/category-colocalization.html"
+                "url": "/plugins/category-plugins-colocalization.html"
             }
             , 
         
-            "plugins-category-demo-html": {
+            "plugins-category-plugins-demo-html": {
                 "title": "Demo",
                 "author": "admin",
                 "category": "admin",
                 "content": "Example 2Feature DemoMath test",
-                "url": "/plugins/category-demo.html"
+                "url": "/plugins/category-plugins-demo.html"
             }
             , 
         
-            "plugins-category-development-html": {
+            "plugins-category-plugins-development-html": {
                 "title": "Development",
                 "author": "admin",
                 "category": "admin",
                 "content": "Example 4",
-                "url": "/plugins/category-development.html"
+                "url": "/plugins/category-plugins-development.html"
             }
             , 
         
-            "plugins-category-help-html": {
+            "plugins-category-plugins-help-html": {
                 "title": "Help",
                 "author": "admin",
                 "category": "admin",
                 "content": "Example 5",
-                "url": "/plugins/category-help.html"
+                "url": "/plugins/category-plugins-help.html"
             }
             , 
         
-            "plugins-category-segmentation-html": {
+            "plugins-category-plugins-segmentation-html": {
                 "title": "Segmentation",
                 "author": "admin",
                 "category": "admin",
                 "content": "Classic Watershed",
-                "url": "/plugins/category-segmentation.html"
+                "url": "/plugins/category-plugins-segmentation.html"
             }
             , 
         
@@ -116,6 +125,15 @@
                 "category": "plugins:segmentation",
                 "content": "    Overlay of watershed lines on blurred blobs.Introduction    Schematic overview of watershed flooding in 1D.Classic Watershed is an ImageJ/Fiji plugin to perform watershed segmentation of grayscale 2D/3D images using flooding simulations as described by Pierre Soille and Luc M. Vincent (1990).The basic idea consists of considering the input image as topographic surface and placing a water source in each regional minimum of its relief. Next the entire relief is flooded from the sources and dams are placed where the different water sources meet.All points in the surface at a given minimum constitute the catchment basin associated with that minimum. The watersheds are the zones dividing adjacent catchment basins.The first image points that are reached by water are the points at the lowest grayscale value hmin, then all image pixels are progressively reached up to the highest level hmax.UsageThe Classic Watershed plugin runs on any grayscale image (8, 16 and 32-bit) in 2D and 3D.At least one image needs to be open in order to run the plugin.    Main dialog of the Classic Watershed plugin.Image parameters:  Input image: grayscale image to flood, usually the gradient of an image.  Mask image (optional): binary image of the same dimensions as the input image which can be used to restrict the areas of application of the algorithm. Set to “None” to run the method on the whole input image.Morphological parameters:  Use diagonal connectivity: select to allow the flooding in diagonal directions (8-connectivity in 2D and 26-connectivity in 3D).  Min h: minimum grayscale value to start flooding from (by default, set to the minimum value of the image type).  Max h: maximum grayscale value to reach with flooding (by default, set to the maximum value of the image type).Output:  Labeled image containing the resulting catchment basins (with integer values 1, 2, 3…) and watershed lines (with 0 value).Over-segmentationNormally, Classic Watershed will lead to an over-segmentation of the input image, especially for noisy images with many regional minima. In that case, it is recommended to either pre-process the image before running the plugin, or merge regions based on a similarity criterion afterwards. Several denoising methods are available in Fiji/ImageJ, namely: median filtering, Gaussian blur, bilateral filtering, etc.ExampleThis short macro runs the plugin twice in the blobs sample, first without pre-processing and then after applying a Gaussian blur of radius 3:// load the Blobs sample imagerun(\"Blobs (25K)\");// invert LUT and pixel values to have dark blobsrun(\"Invert LUT\");run(\"Invert\");// run plugin on imagerun(\"Classic Watershed\", \"input=blobs mask=None use min=0 max=150\");// apply LUT to facilitate result visualizationrun(\"3-3-2 RGB\");// pre-process image with Gaussian blurselectWindow(\"blobs.gif\");run(\"Gaussian Blur...\", \"sigma=3\");rename(\"blobs-blur.gif\");// apply plugin on pre-processed imagerun(\"Classic Watershed\", \"input=blobs-blur mask=None use min=0 max=150\");// apply LUT to facilitate result visualizationrun(\"3-3-2 RGB\");                     Gaussian-blurred blobs image used as input (radius = 3).         Watershed segmentation on original image (Min h = 0, Max h = 150).         Watershed segmentation on Gaussian-blurred original image (radius = 3, Min h = 0, Max h = 150).            InstallationThe Classic Watershed plugin is part of the MorphoLibJ library. To install it, you just need to add the IJPB-plugins update site:      Select Help &gt; Update… from the Fiji menu to start the updater.        Click on Manage update sites. This brings up a dialog where you can activate additional update sites.        Activate the IJPB-plugins update site and close the dialog. Now you should see an additional jar file for download.        Click Apply changes and restart Fiji.  You should now find the plugin under the sub-menu Plugins &gt; MorphoLibJ &gt; Segmentation.Note: Classic Watershed is only one of the plugins included in the MorphoLibJ suite. By following these installation steps, you will be installing as well the rest of plugins in the suite.References  Soille, Pierre and Vincent, Luc M (1990). “Determining watersheds in digital pictures via flooding simulations”. Proc. SPIE 1360: 240-250. doi:10.1117/12.24211.See also  Marker-controlled Watershed, a plugin to perform watershed by flooding from specific seed points or markers.  Morphological Segmentation, a plugin with a graphical user interface to segment images based on morphological operations and the watershed algorithm.  Serge Beucher’s site, with graphic descriptions and animations of the watershed algorithms.  G. Bertrand’s Topological Watershed site, with papers, lecture slides and source code.LicenseThis program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.",
                 "url": "/plugins/classic-watershed.html"
+            }
+            , 
+        
+            "docs-html": {
+                "title": "Documentation categories",
+                "author": "",
+                "category": "",
+                "content": "  Development",
+                "url": "/docs.html"
             }
             , 
         
@@ -186,7 +204,7 @@
                 "title": "Learn about ImageJ",
                 "author": "",
                 "category": "admin",
-                "content": "  Use    What is ImageJ?What is Fiji?What does ImageJ provide?How do I get started? What is ImageJImageJ is an open source image processing program for multidimensional image data with a focus on scientific imaging. What is Fiji?Fiji Is Just ImageJ—a “batteries-included” distribution of ImageJ which includes many useful plugins contributed by the community. What does ImageJ provide?                  Image processing, colocalization, deconvolution, registration, segmentation, tracking, visualization and much more.                    A powerful mechanism for extending ImageJ in all kinds of useful ways.                    Automated, reproducible workflows via scripts and macros, including headless on a remote server or cluster.                    A vibrant, diverse, and helpful user community that gives rise to insightful scientific exchanges.      ImageJ’s extensibility is the root of its effectiveness: many advanced image-processing methods are not provided by the core application, but rather are plugins written by specialists in specific fields, made available via update sites. How do I get started?  Get ImageJ from the Downloads page.  Read the Getting started tutorial.  Then peruse the User Guides, additional tutorials, and presentations.",
+                "content": "  Learn    What is ImageJ?What is Fiji?What does ImageJ provide?How do I get started? What is ImageJImageJ is an open source image processing program for multidimensional image data with a focus on scientific imaging. What is Fiji?Fiji Is Just ImageJ—a “batteries-included” distribution of ImageJ which includes many useful plugins contributed by the community. What does ImageJ provide?                  Image processing, colocalization, deconvolution, registration, segmentation, tracking, visualization and much more.                    A powerful mechanism for extending ImageJ in all kinds of useful ways.                    Automated, reproducible workflows via scripts and macros, including headless on a remote server or cluster.                    A vibrant, diverse, and helpful user community that gives rise to insightful scientific exchanges.      ImageJ’s extensibility is the root of its effectiveness: many advanced image-processing methods are not provided by the core application, but rather are plugins written by specialists in specific fields, made available via update sites. How do I get started?  Get ImageJ from the Downloads page.  Read the Getting started tutorial.  Then peruse the User Guides, additional tutorials, and presentations.",
                 "url": "/learn.html"
             }
             , 
