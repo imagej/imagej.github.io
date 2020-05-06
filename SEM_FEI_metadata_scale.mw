@@ -1,0 +1,16 @@
+== '''Overview''' ==
+This tool reads FEI SEM acquistion metadata from tiff tags and set image scale based on pixel size. 
+
+Note: This macro use Bio-formats plugin to read metadata. FIJI should include the plugin in default. Otherwise, install Bio-formats manually in ImageJ. 
+
+
+== '''How to use''' ==
+
+1. Open a “.tif” file acquired from a FEI SEM/FIB (currently acquired by Thermofisher), and make the image window active. Note that the image dimensions are not calibrated.
+
+
+
+2. Click “SEM/FEI SEM metadata Scale”, the metadata for the image will be displayed in the log window.
+
+
+3. The image dimensions are also calibrated based on the pixel size in the metadata. Scale bar can be added using the ImageJ tool “Analyze/Tools/Scale Bar…”.
