@@ -1,0 +1,9 @@
+
+== MULTIFRAC ==
+Multifrac is an ImageJ plugin for the analysis and characterization of 2D and 3D stack images. This tool is specifically designated for the analysis of soil pore structure and scaling behaviour and patterns therein. Main features of Multifrac are:
+* Monofractal analysis of black and white images
+* Multifractal analysis with box counting and gliding box methodologies ofr gray images.
+* Lacunarity analysis
+* Characteristic  length  and  configuration  entropy  analysis.
+
+This  plugin  has  extensively  used  with  real  soil samples and results published in high impact factor journals.
