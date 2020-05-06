@@ -2,7 +2,7 @@
 
 This is a suite of ImageJ plugins that are used for processing images acquired from electron microscopes. Currently mainly focus on SEM images, but will keep working on streamline the image processing of both SEM and TEM data.
 
-[[zhou.xu@monash.edu|Zhou XU]] @2020.
+Zhou XU @2020.
 Monash Centre for Electron Microscopy
 
 == '''Components and Functions''' ==
