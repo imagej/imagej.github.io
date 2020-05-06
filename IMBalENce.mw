@@ -1,9 +1,22 @@
+{{Infobox Plugin
+| software               = ImageJ/FIJI
+| name                   = EM tool
+| maintainer             = [mailto:zhou.xu@monash.edu Zhou Xu]
+| author                 = Zhou XU and Nick McDougall
+Monash Centre for Electron Microscopy
+| source                 = https://github.com/IMBalENce/EM-tool
+| released               = 06/05/2020
+| latest version         = 06/05/2020
+| status                 = 
+| category               = [[:Category:Plugins]]
+| website                = https://github.com/IMBalENce/EM-tool
+}}
+
 == '''Overview''' ==
 
 This is a suite of ImageJ plugins that are used for processing images acquired from electron microscopes. Currently mainly focus on SEM images, but will keep working on streamline the image processing of both SEM and TEM data.
 
-Zhou XU @2020.
-Monash Centre for Electron Microscopy
+
 
 == '''Components and Functions''' ==
 
