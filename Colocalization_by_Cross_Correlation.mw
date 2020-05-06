@@ -9,11 +9,11 @@
 | category               = [[:Category:Plugins]], [[:Category:Colocalization]]
 }}
 
-This plugin attempts to determine the average distance between non-randomly spatially associated particles, the standard deviation of that distance (which should also reflect the width of the PSF in the image for diffraction limited images), and a statistical measure of confidence of the association. It currently works on 2D or 3D images, and requires a mask of all possible localizations for the signal in one of the images. 
+This plugin attempts to determine the average distance between non-randomly spatially associated particles, the standard deviation of that distance (which should also reflect the width of the PSF in the image for diffraction limited images), and a statistical measure of confidence of the association. It currently works on 2D/3D single-channel images, and requires a mask of all possible localizations for the signal in one of the images. 
 
 '''Installing the Plugin:'''
 
-Soon will be available on the list of update sites in the Fiji updater
+Will soon be available on the list of update sites in the Fiji updater
 
 '''How it works:'''
 
