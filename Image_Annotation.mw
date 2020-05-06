@@ -1,0 +1,8 @@
+== '''Overview''' ==
+This tool measures and marks the size of features. It annotates the length of line tool in a cabibrated image and export measurement results.
+
+== '''How to use''' ==
+
+1. Once image is calibrated. Use “Straight line” tool to drag a line across a feature and click “Image Annotation”. The length of line will be annotated on the image. 
+
+2. If multiple measurements are performed, the summary of length measurements is displayed in the results window.
