@@ -2,8 +2,9 @@
 | software               = ImageJ/FIJI
 | name                   = EM tool
 | maintainer             = [mailto:zhou.xu@monash.edu Zhou Xu]
-| author                 = Zhou XU and Nick McDougall
-Monash Centre for Electron Microscopy
+| author                 = Zhou XU 
+Nick McDougall 
+
 | source                 = https://github.com/IMBalENce/EM-tool
 | released               = 30/08/2018
 | latest version         = 06/05/2020
@@ -15,10 +16,6 @@ Monash Centre for Electron Microscopy
 
 This is a suite of ImageJ plugins that are used for processing images acquired from electron microscopes. Currently mainly focus on SEM images, but will keep working on streamline the image processing of both SEM and TEM data.
 
-Zhou XU @2020.
-
-Monash Centre for Electron Microscopy
-
 == '''Components and Functions''' ==
 
 # [[SEM FEI metadata scale|SEM FEI metadata and scale]] is a tool that read FEI SEM acquistion metadata from tiff tags and set image scale based on pixel size.
@@ -28,6 +25,34 @@ Monash Centre for Electron Microscopy
 
 == '''Installation''' ==
 
-# [https://fiji.sc FIJI] (Fiji Is Just ImageJ) should be installed on your computer. 
+=== Installation via FIJI updater ===
 
-# Click “Help / Update…” to open the FIJI updater. If it’s the first time updating your FIJI, it might take some time to download the update files and may also require to restart FIJI a few times. Once done, click “Help / Update…” again to bring up the ImageJ updater window.
+1. [https://fiji.sc FIJI] (Fiji Is Just ImageJ) should be installed on your computer. 
+
+2. Click “Help / Update…” to open the FIJI updater. If it’s the first time updating your FIJI, it might take some time to download the update files and may also require to restart FIJI a few times. Once done, click “Help / Update…” again to bring up the ImageJ updater window.
+
+[[File:EMtool_01.jpg|350px|center]]
+
+3. Click “Manage update sites”. 
+
+[[File:EMtool_02.jpg|500px|center]]
+
+4. Click “Add update site”.
+
+5. Type in Name "EM tool", URL "https://imagej.net/IMBalENce/"
+
+[[File:EMtool_03.jpg|500px|center]]
+
+6 Close the ''Manage Update Sites'' window and click the ''Apply Changes'' button on the ''ImageJ Updater Window''
+
+7. Once update is completed, restart FIJI. You should be able to see the plugins "EM tool" installed in the top toolbar.
+
+Note: Currently working on adding the plugin to update site list, so you will be able to tick the plugin and install in the future.
+
+=== Manual Installation ===
+
+If you only want to use one of the plugins you can follow these steps:
+# The source code of these macro scripts can be viewed on the [https://github.com/IMBalENce/EM-tool my github page].
+# Download the plugin you want.
+# Save .ijm files in the desired location within your imageJ application
+# Go to "Plugins/Macros/install..." to add the macros
