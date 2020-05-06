@@ -56,7 +56,7 @@ Note: Currently working on adding the plugin to update site list, so you will be
 == Manual Installation ==
 
 If you only want to use one of the plugins you can follow these steps:
-# The source code of these macro scripts can be viewed on the [https://github.com/IMBalENce/EM-tool my github page].
-# Download the plugin you want.
-# Save .ijm files in the desired location within your imageJ application
-# Go to "Plugins/Macros/install..." to add the macros
+1. The source code of these macro scripts can be viewed on the [https://github.com/IMBalENce/EM-tool my github page].
+2. Download the plugin you want.
+3. Save .ijm files in the desired location within your imageJ application
+4. Go to "Plugins/Macros/install..." to add the macros
