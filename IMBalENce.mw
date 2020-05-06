@@ -16,11 +16,13 @@ Nick McDougall
 
 This is a suite of ImageJ plugins that are used for processing images acquired from electron microscopes. Currently mainly focus on SEM images, but will keep working on streamline the image processing of both SEM and TEM data.
 
-= '''Components and Functions''' =
+== '''Components and Functions''' ==
 
 # [[SEM FEI metadata scale|SEM FEI metadata and scale]] is a tool that read FEI SEM acquistion metadata from tiff tags and set image scale based on pixel size.
-# [SEM FEI databar cut] is a tool that cut the databar from FEI SEM images, then save image and databar as individual files.
+# [[SEM FEI databar cut|SEM FEI databar cut]] is a tool that cut the databar from FEI SEM images, then save image and databar as individual files.
 # [[SEM JOEL Scale|SEM JOEL Scale]] sets image scale based on pixel size store in the .txt file associated with SEM image.
+# [[SEM Zeiss metadata Scale|SEM Zeiss Scale]] Upcoming soon...
+# [[SEM Hitachi metadata Scale|SEM Hitachi Scale]] Upcoming soon...
 # [[Image Annotation|Image feature measurement annotation]] is a tool to measure and mark the size of features. It annotates the length of line tool in a cabibrated image and export measurement results. 
 
 = '''Installation''' =
