@@ -47,7 +47,7 @@ This is a suite of ImageJ plugins that are used for processing images acquired f
 
 [[File:EMtool_03.jpg|500px|center]]
 
-6 Close the ''Manage Update Sites'' window and click the ''Apply Changes'' button on the ''ImageJ Updater Window''
+6 Close the "Manage Update Sites" window and click the "Apply Changes" button on the "ImageJ Updater Window".
 
 7. Once update is completed, restart FIJI. You should be able to see the plugins "EM tool" installed in the top toolbar.
 
