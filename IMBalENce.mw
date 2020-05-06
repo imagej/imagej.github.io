@@ -1,11 +1,15 @@
 == '''Overview''' ==
 
+This is a suite of ImageJ plugins that are used for processing images acquired from electron microscopes. Currently mainly focused on SEM images, but will keep working on streamline the image processing of both SEM and TEM data.
+
 Zhou XU @2020
 Monash Centre for Electron Microscopy
 
 == '''Components and Functions''' ==
-FEI SEM metadata and scale tool
-
+[[SEM FEI metadata and scale]]
+[[SEM FEI databar cut]]
+[[SEM JOEL Scale]]
+[[Image feature measurement annotation]]
 
 == '''How to Use''' ==
 View Instructions with Screenshots Here:
