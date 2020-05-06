@@ -6,10 +6,12 @@ Zhou XU @2020.
 Monash Centre for Electron Microscopy
 
 == '''Components and Functions''' ==
-# [[SEM FEI metadata and scale]].
-# [[SEM FEI databar cut]].
-# [[SEM JOEL Scale]]
-# [[Image feature measurement annotation]]
+
+
+# [[SEM FEI metadata scale|SEM FEI metadata and scale]].
+# [[SEM FEI databar cut|SEM FEI databar cut]].
+# [[SEM JOEL Scale|SEM JOEL Scale]]
+# [[Image Annotation|Image feature measurement annotation]]
 
 == '''How to Install''' ==
 View Instructions with Screenshots Here:
