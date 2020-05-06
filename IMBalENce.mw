@@ -12,20 +12,20 @@ Nick McDougall
 | category               = [[:Category:Plugins]]
 | website                = https://github.com/IMBalENce/EM-tool
 }}
-== '''Overview''' ==
+= '''Overview''' =
 
 This is a suite of ImageJ plugins that are used for processing images acquired from electron microscopes. Currently mainly focus on SEM images, but will keep working on streamline the image processing of both SEM and TEM data.
 
-== '''Components and Functions''' ==
+= '''Components and Functions''' =
 
 # [[SEM FEI metadata scale|SEM FEI metadata and scale]] is a tool that read FEI SEM acquistion metadata from tiff tags and set image scale based on pixel size.
 # [[SEM FEI databar cut|SEM FEI databar cut]] is a tool that cut the databar from FEI SEM images, then save image and databar as individual files.
 # [[SEM JOEL Scale|SEM JOEL Scale]] sets image scale based on pixel size store in the .txt file associated with SEM image.
 # [[Image Annotation|Image feature measurement annotation]] is a tool to measure and mark the size of features. It annotates the length of line tool in a cabibrated image and export measurement results. 
 
-== '''Installation''' ==
+= '''Installation''' =
 
-=== Installation via FIJI updater ===
+== Installation via FIJI updater ==
 
 1. [https://fiji.sc FIJI] (Fiji Is Just ImageJ) should be installed on your computer. 
 
@@ -49,7 +49,7 @@ This is a suite of ImageJ plugins that are used for processing images acquired f
 
 Note: Currently working on adding the plugin to update site list, so you will be able to tick the plugin and install in the future.
 
-=== Manual Installation ===
+== Manual Installation ==
 
 If you only want to use one of the plugins you can follow these steps:
 # The source code of these macro scripts can be viewed on the [https://github.com/IMBalENce/EM-tool my github page].
