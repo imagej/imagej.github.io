@@ -6,6 +6,7 @@
 | author                 = [https://www.ivangtorre.com/ Ivan G Torre]
 | released               = 06.05.2020
 | latest version         = 06.05.2020
+| source                 = {{GitHub|org=ivangtorre|repo=multifrac}}
 | category               = [[:Category:Plugins|Plugins]]
 | website                = http://imagej.net/Multifrac
 | category       = [[:Category:Analysis|Analysis]], [[:Category:Citable|Citable]], [[:Category:Feature Extraction|Feature Extraction]], [[:Category:ImageJ2|ImageJ2]], [[:Category:Mathematical morphology|Mathematical morphology]], [[:Category:Plugins|Plugins]], [[:Category:Stacks|Stacks]]
@@ -13,6 +14,10 @@
 }}
 
 __TOC__
+
+
+
+'''Multifrac''' is a plugin for fractal, multifractal and scaling analysis and characterization of 2D and 3D gray and B&W stack images
 
 
 == Citation ==
