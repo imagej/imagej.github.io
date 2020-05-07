@@ -17,7 +17,7 @@ __TOC__
 
 == Citation ==
 Please when using the plugin, cite:
-:* I. G. Torre et al.,  '''MULTIFRAC: An ImageJ plugin for multifractal and multiscale characterization of 2D and 3D stack images''', ''preprint''.
+:* I. G. Torre and A. M. Tarquis,  '''MULTIFRAC: An ImageJ plugin for multifractal and multiscale characterization of 2D and 3D stack images''', ''preprint''.
 
 == Installation ==
 Run {{bc|Help|Update...}} and choose ''Manage update sites''. Activate the ''Multifrac'' checkbox in the alphabetically-sorted list of update sites. Press ''OK'', then ''Apply changes''. Restart ImageJ. That's it. Enjoy Multifrac!
