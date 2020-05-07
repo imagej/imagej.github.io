@@ -17,6 +17,8 @@ This is a suite of ImageJ plugins that are used for processing images acquired f
 
 = '''Components and Functions''' =
 
+Click the links below to find more about each tool.
+
 # [[SEM FEI metadata scale|SEM FEI metadata and scale]] is a tool that read FEI SEM acquisition metadata from tiff tags and set image scale based on pixel size.
 # [[SEM FEI databar cut|SEM FEI databar cut]] is a tool that cut the databar from FEI SEM images, then save image and databar as individual files.
 # [[SEM JOEL Scale|SEM JOEL Scale]] sets image scale based on pixel size store in the .txt file associated with SEM image.
