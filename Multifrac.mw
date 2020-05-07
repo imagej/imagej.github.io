@@ -7,7 +7,7 @@
 | released               = 06.05.2020
 | latest version         = 06.05.2020
 | category               = [[:Category:Plugins|Plugins]]
-| website                = http://wiki.imagej.net/Multifrac
+| website                = http://imagej.net/Multifrac
 | category       = [[:Category:Analysis|Analysis]], [[:Category:Citable|Citable]], [[:Category:Feature Extraction|Feature Extraction]], [[:Category:ImageJ2|ImageJ2]], [[:Category:Mathematical morphology|Mathematical morphology]], [[:Category:Plugins|Plugins]], [[:Category:Stacks|Stacks]], [[:Category:ImageJ2|ImageJ2]]
 
 }}
@@ -30,3 +30,8 @@ Multifrac is an ImageJ plugin for the analysis and characterization of 2D and 3D
 * Characteristic  length  and  configuration  entropy  analysis.
 
 This  plugin  has  extensively  used  with  real  soil samples and results published in high impact factor journals.
+
+== Changelog ==
+All changes can be seen in the [https://github.com/ivangtorre/multifrac/commits/master GitHub source repository].
+
+'''2020/05/06''': First released
