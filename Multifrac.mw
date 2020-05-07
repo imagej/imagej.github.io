@@ -1,4 +1,22 @@
 
+{{Infobox
+| software               = ImageJ / Fiji plugins
+| name                   = Multifrac
+| maintainer             = Ivan G Torre
+| author                 = Ivan G Torre
+| released               = 06.05.2020
+| latest version         = 06.05.2020
+| category               = [[:Category:Plugins|Plugins]]
+| website                = http://wiki.imagej.net/Multifrac
+| category       = [[:Category:Analysis|Analysis]], [[:Category:Citable|Citable]], [[:Category:Feature Extraction|Feature Extraction]], [[:Category:ImageJ2|ImageJ2]], [[:Category:Mathematical morphology|Mathematical morphology]], [[:Category:Plugins|Plugins]], [[:Category:Stacks|Stacks]], [[:Category:ImageJ2|ImageJ2]]
+
+}}
+
+__TOC__
+
+
+
+
 == MULTIFRAC ==
 Multifrac is an ImageJ plugin for the analysis and characterization of 2D and 3D stack images. This tool is specifically designated for the analysis of soil pore structure and scaling behaviour and patterns therein. Main features of Multifrac are:
 * Monofractal analysis of black and white images
