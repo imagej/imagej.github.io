@@ -3,7 +3,7 @@
 | name                   = EM tool
 | maintainer             = [mailto:zhou.xu@monash.edu Zhou Xu]
 | author                 = Zhou XU 
-Monash Centre for Electron Microscopy
+@Monash Centre for Electron Microscopy
 | source                 = https://github.com/IMBalENce/EM-tool
 | released               = 30/08/2018
 | latest version         = 06/05/2020
