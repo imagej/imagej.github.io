@@ -27,11 +27,15 @@ Description :
 By default, this plugin extracts data from the Results Table and adds it to a sheet-tab "A" in an .xlsx Excel file on the user's desktop. The plugin will create a file named "Rename me after writing is done" on the desktop if none-exists already, and will update this file if it has already been created. Data is added to the latest sheet (created as "A" if the file is new) or to a user specified sheet using a passed argument (see below). Within the latest sheet, data will be added adjacent to previous data, unless an argument is passed to stack data underneath pre-existing column headers and data. Results Table column headers are added automatically. A row count is added by default but the user can choose to deny this with a passed argument.
 
 This plugin can be called from a macro using:
-run("Read and Write Excel"); 
+
+run("Read and Write Excel");
+
 and it works very well with batching. A major change for v1.1.0, is that, if called slightly differently (see below), the plugin is now much better at handling large data sets and/or excel files that become large over time.
 
 The title of the '''most recent''' open image will now be added as a label for exported results data by default, instead of the first open image. An argument function can also be used to overwrite this, so that the user may provide their own title for each export:
+
 run("Read and Write Excel", "dataset_label=[This is my new title]");
+
 Please note, the provided title can contain spaces if they are within the brackets.
 
 OPTIONAL ARGUMENTS will be parsed from the second argument string as follows. 
@@ -46,7 +50,7 @@ OPTIONAL ARGUMENTS will be parsed from the second argument string as follows.
 
 "dataset_label=" The label to write in the cell above the data in the excel file. Example "dataset_label=[My new results data label]" will use the specified title. Strings and numbers can still be fed to the custom title modifier from a loop but avoid introducing spaces e.g "dataset_label=Table_" + i
 
-Join arguments as follows: run("Read and Write Excel", "no_count_column file=[/Users/antinos/Documents/My_cool_file.xlsx] sheet=[Custom name here] dataset_label=[Custom data title here]".
+Join arguments as follows: run("Read and Write Excel", "no_count_column file=[/Users/antinos/Documents/My_cool_file.xlsx] sheet=[Custom name here] dataset_label=[Custom data title here]");
 
 "file_mode=" This requires a slightly different way of calling the plugin but '''is very useful for expected large datasets'''. There are three options. "file_mode=read_and_open" Will just open an excel file (the one you specify with file=)...make sure you do write_and_close when you're done or you'll have problems. 
 "file_mode=write_and_close" Will just write everything you've queued with queue_write, then close the excel file. 
