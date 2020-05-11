@@ -21,9 +21,9 @@ Available on the list of [[Update Sites|ImageJ updates sites]]. Requires Fiji.
 
 The plugin performs a cross-correlation in frequency space to create a correlation image. To remove non-specific correlations (from background, or high signal density), a correlation image generated from randomized images is then subtracted from the original correlation image. This occurs through cycles of:
  
-1. Randomizing Image1 using a Costes Randomization method, and a mask of all theoretically possible localizations for the signal in Image1 (i.e. a mask of the cells, or the nuclei).
+1. Randomizing Image1 using the [[Media:Costes etalColoc.pdf|Costes randomization method]] and a mask of all theoretically possible localizations for the signal in Image1 (i.e. a mask of the cells, or the nuclei).
 
-2. Calculating the cross-correlation of the randomized image with Image2 and averaging this over successive cycles.
+2. Calculating the cross-correlation of the randomized image with Image2, then averaging this over successive cycles.
 
 After the subtraction of non-specific correlations, we generate a radial profile of this data and fit a gaussian curve to it, showing the correlation between the images at different offsets. We also generate a radial profile for the original correlation data before subtraction, as this is needed to establish a measure of confidence. The confidence is calculated as the area under the curve (AUC) of the subtracted correlation radial profile (in the range of mean ± 3×sigma) divided by the AUC of the original correlation radial profile (in same range) as a percentage. The confidence value, along with the mean and sigma of the gaussian fit are displayed in a log window. Higher values of confidence, closer to 100, indicate that two images very likely have a true spatial correlation at the indicated distance.
 
