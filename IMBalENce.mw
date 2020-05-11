@@ -1,7 +1,7 @@
 {{Infobox Plugin
 | software               = ImageJ/FIJI
 | name                   = EM tool
-| maintainer             = 
+| maintainer             = [[zhou.xu@monash.edu|Zhou Xu]] 
 | author                 = Zhou XU 
 @Monash Centre for Electron Microscopy
 | source                 = https://github.com/IMBalENce/EM-tool
