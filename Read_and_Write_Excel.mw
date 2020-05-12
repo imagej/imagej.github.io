@@ -215,22 +215,22 @@ Version 1.1.5 changes:
 ! scope="col"| Maven Repo
 |-
 ! jars/commons-collections4.jar
-| [https://mvnrepository.com/artifact/org.apache.commons/commons-collections4]
+| style="text-align:center;" | [https://mvnrepository.com/artifact/org.apache.commons/commons-collections4]
 |-
 ! jars/xmlbeans.jar
-| [https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans]
+| style="text-align:center;" | [https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans]
 |-
 ! jars/poi-ooxml.jar
-| [https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml]
+| style="text-align:center;" | [https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml]
 |-
 ! jars/poi-ooxml-schemas.jar
-| [https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas]
+| style="text-align:center;" | [https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas]
 |-
 ! jars/poi.jar
-| [https://mvnrepository.com/artifact/org.apache.poi/poi]
+| style="text-align:center;" | [https://mvnrepository.com/artifact/org.apache.poi/poi]
 |-
 ! jars/ij.jar
-| [https://mvnrepository.com/artifact/net.imagej/ij]
+| style="text-align:center;" | [https://mvnrepository.com/artifact/net.imagej/ij]
 |}
 
 
