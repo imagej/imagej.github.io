@@ -8,7 +8,7 @@
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store[results[i].ref];
         appendString += '<a href="' + item.url + '"><h2>' + item.title + '</h2></a>';
-        appendString += '<p>' + item.content.substring(0, 150) + '...</p>';
+        appendString += '<p>' + item.description.substring(0, 150) + '...</p>';
       }
 
       searchResults.innerHTML = appendString;
@@ -41,14 +41,14 @@
       this.field('title', { boost: 10 });
       this.field('author');
       this.field('category');
-      this.field('content');
+      this.field('description');
       for (var key in window.store) {
         this.add({
           'id': key,
           'title': window.store[key].title,
           'author': window.store[key].author,
           'category': window.store[key].category,
-          'content': window.store[key].content
+          'description': window.store[key].description
         });
       }
     });

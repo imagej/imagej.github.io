@@ -2373,6 +2373,13 @@ input, select, textarea {
 			vertical-align: middle;
 		}
 
+		.image.info {
+			float: left;
+			padding-top: 5%;
+			padding-bottom: 5%;
+			padding-right: 1em;
+		}
+
 		.image.left {
 			float: left;
 			padding: 0 1.5em 1em 0;
@@ -2847,6 +2854,20 @@ input, select, textarea {
 		.sidebar a {font-size: 18px;}
 	}
 
+/* Info-box */
+
+	.info-box {
+		width: auto;
+		height: auto;
+		border-collapse: collapse;
+		background-color: #f9f9f9;
+		border: 1px solid #a0a0a0;
+		margin: 0 10%;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		padding: 0 1em 0 1em;
+	}
+
 /* Table */
 
 	.table-wrapper {
@@ -2855,7 +2876,7 @@ input, select, textarea {
 	}
 
 	table {
-		margin: 0 0 2em 0;
+		margin: 0 0 0 0;
 		width: 100%;
 	}
 

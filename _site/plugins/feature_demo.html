@@ -27,7 +27,7 @@
     <a href="/">Home</a>
     
         
-        / <a href="/pages">Pages</a>
+        / <a href="/plugins">Plugins</a>
         
     
         
@@ -40,8 +40,8 @@
 		<!-- Page-info -->
 		<div class="page-info"> 
 
-    <a href="https://github.com/imagej/imagej.github.io/edit/jekyll-prototype/pages/feature_demo.md">View source</a>
-    <a href="https://github.com/imagej/imagej.github.io/commits/jekyll-prototype/pages/feature_demo.md">History</a>
+    <a href="https://github.com/imagej/imagej.github.io/edit/jekyll-prototype/plugins/feature_demo.md">View source</a>
+    <a href="https://github.com/imagej/imagej.github.io/commits/jekyll-prototype/plugins/feature_demo.md">History</a>
     
 </div>
 
@@ -52,9 +52,13 @@
 				</header>
 					<div class="box alt"></div>
 						<!-- Page content -->
-						<div id="content"><p>Front matter information:</p>
+						<div id="content"><div class="info-box">
 
-<p><strong>category:</strong> type:category (<em>e.g.</em> plugins:development populates the page only under plugins)</p>
+  <p><img src="/images/icons/40px-Information-sign.png" alt="Information sign" class="image info" /></p>
+
+  <p>Hey this is the info box! If you want to learn more about how to create an info box, view the source of this page! Here’s a link to the <a href="/plugins">Plugins categories</a> page.</p>
+
+</div>
 
 <div class="sidebar">
 
@@ -73,7 +77,9 @@
 <a href="#Figure center">Figure center</a>
 <a href="#Figure row">Figure row</a>
 <a href="#Markdown table">Markdown table</a>
-<a href="#YouTube video">YouTube video</a></p>
+<a href="#YouTube video">YouTube video</a>
+<a href="#Imbedded images in table">Imbedded images in table</a>
+<a href="#Math equations">Math equations</a></p>
 
 </div>
 
@@ -195,6 +201,8 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/4NOM-kLfDR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 </div>
 
+<h2 id="-imbedded-images-in-table"><a name="Imbedded images in table"></a> <strong>Imbedded images in table</strong></h2>
+
 <p>A table with images, use the .image.table to make it align with text:</p>
 
 <table>
@@ -209,6 +217,14 @@
     </tr>
   </tbody>
 </table>
+
+<h2 id="-math-equations"><a name="Math equations"></a> <strong>Math equations</strong></h2>
+
+<p>When <script type="math/tex">a \ne 0</script> , there are two solutions to <script type="math/tex">(ax^2 + bx + c = 0)</script> and they are</p>
+
+<script type="math/tex; mode=display">x = {-b \pm \sqrt{b^2-4ac} \over 2a}.</script>
+
+<p>Wow such pretty math!</p>
 </div>
 
 		</section>
@@ -231,6 +247,28 @@
 <script src="/assets/js/breakpoints.min.js"></script>
 <script src="/assets/js/util.js"></script>
 <script src="/assets/js/main.js"></script>
+		
+			<script>
+  MathJax = {
+    options: {
+      renderActions: {
+        find: [10, function (doc) {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/);
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+            const text = document.createTextNode('');
+            node.parentNode.replaceChild(text, node);
+            math.start = {node: text, delim: '', n: 0};
+            math.end = {node: text, delim: '', n: 0};
+            doc.math.push(math);
+          }
+        }, '']
+      }
+    }
+  };
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 		
 
   </body>
