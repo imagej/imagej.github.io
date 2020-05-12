@@ -21,12 +21,12 @@ This is a suite of ImageJ plugins that are used for processing images acquired f
 Click the links below to find more about each tool.
 
 # [[SEM FEI metadata scale|SEM FEI metadata and scale]] is a tool that read FEI SEM acquisition metadata from tiff tags and set image scale based on pixel size.
-# [[SEM FEI databar cut|SEM FEI databar cut]] is a tool that cut the databar from FEI SEM images, then save image and databar as individual files.
+# [[SEM FEI databar cut|SEM FEI databar cut]] is a tool that cut the databar from FEI SEM images, then save image and databar as individual files. (Page in preparation)
 # [[SEM JOEL Scale|SEM JOEL Scale]] sets image scale based on pixel size store in the .txt file associated with SEM image.
 # [[SEM Zeiss metadata scale|SEM Zeiss metadata scale]] Upcoming soon...
 # [[SEM Hitachi metadata scale|SEM Hitachi metadata scale]] Upcoming soon...
 # [[Image Annotation|Image feature measurement annotation]] is a tool to measure and mark the size of features. It annotates the length of line tool in a calibrated image and export measurement results. 
-# [[Flat field correction|Flat field correction]] Upcoming soon...
+# [[Flat field correction|Flat field correction]] Apply flat filed correction to a folder of images for large area mapping to mitigate chess pattern after stitching. (Page in preparation)
 # [[TIA .ser folder export|TEM TIA .ser folder export]] Upcoming soon...
 
 = '''Installation''' =
