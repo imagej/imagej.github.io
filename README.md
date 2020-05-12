@@ -8,7 +8,7 @@ Welcome to ImageJ.net! This webpage is still a work in progress.
 - [X] Math support via Mathjax.
 - [X] UX bread crumbs (top of page)
 - [X] Code syntax highlighting
-- [ ] Add infobox elements
+- [X] Add infobox elements
 - [X] Add brief description to front matter.
 - [ ] Add Lazy loading to images
 - [X] Add Edit and view source links to page template
