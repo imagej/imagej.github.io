@@ -43,9 +43,9 @@ Click the links below to find more about each tool.
 
 [[File:EMtool_02.jpg|500px|center]]
 
-4. Click “Add update site”.
+4. Find and tick "EM tool", URL "https://sites.imagej.net/IMBalENce/".
 
-5. Type in Name "EM tool", URL "https://sites.imagej.net/IMBalENce/"
+5. If the update site does not show, you can manually add the site by clicking “Add update site”. Type in Name "EM tool", URL "https://sites.imagej.net/IMBalENce/"
 
 [[File:EMtool_03.jpg|500px|center]]
 
