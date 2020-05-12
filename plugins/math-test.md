@@ -5,6 +5,7 @@ author: Edward Evans
 category: plugins:demo
 layout: page
 use_math: true
+description: An example of math equations
 ---
 
 <div class="sidebar" markdown="1">

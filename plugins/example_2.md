@@ -5,6 +5,7 @@ author: Mel Hammond
 category: plugins:demo
 layout: page
 use_math: false
+description: This is example 2
 ---
 
 Example 2

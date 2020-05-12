@@ -5,6 +5,7 @@ author: Edward Evans
 category: plugins:analysis
 layout: page
 use_math: false
+description: This is example 1
 ---
 
 Example 1

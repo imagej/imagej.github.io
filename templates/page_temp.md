@@ -1,10 +1,11 @@
 ---
 title: YOUR-POST-TITLE
 breadcrumb: YOUR-BREADCRUMB
+layout: page
 author: YOUR-NAME
-category: YOUR-CATEGORY
-layout: post
+category: POST-TYPE:YOUR-CATEGORY
 use_math: false
+description: Enter a description here
 ---
 
 <div class="sidebar" markdown="1">

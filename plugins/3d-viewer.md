@@ -5,6 +5,7 @@ author: Curtis Rueden
 category: plugins:analysis
 layout: page
 use_math: false
+description: This plugin images offers hardware-accelerated visualization possibilities for image stacks, using the Java 3D library.
 ---
 
 ![3D Viewer Overview]({{site.baseurl}}/images/posts/3D_Viewer_overview.png){: .image.fit}

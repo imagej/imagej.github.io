@@ -5,6 +5,7 @@ author: Wallie the cat
 category: plugins:development
 layout: page
 use_math: false
+description: This is example 4
 ---
 
 Example 4

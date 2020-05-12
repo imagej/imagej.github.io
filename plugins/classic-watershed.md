@@ -5,6 +5,7 @@ author: Ignacio Arganda-Carreras
 category: plugins:segmentation
 layout: page
 use_math: false
+description: Classic Watershed is an ImageJ/Fiji plugin to perform watershed segmentation of grayscale 2D/3D images using flooding simulations as described by Pierre Soille and Luc M. Vincent (1990)
 ---
 
 <!-- 
