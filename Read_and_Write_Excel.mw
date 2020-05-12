@@ -74,7 +74,6 @@ An argument function can be used to overwrite the default dataset labelling beha
 <source lang="java"> 
 run("Read and Write Excel", "dataset_label=[This is my new title]");
 </source>
-Please note, the provided title can contain spaces if they are within the brackets.
 
 
 <source lang="java"> 
@@ -96,7 +95,7 @@ run("Read and Write Excel", "file=[C:/Users/antinos/Desktop/My_file.xlsx]");
 
 
 <source lang="java"> 
-run("Read and Write Excel", "file=banana");
+run("Read and Write Excel", "sheet=banana");
 </source>
 "sheet=" Which sheet in the excel file to put the results in. Example "sheet=banana" will create and/or append a sheet named 'banana'.
 
@@ -104,7 +103,7 @@ run("Read and Write Excel", "file=banana");
 <source lang="java"> 
 run("Read and Write Excel", "dataset_label=[My new results data label]");
 </source>
-"dataset_label=" The label to write in the cell above the data in the excel file. Strings and numbers can be fed to the custom title modifier from a loop e.g
+"dataset_label=" The label to write in the cell above the data in the excel file. Strings and numbers can also be fed to the custom title modifier from a macro/loop e.g
 <source lang="java"> 
 run("Read and Write Excel", "dataset_label=Table"+i);
 </source>
