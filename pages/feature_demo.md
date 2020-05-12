@@ -3,6 +3,7 @@ title: Feature Demo
 breadcrumb: Feature Demo
 layout: page
 category: plugins:Demo
+description: This page is a feature demo.
 ---
 
 Front matter information:
