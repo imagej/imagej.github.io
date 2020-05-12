@@ -58,7 +58,10 @@ Created in Eclipse IDE. Requires jre 1.8, which is current ImageJ compatible.
 
 
 == Usage ==
-
+<span style="float:right; margin-left:10px;">
+'''Youtube tutorial:'''<br>
+{{#widget:YouTube|id=dLkoB25MTIY|width=420}}
+</span>
 This plugin can be called from a macro using:
 <source lang="javascript"> 
 run("Read and Write Excel");
@@ -71,37 +74,36 @@ The title of the '''most recent''' open image is added as a label for exported r
 Arguments will be parsed from the second argument string as follows.
 
 
+"dataset_label=" The label to write in the cell above the data in the excel file. Strings and numbers can also be fed to the custom title modifier from a macro/loop:
 <source lang="java"> 
 run("Read and Write Excel", "dataset_label=[My new results data label]");
-</source>
-"dataset_label=" The label to write in the cell above the data in the excel file. Strings and numbers can also be fed to the custom title modifier from a macro/loop e.g
-<source lang="java"> 
+//example with passed variable 'i'
 run("Read and Write Excel", "dataset_label=Table"+i);
 </source>
 
 
+"no_count_column" Prevents the plugin from adding a "Count" column automatically:
 <source lang="java"> 
 run("Read and Write Excel", "no_column_count");
 </source>
-"no_count_column" Prevents the plugin from adding a "Count" column automatically.
 
 
+"stack_results" Causes the plugin to export results data underneath pre-existing data (instead of adjacent to it). NOTE: The dataset label for the now stacked data will be that determined for the most recent import:
 <source lang="java"> 
 run("Read and Write Excel", "stack_results");
 </source>
-"stack_results" Causes the plugin to export results data underneath pre-existing data (instead of adjacent to it). NOTE: The dataset label for the now stacked data will be that determined for the most recent import.
 
 
+"file=" The path to the excel file to create and/or update (uses the default desktop file otherwise):
 <source lang="java"> 
 run("Read and Write Excel", "file=[C:/Users/antinos/Desktop/My_file.xlsx]");
 </source>
-"file=" The path to the excel file to create and/or update (uses the default desktop file otherwise).
 
 
+"sheet=" Which sheet in the excel file to put the results in. For example, "sheet=banana" will create and/or append a sheet named 'banana':
 <source lang="java"> 
 run("Read and Write Excel", "sheet=banana");
 </source>
-"sheet=" Which sheet in the excel file to put the results in. Example "sheet=banana" will create and/or append a sheet named 'banana'.
 
 
 Join arguments as follows:
@@ -112,22 +114,23 @@ run("Read and Write Excel", "no_count_column file=[C:/Users/antinos/Documents/My
 
 === Large data import and export ===
 "file_mode=" This requires a slightly different way of calling the plugin but '''is very useful for expected large datasets'''. There are three options.
+
+"file_mode=read_and_open" Will just load/open an excel file into computer memory (the one you specify with file=)...make sure you do write_and_close when you're done or you'll have problems:
 <source lang="java"> 
 run("Read and Write Excel", "file=[C:/Users/antinos/Documents/My_cool_file.xlsx] file_mode=read_and_open");
 </source>
-"file_mode=read_and_open" Will just load/open an excel file into computer memory (the one you specify with file=)...make sure you do write_and_close when you're done or you'll have problems.
 
 
+"file_mode=queue_write" Will queue something to be written to the excel file you've opened previously with read_and_open:
 <source lang="java"> 
 run("Read and Write Excel", "file_mode=queue_write");
 </source>
-"file_mode=queue_write" Will queue something to be written to the excel file you've opened previously with read_and_open.
 
 
+"file_mode=write_and_close" Will write everything you've queued with queue_write, then close the excel file:
 <source lang="java"> 
 run("Read and Write Excel", "file_mode=write_and_close");
 </source>
-"file_mode=write_and_close" Will write everything you've queued with queue_write, then close the excel file.
 
 
 Example large data macro workflow:
@@ -157,7 +160,7 @@ run("Read and Write Excel", "file_mode=write_and_close");
 </source>
 
 
-see https://github.com/bkromhout/Read_and_Write_Excel_Modified for examples. '''(Please note: whilst Brenden did an amazing job updating the plugin for the version 1.1 release, the most up-to-date version is currently not represented on his github repo)'''
+Also see https://github.com/bkromhout/Read_and_Write_Excel_Modified for examples. '''(However please note: whilst Brenden did an amazing job updating the plugin for the version 1.1 release, the most up-to-date version is currently not represented on his github repo)'''
 
 
 == Disclaimers and Licencing stuff ==
