@@ -246,3 +246,5 @@ http://sites.imagej.net/ResultsToExcel
 * The 'ImageJ Updater' window will now present you with the plugin files for installation
 * Press 'Apply changes'
 * After the update has been applied successfully, restart ImageJ
+
+[[Category:Plugins]]
