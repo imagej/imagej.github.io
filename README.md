@@ -9,8 +9,8 @@ Welcome to ImageJ.net! This webpage is still a work in progress.
 - [X] UX bread crumbs (top of page)
 - [X] Code syntax highlighting
 - [ ] Add infobox elements
-- [ ] Add brief description to front matter.
-- [ ] Line numbers for code
+- [X] Add brief description to front matter.
+- [ ] Add Lazy loading to images
 - [X] Add Edit and view source links to page template
 - [X] Add page/post type to categories
 - [ ] Add supporting pages
@@ -19,7 +19,7 @@ Welcome to ImageJ.net! This webpage is still a work in progress.
 
 # TODO (post-live):
 
-- [ ] Change base url for "edit" page from jekyll-protoype branch
+- [ ] Change base url for "View source" page info from jekyll-protoype branch
 
 ## Adding Equations
 
