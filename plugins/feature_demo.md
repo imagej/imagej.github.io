@@ -8,6 +8,14 @@ use_math: true
 description: This page is a feature demo.
 ---
 
+<div class="info-box" markdown="1">
+
+![Information sign]({{"/images/icons/40px-Information-sign.png" | relative_url}}){: .image.info}
+
+Hey this is the info box! If you want to learn more about how to create an info box, view the source of this page! Here's a link to the [Plugins categories]({{"/plugins" | relative_url}}) page.
+
+</div>
+
 <div class="sidebar" markdown="1">
 
 Sidebar
