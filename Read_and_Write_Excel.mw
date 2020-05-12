@@ -153,7 +153,7 @@ for (i = 0; i < 100; i++) {
 }
 
 //finally write the queued results data to the file
-run("Read and Write Excel", "file_mode=queue_write");
+run("Read and Write Excel", "file_mode=write_and_close");
 </source>
 
 
