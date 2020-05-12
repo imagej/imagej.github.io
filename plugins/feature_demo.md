@@ -2,14 +2,12 @@
 title: Feature Demo
 breadcrumb: Feature Demo
 layout: page
+author: Edward Evans
 category: plugins:Demo
+use_math: true
 description: This page is a feature demo.
 ---
 
-Front matter information:
-
-**category:** type:category (_e.g._ plugins:development populates the page only under plugins)
- 
 <div class="sidebar" markdown="1">
 
 Sidebar
@@ -26,6 +24,8 @@ Sidebar
 [Figure row](#Figure row)
 [Markdown table](#Markdown table)
 [YouTube video](#YouTube video)
+[Imbedded images in table](#Imbedded images in table)
+[Math equations](#Math equations)
 
 </div>
 
@@ -123,8 +123,18 @@ While both the java and clojure versions encapsulate the variables in a local na
     <iframe width="560" height="315" src="https://www.youtube.com/embed/4NOM-kLfDR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+## <a name="Imbedded images in table"></a> **Imbedded images in table**
+
 A table with images, use the .image.table to make it align with text:
 
 | :---: | :---: |
 |![Plugins]({{"/images/icons/plugins_icon.png" | relative_url}}){: .image.table} | A powerful mechanism for extending ImageJ in all kinds of useful ways. 
 | ![Extend]({{"/images/icons/extend_icon.png" | relative_url}}){: .image.table} | Automated, reproducible workflows via scripts and macros, including headless on a remote server or cluster. |
+
+## <a name="Math equations"></a> **Math equations**
+
+When $$a \ne 0$$ , there are two solutions to $$(ax^2 + bx + c = 0)$$ and they are
+
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
+Wow such pretty math!
