@@ -13,6 +13,7 @@
 
 This plugin is described in detail on the [http://bigwww.epfl.ch/thevenaz/mosaicj/ BIG website].
 
-Find the plugin in the menus at {{bc | Plugins | Stitching | MosaicJ}}.
+[[Following an update site|Enable the BIG-EPFL update site
+] to gain access to the MosaicJ plugin. Find it in the menus at {{bc | Plugins | Stitching | MosaicJ}}.
 
 [[Category:Plugins]]
