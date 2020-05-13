@@ -11,6 +11,7 @@ Welcome to ImageJ.net! This webpage is still a work in progress.
 - [X] Add infobox elements
 - [X] Add brief description to front matter.
 - [ ] Add Lazy loading to images
+- [X] Add Sidebox element
 - [X] Add Edit and view source links to page template
 - [X] Add page/post type to categories
 - [ ] Add supporting pages

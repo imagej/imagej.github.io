@@ -2854,6 +2854,34 @@ input, select, textarea {
 		.sidebar a {font-size: 18px;}
 	}
 
+/* Sidebox */
+
+	.sidebox-right {
+		float: right;
+		width: 40%;
+		border: 1px solid #ccc;
+		padding: 15px !important;
+		margin-top: 1em;
+		margin-bottom: 2em;
+		margin-left: 1em;
+		background-color: #ffefbe;
+		border-radius: .75em;
+		box-shadow: 4px 4px 4px #CCC;
+	}
+
+	.sidebox-left {
+		float: left;
+		width: 40%;
+		border: 1px solid #ccc;
+		padding: 15px !important;
+		margin-top: 1em;
+		margin-bottom: 2em;
+		margin-right: 1em;
+		background-color: #ffefbe;
+		border-radius: .75em;
+		box-shadow: 4px 4px 4px #CCC;
+	}
+
 /* Info-box */
 
 	.info-box {
@@ -3605,7 +3633,7 @@ input, select, textarea {
 		/* Main */
 
 			.main {
-				padding: 1.5em 3em 3em 3em ;
+				padding: 0.5em 3em 3em 3em ;
 			}
 
 		/* Header */
