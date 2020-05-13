@@ -34,6 +34,7 @@ Sidebar
 [YouTube video](#YouTube video)
 [Imbedded images in table](#Imbedded images in table)
 [Math equations](#Math equations)
+[Sidebox](#Sidebox)
 
 </div>
 
@@ -146,3 +147,21 @@ When $$a \ne 0$$ , there are two solutions to $$(ax^2 + bx + c = 0)$$ and they a
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
 Wow such pretty math!
+
+## <a name="Sidebox"></a> **Sidebox**
+
+<div class="sidebox-right" markdown="1">
+
+Hey this is the sidebox-right style!
+
+</div>
+
+While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
+
+<div class="sidebox-left" markdown="1">
+
+Oh wow!! This is the sidebox-left style! Fantastic!
+
+</div>
+
+While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
