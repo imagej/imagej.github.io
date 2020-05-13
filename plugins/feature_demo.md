@@ -35,6 +35,7 @@ Sidebar
 [Imbedded images in table](#Imbedded images in table)
 [Math equations](#Math equations)
 [Sidebox](#Sidebox)
+[Syntax highlighting](#Syntax highlighting)
 
 </div>
 
@@ -165,3 +166,45 @@ Oh wow!! This is the sidebox-left style! Fantastic!
 </div>
 
 While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
+
+<div class="info-box" markdown="1">
+
+![Important]({{"/images/icons/40px-Important-sign.png" | relative_url}}){: .image.info}
+
+Stop! This is an important message! Did you check out the plugins categories page? What do you think? Okay please continue reading.
+
+</div>
+
+## <a name="Syntax highlighting"></a> **Syntax highlighting**
+
+Java example:
+
+```java
+Image3DUniverse univ = new Image3DUniverse();
+univ.show();
+univ.addMesh(yourImagePlus, null, "somename", 50, new boolean[] {true, true, true}, 2);
+...
+```
+
+Python example:
+
+```python
+def update_progress(progress):
+    barLength = 10 # Modify this to change the length of the progress bar
+    status = ""
+    if isinstance(progress, int):
+        progress = float(progress)
+    if not isinstance(progress, float):
+        progress = 0
+        status = "error: progress var must be float\r\n"
+    if progress < 0:
+        progress = 0
+        status = "Halt...\r\n"
+    if progress >= 1:
+        progress = 1
+        status = "Done...\r\n"
+    block = int(round(barLength*progress))
+    text = "\rPercent complete: [{0}] {1}% {2}".format( "#"*block + "-"*(barLength-block), progress*100, status)
+    sys.stdout.write(text)
+    sys.stdout.flush()
+```
