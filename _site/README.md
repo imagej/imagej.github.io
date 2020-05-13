@@ -13,6 +13,8 @@ Welcome to ImageJ.net! This webpage is still a work in progress.
 - [ ] Add Lazy loading to images
 - [ ] Add ABC lists to CSS style
 - [ ] Table of contents heirachy
+- [ ] Remove "category indexes" from search
+- [ ] Create wide table style
 - [ ] Fix footer -- does not stick to bottom
 - [ ] Fix h2 header --> normal/bold should be #585858
 - [X] Fix tables (too wide) -- set to `width: 50%;`
