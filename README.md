@@ -11,6 +11,11 @@ Welcome to ImageJ.net! This webpage is still a work in progress.
 - [X] Add infobox elements
 - [X] Add brief description to front matter.
 - [ ] Add Lazy loading to images
+- [ ] Add ABC lists to CSS style
+- [ ] Table of contents heirachy
+- [ ] Fix h2 header --> normal/bold should be #585858
+- [X] Fix tables (too wide) -- set to `width: 50%;`
+- [ ] Change table style -- needs lines
 - [X] Add Sidebox element
 - [X] Add Edit and view source links to page template
 - [X] Add page/post type to categories
