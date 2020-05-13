@@ -15,8 +15,9 @@
         <a href="/index">Home</a>
         <a href="/pages/search" class="icon solid fa-search">Search</a>
         <a href="/learn">Use</a>
-        <a href="/docs">Docs</a>
         <a href="/plugins">Plugins</a>
+        <a href="/docs">Docs</a>
+        <a href="https://forum.image.sc/">Forum</a>
     </div>
 </section>
 
@@ -80,7 +81,8 @@
 <a href="#YouTube video">YouTube video</a>
 <a href="#Imbedded images in table">Imbedded images in table</a>
 <a href="#Math equations">Math equations</a>
-<a href="#Sidebox">Sidebox</a></p>
+<a href="#Sidebox">Sidebox</a>
+<a href="#Syntax highlighting">Syntax highlighting</a></p>
 
 </div>
 
@@ -244,6 +246,46 @@
 </div>
 
 <p>While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.</p>
+
+<div class="info-box">
+
+  <p><img src="/images/icons/40px-Important-sign.png" alt="Important" class="image info" /></p>
+
+  <p>Stop! This is an important message! Did you check out the plugins categories page? What do you think? Okay please continue reading.</p>
+
+</div>
+
+<h2 id="-syntax-highlighting"><a name="Syntax highlighting"></a> <strong>Syntax highlighting</strong></h2>
+
+<p>Java example:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Image3DUniverse</span> <span class="n">univ</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Image3DUniverse</span><span class="o">();</span>
+<span class="n">univ</span><span class="o">.</span><span class="na">show</span><span class="o">();</span>
+<span class="n">univ</span><span class="o">.</span><span class="na">addMesh</span><span class="o">(</span><span class="n">yourImagePlus</span><span class="o">,</span> <span class="kc">null</span><span class="o">,</span> <span class="s">"somename"</span><span class="o">,</span> <span class="mi">50</span><span class="o">,</span> <span class="k">new</span> <span class="kt">boolean</span><span class="o">[]</span> <span class="o">{</span><span class="kc">true</span><span class="o">,</span> <span class="kc">true</span><span class="o">,</span> <span class="kc">true</span><span class="o">},</span> <span class="mi">2</span><span class="o">);</span>
+<span class="o">...</span>
+</code></pre></div></div>
+
+<p>Python example:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">update_progress</span><span class="p">(</span><span class="n">progress</span><span class="p">):</span>
+    <span class="n">barLength</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># Modify this to change the length of the progress bar
+</span>    <span class="n">status</span> <span class="o">=</span> <span class="s">""</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">progress</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+        <span class="n">progress</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">progress</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">progress</span><span class="p">,</span> <span class="nb">float</span><span class="p">):</span>
+        <span class="n">progress</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">status</span> <span class="o">=</span> <span class="s">"error: progress var must be float</span><span class="se">\r\n</span><span class="s">"</span>
+    <span class="k">if</span> <span class="n">progress</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">progress</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">status</span> <span class="o">=</span> <span class="s">"Halt...</span><span class="se">\r\n</span><span class="s">"</span>
+    <span class="k">if</span> <span class="n">progress</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">progress</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">status</span> <span class="o">=</span> <span class="s">"Done...</span><span class="se">\r\n</span><span class="s">"</span>
+    <span class="n">block</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">barLength</span><span class="o">*</span><span class="n">progress</span><span class="p">))</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="s">"</span><span class="se">\r</span><span class="s">Percent complete: [{0}] {1}</span><span class="si">% </span><span class="s">{2}"</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span> <span class="s">"#"</span><span class="o">*</span><span class="n">block</span> <span class="o">+</span> <span class="s">"-"</span><span class="o">*</span><span class="p">(</span><span class="n">barLength</span><span class="o">-</span><span class="n">block</span><span class="p">),</span> <span class="n">progress</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="n">status</span><span class="p">)</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+</code></pre></div></div>
 </div>
 
 		</section>

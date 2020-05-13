@@ -122,8 +122,8 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #585858;
-		font-weight: 400;
+		color: #000000;
+		font-weight: 550;
 	}
 
 	em, i {
@@ -2471,6 +2471,7 @@ input, select, textarea {
 	.figure table {
 		border-collapse: collapse;
 		border-spacing: 0;
+		width: 100%;
 	}
 
 	.figure table td {
@@ -2904,8 +2905,9 @@ input, select, textarea {
 	}
 
 	table {
-		margin: 0 0 0 0;
-		width: 100%;
+		margin: 0 auto;
+		width: 50%;
+
 	}
 
 		table tbody tr {

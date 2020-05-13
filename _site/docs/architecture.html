@@ -15,8 +15,9 @@
         <a href="/index">Home</a>
         <a href="/pages/search" class="icon solid fa-search">Search</a>
         <a href="/learn">Use</a>
-        <a href="/docs">Docs</a>
         <a href="/plugins">Plugins</a>
+        <a href="/docs">Docs</a>
+        <a href="https://forum.image.sc/">Forum</a>
     </div>
 </section>
 
@@ -54,33 +55,360 @@
 						<!-- Page content -->
 						<div id="content"><div class="sidebar">
 
-  <p><a href="#Header 1">Header 1</a>
-<a href="#Header 2">Header 2</a>
-<a href="#Header 3">Header 3</a></p>
+  <p><a href="#Definitions">Definitions</a>
+<a href="#SciJava project structure">SciJava project structure</a>
+<a href="#Organizational structure">Organizational structure</a>
+<a href="#Git repositories">Git repositories</a>
+<a href="#Maven component structure">Maven component structure</a>
+<a href="#Bill of Materials">Bill of Materials</a>
+<a href="#Core libraries">Core libraries</a>
+<a href="#Reproducible build">Reproducible build</a>
+<a href="#Advantages of reproducible builds">Advantages of reproducible builds</a>
+<a href="#Using snapshot couplings during development">Using snapshot couplings during development</a></p>
 
 </div>
 
-<h2 id="-header-1"><a name="Header 1"></a> <strong>Header 1</strong></h2>
+<p>This page describes the technical structure of SciJava and ImageJ projects. For maximum benefit, we suggest readers familiarize themselves with Maven, Git and GitHub before reading the sections here.</p>
+
+<h2 id="-definitions"><a name="Definitions"></a> <strong>Definitions</strong></h2>
 <hr />
 
-<p>Enter text.</p>
+<p>Throughout this article, and elsewhere on this wiki, we use the following terms:</p>
 
-<h3 id="sub-heading-1"><strong><em>Sub-heading 1</em></strong></h3>
+<ul>
+  <li>
+    <p>A software <strong>component</strong> is a program, such as a plugin, or a library of reusable functions. Components are typically designed to work together, and combined to form a software application such as ImageJ. In Maven terms, a component is a single artifact, typically a JAR file.</p>
+  </li>
+  <li>
+    <p>A software <strong>project</strong> is a more general term referring to either a single component or a collection of related components. For example, the phrase “ImageJ project” refers to several components including ImageJ Common, ImageJ Ops, ImageJ Legacy and the ImageJ Updater.</p>
+  </li>
+  <li>
+    <p>The <strong>SciJava component collection</strong> is the set of all components managed by the pom-scijava Bill of Materials. Such SciJava components reside across several different architectural layers. See “Bill of Materials” below for details.</p>
+  </li>
+  <li>
+    <p><strong>SciJava core components</strong> are SciJava components of the SciJava component layer itself. See “Organizational structure” below.</p>
+  </li>
+  <li>
+    <p>The <strong>ImageJ software stack</strong> is the set of components upon which ImageJ is built. It includes components from the SciJava, ImgLib2, ImageJ and SCIFIO foundational layers; see “Organizational structure” and “Core libraries” below for details.</p>
+  </li>
+</ul>
 
-<p>Enter text.</p>
-
-<h2 id="-header-2"><a name="Header 2"></a> <strong>Header 2</strong></h2>
+<h2 id="-scijava-project-structure"><a name="SciJava project structure"></a> <strong>SciJava project structure</strong></h2>
 <hr />
 
-<p>Enter text.</p>
+<p>The ImageJ project, and related projects in the SciJava software ecosystem, are carefully structured to foster extensibility.</p>
 
-<h3 id="sub-heading-2"><strong><em>Sub-heading 2</em></strong></h3>
-
-<p>Enter text.</p>
-
-<h2 id="-header-3"><a name="Header 3"></a> <strong>Header 3</strong></h2>
+<h2 id="-organizational-structure"><a name="Organizational structure"></a> <strong>Organizational structure</strong></h2>
 <hr />
 
+<p>There are four organizations on GitHub which form the backbone of the SciJava ecosystem:</p>
+
+<ul>
+  <li>
+    <p>scijava - for SciJava core components: general-purpose, non-image-specific libraries.</p>
+  </li>
+  <li>
+    <p>imglib - for ImgLib2 components: flexible N-dimensional image processing.</p>
+  </li>
+  <li>
+    <p>imagej - for ImageJ components: metadata-rich image library and application.</p>
+  </li>
+  <li>
+    <p>scifio - for SCIFIO components: scientific image I/O and file formats.</p>
+  </li>
+</ul>
+
+<p>Each organization contains several related components under its respective umbrella: a core library (see below) and several extensions. In social terms, each organization represents a collection of conceptually related components developed by a distinct team of developers.</p>
+
+<p>Additional organizations can further extend this structure. For example, the Fiji project has several organizations as follows:</p>
+
+<ul>
+  <li>
+    <p>fiji - for Fiji components</p>
+  </li>
+  <li>
+    <p>bigdataviewer - for BigDataViewer components</p>
+  </li>
+  <li>
+    <p>trakem2 - for TrakEM2 components</p>
+  </li>
+</ul>
+
+<p>Furthermore, many groups maintain their own GitHub organizations with components built on SciJava et al. Here are a few examples:</p>
+
+<ul>
+  <li>
+    <p><a href="https://imagej.net/LOCI">LOCI</a> – <a href="https://github.com/uw-loci">uw-loci</a></p>
+  </li>
+  <li>
+    <p><a href="https://imagej.net/FLIMJ">FLIMJ</a> – <a href="https://github.com/flimlib">flimlib</a></p>
+  </li>
+  <li>
+    <p><a href="https://imagej.net/DAIS">DAIS</a> – <a href="https://github.com/TrnDy">TrnDy</a></p>
+  </li>
+  <li>
+    <p><a href="https://imagej.net/User:Jug">Florian Jug</a> – <a href="https://github.com/juglab">juglab</a></p>
+  </li>
+  <li>
+    <p><a href="https://imagej.net/User:Saalfeld">Stephan Saalfeld</a> – <a href="https://github.com/saalfeldlab">saalfeldlab</a></p>
+  </li>
+  <li>
+    <p><a href="https://imagej.net/User:StephanP">Stephan Preibisch</a> – <a href="https://github.com/PreibischLab">PreibischLab</a></p>
+  </li>
+  <li>
+    <p>&lt;your organization here!&gt;</p>
+  </li>
+</ul>
+
+<p>The diagram on the right shows organizational relationships between SciJava software components.</p>
+
+<h2 id="-git-repositories"><a name="Git repositories"></a> <strong>Git repositories</strong></h2>
+<hr />
+
+<p>Each component is contained in its own Git repository, so that interested developers can cherry-pick only those parts of interest. Version control is an indispensable tool to ensure scientific reproducibility (see below) by tracking known-working states of the source code, and maintain a written record of how and why the code has changed over time. For technical details, see the Git section.</p>
+
+<h3 id="why-separate-git-repositories"><strong><em>Why separate Git repositories?</em></strong></h3>
+
+<p>With Maven it is possible to create a multi-module reactor that unifies several component artifacts into a single build, typically within a single Git repository.</p>
+
+<p>While many SciJava components used to be structured this way, we found that lumping multiple components into a single Git repository with a multi-module build has disadvantages compared to separate Git repositories with single-module builds:</p>
+
+<ul>
+  <li>
+    <p>Typically, components of a multi-module project are all versioned together, but we have opted for individual versioning of components, for reasons of rapid iteration, extensibility and modularity.</p>
+  </li>
+  <li>
+    <p>Individual repositories make it easier for developers to cherry-pick only those components of interest, without building the rest of the code, since dependencies are fetched on demand from remote Maven repositories.</p>
+  </li>
+  <li>
+    <p>Concerns are better separated, with each component encapsulating its own codebase, issues, pull requests and technical documentation.</p>
+  </li>
+  <li>
+    <p>Since every component follows a consistent structure, the supporting tools (e.g., these scripts) are simpler to develop and maintain.</p>
+  </li>
+</ul>
+
+<p>Of course, there are downsides, too:</p>
+
+<ul>
+  <li>
+    <p>Changes affecting multiple components must be done as separate patch sets (i.e., commits or pull requests).</p>
+  </li>
+  <li>
+    <p>Issues relevant to multiple components must be filed separately in each issue tracker and cross-referenced.</p>
+  </li>
+  <li>
+    <p>It can be more difficult to locate code of interest, since the codebase is spread across so many repositories.</p>
+  </li>
+</ul>
+
+<p>As a rule of thumb, we find that multi-module Maven projects stored within a single Git repository are a natural fit for “big bang” software which is versioned in lockstep and carefully tested before each release, whereas single-module projects stored in separate Git repositories work well for the RERO-style release paradigm.</p>
+
+<h2 id="-maven-component-structure"><a name="Maven component structure"></a> <strong>Maven component structure</strong></h2>
+<hr />
+
+<p>All components in these organizations use Maven for project management. Each organization has its own Maven groupId. Each component extends the pom-scijava parent POM, which provides sensible build defaults and compatible dependency versions (see “Bill of Materials” below).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><strong>Logo</strong></th>
+      <th style="text-align: center"><strong>Project</strong></th>
+      <th style="text-align: center"><strong>Organization</strong></th>
+      <th style="text-align: center"><strong>groupID</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/images/icons/47px-Scijava-icon.png" alt="SciJava" class="image table" /></td>
+      <td style="text-align: center">SciJava</td>
+      <td style="text-align: center"><a href="https://github.com/scijava">scijava</a></td>
+      <td style="text-align: center"><a href="https://maven.scijava.org/index.html#nexus-search;gav~org.scijava">org.scijava</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="/images/icons/48px-Imagej2-icon.png" alt="ImageJ2" class="image table" /></td>
+      <td style="text-align: center">ImageJ</td>
+      <td style="text-align: center"><a href="https://github.com/imagej">imagej</a></td>
+      <td style="text-align: center"><a href="https://maven.scijava.org/index.html#nexus-search;gav~net.imagej">net.imagej</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="/images/icons/48px-Imglib2-icon.png" alt="ImgLib2" class="image table" /></td>
+      <td style="text-align: center">ImgLib2</td>
+      <td style="text-align: center"><a href="https://github.com/imglib">imglib</a></td>
+      <td style="text-align: center"><a href="https://maven.scijava.org/index.html#nexus-search;gav~net.imglib2">net.imglib2</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="/images/icons/40px-Scifio-icon.png" alt="SCIFIO" class="image table" /></td>
+      <td style="text-align: center">SCIFIO</td>
+      <td style="text-align: center"><a href="https://github.com/scifio">scifio</a></td>
+      <td style="text-align: center"><a href="https://maven.scijava.org/index.html#nexus-search;gav~io.scif">io.scif</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="/images/icons/48px-Fiji-icon.png" alt="FIJI" class="image table" /></td>
+      <td style="text-align: center">Fiji</td>
+      <td style="text-align: center"><a href="https://github.com/fiji">fiji</a></td>
+      <td style="text-align: center"><a href="https://maven.scijava.org/index.html#nexus-search;gav~sc.fiji">sc.fiji</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="-bill-of-material"><a name="Bill of Materials"></a> <strong>Bill of Material</strong></h2>
+<hr />
+
+<p>The pom-scijava parent includes a Bill of Materials (BOM) which declares compatible versions of all components of the <strong>SciJava component collection</strong> in its dependencyManagement section. These versions are intended to be used together in downstream projects, preventing version skew (symptoms of which include ClassNotFoundException and NoSuchMethodError, as well as erroneous behavior in general). This BOM is especially important while some components are still in beta, since they may sometimes break backwards compatibility.</p>
+
+<h2 id="-core-libraries"><a name="Core libraries"></a> <strong>Core libraries</strong></h2>
+<hr />
+
+<p><img src="/images/posts/imagej_arch.png" alt="ImageJ Architecture" class="image right" /></p>
+
+<p>The ImageJ software stack is composed of the following core libraries:</p>
+
+<ul>
+  <li>
+    <p>SciJava Common - The SciJava application container and plugin framework.</p>
+  </li>
+  <li>
+    <p>ImgLib2 - The N-dimensional image data model.</p>
+  </li>
+  <li>
+    <p>ImageJ Common - Metadata-rich image data structures and SciJava extensions.</p>
+  </li>
+  <li>
+    <p>ImageJ Ops - The framework for reusable image processing operations.</p>
+  </li>
+  <li>
+    <p>SCIFIO - The framework for N-dimensional image I/O.</p>
+  </li>
+</ul>
+
+<p>These libraries form the basis of ImageJ-based software.</p>
+
+<p>The dependency hierarchy of library artifacts is shown in the diagram to the right.</p>
+
+<h3 id="modularity"><strong><em>Modularity</em></strong></h3>
+
+<p>Much effort has been expended to ensure the design of these libraries provides a good separation of concerns. Developers in need of specific functionality may choose to depend on only those components which are relevant, rather than needing to add a dependency to the entire ImageJ software stack.</p>
+
+<p>Along those lines, the libraries take great pains to be <strong>UI agnostic</strong>, with no dependencies on packages such as <code class="language-plaintext highlighter-rouge">java.awt</code> or <code class="language-plaintext highlighter-rouge">javax.swing</code>. The idea is that it should be possible to build a user interface (UI) on top of these libraries, without needing to change the library code itself. We have developed several proof-of-concept UIs for ImageJ using different UI frameworks, including Swing, AWT, Eclipse SWT and Apache Pivot.</p>
+
+<h3 id="extensibility"><strong><em>Extensibility</em></strong></h3>
+
+<p>Extensibility is ImageJ’s greatest strength. ImageJ provides many different types of plugins, and it is possible to extend the system with your own new types of plugins. See the create-a-new-plugin-type tutorial for an illustration.</p>
+
+<p>The SciJava Common (SJC) library provides a plugin framework with strong typing, and makes extensive use of plugins itself, to allow core functionality to be customized easily. SJC has an powerful plugin discovery mechanism that finds all plugins available on the Java classpath, without knowing in advance what they are or where they are located. It works by indexing the plugins at compile time via an annotation processor (inspired by the SezPoz project) which writes the plugin metadata inside the JAR file (in <code class="language-plaintext highlighter-rouge">META-INF/json/org.scijava.plugin.Plugin</code>). Reading this index allows the system to discover plugin metadata at runtime very quickly without loading the plugin classes in advance.</p>
+
+<h2 id="-reproducible-build"><a name="Reproducible builds"></a> <strong>Reproducible build</strong></h2>
+<hr />
+
+<div class="sidebox-right">
+
+  <p><strong>Why are reproducible builds so essential for science?</strong></p>
+
+  <p>Arguably <strong>the most important thing</strong> in science is to gain insights about nature <strong>that can be verified by other researchers</strong>. It is this mission for which ImageJ and Fiji stand, and it is the central reason why they are open source.</p>
+
+  <p>To verify results, it is absolutely necessary to be able to reproduce results claimed in scientific articles, and in the interest of efficiency, it should be <strong>easy</strong> to reproduce the results, and it should <strong>also</strong> be easy to scrutinize the used methods—incorrect results can be artifacts of flawed algorithms, after all.</p>
+
+  <p>To that end, it should be obvious that researchers <strong>need</strong> to have the ability to inspect the exact source code corresponding to the software used to generate the results to be verified. In other words, reproducible builds are required for sound scientific research.</p>
+
+</div>
+
+<p>A software version (or build) is called <strong>reproducible</strong> if it is easy to regenerate the exact same software application from the source code.</p>
+
+<p>For example, you can refer to “ImageJ 1.49g” as a <em>reproducible build</em>, or to <em>Sholl Analysis 3.4.3</em>, while referring to “ImageJ” is irreproducible.</p>
+
+<p>It gets more subtle when making heavy use of software libraries (sometimes called <em>dependencies</em>). It is known, for example, that many plugins in the now-defunct MacBiophotonics distribution of ImageJ worked fine with ImageJ 1.42l, but stopped working somewhere between that version and ImageJ 1.44e. That is: referring to, say, <em>the Colocalisation Analysis plugin</em> does <strong>not</strong> refer to a reproducible build because it is very hard to regenerate a working Colocalisation Analysis and ImageJ 1.x version that could be used to verify previously published results.</p>
+
+<h2 id="-advantages-of-reproducible-builds"><a name="Advantages of reproducible builds"></a> <strong>Advantages of reproducible builds</strong></h2>
+<hr />
+
+<p>Some cardinal reasons to strive for reproducible builds are:</p>
+
+<ul>
+  <li>
+    <p>Reproducible builds are essential for the scientific method (see sidebar right).</p>
+  </li>
+  <li>
+    <p>It becomes possible to use a feature branch workflow development style where the master branch is always release ready—or even a continuous delivery approach.</p>
+  </li>
+  <li>
+    <p>Debugging with git-bisect becomes feasible.</p>
+  </li>
+  <li>
+    <p>As a consequence, it avoids technical debt in favor of a robust development style.</p>
+  </li>
+  <li>
+    <p>It attracts more developers to the project, since things “just work” out of the box.</p>
+  </li>
+</ul>
+
+<h2 id="-how-scijava-achieves-reproducible-builds"><a name="How SciJava achieves reproducible builds"></a> <strong>How SciJava achieves reproducible builds</strong></h2>
+<hr />
+
+<p>For the reasons stated above, the SciJava software components strive for reproducible builds. The goal is to ensure that code which builds and runs today will continue to do so in exactly the same way for many years to come.</p>
+
+<p>Each component depends on release versions of all its dependencies—never on snapshots or version ranges. A Maven snapshot is a moving target, and depending on one results in an irreproducible build. Similarly, all Maven plugins used, as well as the parent POM, are also declared at release versions. In short: all <code class="language-plaintext highlighter-rouge">&lt;version&gt;</code> tags specify release versions, never <code class="language-plaintext highlighter-rouge">SNAPSHOT</code> or <code class="language-plaintext highlighter-rouge">LATEST</code> versions. We use the Maven Enforcer Plugin to enforce this requirement (though it can be temporarily disabled by setting the <code class="language-plaintext highlighter-rouge">enforcer.skip</code> property).</p>
+
+<p>We sometimes use <code class="language-plaintext highlighter-rouge">SNAPSHOT</code> versions temporarily on topic branches. However, we always rewrite them before merging to master, to purge all <code class="language-plaintext highlighter-rouge">SNAPSHOT</code> references, so that all commits in the history build reproducibly. We use SciJava’s check-branch.sh script to ensure all commits on a topic branch build cleanly with passing tests.</p>
+
+<h2 id="-using-snapshot-couplings-during-development"><a name="Using snapshot couplings during development"></a> <strong>Using snapshot couplings during development</strong></h2>
+<hr />
+
+<p>For developing several components in parallel, it is very useful to switch to <code class="language-plaintext highlighter-rouge">SNAPSHOT</code> dependency couplings e.g., to test a pull request.</p>
+
+<p>There are two easy ways of going about this:</p>
+
+<p>A. When a small number of snapshot couplings are needed, you can override the version property of the dependency for which you wish to use a snapshot:</p>
+
+<pre><code class="language-XML">&lt;properties&gt;
+  &lt;scijava-common.version&gt;LATEST&lt;/scijava-common.version&gt;
+  &lt;enforcer.skip&gt;true&lt;/enforcer.skip&gt; &lt;!-- ONLY while depending on a SNAPSHOT --&gt;
+&lt;/properties&gt;
+</code></pre>
+
+<p>B. Alternately, if you wish to temporarily apply snapshot couplings en masse, you can switch on a “dev profile” (defined in the <code class="language-plaintext highlighter-rouge">pom-scijava</code> parent POM) by creating one or more “dev token” files</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">~/.scijava/dev.imagej</code></li>
+  <li><code class="language-plaintext highlighter-rouge">~/.scijava/dev.imglib2</code></li>
+  <li><code class="language-plaintext highlighter-rouge">~/.scijava/dev.scifio</code></li>
+  <li><code class="language-plaintext highlighter-rouge">~/.scijava/dev.scijava</code></li>
+</ul>
+
+<p>These files need not have any content; their mere existence will trigger the dev profile associated with the named organization, causing all artifacts of that organization to become coupled as <code class="language-plaintext highlighter-rouge">SNAPSHOT</code>s.</p>
+
+<p>In the case of Eclipse, you may need to “Update Maven project” in order to see the snapshot couplings go into effect; the shortcut <code class="language-plaintext highlighter-rouge">⎇ Alt</code>+<code class="language-plaintext highlighter-rouge">F5</code> while selecting the affected project(s) accomplishes this quickly.</p>
+
+<div class="info-box">
+
+  <p><img src="/images/icons/40px-Important-sign.png" alt="Important" class="image info" /></p>
+
+  <p>Current versions of the Eclipse Maven integration (tested with Eclipse Mars) fail to correctly resolve the LATEST version tag to <code class="language-plaintext highlighter-rouge">SNAPSHOT</code>s. Use the command-line client instead.</p>
+
+</div>
+
+<p>Either way, <strong><em>be sure to work on a topic branch while developing code in this fashion</em></strong>. You will need to clean up your Git history afterwards before merging things to the <code class="language-plaintext highlighter-rouge">master</code> branch, in order to achieve reproducible builds.</p>
+
+<h2 id="-versioning"><a name="Versioning"></a> <strong>Versioning</strong></h2>
+<hr />
+
+<p>SciJava components use the Semantic Versioning system. This scheme communicates information about the backwards compatibility (or lack thereof) between versions of each individual software component. In a nutshell:</p>
+
+<p>Given a version number MAJOR.MINOR.PATCH, increment the:</p>
+
+<ul>
+  <li>
+    <p>MAJOR version when you make incompatible API changes,</p>
+  </li>
+  <li>
+    <p>MINOR version when you add functionality in a backwards-compatible manner, and</p>
+  </li>
+  <li>
+    <p>PATCH version when you make backwards-compatible bug fixes.</p>
+  </li>
+</ul>
+
+<p>See the Versioning page for a detailed discussion of SciJava versioning.</p>
 </div>
 
 		</section>
