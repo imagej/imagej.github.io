@@ -721,7 +721,7 @@ At the moment the report is kept private. If there is a strong will from the use
 
 ==== How is it implemented? ====
 
-You can read the code on Github and in every copy of BoneJ. If you turn on ImageJ's debug mode (in '' Edit &gt; Options &gt; Misc. '') the URL and the GIF response will be logged to ImageJ's log window.
+You can read the code on Github and in every copy of BoneJ. If you turn on ImageJ's debug mode (in '' Edit &gt; Options &gt; Misc. '' for Legacy and ''Edit &gt; Options &gt; ImageJ2... &gt; Scijava log level DEBUG'' for Modern) the URL and the GIF response will be logged to ImageJ's log window.
 
 == Where is my favourite plug-in? ==
 We have removed some plug-ins from BoneJ. ''Neck shaft angle'', ''Plateness'' and ''Structure model index'' have been discontinued. ''Interpolate ROIs'', [https://imagej.net/3D_Binary_Filters ''Dilate 3D'' and ''Erode 3D''] come pre-packaged with ImageJ, so they are no longer included in BoneJ2.
