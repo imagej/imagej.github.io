@@ -1,6 +1,6 @@
 ---
 title: Architecture
-breadcrumb: Arhictecture
+breadcrumb: Architecture
 author: admin
 category: docs:Development
 layout: page
