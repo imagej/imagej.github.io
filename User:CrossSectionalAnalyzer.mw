@@ -1,15 +1,20 @@
 '''Cross Sectional Analyzer'''
+
 Authors:	Thalia Barr-Malec, Nalin Richardson, and Matthew Rothman
+
 Date:	2020/05/14
-Requirements:	ImageJ 
-Limitations:	
+
 Source:	
 
 Installation:	
-Open the package contents of ImageJ, and navigate to ImageJ/plugins/Filters.
-Put Cross_Sectional_Analyzer.jar inside the ImageJ/plugins/Filters folder, and restart imageJ.
-Once ImageJ opens, open an image to analyze, and calibrate the image. To run the plugin, use Plugins>Filters>Cross Sectional Analyzer.
+
+1. Open the package contents of ImageJ, and navigate to ImageJ/plugins/Filters.
+
+2. Put Cross_Sectional_Analyzer.jar inside the ImageJ/plugins/Filters folder, and restart imageJ.
+
+3. Once ImageJ opens, open an image to analyze, and calibrate the image. To run the plugin, use Plugins>Filters>Cross Sectional Analyzer.
 
 Description:	This plugin takes in an image of muscle fibers, outlines and numbers all of the fibers, and outputs each fiber’s area as well as an RGB Color image of the numbered outlines on a black background.
+
 [[File:Fibers.png]]
 [[File:FiberOutlines.png]]
