@@ -129,9 +129,7 @@ While both the java and clojure versions encapsulate the variables in a local na
 
 ## <a name="YouTube video"></a> **YouTube video**
 
-<div class="video-wrapper">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/4NOM-kLfDR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{% include youtube.html url="https://www.youtube.com/embed/4NOM-kLfDR8" %}
 
 ## <a name="Imbedded images in table"></a> **Imbedded images in table**
 
