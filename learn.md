@@ -41,7 +41,6 @@ Fiji Is Just ImageJ—a "batteries-included" distribution of ImageJ which includ
 | ![Extend]({{"/images/icons/extend_icon.png" | relative_url}}){: .image.table} | Automated, reproducible workflows via scripts and macros, including headless on a remote server or cluster. |
 | ![Forum]({{"/images/icons/forum_icon.png" | relative_url}}){: .image.table} | A vibrant, diverse, and helpful user community that gives rise to insightful scientific exchanges. |
 
-
 ImageJ's extensibility is the root of its effectiveness: many advanced image-processing methods are not provided by the core application, but rather are plugins written by specialists in specific fields, made available via update sites.
 
 ## <a name="Getting started"></a> **How do I get started?**
