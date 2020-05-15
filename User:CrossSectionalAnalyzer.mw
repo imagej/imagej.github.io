@@ -16,7 +16,7 @@
 
 4. Once ImageJ opens, open an image to analyze, and calibrate the image. To run the plugin, use Plugins>Filters>Cross Sectional Analyzer.
 
-''Description'':	This plugin takes in an image of muscle fibers, outlines and numbers all of the fibers, and outputs each fiber’s area as well as an RGB Color image of the numbered outlines on a black background.
+''Description'':	This plugin takes in an image of muscle fibers, outlines and numbers all of the fibers, and outputs a table of each fiber’s area as well as an RGB Color image of the numbered outlines on a black background.
 
-[[File:Fibers.png|200px|thumb|left|Input Image]]
-[[File:FiberOutlines.png|200px|thumb|left|Output Image]]
+[[File:Fibers.png|300px|thumb|left|Input Image]]
+[[File:FiberOutlines.png|300px|thumb|left|Output Image]]
