@@ -1,0 +1,7 @@
+<div class="info-box" markdown="1">
+
+![Important]({{include.icon_path | relative_url}}){: .image.info}
+
+{{include.content}}
+
+</div>
