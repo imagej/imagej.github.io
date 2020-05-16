@@ -1,0 +1,7 @@
+<div class="figure center" markdown="1">
+
+![{{include.name}}]({{include.image_path | relative_url}}){: .image.fit}
+
+{{include.content}}
+
+</div>
