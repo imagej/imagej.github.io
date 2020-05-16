@@ -1,0 +1,9 @@
+{% if include.color == "black" %}
+{% assign bc = include.content | replace: "|", " ▶ " %}{{bc}}
+{% endif %}
+{% if include.color == "white" %}
+{% assign bc = include.content | replace: "|", " ▷ " %}{{bc}}
+{% endif %}
+{% if include.color == "none" %}
+{% assign bc = include.content | replace: "|", " › " %}{{bc}}
+{% endif %}
