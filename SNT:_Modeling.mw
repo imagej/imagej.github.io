@@ -1,0 +1,10 @@
+Modeling in SNT is performed through [https://github.com/morphonets/cx3d Cortex3D (Cx3D)] and [[SciView]]. Cx3D was developed in 2009<ref name="Zubler"></ref>  as a computational modeling tool for simulating neurodevelopmental processes and is well known for generative models of cortical circuits. More recently, Cx3D was modified by {{Person|Kharrington}} so that it could grow neuronal processes with [[SciView]]’s data structures.
+
+For more information refer to the [https://github.com/morphonets/cx3d GitHub project page].
+
+== References ==
+<references >
+<ref name="Zubler">
+Zubler, F. & Douglas, R. A framework for modeling the growth and development of neurons and networks. Front. Comput. Neurosci. 3, 25 (2009) [http://www.ncbi.nlm.nih.gov/pubmed?term=19949465 PMID:19949465].
+</ref>
+</references>
