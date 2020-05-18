@@ -1003,6 +1003,7 @@ from java.awt import Color
 from ij import WindowManager
 from ij.measure import ResultsTable
 from ij.plugin.frame import RoiManager
+from ij import IJ
 
 from fiji.plugin.trackmate import Logger
 from fiji.plugin.trackmate import Model
@@ -1054,7 +1055,7 @@ def spots_from_results_table( results_table, frame_interval ):
 		quality = i # Store the line index, to later retrieve the ROI.
 		spot = Spot( x, y, z, radius, quality )
 		spot.putFeature( 'POSITION_T', t )
-		spots.add( spot, int( frame ) )
+		spots.add( spot, int( frame - 1 ) )
 		
 	return spots
 
@@ -1122,8 +1123,8 @@ def create_trackmate( imp, results_table ):
 	# Configure tracker
 	settings.trackerFactory = SparseLAPTrackerFactory()
 	settings.trackerSettings = LAPUtils.getDefaultLAPSettingsMap()
-	settings.trackerSettings[ 'LINKING_MAX_DISTANCE' ] 		= 10.0
-	settings.trackerSettings[ 'GAP_CLOSING_MAX_DISTANCE' ]	= 10.0
+	settings.trackerSettings[ 'LINKING_MAX_DISTANCE' ] 		= 20.0
+	settings.trackerSettings[ 'GAP_CLOSING_MAX_DISTANCE' ]	= 20.0
 	settings.trackerSettings[ 'MAX_FRAME_GAP' ]				= 3
 	
 	settings.initialSpotFilterValue = -1.
@@ -1191,7 +1192,7 @@ def display_results_in_GUI( trackmate ):
 
 
 
-def color_rois_by_track( trackmate, rm ):
+def color_rois_by_track( trackmate, rm, results_table ):
 	"""
 	Colors the ROIs stored in the specified ROIManager rm using a color
 	determined by the track ID they have.
@@ -1203,9 +1204,13 @@ def color_rois_by_track( trackmate, rm ):
 	generated. So any changes to the ROIManager or the ResultsTable is 
 	likely to break things.
 	"""
+
+	rt = ResultsTable.getResultsTable()
 	model = trackmate.getModel()
 	track_colors = {}
+	track_idds = {}
 	track_indices = [] 
+	
 	for i in model.getTrackModel().trackIDs( True ):
 		track_indices.append( i )
 	shuffle( track_indices )
@@ -1215,8 +1220,10 @@ def color_rois_by_track( trackmate, rm ):
 		color = Jet.getPaint( float(index) / ( len( track_indices) - 1 ) )
 		track_colors[ track_id ] = color
 		index = index + 1
-	
+
+
 	spots = model.getSpots()
+	spotN=0;
 	for spot in spots.iterable( True ):
 		q = spot.getFeature( 'QUALITY' ) # Stored the ROI id.
 		roi_id = int( q )
@@ -1230,8 +1237,23 @@ def color_rois_by_track( trackmate, rm ):
 			color = track_colors[ track_id ] 
 			
 		roi.setFillColor( color )
+		
+		roiF=roi.getPosition()
+		#rename ROI
+		if track_id is None:
+			rm.rename(roi_id,"trNaN_f"+str(roiF)+"_"+roi.getName())
+		else:
+			rm.rename(roi_id,"tr"+str(track_indices[track_id])+"_f"+str(roiF)+"_"+roi.getName())
+		#addResults table entry
+		if track_id is None:
+			rt.setValue("TrackN",roi_id, "NaN")
+		else:
+			rt.setValue("TrackN",roi_id, track_indices[track_id])
 
+		spotN=spotN+1
 
+	results_table.updateResults()
+	rt.show("Results")
 
 #------------------------------
 # 			MAIN 
@@ -1266,6 +1288,5 @@ display_results_in_GUI( trackmate )
 
 # Color ROI by track ID!
 rm = RoiManager.getInstance()
-color_rois_by_track( trackmate, rm )
-
+color_rois_by_track( trackmate, rm, results_table )
 </source>
