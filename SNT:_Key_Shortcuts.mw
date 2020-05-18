@@ -92,7 +92,7 @@ All shortcuts that are not specific to tracing canvases (XY, ZY and XZ views) ''
 * {{key|Esc}} - Shuttles between the Hand and Wand tool after both have been selected at least once.
 
 ==== Other ====
-There are other key and mouse combinations used in e.g., [[SNT: Sholl Analysis], and [[SNT:_Step-By-Step_Instructions#Branching:_Start_A_Path_On_An_Existing_Path|Branching and Joining Paths]], that are listed in the contextual menu, displayed when righ-clicking a tracing canvas.
+There are other key and mouse combinations used in e.g., [[SNT:_Analysis#Sholl_Analysis|Sholl Analysis (by Focal Point)]], and [[SNT:_Step-By-Step_Instructions#Branching:_Start_A_Path_On_An_Existing_Path|Branching and Joining Paths]], that are listed in the contextual menu, displayed when righ-clicking a tracing canvas.
 
 
 {{Tip
