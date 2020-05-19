@@ -41,14 +41,14 @@ SNT is based on multiple publications. To cite SNT:
 To reference other plugins that enhance SNT:
 * '''[[Sholl Analysis]]''': Ferreira T, Blackman A, Oyrer J, Jayabal A, Chung A, Watt A, Sjöström J, van Meyel D. ('''2014'''), [http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html Neuronal morphometry directly from bitmap images], ''Nature Methods'' 11(10): 982–984
 * '''[[SNT: Tubular Geodesics|Tubular Geodesics]]''': Türetken E, Benmansour F, Fua P. [https://infoscience.epfl.ch/record/176222/files/turetken_et_al_2012.pdf?version=1 Automated Reconstruction of Tree Structures using Path Classifiers and Mixed Integer Programming]. <i>IEEE Conference on Computer Vision and Pattern Recognition</i>, Providence, Rhode Island, 2012.
-To cite the original Simple Neurite Tracer publication:
+The original [[#snt|Simple Neurite Tracer]] publication is:
 * Longair MH, Baker DA, Armstrong JD. [http://bioinformatics.oxfordjournals.org/content/early/2011/07/04/bioinformatics.btr390.long Simple Neurite Tracer: Open Source software for reconstruction, visualization and analysis of neuronal processes]. <i>Bioinformatics</i> 2011
 	</dd></dl>
 	<li>
 	<span id="snt"></span>'''What is the difference between SNT and Simple Neurite Tracer'''?
 	</li>
 	<dl><dd>
-Simple Neurite Tracer was the first Fiji plugin dedicated to visualization and reconstruction of neurons, developed by [[User:Mark|Mark Longair]] and [[#citing|published in 2011]], to become the single most cited open-source software for semi-automated 3D reconstructions. In the wake of ImageJ2 development, a new team of developers lead by [[User:Tiago|Tiago Ferreira]] took on the effort of modernizing its code base. The project quickly snowballed beyond the re-write of the software, and focused on establishing a complete framework for reconstruction, visualization, quantification and modelling of neuronal morphology. Several name changes were proposed for this "next-gen" Simple Neurite Tracer (''Not so Simple Neurite Tracer'', ''Smart Neurite Tracer'', to name a few), but in the end it was decided to adopt the acronym of the original software, as an homage to Mark's outstanding work. You can follow the entire history of the plugin on {{GitHub|org=fiji|repo=Simple_Neurite_Tracer|label=GitHub}}.
+Simple Neurite Tracer was the first Fiji plugin dedicated to visualization and reconstruction of neurons, developed by [[User:Mark|Mark Longair]] and [[#citing|published in 2011]], to become the single most cited open-source software for semi-automated 3D reconstructions. In the wake of ImageJ2 development, a new team of developers lead by [[User:Tiago|Tiago Ferreira]] took on the effort of modernizing its code base. The project quickly snowballed beyond the re-write of the software, and focused on establishing a complete framework for reconstruction, visualization, quantification and modelling of neuronal morphology. Several name changes were proposed for this "next-gen" Simple Neurite Tracer (''Not so Simple Neurite Tracer'', ''Smart Neurite Tracer'', ''Super Neurite Tracer'' to name a few), but in the end it was decided to adopt the acronym of the original software, as an homage to Mark's outstanding work. You can follow the entire history of the plugin on GitHub:  Simple Neurite Tracer's {{GitHub|org=fiji|repo=Simple_Neurite_Tracer|label=historic}}  and SNT's {{GitHub|org=morphonets|repo=SNT|label=current}} repositories.
 	</dd></dl>
 	<li>
 	<span id="swc"></span>'''What is a SWC file'''?
@@ -67,12 +67,12 @@ When tracing 4D or 5D images, <tt>TRACES</tt> is preferable because the channel 
 ! style="text-align: center;" | TRACES
 |-
 | style="width: 20%"| No. reconstructions / file
-| style="width: 40%"|  Only one. When multiple reconstructions exits, SNT splits them across multiple files appending unique suffixes to filenames
-| style="width: 40%"|  Multiple reconstructions per file allowed
+| style="width: 40%"| Formally only one. When multiple reconstructions exits, SNT splits them across multiple files appending unique suffixes to filenames
+| style="width: 40%"| Multiple reconstructions per file allowed
 |-
 | Image metadata
-| Only spatial calibration
-| Stored. Including channel and frame of the traced structure
+| Formally none. SNT stores the spatial calibration of the image in the header
+| Rich. Including channel and frame of the traced structure.
 |-
 | [[SNT:_Overview#Tag|Path Manager tags]]
 | Not stored
@@ -83,7 +83,7 @@ When tracing 4D or 5D images, <tt>TRACES</tt> is preferable because the channel 
 | XML or compressed XML (as per [[SNT:_Overview#Misc|preferences]])
 |-
 | Presence
-| Ubiquitous among reconstruction software
+| Ubiquitous among reconstruction software. The ''de facto'' standard in data sharing
 | Exlusive to SNT. But [[SNT:_.traces_File_Format|open and easily parsable]]
 |}
 	</dd></dl>
