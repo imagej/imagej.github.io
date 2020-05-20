@@ -2,7 +2,7 @@
 {{Infobox
 | name                   = Read and Write Excel
 | software               = ImageJ/Fiji
-| latest version         = 1.1.5
+| latest version         = 1.1.6
 | author                 = Anthony Sinadinos, Brenden Kromhout
 | maintainer             = Anthony Sinadinos [https://forum.image.sc/u/antinos/ (antinos)]
 | source                 = {{GitHub|org=antinos|repo=Read_and_Write_Excel_Modified}}
@@ -12,7 +12,8 @@
 By default, this plugin extracts data from the Results Table and adds it to a sheet-tab "A" in an .xlsx Excel file on the user's desktop. The plugin will create a file named "Rename me after writing is done" on the desktop if none-exists already, and will update this file if it has already been created. Data is added to the latest sheet (created as "A" if the file is new) or to a user specified sheet using a passed argument (see below). Within the latest sheet, data will be added adjacent to previous data, unless an argument is passed to stack data underneath pre-existing column headers and data. Results Table column headers are added automatically. A row count is added by default but the user can choose to deny this with a passed argument.
 
 Created in Eclipse IDE. Requires jre 1.8, which is current ImageJ compatible.
-{| class="wikitable" style="width: 40%; float:right; margin-left: 10px;"
+{| class="wikitable mw-collapsible mw-collapsed" style="width: 40%; float:right; margin-left: 10px;"
+|+ class="nowrap" | Release version dates
 |-
 ! scope="col" tyle="width: 20%"| Version
 ! scope="col" tyle="width: 30%"| Release Date
@@ -52,6 +53,10 @@ Created in Eclipse IDE. Requires jre 1.8, which is current ImageJ compatible.
 |-
 ! scope="row"| v1.1.5
 | style="text-align:right;" | 30 Nov 2019
+|
+|-
+! scope="row"| v1.1.6
+| style="text-align:right;" | 20 May 2020
 | 
 |}
 {{TOC}}
@@ -172,7 +177,11 @@ Since Brenden modified the plugin, the code is now a lot neater. Feel free to co
 
 == Plugin technical details ==
 
+<div class="mw-collapsible mw-collapsed">
+<div>
 === Change log ===
+</div>
+<div class="mw-collapsible-content">
 Version 1.0.1 changes: 
 # package is not bloated by dependency .jar files.
 # now contains source-code for reference.
@@ -203,6 +212,10 @@ Version 1.1.4 changes:
 
 Version 1.1.5 changes:
 # Bug fix. Export can now proceed when there are non-Label-column empty cells.
+
+Version 1.1.6 changes:
+# Bug fix. Fixed a rare 'stack_results' issue whereby the data was exported incorrectly if the results table and the excel file both contained a single-row of data.
+</div></div>
 
 
 === Dependencies ===
