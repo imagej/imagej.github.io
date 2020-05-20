@@ -35,7 +35,7 @@ The math behind it: When 'Nonlinear Contrast' and 'Half Brightness for Flat Area
 
 * Copy [https://imagejdocu.tudor.lu/_media/plugin/filter/hill_shade/hill_shade.java Hill_Shade.java] into the ImageJ plugins folder or a subfolder thereof (make sure you name the downloaded file ”Hill_Shade.java”; uppercase/lowercase matters).
 * Compile with “Compile and run”.
-* Alternatively, directly save the compiled class file [https://imagejdocu.tudor.lu/_media/plugin/filter/hill_shade/hill_shade.class Hill_Shade.class] into the ImageJ/plugins directory or an immediate subdirectory thereof. Again, make sure that you name the file correctly, uppercase/lowercase matters.
+* Alternatively, directly save the compiled class file [[Media:Hill_Shade.class|Hill_Shade.class]] into the ImageJ/plugins directory or an immediate subdirectory thereof. Again, make sure that you name the file correctly.
 
 == Related Links ==
 * Find out the elevation and azimuth of the Sun (or Moon) at any day/time for a given location:  http://aa.usno.navy.mil/data/docs/AltAz.php
