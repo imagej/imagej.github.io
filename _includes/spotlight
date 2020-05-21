@@ -1,0 +1,31 @@
+<section id="spotlight" class="main style1 special">
+    <div class="container">
+        <header class="major">
+            <h2>Plugin Spotlight</h2>
+        </header>
+        <div class="row gtr-150">
+            <div class="col-12 col-12-medium">
+                <ul class="major-icons">
+                    <li>
+                        <img src="/images/imagej_3d_viewer.gif" style="width:200px;height:200px"><p>View your Z-stacks in 3D</p>
+                        <ul class="actions special">
+                            <li><a href="/plugins/3d-viewer" class="button">Learn more</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="/images/imagej_cells_1.gif" style="width:200px;height:200px"><p>Look at these cells!</p>
+                        <ul class="actions special">
+                            <li><a href="#" class="button">Learn more</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="/images/pic02.jpg" style="width:200px;height:200px"><p>Wow! Look at this too!</p>
+                        <ul class="actions special">
+                            <li><a href="#" class="button">Learn more</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
