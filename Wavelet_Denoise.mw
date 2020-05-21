@@ -34,9 +34,9 @@ When starting the plugin, pictures and <i>Sync Wins</i> dialog appear, like in t
 
 • <i>Hard Thresholding</i> – hard VisuShrink thresholding: These two tools demonstrate another use of wavelet transform for image denoising/filtering. It is accomplished using VisuShrink thresholding method and the user defines the threshold by selecting the level of denoising (that equals Sigma value of the Universal threshold; Sigma takes values 1-128) in the dialog. It can also be selected to do either Soft Thresholding or Hard Thresholding [1-2]. Soft thresholding generally gives a smoother image.
 
-• <i>Suppress Approx. Coeffs. (AC) – applied with “Suppress DC” value</i>;
+• <i>Suppress Approx. Coeffs. (AC) – applied with “Suppress DC”</i>;
 
-• <i>Suppress Detail. Coeffs. (DC) – applied with “Suppress AC” value</i>:
+• <i>Suppress Detail. Coeffs. (DC) – applied with “Suppress AC”</i>:
 Here the plugin suppresses coefficients separately, i.e. only Approximation Coefficients can be suppressed (0-100%) or only Detailed Coefficients (0-100%). However, it is possible to combine settings of both coefficients together, i.e. to set, e.g., AC to 5% and DC to 50% and both suppressions will be applied to the image simultaneously.
 
 Explanation of details of the wavelet transform and parameters mentioned can be found in the text below [2].
@@ -45,7 +45,7 @@ Explanation of details of the wavelet transform and parameters mentioned can be 
 
 If user wants to inspect values of wavelet coefficients, checking this checkbox shows a picture depicting the coefficients that are converted to 8-bit and are intensity scaled for good visualization (the image with the “WT-” prefix).
 
-'''Show Image/Stack with Float Values of WT Coefficients (For Experts)'''
+'''Show Float WT Coefficients (For Experts)'''
 
 If user wants to see real values of wavelet coefficients, checking this checkbox shows another picture depicting the coefficients in float precision (the image with the “WT-NoStretch-” prefix). That can be used, e.g., for analysis in Matlab.
 
