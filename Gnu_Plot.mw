@@ -45,7 +45,7 @@ When run as a plugin Gnu_Plot will collect both the Gnuplot script and data and 
 == Coding Goodies ==
 Generating data, running it through another executable, and using the output.
 
-Updating Choice(s).
+Dynamically updating Choice(s).
 
 == Install ==
 Unzip [https://imagej.net/_images/2/23/Gnu_Plot.zip Gnu_Plot.zip] into ImageJ1 plugins (File>Show Folder>Plugins) or plugins/jars directories.  Source code is in jar file.
