@@ -1,5 +1,5 @@
 == '''Overview''' ==
-This tool convert TIA EM image .ser files in a folder to TIFF images.
+This tool converts TIA EM image .ser files in a folder to TIFF images.
 
 == '''Dependency'''== 
 TIA reader (http://rsbweb.nih.gov/ij/plugins/tia-reader.html).
