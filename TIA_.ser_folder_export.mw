@@ -8,6 +8,5 @@ Please follow the instruction in the webpage above to install the plugin before 
 
 While Steffen has done a great job in decoding the .ser files in imageJ, the batch processing function does not seems working very well for folder exporting .ser into .tif files. Whenever using the original TIA reader with ImageJ batch convert, it generates error msg every time when a .emi is read. The current script will filter other file formats in the folder. 
 
-
 == '''Future Developments''' ==
 More export options and data bars will be added in the future versions.
