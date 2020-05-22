@@ -11,6 +11,10 @@
 }}
 
 = New versions =
+'''22/05/2020'''<br>
+- Add custom ROI buttons (define from active ROI)<br>
+- Add help button in toolbar
+
 '''15/05/2020'''<br>
 - Save settings in memory for next run<br>
 - Show new default group in ImageJ status bar upon pressing numerical keypad shortcuts
