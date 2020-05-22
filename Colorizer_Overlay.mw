@@ -62,6 +62,9 @@ String newSize, String interpolationType, String boarderType,
 String cbwhere, String cbsize, String format, Font font, Color fgc, Color gc)</code>
 <br>Scale then overlay colorbar and label.
 
+== Coding Goodies ==
+How to not do string overlays; there are more direct ways I discovered after becoming happy with the plugin.
+
 == Install ==
 Unzip [https://imagej.net/_images/5/56/DICOM_open.zip DICOM_open.zip] into ImageJ1 plugins (File>Show Folder>Plugins) or plugins/jars directories.  Source code in jar file. DICOM_explode is included.
 
