@@ -28,7 +28,16 @@ then...
 <br>Boarder identifies the location of the source image in result, i.e., opposite of where to stick the boarder voxels.
 
 then...
-
+<br>ColorBar identifies if and where a colorbar should be placed.
+<br>Size identifies the size and boarder of the colorbar. W and H identify the axial and longitudinal dimension of the colorbar; # is in voxels and #% is a fraction of the rescaled image. in and out specify the number of voxels added to the in side and outside of the colorbar.
+<br>Label is the string to be inserted a the top left of the image.
+<br>Multiplier scales the colorized range before annotating the colorbar.  If the voxel values are in meters and you wish to annotate in mm, then set to 1000.
+<br>Format is the Java format string used to produce the colorbar annotations.
+<br>Font is the font family to use for the annotations.
+<br>Style is the font style to use for the annotations.
+<br>Color is the font color to use for the annotations.
+<br>Background in the overlayed annotation background.  None is a transparent overlay.
+<br>Size is the font size.
 == Methods ==
 
 
