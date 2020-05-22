@@ -1,0 +1,48 @@
+{{Infobox
+| software               = ImageJ1
+| name                   = Colorizer_Overlay
+| author                 = Fred Damen
+| filename               = Colorizer_Overlay.jar
+| source                 = [https://imagej.net/_images/5/56/Colorizer_Overlay.zip DICOM_open.zip]
+| released               = 1 April 2019
+| status                 = stable 
+| category               = [[:Category:Image annotation‏‎|Image annotation‏‎]]
+| website                = 
+}}
+
+The Colorizer_Overlay plugin provides the ability to apply a LUT, colorbar, and annotation to a map, quantified image, and overlay this upon a background image.  The impetus for this plugin was my inability to remember how to perform all the steps necessary and the laborious task of doing this again and again whenever my whim for the best representation of my data kicked in, usually right before an abstract deadline.
+
+== Features ==
+[[File:Colorizer_Overlay.jpg]]
+
+The process of generating a colorized overlay is best, but not required, done in three stages.
+
+First...
+<br>Background identifies the background image.  If unspecified the background color is used.  If the specified ImageWindow contains an Roi, the image is cropped to the bounding box and cleared, i.e., set to background color.
+<br>Foreground identifies the foreground image that is colorized.  If the ImageWindow contains an Roi then only the contents of the Roi will be overlayed.
+<br>Range is the colorization range that will be used.  Defaults to the display range of the foreground source image. If Query is on, then the range will be requery and set every time a foreground image is selected.
+
+then...
+<br>Scale identifies the rescaling of the images that is done before any annotation is performed. W and H are the scaling factor, 1 and 100% are the same. the w and h are columns and rows added to the resulting image before annotation.
+<br>Interpolation identifies the means by which the image will be scaled.
+<br>Boarder identifies the location of the source image in result, i.e., opposite of where to stick the boarder voxels.
+
+then...
+
+== Methods ==
+
+
+== Install ==
+Unzip [https://imagej.net/_images/5/56/DICOM_open.zip DICOM_open.zip] into ImageJ1 plugins (File>Show Folder>Plugins) or plugins/jars directories.  Source code in jar file. DICOM_explode is included.
+
+== Licence ==
+GPL distribution licence.
+
+== ChangeLog ==
+1 April 2019 Initial version.
+
+== Known Bugs ==
+Let me know.
+
+[[Category:Image annotation]]
+[[Category:Plugins]]
