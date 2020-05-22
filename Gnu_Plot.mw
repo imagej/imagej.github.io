@@ -1,0 +1,34 @@
+{{Infobox
+| software               = ImageJ1
+| name                   = Gnu_Plot
+| author                 = Fred Damen
+| filename               = Gnu_Plot.jar
+| source                 = [https://imagej.net/_images/5/56/DICOM_open.zip DICOM_open.zip]
+| released               = 1 April 2020
+| status                 = stable 
+| category               = [[:Category:Plotting‏‎|Plotting‏‎]]
+| website                = 
+}}
+
+The Gnu_Plot plugin provides the glue between ImageJ and Gnuplot.  The main impetus for developing this plugin was that ImageJ is great at interrogating imaging data, Gnuplot is excellent at generating publishable plots, and I'm lazy. The trouble was in having to extract the plottable data, either from a ResultsTable or through a Java plugin, and then pasting into a ascii editor, save, run gnuplot from a terminal, display output image, and repeat. I preferred to just click a button after finding better plottable data or muck with the Gnuplot script.
+
+== Features ==
+
+
+
+== Methods ==
+
+== Install ==
+
+
+== Licence ==
+GPL distribution licence.
+
+== ChangeLog ==
+1 April 2020 Initial version.
+
+== Known Bugs ==
+Let me know.
+
+[[Category:Plotting‏‎]]
+[[Category:Plugins]]
