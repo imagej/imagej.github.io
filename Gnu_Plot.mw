@@ -2,24 +2,55 @@
 | software               = ImageJ1
 | name                   = Gnu_Plot
 | author                 = Fred Damen
+| Maintainer             = Fred Damen
 | filename               = Gnu_Plot.jar
-| source                 = [https://imagej.net/_images/5/56/DICOM_open.zip DICOM_open.zip]
+| source                 = [https://imagej.net/_images/2/23/Gnu_Plot.zip Gnu_Plot.zip]
 | released               = 1 April 2020
 | status                 = stable 
 | category               = [[:Category:Plotting‏‎|Plotting‏‎]]
 | website                = 
 }}
 
-The Gnu_Plot plugin provides the glue between ImageJ and Gnuplot.  The main impetus for developing this plugin was that ImageJ is great at interrogating imaging data, Gnuplot is excellent at generating publishable plots, and I'm lazy. The trouble was in having to extract the plottable data, either from a ResultsTable or through a Java plugin, and then pasting into a ascii editor, save, run gnuplot from a terminal, display output image, and repeat. I preferred to just click a button after finding better plottable data or muck with the Gnuplot script.
+The Gnu_Plot plugin provides the glue between ImageJ and Gnuplot.  The main impetus for developing this plugin was that ImageJ is great at interrogating imaging data, Gnuplot is excellent at generating publishable plots, and I'm lazy. The trouble was in having to extract the plottable data, either from a ResultsTable or through a Java plugin, and then pasting into a ascii editor, save, run gnuplot from a terminal, display output image, and repeat. I prefer to just click a button after finding better plottable data or muck with the Gnuplot script.
 
 == Features ==
+[[File:Gnu_Plot.jpg|400px|"Gnu_Plot GUI"]]
 
-
+When run as a plugin Gnu_Plot will collect both the Gnuplot script and data and run this through the gnuplot executable as stdin, and read the image from stdout and display it in a ImagePlus window, and display any errors from stderr in the Log window.
+<br>'''Plot Title''' will be the title given to any script or image windows created.
+<br>'''Gnuplot Script''' is an Editor window that can be either, a fresh script, a script read from disk, or an existing Editor window.
+<br>'''$data#''' the ''inline/here document'' plottable datasets can be, unspecified, a PlotWindow, or, a ResultsTable. More that one dataset can be specified. 
+<br>The Gnu_Plot window can be left opened and new scripts or datasets can be discovered for subsequent selection.
+<br>'''Generate Plot''' will collect the selected information, send it through gnuplot, and present the results. You can have all but the last generated plot image retained, if desired.
+<br>'''View Complete Input''' will collect the selected information and present it in an Editor window. Great to for debugging or saving if the output needs to be reproduced later and you forget where the data came from exactly; the input is a comment added to the script file.
+<br>'''Test compatibility''' will run a very simple Gnuplot script that should produce an graphical depiction of the options for the specified terminal; input will be placed after 'set terminal ' in the script.  Not all terminals are supported everywhere, and/or, you may not have gnuplot executable installed as this plugin expects, see the Log window.
 
 == Methods ==
+<code>public static String gnuplot()</code>
+<br><code>public static String gnuplot(String gp)</code>
+<br>Identify the gnuplot executable, if needed.
+
+<code>public static ImagePlus process(String gps, String title)</code>
+<br><code>public static boolean processAndDisplay(String gps, String title)</code>
+<br>Generate plot from complete Gnuplot script.
+
+<code>public static String plotgs(String code, double[][]... arrs)</code>
+<br><code>public static String plotgs(String code, float[][]... arrs)</code>
+<br>Generate complete plot script. Each <code>arrs</code> pass(ed) in will generate a separate ''here-document'' data block.
+
+<code>public static ImagePlus plot(String title, String code, double[][]... arrs)</code>
+<br><code>public static ImagePlus plot(String title, String code, float[][]... arrs)</code>
+<br>Generate ImagePlus. Each <code>arrs</code> pass(ed) in will generate a separate ''here-document'' data block.
+
+== Coding Goodies ==
+Generating data, running it through another executable, and using the output.
+
+Updating Choice(s).
 
 == Install ==
-
+Unzip [https://imagej.net/_images/2/23/Gnu_Plot.zip Gnu_Plot.zip] into ImageJ1 plugins (File>Show Folder>Plugins) or plugins/jars directories.  Source code is in jar file.
+<br>'''Edit>Options>Gnu_Plot...''' Configure location of gnuplot executable.
+<br>'''Anaylze>Tools>Gnu_Plot...''' Runs Gnu_Plot.
 
 == Licence ==
 GPL distribution licence.
