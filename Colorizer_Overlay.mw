@@ -67,7 +67,7 @@ How to not do string overlays; there are more direct ways I discovered after bec
 
 == Install ==
 Unzip [https://imagej.net/_images/4/46/Colorizer_Overlay.zip  Colorizer_Overlay.zip] into ImageJ1 plugins (File>Show Folder>Plugins) or plugins/jars directories.  Source code in jar file.
-
+<br>'''Plugins>Annotation>Colarizer_Overlay...'''
 == Licence ==
 GPL distribution licence.
 
