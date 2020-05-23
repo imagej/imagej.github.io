@@ -24,7 +24,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -32,6 +33,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+    
 }
 
 ol, ul {
@@ -96,6 +98,7 @@ input, select, textarea {
 			-webkit-transition: none !important;
 			-ms-transition: none !important;
 			transition: none !important;
+         
 		}
 
 	body, input, select, textarea {
@@ -104,6 +107,7 @@ input, select, textarea {
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.65em;
+        
 	}
 
 	a {
@@ -3111,13 +3115,15 @@ input, select, textarea {
 		}
 
 /* Main */
+/* min-height 80vh is to resolve the footer issue from sitting in the middle of the page */     
 
 	.main {
 		padding: 6em 0 4em 0 ;
 	}
 
 		.main.style1 {
-			background: #fff;
+			background: #fff;       
+            min-height: 80vh; 
 		}
 
 		.main.style2 {
@@ -3409,7 +3415,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 4em 0 4em 0 ;
+		padding: 4em 0 4em 0 ;  
 		background-image: url("../../images/site/overlay7.png"), url("../../images/header.jpg");
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
@@ -3525,6 +3531,7 @@ input, select, textarea {
 					margin-left: 0;
 					padding: 0;
 				}
+              
 
 /* Video */
 
@@ -3814,6 +3821,7 @@ input, select, textarea {
 			.main {
 				padding: 2em 1em 0.1em 1em ;
 			}
+        
 
 		/* Header */
 
