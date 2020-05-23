@@ -10,7 +10,7 @@
 | website                = 
 }}
 
-The Colorizer_Overlay plugin provides the ability to apply a LUT, colorbar, and annotation to a map, quantified image, and overlay this upon a background image.  The impetus for this plugin was my inability to remember how to perform all the steps necessary and the laborious task of doing this again and again whenever my whim for the best representation of my data kicked in, usually right before an abstract deadline.
+The Colorizer_Overlay plugin provides the ability to apply a LUT, colorbar, and annotation to a map, quantified image, and overlay this upon a background image.  The impetus for this plugin was my inability to remember how to perform all the necessary steps and the laborious task of doing this again and again whenever my whim for the best representation of my data kicked in, usually right before an abstract deadline.
 
 == Features ==
 [[File:Colorizer_Overlay.jpg|600px]]
