@@ -153,31 +153,41 @@ This menu allows import of several Drosophila, Zebrafish and Mouse reference bra
 {{clear}}
 
 ==Analyze and Measure== 
-[[Image:reconstruction-viewer-measurement-menu.png|right|thumb|400px|]]
+[[Image:reconstruction-viewer-measurement-menu.png|right|thumb|300px|]]
 This menu houses several functions to measure and analyze loaded reconstructions.
-*'''Measure''' Shows a table of summary statistics for selected reconstructions. If measuring multiple tracings, the table can be sorted by column.
+===Tabular Results===
+*{{bc|Measure...}} Calls the {{bc|Analysis|Measure...}} command in the main SNT dialog, allowing selection of specific measurements, with the ability to distinguish neurite compartments. If measuring multiple tracings, the table is sortable by column.
+*{{bc|Quick Measurements}} Calls the {{bc|Analysis|Quick Measurements}} command in the main SNT dialog, producing a table of summary statistics for the loaded reconstructions.
+*{{bc|Save Table...}} Saves all measurements computed during a session to a .csv file.
 <div align="left">
 <ul> 
 <li style="display:inline-block;"> [[Image:reconstruction-viewer-measurements-AA0100.png|none|thumb|900px|AA0100 Measurements]] </li>
 </ul>
 </div>
-*'''Distribution Analysis...''' Plots a histogram of the selected metric. If multiple reconstructions are selected, a single analysis is conducted on the group.
+===Distribution Analysis===
+*{{bc|Branch Properties...}} Measures all branches of the currently selected reconstructions (without considering cell identity) and plots a histogram of the chosen metric, enabling quantification of branch properties across a population.
+*{{bc|Cell Properties...}} Measures each cell in the currently selected reconstructions individually and plots a histogram of the chosen metric, enabling comparison between individual cells.
 <div align="left">
 <ul> 
-<li style="display:inline-block;"> [[Image:reconstruction-viewer-AA0100-distribution-analysis.png|none|thumb|200px|AA0100 Branch Order Histogram]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-AA0100-distribution-analysis.png|none|thumb|200px|AA0100: Branch Order]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-OP-distribution-analysis.png|none|thumb|200px|9 OP fibers: # Branch Points]] </li>
 </ul>
 </div>
-*'''Sholl Analysis...''' Runs the [[Sholl_Analysis|Sholl Analysis]] plugin found in {{bc|Analyze|Sholl|Sholl Analysis (From Tracings)}}. Note only one reconstruction may be analysed at a time.
+===Single-Cell Analysis===
+[[Image:reconstruction-viewer-brain-area-analysis.png|right|thumb|300px|Brain Area Analyis: Cable Length]]
+*{{bc|Brain Area Analysis...}} Measures the amount of cable length, number of terminal nodes, or both that occur in distinct anatomical regions of the brain, with the option to restrict the analysis up to a maximum depth in the ontology hierarchy. Note that only one reconstruction may be selected at a time with this option.
+*{{bc|Create Dendrogram...}} Runs the {{bc|Utilities|Create Dendrogram...}} command found in the main SNT dialog. See [[SNT:_Analysis#Dendrogram_Viewer|Dendrogram Viewer]]. Note only one reconstruction may be selected at a time with this option.
+*{{bc|Sholl Analysis...}} Runs the [[Sholl_Analysis|Sholl Analysis]] plugin found in {{bc|Analyze|Sholl|Sholl Analysis (From Tracings)}}. Note only one reconstruction may be analysed at a time.
 <div align="left">
 <ul> 
 <li style="display:inline-block;"> [[Image:reconstruction-viewer-AA0100-sholl-table.png|none|thumb|200px|AA0100 Sholl Table]] </li>
-<li style="display:inline-block;"> [[Image:reconstruction-viewer-AA0100-sholl-plot.png|none|thumb|200px|AA0100 Sholl Plot]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-AA0100-sholl-plot.png|none|thumb|221px|AA0100 Sholl Plot]] </li>
 </ul>
 </div>
-*'''Strahler Analysis''' Conducts Strahler Analysis on the selected reconstruction. Note only one reconstruction may be analysed at a time.
+*{{bc|Strahler Analysis}} Conducts Strahler Analysis on the selected reconstruction. Note only one reconstruction may be analysed at a time.
 <div align="left">
 <ul> 
-<li style="display:inline-block;"> [[Image:reconstruction-viewer-AA0100-strahler-table.png|none|thumb|200px|AA0100 Strahler Table]] </li>
+<li style="display:inline-block;"> [[Image:reconstruction-viewer-AA0100-strahler-table.png|none|thumb|227px|AA0100 Strahler Table]] </li>
 <li style="display:inline-block;"> [[Image:reconstruction-viewer-AA0100-strahler-plot.png|none|thumb|200px|AA0100 Strahler Plot]] </li>
 </ul>
 </div>
