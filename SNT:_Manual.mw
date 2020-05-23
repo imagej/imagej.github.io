@@ -392,16 +392,16 @@ This menu contains several options which provide quick ways to analyze and visua
 {{clear}}
 
 ==Filter Toolbar==
-[[File:SNT-Path-Manager-Text-Filter.png|right|thumb|]]
-The filter toolbar allows paths to be searched and filtered quickly using tags (colors, annotations, SWC-type, etc.) or morphometric properties. The text field is used for text-based searches (recent searches can be recovered through its drop-down menu). The [[File:SNT-Text-Filter-Up-Arrow-Button.png]] and [[File:SNT-Text-Filter-Down-Arrow-Button.png]] buttons find the next/previous occurrence of the entered phrase (shortcuts: {{key|up}} {{key|down}}), while the [[File:SNT-Text-Filter-Balloon-Button.png]] button highlights all occurrences of the entered phrase. Settings for advance text-based filtering can be accessed through the [[File:SNT-Text-Filter-Advanced-Button.png]], including wildcard support, case sensitive matching, and replace-by-pattern. In addition, the ''Advanced Filtering Menu'' [[File:SNT-Text-Filter-Advanced-Button.png]] provides other sophisticated means of filtering paths:
+[[Image:SNT-Path-Manager-Text-Filter.png|right|thumb|]]
+The filter toolbar allows paths to be searched and filtered quickly using tags (colors, annotations, SWC-type, etc.) or morphometric properties. The text field is used for text-based searches (recent searches can be recovered through its drop-down menu). The {{key|down}} and {{key|up}} arrow keys find the next/previous occurrence of the entered phrase, while the [[Image:SNT-Text-Filter-Balloon-Button.png]] button highlights all occurrences of the entered phrase. Settings for advance text-based filtering can be accessed through the [[Image:SNT-Text-Filter-Menu-Button.png]] button, including wildcard support, case sensitive matching, and replace-by-pattern. In addition, the [[Image:SNT-Text-Filter-Advanced-Button.png]] button restricts filtering to the selected subset of Path(s). Other means of filtering paths include:
 [[File:SNT-Path-Manager-Text-Filter-Color-Filters.png|right|thumb|"Color Filters" menu]]
-* '''Color Filters''' Allows filtering of paths by color tags. Custom colors may be selected by right-clicking an empty swatch, which will bring up the CMYK palette. The chosen color is temporarily saved in that swatch.
-* '''Morphology Filters''' Allows filtering of paths by selected morphological properties. Note that these filters do not require paths to be labeled using {{bc|Tag|Morphology|&nbsp;}}.
-** ''Branch Order'' Filters for paths of [[Strahler Analysis|branch order]] in the inputted range. Example queries: <tt>1-2</tt>: selects all primary and secondary branches; <tt>max-max</tt>: selects all terminal branches. 
-** ''Length'' Filters for paths of length within the inputted range. Example queries: <tt>10-20</tt>: selects all paths with lengths between 10 and 20μm; <tt>max-max</tt>: selects the longest path(s).
-** ''Mean Radius'' Filters for paths of mean radius within the inputted range.
-** ''No. of Nodes'' Filters for paths with node count within the inputted range.
-** ''SWC Type'' Filters for paths with the selected SWC type tags. Note that the paths of interest must have been [[SNT:_Overview#Tag|tagged]] using  the{{bc|Tag|Type|&nbsp;}} menu.
+* '''Color Filters''' [[Image:SNT-Text-Filter-Color-Button.png]] Allows filtering of Paths by color tags. Custom colors may be selected by right-clicking an empty swatch, which will bring up the CMYK palette. The chosen color is temporarily saved in that swatch.
+* '''Morphology Filters''' [[Image:SNT-Text-Filter-Morphology-Button.png]] Allows filtering of Paths by selected morphological properties (including cell identity). Note that these filters do not require Paths to be labeled using {{bc|Tag|Morphology|&nbsp;}}.
+** ''Path Order...'' Filters for Paths of [[SNT:_Analysis#Path_Order_Analysis|Path order]] in the inputted range. Example queries: <tt>1-2</tt>: selects all primary and secondary branches; <tt>max-max</tt>: selects all terminal branches. 
+** ''Length...'' Filters for paths of length within the inputted range. Example queries: <tt>10-20</tt>: selects all paths with lengths between 10 and 20μm; <tt>max-max</tt>: selects the longest path(s).
+** ''Mean Radius...'' Filters for paths of mean radius within the inputted range.
+** ''No. of Nodes...'' Filters for paths with node count within the inputted range.
+** ''SWC Type...'' Filters for paths with the selected SWC type tags. Note that the paths of interest must have been [[SNT:_Overview#Tag|tagged]] using  the{{bc|Tag|Type|&nbsp;}} menu.
 
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling: Step-By-Step Instructions]].
