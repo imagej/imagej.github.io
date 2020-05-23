@@ -298,9 +298,9 @@ Before computing the fit, SNT will prompt you to specify two parameters:
 Assuming you chose to fit both centroids and radii, a fitted path might look like the rightmost image below. Notice how the nodes follow the center line of the structure more closely, and how each node now has a non-zero radius approximating that of the traced axon.
 <div align="center">
 <ul> 
-<li style="display:inline-block;"> [[Image:Fit-parameter-prompt.png|none|thumb|334px|Fitting parameters]] </li>
-<li style="display:inline-block;"> [[Image:Before-fitting.png|none|thumb|350px|Before fitting]] </li>
-<li style="display:inline-block;"> [[Image:After-fitting.png|none|thumb|350px|Fitted path]] </li>
+<li style="display:inline-block;"> [[Image:Fit-parameter-prompt.png|none|thumb|286px|Fitting parameters]] </li>
+<li style="display:inline-block;"> [[Image:Before-fitting.png|none|thumb|300px|Before fitting]] </li>
+<li style="display:inline-block;"> [[Image:After-fitting.png|none|thumb|300px|Fitted path]] </li>
 </ul>
 </div>
 
