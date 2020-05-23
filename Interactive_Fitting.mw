@@ -1,0 +1,48 @@
+{{Infobox
+| software               = ImageJ1
+| name                   = Interactive_Fitting
+| author                 = Fred Damen
+| filename               = Interactive_Fitting.jar
+| source                 = [https://imagej.net/_images/5/56/DICOM_open.zip Interactive_Fitting.zip]
+| released               = 1 April 2020
+| status                 = stable 
+| category               = [[:Category:Plotting‏‎|Plotting‏‎]]
+| website                = 
+}}
+
+The Interactive_Fitting plugin provides the ability to fit a plotted dataset to a function and plot the results on the same plot, and to be able to update the plot if you suspect there is a better set of parameters or a better equation.  I had noticed that an ability to fit a plotted dataset using CurveFitter was added to the PlotWindow(Data>>Add fit...).  I needed more functionality, so...
+
+== Features ==
+[[File:Interactive_Fitting.jpg]]
+
+<br>PlotWindow identified the PlotWindow that contains the plot of interest.
+<br>DataSource identifies the plotted dataset of interest.
+<br>Fit identifies the desired fitting. The <user defined> option allows an arbitrary equation, using the macro language, to be specified.  The rest of the options are CurveFitter predefined fitting options.  A user specified equation which is essentially the same as a CurveFitter option may not fit exactly the same.
+<br>Equation specifies the equation that is fitted and plotted in black. If Shift-Enter is entered in this field, another equation line is added so that it can be plotted, red, gren, blue, respectively.  No fitting is performed on these addition equations. N.B., if the results of the Copy to Clipboard were pasted into the primary equation window, upon Enter the fields will be filled in as per the clipboard information.
+<br>letter specifies the parameter value as per the primary equation. The values will be used for initial values. For the <user defined> option all the parameters are required.  For CurveFitter fitting options, if the first value is blank they will be ignored as initial parameters.  The values can be changed and if Shift-Enter is pressed the plot(s) will be updated with the updated parameters.
+<br>Offset is used by CurveFitter for user defined equations. Not required.
+<br>Multiplier is user by curveFitter for user defined equations. Not required.
+<br>Automatically reset the parameters for doFit as they are currently set.
+<br>Auto doFit when the identified DataSource(the plot object) changes.
+<br>doFit causes the fit to be performed as results plotted.
+<br>update causes the equation(s) to replotted with the current set of parameters.
+<br>Copy to Clipboard allow the information from the current settings to be captured for later use.  May be pasted into the primary equation field to recover the current equations/parameters settings.
+<br>The status field presents any pertinent details about the fitting / updating.
+
+== Coding Goodies ==
+
+
+== Install ==
+Unzip [https://imagej.net/_images/5/56/DICOM_open.zip Interactive_Fitting.zip] into ImageJ1 plugins (File>Show Folder>Plugins) or plugins/jars directories.  Source code in jar file.
+
+== Licence ==
+GPL distribution licence.
+
+== ChangeLog ==
+1 April 2020 Initial version.
+
+== Known Bugs ==
+Let me know.
+
+[[Category:Plotting‏‎]]
+[[Category:Plugins]]
