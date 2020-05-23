@@ -3,7 +3,7 @@
 | name                   = Colorizer_Overlay
 | author                 = Fred Damen
 | filename               = Colorizer_Overlay.jar
-| source                 = [https://imagej.net/_images/4/46/Colorizer_Overlay.zip Colorizer_Overlay.zip]
+| source                 = [https://imagej.net/_images/4/46/Colorizer_Overlay.zip ]
 | released               = 1 April 2020
 | status                 = stable 
 | category               = [[:Category:Image annotation‏‎|Image annotation‏‎]]
@@ -66,7 +66,7 @@ String cbwhere, String cbsize, String format, Font font, Color fgc, Color gc)</c
 How to not do string overlays; there are more direct ways I discovered after becoming happy with the plugin.
 
 == Install ==
-Unzip [https://imagej.net/_images/4/46/Colorizer_Overlay.zip] into ImageJ1 plugins (File>Show Folder>Plugins) or plugins/jars directories.  Source code in jar file.
+Unzip [https://imagej.net/_images/4/46/Colorizer_Overlay.zip  Colorizer_Overlay.zip] into ImageJ1 plugins (File>Show Folder>Plugins) or plugins/jars directories.  Source code in jar file.
 
 == Licence ==
 GPL distribution licence.
