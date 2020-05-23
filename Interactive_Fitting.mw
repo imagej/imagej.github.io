@@ -12,6 +12,8 @@
 
 The Interactive_Fitting plugin provides the ability to fit plotted data to an equation and plot the results on the same plot, and to be able to update the plot without refitting if you suspect there is a better set of parameters or a better equation.  I had noticed that an ability to fit a plotted dataset using CurveFitter was added to the PlotWindow(Data>>Add fit...).  I needed more functionality, so...
 
+N.B., I wish to express gratitude to the immense work that I was able to add a little part to.
+
 == Features ==
 [[File:Interactive_Fitting.jpg|800px]]
 <br>'''PlotWindow''' identifies the PlotWindow that contains the plot of interest.
@@ -37,7 +39,7 @@ Interrogating plots and reacting as they change.
 
 == Install ==
 Unzip [https://imagej.net/_images/9/92/Interactive_Fitting.zip Interactive_Fitting.zip] into ImageJ1 plugins (File>Show Folder>Plugins) or plugins/jars directories.  Source code in jar file.
-
+<br>'''Plugins>Interactive>Interactive_Plotting...'''
 == Licence ==
 GPL distribution licence.
 
