@@ -231,13 +231,12 @@ If tracing on a multi-dimensional image (i.e., one with multiple data channels a
 [[File:SNT-3D-Tab.png|right|thumb|300px|"3D" menu tab]]
 This tab aggregates widgets related to 3D interaction.
 ===Reconstruction Viewer===
-The Reconstruction Viewer is an advanced OpenGL visualization tool. For performance reasons, some Path Manager changes may need to be synchronized manually from RV controls. To open Reconstruction Viewer with the currently loaded tracings, press ''Open Reconstruction Viewer''. For more information, see the Reconstruction Viewer wiki page.
+The [https://imagej.net/SNT:_Reconstruction_Viewer Reconstruction Viewer] is an advanced, fully scriptable OpenGL viewer enabling 3D visualization and interaction with reconstructions, OBJ meshes (including multiple model organism neuropil annotations and reference brains), computed surfaces (convex hulls) and other shape annotations. For performance reasons, some Path Manager changes may need to be synchronized manually from the RV controls. To open Reconstruction Viewer with the current contents of the Path Manager, press ''Open Reconstruction Viewer''. To instead open the viewer as a standalone application, go to {{bc|Plugins|NeuroAnatomy|Reconstruction Viewer...}} in the main Fiji dialog.
+===SciView=== 
+[[SciView|SciView]] is IJ2's modern replacement for the Legacy 3D Viewer, providing sophisticated 3D visualization and virtual reality capabilities for arbitrarily large image volumes and meshes. Since it is fully integrated with SNT, SciView can enhance tracing, analysis and visualization routines by providing a deeper, more contextualized view of the data at hand. Additionally, native integration with [https://github.com/morphonets/cx3d Cx3D] enables simulation of neurodevelopmental processes, including neuronal growth and formation of cortical circuits. See [https://imagej.net/SNT:_Modeling SNT: Modeling] for details.
 ===Legacy 3D Viewer===
 The Legacy 3D Viewer is a functional tracing canvas but it depends on outdated services that are now deprecated. It may not function reliably on recent operating systems. For usage instructions, see [[SNT:_Step-By-Step_Instructions#Tracing_in_the_Legacy_3D_Viewer|Tracing using the Legacy 3D Viewer]].
-===SciView=== 
-[[SciView|SciView]] is IJ2's modern replacement for the Legacy 3D Viewer providing 3D visualization and virtual reality capabilities for both images and meshes. It is not yet available in SNT.
 {{clear}}
-
 
 =Contextual Menu=
 Right-clicking on any of the image views will bring up a menu with various editing tools. The corresponding keyboard shortcuts are shown to the right of each option.
