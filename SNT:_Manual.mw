@@ -26,7 +26,7 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 * {{bc|Reset SNT and Restart...}} Resets all preferences and restarts SNT.
 <div align="left">
 <ul> 
-<li style="display:inline-block;"> [[Image:SNT-Path-CSV-Properties-Example-Spreadsheet.png|none|thumb|600px|Exported measurements for OP_1]] </li>
+<li style="display:inline-block;"> [[Image:SNT-Path-CSV-Properties-Example-Spreadsheet.png|none|thumb|1000px|Exported measurements for OP_1]] </li>
 </ul>
 </div>
 {{clear}}
