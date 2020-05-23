@@ -156,7 +156,7 @@ Save the result using {{bc | File | Save As|Tiff...}} ("test-filtered.tif", for 
 </ul>
 </div>
 To display the image in a separate window, from the SNT dialog use {{bc|Show Cached Image}} from the ''gear'' menu or {{bc | View | Show Cached ''Secondary Image''}}.
-[[File:display-filtered-image.png|center|thumb|500px|Secondary Image Overlay at 50% Opacity]]
+[[File:display-filtered-image.png|center|thumb|400px|Secondary Image MIP]]
 
 ====Multiple Images====
 The easiest way to preprocess multiple images is to record a macro for processing a single image, then wrap it in a loop to iterate over all files in a directory. For example, using IJ1 macro language:
