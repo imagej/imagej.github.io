@@ -121,25 +121,28 @@ This menu relates to the import, customization and management of rendered recons
 {{clear}}
 
 ==Reference Brains==
-This menu contains several Drosophila and Mouse reference brains.
-[[Image:reconstruction-reference-brains-menu.png|right|thumb|400px|]]
-*'''Drosophila (Adult)''' 
-**'''FlyCircuit''' FlyCircuit Drosophila reference brain
-**'''JFRC2 (VFB)''' Janelia Farm Research Campus Virtual Fly Brain
-**'''JFRC3''' Janelia Farm Research Campus Drosophila reference brain (Version 3)
-**'''Adult VNS'''  Adult Drosophila ventral nervous system reference
-*'''Drosophila (Embryonic)''' 
-**'''Larva L1''' Drosophila 1st instar larval stage
-**'''Larva L3''' Drosophila 3rd instar larval stage
-*'''Mouse (Adult): Allen CCF Navigator''' Import and navigation system for the Allen Adult Mouse Common Coordinate Framework v3. Selecting this option imports the Whole Brain reference mesh, and presents a GUI allowing search, information, and import of Mouse Brain ontologies contained in the Allen Common Coordinate Framework v3.
+This menu allows import of several Drosophila, Zebrafish and Mouse reference brains and anatomical compartments.
+[[Image:reconstruction-reference-brains-menu.png|right|thumb|300px|]]
+===Mouse===
+*{{bc|Allen CCF Navigator (Adult)}} Import and navigation system for the Allen Adult Mouse Common Coordinate Framework v3. Selecting this option imports the Whole Brain reference mesh, and presents a GUI allowing search, metadata retrieval, and import/rendering of ontologies contained in the Allen Common Coordinate Framework v3.
 <div align="left">
 <ul> 
 <li style="display:inline-block;"> [[Image:reconstruction-viewer-allen-ccf-ontology.png|none|thumb|200px|Allen CCF Navigator]] </li>
 <li style="display:inline-block;"> [[Image:reconstruction-viewer-allen-ccf-thalamus-info.png|none|thumb|200px|Allen CCF Ontology Info]] </li>
 </ul>
 </div>
-*'''Zebrafish (Embryonic)'''
-**'''Max Planck ZBA''' Max Planck Zebrafish Brain Atlas
+===Zebrafish===
+*{{bc|Max Planck ZBA}} Max Planck Zebrafish Brain Atlas
+===Drosophila===
+*{{bc|Adult Brain: FlyCircuit}} FlyCircuit Drosophila reference brain
+*{{bc|Adult Brain: JFRC 2018}} Janelia Farm Research Campus 2018 Drosophila reference brain
+*{{bc|Adult Brain: JRFC2 (VFB)}} Janelia Farm Research Campus Virtual Fly Brain
+*{{bc|Adult Brain: JFRC3}} Janelia Farm Research Campus Drosophila reference brain (Version 3)
+*{{bc|Adult VNS}}  Adult Drosophila ventral nervous system reference
+*{{bc|Larva L1}} Drosophila 1st instar larval stage
+*{{bc|Larva L3}} Drosophila 3rd instar larval stage
+
+
 <div align="center">
 <ul> 
 <li style="display:inline-block;"> [[Image:reconstruction-flycircuit-reference.png|none|thumb|300px|FlyCircuit Drosophila (Adult)]] </li>
