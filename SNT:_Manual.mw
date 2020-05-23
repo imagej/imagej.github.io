@@ -263,7 +263,7 @@ The Path Manager dialog displays all existing paths in a hierarchical structure 
 
 ==Menu Commands==
 ===Edit===
-[[File:SNT-Path-Manager-Edit.png|right|thumb|200px|"Edit" menu]]
+[[File:SNT-Path-Manager-Edit.png|right|thumb|250px|"Edit" menu]]
 * {{bc|Delete...}} Removes selected Path(s) from the Path Manager. If no Paths are selected, all Paths are deleted.
 * {{bc|Rename...}} Renames the selected Path. Only one Path may be renamed at a time.
 * {{bc|Make Primary}} Makes the selected Path the primary Path, moving it to the top of the tree hierarchy. Note that this will alter parent-child relationships between Paths and, by consequence, individual nodes.
