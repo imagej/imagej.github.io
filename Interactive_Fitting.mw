@@ -3,7 +3,7 @@
 | name                   = Interactive_Fitting
 | author                 = Fred Damen
 | filename               = Interactive_Fitting.jar
-| source                 = [https://imagej.net/_images/5/56/DICOM_open.zip Interactive_Fitting.zip]
+| source                 = [https://imagej.net/_images/9/92/Interactive_Fitting.zip Interactive_Fitting.zip]
 | released               = 1 April 2020
 | status                 = stable 
 | category               = [[:Category:Plotting‏‎|Plotting‏‎]]
@@ -13,8 +13,7 @@
 The Interactive_Fitting plugin provides the ability to fit plotted data to an equation and plot the results on the same plot, and to be able to update the plot without refitting if you suspect there is a better set of parameters or a better equation.  I had noticed that an ability to fit a plotted dataset using CurveFitter was added to the PlotWindow(Data>>Add fit...).  I needed more functionality, so...
 
 == Features ==
-[[File:Interactive_Fitting.jpg]]
-
+[[File:Interactive_Fitting.jpg|800px]]
 <br>'''PlotWindow''' identifies the PlotWindow that contains the plot of interest.
 <br>'''DataSource''' identifies the plotted dataset of interest.
 <br>'''Fit''' identifies the desired fitting. The ''<user defined>'' option allows an arbitrary equation, using the macro language, to be specified.  The rest of the options are CurveFitter predefined fitting options.  A user specified equation which is essentially the same as a CurveFitter option may not fit exactly the same.
@@ -37,7 +36,7 @@ Evaluating equations using the macro processor.
 Interrogating plots and reacting as they change.
 
 == Install ==
-Unzip [https://imagej.net/_images/5/56/DICOM_open.zip Interactive_Fitting.zip] into ImageJ1 plugins (File>Show Folder>Plugins) or plugins/jars directories.  Source code in jar file.
+Unzip [https://imagej.net/_images/9/92/Interactive_Fitting.zip Interactive_Fitting.zip] into ImageJ1 plugins (File>Show Folder>Plugins) or plugins/jars directories.  Source code in jar file.
 
 == Licence ==
 GPL distribution licence.
