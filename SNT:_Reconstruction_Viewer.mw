@@ -18,6 +18,7 @@ The Reconstruction Viewer may be used as either a standalone program or from wit
 =Scene Interaction=
 The display canvas supports multiple modes of interaction, including controlled rotations, panning, zoom, scaling, animation, and alternation between "dark" and "light" modes. The full list of keyboard shortcuts is found by navigating to {{bc|Scene Controls|Scene Shortcuts...}} from RV Controls, or by pressing {{key|H}} (notification) or {{key|F1}} (separate window) in the Viewer scene.
 [[Image:reconstruction-viewer-shortcuts.png|left|thumb|400px|]]
+{{clear}}
 
 =RV Controls=
 ==Scene Controls==
