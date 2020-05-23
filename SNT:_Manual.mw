@@ -51,6 +51,7 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 </div>
 * {{bc|Compare Reconstructions...}} Allows morphometric conparison of two single reconstruction files or multiple groups of reconstruction files. See [https://imagej.net/SNT:_Analysis#Comparing_Reconstructions Comparing Reconstructions] for details. 
 * {{bc|Create Dendrogram}}  Generates a Dendrogram plot of a connected component (i.e, one rooted tree structure in the Path Manager). See [https://imagej.net/SNT:_Analysis#Dendrogram_Viewer Dendrogram Viewer] for details. 
+* {{bc|Batch Scripts|&nbsp;}} A collection of batch processing scripts related to image processing, reconstruction analysis and data curation. See [https://imagej.net/SNT:_Scripting#Batch Script Templates: Batch] for details.
 {{clear}}
 
 ===Scripts===
