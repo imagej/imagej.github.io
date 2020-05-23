@@ -184,7 +184,7 @@ If tracing on a multi-dimensional image (i.e., one with multiple data channels a
 
 ===Views===
 [[File:SNT-views-widget.png|right|thumb|]]
-* '''Overlay MIP(s) at X% opacity''' Overlays the [https://en.wikipedia.org/wiki/Maximum_intensity_projection Maximum Intensity Projection] of the image "over" the image canvas at the specified opacity. Overlaid projection is only used as a visualization aid and is ignored by the auto-tracing algorithms. It is rendered using the LUT of the channel currently being traced. To reload the overlay (e.g., in case the image being traced changes during a tracing session) toggle the checkbox twice.
+* '''Overlay MIP(s) at X% opacity''' Overlays the [https://en.wikipedia.org/wiki/Maximum_intensity_projection Maximum Intensity Projection] of the image "over" the image canvas at the specified opacity. The overlaid projection is only used as a visualization aid and is ignored by the auto-tracing algorithms. It is rendered using the LUT of the channel currently being traced. To reload the overlay (e.g., in case the image being traced changes during a tracing session) toggle the checkbox twice.
 {{clear}}
 <div align="center">
 <ul> 
