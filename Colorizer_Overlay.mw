@@ -4,7 +4,7 @@
 | author                 = Fred Damen
 | filename               = Colorizer_Overlay.jar
 | source                 = [https://imagej.net/_images/4/46/Colorizer_Overlay.zip Colorizer_Overlay.zip]
-| released               = 1 April 2019
+| released               = 1 April 2020
 | status                 = stable 
 | category               = [[:Category:Image annotation‏‎|Image annotation‏‎]]
 | website                = 
@@ -25,7 +25,7 @@ The process of generating a colorized overlay is best, but not required, done in
 '''''then...'''''
 <br>'''Scale''' identifies the rescaling of the images that is done before any annotation is performed. ''W'' and ''H'' are the scaling factor, 1 and 100% are the same. The ''w'' and ''h'' are columns and rows of voxels added to the resulting image before annotation.
 <br>'''Interpolation''' identifies the means by which the image will be scaled.
-<br>'''Boarder''' identifies the location of the source image in result, i.e., opposite of where to stick the boarder voxels.
+<br>'''Boarder''' identifies the location of the source image in the resultant image, i.e., opposite of where to stick the boarder voxels.
 
 '''''then...'''''
 <br>'''ColorBar''' identifies if and where a colorbar should be placed.
