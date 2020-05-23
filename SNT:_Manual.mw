@@ -308,7 +308,7 @@ Assuming you chose to fit both centroids and radii, a fitted path might look lik
 * {{bc|Fill Out...}} Begins the filling process for selected paths. For detailed instructions see [[SNT:_Step-By-Step_Instructions#Filling|Filling: Step-By-Step Instructions]].
 
 ===Analyze===
-This menu contains several options which provide quick ways to analyze and visualize numerical properties of paths. 
+This menu contains several options which provide quick ways to analyze and visualize numerical properties of paths. Note that these operations are only applied to the subset of currently selected Path(s). To apply these operations to the entire Tree, deselect all Paths first.
 [[File:SNT-Path-Manager-Analyze-Menu.png|right|thumb|"Analyze" menu]]
 * {{bc|Color Coding...}} Assigns color codes to paths based on the chosen metric. 
 ** ''Color by'' Drop-down menu containing the metrics which inform the color mapping. 
@@ -341,10 +341,10 @@ This menu contains several options which provide quick ways to analyze and visua
 |}
 </center>
 {{clear}}
-* '''Measure''' Shows a table of summary statistics for selected paths. If measuring multiple tracings, the table can be sorted by column.
+* {{bc|Measure.../Quick Measurements}} Shows a table of summary statistics for selected paths. The former command allows for specific selections of metrics. If measuring multiple tracings, the table can be sorted by column.
 [[File:SNT-Path-Manager-Measurements.png|center|thumb|1000px|Measurements table for OP_1]]
 {{clear}}
-* '''Convert to ROIs''' Allows conversion of paths to [https://imagej.nih.gov/ij/docs/guide/146-10.html#sec:Selections-Intro ROIs] (Regions of Interest). Creates an instance of the [https://imagej.nih.gov/ij/docs/guide/146-30.html#fig:The-ROI-Manager ROI Manager]
+* {{bc|Convert to ROIs...}} Allows conversion of Path(s) to ImageJ [https://imagej.nih.gov/ij/docs/guide/146-10.html#sec:Selections-Intro ROIs] (Regions of Interest). Creates an instance of the [https://imagej.nih.gov/ij/docs/guide/146-30.html#fig:The-ROI-Manager ROI Manager]
 ** ''Convert'' Drop-down menu specifying the compartment to convert.
 ** ''View'' Drop-down menu specifying which view to overlay the ROIs.
 ** ''Impose SWC colors''
@@ -361,7 +361,7 @@ This menu contains several options which provide quick ways to analyze and visua
 |}
 </center>
 {{clear}}
-* '''Plot Profile''' Uses the pixel intensity values under point annotations to generate a pixel intensity vs. distance plot for selected paths.
+* {{bc|Plot Profile}} Uses the pixel intensity values under point annotations to generate a pixel intensity vs. distance (from the start node of a Path) plot for selected Path(s).
 <center>
 {|
 |-
@@ -372,7 +372,7 @@ This menu contains several options which provide quick ways to analyze and visua
 |}
 </center>
 {{clear}}
-* '''Skeletonize''' Outputs a binary image that is a topographic skeleton, ie, it generates an empty (zero-filled) image of the same dimensions of the one being traced, then paints a pixel at each node coordinates following the topographic rules of bitmap skeletons in which fork points, tips and slab voxels are determined by voxel connectivity.
+* {{bc|Skeletonize...}} Outputs a binary image that is a topographic skeleton, ie, it generates an empty (zero-filled) image of the same dimensions of the one being traced, then paints a pixel at each node coordinates following the topographic rules of bitmap skeletons in which fork points, tips and slab voxels are determined by voxel connectivity.
 ** ''Roi filtering''
 *** ''None''
 *** ''Convert only segments contained by ROI''
@@ -388,7 +388,7 @@ This menu contains several options which provide quick ways to analyze and visua
 |}
 </center>
 {{clear}}
-* '''Save as SWC''' Exports selected paths as an [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html SWC] file. Note the paths to be exported must include a primary path (i.e., one a the top level in the Path Manager tree).
+* {{bc|Save Subset as SWC...}} Exports the selected subset of Path(s) as an [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html SWC] file. Note the paths to be exported must include a primary path (i.e., one at the top level in the Path Manager hierarchy).
 {{clear}}
 
 ==Filter Toolbar==
