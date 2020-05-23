@@ -191,6 +191,7 @@ This menu houses several functions to measure and analyze loaded reconstructions
 <li style="display:inline-block;"> [[Image:reconstruction-viewer-AA0100-strahler-plot.png|none|thumb|200px|AA0100 Strahler Plot]] </li>
 </ul>
 </div>
+{{clear}}
 
 ==Utilities==
 [[Image:reconstruction-viewer-tools-menu.png|right|thumb|400px]]
@@ -204,3 +205,15 @@ This menu houses several functions to measure and analyze loaded reconstructions
 *{{bc|Script This Viewer In...}} Prompts for selection of scripting language before running the previous command. 
 *{{bc|Log Scene Details}} {{key|L}} Logs detailed information about the current scene (e.g., currently visible objects, API calls, etc.)  to the Console. This facilitates programmatic control over the Viewer's scene.
 *{{bc|Debug Mode}} Logs detailed information about plugin usage, including warnings and errors to the Console.
+{{clear}}
+
+==Settings==
+[[Image:reconstruction-viewer-settings-menu.png|right|thumb|400px]]
+===Keyboard & Mouse Sensitivity===
+A sub-menu with options for sensitivity of mouse and keyboard scene interaction. Note that a default shared sensitivity parameter can be specified for panning, zooming and rotating (using hotkeys) in the {{bc|Global Preferences...}} dialog.
+*{{bc|Pan Accuracy|&nbsp;}} Sets the responsiveness of panning. A lower step size is more responsive.
+*{{bc|Rotation Steps (Arrow Keys)|&nbsp;}} Sets the number of degrees of a single rotation step. Note this preference only applies to rotations made with the Left/Right Arrow keys.
+*{{bc|Zoom Steps (+/-) Keys|&nbsp;}} Sets the percentage of a single zoom step.
+===Misc. Preferences ===
+*{{bc|Enable Hardware Acceleration}} Use hardware accelerated 3D graphics.
+*{{bc|Global Preferences...}} Configurable preferences for snapshot recordings, keyboard and mouse controls, and the preferred scripting language for the Viewer. Preferences persist across plugin sessions.
