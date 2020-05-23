@@ -263,14 +263,14 @@ The Path Manager dialog displays all existing paths in a hierarchical structure 
 
 ==Menu Commands==
 ===Edit===
-* '''Delete''' Removes selected path(s) from the Path Manager.
-* '''Rename''' Renames the selected path.
-* '''Make Primary''' Makes the selected path the primary path, moving it to the top of the tree. Note that this will alter the reconstruction topology.
-* '''Disconnect'''  Disconnects the selected path from all of its connections (Undoable operation)
-* '''Merge''' Merges the selected paths (at least two) into one. Note the starting node of path ''i'' is merged to the endpoint of path ''i+1''
-* '''Specify Radius''' Assigns a constant radius to all the nodes of selected path(s). This setting only applies to unfitted paths and overrides any existing values. 
+* {{bc|Delete...}} Removes selected Path(s) from the Path Manager. If no Paths are selected, all Paths are deleted.
+* {{bc|Rename...}} Renames the selected Path. Only one Path may be renamed at a time.
+* {{bc|Make Primary}} Makes the selected Path the primary Path, moving it to the top of the tree hierarchy. Note that this will alter parent-child relationships between Paths and, by consequence, individual nodes.
+* {{bc|Disconnect...}}  Disconnects the selected Path from all of its connected Path(s) (Undoable operation).
+* {{bc|Merge...}} Merges the selected Paths (at least two) into one. Note the starting node of Path ''i'' is merged to the endpoint of Path ''i+1''.
+* {{bc|Specify Radius...}} Assigns a constant radius to all the nodes of selected Path(s). This setting only applies to unfitted Paths and overrides any existing values. 
 [[File:SNT-Path-Manager-Edit.png|right|thumb|200px|"Edit" menu]]
-* '''Ramer-Douglas-Peuker Downsampling''' Given an inputted maximum permitted distance between adjacent nodes, performs [https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm Ramer-Douglas-Peucker] downsampling on the selected path(s).
+* {{bc|Ramer-Douglas-Peuker Downsampling...}} Given an inputted maximum permitted distance between adjacent nodes, performs [https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm Ramer-Douglas-Peucker] downsampling on the selected Path(s).
 
 ===Tag===
 [[File:SNT-Path-Manager-Tag.png|right|thumb|]]
