@@ -165,12 +165,12 @@ By default, finished paths are colored by their selection status (only selected 
 
 '''Enforce default colors (ignore color tags)''' If active, SNT will force all paths to conform to the default "Selected" and "Deselected" color buttons. Any custom color tags will be ignored until the option is toggled off. Note that this options does not apply to [[SNT:_Reconstruction_Viewer|Rec. Viewer]] and [[SciView]].
 
-{{Tip| id = coloring-paths|tip = The [[#Path Manager|Path Manager]] offers several ways to colorize Paths: 1) Using {{bc | Tag | Color}} swatches (custom colors can be temporarily assigned to empty swatches, by right-clinking on them) or 2) Using {{bc|Analyze|Color Coding}}, providing morphometric-based [[SNT:_Overview#Analyze|color mapping]]. Note that Path Manager commands are applied to all paths if no no path(s) are selected.
+{{Tip| id = coloring-paths|tip = The [[#Path Manager|Path Manager]] offers several ways to colorize Paths: 1) Using {{bc | Tag | Color}} swatches (custom colors can be temporarily assigned to empty swatches, by right-clicking on them) or 2) Using {{bc|Analyze|Color Coding...}}, providing morphometric-based [[SNT:_Overview#Analyze|color mapping]]. Note that Path Manager commands are applied to all paths if no paths are selected.
 <div align="center">
 <ul> 
-<li style="display:inline-block;"> [[Image:Path-manager-color-tag.png|none|thumb|200px|Color tagging]] </li>
-<li style="display:inline-block;"> [[Image:Color-tag-result-2.png|none|thumb|200px|Arbitrary path coloring]] </li>
-<li style="display:inline-block;"> [[Image:Color-tag-result-image.png|none|thumb|200px|Result]] </li>
+<li style="display:inline-block;"> [[Image:Path-manager-color-tag.png|none|thumb|272px|Color tagging]] </li>
+<li style="display:inline-block;"> [[Image:Color-tag-result-2.png|none|thumb|150px|Arbitrary path coloring]] </li>
+<li style="display:inline-block;"> [[Image:Color-tag-result-image.png|none|thumb|217px|Result]] </li>
 </ul>
 </div>
 }}
