@@ -273,15 +273,14 @@ The Path Manager dialog displays all existing paths in a hierarchical structure 
 * {{bc|Ramer-Douglas-Peuker Downsampling...}} Given an inputted maximum permitted distance between adjacent nodes, performs [https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm Ramer-Douglas-Peucker] downsampling on the selected Path(s).
 
 ===Tag===
-[[File:SNT-Path-Manager-Tag.png|right|thumb|]]
+[[File:SNT-Path-Manager-Tag.png|right|thumb|"Tag" Menu]]
 Assigns tags to Paths. Tags are organized in the following categories:
-* '''Type''' Type of neurite compartment (''Axon'', ''(Basal) Dendrite'', etc.), as used by the SWC format. It is also possible to pair each type with a color tag by enabling the respective option in {{bc|Tag|Options..}}<br>These tags are considered to be essential annotations and all paths are assigned the ''Undefined''-type tag when created. For this reason they are not eliminated by the ''Remove All Tags'' command.
-* '''Color''' A preset swatch color, a custom one chosen from the color chooser.  Note that is also possible to assign mapping LUTs using the {{bc|Analyze|Color Coding}} command.
-* '''Image Metadata''' Information on hyperstack position details  (e.g., channel or frame on which a path was traced).
-* '''Morphology''' Morphometric properties, such as ''Path length'', ''Path mean radius'' or ''[[Strahler Analysis|branch order]]''.
-* '''Custom''' Ad-hoc comments.
+* {{bc|Type|&nbsp;}} Type of neurite compartment (''Axon'', ''(Basal) Dendrite'', ''Soma'', etc.), as used by the SWC file format. It is also possible to pair each type with a color tag through the {{bc|Tag|Options..}} dialog<br>These tags are considered to be essential annotations and all paths are assigned the ''Undefined''-type tag when created. For this reason they are not eliminated by the ''Remove All Tags'' command.
+* {{bc|Color|&nbsp;}} A preset swatch color, or a custom one chosen from the color chooser (right-click on a blank swatch). Note it is also possible to assign a metric-based color mapping using the {{bc|Analyze|Color Coding...}} command.
+* {{bc|Image Metadata|&nbsp;}} Information on hyperstack position details  (e.g., channel, frame or slice labels on which a path was traced).
+* {{bc|Morphometry|&nbsp;}} Morphometric properties, such as ''Path length'', ''Path mean radius'' or ''[[SNT:_Analysis#Path_Order_Analysis|Path order]]''.
+* {{bc|Custom...}} Ad-hoc comments.
 Note that only SWC-type tags are preserved across restarts when saving traces in the SWC format. All others require data to be saved in SNT's own .Traces format.
-
 
 ===Refine/Fit===
 [[File:Fit-manager.png|right|thumb]]
