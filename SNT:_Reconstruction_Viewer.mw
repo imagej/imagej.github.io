@@ -61,40 +61,44 @@ This menu provides control over the rendered scene.
 
 ==Manage and Customize Neuronal Arbors==
 This menu relates to the import, customization and management of rendered reconstructions.
+===Add===
 [[Image:reconstruction-manage-arbors-menu.png|right|thumb|400px|]]
-*'''Import File...''' Imports and renders a single reconstruction file (".swc" or ".traces"). A color may be chosen on import or applied later using the "Customize" sub-menu. Note that loaded files will not be listed in the Path Manager.
-*'''Import Directory...''' Imports and renders all reconstruction files in a directory. A single color may be applied to all reconstructions or they may be colored uniquely. Note that loaded files will not be listed in the Path Manager.
-*'''Load from Database''' Allows import and rendering of reconstruction files fetched from the FlyCircuit, MouseLight and NeuroMorpho remote databases.
-*'''Customize''' A sub-menu containing color coding and rendering options for plotted reconstructions. 
-**'''Assign Color...''' Assigns the chosen homogeneous color to all selected reconstructions.
-**'''Color Coding (Individual Cells)...''' Applies morphometric color mapping to selected reconstructions. The chosen LUT is used to assign a metric-based color gradient to each reconstruction.
+*{{bc|Import File...}} Imports and renders a single reconstruction file (".swc" or ".traces"). A color may be chosen on import or applied later using the "Customize & Adjust" sub-menu. Note that loaded files will not be listed in the Path Manager.
+*{{bc|Import Directory...}} Imports and renders all reconstruction files in a directory. A single color may be applied to all reconstructions or they may be colored uniquely. Note that loaded files will not be listed in the Path Manager.
+* {{bc|Import & Compare Groups...}} Calls the {{bc|Utilities|Compare Reconstructions...}} command found in the main SNT dialog, allowing import, rendering and comparison of multiple groups of reconstructions.
+*{{bc|Load from Database|&nbsp;}} Allows import and rendering of reconstruction files fetched from the FlyCircuit, MouseLight and NeuroMorpho remote databases.
+===Customize & Adjust===
+*{{bc|All Parameters...}} Allows customization of color, transparency and thickness parameters by neurite compartment in a single dialog.
+*{{bc|Color...}} Assigns the chosen homogeneous color to all selected reconstructions.
+*{{bc|Color Coding|Individual Cells...}} Applies morphometric color mapping to selected reconstructions. The chosen LUT is used to assign a metric-based color gradient to each reconstruction.
 <div align="left">
 <ul> 
 <li style="display:inline-block;"> [[Image:reconstruction-viewer-color-mapping-individual.png|none|thumb|200px|Branch Order and Ice LUT]] </li>
 </ul>
 </div>
-**'''Color Coding (Group of Cells)...''' Applies morphometric color coding to a selected group of reconstruction. Note that this option uses the chosen LUT to assign a homogeneous color to each reconstruction in the group based on the chosen metric.
+*{{bc|Color Coding|Group of Cells...}} Applies morphometric color coding to a selected group of reconstruction. Note that this option uses the chosen LUT to assign a homogeneous color to each reconstruction in the group based on the chosen metric.
 <div align="left">
 <ul>
 <li style="display:inline-block;"> [[Image:reconstruction-viewer-color-mapping-group.png|none|thumb|200px|No. Branch Points and Ice LUT]] 
 </ul>
 </div>
-**'''Color Each Cell Uniquely''' Applies a unique homogeneous color to each selected reconstruction. Note this option will override any previously applied color mapping to the selected reconstructions.
+*{{bc|Color Coding|Color Each Cell Uniquely}} Applies a unique homogeneous color to each selected reconstruction. Note this option will override any previously applied color mapping to the selected reconstructions.
 <div align="left">
 <ul> 
 <li style="display:inline-block;"> [[Image:reconstruction-viewer-color-mapping-unique.png|none|thumb|200px|Unique Color Coding]] </li>
 </ul>
 </div>
-**'''Thickness...''' Specifies a constant thickness to be applied to the selected reconstructions. Note this value will only affect how Paths are displayed in the Reconstruction Viewer.
+*{{bc|Thickness...}} Specifies a constant thickness to be applied to the selected reconstructions. Note this value will only affect how Paths are displayed in the Reconstruction Viewer.
 <div align="left">
 <ul> 
 <li style="display:inline-block;"> [[Image:reconstruction-viewer-thickness-1.png|none|thumb|200px|Thickness = 1.0]] </li>
 <li style="display:inline-block;"> [[Image:reconstruction-viewer-thickness-5.png|none|thumb|200px|Thickness = 5.0]] </li>
 </ul>
 </div>
-**'''Translate...''' Specifies a translation to be applied to the selected reconstructions. To avoid overwriting data from a tracing session, this command is only available in the standalone viewer.
-*'''Remove Selected...''' Deletes the selected reconstructions from the scene.
-*'''Remove All...''' Deletes all reconstructions from the scene.
+*{{bc|Translate...}} Specifies a translation to be applied to the selected reconstructions. To avoid overwriting data from a tracing session, this command is only available in the standalone viewer.
+===Remove===
+*{{bc|Remove Selected...}} Deletes the selected reconstructions from the scene.
+*{{bc|Remove All...}} Deletes all reconstructions from the scene.
 
 ==Manage and Customize 3D Meshes==
 [[Image:reconstruction-viewer-mesh-controls.png|right|thumb|400px|]]
