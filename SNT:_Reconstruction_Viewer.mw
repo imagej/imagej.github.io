@@ -101,15 +101,17 @@ This menu relates to the import, customization and management of rendered recons
 *{{bc|Remove All...}} Deletes all reconstructions from the scene.
 
 ==Manage and Customize 3D Meshes==
-[[Image:reconstruction-viewer-mesh-controls.png|right|thumb|400px|]]
+[[Image:reconstruction-viewer-mesh-controls.png|right|thumb|250px|]]
 [[Image:reconstruction-viewer-customize-mesh-controls.png|right|thumb|400px|{{bc|Customize|All Parameters...}}]]
-*'''Import OBJ File(s)...''' Allows import and rendering of Wavefront OBJ files, commonly used to represent surface meshes of anatomical structures. 
-*'''Customize''' sub-menu providing control over rendering parameters of surface meshes.
-**'''All Parameters...''' Allows adjustment of the color and transparency of the selected mesh(es) and their computed bounding boxes in a single menu.
-**'''Color...''' Sets the color of the selected mesh(es).
-**'''Transparency...''' Sets the transparency of the selected mesh(es).
-*'''Remove Selected...''' Deletes the selected mesh(es) from the scene.
-*'''Remove All...''' Deletes all imported mesh(es) from the scene.
+===Add===
+*{{bc|Import OBJ File(s)...}} Allows import and rendering of Wavefront OBJ files, commonly used to represent surface meshes of anatomical structures. 
+===Customize===
+*{{bc|All Parameters...}} Allows adjustment of the color and transparency of the selected mesh(es) and/or their computed bounding boxes in a single menu.
+*{{bc|Color...}} Allows choice of mesh color from a generic CMYK profile.
+*{{bc|Transparency...}} Sets mesh transparency as a percentage value.
+===Remove===
+*{{bc|Remove Selected...}} Deletes the selected mesh(es) from the scene.
+*{{bc|Remove All...}} Deletes all imported mesh(es) from the scene.
 <div align="left">
 <ul> 
 <li style="display:inline-block;"> [[Image:reconstruction-viewer-obj-transparency-5.png|none|thumb|300px|Transparency = 5%]] </li>
