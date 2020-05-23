@@ -398,10 +398,10 @@ The filter toolbar allows paths to be searched and filtered quickly using tags (
 * '''Color Filters''' [[Image:SNT-Text-Filter-Color-Button.png]] Allows filtering of Paths by color tags. Custom colors may be selected by right-clicking an empty swatch, which will bring up the CMYK palette. The chosen color is temporarily saved in that swatch.
 * '''Morphology Filters''' [[Image:SNT-Text-Filter-Morphology-Button.png]] Allows filtering of Paths by selected morphological properties (including cell identity). Note that these filters do not require Paths to be labeled using {{bc|Tag|Morphology|&nbsp;}}.
 ** ''Path Order...'' Filters for Paths of [[SNT:_Analysis#Path_Order_Analysis|Path order]] in the inputted range. Example queries: <tt>1-2</tt>: selects all primary and secondary branches; <tt>max-max</tt>: selects all terminal branches. 
-** ''Length...'' Filters for paths of length within the inputted range. Example queries: <tt>10-20</tt>: selects all paths with lengths between 10 and 20μm; <tt>max-max</tt>: selects the longest path(s).
-** ''Mean Radius...'' Filters for paths of mean radius within the inputted range.
-** ''No. of Nodes...'' Filters for paths with node count within the inputted range.
-** ''SWC Type...'' Filters for paths with the selected SWC type tags. Note that the paths of interest must have been [[SNT:_Overview#Tag|tagged]] using  the{{bc|Tag|Type|&nbsp;}} menu.
+** ''Length...'' Filters for Paths of length within the inputted range. Example queries: <tt>10-20</tt>: selects all Paths with lengths between 10 and 20μm; <tt>max-max</tt>: selects the longest path(s).
+** ''Mean Radius...'' Filters for Paths of mean radius within the inputted range.
+** ''No. of Nodes...'' Filters for Paths with node count within the inputted range.
+** ''SWC Type...'' Filters for Paths with the selected SWC type tags. Note that the Paths of interest must have been [[SNT:_Overview#Tag|tagged]] using  the{{bc|Tag|Type|&nbsp;}} menu.
 
 =Fill Manager=
 Provides controls for all filling operations. It is described in more detail in the [[SNT:_Step-By-Step_Instructions#Filling|Filling: Step-By-Step Instructions]].
