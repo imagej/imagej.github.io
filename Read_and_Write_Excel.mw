@@ -89,7 +89,7 @@ run("Read and Write Excel", "dataset_label=Table"+i);
 
 "no_count_column" Prevents the plugin from adding a "Count" column automatically:
 <source lang="java"> 
-run("Read and Write Excel", "no_column_count");
+run("Read and Write Excel", "no_count_column");
 </source>
 
 
