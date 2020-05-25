@@ -24,9 +24,10 @@ Here is a summary of my current projects, in priority order. (Last updated: 2020
 
 # [https://github.com/scijava/scijava-maven-plugin scijava-maven-plugin] populate-app goal.
 # [https://github.com/scijava/pom-scijava pom-scijava] 29.0.0 release.
+# '''[[LOCI]] web server downsizing.''' Retiring and migrating services.
 # Update [[Fiji]] distribution to use [https://confluence.jetbrains.com/display/JBR/JetBrains+Runtime JBRSDK8] version of Java.
 # [https://github.com/imagej/pyimagej PyImageJ] 1.0.0 bug-fixes + release.
-# '''[[LOCI]] web server downsizing.''' Retiring obsolete services.
+# Reconcile latest ImageJ 1.x version with ImageJ2 patching logic ([https://github.com/imagej/ij1-patcher/pull/47 imagej/ij1-patcher#47])
 # [https://openjdk.java.net/projects/jigsaw/ JPMS/Jigsaw] modularization. ([https://github.com/scijava/incubator scijava/incubator])
 # '''Document community expectations.''' Formally define and clarify who is responsible for maintaining which plugins, to what extents ([https://forum.image.sc/t/project-developer-roles/206 Project developer roles], [https://github.com/ctrueden/ctr-scripts/blob/master/dev-find ctrueden/ctr-scripts:dev-find], [https://github.com/fiji/fiji/blob/master/bin/team-hints.perl fiji/fiji:bin/team-hints.perl])
 # '''ImageJ + Java 8.''' Complete the migration to Java 8 with a Java-6-compatible stub classpath that checks your Java version and tells you how to upgrade to Java 8 if needed. Retire the Java-8 update site, distributing its contents back onto the ImageJ and Fiji update sites.
