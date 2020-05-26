@@ -63,4 +63,4 @@ If you only want to use one of the plugins you can follow these steps:
 
 3. Save .ijm files in the desired location within your imageJ application
 
-4. Go to "Plugins/Macros/install..." to add the macros
+4. Go to "Plugins/Macros/install..." to add the macros, or drag-and-drop the .ijm file into ImageJ/FIJI
