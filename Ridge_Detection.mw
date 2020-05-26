@@ -1,4 +1,6 @@
 {{Unmaintained}}
+{{Warning | As this plugin is no longer maintained... you can check out [[ImageJ Ops]] for Ridge Detection algorithms.}}
+
 {{Infobox
 | software               = Fiji
 | name                   = Ridge (Line) Detection Plugin
@@ -7,7 +9,7 @@
 | filename               = Ridge_Detect.jar [https://github.com/thorstenwagner/ij-ridgedetection/releases/latest [1]]
 | source                 = Github [https://github.com/thorstenwagner/ij-ridgedetection [2]]
 | latest version         = v1.4.0 (20 Aug 2017)
-| status                 = maintaining 
+| status                 = unmaintained 
 }}
 
 
