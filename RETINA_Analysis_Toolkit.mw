@@ -3,7 +3,8 @@
 | software               = ImageJ
 | name                   = RETINA Analysis Toolkit
 | author                  = [https://www.researchgate.net/profile/Daniel_Maidana2 '''Daniel E. Maidana'''] <br> [https://www.masseyeandear.org/research/investigators/v/vavvas-demetrios-g '''Demetrios G. Vavvas''']
-| maintainer           = '''Daniel E. Maidana''' <br> Angiogenesis Laboratory <br>Massachusetts Eye and Ear Infirmary <br> Harvard Medical School <br> Email: [mailto:dmaida3@uic.edu Daniel Maidana]
+| maintainer           = '''Daniel E. Maidana''' <br> Angiogenesis Laboratory <br>Massachusetts Eye and Ear Infirmary <br> Harvard Medical School <br>
+| Email                  =  [mailto:dmaida3@uic.edu Daniel Maidana]
 | filename             = [https://github.com/DanielMaidana/TUNEL_Cell_Counter/archive/master.zip TUNEL Cell Counter Macro]
 | source                 = [https://osf.io/9rveh/ TUNEL Cell Counter Repository]<br>
 | released              = August 18<sup>th</sup>, 2015
