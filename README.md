@@ -18,6 +18,7 @@ ImageJ.net (Experimental)
 - [ ] Fix h2 header --> normal/bold should be #585858
 - [X] Fix tables (too wide) -- set to `width: 50%;`
 - [ ] Change table style -- needs lines
+- [ ] Fix Figure center - width issues
 - [X] Add Sidebox element
 - [X] Add Edit and view source links to page template
 - [X] Add page/post type to categories
@@ -52,6 +53,20 @@ Replace `image-left` with:
 - `image-fit`
 
 To render the image on the right and center respectively. Fit renders the image in the center and stretches the image to the webpage. This is useful if you want a centered image that is very large and may render outside of the webpage on mobile devices.
+
+## **Images (with legends):**
+
+You may wish to add an image with legend text. To do so use the following syntax:
+
+```
+{% include figure-right name="IMAGE_NAME" image_path="/path/to/image" content="FIGURE LEGEND TEXT" %}
+```
+
+<p align="center">
+	<img src="/images/readme/figure-right.png">
+</p>
+
+_Note_: You can use markdown **bolding** and _italics_ in the figure legend text to add emphsis to your legend.
 
 ## Adding Equations
 
