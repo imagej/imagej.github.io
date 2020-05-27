@@ -2,7 +2,7 @@
 {{SNTNavBar}}
 
 ==SNT API==
-The most up-to-date SNT API can be found at [https://morphonets.github.io/ https://morphonets.github.io/].
+The most up-to-date SNT API can be found at [https://morphonets.github.io/SNT].
 
 ==Script Templates==
 [[Image:Snt-Scripts-Menu-Full-List.png|right|thumb|300px|SNT Scripts Menu]]
@@ -10,73 +10,61 @@ SNT comes packaged with script templates demonstrating
 various analysis, tracing, image processing and batch processing routines. These templates can be found both in the ''Scripts'' menu of the SNT dialog and in the {{bc|Templates|Neuroanatomy}} menu of Fiji's Script Editor. Scripts can be written in any language supported by Fiji's Script Editor.
 
 ===Analysis===
-'''Analysis_Demo.py'''  A Jython demo of how SNT can analyze neuronal reconstructions fetched from online databases such as MouseLight, NeuroMorpho or FlyCircuit. This demo requires internet connection and assumes you've already ran Analysis_Demo_(Interactive).py 
+* '''Analysis_Demo_(Interactive).py'''  Exemplifies how to programmatically interact with a running instance of SNT to analyze traced data. Because of all the GUI updates, this approach is ''significantly slower'' than analyzing reconstructions directly (see Analysis_Demo.py for comparison)
 
-'''Analysis_Demo_(Interactive).py'''  Exemplifies how to programmatically interact with a running instance of SNT to analyze traced data. Because of all the GUI updates, this approach is _significantly slower_ than analyzing reconstructions directly (see Analysis_Demo.py for comparison)
+* '''Analysis_Demo.py'''  A [[Jython]] demo of how SNT can analyze neuronal reconstructions fetched from online databases such as MouseLight, NeuroMorpho or FlyCircuit.
 
-'''Download_ML_Data.groovy'''  Exemplifies how to programmatically retrieve data from MouseLight's database at [//ml-neuronbrowser.janelia.org ml-neuronbrowser.janelia.org]: It iterates through all the neurons in the server and downloads data (both JSON and SWC formats) for cells with soma associated with the specified Allen Reference Atlas (ARA) compartment. Downloaded files will contain all metadata associated with the cell (i.e., labeling used, strain, etc.) For advanced queries, have a look at MouseLightQuerier.
+* '''Download_ML_Data.groovy'''  Exemplifies how to programmatically retrieve data from MouseLight's database at [//ml-neuronbrowser.janelia.org ml-neuronbrowser.janelia.org]: It iterates through all the neurons in the server and downloads data (both JSON and SWC formats) for cells with soma associated with the specified Allen Reference Atlas (ARA) compartment. Downloaded files will contain all metadata associated with the cell (i.e., labeling used, strain, etc.)
 
-'''Get_Branch_Points_in_Brain_Compartment.groovy'''  Exemplifies how to extract morphometric properties of a MouseLight cell associated with a specific brain region/neuropil compartment. Requires internet connection.
+* '''Get_Branch_Points_in_Brain_Compartment.groovy'''  Exemplifies how to extract morphometric properties of a MouseLight cell associated with a specific brain region/neuropil compartment. Requires internet connection.
 
-'''Graph_Analysis.py'''  Demonstrates how to handle neurons as graph structures [https://en.wikipedia.org/wiki/Graph_theory (graph theory)] in which nodes connected by edges define the morphology of the neuron. SNT represents neurons as directed graphs (assuming the root -typically the soma- as origin) and allows data be processed using the powerful [https://jgrapht.org/ jgrapht] library. In this demo, the [http://mathworld.wolfram.com/GraphDiameter.html graph diameter] (i.e., the length of the longest shortest path or the longest graph geodesic) of a cellular compartment is computed for a neuron fetched from the MouseLight database.
+* '''Graph_Analysis.py'''  Demonstrates how to handle neurons as graph structures [https://en.wikipedia.org/wiki/Graph_theory (graph theory)] in which nodes connected by edges define the morphology of the neuron. SNT represents neurons as directed graphs (assuming the root -typically the soma- as origin) and allows data be processed using the powerful [https://jgrapht.org/ jgrapht] library. In this demo, the [http://mathworld.wolfram.com/GraphDiameter.html graph diameter] (i.e., the length of the longest shortest path or the longest graph geodesic) of a cellular compartment is computed for a neuron fetched from the MouseLight database.
 
-'''Reconstruction_Viewer_Demo.py'''  Exemplifies how to render reconstructions and neuropil annotations in a stand-alone Reconstruction Viewer. Requires internet connection.
+* '''Reconstruction_Viewer_Demo.py'''  Exemplifies how to render reconstructions and neuropil annotations in a stand-alone [[SNT:_Reconstruction_Viewer|Reconstruction Viewer]].
 
-'''SciView_Demo.groovy'''  Exemplifies how bridge SNT with [https://imagej.net/SciView SciView].
+* '''SciView_Demo.groovy'''  Exemplifies how bridge SNT with [https://imagej.net/SciView SciView].
 
-===Sholl===
-
-'''Extensive_Sholl_Stats.groovy'''  Exemplifies how to perform linear and polynomial regression on tabular Sholl data. 
+* '''Extensive_Sholl_Stats.groovy'''  Exemplifies how to perform linear and polynomial regression on tabular [[Sholl]] data. 
 
 ===Boilerplate===
-This menu hosts script templates containing extensible boilerplate code in several programming languages. The most essential imports and script parameters are included to facilitate rapid development.
-
-'''BSH.bsh''' A boilerplate script template in the [https://beanshell.github.io/ BeanShell] programming language. 
-
-'''GVY.groovy''' A boilerplate script template in the [https://groovy-lang.org/ Apache Groovy] programming language.
-
-'''PY.py''' - A boilerplate script template in the [https://www.python.org/ Python] programming language.
+This menu hosts script templates containing extensible boilerplate code in several programming languages, namely [[BeanShell]], [[Groovy]] and [[Jython_Scripting|Jython]]. The most essential imports and [[Script_Parameters|script parameters]] are included to facilitate rapid development.
 
 ===Tracing===
+* '''Scripted_Tracing_Demo.py'''  Exemplifies how to programmatically perform A* tracing between two points without GUI interaction, which allows for automated tracing of relatively simple structures (e.g., neurospheres neurites, microtubule bundles, etc). In this demo, points are retrieved from the SWC file of SNT's "demo tree", effectively recreating the initial SWC data.
 
-'''Scripted_Tracing_Demo.py'''  Exemplifies how to programmatically perform A* tracing between two points without GUI interaction, which allows for automated tracing of relatively simple structures (e.g., neurospheres neurites, microtubule bundles, etc). In this demo, points are retrieved from the SWC file of SNT's "demo tree", effectively recreating the initial SWC data.
+* '''Scripted_Tracing_Demo_(Interactive).py'''  Exemplifies how to programmatically interact with a running instance of SNT to perform auto-tracing tasks.
 
-'''Scripted_Tracing_Demo_(Interactive).py'''  Exemplifies how to programmatically interact with a running instance of SNT to perform auto-tracing tasks.
-
-'''Take_Snapshot.py'''  Displays a WYSIWYG image of a tracing canvas. Exemplifies how to script SNT using SNTService.
+* '''Take_Snapshot.py'''  Displays a WYSIWYG image of a tracing canvas. Exemplifies how to script SNT using SNTService.
 
 ===Batch===
+This menu hosts scripts that process files in bulk. Namely:
+* '''Convert_Traces_to_SWC.py'''  Converts all .traces files in a directory into SWC.
 
-'''Convert_Traces_to_SWC.py'''  Converts all .traces files in a directory into SWC.
+* '''Filter_Multiple_Images.py'''  Bulk filtering of image files using Frangi Vesselness.
 
-'''Filter_Multiple_Images.py'''  Bulk filtering of image files using Frangi Vesselness.
+* '''Measure_Multiple_Files.py'''/'''Measure_Multiple_Files_(With_Options).groovy'''   Bulk measurements of reconstruction files.
 
-'''Measure_Multiple_Files.py'''  Bulk measurements of reconstruction files using SNT.
+* '''Render_Cell_Collection.groovy'''  Exemplifies how to quickly render large collections of cells from a directory of files in [[SNT:_Reconstruction_Viewer|Reconstruction Viewer]].
 
-'''Measure_Multiple_Files_(With_Options).groovy''' Bulk measurements (with options to choose a subset of measurements) of reconstruction files using SNT.
+* '''Render_Cell_Collection_(MultiPanel_Figure).groovy'''  Exemplifies how to generate a publication-quality multi-panel figure in which multiple reconstructions are sorted and color-coded by a specified morphometric trait (e.g., cable length).
 
-'''Render_Cell_Collection.groovy'''  Exemplifies how to quickly render large collections of cells from a directory of files (900 MouseLight reconstructions rendered in ~30s on a 4 core i7 (ubuntu 18.10) without a discrete graphics card).
-
-'''Render_Cell_Collection_(MultiPanel_Figure).groovy'''  Exemplifies how to generate a publication-quality multi-panel figure in which multiple reconstructions are sorted and color-coded by a specified morphometric trait (cable length in this example). The script prompts for a directory containing the reconstruction files to be analyzed. If no directory is specified, the script will parse a collection of dendritic arbors from the MouseLight database instead.
 
 ==Python Notebooks==
-Direct access to the SNT API from the [https://www.python.org/ Python] programming language is made possible through the [https://pypi.org/project/pyimagej/ pyimagej] module. This enables full integration between SNT and any library in the Python ecosystem.
-===Installing pyimagej===
-Follow the instructions given [https://github.com/imagej/pyimagej#installation here]
-===Getting Started===
-To initialize Fiji from Python with GUI capabilities:
+Direct access to the SNT API from the [https://www.python.org/ Python] programming language is made possible through the [https://pypi.org/project/pyimagej/ pyimagej] module. This enables full integration between SNT and any library in the Python ecosystem (numpy, scipy, etc.). The [https://github.com/morphonets/SNT/tree/master/notebooks Notebooks] directory in the SNT repository contains several examples at different complexity levels.
+
+Here, we will exemplify basic functionality. Please refer to the complete [https://github.com/morphonets/SNT/tree/master/notebooks examples] for more details. Once the Python environment is properly [https://github.com/morphonets/SNT/tree/master/notebooks#snt-notebooks setup], one can initialize Fiji:
 <source lang="python">
 import imagej
 ij = imagej.init('sc.fiji:fiji', headless=False)
 </source>
-Then, use [https://github.com/kivy/pyjnius pyjnius] (bundled with pyimagej) to import the SNT (Java) classes you need. For example, to download a neuron reconstruction from the MouseLight database and calculate summary statistics on it, you would import the [http://javadoc.scijava.org/Fiji/tracing/io/MouseLightLoader MouseLightLoader] and [http://javadoc.scijava.org/Fiji/tracing/analysis/TreeStatistics.html TreeStatistics] classes:
+Then, one can use [https://github.com/kivy/pyjnius pyjnius] (bundled with pyimagej) to import the needed SNT (Java) classes. E.g., to download a neuron reconstruction from the MouseLight database and calculate summary statistics on it, you would import the [https://morphonets.github.io/SNT/index.html?sc/fiji/snt/io/MouseLightLoader.html MouseLightLoader] and [https://morphonets.github.io/SNT/index.html?sc/fiji/snt/analysis/TreeStatistics.html TreeStatistics] classes:
 
 <source lang="python">
 from jnius import autoclass
 MouseLightLoader = autoclass('tracing.io.MouseLightLoader')
 TreeStatistics   = autoclass('tracing.analysis.TreeStatistics')
 </source>
-Now you can access all the attributes and methods these classes offer. Let's get a summary of the inter-node distances for a specific mouse cortical motor neuron (ID = "AA0100" in the [http://ml-neuronbrowser.janelia.org/ MouseLight database]). 
+Now you can access all the attributes and methods these classes offer. Let's get a summary of the inter-node distances for a specific mouse cortical motor neuron (ID = "AA0100" in the [https://ml-neuronbrowser.janelia.org/ MouseLight database]). 
 <source lang="python">
 def run():
     loader = MouseLightLoader("AA0100")
@@ -95,12 +83,9 @@ def run():
     print("The average inter-node distance is %d" % summary_stats.getMean())
 </source>
 
-===Advanced Examples===
-The [https://github.com/fiji/Simple_Neurite_Tracer/tree/scijava/notebooks Notebooks] directory in the SNT [https://github.com/fiji/Simple_Neurite_Tracer GitHub repository] contains examples which are executable on [https://mybinder.readthedocs.io/en/latest/ Binder].
-For example, to run the convex_hull notebook via [https://mybinder.org/ mybinder.org], follow this link: [https://mybinder.org/v2/gh/fiji/Simple_Neurite_Tracer/scijava?filepath=%2Fnotebooks%2Fconvex_hull.ipynb convex_hull.ipynb]
 
-==Scripting Reconstruction Viewer==
-Programmatic control over an open instance of Reconstruction Viewer (either called from within SNT or as a standalone application) can be achieved by selecting the {{bc|Tools & Utilities|Script This Viewer...}} command from RV Controls. This command will open an instance of Fiji's script editor with a boilerplate template containing the most essential imports and script parameters used by Reconstruction Viewer. The default programming language for this template can be chosen from the drop-down menu of the ''Preferred Language'' option after navigating to {{bc|Tools & Utilities|Preferences...}} from the RV Controls. Currently supported languages include Python, Apache Groovy and BeanShell.
+==Example: Scripting Reconstruction Viewer==
+Programmatic control over an open instance of [[SNT:_Reconstruction_Viewer|Reconstruction Viewer]] (either called from within SNT or as a standalone application) can be achieved by selecting the {{bc|Tools & Utilities|Script This Viewer...}} [[SNT:_Reconstruction_Viewer#Utilities|command]]. This command will open an instance of Fiji's script editor with a boilerplate template containing the most essential imports and [[Script_Parameters|script parameters]]. The default programming language for this template can be chosen from the drop-down menu of the ''Preferred Language'' [[SNT:_Reconstruction_Viewer#Settings|option]].
 
 The following script exemplifies how to extend the boilerplate template to control the Viewer in real-time.
 
@@ -117,14 +102,14 @@ The following script exemplifies how to extend the boilerplate template to contr
 
 
 """
-file:	
+file:    
 version: 
-info:	
+info:   
 """
 
 from sc.fiji.snt import (Path, PathAndFillManager, SNT, SNTUI, Tree)
 from sc.fiji.snt.analysis import (MultiTreeColorMapper, PathProfiler, RoiConverter,
-		TreeAnalyzer, TreeColorMapper, TreeStatistics)
+        TreeAnalyzer, TreeColorMapper, TreeStatistics)
 from sc.fiji.snt.analysis.graph import GraphUtils
 from sc.fiji.snt.analysis.sholl import TreeParser
 from sc.fiji.snt.annotation import (AllenCompartment, AllenUtils, VFBUtils, ZBAtlasUtils)
@@ -134,8 +119,8 @@ from sc.fiji.snt.util import (BoundingBox, PointInImage, SNTColor, SWCPoint)
 from sc.fiji.snt.viewer import (Annotation3D, OBJMesh, MultiViewer2D, Viewer2D, Viewer3D)
 
 # Documentation Resources: https://imagej.net/SNT:_Scripting
-# SNT API: https://javadoc.scijava.org/Fiji/index.html?sc/fiji/snt/package-summary.html
-# Rec. Viewer's API: https://javadoc.scijava.org/Fiji/sc/fiji/snt/viewer/Viewer3D.html
+# SNT API: https://morphonets.github.io/SNT
+# Rec. Viewer's API: https://morphonets.github.io/SNT/index.html?sc/fiji/snt/viewer/Viewer3D.html
 # Tip: Programmatic control of the Viewer's scene can be set using the Console info
 # produced when calling viewer.logSceneControls() or pressing 'L' when viewer is frontmost
 
@@ -149,74 +134,77 @@ import time
 
 def do_stuff(viewer):
 
-	viewer.logSceneControls()
-	
-	# Load a neuron from Mouse Secondary Motor Area from the MouseLight database.
-	loader = MouseLightLoader("AA0100")
-	if not loader.isDatabaseAvailable():
-		ui.showDialog("Could not connect to ML database", "Error")
-		return
-	if not loader.idExists():
-		ui.showDialog("Somehow the specified id was not found", "Error")
-		return
+    viewer.logSceneControls()
+    
+    # Load a neuron from Mouse Secondary Motor Area from the MouseLight database.
+    loader = MouseLightLoader("AA0100")
+    if not loader.isDatabaseAvailable():
+        ui.showDialog("Could not connect to ML database", "Error")
+        return
+    if not loader.idExists():
+        ui.showDialog("Somehow the specified id was not found", "Error")
+        return
 
-	# Extract SWC points with tag "axon".
-	axon = loader.getTree('axon')
-	# Do the same for the dendrites.
-	dendrites = loader.getTree('dendrites')
+    # Extract nodes with tag "axon".
+    axon = loader.getTree('axon')
+    # Do the same for the dendrites.
+    dendrites = loader.getTree('dendrites')
 
-	# Load the Allen CCF Mouse Reference Brain
-	# and add it to the scene.
-	viewer.loadRefBrain('mouse')
+    # Load the Allen CCF Mouse Reference Brain
+    # and add it to the scene.
+    viewer.loadRefBrain('mouse')
 
-	# Add both Trees to the scene.
-	viewer.addTree(axon)
-	viewer.addTree(dendrites)
+    # Add both Trees to the scene
+    viewer.addTree(axon)
+    dendrites.setColor('cyan')
+    viewer.addTree(dendrites)
 
-	# Get the OBJMesh object represnting the maximum depth Allen CCF compartment
-	# containing the soma point and add it to the scene.
-	soma_annotation = next(iter(loader.getNodes("soma"))).getAnnotation()
-	viewer.addMesh(soma_annotation.getMesh())
+    # Get the OBJMesh object representing the maximum depth Allen CCF compartment
+    # containing the soma point and add it to the scene.
+    soma_annotation = loader.getSomaCompartment()
+    viewer.addMesh(soma_annotation.getMesh())
 
-	# Enforce side perspective.
-	viewer.setViewMode(Viewer3D.ViewMode.SIDE)
+    # Enforce side perspective.
+    viewer.setViewMode('side')
 
-	# Next, we will applying a color mapping to the axon
-	# using branch order as the metric and the Ice Lut.
-	# Make an instance of TreeColorMapper using SciJava context.
-	mapper = TreeColorMapper(context)
-	# Get the net.imglib2.display.ColorTable object.
-	lut = mapper.getColorTable('Ice.lut')
-	# Color code the axon and render in scene.
-	# The min and max values returned by the mapper are used
-	# to set the range of the color bar legend.
-	bounds = viewer.colorCode(axon.getLabel(), TreeColorMapper.BRANCH_ORDER, lut)
-	viewer.addColorBarLegend(lut, bounds[0], bounds[1])
-	# Display a text annotation of the cell ID and metric used by the mapper.
-	scene_annotation = "{}: Branch Order".format(axon.getLabel())
-	viewer.addLabel(scene_annotation)
+    # Next, we will applying a color mapping to the axon
+    # using branch order as the metric and the Ice Lut.
+    # Make an instance of TreeColorMapper using SciJava context.
+    mapper = TreeColorMapper(context)
+    # Get the net.imglib2.display.ColorTable object.
+    lut = mapper.getColorTable('Ice.lut')
+    # Color code the axon and render in scene.
+    # The min and max values returned by the mapper are used
+    # to set the range of the color bar legend.
+    bounds = viewer.colorCode(axon.getLabel(), TreeColorMapper.STRAHLER_NUMBER, lut)
+    viewer.addColorBarLegend(lut, bounds[0], bounds[1])
+    # Display a text annotation of the cell ID and metric used by the mapper.
+    scene_annotation = "{}: Branch Order".format(axon.getLabel())
+    viewer.addLabel(scene_annotation)
 
-	# Begin a rotation animation for the objects in scene.
-	viewer.setAnimationEnabled(True)
-	# Wait some time before applying a new color mapping
-	# based on path distances, using a different LUT (Fire).
-	time.sleep(5)
-	
-	lut = mapper.getColorTable('Fire.lut')
-	# Remap the axon Tree and update scene.
-	bounds = viewer.colorCode(axon.getLabel(), TreeColorMapper.PATH_DISTANCE, lut)
-	viewer.addColorBarLegend(lut, bounds[0], bounds[1])
-	scene_annotation = "{}: Path Distance".format(axon.getLabel())
-	viewer.addLabel(scene_annotation)
-	
+    # Begin a rotation animation for the objects in scene.
+    viewer.setAnimationEnabled(True)
+    # Wait some time before applying a new color mapping
+    # based on path distances, using a different LUT (Fire).
+    time.sleep(5)
+    
+    lut = mapper.getColorTable('Fire.lut')
+    # Remap the axon Tree and update scene.
+    bounds = viewer.colorCode(axon.getLabel(), TreeColorMapper.PATH_DISTANCE, lut)
+    viewer.addColorBarLegend(lut, bounds[0], bounds[1])
+    scene_annotation = "{}: Path Distance".format(axon.getLabel())
+    viewer.addLabel(scene_annotation)
+    
 
 do_stuff(viewer)
 
 </source>
 
-==Packaging Scripts with SNT==
+==Adding Scripts to SNT==
 There are two ways to have your own scripts appear in SNT's ''Scripts'' menu. The easiest way is to go to {{bc|Scripts|New...}} from the SNT dialog. This command will open an instance of Fiji's Script Editor with pre-loaded boilerplate code in the scripting language of your choice. If you save the script and then choose {{bc|Scripts|Reload...}}, your new script will appear in the full list of scripts found at {{bc|Scripts|Full List...}}.
 
-Alternatively, you can save scripts into the "scripts" sub-directory under the main Fiji directory while including ''SNT'' in the filename (e.g., C:\Users\user1\Desktop\Fiji.app\scripts\My_SNT_Script.py).
+Alternatively, you can save scripts into the "scripts" sub-directory under the main Fiji directory while including ''SNT'' in the filename (e.g., <tt>C:\Users\user\Desktop\Fiji.app\scripts\My_SNT_Script.py</tt> or <tt>/home/user/Fiji.app/scripts/My_SNT_Script.py</tt>).
 
-If you would like to have your scripts distributed with Fiji, please submit a pull request to SNT's [https://github.com/fiji/SNT Github repository].
+Did you write a useful script? Please submit a [https://github.com/morphonets/SNT/pulls pull request] on GitHub so that it can be distributed with Fiji!
+
+{{SNTNavBar}}
