@@ -1,39 +1,9 @@
 ImageJ.net (Experimental)
 ===
 
-# TODO (pre-live):
+Welcome to ImageJ.net.
 
-- [X] Math support via Mathjax.
-- [X] UX bread crumbs (top of page)
-- [X] Code syntax highlighting
-- [X] Add infobox elements
-- [X] Add brief description to front matter.
-- [ ] Add Lazy loading to images
-- [ ] Add ABC lists to CSS style
-- [ ] Table of contents heirachy
-- [ ] Remove "category indexes" from search
-- [ ] Create wide table style
-- [ ] Add link support for the info-box
-- [ ] Fix footer -- does not stick to bottom
-- [ ] Fix h2 header --> normal/bold should be #585858
-- [X] Fix tables (too wide) -- set to `width: 50%;`
-- [ ] Change table style -- needs lines
-- [ ] Fix Figure center - width issues
-- [X] Add Sidebox element
-- [X] Add Edit and view source links to page template
-- [X] Add page/post type to categories
-- [ ] Add supporting pages
-	- [x] Getting started (/learn.md)
-	- [ ] Architecture (/learn/architecture.md)
-
-# TODO (post-live):
-
-- [ ] Change base url for "View source" page info from jekyll-protoype branch
-
-------
-
-How to use ImageJ.net features
-===
+# How to use ImageJ.net features
 
 ## **Images (without legends):**
 
@@ -43,7 +13,7 @@ Images can be added and placed on the _left_, _right_, _center_ and _fit_ positi
 {% include image-left name="IMAGE_NAME" image_path="/path/to/image" %}
 ```
 <p align="center">
-	<img src="/images/readme/image-left.png">
+	<img width="460" height="300" src="/images/readme/image-left.png">
 </p>
 
 Replace `image-left` with:
@@ -67,6 +37,19 @@ You may wish to add an image with legend text. To do so use the following syntax
 </p>
 
 _Note_: You can use markdown **bolding** and _italics_ in the figure legend text to add emphsis to your legend.
+
+## Adding YouTube videos
+
+To include an embedded YouTube video on your page, copy the `embed` url of the video and use the following syntax:
+
+```
+{% include youtube url="EMBED_YOUTUBE_LINK" %}
+```
+
+<p align="center">
+	<img src="/images/readme/youtube.png">
+</p>
+
 
 ## Adding Equations
 
@@ -176,17 +159,37 @@ _Example:_
 
 ![figure row example](/images/readme/figure-row.jpg)
 
-## Adding YouTube videos
 
-To include a link to a YouTube video use the following syntax, using the "video-wrapper" class to ensure your video does not escape the container. Copy the iframe video URL and past it inside `<div clas="video-wrapper"></div>` tags. Dont worry about setting the width and height of the video, the wrapper will fit the video to the window.
+## TODO (pre-live):
 
-_Example:_
+- [X] Math support via Mathjax.
+- [X] UX bread crumbs (top of page)
+- [X] Code syntax highlighting
+- [X] Add infobox elements
+- [X] Add brief description to front matter.
+- [ ] Add Lazy loading to images
+- [ ] Add ABC lists to CSS style
+- [ ] Table of contents heirachy
+- [ ] Remove "category indexes" from search
+- [ ] Create wide table style
+- [ ] Add link support for the info-box
+- [ ] Fix footer -- does not stick to bottom
+- [ ] Fix h2 header --> normal/bold should be #585858
+- [X] Fix tables (too wide) -- set to `width: 50%;`
+- [ ] Change table style -- needs lines
+- [ ] Fix Figure center - width issues
+- [X] Add Sidebox element
+- [X] Add Edit and view source links to page template
+- [X] Add page/post type to categories
+- [ ] Add supporting pages
+	- [x] Getting started (/learn.md)
+	- [ ] Architecture (/learn/architecture.md)
 
-```
-<div class="video-wrapper">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/4NOM-kLfDR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-```
+## TODO (post-live):
+
+- [ ] Change base url for "View source" page info from jekyll-protoype branch
+
+Credit:
 ------------------
 
 Photon by HTML5 UP
