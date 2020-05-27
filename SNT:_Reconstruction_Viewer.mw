@@ -204,3 +204,4 @@ A sub-menu with options for sensitivity of mouse and keyboard scene interaction.
 ===Misc. Preferences ===
 *{{bc|Enable Hardware Acceleration}} Use hardware accelerated 3D graphics.
 *{{bc|Global Preferences...}} Configurable preferences for snapshot recordings, keyboard and mouse controls, and the preferred scripting language for the Viewer. Preferences persist across plugin sessions.
+{{SNTNavBar}}
