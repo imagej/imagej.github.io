@@ -11,7 +11,7 @@
 | website                = 
 }}
 
-The Gnu_Plot plugin provides the glue between ImageJ and Gnuplot.  The main impetus for developing this plugin was that ImageJ is great at interrogating imaging data, Gnuplot is excellent at generating publishable plots, and I'm lazy. The trouble was in having to extract the plottable data, either from a ResultsTable or through a Java plugin, and then pasting into a ascii editor, save, run gnuplot from a terminal, display output image, and repeat. I prefer to just click a button after finding better plottable data or muck with the Gnuplot script.
+The Gnu_Plot plugin provides the glue between ImageJ and Gnuplot.  The main impetus for developing this plugin was that ImageJ is great at interrogating imaging data, Gnuplot is excellent at generating publishable plots, and I'm lazy. The trouble was in having to extract the plottable data, either from a ResultsTable or through a Java plugin, and then pasting into a ascii editor, save, run gnuplot from a terminal, display output image, and repeat. I prefer to just click a button after finding better plottable data or mucking with the Gnuplot script.
 
 == Features ==
 [[File:Gnu_Plot.jpg|400px|"Gnu_Plot GUI"]]
