@@ -19,7 +19,7 @@ Fiji is home to quite a few nice ImageJ plugins! Here is a non-exhaustive list:
 * Image montage (via [http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2]) with global optimization (in 2D and across sections)
 *[[VIB Protocol]] Label-based 3D alignment of image stacks.
 ;[[Plugins_Menu#Plugins_.3E_Segmentation|Segmentation]]
-* [[Simple Neurite Tracer]] (project [http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/ page])
+* [[Simple Neurite Tracer]] (SNT)
 * [http://132.187.25.13/home/?category=Download&page=SegmentationEditor Segmentation Editor]
 * Manual (via [http://www.ini.uzh.ch/~acardona/trakem2.html TrakEM2])
 * [[Level Sets]]
