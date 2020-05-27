@@ -1,7 +1,14 @@
-(Return to the main [[Simple Neurite Tracer]] page)
-{{ambox
-| text = This page is incomplete.  Please help to improve it.
-}}
+{{SNTNavBar}}
 
+The Tubular Geodesics plugins were developed several years ago for [[Simple Neurite Tracer]] but remain functional in modern [[SNT]]. They can be installed manually as an SNT add-on. Once installed, they allow you to trace on a filtered-version of your image in which neuronal processes (and other tubular structures are significantly enhanced using [[ITK]] segmentation. More details on the following pages:
 
-You can '''hugely''' improve the quality of tracing and reconstruction that you get with [[Simple Neurite Tracer]] by using the Tubular Geodesics plugins described here: http://cvlab.epfl.ch/software/delin/index.php
+* [https://www.epfl.ch/labs/cvlab/software/biomedical/delin-fiji/ Tubular Geodesics homepage]
+* [[SNT:_Manual#Main_Dialog#Tracing_On_Secondary_image|Tracing on Filtered Images]]
+* [[SNT:_Screencasts#Secondary_Images|Secondary Image Screencast]]
+* [[SNT:_Step-By-Step_Instructions#Generating_Filtered_Images|Generating Filtered Images]]
+
+[[Category:Citable]]
+[[Category:Plugins]]
+[[Category:Segmentation]]
+[[Category:Neuroanatomy]]
+[[Category:SNT]]
