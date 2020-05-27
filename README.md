@@ -1,8 +1,6 @@
 ImageJ.net (Experimental)
 ===
 
-Welcome to ImageJ.net! This webpage is still a work in progress.
-
 # TODO (pre-live):
 
 - [X] Math support via Mathjax.
@@ -30,6 +28,29 @@ Welcome to ImageJ.net! This webpage is still a work in progress.
 # TODO (post-live):
 
 - [ ] Change base url for "View source" page info from jekyll-protoype branch
+
+------
+
+How to use ImageJ.net features
+===
+
+## **Images (without legends):**
+
+Images can be added and placed on the _left_, _right_, _center_ and _fit_ positions. For example:
+
+```
+{% include image-left name="IMAGE_NAME" image_path="/path/to/image" %}
+```
+
+![image-left](/images/readme/image-left.png)
+
+Replace `image-left` with:
+
+- `image-right`
+- `image-center`
+- `image-fit`
+
+To render the image on the right and center respectively. Fit renders the image in the center and stretches the image to the webpage. This is useful if you want a centered image that is very large and may render outside of the webpage on mobile devices.
 
 ## Adding Equations
 
@@ -93,18 +114,6 @@ Title anchors:
 ```
 
 ![sidebar example](/images/readme/sidebar.jpg)
-
-## Adding images without legends
-
-To include images without a legend (see below for images with a legend) simply use the markdown syntax followed by the `.image` tag with a position. **Left**, **right**, **center** and **fit** are available aligment positions.
-
-_Example:_
-
-```
-![placeholder image]({{site.baseurl}})/images/placeholder.png){: .image.left}
-```
-
-![image left example](/images/readme/image-left.jpg)
 
 **The following options are available:**
 
