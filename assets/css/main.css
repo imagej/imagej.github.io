@@ -2392,7 +2392,7 @@ input, select, textarea {
 
 		.image.right {
 			float: right;
-			padding: 0 0 1em 1em;
+			padding: 0 0 0.5em 0.5em;
 			top: 0.25em;
 		}
 
@@ -2435,6 +2435,7 @@ input, select, textarea {
 		border: thin silver solid;
 		margin: 0.5em;
 		padding: 0.5em;
+		background-color: #f9f9f9;
 	}
 
 	.figure.right {
@@ -2445,6 +2446,7 @@ input, select, textarea {
 		border: thin silver solid;
 		margin: 0.5em;
 		padding: 0.5em;
+		background-color: #f9f9f9;
 	}
 
 	.figure.center {
@@ -2457,6 +2459,7 @@ input, select, textarea {
 		margin-left: auto;
 		margin-right: auto;
 		padding: 0.5em;
+		background-color: #f9f9f9;
 	}
 
 	.figure.row {
