@@ -13,7 +13,7 @@ Images can be added and placed on the _left_, _right_, _center_ and _fit_ positi
 {% include image-left name="IMAGE_NAME" image_path="/path/to/image" %}
 ```
 <p align="center">
-	<img width="460" height="300" src="/images/readme/image-left.png">
+	<img src="/images/readme/image-left.png">
 </p>
 
 Replace `image-left` with:
