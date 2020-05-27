@@ -24,7 +24,30 @@ When run as a plugin Gnu_Plot will collect both the Gnuplot script and data and 
 <br>'''Generate Plot''' will collect the selected information, send it through gnuplot, and present the results. You can have all but the last generated plot image retained, if desired.
 <br>'''View Complete Input''' will collect the selected information and present it in an Editor window. Great to for debugging or saving if the output needs to be reproduced later and you will forget where the data came from exactly, like me; the input is a comment added to the script file.
 <br>'''Test compatibility''' will run a very simple Gnuplot script that should produce a graphical depiction of the options for the specified terminal; input will be placed after 'set terminal ' in the script.  Not all terminals are supported everywhere, and/or, you may not have gnuplot executable installed as this plugin expects, see the Log window.
-
+=== Example ===
+Let's say you want to see the histogram of a phase image in polar format.
+<br>1) Click ''List'' Button on the bottom of the ''Histogram'' window.
+<br>2) Start the ''Gnu_Plot'' plugin.
+<br>3) Select ''<new>'' for the '''GNUPlot Script'''.
+<br>4) Copy/Paste this script into the ''Editor'' window.
+<blockquote>
+<br>set terminal pngcairo size 512,512
+<br>stats '$data0' using 3 name 'y' nooutput
+<br>set polar
+<br>set angles radians
+<br>unset key
+<br>unset xtics
+<br>unset ytics
+<br>set border 0
+<br>set size square
+<br>set grid polar ls 12
+<br>set xrange [-y_max*1.1:y_max*1.1]
+<br>set yrange [-y_max*1.1:y_max*1.1]
+<br>set ttics ('-2π' -2*pi, '-π' -pi, 0, 'π' pi, '2π' 2*pi)
+<br>plot "$data0" using 2:3 with linespoints
+</blockquote>
+<br>5) Select ''Histogram of ...'' for '''$data0'''
+<br>6) Click on '''Generate Plot'''
 == Methods ==
 <code>public static String gnuplot()</code>
 <br><code>public static String gnuplot(String gp)</code>
