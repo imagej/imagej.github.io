@@ -3,6 +3,35 @@ ImageJ.net (Experimental)
 
 Welcome to ImageJ.net.
 
+## Sidebar with section anchors
+
+A navigation sidebar can be added by including the `sidebar` element and providing the anchor names as the content. 
+
+_Note_: There are a couple things to note about the `sidebar` element:
+
+1. Separate multiple entries with a comma.
+2. To include a break/seperator line use `|`.
+3. The title will be rendered as bold text and will not be a link.
+4. The sidebar links and anchor links must be the same, otherwise they will not link properly. 
+5. The sidebar is always rendered on the **right** side of the page.
+6. You should always place the sidebar at the top of the page, before your content.
+
+To setup the sidebar use the following syntax:
+
+```
+{% include sidebar title="Demo" content="Introduction, |, Left image, Right image, Center image, Fit image" %}
+```
+
+To setup the anchors use the following syntax:
+
+```
+{% include anchor content="Introduction" %}
+```
+
+<p align="center">
+	<img src="/images/readme/sidebar.png">
+</p>
+
 ## **Images (without legends):**
 
 Images can be added and placed on the _left_, _right_, _center_ and _fit_ positions. For example:
@@ -88,35 +117,6 @@ To add an info-box to your page, specifiy the icon you wish to use and include t
 
 <p align="center">
 	<img src="/images/readme/info-box.png">
-</p>
-
-## Sidebar with section anchors
-
-A navigation sidebar can be added by including the `sidebar` element and providing the anchor names as the content. 
-
-_Note_: There are a couple things to note about the `sidebar` element:
-
-1. Separate multiple entries with a comma.
-2. To include a break/seperator line use `|`.
-3. The title will be rendered as bold text and will not be a link.
-4. The sidebar links and anchor links must be the same, otherwise they will not link properly. 
-5. The sidebar is always rendered on the **right** side of the page.
-6. You should always place the sidebar at the top of the page, before your content.
-
-To setup the sidebar use the following syntax:
-
-```
-{% include sidebar title="Demo" content="Introduction, |, Left image, Right image, Center image, Fit image" %}
-```
-
-To setup the anchors use the following syntax:
-
-```
-{% include anchor content="Introduction" %}
-```
-
-<p align="center">
-	<img src="/images/readme/sidebar.png">
 </p>
 
 ## Sidebox
