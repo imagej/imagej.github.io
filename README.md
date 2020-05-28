@@ -58,6 +58,7 @@ To include an embedded YouTube video on your page, copy the `embed` url of the v
 title: Page Title
 layout: page
 use_math: true
+---
 ```
 
 2. Type your math forumula using TeX (you can check out how here: [LaTeX/Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics)). _Note: Because MathJax 3 broke support for MathJax 2 style equations parsed by the Kramdown, equations are only recognized by the `$$` tag._
@@ -89,50 +90,35 @@ To add an info-box to your page, specifiy the icon you wish to use and include t
 	<img src="/images/readme/info-box.png">
 </p>
 
-## Setting up the side bar with anchors
+## Sidebar with section anchors
 
-Adding a sidebar with anchor
+A navigation sidebar can be added by including the `sidebar` element and providing the anchor names as the content. 
 
-Place this at the top of the page (before content)
+_Note_: There are a couple things to note about the `sidebar` element:
 
-```
-<div class="sidebar" markdown="1">
+1. To include a break/seperator line use `|`.
+2. The title will be rendered as bold text and will not be a link.
+3. The sidebar links and anchor links must be the same, otherwise they will not link properly. 
+4. The sidebar is always rendered on the **right** side of the page.
+5. You should always place the sidebar at the top of the page, before your content.
 
-Learn
-<hr>
-[Introduction](#Introduction)
-<hr>
-[Section 1](#Section 1)
-[Section 2](#Section 2)
-[Section 3](#Section 3)
-
-</div>
+To setup the sidebar use the following syntax:
 
 ```
-Add anchors where apporpriate:
-
-Title anchors:
-
-```
-## <a name="Introduction"></a> **Introduction**
-
-<!-- content -->
-
-## <a name="Section 1"></a> **Section 1**
-
-<!-- content -->
-
-## <a name="Section 2"></a> **Section 2**
-
-<!-- content -->
-
-## <a name="Section 3"></a> **Section 3**
-
-<!-- content -->
-
+{% include sidebar title="Demo" content="Introduction, |, Left image, Right image, Center image, Fit image"%}
 ```
 
-![sidebar example](/images/readme/sidebar.jpg)
+To setup the anchors use the following syntax:
+
+```
+{% include anchor content="Introduction" %}
+```
+
+<p align="center">
+	<img src="/images/readme/sidebar.png">
+</p>
+
+## table with images
 
 **The following options are available:**
 
