@@ -2834,6 +2834,7 @@ input, select, textarea {
 	.sidebar a {
 		padding: 0.5em 0 0 0;
 		text-decoration: none;
+		text-align: justify;
 		font-size: medium;
 		font-weight: 500;
 		color: #0014ca;
@@ -2844,7 +2845,7 @@ input, select, textarea {
 
 	.sidebar p {
 		font-size: large;
-		text-align: justify;
+		text-align: center;
 		font-weight: 500;
 		margin-bottom: 1em;
 	}
