@@ -2377,13 +2377,6 @@ input, select, textarea {
 			vertical-align: middle;
 		}
 
-		.image.info {
-			float: left;
-			padding-top: 5%;
-			padding-bottom: 5%;
-			padding-right: 1em;
-		}
-
 		.image.left {
 			float: left;
 			padding: 0 0.5em 0.5em 0;
@@ -2897,20 +2890,6 @@ input, select, textarea {
 		box-shadow: 4px 4px 4px #CCC;
 	}
 
-/* Info-box */
-
-	.info-box {
-		width: auto;
-		height: auto;
-		border-collapse: collapse;
-		background-color: #f9f9f9;
-		border: 1px solid #a0a0a0;
-		margin: 0 10%;
-		overflow-x: hidden;
-		overflow-y: hidden;
-		padding: 0 1em 0 1em;
-	}
-
 /* Table */
 
 	.table-wrapper {
@@ -2923,6 +2902,30 @@ input, select, textarea {
 		width: 100%;
 
 	}
+
+	.table-info {
+		margin: 0 10%;
+		border-collapse: collapse;
+		background: #f9f9f9;
+		border: 1px solid #aaa;
+		width: 80%;
+	}
+
+		.table-info td {
+			padding: 2px 0px 2px 0.5em;
+			margin: auto;
+			vertical-align: middle;
+		}
+
+		.table-info p {
+			margin: 0;
+		}
+
+		.table-info ul {
+			list-style: disc;
+			margin: 0;
+			padding-left: 2em;
+		}
 
 		table tbody tr {
 			border-left: 0;
