@@ -3,14 +3,12 @@ ImageJ.net (Experimental)
 
 Welcome to ImageJ.net.
 
-# How to use ImageJ.net features
-
 ## **Images (without legends):**
 
 Images can be added and placed on the _left_, _right_, _center_ and _fit_ positions. For example:
 
 ```
-{% include image-left name="IMAGE_NAME" image_path="/path/to/image" %}
+{% include image-left name="spirals" image_path="/images/readme/spirals_2.png" %}
 ```
 <p align="center">
 	<img src="/images/readme/image-left.png">
@@ -29,7 +27,7 @@ To render the image on the right and center respectively. Fit renders the image 
 You may wish to add an image with legend text. To do so use the following syntax:
 
 ```
-{% include figure-right name="IMAGE_NAME" image_path="/path/to/image" content="FIGURE LEGEND TEXT" %}
+{% include figure-right name="place holder image" image_path="/images/readme/spirals_2.png" content="**Figure 2** : This is a right figure." %}
 ```
 
 <p align="center">
@@ -38,12 +36,12 @@ You may wish to add an image with legend text. To do so use the following syntax
 
 _Note_: You can use markdown **bolding** and _italics_ in the figure legend text to add emphsis to your legend.
 
-## Adding YouTube videos
+## YouTube videos
 
 To include an embedded YouTube video on your page, copy the `embed` url of the video and use the following syntax:
 
 ```
-{% include youtube url="EMBED_YOUTUBE_LINK" %}
+{% include youtube url="https://www.youtube.com/embed/4NOM-kLfDR8" %}
 ```
 
 <p align="center">
@@ -51,9 +49,17 @@ To include an embedded YouTube video on your page, copy the `embed` url of the v
 </p>
 
 
-## Adding Equations
+## Equations
 
 1. Set the `use_math` variable to `true` in the front matter.
+
+```
+---
+title: Page Title
+layout: page
+use_math: true
+```
+
 2. Type your math forumula using TeX (you can check out how here: [LaTeX/Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics)). _Note: Because MathJax 3 broke support for MathJax 2 style equations parsed by the Kramdown, equations are only recognized by the `$$` tag._
 
 Example:
@@ -69,6 +75,18 @@ Wow such pretty math!
 
 <p align="center">
 	<img src="/images/readme/math.png">
+</p>
+
+## Info-box
+
+To add an info-box to your page, specifiy the icon you wish to use and include the info-box content:
+
+```
+{% include info-box icon_path="/images/icons/40px-Information-sign.png" content="Hey this is the info box! If you want to learn more about how to create an info box, view the source of this page!" %}
+```
+
+<p align="center">
+	<img src="/images/readme/info-box.png">
 </p>
 
 ## Setting up the side bar with anchors
@@ -140,12 +158,13 @@ _Note:_ We recommend using `{: .image.fit}` instead of `{: .image.center}` to av
 - [ ] Table of contents heirachy
 - [ ] Remove "category indexes" from search
 - [ ] Create wide table style
-- [ ] Add link support for the info-box
+- [X] Add link support for the info-box
 - [X] Fix footer -- does not stick to bottom
 - [ ] Fix h2 header --> normal/bold should be #585858
 - [X] Fix tables (too wide) -- set to `width: 50%;`
 - [ ] Change table style -- needs lines
 - [ ] Fix Figure center - width issues
+- [X] Convert all links to use relative_url (safely prepend links to the domain root and allows for moving to different `baseurl` if necessary)
 - [X] Add Sidebox element
 - [X] Add Edit and view source links to page template
 - [X] Add page/post type to categories
