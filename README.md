@@ -119,6 +119,18 @@ To setup the anchors use the following syntax:
 	<img src="/images/readme/sidebar.png">
 </p>
 
+## Sidebox
+
+A sidebox can be added to the left or right side of your page. Specify either the `sidebox-right` or `sidebox-left` and provide the box content:
+
+```
+{% include sidebox-right content="Hey this is the sidebox-right style!" %}
+```
+
+<p align="center">
+	<img src="/images/readme/sidebox.png">
+</p>
+
 ## table with images
 
 **The following options are available:**
