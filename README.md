@@ -67,7 +67,9 @@ Wow such pretty math!
 
 ```
 
-![MathJax 3 Example](images/readme/mathjax_example.png)
+<p align="center">
+	<img src="/images/readme/math.png">
+</p>
 
 ## Setting up the side bar with anchors
 
