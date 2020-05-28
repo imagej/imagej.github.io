@@ -1,7 +1,22 @@
-<div class="info-box" markdown="1">
-
-![Important]({{include.icon_path | relative_url}}){: .image.info}
-
+{% capture info_content %}
+<div info="content" markdown="1">
 {{include.content}}
+</div>
+{% endcapture %}
 
+<div id="info-box">
+    <table class="table-info">
+        <tbody>
+            <tr>
+                <td>
+                    <p>
+                        <img src="{{include.icon_path}}">
+                    </p>
+                </td>
+                <td>
+                    {{info_content}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
