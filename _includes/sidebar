@@ -1,0 +1,16 @@
+{% assign headings = include.content | replace: "|", "{::nomarkdown}<hr>{:/}" |split: "," %}
+
+<div class="sidebar" markdown="1">
+
+{% capture sidebar-content %}
+{{include.title}}
+{::nomarkdown}<hr>{:/}
+{%- for item in headings -%}{% if item contains "<hr>"%}
+{{item}}{% continue %}{% endif %}
+[{{-item-}}](#{{-item-}})
+{% endfor %}
+{% endcapture %}
+
+{{sidebar-content | strip_newlines}}
+
+</div>
