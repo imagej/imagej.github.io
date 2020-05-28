@@ -5,9 +5,9 @@
 {% capture sidebar-content %}
 {{include.title}}
 {::nomarkdown}<hr>{:/}
-{%- for item in headings -%}{% if item contains "<hr>"%}
+{% for item in headings %}{% if item contains "<hr>"%}
 {{item}}{% continue %}{% endif %}
-[{{-item-}}](#{{-item-}})
+[{{item | strip}}](#{{item | strip}})
 {% endfor %}
 {% endcapture %}
 
