@@ -121,7 +121,7 @@ To setup the anchors use the following syntax:
 
 ## Sidebox
 
-A sidebox can be added to the left or right side of your page. Specify either the `sidebox-right` or `sidebox-left` and provide the box content:
+A sidebox can be added to the left or right side of your page. Specify either `sidebox-right` or `sidebox-left` and provide the box content:
 
 ```
 {% include sidebox-right content="Hey this is the sidebox-right style!" %}
@@ -131,18 +131,25 @@ A sidebox can be added to the left or right side of your page. Specify either th
 	<img src="/images/readme/sidebox.png">
 </p>
 
-## table with images
+## Menu breadcrumbs
 
-**The following options are available:**
+There are three styles of menu breadcrumbs available: `black`, `white` and `none`. To utilize these, use the following syntax:
 
-| Option | Result |
-| :---: | :---: |
-| {: .image.left} | left alignment |
-| {: .image.right} | right alignment |
-| {: .image.center} | center alignment |
-| {: .image.fit} | centers and fits image (recommended over .image.center)
+```
+_Black menu breadcrumb_:
+{% include bc color="black" content="Menu1|Menu2|Menu3|Menu4|**Plugin**" %} 
 
-_Note:_ We recommend using `{: .image.fit}` instead of `{: .image.center}` to avoid images that escape the container (_i.e._ images may span off screen on mobile devices).
+_White menu breadcrumb_:
+{% include bc color="white" content="Menu1|Menu2|Menu3|Menu4|**Plugin**" %} 
+
+_None menu breadcrumb_:
+{% include bc color="none" content="Menu1|Menu2|Menu3|Menu4|**Plugin**" %} 
+```
+
+<p align="center">
+	<img src="/images/readme/menu-bc.png">
+</p>
+
 
 
 ## TODO (pre-live):
