@@ -152,7 +152,7 @@ _None menu breadcrumb_:
 
 ## Syntax highlighting
 
-
+```
 Python example:
 
 ```python
@@ -174,6 +174,7 @@ def update_progress(progress):
     text = "\rPercent complete: [{0}] {1}% {2}".format( "#"*block + "-"*(barLength-block), progress*100, status)
     sys.stdout.write(text)
     sys.stdout.flush()
+```
 ```
 
 
