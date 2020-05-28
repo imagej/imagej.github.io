@@ -112,7 +112,12 @@ Wow such pretty math!
 To add an info-box to your page, specifiy the icon you wish to use and include the info-box content:
 
 ```
-{% include info-box icon_path="/images/icons/40px-Information-sign.png" content="Hey this is the info box! If you want to learn more about how to create an info box, view the source of this page!" %}
+{% include info-box icon_path="/images/icons/40px-Information-sign.png" content="Hey this is the info box! 
+
+- item 1
+- item 2
+
+If you want to learn more about how to create an info box, view the source of this page!" %}
 ```
 
 <p align="center">
