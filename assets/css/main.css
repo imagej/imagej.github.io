@@ -2839,12 +2839,14 @@ input, select, textarea {
 		color: #0014ca;
 		display: block;
 		border-bottom: none;
+		margin-bottom: 0;
 	}
 
 	.sidebar p {
 		font-size: large;
-		text-align: center;
+		text-align: justify;
 		font-weight: 500;
+		margin-bottom: 1em;
 	}
 
 	.sidebar hr {
