@@ -25,4 +25,4 @@ layout: search
         {% endfor %}
     };
 </script>
-{% include search-scripts.html %}
+{% include search-scripts %}
