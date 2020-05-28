@@ -152,9 +152,7 @@ _None menu breadcrumb_:
 
 ## Syntax highlighting
 
-Syntax highlighting (via [Rogue](https://github.com/rouge-ruby/rouge)) supporting over 100 different languages can be activated by adding the language used after the first ` ``` ` before the code block.
-
-- 
+Syntax highlighting (via [Rogue](https://github.com/rouge-ruby/rouge)) supporting over 100 different languages can be activated by adding the language used after the first ` ``` ` before the code block:
 
 ```
 Python example:
