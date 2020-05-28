@@ -8,7 +8,7 @@ Welcome to ImageJ.net.
 Images can be added and placed on the _left_, _right_, _center_ and _fit_ positions. For example:
 
 ```
-{% include image-left name="spirals" image_path="/images/readme/spirals_2.png" %}
+{% include image-left name="spirals" image_path="/images/readme/spirals.png" %}
 ```
 <p align="center">
 	<img src="/images/readme/image-left.png">
@@ -27,7 +27,7 @@ To render the image on the right and center respectively. Fit renders the image 
 You may wish to add an image with legend text. To do so use the following syntax:
 
 ```
-{% include figure-right name="place holder image" image_path="/images/readme/spirals_2.png" content="**Figure 2** : This is a right figure." %}
+{% include figure-right name="place holder image" image_path="/images/readme/spirals.png" content="**Figure 2** : This is a right figure." %}
 ```
 
 <p align="center">
@@ -96,16 +96,17 @@ A navigation sidebar can be added by including the `sidebar` element and providi
 
 _Note_: There are a couple things to note about the `sidebar` element:
 
-1. To include a break/seperator line use `|`.
-2. The title will be rendered as bold text and will not be a link.
-3. The sidebar links and anchor links must be the same, otherwise they will not link properly. 
-4. The sidebar is always rendered on the **right** side of the page.
-5. You should always place the sidebar at the top of the page, before your content.
+1. Separate multiple entries with a comma.
+2. To include a break/seperator line use `|`.
+3. The title will be rendered as bold text and will not be a link.
+4. The sidebar links and anchor links must be the same, otherwise they will not link properly. 
+5. The sidebar is always rendered on the **right** side of the page.
+6. You should always place the sidebar at the top of the page, before your content.
 
 To setup the sidebar use the following syntax:
 
 ```
-{% include sidebar title="Demo" content="Introduction, |, Left image, Right image, Center image, Fit image"%}
+{% include sidebar title="Demo" content="Introduction, |, Left image, Right image, Center image, Fit image" %}
 ```
 
 To setup the anchors use the following syntax:
