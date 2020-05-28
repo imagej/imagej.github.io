@@ -127,40 +127,6 @@ Title anchors:
 
 _Note:_ We recommend using `{: .image.fit}` instead of `{: .image.center}` to avoid images that escape the container (_i.e._ images may span off screen on mobile devices).
 
-## Adding images with legends
-
-To include images with a legend, insert your image with the `{: .image.fit}` tag and nest them inside `<div class="figure POSITION" markdown="1"></div>` tags. **Left**, **right** and **center** are avaiable position options.
-
-_Example:_
-
-```
-<div class="figure right" markdown="1">
-
-![placeholder image]({{site.baseurl}}/images/posts/placeholder.png){: .image.fit}
-
-This is the legend text.
-
-</div>
-```
-
-![figure right example](/images/readme/figure-right.jpg)
-
-_Note:_ This is space sensitive. If you indent the nested markdown line it will render as a code block instead of your image with legend.
-
-For multiple images on the same line with individual legends, compact this syntax and place it inside a markdown table using the `figure row` class.
-
-_Example:_
-
-```
-<div class="figure row" markdown="1">
-
-| ![placeholder image 1]({{site.baseurl}}/images/placeholder.png){: .image.fit} Legend 1 | ![placeholder image 2]({{site.baseurl}}/images/placeholder.png){: .image.fit} Legend 2 | ![placeholder image 3]({{site.baseurl}}/images/placeholder.png){: .image.fit} Legend 3 | 
-
-</div>
-```
-
-![figure row example](/images/readme/figure-row.jpg)
-
 
 ## TODO (pre-live):
 
@@ -169,13 +135,13 @@ _Example:_
 - [X] Code syntax highlighting
 - [X] Add infobox elements
 - [X] Add brief description to front matter.
-- [ ] Add Lazy loading to images
+- [X] Add Lazy loading to images
 - [ ] Add ABC lists to CSS style
 - [ ] Table of contents heirachy
 - [ ] Remove "category indexes" from search
 - [ ] Create wide table style
 - [ ] Add link support for the info-box
-- [ ] Fix footer -- does not stick to bottom
+- [X] Fix footer -- does not stick to bottom
 - [ ] Fix h2 header --> normal/bold should be #585858
 - [X] Fix tables (too wide) -- set to `width: 50%;`
 - [ ] Change table style -- needs lines
