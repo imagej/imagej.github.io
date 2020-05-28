@@ -2485,6 +2485,12 @@ input, select, textarea {
 		padding: 0.5em 0.5em 0 0.5em;
 	}
 
+/* Category */
+
+	.category p {
+		font-size: 25px;
+		font-weight: 550;
+	}
 
 /* Navigation Bar */
 
@@ -2911,7 +2917,7 @@ input, select, textarea {
 
 	table {
 		margin: 0 auto;
-		width: 50%;
+		width: 100%;
 
 	}
 
