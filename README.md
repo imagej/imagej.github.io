@@ -200,12 +200,13 @@ def update_progress(progress):
 - [X] Add Lazy loading to images
 - [ ] Add ABC lists to CSS style
 - [ ] Table of contents heirachy
-- [ ] Remove "category indexes" from search
+- [X] Remove "category indexes" from search
 - [ ] Create wide table style
 - [X] Add link support for the info-box
 - [X] Fix footer -- does not stick to bottom
 - [ ] Fix h2 header --> normal/bold should be #585858
 - [X] Fix tables (too wide) -- set to `width: 50%;`
+- [X] Fix infob0x (add bullet points support and better icon centering)
 - [ ] Change table style -- needs lines
 - [ ] Fix Figure center - width issues
 - [X] Convert all links to use relative_url (safely prepend links to the domain root and allows for moving to different `baseurl` if necessary)
@@ -214,7 +215,7 @@ def update_progress(progress):
 - [X] Add page/post type to categories
 - [ ] Add supporting pages
 	- [x] Getting started (/learn.md)
-	- [ ] Architecture (/learn/architecture.md)
+	- [X] Architecture (/learn/architecture.md)
 
 ## TODO (post-live):
 
