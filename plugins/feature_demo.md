@@ -3,90 +3,82 @@ title: Feature Demo
 breadcrumb: Feature Demo
 layout: page
 author: Edward Evans
-category: plugins:Demo
+category: plugins:demo
 use_math: true
 description: This page is a feature demo.
 ---
 
-{% include info-box icon_path="/images/icons/40px-Information-sign.png" content="Hey this is the info box! If you want to learn more about how to create an info box, view the source of this page!" %}
+{% include info-box icon_path="/images/icons/40px-Information-sign.png" content="Hey this is the info box! 
 
-<div class="sidebar" markdown="1">
+- item 1
+- item 2
 
-Sidebar
-<hr>
-[Introduction](#Introduction)
-<hr>
-[Left image](#Left image)
-[Right image](#Right image)
-[Center image](#Center image)
-[Fit image](#Fit image)
-[Figure left](#Figure left)
-[Figure right](#Figure right)
-[Figure center](#Figure center)
-[Figure row](#Figure row)
-[Markdown table](#Markdown table)
-[YouTube video](#YouTube video)
-[Imbedded images in table](#Imbedded images in table)
-[Math equations](#Math equations)
-[Sidebox](#Sidebox)
-[Syntax highlighting](#Syntax highlighting)
+If you want to learn more about how to create an info box, view the source of this page!" %}
 
-</div>
 
-## <a name="Introduction"></a> **Introduction**
+{% include sidebar title="Demo" content="Introduction, |, Left image, Right image, Center image, Fit image, Figure left, Figure right,Figure center, Figure row, Markdown table, YouTube video, Embedded images in table, Math equations, Sidebox, Syntax highlighting, Menu breadcrumbs" %}
+
+
+{% include anchor content="Introduction" %}
 
 While in Clojure one is able to declare types if desired, it's not required; the low computational requirements of the plugin do not invite to make it verbose unnecessarily. But java demands type declarations just so that the plugin can be compiled and thus a binary .class file generated.
 
-## <a name="Left image"></a> **Left image**
+While in Clojure one is able to declare types if desired, it's not required; the low computational requirements of the plugin do not invite to make it verbose unnecessarily. But java demands type declarations just so that the plugin can be compiled and thus a binary .class file generated.
 
-{% include image-left name="place holder image" image_path="/images/placeholder.png" %}
+{% include anchor content="Left image" %}
+
+{% include image-left name="spirals" image_path="/images/readme/spirals.png" %}
 
 While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
 
-## <a name="Right image"></a> **Right image**
+While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
+
+{% include anchor content="Right image" %}
 
 {% include image-right name="place holder image" image_path="/images/placeholder.png" %}
 
 While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
 
-## <a name="Center image"></a> **Center image**
+{% include anchor content="Center image" %}
 
 {% include image-center name="place holder image" image_path="/images/placeholder.png" %}
 
 While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
 
-## <a name="Fit image"></a> **Fit image**
+{% include anchor content="Fit image" %}
 
 {% include image-fit name="place holder image" image_path="/images/placeholder.png" %}
 
 While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
 
-## <a name="Figure left"></a> **Figure left**
+{% include anchor content="Figure left" %}
 
-{% include figure-left name="place holder image" image_path="/images/placeholder.png" content="Figure legend - left" %}
-
-While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
-
-While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
-
-## <a name="Figure right"></a> **Figure right**
-
-{% include figure-right name="place holder image" image_path="/images/placeholder.png" content="Figure legend - right" %}
+{% include figure-left name="place holder image" image_path="/images/placeholder.png" content="**Figure 1**: This is a left figure." %}
 
 While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
 
 While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
 
-## <a name="Figure center"></a> **Figure center**
+{% include anchor content="Figure right" %}
 
-{% include figure-center name="place holder image" image_path="/images/placeholder.png" content="Figure legend - center" %}
+{% include figure-right name="place holder image" image_path="/images/readme/spirals.png" content="**Figure 2** : This is a right figure." %}
+
+While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
+
+While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
+
+While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
+
+{% include anchor content="Figure center" %}
+
+{% include figure-center name="place holder image" image_path="/images/placeholder.png" content="**Figure 3** : This is a center figure." %}
 
 While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
 
 While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
 
 
-## <a name="Figure row"></a> **Figure row**
+{% include anchor content="Figure row" %}
 
 While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
 
@@ -96,18 +88,18 @@ While both the java and clojure versions encapsulate the variables in a local na
 
 </div>
 
-## <a name="Markdown table"></a> **Markdown table**
+{% include anchor content="Markdown table" %}
 
 | Item 1 | Item 2 | Item 3 |
 | :---: | :---: | :---: |
 | A | B | C |
 | 1 | 2 | 3 |
 
-## <a name="YouTube video"></a> **YouTube video**
+{% include anchor content="YouTube video" %}
 
 {% include youtube url="https://www.youtube.com/embed/4NOM-kLfDR8" %}
 
-## <a name="Imbedded images in table"></a> **Imbedded images in table**
+{% include anchor content="Embedded images in table" %}
 
 A table with images, use the .image.table to make it align with text:
 
@@ -115,15 +107,15 @@ A table with images, use the .image.table to make it align with text:
 |![Plugins]({{"/images/icons/plugins_icon.png" | relative_url}}){: .image.table} | A powerful mechanism for extending ImageJ in all kinds of useful ways. 
 | ![Extend]({{"/images/icons/extend_icon.png" | relative_url}}){: .image.table} | Automated, reproducible workflows via scripts and macros, including headless on a remote server or cluster. |
 
-## <a name="Math equations"></a> **Math equations**
+{% include anchor content="Math equations" %}
 
 When $$a \ne 0$$ , there are two solutions to $$(ax^2 + bx + c = 0)$$ and they are
 
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
 
 Wow such pretty math!
 
-## <a name="Sidebox"></a> **Sidebox**
+{% include anchor content="Sidebox" %}
 
 {% include sidebox-right content="Hey this is the sidebox-right style!" %}
 
@@ -136,7 +128,7 @@ While both the java and clojure versions encapsulate the variables in a local na
 {% include info-box icon_path="/images/icons/40px-Important-sign.png" content="Stop! This is an important message! Did you check out the plugins categories page? What do you think? Okay please continue reading.
 " %}
 
-## <a name="Syntax highlighting"></a> **Syntax highlighting**
+{% include anchor content="Syntax highlighting" %}
 
 Java example:
 
@@ -170,6 +162,13 @@ def update_progress(progress):
     sys.stdout.flush()
 ```
 
-## Menu breadcrumbs:
+{% include anchor content="Menu breadcrumbs" %}
 
-You can access the plugin by opening Fiji and navigating the menus: {% include bc color="black" content="Menu1|Menu2|Menu3|Menu4|Plugin" %} 
+_Black menu breadcrumb_:
+{% include bc color="black" content="Menu1|Menu2|Menu3|Menu4|**Plugin**" %} 
+
+_White menu breadcrumb_:
+{% include bc color="white" content="Menu1|Menu2|Menu3|Menu4|**Plugin**" %} 
+
+_None menu breadcrumb_:
+{% include bc color="none" content="Menu1|Menu2|Menu3|Menu4|**Plugin**" %} 
