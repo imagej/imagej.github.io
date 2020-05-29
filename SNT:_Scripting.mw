@@ -2,7 +2,7 @@
 {{SNTNavBar}}
 
 ==SNT API==
-The most up-to-date SNT API can be found at [https://morphonets.github.io/SNT].
+The most up-to-date SNT API can be found at [https://morphonets.github.io/SNT https://morphonets.github.io/SNT].
 
 ==Script Templates==
 [[Image:Snt-Scripts-Menu-Full-List.png|right|thumb|300px|SNT Scripts Menu]]
@@ -85,7 +85,7 @@ def run():
 
 
 ==Example: Scripting Reconstruction Viewer==
-Programmatic control over an open instance of [[SNT:_Reconstruction_Viewer|Reconstruction Viewer]] (either called from within SNT or as a standalone application) can be achieved by selecting the {{bc|Tools & Utilities|Script This Viewer...}} [[SNT:_Reconstruction_Viewer#Utilities|command]]. This command will open an instance of Fiji's script editor with a boilerplate template containing the most essential imports and [[Script_Parameters|script parameters]]. The default programming language for this template can be chosen from the drop-down menu of the ''Preferred Language'' [[SNT:_Reconstruction_Viewer#Settings|option]].
+Programmatic control over an open instance of [[SNT:_Reconstruction_Viewer|Reconstruction Viewer]] (either called from within SNT or as a standalone application) can be achieved by selecting the {{bc|Tools & Utilities|Script This Viewer...}} [[SNT:_Reconstruction_Viewer#Utilities|command]]. It will then open an instance of Fiji's script editor with a boilerplate template containing the most essential imports and [[Script_Parameters|script parameters]]. The default programming language for this template can be chosen from the drop-down menu of the ''Preferred Language'' [[SNT:_Reconstruction_Viewer#Settings|option]].
 
 The following script exemplifies how to extend the boilerplate template to control the Viewer in real-time.
 
