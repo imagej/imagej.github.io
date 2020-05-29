@@ -11,6 +11,10 @@
 }}
 
 = New versions =
+'''29/05/2020'''<br>
+- Add ROI group to settings
+
+
 '''22/05/2020'''<br>
 - Add custom ROI buttons (define from active ROI)<br>
 - Add help button in toolbar
