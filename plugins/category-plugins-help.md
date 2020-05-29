@@ -2,7 +2,7 @@
 title: Help
 breadcrumb: Help
 author: admin
-category: admin
+category: plugins:admin
 layout: page
 use_math: false
 ---

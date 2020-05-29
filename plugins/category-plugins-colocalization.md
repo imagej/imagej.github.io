@@ -2,7 +2,7 @@
 title: Colocalization
 breadcrumb: Colocalization
 author: admin
-category: admin
+category: plugins:admin
 layout: page
 use_math: false
 ---

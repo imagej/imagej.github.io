@@ -2,7 +2,7 @@
 title: Segmentation
 breadcrumb: Segmentation
 author: admin
-category: admin
+category: plugins:admin
 layout: page
 use_math: false
 ---
