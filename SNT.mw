@@ -1,18 +1,111 @@
 <seo metak="snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy" metad="snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy" />
-{{SNTNavBar}}
-{{ComponentStats:sc.fiji:Simple_Neurite_Tracer}}
 <div class="toclimit-2">
-[[Category:SNT]][[Category:Neuroanatomy]]
-== Introduction ==
-SNT is ImageJ's complete framework for tracing and analysis of neurons other tube-like structures (e.g., blood vessels). It supports multichannel and time-lapse images,  sophisticated hardware accelerated 3D visualization tools, [[SciView]] integration, and an extensive repertoire of tools for morphometric analysis.
+{{SNTNavBar}}
+{{Infobox
+| name       = SNT
+| software   = complete framework for quantification of neuronal anatomy 
+| logo       = [[File:SNTLogo512.png|150px]]
+| author     = {{Person|Tiago}}, {{Person|Kharrington}}, {{Person|Carshadi}}
+| maintainer = {{Person|Tiago}}
+| source     = {{GitHub | org = morphonets | repo = SNT}}
+| status     = stable, active
+| category   = [[:Category:Neuroanatomy|Neuroanatomy]]
+}}
+== Overview ==
+SNT is ImageJ's framework for semi-automated tracing, visualization, quantitative analyses and modeling of neuronal morphology. For tracing, SNT supports modern multi-dimensional microscopy data, and highly-customizable routines. For data analysis, SNT features advanced visualization tools, access to all major morphology databases, and support for whole-brain circuitry data. It supersedes the original [[SNT:_FAQ#snt|Simple Neurite Tracer]] plug-in.
 
-[[Image:SimpleNeuriteTracer2.png|thumb|center|800px|SNT Overview]]
+SNT's documentation extensive. Please use the navigation bar on too of the page to access the different sections. The major sections are organized as follows:
+* '''[[SNT:_Manual|Manual]]''': SNT's user guide for tracing operations
+* '''[[SNT:_Step-By-Step_Instructions|Walk-throughs]]''': Detailed step-by-step instructions for specific tasks
+* '''[[SNT:_Screencasts|Screencasts]]''': Video tutorials. If you are using SNT for the first time you probably want to start here
+* '''[[SNT:_Reconstruction_Viewer|Reconstruction Viewer]]''': SNT's entry point for visualization of pre-existing data. If you are analyzing reconstructions you probably want to start here.
+* '''[[SNT:_Analysis|Analysis]]''' Overview of all analysis commands, accessible in either the tracing interface or [[SNT:_Reconstruction_Viewer|Reconstruction Viewer]]
+* '''[[SNT:_Scripting|Scripting]]''' Details on how to use SNT as a scripting library
+
+[[Image:SimpleNeuriteTracer2.png|thumb|center|800px|SNT Overview. A key feature of SNT is that ''every'' aspect of the program can be [[SNT:_Scripting|scripted]] in any of Fiji's supported languages, or from Python through [https://github.com/imagej/pyimagej pyimagej]. ]]
+
+==Features==
+
+===Tracing===
+* Support for up to 5D multidimensional images (including multichannel, and those with a time axis). While tracing, visibility of non-traced channels can be toggled at will
+* Precise placement of nodes is aided by a local search that automatically snaps the cursor to neurites wihin a 3D neighborhood
+* A-star search can be performed on a second, non-displayed image. This allows for e.g., tracing on a pre-process (filtered) image while interacting with the unfiltered image (or vice-versa). If enough RAM is available toggling between the two data sources is immediate
+* Tracing is scriptable and can be interleaved with image processing routines
+* Paths can be tagged, searched, grouped and filtered by morphometric properties (length, radius, etc.)
+* Paths can be edited, i.e., a path can be merged into a existing one, or split into two. Nodes can be moved, deleted, or inserted
+* Post-hoc refinement of node positioning by 'snapping' traces to the fluorescent signal associated with a a path
+
+=== Analysis ===
+* ''Extensive'' repertoire of metrics, namely those provided by [http://cng.gmu.edu:8080/Lm/help/index.htm L-measure] and [https://github.com/BlueBrain/NeuroM NeuroM]. Metrics can be collected from groups of cells, single cells, or parts thereof
+* Analysis based on neuropil annotations for whole-brain data such as [https://ml-neuronbrowser.janelia.org/ MouseLight]
+* Direct access to public databases, including [https://ml-neuronbrowser.janelia.org/ MouseLight], [http://www.flycircuit.tw FlyCircuit] and [http://neuromorpho.org/ NeuroMorpho]
+* Built-in commands for ''immediate'' retrieval of summary statistics, comparison plots and histograms
+* Image processing: Reconstructions can be skeletonized, converted to masks or ROIs, and voxel intensities profiled
+* Sholl and Horton-Strahler analyses. Graph theory-based and Persistent homology-based analyses
+* Modeling: access to the [[SNT:_Modeling|Cx3D simulation engine]]
+
+=== Visualization ===
+* [[SNT:_Reconstruction_Viewer|Reconstruction Viewer]]: Standalone hardware-accelerated 3D visualization tool for both meshes and reconstructions.
+** Interactive and programmatic scenes (controlled rotations, panning, zoom, scaling, animation, “dark/light mode”, etc.)
+** Customizable views: Interactive management of scene elements, controls for transparency, color interpolation, lightning, path smoothing, etc.. Ability to render both local and remote files on the same scene
+** Built-in support for several template brains: Drosophila, zebrafish, and Allen CCF (Allen Mouse Brain Atlas)
+* [[SciView]] integration
+* Quantitative, publication-quality visualization: Display neurons color coded by morphometric traits, or neuropil annotations. Export plots, reconstructions, diagrams and histograms as vector graphics
+
+=== Backwards Compatibility ===
+* Special effort was put into backwards compatibility with older Simple Neurite Tracer releases (including [[TrakEM2]] and [[SNT:_Tubular_Geodesics|ITK interaction]]). Inherited functionality has been improved, namely:
+** Extended support for sub-pixel accuracy
+** Improved synchronization of XY, ZY, and XZ views
+** Improved calls to Dijkstra’s filling and Path-fitting routines
+** Multi-threading improvements
 
 
+== Installation ==
 
-== References ==
-<references/>
+=== ''Regular'' Releases ===
 
+SNT is currently distributed through the ''NeuroAnatomy'' [[Update_Sites|update site]]. For full functionality, subscription to the [[SciView]] update site is also required.
+
+The first time you start SNT from Fiji’s menu structure ({{bc|Plugins|Neuroanatomy|SNT}} (or its backwards-compatible alias {{bc|Plugins|NeuroAnatomy|SNT|Legacy|Simple Neurite Tracer...}} ) you should be prompted for automatic subscription and download of required dependencies. If not, to manually subscribe to the required update sites:
+
+# Run the Fiji [[Updater]] ({{bc|Help|Update..}}, the penultimate entry in the {{bc|Help|}} menu)
+# Click ''Manage update sites''
+# Select the ''Neuroanatomy'' and ''SciView'' checkboxes
+# Click ''Apply changes'' and restart Fiji
+
+=== ''Bleeding Edge'' Releases ===
+
+Daily builds of SNT and SciView are pushed to the ''Neuroanatomy-Unstable'' and ''SciView-Unstable'' updated sites. Note that there is nothing inherently ''unstable'' with these builds: this nomenclature is adopted from the [https://www.debian.org/releases/ Debian release cycle]. Since the sites are not part of the official list, you have to specify their location to the updater:
+  <ol>
+    <li>
+Run the Fiji [[Updater]] ({{bc|Help|Update..}}, the penultimate entry in the {{bc|Help|&nbsp;}} menu)
+    </li>
+    <li>
+Click ''Manage update sites''
+    </li>
+    <li>
+Add the following entries to the ''Manage update sites'' table, by clicking on ''Add update site'':
+
+{| class="wikitable" style="margin: auto;"
+! Name
+! URL
+|-
+| Neuroanatomy-edge
+| https://sites.imagej.net/Neuroanatomy-Unstable/
+|-
+| SciView-edge
+| https://sites.imagej.net/SciView-Unstable/
+|}
+    </li>
+    <li>
+Activate the newly added ''Neuroanatomy-edge'' and ''SciView-edge'' checkboxes (if subscribed to ''regular releases'', un-select ''Neuroanatomy'' and ''SciView'')
+    </li>
+    <li>
+Click ''Apply changes'' and restart Fiji
+    </li>
+  </ol>
+
+{{SNTNavBar}}
 [[Category:Citable]]
 [[Category:Plugins]]
 [[Category:Segmentation]]
