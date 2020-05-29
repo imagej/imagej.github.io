@@ -18,7 +18,7 @@ SNT's documentation is extensive. Please use the navigation bar on too of the pa
 * '''[[SNT:_Manual|Manual]]''': SNT's user guide for tracing operations
 * '''[[SNT:_Step-By-Step_Instructions|Walk-throughs]]''': Detailed step-by-step instructions for specific tasks
 * '''[[SNT:_Screencasts|Screencasts]]''': Video tutorials. If you are using SNT for the first time you probably want to start here
-* '''[[SNT:_Reconstruction_Viewer|Reconstruction Viewer]]''': SNT's entry point for visualization of pre-existing data. If you are analyzing reconstructions you may want to start here.
+* '''[[SNT:_Reconstruction_Viewer|Reconstruction Viewer]]''': SNT's entry point for visualization of pre-existing data. If you are analyzing reconstructions you may want to start here
 * '''[[SNT:_Analysis|Analysis]]''' Overview of all analysis commands, accessible in either the tracing interface or [[SNT:_Reconstruction_Viewer|Reconstruction Viewer]]
 * '''[[SNT:_Scripting|Scripting]]''' Details on how to use SNT as a scripting library
 
@@ -41,7 +41,7 @@ SNT's documentation is extensive. Please use the navigation bar on too of the pa
 * Direct access to public databases, including [https://ml-neuronbrowser.janelia.org/ MouseLight], [http://www.flycircuit.tw FlyCircuit] and [http://neuromorpho.org/ NeuroMorpho]
 * Built-in commands for ''immediate'' retrieval of summary statistics, comparison plots and histograms
 * Image processing: Reconstructions can be skeletonized, converted to masks or ROIs, and voxel intensities profiled
-* Sholl and Horton-Strahler analyses. Graph theory-based and Persistent homology-based analyses
+* [[SNT:_Analysis#Sholl_Analysis|Sholl]] and [[SNT:_Analysis#Strahler_Analysis|Horton-Strahler]] analyses. [https://en.wikipedia.org/wiki/Graph_theory Graph theory] and [https://en.wikipedia.org/wiki/Persistent_homology Persistent homology] -based analyses
 * Modeling: access to the [[SNT:_Modeling|Cx3D simulation engine]]
 
 === Visualization ===
