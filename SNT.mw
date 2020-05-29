@@ -14,11 +14,11 @@
 == Overview ==
 SNT is ImageJ's framework for semi-automated tracing, visualization, quantitative analyses and modeling of neuronal morphology. For tracing, SNT supports modern multi-dimensional microscopy data, and highly-customizable routines. For data analysis, SNT features advanced visualization tools, access to all major morphology databases, and support for whole-brain circuitry data. It supersedes the original [[SNT:_FAQ#snt|Simple Neurite Tracer]] plug-in.
 
-SNT's documentation extensive. Please use the navigation bar on too of the page to access the different sections. The major sections are organized as follows:
+SNT's documentation is extensive. Please use the navigation bar on too of the page to access the different sections. The major sections are organized as follows:
 * '''[[SNT:_Manual|Manual]]''': SNT's user guide for tracing operations
 * '''[[SNT:_Step-By-Step_Instructions|Walk-throughs]]''': Detailed step-by-step instructions for specific tasks
 * '''[[SNT:_Screencasts|Screencasts]]''': Video tutorials. If you are using SNT for the first time you probably want to start here
-* '''[[SNT:_Reconstruction_Viewer|Reconstruction Viewer]]''': SNT's entry point for visualization of pre-existing data. If you are analyzing reconstructions you probably want to start here.
+* '''[[SNT:_Reconstruction_Viewer|Reconstruction Viewer]]''': SNT's entry point for visualization of pre-existing data. If you are analyzing reconstructions you may want to start here.
 * '''[[SNT:_Analysis|Analysis]]''' Overview of all analysis commands, accessible in either the tracing interface or [[SNT:_Reconstruction_Viewer|Reconstruction Viewer]]
 * '''[[SNT:_Scripting|Scripting]]''' Details on how to use SNT as a scripting library
 
