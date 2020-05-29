@@ -54,7 +54,7 @@ Simple Neurite Tracer was the first Fiji plugin dedicated to visualization and r
 	<span id="accuracy"></span>'''How accurate is SNT'''?
 	</li>
 	<dl><dd>
-	When SNT is compiled, a [https://github.com/morphonets/SNT/tree/master/src/test/java/sc/fiji/snt suite of tests] is run to detect deficiencies in the code base. For analysis, results are benchmarked against values obtained in [http://cng.gmu.edu:8080/Lm/ L-Measure] and [https://github.com/BlueBrain/NeuroM NeuroM]. However, no test suite is ever perfect. If you suspect of innacuracies, please {{GitHub|org=morphonets|repo=SNT|label=report}} it!
+	When SNT is compiled, a [https://github.com/morphonets/SNT/tree/master/src/test/java/sc/fiji/snt suite of tests] is run to detect deficiencies in the code base. Morphometry results are benchmarked against values obtained in [http://cng.gmu.edu:8080/Lm/ L-Measure] and [https://github.com/BlueBrain/NeuroM NeuroM]. However, no test suite is ever perfect. If you detect inaccuracies, please {{GitHub|org=morphonets|repo=SNT|label=report}} them!
 	</dd></dl>
 	<li>
 	<span id="swc"></span>'''What is a SWC file'''?
