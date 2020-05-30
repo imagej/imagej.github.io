@@ -1,28 +1,25 @@
-{{Infobox
+{{Project|SNT}}{{Infobox
 | software   = Fiji
 | name       = Neuroanatomy update site
 | author     = {{Person|Tiago}}
 | maintainer = {{Person|Tiago}}
-| source     = {{GitHub|org=tferr|repo=hIPNAT}}
-| released   = April 2016
+| source     = {{GitHub|org=morphonets|}}
 | status     = Active
-| latest version = '''1.0.10 May 2017''' ({{GitHub|org=tferr|repo=hIPNAT/releases|label=Changelog}})
 | category   = [[:Category:Plugins|Plugins]], [[:Category:Analysis|Analysis]], [[:Category:Neuroanatomy|Neuroanatomy]]
 }}
-This is the main documentation page for the hIPNAT (''Image Processing for NeuroAnatomy and Tree-like Structures'') plugins distributed through the [[User:Neuroanatomy|Neuroanatomy update site]], released in [http://forum.imagej.net/t/launch-of-the-neuroanatomy-update-site/1377?u=tferr April 2016]. For a list of all pages in this wiki related to Neuroanatomy have a look at [[:Category:Neuroanatomy]].
-{{ambox | text =Please note that, at this time, these tools are under heavy development: some features are experimental and documentation remains incomplete. Also, some of this work has been meanwhile migrated to core-Fiji plugins, such as [[Simple_Neurite_Tracer|Simple Neurite Tracer]].
-}}
+The Neuroanatomy update site is used for distribution of [[SNT]]. A few other (legacy) plugins for ''Image Processing for NeuroAnatomy and Tree-like Structures'' are also included. For a list of all pages in this wiki related to Neuroanatomy have a look at [[:Category:Neuroanatomy]].
 
 = Installation =
-The requirements to run the Neuroanatomy suite of plugins are twofold: i) [[Fiji]] (i.e., an ImageJ installation subscribed to the Fiji update site) and ii) Java 8 (as part of an active effort to [[2015-12-22_-_The_road_to_Java_8|modernize ImageJ]]). If you are running an older version of Java, you can either i) [[Fiji/Downloads|Download the latest Fiji release]] (newer releases come pre-bundled with Java 8); or ii) If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [[Troubleshooting#Checking_the_Java_version|Fiji installation aware of it]].
+The requirements to run the Neuroanatomy suite of plugins are twofold: i) [[Fiji]] (i.e., an ImageJ installation subscribed to the Fiji update site) running at least Java 8. If you are running an older version of Java, you can either i) [[Fiji/Downloads|Download the latest Fiji release]] (newer releases come pre-bundled with Java 8); or ii) If you have downloaded Fiji while ago and want to keep your existing installation, you will have to download Java 8 and make your [[Troubleshooting#Checking_the_Java_version|Fiji installation aware of it]].
 
 '''Subscribing to the Neuroanatomy update site:'''
 # Run [[Update_Sites|{{bc|Help|Update...}}]]
 # Click ''Manage update sites''
 # Select the ''Neuroanatomy'' checkbox (see also {{ListOfUpdateSites}})
-# Click ''Apply changes'' and Restart ImageJ.
+# Click ''Apply changes'' and Restart ImageJ
 
-= List of commands =
+== Notes ==
+SNT has its own [[sNT|documentation]]. The list of ''Image Processing for NeuroAnatomy and Tree-like Structures'' ({{GitHub|org=tferr|repo=hIPNAT|label=source}}) is as follows:
 {| class="wikitable"
 |style="width:10%;vertical-align: middle;text-align:center;"|'''Name'''
 |style="width:20%;vertical-align: middle;text-align:center;"|'''Menu Path'''
@@ -43,28 +40,6 @@ Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/java/ipnat/skel|la
 |Particles classifier
 |{{bc|Analyze|Skeleton|Classify Particles Using Skeleton}}
 |Tags particles according to skeleton features. Detects maxima on a masked image and clusters detected maxima using features of the skeletonized mask. A maxima is considered to be associated to a skeleton feature  (e.g., a junction or end-point, see  [[AnalyzeSkeleton]]) if the distance between its centroid and the feature is less than or equal to a cuttoff ("snap to") distance. Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/resources/scripts/|label=Python script}}.
-|-
-|colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Import/Export''
-|- valign="top"
-|Tracings importer
-| {{bc|File|Import|Tracings (Traces/(e)SWC)...}}
-| Renders traced reconstructions ([[SNT:_.traces_File_Format|.traces]] - [[SNT]]'s format - and [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html .swc] files) in ImageJ's [[3D Viewer]] or as skeletonized image stacks.
-Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/java/ipnat/|label=Java plugin}}.
-|-
-|Traces converter
-| {{bc|Plugins|NeuroAnatomy|Convert Traces to SWC}}
-| Batch conversion of [[Simple Neurite Tracer]]'s [[Simple_Neurite_Tracer:_.traces_File_Format|.traces files]] into [http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html SWC].
-Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/resources/scripts/|label=Python script}}.
-|-
-|Multi-SWC renderer
-| {{bc|Plugins|NeuroAnatomy|Render Multiple SWC Files}}
-| Renders multiple SWC files in a single image canvas or a [[3D_Viewer|3D viewer]] universe.
-Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/resources/scripts/|label=Python script}}.
-|-
-|Remote File renderer
-| {{bc|Plugins|NeuroAnatomy|Render Remote SWC File}}
-| Exemplifies how to download and access a remote (e)SWC (internet connection required).
-Implemented as a {{GitHub|org=tferr|repo=hIPNAT|path=src/main/resources/scripts/|label=Python script}}.
 |-
 |colspan="3" style="background: #ddd; border-top: 1px solid gray; padding: 5px; text-align: center"|''Utilities''
 |- valign="top"
