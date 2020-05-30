@@ -1,5 +1,3 @@
-<seo metak="snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy" metad="snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy" />
-<div class="toclimit-2">
 {{SNTNavBar}}
 {{Infobox
 | name       = SNT
@@ -10,7 +8,7 @@
 | source     = {{GitHub | org = morphonets | repo = SNT}}
 | status     = stable, active
 | category   = [[:Category:Neuroanatomy|Neuroanatomy]]
-}}
+}}{{TOC right}} 
 == Overview ==
 SNT is ImageJ's framework for semi-automated tracing, visualization, quantitative analyses and modeling of neuronal morphology. For tracing, SNT supports modern multi-dimensional microscopy data, and highly-customizable routines. For data analysis, SNT features advanced visualization tools, access to all major morphology databases, and support for whole-brain circuitry data. It supersedes the original [[SNT:_FAQ#snt|Simple Neurite Tracer]] plug-in.
 
