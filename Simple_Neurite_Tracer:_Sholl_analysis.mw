@@ -1,6 +1,6 @@
 __NOTOC__
 {{ambox
-| text = This is a tutorial on how to call the [[Sholl Analysis]] plugin from [[Simple Neurite Tracer]]. For an overview of the technique refer to the [[Sholl Analysis]] documentation page. The screenshots are rather outdated but the walkthrough has been updated for version 3.0.5.
+| text = This is an old tutorial on how to call the [[Sholl Analysis]] plugin from [[Simple Neurite Tracer]]. '''It is rather outdated. More up-to-date information is provided in [[SNT:_Analysis#Sholl_Analysis|SNT: Analysis]].''' For an overview of the technique refer to the [[Sholl Analysis]] documentation page.
 }}
 
 = Introduction =
