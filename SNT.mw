@@ -63,7 +63,7 @@ SNT's documentation is extensive. Please use the navigation bar on too of the pa
 
 === ''Regular'' Releases ===
 
-SNT is currently distributed through the ''NeuroAnatomy'' [[Update_Sites|update site]]. For full functionality, subscription to the [[SciView]] update site is also required.
+SNT is currently distributed through the [[Neuroanatomy]] [[Update_Sites|update site]]. For full functionality, subscription to the [[SciView]] update site is also required.
 
 The first time you start SNT from Fiji’s menu structure ({{bc|Plugins|Neuroanatomy|SNT}} (or its backwards-compatible alias {{bc|Plugins|NeuroAnatomy|SNT|Legacy|Simple Neurite Tracer...}} ) you should be prompted for automatic subscription and download of required dependencies. If not, to manually subscribe to the required update sites:
 
