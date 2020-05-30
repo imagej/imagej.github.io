@@ -1,6 +1,6 @@
 <seo metak="snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy" metad="snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy" />
 <div class="toclimit-2">
-{{SNTNavBar|projectname=Fiji}}
+{{SNTNavBar}}
 {{Infobox
 | name       = SNT
 | software   = complete framework for quantification of neuronal anatomy 
