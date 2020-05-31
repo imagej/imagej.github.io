@@ -100,16 +100,16 @@ When tracing 4D or 5D images, <tt>TRACES</tt> is preferable because the channel 
 |}
 	</dd></dl>
 	<li>
-	<span id="documentation"></span>'''How can I improve SNT documentation'''?
-	</li>
-	<dl><dd>
-	[[Help:Contents#New_accounts|Create an account]] on this wiki. Once you have created one, you can edit contents at will. Don't be shy. All changes are undoable!
-	</dd></dl>
-	<li>
 	<span id="convert"></span>'''How do I (batch) convert TRACES to SWC'''?
 	</li>
 	<dl><dd>
         In the [[Script Editor]] ({{bc|File|New|Script...}}) look for {{bc|Templates|Neuroanatomy|Batch|Convert Traces to SWC}} and run it. Note that all of SNT scripts are also listed in the main as regular GUI commands in the main [[SNT:_Scripting#Script_Templates|interface]]. Don't see the scripts? Please ensure SNT is  properly [[SNT#Installation|installed]].
+	</dd></dl>
+	<li>
+	<span id="documentation"></span>'''How can I improve SNT documentation'''?
+	</li>
+	<dl><dd>
+	[[Help:Contents#New_accounts|Create an account]] on this wiki. Once you have created one, you can edit contents at will. Don't be shy. All changes are undoable!
 	</dd></dl>
 </ol>
 
