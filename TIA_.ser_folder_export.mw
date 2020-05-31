@@ -1,7 +1,7 @@
 == '''Overview''' ==
 This tool converts TIA EM image .ser files in a folder to TIFF images.
 
-Newly updated [[TEM_ser_dm3_batch_convert]] tool now also support Gatan .dm3 batch convert, including a mixture of .ser and .dm3 files in the same folder.
+Newly updated [TEM_ser_dm3_batch_convert] tool now also support Gatan .dm3 batch convert, including a mixture of .ser and .dm3 files in the same folder.
 
 Scale info of TEM images is also exported as HFW (Horizontal Full Width) in the file name.
 
