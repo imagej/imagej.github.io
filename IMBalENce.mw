@@ -27,7 +27,7 @@ Click the links below to find more about each tool.
 # [ [[SEM Hitachi metadata scale|SEM Hitachi metadata scale]] ] Upcoming soon...
 # [ [[Image Annotation|Image feature measurement annotation]] ] measures and mark the size of features. It annotates the length of line tool in a calibrated image and export measurement results. 
 # [ [[Flat field correction|Flat field correction]] ] Applies flat filed correction to a folder of images for large area mapping to mitigate chess pattern after stitching. (Page in preparation)
-# [ [[TEM TIA .ser folder export | TEM .ser .dm3 folder export]] ] This tool convert TIA EM image .ser files in a folder to TIFF format.
+# [ [[TIA .ser folder export | TEM .ser .dm3 folder export]] ] This tool convert TIA EM image .ser files in a folder to TIFF format.
 
 = '''Installation''' =
 
