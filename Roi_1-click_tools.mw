@@ -12,7 +12,7 @@
 
 = New versions =
 '''29/05/2020'''<br>
-- Add ROI group to settings
+- Add ROI group to clic-tools settings if ImageJ >= 1.52t
 
 
 '''22/05/2020'''<br>
