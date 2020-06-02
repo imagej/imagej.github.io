@@ -461,7 +461,7 @@ A 2D or 3D binary image.
 * '''Record unit vectors''': log the unit vectors of the inertia tensor and best-fit ellipsoid's axes to the Results table
 * '''Min Volume''': smallest particle to measure or display, in calibrated units
 * '''Max Volume''': largest particle to measure or display, in calibrated units
-* '''Surface resampling''': how much to resample the stack while creating the surface mesh by marching cubes. The effect of this option can be visualised with Isosurface.
+* '''Surface resampling''': how much to resample the stack (in pixel units) while creating the surface mesh by marching cubes. Setting a large value smooths out small details and potentially eliminates very small particles. Setting a small value (minimum 1) leads to precise meshing over the pixel grid.
 * '''Show particle stack''': display an image containing labelled particles
 * '''Show thickness stack''': display the result of local thickness in a new stack
 * '''Show centroids (3D)''': display particles' centroids in a 3D Viewer window
