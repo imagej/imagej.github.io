@@ -198,7 +198,12 @@ def update_progress(progress):
 - [X] Add infobox elements
 - [X] Add brief description to front matter.
 - [X] Add Lazy loading to images
-- [ ] Add ABC lists to CSS style
+- [X] Seperate info-box into (author should not specifiy icon path):
+	- [X] Information
+	- [X] Tech
+	- [X] Warning
+- [ ] Add userbox (https://imagej.net/Template:Userbox)
+- [ ] Add component box (https://imagej.net/Template:Component)
 - [ ] Table of contents heirachy
 - [X] Remove "category indexes" from search
 - [ ] Create wide table style
