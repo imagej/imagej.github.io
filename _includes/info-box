@@ -10,7 +10,7 @@
             <tr>
                 <td>
                     <p>
-                        <img src="{{include.icon_path}}">
+                        <img src="/images/icons/40px-Information-sign.png">
                     </p>
                 </td>
                 <td>
