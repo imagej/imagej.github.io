@@ -22,7 +22,6 @@
 
 Here is a summary of my current projects, in priority order. (Last updated: 2020-May-01)
 
-# [https://github.com/scijava/scijava-maven-plugin scijava-maven-plugin] populate-app goal.
 # [https://github.com/scijava/pom-scijava pom-scijava] 29.0.0 release.
 # '''[[LOCI]] web server downsizing.''' Retiring and migrating services.
 # Update [[Fiji]] distribution to use [https://confluence.jetbrains.com/display/JBR/JetBrains+Runtime JBRSDK8] version of Java.
