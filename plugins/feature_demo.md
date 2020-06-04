@@ -8,12 +8,12 @@ use_math: true
 description: This page is a feature demo.
 ---
 
-{% include info-box icon_path="/images/icons/40px-Information-sign.png" content="Hey this is the info box! 
+{% include info-box content="Hey this is the info box! 
 
 - item 1
 - item 2
 
-If you want to learn more about how to create an info box, view the source of this page!" %}
+If you want to learn more about how to create an info box, view the source of this page! Such wow!" %}
 
 
 {% include sidebar title="Demo" content="Introduction, |, Left image, Right image, Center image, Fit image, Figure left, Figure right,Figure center, Figure row, Markdown table, YouTube video, Embedded images in table, Math equations, Sidebox, Syntax highlighting, Menu breadcrumbs" %}
@@ -44,6 +44,14 @@ While both the java and clojure versions encapsulate the variables in a local na
 {% include image-center name="place holder image" image_path="/images/placeholder.png" %}
 
 While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
+
+{% include tech-box content="Wait stop! There's some tech going on here!
+
+- Tech item 1
+- Tech item 2
+- Tech item 3
+
+" %}
 
 {% include anchor content="Fit image" %}
 
@@ -125,7 +133,7 @@ While both the java and clojure versions encapsulate the variables in a local na
 
 While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
 
-{% include info-box icon_path="/images/icons/40px-Important-sign.png" content="Stop! This is an important message! Did you check out the plugins categories page? What do you think? Okay please continue reading.
+{% include warning-box content="Stop! This is an important message! Did you check out the plugins categories page? What do you think? Make sure you wash your hands! Okay please continue reading.
 " %}
 
 {% include anchor content="Syntax highlighting" %}
