@@ -4,7 +4,7 @@
 | software              = Fiji
 | author                = {{Person|Hadim}}
 | maintainer            = {{Person|Hadim}}
-| source                = {{GitHub|org=hadim|repo=OMEVisual}}
+| source                = {{GitHub|org=fiji|repo=OMEVisual}}
 | released              = 08/05/2016
 | status                = v1.0.1, stable
 | category              = 
@@ -34,7 +34,7 @@ Please note that :
 
 == Related links ==
 
-* Source code on GitHub : https://github.com/hadim/OMEVisual
+* Source code on GitHub : https://github.com/fiji/OMEVisual
 
 == Authors ==
 
