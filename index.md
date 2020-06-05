@@ -7,7 +7,7 @@ layout: home
 {::nomarkdown}
     <section id="header">
         <div class="inner">
-            <img src="images/imagej2-icon.png" alt="imagej2" class="image header">
+            <img src="images/logo/ij_logo_shadow_512.png" alt="ImageJ Logo" class="image header">
             <h1>Welcome to <strong>ImageJ</strong></h1>
             <p>ImageJ is an open source image processing program designed for scientific
                 multidimensional images.
