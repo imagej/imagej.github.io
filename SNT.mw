@@ -63,18 +63,43 @@ SNT's documentation is extensive. Please use the navigation bar on too of the pa
 
 === ''Regular'' Releases ===
 
-SNT is currently distributed through the [[Neuroanatomy]] [[Update_Sites|update site]]. For full functionality, subscription to the [[SciView]] update site is also required.
+SNT is currently distributed through the [[Neuroanatomy]] [[Update_Sites|update site]]. The first time you start SNT from Fiji’s menu structure ({{bc|Plugins|Neuroanatomy|SNT}} (or its backwards-compatible alias {{bc|Plugins|NeuroAnatomy|Legacy|Simple Neurite Tracer...}} ) you should be prompted for automatic subscription and download of required dependencies. If not:
+  <ol>
+    <li>
+Run the Fiji [[Updater]] ({{bc|Help|Update..}}, the penultimate entry in the {{bc|Help|}} menu)
+    </li>
+    <li>
+Click ''Manage update sites''
+    </li>
+    <li>
+Select the ''Neuroanatomy'' checkbox
+    </li>
+    <li>
+Click ''Apply changes'' and restart Fiji.
+    </li>
+  </ol>
 
-The first time you start SNT from Fiji’s menu structure ({{bc|Plugins|Neuroanatomy|SNT}} (or its backwards-compatible alias {{bc|Plugins|NeuroAnatomy|SNT|Legacy|Simple Neurite Tracer...}} ) you should be prompted for automatic subscription and download of required dependencies. If not, to manually subscribe to the required update sites:
 
-# Run the Fiji [[Updater]] ({{bc|Help|Update..}}, the penultimate entry in the {{bc|Help|}} menu)
-# Click ''Manage update sites''
-# Select the ''Neuroanatomy'' and ''SciView'' checkboxes
-# Click ''Apply changes'' and restart Fiji
+For [https://imagej.net/SciView SciView] functionality you need to subscribe to the Sciview ''Bleeding Edge'' update site:
+  <ol>
+    <li>
+Re-run the updater, click on ''Manage update sites'', and add the following entry to the ''Update Sites Table'', by clicking on ''Add update site'':
+
+{| class="wikitable" style="margin: auto;"
+! Name
+! URL
+|-
+| SciView-edge
+| https://sites.imagej.net/SciView-Unstable/
+|}
+    </li>
+    <li>
+Click ''Apply changes'' and restart Fiji
+    </li>
+  </ol>
 
 === ''Bleeding Edge'' Releases ===
-
-Daily builds of SNT and SciView are pushed to the ''Neuroanatomy-Unstable'' and ''SciView-Unstable'' updated sites. Note that there is nothing inherently ''unstable'' with these builds: this nomenclature is adopted from the [https://www.debian.org/releases/ Debian release cycle]. Since the sites are not part of the official list, you have to specify their location to the updater:
+Daily builds of SNT are pushed to the ''Neuroanatomy-Unstable'' update site. In this case, Sciview dependencies are already included, so you don’t need to subscribe to other update sites. Note that there is nothing inherently ''unstable'' with these builds: this nomenclature is adopted from the [https://www.debian.org/releases/ Debian release cycle]. Since the site is not part of the official list (this may change in the future), you have to specify its location to the updater:
   <ol>
     <li>
 Run the Fiji [[Updater]] ({{bc|Help|Update..}}, the penultimate entry in the {{bc|Help|&nbsp;}} menu)
@@ -83,7 +108,10 @@ Run the Fiji [[Updater]] ({{bc|Help|Update..}}, the penultimate entry in the {{b
 Click ''Manage update sites''
     </li>
     <li>
-Add the following entries to the ''Manage update sites'' table, by clicking on ''Add update site'':
+If you are currently subscribing to the ''Neuroanatomy'', ''SciView'', or ''SciView-Unstable'' channels, please unselect their checkboxes: The step below will install all the required dependencies
+    </li>
+    <li>
+Add the following entry to the ''Manage update sites'' table, by clicking on ''Add update site'':
 
 {| class="wikitable" style="margin: auto;"
 ! Name
@@ -91,13 +119,7 @@ Add the following entries to the ''Manage update sites'' table, by clicking on '
 |-
 | Neuroanatomy-edge
 | https://sites.imagej.net/Neuroanatomy-Unstable/
-|-
-| SciView-edge
-| https://sites.imagej.net/SciView-Unstable/
 |}
-    </li>
-    <li>
-Activate the newly added ''Neuroanatomy-edge'' and ''SciView-edge'' checkboxes (if subscribed to ''regular releases'', un-select ''Neuroanatomy'' and ''SciView'')
     </li>
     <li>
 Click ''Apply changes'' and restart Fiji
