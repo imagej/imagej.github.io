@@ -112,10 +112,10 @@ Guessing you already computed :
 
 You may want to align Image1 with Image3 in order to compare the three 3D images altogether. However, applying successive transformations will result in a strong blurring effect. In order to avoid this blur, you may want to combine the two transformation steps into a single one. 
 
-Use the <b>compose transformations function</b> the successive transformations to be composed (in the example T12 then T23), and produce the resulting combined transform.
+Use the <b>compose transformations function</b> to run in one go the successive transformations to be composed (in the example T12 then T23), and produce the resulting combined transform.
 
 ===Apply a transformation to a 3d/4d/5d Image===
-This module is a helper function to apply an ITK transformation to a 3D image (and soon to a 4D/5D hyperimage in the Gorgeous Grapevine future release, the transformation being interpreted as a 3D transformation, and applied to each channel / frame of the hyperimage before the transformed 3d images are gathered back in an hyperstack).
+This module is a helper function to apply an ITK transformation to a 3D image. Since the Gorgeous Grapevine version, this function can be applied to a 4D/5D hyperimage, the transformation being interpreted as a 3D transformation, and applied to each channel / frame of the hyperimage before the transformed 3d images are gathered back in an hyperstack).
 
 == Versatility Tests ==
 Fijiyama plugin has been tested on several data (including vegetal and human tissues), at different scales (from micro to macro imaging), and on different imaging modalities (microscopy, MRI, X-rays, and photographies). 
@@ -165,7 +165,7 @@ For minor updates, only the release time is modified.
 | Hyperimage support (registration of 4D / 5D multi-channels or multi-time images
 |-
 | <b>Handsome Honeysuckle (Future release) </b>
-| Mid-may 2020
+| Mid-june 2020
 | ...
 | New transformation models : Rigid 2D, Similarity 2D, Dense 2D. Support of extensive grandeurs (images which intensity have to raise when it is shrinked). Support of hyperimage with varying number of channels
 | ...
