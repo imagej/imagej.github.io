@@ -11,7 +11,7 @@
 
 The idea of FigureJ is to consider '''figure panels as views into datasets'''.
 
-So building a figure should not consist of technical steps, but only selecting data that you want to display.
+So building a figure should not consist of many technical steps, but only selecting data that you want to display.
 
 The software can take care of the rest, and '''guarantee access to the raw data''' and processing history.
 
