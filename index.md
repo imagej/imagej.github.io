@@ -29,7 +29,7 @@ layout: home
                         <ul class = "actions special">
                             <li><a href="{{"/learn" | relative_url}}" class="button icon solid fa-cogs">Use</a></li>
                             <li><a href="{{"/docs" | relative_url}}" class="button icon solid fa-wrench">Extend</a></li>
-                            <li><a href="{{"/pages/search" | relative_url}}" class="button icon solid fa-search">Search</a></li>
+                            <li><a href="{{"/search" | relative_url}}" class="button icon solid fa-search">Search</a></li>
                         </ul>
                         <ul class = "actions special">
                             <li><a href="https://imagej.net/Downloads" class="button icon solid fa-download">Download</a></li>
