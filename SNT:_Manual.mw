@@ -1,6 +1,13 @@
 {{SNTNavBar}}
 [[Category:SNT]][[Category:Neuroanatomy]]
 <div class="toclimit-2">
+
+=SNT Commands=
+SNT commands are registered in Fiji's menu structure under {{bc|Plugins|NeuroAnatomy|&nbsp;}}:
+;'''[[#Startup_Prompt|SNT]]...''':The main interface with ''all'' available commands with access to all viewers and canvases. Tracing and path editing operations are done from this interface.
+;'''[[SNT: Reconstruction Viewer|Rec. Viewer]]''':A fast, streamlined interface for analysis of existing neuroanatomical data.
+;'''[[#RecPlotter|Reconstruction Plotter]]''':A utility command for quickly render reconstructions in vector format without having to load a specific interface.
+
 =Startup Prompt=
 [[Image:SNT-Startup-Prompt.png|right|thumb]]
 SNT is initialized by running {{bc|Plugins|NeuroAnatomy|SNT...}}. All the options in the startup prompt can be set once SNT is opened, but the startup prompt provides the convenience of setting the most important parameters at once.
@@ -41,7 +48,7 @@ Lists commands for I/O operations. Most are self-explanatory. Noteworthy:
 * {{bc|Quick Measurements|}}  Shows a table with summary statistics for all existing paths. To measure only selected paths, use {{bc|Analyze|Measure}} in the Path Manager. See [https://imagej.net/SNT:_Analysis#Measurements] for details.
 
 ===Utilities===
-* {{bc|Reconstruction Plotter...}} Plots a dynamic 2D projection of all existing paths. A control panel is included which allows adjustment of the spatial orientation of the tracing. If paths are assigned color tags, use {{bc|Actions|Render final (colorized) plot}} from the control panel to render the (static) plot with color-mapped paths, with the final orientation matching that of the dynamic plot.
+* <span id="RecPlotter"></span>{{bc|Reconstruction Plotter...}} Plots a dynamic 2D projection of all existing paths. A control panel is included which allows adjustment of the spatial orientation of the tracing. If paths are assigned color tags, use {{bc|Actions|Render final (colorized) plot}} from the control panel to render the (static) plot with color-mapped paths, with the final orientation matching that of the dynamic plot.
 <div align="left">
 <ul> 
 <li style="display:inline-block;"> [[Image:SNT-Reconstruction-Plotter-Example.png|none|thumb|200px]] </li>
