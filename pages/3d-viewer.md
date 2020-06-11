@@ -2,7 +2,7 @@
 title: 3D Viewer
 breadcrumb: 3D Viewer
 author: Curtis Rueden
-category: plugins:analysis
+categories: plugins, analysis, visualization
 layout: page
 use_math: false
 description: This plugin images offers hardware-accelerated visualization possibilities for image stacks, using the Java 3D library.

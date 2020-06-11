@@ -2,7 +2,7 @@
 title: Example 1
 breadcrumb: Example 1
 author: Edward Evans
-category: plugins:analysis
+categories: plugins, analysis, development
 layout: page
 use_math: false
 description: This is example 1

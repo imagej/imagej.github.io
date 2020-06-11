@@ -3,7 +3,7 @@ title: Feature Demo
 breadcrumb: Feature Demo
 layout: page
 author: Edward Evans
-category: plugins:demo
+categories: plugins, demo, help
 use_math: true
 description: This page is a feature demo.
 ---

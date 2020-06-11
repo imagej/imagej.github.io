@@ -2,7 +2,7 @@
 title: Example 4
 breadcrumb: Example 4
 author: Wallie the cat
-category: plugins:development
+categories: plugins, demo, development, help
 layout: page
 use_math: false
 description: This is example 4
