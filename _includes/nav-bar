@@ -1,10 +1,28 @@
 <section id="nav">
     <div class="topnav">
         <a href="{{"/index" | relative_url}}">Home</a>
-        <a href="{{"/pages/search" | relative_url}}" class="icon solid fa-search">Search</a>
-        <a href="{{"/learn" | relative_url}}">Use</a>
-        <a href="{{"/plugins" | relative_url}}">Plugins</a>
-        <a href="{{"/docs" | relative_url}}">Docs</a>
-        <a href="https://forum.image.sc/">Forum</a>
+        <a href="{{"/search" | relative_url}}" class="icon solid fa-search">Search</a>
+        <a href="#">Downloads</a>
+        <a href="{{"/learn" | relative_url}}">Learn</a>
+        <a href="{{"/categories" | relative_url}}">Browse</a>
+        <a href="#">Develop</a>
+        <a href="#">News</a>
+        <a href="#">Events</a>
+        <a href="https://forum.image.sc/">Help</a>
     </div>
+</section>
+
+<section id="mobile-nav">
+
+    <div id="ham-menu" class="ham-nav" onclick="hamActivate(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div id="ham-menu-drop" class="ham-drop-content">
+            <a href="{{"/index" | relative_url}}">Home</a>
+            <a href="{{"/pages/search" | relative_url}}" class="icon solid fa-search">Search</a>
+            <a href="https://forum.image.sc/">Forum</a>
+        </div>
+    </div>
+
 </section>
