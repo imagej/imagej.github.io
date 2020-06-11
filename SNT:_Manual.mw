@@ -3,10 +3,10 @@
 <div class="toclimit-2">
 
 =SNT Commands=
-SNT commands are registered in Fiji's menu structure under {{bc|Plugins|NeuroAnatomy|&nbsp;}}:
+SNT registers three commands in Fiji's menu structure in the {{bc|Plugins|NeuroAnatomy|&nbsp;}} sub-menu:
 ;'''[[#Startup_Prompt|SNT]]...''':The main interface with ''all'' available commands with access to all viewers and canvases. Tracing and path editing operations are done from this interface.
 ;'''[[SNT: Reconstruction Viewer|Rec. Viewer]]''':A fast, streamlined interface for analysis of existing neuroanatomical data.
-;'''[[#RecPlotter|Reconstruction Plotter]]''':A utility command for quickly render reconstructions in vector format without having to load a specific interface.
+;'''[[#RecPlotter|Reconstruction Plotter]]''':A utility command for quickly render reconstructions in vector format without having to load other interfaces.
 
 =Startup Prompt=
 [[Image:SNT-Startup-Prompt.png|right|thumb]]
