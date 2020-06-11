@@ -99,7 +99,8 @@ Click ''Apply changes'' and restart Fiji
   </ol>
 
 === ''Bleeding Edge'' Releases ===
-Daily builds of SNT are pushed to the ''Neuroanatomy-Unstable'' update site. In this case, Sciview dependencies are already included, so you don’t need to subscribe to other update sites. Note that there is nothing inherently ''unstable'' with these builds: this nomenclature is adopted from the [https://www.debian.org/releases/ Debian release cycle]. Since the site is not part of the official list (this may change in the future), you have to specify its location to the updater:
+Daily builds of SNT are pushed to the ''Neuroanatomy-Unstable'' update site. Note that there is nothing inherently ''unstable'' with these builds: this nomenclature is adopted from the [https://www.debian.org/releases/ Debian release cycle]. The minor annoyance here is that these ''Bleeding Edge'' sites are not included in the official list (this may change in the future), so you'll have to specify its location to the updater:
+
   <ol>
     <li>
 Run the Fiji [[Updater]] ({{bc|Help|Update..}}, the penultimate entry in the {{bc|Help|&nbsp;}} menu)
@@ -108,17 +109,23 @@ Run the Fiji [[Updater]] ({{bc|Help|Update..}}, the penultimate entry in the {{b
 Click ''Manage update sites''
     </li>
     <li>
-If you are currently subscribing to the ''Neuroanatomy'', ''SciView'', or ''SciView-Unstable'' channels, please unselect their checkboxes: The step below will install all the required dependencies
-    </li>
+If you are currently subscribing to the ''Neuroanatomy'' or ''SciView'' ''regular'' channels, please unselect their checkboxes to minimize version conflicts
     <li>
 Add the following entry to the ''Manage update sites'' table, by clicking on ''Add update site'':
 
 {| class="wikitable" style="margin: auto;"
 ! Name
 ! URL
+! Notes
+|-
+|-
+| SciView-edge
+| https://sites.imagej.net/SciView-Unstable/
+| Priority subscription. Must be added first
 |-
 | Neuroanatomy-edge
 | https://sites.imagej.net/Neuroanatomy-Unstable/
+| Secondary subscription. Must be added second
 |}
     </li>
     <li>
