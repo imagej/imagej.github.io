@@ -84,7 +84,17 @@ def run():
 </source>
 
 
-==Example: Scripting Reconstruction Viewer==
+==Adding Scripts to SNT==
+There are two ways to have your own scripts appear in SNT's ''Scripts'' menu. The easiest way is to go to {{bc|Scripts|New...}} from the SNT dialog. This command will open an instance of Fiji's Script Editor with pre-loaded boilerplate code in the scripting language of your choice. If you save the script and then choose {{bc|Scripts|Reload...}}, your new script will appear in the full list of scripts found at {{bc|Scripts|Full List...}}.
+
+Alternatively, you can save scripts into the "scripts" sub-directory under the main Fiji directory while including ''SNT'' in the filename (e.g., <tt>C:\Users\user\Desktop\Fiji.app\scripts\My_SNT_Script.py</tt> or <tt>/home/user/Fiji.app/scripts/My_SNT_Script.py</tt>).
+
+Did you write a useful script? Please submit a [https://github.com/morphonets/SNT/pulls pull request] on GitHub so that it can be distributed with Fiji!
+
+
+==Examples==
+
+===Scripting Reconstruction Viewer===
 Programmatic control over an open instance of [[SNT:_Reconstruction_Viewer|Reconstruction Viewer]] (either called from within SNT or as a standalone application) can be achieved by selecting the {{bc|Tools & Utilities|Script This Viewer...}} [[SNT:_Reconstruction_Viewer#Utilities|command]]. It will then open an instance of Fiji's script editor with a boilerplate template containing the most essential imports and [[Script_Parameters|script parameters]]. The default programming language for this template can be chosen from the drop-down menu of the ''Preferred Language'' [[SNT:_Reconstruction_Viewer#Settings|option]].
 
 The following script exemplifies how to extend the boilerplate template to control the Viewer in real-time.
@@ -200,11 +210,9 @@ do_stuff(viewer)
 
 </source>
 
-==Adding Scripts to SNT==
-There are two ways to have your own scripts appear in SNT's ''Scripts'' menu. The easiest way is to go to {{bc|Scripts|New...}} from the SNT dialog. This command will open an instance of Fiji's Script Editor with pre-loaded boilerplate code in the scripting language of your choice. If you save the script and then choose {{bc|Scripts|Reload...}}, your new script will appear in the full list of scripts found at {{bc|Scripts|Full List...}}.
+===Script Interpreter===
 
-Alternatively, you can save scripts into the "scripts" sub-directory under the main Fiji directory while including ''SNT'' in the filename (e.g., <tt>C:\Users\user\Desktop\Fiji.app\scripts\My_SNT_Script.py</tt> or <tt>/home/user/Fiji.app/scripts/My_SNT_Script.py</tt>).
-
-Did you write a useful script? Please submit a [https://github.com/morphonets/SNT/pulls pull request] on GitHub so that it can be distributed with Fiji!
+Some of SNT's functionality is accessible in [[Script_Interpreter|Script Interpreter]]. Here is an example:
+[[File:SNT-ScriptInterpreter.png|650px|thumb|center]]
 
 {{SNTNavBar}}
