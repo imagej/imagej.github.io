@@ -1,4 +1,5 @@
 {{SNTNavBar}}
+<div class="toclimit-3">
 ==SNT API==
 The most up-to-date SNT API can be found at [https://morphonets.github.io/SNT https://morphonets.github.io/SNT].
 
@@ -210,7 +211,7 @@ do_stuff(viewer)
 
 ===Script Interpreter===
 
-Some of SNT's functionality is accessible in [[Script_Interpreter|Script Interpreter]]. Here is an example:
+Some of SNT's functionality is accessible in the [[Script_Interpreter|Script Interpreter]]. Here is an example:
 [[File:SNT-ScriptInterpreter.png|650px|thumb|center]]
 
 {{SNTNavBar}}
