@@ -1,15 +1,25 @@
+[[File:Mobie-white.jpg|200px|left]]
+
 {{Infobox
 | name                   = MoBIE 
 | software               = Fiji
 | update site            = MoBIE
 | author                 = Christian Tischer
 | maintainer             = Christian Tischer
-| source                 = {{GitHub|org=tischi|repo=fiji-plugin-bigDataProcessor2}}
+| source                 = {{GitHub|org=mobie-org|repo=mobie-viewer-fiji}}
 }}
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 == Overview ==
 
-MoBIE (Multimodal Big Image Data Exploration) is a framework for sharing and interactive browsing of multimodal big image data. The MoBIE Fiji viewer is based on [https://imagej.net/BigDataViewer BigDataViewer] and enables the browsing of MoBIE datasets. For more information please visit the GitHub [https://github.com/mobie-org/mobie README].
+MoBIE (Multimodal Big Image Data Exploration) is a framework for sharing and interactive browsing of multimodal big image data. The MoBIE Fiji viewer is based on [https://imagej.net/BigDataViewer BigDataViewer] and enables browsing of MoBIE datasets. For more information please visit the GitHub [https://github.com/mobie-org/mobie README].
 
 == Installation ==
 
