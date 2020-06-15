@@ -4,8 +4,7 @@ Modeling in SNT is performed through [https://github.com/morphonets/cx3d Cortex3
 
 The [http://morphonets.org Morphonets] distribution of Cx3D was modified by {{Person|Kharrington}} to be compatible with the ImageJ and Fiji ecosystem. This includes using [[SciView]] for 3D visualization, and support for image-based modeling.
 
-Currently, an [[IDEs|IDE]] is the most effective way to implement custom models.
-For more information refer to the [https://github.com/morphonets/cx3d GitHub project page].
+Currently, an [[IDEs|IDE]] is the most effective way to implement custom models, using the [https://github.com/morphonets/minimal-cx3d-example-project minimal-cx3d-example-project] as a template. For more information refer to the [https://github.com/morphonets/cx3d GitHub project page].
 
 == References ==
 <references >
