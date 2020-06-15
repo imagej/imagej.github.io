@@ -23,9 +23,9 @@ MoBIE (Multimodal Big Image Data Exploration) is a framework for sharing and int
 
 == Installation ==
 
-The MoBIE Fiji viewer can be installed by adding the MoBIE Update Site: http://sites.imagej.net/MoBIE/. For details on how to install an update site click [[Following_an_update_site|here]].
+Please install the Update Site: http://sites.imagej.net/MoBIE/. For details on how to install an update site click [[Following_an_update_site|here]].
 
-To start MoBIE in Fiji, select Plugins > MoBIE from the main menu.
+To run it, please select Plugins > MoBIE from the main menu.
 
 == Publication ==
 
