@@ -1,0 +1,24 @@
+{{Infobox
+| name                   = MoBIE 
+| software               = Fiji
+| update site            = MoBIE
+| author                 = Christian Tischer
+| maintainer             = Christian Tischer
+| source                 = {{GitHub|org=tischi|repo=fiji-plugin-bigDataProcessor2}}
+}}
+
+== Overview ==
+
+MoBIE (Multimodal Big Image Data Exploration) is a framework for sharing and interactive browsing of multimodal big image data. The MoBIE Update Site installs the MoBIE Fiji viewer. The viewer is based on [https://imagej.net/BigDataViewer BigDataViewer] and enables the browsing of MoBIE datasets. For more information please visit the GitHub [https://github.com/mobie-org/mobie README].
+
+== Installation ==
+
+The MoBIE Fiji viewer can be installed from the update site: http://sites.imagej.net/MoBIE/. For details on how to install an update site click [[Following_an_update_site|here]].
+
+To start MoBIE in Fiji, select Plugins > MoBIE from the main menu.
+
+== Publication ==
+
+MoBIE was used in the following publications:
+
+- [https://www.biorxiv.org/content/10.1101/2020.02.26.961037v1 Whole-body integration of gene expression and single-cell morphology]
