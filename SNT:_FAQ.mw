@@ -13,9 +13,11 @@
 	<dl><dd>
 SNT is based on multiple publications. To cite SNT:
 * Ferreira T, et al. ('''2019''') (TBD)
-To reference other plugins that enhance SNT:
-* '''[[Sholl Analysis]]''': Ferreira T, Blackman A, Oyrer J, Jayabal A, Chung A, Watt A, Sjöström J, van Meyel D. ('''2014'''), [http://www.nature.com/nmeth/journal/v11/n10/full/nmeth.3125.html Neuronal morphometry directly from bitmap images], ''Nature Methods'' 11(10): 982–984
+To reference specific modules/plugins that enhance SNT:
+* '''[[Sholl Analysis]]''': Ferreira T, Blackman A, Oyrer J, Jayabal A, Chung A, Watt A, Sjöström J, van Meyel D. ('''2014'''), [https://doi.org/10.1038/nmeth.3125 Neuronal morphometry directly from bitmap images], ''Nature Methods'' 11(10): 982–984
 * '''[[SNT: Tubular Geodesics|Tubular Geodesics]]''': Türetken E, Benmansour F, Fua P. [https://infoscience.epfl.ch/record/176222/files/turetken_et_al_2012.pdf?version=1 Automated Reconstruction of Tree Structures using Path Classifiers and Mixed Integer Programming]. <i>IEEE Conference on Computer Vision and Pattern Recognition</i>, Providence, Rhode Island, 2012.
+* '''[[SNT: Modeling|Cx3D]]''': Zubler, F. & Douglas, R. [https://doi.org/10.3389/neuro.10.025.2009 A framework for modeling the growth and development of neurons and networks]. Front. Comput. Neurosci. 3, 25 (2009)].
+
 The original [[#snt|Simple Neurite Tracer]] publication is:
 * Longair MH, Baker DA, Armstrong JD. [http://bioinformatics.oxfordjournals.org/content/early/2011/07/04/bioinformatics.btr390.long Simple Neurite Tracer: Open Source software for reconstruction, visualization and analysis of neuronal processes]. <i>Bioinformatics</i> 2011
 	</dd></dl>
@@ -81,7 +83,6 @@ When tracing 4D or 5D images, <tt>TRACES</tt> is preferable because the channel 
 	[[Help:Contents#New_accounts|Create an account]] on this wiki. Once you have created one, you can edit contents at will. Don't be shy. All changes are undoable!
 	</dd></dl>
 </ol>
-
 
 == Tracing ==
 <ol>
