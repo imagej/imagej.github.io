@@ -75,6 +75,91 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* Hamburger menu */
+
+@media screen and (min-width: 736px) {
+
+	.ham-nav {
+		display: none !important;
+	}
+
+	.ham-drop {
+		display: none !important;
+	}
+
+	.ham-drop-content {
+		display: none !important;
+	}
+}
+
+/* at small screen size display */
+
+@media screen and (max-width: 736px) {
+
+	.ham-nav {
+		display: block;
+		float: right;
+		cursor: pointer;
+		background-color: #4f86ae;
+	}
+
+	.ham-drop {
+		position: relative;
+		display: inline-block;
+	}
+
+	.ham-drop-content {
+		display: none;
+		position: absolute;
+		background-color: #f3f3f3;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		right: 0;
+		left: auto;
+	}
+
+	.ham-drop-content a {
+		color: black !important;
+		padding: 12px 16px;
+		text-decoration: none;
+		font-weight: 500;
+		display: block;
+		border-bottom: none;
+	}
+
+	.ham-drop-content a:hover {
+		background-color: #8abfd8;
+		border-bottom: none;
+	}
+
+	.show {
+		display: block;
+	}
+
+	.bar1, .bar2, .bar3 {
+		width: 35px;
+		height: 5px;
+		background-color: #f2f2f2;
+		margin: 6px 0;
+		transition: 0.4s;
+	}
+
+	.change .bar1 {
+		-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+		transform: rotate(-45deg) translate(-9px, 6px);
+	}
+
+	.change .bar2 {
+		opacity: 0;
+	}
+
+	.change .bar3 {
+		-webkit-transform: rotate(45deg) translate(-8px, -8px);
+		transform: rotate(45deg) translate(-8px, -8px);
+	}
+}
+
 /* Basic */
 
 	html {
@@ -2487,31 +2572,35 @@ input, select, textarea {
 
 /* Navigation Bar */
 
-	.topnav {
-		background-color: #4f86ae;
-		overflow: hidden;
-	}
+	@media screen and (min-width: 736px) {
 
-	.topnav a {
-		float: left;
-		color: #f2f2f2;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-		font-size: large;
-		font-weight: 500;
-	}
+		.topnav {
+			background-color: #3f454b;
+			overflow: hidden;
+		}
 
-	.topnav a:hover {
-		background-color: #eee;
-		color: #585858;
-		border-bottom: none;
-		padding: 14.25px 16px;
-	}
-
-	.topnav a.active {
-		background-color: #4CAF50;
-		color: white;
+		.topnav a {
+			float: left;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: large;
+			font-weight: 500;
+			border-bottom: none;
+		}
+	
+		.topnav a:hover {
+			background-color: #eee;
+			color: #585858;
+			border-bottom: none;
+			padding: 14.25px 16px;
+		}
+	
+		.topnav a.active {
+			background-color: #4CAF50;
+			color: white;
+		}
 	}
 
 /* List */
@@ -3429,7 +3518,7 @@ input, select, textarea {
 
 	#footer {
 		padding: 4em 0 4em 0 ;  
-		background-image: url("../../images/site/overlay7.png"), url("../../images/header.jpg");
+		background-image: url("../../images/site/overlay8.png"), url("../../images/header.jpg");
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
 		background-position: top left,						center center,					center center;

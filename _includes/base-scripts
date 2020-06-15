@@ -4,3 +4,4 @@
 <script src="{{"/assets/js/breakpoints.min.js" | relative_url}}"></script>
 <script src="{{"/assets/js/util.js" | relative_url}}"></script>
 <script src="{{"/assets/js/main.js" | relative_url}}"></script>
+<script src="{{"/assets/js/ham_nav.js" | relative_url}}"></script>
