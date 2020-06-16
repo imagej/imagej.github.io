@@ -2526,7 +2526,6 @@ input, select, textarea {
 
 		.topnav {
 			background-color: #3f454b;
-			cursor: pointer;
 		}
 
 		.topnav a {
@@ -2536,6 +2535,9 @@ input, select, textarea {
 		.ham-drop {
 			position: relative;
 			display: inline-block;
+			cursor: pointer;
+			padding-left: 0.5em;
+			padding-top: 0.2em;
 		}
 
 		.ham-drop-content {
