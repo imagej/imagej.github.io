@@ -1,7 +1,7 @@
 {{Infobox
 | name                   = BigDataProcessor2 
 | software               = Fiji
-| update site            = EMBL-CBA
+| update site            = BigDataProcessor
 | author                 = Ashis Ravindran & Christian Tischer
 | maintainer             = Christian Tischer
 | source                 = {{GitHub|org=embl-cba|repo=bigDataProcessor2}}
