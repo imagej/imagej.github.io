@@ -78,7 +78,7 @@ Click ''Apply changes'' and restart Fiji.
   </ol>
 
 
-For [https://imagej.net/SciView SciView] and [[SNT: Modeling|Cx3D]] functionality, you need to subscribe to the ''SciView-Unstable'' update site. Note that there is nothing inherently ''unstable'' with this procedure: this nomenclature is adopted from the [https://www.debian.org/releases/ Debian release cycle]. The minor annoyance here is that this ''Bleeding Edge'' site is not included in the official list (this may change in the future), so you'll have to specify its location to the updater:
+'''Optional''': For [https://imagej.net/SciView SciView] and [[SNT: Modeling|Cx3D]] functionality, you need to subscribe to the ''SciView-Unstable'' update site. Note that there is nothing inherently ''unstable'' with this procedure: this nomenclature is adopted from the [https://www.debian.org/releases/ Debian release cycle]. The minor annoyance here is that this ''Bleeding Edge'' site is not included in the official list (this may change in the future), so you'll have to specify its location to the updater:
   <ol>
     <li>
 Re-run the updater and click on ''Manage update sites''
