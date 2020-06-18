@@ -11,8 +11,13 @@
 }}
 
 = New versions =
+'''18/06/2020'''<br>
+- Fix ROI slice-position that was not saved previously.<br>
+This requires ImageJ >= 1.52r, otherwise a message is shown when annotating stacks.
+
+
 '''29/05/2020'''<br>
-- Add ROI group to clic-tools settings if ImageJ >= 1.52t
+- Add ROI group to click-tools settings if ImageJ >= 1.52t
 
 
 '''22/05/2020'''<br>
