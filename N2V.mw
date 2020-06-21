@@ -4,4 +4,7 @@
 
 == Prediction ==
 
-== Exporting trained models from python to ImageJ / Fiji ==
+== Exporting trained models from Python to ImageJ / Fiji ==
+
+== Limitations ==
+- single channel only for now
