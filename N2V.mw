@@ -34,8 +34,8 @@ You should now have access to these plugins:
 # Click on <code>Plugins > CSBDeep > N2V > N2V train & predict</code>
 {| class="wikitable"
 |-
-| [[File:n2v-trainpredict-parameters.png|N2V train parameters]]
-| <b><code>Image used for training</code></b> Choose the image which will be used for training<br><b><code>Image to denoise after training</code></b> Choose the image which will be used for prediction<br><b><code>Image used for training</code></b> Choose the image which will be used for training<br><b><code>Axes of prediction input</code></b> This parameter helps to figure out how your input data is organized. For 2D input images, this should be <code>XY</code>. If your data has another axis which should be batch processed, set this parameter to <code>XYB</code><br><br>Regarding the other parameters please have a look at the descriptions in [[#Training on a single image|Training on a single image]]
+| [[File:n2v-trainpredict-parameters.png|N2V train & predict parameters]]
+| <b><code>Image used for training</code></b> Choose the image which will be used for training<br><b><code>Image to denoise after training</code></b> Choose the image which will be used for prediction<br><b><code>Axes of prediction input</code></b> This parameter helps to figure out how your input data is organized. For 2D input images, this should be <code>XY</code>. If your data has another axis which should be batch processed, set this parameter to <code>XYB</code><br><br>Regarding the other parameters please have a look at the descriptions in [[#Training on a single image|Training on a single image]]
 |}
 # Click <code>Ok</code>
 # Look below at the [[#What happens during and after training|What happens during and after training]] section for what happens next
