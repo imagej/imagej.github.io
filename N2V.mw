@@ -45,7 +45,7 @@ You should now have access to these plugins:
 {| class="wikitable"
 |-
 | [[File:n2v-trainfolder-parameters.png|N2V train on folder parameters]]
-| <b><code>Folder containing images used for training</code></b> Choose the image which will be used for training<br><br><b><code>Folder containing images used for validation</code></b> Choose the image which will be used for validation (can be same as training folder, in this case 10% of the generated tiles will be used for validation and 90% for training)<br><br>Regarding the other parameters please have a look at the descriptions in [[#Training on a single image|Training on a single image]]
+| <b><code>Folder containing images used for training</code></b> Choose the folder containing images which should be used for training<br><br><b><code>Folder containing images used for validation</code></b> Choose the folder containing images which should be used for validation (can be same as training folder, in this case 10% of the generated tiles will be used for validation and 90% for training)<br><br>Regarding the other parameters please have a look at the descriptions in [[#Training on a single image|Training on a single image]]
 |}
 # Click <code>Ok</code>
 # Look below at the [[#What happens during and after training|What happens during and after training]] section for what happens next
