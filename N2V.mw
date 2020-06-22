@@ -78,3 +78,6 @@ Alternatively, you can use the N2V menu:
 # Click <code>Plugins>N2V>N2V predict</code>
 
 == Exporting trained models from Python to ImageJ / Fiji ==
+# In Python, run this at the end of you training: <code>mode.exportTF()</code>
+# Locate the exported model file
+# Proceed as described in [[#Prediction|Prediction]]
