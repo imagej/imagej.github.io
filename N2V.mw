@@ -61,7 +61,9 @@ After training, two more windows will appear. They represent two trained models.
 
 [[File:n2v-model.png|N2V model archive window]]
 
-They are stored to a temporary location which you can see in the Overview section of the model window under <code>Saved to..</code>. <b>Copy the model from there to another permanent destination on your disk if you want to keep this trained model.</b>
+They are stored to a temporary location which you can see in the Overview section of the model window under <code>Saved to..</code>. 
+
+<b>Copy the model from there to another permanent destination on your disk if you want to keep this trained model.</b>
 
 == Prediction ==
 There are two ways to predict from a trained model.
@@ -75,7 +77,7 @@ You can open the model directly:
 Alternatively, you can use the N2V menu:
 # Start Fiji
 # Open an image you want to denoise and for which you have a pretrained model available as ZIP file
-# Click <code>Plugins>N2V>N2V predict</code>
+# Click <code>Plugins > N2V > N2V predict</code>
 
 == Exporting trained models from Python to ImageJ / Fiji ==
 # In Python, run this at the end of you training: <code>mode.exportTF()</code>
