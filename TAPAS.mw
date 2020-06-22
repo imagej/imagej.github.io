@@ -1,4 +1,15 @@
-
+{{Infobox
+| name                   = TAPAS
+| software               = tapas
+| update site            = TAPAS
+| author                 = {{Person|Tboudier}}
+| maintainer             = [https://github.com/mcib3d Thomas Boudier] 
+| source                 = {{GitHub|org=mcib3d|repo=tapas-core}}
+| released               = 14/08/2019, V0.4
+| latest version         = 22/06/2020, V0.6.3
+| status                 = stable, active
+| category               = [[:Category:Automation|Automation]], [[:Category:Analysis|Analysis]], [[:Category:Filtering|Filtering]], [[:Category:Segmentation|Segmentation]]
+}}
 == TAPAS : An integrated tool for batch processing and analysis of multi-dimensional images ==
 '''TAPAS''' (Towards an Automated Processing and Analysis System) is a framework for processing and analysis workflow for multi-dimensional images. A workflow is a series of modules linked together to process an image, each module should perform one simple task. 
 
