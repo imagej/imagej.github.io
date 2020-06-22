@@ -60,11 +60,11 @@ You should now have access to these plugins:
 During training, you will see two windows:
 * The progress window keeps you updated of the steps the training process is going through. It also plots the current training and validation loss. 
 * The preview window is generated from the first validation batch. It is split into five parts. 
-** The first tile displays the original noisy data
-** The second tile displays the predicted denoised image
-** The third tile displays the predicted probability if each pixel being on the background
-** The fourth tile displays the predicted probability if each pixel being on the foreground
-** The fifth tile displays the predicted probability if each pixel being on the border
+*# the original noisy data
+*# the predicted denoised image
+*# the predicted probability if each pixel being on the background
+*# the predicted probability if each pixel being on the foreground
+*# the predicted probability if each pixel being on the border
 
 After training, two additional windows should appear. They represent two trained models. One is the model from the epoch with the lowest validation loss, the other one the model from the last epoch step. For DenoiSeg, using the model from the last epoch is almost always recommended. The windows will look similar to this:
 
