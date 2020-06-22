@@ -1,9 +1,107 @@
+= DenoiSeg - Joint Denoising and Segmentation = 
+
+More information [https://frauzufall.github.io/csbdeep-testsite/tools/denoiseg/ here].
+
 == Installation ==
+# Start ImageJ / Fiji
+# Open the updater via <code>Help > Update...</code>
+# Click on <code>Manage update sites</code>
+# Select the <b><code>CSBDeep</code></b> update site
+# Click on <code>Apply changes</code>
+# Restart IamgeJ / Fiji
+
+You should now have access to these plugins:
+
+[[File:denoiseg-plugins.png||Available DenoiSeg plugins]]
+
 
 == Training ==
 
-== Prediction ==
+=== Prepare your data ===
+* create two folders for training and two folders for validation, name them e.g. <code>X_train</code>, <code>Y_train</code>, <code>X_val</code>, and <code>Y_val</code>
+* Put noisy images into <code>X_train</code>, the more the better
+* Label some of them carefully - the more the better, but a handful labelings of high quality can be sufficient as well. Each labeling should be zero where there is background and the same integer number for each pixel of the same object.
+* Put the labels into <code>Y_train</code> - each labeling file needs to have the same name as the matching raw data in <code>X_train</code>
+* Do the same for <code>X_val</code> and <code>Y_val</code>. Aim for having about 10% validation data and 90% training data. If in doubt, use more data for training.
 
-== Exporting trained models from python to ImageJ / Fiji ==
+=== Train plugin ===
+
+[[File:denoiseg-train-parameters.png|thumb|N2V train parameters]]
+# Start ImageJ / Fiji
+# Click on <code>Plugins > CSBDeep > DenoiSeg > DenoiSeg train</code> and adjust the following parameters:
+#* <b><code>Folder containing training raw images</code></b> Choose the folder we called <code>X_train</code> in the above data preparation section. It contains raw noisy data.
+#* <b><code>Folder containing training labeling images</code></b> Choose the folder we called <code>Y_train</code> in the above data preparation section. It contains some labelings matching the raw noisy data.
+#* <b><code>Folder containing validation raw images</code></b> Choose the folder we called <code>X_val</code> in the above data preparation section. It contains raw noisy data for judging the quality of the training progress.
+#* <b><code>Folder containing validation labeling images</code></b> Choose the folder we called <code>Y_val</code> in the above data preparation section. It contains some labelings matching the raw noisy validation data.
+#* <b><code>Number of epochs</code></b> How many epochs should be performed during training
+#* <b><code>Number of steps per epoch</code></b> How many steps per epoch should be performed
+#* <b><code>Batch size per step</code></b> How many tiles are batch processed by the network per training step
+#* <b><code>Patch shape</code></b> The length of X, Y (and Z) of one training patch (needs to be a multiple of 16)
+#* <b><code>Neighborhood radius</code></b> N2V specific parameter describing the distance of the neighbor pixel replacing the center pixel
+# Click <code>Ok</code>
+# Look below at the [[#What happens during and after training|What happens during and after training]] section for what happens next
+
+=== Train & predict plugin (one-click solution) ===
+
+[[File:denoiseg-trainpredict-parameters.png|thumb|N2V train & predict parameters]]
+# Start ImageJ / Fiji
+# Open a noisy image you want to denoise and segment directly after training
+# Click on <code>Plugins > CSBDeep > DenoiSeg > DenoiSeg train & predict</code> and adjust the following parameters:
+#* <b><code>Raw prediction input image</code></b> Choose the image which should be denoised and segmented after training
+#* <b><code>Axes of prediction input</code></b> This parameter helps to figure out how your input data is organized. It's a string with one letter per dimension of the input image. For 2D images, this should be <code>XY</code>. If your data has another axis which should be batch processed, set this parameter to <code>XYB</code>
+#* Regarding the other parameters please have a look at the descriptions in [[#Train plugin|Train plugin]]
+# Click <code>Ok</code>
+# Look below at the [[#What happens during and after training|What happens during and after training]] section for what happens next
+
+== What happens during and after training ==
+
+[[File:denoiseg-train-progress.png|thumb|DenoiSeg training progress window]]
+[[File:denoiseg-train-preview.png|thumb|N2V training preview window]]
+During training, you will see two windows:
+* The progress window keeps you updated of the steps the training process is going through. It also plots the current training and validation loss. 
+* The preview window is generated from the first validation batch. It is split into five parts. 
+** The first tile displays the original noisy data
+** The second tile displays the predicted denoised image
+** The third tile displays the predicted probability if each pixel being on the background
+** The fourth tile displays the predicted probability if each pixel being on the foreground
+** The fifth tile displays the predicted probability if each pixel being on the border
+
+After training, two additional windows should appear. They represent two trained models. One is the model from the epoch with the lowest validation loss, the other one the model from the last epoch step. For DenoiSeg, using the model from the last epoch is almost always recommended. The windows will look similar to this:
+
+[[File:denoiseg-model.png|DenoiSeg model archive window]]
+
+They are stored to a temporary location which you can see in the Overview section of the model window under <code>Saved to..</code>. 
+
+<b>Copy the model from there to another permanent destination on your disk if you want to keep this trained model.</b>
+
+== Prediction ==
+There are two ways to predict from a trained model. For both cases, the resulting image will consist of four channels:
+# the denoised image
+# the probability of each pixel being on the background
+# the probability of each pixel being on the foreground
+# the probability of each pixel being on the border
+The user currently has to use these probabilities to compute the segmentation themself. In the future, further postprocessing steps will be available to automatically compute segmentations based on the output of the trained model. 
+
+You can <b>open the model directly</b>:
+[[File:denoiseg-modelpredict-parameters.png|thumb|DenoiSeg prediction from model parameters]]
+# Start Fiji
+# Open an image you want to denoise and segment and for which you have a pretrained model available as ZIP file
+# Click <code>Import > bioimage.io.zip</code> and choose your trained model. The model will open in a window as depicted above
+# Click <code>Predict</code> in the model window and adjust the following parameters:
+#* <b><code>Input</code></b> The image you want to denoise
+#* <b><code>Axes of prediction input</code></b> This parameter helps to figure out how your input data is organized. It's a string with one letter per dimension of the input image. For 2D images, this should be <code>XY</code>. If your data has another axis which should be batch processed, set this parameter to <code>XYB</code>
+
+Alternatively, you can <b>use the DenoiSeg menu</b>:
+[[File:denoiseg-predict-parameters.png|thumb|DenoiSeg prediction parameters]]
+# Start Fiji
+# Open an image you want to denoise and for which you have a pretrained model available as ZIP file
+# Click <code>Plugins > DenoiSeg > DenoiSeg predict</code> and adjust the parameters as described above, with this addition:
+#* <b><code>Trained model file</code></b> The ZIP file containing the pretrained model (it should end with <code>.bioimage.io.zip</code>)
+
+== Exporting trained models from Python to ImageJ / Fiji ==
+# In Python, run this at the end of you training: <code>mode.exportTF()</code>
+# Locate the exported model file
+# Proceed as described in [[#Prediction|Prediction]]
+
 
 == Creating labelings for the training ==
