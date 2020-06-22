@@ -51,7 +51,7 @@ ImageJ 1.47 or later is required. Java3D is also required, check that [[3D_Viewe
 
 Java 1.8 or later is required. '''The [http://www.imagescience.org/meijering/software/featurej/ imagescience] library is required ''' : [http://www.imagescience.org/meijering/software/download/imagescience.jar download here].
  
-'''Bundle''' : [[Media:Mcib3d-3.96.3.zip]]
+'''Bundle''' : [[Media:Mcib3d-suite3.96.3.zip]]
 
 Sources are available on [https://github.com/ GitHub] for [https://github.com/mcib3d/mcib3d-core core] and [https://github.com/mcib3d/mcib3d-plugins plugins].
 
