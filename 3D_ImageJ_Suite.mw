@@ -15,7 +15,9 @@ This ''suite'' provides plugins to enhance 3D capabilities of ImageJ.
 
 Migrating contents from [https://imagejdocu.list.lu/plugin/stacks/3d_ij_suite/start 3D Suite on ImageJ Documentation Website]. 
 
-The pdf of the [http://eubias.org/NEUBIAS/training-schools/neubias-academy-home/ NEUBIAS academy] presentation "''Introduction to 3D Analysis with 3D ImageJ suite''" is available : [[Media:NEUBIAS_3DSuite.pdf]].
+The pdf of the [http://eubias.org/NEUBIAS/training-schools/neubias-academy-home/ NEUBIAS academy] presentation "''Introduction to 3D Analysis with 3D ImageJ suite''" is available : [[Media:NEUBIAS_3DSuite.pdf]]. 
+
+The associated video is available on [https://www.youtube.com/watch?v=OPC2kP-5By4 Youtube].
 
 == Author ==
 {{Person|Tboudier}}  [[File:EmailBoudier.png]], [https://www.sinica.edu.tw/en Academia Sinica], Taipei, Taiwan.
