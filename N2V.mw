@@ -1,6 +1,28 @@
+= Noise2Void - Learning Denoising from Single Noisy Images = 
+
+More information [https://frauzufall.github.io/csbdeep-testsite/tools/n2v/ here].
+
 == Installation ==
+# Start ImageJ / Fiji
+# Open the updater via <code>Help > Update...</code>
+# Click on <code>Manage update sites</code>
+# Select the <b><code>CSBDeep</code></b> update site
+# Click on <code>Apply changes</code>
+# Restart IamgeJ / Fiji
+
+You should now have access to these plugins:
+
+[[File:n2v-plugins.png||Available N2V plugins]]
 
 == Training ==
+=== Training on a single image ===
+# Start ImageJ / Fiji
+# Open a noisy image of your choice (it should be sufficiently large)
+# (optional) open another noisy image for validation (judging how well the training is performing) and prediction (it will be denoised automatically after the training is finished)
+# Click on <code>Plugins > CSBDeep > N2V > N2V train</code>
+
+[[File:n2v-train-parameters.png||N2V train parameters]]
+
 
 == Prediction ==
 
