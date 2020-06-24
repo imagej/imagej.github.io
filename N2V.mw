@@ -145,3 +145,4 @@ Thank you for testing the first early release version! Here is what changed, if 
 
 == Trained models ==
 Models trained with the first N2V for Fiji version cannot be used with the newer commands for model prediction. Please upgrade them first by using the command <code>Plugins > CSBDeep > N2V > Upgrade old N2V model</code>.
+! Note: When testing this, I had to unzip and zip the new model before it was usable. I'll try to fix this, but if you run into problems with the converted model, try unzipping and zipping it again.
