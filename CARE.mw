@@ -1,7 +1,7 @@
 {{Component
 | project = CSBDresden
-| name = CSBDeep Fiji Plugin
-| url = https://imagej.net/CSBDeep
+| name = CARE Fiji Plugin
+| url = https://imagej.net/CARE
 | source = {{GitHub | org=CSBDeep | repo=CSBDeep_fiji | tag=csbdeep-0.3.4}}
 | license = [[BSD-2]]
 | release = {{Maven | g=de.csbdresden | a=csbdeep | v=0.3.4 | label=0.3.4}}
