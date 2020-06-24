@@ -144,4 +144,4 @@ Thank you for testing the first early release version! Here is what changed, if 
 * the training output <code>bestTrainedModelPath</code> changed to <code>bestTrainedModel</code> (it's a displayable model object now)
 
 == Trained models ==
-Models trained with the original
+Models trained with the first N2V for Fiji version cannot be used with the newer commands for model prediction. Please upgrade them first by using the command <code>Plugins > CSBDeep > N2V > Upgrade old N2V model</code>.
