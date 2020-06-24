@@ -1,3 +1,5 @@
+[[File:DenoiSeg-teaser.png|thumb|Teaser of what DenoiSeg can compute on your data.]]
+
 DenoiSeg is a neural network based algorithm for instance segmentation.
 The interesting thing about DenoiSeg is, that - although primarily meant for segmentation - the algorithm also learns to denoise your images.
 The knowledge acquired by denoising the images, improves the segmentation results.
@@ -8,16 +10,20 @@ But it requires less training data, you only need to manually generate segmentat
 This website describes the DenoiSeg FIJI Plugin. Which makes it very easy to use DenoiSeg. All you need is your images, manually generated segmentations for a few of them, a computer with a NVIDIA graphics card and FIJI installed.
 
 Segmenting your data with DenoiSeg requires 3 steps: 
-# Create manual segmentations for few of your images. (This might take around 8 h of manual work)
+# Create manual segmentations for few of your images. (This might take around 8 h of manual work.)
 # Train the neural network. The result is a trained neural network, which is called: model. (Training keeps your computer busy for around 12 h. This can be done over night, as you don't need do anything.)
 # Prediction: Use the train model to segment as much images as you want. This step is much faster, just 1 second per image. 
 
-= DenoiSeg - Joint Denoising and Segmentation = 
+This FIJI plugin is part of CSBDeep, a collection of neural network algorithm in FIJI. For more information about our open source implementation , examples and images, click [https://frauzufall.github.io/csbdeep-testsite/tools/denoiseg/ here].
 
-[[File:DenoiSeg-teaser.png|thumb|Teaser of what DenoiSeg can compute on your data.]]
+= Publication DenoiSeg - Joint Denoising and Segmentation = 
+
+'''Abstract'''
+
 Microscopy image analysis often requires the segmentation of objects, but training data for this task is typically scarce and hard to obtain. Here we propose DenoiSeg, a new method that can be trained end-to-end on only a few annotated ground truth segmentations. We achieve this by extending Noise2Void, a self-supervised denoising scheme that can be trained on noisy images alone, to also predict dense 3-class segmentations. The reason for the success of our method is that segmentation can profit from denoising, especially when performed jointly within the same network. The network becomes a denoising expert by seeing all available raw data, while co-learning to segment, even if only a few segmentation labels are available. This hypothesis is additionally fueled by our observation that the best segmentation results on high quality (very low noise) raw data are obtained when moderate amounts of synthetic noise are added. This renders the denoising-task non-trivial and unleashes the desired co-learning effect. We believe that DenoiSeg offers a viable way to circumvent the tremendous hunger for high quality training data and effectively enables few-shot learning of dense segmentations.
 
-A preprint describing the method can be found [https://arxiv.org/abs/2005.02987 here], more information about our open source implementation [https://frauzufall.github.io/csbdeep-testsite/tools/denoiseg/ here].
+'''[https://arxiv.org/abs/2005.02987 Full-text]'''
+
 
 == Installation ==
 # Start ImageJ / Fiji
@@ -31,6 +37,7 @@ You should now have access to these plugins:
 
 [[File:denoiseg-plugins.png||Available DenoiSeg plugins]]
 
+= Usage =
 
 == Training ==
 
@@ -115,13 +122,12 @@ Alternatively, you can <b>use the DenoiSeg menu</b>:
 # Click <code>Plugins > DenoiSeg > DenoiSeg predict</code> and adjust the parameters as described above, with this addition:
 #* <b><code>Trained model file</code></b> The ZIP file containing the pretrained model (it should end with <code>.bioimage.io.zip</code>)
 
-== Exporting trained models from Python to ImageJ / Fiji ==
+= Exporting trained models from Python to ImageJ / Fiji =
 # In Python, run this at the end of you training: <code>mode.exportTF()</code>. Have a look at e.g. this notebook, at the very end.
 # Locate the exported model file
 # Proceed as described in [[#Prediction|Prediction]]
 
-
-== Creating labelings for the training ==
+= Creating labelings for the training =
 There are many possibilities for how to create labelings. But since we get this question a lot, here is how we do it:
 
 [[File:updatesite-labkit.png|thumb|Update site Labkit]]
