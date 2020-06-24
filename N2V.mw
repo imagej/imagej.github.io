@@ -12,7 +12,7 @@ The first step will train the artificial neural network to remove the noise in t
 This training step is relatively slow, it might take around 12 h to get the best results.
 But don't worry. Just let your computer run the training over night. You don't need to do anything. Training only needs to happen once, and you will see a preview during the ongoing training.
 The result of the training is a model.
-The second step is called prediction. The prediction step will use the trained model to denoise your images. The same model can be used for any number of similar images. It typically takes less than a second per image. So high quality denoising of a set of for example thausend images is easily possible within one day.
+The second step is called prediction. The prediction step will use the trained model to denoise your images. The same model can be used for any number of similar images. It typically takes less than a second per image. So high quality denoising of thousand images is easily possible within one day.
 
 See the paper for a detailed description of the algorithm.
 
