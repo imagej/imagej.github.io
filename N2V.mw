@@ -14,7 +14,7 @@ The second step is called prediction. The prediction step will use the trained m
 
 See the paper for a detailed description of the algorithm.
 
-The Noise2Void FIJI plugin is part of CSBDeep. A set of open source neural network algorithm in FIJI. For more information, examples and images, look [https://frauzufall.github.io/csbdeep-testsite/tools/n2v/ here].
+This FIJI plugin is part of CSBDeep. A set of open source neural network algorithms in FIJI. For more information, examples and images, click [https://frauzufall.github.io/csbdeep-testsite/tools/n2v/ here].
 
 = Publication: Noise2Void - Learning Denoising from Single Noisy Images = 
 
