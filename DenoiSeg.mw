@@ -108,17 +108,19 @@ Alternatively, you can <b>use the DenoiSeg menu</b>:
 
 
 == Creating labelings for the training ==
-There are many possibilities for how to create labelings. But since we get this asked a lot, here is how we do it:
+There are many possibilities for how to create labelings. But since we get this question a lot, here is how we do it:
+
+[[File:updatesite-labkit.png|thumb|Update site Labkit]]
+[[File:labkit.png|thumb|Labkit]]
+[[File:3Dobjectscounter.png|thumb|3D Objects counter options]]
+
 # Install the Labkit update site via <code>Help > Update...</code>, clicking on <code>Manage update sites</code>, and selecting <code>Labkit</code>
-[[File:updatesite-labkit.png|Update site Labkit]]
 # Restart Fiji
 # Open the image you want to label
 # Click <code>Plugins > Segmentation > Labkit</code>
 # Carefully label your data. Use e.g. the pencil tool to outline your labelings and the bucket tool to fill the outlines.
-[[File:labkit.png|Labkit]]
 # Export the mask by clicking the meny item <code>Labeling > Show Labeling in ImageJ</code>
 # Convert the exported mask (with zero for background and one for foreground into an indexed labelimage
 ## Click <code>Analyze > 3D Objects Counter</code>
 ## Make sure to deselect <code>Exclude objects on edges</code>
 ## Save the displayed labeling to disk
-[[File:3Dobjectscounter.png|3D Objects counter options]]
