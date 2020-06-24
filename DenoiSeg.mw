@@ -122,7 +122,9 @@ Alternatively, you can <b>use the DenoiSeg menu</b>:
 #* <b><code>Trained model file</code></b> The ZIP file containing the pretrained model (it should end with <code>.bioimage.io.zip</code>)
 
 = Exporting trained models from Python to ImageJ / Fiji =
-# In Python, run this at the end of you training: <code>mode.exportTF()</code>. Have a look at e.g. this notebook, at the very end.
+
+It's also possible to train a DenoiSeg neural network using Python. The required code and instructions can be found [https://github.com/juglab/DenoiSeg here]. The model that has been trained in python, can be used in FIJI as well:
+# In Python, run this at the end of your training: <code>mode.exportTF()</code>. 
 # Locate the exported model file
 # Proceed as described in [[#Prediction|Prediction]]
 
