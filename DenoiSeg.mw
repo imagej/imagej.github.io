@@ -1,16 +1,4 @@
-DenoiSeg is a neural network based algorithm for instance segmentation.
-The interesting thing about DenoiSeg is, that - although primarily meant for segmentation - the algorithm also learns to denoise your images.
-The algorithm learns about the image content by denoising the images, this acquired knowlegde improves the segmentation results.
-DenoiSeg can solve hard segmentation tasks,
-just like other neural network base algorithms. 
-But it requires less training data, you only need to manually generate segmentation for arround 2 - 10 images.
-
-This website describes the DenoiSeg FIJI Plugin. Which makes it very easy to use DenoiSeg. All you need is your images, manually generated segmentations for a few of them, a computer with a NVIDIA graphics card and FIJI installed.
-
-Segmenting your data with DenoiSeg requires 3 steps: 
-# Create manual segmentations for few of your images. (This might take around 8 h of manual work)
-# Train the neural network. The result is a trained neural network, which is called: model. (Training keeps your computer busy for around 12 h. This can be done over night, as you don't need do anything.)
-# Once the model is trained. You can use it to segment as many images as needed. This step usually takes less than one second per image.
+DenoiSeg is a ne ral algorithm for instance segmentation based on artificial neural networks. 
 
 = DenoiSeg - Joint Denoising and Segmentation = 
 
