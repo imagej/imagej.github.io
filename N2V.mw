@@ -99,6 +99,6 @@ Alternatively, you can <b>use the N2V menu</b>:
 #* <b><code>Trained model file</code></b> The ZIP file containing the pretrained model (it should end with <code>.bioimage.io.zip</code>)
 
 == Exporting trained models from Python to ImageJ / Fiji ==
-# In Python, run this at the end of you training: <code>mode.exportTF()</code>
+# In Python, run this at the end of you training: <code>model.exportTF()</code>
 # Locate the exported model file
 # Proceed as described in [[#Prediction|Prediction]]
