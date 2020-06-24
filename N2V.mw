@@ -19,6 +19,7 @@ You should now have access to these plugins:
 
 
 == Training ==
+Training without GPU support is possible, but will take ages. Please read the notes on [https://imagej.net/TensorFlow-GPU this page] for how to run the tools on the GPU.
 
 === Training on a single image ===
 
