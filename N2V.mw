@@ -1,3 +1,16 @@
+Noise2Void (N2V) is a powerful, context aware and flexible algorithm for image denoising.
+It uses artificial neural networks to learn about the properties of your images how to best denoise them.
+N2V outperforms traditional denoising techniques.
+
+This page describes the N2V FIJI plugin. The N2V FIJI plugin provides a very simple way to use N2V in FIJI.
+All you need is a computer with a graphics cards, a FIJI installation and your noisy images.
+
+The execution of N2V has two steps. The first step will train the artificial neural network to remove the noise in the kind of images that you have. This training step is relatively slow, might take around 12 h to get best result. But don't worry. Just let the training run over night. You don't need to do anything. Training only needs to happen once. The result of the training is a model. The model can be used the quickly remove the noise in any number of similar images.
+
+The second step is called prediction. The prediction step will use the trained model to denoise your images. It usually takes less than a second per image. 
+
+See the paper for a detailed description of the algorithm.
+
 = Noise2Void - Learning Denoising from Single Noisy Images = 
 
 [[File:n2v-teaser.png|thumb|Examples of N2V denoised images.]]
