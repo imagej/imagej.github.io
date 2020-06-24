@@ -121,6 +121,9 @@ Alternatively, you can <b>use the N2V menu</b>:
 #* <b><code>Trained model file</code></b> The ZIP file containing the pretrained model (it should end with <code>.bioimage.io.zip</code>)
 
 = Exporting trained models from Python to ImageJ / Fiji =
+
+It's possible to train a Noise2Void neural network using Python. The required code and instructions can be found [https://github.com/juglab/n2v here]. The model that has been trained in Python, can be used in FIJI as well: 
+
 # In Python, run this at the end of you training: <code>model.exportTF()</code>
 # Locate the exported model file
 # Proceed as described in [[#Prediction|Prediction]]
