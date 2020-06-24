@@ -128,3 +128,20 @@ It's possible to train a Noise2Void neural network using Python. The required co
 # In Python, run this at the end of you training: <code>model.exportTF()</code>
 # Locate the exported model file
 # Proceed as described in [[#Prediction|Prediction]]
+
+= How to handle macros / scripts / models from the first early release of N2V for Fiji =
+Thank you for testing the first early release version! Here is what changed, if that does not help you getting already trained models or scripts running, please write a post in the forum!
+
+== Macros / Scripts ==
+* the <code>predict</code> command was renamed to <code>N2V predict</code>
+* the <code>train</code> command was renamed to <code>N2V train</code>
+* the <code>train + predict</code> command was renamed to <code>N2V train + predict</code>
+* the <code>train on folder</code> command was renamed to <code>N2V train on folder</code>
+* there is a new mandatory prediction parameter called <code>axes</code> (see documentation above)
+* the training parameter <code>batchDimLength</code> is gone for good
+* the training parameter <code>patchDimLength</code> was renamed to <code>patchShape</code>
+* the training output <code>latestTrainedModelPath</code> changed to <code>latestTrainedModel</code> (it's a displayable model object now)
+* the training output <code>bestTrainedModelPath</code> changed to <code>bestTrainedModel</code> (it's a displayable model object now)
+
+== Trained models ==
+Models trained with the original
