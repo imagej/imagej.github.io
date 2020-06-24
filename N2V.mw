@@ -25,7 +25,7 @@ The field of image denoising is currently dominated by discriminative deep learn
 
 '''[https://arxiv.org/abs/1811.10980 Full-text]'''
 
-== Installation ==
+= Installation =
 # Start ImageJ / Fiji
 # Open the updater via <code>Help > Update...</code>
 # Click on <code>Manage update sites</code>
@@ -37,6 +37,7 @@ You should now have access to these plugins:
 
 [[File:n2v-plugins.png||Available N2V plugins]]
 
+= Usage =
 
 == Training ==
 Training without GPU support is possible, but will take ages. Please read the notes on [https://imagej.net/TensorFlow-GPU this page] for how to run the tools on the GPU.
@@ -119,7 +120,7 @@ Alternatively, you can <b>use the N2V menu</b>:
 # Click <code>Plugins > N2V > N2V predict</code> and adjust the parameters as described above, with this addition:
 #* <b><code>Trained model file</code></b> The ZIP file containing the pretrained model (it should end with <code>.bioimage.io.zip</code>)
 
-== Exporting trained models from Python to ImageJ / Fiji ==
+= Exporting trained models from Python to ImageJ / Fiji =
 # In Python, run this at the end of you training: <code>model.exportTF()</code>
 # Locate the exported model file
 # Proceed as described in [[#Prediction|Prediction]]
