@@ -16,7 +16,7 @@ Segmenting your data with DenoiSeg requires 3 steps:
 
 This FIJI plugin is part of CSBDeep, a collection of neural network algorithm in FIJI. For more information about our open source implementation , examples and images, click [https://frauzufall.github.io/csbdeep-testsite/tools/denoiseg/ here].
 
-= Publication DenoiSeg - Joint Denoising and Segmentation = 
+= Publication: DenoiSeg - Joint Denoising and Segmentation = 
 
 '''Abstract'''
 
@@ -24,8 +24,7 @@ Microscopy image analysis often requires the segmentation of objects, but traini
 
 '''[https://arxiv.org/abs/2005.02987 Full-text]'''
 
-
-== Installation ==
+= Installation =
 # Start ImageJ / Fiji
 # Open the updater via <code>Help > Update...</code>
 # Click on <code>Manage update sites</code>
