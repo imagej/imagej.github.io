@@ -110,11 +110,11 @@ When all settings are properly configured. Click on '''Fit Dataset''' button on 
 
 After the “pending” state ends, new options will be available as "Show" options in the '''Preview''' panel. Click on the options to view the fit results:
 
-[[File:FLIMJ_fit_dataset_preview_results_show.png|220px|thumb|center|Viewing the mean lifetime parameter of the fitted dataset.]]
+[[File:FLIMJ_fit_dataset_preview_results_show.png|220px|thumb|center|Viewing the <math>\tau</math> (lifetime) parameter of the fitted dataset.]]
 
 You may also change the "as" option to specify how the results are rendered. Currently supported options are:
 
-[[File:FLIMJ_fit_dataset_preview_results_as.png|600px|thumb|right|Left to right: The fitted image rendered with '''Grayscale''', '''Color''' and '''Composite Color'''.]]
+[[File:FLIMJ_fit_dataset_preview_results_as.png|600px|thumb|right|Left to right: The <math>\tau</math> image rendered with '''Grayscale''', '''Color''' and '''Composite Color'''.]]
 
 * '''Grayscale''': Linearly maps the middle 80 percentile of the result image's values to grayscale colors from black to white. Values below the 10th percentile and above the 90th percentile are rendered black and white respectively.
 
