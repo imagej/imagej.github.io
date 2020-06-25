@@ -14,7 +14,7 @@ Segmenting your data with DenoiSeg requires 3 steps:
 # Train the neural network. The result is a trained neural network, which is called: model. (Training keeps your computer busy for around 12 h. This can be done over night, as you don't need do anything.)
 # Prediction: Use the train model to segment as much images as you want. This step is much faster, just 1 second per image. 
 
-This FIJI plugin is part of CSBDeep, a collection of neural network algorithm in FIJI. For more information about our open source implementation , examples and images, click [https://frauzufall.github.io/csbdeep-testsite/tools/denoiseg/ here].
+This FIJI plugin is part of CSBDeep, a collection of neural network algorithm in FIJI. For more information about our open source implementation , examples and images, click [https://csbdeep.bioimagecomputing.com/tools/denoiseg/ here].
 
 = Publication: DenoiSeg - Joint Denoising and Segmentation = 
 
@@ -30,7 +30,7 @@ Microscopy image analysis often requires the segmentation of objects, but traini
 # Click on <code>Manage update sites</code>
 # Select the <b><code>CSBDeep</code></b> update site
 # Click on <code>Apply changes</code>
-# Restart IamgeJ / Fiji
+# Restart ImageJ / Fiji
 
 You should now have access to these plugins:
 
