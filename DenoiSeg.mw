@@ -25,6 +25,9 @@ Microscopy image analysis often requires the segmentation of objects, but traini
 '''[https://arxiv.org/abs/2005.02987 Full-text]'''
 
 = Installation =
+
+The DenoiSeg FIJI Plugin is part of the CSBDeep update site. Look [https://imagej.net/Following_an_update_site here], for detailed instructions on how to install an update site. Or just follow these steps:
+
 # Start ImageJ / Fiji
 # Open the updater via <code>Help > Update...</code>
 # Click on <code>Manage update sites</code>
