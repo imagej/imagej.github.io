@@ -52,19 +52,9 @@ If all goes well, an image will be displayed representing the result of the mode
 
 See the [https://github.com/CSBDeep/CSBDeep_website/wiki/Your-Model-in-Fiji CSBDeep Wiki Page] for more details.
 
-== Develop ==
-
-=== Code Style ===
-
-If you use eclipse you can import our code formatter `doc/eclipse-code-formatter.xml`, code cleanup (`doc/eclipse-code-clean-up.xml`) and import order (`eclipse-import-order.importorder`) settings.
-
 == GPU support ==
 
-See the according [https://github.com/CSBDeep/CSBDeep_website/wiki/CSBDeep-in-Fiji-–-Installation#gpu-support CSBDeep Wiki page] for a detailed installation guide.
-
-=== Muliple GPUs ===
-
-See the according [https://github.com/CSBDeep/CSBDeep_website/wiki/CSBDeep-in-Fiji-–-Installation#multiple-gpus CSBDeep Wiki page].
+Please read [https://imagej.net/TensorFlow-GPU this page] for GPU support.
 
 == License ==
 
