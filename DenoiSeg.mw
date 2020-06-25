@@ -33,6 +33,7 @@ The DenoiSeg FIJI Plugin is part of the CSBDeep update site. Look [https://image
 # Click on <code>Manage update sites</code>
 # Select the <b><code>CSBDeep</code></b> update site
 # Click on <code>Apply changes</code>
+# (optional) read [https://imagej.net/TensorFlow-GPU this page] for GPU support
 # Restart ImageJ / Fiji
 
 You should now have access to these plugins:
@@ -42,6 +43,8 @@ You should now have access to these plugins:
 = Usage =
 
 == Training ==
+
+Read [https://imagej.net/TensorFlow-GPU this page] for how to get GPU support. With out a GPU the training will take ages.
 
 === Prepare your data ===
 * create two folders for training and two folders for validation, name them e.g. <code>X_train</code>, <code>Y_train</code>, <code>X_val</code>, and <code>Y_val</code>
