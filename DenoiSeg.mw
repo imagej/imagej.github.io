@@ -130,7 +130,7 @@ Alternatively, you can <b>use the DenoiSeg menu</b>:
 = Exporting trained models from Python to ImageJ / Fiji =
 
 It's possible to train a DenoiSeg neural network using Python. The required code and instructions can be found [https://github.com/juglab/DenoiSeg here]. The model that has been trained in Python, can be used in FIJI as well:
-# In Python, run this at the end of your training: <code>mode.exportTF()</code>. 
+# In Python, run this at the end of your training: <code>mode.export_TF()</code>. 
 # Locate the exported model file
 # Proceed as described in [[#Prediction|Prediction]]
 
