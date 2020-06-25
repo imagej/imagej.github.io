@@ -128,6 +128,15 @@ You can hover the mouse pointer on the rendered image to see the lookup table (L
 
 == Image export ==
 
+[[File:FLIMJ_image_export.png|200px|thumb|right|Options on the '''Export''' pannel.]]
+
+After dataset fitting, you can select images to export in the drop-down checklist on the '''Export''' pannel. If "With LUT" is checked, the exported image will be equipped with the LUT used to render the preview image on the '''Preview''' panel (value ranges are set for each image separately).
+
+{{Notice | You may follow the following steps to reproduce the composite color image after export:
+# Export "Intensity" with desired fitted images;
+# Convert all images to RGB format by searching and executing the "RGB Color" command in FIJI;
+# Search and execute the "compose rgb-stacks" script, make the intensity image the "source" and the fitted image the "target", and choose "Multiply" as "compose method". Hit "OK".
+}}
 
 == Advanced topics ==
 
