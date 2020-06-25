@@ -32,6 +32,7 @@ The field of image denoising is currently dominated by discriminative deep learn
 # Click on <code>Manage update sites</code>
 # Select the <b><code>CSBDeep</code></b> update site
 # Click on <code>Apply changes</code>
+# (optional) read [https://imagej.net/TensorFlow-GPU this page] for GPU support
 # Restart ImageJ / Fiji
 
 You should now have access to these plugins:
