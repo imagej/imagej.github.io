@@ -126,7 +126,7 @@ Alternatively, you can <b>use the N2V menu</b>:
 
 It's possible to train a Noise2Void neural network using Python. The required code and instructions can be found [https://github.com/juglab/n2v here]. The model that has been trained in Python, can be used in FIJI as well: 
 
-# In Python, run this at the end of you training: <code>model.exportTF()</code>
+# In Python, run this at the end of you training: <code>model.export_TF()</code>
 # Locate the exported model file
 # Proceed as described in [[#Prediction|Prediction]]
 
