@@ -16,7 +16,7 @@ The second step is called prediction. The prediction step will use the trained m
 
 See the paper for a detailed description of the algorithm.
 
-This FIJI plugin is part of CSBDeep. A set of open source neural network algorithms in FIJI. For more information, examples and images, click [https://frauzufall.github.io/csbdeep-testsite/tools/n2v/ here].
+This FIJI plugin is part of CSBDeep. A set of open source neural network algorithms in FIJI. For more information, examples and images, click [https://csbdeep.bioimagecomputing.com/tools/n2v/ here].
 
 = Publication: Noise2Void - Learning Denoising from Single Noisy Images = 
 
@@ -131,6 +131,9 @@ It's possible to train a Noise2Void neural network using Python. The required co
 
 = How to handle macros / scripts / models from the first early release of N2V for Fiji =
 Thank you for testing the first early release version! Here is what changed, if that does not help you getting already trained models or scripts running, please write a post in the forum!
+
+== Update Site ==
+You don't need the N2V update site any more, the CSBDeep update site is sufficient. Please remove the N2V update site.
 
 == Macros / Scripts ==
 * the <code>predict</code> command was renamed to <code>N2V predict</code>
