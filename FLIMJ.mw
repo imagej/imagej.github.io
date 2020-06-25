@@ -35,11 +35,11 @@ Once you have installed the FLIMJ plugin, it becomes available on the menu under
 
 Open a dataset (such as {{GitHub|org=flimlib|repo=flimj-ops|path=test_files/test2.sdt|label=this one}}) or select an existing image display in Fiji:
 
-[[File:FLIMJ_usage_open_dataset.png|300px]]
+[[File:FLIMJ_usage_open_dataset.png|300px|center]]
 
 With the desired dataset window active, launch FLIMJ from the menu under {{bc | Analyze | Lifetime | FLIMJ}} or search for "FLIMJ" in the search box:
 
-[[File:FLIMJ_first_launch.png|600px]]
+[[File:FLIMJ_first_launch.png|600px|center]]
 
 {{Notice | '''FLIMJ plugin accepts only 3- or 4-dimensional datasets.''' If the dataset is opened from a file supported by [[SCIFIO]] (such as a .sdt), the dataset likely has metadata attached, which helps FLIM plugin infer the order of the X, Y, and T axes as well as the time bin size. Otherwise, the user may be asked to provide the information:
 
@@ -128,6 +128,12 @@ You can hover the mouse pointer on the rendered image to see the lookup table (L
 
 == Image export ==
 
+
+== Advanced topics ==
+
+=== Noise models ===
+Coming soon...
+
 More documentation coming soon. For now, see the source code at:
 
 {{BigLink | url=https://github.com/flimlib/flimj-ui}}
@@ -135,8 +141,3 @@ More documentation coming soon. For now, see the source code at:
 And:
 
 {{BigLink | url=https://github.com/flimlib/flimj-ops}}
-
-== Advanced topics ==
-
-=== Noise models ===
-Coming soon...
