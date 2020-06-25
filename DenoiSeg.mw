@@ -57,7 +57,7 @@ Read [https://imagej.net/TensorFlow-GPU this page] for how to get GPU support. W
 
 If you just want to test the FIJI plugin you may use this [https://cloud.mpi-cbg.de/index.php/s/Mayv4JHOlR6ykBh data]. It was used to create the screenshots below.
 
-Please note: You may not use this training data to segment your images. You need to prepare your one training data as described above. 
+Please note: You may not use this training data to segment your images. You need to prepare your own training data to get good results for your images.
 
 === Train plugin ===
 
