@@ -104,7 +104,29 @@ FLIMJ plugin currently only supports the selection of IRF from a single pixel in
 
 You may readjust the IRF by starting from step 2 above. You may also reset the IRF setting by selecting ''None'' for ''Instrument Response'' in '''Settings''' pannel or go back to a previously set IRF by choosing the corresponding filename there.
 
-== Fit the dataset ==
+== Dataset fitting and results preview ==
+
+When all settings are properly configured. Click on '''Fit Dataset''' button on the '''Settings''' panel to start dataset fitting. A "pending" progress indicator will appear on top of the '''Fit Dataset''' button.
+
+After the “pending” state ends, new options will be available as "Show" options in the '''Preview''' panel. Click on the options to view the fit results:
+
+[[File:FLIMJ_fit_dataset_preview_results_show.png|220px|thumb|center|Viewing the mean lifetime parameter of the fitted dataset.]]
+
+You may also change the "as" option to specify how the results are rendered. Currently supported options are:
+
+[[File:FLIMJ_fit_dataset_preview_results_as.png|600px|thumb|right|Left to right: The fitted image rendered with '''Grayscale''', '''Color''' and '''Composite Color'''.]]
+
+* '''Grayscale''': Linearly maps the middle 80 percentile of the result image's values to grayscale colors from black to white. Values below the 10th percentile and above the 90th percentile are rendered black and white respectively.
+
+* '''Color''': Linearly maps the middle 80 percentile of the result image's values to colors from <code><span style="color:hsl(20,100%,50%)">hsl(20, 100%, 50%)</span></code> to <code><span style="color:hsl(220,100%,50%)">hsl(220, 100%, 50%)</span></code> (see color bar below). Out-of-range values follow the same rule as in '''Grayscale'''.
+
+* '''Composite Color''': Takes the color mapped to by '''Color''' but replace the brightness with the brightness of the intensity image (on the left of the '''Preview''' pane). This option makes the fitted image look more uniform by deemphasizing jittery low photon count pixels.
+
+You can hover the mouse pointer on the rendered image to see the lookup table (LUT) color bar and the numerical value of the pixel:
+
+[[File:FLIMJ_fit_dataset_preview_results_lut.png|200px|thumb|center|Hover on image to see the color bar, the pixel value, and its place in the range.]]
+
+== Image export ==
 
 More documentation coming soon. For now, see the source code at:
 
