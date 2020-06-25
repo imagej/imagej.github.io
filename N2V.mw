@@ -5,7 +5,7 @@ It uses artificial neural networks to learn about the properties of your images 
 N2V outperforms traditional denoising techniques.
 
 This page describes the N2V FIJI plugin. The N2V FIJI plugin provides a very simple way to use N2V in FIJI.
-All you need is a computer with a graphics cards, a FIJI installation and your noisy images.
+All you need is a computer with a NVIDIA graphics cards, a FIJI installation and your noisy images.
 
 The execution of N2V has two steps.
 The first step will train the artificial neural network to remove the noise in the kind of images that you have.
