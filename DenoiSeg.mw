@@ -53,6 +53,12 @@ Read [https://imagej.net/TensorFlow-GPU this page] for how to get GPU support. W
 * Put the labels into <code>Y_train</code> - each labeling file needs to have the same name as the matching raw data in <code>X_train</code>
 * Do the same for <code>X_val</code> and <code>Y_val</code>. Aim for having about 10% validation data and 90% training data. If in doubt, use more data for training.
 
+=== Example data ===
+
+If you just want to test the FIJI plugin you may use this [https://cloud.mpi-cbg.de/index.php/s/Mayv4JHOlR6ykBh data]. It was used to create the screenshots below.
+
+Please note: You may not use this training data to segment your images. You need to prepare your one training data as described above. 
+
 === Train plugin ===
 
 [[File:denoiseg-train-parameters.png|thumb|N2V train parameters]]
