@@ -28,8 +28,8 @@ def FileName(file_path):
 
 def GetTitle(file_path):
 
-    # get title from file name and remove unwanted characters
-
+    # returns title from file name and removes unwanted characters
+    # update characters to remove as necessiary
     title = os.path.basename(file_path)
 
     if title.endswith('.mw'):
@@ -42,8 +42,7 @@ def GetTitle(file_path):
 
 def GetBreadcrumb(file_path):
 
-    # get breadcrumb from the title
-
+    # returns breadcrumb from the title
     breadcrumb = os.path.basename(file_path)
 
     if breadcrumb.endswith('.mw'):
@@ -56,6 +55,7 @@ def GetBreadcrumb(file_path):
 
 def GetCategories(file_path):
 
+    # Reads the bottom of the file, finds categories and returns the formated front matter "categories".
     categories = []
 
     with open(file_path) as f:
@@ -76,7 +76,7 @@ def GetCategories(file_path):
 
 def ProcessFile(file_path, str_content):
 
-    # begin string replacement
+    # perform regex replacements
     content_tmp = str_content
 
     # remove unused sidebox details
@@ -98,12 +98,14 @@ def ProcessFile(file_path, str_content):
 
 def ReplaceText(old_text, new_text, str_content):
 
+    # replace old element calls to new element calls
     str_content = re.sub(r'{% include ' + old_text, r'{% include ' + new_text, str_content)
 
     return str_content
 
 def AddFrontMatter(str_content, file_path):
 
+    # scrap necessary info fom page and populate the front matter.
     title = GetTitle(file_path)
     breadcrumb = GetBreadcrumb(file_path)
     author = "test author"
@@ -115,6 +117,7 @@ def AddFrontMatter(str_content, file_path):
 
 def WriteFile(file_content, file_path):
 
+    # write file out
     save_path = "/home/edward/Documents/Development/Repos/LOCI/imagej.github.io/pages/"
     file_name = "test.mw"
     complete_name = os.path.join(save_path, file_name)
