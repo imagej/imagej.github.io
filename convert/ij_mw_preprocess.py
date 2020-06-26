@@ -66,7 +66,13 @@ def GetCategories(file_path):
             except:
                 pass
 
-    return categories
+    str_categories = ""
+    for n in categories:
+        str_categories += n + ","
+
+    str_categories = str_categories[:-1]
+
+    return str_categories
 
 def ProcessFile(file_path, str_content):
 
@@ -123,9 +129,9 @@ def WriteFile(file_content, file_path):
 
     return None
 
-#input_file = "/home/edward/Documents/Workspaces/imagej-net-conversion/imagej_mediawiki_source/3D_Viewer.mw"
-input_file = "/home/edward/Documents/Workspaces/imagej-net-conversion/imagej_mediawiki_source/Architecture.mw"
+input_file = "/home/edward/Documents/Workspaces/imagej-net-conversion/imagej_mediawiki_source/3D_Viewer.mw"
+#input_file = "/home/edward/Documents/Workspaces/imagej-net-conversion/imagej_mediawiki_source/Architecture.mw"
 file_contents = ReadFile(input_file)
 results = ProcessFile(input_file, file_contents)
 results = AddFrontMatter(results,  input_file)
-#WriteFile(results, input_file)
+WriteFile(results, input_file)
