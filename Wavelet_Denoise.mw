@@ -71,8 +71,6 @@ Below the buttons (<i>Preview 1 Slice</i>, <i>Recomputing All Data Required</i>)
 
 • When you close any image window joined with the dialog (Input, WT, Filtered, WT-NoStretch) during running, the dialog will not continue and a warning message appears.
 
-• The sizes of input image matrices must be of power of 2, common sizes are: 64, 128, 256, 512, 1024, 2048 etc., otherwise the plugin will not start and a warning message appears again. This is due to the proper computation of levels of wavelet decomposition of images.
-
 • If you do not see data in image windows well, use {{bc | Image | Adjust-Brightness/Contrast | Auto}}. Do not press <i>Apply</i> for pixel intensity value recomputation.
 
 == Step-by-step manuals ==
