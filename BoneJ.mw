@@ -482,7 +482,7 @@ A 2D or 3D binary image.
 * '''Results'''
 ** '''Label''': Image file name
 ** '''ID''': unique particle identifier; this number is the label used for the particle in all calculations and output
-** '''Vol''': particle volume
+** '''Vol''': particle volume, calculated as pixel count multiplied by pixel grid ''x'', ''y'', and ''z'' spacing if the image axes are calibrated
 ** '''x Cent''': x-coordinate of particle centroid
 ** '''y Cent''': y-coordinate of particle centroid
 ** '''z Cent''': z-coordinate of particle centroid
