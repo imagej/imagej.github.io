@@ -1,3 +1,14 @@
+{{Infobox
+| name                   =  OpenMPI Plugin Extensions
+| software               = Fiji
+| author                 = Daniel Trnka, Michal Krumnikl
+| maintainer             = Michal Krumnikl
+| released               = TBD
+| latest version         = TBD
+| category               = TBD
+| source               = [https://github.com/fiji-hpc/scijava-parallel-mpi on github]
+}}
+
 == General information ==
 === Motivation ===
 OpenMPI, despite being relatively old, still remains the most dominant programming model used in high-performance computing (HPC). As of today Fiji supports the GPU parallelization through [[CLIJ]] and allows executing automated HPC workflows by means of [[Automated_workflow_for_parallel_Multiview_Reconstruction]]. However, there are still no genuine internally parallel plugins developed specifically for deployment on large scale parallel machines like HPC clusters or supercomputers. This is a preliminary OpenMPI framework for Fiji and model parallel implementations of the most common image processing operations included in ImageJ.
