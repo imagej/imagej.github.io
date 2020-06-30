@@ -117,6 +117,8 @@ def add_front_matter(str_content, file_path):
 
 def write_file(file_content, file_path):
 
+    # TODO: Expose current file/save path to `run_pandoc`
+
     # write file out
     save_path = "/home/edward/Documents/Development/Repos/LOCI/imagej.github.io/pages/"
     file_name = "test.mw"
@@ -131,14 +133,32 @@ def write_file(file_content, file_path):
 
     return None
 
-def run_pandoc():
+def run_pandoc(file_path):
+
+    # TODO: Sense current file/save path from `write_file`.
+
+    # determine current file name:
+    current_file = get_name(file_path) + ".mw"
 
     input = "/home/edward/Documents/Development/Repos/LOCI/imagej.github.io/pages/test.mw"
     output = "/home/edward/Documents/Development/Repos/LOCI/imagej.github.io/pages/test.md"
 
-    print("running pandoc...")
+    print("running pandoc on file: {0}".format(current_file))
     os.system('pandoc {0} -f mediawiki -t gfm -s -o {1}'.format(input, output))
+
+    # open output file and create list
+    content_tmp = read_file(output)
+    front_matter = add_front_matter(content_tmp, file_path)
+
+    # rewrite `.md` file with front matter
+    with open(output, 'w') as f:
+
+        f.write(front_matter)
+        for l in content_tmp:
+            f.write(l)
     
+        f.close()
+
     return None
 
 
@@ -147,7 +167,7 @@ path = "/home/edward/Documents/Workspaces/imagej-net-conversion/imagej_mediawiki
 file_contents = read_file(path)
 output = process_file(path, file_contents)
 write_file(output, path)
-run_pandoc()
+run_pandoc(path)
 
 # generate front matter and add to post-pandoc file
 #fm = add_front_matter(file_contents, path)
