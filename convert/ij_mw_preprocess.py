@@ -131,21 +131,23 @@ def write_file(file_content, file_path):
 
     return None
 
-def run_pandoc(file_path):
-    
-    stream = os.popen('pwd')
-    output = stream.read()
-    print("This is the output: " + output)
+def run_pandoc():
+
+    input = "/home/edward/Documents/Development/Repos/LOCI/imagej.github.io/pages/test.mw"
+    output = "/home/edward/Documents/Development/Repos/LOCI/imagej.github.io/pages/test.md"
+
+    print("running pandoc...")
+    os.system('pandoc {0} -f mediawiki -t gfm -s -o {1}'.format(input, output))
     
     return None
 
 
-path = "/home/edward/Documents/Workspaces/imagej-net-conversion/imagej_mediawiki_source/3D_Viewer.mw"
-#path = "/home/edward/Documents/Workspaces/imagej-net-conversion/imagej_mediawiki_source/Architecture.mw"
+#path = "/home/edward/Documents/Workspaces/imagej-net-conversion/imagej_mediawiki_source/3D_Viewer.mw"
+path = "/home/edward/Documents/Workspaces/imagej-net-conversion/imagej_mediawiki_source/Architecture.mw"
 file_contents = read_file(path)
 output = process_file(path, file_contents)
-run_pandoc()
 write_file(output, path)
+run_pandoc()
 
 # generate front matter and add to post-pandoc file
-fm = add_front_matter(file_contents, path)
+#fm = add_front_matter(file_contents, path)
