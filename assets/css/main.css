@@ -2970,6 +2970,44 @@ input, select, textarea {
 		box-shadow: 4px 4px 4px #CCC;
 	}
 
+/* Details-box */
+
+	.details-box {
+		width: 50%;
+		float: right;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #f9f9f9;
+		border: 1px solid #a0a0a0;
+		margin: 0.5em 0 1em 1em;
+		overflow-x: hidden;
+		padding: 0.5em 1em 0.5em 1em;
+		white-space: -moz-pre-wrap; /* Firefox */
+		white-space: -o-pre-wrap; /* Opera */
+		white-space: pre-wrap; /* Chrome */
+		word-wrap: break-word; /* IE */
+	}
+
+	.details-box a {
+		padding: 0.5em 0 0 0;
+		text-decoration: none;
+		text-align: justify;
+		font-size: medium;
+		font-weight: 500;
+		color: #0014ca;
+		display: block;
+		border-bottom: none;
+		margin-bottom: 0;
+	}
+
+	.details-box p {
+		font-size: large;
+		text-align: justify;
+		font-weight: 500;
+		margin-bottom: 1em;
+	}
+
 /* Table */
 
 	.table-wrapper {
