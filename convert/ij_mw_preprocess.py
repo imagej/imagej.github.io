@@ -161,13 +161,9 @@ def run_pandoc(file_path):
 
     return None
 
-
-#path = "/home/edward/Documents/Workspaces/imagej-net-conversion/imagej_mediawiki_source/3D_Viewer.mw"
-path = "/home/edward/Documents/Workspaces/imagej-net-conversion/imagej_mediawiki_source/Architecture.mw"
+path = "/home/edward/Documents/Workspaces/imagej-net-conversion/imagej_mediawiki_source/3D_Viewer.mw"
+#path = "/home/edward/Documents/Workspaces/imagej-net-conversion/imagej_mediawiki_source/Architecture.mw"
 file_contents = read_file(path)
 output = process_file(path, file_contents)
 write_file(output, path)
 run_pandoc(path)
-
-# generate front matter and add to post-pandoc file
-#fm = add_front_matter(file_contents, path)
