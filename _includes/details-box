@@ -1,0 +1,30 @@
+{% capture details-content %}
+{% if project_name != blank %}
+Project: {{include.project_name | strip_newlines}}
+{% endif %}
+{% if url != blank %}
+URL: {{include.url | strip_newlines}}
+{% endif %}
+{% if source != blank %}
+Source: {{include.source | strip_newlines}}
+{% endif %}
+{% if license != blank %}
+License: {{include.license | strip_newlines}}
+{% endif %}
+{% if release != blank %}
+Release: {{include.release | strip_newlines}}
+{% endif %}
+{% if date != blank %}
+Date: {{include.date | strip_newlines}}
+{% endif %}
+{% if dev_stat != blank %}
+Development Status: {{include.dev_stat | strip_newlines}}
+{% endif %}
+{% if sup_stat != blank %}
+Support status: {{include.sup_stat | strip_newlines}}
+{% endif %}
+{% endcapture %}
+
+<div class="details-box" markdown="1">
+{{details-content}}
+</div>
