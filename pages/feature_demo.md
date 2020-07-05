@@ -7,6 +7,16 @@ categories: plugins, demo, help
 use_math: true
 description: This page is a feature demo.
 ---
+{% include details-box 
+project_name="PROJECT NAME"
+url="[http://www.wisc.edu](https://www.wisc.edu)"
+source="[on GitHub](https://github.com/imagej/imagej.github.io/tree/jekyll-prototype)"
+license="[GPLv3](https://imagej.net/GPLv3)"
+release="[0.2.5](localhost)"
+date="DATE"
+dev_stat = "Active"
+sup_stat = "Active"
+ %}
 
 {% include info-box content="Hey this is the info box! 
 
