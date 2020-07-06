@@ -7,16 +7,175 @@ categories: plugins, demo, help
 use_math: true
 description: This page is a feature demo.
 ---
-{% include details-box 
-project_name="PROJECT NAME"
+
+<center>
+<h1>Project details box</h1>
+<hr>
+</center>
+
+**A project details box can be created by including `details-box`, for example:**
+
+{% raw %}
+```
+{% include details-box
+title="Feature Demo" 
+project_name="ImageJ.net"
 url="[http://www.wisc.edu](https://www.wisc.edu)"
 source="[on GitHub](https://github.com/imagej/imagej.github.io/tree/jekyll-prototype)"
 license="[GPLv3](https://imagej.net/GPLv3)"
-release="[0.2.5](localhost)"
+release="[0.2.5](#)"
 date="DATE"
 dev_stat = "Active"
 sup_stat = "Active"
- %}
+team_founders = "name1, name2, name3, name4, name5"
+team_leads = ""
+team_devs = ""
+team_debug = ""
+team_review = ""
+team_support = ""
+team_maintain = ""
+team_contribute = ""
+%}
+```
+{% endraw %}
+
+**Not every field needs to be populated. Fields left as `""` are ignored and not generated on the page:**
+
+{% include details-box
+title="Feature Demo" 
+project_name="ImageJ.net"
+url="[http://www.wisc.edu](https://www.wisc.edu)"
+source="[on GitHub](https://github.com/imagej/imagej.github.io/tree/jekyll-prototype)"
+license="[GPLv3](https://imagej.net/GPLv3)"
+release="[0.2.5](#)"
+date="DATE"
+dev_stat = "Active"
+sup_stat = "Active"
+team_founders = "name1, name2, name3, name4, name5"
+team_leads = ""
+team_devs = ""
+team_debug = ""
+team_review = ""
+team_support = ""
+team_maintain = ""
+team_contribute = ""
+%}
+
+Lorem ipsum dolor sit amet, qui possit aeterno denique ea, te usu affert consequuntur, vix in utinam mentitum reformidans. Sed ea vidisse eripuit aliquid, no usu ullum dictas, an epicurei maluisset vix. Ne posse virtute impedit duo. Eos homero euripidis honestatis no.
+
+Sed ex magna honestatis, ea illud honestatis pri. Vix libris nemore suscipiantur cu. Offendit posidonium has ad, nec ad vocent maiorum consetetur. Vis ei iisque phaedrum atomorum, vis ea esse cetero. In est qualisque adipiscing reformidans, ut sint habeo libris quo.
+
+Mel tempor consetetur posidonium in, mei admodum mentitum ullamcorper cu. Ius no prima dolorum. Mea electram imperdiet adversarium in, vide reque ei sed. Ut duo putant dictas theophrastus. Ne vim etiam theophrastus, cu vel minimum detracto, modus possit phaedrum ius an. Noster nominavi persequeris has ex, brute mnesarchum intellegebat eu eum.
+
+Albucius eligendi est ei. Graeco alterum prodesset pro ad. Eum movet populo mediocrem ad, ut vix scaevola legendos tractatos. Omnes adolescens voluptatibus qui eu. Ut sea quando soluta qualisque, qui in simul reprehendunt, pro ei dico abhorreant. Ius amet munere erroribus te.
+
+Eum ei melius salutandi urbanitas, id duo modo discere dolorum. Tota nonumes ei vis, mea ne reque efficiantur, forensibus reprimique id duo. Ocurreret voluptaria in est, an sed nemore similique, affert aeterno recteque an nam. Porro integre detracto et sea, eum ne nulla ancillae intellegat. Ex dolorum referrentur cum, nec ei officiis convenire, ad vis cibo timeam.
+
+<center>
+<h1>Table of contents (TOC) -- Sidebar</h1>
+<hr>
+</center>
+
+<center>
+<h1>Images without legends</h1>
+<hr>
+</center>
+
+**Images can be added to your page by including `image-` with a location (_i.e._ `left`, `right`, `center` or `fit`) and the path to your image. For example here is a left aligned image with some text:**
+
+{% raw %}
+```
+{% include image-left name="spirals" image_path="/images/readme/spirals.png" %}
+```
+{% endraw %}
+
+{% include image-left name="spirals" image_path="/images/readme/spirals.png" %}
+
+Lorem ipsum dolor sit amet, qui possit aeterno denique ea, te usu affert consequuntur, vix in utinam mentitum reformidans. Sed ea vidisse eripuit aliquid, no usu ullum dictas, an epicurei maluisset vix. Ne posse virtute impedit duo. Eos homero euripidis honestatis no.
+
+Sed ex magna honestatis, ea illud honestatis pri. Vix libris nemore suscipiantur cu. Offendit posidonium has ad, nec ad vocent maiorum consetetur. Vis ei iisque phaedrum atomorum, vis ea esse cetero. In est qualisque adipiscing reformidans, ut sint habeo libris quo.
+
+Mel tempor consetetur posidonium in, mei admodum mentitum ullamcorper cu. Ius no prima dolorum. Mea electram imperdiet adversarium in, vide reque ei sed. Ut duo putant dictas theophrastus. Ne vim etiam theophrastus, cu vel minimum detracto, modus possit phaedrum ius an. Noster nominavi persequeris has ex, brute mnesarchum intellegebat eu eum.
+
+**Changing `image-left` to `image-right` moves the image from the left to the right:**
+
+{% raw %}
+```
+{% include image-right name="spirals" image_path="/images/readme/spirals.png" %}
+```
+{% endraw %}
+
+{% include image-right name="spirals" image_path="/images/readme/spirals.png" %}
+
+Albucius eligendi est ei. Graeco alterum prodesset pro ad. Eum movet populo mediocrem ad, ut vix scaevola legendos tractatos. Omnes adolescens voluptatibus qui eu. Ut sea quando soluta qualisque, qui in simul reprehendunt, pro ei dico abhorreant. Ius amet munere erroribus te.
+
+Eum ei melius salutandi urbanitas, id duo modo discere dolorum. Tota nonumes ei vis, mea ne reque efficiantur, forensibus reprimique id duo. Ocurreret voluptaria in est, an sed nemore similique, affert aeterno recteque an nam. Porro integre detracto et sea, eum ne nulla ancillae intellegat. Ex dolorum referrentur cum, nec ei officiis convenire, ad vis cibo timeam.
+
+<center>
+<h1>Images with legends</h1>
+<hr>
+</center>
+
+**Images can be added with an accompanying legend text by including `figure-` followed by a location (_e.g._ `left`, `right` and `center`) as well as a `content` variable for the legend text. For example, an image with a legened (or a "figure") can be added to the left of the text:**
+
+{% raw %}
+```
+{% include figure-left name="spiral left" image_path="/images/readme/spirals.png" content="**Figure 1**: This is a left figure." %}
+
+```
+{% endraw %}
+
+{% include figure-left name="place holder image" image_path="/images/readme/spirals.png" content="**Figure 1**: This is a left figure." %}
+
+Lorem ipsum dolor sit amet, qui possit aeterno denique ea, te usu affert consequuntur, vix in utinam mentitum reformidans. Sed ea vidisse eripuit aliquid, no usu ullum dictas, an epicurei maluisset vix. Ne posse virtute impedit duo. Eos homero euripidis honestatis no.
+
+Sed ex magna honestatis, ea illud honestatis pri. Vix libris nemore suscipiantur cu. Offendit posidonium has ad, nec ad vocent maiorum consetetur. Vis ei iisque phaedrum atomorum, vis ea esse cetero. In est qualisque adipiscing reformidans, ut sint habeo libris quo.
+
+Mel tempor consetetur posidonium in, mei admodum mentitum ullamcorper cu. Ius no prima dolorum. Mea electram imperdiet adversarium in, vide reque ei sed. Ut duo putant dictas theophrastus. Ne vim etiam theophrastus, cu vel minimum detracto, modus possit phaedrum ius an. Noster nominavi persequeris has ex, brute mnesarchum intellegebat eu eum.
+
+Albucius eligendi est ei. Graeco alterum prodesset pro ad. Eum movet populo mediocrem ad, ut vix scaevola legendos tractatos. Omnes adolescens voluptatibus qui eu. Ut sea quando soluta qualisque, qui in simul reprehendunt, pro ei dico abhorreant. Ius amet munere erroribus te.
+
+Eum ei melius salutandi urbanitas, id duo modo discere dolorum. Tota nonumes ei vis, mea ne reque efficiantur, forensibus reprimique id duo. Ocurreret voluptaria in est, an sed nemore similique, affert aeterno recteque an nam. Porro integre detracto et sea, eum ne nulla ancillae intellegat. Ex dolorum referrentur cum, nec ei officiis convenire, ad vis cibo timeam.
+
+**Or to the right of the text:**
+
+{% raw %}
+```
+{% include figure-right name="place holder image" image_path="/images/readme/spirals.png" content="**Figure 2** : This is a right figure." %}
+```
+{% endraw %}
+
+{% include figure-right name="place holder image" image_path="/images/readme/spirals.png" content="**Figure 2** : This is a right figure." %}
+
+Lorem ipsum dolor sit amet, qui possit aeterno denique ea, te usu affert consequuntur, vix in utinam mentitum reformidans. Sed ea vidisse eripuit aliquid, no usu ullum dictas, an epicurei maluisset vix. Ne posse virtute impedit duo. Eos homero euripidis honestatis no.
+
+Sed ex magna honestatis, ea illud honestatis pri. Vix libris nemore suscipiantur cu. Offendit posidonium has ad, nec ad vocent maiorum consetetur. Vis ei iisque phaedrum atomorum, vis ea esse cetero. In est qualisque adipiscing reformidans, ut sint habeo libris quo.
+
+Mel tempor consetetur posidonium in, mei admodum mentitum ullamcorper cu. Ius no prima dolorum. Mea electram imperdiet adversarium in, vide reque ei sed. Ut duo putant dictas theophrastus. Ne vim etiam theophrastus, cu vel minimum detracto, modus possit phaedrum ius an. Noster nominavi persequeris has ex, brute mnesarchum intellegebat eu eum.
+
+Albucius eligendi est ei. Graeco alterum prodesset pro ad. Eum movet populo mediocrem ad, ut vix scaevola legendos tractatos. Omnes adolescens voluptatibus qui eu. Ut sea quando soluta qualisque, qui in simul reprehendunt, pro ei dico abhorreant. Ius amet munere erroribus te.
+
+Eum ei melius salutandi urbanitas, id duo modo discere dolorum. Tota nonumes ei vis, mea ne reque efficiantur, forensibus reprimique id duo. Ocurreret voluptaria in est, an sed nemore similique, affert aeterno recteque an nam. Porro integre detracto et sea, eum ne nulla ancillae intellegat. Ex dolorum referrentur cum, nec ei officiis convenire, ad vis cibo timeam.
+
+<center>
+<h1>Information/Warning/Tech boxes</h1>
+<hr>
+</center>
+
+**Information and warning boxes allow you to notify the reader of something important details to keep in mind. To use the information and warning boxes, include them in your markdown document, and utilize the `content` variable to contain your text. For example:**
+
+{% raw %}
+```
+{% include info-box content="Hey this is the info box! 
+
+- item 1
+- item 2
+
+If you want to learn more about how to create an info box, view the source of this page! Such wow!" %}
+```
+{% endraw %}
+
+**Creates:**
 
 {% include info-box content="Hey this is the info box! 
 
@@ -24,6 +183,78 @@ sup_stat = "Active"
 - item 2
 
 If you want to learn more about how to create an info box, view the source of this page! Such wow!" %}
+
+**Note that you can still use markdown inside the `""` where your text is placed. In this example I'm using markdown to create a list inside the information box.**
+
+**A warning box can be created like this:**
+
+{% raw %}
+```
+{% include warning-box content="Stop! This is an important message! Did you check out the plugins categories page? What do you think? Make sure you wash your hands! Okay please continue reading.
+" %}
+```
+{% endraw %}
+
+{% include warning-box content="Stop! This is an important message! Did you check out the plugins categories page? What do you think? Make sure you wash your hands! Okay please continue reading.
+" %}
+
+**You can also use a tech-box to highlight a technology:**
+
+{% raw %}
+```
+{% include tech-box content="Wait stop! There's some tech going on here!
+
+- Tech item 1
+- Tech item 2
+- Tech item 3
+
+" %}
+```
+{% endraw %}
+
+{% include tech-box content="Wait stop! There's some tech going on here!
+
+- Tech item 1
+- Tech item 2
+- Tech item 3
+
+" %}
+
+<center>
+<h1>Left/Right sidebox</h1>
+<hr>
+</center>
+
+**Sideboxes on the left or right of a body of text can be added easily by including `sidebox-right` or `sidebox-left`. Here's a box on the right:**
+
+{% include sidebox-right content="Hey this is the sidebox-right style!" %}
+
+Lorem ipsum dolor sit amet, qui possit aeterno denique ea, te usu affert consequuntur, vix in utinam mentitum reformidans. Sed ea vidisse eripuit aliquid, no usu ullum dictas, an epicurei maluisset vix. Ne posse virtute impedit duo. Eos homero euripidis honestatis no.
+
+Sed ex magna honestatis, ea illud honestatis pri. Vix libris nemore suscipiantur cu. Offendit posidonium has ad, nec ad vocent maiorum consetetur. Vis ei iisque phaedrum atomorum, vis ea esse cetero. In est qualisque adipiscing reformidans, ut sint habeo libris quo.
+
+Mel tempor consetetur posidonium in, mei admodum mentitum ullamcorper cu. Ius no prima dolorum. Mea electram imperdiet adversarium in, vide reque ei sed. Ut duo putant dictas theophrastus. Ne vim etiam theophrastus, cu vel minimum detracto, modus possit phaedrum ius an. Noster nominavi persequeris has ex, brute mnesarchum intellegebat eu eum.
+
+**And here's a box on the left:**
+
+{% include sidebox-left content="Oh wow!! This is the sidebox-left style! Fantastic!" %}
+
+Albucius eligendi est ei. Graeco alterum prodesset pro ad. Eum movet populo mediocrem ad, ut vix scaevola legendos tractatos. Omnes adolescens voluptatibus qui eu. Ut sea quando soluta qualisque, qui in simul reprehendunt, pro ei dico abhorreant. Ius amet munere erroribus te.
+
+Eum ei melius salutandi urbanitas, id duo modo discere dolorum. Tota nonumes ei vis, mea ne reque efficiantur, forensibus reprimique id duo. Ocurreret voluptaria in est, an sed nemore similique, affert aeterno recteque an nam. Porro integre detracto et sea, eum ne nulla ancillae intellegat. Ex dolorum referrentur cum, nec ei officiis convenire, ad vis cibo timeam.
+
+<center>
+<h1>Math eqations</h1>
+<hr>
+</center>
+
+Note, Because MathJax 3 broke support for MathJax 2 style equations parsed by Kramdown, equations are only recognized by the `$$` tag.
+
+When $$a \ne 0$$ , there are two solutions to $$(ax^2 + bx + c = 0)$$ and they are
+
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
+
+Wow such pretty math!
 
 
 {% include sidebar title="Demo" content="Introduction, |, Left image, Right image, Center image, Fit image, Figure left, Figure right,Figure center, Figure row, Markdown table, YouTube video, Embedded images in table, Math equations, Sidebox, Syntax highlighting, Menu breadcrumbs" %}
@@ -34,58 +265,6 @@ If you want to learn more about how to create an info box, view the source of th
 While in Clojure one is able to declare types if desired, it's not required; the low computational requirements of the plugin do not invite to make it verbose unnecessarily. But java demands type declarations just so that the plugin can be compiled and thus a binary .class file generated.
 
 While in Clojure one is able to declare types if desired, it's not required; the low computational requirements of the plugin do not invite to make it verbose unnecessarily. But java demands type declarations just so that the plugin can be compiled and thus a binary .class file generated.
-
-{% include anchor content="Left image" %}
-
-{% include image-left name="spirals" image_path="/images/readme/spirals.png" %}
-
-While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
-
-While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
-
-{% include anchor content="Right image" %}
-
-{% include image-right name="place holder image" image_path="/images/placeholder.png" %}
-
-While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
-
-{% include anchor content="Center image" %}
-
-{% include image-center name="place holder image" image_path="/images/placeholder.png" %}
-
-While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
-
-{% include tech-box content="Wait stop! There's some tech going on here!
-
-- Tech item 1
-- Tech item 2
-- Tech item 3
-
-" %}
-
-{% include anchor content="Fit image" %}
-
-{% include image-fit name="place holder image" image_path="/images/placeholder.png" %}
-
-While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
-
-{% include anchor content="Figure left" %}
-
-{% include figure-left name="place holder image" image_path="/images/placeholder.png" content="**Figure 1**: This is a left figure." %}
-
-While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
-
-While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
-
-{% include anchor content="Figure right" %}
-
-{% include figure-right name="place holder image" image_path="/images/readme/spirals.png" content="**Figure 2** : This is a right figure." %}
-
-While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
-
-While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
-
-While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
 
 {% include anchor content="Figure center" %}
 
@@ -124,27 +303,6 @@ A table with images, use the .image.table to make it align with text:
 | :---: | :---: |
 |![Plugins]({{"/images/icons/plugins_icon.png" | relative_url}}){: .image.table} | A powerful mechanism for extending ImageJ in all kinds of useful ways. 
 | ![Extend]({{"/images/icons/extend_icon.png" | relative_url}}){: .image.table} | Automated, reproducible workflows via scripts and macros, including headless on a remote server or cluster. |
-
-{% include anchor content="Math equations" %}
-
-When $$a \ne 0$$ , there are two solutions to $$(ax^2 + bx + c = 0)$$ and they are
-
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
-
-Wow such pretty math!
-
-{% include anchor content="Sidebox" %}
-
-{% include sidebox-right content="Hey this is the sidebox-right style!" %}
-
-While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
-
-{% include sidebox-left content="Oh wow!! This is the sidebox-left style! Fantastic!" %}
-
-While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using let statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not required as in java, neither as natural and straightforward as in Clojure.
-
-{% include warning-box content="Stop! This is an important message! Did you check out the plugins categories page? What do you think? Make sure you wash your hands! Okay please continue reading.
-" %}
 
 {% include anchor content="Syntax highlighting" %}
 
