@@ -1,30 +1,34 @@
 {% capture details-content %}
-{% if project_name != blank %}
-Project: {{include.project_name | strip_newlines}}
+{% if include.project_name != "" %}
+| **Project:** | {{include.project_name | strip_newlines}}
 {% endif %}
-{% if url != blank %}
-URL: {{include.url | strip_newlines}}
+{% if include.url != "" %}
+| **URL:** | {{include.url | strip_newlines}}
 {% endif %}
-{% if source != blank %}
-Source: {{include.source | strip_newlines}}
+{% if include.source != "" %}
+| **Source:** | {{include.source | strip_newlines}}
 {% endif %}
-{% if license != blank %}
-License: {{include.license | strip_newlines}}
+{% if include.license != "" %}
+| **License:** | {{include.license | strip_newlines}}
 {% endif %}
-{% if release != blank %}
-Release: {{include.release | strip_newlines}}
+{% if include.release != "" %}
+| **Release:** | {{include.release | strip_newlines}}
 {% endif %}
-{% if date != blank %}
-Date: {{include.date | strip_newlines}}
+{% if include.date != "" %}
+| **Date:** | {{include.date | strip_newlines}}
 {% endif %}
-{% if dev_stat != blank %}
-Development Status: {{include.dev_stat | strip_newlines}}
+{% if include.dev_stat != "" %}
+| **Development Status:** | {{include.dev_stat | strip_newlines}}
 {% endif %}
-{% if sup_stat != blank %}
-Support status: {{include.sup_stat | strip_newlines}}
+{% if include.sup_stat != "" %}
+| **Support status:** | {{include.sup_stat | strip_newlines}}
+{% endif %}
+{% if include.team_founders != "" %}
+| **Founders:** | {{include.team_founders | strip_newlines}}
 {% endif %}
 {% endcapture %}
 
 <div class="details-box" markdown="1">
+<center><strong><h3>{{include.title}}</h3></strong></center>
 {{details-content}}
 </div>
