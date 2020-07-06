@@ -2973,7 +2973,7 @@ input, select, textarea {
 /* Details-box */
 
 	.details-box {
-		width: 50%;
+		max-width: 50%;
 		float: right;
 		z-index: 1;
 		top: 0;
@@ -2983,10 +2983,6 @@ input, select, textarea {
 		margin: 0.5em 0 1em 1em;
 		overflow-x: hidden;
 		padding: 0.5em 1em 0.5em 1em;
-		white-space: -moz-pre-wrap; /* Firefox */
-		white-space: -o-pre-wrap; /* Opera */
-		white-space: pre-wrap; /* Chrome */
-		word-wrap: break-word; /* IE */
 	}
 
 	.details-box a {
@@ -2996,7 +2992,7 @@ input, select, textarea {
 		font-size: medium;
 		font-weight: 500;
 		color: #0014ca;
-		display: block;
+		display: inline-block;
 		border-bottom: none;
 		margin-bottom: 0;
 	}
@@ -3005,7 +3001,11 @@ input, select, textarea {
 		font-size: large;
 		text-align: justify;
 		font-weight: 500;
-		margin-bottom: 1em;
+		padding: 0.5em 0 0 0;
+		text-decoration: none;
+		font-size: medium;
+		display: block;
+		margin: 0 0 0 0;
 	}
 
 /* Table */
