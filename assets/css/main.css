@@ -2985,8 +2985,25 @@ input, select, textarea {
 		padding: 0.5em 1em 0.5em 1em;
 	}
 
+	.details-box table {
+		background-color: #f9f9f9;
+		border-collapse: collapse;
+		table-layout: fixed;
+		width: 100%;
+		text-align: left;
+	}
+
+	.details-box tbody {
+		background-color: #f9f9f9;
+		text-align: left;
+	}re
+
+	.details-box tr {
+		text-align: left;
+	}
+
 	.details-box a {
-		padding: 0.5em 0 0 0;
+		padding: 0.1em 0 0 0;
 		text-decoration: none;
 		text-align: justify;
 		font-size: medium;
@@ -3001,7 +3018,7 @@ input, select, textarea {
 		font-size: large;
 		text-align: justify;
 		font-weight: 500;
-		padding: 0.5em 0 0 0;
+		padding: 0.1em 0 0 0;
 		text-decoration: none;
 		font-size: medium;
 		display: block;
