@@ -1,0 +1,5 @@
+- [ ] Add descriptions to category pages
+- [ ] TOC needs to be automatic -- allejo
+- [ ] Preserve `h` headings from mediawiki
+- [ ] Investigate how to move over to gfm versus kramdown
+- [ ] Add scanning skip, don't worry about formating
