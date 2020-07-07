@@ -146,9 +146,6 @@ def run_pandoc(path_in, path_out):
     # rewrite `.md` file with front matter
     with open(path_out, 'w') as f:
         f.write(front_matter)
-        for l in content_tmp:
-            f.write(l)
-
         f.close()
 
     return None
