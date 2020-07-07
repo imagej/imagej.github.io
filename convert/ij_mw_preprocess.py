@@ -115,17 +115,15 @@ def add_front_matter(str_content, file_path):
 
     return front_matter_content
 
-def write_file(file_content, file_path):
-
+def write_file(file_content, path_out):
     # TODO: Expose current file/save path to `run_pandoc`
 
     # write file out
-    save_path = "/home/edward/Documents/Development/Repos/LOCI/imagej.github.io/pages/"
-    file_name = "test.mw"
-    complete_name = os.path.join(save_path, file_name)
+    # save_path = "/home/edward/Documents/Development/Repos/LOCI/imagej.github.io/pages/"
+    # file_name = "test.mw"
+    # complete_name = os.path.join(save_path, file_name)
 
-    with open(complete_name, 'w') as f:
-
+    with open(path_out, 'w') as f:
         for e in file_content:
             f.write(e)
 
@@ -133,37 +131,24 @@ def write_file(file_content, file_path):
 
     return None
 
-def run_pandoc(file_path):
 
-    # TODO: Sense current file/save path from `write_file`.
-
+def run_pandoc(path_in, path_out):
     # determine current file name:
-    current_file = get_name(file_path) + ".mw"
-
-    input = "/home/edward/Documents/Development/Repos/LOCI/imagej.github.io/pages/test.mw"
-    output = "/home/edward/Documents/Development/Repos/LOCI/imagej.github.io/pages/test.md"
+    current_file = get_name(path_in) + ".mw"
 
     print("running pandoc on file: {0}".format(current_file))
-    os.system('pandoc {0} -f mediawiki -t gfm -s -o {1}'.format(input, output))
+    os.system('pandoc {0} -f mediawiki -t gfm -s -o {1}'.format(path_in, path_out))
 
     # open output file and create list
-    content_tmp = read_file(output)
-    front_matter = add_front_matter(content_tmp, file_path)
+    content_tmp = read_file(path_out)
+    front_matter = add_front_matter(content_tmp, path_in)
 
     # rewrite `.md` file with front matter
-    with open(output, 'w') as f:
-
+    with open(path_out, 'w') as f:
         f.write(front_matter)
         for l in content_tmp:
             f.write(l)
-    
+
         f.close()
 
     return None
-
-path = "/home/edward/Documents/Workspaces/imagej-net-conversion/imagej_mediawiki_source/3D_Viewer.mw"
-#path = "/home/edward/Documents/Workspaces/imagej-net-conversion/imagej_mediawiki_source/Architecture.mw"
-file_contents = read_file(path)
-output = process_file(path, file_contents)
-write_file(output, path)
-run_pandoc(path)
