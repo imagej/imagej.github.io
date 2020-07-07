@@ -14,9 +14,3 @@ website](http://bigwww.epfl.ch/thevenaz/stackreg/).
 [Category:Plugins](Category:Plugins "wikilink")
 [Category:Transform](Category:Transform "wikilink")
 [Category:Registration](Category:Registration "wikilink")
-This plugin is described in detail on the [BIG
-website](http://bigwww.epfl.ch/thevenaz/stackreg/).
-
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Transform](Category:Transform "wikilink")
-[Category:Registration](Category:Registration "wikilink")

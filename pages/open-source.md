@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Open Source](Open_Source "wikilink")
-1.  REDIRECT [Open Source](Open_Source "wikilink")

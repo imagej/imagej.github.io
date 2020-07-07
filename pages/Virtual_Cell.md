@@ -19,14 +19,3 @@ A VCell plugin for ImageJ is currently in the works\! Stay tuned\!
 [Category:Related Software](Category:Related_Software "wikilink")
 [Category:SciJava](Category:SciJava "wikilink")
 [Category:Citable](Category:Citable "wikilink")
-Virtual Cell (VCell for short) is a modeling and simulation environment
-for cell biology.
-
-A VCell plugin for ImageJ is currently in the works\! Stay tuned\!
-
-## Publication
-
-  - 
-[Category:Related Software](Category:Related_Software "wikilink")
-[Category:SciJava](Category:SciJava "wikilink")
-[Category:Citable](Category:Citable "wikilink")

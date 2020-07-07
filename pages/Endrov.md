@@ -16,11 +16,3 @@ and data processing.
   - 
 [Category:Related Software](Category:Related_Software "wikilink")
 [Category:Citable](Category:Citable "wikilink")
-Endrov is an open-source plugin architecture aimed for image analysis
-and data processing.
-
-## Publication
-
-  - 
-[Category:Related Software](Category:Related_Software "wikilink")
-[Category:Citable](Category:Citable "wikilink")

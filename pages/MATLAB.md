@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [MATLAB Scripting](MATLAB_Scripting "wikilink")
-1.  REDIRECT [MATLAB Scripting](MATLAB_Scripting "wikilink")

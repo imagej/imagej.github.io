@@ -9,4 +9,3 @@ description: test description
 ---
 
 FIXME: write some documentation for this plugin
-FIXME: write some documentation for this plugin

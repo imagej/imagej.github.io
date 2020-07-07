@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Citing](Citing "wikilink")
-1.  REDIRECT [Citing](Citing "wikilink")

@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Adding new formats](Adding_new_formats "wikilink")
-1.  REDIRECT [Adding new formats](Adding_new_formats "wikilink")

@@ -10,5 +10,3 @@ description: test description
 
 See the [Biopolis Dresden Imaging Platform
 project](http://www.biodip.de/wiki/Biopolis_Dresden_Imaging_Platform).
-See the [Biopolis Dresden Imaging Platform
-project](http://www.biodip.de/wiki/Biopolis_Dresden_Imaging_Platform).

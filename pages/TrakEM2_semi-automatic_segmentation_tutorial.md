@@ -17,12 +17,3 @@ use the green arrows to go forward and backward in the slide-show.
 [Category:Segmentation](Category:Segmentation "wikilink")
 [Category:TrakEM2](Category:TrakEM2 "wikilink")
 [Category:Tutorials](Category:Tutorials "wikilink")
-This video tutorial was made by Javier Cabrera-Chaves and edited by 
-using [Wink 1.5 for linux](http://www.debugmode.com/wink/). To navigate,
-use the green arrows to go forward and backward in the slide-show.
-
-{{\#widget:flash|width=993|height=776|swf=9/92/TrakEM2-FastMarching.swf}}
-
-[Category:Segmentation](Category:Segmentation "wikilink")
-[Category:TrakEM2](Category:TrakEM2 "wikilink")
-[Category:Tutorials](Category:Tutorials "wikilink")

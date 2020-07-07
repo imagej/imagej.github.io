@@ -20,15 +20,3 @@ work is changed or added to.
 See the [Wikipedia article on the
 GPL](wikipedia:GNU_General_Public_License "wikilink") for more
 information.
-\_\_NOTOC\_\_ The **GNU General Public License** is a free,
-**[copyleft](wikipedia:Copyleft "wikilink")** [open
-source](open_source "wikilink") license for software and other kinds of
-works. This is in contrast to **permissive** licenses like
-[BSD](BSD "wikilink"), which impose minimal restrictions on the
-redistribution of covered software. The GPL ensures that granted
-freedoms are preserved whenever the work is distributed, even when the
-work is changed or added to.
-
-See the [Wikipedia article on the
-GPL](wikipedia:GNU_General_Public_License "wikilink") for more
-information.

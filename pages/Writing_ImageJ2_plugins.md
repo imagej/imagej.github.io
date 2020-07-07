@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Writing plugins](Writing_plugins "wikilink")
-1.  REDIRECT [Writing plugins](Writing_plugins "wikilink")

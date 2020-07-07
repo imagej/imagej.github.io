@@ -10,5 +10,3 @@ description: test description
 
 The statistics for website visits and ImageJ updates are aggregated into
 a publicly viewable form at the following URL:
-The statistics for website visits and ImageJ updates are aggregated into
-a publicly viewable form at the following URL:

@@ -15,10 +15,3 @@ description: test description
   - 
 [Category:Related Software](Category:Related_Software "wikilink")
 [Category:Citable](Category:Citable "wikilink")
-μManager is a software package for control of automated microscopes.
-
-## Publication
-
-  - 
-[Category:Related Software](Category:Related_Software "wikilink")
-[Category:Citable](Category:Citable "wikilink")

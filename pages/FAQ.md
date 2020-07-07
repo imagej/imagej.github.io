@@ -10,5 +10,3 @@ description: test description
 
 1.  REDIRECT [Frequently Asked
     Questions](Frequently_Asked_Questions "wikilink")
-1.  REDIRECT [Frequently Asked
-    Questions](Frequently_Asked_Questions "wikilink")

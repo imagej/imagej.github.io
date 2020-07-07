@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Image Stitching](Image_Stitching "wikilink")
-1.  REDIRECT [Image Stitching](Image_Stitching "wikilink")

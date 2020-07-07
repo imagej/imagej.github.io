@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Coloc 2](Coloc_2 "wikilink")
-1.  REDIRECT [Coloc 2](Coloc_2 "wikilink")

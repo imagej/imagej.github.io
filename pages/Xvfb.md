@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Headless\#Xvfb](Headless#Xvfb "wikilink")
-1.  REDIRECT [Headless\#Xvfb](Headless#Xvfb "wikilink")

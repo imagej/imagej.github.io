@@ -15,10 +15,3 @@ projects have transitioned to [Travis CI](Travis_CI "wikilink") and
 [AppVeyor](AppVeyor "wikilink") for CI services.
 
 [Category:Development](Category:Development "wikilink")
-ImageJ had a Jenkins server: a continuous integration system which
-automatically checked the code for build and test errors. As of 2019,
-the [ImageJ](ImageJ "wikilink") and [SciJava](SciJava "wikilink")
-projects have transitioned to [Travis CI](Travis_CI "wikilink") and
-[AppVeyor](AppVeyor "wikilink") for CI services.
-
-[Category:Development](Category:Development "wikilink")

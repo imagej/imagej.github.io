@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Java Options](Java_Options "wikilink")
-1.  REDIRECT [Java Options](Java_Options "wikilink")

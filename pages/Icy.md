@@ -17,12 +17,3 @@ software resources to visualize, annotate and quantify bioimaging data.
 [Category:Related Software](Category:Related_Software "wikilink")
 [Category:SciJava](Category:SciJava "wikilink")
 [Category:Citable](Category:Citable "wikilink")
-Icy is an open community platform for bioimage informatics, providing
-software resources to visualize, annotate and quantify bioimaging data.
-
-## Publication
-
-  - 
-[Category:Related Software](Category:Related_Software "wikilink")
-[Category:SciJava](Category:SciJava "wikilink")
-[Category:Citable](Category:Citable "wikilink")

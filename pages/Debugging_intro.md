@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Debugging](Debugging "wikilink")
-1.  REDIRECT [Debugging](Debugging "wikilink")

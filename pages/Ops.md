@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [ImageJ Ops](ImageJ_Ops "wikilink")
-1.  REDIRECT [ImageJ Ops](ImageJ_Ops "wikilink")

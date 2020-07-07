@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [JavaScript Scripting](JavaScript_Scripting "wikilink")
-1.  REDIRECT [JavaScript Scripting](JavaScript_Scripting "wikilink")

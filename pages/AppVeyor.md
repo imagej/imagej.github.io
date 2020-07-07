@@ -24,19 +24,3 @@ Launcher](https://ci.appveyor.com/project/scijava/imagej-launcher)
 build.
 
 [Category:Development](Category:Development "wikilink")
-[AppVeyor](https://ci.appveyor.com/) is a tool for [continuous
-integration](Project_management#Continuous_integration "wikilink") on
-[Windows](Windows "wikilink") platforms. It is very useful for
-automating builds, deployment and other tasks. 
-
-# Services
-
-Most [ImageJ](ImageJ "wikilink") and [SciJava](SciJava "wikilink")
-builds use [Travis CI](Travis_CI "wikilink"). However, for
-Windows-specific builds, AppVeyor is used.
-
-See e.g. the [ImageJ
-Launcher](https://ci.appveyor.com/project/scijava/imagej-launcher)
-build.
-
-[Category:Development](Category:Development "wikilink")

@@ -16,11 +16,3 @@ See also [scripting-renjin on
 GitHub](https://github.com/scijava/scripting-renjin).
 
 [Category:Scripting](Category:Scripting "wikilink")
-A thin wrapper around [Renjin](http://www.renjin.org/) is currently
-available on the , providing
-[R-styled](https://www.r-project.org/about.html) scripting in ImageJ.
-
-See also [scripting-renjin on
-GitHub](https://github.com/scijava/scripting-renjin).
-
-[Category:Scripting](Category:Scripting "wikilink")

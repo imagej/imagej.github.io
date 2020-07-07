@@ -20,15 +20,3 @@ update site.
 [Category:Plugins](Category:Plugins "wikilink")
 [Category:Tracking](Category:Tracking "wikilink")
 [Category:ImageScience](Category:ImageScience "wikilink")
-[MTrackJ](http://www.imagescience.org/meijering/software/mtrackj/) is an
-ImageJ plugin to facilitate motion tracking and analysis.
-
-The plugin can handle up to five-dimensional (5D) images of any type
-supported by ImageJ.
-
-MTrackJ is available from the [ImageScience](ImageScience "wikilink")
-update site.
-
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Tracking](Category:Tracking "wikilink")
-[Category:ImageScience](Category:ImageScience "wikilink")

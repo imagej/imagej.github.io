@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Getting started](Getting_started "wikilink")
-1.  REDIRECT [Getting started](Getting_started "wikilink")

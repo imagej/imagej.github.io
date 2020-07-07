@@ -10,5 +10,3 @@ description: test description
 
 1.  REDIRECT
     [Fiji/Downloads\#Installation](Fiji/Downloads#Installation "wikilink")
-1.  REDIRECT
-    [Fiji/Downloads\#Installation](Fiji/Downloads#Installation "wikilink")

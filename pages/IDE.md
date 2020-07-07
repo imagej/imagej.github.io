@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [IDEs](IDEs "wikilink")
-1.  REDIRECT [IDEs](IDEs "wikilink")

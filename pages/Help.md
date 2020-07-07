@@ -34,29 +34,3 @@ If you have found a bug, you can help the project by [reporting
 it](Report_a_Bug "wikilink").
 
 [Category:Help](Category:Help "wikilink")
-The ImageJ community firmly believes in public discussion of the
-software. In this way, each question benefits not only the one asking,
-but everyone in the community, including everyone who subsequently does
-a [web search](http://search.imagej.net/) on the same topic.
-
-# Searching ImageJ resources
-
-There is a convenient online search interface:
-
-# Getting help with ImageJ
-
-## Ways to get help
-
-There are several popular communication channels: 
-
-# Troubleshooting
-
-If you encounter problems, check the
-[Troubleshooting](Troubleshooting "wikilink") page.
-
-# Reporting bugs
-
-If you have found a bug, you can help the project by [reporting
-it](Report_a_Bug "wikilink").
-
-[Category:Help](Category:Help "wikilink")

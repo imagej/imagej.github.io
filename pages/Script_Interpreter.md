@@ -30,25 +30,3 @@ Start it via  or by typing -.
 The Script Interpreter is under active development. Currently,
 [Groovy](Groovy "wikilink") works fine, but there some issues with other
 scripting languages.
-The **Script Interpreter** is a
-[REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)
-allowing scripting from the command line.
-
-## Getting Started
-
-Start it via  or by typing -.
-
-![Script\_Interpreter.png](Script_Interpreter.png
-"Script_Interpreter.png")
-
-## Usage
-
-### Get the active dataset
-
-### Run an op
-
-## Issues
-
-The Script Interpreter is under active development. Currently,
-[Groovy](Groovy "wikilink") works fine, but there some issues with other
-scripting languages.

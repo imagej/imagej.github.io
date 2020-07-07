@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Introduction](Introduction "wikilink")
-1.  REDIRECT [Introduction](Introduction "wikilink")

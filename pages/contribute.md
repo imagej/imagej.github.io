@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Contributing](Contributing "wikilink")
-1.  REDIRECT [Contributing](Contributing "wikilink")

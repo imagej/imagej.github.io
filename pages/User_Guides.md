@@ -11,6 +11,3 @@ description: test description
 <div style="display: table">
 
 </div>
-<div style="display: table">
-
-</div>

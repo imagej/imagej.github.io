@@ -10,5 +10,3 @@ description: test description
 
 1.  REDIRECT [Colocalization
     Analysis](Colocalization_Analysis "wikilink")
-1.  REDIRECT [Colocalization
-    Analysis](Colocalization_Analysis "wikilink")

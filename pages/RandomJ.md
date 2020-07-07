@@ -16,11 +16,3 @@ update site.
 
 [Category:Plugins](Category:Plugins "wikilink")
 [Category:ImageScience](Category:ImageScience "wikilink")
-The [RandomJ](http://imagescience.org/meijering/software/randomj/) suite
-of plugins offers sophisticated application of noise to images.
-
-RandomJ is available from the [ImageScience](ImageScience "wikilink")
-update site.
-
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:ImageScience](Category:ImageScience "wikilink")

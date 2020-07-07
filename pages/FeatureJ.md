@@ -16,11 +16,3 @@ update site.
 
 [Category:Plugins](Category:Plugins "wikilink")
 [Category:ImageScience](Category:ImageScience "wikilink")
-The [FeatureJ](http://imagescience.org/meijering/software/featurej/)
-suite of plugins offers extraction of differential features of images.
-
-FeatureJ is available from the [ImageScience](ImageScience "wikilink")
-update site.
-
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:ImageScience](Category:ImageScience "wikilink")

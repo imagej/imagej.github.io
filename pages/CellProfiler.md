@@ -20,15 +20,3 @@ measure phenotypes from thousands of images automatically.
 [Category:Related Software](Category:Related_Software "wikilink")
 [Category:SciJava](Category:SciJava "wikilink")
 [Category:Citable](Category:Citable "wikilink")
-CellProfiler is free open-source software designed to enable biologists
-without training in computer vision or programming to quantitatively
-measure phenotypes from thousands of images automatically.
-
-## Publications
-
-  - 
-  - 
-  - 
-[Category:Related Software](Category:Related_Software "wikilink")
-[Category:SciJava](Category:SciJava "wikilink")
-[Category:Citable](Category:Citable "wikilink")

@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [MBF Plugin Collection](MBF_Plugin_Collection "wikilink")
-1.  REDIRECT [MBF Plugin Collection](MBF_Plugin_Collection "wikilink")

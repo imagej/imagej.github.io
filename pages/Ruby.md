@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [JRuby Scripting](JRuby_Scripting "wikilink")
-1.  REDIRECT [JRuby Scripting](JRuby_Scripting "wikilink")

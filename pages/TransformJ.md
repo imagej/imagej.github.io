@@ -17,12 +17,3 @@ update site.
 
 [Category:Plugins](Category:Plugins "wikilink")
 [Category:ImageScience](Category:ImageScience "wikilink")
-The [TransformJ](http://imagescience.org/meijering/software/transformj/)
-suite of plugins offers geometrical image transformation and
-manipulation.
-
-TransformJ is available from the [ImageScience](ImageScience "wikilink")
-update site.
-
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:ImageScience](Category:ImageScience "wikilink")

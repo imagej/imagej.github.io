@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Update Fiji](Update_Fiji "wikilink")
-1.  REDIRECT [Update Fiji](Update_Fiji "wikilink")

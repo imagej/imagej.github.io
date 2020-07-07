@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [SNT](SNT "wikilink")
-1.  REDIRECT [SNT](SNT "wikilink")

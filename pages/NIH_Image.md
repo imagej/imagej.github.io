@@ -19,14 +19,3 @@ floppy disks.
 
 [Category:Related Software](Category:Related_Software "wikilink")
 [Category:Citable](Category:Citable "wikilink")
-[NIH Image](http://imagej.nih.gov/nih-image/) is the precursor to
-[ImageJ](ImageJ "wikilink"). NIH Image was originally written by  in
-Pascal for the Macintosh. It was first released in 1987, shared on
-floppy disks.
-
-## Publication
-
-  - .
-
-[Category:Related Software](Category:Related_Software "wikilink")
-[Category:Citable](Category:Citable "wikilink")

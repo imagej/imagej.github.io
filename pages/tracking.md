@@ -39,34 +39,3 @@ Here we summarize some of the tracking plugins in ImageJ.
 </table>
 
 ## Related publications
-Particle tracking algorithms identify and link objects across multiple
-images over time.
-
-## Recommended ImageJ Plugins for Tracking
-
-Here we summarize some of the tracking plugins in ImageJ.
-
-<table>
-<tbody>
-<tr class="odd">
-<td><p><strong>Name</strong></p></td>
-<td><p><strong>Short Description</strong></p></td>
-<td><p><strong>Highlights</strong></p></td>
-<td><p><strong>Plugin Snapshot</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="https://imagej.net/TrackMate">TrackMate</a></p></td>
-<td><p>A tool for automated, and semi-automated particle tracking.</p></td>
-<td><ul>
-<li>Versatile and modular solution that works out of the box for end users</li>
-<li>Provides several visualization and analysis tools that aid in assessing results</li>
-<li>A very modular design, that makes it easy to extend</li>
-</ul></td>
-<td><figure>
-<img src="TrackMateGUI.png" title="TrackMateGUI.png" alt="TrackMateGUI.png" width="500" /><figcaption>TrackMateGUI.png</figcaption>
-</figure></td>
-</tr>
-</tbody>
-</table>
-
-## Related publications

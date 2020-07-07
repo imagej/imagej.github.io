@@ -12,7 +12,3 @@ The original documentation for the IJ1 Tubeness plugin can be found at
 <http://homepages.inf.ed.ac.uk/s9808248/imagej/tubeness/>.
 
 [Category:Plugins](Category:Plugins "wikilink")
-The original documentation for the IJ1 Tubeness plugin can be found at
-<http://homepages.inf.ed.ac.uk/s9808248/imagej/tubeness/>.
-
-[Category:Plugins](Category:Plugins "wikilink")

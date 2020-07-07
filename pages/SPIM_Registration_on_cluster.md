@@ -10,5 +10,3 @@ description: test description
 
 1.  REDIRECT [SPIM Registration on cluster
     (deprecated)](SPIM_Registration_on_cluster_\(deprecated\) "wikilink")
-1.  REDIRECT [SPIM Registration on cluster
-    (deprecated)](SPIM_Registration_on_cluster_\(deprecated\) "wikilink")

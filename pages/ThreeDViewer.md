@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [SciView](SciView "wikilink")
-1.  REDIRECT [SciView](SciView "wikilink")

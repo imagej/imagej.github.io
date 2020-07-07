@@ -11,6 +11,3 @@ description: test description
 There are several popular communication channels: 
 
 [Category:Help](Category:Help "wikilink")
-There are several popular communication channels: 
-
-[Category:Help](Category:Help "wikilink")

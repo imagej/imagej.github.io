@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Lasso and Blow Tool](Lasso_and_Blow_Tool "wikilink")
-1.  REDIRECT [Lasso and Blow Tool](Lasso_and_Blow_Tool "wikilink")

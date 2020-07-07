@@ -16,11 +16,3 @@ improved later, as time allows.
 See also .
 
 [Category:Scripting](Category:Scripting "wikilink")
-A thin wrapper around [Scala](http://www.scala-lang.org/) is currently
-available on the , providing Scala scripting capabilities in ImageJ.
-However, support is *very new* and *largely untested*. Support will be
-improved later, as time allows.
-
-See also .
-
-[Category:Scripting](Category:Scripting "wikilink")

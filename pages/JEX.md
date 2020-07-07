@@ -14,9 +14,3 @@ perform batch processing with standard tools (ImageJ, R, Octave, Weka).
 
 [Category:Related Software](Category:Related_Software "wikilink")
 [Category:SciJava](Category:SciJava "wikilink")
-Java-based software and GUI to automatically manage/database large
-numbers of files (e.g., images) in a transparent file structure and
-perform batch processing with standard tools (ImageJ, R, Octave, Weka).
-
-[Category:Related Software](Category:Related_Software "wikilink")
-[Category:SciJava](Category:SciJava "wikilink")

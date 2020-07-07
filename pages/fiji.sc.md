@@ -18,13 +18,3 @@ The artist known as *fiji.sc* was formerly known under the name
 *Pacific*, which happens to be also [the
 ocean](wikipedia:Pacific_Ocean "wikilink") in which the country called
 *Fiji* is located.
-Fiji.sc is our server; it hosts [this Wiki](Fiji "wikilink"), [the
-downloadable files](Downloads "wikilink") and the [Git
-repositories](https://fiji.sc/cgi-bin/gitweb.cgi).
-
-## Former name
-
-The artist known as *fiji.sc* was formerly known under the name
-*Pacific*, which happens to be also [the
-ocean](wikipedia:Pacific_Ocean "wikilink") in which the country called
-*Fiji* is located.

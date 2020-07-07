@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Fiji/Build System](Fiji/Build_System "wikilink")
-1.  REDIRECT [Fiji/Build System](Fiji/Build_System "wikilink")

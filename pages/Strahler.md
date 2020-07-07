@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Strahler Analysis](Strahler_Analysis "wikilink")
-1.  REDIRECT [Strahler Analysis](Strahler_Analysis "wikilink")

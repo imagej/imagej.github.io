@@ -13,8 +13,3 @@ Image](NIH_Image "wikilink") that has been extended to handle the
 loading, display and analysis of scanning microscope images.
 
 [Category:Related Software](Category:Related_Software "wikilink")
-Image SXM, created by Steve Barrett, is a version of [NIH
-Image](NIH_Image "wikilink") that has been extended to handle the
-loading, display and analysis of scanning microscope images.
-
-[Category:Related Software](Category:Related_Software "wikilink")

@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [FijiArchipelago](FijiArchipelago "wikilink")
-1.  REDIRECT [FijiArchipelago](FijiArchipelago "wikilink")

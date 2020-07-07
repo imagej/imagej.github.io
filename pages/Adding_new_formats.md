@@ -30,25 +30,3 @@ format support. To get started writing SCIFIO formats:
   - [Bio-Formats](Bio-Formats "wikilink")
 
 [Category:Development](Category:Development "wikilink")
-Before an image can be analyzed, it needs to be opened properly. The way
-scientific image data can be stored varies wildly - with custom formats
-as numerous as the different brands and models of instruments used in
-their acquisition. Therefore, supporting a wide variety of formats is
-critical to the success of an image analysis platform like
-ImageJ.[ImageJ2](ImageJ2 "wikilink") provides a comprehensive solution
-to the issue of data formats in the form of [SCIFIO](SCIFIO "wikilink")
-data format plugins. [SCIFIO](SCIFIO "wikilink"), the SCientific Image
-Format Input and Output library, is a flexible framework for image
-format support. To get started writing SCIFIO formats:
-
-  - Check out the [SCIFIO
-    tutorials](https://github.com/scifio/scifio-tutorials/tree/master/core/src/main/java/io/scif/tutorials/core).
-  - Look at simple [existing
-    formats](https://github.com/scifio/scifio/blob/scifio-0.24.0/src/main/java/io/scif/formats/BMPFormat.java)
-    for a starting point.
-
-## See also
-
-  - [Bio-Formats](Bio-Formats "wikilink")
-
-[Category:Development](Category:Development "wikilink")

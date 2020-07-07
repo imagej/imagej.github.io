@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Mailing Lists](Mailing_Lists "wikilink")
-1.  REDIRECT [Mailing Lists](Mailing_Lists "wikilink")

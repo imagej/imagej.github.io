@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [ImgLib1 (deprecated)](ImgLib1_\(deprecated\) "wikilink")
-1.  REDIRECT [ImgLib1 (deprecated)](ImgLib1_\(deprecated\) "wikilink")

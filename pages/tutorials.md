@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [:Category:Tutorials](:Category:Tutorials "wikilink")
-1.  REDIRECT [:Category:Tutorials](:Category:Tutorials "wikilink")

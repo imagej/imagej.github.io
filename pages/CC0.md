@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Public Domain](Public_Domain "wikilink")
-1.  REDIRECT [Public Domain](Public_Domain "wikilink")

@@ -20,15 +20,3 @@ For further details, see the [ImageJFX web
 site](http://www.imagejfx.net/).
 
 [Category:Related Software](Category:Related_Software "wikilink")
-The [ImageJFX](http://www.imagejfx.net/) project aims to create a new
-user interface for [ImageJ](ImageJ "wikilink") in order to ease
-scientific image analysis. While keeping the core components of ImageJ,
-ImageJFX brings scientists closer to their goal by making the interface
-clearer for beginners and more practical for advanced users.
-
-![Imagejfx.png](Imagejfx.png "Imagejfx.png")
-
-For further details, see the [ImageJFX web
-site](http://www.imagejfx.net/).
-
-[Category:Related Software](Category:Related_Software "wikilink")

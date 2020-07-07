@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Batch Processing](Batch_Processing "wikilink")
-1.  REDIRECT [Batch Processing](Batch_Processing "wikilink")

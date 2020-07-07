@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Hackathon](Hackathon "wikilink")
-1.  REDIRECT [Hackathon](Hackathon "wikilink")

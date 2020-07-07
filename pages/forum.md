@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Help](Help "wikilink")
-1.  REDIRECT [Help](Help "wikilink")

@@ -28,23 +28,3 @@ filtered image looks like this:
 
 [Category:Tutorials](Category:Tutorials "wikilink")
 [Category:Plugins](Category:Plugins "wikilink")
-This plugin extends the idea of the [original
-Kuwahara](https://imagej.net/plugins/kuwahara.html) filter from
-rectangular kernels to (straight) linear ones.
-
-You can specify how large the generated kernels should be, and for how
-many different angles they are generated. Additionally, you can specify
-what criterion is used to select the best orientation.
-
-Example:
-
-![Noisy-lines.png](Noisy-lines.png "Noisy-lines.png")
-
-With 30 angles at line length 17 with the criterion *Variance*, the
-filtered image looks like this:
-
-![Noisy-lines-kuwahara.png](Noisy-lines-kuwahara.png
-"Noisy-lines-kuwahara.png")
-
-[Category:Tutorials](Category:Tutorials "wikilink")
-[Category:Plugins](Category:Plugins "wikilink")

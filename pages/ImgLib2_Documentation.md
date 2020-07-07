@@ -11,6 +11,3 @@ description: test description
 1.  [ Getting Started](ImgLib2_-_Getting_Started "wikilink")
 2.  [ Accessors](ImgLib2_-_Accessors "wikilink")
 3.  [ Accessibles](ImgLib2_-_Accessibles "wikilink")
-1.  [ Getting Started](ImgLib2_-_Getting_Started "wikilink")
-2.  [ Accessors](ImgLib2_-_Accessors "wikilink")
-3.  [ Accessibles](ImgLib2_-_Accessibles "wikilink")

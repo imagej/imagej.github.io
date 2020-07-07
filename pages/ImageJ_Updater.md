@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Updater](Updater "wikilink")
-1.  REDIRECT [Updater](Updater "wikilink")

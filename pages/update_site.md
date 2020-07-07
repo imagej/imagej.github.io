@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Update Sites](Update_Sites "wikilink")
-1.  REDIRECT [Update Sites](Update_Sites "wikilink")

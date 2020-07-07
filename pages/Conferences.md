@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Conference](Conference "wikilink")
-1.  REDIRECT [Conference](Conference "wikilink")

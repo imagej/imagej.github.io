@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [Sholl Analysis](Sholl_Analysis "wikilink")
-1.  REDIRECT [Sholl Analysis](Sholl_Analysis "wikilink")

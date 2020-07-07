@@ -9,4 +9,3 @@ description: test description
 ---
 
 1.  REDIRECT [BSD](BSD "wikilink")
-1.  REDIRECT [BSD](BSD "wikilink")

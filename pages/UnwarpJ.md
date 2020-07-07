@@ -15,10 +15,3 @@ This plugin is described in detail on the [BIG
 website](http://bigwww.epfl.ch/thevenaz/unwarpj/).
 
 [Category:Plugins](Category:Plugins "wikilink")
-An ImageJ plugin that performs a spline-based elastic registration of
-two images.
-
-This plugin is described in detail on the [BIG
-website](http://bigwww.epfl.ch/thevenaz/unwarpj/).
-
-[Category:Plugins](Category:Plugins "wikilink")
