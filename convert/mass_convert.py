@@ -23,7 +23,8 @@ def iteratively_convert(root_in, root_out, page_title):
     if "(" in page_title:
         print("Cannot process names with parentheses: " + page_title)
         return
-    if page_title.startswith("Category:"):
+    if ":" in page_title:
+        print("Cannot convert pages with colon in title: " + page_title)
         return
     if page_title.startswith("User:"):
         print("There is no strategy yet where to put user pages: " + page_title)
