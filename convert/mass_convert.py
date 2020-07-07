@@ -40,7 +40,8 @@ def iteratively_convert(root_in, root_out, page_title):
         print("Could not find " + page_title)
         return
     path_out = os.path.join(os.path.join(root_out, "pages"), page_title + ".md")
-    if os.path.exists(path_out):
+    path_out_caseinsensitive = getfile_insensitive(os.path.join(root_out, "pages"), page_title + ".md")
+    if path_out_caseinsensitive is not None:
         return
     convertFile(path_in, path_out)
     convertLinks(path_out, root_in, root_out)
