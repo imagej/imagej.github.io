@@ -2,12 +2,12 @@
     <div class="topnav">
         <a href="{{"/index" | relative_url}}">Home</a>
         <a href="{{"/search" | relative_url}}" class="icon solid fa-search">Search</a>
-        <a href="#">Downloads</a>
-        <a href="{{"/learn" | relative_url}}">Learn</a>
+        <a href="{{"/pages/Downloads" | relative_url}}">Downloads</a>
+        <a href="{{"/pages/Introduction" | relative_url}}">Learn</a>
         <a href="{{"/categories" | relative_url}}">Browse</a>
-        <a href="#">Develop</a>
-        <a href="#">News</a>
-        <a href="#">Events</a>
+        <a href="{{"/pages/Development" | relative_url}}">Develop</a>
+        <a href="{{"/pages/News" | relative_url}}">News</a>
+        <a href="{{"/pages/Upcoming_Events" | relative_url}}">Events</a>
         <a href="https://forum.image.sc/">Help</a>
 
         <div id="ham-nav" class="ham-drop" onclick="hamActivate(this)">
@@ -17,12 +17,12 @@
             <div id="drop-menu" class="ham-drop-content">
                 <a href="{{"/index" | relative_url}}">Home</a>
                 <a href="{{"/search" | relative_url}}" class="icon solid fa-search">Search</a>
-                <a href="#">Downloads</a>
-                <a href="{{"/learn" | relative_url}}">Learn</a>
+                <a href="{{"/pages/Downloads" | relative_url}}">Downloads</a>
+                <a href="{{"/pages/Introduction" | relative_url}}">Learn</a>
                 <a href="{{"/categories" | relative_url}}">Browse</a>
-                <a href="#">Develop</a>
-                <a href="#">News</a>
-                <a href="#">Events</a>
+                <a href="{{"/pages/Development" | relative_url}}">Develop</a>
+                <a href="{{"/pages/News" | relative_url}}">News</a>
+                <a href="{{"/pages/Upcoming_Events" | relative_url}}">Events</a>
                 <a href="https://forum.image.sc/">Help</a>
             </div>
         </div>
