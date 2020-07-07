@@ -3010,6 +3010,15 @@ input, select, textarea {
 		padding: 0 0 0 0;
 	}
 
+	.details-box th {
+		background: lightgray;
+		font-variant: small-caps;
+		text-align: center;
+		font-weight: bold;
+		font-size: medium;
+		padding: 0 0.5em 0 0.5em;
+	}
+
 	.details-box a {
 		padding: 0.1em 0 0 0;
 		text-decoration: none;

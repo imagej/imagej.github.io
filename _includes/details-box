@@ -23,6 +23,15 @@
 {% if include.sup_stat != "" %}
 | **Support status:** | {{include.sup_stat | strip_newlines}}
 {% endif %}
+{% if include.team_banner == true %}
+<table>
+    <tbody>
+        <tr>
+            <th>TEAM</th>
+        </tr>
+    </tbody>
+</table>
+{% endif %}
 {% if include.team_founders != "" %}
 | **Founders:** | {{include.team_founders | strip_newlines}}
 {% endif %}
