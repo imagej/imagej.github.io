@@ -43,7 +43,7 @@ def iteratively_convert(root_in, root_out, page_title):
     convert_links(path_out, root_in, root_out)
 
 def convert_file(path_in, path_out):
-    run_pandoc(path_in, path_out)
+    convert(path_in, path_out)
     with open(path_out, 'r+') as f:
         lines = f.readlines()
         lines[0] = lines[0] + autgenerated_line

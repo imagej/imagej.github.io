@@ -132,12 +132,13 @@ def write_file(file_content, path_out):
     return None
 
 
-def run_pandoc(path_in, path_out):
-    # determine current file name:
-    current_file = get_name(path_in) + ".mw"
+def convert(path_in, path_out):
 
-    print("running pandoc on file: {0}".format(current_file))
-    os.system('pandoc {0} -f mediawiki -t gfm -s -o {1}'.format(path_in, path_out))
+    processed_mw = process_file(path_in, read_file(path_in))
+    tmpFile = os.path.join(os.path.dirname(path_out), "tmpconversionfile.mw")
+    write_file(processed_mw, tmpFile)
+
+    run_pandoc(tmpFile, path_out)
 
     # open output file and create list
     content_tmp = read_file(path_out)
@@ -148,4 +149,12 @@ def run_pandoc(path_in, path_out):
         f.write(front_matter)
         f.close()
 
+    os.remove(tmpFile)
     return None
+
+
+def run_pandoc(path_in, path_out):
+    # determine current file name:
+    current_file = get_name(path_in) + ".mw"
+    print("running pandoc on file: {0}".format(current_file))
+    os.system('pandoc {0} -f mediawiki -t gfm -s -o {1}'.format(path_in, path_out))
