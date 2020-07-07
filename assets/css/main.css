@@ -2985,6 +2985,10 @@ input, select, textarea {
 		padding: 0.5em 1em 0.5em 1em;
 	}
 
+	.details-box h3 {
+		padding: 0 0 0.5em 0;
+	}
+
 	.details-box table {
 		background-color: #f9f9f9;
 		border-collapse: collapse;
@@ -3000,6 +3004,10 @@ input, select, textarea {
 
 	.details-box tr {
 		text-align: left;
+	}
+
+	.details-box td {
+		padding: 0 0 0 0;
 	}
 
 	.details-box a {
