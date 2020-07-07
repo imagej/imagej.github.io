@@ -26,6 +26,27 @@
 {% if include.team_founders != "" %}
 | **Founders:** | {{include.team_founders | strip_newlines}}
 {% endif %}
+{% if include.team_leads != "" %}
+| **Leads:** | {{include.team_leads | strip_newlines}}
+{% endif %}
+{% if include.team_developers != "" %}
+| **Developers:** | {{include.team_developers | strip_newlines}}
+{% endif %}
+{% if include.team_debuggers != "" %}
+| **Debuggers:** | {{include.team_debuggers | strip_newlines}}
+{% endif %}
+{% if include.team_reviewers != "" %}
+| **Reviewers:** | {{include.team_reviewers | strip_newlines}}
+{% endif %}
+{% if include.team_support != "" %}
+| **Support:** | {{include.team_support | strip_newlines}}
+{% endif %}
+{% if include.team_maintainers != "" %}
+| **Maintainers:** | {{include.team_maintainers | strip_newlines}}
+{% endif %}
+{% if include.team_contributors != "" %}
+| **Contributors:** | {{include.team_contributors | strip_newlines}}
+{% endif %}
 {% endcapture %}
 
 <div class="details-box" markdown="1">
