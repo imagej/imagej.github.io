@@ -8,6 +8,10 @@ categories: Plugins,Citable
 description: test description
 ---
 
+{% include Infobox content="software = Fiji | name = MaMuT | logo =
+![MaMuT\_logo-256x256.png](MaMuT_logo-256x256.png
+"MaMuT_logo-256x256.png") | maintainer = 
+
 '''A Fiji plugin for the annotation of massive, multi-view data. '''
 
 Enable the [MaMuT update site](http://sites.imagej.net/MaMuT/) to get
@@ -17,7 +21,8 @@ it.
 
 ## Publication.
 
-  - 
+  - {% include Publication content="MaMuT" %}
+
 ## Presentation.
 
 MaMuT is an end user plugin that combines the

@@ -8,10 +8,12 @@ categories: Plugins,Related Software,SciJava,Citable
 description: test description
 ---
 
-The Microscope Image Analysis Toolbox MiToBo is a collection of basic
-and advanced image processing operators and applications mainly
-dedicated to biological and biomedical image data, however, not
-restricted to these fields. MiToBo is an extension of
+{% include Infobox content="software = MiToBo | name = MiToBo | logo =
+![MiToBo-logo.png](MiToBo-logo.png "MiToBo-logo.png") | maintainer =
+Stefan Posch, The Microscope Image Analysis Toolbox MiToBo is a
+collection of basic and advanced image processing operators and
+applications mainly dedicated to biological and biomedical image data,
+however, not restricted to these fields. MiToBo is an extension of
 [ImageJ](ImageJ "wikilink"), i.e. MiToBo operators are ready to be
 directly used as plugins in ImageJ.
 
@@ -28,7 +30,8 @@ image analysis workflows can easily be designed graphically.
 
 ## Publication
 
-  - 
+  - {% include Publication content="MiToBo" %}
+
 [Category:Plugins](Category:Plugins "wikilink") [Category:Related
 Software](Category:Related_Software "wikilink")
 [Category:SciJava](Category:SciJava "wikilink")

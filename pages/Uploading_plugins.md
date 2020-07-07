@@ -8,10 +8,10 @@ categories: Development
 description: test description
 ---
 
-**Note**: Please make sure that you have a clean build of the plugin you
-try to upload. You can ensure a clean build by calling the [Fiji Build
-System](Fiji_Build_System "wikilink") with the *-clean* suffix before
-building the actual target. Example:
+%Replace% Outdated %Replace% **Note**: Please make sure that you have a
+clean build of the plugin you try to upload. You can ensure a clean
+build by calling the [Fiji Build System](Fiji_Build_System "wikilink")
+with the *-clean* suffix before building the actual target. Example:
 
 `./Build.sh plugins/Fiji_Plugins.jar-clean`  
 `./Build.sh plugins/Fiji_Plugins.jar`
@@ -19,8 +19,9 @@ building the actual target. Example:
 ## The graphical way (recommended)
 
 You can use the [Fiji Updater](Update_Fiji "wikilink") to upload new
-plugins (or new versions thereof). First start . It will tell you that
-there are *locally modified files*:
+plugins (or new versions thereof). First start {% include bc
+content="Help | Update Fiji" %}. It will tell you that there are
+*locally modified files*:
 
 ![Updater-locally-modified.png](Updater-locally-modified.png
 "Updater-locally-modified.png")

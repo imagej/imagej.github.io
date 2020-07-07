@@ -8,7 +8,13 @@ categories: Tutorials,Development
 description: test description
 ---
 
-\_\_FORCETOC\_\_ 
+{% include ImageJ1 content="This page explains how to develop plugins
+with the ImageJ 1.x API. If you start developing a new plugin today, it
+is highly recommended to [develop for
+ImageJ2](Writing_plugins "wikilink")." %}
+
+\_\_FORCETOC\_\_ {% include DevelopMenu content="tutorials" %}{% include
+Project content="ImageJ1 | describes content related to" %}
 
 # Plugin, script or macro?
 
@@ -43,7 +49,8 @@ reading\!
 ## Updating plugins
 
   - After storing the *.jar* file(s) into the *plugins/* (or *jars/*)
-    directory, call  or restart Fiji
+    directory, call {% include bc content="Help | Refresh Menus" %} or
+    restart Fiji
   - If the respective plugin is in-use, you might get funny results when
     refreshing the menus, due to limitations in Sun Java's handling of
     *.jar* files.
@@ -116,10 +123,19 @@ handling.
   - Plugins can only implement menu entries (in particular, they cannot
     provide tools in the toolbar)
   - Some functions which are easy to call via macros are not available
-    via the public Java API (e.g. )
+    via the public Java API (e.g. {% include bc content="Image | Stacks
+    | Plot Z-axis profile..." %})
   - It is often quicker to write macros
 
 # Rapid prototyping with the [Script Editor](Script_Editor "wikilink")
+
+{% include warning-box content="Using the Script Editor for Java
+development is not currently recommended.  
+For Java development, proceed to the [Getting Started with
+Maven](#Getting_started_with_Maven "wikilink") section.  
+If you would like to use the script editor, see the sections for the
+[other supported languages](Scripting#Supported_languages "wikilink")."
+%}
 
 <s>There a few good reasons why you should try the [Script
 Editor](Script_Editor "wikilink") for rapid prototyping of your plugins
@@ -141,14 +157,18 @@ or scripts:
 
 <s>To plunge into writing plugins, make sure that there is an active
 image (e.g. a sample image), start the [Script
-Editor](Script_Editor "wikilink") (), and select the *Process Pixels*
-menu item from the  menu. Then, run the plugin with *Run\>Run*.</s>
+Editor](Script_Editor "wikilink") ({% include bc content="File | New |
+Script" %}), and select the *Process Pixels* menu item from the {%
+include bc content="Templates | Java" %} menu. Then, run the plugin with
+*Run\>Run*.</s>
 
 # Getting started with Maven
 
-The  provides a working example, and documentation, illustrating how an
-ImageJ plugin should be structured from a "best practices in Maven"
-point of view.
+The {% include GitHub
+content="org=imagej|repo=example-legacy-plugin|label=example-legacy-plugin
+project" %} provides a working example, and documentation, illustrating
+how an ImageJ plugin should be structured from a "best practices in
+Maven" point of view.
 
 Using this project requires a basic understanding of
 [Git](Git "wikilink") and [Maven](Maven "wikilink"); thus if you are
@@ -181,8 +201,10 @@ links](http://javadoc.imagej.net/).
 
 ## The class *IJ*
 
-The class  is a convenience class with many static functions. Two of
-them are particularly useful for debugging:
+The class {% include GitHub
+content="org=imagej|repo=ImageJA|path=src/main/java/ij/IJ.java|label=ij.IJ"
+%} is a convenience class with many static functions. Two of them are
+particularly useful for debugging:
 
 ``` java
 // output into the Log window
@@ -194,8 +216,10 @@ IJ.showMessage(“Hello, World!”);
 
 ## The class *ImageJ*
 
-The class  implements the main window of ImageJ / Fiji, and you can
-access it via *ij.IJ*'s static method *getInstance()*:
+The class {% include GitHub
+content="org=imagej|repo=ImageJA|path=src/main/java/ij/ImageJ.java|label=ij.ImageJ"
+%} implements the main window of ImageJ / Fiji, and you can access it
+via *ij.IJ*'s static method *getInstance()*:
 
 ``` java
 // check if ImageJ is used interactively
@@ -208,7 +232,9 @@ used as a library (in which case the instance is *null*).
 
 ## The class *WindowManager*
 
-Use the class  to access the ImageJ windows / images:
+Use the class {% include GitHub
+content="org=imagej|repo=ImageJA|path=src/main/java/ij/WindowManager.java|label=ij.WindowManager"
+%} to access the ImageJ windows / images:
 
 ``` java
 // how many windows / images are active?
@@ -224,9 +250,22 @@ When implementing a filter plugin, you usually do not need to access
 
 ## The hierarchy of the classes representing an image
 
-All images are represented as instances of . This class wraps an  of
-slices. Slices are data-type dependent instances of : , , , and . Or
-graphically:
+All images are represented as instances of {% include GitHub
+content="org=imagej|repo=ImageJA|path=src/main/java/ij/ImagePlus.java|label=ij.ImagePlus"
+%}. This class wraps an {% include GitHub
+content="org=imagej|repo=ImageJA|path=src/main/java/ij/ImageStack.java|label=ij.ImageStack"
+%} of slices. Slices are data-type dependent instances of {% include
+GitHub
+content="org=imagej|repo=ImageJA|path=src/main/java/ij/process/ImageProcessor.java|label=ij.process.ImageProcessor"
+%}: {% include GitHub
+content="org=imagej|repo=ImageJA|path=src/main/java/ij/process/ByteProcessor.java|label=ij.process.ByteProcessor"
+%}, {% include GitHub
+content="org=imagej|repo=ImageJA|path=src/main/java/ij/process/ShortProcessor.java|label=ij.process.ShortProcessor"
+%}, {% include GitHub
+content="org=imagej|repo=ImageJA|path=src/main/java/ij/process/FloatProcessor.java|label=ij.process.FloatProcessor"
+%}, and {% include GitHub
+content="org=imagej|repo=ImageJA|path=src/main/java/ij/process/ColorProcessor.java|label=ij.process.ColorProcessor"
+%}. Or graphically:
 
 ![Image\_Class\_Hierarchy.png](Image_Class_Hierarchy.png
 "Image_Class_Hierarchy.png")
@@ -384,8 +423,9 @@ is hidden.
 
 ## Frequently used operators
 
-The  class has a few methods such as *smooth()*, *sharpen()*,
-*findEdges()*, etc
+The {% include Javadoc\_IJ1
+content="package=ij/process|class=ImageProcessor" %} class has a few
+methods such as *smooth()*, *sharpen()*, *findEdges()*, etc
 
 **Tip:** use the Script Editor's functions in the *Tools* menu:
 
@@ -399,7 +439,8 @@ The  class has a few methods such as *smooth()*, *sharpen()*,
 
 ## Plots
 
-You can show a plot window very easily using the  class:
+You can show a plot window very easily using the {% include Javadoc\_IJ1
+content="package=ij/gui|class=Plot" %} class:
 
 ``` java
 void plot(double[] values) {
@@ -427,7 +468,9 @@ void plot(double[] values, double[] values2) {
 ```
 
 To update the contents of a plot window, remember the return value of
-*plot.show()* which is a , and use its *drawPlot()* method:
+*plot.show()* which is a {% include Javadoc\_IJ1
+content="package=ij/gui|class=PlotWindow" %}, and use its *drawPlot()*
+method:
 
 ``` java
 void plot(double[] values) {
@@ -505,9 +548,13 @@ plugin. For example, ImageJ2 provides a spreadsheet-like results table
 that supports string cells. You can write an ImageJ 1.x plugin that
 produces such a spreadsheet, displaying it onscreen.
 
-See the  example of the ImageJ Tutorials:
+See the {% include GitHub
+content="org=imagej|repo=tutorials|path=maven-projects/call-modern-from-legacy|label=call-modern-from-legacy"
+%} example of the ImageJ Tutorials:
 
-> 
+> {% include GitHub
+> content="org=imagej|repo=tutorials|path=maven-projects/call-modern-from-legacy/src/main/java/DisplayATable.java|label=DisplayATable.java"
+> %}
 
 ## Further tips
 

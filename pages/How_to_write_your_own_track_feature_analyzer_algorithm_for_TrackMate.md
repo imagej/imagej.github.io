@@ -8,6 +8,8 @@ categories: Tutorials
 description: test description
 ---
 
+%Replace% ExtendingTrackMateTutorials %Replace%
+
 ## Introduction
 
 This article is the second in the series dedicated to extending
@@ -31,12 +33,18 @@ to **disable** modules.
 
 ## Track analyzers
 
-All the track feature analyzers must implement . Like for the 
-interface, it extends both
+All the track feature analyzers must implement {% include GitHub
+content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/features/track/TrackAnalyzer.java|label=TrackAnalyzer
+interface" %}. Like for the {% include GitHub
+content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java|label=EdgeAnalyzer"
+%} interface, it extends both
 
-  - that helps you declaring what you compute,
-
-  - and , that is in charge of the integration in TrackMate.
+  - {% include GitHub
+    content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/features/FeatureAnalyzer.java|label=FeatureAnalyzer"
+    %} that helps you declaring what you compute,
+  - and {% include GitHub
+    content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/TrackMateModule.java|label=TrackMateModule"
+    %}, that is in charge of the integration in TrackMate.
 
 The only changes for us are two methods specific to tracks:
 
@@ -171,7 +179,9 @@ data in TrackMate. This is not the goal of this series, but here is a
 quick recap:
 
 All the track structure is stored in a sub-component of the model called
-the . It stores the collection of links between two spots that builds a
+the {% include GitHub
+content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/TrackModel.java|label=TrackModel"
+%}. It stores the collection of links between two spots that builds a
 graph, and has some rather complex logic to maintain a list of connected
 components: the tracks.
 
@@ -234,7 +244,9 @@ and end points. Here is the whole code for the processing method:
     }
 ```
 
-The whole code for the analyzer can be found .
+The whole code for the analyzer can be found {% include GitHub
+content="org=fiji|repo=TrackMate-examples|source=plugin/trackmate/examples/trackanalyzer/TrackStartSpotAnalyzer.java|label=here"
+%}.
 
 ## Wrapping up
 
@@ -272,6 +284,7 @@ Disabled modules are not even instantiated. They are as good as dead,
 except that you can change your mind easily. By the way, you can see
 that the TrackMate source tree has many of these disabled modules...
 
+{% include Person content="JeanYvesTinevez" %}
 ([talk](User_talk:JeanYvesTinevez "wikilink")) 14:23, 11 March 2014
 (CDT)
 

@@ -8,7 +8,9 @@ categories: Plugins,Segmentation,Mathematical_morphology
 description: test description
 ---
 
-{| |style="vertical-align:top" |![Overlay of watershed lines on blurred
+{% include Infobox content="name = Classic Watershed | software =
+IJPB-plugins | author = {| |style="vertical-align:top" |![Overlay of
+watershed lines on blurred
 blobs.](Classic-Watershed-lines-blur-blobs.png
 "Overlay of watershed lines on blurred blobs.") |}
 
@@ -19,12 +21,12 @@ blobs.](Classic-Watershed-lines-blur-blobs.png
 "Schematic overview of watershed flooding in 1D")Classic Watershed is an
 ImageJ/Fiji plugin to perform watershed segmentation of grayscale 2D/3D
 images using flooding simulations as described by Pierre Soille and Luc
-M. Vincent (1990)\<ref name="Soille1990\>{{ cite conference | title =
+M. Vincent (1990)\<ref name="Soille1990\>{{ cite conference |
 Determining watersheds in digital pictures via flooding simulations |
-author = Soille, Pierre and Vincent, Luc M | booktitle = Proc. SPIE |
-volume = 1360 | pages = 240-250 | year = 1990 | organization =
-International Society for Optics and Photonics | doi = 10.1117/12.24211
-| url = <http://dx.doi.org/10.1117/12.24211> }}</ref>.
+author = Soille, Pierre and Vincent, Luc M | bookProc. SPIE | volume =
+1360 | pages = 240-250 | year = 1990 | organization = International
+Society for Optics and Photonics | doi = 10.1117/12.24211 | url =
+<http://dx.doi.org/10.1117/12.24211> }}</ref>.
 
 The basic idea consists of considering the input image as topographic
 surface and placing a water source in each regional minimum of its
@@ -121,7 +123,8 @@ need to [
 add](How_to_follow_a_3rd_party_update_site#Add_update_sites "wikilink")
 the IJPB-plugins update site:
 
-1\) Select  from the Fiji menu to start the updater.
+1\) Select {% include bc content="Help | Update..." %} from the Fiji
+menu to start the updater.
 
 2\) Click on *Manage update sites*. This brings up a dialog where you
 can activate additional update sites.
@@ -131,7 +134,8 @@ should see an additional jar file for download.
 
 4\) Click *Apply changes* and restart Fiji.
 
-You should now find the plugin under the sub-menu .
+You should now find the plugin under the sub-menu {% include bc
+content="Plugins |MorphoLibJ | Segmentation" %}.
 
 **Note**: Classic Watershed is only one of the plugins included in the
 [MorphoLibJ](MorphoLibJ "wikilink") suite. By following these

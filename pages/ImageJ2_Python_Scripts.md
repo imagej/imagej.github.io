@@ -8,6 +8,8 @@ categories: Scripting,ImageJ2,Ops,SciJava
 description: test description
 ---
 
+{% include Learn content="scripting" %}
+
 # Introduction
 
 This page is a primer of **ImageJ2 only** Python scripts. It means that
@@ -21,21 +23,61 @@ Note that all the scripts of this page are links from
 
 ## Stack Projection
 
+{% include GitHubEmbed
+content="org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/ImageJ2/Projection.py|label=Projection.py"
+%}
+
 ## Apply Threshold
+
+{% include GitHubEmbed
+content="org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/ImageJ2/Apply\_Threshold.py|label=Apply\_Threshold.py"
+%}
+
+{% include GitHubEmbed
+content="org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/ImageJ2/Apply\_Threshold\_Fast.py|label=Apply\_Threshold\_Fast.py"
+%}
 
 ## Crop an image
 
+{% include GitHubEmbed
+content="org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/ImageJ2/Crop.py|label=Crop.py"
+%}
+
 ## Rotate all the frames of a stack
+
+{% include GitHubEmbed
+content="org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/ImageJ2/Rotate\_Stack.py|label=Rotate\_Stack.py"
+%}
 
 ## Subtract a stack to its first image
 
+{% include GitHubEmbed
+content="org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/ImageJ2/Subtract\_First\_Image\_Stack.py|label=Subtract\_First\_Image\_Stack.py"
+%}
+
 ## Apply DOG Filter
+
+{% include GitHubEmbed
+content="org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/ImageJ2/Apply\_DOG\_Filtering.py|label=Apply\_DOG\_Filtering.py"
+%}
 
 ## Apply a mask
 
+{% include GitHubEmbed
+content="org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/ImageJ2/Apply\_Mask.py|label=Apply\_Mask.py"
+%}
+
 ## Retrieve objects/particles from a mask
 
+{% include GitHubEmbed
+content="org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/ImageJ2/Particles\_From\_Mask.py|label=Particles\_From\_Mask.py"
+%}
+
 ## Manual Simple Registration on Stack
+
+{% include GitHubEmbed
+content="org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/ImageJ2/Manual\_Registration.py|label=Manual\_Registration.py"
+%}
 
 # Resources
 

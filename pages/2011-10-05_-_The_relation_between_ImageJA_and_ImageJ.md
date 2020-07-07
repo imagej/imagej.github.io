@@ -72,14 +72,16 @@ The changes fall into three categories, with different strategies how to
 "make them obsolete":
 
 1.  Changes that we provided for traditional reasons but that will be
-    obsolete with IJ2, such as the "convert to 8-bit" in the  support
-    code or the "fuzzy matching" in the Command Finder.
+    obsolete with IJ2, such as the "convert to 8-bit" in the {% include
+    bc content="File|Import|Image Sequence..." %} support code or the
+    "fuzzy matching" in the Command Finder.
     Roughly half of these changes I will just forget, while the other
     half of changes will persist in the IJ1-based Fiji through
     [Javassist](Javassist "wikilink").
-2.  Changes that actually should live as add-ons to ImageJ, such as the 
-    plugin. Of course, having it as a Fiji plugin will move its position
-    in the menu, but that does not matter that much.
+2.  Changes that actually should live as add-ons to ImageJ, such as the
+    {% include bc content="Plugins\>Install Plugin..." %} plugin. Of
+    course, having it as a Fiji plugin will move its position in the
+    menu, but that does not matter that much.
 3.  The headless stuff. I'll try to make that available both as
     javassist-enabled runtime adjustment as well as
     rewritten-by-javassist end-user packages (on demand only, for cases

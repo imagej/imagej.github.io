@@ -8,6 +8,14 @@ categories:
 description: test description
 ---
 
+{% include Infobox content="name = Multi-view fusion plugin | software =
+ImageJ | author = Stephan Preibisch, Stephan Saalfeld, Johannes
+Schindelin, Pavel Tomancak | maintainer = Stephan Preibisch | filename =
+SPIM\_Registration.jar | released = February 2010 | latest version =
+October 2011 | category = [SPIM
+Registration](:Category:Registration "wikilink") | website = [Stephan
+Preibisch's homepage](http://fly.mpi-cbg.de/~preibisch) " %}
+
 ## Citation
 
 Please note that the multi-view fusion plugin available through Fiji, is

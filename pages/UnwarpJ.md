@@ -8,6 +8,10 @@ categories: Plugins
 description: test description
 ---
 
+{% include Infobox content="software = ImageJ | name = UnwarpJ |
+maintainer = Philippe Thévenaz | author = Carlos Óscar Sánchez Sorzano,
+Philippe Thévenaz | source = 
+
 An ImageJ plugin that performs a spline-based elastic registration of
 two images.
 

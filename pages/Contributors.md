@@ -8,7 +8,17 @@ categories:
 description: test description
 ---
 
-\_\_NOTOC\_\_== Who we are ==
+{% include info-box content="This page describes who *contributes* to
+[SciJava](SciJava "wikilink") projects.
+
+  - For information on who *maintains* these projects, see
+    [Governance](Governance "wikilink").
+  - For information on how ImageJ projects are *funded*, see
+    [Funding](Funding "wikilink").
+  - For information on *citing* these projects, see
+    [Citing](Citing "wikilink")." %}
+
+%Replace% AboutMenu %Replace% \_\_NOTOC\_\_== Who we are ==
 
 <div style="font-size: small">
 
@@ -20,149 +30,115 @@ Note: This list is only irregularly updated.
 
 ### Principal investigators
 
-  - \[1\] (ImageJ, Fiji)
-
-  - \[2\] (Fiji)
-
-  - \[3\] (Fiji)
-
+  - {% include Person content="Eliceiri" %}\[1\] (ImageJ, Fiji)
+  - {% include Person content="Tomancak" %}\[2\] (Fiji)
+  - {% include Person content="Jug" %}\[3\] (Fiji)
   - [Anne Carpenter](http://www.broadinstitute.org/~anne/)\[4\]
     (CellProfiler)
-
   - [Michael
     Berthold](http://www.informatik.uni-konstanz.de/berthold/mitglieder/prof-dr-michael-berthold/)\[5\]\[6\]
     (KNIME)
-
   - [Jason
     Swedlow](http://www.lifesci.dundee.ac.uk/people/jason-swedlow)\[7\]\[8\]
     (OME)
 
-### [ImageJ](ImageJ "wikilink")
+\=== {% include Logo content="ImageJ | size=32px"
+%}[ImageJ](ImageJ "wikilink") ===
 
-  - \[9\] (lead, [ImageJ 1.x](ImageJ_1.x "wikilink"))
-
-  - \[10\] (lead, [ImageJ2](ImageJ2 "wikilink"))
-
-  - \[11\]\[12\]
-
-  - \[13\]
-
-  - \[14\] (Sep 2010-Jun 2016)
-
-  - \[15\] (Jan 2010-Apr 2016)
-
-  - \[16\] (Sep 2011-Nov 2014)
-
-  - \[17\] (Jan 2010-Dec 2013)
-
-  - \[18\] (Jan 2010-Nov 2013)
-
-  - \[19\] (Nov 2009-Jan 2012)
-
+  - {% include Person content="Rasband" %}\[9\] (lead, [ImageJ
+    1.x](ImageJ_1.x "wikilink"))
+  - {% include Person content="Rueden" %}\[10\] (lead,
+    [ImageJ2](ImageJ2 "wikilink"))
+  - {% include Person content="Dietzc" %}\[11\]\[12\]
+  - {% include Person content="Bnorthan" %}\[13\]
+  - {% include Person content="Hinerm" %}\[14\] (Sep 2010-Jun 2016)
+  - {% include Person content="Leek" %}\[15\] (Jan 2010-Apr 2016)
+  - {% include Person content="Schindelin" %}\[16\] (Sep 2011-Nov 2014)
+  - {% include Person content="Grislis" %}\[17\] (Jan 2010-Dec 2013)
+  - {% include Person content="Bdezonia" %}\[18\] (Jan 2010-Nov 2013)
+  - {% include Person content="Harris" %}\[19\] (Nov 2009-Jan 2012)
   - Adam Fraser\[20\] (Nov 2009-Aug 2011)
-
-  - \[21\] (Nov 2009-Feb 2011)
-
+  - {% include Person content="Lentz" %}\[21\] (Nov 2009-Feb 2011)
   - See also [ImageJ forum heroes](http://forum.imagej.net/users)
 
-### [ImgLib2](ImgLib2 "wikilink")
+\=== {% include Logo content="ImgLib2 | size=32px"
+%}[ImgLib2](ImgLib2 "wikilink") ===
 
-  - \[22\] (lead)
-
-  - \[23\]\[24\]
-
-  - \[25\]\[26\]
+  - {% include Person content="Pietzsch" %}\[22\] (lead)
+  - {% include Person content="StephanP" %}\[23\]\[24\]
+  - {% include Person content="Saalfeld" %}\[25\]\[26\]
 
 </div>
 
 <div style="float: left">
 
-### [Fiji](Fiji "wikilink")
+\=== {% include Logo content="Fiji | size=32px"
+%}[Fiji](Fiji "wikilink") ===
 
-  - \[27\] (lead)
-
-  - \[28\]
-
-  - \[29\]
-
-  - \[30\]\[31\]
-
-  - \[32\]\[33\]
-
-  - \[34\]
-
-  - \[35\]
-
-  - \[36\]\[37\]
-
-  - \[38\]
-
-  - \[39\]
-
-  - \[40\]
-
-  - \[41\]\[42\]
-
-  - \[43\]
-
-  - \[44\] (former)
-
-  - \[45\]\[46\] (founder)
-
-  - \[47\] (former, founder)
-
+  - {% include Person content="Rueden" %}\[27\] (lead)
+  - {% include Person content="JeanYvesTinevez" %}\[28\]
+  - {% include Person content="Iarganda" %}\[29\]
+  - {% include Person content="StephanP" %}\[30\]\[31\]
+  - {% include Person content="Saalfeld" %}\[32\]\[33\]
+  - {% include Person content="Pietzsch" %}\[34\]
+  - {% include Person content="Eglinger" %}\[35\]
+  - {% include Person content="Tiago" %}\[36\]\[37\]
+  - {% include Person content="Hadim" %}\[38\]
+  - {% include Person content="White" %}\[39\]
+  - {% include Person content="Landini" %}\[40\]
+  - {% include Person content="Kharrington" %}\[41\]\[42\]
+  - {% include Person content="Twagner" %}\[43\]
+  - {% include Person content="Hinerm" %}\[44\] (former)
+  - {% include Person content="Albertcardona" %}\[45\]\[46\] (founder)
+  - {% include Person content="Schindelin" %}\[47\] (former, founder)
   - See also [graph of Fiji
     contributors](https://github.com/fiji/fiji/graphs/contributors)
 
 ### [BigDataViewer](BigDataViewer "wikilink")
 
-  - \[48\] (lead)
-
-  - \[49\]\[50\]
+  - {% include Person content="Pietzsch" %}\[48\] (lead)
+  - {% include Person content="StephanP" %}\[49\]\[50\]
 
 ### [TrakEM2](TrakEM2 "wikilink")
 
-  - \[51\]\[52\] (lead)
-
-  - \[53\]\[54\]
+  - {% include Person content="Albertcardona" %}\[51\]\[52\] (lead)
+  - {% include Person content="Saalfeld" %}\[53\]\[54\]
 
 </div>
 
 <div style="float: left">
 
-### [SCIFIO](SCIFIO "wikilink")
+\=== {% include Logo content="SCIFIO | size=32px"
+%}[SCIFIO](SCIFIO "wikilink") ===
 
-  - \[55\] (lead)
+  - {% include Person content="Rueden" %}\[55\] (lead)
+  - {% include Person content="Hinerm" %}\[56\] (former, founder)
 
-  - \[56\] (former, founder)
+\=== {% include Logo content="CellProfiler | size=32px"
+%}[CellProfiler](CellProfiler "wikilink") ===
 
-### [CellProfiler](CellProfiler "wikilink")
+  - {% include Person content="0x00B1" %}\[57\] (lead)
+  - {% include Person content="Leek" %}\[58\] (former)
 
-  - \[57\] (lead)
+\=== {% include Logo content="KNIME | size=32px" %}[KNIME Image
+Processing](KNIME "wikilink") ===
 
-  - \[58\] (former)
+  - {% include Person content="Dietzc" %}\[59\]\[60\] (lead)
+  - {% include Person content="hornm" %}\[61\]
+  - {% include Person content="tibuch" %}\[62\]\[63\]
+  - {% include Person content="Squareys" %}\[64\]\[65\]
+  - {% include Person content="Gab1one" %}\[66\]\[67\]
 
-### [KNIME Image Processing](KNIME "wikilink")
+\=== {% include Logo content="OME | size=32px" %}[OME](OME "wikilink")
+===
 
-  - \[59\]\[60\] (lead)
-
-  - \[61\]
-
-  - \[62\]\[63\]
-
-  - \[64\]\[65\]
-
-  - \[66\]\[67\]
-
-### [OME](OME "wikilink")
-
-  - \[68\]\[69\] (co-lead)
-
-  - \[70\] (co-lead)
-
+  - {% include Person content="Moore" %}\[68\]\[69\] (co-lead)
+  - {% include Person content="jburel" %}\[70\] (co-lead)
   - See also [OME Teams](http://openmicroscopy.org/site/about/who-ome)
 
 </div>
+
+%Replace% Clear %Replace%
 
 <div style="float: left">
 
@@ -174,14 +150,16 @@ right now.
 
 ### Special thanks
 
-Our deep thanks to , author of [ImageJ1](ImageJ1 "wikilink"), for all
-his support and patience\!
+Our deep thanks to {% include Person content="Rasband" %}, author of
+[ImageJ1](ImageJ1 "wikilink"), for all his support and patience\!
 
 </div>
 
 <div style="float: left">
 
 ### Institutions
+
+%Replace% reflist %Replace%
 
 </div>
 

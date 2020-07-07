@@ -16,6 +16,8 @@ dataset.
 
 If you find MaMuT useful for your research, please cite it:
 
+{% include Publication content="MaMuT" %}
+
 \_\_TOC\_\_
 
 ## Installation.
@@ -30,11 +32,11 @@ not much to do. Simply follow the instructions on how to [**follow a 3rd
 party site**](How_to_follow_a_3rd_party_update_site "wikilink"), and
 subscribe to the MaMuT update site. Here is briefly how to do it.
 
-Got to  and click on the **Manage update sites** button. In the window
-that appear, find the **MaMuT** checkbox and tick it. Then close the
-window. In the files to update list, there should be a
-**plugins/MaMuT\_.jar** appearing. Click on **Apply changes** button,
-then restart Fiji.
+Got to {% include bc content="Help | Update..." %} and click on the
+**Manage update sites** button. In the window that appear, find the
+**MaMuT** checkbox and tick it. Then close the window. In the files to
+update list, there should be a **plugins/MaMuT\_.jar** appearing. Click
+on **Apply changes** button, then restart Fiji.
 
 ![bdv-MaMuT\_UpdateSite.png](bdv-MaMuT_UpdateSite.png
 "bdv-MaMuT_UpdateSite.png")
@@ -83,7 +85,8 @@ In the following, we assume that you are using this data.
 
 ### Starting a new annotation.
 
-Start MaMuT on this dataset by browsing to 
+Start MaMuT on this dataset by browsing to {% include bc
+content="Plugins | MaMuT | Launch new MaMuT annotation" %}
 
 ![bdv-MaMuT\_MenuItems.png](bdv-MaMuT_MenuItems.png
 "bdv-MaMuT_MenuItems.png")
@@ -105,9 +108,10 @@ will open with display this image data, as in a normal BigDataViewer.
 If you are familiar with the BigDataViewer, there is a few useful things
 to know. When we launch a new MaMuT annotation, we actually import some
 of the settings of the BigDataViewer in the session. For instance, in
-the BigDataViewer you can save and restore settings using the  and  menu
-item. This creates and loads a XML file typically named
-`bdv_file.settings.xml` if the BigDataViewer file is named
+the BigDataViewer you can save and restore settings using the {% include
+bc content="File | Save settings" %} and {% include bc content="File |
+Load settings" %} menu item. This creates and loads a XML file typically
+named `bdv_file.settings.xml` if the BigDataViewer file is named
 `bdv_file.xml`. If this settings file is present in the same folder than
 the BigDataViewer file when launching a new MaMuT annotation, then MaMuT
 imports the brightness adjustments and bookmarks found in this file. The
@@ -165,10 +169,11 @@ but these three files need to travel together.
 
 ### Loading a MaMuT file.
 
-To reload a MaMuT file, go to the  Fiji menu item, and browse to the
-MaMuT XML file. This will load the annotation and the image data.
-Careful, do not mix the MaMuT XML file with the BigDataViewer XML file
-when opening the later.
+To reload a MaMuT file, go to the {% include bc content="Plugins | MaMuT
+| Load MaMuT file" %} Fiji menu item, and browse to the MaMuT XML file.
+This will load the annotation and the image data. Careful, do not mix
+the MaMuT XML file with the BigDataViewer XML file when opening the
+later.
 
 ## The MaMuT Viewer.
 

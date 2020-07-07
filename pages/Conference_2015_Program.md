@@ -15,7 +15,7 @@ Developer Conference](Conference_2015 "wikilink").
 
 {{\#widget:Google Spreadsheet
 |key=1xl0owZ1kAJDLrA2XtNjlvKwhO5ZsS5\_CMmw-dU64sFk |width=100%
-|height=700 }} 
+|height=700 }} %Replace% Clear %Replace%
 
 ## Keynote presentations
 
@@ -157,6 +157,8 @@ exciting features: revisited 3D rendering based on latest VTK version
 and a new powerful Undo framework. Finally, Icy is always evolving,
 thanks to the feedback of all its users on
 <http://icy.bioimageanalysis.org/support> \!
+
+{% include Publication content="Icy" %}
 
 \[ [Presentation video](https://vimeo.com/140929690/) \]
 
@@ -618,6 +620,8 @@ different functionalities of Icy in action, from visualization (2D/3D)
 to analysis based on a real biologic case with a lot of analysis traps
 \! Let's investigate \!
 
+{% include Publication content="Icy" %}
+
 **Workshop requirements:** An installation of
 [Icy](http://icy.bioimageanalysis.org/download) \[ [Presentation
 video](https://vimeo.com/140929698/) \]
@@ -657,7 +661,7 @@ libraries that are shared across routines.
   - NB: If you subscribe to the ImageJ-dev update site, ensure that your
     Image1 version is at least 1.50a (the ImageJ-dev update site may
     bundle an outdated version of ImageJ1). To do so, use the ImageJ1
-    command 
+    command {% include bc content="Help |Update ImageJ..." %}
 
 \[ [Presentation video](https://vimeo.com/140099767/) \]
 
@@ -911,6 +915,8 @@ of virtual tissues in Compucell-3D.
 In this poster we present a panel of Icy's features. Live demo based on
 your images, and we will try to process them thanks to one of the 300
 image analysis plugins available in Icy \!
+
+{% include Publication content="Icy" %}
 
 ### Olaya Fernandez-Gayol - Using the wrMTrck plugin to analyze the Morris Water maze in mice
 

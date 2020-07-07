@@ -8,6 +8,9 @@ categories: Plugins,Segmentation,Mathematical_morphology
 description: test description
 ---
 
+{% include Infobox content="name = Distance Transform Watershed (2D and
+3D) | software = IJPB-plugins | author = 
+
 ## Introduction
 
 A classic way of separating touching objects in binary images makes use
@@ -32,9 +35,9 @@ of 1 and
 4-connectivity).](MorphoLibJ-distance-transform-watershed-basics.png
 "Basics of the Distance Transform Watershed algorithm. From left to right: sample image of touching DAPI stained cell nuclei from a confocal laser scanning microscope, binary mask calculated after filtering and thresholding input image, inverse of the distance transform applied to the binary mask (Chamfer distance map using normalized Chessknight weights and 32-bit output) and resulting labeled image after applying watershed to the inverse distance image using the binary mask (dynamic of 1 and 4-connectivity).")
 
-[MorphoLibJ](MorphoLibJ "wikilink") provides two plugins under the {{ bc
-| Plugins | MorphoLibJ | Binary Images...}} menu to apply this strategy
-on 2D and 3D images:
+[MorphoLibJ](MorphoLibJ "wikilink") provides two plugins under the {%
+include bc content="Plugins | MorphoLibJ | Binary Images..." %} menu to
+apply this strategy on 2D and 3D images:
 
 ## Distance Transform Watershed
 
@@ -138,7 +141,8 @@ need to [
 add](How_to_follow_a_3rd_party_update_site#Add_update_sites "wikilink")
 the IJPB-plugins update site:
 
-1\) Select  from the Fiji menu to start the updater.
+1\) Select {% include bc content="Help | Update..." %} from the Fiji
+menu to start the updater.
 
 2\) Click on *Manage update sites*. This brings up a dialog where you
 can activate additional update sites.
@@ -148,7 +152,8 @@ should see an additional jar file for download.
 
 4\) Click *Apply changes* and restart Fiji.
 
-You should now find the plugin under the sub-menu .
+You should now find the plugin under the sub-menu {% include bc
+content="Plugins |MorphoLibJ | Segmentation" %}.
 
 **Note**: the Distance Transform Watershed plugins are only two of the
 plugins included in the [MorphoLibJ](MorphoLibJ "wikilink") suite. By

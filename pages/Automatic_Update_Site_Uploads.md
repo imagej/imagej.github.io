@@ -8,6 +8,18 @@ categories:
 description: test description
 ---
 
+{% include info-box content="This guide is intended for maintaining
+non-core update sites by automating builds with [Travis
+CI](https://travis-ci.org/).  
+\* The [core update
+sites](How_to_upload_to_core_update_sites "wikilink") are updated
+manually or by [Travis CI](Travis_CI "wikilink").
+
+  - Travis CI is useful because it can freely build any open source
+    project with minimal effort.
+
+" %} %Replace% UpdateSitesMenu %Replace%
+
 # Requirements
 
   - An open-source project hosted on [GitHub](GitHub "wikilink")
@@ -135,6 +147,35 @@ files are not present in the correct locations of the local ImageJ.app,
 they will appear to have been deleted.
 
 # Caveats
+
+{% include warning-box content="**USE CAUTION HERE**
+
+1.  You are configuring Travis CI to upload the state of an ImageJ
+    installation to your update site. The current working directory IS
+    the ImageJ.app that will be uploaded. If your build artifacts are
+    not located in the `jars` or `plugins` directory, or you don't
+    manually copy scripts to the correct location, ImageJ will see these
+    items as having been deleted—**effectively removing all content from
+    your update site.** You can mitigate this danger by customizing your
+    `.travis-deploy.sh` to download your own update site into the base
+    ImageJ.app; only changes to the update site state will be uploaded.
+2.  By default—building the master branch of your repository—your update
+    site will be updated with \*\*every change\*\* to the source code.
+    Although we encourage the master branch to be "[release
+    ready](Development_Lifecycle#Phase_2:_On_master "wikilink")", a
+    safer practice would be to configure Travis CI to [only build
+    specific
+    branches](https://docs.travis-ci.com/user/customizing-the-build/#Building-Specific-Branches)—and
+    set it to build [release versions](Reproducible_builds "wikilink")
+    only—e.g. with a release version integration branch.
+3.  Using the Maven-based `.travis.yml` as suggested implies that you
+    are conforming to the managed dependencies of the parent pom.xml. If
+    you are not staying up-to-date with the ImageJ and Fiji update sites
+    (by using the latest ImageJ or Fiji [bill of
+    materials](Architecture#Bill_of_Materials "wikilink")) then this
+    automation may break your own update site.
+
+" %}
 
 # See Also
 

@@ -8,10 +8,11 @@ categories: Neuroanatomy
 description: test description
 ---
 
-This is the main documentation page for the hIPNAT (*Image Processing
-for NeuroAnatomy and Tree-like Structures*) plugins distributed through
-the [Neuroanatomy update site](User:Neuroanatomy "wikilink"), released
-in
+{% include Infobox content="software = Fiji | name = Neuroanatomy update
+site | author =  This is the main documentation page for the hIPNAT
+(*Image Processing for NeuroAnatomy and Tree-like Structures*) plugins
+distributed through the [Neuroanatomy update
+site](User:Neuroanatomy "wikilink"), released in
 [April 2016](http://forum.imagej.net/t/launch-of-the-neuroanatomy-update-site/1377?u=tferr).
 For a list of all pages in this wiki related to Neuroanatomy have a look
 at [:Category:Neuroanatomy](:Category:Neuroanatomy "wikilink"). 
@@ -31,77 +32,29 @@ it](Troubleshooting#Checking_the_Java_version "wikilink").
 
 **Subscribing to the Neuroanatomy update site:**
 
-1.  Run [](Update_Sites "wikilink")
+1.  Run [{% include bc content="Help|Update..."
+    %}](Update_Sites "wikilink")
 2.  Click *Manage update sites*
-3.  Select the *Neuroanatomy* checkbox (see also )
+3.  Select the *Neuroanatomy* checkbox (see also %Replace%
+    ListOfUpdateSites %Replace% )
 4.  Click *Apply changes* and Restart ImageJ.
 
 # List of commands
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p><strong>Name</strong></p></td>
-<td><p><strong>Menu Path</strong></p></td>
-<td><p><strong>Description</strong></p></td>
-</tr>
-<tr class="even">
-<td><p><em>Topological Skeletons</em></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>Strahler classifier</p></td>
-<td></td>
-<td><p>Described in <a href="Strahler_Analysis" title="wikilink">Strahler Analysis</a>. Implemented as a .</p></td>
-</tr>
-<tr class="even">
-<td><p>Summarize Skeleton</p></td>
-<td></td>
-<td><p>Bulk statistics of skeletonized images. Implemented as a .</p></td>
-</tr>
-<tr class="odd">
-<td><p>Particles classifier</p></td>
-<td></td>
-<td><p>Tags particles according to skeleton features. Detects maxima on a masked image and clusters detected maxima using features of the skeletonized mask. A maxima is considered to be associated to a skeleton feature (e.g., a junction or end-point, see <a href="AnalyzeSkeleton" title="wikilink">AnalyzeSkeleton</a>) if the distance between its centroid and the feature is less than or equal to a cuttoff ("snap to") distance. Implemented as a .</p></td>
-</tr>
-<tr class="even">
-<td><p><em>Import/Export</em></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>Tracings importer</p></td>
-<td></td>
-<td><p>Renders traced reconstructions (<a href="SNT:_.traces_File_Format" title="wikilink">.traces</a> - <a href="SNT" title="wikilink">SNT</a>'s format - and <a href="http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html">.swc</a> files) in ImageJ's <a href="3D_Viewer" title="wikilink">3D Viewer</a> or as skeletonized image stacks. Implemented as a .</p></td>
-</tr>
-<tr class="even">
-<td><p>Traces converter</p></td>
-<td></td>
-<td><p>Batch conversion of <a href="Simple_Neurite_Tracer" title="wikilink">Simple Neurite Tracer</a>'s <a href="Simple_Neurite_Tracer:_.traces_File_Format" title="wikilink">.traces files</a> into <a href="http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html">SWC</a>. Implemented as a .</p></td>
-</tr>
-<tr class="odd">
-<td><p>Multi-SWC renderer</p></td>
-<td></td>
-<td><p>Renders multiple SWC files in a single image canvas or a <a href="3D_Viewer" title="wikilink">3D viewer</a> universe. Implemented as a .</p></td>
-</tr>
-<tr class="even">
-<td><p>Remote File renderer</p></td>
-<td></td>
-<td><p>Exemplifies how to download and access a remote (e)SWC (internet connection required). Implemented as a .</p></td>
-</tr>
-<tr class="odd">
-<td><p><em>Utilities</em></p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>Fractal Trees</p></td>
-<td></td>
-<td><p>Synthetic images (<a href="https://en.wikipedia.org/wiki/L-system">L-System</a> Trees) useful for debugging, testing or prototyping. Implemented as a .</p></td>
-</tr>
-</tbody>
-</table>
+|                         |                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ----------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Name**                | **Menu Path**                                                                 | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| *Topological Skeletons* |                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Strahler classifier     | {% include bc content="Analyze|Skeleton|Strahler Analysis..." %}              | Described in [Strahler Analysis](Strahler_Analysis "wikilink"). Implemented as a {% include GitHub content="org=tferr|repo=hIPNAT|path=src/main/java/ipnat/skel|label=Java plugin" %}.                                                                                                                                                                                                                                                                                                                                                           |
+| Summarize Skeleton      | {% include bc content="Analyze|Skeleton|Summarize Skeleton" %}                | Bulk statistics of skeletonized images. Implemented as a {% include GitHub content="org=tferr|repo=hIPNAT|path=src/main/java/ipnat/skel|label=Java plugin" %}.                                                                                                                                                                                                                                                                                                                                                                                   |
+| Particles classifier    | {% include bc content="Analyze|Skeleton|Classify Particles Using Skeleton" %} | Tags particles according to skeleton features. Detects maxima on a masked image and clusters detected maxima using features of the skeletonized mask. A maxima is considered to be associated to a skeleton feature (e.g., a junction or end-point, see [AnalyzeSkeleton](AnalyzeSkeleton "wikilink")) if the distance between its centroid and the feature is less than or equal to a cuttoff ("snap to") distance. Implemented as a {% include GitHub content="org=tferr|repo=hIPNAT|path=src/main/resources/scripts/|label=Python script" %}. |
+| *Import/Export*         |                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Tracings importer       | {% include bc content="File|Import|Tracings (Traces/(e)SWC)..." %}            | Renders traced reconstructions ([.traces](SNT:_.traces_File_Format "wikilink") - [SNT](SNT "wikilink")'s format - and [.swc](http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html) files) in ImageJ's [3D Viewer](3D_Viewer "wikilink") or as skeletonized image stacks. Implemented as a {% include GitHub content="org=tferr|repo=hIPNAT|path=src/main/java/ipnat/|label=Java plugin" %}.                                                                                                                           |
+| Traces converter        | {% include bc content="Plugins|NeuroAnatomy|Convert Traces to SWC" %}         | Batch conversion of [Simple Neurite Tracer](Simple_Neurite_Tracer "wikilink")'s [.traces files](Simple_Neurite_Tracer:_.traces_File_Format "wikilink") into [SWC](http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html). Implemented as a {% include GitHub content="org=tferr|repo=hIPNAT|path=src/main/resources/scripts/|label=Python script" %}.                                                                                                                                                                  |
+| Multi-SWC renderer      | {% include bc content="Plugins|NeuroAnatomy|Render Multiple SWC Files" %}     | Renders multiple SWC files in a single image canvas or a [3D viewer](3D_Viewer "wikilink") universe. Implemented as a {% include GitHub content="org=tferr|repo=hIPNAT|path=src/main/resources/scripts/|label=Python script" %}.                                                                                                                                                                                                                                                                                                                 |
+| Remote File renderer    | {% include bc content="Plugins|NeuroAnatomy|Render Remote SWC File" %}        | Exemplifies how to download and access a remote (e)SWC (internet connection required). Implemented as a {% include GitHub content="org=tferr|repo=hIPNAT|path=src/main/resources/scripts/|label=Python script" %}.                                                                                                                                                                                                                                                                                                                               |
+| *Utilities*             |                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Fractal Trees           | {% include bc content="File|Open Samples|Fractal Tree" %}                     | Synthetic images ([L-System](https://en.wikipedia.org/wiki/L-system) Trees) useful for debugging, testing or prototyping. Implemented as a {% include GitHub content="org=tferr|repo=hIPNAT|path=src/main/java/ipnat/skel|label=Java plugin" %}.                                                                                                                                                                                                                                                                                                 |
 
 # Further information
 

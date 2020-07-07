@@ -8,7 +8,7 @@ categories: Cookbook,Tutorials
 description: test description
 ---
 
-\_\_FORCETOC\_\_ 
+\_\_FORCETOC\_\_ %Replace% CookbookMenu %Replace%
 
 ## Automatic Particle counting
 
@@ -34,19 +34,21 @@ background. All pixels in the image whose values lie under the threshold
 are converted to black and all pixels with values above the threshold
 are converted to white, or vice-versa.
 
-|                                                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![black\_white\_threshold.png](black_white_threshold.png "black_white_threshold.png") | There are several ways to set thresholds. Monochrome images are most simply thresholded via the menu command . The threshold can be set using the slider bars. The pixels within the threshold range are displayed in red. When you are satisfied with the threshold settings, you can then hit *Apply*. This will permanently apply the threshold settings and convert the image to binary. You have different options for setting a manual threshold. The drop-down menu set to *Default* allows you to choose between *Default* and 15 other threshold techniques. The drop-down menu set to *Red* allows you to choose between a red on white color scheme, a black on white color scheme, or an over and under color scheme. The *Dark Background* box will flip the foreground color with the background color. You can also choose to check the Stack histogram box to produce a histogram for an entire stack. |
+|                                                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![black\_white\_threshold.png](black_white_threshold.png "black_white_threshold.png") | There are several ways to set thresholds. Monochrome images are most simply thresholded via the menu command {% include bc content="Image | Adjust | Threshold" %}. The threshold can be set using the slider bars. The pixels within the threshold range are displayed in red. When you are satisfied with the threshold settings, you can then hit *Apply*. This will permanently apply the threshold settings and convert the image to binary. You have different options for setting a manual threshold. The drop-down menu set to *Default* allows you to choose between *Default* and 15 other threshold techniques. The drop-down menu set to *Red* allows you to choose between a red on white color scheme, a black on white color scheme, or an over and under color scheme. The *Dark Background* box will flip the foreground color with the background color. You can also choose to check the Stack histogram box to produce a histogram for an entire stack. |
 
 ![color\_thresholding\_manual\_threshold2.png](color_thresholding_manual_threshold2.png
 "color_thresholding_manual_threshold2.png") For color images, setting
-the threshold is done with the command sequence . The *Thresholding
+the threshold is done with the command sequence {% include bc
+content="Image | Adjust | Color Threshold..." %}. The *Thresholding
 method* option allows you to choose a thresholding techniqe other than
 the default. The *Threshold color* option allows you to choose between
 Red, White, Black, or B\&W as the thresholding color. The *Color space*
 option allows you to choose between HSB, RGB, Lab, and YUV. The
 background of the thresholded image can be made light or dark. The image
-can be converted to a binary image via the menu command .
+can be converted to a binary image via the menu command {% include bc
+content="Image | Type | 8-bit" %}.
 
 **Automatic thresholding**
 
@@ -54,13 +56,20 @@ There are many algorithms you can use to calculate the threshold without
 introducing user-bias. An evaluation of over 40 of these can be found in
 this paper:
 
-  - ().
+  - {% include Citation content="last=Sezgin |first=M.
 
-Fiji has several plugins found in the menu  for automatic calculation of
-an image threshold. These include Otsu's thresholding, maximum entropy
-threshold, and mixture modelling thresholding. For a complete list of
-the methods available with Fiji see the Plugins section located in the
-Documentation section under the Content tab at the top of this page.
+| last2=Sankur | first2=B. | title=Survey over image thresholding
+techniques and quantitative performance evaluation. |
+link=<http://dx.doi.org/10.1117/1.1631315> | journal=Journal of
+Electronic imaging | volume=13(1) | year=2004 | pages=146-168 " %} ({%
+include Scholar content="cluster=15528858675306988745" %}).
+
+Fiji has several plugins found in the menu {% include bc content="Image
+| Adjust | Threshold" %} for automatic calculation of an image
+threshold. These include Otsu's thresholding, maximum entropy threshold,
+and mixture modelling thresholding. For a complete list of the methods
+available with Fiji see the Plugins section located in the Documentation
+section under the Content tab at the top of this page.
 
 ![automatic\_thresholding\_5.1.1.2.jpg](automatic_thresholding_5.1.1.2.jpg
 "automatic_thresholding_5.1.1.2.jpg")
@@ -68,7 +77,7 @@ Documentation section under the Content tab at the top of this page.
 ### Watershed separation
 
 Overlapping objects in a binary image can be separated using the menu
-command .
+command {% include bc content="Process | Binary | Watershed" %}.
 
 First convert the image to binary by thresholding. The black pixels are
 then replaced with grey pixels of an intensity proportional to their
@@ -82,8 +91,9 @@ where a watershed line is drawn.
 
 ### Analyze Particles
 
-To analyze the particles in a segmented image, use the menu command .
-This will provide you with information about each particle in the
+To analyze the particles in a segmented image, use the menu command {%
+include bc content="Analyze | Analyze particles..." %}. This will
+provide you with information about each particle in the
 image.![|right](analyze_particles_screenshot.png "|right").
 
 Set the minimum size and maximum pixel area size to exclude anything
@@ -138,13 +148,15 @@ plugin for the automated detection and analysis of particle trajectories
 as recorded by video imaging in cell biology. The algorithm is decsribed
 in Sbalzarini and Koumoutsakos (2005\[1\]).
 
-**TrackMate** Use the menu command . This plugin allows you to perform
-single particle tracking of spot-like structures. For more in-depth
+**TrackMate** Use the menu command {% include bc content="Plugins |
+Tracking | TrackMate" %}. This plugin allows you to perform single
+particle tracking of spot-like structures. For more in-depth
 information, see the [TrackMate tutorial and
 explanation](TrackMate "wikilink").
 
-**Manual Tracking** Use the menu command . This tool allows you to keep
-track of the movement of a cell.
+**Manual Tracking** Use the menu command {% include bc content="Plugins
+| Tracking | Manual Tracking" %}. This tool allows you to keep track of
+the movement of a cell.
 
 [Category:Cookbook](Category:Cookbook "wikilink")
 [Category:Tutorials](Category:Tutorials "wikilink")

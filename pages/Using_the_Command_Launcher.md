@@ -9,8 +9,9 @@ description: test description
 ---
 
 One of the most useful functions of ImageJ is the *Command Launcher*
-(also known as *Command Finder*). The keyboard shortcut is + (or + on
-Macs).
+(also known as *Command Finder*). The keyboard shortcut is {% include
+key content="Ctrl" %}+{% include key content="L" %} (or {% include key
+content="Command" %}+{% include key content="L" %} on Macs).
 
 Once the window opens, just type part of the menu item you want to
 launch, and it will show you a list of commands that match that

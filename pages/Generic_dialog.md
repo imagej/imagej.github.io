@@ -10,13 +10,15 @@ description: test description
 
 ## Introduction
 
-The  class is part of [ImageJ1](ImageJ1 "wikilink") and can be used to
-make simple graphical user interfaces for scripts and plugins. It
-requires a bit more of work than with the [script
+The {% include Javadoc content="project = ImageJ1 | package = ij/gui |
+class = GenericDialog" %} class is part of [ImageJ1](ImageJ1 "wikilink")
+and can be used to make simple graphical user interfaces for scripts and
+plugins. It requires a bit more of work than with the [script
 parameters](Script_Parameters "wikilink") option but offers more
 possibilities.  
-Fiji offers an additional  subclass which include additional GUI item
-like a file input with a browse button.  
+Fiji offers an additional {% include Javadoc content="project = Fiji |
+package = fiji/util/gui | class = GenericDialogPlus" %} subclass which
+include additional GUI item like a file input with a browse button.  
 Like the script parameters, plugins using the Generic Dialog (or one of
 its subclass) are macro recordable.
 
@@ -121,8 +123,10 @@ details.
 By default, script and plugins process the last selected image.  
 However sometime one needs to specify different images or files as
 input.  
-The subclass  provides a couple of handful methods for such cases, while
-all methods shown above are inherited from the GenericDialog class.
+The subclass {% include Javadoc content="project = Fiji | package =
+fiji/util/gui | class = GenericDialogPlus" %} provides a couple of
+handful methods for such cases, while all methods shown above are
+inherited from the GenericDialog class.
 
 ``` python
 from fiji.util.gui import GenericDialogPlus
@@ -182,7 +186,8 @@ Services are some ImageJ2/SciJava features that can be though of as some
 kind of package import at runtime. They are not available in a plain
 ImageJ1, thus an alternative to recall parameter in ImageJ1 is to use a
 temp file to store the previously entered parameters.  
-Here's the link to the .  
+Here's the link to the {% include Javadoc content="project = SciJava |
+package = org/scijava/prefs | class = PrefService" %}.  
 And below is a Jython example of how to use it.
 
 ``` python

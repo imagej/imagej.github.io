@@ -8,16 +8,36 @@ categories: Development
 description: test description
 ---
 
-Before an image can be analyzed, it needs to be opened properly. The way
-scientific image data can be stored varies wildly - with custom formats
-as numerous as the different brands and models of instruments used in
-their acquisition. Therefore, supporting a wide variety of formats is
-critical to the success of an image analysis platform like
-ImageJ.[ImageJ2](ImageJ2 "wikilink") provides a comprehensive solution
-to the issue of data formats in the form of [SCIFIO](SCIFIO "wikilink")
-data format plugins. [SCIFIO](SCIFIO "wikilink"), the SCientific Image
-Format Input and Output library, is a flexible framework for image
-format support. To get started writing SCIFIO formats:
+{% include DevelopMenu content="tutorials" %}Before an image can be
+analyzed, it needs to be opened properly. The way scientific image data
+can be stored varies wildly - with custom formats as numerous as the
+different brands and models of instruments used in their acquisition.
+Therefore, supporting a wide variety of formats is critical to the
+success of an image analysis platform like ImageJ.{% include ImageJ1
+content="With [ImageJ 1.x](ImageJ_1.x "wikilink"), a special
+[HandleExtraFileTypes](https://imagej.net/plugins/file-handler.html)
+plugin exists that can be modified to support new data formats—but it
+has some significant disadvantages:
+
+  - It only provides limited extensibility: there can only be one
+    `HandleExtraFileTypes` installed into ImageJ at a time, so all
+    desired modifications to the plugin must be somehow combined. This
+    makes it impossible to, for example, ship a different
+    `HandleExtraFileTypes` on two different ImageJ [Update
+    Sites](Update_Sites "wikilink") and have both additions be available
+    in the same installation.
+  - Data formats added in this manner cannot override or extend
+    ImageJ1's built in support for certain file formats. In particular,
+    ImageJ1 supports only a subset of the TIFF specification, and this
+    issue cannot be circumvented via `HandleExtraFileTypes`
+    modifications." %}[ImageJ2](ImageJ2 "wikilink") provides a
+    comprehensive solution to the issue of data formats in the form of
+    [SCIFIO](SCIFIO "wikilink") data format plugins.
+    [SCIFIO](SCIFIO "wikilink"), the SCientific Image Format Input and
+    Output library, is a flexible framework for image format support. To
+    get started writing SCIFIO formats:
+
+<!-- end list -->
 
   - Check out the [SCIFIO
     tutorials](https://github.com/scifio/scifio-tutorials/tree/master/core/src/main/java/io/scif/tutorials/core).

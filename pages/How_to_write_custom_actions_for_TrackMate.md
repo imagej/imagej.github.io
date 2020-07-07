@@ -8,6 +8,8 @@ categories: Tutorials
 description: test description
 ---
 
+%Replace% ExtendingTrackMateTutorials %Replace%
+
 ## Introduction.
 
 Actions were my crude solution to the problem of adding random features
@@ -36,12 +38,19 @@ to hide it from the view menu. Hereby preventing the user to access it.
 No problem, we will now build an action that will launch it as a
 supplementary view.
 
-## The  interface.
+\== The {% include GitHub
+content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/action/TrackMateActionFactory.java|label=TrackMateActionFactory"
+%} interface. ==
 
 Again, the action behavior and its integration in TrackMate are split in
-two classes. The behavior is described by the  interface. The
-integration mechanism is controlled by the  interface, which extends the
- interface.
+two classes. The behavior is described by the {% include GitHub
+content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/action/TrackMateAction.java|label=TrackMateAction"
+%} interface. The integration mechanism is controlled by the {% include
+GitHub
+content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/action/TrackMateActionFactory.java|label=TrackMateActionFactory"
+%} interface, which extends the {% include GitHub
+content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/TrackMateModule.java|label=TrackMateModule"
+%} interface.
 
 ### [SciJava](SciJava "wikilink") parameters recap.
 
@@ -82,7 +91,9 @@ public TrackMateAction create( final TrackMateGUIController controller )
 
 This means that when we create our specific action, we have access to
 the some of GUI context through the controller. We therefore have to
-check its  to know what we can get. It gives us access to:
+check its {% include GitHub
+content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/gui/TrackMateGUIController.java|label=API"
+%} to know what we can get. It gives us access to:
 
   - The GUI window itself (`public TrackMateWizard getGUI()`), that we
     can use as parent for dialogs, wild live GUI editing...
@@ -152,7 +163,9 @@ public class LaunchEventLoggerActionFactory implements TrackMateActionFactory
 
 Nothing complicated.
 
-## The  interface.
+\== The {% include GitHub
+content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/action/TrackMateAction.java|label=TrackMateAction"
+%} interface. ==
 
 This interface is just made of two methods:
 

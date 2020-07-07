@@ -8,8 +8,9 @@ categories: Plugins
 description: test description
 ---
 
-{| |style="vertical-align:top" | ![Transform Virtual Stack scheme - All
-images are transformed based on the XML
+{% include Infobox content="name = Transform Virtual Stack Slices |
+software = Fiji | author = {| |style="vertical-align:top" | ![Transform
+Virtual Stack scheme - All images are transformed based on the XML
 files](Transform_Virtual_Stack_scheme.png
 "Transform Virtual Stack scheme - All images are transformed based on the XML files")
 |}

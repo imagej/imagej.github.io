@@ -8,12 +8,31 @@ categories:
 description: test description
 ---
 
-Here you can
+{% include TOC content="right" %}Here you can
 [download](https://downloads.imagej.net/ImageJ2-20160205.zip) an "all
 platforms" version of ImageJ, without a bundled Java or extra
 extensions.
 
+{% include info-box content="Unfortunately, due to the ongoing
+transition from Java 6 to Java 8, this download of "plain ImageJ2"
+cannot currently be updated to the latest Java-8-compatible version. See
+the [Java 8](Java_8 "wikilink") page for details. For the time being, we
+recommend [using the Fiji distribution of
+ImageJ](Fiji/Downloads "wikilink") to stay current with updates." %}
+
 <div style="width: 440px">
+
+{% include sidebox-right content="| bgcolor=white | text=
+
+<center>
+
+![ link=<https://downloads.imagej.net/ImageJ2-20160205.zip> | 192px
+](Imagej2-download-icon.png
+" link=https://downloads.imagej.net/ImageJ2-20160205.zip | 192px ")
+
+</center>
+
+" %}
 
 </div>
 
@@ -36,6 +55,8 @@ pre-installed.
 
 </div>
 
+%Replace% Clear %Replace%
+
 # System requirements
 
 ImageJ will run on any system that has a Java 8 (or later) runtime
@@ -49,9 +70,10 @@ installed. This includes, but is not limited to:
 
 # Installation
 
-ImageJ is distributed as a [portable
-application](wikipedia:Portable_application "wikilink"). That means that
-you do not have to run an installer; just download, unpack and start it.
+%Replace% AvoidProgramFiles %Replace% ImageJ is distributed as a
+[portable application](wikipedia:Portable_application "wikilink"). That
+means that you do not have to run an installer; just download, unpack
+and start it.
 
 # Troubleshooting
 

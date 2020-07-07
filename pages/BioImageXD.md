@@ -8,6 +8,11 @@ categories: Related Software,Citable
 description: test description
 ---
 
+{% include Infobox content="name = BioImageXD | software = BioImageXD |
+author = Pasi Kankaanpää  
+Lassi Paavolainen  
+Varpu Marjomäki  
+Jyrki Heino  
 BioImageXD is a free open source software package for analyzing,
 processing and visualizing multi-dimensional microscopy images.
 

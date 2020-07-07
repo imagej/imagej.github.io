@@ -10,6 +10,13 @@ description: test description
 
 ## Important Note
 
+{% include warning-box content="***Please Note: This version of the
+software is outdated. It will be part of Fiji for the time being, but I
+highly recommend using the new [Multiview Reconstruction
+Plugin](Multiview-Reconstruction "wikilink"). It is much more powerful,
+flexible and completely integrated with the
+[BigDataViewer](BigDataViewer "wikilink").***" %}
+
 ## Citation
 
 Please note that the SPIM registration plugin available through Fiji, is

@@ -8,6 +8,15 @@ categories: Plugins
 description: test description
 ---
 
+{% include warning-box content="The SLIM Curve plugin for ImageJ has
+been discontinued in favor of [FLIMJ](FLIMJ "wikilink")." %}
+
+{% include Infobox content="software = ImageJ | name = SLIM Curve plugin
+| logo = ![Slim-curve-icon.png](Slim-curve-icon.png
+"Slim-curve-icon.png") | author = [CRUK/MRC at University of
+Oxford](http://www.rob.ox.ac.uk/)  
+[UW-Madison LOCI](http://loci.wisc.edu/) | maintainer = 
+
 ## Introduction
 
 ![SLIM-screenshot.png](SLIM-screenshot.png "SLIM-screenshot.png")
@@ -48,7 +57,8 @@ The SLIM Curve plugin is available from the "SLIM Curve" [update
 site](update_site "wikilink").
 
 Once you have installed the SLIM Curve plugin it becomes available on
-the menu under .
+the menu under {% include bc content="Analyze | Lifetime | SLIM Curve"
+%}.
 
 ## Usage
 
@@ -591,9 +601,10 @@ classification are:
     region not needed.
 7.  Run the Create Mask and Create Selection commands to make the ROI.
     You can execute commands easily using the [Command
-    Finder](Command_Finder "wikilink") (press ).
-8.  Add the ROI to ROI manager by pressing . Use it on overlay with
-    lifetime image and start analyzing.
+    Finder](Command_Finder "wikilink") (press {% include Key content="L"
+    %}).
+8.  Add the ROI to ROI manager by pressing {% include Key content="T"
+    %}. Use it on overlay with lifetime image and start analyzing.
 
 ![Weka\_module.JPG](Weka_module.JPG "Weka_module.JPG")
 ![Overlay.JPG](Overlay.JPG "Overlay.JPG")

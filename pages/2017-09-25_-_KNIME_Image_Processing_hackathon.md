@@ -8,9 +8,10 @@ categories: News,ImageJ2,Fiji
 description: test description
 ---
 
-From Wednesday, September 20, 2017 through Friday, September 28, 2017, 
-of [KNIME](https://www.knime.org) hosted \~20 developers at the [KNIME
-Konstanz Regional Office](https://www.knime.com/contact) for a
+From Wednesday, September 20, 2017 through Friday, September 28, 2017,
+{% include Person content="Dietzc" %} of [KNIME](https://www.knime.org)
+hosted \~20 developers at the [KNIME Konstanz Regional
+Office](https://www.knime.com/contact) for a
 [hackathon](hackathon "wikilink") to develop the KNIME Image Processing
 extensions along with the underlying [ImageJ Ops](ImageJ_Ops "wikilink")
 library, as well as other related and/or supporting technologies such as
@@ -22,56 +23,97 @@ learning networks applied to biological data.
 
 ## Participants
 
-  - KNIME: , , Jon Fuller, , , , , , 
-  - MPI-CBG Dresden: , , , , , , , 
-  - Others: , , , , , , Julianus Pfeuffer, , Jonas Probst, René Rahn, 
+  - KNIME: {% include Person content="dietzc" %}, {% include Person
+    content="gab1one" %}, Jon Fuller, {% include Person
+    content="AlexanderFillbrunn" %}, {% include Person
+    content="Squareys" %}, {% include Person content="hornm" %}, {%
+    include Person content="SimonSchmid" %}, {% include Person
+    content="MarcelWiedenmann" %}, {% include Person
+    content="patrick-winter-knime" %}
+  - MPI-CBG Dresden: {% include Person content="fjug" %}, {% include
+    Person content="maarzt" %}, {% include Person content="tibuch" %},
+    {% include Person content="tpietzsch" %}, {% include Person
+    content="mp007" %}, {% include Person content="frauzufall" %}, {%
+    include Person content="xulman" %}, {% include Person
+    content="HedgehogCode" %}
+  - Others: {% include Person content="imagejan" %}, {% include Person
+    content="chaubold" %}, {% include Person content="stelfrich" %}, {%
+    include Person content="Treiblesschorle" %}, {% include Person
+    content="milkyklim" %}, {% include Person content="kmader" %},
+    Julianus Pfeuffer, {% include Person content="StephanPreibisch" %},
+    Jonas Probst, René Rahn, {% include Person content="ctrueden" %}
 
 ## Hackathon progress
 
 ### Curtis Rueden
 
-  - Worked with  on automating releases of [SciJava
+  - Worked with {% include Person content="Stelfrich" %} on automating
+    releases of [SciJava
     components](Architecture#Definitions "wikilink") via [Travis
     CI](Travis_CI "wikilink")
     (\[<https://github.com/scijava/scijava-scripts/compare/0235621>...f5965c3
-    1\], , ).
-  - Assisted  in improvements to the `imagej-maven-plugin` ()
-  - Reviewed and merged 's initial revamp of the SciJava log framework
-    (, ).
-  - Reviewed and merged 's work adding a SciJava widget for `File[]`
-    inputs (, , ).
-  - With , began work on several related SciJava scripting enhancements
+    1\], {% include GitHub content="org=scijava | repo=pom-scijava-base
+    | commit=869206b008592b6849731fe5050817f888ae8a14 | label=2" %}, {%
+    include GitHub content="org=scijvaa | repo=pom-scijava-base |
+    commit=7ec8e5fbabe0d64350cc6b6de92861a3cd89b828 | label=3" %}).
+  - Assisted {% include Person content="Stelfrich" %} in improvements to
+    the `imagej-maven-plugin` ({% include GitHub content="org=imagej |
+    repo=imagej-maven-plugin | pr=24 | label=1" %})
+  - Reviewed and merged {% include Person content="maarzt" %}'s initial
+    revamp of the SciJava log framework ({% include GitHub
+    content="org=scijava | repo=scijava-common | pr=272 | label=1" %},
+    {% include GitHub content="org=scijava | repo=scijava-ui-swing |
+    pr=25 | label=2" %}).
+  - Reviewed and merged {% include Person content="Eglinger" %}'s work
+    adding a SciJava widget for `File[]` inputs ({% include GitHub
+    content="org=scijava | repo=scijava-common | pr=286 | label=1" %},
+    {% include GitHub content="org=scijava | repo=scijava-ui-swing |
+    pr=27 | label=2" %}, {% include GitHub content="org=imagej |
+    repo=imagej-legacy | pr=165 | label=3" %}).
+  - With {% include Person content="Eglinger" %}, began work on several
+    related SciJava scripting enhancements
     ([1](https://github.com/scijava/scijava-common/issues/261#issuecomment-331487719)).
-  - Helped  and  with ImageJ/TensorFlow integration and API improvements
-    (PR(s) to `imagej/imagej-tensorflow` forthcoming).
-  - With , continued work on the next-generation SciJava Struct API,
-    including an overhauled widget framework and Swing widget
-    implementations (as of this writing, on an unstable branch of
-    `scijava/scijava-ops` repository; see
+  - Helped {% include Person content="HedgehogCode" %} and {% include
+    Person content="frauzufall" %} with ImageJ/TensorFlow integration
+    and API improvements (PR(s) to `imagej/imagej-tensorflow`
+    forthcoming).
+  - With {% include Person content="Dietzc" %}, continued work on the
+    next-generation SciJava Struct API, including an overhauled widget
+    framework and Swing widget implementations (as of this writing, on
+    an unstable branch of `scijava/scijava-ops` repository; see
     [here](https://github.com/scijava/scijava-common/issues/42#issuecomment-332658377)
     for a written update with illustration of progress).
-  - Helped  set up his  with [Travis CI](Travis_CI "wikilink") and
-    deploy it to the ImageJ Maven repository.
+  - Helped {% include Person content="chaubold" %} set up his {% include
+    GitHub content="org=ilastik | repo=ilastik4ij | label=shiny new
+    Ilastik-ImageJ integration" %} with [Travis
+    CI](Travis_CI "wikilink") and deploy it to the ImageJ Maven
+    repository.
 
 ### Florian Jug
 
   - Worked on a KNIME workflow that starts IsoNet-type deep nets on a
     image column. Works well now, but we want to move tiled executions
     out from python and move it into KNIME (and also Fiji). This
-    follow-up work will be performed by  and .
+    follow-up work will be performed by {% include Person
+    content="frauzufall" %} and {% include Person content="HedgehogCode"
+    %}.
   - Received TGMM groin truth data an started working on Tr3d demo
     dataset.
   - Started working on min cell-cycle constraints for Tr2d. This will
     make the ILP explode...
-  - Discussions with ,  and  about ImageJ Conference details for 2018.
+  - Discussions with {% include Person content="ctrueden" %}, {% include
+    Person content="Stelfrich" %} and {% include Person
+    content="tpietzsch" %} about ImageJ Conference details for 2018.
 
 ### Tim-Oliver Buchholz
 
   - Worked on the [Big Data Viewer
     GUI](https://github.com/knime-ip/knip-bdv).
-  - Helped  and  with KNIME Image Processing Node development.
+  - Helped {% include Person content="maarzt" %} and {% include Person
+    content="xulman" %} with KNIME Image Processing Node development.
   - Fixed `DefaultDifferenceVariance` feature of the Haralick
-    feature-set in `imagej-ops` ().
+    feature-set in `imagej-ops` ({% include GitHub content="org=imagej |
+    repo=imagej-ops | pr=523 | label=1" %}).
 
 ### Benjamin Wilhelm
 
@@ -79,23 +121,38 @@ learning networks applied to biological data.
   - Added Overlap to TiledView
     [PR](https://github.com/imglib/imglib2/pull/179) in imglib2.
   - Worked on API improvements in `imagej/imagej-tensorflow` with the
-    help of .
+    help of {% include Person content="ctrueden" %}.
   - Programmed KNIME Image Processing nodes which provied a loop over
     tiles of an image. See [branch on
     GitHub](https://github.com/knime-ip/knip/commits/tiling-nodes).
 
 ### Stefan Helfrich
 
-  - Worked on improvements to the `imagej-maven-plugin` (, , )
-  - Got , , and  started on integrating their SciJava Commands as KNIME
-    nodes
-  - Reviewed PRs of `imagej-ops` (, , ,
+  - Worked on improvements to the `imagej-maven-plugin` ({% include
+    GitHub content="org=imagej | repo=imagej-maven-plugin | pr=24 |
+    label=1" %}, {% include GitHub content="org=imagej |
+    repo=imagej-maven-plugin | pr=26 | label=2" %}, {% include GitHub
+    content="org=imagej | repo=imagej-maven-plugin | pr=27 | label=3"
+    %})
+  - Got {% include Person content="chaubold" %}, {% include Person
+    content="maarzt" %}, and {% include Person content="xulman" %}
+    started on integrating their SciJava Commands as KNIME nodes
+  - Reviewed PRs of `imagej-ops` ({% include GitHub content="org=imagej
+    | repo=imagej-ops | pr=523 | label=1" %}, {% include GitHub
+    content="org=imagej | repo=imagej-ops | pr=519 | label=2" %}, {%
+    include GitHub content="org=imagej | repo=imagej-ops | pr=510 |
+    label=3" %},
     [4](http://forum.imagej.net/t/frangi-vesselness-filter-feedback/6747))
   - Looked into migration of algorithms from MorphoLibJ to Ops/ImgLib2
-  - Worked with  on migrating an ImageJ1 plugin to a SciJava Command
-    (and possibly Ops for computations)
-  - Fixed some bugs with respect to `@Parameters` (, )
-  - Paired with  to push the cloud-based build and deploy infrastructure
+  - Worked with {% include Person content="milkyklim" %} on migrating an
+    ImageJ1 plugin to a SciJava Command (and possibly Ops for
+    computations)
+  - Fixed some bugs with respect to `@Parameters` ({% include GitHub
+    content="org=imagej | repo=imagej-common | pr=69 | label=1" %}, {%
+    include GitHub content="org=imagej | repo=imagej-legacy | pr=171 |
+    label=2" %})
+  - Paired with {% include Person content="Rueden" %} to push the
+    cloud-based build and deploy infrastructure
 
 ### Tobias Pietzsch
 
@@ -103,13 +160,16 @@ learning networks applied to biological data.
     ["cleaned-up"](https://github.com/imglib/imglib2-roi/tree/8bafc8de2d83531aaef46ee36964731a78204589),
     imglib-tests branch
     ["roi"](https://github.com/imglib/imglib2-tests/tree/ec0df49bf5fc344f6ae5af5fec8584a36e3d2ca2)).
-  - Reviewed imglib2-roi , and worked on revision/re-implementation of
-    core interfaces and operators (imglib2-roi branch
+  - Reviewed imglib2-roi {% include GitHub content="org=imglib |
+    repo=imglib-roi | pr=29 | label=Masks PR" %}, and worked on
+    revision/re-implementation of core interfaces and operators
+    (imglib2-roi branch
     ["troi"](https://github.com/imglib/imglib2-roi/tree/c41c93acf696b801e13f5023bf00527c04722263)).
   - Worked on reviewing and integrating "dynamic bookmarks" feature by
     [Max Kleinhenz](https://github.com/maxkleinhenz/bigdataviewer-core)
     into BigDataViewer.
-  - Minor BigDataViewer features to help  with [Big Data Viewer
+  - Minor BigDataViewer features to help {% include Person
+    content="tibuch" %} with [Big Data Viewer
     GUI](https://github.com/knime-ip/knip-bdv).
 
 ### Matthias Arzt
@@ -124,8 +184,9 @@ learning networks applied to biological data.
 
 ## Technical discussions
 
-  - Fiji component and application releases: today and in the future (,
-    , )
+  - Fiji component and application releases: today and in the future ({%
+    include Person content="ctrueden" %}, {% include Person
+    content="fjug" %}, {% include Person content="tpietzsch" %})
       - Next stable release (December 2017) will still follow the 'old'
         way of doing things.
       - In case the DFG grant comes in and we hired the 2 people they

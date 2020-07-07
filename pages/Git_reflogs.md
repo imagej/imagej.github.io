@@ -8,6 +8,8 @@ categories: Git
 description: test description
 ---
 
+%Replace% GitMenu %Replace%
+
 # Git's reflogs
 
 ## What is a "ref"?

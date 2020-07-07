@@ -14,9 +14,10 @@ measure phenotypes from thousands of images automatically.
 
 ## Publications
 
-  - 
-  - 
-  - 
+  - {% include Publication content="CellProfiler3" %}
+  - {% include Publication content="CellProfiler2" %}
+  - {% include Publication content="CellProfiler" %}
+
 [Category:Related Software](Category:Related_Software "wikilink")
 [Category:SciJava](Category:SciJava "wikilink")
 [Category:Citable](Category:Citable "wikilink")

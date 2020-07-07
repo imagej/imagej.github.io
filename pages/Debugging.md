@@ -8,6 +8,11 @@ categories: Development
 description: test description
 ---
 
+%Replace% DevelopMenu %Replace% {% include info-box content="This page
+has approaches for *software developers* to use for debugging ImageJ.  
+If you are a *user* looking to troubleshoot issues, see the
+[Troubleshooting](Troubleshooting "wikilink") page." %}
+
 # Launching ImageJ in debug mode
 
 To debug problems with ImageJ, it is often helpful to launch it in debug
@@ -427,10 +432,11 @@ Potochkin](http://weblogs.java.net/blog/alexfromsun/archive/2006/02/debugging_sw
 
 # Debugging Java3D issues
 
-When Java3D does not work, the first order of business is to use . If
-this shows a rotating cube, but the [3D Viewer](3D_Viewer "wikilink")
-does not work, please click on  in the [3D
-Viewer](3D_Viewer "wikilink")'s menu bar.
+When Java3D does not work, the first order of business is to use {%
+include bc content="Plugins | Utilities | Debugging | Test Java3D" %}.
+If this shows a rotating cube, but the [3D Viewer](3D_Viewer "wikilink")
+does not work, please click on {% include bc content="Help | Java3D
+Properties..." %} in the [3D Viewer](3D_Viewer "wikilink")'s menu bar.
 
 ## Command line debugging
 
@@ -494,7 +500,8 @@ Further, some setups require enough RAM to be reserved, so you might
 need to pass an option like *--mem=1200m* (make sure that you have
 enough RAM free before starting ImageJ that way, though\!). If it turns
 out that memory was the issue, you can make the setting permanent by
-clicking ImageJ's  menu entry.
+clicking ImageJ's {% include bc content="Edit | Options | Memory &
+Threads..." %} menu entry.
 
 ## More Java 3D properties
 
@@ -771,14 +778,18 @@ Since this provides a shared [GNU
 screen](http://savannah.gnu.org/projects/screen/) session, both the user
 and the developer can execute commands and see the output. It is even
 quite common to use the terminal window as sort of a private chat room
-by typing out what you have to say, ending the line with a + (lest it
-get executed as a command).
+by typing out what you have to say, ending the line with a {% include
+key content="Ctrl" %}+{% include key content="C" %} (lest it get
+executed as a command).
 
 After the debugging party is over, the user can log out securely by
-hitting + to log out from the local machine (since the user typed in
-their password in the GNU screen session herself, there is no way for
-the developer to log back in without the user's explicit consent).
-Another + will terminate the GNU screen session, and yet another + will
-log out from the shared account on the SSH server.
+hitting {% include key content="Ctrl" %}+{% include key content="D" %}
+to log out from the local machine (since the user typed in their
+password in the GNU screen session herself, there is no way for the
+developer to log back in without the user's explicit consent). Another
+{% include key content="Ctrl" %}+{% include key content="D" %} will
+terminate the GNU screen session, and yet another {% include key
+content="Ctrl" %}+{% include key content="D" %} will log out from the
+shared account on the SSH server.
 
 [Category:Development](Category:Development "wikilink")

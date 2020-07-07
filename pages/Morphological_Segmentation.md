@@ -8,8 +8,9 @@ categories: Plugins,Segmentation,Mathematical_morphology,Citable
 description: test description
 ---
 
-{| |style="vertical-align:top" |![Visual description of the different
-steps of the Morphological Segmentation
+{% include Infobox content="name = Morphological Segmentation | software
+= IJPB-plugins | author = {| |style="vertical-align:top" |![Visual
+description of the different steps of the Morphological Segmentation
 plugin.](Morphological-Segmentation-animation-blobs.gif
 "Visual description of the different steps of the Morphological Segmentation plugin.")
 |}
@@ -280,7 +281,8 @@ need to [
 add](How_to_follow_a_3rd_party_update_site#Add_update_sites "wikilink")
 the IJPB-plugins update site:
 
-1\) Select  from the Fiji menu to start the updater.
+1\) Select {% include bc content="Help | Update..." %} from the Fiji
+menu to start the updater.
 
 2\) Click on *Manage update sites*. This brings up a dialog where you
 can activate additional update sites.
@@ -290,7 +292,8 @@ should see an additional jar file for download.
 
 4\) Click *Apply changes* and restart Fiji.
 
-You should now find the plugin under the sub-menu .
+You should now find the plugin under the sub-menu {% include bc
+content="Plugins | MorphoLibJ | Segmentation" %}.
 
 **Note**: Morphological Segmentation is only one of the plugins included
 in the [MorphoLibJ](MorphoLibJ "wikilink") library. By following these
@@ -308,7 +311,8 @@ in the suite.
 If you need to cite the plugin, please do so by citing the following
 paper:
 
-  - 
+  - {% include Publication content="MorphoLibJ" %}
+
 To cite the implementation, [MorphoLibJ](MorphoLibJ "wikilink")'s code
 repository has its own [DOI](http://dx.doi.org/10.5281/zenodo.50694).
 

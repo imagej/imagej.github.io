@@ -22,3 +22,8 @@ is actively working towards tight integration with the
 developed by the de.NBI center CIBI. DAIS has a strong focus on further
 strengthening interoperability and integration of Fiji and KNIME, as
 well as bringing together their respective developer communities.
+
+{% include info-box content="message=If you are a Fiji user within the
+de.NBI network, we kindly ask for your feedback through [this
+survey](https://www.surveymonkey.de/r/denbi-service?sc=cibi&tool=fiji)."
+%}

@@ -9,7 +9,11 @@ description: test description
 ---
 
 The following is the original text of the
-[ImageJDev](ImageJ2 "wikilink") grant proposal circa mid-2009. 
+[ImageJDev](ImageJ2 "wikilink") grant proposal circa mid-2009. {%
+include warning-box content="message = Please note that
+[ImageJ2](ImageJ2 "wikilink")'s project directions evolved substantially
+as it developed, so the text below is dated, but in many ways, this
+document continues to represent the project's conceptual core. " %}
 
 ## Summary
 
@@ -103,14 +107,15 @@ been added, with many contributions from outside developers. The result
 has been a program with a wide range of functionality capable of solving
 a diverse collection of image processing and analysis problems,
 particularly in the life sciences. However, this pattern of growth,
-though carefully controlled by ImageJ's main developer , is no
-substitute for a holistically engineered package built from the ground
-up with a modular design. Any successful software project, after a
-period of sustained growth and the addition of functionality outside the
-scope of the program's original intent, will benefit from a subsequent
-period of scrutiny and refactoring, and ImageJ is no exception. Such
-review helps the program to remain accessible to newcomers, powerful
-enough for experts, and relevant to an evolving community.
+though carefully controlled by ImageJ's main developer {% include Person
+content="Rasband" %}, is no substitute for a holistically engineered
+package built from the ground up with a modular design. Any successful
+software project, after a period of sustained growth and the addition of
+functionality outside the scope of the program's original intent, will
+benefit from a subsequent period of scrutiny and refactoring, and ImageJ
+is no exception. Such review helps the program to remain accessible to
+newcomers, powerful enough for experts, and relevant to an evolving
+community.
 
 Based on the pressing unmet needs of the existing ImageJ community and
 the needs of several open source projects that have been hindered from

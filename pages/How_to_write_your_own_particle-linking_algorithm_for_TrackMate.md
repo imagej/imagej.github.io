@@ -8,6 +8,8 @@ categories: Tutorials
 description: test description
 ---
 
+%Replace% ExtendingTrackMateTutorials %Replace%
+
 ## Introduction.
 
 This last part on particle-linking modules concludes the series of
@@ -387,6 +389,7 @@ found on
 And this concludes flatly our series of tutorials on how to extend
 TrackMate. Go forth now, and bend it to your needs; it is *your* tool.
 
+{% include Person content="JeanYvesTinevez" %}
 ([talk](User_talk:JeanYvesTinevez "wikilink")) 09:26, 5 September 2014
 (CDT)
 

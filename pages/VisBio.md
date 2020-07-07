@@ -8,9 +8,11 @@ categories: Related Software,Citable
 description: test description
 ---
 
-VisBio is a biological visualization tool designed for easy
-visualization and analysis of multidimensional image data, developed by 
-at [UW-Madison LOCI](http://loci.wisc.edu/).
+{% include Infobox content="name = VisBio | software = VisBio | author =
+ VisBio is a biological visualization tool designed for easy
+visualization and analysis of multidimensional image data, developed by
+{% include Person content="Rueden" %} at [UW-Madison
+LOCI](http://loci.wisc.edu/).
 
 VisBio is based on the [VisAD](http://visad.ssec.wisc.edu/) Java
 component library for interactive and collaborative visualization and

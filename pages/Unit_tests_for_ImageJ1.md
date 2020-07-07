@@ -8,10 +8,11 @@ categories:
 description: test description
 ---
 
-There are a [substantial number of unit
-tests](2011-10-07_-_Unit_tests_for_ImageJ_1.45 "wikilink") to exercise
-[ImageJ 1.x](ImageJ_1.x "wikilink") functionality. You can find them in
-the :
+{% include Project content="ImageJ1" %}There are a [substantial number
+of unit tests](2011-10-07_-_Unit_tests_for_ImageJ_1.45 "wikilink") to
+exercise [ImageJ 1.x](ImageJ_1.x "wikilink") functionality. You can find
+them in the {% include GitHub
+content="org=imagej|repo=ij1-tests|label=ij1-tests repository" %}:
 
 ``` bash
 git clone git://github.com/imagej/ij1-tests
@@ -33,9 +34,11 @@ mvn clean test
 
 Or from Eclipse:
 
-1.  Import the `ij1-tests` project using  and choosing the
+1.  Import the `ij1-tests` project using {% include bc content="File |
+    Import Existing Maven Projects" %} and choosing the
     `ij1-tests/pom.xml` file.
-2.  Right-click the `ij1-tests` project, .
+2.  Right-click the `ij1-tests` project, {% include bc content="Run As |
+    JUnit Test" %}.
 
 ### Using a different version of ImageJ1
 

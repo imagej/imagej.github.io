@@ -8,6 +8,8 @@ categories: Plugins,Tracking,ImageScience
 description: test description
 ---
 
+{% include Infobox content="software = ImageScience | name = MTrackJ |
+maintainer =
 [MTrackJ](http://www.imagescience.org/meijering/software/mtrackj/) is an
 ImageJ plugin to facilitate motion tracking and analysis.
 

@@ -8,8 +8,12 @@ categories:
 description: test description
 ---
 
-SciJava is a collaboration of projects providing software for scientific
-computing—an effort to cooperate and reuse code when feasible.
+{% include Project content="SciJava" %}{% include Infobox content="name
+= SciJava | software = SciJava | logo =
+![Scijava-logo.png](Scijava-logo.png "Scijava-logo.png") | author =
+[SciJava consortium](https://scijava.org/) | maintainer = SciJava is a
+collaboration of projects providing software for scientific computing—an
+effort to cooperate and reuse code when feasible.
 
 ## The SciJava component collection
 
@@ -47,36 +51,10 @@ The following projects are part of the **[SciJava
 pledge](:Category:SciJava "wikilink")** to work together, reuse code and
 synergize wherever possible:
 
-<table>
-<tbody>
-<tr class="odd">
-<td></td>
-<td><figure>
-<img src="Cellprofiler-logo.png" title=" x64px | link=CellProfiler" alt=" x64px | link=CellProfiler" /><figcaption> x64px | link=CellProfiler</figcaption>
-</figure></td>
-<td><figure>
-<img src="Knime-logo.jpg" title=" x54px | link=KNIME" alt=" x54px | link=KNIME" /><figcaption> x54px | link=KNIME</figcaption>
-</figure></td>
-<td><figure>
-<img src="Omero-logo.png" title=" x32px | link=OMERO" alt=" x32px | link=OMERO" /><figcaption> x32px | link=OMERO</figcaption>
-</figure></td>
-<td><figure>
-<img src="Scenery-logo.png" title=" x72px | link=https://github.com/scenerygraphics/scenery" alt=" x72px | link=https://github.com/scenerygraphics/scenery" /><figcaption> x72px | link=<a href="https://github.com/scenerygraphics/scenery">https://github.com/scenerygraphics/scenery</a></figcaption>
-</figure></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><figure>
-<img src="Icy-logo.png" title=" x48px | link=Icy" alt=" x48px | link=Icy" /><figcaption> x48px | link=Icy</figcaption>
-</figure></td>
-<td></td>
-<td></td>
-<td><figure>
-<img src="Bio-formats-logo.png" title=" x28px | link=Bio-Formats" alt=" x28px | link=Bio-Formats" /><figcaption> x28px | link=Bio-Formats</figcaption>
-</figure></td>
-</tr>
-</tbody>
-</table>
+|                                      |                                                                                   |                                                              |                                                              |                                                                                                                                            |
+| ------------------------------------ | --------------------------------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| {% include Logo content="ImageJ2" %} | ![ x64px | link=CellProfiler](Cellprofiler-logo.png " x64px | link=CellProfiler") | ![ x54px | link=KNIME](Knime-logo.jpg " x54px | link=KNIME") | ![ x32px | link=OMERO](Omero-logo.png " x32px | link=OMERO") | ![ x72px | link=<https://github.com/scenerygraphics/scenery>](Scenery-logo.png " x72px | link=https://github.com/scenerygraphics/scenery") |
+| {% include Logo content="Fiji" %}    | ![ x48px | link=Icy](Icy-logo.png " x48px | link=Icy")                            | {% include Logo content="Micro-Manager | size=48px" %}       | {% include Logo content="VCell | size=48px" %}               | ![ x28px | link=Bio-Formats](Bio-formats-logo.png " x28px | link=Bio-Formats")                                                             |
 
 See the [Architecture](Architecture "wikilink") and
 [Governance](Governance "wikilink") pages, as well as the [SciJava web

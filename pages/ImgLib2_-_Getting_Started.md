@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-\_\_TOC\_\_
+%Replace% ImgLibMenu %Replace% \_\_TOC\_\_
 
 ## Creating and Displaying an Image
 

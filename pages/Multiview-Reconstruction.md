@@ -13,7 +13,10 @@ description: test description
 The integration of the **Multiview Reconstruction** and the
 [BigDataViewer](BigDataViewer "wikilink") is available through the Fiji
 Updater. Simply update Fiji and the Multiview-Reconstruction pipeline
-will be available under ''. The source code is available , please also
+will be available under '{% include bc content="Plugins | Multiview
+Reconstruction | Multiview Reconstruction Application" %}'. The source
+code is available {% include GitHub
+content="org=bigdataviewer|repo=SPIM\_Registration" %}, please also
 report feature requests & bugs there.
 
 To enable GPU hardware accelerated processing, you might want to
@@ -299,17 +302,19 @@ two of my talks were recorded:
 
 {{\#widget:YouTube|id=IupXS\_On2rg|width=773}}
 
-This 30-minute talk by  covers the theory behind registration of
-multiview lightsheet microscopy data and it also quickly addresses the
-problem of multiview fusion & deconvolution.
+This 30-minute talk by {% include Person content="StephanP" %} covers
+the theory behind registration of multiview lightsheet microscopy data
+and it also quickly addresses the problem of multiview fusion &
+deconvolution.
 
 ### Tutorial: Fiji Multiview Lightsheet Reconstruction Software
 
 {{\#widget:YouTube|id=0IkaSwfPYw0|width=773}}
 
-This one hour tutorial by  covers the basic usage of this multiview
-reconstruction software for Fiji. Documentation, source code, bug
-reports and feature requests can be found [on
+This one hour tutorial by {% include Person content="StephanP" %} covers
+the basic usage of this multiview reconstruction software for Fiji.
+Documentation, source code, bug reports and feature requests can be
+found [on
 SourceForge](https://sourceforge.net/projects/multiviewreconstruction/).
 
 ## Comments, Bugs & Feature Requests

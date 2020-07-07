@@ -8,14 +8,14 @@ categories: ImgLib,Matlab
 description: test description
 ---
 
-This page recenses experiments with creating ImgLib2 images from
-[MATLAB](MATLAB "wikilink"), and then calling ImgLib2 algorithm from
-[MATLAB](MATLAB "wikilink"). We aim first at showing how to build
-ImgLib2 types from [MATLAB](MATLAB "wikilink") types, then to do that
-efficiently. By this we mean having to <b>share</b> a single, massive
-low level data piece between ImgLib2 and [MATLAB](MATLAB "wikilink"),
-which is not doable simply due to [MATLAB](MATLAB "wikilink") memory
-model.
+%Replace% ImgLibMenu %Replace% This page recenses experiments with
+creating ImgLib2 images from [MATLAB](MATLAB "wikilink"), and then
+calling ImgLib2 algorithm from [MATLAB](MATLAB "wikilink"). We aim first
+at showing how to build ImgLib2 types from [MATLAB](MATLAB "wikilink")
+types, then to do that efficiently. By this we mean having to
+<b>share</b> a single, massive low level data piece between ImgLib2 and
+[MATLAB](MATLAB "wikilink"), which is not doable simply due to
+[MATLAB](MATLAB "wikilink") memory model.
 
 All snippets listed here are to be run from [MATLAB](MATLAB "wikilink").
 We rely on [Miji](Miji "wikilink") to set up class path, so you have to
@@ -29,7 +29,9 @@ Miji(false)
 
 In [MATLAB](MATLAB "wikilink"), we are limited to native type images
 (float, uint8, uint16, ...) represented as native arrays. The matching
-ImgLib2 container for this is the .
+ImgLib2 container for this is the {% include GitHub
+content="repo=imglib|path=core/src/main/java/net/imglib2/img/array/ArrayImg.java|label=ArrayImg"
+%}.
 
 Because ImgLib2 authors wrote nice static utilities, our work is
 relatively easy. The class `ArrayImgs` has all the methods you need, one
@@ -60,10 +62,13 @@ float for display. But the source `img` has the expected type.
 The exacts method in `ArrayImgs` depend on the native type you want to
 use, so you would have to deal with all possible cases. But there is
 already some [MATLAB](MATLAB "wikilink") functions in Fiji that does
-that in the `scripts` folder of your Fiji installation:  and . You need
-therefore to add `scripts` to your [MATLAB](MATLAB "wikilink") path, but
-this is most likely already done since it also contains `Miji` which you
-need to call already.
+that in the `scripts` folder of your Fiji installation: {% include
+GitHub content="repo=fiji|path=scripts/copytoImg.m|label=copytoImg" %}
+and {% include GitHub
+content="repo=fiji|path=scripts/copytoImgPlus.m|label=copytoImgPlus" %}.
+You need therefore to add `scripts` to your [MATLAB](MATLAB "wikilink")
+path, but this is most likely already done since it also contains `Miji`
+which you need to call already.
 
 The first function generates a plain `Img`. The second one generates and
 `ImgPlus` which allows you specifying the spatial calibration, image
@@ -172,7 +177,8 @@ right:
 
 But of course, there is a [MATLAB](MATLAB "wikilink") function that does
 all of this for you, and that you can also find in the scripts folder of
-your Fiji installation: .
+your Fiji installation: {% include GitHub
+content="repo=fiji|path=scripts/copytoMatlab.m|label=copytoMatlab" %}.
 
 ## MATLAB arrays are not shared
 

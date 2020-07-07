@@ -8,20 +8,26 @@ categories: Help
 description: test description
 ---
 
-The ImageJ community firmly believes in public discussion of the
-software. In this way, each question benefits not only the one asking,
-but everyone in the community, including everyone who subsequently does
-a [web search](http://search.imagej.net/) on the same topic.
+%Replace% HelpMenu %Replace% The ImageJ community firmly believes in
+public discussion of the software. In this way, each question benefits
+not only the one asking, but everyone in the community, including
+everyone who subsequently does a [web search](http://search.imagej.net/)
+on the same topic.
 
 # Searching ImageJ resources
 
 There is a convenient online search interface:
 
+{% include BigLink content="url=<https://search.imagej.net/>" %}
+
 # Getting help with ImageJ
+
+%Replace% RecommendedContact %Replace%
 
 ## Ways to get help
 
-There are several popular communication channels: 
+There are several popular communication channels: %Replace%
+Communication %Replace%
 
 # Troubleshooting
 

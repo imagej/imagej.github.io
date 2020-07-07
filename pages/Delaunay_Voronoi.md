@@ -8,6 +8,10 @@ categories: Plugins
 description: test description
 ---
 
+{% include Infobox content="software = ImageJ | name = Delaunay/Voronoi
+| author = Johannes Schindelin, L. Paul Chew | maintainer = Johannes
+Schindelin | source = 
+
 ## Purpose
 
 Plugin to perform Delaunay Triangulation, or draw the Voronoi Diagram
@@ -45,7 +49,8 @@ This plugin operates on a point selection consisting of multiple points.
 2.  Select the first point by clicking into the image.
 3.  Select subsequent points by holding down the Shift key while
     clicking into the image.
-4.  Run  to generate the triangulation between points.
+4.  Run {% include bc content="Plugins | Analyze | Delaunay Voronoi" %}
+    to generate the triangulation between points.
 5.  If you check the "interactive" box you can also add additional
     points (while still holding Shift) which will automatically become
     part of the triangulation.

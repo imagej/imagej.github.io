@@ -8,7 +8,8 @@ categories: Scripting
 description: test description
 ---
 
-[BeanShell](http://www.beanshell.org/) is the scripting language which
+{% include Learn content="languages"
+%}[BeanShell](http://www.beanshell.org/) is the scripting language which
 is similar both to the [ImageJ macro
 language](Introduction_into_Macro_Programming "wikilink") and to Java.
 In fact, you can even execute almost verbatim Java code, but the common
@@ -69,7 +70,7 @@ Variables are assigned a value by statements of the form **name** =
 ``` java
 intensity = 255;
 value = 2 * 8 + 1;
-title = “Hello, World!”;
+“Hello, World!”;
 text = “title”;
 ```
 

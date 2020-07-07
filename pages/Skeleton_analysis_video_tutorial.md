@@ -10,7 +10,8 @@ description: test description
 
 {{\#widget:flash|width=824|height=740|swf=1/14/Skeleton-analysis-tutorial.swf}}
 
-This video tutorial was made and edited by  using [Wink 2.0 for
+This video tutorial was made and edited by {% include Person
+content="Iarganda" %} using [Wink 2.0 for
 Windows](http://www.debugmode.com/wink/).
 
 The sample image used in the tutorial can be found here:

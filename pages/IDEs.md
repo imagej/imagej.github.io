@@ -8,7 +8,18 @@ categories: Development,IDEs
 description: test description
 ---
 
-An [integrated development
+{% include info-box content="1=
+
+<center>
+
+If you are new to programming, and wondering which IDE to try first:  
+many [ImageJ](ImageJ "wikilink") and [Fiji](Fiji "wikilink") developers
+use [Eclipse](Eclipse "wikilink") and the [command
+line](command_line "wikilink").
+
+</center>
+
+" %} {% include DevelopMenu content="tools" %}An [integrated development
 environment](wikipedia:Integrated_development_environment "wikilink")
 (IDE) is a software application that provides comprehensive facilities
 to computer programmers for software development. An IDE normally
@@ -20,6 +31,8 @@ supports [Maven](Maven "wikilink"), which includes:
 
 <center>
 
+%Replace% IDEs %Replace%
+
 </center>
 
 ## Why use an IDE?
@@ -28,22 +41,24 @@ There are many advantages of using an IDE for software development:
 
 1.  It is easy to access documentation about classes (i.e.
     [javadoc](javadoc "wikilink")): just point your cursor over the name
-    of the class, or press the keyboard shortcut (e.g., in Eclipse: ).
+    of the class, or press the keyboard shortcut (e.g., in Eclipse: {%
+    include key content="Shift|F2" %}).
 2.  You can use code completion: just type the start of the class name,
     variable, method, etc you want to use and hit the keyboard shortcut
-    (e.g., in Eclipse: ).
+    (e.g., in Eclipse: {% include key content="Ctrl|Space" %}).
 3.  Compile errors are listed in a concise list; double-clicking on a
     line in that list will move the cursor to the problem.
 4.  You can [debug your program
     interactively](Debugging_Exercises "wikilink"): just open the main
     class (i.e. a class having a `public static void main(String[]
     args)` method) and launch it in debug mode. E.g., in Eclipse: go to
-    ). This will switch to a different window layout (the *Debug
-    perspective*) which offers you a range of views that are useful for
-    debugging such as: local variables, thread stack traces, etc. You
-    can interrupt the program at any time by clicking on the *pause*
-    symbol and inspect the current state, single-step through the code
-    and even to a limited amount replace code on-the-fly.
+    {% include bc content="Run|Debug As|Java Application" %}). This will
+    switch to a different window layout (the *Debug perspective*) which
+    offers you a range of views that are useful for debugging such as:
+    local variables, thread stack traces, etc. You can interrupt the
+    program at any time by clicking on the *pause* symbol and inspect
+    the current state, single-step through the code and even to a
+    limited amount replace code on-the-fly.
 5.  The most important version control systems can be accessed easily
     through the IDE's GUI.
 6.  There are many awesome keyboard shortcuts, especially effective to

@@ -32,19 +32,17 @@ too\!
   - Troubleshoot the
     [SCIFIO-ITK-bridge](https://github.com/scifio/scifio-itk-bridge) in
     SimpleITK (Mark + Matt)
-
   - Generalize MATLABCommands to a [general
     framework](https://github.com/Tiago/Scripts/issues/14) that could be
     used in BAR (Mark + Tiago)
-
-  - The  plugin (Alex + Curtis)
-
-  - SciJava  (Curtis)
-
-  - SCIFIO  (Mark)
-
-  - bugs? (Ellen)
-
+  - The {% include GitHub content="org=imagej | repo=imagej-omero |
+    label=ImageJ-OMERO" %} plugin (Alex + Curtis)
+  - SciJava {% include GitHub content="org=scijava | repo=scijava-common
+    | pr=167 | label=robust-io redesign" %} (Curtis)
+  - SCIFIO {% include GitHub content="org=scifio | repo=scifio |
+    issue=283 | label=blockization" %} (Mark)
+  - {% include GitHub content="org=fiji | repo=colocalisation\_analysis
+    | label=Coloc2" %} bugs? (Ellen)
   - KNIME paper (Mark + Christian)
 
 ## Participants
@@ -136,15 +134,16 @@ PlotData=
 
 \* Madison locals include:
 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - {% include Person content="etarena" %}
+  - {% include Person content="Eliceiri" %}
+  - {% include Person content="Hinerm" %}
+  - {% include Person content="yuminguw" %}
+  - {% include Person content="guneetsinghmehta" %}
+  - {% include Person content="Rueden" %}
+  - {% include Person content="Awalter2" %}
+  - {% include Person content="jaywarrick" %}
+  - {% include Person content="LeonYang5114" %}
+
 Some people were not present at the hackathon on weekends.
 
 ## Locations

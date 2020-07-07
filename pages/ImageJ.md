@@ -8,13 +8,13 @@ categories: Citable,Software
 description: test description
 ---
 
-ImageJ is an open source Java image processing program inspired by [NIH
-Image](NIH_Image "wikilink"). It runs on any computer with a Java 1.8 or
-later virtual machine. [Downloadable
-distributions](Downloads "wikilink") are available for Windows, Mac OS X
-and Linux. ImageJ has a strong, established user base, with thousands of
-[plugins](plugins "wikilink") and [macros](macros "wikilink") for
-performing a wide variety of tasks.
+%Replace% AboutMenu %Replace% ImageJ is an open source Java image
+processing program inspired by [NIH Image](NIH_Image "wikilink"). It
+runs on any computer with a Java 1.8 or later virtual machine.
+[Downloadable distributions](Downloads "wikilink") are available for
+Windows, Mac OS X and Linux. ImageJ has a strong, established user base,
+with thousands of [plugins](plugins "wikilink") and
+[macros](macros "wikilink") for performing a wide variety of tasks.
 
 ## Flavors
 
@@ -60,7 +60,7 @@ ImageJDev</p></td>
 <img src="imagej1-icon.png" title="imagej1-icon.png" alt="imagej1-icon.png" width="64" /><figcaption>imagej1-icon.png</figcaption>
 </figure></td>
 <td><p><a href="ImageJ1" title="wikilink">ImageJ1</a></p></td>
-<td></td>
+<td><p>{% include Person content="Rasband" %}</p></td>
 <td><p>A stable version of ImageJ which has been in development since 1997. It has a strong, established user base, with thousands of plugins and macros for performing a wide variety of tasks.</p></td>
 <td><p>1997</p></td>
 <td><p>Active</p></td>
@@ -79,7 +79,7 @@ ImageJDev</p></td>
 <tr class="even">
 <td></td>
 <td><p><a href="ImageJFX" title="wikilink">ImageJFX</a></p></td>
-<td></td>
+<td><p>{% include Person content="cmongis" %}</p></td>
 <td><p>ImageJFX is a new user interface for ImageJ, built using <a href="wikipedia:JavaFX" title="wikilink">JavaFX</a>.</p></td>
 <td><p>2015</p></td>
 <td><p>Active</p></td>
@@ -154,7 +154,7 @@ Dec. 2009)</p></td>
 <tr class="even">
 <td></td>
 <td><p><a href="ImageJX" title="wikilink">ImageJX</a></p></td>
-<td></td>
+<td><p>{% include Person content="Harris" %}</p></td>
 <td><p>ImageJX was created as a means to discuss and explore improvements to ImageJ. There was an <a href="http://groups.google.com/group/imagejx">ImageJX mailing list</a> as well as an ImageJX software prototype.</p>
 <p>The ImageJX software prototype was a proof of concept—an attempt to reorganize ImageJ's internals to make it more flexible. The prototype demonstrated this flexibility by recasting the program in Swing. The ImageJX project formed the basis of an application to NIH for funding, which is what launched the ImageJ2 project (see above).</p></td>
 <td><p>Mar. 2009</p></td>
@@ -163,7 +163,7 @@ Dec. 2009)</p></td>
 <tr class="odd">
 <td></td>
 <td><p><a href="NIH_Image" title="wikilink">NIH Image</a></p></td>
-<td></td>
+<td><p>{% include Person content="Rasband" %}</p></td>
 <td><p>NIH Image is a public domain image processing and analysis program for the Macintosh. It is the direct predecessor of ImageJ, and is no longer under active development (though see ImageSXM below).</p></td>
 <td><p>1993 or earlier</p></td>
 <td><p>Superceded by ImageJ</p></td>
@@ -173,14 +173,15 @@ Dec. 2009)</p></td>
 
 ## History
 
-The first imaging program that  developed, starting in the late 70s, was
-called simply "Image". It was written in Pascal, ran on PDP-11
-minicomputers and ran in only 64KB of memory\! Rasband started work on
-the second, [NIH Image](NIH_Image "wikilink"), in 1987 when the Mac II
-became available. Rasband was a Mac enthusiast, and the Mac II had card
-slots just like the PDP-11. Rasband started work on ImageJ in 1997, when
-Java was becoming popular. Rasband was intrigued by the idea of creating
-a version of NIH Image that would "run anywhere", including as an applet
+The first imaging program that {% include Person content="Rasband" %}
+developed, starting in the late 70s, was called simply "Image". It was
+written in Pascal, ran on PDP-11 minicomputers and ran in only 64KB of
+memory\! Rasband started work on the second, [NIH
+Image](NIH_Image "wikilink"), in 1987 when the Mac II became available.
+Rasband was a Mac enthusiast, and the Mac II had card slots just like
+the PDP-11. Rasband started work on ImageJ in 1997, when Java was
+becoming popular. Rasband was intrigued by the idea of creating a
+version of NIH Image that would "run anywhere", including as an applet
 in Web browsers.
 
 ## Timeline
@@ -203,9 +204,9 @@ Colors =
 
 BackgroundColors = canvas:canvas
 
-Period = from:1987 till: ScaleMajor = unit:year increment:2 start:1987
-grid:grid1 ScaleMinor = unit:year increment:1 start:1987 grid:grid2
-AlignBars = justify
+Period = from:1987 till:%Replace% CURRENTYEAR %Replace% ScaleMajor =
+unit:year increment:2 start:1987 grid:grid1 ScaleMinor = unit:year
+increment:1 start:1987 grid:grid2 AlignBars = justify
 
 BarData=
 
@@ -279,9 +280,22 @@ PlotData =
 
 ## Publications
 
-  - .
+  - {% include Citation content="last = Schneider | first = C. A.
 
-  - .
+| last2 = Rasband | first2 = W. S. | last3 = Eliceiri | first3 = K. W. |
+year = 2012 | journal = Nature methods | url =
+<http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2089.html> | NIH
+Image to ImageJ: 25 years of image analysis | volume = 9(7) | pages =
+671-675 | pmid = 22930834" %}.
+
+  - {% include Citation content="last = Schindelin | first = J.
+
+| last2 = Rueden | first2 = C. T. | last3 = Hiner | first3 = M. C. |
+last4 = Eliceiri | first4 = K. W. | year = 2015 | journal = Molecular
+Reproduction and Development | url =
+<http://onlinelibrary.wiley.com/doi/10.1002/mrd.22489/full> | The ImageJ
+ecosystem: An open platform for biomedical image analysis | volume = |
+pages = | pmid = 26153368" %}.
 
 See also [Citing](Citing "wikilink").
 

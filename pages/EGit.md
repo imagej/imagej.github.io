@@ -8,8 +8,8 @@ categories: Git
 description: test description
 ---
 
-This page provides an introduction on how to start using the
-[EGit](http://www.eclipse.org/egit/) extension in the
+%Replace% GitMenu %Replace% This page provides an introduction on how to
+start using the [EGit](http://www.eclipse.org/egit/) extension in the
 [Eclipse](Eclipse "wikilink") IDE for software development.
 
 ## Installing EGit in Eclipse
@@ -18,20 +18,24 @@ In the newer versions of Eclipse, the EGit extension comes already
 preinstalled. If this should not be so in your case you can install it
 as follows:
 
-1.  in Eclipse go to 
+1.  in Eclipse go to {% include bc content="Help |Install New
+    Software..." %}
 2.  you can look in the "All Available Sites" drop down panel if EGit is
-    existing there or add update site with the  button
+    existing there or add update site with the {% include key
+    content="Add.." %} button
 3.  enter this URI: http://download.eclipse.org/egit/updates
-4.  choose the *JGit* and the *Eclipse Team Provider* and  the
-    installation
+4.  choose the *JGit* and the *Eclipse Team Provider* and {% include key
+    content="Finish" %} the installation
 
 ## Setting up EGit panels in Eclipse
 
 To have the EGit panes available you might need to set the following up:
 
-1.  go to  and select under  at least *Git Repositories* and *Git
-    Staging*
-    1.  additionally, it is helpful to add under  *History*
+1.  go to {% include bc content="Window |Show View | Others..." %} and
+    select under {% include bc content="|Git" %} at least *Git
+    Repositories* and *Git Staging*
+    1.  additionally, it is helpful to add under {% include bc
+        content="|Team" %} *History*
 
 Here you can also find a video tutorial on [integrating github with
 Eclipse](https://www.youtube.com/watch?v=ptK9-CNms98) including already
@@ -43,16 +47,21 @@ an intro on how to clone a public github repository (see below).
 2.  switch to the Git repository panel in Eclipse
 3.  *Clone a Git Repository* button (in the window which opens up the
     copied URI should be already specified. If not, change this here)
-4.  hit  and select the branch(es) you would like to clone (then hit )
+4.  hit {% include key content="Next \>" %} and select the branch(es)
+    you would like to clone (then hit {% include key content="Next \>"
+    %})
 5.  specify where all your local git repositories sould be stored and
-    press 
+    press {% include key content="Finish" %}
 6.  once the cloned repository is visible in the *Git Repositories*
     panel, you can right click on it and choose *Import Projects...*
-    1.  choose *Import as general project* and press 
-    2.  specify the projects name and 
+    1.  choose *Import as general project* and press {% include key
+        content="Next \>" %}
+    2.  specify the projects name and {% include key content="Next \>"
+        %}
 
 If the clones repository contains a [Maven](Maven "wikilink") project,
-you can then right-click it in Eclipses' package explorer and choose 
+you can then right-click it in Eclipses' package explorer and choose {%
+include bc content="Configure |Convert to Maven Project" %}
 
 Et voila, ready and all in Eclipse.
 

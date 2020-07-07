@@ -8,7 +8,10 @@ categories:
 description: test description
 ---
 
-![Wayne-rasband.jpg](Wayne-rasband.jpg "Wayne-rasband.jpg") Wayne
+{% include Userbox content="name = Wayne Rasband | affiliation = NIH
+special volunteer | loci = wayne-rasband | forum = Wayne | github =
+rasband | linkedin = in/waynerasband "
+%}![Wayne-rasband.jpg](Wayne-rasband.jpg "Wayne-rasband.jpg") Wayne
 Rasband was a software developer at the National Institutes of Health
 (NIH) for 40 years. He retired in 2010 but continues to work on ImageJ
 as an NIH volunteer. He fixes bugs, answers questions and adds features

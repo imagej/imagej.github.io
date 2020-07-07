@@ -8,7 +8,7 @@ categories: Cookbook,Tutorials
 description: test description
 ---
 
-\_\_FORCETOC\_\_ 
+\_\_FORCETOC\_\_ %Replace% CookbookMenu %Replace%
 
 ## Correcting for bleaching
 
@@ -146,10 +146,10 @@ depolarisations) the calculation is \[Frame<sub>n</sub> -
 Frame<sub>(n+1)</sub>\].
 
 Note: The plugin generates a second result stack. For large memory
-consuming stacks, run the plugin with the  key down. If the plugin is
-run with the  key down, the calculation is made on the original stack.
-This plugin may also be useful to clean up time courses prior to motion
-tracking.
+consuming stacks, run the plugin with the {% include key content="Alt"
+%} key down. If the plugin is run with the {% include key content="Alt"
+%} key down, the calculation is made on the original stack. This plugin
+may also be useful to clean up time courses prior to motion tracking.
 
 ## Surface plotting
 
@@ -177,9 +177,10 @@ the final surface plot is taken from the LUT of the image.
 
 You can surface plot either a single frame or a movie. Surface rendering
 is a slow process so it is best to pick a frame from the movie that
-shows the features you’re trying to demonstrate. Duplicate this (+) and
-use it as a test image to get the best settings for surface plotting
-your movie.
+shows the features you’re trying to demonstrate. Duplicate this ({%
+include key content="Ctrl" %}+{% include key content="D" %}) and use it
+as a test image to get the best settings for surface plotting your
+movie.
 
 Select the image to be rendered with the “*Source image(s)*” drop down
 box.

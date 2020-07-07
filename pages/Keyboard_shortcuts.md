@@ -8,26 +8,32 @@ categories: User interface
 description: test description
 ---
 
-ImageJ has a lot of keyboard shortcuts.
+%Replace% TOC %Replace% ImageJ has a lot of keyboard shortcuts.
 
 ## Listing all keyboard shortcuts
 
-For a verbose list of keyboard shortcuts, call .
+For a verbose list of keyboard shortcuts, call {% include bc
+content="Plugins | Shortcuts | List Shortcuts" %}.
 
 ## The Command Launcher
 
-Use + (on Mac, +) to open the [Command
-Launcher](Using_the_Command_Launcher "wikilink"), to call menu entries
-by name.
+Use {% include key content="Ctrl" %}+{% include key content="L" %} (on
+Mac, {% include key content="Command" %}+{% include key content="L" %})
+to open the [Command Launcher](Using_the_Command_Launcher "wikilink"),
+to call menu entries by name.
 
 ## Recent Commands
 
 To open a list of some recent commands, and a list of the most
-frequently called commands, hit + (on Mac, +).
+frequently called commands, hit {% include key content="Ctrl" %}+{%
+include key content="9" %} (on Mac, {% include key content="Command"
+%}+{% include key content="9" %}).
 
 ## Open
 
-To open new images, type + (on Mac, +).
+To open new images, type {% include key content="Ctrl" %}+{% include key
+content="O" %} (on Mac, {% include key content="Command" %}+{% include
+key content="O" %}).
 
 ## Creating your own keyboard shortcuts
 
@@ -70,9 +76,10 @@ The shortcut should be defined in square bracket like for option 1, but
 instead of editing the existing StartupMacros file, the macros(s) can be
 saved as a separate MyShortcut.ijm or .txt file in the ImageJ/Fiji
 subfolder `macros/toolsets`.  
-Then restart ImageJ/Fiji and click the  at the rightmost side of the
-fiji toolbar and click the entry MyShortcut. This will install your
-macros and thus activate the associated shortcuts.  
+Then restart ImageJ/Fiji and click the {% include bc content="\>\>" %}
+at the rightmost side of the fiji toolbar and click the entry
+MyShortcut. This will install your macros and thus activate the
+associated shortcuts.  
 This option is more convenient to distribute macros with keyboard
 shortcuts to colleagues or via an update site.
 
@@ -81,6 +88,7 @@ shortcuts to colleagues or via an update site.
 The second possibility consist in saving the macro code as a small
 script file into the `./Fiji.app/scripts/Plugins/` folder, so that it
 appears in the menu upon restart.  
-Then you can register a shortcut using 
+Then you can register a shortcut using {% include bc
+content="Plugins|Shortcuts|Add Shortcut…" %}
 
 [Category:User interface](Category:User_interface "wikilink")

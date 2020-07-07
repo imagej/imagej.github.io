@@ -10,9 +10,9 @@ description: test description
 
 {| |style="vertical-align:top" |![Trainable Weka Segmentation pipeline
 overview.](TWS-pipeline.png
-"Trainable Weka Segmentation pipeline overview.") |} **Trainable**: this
-plugin can be trained to learn from the user input and perform later the
-same task in unknown (test) data.
+"Trainable Weka Segmentation pipeline overview.") |}%Replace% TOC
+%Replace% **Trainable**: this plugin can be trained to learn from the
+user input and perform later the same task in unknown (test) data.
 
 **Weka**: it makes use of all the powerful tools and classifiers from
 the latest version of [Weka](http://www.cs.waikato.ac.nz/ml/weka/).
@@ -75,9 +75,11 @@ image](Trainable-Weka-Segmentation-GUI.png
 "Example of the first look of the plugin window when using it on a TEM image")
 [Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink")
 runs on any 2D or 3D image (grayscale or color). To use 2D features, you
-need to select the menu command . For 3D features, call the plugin under
-. Both commands will use the same GUI but offer different feature
-options in their settings.
+need to select the menu command {% include bc content="Plugins |
+Segmentation | Trainable Weka Segmentation" %}. For 3D features, call
+the plugin under {% include bc content="Plugins | Segmentation |
+Trainable Weka Segmentation 3D" %}. Both commands will use the same GUI
+but offer different feature options in their settings.
 
 By default, the plugin starts with two classes, i.e. it will produce
 **binary pixel classification**. The user can add traces to both classes
@@ -407,8 +409,9 @@ updater](https://imagej.net/How_to_follow_a_3rd_party_update_site).
 ![Settings dialog for the Trainable Weka Segmentation 3D
 plugin.](TWS-3D-Settings-dialog.png
 "Settings dialog for the Trainable Weka Segmentation 3D plugin.")When
-calling the plugin from the menu command  the set of available image
-features will be as follows:
+calling the plugin from the menu command {% include bc content="Plugins
+| Segmentation | Trainable Weka Segmentation 3D" %} the set of available
+image features will be as follows:
 
   - **Gaussian blur**: performs \(n\) individual 3D convolutions with
     Gaussian kernels with the normal \(n\) variations of \(\sigma\). The
@@ -491,8 +494,9 @@ install the Weka package that includes it. For that, you need to launch
 the Weka GUI Chooser (by clicking on the Weka button of the left panel
 of the plugin GUI) and use the [ Weka Package
 Manager](Trainable_Weka_Segmentation_-_How_to_install_new_classifiers "wikilink")
-(under ). For a step-by-step description on how to install new packages,
-have a look at this
+(under {% include bc content="Tools | Package manager" %}). For a
+step-by-step description on how to install new packages, have a look at
+this
 [tutorial](Trainable_Weka_Segmentation_-_How_to_install_new_classifiers "wikilink").
 
 ##### Class names
@@ -914,7 +918,8 @@ Segmentation](Trainable_Weka_Segmentation "wikilink") is based on a
 publication. If you use it successfully for your research please be so
 kind to cite our work:
 
-  - 
+  - {% include Publication content="Trainable Weka Segmentation" %}
+
 The [Trainable Weka
 Segmentation](Trainable_Weka_Segmentation "wikilink") code has its own
 citable [DOI](http://dx.doi.org/10.5281/zenodo.59290).

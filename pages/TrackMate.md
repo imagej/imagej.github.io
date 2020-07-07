@@ -17,6 +17,8 @@ Please note that TrackMate is available through Fiji, and is based on a
 publication. If you use it successfully for your research **please be so
 kind to cite our work**:
 
+{% include Publication content="TrackMate" %}
+
 ## Presentation
 
 *TrackMate is your buddy for your everyday tracking .*
@@ -55,6 +57,8 @@ estimated diameter of a *C.elegans* cell as it divides over time.
 
 A movie following one cell of a *C.elegans* embryo tracked over 3 hours,
 as it divides. The track follows the lineage from cell AB to ABaraapap.
+
+%Replace% Clear %Replace%
 
 ### Single Particle Tracking
 
@@ -271,9 +275,10 @@ idea to practice them in this order.
 
 ## Known problems
 
-TrackMate LoG detector will crash if you have the  activated. Apparently
-they ship something that interferes with the FFT code used by the LoG
-detector. The bug report can be read [on
+TrackMate LoG detector will crash if you have the {% include
+ListOfUpdateSites content="Mosaic suite update site" %} activated.
+Apparently they ship something that interferes with the FFT code used by
+the LoG detector. The bug report can be read [on
 BugZilla](https://fiji.sc/bugzilla/show_bug.cgi?id=806).
 
 ## Extensions
@@ -407,7 +412,8 @@ obviously linked:
   - [ImgLib2](ImgLib2 "wikilink") is used everywhere we need dealing
     with pixels. Relying on imglib made it trivial to have a plugin that
     deals indifferently with 2D or 3D images. In particular, we use code
-    from Stephan Preibisch, , Larry Lindsey and Lee Kamentsky.
+    from Stephan Preibisch, {% include Person content="Saalfeld" %},
+    Larry Lindsey and Lee Kamentsky.
   - [ImageJA](ImageJA "wikilink") is of course the entry point for the
     plugin. We use it display the images as 2D slices and in the
     HyperStack displayer.

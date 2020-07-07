@@ -8,10 +8,12 @@ categories: Plugins,Analysis,Filtering,Segmentation,Mathematical_morphology,Cita
 description: test description
 ---
 
-MorphoLibJ is a collection of [mathematical
-morphology](wikipedia:Mathematical_morphology "wikilink") methods and
-**plugins** for ImageJ, created at [INRA-IJPB Modeling and Digital
-Imaging
+{% include Infobox content="name = MorphoLibJ | software = IJPB-plugins
+| update site = IJPB-plugins | author = [David
+Legland](https://github.com/dlegland), MorphoLibJ is a collection of
+[mathematical morphology](wikipedia:Mathematical_morphology "wikilink")
+methods and **plugins** for ImageJ, created at [INRA-IJPB Modeling and
+Digital Imaging
 lab](http://www-ijpb.versailles.inra.fr/en/bc/equipes/modelisation-imagerie/).
 
 The library implements several functionalities that were missing in
@@ -61,19 +63,19 @@ structures.
 ### Principles
 
 The original idea was to define a methodology to describe shapes by
-using another shape as test probe (Serra, 1982\[1\]{{ cite journal |
-title = An overview of morphological filtering | author = Serra, Jean
-and Vincent, Luc | journal = Circuits, Systems and Signal Processing |
-volume = 11 | number = 1 | pages= 47-108 | year = 1992 | publisher =
-Springer | doi = 10.1007/BF01189221 }}</ref>). The most basic
-morphological filters are the **morphological dilation** and the
-**morphological erosion**. The principle of morphological dilation is to
-test for each point of the plane, if the structuring element centered on
-this point **intersects** the structure of interest (see figure below).
-It results in a set larger than the original set. The principle of
-morphological erosion is to test for each point of the plane if the
-structuring element centred on this point **is contained** within the
-original set. It results in a set smaller than original set.
+using another shape as test probe (Serra, 1982\[1\]{{ cite journal | An
+overview of morphological filtering | author = Serra, Jean and Vincent,
+Luc | journal = Circuits, Systems and Signal Processing | volume = 11 |
+number = 1 | pages= 47-108 | year = 1992 | publisher = Springer | doi =
+10.1007/BF01189221 }}</ref>). The most basic morphological filters are
+the **morphological dilation** and the **morphological erosion**. The
+principle of morphological dilation is to test for each point of the
+plane, if the structuring element centered on this point **intersects**
+the structure of interest (see figure below). It results in a set larger
+than the original set. The principle of morphological erosion is to test
+for each point of the plane if the structuring element centred on this
+point **is contained** within the original set. It results in a set
+smaller than original set.
 
 ![Principle of morphological dilation and erosion on a binary set, using
 a disk-shaped structuring
@@ -204,15 +206,18 @@ combining the results by computing the minimum over all directions.
 of applying different morphological filters with an octagon of radius 5
 as structuring element.](MorphoLibJ-mosaic-filters.png
 "MorphoLibJ filter examples: DAPI stained nuclei image and the result of applying different morphological filters with an octagon of radius 5 as structuring element.")
-The collection of morphological filters is available in the  menu.
-Filters are **implemented both for 2D and 3D images**, and work for
-binary, gray level or color (RGB) images.
+The collection of morphological filters is available in the {% include
+bc content="Plugins | MorphoLibJ" %} menu. Filters are **implemented
+both for 2D and 3D images**, and work for binary, gray level or color
+(RGB) images.
 
 #### Planar images
 
-Morphological filters for planar images are available . The dialog let
-the user choose the structuring element shape, radius, and eventually
-preview the result. The following list of operations can be chosen:
+Morphological filters for planar images are available {% include bc
+content="Plugins | MorphoLibJ | Morphological filters" %}. The dialog
+let the user choose the structuring element shape, radius, and
+eventually preview the result. The following list of operations can be
+chosen:
 
   - **erosion** keeps the minimum value within the neighborhood defined
     by the structuring element.
@@ -269,16 +274,18 @@ The following structuring elements can be used for 2D images:
 
 #### 3D images
 
-Morphological filters for 3D images are available under . The dialog let
-the user choose the structuring element shape and radius. The same list
-of operations as for planar images is provided. Planar structuring
-elements can be used (the operation is simply repeated on each slice),
-as well as a cubic or spherical structuring element. For most
-structuring elements, the size can be chosen for each direction.
+Morphological filters for 3D images are available under {% include bc
+content="Plugins | MorphoLibJ | Morphological filters (3D)" %}. The
+dialog let the user choose the structuring element shape and radius. The
+same list of operations as for planar images is provided. Planar
+structuring elements can be used (the operation is simply repeated on
+each slice), as well as a cubic or spherical structuring element. For
+most structuring elements, the size can be chosen for each direction.
 
 #### Directional Filters
 
-Directional filtering is available from . It requires a planar image.
+Directional filtering is available from {% include bc content="Plugins |
+MorphoLibJ | Directional Filtering" %}. It requires a planar image.
 
 The parameters are:
 
@@ -420,7 +427,8 @@ Left: original image. Middle: result of regional maxima. Right: result
 of extended maxima.](MorphoLibJ-grains-regional-and-extended-maxima.png
 "Regional and extended maxima on a grey-level image. Left: original image. Middle: result of regional maxima. Right: result of extended maxima.")
 
-The following operations are available in the  menu:
+The following operations are available in the {% include bc
+content="Plugins | MorphoLibJ" %} menu:
 
   - **Regional Min / Max**: compute regional minima or extrema in grey
     level or binary image, with specified connectivity.
@@ -487,7 +495,7 @@ help identifying bright \[resp. dark\] structures with small size.
 #### Usage
 
 So far, the following attribute filtering plugins are available within
-MorphoLibJ (under ):
+MorphoLibJ (under {% include bc content="Plugins | MorphoLibJ" %}):
 
   - **Gray Scale Attribute Filtering**: opens a dialog to perform
     between attribute opening, closing, and black or white top-hat on a
@@ -517,12 +525,12 @@ implementations of the algorithm and plugins that make use of it:
     implementing the original watershed algorithm by Pierre Soille and
     Luc M. Vincent (1990)\<ref name="Soille1990\>{{ cite conference
 
-| title = Determining watersheds in digital pictures via flooding
-simulations | author = Soille, Pierre and Vincent, Luc M | booktitle =
-Proc. SPIE | volume = 1360 | pages = 240-250 | year = 1990 |
-organization = International Society for Optics and Photonics | doi =
-10.1117/12.24211 | url = <http://dx.doi.org/10.1117/12.24211> }}</ref>
-to segment 2D/3D grayscale images.
+| Determining watersheds in digital pictures via flooding simulations |
+author = Soille, Pierre and Vincent, Luc M | bookProc. SPIE | volume =
+1360 | pages = 240-250 | year = 1990 | organization = International
+Society for Optics and Photonics | doi = 10.1117/12.24211 | url =
+<http://dx.doi.org/10.1117/12.24211> }}</ref> to segment 2D/3D grayscale
+images.
 
   - [Marker-controlled
     Watershed](Marker-controlled_Watershed "wikilink"), a plugin to
@@ -530,8 +538,8 @@ to segment 2D/3D grayscale images.
     points or markers by Meyer and Beucher (1990)\<ref
     name="Meyer1990\>{{ cite journal
 
-| title = Morphological segmentation | author = F. Meyer and S. Beucher
-| journal = Journal of Visual Communication and Image Representation |
+| Morphological segmentation | author = F. Meyer and S. Beucher |
+journal = Journal of Visual Communication and Image Representation |
 volume = 1 | number = 1 | pages = 21-46 | year = 1990 | doi =
 10.1016/1047-3203(90)90014-M | url =
 <http://www.sciencedirect.com/science/article/pii/104732039090014M>
@@ -586,9 +594,9 @@ of the mean curvature over the surface) and the Euler number. In 3D the
 Euler number equals the number of connected components minus the number
 of "handles" or "tunnels" through the structure, plus the number of
 bubbles within the particles (Serra, 1982\[6\]{{ cite conference |
-booktitle = 3D Images of Materials Structures: processing and analysis |
-title = Image Processing | author = Joachim Ohser and Katja Schladitz |
-publisher = Wiley-VCH Verlag GmbH & Co. KGaA | year = 2009 | doi =
+book3D Images of Materials Structures: processing and analysis | Image
+Processing | author = Joachim Ohser and Katja Schladitz | publisher =
+Wiley-VCH Verlag GmbH & Co. KGaA | year = 2009 | doi =
 10.1002/9783527628308.ch4 | url =
 <http://dx.doi.org/10.1002/9783527628308.ch4> }}</ref>).
 
@@ -698,14 +706,16 @@ is a results table (ImageJ [Results
 table](https://imagej.nih.gov/ij/docs/guide/146-22.html)) containing one
 row for each label actually present within the image. The spatial
 calibration of the image is taken into account in all measurements. All
-plugins can be found under the  menu.
+plugins can be found under the {% include bc content="Plugins |
+MorphoLibJ | Analyze" %} menu.
 
 ##### Global geometry
 
 The **global geometry** of particles in 2D images can be characterized
-with the Region Morphometry plugin (under ). For 2D particles, the area,
-the perimeter and derived features are implemented. The columns of the
-results table are:
+with the Region Morphometry plugin (under {% include bc content="Plugins
+| MorphoLibJ | Analyze | Region Morphometry" %}). For 2D particles, the
+area, the perimeter and derived features are implemented. The columns of
+the results table are:
 
   - **Label**: the label of the particle measured on the current line
     (it can be different from the row number if some labels do no exist
@@ -764,9 +774,10 @@ label image. The result of the plugin comprises the following features:
 
 ##### Region Analysis 3D
 
-The plugin calculating these measurements is found under . The results
-are provided in an ImageJ Results table, whose name contains the name of
-the original image.
+The plugin calculating these measurements is found under {% include bc
+content="Plugins | MorphoLibJ | Analyze | Region Analysis 3D" %}. The
+results are provided in an ImageJ Results table, whose name contains the
+name of the original image.
 
   - **Label**: the label of the particle measured on the current line
     (it can be different from the row number if some labels do no exist
@@ -791,8 +802,9 @@ the original image.
 ### Intensity measurements
 
 Other measurements are provided for pairs of grayscale and label 2D or
-3D images (). The label image can correspond to a segmented particle, or
-to a more generic region of interest.
+3D images ({% include bc content="Plugins | MorphoLibJ | Analyze |
+Intensity Measurements 2D/3D" %}). The label image can correspond to a
+segmented particle, or to a more generic region of interest.
 
 The plugin calculates the **mean**, **standard deviation**, **maximum**,
 **minimum**, **median**, **mode**, **skewness** and **kurtosis** of the
@@ -803,14 +815,16 @@ image. The results are displayed as well in an ImageJ *ResultsTable*.
 
 Given two label images, there are different measures that allow us to
 evaluate the overlap agreement (or error) between the labels. Following
-Tustison & Gee (2009)\<ref name="Tustison2009\>{{ cite journal | title =
+Tustison & Gee (2009)\<ref name="Tustison2009\>{{ cite journal |
 Introducing Dice, Jaccard, and other label overlap measures to ITK |
 author = Tustison, NJ and Gee, JC | journal = The Insight Journal |
 pages = 1-4 | issue = July-December | year = 2009 | doi =
 10.1007/BF01189221 }}</ref>, and given a source image \(S\) and a target
-image \(T\), this plugin (under ) provides the following overlap
-measurements in two different result tables (one with the total values
-for all labels and one with values for individual labels):
+image \(T\), this plugin (under {% include bc content="Plugins |
+MorphoLibJ | Analyze | Label Overlap Measures" %}) provides the
+following overlap measurements in two different result tables (one with
+the total values for all labels and one with values for individual
+labels):
 
   - Target Overlap for each individual labeled region \(r\):
 
@@ -879,9 +893,10 @@ segmentation. Right: overlay of edges representing adjacent
 regions.](MorphoLibJ-region-adjacency-graph.png
 "Computation of the Region Adjacency Graph on a microscopy image of plant tissue. Left: original image. Middle: result of watershed segmentation. Right: overlay of edges representing adjacent regions.")
 
-The plugin (under ) works for both 2D and 3D images, and requires a
-label image as input. A typical input is the result of a watershed
-segmentation (see [Watershed
+The plugin (under {% include bc content="Plugins | MorphoLibJ | Analyze
+| Region Adjacency Graph" %}) works for both 2D and 3D images, and
+requires a label image as input. A typical input is the result of a
+watershed segmentation (see [Watershed
 Segmentation](MorphoLibJ#Watershed_segmentation "wikilink")), eventually
 followed by [manual edition of the
 labels](MorphoLibJ#Label_Edition_plugin "wikilink"). The output of the
@@ -892,7 +907,9 @@ adjacent regions, containing the labels of the two adjacent regions.
 
 The MorphoLibJ library provides several utility functions for the
 processing and the management of binary and label images. All methods of
-this section are available as plugins under  or .
+this section are available as plugins under {% include bc
+content="Plugins | MorphoLibJ | Binary Images" %} or {% include bc
+content="Plugins | MorphoLibJ | Label Images" %}.
 
 ### Distances for binary images
 
@@ -1053,7 +1070,8 @@ pixels.](MorphoLibJ-grains-binary-label-remove-border-largest-size-opening.png
 ![Label Edition plugin overview.](Label-Edition-plugin.png
 "Label Edition plugin overview.")To ease the processing of label images,
 [MorphoLibJ](MorphoLibJ "wikilink") provides the Label Edition plugin
-(available under ). This plugin contains a graphical user interface
+(available under {% include bc content="Plugins | MorphoLibJ | Labels |
+Label Edition" %}). This plugin contains a graphical user interface
 (GUI) where the users can perform the following set of editing tasks:
 
   - Manually merge labels after their selection using the point
@@ -1311,8 +1329,8 @@ for more information about its API.
     [Fiji](Fiji "wikilink")), you just need to [
     add](How_to_follow_a_3rd_party_update_site#Add_update_sites "wikilink")
     the IJPB-plugins site to your list of update sites:
-    1.  Select  from the menu to start the
-        [updater](updater "wikilink").
+    1.  Select {% include bc content="Help | Update..." %} from the menu
+        to start the [updater](updater "wikilink").
     2.  Click on *Manage update sites*. This brings up a dialog where
         you can activate additional update sites.
     3.  Activate the IJPB-plugins update site and close the dialog. Now
@@ -1325,7 +1343,8 @@ Please note that [MorphoLibJ](MorphoLibJ "wikilink") is based on a
 publication. If you use it successfully for your research please be so
 kind to cite our work:
 
-  - 
+  - {% include Publication content="MorphoLibJ" %}
+
 [MorphoLibJ](MorphoLibJ "wikilink")'s code repository has its own
 [DOI](https://zenodo.org/badge/latestdoi/21349/ijpb/MorphoLibJ).
 
@@ -1352,24 +1371,24 @@ Public License for more details.
 [Category:Citable](Category:Citable "wikilink")
 
 1.  
-2.  {{ cite journal | title = Directional morphological filtering |
-    author = Soille, Pierre and Talbot, Hugues | publisher = IEEE | year
-    = 2001 | volume = 23 | number = 11 | pages = 1313-1329 | journal
-    =IEEE Transactions on Pattern Analysis and Machine Intelligence |
-    doi = 10.1109/34.969120 }}
+2.  {{ cite journal | Directional morphological filtering | author =
+    Soille, Pierre and Talbot, Hugues | publisher = IEEE | year = 2001 |
+    volume = 23 | number = 11 | pages = 1313-1329 | journal =IEEE
+    Transactions on Pattern Analysis and Machine Intelligence | doi =
+    10.1109/34.969120 }}
 
-3.  {{ cite journal | title = Characterization of changes in blood
-    vessel width and tortuosity in retinopathy of prematurity using
-    image analysis | author = Conor Heneghan and John Flynn and Michael
-    O Keefe and Mark Cahill | journal = Medical Image Analysis | volume
-    = 6 | number = 4 | pages= 407-429 | year = 2002 | publisher =
-    Elsevier | doi = 10.1016/S1361-8415(02)00058-0 }}
+3.  {{ cite journal | Characterization of changes in blood vessel width
+    and tortuosity in retinopathy of prematurity using image analysis |
+    author = Conor Heneghan and John Flynn and Michael O Keefe and Mark
+    Cahill | journal = Medical Image Analysis | volume = 6 | number = 4
+    | pages= 407-429 | year = 2002 | publisher = Elsevier | doi =
+    10.1016/S1361-8415(02)00058-0 }}
 
-4.  {{ cite conference | title = Discrete Morphology with Line
-    Structuring Elements | author = Hendriks, CL Luengo and van Vliet,
-    Lucas J | booktitle = International Conference on Computer Analysis
-    of Images and Patterns | pages = 722-729 | year = 2003 |
-    organization = Springer | doi = 10.1007/978-3-540-45179-2\_88 }}
+4.  {{ cite conference | Discrete Morphology with Line Structuring
+    Elements | author = Hendriks, CL Luengo and van Vliet, Lucas J |
+    bookInternational Conference on Computer Analysis of Images and
+    Patterns | pages = 722-729 | year = 2003 | organization = Springer |
+    doi = 10.1007/978-3-540-45179-2\_88 }}
 
 5.  
 

@@ -12,7 +12,8 @@ When we launched the [ImageJ2](ImageJ2 "wikilink") project, we began by
 writing many unit tests to protect [ImageJ 1.x](ImageJ_1.x "wikilink")
 from regression bugs. At this writing, there are unit tests in place for
 50 core IJ1 classes, intended to detect bugs introduced during ImageJ
-development. These tests are located in the .
+development. These tests are located in the {% include GitHub
+content="org=imagej|repo=ij1-tests|label=ij1-tests repository" %}.
 
 Originally, the tests were designed to run against a modified version of
 IJ1 that we were developing to facilitate integration with IJ2. However,

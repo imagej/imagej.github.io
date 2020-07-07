@@ -8,8 +8,9 @@ categories: Git
 description: test description
 ---
 
-This page is a **really** quick 'n dirty tutorial on how to work with
-Git. It is strongly biased to the work on Fiji; you should refer to [Git
+%Replace% GitMenu %Replace% %Replace% Outdated %Replace% This page is a
+**really** quick 'n dirty tutorial on how to work with Git. It is
+strongly biased to the work on Fiji; you should refer to [Git
 workshop](Git_workshop "wikilink"), [Git for
 dummies](Git_for_dummies "wikilink") or to [Git's
 homepage](https://git-scm.com/) for much more information.

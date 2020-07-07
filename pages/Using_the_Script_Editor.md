@@ -8,8 +8,12 @@ categories: Plugins,Tutorials,Scripting
 description: test description
 ---
 
-The script editor is an invaluable help when writing scripts in any of
-ImageJ's supported [languages](Scripting_comparisons "wikilink").
+{% include Infobox content="name = Script Editor | software = ImageJ |
+author = Johannes Schindelin, Sumit Dubey (Google Summer of Code 2009) |
+maintainer = The script editor is an invaluable help when writing
+scripts in any of ImageJ's supported
+[languages](Scripting_comparisons "wikilink").{% include Learn
+content="scripting" %}
 
 ## Features
 
@@ -66,8 +70,8 @@ To get started, start up the script editor:
 
 ![Script-Editor-new.jpg](Script-Editor-new.jpg "Script-Editor-new.jpg")
 
-There is also the keyboard shortcut  (open square bracket) to open the
-editor.
+There is also the keyboard shortcut {% include key content="\[" %} (open
+square bracket) to open the editor.
 
 ### Choosing a language
 

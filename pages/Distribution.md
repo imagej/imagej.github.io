@@ -8,10 +8,10 @@ categories: Development
 description: test description
 ---
 
-\_\_NOTOC\_\_If you create a useful extension of ImageJ—e.g., a
-[plugin](plugin "wikilink"), [script](script "wikilink") or
-[macro](macro "wikilink")—the next step is to *distribute* it to others,
-including:
+\_\_NOTOC\_\_{% include DevelopMenu content="tutorials" %}If you create
+a useful extension of ImageJ—e.g., a [plugin](plugin "wikilink"),
+[script](script "wikilink") or [macro](macro "wikilink")—the next step
+is to *distribute* it to others, including:
 
   - **Distribute** the extension itself to users
   - Share the extension's **source code**
@@ -58,7 +58,7 @@ The first goal is to get your extension into the hands of users.
 <tr class="odd">
 <td><ul>
 <li><strong><a href="How_to_set_up_and_populate_an_update_site" title="wikilink"> Create your update site</a></strong>, then <strong><a href="How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site" title="wikilink">upload your extension to it</a></strong>.</li>
-<li>You may add your update site to the list of built-in sites by editing the <strong></strong> page.</li>
+<li>You may add your update site to the list of built-in sites by editing the '''%Replace% ListOfUpdateSites %Replace% ''' page.</li>
 <li>To release a new version, <strong><a href="How_to_set_up_and_populate_an_update_site#Uploading_files_to_your_update_site" title="wikilink">upload it to the update site</a></strong>.</li>
 </ul></td>
 </tr>
@@ -224,7 +224,7 @@ use them.
 <tr class="odd">
 <td><ul>
 <li>Prepare an HTML page modeled after the <a href="https://imagej.net/plugins/index.html">list of ImageJ 1.x plugins</a>.</li>
-<li>Email it to , the developer of ImageJ 1.x, and sole maintainer of the <a href="https://imagej.net/index.html">ImageJ 1.x website</a>.</li>
+<li>Email it to {% include Person content="Rasband" %}, the developer of ImageJ 1.x, and sole maintainer of the <a href="https://imagej.net/index.html">ImageJ 1.x website</a>.</li>
 </ul></td>
 </tr>
 <tr class="even">

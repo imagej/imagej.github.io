@@ -8,6 +8,9 @@ categories:
 description: test description
 ---
 
+{% include Infobox content="name = BigDataServer | software = Fiji |
+author = 
+
 \_\_TOC\_\_
 
 ## Description
@@ -93,7 +96,8 @@ Note that the server port needs to be open.
 ## Connecting to a running BigDataServer from Fiji
 
 In order to connect to a BigDataServer from Fiji and view the data go to
-. You will be presented with the following dialog box:
+{% include bc content="Plugins | BigDataViewer | Browse BigDataServer"
+%}. You will be presented with the following dialog box:
 
 ![bdv-browse-bigdataserver-1.png](bdv-browse-bigdataserver-1.png
 "bdv-browse-bigdataserver-1.png")

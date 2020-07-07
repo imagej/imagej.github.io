@@ -8,11 +8,14 @@ categories: Related Software,SciJava
 description: test description
 ---
 
-Alida, the *Advanced Library for Integrated Development of Data Analysis
-Applications*, defines a concept for designing libraries and toolkits in
-data analysis. It supports and simplifies integrated algorithm
-development by inherently joining algorithm implementation, automatic
-process documentation and fully generic generation of user interfaces.
+{% include Infobox content="software = Alida | name = Alida | logo =
+![Alida-logo.jpg](Alida-logo.jpg "Alida-logo.jpg") | maintainer = Stefan
+Posch, Alida, the *Advanced Library for Integrated Development of Data
+Analysis Applications*, defines a concept for designing libraries and
+toolkits in data analysis. It supports and simplifies integrated
+algorithm development by inherently joining algorithm implementation,
+automatic process documentation and fully generic generation of user
+interfaces.
 
 Alida offers a Java implementation of its concept subsuming basic
 functionality for implementing data analysis operators, automatic
@@ -30,6 +33,7 @@ website](http://www.informatik.uni-halle.de/alida/).
 
 ## Publication
 
-  - 
+  - {% include Publication content="Alida" %}
+
 [Category:Related Software](Category:Related_Software "wikilink")
 [Category:SciJava](Category:SciJava "wikilink")

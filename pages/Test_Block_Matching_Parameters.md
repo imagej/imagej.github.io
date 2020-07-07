@@ -8,9 +8,10 @@ categories:
 description: test description
 ---
 
-{{-}}  The plugin **Test Block Matching Parameters** is a helper plugin
-to explore the parameter space for block matching as used in the plugins
-for [elastic serial section
+{{-}} {% include Infobox content="name = Test Block Matching Parameters
+| software = Fiji | author =  The plugin **Test Block Matching
+Parameters** is a helper plugin to explore the parameter space for block
+matching as used in the plugins for [elastic serial section
 registration](Elastic_Alignment_and_Montage "wikilink"). It takes as
 input a stack of pre-aligned RGB images with background rendered in
 green (rgb 0,255,0). It then asks for block matching parameters using

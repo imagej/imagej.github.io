@@ -186,8 +186,10 @@ The default port is 4012.
 Archipelago may be run on a proprietary cluster, for instance one
 running SLURM or qsub, by scripting the creation of an .arc
 configuration file and passing it as an argument to the Fiji or ImageJ
-executable. An  showing how this is done on the vnc queue of the TACC
-stampede cluster is available.
+executable. An {% include GitHub
+content="org=larrylindsey|repo=Stampede-Fiji-Archipelago|path=job.fiji\#L126|label=example"
+%} showing how this is done on the vnc queue of the TACC stampede
+cluster is available.
 
 #### Saving
 
@@ -268,8 +270,12 @@ While many Clusters may exist on a single root node, only one is
 Cluster.activeCluster() indicates whether there is existing active
 Cluster.
 
-An example may be found in . An example that demonstrates the breakage
-of deep equality may be found in 
+An example may be found in {% include GitHub
+content="repo=fiji|path=src-plugins/Fiji\_Archipelago/src/main/java/edu/utexas/clm/archipelago/example/Cluster\_SIFT.java|label=Cluster\_SIFT"
+%}. An example that demonstrates the breakage of deep equality may be
+found in {% include GitHub
+content="repo=fiji|path=src-plugins/Fiji\_Archipelago/src/main/java/edu/utexas/clm/archipelago/example/Equality\_Example.java|label=Equality\_Example"
+%}
 
 [Category:Plugins](Category:Plugins "wikilink")
 [Category:TrakEM2](Category:TrakEM2 "wikilink")

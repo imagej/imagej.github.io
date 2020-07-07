@@ -8,6 +8,12 @@ categories:
 description: test description
 ---
 
+{% include Conference content="title=ImageJ 2015 User & Developer
+Conference | section=5th ImageJ User & Developer Conference | dates=3 -
+4 September 2015 | image=Imagej-conference-2015.jpg |
+location=[Wisconsin Institutes for
+Discovery](http://discovery.wisc.edu/) in Madison, Wisconsin, USA " %}
+
 # Information
 
 The 2015 [ImageJ User and Developer Conference](Conference "wikilink")
@@ -35,6 +41,8 @@ Forum](http://discovery.wisc.edu/home/town-center/apply-to-reserve-town-center-s
   - **Parking:** [Lot 17](http://www.map.wisc.edu/s/gtdclo2r),
     [Lot 20](http://www.map.wisc.edu/s/rl4uc9mf),
     [Lot 80](http://www.map.wisc.edu/s/2f9gywd7)
+
+{% include Clear content="left" %}
 
 ## Call for abstracts
 
@@ -117,6 +125,8 @@ reserve rooms at The Lowell Center for the state rate of $82 per night.
 
 </div>
 
+%Replace% Clear %Replace%
+
 ## Travel support
 
 With this conference, there were no registration fees, and there was a
@@ -128,7 +138,7 @@ presentations.
 
 {{\#widget:Google Spreadsheet
 |key=1xl0owZ1kAJDLrA2XtNjlvKwhO5ZsS5\_CMmw-dU64sFk |width=100%
-|height=700 }} 
+|height=700 }} %Replace% Clear %Replace%
 
 For full details including abstracts and presentation recordings, see
 the [Conference 2015 Program](Conference_2015_Program "wikilink") page.
@@ -137,22 +147,18 @@ the [Conference 2015 Program](Conference_2015_Program "wikilink") page.
 
 ## Organizers
 
-  - , [Laboratory for Optical and Computational
-    Instrumentation](LOCI "wikilink") (LOCI) at
+  - {% include Person content="Eliceiri" %}, [Laboratory for Optical and
+    Computational Instrumentation](LOCI "wikilink") (LOCI) at
     [UW-Madison](http://wisc.edu/)
-
   - Kristy Wendt, [Laboratory for Optical and Computational
     Instrumentation](LOCI "wikilink") (LOCI) at
     [UW-Madison](http://wisc.edu/)
-
-  - , [Laboratory for Optical and Computational
-    Instrumentation](LOCI "wikilink") (LOCI) at
+  - {% include Person content="Rueden" %}, [Laboratory for Optical and
+    Computational Instrumentation](LOCI "wikilink") (LOCI) at
     [UW-Madison](http://wisc.edu/)
-
-  - , [Laboratory for Optical and Computational
-    Instrumentation](LOCI "wikilink") (LOCI) at
+  - {% include Person content="Hinerm" %}, [Laboratory for Optical and
+    Computational Instrumentation](LOCI "wikilink") (LOCI) at
     [UW-Madison](http://wisc.edu/)
-
   - Andreas Jahnen, [Luxembourg Institute of Science and
     Technology](http://www.list.lu/)
 
@@ -162,24 +168,18 @@ Abstract submissions were reviewed by the conference advisory committee:
 
   - Christian Dietz, [University of
     Konstanz](http://www.uni-konstanz.de/en/welcome/), Germany
-
   - Andreas Jahnen, [Luxembourg Institute of Science and
     Technology](http://www.list.lu/)
-
   - Lee Kamentsky, [Broad Institute](http://www.broadinstitute.org/) of
     MIT and Harvard
-
   - Gabriel Landini, [University of
     Birmingham](http://www.birmingham.ac.uk/)
-
   - Brian Northan, [True North Intelligent Algorithms
     LLC](http://www.truenorth-ia.com/)
-
   - Tobias Pietzsch, [Max Planck Institute of Molecular Cell Biology and
     Genetics](http://mpi-cbg.de/) (MPI-CBG) at Dresden
-
-  - , [National Institutes of Health](http://www.nih.gov/)
-
+  - {% include Person content="Rasband" %}, [National Institutes of
+    Health](http://www.nih.gov/)
   - Pavel Tomancak, [Max Planck Institute of Molecular Cell Biology and
     Genetics](http://mpi-cbg.de/) (MPI-CBG) at Dresden
 

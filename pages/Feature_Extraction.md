@@ -11,10 +11,13 @@ description: test description
 ![MOPS feature correspondences (example 1)](Tem-42-33-f.png
 "MOPS feature correspondences (example 1)") ![MOPS feature
 correspondences (example 2)](Lab-404-403-f.png
-"MOPS feature correspondences (example 2)") {{-}}  The plugins "Extract
-SIFT Correspondences" and "Extract MOPS Correspondences" identify a set
-of corresponding points of interest in two images and export them as
-PointRoi. Interest points are detected using the [Difference of Gaussian
+"MOPS feature correspondences (example 2)") {{-}} {% include Infobox
+content="name = Feature Extraction SIFT/MOPS | software = Fiji | author
+= Stephan Saalfeld ([1](mailto:saalfeld@mpi-cbg.de)) | maintainer =
+Stephan Saalfeld | source =  The plugins "Extract SIFT Correspondences"
+and "Extract MOPS Correspondences" identify a set of corresponding
+points of interest in two images and export them as PointRoi. Interest
+points are detected using the [Difference of Gaussian
 detector](wikipedia:Blob_detection "wikilink") thus providing
 similarity-invariance. Corresponding points are best matches from local
 feature descriptors that are consistent with respect to a common

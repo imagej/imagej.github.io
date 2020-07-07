@@ -8,11 +8,13 @@ categories:
 description: test description
 ---
 
-BoneJ is a collection of skeletal biology plug-ins for ImageJ. This is
-the new experimental, modernized version of the software available
-through the ImageJ [updater](https://imagej.net/Updater). Its update
-site is called [BoneJ experimental](http://sites.imagej.net/BoneJ). For
-the old ImageJ1 version, see [BoneJ](BoneJ "wikilink").
+{% include Infobox content="name = BoneJ2 | software = ImageJ | logo =
+![Bonej-icon.png](Bonej-icon.png "Bonej-icon.png") | author =  BoneJ is
+a collection of skeletal biology plug-ins for ImageJ. This is the new
+experimental, modernized version of the software available through the
+ImageJ [updater](https://imagej.net/Updater). Its update site is called
+[BoneJ experimental](http://sites.imagej.net/BoneJ). For the old ImageJ1
+version, see [BoneJ](BoneJ "wikilink").
 
 This version works with the latest Fiji, and complies with the modern
 ImageJ [architecture](architecture "wikilink"). Most plug-ins also now

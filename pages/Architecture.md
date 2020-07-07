@@ -8,11 +8,21 @@ categories: Development
 description: test description
 ---
 
-This page describes the technical structure of
-[SciJava](SciJava "wikilink") and [ImageJ](ImageJ "wikilink") projects.
-For maximum benefit, we suggest readers familiarize themselves with
-[Maven](Maven "wikilink"), [Git](Git "wikilink") and
-[GitHub](GitHub "wikilink") before reading the sections here.
+{% include info-box content="This page describes the *technical*
+structure of [SciJava](SciJava "wikilink") and
+[ImageJ](ImageJ "wikilink") projects.
+
+  - For information on the *social* structure, see
+    [Governance](Governance "wikilink").
+  - For information on the *legal* structure, see
+    [Licensing](Licensing "wikilink")." %}
+
+%Replace% DevelopMenu %Replace% This page describes the technical
+structure of [SciJava](SciJava "wikilink") and
+[ImageJ](ImageJ "wikilink") projects. For maximum benefit, we suggest
+readers familiarize themselves with [Maven](Maven "wikilink"),
+[Git](Git "wikilink") and [GitHub](GitHub "wikilink") before reading the
+sections here.
 
 # Definitions
 
@@ -165,75 +175,24 @@ All components in these organizations use [Maven](Maven "wikilink") for
 [project management](Project_Management "wikilink"). Each organization
 has its own Maven
 [groupId](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-more-coordinates).
-Each component extends the  [parent
+Each component extends the {% include GitHub content="org=scijava |
+repo=pom-scijava | label=pom-scijava" %} [parent
 POM](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-project-inheritance),
 which provides sensible build defaults and compatible dependency
 versions (see "Bill of Materials" below).
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p><strong>Logo</strong></p></td>
-<td><p><strong>Project</strong></p></td>
-<td><p><strong>Organization</strong></p></td>
-<td><p><strong>groupId</strong></p></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><p><a href="SciJava" title="wikilink">SciJava</a></p></td>
-<td><p><a href="https://github.com/scijava">scijava</a></p></td>
-<td><p><a href="http://maven.imagej.net/index.html#nexus-search;gav~org.scijava">org.scijava</a></p></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><p><a href="ImageJ" title="wikilink">ImageJ</a></p></td>
-<td><p><a href="https://github.com/imagej">imagej</a></p></td>
-<td><p><a href="http://maven.imagej.net/index.html#nexus-search;gav~net.imagej">net.imagej</a></p></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><p><a href="ImgLib2" title="wikilink">ImgLib2</a></p></td>
-<td><p><a href="https://github.com/imglib">imglib</a></p></td>
-<td><p><a href="http://maven.imagej.net/index.html#nexus-search;gav~net.imglib2">net.imglib2</a></p></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><p><a href="SCIFIO" title="wikilink">SCIFIO</a></p></td>
-<td><p><a href="https://github.com/scifio">scifio</a></p></td>
-<td><p><a href="http://maven.imagej.net/index.html#nexus-search;gav~io.scif">io.scif</a></p></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><p><a href="Fiji" title="wikilink">Fiji</a></p></td>
-<td><p><a href="https://github.com/fiji">fiji</a></p></td>
-<td><p><a href="http://maven.imagej.net/index.html#nexus-search;gav~sc.fiji">sc.fiji</a></p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="BigDataViewer" title="wikilink">BigDataViewer</a></p></td>
-<td><p><a href="https://github.com/bigdataviewer">bigdataviewer</a></p></td>
-<td><p><a href="http://maven.imagej.net/index.html#nexus-search;gav~sc.fiji">sc.fiji</a></p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p><a href="TrakEM2" title="wikilink">TrakEM2</a></p></td>
-<td><p><a href="https://github.com/trakem2">trakem2</a></p></td>
-<td><p><a href="http://maven.imagej.net/index.html#nexus-search;gav~sc.fiji">sc.fiji</a></p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><p><a href="SLIM_Curve" title="wikilink">SLIM Curve</a></p></td>
-<td><p><a href="https://github.com/slim-curve">slim-curve</a></p></td>
-<td><p><a href="http://maven.imagej.net/index.html#nexus-search;gav~slim-curve">slim-curve</a></p></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><p><a href="LOCI" title="wikilink">LOCI</a></p></td>
-<td><p><a href="https://github.com/uw-loci">uw-loci</a></p></td>
-<td><p><a href="http://maven.imagej.net/index.html#nexus-search;gav~loci">loci</a></p></td>
-</tr>
-</tbody>
-</table>
+|                                           |                                                   |                                                                        |                                                                                |
+| ----------------------------------------- | ------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| **Logo**                                  | **Project**                                       | **Organization**                                                       | **groupId**                                                                    |
+| {% include Logo content="SciJava" %}      | [SciJava](SciJava "wikilink")                     | [scijava](https://github.com/scijava)                                  | [org.scijava](http://maven.imagej.net/index.html#nexus-search;gav~org.scijava) |
+| {% include Logo content="ImageJ2" %}      | [ImageJ](ImageJ "wikilink")                       | [imagej](https://github.com/imagej)                                    | [net.imagej](http://maven.imagej.net/index.html#nexus-search;gav~net.imagej)   |
+| {% include Logo content="ImgLib2" %}      | [ImgLib2](ImgLib2 "wikilink")                     | [imglib](https://github.com/imglib)                                    | [net.imglib2](http://maven.imagej.net/index.html#nexus-search;gav~net.imglib2) |
+| {% include Logo content="SCIFIO" %}       | [SCIFIO](SCIFIO "wikilink")                       | [scifio](https://github.com/scifio)                                    | [io.scif](http://maven.imagej.net/index.html#nexus-search;gav~io.scif)         |
+| {% include Logo content="Fiji" %}         | [Fiji](Fiji "wikilink")                           | [fiji](https://github.com/fiji)                                        | [sc.fiji](http://maven.imagej.net/index.html#nexus-search;gav~sc.fiji)         |
+| [BigDataViewer](BigDataViewer "wikilink") | [bigdataviewer](https://github.com/bigdataviewer) | [sc.fiji](http://maven.imagej.net/index.html#nexus-search;gav~sc.fiji) |                                                                                |
+| [TrakEM2](TrakEM2 "wikilink")             | [trakem2](https://github.com/trakem2)             | [sc.fiji](http://maven.imagej.net/index.html#nexus-search;gav~sc.fiji) |                                                                                |
+| {% include Logo content="SLIM Curve" %}   | [SLIM Curve](SLIM_Curve "wikilink")               | [slim-curve](https://github.com/slim-curve)                            | [slim-curve](http://maven.imagej.net/index.html#nexus-search;gav~slim-curve)   |
+| {% include Logo content="LOCI" %}         | [LOCI](LOCI "wikilink")                           | [uw-loci](https://github.com/uw-loci)                                  | [loci](http://maven.imagej.net/index.html#nexus-search;gav~loci)               |
 
 ## Bill of Materials
 
@@ -334,9 +293,27 @@ loading the plugin classes in advance.
 
 # Reproducible builds
 
-A software *version* (or *build*) is called **reproducible** if it is
-easy to regenerate the exact same software application from the source
-code.
+{% include sidebox-right content="Why are reproducible builds so
+essential for science?
+
+Arguably **the most important thing** in science is to gain insights
+about nature **that can be verified by other researchers**. It is this
+mission for which [ImageJ](ImageJ "wikilink") and
+[Fiji](Fiji "wikilink") stand, and it is the central reason why they are
+[open source](open_source "wikilink").
+
+To verify results, it is absolutely necessary to be able to reproduce
+results claimed in scientific articles, and in the interest of
+efficiency, it should be **easy** to reproduce the results, and it
+should **also** be easy to scrutinize the used methods—incorrect results
+can be artifacts of flawed algorithms, after all.
+
+To that end, it should be obvious that researchers **need** to have the
+ability to inspect the exact source code corresponding to the software
+used to generate the results to be verified. In other words,
+reproducible builds are required for sound scientific research. " %} A
+software *version* (or *build*) is called **reproducible** if it is easy
+to regenerate the exact same software application from the source code.
 
 For example, you can refer to "ImageJ 1.49g" as a *reproducible build*,
 or to *Sholl Analysis 3.4.3*, while referring to "ImageJ" is
@@ -434,8 +411,14 @@ There are two easy ways of going about this:
     `SNAPSHOT`s.
 
 In the case of Eclipse, you may need to "Update Maven project" in order
-to see the snapshot couplings go into effect; the shortcut + while
-selecting the affected project(s) accomplishes this quickly.
+to see the snapshot couplings go into effect; the shortcut {% include
+Key content="Alt" %}+{% include Key content="F5" %} while selecting the
+affected project(s) accomplishes this quickly.
+
+{% include warning-box content="**Current versions of the Eclipse Maven
+integration (tested with Eclipse Mars) fail to correctly resolve the
+`LATEST` version tag to `SNAPSHOT`s. Use the command-line client
+instead.**" %}
 
 Either way, ***be sure to work on a topic branch while developing code
 in this fashion.*** You will need to clean up your Git history

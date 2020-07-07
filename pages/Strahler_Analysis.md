@@ -12,6 +12,9 @@ description: test description
 
 <div style="float:right;">
 
+{% include Infobox content="software = Fiji | name = Strahler Analysis |
+maintainer = 
+
 </div>
 
 A plugin from the [Neuroanatomy update
@@ -162,16 +165,19 @@ The plugin produces three types of outputs:
 
   - Strahler Image  
     A heat-map image, in which branches are color-coded by their
-    Horton-Strahler numbers. By default, a calibration ramp () is added
-    as an overlay. WYSIWYG versions (RGB images) of this *Strahler Color
-    Map* image can be obtained by pressing  (shortcut for ).
+    Horton-Strahler numbers. By default, a calibration ramp ({% include
+    bc content="Analyze|Tools|Calibration Bar..." %}) is added as an
+    overlay. WYSIWYG versions (RGB images) of this *Strahler Color Map*
+    image can be obtained by pressing  (shortcut for {% include bc
+    content="Image|Overlay|Flatten" %}).
 
 <!-- end list -->
 
   - Strahler table  
     Table listing Horton-Strahler counts. The extension and format of
-    this *Strahler Table* can be specified in . It contains the
-    following data:
+    this *Strahler Table* can be specified in {% include bc
+    content="Edit|Options|Input/Output..." %}. It contains the following
+    data:
       - \# End-point Branches  
         The number of branches for each Horton-Strahler order.
 
@@ -213,15 +219,28 @@ Original publications by [Robert E.
 Horton](wikipedia:Robert_E._Horton "wikilink") and [Arthur N.
 Strahler](wikipedia:Arthur_Newell_Strahler "wikilink"):
 
-  - .
+  - {% include citation content="first=R. E.|last=Horton|title=Erosional
+    development of streams and their drainage basins: hydro-physical
+    approach to quantitative morphology|journal=Geological Society of
+    America
+    Bulletin|volume=56|issue=3|year=1945|pages=275–370|doi=10.1130/0016-7606(1945)56\[275:EDOSAT\]2.0.CO;2"
+    %}.
 
 <!-- end list -->
 
-  - .
+  - {% include citation content="last=Strahler|first=A.
+    N.|year=1952|title=Hypsometric (area-altitude) analysis of erosional
+    topology|journal=Geological Society of America
+    Bulletin|volume=63|issue=11|pages=1117–1142|doi=10.1130/0016-7606(1952)63\[1117:HAAOET\]2.0.CO;2"
+    %}.
 
 <!-- end list -->
 
-  - ([PDF](http://www.uvm.edu/~pdodds/files/papers/others/1957/strahler1957a.pdf)).
+  - {% include citation content="last=Strahler|first=A.
+    N.|year=1957|title=Quantitative analysis of watershed
+    geomorphology|journal=Transactions of the American Geophysical
+    Union|volume=38|issue=6|pages=913–920" %}
+    ([PDF](http://www.uvm.edu/~pdodds/files/papers/others/1957/strahler1957a.pdf)).
 
 ## Citing
 

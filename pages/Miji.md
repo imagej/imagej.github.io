@@ -8,30 +8,49 @@ categories: Tutorials,Matlab
 description: test description
 ---
 
+{% include info-box content="This page covers the original compatibility
+layer for running ImageJ 1.x within MATLAB.  
+The current library for ImageJ/MATLAB integration is
+[ImageJ-MATLAB](MATLAB_Scripting "wikilink"); it has many advantages
+over this legacy project." %}
+
 [MIJ](http://bigwww.epfl.ch/sage/soft/mij/) is a java package to
 exchange images between [MATLAB](MATLAB "wikilink") and ImageJ. It is
-written by  (Biomedical Image Group (BIG), Ecole Polytechnique Fédérale
-de Lausanne (EPFL), Switzerland) and  (Department of Physiology and
+written by {% include Person content="Sage" %} (Biomedical Image Group
+(BIG), Ecole Polytechnique Fédérale de Lausanne (EPFL), Switzerland) and
+{% include Person content="Dimiterpp" %} (Department of Physiology and
 Pharmacology, Université Catholique de Louvain (UCL), Brussels,
 Belgium). It allows to start a instance of ImageJ inside
 [MATLAB](MATLAB "wikilink") and exchange images back and forth with it.
 It takes advantage of the fact that the user interface of
 [MATLAB](MATLAB "wikilink") is written in Java.
 
-For your convenience, Jacques Pecreaux &  wrote Miji.m, which makes it
-super-easy to use Fiji and the libraries and functions provided by
+For your convenience, Jacques Pecreaux & {% include Person
+content="Schindelin" %} wrote Miji.m, which makes it super-easy to use
+Fiji and the libraries and functions provided by
 [Fiji](Fiji "wikilink")'s components from within
 [MATLAB](MATLAB "wikilink"). Simply make sure that the *scripts/*
 directory of your *Fiji.app/* is in [MATLAB](MATLAB "wikilink")'s search
-patch, via  (on Mac, the file chooser doesn't let you choose directories
-within .app packages, so you have to use the [MATLAB](MATLAB "wikilink")
-command *addpath('/Applications/Fiji.app/scripts')* ). Then a simple
+patch, via {% include bc content="File | Set Path..." %} (on Mac, the
+file chooser doesn't let you choose directories within .app packages, so
+you have to use the [MATLAB](MATLAB "wikilink") command
+*addpath('/Applications/Fiji.app/scripts')* ). Then a simple
 
 ``` matlab
 Miji;
 ```
 
 will start a Fiji inside [MATLAB](MATLAB "wikilink").
+
+{% include warning-box content="message=There are over 300 jar and
+plugin files that ship with Fiji, and depending on your operating system
+and configuration, you may run into **too many files open** errors (for
+example, on OSX [MATLAB](MATLAB "wikilink") seems to use the default
+soft limit for open files, which is typically 256). If this happens you
+will need to increase the open file limit per-session or system-wide.
+See [this
+guide](http://docs.basho.com/riak/latest/ops/tuning/open-files-limit/)
+for helpful instructions on doing so for OSX and Linux." %}
 
 # Getting started
 
@@ -48,7 +67,8 @@ MIJ.createImage('result', E, true);
 ```
 
 If you get an error saying that some Plugin related classes cannot be
-found, please update your Fiji with \!
+found, please update your Fiji with {% include bc content="Help | Update
+Fiji" %}\!
 
 ## Running ImageJ commands
 

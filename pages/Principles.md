@@ -425,18 +425,21 @@ recorded to ensure work is [reproducible](reproducible "wikilink").
 
 After being binarized through any thresholding method, an image may
 require additional binary operations to make the final pattern useable.
-These include erosion, dilation, opening, and closing (all under ),
-image filters (under ), and image combinations by boolean operations
-(e.g. ). Here the user needs to pay attention to recording all
+These include erosion, dilation, opening, and closing (all under {%
+include bc content="Process | Binary" %}), image filters (under {%
+include bc content="Process | Filters" %}), and image combinations by
+boolean operations (e.g. {% include bc content="Process | Image
+Calculator" %}). Here the user needs to pay attention to recording all
 parameters and events and not alter the extraction notably, lest they
 reduce the [reproducibility](reproducibility "wikilink") and overall
 quality of the segmentation. Post-processing binary operations might be
 necessary to correct further measurements of area or object counts.
-Internal holes, for example, may need to be closed () to extract the
-correct area of particles (this can also be achieved directly during the
-measurement when using \>.). Watershed (or related) separation
-techniques may be necessary when close particles fuse to form clumps or
-aggregates.
+Internal holes, for example, may need to be closed ({% include bc
+content="Process | Binary | Fill Holes" %}) to extract the correct area
+of particles (this can also be achieved directly during the measurement
+when using \>{% include bc content="Analyze | Analyze Particles..."
+%}.). Watershed (or related) separation techniques may be necessary when
+close particles fuse to form clumps or aggregates.
 
 ### Segmented ROIs for additional processing
 
@@ -444,9 +447,10 @@ Once an object is binarized, it can be converted to an ROI automatically
 and the ROI reapplied to the original image for verification as well as
 processing of the original image based on the ROI. This is used, for
 instance, to identify, separate, and analyze features of overlapping
-cells. The method for creating the ROIs from a binary image is . This
-method is very useful when used with the RoiManager and in macros or
-plugins for automating tasks.
+cells. The method for creating the ROIs from a binary image is {%
+include bc content="Edit | Selection | Create Selection" %}. This method
+is very useful when used with the RoiManager and in macros or plugins
+for automating tasks.
 
 ### How do I check the quality of a binarization?
 

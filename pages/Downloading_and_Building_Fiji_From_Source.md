@@ -8,11 +8,12 @@ categories: Development,Fiji
 description: test description
 ---
 
-The complete Fiji distribution of ImageJ consists of over a hundred
-individual components. Most of these components are ImageJ
-[plugins](plugins "wikilink"); the rest are core libraries,
-[scripts](scripts "wikilink") and several other resources (such as the
-[Fiji logo](:File:Fiji-icon.png "wikilink") and the README).
+%Replace% FijiMenu %Replace% The complete Fiji distribution of ImageJ
+consists of over a hundred individual components. Most of these
+components are ImageJ [plugins](plugins "wikilink"); the rest are core
+libraries, [scripts](scripts "wikilink") and several other resources
+(such as the [Fiji logo](:File:Fiji-icon.png "wikilink") and the
+README).
 
 In the past, Fiji used to be built from one monolithic source code
 repository, which became unmanageable over time. These days, therefore,
@@ -45,8 +46,9 @@ Example: *Stitching\_.jar* is maintained in the repository at
 <https://github.com/fiji/Stitching>, *Time\_Lapse.jar* in the repository
 at <https://github.com/fiji/Time_Lapse>.
 
-If in doubt about the location of the repository, just call  and find
-the section corresponding to the file in question.
+If in doubt about the location of the repository, just call {% include
+bc content="Plugins | Debug | System Information" %} and find the
+section corresponding to the file in question.
 
 Once the developer has identified which plugin or library she wants to
 modify or develop further, it is very easy to build and contribute by

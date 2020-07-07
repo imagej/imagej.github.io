@@ -25,7 +25,8 @@ the [Fiji](Fiji "wikilink") distribution as well as in
 
 ## Source
 
-The ImageJ launcher source code lives on .
+The ImageJ launcher source code lives on {% include GitHub
+content="org=imagej|repo=imagej-launcher|label=GitHub" %}.
 
 ## Purpose
 

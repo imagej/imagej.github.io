@@ -8,7 +8,7 @@ categories: Scripting
 description: test description
 ---
 
-\= Why Macros? =
+{% include Learn content="languages" %}= Why Macros? =
 
 Macros can be used to
 
@@ -17,6 +17,12 @@ Macros can be used to
   - share common procedures
   - add tools to the toolbar
   - add keyboard shortcuts
+
+{% include info-box content="message = Please be aware that there are
+several other available [scripting](scripting "wikilink") languages that
+are more powerful than macros, too\! See the sidebar on the right, as
+well as the [Overcoming limitations](#Overcoming_limitations "wikilink")
+section below." %}
 
 # Variables
 
@@ -82,7 +88,7 @@ paste this code in the [script editor](Script_Editor "wikilink"), you
 can uncomment these lines to see their errors)
 
 ``` java
-title = "Macro";
+"Macro";
 //write("The name: title");  // BAD - literally prints "title"
 write("The name: " + title); // GOOD - properly uses the title variable value
 ```
@@ -329,9 +335,10 @@ for (i=1; i<=nSlices; i++) {
 # The recorder
 
 Typically, macros are not written from scratch, but recorded using the
-Macro Recorder: Just click on  and perform some actions. These actions
-will be recorded in the recorder window, and you can hit the *Create*
-button to open the recorded instructions in an editor:
+Macro Recorder: Just click on {% include bc content="Plugins | Macros |
+Record..." %} and perform some actions. These actions will be recorded
+in the recorder window, and you can hit the *Create* button to open the
+recorded instructions in an editor:
 
 ![Macro\_recorder.png](Macro_recorder.png "Macro_recorder.png")
 
@@ -348,7 +355,7 @@ The parameters passed to *Merge Channels...* depend very much on the
 current image's name. One possible solution looks like this:
 
 ``` java
-title = getTitle();
+getTitle();
 run("Merge Channels...",
      "red=[Edges of " + title + "] green=" + title + " blue=" + title + " gray=*None*");
 ```
@@ -361,7 +368,7 @@ In order to allow spaces in the name, you might also want to add extra
 *\[...\]* around the title:
 
 ``` java
-title = getTitle();
+getTitle();
 run("Merge Channels...",
      "red=[Edges of " + title + "] green=[" + title + "] blue=[" + title + "] gray=*None*");
 ```
@@ -415,7 +422,7 @@ tools into the toolbar:
 
 ``` java
 // A click on the empty rectangle will have the same
-// effect as {{bc | File | Save As | Jpeg...}}
+// effect as {% include bc content="File | Save As | Jpeg..." %}
 
 macro "Save As JPEG Action Tool - C000R11ee" {
     saveAs("Jpeg");
@@ -450,7 +457,8 @@ a given folder, you might want to have a look a the tutorial *[How to
 apply a common operation to a complete
 directory](How_to_apply_a_common_operation_to_a_complete_directory "wikilink")*
 or at the macro template that you can open in the [Script
-Editor](Script_Editor "wikilink") via .
+Editor](Script_Editor "wikilink") via {% include bc content="Templates |
+Macros | Process Folder" %}.
 
 ## Resizing to a given width of the selection bounds
 
@@ -517,7 +525,7 @@ different timepoints of one movie.
 // join frames
 
 // get the dimensions
-title = getTitle();
+getTitle();
 getDimensions(width, height, channelCount, sliceCount, frameCount);
 
 if (frameCount > 1)

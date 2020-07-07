@@ -8,6 +8,8 @@ categories: Git
 description: test description
 ---
 
+%Replace% GitMenu %Replace%
+
 # What is Git?
 
 Git is a distributed Version Control System ("VCS"), or Source Code

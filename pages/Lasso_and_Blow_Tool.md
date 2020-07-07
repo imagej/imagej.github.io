@@ -10,8 +10,9 @@ description: test description
 
 \[this is under construction\]
 
-This selection tool is run from . Running the plugin adds a new button
-to the toolbar.
+This selection tool is run from {% include bc content="Plugins |
+Segmentation | Lasso" %}. Running the plugin adds a new button to the
+toolbar.
 
 There are 2 modes of operation: **lasso** and **blow** which can be
 selected by double clicking on the lasso button.

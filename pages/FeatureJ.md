@@ -8,8 +8,10 @@ categories: Plugins,ImageScience
 description: test description
 ---
 
-The [FeatureJ](http://imagescience.org/meijering/software/featurej/)
-suite of plugins offers extraction of differential features of images.
+{% include Infobox content="software = ImageScience | name = FeatureJ |
+maintainer = The
+[FeatureJ](http://imagescience.org/meijering/software/featurej/) suite
+of plugins offers extraction of differential features of images.
 
 FeatureJ is available from the [ImageScience](ImageScience "wikilink")
 update site.

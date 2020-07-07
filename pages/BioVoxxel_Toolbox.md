@@ -8,8 +8,10 @@ categories:  Particle analysis
 description: test description
 ---
 
-You can setup an automatic update for the BioVoxxel Toolbox. Just run
-the [Updater](Updater "wikilink") () and switch in the main window to
+{% include Infobox content="software = ImageJ / Fiji | name = BioVoxxel
+Toolbox | author = You can setup an automatic update for the BioVoxxel
+Toolbox. Just run the [Updater](Updater "wikilink") ({% include bc
+content="Help | Update..." %}) and switch in the main window to
 'Advanced mode'. Then click on 'Manage update sites'. Here you simply
 need to activate the "BioVoxxel". See here how to follow an update site
 [follow an update site](https://imagej.net/Following_an_update_site)
@@ -29,7 +31,8 @@ the analysis on particles according to many more parameter
 spezifications of shape descriptors and angle orientations. Thus,
 setting minimal and maximal exclusion ranges of different parameters
 enables to extract particles from a binary image. The output types are
-the same as for the .
+the same as for the {% include bc content="Analyze | Analyze Particles"
+%}.
 
 Example: If you want to extract/analyze only particles with a certain
 Feret's Angle or exclude elongated structures using the aspect ratio
@@ -456,8 +459,9 @@ keep the difference in shading/lighting. Therefore, rather big radii
 image and feature size).
 
 Remark: The pseudo flat field correction menu command links to the
-plugin with the same name under  (necessary to additionally download
-from the BioVoxxel update site together with the Toolbox).
+plugin with the same name under {% include bc content="Plugins |
+BioVoxxel" %} (necessary to additionally download from the BioVoxxel
+update site together with the Toolbox).
 
 Advantage of the Pseudo flat field correction: This is now recordable
 and works with stacks. Thus, time-lapse movies e.g. from a brightfield
@@ -513,18 +517,19 @@ Future: suggestions are welcome\!
 # Scaled Intensity Plot
 
 Purpose: The tool creates a intensity plot along any kind of lines as
-well as from rectangular selections (as does ) but with the initial
-possibility to influence the displayed intensity scale. This enables to
-create plots which can be overlayed by choosing "add to existing plot".
-In the case of a rectangular selection it can be chosen if the plotting
-direction should be horizontal or vertical. The intensities along the
-other direction are then averaged. Additionally, the color and look of
-the plot line can be chosen. This should enable to better compare
-intensity plots from different images or selections which is only
-possible if they have the same scaling. The latter is done in unscaled
-units (pixels). If a new plot line is added to an existing plot the
-choice "Draw grid lines" is either ignored or forced depending on how
-the destination plot was created using the same tool.
+well as from rectangular selections (as does {% include bc
+content="Analyze | Plot Profile" %}) but with the initial possibility to
+influence the displayed intensity scale. This enables to create plots
+which can be overlayed by choosing "add to existing plot". In the case
+of a rectangular selection it can be chosen if the plotting direction
+should be horizontal or vertical. The intensities along the other
+direction are then averaged. Additionally, the color and look of the
+plot line can be chosen. This should enable to better compare intensity
+plots from different images or selections which is only possible if they
+have the same scaling. The latter is done in unscaled units (pixels). If
+a new plot line is added to an existing plot the choice "Draw grid
+lines" is either ignored or forced depending on how the destination plot
+was created using the same tool.
 
 ![ScaledIntensityPlots.png](ScaledIntensityPlots.png
 "ScaledIntensityPlots.png")
@@ -560,7 +565,7 @@ Status: deprecated
 
 # Adaptive Filter
 
-(separate plugin under )
+(separate plugin under {% include bc content="Plugins | BioVoxxel" %})
 
 Purpose/How to: This filter allows the choice between two basic filter
 modes (*median* and *mean*). The filter *Radius* defines the size of a
@@ -594,7 +599,7 @@ Limitation: So far, the filter is only applicable on 8-bit and 16-bit
 single images.
 
 Installation: Part of the BioVoxxel update site in Fiji and can be found
-under 
+under {% include bc content="Plugins | BioVoxxel" %}
 
 Form: plugin, recording still not fully functional\!\!\!
 
@@ -882,7 +887,7 @@ Future: Suggestions are welcome\!
 
 # Gaussian weighted Median filter
 
-(separate plugin under )
+(separate plugin under {% include bc content="Plugins | BioVoxxel" %})
 
 Purpose/How to: This filter is basically a normal median filter (as in
 ImageJ/Fiji) but with a weighted filter matrix. The radius is given in
@@ -899,7 +904,7 @@ Limitation: So far, the filter is only applicable on 8-bit and 16-bit
 single images.
 
 Installation: Part of the BioVoxxel update site in Fiji and can be found
-under 
+under {% include bc content="Plugins | BioVoxxel" %}
 
 Form: plugin, recordable
 
@@ -912,7 +917,7 @@ images and stacks. Suggestions are welcome\!
 
 # Enhance True Color Contrast
 
-(separate plugin under )
+(separate plugin under {% include bc content="Plugins | BioVoxxel" %})
 
 Purpose: This image filter enhances the contrast of true color images
 similar to the method Enhance Contrast in Fiji. If the latter would be
@@ -938,7 +943,7 @@ Status: maintenance active
 
 # Mode and Differential Limited Mean Binarization
 
-(separate plugin under )
+(separate plugin under {% include bc content="Plugins | BioVoxxel" %})
 
 Purpose: The mode-limited mean (MoLiM) and the differential-limited mean
 (DiLiM) are two binarization algorithms which initially limit the image
@@ -963,7 +968,7 @@ smaller partition" anables to extract the pixels which occupy rather the
 smaller histogram partition besides the limit.
 
 Download: Part of the BioVoxxel update site in Fiji and can be found
-under 
+under {% include bc content="Plugins | BioVoxxel" %}
 
 Form: plugin, recordable
 
@@ -975,7 +980,8 @@ Future: Will be implemented for stacks as well.
 
 -----
 
-All BioVoxxel Macros were developed by 
+All BioVoxxel Macros were developed by {% include Person
+content="BioVoxxel" %}
 
 The macros can be freely used, redistributed and changed according to
 the BSD-3 License.
@@ -985,9 +991,10 @@ jan.brocher(at)biovoxxel.de
 
 There is NO WARRANTY of functionality for those macros.
 
-In no event neither  nor BioVoxxel shall be liable to any party for
-direct, indirect, special, incidental, or consequential damages or data
-loss of any kind arising out of the use of this software and its
-documentation, even if advised of the possibility thereof.
+In no event neither {% include Person content="BioVoxxel" %} nor
+BioVoxxel shall be liable to any party for direct, indirect, special,
+incidental, or consequential damages or data loss of any kind arising
+out of the use of this software and its documentation, even if advised
+of the possibility thereof.
 
 [Category: Particle analysis](Category:_Particle_analysis "wikilink")

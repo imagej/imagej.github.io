@@ -8,6 +8,7 @@ categories: Help
 description: test description
 ---
 
-There are several popular communication channels: 
+There are several popular communication channels: %Replace%
+Communication %Replace%
 
 [Category:Help](Category:Help "wikilink")

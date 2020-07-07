@@ -8,7 +8,8 @@ categories:
 description: test description
 ---
 
-An unsorted list of hints that you might find useful:
+{% include DevelopMenu content="tutorials" %}An unsorted list of hints
+that you might find useful:
 
 # Compile & Execute a Class
 

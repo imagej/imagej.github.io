@@ -8,6 +8,8 @@ categories:
 description: test description
 ---
 
+{% include Learn content="scripting" %}%Replace% TOC %Replace%
+
 # Overview
 
 A fundamental benefit to creating [scripts and
@@ -31,10 +33,13 @@ automate this batch processing.
         be read in as part of the batch process.
       - See below for details.
 
-# Option 1 - 
+# Option 1 - {% include bc content
 
-The fastest way to start batch conversion is via the
-[](https://imagej.net/docs/guide/146-29.html#toc-Subsubsection-29.12.3)
+"Process | Batch | Macro..." %} =
+
+The fastest way to start batch conversion is via the [{% include bc
+content="Process | Batch | Macro..."
+%}](https://imagej.net/docs/guide/146-29.html#toc-Subsubsection-29.12.3)
 command. This will open a dialog (below) that will allow you to specify
 an input and output directory. You can select an output file format, and
 then use the `Add Macro Code` drop-down to generate a macro with the
@@ -44,8 +49,9 @@ desired functionality.
 
 # Option 2 - Script Template
 
-Open the [script editor](Using_the_Script_Editor "wikilink"), select .
-This will generate the following boilerplate:
+Open the [script editor](Using_the_Script_Editor "wikilink"), select {%
+include bc content="Templates | ImageJ 1.x | Batch | Process Folder (IJ1
+Macro)" %}. This will generate the following boilerplate:
 
 ![Process\_folder\_ij1.png](Process_folder_ij1.png
 "Process_folder_ij1.png")
@@ -58,9 +64,17 @@ saved.
 
 # Option 3 - Batch Processing with Script Parameters
 
+{% include info-box content="This section is currently being expanded to
+document the current state of the [SciJava Batch
+Processor](https://github.com/scijava/batch-processor/). The Batch
+Processor is a new addition to the SciJava/ImageJ framework. If you
+encounter any issues, please report/ask on the
+[forum](forum "wikilink")." %}
+
 # See also
 
-  - [](https://imagej.net/docs/guide/146-29.html#toc-Subsection-29.12)
+  - [{% include bc content="Process | Batch"
+    %}](https://imagej.net/docs/guide/146-29.html#toc-Subsection-29.12)
     submenu.
   - [Scripting](Scripting "wikilink") documentation and tutorials.
   - [How to apply a common operation to a complete

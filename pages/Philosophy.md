@@ -8,11 +8,11 @@ categories: Development
 description: test description
 ---
 
-[ImageJ](ImageJ "wikilink"), and the [SciJava](SciJava "wikilink")
-component collection in general, is developed according to certain
-biases, which we describe here. This philosophy has evolved over a very
-long development history, reflecting many lessons learned over a course
-of decades.
+%Replace% DevelopMenu %Replace% [ImageJ](ImageJ "wikilink"), and the
+[SciJava](SciJava "wikilink") component collection in general, is
+developed according to certain biases, which we describe here. This
+philosophy has evolved over a very long development history, reflecting
+many lessons learned over a course of decades.
 
 ## Open source
 
@@ -104,7 +104,140 @@ remain possible to use existing [plugins](plugins "wikilink") and
 
 ## Release early, release often
 
-ImageJ subscribes to the [release early, release
+{% include sidebox-right content="What's the alternative?
+
+`Some projects opt to release their entire software stack with a single monolithic version number. This has one extremely nice ramification: it clearly communicates which versions of which software components are intended to be compatible with one another.`
+
+For example, the [OME](OME "wikilink") project (which includes
+[OMERO](OMERO "wikilink") and [Bio-Formats](Bio-Formats "wikilink"))
+employs this approach to versioning and release management. Before each
+release, the entire OME team performs careful and thorough integration
+testing of all components.
+
+<table class="wikitable" style="width: 100%">
+
+<tr>
+
+<th colspan="3">
+
+Versioning strategies
+
+</th>
+
+<tr>
+
+<td>
+
+*Versioning*
+
+</td>
+
+<td>
+
+**BOM**
+
+</td>
+
+<td>
+
+**Monoversioned**
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="vertical-align: top">
+
+*Releases*
+
+</td>
+
+<td>
+
+**RERO**
+
+</td>
+
+<td>
+
+**"Big bang"**
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="vertical-align: top">
+
+*Version compatibility*
+
+</td>
+
+<td>
+
+Compatible components are declared in a [Bill of
+Materials](Bill_of_Materials "wikilink") (BOM)
+
+</td>
+
+<td>
+
+Compatible components have the same version number
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="vertical-align: top">
+
+*Frequency of releases*
+
+</td>
+
+<td>
+
+Faster
+
+</td>
+
+<td>
+
+Slower
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="vertical-align: top">
+
+*Stability*
+
+</td>
+
+<td>
+
+Less
+
+</td>
+
+<td>
+
+More
+
+</td>
+
+</tr>
+
+</table>
+
+" %} ImageJ subscribes to the [release early, release
 often](wikipedia:Release_early,_release_often "wikilink") (RERO) mantra
 often cited in software engineering circles. In particular—and
 especially because there is a small core development team—the project is

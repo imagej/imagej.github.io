@@ -20,7 +20,8 @@ HDF5 files
 [drosophila.xml](http://fly.mpi-cbg.de/~pietzsch/bdv-examples/drosophila.xml)
 and
 [drosophila.h5](http://fly.mpi-cbg.de/~pietzsch/bdv-examples/drosophila.h5).
-Open the XML file with  from the Fiji menu.
+Open the XML file with {% include bc content="Plugins | BigDataViewer |
+Open XML/HDF5" %} from the Fiji menu.
 
 ### His-YFP SPIM example
 
@@ -37,8 +38,9 @@ deconvolution of the registered angles. Download the XML and HDF5 files
 [HisYFP-SPIM.xml](http://fly.mpi-cbg.de/~pietzsch/bdv-examples/HisYFP-SPIM.xml)
 and
 [HisYFP-SPIM.h5](http://fly.mpi-cbg.de/~pietzsch/bdv-examples/HisYFP-SPIM.h5).
-Open the XML file with  from the Fiji menu. (Additionally you may
-download this settings file
+Open the XML file with {% include bc content="Plugins | BigDataViewer |
+Open XML/HDF5" %} from the Fiji menu. (Additionally you may download
+this settings file
 [HisYFP-SPIM.settings.xml](http://fly.mpi-cbg.de/~pietzsch/bdv-examples/HisYFP-SPIM.settings.xml)
 which adjusts the brightness of the fused and deconvolved data. Just
 place it next to the HisYFP-SPIM.xml file.)
@@ -51,9 +53,11 @@ time-lapse *Drosophila* embryogenesis acquired on Zeiss Lightsheet Z.1.
 The dataset is stored as a 500GB XML/HDF5 file on the server. For remote
 viewing, only an XML file is required. Download
 [remote.xml](http://fly.mpi-cbg.de/~pietzsch/bdv-examples/remote.xml)
-and open it with  from the Fiji menu.
+and open it with {% include bc content="Plugins | BigDataViewer | Open
+XML/HDF5" %} from the Fiji menu.
 
-Alternatively, choose  from the Fiji menu, browse the server
+Alternatively, choose {% include bc content="Plugins | BigDataViewer |
+Browse BigDataServer" %} from the Fiji menu, browse the server
 <http://tomancak-srv1.mpi-cbg.de:8081> and open the *Drosophila*
 dataset.
 
@@ -82,6 +86,7 @@ visualisation capabilities of BDV and are to be considered strictly
 
 To view it in BigDataViewer, download
 [catmaid-abd1.5.xml](http://fly.mpi-cbg.de/~pietzsch/bdv-examples/catmaid-abd1.5.xml)
-and open with  from the Fiji menu.
+and open with {% include bc content="Plugins | BigDataViewer | Open
+XML/HDF5" %} from the Fiji menu.
 
 [Category:Example Data](Category:Example_Data "wikilink")

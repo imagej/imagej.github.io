@@ -8,6 +8,9 @@ categories: Tutorials
 description: test description
 ---
 
+%Replace% UpdateSitesWarning %Replace% %Replace% UpdateSitesMenu
+%Replace%
+
 ## Introduction
 
 This tutorial will explain how to **add an update site to your install
@@ -34,15 +37,25 @@ site* button and fill in the name of your choice for the site and the
 URL, which would be provided by the plugin's author or distributor.
 
 **Note:** the list of update sites shown by default is generated from a
-special page, which you can . Update site maintainers are encouraged to
-add their update site to this list, as it both helps the community and
-the developers.
+special page, which you can {% include ListOfUpdateSites content="view
+and edit here" %}. Update site maintainers are encouraged to add their
+update site to this list, as it both helps the community and the
+developers.
 
 After you have selected your desired update site(s), close the dialog.
 The list of plugins that will be installed or updated from the chosen
 sites will now show up:
 
 ![AddPluginSite-5.jpg](AddPluginSite-5.jpg "AddPluginSite-5.jpg")
+
+{% include warning-box content="If an entry's action is **Update It**,
+that means it is changing an existing plugin. This action is dangerous
+and can break other plugins, or ImageJ itself.  
+Ideally the maintainers of these sites would work with the core ImageJ
+maintainers to centralize important plugins.  
+When you find plugin conflicts between update sites, you can greatly
+help the community by [starting a discussion](Help "wikilink") with the
+maintainers\! " %}
 
 ## Choose and download plugins
 
@@ -56,6 +69,11 @@ Once you are happy with what will be installed, click on the *Apply
 Changes* button to download your updates.
 
 ## Verify install
+
+{% include warning-box content="An update is not finalized until
+**restarting the application.** After initiating an update, **do not
+modify your ImageJ installation manually** until after restarting at
+least once. " %}
 
 Restart ImageJ as instructed to finish the install. Check to see that
 the plugin was installed:

@@ -8,6 +8,9 @@ categories: Plugins,Segmentation,Mathematical_morphology
 description: test description
 ---
 
+{% include Infobox content="name = Interactive Marker-controlled
+Watershed | software = IJPB-plugins | author = 
+
 ## Introduction
 
 ![Interactive-Marker-controlled-Watershed-plugin-overview.png](Interactive-Marker-controlled-Watershed-plugin-overview.png
@@ -123,7 +126,8 @@ need to [
 add](How_to_follow_a_3rd_party_update_site#Add_update_sites "wikilink")
 the IJPB-plugins update site:
 
-1\) Select  from the Fiji menu to start the updater.
+1\) Select {% include bc content="Help | Update..." %} from the Fiji
+menu to start the updater.
 
 2\) Click on *Manage update sites*. This brings up a dialog where you
 can activate additional update sites.
@@ -133,7 +137,8 @@ should see an additional jar file for download.
 
 4\) Click *Apply changes* and restart Fiji.
 
-You should now find the plugin under the sub-menu .
+You should now find the plugin under the sub-menu {% include bc
+content="Plugins | MorphoLibJ | Segmentation" %}.
 
 **Note**: Marker-controlled Watershed is only one of the plugins
 included in the [MorphoLibJ](MorphoLibJ "wikilink") suite. By following

@@ -8,5 +8,8 @@ categories:
 description: test description
 ---
 
-The statistics for website visits and ImageJ updates are aggregated into
-a publicly viewable form at the following URL:
+%Replace% AboutMenu %Replace% The statistics for website visits and
+ImageJ updates are aggregated into a publicly viewable form at the
+following URL:
+
+{% include BigLink content="url=<https://juglab.mpi-cbg.de/matomo/>" %}

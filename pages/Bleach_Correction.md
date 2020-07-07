@@ -8,8 +8,8 @@ categories: Plugins
 description: test description
 ---
 
-The plugin was made available by  and Jens Rietdorf and the full
-documentation is available [at EMBL's
+The plugin was made available by {% include Person content="Miura" %}
+and Jens Rietdorf and the full documentation is available [at EMBL's
 site](http://cmci.embl.de/downloads/bleach_corrector).
 
 This plugin contains three different methods for correcting the

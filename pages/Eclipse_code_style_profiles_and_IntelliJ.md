@@ -8,8 +8,8 @@ categories:
 description: test description
 ---
 
-This is a short guide on how to start using the Eclipse code style
-profile of ImageJ.
+%Replace% DevelopMenu %Replace% This is a short guide on how to start
+using the Eclipse code style profile of ImageJ.
 
 ## Installing Eclipse code formatter plugin
 

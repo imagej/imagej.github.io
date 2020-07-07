@@ -8,6 +8,10 @@ categories: ImgLib
 description: test description
 ---
 
+%Replace% ImgLibMenu %Replace% {% include warning-box content="The
+workshop materials linked below are outdated. Please get the most recent
+version from 
+
 Please download the following material for the Workshop "Advanced
 Programming with ImgLib2" (at the ImageJ User and Developer Conference
 2012).

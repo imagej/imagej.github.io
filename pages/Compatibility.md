@@ -17,7 +17,8 @@ remain possible to use existing plugins and macros with new versions of
 The [ImageJ2](ImageJ2 "wikilink") project is a complete redesign of
 ImageJ, with no dependency on [ImageJ 1.x](ImageJ_1.x "wikilink").
 However, to facilitate backwards compatibility, there is an **ImageJ
-Legacy** component (source ) which provides extensions for ImageJ2 and
+Legacy** component (source {% include GitHub content="org = imagej |
+repo = imagej-legacy" %}) which provides extensions for ImageJ2 and
 ImageJ1 to operate in harmony.
 
 The ImageJ legacy layer provides the following extensions:
@@ -35,27 +36,38 @@ many users need to retain access to ImageJ1 plugins.
 ### The ImageJ legacy UI
 
 The legacy layer converts ImageJ1 into a SciJava-compatible user
-interface by implementing the  interface via the  class.
+interface by implementing the {% include Javadoc content="project =
+SciJava | package = org/scijava/ui | class = UserInterface" %} interface
+via the {% include Javadoc content="package = net/imagej/legacy/ui |
+class = LegacyUI" %} class.
 
 However, things are complicated by the fact that ImageJ1 was not
 designed with such requirements in mind. The legacy layer uses a
 bytecode manipulation library called [Javassist](Javassist "wikilink")
 to rewrite portions of ImageJ1 at runtime, in order to facilitate
-integration and extension. See the  project for details.
+integration and extension. See the {% include GitHub content="org =
+imagej | repo = ij1-patcher | label = ij1-patcher" %} project for
+details.
 
 ### Translation of data structures
 
-Each  has a linked , kept in sync by the . Whenever the need arises, the
-legacy layer syncs the linked data objects. In order to maintain
-reasonable performance, every opportunity is taken to avoid data
-translation by making data changes in place, and only on demand (lazily,
-with caching). The legacy layer reuses data by reference when
-feasible—in particular, when image planes are stored in primitive
-arrays—but in some cases the data must be copied (e.g., for ROIs).
+Each {% include Javadoc content="package = net/imagej/display | class =
+ImageDisplay" %} has a linked {% include Javadoc content="project =
+ImageJ1 | package = ij | class =ImagePlus" %}, kept in sync by the {%
+include Javadoc content="package = net/imagej/legacy | class =
+LegacyImageMap" %}. Whenever the need arises, the legacy layer syncs the
+linked data objects. In order to maintain reasonable performance, every
+opportunity is taken to avoid data translation by making data changes in
+place, and only on demand (lazily, with caching). The legacy layer
+reuses data by reference when feasible—in particular, when image planes
+are stored in primitive arrays—but in some cases the data must be copied
+(e.g., for ROIs).
 
 Currently, automatic synchronization is disabled as it has negative
 performance implications. The planned solution to the performance
-problems is to , instead of relying on up-front pixel-wise translation.
+problems is to {% include GitHub content="org=imagej |
+repo=imagej-legacy | issue=86 | label=implement a wrapping layer" %},
+instead of relying on up-front pixel-wise translation.
 
 In the mean time, full synchronization can be forced by setting a
 `imagej.legacy.sync` [system
@@ -71,7 +83,10 @@ System.setProperty("imagej.legacy.sync", "true");
 
 The eventual goal is to migrate all core ImageJ1 plugins to the ImageJ2
 paradigm. Many ImageJ1 plugins have been already been updated in this
-fashion; see the  and  repositories in particular.
+fashion; see the {% include GitHub content="org = imagej | repo =
+imagej-ops | label = imagej-ops" %} and {% include GitHub content="org =
+imagej | repo = imagej-plugins-commands | label =
+imagej-plugins-commands" %} repositories in particular.
 
 ## See also
 

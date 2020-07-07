@@ -8,11 +8,14 @@ categories: Related Software,Citable
 description: test description
 ---
 
-Endrov is an open-source plugin architecture aimed for image analysis
-and data processing.
+{% include Infobox content="name = Endrov | software = Endrov | author =
+Johan Henriksson | maintainer = Johan Henriksson | source = Endrov is an
+open-source plugin architecture aimed for image analysis and data
+processing.
 
 ## Publication
 
-  - 
+  - {% include Publication content="Endrov" %}
+
 [Category:Related Software](Category:Related_Software "wikilink")
 [Category:Citable](Category:Citable "wikilink")

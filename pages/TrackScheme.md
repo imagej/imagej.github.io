@@ -35,8 +35,9 @@ We will be mainly using the **Redo layout** and button.
     colored in green. The TrackMate displayers and the TrackScheme are
     linked and share the same selection. This will become very handy
     soon.
-  - With the TrackScheme window selected, press the  key. The cell
-    disappears in TrackScheme, and the spot vanishes from the displayer.
+  - With the TrackScheme window selected, press the {% include key
+    content="Delete" %} key. The cell disappears in TrackScheme, and the
+    spot vanishes from the displayer.
   - To refresh the view, click the **Redo layout** button in
     TrackScheme. Each column is re-populated and re-numbered.
 
@@ -50,8 +51,9 @@ We will be mainly using the **Redo layout** and button.
         whole track**.
   - Notice in the displayer that the selected track appear with a green
     and thick line, so as to highlight it.
-  - To delete all of it, simply press the  key in TrackScheme, or use
-    the right-click menu to do so.
+  - To delete all of it, simply press the {% include key
+    content="Delete" %} key in TrackScheme, or use the right-click menu
+    to do so.
 
 Press the **Redo layout** button when you are done. There should be four
 tracks remaining. Notice that their color changed as you deleted some of
@@ -97,7 +99,7 @@ cell by clicking on it, whether in the viewer or in the TrackScheme
 panel. It should get highlighted everywhere. Then,
 
   - In the viewer, move to the frame that contains the target cell
-  - Hold the  key
+  - Hold the {% include key content="Shift" %} key
   - Click on the target cell
 
 It gets highlighted in the displayer, and in TrackScheme as well. You
@@ -119,8 +121,10 @@ This can be used to create branching links, as picture below:
 
 ### Creating several links at once
 
-Using +, we can put several cells in the selection, and create the links
-between each pair. Simply use + to add or remove cells from the
+Using {% include key content="Shift" %}+{% include key content="click"
+%}, we can put several cells in the selection, and create the links
+between each pair. Simply use {% include key content="Shift" %}+{%
+include key content="click" %} to add or remove cells from the
 selection. They get highlighted both in TrackScheme, in the linked
 viewer, and on TrackScheme sidebar.
 
@@ -135,11 +139,12 @@ are already linked, or if they belong to the same frame.
 
 In TrackScheme, links are selectable, therefore deletable. Select the
 target link by clicking on it; it gets highlighted in the displayer as
-well. Press the  key to remove it.
+well. Press the {% include key content="Delete" %} key to remove it.
 
 Removing a link often splits a track in 2 new tracks. To have them
 properly re-arranged, press the **Redo layout** button.
 
+{% include Person content="JeanYvesTinevez" %}
 ([talk](User_talk:JeanYvesTinevez "wikilink")) 09:21, 5 August 2013
 (CDT)
 

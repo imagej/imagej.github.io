@@ -8,6 +8,18 @@ categories: Related Software,Citable,SciJava,OME
 description: test description
 ---
 
+%Replace% FormatsMenu %Replace% {% include Infobox content="software =
+ImageJ | name = OME Bio-Formats plugins | logo =
+![Bio-formats-icon.png](Bio-formats-icon.png "Bio-formats-icon.png") |
+author = [Open Microscopy
+Environment](https://www.openmicroscopy.org/):  
+\- [UW-Madison LOCI](LOCI "wikilink")  
+\- [Glencoe Software](https://www.glencoesoftware.com/)  
+\- [University of Dundee](https://www.dundee.ac.uk/) | maintainer = OME
+development team | filename = [See Bio-Formats Downloads
+page](https://downloads.openmicroscopy.org/bio-formats/) | source =
+%Replace% TOC %Replace%
+
 ## Purpose
 
 Import data from many life sciences file formats, and export to several
@@ -208,6 +220,13 @@ ImagePlus[] imps = BF.openImagePlus(options);
 
 ## Daily builds
 
+{% include warning-box content="The daily builds are **not yet
+released** and should be considered **beta** in quality. There may be
+new bugs. In particular, you should **avoid exporting data using the
+Bio-Formats Exporter** because the files it writes might not be readable
+later by release versions of Bio-Formats or other OME-compliant tools."
+%}
+
 Fiji ships release versions of Bio-Formats. However, given the long time
 frame between releases, you can update to the latest code by toggling
 the **Bio-Formats** update site, which includes the latest bug-fixes.
@@ -233,7 +252,8 @@ To enable the Bio-Formats update site:
 
 ## Source code
 
-The Bio-Formats source code is .
+The Bio-Formats source code is {% include GitHub content="org =
+openmicroscopy | repo = bioformats" %}.
 
 ## Reporting bugs
 
@@ -242,7 +262,8 @@ Bio-Formats](https://docs.openmicroscopy.org/latest/bio-formats/about/bug-report
 
 ## Publication
 
-  - 
+  - {% include Publication content="Bio-Formats" %}
+
 [Category:Related Software](Category:Related_Software "wikilink")
 [Category:Citable](Category:Citable "wikilink")
 [Category:SciJava](Category:SciJava "wikilink")

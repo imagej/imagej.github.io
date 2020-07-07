@@ -8,24 +8,36 @@ categories: Scripting,Jython
 description: test description
 ---
 
-[Jython](http://www.jython.org/) is an implementation of the [Python
-programming language](https://www.python.org/) designed to run on the
-Java platform.
+{% include info-box content="This page is a copy of [Jython
+Scripting](Jython_Scripting "wikilink"). The original wiki page is in a
+rewrite progress. When rewriting [Jython
+Scripting](Jython_Scripting "wikilink") is finished, this wiki page will
+be shortened to only contain Jython code examples." %}
+
+{% include Learn content="scripting" %}[Jython](http://www.jython.org/)
+is an implementation of the [Python programming
+language](https://www.python.org/) designed to run on the Java platform.
 
 ## Quickstart
 
-  - Press  to bring up the [Script Editor](Script_Editor "wikilink").
-  - Select an example Jython script from the  menu.
-  - Press  to run the script\!
+  - Press {% include key content="\[" %} to bring up the [Script
+    Editor](Script_Editor "wikilink").
+  - Select an example Jython script from the {% include bc
+    content="Templates | \[by language\] | Python" %} menu.
+  - Press {% include key content="Ctrl|R" %} to run the script\!
 
 ## The Jython interpreter plugin
 
 The interpreter provides a screen and a prompt. Type any jython code on
 the prompt to interact with ImageJ.
 
-Launch it from . See [Scripting Help](Scripting_Help "wikilink") for all
+Launch it from {% include bc content="Plugins | Scripting | Jython
+Interpreter" %}. See [Scripting Help](Scripting_Help "wikilink") for all
 keybindings, and also [Scripting
 comparisons](Scripting_comparisons "wikilink").
+
+{% include warning-box content="Note that ImageJ also ships a unified
+Script Interpreter plugin, accessible from 
 
 Within the interpreter, all ImageJ, java.lang.\* and TrakEM2 classes are
 automatically imported. So creating new images and manipulating them is
@@ -48,7 +60,8 @@ very straighforward.
 
 #### Importing classes
 
-You can specify imports in Jython as follows:
+{% include ImportingClasses content="lang = Jython" %} You can specify
+imports in Jython as follows:
 
 ``` python
 from java.io import File
@@ -67,11 +80,13 @@ To create a script for the GUI, the recommended setup is the following:
     ImageJ1 to insert it into the Menu structure, the file must be saved
     somewhere under ImageJ plugins folder, have an underscore on the
     name, and a .py extension.
-  - Run  <b>only</b> the very first time after newly creating the file
-    under any folder or subfolder of ImageJ's plugins folder. A menu
-    item will appear with its name, from which it can be run.
+  - Run {% include bc content="Plugins | Scripting | Refresh Jython
+    scripts" %} <b>only</b> the very first time after newly creating the
+    file under any folder or subfolder of ImageJ's plugins folder. A
+    menu item will appear with its name, from which it can be run.
   - Keep editing (and saving) the file from your editor. Just select the
-    menu item to execute it over and over. Or use the  window to launch
+    menu item to execute it over and over. Or use the {% include bc
+    content="Plugins | Utilities | Find Commands..." %} window to launch
     it easily (keybinding 'l').
 
 The next time Fiji is run, it will setup all your scripts in the Plugins
@@ -83,6 +98,15 @@ If all you need is a script to run in headless mode, simply do:
 
 ### Some limitations of jython
 
+{% include sidebox-right content="float=right | title=What about NumPy
+and SciPy? | If you like Python, you probably want to use Python modules
+such as the excellent [NumPy](http://www.numpy.org/) and
+[SciPy](http://www.scipy.org/) libraries. Unfortunately, Jython does not
+support linking to Python modules backed by native code. See [this
+thread on the ImageJ
+forum](http://forum.imagej.net/t/python-scripting/80) for some options
+and alternatives. This area is somewhere a dedicated programmer could
+make a huge splash and benefit the entire scientific community. " %}
 Though jython tries to be as close as possible as python, there are some
 differences you may experience during scripting.
 
@@ -1334,12 +1358,14 @@ completely **unmaintained**.
 
 Then open the [Fiji Updater](Fiji_Updater "wikilink"), push the "Manage
 update sites" at the bottom left of the dialog, and install the
-[FFMPEG](https://fiji.sc/~schindelin/ffmpeg-plugins/) plugin by  by
-ticking its checkbox, as [explained in more detail
+[FFMPEG](https://fiji.sc/~schindelin/ffmpeg-plugins/) plugin by {%
+include Person content="Schindelin" %} by ticking its checkbox, as
+[explained in more detail
 here](How_to_follow_a_3rd_party_update_site "wikilink").
 
-See also the Java source code for the  class from the [FFMPEG plugin
-source code
+See also the Java source code for the {% include GitHub
+content="repo=fiji|tag=8164ae68|path=native/FFMPEG\_IO/plugin/src/main/java/fiji/ffmpeg/IO.java|label=IO"
+%} class from the [FFMPEG plugin source code
 site](https://github.com/fiji/fiji/tree/8164ae68/native/FFMPEG_IO/plugin/src/main/java/fiji/ffmpeg/).
 
 ``` python
@@ -2140,13 +2166,15 @@ import com.xhaus.jyson.JysonCodec as jyson
 
 The simplest way is to place the jython script file into fiji/plugins/
 folder or a subfolder, and it will appear in the menus after running
-"''" or "''", or on restarting Fiji.
+"'{% include bc content="Plugins | Scripting | Refresh Jython Scripts"
+%}'" or "'{% include bc content="Help | Refresh Menus" %}'", or on
+restarting Fiji.
 
 If you want to have the Jython script show up in a place outside the
 Plugins menu, just put the file into an appropriate subdirectory of
 fiji/plugins/Scripts/; for example, if you put a Jython script called
 Animation\_.py into fiji/plugins/Scripts/File/New/, it will be available
-as .
+as {% include bc content="File | New | Animation" %}.
 
 To populate an update site, the updater let the possibility to directly
 upload jython scripts as .py (or $py.class for the one that resides in
@@ -2265,21 +2293,38 @@ similarly be handle by the updater to populate an update site.
 
 # Jython examples in Fiji
 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - {% include GitHub
+    content="repo=fiji|path=plugins/Examples/Find\_Dimension\_of\_Raw\_Image.py|label=Find
+    Dimension of Raw Image" %}
+  - {% include GitHub
+    content="repo=fiji|path=plugins/Examples/Edit\_LUT\_As\_Text.py|label=Edit
+    LUT As Text" %}
+  - {% include GitHub
+    content="repo=fiji|path=plugins/Examples/Delayed\_Snapshot.py|label=Delayed
+    Snapshot" %}
+  - {% include GitHub
+    content="repo=fiji|path=plugins/Examples/Command\_Launchers/Command\_Launcher\_Python.py|label=Command
+    Launcher GUI" %}
+  - {% include GitHub
+    content="repo=fiji|path=plugins/Examples/list\_all\_threads.py|label=List
+    all threads" %}
+  - {% include GitHub
+    content="repo=fiji|path=plugins/Examples/chess\_.py|label=Chess" %}
+
 <!-- end list -->
 
-  - in TrakEM2.
-
-  - for TrakEM2 objects.
-
-  - objects in TrakEM2.
-
-  - in TrakEM2.
+  - {% include GitHub
+    content="repo=fiji|path=plugins/Examples/TrakEM2\_Example\_Scripts/extract\_stack\_under\_arealist.py|label=Extract
+    stack under AreaList" %} in TrakEM2.
+  - {% include GitHub
+    content="repo=fiji|path=plugins/Examples/TrakEM2\_Example\_Scripts/T2\_set\_all\_transforms\_to\_identity.py|label=Set
+    all transforms to identity" %} for TrakEM2 objects.
+  - {% include GitHub
+    content="repo=fiji|path=plugins/Examples/TrakEM2\_Example\_Scripts/T2\_Select\_All.py|label=Select
+    All" %} objects in TrakEM2.
+  - {% include GitHub
+    content="repo=fiji|path=plugins/Examples/TrakEM2\_Example\_Scripts/Measure\_AreaLists.py|label=Measure
+    AreaList" %} in TrakEM2.
 
 # See also
 

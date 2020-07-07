@@ -8,9 +8,10 @@ categories: TrakEM2,Tutorials
 description: test description
 ---
 
-This video tutorial was made by Javier Cabrera-Chaves and edited by 
-using [Wink 1.5 for linux](http://www.debugmode.com/wink/). To navigate,
-use the green arrows to go forward and backward in the slide-show.
+This video tutorial was made by Javier Cabrera-Chaves and edited by {%
+include Person content="Iarganda" %} using [Wink 1.5 for
+linux](http://www.debugmode.com/wink/). To navigate, use the green
+arrows to go forward and backward in the slide-show.
 
 {{\#widget:flash|width=993|height=776|swf=3/3e/User\_guide\_TrakEM.swf}}
 

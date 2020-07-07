@@ -8,15 +8,17 @@ categories: Scripting
 description: test description
 ---
 
-ImageJ allows you to write scripts in several different languages.
+{% include Learn content="scripting" %}ImageJ allows you to write
+scripts in several different languages.
 
 # Getting started
 
   - Read the [ImageJ tutorial
     notebooks](https://imagej.github.io/tutorials) to learn how to write
     ImageJ scripts.
-  - Press the  key to open the [Script Editor](Script_Editor "wikilink")
-    (or - to open the [Script
+  - Press the {% include key content="\[" %} key to open the [Script
+    Editor](Script_Editor "wikilink") (or {% include key content="Shift"
+    %}-{% include key content="\[" %} to open the [Script
     Interpreter](Script_Interpreter "wikilink")).
   - Optionally, choose a template from the *Templates* menu to get you
     started.
@@ -66,21 +68,21 @@ following common features.
 
 ## General key bindings
 
-  - : bring the previously typed command.
-
-  - : bring the next typed command.
-
-  - or : execute the contents of the prompt.
+  - {% include Key content="up" %}: bring the previously typed command.
+  - {% include Key content="down" %}: bring the next typed command.
+  - {% include Key content="enter" %} or {% include Key content="return"
+    %}: execute the contents of the prompt.
 
 ## Multiline editing and keybindings
 
 You can enlarge the prompt by dragging the middle bar.
 
-  - : create a new line within the prompt.
-
-  - : move to the line above within the prompt.
-
-  - : move to the line below within the prompt.
+  - {% include key content="Shift||Enter" %}: create a new line within
+    the prompt.
+  - {% include key content="Shift||Up" %}: move to the line above within
+    the prompt.
+  - {% include key content="Shift|Down" %}: move to the line below
+    within the prompt.
 
 ## Selecting and executing text from the screen
 
@@ -112,6 +114,8 @@ For the script to appear in the ImageJ menus, the following must apply:
       - ".ijm" for ImageJ 1.x macros.
 3.  The script name contains a '\_' (underscore) character, e.g.
     "MyScript\_.ijm".
+
+{% include Fiji content="Replace `ImageJ.app` with `Fiji.app`" %}
 
 The extension will be stripped and any underscores will be turned into
 spaces before the script is added to the menus.

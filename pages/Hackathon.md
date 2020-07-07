@@ -80,7 +80,7 @@ ImageJ has benefitted from many hackathons over the years:
 <td><p><a href="https://www.hhmi.org/sites/default/files/Bulletin/2007/November/nov2007_fulltext.pdf">2007 Summer</a></p></td>
 <td><p><a href="https://janelia.org/">HHMI Janelia</a><br />
 Ashburn, VA, USA</p></td>
-<td></td>
+<td><p>{% include PersonList content="Albertcardona|bene51|jefferis|hanchuan|Schindelin|StephanP|Saalfeld|rasband|Arnim Jenett|Julie Simpson|Torsten Rohlfing|Yuriy Mishchenko" %}</p></td>
 <td><p>Neuroscience</p></td>
 </tr>
 <tr class="odd">
@@ -88,7 +88,7 @@ Ashburn, VA, USA</p></td>
 2008 Apr 30</a></p></td>
 <td><p><a href="https://mpi-cbg.de/">MPI-CBG</a><br />
 Dresden, Germany</p></td>
-<td></td>
+<td><p>{% include PersonList content="Albertcardona|bene51|ysis|White|frederikfly|JeanYvesTinevez|Schindelin|Hinerm|StephanP|Saalfeld|Tomancak" %}</p></td>
 <td><p><a href="Fiji" title="wikilink">Fiji</a></p></td>
 </tr>
 <tr class="even">
@@ -104,7 +104,7 @@ Zürich, Switzerland</p></td>
 2009 Apr 03</a></p></td>
 <td><p><a href="https://mpi-cbg.de/">MPI-CBG</a><br />
 Dresden, Germany</p></td>
-<td></td>
+<td><p>{% include PersonList content="Schindelin|Albertcardona|JeanYvesTinevez|bene51|Iarganda|White|Hinerm|Tomancak|StephanP|Saalfeld|Raju Tomer|Misha Kudryashev" %}</p></td>
 <td><p>Segmentation</p></td>
 </tr>
 <tr class="even">
@@ -112,7 +112,7 @@ Dresden, Germany</p></td>
 2010 Mar 27</a></p></td>
 <td><p><a href="https://www.embl.de/">EMBL</a><br />
 Heidelberg, Germany</p></td>
-<td></td>
+<td><p>{% include PersonList content="Albertcardona|Saalfeld|bene51|cmci|Rueden|Schindelin|Iarganda|Lindsey|Hinerm|StephanP|Harris|vkaynig" %}</p></td>
 <td><p><a href="Fiji" title="wikilink">Fiji</a></p></td>
 </tr>
 <tr class="odd">
@@ -120,7 +120,7 @@ Heidelberg, Germany</p></td>
 2010 Oct 23</p></td>
 <td><p><a href="https://www.lbl.gov/">LBNL</a><br />
 Berkeley CA, USA</p></td>
-<td></td>
+<td><p>{% include PersonList content="frederikfly|Schindelin" %}</p></td>
 <td><p>Running <a href="Micro-Manager" title="wikilink">Micro-Manager</a> inside <a href="Fiji" title="wikilink">Fiji</a></p></td>
 </tr>
 <tr class="even">
@@ -128,7 +128,7 @@ Berkeley CA, USA</p></td>
 2011 Feb 13</a></p></td>
 <td><p><a href="https://discovery.wisc.edu/">WID</a><br />
 Madison, WI, USA</p></td>
-<td></td>
+<td><p>{% include PersonList content="Iarganda|paulbarber|Albertcardona|Bdezonia|arthuredelstein|afraser|frederikfly|Grislis|Harris|hinerm|luisibanez|LeeKamentsky|Lindsey|Linkert|Hinerm|Pietzsch|StephanP|Rueden|Saalfeld|Schindelin|bene51|Tomancak|Eliceiri|Lentz|Mark Rowley" %}</p></td>
 <td><p>Multidimensional visualization</p></td>
 </tr>
 <tr class="odd">
@@ -136,14 +136,14 @@ Madison, WI, USA</p></td>
 2011 Dec 19</a></p></td>
 <td><p><a href="https://mpi-cbg.de/">MPI-CBG</a><br />
 Dresden, Germany</p></td>
-<td></td>
+<td><p>{% include PersonList content="jburel|Stephane-D|Bdezonia|Dietzc|Michaeldoube|Fab14|frederikfly|hornm|White|tomka|alex-krull|Linkert|Hinerm|Moore|Pietzsch|StephanP|Rueden|Schindelin|bene51|Tomancak|Peter-Gabriel-Pitrone|Eliceiri|Fernando Carrilo, Jiri Matas, Jurgen Mayer" %}</p></td>
 <td><p>Interoperability</p></td>
 </tr>
 <tr class="even">
 <td><p>2012 Oct</p></td>
 <td><p><a href="https://www.uni-konstanz.de/en/">Universität Konstanz</a><br />
 Konstanz, Germany</p></td>
-<td></td>
+<td><p>{% include PersonList content="hornm|Dietzc|Pietzsch|Schindelin" %}</p></td>
 <td><p><a href="KNIME" title="wikilink">KNIME</a>+<a href="Fiji" title="wikilink">Fiji</a></p></td>
 </tr>
 <tr class="odd">
@@ -151,15 +151,15 @@ Konstanz, Germany</p></td>
 2013 Jan 25</p></td>
 <td><p><a href="LOCI" title="wikilink">LOCI</a><br />
 Madison, WI, USA</p></td>
-<td></td>
-<td></td>
+<td><p>{% include PersonList content="thewtex|Rueden|Schindelin|hinerm" %}</p></td>
+<td><p>{% include GitHub content="org=scifio|repo=scifio-imageio|label=SCIFIO ImageIO plugin" %}</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="2013-04-22_-_Trainable_Segmentation_Hackathon" title="wikilink">2013 Apr 14 -<br />
 2013 Apr 18</a></p></td>
 <td><p><a href="LOCI" title="wikilink">LOCI</a><br />
 Madison, WI, USA</p></td>
-<td></td>
+<td><p>{% include PersonList content="Iarganda|Schindelin|Rueden" %}</p></td>
 <td><p><a href="Trainable_Weka_Segmentation" title="wikilink">Trainable Weka Segmentation</a></p></td>
 </tr>
 <tr class="odd">
@@ -167,7 +167,7 @@ Madison, WI, USA</p></td>
 2013 May 3</a></p></td>
 <td><p><a href="LOCI" title="wikilink">LOCI</a><br />
 Madison, WI, USA</p></td>
-<td></td>
+<td><p>{% include PersonList content="StephanP|Pietzsch|Rueden|Schindelin|Bdezonia|hinerm|Grislis" %}</p></td>
 <td><p><a href="ImgLib2" title="wikilink">ImgLib2</a></p></td>
 </tr>
 <tr class="even">
@@ -175,7 +175,7 @@ Madison, WI, USA</p></td>
 2013 Sep 13</p></td>
 <td><p><a href="https://www.pasteur.fr/en">Institut Pasteur</a><br />
 Paris France</p></td>
-<td></td>
+<td><p>{% include PersonList content="Pietzsch|JeanYvesTinevez" %}</p></td>
 <td><p><a href="MaMuT" title="wikilink">MaMuT</a>, <a href="BigDataViewer" title="wikilink">BigDataViewer</a></p></td>
 </tr>
 <tr class="odd">
@@ -183,7 +183,7 @@ Paris France</p></td>
 2013 Nov 27</p></td>
 <td><p><a href="LOCI" title="wikilink">LOCI</a><br />
 Madison, WI, USA</p></td>
-<td></td>
+<td><p>{% include PersonList content="Dietzc|Schindelin|Rueden" %}</p></td>
 <td><p><a href="KNIME" title="wikilink">KNIME</a>+<a href="ImageJ" title="wikilink">ImageJ</a></p></td>
 </tr>
 <tr class="even">
@@ -191,7 +191,7 @@ Madison, WI, USA</p></td>
 2014 Mar 13</a></p></td>
 <td><p><a href="https://www.uni-konstanz.de/en/">Universität Konstanz</a><br />
 Konstanz, Germany</p></td>
-<td></td>
+<td><p>{% include PersonList content="Rueden|Schindelin|Dietzc|hornm" %}</p></td>
 <td><p><a href="ImageJ_Ops" title="wikilink">ImageJ Ops</a> |- valign="top" |</p></td>
 </tr>
 <tr class="odd">
@@ -199,15 +199,15 @@ Konstanz, Germany</p></td>
 2014 Mar 21</p></td>
 <td><p><a href="LOCI" title="wikilink">LOCI</a><br />
 Madison, WI, USA</p></td>
-<td></td>
-<td></td>
+<td><p>{% include PersonList content="jburel|pwalczysko|Rueden" %}</p></td>
+<td><p>{% include GitHub content="org=imagej|repo=imagej-omero|label=ImageJ-OMERO" %}</p></td>
 </tr>
 <tr class="even">
 <td><p>2014 Jul 7 -<br />
 2014 Jul 10</p></td>
 <td><p><a href="LOCI" title="wikilink">LOCI</a><br />
 Madison, WI, USA</p></td>
-<td></td>
+<td><p>{% include PersonList content="marktsuchida|ChrisWeisiger|Schindelin|stuyvenberg|Rueden|hinerm" %}</p></td>
 <td><p><a href="https://micro-manager.org/">Micro-Manager</a> and <a href="https://openspim.org/">OpenSPIM</a></p></td>
 </tr>
 <tr class="odd">
@@ -215,7 +215,7 @@ Madison, WI, USA</p></td>
 2014 Sep 18</a></p></td>
 <td><p><a href="LOCI" title="wikilink">LOCI</a><br />
 Madison, WI, USA</p></td>
-<td></td>
+<td><p>{% include PersonList content="Dietzc|bnorthan|hinerm|Rueden|apal4|yuminguw|Awalter2|Ginger Pocock" %}</p></td>
 <td><p><a href="ImageJ_Ops" title="wikilink">ImageJ Ops</a> + <a href="KNIME" title="wikilink">KNIME</a></p></td>
 </tr>
 <tr class="even">
@@ -223,7 +223,7 @@ Madison, WI, USA</p></td>
 2014 Oct 17</p></td>
 <td><p><a href="LOCI" title="wikilink">LOCI</a><br />
 Madison, WI, USA</p></td>
-<td></td>
+<td><p>{% include PersonList content="Pietzsch|StephanP|Saalfeld|Schindelin|Rueden|hinerm" %}</p></td>
 <td><p><a href="ImgLib2" title="wikilink">ImgLib2</a></p></td>
 </tr>
 <tr class="odd">
@@ -231,7 +231,7 @@ Madison, WI, USA</p></td>
 2015 Jan 27</p></td>
 <td><p><a href="http://www.freiraeume-kn.de/standort.htm">FREIRÄUME</a><br />
 Konstanz, Germany</p></td>
-<td></td>
+<td><p>{% include PersonList content="Dietzc|Rueden|hinerm|LeeKamentsky|Pietzsch|Jug|Schindelin|Iarganda|gab1one|seebacherd|kmader|angrauma|Squareys|tibuch|patrick-winter-knime|AndreasBurger|Tobias Kötter" %}</p></td>
 <td><p><a href="ImageJ_Ops" title="wikilink">ImageJ Ops</a> + <a href="KNIME" title="wikilink">KNIME</a> + <a href="CellProfiler" title="wikilink">CellProfiler</a> + more</p></td>
 </tr>
 <tr class="even">
@@ -239,7 +239,7 @@ Konstanz, Germany</p></td>
 2015 Apr 17</p></td>
 <td><p><a href="https://janelia.org/">HHMI Janelia</a><br />
 Ashburn, VA, USA</p></td>
-<td></td>
+<td><p>{% include PersonList content="StephanP|Pietzsch|Saalfeld|Tomancak" %}</p></td>
 <td><p><a href="Multiview-Reconstruction" title="wikilink">Multiview-Reconstruction</a> and <a href="BigDataViewer" title="wikilink">BigDataViewer</a></p></td>
 </tr>
 <tr class="odd">
@@ -247,7 +247,7 @@ Ashburn, VA, USA</p></td>
 2015 July 3</p></td>
 <td><p><a href="https://www.mdc-berlin.de/13800178/en/bimsb">BIMSB/MDC</a><br />
 Berlin, Germany</p></td>
-<td></td>
+<td><p>{% include PersonList content="StephanP|Dietzc|emmenlau|StephanJanosch" %}</p></td>
 <td><p>Parallelization of <a href="Multiview-Reconstruction" title="wikilink">Multiview-Reconstruction</a><br />
 and integration with ImageJ Ops &amp; KNIME</p></td>
 </tr>
@@ -256,7 +256,7 @@ and integration with ImageJ Ops &amp; KNIME</p></td>
 2015 Jul 31</a></p></td>
 <td><p><a href="https://janelia.org/">HHMI Janelia</a><br />
 Ashburn, VA, USA</p></td>
-<td></td>
+<td><p>{% include PersonList content="Saalfeld|Rueden|hinerm|Pietzsch|tomka|bhoeckendorf|fernandoamat|Phillip Keller" %}</p></td>
 <td><p><a href="SCIFIO" title="wikilink">SCIFIO</a> performance and generality</p></td>
 </tr>
 <tr class="odd">
@@ -264,7 +264,7 @@ Ashburn, VA, USA</p></td>
 2015 Sep 15</a></p></td>
 <td><p><a href="https://discovery.wisc.edu/">WID</a> + <a href="LOCI" title="wikilink">LOCI</a><br />
 Madison, WI, USA</p></td>
-<td></td>
+<td><p>{% include PersonList content="Rueden|hinerm|Dietzc|Pietzsch|Saalfeld|bnorthan|Jug|thewtex|jaywarrick|Tiago|biovoxxel|etarena|Awalter2|LeonYang5114|yuminguw|guneetsinghmehta|Bio7|kbellve|Akramhar|Omsai|marktsuchida|ChrisWeisiger" %}</p></td>
 <td><p><a href="ImageJ2" title="wikilink">ImageJ2</a> Learnathon + <a href="ImageJ_Ops" title="wikilink">ImageJ Ops</a></p></td>
 </tr>
 <tr class="even">
@@ -272,7 +272,7 @@ Madison, WI, USA</p></td>
 2016 Jan 22</a></p></td>
 <td><p><a href="https://www.knime.org/contact">KNIME Konstanz Regional Office</a><br />
 Konstanz, Germany</p></td>
-<td></td>
+<td><p>{% include PersonList content="Dietzc|Rueden|Hinerm|hornm|Pietzsch|Jug|royerloic|skalarproduktraum|Haesleinhuepf|Stelfrich|kmader|Kharrington|Eglinger|drtjre|tibuch|Squareys|seebacherd|patrick-winter-knime|AlexanderFillbrunn|Nico Hoffmann|Timo Sachsenberg|Julianus Pfeuffer|Temesgen H. Dadi" %}</p></td>
 <td><p><a href="KNIME" title="wikilink">KNIME</a> Image Processing</p></td>
 </tr>
 <tr class="odd">
@@ -280,7 +280,7 @@ Konstanz, Germany</p></td>
 2016 Jun 28</a></p></td>
 <td><p><a href="https://janelia.org/">HHMI Janelia</a><br />
 Ashburn, VA, USA</p></td>
-<td></td>
+<td><p>{% include PersonList content="Saalfeld|Pietzsch|Rueden|Dietzc|Kharrington" %}</p></td>
 <td><p>Metadata rich images</p></td>
 </tr>
 <tr class="even">
@@ -288,7 +288,7 @@ Ashburn, VA, USA</p></td>
 2016 Jul 14</a></p></td>
 <td><p><a href="https://www.knime.org/contact">KNIME Konstanz Regional Office</a><br />
 Konstanz, Germany</p></td>
-<td></td>
+<td><p>{% include PersonList content="Dietzc|patrick-winter-knime|Pietzsch|skalarproduktraum|Rueden|hornm|Stelfrich|Kharrington|Rdom|kmader|AndreasBurger|MarcelWiedenmann|SimonSchmid|irrwitz|Squareys|AlexanderFillbrunn|Eglinger|tibuch|StefanoWoerner|cmongis|hoerldavid|Nico Hoffmann" %}</p></td>
 <td><p><a href="KNIME" title="wikilink">KNIME</a> Image Processing + 3D viz</p></td>
 </tr>
 <tr class="odd">
@@ -296,7 +296,7 @@ Konstanz, Germany</p></td>
 2016 Dec 16</a></p></td>
 <td><p><a href="https://mpi-cbg.de/">MPI-CBG</a><br />
 Dresden, Germany</p></td>
-<td></td>
+<td><p>{% include PersonList content="Jug|Pietzsch|Tomancak|Rueden|Saalfeld|hanslovsky|kephale|rimadoma|tinevez|dietzc|patrick-winter-knime|skalarproduktraum|royerloic|Haesleinhuepf|hkmoon|tibuch|MarcelWiedenmann|hoerldavid|milkyklim|maarzt|xulman|Chaubold|Jonas Massa" %}</p></td>
 <td><p><a href="Fiji" title="wikilink">Fiji</a> &amp; <a href="KNIP" title="wikilink">KNIP</a></p></td>
 </tr>
 <tr class="even">
@@ -304,7 +304,7 @@ Dresden, Germany</p></td>
 2017 Feb 26</p></td>
 <td><p><a href="LOCI" title="wikilink">LOCI</a><br />
 Madison, WI, USA</p></td>
-<td></td>
+<td><p>{% include PersonList content="Pietzsch|Saalfeld|Dietzc|Rueden|Awalter2" %}</p></td>
 <td><p><a href="ImgLib2" title="wikilink">ImgLib2</a></p></td>
 </tr>
 <tr class="odd">
@@ -312,7 +312,7 @@ Madison, WI, USA</p></td>
 2017 Jun 14</p></td>
 <td><p><a href="LOCI" title="wikilink">LOCI</a><br />
 Madison, WI, USA</p></td>
-<td></td>
+<td><p>{% include PersonList content="dietzc|Rueden" %}</p></td>
 <td><p><a href="ImageJ_Ops" title="wikilink">ImageJ Ops</a></p></td>
 </tr>
 <tr class="even">
@@ -320,7 +320,7 @@ Madison, WI, USA</p></td>
 2017 Sep 29</a></p></td>
 <td><p><a href="https://www.knime.org/contact">KNIME Konstanz Regional Office</a><br />
 Konstanz, Germany</p></td>
-<td></td>
+<td><p>{% include PersonList content="dietzc|maarzt|tibuch|imagejan|gab1one|AlexanderFillbrunn|Jon Fuller|Squareys|Chaubold|stelfrich|hornm|fjug|Treiblesschorle|milkyklim|kmader|Julianus Pfeuffer|tpietzsch|mp007|StephanPreibisch|Jonas Probst|René Rahn|ctrueden|SimonSchmid|frauzufall|xulman|MarcelWiedenmann|HedgehogCode|patrick-winter-knime" %}</p></td>
 <td><p><a href="KNIME" title="wikilink">KNIME</a> Image Processing, <a href="ImageJ_Ops" title="wikilink">ImageJ Ops</a>, <a href="http://ilastik.org/">Ilastik</a></p></td>
 </tr>
 <tr class="odd">
@@ -328,7 +328,7 @@ Konstanz, Germany</p></td>
 2017 Oct 18</p></td>
 <td><p><a href="https://health.uconn.edu/">UConn Health</a><br />
 Farmington, CT, USA</p></td>
-<td></td>
+<td><p>{% include PersonList content="jcschaff|Rueden" %}</p></td>
 <td><p><a href="Virtual_Cell" title="wikilink">Virtual Cell</a> + <a href="ImageJ" title="wikilink">ImageJ</a></p></td>
 </tr>
 <tr class="even">
@@ -336,7 +336,7 @@ Farmington, CT, USA</p></td>
 2017 Dec 15</a></p></td>
 <td><p><a href="https://mpi-cbg.de/">MPI-CBG</a><br />
 Dresden, Germany</p></td>
-<td></td>
+<td><p>{% include PersonList content="Jug|Pietzsch|Tomancak|Rueden|hanslovsky|kephale|rimadoma|tinevez|dietzc|skalarproduktraum|royerloic|Haesleinhuepf|hkmoon|tibuch|MarcelWiedenmann|hoerldavid|milkyklim|maarzt|xulman|Chaubold|Pbainar|Awalter2" %}</p></td>
 <td><p><a href="Fiji" title="wikilink">Fiji</a> &amp; <a href="KNIP" title="wikilink">KNIP</a></p></td>
 </tr>
 <tr class="odd">
@@ -344,7 +344,7 @@ Dresden, Germany</p></td>
 2018 May 2</p></td>
 <td><p>University of Idaho<br />
 Moscow, ID, USA</p></td>
-<td></td>
+<td><p>{% include PersonList content="Kharrington|Saalfeld|Dietzc|Rueden|Maarzt|Pietzsch|royerloic|Bnorthan|skalarproduktraum|marktsuchida|Robert Wiese" %}</p></td>
 <td><p><a href="SciView" title="wikilink">SciView</a></p></td>
 </tr>
 <tr class="even">
@@ -352,7 +352,7 @@ Moscow, ID, USA</p></td>
 2018 May 18</p></td>
 <td><p><a href="https://www.galvanize.com/san-francisco">Galvanize</a><br />
 San Francisco, CA, USA</p></td>
-<td></td>
+<td><p>{% include PersonList content="Dan Toloudis (AICS)|Dyche Mullins (UCSF)|Lisa Harrylock (AICS)|Tom Goddard (UCSF)|Molly Maleckar (AICS)|Tom Ferrin (UCSF)|Graham Johnson (AICS)|Samuel Lord (UCSF/HHMI)|Basu Chaudhuri (AICS)|Ambrose Carr (CZI)|Megan Riel-Megan (AICS)|Jeremy Freeman (CZI)|Dave Williams (AICS)|Nicholas Sofroniew (CZI)|</p></td>
 <td><p>Bioimage Analysis in JavaScript, Python + Java</p></td>
 </tr>
 <tr class="odd">
@@ -360,7 +360,7 @@ San Francisco, CA, USA</p></td>
 2018 Nov 06</p></td>
 <td><p><a href="LOCI" title="wikilink">LOCI</a><br />
 Madison, WI, USA</p></td>
-<td></td>
+<td><p>{% include PersonList content="Dietzc|Pietzsch|marktsuchida|Rueden" %}</p></td>
 <td><p>ImgLib2, Micro-Manager</p></td>
 </tr>
 <tr class="even">
@@ -368,7 +368,7 @@ Madison, WI, USA</p></td>
 2018 Dec 14</a></p></td>
 <td><p><a href="https://mpi-cbg.de/">MPI-CBG</a><br />
 Dresden, Germany</p></td>
-<td></td>
+<td><p>{% include PersonList content="Rueden|Chaubold|Dietzc|gab1one|HedgehogCode|MarcelWiedenmann|maarzt|frauzufall|Pietzsch|skalarproduktraum|turekg" %}</p></td>
 <td><p>Hacking</p></td>
 </tr>
 <tr class="odd">
@@ -376,7 +376,7 @@ Dresden, Germany</p></td>
 2019 Jan 29</a></p></td>
 <td><p><a href="https://www.it4i.cz/?lang=en">IT4Innovations</a><br />
 Ostrava, Czech Republic</p></td>
-<td></td>
+<td><p>{% include PersonList content="Jug|Pietzsch|Tomancak|dietzc|tibuch|MarcelWiedenmann|maarzt|xulman|Pbainar|Awalter2|gab1one|Treiblesschorle|mp007|frauzufall|HedgehogCode| John Bogovic| Nicolas Chiaruttini| Jana Klímová| Jan Kožusznik| Michal Krumnikl| Manan Lalit| Emil Melnikov| Pavel Moravec| Václav Svatoň| Christian Tischer| Gabriella Turek| Tomas Vicar| Marwan Zouinkhi" %}</p></td>
 <td><p><a href="https://imagej.net/SPIM_Workflow_Manager_For_HPC">Parallelization and HPC</a></p></td>
 </tr>
 <tr class="even">
@@ -384,7 +384,7 @@ Ostrava, Czech Republic</p></td>
 2019 Sep 24</p></td>
 <td><p><a href="https://www.knime.org/contact">KNIME Konstanz Regional Office</a><br />
 Konstanz, Germany</p></td>
-<td></td>
+<td><p>{% include PersonList content="mr-c|sverhoeven|ctrueden|dietzc|tpietzsch|MarcelWiedenmann|DanielBogenrieder|frauzufall|HedgehogCode|AtR1an|LauLauThom|KFDing|frankprotopapa|ChristianAlbrecht|gab1one|Treiblesschorle" %}</p></td>
 <td><p><a href="KNIME" title="wikilink">KNIME</a></p></td>
 </tr>
 <tr class="odd">
@@ -392,7 +392,7 @@ Konstanz, Germany</p></td>
 2019 Dec 18</p></td>
 <td><p><a href="https://www.csbdresden.de/">CSB Dresden</a><br />
 Dresden, Germany</p></td>
-<td></td>
+<td><p>{% include PersonList content="hanslovsky|ctrueden|tpietzsch|skalarproduktraum|tibuch|fjug|thewtex|stelfrich|haesleinhuepf|MarcelWiedenmann|emilmelnikov|oeway|xulman|tomancak|uschmidt83|frauzufall|HedgehogCode|NicoKiaru|mangalp|m-novikov|tischi|MLbyML|BobHanson|wolny|turekg|tomasvicar|davidackerman|lagru|axon900|arrmunoz" %}</p></td>
 <td><p><a href="Python" title="wikilink">Python</a>+<a href="Fiji" title="wikilink">Fiji</a></p></td>
 </tr>
 <tr class="even">

@@ -25,6 +25,8 @@ tutorial](TrakEM2_basics_tutorial "wikilink")**. It includes:
   - Segmenting cells across multiple sections.
   - 3D visualization.
 
+%Replace% Clear %Replace%
+
 ## Video tutorial on segmenting/outlining objects over multiple sections in 3D
 
 ![TrakEM2 brushing (This video tutorial was made by Albert Cardona. To
@@ -42,6 +44,8 @@ covers:
 See also the list of [key bindings for
 AreaList](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#edit_arealist).
 
+%Replace% Clear %Replace%
+
 ## Video tutorial on aligning sections
 
 ![TrakEM2 align sections
@@ -56,6 +60,8 @@ focused on:
 
 See also the feature extraction and alignment [parameters
 explained](http://www.ini.uzh.ch/~acardona/howto.html#sift_parameters).
+
+%Replace% Clear %Replace%
 
 ## Video tutorial on manual segmentation modes
 
@@ -76,6 +82,8 @@ modes](TrakEM2_segmentation_modes_tutorial "wikilink"):
     when painting in an arealist, paint in the current but erase any
     other arealist.
 
+%Replace% Clear %Replace%
+
 ## Video tutorial on semi-automatic segmentation
 
 ![TrakEM2 semi-automatic
@@ -89,6 +97,8 @@ will learn:
   - How to segment cells by only one click.
   - Fast marching method tool in TrakEM2.
   - Selecting segmentation parameters.
+
+%Replace% Clear %Replace%
 
 ## Video tutorial on measuring surfaces and volumes
 
@@ -105,6 +115,8 @@ will learn how to:
 See also [AreaList
 measurements](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#measure_arealist)
 in the TrakEM2 manual, with figures.
+
+%Replace% Clear %Replace%
 
 ## Video tutorial on adding sections/layers to an existing project
 
@@ -123,6 +135,8 @@ learn how to:
 In the tutorial, the layers are imported following an existing set of
 layers, i.e. concatenating to enlarge the collection of sections.
 
+%Replace% Clear %Replace%
+
 ## Video tutorial on saving a project
 
 ![TrakEM2 saving a project](Screenshot-TrakEM2-save-project.png
@@ -131,6 +145,8 @@ layers, i.e. concatenating to enlarge the collection of sections.
   - [Saving a TrakEM2
     project](TrakEM2_saving_project_tutorial "wikilink") into an .XML
     file.
+
+%Replace% Clear %Replace%
 
 ## Video tutorial on 3D reconstruction from serial section
 

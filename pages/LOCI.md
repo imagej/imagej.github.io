@@ -38,31 +38,23 @@ consortium](http://openmicroscopy.org/).
 
 ## Developers
 
-  - (PI)
-
-  - (lead)
-
-  - (developer)
-
-  - (developer, [ImageJ Ops](ImageJ_Ops "wikilink"))
-
-  - (developer, [FLIMJ](FLIMJ "wikilink"))
+  - {% include Person content="Eliceiri" %} (PI)
+  - {% include Person content="Rueden" %} (lead)
+  - {% include Person content="Etarena" %} (developer)
+  - {% include Person content="gselzer" %} (developer, [ImageJ
+    Ops](ImageJ_Ops "wikilink"))
+  - {% include Person content="Xanthorapedia" %} (developer,
+    [FLIMJ](FLIMJ "wikilink"))
 
 ## Alumni
 
-  - (Sep 2014-May 2018)
-
-  - (Sep 2015-May 2017)
-
-  - (Jul 2015-Jan 2017)
-
-  - (Sep 2010-Jun 2016)
-
-  - (Sep 2011-Nov 2014)
-
-  - (Jan 2010-Dec 2013)
-
-  - (Jan 2010-Nov 2013)
+  - {% include Person content="Awalter2" %} (Sep 2014-May 2018)
+  - {% include Person content="Leon" %} (Sep 2015-May 2017)
+  - {% include Person content="Alecneevel" %} (Jul 2015-Jan 2017)
+  - {% include Person content="Hinerm" %} (Sep 2010-Jun 2016)
+  - {% include Person content="Schindelin" %} (Sep 2011-Nov 2014)
+  - {% include Person content="Grislis" %} (Jan 2010-Dec 2013)
+  - {% include Person content="Bdezonia" %} (Jan 2010-Nov 2013)
 
 ## See also
 

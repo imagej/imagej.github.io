@@ -8,10 +8,24 @@ categories: Development,Git
 description: test description
 ---
 
-Development of ImageJ and related software relies heavily on
-[Git](http://git-scm.com/). See the [source
-code](source_code "wikilink") page for information on where the Git
-repositories reside.
+{% include info-box content="If Git is completely new to you, read:
+
+  - [TryGit 15-minute interactive tutorial](https://try.github.io/)
+  - [Learn Git Branching interactive
+    tutorial](http://pcottle.github.io/learnGitBranching/)
+  - [Git for dummies](Git_for_dummies "wikilink") tutorial on this web
+    site
+
+If you are passingly familiar with Git, but wish it wasn't so arcane,
+check out:
+
+  - [Think Like (a) Git - A Guide for the
+    Perplexed](http://think-like-a-git.net/)
+
+" %} {% include DevelopMenu content="tools" %}Development of ImageJ and
+related software relies heavily on [Git](http://git-scm.com/). See the
+[source code](source_code "wikilink") page for information on where the
+Git repositories reside.
 
 ## Why do we use Git?
 
@@ -27,6 +41,8 @@ repositories reside.
 ## Git tutorials
 
 <div style="float: left; padding-right: 20px">
+
+%Replace% GitMenu %Replace%
 
 </div>
 

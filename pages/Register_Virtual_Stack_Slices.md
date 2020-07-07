@@ -323,13 +323,12 @@ reference_name, p, use_shrinking_constraint)
   - [Transform Virtual Stack
     Slices](Transform_Virtual_Stack_Slices "wikilink"), to see how to
     load the saved transforms.
-
   - [FloatArray2DSIFT.java](https://fiji.sc/cgi-bin/gitweb.cgi?p=mpicbg.git;a=blob;f=mpicbg/imagefeatures/FloatArray2DSIFT.java;hb=HEAD)
     which contains the subclass Param which is the 'sift' member of the
     Register\_Virtual\_Stack\_Slices.Param subclass.
-
-  - , including the Param subclass.
-
+  - {% include GitHub
+    content="org=fiji|repo=register\_virtual\_stack\_slices|source=register\_virtual\_stack/Register\_Virtual\_Stack\_MT.java|label=Register\_Virtual\_Stack\_MT.java"
+    %}, including the Param subclass.
   - [Elastic Alignment and Montage
     plugin](Elastic_Alignment_and_Montage "wikilink"), for elastic
     registration/montage of large datasets using spring meshes (local

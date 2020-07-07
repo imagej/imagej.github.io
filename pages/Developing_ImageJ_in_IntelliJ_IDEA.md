@@ -8,8 +8,9 @@ categories: Development,IDEs
 description: test description
 ---
 
-This article explains how to install and configure IntelliJ IDEA for use
-with [ImageJ](ImageJ "wikilink") development. Directions correspond to
+{% include DevelopMenu content="source" %}This article explains how to
+install and configure IntelliJ IDEA for use with
+[ImageJ](ImageJ "wikilink") development. Directions correspond to
 IntelliJ IDEA 11.1, and may need adjustment for other versions.
 
 ## Install and configure IDEA
@@ -26,7 +27,8 @@ IntelliJ IDEA 11.1, and may need adjustment for other versions.
 
 ## Import the ImageJ source
 
-1.  From the IDEA menu, choose 
+1.  From the IDEA menu, choose {% include bc content="Version
+    Control|Checkout from Version Control|Git" %}
 2.  For the Git Repository URL, enter: <git://github.com/imagej/imagej>
 3.  Specify a Parent Directory, click Clone, and wait
 4.  When prompted, click Yes to create an IntelliJ IDEA project from the
@@ -40,13 +42,14 @@ prompted to select the project JDK:
 
 ## Launch the program
 
-1.  Choose  from the menu
+1.  Choose {% include bc content="Run|Edit Configurations" %} from the
+    menu
 2.  Click the Plus icon and choose Application
 3.  In the Name field, type "ImageJ"
 4.  Type "net.imagej.Main" for the Main class
 5.  For "Use classpath and JDK of module" select "imagej" from the list
 6.  Click OK
-7.  Choose  from the menu
+7.  Choose {% include bc content="Run|Run 'ImageJ'" %} from the menu
 
 The project automatically builds before launching, so it may take a
 little while the first time.

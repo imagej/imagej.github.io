@@ -156,13 +156,17 @@ Christmas\!
       - fixed native code dependencies, included CI builds
       - worked on the Vulkan ([1](https://www.khronos.org/vulkan))
         backend for higher rendering performance, which finally got
-        merged (see )
+        merged (see {% include GitHub
+        content="org=ClearVolume|repo=scenery|pr=31|label=ClearVolume/scenery\#31"
+        %})
       - helped various people getting scenery running on their machine
   - fixed some bugs in [ClearVolume](ClearVolume "wikilink"), together
-    with 
+    with {% include Person content="royerloic" %}
   - discussed future directions for
     [ThreeDViewer](ThreeDViewer "wikilink")/[ClearVolume](ClearVolume "wikilink")/[BigDataViewer](BigDataViewer "wikilink")
-    with , ,  and 
+    with {% include Person content="Kharrington" %}, {% include Person
+    content="royerloic" %}, {% include Person content="tpietzsch" %} and
+    {% include Person content="Saalfeld" %}
 
 ### Robert Haase
 
@@ -177,7 +181,9 @@ Christmas\!
     future allow processing 3D images in a way like 2D images were
     processed using the good old [Particle
     Analysis](Particle_Analysis "wikilink") tool
-  - With , , and  we launched the work on a `PlotService` for ImageJ2.
+  - With {% include Person content="maarzt" %}, {% include Person
+    content="Jug" %}, and {% include Person content="Rueden" %} we
+    launched the work on a `PlotService` for ImageJ2.
 
 ### Kyle Harrington
 
@@ -187,37 +193,60 @@ Christmas\!
     [Funimage\#26](https://github.com/funimage/funimage/pull/26))
   - Unifying Mesh data structure from ops with
     [imagej-mesh](https://github.com/imagej/imagej-mesh) file loading
-    with 
+    with {% include Person content="rimadoma" %}
   - More [ThreeDViewer](ThreeDViewer "wikilink") enhancements
 
 ### Florian Jug
 
-  - With , overhauled the [SciJava Common](SciJava_Common "wikilink")
-    [logging](logging "wikilink") mechanism ().
-  - With ,,, and  split up the necessary work in order to cut stable
-    releases of Fiji (biannually). This 'earned' me the status of 'Grand
-    Poobah'. ;)
+  - With {% include Person content="Rueden" %}, overhauled the [SciJava
+    Common](SciJava_Common "wikilink") [logging](logging "wikilink")
+    mechanism ({% include GitHub
+    content="org=scijava|repo=scijava-common|pr=253|label=scijava/scijava-common\#253"
+    %}).
+  - With {% include Person content="Rueden" %},{% include Person
+    content="Haesleinhuepf" %},{% include Person content="Pietzsch" %},
+    and {% include Person content="Saalfeld" %} split up the necessary
+    work in order to cut stable releases of Fiji (biannually). This
+    'earned' me the status of 'Grand Poobah'. ;)
   - Worked on an 'indago' parent POM for DAIS related projects and
     started using it for the new tracker 'Tr2d'.
   - Worked on the new tracker 'Tr2d'. New features: improved leveraged
     editing; tracklet export; improved BDV overlays.
-  - With  and  we have fixed some reported
+  - With {% include Person content="royerloic" %} and {% include Person
+    content="maweigert" %} we have fixed some reported
     [ClearVolume](ClearVolume "wikilink") bugs and released a new
     version after testing on Win/Linux/MaxOS.
-  - With , , and  we launched the work on a `PlotService` for ImageJ2.
+  - With {% include Person content="maarzt" %}, {% include Person
+    content="Haesleinhuepf" %}, and {% include Person content="Rueden"
+    %} we launched the work on a `PlotService` for ImageJ2.
 
 ### Curtis Rueden
 
-  - With  and , completed update of ImageJ web resources to support
-    HTTPS (see [separate news
+  - With {% include Person content="Alecneevel" %} and {% include Person
+    content="Saalfeld" %}, completed update of ImageJ web resources to
+    support HTTPS (see [separate news
     post](2016-12-29_-_ImageJ_web_resources_now_support_HTTPS "wikilink")).
-  - With , overhauled the [SciJava Common](SciJava_Common "wikilink")
-    [logging](logging "wikilink") mechanism ().
-  - With , improved [SciJava Common](SciJava_Common "wikilink") context
-    injection to be recursive, to fix bugs with service population of
-    commands (, ).
-  - With , add a validater callback for parameter validation (, ).
-  - With , began work on a `PlotService` for ImageJ2
+  - With {% include Person content="Jug" %}, overhauled the [SciJava
+    Common](SciJava_Common "wikilink") [logging](logging "wikilink")
+    mechanism ({% include GitHub
+    content="org=scijava|repo=scijava-common|pr=253|label=scijava/scijava-common\#253"
+    %}).
+  - With {% include Person content="Rdom" %}, improved [SciJava
+    Common](SciJava_Common "wikilink") context injection to be
+    recursive, to fix bugs with service population of commands ({%
+    include GitHub
+    content="org=scijava|repo=scijava-common|commit=b0c981b24fc8ec845656574d95f9eddbc285728e|label=scijava/scijava-common@b0c981b2"
+    %}, {% include GitHub
+    content="org=imagej|repo=imagej-ops|commit=4f78eca5b061881865c2a2c1702a98e634248aa5|label=imagej/imagej-ops@4f78eca5"
+    %}).
+  - With {% include Person content="Rdom" %}, add a validater callback
+    for parameter validation ({% include GitHub
+    content="org=scijava|repo=scijava-common|commit=66ed844ee76a264ca83629f0fef50c9b726c8897|label=scijava/scijava-common@66ed844e"
+    %}, {% include GitHub
+    content="org=scijava|repo=scijava-common|commit=70c50f48cc20cec0a747a000778f013c7380155d|label=scijava/scijava-common@70c50f48"
+    %}).
+  - With {% include Person content="maarzt" %}, began work on a
+    `PlotService` for ImageJ2
     (\[<https://github.com/imagej/imagej-ui-swing/compare/plot-service>...maarzt:plot-service
     maarzt/imagej-ui-swing@plot-service\]).
   - Participated in technical discussions with various people, including
@@ -227,10 +256,12 @@ Christmas\!
 
 ### Tobias Pietzsch
 
-  - With , worked on Mastodon/TrackMate3, in particular the unified
-    handling of adapter views onto the main tracking model.
-  - With , worked towards integration of caching mechanisms into unified
-    scijava/imglib2 cache; generalization of BigDataViewer cache.
+  - With {% include Person content="JeanYvesTinevez" %}, worked on
+    Mastodon/TrackMate3, in particular the unified handling of adapter
+    views onto the main tracking model.
+  - With {% include Person content="Saalfeld" %}, worked towards
+    integration of caching mechanisms into unified scijava/imglib2
+    cache; generalization of BigDataViewer cache.
   - Added support in
     [ui-behaviour](https://github.com/scijava/ui-behaviour) for
     triggering multiple behaviours in parallel.
@@ -252,10 +283,12 @@ Christmas\!
 
 ### JeanYvesTinevez
 
-  - With , worked on Mastodon/TrackMate3, in particular view colouring
-    by numerical features calculated on a model.
-  - With ,extended the [MaMuT](MaMuT "wikilink") so that it can be used
-    for 2D over time properly.
+  - With {% include Person content="Pietzsch" %}, worked on
+    Mastodon/TrackMate3, in particular view colouring by numerical
+    features calculated on a model.
+  - With {% include Person content="Pietzsch" %},extended the
+    [MaMuT](MaMuT "wikilink") so that it can be used for 2D over time
+    properly.
 
 ### Christian Dietz
 
@@ -275,13 +308,17 @@ Christmas\!
 
 ### Carsten Haubold
 
-  - With , added a loader for 5D ilastik HDF5 volumes for BigDataViewer
+  - With {% include Person content="Pietzsch" %}, added a loader for 5D
+    ilastik HDF5 volumes for BigDataViewer
   - Worked on a prototype for a tracking export plugin system within
     ilastik to talk to MaMuT
 
 ### Jonas Massa
 
-  - implemented an ilastik HDF5 import/export plugin for Imagej ()
+  - implemented an ilastik HDF5 import/export plugin for Imagej ({%
+    include GitHub
+    content="org=Beinabih|repo=ilastik-Fiji-Plugin|label=Beinabih/ilastik-Fiji-Plugin"
+    %})
 
 ### HongKee Moon
 
@@ -289,7 +326,7 @@ Christmas\!
     SimpleBigDataServer which can be launched by adding xml datasets in
     the command line. The other is (Advanced) BigDataServer which is
     running with H2 DBMS backend.
-  - ER design is completed with .
+  - ER design is completed with {% include Person content="Pietzsch" %}.
 
 <!-- end list -->
 
@@ -331,21 +368,22 @@ Christmas\!
 ### Stable releases of Fiji
 
   - We agreed to cut a stable release of Fiji once every six months.
-      - will manage the releases, both socially and technically.
-    
-      - will update the [Updater](Updater "wikilink") to more clearly
-        communicate the ramifications of updating.
-    
-      - will create Jenkins jobs for automating cutting of stable
-        release candidates and releases.
+      - {% include Person content="Jug" %} will manage the releases,
+        both socially and technically.
+      - {% include Person content="Haesleinhuepf" %} will update the
+        [Updater](Updater "wikilink") to more clearly communicate the
+        ramifications of updating.
+      - {% include Person content="Rueden" %} will create Jenkins jobs
+        for automating cutting of stable release candidates and
+        releases.
   - We agreed to continue pursuing the "melting pot" builds of Fiji
     and/or the SciJava universe, to better detect cross-component
     regressions and incompatibilities.
-      - will research effective approaches for running the melting pot
-        via CI.
-    
-      - Core maintainers (esp.  and ) will run the melting pot manually
-        to vet its usefulness and correctness.
+      - {% include Person content="Rueden" %} will research effective
+        approaches for running the melting pot via CI.
+      - Core maintainers (esp. {% include Person content="Pietzsch" %}
+        and {% include Person content="Saalfeld" %}) will run the
+        melting pot manually to vet its usefulness and correctness.
 
 ### 3D viewers in ImageJ and Fiji
 
@@ -355,44 +393,36 @@ Christmas\!
       - All agree to be very grumpy if the discussion ever degrades back
         to a laundry list of desired features (before we actually finish
         the first iteration of the code)
-    
-      - will continue efforts to consolidate
-        [ThreeDViewer](ThreeDViewer "wikilink") and
+      - {% include Person content="Kharrington" %} will continue efforts
+        to consolidate [ThreeDViewer](ThreeDViewer "wikilink") and
         [BigDataViewer](BigDataViewer "wikilink") into a unified viewer
-    
-      - and  will continue to develop UI components for BDV and KNIME
-        using SciJava for use in the unified viewer
-    
-      - , , and  will reconvene in the Spring for component integration
-    
-      - will continue to work his BDV magic
+      - {% include Person content="tibuch" %} and {% include Person
+        content="Dietzc" %} will continue to develop UI components for
+        BDV and KNIME using SciJava for use in the unified viewer
+      - {% include Person content="Kharrington" %}, {% include Person
+        content="tibuch" %}, and {% include Person content="Dietzc" %}
+        will reconvene in the Spring for component integration
+      - {% include Person content="Pietzsch" %} will continue to work
+        his BDV magic
   - Roughly the idea is (we previously discussed this at the 2016 summer
     Konsanz hackathon):
       - 4 viewer panels (number of panels is convenience not hard
         coded): X-Y, Y-Z, X-Z, and 3D. Viewer panels have sliders for
         time and other dimensions
-    
       - Control panel with selection of attributes that can be synced
         between viewer panels, but can also be used for independent
         control of viewer panels
-    
       - BDV provides orthogonal views
-    
       - Viewer panels have overlays: minimaps, intensity, etc.
-    
       - ROI overlays can also be provided
-    
       - Panels are just JPanels
-    
-      - says most of the backend has already been developed in BDV
-    
+      - {% include Person content="Pietzsch" %} says most of the backend
+        has already been developed in BDV
       - [ThreeDViewer](ThreeDViewer "wikilink") should reuse more of
         [BigDataViewer](BigDataViewer "wikilink")'s UI components
-    
       - GUI tools/widgets will go into scijava-ui-swing
-    
-      - will continue to develop Scenery for the core 3D rendering
-        functionality
+      - {% include Person content="skalarproduktraum" %} will continue
+        to develop Scenery for the core 3D rendering functionality
 
 [Category:News](Category:News "wikilink")
 [Category:Fiji](Category:Fiji "wikilink")

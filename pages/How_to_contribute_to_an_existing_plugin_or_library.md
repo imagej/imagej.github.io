@@ -8,24 +8,35 @@ categories: Development,Tutorials,Git
 description: test description
 ---
 
+{% include info-box content="This guide discusses how to modify an
+already-existing [plugin](plugin "wikilink"), and contribute your
+changes back.  
+\* If you are interested in developing a **new** plugin instead, see
+[Writing plugins](Writing_plugins "wikilink").  
+\* If you have completed a plugin that you would like to **share with
+the community**, see [Distributing your
+plugins](Distribution "wikilink"). " %}
+
 <div style="float: left; padding-right: 1em">
 
 \_\_TOC\_\_
 
 </div>
 
-\== Introduction == Sometimes you may want to contribute to an already
-existing ImageJ plugin or library. For example, a bug is found in one
-plugin and you want to fix it, or you would like to improve one library
-by adding more functions. This tutorial describes step by step how to do
-it with a practical case.
+{% include DevelopMenu content="tutorials" %}== Introduction ==
+Sometimes you may want to contribute to an already existing ImageJ
+plugin or library. For example, a bug is found in one plugin and you
+want to fix it, or you would like to improve one library by adding more
+functions. This tutorial describes step by step how to do it with a
+practical case.
 
 In many cases, the plugin or library will **have its own source code
 repository** online somewhere. For instance, in the
 [Fiji](Fiji "wikilink") project, plugin code lives in the [Fiji GitHub
 organization](https://github.com/fiji); e.g., the **VIB-lib** library's
-repository is . This structure allows for easy, independent development
-of each individual component.
+repository is {% include GitHub
+content="org=fiji|repo=VIB-lib|label=VIB-lib" %}. This structure allows
+for easy, independent development of each individual component.
 
 This tutorial assumes you are familiar with [Git](Git "wikilink"). If
 this is not the case, please go ahead and read the existing
@@ -173,6 +184,12 @@ discussion view of the pull request). But some commits may need to be
 modified so the history of your repository stays reasonably clean. In
 that case, you need to use the [git rebase
 command](https://help.github.com/articles/about-git-rebase/):
+
+{% include info-box content="If you prefer using a graphical interface
+(e.g. Atlassian SourceTree or GitHub Desktop) instead of the command
+line, there are also options to do an interactive rebase. To force-push
+your amended commits to the existing branch on github though, the best
+option is to use the command line, see below." %}
 
 Rebase operates over a range of commits. You provide it a starting
 point, and it then automatically includes all commits **after** that

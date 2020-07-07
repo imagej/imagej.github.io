@@ -8,6 +8,8 @@ categories: Tutorials
 description: test description
 ---
 
+%Replace% ExtendingTrackMateTutorials %Replace%
+
 ## Introduction.
 
 Developing a custom view for [TrackMate](TrackMate "wikilink") is *hard*
@@ -41,12 +43,18 @@ analyzers](How_to_write_your_own_spot_feature_analyzer_algorithm_for_TrackMate "
 a TrackMate view is separated in two parts, that each extends a
 different interface:
 
-  - The , that is the actual view of the model. All the hard work is
-    done here.
-  - The  that is a factory in charge of instantiating the view and of
-    the integration in TrackMate. This interface extends the  interface,
-    so we expect to find there some of the methods we discussed earlier,
-    and the [SciJava](SciJava "wikilink") annotation.
+  - The {% include GitHub
+    content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/visualization/TrackMateModelView.java|label=TrackMateModelView"
+    %}, that is the actual view of the model. All the hard work is done
+    here.
+  - The {% include GitHub
+    content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/visualization/ViewFactory.java|label=ViewFactory"
+    %} that is a factory in charge of instantiating the view and of the
+    integration in TrackMate. This interface extends the {% include
+    GitHub
+    content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/TrackMateModule.java|label=TrackMateModule"
+    %} interface, so we expect to find there some of the methods we
+    discussed earlier, and the [SciJava](SciJava "wikilink") annotation.
 
 In this tutorial, we will build something simple. We will limit
 ourselves to develop a view that simple messages the user every time
@@ -64,7 +72,9 @@ next tutorial.
 
 Right now, we just focus on building the view.
 
-## The .
+\== The {% include GitHub
+content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/visualization/ViewFactory.java|label=ViewFactory"
+%}. ==
 
 The factory itself has nothing particular. On top of the TrackMateModule
 methods, it just has a method to instantiate the view it controls:
@@ -76,14 +86,18 @@ public TrackMateModelView create( final Model model, final Settings settings, fi
 
 You can see that we can possibly pass 3 parameters to the constructor of
 the view itself: the model of course, but also the settings object, so
-that we can find there a link to the image object. The  uses it to
-retrieve the ImagePlus over which to display the TrackMate data.
+that we can find there a link to the image object. The {% include GitHub
+content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/visualization/hyperstack/HyperStackDisplayerFactory.java|label=HyperStackDisplayer"
+%} uses it to retrieve the ImagePlus over which to display the TrackMate
+data.
 
 The selection model is also offered, and the instance passed is the
 common one used in the GUI, so that a selection made by the user can be
 shared amongst all views.
 
-## The  interface.
+\== The {% include GitHub
+content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/visualization/TrackMateModelView.java|label=TrackMateModelView"
+%} interface. ==
 
 ### Methods.
 
@@ -160,7 +174,9 @@ settings that ought to be common to all views. These are the settings
 you can tune on the antepenultimate panel of the GUI (spot visible or
 not, color by feature, etc...). If you feel like it, your view can just
 ignore them. Otherwise, their keys and desired classes are defined in
-the  interface. Check the static fields there.
+the {% include GitHub
+content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/visualization/TrackMateModelView.java|label=TrackMateModelView"
+%} interface. Check the static fields there.
 
 Everytime the user changes a setting in the GUI, the new setting value
 is passed with the `setDisplaySettings()` method, then the `refresh()`
@@ -202,16 +218,22 @@ The event itself can report 5 types of changes:
   - The model is *modified*. By modification, we mean an incremental,
     manual modification of the model. The user might have deleted a
     spot, or moved it in space, or changed its size, or add an edge
-    between two spots, etc... In that case, the  instance can be
-    interrogated to know what was changed, deleted, added, etc...
+    between two spots, etc... In that case, the {% include GitHub
+    content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/ModelChangeEvent.java|label=ModelChangeEvent"
+    %} instance can be interrogated to know what was changed, deleted,
+    added, etc...
 
 ### Listening to selection changes.
 
-The TrackMate GUI shares a common instance of  that stores the selection
-the user made. This is convenient when exploring the tracking results.
+The TrackMate GUI shares a common instance of {% include GitHub
+content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/SelectionModel.java|label=SelectionModel"
+%} that stores the selection the user made. This is convenient when
+exploring the tracking results.
 
 Your view can be kept in sync with the selection changes by implementing
-the  interface. It adds a single method:
+the {% include GitHub
+content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/SelectionChangeListener.java|label=SelectionChangeListener"
+%} interface. It adds a single method:
 
 ``` java
 public void selectionChanged(SelectionChangeEvent event);
@@ -222,7 +244,9 @@ public void selectionChanged(SelectionChangeEvent event);
 Let's keep our custom view simple: we will just build an event logger
 that recycles the IJ logger window to echo what happens to the model. We
 then of course have to implement the two listener interfaces mentioned
-above. But the code stays pretty simple: check  for the details.
+above. But the code stays pretty simple: check {% include GitHub
+content="org=fiji|repo=TrackMate-examples|source=plugin/trackmate/examples/view/EventLoggerView.java|label=here"
+%} for the details.
 
 As for the factory, nothing fancy:
 
@@ -338,6 +362,7 @@ But how could I make use of it then? you want to ask. Fortunately, this
 is just the subject of the next tutorial, on TrackMate actions. See you
 there.
 
+{% include Person content="JeanYvesTinevez" %}
 ([talk](User_talk:JeanYvesTinevez "wikilink")) 10:51, 17 March 2014
 (CDT)
 

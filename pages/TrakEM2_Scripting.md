@@ -183,7 +183,7 @@ ImagePlus, by default. Let's change the title to something else:
 
 ``` python
 >>> p = Display.getFront().getActive()
->>> p.title = "A new name for this Patch"
+>>> p."A new name for this Patch"
 >>> print p.title
 A new name for this Patch
 ```
@@ -194,7 +194,7 @@ Let's set a few values:
 
 ``` python
 >>> p = Display.getFront().getActive()
->>> p.title = "Test image"
+>>> p."Test image"
 >>> p.alpha = 0.4
 >>> p.visible = True
 >>> p.locked = False
@@ -802,7 +802,7 @@ that lists the layers in the TrakEM2 window):
 
 `1. Right-click on the "Top Level [Layer Set]" node of the `<i>`Layer Tree`</i>`.`  
 `   Then choose "Reset layer Z and thickness".`  
-`2. Click on the first layer node, then ``+`` on the last layer node.`  
+`2. Click on the first layer node, then {% include key content="Shift" %}+{% include key content="click" %} on the last layer node.`  
 `   All nodes will be selected.`  
 `3. Right-click on the selected nodes and choose "Scale...".`  
 `4. In the dialog, type in "12.5"--the value we computed above.`
@@ -1633,7 +1633,7 @@ def doSomething(evt):
 def addReconstructToolkit(display):
   tabs = display.getTabbedPane()
   # Check that it's not there already
-  title = "Reconstruct toolbar"
+  "Reconstruct toolbar"
   for i in range(tabs.getTabCount()):
     if tabs.getTitleAt(i) == title:
       IJ.showMessage("Reconstruct toolbar already in this Display!")
@@ -1673,14 +1673,18 @@ else:
 All the following are included in Fiji's
 plugins/Examples/TrakEM2\_Example\_Scripts/ folder:
 
-  - in TrakEM2.
-
-  - for TrakEM2 objects.
-
-  - objects in TrakEM2.
-
-  - in TrakEM2.
-
+  - {% include GitHub
+    content="repo=fiji|path=plugins/Examples/TrakEM2\_Example\_Scripts/extract\_stack\_under\_arealist.py|label=Extract
+    stack under AreaList" %} in TrakEM2.
+  - {% include GitHub
+    content="repo=fiji|path=plugins/Examples/TrakEM2\_Example\_Scripts/T2\_set\_all\_transforms\_to\_identity.py|label=Set
+    all transforms to identity" %} for TrakEM2 objects.
+  - {% include GitHub
+    content="repo=fiji|path=plugins/Examples/TrakEM2\_Example\_Scripts/T2\_Select\_All.py|label=Select
+    All" %} objects in TrakEM2.
+  - {% include GitHub
+    content="repo=fiji|path=plugins/Examples/TrakEM2\_Example\_Scripts/Measure\_AreaLists.py|label=Measure
+    AreaList" %} in TrakEM2.
   - A [collection of scripts for
     TrakEM2](https://github.com/acardona/Fiji-TrakEM2-scripts/tree/master/TrakEM2),
     hosted by github. Mostly related to inspecting and analyzing

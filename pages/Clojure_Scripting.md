@@ -8,7 +8,8 @@ categories: Scripting
 description: test description
 ---
 
-[Clojure](wikipedia:Clojure "wikilink") is a dialect of the [Lisp
+{% include Learn content="languages"
+%}[Clojure](wikipedia:Clojure "wikilink") is a dialect of the [Lisp
 programming
 language](wikipedia:Lisp_\(programming_language\) "wikilink"). Clojure
 is a general-purpose programming language with an emphasis on functional
@@ -35,11 +36,13 @@ See also:
 
 ## Using Clojure inside Fiji
 
-Go to . The prompt accepts any clojure code. See also Fiji's [Script
+Go to {% include bc content="Plugins|Scripting|Clojure Interpreter" %}.
+The prompt accepts any clojure code. See also Fiji's [Script
 Editor](Script_Editor "wikilink").
 
 See [Scripting Help](Scripting_Help "wikilink") for details on
-keybindings and how to use the interpreter. + will add all necessary
+keybindings and how to use the interpreter. {% include key
+content="Ctrl" %}+{% include key content=")" %} will add all necessary
 ending parenthesis.
 
 A minimal, complete clojure example:
@@ -52,7 +55,8 @@ A minimal, complete clojure example:
 
 To create scripts, just save them as .clj text files (with an underscore
 in the name) in any folder or subfolder of Fiji's plugins folder, and
-run  to update the menus (it's done automatically at start up as well).
+run {% include bc content="Plugins|Scripting|Refresh Clojure Scripts" %}
+to update the menus (it's done automatically at start up as well).
 
 To edit a script, just edit and save it with your favorite text editor.
 
@@ -61,7 +65,8 @@ To execute a script, do any of:
   - Select it from the plugins menus.
   - Type 'l' (L), start typing its name, push the down arrow and then
     return to execute it.
-  - If it was the last executed command, just type + (shortcut to
+  - If it was the last executed command, just type {% include key
+    content="Shift" %}+{% include key content="R" %} (shortcut to
     "Process - Repeat Command").
 
 The script is <b>always</b> read directly from the source file, so no
@@ -74,7 +79,8 @@ updating of menus is needed (unless its file name changes).
     need for type-hinting, and some of the burdens involved in handling
     more complicated data structures, such as those from ImgLib2.
 
-See the  for information on setting up the Funimage update site.
+See the %Replace% ListOfUpdateSites %Replace% for information on setting
+up the Funimage update site.
 
 ### Running Clojure files from the command line
 
@@ -192,7 +198,8 @@ Within the jdb prompt, type "help".
 
 ### Importing classes
 
-You can specify imports in Clojure in a few ways:
+{% include ImportingClasses content="lang=Clojure" %} You can specify
+imports in Clojure in a few ways:
 
 ``` clojure
 ; A single import.
@@ -1003,7 +1010,8 @@ conventions:
 `1. Add an underscore "_" to its file name, and the extension ".clj": fix_leginon_images.clj`  
 `2. Save it under fiji/plugins/ folder, or a subfolder.`
 
-When done, just run the  plugin.
+When done, just run the {% include bc content="PlugIns|Scripting|Refresh
+Clojure Scripts" %} plugin.
 
 Once saved and in the menus, you need <b>not</b> call refresh scripts
 ever again for that script. Just edit and save it's text file, and run
@@ -1018,39 +1026,46 @@ including how to use the built-in dynamic interpreter.
 Open the plugins/Examples/ folder in Fiji installation directory. You'll
 find three Clojure examples:
 
-  - : illustrate, with macros (via
+  - {% include GitHub
+    content="repo=fiji|path=plugins/Examples/Multithreaded\_Image\_Processing.clj|label=Multithreaded\_Image\_Processing.clj"
+    %}: illustrate, with macros (via
     [defmacro](http://clojure.org/macros#toc9)), how to automatically
     multithread the processing of an image using arbitrary subdivision
     of the image, such as one line per thread, for as many threads as
     cores the CPU has.
-
-  - : illustrates how to open two images from an URL, and blend the gray
-    image into each channel of the color image.
-
-  - : illustrates the usage of a Swing GUI, and how to instantiate
+  - {% include GitHub
+    content="repo=fiji|path=plugins/Examples/blend\_two\_images.clj|label=blend\_two\_images.clj"
+    %}: illustrates how to open two images from an URL, and blend the
+    gray image into each channel of the color image.
+  - {% include GitHub
+    content="repo=fiji|path=plugins/Examples/celsius\_to\_fahrenheit.clj|label=celsius\_to\_fahrenheit.clj"
+    %}: illustrates the usage of a Swing GUI, and how to instantiate
     anonymous classes from an interface (via
     [proxy](http://clojure.org/java_interop#toc20) Clojure function).
     This example is taken from the [Clojure
     website](http://clojure.org/jvm_hosted).
-
-  - : illustrates how to declare a function inside a closure (for
+  - {% include GitHub
+    content="repo=fiji|path=plugins/Examples/random\_noise\_example.clj|label=random\_noise\_example.clj"
+    %}: illustrates how to declare a function inside a closure (for
     private access to, in this case, a unique instance of a random
     number generator), and then fill all pixels of a ByteProcessor image
     with a random byte value.
-
-  - : illustrates how to create a GUI with a KeyListener, so that the
+  - {% include GitHub
+    content="repo=fiji|path=plugins/Examples/Command\_Launchers/Command\_Launcher\_Clojure.clj|label=Command\_Launcher\_Clojure.clj"
+    %}: illustrates how to create a GUI with a KeyListener, so that the
     typed text changes color from red to black when it matches the name
     of an ImageJ command. This example is also under the [Scripting
     comparisons](Scripting_comparisons "wikilink"), along equivalent
     versions written in Java, [Jython](Jython_Scripting "wikilink"),
     [Javascript](Javascript_Scripting "wikilink") and
     [JRuby](JRuby_Scripting "wikilink").
-
-  - : illustrates how to add a MouseMotionListener and a WindowListener
-    to an ImageWindow of an open image. Reads out the ROI (Region Of
-    Interest), and if it's a line, polyline or rectangle, plots the
-    profile of pixel intensity along the line. As the mouse moves or
-    edits the ROI on the image, the profile is updated.
+  - {% include GitHub
+    content="repo=fiji|path=plugins/Analyze/Dynamic\_ROI\_Profiler.clj|label=Dynamic
+    ROI Profiler" %}: illustrates how to add a MouseMotionListener and a
+    WindowListener to an ImageWindow of an open image. Reads out the ROI
+    (Region Of Interest), and if it's a line, polyline or rectangle,
+    plots the profile of pixel intensity along the line. As the mouse
+    moves or edits the ROI on the image, the profile is updated.
 
 <h1>
 
@@ -1898,7 +1913,8 @@ track in its playlist:
 ```
 
 The above is an extract from a clojure GUI for XMMS2, available at
-github .
+github {% include GitHub
+content="org=acardona|repo=xmms2-clj|label=xmms2-gui" %}.
 
 ## Creating a derivative of a function
 

@@ -8,7 +8,9 @@ categories: Libraries,ImageScience
 description: test description
 ---
 
-The ImageScience library supports the ImageScience suite of plugins:
+{% include Infobox content="software = ImageScience | name =
+ImageScience | maintainer = The ImageScience library supports the
+ImageScience suite of plugins:
 
   - [FeatureJ](FeatureJ "wikilink")
   - [MTrackJ](MTrackJ "wikilink")
@@ -18,7 +20,7 @@ The ImageScience library supports the ImageScience suite of plugins:
 
 To install them, enable the ImageScience update site:
 
-  - [](Update_Sites "wikilink")
+  - [{% include bc content="Help|Update..." %}](Update_Sites "wikilink")
   - Click *Manage update sites*
   - Check *ImageScience*
   - Click *Close*

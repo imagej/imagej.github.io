@@ -8,8 +8,8 @@ categories: Plugins,Import-Export
 description: test description
 ---
 
-The LSM Toolbox provides plugins for working with Carl Zeiss LSM510 .lsm
-files.
+%Replace% FormatsMenu %Replace% The LSM Toolbox provides plugins for
+working with Carl Zeiss LSM510 .lsm files.
 
 ## Usage
 
@@ -20,9 +20,10 @@ preserving all available metadata.
 
 In Fiji, corresponding commands are:
 
-  - which displays the toolbox, from which all commands can be called;
-
-  - which displays information about the plugin.
+  - {% include bc content="File | Import | Show LSMToolbox" %} which
+    displays the toolbox, from which all commands can be called;
+  - {% include bc content="Help | About Plugins | LSMToolbox..." %}
+    which displays information about the plugin.
 
 For more info see [LSM ToolBox documentation on ImageJ documentation
 Wiki](http://imagejdocu.tudor.lu/doku.php?id=plugin:inputoutput:lsmtoolbox:start).

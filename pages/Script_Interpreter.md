@@ -8,13 +8,17 @@ categories:
 description: test description
 ---
 
-The **Script Interpreter** is a
+{% include Infobox content="name = Script Interpreter | software =
+ImageJ | author = %Replace% TOC %Replace% The **Script Interpreter** is
+a
 [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)
 allowing scripting from the command line.
 
 ## Getting Started
 
-Start it via  or by typing -.
+Start it via {% include bc content="Plugins|Scripting|Script
+Interpreter" %} or by typing {% include key content="Shift" %}-{%
+include key content="\[" %}.
 
 ![Script\_Interpreter.png](Script_Interpreter.png
 "Script_Interpreter.png")

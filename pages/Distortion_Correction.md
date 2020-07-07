@@ -8,11 +8,14 @@ categories: Plugins,Transform
 description: test description
 ---
 
-\== Purpose == This plugin can be used to estimate nonlinear distortions
-induced by the image acquisition process\[1\] . It does not require
-special calibration samples, but needs sufficient overlapping image
-areas with preferably high contrast. For further information on how to
-best arrange calibration images please see the documentation.
+{% include Infobox content="software = ImageJ | name = Lens correction |
+author = Verena Kaynig (verena.kaynig \[at\] inf.ethz.ch) | maintainer =
+Verena Kaynig | filename = included in [TrakEM2](TrakEM2 "wikilink") |
+source = == Purpose == This plugin can be used to estimate nonlinear
+distortions induced by the image acquisition process\[1\] . It does not
+require special calibration samples, but needs sufficient overlapping
+image areas with preferably high contrast. For further information on
+how to best arrange calibration images please see the documentation.
 
 ## Documentation
 

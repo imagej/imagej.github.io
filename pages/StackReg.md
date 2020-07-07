@@ -8,6 +8,9 @@ categories: Plugins,Transform,Registration
 description: test description
 ---
 
+{% include Infobox content="software = ImageJ | name = StackReg |
+maintainer = Philippe Thévenaz | author = Philippe Thévenaz | source = 
+
 This plugin is described in detail on the [BIG
 website](http://bigwww.epfl.ch/thevenaz/stackreg/).
 

@@ -8,10 +8,11 @@ categories: Development
 description: test description
 ---
 
-[AppVeyor](https://ci.appveyor.com/) is a tool for [continuous
+{% include DevelopMenu content="tools"
+%}[AppVeyor](https://ci.appveyor.com/) is a tool for [continuous
 integration](Project_management#Continuous_integration "wikilink") on
 [Windows](Windows "wikilink") platforms. It is very useful for
-automating builds, deployment and other tasks. 
+automating builds, deployment and other tasks. %Replace% TOC %Replace%
 
 # Services
 

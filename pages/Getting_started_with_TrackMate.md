@@ -29,7 +29,8 @@ bit to the Spot Segmentation Wizard of
 ## The test image
 
 The test image we will use for this tutorial has now a link in Fiji. You
-can find it in , at the bottom of the list.
+can find it in {% include bc content="File | Open Samples | Tracks for
+TrackMate (807K)" %}, at the bottom of the list.
 
 ![](TrackMate_FakeTracks.png)
 
@@ -46,13 +47,16 @@ one merging event - the opposite, and a gap closing event - where a spot
 disappear for one frame then reappear a bit further. TrackMate is made
 to handle these events, and we will see how.
 
+%Replace% Clear %Replace%
+
 ## Starting TrackMate
 
 ![](TrackMate_MainButtons.png)
 
-With this image selected, launch TrackMate from the menu  or from the
-[Command launcher](Using_the_Command_Launcher "wikilink"). The TrackMate
-GUI appears next to the image, displaying the starting dialog panel.
+With this image selected, launch TrackMate from the menu {% include bc
+content="Plugins | Tracking | TrackMate" %} or from the [Command
+launcher](Using_the_Command_Launcher "wikilink"). The TrackMate GUI
+appears next to the image, displaying the starting dialog panel.
 
 But first, just a few words about its look. The user interface is a
 single frame - that can be resized - divided in a main panel, that
@@ -69,8 +73,9 @@ panel, segmentation will not be re-executed.
 The **Save** button creates a XML file that contains all of the data you
 generated at the moment you click it. Since you can save at any time,
 the resulting file might miss tracks, spots, etc... You can load the
-saved file using the menu item . It will restore the session just where
-you saved it.
+saved file using the menu item {% include bc content="Plugins | Tracking
+| Load a TrackMate file" %}. It will restore the session just where you
+saved it.
 
 Now is a good time to speak strategy when it comes to saving/restoring.
 You can save at anytime in TrackMate. If you save just before the
@@ -87,6 +92,8 @@ The advantage of this approach is that you load in TrackMate, and
 everything you need will be loaded and displayed. However, if you need
 to change the target file or if it cannot be retrieved, you will have to
 open the TrackMate XML file and edit its 4th line.
+
+%Replace% Clear %Replace%
 
 ## The start panel
 
@@ -105,8 +112,10 @@ present or cannot be read, ImageJ tends to assume that stack always are
 Z-stack on a single time-point.
 
 If the calibration or dimensionality of your data is not right, I
-recommend changing it in the image metadata itself, using  (++). The
-press the 'Refresh source' button on the TrackMate start panel to grab
+recommend changing it in the image metadata itself, using {% include bc
+content="Image | Properties" %} ({% include key content="Ctrl" %}+{%
+include key content="Shift" %}+{% include key content="P" %}). The press
+the 'Refresh source' button on the TrackMate start panel to grab
 changes.
 
 You can also define a sub-region for processing: if you are only
@@ -124,6 +133,8 @@ Defining a smaller area to analyze can be very beneficial to test and
 inspect for correct parameters, particularly for the segmentation step.
 In this tutorial, the image is so small and parse that we need not
 worrying about it. Press the **Next** button to step forward.
+
+%Replace% Clear %Replace%
 
 ## Choosing a detector
 
@@ -154,6 +165,8 @@ know.
     cost of localization precision.
 
 In our case, let us just use the **Dog detector**.
+
+%Replace% Clear %Replace%
 
 ## The detector configuration panel
 
@@ -201,6 +214,8 @@ so this is what we enter in the corresponding field. We don't need
 anything else. The **Sub-pixel localization** option adds a very little
 overhead so we can leave it on.
 
+%Replace% Clear %Replace%
+
 ## The detection process
 
 ![](TrackMate_Segmenting.png)
@@ -234,6 +249,8 @@ On our dummy image, this is clearly something we need to worry about,
 and the segmentation should be over in a few seconds. Typically, this is
 the step that takes the longer. Once the segmentation is done, the
 **Next** button is re-enabled.
+
+%Replace% Clear %Replace%
 
 ## Initial spot filtering
 
@@ -289,6 +306,8 @@ ending in having only relevant spots. But with less than 10 000 spots,
 we are very very far from 1 million so we need not to use this trick.
 Leave the threshold bar close to 0 and proceed to the next step.
 
+%Replace% Clear %Replace%
+
 ## Selecting a view
 
 ![](TrackMate_DisplayerChoice.png)
@@ -314,6 +333,8 @@ When you press the **Next** button, two processes start:
     displaying them.
 
 So nothing much. Let's carry on.
+
+%Replace% Clear %Replace%
 
 ## Spot filtering
 
@@ -400,6 +421,8 @@ button. TrackMate will retain the spots that satisfy to <u>all</u>
 (logical *and*) the criteria set by the filters.
 
 Press **Next** when you are ready to build tracks with these spots.
+
+%Replace% Clear %Replace%
 
 ## Selecting a simple tracker
 
@@ -688,6 +711,7 @@ what we changed from the default, that was pretty simple:
 Now that you know how the plugin works, you should be able to reach the
 end result in less than 30 seconds...
 
+{% include Person content="JeanYvesTinevez" %}
 ([talk](User_talk:JeanYvesTinevez "wikilink")) 04:18, 1 August 2013
 (CDT)
 

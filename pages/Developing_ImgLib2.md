@@ -8,6 +8,8 @@ categories: ImgLib,Tutorials,Development
 description: test description
 ---
 
+%Replace% ImgLibMenu %Replace%
+
 ## Introduction
 
 The [ImgLib2](ImgLib2 "wikilink") library uses [Maven](Maven "wikilink")
@@ -30,7 +32,8 @@ You can clone the ImgLib2 code using Git with the URL:
 To develop ImgLib2 in Eclipse, follow these steps:
 
 1.  [Install the Maven plugin](Using_Maven_with_Eclipse "wikilink")
-2.  Choose  from the Eclipse menu
+2.  Choose {% include bc content="File | Import" %} from the Eclipse
+    menu
 3.  Select "Existing Maven Projects" and click Next
 4.  For the Root Directory, specify the path where you cloned ImgLib2
 5.  From the projects list, leave all items checked

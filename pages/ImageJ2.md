@@ -8,7 +8,33 @@ categories: Software,ImageJ2,SciJava,Citable
 description: test description
 ---
 
+{% include Project content="ImageJ" %}
+
 <div style="clear: right; float: right">
+
+{% include sidebox-right content="float=right | text=
+
+<h2>
+
+ImageJ2's Mission
+
+</h2>
+
+  - **Design** the next generation of ImageJ, driven by the needs of the
+    community.
+  - **Collaborate** across organizations, fostering open development
+    through sharing and reuse.
+  - **Broaden** ImageJ's usefulness and relevance across many
+    disciplines of the scientific community.
+  - **Maintain** backwards compatibility with existing ImageJ
+    functionality.
+  - **Unify** online resources to a central location for the ImageJ
+    community.
+  - **Lead** ImageJ development with a clear vision.
+
+See also [these presentation slides about
+ImageJ](https://imagej.github.io/presentations/2015-09-03-imagej2-and-fiji/#/4).
+" %}
 
 </div>
 
@@ -27,7 +53,7 @@ The [Fiji](Fiji "wikilink") distribution of ImageJ has shipped with beta
 versions of ImageJ2 for quite some time, so you may already be familiar
 with some of ImageJ2's features—some of which, such as the
 [Updater](Updater "wikilink") and [Launcher](Launcher "wikilink"), were
-originally developed as part of Fiji. 
+originally developed as part of Fiji. %Replace% TOC %Replace%
 
 ## Features of ImageJ2
 
@@ -42,10 +68,11 @@ ImageJ2 provides a wealth of new features and capabilities:
   - More powerful [Script Editor](Script_Editor "wikilink") with support
     for several scripting languages.
   - New commands:
-      - for debugging when things
+      - {% include bc content="Plugins | Debug | Dump Stack" %} for
+        debugging when things
         [hang](wikipedia:Hang_\(computing\) "wikilink").
-    
-      - for reporting on versions of installed plugins and libraries.
+      - {% include bc content="Plugins | Debug | System Information" %}
+        for reporting on versions of installed plugins and libraries.
   - Use ImageJ2's N-dimensional [ImgLib2](ImgLib2 "wikilink")-based data
     structures (still in beta).
   - Write parameterized commands and scripts:
@@ -80,8 +107,9 @@ plugins.
 
 ImageJ2 uses the [SCIFIO](SCIFIO "wikilink") library (SCientific Image
 Format Input and Output) by default for most image input tasks. You can
-change this behavior at any time by running  and modifying the *Use
-SCIFIO when opening files* option.
+change this behavior at any time by running {% include bc content="Edit
+| Options | ImageJ2" %} and modifying the *Use SCIFIO when opening
+files* option.
 
 For further details, see the [SCIFIO](SCIFIO "wikilink") page.
 
@@ -147,8 +175,9 @@ ImageJ2 is funded from a variety of sources. See the
 
 ## Publications
 
-  - 
-  - 
+  - {% include Publication content="ImageJ2" %}
+  - {% include Publication content="Ecosystem" %}
+
 For the moment, we suggest using "The ImageJ ecosystem" paper for
 citations. But we recommend both of the above for learning about ImageJ2
 in depth.

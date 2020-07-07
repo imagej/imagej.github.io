@@ -8,7 +8,8 @@ categories: Tutorials,Plugins,Bug Reporting
 description: test description
 ---
 
-Please report bugs via the [Image.sc Forum](Image.sc_Forum "wikilink"):
+%Replace% HelpMenu %Replace% Please report bugs via the [Image.sc
+Forum](Image.sc_Forum "wikilink"):
 
   - Start a new topic in the "Usage & Issues" category.
   - Add the `imagej` label, and any other relevant labels.

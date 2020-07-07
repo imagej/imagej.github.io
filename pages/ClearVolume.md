@@ -8,9 +8,11 @@ categories: Plugins,Visualization,Citable
 description: test description
 ---
 
-\== Problems and Solutions == We work constantly on improving the Fiji
-and KNIME plugins. Help us doing so by letting us know if you encounter
-problems.
+{% include Infobox content="name = ClearVolume | logo =
+![ClearVolumeLogo.png](ClearVolumeLogo.png "ClearVolumeLogo.png") |
+software = Fiji | author = == Problems and Solutions == We work
+constantly on improving the Fiji and KNIME plugins. Help us doing so by
+letting us know if you encounter problems.
 
   - **Problem:** on a Linux machine ClearVolume would not start but
     throw an ugly exception like
@@ -34,7 +36,10 @@ problems.
 
 ## What is ClearVolume?
 
-ClearVolume is a volume renderer developed at MPI-CBG. Its sources are
+{% include Testimonial content="quote = I checked out ClearVolume.
+Extremely well-made plugin\! Does exactly what I want :) | person =
+komodovaran | source = <http://forum.imagej.net/t/1907/3> "
+%}ClearVolume is a volume renderer developed at MPI-CBG. Its sources are
 open and can be cloned [from GitHub](https://github.com/ClearVolume). If
 you use ClearVolume in your research, please cite it—see reference
 below.
@@ -102,7 +107,8 @@ further questions please contact any of us
 
 ## Publication
 
-  - 
+  - {% include Publication content="ClearVolume" %}
+
 [Category:Plugins](Category:Plugins "wikilink")
 [Category:Visualization](Category:Visualization "wikilink")
 [Category:Citable](Category:Citable "wikilink")

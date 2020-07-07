@@ -51,8 +51,9 @@ head](Image:Disc60xwithoutoptovar.gif "wikilink")
     info bar at the top of the image, the numbers have spatial units\!
     Notice the (G) in the name bar of both the images. That means
     calibration is being set the same for all open images.
-8.  Now make a line or area selection. If you use the measure function 
-    or , the results will be spatially calibrated.
+8.  Now make a line or area selection. If you use the measure function
+    {% include bc content="Analyze | Measure" %} or {% include key
+    content="Ctrl|M" %}, the results will be spatially calibrated.
     ![SpatialCalibrationSS2.png](SpatialCalibrationSS2.png
     "SpatialCalibrationSS2.png")
 

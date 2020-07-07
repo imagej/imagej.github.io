@@ -8,4 +8,8 @@ categories:
 description: test description
 ---
 
+{% include Infobox content="software = ImageJ | name = 2D Histogram |
+author = Mark Longair | maintainer = Mark Longair | filename = VIB\_.jar
+| source = 
+
 FIXME: write some documentation for this plugin

@@ -343,7 +343,9 @@ the same place:
   - Spot features are simply conveyed by the spot object, and you can
     access them through `spot.getFeature('FEATURE_NAME')`
   - Edge and track features are stored in a sub-component of the model
-    object called the FeatureModel ().
+    object called the FeatureModel ({% include GitHub
+    content="repo=fiji|path=src-plugins/TrackMate\_/src/main/java/fiji/plugin/trackmate/FeatureModel.java|label=FeatureModel.java"
+    %}).
 
 Check the script below to see a working example.
 
@@ -984,14 +986,23 @@ analyzer](TrackMate#Downloadable_jars "wikilink") is such a module.
 As any other module it can be used in a script, provided the jar file is
 in the plugins or jars folder of Fiji:
 
+{% include GitHubEmbed
+content="org=fiji|repo=TrackMate|source=../../../scripts/CallTrackMateMultiChannel.py"
+%}
+
 ## Making TrackMate macro recordable with a 64-line script
 
-Contributed by  during a NEUBIAS course. Quoting from Jan:
+Contributed by {% include Person content="Eglinger" %} during a NEUBIAS
+course. Quoting from Jan:
 
 > "The macro language is too limited to work with such awesome things as
 > TrackMate, but that you can do everything with a more powerful
 > scripting language. So when using a 64-line script to call it, it
 > actually is macro recordable."
+
+{% include GitHubEmbed
+content="org=fiji|repo=TrackMate|source=../../../scripts/Run\_TrackMate\_Headless.groovy"
+%}
 
 ## Add 3D maximas in the ROI Manager using TrackMate
 

@@ -10,7 +10,7 @@ description: test description
 
 <seo metak="snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy" metad="snt,reconstruction,tracing,arbor,neuron,morphometry,dendrite,axon,neuroanatomy" />
  The ImageJ framework for semi-automated tracing of neurons and tubular
-structures. 
+structures. %Replace% TOC %Replace%
 
 ## Introduction
 
@@ -26,6 +26,13 @@ Source software).
 
 ![SNT Overview](SimpleNeuriteTracer2.png "SNT Overview")
 
+{% include Tip content="tip = You need a [Java 8-enabled
+installation](#Installation "wikilink") to run the latest version of
+SNT. If you are not familiar with the plugin, have a look at its
+[Introductory
+Screencast](Simple_Neurite_Tracer:_Introductory_Screencast "wikilink")
+and [Tutorials](#Tutorials "wikilink")." %}
+
 ## Installation
 
 SNT is part of Fiji and distributed through the Java 8 [ update
@@ -33,10 +40,11 @@ site](How_to_follow_a_3rd_party_update_site#Add_update_sites "wikilink").
 If you are not running a Java 8 -enabled installation you should
 [download the latest Fiji release](Downloads "wikilink"). Newer releases
 come pre-bundled with Java 8, and are already subscribed to the [Java-8
-update site](User:Java-8 "wikilink"). Once installed you should run  to
-make sure that you have the most recent version. You can find the plugin
-in  (or by bringing up the [Command
-Finder](Using_the_Command_Launcher "wikilink") and typing  ).
+update site](User:Java-8 "wikilink"). Once installed you should run {%
+include bc content="Help | Update Fiji" %} to make sure that you have
+the most recent version. You can find the plugin in {% include bc
+content="Plugins | NeuroAnatomy | SNT" %} (or by bringing up the
+[Command Finder](Using_the_Command_Launcher "wikilink") and typing  ).
 
 ## Feedback
 
@@ -134,18 +142,24 @@ following materials:
 
 The native file format of the plugin is documented at: [SNT: .traces
 File Format](SNT:_.traces_File_Format "wikilink"). (`.traces` files are
-just gzipped XML, so easy to parse.) There's also an example  on the
-[Neuroanatomy](Neuroanatomy "wikilink") update site showing how to batch
-convert each .traces file to multiple SWC files.
+just gzipped XML, so easy to parse.) There's also an example {% include
+GitHub
+content="org=tferr|repo=hIPNAT|path=src/main/resources/scripts/|label=script"
+%} on the [Neuroanatomy](Neuroanatomy "wikilink") update site showing
+how to batch convert each .traces file to multiple SWC files.
 
-SNT is also easy to use programmatically. For instance, the example in 
-shows how to use the code to find a path between two arbitrary points in
-an image stack.
+SNT is also easy to use programmatically. For instance, the example in
+{% include GitHub
+content="org=fiji|repo=Simple\_Neurite\_Tracer|source=tracing/Albert\_Test.java|label=Albert\_Test.java"
+%} shows how to use the code to find a path between two arbitrary points
+in an image stack.
 
 As another small example, if you just wanted to load a set of SWC files
 using the SNT API and display them in the 3D viewer (a functionality
 provided by the [Neuroanatomy](Neuroanatomy "wikilink") update site,
-through a ), a Jython script like [this](https://gist.github.com/838695)
+through a {% include GitHub
+content="org=tferr|repo=hIPNAT|path=src/main/java/ipnat/|label=Java
+plugin" %}), a Jython script like [this](https://gist.github.com/838695)
 will do.
 
 ## Authors

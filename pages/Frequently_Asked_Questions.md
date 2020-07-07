@@ -8,7 +8,8 @@ categories:
 description: test description
 ---
 
-This page lists answers to the most frequently asked questions.
+%Replace% HelpMenu %Replace% This page lists answers to the most
+frequently asked questions.
 
 # Usage
 
@@ -25,8 +26,9 @@ image viewer. However, one major goal of the
 uses the [ImgLib2](ImgLib2 "wikilink") library as its data model, which
 has much larger limits on the number of pixels (theoretically: \~2^63
 per dimension, up to \~2^31 dimensions, totaling \~2^63^31 pixels).
-Hence, you can open larger images using the . But you will not be able
-to display them in the user interface yet.
+Hence, you can open larger images using the {% include GitHub
+content="org=imagej | repo=tutorials | label=ImageJ2 API" %}. But you
+will not be able to display them in the user interface yet.
 
 Furthermore, the [SCIFIO](SCIFIO "wikilink") library (what ImageJ2 uses
 for data I/O) supports opening such images on-demand as "cell images"
@@ -74,10 +76,12 @@ See the [MacOS](MacOS "wikilink") page.
 Install Java 8, and delete or rename the `ImageJ.app\java` and/or
 `ImageJ.app\jre` folders, if they exist. If this does not result in
 ImageJ using the expected Java version, check the Environment Variables
-() for the variable "JAVA\_HOME". Update or create this variable as
-needed; its value should be the desired JDK or JRE that you would like
-to use for ImageJ (for instance: "C:\\Program
-Files\\Java\\jdk1.8.0\_172"). See also [Java environment variable
+({% include bc content="Control Panel | System and Security | System |
+Advanced Settings | Advanced | Environment Variables" %}) for the
+variable "JAVA\_HOME". Update or create this variable as needed; its
+value should be the desired JDK or JRE that you would like to use for
+ImageJ (for instance: "C:\\Program Files\\Java\\jdk1.8.0\_172"). See
+also [Java environment variable
 setup](http://stackoverflow.com/questions/1672281/environment-variables-for-java-installation).
 
 ### On OS X
@@ -161,8 +165,9 @@ date" but still be missing critical files, or have mismatching versions
 (e.g., the dreaded
 [`NoSuchMethodError`](Troubleshooting#NoSuchMethodError_or_NoClassDefFoundError "wikilink")).
 
-To be certain, run , and click the "Advanced mode" button. Then verify
-the following View Options:
+To be certain, run {% include bc content="Help | Update..." %}, and
+click the "Advanced mode" button. Then verify the following View
+Options:
 
   - **View uninstalled files only:** Shows files that are available from
     remote ImageJ update sites, but *not* installed in your ImageJ.
@@ -182,20 +187,22 @@ the following View Options:
     conflicting file names.
 
 If you flag any changes to be made, press the "Apply changes" to update
-your ImageJ. And after restarting ImageJ, you might want to run  again
-to make sure everything looks the way you expect\!
+your ImageJ. And after restarting ImageJ, you might want to run {%
+include bc content="Help | Update..." %} again to make sure everything
+looks the way you expect\!
 
 ## How do I install additional plugins?
 
 If the plugin is published on an [ImageJ update
-site](Update_Sites "wikilink"), you can run  then click the *Manage
-update sites* button to enable it. Not only does this install the
-plugins for you automatically, but you will also be notified of any
-updates whenever they are released.
+site](Update_Sites "wikilink"), you can run {% include bc content="Help
+| Update" %} then click the *Manage update sites* button to enable it.
+Not only does this install the plugins for you automatically, but you
+will also be notified of any updates whenever they are released.
 
 Otherwise, you can drag 'n drop the .jar files onto the ImageJ window,
-or use  with .jar, .class and .java files, or copy the plugins to
-*ImageJ.app/plugins/* and restart ImageJ. See the [walk-through with
+or use {% include bc content="Plugins | Install Plugin..." %} with .jar,
+.class and .java files, or copy the plugins to *ImageJ.app/plugins/* and
+restart ImageJ. See the [walk-through with
 screenshots](Installing_3rd_party_plugins "wikilink").
 
 ## How do I downgrade ImageJ?
@@ -208,8 +215,9 @@ bug](Bugs "wikilink") to the developers so that it can be fixed in a
 future version\!*
 
   - You can change the version of [ImageJ 1.x](ImageJ_1.x "wikilink")
-    used via the  menu item. This *only* changes the version of ImageJ
-    1.x—not all ImageJ components, [plugins](plugins "wikilink"), etc.
+    used via the {% include bc content="Help | Update ImageJ..." %} menu
+    item. This *only* changes the version of ImageJ 1.x—not all ImageJ
+    components, [plugins](plugins "wikilink"), etc.
   - You can [switch to a different version of
     Java](#How_do_I_launch_ImageJ_with_a_different_version_of_Java? "wikilink").
   - You can [download a Fiji Life-Line
@@ -227,13 +235,16 @@ underscore, and it either needs to contain an appropriate
 *plugins.config* file or the class name needs to contain an underscore,
 too.
 
-The safest way to ensure these conventions is to use the  menu item.
+The safest way to ensure these conventions is to use the {% include bc
+content="File | Export as .jar file" %} menu item.
 
-## I tried to update ImageJ via , but it throws an exception instead?
+\== I tried to update ImageJ via {% include bc content="Help | Update"
+%}, but it throws an exception instead? ==
 
 Please download a fresh copy from [here](Downloads "wikilink").
 
-## I updated ImageJ via , and now it does not start anymore\!
+\== I updated ImageJ via {% include bc content="Help | Update" %}, and
+now it does not start anymore\! ==
 
 See [If ImageJ does not start
 up](Troubleshooting#If_ImageJ_does_not_start_up "wikilink") on the
@@ -246,7 +257,8 @@ network proxy settings. You can [download a new
 ImageJ](Downloads "wikilink") to receive the fix. Or you can update the
 Updater manually like this:
 
-  - open the [Script Editor](Script_Editor "wikilink") with 
+  - open the [Script Editor](Script_Editor "wikilink") with {% include
+    bc content="File | New | Script" %}
   - set the language to *BeanShell* in the *Language* menu of the editor
   - paste the following code (and adjust it to match your settings):
 
@@ -288,11 +300,13 @@ easily.
 
 ## Does ImageJ2 support the ImageJ macro language? Is it deprecated?
 
-Thanks to the , [ImageJ1](ImageJ1 "wikilink")
-[macros](macros "wikilink") will run unchanged in
-[ImageJ2](ImageJ2 "wikilink"), while also allowing to harness ImageJ2's
-new parameterized [scripting](scripting "wikilink") paradigm—something
-that was previously not possible with the macro language.
+Thanks to the {% include GitHub
+content="org=imagej|repo=imagej-legacy|label=ImageJ legacy layer" %},
+[ImageJ1](ImageJ1 "wikilink") [macros](macros "wikilink") will run
+unchanged in [ImageJ2](ImageJ2 "wikilink"), while also allowing to
+harness ImageJ2's new parameterized [scripting](scripting "wikilink")
+paradigm—something that was previously not possible with the macro
+language.
 
 The ImageJ1 macro language has been extremely useful to many users.
 However, it has a substantial limitation: its functions are separate
@@ -333,7 +347,8 @@ available.
 
 Fiji is a *distribution* of ImageJ: it bundles the core ImageJ
 application with a curated selection of plugins pre-installed.
-Specifically, those plugins found on the .
+Specifically, those plugins found on the {% include ListOfUpdateSites
+content="Fiji update site" %}.
 
 ## How do I install Fiji?
 
@@ -345,8 +360,8 @@ The installation of Fiji is described on specific pages for
 ## How do I turn my ImageJ installation into a Fiji one?
 
 Fiji is just ImageJ. If you are running [ImageJ2](ImageJ2 "wikilink"),
-simply run , click *Manage update sites*, and enable the *Fiji* update
-site.
+simply run {% include bc content="Help | Update" %}, click *Manage
+update sites*, and enable the *Fiji* update site.
 
 Or if you are running [ImageJ1](ImageJ1 "wikilink"), you can bootstrap
 the updater by drag 'n dropping [this
@@ -519,9 +534,9 @@ Here are several ways to do so:
       - Type in your search
       - Click the GitHub button\!
 2.  **Using the Command Finder:**
-      - Press  for the Command Finder.
+      - Press {% include key content="L" %} for the Command Finder.
       - Type the name of the command.
-      - Press  to select it.
+      - Press {% include key content="Down" %} to select it.
       - Click the Source button.
       - This will open the source from the [ImageJ web site online
         source](https://imagej.net/source/).
@@ -537,8 +552,8 @@ Here are several ways to do so:
       - Open the relevant project in GitHub:
           - E.g., for "ij." classes, go to:
             <https://github.com/imagej/ImageJA>
-      - Press the  key, and type the name of the file you are looking
-        for.
+      - Press the {% include key content="T" %} key, and type the name
+        of the file you are looking for.
           - In the example above, this is Thresholder.java.
       - You should end up with a hit like:
         <https://github.com/imagej/ImageJA/blob/master/src/main/java/ij/plugin/Thresholder.java>.
@@ -547,11 +562,13 @@ Here are several ways to do so:
         method above to figure out which repository, then load the code
         on GitHub, if desired.
 4.  **Using the "Open Source for Menu Item" command:**
-      - Run .
+      - Run {% include bc content="Plugins | Scripting | Open Source for
+        Menu Item" %}.
           - Unfortunately, you must select this from the menu, not using
             the Command Finder.
       - Run the command whose source you want to see.
-          - E.g., .
+          - E.g., {% include bc content="Process | Binary | Make Binary"
+            %}.
           - Again, select it from the menu directly, not using the
             Command Finder.
       - This will open the source using the [fiji.sc gitweb
@@ -584,8 +601,9 @@ for more background on this.)
 
 If your software is written in Java, we recommend using
 [Maven](Maven "wikilink") to structure your project. You can then add
-dependencies to portions of ImageJ that are of interest to you. See the 
-for examples.
+dependencies to portions of ImageJ that are of interest to you. See the
+{% include GitHub content="org=imagej|repo=tutorials|label=ImageJ
+tutorials" %} for examples.
 
 If your software is written in another language such as C or Python,
 there are [many ways to integrate Java
@@ -602,8 +620,9 @@ combined bundle of all ImageJ-related JARs in a single
 For convenience, we provide a [build of this combined JAR
 file](http://jenkins.imagej.net/job/ImageJ/lastSuccessfulBuild/artifact/target/)
 (with suffix `-all`) from the latest DEVELOPMENT, UNSTABLE version of
-ImageJ. This build includes the latest changes on the . It has not been
-thoroughly tested and may contain new bugs.
+ImageJ. This build includes the latest changes on the {% include GitHub
+content="repo=imagej|label=master branch of the source repository" %}.
+It has not been thoroughly tested and may contain new bugs.
 
 In some cases, use of this JAR file is appropriate and convenient; for
 example, [CellProfiler](http://cellprofiler.org/) uses it to integrate
@@ -708,7 +727,8 @@ projects.
 
 ## This is a Wiki but I cannot edit it\! Why?
 
-If you \[/wiki/index.php?title=Special:Userlogin\&type=signup create an
+If you \[%Replace% SERVER %Replace%
+/wiki/index.php?title=Special:Userlogin\&type=signup create an
 account\], you will be able to make edits while logged in.
 
 ## The Wiki is lacking documentation about X, Y and Z
@@ -725,7 +745,8 @@ links to all the menu commands that ship as part of Fiji.
 If documentation is missing for the command you're interested in, you
 can always view the source directly:
 
-1.  Open the [Command Finder](Command_Finder "wikilink") (Shortcut: )
+1.  Open the [Command Finder](Command_Finder "wikilink") (Shortcut: {%
+    include Key content="L" %})
 2.  Filter to the command you're interested in.
 3.  The \`File\` column will tell you the plugin where the desired
     command is contained.
@@ -735,7 +756,7 @@ can always view the source directly:
 5.  From the appropriate project on GitHub, you can find the repository
     corresponding to the desired plugin.
 6.  Finally, you can search for the actual file for the command of
-    interest (Shortcut: ).
+    interest (Shortcut: {% include Key content="T" %}).
 
 As a complete example, if you were interested in the [2D
 Histogram](2D_Histogram "wikilink") command:
@@ -744,7 +765,8 @@ Histogram](2D_Histogram "wikilink") command:
     located in VIB.jar
   - VIB is a Fiji plugin, so we go to [the VIB
     repository](https://github.com/fiji/VIB).
-  - On GitHub, press , search for "Histogram", and find [the
+  - On GitHub, press {% include Key content="T" %}, search for
+    "Histogram", and find [the
     Histogram 2D](https://github.com/fiji/VIB/blob/master/src/main/java/util/Histogram_2D.java)
     source.
 
@@ -756,11 +778,12 @@ bug report](https://fiji.sc/bugzilla/).
 
 ## How to report issues?
 
-Use the  command, which adds a ticket report to the [Fiji bug
-tracker](https://fiji.sc/bugzilla/). While private mail might seem more
-desirable sometimes, but it is almost always inferior to the open
-process we established in ImageJ. For starters, bug reporters are
-unlikely to know who would be the best person to address the issue.
+Use the {% include bc content="Help | [Report a
+Bug](Report_a_Bug "wikilink")" %} command, which adds a ticket report to
+the [Fiji bug tracker](https://fiji.sc/bugzilla/). While private mail
+might seem more desirable sometimes, but it is almost always inferior to
+the open process we established in ImageJ. For starters, bug reporters
+are unlikely to know who would be the best person to address the issue.
 
 ## I reported an issue, but it is still not fixed\! Why not?
 

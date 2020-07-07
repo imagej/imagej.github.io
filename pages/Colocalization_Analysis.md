@@ -8,6 +8,10 @@ categories: Cookbook,Tutorials,Colocalization,Color processing
 description: test description
 ---
 
+{% include BigNotice content="See
+[:Category:Colocalization](:Category:Colocalization "wikilink") for
+pages about colocalization." %} {% include Learn content="techniques" %}
+
 ## What is colocalization?
 
 Suppose you are given some images by a colleague, or have some images of
@@ -115,7 +119,8 @@ Most people might think that the image contains 4 distinct colours: 2
 sets of thin spirals are in dark red and dark green, and 2 thick
 prominent spirals of yellow-green and yellow. However, the yellow and
 yellow-green actually have <b>exactly the same color\!</b> You can
-verify this yourself by calling  in Fiji.
+verify this yourself by calling {% include bc content="File | Open
+Samples | [Spirals (Macro)](Spirals_\(Macro\) "wikilink")" %} in Fiji.
 
 ![GreenYellowSimultColourIllusion.png](GreenYellowSimultColourIllusion.png
 "GreenYellowSimultColourIllusion.png")
@@ -420,7 +425,8 @@ shortcut.</span>
 The [Colocalization Test](Colocalization_Test "wikilink") plugin
 performs the Costes test for statistical significance (which you should
 ALWAYS do after calculating the thresholded Manders coefficients and the
-scatterplot). It is in the menus at 
+scatterplot). It is in the menus at {% include bc content="Analyze |
+Colocalization | Colocalization Test" %}
 
 ![ColocTestGUI1.png](ColocTestGUI1.png "ColocTestGUI1.png")
 

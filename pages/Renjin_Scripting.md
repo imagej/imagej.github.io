@@ -8,8 +8,9 @@ categories: Scripting
 description: test description
 ---
 
-A thin wrapper around [Renjin](http://www.renjin.org/) is currently
-available on the , providing
+{% include Learn content="languages" %} A thin wrapper around
+[Renjin](http://www.renjin.org/) is currently available on the {%
+include ListOfUpdateSites content="Java 8 update site" %}, providing
 [R-styled](https://www.r-project.org/about.html) scripting in ImageJ.
 
 See also [scripting-renjin on

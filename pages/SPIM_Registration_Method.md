@@ -702,7 +702,9 @@ samples for imaging with SPIM shown in
 5.  
 6.  
 
-7.  
+7.  {% include citation content="Three Dimensional X-Ray Opaque Foreign
+    Body Marker Device | author = E. H. Gullekson | year = Patent
+    number: 3836776, Filing date: 1 Mar 1973, Issue date: Sep 1974 " %}
 
 8.  
 

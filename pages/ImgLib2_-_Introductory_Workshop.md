@@ -8,8 +8,8 @@ categories: ImgLib
 description: test description
 ---
 
-Please download the following archive and the presentation to follow the
-workshop presentation:
+%Replace% ImgLibMenu %Replace% Please download the following archive and
+the presentation to follow the workshop presentation:
 
   - [The presentation as PDF](:File:ImgLib2_presentation.pdf "wikilink")
 

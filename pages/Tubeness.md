@@ -8,6 +8,10 @@ categories: Plugins
 description: test description
 ---
 
+{% include Infobox content="software = ImageJ | name = Tubeness | author
+= Mark Longair, Stephan Preibisch | maintainer = Mark Longair | filename
+= VIB\_.jar | source = 
+
 The original documentation for the IJ1 Tubeness plugin can be found at
 <http://homepages.inf.ed.ac.uk/s9808248/imagej/tubeness/>.
 

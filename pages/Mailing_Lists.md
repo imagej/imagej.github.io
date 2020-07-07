@@ -9,7 +9,7 @@ description: test description
 ---
 
 \_\_NOTOC\_\_ There are several mailing lists for community discussion
-and troubleshooting.
+and troubleshooting.%Replace% RecommendedContact %Replace%
 
 Please [search the list archives](http://search.imagej.net/) first to
 find any previous discussions regarding your problem.

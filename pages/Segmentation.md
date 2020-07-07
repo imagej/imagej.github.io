@@ -8,6 +8,14 @@ categories: Tutorials,Segmentation
 description: test description
 ---
 
+{% include BigNotice content="See
+[:Category:Segmentation](:Category:Segmentation "wikilink") for pages
+about image segmentation." %} {% include Learn content="techniques" %}
+
+{% include Tip content="tip=See [this helpful workshop on Image
+Segmentation](https://imagej.net/_images/8/87/Arganda-Carreras-Segmentation-Bioimage-course-MDC-Berlin-2016.pdf)
+for another great overview of Segmentation\!" %}
+
 # Introduction
 
 Image segmentation is "the process of partitioning a digital image into
@@ -102,7 +110,7 @@ manually tweaking, so that your result is reproducible later on the same
 data, and on multiple other datasets.
 
   - Open your image
-  - Select 
+  - Select {% include bc content="Image | Adjust | Threshold..." %}
   - Specify whether or not the background should be dark or light
   - Adjust the minimum and maximum sliders until you are satisfied with
     the saturation level of your image
@@ -115,7 +123,7 @@ data, and on multiple other datasets.
 ring](Eroded_tree.png
 "Over-saturated mask is eroded around the center tree ring")
 
-  - Select 
+  - Select {% include bc content="Edit | Selection | Create Mask" %}
   - Based on the image and set threshold, some portions of the image may
     be over/under saturated
       - Select the portion of the image that needs to be adjusted
@@ -137,8 +145,10 @@ ring](Eroded_tree.png
 
 ### Creating Selections
 
-  - Select  to select the objects within the mask
-  - To deselect a portion of the image, select +
+  - Select {% include bc content="Edit | Selection | Create Selection"
+    %} to select the objects within the mask
+  - To deselect a portion of the image, select {% include key
+    content="Shift" %}+{% include key content="click" %}
       - [More
         information](https://imagej.net/docs/guide/146-27.html#sub:Create-Selection)
 
@@ -148,8 +158,10 @@ ring](Eroded_tree.png
 ### Transferring Selections
 
   - Before transferring the mask's selections, revert the image to its
-    original form by selecting +
-  - Select first the mask, then the original image, and select + to
+    original form by selecting {% include key content="Shift" %}+{%
+    include key content="E" %}
+  - Select first the mask, then the original image, and select {%
+    include key content="Shift" %}+{% include key content="E" %} to
     transfer the mask's selections
       - [More
         information](https://imagej.net/docs/guide/146-27.html#infobox:TransferSelections)

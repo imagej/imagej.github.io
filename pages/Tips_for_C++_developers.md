@@ -8,6 +8,8 @@ categories:
 description: test description
 ---
 
+{% include DevelopMenu content="tutorials" %} %Replace% TOC %Replace%
+
 # Introduction
 
 Many developers are more familiar with C++ than Java when starting to

@@ -12,25 +12,35 @@ description: test description
 
 <div style="float:right;">
 
+{% include Infobox content="software = ImageJ/Fiji | name = BAR |
+maintainer = 
+
 </div>
 
-**BAR**: A collection of **B**roadly **A**pplicable **R**outines.
+%Replace% TOC %Replace% **BAR**: A collection of **B**roadly
+**A**pplicable **R**outines.
 
 The collection contains [Macros](Macros "wikilink"),
 [Scripts](Scripts "wikilink") and [Plugins](Plugins "wikilink") focused
 on Data Analysis, Image Annotation and Image Segmentation. It is curated
-using  and distributed as an optional .
+using {% include GitHub
+content="org=tferr|repo=Scripts\#ij-bar|label=GitHub" %} and distributed
+as an optional {% include ListOfUpdateSites content="update site" %}.
 
 ## Installation
 
-Run  and choose *Manage update sites*. Activate the *BAR* checkbox in
-the alphabetically-sorted list of update sites. Press *OK*, then *Apply
-changes*. Restart ImageJ. That's it. Enjoy BAR\!
+Run {% include bc content="Help|Update..." %} and choose *Manage update
+sites*. Activate the *BAR* checkbox in the alphabetically-sorted list of
+update sites. Press *OK*, then *Apply changes*. Restart ImageJ. That's
+it. Enjoy BAR\!
 
 ## Description
 
 BAR files are accessible through a dedicated top-level menu subdivided
-in task-oriented categories. All routines should be documented on .
+in task-oriented categories. All routines should be documented on {%
+include GitHub
+content="org=tferr|repo=Scripts|path=README.md\#ij-bar|label= GitHub"
+%}.
 
 Some of the scripts have a dedicated documentation page, others feature
 built-in help, while a handful were deemed too simple to require
@@ -42,43 +52,105 @@ open all the scripts using the [Shift key](#OpeningBAR "wikilink").
 
 [right|Overview of BAR (v1.0.0)](File:BARsnapshot.png "wikilink")
 
-  - <span id="Analysis"></span>
-    
-    , , , , 
+  - {% include GitHub
+    content="org=tferr|repo=Scripts|path=README.md\#analysis|label=
+    Analysis" %}<span id="Analysis"></span>  
+    {% include GitHub
+    content="org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Analysis/README.md\#log-dog-spot-counter|label=LoG-DoG
+    Spot Counter" %}, {% include GitHub
+    content="org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Analysis/README.md\#multi-roi-profiler|label=Multi
+    ROI Profiler" %}, {% include GitHub
+    content="org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Analysis/README.md\#multichannel-plot-profile|label=Multichannel
+    Plot Profile" %}, {% include GitHub
+    content="org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Analysis/README.md\#multichannel-zt-axis-profile|label=Multichannel
+    ZT-axis Profile" %}, {% include GitHub
+    content="org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Analysis/README.md\#smoothed-plot-profile|label=Smoothed
+    Plot Profile" %}
 
 <!-- end list -->
 
-  - <span id="Annotation"></span>
-    
-    , , 
+  - {% include GitHub
+    content="org=tferr|repo=Scripts|path=README.md\#image-annotation|label=Annotation"
+    %}<span id="Annotation"></span>  
+    {% include GitHub
+    content="org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Annotation/README.md\#combine-orthogonal-views|label=Combine
+    Orthogonal Views" %}, {% include GitHub
+    content="org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Annotation/README.md\#cumulative-z-project|label=Cumulative
+    Z Project" %}, {% include GitHub
+    content="org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Annotation/README.md\#roi-color-coder|label=ROI
+    Color Coder" %}
 
 <!-- end list -->
 
-  - <span id="Data_Analysis"></span>
-    
-    , , , [Find Peaks](Find_Peaks "wikilink"), [Fit
-    Polynomial](Sholl_Analysis#Complementary_Tools "wikilink"), 
+  - {% include GitHub
+    content="org=tferr|repo=Scripts|path=README.md\#data-analysis|label=Data
+    Analysis" %}<span id="Data_Analysis"></span>  
+    {% include GitHub
+    content="org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#create-boxplot|label=Create
+    Boxplot" %}, {% include GitHub
+    content="org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#create-polar-plot|label=Create
+    Polar Plot" %}, {% include GitHub
+    content="org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#distribution-plotter|label=Distribution
+    Plotter" %}, [Find Peaks](Find_Peaks "wikilink"), [Fit
+    Polynomial](Sholl_Analysis#Complementary_Tools "wikilink"), {%
+    include GitHub
+    content="org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#interactive-plotting|label=Interactive
+    Plotting" %}
 
 <!-- end list -->
 
-  - <span id="Segmentation"></span>
-    
-    , , , , , 
+  - {% include GitHub
+    content="org=tferr|repo=Scripts|path=README.md\#image-segmentation|label=Segmentation"
+    %}<span id="Segmentation"></span>  
+    {% include GitHub
+    content="org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#shen-castan-edge-detector|label=Shen-Castan
+    Edge Detector" %}, {% include GitHub
+    content="org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#apply-threshold-to-roi|label=Apply
+    Threshold To ROI" %}, {% include GitHub
+    content="org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#clear-thresholded-pixels|label=Clear
+    Thresholded Pixels" %}, {% include GitHub
+    content="org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#remove-isolated-pixels|label=Remove
+    Isolated Pixels" %}, {% include GitHub
+    content="org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#threshold-from-background|label=Threshold
+    From Background" %}, {% include GitHub
+    content="org=tferr|repo=Scripts|path=BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#wipe-background|label=Wipe
+    Background" %}
 
 <!-- end list -->
 
-  - , <span id="SnippetsList"> and </span>  
+  - {% include GitHub
+    content="org=tferr|repo=Scripts|path=README.md\#snippets|label=Snippets"
+    %}, {% include GitHub
+    content="org=tferr|repo=Scripts|path=/lib\#lib|label=BAR lib"
+    %}<span id="SnippetsList"> and {% include GitHub
+    content="org=tferr|repo=Scripts|path=BAR/src/main/resources/tutorials/|label=Tutorials"
+    %}</span>  
     Described in [Scripting BARs](#Scripting_BARs "wikilink")
 
 <!-- end list -->
 
-  - <span id="Tools"></span>
-    
-    , , , , , 
+  - {% include GitHub
+    content="org=tferr|repo=Scripts|path=README.md\#tools-and-toolsets|label=Tools
+    and Toolsets" %}<span id="Tools"></span>  
+    {% include GitHub
+    content="org=tferr|repo=Scripts|path=Tools/README.md\#calibration-menu|label=Calibration
+    Menu" %}, {% include GitHub
+    content="org=tferr|repo=Scripts|path=Tools/README.md\#list-folder-menu|label=List
+    Folder Menu" %}, {% include GitHub
+    content="org=tferr|repo=Scripts|path=Tools/README.md\#segment-profile-tool|label=Segment
+    Profile" %}, {% include GitHub
+    content="org=tferr|repo=Scripts|path=Tools/README.md\#shortcuts-menu|label=Shortcuts
+    Menu" %}, {% include GitHub
+    content="org=tferr|repo=Scripts|path=Tools/README.md\#roi-manager-tools|label=ROI
+    Manager Tools" %}, {% include GitHub
+    content="org=tferr|repo=Scripts|path=Tools/README.md\#toolset-creator|label=Toolset
+    Creator" %}
 
 <!-- end list -->
 
-  - <span id="Utilities"></span>  
+  - {% include GitHub
+    content="org=tferr|repo=Scripts|path=README.md\#utilities|label=Utilities"
+    %}<span id="Utilities"></span>  
     [Commander](#Commander "wikilink")
 
 ## Accessing BARs
@@ -91,7 +163,8 @@ Menu Tool* (<span style="border-bottom:1px dotted #ccc;">BAR▷ Tool
 Installers▷ Install Shortcuts Menu</span>), that registers frequently
 used commands in the ImageJ toolbar, 4) by
 [pressing](#ExpediteAccess "wikilink") , or 5) from other [scripts,
-macros and plugins](#Scripting_BARs "wikilink"). 
+macros and plugins](#Scripting_BARs "wikilink"). {% include Tip
+content="id = OpeningBAR | tip = You can open any BAR script by holding 
 
 ### Context Menu
 
@@ -157,9 +230,9 @@ pasted code would look something like this:
 
 ![Commander overview (BAR 1.1.2).](CommanderOverview.png
 "Commander overview (BAR 1.1.2).") Since the majority of BARs are
-scripts stored in dedicated files, BAR features Commander (), a
-keyboard-based file browser that produces filtered lists of directory
-contents.
+scripts stored in dedicated files, BAR features Commander ({% include bc
+content="BAR|BAR Commander..." %}), a keyboard-based file browser that
+produces filtered lists of directory contents.
 
 It is a productivity tool that applies the principles of [Command
 Launcher](Using_the_Command_Launcher "wikilink") to file browsing,
@@ -169,20 +242,28 @@ and 2) to produce filtered lists of directory contents. Features
 include: drag-and-drop support, interaction with native file manager,
 regex filtering, and a built-in console for common operations.
 
-<i>Console mode</i> is triggered by typing , which evokes a list of
-searchable commands so that all file navigation can be done exclusively
-with the keyboard. Some of these (`cd`, `ls`, `pwd`, etc.) are
-reminiscent of commands found in most command-line interfaces. Here are
-some examples:
+<i>Console mode</i> is triggered by typing {% include key content="\!"
+%}, which evokes a list of searchable commands so that all file
+navigation can be done exclusively with the keyboard. Some of these
+(`cd`, `ls`, `pwd`, etc.) are reminiscent of commands found in most
+command-line interfaces. Here are some examples:
 
-  - To access ImageJ's LUT folder:Type   
-    To access all JavaScript [lib files](#lib "wikilink"):Type , then   
-    To reveal the directory of active image:Type , then choose .  
-    To access Commander's built-in help:Type   
+  - To access ImageJ's LUT folder:Type {% include key
+    content="\!|L|U|T|Enter" %}  
+    To access all JavaScript [lib files](#lib "wikilink"):Type {%
+    include key content="\!|L|I|B|Enter" %}, then {% include key
+    content=".|J|S" %}  
+    To reveal the directory of active image:Type {% include key
+    content="\!|I|M|P|Enter" %}, then choose {% include bc
+    content="Reveal Path" %}.  
+    To access Commander's built-in help:Type {% include key
+    content="\!|H|E|L|P|Enter" %}  
     To extract the paths of all TIFF images in a directory:Drag and drop
     the desired folder into the Commander list  
-    Type   
-    Choose  in the Options Menu or press  ( in Mac OS).
+    Type {% include key content="T|I|F|Enter" %}  
+    Choose {% include bc content="Print Current List" %} in the Options
+    Menu or press {% include key content="Control|P" %} ({% include key
+    content="Command|P" %} in Mac OS).
 
 ### Keyboard Shortcuts
 
@@ -210,9 +291,11 @@ macro "Remove Round Structures [0]" {
 As [mentioned](#Context_Menu "wikilink"), such macros can then be pasted
 into the text area of <span style="border-bottom:1px dotted #ccc;">Edit▷
 Options▷ Startup...</span> so that they can be executed when ImageJ
-starts up. == Scripting BARs == Although BARs can be used as standalone
-commands, the scripts and plugins in BAR become more useful when
-incorporated into other routines.
+starts up. {% include Tip content="id = ExpediteAccess | tip = Two other
+expedite ways of retrieving commands include: 1) Pressing == Scripting
+BARs == Although BARs can be used as standalone commands, the scripts
+and plugins in BAR become more useful when incorporated into other
+routines.
 
 You can use BARs as a starting point for your own workflows. Whether you
 are just looking to automate a simple task or you are an advanced
@@ -222,8 +305,11 @@ additions to be shared across routines.
 
 ### Snippets
 
-![ (BAR 1.1.0)](SnippetCreator.png " (BAR 1.1.0)") BAR contains a
-directory, *plugins/Scripts/BAR/Snippets/*, containing multi-language
+![{% include Bc content="BAR|Snippets|NewSnippet..." %} (BAR
+1.1.0)](SnippetCreator.png
+"{% include Bc content=\"BAR|Snippets|NewSnippet...\" %} (BAR 1.1.0)")
+BAR contains a directory, *plugins/Scripts/BAR/Snippets/*, containing
+multi-language
 [examples](https://github.com/tferr/Scripts/tree/master/Snippets) that
 you can customize and recycle in your own scripts. You can, of course,
 also retrieve code and inspiration from the more complete BARs in the
@@ -244,11 +330,17 @@ contains some utilities to help you manage your scripts:
     browser of the operating system.  
     Search BAR: Searches the contents of BAR files.
 
-<span id="lib"></span>
+{% include Tip content="id = API | tip = BAR provides several utility
+methods that simplify the creation of [Snippets](#Snippets "wikilink")
+and [BAR lib](#BAR_lib "wikilink") usage. These are documented in the
+[BAR API](http://tferr.github.io/Scripts/apidocs/), that can be accessed
+using  <span id="lib"></span>
 
 ### BAR lib
 
-(stored in the */BAR/lib/* directory) are centralized libraries
+{% include Learn content="scripting" %}{% include GitHub
+content="org=tferr|repo=Scripts|path=/lib/README.md\#lib|label=BAR libs"
+%} (stored in the */BAR/lib/* directory) are centralized libraries
 ([BeanShell](BeanShell_Scripting "wikilink"),
 [IJM](Introduction_into_Macro_Programming "wikilink") and
 [Python](Jython_Scripting "wikilink"), etc.) that can be shared across
@@ -278,9 +370,12 @@ lib = new BARlib();
 lib.confirmLoading();
 ```
 
-Run it in the [Script Editor](Script_Editor "wikilink") (), and you
-should be greeted by a *"BAR lib successfully loaded"* message. Further
-details are provided on the  and on the documentation of the
+Run it in the [Script Editor](Script_Editor "wikilink") ({% include bc
+content="File|New|Script..." %}), and you should be greeted by a *"BAR
+lib successfully loaded"* message. Further details are provided on the
+{% include GitHub
+content="org=tferr|repo=Scripts|path=/lib\#lib|label=GitHub lib page" %}
+and on the documentation of the
 [bar.Utils](http://tferr.github.io/Scripts/apidocs/index.html?bar/Utils.html)
 class.
 
@@ -299,11 +394,15 @@ different languages and perform the following operations:
     files are overwritten
 
 Typically each of these tasks is handled by separated functions so only
-the function processing single files needs to be edited. In the  and 
-implementation, this processing function is called `myRoutines()`. Note
-that when editing `myRoutines()` we do not need to worry about opening,
-closing or saving the image without overriding the original file,
-because those tasks are already performed by other functions.
+the function processing single files needs to be edited. In the {%
+include GitHub
+content="org=tferr|repo=Scripts|path=Snippets/Process\_Folder\_PY.py|label=Python"
+%} and {% include GitHub
+content="org=tferr|repo=Scripts|path=Snippets/Process\_Folder\_IJM.ijm|label=IJM"
+%} implementation, this processing function is called `myRoutines()`.
+Note that when editing `myRoutines()` we do not need to worry about
+opening, closing or saving the image without overriding the original
+file, because those tasks are already performed by other functions.
 <span id="ProcessingFunction">
 
 #### Processing Functions
@@ -316,7 +415,9 @@ a common [BAR lib](#lib "wikilink") file.
 
 IJM example, running a macro and a python script in the *Snippets/*
 (another [example below](#IJMlib "wikilink") exemplifies how to call a
-macro function from ):
+macro function from {% include GitHub
+content="org=tferr|repo=Scripts|path=lib/BARlib.ijm|label=BARlib.ijm"
+%}):
 
 ``` java
 function myRoutines() {
@@ -327,9 +428,14 @@ function myRoutines() {
 ```
 
 Jython example, demonstrating how to 1) load [BAR lib](#lib "wikilink")
-(in this case , using code generated by
+(in this case {% include GitHub
+content="org=tferr|repo=Scripts|path=lib/BARlib.py|label=BARlib.py" %},
+using code generated by
 <span style="border-bottom:1px dotted #ccc;">Bar▷ Snippets▷ New
-Snippet...</span>) and 2) how to run a Snippet (in this case ):
+Snippet...</span>) and 2) how to run a Snippet (in this case {% include
+GitHub
+content="org=tferr|repo=Scripts|path=Snippets/Median\_Filter.py|label=Median\_Filter.py"
+%}):
 
 ``` python
 def myRoutines():
@@ -349,15 +455,43 @@ def myRoutines():
     PythonInterpreter().execfile(script)
 ```
 
+{% include Tip content="id = BuiltinProcessor | tip = Note also that
+there is an [easier](Batch_Processing#Easy_option "wikilink") (but less
+flexible) way to [batch process](Batch_Processing "wikilink") a folder:
+The built-in <span style="border-bottom:1px dotted #ccc;">Process▷
+Batch▷ Macro...</span>
+[command](Batch_Processing#Easy_option "wikilink").
+
+In this case, you only need to paste the contents of your `myRoutines()`
+function into the text area of the command. However, by default,
+<span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷
+Macro...</span> assumes you want to process *all* the files in a
+directory. If that is not the case, i.e., you want to restrict the
+processing to certain file types, you will have to use
+[regex](wikipedia:Regular_expression "wikilink") to instruct the
+built-in command on the file extensions to be considered (see
+[Commander](#Commander "wikilink")'s built-in help for several regex
+examples). E.g., typing the following in the *File name contains* field
+of <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷
+Macro...</span>, would restrict processing to `.tif`, `.stk` and `.oib`
+files (the default extensions specified in the `validExtension()`
+function of 
+
 ### Example: Batch Randomization of Filenames
 
-The default task of both the Python and IJM implementation of  *Process
-Folder* scripts is filename randomization: 1) They copy images from one
-folder to another, 2) Rename their filenames using a random string and
-3) Log changes to a CSV table (so that id of randomized filename can be
-traced back to the original file). This approach allows for blind
-analyses of datasets that are sensitive to user interpretation. Below
-are the descriptions of  and .
+The default task of both the Python and IJM implementation of {% include
+GitHub
+content="org=tferr|repo=Scripts|path=Snippets/README.md\#batch-processors|label=BAR"
+%} *Process Folder* scripts is filename randomization: 1) They copy
+images from one folder to another, 2) Rename their filenames using a
+random string and 3) Log changes to a CSV table (so that id of
+randomized filename can be traced back to the original file). This
+approach allows for blind analyses of datasets that are sensitive to
+user interpretation. Below are the descriptions of {% include GitHub
+content="org=tferr|repo=Scripts|path=Snippets/Process\_Folder\_PY.py|label=Process\_Folder\_PY.py"
+%} and {% include GitHub
+content="org=tferr|repo=Scripts|path=Snippets/Process\_Folder\_IJM.ijm|label=Process\_Folder\_IJM.ijm"
+%}.
 
 ##### Python
 
@@ -382,8 +516,9 @@ use that string to rename the image using the
 setTitle()\] method in `ij.ImagePlus`.
 
 But because [BAR libs](#lib "wikilink") already contain such a function,
-we can just call the `randomString()` function in , after loading the
-file:
+we can just call the `randomString()` function in {% include GitHub
+content="org=tferr|repo=Scripts|path=lib/BARlib.py|label=BARlib.py" %},
+after loading the file:
 
 ``` python
 def myRoutines(image):
@@ -438,7 +573,12 @@ processed:
 csvWriter.writerow([old_filename, new_filename])
 ```
 
-Visit the  to check how the assembled script () .
+Visit the {% include GitHub content="org=tferr|repo=Scripts|label=BAR
+repository" %} to check how the assembled script ({% include GitHub
+content="org=tferr|repo=Scripts|path=Snippets/Process\_Folder\_PY.py?raw=true|label=Process\_Folder\_PY.py"
+%}) {% include GitHub
+content="org=tferr|repo=Scripts|path=Snippets/Process\_Folder\_PY.py|label=looks
+like" %}.
 
 #### IJ Macro Language
 
@@ -473,11 +613,13 @@ be trivial. Typically, it will require access to an
 [IDE](IDE "wikilink") and some Java experience. So what about writing an
 ad-hoc function?
 
-The approach used in  is the following: 1) Take a template string
-containing the characters A-Z and digits 0-9; 2) Pick a random position
-between the first and last character of the string template. Extract the
-character at that position; 3) Repeat the last step several times,
-assembling extracted characters into a concatenated string:
+The approach used in {% include GitHub
+content="org=tferr|repo=Scripts|path=Snippets/Process\_Folder\_IJM.ijm|label=Process\_Folder\_IJM.ijm"
+%} is the following: 1) Take a template string containing the characters
+A-Z and digits 0-9; 2) Pick a random position between the first and last
+character of the string template. Extract the character at that
+position; 3) Repeat the last step several times, assembling extracted
+characters into a concatenated string:
 
 ``` java
 function randomString() {
@@ -521,7 +663,9 @@ function randomString(length, spacers) {
 As such, calling `randomString(50, true)` would produce e.g.,
 `E_ZXTQO_8E9XM_45WG7_8S39`. As with the [Python](#Python "wikilink")
 implementation, we could also use [BAR lib](#lib "wikilink") (in this
-case ). First, we need to load the file [before running our
+case {% include GitHub
+content="org=tferr|repo=Scripts|path=lib/BARlib.ijm|label=BARlib.ijm"
+%}). First, we need to load the file [before running our
 macro](#faq:ijm-lib "wikilink"), using the code generated by
 <span style="border-bottom:1px dotted #ccc;">Bar▷ Snippets▷ New
 Snippet</span>:<span id="IJMlib"></span>
@@ -545,7 +689,9 @@ Now that we are capable of generating a random filename, we just need to
 monitor filename changes. We could use the
 [print()](http://imagej.nih.gov/ij/developer/macro/functions.html#print)
 function (that outputs to the Log window), or create a two-column table
-describing the changes. Here is how the final  looks like:
+describing the changes. Here is how the final {% include GitHub
+content="org=tferr|repo=Scripts|path=Snippets/Process\_Folder\_IJM.ijm|label=Process\_Folder\_IJM.ijm"
+%} looks like:
 
 ``` java
 function myRoutines() {
@@ -578,16 +724,19 @@ function myRoutines() {
 
 <!-- end list -->
 
-  - Will I find BAR useful?
-    
-    . But it is likely that you will need to delve a bit into the [BAR
+  - Will I find BAR useful?  
+    {% include GitHub
+    content="org=tferr|repo=Scripts|path=README.md\#citations|label=Probably"
+    %}. But it is likely that you will need to delve a bit into the [BAR
     philosophy](#Scripting_BARs "wikilink").
 
 <!-- end list -->
 
   - Can I contribute to BAR?  
     Yes, please do\! If you have some suggestions on how to improve it,
-    do .
+    do {% include GitHub
+    content="org=tferr|repo=Scripts|path=README.md\#help|label=let us
+    know" %}.
 
 <!-- end list -->
 
@@ -598,7 +747,9 @@ function myRoutines() {
     Open the script by holding  while selecting it from the
     <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu, press
     *Run* and have a look at the editors' s console, where all sort of
-    useful messages will be printed to. Do  if you have found a bug.
+    useful messages will be printed to. Do {% include GitHub
+    content="org=tferr|repo=Scripts|path=README.md\#help|label=let us
+    know" %} if you have found a bug.
 
 <!-- end list -->
 
@@ -607,20 +758,23 @@ function myRoutines() {
     Flavors](ImageJ#Flavors "wikilink") if you have doubts about
     existing ImageJ distributions) will only register scripts saved in
     the *plugins/* folder or on one of its immediate subfolders. For
-    this reason, some of the  submenus will appear as empty, and it may
-    not be possible to navigate the *BAR/* directory using menu commands
+    this reason, some of the {% include bc content="BAR|" %} submenus
+    will appear as empty, and it may not be possible to navigate the
+    *BAR/* directory using menu commands
     ([Commander](#Commander "wikilink") could still be used,
     nevertheless). Another important aspect is that, without access to
     the [built-in updater](Update_Fiji "wikilink"), you will have to
-    manually update BAR (by monitoring its ), and to manually install
-    (and update) the dependencies (i.e., third-party plugins and
-    third-party libraries) used by BAR).
+    manually update BAR (by monitoring its {% include GitHub
+    content="org=tferr|repo=Scripts/releases|label=rpository" %}), and
+    to manually install (and update) the dependencies (i.e., third-party
+    plugins and third-party libraries) used by BAR).
 
 <!-- end list -->
 
   - How do I uninstall BAR?  
-    Run the [Updater](Fiji_Updater "wikilink") (). Choose *Advance Mode*
-    then *Manage update sites*. Deactivate the *BAR* checkbox in the
+    Run the [Updater](Fiji_Updater "wikilink") ({% include bc
+    content="Help|Update..." %}). Choose *Advance Mode* then *Manage
+    update sites*. Deactivate the *BAR* checkbox in the
     alphabetically-sorted list of update sites. Press *OK*, then *Apply
     changes*. All BAR files will be deleted. Note that you can install
     and uninstall BAR as you see fit. See [How to follow a 3rd party

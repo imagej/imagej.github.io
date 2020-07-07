@@ -8,38 +8,41 @@ categories: Cookbook,Tutorials
 description: test description
 ---
 
-This book is an analysis-oriented introduction and user guide to ImageJ.
-It is inspired by the defunct [MBF "ImageJ for microscopy"
-manual](MBF_Plugin_Collection "wikilink") which went offline in November
-2012, and it describes many of the same plugins from that distribution.
+%Replace% CookbookMenu %Replace% This book is an analysis-oriented
+introduction and user guide to ImageJ. It is inspired by the defunct
+[MBF "ImageJ for microscopy" manual](MBF_Plugin_Collection "wikilink")
+which went offline in November 2012, and it describes many of the same
+plugins from that distribution.
 
 Cooks call them *recipes*, biologists *protocols*, and programmers call
 them *HOWTOs*. No matter how you refer to them, you'll find the book
 topics in the sidebar to the right\!
 
 Like the rest of this wiki, this Cookbook is a community project. Please
-feel welcome to edit and expand the material here\! 
+feel welcome to edit and expand the material here\! %Replace% TOC
+%Replace%
 
 ## Installing ImageJ
 
 The Cookbook is based on the [Fiji](Fiji "wikilink") distribution of
-ImageJ. 
+ImageJ. %Replace% DownloadFiji %Replace%
 
 ## Installing the Cookbook plugins
 
-|                                                          |                                                                                        |
-| -------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| From the Fiji menu, select                               | ![1\_Update\_Fiji.png](1_Update_Fiji.png "1_Update_Fiji.png")                          |
-| Click the **Manage update sites** button                 | ![2\_Manage\_update\_sites.png](2_Manage_update_sites.png "2_Manage_update_sites.png") |
-| Check the **Cookbook** update site                       | ![3\_Enable\_cookbook.png](3_Enable_cookbook.png "3_Enable_cookbook.png")              |
-| Close the **Manage update sites** dialog                 |                                                                                        |
-| Click **Apply changes** to download the Cookbook plugins | ![4\_Apply\_changes.png](4_Apply_changes.png "4_Apply_changes.png")                    |
-| Restart Fiji to complete the plugin installation         |                                                                                        |
-| Enjoy your new plugins from the **Cookbook** menu\!      | ![5\_Use\_the\_Cookbook.png](5_Use_the_Cookbook.png "5_Use_the_Cookbook.png")          |
+|                                                                        |                                                                                        |
+| ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| From the Fiji menu, select {% include bc content="Help | Update..." %} | ![1\_Update\_Fiji.png](1_Update_Fiji.png "1_Update_Fiji.png")                          |
+| Click the **Manage update sites** button                               | ![2\_Manage\_update\_sites.png](2_Manage_update_sites.png "2_Manage_update_sites.png") |
+| Check the **Cookbook** update site                                     | ![3\_Enable\_cookbook.png](3_Enable_cookbook.png "3_Enable_cookbook.png")              |
+| Close the **Manage update sites** dialog                               |                                                                                        |
+| Click **Apply changes** to download the Cookbook plugins               | ![4\_Apply\_changes.png](4_Apply_changes.png "4_Apply_changes.png")                    |
+| Restart Fiji to complete the plugin installation                       |                                                                                        |
+| Enjoy your new plugins from the **Cookbook** menu\!                    | ![5\_Use\_the\_Cookbook.png](5_Use_the_Cookbook.png "5_Use_the_Cookbook.png")          |
 
 ## Source
 
-The source code is .
+The source code is {% include GitHub
+content="org=fiji|repo=cookbook|label=on GitHub" %}.
 
 ## Credits
 
@@ -49,19 +52,17 @@ created by Tony Collins.
 
 The Cookbook technical writer team includes:
 
-  - (technical oversight and maintenance)
-
-  - (January 2014 - May 2015)
-
-  - (June 2013 - November 2014)
-
-  - (June 2013 - December 2013)
-
-  - (June 2013 - December 2013)
-
-  - (November 2013 - December 2013)
-
-  - (June 2013 - August 2013)
+  - {% include Person content="Rueden" %} (technical oversight and
+    maintenance)
+  - {% include Person content="Apal4" %} (January 2014 - May 2015)
+  - {% include Person content="Schindelin" %} (June 2013 - November
+    2014)
+  - {% include Person content="Khildebrand" %} (June 2013 - December
+    2013)
+  - {% include Person content="Amacall" %} (June 2013 - December 2013)
+  - {% include Person content="Ruizhi" %} (November 2013 - December
+    2013)
+  - {% include Person content="Gtcwildfire" %} (June 2013 - August 2013)
 
 The plugins featured in the Cookbook were collated from various sources
 and have various authors and licenses.

@@ -8,8 +8,9 @@ categories:
 description: test description
 ---
 
-The community encourages discussion about proposed changes on ImageJ's
-[communication](communication "wikilink") channels. Submit your ideas\!
+%Replace% AboutMenu %Replace% The community encourages discussion about
+proposed changes on ImageJ's [communication](communication "wikilink")
+channels. Submit your ideas\!
 
 Start on the [forum](forum "wikilink"), searching for discussions
 related to your contribution to get some context & background. It can
@@ -55,12 +56,12 @@ would be more applicable to one of the supporting technologies such as
 
 ## ImageJ1
 
-Changes to [ImageJ1](ImageJ1 "wikilink") are made by , who is the sole
-[ImageJ1](ImageJ1 "wikilink") developer. He takes patch submissions and
-then reworks them to fit within the project's development model and
-style before merging them. Attribution for the changes is noted in the
-release notes (see [ImageJ1's Release
-Notes/News](https://imagej.net/notes.html)).
+Changes to [ImageJ1](ImageJ1 "wikilink") are made by {% include Person
+content="Rasband" %}, who is the sole [ImageJ1](ImageJ1 "wikilink")
+developer. He takes patch submissions and then reworks them to fit
+within the project's development model and style before merging them.
+Attribution for the changes is noted in the release notes (see
+[ImageJ1's Release Notes/News](https://imagej.net/notes.html)).
 
 Methods of getting the patch to Wayne include:
 
@@ -72,8 +73,9 @@ Methods of getting the patch to Wayne include:
     revision](https://github.com/imagej/imagej1/commit/master) and must
     not use any Git extension because Wayne uses `patch(1)` to apply the
     patch.
-  - Submit a pull request on GitHub against . Please note, though, that
-    none of [the past Pull
+  - Submit a pull request on GitHub against {% include GitHub
+    content="org=imagej|repo=imagej1|label=the ImageJ1 repository" %}.
+    Please note, though, that none of [the past Pull
     Requests](https://github.com/imagej/imagej1/pulls?q=is%3Apr+is%3Aclosed)
     were merged using the standard Git workflow.
 

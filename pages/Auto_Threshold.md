@@ -20,7 +20,9 @@ Threshold](Auto_Local_Threshold "wikilink") plugin.
 **ImageJ**: requires v1.42m or newer. Download
 [Auto\_Threshold-X.Y.Z.jar](http://maven.imagej.net/service/local/artifact/maven/redirect?r=releases&g=sc.fiji&a=Auto_Threshold&v=RELEASE&e=jar)
 and copy it into the ImageJ/plugins folder and either restart ImageJ or
-run the '' command. After this a new command should appear in ''.
+run the '{% include bc content="Help | Update Menus" %}' command. After
+this a new command should appear in '{% include bc content="Image |
+Adjust | Auto Threshold" %}'.
 
 **Fiji**: this plugin is part of the Fiji distribution, there is no need
 to download it.
@@ -52,16 +54,17 @@ above automatically.
 
 **Important notes:**
 
-**1.** This plugin is accessed through the  menu entry, however the
-thresholding methods were also partially implemented in ImageJ's
-thresholder applet accessible through the  menu entry. While the Auto
-Threshold plugin can use or ignore the extremes of the image histogram
-(Ignore black, Ignore white) the applet cannot: the 'default' method
-ignores the histogram extremes but the others methods do not. This means
-that applying the two commands to the same image can produce apparently
-different results. In essence, the Auto Threshold plugin, with the
-correct settings, can reproduce the results of the applet, but not the
-way round.
+**1.** This plugin is accessed through the {% include bc content="Image
+| Auto Threshold" %} menu entry, however the thresholding methods were
+also partially implemented in ImageJ's thresholder applet accessible
+through the {% include bc content="Image | Adjust | Threshold..." %}
+menu entry. While the Auto Threshold plugin can use or ignore the
+extremes of the image histogram (Ignore black, Ignore white) the applet
+cannot: the 'default' method ignores the histogram extremes but the
+others methods do not. This means that applying the two commands to the
+same image can produce apparently different results. In essence, the
+Auto Threshold plugin, with the correct settings, can reproduce the
+results of the applet, but not the way round.
 
 **2.** From version 1.12 the plugin supports thresholding of 16-bit
 images. Since the Auto Threshold plugin processes the full greyscale
@@ -136,18 +139,25 @@ log window.
 
 This is the original method of auto thresholding available in ImageJ,
 which is a variation of the IsoData algorithm (described below). The
-**Default** option should return the same values as the '', when
-selecting **Ignore black** and **Ignore white**. To indicate
-segmentation of the desired phase, use the **White objects on black
-background** option. The IsoData method is also known as *iterative
-intermeans*.
+**Default** option should return the same values as the '{% include bc
+content="Image | Adjust | Threshold | Auto" %}', when selecting **Ignore
+black** and **Ignore white**. To indicate segmentation of the desired
+phase, use the **White objects on black background** option. The IsoData
+method is also known as *iterative intermeans*.
 
 ### Huang
 
 Implements Huang's fuzzy thresholding method. This uses Shannon's
 entropy function (one can also use Yager's entropy function).
 
-  - 
+  - {% include Citation content="last = Huang
+
+| first = L-K | last2 = Wang | first2 = M-J J | year = 1995 | journal =
+Pattern Recognition | url =
+<http://www.ktl.elf.stuba.sk/study/vacso/Zadania-Cvicenia/Cvicenie_3/TimA2/Huang_E016529624.pdf>
+| Image thresholding by minimizing the measure of fuzziness | volume =
+28(1) | pages = 41-51 " %}
+
 Ported from ME Celebi's fourier\_0.8 routines
 [1](http://sourceforge.net/projects/fourier-ipal) and
 [2](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
@@ -167,7 +177,13 @@ maxima: j and k. The threshold t is then computed as (j+k)/2. Images
 with histograms having extremely unequal peaks or a broad and ﬂat valley
 are unsuitable for this method. method
 
-  - 
+  - {% include Citation content="last = Prewitt
+
+| first = JMS | last2 = Mendelsohn | first2 = ML | year = 1966 | journal
+= Annals of the New York Academy of Sciences | url =
+<http://www3.interscience.wiley.com/journal/119758871/abstract?CRETRY=1&SRETRY=0>
+| The analysis of cell images | volume = 128 | pages = 1035-1053 " %}
+
 Ported from Antti Niemistö's [MATLAB](MATLAB "wikilink") code. See
 [here](https://github.com/carandraug/histthresh) for an excellent slide
 presentation and his original [MATLAB](MATLAB "wikilink") code.
@@ -176,7 +192,14 @@ presentation and his original [MATLAB](MATLAB "wikilink") code.
 
 Iterative procedure based on the isodata algorithm of:
 
-  - 
+  - {% include Citation content="last = Ridler
+
+| first = TW | last2 = Calvard | first2 = S | year = 1978 | journal =
+IEEE Transactions on Systems, Man and Cybernetics | url =
+<http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4310039> | Picture
+thresholding using an iterative selection method | volume = 8 | pages =
+630-632 " %}
+
 The procedure divides the image into object and background by taking an
 initial threshold, then the averages of the pixels at or below the
 threshold and pixels above are computed. The averages of those two
@@ -194,13 +217,26 @@ further comments.
 Implements Li's Minimum Cross Entropy thresholding method based on the
 iterative version (2nd reference below) of the algorithm.
 
-  - 
-<!-- end list -->
+  - {% include Citation content="last = Li
 
-  - 
-<!-- end list -->
+| first = CH | last2 = Lee | first2 = CK | year = 1993 | journal =
+Pattern Recognition | Minimum Cross Entropy Thresholding | volume =
+26(4) | pages = 617-625 " %}
 
-  - 
+  - {% include Citation content="last = Li
+
+| first = CH | last2 = Tam | first2 = PKS | year = 1998 | journal =
+Pattern Recognition Letters | An Iterative Algorithm for Minimum Cross
+Entropy Thresholding | volume = 18(8) | pages = 771-776 " %}
+
+  - {% include Citation content="last = Sezgin
+
+| first = M | last2 = Sankur | first2 = B | year = 2004 | journal =
+Journal of Electronic Imaging | Survey over Image Thresholding
+Techniques and Quantitative Performance Evaluation | volume = 13(1) |
+pages = 146-165 | url =
+<http://citeseer.ist.psu.edu/sezgin04survey.html> " %}
+
 Ported from ME Celebi's fourier\_0.8 routines
 [3](http://sourceforge.net/projects/fourier-ipal) and
 [4](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
@@ -209,7 +245,13 @@ Ported from ME Celebi's fourier\_0.8 routines
 
 Implements Kapur-Sahoo-Wong (Maximum Entropy) thresholding method:
 
-  - 
+  - {% include Citation content="last = Kapur
+
+| first = JN | last2 = Sahoo | first2 = PK | last3 = Wong | first3 = ACK
+| year = 1985 | journal = Graphical Models and Image Processing | A New
+Method for Gray-Level Picture Thresholding Using the Entropy of the
+Histogram | volume = 29(3) | pages = 273-285 " %}
+
 Ported from ME Celebi's fourier\_0.8 routines
 [5](http://sourceforge.net/projects/fourier-ipal) and
 [6](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
@@ -219,7 +261,12 @@ Ported from ME Celebi's fourier\_0.8 routines
 Uses the mean of grey levels as the threshold. It is used by some other
 methods as a first guess threshold.
 
-  - 
+  - {% include Citation content="last = Glasbey
+
+| first = CA | year = 1993 | journal = CVGIP: Graphical Models and Image
+Processing | An analysis of histogram-based thresholding algorithms |
+volume = 55 | pages = 532-537 " %}
+
 ### MinError(I)
 
 An iterative implementation of Kittler and Illingworth's Minimum Error
@@ -232,10 +279,13 @@ defaults to the initial estimate of the threshold which is computed
 using the Mean method. The **Ignore black** or **Ignore white** options
 might help to avoid this problem.
 
-  - 
-Ported from Antti Niemistö's [MATLAB](MATLAB "wikilink") code. See
-[here](http://www.cs.tut.fi/~ant/histthresh/) for an excellent slide
-presentation and the original [MATLAB](MATLAB "wikilink") code.
+  - {% include Citation content="last = Kittler
+
+| first = J | last2 = Illingworth | first2 = J | year = 1986 | journal =
+Pattern Recognition | Minimum error thresholding | volume = 19 | pages =
+41-47 " %} Ported from Antti Niemistö's [MATLAB](MATLAB "wikilink")
+code. See [here](http://www.cs.tut.fi/~ant/histthresh/) for an excellent
+slide presentation and the original [MATLAB](MATLAB "wikilink") code.
 
 ### Minimum
 
@@ -247,7 +297,13 @@ until there are only two local maxima. The threshold t is such that yt−1
 Images with histograms having extremely unequal peaks or a broad and ﬂat
 valley are unsuitable for this method.
 
-  - 
+  - {% include Citation content="last = Prewitt
+
+| first = JMS | last2 = Mendelsohn | first2 = ML | year = 1966 | journal
+= Annals of the New York Academy of Sciences | url =
+<http://www3.interscience.wiley.com/journal/119758871/abstract?CRETRY=1&SRETRY=0>
+| The analysis of cell images | volume = 128 | pages = 1035-1053 " %}
+
 Ported from Antti Niemistö's [MATLAB](MATLAB "wikilink") code. See
 [here](http://www.cs.tut.fi/~ant/histthresh/) for an excellent slide
 presentation and the original [MATLAB](MATLAB "wikilink") code.
@@ -257,7 +313,13 @@ presentation and the original [MATLAB](MATLAB "wikilink") code.
 Tsai's method attempts to preserve the moments of the original image in
 the thresholded result.
 
-  - 
+  - {% include Citation content="last = Tsai
+
+| first = W | year = 1985 | journal = Computer Vision, Graphics, and
+Image Processing | url = <http://portal.acm.org/citation.cfm?id=201578>
+| Moment-preserving thresholding: a new approach | volume = 29 | pages =
+377-393 " %}
+
 Ported from ME Celebi's fourier\_0.8 routines
 [7](http://sourceforge.net/projects/fourier-ipal) and
 [8](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
@@ -268,7 +330,13 @@ Otsu's threshold clustering algorithm searches for the threshold that
 minimizes the intra-class variance, defined as a weighted sum of
 variances of the two classes.
 
-  - 
+  - {% include Citation content="last = Otsu
+
+| first = N | year = 1979 | journal = IEEE Trans. Sys., Man., Cyber. |
+url = <http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?&arnumber=4310076>
+| A threshold selection method from gray-level histograms | volume = 9 |
+pages = 62-66 | doi = 10.1109/TSMC.1979.4310076 " %}
+
 See also the [Wikipedia article on Otsu's
 method](wikipedia:Otsu's_method "wikilink").
 
@@ -278,7 +346,14 @@ Ported from C++ code by Jordan Bevik.
 
 Assumes the fraction of foreground pixels to be 0.5.
 
-  - 
+  - {% include Citation content="last = Doyle
+
+| first = W | year = 1962 | journal = Journal of the Association for
+Computing Machinery | url =
+<http://portal.acm.org/citation.cfm?id=321119.321123> | Operation useful
+for similarity-invariant pattern recognition | volume = 9 | pages =
+259-267 | doi = 10.1145/321119.321123 " %}
+
 Ported from Antti Niemistö's [MATLAB](MATLAB "wikilink") code. See
 [here](http://www.cs.tut.fi/~ant/histthresh/) for an excellent slide
 presentation and the original [MATLAB](MATLAB "wikilink") code.
@@ -287,7 +362,13 @@ presentation and the original [MATLAB](MATLAB "wikilink") code.
 
 Similar to the **MaxEntropy** method, but using Renyi's entropy instead.
 
-  - 
+  - {% include Citation content="last = Kapur
+
+| first = JN | last2 = Sahoo | first2 = PK | last3 = Wong | first3 = ACK
+| year = 1985 | journal = Graphical Models and Image Processing | A New
+Method for Gray-Level Picture Thresholding Using the Entropy of the
+Histogram | volume = 29(3) | pages = 273-285 " %}
+
 Ported from ME Celebi's fourier\_0.8 routines
 [9](http://sourceforge.net/projects/fourier-ipal) and
 [10](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
@@ -302,7 +383,13 @@ Ported from ME Celebi's fourier\_0.8 routines
 
 This is an implementation of the Triangle method:
 
-  - 
+  - {% include Citation content="author=Zack GW, Rogers WE, Latt SA
+
+|title=Automatic measurement of sister chromatid exchange frequency
+|journal=J. Histochem. Cytochem. |volume=25 |issue=7 |pages=741–53
+|year=1977 |month=July |pmid=70454 |doi=
+|url=<http://www.jhc.org/cgi/pmidlookup?view=long&pmid=70454> " %}
+
 Modified from Johannes Schindelin's plugin
 [Triangle\_Algorithm](http://wbgn013.biozentrum.uni-wuerzburg.de/ImageJ/triangle-algorithm.html).
 
@@ -323,10 +410,22 @@ within that largest range.
 
 Implements Yen's thresholding method from:
 
-  - 
-<!-- end list -->
+  - {% include Citation content="author = Yen JC, Chang FJ, Chang S
 
-  - 
+| A New Criterion for Automatic Multilevel Thresholding | journal = IEEE
+Trans. on Image Processing | volume = 4 | issue = 3 | pages = 370-378 |
+year = 1995 | doi = 10.1109/83.366472 |
+url=<http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=366472> |
+issn = 1057-7149 " %}
+
+  - {% include Citation content="last = Sezgin
+
+| first = M | last2 = Sankur | first2 = B | year = 2004 | journal =
+Journal of Electronic Imaging | Survey over Image Thresholding
+Techniques and Quantitative Performance Evaluation | volume = 13(1) |
+pages = 146-165 | url =
+<http://citeseer.ist.psu.edu/sezgin04survey.html> " %}
+
 Ported from ME Celebi's fourier\_0.8 routines
 [13](http://sourceforge.net/projects/fourier-ipal) and
 [14](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).

@@ -8,9 +8,10 @@ categories: Development,IDEs
 description: test description
 ---
 
-This article explains how to install, configure and use Eclipse to
-develop [ImageJ](ImageJ "wikilink") [components](components "wikilink")
-and [plugins](plugins "wikilink"). Directions correspond to Eclipse 4.4
+{% include DevelopMenu content="tutorials" %}This article explains how
+to install, configure and use Eclipse to develop
+[ImageJ](ImageJ "wikilink") [components](components "wikilink") and
+[plugins](plugins "wikilink"). Directions correspond to Eclipse 4.4
 Luna, and may need adjustment for other versions.
 
 # Initial setup
@@ -27,7 +28,10 @@ Luna, and may need adjustment for other versions.
   - Download "Eclipse IDE for Java Developers" from the [Eclipse web
     site](http://www.eclipse.org/downloads/).
 
-<!-- end list -->
+{% include warning-box content="It is **important** to choose "Eclipse
+IDE for Java Developers" because it contains Maven support built-in.
+Otherwise, you will have to [install the M2E plugin
+manually](http://eclipse.org/m2e/)." %}
 
   - Unpack the archive to a location of your choice.
 
@@ -55,8 +59,8 @@ specify the proper JDK. Then save the file and quit Wordpad.
 Now update Eclipse's JRE to be JDK-aware:
 
   - Launch Eclipse
-  - From the menu choose 
-  - Select 
+  - From the menu choose {% include bc content="Window | Preferences" %}
+  - Select {% include bc content="Java | Installed JREs" %}
   - Click Search..., navigate to your JDK installation folder (e.g.,
     **`C:\Program Files\Java\jdk1.8.0_11`**) and click OK
   - Check the box next to the JRE that appears and click OK
@@ -105,7 +109,8 @@ clone the source code which interests you:
 
 ## Import the source code
 
-1.  Choose  from the Eclipse menu
+1.  Choose {% include bc content="File | Import" %} from the Eclipse
+    menu
 2.  Select "Existing Maven Projects" and click Next
 3.  Browse to the folder where you cloned the project source code
 4.  Click Finish
@@ -135,87 +140,36 @@ Plugin](https://www.youtube.com/watch?v=YIWpoBnnLio)
 
 ## Keyboard shortcuts
 
-On OS X, replace  with 
+On OS X, replace {% include Key content="Ctrl" %} with {% include Key
+content="Cmd" %}
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p><strong>Navigation</strong></p></td>
-</tr>
-<tr class="even">
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-</tr>
-<tr class="even">
-<td><p><strong>Editing</strong></p></td>
-</tr>
-<tr class="odd">
-<td><p>, </p></td>
-</tr>
-<tr class="even">
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-</tr>
-<tr class="even">
-<td><p><strong>Code cleanup</strong></p></td>
-</tr>
-<tr class="odd">
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>, </p></td>
-</tr>
-<tr class="even">
-<td></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Debugging</strong></p></td>
-</tr>
-<tr class="even">
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-</tr>
-</tbody>
-</table>
+|                                                                          |
+| ------------------------------------------------------------------------ |
+| **Navigation**                                                           |
+| {% include Key content="Ctrl|Shift|T" %}                                 |
+| {% include Key content="Ctrl|Shift|R" %}                                 |
+| {% include Key content="F3" %}                                           |
+| {% include Key content="Ctrl|O" %}                                       |
+| {% include Key content="Ctrl|T" %}                                       |
+| {% include Key content="Ctrl|L" %}                                       |
+| {% include Key content="Ctrl|Q" %}                                       |
+| {% include Key content="Ctrl|E" %}                                       |
+| **Editing**                                                              |
+| {% include Key content="Alt|Up" %}, {% include Key content="Alt|Down" %} |
+| {% include Key content="Ctrl|D" %}                                       |
+| {% include Key content="Ctrl|/" %}                                       |
+| {% include Key content="Ctrl|1" %}                                       |
+| {% include Key content="Ctrl|Space" %}                                   |
+| **Code cleanup**                                                         |
+| {% include Key content="Ctrl|Shift|O" %}                                 |
+| {% include Key content="Ctrl|Shift|F" %}                                 |
+| {% include Key content="Alt|Shift|S" %}, {% include Key content="U" %}   |
+| {% include Key content="Alt|Shift|R" %}                                  |
+| **Debugging**                                                            |
+| {% include Key content="Ctrl|Shift|B" %}                                 |
+| {% include Key content="F5" %}                                           |
+| {% include Key content="F6" %}                                           |
+| {% include Key content="F7" %}                                           |
 
 </div>
 
@@ -247,8 +201,9 @@ plugins is that ImageJ 1.x expects all the plugins' *.jar* files to live
 in a sub-directory *plugins/* in the ImageJ root directory. We can trick
 ImageJ by setting the property *ij.dir* to the location of the *.jar*
 file generated by m2e. The [Fiji](Fiji "wikilink") project provides a
-convenience class *fiji.Debug* in the  component which lets you do that
-without any pain:
+convenience class *fiji.Debug* in the {% include GitHub
+content="org=fiji | repo=fiji-lib | label=fiji-lib" %} component which
+lets you do that without any pain:
 
 ``` java
 import fiji.Debug; // requires fiji-lib as a dependency
@@ -328,7 +283,8 @@ make additional changes to your existing ImageJ installation.
 
 Steps are as follows:
 
-1.  Right-click your project in Eclipse and select 
+1.  Right-click your project in Eclipse and select {% include bc
+    content="Run As|Run Configurations..." %}
 2.  Scroll down to Maven Build. If you've built this project with Maven
     via Eclipse before there will already be a configuration for it.
     Otherwise you can double-click "Maven Build" to create a new run
@@ -362,12 +318,13 @@ in Fiji yet, you might want to search for the appropriate `groupId` and
 Next, you will put your Java sources into `src/main/java/` and adjust
 `src/main/resources/plugins.config`.
 
-After that, ask Eclipse to import it: .
+After that, ask Eclipse to import it: {% include bc content="File |
+Import | Maven | Import Existing Maven Project" %}.
 
 ## Viewing Dependency Source
 
-When jumping into a dependency class in Eclipse (using ), you may see a
-message stating "Source not found".
+When jumping into a dependency class in Eclipse (using {% include Key
+content="F3" %}), you may see a message stating "Source not found".
 
 For Maven dependencies there must be a `-sources` classifier JAR in the
 repository along side the main JAR. For example, `imagej-common` has an
@@ -428,7 +385,7 @@ section for more information.
 <li><a href="How_to_contribute_to_an_existing_plugin_or_library" title="wikilink">Contributing to a plugin</a></li>
 </ul></td>
 <td><ul>
-<li><p>project template</p></li>
+<li>{% include GitHub content="org=imagej|repo=example-legacy-plugin|label=example-legacy-plugin" %} project template</li>
 <li><a href="Developing_Plugins_for_ImageJ_1.x" title="wikilink">Developing Plugins for ImageJ 1.x</a></li>
 </ul></td>
 </tr>

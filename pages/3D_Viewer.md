@@ -67,7 +67,9 @@ snippets can be found
 
 ### Javadocs
 
-The Fiji Javadocs provide detailed information about the .
+The Fiji Javadocs provide detailed information about the {% include
+Javadoc content="package = ij3d | class = package-summary | label = 3D
+Viewer API" %}.
 
 ## FAQ
 
@@ -112,7 +114,8 @@ addidtional, potentially useful information.
 
 ## Publication
 
-  - 
+  - {% include Publication content="3D Viewer" %}
+
 [Category:Plugins](Category:Plugins "wikilink")
 [Category:Visualization](Category:Visualization "wikilink")
 [Category:Citable](Category:Citable "wikilink")

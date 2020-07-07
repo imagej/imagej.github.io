@@ -8,7 +8,18 @@ categories: Scripting,MATLAB,Citable
 description: test description
 ---
 
-**ImageJ-MATLAB** is an extension which:
+{% include warning-box content="Prior to MATLAB R2017b, MATLAB ships
+with Java 7, but ImageJ requires Java 8. You will need to change your
+MATLAB installation to use Java 8, by following the instructions for
+your platform:
+[Windows](http://www.mathworks.com/matlabcentral/answers/130359-how-do-i-change-the-java-virtual-machine-jvm-that-matlab-is-using-on-windows),
+[macOS](http://www.mathworks.com/matlabcentral/answers/103056-how-do-i-change-the-java-virtual-machine-jvm-that-matlab-is-using-for-mac-os)
+or
+[Linux](http://www.mathworks.com/matlabcentral/answers/130360-how-do-i-change-the-java-virtual-machine-jvm-that-matlab-is-using-for-linux-os).
+
+If you run MATLAB R2017b and later, you don't need to do this, as it
+ships and uses Java 8 already. " %} {% include Learn content="languages"
+%}**ImageJ-MATLAB** is an extension which:
 
   - Translates data between ImageJ images and MATLAB matrices.
   - Enables execution of MATLAB scripts from inside ImageJ's [Script
@@ -22,7 +33,8 @@ description: test description
 
 ## Prerequisites
 
-  - Add the  update site. See [Following an update
+  - Add the {% include ListOfUpdateSites content="ImageJ-MATLAB" %}
+    update site. See [Following an update
     site](Following_an_update_site "wikilink") for more detail.
     1.  You go to `Help > Update...`
     2.  Once checking status is done, open `Manage update sites`
@@ -140,7 +152,7 @@ Options for controlling the startup of [MATLAB](MATLAB "wikilink"), or
 killing existing [MATLAB](MATLAB "wikilink") processes (e.g. if hidden)
 can be accessed via:
 
-`  `
+`  {% include bc content="Edit | Options | MATLAB..." %}`
 
 ![MATLAB\_options.png](MATLAB_options.png "MATLAB_options.png")
 
@@ -237,9 +249,10 @@ used - even for `ans`, as shown here:
 
 ### Importing classes
 
-When running ImageJ externally, [MATLAB](MATLAB "wikilink") will not
-have ImageJ classes in its classpath - so they can not simply be
-imported. Although [MATLAB](MATLAB "wikilink") does support [editing its
+{% include ImportingClasses content="lang=MATLAB" %} When running ImageJ
+externally, [MATLAB](MATLAB "wikilink") will not have ImageJ classes in
+its classpath - so they can not simply be imported. Although
+[MATLAB](MATLAB "wikilink") does support [editing its
 classpath](http://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html)
 this is NOT recommended, as the classes loaded by
 [MATLAB](MATLAB "wikilink") will not be the same as those loaded in
@@ -252,6 +265,11 @@ supports the use of import statements to [simplify class
 names](http://www.mathworks.com/help/matlab/matlab_external/bringing-java-classes-and-methods-into-matlab-workspace.html#f46341).
 
 ## Running ImageJ within MATLAB
+
+{% include info-box content="MATLAB versions prior to R2017b need to be
+[tweaked to use
+Java 8](http://www.mathworks.com/matlabcentral/answers/130359-how-do-i-change-the-java-virtual-machine-jvm-that-matlab-is-using-on-windows)
+instead of Java 7." %}
 
 The ImageJ update site provides an `ImageJ.m` script that will start up
 an ImageJ instance inside a running [MATLAB](MATLAB "wikilink")
@@ -518,15 +536,16 @@ end
 
 #### Retrieving a MATLAB array data from an image in ImageJ
 
-Additionally, the  library also includes an extensible
-[MATLAB](MATLAB "wikilink") command framework. This allows for the
-creation of utility classes that will be automatically populated into
-[MATLAB](MATLAB "wikilink") variables for easy access. For example, you
-could use ImageJ to open a dataset and perform thresholding (or any
-other processing steps), then in [MATLAB](MATLAB "wikilink") use the
-`IJM.getDatasetAs(name)` command to set the active dataset as a
-[MATLAB](MATLAB "wikilink") matrix variable with a specified name, for
-further analysis.
+Additionally, the {% include GitHub
+content="org=scijava|repo=scripting-matlab|label=Scripting-MATLAB" %}
+library also includes an extensible [MATLAB](MATLAB "wikilink") command
+framework. This allows for the creation of utility classes that will be
+automatically populated into [MATLAB](MATLAB "wikilink") variables for
+easy access. For example, you could use ImageJ to open a dataset and
+perform thresholding (or any other processing steps), then in
+[MATLAB](MATLAB "wikilink") use the `IJM.getDatasetAs(name)` command to
+set the active dataset as a [MATLAB](MATLAB "wikilink") matrix variable
+with a specified name, for further analysis.
 
 For example, instead of using a script as [described
 above](#Creating_MATLAB_scripts_inside_ImageJ "wikilink"), we could
@@ -595,9 +614,12 @@ Image type is 32 bit. ![IJMshow\_Image006.png](IJMshow_Image006.png
 
 # Source
 
-  - provides the script engine plugins.
-
-  - defines the ImageJ-specific translators.
+  - {% include GitHub
+    content="org=scijava|repo=scripting-matlab|label=Scripting-MATLAB"
+    %} provides the script engine plugins.
+  - {% include GitHub
+    content="org=imagej|repo=imagej-matlab|label=ImageJ-MATLAB" %}
+    defines the ImageJ-specific translators.
 
 # Video presentation
 
@@ -605,7 +627,8 @@ Image type is 32 bit. ![IJMshow\_Image006.png](IJMshow_Image006.png
 
 # Publication
 
-  - 
+  - {% include Publication content="ImageJ-MATLAB" %}
+
 # See also
 
   - [Creating Imglib2 images in

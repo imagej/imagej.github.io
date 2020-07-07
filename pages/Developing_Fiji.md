@@ -8,6 +8,8 @@ categories: Development,Fiji
 description: test description
 ---
 
+%Replace% FijiMenu %Replace% %Replace% Outdated %Replace%
+
 Fiji is a community effort. So we are happy whenever we see new people
 developing Fiji\!
 
@@ -18,11 +20,11 @@ source code](https://github.com/fiji/) (i.e., the core Fiji plugins). If
 you need to develop a *new plugin* for ImageJ, you do not actually need
 Fiji's source. Rather, see these resources:
 
-  - project template
-
+  - {% include GitHub
+    content="org=imagej|repo=example-legacy-plugin|label=example-legacy-plugin"
+    %} project template
   - [Introduction into Developing
     Plugins](Introduction_into_Developing_Plugins "wikilink") tutorial
-
   - [Developing ImageJ 1.x plugins with
     NetBeans](https://www.youtube.com/watch?v=Ac-6gJ2eRb0) screencast
 

@@ -8,6 +8,8 @@ categories:
 description: test description
 ---
 
+%Replace% HelpMenu %Replace%
+
 # How to troubleshoot problems
 
 ## Checking the Java version
@@ -57,10 +59,10 @@ SciJava logging.
 
 ## The other debug mode
 
-There is another debug mode, which can be enabled in the  menu, by
-checking *Debug mode*. This might reveal different information than
-using the techniques described above. For maximum debugitude, turn on
-both\!
+There is another debug mode, which can be enabled in the {% include bc
+content="Edit | Options | Misc..." %} menu, by checking *Debug mode*.
+This might reveal different information than using the techniques
+described above. For maximum debugitude, turn on both\!
 
 ## If ImageJ freezes or hangs
 
@@ -75,9 +77,11 @@ or "stack trace".
 
 ### The easy way
 
-1.  Press + in ImageJ itself. If successful, it will open a new window
-    with the stack trace.
-2.  Press  to select it, then  to copy it to the clipboard.
+1.  Press {% include key content="Shift" %}+{% include key content="\\"
+    %} in ImageJ itself. If successful, it will open a new window with
+    the stack trace.
+2.  Press {% include key content="Ctrl|A" %} to select it, then {%
+    include key content="Ctrl|C" %} to copy it to the clipboard.
 
 ### The fallback way
 
@@ -93,19 +97,22 @@ If the first method does not work, and you can reproduce the hang:
 2.  Generate and copy the stack trace:
       - ![Osx.png](Osx.png "Osx.png") ![Tux.png](Tux.png "Tux.png") On
         non-Windows platforms:
-        1.  Press  in the console window to print the stack trace.
+        1.  Press {% include key content="Ctrl|\\" %} in the console
+            window to print the stack trace.
         2.  Select the stack trace by dragging with the left mouse
             button.
         3.  Right click and select "Copy" to copy it to the clipboard.
       - ![Win.png](Win.png "Win.png") On Windows:
-        1.  Press  in the Command Prompt window to print the stack
-            trace. (**Note:** this shortcut actually uses the [Break
+        1.  Press {% include key content="Ctrl|Pause" %} in the Command
+            Prompt window to print the stack trace. (**Note:** this
+            shortcut actually uses the [Break
             key](Wikipedia:Break_key "wikilink"))
         2.  Click the Command Prompt icon in the upper left corner of
-            the window, and choose .
+            the window, and choose {% include bc content="Edit|Mark" %}.
         3.  Select the stack trace by dragging with the left mouse
             button.
-        4.  Press  to copy it to the clipboard.
+        4.  Press {% include key content="Enter" %} to copy it to the
+            clipboard.
 
 Once you have the stack trace. you can paste it into a [bug
 report](Bugs "wikilink")\!
@@ -157,8 +164,8 @@ wish to give to ImageJ.
 If the ImageJ window never appears after launching the program, the
 installation may be corrupted. While the developers of ImageJ make a
 serious effort to prevent this problem from happening, it is still
-possible after running the  command, due to bugs in the
-[Updater](Updater "wikilink").
+possible after running the {% include bc content="Help | Update..." %}
+command, due to bugs in the [Updater](Updater "wikilink").
 
 The easiest workaround is to [download](download "wikilink") a fresh
 copy of the software.
@@ -189,7 +196,8 @@ a 12-bit camera, the largest possible intensity value is 4095—but with 0
 mapped to black and 65535 mapped to white, 4095 ends up (linearly)
 mapped to a very very dark gray, nearly invisible to the human eye.
 
-You can fix this by clicking on  and hitting the *Auto* button.
+You can fix this by clicking on {% include bc content="Image | Adjust |
+Brightness/Contrast..." %} and hitting the *Auto* button.
 
 You can verify whether the actual data is there by moving the mouse over
 the image, and looking at the pixel probe output in the [status bar area
@@ -229,19 +237,18 @@ is: it maps the darkest actual intensity in your data to black, and the
 brightest actual intensity in your data to white. You can override this
 mapping using the
 [Brightness/Contrast](https://imagej.net/docs/guide/146-28.html#sub:Adjust)
-dialog under the  menu (shortcut: +).
+dialog under the {% include bc content="Image | Adjust" %} menu
+(shortcut: {% include Key content="shift" %}+{% include Key content="C"
+%}).
 
 Alternately, to disable autoscaling during initial import, you can use
 the [Bio-Formats](Bio-Formats "wikilink") plugin to import your data
 with the "Autoscale" option turned off:
 
-  - 
+  - {% include bc content="File | Import | Bio-Formats" %}
   - Choose your file
-
   - Uncheck the "Autoscale" box
-
   - Click OK
-
   - The data will be scaled to match the maximum of the bit depth,
     rather than autoscaled.
 
@@ -281,20 +288,19 @@ following:
         numerical results, it is a bug—please [report
         it](Report_a_Bug "wikilink")\!
   - Ensure that the *options* of ImageJ match between the machines.
-      - A fast way to ensure this is the  command, which resets
-        everything to its default state.
-    
+      - A fast way to ensure this is the {% include bc content="Edit |
+        Options | Reset..." %} command, which resets everything to its
+        default state.
       - Alternately, you can check the settings in the following dialog
         boxes:
-        
-          - All  dialog boxes
-    
-      - – a very common culprit of black-vs.-white issues is the "Black
+          - All {% include bc content="Edit | Options" %} dialog boxes
+      - {% include bc content="Process | Binary | Options..." %} – a
+        very common culprit of black-vs.-white issues is the "Black
         background" option.
-    
-      - 
-      - 
-      - 
+      - {% include bc content="Process | FFT | FFT Options..." %}
+      - {% include bc content="Image | Overlay | Overlay Options..." %}
+      - {% include bc content="Analyze | Gels | Gel Analyzer Options..."
+        %}
       - Press L for the [Command Finder](Command_Finder "wikilink") and
         type "options" and double check any other options you think
         might be relevant.
@@ -311,17 +317,51 @@ following:
 
 ## OutOfMemoryError
 
-The error means ImageJ ran out of available [computer
+{% include sidebox-right content="float=right | **Why does ImageJ not
+release any memory back to the system?**
+
+This is a characteristic of the Java runtime. In many cases, Java
+*never* releases memory back to the system, so memory monitors such as
+Windows Task Manager will always report an ever-growing amount of RAM
+used by the Java process, until the JVM shuts down.
+
+The best way to monitor ImageJ's actual memory usage is to run the
+[Monitor
+Memory...](https://imagej.net/docs/guide/146-31.html#toc-Subsubsection-31.3.5)
+command. You can also click on the ImageJ [status
+bar](status_bar "wikilink") to trigger a garbage collection operation,
+which will typically decrease the memory use.
+
+That said, some articles suggest that you can cause Java to give back
+free memory to the OS under certain conditions; see:
+
+  - [Java still uses system memory after deallocation of objects and
+    garbage collection](http://stackoverflow.com/q/324499)
+  - [java.exe process uses more memory and does not free it
+    up](http://stackoverflow.com/q/16649601)
+  - [JVM Memory : Why memory on task manager difference with JProbe (or
+    JConsole tool)](http://stackoverflow.com/q/12017437)
+
+To be clear, Java does reuse memory when you close and reopen images.
+The behavior described above is not a memory *leak* per se. It should be
+possible to leave ImageJ running for days or weeks at a time doing batch
+processing and it have it work just fine.
+
+See also:
+
+  - [Automatically release unused memory in ImageJ /
+    Fiji](http://stackoverflow.com/q/22912063)
+
+" %} The error means ImageJ ran out of available [computer
 memory](wikipedia:Random-access_memory "wikilink") (*not* hard drive
 space).
 
 The first thing to do is make sure that ImageJ has a large enough
 "maximum heap" size:
 
-  - 
+  - {% include bc content="Edit | Options | Memory & Threads" %}
   - Change "Maximum Memory" to something larger (at most, 1000 MB less
     than your computer's total RAM).
-
   - Restart ImageJ for the new memory settings to take effect.
 
 Note that in most cases, the [ImageJ launcher](Launcher "wikilink") will
@@ -377,7 +417,8 @@ maximum pixel numbers allowed per plane will be 1/2 (1 gigapixels) or
 but uses the [ImageJ1](ImageJ1 "wikilink") user interface by default,
 which once again limits visualization to 2 gigapixels. The [ImageJ2
 team](Contributors "wikilink") is working to lift these size
-restrictions; see .
+restrictions; see {% include GitHub content="org=imagej | repo=imagej |
+issue=87 | label=imagej/imagej\#87" %}.
 
 ## UnsupportedClassVersionError
 

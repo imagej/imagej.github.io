@@ -46,11 +46,18 @@ menu bar.
 
 ## The `--headless` mode
 
-[ImageJ2](ImageJ2 "wikilink") provides the capability to execute ImageJ
-plugins, macros and scripts in headless mode. This feature uses bytecode
-manipulation to patch ImageJ 1.x's behavior at runtime, making it
-possible to start ImageJ in batch mode without instantiating GUI
-components.
+{% include sidebox-right content="Historical note Headless support was
+originally a branch in [ImageJA](ImageJA "wikilink"); it worked by
+putting rewritten versions of three core ImageJ classes into a file
+called *headless.jar*, which was put into the class path *before*
+`ij.jar` so they would override ImageJ's versions.
+
+Nowadays, we use [Javassist](Javassist "wikilink") for run-time
+patching, through the  [ImageJ2](ImageJ2 "wikilink") provides the
+capability to execute ImageJ plugins, macros and scripts in headless
+mode. This feature uses bytecode manipulation to patch ImageJ 1.x's
+behavior at runtime, making it possible to start ImageJ in batch mode
+without instantiating GUI components.
 
 **Shortcoming:** There are plugins which are even more bound to a GUI
 than ImageJ 1.x is. Naturally, these plugins will still try to
@@ -89,6 +96,11 @@ In that case, the RunBatch.ijm file should be something like:
 
 the `getArgument()` is used to grab the parameter string itself, and it
 is then passed to an IJ command.
+
+{% include warning-box content="Please note that you will not be able to
+use [script parameters](script_parameters "wikilink") with `-macro`.
+Follow instructions in [Scripting
+Headless](Scripting_Headless "wikilink") instead." %}
 
 ## Xvfb
 

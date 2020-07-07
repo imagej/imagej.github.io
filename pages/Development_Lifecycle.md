@@ -8,9 +8,18 @@ categories: Development,Tutorials
 description: test description
 ---
 
-The SciJava [philosophy](philosophy "wikilink") is to [release early,
-release often](Philosophy#Release_early.2C_release_often "wikilink"). At
-the same time, we always want to preserve [scientific
+{% include info-box content="This page describes the core
+[SciJava](SciJava "wikilink") *software release process*.
+
+  - For an overview of *distribution methods*, see
+    [Distribution](Distribution "wikilink").
+  - To *download* software releases, see
+    [Downloads](Downloads "wikilink")." %}
+
+{% include DevelopMenu content="tutorials" %}The SciJava
+[philosophy](philosophy "wikilink") is to [release early, release
+often](Philosophy#Release_early.2C_release_often "wikilink"). At the
+same time, we always want to preserve [scientific
 reproducibility](reproducible_builds "wikilink"). To make this possible
 we lean on several [project management](project_management "wikilink")
 tools. The purpose of this guide is to take you through the process of
@@ -28,6 +37,20 @@ Whether adding new features, fixing bugs, improving performance, etc...
 **development** is the process of making changes, with the goal of
 exposing these changes to users. To accomplish this, actively developed
 projects cycle through five general "phases":
+
+{% include sidebox-right content="What are Maven artifacts?
+
+Artifacts are files, most commonly a
+**[JAR](wikipedia:JAR_%28file_format%29 "wikilink")** encapsulating the
+compiled classes for a component. Other files that may be produced as
+artifacts include:
+
+  - The project's **[POM](https://maven.apache.org/pom.html)**
+  - A jar with the original source files
+  - A jar with any generated javadoc
+  - A jar with any test files
+
+" %}
 
 1.  **In development.** The source code is modified to add new features,
     fix bugs, etc... these modifications are expressed as *commits* by
@@ -79,6 +102,76 @@ single Git commit. Then the next commit returns to SNAPSHOT versioning
 for further development. Thus the cycle repeats.
 
 # Phases in-depth
+
+{% include sidebox-right content="float=right | title=When to use a
+topic branch? [Core SciJava components](Architecture "wikilink") employ
+a "release ready master branch" approach:
+
+  - The tip of the master branch is always stable enough to be released,
+    "as good or better" than the state of its last release.
+  - Each commit on the master branch should compile with passing tests.
+    This has several advantages—e.g., better [bisect-style
+    debugging](https://git-scm.com/book/en/v2/Git-Tools-Debugging-with-Git#Binary-Search).
+
+Topic branches are great for isolating potentially disruptive and/or
+unfinished changes from the master branch, so that it always remains
+release ready. However, pushing directly to master has a huge time
+savings over filing a PR and awaiting review for days, weeks or months.
+Getting changes onto master quickly has many advantages:
+
+  - **Fewer conflicts.** It avoids conflicts between multiple
+    long-running topic branches.
+  - **SNAPSHOT builds.** [Travis](Travis "wikilink") builds the change
+    into the latest SNAPSHOT build, making it available from the
+    [SciJava Maven repository](SciJava_Maven_repository "wikilink").
+  - **Faster support.** Supporting the community is less convoluted,
+    with changes released to users more rapidly. Yes, you can link to
+    changes on a topic branch. And yes, you can upload binary builds
+    from that branch. But each extra manual step costs time—better to
+    link directly to the latest SNAPSHOT build. There are even ImageJ
+    [update sites](update_sites "wikilink") which serve the latest
+    builds from master, to make it easier for non-technical users to
+    test changes.
+  - **Less complex.** The more topic branches you have—and in
+    particular, the more integration branches you have—the more complex
+    the system becomes, the more supporting tooling, CI jobs, etc. are
+    needed. And the more developer time is needed to maintain the
+    tooling, sort through topic branches, keep track of open PRs...
+    leaving less time for developing new features and fixing bugs.
+
+Hence, when exactly to use a topic branch is a judgment call, but some
+good times to use a topic branch are:
+
+  - **Breaking.** The changes break [backwards
+    compatibility](backwards_compatibility "wikilink").
+  - **New API.** The changes introduce significant new API which will
+    need to remain backwards compatible in the future, and review is
+    desired before committing to that API.
+  - **Unfinished.** The changes are unfinished.
+  - **Regressing.** The changes leave the codebase in a "worse" state
+    somehow.
+  - **Discussion.** To solicit discussion from the
+    [community](community "wikilink"), especially if the changes might
+    be contentious.
+
+Conversely, some situations to push directly to master:
+
+  - **Correct.** Bug-fixes where the developer is confident the fix is
+    correct.
+  - **No new API.** Small new additions which do not introduce
+    significant future maintenance burden.
+  - **Unstable.** Changes to unstable or experimental components still
+    in their "incubation" period of development (i.e., versioned at
+    0.x), since there is no promise of backwards compatibility.
+  - **Unsupported.** Changes to "unsupported" components which make no
+    guarantee of backwards compatibility.
+
+Lastly, keep in mind that SciJava favors the [release early, release
+often](RERO "wikilink") style of development, to maximize iterations of
+community feedback. Just because a change makes it to the master branch,
+does not mean it is set in stone: if a problem is later found, the
+change can be amended or reverted as quickly as it was added—easy come,
+easy go. " %}
 
 ## Phase 1: In development
 
@@ -205,36 +298,61 @@ create and push a
 the release for you. You should receive an email from Travis after the
 release is complete indicating whether the build was successful.
 
+{% include info-box content="If your project is a [multi-module
+build](https://maven.apache.org/guides/mini/guide-multiple-modules.html),
+first make a commit commenting out any modules that should not be
+released. Then run the script from the aggregator pom directory." %}
+
 ## Phase 4: Managed
 
 For core projects, there is an intermediate layer tying User-facing and
 Developer-facing components together: the [Bill of
 Materials](BOM "wikilink") (BOM). To ensure users and developers see the
 same functionality, components should only be uploaded to the core
-update sites when their version is also updated in the  BOM.
+update sites when their version is also updated in the {% include GitHub
+content="org=scijava | repo=pom-scijava | label=pom-scijava" %} BOM.
 
-To update the version of your component listed in the  BOM, you should
-follow the [External developer](#Phase_1:_In_development "wikilink")
-instructions for contributing to . By [submitting a pull
+To update the version of your component listed in the {% include GitHub
+content="org=scijava | repo=pom-scijava | label=pom-scijava" %} BOM, you
+should follow the [External
+developer](#Phase_1:_In_development "wikilink") instructions for
+contributing to {% include GitHub content="org=scijava |
+repo=pom-scijava | label=pom-scijava" %}. By [submitting a pull
 request](https://help.github.com/articles/using-pull-requests/) that
 simply modifies the managed version of your component, you will signal
 to the core SciJava developers that your project is ready for upload.
-For example,  updates the managed version of
+For example, {% include GitHub content="org=scijava | repo=pom-scijava |
+pr=40 | label=this PR" %} updates the managed version of
 [Bio-Formats](Bio-Formats "wikilink") to 5.5.0.
 
 ## Phase 5: Uploaded
 
-Deploying to the Maven repository creates a stable release artifact of a
-software component usable by other developers. But for ImageJ-related
-components, that alone does not put it into the hands of users. To do
-that, the component must then be *uploaded* to an ImageJ [update
-site](update_site "wikilink").
+{% include sidebox-right content="What are ImageJ update sites?
+
+ImageJ [update sites](update_sites "wikilink") are what ImageJ actually
+queries to download updates. These update sites are versioned, but do
+not rely on other tools (e.g., [Git](Git "wikilink") or
+[Maven](Maven "wikilink")) in order to function. Rather, component
+developers upload new versions of their component(s) using the [ImageJ
+Updater](ImageJ_Updater "wikilink"), which makes them available to end
+users. Typically, update sites are available as web sites via HTTP, with
+uploads functioning via
+[WebDAV](https://github.com/imagej/imagej-plugins-uploader-webdav) or
+[SSH/SFTP/SCP](https://github.com/imagej/imagej-plugins-uploader-ssh). "
+%} Deploying to the Maven repository creates a stable release artifact
+of a software component usable by other developers. But for
+ImageJ-related components, that alone does not put it into the hands of
+users. To do that, the component must then be *uploaded* to an ImageJ
+[update site](update_site "wikilink").
 
 ### ImageJ and Fiji update sites
 
-  - The core ImageJ update site reflects the state of the newest 
-    release.
-  - The core Fiji update site reflects the state of the newest  release.
+  - The core ImageJ update site reflects the state of the newest {%
+    include GitHub content="org=imagej | repo=imagej |
+    label=net.imagej:imagej" %} release.
+  - The core Fiji update site reflects the state of the newest {%
+    include GitHub content="org=fiji | repo=fiji | label=sc.fiji:fiji"
+    %} release.
   - Actually, for the moment, both of the above statements are untrue,
     but they represent the direction we are heading. Right now, core
     components of both ImageJ and Fiji are distributed manually via the

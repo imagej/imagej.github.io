@@ -42,7 +42,8 @@ warning dialog will be displayed to warn you about the package manager:
 "Weka-GUI-Chooser-package-warning-ubuntu.png")
 
 We can just click OK, go the Weka GUI Chooser window and look for the
-package manager under the menu , or by pressing :
+package manager under the menu {% include bc content="Tools | Package
+manager" %}, or by pressing {% include key content="Ctrl|U" %}:
 
 ![Weka-GUI-Chooser-package-manager.png](Weka-GUI-Chooser-package-manager.png
 "Weka-GUI-Chooser-package-manager.png")

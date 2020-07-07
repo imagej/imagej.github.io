@@ -8,6 +8,18 @@ categories: Transform,Registration,Deconvolution
 description: test description
 ---
 
+{% include Infobox content="name = An automated workflow for parallel
+processing of large multiview SPIM recordings | software = Fiji | author
+= [Christopher
+Schmied](https://de.linkedin.com/in/christopher-schmied-75882b101),
+Peter Steinbach, Pavel Tomancak | maintainer = [Christopher
+Schmied](https://de.linkedin.com/in/christopher-schmied-75882b101) |
+released = July 2015 | latest version = March 2016 | category =
+[Transform](:Category:Transform "wikilink"),
+[Registration](:Category:Registration "wikilink"),
+[Deconvolution](:Category:Deconvolution "wikilink") | source = [on
+github](https://github.com/mpicbg-scicomp/snakemake-workflows) " %}
+
 # Citation
 
 Please note that the automated workflow for processing SPIM data on a
@@ -461,7 +473,7 @@ For processing of *.tif* files give the pattern of the files and if you
 process single channel datasets or dual channel datasets:
 
 ``` bash
-image_file_pattern: 'img_TL{{t}}_Angle{{a}}.tif',
+image_file_pattern: 'img_TL%Replace% t %Replace% _Angle%Replace% a %Replace% .tif',
 multiple_channels: '"NO (one channel)"', 
 ```
 
@@ -471,7 +483,7 @@ datasets with separated files per channel give additionally the channel
 information of the *image\_file\_pattern*
 
 ``` bash
-image_file_pattern: 'img_TL{{t}}_Angle{{a}}_Channels{{c}}.tif',
+image_file_pattern: 'img_TL%Replace% t %Replace% _Angle%Replace% a %Replace% _Channels%Replace% c %Replace% .tif',
 multiple_channels: '"YES (one file per channel)"', 
 ```
 
@@ -480,7 +492,7 @@ information in the *image\_file\_pattern*. And specify for
 *multiple\_channels* that you want to process multi channel datasets:
 
 ``` bash
-image_file_pattern: 'img_TL{{t}}_Angle{{a}}.tif',
+image_file_pattern: 'img_TL%Replace% t %Replace% _Angle%Replace% a %Replace% .tif',
 multiple_channels: '"YES (all channels in one file)"', 
 ```
 

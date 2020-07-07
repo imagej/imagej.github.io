@@ -8,7 +8,8 @@ categories:
 description: test description
 ---
 
-![Labkit\_Illustration.jpg](Labkit_Illustration.jpg
+{% include Infobox content="name = Labkit | update site = Labkit |
+author =  ![Labkit\_Illustration.jpg](Labkit_Illustration.jpg
 "Labkit_Illustration.jpg")
 
 Labkit is a plugin for:

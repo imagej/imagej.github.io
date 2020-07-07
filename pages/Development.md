@@ -8,9 +8,13 @@ categories: Development
 description: test description
 ---
 
-This page provides an overview of ImageJ from the perspective of
-software development: how to use it from your programs, as well as how
-to modify or extend its capabilities via [plugins](plugins "wikilink").
+{% include info-box content="If your goal is to automate the behavior of
+ImageJ, consider writing a [script](script "wikilink") using ImageJ's
+[Script Editor](Script_Editor "wikilink")—it is often much simpler than
+a plugin in Java." %} %Replace% DevelopMenu %Replace% This page provides
+an overview of ImageJ from the perspective of software development: how
+to use it from your programs, as well as how to modify or extend its
+capabilities via [plugins](plugins "wikilink").
 
 ## Quick start
 
@@ -67,7 +71,7 @@ ImageJ is divided into three parts:
 <table>
 <thead>
 <tr class="header">
-<th><p><a href="ImageJ" title="wikilink">ImageJ</a></p></th>
+<th><p>{% include Logo content="ImageJ | size=72px" %}<a href="ImageJ" title="wikilink">ImageJ</a></p></th>
 </tr>
 </thead>
 <tbody>
@@ -82,7 +86,7 @@ ImageJ is divided into three parts:
 </ul></td>
 </tr>
 <tr class="even">
-<td><p><a href="ImgLib2" title="wikilink">ImgLib2</a></p></td>
+<td><p>{% include Logo content="ImgLib2 | size=72px" %}<a href="ImgLib2" title="wikilink">ImgLib2</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><span style="font-size: large"><strong>Core image data model</strong></span><br />
@@ -109,22 +113,22 @@ relies:
 <table>
 <tbody>
 <tr class="odd">
-<td></td>
+<td><p>{% include Logo content="GitHub" %}</p></td>
 <td><p><a href="GitHub" title="wikilink">GitHub</a></p></td>
 <td><p>A website which hosts all of ImageJ's <a href="source_code" title="wikilink">source code</a> and <a href="issues" title="wikilink">issue trackers</a>. GitHub is ImageJ's nexus of online collaboration (i.e., "social coding").</p></td>
 </tr>
 <tr class="even">
-<td></td>
+<td><p>{% include Logo content="Git" %}</p></td>
 <td><p><a href="Git" title="wikilink">Git</a></p></td>
 <td><p>A first-class <a href="wikipedia:Distributed_version_control" title="wikilink">distributed</a> <a href="wikipedia:Version_control" title="wikilink">version control</a> system. Git saves "snapshots" of the source code, keeping a history of changes.</p></td>
 </tr>
 <tr class="odd">
-<td></td>
+<td><p>{% include Logo content="Maven" %}</p></td>
 <td><p><a href="Maven" title="wikilink">Maven</a></p></td>
 <td><p>A <a href="wikipedia:Build_automation" title="wikilink">build automation</a> tool with great dependency management. Maven converts source code into program binaries, and much more.</p></td>
 </tr>
 <tr class="even">
-<td></td>
+<td><p>{% include Logo content="Eclipse" %}</p></td>
 <td><p><a href="Eclipse" title="wikilink">Eclipse</a></p></td>
 <td><p>An <a href="IDE" title="wikilink">integrated development environment</a> (IDE) used by many ImageJ developers. Eclipse makes it much easier to explore and edit the source code.<br />
 Although: ImageJ can be developed using <a href="IDEs" title="wikilink"><em>any</em> IDE</a> which supports <a href="Maven" title="wikilink">Maven</a>.</p></td>

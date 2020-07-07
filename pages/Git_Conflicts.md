@@ -8,6 +8,8 @@ categories: Git
 description: test description
 ---
 
+%Replace% GitMenu %Replace%
+
 ## Merge conflicts
 
 Sometimes you get *merge conflicts* when merging or pulling from a

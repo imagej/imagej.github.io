@@ -8,6 +8,8 @@ categories:
 description: test description
 ---
 
+{% include Learn content="languages" %}
+
 ## Introduction
 
 Jython is an implementation of the Python programming language designed
@@ -53,6 +55,9 @@ ImageJ scripting. Hopefully the examples on this page can convince you
 of that.
 
 ## Jython basics for ImageJ
+
+{% include info-box content="For an introduction in ImageJ scripting
+visit the page [Scripting basics](Scripting_basics "wikilink")." %}
 
 ### Introduction
 
@@ -123,6 +128,10 @@ The following list links to documentation of the used Python features:
   - [Purpose of the single underscore “\_”
     variable](http://stackoverflow.com/questions/5893163/what-is-the-purpose-of-the-single-underscore-variable-in-python)
 
+{% include GitHubEmbed
+content="org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/Tutorials/Wiki\_Jython\_Tutorial\_1.py"
+%}
+
 ### Using Scripting Parameters
 
 The second example is inspired by atomic resolution images recorded with
@@ -147,6 +156,10 @@ introduced with this example:
     array](http://stackoverflow.com/questions/8421337/rotating-a-two-dimensional-array-in-python)
   - [Lambda
     expressions](https://docs.python.org/2/reference/expressions.html#lambda)
+
+{% include GitHubEmbed
+content="org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/Tutorials/Wiki\_Jython\_Tutorial\_2.py"
+%}
 
 ### A batch opener using `os.walk()`
 
@@ -174,6 +187,10 @@ to additional information:
     loop](https://docs.python.org/2/reference/simple_stmts.html#continue)
   - [Truth Value
     Testing](https://docs.python.org/2/library/stdtypes.html#truth-value-testing)
+
+{% include GitHubEmbed
+content="org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/Tutorials/Wiki\_Jython\_Tutorial\_3.py"
+%}
 
 ## Importing Java module and classes
 
@@ -245,7 +262,7 @@ test_img = IJ.createImage("Test image", 512, 512, 1, 8)
 # check the type:
 print(type(test_img))
 # <type 'ij.ImagePlus'>
-title = test_img.getTitle()
+test_img.getTitle()
 width = test_img.width
 height = test_img.height
 print("{} is {} wide and {} tall.".format(title, width, height))
@@ -344,6 +361,12 @@ TwoColumn = Mat()              # initialise output
 vconcat(Col1, Col2, TwoColumn) # output stored in TwoColumn
 print CvMat(TwoColumn)
 ```
+
+{% include warning-box content="The
+`org.bytedeco.javacpp.opencv_core.Mat` object is different than the
+`org.opencv.core.Mat` \!\! They don't have exactly the same attributes
+and functions. In Fiji you should always use the objects from
+`org.bytedeco.javacpp`." %}
 
 Similarly there is some apparent redudancy for the function in the
 javacpp API.

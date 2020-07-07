@@ -8,6 +8,8 @@ categories: Git
 description: test description
 ---
 
+%Replace% GitMenu %Replace%
+
 # How to bisect with Git
 
 ## How to find which commit introduced a regression

@@ -8,6 +8,13 @@ categories: Plugins,Segmentation,Colocalization,Deconvolution
 description: test description
 ---
 
+{% include Infobox content="software = ImageJ | name = Squassh | author
+= [MOSAIC Group](http://mosaic.mpi-cbg.de/), [Center for Systems Biology
+Dresden (CSBD)](http://www.mpg-sysbio.de), [Max Planck Institute of
+Molecular Cell Biology and Genetics
+(MPI-CBG)](http://www.mpi-cbg.de/research/research-groups/ivo-sbalzarini.html),
+Dresden, Germany. | maintainer = 
+
 **Squassh** is a tool for 2D and 3D segmentation and quantification of
 subcellular shapes in fluorescence microscopy images. It provides
 globally optimal detection and segmentation of objects with constant

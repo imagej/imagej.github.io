@@ -8,9 +8,10 @@ categories: Plugins,Registration,TrakEM2,Citable
 description: test description
 ---
 
-\== Citation == Please note that the elastic alignment and montage
-plugin available through Fiji, is based on a publication. If you use it
-successfully for your research please cite our work:
+{% include Infobox content="name = Elastic Align and Montage | software
+= Fiji | author = == Citation == Please note that the elastic alignment
+and montage plugin available through Fiji, is based on a publication. If
+you use it successfully for your research please cite our work:
 
 S. Saalfeld, R. Fetter, A. Cardona and P. Tomancak (2012) "Elastic
 volume reconstruction from series of ultra-thin microscopy sections,
@@ -168,10 +169,11 @@ response.](Edge-filter.png
     respectively. In addition, previously extracted [local
     features](Feature_Extraction "wikilink") and [feature
     correspondences](Feature_Extraction "wikilink") are saved for later
-    re-use during parameter triggering (thanks to  for adding this).
-    Make sure that you work in a clear folder when changing the input
-    data because both saved matches and features are identified by their
-    stack index and parameters only.
+    re-use during parameter triggering (thanks to {% include Person
+    content="Albertcardona" %} for adding this). Make sure that you work
+    in a clear folder when changing the input data because both saved
+    matches and features are identified by their stack index and
+    parameters only.
     You can choose whether to **interpolate** the result or not.
     **Visualize** checked will render the spring mesh simulation into a
     512×512 pixel stack for demonstration purposes. The result is

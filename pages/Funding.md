@@ -8,13 +8,23 @@ categories:
 description: test description
 ---
 
-\_\_NOTOC\_\_== ImageJ 1.x ==
+{% include info-box content="This page describes *how*
+[SciJava](SciJava "wikilink") projects are funded.
+
+  - For information on who *contributes* to these projects, see
+    [Contributors](Contributors "wikilink").
+  - For information on who *maintains* these projects, see
+    [Governance](Governance "wikilink").
+  - For information on *citing* these projects, see
+    [Citing](Citing "wikilink")." %}
+
+%Replace% AboutMenu %Replace% \_\_NOTOC\_\_== ImageJ 1.x ==
 
 Historically, [ImageJ 1.x](ImageJ_1.x "wikilink") was funded internally
 by the [Research Services](http://rsbweb.nih.gov/) branch of the
-[National Institutes of Health](http://nih.gov/). It is developed by ,
-who is now retired, and continues his work on ImageJ1 as an NIH special
-volunteer.
+[National Institutes of Health](http://nih.gov/). It is developed by {%
+include Person content="Rasband" %}, who is now retired, and continues
+his work on ImageJ1 as an NIH special volunteer.
 
 ## ImageJ2
 
@@ -35,9 +45,9 @@ including a [Wellcome Trust](http://www.wellcome.ac.uk/) Strategic Award
 development effort at the University of Konstanz, University of
 Wisconsin-Madison and elsewhere.
 
-The ImageJ2 project as a whole is maintained by  of the [Eliceiri/LOCI
-lab](LOCI "wikilink"), currently supported by CZI as an [Imaging
-Software
+The ImageJ2 project as a whole is maintained by {% include Person
+content="Rueden" %} of the [Eliceiri/LOCI lab](LOCI "wikilink"),
+currently supported by CZI as an [Imaging Software
 Fellow](https://www.chanzuckerberg.com/newsroom/czi-announces-support-for-open-source-software-efforts-to-improve-biomedical-imaging).
 
 ## SCIFIO
@@ -45,24 +55,28 @@ Fellow](https://www.chanzuckerberg.com/newsroom/czi-announces-support-for-open-s
 [SCIFIO](SCIFIO "wikilink") was funded by the [National Science
 Foundation](http://nsf.gov/), award number
 [1148362](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1148362). It
-was initially developed by  and  of the [Eliceiri/LOCI
+was initially developed by {% include Person content="Hinerm" %} and {%
+include Person content="Rueden" %} of the [Eliceiri/LOCI
 lab](LOCI "wikilink").
 
 SCIFIO's development is now funded indirectly by various institutions as
 part of their respective research and development goals. SCIFIO as a
-whole is organized and maintained as part of the ImageJ2 effort by  of
-the [Eliceiri/LOCI lab](LOCI "wikilink").
+whole is organized and maintained as part of the ImageJ2 effort by {%
+include Person content="Rueden" %} of the [Eliceiri/LOCI
+lab](LOCI "wikilink").
 
 ## ImgLib2
 
-The [ImgLib2](ImgLib2 "wikilink") project was developed by ,  and  of
-the [Tomancak
+The [ImgLib2](ImgLib2 "wikilink") project was developed by {% include
+Person content="Saalfeld" %}, {% include Person content="StephanP" %}
+and {% include Person content="Pietzsch" %} of the [Tomancak
 lab](https://mpi-cbg.de/research/research-groups/pavel-tomancak.html) at
 [MPI-CBG](https://mpi-cbg.de/).
 
-The ImgLib2 project as a whole is organized and maintained by  of
-MPI-CBG,  of Janelia Research Campus, and  of the [Eliceiri/LOCI
-lab](LOCI "wikilink").
+The ImgLib2 project as a whole is organized and maintained by {% include
+Person content="Pietzsch" %} of MPI-CBG, {% include Person
+content="Saalfeld" %} of Janelia Research Campus, and {% include Person
+content="Rueden" %} of the [Eliceiri/LOCI lab](LOCI "wikilink").
 
 [ImgLib2](ImgLib2 "wikilink") is currently funded by [Bundesministerium
 für Bildung und Forschung (BMBF)](https://bmbf.org/) grant 031L0102.
@@ -81,9 +95,9 @@ the various involved software efforts, including
 [ImageJ2](ImageJ2 "wikilink"), [KNIME](KNIME "wikilink"),
 [OMERO](OMERO "wikilink") and [CellProfiler](CellProfiler "wikilink").
 
-The SciJava project as a whole is organized and maintained by  of the
-[Eliceiri/LOCI lab](LOCI "wikilink"), currently supported by CZI as an
-[Imaging Software
+The SciJava project as a whole is organized and maintained by {% include
+Person content="Rueden" %} of the [Eliceiri/LOCI lab](LOCI "wikilink"),
+currently supported by CZI as an [Imaging Software
 Fellow](https://www.chanzuckerberg.com/newsroom/czi-announces-support-for-open-source-software-efforts-to-improve-biomedical-imaging).
 
 ## Fiji
@@ -94,12 +108,13 @@ across the worldwide community.
 
 Fiji as a whole is organized and maintained by:
 
-  - of the [Eliceiri/LOCI lab](LOCI "wikilink"), currently supported by
-    CZI as an [Imaging Software
+  - {% include Person content="Rueden" %} of the [Eliceiri/LOCI
+    lab](LOCI "wikilink"), currently supported by CZI as an [Imaging
+    Software
     Fellow](https://www.chanzuckerberg.com/newsroom/czi-announces-support-for-open-source-software-efforts-to-improve-biomedical-imaging).
-
-  - of [CSBD](CSBD "wikilink")/[MPI-CBG](MPI-CBG "wikilink") as part of
-    a funded Fiji Software Sustainability Grant (DFG TO563/8-1).
+  - {% include Person content="turekg" %} of
+    [CSBD](CSBD "wikilink")/[MPI-CBG](MPI-CBG "wikilink") as part of a
+    funded Fiji Software Sustainability Grant (DFG TO563/8-1).
 
 Fiji development is also funded indirectly by various institutions as
 part of their respective research and development goals.

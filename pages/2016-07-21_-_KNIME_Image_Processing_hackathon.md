@@ -8,11 +8,11 @@ categories: News,Hackathons,ImageJ2,KNIME
 description: test description
 ---
 
-From Tuesday, July 5, 2016 through Thursday, July 14, 2016,  of the
-[University of Konstanz](http://www.uni-konstanz.de/en/welcome/) hosted
-\~20 developers at the [KNIME Konstanz Regional
-Office](https://www.knime.org/contact) for a
-[hackathon](hackathon "wikilink") to develop the
+From Tuesday, July 5, 2016 through Thursday, July 14, 2016, {% include
+Person content="Dietzc" %} of the [University of
+Konstanz](http://www.uni-konstanz.de/en/welcome/) hosted \~20 developers
+at the [KNIME Konstanz Regional Office](https://www.knime.org/contact)
+for a [hackathon](hackathon "wikilink") to develop the
 [KNIME](KNIME "wikilink") Image Processing extensions along with the
 underlying [ImageJ Ops](ImageJ_Ops "wikilink") library, as well as other
 supporting technologies such as [ImgLib2](ImgLib2 "wikilink"),
@@ -120,16 +120,23 @@ PlotData=
 [File:hackathon-2016-konstanz-hackers.jpg|caption|Hackers](File:hackathon-2016-konstanz-hackers.jpg%7Ccaption%7CHackers)\!
 [File:hackathon-2016-konstanz-dinner.jpg|caption|Hackers](File:hackathon-2016-konstanz-dinner.jpg%7Ccaption%7CHackers)
 at dinner
-[File:hackathon-2016-konstanz-rueden.jpg|caption](File:hackathon-2016-konstanz-rueden.jpg%7Ccaption)|
-[File:hackathon-2016-konstanz-harrington.jpg|caption](File:hackathon-2016-konstanz-harrington.jpg%7Ccaption)|
-[File:hackathon-2016-konstanz-domander.jpg|caption](File:hackathon-2016-konstanz-domander.jpg%7Ccaption)|
-[File:hackathon-2016-konstanz-hoerl.jpg|caption](File:hackathon-2016-konstanz-hoerl.jpg%7Ccaption)|
-[File:hackathon-2016-konstanz-dietz-and-rueden.jpg|caption](File:hackathon-2016-konstanz-dietz-and-rueden.jpg%7Ccaption)|
-and 
-[File:hackathon-2016-konstanz-harrington-and-gunther.jpg|caption](File:hackathon-2016-konstanz-harrington-and-gunther.jpg%7Ccaption)|
-and 
-[File:hackathon-2016-konstanz-helfrich-and-pietzsch.jpg|caption](File:hackathon-2016-konstanz-helfrich-and-pietzsch.jpg%7Ccaption)|
-and 
+[File:hackathon-2016-konstanz-rueden.jpg|caption](File:hackathon-2016-konstanz-rueden.jpg%7Ccaption)|{%
+include Person content="Rueden" %}
+[File:hackathon-2016-konstanz-harrington.jpg|caption](File:hackathon-2016-konstanz-harrington.jpg%7Ccaption)|{%
+include Person content="Kharrington" %}
+[File:hackathon-2016-konstanz-domander.jpg|caption](File:hackathon-2016-konstanz-domander.jpg%7Ccaption)|{%
+include Person content="Rdom" %}
+[File:hackathon-2016-konstanz-hoerl.jpg|caption](File:hackathon-2016-konstanz-hoerl.jpg%7Ccaption)|{%
+include Person content="hoerldavid" %}
+[File:hackathon-2016-konstanz-dietz-and-rueden.jpg|caption](File:hackathon-2016-konstanz-dietz-and-rueden.jpg%7Ccaption)|{%
+include Person content="Dietzc" %} and {% include Person
+content="Rueden" %}
+[File:hackathon-2016-konstanz-harrington-and-gunther.jpg|caption](File:hackathon-2016-konstanz-harrington-and-gunther.jpg%7Ccaption)|{%
+include Person content="Kharrington" %} and {% include Person
+content="skalarproduktraum" %}
+[File:hackathon-2016-konstanz-helfrich-and-pietzsch.jpg|caption](File:hackathon-2016-konstanz-helfrich-and-pietzsch.jpg%7Ccaption)|{%
+include Person content="Stelfrich" %} and {% include Person
+content="Pietzsch" %}
 [File:2016-hackathon-konstanz-sushi.jpg|caption|KNIME](File:2016-hackathon-konstanz-sushi.jpg%7Ccaption%7CKNIME)
 3.2: sushi edition
 [File:hackathon-2016-konstanz-amazing-salt.jpg|caption|The](File:hackathon-2016-konstanz-amazing-salt.jpg%7Ccaption%7CThe)
@@ -146,11 +153,15 @@ gravity-defying salt shaker\!
   - Added first ops from BoneJ legacy code - topology namespace and ops
     for calculating the [Euler
     characteristic](https://en.wikipedia.org/wiki/Euler_characteristic)
-    ()
+    ({% include GitHub content="org=imagej | repo=imagej-ops | pr=413 |
+    label=imagej-ops\#413" %})
 
 ### Kyle Harrington
 
-  - Added 3D Mesh Voxelization to  ()
+  - Added 3D Mesh Voxelization to {% include GitHub content="org=imagej
+    | repo=imagej-ops | label=imagej-ops" %} ({% include GitHub
+    content="org=imagej | repo=imagej-ops | pr=419 |
+    label=imagej-ops\#419" %})
   - Began [ThreeDViewer](ThreeDViewer "wikilink") and reached a
     moderately usable level
   - Refactored [Funimage](Funimage "wikilink") to be more Clojure
@@ -158,13 +169,17 @@ gravity-defying salt shaker\!
 
 ### Stefan Helfrich
 
-  - Proof-of-principle implementations of MatrixType and VectorType ()
+  - Proof-of-principle implementations of MatrixType and VectorType ({%
+    include GitHub content="org=stelfrich | repo=imglib2 |
+    label=matrixType" %})
   - Enable using global thresholds as local thresholds in Ops
   - Improve default OOBF handling for filters
       - i.e. do not apply an OOBF if an image already is extended
       - Add defined bounds for RandomAccessibles
         ([imglib2/random-access-defined-bounds](https://github.com/stelfrich/imglib2/tree/random-access-defined-bounds))
-      - Implement Shape.getBoundingBox() ()
+      - Implement Shape.getBoundingBox() ({% include GitHub
+        content="org=imglib | repo=imglib2 | pr=27 | label=imglib2\#27"
+        %})
 
 ### Martin Horn & Alexander Fillbrunn
 
@@ -174,15 +189,22 @@ gravity-defying salt shaker\!
 ### Curtis Rueden
 
   - Made major progress on improved op lookups using Nil (a.k.a. "typed
-    null") objects—work still ongoing on the `nil` branch of ; prep work
-    already on master
+    null") objects—work still ongoing on the `nil` branch of {% include
+    GitHub content="org=imagej | repo=imagej-ops | label=imagej-ops" %};
+    prep work already on master
     (\[<https://github.com/imagej/imagej-ops/compare/fd2d9c5b8974d77976dabc53ba973d2a52ee465a%5E>...226fc2114f0d68786f4a27b8fa498f18681379bf
-    1\], )
+    1\], {% include GitHub content="org=imagej | repo=imagej-ops |
+    commit=4135609f471352cbd32b048d32f0d5bb33343273 | label=2" %})
   - Cleaned up the dependencies of ImageJ Ops; in particular, use SCIFIO
-    for I/O, not ImageJ 1.x and AWT ()
-  - Helped clean up 's "Topology namespace and ops" PR ()
+    for I/O, not ImageJ 1.x and AWT ({% include GitHub
+    content="org=imagej | repo=imagej-ops | pr=413 |
+    label=imagej-ops\#413" %})
+  - Helped clean up {% include Person content="Rdom" %}'s "Topology
+    namespace and ops" PR ({% include GitHub content="org=imagej |
+    repo=imagej-ops | pr=415 | label=imagej-ops\#415" %})
   - Created a (not yet functional) [Kotlin](https://kotlinlang.org/)
-    SciJava script engine ()
+    SciJava script engine ({% include GitHub content="org=scijava |
+    repo=scripting-kotlin | label=scijava/scripting-kotlin" %})
 
 ## Technical discussions
 

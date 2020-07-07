@@ -8,9 +8,9 @@ categories: Development
 description: test description
 ---
 
-The [ImageJ](ImageJ "wikilink") and related
-[SciJava](SciJava "wikilink") projects take advantage of several project
-management tools.
+%Replace% DevelopMenu %Replace% The [ImageJ](ImageJ "wikilink") and
+related [SciJava](SciJava "wikilink") projects take advantage of several
+project management tools.
 
 ## Git
 
@@ -85,6 +85,8 @@ Issues](https://guides.github.com/features/issues/):
 
 You can search issues using the ImageJ search portal's GitHub button
 here:
+
+{% include BigLink content="url=<https://search.imagej.net/>" %}
 
 Previously, some projects used [Trac](https://trac.edgewall.org/) for
 issue tracking and roadmapping, but all Trac issues have now been

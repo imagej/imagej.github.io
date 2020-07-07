@@ -8,12 +8,17 @@ categories: Platforms
 description: test description
 ---
 
-[macOS](wikipedia:macOS "wikilink") (formerly called Mac OS X, then OS
+%Replace% PlatformsMenu %Replace% {% include Minibox
+content="logo=Osx.png | blurb=[Think
+different](wikipedia:Think_different "wikilink")."
+%}[macOS](wikipedia:macOS "wikilink") (formerly called Mac OS X, then OS
 X) is [Apple](wikipedia:Apple_Inc. "wikilink")'s desktop operating
 system. It is [the second most common desktop computing
 platform](https://www.netmarketshare.com/operating-system-market-share.aspx)
 after [Windows](Windows "wikilink"). This page details issues specific
 to using [ImageJ](ImageJ "wikilink") on macOS systems.
+
+%Replace% TOC %Replace%
 
 # Installation
 
@@ -61,8 +66,8 @@ includes a title bar for file chooser dialogs. See e.g. [this JDK
 bug](https://bugs.openjdk.java.net/browse/JDK-8136427) discussing the
 issue.
 
-As a workaround, you can check "Use JFileChooser to open/save" in the 
-dialog.
+As a workaround, you can check "Use JFileChooser to open/save" in the {%
+include bc content="Edit | Options | Input/Output..." %} dialog.
 
 # Frequently Asked Questions
 
@@ -77,7 +82,9 @@ If you have difficulties, please post on the [Image.sc
 Forum](https://forum.image.sc/).
 
 At any time, you can verify which Javas are installed on your system
-using .
+using {% include GitHub
+content="org=ctrueden|repo=ctr-scripts|path=java-info|label=this script"
+%}.
 
 ## How do I run ImageJ on Yosemite?
 
