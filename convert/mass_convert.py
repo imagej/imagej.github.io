@@ -29,32 +29,20 @@ def iteratively_convert(root_in, root_out, page_title):
     if ":" in page_title:
         print("Cannot convert pages with colon in title: " + page_title)
         return
-    if page_title.startswith("User:"):
-        print("There is no strategy yet where to put user pages: " + page_title)
-        return
     if page_title.lower() in weird_pages:
         print("Cannot process, pandoc fails: " + page_title)
         return
-    path_in = getfile_insensitive(root_in, page_title + ".mw")
-    if path_in is None:
+    path_in = os.path.join(root_in, page_title + ".mw")
+    if not os.path.exists(path_in):
         print("Could not find " + page_title)
         return
     path_out = os.path.join(os.path.join(root_out, "pages"), page_title + ".md")
-    path_out_caseinsensitive = getfile_insensitive(os.path.join(root_out, "pages"), page_title + ".md")
-    if path_out_caseinsensitive is not None:
+    if os.path.exists(path_out):
         return
-    convertFile(path_in, path_out)
-    convertLinks(path_out, root_in, root_out)
+    convert_file(path_in, path_out)
+    convert_links(path_out, root_in, root_out)
 
-
-def getfile_insensitive(directory, filename):
-    filename = filename.lower()
-    for f in os.listdir(directory):
-        newpath = os.path.join(directory, f)
-        if os.path.isfile(newpath) and f.lower() == filename:
-            return newpath
-
-def convertFile(path_in, path_out):
+def convert_file(path_in, path_out):
     run_pandoc(path_in, path_out)
     with open(path_out, 'r+') as f:
         lines = f.readlines()
@@ -64,7 +52,7 @@ def convertFile(path_in, path_out):
             f.write(line)
 
 
-def convertLinks(path_out, root_in, root_out):
+def convert_links(path_out, root_in, root_out):
     output = read_file(path_out)
     links = markdown_link_extractor.getlinks(output)
     for link in links:
