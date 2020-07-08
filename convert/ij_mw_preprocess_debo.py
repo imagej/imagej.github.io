@@ -158,7 +158,6 @@ def replace_template(document_content, match_content, template_name, template_co
     if template_name in inline_includes:
         # handle inline templates
         template_content = re.sub(r'\'', r'"', template_content)
-        # the &nbsp; is there because otherwise the converted document surrounds this with `` if it is a single line which creates a liquid syntax error
         document_content = document_content.replace(match_content,
                                                     "\n{% include " + template_name + " content=\'" + template_content + "\' %}\n")
     else:
