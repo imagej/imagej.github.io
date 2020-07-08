@@ -121,6 +121,10 @@ def process_file(file_path, str_content):
         else:
             break
     content_tmp = re.sub(r'{{[ \n]*([A-Za-z0-9_]*)[ \n]*}}', r'%Replace% \1 %Replace% ', content_tmp)
+    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*([^x ][^ |]*)[ ]*\|[ ]*link=(?!http)(.*)[ ]*\]\]',
+                         r'<a href="\3"><img src="\1" width="\2"/></a>', content_tmp)
+    content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*x([^ |]*)[ ]*\|[ ]*link=(.*)[ ]*\]\]',
+                         r'<a href="\3"><img src="\1" height="\2"/></a>', content_tmp)
     content_tmp = replace_text('notice', 'info-box', content_tmp)
     content_tmp = replace_text('infobox', 'info-box', content_tmp)
     content_tmp = replace_text('warning', 'warning-box', content_tmp)
@@ -228,6 +232,7 @@ def convert(path_in, path_out, layout, title):
 
         # do replacements in md format
         content_tmp = re.sub(r'<http(.*)>', r'http\1', content_tmp)
+        content_tmp = re.sub(r'<img src=\"(?!http)([^\"]*)\"', r'<img src="/images/pages/\1"', content_tmp)
 
     front_matter = add_front_matter(content_tmp, path_in, layout, title)
 
