@@ -1,5 +1,109 @@
-<div class="logo">
-
-    {{include.content}}
-    
-</div>
+{% assign name_parts = include.content | split: '|' %}
+{% assign name = name_parts[0] | strip %}
+{% assign image_url = name | append: "-icon.png" %}
+{% if name == "Alida" %}
+{% assign image_url = "Alida-logo.jpg" %}
+{% endif %}
+{% if name == "Android" %}
+{% assign image_url = "Android-robot.svg" %}
+{% endif %}
+{% if name == "Bio-Formats" %}
+{% assign image_url = "Bio-formats-icon.png" %}
+{% endif %}
+{% if name == "Bio7" %}
+{% assign image_url = "Bio7-icon.png" %}
+{% endif %}
+{% if name == "BoneJ" %}
+{% assign image_url = "Bonej-icon.png" %}
+{% endif %}
+{% if name == "CellProfiler" %}
+{% assign image_url = "Cellprofiler-icon.png" %}
+{% endif %}
+{% if name == "ClearVolume" %}
+{% assign image_url = "Clearvolume-icon.png" %}
+{% endif %}
+{% if name == "Eclipse" %}
+{% assign image_url = "Eclipse-luna-icon.png" %}
+{% endif %}
+{% if name == "Fiji" %}
+{% assign image_url = "Fiji-icon.png" %}
+{% endif %}
+{% if name == "Git" %}
+{% assign image_url = "Git-icon.png" %}
+{% endif %}
+{% if name == "GitHub" %}
+{% assign image_url = "Octocat.png" %}
+{% endif %}
+{% if name == "Icy" %}
+{% assign image_url = "Icy-icon.png" %}
+{% endif %}
+{% if name == "ImageJ" %}
+{% assign image_url = "Imagej2-icon.png" %}
+{% endif %}
+{% if name == "ImageJ1" %}
+{% assign image_url = "Imagej1-icon.png" %}
+{% endif %}
+{% if name == "ImageJ2" %}
+{% assign image_url = "Imagej2-icon.png" %}
+{% endif %}
+{% if name == "ImgLib2" %}
+{% assign image_url = "Imglib2-icon.png" %}
+{% endif %}
+{% if name == "KNIME" %}
+{% assign image_url = "Knime-icon.png" %}
+{% endif %}
+{% if name == "Linux" %}
+{% assign image_url = "tux.png" %}
+{% endif %}
+{% if name == "LOCI" %}
+{% assign image_url = "loci-logo.png" %}
+{% endif %}
+{% if name == "MacOS" %}
+{% assign image_url = "osx.png" %}
+{% endif %}
+{% if name == "Maven" %}
+{% assign image_url = "Maven-icon.png" %}
+{% endif %}
+{% if name == "Micro-Manager" %}
+{% assign image_url = "Mm-icon.jpg" %}
+{% endif %}
+{% if name == "MiToBo" %}
+{% assign image_url = "MiToBo-logo.png" %}
+{% endif %}
+{% if name == "OME" %}
+{% assign image_url = "Ome-icon.png" %}
+{% endif %}
+{% if name == "OMERO" %}
+{% assign image_url = "Omero-icon.png" %}
+{% endif %}
+{% if name == "Orbit" %}
+{% assign image_url = "Orbit-logo.png" %}
+{% endif %}
+{% if name == "OS X" %}
+{% assign image_url = "osx.png" %}
+{% endif %}
+{% if name == "Pi" %}
+{% assign image_url = "Pi.svg" %}
+{% endif %}
+{% if name == "Plugin" %}
+{% assign image_url = "plugin.png" %}
+{% endif %}
+{% if name == "QuPath" %}
+{% assign image_url = "QuPath-logo.png" %}
+{% endif %}
+{% if name == "SCIFIO" %}
+{% assign image_url = "Scifio-icon.png" %}
+{% endif %}
+{% if name == "SciJava" %}
+{% assign image_url = "Scijava-icon.png" %}
+{% endif %}
+{% if name == "SLIM Curve" %}
+{% assign image_url = "Slim-curve-icon.png" %}
+{% endif %}
+{% if name == "VCell" %}
+{% assign image_url = "Vcell-icon.png" %}
+{% endif %}
+{% if name == "Windows" %}
+{% assign image_url = "win.png" %}
+{% endif %}
+<a href="{{name}}"><img class="logo" src="{{ image_url | prepend: '/images/logos/'}}" height="48px"/></a>
