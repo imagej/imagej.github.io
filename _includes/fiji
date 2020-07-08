@@ -1,0 +1,5 @@
+<div class="fiji">
+
+    {{page.content}}
+    
+</div>

@@ -1,0 +1,5 @@
+<div class="tip">
+
+    {{page.content}}
+    
+</div>

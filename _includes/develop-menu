@@ -1,0 +1,5 @@
+<div class="develop-menu">
+
+    {{page.content}}
+    
+</div>

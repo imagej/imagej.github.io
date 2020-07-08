@@ -1,0 +1,5 @@
+<div class="project">
+
+    {{page.content}}
+    
+</div>

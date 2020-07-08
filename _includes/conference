@@ -1,0 +1,5 @@
+<div class="conference">
+
+    {{page.content}}
+    
+</div>

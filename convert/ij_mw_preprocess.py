@@ -1,6 +1,10 @@
 import os
 import re
 
+misbehavingIncludes = ["infobox", "imagej1", "citation", "person", "publication", "javadoc", "github", "tip", "testimonial"]
+inline_includes = ["person", "github", "bc", "listofupdatesites", "list-of-update-sites", "key", "key-press", "learn",
+                   "project", "clear", "develop-menu", "developmenu", "big-link", "biglink", "path", "inline", "logo", "toc"]
+
 def read_file(file_path):
 
     #TODO: Sense box 'float = right' option and specifiy sidebox-right
@@ -74,6 +78,10 @@ def get_categories(file_path):
 
     return str_categories
 
+
+template_regex = r'[ \t]*{{[\n]*([A-Za-z0-9_ ]*)[ \n]*\|[ \n]*([^}]*)[ \n]*}}'
+
+
 def process_file(file_path, str_content):
 
     # perform regex replacements
@@ -85,16 +93,81 @@ def process_file(file_path, str_content):
     content_tmp = re.sub(r'\|[ \n]float = (.*)\n', '', content_tmp)
     content_tmp = re.sub(r'\|[ \n]text =', '', content_tmp)
 
+    # fix youtube template
+    content_tmp = re.sub(r'{{[\\]*#widget:YouTube\|id=([\w\d\-_]*)[a-z=|\d]*}}',
+                         r'{% include youtube url="https://www.youtube.com/embed/\1" %} ', content_tmp)
+    # TODO parse flash template?!, removing for now because it creates liquid issues
+    content_tmp = re.sub(r'{{[\\]*#widget:flash\|[^}]*}}', r'TODO FLASH WIDGET', content_tmp)
+    # TODO parse google spreadsheet template, removing for now because it creates liquid issues
+    content_tmp = re.sub(r'{{[\\]*#widget:Google Spreadsheet[ \n]*\|[^}]*}}', r'TODO GOOGLE SPREADSHEET WIDGET', content_tmp)
+    # TODO parse SWITCHtube template, removing for now because it creates liquid issues
+    content_tmp = re.sub(r'{{[\\]*#widget:SWITCHtube\|[^}]*}}', r'TODO GOOGLE SPREADSHEET WIDGET', content_tmp)
+
     # replace '{{ stuff }}' mediawiki syntax with '{% include stuff %}` liquid
-    content_tmp = re.sub(r'{{[ \n]*([A-Za-z0-9_]*)[ \n]*\|[ \n]*([^}]*)[ \n]*}}',r'{% include \1 content="\2" %}' ,content_tmp)
+    pos = -1
+    while True:
+        match = re.search(template_regex, content_tmp)
+        if match:
+            if match.start() == pos:
+                break
+            pos = match.start()
+            content_tmp = replace_template(content_tmp, match[0], match[1], match[2])
+        else:
+            break
     content_tmp = re.sub(r'{{[ \n]*([A-Za-z0-9_]*)[ \n]*}}', r'%Replace% \1 %Replace% ', content_tmp)
-    content_tmp = replace_text('Notice', 'info-box', content_tmp)
-    content_tmp = replace_text('Warning', 'warning-box', content_tmp)
-    content_tmp = replace_text('Box', 'sidebox-right', content_tmp)
-    
+    content_tmp = replace_text('notice', 'info-box', content_tmp)
+    content_tmp = replace_text('infobox', 'info-box', content_tmp)
+    content_tmp = replace_text('warning', 'warning-box', content_tmp)
+    content_tmp = replace_text('box', 'sidebox-right', content_tmp)
+    content_tmp = replace_text('key-press', 'key', content_tmp)
+    content_tmp = replace_text('biglink', 'big-link', content_tmp)
+    content_tmp = replace_text('bignotice', 'big-notice', content_tmp)
+    content_tmp = replace_text('developmenu', 'develop-menu', content_tmp)
+    content_tmp = replace_text('expandingbox', 'expanding-box', content_tmp)
+    content_tmp = replace_text('githubembed', 'github-embed', content_tmp)
+    content_tmp = replace_text('importingclasses', 'importing-classes', content_tmp)
+    content_tmp = replace_text('listofupdatesites', 'list-of-update-sites', content_tmp)
+    content_tmp = replace_text('personlist', 'person-list', content_tmp)
+    content_tmp = replace_text('userbox', 'user-box', content_tmp)
+
+    # TODO figure out what that is supposed to mean (e.g. Script_Parameters.md)
+    content_tmp = content_tmp.replace("{{!}}", "")
+
     print("processing " + str(get_name(file_path))+ ".mw...")
 
     return content_tmp
+
+
+def replace_template(document_content, match_content, template_name, template_content):
+
+    # first check if another template is in the content of the matched template
+    content_remove_first_bracket = match_content[2:]
+    match = re.search(template_regex, content_remove_first_bracket)
+    if match:
+        # found inside template, replace this first
+        return replace_template(document_content, match[0], match[1], match[2])
+
+    # correct template names with spaces
+    template_name = template_name.strip().replace(" ", "-")
+    template_name = template_name.replace("_", "-")
+    template_name = template_name.lower()
+
+    if template_name in misbehavingIncludes:
+        print("Cannot parse template " + template_name + " at the moment")
+        template_content = "TODO"
+    if template_name in inline_includes:
+        # handle inline templates
+        template_content = re.sub(r'\'', r'"', template_content)
+        # the &nbsp; is there because otherwise the converted document surrounds this with `` if it is a single line which creates a liquid syntax error
+        document_content = document_content.replace(match_content,
+                                                    "\n{% include " + template_name + " content=\'" + template_content + "\' %}\n")
+    else:
+        # handle block templates, capture content
+        document_content = document_content.replace(match_content,
+                                                    "\n{% capture includecontent %}\n" + template_content + "\n{% endcapture %}\n"
+                                                    "\n{% include " + template_name + " content=includecontent %}\n")
+    return document_content
+
 
 def replace_text(old_text, new_text, str_content):
 
@@ -132,6 +205,9 @@ def write_file(file_content, path_out):
     return None
 
 
+autgenerated_line = 'autogenerated: true\n'
+
+
 def convert(path_in, path_out):
 
     processed_mw = process_file(path_in, read_file(path_in))
@@ -142,6 +218,10 @@ def convert(path_in, path_out):
 
     # open output file and create list
     content_tmp = read_file(path_out)
+
+    # do replacements in md format
+    content_tmp = re.sub(r'<http(.*)>', r'http\1', content_tmp)
+
     front_matter = add_front_matter(content_tmp, path_in)
 
     # rewrite `.md` file with front matter
@@ -150,11 +230,15 @@ def convert(path_in, path_out):
         f.close()
 
     os.remove(tmpFile)
+
+    with open(path_out, 'r+') as f:
+        lines = f.readlines()
+        lines[0] = lines[0] + autgenerated_line
+        f.seek(0)
+        for line in lines:
+            f.write(line)
     return None
 
 
 def run_pandoc(path_in, path_out):
-    # determine current file name:
-    current_file = get_name(path_in) + ".mw"
-    print("running pandoc on file: {0}".format(current_file))
     os.system('pandoc {0} -f mediawiki -t gfm -s -o {1}'.format(path_in, path_out))

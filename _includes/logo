@@ -1,0 +1,5 @@
+<div class="logo">
+
+    {{page.content}}
+    
+</div>

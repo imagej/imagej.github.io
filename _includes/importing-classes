@@ -1,0 +1,5 @@
+<div class="importing-classes">
+
+    {{page.content}}
+    
+</div>
