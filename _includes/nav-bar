@@ -8,7 +8,7 @@
         <a href="{{"/pages/Development" | relative_url}}">Develop</a>
         <a href="{{"/pages/News" | relative_url}}">News</a>
         <a href="{{"/pages/Upcoming_Events" | relative_url}}">Events</a>
-        <a href="https://forum.image.sc/">Help</a>
+        <a href="{{"/pages/Help" | relative_url}}">Help</a>
 
         <div id="ham-nav" class="ham-drop" onclick="hamActivate(this)">
             <div class="bar1"></div>
@@ -23,7 +23,7 @@
                 <a href="{{"/pages/Development" | relative_url}}">Develop</a>
                 <a href="{{"/pages/News" | relative_url}}">News</a>
                 <a href="{{"/pages/Upcoming_Events" | relative_url}}">Events</a>
-                <a href="https://forum.image.sc/">Help</a>
+                <a href="{{"/pages/Help" | relative_url}}">Help</a>
             </div>
         </div>
     </div>

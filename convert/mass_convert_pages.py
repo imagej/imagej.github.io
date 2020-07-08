@@ -38,6 +38,9 @@ def iteratively_convert(root_in, root_out, page_title):
         print("Cannot process names with parentheses: " + page_title)
         return
     if ":" in page_title:
+        if "Special:" in page_title:
+            # print("Cannot create mediawiki special pages")
+            return
         if "Category:" in page_title:
             layout = "category"
             metapage = True
@@ -84,3 +87,4 @@ iteratively_convert(root_in, root_out, "Development")
 iteratively_convert(root_in, root_out, "News")
 iteratively_convert(root_in, root_out, "Introduction")
 iteratively_convert(root_in, root_out, "Upcoming_Events")
+iteratively_convert(root_in, root_out, "Help")
