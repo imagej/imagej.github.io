@@ -1,6 +1,6 @@
 import os
 import markdown_link_extractor
-from ij_mw_preprocess import *
+from ij_mw_preprocess_debo import *
 
 pandoc_failing = ["Versioning",
                "2012-03-20_-_Unit_tests_for_ImageJ_1.46",
