@@ -1,8 +1,8 @@
 ---
-title: Analysis
-breadcrumb: Analysis
+title: Tutorials
+breadcrumb: Tutorials
 author: admin
-categories: admin
+categories: admin, plugins
 layout: page
 use_math: false
 ---

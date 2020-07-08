@@ -1,6 +1,6 @@
 ---
-title: Analysis
-breadcrumb: Analysis
+title: Deconvolution
+breadcrumb: Deconvolution
 author: admin
 categories: admin
 layout: page

@@ -1,6 +1,6 @@
 ---
-title: Analysis
-breadcrumb: Analysis
+title: Citable
+breadcrumb: Citable
 author: admin
 categories: admin
 layout: page

@@ -1,6 +1,6 @@
 ---
-title: Analysis
-breadcrumb: Analysis
+title: SciJava
+breadcrumb: SciJava
 author: admin
 categories: admin
 layout: page

@@ -1,6 +1,6 @@
 ---
-title: Analysis
-breadcrumb: Analysis
+title: Scripting
+breadcrumb: Scripting
 author: admin
 categories: admin
 layout: page

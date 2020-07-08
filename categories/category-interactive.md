@@ -1,6 +1,6 @@
 ---
-title: Analysis
-breadcrumb: Analysis
+title: Interactive
+breadcrumb: Interactive
 author: admin
 categories: admin
 layout: page
