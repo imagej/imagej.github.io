@@ -8,9 +8,7 @@ categories: Plugins,ImageScience
 description: test description
 ---
 
-{% include Infobox content="software = ImageScience | name = TransformJ
-| maintainer = The
-[TransformJ](http://imagescience.org/meijering/software/transformj/)
+The [TransformJ](http://imagescience.org/meijering/software/transformj/)
 suite of plugins offers geometrical image transformation and
 manipulation.
 

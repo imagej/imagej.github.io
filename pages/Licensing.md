@@ -8,20 +8,24 @@ categories:
 description: test description
 ---
 
-{% include info-box content="This page describes the *legal* structure
+{% capture includecontent %} This page describes the *legal* structure
 of [SciJava](SciJava "wikilink") projects.
 
   - For information on their *technical* structure, see
     [Architecture](Architecture "wikilink").
   - For information on their *social* structure, see
-    [Governance](Governance "wikilink")." %}
+    [Governance](Governance "wikilink").
+
+{% endcapture %}
+
+{% include info-box content=includecontent %}
 
 %Replace% LicensesMenu %Replace% The [ImageJ](ImageJ "wikilink")
 project, and related projects in the [SciJava](SciJava "wikilink")
 component collection, are licensed as [open
 source](open_source "wikilink") software (OSS) projects.
 
-For an introduction to OSS licensing, see <http://choosealicense.com/>.
+For an introduction to OSS licensing, see http://choosealicense.com/.
 
 The table below summarizes the dominant license of each project's
 components.

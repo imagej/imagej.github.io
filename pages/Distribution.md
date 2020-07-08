@@ -8,8 +8,8 @@ categories: Development
 description: test description
 ---
 
-\_\_NOTOC\_\_{% include DevelopMenu content="tutorials" %}If you create
-a useful extension of ImageJ—e.g., a [plugin](plugin "wikilink"),
+\_\_NOTOC\_\_ {% include develop-menu content='tutorials' %} If you
+create a useful extension of ImageJ—e.g., a [plugin](plugin "wikilink"),
 [script](script "wikilink") or [macro](macro "wikilink")—the next step
 is to *distribute* it to others, including:
 
@@ -224,8 +224,9 @@ use them.
 <tr class="odd">
 <td><ul>
 <li>Prepare an HTML page modeled after the <a href="https://imagej.net/plugins/index.html">list of ImageJ 1.x plugins</a>.</li>
-<li>Email it to {% include Person content="Rasband" %}, the developer of ImageJ 1.x, and sole maintainer of the <a href="https://imagej.net/index.html">ImageJ 1.x website</a>.</li>
-</ul></td>
+<li>Email it to</li>
+</ul>
+<p>{% include person content='TODO' %} , the developer of ImageJ 1.x, and sole maintainer of the <a href="https://imagej.net/index.html">ImageJ 1.x website</a>.</p></td>
 </tr>
 <tr class="even">
 <td></td>

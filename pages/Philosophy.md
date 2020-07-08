@@ -104,7 +104,7 @@ remain possible to use existing [plugins](plugins "wikilink") and
 
 ## Release early, release often
 
-{% include sidebox-right content="What's the alternative?
+{% capture includecontent %} What's the alternative?
 
 `Some projects opt to release their entire software stack with a single monolithic version number. This has one extremely nice ramification: it clearly communicates which versions of which software components are intended to be compatible with one another.`
 
@@ -237,7 +237,11 @@ More
 
 </table>
 
-" %} ImageJ subscribes to the [release early, release
+{% endcapture %}
+
+{% include sidebox-right content=includecontent %}
+
+ImageJ subscribes to the [release early, release
 often](wikipedia:Release_early,_release_often "wikilink") (RERO) mantra
 often cited in software engineering circles. In particular—and
 especially because there is a small core development team—the project is

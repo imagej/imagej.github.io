@@ -13,7 +13,9 @@ three-dimensional modeling and image stitching, registration, editing
 and annotation.
 
 See [TrakEM2 snapshots](http://www.ini.uzh.ch/~acardona/snapshots.html)
-for an overview. {% include TOC content="small" %}
+for an overview.
+
+{% include toc content='small' %}
 
 ## Features
 
@@ -306,11 +308,15 @@ and
 ![Example TrakEM2 segmentations, including Ball, Pipe, Profile, AreaList
 and floating text labels.](TrakEM2_Display_segmentations.png
 "Example TrakEM2 segmentations, including Ball, Pipe, Profile, AreaList and floating text labels.")
-{% include Clear content="left" %}
+
+{% include clear content='left' %}
 
 ## Publication
 
-  - {% include Publication content="TrakEM2" %}
+  - 
+{% capture includecontent %} TODO {% endcapture %}
+
+{% include publication content=includecontent %}
 
 [Category:Plugins](Category:Plugins "wikilink")
 [Category:Registration](Category:Registration "wikilink")

@@ -8,11 +8,9 @@ categories: Related Software,Citable
 description: test description
 ---
 
-{% include Infobox content="name = BoneJ 1.x | software = ImageJ | logo
-= ![Bonej-icon.png](Bonej-icon.png "Bonej-icon.png") | author = BoneJ is
-a plugin for bone image analysis in [ImageJ](ImageJ "wikilink"). It
-provides free, open source tools for trabecular geometry and whole bone
-shape analysis.
+BoneJ is a plugin for bone image analysis in
+[ImageJ](ImageJ "wikilink"). It provides free, open source tools for
+trabecular geometry and whole bone shape analysis.
 
 ## Experimental release ([BoneJ2](BoneJ2 "wikilink"))
 
@@ -22,20 +20,29 @@ There's a new modernized version of BoneJ available through the ImageJ
 
 ## Installation
 
-{% include Logo content="ImageJ1 | size=24px" %} BoneJ was designed to
-work with plain [ImageJ 1.x](ImageJ_1.x "wikilink").
+{% include logo content='ImageJ1 | size=24px' %}
 
-{% include Logo content="Fiji | size=24px" %} BoneJ can be installed
-into [Fiji](Fiji "wikilink"), but you must **use the Java-6 version of
-Fiji, not the current Java-8 version**:
+`BoneJ was designed to work with plain `[`ImageJ`` 
+ ``1.x`](ImageJ_1.x "wikilink")`.`
+
+{% include logo content='Fiji | size=24px' %}
+
+`BoneJ can be installed into `[`Fiji`](Fiji "wikilink")`, but you must `**`use`` 
+ ``the``   ``Java-6``   ``version``   ``of``   ``Fiji,``   ``not`` 
+ ``the``   ``current``   ``Java-8``   ``version`**`:`
 
   - Download the final Java-6 version of Fiji labeled “2017 May 30” from
     [here](Fiji/Downloads#Java_6 "wikilink").
   - Unpack it somewhere beneath your home folder.
   - Download and install `BoneJ_.jar` into that installation's `plugins`
     folder.
-  - Launch Fiji and run {% include bc content="Plugins | 3D Viewer" %}
-    to trigger installation of the [3D Viewer](3D_Viewer "wikilink").
+  - Launch Fiji and run
+
+{% include bc content='Plugins | 3D Viewer' %}
+
+`to trigger installation of the `[`3D`` 
+ ``Viewer`](3D_Viewer "wikilink")`.`
+
   - Restart Fiji.
 
 For technical details about ImageJ and Fiji using Java 6 vs. Java 8, see
@@ -44,13 +51,16 @@ the [Java 8](Java_8 "wikilink") page.
 ## BoneJ and pQCT
 
 BoneJ and pQCT plug-ins are in the process of separation. The latter
-have their own \[<https://imagej.net/PQCT>| update site\], and they
+have their own \[https://imagej.net/PQCT| update site\], and they
 don't need BoneJ to work. However, if you download `BoneJ_.jar` from
-<http://bonej.org/> it still includes older versions of the pQCT tools.
+http://bonej.org/ it still includes older versions of the pQCT tools.
 
 ## Publication
 
-  - {% include Publication content="BoneJ" %}
+  - 
+{% capture includecontent %} TODO {% endcapture %}
+
+{% include publication content=includecontent %}
 
 [Category:Related Software](Category:Related_Software "wikilink")
 [Category:Citable](Category:Citable "wikilink")

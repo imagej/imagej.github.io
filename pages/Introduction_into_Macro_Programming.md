@@ -8,7 +8,9 @@ categories: Scripting
 description: test description
 ---
 
-{% include Learn content="languages" %}= Why Macros? =
+{% include learn content='languages' %}
+
+# Why Macros?
 
 Macros can be used to
 
@@ -18,11 +20,13 @@ Macros can be used to
   - add tools to the toolbar
   - add keyboard shortcuts
 
-{% include info-box content="message = Please be aware that there are
+{% capture includecontent %} message = Please be aware that there are
 several other available [scripting](scripting "wikilink") languages that
 are more powerful than macros, too\! See the sidebar on the right, as
 well as the [Overcoming limitations](#Overcoming_limitations "wikilink")
-section below." %}
+section below. {% endcapture %}
+
+{% include info-box content=includecontent %}
 
 # Variables
 
@@ -335,10 +339,10 @@ for (i=1; i<=nSlices; i++) {
 # The recorder
 
 Typically, macros are not written from scratch, but recorded using the
-Macro Recorder: Just click on {% include bc content="Plugins | Macros |
-Record..." %} and perform some actions. These actions will be recorded
-in the recorder window, and you can hit the *Create* button to open the
-recorded instructions in an editor:
+Macro Recorder: Just click on {% include bc content='Plugins | Macros |
+Record...' %}
+
+`and perform some actions. These actions will be recorded in the recorder window, and you can hit the `*`Create`*` button to open the recorded instructions in an editor:`
 
 ![Macro\_recorder.png](Macro_recorder.png "Macro_recorder.png")
 
@@ -422,7 +426,9 @@ tools into the toolbar:
 
 ``` java
 // A click on the empty rectangle will have the same
-// effect as {% include bc content="File | Save As | Jpeg..." %}
+// effect as
+{% include bc content='File | Save As | Jpeg...' %}
+
 
 macro "Save As JPEG Action Tool - C000R11ee" {
     saveAs("Jpeg");
@@ -457,8 +463,8 @@ a given folder, you might want to have a look a the tutorial *[How to
 apply a common operation to a complete
 directory](How_to_apply_a_common_operation_to_a_complete_directory "wikilink")*
 or at the macro template that you can open in the [Script
-Editor](Script_Editor "wikilink") via {% include bc content="Templates |
-Macros | Process Folder" %}.
+Editor](Script_Editor "wikilink") via {% include bc content='Templates |
+Macros | Process Folder' %} .
 
 ## Resizing to a given width of the selection bounds
 
@@ -742,10 +748,10 @@ Macro to mimic the merge sides command in the original BioRad MRC600
 confocal.
 
 For an example raw image, see
-<http://www.flickr.com/photos/mcammer/1618746622/>
+http://www.flickr.com/photos/mcammer/1618746622/
 
 For an example result, see
-<http://www.flickr.com/photos/mcammer/8551068739/>
+http://www.flickr.com/photos/mcammer/8551068739/
 
 Splits a grayscale image and merges. Works on stacks.
 

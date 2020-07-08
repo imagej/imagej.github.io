@@ -8,15 +8,12 @@ categories: Plugins
 description: test description
 ---
 
-{% include Infobox content="software = ImageJ | name = Upload Sample
-Image | maintainer = Johannes Schindelin | author = Johannes Schindelin
-| source = == Upload Sample Image ==
+\== Upload Sample Image ==
 
-Use the {% include bc content="Help | Upload Sample Image" %} command to
-upload a file (not just images) meant for the ImageJ developers. You
-might need to do this e.g. when the file is too large for email
-attachments, or when you want to accompany a [bug
-report](Report_a_Bug "wikilink") with a large image.
+Use the {% include bc content='Help | Upload Sample Image' %}
+
+`command to upload a file (not just images) meant for the ImageJ developers. You might need to do this e.g. when the file is too large for email attachments, or when you want to accompany a `[`bug`` 
+ ``report`](Report_a_Bug "wikilink")` with a large image.`
 
 To prevent abuse of this facility, access to the uploaded images is
 restricted to trusted admins of [this

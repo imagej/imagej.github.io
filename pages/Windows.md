@@ -8,10 +8,13 @@ categories: Platforms
 description: test description
 ---
 
-%Replace% PlatformsMenu %Replace% {% include Minibox
-content="logo=Win.png | blurb=[Where do you want to go
-today?](wikipedia:Where_do_you_want_to_go_today? "wikilink")"
-%}[Windows](wikipedia:Microsoft_Windows "wikilink") is
+%Replace% PlatformsMenu %Replace% {% capture includecontent %}
+logo=Win.png | blurb=[Where do you want to go
+today?](wikipedia:Where_do_you_want_to_go_today? "wikilink") {%
+endcapture %}
+
+{% include minibox content=includecontent %}
+[Windows](wikipedia:Microsoft_Windows "wikilink") is
 [Microsoft](wikipedia:Microsoft "wikilink")'s family of operating
 systems. It is [the most prevalent desktop computer
 platform](https://www.netmarketshare.com/operating-system-market-share.aspx).
@@ -37,10 +40,12 @@ If text and other UI elements appear tiny on your
     Java](Troubleshooting#Checking_the_Java_version "wikilink").
   - Verify that you are running Windows 10 (Windows 7 and 8 do not do
     HiDPI scaling).
-  - In {% include bc content="ImageJ.exe|Properties|Compatibility" %},
-    check the "Disable display scaling on high DPI settings" option. Try
-    with it enabled, as well as disabled—some users have reported
-    success only with this option *off*, and others only with it *on*.
+  - In
+
+{% include bc content='ImageJ.exe|Properties|Compatibility' %} , check
+the "Disable display scaling on high DPI settings" option. Try with it
+enabled, as well as disabled—some users have reported success only with
+this option *off*, and others only with it *on*.
 
 # Frequently Asked Questions
 

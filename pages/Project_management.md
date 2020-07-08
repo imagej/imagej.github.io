@@ -86,7 +86,7 @@ Issues](https://guides.github.com/features/issues/):
 You can search issues using the ImageJ search portal's GitHub button
 here:
 
-{% include BigLink content="url=<https://search.imagej.net/>" %}
+{% include big-link content='url=https://search.imagej.net/' %}
 
 Previously, some projects used [Trac](https://trac.edgewall.org/) for
 issue tracking and roadmapping, but all Trac issues have now been

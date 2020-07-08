@@ -32,10 +32,12 @@ https://sites.imagej.net/\<imagej-wiki-account\>. If you do not have an
 ImageJ Wiki account yet, no need to worry, you can register one while
 setting up your update site.
 
-{% include info-box content="There are some minimal *Terms of Service*
+{% capture includecontent %} There are some minimal *Terms of Service*
 for personal update sites. See the [Personal Update Site Terms of
-Service](Personal_Update_Site_Terms_of_Service "wikilink") for details."
-%}
+Service](Personal_Update_Site_Terms_of_Service "wikilink") for details.
+{% endcapture %}
+
+{% include info-box content=includecontent %}
 
 First of all, create a wiki account on https://imagej.net.
 
@@ -44,8 +46,9 @@ the one for your wiki account. In order to set your update site
 password, use the link at the bottom of the wiki or click
 [here](Special:ChangeUploadPassword "wikilink").
 
-start the updater with {% include bc content="Help | Update" %} and
-click on the *Manage update sites* button:
+start the updater with {% include bc content='Help | Update' %}
+
+`and click on the `*`Manage``   ``update``   ``sites`*` button:`
 
 ![Mamed-3.jpg](Mamed-3.jpg "Mamed-3.jpg")
 
@@ -94,8 +97,10 @@ and grant those users upload permission to the new site.
 
 If you have an own server or web space with WebDAV, SFTP or SSH access,
 you can create a directory in that web space and initialize it as an
-update site, too. Just call the updater with {% include bc content="Help
-| Update" %} and click the *Manage update sites* button:
+update site, too. Just call the updater with {% include bc content='Help
+| Update' %}
+
+`and click the `*`Manage``   ``update``   ``sites`*` button:`
 
 ![Mamed-3.jpg](Mamed-3.jpg "Mamed-3.jpg")
 
@@ -116,12 +121,12 @@ In case you want to use an SFTP/SSH server, it must have an empty,
 public web accessible folder where you intend to publish your updates.
 The ImageJ updater will not create that empty folder.
 
-{% include warning-box content="**A note about SSH and known\_hosts:**
-For ImageJ to connect to your server over SSH, you must have configured
-your SSH credentials as normal—i.e.: `$HOME/.ssh/known_hosts` must
-contain the host key, and optionally `$HOME/.ssh/config` may contain the
-host configuration/credentials. We recommend that the given host be
-specified in `$HOME/.ssh/config` and equipped with a private key.  
+{% capture includecontent %} **A note about SSH and known\_hosts:** For
+ImageJ to connect to your server over SSH, you must have configured your
+SSH credentials as normal—i.e.: `$HOME/.ssh/known_hosts` must contain
+the host key, and optionally `$HOME/.ssh/config` may contain the host
+configuration/credentials. We recommend that the given host be specified
+in `$HOME/.ssh/config` and equipped with a private key.  
   
 Note that you need to connect with command-line ssh first, to record the
 finger-print of the host. It might be necessary to call `ssh-keyscan
@@ -133,18 +138,21 @@ but the [JSch](http://www.jcraft.com/jsch/) library wanting them in
 `com.jcraft.jsch.JSchException: UnknownHostKey` then you might be bitten
 by this discrepancy; try using the `ssh-keyscan` invocation above. If
 you still have trouble, please write to the [Image.sc
-Forum](https://forum.image.sc/) to troubleshoot further." %}
+Forum](https://forum.image.sc/) to troubleshoot further. {% endcapture
+%}
+
+{% include warning-box content=includecontent %}
 
 *Example:* Let's assume you have SFTP access to a machine known as
 *imagej.example.org* to the internet, and let's assume that you have a
 user account *myself* that has write access to the path
 */var/www/my-update-site/* on that machine that is served via
-<http://imagej.example.org/my-update-site/>. Then the line you need to
+http://imagej.example.org/my-update-site/. Then the line you need to
 add might look like this:
 
 | Name           | URL                                         | Host                      | Directory on Host        |
 | -------------- | ------------------------------------------- | ------------------------- | ------------------------ |
-| My Update Site | <http://imagej.example.org/my-update-site/> | myself@imagej.example.org | /var/www/my-update-site/ |
+| My Update Site | http://imagej.example.org/my-update-site/ | myself@imagej.example.org | /var/www/my-update-site/ |
 |                |                                             |                           |                          |
 
 If the update site has not been initialized yet (i.e. if nobody else has
@@ -208,14 +216,14 @@ In this case, the plugin we'll be uploading is contained in
 *A\_Jolly\_Useful\_Plugin.jar*.
 
 Select the file to upload, click under the *Stats/Action* column, or
-right-click (on MacOSX, {% include key content="Ctrl" %}+{% include key
-content="click" %}) in any column, for the context menu and select
+right-click (on MacOSX, {% include key content='Ctrl' %} + {% include
+key content='click' %} ) in any column, for the context menu and select
 *Upload to <update site name>*.
 
 ![Upload-to-update-site.png](Upload-to-update-site.png
 "Upload-to-update-site.png")
 
-{% include info-box content="The *Upload to <update site name>* option
+{% capture includecontent %} The *Upload to <update site name>* option
 is only available if you entered your [wiki
 credentials](#Start_the_updater_and_check_your_update_site "wikilink")
 and no other changes are pending. Be aware that the password for the
@@ -224,7 +232,9 @@ password](Update_site_FAQ#How_do_I_set_a_password_for_my_personal_update_site.3F
 This is to avoid potentially corrupting your ImageJ installation. If the
 Upload option is not available, select the *View changes* view and
 resolve any pending changes - e.g. by updating or reverting to **Keep
-as-is**." %}
+as-is**. {% endcapture %}
+
+{% include info-box content=includecontent %}
 
 ### Modifying Dependencies
 
@@ -240,17 +250,21 @@ panel:
 ![How\_to\_setup\_a\_plugin\_distribution\_site-15.jpg](How_to_setup_a_plugin_distribution_site-15.jpg
 "How_to_setup_a_plugin_distribution_site-15.jpg")
 
-{% include info-box content="The *Details* panel can only be edited if
+{% capture includecontent %} The *Details* panel can only be edited if
 you have entered upload credentials for the appropriate update site.
 After modifying the *Details* panel you can mark the jar for upload,
-even though the jar contents itself has not changed." %}
+even though the jar contents itself has not changed. {% endcapture %}
 
-{% include warning-box content="Sometimes the updater will mis-detect
-your dependencies. This may prevent you from uploading to your update
-site\! If a dependency is wrong, you can manually add or delete
-dependencies from the *Details* tab to correct the problem. Please [let
-us know](Contact "wikilink") when this happens so we can try to improve
-the updater" %}
+{% include info-box content=includecontent %}
+
+{% capture includecontent %} Sometimes the updater will mis-detect your
+dependencies. This may prevent you from uploading to your update site\!
+If a dependency is wrong, you can manually add or delete dependencies
+from the *Details* tab to correct the problem. Please [let us
+know](Contact "wikilink") when this happens so we can try to improve the
+updater {% endcapture %}
+
+{% include warning-box content=includecontent %}
 
 ### Upload your files
 

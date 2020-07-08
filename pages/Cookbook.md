@@ -31,7 +31,7 @@ ImageJ. %Replace% DownloadFiji %Replace%
 
 |                                                                        |                                                                                        |
 | ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| From the Fiji menu, select {% include bc content="Help | Update..." %} | ![1\_Update\_Fiji.png](1_Update_Fiji.png "1_Update_Fiji.png")                          |
+| From the Fiji menu, select {% include bc content='Help | Update...' %} | ![1\_Update\_Fiji.png](1_Update_Fiji.png "1_Update_Fiji.png")                          |
 | Click the **Manage update sites** button                               | ![2\_Manage\_update\_sites.png](2_Manage_update_sites.png "2_Manage_update_sites.png") |
 | Check the **Cookbook** update site                                     | ![3\_Enable\_cookbook.png](3_Enable_cookbook.png "3_Enable_cookbook.png")              |
 | Close the **Manage update sites** dialog                               |                                                                                        |
@@ -41,8 +41,7 @@ ImageJ. %Replace% DownloadFiji %Replace%
 
 ## Source
 
-The source code is {% include GitHub
-content="org=fiji|repo=cookbook|label=on GitHub" %}.
+The source code is {% include github content='TODO' %} .
 
 ## Credits
 
@@ -52,17 +51,40 @@ created by Tony Collins.
 
 The Cookbook technical writer team includes:
 
-  - {% include Person content="Rueden" %} (technical oversight and
-    maintenance)
-  - {% include Person content="Apal4" %} (January 2014 - May 2015)
-  - {% include Person content="Schindelin" %} (June 2013 - November
-    2014)
-  - {% include Person content="Khildebrand" %} (June 2013 - December
-    2013)
-  - {% include Person content="Amacall" %} (June 2013 - December 2013)
-  - {% include Person content="Ruizhi" %} (November 2013 - December
-    2013)
-  - {% include Person content="Gtcwildfire" %} (June 2013 - August 2013)
+  - 
+{% include person content='TODO' %}
+
+`(technical oversight and maintenance)`
+
+  - 
+{% include person content='TODO' %}
+
+`(January 2014 - May 2015)`
+
+  - 
+{% include person content='TODO' %}
+
+`(June 2013 - November 2014)`
+
+  - 
+{% include person content='TODO' %}
+
+`(June 2013 - December 2013)`
+
+  - 
+{% include person content='TODO' %}
+
+`(June 2013 - December 2013)`
+
+  - 
+{% include person content='TODO' %}
+
+`(November 2013 - December 2013)`
+
+  - 
+{% include person content='TODO' %}
+
+`(June 2013 - August 2013)`
 
 The plugins featured in the Cookbook were collated from various sources
 and have various authors and licenses.

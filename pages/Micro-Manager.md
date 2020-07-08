@@ -12,7 +12,10 @@ description: test description
 
 ## Publication
 
-  - {% include Publication content="Micro-Manager" %}
+  - 
+{% capture includecontent %} TODO {% endcapture %}
+
+{% include publication content=includecontent %}
 
 [Category:Related Software](Category:Related_Software "wikilink")
 [Category:Citable](Category:Citable "wikilink")

@@ -8,7 +8,7 @@ categories: Development,IDEs
 description: test description
 ---
 
-{% include DevelopMenu content="source" %}This article explains how to
+{% include develop-menu content='source' %} This article explains how to
 install and configure IntelliJ IDEA for use with
 [ImageJ](ImageJ "wikilink") development. Directions correspond to
 IntelliJ IDEA 11.1, and may need adjustment for other versions.
@@ -27,11 +27,14 @@ IntelliJ IDEA 11.1, and may need adjustment for other versions.
 
 ## Import the ImageJ source
 
-1.  From the IDEA menu, choose {% include bc content="Version
-    Control|Checkout from Version Control|Git" %}
-2.  For the Git Repository URL, enter: <git://github.com/imagej/imagej>
-3.  Specify a Parent Directory, click Clone, and wait
-4.  When prompted, click Yes to create an IntelliJ IDEA project from the
+1.  From the IDEA menu, choose
+
+{% include bc content='Version Control|Checkout from Version
+Control|Git' %}
+
+1.  For the Git Repository URL, enter: <git://github.com/imagej/imagej>
+2.  Specify a Parent Directory, click Clone, and wait
+3.  When prompted, click Yes to create an IntelliJ IDEA project from the
     sources
 
 On some platforms, the first time you perform this procedure, you may be
@@ -42,14 +45,22 @@ prompted to select the project JDK:
 
 ## Launch the program
 
-1.  Choose {% include bc content="Run|Edit Configurations" %} from the
-    menu
-2.  Click the Plus icon and choose Application
-3.  In the Name field, type "ImageJ"
-4.  Type "net.imagej.Main" for the Main class
-5.  For "Use classpath and JDK of module" select "imagej" from the list
-6.  Click OK
-7.  Choose {% include bc content="Run|Run 'ImageJ'" %} from the menu
+1.  Choose
+
+{% include bc content='Run|Edit Configurations' %}
+
+`from the menu`
+
+1.  Click the Plus icon and choose Application
+2.  In the Name field, type "ImageJ"
+3.  Type "net.imagej.Main" for the Main class
+4.  For "Use classpath and JDK of module" select "imagej" from the list
+5.  Click OK
+6.  Choose
+
+{% include bc content='Run|Run "ImageJ"' %}
+
+`from the menu`  
 
 The project automatically builds before launching, so it may take a
 little while the first time.

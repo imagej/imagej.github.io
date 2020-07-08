@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-{% include Learn content="languages" %}
+{% include learn content='languages' %}
 
 ## Introduction
 
@@ -56,8 +56,11 @@ of that.
 
 ## Jython basics for ImageJ
 
-{% include info-box content="For an introduction in ImageJ scripting
-visit the page [Scripting basics](Scripting_basics "wikilink")." %}
+{% capture includecontent %} For an introduction in ImageJ scripting
+visit the page [Scripting basics](Scripting_basics "wikilink"). {%
+endcapture %}
+
+{% include info-box content=includecontent %}
 
 ### Introduction
 
@@ -128,9 +131,11 @@ The following list links to documentation of the used Python features:
   - [Purpose of the single underscore “\_”
     variable](http://stackoverflow.com/questions/5893163/what-is-the-purpose-of-the-single-underscore-variable-in-python)
 
-{% include GitHubEmbed
-content="org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/Tutorials/Wiki\_Jython\_Tutorial\_1.py"
-%}
+{% capture includecontent %}
+org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/Tutorials/Wiki\_Jython\_Tutorial\_1.py
+{% endcapture %}
+
+{% include github-embed content=includecontent %}
 
 ### Using Scripting Parameters
 
@@ -157,9 +162,11 @@ introduced with this example:
   - [Lambda
     expressions](https://docs.python.org/2/reference/expressions.html#lambda)
 
-{% include GitHubEmbed
-content="org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/Tutorials/Wiki\_Jython\_Tutorial\_2.py"
-%}
+{% capture includecontent %}
+org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/Tutorials/Wiki\_Jython\_Tutorial\_2.py
+{% endcapture %}
+
+{% include github-embed content=includecontent %}
 
 ### A batch opener using `os.walk()`
 
@@ -188,9 +195,11 @@ to additional information:
   - [Truth Value
     Testing](https://docs.python.org/2/library/stdtypes.html#truth-value-testing)
 
-{% include GitHubEmbed
-content="org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/Tutorials/Wiki\_Jython\_Tutorial\_3.py"
-%}
+{% capture includecontent %}
+org=imagej|repo=imagej-scripting|path=src/main/resources/script\_templates/Tutorials/Wiki\_Jython\_Tutorial\_3.py
+{% endcapture %}
+
+{% include github-embed content=includecontent %}
 
 ## Importing Java module and classes
 
@@ -362,11 +371,12 @@ vconcat(Col1, Col2, TwoColumn) # output stored in TwoColumn
 print CvMat(TwoColumn)
 ```
 
-{% include warning-box content="The
-`org.bytedeco.javacpp.opencv_core.Mat` object is different than the
-`org.opencv.core.Mat` \!\! They don't have exactly the same attributes
-and functions. In Fiji you should always use the objects from
-`org.bytedeco.javacpp`." %}
+{% capture includecontent %} The `org.bytedeco.javacpp.opencv_core.Mat`
+object is different than the `org.opencv.core.Mat` \!\! They don't have
+exactly the same attributes and functions. In Fiji you should always use
+the objects from `org.bytedeco.javacpp`. {% endcapture %}
+
+{% include warning-box content=includecontent %}
 
 Similarly there is some apparent redudancy for the function in the
 javacpp API.

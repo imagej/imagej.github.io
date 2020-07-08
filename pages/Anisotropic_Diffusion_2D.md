@@ -50,18 +50,10 @@ site](https://imagej.net/plugins/anisotropic-diffusion-2d.html).
 The algorithm used by this plugin is an implementation of Anisotropic
 Diffusion from:
 
-  - {% include Citation content="last = Tschumperlé
+  - 
+{% capture includecontent %} TODO {% endcapture %}
 
-` | first = D.`  
-` | last2 = Deriche`  
-` | first2 = R.`  
-` | Vector-valued image regularization with PDEs: a common framework for different applications`  
-` | journal =  IEEE Trans Pattern Anal Mach Intell`  
-` | volume = 27`  
-` | issue = 4`  
-` | pages = 506-517`  
-` | date = 2005`  
-` | PMID = 15794157 " %}`
+{% include citation content=includecontent %}
 
 [Category:Plugins](Category:Plugins "wikilink")
 [Category:Filtering](Category:Filtering "wikilink")

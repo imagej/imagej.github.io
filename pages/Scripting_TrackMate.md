@@ -43,7 +43,7 @@ script:
 <!-- end list -->
 
   - TrackMate
-    (\[<https://fiji.sc/javadoc/fiji/plugin/trackmate/TrackMate.html>`fiji.plugin.trackmate.TrackMate`\])
+    (\[https://fiji.sc/javadoc/fiji/plugin/trackmate/TrackMate.html`fiji.plugin.trackmate.TrackMate`\])
     is the guy that does the actual work. In scripts, we use it to
     actually <u>perform the analysis tasks</u>, such as generating spots
     from images, linking them into track, etc... It reads configuration
@@ -343,11 +343,10 @@ the same place:
   - Spot features are simply conveyed by the spot object, and you can
     access them through `spot.getFeature('FEATURE_NAME')`
   - Edge and track features are stored in a sub-component of the model
-    object called the FeatureModel ({% include GitHub
-    content="repo=fiji|path=src-plugins/TrackMate\_/src/main/java/fiji/plugin/trackmate/FeatureModel.java|label=FeatureModel.java"
-    %}).
+    object called the FeatureModel (
 
-Check the script below to see a working example.
+{% include github content='TODO' %} ). Check the script below to see a
+working example.
 
 ``` python
 from ij import IJ, ImagePlus, ImageStack
@@ -986,23 +985,28 @@ analyzer](TrackMate#Downloadable_jars "wikilink") is such a module.
 As any other module it can be used in a script, provided the jar file is
 in the plugins or jars folder of Fiji:
 
-{% include GitHubEmbed
-content="org=fiji|repo=TrackMate|source=../../../scripts/CallTrackMateMultiChannel.py"
-%}
+{% capture includecontent %}
+org=fiji|repo=TrackMate|source=../../../scripts/CallTrackMateMultiChannel.py
+{% endcapture %}
+
+{% include github-embed content=includecontent %}
 
 ## Making TrackMate macro recordable with a 64-line script
 
-Contributed by {% include Person content="Eglinger" %} during a NEUBIAS
-course. Quoting from Jan:
+Contributed by {% include person content='TODO' %}
+
+`during a NEUBIAS course. Quoting from Jan:`
 
 > "The macro language is too limited to work with such awesome things as
 > TrackMate, but that you can do everything with a more powerful
 > scripting language. So when using a 64-line script to call it, it
 > actually is macro recordable."
 
-{% include GitHubEmbed
-content="org=fiji|repo=TrackMate|source=../../../scripts/Run\_TrackMate\_Headless.groovy"
-%}
+{% capture includecontent %}
+org=fiji|repo=TrackMate|source=../../../scripts/Run\_TrackMate\_Headless.groovy
+{% endcapture %}
+
+{% include github-embed content=includecontent %}
 
 ## Add 3D maximas in the ROI Manager using TrackMate
 
@@ -1087,7 +1091,7 @@ So an ideal starting situation would like this:
 
 this script will generate the following tracks:
 
-<https://aws1.discourse-cdn.com/business4/uploads/imagej/original/3X/c/3/c3cee76938213f8d3e43ae1ca4cfbe3e4453546e.gif>
+https://aws1.discourse-cdn.com/business4/uploads/imagej/original/3X/c/3/c3cee76938213f8d3e43ae1ca4cfbe3e4453546e.gif
 
 Cool no? The output can be controlled via a TrackMate GUI that will be
 shown upon running the script. Showing the GUI might not be desirable in
@@ -1098,7 +1102,7 @@ The script also offers to color the ROIs by track ID, if you have the
 ROI manager that was used to create the results table. It looks like
 this:
 
-<https://aws1.discourse-cdn.com/business4/uploads/imagej/original/3X/2/3/237d4f70b01b9d4fa596f89adea5c10fc481fbc0.gif>
+https://aws1.discourse-cdn.com/business4/uploads/imagej/original/3X/2/3/237d4f70b01b9d4fa596f89adea5c10fc481fbc0.gif
 
 ``` python
 import sys

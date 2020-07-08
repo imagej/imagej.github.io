@@ -8,17 +8,9 @@ categories: Transform,Registration,Deconvolution
 description: test description
 ---
 
-{% include Infobox content="name = An automated workflow for parallel
-processing of large multiview SPIM recordings | software = Fiji | author
-= [Christopher
-Schmied](https://de.linkedin.com/in/christopher-schmied-75882b101),
-Peter Steinbach, Pavel Tomancak | maintainer = [Christopher
-Schmied](https://de.linkedin.com/in/christopher-schmied-75882b101) |
-released = July 2015 | latest version = March 2016 | category =
-[Transform](:Category:Transform "wikilink"),
-[Registration](:Category:Registration "wikilink"),
-[Deconvolution](:Category:Deconvolution "wikilink") | source = [on
-github](https://github.com/mpicbg-scicomp/snakemake-workflows) " %}
+{% capture includecontent %} TODO {% endcapture %}
+
+{% include info-box content=includecontent %}
 
 # Citation
 
@@ -84,7 +76,7 @@ workflow is based on you can find
 
 We map and dispatch the workflow logic either on a single maschine or on
 a HPC cluster using the automated workflow engine
-**\[<https://bitbucket.org/johanneskoester/snakemake/wiki/Home>.
+**\[https://bitbucket.org/johanneskoester/snakemake/wiki/Home.
 Snakemake\]**. Within the *Snakefile* the workflow with the processing
 steps and the input and output rules is defined. Each of these steps
 call a Fiji *beanshell* script. These scripts in turn drive the
@@ -153,7 +145,7 @@ Using ImageJ Opener (.tif):
 You can download a Fiji version that we have tested for compatibility
 with the automated cluster processing here:
 
-**<http://tomancak-srv1.mpi-cbg.de/~schmied/>**
+**http://tomancak-srv1.mpi-cbg.de/~schmied/**
 
 It is important to note that we can only guarantee the proper execution
 of the workflow with the provided Fiji version. We will from time to
@@ -283,7 +275,7 @@ cluster from the command line is fairly easy - I use about 10 different
 commands to do everything I need to do. Since the Linux command line may
 be unfamiliar to most biologists we start a separate
 **[Linux\_command\_line\_tutorial](Linux_command_line_tutorial "wikilink")**
-and **<http://swcarpentry.github.io/shell-novice/>** page that explains
+and **http://swcarpentry.github.io/shell-novice/** page that explains
 the bare essentials.
 
 # Initial setup of the workflow
@@ -331,7 +323,7 @@ your specific dataset.
 
 You can download a 5 view, single channel .czi example dataset here:
 
-**<http://tomancak-srv1.mpi-cbg.de/~schmied/>**
+**http://tomancak-srv1.mpi-cbg.de/~schmied/**
 
 The example dataset looks like this:
 

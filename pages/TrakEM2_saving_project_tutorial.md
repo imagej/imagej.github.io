@@ -9,11 +9,12 @@ description: test description
 ---
 
 This video tutorial was made by Javier Cabrera-Chaves and edited by {%
-include Person content="Iarganda" %} using [Wink 1.5 for
-linux](http://www.debugmode.com/wink/). To navigate, use the green
-arrows to go forward and backward in the slide-show.
+include person content='TODO' %}
 
-{{\#widget:flash|width=993|height=776|swf=8/8f/TrakEM2-Userguide-Saveas.swf}}
+`using `[`Wink``   ``1.5``   ``for`` 
+ ``linux`](http://www.debugmode.com/wink/)`. To navigate, use the green arrows to go forward and backward in the slide-show.`
+
+TODO FLASH WIDGET
 
 [Category:TrakEM2](Category:TrakEM2 "wikilink")
 [Category:Tutorials](Category:Tutorials "wikilink")

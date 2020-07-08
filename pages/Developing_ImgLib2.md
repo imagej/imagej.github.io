@@ -32,12 +32,16 @@ You can clone the ImgLib2 code using Git with the URL:
 To develop ImgLib2 in Eclipse, follow these steps:
 
 1.  [Install the Maven plugin](Using_Maven_with_Eclipse "wikilink")
-2.  Choose {% include bc content="File | Import" %} from the Eclipse
-    menu
-3.  Select "Existing Maven Projects" and click Next
-4.  For the Root Directory, specify the path where you cloned ImgLib2
-5.  From the projects list, leave all items checked
-6.  Click Finish
+2.  Choose
+
+{% include bc content='File | Import' %}
+
+`from the Eclipse menu`
+
+1.  Select "Existing Maven Projects" and click Next
+2.  For the Root Directory, specify the path where you cloned ImgLib2
+3.  From the projects list, leave all items checked
+4.  Click Finish
 
 For fresh installs, it will initially take some time (a few minutes) for
 Maven to download all the dependencies for both its own plugins, and for

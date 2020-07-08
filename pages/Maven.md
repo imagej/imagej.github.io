@@ -8,19 +8,26 @@ categories: Development,Maven
 description: test description
 ---
 
-{% include info-box content="If Maven is completely new to you, read:
+{% capture includecontent %} If Maven is completely new to you, read:
 
   - [What is Maven?](https://maven.apache.org/what-is-maven.html)
   - [Maven in 5
-    Minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)"
-    %}
+    Minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
 
-{% include DevelopMenu content="tools" %}{% include Minibox
-content="logo=Maven-icon.png | size=51px | blurb=  
+{% endcapture %}
+
+{% include info-box content=includecontent %}
+
+{% include develop-menu content='tools' %}
+
+{% capture includecontent %} logo=Maven-icon.png | size=51px | blurb=  
 **Apache Maven** is a [convention over
 configuration](wikipedia:Convention_over_configuration "wikilink") build
-automation tool." %}[ImageJ](ImageJ "wikilink"), [Fiji](Fiji "wikilink")
-and other [SciJava](SciJava "wikilink") projects use
+automation tool. {% endcapture %}
+
+{% include minibox content=includecontent %}
+[ImageJ](ImageJ "wikilink"), [Fiji](Fiji "wikilink") and other
+[SciJava](SciJava "wikilink") projects use
 [Maven](https://maven.apache.org/) for their project infrastructure.
 
 Maven artifacts are published to the [SciJava Maven
@@ -186,11 +193,9 @@ So what if you have multiple *.jar* files you want to build in the same
 project? Then these need to live in their own subdirectories and there
 needs to be a common parent POM, a so-called *aggregator* or
 *multi-module* POM (only this POM needs to have the SciJava POM as
-parent, of course). {% include GitHub
-content="org=imagej|repo=tutorials|tag=577286474be8399eb38d30d66cf0c35ee50bd929|path=pom.xml\#L47-L62|label=Here
-is an example" %}. Basically, it is adding the
-<packaging>`pom`</packaging> entry at the top, as well as some
-subdirectory names to the <modules> section.
+parent, of course). {% include github content='TODO' %} . Basically, it
+is adding the <packaging>`pom`</packaging> entry at the top, as well as
+some subdirectory names to the <modules> section.
 
 Note, however, that most projects of the [SciJava component
 collection](Architecture "wikilink") (e.g.,
@@ -225,7 +230,7 @@ However, the ImageJ and Fiji JARs are not yet stored there, but in the
 [SciJava Maven repository](Architecture#Maven_repositories "wikilink").
 Fortunately, you can search both at once, by visiting:
 
-` `<https://maven.scijava.org/>
+` `https://maven.scijava.org/
 
 For example, let's suppose you want to depend on the
 [snakeyaml](http://snakeyaml.org) library. Typing "snakeyaml" into the
@@ -236,10 +241,9 @@ results, you can click the "Drill down" link to view more details of
 that specific GAV combination. You can also click an entry to get a
 formatted `dependency` block for direct copy-pasting into your POM.
 
-{% include Tip content="tip=If your dependencies are in Maven Central,
-you can use the [quickdeps](https://github.com/ingenieux/quickdeps) tool
-to quickly generate dependency blocks, by scanning your project's
-bytecode." %}
+{% capture includecontent %} TODO {% endcapture %}
+
+{% include tip content=includecontent %}
 
 # Depending on libraries outside the core repositories
 

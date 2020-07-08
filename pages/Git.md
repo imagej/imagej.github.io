@@ -8,7 +8,7 @@ categories: Development,Git
 description: test description
 ---
 
-{% include info-box content="If Git is completely new to you, read:
+{% capture includecontent %} If Git is completely new to you, read:
 
   - [TryGit 15-minute interactive tutorial](https://try.github.io/)
   - [Learn Git Branching interactive
@@ -22,7 +22,11 @@ check out:
   - [Think Like (a) Git - A Guide for the
     Perplexed](http://think-like-a-git.net/)
 
-" %} {% include DevelopMenu content="tools" %}Development of ImageJ and
+{% endcapture %}
+
+{% include info-box content=includecontent %}
+
+{% include develop-menu content='tools' %} Development of ImageJ and
 related software relies heavily on [Git](http://git-scm.com/). See the
 [source code](source_code "wikilink") page for information on where the
 Git repositories reside.

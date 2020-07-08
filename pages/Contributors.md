@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-{% include info-box content="This page describes who *contributes* to
+{% capture includecontent %} This page describes who *contributes* to
 [SciJava](SciJava "wikilink") projects.
 
   - For information on who *maintains* these projects, see
@@ -16,7 +16,11 @@ description: test description
   - For information on how ImageJ projects are *funded*, see
     [Funding](Funding "wikilink").
   - For information on *citing* these projects, see
-    [Citing](Citing "wikilink")." %}
+    [Citing](Citing "wikilink").
+
+{% endcapture %}
+
+{% include info-box content=includecontent %}
 
 %Replace% AboutMenu %Replace% \_\_NOTOC\_\_== Who we are ==
 
@@ -30,9 +34,15 @@ Note: This list is only irregularly updated.
 
 ### Principal investigators
 
-  - {% include Person content="Eliceiri" %}\[1\] (ImageJ, Fiji)
-  - {% include Person content="Tomancak" %}\[2\] (Fiji)
-  - {% include Person content="Jug" %}\[3\] (Fiji)
+  - 
+{% include person content='TODO' %} \[1\] (ImageJ, Fiji)
+
+  - 
+{% include person content='TODO' %} \[2\] (Fiji)
+
+  - 
+{% include person content='TODO' %} \[3\] (Fiji)
+
   - [Anne Carpenter](http://www.broadinstitute.org/~anne/)\[4\]
     (CellProfiler)
   - [Michael
@@ -42,98 +52,183 @@ Note: This list is only irregularly updated.
     Swedlow](http://www.lifesci.dundee.ac.uk/people/jason-swedlow)\[7\]\[8\]
     (OME)
 
-\=== {% include Logo content="ImageJ | size=32px"
-%}[ImageJ](ImageJ "wikilink") ===
+\=== {% include logo content='ImageJ | size=32px' %}
+[ImageJ](ImageJ "wikilink") ===
 
-  - {% include Person content="Rasband" %}\[9\] (lead, [ImageJ
-    1.x](ImageJ_1.x "wikilink"))
-  - {% include Person content="Rueden" %}\[10\] (lead,
-    [ImageJ2](ImageJ2 "wikilink"))
-  - {% include Person content="Dietzc" %}\[11\]\[12\]
-  - {% include Person content="Bnorthan" %}\[13\]
-  - {% include Person content="Hinerm" %}\[14\] (Sep 2010-Jun 2016)
-  - {% include Person content="Leek" %}\[15\] (Jan 2010-Apr 2016)
-  - {% include Person content="Schindelin" %}\[16\] (Sep 2011-Nov 2014)
-  - {% include Person content="Grislis" %}\[17\] (Jan 2010-Dec 2013)
-  - {% include Person content="Bdezonia" %}\[18\] (Jan 2010-Nov 2013)
-  - {% include Person content="Harris" %}\[19\] (Nov 2009-Jan 2012)
+  - 
+{% include person content='TODO' %} \[9\] (lead, [ImageJ
+1.x](ImageJ_1.x "wikilink"))
+
+  - 
+{% include person content='TODO' %} \[10\] (lead,
+[ImageJ2](ImageJ2 "wikilink"))
+
+  - 
+{% include person content='TODO' %} \[11\]\[12\]
+
+  - 
+{% include person content='TODO' %} \[13\]
+
+  - 
+{% include person content='TODO' %} \[14\] (Sep 2010-Jun 2016)
+
+  - 
+{% include person content='TODO' %} \[15\] (Jan 2010-Apr 2016)
+
+  - 
+{% include person content='TODO' %} \[16\] (Sep 2011-Nov 2014)
+
+  - 
+{% include person content='TODO' %} \[17\] (Jan 2010-Dec 2013)
+
+  - 
+{% include person content='TODO' %} \[18\] (Jan 2010-Nov 2013)
+
+  - 
+{% include person content='TODO' %} \[19\] (Nov 2009-Jan 2012)
+
   - Adam Fraser\[20\] (Nov 2009-Aug 2011)
-  - {% include Person content="Lentz" %}\[21\] (Nov 2009-Feb 2011)
+
+  - 
+{% include person content='TODO' %} \[21\] (Nov 2009-Feb 2011)
+
   - See also [ImageJ forum heroes](http://forum.imagej.net/users)
 
-\=== {% include Logo content="ImgLib2 | size=32px"
-%}[ImgLib2](ImgLib2 "wikilink") ===
+\=== {% include logo content='ImgLib2 | size=32px' %}
+[ImgLib2](ImgLib2 "wikilink") ===
 
-  - {% include Person content="Pietzsch" %}\[22\] (lead)
-  - {% include Person content="StephanP" %}\[23\]\[24\]
-  - {% include Person content="Saalfeld" %}\[25\]\[26\]
+  - 
+{% include person content='TODO' %} \[22\] (lead)
+
+  - 
+{% include person content='TODO' %} \[23\]\[24\]
+
+  - 
+{% include person content='TODO' %} \[25\]\[26\]
 
 </div>
 
 <div style="float: left">
 
-\=== {% include Logo content="Fiji | size=32px"
-%}[Fiji](Fiji "wikilink") ===
+\=== {% include logo content='Fiji | size=32px' %}
+[Fiji](Fiji "wikilink") ===
 
-  - {% include Person content="Rueden" %}\[27\] (lead)
-  - {% include Person content="JeanYvesTinevez" %}\[28\]
-  - {% include Person content="Iarganda" %}\[29\]
-  - {% include Person content="StephanP" %}\[30\]\[31\]
-  - {% include Person content="Saalfeld" %}\[32\]\[33\]
-  - {% include Person content="Pietzsch" %}\[34\]
-  - {% include Person content="Eglinger" %}\[35\]
-  - {% include Person content="Tiago" %}\[36\]\[37\]
-  - {% include Person content="Hadim" %}\[38\]
-  - {% include Person content="White" %}\[39\]
-  - {% include Person content="Landini" %}\[40\]
-  - {% include Person content="Kharrington" %}\[41\]\[42\]
-  - {% include Person content="Twagner" %}\[43\]
-  - {% include Person content="Hinerm" %}\[44\] (former)
-  - {% include Person content="Albertcardona" %}\[45\]\[46\] (founder)
-  - {% include Person content="Schindelin" %}\[47\] (former, founder)
+  - 
+{% include person content='TODO' %} \[27\] (lead)
+
+  - 
+{% include person content='TODO' %} \[28\]
+
+  - 
+{% include person content='TODO' %} \[29\]
+
+  - 
+{% include person content='TODO' %} \[30\]\[31\]
+
+  - 
+{% include person content='TODO' %} \[32\]\[33\]
+
+  - 
+{% include person content='TODO' %} \[34\]
+
+  - 
+{% include person content='TODO' %} \[35\]
+
+  - 
+{% include person content='TODO' %} \[36\]\[37\]
+
+  - 
+{% include person content='TODO' %} \[38\]
+
+  - 
+{% include person content='TODO' %} \[39\]
+
+  - 
+{% include person content='TODO' %} \[40\]
+
+  - 
+{% include person content='TODO' %} \[41\]\[42\]
+
+  - 
+{% include person content='TODO' %} \[43\]
+
+  - 
+{% include person content='TODO' %} \[44\] (former)
+
+  - 
+{% include person content='TODO' %} \[45\]\[46\] (founder)
+
+  - 
+{% include person content='TODO' %} \[47\] (former, founder)
+
   - See also [graph of Fiji
     contributors](https://github.com/fiji/fiji/graphs/contributors)
 
 ### [BigDataViewer](BigDataViewer "wikilink")
 
-  - {% include Person content="Pietzsch" %}\[48\] (lead)
-  - {% include Person content="StephanP" %}\[49\]\[50\]
+  - 
+{% include person content='TODO' %} \[48\] (lead)
+
+  - 
+{% include person content='TODO' %} \[49\]\[50\]
 
 ### [TrakEM2](TrakEM2 "wikilink")
 
-  - {% include Person content="Albertcardona" %}\[51\]\[52\] (lead)
-  - {% include Person content="Saalfeld" %}\[53\]\[54\]
+  - 
+{% include person content='TODO' %} \[51\]\[52\] (lead)
+
+  - 
+{% include person content='TODO' %} \[53\]\[54\]
 
 </div>
 
 <div style="float: left">
 
-\=== {% include Logo content="SCIFIO | size=32px"
-%}[SCIFIO](SCIFIO "wikilink") ===
+\=== {% include logo content='SCIFIO | size=32px' %}
+[SCIFIO](SCIFIO "wikilink") ===
 
-  - {% include Person content="Rueden" %}\[55\] (lead)
-  - {% include Person content="Hinerm" %}\[56\] (former, founder)
+  - 
+{% include person content='TODO' %} \[55\] (lead)
 
-\=== {% include Logo content="CellProfiler | size=32px"
-%}[CellProfiler](CellProfiler "wikilink") ===
+  - 
+{% include person content='TODO' %} \[56\] (former, founder)
 
-  - {% include Person content="0x00B1" %}\[57\] (lead)
-  - {% include Person content="Leek" %}\[58\] (former)
+\=== {% include logo content='CellProfiler | size=32px' %}
+[CellProfiler](CellProfiler "wikilink") ===
 
-\=== {% include Logo content="KNIME | size=32px" %}[KNIME Image
+  - 
+{% include person content='TODO' %} \[57\] (lead)
+
+  - 
+{% include person content='TODO' %} \[58\] (former)
+
+\=== {% include logo content='KNIME | size=32px' %} [KNIME Image
 Processing](KNIME "wikilink") ===
 
-  - {% include Person content="Dietzc" %}\[59\]\[60\] (lead)
-  - {% include Person content="hornm" %}\[61\]
-  - {% include Person content="tibuch" %}\[62\]\[63\]
-  - {% include Person content="Squareys" %}\[64\]\[65\]
-  - {% include Person content="Gab1one" %}\[66\]\[67\]
+  - 
+{% include person content='TODO' %} \[59\]\[60\] (lead)
 
-\=== {% include Logo content="OME | size=32px" %}[OME](OME "wikilink")
+  - 
+{% include person content='TODO' %} \[61\]
+
+  - 
+{% include person content='TODO' %} \[62\]\[63\]
+
+  - 
+{% include person content='TODO' %} \[64\]\[65\]
+
+  - 
+{% include person content='TODO' %} \[66\]\[67\]
+
+\=== {% include logo content='OME | size=32px' %} [OME](OME "wikilink")
 ===
 
-  - {% include Person content="Moore" %}\[68\]\[69\] (co-lead)
-  - {% include Person content="jburel" %}\[70\] (co-lead)
+  - 
+{% include person content='TODO' %} \[68\]\[69\] (co-lead)
+
+  - 
+{% include person content='TODO' %} \[70\] (co-lead)
+
   - See also [OME Teams](http://openmicroscopy.org/site/about/who-ome)
 
 </div>
@@ -150,7 +245,7 @@ right now.
 
 ### Special thanks
 
-Our deep thanks to {% include Person content="Rasband" %}, author of
+Our deep thanks to {% include person content='TODO' %} , author of
 [ImageJ1](ImageJ1 "wikilink"), for all his support and patience\!
 
 </div>

@@ -8,8 +8,11 @@ categories:
 description: test description
 ---
 
-%Replace% ImgLibMenu %Replace% %Replace% TOC %Replace% {% include
-info-box content="This page was last updated 2016 May 3." %}
+%Replace% ImgLibMenu %Replace% %Replace% TOC %Replace% {% capture
+includecontent %} This page was last updated 2016 May 3. {% endcapture
+%}
+
+{% include info-box content=includecontent %}
 
 This page compares the time performance of image processing operations
 using raw byte arrays, [ImageJ 1.x](ImageJ_1.x "wikilink") and
@@ -79,20 +82,19 @@ based on the data type.
 
 The main benchmark code can be found at:
 
-  - {% include GitHub content="org=imglib | repo=imglib2-tests |
-    path=src/test/java/tests/PerformanceBenchmark.java |
-    label=PerformanceBenchmark.java" %}
+  - 
+{% include github content='TODO' %}
 
 The script that runs the benchmark at various image resolutions is:
 
-  - {% include GitHub content="org=imglib | repo=imglib2-tests |
-    path=src/test/scripts/benchmark.sh | label=benchmark.sh" %}
+  - 
+{% include github content='TODO' %}
 
 The shell script also uses a Python script to transform the CSV output
 into the pChart data on this page:
 
-  - {% include GitHub content="org=imglib | repo=imglib2-tests |
-    path=src/test/scripts/chart-gen.py | label=chart-gen.py" %}
+  - 
+{% include github content='TODO' %}
 
 ## Cheap operation results
 

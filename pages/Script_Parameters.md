@@ -8,7 +8,7 @@ categories: Scripting
 description: test description
 ---
 
-{% include Learn content="scripting" %}All scripting languages have
+{% include learn content='scripting' %} All scripting languages have
 access to a universal `#@parameter` notation for declaring inputs and
 outputs. This approach is preferred over the ImageJ 1.x
 [GenericDialog](Generic_dialog "wikilink") because it is totally
@@ -20,10 +20,13 @@ annotation](https://github.com/scijava/scijava-common/blob/scijava-common-2.40.0
 experience with plugin writing directly translates to scripting, and
 vice versa.
 
-{% include info-box content="Script parameters are a feature of
+{% capture includecontent %} Script parameters are a feature of
 [ImageJ2](ImageJ2 "wikilink"); they will not work in plain
 [ImageJ1](ImageJ1 "wikilink"). The [Fiji](Fiji "wikilink") distribution
-of ImageJ is built on ImageJ2, so they also work in Fiji." %}
+of ImageJ is built on ImageJ2, so they also work in Fiji. {% endcapture
+%}
+
+{% include info-box content=includecontent %}
 
 ## Basic syntax
 
@@ -40,13 +43,16 @@ The rules for `#@` parameter use are as follows:
     `Object` be default. (For the `output` directive and other script
     directives, no space is allowed between `#@` and the directive.)
 
-{% include Testimonial content="quote = zomg UIs are so easy now  
-done by lunchtime | person =  For example, if we look at the
+For example, if we look at the
 [Greeting.py](https://github.com/scijava/scripting-jython/blob/scripting-jython-0.2.0/src/main/resources/script_templates/Python/Greeting.py)
 [template](Script_Templates "wikilink") supplied with Fiji:
 
-{% include GitHubEmbed content="org = scijava | repo = scripting-jython
-| path = src/main/resources/script\_templates/Intro/Greeting.py " %}
+{% capture includecontent %} org = scijava | repo = scripting-jython |
+path = src/main/resources/script\_templates/Intro/Greeting.py
+
+{% endcapture %}
+
+{% include github-embed content=includecontent %}
 
 We see that an input parameter `name` of type `String` is declared.
 `@Parameters` are handled automatically by the framework; if we run this
@@ -68,36 +74,44 @@ the framework, based on their type. In this case we expect the
 
 A list of possible data types and the corresponding widgets is provided:
 
-|                                                        |                                        |                                                                              |
-| ------------------------------------------------------ | -------------------------------------- | ---------------------------------------------------------------------------- |
-| **Data type**                                          | **Widget type**                        | **Available styles**                                                         |
-| | `boolean` {{\!}} `Boolean`                           | checkbox                               |                                                                              |
-| | `byte` {{\!}} `short` {{\!}} `int` {{\!}} `long`     | numeric field                          | | `slider` {{\!}} `spinner` {{\!}} `scroll bar`                              |
-| | `Byte` {{\!}} `Short` {{\!}} `Integer` {{\!}} `Long` | numeric field                          | | `slider` {{\!}} `spinner` {{\!}} `scroll bar`                              |
-| | `Float`                                              | numeric field                          | | `slider` {{\!}} `spinner` {{\!}} `scroll bar`                              |
-| | `BigInteger` {{\!}} `BigDecimal`                     | numeric field                          | | `slider` {{\!}} `spinner` {{\!}} `scroll bar`                              |
-| | `char` {{\!}} `Character` {{\!}} `String`            | text field                             | | `text field` {{\!}} `text area` {{\!}} `password`                          |
-| | `Dataset` {{\!}} `ImagePlus`                         | (\>=2 images) triggers a dropdown list |                                                                              |
-| | `ColorRGB`                                           | color chooser                          |                                                                              |
-| | `Date`                                               | date chooser                           |                                                                              |
-| | `File`                                               | file chooser                           | | `open` {{\!}} `save` {{\!}} `file` {{\!}} `directory` {{\!}} `extensions:` |
+|                                   |                                        |                                                  |
+| --------------------------------- | -------------------------------------- | ------------------------------------------------ |
+| **Data type**                     | **Widget type**                        | **Available styles**                             |
+| | `boolean` `Boolean`             | checkbox                               |                                                  |
+| | `byte` `short` `int` `long`     | numeric field                          | | `slider` `spinner` `scroll bar`                |
+| | `Byte` `Short` `Integer` `Long` | numeric field                          | | `slider` `spinner` `scroll bar`                |
+| | `Float`                         | numeric field                          | | `slider` `spinner` `scroll bar`                |
+| | `BigInteger` `BigDecimal`       | numeric field                          | | `slider` `spinner` `scroll bar`                |
+| | `char` `Character` `String`     | text field                             | | `text field` `text area` `password`            |
+| | `Dataset` `ImagePlus`           | (\>=2 images) triggers a dropdown list |                                                  |
+| | `ColorRGB`                      | color chooser                          |                                                  |
+| | `Date`                          | date chooser                           |                                                  |
+| | `File`                          | file chooser                           | | `open` `save` `file` `directory` `extensions:` |
 
-{% include warning-box content="`float` is also an accepted field but
-the decimal part is not displayed in the form compared to `Float` (mind
-the capital F).  
+{% capture includecontent %} `float` is also an accepted field but the
+decimal part is not displayed in the form compared to `Float` (mind the
+capital F).  
 A related [issue](https://github.com/scijava/scijava-common/issues/302)
 occurs with `int` and `double` when a default value is set in the code
 and entered in the form, the value is not properly recalled at the next
-run. Use `Integer` and `Double` instead." %} {% include warning-box
-content="A single `#@ImagePlus` or `#@Dataset` field will not show up in
-the input form, instead the current image will automatically be
-processed. The idea is to stick to the IJ macro language. However if 2
-`#@ImagePlus` (or respectively `#@Dataset`) are present then they will
-be rendered as drop-down buttons." %}
+run. Use `Integer` and `Double` instead. {% endcapture %}
 
-By implementing {% include Javadoc content="project = SciJava | package
-= org/scijava/widget | class = InputWidget" %} it is possible to extend
-this list.
+{% include warning-box content=includecontent %}
+
+{% capture includecontent %} A single `#@ImagePlus` or `#@Dataset` field
+will not show up in the input form, instead the current image will
+automatically be processed. The idea is to stick to the IJ macro
+language. However if 2 `#@ImagePlus` (or respectively `#@Dataset`) are
+present then they will be rendered as drop-down buttons. {% endcapture
+%}
+
+{% include warning-box content=includecontent %}
+
+By implementing {% capture includecontent %} TODO {% endcapture %}
+
+{% include javadoc content=includecontent %}
+
+`it is possible to extend this list.`
 
 ## Parameter properties
 
@@ -161,10 +175,12 @@ defined [default value](#Default_value "wikilink").
 #@ Integer (label="An integer!", value=15, persist=false) someInt
 ```
 
-{% include warning-box content="Currently, "two scripts which declare
-the same parameter name, even with different types, will stomp each
-other." See [1](https://github.com/scijava/scijava-common/issues/193)."
-%}
+{% capture includecontent %} Currently, "two scripts which declare the
+same parameter name, even with different types, will stomp each other."
+See [1](https://github.com/scijava/scijava-common/issues/193). {%
+endcapture %}
+
+{% include warning-box content=includecontent %}
 
 ### Visibility
 
@@ -206,11 +222,12 @@ to format the message string, for example:
 #@ Integer anIntParam
 ```
 
-{% include warning-box content="Currently if a script containing a
-MESSAGE string is recorded with the macro recorder and the resulting
-recorded code executed, a window will show up containing only the
-MESSAGE string This is unexpected and will be corrected in the future."
-%}
+{% capture includecontent %} Currently if a script containing a MESSAGE
+string is recorded with the macro recorder and the resulting recorded
+code executed, a window will show up containing only the MESSAGE string
+This is unexpected and will be corrected in the future. {% endcapture %}
+
+{% include warning-box content=includecontent %}
 
 ### Multiple Choice
 

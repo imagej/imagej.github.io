@@ -8,10 +8,10 @@ categories: Scripting
 description: test description
 ---
 
-{% include Learn content="scripting" %}This page is meant to provide
+{% include learn content='scripting' %} This page is meant to provide
 small code snippets as a starting point for writing scripts.
 
-{% include info-box content="message = **See also:**
+{% capture includecontent %} message = **See also:**
 
   - Language-specific scripting pages in the right-hand menu.
   - [Scripting comparisons](Scripting_comparisons "wikilink") to compare
@@ -23,7 +23,9 @@ small code snippets as a starting point for writing scripts.
     note that it is better idea to contribute tutorials to the
     ImageJ/Fiji wiki directly).
 
-" %}
+{% endcapture %}
+
+{% include info-box content=includecontent %}
 
 **Note:** To copy the snippets, just double-click somewhere into the
 code. If Javascript is enabled, this will automatically select the

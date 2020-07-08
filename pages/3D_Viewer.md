@@ -21,8 +21,8 @@ orthoslices.
 Here you are a demo screencast separated into two different videos (\~15
 min in total) showing many of the features of the 3D viewer:
 
-{{\#widget:YouTube|id=cD3Hc3NYkaU|width=420}}
-{{\#widget:YouTube|id=GqG\_RcK3kYg|width=420}}
+{% include youtube url="https://www.youtube.com/embed/cD3Hc3NYkaU" %}
+{% include youtube url="https://www.youtube.com/embed/GqG_RcK3kYg" %}
 
 Beyond this, a lot more screencasts can be found
 [here](3D_Viewer:_Screencasts "wikilink"), covering the following
@@ -67,9 +67,10 @@ snippets can be found
 
 ### Javadocs
 
-The Fiji Javadocs provide detailed information about the {% include
-Javadoc content="package = ij3d | class = package-summary | label = 3D
-Viewer API" %}.
+The Fiji Javadocs provide detailed information about the {% capture
+includecontent %} TODO {% endcapture %}
+
+{% include javadoc content=includecontent %} .
 
 ## FAQ
 
@@ -114,7 +115,10 @@ addidtional, potentially useful information.
 
 ## Publication
 
-  - {% include Publication content="3D Viewer" %}
+  - 
+{% capture includecontent %} TODO {% endcapture %}
+
+{% include publication content=includecontent %}
 
 [Category:Plugins](Category:Plugins "wikilink")
 [Category:Visualization](Category:Visualization "wikilink")

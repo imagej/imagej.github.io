@@ -8,11 +8,11 @@ categories: Scripting
 description: test description
 ---
 
-{% include Learn content="languages"
-%}[JRuby](http://jruby.codehaus.org/) is a marvellous project that
-created a complete implementation of Ruby that runs in the JVM. The
-excellent work of the authors of JRuby has made it very simple for us to
-add JRuby scripting into ImageJ.
+{% include learn content='languages' %}
+[JRuby](http://jruby.codehaus.org/) is a marvellous project that created
+a complete implementation of Ruby that runs in the JVM. The excellent
+work of the authors of JRuby has made it very simple for us to add JRuby
+scripting into ImageJ.
 
 JRuby scripting in ImageJ is a nice alternative to scripting using
 ImageJ's macro language. It has the following advantages:
@@ -37,8 +37,8 @@ Have fun\!
 ## Tutorial
 
 Let's start writing some JRuby right away - start up the interpreter by
-going to {% include bc content="Plugins | Scripting | JRuby Interpreter"
-%}. The interpreter window will pop up, but it may take a little time
+going to {% include bc content='Plugins | Scripting | JRuby Interpreter'
+%} . The interpreter window will pop up, but it may take a little time
 for the JRuby runtime to be ready. You should initially see the message:
 
 ` Starting JRuby ...`
@@ -57,7 +57,7 @@ Help](Scripting_Help "wikilink") for tips on using this interpreter
 window.l
 
 Try loading one of the ImageJ sample images by going to {% include bc
-content="File | Open Samples | T1 Head (2.4M, 16-bits)" %}. Once you've
+content='File | Open Samples | T1 Head (2.4M, 16-bits)' %} . Once you've
 done that we'll examine the image using JRuby. You can get a reference
 to the current image with ij.IJ.getImage. Try assigning the result to a
 variable, like this:
@@ -116,11 +116,16 @@ something similar at this stage...
 If you need to use classes that aren't in the java.\* or ij.\*
 hierarchy—or if you are developing JRuby scripts in the [Script
 Editor](Script_Editor "wikilink")—you will have to include them
-explicitly. {% include ImportingClasses content="lang=JRuby" %} For
-example, in the classpath of [Fiji](Fiji "wikilink") there is a useful
-class called util.BatchOpener, that has static methods for opening files
-as arrays of ImagePlus objects (one per channel) without showing them.
-To use these methods, you would have to do:
+explicitly.
+
+{% capture includecontent %} lang=JRuby {% endcapture %}
+
+{% include importing-classes content=includecontent %}
+
+For example, in the classpath of [Fiji](Fiji "wikilink") there is a
+useful class called util.BatchOpener, that has static methods for
+opening files as arrays of ImagePlus objects (one per channel) without
+showing them. To use these methods, you would have to do:
 
 ` >>> java_import 'util.BatchOpener'`  
 ` util.BatchOpener`
@@ -284,12 +289,10 @@ The "run" method may also be particularly useful for calling existing
 ImageJ plugins and commands. The next section has an example of the use
 of this. It may be instructive to compare the ["Blobs Demo"
 macro](https://imagej.net/macros/ConvexHull.txt) from the ImageJ
-distribution with {% include GitHub
-content="repo=fiji|path=plugins/Examples/Blobs\_Demo\_in\_Ruby.rb|label=a
-version ported to JRuby" %}. The use of the analagous function in JRuby
-is not always the same - for example, if you compare the invocation of
-getSelectionCoordinates, you'll find that whereas the ImageJ macro
-version passes in the output variables:
+distribution with {% include github content='TODO' %} . The use of the
+analagous function in JRuby is not always the same - for example, if you
+compare the invocation of getSelectionCoordinates, you'll find that
+whereas the ImageJ macro version passes in the output variables:
 
 ` getSelectionCoordinates(xCoordinates, yCoordinates);`
 
@@ -299,9 +302,8 @@ version passes in the output variables:
 
 A note for the interested programmer: About 15% of the macro functions
 have be done so far, and if anyone wanted to help out with doing the
-rest, that would be excellent\! The source code {% include GitHub
-content="repo=fiji|path=plugins/JRuby/imagej.rb|label=can be found here"
-%}.
+rest, that would be excellent\! The source code {% include github
+content='TODO' %} .
 
 ## Example: Generating Red/Cyan Anaglyphs
 
@@ -325,8 +327,8 @@ run "3D Project...", projection_options
 ```
 
 In general, the best way to figure out what these options should be is
-to start the macro recorder with "{% include bc content="Plugins |
-Macros | Record..." %}" and run the plugin. In this case, the output in
+to start the macro recorder with " {% include bc content='Plugins |
+Macros | Record...' %} " and run the plugin. In this case, the output in
 the macro recorder looks like this:
 
 ` run("3D Project...", "projection=[Brightest Point] axis=Y-Axis slice=1.20 initial=-2 total=4 `  
@@ -351,17 +353,18 @@ the [Script Editor](Script_Editor "wikilink"), you need to use a `$`
 before `@ variables`, due to a limitation in the scoping, as in this
 example from [Script Templates](Script_Templates "wikilink"):
 
-{% include GitHubEmbed content="org=
-scijava|repo=scripting-jruby|path=src/main/resources/script\_templates/Intro/Greeting.rb|label=Greeting.rb"
-%}
+{% capture includecontent %} org=
+scijava|repo=scripting-jruby|path=src/main/resources/script\_templates/Intro/Greeting.rb|label=Greeting.rb
+{% endcapture %}
+
+{% include github-embed content=includecontent %}
 
 ## Library
 
-There is a library called {% include GitHub
-content="repo=fiji|path=plugins/JRuby/imagej.rb|label=imagej.rb" %} for
-convenience. It contains a number of useful functions related to ImageJ.
-It is loaded by default when creating a new JRuby script in the [Script
-Editor](Script_Editor "wikilink").
+There is a library called {% include github content='TODO' %}
+
+`for convenience. It contains a number of useful functions related to ImageJ. It is loaded by default when creating a new JRuby script in the `[`Script`` 
+ ``Editor`](Script_Editor "wikilink")`.`
 
 ## What next?
 
@@ -374,9 +377,9 @@ JRuby example shows how to implement a Java interface in JRuby.
 
 JRuby offers some more nice features, have a look at them in the JRuby
 documentation:
-<https://github.com/jruby/jruby/wiki/CallingJavaFromJRuby>
+https://github.com/jruby/jruby/wiki/CallingJavaFromJRuby
 
 And of course, if you want to know how to use a class from ImageJ or any
-of its projects, visit: <https://javadoc.imagej.net>.
+of its projects, visit: https://javadoc.imagej.net.
 
 [Category:Scripting](Category:Scripting "wikilink")

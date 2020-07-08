@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-{% include Learn content="scripting" %}
+{% include learn content='scripting' %}
 
 ## Introduction
 
@@ -19,9 +19,11 @@ ImageJ](http://javadoc.imagej.net/) is similar for all of them. This
 article will introduce the basic concepts and is valid for all scripting
 languages.
 
-{% include info-box content="The examples are written in Groovy, but
-they are easy to adapt for any other scripting language ImageJ
-supports." %}
+{% capture includecontent %} The examples are written in Groovy, but
+they are easy to adapt for any other scripting language ImageJ supports.
+{% endcapture %}
+
+{% include info-box content=includecontent %}
 
 ## Get an image and perform an action
 
@@ -52,7 +54,7 @@ To perform an operation on the selected image, we use `IJ.run()`.
 Therefore we have to import the [class
 IJ](http://javadoc.imagej.net/ImageJ1/ij/IJ.html). There are three
 different versions of the
-\[<http://javadoc.imagej.net/ImageJ1/ij/IJ.html#run(java.lang.String>)
+\[http://javadoc.imagej.net/ImageJ1/ij/IJ.html#run(java.lang.String)
 run() method\] of these we need the one with three parameters. The first
 parameter is the image to perform the action on, the second parameters
 defines the action (called **command**) and the last parameter is used

@@ -8,12 +8,6 @@ categories: Plugins
 description: test description
 ---
 
-{% include Infobox content="name = Tutorial Maker | software = ImageJ |
-author = Johannes Schindelin | maintainer = Johannes Schindelin |
-filename =
-[Tutorial\_Maker.jar](http://update.fiji.sc/plugins/Tutorial_Maker.jar-20090721160531)
-| source = 
-
 ## Purpose
 
 This plugin makes writing tutorials on this Wiki a breeze.

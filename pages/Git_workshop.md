@@ -632,8 +632,8 @@ git push --delete origin blabla-branch
 # Popular public repository hosters
 
 If you need to have public repositories, you can use
-<http://github.com/>, <http://code.google.com/>,
-<http://sourceforge.net/>, <http://repo.or.cz/> and quite a few others.
+http://github.com/>, <http://code.google.com/,
+http://sourceforge.net/>, <http://repo.or.cz/ and quite a few others.
 Typically, you have a decent amount of storage, but the deal is that
 your version-controlled project must be Open Source.
 
@@ -642,7 +642,7 @@ look at the history.
 
 ## Hands-on
 
-Let's surf to <http://github.com/git/hello-world> and inspect the
+Let's surf to http://github.com/git/hello-world and inspect the
 history
 
 # Advanced topics
@@ -727,17 +727,17 @@ history
 
 # Links
 
-  - The homepage: <http://git-scm.com/>
-  - Git for Windows: <http://code.google.com/p/msysgit/>
-  - Git for MacOSX <http://code.google.com/p/git-osx-installer/>
+  - The homepage: http://git-scm.com/
+  - Git for Windows: http://code.google.com/p/msysgit/
+  - Git for MacOSX http://code.google.com/p/git-osx-installer/
   - An overview of the underlying data model:
-    <http://eagain.net/articles/git-for-computer-scientists/>
+    http://eagain.net/articles/git-for-computer-scientists/
   - Fiji's *topic branches* tutorial:
-    <https://fiji.sc/wiki/index.php/Git_topic_branches>
-  - The ProGit book: <http://progit.org/>
-  - The most popular repository hoster: <https://github.com/>
-  - The original repository hoster: <http://repo.or.cz/>
-  - The Git Wiki: <https://git.wiki.kernel.org/index.php/Main_Page>
+    https://fiji.sc/wiki/index.php/Git_topic_branches
+  - The ProGit book: http://progit.org/
+  - The most popular repository hoster: https://github.com/
+  - The original repository hoster: http://repo.or.cz/
+  - The Git Wiki: https://git.wiki.kernel.org/index.php/Main_Page
 
 [Category:Tutorials](Category:Tutorials "wikilink")
 [Category:Git](Category:Git "wikilink")

@@ -23,8 +23,8 @@ page](http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:sta
 a skeleton image and then counts all its junctions, triple and quadruple
 points and branches, and measures their average and maximum length. The
 tags are shown in a new window displaying every tag in a different
-color. You can find it under {% include bc content="Analyze | Skeleton |
-Analyze Skeleton (2D/3D)" %}. See
+color. You can find it under {% include bc content='Analyze | Skeleton |
+Analyze Skeleton (2D/3D)' %} . See
 [Skeletonize3D](Skeletonize3D "wikilink") for an example of how to
 produce skeleton images.
 
@@ -379,7 +379,7 @@ for( i = 0 ; i < graph.length; i++ )
 
 The latest documentation of the code can be found here:
 
-<http://javadoc.imagej.net/Fiji/sc/fiji/analyzeSkeleton/package-summary.html>
+http://javadoc.imagej.net/Fiji/sc/fiji/analyzeSkeleton/package-summary.html
 
 ## Changelog
 
@@ -466,7 +466,7 @@ as:
 
 This program is **free software**; you can redistribute it and/or modify
 it under the terms of the **GNU General Public License** as published by
-the Free Software Foundation (<http://www.gnu.org/licenses/gpl.txt>).
+the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).
 
 This program is distributed in the hope that it will be useful, but
 WITHOUT ANY WARRANTY; without even the implied warranty of

@@ -10,12 +10,14 @@ description: test description
 
 ## Important Note
 
-{% include warning-box content="***Please Note: This version of the
+{% capture includecontent %} ***Please Note: This version of the
 software is outdated. It will be part of Fiji for the time being, but I
 highly recommend using the new [Multiview Reconstruction
 Plugin](Multiview-Reconstruction "wikilink"). It is much more powerful,
 flexible and completely integrated with the
-[BigDataViewer](BigDataViewer "wikilink").***" %}
+[BigDataViewer](BigDataViewer "wikilink").*** {% endcapture %}
+
+{% include warning-box content=includecontent %}
 
 ## Citation
 
@@ -45,7 +47,7 @@ allows *in toto* imaging of large specimens by acquiring image stacks
 from multiple angles. However, to realize the full potential of these
 acquisitions the data needs to be reconstructed:
 
-{{\#widget:YouTube|id=jkDd8SMv1eU|width=350}}
+{% include youtube url="https://www.youtube.com/embed/jkDd8SMv1eU" %}
 
 We developed several algorithms for the registration and fusion of
 multi-angle SPIM acquisitions. This plugin collection allows you to

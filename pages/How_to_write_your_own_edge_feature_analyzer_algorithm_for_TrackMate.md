@@ -28,9 +28,7 @@ scalar numerical features to an edge, or a link between two spots in
 TrackMate. For instance, the instantaneous velocity is an edge feature
 (you need two linked spots to compute a displacement and a time
 interval), which happens to be provided by the algorithm named {%
-include GitHub
-content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/features/edges/EdgeVelocityAnalyzer.java|label=EdgeVelocityAnalyzer.java"
-%}.
+include github content='TODO' %} .
 
 ## TrackMate modules
 
@@ -48,13 +46,13 @@ and API wrap. There are 7 classes of modules:
 
 All of these modules implement an interface, specific to the module
 class. For instance, an edge analyzer algorithm will implement the {%
-include GitHub
-content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java|label=EdgeAnalyzer"
-%} interface. There is therefore 7 interfaces. They do have in common
-that they all extend the mother module interface called {% include
-GitHub
-content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/TrackMateModule.java|label=TrackMateModule"
-%}.
+include github content='TODO' %}
+
+`interface. `
+
+There is therefore 7 interfaces. They do have in common that they all
+extend the mother module interface called {% include github
+content='TODO' %} .
 
 TrackMateModule is used for two basic purpose:
 
@@ -89,11 +87,10 @@ new features.
 
 Before we step into the edge analyzers specific, you want to setup a
 development environment that will ease TrackMate module development.
-Rather than listing the requirement, just checkout {% include GitHub
-content="org=fiji|repo=TrackMate-examples|label=this github repository"
-%}, and clone it. It contains the files of this tutorial series and more
-importantly, is configured to depend on the latest TrackMate version,
-which will make it available to your code.
+Rather than listing the requirement, just checkout {% include github
+content='TODO' %} , and clone it. It contains the files of this tutorial
+series and more importantly, is configured to depend on the latest
+TrackMate version, which will make it available to your code.
 
 Compiling this project with maven will generate a jar, that you will be
 able to drop in the fiji plugins folder. Your modules will then be
@@ -113,9 +110,9 @@ So create a package for your new analyzer in our project, for instance
 `fiji.plugin.trackmate.examples.edgeanalyzer`.
 
 In this package, create a class `EdgeAngleAnalyzer` and let it implement
-the {% include GitHub
-content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java|label=EdgeAnalyzer"
-%} interface. You should be getting something like this:
+the {% include github content='TODO' %}
+
+`interface. You should be getting something like this:`
 
 ``` java
 package plugin.trackmate.examples.edgeanalyzer;
@@ -144,9 +141,9 @@ popup.
 We see the general module methods we discussed above, plus some specific
 to edge analyzers. Actually, most of the new methods are generic for
 <i>all</i> the feature analyzers (spot, track or edge). These methods
-belong to the {% include GitHub
-content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/features/FeatureAnalyzer.java|label=FeatureAnalyzer"
-%} interface, which `EdgeAnalyzer` extends, of course.
+belong to the {% include github content='TODO' %}
+
+`interface, which EdgeAnalyzer extends, of course.`
 
 They exist because TrackMate needs to know what your feature analyzer
 does. Since it computes numerical features, it needs to know what
@@ -182,12 +179,9 @@ These 6 methods are:
 <!-- end list -->
 
   - `getFeatureDimensions()` returns a last map, that gives a dimension
-    to your features. Physical dimensions are listed in the {% include
-    GitHub
-    content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/Dimension.java|label=Dimension
-    enum" %}.
+    to your features. Physical dimensions are listed in the
 
-<!-- end list -->
+{% include github content='TODO' %} .
 
   - `getIsIntFeature()` is just about sugar coating. It returns a map
     that tells what features are integer mapped. For instance, if you
@@ -419,9 +413,8 @@ edge whose features are to be calculated, and `model`, the TrackMate
 model that holds all the information you need.
 
 There is just one thing to know: Once you computed the numerical value
-of your feature, you need to store it in the {% include GitHub
-content="org=fiji|repo=TrackMate|source=fiji/plugin/trackmate/FeatureModel.java|label=FeatureModel"
-%}. The feature model is a part of the main model.
+of your feature, you need to store it in the {% include github
+content='TODO' %} . The feature model is a part of the main model.
 
 It works like a 2D Map:
 
@@ -487,9 +480,11 @@ public class EdgeAngleAnalyzer implements EdgeAnalyzer
 
 and that's it. Let me repeat:
 
-{% include ambox content="text= To make a TrackMate module discoverable
-in TrackMate, just annotate its class with `@Plugin( type =
-TheTrackMateModuleClassYouAreExtending.class )`." %}
+{% capture includecontent %} text= To make a TrackMate module
+discoverable in TrackMate, just annotate its class with `@Plugin( type =
+TheTrackMateModuleClassYouAreExtending.class )`. {% endcapture %}
+
+{% include ambox content=includecontent %}
 
 Just the line `@Plugin( type = EdgeAnalyzer.class )` is enough. There
 are also mechanisms that allow fine tuning of priority, visibility (in
@@ -505,12 +500,11 @@ Fiji plugins folder. Here is what you get:
 
 Great, no?
 
-You can find the full source for this example {% include GitHub
-content="org=fiji|repo=TrackMate-examples|source=plugin/trackmate/examples/edgeanalyzer/EdgeAngleAnalyzer.java|label=here"
-%}. It can also be used as a template for your analyzer.
+You can find the full source for this example {% include github
+content='TODO' %} . It can also be used as a template for your analyzer.
 
-{% include Person content="JeanYvesTinevez" %}
-([talk](User_talk:JeanYvesTinevez "wikilink")) 10:25, 27 January 2014
-(CST)
+{% include person content='TODO' %}
+
+`(`[`talk`](User_talk:JeanYvesTinevez "wikilink")`) 10:25, 27 January 2014 (CST)`
 
 [Category:Tutorials](Category:Tutorials "wikilink")

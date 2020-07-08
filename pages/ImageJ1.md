@@ -8,19 +8,17 @@ categories: Software
 description: test description
 ---
 
-{% include Project content="ImageJ1" %}{% include Infobox content="name
-= ImageJ1 | software = ImageJ | logo =
-![imagej1-icon.png](imagej1-icon.png "imagej1-icon.png") | author =
-ImageJ 1.x, often shortened to ImageJ1 or IJ1, is a stable version of
-[ImageJ](ImageJ "wikilink") which has been under continuous development
-since 1997. It has always been, and continues to be, a one-developer
-project of {% include Person content="Rasband" %}.
+{% include project content='ImageJ1' %} ImageJ 1.x, often shortened to
+ImageJ1 or IJ1, is a stable version of [ImageJ](ImageJ "wikilink") which
+has been under continuous development since 1997. It has always been,
+and continues to be, a one-developer project of {% include person
+content='TODO' %} .
 
 ImageJ was originally developed in 1997 as a cross-platform version of
 [NIH Image](NIH_Image "wikilink"). ImageJ grew organically over time as
-{% include Person content="Rasband" %} continued to add features
-according to user requests. Now there are many hundreds, probably
-thousands, of plugins written by members of a diverse community.
+{% include person content='TODO' %}
+
+`continued to add features according to user requests. Now there are many hundreds, probably thousands, of plugins written by members of a diverse community.`
 
 The current version of ImageJ is often referred to as
 [ImageJ2](ImageJ2 "wikilink"), to differentiate it from ImageJ 1.x. The
@@ -35,12 +33,9 @@ IJ2 data structures as needed.
 
 ## Publication
 
-  - {% include Citation content="last = Schneider | first = C. A.
+  - 
+{% capture includecontent %} TODO {% endcapture %}
 
-| last2 = Rasband | first2 = W. S. | last3 = Eliceiri | first3 = K. W. |
-year = 2012 | journal = Nature methods | url =
-<http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2089.html> | NIH
-Image to ImageJ: 25 years of image analysis | volume = 9(7) | pages =
-671-675 | pmid = 22930834" %}.
+{% include citation content=includecontent %} .
 
 [Category:Software](Category:Software "wikilink")

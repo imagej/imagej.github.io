@@ -127,15 +127,18 @@ as...*, rather create a file `my-file-name.epf`, and then copy-paste the
 contents of the file. To do this, click on `eclipse-preferences.epf` and
 then the *Raw* button.
 
-You can import them to your system using {% include bc content="File |
-Import | Preferences" %} and selecting the `eclipse-preferences.epf`
-file. Then, in Eclipse preferences, navigate to {% include bc
-content="Java | Code Style | Clean Up" %} and select "ImageJ" for the
-active profile. You can then format your source code by right-clicking
-your source file(s) and choosing {% include bc content="Source | Clean
-Up" %} from the context menu. As of this writing, these rules are not
-automatically applied by CI, but we make an effort to apply them to the
-codebase occasionally by hand.
+You can import them to your system using {% include bc content='File |
+Import | Preferences' %}
+
+`and selecting the eclipse-preferences.epf file. Then, in Eclipse preferences, navigate to`
+
+{% include bc content='Java | Code Style | Clean Up' %}
+
+`and select "ImageJ" for the active profile. You can then format your source code by right-clicking your source file(s) and choosing`
+
+{% include bc content='Source | Clean Up' %}
+
+`from the context menu. As of this writing, these rules are not automatically applied by CI, but we make an effort to apply them to the codebase occasionally by hand.`
 
 ## Ordering of code blocks
 

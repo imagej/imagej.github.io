@@ -14,10 +14,7 @@ data processing, as well as the corresponding core image display logic
 for user interfaces, based on the [SciJava
 Common](SciJava_Common "wikilink") application framework.
 
-{% include Testimonial content="quote = I Have to a admit that IJ2 API
-and Java 8 make the process very smooth Much better than few years ago
-:-0 | person =  Using [ImgLib2](ImgLib2 "wikilink") offers several
-benefits:
+Using [ImgLib2](ImgLib2 "wikilink") offers several benefits:
 
   - Support for many different data types (different combinations of bit
     depths, signedness, and integer/real representations).
@@ -31,8 +28,18 @@ for its central class hierarchies.
 
 At the time of this writing, the central image data structures are:
 
-  - {% include Javadoc content="package = net/imglib2/meta | class =
-    ImgPlus" %}
-  - {% include Javadoc content="package = net/imagej | class = Dataset"
-    %} and {% include Javadoc content="package = net/imagej | class =
-    DefaultDataset" %}
+  - 
+{% capture includecontent %} TODO {% endcapture %}
+
+{% include javadoc content=includecontent %}
+
+  - 
+{% capture includecontent %} TODO {% endcapture %}
+
+{% include javadoc content=includecontent %}
+
+`and`
+
+{% capture includecontent %} TODO {% endcapture %}
+
+{% include javadoc content=includecontent %}

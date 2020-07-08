@@ -29,8 +29,8 @@ bit to the Spot Segmentation Wizard of
 ## The test image
 
 The test image we will use for this tutorial has now a link in Fiji. You
-can find it in {% include bc content="File | Open Samples | Tracks for
-TrackMate (807K)" %}, at the bottom of the list.
+can find it in {% include bc content='File | Open Samples | Tracks for
+TrackMate (807K)' %} , at the bottom of the list.
 
 ![](TrackMate_FakeTracks.png)
 
@@ -54,9 +54,10 @@ to handle these events, and we will see how.
 ![](TrackMate_MainButtons.png)
 
 With this image selected, launch TrackMate from the menu {% include bc
-content="Plugins | Tracking | TrackMate" %} or from the [Command
-launcher](Using_the_Command_Launcher "wikilink"). The TrackMate GUI
-appears next to the image, displaying the starting dialog panel.
+content='Plugins | Tracking | TrackMate' %}
+
+`or from the `[`Command`` 
+ ``launcher`](Using_the_Command_Launcher "wikilink")`. The TrackMate GUI appears next to the image, displaying the starting dialog panel.`
 
 But first, just a few words about its look. The user interface is a
 single frame - that can be resized - divided in a main panel, that
@@ -73,8 +74,8 @@ panel, segmentation will not be re-executed.
 The **Save** button creates a XML file that contains all of the data you
 generated at the moment you click it. Since you can save at any time,
 the resulting file might miss tracks, spots, etc... You can load the
-saved file using the menu item {% include bc content="Plugins | Tracking
-| Load a TrackMate file" %}. It will restore the session just where you
+saved file using the menu item {% include bc content='Plugins | Tracking
+| Load a TrackMate file' %} . It will restore the session just where you
 saved it.
 
 Now is a good time to speak strategy when it comes to saving/restoring.
@@ -113,10 +114,13 @@ Z-stack on a single time-point.
 
 If the calibration or dimensionality of your data is not right, I
 recommend changing it in the image metadata itself, using {% include bc
-content="Image | Properties" %} ({% include key content="Ctrl" %}+{%
-include key content="Shift" %}+{% include key content="P" %}). The press
-the 'Refresh source' button on the TrackMate start panel to grab
-changes.
+content='Image | Properties' %}
+
+`(`
+
+{% include key content='Ctrl' %} + {% include key content='Shift' %} +
+{% include key content='P' %} ). The press the 'Refresh source' button
+on the TrackMate start panel to grab changes.
 
 You can also define a sub-region for processing: if you are only
 interested in finding spots in a defined region of the image, you can
@@ -711,9 +715,9 @@ what we changed from the default, that was pretty simple:
 Now that you know how the plugin works, you should be able to reach the
 end result in less than 30 seconds...
 
-{% include Person content="JeanYvesTinevez" %}
-([talk](User_talk:JeanYvesTinevez "wikilink")) 04:18, 1 August 2013
-(CDT)
+{% include person content='TODO' %}
+
+`(`[`talk`](User_talk:JeanYvesTinevez "wikilink")`) 04:18, 1 August 2013 (CDT)`
 
 ## References
 

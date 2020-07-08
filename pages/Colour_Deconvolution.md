@@ -8,8 +8,8 @@ categories: Plugins,Color processing
 description: test description
 ---
 
-Similarly to the command {% include bc content="Image | Color | RGB
-split" %}, this plugin unmixes an RGB image produced by subtractive
+Similarly to the command {% include bc content='Image | Color | RGB
+split' %} , this plugin unmixes an RGB image produced by subtractive
 mixing (inks, histological dyes) into separate channels corresponding to
 up to 3 determined colors. This is useful e.g. to do pigment separation.
 
@@ -20,17 +20,9 @@ webpage](https://blog.bham.ac.uk/intellimic/g-landini-software/colour-deconvolut
 
 This plugin implements the method described in the following paper:
 
-{% include Citation content="last = Ruifrok
+{% capture includecontent %} TODO {% endcapture %}
 
-` | first = A.C.`  
-` | last2 = Johnston`  
-` | first2 = D.A.`  
-` | Quantification of histochemical staining by color deconvolution`  
-` | journal = Anal. Quant. Cytol. Histol.`  
-` | volume = 23`  
-` | pages = 291-299`  
-` | year = 2001`  
-` | PMID = 11531144 " %}`
+{% include citation content=includecontent %}
 
 ## Version history
 
@@ -64,7 +56,7 @@ This plugin implements the method described in the following paper:
 
 ## Menu path
 
-{% include bc content="Image | Color | Colour Deconvolution" %}
+{% include bc content='Image | Color | Colour Deconvolution' %}
 
 [Category:Plugins](Category:Plugins "wikilink") [Category:Color
 processing](Category:Color_processing "wikilink")

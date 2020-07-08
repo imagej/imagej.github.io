@@ -8,12 +8,6 @@ categories:
 description: test description
 ---
 
-{% include Infobox content="software = ImageJ | name = FLIMJ plugin |
-logo = ![Slim-curve-icon.png](Slim-curve-icon.png "Slim-curve-icon.png")
-| author = [CRUK/MRC at University of
-Oxford](http://www.rob.ox.ac.uk/)  
-[UW-Madison LOCI](http://loci.wisc.edu/) | maintainer = 
-
 ## Introduction
 
 The FLIMJ plugin for ImageJ provides the ability to analyze FLIM data
@@ -45,16 +39,16 @@ The FLIMJ plugin is available from the "FLIMJ" [update
 site](update_site "wikilink").
 
 Once you have installed the FLIMJ plugin, it becomes available on the
-menu under {% include bc content="Analyze | Lifetime | FLIMJ" %}.
+menu under {% include bc content='Analyze | Lifetime | FLIMJ' %} .
 
 ## Usage
 
 More documentation coming soon. For now, see the source code at:
 
-{% include BigLink content="url=<https://github.com/flimlib/flimj-ui>"
+{% include big-link content='url=https://github.com/flimlib/flimj-ui'
 %}
 
 And:
 
-{% include BigLink content="url=<https://github.com/flimlib/flimj-ops>"
+{% include big-link content='url=https://github.com/flimlib/flimj-ops'
 %}

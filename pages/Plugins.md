@@ -15,8 +15,10 @@ additional commands via menu entries.
 
 ## Available plugins
 
-{% include BigNotice content="You can browse the [list of available
-plugins](:Category:Plugins "wikilink")." %}
+{% capture includecontent %} You can browse the [list of available
+plugins](:Category:Plugins "wikilink"). {% endcapture %}
+
+{% include big-notice content=includecontent %}
 
 ## Tiers of plugins
 

@@ -8,11 +8,9 @@ categories: Plugins,Visualization,Citable
 description: test description
 ---
 
-{% include Infobox content="name = ClearVolume | logo =
-![ClearVolumeLogo.png](ClearVolumeLogo.png "ClearVolumeLogo.png") |
-software = Fiji | author = == Problems and Solutions == We work
-constantly on improving the Fiji and KNIME plugins. Help us doing so by
-letting us know if you encounter problems.
+\== Problems and Solutions == We work constantly on improving the Fiji
+and KNIME plugins. Help us doing so by letting us know if you encounter
+problems.
 
   - **Problem:** on a Linux machine ClearVolume would not start but
     throw an ugly exception like
@@ -24,7 +22,7 @@ letting us know if you encounter problems.
       -   
         On Ubuntu the following instructions turned out to be useful for
         some of our users:
-        <http://askubuntu.com/questions/541114/how-to-make-opencl-work-on-14-10-nvidia-331-89-drivers>
+        http://askubuntu.com/questions/541114/how-to-make-opencl-work-on-14-10-nvidia-331-89-drivers
 
 <!-- end list -->
 
@@ -36,13 +34,12 @@ letting us know if you encounter problems.
 
 ## What is ClearVolume?
 
-{% include Testimonial content="quote = I checked out ClearVolume.
-Extremely well-made plugin\! Does exactly what I want :) | person =
-komodovaran | source = <http://forum.imagej.net/t/1907/3> "
-%}ClearVolume is a volume renderer developed at MPI-CBG. Its sources are
-open and can be cloned [from GitHub](https://github.com/ClearVolume). If
-you use ClearVolume in your research, please cite it—see reference
-below.
+{% capture includecontent %} TODO {% endcapture %}
+
+{% include testimonial content=includecontent %} ClearVolume is a volume
+renderer developed at MPI-CBG. Its sources are open and can be cloned
+[from GitHub](https://github.com/ClearVolume). If you use ClearVolume in
+your research, please cite it—see reference below.
 
 ## Screenshots
 
@@ -69,7 +66,7 @@ institute.](ClearVolumeNetworkClientInFiji.png
 
 See ClearVolume in action\!
 
-{{\#widget:YouTube|id=IyUpkgTJJvc}}
+{% include youtube url="https://www.youtube.com/embed/IyUpkgTJJvc" %}
 
 ## Installing ClearVolume in Fiji or ImageJ2
 
@@ -107,7 +104,10 @@ further questions please contact any of us
 
 ## Publication
 
-  - {% include Publication content="ClearVolume" %}
+  - 
+{% capture includecontent %} TODO {% endcapture %}
+
+{% include publication content=includecontent %}
 
 [Category:Plugins](Category:Plugins "wikilink")
 [Category:Visualization](Category:Visualization "wikilink")

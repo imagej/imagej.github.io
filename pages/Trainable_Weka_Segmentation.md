@@ -75,10 +75,10 @@ image](Trainable-Weka-Segmentation-GUI.png
 "Example of the first look of the plugin window when using it on a TEM image")
 [Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink")
 runs on any 2D or 3D image (grayscale or color). To use 2D features, you
-need to select the menu command {% include bc content="Plugins |
-Segmentation | Trainable Weka Segmentation" %}. For 3D features, call
-the plugin under {% include bc content="Plugins | Segmentation |
-Trainable Weka Segmentation 3D" %}. Both commands will use the same GUI
+need to select the menu command {% include bc content='Plugins |
+Segmentation | Trainable Weka Segmentation' %} . For 3D features, call
+the plugin under {% include bc content='Plugins | Segmentation |
+Trainable Weka Segmentation 3D' %} . Both commands will use the same GUI
 but offer different feature options in their settings.
 
 By default, the plugin starts with two classes, i.e. it will produce
@@ -216,7 +216,7 @@ belonging to each trace into an
 location chosen by the user. Notice the traces (regions of interests
 selected by the user) are not saved but only their corresponding feature
 vectors. To save the ROIs, you can simply use the
-\[<https://imagej.net/ij/docs/guide/146-30.html#sub:ROI-Manager>... ROI
+\[https://imagej.net/ij/docs/guide/146-30.html#sub:ROI-Manager... ROI
 Manager\].
 
 #### Create new class
@@ -409,9 +409,10 @@ updater](https://imagej.net/How_to_follow_a_3rd_party_update_site).
 ![Settings dialog for the Trainable Weka Segmentation 3D
 plugin.](TWS-3D-Settings-dialog.png
 "Settings dialog for the Trainable Weka Segmentation 3D plugin.")When
-calling the plugin from the menu command {% include bc content="Plugins
-| Segmentation | Trainable Weka Segmentation 3D" %} the set of available
-image features will be as follows:
+calling the plugin from the menu command {% include bc content='Plugins
+| Segmentation | Trainable Weka Segmentation 3D' %}
+
+`the set of available image features will be as follows:`
 
   - **Gaussian blur**: performs \(n\) individual 3D convolutions with
     Gaussian kernels with the normal \(n\) variations of \(\sigma\). The
@@ -494,7 +495,7 @@ install the Weka package that includes it. For that, you need to launch
 the Weka GUI Chooser (by clicking on the Weka button of the left panel
 of the plugin GUI) and use the [ Weka Package
 Manager](Trainable_Weka_Segmentation_-_How_to_install_new_classifiers "wikilink")
-(under {% include bc content="Tools | Package manager" %}). For a
+(under {% include bc content='Tools | Package manager' %} ). For a
 step-by-step description on how to install new packages, have a look at
 this
 [tutorial](Trainable_Weka_Segmentation_-_How_to_install_new_classifiers "wikilink").
@@ -893,7 +894,7 @@ release](https://github.com/fiji/Trainable_Segmentation/releases/tag/v3.2.0),
 uses Weka 3.9.0+ - development version. If you have problems loading
 models from previous versions of the plugin/library, most likely you
 need to recreate the models using the new version (see
-\[<http://forums.pentaho.com/showthread.php?204301-New-Weka-3-6-14-3-8-0-and-3-9-0-releases>\!
+\[http://forums.pentaho.com/showthread.php?204301-New-Weka-3-6-14-3-8-0-and-3-9-0-releases\!
 note 1 of the Weka official release\]).
 
 If you absolutely need to reuse an old model, you can transform it to
@@ -918,7 +919,10 @@ Segmentation](Trainable_Weka_Segmentation "wikilink") is based on a
 publication. If you use it successfully for your research please be so
 kind to cite our work:
 
-  - {% include Publication content="Trainable Weka Segmentation" %}
+  - 
+{% capture includecontent %} TODO {% endcapture %}
+
+{% include publication content=includecontent %}
 
 The [Trainable Weka
 Segmentation](Trainable_Weka_Segmentation "wikilink") code has its own
@@ -928,7 +932,7 @@ citable [DOI](http://dx.doi.org/10.5281/zenodo.59290).
 
 This program is **free software**; you can redistribute it and/or modify
 it under the terms of the **GNU General Public License** as published by
-the Free Software Foundation (<http://www.gnu.org/licenses/gpl.txt>).
+the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).
 
 This program is distributed in the hope that it will be useful, but
 WITHOUT ANY WARRANTY; without even the implied warranty of

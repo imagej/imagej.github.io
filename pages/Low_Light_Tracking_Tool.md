@@ -8,9 +8,6 @@ categories: Tutorials
 description: test description
 ---
 
-{% include Infobox content="name = Blob Tracking | software = Fiji |
-author = 
-
 This software is a tool for the tracking of low-light sub-resolution
 objects in fluorescent microscopy. It can be applied in other fields as
 well. The plugin implements the localization algorithm described in the
@@ -109,10 +106,13 @@ If you would like the windows to become larger or smaller, change the
 size of the main data window and then select **Arrange Windows**, from
 the **View** menu. Alternatively you can use the [
 hot-key](Low_Light_Tracking_Tool#Hot-Keys "wikilink") {% include key
-content="Ctrl" %}+{% include key content="W" %} (when the focus is on
-the control panel) or {% include key content="W" %} (when the focus is
-on one of the other windows). This will also organize the windows if
-they have become scattered.
+content='Ctrl' %} + {% include key content='W' %}
+
+`(when the focus is on the control panel) or `
+
+{% include key content='W' %}
+
+`(when the focus is on one of the other windows).  This will also organize the windows if they have become scattered.`
 
 If you close some of the windows you can bring them back using the
 **Windows** menu in the control panel. If you close the control panel,
@@ -200,7 +200,9 @@ the control panel representing the objects trace. You can select objects
 by clicking on them in the control panel or directly in the main window.
 You can then move them around, using drag and drop or edit them.
 Multiple objects can be selected by holding {% include key
-content="Shift" %} when selecting.
+content='Shift' %}
+
+`when selecting.`
 
 ![CreateDots.png](CreateDots.png "CreateDots.png")
 
@@ -342,10 +344,16 @@ repeated until its bottom, which is the original image.
 # Tips
 
   - If you want to be able to see the original image data and find your
-    tracking results get in the way, you use the hot-key {% include key
-    content="P" %} or {% include key content="Ctrl" %}+{% include key
-    content="P" %} respectively to hide all overlays (all circles lines
-    and cross-hairs drawn on top of the image).
+    tracking results get in the way, you use the hot-key
+
+{% include key content='P' %}
+
+`or`
+
+{% include key content='Ctrl' %} + {% include key content='P' %}
+
+`respectively to hide all overlays (all circles lines and cross-hairs drawn on top of the image).`
+
   - If some of the windows appear to bright or to dark use
     **View-\>Adjust Brightness/Contrast** to correct them.
   - You can use **File-\>Export images** to export a sequence of image
@@ -358,8 +366,11 @@ repeated until its bottom, which is the original image.
     the **Visible Sessions** list. You can use the current session drop
     down menu to switch between sessions.
   - You can zoom into the kymographs by moving the cursor over the
-    kymograph window and holding down {% include key content="Shift" %},
-    while using the scroll wheel on the mouse.
+    kymograph window and holding down
+
+{% include key content='Shift' %} , while using the scroll wheel on the
+mouse.
+
   - You can use the **optimize** button. This will perform the tracking
     of the selected objects on the single frame you are looking at. You
     can use this for example with **Automatic σ** turned on to determine
@@ -369,8 +380,9 @@ repeated until its bottom, which is the original image.
 
 There are several hot-keys you can use. You can find the key to press in
 the menus of the control panel. When the focus is on the control panel
-you have to press {% include key content="Ctrl" %} to access hotkeys.
-When the focus is on one of the other windows this is not necessary.
+you have to press {% include key content='Ctrl' %}
+
+`to access hotkeys. When the focus is on one of the other windows this is not necessary.`
 
 # File format
 

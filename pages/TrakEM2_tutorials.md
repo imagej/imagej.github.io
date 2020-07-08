@@ -150,7 +150,7 @@ layers, i.e. concatenating to enlarge the collection of sections.
 
 ## Video tutorial on 3D reconstruction from serial section
 
-{{\#widget:SWITCHtube|id=c3f982f2}}
+TODO GOOGLE SPREADSHEET WIDGET
 
 ## See Also
 

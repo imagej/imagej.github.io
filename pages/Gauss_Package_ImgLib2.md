@@ -8,12 +8,9 @@ categories:
 description: test description
 ---
 
-{% include Infobox content="software = Fiji/ImgLib2 | name = Gaussian
-Convolution | author = Stephan Preibisch | maintainer = Stephan
-Preibisch | source =
-[1](https://fiji.sc/git/?p=imglib.git;a=tree;f=algorithms/core/src/main/java/net/imglib2/algorithm/gauss;hb=refs/heads/master)
-| released = 20 December 2011 | latest version = 20 December 2011 |
-status = active | website = [2](http://fly.mpi-cbg.de/preibisch) " %}
+{% capture includecontent %} TODO {% endcapture %}
+
+{% include info-box content=includecontent %}
 
 ### Gauss Package for ImgLib2
 

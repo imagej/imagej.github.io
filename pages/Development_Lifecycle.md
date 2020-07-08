@@ -8,15 +8,19 @@ categories: Development,Tutorials
 description: test description
 ---
 
-{% include info-box content="This page describes the core
+{% capture includecontent %} This page describes the core
 [SciJava](SciJava "wikilink") *software release process*.
 
   - For an overview of *distribution methods*, see
     [Distribution](Distribution "wikilink").
   - To *download* software releases, see
-    [Downloads](Downloads "wikilink")." %}
+    [Downloads](Downloads "wikilink").
 
-{% include DevelopMenu content="tutorials" %}The SciJava
+{% endcapture %}
+
+{% include info-box content=includecontent %}
+
+{% include develop-menu content='tutorials' %} The SciJava
 [philosophy](philosophy "wikilink") is to [release early, release
 often](Philosophy#Release_early.2C_release_often "wikilink"). At the
 same time, we always want to preserve [scientific
@@ -38,7 +42,7 @@ Whether adding new features, fixing bugs, improving performance, etc...
 exposing these changes to users. To accomplish this, actively developed
 projects cycle through five general "phases":
 
-{% include sidebox-right content="What are Maven artifacts?
+{% capture includecontent %} What are Maven artifacts?
 
 Artifacts are files, most commonly a
 **[JAR](wikipedia:JAR_%28file_format%29 "wikilink")** encapsulating the
@@ -50,7 +54,9 @@ artifacts include:
   - A jar with any generated javadoc
   - A jar with any test files
 
-" %}
+{% endcapture %}
+
+{% include sidebox-right content=includecontent %}
 
 1.  **In development.** The source code is modified to add new features,
     fix bugs, etc... these modifications are expressed as *commits* by
@@ -103,9 +109,9 @@ for further development. Thus the cycle repeats.
 
 # Phases in-depth
 
-{% include sidebox-right content="float=right | title=When to use a
-topic branch? [Core SciJava components](Architecture "wikilink") employ
-a "release ready master branch" approach:
+{% capture includecontent %} float=right | title=When to use a topic
+branch? [Core SciJava components](Architecture "wikilink") employ a
+"release ready master branch" approach:
 
   - The tip of the master branch is always stable enough to be released,
     "as good or better" than the state of its last release.
@@ -171,7 +177,11 @@ often](RERO "wikilink") style of development, to maximize iterations of
 community feedback. Just because a change makes it to the master branch,
 does not mean it is set in stone: if a problem is later found, the
 change can be amended or reverted as quickly as it was added—easy come,
-easy go. " %}
+easy go.
+
+{% endcapture %}
+
+{% include sidebox-right content=includecontent %}
 
 ## Phase 1: In development
 
@@ -298,10 +308,13 @@ create and push a
 the release for you. You should receive an email from Travis after the
 release is complete indicating whether the build was successful.
 
-{% include info-box content="If your project is a [multi-module
+{% capture includecontent %} If your project is a [multi-module
 build](https://maven.apache.org/guides/mini/guide-multiple-modules.html),
 first make a commit commenting out any modules that should not be
-released. Then run the script from the aggregator pom directory." %}
+released. Then run the script from the aggregator pom directory. {%
+endcapture %}
+
+{% include info-box content=includecontent %}
 
 ## Phase 4: Managed
 
@@ -309,25 +322,28 @@ For core projects, there is an intermediate layer tying User-facing and
 Developer-facing components together: the [Bill of
 Materials](BOM "wikilink") (BOM). To ensure users and developers see the
 same functionality, components should only be uploaded to the core
-update sites when their version is also updated in the {% include GitHub
-content="org=scijava | repo=pom-scijava | label=pom-scijava" %} BOM.
+update sites when their version is also updated in the {% include github
+content='TODO' %}
 
-To update the version of your component listed in the {% include GitHub
-content="org=scijava | repo=pom-scijava | label=pom-scijava" %} BOM, you
-should follow the [External
-developer](#Phase_1:_In_development "wikilink") instructions for
-contributing to {% include GitHub content="org=scijava |
-repo=pom-scijava | label=pom-scijava" %}. By [submitting a pull
+`BOM.`
+
+To update the version of your component listed in the {% include github
+content='TODO' %}
+
+`BOM, you should follow the `[`External`` 
+ ``developer`](#Phase_1:_In_development "wikilink")` instructions for contributing to`
+
+{% include github content='TODO' %} . By [submitting a pull
 request](https://help.github.com/articles/using-pull-requests/) that
 simply modifies the managed version of your component, you will signal
 to the core SciJava developers that your project is ready for upload.
-For example, {% include GitHub content="org=scijava | repo=pom-scijava |
-pr=40 | label=this PR" %} updates the managed version of
-[Bio-Formats](Bio-Formats "wikilink") to 5.5.0.
+For example, {% include github content='TODO' %}
+
+`updates the managed version of `[`Bio-Formats`](Bio-Formats "wikilink")` to 5.5.0.`
 
 ## Phase 5: Uploaded
 
-{% include sidebox-right content="What are ImageJ update sites?
+{% capture includecontent %} What are ImageJ update sites?
 
 ImageJ [update sites](update_sites "wikilink") are what ImageJ actually
 queries to download updates. These update sites are versioned, but do
@@ -338,21 +354,32 @@ Updater](ImageJ_Updater "wikilink"), which makes them available to end
 users. Typically, update sites are available as web sites via HTTP, with
 uploads functioning via
 [WebDAV](https://github.com/imagej/imagej-plugins-uploader-webdav) or
-[SSH/SFTP/SCP](https://github.com/imagej/imagej-plugins-uploader-ssh). "
-%} Deploying to the Maven repository creates a stable release artifact
-of a software component usable by other developers. But for
-ImageJ-related components, that alone does not put it into the hands of
-users. To do that, the component must then be *uploaded* to an ImageJ
-[update site](update_site "wikilink").
+[SSH/SFTP/SCP](https://github.com/imagej/imagej-plugins-uploader-ssh).
+
+{% endcapture %}
+
+{% include sidebox-right content=includecontent %}
+
+Deploying to the Maven repository creates a stable release artifact of a
+software component usable by other developers. But for ImageJ-related
+components, that alone does not put it into the hands of users. To do
+that, the component must then be *uploaded* to an ImageJ [update
+site](update_site "wikilink").
 
 ### ImageJ and Fiji update sites
 
-  - The core ImageJ update site reflects the state of the newest {%
-    include GitHub content="org=imagej | repo=imagej |
-    label=net.imagej:imagej" %} release.
-  - The core Fiji update site reflects the state of the newest {%
-    include GitHub content="org=fiji | repo=fiji | label=sc.fiji:fiji"
-    %} release.
+  - The core ImageJ update site reflects the state of the newest
+
+{% include github content='TODO' %}
+
+`release.`
+
+  - The core Fiji update site reflects the state of the newest
+
+{% include github content='TODO' %}
+
+`release.`
+
   - Actually, for the moment, both of the above statements are untrue,
     but they represent the direction we are heading. Right now, core
     components of both ImageJ and Fiji are distributed manually via the
@@ -362,7 +389,7 @@ users. To do that, the component must then be *uploaded* to an ImageJ
 ### External update sites
 
 An update site can be hosted anywhere, though the ImageJ web server at
-<http://sites.imagej.net/> offers a [personal update
+http://sites.imagej.net/ offers a [personal update
 site](personal_update_site "wikilink") service.
 
 See the **[distribution](Distribution "wikilink")** page for a

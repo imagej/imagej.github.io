@@ -8,23 +8,26 @@ categories:
 description: test description
 ---
 
-\_\_NOTOC\_\_{% include info-box content="For a summary of
+\_\_NOTOC\_\_ {% capture includecontent %} For a summary of
 [SciJava](SciJava "wikilink") licensing, see the
-[Licensing](Licensing "wikilink") page." %} %Replace% LicensesMenu
-%Replace% **BSD licenses** are a family of **permissive** [free
-software](Open_Source "wikilink") licenses, imposing minimal
-restrictions on the redistribution of covered software. This is in
-contrast to [copyleft](wikipedia:Copyleft "wikilink") licenses like the
-[GPL](GPL "wikilink"), which have reciprocity share-alike requirements.
-The original BSD license was used for its namesake, the Berkeley
-Software Distribution (BSD), a Unix-like operating system. The original
-version has since been revised and its descendants are more properly
-termed modified BSD licenses.
+[Licensing](Licensing "wikilink") page. {% endcapture %}
+
+{% include info-box content=includecontent %}
+
+%Replace% LicensesMenu %Replace% **BSD licenses** are a family of
+**permissive** [free software](Open_Source "wikilink") licenses,
+imposing minimal restrictions on the redistribution of covered software.
+This is in contrast to [copyleft](wikipedia:Copyleft "wikilink")
+licenses like the [GPL](GPL "wikilink"), which have reciprocity
+share-alike requirements. The original BSD license was used for its
+namesake, the Berkeley Software Distribution (BSD), a Unix-like
+operating system. The original version has since been revised and its
+descendants are more properly termed modified BSD licenses.
 
 See the [Wikipedia article on BSD
 licenses](wikipedia:BSD_licenses "wikilink") for more information.
 
-{% include License content="name = Simplified BSD License | shortname =
+{% capture includecontent %} name = Simplified BSD License | shortname =
 BSD-2 | description = The **Simplified BSD** (or **BSD 2-clause**)
 license is the simplest BSD license. A licensee of BSD-licensed software
 can:
@@ -35,12 +38,21 @@ can:
     licensed program, provided that all distributed copies are
     accompanied by the license
 
-| url = <http://choosealicense.com/licenses/bsd-2-clause/> |
-choosealicense = bsd-2-clause | osi = BSD-2-Clause " %} {% include
-License content="name = Modified BSD License | shortname = BSD-3 |
-description = The **Modified** or **New BSD** (or **BSD 3-clause**)
-license is the same as BSD-2, but with an additional clause prohibiting
-the names of the authors from being used to endorse or promote products
-relating to the software. | url =
-<http://choosealicense.com/licenses/bsd-3-clause/> | choosealicense =
-bsd-3-clause | osswatch = modbsd | osi = BSD-3-Clause " %}
+| url = http://choosealicense.com/licenses/bsd-2-clause/ |
+choosealicense = bsd-2-clause | osi = BSD-2-Clause
+
+{% endcapture %}
+
+{% include license content=includecontent %}
+
+{% capture includecontent %} name = Modified BSD License | shortname =
+BSD-3 | description = The **Modified** or **New BSD** (or **BSD
+3-clause**) license is the same as BSD-2, but with an additional clause
+prohibiting the names of the authors from being used to endorse or
+promote products relating to the software. | url =
+http://choosealicense.com/licenses/bsd-3-clause/ | choosealicense =
+bsd-3-clause | osswatch = modbsd | osi = BSD-3-Clause
+
+{% endcapture %}
+
+{% include license content=includecontent %}

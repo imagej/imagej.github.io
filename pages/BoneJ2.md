@@ -8,13 +8,11 @@ categories:
 description: test description
 ---
 
-{% include Infobox content="name = BoneJ2 | software = ImageJ | logo =
-![Bonej-icon.png](Bonej-icon.png "Bonej-icon.png") | author =  BoneJ is
-a collection of skeletal biology plug-ins for ImageJ. This is the new
-experimental, modernized version of the software available through the
-ImageJ [updater](https://imagej.net/Updater). Its update site is called
-[BoneJ experimental](http://sites.imagej.net/BoneJ). For the old ImageJ1
-version, see [BoneJ](BoneJ "wikilink").
+BoneJ is a collection of skeletal biology plug-ins for ImageJ. This is
+the new experimental, modernized version of the software available
+through the ImageJ [updater](https://imagej.net/Updater). Its update
+site is called [BoneJ experimental](http://sites.imagej.net/BoneJ). For
+the old ImageJ1 version, see [BoneJ](BoneJ "wikilink").
 
 This version works with the latest Fiji, and complies with the modern
 ImageJ [architecture](architecture "wikilink"). Most plug-ins also now
@@ -563,7 +561,7 @@ i.e. for each channel and time frame.
 
 Fazzalari NL, Parkinson IH (1996), *Fractal dimension and architecture
 of trabecular bone*, J Pathol, 178: 100-5,
-\[<http://dx.doi.org/10.1002/(SICI)1096-9896(199601)178:1%3C100>::AID-PATH429%3E3.0.CO;2-K
+\[http://dx.doi.org/10.1002/(SICI)1096-9896(199601)178:1%3C100::AID-PATH429%3E3.0.CO;2-K
 <doi:10.1002/(SICI)1096-9896(199601)178:1>\<100::AID-PATH429\>3.0.CO;2-K\].
 
 ## Inter-trabecular angles

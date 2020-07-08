@@ -9,9 +9,8 @@ description: test description
 ---
 
 This page summarizes translation of basic operations of ImageJ1 and
-ImageJ2 API. Based on the work of {% include Person
-content="Haesleinhuepf" %}, Scientific Computing Facility, MPI-CBG
-Dresden.
+ImageJ2 API. Based on the work of {% include person content='TODO' %} ,
+Scientific Computing Facility, MPI-CBG Dresden.
 
 <table>
 <thead>
@@ -110,7 +109,7 @@ Dresden.
 
 ## See also
 
-<https://github.com/mpicbg-scicomp/ij2course-images/blob/master/slides/ij_legacy_cheetsheet.pdf>
+https://github.com/mpicbg-scicomp/ij2course-images/blob/master/slides/ij_legacy_cheetsheet.pdf
 
 [Category:Tutorials](Category:Tutorials "wikilink")
 [Category:Development](Category:Development "wikilink")

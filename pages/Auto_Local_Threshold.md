@@ -22,9 +22,9 @@ Threshold](Auto_Threshold "wikilink") plugin.
 **ImageJ**: requires v1.42m or newer. Download
 [Auto\_Threshold-X.Y.Z.jar](http://maven.imagej.net/service/local/artifact/maven/redirect?r=releases&g=sc.fiji&a=Auto_Threshold&v=RELEASE&e=jar)
 and copy it into the ImageJ/plugins folder and either restart ImageJ or
-run the '{% include bc content="Help | Update Menus" %}' command. After
-this a new command should appear in '{% include bc content="Image |
-Adjust | Auto Local Threshold" %}'.
+run the ' {% include bc content='Help | Update Menus' %} ' command.
+After this a new command should appear in ' {% include bc content='Image
+| Adjust | Auto Local Threshold' %} '.
 
 **Fiji**: this plugin is part of the Fiji distribution, there is no need
 to download it.
@@ -92,19 +92,15 @@ depending on the value of the midgrey.
 `else`  
 ` pixel = ( pixel >= mid_gray ) ? object : background`
 
-  - {% include Citation content="last = Bernsen
+  - 
+{% capture includecontent %} TODO {% endcapture %}
 
-| first = J | year = 1986 | journal = Proc. of the 8th Int. Conf. on
-Pattern Recognition | Dynamic Thresholding of Grey-Level Images " %}
+{% include citation content=includecontent %}
 
-  - {% include Citation content="last = Sezgin
+  - 
+{% capture includecontent %} TODO {% endcapture %}
 
-| first = M | last2 = Sankur | first2 = B | year = 2004 | journal =
-Journal of Electronic Imaging | Survey over Image Thresholding
-Techniques and Quantitative Performance Evaluation | volume = 13(1) |
-pages = 146-165 | url =
-<http://webdocs.cs.ualberta.ca/~nray1/CMPUT605/track3_papers/Threshold_survey.pdf>
-" %}
+{% include citation content=includecontent %}
 
 Based on ME Celebi's fourier\_0.8 routines
 [1](http://sourceforge.net/projects/fourier-ipal) and
@@ -117,10 +113,10 @@ Based on a simple contrast toggle. Sets the pixel value to either white
 the local maximum or minimum respectively. The procedure is an extreme
 case of Toggle Contrast Enhancement, see for example:
 
-  - {% include Citation content="last = Soille
+  - 
+{% capture includecontent %} TODO {% endcapture %}
 
-| first = P | year = 2004 | Morphological Image Analysis: Principles and
-applications. Springer | pages = 259 " %}
+{% include citation content=includecontent %}
 
 This procedure does not have user-provided parameters other than the
 kernel radius.
@@ -138,7 +134,7 @@ number will change the default value.
 
 **Parameter 2**: not used, ignored.
 
-<http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm>
+http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm
 
 ### Median
 
@@ -153,7 +149,7 @@ number will change the default value.
 
 **Parameter 2**: not used, ignored.
 
-<http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm>
+http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm
 
 ### MidGrey
 
@@ -168,7 +164,7 @@ number will change the default value.
 
 **Parameter 2**: not used, ignored.
 
-<http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm>
+http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm
 
 ### Niblack
 
@@ -186,10 +182,10 @@ parameter was added in version 1.3 and is not part of the original
 implementation of the algorithm. The original algorithm is applied when
 C = 0.
 
-  - {% include Citation content="last = Niblack
+  - 
+{% capture includecontent %} TODO {% endcapture %}
 
-| first = W | year = 1986 | journal = | An introduction to Digital Image
-Processing, Prentice-Hall " %}
+{% include citation content=includecontent %}
 
 Ported from ME Celebi's fourier\_0.8 routines
 [3](http://sourceforge.net/projects/fourier-ipal) and
@@ -203,12 +199,10 @@ variance, defined as a weighted sum of variances of the two classes. The
 local set is a circular ROI and the central pixel is tested against the
 Otsu threshold found for that region.
 
-  - {% include Citation content="last = Otsu
+  - 
+{% capture includecontent %} TODO {% endcapture %}
 
-| first = N | year = 1979 | journal = IEEE Trans. Sys., Man., Cyber. |
-url = <http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?&arnumber=4310076>
-| A threshold selection method from gray-level histograms | volume = 9 |
-pages = 62-66 | doi = 10.1109/TSMC.1979.4310076 " %}
+{% include citation content=includecontent %}
 
 See also the [Wikipedia article on Otsu's
 method](wikipedia:Otsu's_method "wikilink").
@@ -220,14 +214,10 @@ Ported from C++ code by Jordan Bevik.
 This is a modification of Sauvola's thresholding method to deal with low
 contrast images.
 
-  - {% include Citation content="last = Phansalskar
+  - 
+{% capture includecontent %} TODO {% endcapture %}
 
-| first = N | last2 = More | first2 = S | last3 = Sabale | first3 = A |
-last4 = Joshi | first4 = M | year = 2011 | journal = International
-Conference on Communications and Signal Processing (ICCSP) | url =
-<https://ieeexplore.ieee.org/document/5739305/> | pages = 218-220 |
-Adaptive local thresholding for detection of nuclei in diversity stained
-cytology images. | doi = 10.1109/ICCSP.2011.5739305 " %}
+{% include citation content=includecontent %}
 
 In this method, the threshold t is computed as:
 
@@ -261,12 +251,10 @@ number than 0 will change the default value.
 **Parameter 2**: is the *r value*. The default value is 128. Any other
 number than 0 will change the default value
 
-  - {% include Citation content="last = Sauvola
+  - 
+{% capture includecontent %} TODO {% endcapture %}
 
-| first = J | last2 = Pietaksinen | first2 = M | year = 2000 | journal =
-Pattern Recognition | Adaptive Document Image Binarization | volume =
-33(2) | pages = 225-236 |url =
-<http://www.ee.oulu.fi/research/mvmp/mvg/files/pdf/pdf_24.pdf> " %}
+{% include citation content=includecontent %}
 
 Ported from ME Celebi's fourier\_0.8 routines
 [5](http://sourceforge.net/projects/fourier-ipal) and

@@ -8,9 +8,6 @@ categories: Plugins,Colocalization,Color processing
 description: test description
 ---
 
-{% include Infobox content="name = Colocalization Test | software =
-ImageJ - Fiji | author = Tony Collins (and others?) | maintainer = 
-
 ## Purpose
 
 Performs one of a set of three statistical tests, comparing the Persons

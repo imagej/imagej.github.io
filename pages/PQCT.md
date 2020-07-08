@@ -8,8 +8,7 @@ categories: Plugins,Citable
 description: test description
 ---
 
-{% include Infobox content="name = pQCT | author = Timo Rantalainen |
-software = ImageJ/Fiji | source = %Replace% TOC %Replace%
+%Replace% TOC %Replace%
 
 ## Summary
 
@@ -26,7 +25,7 @@ images. It's designed for the following analyses:
 
 ## Installation
 
-1\) {% include bc content="Help | Update..." %}
+1\) {% include bc content='Help | Update...' %}
 
 2\) Manage update sites
 
@@ -45,7 +44,7 @@ is available
 
 ## Distribution analysis
 
-{% include bc content="Plugins | pQCT | Distribution Analysis" %}
+{% include bc content='Plugins | pQCT | Distribution Analysis' %}
 
 The main tool for pQCT image analysis. You must open an image first
 before running this tool.
@@ -429,23 +428,25 @@ endosteal and periosteal border.
 
 ## Export Stratec Header
 
-{% include bc content="Plugins | pQCT | Export Stratec Header" %}
+{% include bc content='Plugins | pQCT | Export Stratec Header' %}
 
 Displays the metadata saved in the pQCT image currently open.
 
 ## Strip Stracted Header
 
-{% include bc content="Plugins | pQCT | Export Stratec Header" %}
+{% include bc content='Plugins | pQCT | Export Stratec Header' %}
 
 Can be used to save a new version of the given image file, where
 selected metadata fields have been stripped.
 
 ## Read Stratec File
 
-{% include bc content="Plugins | pQCT | Export Stratec Header" %}
+{% include bc content='Plugins | pQCT | Export Stratec Header' %}
 
 Use this plug-in to open Stratec pQCT images. NB {% include bc
-content="File | Open" %} or dragging the file doesn't work.
+content='File | Open' %}
+
+`or dragging the file doesn't work.`
 
 ## Test images
 
@@ -458,6 +459,7 @@ To easily run the test, use the provided
 [macro](http://bonej.org/images/SyntheticDataTest.ijm). Instructions:
 
 1.  Prepare the .ijm macro file before the first time you run it
+    
     1.  Open SyntheticDataTest.ijm
     2.  Change the paths on line 2 and 3 to ones that match your
         computer, e.g.: line 2: sourceDir =
@@ -469,11 +471,15 @@ To easily run the test, use the provided
         windows and do have spaces in your path, replace the / with
         \\\\.
     3.  Save the .ijm file
+
 2.  Open Fiji / ImageJ
-3.  {% include bc content="Plugins | Macros | Run" %}
-4.  Find your .ijm file
-5.  When the macro has finished, you should see the Results table
-6.  Open the resulting file with excel or open office or some other
+
+3.  
+{% include bc content='Plugins | Macros | Run' %}
+
+1.  Find your .ijm file
+2.  When the macro has finished, you should see the Results table
+3.  Open the resulting file with excel or open office or some other
     suitable program and the results should match the ones within the
     Synthetic data provided above.
 

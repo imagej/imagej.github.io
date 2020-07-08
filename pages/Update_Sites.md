@@ -18,16 +18,18 @@ you do not need to manually download and install anything;
 
 <div style="clear: right; float: right">
 
-{% include Fiji content="The [Fiji](Fiji "wikilink") distribution of
+{% capture includecontent %} The [Fiji](Fiji "wikilink") distribution of
 ImageJ ships with both the *ImageJ* and *Fiji* sites enabled. You can
 transform your ImageJ installation into a Fiji one simply by enabling
-the *Fiji* update site." %}
+the *Fiji* update site. {% endcapture %}
+
+{% include fiji content=includecontent %}
 
 </div>
 
 Out of the box, ImageJ has only the core *ImageJ* update site enabled.
 To enable additional features, choose {% include bc
-content="Help|Update..." %}, then click the "Manage update sites"
+content='Help|Update...' %} , then click the "Manage update sites"
 button.
 
 For further details, see [How to follow a 3rd party update

@@ -8,8 +8,9 @@ categories: Scripting
 description: test description
 ---
 
-\_\_FORCETOC\_\_ {% include Learn content="scripting" %} <big>**Example:
-a command launcher**</big>
+\_\_FORCETOC\_\_ {% include learn content='scripting' %}
+
+<big>**Example: a command launcher**</big>
 
 A short plugin is used as example: a little dialog window that lets you
 type in a command for ImageJ to execute. A command is a menu item, which

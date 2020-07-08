@@ -8,9 +8,6 @@ categories: Plugins
 description: test description
 ---
 
-{% include Infobox content="software = ImageJ | name = TurboReg |
-maintainer = Philippe Thévenaz | author = Philippe Thévenaz | source = 
-
 This plugin is described in detail on the [BIG
 website](http://bigwww.epfl.ch/thevenaz/turboreg/).
 

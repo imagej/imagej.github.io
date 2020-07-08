@@ -13,10 +13,9 @@ description: test description
 The integration of the **Multiview Reconstruction** and the
 [BigDataViewer](BigDataViewer "wikilink") is available through the Fiji
 Updater. Simply update Fiji and the Multiview-Reconstruction pipeline
-will be available under '{% include bc content="Plugins | Multiview
-Reconstruction | Multiview Reconstruction Application" %}'. The source
-code is available {% include GitHub
-content="org=bigdataviewer|repo=SPIM\_Registration" %}, please also
+will be available under ' {% include bc content='Plugins | Multiview
+Reconstruction | Multiview Reconstruction Application' %} '. The source
+code is available {% include github content='TODO' %} , please also
 report feature requests & bugs there.
 
 To enable GPU hardware accelerated processing, you might want to
@@ -136,7 +135,7 @@ this seven-view dataset, the lower row the content-based fusion.
 </tbody>
 </table>
 
-{{\#widget:YouTube|id=NJHoP8RBIaw|width=420}}
+{% include youtube url="https://www.youtube.com/embed/NJHoP8RBIaw" %}
 
 The second video shows a fixed *C. elegans* larvae in L1 stage
 expressing Lamin-GFP and stained with Hoechst. The four-view dataset was
@@ -145,7 +144,7 @@ increase in resolution that can be achieved through multiview imaging
 combined with multiview deconvolution. The top row shows one of the four
 input views, the bottom row the result of the multiview deconvolution.
 
-{{\#widget:YouTube|id=16gq2WUm-50|width=420}}
+{% include youtube url="https://www.youtube.com/embed/16gq2WUm-50" %}
 
 ## Detailed Tutorials
 
@@ -300,22 +299,20 @@ two of my talks were recorded:
 
 ### Talk: Registration of Multiview Lightsheet Fluorescence Microscopy (LSFM) Images
 
-{{\#widget:YouTube|id=IupXS\_On2rg|width=773}}
+{% include youtube url="https://www.youtube.com/embed/IupXS_On2rg" %}
 
-This 30-minute talk by {% include Person content="StephanP" %} covers
-the theory behind registration of multiview lightsheet microscopy data
-and it also quickly addresses the problem of multiview fusion &
-deconvolution.
+This 30-minute talk by {% include person content='TODO' %}
+
+`covers the theory behind registration of multiview lightsheet microscopy data and it also quickly addresses the problem of multiview fusion & deconvolution.`
 
 ### Tutorial: Fiji Multiview Lightsheet Reconstruction Software
 
-{{\#widget:YouTube|id=0IkaSwfPYw0|width=773}}
+{% include youtube url="https://www.youtube.com/embed/0IkaSwfPYw0" %}
 
-This one hour tutorial by {% include Person content="StephanP" %} covers
-the basic usage of this multiview reconstruction software for Fiji.
-Documentation, source code, bug reports and feature requests can be
-found [on
-SourceForge](https://sourceforge.net/projects/multiviewreconstruction/).
+This one hour tutorial by {% include person content='TODO' %}
+
+`covers the basic usage of this multiview reconstruction software for Fiji. Documentation, source code, bug reports and feature requests can be found `[`on`` 
+ ``SourceForge`](https://sourceforge.net/projects/multiviewreconstruction/)`.`
 
 ## Comments, Bugs & Feature Requests
 

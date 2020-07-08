@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-{% include info-box content="This page describes how to *cite*
+{% capture includecontent %} This page describes how to *cite*
 [SciJava](SciJava "wikilink") projects.
 
   - For information on who *contributes* to these projects, see
@@ -16,7 +16,11 @@ description: test description
   - For information on who *maintains* these projects, see
     [Governance](Governance "wikilink").
   - For information on how ImageJ projects are *funded*, see
-    [Funding](Funding "wikilink")." %}
+    [Funding](Funding "wikilink").
+
+{% endcapture %}
+
+{% include info-box content=includecontent %}
 
 %Replace% AboutMenu %Replace% == Guidelines ==
 
@@ -38,23 +42,94 @@ Thank you for your support.
 
 ## Publications to cite
 
-|                                      |                                             |                                                    |
-| ------------------------------------ | ------------------------------------------- | -------------------------------------------------- |
-| **Logo**                             | **Project**                                 | **Citation**                                       |
-| Core projects                        |                                             |                                                    |
-| {% include Logo content="ImageJ2" %} | [ImageJ2](ImageJ2 "wikilink")               | {% include Publication content="ImageJ2" %}        |
-| {% include Logo content="ImageJ1" %} | [ImageJ 1.x](ImageJ_1.x "wikilink")         | {% include Publication content="ImageJ" %}         |
-| Distributions of ImageJ              |                                             |                                                    |
-| {% include Logo content="Fiji" %}    | [Fiji](Fiji "wikilink")                     | {% include Publication content="Fiji" %}           |
-| {% include Logo content="BoneJ" %}   | [BoneJ](BoneJ "wikilink")                   | {% include Publication content="BoneJ" %}          |
-| {% include Logo content="Bio7" %}    | [Bio7](Bio7 "wikilink")                     | {% include Publication content="Bio7" %}           |
-| Supporting libraries                 |                                             |                                                    |
-| {% include Logo content="ImgLib2" %} | [ImgLib2](ImgLib2 "wikilink")               | {% include Publication content="ImgLib2" %}        |
-| {% include Logo content="SciJava" %} | [SciJava Common](SciJava_Common "wikilink") | {% include Publication content="SciJava Common" %} |
-| {% include Logo content="SCIFIO" %}  | [SCIFIO](SCIFIO "wikilink")                 | {% include Publication content="SCIFIO" %}         |
-| {% include Logo content="ImageJ" %}  | [ImageJ Ops](ImageJ_Ops "wikilink")         | {% include Publication content="ImageJ Ops" %}     |
-|                                      |                                             |                                                    |
-|                                      |                                             |                                                    |
+<table>
+<tbody>
+<tr class="odd">
+<td><p><strong>Logo</strong></p></td>
+<td><p><strong>Project</strong></p></td>
+<td><p><strong>Citation</strong></p></td>
+</tr>
+<tr class="even">
+<td><p>Core projects</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><p>{% include logo content='ImageJ2' %}</p></td>
+<td><p><a href="ImageJ2" title="wikilink">ImageJ2</a></p></td>
+<td><p>{% capture includecontent %} TODO {% endcapture %}</p>
+<p>{% include publication content=includecontent %}</p></td>
+</tr>
+<tr class="even">
+<td><p>{% include logo content='ImageJ1' %}</p></td>
+<td><p><a href="ImageJ_1.x" title="wikilink">ImageJ 1.x</a></p></td>
+<td><p>{% capture includecontent %} TODO {% endcapture %}</p>
+<p>{% include publication content=includecontent %}</p></td>
+</tr>
+<tr class="odd">
+<td><p>Distributions of ImageJ</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><p>{% include logo content='Fiji' %}</p></td>
+<td><p><a href="Fiji" title="wikilink">Fiji</a></p></td>
+<td><p>{% capture includecontent %} TODO {% endcapture %}</p>
+<p>{% include publication content=includecontent %}</p></td>
+</tr>
+<tr class="odd">
+<td><p>{% include logo content='BoneJ' %}</p></td>
+<td><p><a href="BoneJ" title="wikilink">BoneJ</a></p></td>
+<td><p>{% capture includecontent %} TODO {% endcapture %}</p>
+<p>{% include publication content=includecontent %}</p></td>
+</tr>
+<tr class="even">
+<td><p>{% include logo content='Bio7' %}</p></td>
+<td><p><a href="Bio7" title="wikilink">Bio7</a></p></td>
+<td><p>{% capture includecontent %} TODO {% endcapture %}</p>
+<p>{% include publication content=includecontent %}</p></td>
+</tr>
+<tr class="odd">
+<td><p>Supporting libraries</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><p>{% include logo content='ImgLib2' %}</p></td>
+<td><p><a href="ImgLib2" title="wikilink">ImgLib2</a></p></td>
+<td><p>{% capture includecontent %} TODO {% endcapture %}</p>
+<p>{% include publication content=includecontent %}</p></td>
+</tr>
+<tr class="odd">
+<td><p>{% include logo content='SciJava' %}</p></td>
+<td><p><a href="SciJava_Common" title="wikilink">SciJava Common</a></p></td>
+<td><p>{% capture includecontent %} TODO {% endcapture %}</p>
+<p>{% include publication content=includecontent %}</p></td>
+</tr>
+<tr class="even">
+<td><p>{% include logo content='SCIFIO' %}</p></td>
+<td><p><a href="SCIFIO" title="wikilink">SCIFIO</a></p></td>
+<td><p>{% capture includecontent %} TODO {% endcapture %}</p>
+<p>{% include publication content=includecontent %}</p></td>
+</tr>
+<tr class="odd">
+<td><p>{% include logo content='ImageJ' %}</p></td>
+<td><p><a href="ImageJ_Ops" title="wikilink">ImageJ Ops</a></p></td>
+<td><p>{% capture includecontent %} TODO {% endcapture %}</p>
+<p>{% include publication content=includecontent %}</p></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 See the [list of citable software](:Category:Citable "wikilink") and
 [publications using Fiji](Fiji/Publications "wikilink") for additional

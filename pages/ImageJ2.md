@@ -8,11 +8,11 @@ categories: Software,ImageJ2,SciJava,Citable
 description: test description
 ---
 
-{% include Project content="ImageJ" %}
+{% include project content='ImageJ' %}
 
 <div style="clear: right; float: right">
 
-{% include sidebox-right content="float=right | text=
+{% capture includecontent %} float=right | text=
 
 <h2>
 
@@ -34,7 +34,10 @@ ImageJ2's Mission
 
 See also [these presentation slides about
 ImageJ](https://imagej.github.io/presentations/2015-09-03-imagej2-and-fiji/#/4).
-" %}
+
+{% endcapture %}
+
+{% include sidebox-right content=includecontent %}
 
 </div>
 
@@ -68,11 +71,16 @@ ImageJ2 provides a wealth of new features and capabilities:
   - More powerful [Script Editor](Script_Editor "wikilink") with support
     for several scripting languages.
   - New commands:
-      - {% include bc content="Plugins | Debug | Dump Stack" %} for
-        debugging when things
-        [hang](wikipedia:Hang_\(computing\) "wikilink").
-      - {% include bc content="Plugins | Debug | System Information" %}
-        for reporting on versions of installed plugins and libraries.
+      - 
+{% include bc content='Plugins | Debug | Dump Stack' %}
+
+`for debugging when things `[`hang`](wikipedia:Hang_\(computing\) "wikilink")`.`
+
+  -   - 
+{% include bc content='Plugins | Debug | System Information' %}
+
+`for reporting on versions of installed plugins and libraries.`
+
   - Use ImageJ2's N-dimensional [ImgLib2](ImgLib2 "wikilink")-based data
     structures (still in beta).
   - Write parameterized commands and scripts:
@@ -107,9 +115,11 @@ plugins.
 
 ImageJ2 uses the [SCIFIO](SCIFIO "wikilink") library (SCientific Image
 Format Input and Output) by default for most image input tasks. You can
-change this behavior at any time by running {% include bc content="Edit
-| Options | ImageJ2" %} and modifying the *Use SCIFIO when opening
-files* option.
+change this behavior at any time by running {% include bc content='Edit
+| Options | ImageJ2' %}
+
+`and modifying the `*`Use``   ``SCIFIO``   ``when``   ``opening`` 
+ ``files`*` option.`
 
 For further details, see the [SCIFIO](SCIFIO "wikilink") page.
 
@@ -175,8 +185,15 @@ ImageJ2 is funded from a variety of sources. See the
 
 ## Publications
 
-  - {% include Publication content="ImageJ2" %}
-  - {% include Publication content="Ecosystem" %}
+  - 
+{% capture includecontent %} TODO {% endcapture %}
+
+{% include publication content=includecontent %}
+
+  - 
+{% capture includecontent %} TODO {% endcapture %}
+
+{% include publication content=includecontent %}
 
 For the moment, we suggest using "The ImageJ ecosystem" paper for
 citations. But we recommend both of the above for learning about ImageJ2

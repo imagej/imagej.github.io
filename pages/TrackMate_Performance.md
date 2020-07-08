@@ -141,4 +141,4 @@ remember that
 
 <references/>
 
-1.  <https://github.com/imagej/imglib/blob/master/algorithms/core/src/main/java/net/imglib2/algorithm/gauss3/Gauss3.java>
+1.  https://github.com/imagej/imglib/blob/master/algorithms/core/src/main/java/net/imglib2/algorithm/gauss3/Gauss3.java

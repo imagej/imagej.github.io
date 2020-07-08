@@ -8,10 +8,8 @@ categories: Plugins,ImageScience
 description: test description
 ---
 
-{% include Infobox content="software = ImageScience | name = RandomJ |
-maintainer = The
-[RandomJ](http://imagescience.org/meijering/software/randomj/) suite of
-plugins offers sophisticated application of noise to images.
+The [RandomJ](http://imagescience.org/meijering/software/randomj/) suite
+of plugins offers sophisticated application of noise to images.
 
 RandomJ is available from the [ImageScience](ImageScience "wikilink")
 update site.

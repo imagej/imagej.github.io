@@ -38,7 +38,16 @@ more powerful, flexible and completely integrated with the
 ![<b>Figure 1:</b> Schematic drawing of a Selective Plane Illumination
 Microscope](SPIMScheme.png
 "Figure 1: Schematic drawing of a Selective Plane Illumination Microscope")
-A Selective Plane Illumination Microscope\[1\]
+A Selective Plane Illumination Microscope<ref name="HuiskenAl2004"> {%
+capture includecontent %} author = J. Huisken and J. Swoger and F. D.
+Bene and J. Wittbrodt and E. H. K. Stelzer | Optical Sectioning Deep
+Inside Live Embryos by Selective Plane Illumination Microscopy | journal
+= Science | volume = 305 | number = 5686 | pages = 1007 1010 | year =
+2004
+
+{% endcapture %}
+
+{% include cite-journal content=includecontent %} </ref>
 ([Figure 1](Media:SPIMScheme.png "wikilink")), achieves optical
 sectioning by focusing the excitation laser into a thin laser light
 sheet that reaches its minimal thickness in the middle of the field of
@@ -69,42 +78,250 @@ specimen from different angles (usually 3 to 12, see
 ### Related work
 
 Multi-view microscopy techniques, such as tilted confocal
-acquisitions,\[2\] SPIM\[3\] and Ultramicroscopy\[4\] (2 views), can
+acquisitions,<ref name="ShawAl89">
+
+{% capture includecontent %} author = P. Shaw, D. Agard, Y. Hiraoka, and
+J. Sedat | Tilted view reconstruction in optical microscopy.
+Three-dimensional reconstruction of Drosophila melanogaster embryo
+nuclei | journal = Biophysical Journal | volume = 55 | number = 1 | year
+= 1989 | pages = 101–110 {% endcapture %}
+
+{% include cite-journal content=includecontent %}
+
+</ref> SPIM\[1\] and Ultramicroscopy<ref name="Dodt2007">
+
+{% capture includecontent %} author = H. U. Dodt, U. Leischner, A.
+Schierloh, N. Jährling, C. P. Mauch, K. Deininger, J. M. Deussing, M.
+Eder, W. Zieglgänsberger, and K. Becker | Ultramicroscopy:
+three-dimensional visualization of neuronal networks in the whole mouse
+brain | doi = 10.1038/nmeth1036 | journal = Nature Methods | number = 4
+| pages = 331–336 | volume = 4 | year = 2007 {% endcapture %}
+
+{% include cite-journal content=includecontent %} </ref> (2 views), can
 increase the resolution along the \(z\)-axis and thus enable the
-analysis of objects smaller than the axial resolution limit.\[5\]\[6\]
-Image reconstruction based on the image intensities requires significant
+analysis of objects smaller than the axial resolution
+limit.\[2\]<ref name="Swoger2007">
+
+{% capture includecontent %} author = J. Swoger, P. Verveer, K. Greger,
+J. Huisken, and E. H. K. Stelzer | journal = Opt. Express | number = 13
+| pages = 8029–8042 | Multi-view image fusion improves resolution in
+three-dimensional microscopy | volume = 15 | year = 2007 {% endcapture
+%}
+
+{% include cite-journal content=includecontent %} </ref> Image
+reconstruction based on the image intensities requires significant
 overlap of image content which is often difficult to achieve
 particularly in live imaging of dynamically changing samples.
 
 The idea to incorporate fiduciary markers to facilitate sample
 independent reconstruction is widely used in medical
-imaging\[7\]\[8\]\[9\]\[10\]\[11\] and electron tomography.\[12\]\[13\]
-Due to the low amount of fiduciary markers available for registration,
-research is focused on error analysis rather than efficiency of matching
-of thousands of markers with only partial overlap.\[14\]
+imaging<ref name="Gullekson1974"> {% capture includecontent %} TODO {%
+endcapture %}
+
+{% include citation content=includecontent %}
+</ref><ref name="Erickson1993"> {% capture includecontent %} author =
+B.J. Erickson and Jack C.R. Jr. | Correlation of single photon emission
+CT with MR image data using fiduciary markers | journal = American
+Journal of Neuroradiology | volume = 14 | number = 3 | pages = 713 720 |
+year = 1993
+
+{% endcapture %}
+
+{% include cite-journal content=includecontent %}
+</ref><ref name="Fitzpatrick2001"> {% capture includecontent %} author =
+J. M. Fitzpatrick and J. B. West | The distribution of target
+registration error in rigid-body point-based registration | journal =
+IEEE Transactions on Medical Imaging | volume = 20 | number = 9 | year =
+2001 | month = September | pages = 917 927
+
+{% endcapture %}
+
+{% include cite-journal content=includecontent %}
+</ref><ref name="Wiles2008"> {% capture includecontent %} author = A. D.
+Wiles, A. Likholyot, D. D. Frantz, and T.M.Peters | A Statistical Model
+for Point-Based Target Registration Error With Anisotropic Fiducial
+Localizer Error | journal = IEEE Transactions on Medical Imaging |
+volume = 27 | number = 3 | year = 2008 | month = March | pages = 378 390
+
+{% endcapture %}
+
+{% include cite-journal content=includecontent %}
+</ref><ref name="Moghari2008"> {% capture includecontent %} author = M.
+H. Moghari, B. Ma, and P. Abolmaesumi | A Theoretical Comparison of
+Different Target Registration Error Estimators | bookMICCAI '08:
+Proceedings of the 11th International Conference on Medical Image
+Computing and Computer-Assisted Intervention, Part II | year = 2008 |
+isbn = 978-3-540-85989-5 | pages = 1032 1040 | doi =
+10.1007/978-3-540-85990-1\_124 | publisher = Springer-Verlag | location
+= Berlin, Heidelberg
+
+{% endcapture %}
+
+{% include cite-conference content=includecontent %} </ref> and electron
+tomography.<ref name="Dierksen1992"> {% capture includecontent %}
+Towards automatic electron tomography | journal = Ultramicroscopy |
+volume = 40 | number = 1 | pages = 71 87 | year = 1992 | author = K.
+Dierksen, D. Typke, R. Hegerl, A. J. Koster, and W. Baumeister
+
+{% endcapture %}
+
+{% include cite-journal content=includecontent %}
+</ref><ref name="Koster1997"> {% capture includecontent %} author = A.
+J. Koster, R. Grimm, D. Typke, R. Hegerl, A. Stoschek, J. Walz, and W.
+Baumeister | Perspectives of molecular and cellular electron tomography
+| journal = J Struct Biol | year = 1997 | volume = 120 | number = 3 |
+pages = 276 308
+
+{% endcapture %}
+
+{% include cite-journal content=includecontent %} </ref> Due to the low
+amount of fiduciary markers available for registration, research is
+focused on error analysis rather than efficiency of matching of
+thousands of markers with only partial overlap.\[3\]
 
 In contrast, in the robotics and automation field, there is interest in
 localization of large amounts of different objects. Points of interest
 are extracted from photos and checked against databases to determine
-their type and orientation.\[15\]\[16\] To enable real time object
-recognition, Lamdan et al.\[17\] introduced ‘geometric hashing'’ which
-uses an intrinsic invariant local coordinate system to match objects
-against database entries in a viewpoint independent manner. The
-geometric hashing principle is reused in the fields of astronomy\[18\]
-and protein structure alignment and comparison\[19\]\[20\]\[21\]\[22\]
-where efficient searching in massive point clouds is required.
+their type and orientation.<ref name="HarrisS88"> {% capture
+includecontent %} A Combined Corner and Edge Detector | author = C.
+Harris and M. Stephens | locaiton = Plessey Research Roke Manor, UK |
+bookProceedings of The Fourth Alvey Vision Conference | location =
+Manchester | year = 1988 | pages = 147 151
+
+{% endcapture %}
+
+{% include cite-conference content=includecontent %}
+</ref><ref name="Canny86"> {% capture includecontent %} A computational
+approach to edge detection | author = J. Canny | journal = IEEE
+Transactions on Pattern Analysis Machine Intelligence | volume = 8 |
+number = 6 | year = 1986 | pages = 679 698
+
+{% endcapture %}
+
+{% include cite-journal content=includecontent %} </ref> To enable real
+time object recognition, Lamdan et al.<ref name="LamdanAl88"> {% capture
+includecontent %} author = Y. Lamdan, J. Schwartz, and H. Wolfson | On
+recognition of 3D objects from 2D images | bookProceedings of the IEEE
+International Conference on Robotics and Automation | year = 1988 |
+pages = 1407 1413 | publisher = IEEE Computer Society | location = Los
+Alamitos, CA
+
+{% endcapture %}
+
+{% include cite-conference content=includecontent %} </ref> introduced
+‘geometric hashing'’ which uses an intrinsic invariant local
+coordinate system to match objects against database entries in a
+viewpoint independent manner. The geometric hashing principle is reused
+in the fields of astronomy<ref name="Hogg2008"> {% capture
+includecontent %} author = D. W. Hogg, M. Blanton, D. Lang, K. Mierle,
+and S. Roweis | Automated Astrometry | bookAstronomical Data Analysis
+Software and Systems XVII | year = 2008 | series = Astronomical Society
+of the Pacific Conference Series | volume = 394 | editor = R. W. Argyle,
+P. S. Bunclark, and J. R. Lewis | month = August | pages = 27-+
+
+{% endcapture %}
+
+{% include cite-conference content=includecontent %} </ref> and protein
+structure alignment and comparison<ref name="Nussinov91"> {% capture
+includecontent %} author = R. Nussinov and H. J. Wolfson | journal =
+Proc Natl Acad Sci U S A | number = 23 | pages = 10495 10499 | Efficient
+detection of three-dimensional structural motifs in biological
+macromolecules by computer vision techniques. | volume = 88 | year =
+1991
+
+{% endcapture %}
+
+{% include cite-journal content=includecontent %}
+</ref><ref name="Fischer94"> {% capture includecontent %} author = D.
+Fischer, H. Wolfson, S. L. Lin, and R. Nussinov | Three-dimensional,
+sequence order-independent structural comparison of a serine protease
+against the crystallographic database reveals active site similarities:
+Potential implications to evolution and to protein folding | journal =
+Protein Science | volume = 3 | number = 5 | pages = 769 778 | year =
+1994
+
+{% endcapture %}
+
+{% include cite-journal content=includecontent %}
+</ref><ref name="Wallace1997"> {% capture includecontent %} author =
+A.C. Wallace, N. Borkakoti, and J. M. Thornton | Tess: A geometric
+hashing algorithm for deriving 3D coordinate templates for searching
+structural databases. Application to enzyme active sites | journal =
+Protein science | year = 1997 | volume = 6 | number = 11 | pages = 2308
+
+{% endcapture %}
+
+{% include cite-journal content=includecontent %}
+</ref><ref name="Stark2003"> {% capture includecontent %} A Model for
+Statistical Significance of Local Similarities in Structure | journal =
+Journal of Molecular Biology | volume = 326 | number = 5 | pages =
+1307 1316 | year = 2003 | author = A. Stark, S. Sunyaev, and R. B.
+Russell
+
+{% endcapture %}
+
+{% include cite-journal content=includecontent %} </ref> where efficient
+searching in massive point clouds is required.
 
 The use of local descriptors instead of complete scenes for matching is
-proposed in many fields comprising image registration,\[23\]\[24\]
-robotics and autonomous systems,\[25\]\[26\] and computer vision.\[27\]
+proposed in many fields comprising image
+registration,<ref name="Stanski2005"> {% capture includecontent %}
+author = A. Stanski and O. Hellwich | Spiders as Robust Point
+Descriptors | bookDAGM-Symposium | year = 2005 | pages = 262 268
 
-Matula et al.\[28\] suggest segmentation based approaches for
-reconstruction of multi-view microscopy images. The center of mass of
-the cloud of segmented objects is used as a reference point for a
-cylindrical coordinate system facilitating the registration between two
-views. Similarly to intensity based approaches, this method requires
-significant overlap between the images and furthermore supports
-alignment of only two stacks at a time.
+{% endcapture %}
+
+{% include cite-conference content=includecontent %}
+</ref><ref name="Lowe04"> {% capture includecontent %} author = D. G.
+Lowe | Distinctive image features from scale-invariant keypoints |
+journal = Int J Comput Vis | volume = 60 | number = 2 | pages = 91 110 |
+year = 2004
+
+{% endcapture %}
+
+{% include cite-journal content=includecontent %} </ref> robotics and
+autonomous systems,<ref name="Kuipers91"> {% capture includecontent %}
+author = B. Kuipers and Yung-tai Byun | A Robot Exploration and Mapping
+Strategy Based on a Semantic Hierarchy of Spatial Representations |
+journal = Journal of Robotics and Autonomous Systems | year = 1991 |
+volume = 8 | pages = 47 63
+
+{% endcapture %}
+
+{% include cite-journal content=includecontent %}
+</ref><ref name="Bradley04"> {% capture includecontent %} author = D.
+Bradley, D. Silver, and S. Thayer | A regional point descriptor for
+global localization in subterranean environments | bookIEEE conference
+on Robotics Automation and Mechatronics (RAM 2005) | pages = 440 445 |
+month = December | year = 2004 | volume = 1
+
+{% endcapture %}
+
+{% include cite-conference content=includecontent %} </ref> and computer
+vision.<ref name="Frome04"> {% capture includecontent %} author = A.
+Frome, D. Huber, R. Kolluri, T. Bulow, and J. Malik | Recognizing
+objects in range data using regional point descriptors | bookProceedings
+of the European Conference on Computer Vision (ECCV) | month = May |
+year = 2004
+
+{% endcapture %}
+
+{% include cite-conference content=includecontent %} </ref>
+
+Matula et al.<ref name="Matula2003"> {% capture includecontent %} author
+= P. Matula, M. Kozubek, F. Staier, and M. Hausmann | journal = Journal
+of microscopy | pages = 126 42 | Precise 3D image alignment in
+micro-axial tomography. | volume = 209 | year = 2003
+
+{% endcapture %}
+
+{% include cite-journal content=includecontent %} </ref> suggest
+segmentation based approaches for reconstruction of multi-view
+microscopy images. The center of mass of the cloud of segmented objects
+is used as a reference point for a cylindrical coordinate system
+facilitating the registration between two views. Similarly to intensity
+based approaches, this method requires significant overlap between the
+images and furthermore supports alignment of only two stacks at a time.
 
 Our approach combines the idea of using fiduciary markers, local
 descriptors and geometric hashing and applies global optimization. It
@@ -132,18 +349,34 @@ demanding.
 We found that an appropriately smoothed 3d LaPlace filter \(\nabla^2\)
 detects all beads with sufficient accuracy while effectively suppressing
 high frequency noise. As suggested in the Computer Vision
-literature,\[29\]\[30\] we approximate \(\nabla^2I\) by the difference
-of two Gaussian convolutions (DoG) of the image \(I\) with a standard
-deviation \(\sigma\) of 1.4 px and 1.8 px respectively. All local minima
-in a 3×3×3 neighborhood in \(\nabla^2I\) represent intensity maxima
-whose sub-pixel location is then estimated by fitting a 3d quadratic
-function to this neighbourhood.\[31\] The DoG detector identifies beads
-even if they are close to each other, close to the sample or those with
-an unexpected shape. It also massively oversegments the image detecting
-‘blob-like’ structures, corners and various locations alongside edges
-or planes within the imaged sample. However, those detections do not
-interfere with the registration process as the descriptors that
-incorporate them are filtered out by local descriptor matching (see
+literature,<ref name="Lindeberg94"> {% capture includecontent %} author
+= T. Lindeberg | Scale-space theory: A basic tool for analysing
+structures at different scales | journal = Journal of Applied Statistics
+| volume = 21 | number = 2 | pages = 224 270 | year = 1994
+
+{% endcapture %}
+
+{% include cite-journal content=includecontent %} </ref>\[4\] we
+approximate \(\nabla^2I\) by the difference of two Gaussian convolutions
+(DoG) of the image \(I\) with a standard deviation \(\sigma\) of 1.4 px
+and 1.8 px respectively. All local minima in a 3×3×3 neighborhood in
+\(\nabla^2I\) represent intensity maxima whose sub-pixel location is
+then estimated by fitting a 3d quadratic function to this
+neighbourhood.<ref name="BrownLowe02"> {% capture includecontent %}
+author = M. Brown and D. Lowe | Invariant Features from Interest Point
+Groups | bookIn British Machine Vision Conference | year = 2002 | pages
+= 656 665
+
+{% endcapture %}
+
+{% include cite-conference content=includecontent %} </ref> The DoG
+detector identifies beads even if they are close to each other, close to
+the sample or those with an unexpected shape. It also massively
+oversegments the image detecting ‘blob-like’ structures, corners and
+various locations alongside edges or planes within the imaged sample.
+However, those detections do not interfere with the registration process
+as the descriptors that incorporate them are filtered out by local
+descriptor matching (see
 [Figure 2](Media:DescriptorBuildup.png "wikilink")). Only beads are
 repeatably detected in different views.
 
@@ -158,7 +391,15 @@ and rotation. To this end, we developed a *geometric local descriptor* .
 The local descriptor of a bead is defined by the locations of its
 3 nearest neighbors in 3d image space ordered by their distance to the
 bead. To efficiently extract the nearest neighbors in image space we use
-the *kd*-tree implementation of the WEKA framework.\[32\] Translation
+the *kd*-tree implementation of the WEKA framework.<ref name="WEKA"> {%
+capture includecontent %} author = I. H. Witten and E. Frank | Data
+Mining: Practical machine learning tools and techniques | publisher =
+Morgen Kaufmann | location = San Francisco | isbn = 0-12-088407-0 |
+edition = second | year = 2005
+
+{% endcapture %}
+
+{% include cite-book content=includecontent %} </ref> Translation
 invariance is achieved by storing locations relative to the bead. That
 is, each bead descriptor is an ordered 3d point cloud of cardinality 3
 with its origin \(\vec{o} = (0,0,0)^T\)} being the location of the bead.
@@ -167,13 +408,32 @@ Local descriptor matching is performed invariantly to rotation by
 mapping the ordered point cloud of all beads \(\vec{a}\in A\) to that of
 all beads \(\vec{b}\in B\) individually by means of least square point
 mapping error using the closed-form unit quaternion-based
-solution.\[33\] The similarity measure \(\epsilon\) is the average point
-mapping error. Each candidate in \(A\) is matched against each candidate
-in \(B\). Corresponding descriptors are those with minimal \(\epsilon\).
-This approach, however, is computationally very demanding as it has a
-complexity of \(O(n^2)\) regarding the number of detections.\[34\]
+solution.<ref name="Horn87"> {% capture includecontent %} author = B. K.
+P. Horn | Closed-form solution of absolute orientation using unit
+quaternions | journal = Journal of the Optical Society of America A |
+volume = 4 | number = 4 | pages = 629 642 | year = 1987
 
-We therefore employed a variation of geometric hashing\[35\] to speed up
+{% endcapture %}
+
+{% include cite-journal content=includecontent %} </ref> The similarity
+measure \(\epsilon\) is the average point mapping error. Each candidate
+in \(A\) is matched against each candidate in \(B\). Corresponding
+descriptors are those with minimal \(\epsilon\). This approach, however,
+is computationally very demanding as it has a complexity of \(O(n^2)\)
+regarding the number of detections.<ref name="Preibisch2009a"> {%
+capture includecontent %} author = S. Preibisch and S. Saalfeld and T.
+Rohlfing and P. Tomancak | Bead-based mosaicing of single plane
+illumination microscopy images using geometric local descriptor matching
+| bookMedical Imaging 2009: Image Processing | year = 2009 | editor = J.
+P. W. Pluim and B. M. Dawant | volume = 7259 | number = 1 | pages =
+72592S | location = Orlando, FL, USA | doi = 10.1117/12.812612 | series
+= Proceedings of SPIE
+
+{% endcapture %}
+
+{% include cite-conference content=includecontent %} </ref>
+
+We therefore employed a variation of geometric hashing\[5\] to speed up
 the matching process. Instead of using one reference coordinate system
 for the complete scene we define a local coordinate system for each of
 the descriptor as illustrated and described in
@@ -182,11 +442,11 @@ coordinates not used for defining the local coordinate system become
 rotation invariant which enables us to compare descriptors very
 efficiently using *kd*-trees to index remaining bead coordinates in the
 local coordinate system. Again, we employ the *kd*-tree implementation
-of the WEKA framework\[36\] on a six-dimensional tree to identify
-nearest neighbors in the descriptor space, i.e. descriptors which are
-most similar. The most similar descriptors that are significantly better
+of the WEKA framework\[6\] on a six-dimensional tree to identify nearest
+neighbors in the descriptor space, i.e. descriptors which are most
+similar. The most similar descriptors that are significantly better
 (10×) than the second nearest neighbor in descriptor space are
-designated correspondence candidates.\[37\]
+designated correspondence candidates.\[7\]
 
 Descriptors composed of only four beads are not completely distinctive
 and similar descriptors can occur by chance. Increasing the number of
@@ -196,8 +456,16 @@ correspondences agree on one transformation model for optimal view
 registration, whereas each false correspondence supports a different
 transformation. Therefore, we used the minimal descriptor size (4 beads)
 and rejected false correspondences from candidate sets with the Random
-Sample Consensus (RANSAC)\[38\] on the affine transformation model
-followed by robust regression.
+Sample Consensus (RANSAC)<ref name="FischlerB81"> {% capture
+includecontent %} author = M. A. Fischler and R. C. Bolles | Random
+sample consensus: a paradigm for model fitting with applications to
+image analysis and automated cartography | journal = Communications of
+the ACM | volume = 24 | number = 6 | pages = 381 395 | year = 1981
+
+{% endcapture %}
+
+{% include cite-journal content=includecontent %} </ref> on the affine
+transformation model followed by robust regression.
 
 ### Global Optimization
 
@@ -215,8 +483,16 @@ least square bead correspondence displacement
 
 We use an affine transformation to correct for the anisotropic
 \(z\)-stretching of each view introduced by the differential refraction
-index mismatch between water and agarose\[39\]\[40\] as the sample is
-never perfectly centered in the agarose column.
+index mismatch between water and agarose<ref name="Hell1993"> {% capture
+includecontent %} Aberrations in Confocal Fluorescence Microscopy
+Induced by Mismatches in Refractive Index | journal = Journal of
+Microscopy | volume = 169 | number = 3 | pages = 341 405 | year = 1993 |
+author = S. Hell and G. Reiner and C. Cremer and E.H.K. Stelzer
+
+{% endcapture %}
+
+{% include cite-journal content=includecontent %} </ref>\[8\] as the
+sample is never perfectly centered in the agarose column.
 
 Registration of more than two views requires groupwise optimization of
 the configuration \(T_{VF} = \{\mathbf{T}_{AF} : A,F\in V\}\) with \(V\)
@@ -239,7 +515,15 @@ all other views is estimated and applied to all beads in this view. The
 scheme terminates on convergence of the overall bead correspondence
 displacement. This solution allows us to perform the global optimization
 with any transformation model in case the microscopy set-up has
-different properties (e. g. translation\[41\], rigid\[42\]).
+different properties (e. g. translation<ref name="Preibisch2009b"> {%
+capture includecontent %} author = S. Preibisch and S. Saalfeld and P.
+Tomancak | Globally Optimal Stitching of Tiled 3D Microscopic Image
+Acquisitions | journal = Bioinformatics | volume = 25 | number = 11 |
+pages = 1463 1465 | doi = 10.1093/bioinformatics/btp184 | year = 2009
+
+{% endcapture %}
+
+{% include cite-journal content=includecontent %} </ref>, rigid\[9\]).
 
 ### Time-lapse registration
 
@@ -267,7 +551,19 @@ acquired from the area of the sample close to the detection lens.
 Blurred data visible in other overlapping views should be suppressed. We
 use Gaussian Filters to approximate the image information at each pixel
 in the contributing views
-([Figure 3c,f](Media:Blending.jpg "wikilink")).\[43\]
+([Figure 3c,f](Media:Blending.jpg "wikilink")).<ref name="PreiRohlHasa2008">
+{% capture includecontent %} author = S. Preibisch and T. Rohlfing and
+M. P. Hasak and P. Tomancak | Mosaicing of Single Plane Illumination
+Miscroscopy Images Using Groupwise Registration and Fast Content-Based
+Image Fusion | bookMedical Imaging 2008: Image Processing | year = 2008
+| editor = J. M. Reinhardt and J. P. W. Pluim | volume = 6914 | number =
+1 | pages = 69140E | location = San Diego, CA, USA | url =
+http://link.aip.org/link/?PSI/6914/69140E/1 | doi = 10.1117/12.770893
+| series = Proceedings of SPIE
+
+{% endcapture %}
+
+{% include cite-conference content=includecontent %} </ref>
 
 For strongly scattering and absorbing specimen like *Drosophila* , we
 typically do not image the entire specimen in each single view, but
@@ -277,11 +573,28 @@ introduces line artifacts in areas where a view ends abruptly
 ([Figure 3a,d](Media:Blending.jpg "wikilink")). To suppress this effect
 for the purposes of data display, we apply non-linear blending close to
 the edges of each border between the views
-([Figure 3b,e](Media:Blending.jpg "wikilink")).\[44\]
+([Figure 3b,e](Media:Blending.jpg "wikilink")).\[10\]
 
 Precise registration of multi-view data is the prerequisite for
 multi-view deconvolution of the reconstructed image which can
-potentially increase the resolution.\[45\]\[46\]\[47\] Having
+potentially increase the resolution.\[11\]<ref name="Engelbrecht2006">
+{% capture includecontent %} author = C. J. Engelbrecht and E. H. K.
+Stelzer | Resolution enhancement in a light-sheet-based microscope
+(SPIM) | journal = Optics Letters | volume = 31 | number = 10 | pages =
+1477 1479 | year = 2006
+
+{% endcapture %}
+
+{% include cite-journal content=includecontent %}
+</ref><ref name="Verveer2007"> {% capture includecontent %}
+High-resolution three-dimensional imaging of large specimens with light
+sheet-based microscopy | journal = Nature Methods | volume = 4 | number
+= 4 | pages = 311 313 | year = 2007 | author = P.J. Verveer and J.
+Swoger and F. Pampaloni and K. Greger and M. Marcello and E.H.K.Stelzer
+
+{% endcapture %}
+
+{% include cite-journal content=includecontent %} </ref> Having
 sub-resolution fluorescent beads around the sample facilitates the
 estimation of a spatially dependent point spread function and validates
 the deconvolution results.
@@ -320,14 +633,21 @@ intensity of the beads is around 2-4.
 "Figure 4: Analysis of the registration error") We created a
 visualization of the optimization procedure. For each view, we display
 its bounding box and the locations of all corresponding descriptors in a
-3d visualization framework\[48\]. Correspondences are color coded
-logarithmically according to their current displacement ranging from red
-(\>100 px) to green (\<1 px). The optimization is initialized with a
-configuration where the orientation of the views is unknown; all views
-are placed on top of each other and thus the corresponding descriptor
-displacement is high (red). As the optimization proceeds, the average
-displacement decreases (yellow) until convergence at about one pixel
-average displacement (green) is achieved.
+3d visualization framework<ref name="Bene2007"> {% capture
+includecontent %} author = B. Schmidt | Hardware-accelerated 3D
+visualization for ImageJ | bookImageJ User and Developer Conference |
+year = 2008 | volume = 2 | editor = Pierre Plumer
+
+{% endcapture %}
+
+{% include cite-conference content=includecontent %} </ref>.
+Correspondences are color coded logarithmically according to their
+current displacement ranging from red (\>100 px) to green (\<1 px). The
+optimization is initialized with a configuration where the orientation
+of the views is unknown; all views are placed on top of each other and
+thus the corresponding descriptor displacement is high (red). As the
+optimization proceeds, the average displacement decreases (yellow) until
+convergence at about one pixel average displacement (green) is achieved.
 [Video 2](Media:Supplementary_Video_2_Global_Opt.mov‎ "wikilink") shows
 the optimization progress for an 8 angle acquisition of fixed
 *C.elegans* . The outline of the worm forms in the middle (grey), since
@@ -418,26 +738,72 @@ expressing His-YFP](Intensity_vs_Beads.jpg
 Existing muti-view SPIM registration approaches that use sample
 intensities to iteratively optimize the quality of the overlap of the
 views do not work reliably and are computationally
-demanding.\[49\]\[50\]\[51\] Alternatively, the registration can be
-achieved by matching of segmented structures, such as cell nuclei,
-between views\[52\] However, such approaches are not universally
-applicable, as the segmentation process has to be adapted to the imaged
-sample.
+demanding.<ref name="Swoger2007"> {% capture includecontent %} author =
+Jim Swoger and Peter Verveer and Klaus Greger and Jan Huisken and Ernst
+H. K. Stelzer | journal = Opt. Express | number = 13 | pages = 8029 8042
+| publisher = OSA | Multi-view image fusion improves resolution in
+three-dimensional microscopy | volume = 15 | year = 2007
+
+{% endcapture %}
+
+{% include cite-journal content=includecontent %}
+</ref><ref name="PreiRohlHasa2008"> {% capture includecontent %} author
+= S. Preibisch and T. Rohlfing and M. P. Hasak and P. Tomancak |
+Mosaicing of Single Plane Illumination Miscroscopy Images Using
+Groupwise Registration and Fast Content-Based Image Fusion | bookMedical
+Imaging 2008: Image Processing | year = 2008 | editor = J. M. Reinhardt
+and J. P. W. Pluim | volume = 6914 | number = 1 | pages = 69140E |
+location = San Diego, CA, USA | url =
+http://link.aip.org/link/?PSI/6914/69140E/1 | doi = 10.1117/12.770893
+| series = Proceedings of SPIE
+
+{% endcapture %}
+
+{% include cite-conference content=includecontent %}
+</ref><ref name="Preibisch08a"> {% capture includecontent %} author = S.
+Preibisch and R. Ejsmont and T. Rohlfing and P. Tomancak | Towards
+Digital Representation of Drosophila Embryogenesis | bookProceedings of
+5th IEEE International Symposium on Biomedical Imaging | pages = 324 327
+| year = 2008
+
+{% endcapture %}
+
+{% include cite-conference content=includecontent %} </ref>
+Alternatively, the registration can be achieved by matching of segmented
+structures, such as cell nuclei, between views<ref name="Keller08"> {%
+capture includecontent %} author = P. J. Keller and A. D. Schmidt and J.
+Wittbrodt and E. H. Stelzer | Reconstruction of zebrafish early
+embryonic development by scanned light sheet microscopy | journal =
+Science | volume = 322 | number = 5904 | pages = 1065-9 | year = 2008
+
+{% endcapture %}
+
+{% include cite-journal content=includecontent %} </ref> However, such
+approaches are not universally applicable, as the segmentation process
+has to be adapted to the imaged sample.
 
 To evaluate the precision and performance of the bead-based registration
 framework we compared it against the intensity-based registration method
-that we developed previously.\[53\] This method identifies the rotation
-axis common to all views by iterative optimization of FFT-based phase
-correlation between adjacent views. We applied both methods (bead-based
-and intensity-based) to a single time-point of live 7-view acquisition
-of *Drosophila* embryo expressing His-YFP in all cells embedded in
-agarose with beads. We chose a time-point during blastoderm stage where
-the morphology of the embryo changes minimally over time. We evaluated
-the precision of both methods by the average displacement of the
-corresponding beads and concluded that the bead-based registration
-framework clearly outperformed the intensity-based registration in terms
-of bead registration accuracy (0.98 px versus 6.91 px, see
-[Table 1](#Table1 "wikilink"),
+that we developed previously.<ref name="Preibisch08a"> {% capture
+includecontent %} author = S. Preibisch and R. Ejsmont and T. Rohlfing
+and P. Tomancak | Towards Digital Representation of Drosophila
+Embryogenesis | bookProceedings of 5th IEEE International Symposium on
+Biomedical Imaging | pages = 324 327 | year = 2008
+
+{% endcapture %}
+
+{% include cite-conference content=includecontent %} </ref> This method
+identifies the rotation axis common to all views by iterative
+optimization of FFT-based phase correlation between adjacent views. We
+applied both methods (bead-based and intensity-based) to a single
+time-point of live 7-view acquisition of *Drosophila* embryo expressing
+His-YFP in all cells embedded in agarose with beads. We chose a
+time-point during blastoderm stage where the morphology of the embryo
+changes minimally over time. We evaluated the precision of both methods
+by the average displacement of the corresponding beads and concluded
+that the bead-based registration framework clearly outperformed the
+intensity-based registration in terms of bead registration accuracy
+(0.98 px versus 6.91 px, see [Table 1](#Table1 "wikilink"),
 [Figure 5](Media:Intensity_vs_Beads.jpg "wikilink")). The increased
 precision in the bead alignment achieved by the bead-based registration
 framework is reflected in noticeably improved overlap of the nuclei in
@@ -598,9 +964,17 @@ microscopy](Rotation_chamber.png
 Having the bead-based registration framework for multi-view
 reconstruction established, we sought to expand its application beyond
 SPIM, to other microscopy techniques capable of multi-view
-acquisition.\[54\] We designed a sample-mounting set-up that allows
-imaging of a sample embedded in a horizontally positioned agarose column
-with fluorescent beads
+acquisition.<ref name="Bradl92"> {% capture includecontent %} author =
+J. Bradl and M. Hausmann and V. Ehemann and D. Komitowski and C. Cremer
+| A tilting device for three-dimensional microscopy: application to in
+situ imaging of interphase cell nuclei. | journal = Journal of
+Microscopy | year = 1992 | volume = 168 | pages = 47 57
+
+{% endcapture %}
+
+{% include cite-journal content=includecontent %} </ref> We designed a
+sample-mounting set-up that allows imaging of a sample embedded in a
+horizontally positioned agarose column with fluorescent beads
 ([Figure 7a](Media:Rotation_chamber.png "wikilink")). The agarose
 column was manually rotated mimicking the SPIM multi-view acquisition.
 We acquired multiple views of fixed Drosophila embryos stained with
@@ -676,10 +1050,10 @@ downloaded from [1](http://fly.mpi-cbg.de/preibisch/nm/HisYFP-SPIM.zip).
 ## Acknowledgments
 
 We want to thank [Carl Zeiss Microimaging](http://www.zeiss.de/micro)
-for access to the SPIM demonstrator, Radoslav Kamil Ejsmont\[55\] for
-His-YFP flies, Dan White,\[56\], Jonathan Rodenfels,\[57\] Ivana
-Viktorinova,\[58\] Mihail Sarov,\[59\] Steffen Jänsch,\[60\] Jeremy
-Pulvers,\[61\] and Pedro Campinho\[62\] for providing various biological
+for access to the SPIM demonstrator, Radoslav Kamil Ejsmont\[12\] for
+His-YFP flies, Dan White,\[13\], Jonathan Rodenfels,\[14\] Ivana
+Viktorinova,\[15\] Mihail Sarov,\[16\] Steffen Jänsch,\[17\] Jeremy
+Pulvers,\[18\] and Pedro Campinho\[19\] for providing various biological
 samples for imaging with SPIM shown in
 [Figure 6](Media:Showcase.jpg "wikilink").
 
@@ -693,111 +1067,23 @@ samples for imaging with SPIM shown in
 [Category:Registration](Category:Registration "wikilink")
 
 1.  
-
 2.  
-
 3.  
 4.  
-
 5.  
 6.  
-
-7.  {% include citation content="Three Dimensional X-Ray Opaque Foreign
-    Body Marker Device | author = E. H. Gullekson | year = Patent
-    number: 3836776, Filing date: 1 Mar 1973, Issue date: Sep 1974 " %}
-
+7.  
 8.  
-
 9.  
-
 10. 
-
 11. 
-
-12. 
-
-13. 
-
-14. 
-15. 
-
-16. 
-
-17. 
-
-18. 
-
-19. 
-
-20. 
-
-21. 
-
-22. 
-
-23. 
-
-24. 
-
-25. 
-
-26. 
-
-27. 
-
-28. 
-
-29. 
-
-30. 
-31. 
-
-32. 
-
-33. 
-
-34. 
-
-35. 
-36. 
-37. 
-38. 
-
-39. 
-
-40. 
-41. 
-
-42. 
-43. 
-
-44. 
-45. 
-46. 
-
-47. 
-
-48. 
-
-49. 
-
-50. 
-
-51. 
-
-52. 
-
-53. 
-
-54. 
-
-55. Max Planck Institute of Molecular Cell Biology and Genetics,
+12. Max Planck Institute of Molecular Cell Biology and Genetics,
     Dresden, Germany
 
-56. 
-57. 
-58. 
-59. 
-60. 
-61. 
-62.
+13. 
+14. 
+15. 
+16. 
+17. 
+18. 
+19.

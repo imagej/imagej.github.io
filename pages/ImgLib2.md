@@ -8,10 +8,8 @@ categories: ImgLib,Citable
 description: test description
 ---
 
-{% include Infobox content="name = ImgLib2 | software = Generic Image
-Processing for Java | logo = ![imglib2-logo.png](imglib2-logo.png
-"imglib2-logo.png") | author = %Replace% ImgLibMenu %Replace% ImgLib2 is
-a general-purpose, multidimensional image processing library.
+%Replace% ImgLibMenu %Replace% ImgLib2 is a general-purpose,
+multidimensional image processing library.
 
 It provides an interface-driven design that supports numeric and
 non-numeric data types (8-bit unsigned integer, 32-bit floating point,
@@ -24,9 +22,18 @@ demand, and planes read on demand from disk.
 
   - [ImgLib2
     paper](http://bioinformatics.oxfordjournals.org/content/28/22/3009.full)
+
   - [ImgLib2 Documentation](ImgLib2_Documentation "wikilink")
+
   - [ImgLib2 Examples](ImgLib2_Examples "wikilink")
-  - {% include Javadoc content="project = ImgLib2" %} javadoc
+
+  - 
+{% capture includecontent %} TODO {% endcapture %}
+
+{% include javadoc content=includecontent %}
+
+`javadoc`
+
   - [How To Migrate Code From ImgLib To
     ImgLib2](How_To_Migrate_Code_From_ImgLib_To_ImgLib2 "wikilink")
   - ["Introduction to
@@ -37,8 +44,7 @@ demand, and planes read on demand from disk.
 
 ## Source code
 
-You can find the source {% include GitHub
-content="org=imglib|repo=imglib2" %}.
+You can find the source {% include github content='TODO' %} .
 
 There is also a continuous integration system that builds ImgLib2 [every
 time the code changes](https://travis-ci.org/imglib/imglib2).
@@ -62,7 +68,7 @@ details on how to update your ImgLib1-based code to use ImgLib2.
 ## API Version History
 
 A history of API changes is available at:
-<https://abi-laboratory.pro/java/tracker/timeline/imglib2/>
+https://abi-laboratory.pro/java/tracker/timeline/imglib2/
 
 ## Other links
 

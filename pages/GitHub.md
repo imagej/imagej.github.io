@@ -8,7 +8,7 @@ categories: Development,Git
 description: test description
 ---
 
-{% include DevelopMenu content="tools" %}In the
+{% include develop-menu content='tools' %} In the
 [ImageJ](ImageJ "wikilink") and related [SciJava](SciJava "wikilink")
 projects, we make extensive use of [GitHub](https://github.com/), a web
 site that hosts [open source](open_source "wikilink") projects for free.
@@ -24,19 +24,22 @@ lines of code to begin with.
 ## Finding a file – quickly
 
 After pointing the web browser to a specific repository, typing the {%
-include Key content="T" %} key will let you type out parts of the file
-name and hit {% include Key content="Enter" %} when the file in question
-is at the top of the list (you can also navigate the list using the
-cursor keys).
+include key content='T' %}
+
+`key will let you type out parts of the file name and hit`
+
+{% include key content='Enter' %}
+
+`when the file in question is at the top of the list (you can also navigate the list using the cursor keys).`
 
 ## Linking to specific lines
 
-Hitting the {% include Key content="L" %} key lets you jump to a
-specific line (and modifies the URL which you can then send around to
-refer to that line).
+Hitting the {% include key content='L' %}
+
+`key lets you jump to a specific line (and modifies the URL which you can then send around to refer to that line).`
 
 After one line is selected already, you can select a line *range* by {%
-include Key content="Shift" %}-clicking on the line number of the other
+include key content='Shift' %} -clicking on the line number of the other
 end of the line range.
 
 ## Permalinks
@@ -46,9 +49,10 @@ to the current version of the file.
 
 However, once development advances, the file's contents might change in
 the meantime, or the file might even go away\! To provide a link to a
-specific revision of the file, just hit the {% include Key content="Y"
-%} key to modify the URL to a permanent link (it will then reference the
-exact commit, instead of a branch).
+specific revision of the file, just hit the {% include key content='Y'
+%}
+
+`key to modify the URL to a permanent link (it will then reference the exact commit, instead of a branch).`
 
 ## Ignore whitespace changes in diffs
 

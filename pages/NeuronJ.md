@@ -8,8 +8,6 @@ categories: ImageScience|ImageScience,Plugins,ImageScience,Neuroanatomy
 description: test description
 ---
 
-{% include Infobox content="software = ImageScience | name = NeuronJ |
-maintainer =
 [NeuronJ](http://imagescience.org/meijering/software/neuronj/) is an
 ImageJ plugin to facilitate the tracing and analysis of elongated image
 structures, such as neuronal processes, complementing [Simple Neurite

@@ -9,14 +9,12 @@ description: test description
 ---
 
 <seo metak="local maxima,local minima,extrema,inflection point, signal processing, spectral analysis" metad="local maxima,local minima,extrema,inflection point, signal processing, spectral analysis" />
-{% include Infobox content="software = ImageJ/Fiji | name = Find Peaks |
-maintainer = [ BAR update site](BAR "wikilink") | author = 
 
 A [BAR](BAR "wikilink") script (written in
 [BeanShell](Beanshell_Scripting "wikilink")) that retrieves local maxima
 and minima from an ImageJ plot. The easiest way to install *Find Peaks*
 is by [subscribing](BAR#Installation "wikilink") to the BAR {% include
-ListOfUpdateSites content="update site" %}.
+list-of-update-sites content='update site' %} .
 
 ## Options
 
@@ -93,10 +91,12 @@ WindowManager.getActiveWindow().close()
   - Peak coordinates are logged according to the following layout:
     \[*X0,Y0*\]: Original data; \[*X1,Y1*\]: Maxima; \[*X2,Y2*\]: Minima
   - *Min. peak distance* can be used for peak width filtering
-  - Use *Scientific notation* and *Decimal places* in {% include bc
-    content="Analyze|Set Measurements..." %} to improve the
-    representation of values that are too big or too small to be
-    displayed in the decimal form
+  - Use *Scientific notation* and *Decimal places* in
+
+{% include bc content='Analyze|Set Measurements...' %}
+
+`to improve the representation of values that are too big or too small to be displayed in the decimal form`
+
   - Find Peaks was initially though as a [complementary
     tool](Sholl_Analysis#Complementary_Tools "wikilink") for [Sholl
     Analysis](Sholl_Analysis "wikilink") but it that can be applied to

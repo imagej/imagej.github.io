@@ -49,7 +49,7 @@ the [Cookbook](Cookbook "wikilink") before attempting to use Coloc
     2.  Z stacks work fine. But time series will fail until that is
         fixed. For now, please split the time series into a numbered set
         of images and analyse those one by one. See
-        <https://github.com/fiji/Colocalisation_Analysis/issues/6>
+        https://github.com/fiji/Colocalisation_Analysis/issues/6
 3.  You probably want to analyze only some region of interest (ROI),
     there are 2 ways to do that:
     1.  Select a region of interest with one of the ImageJ selection
@@ -263,13 +263,13 @@ discussion of precautions.
 
 The definitive list of new features and fixes is the source code history
 as shown by the GIT history here:
-<https://github.com/fiji/Colocalisation_Analysis/commits/master> This is
+https://github.com/fiji/Colocalisation_Analysis/commits/master This is
 just an easy way to check, a casual list for users, and might not be up
 to date. These might not yet all be in the version of the Coloc\_2
 plugin released into the imageJ/Fiji updater; you can see that version
 listed in the command finder in the file column. Latest released into
 Fiji updater versions are tagged as releases on GITHUB, eg.
-<https://github.com/fiji/Colocalisation_Analysis/releases>
+https://github.com/fiji/Colocalisation_Analysis/releases
 
 1.  Version 2.0.2 in Fiji updater - 26.Feb.2015
     1.  27-Jan-2015 commit 863fdbeaf7785759ed1c8e9357b7dd67f6d79996
@@ -282,9 +282,9 @@ Fiji updater versions are tagged as releases on GITHUB, eg.
 1.  Version 2.1.0 in Fiji updater - 02.Sep.2015
     1.  08-2015 Fix bug in Manders' split coefficient calculations when
         using thresholds.
-        <https://github.com/fiji/Colocalisation_Analysis/commit/e4a3a6ec36e0e878d40e1b1114f68deaccd41cde>
+        https://github.com/fiji/Colocalisation_Analysis/commit/e4a3a6ec36e0e878d40e1b1114f68deaccd41cde
     2.  08-2015 Fixed in fiji master github repo by commit
-        <https://github.com/fiji/Colocalisation_Analysis/commit/492b846c032bd85651ffce7b52c96b3520eff6bb>:
+        https://github.com/fiji/Colocalisation_Analysis/commit/492b846c032bd85651ffce7b52c96b3520eff6bb:
         1.  if 2D histogram regression finds a y intercept that is below
             zero it gives the too high warning "Warning\! y-intercept
             high - The absolute y-intercept of the auto threshold
@@ -293,7 +293,7 @@ Fiji updater versions are tagged as releases on GITHUB, eg.
             change warning text to too high or too low depending on if
             its positive or negative.
     3.  08-2015 Fixed in fiji master github repo by commit
-        <https://github.com/fiji/Colocalisation_Analysis/commit/4cfc8861f05f277075c3fb7881ebf0d7e54c67c3>:
+        https://github.com/fiji/Colocalisation_Analysis/commit/4cfc8861f05f277075c3fb7881ebf0d7e54c67c3:
         1.  Numerical results and image stats are currently spewed into
             the IJ.log window. This is done separately from the way
             results are put into the simple results display window or
@@ -308,18 +308,18 @@ Fiji updater versions are tagged as releases on GITHUB, eg.
             ValueResults class for all three by doing the same thing in
             each.
             1.  commit
-                <https://github.com/fiji/Colocalisation_Analysis/commit/a493b2c88a14f4f6403451aeee6989bf7a2becfb>
+                https://github.com/fiji/Colocalisation_Analysis/commit/a493b2c88a14f4f6403451aeee6989bf7a2becfb
                 Make IJ.log writing only happen once and only in the
                 default ResultHandler that's always used.
             2.  commits
-                <https://github.com/fiji/Colocalisation_Analysis/commit/e833597d7d8a7b4d3db747512f6048d67d61d120>
+                https://github.com/fiji/Colocalisation_Analysis/commit/e833597d7d8a7b4d3db747512f6048d67d61d120
                 and
-                <https://github.com/fiji/Colocalisation_Analysis/commit/75184e88cd6c1e0914ec87caebe97494002bcd4e>
+                https://github.com/fiji/Colocalisation_Analysis/commit/75184e88cd6c1e0914ec87caebe97494002bcd4e
                 Get the Coloc job name from the DataContainer image
                 names, and also add the mark/ROI ID to the job name in
                 case there are multiple ROIs.
     4.  08-2015 Fixed in fiji master github repo commit
-        <https://github.com/fiji/Colocalisation_Analysis/commit/6318f0f29ba6fd938674225a43cdba4c0909acc6>:
+        https://github.com/fiji/Colocalisation_Analysis/commit/6318f0f29ba6fd938674225a43cdba4c0909acc6:
         1.  Running as imageJ macro command fails because of the
             parameter: show\_"save\_pdf"\_dialog. Probably the "" are
             messing up the run(Coloc\_2, "params"); text string
@@ -336,17 +336,17 @@ Fiji updater versions are tagged as releases on GITHUB, eg.
 
 Coloc\_2 issue tracker is found on GITHUB.com, along with the source
 code; bugs can be reported there:
-<https://github.com/fiji/Colocalisation_Analysis/issues?q=is%3Aopen+is%3Aissue>
+https://github.com/fiji/Colocalisation_Analysis/issues?q=is%3Aopen+is%3Aissue
 
 Open Bug reports and other open issues can be seen here:
-<https://github.com/fiji/Colocalisation_Analysis/issues?q=is%3Aopen+is%3Aissue>
+https://github.com/fiji/Colocalisation_Analysis/issues?q=is%3Aopen+is%3Aissue
 
 Fixed bugs and resolved issues can be seen in the above section and in
 more detail in the issue tracker:
-<https://github.com/fiji/Colocalisation_Analysis/issues?q=is%3Aissue+is%3Aclosed>
+https://github.com/fiji/Colocalisation_Analysis/issues?q=is%3Aissue+is%3Aclosed
 
 The contents of the old 'to do' list and design notes can be found here:
-<https://github.com/fiji/Colocalisation_Analysis/wiki/DesignNotes>
+https://github.com/fiji/Colocalisation_Analysis/wiki/DesignNotes
 
 This list is for more random, vague, or uncertain ideas, which are not
 yet well enough thought through to be adequately defined as solvable

@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-{% include Learn content="scripting" %}[ImageJ
+{% include learn content='scripting' %} [ImageJ
 scripts](Scripting "wikilink") are designed to operate independently of
 user interface—including [headless](headless "wikilink"), with **no**
 user interface. This is made easy with the use of [script
@@ -25,9 +25,11 @@ script headlessly, use:
 
     ./ImageJ-linux64 --ij2 --headless --run path/to/script [key1=value1,key2=value2,...]
 
-{% include warning-box content="In many cases, it is necessary to
-enclose the entire list of key/value pairs in single quotes, to avoid
-shell expansion. See the following examples." %}
+{% capture includecontent %} In many cases, it is necessary to enclose
+the entire list of key/value pairs in single quotes, to avoid shell
+expansion. See the following examples. {% endcapture %}
+
+{% include warning-box content=includecontent %}
 
 ## Basic run
 

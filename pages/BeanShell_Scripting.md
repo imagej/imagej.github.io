@@ -8,8 +8,8 @@ categories: Scripting
 description: test description
 ---
 
-{% include Learn content="languages"
-%}[BeanShell](http://www.beanshell.org/) is the scripting language which
+{% include learn content='languages' %}
+[BeanShell](http://www.beanshell.org/) is the scripting language which
 is similar both to the [ImageJ macro
 language](Introduction_into_Macro_Programming "wikilink") and to Java.
 In fact, you can even execute almost verbatim Java code, but the common

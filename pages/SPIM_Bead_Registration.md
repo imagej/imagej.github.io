@@ -8,13 +8,9 @@ categories:
 description: test description
 ---
 
-{% include Infobox content="name = Selective Plane Illumination
-Microscopy Bead-based Registration | software = ImageJ | author =
-Stephan Preibisch, Stephan Saalfeld, Johannes Schindelin, Pavel Tomancak
-| maintainer = Stephan Preibisch | filename = SPIM\_Registration.jar |
-released = February 2010 | latest version = October 2011 | category =
-[SPIM Registration](:Category:Registration "wikilink") | website =
-[Stephan Preibisch's homepage](http://fly.mpi-cbg.de/~preibisch) " %}
+{% capture includecontent %} TODO {% endcapture %}
+
+{% include info-box content=includecontent %}
 
 ## Citation
 
@@ -230,8 +226,12 @@ Some tips and tricks in the next few paragraphs require to change a
 static variable in the source code that changes the behavior of the
 plugin. This is done using the **script editor** and works as follows:
 
-  - {% include bc content="File | New | Script" %}
-  - {% include bc content="Language | Beanshell" %}
+  - 
+{% include bc content='File | New | Script' %}
+
+  - 
+{% include bc content='Language | Beanshell' %}
+
   - type the command, e.g.
 
 <!-- end list -->

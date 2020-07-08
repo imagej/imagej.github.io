@@ -8,9 +8,6 @@ categories: Plugins,Colocalization,Color processing
 description: test description
 ---
 
-{% include Infobox content="name = Colocalization Threshold | software =
-ImageJ - Fiji | author = Tony Collins (and others?) | maintainer = 
-
 ## Purpose
 
 Sets the thresholds for colocalization analysis, and also calculates

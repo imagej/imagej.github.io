@@ -8,31 +8,36 @@ categories:
 description: test description
 ---
 
-{% include TOC content="right" %}Here you can
+{% include toc content='right' %} Here you can
 [download](https://downloads.imagej.net/ImageJ2-20160205.zip) an "all
 platforms" version of ImageJ, without a bundled Java or extra
 extensions.
 
-{% include info-box content="Unfortunately, due to the ongoing
+{% capture includecontent %} Unfortunately, due to the ongoing
 transition from Java 6 to Java 8, this download of "plain ImageJ2"
 cannot currently be updated to the latest Java-8-compatible version. See
 the [Java 8](Java_8 "wikilink") page for details. For the time being, we
 recommend [using the Fiji distribution of
-ImageJ](Fiji/Downloads "wikilink") to stay current with updates." %}
+ImageJ](Fiji/Downloads "wikilink") to stay current with updates. {%
+endcapture %}
+
+{% include info-box content=includecontent %}
 
 <div style="width: 440px">
 
-{% include sidebox-right content="| bgcolor=white | text=
+{% capture includecontent %} | bgcolor=white | text=
 
 <center>
 
-![ link=<https://downloads.imagej.net/ImageJ2-20160205.zip> | 192px
+![ link=https://downloads.imagej.net/ImageJ2-20160205.zip | 192px
 ](Imagej2-download-icon.png
 " link=https://downloads.imagej.net/ImageJ2-20160205.zip | 192px ")
 
 </center>
 
-" %}
+{% endcapture %}
+
+{% include sidebox-right content=includecontent %}
 
 </div>
 

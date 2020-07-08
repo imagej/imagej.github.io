@@ -8,12 +8,9 @@ categories: Related Software,Citable
 description: test description
 ---
 
-{% include Infobox content="name = ITK | software = ITK | logo =
-![Itk-logo.png](Itk-logo.png "Itk-logo.png") | author = [Insight
-Software Consortium](http://itk.org/) | maintainer = [Insight Software
-Consortium](http://itk.org/) | source = The Insight Toolkit (ITK) is a
-cross-platform, [open-source](open-source "wikilink") application
-development framework widely used for the development of image
+The Insight Toolkit (ITK) is a cross-platform,
+[open-source](open-source "wikilink") application development framework
+widely used for the development of image
 [segmentation](segmentation "wikilink") and image registration programs.
 
 # ITK integration with ImageJ
@@ -23,8 +20,8 @@ ImageJ through the [SimpleITK](http://www.simpleitk.org/) Java
 compatibility layer.
 
 Enabling this functionality in ImageJ is simply a matter of turning on
-the {% include ListOfUpdateSites content="ImageJ-ITK update site" %}.
-Note that this will trigger a large download, as it requires the
+the {% include list-of-update-sites content='ImageJ-ITK update site' %}
+. Note that this will trigger a large download, as it requires the
 SimpleITK native library (up to a few hundred MB).
 
 ## What's on the update site?
@@ -65,7 +62,10 @@ output = otsu.execute(image, 2, 0, 255, True)
 
 To cite ITK, please use the following publication:
 
-  - {% include Publication content="ITK" %}
+  - 
+{% capture includecontent %} TODO {% endcapture %}
+
+{% include publication content=includecontent %}
 
 See also:
 

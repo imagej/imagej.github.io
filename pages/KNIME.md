@@ -36,9 +36,20 @@ Both approaches are available as KNIME plugin (currently beta status).
 
 ## Publications
 
-  - {% include Publication content="KNIME-Bioimage" %}
-  - {% include Publication content="KNIP" %}
-  - {% include Publication content="KNIME" %}
+  - 
+{% capture includecontent %} TODO {% endcapture %}
+
+{% include publication content=includecontent %}
+
+  - 
+{% capture includecontent %} TODO {% endcapture %}
+
+{% include publication content=includecontent %}
+
+  - 
+{% capture includecontent %} TODO {% endcapture %}
+
+{% include publication content=includecontent %}
 
 [Category:Related Software](Category:Related_Software "wikilink")
 [Category:SciJava](Category:SciJava "wikilink")

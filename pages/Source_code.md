@@ -16,10 +16,11 @@ it is well worth investing a little bit of time to understand.
 
 ## Where is the code?
 
-{% include Tip content="tip=You can search the source code at
-<http://search.imagej.net/> using the GitHub button\!" %}\* All source
-code is on [GitHub](GitHub "wikilink").
+{% capture includecontent %} TODO {% endcapture %}
 
+{% include tip content=includecontent %}
+
+  - All source code is on [GitHub](GitHub "wikilink").
   - Each project exists in its own GitHub organization.
   - Each organization contains multiple source code repositories.
   - Each repository corresponds to one Java library (.jar file).

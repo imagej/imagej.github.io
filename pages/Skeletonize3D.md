@@ -19,9 +19,9 @@ description: test description
 Skeletonize3D is a Fiji and ImageJ plugin that performs the
 [skeletonization](wikipedia:Topological_skeleton "wikilink") of 2D and
 3D binary images (8-bit images). In Fiji, you can find it under {%
-include bc content="Plugins | Skeleton | Skeletonize (2D/3D)" %}. If you
-need to analyze a 2D/3D skeleton image, you may be interested on having
-a look at [AnalyzeSkeleton](AnalyzeSkeleton "wikilink").
+include bc content='Plugins | Skeleton | Skeletonize (2D/3D)' %} . If
+you need to analyze a 2D/3D skeleton image, you may be interested on
+having a look at [AnalyzeSkeleton](AnalyzeSkeleton "wikilink").
 
 ## Video tutorial
 
@@ -49,7 +49,7 @@ medial surface/axis thinning algorithms. Computer Vision, Graphics, and
 Image
 Processing, 56(6):462–478, 1994."*](http://portal.acm.org/citation.cfm?id=202862.202867)
 Based on the ITK version from Hanno Homann:
-<http://hdl.handle.net/1926/1292> It works with 8-bit images and stacks.
+http://hdl.handle.net/1926/1292 It works with 8-bit images and stacks.
 It expects the images to be binary. If not, all pixel values above 0
 will be considered white. The resulting skeleton image will have **pixel
 value 255 at the skeleton and 0 at the background** (black) pixels.
@@ -89,7 +89,7 @@ Thus their algorithm allows for a very fast iterative erosion process*
 
 This program is **free software**; you can redistribute it and/or modify
 it under the terms of the **GNU General Public License** as published by
-the Free Software Foundation (<http://www.gnu.org/licenses/gpl.txt>).
+the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).
 
 This program is distributed in the hope that it will be useful, but
 WITHOUT ANY WARRANTY; without even the implied warranty of

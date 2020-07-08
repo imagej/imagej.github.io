@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-{% include Project content="ImgLib2" %}At the [Madison
+{% include project content='ImgLib2' %} At the [Madison
 hackathon](2011_Hackathon_in_Madison "wikilink"), quite a lot has been
 done about design issues of the originally published ImgLib (which was
 already the 6th generation). Unfortunately, these improvements were not

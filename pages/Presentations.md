@@ -83,9 +83,9 @@ Spring 2019: <a href="http://imagej.github.io/presentations/fiji-scripting/">sli
 </tr>
 <tr class="even">
 <td><p>2018-Dec-06</p></td>
-<td><p>{% include Person content="Rueden" %},<br />
-{% include Person content="Pietzsch" %},<br />
-{% include Person content="Dietzc" %}</p></td>
+<td><p>{% include person content='TODO' %} ,<br />
+{% include person content='TODO' %} ,<br />
+{% include person content='TODO' %}</p></td>
 <td><p>ImageJ and Friends: Retrospective, current status and future</p></td>
 <td><p><a href="https://docs.google.com/presentation/d/1SWO0DhrJfIvgKdr4jkBFP2nCn-JZ4QZ5xeDjwWRIXQo/present">slides (online; no movies)</a>,<br />
 <a href="https://downloads.imagej.net/presentations/i2k-2018/ImageJ-and-Friends.pptx">slides (1.6GB PPTX; with movies)</a></p></td>
@@ -104,7 +104,7 @@ Spring 2019: <a href="http://imagej.github.io/presentations/fiji-scripting/">sli
 </tr>
 <tr class="odd">
 <td><p>2017-Feb-16</p></td>
-<td><p>{% include Person content="Rueden" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>What's New in ImageJ2 ?</p></td>
 <td><p><a href="http://imagej.github.io/presentations/2017-02-16-imagej2-neubias/#/">slides</a></p></td>
 </tr>
@@ -122,25 +122,25 @@ Spring 2019: <a href="http://imagej.github.io/presentations/fiji-scripting/">sli
 </tr>
 <tr class="even">
 <td><p>2015-Sep-03</p></td>
-<td><p>{% include Person content="rasband" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>Introduction to ImageJ</p></td>
 <td><p><a href="https://vimeo.com/140929691">video</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>2015-Sep-03</p></td>
-<td><p>{% include Person content="Rueden" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>ImageJ2 and Fiji: The ImageJ2 platform, and the Fiji distribution of ImageJ</p></td>
 <td><p><a href="https://vimeo.com/140929687">video</a>, <a href="https://imagej.github.io/presentations/2015-09-03-imagej2-and-fiji/">slides</a></p></td>
 </tr>
 <tr class="even">
 <td><p>2015-Sep-04</p></td>
-<td><p>{% include Person content="marktsuchida" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>Microscope control and image acquisition with Micro-Manager</p></td>
 <td><p><a href="https://vimeo.com/140098816">video</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>2015-Sep-04</p></td>
-<td><p>{% include Person content="Jug" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>Getting stuff done – Software synergy with ImageJ + KNIME</p></td>
 <td><p><a href="https://vimeo.com/140098839">video</a></p></td>
 </tr>
@@ -152,19 +152,19 @@ Spring 2019: <a href="http://imagej.github.io/presentations/fiji-scripting/">sli
 </tr>
 <tr class="odd">
 <td><p>2015-Sep-04</p></td>
-<td><p>{% include Person content="omsai" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>Sharing the value of software freedom with non-programmers</p></td>
 <td><p><a href="https://vimeo.com/140098825">video</a>, <a href="Conference_2015_Program#Pariksheet_Nanda_-_Sharing_the_value_of_software_freedom_with_non-programmers" title="wikilink">abstract</a>, <a href="http://conference.imagej.net/2015/pariksheet-nanda/transcript.pdf">transcript</a></p></td>
 </tr>
 <tr class="even">
 <td><p>2015-Sep-04</p></td>
-<td><p>{% include Person content="Tiago" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>Alternative approaches for neuronal morphometry</p></td>
 <td><p><a href="https://vimeo.com/140098832">video</a>, <a href="Conference_2015_Program#Tiago_Ferreira_-_Alternative_approaches_for_neuronal_morphometry" title="wikilink">abstract</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>2015-Sep-03</p></td>
-<td><p>{% include Person content="Bogovic" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>The Thin Plate Spline method for smooth non-rigid transformations</p></td>
 <td><p><a href="https://vimeo.com/140929688">video</a>, <a href="Conference_2015_Program#John_Bogovic_-_The_Thin_Plate_Spline_method_for_smooth_non-rigid_transformations" title="wikilink">abstract</a>, <a href="http://conference.imagej.net/2015/john-bogovic/2015_imagej.pptx">slides</a></p></td>
 </tr>
@@ -182,7 +182,7 @@ Spring 2019: <a href="http://imagej.github.io/presentations/fiji-scripting/">sli
 </tr>
 <tr class="even">
 <td><p>2015-Sep-03</p></td>
-<td><p>{% include Person content="Fab14" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>Yet another ImageJ friend: Icy</p></td>
 <td><p><a href="https://vimeo.com/140929690">video</a>, <a href="Conference_2015_Program#Fabrice_de_Chaumont_-_Yet_another_ImageJ_friend:_Icy" title="wikilink">abstract</a></p></td>
 </tr>
@@ -201,7 +201,7 @@ Spring 2019: <a href="http://imagej.github.io/presentations/fiji-scripting/">sli
 </tr>
 <tr class="odd">
 <td><p>2015-Sep-03</p></td>
-<td><p>{% include Person content="Hinerm" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>ImageJ+MATLAB: Reunited</p></td>
 <td><p><a href="https://vimeo.com/140929686">video</a>, <a href="Conference_2015_Program#Mark_Hiner_-_ImageJ.2BMATLAB:_Reunited" title="wikilink">abstract</a>, <a href="https://imagej.github.io/presentations/2015-09-03-imagej-matlab/">slides</a></p></td>
 </tr>
@@ -213,7 +213,7 @@ Spring 2019: <a href="http://imagej.github.io/presentations/fiji-scripting/">sli
 </tr>
 <tr class="odd">
 <td><p>2015-Sep-03</p></td>
-<td><p>{% include Person content="Linkert" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>OME Bio-Formats: 10 years of proprietary image data</p></td>
 <td><p><a href="https://vimeo.com/140929689">video</a>, <a href="Conference_2015_Program#Melissa_Linkert_-_OME_Bio-Formats:_10_years_of_proprietary_image_data" title="wikilink">abstract</a>, <a href="http://ome.github.io/presentations/2015/bioformats-overview-imagej-conf/">slides</a></p></td>
 </tr>
@@ -225,19 +225,19 @@ Spring 2019: <a href="http://imagej.github.io/presentations/fiji-scripting/">sli
 </tr>
 <tr class="odd">
 <td><p>2015-Sep-04</p></td>
-<td><p>{% include Person content="Bnanes" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>Slide Set: Simplified batch processing with ImageJ2</p></td>
 <td><p><a href="https://vimeo.com/140098828">video</a>, <a href="Conference_2015_Program#Benjamin_Nanes_-_Slide_Set:_Simplified_batch_processing_with_ImageJ2" title="wikilink">abstract</a></p></td>
 </tr>
 <tr class="even">
 <td><p>2015-Sep-04</p></td>
-<td><p>{% include Person content="bnorthan" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>Flexible Deconvolution using ImageJ Ops</p></td>
 <td><p><a href="https://vimeo.com/140098821">video</a>, <a href="Conference_2015_Program#Brian_Northan_-_Flexible_deconvolution_using_ImageJ_Ops" title="wikilink">abstract</a>, <a href="https://imagej.github.io/presentations/2015-09-04-imagej2-deconvolution/">slides</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>2015-Sep-04</p></td>
-<td><p>{% include Person content="Saalfeld" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>Seamless stitching without blending</p></td>
 <td><p><a href="https://vimeo.com/140098840">video</a>, <a href="Conference_2015_Program#Stephan_Saalfeld_-_Seamless_stitching_without_blending" title="wikilink">abstract</a></p></td>
 </tr>
@@ -249,7 +249,7 @@ Spring 2019: <a href="http://imagej.github.io/presentations/fiji-scripting/">sli
 </tr>
 <tr class="odd">
 <td><p>2015-Sep-04</p></td>
-<td><p>{% include Person content="Bene" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>Real-time multi-view deconvolution of time-lapse data on the GPU</p></td>
 <td><p><a href="https://vimeo.com/140098826">video</a>, <a href="Conference_2015_Program#Benjamin_Schmid_-_Real-time_multi-view_deconvolution_of_time-lapse_data_on_the_GPU" title="wikilink">abstract</a></p></td>
 </tr>
@@ -261,7 +261,7 @@ Spring 2019: <a href="http://imagej.github.io/presentations/fiji-scripting/">sli
 </tr>
 <tr class="odd">
 <td><p>2015-Sep-04</p></td>
-<td><p>{% include Person content="Twagner" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>NanoTrackJ – An open-source multi-modal size characterization tool for nanoparticle tracking analysis based on ImageJ</p></td>
 <td><p><a href="https://vimeo.com/140098848">video</a>, <a href="Conference_2015_Program#Thorsten_Wagner_-_NanoTrackJ_.E2.80.93_An_open-source_multi-modal_size_characterization_tool_for_nanoparticle_tracking_analysis_based_on_ImageJ" title="wikilink">abstract</a>, <a href="https://dl.dropboxusercontent.com/u/560426/imagej/conference2015/slides.pdf">slides</a></p></td>
 </tr>
@@ -273,7 +273,7 @@ Spring 2019: <a href="http://imagej.github.io/presentations/fiji-scripting/">sli
 </tr>
 <tr class="odd">
 <td><p>2015-Sep-04</p></td>
-<td><p>{% include Person content="jaywarrick" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>JEX – a platform for data management and batch processing with standard tools</p></td>
 <td><p><a href="https://vimeo.com/140098819">video</a>, <a href="Conference_2015_Program#Jay_Warrick_-_JEX_.E2.80.93_a_platform_for_data_management_and_batch_processing_with_standard_tools" title="wikilink">abstract</a></p></td>
 </tr>
@@ -291,7 +291,7 @@ Spring 2019: <a href="http://imagej.github.io/presentations/fiji-scripting/">sli
 </tr>
 <tr class="even">
 <td><p>2012-Oct-24</p></td>
-<td><p>{% include Person content="Rueden" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>ImageJ2: Current Status and Future Directions</p></td>
 <td><p><a href="http://conference.imagej.net/2012/curtis-rueden/2012-10-24-imagej-conference.odp">slides</a></p></td>
 </tr>
@@ -303,7 +303,7 @@ Spring 2019: <a href="http://imagej.github.io/presentations/fiji-scripting/">sli
 </tr>
 <tr class="even">
 <td><p>2012-Apr-30</p></td>
-<td><p>{% include Person content="Rueden" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>ImageJ2 – ImageJ for the Next Generation of Biological Image Data</p></td>
 <td><p><a href="http://bigwww.epfl.ch/eurobioimaging/presentation-rueden.pdf">slides</a>, <a href="http://bigwww.epfl.ch/eurobioimaging/abstracts/rueden.pdf">abstract</a></p></td>
 </tr>
@@ -315,7 +315,7 @@ Spring 2019: <a href="http://imagej.github.io/presentations/fiji-scripting/">sli
 </tr>
 <tr class="even">
 <td><p>2010-Oct-27</p></td>
-<td><p>{% include Person content="Rueden" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>ImageJDev: Next Generation ImageJ</p></td>
 <td><p><a href="http://conference.imagej.net/2010/curtis-rueden/2010-10-27-ImageJDev.pdf">slides</a></p></td>
 </tr>
@@ -327,31 +327,31 @@ Spring 2019: <a href="http://imagej.github.io/presentations/fiji-scripting/">sli
 </tr>
 <tr class="even">
 <td><p>2019-Mar-28</p></td>
-<td><p>{% include Person content="Rueden" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>ImageJ – Vision, Mission and Values: Challenges of a diverse community</p></td>
 <td><p><a href="https://docs.google.com/presentation/d/1mZBJpxTGzJmD3nFSSl_y2oneHmT8D9bVzTtb0gdvRH0/present">slides</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>2015-Jan-12</p></td>
-<td><p>{% include Person content="Schindelin" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>The ImageJ Ops Framework: Image processing made easy</p></td>
 <td><p><a href="https://imagej.github.io/presentations/2015-01-12-imagej-ops/">slides</a></p></td>
 </tr>
 <tr class="even">
 <td><p>2014-Mar-20</p></td>
-<td><p>{% include Person content="Schindelin" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>SciJava Common: Plugins, Contexts, Utilities and More</p></td>
 <td><p><a href="https://scijava.org/scijava-common/scijava-common.html">slides</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>2010-Apr-06</p></td>
-<td><p>{% include Person content="Rueden" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>ImageJ2: Directions &amp; Goals</p></td>
 <td><p><a href="https://imagej.github.io/presentations/2010-04-06-loci-imagej2-plan.pdf">slides</a></p></td>
 </tr>
 <tr class="even">
 <td><p>2010-Apr-01</p></td>
-<td><p>{% include Person content="Rueden" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>LOCI, Fiji &amp; ImageJ2</p></td>
 <td><p><a href="https://imagej.github.io/presentations/2010-04-01-loci-fiji-imagej2.pdf">slides</a></p></td>
 </tr>
@@ -378,7 +378,7 @@ Spring 2019: <a href="http://imagej.github.io/presentations/fiji-scripting/">sli
 </tr>
 <tr class="even">
 <td><p>-</p></td>
-<td><p>{% include Person content="Rueden" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>Scripting in ImageJ - An introduction to ImageJ Ops</p></td>
 <td><p><a href="http://imagej.github.io/presentations/2017-02-12-imagej-ops-neubias/">slides</a></p></td>
 </tr>
@@ -396,13 +396,13 @@ Spring 2019: <a href="http://imagej.github.io/presentations/fiji-scripting/">sli
 </tr>
 <tr class="odd">
 <td><p>2015-Sep-03</p></td>
-<td><p>{% include Person content="BioVoxxel" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>Image processing, feature extraction and analysis using the BioVoxxel Toolbox</p></td>
 <td><p><a href="https://vimeo.com/140929696">video</a>, <a href="Conference_2015_Program#Jan_Brocher_-_Image_processing.2C_feature_extraction_and_analysis_using_the_BioVoxxel_Toolbox" title="wikilink">abstract</a>, <a href="https://www.dropbox.com/s/iurb5he4qpsqfrn/BioVoxxel%20Workshop.pdf?dl=0/">slides</a></p></td>
 </tr>
 <tr class="even">
 <td><p>2015-Sep-03</p></td>
-<td><p>{% include Person content="Tiago" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>Scripting with BAR</p></td>
 <td><p><a href="https://vimeo.com/140099767">video</a>, <a href="Conference_2015_Program#Tiago_Ferreira_-_Scripting_with_BAR" title="wikilink">abstract</a></p></td>
 </tr>
@@ -415,27 +415,27 @@ Petr Walczysko</p></td>
 </tr>
 <tr class="even">
 <td><p>2015-Sep-03</p></td>
-<td><p>{% include Person content="Fab14" %}<br />
+<td><p>{% include person content='TODO' %}<br />
 Stephane Dallongeville</p></td>
 <td><p>Hands on Icy !</p></td>
 <td><p><a href="https://vimeo.com/140929698">video</a>, <a href="Conference_2015_Program#Fabrice_de_Chaumont_and_Stephane_Dallongeville_-_Hands_on_Icy_.21" title="wikilink">abstract</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>2015-Sep-03</p></td>
-<td><p>{% include Person content="thewtex" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>SimpleITK</p></td>
 <td><p><a href="https://vimeo.com/140099763">video</a>, <a href="Conference_2015_Program#Matt_McCormick_-_SimpleITK" title="wikilink">abstract</a>, <a href="http://bit.ly/1hD5FZF">interactive</a></p></td>
 </tr>
 <tr class="even">
 <td><p>2015-Sep-04</p></td>
-<td><p>{% include Person content="Rueden" %}<br />
-{% include Person content="bnorthan" %}</p></td>
+<td><p>{% include person content='TODO' %}<br />
+{% include person content='TODO' %}</p></td>
 <td><p>ImageJ2 scripts: Parameters + ImageJ Ops</p></td>
 <td><p><a href="https://vimeo.com/140098817">video 1</a>, <a href="https://vimeo.com/140098835">video 2</a>, <a href="Conference_2015_Program#Curtis_Rueden_and_Brian_Northan_-_ImageJ2_scripts:_parameters_.2B_ImageJ_Ops" title="wikilink">abstract</a>, <a href="https://imagej.github.io/presentations/2015-09-04-imagej2-scripting/">slides</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>2015-Sep-04</p></td>
-<td><p>{% include Person content="Bio7" %}</p></td>
+<td><p>{% include person content='TODO' %}</p></td>
 <td><p>Statistical image analysis and reproducible reports with ImageJ and R</p></td>
 <td><p><a href="https://vimeo.com/140098838">video</a>, <a href="Conference_2015_Program#Marcel_Austenfeld_-_Bio7_.E2.80.93_Statistical_image_analysis_and_reproducible_reports_with_ImageJ_and_R" title="wikilink">abstract</a></p></td>
 </tr>
@@ -468,14 +468,14 @@ Stephane Dallongeville</p></td>
 
 ## Posters
 
-| **Date**                                                 | **Presenter**                            | **Title**                                                                                       | **Resources**                                                                                                                                                                                                                                                       |
-| -------------------------------------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **[2015 ImageJ Conference](Conference_2015 "wikilink")** |                                          |                                                                                                 |                                                                                                                                                                                                                                                                     |
-| 2015-Sep-03                                              | {% include Person content="Iarganda" %}  | Trainable Weka Segmentation: a tool for machine-learning-based image segmentation               | [abstract](Conference_2015_Program#Ignacio_Arganda-Carreras_-_Trainable_Weka_Segmentation:_a_tool_for_machine-learning-based_image_segmentation "wikilink"), [poster](http://conference.imagej.net/2015/ignacio-arganda-carreras/poster-TWS-ImageJ-Conf-2015.pdf)   |
-| 2015-Sep-03                                              | {% include Person content="BioVoxxel" %} | The BioVoxxel Toolbox                                                                           | [abstract](Conference_2015_Program#Jan_Brocher_-_The_BioVoxxel_Toolbox "wikilink"), [poster](https://www.dropbox.com/s/7e6bjh3iqnxv014/IJcon2015-Poster%20Brocher%20%28150dpi%29.png?dl=0)                                                                          |
-| 2015-Sep-03                                              | Olaya Fernandez-Gayol                    | Using the wrMTrck plugin to analyze the Morris Water maze in mice                               | [abstract](Conference_2015_Program#Olaya_Fernandez-Gayol_-_Using_the_wrMTrck_plugin_to_analyze_the_Morris_Water_maze_in_mice "wikilink"), [poster](https://dl.dropboxusercontent.com/u/21343536/Fernandez%20Gayol%20O.pptx)                                         |
-| 2015-Sep-03                                              | David Logan                              | The ImageJ-CellProfiler Interface                                                               | [abstract](Conference_2015_Program#David_Logan_-_The_ImageJ-CellProfiler_Interface "wikilink"), [poster](http://www.broadinstitute.org/~dlogan/posters/2015_09_03_ImageJ_Conf_DLogan_FINAL.pptx)                                                                    |
-| 2015-Sep-03                                              | {% include Person content="Pietzsch" %}  | BigDataViewer—Visualization and Image Processing for Terabyte Data Sets                         | [abstract](Conference_2015_Program#Tobias_Pietzsch_-_BigDataViewer.E2.80.94Visualization_and_Image_Processing_for_Terabyte_Data_Sets "wikilink"), [poster](https://www.dropbox.com/s/3st8ezbj9jmjzd8/bdv-poster-imagej2015.pdf?dl=0)                                |
-| 2015-Sep-03                                              | {% include Person content="Saalfeld" %}  | ImgLib2 for visualization and generic image processing                                          | [abstract](Conference_2015_Program#Stephan_Saalfeld_-_ImgLib2_for_visualization_and_generic_image_processing "wikilink"), [poster](https://www.dropbox.com/s/f23tr3q607dxvlh/imglib2-imagej2015.pdf?dl=0)                                                           |
-| 2015-Sep-03                                              | Raghavender Sahdev                       | TimeLapseReg – An ImageJ plugin for drift correction of video sequence in time-lapse microscopy | [abstract](Conference_2015_Program#Raghavender_Sahdev_-_TimeLapseReg_.E2.80.93_An_ImageJ_plugin_for_drift_correction_of_video_sequence_in_time-lapse_microscopy_2 "wikilink"), [poster](http://www.raghavendersahdev.com/uploads/3/9/6/2/39623741/timelapsereg.pdf) |
-| 2015-Sep-03                                              | {% include Person content="Twagner" %}   | Tools and methods of the Biomedical Imaging Group for ImageJ: An Overview                       | [abstract](Conference_2015_Program#Thorsten_Wagner_-_Tools_and_methods_of_the_Biomedical_Imaging_Group_for_ImageJ:_An_Overview "wikilink"), [poster](https://dl.dropboxusercontent.com/u/560426/imagej/conference2015/poster.pdf)                                   |
+| **Date**                                                 | **Presenter**                       | **Title**                                                                                       | **Resources**                                                                                                                                                                                                                                                       |
+| -------------------------------------------------------- | ----------------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[2015 ImageJ Conference](Conference_2015 "wikilink")** |                                     |                                                                                                 |                                                                                                                                                                                                                                                                     |
+| 2015-Sep-03                                              | {% include person content='TODO' %} | Trainable Weka Segmentation: a tool for machine-learning-based image segmentation               | [abstract](Conference_2015_Program#Ignacio_Arganda-Carreras_-_Trainable_Weka_Segmentation:_a_tool_for_machine-learning-based_image_segmentation "wikilink"), [poster](http://conference.imagej.net/2015/ignacio-arganda-carreras/poster-TWS-ImageJ-Conf-2015.pdf)   |
+| 2015-Sep-03                                              | {% include person content='TODO' %} | The BioVoxxel Toolbox                                                                           | [abstract](Conference_2015_Program#Jan_Brocher_-_The_BioVoxxel_Toolbox "wikilink"), [poster](https://www.dropbox.com/s/7e6bjh3iqnxv014/IJcon2015-Poster%20Brocher%20%28150dpi%29.png?dl=0)                                                                          |
+| 2015-Sep-03                                              | Olaya Fernandez-Gayol               | Using the wrMTrck plugin to analyze the Morris Water maze in mice                               | [abstract](Conference_2015_Program#Olaya_Fernandez-Gayol_-_Using_the_wrMTrck_plugin_to_analyze_the_Morris_Water_maze_in_mice "wikilink"), [poster](https://dl.dropboxusercontent.com/u/21343536/Fernandez%20Gayol%20O.pptx)                                         |
+| 2015-Sep-03                                              | David Logan                         | The ImageJ-CellProfiler Interface                                                               | [abstract](Conference_2015_Program#David_Logan_-_The_ImageJ-CellProfiler_Interface "wikilink"), [poster](http://www.broadinstitute.org/~dlogan/posters/2015_09_03_ImageJ_Conf_DLogan_FINAL.pptx)                                                                    |
+| 2015-Sep-03                                              | {% include person content='TODO' %} | BigDataViewer—Visualization and Image Processing for Terabyte Data Sets                         | [abstract](Conference_2015_Program#Tobias_Pietzsch_-_BigDataViewer.E2.80.94Visualization_and_Image_Processing_for_Terabyte_Data_Sets "wikilink"), [poster](https://www.dropbox.com/s/3st8ezbj9jmjzd8/bdv-poster-imagej2015.pdf?dl=0)                                |
+| 2015-Sep-03                                              | {% include person content='TODO' %} | ImgLib2 for visualization and generic image processing                                          | [abstract](Conference_2015_Program#Stephan_Saalfeld_-_ImgLib2_for_visualization_and_generic_image_processing "wikilink"), [poster](https://www.dropbox.com/s/f23tr3q607dxvlh/imglib2-imagej2015.pdf?dl=0)                                                           |
+| 2015-Sep-03                                              | Raghavender Sahdev                  | TimeLapseReg – An ImageJ plugin for drift correction of video sequence in time-lapse microscopy | [abstract](Conference_2015_Program#Raghavender_Sahdev_-_TimeLapseReg_.E2.80.93_An_ImageJ_plugin_for_drift_correction_of_video_sequence_in_time-lapse_microscopy_2 "wikilink"), [poster](http://www.raghavendersahdev.com/uploads/3/9/6/2/39623741/timelapsereg.pdf) |
+| 2015-Sep-03                                              | {% include person content='TODO' %} | Tools and methods of the Biomedical Imaging Group for ImageJ: An Overview                       | [abstract](Conference_2015_Program#Thorsten_Wagner_-_Tools_and_methods_of_the_Biomedical_Imaging_Group_for_ImageJ:_An_Overview "wikilink"), [poster](https://dl.dropboxusercontent.com/u/560426/imagej/conference2015/poster.pdf)                                   |

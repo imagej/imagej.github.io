@@ -37,7 +37,7 @@ In case you do not want to run the Updater upon startup, you can choose
 
 ## Starting the Updater explicitly
 
-The Updater can be run via {% include bc content="Help | Update..." %}.
+The Updater can be run via {% include bc content='Help | Update...' %} .
 
 ## Easy mode
 
@@ -87,7 +87,9 @@ have to upload the plugin to the server.
 
 ## Starting the Updater manually
 
-Just click on the {% include bc content="Help | Update..." %} menu item:
+Just click on the {% include bc content='Help | Update...' %}
+
+`menu item:`
 
 ![Fiji\_Updater-screenshot.png](Fiji_Updater-screenshot.png
 "Fiji_Updater-screenshot.png")
@@ -174,9 +176,8 @@ jrunscript bootstrap.js help
 ```
 
 This uses the **jrunscript** executable of your Java installation to run
-the Javascript file tracked in ImageJ's {% include GitHub
-content="org=imagej|repo=imagej-updater|path=bin/bootstrap.js|label=source
-code repository" %}.
+the Javascript file tracked in ImageJ's {% include github content='TODO'
+%} .
 
 The `bootstrap.js` script was originally intended to fix broken
 [Fiji](Fiji "wikilink") installations, and was subsequently enhanced to
@@ -219,10 +220,10 @@ function.
 These instructions are valid for Ubuntu 14.04. Other distributions may
 handle system users differently and may not even create a home directory
 for them. In such case, the ssh key can be placed in {% include path
-content="/etc/ssh" %}, and the config options used with {% include
-inline content="ssh -o" %}.
+content='/etc/ssh' %} , and the config options used with {% include
+inline content='ssh -o' %} .
 
-{% include File content="/home/fiji\_mirror\_sync/.ssh/config||
+{% capture includecontent %} /home/fiji\_mirror\_sync/.ssh/config||
 
     Host imagej
       Hostname code.imagej.net
@@ -232,22 +233,26 @@ inline content="ssh -o" %}.
       User your_account_username
       ProxyCommand  ssh code.imagej.net netcat -w 120 %h %p
 
-" %}
+{% endcapture %}
+
+{% include file content=includecontent %}
 
 To prepare the known hosts files:
 
 `$ ssh-keyscan -t rsa code.imagej.net | sudo -u fiji_mirror_sync tee -a /home/fiji_mirror_sync/.ssh/known_hosts`  
 `$ sudo -u fiji_mirror_sync ssh imagej ssh-keyscan -t rsa fiji.sc | sudo -u fiji_mirror_sync tee -a /home/fiji_mirror_sync/.ssh/known_hosts`
 
-Finally set up the cronjob with {% include inline content="sudo crontab
--u fiji\_mirror\_sync -e" %}
+Finally set up the cronjob with {% include inline content='sudo crontab
+-u fiji\_mirror\_sync -e' %}
 
-{% include File content="/var/spool/cron/...||
+{% capture includecontent %} /var/spool/cron/...||
 
     00 06 * * * rsync -azL --delete -e ssh imagej:imagej-update-site/ /var/www/fiji_update/mirrors/imagej
     10 06 * * * rsync -azL --delete -e ssh fiji:fiji-update-site/ /var/www/fiji_update/mirrors/fiji
 
-" %}
+{% endcapture %}
+
+{% include file content=includecontent %}
 
 Once the mirrors get populated, you can start using them on your ImageJ
 installations. Editing the URL of the existing ImageJ and Fiji update

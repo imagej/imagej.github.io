@@ -8,12 +8,9 @@ categories:
 description: test description
 ---
 
-{% include Project content="SciJava" %}{% include Infobox content="name
-= SciJava | software = SciJava | logo =
-![Scijava-logo.png](Scijava-logo.png "Scijava-logo.png") | author =
-[SciJava consortium](https://scijava.org/) | maintainer = SciJava is a
-collaboration of projects providing software for scientific computing—an
-effort to cooperate and reuse code when feasible.
+{% include project content='SciJava' %} SciJava is a collaboration of
+projects providing software for scientific computing—an effort to
+cooperate and reuse code when feasible.
 
 ## The SciJava component collection
 
@@ -53,8 +50,8 @@ synergize wherever possible:
 
 |                                      |                                                                                   |                                                              |                                                              |                                                                                                                                            |
 | ------------------------------------ | --------------------------------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| {% include Logo content="ImageJ2" %} | ![ x64px | link=CellProfiler](Cellprofiler-logo.png " x64px | link=CellProfiler") | ![ x54px | link=KNIME](Knime-logo.jpg " x54px | link=KNIME") | ![ x32px | link=OMERO](Omero-logo.png " x32px | link=OMERO") | ![ x72px | link=<https://github.com/scenerygraphics/scenery>](Scenery-logo.png " x72px | link=https://github.com/scenerygraphics/scenery") |
-| {% include Logo content="Fiji" %}    | ![ x48px | link=Icy](Icy-logo.png " x48px | link=Icy")                            | {% include Logo content="Micro-Manager | size=48px" %}       | {% include Logo content="VCell | size=48px" %}               | ![ x28px | link=Bio-Formats](Bio-formats-logo.png " x28px | link=Bio-Formats")                                                             |
+| {% include logo content='ImageJ2' %} | ![ x64px | link=CellProfiler](Cellprofiler-logo.png " x64px | link=CellProfiler") | ![ x54px | link=KNIME](Knime-logo.jpg " x54px | link=KNIME") | ![ x32px | link=OMERO](Omero-logo.png " x32px | link=OMERO") | ![ x72px | link=https://github.com/scenerygraphics/scenery](Scenery-logo.png " x72px | link=https://github.com/scenerygraphics/scenery") |
+| {% include logo content='Fiji' %}    | ![ x48px | link=Icy](Icy-logo.png " x48px | link=Icy")                            | {% include logo content='Micro-Manager | size=48px' %}       | {% include logo content='VCell | size=48px' %}               | ![ x28px | link=Bio-Formats](Bio-formats-logo.png " x28px | link=Bio-Formats")                                                             |
 
 See the [Architecture](Architecture "wikilink") and
 [Governance](Governance "wikilink") pages, as well as the [SciJava web

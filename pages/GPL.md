@@ -8,11 +8,14 @@ categories:
 description: test description
 ---
 
-\_\_NOTOC\_\_{% include info-box content="For a summary of
+\_\_NOTOC\_\_ {% capture includecontent %} For a summary of
 [SciJava](SciJava "wikilink") licensing, see the
-[Licensing](Licensing "wikilink") page." %} %Replace% LicensesMenu
-%Replace% The **GNU General Public License** is a free,
-**[copyleft](wikipedia:Copyleft "wikilink")** [open
+[Licensing](Licensing "wikilink") page. {% endcapture %}
+
+{% include info-box content=includecontent %}
+
+%Replace% LicensesMenu %Replace% The **GNU General Public License** is a
+free, **[copyleft](wikipedia:Copyleft "wikilink")** [open
 source](open_source "wikilink") license for software and other kinds of
 works. This is in contrast to **permissive** licenses like
 [BSD](BSD "wikilink"), which impose minimal restrictions on the
@@ -24,15 +27,24 @@ See the [Wikipedia article on the
 GPL](wikipedia:GNU_General_Public_License "wikilink") for more
 information.
 
-{% include License content="name = GNU General Public License v3 |
+{% capture includecontent %} name = GNU General Public License v3 |
 shortname = GPLv3 | description = Version 3 of the GPL is the latest
 version, written in 2007. It is the recommended version of the GPL to
-use for new projects. | url = <http://www.gnu.org/licenses/gpl.html> |
-choosealicense = gpl-3.0 | osswatch = gplv3 | osi = gpl-license " %} {%
-include License content="name = GNU General Public License v2 |
+use for new projects. | url = http://www.gnu.org/licenses/gpl.html |
+choosealicense = gpl-3.0 | osswatch = gplv3 | osi = gpl-license
+
+{% endcapture %}
+
+{% include license content=includecontent %}
+
+{% capture includecontent %} name = GNU General Public License v2 |
 shortname = GPLv2 | description = Version 2 of the GPL is an older
 version from 1991, which lacks some language relating to patents, as
 well as prevention of [Tivoization](wikipedia:Tivoization "wikilink").
 It is recommended to use GPLv3 instead if possible. | url =
-<http://www.gnu.org/licenses/gpl-2.0.html> | choosealicense = gpl-2.0 |
-osswatch = gpl " %}
+http://www.gnu.org/licenses/gpl-2.0.html | choosealicense = gpl-2.0 |
+osswatch = gpl
+
+{% endcapture %}
+
+{% include license content=includecontent %}

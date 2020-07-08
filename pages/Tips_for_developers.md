@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-{% include DevelopMenu content="tutorials" %}An unsorted list of hints
+{% include develop-menu content='tutorials' %} An unsorted list of hints
 that you might find useful:
 
 # Compile & Execute a Class
@@ -161,12 +161,12 @@ method before the call to `plot.draw();`
 ## Duplicate, or convert between, *ImageProcessor* types
 
 The `ImageProcessor` class has several useful methods:
-\[<https://fiji.sc/javadoc/ij/process/ImageProcessor.html#duplicate>()
+\[https://fiji.sc/javadoc/ij/process/ImageProcessor.html#duplicate()
 duplicate()\],
 [convertToByte()](https://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToByte\(boolean\)),
-\[<https://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToFloat>()
+\[https://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToFloat()
 convertToFloat()\],
-\[<https://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToRGB>()
+\[https://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToRGB()
 convertToRGB()\], and
 [convertToShort()](https://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToShort\(boolean\)).
 

@@ -8,9 +8,13 @@ categories: Cookbook,Tutorials,Colocalization,Color processing
 description: test description
 ---
 
-{% include BigNotice content="See
+{% capture includecontent %} See
 [:Category:Colocalization](:Category:Colocalization "wikilink") for
-pages about colocalization." %} {% include Learn content="techniques" %}
+pages about colocalization. {% endcapture %}
+
+{% include big-notice content=includecontent %}
+
+{% include learn content='techniques' %}
 
 ## What is colocalization?
 
@@ -119,8 +123,10 @@ Most people might think that the image contains 4 distinct colours: 2
 sets of thin spirals are in dark red and dark green, and 2 thick
 prominent spirals of yellow-green and yellow. However, the yellow and
 yellow-green actually have <b>exactly the same color\!</b> You can
-verify this yourself by calling {% include bc content="File | Open
-Samples | [Spirals (Macro)](Spirals_\(Macro\) "wikilink")" %} in Fiji.
+verify this yourself by calling {% include bc content='File | Open
+Samples | [Spirals (Macro)](Spirals_\(Macro\) "wikilink")' %}
+
+`in Fiji.`
 
 ![GreenYellowSimultColourIllusion.png](GreenYellowSimultColourIllusion.png
 "GreenYellowSimultColourIllusion.png")
@@ -410,7 +416,7 @@ uninformative. They are listed here, in arguably order of usefulness:
     tissue samples, it might then be a useful number. Maybe % intensity
     above threshold colocalised might be a useful value in some cases?
     See section 6.3 at
-    <http://www.uhnresearch.ca/facilities/wcif/imagej/colour_analysis.htm>
+    http://www.uhnresearch.ca/facilities/wcif/imagej/colour_analysis.htm
     for more explanation of what the different measurements exactly are,
     or look at the code.
 
@@ -425,8 +431,8 @@ shortcut.</span>
 The [Colocalization Test](Colocalization_Test "wikilink") plugin
 performs the Costes test for statistical significance (which you should
 ALWAYS do after calculating the thresholded Manders coefficients and the
-scatterplot). It is in the menus at {% include bc content="Analyze |
-Colocalization | Colocalization Test" %}
+scatterplot). It is in the menus at {% include bc content='Analyze |
+Colocalization | Colocalization Test' %}
 
 ![ColocTestGUI1.png](ColocTestGUI1.png "ColocTestGUI1.png")
 
