@@ -68,7 +68,7 @@ waiving all copyright interest as allowed by law.
 </tr>
 <tr class="even">
 <td><figure>
-<img src="imagej1-icon.png" title="imagej1-icon.png" alt="imagej1-icon.png" width="48" /><figcaption>imagej1-icon.png</figcaption>
+<img src="/images/pages/imagej1-icon.png" title="imagej1-icon.png" alt="imagej1-icon.png" width="48" /><figcaption>imagej1-icon.png</figcaption>
 </figure></td>
 <td><p><strong><a href="ImageJ1" title="wikilink">ImageJ1</a></strong></p></td>
 <td><p><a href="https://imagej.net/disclaimer.html">Disclaimer</a></p></td>
@@ -80,28 +80,28 @@ waiving all copyright interest as allowed by law.
 </tr>
 <tr class="even">
 <td><figure>
-<img src="scijava-icon.png" title="scijava-icon.png" alt="scijava-icon.png" width="48" /><figcaption>scijava-icon.png</figcaption>
+<img src="/images/pages/scijava-icon.png" title="scijava-icon.png" alt="scijava-icon.png" width="48" /><figcaption>scijava-icon.png</figcaption>
 </figure></td>
 <td><p><strong><a href="SciJava" title="wikilink">SciJava</a></strong></p></td>
 <td><p><a href="https://github.com/scijava/scijava-common/blob/master/LICENSE.txt">License</a></p></td>
 </tr>
 <tr class="odd">
 <td><figure>
-<img src="imglib2-icon.png" title="imglib2-icon.png" alt="imglib2-icon.png" width="48" /><figcaption>imglib2-icon.png</figcaption>
+<img src="/images/pages/imglib2-icon.png" title="imglib2-icon.png" alt="imglib2-icon.png" width="48" /><figcaption>imglib2-icon.png</figcaption>
 </figure></td>
 <td><p><strong><a href="ImgLib2" title="wikilink">ImgLib2</a></strong></p></td>
 <td><p><a href="https://github.com/imglib/imglib2/blob/master/LICENSE.txt">License</a></p></td>
 </tr>
 <tr class="even">
 <td><figure>
-<img src="imagej2-icon.png" title="imagej2-icon.png" alt="imagej2-icon.png" width="48" /><figcaption>imagej2-icon.png</figcaption>
+<img src="/images/pages/imagej2-icon.png" title="imagej2-icon.png" alt="imagej2-icon.png" width="48" /><figcaption>imagej2-icon.png</figcaption>
 </figure></td>
 <td><p><strong><a href="ImageJ2" title="wikilink">ImageJ2</a></strong></p></td>
 <td><p><a href="https://github.com/imagej/imagej/blob/master/LICENSE.txt">License</a></p></td>
 </tr>
 <tr class="odd">
 <td><figure>
-<img src="scifio-icon.png" title="scifio-icon.png" alt="scifio-icon.png" width="48" /><figcaption>scifio-icon.png</figcaption>
+<img src="/images/pages/scifio-icon.png" title="scifio-icon.png" alt="scifio-icon.png" width="48" /><figcaption>scifio-icon.png</figcaption>
 </figure></td>
 <td><p><strong><a href="SCIFIO" title="wikilink">SCIFIO</a></strong></p></td>
 <td><p><a href="https://github.com/scifio/scifio/blob/master/LICENSE.txt">License</a></p></td>
@@ -113,7 +113,7 @@ waiving all copyright interest as allowed by law.
 </tr>
 <tr class="odd">
 <td><figure>
-<img src="fiji-icon.png" title="fiji-icon.png" alt="fiji-icon.png" width="48" /><figcaption>fiji-icon.png</figcaption>
+<img src="/images/pages/fiji-icon.png" title="fiji-icon.png" alt="fiji-icon.png" width="48" /><figcaption>fiji-icon.png</figcaption>
 </figure></td>
 <td><p><strong><a href="Fiji" title="wikilink">Fiji</a></strong></p></td>
 <td><p><a href="https://github.com/fiji/fiji/blob/master/LICENSES">Licenses</a></p></td>
@@ -135,14 +135,14 @@ waiving all copyright interest as allowed by law.
 </tr>
 <tr class="odd">
 <td><figure>
-<img src="cellprofiler-icon.png" title="cellprofiler-icon.png" alt="cellprofiler-icon.png" width="48" /><figcaption>cellprofiler-icon.png</figcaption>
+<img src="/images/pages/cellprofiler-icon.png" title="cellprofiler-icon.png" alt="cellprofiler-icon.png" width="48" /><figcaption>cellprofiler-icon.png</figcaption>
 </figure></td>
 <td><p><strong><a href="CellProfiler" title="wikilink">CellProfiler</a></strong></p></td>
 <td><p><a href="https://github.com/CellProfiler/CellProfiler/blob/master/LICENSE">License</a></p></td>
 </tr>
 <tr class="even">
 <td><figure>
-<img src="bio-formats-icon.png" title="bio-formats-icon.png" alt="bio-formats-icon.png" width="48" /><figcaption>bio-formats-icon.png</figcaption>
+<img src="/images/pages/bio-formats-icon.png" title="bio-formats-icon.png" alt="bio-formats-icon.png" width="48" /><figcaption>bio-formats-icon.png</figcaption>
 </figure></td>
 <td><p><strong><a href="Bio-Formats" title="wikilink">Bio-Formats</a></strong></p></td>
 <td><p><a href="https://github.com/openmicroscopy/bioformats/blob/develop/LICENSE.txt">License</a><br />
@@ -150,7 +150,7 @@ waiving all copyright interest as allowed by law.
 </tr>
 <tr class="odd">
 <td><figure>
-<img src="omero-icon.png" title="omero-icon.png" alt="omero-icon.png" width="48" /><figcaption>omero-icon.png</figcaption>
+<img src="/images/pages/omero-icon.png" title="omero-icon.png" alt="omero-icon.png" width="48" /><figcaption>omero-icon.png</figcaption>
 </figure></td>
 <td><p><strong><a href="OMERO" title="wikilink">OMERO</a></strong></p></td>
 <td><p><a href="https://github.com/openmicroscopy/openmicroscopy/blob/develop/LICENSE.txt">License</a><br />
@@ -158,7 +158,7 @@ waiving all copyright interest as allowed by law.
 </tr>
 <tr class="even">
 <td><figure>
-<img src="knime-icon.png" title="knime-icon.png" alt="knime-icon.png" width="48" /><figcaption>knime-icon.png</figcaption>
+<img src="/images/pages/knime-icon.png" title="knime-icon.png" alt="knime-icon.png" width="48" /><figcaption>knime-icon.png</figcaption>
 </figure></td>
 <td><p><strong><a href="KNIME" title="wikilink">KNIME</a></strong></p></td>
 <td><p><a href="http://www.knime.org/downloads/full-license">License</a></p></td>

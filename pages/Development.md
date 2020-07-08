@@ -35,9 +35,7 @@ programs, as well as how to modify or extend its capabilities via
 <td><p>An end-user <a href="wikipedia:Application_software" title="wikilink">software application</a></p></td>
 </tr>
 <tr class="even">
-<td><figure>
-<img src="Imagej-app.png" title=" 500px | link=Getting started" alt=" 500px | link=Getting started" /><figcaption> 500px | link=Getting started</figcaption>
-</figure></td>
+<td><p><a href="Getting started"><img src="/images/pages/Imagej-app.png" width="500px"/></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Reusable <a href="wikipedia:Library_(computing)" title="wikilink">software libraries</a></p></td>
@@ -53,17 +51,13 @@ programs, as well as how to modify or extend its capabilities via
 <td><p>An extensible collection of <a href="plugins" title="wikilink">plugins</a> and <a href="services" title="wikilink">services</a></p></td>
 </tr>
 <tr class="even">
-<td><figure>
-<img src="Scijava-logo.png" title=" x72px | link=SciJava" alt=" x72px | link=SciJava" /><figcaption> x72px | link=SciJava</figcaption>
-</figure></td>
+<td><p><a href="SciJava"><img src="/images/pages/Scijava-logo.png" height="72px"/></a></p></td>
 </tr>
 <tr class="odd">
 <td><p><em>"Write once, run anywhere"</em> <a href="Ops" title="wikilink">image processing routines</a></p></td>
 </tr>
 <tr class="even">
-<td><figure>
-<img src="Write-once-run-anywhere.png" title=" 500px | link=Ops" alt=" 500px | link=Ops" /><figcaption> 500px | link=Ops</figcaption>
-</figure></td>
+<td><p><a href="Ops"><img src="/images/pages/Write-once-run-anywhere.png" width="500px"/></a></p></td>
 </tr>
 </tbody>
 </table>

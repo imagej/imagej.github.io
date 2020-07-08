@@ -8,15 +8,15 @@ categories:
 description: test description
 ---
 
-%Replace% Learn %Replace% == What is ImageJ? == ![ x48px |
-link=ImageJ](Imagej2-icon.png " x48px | link=ImageJ")
+%Replace% Learn %Replace% == What is ImageJ? ==
+<a href="ImageJ"><img src="/images/pages/Imagej2-icon.png" height="48px"/></a>
 [ImageJ](ImageJ "wikilink") is an [open source](open_source "wikilink")
 [image processing](techniques "wikilink") program for multidimensional
 image data with a focus on scientific imaging.
 
 ## What is Fiji?
 
-![ x48px | link=Fiji](Fiji-icon.png " x48px | link=Fiji")
+<a href="Fiji"><img src="/images/pages/Fiji-icon.png" height="48px"/></a>
 [<span style="color: darkcyan; font-size: large; font-weight: bold">F</span>iji
 <span style="color: darkcyan; font-size: large; font-weight: bold">I</span>s
 <span style="color: darkcyan; font-size: large; font-weight: bold">J</span>ust

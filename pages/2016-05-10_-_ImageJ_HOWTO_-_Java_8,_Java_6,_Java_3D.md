@@ -33,21 +33,19 @@ version</p></th>
 </thead>
 <tbody>
 <tr class="odd">
-<td><figure>
-<img src="Fiji-icon.png" title="Fiji-icon.png" alt="Fiji-icon.png" height="64" /><figcaption>Fiji-icon.png</figcaption>
-</figure></td>
+<td><p><a href="Fiji|x64px"><img src="/images/pages/Fiji-icon.png" width="alt=Fiji"/></a></p></td>
 <td><p>Java 8</p></td>
-<td><p><img src="Win.png" title="fig:Win.png" alt="Win.png" height="32" /><br />
-<img src="Osx.png" title="fig:Osx.png" alt="Osx.png" height="32" /><br />
-<img src="Tux.png" title="fig:Tux.png" alt="Tux.png" height="32" /></p></td>
+<td><p><img src="/images/pages/Win.png" title="fig:Win.png" alt="Win.png" height="32" /><br />
+<img src="/images/pages/Osx.png" title="fig:Osx.png" alt="Osx.png" height="32" /><br />
+<img src="/images/pages/Tux.png" title="fig:Tux.png" alt="Tux.png" height="32" /></p></td>
 <td><p><strong>Recommended.</strong> <a href="Fiji/Downloads" title="wikilink">Download the newest Fiji</a> for your platform. It comes bundled with Java 8, with the Java-8 update site enabled.</p></td>
 <td><p>Run <a href="Updater" title="wikilink"> {% include bc content='Help|Update...' %} </a> to update to the latest version of ImageJ core and Fiji components.</p></td>
 <td><p>This version of Fiji comes bundled with <a href="Java_3D" title="wikilink">Java 3D</a> 1.6. The <a href="3D_Viewer" title="wikilink">3D Viewer</a> works out of the box, though there are <a href="https://github.com/search?q=label%3Ajava-3d+is%3Aopen+user%3Afiji+user%3Aimagej&amp;type=Issues">still some bugs</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Java 6</p></td>
-<td><p><img src="Win.png" title="fig:Win.png" alt="Win.png" height="32" /><br />
-<img src="Tux.png" title="fig:Tux.png" alt="Tux.png" height="32" /></p></td>
+<td><p><img src="/images/pages/Win.png" title="fig:Win.png" alt="Win.png" height="32" /><br />
+<img src="/images/pages/Tux.png" title="fig:Tux.png" alt="Tux.png" height="32" /></p></td>
 <td><p>Download the final (2017-May-30) <a href="Fiji/Downloads#Java_6" title="wikilink">Java-6 version of Fiji</a>. It comes bundled with Java 6 and all platform launchers.</p></td>
 <td><p>Run <a href="Updater" title="wikilink"> {% include bc content='Help|Update...' %} </a> to update to the latest Java-6-compatible version. Your Fiji will become outdated over time, stuck on the final Java-6-compatible plugin versions.</p></td>
 <td><p>Run <a href="3D_Viewer" title="wikilink"> {% include bc content='Plugins|3D Viewer' %} </a> to trigger installation of <a href="Java_3D" title="wikilink">Java 3D</a> 1.5 if you need 3D viz.</p></td>
@@ -55,7 +53,7 @@ version</p></th>
 </tr>
 <tr class="odd">
 <td><figure>
-<img src="Osx.png" title="Osx.png" alt="Osx.png" height="32" /><figcaption>Osx.png</figcaption>
+<img src="/images/pages/Osx.png" title="Osx.png" alt="Osx.png" height="32" /><figcaption>Osx.png</figcaption>
 </figure></td>
 <td><p>Download the final (2017-May-30) <a href="Fiji/Downloads#Java_6" title="wikilink">Java-6 version of Fiji</a>. It is distributed <em>without</em> Java, so you must <a href="Frequently_Asked_Questions#How_do_I_set_up_Java_6_on_OS_X.3F" title="wikilink">install Apple Java 6</a> on your system.</p>
 <ul>
@@ -76,13 +74,11 @@ version</p></th>
 <td></td>
 </tr>
 <tr class="odd">
-<td><figure>
-<img src="Imagej2-icon.png" title="Imagej2-icon.png" alt="Imagej2-icon.png" height="64" /><figcaption>Imagej2-icon.png</figcaption>
-</figure></td>
+<td><p><a href="ImageJ2|x64px"><img src="/images/pages/Imagej2-icon.png" width="alt=ImageJ2"/></a></p></td>
 <td><p>Java 8</p></td>
-<td><p><img src="Win.png" title="fig:Win.png" alt="Win.png" height="32" /><br />
-<img src="Osx.png" title="fig:Osx.png" alt="Osx.png" height="32" /><br />
-<img src="Tux.png" title="fig:Tux.png" alt="Tux.png" height="32" /></p></td>
+<td><p><img src="/images/pages/Win.png" title="fig:Win.png" alt="Win.png" height="32" /><br />
+<img src="/images/pages/Osx.png" title="fig:Osx.png" alt="Osx.png" height="32" /><br />
+<img src="/images/pages/Tux.png" title="fig:Tux.png" alt="Tux.png" height="32" /></p></td>
 <td><p><a href="Downloads" title="wikilink">Download the newest ImageJ</a> for your platform. It comes bundled <em>without</em> Java, and <em>without</em> the Java-8 update site enabled.</p>
 <ul>
 <li>If you have not already done so: install Java 8 from <a href="http://java.com/">java.com</a>.</li>
@@ -93,9 +89,9 @@ version</p></th>
 </tr>
 <tr class="even">
 <td><p>Java 6</p></td>
-<td><p><img src="Win.png" title="fig:Win.png" alt="Win.png" height="32" /><br />
-<img src="Osx.png" title="fig:Osx.png" alt="Osx.png" height="32" /><br />
-<img src="Tux.png" title="fig:Tux.png" alt="Tux.png" height="32" /></p></td>
+<td><p><img src="/images/pages/Win.png" title="fig:Win.png" alt="Win.png" height="32" /><br />
+<img src="/images/pages/Osx.png" title="fig:Osx.png" alt="Osx.png" height="32" /><br />
+<img src="/images/pages/Tux.png" title="fig:Tux.png" alt="Tux.png" height="32" /></p></td>
 <td><p>It is possible to set up a "plain" ImageJ2 with Java 6, but <strong>not recommended</strong>:</p>
 <ul>
 <li>Set up <a href="Fiji" title="wikilink">Fiji</a> + Java 6 as described above.</li>
@@ -116,9 +112,7 @@ version</p></th>
 <td></td>
 </tr>
 <tr class="even">
-<td><figure>
-<img src="Imagej1-icon.png" title="Imagej1-icon.png" alt="Imagej1-icon.png" height="64" /><figcaption>Imagej1-icon.png</figcaption>
-</figure></td>
+<td><p><a href="ImageJ1|x64px"><img src="/images/pages/Imagej1-icon.png" width="alt=ImageJ1"/></a></p></td>
 <td><p>See the <a href="https://imagej.net/download.html">ImageJ 1.x downloads page</a> for instructions.</p></td>
 <td></td>
 <td></td>

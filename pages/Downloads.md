@@ -48,15 +48,13 @@ pre-installed.
 
 <div style="float: left; padding: 1em; text-align:center; font-size:1.5em">
 
-![Fiji-icon.png](Fiji-icon.png "Fiji-icon.png")  
-[Fiji](Fiji/Downloads "wikilink")
+<a href="Fiji/Downloads]]<br>[[Fiji/Downloads|Fiji"><img src="/images/pages/Fiji-icon.png" height="96px"/></a>
 
 </div>
 
 <div style="float: left; padding: 1em; text-align:center; font-size:1.5em">
 
-![Bio7-icon.png](Bio7-icon.png "Bio7-icon.png")  
-[Bio7](Bio7 "wikilink")
+<a href="Bio7]]<br>[[Bio7"><img src="/images/pages/Bio7-icon.png" height="96px"/></a>
 
 </div>
 
