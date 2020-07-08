@@ -2,7 +2,7 @@
 title: Visualization
 breadcrumb: Visualization
 author: admin
-categories: admin, plugins
+categories: admin
 layout: page
 use_math: false
 ---
