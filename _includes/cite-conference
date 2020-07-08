@@ -1,5 +1,5 @@
 <div class="cite-conference">
 
-    {{page.content}}
+    {{include.content}}
     
 </div>

@@ -1,3 +1,3 @@
 <span class="inline">
-    {{page.content}}
+    {{include.content}}
 </span>

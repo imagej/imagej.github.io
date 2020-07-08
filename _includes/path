@@ -1,5 +1,5 @@
 <div class="path">
 
-    {{page.content}}
+    {{include.content}}
     
 </div>

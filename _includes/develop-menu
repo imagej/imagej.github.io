@@ -1,5 +1,5 @@
 <div class="develop-menu">
 
-    {{page.content}}
+    {{include.content}}
     
 </div>

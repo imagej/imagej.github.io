@@ -1,5 +1,5 @@
 <div class="personlist">
 
-    {{page.content}}
+    {{include.content}}
     
 </div>

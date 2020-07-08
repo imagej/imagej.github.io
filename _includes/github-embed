@@ -1,5 +1,5 @@
 <div class="githubembed">
 
-    {{page.content}}
+    {{include.content}}
     
 </div>

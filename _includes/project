@@ -1,5 +1,5 @@
 <div class="project">
 
-    {{page.content}}
+    {{include.content}}
     
 </div>

@@ -1,5 +1,5 @@
 <div class="scholar">
 
-    {{page.content}}
+    {{include.content}}
     
 </div>

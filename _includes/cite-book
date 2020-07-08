@@ -1,5 +1,5 @@
 <div class="cite-book">
 
-    {{page.content}}
+    {{include.content}}
     
 </div>

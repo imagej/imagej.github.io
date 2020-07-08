@@ -1,5 +1,5 @@
 <div class="cite-journal">
 
-    {{page.content}}
+    {{include.content}}
     
 </div>

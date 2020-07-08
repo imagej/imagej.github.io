@@ -1,5 +1,5 @@
 <div class="license">
 
-    {{page.content}}
+    {{include.content}}
     
 </div>

@@ -1,3 +1,3 @@
 <div class="big-notice">
-    {{page.content}}
+    {{include.content}}
 </div>

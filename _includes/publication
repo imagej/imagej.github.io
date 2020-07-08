@@ -1,5 +1,5 @@
 <div class="publication">
 
-    {{page.content}}
+    {{include.content}}
     
 </div>

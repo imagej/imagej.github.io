@@ -1,5 +1,5 @@
 <div class="citation">
 
-    {{page.content}}
+    {{include.content}}
     
 </div>

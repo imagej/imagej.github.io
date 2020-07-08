@@ -1,5 +1,5 @@
 <div class="logo">
 
-    {{page.content}}
+    {{include.content}}
     
 </div>

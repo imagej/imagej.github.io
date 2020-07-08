@@ -1,5 +1,5 @@
 <div class="fiji">
 
-    {{page.content}}
+    {{include.content}}
     
 </div>

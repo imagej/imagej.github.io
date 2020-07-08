@@ -1,5 +1,5 @@
 <div class="key">
 
-    {{page.content}}
+    {{include.content}}
     
 </div>
