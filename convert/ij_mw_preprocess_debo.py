@@ -84,7 +84,7 @@ def get_categories(file_path):
     return str_categories
 
 
-template_regex = r'{{[\n]*([A-Za-z0-9_ ]*)[ \n]*\|[ \n]*([^}]*)[ \n]*}}'
+template_regex = r'\{\{[\n]*([A-Za-z0-9_ ]*)[ \n]*\|[ \n]*(([\s\S]*?))\}\}'
 
 
 def process_file(file_path, str_content):
@@ -109,13 +109,9 @@ def process_file(file_path, str_content):
     content_tmp = re.sub(r'{{[\\]*#widget:SWITCHtube\|[^}]*}}', r'TODO GOOGLE SPREADSHEET WIDGET', content_tmp)
 
     # replace '{{ stuff }}' mediawiki syntax with '{% include stuff %}` liquid
-    pos = -1
     while True:
         match = re.search(template_regex, content_tmp)
         if match:
-            if match.start() == pos:
-                break
-            pos = match.start()
             content_tmp = replace_template(content_tmp, match[0], match[1], match[2])
         else:
             break
@@ -167,8 +163,12 @@ def replace_template(document_content, match_content, template_name, template_co
     if template_name in inline_includes:
         # handle inline templates
         template_content = re.sub(r'\'', r'"', template_content)
-        document_content = document_content.replace(match_content,
-            "{% include " + template_name + " " + match_content_parameters(template_content) + "%}")
+        if template_name == "bc":
+            document_content = document_content.replace(match_content,
+                "{% include " + template_name + " content=\'" + template_content + "\'%}")
+        else:
+            document_content = document_content.replace(match_content,
+                "{% include " + template_name + " " + match_content_parameters(template_content) + "%}")
     else:
         # handle block templates, capture content
         document_content = document_content.replace(match_content,

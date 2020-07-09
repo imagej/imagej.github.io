@@ -1,0 +1,1 @@
+<span class="devstatus">{{include.content}}</span>
