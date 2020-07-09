@@ -239,7 +239,7 @@ RandomAccessibleIntervalView< FloatType > view4 = Views.superIntervalView( view3
 
 The original `img` looks like this:
 
-![Imglib2views\_img.png‎](Imglib2views_img.png‎ "Imglib2views_img.png‎")
+![Imglib2views\_img.png‎](/images/pages/Imglib2views_img.png‎ "Imglib2views_img.png‎")"
 
 This is extended to infinity (using mirroring strategy) resulting in the
 unbounded `RandomAccessible view1`. A crop of `view1` looks like this:

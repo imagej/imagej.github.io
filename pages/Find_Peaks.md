@@ -21,7 +21,7 @@ list-of-update-sites content='update site' %}.
 ![Analysis of synthetic data plotted from a .csv file. CSV files can be
 imported into ImageJ by drag and drop, or by using
 <span style="border-bottom:1px dotted #ccc;">File▷ Import▷
-Results</span>. Once [options](#options "wikilink") are specified,
+Results</span>. Once [options](/images/pages/#options "wikilink")" are specified,
 coordinates of retrieved peaks are logged to the table of a new plot
 window](FindPeaksSnapshot.png
 "Analysis of synthetic data plotted from a .csv file. CSV files can be imported into ImageJ by drag and drop, or by using File▷ Import▷ Results. Once options are specified, coordinates of retrieved peaks are logged to the table of a new plot window")

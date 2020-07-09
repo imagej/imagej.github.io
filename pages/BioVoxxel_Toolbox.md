@@ -181,7 +181,7 @@ the count of objects, selectors and extracted features as well as
 display the individual results tables for the three different images
 (This is equal to run the "Analyze Particles..." on each of the images.
 
-![FeatureExtractor1.png](FeatureExtractor1.png "FeatureExtractor1.png")
+![FeatureExtractor1.png](/images/pages/FeatureExtractor1.png "FeatureExtractor1.png")"
 
 Status: plugin v1.0, can be run from the BioVoxxel Toolbox Menu,
 maintenance active
@@ -201,7 +201,7 @@ sizes, object size and object circularity to determine characteristics
 which include/exclude speckles and features from the analysis according
 to the entered parameters.
 
-![SpeckleInspector1.png](SpeckleInspector1.png "SpeckleInspector1.png")
+![SpeckleInspector1.png](/images/pages/SpeckleInspector1.png "SpeckleInspector1.png")"
 
 The macro gives different outputs. The optical output is an color-coded
 image, where positive features (lying inbetween the determined minimum
@@ -352,7 +352,7 @@ Output interpretation: You will get a stack with each thresholding
 method represented in a single stack slice. The following colors should
 help in interpreting the thresholding result:
 
-![ThresholdCheck.png](ThresholdCheck.png "ThresholdCheck.png")
+![ThresholdCheck.png](/images/pages/ThresholdCheck.png "ThresholdCheck.png")"
 
 **blue** = this is thresholded as background and also represents black
 or very dark areas in the original image, thus most likely beeing really
@@ -428,7 +428,7 @@ intensive, like the "Gaussian Weighted Median". The parameter setting is
 only needed for the "Bilateral Filter" (range radius) , "Mean Shift
 Filter" (Color Distance) and the "Linear Kuwahara" (line length).
 
-![Filter\_Check.png](Filter_Check.png "Filter_Check.png")
+![Filter\_Check.png](/images/pages/Filter_Check.png "Filter_Check.png")"
 
 Form: plugin
 
@@ -554,7 +554,7 @@ line over all images. If the \[Shift\] key is held down before and while
 going to \>BioVoxxel Icon \>Stack Line Plots the limit is set to 255 for
 8-bit images and 65535 for 16-bit images
 
-![StackLinePlots.png](StackLinePlots.png "StackLinePlots.png")
+![StackLinePlots.png](/images/pages/StackLinePlots.png "StackLinePlots.png")"
 
 Form: macro
 
@@ -589,7 +589,7 @@ version with artificial shot noise added. The lower pannels depict the
 noisy image after a median filter (radius=2) or after the Adaptive
 Filter (radius = 2 and tolerance set to 0.2) using a circle-like kernel.
 
-![AdaptiveFilter.png](AdaptiveFilter.png "AdaptiveFilter.png")
+![AdaptiveFilter.png](/images/pages/AdaptiveFilter.png "AdaptiveFilter.png")"
 
 Output: The filter will be applied directly on the input image. It is
 undoable (by pressing \[z\]).
@@ -696,7 +696,7 @@ the specified neighborhood radius around the centroid of each particle.
 "Particle Neighborhood" analyzes also an area around each particle with
 the specified radius as distance to the particle border.
 
-![NeighborAnalysis.png](NeighborAnalysis.png "NeighborAnalysis.png")
+![NeighborAnalysis.png](/images/pages/NeighborAnalysis.png "NeighborAnalysis.png")"
 
 Form: macro
 
@@ -831,7 +831,7 @@ a cluster is found and finally accepted as a cluster. This on the one
 hand leads to a certain bias but should enable the user to search for
 clusters of different sizes and densities.
 
-![ClusterIndicator.png](ClusterIndicator.png "ClusterIndicator.png")
+![ClusterIndicator.png](/images/pages/ClusterIndicator.png "ClusterIndicator.png")"
 
 Method: Circle ROIs of the specified size are initially distributed with
 sufficient overlap to cover the complete image. The cluster finding

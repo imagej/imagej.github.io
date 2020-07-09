@@ -20,12 +20,12 @@ There's a new modernized version of BoneJ available through the ImageJ
 
 ## Installation
 
-{% include logo size='24px' %} BoneJ was designed to work with plain
-[ImageJ 1.x](ImageJ_1.x "wikilink").
+{% include logo content='ImageJ1' size='24px' %} BoneJ was designed to
+work with plain [ImageJ 1.x](ImageJ_1.x "wikilink").
 
-{% include logo size='24px' %} BoneJ can be installed into
-[Fiji](Fiji "wikilink"), but you must **use the Java-6 version of Fiji,
-not the current Java-8 version**:
+{% include logo content='Fiji' size='24px' %} BoneJ can be installed
+into [Fiji](Fiji "wikilink"), but you must **use the Java-6 version of
+Fiji, not the current Java-8 version**:
 
   - Download the final Java-6 version of Fiji labeled “2017 May 30” from
     [here](Fiji/Downloads#Java_6 "wikilink").

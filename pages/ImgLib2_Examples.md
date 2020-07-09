@@ -143,7 +143,7 @@ In ImgLib2, all algorithms are implemented for abstract concepts like
 can be seen below, to display a **View** the exact same way we would
 also display an **Img**.
 
-![ImgLib2example1d.jpg](ImgLib2example1d.jpg "ImgLib2example1d.jpg")
+![ImgLib2example1d.jpg](/images/pages/ImgLib2example1d.jpg "ImgLib2example1d.jpg")"
 *Shows the original image, the View of an interval, as well as the by 90
 degree rotated version of the view. Note that only the original image in
 kept in memory, both Views are completely virtual.*
@@ -253,7 +253,7 @@ and a **CellImg** have different iteration orders. An **ArrayImg** is
 iterated linearly, while a **CellImg** is iterate cell-by-cell, but
 linearly within each cell.
 
-![ImgLib2example2b.png](ImgLib2example2b.png "ImgLib2example2b.png")
+![ImgLib2example2b.png](/images/pages/ImgLib2example2b.png "ImgLib2example2b.png")"
 *Shows the result if two Cursors are used that have a different
 iteration order. Here we are wrongly copying an ArrayImg (left) into a
 CellImg (right).*
@@ -464,7 +464,7 @@ In this case, one can request the ImagePlus and show it directly. It
 will, however, fail if **Type** and dimensionality is not supported by
 ImageJ and throw a **ImgLibException**.
 
-![ManySpheres.jpg](ManySpheres.jpg "ManySpheres.jpg") *Shows the result
+![ManySpheres.jpg](/images/pages/ManySpheres.jpg "ManySpheres.jpg")" *Shows the result
 of example 4a for the (a) two-dimensional, (b) three-dimensional and (c)
 four-dimensional case. The image series in (c) represents a movie of a
 three-dimensional rendering. The images of (b) and (c) were rendered
@@ -519,7 +519,7 @@ pixel), this example would fail as we would try to write image data
 outside of the defined boundary. **OutOfBoundsStrategies** which define
 how to handle such cases is discussed in example 5.
 
-![AllMinima.jpg](AllMinima.jpg "AllMinima.jpg") *Shows the result of the
+![AllMinima.jpg](/images/pages/AllMinima.jpg "AllMinima.jpg")" *Shows the result of the
 detection of local minima after the Gaussian blurring. (a) depicts the
 input image, (b) the blurred version (sigma=1) and (c) all local mimina
 drawn as circles with radius 1.*
@@ -552,7 +552,7 @@ correlations and constant value strategies are the most performant and
 might work well for simple operations or to avoid exceptions when
 accidental writing or reading outside of the Interval occurs.
 
-![OutOfBounds.jpg](OutOfBounds.jpg "OutOfBounds.jpg") *Illustrates the
+![OutOfBounds.jpg](/images/pages/OutOfBounds.jpg "OutOfBounds.jpg")" *Illustrates the
 effect of various OutOfBoundsStrategies. (a) shows out of bounds with a
 constant value, (b) shows a mirroring strategy, (c) shows the periodic
 strategy, and (d) shows a strategy that uses random values.*
@@ -589,7 +589,7 @@ gaussian convolution (variation 1), convolution using a different
 **Interval** (variation 3), and convolution of in a lower dimensionality
 than the image data (variation 4).
 
-![GaussExamples.jpg](GaussExamples.jpg "GaussExamples.jpg") *Shows the
+![GaussExamples.jpg](/images/pages/GaussExamples.jpg "GaussExamples.jpg")" *Shows the
 result of the four examples for Gaussian convolution. (a) shows a simple
 Gaussian convolution with sigma=8. (b) shows the same Gaussian
 convolution but using an OutOfBoundsConstantValue instead. (c) shows the
@@ -724,7 +724,7 @@ peak in the result image clearly marks the location of the template,
 while the computation time for the whole operation takes less than a
 second.
 
-![Fourier.jpg](Fourier.jpg "Fourier.jpg") *Shows the result and
+![Fourier.jpg](/images/pages/Fourier.jpg "Fourier.jpg")" *Shows the result and
 intermediate steps of the template matching using the Fourier space. In
 the upper panel you see the input image as well as the template that we
 use from matching. Below we show four different views of the Fast
@@ -762,7 +762,7 @@ In the example we magnify a given real interval in the
 **RealRandomAccessible** which is based on the interpolation on an
 **Img** and compare the results of all three interpolation methods.
 
-![Interpolation.jpg](Interpolation.jpg "Interpolation.jpg") *Shows the
+![Interpolation.jpg](/images/pages/Interpolation.jpg "Interpolation.jpg")" *Shows the
 result for three different interpolators when magnifying a small part of
 the image by 10x. The nearest neighbor interpolation is computed fastest
 and is the most versatile as it requires no computation but just a
@@ -815,7 +815,7 @@ into a **RandomAccessible**, define an **Interval** on it and display
 it. On the same *virtual* data we perform a Gaussian convolution and
 show it, too.
 
-![SparseImage1.jpg](SparseImage1.jpg "SparseImage1.jpg") *On the left
+![SparseImage1.jpg](/images/pages/SparseImage1.jpg "SparseImage1.jpg")" *On the left
 hand side it shows nearest-neighbor rendered random sparse data as
 created in example 8a. The right hand side shows the result of a
 Gaussian convolution, run directly on the virtual
@@ -832,7 +832,7 @@ In this example we sample an existing image at random locations and
 render the result using a nearest neighbor interpolation as well as a
 distance-weighted average of the k nearest neighbors.
 
-![SparseImage2.jpg](SparseImage2.jpg "SparseImage2.jpg")  
+![SparseImage2.jpg](/images/pages/SparseImage2.jpg "SparseImage2.jpg")"  
 *Shows the result of sparse sampling of an existing image using a
 varying number of random samples. The upper panel shows the rendering
 using nearest neighbor interpolation, the lower panel uses an

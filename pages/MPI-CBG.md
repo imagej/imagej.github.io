@@ -20,6 +20,6 @@ The MPI-CBG is also the place where the [Fiji](Fiji "wikilink") project
 was started and is still one of the key contributors to Fiji and its
 supporting infrastructure.
 
-![cbgbuilding.jpg](cbgbuilding.jpg "cbgbuilding.jpg")
+![cbgbuilding.jpg](/images/pages/cbgbuilding.jpg "cbgbuilding.jpg")"
 
 [Category:Location](Category:Location "wikilink")

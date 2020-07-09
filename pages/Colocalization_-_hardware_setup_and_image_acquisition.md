@@ -94,7 +94,7 @@ unavoidable and must be lived with, but understood all the same. 
 
 ### Blur
 
-![ColocBlur.gif](ColocBlur.gif "ColocBlur.gif")
+![ColocBlur.gif](/images/pages/ColocBlur.gif "ColocBlur.gif")"
 
 *`Definition:`*` The Fourier spectrum of the `  
 `image lacks proper high frequencies. `
@@ -153,7 +153,7 @@ see how it can help.
 
 ### Background
 
-![ColocBGnoise.gif](ColocBGnoise.gif "ColocBGnoise.gif")
+![ColocBGnoise.gif](/images/pages/ColocBGnoise.gif "ColocBGnoise.gif")"
 
 *`Definition:`*` Unspecific signal. `
 

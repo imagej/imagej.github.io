@@ -31,12 +31,12 @@ miss messages, and a full searchable history.
 |                                                          |                               |                                                   |
 | -------------------------------------------------------- | ----------------------------- | ------------------------------------------------- |
 | **Logo**                                                 | **Organization**              | **Chat rooms**                                    |
-| ![Imagej2-icon.png](Imagej2-icon.png "Imagej2-icon.png") | [ImageJ](ImageJ "wikilink")   | [imagej](https://gitter.im/orgs/imagej/rooms)     |
-| ![Fiji-icon.png](Fiji-icon.png "Fiji-icon.png")          | [Fiji](Fiji "wikilink")       | [fiji](https://gitter.im/orgs/fiji/rooms)         |
-| ![Knime-icon.png](Knime-icon.png "Knime-icon.png")       | [KNIME](KNIME "wikilink")     | [knime-ip](https://gitter.im/orgs/knime-ip/rooms) |
-| ![Imglib2-icon.png](Imglib2-icon.png "Imglib2-icon.png") | [ImgLib2](ImgLib2 "wikilink") | [imglib](https://gitter.im/orgs/imglib/rooms)     |
-| ![Scifio-icon.png](Scifio-icon.png "Scifio-icon.png")    | [SCIFIO](SCIFIO "wikilink")   | [scifio](https://gitter.im/orgs/scifio/rooms)     |
-| ![Scijava-icon.png](Scijava-icon.png "Scijava-icon.png") | [SciJava](SciJava "wikilink") | [scijava](https://gitter.im/orgs/scijava/rooms)   |
+| ![Imagej2-icon.png](/images/pages/Imagej2-icon.png "Imagej2-icon.png")" | [ImageJ](ImageJ "wikilink")   | [imagej](https://gitter.im/orgs/imagej/rooms)     |
+| ![Fiji-icon.png](/images/pages/Fiji-icon.png "Fiji-icon.png")"          | [Fiji](Fiji "wikilink")       | [fiji](https://gitter.im/orgs/fiji/rooms)         |
+| ![Knime-icon.png](/images/pages/Knime-icon.png "Knime-icon.png")"       | [KNIME](KNIME "wikilink")     | [knime-ip](https://gitter.im/orgs/knime-ip/rooms) |
+| ![Imglib2-icon.png](/images/pages/Imglib2-icon.png "Imglib2-icon.png")" | [ImgLib2](ImgLib2 "wikilink") | [imglib](https://gitter.im/orgs/imglib/rooms)     |
+| ![Scifio-icon.png](/images/pages/Scifio-icon.png "Scifio-icon.png")"    | [SCIFIO](SCIFIO "wikilink")   | [scifio](https://gitter.im/orgs/scifio/rooms)     |
+| ![Scijava-icon.png](/images/pages/Scijava-icon.png "Scijava-icon.png")" | [SciJava](SciJava "wikilink") | [scijava](https://gitter.im/orgs/scijava/rooms)   |
 
 ## IRC
 

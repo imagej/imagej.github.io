@@ -9,7 +9,7 @@ description: test description
 ---
 
 {% capture includecontent %} name = Icy | software = Icy | logo =
-![Icy-icon.png](Icy-icon.png "Icy-icon.png") | author =
+![Icy-icon.png](/images/pages/Icy-icon.png "Icy-icon.png")" | author =
 [QuIA](http://www.bioimageanalysis.org/) at [Institut
 Pasteur](http://www.pasteur.fr/en) | maintainer =
 [QuIA](http://www.bioimageanalysis.org/) at [Institut

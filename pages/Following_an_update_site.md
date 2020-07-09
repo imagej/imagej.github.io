@@ -29,7 +29,7 @@ First, start the [updater](updater "wikilink"):
 Click on the *Manage update sites* button to bring up the site
 management dialog:
 
-![Mamed-3.jpg](Mamed-3.jpg "Mamed-3.jpg")
+![Mamed-3.jpg](/images/pages/Mamed-3.jpg "Mamed-3.jpg")"
 
 If the update site you want to follow is listed, just click the checkbox
 next to its name. If it is not listed, you can add Click the *Add update
@@ -46,7 +46,7 @@ After you have selected your desired update site(s), close the dialog.
 The list of plugins that will be installed or updated from the chosen
 sites will now show up:
 
-![AddPluginSite-5.jpg](AddPluginSite-5.jpg "AddPluginSite-5.jpg")
+![AddPluginSite-5.jpg](/images/pages/AddPluginSite-5.jpg "AddPluginSite-5.jpg")"
 
 {% capture includecontent %} If an entry's action is **Update It**, that
 means it is changing an existing plugin. This action is dangerous and
@@ -65,7 +65,7 @@ You can select whether you want to install a particular plugin by
 clicking in the **Status/Action** column and changing the option - for
 example, select **Keep as-is** to avoid installing a clashing plugin.
 
-![AddPluginSite-6.jpg](AddPluginSite-6.jpg "AddPluginSite-6.jpg")
+![AddPluginSite-6.jpg](/images/pages/AddPluginSite-6.jpg "AddPluginSite-6.jpg")"
 
 Once you are happy with what will be installed, click on the *Apply
 Changes* button to download your updates.
@@ -82,11 +82,11 @@ least once. {% endcapture %}
 Restart ImageJ as instructed to finish the install. Check to see that
 the plugin was installed:
 
-![AddPluginSite-7.jpg](AddPluginSite-7.jpg "AddPluginSite-7.jpg")
+![AddPluginSite-7.jpg](/images/pages/AddPluginSite-7.jpg "AddPluginSite-7.jpg")"
 
 ...and that it works:
 
-![AddPluginSite-8.jpg](AddPluginSite-8.jpg "AddPluginSite-8.jpg")
+![AddPluginSite-8.jpg](/images/pages/AddPluginSite-8.jpg "AddPluginSite-8.jpg")"
 
 ...and that's all there is to it.
 

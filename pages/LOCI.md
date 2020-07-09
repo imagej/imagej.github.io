@@ -14,7 +14,7 @@ Instrumentation](http://loci.wisc.edu/), is an interdisciplinary
 biophotonics laboratory at the [University of
 Wisconsin-Madison](http://wisc.edu/).
 
-![ 250px | border](Loci-logo.png " 250px | border")
+![ 250px | border](/images/pages/Loci-logo.png " 250px | border")"
 
 LOCI plays a very active role in the ImageJ community:
 

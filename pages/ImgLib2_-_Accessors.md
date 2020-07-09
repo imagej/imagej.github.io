@@ -932,7 +932,7 @@ to the value computed by the **MandelbrotRealRandomAccess**. Then we
 **set()** the value of the former to the value of the latter.
 
 When you run the code you will see this: ![Mandelbrot
-fractal](mandelbrot-1.png "Mandelbrot fractal")
+fractal](/images/pages/mandelbrot-1.png "Mandelbrot fractal")"
 
 Because we have a **RealRandomAccess** you can zoom in indefinitely
 (until you hit the **double** precision limit). If you like, you can
@@ -944,7 +944,7 @@ final double scale = 0.000125;
 final double[] offset = new double[] { -1.3875, 0.045 };
 ```
 
-![Mandelbrot fractal](mandelbrot-2.png "Mandelbrot fractal")
+![Mandelbrot fractal](/images/pages/mandelbrot-2.png "Mandelbrot fractal")"
 
 ### Notes
 

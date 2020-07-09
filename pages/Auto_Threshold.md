@@ -120,11 +120,11 @@ some cases it might not be a good idea to segment each slice
 individually rather than with a single threshold for all slices (try the
 mri-stack.tif from the sample images to better understand this issue).
 
-![lymp.png](lymp.png "lymp.png")
+![lymp.png](/images/pages/lymp.png "lymp.png")"
 
 Original image
 
-![lympm2.png](lympm2.png "lympm2.png")
+![lympm2.png](/images/pages/lympm2.png "lympm2.png")"
 
 Try all methods.
 

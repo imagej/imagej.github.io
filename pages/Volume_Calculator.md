@@ -9,7 +9,7 @@ description: test description
 ---
 
 {| |style="vertical-align:top" |![Volume Calculator user
-interface.](VolCal.png "Volume Calculator user interface.") |}
+interface.](/images/pages/VolCal.png "Volume Calculator user interface.")" |}
 
 ## Introduction
 

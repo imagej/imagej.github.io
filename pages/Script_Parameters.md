@@ -60,7 +60,7 @@ script when the User Interface is available (e.g. from the script
 editor), the `name` parameter will automatically be harvested via a
 pop-up dialog:
 
-![ScriptParams.png](ScriptParams.png "ScriptParams.png")
+![ScriptParams.png](/images/pages/ScriptParams.png "ScriptParams.png")"
 
 We could also run this script
 [headlessly](Scripting_Headless "wikilink"), thanks to the general
@@ -310,6 +310,6 @@ print(myChoice123)
 print(myChoiceABC)
 ```
 
-![Input-styles.png](Input-styles.png "Input-styles.png")
+![Input-styles.png](/images/pages/Input-styles.png "Input-styles.png")"
 
 [Category:Scripting](Category:Scripting "wikilink")

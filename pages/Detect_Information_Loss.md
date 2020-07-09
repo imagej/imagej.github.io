@@ -26,7 +26,7 @@ the top of the image in the information bar change colour accordingly
 (the meta data of which channel is what colour was stored in the tiff
 file, but your images may or may not have that meta data\!)
 
-![OpenFluoCells.png](OpenFluoCells.png "OpenFluoCells.png")
+![OpenFluoCells.png](/images/pages/OpenFluoCells.png "OpenFluoCells.png")"
 
 To Begin with, we should split the three color channel images into
 separate windows so we can inspect them and manipulate them separately:
@@ -62,8 +62,8 @@ Select the FluorescentCells.tif image window and do menu item:
     x-ray crystallography for protein 3D structure and DNA/genome etc.
     sequencing. I don't know why biological imaging thinks its so
     special...
-    ![LossyJPEGCompressionArtifacts1.png](LossyJPEGCompressionArtifacts1.png
-    "LossyJPEGCompressionArtifacts1.png")
+    ![LossyJPEGCompressionArtifacts1.png](/images/pages/LossyJPEGCompressionArtifacts1.png
+    "LossyJPEGCompressionArtifacts1.png")"
 2.  **Intensity Saturation or Clipping or [Over
     Exposure:](wikipedia:Overexposure "wikilink")** Next we can have a
     look to see of the image has been acquired or manipulated in such a
@@ -93,8 +93,8 @@ Select the FluorescentCells.tif image window and do menu item:
     than that... you have no idea. Worse still, it is often true that
     you are most interested in the brightest objects... but these are
     the ones that the true intensity information has been lost for :-O
-    ![SaturatedDAPIHistogram.png](SaturatedDAPIHistogram.png
-    "SaturatedDAPIHistogram.png")
+    ![SaturatedDAPIHistogram.png](/images/pages/SaturatedDAPIHistogram.png
+    "SaturatedDAPIHistogram.png")"
 3.  **Incorrect Detector Offset** is a problem that occurs during image
     acquisition. The electronics that convert the signal that the
     detector produces when photons hit it must be turned into a number.
@@ -137,7 +137,7 @@ Select the FluorescentCells.tif image window and do menu item:
     analysis very difficult or impossible, for instance in the case of
     auto thresholding a 2 channel image for [Colocalization
     Analysis](ColocalizationAnalysis "wikilink").
-    ![ 700px](OffsetProblem.png " 700px")
+    ![ 700px](/images/pages/OffsetProblem.png " 700px")"
 
 Questions you should ask before quantifying information from images:
 

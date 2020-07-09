@@ -144,6 +144,6 @@ side-by-side. You can do this with:
 ... which will offer you a choice of tools. Here is a screenshot of
 using `git mergetool --tool=meld`:
 
-![Meld-example.png](Meld-example.png "Meld-example.png")
+![Meld-example.png](/images/pages/Meld-example.png "Meld-example.png")"
 
 [Category:Git](Category:Git "wikilink")

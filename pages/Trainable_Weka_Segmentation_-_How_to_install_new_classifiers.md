@@ -33,7 +33,7 @@ tutorial.
 To get started, from the main plugin GUI click on the Weka button (on
 the bottom left corner of the window):
 
-![TWS-GUI-ubuntu.png](TWS-GUI-ubuntu.png "TWS-GUI-ubuntu.png")
+![TWS-GUI-ubuntu.png](/images/pages/TWS-GUI-ubuntu.png "TWS-GUI-ubuntu.png")"
 
 This will launch the Weka GUI Chooser and, if it is the first time, a
 warning dialog will be displayed to warn you about the package manager:

@@ -15,7 +15,7 @@ discontinued in favor of [FLIMJ](FLIMJ "wikilink"). {% endcapture %}
 
 ## Introduction
 
-![SLIM-screenshot.png](SLIM-screenshot.png "SLIM-screenshot.png")
+![SLIM-screenshot.png](/images/pages/SLIM-screenshot.png "SLIM-screenshot.png")"
 
 [SLIM Curve](https://slim-curve.github.io/) is an exponential curve
 fitting library used for Fluorescent Lifetime Imaging (FLIM) and
@@ -93,7 +93,7 @@ settings of the fit. On the initial tab of the user interface panel
 entitled *Fit* you can choose what kind of fit and analysis you want to
 perform:
 
-![SLIM-UI-fit-tab.png](SLIM-UI-fit-tab.png "SLIM-UI-fit-tab.png")
+![SLIM-UI-fit-tab.png](/images/pages/SLIM-UI-fit-tab.png "SLIM-UI-fit-tab.png")"
 
   - *Region* allows you to fit the entire image, a single pixel, the sum
     of all pixels, or the sum of each ROI defined on the grayscale
@@ -602,8 +602,8 @@ classification are:
 8.  Add the ROI to ROI manager by pressing {% include key content='T'
     %}. Use it on overlay with lifetime image and start analyzing.
 
-![Weka\_module.JPG](Weka_module.JPG "Weka_module.JPG")
-![Overlay.JPG](Overlay.JPG "Overlay.JPG")
+![Weka\_module.JPG](/images/pages/Weka_module.JPG "Weka_module.JPG")"
+![Overlay.JPG](/images/pages/Overlay.JPG "Overlay.JPG")"
 
 ### Result comparison
 

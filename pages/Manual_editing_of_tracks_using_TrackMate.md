@@ -196,7 +196,7 @@ The selection in TrackScheme is share across TrackMate, so if you select
 one circle, it will be highlighted in the HyperStack viewer as well
 (circled in green).
 
-![TrackScheme\_Start.png](TrackScheme_Start.png "TrackScheme_Start.png")
+![TrackScheme\_Start.png](/images/pages/TrackScheme_Start.png "TrackScheme_Start.png")"
 
 TrackScheme launches with a simple style: each spot is represented with
 a circle. You can get more information by changing the style. Next to
@@ -209,7 +209,7 @@ Press it; after some time, each spot in TrackScheme will contain a
 thumbnail of the spot taken in the raw image. This is very handy to
 quickly detect detection problems.
 
-![TrackScheme\_Full.png](TrackScheme_Full.png "TrackScheme_Full.png")
+![TrackScheme\_Full.png](/images/pages/TrackScheme_Full.png "TrackScheme_Full.png")"
 
 ## TrackScheme in a nutshell
 

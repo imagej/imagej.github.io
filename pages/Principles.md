@@ -147,7 +147,7 @@ vertical and horizontal artifacts:
 
 ![Original (8-bit colormap)](Mandrill-orig.png
 "Original (8-bit colormap)")![Hue of the original
-image](Mandrill-hue-png.png "Hue of the original image")![Hue of the
+image](/images/pages/Mandrill-hue-png.png "Hue of the original image")"![Hue of the
 JPEG image (default ImageJ settings)](Mandrill-hue-jpg.png
 "Hue of the JPEG image (default ImageJ settings)")
 

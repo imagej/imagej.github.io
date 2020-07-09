@@ -214,7 +214,7 @@ be safe, check your emission filter sets don't allow in the wrong
 signal, and do **"sequential imaging"**, so you only excite and image
 one dye at a time.
 
-![ColocBleedThru.png](ColocBleedThru.png "ColocBleedThru.png")
+![ColocBleedThru.png](/images/pages/ColocBleedThru.png "ColocBleedThru.png")"
 
 ## Regions of interest (ROIs)
 
@@ -251,7 +251,7 @@ data set, using an ROI which roughly gets just the cell, the thresholds
 were calculated properly and the tM1 and tM2 are sensible and lower than
 1.00:
 
-![ColocWithROI.png](ColocWithROI.png "ColocWithROI.png")
+![ColocWithROI.png](/images/pages/ColocWithROI.png "ColocWithROI.png")"
 
 ## Other pitfalls
 

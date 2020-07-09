@@ -21,6 +21,6 @@ BMBF, and the Klaus Tschira Stiftung. The center was built on the joint
 interdisciplinary research program between [MPI-CBG](MPI-CBG "wikilink")
 and [MPI-PKS](https://www.pks.mpg.de).
 
-![csbdbuilding.jpg](csbdbuilding.jpg "csbdbuilding.jpg")
+![csbdbuilding.jpg](/images/pages/csbdbuilding.jpg "csbdbuilding.jpg")"
 
 [Category:Location](Category:Location "wikilink")

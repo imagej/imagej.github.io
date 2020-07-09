@@ -30,7 +30,7 @@ common problems.
 
 ## Location
 
-![ 250px | left](WID.jpg " 250px | left")
+![ 250px | left](/images/pages/WID.jpg " 250px | left")"
 
 [H.F. DeLuca
 Forum](http://discovery.wisc.edu/home/town-center/apply-to-reserve-town-center-spaces/large-rooms/h-f-deluca-forum/h-f-deluca-forum.cmsx)  
@@ -193,7 +193,7 @@ Abstract submissions were reviewed by the conference advisory committee:
 
 <td style="padding-top: 10px">
 
-![ x100px | top | link=LOCI](Loci-logo.png " x100px | top | link=LOCI")
+![ x100px | top | link=LOCI](/images/pages/Loci-logo.png " x100px | top | link=LOCI")"
 
 </td>
 

@@ -163,7 +163,7 @@ cropping an image) will be capable of altering the Model.
 Refactoring ImageJ to use an MVC design is a significant effort, but
 fortunately, preliminary work has already been done in this direction:
 Grant Harris has written a whitepaper
-(![ImageJX\_Mar09.pdf](ImageJX_Mar09.pdf "ImageJX_Mar09.pdf"))
+(![ImageJX\_Mar09.pdf](/images/pages/ImageJX_Mar09.pdf "ImageJX_Mar09.pdf")")
 describing his efforts thus far to deploy an interface-driven
 architecture for extensible, modular GUI support. With further
 development, we will transform ImageJ into a flexible library usable by
@@ -828,5 +828,5 @@ Examples of new applications facilitated by this grant’s technical aims:
 
 ## See also
 
-  - ![ImageJX\_Mar09.pdf](ImageJX_Mar09.pdf "ImageJX_Mar09.pdf"), the
+  - ![ImageJX\_Mar09.pdf](/images/pages/ImageJX_Mar09.pdf "ImageJX_Mar09.pdf")", the
     ImageJX whitepaper from 2008

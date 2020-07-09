@@ -30,11 +30,11 @@ following URL:
 
 ` `**`http://sites.imagej.net/Alex-krull/`**
 
-![LLTT\_Install4.jpg](LLTT_Install4.jpg "LLTT_Install4.jpg")
+![LLTT\_Install4.jpg](/images/pages/LLTT_Install4.jpg "LLTT_Install4.jpg")"
 
 ## Install the required files
 
-![LLTT\_Install5.jpg](LLTT_Install5.jpg "LLTT_Install5.jpg")
+![LLTT\_Install5.jpg](/images/pages/LLTT_Install5.jpg "LLTT_Install5.jpg")"
 
 Install or update all 6 items shown above by hitting **Apply changes**.
 Please restart Fiji afterwards.
@@ -43,7 +43,7 @@ Please restart Fiji afterwards.
 
 ## Load the data
 
-![OpenData.png](OpenData.png "OpenData.png")
+![OpenData.png](/images/pages/OpenData.png "OpenData.png")"
 
 To begin use Fiji to load the data to be used for tracking. Use
 whichever method you prefer in Fiji. The LLTT-plugin will work with
@@ -59,7 +59,7 @@ After the data is loaded, start the plugin by clicking:
 
 **plugins-\>Tracking-\>Low Light Tracking Tool**
 
-![LLTT\_Start1.jpg](LLTT_Start1.jpg "LLTT_Start1.jpg")
+![LLTT\_Start1.jpg](/images/pages/LLTT_Start1.jpg "LLTT_Start1.jpg")"
 
 ## Set global options
 
@@ -99,8 +99,8 @@ like normal. On the sides you see the two kymographs, which makes it
 easier to see movement over time. The control window will help you to
 organize your tracking activity.
 
-![Opendatasmall.png](Opendatasmall.png "Opendatasmall.png")
-![Controlwindownew.png](Controlwindownew.png "Controlwindownew.png")
+![Opendatasmall.png](/images/pages/Opendatasmall.png "Opendatasmall.png")"
+![Controlwindownew.png](/images/pages/Controlwindownew.png "Controlwindownew.png")"
 
 If you would like the windows to become larger or smaller, change the
 size of the main data window and then select **Arrange Windows**, from
@@ -169,7 +169,7 @@ Maximum Likelihood Algorithm**.
 
 ## Pick session options
 
-![SessionOptions.png](SessionOptions.png "SessionOptions.png")
+![SessionOptions.png](/images/pages/SessionOptions.png "SessionOptions.png")"
 
 After clicking **OK**, a new window will open. In this window you can
 choose a **σ** value, which denotes the standard deviation (in pixels)
@@ -199,7 +199,7 @@ You can then move them around, using drag and drop or edit them.
 Multiple objects can be selected by holding {% include key
 content='Shift' %} when selecting.
 
-![CreateDots.png](CreateDots.png "CreateDots.png")
+![CreateDots.png](/images/pages/CreateDots.png "CreateDots.png")"
 
 You can change a trace's label by clicking on the text in the label
 field or change the color by clicking on the colored area.
@@ -211,7 +211,7 @@ new traces. If at this point you find that the parameters you picked
 were less ideal you can change the parameters with the **Edit Object**
 selection from the **Edit** menu.
 
-![ObjectOption.png](ObjectOption.png "ObjectOption.png")
+![ObjectOption.png](/images/pages/ObjectOption.png "ObjectOption.png")"
 
 The settings you make here will effect the selected object in the very
 frame you are looking at.
@@ -233,14 +233,14 @@ the other.
 
 # Working with tracking results
 
-![Result1.png](Result1.png "Result1.png")
+![Result1.png](/images/pages/Result1.png "Result1.png")"
 
 You can watch the trace fill in the kymograph line as the tracking is in
 progress. If you see the tracking looks incorrect and lost the object,
 you can click on **Stop Tracking** and adjust the object location and
 the software will resume from the new starting point.
 
-![Result2.png](Result2.png "Result2.png")
+![Result2.png](/images/pages/Result2.png "Result2.png")"
 
 The table now contains more information, with the first frame of the
 trace, and the last frame. Double clicking on the ID\# of the object
@@ -301,7 +301,7 @@ value is only used for 3D data. Example: My pixel size for my data is
 100 nm and my slice thickness is 200 nm. I would then enter a value of
 2.
 
-![NewWindows.jpg](NewWindows.jpg "NewWindows.jpg")
+![NewWindows.jpg](/images/pages/NewWindows.jpg "NewWindows.jpg")"
 
 3D data is very similar to 2D data, there are just a few more windows
 that open when you start. The data window and the kymographs appears,
@@ -313,7 +313,7 @@ data window, change the z to the correct plane first.
 Otherwise, tracking function is the same. It is best to optimize the
 σ-value for 3D tracking and then use a fixed value to increase speed.
 
-![NewWithDot.jpg](NewWithDot.jpg "NewWithDot.jpg")
+![NewWithDot.jpg](/images/pages/NewWithDot.jpg "NewWithDot.jpg")"
 
 ## Using multiscale tracking for fast moving objects
 
@@ -325,7 +325,7 @@ To start tracking in multiscale mode hit the **Multiscale**.
 
 You can change the default behavior in the edit menu.
 
-![MScaleOptions.png](MScaleOptions.png "MScaleOptions.png")
+![MScaleOptions.png](/images/pages/MScaleOptions.png "MScaleOptions.png")"
 
 The algorithm builds a
 [pyramid](wikipedia:Pyramid_%28image_processing%29 "wikilink") by

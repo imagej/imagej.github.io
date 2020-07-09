@@ -24,7 +24,7 @@ software. The [native file format](#Technical_Documentation "wikilink")
 is open and XML-based. This plugin is Free Software (also known as Open
 Source software).
 
-![SNT Overview](SimpleNeuriteTracer2.png "SNT Overview")
+![SNT Overview](/images/pages/SimpleNeuriteTracer2.png "SNT Overview")"
 
 {% capture includecontent %} tip = You need a [Java 8-enabled
 installation](#Installation "wikilink") to run the latest version of

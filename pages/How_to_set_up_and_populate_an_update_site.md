@@ -49,7 +49,7 @@ password, use the link at the bottom of the wiki or click
 start the updater with {% include bc content='Help | Update' %} and
 click on the *Manage update sites* button:
 
-![Mamed-3.jpg](Mamed-3.jpg "Mamed-3.jpg")
+![Mamed-3.jpg](/images/pages/Mamed-3.jpg "Mamed-3.jpg")"
 
 ### Specifying your existing ImageJ Wiki account
 
@@ -99,7 +99,7 @@ you can create a directory in that web space and initialize it as an
 update site, too. Just call the updater with {% include bc content='Help
 | Update' %} and click the *Manage update sites* button:
 
-![Mamed-3.jpg](Mamed-3.jpg "Mamed-3.jpg")
+![Mamed-3.jpg](/images/pages/Mamed-3.jpg "Mamed-3.jpg")"
 
 Now press the *Add* button, provide a nick name for your update site,
 the URL of your web space, and *upload information*.

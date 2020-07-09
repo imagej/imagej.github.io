@@ -10,7 +10,7 @@ description: test description
 
 ## Select Type of Dataset
 
-![MVR\_define1.png](MVR_define1.png "MVR_define1.png")
+![MVR\_define1.png](/images/pages/MVR_define1.png "MVR_define1.png")"
 
 There are three types of datasets:
 
@@ -30,7 +30,7 @@ This dialog specifies of what your dataset consists of:
   - illumination directions
   - angles
 
-![MVR\_define2.png](MVR_define2.png "MVR_define2.png")
+![MVR\_define2.png](/images/pages/MVR_define2.png "MVR_define2.png")"
 
 ## Define Dataset 2/3
 
@@ -50,15 +50,15 @@ This dialog asks you several facts:
   - data container, smaller image stacks can use **ArrayImg**, bigger
     one should use **CellImg**
 
-![MVR\_define3.png](MVR_define3.png "MVR_define3.png")
+![MVR\_define3.png](/images/pages/MVR_define3.png "MVR_define3.png")"
 
 In case you selected the option, a list of found files will be presented
-![MVR\_define4.png](MVR_define4.png "MVR_define4.png")
+![MVR\_define4.png](/images/pages/MVR_define4.png "MVR_define4.png")"
 
 ## Define Dataset 3/3
 
 Finally the plugin shows you the calibration it read from the files or
-asks for it. ![MVR\_define5.png](MVR_define5.png "MVR_define5.png")
+asks for it. ![MVR\_define5.png](/images/pages/MVR_define5.png "MVR_define5.png")"
 
 ## Log File Output
 

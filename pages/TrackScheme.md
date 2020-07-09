@@ -13,7 +13,7 @@ pane, arranged vertically over time, as a Parisian subway train map.
 Each spot is displayed as a cell in the map. Each cell displays a
 thumbnail of the spot.
 
-![TrackScheme\_Start.png](TrackScheme_Start.png "TrackScheme_Start.png")
+![TrackScheme\_Start.png](/images/pages/TrackScheme_Start.png "TrackScheme_Start.png")"
 
 ## TrackScheme in a nutshell
 

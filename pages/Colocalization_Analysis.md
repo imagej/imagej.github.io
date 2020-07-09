@@ -117,7 +117,7 @@ aside, there is another very good reason to require scatter plots: the
 perception of human eyes and brain can be fooled very easily. Just have
 a look at this image:
 
-![SpiralsRGY.png](SpiralsRGY.png "SpiralsRGY.png")
+![SpiralsRGY.png](/images/pages/SpiralsRGY.png "SpiralsRGY.png")"
 
 Most people might think that the image contains 4 distinct colours: 2
 sets of thin spirals are in dark red and dark green, and 2 thick
@@ -144,10 +144,10 @@ cytofluorograms is that they actually show the thing you are looking for
 and talking about - the correlation (or not) between the intensities of
 the 2 colour channels of the pixels over space.
 
-![Ch1coloc.gif](Ch1coloc.gif "Ch1coloc.gif")
-![Ch2coloc.jpg](Ch2coloc.jpg "Ch2coloc.jpg")
-![Scatterplotcoloc.jpg](Scatterplotcoloc.jpg "Scatterplotcoloc.jpg")
-![ColocQuadrants.jpg](ColocQuadrants.jpg "ColocQuadrants.jpg")
+![Ch1coloc.gif](/images/pages/Ch1coloc.gif "Ch1coloc.gif")"
+![Ch2coloc.jpg](/images/pages/Ch2coloc.jpg "Ch2coloc.jpg")"
+![Scatterplotcoloc.jpg](/images/pages/Scatterplotcoloc.jpg "Scatterplotcoloc.jpg")"
+![ColocQuadrants.jpg](/images/pages/ColocQuadrants.jpg "ColocQuadrants.jpg")"
 
 In the scatterplot or 2D Histogram (Thanks Tony Collins for this nice
 figure) the two intensity values for each pixel or voxel are plotted
@@ -186,7 +186,7 @@ dye, since they have broad emission spectra not a single wavelength
 corresponding to a certain "color". If I want to show DAPI in green and
 EGFP as magenta, there is nothing "wrong" about that.
 
-![SplitChannels.png](SplitChannels.png "SplitChannels.png")
+![SplitChannels.png](/images/pages/SplitChannels.png "SplitChannels.png")"
 
 ## Colocalization analysis using Coloc 2
 
@@ -336,8 +336,8 @@ the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot"
 others off. You can explore the options in Set options. Turn ALL the
 options on the first time you use it, so you see what it can do.
 
-![Coloc1.png](Coloc1.png "Coloc1.png") ![Coloc1b.png](Coloc1b.png
-"Coloc1b.png") ![Coloc2.png](Coloc2.png "Coloc2.png") \<\\p\>
+![Coloc1.png](/images/pages/Coloc1.png "Coloc1.png")" ![Coloc1b.png](Coloc1b.png
+"Coloc1b.png") ![Coloc2.png](/images/pages/Coloc2.png "Coloc2.png")" \<\\p\>
 
 1.  It generates a 2D Histogram / Scatterplot / Fluorogram. this is a
     really good way to visualise the correlation of the pixel
@@ -432,18 +432,18 @@ ALWAYS do after calculating the thresholded Manders coefficients and the
 scatterplot). It is in the menus at {% include bc content='Analyze |
 Colocalization | Colocalization Test' %}
 
-![ColocTestGUI1.png](ColocTestGUI1.png "ColocTestGUI1.png")
+![ColocTestGUI1.png](/images/pages/ColocTestGUI1.png "ColocTestGUI1.png")"
 
 Choose the correct Channel 1 and Channel 2 images stacks from the drop
 down lists. Make sure "Current Slice Only" is off, and "Keep Example
 Randomized Image" and Show All R values" are on. Then click "OK"
 
-![ColocTestGUI2.png](ColocTestGUI2.png "ColocTestGUI2.png")
+![ColocTestGUI2.png](/images/pages/ColocTestGUI2.png "ColocTestGUI2.png")"
 
 The results window will then display the calculated P-value, and some
 other details of the test calculation.
 
-![ColocTestResult.png](ColocTestResult.png "ColocTestResult.png")
+![ColocTestResult.png](/images/pages/ColocTestResult.png "ColocTestResult.png")"
 
 The Costes method for [Statistical
 Significance](wikipedia:Statistical_significance "wikilink") relies on

@@ -345,7 +345,7 @@ further helpful comments in the script itself.
 
 Some example output:
 
-![Example anaglyph image](Anaglyph.png "Example anaglyph image")
+![Example anaglyph image](/images/pages/Anaglyph.png "Example anaglyph image")"
 
 ## Script Parameters
 

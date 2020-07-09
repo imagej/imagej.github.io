@@ -14,7 +14,7 @@ page](http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:sta
 
 |                                                                                                                     |
 | ------------------------------------------------------------------------------------------------------------------- |
-| ![Example of AnalyzeSkeleton performance](Analyze_skeleton_09_13_2009.png "Example of AnalyzeSkeleton performance") |
+| ![Example of AnalyzeSkeleton performance](/images/pages/Analyze_skeleton_09_13_2009.png "Example of AnalyzeSkeleton performance")" |
 
 ## General Description
 
@@ -174,7 +174,7 @@ display the results of both, the skeletonization and the analysis:
 
 |                                                                                                                                                                            |                                                                                                                                                                                                            |                                                                                                                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Smooth (by 3D Gaussian filter) bat cochlea volume rendered in the viewer](Bat_cochlea_3D.gif "Smooth (by 3D Gaussian filter) bat cochlea volume rendered in the viewer") | ![3D skeleton of bat cochlea volume rendered in the viewer after voxel classification](Movie_skeleton_rendering.gif "3D skeleton of bat cochlea volume rendered in the viewer after voxel classification") | ![Bat cochlea volume rendered in the viewer with its corresponding classified skeleton](Movie_bat_skel.gif "Bat cochlea volume rendered in the viewer with its corresponding classified skeleton") |
+| ![Smooth (by 3D Gaussian filter) bat cochlea volume rendered in the viewer](/images/pages/Bat_cochlea_3D.gif "Smooth (by 3D Gaussian filter) bat cochlea volume rendered in the viewer")" | ![3D skeleton of bat cochlea volume rendered in the viewer after voxel classification](/images/pages/Movie_skeleton_rendering.gif "3D skeleton of bat cochlea volume rendered in the viewer after voxel classification")" | ![Bat cochlea volume rendered in the viewer with its corresponding classified skeleton](/images/pages/Movie_bat_skel.gif "Bat cochlea volume rendered in the viewer with its corresponding classified skeleton")" |
 
 ## Scripting AnalyzeSkeleton
 

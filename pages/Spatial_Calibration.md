@@ -45,8 +45,8 @@ head](Image:Disc60xwithoutoptovar.gif "wikilink")
 6.  Now turn on the "Global" option by clicking the check box, so all
     open images will take the same spatial calibration when you click
     OK. (If not then only the image with the line selection is
-    calibrated. ![SpatialCalibrationSS1.png](SpatialCalibrationSS1.png
-    "SpatialCalibrationSS1.png")
+    calibrated. ![SpatialCalibrationSS1.png](/images/pages/SpatialCalibrationSS1.png
+    "SpatialCalibrationSS1.png")"
 7.  Now you will see that the test image is spatially calibrated. In the
     info bar at the top of the image, the numbers have spatial units\!
     Notice the (G) in the name bar of both the images. That means
@@ -54,8 +54,8 @@ head](Image:Disc60xwithoutoptovar.gif "wikilink")
 8.  Now make a line or area selection. If you use the measure function
     {% include bc content='Analyze | Measure' %} or {% include key
     content='Ctrl|M' %}, the results will be spatially calibrated.
-    ![SpatialCalibrationSS2.png](SpatialCalibrationSS2.png
-    "SpatialCalibrationSS2.png")
+    ![SpatialCalibrationSS2.png](/images/pages/SpatialCalibrationSS2.png
+    "SpatialCalibrationSS2.png")"
 
 If you want to see the spatial calibration of an image, or even change
 it manually, you can use the "Image-Properties" menu function to view
@@ -64,7 +64,7 @@ and change the xyz voxel sizes, time calibration, number of z slices,
 rearrange the dimensionality of a stack of images (also, use the
 "Image-Hyperstacks" menu item functions for that).
 
-![ImageProperties.png](ImageProperties.png "ImageProperties.png")
+![ImageProperties.png](/images/pages/ImageProperties.png "ImageProperties.png")"
 
   - Q) Can we measure the real distance between the spots on the test
     image?

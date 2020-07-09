@@ -547,7 +547,7 @@ registered time series
 
 ### Image Fusion and blending
 
-![<b>Figure 3:</b> Image fusion](Blending.jpg "Figure 3: Image fusion")
+![<b>Figure 3:</b> Image fusion](/images/pages/Blending.jpg "Figure 3: Image fusion")"
 The registered views can be combined to create a single isotropic 3d
 image. An effective fusion algorithm must ensure that each view
 contributes to the final fused volume only useful sharp image data

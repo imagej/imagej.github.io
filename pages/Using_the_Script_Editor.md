@@ -65,7 +65,7 @@ include learn content='scripting' %}
 
 To get started, start up the script editor:
 
-![Script-Editor-new.jpg](Script-Editor-new.jpg "Script-Editor-new.jpg")
+![Script-Editor-new.jpg](/images/pages/Script-Editor-new.jpg "Script-Editor-new.jpg")"
 
 There is also the keyboard shortcut {% include key content='\[' %} (open
 square bracket) to open the editor.
@@ -89,7 +89,7 @@ languages.
 Once you are satisfied with the script, run it. This does not require
 saving, but of course you should save your script later when it works.
 
-![Script-Editor-run.jpg](Script-Editor-run.jpg "Script-Editor-run.jpg")
+![Script-Editor-run.jpg](/images/pages/Script-Editor-run.jpg "Script-Editor-run.jpg")"
 
 Note that while the script is running, the window title shows the
 tell-tale *(Running)*.

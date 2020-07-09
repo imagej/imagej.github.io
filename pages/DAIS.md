@@ -10,8 +10,8 @@ description: test description
 
 ## The Dresden Analysis-of-Images Suite
 
-![Dais\_csbd\_color.png](Dais_csbd_color.png "Dais_csbd_color.png")
-![DeNBI\_Logo\_rgb.png](DeNBI_Logo_rgb.png "DeNBI_Logo_rgb.png") The
+![Dais\_csbd\_color.png](/images/pages/Dais_csbd_color.png "Dais_csbd_color.png")"
+![DeNBI\_Logo\_rgb.png](/images/pages/DeNBI_Logo_rgb.png "DeNBI_Logo_rgb.png")" The
 Dresden Analysis-of-Images Suite
 ([DAIS](http://dais.bioimagecomputing.com)) is a partner project of
 [CIBI](https://www.denbi.de/network/center-for-integrative-bioinformatics-cibi/21-about/508-portfolio-of-center-for-integrative-bioinformatics-cibi)

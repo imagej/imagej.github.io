@@ -34,7 +34,7 @@ The Glasbey LUT has numerous uses. It is ideal when coloring a
 "labeling" of integer-coded regions, since each region will then appear
 obviously distinct:
 
-![Glasbey-labeling.png](Glasbey-labeling.png "Glasbey-labeling.png")
+![Glasbey-labeling.png](/images/pages/Glasbey-labeling.png "Glasbey-labeling.png")"
 
 ## JPEG artifacts
 

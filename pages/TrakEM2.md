@@ -295,7 +295,7 @@ segmentation type.](Neuronal-arbors-1.png
 with TrakEM2 using the [manually segmentated data
 set](http://www.ini.uzh.ch/~acardona/data.html).](TrakEM2-arealists.png
 "Neuronal arbors from serial section electron microscopy reconstructed with TrakEM2 using the manually segmentated data set.")
-![[TrakEM2](TrakEM2 "wikilink") showing one section of a serial section
+![[TrakEM2](/images/pages/TrakEM2 "wikilink")" showing one section of a serial section
 transmission electron microscopy (ssTEM) data set, with numerous
 neuronal arbors reconstructed using
 [treelines](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#trees)

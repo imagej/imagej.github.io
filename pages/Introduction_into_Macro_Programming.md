@@ -342,7 +342,7 @@ Record...' %} and perform some actions. These actions will be recorded
 in the recorder window, and you can hit the *Create* button to open the
 recorded instructions in an editor:
 
-![Macro\_recorder.png](Macro_recorder.png "Macro_recorder.png")
+![Macro\_recorder.png](/images/pages/Macro_recorder.png "Macro_recorder.png")"
 
 In some cases, you might need to edit the recorded macro to make it
 usable with other images than the one you used to record the macro with.

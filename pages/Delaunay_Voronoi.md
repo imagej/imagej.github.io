@@ -53,7 +53,7 @@ This plugin operates on a point selection consisting of multiple points.
 
 The plugin shows this dialog when it is called:
 
-![Delaunay-dialog.png](Delaunay-dialog.png "Delaunay-dialog.png")
+![Delaunay-dialog.png](/images/pages/Delaunay-dialog.png "Delaunay-dialog.png")"
 
 Options include:
 

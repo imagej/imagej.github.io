@@ -12,7 +12,7 @@ description: test description
 
 |                                                                                               |                                                                                                               |
 | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| ![Smoothed bat cochlea volume](Smoothed-bat-cochlea-volume.gif "Smoothed bat cochlea volume") | ![3D skeleton from bat cochlea volume](Skeleton-bat-cochlea-volume.gif "3D skeleton from bat cochlea volume") |
+| ![Smoothed bat cochlea volume](/images/pages/Smoothed-bat-cochlea-volume.gif "Smoothed bat cochlea volume")" | ![3D skeleton from bat cochlea volume](/images/pages/Skeleton-bat-cochlea-volume.gif "3D skeleton from bat cochlea volume")" |
 
 ## General Description
 

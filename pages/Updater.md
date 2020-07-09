@@ -30,7 +30,7 @@ automatically run when all the following conditions are met:
 If there were updates since the Updater was run the last time, the user
 will be asked whether you want to run the Updater now or later:
 
-![Up-to-date-check.png](Up-to-date-check.png "Up-to-date-check.png")
+![Up-to-date-check.png](/images/pages/Up-to-date-check.png "Up-to-date-check.png")"
 
 In case you do not want to run the Updater upon startup, you can choose
 *Never*.
@@ -45,7 +45,7 @@ The Updater has two modes, the *Easy Mode* and the *Advanced Mode*. In
 the easy mode, you will only see the files that can be updated. The easy
 mode looks like this:
 
-![Updater-easy-mode.png](Updater-easy-mode.png "Updater-easy-mode.png")
+![Updater-easy-mode.png](/images/pages/Updater-easy-mode.png "Updater-easy-mode.png")"
 
 For technical reasons, a restart of ImageJ is required before the
 changes take effect. You can read about technical details

@@ -18,7 +18,7 @@ what criterion is used to select the best orientation.
 
 Example:
 
-![Noisy-lines.png](Noisy-lines.png "Noisy-lines.png")
+![Noisy-lines.png](/images/pages/Noisy-lines.png "Noisy-lines.png")"
 
 With 30 angles at line length 17 with the criterion *Variance*, the
 filtered image looks like this:

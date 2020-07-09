@@ -46,7 +46,8 @@ Note: This list is only irregularly updated.
     Swedlow](http://www.lifesci.dundee.ac.uk/people/jason-swedlow)\[7\]\[8\]
     (OME)
 
-\=== {% include logo size='32px' %}[ImageJ](ImageJ "wikilink") ===
+\=== {% include logo content='ImageJ' size='32px'
+%}[ImageJ](ImageJ "wikilink") ===
 
   - {% include person content='Rasband' %}\[9\] (lead, [ImageJ
     1.x](ImageJ_1.x "wikilink"))
@@ -64,7 +65,8 @@ Note: This list is only irregularly updated.
   - {% include person content='Lentz' %}\[21\] (Nov 2009-Feb 2011)
   - See also [ImageJ forum heroes](http://forum.imagej.net/users)
 
-\=== {% include logo size='32px' %}[ImgLib2](ImgLib2 "wikilink") ===
+\=== {% include logo content='ImgLib2' size='32px'
+%}[ImgLib2](ImgLib2 "wikilink") ===
 
   - {% include person content='Pietzsch' %}\[22\] (lead)
   - {% include person content='StephanP' %}\[23\]\[24\]
@@ -74,7 +76,8 @@ Note: This list is only irregularly updated.
 
 <div style="float: left">
 
-\=== {% include logo size='32px' %}[Fiji](Fiji "wikilink") ===
+\=== {% include logo content='Fiji' size='32px'
+%}[Fiji](Fiji "wikilink") ===
 
   - {% include person content='Rueden' %}\[27\] (lead)
   - {% include person content='JeanYvesTinevez' %}\[28\]
@@ -109,18 +112,19 @@ Note: This list is only irregularly updated.
 
 <div style="float: left">
 
-\=== {% include logo size='32px' %}[SCIFIO](SCIFIO "wikilink") ===
+\=== {% include logo content='SCIFIO' size='32px'
+%}[SCIFIO](SCIFIO "wikilink") ===
 
   - {% include person content='Rueden' %}\[55\] (lead)
   - {% include person content='Hinerm' %}\[56\] (former, founder)
 
-\=== {% include logo size='32px'
+\=== {% include logo content='CellProfiler' size='32px'
 %}[CellProfiler](CellProfiler "wikilink") ===
 
   - {% include person content='0x00B1' %}\[57\] (lead)
   - {% include person content='Leek' %}\[58\] (former)
 
-\=== {% include logo size='32px' %}[KNIME Image
+\=== {% include logo content='KNIME' size='32px' %}[KNIME Image
 Processing](KNIME "wikilink") ===
 
   - {% include person content='Dietzc' %}\[59\]\[60\] (lead)
@@ -129,7 +133,8 @@ Processing](KNIME "wikilink") ===
   - {% include person content='Squareys' %}\[64\]\[65\]
   - {% include person content='Gab1one' %}\[66\]\[67\]
 
-\=== {% include logo size='32px' %}[OME](OME "wikilink") ===
+\=== {% include logo content='OME' size='32px' %}[OME](OME "wikilink")
+===
 
   - {% include person content='Moore' %}\[68\]\[69\] (co-lead)
   - {% include person content='jburel' %}\[70\] (co-lead)

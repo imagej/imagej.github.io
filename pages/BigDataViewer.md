@@ -87,7 +87,7 @@ experimental.
 Assuming you downloaded the *drosophila melanogaster* example dataset,
 you should see something like this:
 
-![bdv-bdv-start.png](bdv-bdv-start.png "bdv-bdv-start.png")
+![bdv-bdv-start.png](/images/pages/bdv-bdv-start.png "bdv-bdv-start.png")"
 
 On startup, the middle slice of the first source (angle) is shown. You
 can browse the stack using the keyboard or the mouse. To get started,
@@ -149,7 +149,7 @@ nearest-neighbor and trilinear interpolation schemes. The difference is
 clearly visible when you zoom in such that individual source pixels are
 visible.
 
-![bdv-interpolation.png](bdv-interpolation.png "bdv-interpolation.png")
+![bdv-interpolation.png](/images/pages/bdv-interpolation.png "bdv-interpolation.png")"
 
 Trilinear interpolation results in smoother images but is a bit more
 expensive computationally. Nearest-neighbor is faster but looks more
@@ -166,7 +166,7 @@ the BigDataViewer menu to bring up a dialog to control source
 visibility. You can also bring up this dialog by the shortcut {% include
 key content='F6' %}.
 
-![bdv-visibility.png](bdv-visibility.png "bdv-visibility.png")
+![bdv-visibility.png](/images/pages/bdv-visibility.png "bdv-visibility.png")"
 
 Using the current source checkboxes (A in the figure above), you can
 switch between available sources. The first ten sources can also be made
@@ -184,7 +184,7 @@ Whether in normal or fused mode, the (unselectable) boxes (D) provide
 feedback on which sources are actually currently displayed. Also the
 main window provides feedback:
 
-![bdv-overlays-1.png](bdv-overlays-1.png "bdv-overlays-1.png")
+![bdv-overlays-1.png](/images/pages/bdv-overlays-1.png "bdv-overlays-1.png")"
 
 In the top-left corner an overview of the dataset is displayed (E).
 Visible sources are displayed as green/magenta wireframe boxes,
@@ -218,7 +218,7 @@ Source grouping is handled in the visibility and grouping dialog, too
 (menu {% include bc content='Settings | Visibility & Grouping' %} or
 shortcut {% include key content='F6' %}).
 
-![bdv-grouping.png](bdv-grouping.png "bdv-grouping.png")
+![bdv-grouping.png](/images/pages/bdv-grouping.png "bdv-grouping.png")"
 
 The lower half of the dialog is dedicated to grouping. There are 10
 groups available. They are named "group 1" through "group 10" initially,
@@ -252,7 +252,7 @@ deactivate groups 1 through 10 for visibility in fused mode.
 If grouping is enabled, the name of the current group is shown at the
 top of the main window.
 
-![bdv-overlays-2.png](bdv-overlays-2.png "bdv-overlays-2.png")
+![bdv-overlays-2.png](/images/pages/bdv-overlays-2.png "bdv-overlays-2.png")"
 
 ### Adjusting Brightness and Color
 
@@ -261,7 +261,7 @@ select {% include bc content='Settings | Brightness & Color' %} or press
 the shortcut {% include key content='S' %}. This brings up the
 brightness and color settings dialog.
 
-![bdv-brightness-1.png](bdv-brightness-1.png "bdv-brightness-1.png")
+![bdv-brightness-1.png](/images/pages/bdv-brightness-1.png "bdv-brightness-1.png")"
 
 The *min* and *max* sliders (A) can be used to adjust the brightness and
 contrast. They represent minimum and maximum source values that are
@@ -286,7 +286,7 @@ the sliders can be adjusted. In the following screenshot, the leftmost
 value of the slider range has been set to 0 and the rightmost value to
 2000, making the sliders much more useful.
 
-![bdv-brightness-2.png](bdv-brightness-2.png "bdv-brightness-2.png")
+![bdv-brightness-2.png](/images/pages/bdv-brightness-2.png "bdv-brightness-2.png")"
 
 So far, all sources share the same *min* and *max* settings. However,
 these can also be adjusted for each individual source or for groups of
@@ -300,7 +300,7 @@ If you uncheck one of the sources, it will move to its own new
 individually. The sliders of new group are initialized as a copy of the
 old group.
 
-![bdv-brightness-3.png](bdv-brightness-3.png "bdv-brightness-3.png")
+![bdv-brightness-3.png](/images/pages/bdv-brightness-3.png "bdv-brightness-3.png")"
 
 Sources can be assigned to *min-max-groups* by checking/unchecking the
 checkboxes. The rule is that every source is always assigned to exactly
@@ -317,7 +317,7 @@ Clicking a button brings up a color dialog, where you can choose a color
 for that particular source. In the following screenshot, the sources
 have been colored magenta and green.
 
-![bdv-brightness-4.png](bdv-brightness-4.png "bdv-brightness-4.png")
+![bdv-brightness-4.png](/images/pages/bdv-brightness-4.png "bdv-brightness-4.png")"
 
 ### Bookmarking Locations and Orientations
 
@@ -336,7 +336,7 @@ bookmarks. When you press {% include key content='Shift|B' %}, the
 message "**set bookmark:**" appears in the lower right corner of the
 main window, prompting to press the bookmark shortcut next.
 
-![bdv-set-bookmark.png](bdv-set-bookmark.png "bdv-set-bookmark.png")
+![bdv-set-bookmark.png](/images/pages/bdv-set-bookmark.png "bdv-set-bookmark.png")"
 
 Now press the key you want to use as a shortcut, for example {% include
 key content='A' %}. The prompt message will change to "**set bookmark:
@@ -394,7 +394,7 @@ want to apply other ImageJ algorithms or plugins to the images? You can
 open individual images from a dataset as ImageJ stacks using {% include
 bc content='File | Import | BigDataViewer...' %} from the Fiji menu.
 
-![bdv-import.png](bdv-import.png "bdv-import.png")
+![bdv-import.png](/images/pages/bdv-import.png "bdv-import.png")"
 
 Select the XML file of a dataset, then choose the time-point and source
 (setup) index of the image you want to open. If you enable the *"open as
@@ -539,7 +539,7 @@ bc content='File | Open Samples | T1 Head (2.4M, 16-bits)' %}. Selecting
 {% include bc content='Plugins | BigDataViewer | Export Current Image as
 XML/HDF5' %} brings up the following dialog.
 
-![bdv-export-stack.png](bdv-export-stack.png "bdv-export-stack.png")
+![bdv-export-stack.png](/images/pages/bdv-export-stack.png "bdv-export-stack.png")"
 
 Parts (A) and (C) of the dialog are optional, so we will explain (B) and
 (D) first.
@@ -681,7 +681,7 @@ To convert the dataset to HDF5, select {% include bc content='Plugins |
 Multiview Reconstruction | Resave | As HDF5' %} form the Fiji menu. This
 brings up the following dialog.
 
-![bdv-mvr-export1b.png](bdv-mvr-export1b.png "bdv-mvr-export1b.png")
+![bdv-mvr-export1b.png](/images/pages/bdv-mvr-export1b.png "bdv-mvr-export1b.png")"
 
 At the top of the dialog, select the XML file of the dataset you want to
 convert to HDF5. In the lower part of the dialog, you can select which
@@ -694,7 +694,7 @@ you have determined what you want to convert press *OK*.
 This brings up the next dialog, in which you need to specify the export
 path and options.
 
-![bdv-mvr-export2.png](bdv-mvr-export2.png "bdv-mvr-export2.png")
+![bdv-mvr-export2.png](/images/pages/bdv-mvr-export2.png "bdv-mvr-export2.png")"
 
 These parameters are the same as discussed in the previous section: If
 you want to specify custom mipmap settings, you can do so in the top

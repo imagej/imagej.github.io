@@ -476,7 +476,7 @@ sure the input image calibration is correct when you call the plugin.
 ##### Classifier options
 
 ![Classifier selection in the Trainable Weka Segmentation [Settings
-dialog](Advanced_Weka_Segmentation#Settings "wikilink").](AWS-Classifier-selection.png
+dialog](/images/pages/Advanced_Weka_Segmentation#Settings "wikilink")".](AWS-Classifier-selection.png
 "Classifier selection in the Trainable Weka Segmentation Settings dialog.")
 The default classifier is
 [FastRandomForest](https://code.google.com/p/fast-random-forest/), a

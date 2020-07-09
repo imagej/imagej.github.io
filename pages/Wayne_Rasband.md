@@ -15,7 +15,7 @@ rasband | linkedin = in/waynerasband
 {% endcapture %}
 
 {% include user-box content=includecontent %}
-![Wayne-rasband.jpg](Wayne-rasband.jpg "Wayne-rasband.jpg") Wayne
+![Wayne-rasband.jpg](/images/pages/Wayne-rasband.jpg "Wayne-rasband.jpg")" Wayne
 Rasband was a software developer at the National Institutes of Health
 (NIH) for 40 years. He retired in 2010 but continues to work on ImageJ
 as an NIH volunteer. He fixes bugs, answers questions and adds features

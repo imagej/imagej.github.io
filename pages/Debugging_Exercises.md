@@ -140,7 +140,7 @@ To get started in this exercise, open up the source file -
 `E1BasicBreakpoints` - and *run* it to get an idea of what's going on.
 We should see a simple stack trace:
 
-![E1StackTrace.png](E1StackTrace.png "E1StackTrace.png")
+![E1StackTrace.png](/images/pages/E1StackTrace.png "E1StackTrace.png")"
 
 [Stack traces](Wikipedia:Stack_trace "wikilink") are a common starting
 point for debugging, as they are typically automatically produced when
@@ -208,7 +208,7 @@ expression on-demand, without changing the source.
 Start by opening the `E2EffectiveExpressions` source and running it.
 Like the previous exercise, we have a stack trace to start from:
 
-![E2StackTrace.png](E2StackTrace.png "E2StackTrace.png")
+![E2StackTrace.png](/images/pages/E2StackTrace.png "E2StackTrace.png")"
 
 Try setting a breakpoint on the conditional line:
 
@@ -299,7 +299,7 @@ there's something of interest to see.
 Start by opening the `E3ConditionalCrisis` source and running it. This
 time our console output looks a bit different:
 
-![E3StackTrace.png](E3StackTrace.png "E3StackTrace.png")
+![E3StackTrace.png](/images/pages/E3StackTrace.png "E3StackTrace.png")"
 
 In addition to the exception stack trace, the program itself appears to
 have found an invalid object, causing the processing to go unfinished.
@@ -320,7 +320,7 @@ i++;
 
 Then try the following:
 
-![Setting a hit count](E3CountBreakpoint.png "Setting a hit count")
+![Setting a hit count](/images/pages/E3CountBreakpoint.png "Setting a hit count")"
 
 1.  Open the *Breakpoints* window
 2.  Right-click our breakpoint and select *Breakpoint Properties...*
@@ -421,7 +421,7 @@ So, you can now run the `E4 - Print ConsoleService` command either via
 the menus or [command finder](Command_Finder "wikilink"). You should get
 an exception:
 
-![E4StackTrace.png](E4StackTrace.png "E4StackTrace.png")
+![E4StackTrace.png](/images/pages/E4StackTrace.png "E4StackTrace.png")"
 
 In order to connect Eclipse to ImageJ, we need to close our running
 instance and [launch ImageJ from the command
@@ -849,14 +849,14 @@ tool.
     In CPU settings , make sure the class being profiled is
     **`net.imagej.trouble.**`** instead of
     `net.imagej.trouble.visible.**`, or the profiler won't be looking in
-    the right place ![Adjust settings](E8Settings.png "Adjust settings")
+    the right place ![Adjust settings](/images/pages/E8Settings.png "Adjust settings")"
 4.  Switch to Eclipse and resume the execution of code
 5.  Wait for the stipulated time , twiddle your thumbs. Or you can
     switch to JvisualVM and see how much time is taken by each of
     function in real time.
 6.  Example output
 
-![Profiling Results](E8ProfilingResults.PNG "Profiling Results")
+![Profiling Results](/images/pages/E8ProfilingResults.PNG "Profiling Results")"
 
 {% capture includecontent %} Which method takes more time? *doStuff* or
 *doMoreStuff*? |Answer - **doStuff**. Exact timing will vary per
@@ -904,7 +904,7 @@ on each other. Each process throws up an error if the other process
 introduces a delay more than one second. So pausing for more than one
 second ,while debugging the program throws up an exception. So the act
 of debugging introduces errors in this case. ![Setting a VM-wide
-breakpoint](E9StopVM.PNG "Setting a VM-wide breakpoint")
+breakpoint](/images/pages/E9StopVM.PNG "Setting a VM-wide breakpoint")"
 
 **Steps for the exercise**
 

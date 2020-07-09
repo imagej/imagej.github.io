@@ -201,7 +201,7 @@ pasted code would look something like this:
 
 <center>
 
-![StartupBAR.png](StartupBAR.png "StartupBAR.png")
+![StartupBAR.png](/images/pages/StartupBAR.png "StartupBAR.png")"
 
 </center>
 

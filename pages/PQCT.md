@@ -49,7 +49,7 @@ is available
 The main tool for pQCT image analysis. You must open an image first
 before running this tool.
 
-![selections.png](selections.png "selections.png")
+![selections.png](/images/pages/selections.png "selections.png")"
 
   - **Flip horizontal**: flips the image horizontally
 
@@ -394,7 +394,7 @@ before running this tool.
 ### Interpretation
 
 **Polar distribution**  
-![polar.png](polar.png "polar.png")  
+![polar.png](/images/pages/polar.png "polar.png")"  
 The mean of the three radial divisions within a given sector is reported
 as the density of that sector. Applies to:
 
@@ -402,7 +402,7 @@ as the density of that sector. Applies to:
   - Polar sector \#0 ... \#35 vBMD \[mg/cm³\]
 
 **Radial distribution**  
-![radial.png](radial.png "radial.png")  
+![radial.png](/images/pages/radial.png "radial.png")"  
 The mean of the thirty six 10° sectors within a given anatomical ring is
 reported as the density of that ring. Applies to:
 
@@ -420,7 +420,7 @@ reported as the density of that ring. Applies to:
 
   - 0° - 10° ... 350° - 360° endo/pericortical radius \[mm\]
 
-![radii.png](radii.png "radii.png")  
+![radii.png](/images/pages/radii.png "radii.png")"  
 Endo- and pericortical radii are given as the distance from the centroid
 of the marrow cavity to the endo- and pericortical border, respectively.
 The radii are calculated prior to peeling off the layers of pixels from

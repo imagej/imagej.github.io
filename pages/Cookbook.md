@@ -31,13 +31,13 @@ ImageJ. %Replace% DownloadFiji %Replace%
 
 |                                                                        |                                                                                        |
 | ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| From the Fiji menu, select {% include bc content='Help | Update...' %} | ![1\_Update\_Fiji.png](1_Update_Fiji.png "1_Update_Fiji.png")                          |
-| Click the **Manage update sites** button                               | ![2\_Manage\_update\_sites.png](2_Manage_update_sites.png "2_Manage_update_sites.png") |
-| Check the **Cookbook** update site                                     | ![3\_Enable\_cookbook.png](3_Enable_cookbook.png "3_Enable_cookbook.png")              |
+| From the Fiji menu, select {% include bc content='Help | Update...' %} | ![1\_Update\_Fiji.png](/images/pages/1_Update_Fiji.png "1_Update_Fiji.png")"                          |
+| Click the **Manage update sites** button                               | ![2\_Manage\_update\_sites.png](/images/pages/2_Manage_update_sites.png "2_Manage_update_sites.png")" |
+| Check the **Cookbook** update site                                     | ![3\_Enable\_cookbook.png](/images/pages/3_Enable_cookbook.png "3_Enable_cookbook.png")"              |
 | Close the **Manage update sites** dialog                               |                                                                                        |
-| Click **Apply changes** to download the Cookbook plugins               | ![4\_Apply\_changes.png](4_Apply_changes.png "4_Apply_changes.png")                    |
+| Click **Apply changes** to download the Cookbook plugins               | ![4\_Apply\_changes.png](/images/pages/4_Apply_changes.png "4_Apply_changes.png")"                    |
 | Restart Fiji to complete the plugin installation                       |                                                                                        |
-| Enjoy your new plugins from the **Cookbook** menu\!                    | ![5\_Use\_the\_Cookbook.png](5_Use_the_Cookbook.png "5_Use_the_Cookbook.png")          |
+| Enjoy your new plugins from the **Cookbook** menu\!                    | ![5\_Use\_the\_Cookbook.png](/images/pages/5_Use_the_Cookbook.png "5_Use_the_Cookbook.png")"          |
 
 ## Source
 
