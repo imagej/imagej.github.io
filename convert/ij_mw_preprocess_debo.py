@@ -120,10 +120,13 @@ def process_file(file_path, str_content):
         else:
             break
     content_tmp = re.sub(r'{{[ \n]*([A-Za-z0-9_]*)[ \n]*}}', r'%Replace% \1 %Replace% ', content_tmp)
+
+    #convert image links into working links - this can probably be improved, it should not run on all File: links..
     content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*([^x ][^ |]*)[ ]*\|[ ]*link=(?!http)(.*)[ ]*\]\]',
                          r'<a href="\3"><img src="\1" width="\2"/></a>', content_tmp)
     content_tmp = re.sub(r'\[\[File\:([^ |]*)[ ]*\|[ ]*x([^ |]*)[ ]*\|[ ]*link=(.*)[ ]*\]\]',
                          r'<a href="\3"><img src="\1" height="\2"/></a>', content_tmp)
+
     content_tmp = replace_text('notice', 'info-box', content_tmp)
     content_tmp = replace_text('infobox', 'info-box', content_tmp)
     content_tmp = replace_text('warning', 'warning-box', content_tmp)
@@ -142,7 +145,7 @@ def process_file(file_path, str_content):
     # TODO figure out what that is supposed to mean (e.g. Script_Parameters.md)
     content_tmp = content_tmp.replace("{{!}}", "")
 
-    print("processing " + str(get_name(file_path))+ ".mw...")
+    # print("processing " + str(get_name(file_path))+ ".mw...")
 
     return content_tmp
 
@@ -181,7 +184,11 @@ def match_content_parameters(template_content):
     for (key, value) in re.findall(pattern, template_content):
         patterMatched = True
         res += key + "=\'" + value + "\' "
-    if not patterMatched:
+    if patterMatched:
+        match = re.match(r'^([^\|\=]*)\|', template_content)
+        if match:
+            res = "content=\'" + match[1].strip() + "\' " + res
+    else:
         res = "content=\'" + template_content + "\' "
     return res
 
@@ -241,6 +248,7 @@ def convert(path_in, path_out, layout, title):
         # do replacements in md format
         content_tmp = re.sub(r'<http(.*)>', r'http\1', content_tmp)
         content_tmp = re.sub(r'<img src=\"(?!http)([^\"]*)\"', r'<img src="/images/pages/\1"', content_tmp)
+        content_tmp = re.sub(r'(\!\[[^\]]*\]\()([^"\)]*[ ]\"[^\"]*\"[ ]*\))', r'\1/images/pages/\2"', content_tmp)
 
     front_matter = add_front_matter(content_tmp, path_in, layout, title)
 
