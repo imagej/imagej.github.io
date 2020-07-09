@@ -1,7 +1,6 @@
 import os
 import re
 
-misbehaving_includes = ["infobox", "imagej1", "citation", "person", "publication", "javadoc", "github", "tip", "testimonial"]
 inline_includes = ["person", "github", "bc", "listofupdatesites", "list-of-update-sites", "key", "key-press", "learn",
                    "project", "clear", "develop-menu", "developmenu", "big-link", "biglink", "path", "inline", "logo", "toc"]
 
@@ -85,7 +84,7 @@ def get_categories(file_path):
     return str_categories
 
 
-template_regex = r'[ \t]*{{[\n]*([A-Za-z0-9_ ]*)[ \n]*\|[ \n]*([^}]*)[ \n]*}}'
+template_regex = r'{{[\n]*([A-Za-z0-9_ ]*)[ \n]*\|[ \n]*([^}]*)[ \n]*}}'
 
 
 def process_file(file_path, str_content):
@@ -162,20 +161,29 @@ def replace_template(document_content, match_content, template_name, template_co
     template_name = template_name.replace("_", "-")
     template_name = template_name.lower()
 
-    if template_name in misbehaving_includes:
-        print("Cannot parse template " + template_name + " at the moment")
-        template_content = "TODO"
     if template_name in inline_includes:
         # handle inline templates
         template_content = re.sub(r'\'', r'"', template_content)
         document_content = document_content.replace(match_content,
-                                                    "\n{% include " + template_name + " content=\'" + template_content + "\' %}\n")
+            "\n{% include " + template_name + " " + match_content_parameters(template_content) + "%}\n")
     else:
         # handle block templates, capture content
         document_content = document_content.replace(match_content,
                                                     "\n{% capture includecontent %}\n" + template_content + "\n{% endcapture %}\n"
                                                     "\n{% include " + template_name + " content=includecontent %}\n")
     return document_content
+
+
+def match_content_parameters(template_content):
+    pattern = re.compile(r'([a-z]+)=([^| ]*)')
+    patterMatched = False
+    res = ""
+    for (key, value) in re.findall(pattern, template_content):
+        patterMatched = True
+        res += key + "=\'" + value + "\' "
+    if not patterMatched:
+        res = "content=\'" + template_content + "\' "
+    return res
 
 
 def replace_text(old_text, new_text, str_content):
