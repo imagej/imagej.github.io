@@ -136,8 +136,7 @@ def get_unused_pages():
     res = []
     for filename in os.listdir(root_in):
         if filename.endswith(".mw"):
-            title = os.path.splitext(filename)[0]
-            if title not in converted_pages:
+            if filename not in converted_pages:
                 res.append(filename)
     return res
 
@@ -162,6 +161,7 @@ def save_status():
 
 
 def write_list(list, path):
+    list.sort()
     with open(os.path.join(root_out, path), "w") as txt_file:
         for line in list:
             txt_file.write(line + "\n")
