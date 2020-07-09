@@ -1,5 +1,47 @@
-<div class="github">
-
-    {{include.content}}
-    
-</div>
+{% assign url = "https://github.com/"  %}
+{% if include.org %}
+    {% assign url = url | append: include.org %}
+{% elsif include.repo %}
+    {% assign url = url | append: include.repo %}
+{% else %}
+    {% assign url = url | append: "imagej" %}
+{% endif %}
+{% assign url = url | append: "/" %}
+{% if include.repo %}
+    {% assign url = url | append: include.repo %}
+{% elsif include.org %}
+    {% assign url = url | append: include.org %}
+{% else %}
+    {% assign url = url | append: "imagej" %}
+{% endif %}
+{% assign url = url | append: "/" %}
+{% if include.source %}
+    {% assign url = url | append: "blob/" %}
+    {% if include.tag %}
+        {% assign url = url | append: include.tag %}
+    {% else %}
+        {% assign url = url | append: "master" %}
+    {% endif %}
+    {% assign url = url | append: "/src/main/java/" | append: include.source %}
+{% elsif include.path %}
+    {% assign url = url | append: "blob/" %}
+    {% if include.tag %}
+        {% assign url = url | append: include.tag %}
+    {% else %}
+        {% assign url = url | append: "master" %}
+    {% endif %}
+    {% assign url = url | append: "/" | append: include.path %}
+{% elsif include.commit %}
+    {% assign url = url | append: "commit/" | append: include.commit %}
+{% elsif include.issue %}
+    {% assign url = url | append: "issues/" | append: include.issue %}
+{% elsif include.pr %}
+    {% assign url = url | append: "pull/" | append: include.pr %}
+{% elsif include.tag %}
+    {% assign url = url | append: "releases/tag/" | append: include.tag %}
+{% endif %}
+{% assign label = "on GitHub"  %}
+{% if include.label %}
+    {% assign label = include.label %}
+{% endif %}
+<a class="github" href="{{url}}">{{label}}</a>
