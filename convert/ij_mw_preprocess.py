@@ -116,7 +116,7 @@ def process_file(file_path, str_content):
             break
     content_tmp = re.sub(r'{{[ \n]*([A-Za-z0-9_]*)[ \n]*}}', r'%Replace% \1 %Replace% ', content_tmp)
     content_tmp = replace_text('notice', 'info-box', content_tmp)
-    content_tmp = replace_text('infobox', 'info-box', content_tmp)
+    content_tmp = replace_text('infobox', 'details-box', content_tmp)
     content_tmp = replace_text('warning', 'warning-box', content_tmp)
     content_tmp = replace_text('box', 'sidebox-right', content_tmp)
     content_tmp = replace_text('key-press', 'key', content_tmp)
