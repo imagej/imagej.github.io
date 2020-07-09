@@ -93,7 +93,8 @@ Projects" scope.
     NetBeans](https://www.youtube.com/watch?v=Ac-6gJ2eRb0) screencast
 
   - 
-{% include github content='TODO' %}
+{% include github org='imagej' repo='example-legacy-plugin'
+label='example-legacy-plugin' %}
 
 `project template`
 

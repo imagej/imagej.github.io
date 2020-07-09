@@ -11,7 +11,7 @@ description: test description
 TODO FLASH WIDGET
 
 This video tutorial was made and edited by {% include person
-content='TODO' %}
+content='Iarganda' %}
 
 `using `[`Wink``   ``2.0``   ``for`` 
  ``Windows`](http://www.debugmode.com/wink/)`.`

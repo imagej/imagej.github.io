@@ -57,7 +57,7 @@ above automatically.
 **1.** This plugin is accessed through the {% include bc content='Image
 | Auto Threshold' %}
 
-`menu entry, however the thresholding methods were also partially implemented in ImageJ's thresholder applet accessible through the`
+`menu entry, however the thresholding methods were also partially implemented in ImageJ's thresholder applet accessible through the `
 
 {% include bc content='Image | Adjust | Threshold...' %}
 
@@ -156,7 +156,13 @@ Implements Huang's fuzzy thresholding method. This uses Shannon's
 entropy function (one can also use Yager's entropy function).
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Huang | first = L-K | last2 = Wang |
+first2 = M-J J | year = 1995 | journal = Pattern Recognition | url =
+http://www.ktl.elf.stuba.sk/study/vacso/Zadania-Cvicenia/Cvicenie_3/TimA2/Huang_E016529624.pdf
+| Image thresholding by minimizing the measure of fuzziness | volume =
+28(1) | pages = 41-51
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 
@@ -180,7 +186,13 @@ with histograms having extremely unequal peaks or a broad and ﬂat valley
 are unsuitable for this method. method
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Prewitt | first = JMS | last2 =
+Mendelsohn | first2 = ML | year = 1966 | journal = Annals of the New
+York Academy of Sciences | url =
+http://www3.interscience.wiley.com/journal/119758871/abstract?CRETRY=1&SRETRY=0
+| The analysis of cell images | volume = 128 | pages = 1035-1053
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 
@@ -193,7 +205,14 @@ presentation and his original [MATLAB](MATLAB "wikilink") code.
 Iterative procedure based on the isodata algorithm of:
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Ridler | first = TW | last2 =
+Calvard | first2 = S | year = 1978 | journal = IEEE Transactions on
+Systems, Man and Cybernetics | url =
+http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4310039 | Picture
+thresholding using an iterative selection method | volume = 8 | pages =
+630-632
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 
@@ -215,17 +234,32 @@ Implements Li's Minimum Cross Entropy thresholding method based on the
 iterative version (2nd reference below) of the algorithm.
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Li | first = CH | last2 = Lee |
+first2 = CK | year = 1993 | journal = Pattern Recognition | Minimum
+Cross Entropy Thresholding | volume = 26(4) | pages = 617-625
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Li | first = CH | last2 = Tam |
+first2 = PKS | year = 1998 | journal = Pattern Recognition Letters | An
+Iterative Algorithm for Minimum Cross Entropy Thresholding | volume =
+18(8) | pages = 771-776
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Sezgin | first = M | last2 = Sankur
+| first2 = B | year = 2004 | journal = Journal of Electronic Imaging |
+Survey over Image Thresholding Techniques and Quantitative Performance
+Evaluation | volume = 13(1) | pages = 146-165 | url =
+http://citeseer.ist.psu.edu/sezgin04survey.html
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 
@@ -238,7 +272,13 @@ Ported from ME Celebi's fourier\_0.8 routines
 Implements Kapur-Sahoo-Wong (Maximum Entropy) thresholding method:
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Kapur | first = JN | last2 = Sahoo |
+first2 = PK | last3 = Wong | first3 = ACK | year = 1985 | journal =
+Graphical Models and Image Processing | A New Method for Gray-Level
+Picture Thresholding Using the Entropy of the Histogram | volume = 29(3)
+| pages = 273-285
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 
@@ -252,7 +292,11 @@ Uses the mean of grey levels as the threshold. It is used by some other
 methods as a first guess threshold.
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Glasbey | first = CA | year = 1993 |
+journal = CVGIP: Graphical Models and Image Processing | An analysis of
+histogram-based thresholding algorithms | volume = 55 | pages = 532-537
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 
@@ -269,7 +313,11 @@ using the Mean method. The **Ignore black** or **Ignore white** options
 might help to avoid this problem.
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Kittler | first = J | last2 =
+Illingworth | first2 = J | year = 1986 | journal = Pattern Recognition |
+Minimum error thresholding | volume = 19 | pages = 41-47
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 
@@ -288,7 +336,13 @@ Images with histograms having extremely unequal peaks or a broad and ﬂat
 valley are unsuitable for this method.
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Prewitt | first = JMS | last2 =
+Mendelsohn | first2 = ML | year = 1966 | journal = Annals of the New
+York Academy of Sciences | url =
+http://www3.interscience.wiley.com/journal/119758871/abstract?CRETRY=1&SRETRY=0
+| The analysis of cell images | volume = 128 | pages = 1035-1053
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 
@@ -302,7 +356,12 @@ Tsai's method attempts to preserve the moments of the original image in
 the thresholded result.
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Tsai | first = W | year = 1985 |
+journal = Computer Vision, Graphics, and Image Processing | url =
+http://portal.acm.org/citation.cfm?id=201578 | Moment-preserving
+thresholding: a new approach | volume = 29 | pages = 377-393
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 
@@ -317,7 +376,13 @@ minimizes the intra-class variance, defined as a weighted sum of
 variances of the two classes.
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Otsu | first = N | year = 1979 |
+journal = IEEE Trans. Sys., Man., Cyber. | url =
+http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?&arnumber=4310076 | A
+threshold selection method from gray-level histograms | volume = 9 |
+pages = 62-66 | doi = 10.1109/TSMC.1979.4310076
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 
@@ -331,7 +396,13 @@ Ported from C++ code by Jordan Bevik.
 Assumes the fraction of foreground pixels to be 0.5.
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Doyle | first = W | year = 1962 |
+journal = Journal of the Association for Computing Machinery | url =
+http://portal.acm.org/citation.cfm?id=321119.321123 | Operation useful
+for similarity-invariant pattern recognition | volume = 9 | pages =
+259-267 | doi = 10.1145/321119.321123
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 
@@ -344,7 +415,13 @@ presentation and the original [MATLAB](MATLAB "wikilink") code.
 Similar to the **MaxEntropy** method, but using Renyi's entropy instead.
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Kapur | first = JN | last2 = Sahoo |
+first2 = PK | last3 = Wong | first3 = ACK | year = 1985 | journal =
+Graphical Models and Image Processing | A New Method for Gray-Level
+Picture Thresholding Using the Entropy of the Histogram | volume = 29(3)
+| pages = 273-285
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 
@@ -363,7 +440,13 @@ Ported from ME Celebi's fourier\_0.8 routines
 This is an implementation of the Triangle method:
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} author=Zack GW, Rogers WE, Latt SA
+|title=Automatic measurement of sister chromatid exchange frequency
+|journal=J. Histochem. Cytochem. |volume=25 |issue=7 |pages=741–53
+|year=1977 |month=July |pmid=70454 |doi=
+|url=http://www.jhc.org/cgi/pmidlookup?view=long&pmid=70454
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 
@@ -388,12 +471,25 @@ within that largest range.
 Implements Yen's thresholding method from:
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} author = Yen JC, Chang FJ, Chang S | A New
+Criterion for Automatic Multilevel Thresholding | journal = IEEE Trans.
+on Image Processing | volume = 4 | issue = 3 | pages = 370-378 | year =
+1995 | doi = 10.1109/83.366472 |
+url=http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=366472 |
+issn = 1057-7149
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Sezgin | first = M | last2 = Sankur
+| first2 = B | year = 2004 | journal = Journal of Electronic Imaging |
+Survey over Image Thresholding Techniques and Quantitative Performance
+Evaluation | volume = 13(1) | pages = 146-165 | url =
+http://citeseer.ist.psu.edu/sezgin04survey.html
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 

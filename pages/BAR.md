@@ -20,9 +20,10 @@ description: test description
 The collection contains [Macros](Macros "wikilink"),
 [Scripts](Scripts "wikilink") and [Plugins](Plugins "wikilink") focused
 on Data Analysis, Image Annotation and Image Segmentation. It is curated
-using {% include github content='TODO' %}
+using {% include github org='tferr' repo='Scripts\#ij-bar'
+label='GitHub' %}
 
-`and distributed as an optional`
+`and distributed as an optional `
 
 {% include list-of-update-sites content='update site' %} .
 
@@ -38,7 +39,8 @@ Run {% include bc content='Help|Update...' %}
 
 BAR files are accessible through a dedicated top-level menu subdivided
 in task-oriented categories. All routines should be documented on {%
-include github content='TODO' %} .
+include github org='tferr' repo='Scripts' path='README.md\#ij-bar'
+label='' %} .
 
 Some of the scripts have a dedicated documentation page, others feature
 built-in help, while a handful were deemed too simple to require
@@ -50,57 +52,107 @@ open all the scripts using the [Shift key](#OpeningBAR "wikilink").
 
 [right|Overview of BAR (v1.0.0)](File:BARsnapshot.png "wikilink")
 
-; {% include github content='TODO' %} <span id="Analysis"></span>
+; {% include github org='tferr' repo='Scripts'
+path='README.md\#analysis' label='' %} <span id="Analysis"></span>
 
   - 
 
-{% include github content='TODO' %} , {% include github content='TODO'
-%} , {% include github content='TODO' %} , {% include github
-content='TODO' %} , {% include github content='TODO' %}
+{% include github org='tferr' repo='Scripts'
+path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#log-dog-spot-counter'
+label='LoG-DoG' %} , {% include github org='tferr' repo='Scripts'
+path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#multi-roi-profiler'
+label='Multi' %} , {% include github org='tferr' repo='Scripts'
+path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#multichannel-plot-profile'
+label='Multichannel' %} , {% include github org='tferr' repo='Scripts'
+path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#multichannel-zt-axis-profile'
+label='Multichannel' %} , {% include github org='tferr' repo='Scripts'
+path='BAR/src/main/resources/scripts/BAR/Analysis/README.md\#smoothed-plot-profile'
+label='Smoothed' %}
 
-; {% include github content='TODO' %} <span id="Annotation"></span>
+; {% include github org='tferr' repo='Scripts'
+path='README.md\#image-annotation' label='Annotation' %}
+<span id="Annotation"></span>
 
   - 
 
-{% include github content='TODO' %} , {% include github content='TODO'
-%} , {% include github content='TODO' %}
+{% include github org='tferr' repo='Scripts'
+path='BAR/src/main/resources/scripts/BAR/Annotation/README.md\#combine-orthogonal-views'
+label='Combine' %} , {% include github org='tferr' repo='Scripts'
+path='BAR/src/main/resources/scripts/BAR/Annotation/README.md\#cumulative-z-project'
+label='Cumulative' %} , {% include github org='tferr' repo='Scripts'
+path='BAR/src/main/resources/scripts/BAR/Annotation/README.md\#roi-color-coder'
+label='ROI' %}
 
-; {% include github content='TODO' %} <span id="Data_Analysis"></span>
+; {% include github org='tferr' repo='Scripts'
+path='README.md\#data-analysis' label='Data' %}
+<span id="Data_Analysis"></span>
 
   - 
 
-{% include github content='TODO' %} , {% include github content='TODO'
-%} , {% include github content='TODO' %} , [Find
-Peaks](Find_Peaks "wikilink"), [Fit
+{% include github org='tferr' repo='Scripts'
+path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#create-boxplot'
+label='Create' %} , {% include github org='tferr' repo='Scripts'
+path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#create-polar-plot'
+label='Create' %} , {% include github org='tferr' repo='Scripts'
+path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#distribution-plotter'
+label='Distribution' %} , [Find Peaks](Find_Peaks "wikilink"), [Fit
 Polynomial](Sholl_Analysis#Complementary_Tools "wikilink"), {% include
-github content='TODO' %}
+github org='tferr' repo='Scripts'
+path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/README.md\#interactive-plotting'
+label='Interactive' %}
 
-; {% include github content='TODO' %} <span id="Segmentation"></span>
+; {% include github org='tferr' repo='Scripts'
+path='README.md\#image-segmentation' label='Segmentation' %}
+<span id="Segmentation"></span>
 
   - 
 
-{% include github content='TODO' %} , {% include github content='TODO'
-%} , {% include github content='TODO' %} , {% include github
-content='TODO' %} , {% include github content='TODO' %} , {% include
-github content='TODO' %}
+{% include github org='tferr' repo='Scripts'
+path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#shen-castan-edge-detector'
+label='Shen-Castan' %} , {% include github org='tferr' repo='Scripts'
+path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#apply-threshold-to-roi'
+label='Apply' %} , {% include github org='tferr' repo='Scripts'
+path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#clear-thresholded-pixels'
+label='Clear' %} , {% include github org='tferr' repo='Scripts'
+path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#remove-isolated-pixels'
+label='Remove' %} , {% include github org='tferr' repo='Scripts'
+path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#threshold-from-background'
+label='Threshold' %} , {% include github org='tferr' repo='Scripts'
+path='BAR/src/main/resources/scripts/BAR/Segmentation/README.md\#wipe-background'
+label='Wipe' %}
 
-; {% include github content='TODO' %} , {% include github content='TODO'
-%} <span id="SnippetsList"> and {% include github content='TODO' %}
-</span>
+; {% include github org='tferr' repo='Scripts'
+path='README.md\#snippets' label='Snippets' %} , {% include github
+org='tferr' repo='Scripts' path='/lib\#lib' label='BAR' %}
+<span id="SnippetsList"> and {% include github org='tferr'
+repo='Scripts' path='BAR/src/main/resources/tutorials/'
+label='Tutorials' %} </span>
 
   -   
     Described in [Scripting BARs](#Scripting_BARs "wikilink")
 
-; {% include github content='TODO' %} <span id="Tools"></span>
+; {% include github org='tferr' repo='Scripts'
+path='README.md\#tools-and-toolsets' label='Tools' %}
+<span id="Tools"></span>
 
   - 
 
-{% include github content='TODO' %} , {% include github content='TODO'
-%} , {% include github content='TODO' %} , {% include github
-content='TODO' %} , {% include github content='TODO' %} , {% include
-github content='TODO' %}
+{% include github org='tferr' repo='Scripts'
+path='Tools/README.md\#calibration-menu' label='Calibration' %} , {%
+include github org='tferr' repo='Scripts'
+path='Tools/README.md\#list-folder-menu' label='List' %} , {% include
+github org='tferr' repo='Scripts'
+path='Tools/README.md\#segment-profile-tool' label='Segment' %} , {%
+include github org='tferr' repo='Scripts'
+path='Tools/README.md\#shortcuts-menu' label='Shortcuts' %} , {% include
+github org='tferr' repo='Scripts'
+path='Tools/README.md\#roi-manager-tools' label='ROI' %} , {% include
+github org='tferr' repo='Scripts'
+path='Tools/README.md\#toolset-creator' label='Toolset' %}
 
-; {% include github content='TODO' %} <span id="Utilities"></span>
+; {% include github org='tferr' repo='Scripts'
+path='README.md\#utilities' label='Utilities' %}
+<span id="Utilities"></span>
 
   -   
     [Commander](#Commander "wikilink")
@@ -225,7 +277,7 @@ content='Reveal Path' %} .
 {% include key content='T|I|F|Enter' %}  
 Choose {% include bc content='Print Current List' %}
 
-`in the Options Menu or press`
+`in the Options Menu or press `
 
 {% include key content='Control|P' %}
 
@@ -241,7 +293,7 @@ You can use <span style="border-bottom:1px dotted #ccc;">Plugins▷
 Shortcuts▷ Create Shortcut...</span> to assign hotkeys (e.g., keyboard
 key that you do not use frequently such as {% include key content='0' %}
 
-` or`
+` or `
 
 {% include key content='F7' %} ) to any script registered in the
 <span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu. These
@@ -309,7 +361,8 @@ contains some utilities to help you manage your scripts:
 
 {% include learn content='scripting' %}
 
-{% include github content='TODO' %}
+{% include github org='tferr' repo='Scripts' path='/lib/README.md\#lib'
+label='BAR' %}
 
 `(stored in the `*`/BAR/lib/`*` directory) are centralized libraries (`[`BeanShell`](BeanShell_Scripting "wikilink")`, `[`IJM`](Introduction_into_Macro_Programming "wikilink")` and `[`Python`](Jython_Scripting "wikilink")`, etc.) that can be shared across files. These libraries serve as scripting additions to `[`Snippets`](#Snippets "wikilink")` and other routines.`
 
@@ -339,7 +392,8 @@ lib.confirmLoading();
 Run it in the [Script Editor](Script_Editor "wikilink") ( {% include bc
 content='File|New|Script...' %} ), and you should be greeted by a *"BAR
 lib successfully loaded"* message. Further details are provided on the
-{% include github content='TODO' %}
+{% include github org='tferr' repo='Scripts' path='/lib\#lib'
+label='GitHub' %}
 
 `and on the documentation of the `[`bar.Utils`](http://tferr.github.io/Scripts/apidocs/index.html?bar/Utils.html)` class.`
 
@@ -359,11 +413,13 @@ different languages and perform the following operations:
 
 Typically each of these tasks is handled by separated functions so only
 the function processing single files needs to be edited. In the {%
-include github content='TODO' %}
+include github org='tferr' repo='Scripts'
+path='Snippets/Process\_Folder\_PY.py' label='Python' %}
 
-`and`
+`and `
 
-{% include github content='TODO' %}
+{% include github org='tferr' repo='Scripts'
+path='Snippets/Process\_Folder\_IJM.ijm' label='IJM' %}
 
 `implementation, this processing function is called myRoutines(). Note that when editing myRoutines() we do not need to worry about opening, closing or saving the image without overriding the original file, because those tasks are already performed by other functions.`
 
@@ -379,7 +435,8 @@ a common [BAR lib](#lib "wikilink") file.
 
 IJM example, running a macro and a python script in the *Snippets/*
 (another [example below](#IJMlib "wikilink") exemplifies how to call a
-macro function from {% include github content='TODO' %} ):
+macro function from {% include github org='tferr' repo='Scripts'
+path='lib/BARlib.ijm' label='BARlib.ijm' %} ):
 
 ``` java
 function myRoutines() {
@@ -390,10 +447,12 @@ function myRoutines() {
 ```
 
 Jython example, demonstrating how to 1) load [BAR lib](#lib "wikilink")
-(in this case {% include github content='TODO' %} , using code generated
-by <span style="border-bottom:1px dotted #ccc;">Bar▷ Snippets▷ New
+(in this case {% include github org='tferr' repo='Scripts'
+path='lib/BARlib.py' label='BARlib.py' %} , using code generated by
+<span style="border-bottom:1px dotted #ccc;">Bar▷ Snippets▷ New
 Snippet...</span>) and 2) how to run a Snippet (in this case {% include
-github content='TODO' %} ):
+github org='tferr' repo='Scripts' path='Snippets/Median\_Filter.py'
+label='Median\_Filter.py' %} ):
 
 ``` python
 def myRoutines():
@@ -416,7 +475,8 @@ def myRoutines():
 ### Example: Batch Randomization of Filenames
 
 The default task of both the Python and IJM implementation of {% include
-github content='TODO' %}
+github org='tferr' repo='Scripts'
+path='Snippets/README.md\#batch-processors' label='BAR' %}
 
 *`Process``   ``Folder`*` scripts is`
 
@@ -425,11 +485,14 @@ filename randomization: 1) They copy images from one folder to another,
 CSV table (so that id of randomized filename can be traced back to the
 original file). This approach allows for blind analyses of datasets that
 are sensitive to user interpretation. Below are the descriptions of {%
-include github content='TODO' %}
+include github org='tferr' repo='Scripts'
+path='Snippets/Process\_Folder\_PY.py' label='Process\_Folder\_PY.py' %}
 
 `and `
 
-{% include github content='TODO' %} .
+{% include github org='tferr' repo='Scripts'
+path='Snippets/Process\_Folder\_IJM.ijm'
+label='Process\_Folder\_IJM.ijm' %} .
 
 ##### Python
 
@@ -455,7 +518,8 @@ setTitle()\] method in `ij.ImagePlus`.
 
 But because [BAR libs](#lib "wikilink") already contain such a function,
 we can just call the `randomString()` function in {% include github
-content='TODO' %} , after loading the file:
+org='tferr' repo='Scripts' path='lib/BARlib.py' label='BARlib.py' %} ,
+after loading the file:
 
 ``` python
 def myRoutines(image):
@@ -510,12 +574,14 @@ processed:
 csvWriter.writerow([old_filename, new_filename])
 ```
 
-Visit the {% include github content='TODO' %}
+Visit the {% include github org='tferr' repo='Scripts' label='BAR' %}
 
 `to check how the assembled script (`
 
-{% include github content='TODO' %} ) {% include github content='TODO'
-%} .
+{% include github org='tferr' repo='Scripts'
+path='Snippets/Process\_Folder\_PY.py?raw=true'
+label='Process\_Folder\_PY.py' %} ) {% include github org='tferr'
+repo='Scripts' path='Snippets/Process\_Folder\_PY.py' label='looks' %} .
 
 #### IJ Macro Language
 
@@ -550,7 +616,9 @@ be trivial. Typically, it will require access to an
 [IDE](IDE "wikilink") and some Java experience. So what about writing an
 ad-hoc function?
 
-The approach used in {% include github content='TODO' %}
+The approach used in {% include github org='tferr' repo='Scripts'
+path='Snippets/Process\_Folder\_IJM.ijm'
+label='Process\_Folder\_IJM.ijm' %}
 
 `is the following: 1) Take a template string containing the characters A-Z and digits 0-9; 2) Pick a random position between the first and last character of the string template. Extract the character at that position; 3) Repeat the last step several times, assembling extracted characters into a concatenated string:`
 
@@ -596,10 +664,11 @@ function randomString(length, spacers) {
 As such, calling `randomString(50, true)` would produce e.g.,
 `E_ZXTQO_8E9XM_45WG7_8S39`. As with the [Python](#Python "wikilink")
 implementation, we could also use [BAR lib](#lib "wikilink") (in this
-case {% include github content='TODO' %} ). First, we need to load the
-file [before running our macro](#faq:ijm-lib "wikilink"), using the code
-generated by <span style="border-bottom:1px dotted #ccc;">Bar▷ Snippets▷
-New Snippet</span>:<span id="IJMlib"></span>
+case {% include github org='tferr' repo='Scripts' path='lib/BARlib.ijm'
+label='BARlib.ijm' %} ). First, we need to load the file [before running
+our macro](#faq:ijm-lib "wikilink"), using the code generated by
+<span style="border-bottom:1px dotted #ccc;">Bar▷ Snippets▷ New
+Snippet</span>:<span id="IJMlib"></span>
 
 ``` java
 libPath = call('bar.Utils.getLibDir') + 'BARlib.ijm';
@@ -621,7 +690,8 @@ monitor filename changes. We could use the
 [print()](http://imagej.nih.gov/ij/developer/macro/functions.html#print)
 function (that outputs to the Log window), or create a two-column table
 describing the changes. Here is how the final {% include github
-content='TODO' %}
+org='tferr' repo='Scripts' path='Snippets/Process\_Folder\_IJM.ijm'
+label='Process\_Folder\_IJM.ijm' %}
 
 `looks like:`
 
@@ -658,15 +728,16 @@ function myRoutines() {
 
   - Will I find BAR useful?
 
-{% include github content='TODO' %} . But it is likely that you will
-need to delve a bit into the [BAR
-philosophy](#Scripting_BARs "wikilink").
+{% include github org='tferr' repo='Scripts' path='README.md\#citations'
+label='Probably' %} . But it is likely that you will need to delve a bit
+into the [BAR philosophy](#Scripting_BARs "wikilink").
 
   - Can I contribute to BAR?  
     Yes, please do\! If you have some suggestions on how to improve it,
     do
 
-{% include github content='TODO' %} .
+{% include github org='tferr' repo='Scripts' path='README.md\#help'
+label='let' %} .
 
   - Nothing happens when I run a BAR. What's going on?  
     In a case of premature termination BARs tend to exit rather
@@ -676,9 +747,10 @@ philosophy](#Scripting_BARs "wikilink").
 
 {% include key content='Shift' %}
 
-`while selecting it from the `<span style="border-bottom:1px dotted #ccc;">`BAR▷`</span>` menu, press `*`Run`*`  and have a look at the editors' s console, where all sort of useful messages will be printed to. Do`
+`while selecting it from the `<span style="border-bottom:1px dotted #ccc;">`BAR▷`</span>` menu, press `*`Run`*`  and have a look at the editors' s console, where all sort of useful messages will be printed to. Do `
 
-{% include github content='TODO' %}
+{% include github org='tferr' repo='Scripts' path='README.md\#help'
+label='let' %}
 
 `if you have found a bug.`
 
@@ -692,11 +764,11 @@ philosophy](#Scripting_BARs "wikilink").
 {% include bc content='BAR|' %}
 
 `submenus will appear as empty, and it may not be possible to navigate the `*`BAR/`*` directory using menu commands (`[`Commander`](#Commander "wikilink")` could still be used, nevertheless). Another important aspect is that, without access to the `[`built-in`` 
- ``updater`](Update_Fiji "wikilink")`, you will have to manually update BAR (by monitoring its`
+ ``updater`](Update_Fiji "wikilink")`, you will have to manually update BAR (by monitoring its `
 
-{% include github content='TODO' %} ), and to manually install (and
-update) the dependencies (i.e., third-party plugins and third-party
-libraries) used by BAR).
+{% include github org='tferr' repo='Scripts/releases' label='rpository'
+%} ), and to manually install (and update) the dependencies (i.e.,
+third-party plugins and third-party libraries) used by BAR).
 
   - How do I uninstall BAR?  
     Run the [Updater](Fiji_Updater "wikilink") (

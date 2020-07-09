@@ -41,7 +41,8 @@ ImageJ. %Replace% DownloadFiji %Replace%
 
 ## Source
 
-The source code is {% include github content='TODO' %} .
+The source code is {% include github org='fiji' repo='cookbook'
+label='on' %} .
 
 ## Credits
 
@@ -52,37 +53,37 @@ created by Tony Collins.
 The Cookbook technical writer team includes:
 
   - 
-{% include person content='TODO' %}
+{% include person content='Rueden' %}
 
 `(technical oversight and maintenance)`
 
   - 
-{% include person content='TODO' %}
+{% include person content='Apal4' %}
 
 `(January 2014 - May 2015)`
 
   - 
-{% include person content='TODO' %}
+{% include person content='Schindelin' %}
 
 `(June 2013 - November 2014)`
 
   - 
-{% include person content='TODO' %}
+{% include person content='Khildebrand' %}
 
 `(June 2013 - December 2013)`
 
   - 
-{% include person content='TODO' %}
+{% include person content='Amacall' %}
 
 `(June 2013 - December 2013)`
 
   - 
-{% include person content='TODO' %}
+{% include person content='Ruizhi' %}
 
 `(November 2013 - December 2013)`
 
   - 
-{% include person content='TODO' %}
+{% include person content='Gtcwildfire' %}
 
 `(June 2013 - August 2013)`
 

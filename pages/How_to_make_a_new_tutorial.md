@@ -57,7 +57,7 @@ After taking some or all of the snapshots you want to include in your
 tutorial, you have to crop them. Just select the appropriate rectangle,
 and then click on ImageJ's {% include bc content='Edit | Crop' %}
 
-`or hit`
+`or hit `
 
 {% include key content='Ctrl' %} + {% include key content='Shift' %} +
 {% include key content='X' %}

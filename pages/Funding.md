@@ -27,8 +27,8 @@ description: test description
 Historically, [ImageJ 1.x](ImageJ_1.x "wikilink") was funded internally
 by the [Research Services](http://rsbweb.nih.gov/) branch of the
 [National Institutes of Health](http://nih.gov/). It is developed by {%
-include person content='TODO' %} , who is now retired, and continues his
-work on ImageJ1 as an NIH special volunteer.
+include person content='Rasband' %} , who is now retired, and continues
+his work on ImageJ1 as an NIH special volunteer.
 
 ## ImageJ2
 
@@ -50,7 +50,7 @@ development effort at the University of Konstanz, University of
 Wisconsin-Madison and elsewhere.
 
 The ImageJ2 project as a whole is maintained by {% include person
-content='TODO' %}
+content='Rueden' %}
 
 `of the `[`Eliceiri/LOCI`` 
  ``lab`](LOCI "wikilink")`, currently supported by CZI as an `[`Imaging`` 
@@ -62,43 +62,43 @@ content='TODO' %}
 [SCIFIO](SCIFIO "wikilink") was funded by the [National Science
 Foundation](http://nsf.gov/), award number
 [1148362](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1148362). It
-was initially developed by {% include person content='TODO' %}
+was initially developed by {% include person content='Hinerm' %}
 
-`and`
+`and `
 
-{% include person content='TODO' %}
+{% include person content='Rueden' %}
 
 `of the `[`Eliceiri/LOCI``   ``lab`](LOCI "wikilink")`.`
 
 SCIFIO's development is now funded indirectly by various institutions as
 part of their respective research and development goals. SCIFIO as a
 whole is organized and maintained as part of the ImageJ2 effort by {%
-include person content='TODO' %}
+include person content='Rueden' %}
 
 `of the `[`Eliceiri/LOCI``   ``lab`](LOCI "wikilink")`.`
 
 ## ImgLib2
 
 The [ImgLib2](ImgLib2 "wikilink") project was developed by {% include
-person content='TODO' %} , {% include person content='TODO' %}
+person content='Saalfeld' %} , {% include person content='StephanP' %}
 
-`and`
+`and `
 
-{% include person content='TODO' %}
+{% include person content='Pietzsch' %}
 
 `of the `[`Tomancak`` 
  ``lab`](https://mpi-cbg.de/research/research-groups/pavel-tomancak.html)` at `[`MPI-CBG`](https://mpi-cbg.de/)`.`
 
 The ImgLib2 project as a whole is organized and maintained by {% include
-person content='TODO' %}
+person content='Pietzsch' %}
 
-`of MPI-CBG,`
+`of MPI-CBG, `
 
-{% include person content='TODO' %}
+{% include person content='Saalfeld' %}
 
-`of Janelia Research Campus, and`
+`of Janelia Research Campus, and `
 
-{% include person content='TODO' %}
+{% include person content='Rueden' %}
 
 `of the `[`Eliceiri/LOCI``   ``lab`](LOCI "wikilink")`.`
 
@@ -120,7 +120,7 @@ the various involved software efforts, including
 [OMERO](OMERO "wikilink") and [CellProfiler](CellProfiler "wikilink").
 
 The SciJava project as a whole is organized and maintained by {% include
-person content='TODO' %}
+person content='Rueden' %}
 
 `of the `[`Eliceiri/LOCI`` 
  ``lab`](LOCI "wikilink")`, currently supported by CZI as an `[`Imaging`` 
@@ -136,7 +136,7 @@ across the worldwide community.
 Fiji as a whole is organized and maintained by:
 
   - 
-{% include person content='TODO' %}
+{% include person content='Rueden' %}
 
 `of the `[`Eliceiri/LOCI`` 
  ``lab`](LOCI "wikilink")`, currently supported by CZI as an `[`Imaging`` 
@@ -144,7 +144,7 @@ Fiji as a whole is organized and maintained by:
  ``Fellow`](https://www.chanzuckerberg.com/newsroom/czi-announces-support-for-open-source-software-efforts-to-improve-biomedical-imaging)`.`
 
   - 
-{% include person content='TODO' %}
+{% include person content='turekg' %}
 
 `of `[`CSBD`](CSBD "wikilink")`/`[`MPI-CBG`](MPI-CBG "wikilink")` as part of a funded Fiji Software Sustainability Grant (DFG TO563/8-1).`
 

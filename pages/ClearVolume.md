@@ -34,7 +34,11 @@ problems.
 
 ## What is ClearVolume?
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} quote = I checked out ClearVolume.
+Extremely well-made plugin\! Does exactly what I want :) | person =
+komodovaran | source = http://forum.imagej.net/t/1907/3
+
+{% endcapture %}
 
 {% include testimonial content=includecontent %} ClearVolume is a volume
 renderer developed at MPI-CBG. Its sources are open and can be cloned
@@ -105,7 +109,7 @@ further questions please contact any of us
 ## Publication
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} ClearVolume {% endcapture %}
 
 {% include publication content=includecontent %}
 

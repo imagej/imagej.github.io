@@ -370,7 +370,7 @@ default.
 
 {% include key content='E' %}
 
-`key to increase its radius,`
+`key to increase its radius, `
 
 {% include key content='Q' %}
 
@@ -508,7 +508,7 @@ results:
 ![TrackMate\_SmallLineage.png](TrackMate_SmallLineage.png
 "TrackMate_SmallLineage.png")
 
-{% include person content='TODO' %}
+{% include person content='JeanYvesTinevez' %}
 
 `(`[`talk`](User_talk:JeanYvesTinevez "wikilink")`) 11:30, 1 August 2013 (CDT)`
 

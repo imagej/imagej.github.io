@@ -57,13 +57,13 @@ Thank you for your support.
 <tr class="odd">
 <td><p>{% include logo content='ImageJ2' %}</p></td>
 <td><p><a href="ImageJ2" title="wikilink">ImageJ2</a></p></td>
-<td><p>{% capture includecontent %} TODO {% endcapture %}</p>
+<td><p>{% capture includecontent %} ImageJ2 {% endcapture %}</p>
 <p>{% include publication content=includecontent %}</p></td>
 </tr>
 <tr class="even">
 <td><p>{% include logo content='ImageJ1' %}</p></td>
 <td><p><a href="ImageJ_1.x" title="wikilink">ImageJ 1.x</a></p></td>
-<td><p>{% capture includecontent %} TODO {% endcapture %}</p>
+<td><p>{% capture includecontent %} ImageJ {% endcapture %}</p>
 <p>{% include publication content=includecontent %}</p></td>
 </tr>
 <tr class="odd">
@@ -74,19 +74,19 @@ Thank you for your support.
 <tr class="even">
 <td><p>{% include logo content='Fiji' %}</p></td>
 <td><p><a href="Fiji" title="wikilink">Fiji</a></p></td>
-<td><p>{% capture includecontent %} TODO {% endcapture %}</p>
+<td><p>{% capture includecontent %} Fiji {% endcapture %}</p>
 <p>{% include publication content=includecontent %}</p></td>
 </tr>
 <tr class="odd">
 <td><p>{% include logo content='BoneJ' %}</p></td>
 <td><p><a href="BoneJ" title="wikilink">BoneJ</a></p></td>
-<td><p>{% capture includecontent %} TODO {% endcapture %}</p>
+<td><p>{% capture includecontent %} BoneJ {% endcapture %}</p>
 <p>{% include publication content=includecontent %}</p></td>
 </tr>
 <tr class="even">
 <td><p>{% include logo content='Bio7' %}</p></td>
 <td><p><a href="Bio7" title="wikilink">Bio7</a></p></td>
-<td><p>{% capture includecontent %} TODO {% endcapture %}</p>
+<td><p>{% capture includecontent %} Bio7 {% endcapture %}</p>
 <p>{% include publication content=includecontent %}</p></td>
 </tr>
 <tr class="odd">
@@ -97,25 +97,25 @@ Thank you for your support.
 <tr class="even">
 <td><p>{% include logo content='ImgLib2' %}</p></td>
 <td><p><a href="ImgLib2" title="wikilink">ImgLib2</a></p></td>
-<td><p>{% capture includecontent %} TODO {% endcapture %}</p>
+<td><p>{% capture includecontent %} ImgLib2 {% endcapture %}</p>
 <p>{% include publication content=includecontent %}</p></td>
 </tr>
 <tr class="odd">
 <td><p>{% include logo content='SciJava' %}</p></td>
 <td><p><a href="SciJava_Common" title="wikilink">SciJava Common</a></p></td>
-<td><p>{% capture includecontent %} TODO {% endcapture %}</p>
+<td><p>{% capture includecontent %} SciJava Common {% endcapture %}</p>
 <p>{% include publication content=includecontent %}</p></td>
 </tr>
 <tr class="even">
 <td><p>{% include logo content='SCIFIO' %}</p></td>
 <td><p><a href="SCIFIO" title="wikilink">SCIFIO</a></p></td>
-<td><p>{% capture includecontent %} TODO {% endcapture %}</p>
+<td><p>{% capture includecontent %} SCIFIO {% endcapture %}</p>
 <p>{% include publication content=includecontent %}</p></td>
 </tr>
 <tr class="odd">
 <td><p>{% include logo content='ImageJ' %}</p></td>
 <td><p><a href="ImageJ_Ops" title="wikilink">ImageJ Ops</a></p></td>
-<td><p>{% capture includecontent %} TODO {% endcapture %}</p>
+<td><p>{% capture includecontent %} ImageJ Ops {% endcapture %}</p>
 <p>{% include publication content=includecontent %}</p></td>
 </tr>
 <tr class="even">

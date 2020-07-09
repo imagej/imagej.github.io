@@ -13,7 +13,7 @@ description: test description
 ## Publication
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} Micro-Manager {% endcapture %}
 
 {% include publication content=includecontent %}
 

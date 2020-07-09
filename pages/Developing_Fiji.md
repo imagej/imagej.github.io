@@ -21,7 +21,8 @@ you need to develop a *new plugin* for ImageJ, you do not actually need
 Fiji's source. Rather, see these resources:
 
   - 
-{% include github content='TODO' %}
+{% include github org='imagej' repo='example-legacy-plugin'
+label='example-legacy-plugin' %}
 
 `project template`
 

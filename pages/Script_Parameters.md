@@ -107,7 +107,8 @@ present then they will be rendered as drop-down buttons. {% endcapture
 
 {% include warning-box content=includecontent %}
 
-By implementing {% capture includecontent %} TODO {% endcapture %}
+By implementing {% capture includecontent %} project = SciJava | package
+= org/scijava/widget | class = InputWidget {% endcapture %}
 
 {% include javadoc content=includecontent %}
 

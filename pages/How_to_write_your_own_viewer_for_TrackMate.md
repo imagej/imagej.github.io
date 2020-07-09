@@ -45,16 +45,22 @@ different interface:
 
   - The
 
-{% include github content='TODO' %} , that is the actual view of the
-model. All the hard work is done here.
+{% include github org='fiji' repo='TrackMate'
+source='fiji/plugin/trackmate/visualization/TrackMateModelView.java'
+label='TrackMateModelView' %} , that is the actual view of the model.
+All the hard work is done here.
 
   - The
 
-{% include github content='TODO' %}
+{% include github org='fiji' repo='TrackMate'
+source='fiji/plugin/trackmate/visualization/ViewFactory.java'
+label='ViewFactory' %}
 
-`that is a factory in charge of instantiating the view and of the integration in TrackMate. This interface extends the`
+`that is a factory in charge of instantiating the view and of the integration in TrackMate. This interface extends the `
 
-{% include github content='TODO' %}
+{% include github org='fiji' repo='TrackMate'
+source='fiji/plugin/trackmate/TrackMateModule.java'
+label='TrackMateModule' %}
 
 `interface, so we expect to find there some of the methods we discussed earlier, and the `[`SciJava`](SciJava "wikilink")` annotation. `
 
@@ -74,7 +80,9 @@ next tutorial.
 
 Right now, we just focus on building the view.
 
-\== The {% include github content='TODO' %} . ==
+\== The {% include github org='fiji' repo='TrackMate'
+source='fiji/plugin/trackmate/visualization/ViewFactory.java'
+label='ViewFactory' %} . ==
 
 The factory itself has nothing particular. On top of the TrackMateModule
 methods, it just has a method to instantiate the view it controls:
@@ -87,7 +95,9 @@ public TrackMateModelView create( final Model model, final Settings settings, fi
 You can see that we can possibly pass 3 parameters to the constructor of
 the view itself: the model of course, but also the settings object, so
 that we can find there a link to the image object. The {% include github
-content='TODO' %}
+org='fiji' repo='TrackMate'
+source='fiji/plugin/trackmate/visualization/hyperstack/HyperStackDisplayerFactory.java'
+label='HyperStackDisplayer' %}
 
 `uses it to retrieve the ImagePlus over which to display the TrackMate data.`
 
@@ -95,7 +105,9 @@ The selection model is also offered, and the instance passed is the
 common one used in the GUI, so that a selection made by the user can be
 shared amongst all views.
 
-\== The {% include github content='TODO' %}
+\== The {% include github org='fiji' repo='TrackMate'
+source='fiji/plugin/trackmate/visualization/TrackMateModelView.java'
+label='TrackMateModelView' %}
 
 `interface. ==`
 
@@ -174,7 +186,9 @@ settings that ought to be common to all views. These are the settings
 you can tune on the antepenultimate panel of the GUI (spot visible or
 not, color by feature, etc...). If you feel like it, your view can just
 ignore them. Otherwise, their keys and desired classes are defined in
-the {% include github content='TODO' %}
+the {% include github org='fiji' repo='TrackMate'
+source='fiji/plugin/trackmate/visualization/TrackMateModelView.java'
+label='TrackMateModelView' %}
 
 `interface. Check the static fields there.`
 
@@ -220,19 +234,25 @@ The event itself can report 5 types of changes:
     spot, or moved it in space, or changed its size, or add an edge
     between two spots, etc... In that case, the
 
-{% include github content='TODO' %}
+{% include github org='fiji' repo='TrackMate'
+source='fiji/plugin/trackmate/ModelChangeEvent.java'
+label='ModelChangeEvent' %}
 
 `instance can be interrogated to know what was changed, deleted, added, etc...`
 
 ### Listening to selection changes.
 
 The TrackMate GUI shares a common instance of {% include github
-content='TODO' %}
+org='fiji' repo='TrackMate'
+source='fiji/plugin/trackmate/SelectionModel.java'
+label='SelectionModel' %}
 
 `that stores the selection the user made. This is convenient when exploring the tracking results. `
 
 Your view can be kept in sync with the selection changes by implementing
-the {% include github content='TODO' %}
+the {% include github org='fiji' repo='TrackMate'
+source='fiji/plugin/trackmate/SelectionChangeListener.java'
+label='SelectionChangeListener' %}
 
 `interface. It adds a single method:`
 
@@ -246,7 +266,9 @@ Let's keep our custom view simple: we will just build an event logger
 that recycles the IJ logger window to echo what happens to the model. We
 then of course have to implement the two listener interfaces mentioned
 above. But the code stays pretty simple: check {% include github
-content='TODO' %}
+org='fiji' repo='TrackMate-examples'
+source='plugin/trackmate/examples/view/EventLoggerView.java'
+label='here' %}
 
 `for the details.`
 
@@ -364,7 +386,7 @@ But how could I make use of it then? you want to ask. Fortunately, this
 is just the subject of the next tutorial, on TrackMate actions. See you
 there.
 
-{% include person content='TODO' %}
+{% include person content='JeanYvesTinevez' %}
 
 `(`[`talk`](User_talk:JeanYvesTinevez "wikilink")`) 10:51, 17 March 2014 (CDT)`
 

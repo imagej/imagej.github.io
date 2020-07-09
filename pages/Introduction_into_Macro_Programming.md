@@ -426,7 +426,7 @@ tools into the toolbar:
 
 ``` java
 // A click on the empty rectangle will have the same
-// effect as
+// effect as 
 {% include bc content='File | Save As | Jpeg...' %}
 
 

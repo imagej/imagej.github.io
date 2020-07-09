@@ -88,7 +88,7 @@ or "stack trace".
 
 {% include key content='Ctrl|A' %}
 
-`to select it, then`
+`to select it, then `
 
 {% include key content='Ctrl|C' %}
 
@@ -253,7 +253,7 @@ mapping using the
 [Brightness/Contrast](https://imagej.net/docs/guide/146-28.html#sub:Adjust)
 dialog under the {% include bc content='Image | Adjust' %}
 
-`menu (shortcut:`
+`menu (shortcut: `
 
 {% include key content='shift' %} + {% include key content='C' %} ).
 
@@ -458,7 +458,8 @@ maximum pixel numbers allowed per plane will be 1/2 (1 gigapixels) or
 but uses the [ImageJ1](ImageJ1 "wikilink") user interface by default,
 which once again limits visualization to 2 gigapixels. The [ImageJ2
 team](Contributors "wikilink") is working to lift these size
-restrictions; see {% include github content='TODO' %} .
+restrictions; see {% include github org='imagej' repo='imagej'
+issue='87' label='imagej/imagej\#87' %} .
 
 ## UnsupportedClassVersionError
 

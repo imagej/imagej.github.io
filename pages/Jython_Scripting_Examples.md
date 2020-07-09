@@ -1382,14 +1382,16 @@ completely **unmaintained**.
 Then open the [Fiji Updater](Fiji_Updater "wikilink"), push the "Manage
 update sites" at the bottom left of the dialog, and install the
 [FFMPEG](https://fiji.sc/~schindelin/ffmpeg-plugins/) plugin by {%
-include person content='TODO' %}
+include person content='Schindelin' %}
 
 `by ticking its checkbox, as `[`explained``   ``in``   ``more`` 
  ``detail`` 
  ``here`](How_to_follow_a_3rd_party_update_site "wikilink")`.`
 
-See also the Java source code for the {% include github content='TODO'
-%}
+See also the Java source code for the {% include github repo='fiji'
+tag='8164ae68'
+path='native/FFMPEG\_IO/plugin/src/main/java/fiji/ffmpeg/IO.java'
+label='IO' %}
 
 `class from the `[`FFMPEG``   ``plugin``   ``source``   ``code`` 
  ``site`](https://github.com/fiji/fiji/tree/8164ae68/native/FFMPEG_IO/plugin/src/main/java/fiji/ffmpeg/)`.`
@@ -2320,40 +2322,56 @@ similarly be handle by the updater to populate an update site.
 # Jython examples in Fiji
 
   - 
-{% include github content='TODO' %}
+{% include github repo='fiji'
+path='plugins/Examples/Find\_Dimension\_of\_Raw\_Image.py' label='Find'
+%}
 
   - 
-{% include github content='TODO' %}
+{% include github repo='fiji'
+path='plugins/Examples/Edit\_LUT\_As\_Text.py' label='Edit' %}
 
   - 
-{% include github content='TODO' %}
+{% include github repo='fiji'
+path='plugins/Examples/Delayed\_Snapshot.py' label='Delayed' %}
 
   - 
-{% include github content='TODO' %}
+{% include github repo='fiji'
+path='plugins/Examples/Command\_Launchers/Command\_Launcher\_Python.py'
+label='Command' %}
 
   - 
-{% include github content='TODO' %}
+{% include github repo='fiji'
+path='plugins/Examples/list\_all\_threads.py' label='List' %}
 
   - 
-{% include github content='TODO' %}
+{% include github repo='fiji' path='plugins/Examples/chess\_.py'
+label='Chess' %}
 
   - 
-{% include github content='TODO' %}
+{% include github repo='fiji'
+path='plugins/Examples/TrakEM2\_Example\_Scripts/extract\_stack\_under\_arealist.py'
+label='Extract' %}
 
 `in TrakEM2.`
 
   - 
-{% include github content='TODO' %}
+{% include github repo='fiji'
+path='plugins/Examples/TrakEM2\_Example\_Scripts/T2\_set\_all\_transforms\_to\_identity.py'
+label='Set' %}
 
 `for TrakEM2 objects.`
 
   - 
-{% include github content='TODO' %}
+{% include github repo='fiji'
+path='plugins/Examples/TrakEM2\_Example\_Scripts/T2\_Select\_All.py'
+label='Select' %}
 
 `objects in TrakEM2.`
 
   - 
-{% include github content='TODO' %}
+{% include github repo='fiji'
+path='plugins/Examples/TrakEM2\_Example\_Scripts/Measure\_AreaLists.py'
+label='Measure' %}
 
 `in TrakEM2.`
 

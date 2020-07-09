@@ -715,7 +715,7 @@ what we changed from the default, that was pretty simple:
 Now that you know how the plugin works, you should be able to reach the
 end result in less than 30 seconds...
 
-{% include person content='TODO' %}
+{% include person content='JeanYvesTinevez' %}
 
 `(`[`talk`](User_talk:JeanYvesTinevez "wikilink")`) 04:18, 1 August 2013 (CDT)`
 

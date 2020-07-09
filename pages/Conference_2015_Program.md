@@ -156,7 +156,7 @@ and a new powerful Undo framework. Finally, Icy is always evolving,
 thanks to the feedback of all its users on
 http://icy.bioimageanalysis.org/support \!
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} Icy {% endcapture %}
 
 {% include publication content=includecontent %}
 
@@ -620,7 +620,7 @@ different functionalities of Icy in action, from visualization (2D/3D)
 to analysis based on a real biologic case with a lot of analysis traps
 \! Let's investigate \!
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} Icy {% endcapture %}
 
 {% include publication content=includecontent %}
 
@@ -920,7 +920,7 @@ In this poster we present a panel of Icy's features. Live demo based on
 your images, and we will try to process them thanks to one of the 300
 image analysis plugins available in Icy \!
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} Icy {% endcapture %}
 
 {% include publication content=includecontent %}
 

@@ -21,7 +21,7 @@ scripts in several different languages.
 {% include key content='\[' %}
 
 `key to open the `[`Script`` 
- ``Editor`](Script_Editor "wikilink")` (or`
+ ``Editor`](Script_Editor "wikilink")` (or `
 
 {% include key content='Shift' %} - {% include key content='\[' %}
 
@@ -95,7 +95,7 @@ following common features.
   - 
 {% include key content='enter' %}
 
-`or`
+`or `
 
 {% include key content='return' %}
 

@@ -107,7 +107,7 @@ try the following:
 
 {% include key content='\<' %}
 
-`and`
+`and `
 
 {% include key content='\>' %}
 
@@ -123,7 +123,7 @@ try the following:
 {% include key content='Ctrl|Shift|mouse-wheel' %} , or {% include key
 content='Up' %}
 
-`and`
+`and `
 
 {% include key content='Down' %}
 
@@ -145,7 +145,7 @@ mouse:
 </tr>
 <tr class="even">
 <td><p>{% include key content='right-click|drag' %}</p>
-<p><code>or</code></p>
+<p><code>or </code></p>
 <p>{% include key content='middle-click|drag' %}</p></td>
 <td><p>Translate in the XY-plane.</p></td>
 </tr>
@@ -155,7 +155,7 @@ mouse:
 </tr>
 <tr class="even">
 <td><p>{% include key content='Cmd|mouse-wheel' %}</p>
-<p><code>or</code></p>
+<p><code>or </code></p>
 <p>{% include key content='Shift|Ctrl|mouse-wheel' %}</p></td>
 <td><p>Zoom in and out.</p></td>
 </tr>
@@ -189,7 +189,7 @@ keyboard shortcuts:
 </tr>
 <tr class="even">
 <td><p>{% include key content='Shift|Y' %}</p>
-<p><code>or</code></p>
+<p><code>or </code></p>
 <p>{% include key content='Shift|A' %}</p></td>
 <td><p>Rotate to the XZ-plane of the current source. (Look along the Y-axis of the current source.)</p></td>
 </tr>
@@ -199,13 +199,13 @@ keyboard shortcuts:
 </tr>
 <tr class="even">
 <td><p>{% include key content='[' %}</p>
-<p><code>or</code></p>
+<p><code>or </code></p>
 <p>{% include key content='N' %}</p></td>
 <td><p>Move to previous timepoint.</p></td>
 </tr>
 <tr class="odd">
 <td><p>{% include key content=']' %}</p>
-<p><code>or</code></p>
+<p><code>or </code></p>
 <p>{% include key content='M' %}</p></td>
 <td><p>Move to next timepoint.</p></td>
 </tr>
@@ -276,7 +276,7 @@ Using the current source checkboxes (A in the figure above), you can
 switch between available sources. The first ten sources can also be made
 current by the number keys {% include key content='1' %}
 
-`through`
+`through `
 
 {% include key content='0' %}
 
@@ -291,7 +291,7 @@ fused mode using the shortcut {% include key content='F' %}
 In fused mode individual sources can be turned on and off using the
 checkboxes (C) or shortcuts {% include key content='Shift|1' %}
 
-`through`
+`through `
 
 {% include key content='Shift|0' %}
 
@@ -335,7 +335,7 @@ sources of a *group* can be activated or deactivated at once.
 Source grouping is handled in the visibility and grouping dialog, too
 (menu {% include bc content='Settings | Visibility & Grouping' %}
 
-`or shortcut`
+`or shortcut `
 
 {% include key content='F6' %} ).
 
@@ -371,12 +371,12 @@ the main BigDataViewer window act on groups instead of individual
 sources. That is, groups 1 through 10 can be made current by keys {%
 include key content='1' %}
 
-`through`
+`through `
 
 {% include key content='0' %} . Similarly, shortcuts {% include key
 content='Shift|1' %}
 
-`through`
+`through `
 
 {% include key content='Shift|0' %}
 
@@ -392,7 +392,7 @@ top of the main window.
 To change the brightness, contrast, or color of particular sources
 select {% include bc content='Settings | Brightness & Color' %}
 
-`or press the shortcut`
+`or press the shortcut `
 
 {% include key content='S' %} . This brings up the brightness and color
 settings dialog.
@@ -498,7 +498,7 @@ content='esc' %} .
 Note, that bookmark shortcuts are case-sensitive, i.e., {% include key
 content='A' %}
 
-`and`
+`and `
 
 {% include key content='Shift|A' %}
 
@@ -524,7 +524,7 @@ settings.
 
 Select {% include bc content='File | Save settings' %}
 
-`from the menu to store settings to an XML file, and`
+`from the menu to store settings to an XML file, and `
 
 {% include bc content='File | Load settings' %}
 
@@ -903,7 +903,7 @@ about 200 processors working in parallel.
 ## Publication
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} BigDataViewer {% endcapture %}
 
 {% include publication content=includecontent %}
 

@@ -289,10 +289,11 @@ The "run" method may also be particularly useful for calling existing
 ImageJ plugins and commands. The next section has an example of the use
 of this. It may be instructive to compare the ["Blobs Demo"
 macro](https://imagej.net/macros/ConvexHull.txt) from the ImageJ
-distribution with {% include github content='TODO' %} . The use of the
-analagous function in JRuby is not always the same - for example, if you
-compare the invocation of getSelectionCoordinates, you'll find that
-whereas the ImageJ macro version passes in the output variables:
+distribution with {% include github repo='fiji'
+path='plugins/Examples/Blobs\_Demo\_in\_Ruby.rb' label='a' %} . The use
+of the analagous function in JRuby is not always the same - for example,
+if you compare the invocation of getSelectionCoordinates, you'll find
+that whereas the ImageJ macro version passes in the output variables:
 
 ` getSelectionCoordinates(xCoordinates, yCoordinates);`
 
@@ -303,7 +304,7 @@ whereas the ImageJ macro version passes in the output variables:
 A note for the interested programmer: About 15% of the macro functions
 have be done so far, and if anyone wanted to help out with doing the
 rest, that would be excellent\! The source code {% include github
-content='TODO' %} .
+repo='fiji' path='plugins/JRuby/imagej.rb' label='can' %} .
 
 ## Example: Generating Red/Cyan Anaglyphs
 
@@ -361,7 +362,8 @@ scijava|repo=scripting-jruby|path=src/main/resources/script\_templates/Intro/Gre
 
 ## Library
 
-There is a library called {% include github content='TODO' %}
+There is a library called {% include github repo='fiji'
+path='plugins/JRuby/imagej.rb' label='imagej.rb' %}
 
 `for convenience. It contains a number of useful functions related to ImageJ. It is loaded by default when creating a new JRuby script in the `[`Script`` 
  ``Editor`](Script_Editor "wikilink")`.`

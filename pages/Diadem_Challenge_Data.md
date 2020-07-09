@@ -227,7 +227,7 @@ picks out the brown coloured neuronal processes. However, a simple way
 just for viewing purposes is to use the {% include bc content='Image |
 Color | RGB to Luminance' %}
 
-`option.  (Another option is to use`
+`option.  (Another option is to use `
 
 {% include bc content='Image | Type | 8-bit' %} .) This will produce
 results like this:

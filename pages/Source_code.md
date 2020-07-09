@@ -16,7 +16,8 @@ it is well worth investing a little bit of time to understand.
 
 ## Where is the code?
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} tip=You can search the source code at
+http://search.imagej.net/ using the GitHub button\! {% endcapture %}
 
 {% include tip content=includecontent %}
 

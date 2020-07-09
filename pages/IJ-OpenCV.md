@@ -33,7 +33,7 @@ site](http://sites.imagej.net/IJ-OpenCV/).
 ## Publication
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} IJ-OpenCV {% endcapture %}
 
 {% include publication content=includecontent %}
 

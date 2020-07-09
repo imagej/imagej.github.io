@@ -68,7 +68,8 @@ snippets can be found
 ### Javadocs
 
 The Fiji Javadocs provide detailed information about the {% capture
-includecontent %} TODO {% endcapture %}
+includecontent %} package = ij3d | class = package-summary | label = 3D
+Viewer API {% endcapture %}
 
 {% include javadoc content=includecontent %} .
 
@@ -116,7 +117,7 @@ addidtional, potentially useful information.
 ## Publication
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} 3D Viewer {% endcapture %}
 
 {% include publication content=includecontent %}
 

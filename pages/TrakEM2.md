@@ -314,7 +314,7 @@ and floating text labels.](TrakEM2_Display_segmentations.png
 ## Publication
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} TrakEM2 {% endcapture %}
 
 {% include publication content=includecontent %}
 

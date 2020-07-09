@@ -53,7 +53,7 @@ using the following controls:
 
 {% include key content='D' %}
 
-`- Move around (hold`
+`- Move around (hold `
 
 {% include key content='Shift' %}
 

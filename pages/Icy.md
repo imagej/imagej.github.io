@@ -8,7 +8,16 @@ categories: Related Software,SciJava,Citable
 description: test description
 ---
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} name = Icy | software = Icy | logo =
+![Icy-icon.png](Icy-icon.png "Icy-icon.png") | author =
+[QuIA](http://www.bioimageanalysis.org/) at [Institut
+Pasteur](http://www.pasteur.fr/en) | maintainer =
+[QuIA](http://www.bioimageanalysis.org/) at [Institut
+Pasteur](http://www.pasteur.fr/en) | source = [on
+GitHub](https://github.com/Icy-imaging) | status = Active | website =
+http://icy.bioimageanalysis.org/
+
+{% endcapture %}
 
 {% include info-box content=includecontent %} Icy is an open community
 platform for bioimage informatics, providing software resources to
@@ -17,7 +26,7 @@ visualize, annotate and quantify bioimaging data.
 ## Publication
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} Icy {% endcapture %}
 
 {% include publication content=includecontent %}
 

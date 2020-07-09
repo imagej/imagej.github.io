@@ -26,7 +26,7 @@ lines of code to begin with.
 After pointing the web browser to a specific repository, typing the {%
 include key content='T' %}
 
-`key will let you type out parts of the file name and hit`
+`key will let you type out parts of the file name and hit `
 
 {% include key content='Enter' %}
 

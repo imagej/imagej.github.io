@@ -176,8 +176,8 @@ jrunscript bootstrap.js help
 ```
 
 This uses the **jrunscript** executable of your Java installation to run
-the Javascript file tracked in ImageJ's {% include github content='TODO'
-%} .
+the Javascript file tracked in ImageJ's {% include github org='imagej'
+repo='imagej-updater' path='bin/bootstrap.js' label='source' %} .
 
 The `bootstrap.js` script was originally intended to fix broken
 [Fiji](Fiji "wikilink") installations, and was subsequently enhanced to

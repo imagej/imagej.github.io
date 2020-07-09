@@ -15,17 +15,17 @@ measure phenotypes from thousands of images automatically.
 ## Publications
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} CellProfiler3 {% endcapture %}
 
 {% include publication content=includecontent %}
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} CellProfiler2 {% endcapture %}
 
 {% include publication content=includecontent %}
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} CellProfiler {% endcapture %}
 
 {% include publication content=includecontent %}
 

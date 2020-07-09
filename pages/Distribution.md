@@ -226,7 +226,7 @@ use them.
 <li>Prepare an HTML page modeled after the <a href="https://imagej.net/plugins/index.html">list of ImageJ 1.x plugins</a>.</li>
 <li>Email it to</li>
 </ul>
-<p>{% include person content='TODO' %} , the developer of ImageJ 1.x, and sole maintainer of the <a href="https://imagej.net/index.html">ImageJ 1.x website</a>.</p></td>
+<p>{% include person content='Rasband' %} , the developer of ImageJ 1.x, and sole maintainer of the <a href="https://imagej.net/index.html">ImageJ 1.x website</a>.</p></td>
 </tr>
 <tr class="even">
 <td></td>

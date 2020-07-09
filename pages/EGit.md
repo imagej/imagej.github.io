@@ -44,7 +44,7 @@ To have the EGit panes available you might need to set the following up:
 
 {% include bc content='Window |Show View | Others...' %}
 
-`and select under`
+`and select under `
 
 {% include bc content='|Git' %}
 
@@ -70,7 +70,7 @@ an intro on how to clone a public github repository (see below).
 
 {% include key content='Next \>' %}
 
-`and select the branch(es) you would like to clone (then hit`
+`and select the branch(es) you would like to clone (then hit `
 
 {% include key content='Next \>' %} )
 

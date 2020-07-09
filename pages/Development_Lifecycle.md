@@ -323,21 +323,23 @@ Developer-facing components together: the [Bill of
 Materials](BOM "wikilink") (BOM). To ensure users and developers see the
 same functionality, components should only be uploaded to the core
 update sites when their version is also updated in the {% include github
-content='TODO' %}
+org='scijava' repo='pom-scijava' label='pom-scijava' %}
 
 `BOM.`
 
 To update the version of your component listed in the {% include github
-content='TODO' %}
+org='scijava' repo='pom-scijava' label='pom-scijava' %}
 
 `BOM, you should follow the `[`External`` 
- ``developer`](#Phase_1:_In_development "wikilink")` instructions for contributing to`
+ ``developer`](#Phase_1:_In_development "wikilink")` instructions for contributing to `
 
-{% include github content='TODO' %} . By [submitting a pull
+{% include github org='scijava' repo='pom-scijava' label='pom-scijava'
+%} . By [submitting a pull
 request](https://help.github.com/articles/using-pull-requests/) that
 simply modifies the managed version of your component, you will signal
 to the core SciJava developers that your project is ready for upload.
-For example, {% include github content='TODO' %}
+For example, {% include github org='scijava' repo='pom-scijava' pr='40'
+label='this' %}
 
 `updates the managed version of `[`Bio-Formats`](Bio-Formats "wikilink")` to 5.5.0.`
 
@@ -370,13 +372,14 @@ site](update_site "wikilink").
 
   - The core ImageJ update site reflects the state of the newest
 
-{% include github content='TODO' %}
+{% include github org='imagej' repo='imagej' label='net.imagej:imagej'
+%}
 
 `release.`
 
   - The core Fiji update site reflects the state of the newest
 
-{% include github content='TODO' %}
+{% include github org='fiji' repo='fiji' label='sc.fiji:fiji' %}
 
 `release.`
 

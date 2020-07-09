@@ -8,7 +8,15 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} name = Selective Plane Illumination
+Microscopy Bead-based Registration | software = ImageJ | author =
+Stephan Preibisch, Stephan Saalfeld, Johannes Schindelin, Pavel Tomancak
+| maintainer = Stephan Preibisch | filename = SPIM\_Registration.jar |
+released = February 2010 | latest version = October 2011 | category =
+[SPIM Registration](:Category:Registration "wikilink") | website =
+[Stephan Preibisch's homepage](http://fly.mpi-cbg.de/~preibisch)
+
+{% endcapture %}
 
 {% include info-box content=includecontent %}
 

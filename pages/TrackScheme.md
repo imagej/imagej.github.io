@@ -156,7 +156,7 @@ well. Press the {% include key content='Delete' %}
 Removing a link often splits a track in 2 new tracks. To have them
 properly re-arranged, press the **Redo layout** button.
 
-{% include person content='TODO' %}
+{% include person content='JeanYvesTinevez' %}
 
 `(`[`talk`](User_talk:JeanYvesTinevez "wikilink")`) 09:21, 5 August 2013 (CDT)`
 

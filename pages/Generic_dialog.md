@@ -10,15 +10,17 @@ description: test description
 
 ## Introduction
 
-The {% capture includecontent %} TODO {% endcapture %}
+The {% capture includecontent %} project = ImageJ1 | package = ij/gui |
+class = GenericDialog {% endcapture %}
 
 {% include javadoc content=includecontent %}
 
 `class is part of `[`ImageJ1`](ImageJ1 "wikilink")` and can be used to make simple graphical user interfaces for scripts and plugins. It requires a bit more of work than with the `[`script`` 
  ``parameters`](Script_Parameters "wikilink")` option but offers more possibilities.`  
-`Fiji offers an additional`
+`Fiji offers an additional `
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} project = Fiji | package = fiji/util/gui |
+class = GenericDialogPlus {% endcapture %}
 
 {% include javadoc content=includecontent %}
 
@@ -126,7 +128,8 @@ details.
 By default, script and plugins process the last selected image.  
 However sometime one needs to specify different images or files as
 input.  
-The subclass {% capture includecontent %} TODO {% endcapture %}
+The subclass {% capture includecontent %} project = Fiji | package =
+fiji/util/gui | class = GenericDialogPlus {% endcapture %}
 
 {% include javadoc content=includecontent %}
 
@@ -190,8 +193,8 @@ Services are some ImageJ2/SciJava features that can be though of as some
 kind of package import at runtime. They are not available in a plain
 ImageJ1, thus an alternative to recall parameter in ImageJ1 is to use a
 temp file to store the previously entered parameters.  
-Here's the link to the {% capture includecontent %} TODO {% endcapture
-%}
+Here's the link to the {% capture includecontent %} project = SciJava |
+package = org/scijava/prefs | class = PrefService {% endcapture %}
 
 {% include javadoc content=includecontent %} .  
 And below is a Jython example of how to use it.

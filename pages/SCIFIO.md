@@ -96,7 +96,7 @@ advantages:
 ## Publications
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} SCIFIO {% endcapture %}
 
 {% include publication content=includecontent %}
 

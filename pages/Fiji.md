@@ -20,8 +20,8 @@ scientific image analysis.
   - **[For developers](Developing_Fiji "wikilink")** - Fiji is an open
     source project hosted in a [Git](Git "wikilink") version control
 
-{% include github content='TODO' %} , with access to the source code of
-all internals, libraries and plugins, and eases the
+{% include github repo='fiji' label='repository' %} , with access to the
+source code of all internals, libraries and plugins, and eases the
 [development](Development "wikilink") and
 [scripting](Scripting_Help "wikilink") of plugins.
 
@@ -38,7 +38,8 @@ General Public License](GPL "wikilink").
 Fiji builds on top of the [ImageJ2](ImageJ2 "wikilink") core, which is
 licensed under the permissive [BSD 2-Clause license](BSD "wikilink").
 
-Plugins and other components have {% include github content='TODO' %} .
+Plugins and other components have {% include github repo='fiji'
+path='LICENSES' label='their' %} .
 
 See the [Licensing](Licensing "wikilink") page for details.
 
@@ -68,7 +69,7 @@ community](Contact "wikilink").
 ## Publication
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} Fiji {% endcapture %}
 
 {% include publication content=includecontent %}
 

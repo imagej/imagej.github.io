@@ -18,7 +18,7 @@ on the same topic.
 
 There is a convenient online search interface:
 
-{% include big-link content='url=https://search.imagej.net/' %}
+{% include big-link url='https://search.imagej.net/' %}
 
 # Getting help with ImageJ
 

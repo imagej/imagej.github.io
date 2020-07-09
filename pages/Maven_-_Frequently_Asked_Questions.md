@@ -12,14 +12,16 @@ description: test description
 
 # What does the POM version mean?
 
-The {% include github content='TODO' %}
+The {% include github org='imagej' repo='example-legacy-plugin'
+path='pom.xml' label='pom.xml' %}
 
-`of `[`example-legacy-plugin`](https://github.com/imagej/example-legacy-plugin/)` inherits from a parent called`
+`of `[`example-legacy-plugin`](https://github.com/imagej/example-legacy-plugin/)` inherits from a parent called `
 
-{% include github content='TODO' %} . This parent POM defines and
-configures many things so that the POMs of individual plugin projects
-are shorter (i.e., so they don't have to repeat things) and more
-consistent (i.e., so they do not forget to define crucial metadata).
+{% include github org='scijava' repo='pom-scijava' path='pom.xml'
+label='pom-scijava' %} . This parent POM defines and configures many
+things so that the POMs of individual plugin projects are shorter (i.e.,
+so they don't have to repeat things) and more consistent (i.e., so they
+do not forget to define crucial metadata).
 
 The version of `pom-scijava` (`14.0.0` as of this writing) indicates the
 version of that parent POM. We occasionally improve the parent POM,
@@ -57,13 +59,15 @@ In many `pom.xml` files which extend `pom-scijava`, you can see that the
 dependency versions are omitted. The versions are defined (or "managed")
 by the pom-scijava parent configuration as part of its [Bill of
 Materials](Bill_of_Materials "wikilink")—e.g., {% include github
-content='TODO' %}
+org='scijava' repo='pom-scijava' tag='pom-scijava-14.0.0'
+path='pom.xml\#L218-L219' label='here' %}
 
 `is where the ImageJ 1.x version is defined.`
 
   - Browse the latest `pom-scijava`
 
-{% include github content='TODO' %} .
+{% include github org='scijava' repo='pom-scijava' path='pom.xml'
+label='here' %} .
 
   - Browse the available versions of ImageJ 1.x
     [here](http://maven.imagej.net/content/groups/public/net/imagej/ij/).
@@ -87,12 +91,14 @@ down, rather than trying to "build up" from zero.
 
 # What's this: *Property 'imagej.app.directory' or 'scijava.app.directory' unset; Skipping copy-jars*
 
-This is part of the {% include github content='TODO' %}
+This is part of the {% include github org='imagej'
+repo='imagej-maven-plugin' label='imagej-maven-plugin' %}
 
 `(enabled for you by pom-scijava). `
 
 For pom-scijava\>=24.0.0, imagej-maven-plugin was replaced by {% include
-github content='TODO' %} .  
+github org='scijava' repo='scijava-maven-plugin'
+label='scijava-maven-plugin' %} .  
 As you suspected, it copies your plugin's *.jar* file together with its
 dependencies to your ImageJ jars or plugins folder. To do so, you have
 to provide the path to your ImageJ.app (or Fiji.app) as an additional

@@ -57,7 +57,7 @@ would be more applicable to one of the supporting technologies such as
 ## ImageJ1
 
 Changes to [ImageJ1](ImageJ1 "wikilink") are made by {% include person
-content='TODO' %} , who is the sole [ImageJ1](ImageJ1 "wikilink")
+content='Rasband' %} , who is the sole [ImageJ1](ImageJ1 "wikilink")
 developer. He takes patch submissions and then reworks them to fit
 within the project's development model and style before merging them.
 Attribution for the changes is noted in the release notes (see
@@ -75,8 +75,8 @@ Methods of getting the patch to Wayne include:
     patch.
   - Submit a pull request on GitHub against
 
-{% include github content='TODO' %} . Please note, though, that none of
-[the past Pull
+{% include github org='imagej' repo='imagej1' label='the' %} . Please
+note, though, that none of [the past Pull
 Requests](https://github.com/imagej/imagej1/pulls?q=is%3Apr+is%3Aclosed)
 were merged using the standard Git workflow.
 

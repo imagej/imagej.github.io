@@ -29,17 +29,20 @@ for its central class hierarchies.
 At the time of this writing, the central image data structures are:
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} package = net/imglib2/meta | class =
+ImgPlus {% endcapture %}
 
 {% include javadoc content=includecontent %}
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} package = net/imagej | class = Dataset {%
+endcapture %}
 
 {% include javadoc content=includecontent %}
 
-`and`
+`and `
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} package = net/imagej | class =
+DefaultDataset {% endcapture %}
 
 {% include javadoc content=includecontent %}

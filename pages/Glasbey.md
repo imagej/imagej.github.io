@@ -8,7 +8,14 @@ categories:
 description: test description
 ---
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} name = Glasbey | software = Discontinuous
+color table | maintainer = Gabriel Landini | source =
+[1](https://github.com/fiji/fiji/blob/master/luts/glasbey.lut) and
+[2](https://github.com/fiji/fiji/blob/master/luts/glasbey_inverted.lut)
+| category =
+[:Category:Color\_processing](:Category:Color_processing "wikilink")
+
+{% endcapture %}
 
 {% include info-box content=includecontent %} ![Glasbey.png](Glasbey.png
 "Glasbey.png")The Glasbey lookup table (LUT) is a color table structured
@@ -49,6 +56,12 @@ loss of data fidelity.](JPEG-glasbey.png
 The Glasbey LUT is based on the publication:
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Glasbey | first = Chris | last2 =
+van der Heijden | first2 = Gerie | last3 = Toh | first3 = Vivian F. K. |
+last4 = Gray | first4 = Alision | year = 2007 | journal = Color Research
+& Application | url =
+http://onlinelibrary.wiley.com/doi/10.1002/col.20327/abstract | Colour
+displays for categorical images | volume = 32.4 | pages = 304-309 {%
+endcapture %}
 
 {% include citation content=includecontent %} .

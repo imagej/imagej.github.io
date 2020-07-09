@@ -130,7 +130,7 @@ Why not just call it "org.imglib" then? Wouldn't clash with
   -   
     Because imglib.org is registered by somebody else already.
 
-{% include person content='TODO' %}
+{% include person content='Saalfeld' %}
 
 `14:38, 24 March 2011 (CET)`
 
@@ -457,7 +457,7 @@ We have been discussing this several times with a two-folded answer:
 In principal, I strongly support introducing it. It makes total sense
 but it is a change in the core.
 
-{% include person content='TODO' %}
+{% include person content='Saalfeld' %}
 
 `17:03, 3 May 2011 (CEST)`
 
@@ -480,7 +480,7 @@ and does not has to do its own interface which would be incompatible
 with other people who would want to it. Could be named ReverseCursor or
 so...
 
-{% include person content='TODO' %}
+{% include person content='StephanP' %}
 
 `12:24, 4 May 2011 (CEST)`
 
@@ -500,7 +500,7 @@ etc...
 
 should we maybe change it as well to intPosition(), longPosition, etc?
 
-{% include person content='TODO' %}
+{% include person content='StephanP' %}
 
 `12:24, 4 May 2011 (CEST)`
 
@@ -542,7 +542,7 @@ final, it could potentially always be changed...
 The same applies for fwd(dim), bck(dim), move(dim), there a -- ++ and +=
 can replace a array lookup...
 
-{% include person content='TODO' %}
+{% include person content='StephanP' %}
 
 `12:27, 12 May 2011 (CEST)`
 
@@ -556,7 +556,7 @@ can replace a array lookup...
     need to implement that method in situations where it does not make
     sense at all, e.g. `ShapeImg`, that has no 1D.
 
-{% include person content='TODO' %}
+{% include person content='Saalfeld' %}
 
 `15:27, 12 May 2011 (CEST)`
 
@@ -568,7 +568,7 @@ can replace a array lookup...
     extends ArrayImg\<T,?\> & RandomAccessible1D\>, so no unchecked
     casts are necessary.
 
-{% include person content='TODO' %}
+{% include person content='StephanP' %}
 
 `16:15, 12 May 2011 (CEST)`
 
@@ -676,7 +676,7 @@ When done properly this has the potential to replace or at least
 simplify PlanarImg like containers since they could be expressed as a
 composition of multiple ArrayImg-s.
 
-{% include person content='TODO' %}
+{% include person content='Saalfeld' %}
 
 `16:11, 18 January 2012 (CET)`
 

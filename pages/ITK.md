@@ -63,7 +63,7 @@ output = otsu.execute(image, 2, 0, 255, True)
 To cite ITK, please use the following publication:
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} ITK {% endcapture %}
 
 {% include publication content=includecontent %}
 

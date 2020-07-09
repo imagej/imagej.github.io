@@ -93,12 +93,22 @@ depending on the value of the midgrey.
 ` pixel = ( pixel >= mid_gray ) ? object : background`
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Bernsen | first = J | year = 1986 |
+journal = Proc. of the 8th Int. Conf. on Pattern Recognition | Dynamic
+Thresholding of Grey-Level Images
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Sezgin | first = M | last2 = Sankur
+| first2 = B | year = 2004 | journal = Journal of Electronic Imaging |
+Survey over Image Thresholding Techniques and Quantitative Performance
+Evaluation | volume = 13(1) | pages = 146-165 | url =
+http://webdocs.cs.ualberta.ca/~nray1/CMPUT605/track3_papers/Threshold_survey.pdf
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 
@@ -114,7 +124,11 @@ the local maximum or minimum respectively. The procedure is an extreme
 case of Toggle Contrast Enhancement, see for example:
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Soille | first = P | year = 2004 |
+Morphological Image Analysis: Principles and applications. Springer |
+pages = 259
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 
@@ -183,7 +197,10 @@ implementation of the algorithm. The original algorithm is applied when
 C = 0.
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Niblack | first = W | year = 1986 |
+journal = | An introduction to Digital Image Processing, Prentice-Hall
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 
@@ -200,7 +217,13 @@ local set is a circular ROI and the central pixel is tested against the
 Otsu threshold found for that region.
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Otsu | first = N | year = 1979 |
+journal = IEEE Trans. Sys., Man., Cyber. | url =
+http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?&arnumber=4310076 | A
+threshold selection method from gray-level histograms | volume = 9 |
+pages = 62-66 | doi = 10.1109/TSMC.1979.4310076
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 
@@ -215,7 +238,15 @@ This is a modification of Sauvola's thresholding method to deal with low
 contrast images.
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Phansalskar | first = N | last2 =
+More | first2 = S | last3 = Sabale | first3 = A | last4 = Joshi | first4
+= M | year = 2011 | journal = International Conference on Communications
+and Signal Processing (ICCSP) | url =
+https://ieeexplore.ieee.org/document/5739305/ | pages = 218-220 |
+Adaptive local thresholding for detection of nuclei in diversity stained
+cytology images. | doi = 10.1109/ICCSP.2011.5739305
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 
@@ -252,7 +283,12 @@ number than 0 will change the default value.
 number than 0 will change the default value
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Sauvola | first = J | last2 =
+Pietaksinen | first2 = M | year = 2000 | journal = Pattern Recognition |
+Adaptive Document Image Binarization | volume = 33(2) | pages = 225-236
+|url = http://www.ee.oulu.fi/research/mvmp/mvg/files/pdf/pdf_24.pdf
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 

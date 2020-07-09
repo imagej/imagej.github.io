@@ -38,21 +38,29 @@ to hide it from the view menu. Hereby preventing the user to access it.
 No problem, we will now build an action that will launch it as a
 supplementary view.
 
-\== The {% include github content='TODO' %}
+\== The {% include github org='fiji' repo='TrackMate'
+source='fiji/plugin/trackmate/action/TrackMateActionFactory.java'
+label='TrackMateActionFactory' %}
 
 `interface. ==`
 
 Again, the action behavior and its integration in TrackMate are split in
 two classes. The behavior is described by the {% include github
-content='TODO' %}
+org='fiji' repo='TrackMate'
+source='fiji/plugin/trackmate/action/TrackMateAction.java'
+label='TrackMateAction' %}
 
-`interface. The integration mechanism is controlled by the`
+`interface. The integration mechanism is controlled by the `
 
-{% include github content='TODO' %}
+{% include github org='fiji' repo='TrackMate'
+source='fiji/plugin/trackmate/action/TrackMateActionFactory.java'
+label='TrackMateActionFactory' %}
 
-`interface, which extends the`
+`interface, which extends the `
 
-{% include github content='TODO' %}
+{% include github org='fiji' repo='TrackMate'
+source='fiji/plugin/trackmate/TrackMateModule.java'
+label='TrackMateModule' %}
 
 `interface. `
 
@@ -95,7 +103,9 @@ public TrackMateAction create( final TrackMateGUIController controller )
 
 This means that when we create our specific action, we have access to
 the some of GUI context through the controller. We therefore have to
-check its {% include github content='TODO' %}
+check its {% include github org='fiji' repo='TrackMate'
+source='fiji/plugin/trackmate/gui/TrackMateGUIController.java'
+label='API' %}
 
 `to know what we can get. It gives us access to:`
 
@@ -167,7 +177,9 @@ public class LaunchEventLoggerActionFactory implements TrackMateActionFactory
 
 Nothing complicated.
 
-\== The {% include github content='TODO' %}
+\== The {% include github org='fiji' repo='TrackMate'
+source='fiji/plugin/trackmate/action/TrackMateAction.java'
+label='TrackMateAction' %}
 
 `interface. ==`
 

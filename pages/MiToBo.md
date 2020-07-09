@@ -29,7 +29,7 @@ image analysis workflows can easily be designed graphically.
 ## Publication
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} MiToBo {% endcapture %}
 
 {% include publication content=includecontent %}
 

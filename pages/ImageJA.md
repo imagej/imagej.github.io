@@ -16,8 +16,8 @@ that it can be used with [Maven](Maven "wikilink") without hassles.
 ## Why ImageJA?
 
 The [ImageJ1](ImageJ1 "wikilink") project, developed by {% include
-person content='TODO' %} , lives in the {% include github content='TODO'
-%}
+person content='Rasband' %} , lives in the {% include github
+org='imagej' repo='imagej1' label='imagej/imagej1' %}
 
 `on `[`GitHub`](GitHub "wikilink")`. The imagej1 repository uses the Ant build system. Changes are pushed (at most) once per day, with a corresponding datestamp. This scheme has some drawbacks:`
 
@@ -47,7 +47,7 @@ something has changed, the job performs the following actions:
       - A `pom.xml` is added.
 4.  Commits and pushes the result to the `master` branch of the
 
-{% include github content='TODO' %}
+{% include github org='imagej' repo='ImageJA' label='imagej/ImageJA' %}
 
 `on `[`GitHub`](GitHub "wikilink")`.`
 

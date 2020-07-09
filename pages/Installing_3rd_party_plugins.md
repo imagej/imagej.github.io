@@ -95,7 +95,7 @@ Import' %} ,
 {% include bc content='File | Save' %} , {% include bc content='Analyze
 | Tools' %} , {% include bc content='Help | About' %}
 
-`and`
+`and `
 
 {% include bc content='Edit | Options' %} .
 

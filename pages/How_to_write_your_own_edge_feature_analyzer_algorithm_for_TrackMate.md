@@ -28,7 +28,9 @@ scalar numerical features to an edge, or a link between two spots in
 TrackMate. For instance, the instantaneous velocity is an edge feature
 (you need two linked spots to compute a displacement and a time
 interval), which happens to be provided by the algorithm named {%
-include github content='TODO' %} .
+include github org='fiji' repo='TrackMate'
+source='fiji/plugin/trackmate/features/edges/EdgeVelocityAnalyzer.java'
+label='EdgeVelocityAnalyzer.java' %} .
 
 ## TrackMate modules
 
@@ -46,13 +48,16 @@ and API wrap. There are 7 classes of modules:
 
 All of these modules implement an interface, specific to the module
 class. For instance, an edge analyzer algorithm will implement the {%
-include github content='TODO' %}
+include github org='fiji' repo='TrackMate'
+source='fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java'
+label='EdgeAnalyzer' %}
 
 `interface. `
 
 There is therefore 7 interfaces. They do have in common that they all
-extend the mother module interface called {% include github
-content='TODO' %} .
+extend the mother module interface called {% include github org='fiji'
+repo='TrackMate' source='fiji/plugin/trackmate/TrackMateModule.java'
+label='TrackMateModule' %} .
 
 TrackMateModule is used for two basic purpose:
 
@@ -88,9 +93,10 @@ new features.
 Before we step into the edge analyzers specific, you want to setup a
 development environment that will ease TrackMate module development.
 Rather than listing the requirement, just checkout {% include github
-content='TODO' %} , and clone it. It contains the files of this tutorial
-series and more importantly, is configured to depend on the latest
-TrackMate version, which will make it available to your code.
+org='fiji' repo='TrackMate-examples' label='this' %} , and clone it. It
+contains the files of this tutorial series and more importantly, is
+configured to depend on the latest TrackMate version, which will make it
+available to your code.
 
 Compiling this project with maven will generate a jar, that you will be
 able to drop in the fiji plugins folder. Your modules will then be
@@ -110,7 +116,9 @@ So create a package for your new analyzer in our project, for instance
 `fiji.plugin.trackmate.examples.edgeanalyzer`.
 
 In this package, create a class `EdgeAngleAnalyzer` and let it implement
-the {% include github content='TODO' %}
+the {% include github org='fiji' repo='TrackMate'
+source='fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java'
+label='EdgeAnalyzer' %}
 
 `interface. You should be getting something like this:`
 
@@ -141,7 +149,9 @@ popup.
 We see the general module methods we discussed above, plus some specific
 to edge analyzers. Actually, most of the new methods are generic for
 <i>all</i> the feature analyzers (spot, track or edge). These methods
-belong to the {% include github content='TODO' %}
+belong to the {% include github org='fiji' repo='TrackMate'
+source='fiji/plugin/trackmate/features/FeatureAnalyzer.java'
+label='FeatureAnalyzer' %}
 
 `interface, which EdgeAnalyzer extends, of course.`
 
@@ -181,7 +191,8 @@ These 6 methods are:
   - `getFeatureDimensions()` returns a last map, that gives a dimension
     to your features. Physical dimensions are listed in the
 
-{% include github content='TODO' %} .
+{% include github org='fiji' repo='TrackMate'
+source='fiji/plugin/trackmate/Dimension.java' label='Dimension' %} .
 
   - `getIsIntFeature()` is just about sugar coating. It returns a map
     that tells what features are integer mapped. For instance, if you
@@ -414,7 +425,9 @@ model that holds all the information you need.
 
 There is just one thing to know: Once you computed the numerical value
 of your feature, you need to store it in the {% include github
-content='TODO' %} . The feature model is a part of the main model.
+org='fiji' repo='TrackMate'
+source='fiji/plugin/trackmate/FeatureModel.java' label='FeatureModel' %}
+. The feature model is a part of the main model.
 
 It works like a 2D Map:
 
@@ -501,9 +514,11 @@ Fiji plugins folder. Here is what you get:
 Great, no?
 
 You can find the full source for this example {% include github
-content='TODO' %} . It can also be used as a template for your analyzer.
+org='fiji' repo='TrackMate-examples'
+source='plugin/trackmate/examples/edgeanalyzer/EdgeAngleAnalyzer.java'
+label='here' %} . It can also be used as a template for your analyzer.
 
-{% include person content='TODO' %}
+{% include person content='JeanYvesTinevez' %}
 
 `(`[`talk`](User_talk:JeanYvesTinevez "wikilink")`) 10:25, 27 January 2014 (CST)`
 

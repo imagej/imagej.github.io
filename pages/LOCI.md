@@ -39,64 +39,64 @@ consortium](http://openmicroscopy.org/).
 ## Developers
 
   - 
-{% include person content='TODO' %}
+{% include person content='Eliceiri' %}
 
 `(PI)`
 
   - 
-{% include person content='TODO' %}
+{% include person content='Rueden' %}
 
 `(lead)`
 
   - 
-{% include person content='TODO' %}
+{% include person content='Etarena' %}
 
 `(developer)`
 
   - 
-{% include person content='TODO' %}
+{% include person content='gselzer' %}
 
 `(developer, `[`ImageJ``   ``Ops`](ImageJ_Ops "wikilink")`)`
 
   - 
-{% include person content='TODO' %}
+{% include person content='Xanthorapedia' %}
 
 `(developer, `[`FLIMJ`](FLIMJ "wikilink")`)`
 
 ## Alumni
 
   - 
-{% include person content='TODO' %}
+{% include person content='Awalter2' %}
 
 `(Sep 2014-May 2018)`
 
   - 
-{% include person content='TODO' %}
+{% include person content='Leon' %}
 
 `(Sep 2015-May 2017)`
 
   - 
-{% include person content='TODO' %}
+{% include person content='Alecneevel' %}
 
 `(Jul 2015-Jan 2017)`
 
   - 
-{% include person content='TODO' %}
+{% include person content='Hinerm' %}
 
 `(Sep 2010-Jun 2016)`
 
   - 
-{% include person content='TODO' %}
+{% include person content='Schindelin' %}
 
 `(Sep 2011-Nov 2014)`
 
   - 
-{% include person content='TODO' %}
+{% include person content='Grislis' %}
 
 `(Jan 2010-Dec 2013)`
 
   - 
-{% include person content='TODO' %}
+{% include person content='Bdezonia' %}
 
 `(Jan 2010-Nov 2013)`
 

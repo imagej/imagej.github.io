@@ -980,8 +980,8 @@ Future: Will be implemented for stacks as well.
 
 -----
 
-All BioVoxxel Macros were developed by {% include person content='TODO'
-%}
+All BioVoxxel Macros were developed by {% include person
+content='BioVoxxel' %}
 
 The macros can be freely used, redistributed and changed according to
 the BSD-3 License.
@@ -991,7 +991,7 @@ jan.brocher(at)biovoxxel.de
 
 There is NO WARRANTY of functionality for those macros.
 
-In no event neither {% include person content='TODO' %}
+In no event neither {% include person content='BioVoxxel' %}
 
 `nor BioVoxxel shall be liable to any party for direct, indirect, special, incidental, or consequential damages or data loss of any kind arising out of the use of this software and its documentation, even if advised of the possibility thereof.`
 

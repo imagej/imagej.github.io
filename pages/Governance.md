@@ -141,88 +141,88 @@ Here is a summary of roles for projects in the
 <tr class="even">
 <td><p>{% include logo content='SciJava' %}</p></td>
 <td><p><strong><a href="SciJava" title="wikilink">SciJava</a></strong></p></td>
-<td><p>{% include person content='TODO' %}<br />
-{% include person content='TODO' %}</p></td>
-<td><p>{% include person content='TODO' %}</p></td>
-<td><p>{% include person content='TODO' %}</p></td>
+<td><p>{% include person content='Moore' %}<br />
+{% include person content='Rueden' %}</p></td>
+<td><p>{% include person content='Rueden' %}</p></td>
+<td><p>{% include person content='Rueden' %}</p></td>
 <td><p><a href="https://github.com/orgs/scijava/people">List on GitHub</a></p></td>
 <td><p>See <a href="Contributors" title="wikilink">Contributors</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>{% include logo content='ImgLib2' %}</p></td>
 <td><p><strong><a href="ImgLib2" title="wikilink">ImgLib2</a></strong></p></td>
-<td><p>{% include person content='TODO' %}<br />
-{% include person content='TODO' %}</p></td>
-<td><p>{% include person content='TODO' %} <sup>1</sup><br />
-{% include person content='TODO' %}<br />
-{% include person content='TODO' %}</p></td>
-<td><p>{% include person content='TODO' %}<br />
-{% include person content='TODO' %}<br />
-{% include person content='TODO' %}<br />
-{% include person content='TODO' %}</p></td>
+<td><p>{% include person content='Saalfeld' %}<br />
+{% include person content='StephanP' %}</p></td>
+<td><p>{% include person content='Pietzsch' %} <sup>1</sup><br />
+{% include person content='StephanP' %}<br />
+{% include person content='Saalfeld' %}</p></td>
+<td><p>{% include person content='Pietzsch' %}<br />
+{% include person content='Rueden' %}<br />
+{% include person content='StephanP' %}<br />
+{% include person content='Saalfeld' %}</p></td>
 <td><p><a href="https://github.com/orgs/imglib/people">List on GitHub</a></p></td>
 <td><p>See <a href="Contributors" title="wikilink">Contributors</a></p></td>
 </tr>
 <tr class="even">
 <td><p>{% include logo content='ImageJ1' %}</p></td>
 <td><p><strong><a href="ImageJ1" title="wikilink">ImageJ1</a></strong></p></td>
-<td><p>{% include person content='TODO' %}</p></td>
-<td><p>{% include person content='TODO' %}</p></td>
-<td><p>{% include person content='TODO' %}<br />
-{% include person content='TODO' %}</p></td>
-<td><p>{% include person content='TODO' %}</p></td>
+<td><p>{% include person content='Rasband' %}</p></td>
+<td><p>{% include person content='Rasband' %}</p></td>
+<td><p>{% include person content='Rasband' %}<br />
+{% include person content='Rueden' %}</p></td>
+<td><p>{% include person content='Rasband' %}</p></td>
 <td><p>See <a href="https://imagej.net/notes.html">release notes</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>{% include logo content='ImageJ2' %}</p></td>
 <td><p><strong><a href="ImageJ2" title="wikilink">ImageJ2</a></strong></p></td>
-<td><p>{% include person content='TODO' %}<br />
-{% include person content='TODO' %}</p></td>
-<td><p>{% include person content='TODO' %}</p></td>
-<td><p>{% include person content='TODO' %}</p></td>
+<td><p>{% include person content='Rueden' %}<br />
+{% include person content='Eliceiri' %}</p></td>
+<td><p>{% include person content='Rueden' %}</p></td>
+<td><p>{% include person content='Rueden' %}</p></td>
 <td><p><a href="https://github.com/orgs/imagej/people">List on GitHub</a></p></td>
 <td><p>See <a href="Contributors" title="wikilink">Contributors</a></p></td>
 </tr>
 <tr class="even">
 <td><p>{% include logo content='SCIFIO' %}</p></td>
 <td><p><strong><a href="SCIFIO" title="wikilink">SCIFIO</a></strong></p></td>
-<td><p>{% include person content='TODO' %}<br />
-{% include person content='TODO' %}<br />
-{% include person content='TODO' %}</p></td>
-<td><p>{% include person content='TODO' %}</p></td>
-<td><p>{% include person content='TODO' %}</p></td>
+<td><p>{% include person content='Rueden' %}<br />
+{% include person content='Eliceiri' %}<br />
+{% include person content='Hinerm' %}</p></td>
+<td><p>{% include person content='Rueden' %}</p></td>
+<td><p>{% include person content='Rueden' %}</p></td>
 <td><p><a href="https://github.com/orgs/scijava/people">List on GitHub</a></p></td>
 <td><p>See <a href="Contributors" title="wikilink">Contributors</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>{% include logo content='Fiji' %}</p></td>
 <td><p><strong><a href="Fiji" title="wikilink">Fiji</a></strong></p></td>
-<td><p>{% include person content='TODO' %}<br />
-{% include person content='TODO' %}<br />
-{% include person content='TODO' %}</p></td>
-<td><p>{% include person content='TODO' %}</p></td>
-<td><p>{% include person content='TODO' %}<br />
+<td><p>{% include person content='Schindelin' %}<br />
+{% include person content='Albertcardona' %}<br />
+{% include person content='Tomancak' %}</p></td>
+<td><p>{% include person content='Rueden' %}</p></td>
+<td><p>{% include person content='Rueden' %}<br />
 Gabriella Turek</p></td>
 <td><p><a href="https://github.com/orgs/fiji/people">List on GitHub</a></p></td>
 <td><p>See <a href="Contributors" title="wikilink">Contributors</a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="BigDataViewer" title="wikilink">BigDataViewer</a></strong></p></td>
-<td><p>{% include person content='TODO' %}</p></td>
-<td><p>{% include person content='TODO' %}</p></td>
-<td><p>{% include person content='TODO' %}<br />
-{% include person content='TODO' %}</p></td>
+<td><p>{% include person content='Pietzsch' %}</p></td>
+<td><p>{% include person content='Pietzsch' %}</p></td>
+<td><p>{% include person content='Pietzsch' %}<br />
+{% include person content='StephanP' %}</p></td>
 <td><p><a href="https://github.com/orgs/bigdataviewer/people">List on GitHub</a></p></td>
 <td><p><a href="https://github.com/bigdataviewer/bigdataviewer-core/graphs/contributors">Info on GitHub</a></p></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="TrakEM2" title="wikilink">TrakEM2</a></strong></p></td>
-<td><p>{% include person content='TODO' %}</p></td>
-<td><p>{% include person content='TODO' %}</p></td>
-<td><p>{% include person content='TODO' %}<br />
-{% include person content='TODO' %}<br />
-{% include person content='TODO' %}</p></td>
+<td><p>{% include person content='Albertcardona' %}</p></td>
+<td><p>{% include person content='Albertcardona' %}</p></td>
+<td><p>{% include person content='Albertcardona' %}<br />
+{% include person content='Saalfeld' %}<br />
+{% include person content='Rueden' %}</p></td>
 <td><p><a href="https://github.com/orgs/trakem2/people">List on GitHub</a></p></td>
 <td><p><a href="https://github.com/trakem2/TrakEM2/graphs/contributors">Info on GitHub</a></p></td>
 <td></td>
@@ -231,32 +231,32 @@ Gabriella Turek</p></td>
 <td><p>{% include logo content='SLIM Curve' %}</p></td>
 <td><p><strong><a href="SLIM_Curve" title="wikilink">SLIM Curve</a></strong></p></td>
 <td><p>Paul Barber<br />
-{% include person content='TODO' %}</p></td>
+{% include person content='Rueden' %}</p></td>
 <td><p>Paul Barber<sup>2</sup><br />
-{% include person content='TODO' %} <sup>2</sup></p></td>
-<td><p>{% include person content='TODO' %}<br />
-{% include person content='TODO' %}</p></td>
+{% include person content='Rueden' %} <sup>2</sup></p></td>
+<td><p>{% include person content='Msagar' %}<br />
+{% include person content='Rueden' %}</p></td>
 <td><p><a href="https://github.com/orgs/slim-curve/people">List on GitHub</a></p></td>
 <td><p><a href="https://github.com/slim-curve/slim-plugin/graphs/contributors">Info on GitHub</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>{% include logo content='Bio-Formats' %}</p></td>
 <td><p><strong><a href="Bio-Formats" title="wikilink">Bio-Formats</a></strong></p></td>
-<td><p>{% include person content='TODO' %}<br />
-{% include person content='TODO' %}</p></td>
-<td><p>{% include person content='TODO' %}</p></td>
-<td><p>{% include person content='TODO' %}<br />
-{% include person content='TODO' %}</p></td>
+<td><p>{% include person content='Rueden' %}<br />
+{% include person content='Eliceiri' %}</p></td>
+<td><p>{% include person content='Linkert' %}</p></td>
+<td><p>{% include person content='Linkert' %}<br />
+{% include person content='Sbesson' %}</p></td>
 <td><p><a href="https://github.com/openmicroscopy/bioformats/graphs/contributors">List on GitHub</a></p></td>
 <td><p>See <a href="http://www.openmicroscopy.org/site/about/ome-contributors">OME Contributors</a></p></td>
 </tr>
 <tr class="even">
 <td><p>{% include logo content='KNIME' %}</p></td>
 <td><p><strong><a href="KNIME" title="wikilink">KNIME Image Processing</a></strong></p></td>
-<td><p>{% include person content='TODO' %}<br />
+<td><p>{% include person content='Dietzc' %}<br />
 Martin Horn</p></td>
-<td><p>{% include person content='TODO' %}</p></td>
-<td><p>{% include person content='TODO' %}<br />
+<td><p>{% include person content='Dietzc' %}</p></td>
+<td><p>{% include person content='Dietzc' %}<br />
 Martin Horn</p></td>
 <td><p><a href="https://github.com/orgs/knime-ip/people">List on GitHub</a></p></td>
 <td><p>See <a href="Contributors" title="wikilink">Contributors</a></p></td>
@@ -264,21 +264,21 @@ Martin Horn</p></td>
 <tr class="odd">
 <td><p>{% include logo content='CellProfiler' %}</p></td>
 <td><p><strong><a href="CellProfiler" title="wikilink">CellProfiler</a></strong></p></td>
-<td><p>{% include person content='TODO' %}<br />
+<td><p>{% include person content='Leek' %}<br />
 Anne Carpenter</p></td>
-<td><p>{% include person content='TODO' %}</p></td>
-<td><p>{% include person content='TODO' %}</p></td>
+<td><p>{% include person content='0x00B1' %}</p></td>
+<td><p>{% include person content='0x00B1' %}</p></td>
 <td><p><a href="https://github.com/orgs/CellProfiler/people">List on GitHub</a></p></td>
 <td><p>See <a href="Contributors" title="wikilink">Contributors</a></p></td>
 </tr>
 <tr class="even">
 <td><p>{% include logo content='OMERO' %}</p></td>
 <td><p><strong><a href="OMERO" title="wikilink">OMERO</a></strong></p></td>
-<td><p>{% include person content='TODO' %}<br />
+<td><p>{% include person content='Moore' %}<br />
 Jean-Marie Burel<br />
 Chris Allan<br />
 Jason Swedlow</p></td>
-<td><p>{% include person content='TODO' %}<br />
+<td><p>{% include person content='Moore' %}<br />
 Jean-Marie Burel<br />
 Chris Allan</p></td>
 <td><p><a href="https://github.com/orgs/openmicroscopy/people">List on GitHub</a></p></td>
@@ -289,12 +289,12 @@ Chris Allan</p></td>
 <td><p>{% include logo content='Icy' %}</p></td>
 <td><p><strong><a href="Icy" title="wikilink">Icy</a></strong></p></td>
 <td><p>Stephane Dallongeville<br />
-{% include person content='TODO' %}<br />
+{% include person content='Fab14' %}<br />
 Jean-Christophe Olivo-Marin</p></td>
 <td><p>Stephane Dallongeville<br />
-{% include person content='TODO' %}</p></td>
+{% include person content='Fab14' %}</p></td>
 <td><p>Stephane Dallongeville<br />
-{% include person content='TODO' %}</p></td>
+{% include person content='Fab14' %}</p></td>
 <td><p><a href="https://github.com/orgs/Icy-imaging/people">List on GitHub</a></p></td>
 <td><p><a href="https://github.com/Icy-imaging/Icy-Kernel/graphs/contributors">Info on GitHub</a></p></td>
 </tr>
@@ -329,11 +329,11 @@ Birgit Möller</p></td>
 and Saalfeld vote on primary decisions, with Pietzsch's vote breaking
 ties.  
 <sup>2</sup> Barber leads development of the {% include github
-content='TODO' %}
+org='slim-curve' repo='slim-curve' label='SLIM' %}
 
   - Rueden leads development of the
 
-{% include github content='TODO' %} .
+{% include github org='slim-curve' repo='slim-plugin' label='SLIM' %} .
 
 ## Further reading
 

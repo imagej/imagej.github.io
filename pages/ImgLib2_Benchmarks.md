@@ -83,18 +83,22 @@ based on the data type.
 The main benchmark code can be found at:
 
   - 
-{% include github content='TODO' %}
+{% include github org='imglib' repo='imglib2-tests'
+path='src/test/java/tests/PerformanceBenchmark.java'
+label='PerformanceBenchmark.java' %}
 
 The script that runs the benchmark at various image resolutions is:
 
   - 
-{% include github content='TODO' %}
+{% include github org='imglib' repo='imglib2-tests'
+path='src/test/scripts/benchmark.sh' label='benchmark.sh' %}
 
 The shell script also uses a Python script to transform the CSV output
 into the pChart data on this page:
 
   - 
-{% include github content='TODO' %}
+{% include github org='imglib' repo='imglib2-tests'
+path='src/test/scripts/chart-gen.py' label='chart-gen.py' %}
 
 ## Cheap operation results
 

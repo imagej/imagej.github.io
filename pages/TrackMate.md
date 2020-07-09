@@ -17,7 +17,7 @@ Please note that TrackMate is available through Fiji, and is based on a
 publication. If you use it successfully for your research **please be so
 kind to cite our work**:
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} TrackMate {% endcapture %}
 
 {% include publication content=includecontent %}
 
@@ -416,7 +416,8 @@ obviously linked:
     deals indifferently with 2D or 3D images. In particular, we use code
     from Stephan Preibisch,
 
-{% include person content='TODO' %} , Larry Lindsey and Lee Kamentsky.
+{% include person content='Saalfeld' %} , Larry Lindsey and Lee
+Kamentsky.
 
   - [ImageJA](ImageJA "wikilink") is of course the entry point for the
     plugin. We use it display the images as 2D slices and in the

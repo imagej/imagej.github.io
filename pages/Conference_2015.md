@@ -150,7 +150,7 @@ the [Conference 2015 Program](Conference_2015_Program "wikilink") page.
 ## Organizers
 
   - 
-{% include person content='TODO' %} , [Laboratory for Optical and
+{% include person content='Eliceiri' %} , [Laboratory for Optical and
 Computational Instrumentation](LOCI "wikilink") (LOCI) at
 [UW-Madison](http://wisc.edu/)
 
@@ -159,12 +159,12 @@ Computational Instrumentation](LOCI "wikilink") (LOCI) at
     [UW-Madison](http://wisc.edu/)
 
   - 
-{% include person content='TODO' %} , [Laboratory for Optical and
+{% include person content='Rueden' %} , [Laboratory for Optical and
 Computational Instrumentation](LOCI "wikilink") (LOCI) at
 [UW-Madison](http://wisc.edu/)
 
   - 
-{% include person content='TODO' %} , [Laboratory for Optical and
+{% include person content='Hinerm' %} , [Laboratory for Optical and
 Computational Instrumentation](LOCI "wikilink") (LOCI) at
 [UW-Madison](http://wisc.edu/)
 
@@ -194,7 +194,7 @@ Abstract submissions were reviewed by the conference advisory committee:
     Genetics](http://mpi-cbg.de/) (MPI-CBG) at Dresden
 
   - 
-{% include person content='TODO' %} , [National Institutes of
+{% include person content='Rasband' %} , [National Institutes of
 Health](http://www.nih.gov/)
 
   - Pavel Tomancak, [Max Planck Institute of Molecular Cell Biology and

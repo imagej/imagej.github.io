@@ -17,7 +17,7 @@ because of its plug-in structure and the possibility of customization.
 
 ## Publication
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} Bio7 {% endcapture %}
 
 {% include publication content=includecontent %}
 

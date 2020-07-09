@@ -45,10 +45,8 @@ menu under {% include bc content='Analyze | Lifetime | FLIMJ' %} .
 
 More documentation coming soon. For now, see the source code at:
 
-{% include big-link content='url=https://github.com/flimlib/flimj-ui'
-%}
+{% include big-link url='https://github.com/flimlib/flimj-ui' %}
 
 And:
 
-{% include big-link content='url=https://github.com/flimlib/flimj-ops'
-%}
+{% include big-link url='https://github.com/flimlib/flimj-ops' %}

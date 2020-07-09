@@ -12,7 +12,7 @@ One of the most useful functions of ImageJ is the *Command Launcher*
 (also known as *Command Finder*). The keyboard shortcut is {% include
 key content='Ctrl' %} + {% include key content='L' %}
 
-`(or`
+`(or `
 
 {% include key content='Command' %} + {% include key content='L' %}
 

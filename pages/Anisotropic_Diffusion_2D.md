@@ -51,7 +51,20 @@ The algorithm used by this plugin is an implementation of Anisotropic
 Diffusion from:
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Tschumperlé
+
+` | first = D.`  
+` | last2 = Deriche`  
+` | first2 = R.`  
+` | Vector-valued image regularization with PDEs: a common framework for different applications`  
+` | journal =  IEEE Trans Pattern Anal Mach Intell`  
+` | volume = 27`  
+` | issue = 4`  
+` | pages = 506-517`  
+` | date = 2005`  
+` | PMID = 15794157 `
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 

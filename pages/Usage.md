@@ -12,4 +12,4 @@ description: test description
 ImageJ updates are aggregated into a publicly viewable form at the
 following URL:
 
-{% include big-link content='url=https://juglab.mpi-cbg.de/matomo/' %}
+{% include big-link url='https://juglab.mpi-cbg.de/matomo/' %}

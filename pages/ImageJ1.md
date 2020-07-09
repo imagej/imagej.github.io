@@ -12,11 +12,11 @@ description: test description
 ImageJ1 or IJ1, is a stable version of [ImageJ](ImageJ "wikilink") which
 has been under continuous development since 1997. It has always been,
 and continues to be, a one-developer project of {% include person
-content='TODO' %} .
+content='Rasband' %} .
 
 ImageJ was originally developed in 1997 as a cross-platform version of
 [NIH Image](NIH_Image "wikilink"). ImageJ grew organically over time as
-{% include person content='TODO' %}
+{% include person content='Rasband' %}
 
 `continued to add features according to user requests. Now there are many hundreds, probably thousands, of plugins written by members of a diverse community.`
 
@@ -34,7 +34,12 @@ IJ2 data structures as needed.
 ## Publication
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Schneider | first = C. A. | last2 =
+Rasband | first2 = W. S. | last3 = Eliceiri | first3 = K. W. | year =
+2012 | journal = Nature methods | url =
+http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2089.html | NIH
+Image to ImageJ: 25 years of image analysis | volume = 9(7) | pages =
+671-675 | pmid = 22930834 {% endcapture %}
 
 {% include citation content=includecontent %} .
 

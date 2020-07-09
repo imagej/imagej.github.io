@@ -179,7 +179,8 @@ All components in these organizations use [Maven](Maven "wikilink") for
 [project management](Project_Management "wikilink"). Each organization
 has its own Maven
 [groupId](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-more-coordinates).
-Each component extends the {% include github content='TODO' %}
+Each component extends the {% include github org='scijava'
+repo='pom-scijava' label='pom-scijava' %}
 
 [`parent`` 
  ``POM`](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-project-inheritance)`, which provides sensible build defaults and compatible dependency versions (see "Bill of Materials" below).`

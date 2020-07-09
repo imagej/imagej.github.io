@@ -20,7 +20,19 @@ webpage](https://blog.bham.ac.uk/intellimic/g-landini-software/colour-deconvolut
 
 This plugin implements the method described in the following paper:
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} last = Ruifrok
+
+` | first = A.C.`  
+` | last2 = Johnston`  
+` | first2 = D.A.`  
+` | Quantification of histochemical staining by color deconvolution`  
+` | journal = Anal. Quant. Cytol. Histol.`  
+` | volume = 23`  
+` | pages = 291-299`  
+` | year = 2001`  
+` | PMID = 11531144 `
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 

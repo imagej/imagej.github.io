@@ -35,12 +35,19 @@ object known as the *application context*.
 
 ## Services
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} Whereas [ImageJ1](ImageJ1 "wikilink") is a
+[singleton](wikipedia:Singleton_pattern "wikilink"), with static methods
+to access much of its functionality, [ImageJ2](ImageJ2 "wikilink")
+encapsulates its program state in the application context, allowing
+multiple simultaneous such contexts in the same JVM.
+
+{% endcapture %}
 
 {% include imagej1 content=includecontent %} ImageJ encapsulates its
 various parts as separate "services" that provide related state
 functionality and track related program state. An instance of the {%
-capture includecontent %} TODO {% endcapture %}
+capture includecontent %} package = net/imagej | class = ImageJ {%
+endcapture %}
 
 {% include javadoc content=includecontent %}
 
@@ -52,14 +59,16 @@ Here are a few of SciJava Common's major core services:
 
   - '''
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} project = SciJava | package =
+org/scijava/app | class = AppService {% endcapture %}
 
 {% include javadoc content=includecontent %} ''' - Tracks software
 applications (SCIFIO, ImageJ, etc.) present in the context.
 
   - '''
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} project = SciJava | package =
+org/scijava/display | class = DisplayService {% endcapture %}
 
 {% include javadoc content=includecontent %} ''' - Tracks available
 displays, as well as the active display, and provides the means to
@@ -67,7 +76,8 @@ create new displays to visualize data.
 
   - '''
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} project = SciJava | package =
+org/scijava/event | class = EventService {% endcapture %}
 
 {% include javadoc content=includecontent %} ''' - Publishes events to
 the [event bus](wikipedia:Publish%E2%80%93subscribe_pattern "wikilink"),
@@ -77,48 +87,55 @@ codebase.
 
   - '''
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} project = SciJava | package =
+org/scijava/io | class = IOService {% endcapture %}
 
 {% include javadoc content=includecontent %} ''' - General tools for
 opening and saving data within the context.
 
   - '''
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} project = SciJava | package =
+org/scijava/menu | class = MenuService {% endcapture %}
 
 {% include javadoc content=includecontent %} ''' - Builds the
 application menu structure.
 
   - '''
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} project = SciJava | package =
+org/scijava/module | class = ModuleService {% endcapture %}
 
 {% include javadoc content=includecontent %} ''' - Tracks available
 modules, and provides the infrastructure for executing them.
 
   - '''
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} project = SciJava | package =
+org/scijava/object | class = ObjectService {% endcapture %}
 
 {% include javadoc content=includecontent %} ''' - Tracks available
-objects of various types, including {% capture includecontent %} TODO {%
-endcapture %}
+objects of various types, including {% capture includecontent %} package
+= net/imagej | class = Dataset {% endcapture %}
 
 {% include javadoc content=includecontent %} s and {% capture
-includecontent %} TODO {% endcapture %}
+includecontent %} package = org/scijava/display | class = Display {%
+endcapture %}
 
 {% include javadoc content=includecontent %} s.
 
   - '''
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} project = SciJava | package =
+org/scijava/options | class = OptionsService {% endcapture %}
 
 {% include javadoc content=includecontent %} ''' - Tools for managing
 program settings.
 
   - '''
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} project = SciJava | package =
+org/scijava/platform | class = PlatformService {% endcapture %}
 
 {% include javadoc content=includecontent %} ''' - Provides hooks for
 extending the application's behavior depending on the deployment
@@ -126,38 +143,44 @@ platform (operating system, version of Java, etc.).
 
   - '''
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} project = SciJava | package =
+org/scijava/plugin | class = PluginService {% endcapture %}
 
 {% include javadoc content=includecontent %} ''' - Tracks available
 plugins, and provides the infrastructure for executing them (using the
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} package = org/scijava/module | class =
+ModuleService {% endcapture %}
 
 {% include javadoc content=includecontent %} ).
 
   - '''
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} project = SciJava | package =
+org/scijava/script | class = ScriptService {% endcapture %}
 
 {% include javadoc content=includecontent %} ''' - Provides utilities
 for running scripts and macros.
 
   - '''
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} project = SciJava | package =
+org/scijava/app | class = StatusService {% endcapture %}
 
 {% include javadoc content=includecontent %} ''' - Publishes status
 updates for ongoing operations.
 
   - '''
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} project = SciJava | package =
+org/scijava/thread | class = ThreadService {% endcapture %}
 
 {% include javadoc content=includecontent %} ''' - Manages
 multithreading.
 
   - '''
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} project = SciJava | package =
+org/scijava/tool | class = ToolService {% endcapture %}
 
 {% include javadoc content=includecontent %} ''' - Tracks available
 tools—logic binding user input to behavior—as well as the active tool
@@ -165,7 +188,8 @@ tools—logic binding user input to behavior—as well as the active tool
 
   - '''
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} project = SciJava | package =
+org/scijava/ui | class = UIService {% endcapture %}
 
 {% include javadoc content=includecontent %} ''' - Discovers and
 launches a user interface for interacting with ImageJ.
@@ -176,26 +200,31 @@ Some of the services which ImageJ adds:
 
   - '''
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} package = net/imagej | class =
+DatasetService {% endcapture %}
 
 {% include javadoc content=includecontent %} ''' - Tools for creating
 and managing image data.
 
   - '''
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} package = net/imagej/display | class =
+ImageDisplayService {% endcapture %}
 
 {% include javadoc content=includecontent %} ''' - Similar to {% capture
-includecontent %} TODO {% endcapture %}
+includecontent %} package = org/scijava/display | class = DisplayService
+{% endcapture %}
 
 {% include javadoc content=includecontent %} , but specifically for {%
-capture includecontent %} TODO {% endcapture %}
+capture includecontent %} package = net/imagej/display | class =
+ImageDisplay {% endcapture %}
 
 {% include javadoc content=includecontent %} s.
 
   - '''
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} package = net/imagej/display | class =
+OverlayService {% endcapture %}
 
 {% include javadoc content=includecontent %} ''' - Tools for creating
 and managing image overlays and regions of interest (ROIs).
@@ -206,7 +235,8 @@ SCIFIO provides several additional services—in particular:
 
   - '''
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} project = SCIFIO | package =
+io/scif/services | class = FormatService {% endcapture %}
 
 {% include javadoc content=includecontent %} ''' - Service for managing
 available image formats.
@@ -220,7 +250,7 @@ interface.
 ## Modules
 
 Each module known to the system (via the {% capture includecontent %}
-TODO {% endcapture %}
+package = org/scijava/module | class = ModuleService {% endcapture %}
 
 {% include javadoc content=includecontent %}
 
@@ -228,13 +258,15 @@ TODO {% endcapture %}
 
 ## MenuService
 
-The {% capture includecontent %} TODO {% endcapture %}
+The {% capture includecontent %} package = org/scijava/menu | class =
+MenuService {% endcapture %}
 
 {% include javadoc content=includecontent %}
 
-`takes care of constructing`
+`takes care of constructing `
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} package = org/scijava/menu | class =
+ShadowMenu {% endcapture %}
 
 {% include javadoc content=includecontent %}
 
@@ -242,25 +274,29 @@ The {% capture includecontent %} TODO {% endcapture %}
 
 ## User interfaces
 
-The {% capture includecontent %} TODO {% endcapture %}
+The {% capture includecontent %} package = org/scijava/ui | class =
+UIService {% endcapture %}
 
 {% include javadoc content=includecontent %}
 
-`then takes care of constructing an actual UI-specific menu bar (or whatever UI components and/or widgets it wants) from the available ShadowMenus. There is a type hierarchy beneath the`
+`then takes care of constructing an actual UI-specific menu bar (or whatever UI components and/or widgets it wants) from the available ShadowMenus. There is a type hierarchy beneath the `
 
-{% capture includecontent %} TODO {% endcapture %}
-
-{% include javadoc content=includecontent %}
-
-`interface intended for this purpose; for example, the`
-
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} package = org/scijava/menu | class =
+MenuCreator {% endcapture %}
 
 {% include javadoc content=includecontent %}
 
-`implements MenuCreator to create and maintain a Swing`
+`interface intended for this purpose; for example, the `
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} package = org/scijava/ui/swing/menu | class
+= SwingJMenuBarCreator {% endcapture %}
+
+{% include javadoc content=includecontent %}
+
+`implements MenuCreator to create and maintain a Swing `
+
+{% capture includecontent %} project = Java | package = javax/swing |
+class = JMenuBar {% endcapture %}
 
 {% include javadoc content=includecontent %}
 
@@ -269,24 +305,30 @@ The {% capture includecontent %} TODO {% endcapture %}
 ## How changes propagate
 
 When modules are added, removed or changed (via {% capture
-includecontent %} TODO {% endcapture %}
+includecontent %} package = org/scijava/module/event | class =
+ModulesAddedEvent {% endcapture %}
 
 {% include javadoc content=includecontent %} , {% capture includecontent
-%} TODO {% endcapture %}
+%} package = org/scijava/module/event | class = ModulesRemovedEvent {%
+endcapture %}
 
 {% include javadoc content=includecontent %} , {% capture includecontent
-%} TODO {% endcapture %}
+%} package = org/scijava/module/event | class = ModulesUpdatedEvent {%
+endcapture %}
 
 {% include javadoc content=includecontent %} ), the `MenuService`
 listens and updates the associated `ShadowMenu`(s) accordingly. It
 notifies interested parties that it has done so by firing a
-corresponding event: {% capture includecontent %} TODO {% endcapture %}
+corresponding event: {% capture includecontent %} package =
+org/scijava/menu/event | class = MenusAddedEvent {% endcapture %}
 
 {% include javadoc content=includecontent %} , {% capture includecontent
-%} TODO {% endcapture %}
+%} package = org/scijava/menu/event | class = MenusRemovedEvent {%
+endcapture %}
 
 {% include javadoc content=includecontent %} , or {% capture
-includecontent %} TODO {% endcapture %}
+includecontent %} package = org/scijava/menu/event | class =
+MenusUpdatedEvent {% endcapture %}
 
 {% include javadoc content=includecontent %} .
 
@@ -303,7 +345,7 @@ https://abi-laboratory.pro/java/tracker/timeline/scijava-common/
     presentation](https://scijava.org/scijava-common/scijava-common.html)
 
   - 
-{% include github content='TODO' %}
+{% include github org='imagej' repo='tutorials' label='ImageJ' %}
 
   - 
-{% include github content='TODO' %}
+{% include github org='scijava' repo='scijava-common' label='SciJava' %}

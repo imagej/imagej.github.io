@@ -161,7 +161,8 @@ Note: *heap* is Java speak for *memory*.
 ## Javassist-based
 
 A quite versatile method is to use (and possibly modify) the class {%
-include github content='TODO' %}
+include github org='fiji' repo='fiji-compat'
+source='fiji/MemoryProfiler.java' label='fiji.MemoryProfiler' %}
 
 `in `*`fiji-compat.jar`*`.`
 
@@ -180,8 +181,8 @@ instrumented by setting the environment variable *MEMORY\_PROFILE\_ONLY*
 to a space-delimited list of classes.
 
 If you want to instrument any class handled by {% include github
-content='TODO' %} , you need to use the slightly more complicated
-command line:
+org='imagej' repo='imagej-legacy' label='imagej-legacy' %} , you need to
+use the slightly more complicated command line:
 
 ``` bash
 ./fiji -Dpatch.ij1=false --cp jars/javassist.jar --cp jars/fiji-compat.jar \

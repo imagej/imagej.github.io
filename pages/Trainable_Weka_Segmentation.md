@@ -920,7 +920,8 @@ publication. If you use it successfully for your research please be so
 kind to cite our work:
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} Trainable Weka Segmentation {% endcapture
+%}
 
 {% include publication content=includecontent %}
 

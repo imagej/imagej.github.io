@@ -345,8 +345,10 @@ the same place:
   - Edge and track features are stored in a sub-component of the model
     object called the FeatureModel (
 
-{% include github content='TODO' %} ). Check the script below to see a
-working example.
+{% include github repo='fiji'
+path='src-plugins/TrackMate\_/src/main/java/fiji/plugin/trackmate/FeatureModel.java'
+label='FeatureModel.java' %} ). Check the script below to see a working
+example.
 
 ``` python
 from ij import IJ, ImagePlus, ImageStack
@@ -993,7 +995,7 @@ org=fiji|repo=TrackMate|source=../../../scripts/CallTrackMateMultiChannel.py
 
 ## Making TrackMate macro recordable with a 64-line script
 
-Contributed by {% include person content='TODO' %}
+Contributed by {% include person content='Eglinger' %}
 
 `during a NEUBIAS course. Quoting from Jan:`
 

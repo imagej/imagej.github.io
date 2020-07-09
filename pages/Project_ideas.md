@@ -31,7 +31,7 @@ examples](http://www.gatan.com/resources/knowhow/kh18-3view.php).
 **Goal:** create a 3-way viewer for a 3d instance of an
 [Imglib](Imglib "wikilink")'s cell container.  
 **Language:** any supported by Fiji, preferably java.  
-**Contact:** {% include person content='TODO' %}
+**Contact:** {% include person content='Albertcardona' %}
 
 ## Plugin for Mixed-File-Format MultiVirtualHyperStack viewing window
 
@@ -126,8 +126,8 @@ choice, but we will give priority to biologically-oriented data sets.
 **Goal:** Implement a number of segmentation algorithms based on machine
 learning.  
 **Language:** Java.  
-**Mentor:** {% include person content='TODO' %} , {% include person
-content='TODO' %}  
+**Mentor:** {% include person content='Iarganda' %} , {% include person
+content='Albertcardona' %}  
 
 ## Implementing algorithms for Imglib
 
@@ -149,7 +149,7 @@ processing algorithms, storage strategies and data types such as:
 **Mentor:** [Stephan Preibisch](http://fly.mpi-cbg.de/preibisch),
 [Stephan Saalfeld](http://fly.mpi-cbg.de/saalfeld)\], [Tobias
 Pietzsch](http://www.wv.inf.tu-dresden.de/People/Pietzsch.html), {%
-include person content='TODO' %}  
+include person content='Albertcardona' %}  
 
 ## Colorizing algorithms
 
@@ -335,7 +335,7 @@ position to come back to, after looking around in other parts of the
 file. Maybe {% include key content='Ctrl' %} + {% include key
 content='B' %}
 
-`(together with a menu entry), or`
+`(together with a menu entry), or `
 
 {% include key content='Ctrl' %} + {% include key content='<digit>' %}
 
@@ -550,7 +550,8 @@ ImageFlow provides a graphical way to construct macros. Every action is
 represented by a node which the user can connect with lines to define a
 workflow.
 
-ImageFlow has its own {% include github content='TODO' %}
+ImageFlow has its own {% include github org='Dahie' repo='imageflow'
+label='Git' %}
 
 `(`[`our`` 
  ``mirror`](https://fiji.sc/cgi-bin/gitweb.cgi?p=imageflow.git;a=summary)`).`
@@ -640,7 +641,7 @@ be better put under a single interface together with others already
 available.
 
 Note: this is more or less implemented in the Auto\_Threshold and
-Auto\_Local\_Threshold plugins.-- {% include person content='TODO' %}
+Auto\_Local\_Threshold plugins.-- {% include person content='Landini' %}
 
 `14:47, 29 November 2009 (CET)`
 

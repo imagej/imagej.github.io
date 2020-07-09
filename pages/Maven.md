@@ -193,9 +193,11 @@ So what if you have multiple *.jar* files you want to build in the same
 project? Then these need to live in their own subdirectories and there
 needs to be a common parent POM, a so-called *aggregator* or
 *multi-module* POM (only this POM needs to have the SciJava POM as
-parent, of course). {% include github content='TODO' %} . Basically, it
-is adding the <packaging>`pom`</packaging> entry at the top, as well as
-some subdirectory names to the <modules> section.
+parent, of course). {% include github org='imagej' repo='tutorials'
+tag='577286474be8399eb38d30d66cf0c35ee50bd929' path='pom.xml\#L47-L62'
+label='Here' %} . Basically, it is adding the
+<packaging>`pom`</packaging> entry at the top, as well as some
+subdirectory names to the <modules> section.
 
 Note, however, that most projects of the [SciJava component
 collection](Architecture "wikilink") (e.g.,
@@ -241,7 +243,11 @@ results, you can click the "Drill down" link to view more details of
 that specific GAV combination. You can also click an entry to get a
 formatted `dependency` block for direct copy-pasting into your POM.
 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} tip=If your dependencies are in Maven
+Central, you can use the
+[quickdeps](https://github.com/ingenieux/quickdeps) tool to quickly
+generate dependency blocks, by scanning your project's bytecode. {%
+endcapture %}
 
 {% include tip content=includecontent %}
 

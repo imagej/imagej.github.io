@@ -27,7 +27,7 @@ in {% include bc content='File | Open Samples | Tracks for TrackMate
 As for the TrackMate plugin, you could start it up normally, selecting
 {% include bc content='Plugins | Tracking | TrackMate' %}
 
-`in the menu, and then when offered to select a detector and a tracker, always pick the manual one. That would work well, but we offered another entry point that has a simpler GUI dedicated to manual tracking. Pick the`
+`in the menu, and then when offered to select a detector and a tracker, always pick the manual one. That would work well, but we offered another entry point that has a simpler GUI dedicated to manual tracking. Pick the `
 
 {% include bc content='Plugins | Tracking | Manual tracking with
 TrackMate' %}
@@ -83,7 +83,7 @@ keyboard:
 
 {% include key content='A' %}
 
-`with the mouse at the desired location. By default, the new spot will have the radius of the last spot you edited with the double-click mode. So if you want to have all spots of a certain radius, edit a spot by double-clicking inside it, set its radius using`
+`with the mouse at the desired location. By default, the new spot will have the radius of the last spot you edited with the double-click mode. So if you want to have all spots of a certain radius, edit a spot by double-clicking inside it, set its radius using `
 
 {% include key content='Alt' %} + {% include key content='Mouse wheel'
 %} , and leave the edit mode. This will "capture" the spot radius and
@@ -105,15 +105,15 @@ apply it anywhere after.
 
 {% include key content='Q' %}
 
-`and`
+`and `
 
 {% include key content='E' %}
 
-`over the target spot.`
+`over the target spot. `
 
 {% include key content='Shift' %} + {% include key content='Q' %}
 
-`and`
+`and `
 
 {% include key content='Shift' %} + {% include key content='E' %}
 
@@ -171,7 +171,7 @@ to select a spot before creating a link. There is way to simplify this.
 
 Press {% include key content='Shift' %} + {% include key content='L' %}
 
-`to toggle the auto-linking mode on/off. When the mode is on, new spots will be automatically created to the spot in the selection (if there is only one). Then the selection is set to be the newly created spot, which allows you to quickly trace tracks by moving through frames and pressing the`
+`to toggle the auto-linking mode on/off. When the mode is on, new spots will be automatically created to the spot in the selection (if there is only one). Then the selection is set to be the newly created spot, which allows you to quickly trace tracks by moving through frames and pressing the `
 
 {% include key content='A' %}
 
@@ -299,7 +299,7 @@ These are the tools that should allow you to work very quickly. For fun:
 redo this tutorial with a [TrackScheme](TrackScheme "wikilink") window
 open. You should see that it works very well with manual annotation.
 
-{% include person content='TODO' %}
+{% include person content='JeanYvesTinevez' %}
 
 `(`[`talk`](User_talk:JeanYvesTinevez "wikilink")`) 10:54, 5 August 2013 (CDT)`
 

@@ -28,7 +28,7 @@ demand, and planes read on demand from disk.
   - [ImgLib2 Examples](ImgLib2_Examples "wikilink")
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} project = ImgLib2 {% endcapture %}
 
 {% include javadoc content=includecontent %}
 
@@ -44,7 +44,8 @@ demand, and planes read on demand from disk.
 
 ## Source code
 
-You can find the source {% include github content='TODO' %} .
+You can find the source {% include github org='imglib' repo='imglib2' %}
+.
 
 There is also a continuous integration system that builds ImgLib2 [every
 time the code changes](https://travis-ci.org/imglib/imglib2).

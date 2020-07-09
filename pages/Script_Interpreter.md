@@ -17,7 +17,7 @@ allowing scripting from the command line.
 Start it via {% include bc content='Plugins|Scripting|Script
 Interpreter' %}
 
-`or by typing`
+`or by typing `
 
 {% include key content='Shift' %} - {% include key content='\[' %} .
 

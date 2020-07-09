@@ -695,13 +695,15 @@ above](ImgLib2_-_Accessors#Introduction "wikilink") are highlighted.
 Real equivalents of the **Positionable** and **Localizable** interfaces
 have been added by which real-valued coordinates can be accessed.
 
-Something that is {% capture includecontent %} TODO {% endcapture %}
+Something that is {% capture includecontent %} project=ImgLib2 |
+package=net/imglib2 | class=RealPositionable {% endcapture %}
 
 {% include javadoc content=includecontent %} , can be positioned at real
 coordinates. There are methods to set absolute or relative position, for
 a single or all dimensions, in analogy to the integer **Positionable**.
 You can also set a **RealPositionable** to the location of a
-**RealLocalizable**. Note that {% capture includecontent %} TODO {%
+**RealLocalizable**. Note that {% capture includecontent %}
+project=ImgLib2 | package=net/imglib2 | class=RealPositionable {%
 endcapture %}
 
 {% include javadoc content=includecontent %}

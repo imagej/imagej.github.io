@@ -130,11 +130,11 @@ then the *Raw* button.
 You can import them to your system using {% include bc content='File |
 Import | Preferences' %}
 
-`and selecting the eclipse-preferences.epf file. Then, in Eclipse preferences, navigate to`
+`and selecting the eclipse-preferences.epf file. Then, in Eclipse preferences, navigate to `
 
 {% include bc content='Java | Code Style | Clean Up' %}
 
-`and select "ImageJ" for the active profile. You can then format your source code by right-clicking your source file(s) and choosing`
+`and select "ImageJ" for the active profile. You can then format your source code by right-clicking your source file(s) and choosing `
 
 {% include bc content='Source | Clean Up' %}
 

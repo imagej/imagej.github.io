@@ -44,13 +44,17 @@ certain kinds of messages to a file, while others go to stdout).
 For these reasons, nearly everyone and their dog either uses a logging
 framework, or invents their own. The [SciJava
 Common](SciJava_Common "wikilink") project has opted to do both: the
-SciJava application framework provides a {% include github
-content='TODO' %}
+SciJava application framework provides a {% include github org='scijava'
+repo='scijava-common'
+path='src/main/java/org/scijava/log/LogService.java' label='LogService'
+%}
 
-`to abstract and encapsulate all logging. The default core implementation of this service is called`
+`to abstract and encapsulate all logging. The default core implementation of this service is called `
 
-{% include github content='TODO' %} , and simply emits all log messages
-to the standard error stream. This is done to avoid dependencies on any
+{% include github org='scijava' repo='scijava-common'
+path='src/main/java/org/scijava/log/StderrLogService.java'
+label='StderrLogService' %} , and simply emits all log messages to the
+standard error stream. This is done to avoid dependencies on any
 external logging frameworks or facades, as well as to offer a
 sufficiently rich logging API.
 
@@ -86,9 +90,10 @@ Unfortunately, SLF4J suffers from a couple of downsides:
     competing standard](http://xkcd.com/927/).
 
 Still, SLF4J is a nice thing, so the SciJava project does provide a {%
-include github content='TODO' %} , which zealous developers can use to
-redirect all SciJava logging to the SLF4J framework, which they can then
-[further
+include github org='scijava' repo='scijava-log-slf4j'
+path='src/main/java/org/scijava/log/slf4j/SLF4JLogService.java'
+label='LogService' %} , which zealous developers can use to redirect all
+SciJava logging to the SLF4J framework, which they can then [further
 redirect](wikipedia:Fundamental_theorem_of_software_engineering "wikilink")
 using an SLF4J binding of their choosing\!
 

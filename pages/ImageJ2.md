@@ -186,12 +186,12 @@ ImageJ2 is funded from a variety of sources. See the
 ## Publications
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} ImageJ2 {% endcapture %}
 
 {% include publication content=includecontent %}
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} Ecosystem {% endcapture %}
 
 {% include publication content=includecontent %}
 

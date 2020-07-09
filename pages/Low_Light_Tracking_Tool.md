@@ -348,7 +348,7 @@ repeated until its bottom, which is the original image.
 
 {% include key content='P' %}
 
-`or`
+`or `
 
 {% include key content='Ctrl' %} + {% include key content='P' %}
 

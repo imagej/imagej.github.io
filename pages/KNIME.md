@@ -37,17 +37,17 @@ Both approaches are available as KNIME plugin (currently beta status).
 ## Publications
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} KNIME-Bioimage {% endcapture %}
 
 {% include publication content=includecontent %}
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} KNIP {% endcapture %}
 
 {% include publication content=includecontent %}
 
   - 
-{% capture includecontent %} TODO {% endcapture %}
+{% capture includecontent %} KNIME {% endcapture %}
 
 {% include publication content=includecontent %}
 

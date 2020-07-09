@@ -115,8 +115,12 @@ particularly in live imaging of dynamically changing samples.
 
 The idea to incorporate fiduciary markers to facilitate sample
 independent reconstruction is widely used in medical
-imaging<ref name="Gullekson1974"> {% capture includecontent %} TODO {%
-endcapture %}
+imaging<ref name="Gullekson1974"> {% capture includecontent %} Three
+Dimensional X-Ray Opaque Foreign Body Marker Device | author = E. H.
+Gullekson | year = Patent number: 3836776, Filing date: 1 Mar 1973,
+Issue date: Sep 1974
+
+{% endcapture %}
 
 {% include citation content=includecontent %}
 </ref><ref name="Erickson1993"> {% capture includecontent %} author =

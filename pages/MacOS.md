@@ -86,7 +86,8 @@ If you have difficulties, please post on the [Image.sc
 Forum](https://forum.image.sc/).
 
 At any time, you can verify which Javas are installed on your system
-using {% include github content='TODO' %} .
+using {% include github org='ctrueden' repo='ctr-scripts'
+path='java-info' label='this' %} .
 
 ## How do I run ImageJ on Yosemite?
 

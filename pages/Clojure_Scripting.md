@@ -1036,7 +1036,9 @@ Open the plugins/Examples/ folder in Fiji installation directory. You'll
 find three Clojure examples:
 
   - 
-{% include github content='TODO' %}
+{% include github repo='fiji'
+path='plugins/Examples/Multithreaded\_Image\_Processing.clj'
+label='Multithreaded\_Image\_Processing.clj' %}
 
   -   
     illustrate, with macros (via
@@ -1048,7 +1050,9 @@ find three Clojure examples:
 <!-- end list -->
 
   - 
-{% include github content='TODO' %}
+{% include github repo='fiji'
+path='plugins/Examples/blend\_two\_images.clj'
+label='blend\_two\_images.clj' %}
 
   -   
     illustrates how to open two images from an URL, and blend the gray
@@ -1057,7 +1061,9 @@ find three Clojure examples:
 <!-- end list -->
 
   - 
-{% include github content='TODO' %}
+{% include github repo='fiji'
+path='plugins/Examples/celsius\_to\_fahrenheit.clj'
+label='celsius\_to\_fahrenheit.clj' %}
 
   -   
     illustrates the usage of a Swing GUI, and how to instantiate
@@ -1069,7 +1075,9 @@ find three Clojure examples:
 <!-- end list -->
 
   - 
-{% include github content='TODO' %}
+{% include github repo='fiji'
+path='plugins/Examples/random\_noise\_example.clj'
+label='random\_noise\_example.clj' %}
 
   -   
     illustrates how to declare a function inside a closure (for private
@@ -1080,7 +1088,9 @@ find three Clojure examples:
 <!-- end list -->
 
   - 
-{% include github content='TODO' %}
+{% include github repo='fiji'
+path='plugins/Examples/Command\_Launchers/Command\_Launcher\_Clojure.clj'
+label='Command\_Launcher\_Clojure.clj' %}
 
   -   
     illustrates how to create a GUI with a KeyListener, so that the
@@ -1094,7 +1104,8 @@ find three Clojure examples:
 <!-- end list -->
 
   - 
-{% include github content='TODO' %}
+{% include github repo='fiji'
+path='plugins/Analyze/Dynamic\_ROI\_Profiler.clj' label='Dynamic' %}
 
   -   
     illustrates how to add a MouseMotionListener and a WindowListener to
@@ -1949,7 +1960,8 @@ track in its playlist:
 ```
 
 The above is an extract from a clojure GUI for XMMS2, available at
-github {% include github content='TODO' %} .
+github {% include github org='acardona' repo='xmms2-clj'
+label='xmms2-gui' %} .
 
 ## Creating a derivative of a function
 
