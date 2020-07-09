@@ -165,7 +165,7 @@ def replace_template(document_content, match_content, template_name, template_co
         # handle inline templates
         template_content = re.sub(r'\'', r'"', template_content)
         document_content = document_content.replace(match_content,
-            "\n{% include " + template_name + " " + match_content_parameters(template_content) + "%}\n")
+            "{% include " + template_name + " " + match_content_parameters(template_content) + "%}")
     else:
         # handle block templates, capture content
         document_content = document_content.replace(match_content,

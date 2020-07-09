@@ -6,6 +6,8 @@ categories:
 description: this page demonstrates how to use the github include tag
 ---
 
+Please click on <code>View source</code> to see how this page was written.
+
 Use `path` to link to a file off the repository root:
 
 {% include github path='WELCOME.md' %}
@@ -43,3 +45,5 @@ Use `issue` or `pr` to specify an issue or PR number:
 
 Use `label` to override the label:  
 {% include github repo='fiji' path='plugins/Examples/Fiji_Logo_3D.js' label='Fiji...' %}  
+
+It should also work {% include github org='scijava' repo='pom-scijava' label='as an in-line link' %}.
