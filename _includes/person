@@ -1,5 +1,1 @@
-<div class="person">
-
-    {{include.content}}
-    
-</div>
+<span class="person">{{include.content}}</div>

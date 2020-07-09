@@ -1,3 +1,1 @@
-<div class="file">
-    {{include.content}}
-</div>
+<div class="file">{{include.content}}</div>

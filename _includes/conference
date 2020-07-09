@@ -1,5 +1,1 @@
-<div class="conference">
-
-    {{include.content}}
-    
-</div>
+<div class="conference">{{include.content}}</div>

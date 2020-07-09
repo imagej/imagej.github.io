@@ -1,3 +1,1 @@
-<div class="clear">
-    {{include.content}}
-</div>
+<div class="clear">{{include.content}}</div>

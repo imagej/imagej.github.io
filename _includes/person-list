@@ -1,5 +1,1 @@
-<div class="personlist">
-
-    {{include.content}}
-    
-</div>
+<div class="personlist">{{include.content}}</div>

@@ -1,5 +1,1 @@
-<div class="project">
-
-    {{include.content}}
-    
-</div>
+<span class="project">{{include.content}}</span>

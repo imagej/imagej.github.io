@@ -1,5 +1,1 @@
-<div class="develop-menu">
-
-    {{include.content}}
-    
-</div>
+<div class="develop-menu">{{include.content}}</div>

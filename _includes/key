@@ -1,5 +1,1 @@
-<div class="key">
-
-    {{include.content}}
-    
-</div>
+<span class="key">{{include.content}}</span>

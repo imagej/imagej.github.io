@@ -1,3 +1,1 @@
-<div class="learn">
-    {{include.content}}
-</div>
+<span class="learn">{{include.content}}</span>

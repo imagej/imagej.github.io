@@ -1,5 +1,1 @@
-<div class="citation">
-
-    {{include.content}}
-    
-</div>
+<div class="citation">{{include.content}}</div>

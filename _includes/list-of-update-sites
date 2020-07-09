@@ -1,3 +1,1 @@
-<a class="list-of-update-sites" href="#">
-    {{include.content}}
-</a>
+<a class="list-of-update-sites" href="#">{{include.content}}</a>

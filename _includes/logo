@@ -58,5 +58,4 @@
 {% else %}
     {% assign image_size = 'width="' | append:image_size | append: '"'  %}
 {% endif %}
-
 <a href="{{image_link}}"><img class="logo" {{image_align}} src="{{ image_url | prepend: '/images/logos/'}}" {{image_size}}/></a>

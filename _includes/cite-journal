@@ -1,5 +1,1 @@
-<div class="cite-journal">
-
-    {{include.content}}
-    
-</div>
+<div class="cite-journal">{{include.content}}</div>

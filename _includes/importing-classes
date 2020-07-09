@@ -1,5 +1,1 @@
-<div class="importing-classes">
-
-    {{include.content}}
-    
-</div>
+<div class="importing-classes">{{include.content}}</div>

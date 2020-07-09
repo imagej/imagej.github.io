@@ -1,5 +1,1 @@
-<div class="license">
-
-    {{include.content}}
-    
-</div>
+<div class="license">{{include.content}}</div>

@@ -1,5 +1,1 @@
-<div class="githubembed">
-
-    {{include.content}}
-    
-</div>
+<div class="githubembed">{{include.content}}</div>

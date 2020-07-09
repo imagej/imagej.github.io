@@ -1,5 +1,1 @@
-<div class="imagej1">
-
-    {{include.content}}
-    
-</div>
+<div class="imagej1">{{include.content}}</div>

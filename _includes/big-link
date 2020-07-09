@@ -1,3 +1,1 @@
-<a class="big-link" href="#">
-    {{include.content}}
-</a>
+<a class="big-link" href="#">{{include.content}}</a>
