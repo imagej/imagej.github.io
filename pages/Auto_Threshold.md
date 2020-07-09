@@ -20,9 +20,9 @@ Threshold](Auto_Local_Threshold "wikilink") plugin.
 **ImageJ**: requires v1.42m or newer. Download
 [Auto\_Threshold-X.Y.Z.jar](http://maven.imagej.net/service/local/artifact/maven/redirect?r=releases&g=sc.fiji&a=Auto_Threshold&v=RELEASE&e=jar)
 and copy it into the ImageJ/plugins folder and either restart ImageJ or
-run the ' {% include bc content='Help | Update Menus' %} ' command.
-After this a new command should appear in ' {% include bc content='Image
-| Adjust | Auto Threshold' %} '.
+run the '{% include bc content='Help | Update Menus' %}' command. After
+this a new command should appear in '{% include bc content='Image |
+Adjust | Auto Threshold' %}'.
 
 **Fiji**: this plugin is part of the Fiji distribution, there is no need
 to download it.
@@ -55,21 +55,16 @@ above automatically.
 **Important notes:**
 
 **1.** This plugin is accessed through the {% include bc content='Image
-| Auto Threshold' %}
-
-`menu entry, however the thresholding methods were also partially implemented in ImageJ's thresholder applet accessible through the `
-
-{% include bc content='Image | Adjust | Threshold...' %}
-
-`menu entry.`
-
-While the Auto Threshold plugin can use or ignore the extremes of the
-image histogram (Ignore black, Ignore white) the applet cannot: the
-'default' method ignores the histogram extremes but the others methods
-do not. This means that applying the two commands to the same image can
-produce apparently different results. In essence, the Auto Threshold
-plugin, with the correct settings, can reproduce the results of the
-applet, but not the way round.
+| Auto Threshold' %} menu entry, however the thresholding methods were
+also partially implemented in ImageJ's thresholder applet accessible
+through the {% include bc content='Image | Adjust | Threshold...' %}
+menu entry. While the Auto Threshold plugin can use or ignore the
+extremes of the image histogram (Ignore black, Ignore white) the applet
+cannot: the 'default' method ignores the histogram extremes but the
+others methods do not. This means that applying the two commands to the
+same image can produce apparently different results. In essence, the
+Auto Threshold plugin, with the correct settings, can reproduce the
+results of the applet, but not the way round.
 
 **2.** From version 1.12 the plugin supports thresholding of 16-bit
 images. Since the Auto Threshold plugin processes the full greyscale
@@ -144,11 +139,11 @@ log window.
 
 This is the original method of auto thresholding available in ImageJ,
 which is a variation of the IsoData algorithm (described below). The
-**Default** option should return the same values as the ' {% include bc
-content='Image | Adjust | Threshold | Auto' %} ', when selecting
-**Ignore black** and **Ignore white**. To indicate segmentation of the
-desired phase, use the **White objects on black background** option. The
-IsoData method is also known as *iterative intermeans*.
+**Default** option should return the same values as the '{% include bc
+content='Image | Adjust | Threshold | Auto' %}', when selecting **Ignore
+black** and **Ignore white**. To indicate segmentation of the desired
+phase, use the **White objects on black background** option. The IsoData
+method is also known as *iterative intermeans*.
 
 ### Huang
 

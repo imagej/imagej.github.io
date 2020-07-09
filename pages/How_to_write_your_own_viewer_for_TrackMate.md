@@ -43,26 +43,19 @@ analyzers](How_to_write_your_own_spot_feature_analyzer_algorithm_for_TrackMate "
 a TrackMate view is separated in two parts, that each extends a
 different interface:
 
-  - The
-
-{% include github org='fiji' repo='TrackMate'
-source='fiji/plugin/trackmate/visualization/TrackMateModelView.java'
-label='TrackMateModelView' %} , that is the actual view of the model.
-All the hard work is done here.
-
-  - The
-
-{% include github org='fiji' repo='TrackMate'
-source='fiji/plugin/trackmate/visualization/ViewFactory.java'
-label='ViewFactory' %}
-
-`that is a factory in charge of instantiating the view and of the integration in TrackMate. This interface extends the `
-
-{% include github org='fiji' repo='TrackMate'
-source='fiji/plugin/trackmate/TrackMateModule.java'
-label='TrackMateModule' %}
-
-`interface, so we expect to find there some of the methods we discussed earlier, and the `[`SciJava`](SciJava "wikilink")` annotation. `
+  - The {% include github org='fiji' repo='TrackMate'
+    source='fiji/plugin/trackmate/visualization/TrackMateModelView.java'
+    label='TrackMateModelView' %}, that is the actual view of the model.
+    All the hard work is done here.
+  - The {% include github org='fiji' repo='TrackMate'
+    source='fiji/plugin/trackmate/visualization/ViewFactory.java'
+    label='ViewFactory' %} that is a factory in charge of instantiating
+    the view and of the integration in TrackMate. This interface extends
+    the {% include github org='fiji' repo='TrackMate'
+    source='fiji/plugin/trackmate/TrackMateModule.java'
+    label='TrackMateModule' %} interface, so we expect to find there
+    some of the methods we discussed earlier, and the
+    [SciJava](SciJava "wikilink") annotation.
 
 In this tutorial, we will build something simple. We will limit
 ourselves to develop a view that simple messages the user every time
@@ -82,7 +75,7 @@ Right now, we just focus on building the view.
 
 \== The {% include github org='fiji' repo='TrackMate'
 source='fiji/plugin/trackmate/visualization/ViewFactory.java'
-label='ViewFactory' %} . ==
+label='ViewFactory' %}. ==
 
 The factory itself has nothing particular. On top of the TrackMateModule
 methods, it just has a method to instantiate the view it controls:
@@ -97,9 +90,8 @@ the view itself: the model of course, but also the settings object, so
 that we can find there a link to the image object. The {% include github
 org='fiji' repo='TrackMate'
 source='fiji/plugin/trackmate/visualization/hyperstack/HyperStackDisplayerFactory.java'
-label='HyperStackDisplayer' %}
-
-`uses it to retrieve the ImagePlus over which to display the TrackMate data.`
+label='HyperStackDisplayer' %} uses it to retrieve the ImagePlus over
+which to display the TrackMate data.
 
 The selection model is also offered, and the instance passed is the
 common one used in the GUI, so that a selection made by the user can be
@@ -107,9 +99,7 @@ shared amongst all views.
 
 \== The {% include github org='fiji' repo='TrackMate'
 source='fiji/plugin/trackmate/visualization/TrackMateModelView.java'
-label='TrackMateModelView' %}
-
-`interface. ==`
+label='TrackMateModelView' %} interface. ==
 
 ### Methods.
 
@@ -188,9 +178,7 @@ not, color by feature, etc...). If you feel like it, your view can just
 ignore them. Otherwise, their keys and desired classes are defined in
 the {% include github org='fiji' repo='TrackMate'
 source='fiji/plugin/trackmate/visualization/TrackMateModelView.java'
-label='TrackMateModelView' %}
-
-`interface. Check the static fields there.`
+label='TrackMateModelView' %} interface. Check the static fields there.
 
 Everytime the user changes a setting in the GUI, the new setting value
 is passed with the `setDisplaySettings()` method, then the `refresh()`
@@ -232,29 +220,24 @@ The event itself can report 5 types of changes:
   - The model is *modified*. By modification, we mean an incremental,
     manual modification of the model. The user might have deleted a
     spot, or moved it in space, or changed its size, or add an edge
-    between two spots, etc... In that case, the
-
-{% include github org='fiji' repo='TrackMate'
-source='fiji/plugin/trackmate/ModelChangeEvent.java'
-label='ModelChangeEvent' %}
-
-`instance can be interrogated to know what was changed, deleted, added, etc...`
+    between two spots, etc... In that case, the {% include github
+    org='fiji' repo='TrackMate'
+    source='fiji/plugin/trackmate/ModelChangeEvent.java'
+    label='ModelChangeEvent' %} instance can be interrogated to know
+    what was changed, deleted, added, etc...
 
 ### Listening to selection changes.
 
 The TrackMate GUI shares a common instance of {% include github
 org='fiji' repo='TrackMate'
 source='fiji/plugin/trackmate/SelectionModel.java'
-label='SelectionModel' %}
-
-`that stores the selection the user made. This is convenient when exploring the tracking results. `
+label='SelectionModel' %} that stores the selection the user made. This
+is convenient when exploring the tracking results.
 
 Your view can be kept in sync with the selection changes by implementing
 the {% include github org='fiji' repo='TrackMate'
 source='fiji/plugin/trackmate/SelectionChangeListener.java'
-label='SelectionChangeListener' %}
-
-`interface. It adds a single method:`
+label='SelectionChangeListener' %} interface. It adds a single method:
 
 ``` java
 public void selectionChanged(SelectionChangeEvent event);
@@ -268,9 +251,7 @@ then of course have to implement the two listener interfaces mentioned
 above. But the code stays pretty simple: check {% include github
 org='fiji' repo='TrackMate-examples'
 source='plugin/trackmate/examples/view/EventLoggerView.java'
-label='here' %}
-
-`for the details.`
+label='here' %} for the details.
 
 As for the factory, nothing fancy:
 
@@ -387,7 +368,7 @@ is just the subject of the next tutorial, on TrackMate actions. See you
 there.
 
 {% include person content='JeanYvesTinevez' %}
-
-`(`[`talk`](User_talk:JeanYvesTinevez "wikilink")`) 10:51, 17 March 2014 (CDT)`
+([talk](User_talk:JeanYvesTinevez "wikilink")) 10:51, 17 March 2014
+(CDT)
 
 [Category:Tutorials](Category:Tutorials "wikilink")

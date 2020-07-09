@@ -8,10 +8,9 @@ categories: Development
 description: test description
 ---
 
-{% include develop-menu content='tools' %}
-
-{% capture includecontent %} logo=Travis.png | blurb=**Travis CI:**
-Build your code in the cloud\! {% endcapture %}
+{% include develop-menu content='tools' %} {% capture includecontent %}
+logo=Travis.png | blurb=**Travis CI:** Build your code in the cloud\! {%
+endcapture %}
 
 {% include minibox content=includecontent %} [Travis
 CI](https://travis-ci.org/) is a tool for [continuous

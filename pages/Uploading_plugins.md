@@ -20,7 +20,7 @@ with the *-clean* suffix before building the actual target. Example:
 
 You can use the [Fiji Updater](Update_Fiji "wikilink") to upload new
 plugins (or new versions thereof). First start {% include bc
-content='Help | Update Fiji' %} . It will tell you that there are
+content='Help | Update Fiji' %}. It will tell you that there are
 *locally modified files*:
 
 ![Updater-locally-modified.png](Updater-locally-modified.png

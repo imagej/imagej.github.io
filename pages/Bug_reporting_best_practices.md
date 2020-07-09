@@ -135,9 +135,9 @@ the bug report.
 
 The easiest and safest way to provide sample data is via the {% include
 bc content='Help | [Upload Sample
-Image](Upload_Sample_Image "wikilink")' %}
-
-`command. This sends the image to a private space accessible only by trusted developers. This allows proprietary data to be tested without fear of public distribution.`
+Image](Upload_Sample_Image "wikilink")' %} command. This sends the image
+to a private space accessible only by trusted developers. This allows
+proprietary data to be tested without fear of public distribution.
 
 Note: if you do upload sample data via ImageJ, you should mention the
 name of the dataset in your bug report. This will help developers find
@@ -162,9 +162,8 @@ more powerful, due to the vast scope of the overhaul, there are
 inevitably issues remaining. If your dataset used to open correctly for
 you, but is broken after updating, please *disable* the "Use SCIFIO when
 opening files (BETA\!)" option in the {% include bc content='Edit |
-Options | ImageJ2' %}
-
-`dialog. This will revert to ImageJ 1.x's classic image I/O until the SCIFIO-driven I/O is fixed or improved.`
+Options | ImageJ2' %} dialog. This will revert to ImageJ 1.x's classic
+image I/O until the SCIFIO-driven I/O is fixed or improved.
 
 Note: even if disabling SCIFIO fixes the issue for you, **please** still
 report the discovered bug. The long-term vision for ImageJ is to migrate
@@ -180,8 +179,10 @@ pieces of critical information. Some of the most important being:
   - Files not up-to-date
 
 The {% include list-of-update-sites content='default update sites' %}
-
-`are intended to be fairly stable, but if you have additional update sites enabled there can be a risk of skewed or out of date dependencies (due to changes in core libraries), and some update sites are intentionally experimental.`
+are intended to be fairly stable, but if you have additional update
+sites enabled there can be a risk of skewed or out of date dependencies
+(due to changes in core libraries), and some update sites are
+intentionally experimental.
 
 Furthermore, if you have any **LOCAL\_ONLY** or **MODIFIED** files,
 their behavior can not be guaranteed - as they do not match what's on
@@ -200,28 +201,20 @@ you can do remove the offending component as follows:
 <!-- end list -->
 
 1.  If necessary, identify the jar containing the problematic class(es),
-    e.g. by using
-
-{% include bc content='Plugins | Utilities | Find Jar for Class' %}
-
-`in Fiji.`
-
-1.  Start the updater with <code>
-
-{% include bc content='Help | Update...' %} </code>
-
-1.  Switch to Advanced Mode
-2.  Search for the problematic components. Their associated update site
+    e.g. by using {% include bc content='Plugins | Utilities | Find Jar
+    for Class' %} in Fiji.
+2.  Start the updater with `{% include bc content='Help | Update...' %}`
+3.  Switch to Advanced Mode
+4.  Search for the problematic components. Their associated update site
     will be listed here.
-3.  Select `Manage Update Sites` and disable the update site identified
+5.  Select `Manage Update Sites` and disable the update site identified
     in 4.
-4.  Repeat 1-5 until your problem is resolved.
+6.  Repeat 1-5 until your problem is resolved.
 
 **NOTICE:** During this process it is critical to keep in mind that
 update sites take precedence in the {% include list-of-update-sites
-content='order they are declared' %}
-
-`- update sites lower on the list will overwrite components in sites higher on the list.`
+content='order they are declared' %} - update sites lower on the list
+will overwrite components in sites higher on the list.
 
 ### Binary search through your external plugins
 

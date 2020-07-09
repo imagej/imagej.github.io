@@ -343,12 +343,11 @@ the same place:
   - Spot features are simply conveyed by the spot object, and you can
     access them through `spot.getFeature('FEATURE_NAME')`
   - Edge and track features are stored in a sub-component of the model
-    object called the FeatureModel (
+    object called the FeatureModel ({% include github repo='fiji'
+    path='src-plugins/TrackMate\_/src/main/java/fiji/plugin/trackmate/FeatureModel.java'
+    label='FeatureModel.java' %}).
 
-{% include github repo='fiji'
-path='src-plugins/TrackMate\_/src/main/java/fiji/plugin/trackmate/FeatureModel.java'
-label='FeatureModel.java' %} ). Check the script below to see a working
-example.
+Check the script below to see a working example.
 
 ``` python
 from ij import IJ, ImagePlus, ImageStack
@@ -995,9 +994,8 @@ org=fiji|repo=TrackMate|source=../../../scripts/CallTrackMateMultiChannel.py
 
 ## Making TrackMate macro recordable with a 64-line script
 
-Contributed by {% include person content='Eglinger' %}
-
-`during a NEUBIAS course. Quoting from Jan:`
+Contributed by {% include person content='Eglinger' %} during a NEUBIAS
+course. Quoting from Jan:
 
 > "The macro language is too limited to work with such awesome things as
 > TrackMate, but that you can do everything with a more powerful

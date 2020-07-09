@@ -8,9 +8,9 @@ categories: Scripting
 description: test description
 ---
 
-{% include learn content='scripting' %} Templates are pre-written
-scripts in a particular scripting language. They can be distributed as
-any other plugin, and automatically discovered by the [Script
+{% include learn content='scripting' %}Templates are pre-written scripts
+in a particular scripting language. They can be distributed as any other
+plugin, and automatically discovered by the [Script
 Editor](Script_Editor "wikilink"). Templates thus present an excellent
 way to demonstrate a particular operation to a wide audience of users.
 

@@ -23,14 +23,11 @@ For more information about Maven, see:
 ## Install m2eclipse
 
 **Note:** if you use Eclipse 3.7 Indigo or newer, you most likely have
-m2e already. If your {% include bc content='File | Import' %}
+m2e already. If your {% include bc content='File | Import' %} offers you
+a *Maven* section, you have it, and can skip the rest of this section.
 
-`offers you a `*`Maven`*` section, you have it, and can skip the rest of this section.`
-
-  - From the Eclipse menu, choose
-
-{% include bc content='Help | Install New Software...' %}
-
+  - From the Eclipse menu, choose {% include bc content='Help | Install
+    New Software...' %}
   - Click the Add button to add an update site:
       - Name: m2eclipse
       - Location: http://m2eclipse.sonatype.org/sites/m2e
@@ -64,14 +61,8 @@ instructions exactly.
 Now update Eclipse's JRE to be JDK-aware:
 
   - Launch Eclipse
-  - From the menu choose
-
-{% include bc content='Window | Preferences' %}
-
-  - Select
-
-{% include bc content='Java | Installed JREs' %}
-
+  - From the menu choose {% include bc content='Window | Preferences' %}
+  - Select {% include bc content='Java | Installed JREs' %}
   - Click Search..., navigate to "C:\\Program Files\\Java\\jdk1.6.0\_20"
     and click OK
   - Check the box next to the JDK that appears and click OK

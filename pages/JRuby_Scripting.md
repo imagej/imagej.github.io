@@ -8,11 +8,11 @@ categories: Scripting
 description: test description
 ---
 
-{% include learn content='languages' %}
-[JRuby](http://jruby.codehaus.org/) is a marvellous project that created
-a complete implementation of Ruby that runs in the JVM. The excellent
-work of the authors of JRuby has made it very simple for us to add JRuby
-scripting into ImageJ.
+{% include learn content='languages'
+%}[JRuby](http://jruby.codehaus.org/) is a marvellous project that
+created a complete implementation of Ruby that runs in the JVM. The
+excellent work of the authors of JRuby has made it very simple for us to
+add JRuby scripting into ImageJ.
 
 JRuby scripting in ImageJ is a nice alternative to scripting using
 ImageJ's macro language. It has the following advantages:
@@ -38,7 +38,7 @@ Have fun\!
 
 Let's start writing some JRuby right away - start up the interpreter by
 going to {% include bc content='Plugins | Scripting | JRuby Interpreter'
-%} . The interpreter window will pop up, but it may take a little time
+%}. The interpreter window will pop up, but it may take a little time
 for the JRuby runtime to be ready. You should initially see the message:
 
 ` Starting JRuby ...`
@@ -57,7 +57,7 @@ Help](Scripting_Help "wikilink") for tips on using this interpreter
 window.l
 
 Try loading one of the ImageJ sample images by going to {% include bc
-content='File | Open Samples | T1 Head (2.4M, 16-bits)' %} . Once you've
+content='File | Open Samples | T1 Head (2.4M, 16-bits)' %}. Once you've
 done that we'll examine the image using JRuby. You can get a reference
 to the current image with ij.IJ.getImage. Try assigning the result to a
 variable, like this:
@@ -290,7 +290,7 @@ ImageJ plugins and commands. The next section has an example of the use
 of this. It may be instructive to compare the ["Blobs Demo"
 macro](https://imagej.net/macros/ConvexHull.txt) from the ImageJ
 distribution with {% include github repo='fiji'
-path='plugins/Examples/Blobs\_Demo\_in\_Ruby.rb' label='a' %} . The use
+path='plugins/Examples/Blobs\_Demo\_in\_Ruby.rb' label='a' %}. The use
 of the analagous function in JRuby is not always the same - for example,
 if you compare the invocation of getSelectionCoordinates, you'll find
 that whereas the ImageJ macro version passes in the output variables:
@@ -304,7 +304,7 @@ that whereas the ImageJ macro version passes in the output variables:
 A note for the interested programmer: About 15% of the macro functions
 have be done so far, and if anyone wanted to help out with doing the
 rest, that would be excellent\! The source code {% include github
-repo='fiji' path='plugins/JRuby/imagej.rb' label='can' %} .
+repo='fiji' path='plugins/JRuby/imagej.rb' label='can' %}.
 
 ## Example: Generating Red/Cyan Anaglyphs
 
@@ -328,8 +328,8 @@ run "3D Project...", projection_options
 ```
 
 In general, the best way to figure out what these options should be is
-to start the macro recorder with " {% include bc content='Plugins |
-Macros | Record...' %} " and run the plugin. In this case, the output in
+to start the macro recorder with "{% include bc content='Plugins |
+Macros | Record...' %}" and run the plugin. In this case, the output in
 the macro recorder looks like this:
 
 ` run("3D Project...", "projection=[Brightest Point] axis=Y-Axis slice=1.20 initial=-2 total=4 `  
@@ -363,10 +363,10 @@ scijava|repo=scripting-jruby|path=src/main/resources/script\_templates/Intro/Gre
 ## Library
 
 There is a library called {% include github repo='fiji'
-path='plugins/JRuby/imagej.rb' label='imagej.rb' %}
-
-`for convenience. It contains a number of useful functions related to ImageJ. It is loaded by default when creating a new JRuby script in the `[`Script`` 
- ``Editor`](Script_Editor "wikilink")`.`
+path='plugins/JRuby/imagej.rb' label='imagej.rb' %} for convenience. It
+contains a number of useful functions related to ImageJ. It is loaded by
+default when creating a new JRuby script in the [Script
+Editor](Script_Editor "wikilink").
 
 ## What next?
 

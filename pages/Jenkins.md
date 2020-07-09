@@ -8,10 +8,9 @@ categories: Development
 description: test description
 ---
 
-{% include develop-menu content='tools' %}
-
-{% capture includecontent %} logo=Jenkins.png | blurb=**Jenkins:**
-Serving the ImageJ community, 2010 - 2019\! {% endcapture %}
+{% include develop-menu content='tools' %} {% capture includecontent %}
+logo=Jenkins.png | blurb=**Jenkins:** Serving the ImageJ community, 2010
+- 2019\! {% endcapture %}
 
 {% include minibox content=includecontent %} ImageJ had a Jenkins
 server: a continuous integration system which automatically checked the

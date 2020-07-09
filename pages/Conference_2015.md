@@ -149,25 +149,18 @@ the [Conference 2015 Program](Conference_2015_Program "wikilink") page.
 
 ## Organizers
 
-  - 
-{% include person content='Eliceiri' %} , [Laboratory for Optical and
-Computational Instrumentation](LOCI "wikilink") (LOCI) at
-[UW-Madison](http://wisc.edu/)
-
+  - {% include person content='Eliceiri' %}, [Laboratory for Optical and
+    Computational Instrumentation](LOCI "wikilink") (LOCI) at
+    [UW-Madison](http://wisc.edu/)
   - Kristy Wendt, [Laboratory for Optical and Computational
     Instrumentation](LOCI "wikilink") (LOCI) at
     [UW-Madison](http://wisc.edu/)
-
-  - 
-{% include person content='Rueden' %} , [Laboratory for Optical and
-Computational Instrumentation](LOCI "wikilink") (LOCI) at
-[UW-Madison](http://wisc.edu/)
-
-  - 
-{% include person content='Hinerm' %} , [Laboratory for Optical and
-Computational Instrumentation](LOCI "wikilink") (LOCI) at
-[UW-Madison](http://wisc.edu/)
-
+  - {% include person content='Rueden' %}, [Laboratory for Optical and
+    Computational Instrumentation](LOCI "wikilink") (LOCI) at
+    [UW-Madison](http://wisc.edu/)
+  - {% include person content='Hinerm' %}, [Laboratory for Optical and
+    Computational Instrumentation](LOCI "wikilink") (LOCI) at
+    [UW-Madison](http://wisc.edu/)
   - Andreas Jahnen, [Luxembourg Institute of Science and
     Technology](http://www.list.lu/)
 
@@ -177,26 +170,18 @@ Abstract submissions were reviewed by the conference advisory committee:
 
   - Christian Dietz, [University of
     Konstanz](http://www.uni-konstanz.de/en/welcome/), Germany
-
   - Andreas Jahnen, [Luxembourg Institute of Science and
     Technology](http://www.list.lu/)
-
   - Lee Kamentsky, [Broad Institute](http://www.broadinstitute.org/) of
     MIT and Harvard
-
   - Gabriel Landini, [University of
     Birmingham](http://www.birmingham.ac.uk/)
-
   - Brian Northan, [True North Intelligent Algorithms
     LLC](http://www.truenorth-ia.com/)
-
   - Tobias Pietzsch, [Max Planck Institute of Molecular Cell Biology and
     Genetics](http://mpi-cbg.de/) (MPI-CBG) at Dresden
-
-  - 
-{% include person content='Rasband' %} , [National Institutes of
-Health](http://www.nih.gov/)
-
+  - {% include person content='Rasband' %}, [National Institutes of
+    Health](http://www.nih.gov/)
   - Pavel Tomancak, [Max Planck Institute of Molecular Cell Biology and
     Genetics](http://mpi-cbg.de/) (MPI-CBG) at Dresden
 

@@ -8,9 +8,7 @@ categories:
 description: test description
 ---
 
-{% include develop-menu content='tutorials' %}
-
-%Replace% TOC %Replace%
+{% include develop-menu content='tutorials' %} %Replace% TOC %Replace%
 
 # Introduction
 

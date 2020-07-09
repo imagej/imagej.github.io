@@ -38,7 +38,7 @@ URL, which would be provided by the plugin's author or distributor.
 
 **Note:** the list of update sites shown by default is generated from a
 special page, which you can {% include list-of-update-sites
-content='view and edit here' %} . Update site maintainers are encouraged
+content='view and edit here' %}. Update site maintainers are encouraged
 to add their update site to this list, as it both helps the community
 and the developers.
 

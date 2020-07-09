@@ -340,12 +340,8 @@ https://abi-laboratory.pro/java/tracker/timeline/scijava-common/
 # Further reading
 
   - [SciJava web site](https://scijava.org/)
-
   - [SciJava Common
     presentation](https://scijava.org/scijava-common/scijava-common.html)
-
-  - 
-{% include github org='imagej' repo='tutorials' label='ImageJ' %}
-
-  - 
-{% include github org='scijava' repo='scijava-common' label='SciJava' %}
+  - {% include github org='imagej' repo='tutorials' label='ImageJ' %}
+  - {% include github org='scijava' repo='scijava-common'
+    label='SciJava' %}

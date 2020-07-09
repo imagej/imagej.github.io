@@ -10,7 +10,7 @@ description: test description
 
 This page summarizes translation of basic operations of ImageJ1 and
 ImageJ2 API. Based on the work of {% include person
-content='Haesleinhuepf' %} , Scientific Computing Facility, MPI-CBG
+content='Haesleinhuepf' %}, Scientific Computing Facility, MPI-CBG
 Dresden.
 
 <table>

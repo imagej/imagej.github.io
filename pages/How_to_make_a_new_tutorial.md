@@ -17,8 +17,7 @@ a sense, the plugin was written to document its own usage.
 ## First step: call the Tutorial Maker
 
 After clicking on {% include bc content='Plugins | Utilities | Fiji |
-New Fiji Tutorial' %} , you will be asked for the title of your
-tutorial:
+New Fiji Tutorial' %}, you will be asked for the title of your tutorial:
 
 ![How\_to\_make\_a\_new\_tutorial-PageTitle.jpg](How_to_make_a_new_tutorial-PageTitle.jpg
 "How_to_make_a_new_tutorial-PageTitle.jpg")
@@ -55,14 +54,9 @@ taking the snapshot.
 
 After taking some or all of the snapshots you want to include in your
 tutorial, you have to crop them. Just select the appropriate rectangle,
-and then click on ImageJ's {% include bc content='Edit | Crop' %}
-
-`or hit `
-
-{% include key content='Ctrl' %} + {% include key content='Shift' %} +
-{% include key content='X' %}
-
-  - 
+and then click on ImageJ's {% include bc content='Edit | Crop' %} or hit
+{% include key content='Ctrl' %}+{% include key content='Shift' %}+{%
+include key content='X' %}:
 
 ![How\_to\_make\_a\_new\_tutorial-CropSnapshot.jpg](How_to_make_a_new_tutorial-CropSnapshot.jpg
 "How_to_make_a_new_tutorial-CropSnapshot.jpg")
@@ -91,9 +85,7 @@ image:
 "How_to_make_a_new_tutorial-Rename2.jpg")
 
 The other method is to select the image and click on ImageJ's {% include
-bc content='Image | Rename...' %}
-
-`menu item.`
+bc content='Image | Rename...' %} menu item.
 
 In both cases, the image references in the text will be adjusted
 automatically.

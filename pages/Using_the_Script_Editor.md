@@ -9,7 +9,7 @@ description: test description
 ---
 
 The script editor is an invaluable help when writing scripts in any of
-ImageJ's supported [languages](Scripting_comparisons "wikilink"). {%
+ImageJ's supported [languages](Scripting_comparisons "wikilink").{%
 include learn content='scripting' %}
 
 ## Features
@@ -67,9 +67,8 @@ To get started, start up the script editor:
 
 ![Script-Editor-new.jpg](Script-Editor-new.jpg "Script-Editor-new.jpg")
 
-There is also the keyboard shortcut {% include key content='\[' %}
-
-`(open square bracket) to open the editor.`
+There is also the keyboard shortcut {% include key content='\[' %} (open
+square bracket) to open the editor.
 
 ### Choosing a language
 

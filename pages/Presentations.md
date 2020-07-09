@@ -83,8 +83,8 @@ Spring 2019: <a href="http://imagej.github.io/presentations/fiji-scripting/">sli
 </tr>
 <tr class="even">
 <td><p>2018-Dec-06</p></td>
-<td><p>{% include person content='Rueden' %} ,<br />
-{% include person content='Pietzsch' %} ,<br />
+<td><p>{% include person content='Rueden' %},<br />
+{% include person content='Pietzsch' %},<br />
 {% include person content='Dietzc' %}</p></td>
 <td><p>ImageJ and Friends: Retrospective, current status and future</p></td>
 <td><p><a href="https://docs.google.com/presentation/d/1SWO0DhrJfIvgKdr4jkBFP2nCn-JZ4QZ5xeDjwWRIXQo/present">slides (online; no movies)</a>,<br />

@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-{% include project content='SciJava' %} SciJava is a collaboration of
+{% include project content='SciJava' %}SciJava is a collaboration of
 projects providing software for scientific computing—an effort to
 cooperate and reuse code when feasible.
 

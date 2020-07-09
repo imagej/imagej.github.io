@@ -9,7 +9,7 @@ description: test description
 ---
 
 Similarly to the command {% include bc content='Image | Color | RGB
-split' %} , this plugin unmixes an RGB image produced by subtractive
+split' %}, this plugin unmixes an RGB image produced by subtractive
 mixing (inks, histological dyes) into separate channels corresponding to
 up to 3 determined colors. This is useful e.g. to do pigment separation.
 

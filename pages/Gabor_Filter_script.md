@@ -31,11 +31,11 @@ version of the original image for each orientation, and the projections
 
 ## Example
 
-This is an example of the script results using the Leaf sample image (
-{% include bc content='File | Open Samples | Leaf (36K)' %} ) and sigma
-= 8.0, gamma = 0.25, psi = 0.0, Fx = 3.0, nAngles = 5. ![Demonstration
-of a Gabor filter applied to the Leaf sample image. Five orientations
-are shown on the right (0°, 36°, 72°, 108° and 144°). The original Leaf
+This is an example of the script results using the Leaf sample image ({%
+include bc content='File | Open Samples | Leaf (36K)' %}) and sigma =
+8.0, gamma = 0.25, psi = 0.0, Fx = 3.0, nAngles = 5. ![Demonstration of
+a Gabor filter applied to the Leaf sample image. Five orientations are
+shown on the right (0°, 36°, 72°, 108° and 144°). The original Leaf
 picture is shown on the upper-left
 corner.](Montage-Gabor-filter-5-angles.png
 "Demonstration of a Gabor filter applied to the Leaf sample image. Five orientations are shown on the right (0°, 36°, 72°, 108° and 144°). The original Leaf picture is shown on the upper-left corner.")

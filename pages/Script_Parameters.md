@@ -8,7 +8,7 @@ categories: Scripting
 description: test description
 ---
 
-{% include learn content='scripting' %} All scripting languages have
+{% include learn content='scripting' %}All scripting languages have
 access to a universal `#@parameter` notation for declaring inputs and
 outputs. This approach is preferred over the ImageJ 1.x
 [GenericDialog](Generic_dialog "wikilink") because it is totally

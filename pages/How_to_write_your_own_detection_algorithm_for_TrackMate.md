@@ -51,19 +51,18 @@ Let's get started with the easiest part, the detection algorithm.
 
 \== The {% include github org='fiji' repo='TrackMate'
 source='fiji/plugin/trackmate/detection/SpotDetector.java'
-label='SpotDetector' %}
-
-`interface. ==`
+label='SpotDetector' %} interface. ==
 
 ### A detector instance operates on a single frame.
 
 The detection part itself is implemented in a class that implements the
 {% include github org='fiji' repo='TrackMate'
 source='fiji/plugin/trackmate/detection/SpotDetector.java'
-label='SpotDetector' %}
-
-`interface. Browsing there, you will see that it is just a specialization of an output algorithm from `[`ImgLib2`](ImgLib2 "wikilink")`. We are required to spit out a List`<Spot>` that represents the list of detection (one Spot per detection) for a `**`single`` 
- ``frame`**`. `
+label='SpotDetector' %} interface. Browsing there, you will see that it
+is just a specialization of an output algorithm from
+[ImgLib2](ImgLib2 "wikilink"). We are required to spit out a
+`List`<Spot> that represents the list of detection (one `Spot` per
+detection) for a **single frame**.
 
 This is important: <u>an instance of your detector is supposed to work
 on a single frame</u>. TrackMate will generate as many instances of the
@@ -79,7 +78,7 @@ done below.
 
 \=== A SpotDetector *can be* {% include github repo='imglib'
 path='algorithms/core/src/main/java/net/imglib2/algorithm/MultiThreaded.java'
-label='multithreaded' %} . ===
+label='multithreaded' %}. ===
 
 So TrackMate offers you a turnkey multithreaded solution: If you have a
 computer with 12 cores and 50 frames to segment, TrackMate will fire 12
@@ -89,9 +88,9 @@ But let's say that you have 24 cores and only 6 frames to segment. You
 can exploit this situation by letting your concrete instance of
 SpotDetector implement the ImgLib2 {% include github repo='imglib'
 path='algorithms/core/src/main/java/net/imglib2/algorithm/MultiThreaded.java'
-label='MultiThreaded' %}
-
-`interface. In that case, TrackMate will still fire 6 SpotDetector instances (one for each frame), but will allocate 4 threads to each instance, and get an extra kick in speed. `
+label='MultiThreaded' %} interface. In that case, TrackMate will still
+fire 6 SpotDetector instances (one for each frame), but will allocate 4
+threads to each instance, and get an extra kick in speed.
 
 Of course, you have to devise a clever multithreading strategy to
 operate concurrently on a single frame. For instance, you could divide
@@ -99,19 +98,17 @@ the image into several blocks and process them in parallel. Or delegate
 to sub-algorithms that are multithreaded; check for instance the {%
 include github org='fiji' repo='TrackMate'
 source='fiji/plugin/trackmate/detection/LogDetector.java'
-label='LogDetector' %}
-
-`code.`
+label='LogDetector' %} code.
 
 \=== Detection results are represented by {% include github org='fiji'
 repo='TrackMate' source='fiji/plugin/trackmate/Spot.java' label='Spots'
-%} . ===
+%}. ===
 
 {% include github org='fiji' repo='TrackMate'
-source='fiji/plugin/trackmate/Spot.java' label='Spots' %}
-
-`are used to represent detection results: one detection = one spot. By convention, a detection algorithm must provide `*`at`` 
- ``least`*` the following numerical feature to each spot:`
+source='fiji/plugin/trackmate/Spot.java' label='Spots' %} are used to
+represent detection results: one detection = one spot. By convention, a
+detection algorithm must provide *at least* the following numerical
+feature to each spot:
 
   - The X, Y, Z coordinates, obviously. What is not that obvious is that
     TrackMate uses only image coordinates. This means that if your image
@@ -139,27 +136,21 @@ from the center of the image. A real detector would require you to hone
 your [ImgLib2](ImgLib2 "wikilink") skills; check the {% include github
 org='fiji' repo='TrackMate'
 source='fiji/plugin/trackmate/detection/LogDetector.java'
-label='LogDetector' %}
-
-`code for an example. `
+label='LogDetector' %} code for an example.
 
 Below is the source code for the dummy detector. You can also find it {%
 include github org='fiji' repo='TrackMate-examples'
 source='plugin/trackmate/examples/detector/SpiralDummyDetector.java'
-label='online' %} . Let's comment a bit on this:
+label='online' %}. Let's comment a bit on this:
 
 #### The type parameter `< T extends RealType< T > & NativeType< T >>`
 
 Instances of SpotDetector are parametrized with a generic type `T` that
 must extends {% include github repo='imglib'
 path='core/src/main/java/net/imglib2/type/numeric/RealType.java'
-label='RealType' %}
-
-`and `
-
-{% include github repo='imglib'
+label='RealType' %} and {% include github repo='imglib'
 path='core/src/main/java/net/imglib2/type/NativeType.java'
-label='NativeType' %} . These are the bounds for all the scalar types
+label='NativeType' %}. These are the bounds for all the scalar types
 based on native types, such us `float`, `int`, `byte`, etc...
 
 This is the type of the image data we are to operate on.
@@ -180,9 +171,8 @@ not there. But we will speak of this more when discussing the factory.
 Because TrackMate can also be tuned to operate only on a ROI, the
 instance receives an {% include github repo='imglib'
 path='core/src/main/java/net/imglib2/Interval.java' label='Interval' %}
-
-`that represent the bounding box `**`in``   ``pixel`` 
- ``coordinates`**` of the ROI the user selected. Here, we just use it to center the spirals. `
+that represent the bounding box **in pixel coordinates** of the ROI the
+user selected. Here, we just use it to center the spirals.
 
 Because we must store the *physical coordinates*' in the spots we
 create, we need a calibration array to convert pixel coordinates to
@@ -191,9 +181,7 @@ it contains the pixel sizes along X, Y and Z.
 
 \==== The {% include github repo='imglib'
 path='algorithms/core/src/main/java/net/imglib2/algorithm/Algorithm.java'
-label='Algorithm' %}
-
-`methods. ====`
+label='Algorithm' %} methods. ====
 
 `checkInput()` checks that the parameters passed are OK prior to
 processing, and returns `false` if they are not. `process()` does all
@@ -205,9 +193,7 @@ through `getErrorMessage()`.
 
 \==== The {% include github repo='imglib'
 path='algorithms/core/src/main/java/net/imglib2/algorithm/OutputAlgorithm.java'
-label='OutputAlgorithm' %}
-
-`method. ====`
+label='OutputAlgorithm' %} method. ====
 
 This one just asks us to return the results as a list of spots. It must
 be a field of your instance, that is ideally instantiated and built in
@@ -215,9 +201,7 @@ the `precess()` method. The `getResult()` method exposes this list.
 
 \==== The {% include github repo='imglib'
 path='algorithms/core/src/main/java/net/imglib2/algorithm/Benchmark.java'
-label='Benchmark' %}
-
-`method. ====`
+label='Benchmark' %} method. ====
 
 Well, we just want to know how much time it took. Note that all of these
 are the usual suspects of an ImgLib2 generic algorithm, so they should
@@ -380,9 +364,7 @@ that instantiates this detector.
 
 \== The {% include github org='fiji' repo='TrackMate'
 source='fiji/plugin/trackmate/detection/SpotDetectorFactory.java'
-label='SpotDetectorFactory' %}
-
-`interface. ==`
+label='SpotDetectorFactory' %} interface. ==
 
 The SpotDetectorFactory concrete implementation is the class that needs
 to be annotated with the [SciJava](SciJava "wikilink") annotation. For
@@ -417,9 +399,9 @@ factories. For SpotDetector factories, this role is played by the
 
 The raw image data is returned as an {% include github repo='imglib'
 path='meta/src/main/java/net/imglib2/meta/ImgPlus.java' label='ImgPlus'
-%} , that can be seen as the [ImgLib2](ImgLib2 "wikilink") equivalent of
+%}, that can be seen as the [ImgLib2](ImgLib2 "wikilink") equivalent of
 ImageJ1 {% include github org='imagej' repo='ImageJA'
-source='ij/ImagePlus.java' label='ImagePlus' %} . It contains the pixel
+source='ij/ImagePlus.java' label='ImagePlus' %}. It contains the pixel
 data for all available dimensions (all X, Y, Z, C, T if any), plus the
 spatial calibration we need to operate in physical units. The concrete
 factory must be able to extract from this ImgPlus the data useful for
@@ -441,7 +423,7 @@ be used through a GUI, we need to create a GUI element for this task: a
 configuration panel. The class that does that in TrackMate is {% include
 github org='fiji' repo='TrackMate'
 source='fiji/plugin/trackmate/gui/ConfigurationPanel.java'
-label='ConfigurationPanel' %} . It is an abstract class that extends
+label='ConfigurationPanel' %}. It is an abstract class that extends
 JPanel, and that adds two methods to display a settings map and return
 it.
 
@@ -461,9 +443,7 @@ are excruciating long and painfully hard to write, at least if you want
 to get them right. Check the {% include github org='fiji'
 repo='TrackMate'
 source='fiji/plugin/trackmate/gui/panels/detector/LogDetectorConfigurationPanel.java'
-label='configuration' %}
-
-`for an example.`
+label='configuration' %} for an example.
 
 ### Checking the validity of parameters.
 
@@ -523,13 +503,15 @@ element](http://www.jdom.org/docs/apidocs/org/jdom2/Element.html), and
 it must contain eveything you want to save from the detector, as
 attribute or child elements. Here is what you must put in it:
 
-  - You must at the very least set an attribute that has for key
+  - You must at the very least set an attribute that has for key {%
+    include github org='fiji' repo='TrackMate'
+    source='fiji/plugin/trackmate/detection/DetectorKeys.java\#L14'
+    label='`"DETECTOR_NAME"`' %} and value the SpotDetectorFactory key
+    (the one you get with the `getKey()`) method\[2\]. This will be used
+    in turn when loading from XML, to retrieve the right detector you
+    used.
 
-{% include github org='fiji' repo='TrackMate'
-source='fiji/plugin/trackmate/detection/DetectorKeys.java\#L14'
-label='`"DETECTOR_NAME"`' %}
-
-`and value the SpotDetectorFactory key (the one you get with the getKey()) method`\[2\]`. This will be used in turn when loading from XML, to retrieve the right detector you used. `
+<!-- end list -->
 
   - If something goes wrong when saving, then the `marshall` method must
     return `false`, and you must provide a meaningful error message for
@@ -537,18 +519,13 @@ label='`"DETECTOR_NAME"`' %}
 
 <!-- end list -->
 
-  - Everything else is pretty much up to you. There is a
-
-{% include github org='fiji' repo='TrackMate'
-source='fiji/plugin/trackmate/io/IOUtils.java\#L383' label='helper' %}
-
-`that you can use to serialize single parameters. Check the `
-
-{% include github org='fiji' repo='TrackMate'
-source='fiji/plugin/trackmate/detection/LogDetectorFactory.java\#L161'
-label='LogDetectorFactory' %}
-
-`for an example. `
+  - Everything else is pretty much up to you. There is a {% include
+    github org='fiji' repo='TrackMate'
+    source='fiji/plugin/trackmate/io/IOUtils.java\#L383' label='helper'
+    %} that you can use to serialize single parameters. Check the {%
+    include github org='fiji' repo='TrackMate'
+    source='fiji/plugin/trackmate/detection/LogDetectorFactory.java\#L161'
+    label='LogDetectorFactory' %} for an example.
 
 #### Unmarshalling.
 
@@ -561,15 +538,13 @@ of the same SpotDetectorFactory. TrackMate makes sure the right
 There are a few help methods around to help you with reading from XML.
 For instance, check all the `read*Attribute` of the {% include github
 org='fiji' repo='TrackMate'
-source='fiji/plugin/trackmate/io/IOUtils.java' label='IOUtils' %}
-
-`class. It is also a good idea to call the checkSettings method with the map you just built.`
+source='fiji/plugin/trackmate/io/IOUtils.java' label='IOUtils' %} class.
+It is also a good idea to call the `checkSettings` method with the map
+you just built.
 
 Check again the {% include github org='fiji' repo='TrackMate'
 source='fiji/plugin/trackmate/detection/LogDetectorFactory.java\#L173'
-label='LogDetectorFactory' %}
-
-`for an example.`
+label='LogDetectorFactory' %} for an example.
 
 ### Instantiating spot detectors.
 
@@ -583,7 +558,7 @@ This will be called repeatedly by TrackMate to generate as many
 SpotDetector instances as there is frames in the raw data to segment.
 The two parameters specify the ROI the user wants to operate on as an {%
 include github repo='imglib'
-path='core/src/main/java/net/imglib2/Interval.java' label='Imglib2' %} ,
+path='core/src/main/java/net/imglib2/Interval.java' label='Imglib2' %},
 and the target frame. So you need to process and bundle:
 
   - this interval and this frame;
@@ -644,7 +619,7 @@ anything useful by first ignoring the image content, second by not using
 any parameter. You can also find it {% include github org='fiji'
 repo='TrackMate-examples'
 source='plugin/trackmate/examples/detector/SpiralDummyDetectorFactory.java'
-label='online' %} .
+label='online' %}.
 
 ``` java
 package plugin.trackmate.examples.detector;
@@ -802,8 +777,7 @@ I let it run on a 512 x 512 x 200 frames image, and tracked them.
 "TrackMateCustomDetector_01.gif")
 
 {% include person content='JeanYvesTinevez' %}
-
-`(`[`talk`](User_talk:JeanYvesTinevez "wikilink")`) 08:28, 3 April 2014 (CDT)`
+([talk](User_talk:JeanYvesTinevez "wikilink")) 08:28, 3 April 2014 (CDT)
 
 \_\_\_\_\_
 
@@ -815,5 +789,4 @@ I let it run on a 512 x 512 x 200 frames image, and tracked them.
     source data. Keeping all the coordinates in physical units allow
     exchanging results without having to keep a reference to the
     original image.
-2.  `Careful,``   ``this``   ``will``   ``not``   ``be`` 
-     ``mandatory``   ``in``   ``TrackMate``   ``v2.3.0`
+2.  Careful, this will not be mandatory in TrackMate v2.3.0

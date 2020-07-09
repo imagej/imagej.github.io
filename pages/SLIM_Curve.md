@@ -54,7 +54,7 @@ site](update_site "wikilink").
 
 Once you have installed the SLIM Curve plugin it becomes available on
 the menu under {% include bc content='Analyze | Lifetime | SLIM Curve'
-%} .
+%}.
 
 ## Usage
 
@@ -597,14 +597,10 @@ classification are:
     region not needed.
 7.  Run the Create Mask and Create Selection commands to make the ROI.
     You can execute commands easily using the [Command
-    Finder](Command_Finder "wikilink") (press
-
-{% include key content='L' %} ).
-
-1.  Add the ROI to ROI manager by pressing
-
-{% include key content='T' %} . Use it on overlay with lifetime image
-and start analyzing.
+    Finder](Command_Finder "wikilink") (press {% include key content='L'
+    %}).
+8.  Add the ROI to ROI manager by pressing {% include key content='T'
+    %}. Use it on overlay with lifetime image and start analyzing.
 
 ![Weka\_module.JPG](Weka_module.JPG "Weka_module.JPG")
 ![Overlay.JPG](Overlay.JPG "Overlay.JPG")

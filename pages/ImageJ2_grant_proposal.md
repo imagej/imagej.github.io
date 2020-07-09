@@ -113,7 +113,7 @@ has been a program with a wide range of functionality capable of solving
 a diverse collection of image processing and analysis problems,
 particularly in the life sciences. However, this pattern of growth,
 though carefully controlled by ImageJ's main developer {% include person
-content='Rasband' %} , is no substitute for a holistically engineered
+content='Rasband' %}, is no substitute for a holistically engineered
 package built from the ground up with a modular design. Any successful
 software project, after a period of sustained growth and the addition of
 functionality outside the scope of the program's original intent, will

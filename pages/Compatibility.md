@@ -18,7 +18,7 @@ The [ImageJ2](ImageJ2 "wikilink") project is a complete redesign of
 ImageJ, with no dependency on [ImageJ 1.x](ImageJ_1.x "wikilink").
 However, to facilitate backwards compatibility, there is an **ImageJ
 Legacy** component (source {% include github content='org = imagej |
-repo = imagej-legacy' %} ) which provides extensions for ImageJ2 and
+repo = imagej-legacy' %}) which provides extensions for ImageJ2 and
 ImageJ1 to operate in harmony.
 
 The ImageJ legacy layer provides the following extensions:
@@ -56,9 +56,8 @@ designed with such requirements in mind. The legacy layer uses a
 bytecode manipulation library called [Javassist](Javassist "wikilink")
 to rewrite portions of ImageJ1 at runtime, in order to facilitate
 integration and extension. See the {% include github content='org =
-imagej | repo = ij1-patcher | label = ij1-patcher' %}
-
-`project for details.`
+imagej | repo = ij1-patcher | label = ij1-patcher' %} project for
+details.
 
 ### Translation of data structures
 
@@ -87,7 +86,7 @@ arrays—but in some cases the data must be copied (e.g., for ROIs).
 Currently, automatic synchronization is disabled as it has negative
 performance implications. The planned solution to the performance
 problems is to {% include github org='imagej' repo='imagej-legacy'
-issue='86' label='implement' %} , instead of relying on up-front
+issue='86' label='implement' %}, instead of relying on up-front
 pixel-wise translation.
 
 In the mean time, full synchronization can be forced by setting a
@@ -105,14 +104,9 @@ System.setProperty("imagej.legacy.sync", "true");
 The eventual goal is to migrate all core ImageJ1 plugins to the ImageJ2
 paradigm. Many ImageJ1 plugins have been already been updated in this
 fashion; see the {% include github content='org = imagej | repo =
-imagej-ops | label = imagej-ops' %}
-
-`and  `
-
-{% include github content='org = imagej | repo = imagej-plugins-commands
-| label = imagej-plugins-commands' %}
-
-`repositories in particular.`
+imagej-ops | label = imagej-ops' %} and {% include github content='org =
+imagej | repo = imagej-plugins-commands | label =
+imagej-plugins-commands' %} repositories in particular.
 
 ## See also
 

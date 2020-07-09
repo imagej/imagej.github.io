@@ -36,26 +36,19 @@ to **disable** modules.
 All the track feature analyzers must implement {% include github
 org='fiji' repo='TrackMate'
 source='fiji/plugin/trackmate/features/track/TrackAnalyzer.java'
-label='TrackAnalyzer' %} . Like for the {% include github org='fiji'
+label='TrackAnalyzer' %}. Like for the {% include github org='fiji'
 repo='TrackMate'
 source='fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java'
-label='EdgeAnalyzer' %}
+label='EdgeAnalyzer' %} interface, it extends both
 
-`interface, it extends both`
-
-  - 
-{% include github org='fiji' repo='TrackMate'
-source='fiji/plugin/trackmate/features/FeatureAnalyzer.java'
-label='FeatureAnalyzer' %}
-
-`that helps you declaring what you compute, `
-
-  - and
-
-{% include github org='fiji' repo='TrackMate'
-source='fiji/plugin/trackmate/TrackMateModule.java'
-label='TrackMateModule' %} , that is in charge of the integration in
-TrackMate.
+  - {% include github org='fiji' repo='TrackMate'
+    source='fiji/plugin/trackmate/features/FeatureAnalyzer.java'
+    label='FeatureAnalyzer' %} that helps you declaring what you
+    compute,
+  - and {% include github org='fiji' repo='TrackMate'
+    source='fiji/plugin/trackmate/TrackMateModule.java'
+    label='TrackMateModule' %}, that is in charge of the integration in
+    TrackMate.
 
 The only changes for us are two methods specific to tracks:
 
@@ -191,8 +184,8 @@ quick recap:
 
 All the track structure is stored in a sub-component of the model called
 the {% include github org='fiji' repo='TrackMate'
-source='fiji/plugin/trackmate/TrackModel.java' label='TrackModel' %} .
-It stores the collection of links between two spots that builds a graph,
+source='fiji/plugin/trackmate/TrackModel.java' label='TrackModel' %}. It
+stores the collection of links between two spots that builds a graph,
 and has some rather complex logic to maintain a list of connected
 components: the tracks.
 
@@ -258,7 +251,7 @@ and end points. Here is the whole code for the processing method:
 The whole code for the analyzer can be found {% include github
 org='fiji' repo='TrackMate-examples'
 source='plugin/trackmate/examples/trackanalyzer/TrackStartSpotAnalyzer.java'
-label='here' %} .
+label='here' %}.
 
 ## Wrapping up
 
@@ -297,7 +290,7 @@ except that you can change your mind easily. By the way, you can see
 that the TrackMate source tree has many of these disabled modules...
 
 {% include person content='JeanYvesTinevez' %}
-
-`(`[`talk`](User_talk:JeanYvesTinevez "wikilink")`) 14:23, 11 March 2014 (CDT)`
+([talk](User_talk:JeanYvesTinevez "wikilink")) 14:23, 11 March 2014
+(CDT)
 
 [Category:Tutorials](Category:Tutorials "wikilink")

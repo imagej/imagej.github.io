@@ -15,11 +15,8 @@ allowing scripting from the command line.
 ## Getting Started
 
 Start it via {% include bc content='Plugins|Scripting|Script
-Interpreter' %}
-
-`or by typing `
-
-{% include key content='Shift' %} - {% include key content='\[' %} .
+Interpreter' %} or by typing {% include key content='Shift' %}-{%
+include key content='\[' %}.
 
 ![Script\_Interpreter.png](Script_Interpreter.png
 "Script_Interpreter.png")

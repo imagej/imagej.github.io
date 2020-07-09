@@ -35,7 +35,7 @@ will need a JDK in order to develop Java code.
 
 To develop a plugin, the developer first needs to find out in which file
 it is contained. To do that, simply call the *Command Finder* (shortcut
-{% include key content='Ctrl|L' %} ), type (part of) the label of the
+{% include key content='Ctrl|L' %}), type (part of) the label of the
 menu entry in whose function you are interested, and look at the *File*
 column.
 
@@ -48,9 +48,8 @@ https://github.com/fiji/Stitching, *Time\_Lapse.jar* in the repository
 at https://github.com/fiji/Time_Lapse.
 
 If in doubt about the location of the repository, just call {% include
-bc content='Plugins | Debug | System Information' %}
-
-`and find the section corresponding to the file in question.`
+bc content='Plugins | Debug | System Information' %} and find the
+section corresponding to the file in question.
 
 Once the developer has identified which plugin or library she wants to
 modify or develop further, it is very easy to build and contribute by

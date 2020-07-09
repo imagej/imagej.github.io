@@ -278,10 +278,10 @@ idea to practice them in this order.
 ## Known problems
 
 TrackMate LoG detector will crash if you have the {% include
-list-of-update-sites content='Mosaic suite update site' %}
-
-`activated. Apparently they ship something that interferes with the FFT code used by the LoG detector. The bug report can be read `[`on`` 
- ``BugZilla`](https://fiji.sc/bugzilla/show_bug.cgi?id=806)`. `
+list-of-update-sites content='Mosaic suite update site' %} activated.
+Apparently they ship something that interferes with the FFT code used by
+the LoG detector. The bug report can be read [on
+BugZilla](https://fiji.sc/bugzilla/show_bug.cgi?id=806).
 
 ## Extensions
 
@@ -414,11 +414,8 @@ obviously linked:
   - [ImgLib2](ImgLib2 "wikilink") is used everywhere we need dealing
     with pixels. Relying on imglib made it trivial to have a plugin that
     deals indifferently with 2D or 3D images. In particular, we use code
-    from Stephan Preibisch,
-
-{% include person content='Saalfeld' %} , Larry Lindsey and Lee
-Kamentsky.
-
+    from Stephan Preibisch, {% include person content='Saalfeld' %},
+    Larry Lindsey and Lee Kamentsky.
   - [ImageJA](ImageJA "wikilink") is of course the entry point for the
     plugin. We use it display the images as 2D slices and in the
     HyperStack displayer.

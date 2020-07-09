@@ -69,9 +69,7 @@ bug](https://bugs.openjdk.java.net/browse/JDK-8136427) discussing the
 issue.
 
 As a workaround, you can check "Use JFileChooser to open/save" in the {%
-include bc content='Edit | Options | Input/Output...' %}
-
-`dialog.`
+include bc content='Edit | Options | Input/Output...' %} dialog.
 
 # Frequently Asked Questions
 
@@ -87,7 +85,7 @@ Forum](https://forum.image.sc/).
 
 At any time, you can verify which Javas are installed on your system
 using {% include github org='ctrueden' repo='ctr-scripts'
-path='java-info' label='this' %} .
+path='java-info' label='this' %}.
 
 ## How do I run ImageJ on Yosemite?
 

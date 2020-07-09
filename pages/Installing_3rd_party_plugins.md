@@ -11,12 +11,13 @@ description: test description
 ## For users
 
   - If the plugin is published on an [ImageJ update
-    site](Update_Sites "wikilink"), you can run
+    site](Update_Sites "wikilink"), you can run {% include bc
+    content='Help | Update' %} then click the *Manage update sites*
+    button to enable it. Not only does this install the plugins for you
+    automatically, but you will also be notified of any updates whenever
+    they are released.
 
-{% include bc content='Help | Update' %}
-
-`then click the `*`Manage``   ``update`` 
- ``sites`*` button to enable it. Not only does this install the plugins for you automatically, but you will also be notified of any updates whenever they are released.`
+<!-- end list -->
 
   - Otherwise, you can just drag 'n drop the plugin .jar file (from the
     Explorer, Finder or any file browser) into the plugins directory:
@@ -35,11 +36,8 @@ description: test description
 
 <!-- end list -->
 
-  - Alternatively, use
-
-{% include bc content='Plugins | Install Plugin...' %}
-
-  - 
+  - Alternatively, use {% include bc content='Plugins | Install
+    Plugin...' %}:
 
 <!-- end list -->
 
@@ -56,17 +54,14 @@ description: test description
 
   - You can also copy the *.jar*, *.class* or *.java* files (or a script
     in any language Fiji supports) to *Fiji.app/plugins/*, followed by
-    calling
+    calling {% include bc content='Help | Refresh Menus' %}.
 
-{% include bc content='Help | Refresh Menus' %} .
+<!-- end list -->
 
   -   
-    **Note:** On MacOSX, you need to
-
-{% include key content='Ctrl' %} + {% include key content='click' %}
-
-`on the `*`Fiji`*` icon in the Finder and select `*`Show`` 
- ``package``   ``contents`*` to see the `*`plugins/`*` folder.`
+    **Note:** On MacOSX, you need to {% include key content='Ctrl' %}+{%
+    include key content='click' %} on the *Fiji* icon in the Finder and
+    select *Show package contents* to see the *plugins/* folder.
 
 ## For developers
 
@@ -84,20 +79,12 @@ The .config file should look something like this:
 
 `       File, "Show Prime Numbers", Primes_("")`
 
-where {% include bc content='File' %}
-
-`is the menu you want to add the item to -- at the moment, the`
-
-only valid choices are {% include bc content='Plugins' %} , {% include
-bc content='Plugins | <submenu>' %} , {% include bc content='File |
-Import' %} ,
-
-{% include bc content='File | Save' %} , {% include bc content='Analyze
-| Tools' %} , {% include bc content='Help | About' %}
-
-`and `
-
-{% include bc content='Edit | Options' %} .
+where {% include bc content='File' %} is the menu you want to add the
+item to -- at the moment, the only valid choices are {% include bc
+content='Plugins' %}, {% include bc content='Plugins | <submenu>' %}, {%
+include bc content='File | Import' %}, {% include bc content='File |
+Save' %}, {% include bc content='Analyze | Tools' %}, {% include bc
+content='Help | About' %} and {% include bc content='Edit | Options' %}.
 
 Next comes the title of the menu item, and lastly the class name of the
 plugin with a parameter that will be passed to the run() method of that

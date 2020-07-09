@@ -444,9 +444,7 @@ selected metadata fields have been stripped.
 {% include bc content='Plugins | pQCT | Export Stratec Header' %}
 
 Use this plug-in to open Stratec pQCT images. NB {% include bc
-content='File | Open' %}
-
-`or dragging the file doesn't work.`
+content='File | Open' %} or dragging the file doesn't work.
 
 ## Test images
 
@@ -459,7 +457,6 @@ To easily run the test, use the provided
 [macro](http://bonej.org/images/SyntheticDataTest.ijm). Instructions:
 
 1.  Prepare the .ijm macro file before the first time you run it
-    
     1.  Open SyntheticDataTest.ijm
     2.  Change the paths on line 2 and 3 to ones that match your
         computer, e.g.: line 2: sourceDir =
@@ -471,15 +468,11 @@ To easily run the test, use the provided
         windows and do have spaces in your path, replace the / with
         \\\\.
     3.  Save the .ijm file
-
 2.  Open Fiji / ImageJ
-
-3.  
-{% include bc content='Plugins | Macros | Run' %}
-
-1.  Find your .ijm file
-2.  When the macro has finished, you should see the Results table
-3.  Open the resulting file with excel or open office or some other
+3.  {% include bc content='Plugins | Macros | Run' %}
+4.  Find your .ijm file
+5.  When the macro has finished, you should see the Results table
+6.  Open the resulting file with excel or open office or some other
     suitable program and the results should match the ones within the
     Synthetic data provided above.
 

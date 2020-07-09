@@ -61,14 +61,13 @@ adjusting the threshold can make it "analyzable".
 ### Volume Calculation
 
 The Volume Calculator is located at {% include bc content='Plugins |
-Analyze' %}
-
-`in the Fiji menu. When run, it will take the current image as input. Processing begins immediately; its progress is shown in the status bar. After a successful run, the plugin will display the Volume Calculator window (Figure 2.)`
-
-This window is actually the [3D Viewer](3D_Viewer "wikilink") plugin.
-Volume Calculator has taken its final result - a Java 3D representation
-of the analyzed image - and asked the [3D Viewer](3D_Viewer "wikilink")
-to display it.
+Analyze' %} in the Fiji menu. When run, it will take the current image
+as input. Processing begins immediately; its progress is shown in the
+status bar. After a successful run, the plugin will display the Volume
+Calculator window (Figure 2.) This window is actually the [3D
+Viewer](3D_Viewer "wikilink") plugin. Volume Calculator has taken its
+final result - a Java 3D representation of the analyzed image - and
+asked the [3D Viewer](3D_Viewer "wikilink") to display it.
 
 #### User Interface
 

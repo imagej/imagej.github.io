@@ -33,7 +33,7 @@ the registration of sources to the global coordinate system.
 ## Installation
 
 The BigDataViewer comes with Fiji. You should have a sub-menu {% include
-bc content='Plugins | BigDataViewer' %} .
+bc content='Plugins | BigDataViewer' %}.
 
 ## Usage
 
@@ -58,12 +58,8 @@ Alternatively, you can create a dataset by exporting your own data as
 described below.
 
 To start BigDataViewer, select {% include bc content='Plugins |
-BigDataViewer | Open XML/HDF5' %}
-
-`from the Fiji menu.`
-
-This brings up a file open dialog. Open the XML file of your test
-dataset.
+BigDataViewer | Open XML/HDF5' %} from the Fiji menu. This brings up a
+file open dialog. Open the XML file of your test dataset.
 
 #### Standard microscopy data
 
@@ -72,25 +68,19 @@ can be opened in Fiji. Since Fiji relies of LOCI Bioformats library that
 means essentially all know microscopy file formats.
 
 For example, open the sample image {% include bc content='File | Open
-Samples | Mitosis (26MB, 5D stack)' %}
-
-`from the Fiji menu.`
-
-Subsequently select {% include bc content='Plugins | BigDataViewer |
-Open Current Image' %}
-
-`which will launch the BigDataViewer with the sample image, for navigation by arbitrary re-slicing.`
+Samples | Mitosis (26MB, 5D stack)' %} from the Fiji menu. Subsequently
+select {% include bc content='Plugins | BigDataViewer | Open Current
+Image' %} which will launch the BigDataViewer with the sample image, for
+navigation by arbitrary re-slicing.
 
 #### Imaris files
 
 [Imaris (Bitplane)](http://www.bitplane.com/imaris/imaris) uses a
 hierarchical data format (similar to BigDataViewer's XML/HDF5 format).
 In order to open Imaris `.ims` files select {% include bc
-content='Plugins | BigDataViewer | Open Imaris (experimental)' %}
-
-`from the Fiji menu.`
-
-Please note, that support for the Imaris format is still experimental.
+content='Plugins | BigDataViewer | Open Imaris (experimental)' %} from
+the Fiji menu. Please note, that support for the Imaris format is still
+experimental.
 
 ### Basic Navigation
 
@@ -103,153 +93,61 @@ On startup, the middle slice of the first source (angle) is shown. You
 can browse the stack using the keyboard or the mouse. To get started,
 try the following:
 
-  - Use the mouse-wheel or
-
-{% include key content='\<' %}
-
-`and `
-
-{% include key content='\>' %}
-
-`keys to scroll through z slices.`
-
-  - 
-{% include key content='right-click|drag' %}
-
-`anywhere on the canvas to translate the image.`
-
-  - Use
-
-{% include key content='Ctrl|Shift|mouse-wheel' %} , or {% include key
-content='Up' %}
-
-`and `
-
-{% include key content='Down' %}
-
-`keys to zoom in and out.`
-
-  - 
-{% include key content='left-click|drag' %}
-
-`anywhere on the canvas to rotate (reslice) the image.`
+  - Use the mouse-wheel or {% include key content='\<' %} and {% include
+    key content='\>' %} keys to scroll through z slices.
+  - {% include key content='right-click|drag' %} anywhere on the canvas
+    to translate the image.
+  - Use {% include key content='Ctrl|Shift|mouse-wheel' %}, or {%
+    include key content='Up' %} and {% include key content='Down' %}
+    keys to zoom in and out.
+  - {% include key content='left-click|drag' %} anywhere on the canvas
+    to rotate (reslice) the image.
 
 The following table shows the available navigation commands using the
 mouse:
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>{% include key content='left-click|drag' %}</p></td>
-<td><p>Rotate (pan and tilt) around the point where the mouse was clicked.</p></td>
-</tr>
-<tr class="even">
-<td><p>{% include key content='right-click|drag' %}</p>
-<p><code>or </code></p>
-<p>{% include key content='middle-click|drag' %}</p></td>
-<td><p>Translate in the XY-plane.</p></td>
-</tr>
-<tr class="odd">
-<td><p>{% include key content='mouse-wheel' %}</p></td>
-<td><p>Move along the z-axis.</p></td>
-</tr>
-<tr class="even">
-<td><p>{% include key content='Cmd|mouse-wheel' %}</p>
-<p><code>or </code></p>
-<p>{% include key content='Shift|Ctrl|mouse-wheel' %}</p></td>
-<td><p>Zoom in and out.</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                                                   |                                                                     |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| {% include key content='left-click|drag' %}                                                       | Rotate (pan and tilt) around the point where the mouse was clicked. |
+| {% include key content='right-click|drag' %} or {% include key content='middle-click|drag' %}     | Translate in the XY-plane.                                          |
+| {% include key content='mouse-wheel' %}                                                           | Move along the z-axis.                                              |
+| {% include key content='Cmd|mouse-wheel' %} or {% include key content='Shift|Ctrl|mouse-wheel' %} | Zoom in and out.                                                    |
 
 The following table shows the available navigation commands using
 keyboard shortcuts:
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>{% include key content='X' %} , {% include key content='Y' %} , {% include key content='Z' %}</p></td>
-<td><p>Select keyboard rotation axis.</p></td>
-</tr>
-<tr class="even">
-<td><p>{% include key content='Left' %} , {% include key content='Right' %}</p></td>
-<td><p>Rotate clockwise or counter-clockwise around the choosen rotation axis.</p></td>
-</tr>
-<tr class="odd">
-<td><p>{% include key content='Up' %} , {% include key content='Down' %}</p></td>
-<td><p>Zoom in or out.</p></td>
-</tr>
-<tr class="even">
-<td><p>{% include key content=',' %} , {% include key content='.' %}</p></td>
-<td><p>Move forward or backward along the Z-axis.</p></td>
-</tr>
-<tr class="odd">
-<td><p>{% include key content='Shift|X' %}</p></td>
-<td><p>Rotate to the ZY-plane of the current source. (Look along the X-axis of the current source.)</p></td>
-</tr>
-<tr class="even">
-<td><p>{% include key content='Shift|Y' %}</p>
-<p><code>or </code></p>
-<p>{% include key content='Shift|A' %}</p></td>
-<td><p>Rotate to the XZ-plane of the current source. (Look along the Y-axis of the current source.)</p></td>
-</tr>
-<tr class="odd">
-<td><p>{% include key content='Shift|Z' %}</p></td>
-<td><p>Rotate to the XY-plane of the current source. (Look along the Z-axis of the current source.)</p></td>
-</tr>
-<tr class="even">
-<td><p>{% include key content='[' %}</p>
-<p><code>or </code></p>
-<p>{% include key content='N' %}</p></td>
-<td><p>Move to previous timepoint.</p></td>
-</tr>
-<tr class="odd">
-<td><p>{% include key content=']' %}</p>
-<p><code>or </code></p>
-<p>{% include key content='M' %}</p></td>
-<td><p>Move to next timepoint.</p></td>
-</tr>
-</tbody>
-</table>
+|                                                                                             |                                                                                              |
+| ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| {% include key content='X' %}, {% include key content='Y' %}, {% include key content='Z' %} | Select keyboard rotation axis.                                                               |
+| {% include key content='Left' %}, {% include key content='Right' %}                         | Rotate clockwise or counter-clockwise around the choosen rotation axis.                      |
+| {% include key content='Up' %}, {% include key content='Down' %}                            | Zoom in or out.                                                                              |
+| {% include key content=',' %}, {% include key content='.' %}                                | Move forward or backward along the Z-axis.                                                   |
+| {% include key content='Shift|X' %}                                                         | Rotate to the ZY-plane of the current source. (Look along the X-axis of the current source.) |
+| {% include key content='Shift|Y' %} or {% include key content='Shift|A' %}                  | Rotate to the XZ-plane of the current source. (Look along the Y-axis of the current source.) |
+| {% include key content='Shift|Z' %}                                                         | Rotate to the XY-plane of the current source. (Look along the Z-axis of the current source.) |
+| {% include key content='\[' %} or {% include key content='N' %}                             | Move to previous timepoint.                                                                  |
+| {% include key content='\]' %} or {% include key content='M' %}                             | Move to next timepoint.                                                                      |
 
 For all navigation commands you can hold {% include key content='Shift'
-%}
+%} to rotate and browse 10x faster, or hold {% include key
+content='Ctrl' %} to rotate and browse 10x slower. For example, {%
+include key content='Left' %} rotates by 1° clockwise, while {% include
+key content='Shift|Left' %} rotates by 10°, and {% include key
+content='Ctrl|Left' %} rotates by 0.1°.
 
-`to rotate and browse`
-
-10x faster, or hold {% include key content='Ctrl' %}
-
-`to rotate and browse`
-
-10x slower. For example, {% include key content='Left' %}
-
-`rotates by`
-
-1° clockwise, while {% include key content='Shift|Left' %}
-
-`rotates by`
-
-10°, and {% include key content='Ctrl|Left' %}
-
-`rotates by`
-
-0.1°.
-
-The axis-rotation commands (e.g., {% include key content='Shift|X' %} )
+The axis-rotation commands (e.g., {% include key content='Shift|X' %})
 rotate around the current mouse location. That is, if you press {%
-include key content='Shift|X' %} , the view will pivot such that you see
+include key content='Shift|X' %}, the view will pivot such that you see
 a ZY-slice through the dataset (you look along the X-axis). The point
 under the mouse will stay fixed, i.e., the view will be a ZY-slice
 through that point.
 
 ### Interpolation Mode
 
-Using {% include key content='I' %}
-
-`you can switch between nearest-neighbor and trilinear interpolation schemes.`
-
-The difference is clearly visible when you zoom in such that individual
-source pixels are visible.
+Using {% include key content='I' %} you can switch between
+nearest-neighbor and trilinear interpolation schemes. The difference is
+clearly visible when you zoom in such that individual source pixels are
+visible.
 
 ![bdv-interpolation.png](bdv-interpolation.png "bdv-interpolation.png")
 
@@ -263,39 +161,24 @@ BigDataViewer datasets typically contain more than one source. For a
 SPIM sequence one usually has multiple angles and possibly fused and
 deconvoled data on top.
 
-Select {% include bc content='Settings | Visibility & Grouping' %}
-
-`from the BigDataViewer menu to bring up a dialog to control source visibility.`
-
-You can also bring up this dialog by the shortcut {% include key
-content='F6' %} .
+Select {% include bc content='Settings | Visibility & Grouping' %} from
+the BigDataViewer menu to bring up a dialog to control source
+visibility. You can also bring up this dialog by the shortcut {% include
+key content='F6' %}.
 
 ![bdv-visibility.png](bdv-visibility.png "bdv-visibility.png")
 
 Using the current source checkboxes (A in the figure above), you can
 switch between available sources. The first ten sources can also be made
-current by the number keys {% include key content='1' %}
-
-`through `
-
-{% include key content='0' %}
-
-`in the main BigDataViewer window.`
+current by the number keys {% include key content='1' %} through {%
+include key content='0' %} in the main BigDataViewer window.
 
 To view multiple sources overlaid at the same time, switch to *fused
 mode* using the checkbox (B). You can also switch between normal and
-fused mode using the shortcut {% include key content='F' %}
-
-`in the main window.`
-
-In fused mode individual sources can be turned on and off using the
-checkboxes (C) or shortcuts {% include key content='Shift|1' %}
-
-`through `
-
-{% include key content='Shift|0' %}
-
-`in the main window.`
+fused mode using the shortcut {% include key content='F' %} in the main
+window. In fused mode individual sources can be turned on and off using
+the checkboxes (C) or shortcuts {% include key content='Shift|1' %}
+through {% include key content='Shift|0' %} in the main window.
 
 Whether in normal or fused mode, the (unselectable) boxes (D) provide
 feedback on which sources are actually currently displayed. Also the
@@ -316,9 +199,8 @@ At the top of the window, the name of the current source is shown (F).
 
 Note, that also in fused mode there is always a *current source*,
 although this source may not even be visible. Commands such as {%
-include key content='Shift|X' %}
-
-`(rotate to ZY-plane) refer to the local coordinate system of the current source.`
+include key content='Shift|X' %} (rotate to ZY-plane) refer to the local
+coordinate system of the current source.
 
 ### Grouping Sources
 
@@ -333,11 +215,8 @@ situations. Therefore, sources can be organized into *groups*. All
 sources of a *group* can be activated or deactivated at once.
 
 Source grouping is handled in the visibility and grouping dialog, too
-(menu {% include bc content='Settings | Visibility & Grouping' %}
-
-`or shortcut `
-
-{% include key content='F6' %} ).
+(menu {% include bc content='Settings | Visibility & Grouping' %} or
+shortcut {% include key content='F6' %}).
 
 ![bdv-grouping.png](bdv-grouping.png "bdv-grouping.png")
 
@@ -354,33 +233,21 @@ to groups 1 and 2, the second source is assigned to groups 2 and 3.
 Group 2 has been renamed to "all sources".
 
 *Grouping* can be turned on and off by the checkbox (C) or by using the
-shortcut {% include key content='G' %}
-
-`in the main window.`
-
-If grouping is enabled, groups take the role of individual sources:
-There is one *current group* which is visible in normal mode (all
-individual sources that are part of this group are overlaid). Groups can
-be activated or deactivated to determine visibility in fused mode (all
-individual sources that are part of at least one active group are
-overlaid).
+shortcut {% include key content='G' %} in the main window. If grouping
+is enabled, groups take the role of individual sources: There is one
+*current group* which is visible in normal mode (all individual sources
+that are part of this group are overlaid). Groups can be activated or
+deactivated to determine visibility in fused mode (all individual
+sources that are part of at least one active group are overlaid).
 
 Groups can be made current and made active or inactive using the
 checkboxes (D). Also, if grouping is enabled the number key shortcuts in
 the main BigDataViewer window act on groups instead of individual
 sources. That is, groups 1 through 10 can be made current by keys {%
-include key content='1' %}
-
-`through `
-
-{% include key content='0' %} . Similarly, shortcuts {% include key
-content='Shift|1' %}
-
-`through `
-
-{% include key content='Shift|0' %}
-
-`in the main window activate or deactivate groups 1 through 10 for visibility in fused mode.`
+include key content='1' %} through {% include key content='0' %}.
+Similarly, shortcuts {% include key content='Shift|1' %} through {%
+include key content='Shift|0' %} in the main window activate or
+deactivate groups 1 through 10 for visibility in fused mode.
 
 If grouping is enabled, the name of the current group is shown at the
 top of the main window.
@@ -390,12 +257,9 @@ top of the main window.
 ### Adjusting Brightness and Color
 
 To change the brightness, contrast, or color of particular sources
-select {% include bc content='Settings | Brightness & Color' %}
-
-`or press the shortcut `
-
-{% include key content='S' %} . This brings up the brightness and color
-settings dialog.
+select {% include bc content='Settings | Brightness & Color' %} or press
+the shortcut {% include key content='S' %}. This brings up the
+brightness and color settings dialog.
 
 ![bdv-brightness-1.png](bdv-brightness-1.png "bdv-brightness-1.png")
 
@@ -463,56 +327,41 @@ navigate back to those views later.
 
 Each bookmark has an assigned shortcut key, i.e., you can have bookmarks
 "a", "A", "b", ..., "1", "2", etc. To set a bookmark for the current
-view, press {% include key content='Shift|B' %}
-
-`and then the shortcut you want to use for the bookmark.`
-
-To recall bookmark, press {% include key content='B' %}
-
-`and then the shortcut of the bookmark.`
+view, press {% include key content='Shift|B' %} and then the shortcut
+you want to use for the bookmark. To recall bookmark, press {% include
+key content='B' %} and then the shortcut of the bookmark.
 
 BigDataViewer provides visual feedback for setting and recalling
-bookmarks. When you press {% include key content='Shift|B' %} , the
+bookmarks. When you press {% include key content='Shift|B' %}, the
 message "**set bookmark:**" appears in the lower right corner of the
 main window, prompting to press the bookmark shortcut next.
 
 ![bdv-set-bookmark.png](bdv-set-bookmark.png "bdv-set-bookmark.png")
 
 Now press the key you want to use as a shortcut, for example {% include
-key content='A' %} . The prompt message will change to "**set bookmark:
+key content='A' %}. The prompt message will change to "**set bookmark:
 a**" indicating that you have set a bookmark with shortcut {% include
-key content='A' %} . Instead of pressing a shortcut key you can abort
-using {% include key content='esc' %} .
+key content='A' %}. Instead of pressing a shortcut key you can abort
+using {% include key content='esc' %}.
 
-Similarly, when you press {% include key content='B' %}
-
-`to recall a bookmark, the prompt message "`**`go``   ``to`` 
- ``bookmark:`**`" appears.`
-
-Now press the shortcut of the bookmark you want to recall, for example
-{% include key content='A' %} . The prompt message will change to "**go
-to bookmark: a**" and the view will move to the bookmarked location.
-Instead of pressing a shortcut key you can abort using {% include key
-content='esc' %} .
+Similarly, when you press {% include key content='B' %} to recall a
+bookmark, the prompt message "**go to bookmark:**" appears. Now press
+the shortcut of the bookmark you want to recall, for example {% include
+key content='A' %}. The prompt message will change to "**go to bookmark:
+a**" and the view will move to the bookmarked location. Instead of
+pressing a shortcut key you can abort using {% include key content='esc'
+%}.
 
 Note, that bookmark shortcuts are case-sensitive, i.e., {% include key
-content='A' %}
-
-`and `
-
-{% include key content='Shift|A' %}
-
-`refer to distinct bookmarks "a" and "A" respectively.`
+content='A' %} and {% include key content='Shift|A' %} refer to distinct
+bookmarks "a" and "A" respectively.
 
 The bookmarking mechanism can also be used to bookmark and recall
-orientations. Press {% include key content='O' %}
-
-`and then a bookmark shortcut to recall only the orientation of that bookmark.`
-
-This rotates the view into the rotation of the bookmarked view (but does
-not zoom or translate to the bookmarked location). The rotation is
-around the current mouse location (i.e., the point under the mouse stays
-fixed).
+orientations. Press {% include key content='O' %} and then a bookmark
+shortcut to recall only the orientation of that bookmark. This rotates
+the view into the rotation of the bookmarked view (but does not zoom or
+translate to the bookmarked location). The rotation is around the
+current mouse location (i.e., the point under the mouse stays fixed).
 
 ### Loading and Saving Settings
 
@@ -522,13 +371,9 @@ you do not want to repeat over and over every time you re-open a
 dataset. Therefore, BigDataViewer allows to save and load these
 settings.
 
-Select {% include bc content='File | Save settings' %}
-
-`from the menu to store settings to an XML file, and `
-
-{% include bc content='File | Load settings' %}
-
-`to load them from an XML file.`
+Select {% include bc content='File | Save settings' %} from the menu to
+store settings to an XML file, and {% include bc content='File | Load
+settings' %} to load them from an XML file.
 
 When a dataset is opened, BigDataViewer automatically loads an
 appropriately named settings file if it is present. This settings file
@@ -536,7 +381,7 @@ must be in the same directory as the dataset's XML file, and have the
 same filename with *.settings* appended. For example, if the dataset's
 XML file is named *drosophila.xml*, the settings file must be named
 *drosophila.settings.xml*. (If you select {% include bc content='File |
-Save settings' %} , this filename is already suggested in the Save File
+Save settings' %}, this filename is already suggested in the Save File
 dialog.)
 
 Settings files assume that a specific number of sources are present,
@@ -547,9 +392,7 @@ therefore settings are usually not compatible across different datasets.
 BigDataViewer may be great for looking at your data, but what if you
 want to apply other ImageJ algorithms or plugins to the images? You can
 open individual images from a dataset as ImageJ stacks using {% include
-bc content='File | Import | BigDataViewer...' %}
-
-`from the Fiji menu.`
+bc content='File | Import | BigDataViewer...' %} from the Fiji menu.
 
 ![bdv-import.png](bdv-import.png "bdv-import.png")
 
@@ -685,21 +528,16 @@ parameters for optimal performance.
 
 You can export any dataset to BigDataViewer format by opening it as a
 stack in Fiji and then selecting {% include bc content='Plugins |
-BigDataViewer | Export Current Image as XML/HDF5' %}
-
-`from the Fiji menu.`
-
+BigDataViewer | Export Current Image as XML/HDF5' %} from the Fiji menu.
 If the image has multiple channels, each channel will become one *setup*
 in the exported dataset. If the image has multiple frames, each frame
 will become one *timepoint* in the exported dataset. Of course, you may
 export from virtual stacks if your data is too big to fit into memory.
 
 To get started, let's open one of the ImageJ sample images by {% include
-bc content='File | Open Samples | T1 Head (2.4M, 16-bits)' %} .
-Selecting {% include bc content='Plugins | BigDataViewer | Export
-Current Image as XML/HDF5' %}
-
-`brings up the following dialog.`
+bc content='File | Open Samples | T1 Head (2.4M, 16-bits)' %}. Selecting
+{% include bc content='Plugins | BigDataViewer | Export Current Image as
+XML/HDF5' %} brings up the following dialog.
 
 ![bdv-export-stack.png](bdv-export-stack.png "bdv-export-stack.png")
 
@@ -840,11 +678,8 @@ explained in
 [Multiview-Reconstruction](Multiview-Reconstruction "wikilink").
 
 To convert the dataset to HDF5, select {% include bc content='Plugins |
-Multiview Reconstruction | Resave | As HDF5' %}
-
-`form the Fiji menu.`
-
-This brings up the following dialog.
+Multiview Reconstruction | Resave | As HDF5' %} form the Fiji menu. This
+brings up the following dialog.
 
 ![bdv-mvr-export1b.png](bdv-mvr-export1b.png "bdv-mvr-export1b.png")
 

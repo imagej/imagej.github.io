@@ -740,8 +740,8 @@ reasonable assumption and this is why this tracker will be robust.
 
 The code can be found on {% include github org='fiji' repo='TrackMate'
 path='/src/main/java/fiji/plugin/trackmate/tracking/kalman/KalmanTracker.java'
-%} . We now repeat the section above in pseudo-language. When you see
-the word <b>link</b> below, this means:
+%}. We now repeat the section above in pseudo-language. When you see the
+word <b>link</b> below, this means:
 
 1.  Take all the source detections in frame t and the target detections
     in frame t+1.

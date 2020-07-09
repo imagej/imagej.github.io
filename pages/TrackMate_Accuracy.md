@@ -287,8 +287,8 @@ frames).
 <references/>
 
 {% include person content='JeanYvesTinevez' %}
-
-`(`[`talk`](User_talk:JeanYvesTinevez "wikilink")`) 03:49, 25 January 2015 (CST)`
+([talk](User_talk:JeanYvesTinevez "wikilink")) 03:49, 25 January 2015
+(CST)
 
 1.  [Chenouard *et al.*, "Objective comparison of particle tracking
     methods", '''Nature Methods, 2014

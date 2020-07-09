@@ -46,9 +46,11 @@ aware of these files. You need to add the *scripts* folder to the
 [MATLAB](MATLAB "wikilink") path:
 
 In [MATLAB](MATLAB "wikilink"), select in the menu {% include bc
-content='File | Set Path...' %}
-
-`and add the `*`scripts`*` folder there  (on Mac, the file chooser doesn't let you choose directories within .app packages, so you have to use the `[`MATLAB`](MATLAB "wikilink")` command addpath('/Applications/Fiji.app/scripts') or whatever folder works for you) .`
+content='File | Set Path...' %} and add the *scripts* folder there (on
+Mac, the file chooser doesn't let you choose directories within .app
+packages, so you have to use the [MATLAB](MATLAB "wikilink") command
+`addpath('/Applications/Fiji.app/scripts')` or whatever folder works for
+you) .
 
 ## Importing track files
 
@@ -103,8 +105,8 @@ It is hopefully well documented in this [[MATLAB](MATLAB "wikilink")
 tutorial](http://www.mathworks.com/matlabcentral/fileexchange/40692-mean-square-displacement-analysis-of-particles-trajectories/content/msdanalyzer/MSDTuto.html).
 
 {% include person content='JeanYvesTinevez' %}
-
-`(`[`talk`](User_talk:JeanYvesTinevez "wikilink")`) 10:35, 8 August 2013 (CDT)`
+([talk](User_talk:JeanYvesTinevez "wikilink")) 10:35, 8 August 2013
+(CDT)
 
 [Category:Tracking](Category:Tracking "wikilink")
 [Category:Matlab](Category:Matlab "wikilink")

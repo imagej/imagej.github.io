@@ -8,7 +8,7 @@ categories: Software
 description: test description
 ---
 
-{% include project content='ImageJ1' %} ImageJA is a project that
+{% include project content='ImageJ1' %}ImageJA is a project that
 provides a clean [Git](Git "wikilink") history of the [ImageJ
 1.x](ImageJ_1.x "wikilink") project, with a proper 'pom.xml' file so
 that it can be used with [Maven](Maven "wikilink") without hassles.
@@ -16,10 +16,11 @@ that it can be used with [Maven](Maven "wikilink") without hassles.
 ## Why ImageJA?
 
 The [ImageJ1](ImageJ1 "wikilink") project, developed by {% include
-person content='Rasband' %} , lives in the {% include github
-org='imagej' repo='imagej1' label='imagej/imagej1' %}
-
-`on `[`GitHub`](GitHub "wikilink")`. The imagej1 repository uses the Ant build system. Changes are pushed (at most) once per day, with a corresponding datestamp. This scheme has some drawbacks:`
+person content='Rasband' %}, lives in the {% include github org='imagej'
+repo='imagej1' label='imagej/imagej1' %} on [GitHub](GitHub "wikilink").
+The `imagej1` repository uses the Ant build system. Changes are pushed
+(at most) once per day, with a corresponding datestamp. This scheme has
+some drawbacks:
 
   - ImageJ1 artifacts cannot be published easily to public repositories
     for use as a dependency downstream.
@@ -45,11 +46,9 @@ something has changed, the job performs the following actions:
 3.  Restructures the source code into a Maven project.
       - Sources are placed in `src/main/java`.
       - A `pom.xml` is added.
-4.  Commits and pushes the result to the `master` branch of the
-
-{% include github org='imagej' repo='ImageJA' label='imagej/ImageJA' %}
-
-`on `[`GitHub`](GitHub "wikilink")`.`
+4.  Commits and pushes the result to the `master` branch of the {%
+    include github org='imagej' repo='ImageJA' label='imagej/ImageJA' %}
+    on [GitHub](GitHub "wikilink").
 
 The push triggers the followup
 [job](https://travis-ci.org/imagej/ImageJA), which builds and deploys
@@ -68,12 +67,9 @@ closely with ImageJ with a few changes on top:
   - When launching a text editor, in many cases ImageJA will now choose
     Fiji's Script Editor, if available, instead of the old AWT based
     ImageJ editor.
-  - ImageJA has an easy Plugin installer via
-
-{% include bc content='Plugins | Install PlugIn...' %}
-
-`(ImageJ only has that drag-n-drop thingie).`
-
+  - ImageJA has an easy Plugin installer via {% include bc
+    content='Plugins | Install PlugIn...' %} (ImageJ only has that
+    drag-n-drop thingie).
   - The instance listener is RMI-based with ImageJA, so there is no
     security issue with it.
   - ImageJA's Command Launcher has fuzzy matching, too.

@@ -43,18 +43,11 @@ If you are not running a Java 8 -enabled installation you should
 [download the latest Fiji release](Downloads "wikilink"). Newer releases
 come pre-bundled with Java 8, and are already subscribed to the [Java-8
 update site](User:Java-8 "wikilink"). Once installed you should run {%
-include bc content='Help | Update Fiji' %}
-
-`to make sure that you have the most recent version.  You can find the plugin in `
-
-{% include bc content='Plugins | NeuroAnatomy | SNT' %}
-
-`(or by bringing up the `[`Command`` 
- ``Finder`](Using_the_Command_Launcher "wikilink")` and typing `
-
-{% include key content='SNT' %}
-
-`).`
+include bc content='Help | Update Fiji' %} to make sure that you have
+the most recent version. You can find the plugin in {% include bc
+content='Plugins | NeuroAnatomy | SNT' %} (or by bringing up the
+[Command Finder](Using_the_Command_Launcher "wikilink") and typing {%
+include key content='SNT' %} ).
 
 ## Feedback
 
@@ -163,21 +156,21 @@ The native file format of the plugin is documented at: [SNT: .traces
 File Format](SNT:_.traces_File_Format "wikilink"). (`.traces` files are
 just gzipped XML, so easy to parse.) There's also an example {% include
 github org='tferr' repo='hIPNAT' path='src/main/resources/scripts/'
-label='script' %}
-
-`on the `[`Neuroanatomy`](Neuroanatomy "wikilink")` update site showing how to batch convert each .traces file to multiple SWC files.`
+label='script' %} on the [Neuroanatomy](Neuroanatomy "wikilink") update
+site showing how to batch convert each .traces file to multiple SWC
+files.
 
 SNT is also easy to use programmatically. For instance, the example in
 {% include github org='fiji' repo='Simple\_Neurite\_Tracer'
-source='tracing/Albert\_Test.java' label='Albert\_Test.java' %}
-
-`shows how to use the code to find a path between two arbitrary points in an image stack.`
+source='tracing/Albert\_Test.java' label='Albert\_Test.java' %} shows
+how to use the code to find a path between two arbitrary points in an
+image stack.
 
 As another small example, if you just wanted to load a set of SWC files
 using the SNT API and display them in the 3D viewer (a functionality
 provided by the [Neuroanatomy](Neuroanatomy "wikilink") update site,
 through a {% include github org='tferr' repo='hIPNAT'
-path='src/main/java/ipnat/' label='Java' %} ), a Jython script like
+path='src/main/java/ipnat/' label='Java' %}), a Jython script like
 [this](https://gist.github.com/838695) will do.
 
 ## Authors

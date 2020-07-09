@@ -8,7 +8,7 @@ categories: Scripting
 description: test description
 ---
 
-{% include learn content='scripting' %} ImageJ allows you to write
+{% include learn content='scripting' %}ImageJ allows you to write
 scripts in several different languages.
 
 # Getting started
@@ -16,18 +16,10 @@ scripts in several different languages.
   - Read the [ImageJ tutorial
     notebooks](https://imagej.github.io/tutorials) to learn how to write
     ImageJ scripts.
-  - Press the
-
-{% include key content='\[' %}
-
-`key to open the `[`Script`` 
- ``Editor`](Script_Editor "wikilink")` (or `
-
-{% include key content='Shift' %} - {% include key content='\[' %}
-
-`to open the `[`Script`` 
- ``Interpreter`](Script_Interpreter "wikilink")`).`
-
+  - Press the {% include key content='\[' %} key to open the [Script
+    Editor](Script_Editor "wikilink") (or {% include key content='Shift'
+    %}-{% include key content='\[' %} to open the [Script
+    Interpreter](Script_Interpreter "wikilink")).
   - Optionally, choose a template from the *Templates* menu to get you
     started.
   - Otherwise, choose your language from the *Language* menu.
@@ -76,57 +68,21 @@ following common features.
 
 ## General key bindings
 
-  - 
-{% include key content='up' %}
-
-  -   
-    bring the previously typed command.
-
-<!-- end list -->
-
-  - 
-{% include key content='down' %}
-
-  -   
-    bring the next typed command.
-
-<!-- end list -->
-
-  - 
-{% include key content='enter' %}
-
-`or `
-
-{% include key content='return' %}
-
-  -   
-    execute the contents of the prompt.
+  - {% include key content='up' %}: bring the previously typed command.
+  - {% include key content='down' %}: bring the next typed command.
+  - {% include key content='enter' %} or {% include key content='return'
+    %}: execute the contents of the prompt.
 
 ## Multiline editing and keybindings
 
 You can enlarge the prompt by dragging the middle bar.
 
-  - 
-{% include key content='Shift||Enter' %}
-
-  -   
-    create a new line within the prompt.
-
-<!-- end list -->
-
-  - 
-{% include key content='Shift||Up' %}
-
-  -   
-    move to the line above within the prompt.
-
-<!-- end list -->
-
-  - 
-{% include key content='Shift|Down' %}
-
-  -   
-    move to the line below within the prompt.
+  - {% include key content='Shift||Enter' %}: create a new line within
+    the prompt.
+  - {% include key content='Shift||Up' %}: move to the line above within
+    the prompt.
+  - {% include key content='Shift|Down' %}: move to the line below
+    within the prompt.
 
 ## Selecting and executing text from the screen
 

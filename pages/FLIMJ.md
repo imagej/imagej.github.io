@@ -39,7 +39,7 @@ The FLIMJ plugin is available from the "FLIMJ" [update
 site](update_site "wikilink").
 
 Once you have installed the FLIMJ plugin, it becomes available on the
-menu under {% include bc content='Analyze | Lifetime | FLIMJ' %} .
+menu under {% include bc content='Analyze | Lifetime | FLIMJ' %}.
 
 ## Usage
 

@@ -180,10 +180,10 @@ All components in these organizations use [Maven](Maven "wikilink") for
 has its own Maven
 [groupId](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-more-coordinates).
 Each component extends the {% include github org='scijava'
-repo='pom-scijava' label='pom-scijava' %}
-
-[`parent`` 
- ``POM`](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-project-inheritance)`, which provides sensible build defaults and compatible dependency versions (see "Bill of Materials" below).`
+repo='pom-scijava' label='pom-scijava' %} [parent
+POM](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-project-inheritance),
+which provides sensible build defaults and compatible dependency
+versions (see "Bill of Materials" below).
 
 |                                           |                                                   |                                                                        |                                                                                |
 | ----------------------------------------- | ------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
@@ -422,9 +422,8 @@ There are two easy ways of going about this:
 
 In the case of Eclipse, you may need to "Update Maven project" in order
 to see the snapshot couplings go into effect; the shortcut {% include
-key content='Alt' %} + {% include key content='F5' %}
-
-`while selecting the affected project(s) accomplishes this quickly.`
+key content='Alt' %}+{% include key content='F5' %} while selecting the
+affected project(s) accomplishes this quickly.
 
 {% capture includecontent %} **Current versions of the Eclipse Maven
 integration (tested with Eclipse Mars) fail to correctly resolve the

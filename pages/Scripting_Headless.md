@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-{% include learn content='scripting' %} [ImageJ
+{% include learn content='scripting' %}[ImageJ
 scripts](Scripting "wikilink") are designed to operate independently of
 user interface—including [headless](headless "wikilink"), with **no**
 user interface. This is made easy with the use of [script

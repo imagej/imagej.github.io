@@ -11,10 +11,8 @@ description: test description
 TODO FLASH WIDGET
 
 This video tutorial was made and edited by {% include person
-content='Iarganda' %}
-
-`using `[`Wink``   ``2.0``   ``for`` 
- ``Windows`](http://www.debugmode.com/wink/)`.`
+content='Iarganda' %} using [Wink 2.0 for
+Windows](http://www.debugmode.com/wink/).
 
 The sample image used in the tutorial can be found here:
 [1](http://neuromorpho.org/neuroMorpho/neuron_info.jsp?neuron_name=LAB4Lskeleton)

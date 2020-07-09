@@ -8,7 +8,7 @@ categories: Scripting
 description: test description
 ---
 
-{% include learn content='scripting' %} This page is meant to provide
+{% include learn content='scripting' %}This page is meant to provide
 small code snippets as a starting point for writing scripts.
 
 {% capture includecontent %} message = **See also:**

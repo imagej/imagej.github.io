@@ -24,7 +24,7 @@ a skeleton image and then counts all its junctions, triple and quadruple
 points and branches, and measures their average and maximum length. The
 tags are shown in a new window displaying every tag in a different
 color. You can find it under {% include bc content='Analyze | Skeleton |
-Analyze Skeleton (2D/3D)' %} . See
+Analyze Skeleton (2D/3D)' %}. See
 [Skeletonize3D](Skeletonize3D "wikilink") for an example of how to
 produce skeleton images.
 

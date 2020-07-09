@@ -81,10 +81,10 @@ image](Jython_Scripting#Visualize_any_number_of_TIFF_stacks_in_a_single_composit
 ## Interactively adjustable intensity/LUT curves
 
 In Fiji, you can adjust the dynamic range of an image by calling {%
-include bc content='Image | Adjust | Brightness & Contrast' %} .
-However, this only lets you choose a linear mapping between pixel
-intensity and lookup table. This project aims to provide non-linear
-controls, such as piecewise linear functions, gamma curves, splines, etc
+include bc content='Image | Adjust | Brightness & Contrast' %}. However,
+this only lets you choose a linear mapping between pixel intensity and
+lookup table. This project aims to provide non-linear controls, such as
+piecewise linear functions, gamma curves, splines, etc
 
 # Image processing plugins
 
@@ -126,7 +126,7 @@ choice, but we will give priority to biologically-oriented data sets.
 **Goal:** Implement a number of segmentation algorithms based on machine
 learning.  
 **Language:** Java.  
-**Mentor:** {% include person content='Iarganda' %} , {% include person
+**Mentor:** {% include person content='Iarganda' %}, {% include person
 content='Albertcardona' %}  
 
 ## Implementing algorithms for Imglib
@@ -332,15 +332,10 @@ saved under a new name. Teach the Script Editor to do that.
 
 Often, it would be very convenient to remember the current cursor
 position to come back to, after looking around in other parts of the
-file. Maybe {% include key content='Ctrl' %} + {% include key
-content='B' %}
-
-`(together with a menu entry), or `
-
-{% include key content='Ctrl' %} + {% include key content='<digit>' %}
-
-`are good ways to implement the user interface.  (The code should be similar to the `*`Goto`` 
- ``Line...`*` function.`
+file. Maybe {% include key content='Ctrl' %}+{% include key content='B'
+%} (together with a menu entry), or {% include key content='Ctrl' %}+{%
+include key content='<digit>' %} are good ways to implement the user
+interface. (The code should be similar to the *Goto Line...* function.
 
 ## Add support for Haskell (via Jaskell) and Tcl (via Jacl)
 
@@ -352,9 +347,7 @@ For Tcl, the Script Editor would need minimal adjustments, as
 RSyntaxTextArea already has support for Tcl, but for Haskell, a new
 TokenMaker would have to be implemented.
 
-\== Add {% include bc content='Edit | Find in files...' %}
-
-`==`
+\== Add {% include bc content='Edit | Find in files...' %} ==
 
 We already have a mechanism to jump between compile errors and locations
 of a stack trace. The same mechanism could be used to present results
@@ -551,10 +544,8 @@ represented by a node which the user can connect with lines to define a
 workflow.
 
 ImageFlow has its own {% include github org='Dahie' repo='imageflow'
-label='Git' %}
-
-`(`[`our`` 
- ``mirror`](https://fiji.sc/cgi-bin/gitweb.cgi?p=imageflow.git;a=summary)`).`
+label='Git' %} ([our
+mirror](https://fiji.sc/cgi-bin/gitweb.cgi?p=imageflow.git;a=summary)).
 
 The following issues need to be resolved:
 
@@ -589,18 +580,16 @@ of the Fiji Wiki. In the alternative, the ImageJ documentation should be
 replicated on the Fiji Wiki under the appropriate page titles.
 
 The user should also be informed that hitting the {% include key
-content='Esc' %}
-
-`key gets her out of this mode.`
+content='Esc' %} key gets her out of this mode.
 
 And finally, the Fiji Wiki needs some love to reflect the exact titles
 of the menu items, most probably by adding appropriate redirects.
 
 ## Add a clever *Save As* plugin
 
-For now, {% include bc content='File | Save As' %}
-
-`always saves the result as a `*`.tiff`*` file, even if the user specified a file name ending in, say, `*`.png`*`.`
+For now, {% include bc content='File | Save As' %} always saves the
+result as a *.tiff* file, even if the user specified a file name ending
+in, say, *.png*.
 
 Stephan Preibisch suggests: Add a plugin that determines from a set of
 extensions which plugin to call to the respective writer plugin.
@@ -641,9 +630,8 @@ be better put under a single interface together with others already
 available.
 
 Note: this is more or less implemented in the Auto\_Threshold and
-Auto\_Local\_Threshold plugins.-- {% include person content='Landini' %}
-
-`14:47, 29 November 2009 (CET)`
+Auto\_Local\_Threshold plugins.--{% include person content='Landini' %}
+14:47, 29 November 2009 (CET)
 
 ## Virtual microscope-like image viewer
 

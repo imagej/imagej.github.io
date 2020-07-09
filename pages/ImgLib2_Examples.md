@@ -40,7 +40,7 @@ be found in *ImageJ.app/jars/*:
   - ij (ImageJ 1.x core, used for display)
 
 Alternately, you can access the examples from the {% include github
-org='imglib' repo='imglib-tutorials' label='ImgLib-tutorials' %} . After
+org='imglib' repo='imglib-tutorials' label='ImgLib-tutorials' %}. After
 cloning the source code, open the project in your favorite IDE. See
 [Developing ImgLib2](Developing_ImgLib2 "wikilink") for further details.
 

@@ -43,9 +43,7 @@ warning dialog will be displayed to warn you about the package manager:
 
 We can just click OK, go the Weka GUI Chooser window and look for the
 package manager under the menu {% include bc content='Tools | Package
-manager' %} , or by pressing {% include key content='Ctrl|U' %}
-
-  - 
+manager' %}, or by pressing {% include key content='Ctrl|U' %}:
 
 ![Weka-GUI-Chooser-package-manager.png](Weka-GUI-Chooser-package-manager.png
 "Weka-GUI-Chooser-package-manager.png")

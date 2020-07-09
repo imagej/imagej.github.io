@@ -69,7 +69,7 @@ ImageJ is divided into three parts:
 <table>
 <thead>
 <tr class="header">
-<th><p>{% include logo size='72px' %} <a href="ImageJ" title="wikilink">ImageJ</a></p></th>
+<th><p>{% include logo size='72px' %}<a href="ImageJ" title="wikilink">ImageJ</a></p></th>
 </tr>
 </thead>
 <tbody>
@@ -84,7 +84,7 @@ ImageJ is divided into three parts:
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>{% include logo size='72px' %} <a href="ImgLib2" title="wikilink">ImgLib2</a></p></td>
+<td><p>{% include logo size='72px' %}<a href="ImgLib2" title="wikilink">ImgLib2</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><span style="font-size: large"><strong>Core image data model</strong></span><br />

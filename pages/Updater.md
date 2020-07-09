@@ -37,7 +37,7 @@ In case you do not want to run the Updater upon startup, you can choose
 
 ## Starting the Updater explicitly
 
-The Updater can be run via {% include bc content='Help | Update...' %} .
+The Updater can be run via {% include bc content='Help | Update...' %}.
 
 ## Easy mode
 
@@ -87,9 +87,7 @@ have to upload the plugin to the server.
 
 ## Starting the Updater manually
 
-Just click on the {% include bc content='Help | Update...' %}
-
-`menu item:`
+Just click on the {% include bc content='Help | Update...' %} menu item:
 
 ![Fiji\_Updater-screenshot.png](Fiji_Updater-screenshot.png
 "Fiji_Updater-screenshot.png")
@@ -177,7 +175,7 @@ jrunscript bootstrap.js help
 
 This uses the **jrunscript** executable of your Java installation to run
 the Javascript file tracked in ImageJ's {% include github org='imagej'
-repo='imagej-updater' path='bin/bootstrap.js' label='source' %} .
+repo='imagej-updater' path='bin/bootstrap.js' label='source' %}.
 
 The `bootstrap.js` script was originally intended to fix broken
 [Fiji](Fiji "wikilink") installations, and was subsequently enhanced to
@@ -220,8 +218,8 @@ function.
 These instructions are valid for Ubuntu 14.04. Other distributions may
 handle system users differently and may not even create a home directory
 for them. In such case, the ssh key can be placed in {% include path
-content='/etc/ssh' %} , and the config options used with {% include
-inline content='ssh -o' %} .
+content='/etc/ssh' %}, and the config options used with {% include
+inline content='ssh -o' %}.
 
 {% capture includecontent %} /home/fiji\_mirror\_sync/.ssh/config||
 

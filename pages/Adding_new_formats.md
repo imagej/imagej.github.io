@@ -8,7 +8,7 @@ categories: Development
 description: test description
 ---
 
-{% include develop-menu content='tutorials' %} Before an image can be
+{% include develop-menu content='tutorials' %}Before an image can be
 analyzed, it needs to be opened properly. The way scientific image data
 can be stored varies wildly - with custom formats as numerous as the
 different brands and models of instruments used in their acquisition.

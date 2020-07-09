@@ -19,7 +19,7 @@ SSH/SFTP access (SFTP support was contributed by Jarek Sacha).
 The Updater is a heavily adapted [Fiji](Fiji "wikilink") Updater and
 works in conjunction with the ImageJ [Launcher](Launcher "wikilink")
 which we still have to integrate into the ImageJ2 code base from {%
-include github repo='fiji' label='fiji.git' %} .
+include github repo='fiji' label='fiji.git' %}.
 
 The reason the Launcher is required is because no Java Runtime
 Environment handles overwrites of .jar files gracefully when classes

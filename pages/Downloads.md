@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-{% include toc content='right' %} Here you can
+{% include toc content='right' %}Here you can
 [download](https://downloads.imagej.net/ImageJ2-20160205.zip) an "all
 platforms" version of ImageJ, without a bundled Java or extra
 extensions.

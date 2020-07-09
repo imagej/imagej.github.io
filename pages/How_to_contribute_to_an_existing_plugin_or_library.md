@@ -27,10 +27,7 @@ plugins](Distribution "wikilink").
 
 </div>
 
-{% include develop-menu content='tutorials' %}
-
-## Introduction
-
+{% include develop-menu content='tutorials' %}== Introduction ==
 Sometimes you may want to contribute to an already existing ImageJ
 plugin or library. For example, a bug is found in one plugin and you
 want to fix it, or you would like to improve one library by adding more
@@ -42,7 +39,7 @@ repository** online somewhere. For instance, in the
 [Fiji](Fiji "wikilink") project, plugin code lives in the [Fiji GitHub
 organization](https://github.com/fiji); e.g., the **VIB-lib** library's
 repository is {% include github org='fiji' repo='VIB-lib'
-label='VIB-lib' %} . This structure allows for easy, independent
+label='VIB-lib' %}. This structure allows for easy, independent
 development of each individual component.
 
 This tutorial assumes you are familiar with [Git](Git "wikilink"). If

@@ -44,8 +44,8 @@ demand, and planes read on demand from disk.
 
 ## Source code
 
-You can find the source {% include github org='imglib' repo='imglib2' %}
-.
+You can find the source {% include github org='imglib' repo='imglib2'
+%}.
 
 There is also a continuous integration system that builds ImgLib2 [every
 time the code changes](https://travis-ci.org/imglib/imglib2).

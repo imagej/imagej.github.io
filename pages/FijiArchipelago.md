@@ -188,9 +188,8 @@ running SLURM or qsub, by scripting the creation of an .arc
 configuration file and passing it as an argument to the Fiji or ImageJ
 executable. An {% include github org='larrylindsey'
 repo='Stampede-Fiji-Archipelago' path='job.fiji\#L126' label='example'
-%}
-
-`showing how this is done on the vnc queue of the TACC stampede cluster is available.`
+%} showing how this is done on the vnc queue of the TACC stampede
+cluster is available.
 
 #### Saving
 
@@ -273,7 +272,7 @@ Cluster.
 
 An example may be found in {% include github repo='fiji'
 path='src-plugins/Fiji\_Archipelago/src/main/java/edu/utexas/clm/archipelago/example/Cluster\_SIFT.java'
-label='Cluster\_SIFT' %} . An example that demonstrates the breakage of
+label='Cluster\_SIFT' %}. An example that demonstrates the breakage of
 deep equality may be found in {% include github repo='fiji'
 path='src-plugins/Fiji\_Archipelago/src/main/java/edu/utexas/clm/archipelago/example/Equality\_Example.java'
 label='Equality\_Example' %}

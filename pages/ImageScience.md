@@ -18,10 +18,7 @@ The ImageScience library supports the ImageScience suite of plugins:
 
 To install them, enable the ImageScience update site:
 
-  - \[\[Update\_Sites|
-
-{% include bc content='Help|Update...' %} \]\]
-
+  - [{% include bc content='Help|Update...' %}](Update_Sites "wikilink")
   - Click *Manage update sites*
   - Check *ImageScience*
   - Click *Close*

@@ -8,7 +8,7 @@ categories: Development
 description: test description
 ---
 
-{% include develop-menu content='tutorials' %} If you are a Java
+{% include develop-menu content='tutorials' %}If you are a Java
 developer, then it is very likely you *love* logging. At least, that's
 the conclusion new Java developers inevitably must draw, based on the
 fact that 97.3% of all Java libraries in the wild are logging
@@ -47,13 +47,11 @@ Common](SciJava_Common "wikilink") project has opted to do both: the
 SciJava application framework provides a {% include github org='scijava'
 repo='scijava-common'
 path='src/main/java/org/scijava/log/LogService.java' label='LogService'
-%}
-
-`to abstract and encapsulate all logging. The default core implementation of this service is called `
-
-{% include github org='scijava' repo='scijava-common'
+%} to abstract and encapsulate all logging. The default core
+implementation of this service is called {% include github org='scijava'
+repo='scijava-common'
 path='src/main/java/org/scijava/log/StderrLogService.java'
-label='StderrLogService' %} , and simply emits all log messages to the
+label='StderrLogService' %}, and simply emits all log messages to the
 standard error stream. This is done to avoid dependencies on any
 external logging frameworks or facades, as well as to offer a
 sufficiently rich logging API.
@@ -92,7 +90,7 @@ Unfortunately, SLF4J suffers from a couple of downsides:
 Still, SLF4J is a nice thing, so the SciJava project does provide a {%
 include github org='scijava' repo='scijava-log-slf4j'
 path='src/main/java/org/scijava/log/slf4j/SLF4JLogService.java'
-label='LogService' %} , which zealous developers can use to redirect all
+label='LogService' %}, which zealous developers can use to redirect all
 SciJava logging to the SLF4J framework, which they can then [further
 redirect](wikipedia:Fundamental_theorem_of_software_engineering "wikilink")
 using an SLF4J binding of their choosing\!

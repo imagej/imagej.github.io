@@ -153,7 +153,7 @@ Here is a summary of roles for projects in the
 <td><p><strong><a href="ImgLib2" title="wikilink">ImgLib2</a></strong></p></td>
 <td><p>{% include person content='Saalfeld' %}<br />
 {% include person content='StephanP' %}</p></td>
-<td><p>{% include person content='Pietzsch' %} <sup>1</sup><br />
+<td><p>{% include person content='Pietzsch' %}<sup>1</sup><br />
 {% include person content='StephanP' %}<br />
 {% include person content='Saalfeld' %}</p></td>
 <td><p>{% include person content='Pietzsch' %}<br />
@@ -233,7 +233,7 @@ Gabriella Turek</p></td>
 <td><p>Paul Barber<br />
 {% include person content='Rueden' %}</p></td>
 <td><p>Paul Barber<sup>2</sup><br />
-{% include person content='Rueden' %} <sup>2</sup></p></td>
+{% include person content='Rueden' %}<sup>2</sup></p></td>
 <td><p>{% include person content='Msagar' %}<br />
 {% include person content='Rueden' %}</p></td>
 <td><p><a href="https://github.com/orgs/slim-curve/people">List on GitHub</a></p></td>
@@ -329,11 +329,9 @@ Birgit Möller</p></td>
 and Saalfeld vote on primary decisions, with Pietzsch's vote breaking
 ties.  
 <sup>2</sup> Barber leads development of the {% include github
-org='slim-curve' repo='slim-curve' label='SLIM' %}
-
-  - Rueden leads development of the
-
-{% include github org='slim-curve' repo='slim-plugin' label='SLIM' %} .
+org='slim-curve' repo='slim-curve' label='SLIM' %}; Rueden leads
+development of the {% include github org='slim-curve' repo='slim-plugin'
+label='SLIM' %}.
 
 ## Further reading
 

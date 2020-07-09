@@ -26,7 +26,7 @@ check out:
 
 {% include info-box content=includecontent %}
 
-{% include develop-menu content='tools' %} Development of ImageJ and
+{% include develop-menu content='tools' %}Development of ImageJ and
 related software relies heavily on [Git](http://git-scm.com/). See the
 [source code](source_code "wikilink") page for information on where the
 Git repositories reside.

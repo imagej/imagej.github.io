@@ -8,7 +8,7 @@ categories:
 description: test description
 ---
 
-{% include project content='ImgLib2' %} ImgLib2 is a major redesign of
+{% include project content='ImgLib2' %}ImgLib2 is a major redesign of
 ImgLib, and [much has
 changed](Changes_from_ImgLib1_to_ImgLib2 "wikilink"). This page attempts
 to provide a "how-to" guide for bringing existing ImgLib1 code up to

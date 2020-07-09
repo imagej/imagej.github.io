@@ -47,13 +47,9 @@ MB)](http://samples.fiji.sc/Celegans-5pc-17timepoints.tif).
 
 Open it in Fiji. You will get a stack, made of 41 Z-slices over 17
 time-points, each image being 240 x 295. As you can see in {% include bc
-content='Image | Properties' %}
-
-`(`
-
-{% include key content='Ctrl' %} + {% include key content='Shift' %} +
-{% include key content='P' %} ), it has a spatial and temporal
-calibration.
+content='Image | Properties' %} ({% include key content='Ctrl' %}+{%
+include key content='Shift' %}+{% include key content='P' %}), it has a
+spatial and temporal calibration.
 
 The context if the following: We used a *C.elegans* strain named
 [AZ212](http://www.wormbase.org/db/gene/strain?name=AZ212;class=Strain)
@@ -92,11 +88,10 @@ learn how to correct these defects manually.
 ![TrackMate\_DownsampledLogSegmenter.png](TrackMate_DownsampledLogSegmenter.png
 "TrackMate_DownsampledLogSegmenter.png")
 
-Launch TrackMate ( {% include bc content='Plugins | Tracking |
-TrackMate' %} ) and select the *C.elegans* stack as a target. Check on
-the first panel that all the spatial calibration is OK. The pixel size
-is about 200 nm in XY, 1 μm in Z, and each frame is separated by 2
-minutes.
+Launch TrackMate ({% include bc content='Plugins | Tracking | TrackMate'
+%}) and select the *C.elegans* stack as a target. Check on the first
+panel that all the spatial calibration is OK. The pixel size is about
+200 nm in XY, 1 μm in Z, and each frame is separated by 2 minutes.
 
 Select the **Downsampled LoG detector**. This choice actually makes
 sense: the nuclei are about 8 μm in diameter, and with a sampling of 200
@@ -244,11 +239,9 @@ the tracks that follow the 2 nuclei.
         whole track**.
   - Notice in the displayer that the selected track appear with a green
     and thick line, so as to highlight it.
-  - To delete all of it, simply press the
-
-{% include key content='Delete' %}
-
-`key in TrackScheme, or use the right-click menu to do so. `
+  - To delete all of it, simply press the {% include key
+    content='Delete' %} key in TrackScheme, or use the right-click menu
+    to do so.
 
 Do the same for Track\_1, since we do not care for polar bodies.
 
@@ -292,27 +285,15 @@ The HyperStack displayer let you edit spots in two ways:
 #### Deleting an existing spot
 
   - Select a spot by single-clicking inside it. It turns green.
-  - Press the
-
-{% include key content='Delete' %}
-
-`key`
+  - Press the {% include key content='Delete' %} key
 
 #### Changing the radius of a spot
 
   - Select a spot for editing by double-slinking inside it.
-  - By holding the
-
-{% include key content='Alt' %}
-
-`key, rotates the wheel button. This will change the spot's radius. `
-
-  - Holding
-
-{% include key content='Shift' %} + {% include key content='Alt' %}
-
-`changes its radius faster. `
-
+  - By holding the {% include key content='Alt' %} key, rotates the
+    wheel button. This will change the spot's radius.
+  - Holding {% include key content='Shift' %}+{% include key
+    content='Alt' %} changes its radius faster.
   - Double-click anywhere when you are happy with the new radius. The
     spot thumbnail in TrackScheme gets updated.
 
@@ -326,24 +307,14 @@ HyperStack window must be selected.
 #### Moving an existing spot
 
   - Lay the mouse over the target spot (you do not need to select it).
-  - Hold the
-
-{% include key content='Space' %}
-
-`key.`
-
+  - Hold the {% include key content='Space' %} key.
   - Move the mouse around. The target spot follows the mouse location
     until you release the mouse key.
 
 #### Creating a new spot
 
   - Lay the mouse anywhere on the image.
-  - Press the
-
-{% include key content='A' %}
-
-`key.`
-
+  - Press the {% include key content='A' %} key.
   - A new spot is <u>a</u>dded at the mouse location.
 
 By default, the new spot has the radius of the last spot edited with the
@@ -355,35 +326,17 @@ default.
 #### Deleting an existing spot
 
   - Lay the mouse over the target spot.
-  - Press the
-
-{% include key content='D' %}
-
-`key.`
-
+  - Press the {% include key content='D' %} key.
   - The target spot is <u>d</u>eleted
 
 #### Changing the radius of a spot
 
   - Lay the mouse over the target spot.
-  - Press the
-
-{% include key content='E' %}
-
-`key to increase its radius, `
-
-{% include key content='Q' %}
-
-`to diminish it. `
-
-  - 
-{% include key content='Shift' %} + {% include key content='Q' %}
-
-`and `
-
-{% include key content='Shift' %} + {% include key content='E' %}
-
-`change the radius by a bigger amount.`
+  - Press the {% include key content='E' %} key to increase its radius,
+    {% include key content='Q' %} to diminish it.
+  - {% include key content='Shift' %}+{% include key content='Q' %} and
+    {% include key content='Shift' %}+{% include key content='E' %}
+    change the radius by a bigger amount.
 
 ## Adding missed spots
 
@@ -445,12 +398,7 @@ We want to link this cell to the mother cell in Track\_0, frame 8, just
 before it divided. To do so,
 
   - In the HyperStack displayer, move to the frame 8
-  - Hold the
-
-{% include key content='Shift' %}
-
-`key`
-
+  - Hold the {% include key content='Shift' %} key
   - Click on the mother cell
 
 It gets highlighted in the displayer, and in TrackScheme as well. You
@@ -475,12 +423,12 @@ the **Style** button in the TrackScheme toolbar to do so. Do so.
 
 ### Creating several links at once
 
-Using {% include key content='Shift' %} + {% include key content='click'
-%} , we can put several cells in the selection, and create the links
+Using {% include key content='Shift' %}+{% include key content='click'
+%}, we can put several cells in the selection, and create the links
 between each pair. We don't have the need for it, but this is a good way
 to create a single track from several solitary spots: Just select them
-all (dragging a selection box or {% include key content='Shift' %} + {%
-include key content='click' %} ) and select the **Link N spots** menu
+all (dragging a selection box or {% include key content='Shift' %}+{%
+include key content='click' %}) and select the **Link N spots** menu
 item.
 
 ## Editing tracks: deleting links
@@ -491,9 +439,7 @@ is how to do it:
 
 In TrackScheme, select the target link by clicking on it; it gets
 highlighted in the displayer as well. Press the {% include key
-content='Delete' %}
-
-`key to remove it. `
+content='Delete' %} key to remove it.
 
 Removing a link often splits a track in 2 new tracks. To have them
 properly re-arranged, press the **Redo layout** button.
@@ -509,7 +455,7 @@ results:
 "TrackMate_SmallLineage.png")
 
 {% include person content='JeanYvesTinevez' %}
-
-`(`[`talk`](User_talk:JeanYvesTinevez "wikilink")`) 11:30, 1 August 2013 (CDT)`
+([talk](User_talk:JeanYvesTinevez "wikilink")) 11:30, 1 August 2013
+(CDT)
 
 [Category:Tutorials](Category:Tutorials "wikilink")

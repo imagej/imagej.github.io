@@ -46,9 +46,8 @@ the one for your wiki account. In order to set your update site
 password, use the link at the bottom of the wiki or click
 [here](Special:ChangeUploadPassword "wikilink").
 
-start the updater with {% include bc content='Help | Update' %}
-
-`and click on the `*`Manage``   ``update``   ``sites`*` button:`
+start the updater with {% include bc content='Help | Update' %} and
+click on the *Manage update sites* button:
 
 ![Mamed-3.jpg](Mamed-3.jpg "Mamed-3.jpg")
 
@@ -98,9 +97,7 @@ and grant those users upload permission to the new site.
 If you have an own server or web space with WebDAV, SFTP or SSH access,
 you can create a directory in that web space and initialize it as an
 update site, too. Just call the updater with {% include bc content='Help
-| Update' %}
-
-`and click the `*`Manage``   ``update``   ``sites`*` button:`
+| Update' %} and click the *Manage update sites* button:
 
 ![Mamed-3.jpg](Mamed-3.jpg "Mamed-3.jpg")
 
@@ -216,8 +213,8 @@ In this case, the plugin we'll be uploading is contained in
 *A\_Jolly\_Useful\_Plugin.jar*.
 
 Select the file to upload, click under the *Stats/Action* column, or
-right-click (on MacOSX, {% include key content='Ctrl' %} + {% include
-key content='click' %} ) in any column, for the context menu and select
+right-click (on MacOSX, {% include key content='Ctrl' %}+{% include key
+content='click' %}) in any column, for the context menu and select
 *Upload to <update site name>*.
 
 ![Upload-to-update-site.png](Upload-to-update-site.png

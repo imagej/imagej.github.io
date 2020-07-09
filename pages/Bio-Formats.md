@@ -245,7 +245,7 @@ To enable the Bio-Formats update site:
 ## Source code
 
 The Bio-Formats source code is {% include github content='org =
-openmicroscopy | repo = bioformats' %} .
+openmicroscopy | repo = bioformats' %}.
 
 ## Reporting bugs
 

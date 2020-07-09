@@ -128,11 +128,8 @@ Why not just call it "org.imglib" then? Wouldn't clash with
 "mpicbg.imglib" of imglib1.
 
   -   
-    Because imglib.org is registered by somebody else already.
-
-{% include person content='Saalfeld' %}
-
-`14:38, 24 March 2011 (CET)`
+    Because imglib.org is registered by somebody else already. {%
+    include person content='Saalfeld' %} 14:38, 24 March 2011 (CET)
 
 ## 2011-03-21
 
@@ -455,11 +452,8 @@ We have been discussing this several times with a two-folded answer:
     ListIterator which is a lot of effort to implement.
 
 In principal, I strongly support introducing it. It makes total sense
-but it is a change in the core.
-
-{% include person content='Saalfeld' %}
-
-`17:03, 3 May 2011 (CEST)`
+but it is a change in the core. {% include person content='Saalfeld' %}
+17:03, 3 May 2011 (CEST)
 
 I discussed it again with Tobias yesterday in detail and we came to the
 conclusion that it does not make too much sense. First of all, any
@@ -480,9 +474,7 @@ and does not has to do its own interface which would be incompatible
 with other people who would want to it. Could be named ReverseCursor or
 so...
 
-{% include person content='StephanP' %}
-
-`12:24, 4 May 2011 (CEST)`
+{% include person content='StephanP' %} 12:24, 4 May 2011 (CEST)
 
 ## 2011-05-04
 
@@ -500,9 +492,7 @@ etc...
 
 should we maybe change it as well to intPosition(), longPosition, etc?
 
-{% include person content='StephanP' %}
-
-`12:24, 4 May 2011 (CEST)`
+{% include person content='StephanP' %} 12:24, 4 May 2011 (CEST)
 
 Tobias pointed out that we should not as it is not clear if it is a
 getter or setter when passing an array.
@@ -542,9 +532,7 @@ final, it could potentially always be changed...
 The same applies for fwd(dim), bck(dim), move(dim), there a -- ++ and +=
 can replace a array lookup...
 
-{% include person content='StephanP' %}
-
-`12:27, 12 May 2011 (CEST)`
+{% include person content='StephanP' %} 12:27, 12 May 2011 (CEST)
 
   -   
     What about having a 1D `RandomAccess` instead as we have done in
@@ -554,11 +542,10 @@ can replace a array lookup...
     know what you're doing (read: where you can cast), you have a
     shorter call available. That approach would also relieve us from the
     need to implement that method in situations where it does not make
-    sense at all, e.g. `ShapeImg`, that has no 1D.
+    sense at all, e.g. `ShapeImg`, that has no 1D. {% include person
+    content='Saalfeld' %} 15:27, 12 May 2011 (CEST)
 
-{% include person content='Saalfeld' %}
-
-`15:27, 12 May 2011 (CEST)`
+<!-- end list -->
 
   -   
     I like this way of realizing it, maybe we could also implement it on
@@ -566,11 +553,8 @@ can replace a array lookup...
     factory could also have a special create( long size ) method (in
     e.g. RandomAccessible1DFactory) which returns for example \<I
     extends ArrayImg\<T,?\> & RandomAccessible1D\>, so no unchecked
-    casts are necessary.
-
-{% include person content='StephanP' %}
-
-`16:15, 12 May 2011 (CEST)`
+    casts are necessary. {% include person content='StephanP' %} 16:15,
+    12 May 2011 (CEST)
 
 ## 2011-11-28
 
@@ -674,11 +658,8 @@ very helpful:
 
 When done properly this has the potential to replace or at least
 simplify PlanarImg like containers since they could be expressed as a
-composition of multiple ArrayImg-s.
-
-{% include person content='Saalfeld' %}
-
-`16:11, 18 January 2012 (CET)`
+composition of multiple ArrayImg-s. {% include person content='Saalfeld'
+%} 16:11, 18 January 2012 (CET)
 
 ## 2012-11-21
 

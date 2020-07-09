@@ -20,7 +20,7 @@ description: test description
 
 {% include info-box content=includecontent %}
 
-{% include develop-menu content='tutorials' %} The SciJava
+{% include develop-menu content='tutorials' %}The SciJava
 [philosophy](philosophy "wikilink") is to [release early, release
 often](Philosophy#Release_early.2C_release_often "wikilink"). At the
 same time, we always want to preserve [scientific
@@ -323,25 +323,19 @@ Developer-facing components together: the [Bill of
 Materials](BOM "wikilink") (BOM). To ensure users and developers see the
 same functionality, components should only be uploaded to the core
 update sites when their version is also updated in the {% include github
-org='scijava' repo='pom-scijava' label='pom-scijava' %}
-
-`BOM.`
+org='scijava' repo='pom-scijava' label='pom-scijava' %} BOM.
 
 To update the version of your component listed in the {% include github
-org='scijava' repo='pom-scijava' label='pom-scijava' %}
-
-`BOM, you should follow the `[`External`` 
- ``developer`](#Phase_1:_In_development "wikilink")` instructions for contributing to `
-
-{% include github org='scijava' repo='pom-scijava' label='pom-scijava'
-%} . By [submitting a pull
+org='scijava' repo='pom-scijava' label='pom-scijava' %} BOM, you should
+follow the [External developer](#Phase_1:_In_development "wikilink")
+instructions for contributing to {% include github org='scijava'
+repo='pom-scijava' label='pom-scijava' %}. By [submitting a pull
 request](https://help.github.com/articles/using-pull-requests/) that
 simply modifies the managed version of your component, you will signal
 to the core SciJava developers that your project is ready for upload.
 For example, {% include github org='scijava' repo='pom-scijava' pr='40'
-label='this' %}
-
-`updates the managed version of `[`Bio-Formats`](Bio-Formats "wikilink")` to 5.5.0.`
+label='this' %} updates the managed version of
+[Bio-Formats](Bio-Formats "wikilink") to 5.5.0.
 
 ## Phase 5: Uploaded
 
@@ -370,19 +364,12 @@ site](update_site "wikilink").
 
 ### ImageJ and Fiji update sites
 
-  - The core ImageJ update site reflects the state of the newest
-
-{% include github org='imagej' repo='imagej' label='net.imagej:imagej'
-%}
-
-`release.`
-
-  - The core Fiji update site reflects the state of the newest
-
-{% include github org='fiji' repo='fiji' label='sc.fiji:fiji' %}
-
-`release.`
-
+  - The core ImageJ update site reflects the state of the newest {%
+    include github org='imagej' repo='imagej' label='net.imagej:imagej'
+    %} release.
+  - The core Fiji update site reflects the state of the newest {%
+    include github org='fiji' repo='fiji' label='sc.fiji:fiji' %}
+    release.
   - Actually, for the moment, both of the above statements are untrue,
     but they represent the direction we are heading. Right now, core
     components of both ImageJ and Fiji are distributed manually via the

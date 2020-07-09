@@ -55,10 +55,10 @@ particular the **duration** and the **filename** parameters.)
 
 After the JUnit test finishes, call *Java Mission Control* via the `jmc`
 executable (it lives in the JDK's *bin/* directory), {% include bc
-content='File | Open File' %}
-
-`the `*`.jfr`*` file, click on the `*`Code`*` button in the center of the Mission Control window, select the `*`Hot`` 
- ``Methods`*` tab of the big panel (confusingly, the tabs are at the bottom) and inspect the stack traces.`
+content='File | Open File' %} the *.jfr* file, click on the *Code*
+button in the center of the Mission Control window, select the *Hot
+Methods* tab of the big panel (confusingly, the tabs are at the bottom)
+and inspect the stack traces.
 
 ## VisualVM
 
@@ -162,9 +162,8 @@ Note: *heap* is Java speak for *memory*.
 
 A quite versatile method is to use (and possibly modify) the class {%
 include github org='fiji' repo='fiji-compat'
-source='fiji/MemoryProfiler.java' label='fiji.MemoryProfiler' %}
-
-`in `*`fiji-compat.jar`*`.`
+source='fiji/MemoryProfiler.java' label='fiji.MemoryProfiler' %} in
+*fiji-compat.jar*.
 
 This memory profiler instruments all method entries and exists using
 javassist. At each exit, it reports the relative memory usage, the total
@@ -181,7 +180,7 @@ instrumented by setting the environment variable *MEMORY\_PROFILE\_ONLY*
 to a space-delimited list of classes.
 
 If you want to instrument any class handled by {% include github
-org='imagej' repo='imagej-legacy' label='imagej-legacy' %} , you need to
+org='imagej' repo='imagej-legacy' label='imagej-legacy' %}, you need to
 use the slightly more complicated command line:
 
 ``` bash

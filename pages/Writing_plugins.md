@@ -26,9 +26,7 @@ plugins](Distribution "wikilink").
 
 {% include info-box content=includecontent %}
 
-{% include develop-menu content='tutorials' %}
-
-%Replace% TOC %Replace%
+{% include develop-menu content='tutorials' %} %Replace% TOC %Replace%
 
 ## Requirements
 
@@ -42,7 +40,7 @@ familiarity with these topics and tools, especially:
 | [Git](Git "wikilink")                                    | [Maven](Maven "wikilink")                                    |
 
 Additionally, at a minimum, you should clone the {% include github
-org='imagej' repo='tutorials' label='imagej/tutorials' %} . This will
+org='imagej' repo='tutorials' label='imagej/tutorials' %}. This will
 give you a local copy of the tutorials discussed in this guide, as well
 as templates for use in your own development.
 
@@ -69,9 +67,11 @@ framework, a plugin is a Java class
 [annotated](https://docs.oracle.com/javase/tutorial/java/annotations/index.html)
 with the {% include github org='scijava' repo='scijava-common'
 tag='scijava-common-2.47.0' source='org/scijava/plugin/Plugin.java'
-label='@Plugin' %}
-
-`annotation. Classes annotated in this way are then automatically discovered and indexed at `[*`runtime`*](wikipedia:Run_time_\(program_lifecycle_phase\) "wikilink")`, when the application is launched by a user (as opposed to `[*`compile-time`*](wikipedia:Compile_time "wikilink")`).`
+label='@Plugin' %} annotation. Classes annotated in this way are then
+automatically discovered and indexed at
+[*runtime*](wikipedia:Run_time_\(program_lifecycle_phase\) "wikilink"),
+when the application is launched by a user (as opposed to
+[*compile-time*](wikipedia:Compile_time "wikilink")).
 
 ### Plugin types
 
@@ -122,9 +122,7 @@ annotation](https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0
 Priorities are simply double values; as a starting point, priority
 constants can be used from the {% include github org='scijava'
 repo='scijava-common' tag='scijava-common-2.47.0'
-source='org/scijava/Priority.java' label='Priority' %}
-
-`class.`
+source='org/scijava/Priority.java' label='Priority' %} class.
 
 For example, given the following plugins:
 
@@ -165,13 +163,13 @@ public class SpecialService implements Service { }
 References to all the `@Plugin`-annotated classes that are discovered
 are contained in a single, master {% include github org='scijava'
 repo='scijava-common' tag='scijava-common-2.47.0'
-source='org/scijava/Context.java' label='Context' %} . Each application
+source='org/scijava/Context.java' label='Context' %}. Each application
 is responsible for creating its own `Context` to manage plugins and
 contextual state.
 
 In ImageJ, a `Context` is automatically created when {% include github
 org='imagej' repo='imagej' tag='imagej-2.0.0-rc-39'
-source='net/imagej/ImageJ.java' label='the' %} , so plugin developers do
+source='net/imagej/ImageJ.java' label='the' %}, so plugin developers do
 not need to create their own. In fact, creating your own `Context`
 typically causes problems, as it will be a different container than
 ImageJ is using. Instead, plugin instances within a common `Context` are
@@ -181,14 +179,16 @@ Typically, ImageJ plugin developers will be writing
 [Service](#Services "wikilink") and/or [Command](#Commands "wikilink")
 plugins. If you need to use another plugin - for example the {% include
 github org='scijava' repo='scijava-common' tag='scijava-common-2.47.0'
-source='org/scijava/log/LogService.java' label='LogService' %}
-
-`- you `**`should`` 
- ``not`**` manually create it as this effectively disconnects you from your Context (Your `[`Service`](#Services "wikilink")` and/or `[`Command`](#Commands "wikilink")` plugins are created by the application container and managed by the plugin framework automatically). Instead, you should ask your Context for an instance by adding a field of the desired type and annotating it with the `
-
-{% include github org='scijava' repo='scijava-common'
-tag='scijava-common-2.47.0' source='org/scijava/plugin/Parameter.java'
-label='@Parameter' %} . For example:
+source='org/scijava/log/LogService.java' label='LogService' %} - you
+**should not** manually create it as this effectively disconnects you
+from your `Context` (Your [Service](#Services "wikilink") and/or
+[Command](#Commands "wikilink") plugins are created by the application
+container and managed by the plugin framework automatically). Instead,
+you should ask your `Context` for an instance by adding a field of the
+desired type and annotating it with the {% include github org='scijava'
+repo='scijava-common' tag='scijava-common-2.47.0'
+source='org/scijava/plugin/Parameter.java' label='@Parameter' %}. For
+example:
 
 ``` java
 @Plugin
@@ -268,14 +268,12 @@ Services often build on or reuse functionality defined in each other.
 For example, the {% include github org='scijava' repo='scijava-common'
 tag='scijava-common-2.47.0'
 source='org/scijava/plugin/PluginService.java' label='PluginService' %}
-
-`sees ubiquitous use in retrieving and working with plugin instances. For such reuse, `
-
-{% include github org='scijava' repo='scijava-common'
+sees ubiquitous use in retrieving and working with plugin instances. For
+such reuse, {% include github org='scijava' repo='scijava-common'
 tag='scijava-common-2.47.0' source='org/scijava/plugin/Parameter.java'
-label='@Parameter' %}
-
-`can be used to declare inter-service requirements. During Context startup, these relationships will be resolved automatically.`
+label='@Parameter' %} can be used to declare inter-service requirements.
+During `Context` startup, these relationships will be resolved
+automatically.
 
 ### Commands
 
@@ -288,10 +286,11 @@ non-developers.
 
 When writing `Commands` you will often declare {% include github
 org='scijava' repo='scijava-common' tag='scijava-common-2.47.0'
-source='org/scijava/plugin/Parameter.java' label='@Parameters' %}
-
-`on fields that `**`can`` 
- ``not`**` be resolved automatically by the Context—for example, numeric values or file paths. Instead of being instantiated at Context startup as a Service would be, Commands are created and executed on demand.`
+source='org/scijava/plugin/Parameter.java' label='@Parameters' %} on
+fields that **can not** be resolved automatically by the `Context`—for
+example, numeric values or file paths. Instead of being instantiated at
+`Context` startup as a `Service` would be, `Commands` are created and
+executed on demand.
 
 When a `Command` is executed, it goes through a series of pre-processing
 steps to populate its `@Parameters` using its associated
@@ -308,11 +307,11 @@ functionality. For example, opening an image from a path is a
 fundamental operation in ImageJ. To this end, developers can directly
 use the {% include github org='scifio' repo='scifio' tag='scifio-0.25.0'
 source='io/scif/services/DatasetIOService.java' label='DatasetIOService'
-%} . Users then get this same functionality from the menus via the {%
+%}. Users then get this same functionality from the menus via the {%
 include github org='imagej' repo='imagej-plugins-commands'
 tag='imagej-plugins-commands-0.6.0'
 source='net/imagej/plugins/commands/io/OpenDataset.java'
-label='OpenDataset' %} —which itself simply calls into the
+label='OpenDataset' %}—which itself simply calls into the
 `DatasetIOService`.
 
 ### Other plugins
@@ -323,44 +322,31 @@ functionality that can be added, a good starting point is to look for
 services in the [javadoc](Javadoc "wikilink"), or the [ImageJ search
 portal](http://search.imagej.net/). Many service types have supplemental
 plugins for easy functional extension. In particular, the {% include
-github org='imagej' repo='imagej-common' label='imagej-common' %}
-
-`and `
-
-{% include github org='scijava' repo='scijava-common'
-label='scijava-common' %}
-
-`repositories will contain plugin definitions for many essential operations.`
+github org='imagej' repo='imagej-common' label='imagej-common' %} and {%
+include github org='scijava' repo='scijava-common'
+label='scijava-common' %} repositories will contain plugin definitions
+for many essential operations.
 
 A brief list of some of the more useful plugin types to extend:
 
   - [Ops](Ops "wikilink") provide a reusable set of image processing
     algorithms.
-
   - [Image formats](Adding_new_file_formats "wikilink") allow new types
     of images to be opened in ImageJ.
-
-  - 
-{% include github org='scijava' repo='scijava-common'
-tag='scijava-common-2.47.0' source='org/scijava/convert/Converter.java'
-label='Converters' %}
-
-`allow the framework to interchange types, outside of normal Java class hierarchy restrictions.`
-
-  - 
-{% include github org='scijava' repo='scijava-common'
-tag='scijava-common-2.47.0'
-source='org/scijava/module/process/PreprocessorPlugin.java'
-label='Input' %}
-
-`give you control over the population of @Parameters.`
-
-  - 
-{% include github org='scijava' repo='scijava-common'
-tag='scijava-common-2.47.0' source='org/scijava/display/Display.java'
-label='Displays' %}
-
-`control how UI elements are presented to users.`
+  - {% include github org='scijava' repo='scijava-common'
+    tag='scijava-common-2.47.0'
+    source='org/scijava/convert/Converter.java' label='Converters' %}
+    allow the framework to interchange types, outside of normal Java
+    class hierarchy restrictions.
+  - {% include github org='scijava' repo='scijava-common'
+    tag='scijava-common-2.47.0'
+    source='org/scijava/module/process/PreprocessorPlugin.java'
+    label='Input' %} give you control over the population of
+    `@Parameters`.
+  - {% include github org='scijava' repo='scijava-common'
+    tag='scijava-common-2.47.0'
+    source='org/scijava/display/Display.java' label='Displays' %}
+    control how UI elements are presented to users.
 
 If you know the function you want to modify but can't determine its
 location in the code, please [ask other developers.](Help "wikilink")
@@ -369,10 +355,8 @@ You're part of the community now\!
 ## Example projects
 
 Remember the {% include github org='imagej' repo='tutorials'
-label='imagej/tutorials' %}
-
-`we `[`said``   ``you``   ``should`` 
- ``clone`](#Requirements "wikilink")`? Now's the time to put it to use!`
+label='imagej/tutorials' %} we [said you should
+clone](#Requirements "wikilink")? Now's the time to put it to use\!
 
 Because the ImageJ API is designed to be maximally flexible and
 extensible, if you're just getting started with development it can be
@@ -506,15 +490,9 @@ If you are **creating** a new plugin type...
   - Create an abstract class implementing this interface that handles
     all the boilerplate.
   - Your abstract class can likely extend a general abstract class
-    provided in
-
-{% include github org='imagej' repo='imagej-common'
-label='imagej-common' %}
-
-`or `
-
-{% include github org='scijava' repo='scijava-common'
-label='scijava-common' %}
+    provided in {% include github org='imagej' repo='imagej-common'
+    label='imagej-common' %} or {% include github org='scijava'
+    repo='scijava-common' label='scijava-common' %}
 
 If you are **implementing** an existing plugin type...
 

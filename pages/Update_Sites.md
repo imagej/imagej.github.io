@@ -29,7 +29,7 @@ the *Fiji* update site. {% endcapture %}
 
 Out of the box, ImageJ has only the core *ImageJ* update site enabled.
 To enable additional features, choose {% include bc
-content='Help|Update...' %} , then click the "Manage update sites"
+content='Help|Update...' %}, then click the "Manage update sites"
 button.
 
 For further details, see [How to follow a 3rd party update
