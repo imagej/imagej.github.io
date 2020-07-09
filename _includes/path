@@ -1,1 +1,1 @@
-<div class="path">{{include.content}}</div>
+`{{include.content}}`
