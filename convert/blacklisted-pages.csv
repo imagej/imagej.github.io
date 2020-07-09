@@ -1,0 +1,43 @@
+name,failing component,reason
+2010-04-27_-_Fiji's_Script_Editor_now_understands_ImageJ_Macros,reader,
+2010-06-14_-_Fiji_"Heidelberg"_is_out,liquid,one bc template is not closed
+2010-06-14_-_Fiji_Heidelberg_is_out,liquid,one bc template is not closed
+2010-08-04_-_The_Script_Editor's_font_and_tab_size_are_now_adjustable,reader,
+2012-03-20_-_Unit_tests_for_ImageJ_1.46,pandoc,
+2014-07-11_-_Fiji_won't_quit!,reader,
+2014-07-11_-_Fiji_won't_quit,reader,
+2D_Histogram,pandoc,
+Adelson's_Squares,reader,
+Alida,pandoc,
+Batch_Processing,liquid,has an include tag in a title
+BigDataServer,pandoc,
+Deconvolution,pandoc,
+Description_of_ImageJ's_plugin_architecture,reader,
+Developing_ImageJ_in_Eclipse,liquid,
+Developing_Plugins_for_ImageJ_1.x,liquid,
+DiameterJ,reader,
+DokuWiki_Migration,liquid,
+Feature_Extraction,liquid,
+Fiji_Contribution_requirements,pandoc,
+Fiji's_Menu,reader,
+Fiji%2FYouTube_Channel,liquid,youtube playlist
+GSoC_2011_Ideas,reader,
+Hackathon,liquid,
+Image_Intensity_Processing,liquid,
+ImageJ,liquid,
+Landmark_Correspondences,liquid,
+MATLAB_Scripting,liquid,
+Miji,liquid,
+Ops_Deconvolution,liquid,has formulas messing with liquid
+Overview_of_Fiji's_source_code,reader,
+Rand_error,liquid,
+Shape_Index_Map,reader,
+Sholl_Analysis,liquid,
+Strahler_Analysis,liquid,
+Test_Block_Matching_Parameters,liquid,
+TrakEM2_Scripting,liquid,
+Tree_and_Menu_Demo,liquid,
+Versioning,pandoc,
+VisBio_Fiji_plugin,reader,
+Temporal-Color_Code,liquid,
+
