@@ -46,7 +46,7 @@ aware of these files. You need to add the *scripts* folder to the
 [MATLAB](MATLAB "wikilink") path:
 
 In [MATLAB](MATLAB "wikilink"), select in the menu {% include bc
-content='File | Set Path...' %} and add the *scripts* folder there (on
+content='File | Set Path...'%} and add the *scripts* folder there (on
 Mac, the file chooser doesn't let you choose directories within .app
 packages, so you have to use the [MATLAB](MATLAB "wikilink") command
 `addpath('/Applications/Fiji.app/scripts')` or whatever folder works for

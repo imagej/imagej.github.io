@@ -8,8 +8,26 @@ categories: ImgLib,Citable
 description: test description
 ---
 
-%Replace% ImgLibMenu %Replace% ImgLib2 is a general-purpose,
-multidimensional image processing library.
+{% capture includecontent %} name = ImgLib2 | software = Generic Image
+Processing for Java | logo = ![imglib2-logo.png](imglib2-logo.png
+"imglib2-logo.png") | author = {% include person content='Saalfeld' %},
+{% include person content='Pietzsch' %}, {% include person
+content='StephanP' %}, {% include person content='Rueden' %}, {% include
+person content='Leek' %}, {% include person content='Bdezonia' %}, {%
+include person content='Schindelin' %}, {% include person
+content='Dietzc' %}, {% include person content='hornm' %}, {% include
+person content='Albertcardona' %}, {% include person content='Harris'
+%}, {% include person content='Lindsey' %} | maintainer = {% include
+person content='Pietzsch' %}, {% include person content='Rueden' %} |
+source = {% include github content='org = imglib | repo = imglib2' %} |
+status = stable, active | category =
+[:Category:ImgLib](:Category:ImgLib "wikilink")
+
+{% endcapture %}
+
+{% include info-box content=includecontent %} %Replace% ImgLibMenu
+%Replace% ImgLib2 is a general-purpose, multidimensional image
+processing library.
 
 It provides an interface-driven design that supports numeric and
 non-numeric data types (8-bit unsigned integer, 32-bit floating point,

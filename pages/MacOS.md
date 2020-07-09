@@ -69,7 +69,7 @@ bug](https://bugs.openjdk.java.net/browse/JDK-8136427) discussing the
 issue.
 
 As a workaround, you can check "Use JFileChooser to open/save" in the {%
-include bc content='Edit | Options | Input/Output...' %} dialog.
+include bc content='Edit | Options | Input/Output...'%} dialog.
 
 # Frequently Asked Questions
 

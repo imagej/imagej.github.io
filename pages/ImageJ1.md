@@ -8,11 +8,22 @@ categories: Software
 description: test description
 ---
 
-{% include project content='ImageJ1' %}ImageJ 1.x, often shortened to
-ImageJ1 or IJ1, is a stable version of [ImageJ](ImageJ "wikilink") which
-has been under continuous development since 1997. It has always been,
-and continues to be, a one-developer project of {% include person
-content='Rasband' %}.
+{% include project content='ImageJ1' %} {% capture includecontent %}
+name = ImageJ1 | software = ImageJ | logo =
+![imagej1-icon.png](/images/pages/imagej1-icon.png "imagej1-icon.png")" | author = {%
+include person content='Rasband' %} | maintainer = {% include person
+content='Rasband' %}  
+{% include person content='Rueden' %} | source = {% include github
+content='org = imagej | repo = imagej1' %} | status = stable, active |
+category =
+
+{% endcapture %}
+
+{% include info-box content=includecontent %} ImageJ 1.x, often
+shortened to ImageJ1 or IJ1, is a stable version of
+[ImageJ](ImageJ "wikilink") which has been under continuous development
+since 1997. It has always been, and continues to be, a one-developer
+project of {% include person content='Rasband' %}.
 
 ImageJ was originally developed in 1997 as a cross-platform version of
 [NIH Image](NIH_Image "wikilink"). ImageJ grew organically over time as

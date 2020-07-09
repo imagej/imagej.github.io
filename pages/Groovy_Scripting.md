@@ -19,7 +19,7 @@ features inspired by languages like [Python](Python "wikilink"),
   - Press {% include key content='\[' %} to bring up the [Script
     Editor](Script_Editor "wikilink").
   - Select an example Groovy script from the {% include bc
-    content='Templates | \[by language\] | Groovy' %} menu.
+    content='Templates | \[by language\] | Groovy'%} menu.
   - Press {% include key content='Ctrl|R' %} to run the script\!
 
 # See also

@@ -437,10 +437,10 @@ Potochkin](http://weblogs.java.net/blog/alexfromsun/archive/2006/02/debugging_sw
 # Debugging Java3D issues
 
 When Java3D does not work, the first order of business is to use {%
-include bc content='Plugins | Utilities | Debugging | Test Java3D' %}.
-If this shows a rotating cube, but the [3D Viewer](3D_Viewer "wikilink")
+include bc content='Plugins | Utilities | Debugging | Test Java3D'%}. If
+this shows a rotating cube, but the [3D Viewer](3D_Viewer "wikilink")
 does not work, please click on {% include bc content='Help | Java3D
-Properties...' %} in the [3D Viewer](3D_Viewer "wikilink")'s menu bar.
+Properties...'%} in the [3D Viewer](3D_Viewer "wikilink")'s menu bar.
 
 ## Command line debugging
 
@@ -505,7 +505,7 @@ need to pass an option like *--mem=1200m* (make sure that you have
 enough RAM free before starting ImageJ that way, though\!). If it turns
 out that memory was the issue, you can make the setting permanent by
 clicking ImageJ's {% include bc content='Edit | Options | Memory &
-Threads...' %} menu entry.
+Threads...'%} menu entry.
 
 ## More Java 3D properties
 

@@ -77,7 +77,7 @@ Install Java 8, and delete or rename the `ImageJ.app\java` and/or
 `ImageJ.app\jre` folders, if they exist. If this does not result in
 ImageJ using the expected Java version, check the Environment Variables
 ({% include bc content='Control Panel | System and Security | System |
-Advanced Settings | Advanced | Environment Variables' %}) for the
+Advanced Settings | Advanced | Environment Variables'%}) for the
 variable "JAVA\_HOME". Update or create this variable as needed; its
 value should be the desired JDK or JRE that you would like to use for
 ImageJ (for instance: "C:\\Program Files\\Java\\jdk1.8.0\_172"). See
@@ -165,9 +165,8 @@ date" but still be missing critical files, or have mismatching versions
 (e.g., the dreaded
 [`NoSuchMethodError`](Troubleshooting#NoSuchMethodError_or_NoClassDefFoundError "wikilink")).
 
-To be certain, run {% include bc content='Help | Update...' %}, and
-click the "Advanced mode" button. Then verify the following View
-Options:
+To be certain, run {% include bc content='Help | Update...'%}, and click
+the "Advanced mode" button. Then verify the following View Options:
 
   - **View uninstalled files only:** Shows files that are available from
     remote ImageJ update sites, but *not* installed in your ImageJ.
@@ -188,19 +187,19 @@ Options:
 
 If you flag any changes to be made, press the "Apply changes" to update
 your ImageJ. And after restarting ImageJ, you might want to run {%
-include bc content='Help | Update...' %} again to make sure everything
+include bc content='Help | Update...'%} again to make sure everything
 looks the way you expect\!
 
 ## How do I install additional plugins?
 
 If the plugin is published on an [ImageJ update
 site](Update_Sites "wikilink"), you can run {% include bc content='Help
-| Update' %} then click the *Manage update sites* button to enable it.
+| Update'%} then click the *Manage update sites* button to enable it.
 Not only does this install the plugins for you automatically, but you
 will also be notified of any updates whenever they are released.
 
 Otherwise, you can drag 'n drop the .jar files onto the ImageJ window,
-or use {% include bc content='Plugins | Install Plugin...' %} with .jar,
+or use {% include bc content='Plugins | Install Plugin...'%} with .jar,
 .class and .java files, or copy the plugins to *ImageJ.app/plugins/* and
 restart ImageJ. See the [walk-through with
 screenshots](Installing_3rd_party_plugins "wikilink").
@@ -215,7 +214,7 @@ bug](Bugs "wikilink") to the developers so that it can be fixed in a
 future version\!*
 
   - You can change the version of [ImageJ 1.x](ImageJ_1.x "wikilink")
-    used via the {% include bc content='Help | Update ImageJ...' %} menu
+    used via the {% include bc content='Help | Update ImageJ...'%} menu
     item. This *only* changes the version of ImageJ 1.x—not all ImageJ
     components, [plugins](plugins "wikilink"), etc.
   - You can [switch to a different version of
@@ -236,14 +235,14 @@ underscore, and it either needs to contain an appropriate
 too.
 
 The safest way to ensure these conventions is to use the {% include bc
-content='File | Export as .jar file' %} menu item.
+content='File | Export as .jar file'%} menu item.
 
-\== I tried to update ImageJ via {% include bc content='Help | Update'
-%}, but it throws an exception instead? ==
+\== I tried to update ImageJ via {% include bc content='Help |
+Update'%}, but it throws an exception instead? ==
 
 Please download a fresh copy from [here](Downloads "wikilink").
 
-\== I updated ImageJ via {% include bc content='Help | Update' %}, and
+\== I updated ImageJ via {% include bc content='Help | Update'%}, and
 now it does not start anymore\! ==
 
 See [If ImageJ does not start
@@ -258,7 +257,7 @@ ImageJ](Downloads "wikilink") to receive the fix. Or you can update the
 Updater manually like this:
 
   - open the [Script Editor](Script_Editor "wikilink") with {% include
-    bc content='File | New | Script' %}
+    bc content='File | New | Script'%}
   - set the language to *BeanShell* in the *Language* menu of the editor
   - paste the following code (and adjust it to match your settings):
 
@@ -359,8 +358,8 @@ The installation of Fiji is described on specific pages for
 ## How do I turn my ImageJ installation into a Fiji one?
 
 Fiji is just ImageJ. If you are running [ImageJ2](ImageJ2 "wikilink"),
-simply run {% include bc content='Help | Update' %}, click *Manage
-update sites*, and enable the *Fiji* update site.
+simply run {% include bc content='Help | Update'%}, click *Manage update
+sites*, and enable the *Fiji* update site.
 
 Or if you are running [ImageJ1](ImageJ1 "wikilink"), you can bootstrap
 the updater by drag 'n dropping [this
@@ -562,12 +561,12 @@ Here are several ways to do so:
         on GitHub, if desired.
 4.  **Using the "Open Source for Menu Item" command:**
       - Run {% include bc content='Plugins | Scripting | Open Source for
-        Menu Item' %}.
+        Menu Item'%}.
           - Unfortunately, you must select this from the menu, not using
             the Command Finder.
       - Run the command whose source you want to see.
-          - E.g., {% include bc content='Process | Binary | Make Binary'
-            %}.
+          - E.g., {% include bc content='Process | Binary | Make
+            Binary'%}.
           - Again, select it from the menu directly, not using the
             Command Finder.
       - This will open the source using the [fiji.sc gitweb
@@ -778,7 +777,7 @@ bug report](https://fiji.sc/bugzilla/).
 ## How to report issues?
 
 Use the {% include bc content='Help | [Report a
-Bug](Report_a_Bug "wikilink")' %} command, which adds a ticket report to
+Bug](Report_a_Bug "wikilink")'%} command, which adds a ticket report to
 the [Fiji bug tracker](https://fiji.sc/bugzilla/). While private mail
 might seem more desirable sometimes, but it is almost always inferior to
 the open process we established in ImageJ. For starters, bug reporters

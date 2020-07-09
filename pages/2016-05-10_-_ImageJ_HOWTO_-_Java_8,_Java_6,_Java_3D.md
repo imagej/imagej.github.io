@@ -39,7 +39,7 @@ version</p></th>
 <img src="/images/pages/Osx.png" title="fig:Osx.png" alt="Osx.png" height="32" /><br />
 <img src="/images/pages/Tux.png" title="fig:Tux.png" alt="Tux.png" height="32" /></p></td>
 <td><p><strong>Recommended.</strong> <a href="Fiji/Downloads" title="wikilink">Download the newest Fiji</a> for your platform. It comes bundled with Java 8, with the Java-8 update site enabled.</p></td>
-<td><p>Run <a href="Updater" title="wikilink">{% include bc content='Help|Update...' %}</a> to update to the latest version of ImageJ core and Fiji components.</p></td>
+<td><p>Run <a href="Updater" title="wikilink">{% include bc content='Help|Update...'%}</a> to update to the latest version of ImageJ core and Fiji components.</p></td>
 <td><p>This version of Fiji comes bundled with <a href="Java_3D" title="wikilink">Java 3D</a> 1.6. The <a href="3D_Viewer" title="wikilink">3D Viewer</a> works out of the box, though there are <a href="https://github.com/search?q=label%3Ajava-3d+is%3Aopen+user%3Afiji+user%3Aimagej&amp;type=Issues">still some bugs</a>.</p></td>
 </tr>
 <tr class="even">
@@ -47,8 +47,8 @@ version</p></th>
 <td><p><img src="/images/pages/Win.png" title="fig:Win.png" alt="Win.png" height="32" /><br />
 <img src="/images/pages/Tux.png" title="fig:Tux.png" alt="Tux.png" height="32" /></p></td>
 <td><p>Download the final (2017-May-30) <a href="Fiji/Downloads#Java_6" title="wikilink">Java-6 version of Fiji</a>. It comes bundled with Java 6 and all platform launchers.</p></td>
-<td><p>Run <a href="Updater" title="wikilink">{% include bc content='Help|Update...' %}</a> to update to the latest Java-6-compatible version. Your Fiji will become outdated over time, stuck on the final Java-6-compatible plugin versions.</p></td>
-<td><p>Run <a href="3D_Viewer" title="wikilink">{% include bc content='Plugins|3D Viewer' %}</a> to trigger installation of <a href="Java_3D" title="wikilink">Java 3D</a> 1.5 if you need 3D viz.</p></td>
+<td><p>Run <a href="Updater" title="wikilink">{% include bc content='Help|Update...'%}</a> to update to the latest Java-6-compatible version. Your Fiji will become outdated over time, stuck on the final Java-6-compatible plugin versions.</p></td>
+<td><p>Run <a href="3D_Viewer" title="wikilink">{% include bc content='Plugins|3D Viewer'%}</a> to trigger installation of <a href="Java_3D" title="wikilink">Java 3D</a> 1.5 if you need 3D viz.</p></td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -84,7 +84,7 @@ version</p></th>
 <li>If you have not already done so: install Java 8 from <a href="http://java.com/">java.com</a>.</li>
 <li>Do <strong>not</strong> enable the Java-8 update site, because (at the moment) it contains a mixture of core ImageJ and Fiji components.</li>
 </ul></td>
-<td><p>Run <a href="Updater" title="wikilink">{% include bc content='Help|Update...' %}</a> to update to the latest <strong>Java-6-compatible</strong> version. Your ImageJ will become outdated over time, stuck on the final Java-6-compatible plugin versions.</p></td>
+<td><p>Run <a href="Updater" title="wikilink">{% include bc content='Help|Update...'%}</a> to update to the latest <strong>Java-6-compatible</strong> version. Your ImageJ will become outdated over time, stuck on the final Java-6-compatible plugin versions.</p></td>
 <td><p>The <a href="3D_Viewer" title="wikilink">3D Viewer</a> is not bundled with "plain" ImageJ2 (yet). It is (for now) part of the Fiji update site.</p></td>
 </tr>
 <tr class="even">

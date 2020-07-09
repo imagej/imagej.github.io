@@ -16,7 +16,7 @@ Common](SciJava_Common "wikilink") library.
 
 [ImageJ2](ImageJ2 "wikilink") uses SCIFIO by default for most image
 input tasks. You can change this behavior at any time by running {%
-include bc content='Edit | Options | ImageJ2' %} and modifying the *Use
+include bc content='Edit | Options | ImageJ2'%} and modifying the *Use
 SCIFIO when opening files* option.
 
 ## Benefits of using SCIFIO
@@ -26,9 +26,9 @@ writing image file formats. Using it with ImageJ provides many
 advantages:
 
   - There is no need to call a special SCIFIO plugin; it works with
-    commands like {% include bc content='File | Open' %} automatically.
+    commands like {% include bc content='File | Open'%} automatically.
   - There are additional import options available via the {% include bc
-    content='File | Import | Image...' %} command.
+    content='File | Import | Image...'%} command.
   - There is a [Bio-Formats](Bio-Formats "wikilink") plugin for SCIFIO,
     included with the [Fiji](Fiji "wikilink") distribution of ImageJ,
     that adds automatic support for over a hundred life sciences file
@@ -59,7 +59,7 @@ advantages:
         installed)
   - If SCIFIO cannot handle the image file, it falls back to ImageJ 1.x.
   - You can save to SCIFIO-supported file formats using the {% include
-    bc content='File | Export | Image...' %} command. Supported formats
+    bc content='File | Export | Image...'%} command. Supported formats
     for export include:
       - APNG
       - AVI

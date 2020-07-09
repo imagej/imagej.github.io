@@ -8,9 +8,19 @@ categories: Plugins,Tutorials,Scripting
 description: test description
 ---
 
-The script editor is an invaluable help when writing scripts in any of
-ImageJ's supported [languages](Scripting_comparisons "wikilink").{%
-include learn content='scripting' %}
+{% capture includecontent %} name = Script Editor | software = ImageJ |
+author = Johannes Schindelin, Sumit Dubey (Google Summer of Code 2009) |
+maintainer = {% include person content='Rueden' %} | source = {% include
+github org='scijava' repo='script-editor'
+source='org/scijava/ui/swing/script/ScriptEditor.java' %} | released =
+11 Sep 2008 | status = active
+
+{% endcapture %}
+
+{% include info-box content=includecontent %} The script editor is an
+invaluable help when writing scripts in any of ImageJ's supported
+[languages](Scripting_comparisons "wikilink").{% include learn
+content='scripting' %}
 
 ## Features
 

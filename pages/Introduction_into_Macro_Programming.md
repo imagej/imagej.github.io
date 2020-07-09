@@ -338,8 +338,8 @@ for (i=1; i<=nSlices; i++) {
 
 Typically, macros are not written from scratch, but recorded using the
 Macro Recorder: Just click on {% include bc content='Plugins | Macros |
-Record...' %} and perform some actions. These actions will be recorded
-in the recorder window, and you can hit the *Create* button to open the
+Record...'%} and perform some actions. These actions will be recorded in
+the recorder window, and you can hit the *Create* button to open the
 recorded instructions in an editor:
 
 ![Macro\_recorder.png](/images/pages/Macro_recorder.png "Macro_recorder.png")"
@@ -424,7 +424,7 @@ tools into the toolbar:
 
 ``` java
 // A click on the empty rectangle will have the same
-// effect as {% include bc content='File | Save As | Jpeg...' %}
+// effect as {% include bc content='File | Save As | Jpeg...'%}
 
 macro "Save As JPEG Action Tool - C000R11ee" {
     saveAs("Jpeg");
@@ -460,7 +460,7 @@ apply a common operation to a complete
 directory](How_to_apply_a_common_operation_to_a_complete_directory "wikilink")*
 or at the macro template that you can open in the [Script
 Editor](Script_Editor "wikilink") via {% include bc content='Templates |
-Macros | Process Folder' %}.
+Macros | Process Folder'%}.
 
 ## Resizing to a given width of the selection bounds
 

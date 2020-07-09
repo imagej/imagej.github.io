@@ -8,7 +8,20 @@ categories:
 description: test description
 ---
 
-\== Purpose ==
+{% capture includecontent %} logo = ![SciView-icon.png](SciView-icon.png
+"SciView-icon.png") | name = SciView | software = ImageJ | author = {%
+include person content='Kharrington' %}, {% include person
+content='skalarproduktraum' %}, {% include person content='Rueden' %} |
+filename = | source = [SciView](https://github.com/kephale/SciView) |
+released = in development | latest version = in development | status =
+alpha | category = [Visualization](:Category:Visualization "wikilink") |
+website = https://github.com/scenerygraphics/SciView
+
+{% endcapture %}
+
+{% include info-box content=includecontent %}
+
+## Purpose
 
 This plugin provides 3D visualization and virtual reality capabilities
 for images and meshes using the
@@ -29,7 +42,7 @@ hackathon](2018-04-04_22-_SciView_hackathon "wikilink")).
 ### Shortcuts
 
 The full list of SciView's shortcuts can be accessed through the {%
-include bc content='Help| ' %}menu. Basic navigation is accomplished
+include bc content='Help| '%}menu. Basic navigation is accomplished
 using the following controls:
 
   - Drag - Move around

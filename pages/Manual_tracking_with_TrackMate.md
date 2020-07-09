@@ -22,14 +22,14 @@ There is not much to do. We will use the same, simple dataset that for
 [Getting started with
 TrackMate](Getting_started_with_TrackMate "wikilink"). You can find it
 in {% include bc content='File | Open Samples | Tracks for TrackMate
-(807K)' %}.
+(807K)'%}.
 
 As for the TrackMate plugin, you could start it up normally, selecting
-{% include bc content='Plugins | Tracking | TrackMate' %} in the menu,
+{% include bc content='Plugins | Tracking | TrackMate'%} in the menu,
 and then when offered to select a detector and a tracker, always pick
 the manual one. That would work well, but we offered another entry point
 that has a simpler GUI dedicated to manual tracking. Pick the {% include
-bc content='Plugins | Tracking | Manual tracking with TrackMate' %} menu
+bc content='Plugins | Tracking | Manual tracking with TrackMate'%} menu
 item.
 
 You should should get the layout pictured on the right. Notice that we

@@ -8,7 +8,25 @@ categories: Related Software,Citable,SciJava,OME
 description: test description
 ---
 
-%Replace% FormatsMenu %Replace% %Replace% TOC %Replace%
+%Replace% FormatsMenu %Replace% {% capture includecontent %} software =
+ImageJ | name = OME Bio-Formats plugins | logo =
+![Bio-formats-icon.png](/images/pages/Bio-formats-icon.png "Bio-formats-icon.png")" |
+author = [Open Microscopy
+Environment](https://www.openmicroscopy.org/):  
+\- [UW-Madison LOCI](LOCI "wikilink")  
+\- [Glencoe Software](https://www.glencoesoftware.com/)  
+\- [University of Dundee](https://www.dundee.ac.uk/) | maintainer = OME
+development team | filename = [See Bio-Formats Downloads
+page](https://downloads.openmicroscopy.org/bio-formats/) | source = {%
+include github org='openmicroscopy' repo='bioformats' %} | latest
+version = [See Bio-Formats Downloads
+page](https://downloads.openmicroscopy.org/bio-formats/) | status =
+active | category =
+[:Category:Import-Export](:Category:Import-Export "wikilink")
+
+{% endcapture %}
+
+{% include info-box content=includecontent %} %Replace% TOC %Replace%
 
 ## Purpose
 

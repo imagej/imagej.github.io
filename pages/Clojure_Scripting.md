@@ -36,7 +36,7 @@ See also:
 
 ## Using Clojure inside Fiji
 
-Go to {% include bc content='Plugins|Scripting|Clojure Interpreter' %}.
+Go to {% include bc content='Plugins|Scripting|Clojure Interpreter'%}.
 The prompt accepts any clojure code. See also Fiji's [Script
 Editor](Script_Editor "wikilink").
 
@@ -55,7 +55,7 @@ A minimal, complete clojure example:
 
 To create scripts, just save them as .clj text files (with an underscore
 in the name) in any folder or subfolder of Fiji's plugins folder, and
-run {% include bc content='Plugins|Scripting|Refresh Clojure Scripts' %}
+run {% include bc content='Plugins|Scripting|Refresh Clojure Scripts'%}
 to update the menus (it's done automatically at start up as well).
 
 To edit a script, just edit and save it with your favorite text editor.
@@ -1014,7 +1014,7 @@ conventions:
 `2. Save it under fiji/plugins/ folder, or a subfolder.`
 
 When done, just run the {% include bc content='PlugIns|Scripting|Refresh
-Clojure Scripts' %} plugin.
+Clojure Scripts'%} plugin.
 
 Once saved and in the menus, you need <b>not</b> call refresh scripts
 ever again for that script. Just edit and save it's text file, and run

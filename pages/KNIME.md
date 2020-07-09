@@ -8,6 +8,16 @@ categories: Related Software,SciJava,Citable
 description: test description
 ---
 
+{% capture includecontent %} software = KNIME | name = KNIME Image
+Processing | logo = {% include logo content='KNIME' size='78px' %} |
+author = [KNIME team](http://www.knime.org/team) | maintainer = [KNIME
+team](http://www.knime.org/team) | source = {% include github
+org='knime-ip' repo='knip' %} | status = active | website =
+http://tech.knime.org/community/image-processing
+
+{% endcapture %}
+
+{% include info-box-plugin content=includecontent %}
 [KNIME](http://knime.org/), the **K**o**n**stanz **I**nformation
 **M**in**e**r, is an open source data analytics, reporting and
 integration platform. KNIME integrates various components for machine

@@ -43,11 +43,11 @@ If you are not running a Java 8 -enabled installation you should
 [download the latest Fiji release](Downloads "wikilink"). Newer releases
 come pre-bundled with Java 8, and are already subscribed to the [Java-8
 update site](User:Java-8 "wikilink"). Once installed you should run {%
-include bc content='Help | Update Fiji' %} to make sure that you have
-the most recent version. You can find the plugin in {% include bc
-content='Plugins | NeuroAnatomy | SNT' %} (or by bringing up the
-[Command Finder](Using_the_Command_Launcher "wikilink") and typing {%
-include key content='SNT' %} ).
+include bc content='Help | Update Fiji'%} to make sure that you have the
+most recent version. You can find the plugin in {% include bc
+content='Plugins | NeuroAnatomy | SNT'%} (or by bringing up the [Command
+Finder](Using_the_Command_Launcher "wikilink") and typing {% include key
+content='SNT' %} ).
 
 ## Feedback
 

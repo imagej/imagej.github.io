@@ -135,7 +135,7 @@ the bug report.
 
 The easiest and safest way to provide sample data is via the {% include
 bc content='Help | [Upload Sample
-Image](Upload_Sample_Image "wikilink")' %} command. This sends the image
+Image](Upload_Sample_Image "wikilink")'%} command. This sends the image
 to a private space accessible only by trusted developers. This allows
 proprietary data to be tested without fear of public distribution.
 
@@ -162,7 +162,7 @@ more powerful, due to the vast scope of the overhaul, there are
 inevitably issues remaining. If your dataset used to open correctly for
 you, but is broken after updating, please *disable* the "Use SCIFIO when
 opening files (BETA\!)" option in the {% include bc content='Edit |
-Options | ImageJ2' %} dialog. This will revert to ImageJ 1.x's classic
+Options | ImageJ2'%} dialog. This will revert to ImageJ 1.x's classic
 image I/O until the SCIFIO-driven I/O is fixed or improved.
 
 Note: even if disabling SCIFIO fixes the issue for you, **please** still
@@ -202,8 +202,8 @@ you can do remove the offending component as follows:
 
 1.  If necessary, identify the jar containing the problematic class(es),
     e.g. by using {% include bc content='Plugins | Utilities | Find Jar
-    for Class' %} in Fiji.
-2.  Start the updater with `{% include bc content='Help | Update...' %}`
+    for Class'%} in Fiji.
+2.  Start the updater with `{% include bc content='Help | Update...'%}`
 3.  Switch to Advanced Mode
 4.  Search for the problematic components. Their associated update site
     will be listed here.

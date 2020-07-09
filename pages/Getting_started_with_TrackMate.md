@@ -30,7 +30,7 @@ bit to the Spot Segmentation Wizard of
 
 The test image we will use for this tutorial has now a link in Fiji. You
 can find it in {% include bc content='File | Open Samples | Tracks for
-TrackMate (807K)' %}, at the bottom of the list.
+TrackMate (807K)'%}, at the bottom of the list.
 
 ![](TrackMate_FakeTracks.png)
 
@@ -54,7 +54,7 @@ to handle these events, and we will see how.
 ![](TrackMate_MainButtons.png)
 
 With this image selected, launch TrackMate from the menu {% include bc
-content='Plugins | Tracking | TrackMate' %} or from the [Command
+content='Plugins | Tracking | TrackMate'%} or from the [Command
 launcher](Using_the_Command_Launcher "wikilink"). The TrackMate GUI
 appears next to the image, displaying the starting dialog panel.
 
@@ -74,7 +74,7 @@ The **Save** button creates a XML file that contains all of the data you
 generated at the moment you click it. Since you can save at any time,
 the resulting file might miss tracks, spots, etc... You can load the
 saved file using the menu item {% include bc content='Plugins | Tracking
-| Load a TrackMate file' %}. It will restore the session just where you
+| Load a TrackMate file'%}. It will restore the session just where you
 saved it.
 
 Now is a good time to speak strategy when it comes to saving/restoring.
@@ -113,7 +113,7 @@ Z-stack on a single time-point.
 
 If the calibration or dimensionality of your data is not right, I
 recommend changing it in the image metadata itself, using {% include bc
-content='Image | Properties' %} ({% include key content='Ctrl' %}+{%
+content='Image | Properties'%} ({% include key content='Ctrl' %}+{%
 include key content='Shift' %}+{% include key content='P' %}). The press
 the 'Refresh source' button on the TrackMate start panel to grab
 changes.

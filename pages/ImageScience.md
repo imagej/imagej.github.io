@@ -8,7 +8,17 @@ categories: Libraries,ImageScience
 description: test description
 ---
 
-The ImageScience library supports the ImageScience suite of plugins:
+{% capture includecontent %} software = ImageScience | name =
+ImageScience | maintainer = {% include person content='ImageScience' %}
+| author = {% include person content='ImageScience' %} | source = {%
+include github org='imagescience' repo='ImageScience' %} | status = |
+category = [:Category:Libraries](:Category:Libraries "wikilink") |
+website = http://imagescience.org/meijering/software/imagescience/
+
+{% endcapture %}
+
+{% include info-box content=includecontent %} The ImageScience library
+supports the ImageScience suite of plugins:
 
   - [FeatureJ](FeatureJ "wikilink")
   - [MTrackJ](MTrackJ "wikilink")
@@ -18,7 +28,7 @@ The ImageScience library supports the ImageScience suite of plugins:
 
 To install them, enable the ImageScience update site:
 
-  - [{% include bc content='Help|Update...' %}](Update_Sites "wikilink")
+  - [{% include bc content='Help|Update...'%}](Update_Sites "wikilink")
   - Click *Manage update sites*
   - Check *ImageScience*
   - Click *Close*

@@ -8,15 +8,25 @@ categories:
 description: test description
 ---
 
-%Replace% TOC %Replace% The **Script Interpreter** is a
+{% capture includecontent %} name = Script Interpreter | software =
+ImageJ | author = {% include person content='Schindelin' %}, {% include
+person content='Rueden' %} | maintainer = {% include person
+content='Rueden' %} | source = {% include github org='scijava'
+repo='script-editor' source='org/scijava/ui/swing/script' %} | released
+= 8 Apr 2016 | status = active
+
+{% endcapture %}
+
+{% include info-box content=includecontent %} %Replace% TOC %Replace%
+The **Script Interpreter** is a
 [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)
 allowing scripting from the command line.
 
 ## Getting Started
 
 Start it via {% include bc content='Plugins|Scripting|Script
-Interpreter' %} or by typing {% include key content='Shift' %}-{%
-include key content='\[' %}.
+Interpreter'%} or by typing {% include key content='Shift' %}-{% include
+key content='\[' %}.
 
 ![Script\_Interpreter.png](Script_Interpreter.png
 "Script_Interpreter.png")

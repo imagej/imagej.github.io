@@ -46,8 +46,8 @@ the one for your wiki account. In order to set your update site
 password, use the link at the bottom of the wiki or click
 [here](Special:ChangeUploadPassword "wikilink").
 
-start the updater with {% include bc content='Help | Update' %} and
-click on the *Manage update sites* button:
+start the updater with {% include bc content='Help | Update'%} and click
+on the *Manage update sites* button:
 
 ![Mamed-3.jpg](/images/pages/Mamed-3.jpg "Mamed-3.jpg")"
 
@@ -97,7 +97,7 @@ and grant those users upload permission to the new site.
 If you have an own server or web space with WebDAV, SFTP or SSH access,
 you can create a directory in that web space and initialize it as an
 update site, too. Just call the updater with {% include bc content='Help
-| Update' %} and click the *Manage update sites* button:
+| Update'%} and click the *Manage update sites* button:
 
 ![Mamed-3.jpg](/images/pages/Mamed-3.jpg "Mamed-3.jpg")"
 

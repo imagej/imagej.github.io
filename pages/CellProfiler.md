@@ -8,9 +8,20 @@ categories: Related Software,SciJava,Citable
 description: test description
 ---
 
-CellProfiler is free open-source software designed to enable biologists
-without training in computer vision or programming to quantitatively
-measure phenotypes from thousands of images automatically.
+{% capture includecontent %} software = CellProfiler | name =
+CellProfiler | logo = ![Cellprofiler-icon.png](Cellprofiler-icon.png
+"Cellprofiler-icon.png") | author = [Broad Institute of MIT and
+Harvard](https://www.broadinstitute.org/) | maintainer = [Broad
+Institute of MIT and Harvard](https://www.broadinstitute.org/) | source
+= {% include github org='CellProfiler' repo='CellProfiler' %} | status =
+active | website = http://cellprofiler.org/
+
+{% endcapture %}
+
+{% include info-box-plugin content=includecontent %} CellProfiler is
+free open-source software designed to enable biologists without training
+in computer vision or programming to quantitatively measure phenotypes
+from thousands of images automatically.
 
 ## Publications
 

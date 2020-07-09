@@ -35,10 +35,10 @@ mvn clean test
 Or from Eclipse:
 
 1.  Import the `ij1-tests` project using {% include bc content='File |
-    Import Existing Maven Projects' %} and choosing the
+    Import Existing Maven Projects'%} and choosing the
     `ij1-tests/pom.xml` file.
 2.  Right-click the `ij1-tests` project, {% include bc content='Run As |
-    JUnit Test' %}.
+    JUnit Test'%}.
 
 ### Using a different version of ImageJ1
 

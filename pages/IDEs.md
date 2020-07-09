@@ -56,7 +56,7 @@ There are many advantages of using an IDE for software development:
     interactively](Debugging_Exercises "wikilink"): just open the main
     class (i.e. a class having a `public static void main(String[]
     args)` method) and launch it in debug mode. E.g., in Eclipse: go to
-    {% include bc content='Run|Debug As|Java Application' %}). This will
+    {% include bc content='Run|Debug As|Java Application'%}). This will
     switch to a different window layout (the *Debug perspective*) which
     offers you a range of views that are useful for debugging such as:
     local variables, thread stack traces, etc. You can interrupt the

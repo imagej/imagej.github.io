@@ -8,7 +8,12 @@ categories: ImgLib
 description: test description
 ---
 
-%Replace% ImgLibMenu %Replace% 
+%Replace% ImgLibMenu %Replace% {% capture includecontent %} The workshop
+materials linked below are outdated. Please get the most recent version
+from {% include github org='imglib' repo='imglib2-advanced-workshop'
+label='github.com/imglib/imglib2-advanced-workshop' %}. {% endcapture %}
+
+{% include warning-box content=includecontent %}
 
 Please download the following material for the Workshop "Advanced
 Programming with ImgLib2" (at the ImageJ User and Developer Conference

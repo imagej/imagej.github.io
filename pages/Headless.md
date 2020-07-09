@@ -46,6 +46,22 @@ menu bar.
 
 ## The `--headless` mode
 
+{% capture includecontent %} Historical note Headless support was
+originally a branch in [ImageJA](ImageJA "wikilink"); it worked by
+putting rewritten versions of three core ImageJ classes into a file
+called *headless.jar*, which was put into the class path *before*
+`ij.jar` so they would override ImageJ's versions.
+
+Nowadays, we use [Javassist](Javassist "wikilink") for run-time
+patching, through the {% include github org='imagej' repo='ij1-patcher'
+label='ImageJ' %} project. <span style="color: red">You do not need to
+do anything special to take advantage of this feature, except pass the
+`--headless` flag when launching ImageJ from the command line.</span>
+
+{% endcapture %}
+
+{% include sidebox-right content=includecontent %}
+
 [ImageJ2](ImageJ2 "wikilink") provides the capability to execute ImageJ
 plugins, macros and scripts in headless mode. This feature uses bytecode
 manipulation to patch ImageJ 1.x's behavior at runtime, making it

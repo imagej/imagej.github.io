@@ -76,10 +76,10 @@ image](Trainable-Weka-Segmentation-GUI.png
 [Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink")
 runs on any 2D or 3D image (grayscale or color). To use 2D features, you
 need to select the menu command {% include bc content='Plugins |
-Segmentation | Trainable Weka Segmentation' %}. For 3D features, call
-the plugin under {% include bc content='Plugins | Segmentation |
-Trainable Weka Segmentation 3D' %}. Both commands will use the same GUI
-but offer different feature options in their settings.
+Segmentation | Trainable Weka Segmentation'%}. For 3D features, call the
+plugin under {% include bc content='Plugins | Segmentation | Trainable
+Weka Segmentation 3D'%}. Both commands will use the same GUI but offer
+different feature options in their settings.
 
 By default, the plugin starts with two classes, i.e. it will produce
 **binary pixel classification**. The user can add traces to both classes
@@ -410,7 +410,7 @@ updater](https://imagej.net/How_to_follow_a_3rd_party_update_site).
 plugin.](TWS-3D-Settings-dialog.png
 "Settings dialog for the Trainable Weka Segmentation 3D plugin.")When
 calling the plugin from the menu command {% include bc content='Plugins
-| Segmentation | Trainable Weka Segmentation 3D' %} the set of available
+| Segmentation | Trainable Weka Segmentation 3D'%} the set of available
 image features will be as follows:
 
   - **Gaussian blur**: performs \(n\) individual 3D convolutions with
@@ -494,7 +494,7 @@ install the Weka package that includes it. For that, you need to launch
 the Weka GUI Chooser (by clicking on the Weka button of the left panel
 of the plugin GUI) and use the [ Weka Package
 Manager](Trainable_Weka_Segmentation_-_How_to_install_new_classifiers "wikilink")
-(under {% include bc content='Tools | Package manager' %}). For a
+(under {% include bc content='Tools | Package manager'%}). For a
 step-by-step description on how to install new packages, have a look at
 this
 [tutorial](Trainable_Weka_Segmentation_-_How_to_install_new_classifiers "wikilink").

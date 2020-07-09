@@ -48,8 +48,8 @@ https://github.com/fiji/Stitching, *Time\_Lapse.jar* in the repository
 at https://github.com/fiji/Time_Lapse.
 
 If in doubt about the location of the repository, just call {% include
-bc content='Plugins | Debug | System Information' %} and find the
-section corresponding to the file in question.
+bc content='Plugins | Debug | System Information'%} and find the section
+corresponding to the file in question.
 
 Once the developer has identified which plugin or library she wants to
 modify or develop further, it is very easy to build and contribute by

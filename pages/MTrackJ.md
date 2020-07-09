@@ -8,6 +8,16 @@ categories: Plugins,Tracking,ImageScience
 description: test description
 ---
 
+{% capture includecontent %} software = ImageScience | name = MTrackJ |
+maintainer = {% include person content='ImageScience' %} | author = {%
+include person content='ImageScience' %} | source = {% include github
+org='imagescience' repo='MTrackJ' %} | status = | category =
+[:Category:Plugins](:Category:Plugins "wikilink") | website =
+http://imagescience.org/meijering/software/mtrackj/
+
+{% endcapture %}
+
+{% include info-box content=includecontent %}
 [MTrackJ](http://www.imagescience.org/meijering/software/mtrackj/) is an
 ImageJ plugin to facilitate motion tracking and analysis.
 

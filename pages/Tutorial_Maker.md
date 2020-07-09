@@ -8,6 +8,18 @@ categories: Plugins
 description: test description
 ---
 
+{% capture includecontent %} name = Tutorial Maker | software = ImageJ |
+author = Johannes Schindelin | maintainer = Johannes Schindelin |
+filename =
+[Tutorial\_Maker.jar](http://update.fiji.sc/plugins/Tutorial_Maker.jar-20090721160531)
+| source = {% include github org='fiji' repo='Tutorial\_Maker' %} |
+released = July 2009 | latest version = July 2009 | status = beta |
+category = [Plugins](:Category:Plugins "wikilink")
+
+{% endcapture %}
+
+{% include info-box content=includecontent %}
+
 ## Purpose
 
 This plugin makes writing tutorials on this Wiki a breeze.

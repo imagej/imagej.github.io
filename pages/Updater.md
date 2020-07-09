@@ -37,7 +37,7 @@ In case you do not want to run the Updater upon startup, you can choose
 
 ## Starting the Updater explicitly
 
-The Updater can be run via {% include bc content='Help | Update...' %}.
+The Updater can be run via {% include bc content='Help | Update...'%}.
 
 ## Easy mode
 
@@ -87,7 +87,7 @@ have to upload the plugin to the server.
 
 ## Starting the Updater manually
 
-Just click on the {% include bc content='Help | Update...' %} menu item:
+Just click on the {% include bc content='Help | Update...'%} menu item:
 
 ![Fiji\_Updater-screenshot.png](Fiji_Updater-screenshot.png
 "Fiji_Updater-screenshot.png")

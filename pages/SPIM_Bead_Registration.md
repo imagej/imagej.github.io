@@ -234,8 +234,8 @@ Some tips and tricks in the next few paragraphs require to change a
 static variable in the source code that changes the behavior of the
 plugin. This is done using the **script editor** and works as follows:
 
-  - {% include bc content='File | New | Script' %}
-  - {% include bc content='Language | Beanshell' %}
+  - {% include bc content='File | New | Script'%}
+  - {% include bc content='Language | Beanshell'%}
   - type the command, e.g.
 
 <!-- end list -->

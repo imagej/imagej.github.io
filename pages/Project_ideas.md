@@ -81,7 +81,7 @@ image](Jython_Scripting#Visualize_any_number_of_TIFF_stacks_in_a_single_composit
 ## Interactively adjustable intensity/LUT curves
 
 In Fiji, you can adjust the dynamic range of an image by calling {%
-include bc content='Image | Adjust | Brightness & Contrast' %}. However,
+include bc content='Image | Adjust | Brightness & Contrast'%}. However,
 this only lets you choose a linear mapping between pixel intensity and
 lookup table. This project aims to provide non-linear controls, such as
 piecewise linear functions, gamma curves, splines, etc
@@ -347,7 +347,7 @@ For Tcl, the Script Editor would need minimal adjustments, as
 RSyntaxTextArea already has support for Tcl, but for Haskell, a new
 TokenMaker would have to be implemented.
 
-\== Add {% include bc content='Edit | Find in files...' %} ==
+\== Add {% include bc content='Edit | Find in files...'%} ==
 
 We already have a mechanism to jump between compile errors and locations
 of a stack trace. The same mechanism could be used to present results
@@ -587,7 +587,7 @@ of the menu items, most probably by adding appropriate redirects.
 
 ## Add a clever *Save As* plugin
 
-For now, {% include bc content='File | Save As' %} always saves the
+For now, {% include bc content='File | Save As'%} always saves the
 result as a *.tiff* file, even if the user specified a file name ending
 in, say, *.png*.
 

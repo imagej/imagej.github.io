@@ -14,6 +14,16 @@ data processing, as well as the corresponding core image display logic
 for user interfaces, based on the [SciJava
 Common](SciJava_Common "wikilink") application framework.
 
+{% capture includecontent %} quote = I Have to a admit that IJ2 API and
+Java 8 make the process very smooth Much better than few years ago :-0 |
+person = {% include person content='hadim' %}, Python developer |
+gravatar = bfb4b22436c24b136c722ce797d42cbe | source =
+https://gitter.im/imagej/imagej?at=571e431b7469496137b9059f
+
+{% endcapture %}
+
+{% include testimonial content=includecontent %}
+
 Using [ImgLib2](ImgLib2 "wikilink") offers several benefits:
 
   - Support for many different data types (different combinations of bit

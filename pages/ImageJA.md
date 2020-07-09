@@ -8,7 +8,21 @@ categories: Software
 description: test description
 ---
 
-{% include project content='ImageJ1' %}ImageJA is a project that
+{% include project content='ImageJ1' %} {% capture includecontent %}
+software = ImageJA | name = ImageJA | author = {% include person
+content='Rasband' %}, {% include person content='Schindelin' %}, {%
+include person content='Albertcardona' %}, et al | maintainer = [Travis
+CI](Travis_CI "wikilink") | filename = Newer versions [on Maven
+Central](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22net.imagej%22%20AND%20a%3A%22ij%22)  
+Older versions [in ImageJ Maven
+repository](http://maven.imagej.net/content/repositories/releases/net/imagej/ij/)
+| source = {% include github org='imagej' repo='ImageJA' label='Git' %}
+| released = 17/03/2007 | latest version = auto-updated | status =
+auto-maintained
+
+{% endcapture %}
+
+{% include info-box content=includecontent %} ImageJA is a project that
 provides a clean [Git](Git "wikilink") history of the [ImageJ
 1.x](ImageJ_1.x "wikilink") project, with a proper 'pom.xml' file so
 that it can be used with [Maven](Maven "wikilink") without hassles.
@@ -68,7 +82,7 @@ closely with ImageJ with a few changes on top:
     Fiji's Script Editor, if available, instead of the old AWT based
     ImageJ editor.
   - ImageJA has an easy Plugin installer via {% include bc
-    content='Plugins | Install PlugIn...' %} (ImageJ only has that
+    content='Plugins | Install PlugIn...'%} (ImageJ only has that
     drag-n-drop thingie).
   - The instance listener is RMI-based with ImageJA, so there is no
     security issue with it.

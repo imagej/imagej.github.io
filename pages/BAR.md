@@ -12,6 +12,21 @@ description: test description
 
 <div style="float:right;">
 
+{% capture includecontent %} software = ImageJ/Fiji | name = BAR |
+maintainer = {% include person content='Tiago' %} | source = {% include
+github org='tferr' repo='Scripts' %} | released = June 2014 | latest
+version = **1.1.13 March 2017** ({% include github org='tferr'
+repo='Scripts/releases' label='Changelog' %}) | category =
+[Analysis](:Category:Analysis "wikilink"),
+[Annotation](:Category:Image_annotation "wikilink"),
+[Filtering](:Category:Filtering "wikilink"),
+[Segmentation](:Category:Segmentation "wikilink"),
+[Scripting](:Category:Scripting "wikilink")
+
+{% endcapture %}
+
+{% include info-box content=includecontent %}
+
 </div>
 
 %Replace% TOC %Replace% **BAR**: A collection of **B**roadly
@@ -26,7 +41,7 @@ list-of-update-sites content='update site' %}.
 
 ## Installation
 
-Run {% include bc content='Help|Update...' %} and choose *Manage update
+Run {% include bc content='Help|Update...'%} and choose *Manage update
 sites*. Activate the *BAR* checkbox in the alphabetically-sorted list of
 update sites. Press *OK*, then *Apply changes*. Restart ImageJ. That's
 it. Enjoy BAR\!
@@ -159,7 +174,19 @@ Installers▷ Install Shortcuts Menu</span>), that registers frequently
 used commands in the ImageJ toolbar, 4) by
 [pressing](#ExpediteAccess "wikilink") {% include key
 content='[L](#ExpediteAccess "wikilink")' %}, or 5) from other [scripts,
-macros and plugins](#Scripting_BARs "wikilink"). 
+macros and plugins](#Scripting_BARs "wikilink").
+
+{% capture includecontent %} id = OpeningBAR | tip = You can open any
+BAR script by holding {% include key content='Shift' %} while selecting
+its name from the
+<span style="border-bottom:1px dotted #ccc;">BAR▷</span> menu. For
+pre-compiled java plugins, the source code is available through the
+<span style="border-bottom:1px dotted #ccc;">About BAR...</span>
+command.
+
+{% endcapture %}
+
+{% include tip content=includecontent %}
 
 ### Context Menu
 
@@ -226,7 +253,7 @@ pasted code would look something like this:
 ![Commander overview (BAR 1.1.2).](CommanderOverview.png
 "Commander overview (BAR 1.1.2).") Since the majority of BARs are
 scripts stored in dedicated files, BAR features Commander ({% include bc
-content='BAR|BAR Commander...' %}), a keyboard-based file browser that
+content='BAR|BAR Commander...'%}), a keyboard-based file browser that
 produces filtered lists of directory contents.
 
 It is a productivity tool that applies the principles of [Command
@@ -250,13 +277,13 @@ command-line interfaces. Here are some examples:
     content='.|J|S' %}  
     To reveal the directory of active image:Type {% include key
     content='\!|I|M|P|Enter' %}, then choose {% include bc
-    content='Reveal Path' %}.  
+    content='Reveal Path'%}.  
     To access Commander's built-in help:Type {% include key
     content='\!|H|E|L|P|Enter' %}  
     To extract the paths of all TIFF images in a directory:Drag and drop
     the desired folder into the Commander list  
     Type {% include key content='T|I|F|Enter' %}  
-    Choose {% include bc content='Print Current List' %} in the Options
+    Choose {% include bc content='Print Current List'%} in the Options
     Menu or press {% include key content='Control|P' %} ({% include key
     content='Command|P' %} in Mac OS).
 
@@ -286,9 +313,23 @@ macro "Remove Round Structures [0]" {
 As [mentioned](#Context_Menu "wikilink"), such macros can then be pasted
 into the text area of <span style="border-bottom:1px dotted #ccc;">Edit▷
 Options▷ Startup...</span> so that they can be executed when ImageJ
-starts up. == Scripting BARs == Although BARs can be used as standalone
-commands, the scripts and plugins in BAR become more useful when
-incorporated into other routines.
+starts up.
+
+{% capture includecontent %} id = ExpediteAccess | tip = Two other
+expedite ways of retrieving commands include: 1) Pressing {% include key
+content='L' %}, the shortcut for the [Command
+Launcher](Using_the_Command_Launcher "wikilink") and 2) Pressing {%
+include key content='9' %}, the default shortcut for the *Recent
+Commands* list.
+
+{% endcapture %}
+
+{% include tip content=includecontent %}
+
+## Scripting BARs
+
+Although BARs can be used as standalone commands, the scripts and
+plugins in BAR become more useful when incorporated into other routines.
 
 You can use BARs as a starting point for your own workflows. Whether you
 are just looking to automate a simple task or you are an advanced
@@ -298,9 +339,9 @@ additions to be shared across routines.
 
 ### Snippets
 
-![{% include bc content='BAR|Snippets|NewSnippet...' %} (BAR
+![{% include bc content='BAR|Snippets|NewSnippet...'%} (BAR
 1.1.0)](SnippetCreator.png
-"{% include bc content='BAR|Snippets|NewSnippet...' %} (BAR 1.1.0)") BAR
+"{% include bc content='BAR|Snippets|NewSnippet...'%} (BAR 1.1.0)") BAR
 contains a directory, *plugins/Scripts/BAR/Snippets/*, containing
 multi-language
 [examples](https://github.com/tferr/Scripts/tree/master/Snippets) that
@@ -322,6 +363,21 @@ contains some utilities to help you manage your scripts:
     Reveal Snippets:Opens *plugins/Scripts/BAR/Snippets/* in the file
     browser of the operating system.  
     Search BAR: Searches the contents of BAR files.
+
+{% capture includecontent %} id = API | tip = BAR provides several
+utility methods that simplify the creation of
+[Snippets](#Snippets "wikilink") and [BAR lib](#BAR_lib "wikilink")
+usage. These are documented in the [BAR
+API](http://tferr.github.io/Scripts/apidocs/), that can be accessed
+using {% include bc content='BAR|About BAR...'%}. {% include bc
+content='About BAR...'%} also provides links to several online resources
+including the [ImageJ Search Portal](http://search.imagej.net), [ImageJ
+Javadocs](http://javadoc.imagej.net), and the [GitHub
+documentation](https://github.com/tferr/Scripts#ij-bar) of BAR.
+
+{% endcapture %}
+
+{% include tip content=includecontent %}
 
 <span id="lib"></span>
 
@@ -360,7 +416,7 @@ lib.confirmLoading();
 ```
 
 Run it in the [Script Editor](Script_Editor "wikilink") ({% include bc
-content='File|New|Script...' %}), and you should be greeted by a *"BAR
+content='File|New|Script...'%}), and you should be greeted by a *"BAR
 lib successfully loaded"* message. Further details are provided on the
 {% include github org='tferr' repo='Scripts' path='/lib\#lib'
 label='GitHub' %} and on the documentation of the
@@ -439,6 +495,38 @@ def myRoutines():
     script = bar.Utils.getSnippetsDir() + "Median_Filter.py"
     PythonInterpreter().execfile(script)
 ```
+
+{% capture includecontent %} id = BuiltinProcessor | tip = Note also
+that there is an [easier](Batch_Processing#Easy_option "wikilink") (but
+less flexible) way to [batch process](Batch_Processing "wikilink") a
+folder: The built-in
+<span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷
+Macro...</span> [command](Batch_Processing#Easy_option "wikilink").
+
+In this case, you only need to paste the contents of your `myRoutines()`
+function into the text area of the command. However, by default,
+<span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷
+Macro...</span> assumes you want to process *all* the files in a
+directory. If that is not the case, i.e., you want to restrict the
+processing to certain file types, you will have to use
+[regex](wikipedia:Regular_expression "wikilink") to instruct the
+built-in command on the file extensions to be considered (see
+[Commander](#Commander "wikilink")'s built-in help for several regex
+examples). E.g., typing the following in the *File name contains* field
+of <span style="border-bottom:1px dotted #ccc;">Process▷ Batch▷
+Macro...</span>, would restrict processing to `.tif`, `.stk` and `.oib`
+files (the default extensions specified in the `validExtension()`
+function of {% include github org='tferr' repo='Scripts'
+path='Snippets/Process\_Folder\_IJM.ijm'
+label='Process\_Folder\_IJM.ijm' %}):
+
+``` java
+(.*(\.(?i)(tif|stk|oib))$)
+```
+
+{% endcapture %}
+
+{% include tip content=includecontent %}
 
 ### Example: Batch Randomization of Filenames
 
@@ -719,7 +807,7 @@ function myRoutines() {
     Flavors](ImageJ#Flavors "wikilink") if you have doubts about
     existing ImageJ distributions) will only register scripts saved in
     the *plugins/* folder or on one of its immediate subfolders. For
-    this reason, some of the {% include bc content='BAR|' %} submenus
+    this reason, some of the {% include bc content='BAR|'%} submenus
     will appear as empty, and it may not be possible to navigate the
     *BAR/* directory using menu commands
     ([Commander](#Commander "wikilink") could still be used,
@@ -734,7 +822,7 @@ function myRoutines() {
 
   - How do I uninstall BAR?  
     Run the [Updater](Fiji_Updater "wikilink") ({% include bc
-    content='Help|Update...' %}). Choose *Advance Mode* then *Manage
+    content='Help|Update...'%}). Choose *Advance Mode* then *Manage
     update sites*. Deactivate the *BAR* checkbox in the
     alphabetically-sorted list of update sites. Press *OK*, then *Apply
     changes*. All BAR files will be deleted. Note that you can install

@@ -43,6 +43,15 @@ The rules for `#@` parameter use are as follows:
     `Object` be default. (For the `output` directive and other script
     directives, no space is allowed between `#@` and the directive.)
 
+{% capture includecontent %} quote = zomg UIs are so easy now  
+done by lunchtime | person = {% include person content='kephale' %},  
+Clojure developer | gravatar = 9e4ed4484fd425f3f178bfeed4777b31 | source
+= https://gitter.im/fiji/fiji?at=5717afbc98c544f1396cef2f
+
+{% endcapture %}
+
+{% include testimonial content=includecontent %}
+
 For example, if we look at the
 [Greeting.py](https://github.com/scijava/scripting-jython/blob/scripting-jython-0.2.0/src/main/resources/script_templates/Python/Greeting.py)
 [template](Script_Templates "wikilink") supplied with Fiji:

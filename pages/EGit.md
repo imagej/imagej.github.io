@@ -19,7 +19,7 @@ preinstalled. If this should not be so in your case you can install it
 as follows:
 
 1.  in Eclipse go to {% include bc content='Help |Install New
-    Software...' %}
+    Software...'%}
 2.  you can look in the "All Available Sites" drop down panel if EGit is
     existing there or add update site with the {% include key
     content='Add..' %} button
@@ -31,11 +31,11 @@ as follows:
 
 To have the EGit panes available you might need to set the following up:
 
-1.  go to {% include bc content='Window |Show View | Others...' %} and
-    select under {% include bc content='|Git' %} at least *Git
+1.  go to {% include bc content='Window |Show View | Others...'%} and
+    select under {% include bc content='|Git'%} at least *Git
     Repositories* and *Git Staging*
     1.  additionally, it is helpful to add under {% include bc
-        content='|Team' %} *History*
+        content='|Team'%} *History*
 
 Here you can also find a video tutorial on [integrating github with
 Eclipse](https://www.youtube.com/watch?v=ptK9-CNms98) including already
@@ -61,7 +61,7 @@ an intro on how to clone a public github repository (see below).
 
 If the clones repository contains a [Maven](Maven "wikilink") project,
 you can then right-click it in Eclipses' package explorer and choose {%
-include bc content='Configure |Convert to Maven Project' %}
+include bc content='Configure |Convert to Maven Project'%}
 
 Et voila, ready and all in Eclipse.
 

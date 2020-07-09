@@ -8,7 +8,17 @@ categories: Related Software,Citable
 description: test description
 ---
 
-μManager is a software package for control of automated microscopes.
+{% capture includecontent %} name = μManager | software = μManager |
+logo = ![Mm-icon.jpg](/images/pages/Mm-icon.jpg "Mm-icon.jpg")" | author = [Vale
+Lab](http://valelab.ucsf.edu/), [UCSF](http://www.ucsf.edu/) |
+maintainer = [Open Imaging, Inc.](https://open-imaging.com/) | source =
+{% include github org='micro-manager' repo='micro-manager' %} | status =
+Active | website = https://micro-manager.org/
+
+{% endcapture %}
+
+{% include info-box-plugin content=includecontent %} μManager is a
+software package for control of automated microscopes.
 
 ## Publication
 

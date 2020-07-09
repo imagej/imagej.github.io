@@ -8,6 +8,17 @@ categories: Plugins
 description: test description
 ---
 
+{% capture includecontent %} software = ImageJ | name = TurboReg |
+maintainer = Philippe Thévenaz | author = Philippe Thévenaz | source =
+{% include github org='fiji' repo='TurboReg' source='TurboReg\_.java' %}
+| released = 16/09/2010 | latest version = 16/09/2010 | status = |
+category = [:Category:Plugins](:Category:Plugins "wikilink") | website =
+http://bigwww.epfl.ch/thevenaz/turboreg/
+
+{% endcapture %}
+
+{% include info-box content=includecontent %}
+
 This plugin is described in detail on the [BIG
 website](http://bigwww.epfl.ch/thevenaz/turboreg/).
 

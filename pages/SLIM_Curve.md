@@ -13,6 +13,21 @@ discontinued in favor of [FLIMJ](FLIMJ "wikilink"). {% endcapture %}
 
 {% include warning-box content=includecontent %}
 
+{% capture includecontent %} software = ImageJ | name = SLIM Curve
+plugin | logo = ![Slim-curve-icon.png](Slim-curve-icon.png
+"Slim-curve-icon.png") | author = [CRUK/MRC at University of
+Oxford](http://www.rob.ox.ac.uk/)  
+[UW-Madison LOCI](http://loci.wisc.edu/) | maintainer = {% include
+person content='Rueden' %} | filename = slim\_plugin-2.0.0-SNAPSHOT.jar
+| source = {% include github org='slim-curve' repo='slim-plugin' %} |
+latest version = 2.0.0-SNAPSHOT | status = discontinued in favor of
+[FLIMJ](FLIMJ "wikilink") | website = https://slim-curve.github.io/ |
+category = [:Category:Analysis](:Category:Analysis "wikilink")
+
+{% endcapture %}
+
+{% include info-box content=includecontent %}
+
 ## Introduction
 
 ![SLIM-screenshot.png](/images/pages/SLIM-screenshot.png "SLIM-screenshot.png")"
@@ -53,8 +68,8 @@ The SLIM Curve plugin is available from the "SLIM Curve" [update
 site](update_site "wikilink").
 
 Once you have installed the SLIM Curve plugin it becomes available on
-the menu under {% include bc content='Analyze | Lifetime | SLIM Curve'
-%}.
+the menu under {% include bc content='Analyze | Lifetime | SLIM
+Curve'%}.
 
 ## Usage
 

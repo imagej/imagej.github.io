@@ -10,6 +10,21 @@ description: test description
 
 <seo metak="local maxima,local minima,extrema,inflection point, signal processing, spectral analysis" metad="local maxima,local minima,extrema,inflection point, signal processing, spectral analysis" />
 
+{% capture includecontent %} software = ImageJ/Fiji | name = Find Peaks
+| maintainer = [ BAR update site](BAR "wikilink") | author = {% include
+person content='Tiago' %} | filename = {% include github org='tferr'
+repo='Scripts'
+path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/Find\_Peaks.bsh'
+%} | source = {% include github org='tferr' repo='Scripts'
+path='README.md\#data-analysis' %} | released = February 2014 | category
+= [Analysis](:Category:Analysis "wikilink"),
+[Scripting](:Category:Scripting "wikilink"),
+[Plugins](:Category:Plugins "wikilink")
+
+{% endcapture %}
+
+{% include info-box content=includecontent %}
+
 A [BAR](BAR "wikilink") script (written in
 [BeanShell](Beanshell_Scripting "wikilink")) that retrieves local maxima
 and minima from an ImageJ plot. The easiest way to install *Find Peaks*
@@ -92,7 +107,7 @@ WindowManager.getActiveWindow().close()
     \[*X0,Y0*\]: Original data; \[*X1,Y1*\]: Maxima; \[*X2,Y2*\]: Minima
   - *Min. peak distance* can be used for peak width filtering
   - Use *Scientific notation* and *Decimal places* in {% include bc
-    content='Analyze|Set Measurements...' %} to improve the
+    content='Analyze|Set Measurements...'%} to improve the
     representation of values that are too big or too small to be
     displayed in the decimal form
   - Find Peaks was initially though as a [complementary

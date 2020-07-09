@@ -47,7 +47,7 @@ MB)](http://samples.fiji.sc/Celegans-5pc-17timepoints.tif).
 
 Open it in Fiji. You will get a stack, made of 41 Z-slices over 17
 time-points, each image being 240 x 295. As you can see in {% include bc
-content='Image | Properties' %} ({% include key content='Ctrl' %}+{%
+content='Image | Properties'%} ({% include key content='Ctrl' %}+{%
 include key content='Shift' %}+{% include key content='P' %}), it has a
 spatial and temporal calibration.
 
@@ -88,10 +88,10 @@ learn how to correct these defects manually.
 ![TrackMate\_DownsampledLogSegmenter.png](TrackMate_DownsampledLogSegmenter.png
 "TrackMate_DownsampledLogSegmenter.png")
 
-Launch TrackMate ({% include bc content='Plugins | Tracking | TrackMate'
-%}) and select the *C.elegans* stack as a target. Check on the first
-panel that all the spatial calibration is OK. The pixel size is about
-200 nm in XY, 1 μm in Z, and each frame is separated by 2 minutes.
+Launch TrackMate ({% include bc content='Plugins | Tracking |
+TrackMate'%}) and select the *C.elegans* stack as a target. Check on the
+first panel that all the spatial calibration is OK. The pixel size is
+about 200 nm in XY, 1 μm in Z, and each frame is separated by 2 minutes.
 
 Select the **Downsampled LoG detector**. This choice actually makes
 sense: the nuclei are about 8 μm in diameter, and with a sampling of 200

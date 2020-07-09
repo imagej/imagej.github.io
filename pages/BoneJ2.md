@@ -8,6 +8,21 @@ categories:
 description: test description
 ---
 
+{% capture includecontent %} name = BoneJ2 | software = ImageJ | logo =
+![Bonej-icon.png](/images/pages/Bonej-icon.png "Bonej-icon.png")" | author = {% include
+person content='Michaeldoube' %}, {% include person content='Rdom' %},
+{% include person content='Alessandrofelder' %} | maintainer = {%
+include person content='Michaeldoube' %}, {% include person
+content='Alessandrofelder' %} | source = {% include github
+org='bonej-org' repo='BoneJ2' %},
+[<doi:10.5281/zenodo.1427262>](https://doi.org/10.5281/zenodo.1427262) |
+released = Dec 11<sup>th</sup>, 2017 | latest version = Apr
+18<sup>th</sup>, 2019 | status = Active, Experimental
+
+{% endcapture %}
+
+{% include info-box content=includecontent %}
+
 BoneJ is a collection of skeletal biology plug-ins for ImageJ. This is
 the new experimental, modernized version of the software available
 through the ImageJ [updater](https://imagej.net/Updater). Its update

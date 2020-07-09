@@ -22,9 +22,9 @@ Threshold](Auto_Threshold "wikilink") plugin.
 **ImageJ**: requires v1.42m or newer. Download
 [Auto\_Threshold-X.Y.Z.jar](http://maven.imagej.net/service/local/artifact/maven/redirect?r=releases&g=sc.fiji&a=Auto_Threshold&v=RELEASE&e=jar)
 and copy it into the ImageJ/plugins folder and either restart ImageJ or
-run the '{% include bc content='Help | Update Menus' %}' command. After
+run the '{% include bc content='Help | Update Menus'%}' command. After
 this a new command should appear in '{% include bc content='Image |
-Adjust | Auto Local Threshold' %}'.
+Adjust | Auto Local Threshold'%}'.
 
 **Fiji**: this plugin is part of the Fiji distribution, there is no need
 to download it.

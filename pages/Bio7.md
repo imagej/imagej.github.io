@@ -8,12 +8,22 @@ categories: Related Software,Citable
 description: test description
 ---
 
-The application Bio7 is an integrated development environment for
-ecological modelling and contains powerful tools for model creation,
-scientific image analysis and statistical analysis. The application
-itself is based on an RCP-Eclipse-Environment (Rich-Client-Platform)
-which offers a huge flexibility in configuration and extensibility
-because of its plug-in structure and the possibility of customization.
+{% capture includecontent %} name = Bio7 | software = Bio7 | logo =
+![Bio7-icon.png](/images/pages/Bio7-icon.png "Bio7-icon.png")" | author = [Marcel
+Austenfeld](mailto:ed.leik-inu.vu@dlefnetsuam) | maintainer = [Marcel
+Austenfeld](mailto:ed.leik-inu.vu@dlefnetsuam) | source = {% include
+github org='Bio7' repo='bio7' %} | status = Active | website =
+http://bio7.org/
+
+{% endcapture %}
+
+{% include info-box content=includecontent %} The application Bio7 is an
+integrated development environment for ecological modelling and contains
+powerful tools for model creation, scientific image analysis and
+statistical analysis. The application itself is based on an
+RCP-Eclipse-Environment (Rich-Client-Platform) which offers a huge
+flexibility in configuration and extensibility because of its plug-in
+structure and the possibility of customization.
 
 ## Publication
 

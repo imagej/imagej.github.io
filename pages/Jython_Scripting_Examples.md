@@ -25,7 +25,7 @@ language](https://www.python.org/) designed to run on the Java platform.
   - Press {% include key content='\[' %} to bring up the [Script
     Editor](Script_Editor "wikilink").
   - Select an example Jython script from the {% include bc
-    content='Templates | \[by language\] | Python' %} menu.
+    content='Templates | \[by language\] | Python'%} menu.
   - Press {% include key content='Ctrl|R' %} to run the script\!
 
 ## The Jython interpreter plugin
@@ -34,9 +34,19 @@ The interpreter provides a screen and a prompt. Type any jython code on
 the prompt to interact with ImageJ.
 
 Launch it from {% include bc content='Plugins | Scripting | Jython
-Interpreter' %}. See [Scripting Help](Scripting_Help "wikilink") for all
+Interpreter'%}. See [Scripting Help](Scripting_Help "wikilink") for all
 keybindings, and also [Scripting
 comparisons](Scripting_comparisons "wikilink").
+
+{% capture includecontent %} Note that ImageJ also ships a unified
+Script Interpreter plugin, accessible from {% include bc
+content='Plugins | Scripting | Script Interpreter'%}. But it is
+currently beta quality, and the Python language does not work properly
+due to bugs. Once this issue is fixed, the unified Script Interpreter
+will replace the language-specific interpreters such as the Jython
+Interpreter. {% endcapture %}
+
+{% include warning-box content=includecontent %}
 
 Within the interpreter, all ImageJ, java.lang.\* and TrakEM2 classes are
 automatically imported. So creating new images and manipulating them is
@@ -83,12 +93,12 @@ To create a script for the GUI, the recommended setup is the following:
     somewhere under ImageJ plugins folder, have an underscore on the
     name, and a .py extension.
   - Run {% include bc content='Plugins | Scripting | Refresh Jython
-    scripts' %} <b>only</b> the very first time after newly creating the
+    scripts'%} <b>only</b> the very first time after newly creating the
     file under any folder or subfolder of ImageJ's plugins folder. A
     menu item will appear with its name, from which it can be run.
   - Keep editing (and saving) the file from your editor. Just select the
     menu item to execute it over and over. Or use the {% include bc
-    content='Plugins | Utilities | Find Commands...' %} window to launch
+    content='Plugins | Utilities | Find Commands...'%} window to launch
     it easily (keybinding 'l').
 
 The next time Fiji is run, it will setup all your scripts in the Plugins
@@ -2174,15 +2184,15 @@ import com.xhaus.jyson.JysonCodec as jyson
 
 The simplest way is to place the jython script file into fiji/plugins/
 folder or a subfolder, and it will appear in the menus after running
-"'{% include bc content='Plugins | Scripting | Refresh Jython Scripts'
-%}'" or "'{% include bc content='Help | Refresh Menus' %}'", or on
-restarting Fiji.
+"'{% include bc content='Plugins | Scripting | Refresh Jython
+Scripts'%}'" or "'{% include bc content='Help | Refresh Menus'%}'", or
+on restarting Fiji.
 
 If you want to have the Jython script show up in a place outside the
 Plugins menu, just put the file into an appropriate subdirectory of
 fiji/plugins/Scripts/; for example, if you put a Jython script called
 Animation\_.py into fiji/plugins/Scripts/File/New/, it will be available
-as {% include bc content='File | New | Animation' %}.
+as {% include bc content='File | New | Animation'%}.
 
 To populate an update site, the updater let the possibility to directly
 upload jython scripts as .py (or $py.class for the one that resides in

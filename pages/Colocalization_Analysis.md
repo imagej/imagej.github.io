@@ -124,7 +124,7 @@ sets of thin spirals are in dark red and dark green, and 2 thick
 prominent spirals of yellow-green and yellow. However, the yellow and
 yellow-green actually have <b>exactly the same color\!</b> You can
 verify this yourself by calling {% include bc content='File | Open
-Samples | [Spirals (Macro)](Spirals_\(Macro\) "wikilink")' %} in Fiji.
+Samples | [Spirals (Macro)](Spirals_\(Macro\) "wikilink")'%} in Fiji.
 
 ![GreenYellowSimultColourIllusion.png](GreenYellowSimultColourIllusion.png
 "GreenYellowSimultColourIllusion.png")
@@ -430,7 +430,7 @@ The [Colocalization Test](Colocalization_Test "wikilink") plugin
 performs the Costes test for statistical significance (which you should
 ALWAYS do after calculating the thresholded Manders coefficients and the
 scatterplot). It is in the menus at {% include bc content='Analyze |
-Colocalization | Colocalization Test' %}
+Colocalization | Colocalization Test'%}
 
 ![ColocTestGUI1.png](/images/pages/ColocTestGUI1.png "ColocTestGUI1.png")"
 

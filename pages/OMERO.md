@@ -8,8 +8,18 @@ categories: Related Software,Citable,SciJava,OME
 description: test description
 ---
 
-OMERO is client-server software for visualization, management and
-analysis of biological microscope images.
+{% capture includecontent %} software = OMERO | name = OMERO | logo =
+![Omero-logo.png](/images/pages/Omero-logo.png "Omero-logo.png")" | author = [Open
+Microscopy Environment](http://openmicroscopy.org/) | maintainer = [Open
+Microscopy Environment](http://openmicroscopy.org/) | source = {%
+include github org='openmicroscopy' repo='openmicroscopy' %} | status =
+active | website = http://www.openmicroscopy.org/info/omero
+
+{% endcapture %}
+
+{% include info-box-plugin content=includecontent %} OMERO is
+client-server software for visualization, management and analysis of
+biological microscope images.
 
 ## Publication
 

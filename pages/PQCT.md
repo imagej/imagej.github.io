@@ -8,7 +8,14 @@ categories: Plugins,Citable
 description: test description
 ---
 
-%Replace% TOC %Replace%
+{% capture includecontent %} name = pQCT | author = Timo Rantalainen |
+software = ImageJ/Fiji | source = {% include github org='Fiji'
+repo='PQCT' %} | released = Feb 9<sup>th</sup>, 2018 | latest version =
+3.0.0, Jun 8<sup>th</sup>, 2018 | status = stable
+
+{% endcapture %}
+
+{% include info-box content=includecontent %} %Replace% TOC %Replace%
 
 ## Summary
 
@@ -25,7 +32,7 @@ images. It's designed for the following analyses:
 
 ## Installation
 
-1\) {% include bc content='Help | Update...' %}
+1\) {% include bc content='Help | Update...'%}
 
 2\) Manage update sites
 
@@ -44,7 +51,7 @@ is available
 
 ## Distribution analysis
 
-{% include bc content='Plugins | pQCT | Distribution Analysis' %}
+{% include bc content='Plugins | pQCT | Distribution Analysis'%}
 
 The main tool for pQCT image analysis. You must open an image first
 before running this tool.
@@ -428,23 +435,23 @@ endosteal and periosteal border.
 
 ## Export Stratec Header
 
-{% include bc content='Plugins | pQCT | Export Stratec Header' %}
+{% include bc content='Plugins | pQCT | Export Stratec Header'%}
 
 Displays the metadata saved in the pQCT image currently open.
 
 ## Strip Stracted Header
 
-{% include bc content='Plugins | pQCT | Export Stratec Header' %}
+{% include bc content='Plugins | pQCT | Export Stratec Header'%}
 
 Can be used to save a new version of the given image file, where
 selected metadata fields have been stripped.
 
 ## Read Stratec File
 
-{% include bc content='Plugins | pQCT | Export Stratec Header' %}
+{% include bc content='Plugins | pQCT | Export Stratec Header'%}
 
 Use this plug-in to open Stratec pQCT images. NB {% include bc
-content='File | Open' %} or dragging the file doesn't work.
+content='File | Open'%} or dragging the file doesn't work.
 
 ## Test images
 
@@ -469,7 +476,7 @@ To easily run the test, use the provided
         \\\\.
     3.  Save the .ijm file
 2.  Open Fiji / ImageJ
-3.  {% include bc content='Plugins | Macros | Run' %}
+3.  {% include bc content='Plugins | Macros | Run'%}
 4.  Find your .ijm file
 5.  When the macro has finished, you should see the Results table
 6.  Open the resulting file with excel or open office or some other

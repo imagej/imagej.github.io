@@ -8,6 +8,19 @@ categories:
 description: test description
 ---
 
+{% capture includecontent %} name = Multi-view deconvolution plugin |
+software = ImageJ | author = Stephan Preibisch, Fernando Amat, Eugene
+Myers, Pavel Tomancak | maintainer = Stephan Preibisch | source = {%
+include github org='fiji' repo='SPIM\_Registration' %} | filename =
+SPIM\_Registration.jar | released = February 2013 | latest version =
+June 2013 | category = [SPIM
+Registration](:Category:Registration "wikilink") | website = [Stephan
+Preibisch's homepage](http://fly.mpi-cbg.de/~preibisch)
+
+{% endcapture %}
+
+{% include info-box content=includecontent %}
+
 ## Citation
 
 Please note that the SPIM registration plugin available through Fiji, is
@@ -285,8 +298,8 @@ Some tips and tricks in the next few paragraphs require to change a
 static variable in the source code that changes the behavior of the
 plugin. This is done using the **script editor** and works as follows:
 
-  - {% include bc content='File | New | Script' %}
-  - {% include bc content='Language | Beanshell' %}
+  - {% include bc content='File | New | Script'%}
+  - {% include bc content='Language | Beanshell'%}
   - type the command, e.g.
 
 <!-- end list -->

@@ -23,7 +23,7 @@ in a maximally discontinuous manner. That is, adjacent color bins are
 chosen to be as distinct from one another as possible.
 
 Like other LUTs, it is available from the {% include bc content='Image |
-Lookup Tables' %} menu.
+Lookup Tables'%} menu.
 
 The LUT called "glasbey" uses white at the first index, whereas "glasbey
 inverted" starts with black.

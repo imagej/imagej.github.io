@@ -8,9 +8,24 @@ categories: Plugins,Visualization,Citable
 description: test description
 ---
 
-\== Problems and Solutions == We work constantly on improving the Fiji
-and KNIME plugins. Help us doing so by letting us know if you encounter
-problems.
+{% capture includecontent %} name = ClearVolume | logo =
+![ClearVolumeLogo.png](/images/pages/ClearVolumeLogo.png "ClearVolumeLogo.png")" |
+software = Fiji | author = {% include person content='Jug' %}, {%
+include person content='royerloic' %}, Martin Weigert, {% include person
+content='skalarproduktraum' %} | maintainer = {% include person
+content='Jug' %} | source = {% include github org='ClearVolume'
+repo='imglib2-clearvolume' %} | status = active | category =
+[Visualization](:Category:Visualization "wikilink") | website =
+https://clearvolume.github.io/
+
+{% endcapture %}
+
+{% include info-box content=includecontent %}
+
+## Problems and Solutions
+
+We work constantly on improving the Fiji and KNIME plugins. Help us
+doing so by letting us know if you encounter problems.
 
   - **Problem:** on a Linux machine ClearVolume would not start but
     throw an ugly exception like

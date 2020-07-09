@@ -663,7 +663,7 @@ libraries that are shared across routines.
   - NB: If you subscribe to the ImageJ-dev update site, ensure that your
     Image1 version is at least 1.50a (the ImageJ-dev update site may
     bundle an outdated version of ImageJ1). To do so, use the ImageJ1
-    command {% include bc content='Help |Update ImageJ...' %}
+    command {% include bc content='Help |Update ImageJ...'%}
 
 \[ [Presentation video](https://vimeo.com/140099767/) \]
 
