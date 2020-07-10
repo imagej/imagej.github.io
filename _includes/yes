@@ -1,0 +1,1 @@
+<span class="yes">{{include.content}}</span>

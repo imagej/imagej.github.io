@@ -1,0 +1,16 @@
+<div class="sidebox-right warning" markdown="1">
+ <table class="table-info">
+        <tbody>
+            <tr>
+                <td>
+                    <p>
+                        <img src="/images/icons/40px-Warning-sign.png">
+                    </p>
+                </td>
+                <td>
+                    {{include.content}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

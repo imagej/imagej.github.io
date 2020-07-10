@@ -1,0 +1,1 @@
+<span class="platformsmenu">{{include.content}}</span>
