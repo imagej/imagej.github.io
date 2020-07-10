@@ -10,9 +10,7 @@ description: test description
 
 # Voxelization
 
-Voxelization is the process of converting a data structures that store
-geometric information in a continuous domain (such as a 3D triangular
-mesh) into a rasterized image (a discrete grid).
+Voxelization is the process of converting a data structures that store geometric information in a continuous domain (such as a 3D triangular mesh) into a rasterized image (a discrete grid).
 
 ## Instructions for voxelizing a 3D mesh in ImageJ
 
@@ -22,33 +20,16 @@ Enabled [ThreeDViewer](ThreeDViewer "wikilink") update site
 
 ### Steps
 
-1.  Launch SciView ![launch\_threedviewer.png](/images/pages/launch_threedviewer.png
-    "launch_threedviewer.png")"
-2.  Import a 3D mesh (at the time of this writing OBJ, STL, and
-    Isosurfaces taken from a 3D image opened in ImageJ, all work)
-    ![import\_obj.png](/images/pages/import_obj.png "import_obj.png")"
-3.  Convert mesh to image ![mesh\_to\_image.png](/images/pages/mesh_to_image.png
-    "mesh_to_image.png")"
-4.  Select output dimensions
-    ![mesh\_to\_image\_dimensions.png](/images/pages/mesh_to_image_dimensions.png
-    "mesh_to_image_dimensions.png")"
-5.  Inspect the result
-    ![voxelization\_output.png](/images/pages/voxelization_output.png
-    "voxelization_output.png")"
+1.  Launch SciView ![launch\_threedviewer.png](/images/pages/launch_threedviewer.png "launch_threedviewer.png")"
+2.  Import a 3D mesh (at the time of this writing OBJ, STL, and Isosurfaces taken from a 3D image opened in ImageJ, all work) ![import\_obj.png](/images/pages/import_obj.png "import_obj.png")"
+3.  Convert mesh to image ![mesh\_to\_image.png](/images/pages/mesh_to_image.png "mesh_to_image.png")"
+4.  Select output dimensions ![mesh\_to\_image\_dimensions.png](/images/pages/mesh_to_image_dimensions.png "mesh_to_image_dimensions.png")"
+5.  Inspect the result ![voxelization\_output.png](/images/pages/voxelization_output.png "voxelization_output.png")"
 
 ### Optional additional steps
 
-This voxelization procedures creates an image that represents the
-\*surface\* of the mesh. Firstly, it may be possible that the geometry
-of the surface does not voxelize well at particular resolutions,
-resulting in gaps in the output image (i.e. the result is not
-"watertight"). In these cases either try another resolution, or try
-filling in the gaps with either manual touchup, or image processing
-routines, such as dilation.
+This voxelization procedures creates an image that represents the \*surface\* of the mesh. Firstly, it may be possible that the geometry of the surface does not voxelize well at particular resolutions, resulting in gaps in the output image (i.e. the result is not "watertight"). In these cases either try another resolution, or try filling in the gaps with either manual touchup, or image processing routines, such as dilation.
 
-If a filled volume is desired, then take a watertight image (see above)
-and use the Flood Fill (3D) utility available within
-[Fiji](Fiji "wikilink") under the {% include bc
-content='Plugins|Process|Flood Fill (3D)'%}.
+If a filled volume is desired, then take a watertight image (see above) and use the Flood Fill (3D) utility available within [Fiji](Fiji "wikilink") under the {% include bc content='Plugins|Process|Flood Fill (3D)'%}.
 
 [Category:Techniques](Category:Techniques "wikilink")

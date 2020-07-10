@@ -8,40 +8,25 @@ categories: Related Software,Citable
 description: test description
 ---
 
-{% capture source %} {% include github org="InsightSoftwareConsortium"
-repo="ITK" %} {% endcapture %} {% include sidebox-right name='ITK'
-software='ITK' logo='![Itk-logo.png](/images/pages/Itk-logo.png "Itk-logo.png")"'
-author='[Insight Software Consortium](http://itk.org/)'
-maintainer='[Insight Software Consortium](http://itk.org/)'
-source=source status='Active' website='http://itk.org/' %}The Insight
-Toolkit (ITK) is a cross-platform, [open-source](open-source "wikilink")
-application development framework widely used for the development of
-image [segmentation](segmentation "wikilink") and image registration
-programs.
+
+{% capture source%}
+{% include github org='InsightSoftwareConsortium' repo='ITK' %}
+{% endcapture %}
+{% include info-box name='ITK' software='ITK' logo='![Itk-logo.png](/images/pages/Itk-logo.png "Itk-logo.png")"' author=' [Insight Software Consortium](http://itk.org/) ' maintainer=' [Insight Software Consortium](http://itk.org/) ' source=source status='Active' website='http://itk.org/' %}The Insight Toolkit (ITK) is a cross-platform, [open-source](open-source "wikilink") application development framework widely used for the development of image [segmentation](segmentation "wikilink") and image registration programs.
 
 # ITK integration with ImageJ
 
-Although ITK is a C++ application, many ITK functions are available in
-ImageJ through the [SimpleITK](http://www.simpleitk.org/) Java
-compatibility layer.
+Although ITK is a C++ application, many ITK functions are available in ImageJ through the [SimpleITK](http://www.simpleitk.org/) Java compatibility layer.
 
-Enabling this functionality in ImageJ is simply a matter of turning on
-the {% include list-of-update-sites content='ImageJ-ITK update site' %}.
-Note that this will trigger a large download, as it requires the
-SimpleITK native library (up to a few hundred MB).
+Enabling this functionality in ImageJ is simply a matter of turning on the {% include list-of-update-sites content='ImageJ-ITK update site' %}. Note that this will trigger a large download, as it requires the SimpleITK native library (up to a few hundred MB).
 
 ## What's on the update site?
 
-SimpleITK 0.90 is distributed with this update. After update all
-SimpleITK classes can be called from the script editor.
+SimpleITK 0.90 is distributed with this update. After update all SimpleITK classes can be called from the script editor.
 
-When using `@itkImage` [parameters](Script_parameters "wikilink") in
-scripts, ImageJ `Dataset` objects will be automatically converted to
-SimpleITK `Image` objects.
+When using `@itkImage` [parameters](Script_parameters "wikilink") in scripts, ImageJ `Dataset` objects will be automatically converted to SimpleITK `Image` objects.
 
-There are several templates in the [Script
-Editor](Script_Editor "wikilink") demonstrating ITK use. The following
-example shows how to perform Otsu multilevel threshold using SimpleITK.
+There are several templates in the [Script Editor](Script_Editor "wikilink") demonstrating ITK use. The following example shows how to perform Otsu multilevel threshold using SimpleITK.
 
 ``` python
 # @itkImage image
@@ -57,12 +42,9 @@ output = otsu.execute(image, 2, 0, 255, True)
 
 ## Developer resources
 
-  - [GitHub (we welcome pull
-    requests)](https://github.com/imagej/imagej-itk/)
-  - [An ImageJ2 Op that uses
-    SimpleITK](https://github.com/imagej/imagej-itk/tree/master/src/main/java/net/imagej/itk/ops)
-  - [An ImageJ2 command (plugin that adds a menu item) for the
-    Op.](https://github.com/imagej/imagej-itk/tree/master/src/main/java/net/imagej/itk/commands)
+  - [GitHub (we welcome pull requests)](https://github.com/imagej/imagej-itk/)
+  - [An ImageJ2 Op that uses SimpleITK](https://github.com/imagej/imagej-itk/tree/master/src/main/java/net/imagej/itk/ops)
+  - [An ImageJ2 command (plugin that adds a menu item) for the Op.](https://github.com/imagej/imagej-itk/tree/master/src/main/java/net/imagej/itk/commands)
 
 ## Publication
 
@@ -72,8 +54,6 @@ To cite ITK, please use the following publication:
 
 See also:
 
-  - [How do I cite the use of ITK in a
-    publication?](https://itk.org/Wiki/ITK/FAQ#How_do_I_cite_the_use_of_ITK_in_a_publication.3F)
+  - [How do I cite the use of ITK in a publication?](https://itk.org/Wiki/ITK/FAQ#How_do_I_cite_the_use_of_ITK_in_a_publication.3F)
 
-[Category:Related Software](Category:Related_Software "wikilink")
-[Category:Citable](Category:Citable "wikilink")
+[Category:Related Software](Category:Related_Software "wikilink") [Category:Citable](Category:Citable "wikilink")

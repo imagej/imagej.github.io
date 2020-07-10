@@ -8,27 +8,21 @@ categories:
 description: test description
 ---
 
-{% capture author %} {% include person content="Twagner" %} {%
-endcapture %}
 
-{% capture maintainer %} {% include person content="Twagner" %} {%
-endcapture %} {% include sidebox-right software='Fiji/ImageJ'
-name='Ellipse Splitting Plugin' author=author maintainer=maintainer
-filename='ij-ellipsesplit.jar
-[\[1](https://github.com/thorstenwagner/ij-ellipsesplit/releases/latest)\]'
-source='Github
-[\[2](https://github.com/thorstenwagner/ij-ellipsesplit)\]'
-version='v0.4.0 (15 May 2016)' status='active' %}
+{% capture author%}
+{% include person content='Twagner' %}
+{% endcapture %}
+
+{% capture maintainer%}
+{% include person content='Twagner' %}
+{% endcapture %}
+{% include info-box software='Fiji/ImageJ' name='Ellipse Splitting Plugin' author=author maintainer=maintainer filename='ij-ellipsesplit.jar [\[1](https://github.com/thorstenwagner/ij-ellipsesplit/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-ellipsesplit) \]' latest-version='v0.4.0 (15 May 2016)' status='active' %}
 
 ## Purpose
 
-The ellipse splitting plugin splits binary objects which could
-approximated by an ellipse. The used ellipse fitting algorithm was
-proposed in
+The ellipse splitting plugin splits binary objects which could approximated by an ellipse. The used ellipse fitting algorithm was proposed in
 
-*A. Fitzgibbon, M. Pilu, and R. B. Fisher, “Direct least square fitting
-of ellipses,” IEEE Trans. Pattern Anal. Mach. Intell., vol. 21, no. 5,
-pp. 476–480, May 1999.*
+*A. Fitzgibbon, M. Pilu, and R. B. Fisher, “Direct least square fitting of ellipses,” IEEE Trans. Pattern Anal. Mach. Intell., vol. 21, no. 5, pp. 476–480, May 1999.*
 
 Here we used the implementation of [BoneJ](https://fiji.sc/BoneJ).
 
@@ -47,48 +41,31 @@ The generall approach of the ellipse fitting plugin is as follows:
 
 Suppose you have the following input image:
 
-![Ellipsesplit\_input.png](/images/pages/Ellipsesplit_input.png
-"Ellipsesplit_input.png")"
+![Ellipsesplit\_input.png](/images/pages/Ellipsesplit_input.png "Ellipsesplit_input.png")"
 
-Then the watershed approach (*Process -\> Binary -\> Watershed*) would
-give this result:
+Then the watershed approach (*Process -\> Binary -\> Watershed*) would give this result:
 
-![Ellipsesplit\_watershed.png](/images/pages/Ellipsesplit_watershed.png
-"Ellipsesplit_watershed.png")"
+![Ellipsesplit\_watershed.png](/images/pages/Ellipsesplit_watershed.png "Ellipsesplit_watershed.png")"
 
-The ellipse splitting plugin applied to the input image will combine the
-watershed result and direct ellipse fitting. This leads to the following
-result:
+The ellipse splitting plugin applied to the input image will combine the watershed result and direct ellipse fitting. This leads to the following result:
 
-![Ellipsesplit\_result.png](/images/pages/Ellipsesplit_result.png
-"Ellipsesplit_result.png")"
+![Ellipsesplit\_result.png](/images/pages/Ellipsesplit_result.png "Ellipsesplit_result.png")"
 
 Furthermore it outputs several important features:
 
-![Ellipsesplit\_resultstable.png](/images/pages/Ellipsesplit_resultstable.png
-"Ellipsesplit_resultstable.png")"
+![Ellipsesplit\_resultstable.png](/images/pages/Ellipsesplit_resultstable.png "Ellipsesplit_resultstable.png")"
 
 ## Parameters
 
-![GUI of Ellipse Split Plugin](/images/pages/EllipseSplit.png
-"GUI of Ellipse Split Plugin")"
+![GUI of Ellipse Split Plugin](/images/pages/EllipseSplit.png "GUI of Ellipse Split Plugin")"
 
-**Binary splitted image:** If set to "Use standard watershed" it will
-use ImageJ's watershed technique to split the binary object. If there
-are better techniques for splitting available, you could select here the
-binary image splitted by that technique.
+**Binary splitted image:** If set to "Use standard watershed" it will use ImageJ's watershed technique to split the binary object. If there are better techniques for splitting available, you could select here the binary image splitted by that technique.
 
-**Add to manager:** (true/false) If true, the ellipses will be added to
-the ROI manager.
+**Add to manager:** (true/false) If true, the ellipses will be added to the ROI manager.
 
-**Add to results table:** (true/false) If true, some geometrical
-features of the ellipses will be added to the results table.
+**Add to results table:** (true/false) If true, some geometrical features of the ellipses will be added to the results table.
 
-**Overlap threshold in %:** If the image is oversegmentated, two
-ellipses could belong the same real object. If that is the case, it is
-likely that the ellipses are strongly overlapping. In those cases the
-ellipses will be merged. The *overlap threshold in %* is the proportion
-of one ellipse containing another ellipse.
+**Overlap threshold in %:** If the image is oversegmentated, two ellipses could belong the same real object. If that is the case, it is likely that the ellipses are strongly overlapping. In those cases the ellipses will be merged. The *overlap threshold in %* is the proportion of one ellipse containing another ellipse.
 
 **Major axis length:** The length of major axis.
 
@@ -98,17 +75,10 @@ of one ellipse containing another ellipse.
 
 ## Installation
 
-Simply turn on the [Biomedgroup update
-site](https://fiji.sc/How_to_follow_a_3rd_party_update_site), which
-includes the ellipse splitting plugin.
+Simply turn on the [Biomedgroup update site](https://fiji.sc/How_to_follow_a_3rd_party_update_site), which includes the ellipse splitting plugin.
 
-If you use ImageJ just copy the ij-ellipessplit.jar file in your plugins
-folder and copy the
-[GPCJ 2.2.0](http://sourceforge.net/projects/geom-java/files/gpcj/) and
-the latest [ij-blob](https://fiji.sc/IJ_Blob) jar file into the
-plugins/jars folder.
+If you use ImageJ just copy the ij-ellipessplit.jar file in your plugins folder and copy the [GPCJ 2.2.0](http://sourceforge.net/projects/geom-java/files/gpcj/) and the latest [ij-blob](https://fiji.sc/IJ_Blob) jar file into the plugins/jars folder.
 
 ## How to cite
 
-Please get the lastest DOI for this plugin here:
-https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-ellipsesplit
+Please get the lastest DOI for this plugin here: https://zenodo.org/badge/latestdoi/18649/thorstenwagner/ij-ellipsesplit

@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [2014-01-25 - JSLIC Superpixels algorithm via
-    CMP-BIA](2014-01-25_-_JSLIC_Superpixels_algorithm_via_CMP-BIA "wikilink")
+1.  REDIRECT [2014-01-25 - JSLIC Superpixels algorithm via CMP-BIA](2014-01-25_-_JSLIC_Superpixels_algorithm_via_CMP-BIA "wikilink")

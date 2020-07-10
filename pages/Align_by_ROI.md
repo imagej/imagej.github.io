@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT
-    [Align\_Image\_by\_line\_ROI](Align_Image_by_line_ROI "wikilink")
+1.  REDIRECT [Align\_Image\_by\_line\_ROI](Align_Image_by_line_ROI "wikilink")

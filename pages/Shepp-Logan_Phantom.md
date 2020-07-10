@@ -8,14 +8,10 @@ categories: Plugins
 description: test description
 ---
 
-{% capture source %} {% include github org="fiji" repo="SheppLogan"
-source="SheppLogan\_.java" %} {% endcapture %} {% include sidebox-right
-software='ImageJ' name='Shepp-Logan Phantom' maintainer='Philippe
-Thévenaz' author='Philippe Thévenaz' source=source
-released='16/09/2010' version='16/09/2010' status=''
-category='[:Category:Plugins](:Category:Plugins "wikilink")'
-website='http://bigwww.epfl.ch/thevenaz/shepplogan/' %}This plugin is
-described in detail on the [BIG
-website](http://bigwww.epfl.ch/thevenaz/shepplogan/).
+
+{% capture source%}
+{% include github org='fiji' repo='SheppLogan' source='SheppLogan\_.java' %}
+{% endcapture %}
+{% include info-box software='ImageJ' name='Shepp-Logan Phantom' maintainer='Philippe Thévenaz' author='Philippe Thévenaz' source=source released='16/09/2010' latest-version='16/09/2010' status='' category='[:Category:Plugins](:Category:Plugins "wikilink")' website='http://bigwww.epfl.ch/thevenaz/shepplogan/' %}This plugin is described in detail on the [BIG website](http://bigwww.epfl.ch/thevenaz/shepplogan/).
 
 [Category:Plugins](Category:Plugins "wikilink")

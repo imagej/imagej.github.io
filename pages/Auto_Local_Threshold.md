@@ -8,53 +8,33 @@ categories: Plugins,Segmentation
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Auto\_Threshold' %}This
-plugin binarises 8-bit images using various **local** thresholding
-methods. By 'local' here is meant that the threshold is computed for
-each pixel according to the image characteristings within a window of
-radius **r** (in pixel units) around it. The segmented phase is always
-shown as white (255).
+{% include component-stats content=':sc.fiji:Auto\_Threshold' %}This plugin binarises 8-bit images using various **local** thresholding methods. By 'local' here is meant that the threshold is computed for each pixel according to the image characteristings within a window of radius **r** (in pixel units) around it. The segmented phase is always shown as white (255).
 
-For **global** thresholding rather than local, see the [Auto
-Threshold](Auto_Threshold "wikilink") plugin.
+For **global** thresholding rather than local, see the [Auto Threshold](Auto_Threshold "wikilink") plugin.
 
 ## Installation
 
-**ImageJ**: requires v1.42m or newer. Download
-[Auto\_Threshold-X.Y.Z.jar](http://maven.imagej.net/service/local/artifact/maven/redirect?r=releases&g=sc.fiji&a=Auto_Threshold&v=RELEASE&e=jar)
-and copy it into the ImageJ/plugins folder and either restart ImageJ or
-run the '{% include bc content='Help | Update Menus'%}' command. After
-this a new command should appear in '{% include bc content='Image |
-Adjust | Auto Local Threshold'%}'.
+**ImageJ**: requires v1.42m or newer. Download [Auto\_Threshold-X.Y.Z.jar](http://maven.imagej.net/service/local/artifact/maven/redirect?r=releases&g=sc.fiji&a=Auto_Threshold&v=RELEASE&e=jar) and copy it into the ImageJ/plugins folder and either restart ImageJ or run the '{% include bc content='Help | Update Menus'%}' command. After this a new command should appear in '{% include bc content='Image | Adjust | Auto Local Threshold'%}'.
 
-**Fiji**: this plugin is part of the Fiji distribution, there is no need
-to download it.
+**Fiji**: this plugin is part of the Fiji distribution, there is no need to download it.
 
 ## Use
 
 **Method** selects the algorithm to be applied (detailed below).
 
-The **radius** sets the radius of the local domain over which the
-threshold will be computed.
+The **radius** sets the radius of the local domain over which the threshold will be computed.
 
-**White object on black background** sets to white the pixels with
-values above the threshold value (otherwise, it sets to white the values
-less or equal to the threshold).
+**White object on black background** sets to white the pixels with values above the threshold value (otherwise, it sets to white the values less or equal to the threshold).
 
-**Special parameters 1 and 2** sets specific values for each method.
-Those are detailed below for each method.
+**Special parameters 1 and 2** sets specific values for each method. Those are detailed below for each method.
 
-It you are processing a stack, one additional option is available:
-**Stack** can be used to process all the slices.
+It you are processing a stack, one additional option is available: **Stack** can be used to process all the slices.
 
 ## Available methods
 
 ### Try all
 
-Which method segments your data best? You can attempt to answer this
-question using the **Try all** option. This produces a montage with
-results from all the methods, so one can explore how the different
-algorithms perform on an image or stack.
+Which method segments your data best? You can attempt to answer this question using the **Try all** option. This produces a montage with results from all the methods, so one can explore how the different algorithms perform on an image or stack.
 
 ![Epith.png](/images/pages/Epith.png "Epith.png")"
 
@@ -64,88 +44,46 @@ Original image
 
 Try all methods.
 
-When processing stacks with many slices, the montages can become very
-large (several times the original stack size) and one risks running out
-of ram. A popup window will appear (when stacks have more than 25
-slices) to confirm whether the procedure should display the stack
-montages.
+When processing stacks with many slices, the montages can become very large (several times the original stack size) and one risks running out of ram. A popup window will appear (when stacks have more than 25 slices) to confirm whether the procedure should display the stack montages.
 
 ### Bernsen
 
-Implements Bernsen's thresholding method. Note that this implementation
-uses circular windows instead of rectangular in the original.
+Implements Bernsen's thresholding method. Note that this implementation uses circular windows instead of rectangular in the original.
 
-**Parameter 1**: is the *contrast threshold*. The default value is 15.
-Any number different than 0 will change the default value.
+**Parameter 1**: is the *contrast threshold*. The default value is 15. Any number different than 0 will change the default value.
 
 **Parameter 2**: not used, ignored.
 
-The method uses a user-provided *contrast threshold*. If the *local
-contrast* (max-min) is above or equal to the *contrast threshold*, the
-*threshold* is set at the *local midgrey value* (the mean of the minimum
-and maximum grey values in the local window). If the *local contrast* is
-below the *contrast threshold* the neighbourhood is considered to
-consist only of one class and the pixel is set to object or background
-depending on the value of the midgrey.
+The method uses a user-provided *contrast threshold*. If the *local contrast* (max-min) is above or equal to the *contrast threshold*, the *threshold* is set at the *local midgrey value* (the mean of the minimum and maximum grey values in the local window). If the *local contrast* is below the *contrast threshold* the neighbourhood is considered to consist only of one class and the pixel is set to object or background depending on the value of the midgrey.
 
 `if ( local_contrast < contrast_threshold )`  
 ` pixel = ( mid_gray >= 128 ) ? object :  background`  
 `else`  
 ` pixel = ( pixel >= mid_gray ) ? object : background`
 
-  - 
-{% capture includecontent %} last = Bernsen | first = J | year = 1986 |
-journal = Proc. of the 8th Int. Conf. on Pattern Recognition | title =
-Dynamic Thresholding of Grey-Level Images
+  - {% include citation last='Bernsen' first='J' year='1986' journal='Proc. of the 8th Int. Conf. on Pattern Recognition' title='Dynamic Thresholding of Grey-Level Images' %}
 
-{% endcapture %}
+<!-- end list -->
 
-{% include citation content=includecontent %}
+  - {% include citation last='Sezgin' first='M' last2='Sankur' first2='B' year='2004' journal='Journal of Electronic Imaging' title='Survey over Image Thresholding Techniques and Quantitative Performance Evaluation' volume='13(1)' pages='146-165' url='http://webdocs.cs.ualberta.ca/\~nray1/CMPUT605/track3\_papers/Threshold\_survey.pdf' %}
 
-  - 
-{% capture includecontent %} last = Sezgin | first = M | last2 = Sankur
-| first2 = B | year = 2004 | journal = Journal of Electronic Imaging |
-title = Survey over Image Thresholding Techniques and Quantitative
-Performance Evaluation | volume = 13(1) | pages = 146-165 | url =
-http://webdocs.cs.ualberta.ca/~nray1/CMPUT605/track3_papers/Threshold_survey.pdf
-
-{% endcapture %}
-
-{% include citation content=includecontent %}
-
-Based on ME Celebi's fourier\_0.8 routines
-[1](http://sourceforge.net/projects/fourier-ipal) and
-[2](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
+Based on ME Celebi's fourier\_0.8 routines [1](http://sourceforge.net/projects/fourier-ipal) and [2](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
 
 ### Contrast
 
-Based on a simple contrast toggle. Sets the pixel value to either white
-(255) or black (0) depending on whether its current value is closest to
-the local maximum or minimum respectively. The procedure is an extreme
-case of Toggle Contrast Enhancement, see for example:
+Based on a simple contrast toggle. Sets the pixel value to either white (255) or black (0) depending on whether its current value is closest to the local maximum or minimum respectively. The procedure is an extreme case of Toggle Contrast Enhancement, see for example:
 
-  - 
-{% capture includecontent %} last = Soille | first = P | year = 2004 |
-title = Morphological Image Analysis: Principles and applications.
-Springer | pages = 259
+  - {% include citation last='Soille' first='P' year='2004' title='Morphological Image Analysis: Principles and applications. Springer' pages='259' %}
 
-{% endcapture %}
-
-{% include citation content=includecontent %}
-
-This procedure does not have user-provided parameters other than the
-kernel radius.
+This procedure does not have user-provided parameters other than the kernel radius.
 
 ### Mean
 
-This selects the threshold as the mean of the local greyscale
-distribution. A variation of this method uses the mean - C, where C is a
-constant.
+This selects the threshold as the mean of the local greyscale distribution. A variation of this method uses the mean - C, where C is a constant.
 
 `pixel = ( pixel > mean - c ) ? object : background`
 
-**Parameter 1**: is the *C value*. The default value is 0. Any other
-number will change the default value.
+**Parameter 1**: is the *C value*. The default value is 0. Any other number will change the default value.
 
 **Parameter 2**: not used, ignored.
 
@@ -153,14 +91,11 @@ http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm
 
 ### Median
 
-This selects the threshold as the median of the local greyscale
-distribution. A variation of this method uses the median - C, where C is
-a constant.
+This selects the threshold as the median of the local greyscale distribution. A variation of this method uses the median - C, where C is a constant.
 
 `pixel = ( pixel > median - c ) ? object : background`
 
-**Parameter 1**: is the *C value*. The default value is 0. Any other
-number will change the default value.
+**Parameter 1**: is the *C value*. The default value is 0. Any other number will change the default value.
 
 **Parameter 2**: not used, ignored.
 
@@ -168,14 +103,11 @@ http://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm
 
 ### MidGrey
 
-This selects the threshold as the mid-grey of the local greyscale
-distribution (i.e. (max + min)/2. A variation of this method uses the
-mid-grey - C, where C is a constant.
+This selects the threshold as the mid-grey of the local greyscale distribution (i.e. (max + min)/2. A variation of this method uses the mid-grey - C, where C is a constant.
 
 `pixel = ( pixel > ( ( max + min ) / 2 ) - c ) ? object : background`
 
-**Parameter 1**: is the *C value*. The default value is 0. Any other
-number will change the default value.
+**Parameter 1**: is the *C value*. The default value is 0. Any other number will change the default value.
 
 **Parameter 2**: not used, ignored.
 
@@ -187,117 +119,54 @@ Implements Niblack's thresholding method:
 
 `pixel = ( pixel >  mean + k * standard_deviation - c) ? object : background`
 
-**Parameter 1**: is the *k value*. The default value is 0.2 for bright
-objects and -0.2 for dark objects. Any other number than 0 will change
-the default value.
+**Parameter 1**: is the *k value*. The default value is 0.2 for bright objects and -0.2 for dark objects. Any other number than 0 will change the default value.
 
-**Parameter 2**: is the *C value*. This is an offset with a default
-value of 0. Any other number than 0 will change its value. This
-parameter was added in version 1.3 and is not part of the original
-implementation of the algorithm. The original algorithm is applied when
-C = 0.
+**Parameter 2**: is the *C value*. This is an offset with a default value of 0. Any other number than 0 will change its value. This parameter was added in version 1.3 and is not part of the original implementation of the algorithm. The original algorithm is applied when C = 0.
 
-  - 
-{% capture includecontent %} last = Niblack | first = W | year = 1986 |
-journal = | title = An introduction to Digital Image Processing,
-Prentice-Hall
+  - {% include citation last='Niblack' first='W' year='1986' journal='' title='An introduction to Digital Image Processing, Prentice-Hall' %}
 
-{% endcapture %}
-
-{% include citation content=includecontent %}
-
-Ported from ME Celebi's fourier\_0.8 routines
-[3](http://sourceforge.net/projects/fourier-ipal) and
-[4](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
+Ported from ME Celebi's fourier\_0.8 routines [3](http://sourceforge.net/projects/fourier-ipal) and [4](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
 
 ### Otsu
 
-Implements a local version of Otsu's global threshold clustering. The
-algorithm searches for the threshold that minimizes the intra-class
-variance, defined as a weighted sum of variances of the two classes. The
-local set is a circular ROI and the central pixel is tested against the
-Otsu threshold found for that region.
+Implements a local version of Otsu's global threshold clustering. The algorithm searches for the threshold that minimizes the intra-class variance, defined as a weighted sum of variances of the two classes. The local set is a circular ROI and the central pixel is tested against the Otsu threshold found for that region.
 
-  - 
-{% capture includecontent %} last = Otsu | first = N | year = 1979 |
-journal = IEEE Trans. Sys., Man., Cyber. | url =
-http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?&arnumber=4310076 |
-title = A threshold selection method from gray-level histograms | volume
-= 9 | pages = 62-66 | doi = 10.1109/TSMC.1979.4310076
+  - {% include citation last='Otsu' first='N' year='1979' journal='IEEE Trans. Sys., Man., Cyber.' url='http://ieeexplore.ieee.org/xpl/freeabs\_all.jsp?\&arnumber=4310076' title='A threshold selection method from gray-level histograms' volume='9' pages='62-66' doi='10.1109/TSMC.1979.4310076' %}
 
-{% endcapture %}
-
-{% include citation content=includecontent %}
-
-See also the [Wikipedia article on Otsu's
-method](wikipedia:Otsu's_method "wikilink").
+See also the [Wikipedia article on Otsu's method](wikipedia:Otsu's_method "wikilink").
 
 Ported from C++ code by Jordan Bevik.
 
 ### Phansalkar
 
-This is a modification of Sauvola's thresholding method to deal with low
-contrast images.
+This is a modification of Sauvola's thresholding method to deal with low contrast images.
 
-  - 
-{% capture includecontent %} last = Phansalskar | first = N | last2 =
-More | first2 = S | last3 = Sabale | first3 = A | last4 = Joshi | first4
-= M | year = 2011 | journal = International Conference on Communications
-and Signal Processing (ICCSP) | url =
-https://ieeexplore.ieee.org/document/5739305/ | pages = 218-220 |
-title = Adaptive local thresholding for detection of nuclei in diversity
-stained cytology images. | doi = 10.1109/ICCSP.2011.5739305
-
-{% endcapture %}
-
-{% include citation content=includecontent %}
+  - {% include citation last='Phansalskar' first='N' last2='More' first2='S' last3='Sabale' first3='A' last4='Joshi' first4='M' year='2011' journal='International Conference on Communications and Signal Processing (ICCSP)' url='https://ieeexplore.ieee.org/document/5739305/' pages='218-220' title='Adaptive local thresholding for detection of nuclei in diversity stained cytology images.' doi='10.1109/ICCSP.2011.5739305' %}
 
 In this method, the threshold t is computed as:
 
 ` t = mean * (1 + p * exp(-q * mean) + k * ((stdev / r) - 1))`
 
-where mean and stdev are the local mean and standard deviation
-respectively. Phansalkar recommends *k* = 0.25, *r* = 0.5, *p* = 2 and
-*q* = 10. In this plugin, *k* and *r* are the parameters 1 and 2
-respectively, but the values of *p* and *q* are fixed.
+where mean and stdev are the local mean and standard deviation respectively. Phansalkar recommends *k* = 0.25, *r* = 0.5, *p* = 2 and *q* = 10. In this plugin, *k* and *r* are the parameters 1 and 2 respectively, but the values of *p* and *q* are fixed.
 
-**Parameter 1**: is the *k value*. The default value is 0.25. Any other
-number than 0 will change its value.
+**Parameter 1**: is the *k value*. The default value is 0.25. Any other number than 0 will change its value.
 
-**Parameter 2**: is the *r value*. The default value is 0.5. This value
-is different from Sauvola's because it uses the normalised intensity of
-the image. Any other number than 0 will change its value.
+**Parameter 2**: is the *r value*. The default value is 0.5. This value is different from Sauvola's because it uses the normalised intensity of the image. Any other number than 0 will change its value.
 
-Implemented from Phansalkar's paper description, although this version
-uses a circular rather than rectangular local window.
+Implemented from Phansalkar's paper description, although this version uses a circular rather than rectangular local window.
 
 ### Sauvola
 
-Implements Sauvola's thresholding method, which is a variation of
-Niblack's method
+Implements Sauvola's thresholding method, which is a variation of Niblack's method
 
 `pixel = ( pixel > mean * ( 1 + k * ( standard_deviation / r - 1 ) ) ) ? object : background`
 
-**Parameter 1**: is the *k value*. The default value is 0.5. Any other
-number than 0 will change the default value.
+**Parameter 1**: is the *k value*. The default value is 0.5. Any other number than 0 will change the default value.
 
-**Parameter 2**: is the *r value*. The default value is 128. Any other
-number than 0 will change the default value
+**Parameter 2**: is the *r value*. The default value is 128. Any other number than 0 will change the default value
 
-  - 
-{% capture includecontent %} last = Sauvola | first = J | last2 =
-Pietaksinen | first2 = M | year = 2000 | journal = Pattern Recognition |
-title = Adaptive Document Image Binarization | volume = 33(2) | pages =
-225-236 |url =
-http://www.ee.oulu.fi/research/mvmp/mvg/files/pdf/pdf_24.pdf
+  - {% include citation last='Sauvola' first='J' last2='Pietaksinen' first2='M' year='2000' journal='Pattern Recognition' title='Adaptive Document Image Binarization' volume='33(2)' pages='225-236' url='http://www.ee.oulu.fi/research/mvmp/mvg/files/pdf/pdf\_24.pdf' %}
 
-{% endcapture %}
+Ported from ME Celebi's fourier\_0.8 routines [5](http://sourceforge.net/projects/fourier-ipal) and [6](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
 
-{% include citation content=includecontent %}
-
-Ported from ME Celebi's fourier\_0.8 routines
-[5](http://sourceforge.net/projects/fourier-ipal) and
-[6](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
-
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Segmentation](Category:Segmentation "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Segmentation](Category:Segmentation "wikilink")

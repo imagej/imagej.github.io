@@ -8,23 +8,13 @@ categories: Tutorials,ImageJ2,Development,Ops
 description: test description
 ---
 
-{% include develop-menu content='tutorials' %}{% include toc %}This
-tutorial is designed to guide developers through the options, processes
-and motivations for adding Ops outside the core {% include github
-org='imagej' repo='imagej-ops' label='imagej-ops' %} project. Because
-this tutorial caters to external developers, in this tutorial we show
-how a [BAR](BAR "wikilink") function could be converted to an Op.
+{% include develop-menu content='tutorials' %}{% include toc%}This tutorial is designed to guide developers through the options, processes and motivations for adding Ops outside the core {% include github org='imagej' repo='imagej-ops' label='imagej-ops' %} project. Because this tutorial caters to external developers, in this tutorial we show how a [BAR](BAR "wikilink") function could be converted to an Op.
 
 # Make your first Op
 
-At the most fundamental level, an Op is a SciJava
-[Plugin](https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/plugin/Plugin.java)
-encapsulating a piece of functionality, which can be discovered and used
-by a central
-[OpService](https://github.com/imagej/imagej-ops/blob/imagej-ops-0.18.0/src/main/java/net/imagej/ops/OpService.java).
+At the most fundamental level, an Op is a SciJava [Plugin](https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/plugin/Plugin.java) encapsulating a piece of functionality, which can be discovered and used by a central [OpService](https://github.com/imagej/imagej-ops/blob/imagej-ops-0.18.0/src/main/java/net/imagej/ops/OpService.java).
 
-At a minimum, creating an Op requires two pieces - an interface, and an
-implementation
+At a minimum, creating an Op requires two pieces - an interface, and an implementation
 
 ## Create your Interface
 
@@ -89,13 +79,11 @@ public class DefaultGCD implements GCD extends AbstractOp {
 }
 ```
 
-[On
-GitHub](https://github.com/tferr/Scripts/blob/master/BAR/src/main/java/bar/DefaultGCD.java)
+[On GitHub](https://github.com/tferr/Scripts/blob/master/BAR/src/main/java/bar/DefaultGCD.java)
 
 ## Use your Op
 
-With these two components, you can start using your Op - for example, in
-the [script editor](Scripting "wikilink"):
+With these two components, you can start using your Op - for example, in the [script editor](Scripting "wikilink"):
 
 ``` python
 # @OpService ops
@@ -122,10 +110,7 @@ print(ops.run("gcf", 20, 7))
 
 # Group your Ops in a Namespace
 
-Calling our Ops by name is not type-safe, and importing each interface
-is tedious. If you are going to provide a collection of Ops, a useful
-way to package them is within a custom
-[Namespace](http://javadoc.scijava.org/ImageJ/net/imagej/ops/Namespace.html).
+Calling our Ops by name is not type-safe, and importing each interface is tedious. If you are going to provide a collection of Ops, a useful way to package them is within a custom [Namespace](http://javadoc.scijava.org/ImageJ/net/imagej/ops/Namespace.html).
 
 ## Create your Interface(s)
 
@@ -182,17 +167,13 @@ public class BAR extends AbstractNamespace {
 }
 ```
 
-[On
-GitHub](https://github.com/tferr/Scripts/blob/master/BAR/src/main/java/bar/BAR.java)
+[On GitHub](https://github.com/tferr/Scripts/blob/master/BAR/src/main/java/bar/BAR.java)
 
 ## Implement your Op(s)
 
-The implementation is essentially the same as with single Ops, although
-we do have to update our class references.
+The implementation is essentially the same as with single Ops, although we do have to update our class references.
 
-Since the implementations are not accessed directly typically, whether
-they are grouped as nested classes or provided individually is less
-important than for the interfaces.
+Since the implementations are not accessed directly typically, whether they are grouped as nested classes or provided individually is less important than for the interfaces.
 
 ``` java
 package bar;
@@ -251,8 +232,7 @@ print(bar.gcd(20, 15))
 
 This is especially useful in environments with code completion.
 
-Namespaces also present an easy way for users to find information about
-available functionality using the base Help ops:
+Namespaces also present an easy way for users to find information about available functionality using the base Help ops:
 
 ``` python
 # @OpService ops
@@ -266,16 +246,9 @@ print(ops.help(bar))
 
 ## Create a helper service for your Namespace
 
-SciJava
-[Services](https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/service/Service.java)
-are a general workhorse in a given SciJava context. There is a single
-instance of each Service created per context, so they are a common
-container for static utility style methods.
+SciJava [Services](https://github.com/scijava/scijava-common/blob/scijava-common-2.47.0/src/main/java/org/scijava/service/Service.java) are a general workhorse in a given SciJava context. There is a single instance of each Service created per context, so they are a common container for static utility style methods.
 
-When developing an external Namespace, an immediate benefit to creating
-a corresponding Service is that it provides an initialization hook for
-registering your new Namespace outside the Ops framework - in
-particular, with the SCriptService:
+When developing an external Namespace, an immediate benefit to creating a corresponding Service is that it provides an initialization hook for registering your new Namespace outside the Ops framework - in particular, with the SCriptService:
 
 ``` java
 
@@ -307,8 +280,7 @@ public class BARService extends AbstractService implements ImageJService {
 }
 ```
 
-[On
-GitHub](https://github.com/tferr/Scripts/blob/master/BAR/src/main/java/bar/BARService.java)
+[On GitHub](https://github.com/tferr/Scripts/blob/master/BAR/src/main/java/bar/BARService.java)
 
 Now we can drop package prefixes when using our Namespace in scripts:
 
@@ -322,9 +294,7 @@ print(ops.help(bar))
 
 ## Distribute scripts demonstrating how your Ops should be used
 
-The ImageJ [script editor](Scripting "wikilink") automatically collects
-scripts located in `src/main/resources/script_templates`. For example,
-if we create a file:
+The ImageJ [script editor](Scripting "wikilink") automatically collects scripts located in `src/main/resources/script_templates`. For example, if we create a file:
 
 `src/main/resources/script_templates/BAR/GCD.py`
 
@@ -338,33 +308,21 @@ with contents:
 print("Greatest common divisor of " + str(a) + " and " + str(b) + " is: " + str(bar.gcd(a, b)))
 ```
 
-[On
-GitHub](https://github.com/tferr/Scripts/blob/master/BAR/src/main/resources/script_templates/BAR/GCD.py)
+[On GitHub](https://github.com/tferr/Scripts/blob/master/BAR/src/main/resources/script_templates/BAR/GCD.py)
 
-Then users will be able to select `Templates > BAR > GCD` from the
-script editor window, to automatically load the script and select the
-correct script language (python in this case).
+Then users will be able to select `Templates > BAR > GCD` from the script editor window, to automatically load the script and select the correct script language (python in this case).
 
-This is an easy way to provide a starting point for development using
-your Ops.
+This is an easy way to provide a starting point for development using your Ops.
 
 # Advanced Topics
 
-There are many conveniences in Op development that have not been covered
-in this tutorial, including:
+There are many conveniences in Op development that have not been covered in this tutorial, including:
 
   - Create additional implementations for a given Ops interfaces
       - Specializing Ops for a variety of input types
   - Auto-generate your Op implementations using templates
   - Write unit-tests to ensure coverage of built-in methods for your Ops
 
-However, all of this is done in the core {% include github org='imagej'
-repo='imagej-ops' label='imagej-ops' %} project and could be deduced by
-careful study. If you do take the time to independently attempt any of
-these topics, consider documenting your experience and sharing it as a
-tutorial on this wiki.
+However, all of this is done in the core {% include github org='imagej' repo='imagej-ops' label='imagej-ops' %} project and could be deduced by careful study. If you do take the time to independently attempt any of these topics, consider documenting your experience and sharing it as a tutorial on this wiki.
 
-[Category:Tutorials](Category:Tutorials "wikilink")
-[Category:ImageJ2](Category:ImageJ2 "wikilink")
-[Category:Development](Category:Development "wikilink")
-[Category:Ops](Category:Ops "wikilink")
+[Category:Tutorials](Category:Tutorials "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink") [Category:Development](Category:Development "wikilink") [Category:Ops](Category:Ops "wikilink")

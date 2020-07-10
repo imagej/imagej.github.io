@@ -8,71 +8,51 @@ categories:
 description: test description
 ---
 
-{% capture maintainer %} {% include person content="NicoKiaru" %} {%
-endcapture %}
 
-{% capture author %} {% include person content="NicoKiaru" %}, {%
-include person content="Sarah Machado" %} {% endcapture %}
+{% capture maintainer%}
+{% include person content='NicoKiaru' %}
+{% endcapture %}
 
-{% capture source %} {% include github org="NicoKiaru" repo="LimeSeg" %}
-{% endcapture %} {% include sidebox-right software='Fiji' name='LimeSeg'
-site='LimeSeg' logo='' maintainer=maintainer author=author source=source
-status='' released='01/2018'
-category='[Segmentation](:Category:Segmentation "wikilink"),
-[:Category:Plugins](:Category:Plugins "wikilink")' %}
+{% capture author%}
+{% include person content='NicoKiaru' %}, {% include person content='Sarah Machado' %}
+{% endcapture %}
+
+{% capture source%}
+{% include github org='NicoKiaru' repo='LimeSeg' %}
+{% endcapture %}
+{% include info-box software='Fiji' name='LimeSeg' update-site='LimeSeg' logo='' maintainer=maintainer author=author source=source status='' released='01/2018' category='[Segmentation](:Category:Segmentation "wikilink"), [:Category:Plugins](:Category:Plugins "wikilink")' %}
 
 '''A Fiji plugin for the segmentation of 3D objects. '''
 
-[`Enable``   ``the``   ``LimeSeg``   ``update`` 
- ``site`](https://imagej.net/Following_an_update_site)` to get it.`
+[`Enable``   ``the``   ``LimeSeg``   ``update``   ``site`](https://imagej.net/Following_an_update_site)` to get it.`
 
 \_\_TOC\_\_
 
 ## Publication.
 
-LimeSeg: a coarse-grained lipid membrane simulation for 3D image
-segmentation
+LimeSeg: a coarse-grained lipid membrane simulation for 3D image segmentation
 
-BMC Bioinformatics doi:
-[http://dx.doi.org/10.1186/s12859-018-2471-0](https://doi.org/10.1186/s12859-018-2471-0)
+BMC Bioinformatics doi: [http://dx.doi.org/10.1186/s12859-018-2471-0](https://doi.org/10.1186/s12859-018-2471-0)
 
 ## Video tutorials
 
-Probably the fastest to learn how to use LimeSeg at a basic level. You
-can find [here a playlist containing all the
-tutorials](https://www.youtube.com/playlist?list=PLrEbS8VRQh9qhFYH-9YnVwzMDQBGfCKVj).
-This playlist contains tutorials for:
+Probably the fastest to learn how to use LimeSeg at a basic level. You can find [here a playlist containing all the tutorials](https://www.youtube.com/playlist?list=PLrEbS8VRQh9qhFYH-9YnVwzMDQBGfCKVj). This playlist contains tutorials for:
 
-  - [Single object
-    segmentation](https://www.youtube.com/watch?v=ZAFzMa0eZ0w)
-  - [Multiple objects
-    segmentation](https://www.youtube.com/watch?v=u4BwSHclTMM)
-  - [Segmentation
-    refinement](https://www.youtube.com/watch?v=3MtdKeM1xTU)
-  - [Single object segmentation with multiple
-    seeds](https://www.youtube.com/watch?v=3J4RpjE7Gsg)
-  - [An example of a C. Elegans embryo segmentation (one time
-    point)](https://www.youtube.com/watch?v=GmJA4w9gNO4)
-  - [Single object segmentation with a pre-defined
-    shape](https://www.youtube.com/watch?v=Ta911ULSWUI)
-  - [Computing and displaying surface
-    curvature](https://www.youtube.com/watch?v=i9OC8H6gFA4)
+  - [Single object segmentation](https://www.youtube.com/watch?v=ZAFzMa0eZ0w)
+  - [Multiple objects segmentation](https://www.youtube.com/watch?v=u4BwSHclTMM)
+  - [Segmentation refinement](https://www.youtube.com/watch?v=3MtdKeM1xTU)
+  - [Single object segmentation with multiple seeds](https://www.youtube.com/watch?v=3J4RpjE7Gsg)
+  - [An example of a C. Elegans embryo segmentation (one time point)](https://www.youtube.com/watch?v=GmJA4w9gNO4)
+  - [Single object segmentation with a pre-defined shape](https://www.youtube.com/watch?v=Ta911ULSWUI)
+  - [Computing and displaying surface curvature](https://www.youtube.com/watch?v=i9OC8H6gFA4)
 
 ## Presentation.
 
-LimeSeg is a modular 3D segmentation plugin. It is a particle-based
-active contour method. It can segment objects from 3D images where 3D
-objects are labelled on their outline, like cells labeled on their
-membrane, as shown in the image below (source of the image :
-https://loci.wisc.edu/sample-data/dub).
+LimeSeg is a modular 3D segmentation plugin. It is a particle-based active contour method. It can segment objects from 3D images where 3D objects are labelled on their outline, like cells labeled on their membrane, as shown in the image below (source of the image : https://loci.wisc.edu/sample-data/dub).
 
-![Dub-scaled0.5XY-Tp19.png](/images/pages/Dub-scaled0.5XY-Tp19.png
-"Dub-scaled0.5XY-Tp19.png")"
+![Dub-scaled0.5XY-Tp19.png](/images/pages/Dub-scaled0.5XY-Tp19.png "Dub-scaled0.5XY-Tp19.png")"
 
-LimeSeg can be used with simple commands provided by the plugin (under
-Plugins\>LimeSeg in ImageJ menu), or on a more advanced manner with
-scripting capabilities of ImageJ (macro commands of ImageJ1 or
-preferentially with [groovy scripts](Groovy_Scripting "wikilink")).
+LimeSeg can be used with simple commands provided by the plugin (under Plugins\>LimeSeg in ImageJ menu), or on a more advanced manner with scripting capabilities of ImageJ (macro commands of ImageJ1 or preferentially with [groovy scripts](Groovy_Scripting "wikilink")).
 
 # Commands : basic usage
 
@@ -80,103 +60,52 @@ preferentially with [groovy scripts](Groovy_Scripting "wikilink")).
 
 ### Sphere Seg command
 
-The command Sphere Seg (**Plugins\>LimeSeg\>Sphere Seg**) is the easiest
-way to use LimeSeg. It allows to segment a 3D object starting from a
-spherical seed. Here's an example to show how to use it:
+The command Sphere Seg (**Plugins\>LimeSeg\>Sphere Seg**) is the easiest way to use LimeSeg. It allows to segment a 3D object starting from a spherical seed. Here's an example to show how to use it:
 
-1\. Open a sample vesicle image. To do this, do **File\>Import\>URL..**
-and enter the address
-https://raw.githubusercontent.com/NicoKiaru/TestImages/master/Vesicles/Vesicles.tif
+1\. Open a sample vesicle image. To do this, do **File\>Import\>URL..** and enter the address https://raw.githubusercontent.com/NicoKiaru/TestImages/master/Vesicles/Vesicles.tif
 
-2\. Draw a circular ROI that is contained within the vesicle And save it
-in the ROI manager with the t key or with Edit\>Selection\>Add To
-Manager (only this ROI should be contained in the ROI manager).
+2\. Draw a circular ROI that is contained within the vesicle And save it in the ROI manager with the t key or with Edit\>Selection\>Add To Manager (only this ROI should be contained in the ROI manager).
 
-![LimeSeg\_Seed\_Vesicle.png](/images/pages/LimeSeg_Seed_Vesicle.png
-"LimeSeg_Seed_Vesicle.png")"
+![LimeSeg\_Seed\_Vesicle.png](/images/pages/LimeSeg_Seed_Vesicle.png "LimeSeg_Seed_Vesicle.png")"
 
 3\. Execute the Sphere Seg command : **Plugins\>LimeSeg\>Sphere Seg**
 
 4\. You need to provide the four most important parameters:
 
-  - **D\_0**: this parameter expressed in numbers of pixels (it can be a
-    real value like 1.2 pixels) is the smallest feature size that you
-    want LimeSeg to detect. A low value (\~ 1 pixel) will lead to fine
-    details being detected, at the cost of speed. A too high value will
-    lead to important details being missed. The value is typically
-    between 1 and \>20 pixels. (More precisely, D\_0 is the equilibrium
-    spacing between the particles used by LimeSeg to delineate the 3D
-    shape.)
-  - **F\_pressure** is the "default pressure" exerted on the surface
-    (also called balloon force in related active contour methods). A
-    positive value will lead to expansion of the surface by default,
-    while a negative value will lead to shrinking. Its typical range is
-    \[-0.03..0.03\].
-  - **Z\_Scale** is the physical ratio of the spacing between slices (Z
-    spacing) and between pixels (X or Y spacing). The vesicles were
-    imaged with pixels of 133 nm and a z-spacing of 340 nm. Hence this
-    parameter should be set to 340/133 \~ 2.54.
-  - **Range in d0 units** is the size over which each particle will look
-    for a local maximum. A value of 2 with a D\_0 of 2 means that a
-    local maximum will be looked for within a layer of 2\*2 = \[-4..+4\]
-    pixels around the surface. Typical values are from 0.5 to \>10.
+  - **D\_0**: this parameter expressed in numbers of pixels (it can be a real value like 1.2 pixels) is the smallest feature size that you want LimeSeg to detect. A low value (\~ 1 pixel) will lead to fine details being detected, at the cost of speed. A too high value will lead to important details being missed. The value is typically between 1 and \>20 pixels. (More precisely, D\_0 is the equilibrium spacing between the particles used by LimeSeg to delineate the 3D shape.)
+  - **F\_pressure** is the "default pressure" exerted on the surface (also called balloon force in related active contour methods). A positive value will lead to expansion of the surface by default, while a negative value will lead to shrinking. Its typical range is \[-0.03..0.03\].
+  - **Z\_Scale** is the physical ratio of the spacing between slices (Z spacing) and between pixels (X or Y spacing). The vesicles were imaged with pixels of 133 nm and a z-spacing of 340 nm. Hence this parameter should be set to 340/133 \~ 2.54.
+  - **Range in d0 units** is the size over which each particle will look for a local maximum. A value of 2 with a D\_0 of 2 means that a local maximum will be looked for within a layer of 2\*2 = \[-4..+4\] pixels around the surface. Typical values are from 0.5 to \>10.
 
 5\. Other parameters:
 
-  - **show 3D** : if checked, displays a 3D view of the segmented
-    objects. For more options, see \#ref 3D viewer (TODO).
-  - **same cell**: this parameter is not important in this case, since
-    only a single ROI is provided. It will become useful when multiple
-    seeds are needed, see \#ref multiple objects (TODO) and \#single big
-    objects.
-  - **Optimisation steps** : number of optimization steps. If set to -1,
-    the optimization will take place until convergence is met.
-  - **real size XY** : the size of a XY pixel in physical units. Here a
-    pixel is 133 nm. To get the volume and surface in microns squared
-    and microns cubed units, set this parameter to 0.133.
+  - **show 3D** : if checked, displays a 3D view of the segmented objects. For more options, see \#ref 3D viewer (TODO).
+  - **same cell**: this parameter is not important in this case, since only a single ROI is provided. It will become useful when multiple seeds are needed, see \#ref multiple objects (TODO) and \#single big objects.
+  - **Optimisation steps** : number of optimization steps. If set to -1, the optimization will take place until convergence is met.
+  - **real size XY** : the size of a XY pixel in physical units. Here a pixel is 133 nm. To get the volume and surface in microns squared and microns cubed units, set this parameter to 0.133.
 
-To segment this demo image, please choose the parameters as in this
-image:
+To segment this demo image, please choose the parameters as in this image:
 
-![LimeSeg\_Parameters\_Vesicle.png](/images/pages/LimeSeg_Parameters_Vesicle.png
-"LimeSeg_Parameters_Vesicle.png")"
+![LimeSeg\_Parameters\_Vesicle.png](/images/pages/LimeSeg_Parameters_Vesicle.png "LimeSeg_Parameters_Vesicle.png")"
 
-After convergence, you can go through the 2D image and you should see
-some points along the objects, like this:
+After convergence, you can go through the 2D image and you should see some points along the objects, like this:
 
-![LimeSeg\_2DView\_Vesicle.png](/images/pages/LimeSeg_2DView_Vesicle.png
-"LimeSeg_2DView_Vesicle.png")"
+![LimeSeg\_2DView\_Vesicle.png](/images/pages/LimeSeg_2DView_Vesicle.png "LimeSeg_2DView_Vesicle.png")"
 
 Also the 3D viewer should give a 3D View of the vesicle:
 
-![LimeSeg\_3DView\_Vesicle.png](/images/pages/LimeSeg_3DView_Vesicle.png
-"LimeSeg_3DView_Vesicle.png")"
+![LimeSeg\_3DView\_Vesicle.png](/images/pages/LimeSeg_3DView_Vesicle.png "LimeSeg_3DView_Vesicle.png")"
 
-Other outputs are provided as an ImageJ table:
-![LimeSeg\_Results\_Vesicle.png](/images/pages/LimeSeg_Results_Vesicle.png
-"LimeSeg_Results_Vesicle.png")"
+Other outputs are provided as an ImageJ table: ![LimeSeg\_Results\_Vesicle.png](/images/pages/LimeSeg_Results_Vesicle.png "LimeSeg_Results_Vesicle.png")"
 
-  - **Cell\_Name** : each 3D object that LimeSeg generated is a "Cell"
-    object. By default, these objects have a String identifier: Cell\_0,
-    Cell\_1, Cell\_2...
-  - **Number of Surfels** : number of surface elements in the generated
-    3D object. This number is also the number of vertex within the 3D
-    Mesh.
-  - **Center X,Y,Z** : position of the center of mass of the object
-    Vertexes, expressed in pixels for XY, and in slice number for Z
-    (using IJ1 numbering)
+  - **Cell\_Name** : each 3D object that LimeSeg generated is a "Cell" object. By default, these objects have a String identifier: Cell\_0, Cell\_1, Cell\_2...
+  - **Number of Surfels** : number of surface elements in the generated 3D object. This number is also the number of vertex within the 3D Mesh.
+  - **Center X,Y,Z** : position of the center of mass of the object Vertexes, expressed in pixels for XY, and in slice number for Z (using IJ1 numbering)
   - **Frame** : frame where the object has been segmented
   - **Channel** : Channel where the object has been segmented
-  - **Mesh?** : indicates where a mesh has been reconstructed from the
-    object surfels
-  - *' Euler characteristic*' : [Euler
-    characteristic](https://en.wikipedia.org/wiki/Euler_characteristic)
-    of the reconstructed mesh. This value needs to be 2 for a simply
-    closed surface, 0 for a torus, etc. If its value is not in
-    accordance with your expectations, the surface and volume values
-    will be wrong.
-  - *' Free edges*' : Number of free edges of the 3D reconstructed mesh.
-    Should be equal to zero to trust the given surface and volume.
+  - **Mesh?** : indicates where a mesh has been reconstructed from the object surfels
+  - *' Euler characteristic*' : [Euler characteristic](https://en.wikipedia.org/wiki/Euler_characteristic) of the reconstructed mesh. This value needs to be 2 for a simply closed surface, 0 for a torus, etc. If its value is not in accordance with your expectations, the surface and volume values will be wrong.
+  - *' Free edges*' : Number of free edges of the 3D reconstructed mesh. Should be equal to zero to trust the given surface and volume.
   - ''' Surface ''' : Surface of the object in (XY\_pixels)^2 units
   - ''' Volume ''' : Surface of the object in (XY\_pixels)^3 units
   - ''' Real Surface ''' : Physical surface of the object
@@ -184,63 +113,31 @@ Other outputs are provided as an ImageJ table:
 
 **Troubleshooting**
 
-  - If the circle ROI is too small, the sphere will disappear
-    immediately -\> make a bigger circular ROI.
-  - If the circle ROI is too big or not fully contained into the
-    vesicle, the surface could leak outside -\> recenter the ROI.
-  - "the segmentation goes crazy and I'd like to stop it". You can
-    either execute the command **Plugins\>LimeSeg\>Stop Optimisation**,
-    or you can set a value different from -1 in the number of
-    optimisation steps parameter (10000 steps is enough for this demo
-    case).
+  - If the circle ROI is too small, the sphere will disappear immediately -\> make a bigger circular ROI.
+  - If the circle ROI is too big or not fully contained into the vesicle, the surface could leak outside -\> recenter the ROI.
+  - "the segmentation goes crazy and I'd like to stop it". You can either execute the command **Plugins\>LimeSeg\>Stop Optimisation**, or you can set a value different from -1 in the number of optimisation steps parameter (10000 steps is enough for this demo case).
 
 ### Refining a segmentation result
 
-It is possible to refine a segmentation by decreasing D\_0 after a first
-roughly defined shape is found. Doing a first segmentation at a high
-D\_0 and then decreasing it by refinement is usually faster than
-starting the segmentation at a low D\_0 value. This can be done after a
-first segmentation by using the **Plugins\>LimeSeg\>Coarsen/Refine**
-command.
+It is possible to refine a segmentation by decreasing D\_0 after a first roughly defined shape is found. Doing a first segmentation at a high D\_0 and then decreasing it by refinement is usually faster than starting the segmentation at a low D\_0 value. This can be done after a first segmentation by using the **Plugins\>LimeSeg\>Coarsen/Refine** command.
 
-For instance, in the vesicle example: 1 - Right after the convergence is
-reached for D\_0 = 4, launch the "Plugins\>LimeSeg\>Coarsen/Refine"
-command with these parameters: Choose the following parameters:
-D\_0\_ini = 4; D\_0\_end = 2; range\_in\_D\_O\_units=2. 2 - After the
-command is finished, you need to resume the segmentation until
-convergence is newly reached. To do this, execute the command
-**Plugins\>LimeSeg\>Resume Seg**. You can keep F\_pressure to zero,
-since no bias is required anymore, and set the real size of the pixel as
-before (0.133).
+For instance, in the vesicle example: 1 - Right after the convergence is reached for D\_0 = 4, launch the "Plugins\>LimeSeg\>Coarsen/Refine" command with these parameters: Choose the following parameters: D\_0\_ini = 4; D\_0\_end = 2; range\_in\_D\_O\_units=2. 2 - After the command is finished, you need to resume the segmentation until convergence is newly reached. To do this, execute the command **Plugins\>LimeSeg\>Resume Seg**. You can keep F\_pressure to zero, since no bias is required anymore, and set the real size of the pixel as before (0.133).
 
 The shape is now more precise, as you can see in the 2D view and in 3D:
 
-![LimeSeg\_2D3DViews\_Refined\_Vesicle.png](/images/pages/LimeSeg_2D3DViews_Refined_Vesicle.png
-"LimeSeg_2D3DViews_Refined_Vesicle.png")"
+![LimeSeg\_2D3DViews\_Refined\_Vesicle.png](/images/pages/LimeSeg_2D3DViews_Refined_Vesicle.png "LimeSeg_2D3DViews_Refined_Vesicle.png")"
 
 ### Alternative ways to segment a single object: multiple spheres and skeletons
 
-If the object you want to segment is tortuous or big, starting with a
-single spherical may not give good results. Here are two alternative
-ways to segment a single object.
+If the object you want to segment is tortuous or big, starting with a single spherical may not give good results. Here are two alternative ways to segment a single object.
 
 ''' Starting with multiple spherical seeds '''
 
-The sample image accessible here:
-https://raw.githubusercontent.com/NicoKiaru/TestImages/master/ER/ER-FIB-SEM-Small.tif
-(use **File\>Import\>URL**) is a piece of endoplasmic reticulum and is
-pretty tortuous. While you may get a correct result with one circular
-ROI as a seed and with the **Sphere Seg** command (D\_0 = 2 and
-F\_pressure=0.02 gives good results), one can also store several
-circular ROI in the ROI manager at different places in the piece of ER.
-Lauching the **Sphere Seg** command and checking the **same Cell**
-checkbox will lead to a faster segmentation. When the different seeds
-meet, they will merge into a single surface.
+The sample image accessible here: https://raw.githubusercontent.com/NicoKiaru/TestImages/master/ER/ER-FIB-SEM-Small.tif> (use **File\>Import\URL**) is a piece of endoplasmic reticulum and is pretty tortuous. While you may get a correct result with one circular ROI as a seed and with the **Sphere Seg** command (D\_0 = 2 and F\_pressure=0.02 gives good results), one can also store several circular ROI in the ROI manager at different places in the piece of ER. Lauching the **Sphere Seg** command and checking the **same Cell** checkbox will lead to a faster segmentation. When the different seeds meet, they will merge into a single surface.
 
 For instance for three spherical seeds:
 
-![LimeSeg\_3D\_MultipleSeeds.png](/images/pages/LimeSeg_3D_MultipleSeeds.png
-"LimeSeg_3D_MultipleSeeds.png")"
+![LimeSeg\_3D\_MultipleSeeds.png](/images/pages/LimeSeg_3D_MultipleSeeds.png "LimeSeg_3D_MultipleSeeds.png")"
 
 Final result:
 
@@ -248,83 +145,50 @@ Final result:
 
 *' Starting with a ROI skeleton*'
 
-It is possible to define more precisely the seeds used to segment
-images. This can be useful for instance to predefine the structure you
-want to segment. Let's show how this works through an example, like the
-segmentation of the contour of the CElegans embryo:
+It is possible to define more precisely the seeds used to segment images. This can be useful for instance to predefine the structure you want to segment. Let's show how this works through an example, like the segmentation of the contour of the CElegans embryo:
 
-1\. Download a 3D C. Elegans embry image (**File\>Import\>URL..**) from
-here:
-https://raw.githubusercontent.com/NicoKiaru/TestImages/master/CElegans/dub19-half.tif
-which is a timepoint extracted from the full dataset
-(https://loci.wisc.edu/software/sample-data).
+1\. Download a 3D C. Elegans embry image (**File\>Import\>URL..**) from here: https://raw.githubusercontent.com/NicoKiaru/TestImages/master/CElegans/dub19-half.tif which is a timepoint extracted from the full dataset (https://loci.wisc.edu/software/sample-data).
 
-2\. Using a few ROIs approximately define the contour of the embryo at
-certains slices, like in the image shown above:
+2\. Using a few ROIs approximately define the contour of the embryo at certains slices, like in the image shown above:
 
-![LimeSeg\_Skeleton\_Example.png](/images/pages/LimeSeg_Skeleton_Example.png
-"LimeSeg_Skeleton_Example.png")"
+![LimeSeg\_Skeleton\_Example.png](/images/pages/LimeSeg_Skeleton_Example.png "LimeSeg_Skeleton_Example.png")"
 
-You need to begin and end with a single point ROI, otherwise the shape
-will not be closed. Also, the ROIs need to be drawn clockwise and should
-starts always at the same angle (start on top for instance).
+You need to begin and end with a single point ROI, otherwise the shape will not be closed. Also, the ROIs need to be drawn clockwise and should starts always at the same angle (start on top for instance).
 
-3\. Launch the **Plugins\>LimeSeg\>Skeleton Seg** command, without
-anything else in the ROI manager. Using the parameters D\_0=10,
-F\_pressure = 0, range\_in \_d0\_units=2 and Z\_scale=3.5 should give
-correct results, like shown below:
+3\. Launch the **Plugins\>LimeSeg\>Skeleton Seg** command, without anything else in the ROI manager. Using the parameters D\_0=10, F\_pressure = 0, range\_in \_d0\_units=2 and Z\_scale=3.5 should give correct results, like shown below:
 
-![LimeSeg\_CElegans\_Global.png](/images/pages/LimeSeg_CElegans_Global.png
-"LimeSeg_CElegans_Global.png")"
+![LimeSeg\_CElegans\_Global.png](/images/pages/LimeSeg_CElegans_Global.png "LimeSeg_CElegans_Global.png")"
 
 ## Multiple objects segmentation
 
-It is possible to segment multiple non overlapping objects with LimeSeg.
-The most basic way to do this is through the Sphere Seg command. In
-order too to an example, you can open the test image fo C Elegans with
-File\>Import\>URL.. This is a timepoint extracted from this dataset:
+It is possible to segment multiple non overlapping objects with LimeSeg. The most basic way to do this is through the Sphere Seg command. In order too to an example, you can open the test image fo C Elegans with File\>Import\>URL.. This is a timepoint extracted from this dataset:
 
 https://raw.githubusercontent.com/NicoKiaru/TestImages/master/CElegans/dub19-half.tif
 
-Like previously, you can store a single circular ROI in the ROI manager
-and launch the Sphere Seg command. This set of parameters work nicely:
+Like previously, you can store a single circular ROI in the ROI manager and launch the Sphere Seg command. This set of parameters work nicely:
 
   - D\_0 = 4
   - F\_Pressure = 0.015
   - Range\_in\_D0\_units = 1.5
   - ZScale=3.5
 
-In this kind of image, you'd probably like to segment multiple cells.
-You can do this one at a time, but sometimes one segmented surface will
-leak onto another, because the frontiers are sometimes not well defined.
-One way to avoid this is to segment multiple cells in parallel and avoid
-surface overlap. LimeSeg can do this : you can define several seeds
-defining several objects. In this case, the surfaces will repel each
-other, a bit resembling watershed methods in that aspect.
+In this kind of image, you'd probably like to segment multiple cells. You can do this one at a time, but sometimes one segmented surface will leak onto another, because the frontiers are sometimes not well defined. One way to avoid this is to segment multiple cells in parallel and avoid surface overlap. LimeSeg can do this : you can define several seeds defining several objects. In this case, the surfaces will repel each other, a bit resembling watershed methods in that aspect.
 
-You can define multiple seeds (one per cell) simply by storing multiple
-circular ROIs in the ROI manager. Like in this image:
+You can define multiple seeds (one per cell) simply by storing multiple circular ROIs in the ROI manager. Like in this image:
 
-![LimeSeg-MultiSeeds-SphereSeg.png](/images/pages/LimeSeg-MultiSeeds-SphereSeg.png
-"LimeSeg-MultiSeeds-SphereSeg.png")"
+![LimeSeg-MultiSeeds-SphereSeg.png](/images/pages/LimeSeg-MultiSeeds-SphereSeg.png "LimeSeg-MultiSeeds-SphereSeg.png")"
 
 Of course the seeds can be located at different planes.
 
-You can then launch the **Plugins\>LimeSeg\>Sphere Seg** command with
-the previously defined parameters, but **be sure to uncheck the sameCell
-checkbox** (otherwise surfaces will merge):
+You can then launch the **Plugins\>LimeSeg\>Sphere Seg** command with the previously defined parameters, but **be sure to uncheck the sameCell checkbox** (otherwise surfaces will merge):
 
-![LimeSeg-MultiSeeds-Param.png](/images/pages/LimeSeg-MultiSeeds-Param.png
-"LimeSeg-MultiSeeds-Param.png")"
+![LimeSeg-MultiSeeds-Param.png](/images/pages/LimeSeg-MultiSeeds-Param.png "LimeSeg-MultiSeeds-Param.png")"
 
 You should obtain an image similar to this:
 
-![LimeSeg-MultiSeeds-Output.png](/images/pages/LimeSeg-MultiSeeds-Output.png
-"LimeSeg-MultiSeeds-Output.png")"
+![LimeSeg-MultiSeeds-Output.png](/images/pages/LimeSeg-MultiSeeds-Output.png "LimeSeg-MultiSeeds-Output.png")"
 
-If you want to segment the whole embryo, you'll need to provide the
-location of the cell centers, and then launch the command. The following
-groovy script will segment the demo image here:
+If you want to segment the whole embryo, you'll need to provide the location of the cell centers, and then launch the command. The following groovy script will segment the demo image here:
 
 \[groovy script\]
 
@@ -332,18 +196,15 @@ Providing the result image:
 
 \[image\]
 
-The colors are chosen randomly and you should be able to vizualize the
-result both in 2D and 3D, similar to this: \[Images\]
+The colors are chosen randomly and you should be able to vizualize the result both in 2D and 3D, similar to this: \[Images\]
 
-The output table also displays the surface and volume of the segmented
-cells.
+The output table also displays the surface and volume of the segmented cells.
 
 ## Others commands
 
 ### Cancelling a segmentation result
 
-To cancel the last launched segmentation command, you can launch the
-command : **Plugins \> LimeSeg \> Cancel Last Optimisation**
+To cancel the last launched segmentation command, you can launch the command : **Plugins \> LimeSeg \> Cancel Last Optimisation**
 
 The segmentation needs to be stopped before applying this command.
 
@@ -351,8 +212,7 @@ The segmentation needs to be stopped before applying this command.
 
   - launch the command : **Plugins \> LimeSeg \> Clear all**
 
-Should be used cautiously : this erases all objects segmented by LimeSeg
-so far.
+Should be used cautiously : this erases all objects segmented by LimeSeg so far.
 
 ### Stopping a segmentation in progress
 
@@ -360,48 +220,31 @@ so far.
 
 ## LimeSeg 3D Viewer (basic)
 
-So far LimeSeg provides its own 3D vizualizer. The 3D viewer looks at a
-specific point in 3D. Arrows keyboard allow to move this central point.
-Mouse dragging allows to rotate around this point. Zoom/zoom out can be
-done with the mouse wheel.
+So far LimeSeg provides its own 3D vizualizer. The 3D viewer looks at a specific point in 3D. Arrows keyboard allow to move this central point. Mouse dragging allows to rotate around this point. Zoom/zoom out can be done with the mouse wheel.
 
 # Advanced usage
 
 ## Graphical user interface
 
-The command **Plugins\>LimeSeg\> Show GUI** displays LimeSeg GUI. This
-graphical interface allows to do almost everything in LimeSeg. Each
-action (meaning button you click) is recordable if you have opened the
-plugins\>macro\>Record recorder.
+The command **Plugins\>LimeSeg\> Show GUI** displays LimeSeg GUI. This graphical interface allows to do almost everything in LimeSeg. Each action (meaning button you click) is recordable if you have opened the plugins\>macro\>Record recorder.
 
-To execute the script in ImageJ1 macro language, just add **run("Show
-GUI");** as the first line of your script.
+To execute the script in ImageJ1 macro language, just add **run("Show GUI");** as the first line of your script.
 
-To execute the script in Groovy, replace **Ext.** by **LimeSeg.**, and
-put **import eu.kiaru.limeseg.LimeSeg;** at the beginning of the script.
+To execute the script in Groovy, replace **Ext.** by **LimeSeg.**, and put **import eu.kiaru.limeseg.LimeSeg;** at the beginning of the script.
 
 ## LimeSeg structure
 
 LimeSeg is composed of multiple parts. It can:
 
-  - **Manage** 3D objects (creation, deletion, copying, pasting, saving,
-    opening...),
+  - **Manage** 3D objects (creation, deletion, copying, pasting, saving, opening...),
   - **Optimize** 3D object shape in relation with an image dataset
-  - **Display** these 3D objects both in 2D with point Roi and in 3D
-    with its own vizualizer
+  - **Display** these 3D objects both in 2D with point Roi and in 3D with its own vizualizer
 
 ### LimeSeg 3D objects management
 
-To help understand how LimeSeg does this, please download this sample
-dataset output (unzip file
-https://raw.githubusercontent.com/NicoKiaru/TestImages/master/LimeSegOutput/DubSeg.zip).
+To help understand how LimeSeg does this, please download this sample dataset output (unzip file https://raw.githubusercontent.com/NicoKiaru/TestImages/master/LimeSegOutput/DubSeg.zip).
 
-Open Fiji, then launch LimeSeg GUI (**Plugins\>LimeSeg\>Show GUI**).
-LimeSeg graphical user interface pops up (click ok on the warning
-message). The GUI consists of an upper panel that can apply different
-actions on LimeSeg. Tabs separate the different kinds of objects where
-actions can be applied. The lower part contains information about
-LimeSeg state.
+Open Fiji, then launch LimeSeg GUI (**Plugins\>LimeSeg\>Show GUI**). LimeSeg graphical user interface pops up (click ok on the warning message). The GUI consists of an upper panel that can apply different actions on LimeSeg. Tabs separate the different kinds of objects where actions can be applied. The lower part contains information about LimeSeg state.
 
 ![LimeSegGUI.png](/images/pages/LimeSegGUI.png "LimeSegGUI.png")"
 
@@ -411,155 +254,89 @@ To load the sample dataset onto LimeSeg, do the following actions:
 
 2\. In LimeSeg GUI I/O tab, click **Load From:** button
 
-3\. Select the **DubSeg** folder that you have unzipped. Click ok. Note
-that selecting the folder do not open it. To open the data, you need to
-do the step 4.
+3\. Select the **DubSeg** folder that you have unzipped. Click ok. Note that selecting the folder do not open it. To open the data, you need to do the step 4.
 
 4\. Click **loadStateFromXmlPly** button in LimeSeg GUI
 
-Now click **showTable** in the **STATE** tab. This creates a **Cells
-explorer** table which shows all the 3D objects segmented by LimeSeg and
-how they are organized. Each column represents a **Cell** object which
-name is at the top of the tab, like **cell\_2**. Rows are timepoints. A
-cell object may contain many **CellT** objects, which stands for
-**Cell** at a specific **T**imepoint. For instance, the Cell
-**cell\_56** contains 10 CellT objects, for timepoints 12 to 22.
+Now click **showTable** in the **STATE** tab. This creates a **Cells explorer** table which shows all the 3D objects segmented by LimeSeg and how they are organized. Each column represents a **Cell** object which name is at the top of the tab, like **cell\_2**. Rows are timepoints. A cell object may contain many **CellT** objects, which stands for **Cell** at a specific **T**imepoint. For instance, the Cell **cell\_56** contains 10 CellT objects, for timepoints 12 to 22.
 
-![LimeSeg-CellExplorer.png](/images/pages/LimeSeg-CellExplorer.png
-"LimeSeg-CellExplorer.png")"
+![LimeSeg-CellExplorer.png](/images/pages/LimeSeg-CellExplorer.png "LimeSeg-CellExplorer.png")"
 
 #### Vizualizing 3D Objects
 
-In LimeSeg GUI, go to 3D View, click **make3DViewVisible**, then
-**putAllCellsTo3DDisplay**. This displays the C Elegans embryo, but only
-at the first timepoint (timepoint 1 by convention in ImageJ1). However
-as seen in the table, many more objects exist. To be able to see the
-evolution of the embryo over time, LimeSeg has to be linked to an ImageJ
-image (ImagePlus). To link LimeSeg with the proper image, download the
-image sample
-(https://raw.githubusercontent.com/NicoKiaru/TestImages/master/CElegans/dub-0.5xy-TP1-22.tif)
-and open it in Fiji.
+In LimeSeg GUI, go to 3D View, click **make3DViewVisible**, then **putAllCellsTo3DDisplay**. This displays the C Elegans embryo, but only at the first timepoint (timepoint 1 by convention in ImageJ1). However as seen in the table, many more objects exist. To be able to see the evolution of the embryo over time, LimeSeg has to be linked to an ImageJ image (ImagePlus). To link LimeSeg with the proper image, download the image sample (https://raw.githubusercontent.com/NicoKiaru/TestImages/master/CElegans/dub-0.5xy-TP1-22.tif) and open it in Fiji.
 
 Now you need to link the Image with LimeSeg:
 
-1\. Click **Img:** in the STATE tab of LimeSeg GUI, and select the
-image. Click OK. **This has no effect at this step**.
+1\. Click **Img:** in the STATE tab of LimeSeg GUI, and select the image. Click OK. **This has no effect at this step**.
 
 2\. Once the image is selected, click **setWorkingImage**
 
-Notice that the image name appears in the LimeSeg GUI down panel. You
-can now browse through timepoints and notice that the 3D Viewer is
-synchronized with the current displayed timepoint. The 3D Viewer is also
-synchronized with the z Slice which appears downlighted in the 3D
-Viewer.
+Notice that the image name appears in the LimeSeg GUI down panel. You can now browse through timepoints and notice that the 3D Viewer is synchronized with the current displayed timepoint. The 3D Viewer is also synchronized with the z Slice which appears downlighted in the 3D Viewer.
 
 #### Creating a new Cell
 
-In LimeSeg GUI, click **newCell** in the STATE tab. You can see that a
-**cell\_0** has appeared at the end of the Cells explorer table.
+In LimeSeg GUI, click **newCell** in the STATE tab. You can see that a **cell\_0** has appeared at the end of the Cells explorer table.
 
 #### 'Populating' a Cell
 
-A prerequisite to act on a specific cell is to make sure that it is the
-current cell (or active cell). The current or active cell name is
-displayed in the LimeSeg state panel (Cells: current=...) and its column
-is highlighted in blue in the Cells explorer window. To change the
-current Cell of LimeSeg you can either:
+A prerequisite to act on a specific cell is to make sure that it is the current cell (or active cell). The current or active cell name is displayed in the LimeSeg state panel (Cells: current=...) and its column is highlighted in blue in the Cells explorer window. To change the current Cell of LimeSeg you can either:
 
   - Double click on it on the Cells explorer table
-  - Use the **selectCellById** button in the STATE pane (fill in the
-    string id parameter on the right (like 'cell\_10') before clicking)
-  - Use the **selectCellByNumber** button in the STATE pane (fill in the
-    numeric parameter on the right before clicking)
+  - Use the **selectCellById** button in the STATE pane (fill in the string id parameter on the right (like 'cell\_10') before clicking)
+  - Use the **selectCellByNumber** button in the STATE pane (fill in the numeric parameter on the right before clicking)
 
-Make sure the current Cell is cell\_0. It should be empty. You can check
-this in the Cells explorer windows. Two ways can be used to populate the
-cell. Both implies the use of Clipped Dots 'buffer' object that will
-contain either simple shapes or copies of existing CellT objects.
+Make sure the current Cell is cell\_0. It should be empty. You can check this in the Cells explorer windows. Two ways can be used to populate the cell. Both implies the use of Clipped Dots 'buffer' object that will contain either simple shapes or copies of existing CellT objects.
 
 1\. Creating a sphere
 
-Go to the **Clipped Dots** tab. At the right of the makeSphere button,
-fill in the 4 white boxes. They correspond to the center of the sphere
-(x,y,z, radius). All units are in pixel except for z which is in number
-of slice. Enter 180, 130, 19, 100 for instance. Then click the
-**makeSphere** button. A sphere object has been created in the clipped
-dots buffer objects. This can be vizualized in the lower panel of
-LimeSeg GUI (Clipped dots: \#dots=).
+Go to the **Clipped Dots** tab. At the right of the makeSphere button, fill in the 4 white boxes. They correspond to the center of the sphere (x,y,z, radius). All units are in pixel except for z which is in number of slice. Enter 180, 130, 19, 100 for instance. Then click the **makeSphere** button. A sphere object has been created in the clipped dots buffer objects. This can be vizualized in the lower panel of LimeSeg GUI (Clipped dots: \#dots=).
 
 2\. Pasting the sphere into a Cell Object
 
-To put the sphere into the current Cell, go to the Current CellT tab,
-and click **pasteDotsToCellT**. Notice that the Cells explorer now
-displays C(7906) for the currentCell at the TimePoint 1. And the 3D
-viewer is updated. Now this sphere was pasted at the TimePoint 1, why ?
-Because LimeSeg has an active or a current frame parameter which is 1 by
-default. The current frame is another parameter that can be set within
-LimeSeg. Its current value is displayed in the lower panel of LimeSeg
-GUI. To change this parameter, go to the STATE tab and in front of the
-setCurrentFrame button, type 10 for instance. Now click the
-**setCurrentFrame** button. The active frame is now 10. If you now click
-again on **pasteDotsToCellT**, the clipped dots (i.e. the sphere) are
-pasted are the timepoint 10 of the current Cell.
+To put the sphere into the current Cell, go to the Current CellT tab, and click **pasteDotsToCellT**. Notice that the Cells explorer now displays C(7906) for the currentCell at the TimePoint 1. And the 3D viewer is updated. Now this sphere was pasted at the TimePoint 1, why ? Because LimeSeg has an active or a current frame parameter which is 1 by default. The current frame is another parameter that can be set within LimeSeg. Its current value is displayed in the lower panel of LimeSeg GUI. To change this parameter, go to the STATE tab and in front of the setCurrentFrame button, type 10 for instance. Now click the **setCurrentFrame** button. The active frame is now 10. If you now click again on **pasteDotsToCellT**, the clipped dots (i.e. the sphere) are pasted are the timepoint 10 of the current Cell.
 
 3\. Deleting a Cell Timpepoint (CellT object)
 
-Set properly the active Cell (see above how to select the active cell)
-and the active timepoint (STATE \> setCurrentFrame).
+Set properly the active Cell (see above how to select the active cell) and the active timepoint (STATE \> setCurrentFrame).
 
 Click **Current CellT \> clearDotsFromCellT**
 
 #### Deleting a Cell
 
-As an example, we will delete the newly created Cell **cell\_0**. First
-of all, you need to set the cell that you want to delete as the
-**currentCell** of LimeSeg.
+As an example, we will delete the newly created Cell **cell\_0**. First of all, you need to set the cell that you want to delete as the **currentCell** of LimeSeg.
 
 Click in the tab **Current Cell** the button **clearCurrentCell**
 
 ### LimeSeg optimizer usage
 
-To allow for a proper usage of LimeSeg optimizer, the way it can
-function is modular. To make it work without commands, here are the
-steps that should be followed:
+To allow for a proper usage of LimeSeg optimizer, the way it can function is modular. To make it work without commands, here are the steps that should be followed:
 
   - Select the 3D image to work with:
-      - STATE tab \> Select the image with the Img: button then click on
-        setWorkingImage
+      - STATE tab \> Select the image with the Img: button then click on setWorkingImage
       - Choose the correct Timepoint with setCurrentFrame button
       - Choose the correct Channel with the setCurrentChannel button
 
 <!-- end list -->
 
-  - Set the ratio of Z spacing versus XY spacing. ( For instance 5 for
-    200 nm per pixel and 1 um per slice).
+  - Set the ratio of Z spacing versus XY spacing. ( For instance 5 for 200 nm per pixel and 1 um per slice).
       - Goto the Otimizer tab.
-      - In the first right box next to setOptimizerParameter, put
-        'Z\_scale'
-      - In the second, put the correct numeric parameter (1 for
-        isotropic acquisition)
+      - In the first right box next to setOptimizerParameter, put 'Z\_scale'
+      - In the second, put the correct numeric parameter (1 for isotropic acquisition)
       - Click the setOptimizerParameter button (compulsory)
 
-We now suppose that you already have created 3D objects that you want to
-optimize. Object creation is succintly explained in 3D object
-manipulation section.
+We now suppose that you already have created 3D objects that you want to optimize. Object creation is succintly explained in 3D object manipulation section.
 
-  - Now the optimizer knows which image it should use, but there are no
-    3D objects into it. 3D Objects are called CellT objects in LimeSeg
-    (for cell timepoint). To add such objects into the optimizer, you
-    need, for each object you want to put in:
+  - Now the optimizer knows which image it should use, but there are no 3D objects into it. 3D Objects are called CellT objects in LimeSeg (for cell timepoint). To add such objects into the optimizer, you need, for each object you want to put in:
       - Set the current or active Cell as the one you want to use
       - Set the current Frame parameter you are working
-      - Go to the Current CellT tab, and click
-        'putCurrentCellTToOptimizer
-      - Notice in the GUI down panel, the number of dots in Optimizer
-        \#dots: should increase
+      - Go to the Current CellT tab, and click 'putCurrentCellTToOptimizer
+      - Notice in the GUI down panel, the number of dots in Optimizer \#dots: should increase
 
 <!-- end list -->
 
   - Set the Optimizer parameters.
-      - Similarly to Z\_scale, you can set various parameters for the
-        Optimizer
+      - Similarly to Z\_scale, you can set various parameters for the Optimizer
       - f\_pressure
       - d\_0 (this should be done before)
       - and many others... (needs full documentation)
@@ -567,60 +344,31 @@ manipulation section.
 <!-- end list -->
 
   - You now need to run the optimizer
-      - In the Optimizer tab, set the number of optimization step you
-        want to perform (-1 means until convergence), then click
-        **runOptimisation**
+      - In the Optimizer tab, set the number of optimization step you want to perform (-1 means until convergence), then click **runOptimisation**
 
 ### LimeSeg I/O
 
-3D objects generated by LimeSeg can be saved and retrieved. The
-structure choice was done with several convention that LimeSeg uses, in
-order to simplify objects manipulation outside of FIJI.
+3D objects generated by LimeSeg can be saved and retrieved. The structure choice was done with several convention that LimeSeg uses, in order to simplify objects manipulation outside of FIJI.
 
-If you download and unzip the sample file
-https://raw.githubusercontent.com/NicoKiaru/TestImages/master/LimeSegOutput/DubSeg.zip,
-you will see that the folder contains an xml file which contains the
-last segmentation parameters (LimeSegParams.xml) and one folder per Cell
-object. In each folder, named according to the Cell id object, a
-CellParams.xml file contains the parameters specific to the Cell object,
-and CellT objects (Cell at a specific timepoint), consists of files
-T\_x.ply where x is the timepoint number and where ply is the standard
-3D format used. [PLY](https://en.wikipedia.org/wiki/PLY_\(file_format\))
-file format is standard and can be used in many other 3D software.
+If you download and unzip the sample file https://raw.githubusercontent.com/NicoKiaru/TestImages/master/LimeSegOutput/DubSeg.zip, you will see that the folder contains an xml file which contains the last segmentation parameters (LimeSegParams.xml) and one folder per Cell object. In each folder, named according to the Cell id object, a CellParams.xml file contains the parameters specific to the Cell object, and CellT objects (Cell at a specific timepoint), consists of files T\_x.ply where x is the timepoint number and where ply is the standard 3D format used. [PLY](https://en.wikipedia.org/wiki/PLY_\(file_format\)) file format is standard and can be used in many other 3D software.
 
-To save the current objects of LimeSeg, choose an EMPTY folder in
-LimeSeg GUI I/O Tab (**Plugins\>LimeSeg\> Show GUI**), with the button
-**WriteTo:**, then click on the '''saveStateToXmlPly ''' button.
+To save the current objects of LimeSeg, choose an EMPTY folder in LimeSeg GUI I/O Tab (**Plugins\>LimeSeg\> Show GUI**), with the button **WriteTo:**, then click on the '''saveStateToXmlPly ''' button.
 
-To open previously saved data, select the folder with the LoadFrom:
-button then click loadStateFromXmlPly button. This erases all previous
-data contained in LimeSeg.
+To open previously saved data, select the folder with the LoadFrom: button then click loadStateFromXmlPly button. This erases all previous data contained in LimeSeg.
 
 ## LimeSeg 3D Viewer (advanced)
 
   - Image synchronization
 
-LimeSeg 3D viewer is synchronized with the workingImage of LimeSeg
-state. This image is automatically set by the user selection during a
-command launch. However, it can also be set within the LimeSeg GUI. To
-select this image, go to the STATE tab, then choose the proper image by
-clicking on img, then click on "setWorkingImage" button (do not forget
-this, otherwise the image selection has no effect).
+LimeSeg 3D viewer is synchronized with the workingImage of LimeSeg state. This image is automatically set by the user selection during a command launch. However, it can also be set within the LimeSeg GUI. To select this image, go to the STATE tab, then choose the proper image by clicking on img, then click on "setWorkingImage" button (do not forget this, otherwise the image selection has no effect).
 
-The synchronization occurs since the current slice is highlighted
-(downlighted...) in the 3D view in synchronization with the selected
-slice in the 2D view. Also change frame will change the 3D object
-displayed in case of a multiframe image.
+The synchronization occurs since the current slice is highlighted (downlighted...) in the 3D view in synchronization with the selected slice in the 2D view. Also change frame will change the 3D object displayed in case of a multiframe image.
 
   - Other 3D View parameters.
 
-The other parameters can be modified within the 3D View Panel. In
-LimeSeg GUI, the command is executed once the user clicks on the left
-most button. The other text area are parameters that should be specified
-before clicking the command button.
+The other parameters can be modified within the 3D View Panel. In LimeSeg GUI, the command is executed once the user clicks on the left most button. The other text area are parameters that should be specified before clicking the command button.
 
-  -   - set3DViewMode If the parameter is 0, all the volumes of the 3D
-        objects are displayed, like this:
+  -   - set3DViewMode If the parameter is 0, all the volumes of the 3D objects are displayed, like this:
 
 1 : the objects are cropped at the position of zposition (cut above)
 
@@ -628,8 +376,7 @@ before clicking the command button.
 
 3 : only the current slice is displayed (cut above and below).
 
-8 : If an optimization is occuring, the optimized dots are displayed
-(green, dots which have converged, red, dots which have not converged).
+8 : If an optimization is occuring, the optimized dots are displayed (green, dots which have converged, red, dots which have not converged).
 
 # Script examples
 
@@ -637,6 +384,4 @@ Example scripts (ImageJ1 and groovy) are available here:
 
 https://github.com/NicoKiaru/LimeSeg/tree/master/src/main/resources/script-templates/LimeSeg
 
-They are also accessible as templates in ImageJ script editor
-(https://imagej.net/Using\_the\_Script\_Editor), if the LimeSeg update
-site is enabled.
+They are also accessible as templates in ImageJ script editor (https://imagej.net/Using\_the\_Script\_Editor), if the LimeSeg update site is enabled.

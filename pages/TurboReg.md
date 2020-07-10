@@ -8,15 +8,12 @@ categories: Plugins
 description: test description
 ---
 
-{% capture source %} {% include github org="fiji" repo="TurboReg"
-source="TurboReg\_.java" %} {% endcapture %} {% include sidebox-right
-software='ImageJ' name='TurboReg' maintainer='Philippe Thévenaz'
-author='Philippe Thévenaz' source=source released='16/09/2010'
-version='16/09/2010' status=''
-category='[:Category:Plugins](:Category:Plugins "wikilink")'
-website='http://bigwww.epfl.ch/thevenaz/turboreg/' %}
 
-This plugin is described in detail on the [BIG
-website](http://bigwww.epfl.ch/thevenaz/turboreg/).
+{% capture source%}
+{% include github org='fiji' repo='TurboReg' source='TurboReg\_.java' %}
+{% endcapture %}
+{% include info-box software='ImageJ' name='TurboReg' maintainer='Philippe Thévenaz' author='Philippe Thévenaz' source=source released='16/09/2010' latest-version='16/09/2010' status='' category='[:Category:Plugins](:Category:Plugins "wikilink")' website='http://bigwww.epfl.ch/thevenaz/turboreg/' %}
+
+This plugin is described in detail on the [BIG website](http://bigwww.epfl.ch/thevenaz/turboreg/).
 
 [Category:Plugins](Category:Plugins "wikilink")

@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT
-    [BoneJ2\#Area.2FVolume\_fraction](BoneJ2#Area.2FVolume_fraction "wikilink")
+1.  REDIRECT [BoneJ2\#Area.2FVolume\_fraction](BoneJ2#Area.2FVolume_fraction "wikilink")

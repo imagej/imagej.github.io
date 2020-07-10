@@ -10,10 +10,7 @@ description: test description
 
 ## LinearDistance
 
-Plugin for ImageJ to measure linear distances in binary images in X and
-Y direction. It scans an image linewise (with a given skip distance) in
-both directions and finds stripes of only black or white and calculates
-the mean length of these stripes.
+Plugin for ImageJ to measure linear distances in binary images in X and Y direction. It scans an image linewise (with a given skip distance) in both directions and finds stripes of only black or white and calculates the mean length of these stripes.
 
 ## Application
 
@@ -25,14 +22,11 @@ tested with ImageJ 1.50e and Fiji
 
 ## Installation
 
-Copy the File **LinearDistance\_.jar** in the plugins/jars folder. When
-using Fiji, you can simply add the update site **LinearDistance**.
+Copy the File **LinearDistance\_.jar** in the plugins/jars folder. When using Fiji, you can simply add the update site **LinearDistance**.
 
 ## Usage
 
-Open one or more binary (black/white) images or binarize an image. Start
-the plugin by selecting "Plugins\>Analyze\>Measure linear distances" and
-select the results you want to obtain.
+Open one or more binary (black/white) images or binarize an image. Start the plugin by selecting "Plugins\>Analyze\>Measure linear distances" and select the results you want to obtain.
 
 ## Available Options
 

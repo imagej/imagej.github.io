@@ -8,194 +8,95 @@ categories: Tutorials
 description: test description
 ---
 
-{% include extendingtrackmatetutorials %}
+{% include extendingtrackmatetutorials%}
 
 ## Introduction.
 
-Developing a custom view for [TrackMate](TrackMate "wikilink") is *hard*
-and painful. Of course it must be a graphical representation of the
-model: the tracking results with all intermediate steps. If you want to
-build something really useful, it has to be interactive and should allow
-modifying the model. And be aware that modifications might happen
-somewhere else. Performance is also critical: since it stands at the
-user interface, it must be responsive, and possibly deal with large
-models (millions of detections).
+Developing a custom view for [TrackMate](TrackMate "wikilink") is *hard* and painful. Of course it must be a graphical representation of the model: the tracking results with all intermediate steps. If you want to build something really useful, it has to be interactive and should allow modifying the model. And be aware that modifications might happen somewhere else. Performance is also critical: since it stands at the user interface, it must be responsive, and possibly deal with large models (millions of detections).
 
-Honestly, I think that one of the main good reason to extend TrackMate
-is that there is ready some views available.
+Honestly, I think that one of the main good reason to extend TrackMate is that there is ready some views available.
 
-Still, it is perfectly possible to build something useful without
-fulfilling all these requirements. And I still hope that someday someone
-will contribute a view that displays the model in the orthogonal slicer
-of Fiji.
+Still, it is perfectly possible to build something useful without fulfilling all these requirements. And I still hope that someday someone will contribute a view that displays the model in the orthogonal slicer of Fiji.
 
-This tutorial introduces the <u>view interfaces</u> of TrackMate, and
-since they deal with user interactions, we will also review the
-<u>TrackMate event system</u>. As for the [SciJava](SciJava "wikilink")
-discovery system, we will see how to make a TrackMate module available
-in TrackMate, but not visible to the user, using the `visible`
-parameter.
+This tutorial introduces the <u>view interfaces</u> of TrackMate, and since they deal with user interactions, we will also review the <u>TrackMate event system</u>. As for the [SciJava](SciJava "wikilink") discovery system, we will see how to make a TrackMate module available in TrackMate, but not visible to the user, using the `visible` parameter.
 
 ## A custom TrackMate view.
 
-Like for the [spot feature
-analyzers](How_to_write_your_own_spot_feature_analyzer_algorithm_for_TrackMate "wikilink"),
-a TrackMate view is separated in two parts, that each extends a
-different interface:
+Like for the [spot feature analyzers](How_to_write_your_own_spot_feature_analyzer_algorithm_for_TrackMate "wikilink"), a TrackMate view is separated in two parts, that each extends a different interface:
 
-  - The {% include github org='fiji' repo='TrackMate'
-    source='fiji/plugin/trackmate/visualization/TrackMateModelView.java'
-    label='TrackMateModelView' %}, that is the actual view of the model.
-    All the hard work is done here.
-  - The {% include github org='fiji' repo='TrackMate'
-    source='fiji/plugin/trackmate/visualization/ViewFactory.java'
-    label='ViewFactory' %} that is a factory in charge of instantiating
-    the view and of the integration in TrackMate. This interface extends
-    the {% include github org='fiji' repo='TrackMate'
-    source='fiji/plugin/trackmate/TrackMateModule.java'
-    label='TrackMateModule' %} interface, so we expect to find there
-    some of the methods we discussed earlier, and the
-    [SciJava](SciJava "wikilink") annotation.
+  - The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/visualization/TrackMateModelView.java' label='TrackMateModelView' %}, that is the actual view of the model. All the hard work is done here.
+  - The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/visualization/ViewFactory.java' label='ViewFactory' %} that is a factory in charge of instantiating the view and of the integration in TrackMate. This interface extends the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/TrackMateModule.java' label='TrackMateModule' %} interface, so we expect to find there some of the methods we discussed earlier, and the [SciJava](SciJava "wikilink") annotation.
 
-In this tutorial, we will build something simple. We will limit
-ourselves to develop a view that simple messages the user every time
-something happens in TrackMate. For instance, when the spots are
-detected, how many there are; if he selects spots and edges, how many of
-them; etc. And we will just reuse the Fiji log window for this, which
-will save us from the full development of a graphical view of the model.
+In this tutorial, we will build something simple. We will limit ourselves to develop a view that simple messages the user every time something happens in TrackMate. For instance, when the spots are detected, how many there are; if he selects spots and edges, how many of them; etc. And we will just reuse the Fiji log window for this, which will save us from the full development of a graphical view of the model.
 
-But because this is a bit limited, we will not let the user pick this
-view as the main one, just after the detection step. A
-[SciJava](SciJava "wikilink") parameter will be used to make it
-invisible in the view selection menu. To make good use of it, we still
-need some way to launch this view, but this will be the subject of the
-next tutorial.
+But because this is a bit limited, we will not let the user pick this view as the main one, just after the detection step. A [SciJava](SciJava "wikilink") parameter will be used to make it invisible in the view selection menu. To make good use of it, we still need some way to launch this view, but this will be the subject of the next tutorial.
 
 Right now, we just focus on building the view.
 
-\== The {% include github org='fiji' repo='TrackMate'
-source='fiji/plugin/trackmate/visualization/ViewFactory.java'
-label='ViewFactory' %}. ==
+## The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/visualization/ViewFactory.java' label='ViewFactory' %}.
 
-The factory itself has nothing particular. On top of the TrackMateModule
-methods, it just has a method to instantiate the view it controls:
+The factory itself has nothing particular. On top of the TrackMateModule methods, it just has a method to instantiate the view it controls:
 
 ``` java
 @Override
 public TrackMateModelView create( final Model model, final Settings settings, final SelectionModel selectionModel )
 ```
 
-You can see that we can possibly pass 3 parameters to the constructor of
-the view itself: the model of course, but also the settings object, so
-that we can find there a link to the image object. The {% include github
-org='fiji' repo='TrackMate'
-source='fiji/plugin/trackmate/visualization/hyperstack/HyperStackDisplayerFactory.java'
-label='HyperStackDisplayer' %} uses it to retrieve the ImagePlus over
-which to display the TrackMate data.
+You can see that we can possibly pass 3 parameters to the constructor of the view itself: the model of course, but also the settings object, so that we can find there a link to the image object. The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/visualization/hyperstack/HyperStackDisplayerFactory.java' label='HyperStackDisplayer' %} uses it to retrieve the ImagePlus over which to display the TrackMate data.
 
-The selection model is also offered, and the instance passed is the
-common one used in the GUI, so that a selection made by the user can be
-shared amongst all views.
+The selection model is also offered, and the instance passed is the common one used in the GUI, so that a selection made by the user can be shared amongst all views.
 
-\== The {% include github org='fiji' repo='TrackMate'
-source='fiji/plugin/trackmate/visualization/TrackMateModelView.java'
-label='TrackMateModelView' %} interface. ==
+## The {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/visualization/TrackMateModelView.java' label='TrackMateModelView' %} interface.
 
 ### Methods.
 
-This is where the hard work takes place and there is a lot to say.
-However, the method you find in this interface are scarce and relate
-just to general use, and most of them are not mandatory:
+This is where the hard work takes place and there is a lot to say. However, the method you find in this interface are scarce and relate just to general use, and most of them are not mandatory:
 
-  - <u>`public void render();`</u> This is the initialization method for
-    your view. Your view should not show up to the user when it is
-    instantiating, but only when this method is called. This allows
-    TrackMate to properly manage the rendering.
+  - <u>`public void render();`</u> This is the initialization method for your view. Your view should not show up to the user when it is instantiating, but only when this method is called. This allows TrackMate to properly manage the rendering.
 
 <!-- end list -->
 
-  - <u>`public void refresh();`</u> This method should be in charge of
-    updating the view whenever it is sensible to do so. Careful: it is
-    **not** called automatically when the model has changed. You have to
-    listen to model change yourself, and call this method manually if
-    you want your view to be in sync. However, it **is** called
-    automatically whenever the user changes a display setting (because
-    views are not made to listen to GUI changes). But more on that
-    below.
+  - <u>`public void refresh();`</u> This method should be in charge of updating the view whenever it is sensible to do so. Careful: it is **not** called automatically when the model has changed. You have to listen to model change yourself, and call this method manually if you want your view to be in sync. However, it **is** called automatically whenever the user changes a display setting (because views are not made to listen to GUI changes). But more on that below.
 
 <!-- end list -->
 
-  - <u>`public void clear();`</u> This one is rather explicit. It
-    ensures a way to clear a view in case it is not kept in sync with
-    the model changes.
+  - <u>`public void clear();`</u> This one is rather explicit. It ensures a way to clear a view in case it is not kept in sync with the model changes.
 
 <!-- end list -->
 
-  - <u>`public void centerViewOn( final Spot spot );`</u> This is a
-    non-mandatory convenience tool that allow centering a view (whatever
-    it means) on a specific Spot. It is called for instance when the
-    user selects **one** spot in the GUI: all the views that implement
-    this method move and pan to show this spot.
+  - <u>`public void centerViewOn( final Spot spot );`</u> This is a non-mandatory convenience tool that allow centering a view (whatever it means) on a specific Spot. It is called for instance when the user selects **one** spot in the GUI: all the views that implement this method move and pan to show this spot.
 
 <!-- end list -->
 
-  - The three methods related to display settings: <u>`public Map<
-    String, Object > getDisplaySettings();`</u>, <u>`public void
-    setDisplaySettings( final String key, final Object value );`</u> and
-    <u>`public Object getDisplaySettings( final String key );`</u> are
-    explained below.
+  - The three methods related to display settings: <u>`public Map< String, Object > getDisplaySettings();`</u>, <u>`public void setDisplaySettings( final String key, final Object value );`</u> and <u>`public Object getDisplaySettings( final String key );`</u> are explained below.
 
 <!-- end list -->
 
-  - <u>`public Model getModel();`</u> exposes the model this view
-    renders.
+  - <u>`public Model getModel();`</u> exposes the model this view renders.
 
 <!-- end list -->
 
-  - <u>`public String getKey();`</u> Returns the unique key that
-    identifies this view. Careful: this key <b>must</b> be the same that
-    for the ViewFactory that can instantiates this view. This is used to
-    save and restore the views present in a TrackMAte session.
+  - <u>`public String getKey();`</u> Returns the unique key that identifies this view. Careful: this key <b>must</b> be the same that for the ViewFactory that can instantiates this view. This is used to save and restore the views present in a TrackMAte session.
 
 ### Display settings.
 
-It should be possible to configure the look and feel of your view, or
-even to set what is visible or not. This is made through display
-settings, and 3 methods are used to pass then around:
+It should be possible to configure the look and feel of your view, or even to set what is visible or not. This is made through display settings, and 3 methods are used to pass then around:
 
   - <u>`public Map< String, Object > getDisplaySettings();`</u>
-  - <u>`public void setDisplaySettings( final String key, final Object
-    value );`</u>
+  - <u>`public void setDisplaySettings( final String key, final Object value );`</u>
   - <u>`public Object getDisplaySettings( final String key );`</u>.
 
-Display settings are passed using a pair of key (as String) / value (as
-Object, that should be cast upon the right class).
+Display settings are passed using a pair of key (as String) / value (as Object, that should be cast upon the right class).
 
-The TrackMate GUI allows the user to edit a limited series of display
-settings that ought to be common to all views. These are the settings
-you can tune on the antepenultimate panel of the GUI (spot visible or
-not, color by feature, etc...). If you feel like it, your view can just
-ignore them. Otherwise, their keys and desired classes are defined in
-the {% include github org='fiji' repo='TrackMate'
-source='fiji/plugin/trackmate/visualization/TrackMateModelView.java'
-label='TrackMateModelView' %} interface. Check the static fields there.
+The TrackMate GUI allows the user to edit a limited series of display settings that ought to be common to all views. These are the settings you can tune on the antepenultimate panel of the GUI (spot visible or not, color by feature, etc...). If you feel like it, your view can just ignore them. Otherwise, their keys and desired classes are defined in the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/visualization/TrackMateModelView.java' label='TrackMateModelView' %} interface. Check the static fields there.
 
-Everytime the user changes a setting in the GUI, the new setting value
-is passed with the `setDisplaySettings()` method, then the `refresh()`
-method is called as well.
+Everytime the user changes a setting in the GUI, the new setting value is passed with the `setDisplaySettings()` method, then the `refresh()` method is called as well.
 
 ### Listening to model changes.
 
-You don't *have to* keep your view in sync with the model. You can make
-something useful that would just capture a snapshot of the model as it
-is when you launch the view and be happy about it. But, TrackMate is
-about allowing both automatic and manual annotation of the image data,
-so most likely a very useful view will echoes the changes made to the
-model. Ideally it would even *enable* these changes to be made. But this
-is out of the scope of this tutorial.
+You don't *have to* keep your view in sync with the model. You can make something useful that would just capture a snapshot of the model as it is when you launch the view and be happy about it. But, TrackMate is about allowing both automatic and manual annotation of the image data, so most likely a very useful view will echoes the changes made to the model. Ideally it would even *enable* these changes to be made. But this is out of the scope of this tutorial.
 
-If you want to listen to changes made to the model, you have to register
-as a listener to it. This is made through
+If you want to listen to changes made to the model, you have to register as a listener to it. This is made through
 
 ``` java
 Model.addModelChangeListener( YourViewInstance );
@@ -209,35 +110,17 @@ public void modelChanged( final ModelChangeEvent event )
 
 The event itself can report 5 types of changes:
 
-  - The spots detection is done. In the GUI, this is sent just after the
-    detection step, before the initial filtering step.
-  - The spots are filtered reversibly. This is sent everytime you change
-    anything on the spot filtering panel (a new filter, a threshold
-    value, etc..).
-  - The tracking step is done. That just follows the tracking step in
-    the GUI.
+  - The spots detection is done. In the GUI, this is sent just after the detection step, before the initial filtering step.
+  - The spots are filtered reversibly. This is sent everytime you change anything on the spot filtering panel (a new filter, a threshold value, etc..).
+  - The tracking step is done. That just follows the tracking step in the GUI.
   - The tracks are filtered. Like for the spots.
-  - The model is *modified*. By modification, we mean an incremental,
-    manual modification of the model. The user might have deleted a
-    spot, or moved it in space, or changed its size, or add an edge
-    between two spots, etc... In that case, the {% include github
-    org='fiji' repo='TrackMate'
-    source='fiji/plugin/trackmate/ModelChangeEvent.java'
-    label='ModelChangeEvent' %} instance can be interrogated to know
-    what was changed, deleted, added, etc...
+  - The model is *modified*. By modification, we mean an incremental, manual modification of the model. The user might have deleted a spot, or moved it in space, or changed its size, or add an edge between two spots, etc... In that case, the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/ModelChangeEvent.java' label='ModelChangeEvent' %} instance can be interrogated to know what was changed, deleted, added, etc...
 
 ### Listening to selection changes.
 
-The TrackMate GUI shares a common instance of {% include github
-org='fiji' repo='TrackMate'
-source='fiji/plugin/trackmate/SelectionModel.java'
-label='SelectionModel' %} that stores the selection the user made. This
-is convenient when exploring the tracking results.
+The TrackMate GUI shares a common instance of {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/SelectionModel.java' label='SelectionModel' %} that stores the selection the user made. This is convenient when exploring the tracking results.
 
-Your view can be kept in sync with the selection changes by implementing
-the {% include github org='fiji' repo='TrackMate'
-source='fiji/plugin/trackmate/SelectionChangeListener.java'
-label='SelectionChangeListener' %} interface. It adds a single method:
+Your view can be kept in sync with the selection changes by implementing the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/SelectionChangeListener.java' label='SelectionChangeListener' %} interface. It adds a single method:
 
 ``` java
 public void selectionChanged(SelectionChangeEvent event);
@@ -245,13 +128,7 @@ public void selectionChanged(SelectionChangeEvent event);
 
 ## A simple event logger.
 
-Let's keep our custom view simple: we will just build an event logger
-that recycles the IJ logger window to echo what happens to the model. We
-then of course have to implement the two listener interfaces mentioned
-above. But the code stays pretty simple: check {% include github
-org='fiji' repo='TrackMate-examples'
-source='plugin/trackmate/examples/view/EventLoggerView.java'
-label='here' %} for the details.
+Let's keep our custom view simple: we will just build an event logger that recycles the IJ logger window to echo what happens to the model. We then of course have to implement the two listener interfaces mentioned above. But the code stays pretty simple: check {% include github org='fiji' repo='TrackMate-examples' source='plugin/trackmate/examples/view/EventLoggerView.java' label='here' %} for the details.
 
 As for the factory, nothing fancy:
 
@@ -324,35 +201,23 @@ public class EventLoggerViewFactory implements ViewFactory
 }
 ```
 
-![TrackMate\_CustomView\_2.png](/images/pages/TrackMate_CustomView_2.png
-"TrackMate_CustomView_2.png")"
+![TrackMate\_CustomView\_2.png](/images/pages/TrackMate_CustomView_2.png "TrackMate_CustomView_2.png")"
 
-Just note that the [SciJava](SciJava "wikilink") annotation mention the
-`ViewFactory` class. This is enough to have the view selectable in the
-GUI menu:
+Just note that the [SciJava](SciJava "wikilink") annotation mention the `ViewFactory` class. This is enough to have the view selectable in the GUI menu:
 
-Note that this time, TrackMate good use of the `getName()` and
-`getInfoText()` methods.
+Note that this time, TrackMate good use of the `getName()` and `getInfoText()` methods.
 
 And here is what you get after a few manipulations:
 
-![TrackMate\_CustomView\_1.png](/images/pages/TrackMate_CustomView_1.png
-"TrackMate_CustomView_1.png")"
+![TrackMate\_CustomView\_1.png](/images/pages/TrackMate_CustomView_1.png "TrackMate_CustomView_1.png")"
 
 ## Controlling the visibility of your view with the SciJava `visible` parameter.
 
-Our view is a good dummy examples. It is not that useful, and the info
-panel of the GUI could be used instead advantageously. We have nothing
-against it, but maybe we should not let users select it as the main view
-in the GUI, otherwise they might get frustrated (well, the HyperStack
-view is *always* used, whatever you choose, so we could not mind, but
-eh).
+Our view is a good dummy examples. It is not that useful, and the info panel of the GUI could be used instead advantageously. We have nothing against it, but maybe we should not let users select it as the main view in the GUI, otherwise they might get frustrated (well, the HyperStack view is *always* used, whatever you choose, so we could not mind, but eh).
 
 There is way to do that, just by tuning the SciJava annotation:
 
-{% include amsidebox-right text='To make a TrackMate module available in
-TrackMate, but not visible in the GUI menus, use the annotation
-parameter `visible = false`' %}
+{% include ambox text='To make a TrackMate module available in TrackMate, but not visible in the GUI menus, use the annotation parameter `visible = false`' %}
 
 So editing the header of our ViewFactory to make it look like:
 
@@ -361,18 +226,10 @@ So editing the header of our ViewFactory to make it look like:
 public class EventLoggerViewFactory implements ViewFactory
 ```
 
-is enough to hide it in the menu. This is different from the `enabled`
-parameter we saw in [one the previous
-tutorial](How_to_write_your_own_track_feature_analyzer_algorithm_for_TrackMate "wikilink").
-The factory is instantiated and available in TrackMate; it just does not
-show up in the menu.
+is enough to hide it in the menu. This is different from the `enabled` parameter we saw in [one the previous tutorial](How_to_write_your_own_track_feature_analyzer_algorithm_for_TrackMate "wikilink"). The factory is instantiated and available in TrackMate; it just does not show up in the menu.
 
-But how could I make use of it then? you want to ask. Fortunately, this
-is just the subject of the next tutorial, on TrackMate actions. See you
-there.
+But how could I make use of it then? you want to ask. Fortunately, this is just the subject of the next tutorial, on TrackMate actions. See you there.
 
-{% include person content='JeanYvesTinevez' %}
-([talk](User_talk:JeanYvesTinevez "wikilink")) 10:51, 17 March 2014
-(CDT)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk:JeanYvesTinevez "wikilink")) 10:51, 17 March 2014 (CDT)
 
 [Category:Tutorials](Category:Tutorials "wikilink")

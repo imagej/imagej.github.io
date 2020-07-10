@@ -8,17 +8,11 @@ categories:
 description: test description
 ---
 
-This page should be used internally to discuss the new IJ user guide
-layout. Once polished, it should serve to orient on when converting old
-user guide sections or preparing new sections to end up with a uniform
-layout.
+This page should be used internally to discuss the new IJ user guide layout. Once polished, it should serve to orient on when converting old user guide sections or preparing new sections to end up with a uniform layout.
 
-The syntax is always shown in the gray boxes and the actual look you
-will see directly below each syntax specification.
+The syntax is always shown in the gray boxes and the actual look you will see directly below each syntax specification.
 
-If you want to add other templates, here you can find the ones existing
-on imagej.net: [Template
-pages](https://imagej.net/index.php?title=Special%3AAllPages&from=&to=&namespace=10)
+If you want to add other templates, here you can find the ones existing on imagej.net: [Template pages](https://imagej.net/index.php?title=Special%3AAllPages&from=&to=&namespace=10)
 
 ## Different headline levels
 
@@ -39,8 +33,7 @@ pages](https://imagej.net/index.php?title=Special%3AAllPages&from=&to=&namespace
 
 ## Plugin parameters
 
-Plugin parameters such as number fields, text fields, checkboxes, or
-radio buttons will be shown **bold**
+Plugin parameters such as number fields, text fields, checkboxes, or radio buttons will be shown **bold**
 
 dropdown choices will be indeícated ***bold/italic***
 
@@ -48,9 +41,7 @@ dropdown choices will be indeícated ***bold/italic***
 
     {% include key content='Ctrl' %} + {% include key content='C' %}   or    {% include key content='Ctrl' %} + {% include key content='Shift' %} + {% include key content='F' %}
 
-{% include key content='Ctrl' %} + {% include key content='C' %}     /
-    {% include key content='Ctrl' %} + {% include key content='Shift'
-%} + {% include key content='F' %}
+{% include key content='Ctrl' %} + {% include key content='C' %}     /     {% include key content='Ctrl' %} + {% include key content='Shift' %} + {% include key content='F' %}
 
 ## Menu structure
 
@@ -60,14 +51,13 @@ dropdown choices will be indeícated ***bold/italic***
 
 ## Boxes
 
-    {% include sidebox-right width='30%' %}
+    {% include box width='30%' %}
 
-{% include sidebox-right width='30%' %}  
+{% include box width='30%' %}  
 
-    {% include sidebox-right title='Modifies Box with a title!' text='As a standard box for additional info.' width='30%' float='left' %}
+    {% include box title='Modifies Box with a title!' text='As a standard box for additional info.' width='30%' float='left' %}
 
-{% include sidebox-right title='Modifies Sidebox with title\!' text='As
-a standard box for additional info.' width='30%' float='left' %}
+{% include box title='Modifies Sidebox with title\!' text='As a standard box for additional info.' width='30%' float='left' %}
 
   
   
@@ -76,33 +66,29 @@ a standard box for additional info.' width='30%' float='left' %}
   
   
 
-``` 
-
-{% capture tip %}
-Press the {% include key content="L" %} key to access ImageJ"s most useful feature: the [[Command Finder]].
+    
+{% capture tip%}
+Press the {% include key content='L' %} key to access ImageJ"s most useful feature: the [[Command Finder]].
 {% endcapture %}
 {% include tip tip=tip %}
-```
 
-{% capture tip %} Press the {% include key content="L" %} key to access
-ImageJ"s most useful feature: the [Command
-Finder](Command_Finder "wikilink"). {% endcapture %} {% include tip
-tip=tip %}
 
-    {% include sidebox-right content='This should display a notice box used for tipps.' %}
+{% capture tip%}
+Press the {% include key content='L' %} key to access ImageJ"s most useful feature: the [Command Finder](Command_Finder "wikilink").
+{% endcapture %}
+{% include tip tip=tip %}
 
-{% include sidebox-right content='This should display a notice box used
-for tipps.' %}
+    {% include info-box content='This should display a notice box used for tipps.' %}
 
-    {% include warning-sidebox-right content='Something critical like do not put Fiji in the Programm Files folder!' %}
+{% include info-box content='This should display a notice box used for tipps.' %}
 
-{% include warning-sidebox-right content='Something critical like do not
-put Fiji in the Programm Files folder\!' %}
+    {% include warning-box content='Something critical like do not put Fiji in the Programm Files folder!' %}
+
+{% include warning-box content='Something critical like do not put Fiji in the Programm Files folder\!' %}
 
     {% include tech content='if necessary can be used for technical details.' %}
 
-{% include tech content='if necessary can be used for technical
-details.' %}
+{% include tech content='if necessary can be used for technical details.' %}
 
     {% include fiji content='To mention Fiji specific hints!' %}
 
@@ -115,22 +101,21 @@ details.' %}
   
   
 
-    {% include yes %}
+    {% include yes%}
 
-{% include yes %}
+{% include yes%}
 
 ## Specific Icons
 
-    {% include no %}
+    {% include no%}
 
-{% include no %}
+{% include no%}
 
 ## Operating systems
 
     {% include linux content='Everyone agrees: Linux is the ""best"" operating system!' %}
 
-{% include linux content='Everyone agrees: Linux is the ""best""
-operating system\!' %}  
+{% include linux content='Everyone agrees: Linux is the ""best"" operating system\!' %}  
   
   
   
@@ -139,8 +124,7 @@ operating system\!' %}
 
     {% include windows content='Everyone agrees: Windows is the ""best"" operating system!' %}
 
-{% include windows content='Everyone agrees: Windows is the ""best""
-operating system\!' %}  
+{% include windows content='Everyone agrees: Windows is the ""best"" operating system\!' %}  
   
   
   
@@ -149,26 +133,22 @@ operating system\!' %}
 
     {% include macos content='Everyone agrees: macOS is the ""best"" operating system!' %}
 
-{% include macos content='Everyone agrees: macOS is the ""best""
-operating system\!' %}  
+{% include macos content='Everyone agrees: macOS is the ""best"" operating system\!' %}  
   
   
   
   
   
-\== TODO / Task list == The guidetask enables to make a tasklist with up
-to 10 entries. This could either be appended to the bottom of each
-article, or to article's discussion page. We could use the Todo
+\== TODO / Task list == The guidetask enables to make a tasklist with up to 10 entries. This could either be appended to the bottom of each article, or to article's discussion page. We could use the Todo
 
-``` 
-
-{% capture content %}
-add link to wiki page|add info on shortcut {% include key content="Shift" %} + {% include key content="F" %}|mention alternative plugins
+    
+{% capture  content %}
+add link to wiki page|add info on shortcut {% include key content='Shift' %} + {% include key content='F' %}|mention alternative plugins
 {% endcapture %}
 {% include guidetask content=content %}
-```
 
-{% capture content %} add link to wiki page|add info on usage of {%
-include key content="Shift" %} + {% include key content="F" %}|mention
-alternative plugins {% endcapture %} {% include guidetask
-content=content %}
+
+{% capture  content %}
+add link to wiki page|add info on usage of {% include key content='Shift' %} + {% include key content='F' %}|mention alternative plugins
+{% endcapture %}
+{% include guidetask content=content %}

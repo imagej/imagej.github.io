@@ -8,41 +8,28 @@ categories: Plugins,Transform
 description: test description
 ---
 
-{% capture source %} {% include github org="axtimwalde" repo="mpicbg"
-path="mpicbg\_/src/main/java/Transform\_Perspective.java" %} {%
-endcapture %} {% include sidebox-right name='Interactive Perspective'
-software='Fiji' author='Stephan Saalfeld' maintainer='Stephan Saalfeld'
-source=source released='November 9<sup>th</sup>, 2008' version='February
-13<sup>th</sup>, 2015' status='stable'
-category='[Transform](:Category:Transform "wikilink"),
-[Plugins](:Category:Plugins "wikilink")' %}
 
-This plugin allows to apply a **perspective transformation** to a 2D
-image in an interactive way.
+{% capture source%}
+{% include github org='axtimwalde' repo='mpicbg' path='mpicbg\_/src/main/java/Transform\_Perspective.java' %}
+{% endcapture %}
+{% include info-box name='Interactive Perspective' software='Fiji' author='Stephan Saalfeld' maintainer='Stephan Saalfeld' source=source released='November 9<sup>th</sup>, 2008' latest-version='February 13<sup>th</sup>, 2015' status='stable' category='[Transform](:Category:Transform "wikilink"), [Plugins](:Category:Plugins "wikilink")' %}
+
+This plugin allows to apply a **perspective transformation** to a 2D image in an interactive way.
 
 **Premises**: You need an image to be open.
 
 **Use**:
 
-1.  When calling the plugin, **four points** (represented as yellow
-    PointRois) will be displayed on the image.
-2.  Drag and drop the points to interactively transform the image with a
-    **perspective model**.
-3.  If you are satisfied with the result, press ENTER, otherwise, press
-    ESC.
+1.  When calling the plugin, **four points** (represented as yellow PointRois) will be displayed on the image.
+2.  Drag and drop the points to interactively transform the image with a **perspective model**.
+3.  If you are satisfied with the result, press ENTER, otherwise, press ESC.
 
 ## License
 
-This program is **free software**; you can redistribute it and/or modify
-it under the terms of the **GNU General Public License** as published by
-the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).
+This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).
 
-This program is distributed in the hope that it will be useful, but
-WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
-Public License for more details.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 -----
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Transform](Category:Transform "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Transform](Category:Transform "wikilink")

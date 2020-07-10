@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Bio-Formats\#LOCI Plugins
-    Configuration](Bio-Formats#LOCI_Plugins_Configuration "wikilink")
+1.  REDIRECT [Bio-Formats\#LOCI Plugins Configuration](Bio-Formats#LOCI_Plugins_Configuration "wikilink")

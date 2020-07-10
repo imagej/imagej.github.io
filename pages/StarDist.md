@@ -8,60 +8,38 @@ categories: Plugins
 description: test description
 ---
 
-{% capture source %} {% include github org="mpicbg-csbd"
-repo="stardist-imagej" %} {% endcapture %} {% include sidebox-right
-name='StarDist' software='ImageJ' site='StarDist' author='Uwe Schmidt,
-Martin Weigert' maintainer='Uwe Schmidt, Martin Weigert' source=source
-website='https://github.com/mpicbg-csbd/stardist' %}
-![StarDist\_logo.jpg](/images/pages/StarDist_logo.jpg "StarDist_logo.jpg")"
+
+{% capture source%}
+{% include github org='mpicbg-csbd' repo='stardist-imagej' %}
+{% endcapture %}
+{% include info-box name='StarDist' software='ImageJ' update-site='StarDist' author='Uwe Schmidt, Martin Weigert' maintainer='Uwe Schmidt, Martin Weigert' source=source website='https://github.com/mpicbg-csbd/stardist' %} ![StarDist\_logo.jpg](/images/pages/StarDist_logo.jpg "StarDist_logo.jpg")"
 
 ## Overview
 
-This is the ImageJ/Fiji plugin for
-[StarDist](https://github.com/mpicbg-csbd/stardist), a cell/nuclei
-detection method for microscopy images with star-convex shape priors.
-The plugin can be used to apply already trained models to new images.
-See the [main repository](https://github.com/mpicbg-csbd/stardist) for
-links to our publications and the full-featured Python package that can
-also be used to train new models. If you encounter problems with the
-plugin, please file an issue
-[here](https://github.com/mpicbg-csbd/stardist-imagej).
+This is the ImageJ/Fiji plugin for [StarDist](https://github.com/mpicbg-csbd/stardist), a cell/nuclei detection method for microscopy images with star-convex shape priors. The plugin can be used to apply already trained models to new images. See the [main repository](https://github.com/mpicbg-csbd/stardist) for links to our publications and the full-featured Python package that can also be used to train new models. If you encounter problems with the plugin, please file an issue [here](https://github.com/mpicbg-csbd/stardist-imagej).
 
-*The plugin currently only supports 2D image and time lapse data. If you
-have 3D data, please use our [python
-library](https://github.com/mpicbg-csbd/stardist).*
+*The plugin currently only supports 2D image and time lapse data. If you have 3D data, please use our [python library](https://github.com/mpicbg-csbd/stardist).*
 
-![Stardist\_screenshot\_small.jpg](/images/pages/Stardist_screenshot_small.jpg
-"Stardist_screenshot_small.jpg")"
+![Stardist\_screenshot\_small.jpg](/images/pages/Stardist_screenshot_small.jpg "Stardist_screenshot_small.jpg")"
 
 ## Installation
 
-1.  Start Fiji (or download and install it from [here](https://fiji.sc)
-    first).
+1.  Start Fiji (or download and install it from [here](https://fiji.sc) first).
 2.  Select `Help > Update...` from the menu bar.
 3.  Click on the button `Manage update sites`.
-4.  Scroll down the list and tick the checkboxes for update sites
-    `CSBDeep` and `StarDist`, then click the `Close` button.  
-    (If `StarDist` is missing, click `Update URLs` to refresh the list
-    of update sites.)  
-    ![StarDist\_update\_site2.png](/images/pages/StarDist_update_site2.png
-    "StarDist_update_site2.png")"![StarDist\_update\_site.png](/images/pages/StarDist_update_site.png
-    "StarDist_update_site.png")"
+4.  Scroll down the list and tick the checkboxes for update sites `CSBDeep` and `StarDist`, then click the `Close` button.  
+    (If `StarDist` is missing, click `Update URLs` to refresh the list of update sites.)  
+    ![StarDist\_update\_site2.png](/images/pages/StarDist_update_site2.png "StarDist_update_site2.png")"![StarDist\_update\_site.png](/images/pages/StarDist_update_site.png "StarDist_update_site.png")"
 5.  Click on `Apply changes` to install the plugin.
 6.  Restart Fiji.
 
 ## Usage
 
-Open the image that should be segmented. Note, that currently only 2D
-and 2D+time images are supported. Suitable test images can for instance
-be found at the [Broad Bioimage Benchmark
-Collection](https://data.broadinstitute.org/bbbc/BBBC008/BBBC008_v1_images.zip)\[1\]:
+Open the image that should be segmented. Note, that currently only 2D and 2D+time images are supported. Suitable test images can for instance be found at the [Broad Bioimage Benchmark Collection](https://data.broadinstitute.org/bbbc/BBBC008/BBBC008_v1_images.zip)\[1\]:
 
-![StarDist\_usage\_input.png](/images/pages/StarDist_usage_input.png
-"StarDist_usage_input.png")"
+![StarDist\_usage\_input.png](/images/pages/StarDist_usage_input.png "StarDist_usage_input.png")"
 
-Start the plugin from `Plugins > StarDist > StarDist 2D`. The following
-parameters can be set:
+Start the plugin from `Plugins > StarDist > StarDist 2D`. The following parameters can be set:
 
 <table>
 <tbody>
@@ -107,26 +85,18 @@ parameters can be set:
 </tbody>
 </table>
 
-Example of running the plugin, showing the returned label image and ROIs
-overlaid on the input image (check `Show All` in the ROI Manager):
+Example of running the plugin, showing the returned label image and ROIs overlaid on the input image (check `Show All` in the ROI Manager):
 
-![StarDist\_usage\_output.png](/images/pages/StarDist_usage_output.png
-"StarDist_usage_output.png")"
+![StarDist\_usage\_output.png](/images/pages/StarDist_usage_output.png "StarDist_usage_output.png")"
 
 ## Citation
 
 Please cite the paper if you are using the plugin in your research:
 
-  - Uwe Schmidt, Martin Weigert, Coleman Broaddus, and Gene Myers. [Cell
-    Detection with Star-convex
-    Polygons](https://arxiv.org/abs/1806.03535). International
-    Conference on Medical Image Computing and Computer-Assisted
-    Intervention (MICCAI), Granada, Spain, September 2018.
+  - Uwe Schmidt, Martin Weigert, Coleman Broaddus, and Gene Myers. [Cell Detection with Star-convex Polygons](https://arxiv.org/abs/1806.03535). International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI), Granada, Spain, September 2018.
 
 ## References
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Segmentation](Category:Segmentation "wikilink") [Category:Deep
-Learning](Category:Deep_Learning "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Segmentation](Category:Segmentation "wikilink") [Category:Deep Learning](Category:Deep_Learning "wikilink")
 
 1.  Carpenter et al., Genome Biology, 2006

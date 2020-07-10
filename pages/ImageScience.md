@@ -8,19 +8,19 @@ categories: Libraries,ImageScience
 description: test description
 ---
 
-{% capture maintainer %} {% include person content="ImageScience" %} {%
-endcapture %}
 
-{% capture author %} {% include person content="ImageScience" %} {%
-endcapture %}
+{% capture maintainer%}
+{% include person content='ImageScience' %}
+{% endcapture %}
 
-{% capture source %} {% include github org="imagescience"
-repo="ImageScience" %} {% endcapture %} {% include sidebox-right
-software='ImageScience' name='ImageScience' maintainer=maintainer
-author=author source=source status=''
-category='[:Category:Libraries](:Category:Libraries "wikilink")'
-website='http://imagescience.org/meijering/software/imagescience/'
-%}The ImageScience library supports the ImageScience suite of plugins:
+{% capture author%}
+{% include person content='ImageScience' %}
+{% endcapture %}
+
+{% capture source%}
+{% include github org='imagescience' repo='ImageScience' %}
+{% endcapture %}
+{% include info-box software='ImageScience' name='ImageScience' maintainer=maintainer author=author source=source status='' category='[:Category:Libraries](:Category:Libraries "wikilink")' website='http://imagescience.org/meijering/software/imagescience/' %}The ImageScience library supports the ImageScience suite of plugins:
 
   - [FeatureJ](FeatureJ "wikilink")
   - [MTrackJ](MTrackJ "wikilink")
@@ -35,11 +35,9 @@ To install them, enable the ImageScience update site:
   - Check *ImageScience*
   - Click *Close*
 
-Some files should appear on the list with *Status/Action* of *Update
-it*.
+Some files should appear on the list with *Status/Action* of *Update it*.
 
   - Click *Apply changes*
   - Restart ImageJ
 
-[Category:Libraries](Category:Libraries "wikilink")
-[Category:ImageScience](Category:ImageScience "wikilink")
+[Category:Libraries](Category:Libraries "wikilink") [Category:ImageScience](Category:ImageScience "wikilink")

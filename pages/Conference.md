@@ -10,34 +10,21 @@ description: test description
 
 ## ImageJ User and Developer Conferences
 
-![Imagej-conference-logo.png](/images/pages/Imagej-conference-logo.png
-"Imagej-conference-logo.png")"
+![Imagej-conference-logo.png](/images/pages/Imagej-conference-logo.png "Imagej-conference-logo.png")"
 
-Approximately every two years from 2006 through 2015, there was a
-conference focused on [ImageJ](ImageJ "wikilink")-based software,
-including both the core program itself, as well as applications and
-[plugins](plugins "wikilink") thereof.
+Approximately every two years from 2006 through 2015, there was a conference focused on [ImageJ](ImageJ "wikilink")-based software, including both the core program itself, as well as applications and [plugins](plugins "wikilink") thereof.
 
-As the community has grown, the ecosystem of imaging software tools has
-grown increasingly powerful and diverse, and therefore, the scope of the
-conferences has grown as well. In 2018, the conference name was changed
-to communicate this evolution of scope.
+As the community has grown, the ecosystem of imaging software tools has grown increasingly powerful and diverse, and therefore, the scope of the conferences has grown as well. In 2018, the conference name was changed to communicate this evolution of scope.
 
 ### Future conferences
 
-The Center for Open BioImage Analysis (COBA) at Broad Institute and
-UW-Madison, as well as the [Fiji](Fiji "wikilink") development team at
-Max Planck Institute of Molecular Cell Biology and Genetics in Dresden,
-is pleased to announce the **2020 "From Images to Knowledge with ImageJ
-& Friends (I2K)" Symposium**.
+The Center for Open BioImage Analysis (COBA) at Broad Institute and UW-Madison, as well as the [Fiji](Fiji "wikilink") development team at Max Planck Institute of Molecular Cell Biology and Genetics in Dresden, is pleased to announce the **2020 "From Images to Knowledge with ImageJ & Friends (I2K)" Symposium**.
 
   - Date: September 17-18, 2020
   - Location: University of Wisconsin, Madison
   - Registration: COMING SOON
 
-If you have any questions or if you are interested in hosting a future
-conference focused on scientific imaging software, please start a thread
-on the [Image.sc Forum](https://forum.image.sc/).
+If you have any questions or if you are interested in hosting a future conference focused on scientific imaging software, please start a thread on the [Image.sc Forum](https://forum.image.sc/).
 
 ### Past conferences
 

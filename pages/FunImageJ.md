@@ -8,15 +8,10 @@ categories:
 description: test description
 ---
 
-{% capture author %} {% include person content="Kharrington" %} {%
-endcapture %} {% include sidebox-right name='FunImageJ'
-software='ImageJ' author=author filename=''
-source='[FunImageJ](https://github.com/kephale/fun.imagej)' released='in
-development' version='in development' status='alpha'
-category='[Lisp](:Category:Lisp "wikilink")'
-website='https://github.com/kephale/fun.imagej' %}== Purpose ==
 
-FunImageJ provides a natural Lisp interface for ImageJ, written using
-the Clojure dialect of Lisp. Code written with FunImageJ can be compiled
-into independent programs that can be distributed as standalone jars, as
-well as scripts that work natively within ImageJ/Fiji.
+{% capture author%}
+{% include person content='Kharrington' %}
+{% endcapture %}
+{% include info-box name='FunImageJ' software='ImageJ' author=author filename='' source=' [FunImageJ](https://github.com/kephale/fun.imagej) ' released='in development' latest-version='in development' status='alpha' category='[Lisp](:Category:Lisp "wikilink")' website='https://github.com/kephale/fun.imagej' %}== Purpose ==
+
+FunImageJ provides a natural Lisp interface for ImageJ, written using the Clojure dialect of Lisp. Code written with FunImageJ can be compiled into independent programs that can be distributed as standalone jars, as well as scripts that work natively within ImageJ/Fiji.

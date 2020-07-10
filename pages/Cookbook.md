@@ -8,23 +8,15 @@ categories: Cookbook,Tutorials
 description: test description
 ---
 
-{% include menu-cookbook %}This book is an analysis-oriented
-introduction and user guide to ImageJ. It is inspired by the defunct
-[MBF "ImageJ for microscopy" manual](MBF_Plugin_Collection "wikilink")
-which went offline in November 2012, and it describes many of the same
-plugins from that distribution.
+{% include menu-cookbook%}This book is an analysis-oriented introduction and user guide to ImageJ. It is inspired by the defunct [MBF "ImageJ for microscopy" manual](MBF_Plugin_Collection "wikilink") which went offline in November 2012, and it describes many of the same plugins from that distribution.
 
-Cooks call them *recipes*, biologists *protocols*, and programmers call
-them *HOWTOs*. No matter how you refer to them, you'll find the book
-topics in the sidebar to the right\!
+Cooks call them *recipes*, biologists *protocols*, and programmers call them *HOWTOs*. No matter how you refer to them, you'll find the book topics in the sidebar to the right\!
 
-Like the rest of this wiki, this Cookbook is a community project. Please
-feel welcome to edit and expand the material here\! {% include toc %}
+Like the rest of this wiki, this Cookbook is a community project. Please feel welcome to edit and expand the material here\! {% include toc%}
 
 ## Installing ImageJ
 
-The Cookbook is based on the [Fiji](Fiji "wikilink") distribution of
-ImageJ. {% include downloadfiji %}
+The Cookbook is based on the [Fiji](Fiji "wikilink") distribution of ImageJ. {% include downloadfiji%}
 
 ## Installing the Cookbook plugins
 
@@ -40,31 +32,22 @@ ImageJ. {% include downloadfiji %}
 
 ## Source
 
-The source code is {% include github org='fiji' repo='cookbook'
-label='on GitHub' %}.
+The source code is {% include github org='fiji' repo='cookbook' label='on GitHub' %}.
 
 ## Credits
 
-The Cookbook pages themselves were adapted from the defunct [MBF "ImageJ
-for microscopy" manual](MBF_Plugin_Collection "wikilink"), originally
-created by Tony Collins.
+The Cookbook pages themselves were adapted from the defunct [MBF "ImageJ for microscopy" manual](MBF_Plugin_Collection "wikilink"), originally created by Tony Collins.
 
 The Cookbook technical writer team includes:
 
-  - {% include person content='Rueden' %} (technical oversight and
-    maintenance)
+  - {% include person content='Rueden' %} (technical oversight and maintenance)
   - {% include person content='Apal4' %} (January 2014 - May 2015)
-  - {% include person content='Schindelin' %} (June 2013 - November
-    2014)
-  - {% include person content='Khildebrand' %} (June 2013 - December
-    2013)
+  - {% include person content='Schindelin' %} (June 2013 - November 2014)
+  - {% include person content='Khildebrand' %} (June 2013 - December 2013)
   - {% include person content='Amacall' %} (June 2013 - December 2013)
-  - {% include person content='Ruizhi' %} (November 2013 - December
-    2013)
+  - {% include person content='Ruizhi' %} (November 2013 - December 2013)
   - {% include person content='Gtcwildfire' %} (June 2013 - August 2013)
 
-The plugins featured in the Cookbook were collated from various sources
-and have various authors and licenses.
+The plugins featured in the Cookbook were collated from various sources and have various authors and licenses.
 
-[Category:Cookbook](Category:Cookbook "wikilink")
-[Category:Tutorials](Category:Tutorials "wikilink")
+[Category:Cookbook](Category:Cookbook "wikilink") [Category:Tutorials](Category:Tutorials "wikilink")

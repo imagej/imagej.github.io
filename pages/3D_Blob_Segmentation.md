@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:3D\_Blob\_Segmentation'
-%}{% include stub %}
+{% include component-stats content=':sc.fiji:3D\_Blob\_Segmentation' %}{% include stub%}

@@ -8,36 +8,23 @@ categories: Plugins
 description: test description
 ---
 
-{% include toc %}{% include outdated %}
+{% include toc%}{% include outdated%}
 
 ## Key concepts
 
-We favor a style of ImageJ plugin design that enables execution of the
-plugin:
+We favor a style of ImageJ plugin design that enables execution of the plugin:
 
   - From the menus.
   - From a macro.
   - From any other plugin or script.
 
-The key point is to <b>separate the setup from the execution</b>. For
-the purpose, we place the setup within the run method (any dialogs, for
-example) and the execution in another method.
+The key point is to <b>separate the setup from the execution</b>. For the purpose, we place the setup within the run method (any dialogs, for example) and the execution in another method.
 
-A second key point is <b>never to show images</b> unless within the
-*run* method. There's nothing more annoying than a plugin that assumes
-there is no other plugin running, or that its invocation will happen
-always from the menus.
+A second key point is <b>never to show images</b> unless within the *run* method. There's nothing more annoying than a plugin that assumes there is no other plugin running, or that its invocation will happen always from the menus.
 
-If possible, provide a method that leaves the validation to the caller,
-and that returns a strongly-typed object (see the *duplicateAndScale*
-method in the example below).
+If possible, provide a method that leaves the validation to the caller, and that returns a strongly-typed object (see the *duplicateAndScale* method in the example below).
 
-If you cannot use a *GenericDialog* for input for some reason, make your
-code scriptable by providing *static* methods with *String* parameters
-(so they can be called via the *call()* macro function), and insert code
-like this into the <u>interactive</u> (i.e. the *run* method, not the
-methods that are called from macros, scripts or other plugins) parts of
-the code:
+If you cannot use a *GenericDialog* for input for some reason, make your code scriptable by providing *static* methods with *String* parameters (so they can be called via the *call()* macro function), and insert code like this into the <u>interactive</u> (i.e. the *run* method, not the methods that are called from macros, scripts or other plugins) parts of the code:
 
 ``` java
 if (Recorder.record) {
@@ -124,24 +111,16 @@ public class Duplicate_and_Scale implements PlugIn {
 
 ### Using the Script Editor
 
-The easiest way to compile and run the plugin is to use the [Script
-Editor](Script_Editor "wikilink"): Call {% include bc content='File |
-New | Script'%}, select *Java* in the *Language* menu, and paste the
-source. Then, compile and run the plugin by calling *Run* in the '"Run''
-menu.
+The easiest way to compile and run the plugin is to use the [Script Editor](Script_Editor "wikilink"): Call {% include bc content='File | New | Script'%}, select *Java* in the *Language* menu, and paste the source. Then, compile and run the plugin by calling *Run* in the '"Run'' menu.
 
 ### The hard way
 
-You can save the java code in a java file with the same name of the
-class. For the above it would be *Duplicate\_and\_Scale.java*.
+You can save the java code in a java file with the same name of the class. For the above it would be *Duplicate\_and\_Scale.java*.
 
 To compile the plugin, you have several options:
 
-  - If you saved the java file into the *plugins/* directory inside the
-    Fiji directory, after {% include bc content='Help | Refresh
-    Menus'%}, it will appear in the *Plugins* menu.
-  - Call {% include bc content='Plugins | Compile and Run'%} and specify
-    the where you saved the file.
+  - If you saved the java file into the *plugins/* directory inside the Fiji directory, after {% include bc content='Help | Refresh Menus'%}, it will appear in the *Plugins* menu.
+  - Call {% include bc content='Plugins | Compile and Run'%} and specify the where you saved the file.
   - Compile it from a terminal with
 
 <!-- end list -->
@@ -150,20 +129,13 @@ To compile the plugin, you have several options:
 ./fiji --javac plugins/Duplicate_and_Scale.java
 ```
 
-For this to work, you have to save the java file into the *plugins/*
-directory, or you have to copy the class files into said directory after
-compilation. For the plugin to appear in the *Plugins* menu, you have to
-call {% include bc content='Help | Refresh Menus'%}, or to restart Fiji.
+For this to work, you have to save the java file into the *plugins/* directory, or you have to copy the class files into said directory after compilation. For the plugin to appear in the *Plugins* menu, you have to call {% include bc content='Help | Refresh Menus'%}, or to restart Fiji.
 
 ## Running the plugin
 
-If you pasted the source into the [Script
-Editor](Script_Editor "wikilink"), you can run the plugin using the
-*Run\>Run* menu entry.
+If you pasted the source into the [Script Editor](Script_Editor "wikilink"), you can run the plugin using the *Run\>Run* menu entry.
 
-Otherwise, after {% include bc content='Help | Refresh Menus'%}, or a
-Fiji restart, there will be a menu item called *Duplicate and Scale* in
-the *Plugins* menu.
+Otherwise, after {% include bc content='Help | Refresh Menus'%}, or a Fiji restart, there will be a menu item called *Duplicate and Scale* in the *Plugins* menu.
 
 ### From a macro
 
@@ -207,22 +179,13 @@ if (result) {
 }
 ```
 
-As a special case, since the above example plugin needs only one image,
-we can provide such image semidirectly with the new Thread-safe current
-image concept. Keep in mind that then the plugin will show the new
-scaled image, not return it\!
+As a special case, since the above example plugin needs only one image, we can provide such image semidirectly with the new Thread-safe current image concept. Keep in mind that then the plugin will show the new scaled image, not return it\!
 
 ``` javascript
 var source = ...; // any image
 IJ.run(source, "Duplicate and Scale", "name=[scaled copy] width=500 height=700");
 ```
 
-Above, ImageJ's macro system provides the <i>source</i> image as the
-return value of the IJ.getImage() call within the plugin's <i>run</i>
-method. Then, the macro arguments are fed directly into the
-GenericDialog entries of the same name, and the rest of the *run* method
-calls the *exec* method without ever showing the dialog.
+Above, ImageJ's macro system provides the <i>source</i> image as the return value of the IJ.getImage() call within the plugin's <i>run</i> method. Then, the macro arguments are fed directly into the GenericDialog entries of the same name, and the rest of the *run* method calls the *exec* method without ever showing the dialog.
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Development](Category:Development "wikilink")
-[Category:Scripting](Category:Scripting "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Development](Category:Development "wikilink") [Category:Scripting](Category:Scripting "wikilink")

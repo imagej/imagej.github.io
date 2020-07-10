@@ -8,55 +8,19 @@ categories:
 description: test description
 ---
 
-{% include sidebox-right name='Selective Plane Illumination Microscopy
-Invasion assay' software='Fiji' author='Svenja Rühland, David Hörl,
-Hartmann Harz' maintainer='David Hörl' released='Decembre 2014'
-version='Decembre 2014'
-category='[Registration](:Category:Registration "wikilink")' %}
+{% include info-box name='Selective Plane Illumination Microscopy Invasion assay' software='Fiji' author='Svenja Rühland, David Hörl, Hartmann Harz' maintainer='David Hörl' released='Decembre 2014' latest-version='Decembre 2014' category='[Registration](:Category:Registration "wikilink")' %}
 
-SPIM allows for three-dimensional imaging of thick specimens. Among
-other approaches this can be exploited to analyse invasion of different
-cell types deep into tissues. Due to their potential role in cancer
-treatment the invasion of mesenchymal stem cells (MSC) into tumors is a
-medically relevant issue.
+SPIM allows for three-dimensional imaging of thick specimens. Among other approaches this can be exploited to analyse invasion of different cell types deep into tissues. Due to their potential role in cancer treatment the invasion of mesenchymal stem cells (MSC) into tumors is a medically relevant issue.
 
-We developed an *in-vitro* screening tool to analyse the invasion
-potential of MSC under different conditions. Therefore, tumor model
-spheroids with invaded MSC are imaged and their invasion depths are
-quantified. We present here the computational approach to cope with the
-amount of data our screening invasion assay produces.
+We developed an *in-vitro* screening tool to analyse the invasion potential of MSC under different conditions. Therefore, tumor model spheroids with invaded MSC are imaged and their invasion depths are quantified. We present here the computational approach to cope with the amount of data our screening invasion assay produces.
 
 # Image processing
 
-Using light sheet microscopy for high-throughput screening results in a
-significant number of data sets with each data set requiring image
-processing that consists of a sequence of computational steps. Each of
-these steps is time consuming making the analysis of many data sets by
-hand ineffective. Inspired by the tutorial from Pavel Tomancak
-([Registration on
-cluster](https://fiji.sc/SPIM_Registration_on_cluster)) we developed a
-collection of linux shell scripts for (semi)automation of the analysis.
-These scripts are not meant to analyse time lapse data. Please keep in
-mind that these scripts are written in a quick and dirty fashion and do
-therefore not contain any protection against incorrect entries or a data
-organisation that differs from the following description. Feel free to
-adapt these scripts to your needs. Please keep in mind that there is no
-guarantee for error free function of these scripts and macros generated
-thereby.
+Using light sheet microscopy for high-throughput screening results in a significant number of data sets with each data set requiring image processing that consists of a sequence of computational steps. Each of these steps is time consuming making the analysis of many data sets by hand ineffective. Inspired by the tutorial from Pavel Tomancak ([Registration on cluster](https://fiji.sc/SPIM_Registration_on_cluster)) we developed a collection of linux shell scripts for (semi)automation of the analysis. These scripts are not meant to analyse time lapse data. Please keep in mind that these scripts are written in a quick and dirty fashion and do therefore not contain any protection against incorrect entries or a data organisation that differs from the following description. Feel free to adapt these scripts to your needs. Please keep in mind that there is no guarantee for error free function of these scripts and macros generated thereby.
 
 ## Preparation
 
-The shell scripts were tested on a linux server (not a cluster) with a
-fiji installation containing the spim registration plugin. It is assumed
-that analysis of open spim data by hand works fine. The linux shell
-scripts must be stored on your linux server in a folder containing a
-subfolder called macros. In this macro folder the subfolders
-„converter“, „fuse“ and „register“ have to be present. Later you can
-find the respective generated fiji macros in these sub folders. Take
-care to delete macros that are no longer useful in order not to mix them
-up with newly generated macros. Generation and naming of the macros is
-done automatically. Therefore names may be identical and macros
-overwrite one another.
+The shell scripts were tested on a linux server (not a cluster) with a fiji installation containing the spim registration plugin. It is assumed that analysis of open spim data by hand works fine. The linux shell scripts must be stored on your linux server in a folder containing a subfolder called macros. In this macro folder the subfolders „converter“, „fuse“ and „register“ have to be present. Later you can find the respective generated fiji macros in these sub folders. Take care to delete macros that are no longer useful in order not to mix them up with newly generated macros. Generation and naming of the macros is done automatically. Therefore names may be identical and macros overwrite one another.
 
 ``` bash
  
@@ -73,36 +37,15 @@ rm *
 
 ## Data organisation
 
-A prerequisite for effectively using these scripts is the following data
-organisation: Parent folder (e.g. one folder for each measuring day)
-containing several subfolders each containing original spim data of only
-one measurement (e.g. control1, condition1, …). These subfolders should
-be all on the same level (not further nested). In order not to mix
-original data with computed ones one has to start a shell script first
-that creates for each measurement a subfolder named „convert” (see
-below). This folder is located below the folder of the original spim
-data.
+A prerequisite for effectively using these scripts is the following data organisation: Parent folder (e.g. one folder for each measuring day) containing several subfolders each containing original spim data of only one measurement (e.g. control1, condition1, …). These subfolders should be all on the same level (not further nested). In order not to mix original data with computed ones one has to start a shell script first that creates for each measurement a subfolder named „convert” (see below). This folder is located below the folder of the original spim data.
 
 ## Usage
 
-Beside the script generating the convert folder there are two other
-types of shell scripts: Ones that produce a list of fiji macros and
-others executing this list one after the other automatically.
+Beside the script generating the convert folder there are two other types of shell scripts: Ones that produce a list of fiji macros and others executing this list one after the other automatically.
 
 ### Producer shell scripts
 
-Scripts generating macros require two command line parameters: first the
-complete path and name of the parent data folder and as a second
-parameter a whole number (integer). The producer scripts will generate
-one fiji macro per data set named with an ascending order of numbers.
-This order of numbers start with the second parameter that has been
-added during the start sequence of the shell script. This allows to
-generate a list of macros containing more than the macros of only one
-parent directory. For the second parent directory one should use an
-integer as command line parameter that is greater than the integer
-naming the last macro of the first parent directory. All macros are
-stored in one of the folder „converter“, „fuse“ or „register“ (cf.
-Preparation).
+Scripts generating macros require two command line parameters: first the complete path and name of the parent data folder and as a second parameter a whole number (integer). The producer scripts will generate one fiji macro per data set named with an ascending order of numbers. This order of numbers start with the second parameter that has been added during the start sequence of the shell script. This allows to generate a list of macros containing more than the macros of only one parent directory. For the second parent directory one should use an integer as command line parameter that is greater than the integer naming the last macro of the first parent directory. All macros are stored in one of the folder „converter“, „fuse“ or „register“ (cf. Preparation).
 
 ``` bash
  
@@ -123,12 +66,7 @@ generates:
 
 ### Executer shell scripts
 
-In order to keep control over data processing the macros generated by
-the producer scripts are not executed automatically making a pre-check
-possible. Executer scripts will start fiji in a headless mode and
-execute the macros one by one. Therefore executer macros do not require
-any parameter, they execute all macros stored in the respective folder
-„converter“, „fuse“ or „register“ (cf. Preparation).
+In order to keep control over data processing the macros generated by the producer scripts are not executed automatically making a pre-check possible. Executer scripts will start fiji in a headless mode and execute the macros one by one. Therefore executer macros do not require any parameter, they execute all macros stored in the respective folder „converter“, „fuse“ or „register“ (cf. Preparation).
 
 ``` bash
  
@@ -138,18 +76,11 @@ any parameter, they execute all macros stored in the respective folder
 
 ## Detailed description and source code of the shell scripts
 
-The scripts build on one another meaning that the output of one script
-is the input or a prerequisite for the next one. Therefore the scripts
-are marked with ascending numbers to simplify usage.
+The scripts build on one another meaning that the output of one script is the input or a prerequisite for the next one. Therefore the scripts are marked with ascending numbers to simplify usage.
 
 ### 1generate\_convert\_dir
 
-In order not to mix original data with computed ones we create for each
-measurement a subfolder named „convert“. This folder will be located in
-the subfolder containing the original spim data. 1generate\_convert\_dir
-automatically generates the „convert“ folders in all folders below the
-parent folder given as a command line parameter. Specify complete path
-and name of the parent directory, but not a second parameter.
+In order not to mix original data with computed ones we create for each measurement a subfolder named „convert“. This folder will be located in the subfolder containing the original spim data. 1generate\_convert\_dir automatically generates the „convert“ folders in all folders below the parent folder given as a command line parameter. Specify complete path and name of the parent directory, but not a second parameter.
 
 ``` bash
  
@@ -188,11 +119,7 @@ echo "End Macro"
 
 ### 2convert\_TIFFF\_TIF\_js
 
-Shell script generates fiji macros doing the
-[pre-processing](http://openspim.org/Pre-processing) of spim data.
-Specify complete path to data and an integer for each data directory as
-second parameter (cf. Usage). These macros are stored in the folder
-„./macros/converter“.
+Shell script generates fiji macros doing the [pre-processing](http://openspim.org/Pre-processing) of spim data. Specify complete path to data and an integer for each data directory as second parameter (cf. Usage). These macros are stored in the folder „./macros/converter“.
 
 ``` bash
  
@@ -231,9 +158,7 @@ echo "End Macro"
 
 ### 3execute\_convert\_macro\_js
 
-Executes the macros generated by the 2convert\_TIFFF\_TIF\_js script.
-Processed data will be stored in the „convert“ subfolder located under
-the original data folder.
+Executes the macros generated by the 2convert\_TIFFF\_TIF\_js script. Processed data will be stored in the „convert“ subfolder located under the original data folder.
 
 ``` bash
  
@@ -268,12 +193,7 @@ echo "End Macro"
 
 ### 4generate\_register\_macros
 
-Shell script that generates fiji macros doing
-[registration](http://openspim.org/Registration) of spim data. Before
-using this script you have to adopt the registration parameters to the
-needs of the respective experiment. Specify complete path to data and an
-integer for each data directory as second parameter (cf. Usage). These
-macros are stored in the folder „./macros/register“.
+Shell script that generates fiji macros doing [registration](http://openspim.org/Registration) of spim data. Before using this script you have to adopt the registration parameters to the needs of the respective experiment. Specify complete path to data and an integer for each data directory as second parameter (cf. Usage). These macros are stored in the folder „./macros/register“.
 
 ``` bash
  
@@ -350,12 +270,7 @@ echo "End Macro"
 
 ### 6generate\_fusion\_macros
 
-Shell script that generates fiji macros doing
-[fusion](http://openspim.org/Fusion) of spim data. Before using this
-script you have to adopt the fusion parameters to the needs of the
-respective experiment. Specify complete path to data and an integer for
-each data directory as second parameter (cf. Usage). These macros are
-stored in the folder „./macros/fuse“.
+Shell script that generates fiji macros doing [fusion](http://openspim.org/Fusion) of spim data. Before using this script you have to adopt the fusion parameters to the needs of the respective experiment. Specify complete path to data and an integer for each data directory as second parameter (cf. Usage). These macros are stored in the folder „./macros/fuse“.
 
 ``` bash
  
@@ -442,19 +357,11 @@ echo "End Macro"
 
 # Analysis of Invasion
 
-The strategy implemented here involves segmentation, i.e.
-three-dimensional localisation, of both spheroids and invaded cells and
-measuring invasion depths. In contrast to the prior image processing
-steps the following macros are conducted directly within the fiji user
-interface. This allows firsthand control on the analysis.
+The strategy implemented here involves segmentation, i.e. three-dimensional localisation, of both spheroids and invaded cells and measuring invasion depths. In contrast to the prior image processing steps the following macros are conducted directly within the fiji user interface. This allows firsthand control on the analysis.
 
 ### 8bitconversion\_macro
 
-Fiji macro converting fused spim data to 8-bit files required for
-further analysis. The macro imports image sequences out of each
-“convert” folder and stores 8-bit files into a new output directory.
-Before using this script you have to adopt the scale parameters to the
-needs of the respective experiment.
+Fiji macro converting fused spim data to 8-bit files required for further analysis. The macro imports image sequences out of each “convert” folder and stores 8-bit files into a new output directory. Before using this script you have to adopt the scale parameters to the needs of the respective experiment.
 
 ``` java
 input = "path\\to\\data\\"
@@ -487,12 +394,7 @@ for (i = 0; i < list.length; i++)
 
 ### InvasionAnalysis\_macro
 
-Fiji macro doing analysis of cell invasion depths. Both spheroids and
-invaded cells are segmented and the shortest distance of each invaded
-cell to the surface of the spheroid is displayed. Analysis is based on
-the 3D object counter and 3D manager fiji plugins. Before using this
-script you have to adopt the threshold parameters for segmentation to
-the needs of the respective experiment.
+Fiji macro doing analysis of cell invasion depths. Both spheroids and invaded cells are segmented and the shortest distance of each invaded cell to the surface of the spheroid is displayed. Analysis is based on the 3D object counter and 3D manager fiji plugins. Before using this script you have to adopt the threshold parameters for segmentation to the needs of the respective experiment.
 
 ``` java
 input = "path\\to\\data\\";

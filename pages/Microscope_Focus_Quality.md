@@ -8,109 +8,84 @@ categories: Citable
 description: test description
 ---
 
-![Mifqc.png](/images/pages/Mifqc.png "Mifqc.png")"
-
-{% capture source %} {% include github org="fiji"
-repo="microscope-image-quality" tag="microscope-image-quality-0.1.0" %}
+![Mifqc.png](/images/pages/Mifqc.png "Mifqc.png")" 
+{% capture source%}
+{% include github org='fiji' repo='microscope-image-quality' tag='microscope-image-quality-0.1.0' %}
 {% endcapture %}
 
-{% capture release %} {% include maven g="sc.fiji"
-a="microscope-image-quality" v="0.1.0" label="0.1.0" %} {% endcapture %}
+{% capture release%}
+{% include maven g='sc.fiji' a='microscope-image-quality' v='0.1.0' label='0.1.0' %}
+{% endcapture %}
 
-{% capture tatus %} {% include devstatus developer="yes"
-incubating="yes" obsolete="no" %} {% endcapture %}
+{% capture devStatus%}
+{% include devstatus developer='yes' incubating='yes' obsolete='no' %}
+{% endcapture %}
 
-{% capture tatus %} {% include supportstatus debugger="yes"
-reviewer="yes" support="yes" %} {% endcapture %}
+{% capture supportStatus%}
+{% include supportstatus debugger='yes' reviewer='yes' support='yes' %}
+{% endcapture %}
 
-{% capture founders %} {% include person content="ctrueden" %}, {%
-include person content="samueljyang" %}, {% include person
-content="asimshankar" %} {% endcapture %}
+{% capture founders%}
+{% include person content='ctrueden' %}, {% include person content='samueljyang' %}, {% include person content='asimshankar' %}
+{% endcapture %}
 
-{% capture leads %} {% include person content="ctrueden" %} {%
-endcapture %}
+{% capture leads%}
+{% include person content='ctrueden' %}
+{% endcapture %}
 
-{% capture developers %} {% include person content="ctrueden" %} {%
-endcapture %}
+{% capture developers%}
+{% include person content='ctrueden' %}
+{% endcapture %}
 
-{% capture debuggers %} {% include person content="ctrueden" %} {%
-endcapture %}
+{% capture debuggers%}
+{% include person content='ctrueden' %}
+{% endcapture %}
 
-{% capture reviewers %} {% include person content="ctrueden" %} {%
-endcapture %}
+{% capture reviewers%}
+{% include person content='ctrueden' %}
+{% endcapture %}
 
-{% capture support %} {% include person content="ctrueden" %} {%
-endcapture %}
+{% capture support%}
+{% include person content='ctrueden' %}
+{% endcapture %}
 
-{% capture maintainers %} {% include person content="ctrueden" %} {%
-endcapture %}
+{% capture maintainers%}
+{% include person content='ctrueden' %}
+{% endcapture %}
 
-{% capture contributors %} {% include person content="samueljyang" %},
-{% include person content="asimshankar" %} {% endcapture %} {% include
-component name='Microscope Image Focus Quality Classifier'
-url='https://imagej.net/Microscope_Focus_Quality' source=source
-license='[Apache](Apache "wikilink")' release=release tatus=tatus
-tatus=tatus founders=founders leads=leads developers=developers
-debuggers=debuggers reviewers=reviewers support=support
-maintainers=maintainers contributors=contributors %}This plugin assesses
-the focus quality of microscope images, classifying the image in tiles.
+{% capture contributors%}
+{% include person content='samueljyang' %}, {% include person content='asimshankar' %}
+{% endcapture %}
+{% include component name='Microscope Image Focus Quality Classifier' url='https://imagej.net/Microscope\_Focus\_Quality' source=source license='[Apache](Apache "wikilink")' release=release devStatus=devStatus supportStatus=supportStatus founders=founders leads=leads developers=developers debuggers=debuggers reviewers=reviewers support=support maintainers=maintainers contributors=contributors %}This plugin assesses the focus quality of microscope images, classifying the image in tiles.
 
 ## Summary
 
-The plugin predicts an absolute measure of image focus on a single image
-in isolation, without any user-specified parameters. It uses a
-pre-trained deep neural network, operating at the image-patch level, and
-also outputs a measure of prediction certainty, enabling interpretable
-predictions.
+The plugin predicts an absolute measure of image focus on a single image in isolation, without any user-specified parameters. It uses a pre-trained deep neural network, operating at the image-patch level, and also outputs a measure of prediction certainty, enabling interpretable predictions.
 
 ## Installation
 
-  - [Enable](Following_an_update_site "wikilink") the TensorFlow [update
-    site](update_site "wikilink").
-  - The command is in {% include bc content='Plugins | Classification |
-    Microscope Image Focus Quality'%}.
+  - [Enable](Following_an_update_site "wikilink") the TensorFlow [update site](update_site "wikilink").
+  - The command is in {% include bc content='Plugins | Classification | Microscope Image Focus Quality'%}.
 
 ## Usage
 
-  - Open an image to analyze (see [sample
-    images](https://storage.googleapis.com/microscope-image-quality/static/fiji_plugin_test_images.zip)).
-  - Run {% include bc content='Plugins | Classification | Microscope
-    Image Focus Quality'%}.
-  - A dialog will appear allowing you to configure the output
-    visualization. The following options are available:
-      - **Generate probability image** - When checked, a multi-channel
-        image will be created with one channel per focus level, and each
-        value corresponding to the probability of that sample being at
-        that focus level.
-      - **Overlay probability patches** - When checked, each classified
-        region of the image will be overlaid with a color whose hue
-        denotes the most likely focus level and whose brightness denotes
-        the confidence (i.e., probability) of the region being at that
-        level.
-      - **Show patches as solid rectangles** - When checked, overlaid
-        probability patches will be filled semi-transparent and solid;
-        when unchecked, they will be drawn as hollow boundary boxes.
-      - **Displayed patch border width** - When drawing probability
-        patches as boundary boxes, this option controls the box
-        thickness.
+  - Open an image to analyze (see [sample images](https://storage.googleapis.com/microscope-image-quality/static/fiji_plugin_test_images.zip)).
+  - Run {% include bc content='Plugins | Classification | Microscope Image Focus Quality'%}.
+  - A dialog will appear allowing you to configure the output visualization. The following options are available:
+      - **Generate probability image** - When checked, a multi-channel image will be created with one channel per focus level, and each value corresponding to the probability of that sample being at that focus level.
+      - **Overlay probability patches** - When checked, each classified region of the image will be overlaid with a color whose hue denotes the most likely focus level and whose brightness denotes the confidence (i.e., probability) of the region being at that level.
+      - **Show patches as solid rectangles** - When checked, overlaid probability patches will be filled semi-transparent and solid; when unchecked, they will be drawn as hollow boundary boxes.
+      - **Displayed patch border width** - When drawing probability patches as boundary boxes, this option controls the box thickness.
 
-The screenshot above uses the "Overlay probability patches" option with
-a thickness of 5.
+The screenshot above uses the "Overlay probability patches" option with a thickness of 5.
 
-If you wish to access the results of the classification quantitatively
-(e.g., as part of an automated workflow via
-[scripting](scripting "wikilink")), use the "Generate probability image"
-option.
+If you wish to access the results of the classification quantitatively (e.g., as part of an automated workflow via [scripting](scripting "wikilink")), use the "Generate probability image" option.
 
-You can can remove the probability patches overlay via the {% include bc
-content='Image | Overlay | Remove Overlay'%} command.
+You can can remove the probability patches overlay via the {% include bc content='Image | Overlay | Remove Overlay'%} command.
 
 ## Limitations
 
-The plugin is currently limited to single (i.e., 2D) images of 16-bit
-integer data only. The model was trained with images in the intensity
-range of `[0, ~10000]`; your mileage may vary if the input image
-intensities diverge from that too greatly.
+The plugin is currently limited to single (i.e., 2D) images of 16-bit integer data only. The model was trained with images in the intensity range of `[0, ~10000]`; your mileage may vary if the input image intensities diverge from that too greatly.
 
 ## Publication
 
@@ -118,10 +93,7 @@ intensities diverge from that too greatly.
 
 ## See also
 
-  - [TensorFlow](TensorFlow "wikilink"), the machine learning library
-    this plugin uses.
-  - [Using Deep Learning to Facilitate Scientific Image
-    Analysis](https://research.googleblog.com/2018/03/using-deep-learning-to-facilitate.html)
-    post on Google Research Blog
+  - [TensorFlow](TensorFlow "wikilink"), the machine learning library this plugin uses.
+  - [Using Deep Learning to Facilitate Scientific Image Analysis](https://research.googleblog.com/2018/03/using-deep-learning-to-facilitate.html) post on Google Research Blog
 
 [Category:Citable](Category:Citable "wikilink")

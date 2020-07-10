@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT
-    [BoneJ2\#Orientation\_.28WIP.29](BoneJ2#Orientation_.28WIP.29 "wikilink")
+1.  REDIRECT [BoneJ2\#Orientation\_.28WIP.29](BoneJ2#Orientation_.28WIP.29 "wikilink")

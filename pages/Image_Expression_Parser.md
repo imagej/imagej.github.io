@@ -8,16 +8,13 @@ categories: Plugins
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Image\_Expression\_Parser'
-%}{% include toc %}
+{% include component-stats content=':sc.fiji:Image\_Expression\_Parser' %}{% include toc%}
 
 ## Usage
 
-The plugin is located in {% include bc content='Process | Image
-Expression Parser'%}.
+The plugin is located in {% include bc content='Process | Image Expression Parser'%}.
 
-This plugin parses arbitrary mathematical expressions and compute
-results using images as variables. For instance:
+This plugin parses arbitrary mathematical expressions and compute results using images as variables. For instance:
 
     ■ 2*A
     ■ A*(B+30)
@@ -27,46 +24,31 @@ results using images as variables. For instance:
 
 where A,B and C are opened images of the same dimensions.
 
-As of version 2.x, pixel per pixel based operations are supported and
-[Imglib](Imglib "wikilink") algorithm are supported.
+As of version 2.x, pixel per pixel based operations are supported and [Imglib](Imglib "wikilink") algorithm are supported.
 
-The parsing ability is provided by the JEP library: Java Expression
-Parser v.jep-2.4.1-ext-1.1.1-gpl. This is the last version released
-under the GPL by its authors Nathan Funk and Richard Morris, see
-[Singular System](http://www.singularsys.com/jep/). Internally, this
-plugin uses [Imglib](Imglib "wikilink") to deal with images.
+The parsing ability is provided by the JEP library: Java Expression Parser v.jep-2.4.1-ext-1.1.1-gpl. This is the last version released under the GPL by its authors Nathan Funk and Richard Morris, see [Singular System](http://www.singularsys.com/jep/). Internally, this plugin uses [Imglib](Imglib "wikilink") to deal with images.
 
-Internally, images are handled by copying them to a new float type
-image, so as to avoid clipping effect. The result image returned is of
-float type as well.
+Internally, images are handled by copying them to a new float type image, so as to avoid clipping effect. The result image returned is of float type as well.
 
 ## User interface
 
 The interactive version (launched from ImageJ) uses a GUI.
 
-When launched it displays a window allowing the user to enter a
-mathematical expression, with variables (capital single letters, so up
-to 26 variables) and canonical functions. The expression is checked by
-the parser of the JEP library (http://www.singularsys.com/jep/). If it
-is not valid, a hopefully useful error message is displayed.
+When launched it displays a window allowing the user to enter a mathematical expression, with variables (capital single letters, so up to 26 variables) and canonical functions. The expression is checked by the parser of the JEP library (http://www.singularsys.com/jep/). If it is not valid, a hopefully useful error message is displayed.
 
-Variables can be added using +/- buttons. They are matched to opened
-images in ImageJ.
+Variables can be added using +/- buttons. They are matched to opened images in ImageJ.
 
 When the images are RGB images, they are processed in a special way:
 
   - they are split in 3 RGB channels;
   - each channel is parsed and evaluated separately;
-  - the 3 resulting images are put back together in a 3 channel
-    composite image.
+  - the 3 resulting images are put back together in a 3 channel composite image.
 
-This GUI was built in part using Jigloo GUI builder
-http://www.cloudgarden.com/jigloo/.
+This GUI was built in part using Jigloo GUI builder http://www.cloudgarden.com/jigloo/.
 
 ## Supported functions
 
-Here is a list for supported functions and algorithms, as of version
-2.1.
+Here is a list for supported functions and algorithms, as of version 2.1.
 
 ### Supported ImgLib algorithms
 
@@ -512,56 +494,38 @@ Boolean operators
 
 It is relatively easy to extends the parser with new functions.
 
-Basically, you must write a function that implements
-*fiji.expressionparser.function.ImgLibFunction*. Once done, it must be
-added to the parser class, so that it is aware of it. See in
-*fiji.expressionparser.ImgLibParser* the method *addStandardFunctions()*
-for an example.
+Basically, you must write a function that implements *fiji.expressionparser.function.ImgLibFunction*. Once done, it must be added to the parser class, so that it is aware of it. See in *fiji.expressionparser.ImgLibParser* the method *addStandardFunctions()* for an example.
 
-However, in the *fiji.expressionparser.function* package lies a few
-abstract functions made to simplify the extension process:
+However, in the *fiji.expressionparser.function* package lies a few abstract functions made to simplify the extension process:
 
 ### *fiji.expressionparser.function.TwoOperandsPixelBasedAbstractFunction*
 
-This is the mother class for functions that takes two arguments, and
-operate on pixel values only. That is: the pixel value on the result
-image will depend only the pixel values in the source images at the same
-location.
+This is the mother class for functions that takes two arguments, and operate on pixel values only. That is: the pixel value on the result image will depend only the pixel values in the source images at the same location.
 
-For instance, have a look at
-*fiji.expressionparser.function.ImgLibArcTangent2* that extends it. New
-functions will basically just have to implement the actual operation on
-numbers, in the method *evaluate(final R t1, final R t2)*.
+For instance, have a look at *fiji.expressionparser.function.ImgLibArcTangent2* that extends it. New functions will basically just have to implement the actual operation on numbers, in the method *evaluate(final R t1, final R t2)*.
 
 ### *fiji.expressionparser.function.SingleOperandPixelBasedAbstractFunction*
 
-The same thing, but for function with a single argument. For instance,
-see *fiji.expressionparser.function.ImgLibAbs*.
+The same thing, but for function with a single argument. For instance, see *fiji.expressionparser.function.ImgLibAbs*.
 
 ### *fiji.expressionparser.function.SingleOperandAbstractFunction*
 
-This is a more generic abstract class, allowing to handle whole image
-operation. There is two method to implement:
+This is a more generic abstract class, allowing to handle whole image operation. There is two method to implement:
 
-  - *evaluate(Image<R> img)* to specify what the function does on a
-    whole image;
+  - *evaluate(Image<R> img)* to specify what the function does on a whole image;
   - *evaluate(R t)* to specify what the function does on a scalar.
 
 See *ImgLibNormalize* for an example.
 
 ### *fiji.expressionparser.function.TwoOperandsAbstractFunction*
 
-The same things, but for two arguments. There is more methods to
-implement, because of the singleton expansion that can be left or right,
-and not necessary yield identical results.
+The same things, but for two arguments. There is more methods to implement, because of the singleton expansion that can be left or right, and not necessary yield identical results.
 
-See *ImgLibGaussConv* for an example. In this example, you will also see
-how errors or invalid arguments are handled.
+See *ImgLibGaussConv* for an example. In this example, you will also see how errors or invalid arguments are handled.
 
 ## Calling the plugin from elsewhere
 
-It is possible to call the plugin from another class or in a scripting
-language. For instance in Python:
+It is possible to call the plugin from another class or in a scripting language. For instance in Python:
 
 ``` python
 from ij import WindowManager
@@ -594,8 +558,7 @@ result_imp.resetDisplayRange()
 result_imp.updateAndDraw()
 ```
 
-Here is another example in [Javascript](Javascript "wikilink")
-contributed by Jeff Hanson:
+Here is another example in [Javascript](Javascript "wikilink") contributed by Jeff Hanson:
 
 ``` javascript
 // This script was created as an javascript equivalent of the Python example here:
@@ -629,21 +592,13 @@ resultImp.show();
   - v1.1 - Apr 2010 - Expression field now has a history.
   - v2.0 - May 2010 - Complete logic rewrite:
       - functions are now handled by code specific for ImgLib;
-      - support for ImgLib algorithms and non pixel-based operations,
-        such as gaussian convolution;
-      - faster evaluation, thanks to dealing with ImgLib images as
-        objects within the parser instead of pixel per pixel evaluation.
-  - v2.1 - June 2010 - The GUI now generate a new separate thread for
-    processing, freeing resources for the redraw of the GUI panel itself
-    (thanks to Albert Cardona and the Fijiers input).
-  - v2.2 - June 2010 - First version released publicly. RGB images are
-    processed in a special way by the GUI: each of their channel is
-    processed separately and put back together in a composite image.
+      - support for ImgLib algorithms and non pixel-based operations, such as gaussian convolution;
+      - faster evaluation, thanks to dealing with ImgLib images as objects within the parser instead of pixel per pixel evaluation.
+  - v2.1 - June 2010 - The GUI now generate a new separate thread for processing, freeing resources for the redraw of the GUI panel itself (thanks to Albert Cardona and the Fijiers input).
+  - v2.2 - June 2010 - First version released publicly. RGB images are processed in a special way by the GUI: each of their channel is processed separately and put back together in a composite image.
 
 ## Wish list for this plugin
 
-We are interested into knowing how we should extend this plugin so that
-it suits your need. Tell us in the [discussion
-page](Talk:Image_Expression_Parser "wikilink").
+We are interested into knowing how we should extend this plugin so that it suits your need. Tell us in the [discussion page](Talk:Image_Expression_Parser "wikilink").
 
 [Category:Plugins](Category:Plugins "wikilink")

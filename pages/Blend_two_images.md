@@ -15,8 +15,7 @@ A [Clojure](Clojure_Scripting "wikilink") script illustrating how to:
   - Fetch images from the internet
   - Extract and iterate/loop the pixels on an image
   - Create a new image
-  - Set the pixels of the image to a new value, in this case the average
-    of two images
+  - Set the pixels of the image to a new value, in this case the average of two images
 
 The script is maintained by Albert Cardona.
 
@@ -61,5 +60,4 @@ The script is maintained by Albert Cardona.
 
 [Clojure Scripting](Clojure_Scripting "wikilink")
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Scripting](Category:Scripting "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Scripting](Category:Scripting "wikilink")

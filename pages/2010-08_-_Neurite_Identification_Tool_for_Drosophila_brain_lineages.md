@@ -8,6 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [2010-08-23 - Neurite Identification Tool for Drosophila
-    brain
-    lineages](2010-08-23_-_Neurite_Identification_Tool_for_Drosophila_brain_lineages "wikilink")
+1.  REDIRECT [2010-08-23 - Neurite Identification Tool for Drosophila brain lineages](2010-08-23_-_Neurite_Identification_Tool_for_Drosophila_brain_lineages "wikilink")

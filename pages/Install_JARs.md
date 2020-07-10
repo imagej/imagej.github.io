@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Installing 3rd party
-    plugins](Installing_3rd_party_plugins "wikilink")
+1.  REDIRECT [Installing 3rd party plugins](Installing_3rd_party_plugins "wikilink")

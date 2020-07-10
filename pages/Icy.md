@@ -8,21 +8,10 @@ categories: Related Software,SciJava,Citable
 description: test description
 ---
 
-{% include sidebox-right name='Icy' software='Icy'
-logo='![Icy-icon.png](/images/pages/Icy-icon.png "Icy-icon.png")"'
-author='[QuIA](http://www.bioimageanalysis.org/) at [Institut
-Pasteur](http://www.pasteur.fr/en)'
-maintainer='[QuIA](http://www.bioimageanalysis.org/) at [Institut
-Pasteur](http://www.pasteur.fr/en)' source='[on
-GitHub](https://github.com/Icy-imaging)' status='Active'
-website='http://icy.bioimageanalysis.org/' %}Icy is an open community
-platform for bioimage informatics, providing software resources to
-visualize, annotate and quantify bioimaging data.
+{% include info-box name='Icy' software='Icy' logo='![Icy-icon.png](/images/pages/Icy-icon.png "Icy-icon.png")"' author=' [QuIA](http://www.bioimageanalysis.org/) at [Institut Pasteur](http://www.pasteur.fr/en) ' maintainer=' [QuIA](http://www.bioimageanalysis.org/) at [Institut Pasteur](http://www.pasteur.fr/en) ' source=' [on GitHub](https://github.com/Icy-imaging) ' status='Active' website='http://icy.bioimageanalysis.org/' %}Icy is an open community platform for bioimage informatics, providing software resources to visualize, annotate and quantify bioimaging data.
 
 ## Publication
 
   - {% include publication content='Icy' %}
 
-[Category:Related Software](Category:Related_Software "wikilink")
-[Category:SciJava](Category:SciJava "wikilink")
-[Category:Citable](Category:Citable "wikilink")
+[Category:Related Software](Category:Related_Software "wikilink") [Category:SciJava](Category:SciJava "wikilink") [Category:Citable](Category:Citable "wikilink")

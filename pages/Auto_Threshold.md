@@ -8,118 +8,45 @@ categories: Plugins,Segmentation
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Auto\_Threshold' %}This
-plugin binarises 8 and 16-bit images using various **global**
-(histogram-derived) thresholding methods. The segmented phase is always
-shown as white (255).
+{% include component-stats content=':sc.fiji:Auto\_Threshold' %}This plugin binarises 8 and 16-bit images using various **global** (histogram-derived) thresholding methods. The segmented phase is always shown as white (255).
 
-For **local** thresholding rather than global, see the [Auto Local
-Threshold](Auto_Local_Threshold "wikilink") plugin.
+For **local** thresholding rather than global, see the [Auto Local Threshold](Auto_Local_Threshold "wikilink") plugin.
 
 ## Installation
 
-**ImageJ**: requires v1.42m or newer. Download
-[Auto\_Threshold-X.Y.Z.jar](http://maven.imagej.net/service/local/artifact/maven/redirect?r=releases&g=sc.fiji&a=Auto_Threshold&v=RELEASE&e=jar)
-and copy it into the ImageJ/plugins folder and either restart ImageJ or
-run the '{% include bc content='Help | Update Menus'%}' command. After
-this a new command should appear in '{% include bc content='Image |
-Adjust | Auto Threshold'%}'.
+**ImageJ**: requires v1.42m or newer. Download [Auto\_Threshold-X.Y.Z.jar](http://maven.imagej.net/service/local/artifact/maven/redirect?r=releases&g=sc.fiji&a=Auto_Threshold&v=RELEASE&e=jar) and copy it into the ImageJ/plugins folder and either restart ImageJ or run the '{% include bc content='Help | Update Menus'%}' command. After this a new command should appear in '{% include bc content='Image | Adjust | Auto Threshold'%}'.
 
-**Fiji**: this plugin is part of the Fiji distribution, there is no need
-to download it.
+**Fiji**: this plugin is part of the Fiji distribution, there is no need to download it.
 
 ## Use
 
 **Method** selects the algorithm to be applied (detailed below).
 
-The **Ignore black** and **Ignore white** options set the image
-histogram bins for \[0\] and \[255\] greylevels to 0 respectively. This
-may be useful if the digitised image has under- or over- exposed pixels.
+The **Ignore black** and **Ignore white** options set the image histogram bins for \[0\] and \[255\] greylevels to 0 respectively. This may be useful if the digitised image has under- or over- exposed pixels.
 
-**White object on black background** sets to white the pixels with
-values above the threshold value (otherwise, it sets to white the values
-less or equal to the threshold).
+**White object on black background** sets to white the pixels with values above the threshold value (otherwise, it sets to white the values less or equal to the threshold).
 
-**Set Threshold instead of Threshold (single images)** sets the
-thresholding LUT, without changing the pixel data. This works only for
-single images.
+**Set Threshold instead of Threshold (single images)** sets the thresholding LUT, without changing the pixel data. This works only for single images.
 
-It you are processing a stack, two additional options are available:
-**Stack** can be used to process all the slices (the threshold of each
-slice will be computed separately). If this option is left unchecked,
-only the current slice will be processed. **Use stack histogram** first
-computes the histogram of the whole stack, then computes the threshold
-based on that histogram and finally binarises all the slices with that
-single value. Selecting this option also selects the **Stack** option
-above automatically.
+It you are processing a stack, two additional options are available: **Stack** can be used to process all the slices (the threshold of each slice will be computed separately). If this option is left unchecked, only the current slice will be processed. **Use stack histogram** first computes the histogram of the whole stack, then computes the threshold based on that histogram and finally binarises all the slices with that single value. Selecting this option also selects the **Stack** option above automatically.
 
 **Important notes:**
 
-**1.** This plugin is accessed through the {% include bc content='Image
-| Auto Threshold'%} menu entry, however the thresholding methods were
-also partially implemented in ImageJ's thresholder applet accessible
-through the {% include bc content='Image | Adjust | Threshold...'%} menu
-entry. While the Auto Threshold plugin can use or ignore the extremes of
-the image histogram (Ignore black, Ignore white) the applet cannot: the
-'default' method ignores the histogram extremes but the others methods
-do not. This means that applying the two commands to the same image can
-produce apparently different results. In essence, the Auto Threshold
-plugin, with the correct settings, can reproduce the results of the
-applet, but not the way round.
+**1.** This plugin is accessed through the {% include bc content='Image | Auto Threshold'%} menu entry, however the thresholding methods were also partially implemented in ImageJ's thresholder applet accessible through the {% include bc content='Image | Adjust | Threshold...'%} menu entry. While the Auto Threshold plugin can use or ignore the extremes of the image histogram (Ignore black, Ignore white) the applet cannot: the 'default' method ignores the histogram extremes but the others methods do not. This means that applying the two commands to the same image can produce apparently different results. In essence, the Auto Threshold plugin, with the correct settings, can reproduce the results of the applet, but not the way round.
 
-**2.** From version 1.12 the plugin supports thresholding of 16-bit
-images. Since the Auto Threshold plugin processes the full greyscale
-space, it can be slow when dealing with 16-bit images. Note that the
-ImageJ thresholder applet also processes 16-bit images, but in reality
-ImageJ first computes a histogram with 256 bins. Therefore, there might
-be differences in the results obtained on 16-bit images when using the
-applet and the true 16-bit results obtained with this plugin. Note that
-for speeding up, the histogram is bracketed to include only the range of
-bins that contain data (and avoid processing empty histogram bins at
-both extremes).
+**2.** From version 1.12 the plugin supports thresholding of 16-bit images. Since the Auto Threshold plugin processes the full greyscale space, it can be slow when dealing with 16-bit images. Note that the ImageJ thresholder applet also processes 16-bit images, but in reality ImageJ first computes a histogram with 256 bins. Therefore, there might be differences in the results obtained on 16-bit images when using the applet and the true 16-bit results obtained with this plugin. Note that for speeding up, the histogram is bracketed to include only the range of bins that contain data (and avoid processing empty histogram bins at both extremes).
 
-**3.** The result of 16 bit images and stacks (when processing all
-slices) is an 8 bit container showing the result in white \[255\] to
-comply with the concept of "binary image" (i.e. 8 bits with 0 and 255
-values). However, for stacks where only 1 slice is thresholded, the
-result is still a 16 bit container with the thresholded phase shown as
-white \[65535\]. This is to keep the data untouched in the remaining
-slices. The "Try all" option retains the 16 bit format to still show the
-images with methods that might fail to obtain a threshold. Images and
-stacks that are impossible to threshold remain unchanged.
+**3.** The result of 16 bit images and stacks (when processing all slices) is an 8 bit container showing the result in white \[255\] to comply with the concept of "binary image" (i.e. 8 bits with 0 and 255 values). However, for stacks where only 1 slice is thresholded, the result is still a 16 bit container with the thresholded phase shown as white \[65535\]. This is to keep the data untouched in the remaining slices. The "Try all" option retains the 16 bit format to still show the images with methods that might fail to obtain a threshold. Images and stacks that are impossible to threshold remain unchanged.
 
-**4.** The same image in 8 and 16 bits (without *scaling*) returns the
-same threshold value, however Li's method originally would return
-different values when the image data was *offset* (e.g. when adding a
-fixed value to all pixels). The current implementation avoids this
-offset-dependent problem.
+**4.** The same image in 8 and 16 bits (without *scaling*) returns the same threshold value, however Li's method originally would return different values when the image data was *offset* (e.g. when adding a fixed value to all pixels). The current implementation avoids this offset-dependent problem.
 
-**5.** The same image *scaled* by a fixed value (e.g. when multiplying
-all pixels by a fixed value) returns a similar threshold result (within
-2 greyscale levels of the original unscaled image) for all methods
-except Huang, Li and Triangle due to the way these algorithms work. E.g.
-the Triangle method applied to an 8 bit image and to the same image
-converted to 16 bits *with scaling* can result in different threshold
-values. This is because the scaling from 8 to 16 bits creates empty bins
-in between the scaled grey values. The Triangle method (based on a
-geometric approach) finds those artefactual gaps in the new 16 bit
-histogram which satisfy the method constraints, but which would not
-exist in the original 8 bit image. This cannot be prevented (for example
-by detecting empty histogram bins) as it would interfere with the
-analysis when real empty bins (as oppose to artefactual ones) exist in
-the image.
+**5.** The same image *scaled* by a fixed value (e.g. when multiplying all pixels by a fixed value) returns a similar threshold result (within 2 greyscale levels of the original unscaled image) for all methods except Huang, Li and Triangle due to the way these algorithms work. E.g. the Triangle method applied to an 8 bit image and to the same image converted to 16 bits *with scaling* can result in different threshold values. This is because the scaling from 8 to 16 bits creates empty bins in between the scaled grey values. The Triangle method (based on a geometric approach) finds those artefactual gaps in the new 16 bit histogram which satisfy the method constraints, but which would not exist in the original 8 bit image. This cannot be prevented (for example by detecting empty histogram bins) as it would interfere with the analysis when real empty bins (as oppose to artefactual ones) exist in the image.
 
 ## Available methods
 
 ### Try all
 
-Which method segments your data best? One can attempt to answer this
-question using the **Try all** option. This produces a montage with
-results from all the methods, allowing to explore how the different
-algorithms perform on a particular image or stack. When using stacks, in
-some cases it might not be a good idea to segment each slice
-individually rather than with a single threshold for all slices (try the
-mri-stack.tif from the sample images to better understand this issue).
+Which method segments your data best? One can attempt to answer this question using the **Try all** option. This produces a montage with results from all the methods, allowing to explore how the different algorithms perform on a particular image or stack. When using stacks, in some cases it might not be a good idea to segment each slice individually rather than with a single threshold for all slices (try the mri-stack.tif from the sample images to better understand this issue).
 
 ![lymp.png](/images/pages/lymp.png "lymp.png")"
 
@@ -129,263 +56,109 @@ Original image
 
 Try all methods.
 
-When processing stacks with many slices, the montages can become very
-large (\~16 times the original stack size) and one risks running out of
-RAM. A popup window will appear (when stacks have more than 25 slices)
-to confirm whether the procedure should display the montaged results.
-Select **No** to compute the threshold values and display them in the
-log window.
+When processing stacks with many slices, the montages can become very large (\~16 times the original stack size) and one risks running out of RAM. A popup window will appear (when stacks have more than 25 slices) to confirm whether the procedure should display the montaged results. Select **No** to compute the threshold values and display them in the log window.
 
 ### Default
 
-This is the original method of auto thresholding available in ImageJ,
-which is a variation of the IsoData algorithm (described below). The
-**Default** option should return the same values as the '{% include bc
-content='Image | Adjust | Threshold | Auto'%}', when selecting **Ignore
-black** and **Ignore white**. To indicate segmentation of the desired
-phase, use the **White objects on black background** option. The IsoData
-method is also known as *iterative intermeans*.
+This is the original method of auto thresholding available in ImageJ, which is a variation of the IsoData algorithm (described below). The **Default** option should return the same values as the '{% include bc content='Image | Adjust | Threshold | Auto'%}', when selecting **Ignore black** and **Ignore white**. To indicate segmentation of the desired phase, use the **White objects on black background** option. The IsoData method is also known as *iterative intermeans*.
 
 ### Huang
 
-Implements Huang's fuzzy thresholding method. This uses Shannon's
-entropy function (one can also use Yager's entropy function).
+Implements Huang's fuzzy thresholding method. This uses Shannon's entropy function (one can also use Yager's entropy function).
 
-  - 
-{% capture includecontent %} last = Huang | first = L-K | last2 = Wang |
-first2 = M-J J | year = 1995 | journal = Pattern Recognition | url =
-http://www.ktl.elf.stuba.sk/study/vacso/Zadania-Cvicenia/Cvicenie_3/TimA2/Huang_E016529624.pdf
-| title = Image thresholding by minimizing the measure of fuzziness |
-volume = 28(1) | pages = 41-51
+  - {% include citation last='Huang' first='L-K' last2='Wang' first2='M-J J' year='1995' journal='Pattern Recognition' url='http://www.ktl.elf.stuba.sk/study/vacso/Zadania-Cvicenia/Cvicenie\_3/TimA2/Huang\_E016529624.pdf' title='Image thresholding by minimizing the measure of fuzziness' volume='28(1)' pages='41-51' %}
 
-{% endcapture %}
-
-{% include citation content=includecontent %}
-
-Ported from ME Celebi's fourier\_0.8 routines
-[1](http://sourceforge.net/projects/fourier-ipal) and
-[2](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
+Ported from ME Celebi's fourier\_0.8 routines [1](http://sourceforge.net/projects/fourier-ipal) and [2](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
 
 ### Huang2
 
-This is an alternative implementation of Huang's method by J. Schindelin
-with an impressive speed advantage on 16 bit images. On some images,
-however the method gives returns different values than the original
-Huang method above.
+This is an alternative implementation of Huang's method by J. Schindelin with an impressive speed advantage on 16 bit images. On some images, however the method gives returns different values than the original Huang method above.
 
 ### Intermodes
 
-This assumes a bimodal histogram. The histogram is iteratively smoothed
-using a running average of size 3, until there are only two local
-maxima: j and k. The threshold t is then computed as (j+k)/2. Images
-with histograms having extremely unequal peaks or a broad and ﬂat valley
-are unsuitable for this method. method
+This assumes a bimodal histogram. The histogram is iteratively smoothed using a running average of size 3, until there are only two local maxima: j and k. The threshold t is then computed as (j+k)/2. Images with histograms having extremely unequal peaks or a broad and ﬂat valley are unsuitable for this method. method
 
-  - 
-{% capture includecontent %} last = Prewitt | first = JMS | last2 =
-Mendelsohn | first2 = ML | year = 1966 | journal = Annals of the New
-York Academy of Sciences | url =
-http://www3.interscience.wiley.com/journal/119758871/abstract?CRETRY=1&SRETRY=0
-| title = The analysis of cell images | volume = 128 | pages = 1035-1053
+  - {% include citation last='Prewitt' first='JMS' last2='Mendelsohn' first2='ML' year='1966' journal='Annals of the New York Academy of Sciences' url='http://www3.interscience.wiley.com/journal/119758871/abstract?CRETRY=1\&SRETRY=0' title='The analysis of cell images' volume='128' pages='1035-1053' %}
 
-{% endcapture %}
-
-{% include citation content=includecontent %}
-
-Ported from Antti Niemistö's [MATLAB](MATLAB "wikilink") code. See
-[here](https://github.com/carandraug/histthresh) for an excellent slide
-presentation and his original [MATLAB](MATLAB "wikilink") code.
+Ported from Antti Niemistö's [MATLAB](MATLAB "wikilink") code. See [here](https://github.com/carandraug/histthresh) for an excellent slide presentation and his original [MATLAB](MATLAB "wikilink") code.
 
 ### IsoData
 
 Iterative procedure based on the isodata algorithm of:
 
-  - 
-{% capture includecontent %} last = Ridler | first = TW | last2 =
-Calvard | first2 = S | year = 1978 | journal = IEEE Transactions on
-Systems, Man and Cybernetics | url =
-http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4310039 | title =
-Picture thresholding using an iterative selection method | volume = 8 |
-pages = 630-632
+  - {% include citation last='Ridler' first='TW' last2='Calvard' first2='S' year='1978' journal='IEEE Transactions on Systems, Man and Cybernetics' url='http://ieeexplore.ieee.org/xpls/abs\_all.jsp?arnumber=4310039' title='Picture thresholding using an iterative selection method' volume='8' pages='630-632' %}
 
-{% endcapture %}
-
-{% include citation content=includecontent %}
-
-The procedure divides the image into object and background by taking an
-initial threshold, then the averages of the pixels at or below the
-threshold and pixels above are computed. The averages of those two
-values are computed, the threshold is incremented and the process is
-repeated until the threshold is larger than the composite average. That
-is,
+The procedure divides the image into object and background by taking an initial threshold, then the averages of the pixels at or below the threshold and pixels above are computed. The averages of those two values are computed, the threshold is incremented and the process is repeated until the threshold is larger than the composite average. That is,
 
 `threshold = (average background + average objects)/2. `
 
-Several implementations of this method exist. See the source code for
-further comments.
+Several implementations of this method exist. See the source code for further comments.
 
 ### Li
 
-Implements Li's Minimum Cross Entropy thresholding method based on the
-iterative version (2nd reference below) of the algorithm.
+Implements Li's Minimum Cross Entropy thresholding method based on the iterative version (2nd reference below) of the algorithm.
 
-  - 
-{% capture includecontent %} last = Li | first = CH | last2 = Lee |
-first2 = CK | year = 1993 | journal = Pattern Recognition | title =
-Minimum Cross Entropy Thresholding | volume = 26(4) | pages = 617-625
+  - {% include citation last='Li' first='CH' last2='Lee' first2='CK' year='1993' journal='Pattern Recognition' title='Minimum Cross Entropy Thresholding' volume='26(4)' pages='617-625' %}
 
-{% endcapture %}
+<!-- end list -->
 
-{% include citation content=includecontent %}
+  - {% include citation last='Li' first='CH' last2='Tam' first2='PKS' year='1998' journal='Pattern Recognition Letters' title='An Iterative Algorithm for Minimum Cross Entropy Thresholding' volume='18(8)' pages='771-776' %}
 
-  - 
-{% capture includecontent %} last = Li | first = CH | last2 = Tam |
-first2 = PKS | year = 1998 | journal = Pattern Recognition Letters |
-title = An Iterative Algorithm for Minimum Cross Entropy Thresholding |
-volume = 18(8) | pages = 771-776
+<!-- end list -->
 
-{% endcapture %}
+  - {% include citation last='Sezgin' first='M' last2='Sankur' first2='B' year='2004' journal='Journal of Electronic Imaging' title='Survey over Image Thresholding Techniques and Quantitative Performance Evaluation' volume='13(1)' pages='146-165' url='http://citeseer.ist.psu.edu/sezgin04survey.html' %}
 
-{% include citation content=includecontent %}
-
-  - 
-{% capture includecontent %} last = Sezgin | first = M | last2 = Sankur
-| first2 = B | year = 2004 | journal = Journal of Electronic Imaging |
-title = Survey over Image Thresholding Techniques and Quantitative
-Performance Evaluation | volume = 13(1) | pages = 146-165 | url =
-http://citeseer.ist.psu.edu/sezgin04survey.html
-
-{% endcapture %}
-
-{% include citation content=includecontent %}
-
-Ported from ME Celebi's fourier\_0.8 routines
-[3](http://sourceforge.net/projects/fourier-ipal) and
-[4](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
+Ported from ME Celebi's fourier\_0.8 routines [3](http://sourceforge.net/projects/fourier-ipal) and [4](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
 
 ### MaxEntropy
 
 Implements Kapur-Sahoo-Wong (Maximum Entropy) thresholding method:
 
-  - 
-{% capture includecontent %} last = Kapur | first = JN | last2 = Sahoo |
-first2 = PK | last3 = Wong | first3 = ACK | year = 1985 | journal =
-Graphical Models and Image Processing | title = A New Method for
-Gray-Level Picture Thresholding Using the Entropy of the Histogram |
-volume = 29(3) | pages = 273-285
+  - {% include citation last='Kapur' first='JN' last2='Sahoo' first2='PK' last3='Wong' first3='ACK' year='1985' journal='Graphical Models and Image Processing' title='A New Method for Gray-Level Picture Thresholding Using the Entropy of the Histogram' volume='29(3)' pages='273-285' %}
 
-{% endcapture %}
-
-{% include citation content=includecontent %}
-
-Ported from ME Celebi's fourier\_0.8 routines
-[5](http://sourceforge.net/projects/fourier-ipal) and
-[6](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
+Ported from ME Celebi's fourier\_0.8 routines [5](http://sourceforge.net/projects/fourier-ipal) and [6](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
 
 ### Mean
 
-Uses the mean of grey levels as the threshold. It is used by some other
-methods as a first guess threshold.
+Uses the mean of grey levels as the threshold. It is used by some other methods as a first guess threshold.
 
-  - 
-{% capture includecontent %} last = Glasbey | first = CA | year = 1993 |
-journal = CVGIP: Graphical Models and Image Processing | title = An
-analysis of histogram-based thresholding algorithms | volume = 55 |
-pages = 532-537
-
-{% endcapture %}
-
-{% include citation content=includecontent %}
+  - {% include citation last='Glasbey' first='CA' year='1993' journal='CVGIP: Graphical Models and Image Processing' title='An analysis of histogram-based thresholding algorithms' volume='55' pages='532-537' %}
 
 ### MinError(I)
 
-An iterative implementation of Kittler and Illingworth's Minimum Error
-thresholding.
+An iterative implementation of Kittler and Illingworth's Minimum Error thresholding.
 
-This implementation seems to converge more often than the original.
-Nevertheless, sometimes the algorithm does not converge to a solution.
-In that case a warning is reported to the log window and the result
-defaults to the initial estimate of the threshold which is computed
-using the Mean method. The **Ignore black** or **Ignore white** options
-might help to avoid this problem.
+This implementation seems to converge more often than the original. Nevertheless, sometimes the algorithm does not converge to a solution. In that case a warning is reported to the log window and the result defaults to the initial estimate of the threshold which is computed using the Mean method. The **Ignore black** or **Ignore white** options might help to avoid this problem.
 
-  - 
-{% capture includecontent %} last = Kittler | first = J | last2 =
-Illingworth | first2 = J | year = 1986 | journal = Pattern Recognition |
-title = Minimum error thresholding | volume = 19 | pages = 41-47
+  - {% include citation last='Kittler' first='J' last2='Illingworth' first2='J' year='1986' journal='Pattern Recognition' title='Minimum error thresholding' volume='19' pages='41-47' %}
 
-{% endcapture %}
-
-{% include citation content=includecontent %}
-
-Ported from Antti Niemistö's [MATLAB](MATLAB "wikilink") code. See
-[here](http://www.cs.tut.fi/~ant/histthresh/) for an excellent slide
-presentation and the original [MATLAB](MATLAB "wikilink") code.
+Ported from Antti Niemistö's [MATLAB](MATLAB "wikilink") code. See [here](http://www.cs.tut.fi/~ant/histthresh/) for an excellent slide presentation and the original [MATLAB](MATLAB "wikilink") code.
 
 ### Minimum
 
-Similarly to the Intermodes method, this assumes a bimodal histogram.
-The histogram is iteratively smoothed using a running average of size 3,
-until there are only two local maxima. The threshold t is such that yt−1
-\> yt \<= yt+1.
+Similarly to the Intermodes method, this assumes a bimodal histogram. The histogram is iteratively smoothed using a running average of size 3, until there are only two local maxima. The threshold t is such that yt−1 \> yt \<= yt+1.
 
-Images with histograms having extremely unequal peaks or a broad and ﬂat
-valley are unsuitable for this method.
+Images with histograms having extremely unequal peaks or a broad and ﬂat valley are unsuitable for this method.
 
-  - 
-{% capture includecontent %} last = Prewitt | first = JMS | last2 =
-Mendelsohn | first2 = ML | year = 1966 | journal = Annals of the New
-York Academy of Sciences | url =
-http://www3.interscience.wiley.com/journal/119758871/abstract?CRETRY=1&SRETRY=0
-| title = The analysis of cell images | volume = 128 | pages = 1035-1053
+  - {% include citation last='Prewitt' first='JMS' last2='Mendelsohn' first2='ML' year='1966' journal='Annals of the New York Academy of Sciences' url='http://www3.interscience.wiley.com/journal/119758871/abstract?CRETRY=1\&SRETRY=0' title='The analysis of cell images' volume='128' pages='1035-1053' %}
 
-{% endcapture %}
-
-{% include citation content=includecontent %}
-
-Ported from Antti Niemistö's [MATLAB](MATLAB "wikilink") code. See
-[here](http://www.cs.tut.fi/~ant/histthresh/) for an excellent slide
-presentation and the original [MATLAB](MATLAB "wikilink") code.
+Ported from Antti Niemistö's [MATLAB](MATLAB "wikilink") code. See [here](http://www.cs.tut.fi/~ant/histthresh/) for an excellent slide presentation and the original [MATLAB](MATLAB "wikilink") code.
 
 ### Moments
 
-Tsai's method attempts to preserve the moments of the original image in
-the thresholded result.
+Tsai's method attempts to preserve the moments of the original image in the thresholded result.
 
-  - 
-{% capture includecontent %} last = Tsai | first = W | year = 1985 |
-journal = Computer Vision, Graphics, and Image Processing | url =
-http://portal.acm.org/citation.cfm?id=201578 | title =
-Moment-preserving thresholding: a new approach | volume = 29 | pages =
-377-393
+  - {% include citation last='Tsai' first='W' year='1985' journal='Computer Vision, Graphics, and Image Processing' url='http://portal.acm.org/citation.cfm?id=201578' title='Moment-preserving thresholding: a new approach' volume='29' pages='377-393' %}
 
-{% endcapture %}
-
-{% include citation content=includecontent %}
-
-Ported from ME Celebi's fourier\_0.8 routines
-[7](http://sourceforge.net/projects/fourier-ipal) and
-[8](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
+Ported from ME Celebi's fourier\_0.8 routines [7](http://sourceforge.net/projects/fourier-ipal) and [8](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
 
 ### Otsu
 
-Otsu's threshold clustering algorithm searches for the threshold that
-minimizes the intra-class variance, defined as a weighted sum of
-variances of the two classes.
+Otsu's threshold clustering algorithm searches for the threshold that minimizes the intra-class variance, defined as a weighted sum of variances of the two classes.
 
-  - 
-{% capture includecontent %} last = Otsu | first = N | year = 1979 |
-journal = IEEE Trans. Sys., Man., Cyber. | url =
-http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?&arnumber=4310076 |
-title = A threshold selection method from gray-level histograms | volume
-= 9 | pages = 62-66 | doi = 10.1109/TSMC.1979.4310076
+  - {% include citation last='Otsu' first='N' year='1979' journal='IEEE Trans. Sys., Man., Cyber.' url='http://ieeexplore.ieee.org/xpl/freeabs\_all.jsp?\&arnumber=4310076' title='A threshold selection method from gray-level histograms' volume='9' pages='62-66' doi='10.1109/TSMC.1979.4310076' %}
 
-{% endcapture %}
-
-{% include citation content=includecontent %}
-
-See also the [Wikipedia article on Otsu's
-method](wikipedia:Otsu's_method "wikilink").
+See also the [Wikipedia article on Otsu's method](wikipedia:Otsu's_method "wikilink").
 
 Ported from C++ code by Jordan Bevik.
 
@@ -393,118 +166,46 @@ Ported from C++ code by Jordan Bevik.
 
 Assumes the fraction of foreground pixels to be 0.5.
 
-  - 
-{% capture includecontent %} last = Doyle | first = W | year = 1962 |
-journal = Journal of the Association for Computing Machinery | url =
-http://portal.acm.org/citation.cfm?id=321119.321123 | title =
-Operation useful for similarity-invariant pattern recognition | volume =
-9 | pages = 259-267 | doi = 10.1145/321119.321123
+  - {% include citation last='Doyle' first='W' year='1962' journal='Journal of the Association for Computing Machinery' url='http://portal.acm.org/citation.cfm?id=321119.321123' title='Operation useful for similarity-invariant pattern recognition' volume='9' pages='259-267' doi='10.1145/321119.321123' %}
 
-{% endcapture %}
-
-{% include citation content=includecontent %}
-
-Ported from Antti Niemistö's [MATLAB](MATLAB "wikilink") code. See
-[here](http://www.cs.tut.fi/~ant/histthresh/) for an excellent slide
-presentation and the original [MATLAB](MATLAB "wikilink") code.
+Ported from Antti Niemistö's [MATLAB](MATLAB "wikilink") code. See [here](http://www.cs.tut.fi/~ant/histthresh/) for an excellent slide presentation and the original [MATLAB](MATLAB "wikilink") code.
 
 ### RenyiEntropy
 
 Similar to the **MaxEntropy** method, but using Renyi's entropy instead.
 
-  - 
-{% capture includecontent %} last = Kapur | first = JN | last2 = Sahoo |
-first2 = PK | last3 = Wong | first3 = ACK | year = 1985 | journal =
-Graphical Models and Image Processing | title = A New Method for
-Gray-Level Picture Thresholding Using the Entropy of the Histogram |
-volume = 29(3) | pages = 273-285
+  - {% include citation last='Kapur' first='JN' last2='Sahoo' first2='PK' last3='Wong' first3='ACK' year='1985' journal='Graphical Models and Image Processing' title='A New Method for Gray-Level Picture Thresholding Using the Entropy of the Histogram' volume='29(3)' pages='273-285' %}
 
-{% endcapture %}
-
-{% include citation content=includecontent %}
-
-Ported from ME Celebi's fourier\_0.8 routines
-[9](http://sourceforge.net/projects/fourier-ipal) and
-[10](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
+Ported from ME Celebi's fourier\_0.8 routines [9](http://sourceforge.net/projects/fourier-ipal) and [10](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
 
 ### Shanbhag
 
-{% capture includecontent %} first = Abhijit G. | last = Shanbhag |
-title = Utilization of information measure as a means of image
-thresholding | journal = Graph. Models Image Process. | volume = 56 |
-number = 5 | year = 1994 | issn = 1049-9652 | pages = 414--419 | doi =
-10.1006/cgip.1994.1037 | publisher = Academic Press, Inc. | address =
-{Orlando, FL, USA},
+{% include citation first='Abhijit G.' last='Shanbhag' title='Utilization of information measure as a means of image thresholding' journal='Graph. Models Image Process.' volume='56' number='5' year='1994' issn='1049-9652' pages='414--419' doi='10.1006/cgip.1994.1037' publisher='Academic Press, Inc.' address='{Orlando, FL, USA},' %}
 
-{% endcapture %}
-
-{% include citation content=includecontent %}
-
-Ported from ME Celebi's fourier\_0.8 routines
-[11](http://sourceforge.net/projects/fourier-ipal) and
-[12](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
+Ported from ME Celebi's fourier\_0.8 routines [11](http://sourceforge.net/projects/fourier-ipal) and [12](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
 
 ### Triangle
 
 This is an implementation of the Triangle method:
 
-  - 
-{% capture includecontent %} author=Zack GW, Rogers WE, Latt SA
-|title=Automatic measurement of sister chromatid exchange frequency
-|journal=J. Histochem. Cytochem. |volume=25 |issue=7 |pages=741–53
-|year=1977 |month=July |pmid=70454 |doi=
-|url=http://www.jhc.org/cgi/pmidlookup?view=long&pmid=70454
+  - {% include citation author='Zack GW, Rogers WE, Latt SA' title='Automatic measurement of sister chromatid exchange frequency' journal='J. Histochem. Cytochem.' volume='25' issue='7' pages='741–53' year='1977' month='July' pmid='70454' doi='' url='http://www.jhc.org/cgi/pmidlookup?view=long\&pmid=70454' %}
 
-{% endcapture %}
+Modified from Johannes Schindelin's plugin [Triangle\_Algorithm](http://wbgn013.biozentrum.uni-wuerzburg.de/ImageJ/triangle-algorithm.html).
 
-{% include citation content=includecontent %}
+See also: http://www.ph.tn.tudelft.nl/Courses/FIP/noframes/fip-Segmenta.html#Heading118
 
-Modified from Johannes Schindelin's plugin
-[Triangle\_Algorithm](http://wbgn013.biozentrum.uni-wuerzburg.de/ImageJ/triangle-algorithm.html).
-
-See also:
-http://www.ph.tn.tudelft.nl/Courses/FIP/noframes/fip-Segmenta.html#Heading118
-
-The Triangle algorithm, a geometric method, cannot tell whether the data
-is skewed to one side or another, but assumes a maximum peak (mode) near
-one end of the histogram and searches towards the other end. This causes
-a problem in the absence of information of the type of image to be
-processed, or when the maximum is not near one of the histogram extremes
-(resulting in two possible threshold regions between that max and the
-extremes). Here the algorithm was extended to find on which side of the
-max peak the data goes the furthest and searches for the threshold
-within that largest range.
+The Triangle algorithm, a geometric method, cannot tell whether the data is skewed to one side or another, but assumes a maximum peak (mode) near one end of the histogram and searches towards the other end. This causes a problem in the absence of information of the type of image to be processed, or when the maximum is not near one of the histogram extremes (resulting in two possible threshold regions between that max and the extremes). Here the algorithm was extended to find on which side of the max peak the data goes the furthest and searches for the threshold within that largest range.
 
 ### Yen
 
 Implements Yen's thresholding method from:
 
-  - 
-{% capture includecontent %} author = Yen JC, Chang FJ, Chang S | title
-= A New Criterion for Automatic Multilevel Thresholding | journal = IEEE
-Trans. on Image Processing | volume = 4 | issue = 3 | pages = 370-378 |
-year = 1995 | doi = 10.1109/83.366472 |
-url=http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=366472 |
-issn = 1057-7149
+  - {% include citation author='Yen JC, Chang FJ, Chang S' title='A New Criterion for Automatic Multilevel Thresholding' journal='IEEE Trans. on Image Processing' volume='4' issue='3' pages='370-378' year='1995' doi='10.1109/83.366472' url='http://ieeexplore.ieee.org/xpl/freeabs\_all.jsp?arnumber=366472' issn='1057-7149' %}
 
-{% endcapture %}
+<!-- end list -->
 
-{% include citation content=includecontent %}
+  - {% include citation last='Sezgin' first='M' last2='Sankur' first2='B' year='2004' journal='Journal of Electronic Imaging' title='Survey over Image Thresholding Techniques and Quantitative Performance Evaluation' volume='13(1)' pages='146-165' url='http://citeseer.ist.psu.edu/sezgin04survey.html' %}
 
-  - 
-{% capture includecontent %} last = Sezgin | first = M | last2 = Sankur
-| first2 = B | year = 2004 | journal = Journal of Electronic Imaging |
-title = Survey over Image Thresholding Techniques and Quantitative
-Performance Evaluation | volume = 13(1) | pages = 146-165 | url =
-http://citeseer.ist.psu.edu/sezgin04survey.html
+Ported from ME Celebi's fourier\_0.8 routines [13](http://sourceforge.net/projects/fourier-ipal) and [14](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
 
-{% endcapture %}
-
-{% include citation content=includecontent %}
-
-Ported from ME Celebi's fourier\_0.8 routines
-[13](http://sourceforge.net/projects/fourier-ipal) and
-[14](http://www.lsus.edu/faculty/~ecelebi/fourier.htm).
-
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Segmentation](Category:Segmentation "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Segmentation](Category:Segmentation "wikilink")

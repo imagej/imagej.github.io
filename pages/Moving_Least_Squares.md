@@ -8,24 +8,17 @@ categories: Tutorials,Plugins
 description: test description
 ---
 
-{% capture author %} {% include person content="Schindelin" %} {%
-endcapture %}
 
-{% capture source %} {% include github org="fiji" repo="VIB"
-source="Moving\_Least\_Squares.java" %} {% endcapture %} {% include
-sidebox-right name='Moving Least Squares registration' software='ImageJ'
-author=author maintainer='Johannes Schindelin' source=source
-released='2006/10/05' %}
+{% capture author%}
+{% include person content='Schindelin' %}
+{% endcapture %}
 
-This plugin implements the algorithms described in <ref> {% capture
-includecontent %} journal|title=Image Deformation Using Moving Least
-Squares|author=Schaefer S., McPhail T., Warrent J.|journal=ACM
-Transactions on
-Graphics|volume=25|issue=3|month=July|year=2006|pages=533-540 {%
-endcapture %}
+{% capture source%}
+{% include github org='fiji' repo='VIB' source='Moving\_Least\_Squares.java' %}
+{% endcapture %}
+{% include info-box name='Moving Least Squares registration' software='ImageJ' author=author maintainer='Johannes Schindelin' source=source released='2006/10/05' %}
 
-{% include cite content=includecontent %} </ref> to deform an image
-given a set of landmarks.
+This plugin implements the algorithms described in \[1\] to deform an image given a set of landmarks.
 
 ## Tutorial
 
@@ -33,14 +26,11 @@ Load the original and choose the landmarks:
 
 ![MLS-orig.jpg](/images/pages/MLS-orig.jpg "MLS-orig.jpg")"
 
-By clicking on the menu entry {% include bc content='Edit | Selection |
-Add to Manager'%} add this landmark set to the ROI Manager:
+By clicking on the menu entry {% include bc content='Edit | Selection | Add to Manager'%} add this landmark set to the ROI Manager:
 
 ![MLS-roi-manager.jpg](/images/pages/MLS-roi-manager.jpg "MLS-roi-manager.jpg")"
 
-Duplicate the image ({% include bc content='Image | Duplicate...'%}),
-click on the selection in the ROI manager and move the landmarks to
-their target location:
+Duplicate the image ({% include bc content='Image | Duplicate...'%}), click on the selection in the ROI manager and move the landmarks to their target location:
 
 ![MLS-new1.jpg](/images/pages/MLS-new1.jpg "MLS-new1.jpg")"
 
@@ -56,5 +46,6 @@ And you get the result:
 
 <references />
 
-[Category:Tutorials](Category:Tutorials "wikilink")
-[Category:Plugins](Category:Plugins "wikilink")
+[Category:Tutorials](Category:Tutorials "wikilink") [Category:Plugins](Category:Plugins "wikilink")
+
+1.  {% include cite content='journal' title='Image Deformation Using Moving Least Squares' author='Schaefer S., McPhail T., Warrent J.' journal='ACM Transactions on Graphics' volume='25' issue='3' month='July' year='2006' pages='533-540' %}

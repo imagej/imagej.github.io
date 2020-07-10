@@ -8,16 +8,12 @@ categories: News,ImageJ2
 description: test description
 ---
 
-A detailed technical paper on [ImageJ2](ImageJ2 "wikilink") has been
-published in BMC Bioinformatics:
+A detailed technical paper on [ImageJ2](ImageJ2 "wikilink") has been published in BMC Bioinformatics:
 
   - {% include publication content='ImageJ2' %}
 
-Please [cite it](Citing "wikilink") if you use ImageJ2 in your work\!
-Thank you\!
+Please [cite it](Citing "wikilink") if you use ImageJ2 in your work\! Thank you\!
 
-P.S. You can also [find the LaTeX source on
-GitHub](https://github.com/imagej/imagej2-manuscript-2017).
+P.S. You can also [find the LaTeX source on GitHub](https://github.com/imagej/imagej2-manuscript-2017).
 
-[Category:News](Category:News "wikilink")
-[Category:ImageJ2](Category:ImageJ2 "wikilink")
+[Category:News](Category:News "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink")

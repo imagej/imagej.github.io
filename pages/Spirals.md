@@ -8,47 +8,26 @@ categories: Tutorials
 description: test description
 ---
 
-The *Spirals* sample is designed to disspell the all-too-common idea
-that human beings are able to quantify color. If you ever hear a
-scientist say: <span style='font-size: 20px;'>"But I can see
-it\!"</span> show them this image, it is an example of [Munker's
-illusion](http://engineering.utep.edu/novick/colors/) :
+The *Spirals* sample is designed to disspell the all-too-common idea that human beings are able to quantify color. If you ever hear a scientist say: <span style='font-size: 20px;'>"But I can see it\!"</span> show them this image, it is an example of [Munker's illusion](http://engineering.utep.edu/novick/colors/) :
 
 ![Spirals.png](/images/pages/Spirals.png "Spirals.png")"
 
-Ask them to point to the green and then to the blue spiral arms. And
-then explain to them that most human beings see this, it is quite
-normal, there is nothing to be ashamed of, but there are no green or
-blue spiral arms. The arms have the *exact* same color. They do not have
-a different color.
+Ask them to point to the green and then to the blue spiral arms. And then explain to them that most human beings see this, it is quite normal, there is nothing to be ashamed of, but there are no green or blue spiral arms. The arms have the *exact* same color. They do not have a different color.
 
 ## The macro
 
-Any self-respecting scientist will doubt your statement. This is where
-the source code comes in. In Fiji, press the {% include key
-content='Shift' %} key and then open {% include bc content='File | Open
-Samples | Spirals (macro)'%} which will open the macro in the [Script
-Editor](Script_Editor "wikilink") instead of running it directly.
+Any self-respecting scientist will doubt your statement. This is where the source code comes in. In Fiji, press the {% include key content='Shift' %} key and then open {% include bc content='File | Open Samples | Spirals (macro)'%} which will open the macro in the [Script Editor](Script_Editor "wikilink") instead of running it directly.
 
-Alternatively, you can drag & drop [this
-link](https://raw.github.com/fiji/fiji/master/plugins/Scripts/File/Open_Samples/Spirals_.ijm)
-to your main window.
+Alternatively, you can drag & drop [this link](https://raw.github.com/fiji/fiji/master/plugins/Scripts/File/Open_Samples/Spirals_.ijm) to your main window.
 
-You can inspect the source code, run it, change it, run it again. This
-is the proper scientific way to convince yourself that the spiral arms
-have indeed the exact same color.
+You can inspect the source code, run it, change it, run it again. This is the proper scientific way to convince yourself that the spiral arms have indeed the exact same color.
 
-The macro originally produced exactly the above image (it was in fact
-made using the original version). It was since changed to address the
-all-too-common, triumphant response: "Yeah, but I want to quantify red
-vs green".
+The macro originally produced exactly the above image (it was in fact made using the original version). It was since changed to address the all-too-common, triumphant response: "Yeah, but I want to quantify red vs green".
 
 ## Take home message
 
-You cannot quantify color by eye. Nobody can. The only thing you can
-quantify by eye are written-out numbers.
+You cannot quantify color by eye. Nobody can. The only thing you can quantify by eye are written-out numbers.
 
-See also this wired article.
-http://www.wired.com/2015/02/science-one-agrees-color-dress/
+See also this wired article. http://www.wired.com/2015/02/science-one-agrees-color-dress/
 
 [Category:Tutorials](Category:Tutorials "wikilink")

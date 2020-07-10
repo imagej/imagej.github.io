@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Using ImgLib1 in a
-    plugin](Using_ImgLib1_in_a_plugin "wikilink")
+1.  REDIRECT [Using ImgLib1 in a plugin](Using_ImgLib1_in_a_plugin "wikilink")

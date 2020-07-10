@@ -8,24 +8,14 @@ categories: Plugins,Deconvolution
 description: test description
 ---
 
-{% include sidebox-right software='ImageJ' name='Diffraction PSF 3D'
-author='Bob Dougherty'
-filename='[Diffraction\_PSF\_3D.class](http://www.optinav.info/download/Diffraction_PSF_3D.class)'
-source='[Diffraction\_PSF\_3D.java](http://www.optinav.info/download/Diffraction_PSF_3D.java)'
-released='2 May 2005' version='6 June 2005' status='stable'
-category='[Deconvolution](:Category:Deconvolution "wikilink")'
-website='[1](http://www.optinav.info/Diffraction-PSF-3D.htm)' %}
+{% include info-box software='ImageJ' name='Diffraction PSF 3D' author='Bob Dougherty' filename=' [Diffraction\_PSF\_3D.class](http://www.optinav.info/download/Diffraction_PSF_3D.class) ' source=' [Diffraction\_PSF\_3D.java](http://www.optinav.info/download/Diffraction_PSF_3D.java) ' released='2 May 2005' latest-version='6 June 2005' status='stable' category='[Deconvolution](:Category:Deconvolution "wikilink")' website='http://www.optinav.info/Diffraction-PSF-3D.htm' %}
 
 ## Purpose
 
-This plugin generates theoretical PSFs, assuming they arise only from
-diffraction. They can thereafter be used with deconvolution plugins
-(e.g. [Iterative Deconvolve 3D](Iterative_Deconvolve_3D "wikilink"))
-when the actual PSF is not measured.
+This plugin generates theoretical PSFs, assuming they arise only from diffraction. They can thereafter be used with deconvolution plugins (e.g. [Iterative Deconvolve 3D](Iterative_Deconvolve_3D "wikilink")) when the actual PSF is not measured.
 
 ## See also
 
 [Iterative Deconvolve 3D](Iterative_Deconvolve_3D "wikilink")
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Deconvolution](Category:Deconvolution "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Deconvolution](Category:Deconvolution "wikilink")

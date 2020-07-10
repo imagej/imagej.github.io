@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [KymographBuilder : Yet Another Kymograph Fiji
-    plugin](KymographBuilder_:_Yet_Another_Kymograph_Fiji_plugin "wikilink")
+1.  REDIRECT [KymographBuilder : Yet Another Kymograph Fiji plugin](KymographBuilder_:_Yet_Another_Kymograph_Fiji_plugin "wikilink")

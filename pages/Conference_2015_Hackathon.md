@@ -8,41 +8,25 @@ categories: Hackathons
 description: test description
 ---
 
-There was a [hackathon](hackathon "wikilink") in Madison following the
-ImageJ [Conference 2015](Conference_2015 "wikilink").
+There was a [hackathon](hackathon "wikilink") in Madison following the ImageJ [Conference 2015](Conference_2015 "wikilink").
 
 ## Topic
 
 There were two primary topics for this hackathon:
 
-1.  **Learnathon.** For the first half, we covered the current ImageJ2
-    and SciJava APIs with informal presentations and workshops. We spent
-    some time beefing up and updating the tutorials.
-2.  **Ops.** The second half focused on development of the [ImageJ
-    Ops](ImageJ_Ops "wikilink") component for "write once, run anywhere"
-    image processing. We added more algorithms and routines to the core
-    library, and continued polishing the Ops framework itself, as well
-    as the [ImageJ2 data model](ImageJ_Common "wikilink").
+1.  **Learnathon.** For the first half, we covered the current ImageJ2 and SciJava APIs with informal presentations and workshops. We spent some time beefing up and updating the tutorials.
+2.  **Ops.** The second half focused on development of the [ImageJ Ops](ImageJ_Ops "wikilink") component for "write once, run anywhere" image processing. We added more algorithms and routines to the core library, and continued polishing the Ops framework itself, as well as the [ImageJ2 data model](ImageJ_Common "wikilink").
 
 ### Side projects
 
-As always, there were lots of other exciting collaborations going on,
-too\!
+As always, there were lots of other exciting collaborations going on, too\!
 
-  - Troubleshoot the
-    [SCIFIO-ITK-bridge](https://github.com/scifio/scifio-itk-bridge) in
-    SimpleITK (Mark + Matt)
-  - Generalize MATLABCommands to a [general
-    framework](https://github.com/Tiago/Scripts/issues/14) that could be
-    used in BAR (Mark + Tiago)
-  - The {% include github org='imagej' repo='imagej-omero'
-    label='ImageJ-OMERO' %} plugin (Alex + Curtis)
-  - SciJava {% include github org='scijava' repo='scijava-common'
-    pr='167' label='robust-io redesign' %} (Curtis)
-  - SCIFIO {% include github org='scifio' repo='scifio' issue='283'
-    label='blockization' %} (Mark)
-  - {% include github org='fiji' repo='colocalisation\_analysis'
-    label='Coloc2' %} bugs? (Ellen)
+  - Troubleshoot the [SCIFIO-ITK-bridge](https://github.com/scifio/scifio-itk-bridge) in SimpleITK (Mark + Matt)
+  - Generalize MATLABCommands to a [general framework](https://github.com/Tiago/Scripts/issues/14) that could be used in BAR (Mark + Tiago)
+  - The {% include github org='imagej' repo='imagej-omero' label='ImageJ-OMERO' %} plugin (Alex + Curtis)
+  - SciJava {% include github org='scijava' repo='scijava-common' pr='167' label='robust-io redesign' %} (Curtis)
+  - SCIFIO {% include github org='scifio' repo='scifio' issue='283' label='blockization' %} (Mark)
+  - {% include github org='fiji' repo='colocalisation\_analysis' label='Coloc2' %} bugs? (Ellen)
   - KNIME paper (Mark + Christian)
 
 ## Participants
@@ -150,36 +134,23 @@ Some people were not present at the hackathon on weekends.
 
 ### Thursday, September 3 - Friday, September 4
 
-[ImageJ 2015 conference](Conference_2015 "wikilink") at the [H.F. DeLuca
-Forum](http://discovery.wisc.edu/home/town-center/apply-to-reserve-town-center-spaces/large-rooms/h-f-deluca-forum/h-f-deluca-forum.cmsx),
-[Wisconsin Institutes for Discovery](http://discovery.wisc.edu/), 330 N.
-Orchard St., Madison, WI 53715.
+[ImageJ 2015 conference](Conference_2015 "wikilink") at the [H.F. DeLuca Forum](http://discovery.wisc.edu/home/town-center/apply-to-reserve-town-center-spaces/large-rooms/h-f-deluca-forum/h-f-deluca-forum.cmsx), [Wisconsin Institutes for Discovery](http://discovery.wisc.edu/), 330 N. Orchard St., Madison, WI 53715.
 
-  - **Directions:** [Directions to the Discovery
-    Building](http://discovery.wisc.edu/home/discovery/plan-your-visit/directions/)
-  - **Maps:** [Google
-    map](https://www.google.com/maps/place/Wisconsin+Institutes+for+Discovery,+University+of+Wisconsin-Madison,+330+N+Orchard+St,+Madison,+WI+53715),
-    [Campus map](http://map.wisc.edu/)
-  - **Parking:** [Lot 17](http://www.map.wisc.edu/s/gtdclo2r),
-    [Lot 20](http://www.map.wisc.edu/s/rl4uc9mf),
-    [Lot 80](http://www.map.wisc.edu/s/2f9gywd7)
+  - **Directions:** [Directions to the Discovery Building](http://discovery.wisc.edu/home/discovery/plan-your-visit/directions/)
+  - **Maps:** [Google map](https://www.google.com/maps/place/Wisconsin+Institutes+for+Discovery,+University+of+Wisconsin-Madison,+330+N+Orchard+St,+Madison,+WI+53715), [Campus map](http://map.wisc.edu/)
+  - **Parking:** [Lot 17](http://www.map.wisc.edu/s/gtdclo2r), [Lot 20](http://www.map.wisc.edu/s/rl4uc9mf), [Lot 80](http://www.map.wisc.edu/s/2f9gywd7)
 
 ### Saturday, September 5 - Friday, September 11
 
-WAR Room (B1121), [Wisconsin Institutes for
-Discovery](http://discovery.wisc.edu/), 330 N. Orchard St., Madison, WI
-53715.
+WAR Room (B1121), [Wisconsin Institutes for Discovery](http://discovery.wisc.edu/), 330 N. Orchard St., Madison, WI 53715.
 
 #### Schedule
 
-We had a group lunch on Wednesday, September 9 from noon - 1pm. (There
-was single reservation conflict with B1121 during this time.)
+We had a group lunch on Wednesday, September 9 from noon - 1pm. (There was single reservation conflict with B1121 during this time.)
 
 ### Saturday, September 12 - Tuesday, September 15
 
-Room 224 [Animal Sciences](http://ansci.wisc.edu/), 1675 Observatory Dr.
-[http://maps.google.com/maps?q=1675+Observatory+Drive,+Madison,+WI See
-map](http://maps.google.com/maps?q=1675+Observatory+Drive,+Madison,+WI_See_map "wikilink")
+Room 224 [Animal Sciences](http://ansci.wisc.edu/), 1675 Observatory Dr. [http://maps.google.com/maps?q=1675+Observatory+Drive,+Madison,+WI See map](http://maps.google.com/maps?q=1675+Observatory+Drive,+Madison,+WI_See_map "wikilink")
 
 The hackathon formally concluded on September 15 at 3:30pm.
 

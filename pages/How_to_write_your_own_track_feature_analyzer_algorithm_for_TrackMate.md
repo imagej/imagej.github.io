@@ -8,47 +8,22 @@ categories: Tutorials
 description: test description
 ---
 
-{% include extendingtrackmatetutorials %}
+{% include extendingtrackmatetutorials%}
 
 ## Introduction
 
-This article is the second in the series dedicated to extending
-TrackMate with your own modules. Here we focus on creating **feature
-analyzers**: small algorithms that calculate one or several numerical
-values for the TrackMate results. The [previous
-article](How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate "wikilink")
-focused on writing edge analyzers: algorithms that allocate a numerical
-value to the link between two spots.
+This article is the second in the series dedicated to extending TrackMate with your own modules. Here we focus on creating **feature analyzers**: small algorithms that calculate one or several numerical values for the TrackMate results. The [previous article](How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate "wikilink") focused on writing edge analyzers: algorithms that allocate a numerical value to the link between two spots.
 
-In this article, we will create a **feature analyzer for tracks** that
-calculate numerical values for whole tracks. To make it simple, and also
-to answer the request of a colleague, we will make an analyzer that
-reports the location of the starting and ending points of a track.
+In this article, we will create a **feature analyzer for tracks** that calculate numerical values for whole tracks. To make it simple, and also to answer the request of a colleague, we will make an analyzer that reports the location of the starting and ending points of a track.
 
-Actually, we will not learn much beyond what we saw previously. The only
-little change is that our analyzer will generate 6 numerical values
-instead of 1. We will use the [SciJava](SciJava "wikilink") discovery
-mechanism as before, but just for the sake of it, we will introduce how
-to **disable** modules.
+Actually, we will not learn much beyond what we saw previously. The only little change is that our analyzer will generate 6 numerical values instead of 1. We will use the [SciJava](SciJava "wikilink") discovery mechanism as before, but just for the sake of it, we will introduce how to **disable** modules.
 
 ## Track analyzers
 
-All the track feature analyzers must implement {% include github
-org='fiji' repo='TrackMate'
-source='fiji/plugin/trackmate/features/track/TrackAnalyzer.java'
-label='TrackAnalyzer interface' %}. Like for the {% include github
-org='fiji' repo='TrackMate'
-source='fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java'
-label='EdgeAnalyzer' %} interface, it extends both
+All the track feature analyzers must implement {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/track/TrackAnalyzer.java' label='TrackAnalyzer interface' %}. Like for the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/edges/EdgeAnalyzer.java' label='EdgeAnalyzer' %} interface, it extends both
 
-  - {% include github org='fiji' repo='TrackMate'
-    source='fiji/plugin/trackmate/features/FeatureAnalyzer.java'
-    label='FeatureAnalyzer' %} that helps you declaring what you
-    compute,
-  - and {% include github org='fiji' repo='TrackMate'
-    source='fiji/plugin/trackmate/TrackMateModule.java'
-    label='TrackMateModule' %}, that is in charge of the integration in
-    TrackMate.
+  - {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/features/FeatureAnalyzer.java' label='FeatureAnalyzer' %} that helps you declaring what you compute,
+  - and {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/TrackMateModule.java' label='TrackMateModule' %}, that is in charge of the integration in TrackMate.
 
 The only changes for us are two methods specific to tracks:
 
@@ -62,15 +37,11 @@ the does the actual feature calculation for the specified tracks, and
 public boolean isLocal();
 ```
 
-that specified whether the calculation of the features for one track
-affects only this track or all the tracks. For the discussion on local
-*vs* non-local feature analyzers, I report you to the [previous article
-item](How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate#isLocal.28.29 "wikilink").
+that specified whether the calculation of the features for one track affects only this track or all the tracks. For the discussion on local *vs* non-local feature analyzers, I report you to the [previous article item](How_to_write_your_own_edge_feature_analyzer_algorithm_for_TrackMate#isLocal.28.29 "wikilink").
 
 ## Track feature analyzer header
 
-Like all TrackMate modules, you need to annotate your class to make it
-discoverable by TrackMate. It takes the following shape:
+Like all TrackMate modules, you need to annotate your class to make it discoverable by TrackMate. It takes the following shape:
 
 ``` java
 @Plugin( type = TrackAnalyzer.class )
@@ -83,9 +54,7 @@ and that's good enough.
 
 ## Declaring features
 
-Declaring the features your provide is done as before. This time, a
-single analyzer returns 6 values, so you need to declare them. Here is
-the related code:
+Declaring the features your provide is done as before. This time, a single analyzer returns 6 values, so you need to declare them. Here is the related code:
 
 ``` java
 @Plugin( type = TrackAnalyzer.class )
@@ -178,20 +147,11 @@ Let's compute them now.
 
 ## Accessing tracks in TrackMate
 
-In the previous article, we went maybe a bit quickly on how to access
-data in TrackMate. This is not the goal of this series, but here is a
-quick recap:
+In the previous article, we went maybe a bit quickly on how to access data in TrackMate. This is not the goal of this series, but here is a quick recap:
 
-All the track structure is stored in a sub-component of the model called
-the {% include github org='fiji' repo='TrackMate'
-source='fiji/plugin/trackmate/TrackModel.java' label='TrackModel' %}. It
-stores the collection of links between two spots that builds a graph,
-and has some rather complex logic to maintain a list of connected
-components: the tracks.
+All the track structure is stored in a sub-component of the model called the {% include github org='fiji' repo='TrackMate' source='fiji/plugin/trackmate/TrackModel.java' label='TrackModel' %}. It stores the collection of links between two spots that builds a graph, and has some rather complex logic to maintain a list of connected components: the tracks.
 
-The tracks themselves are indexed by their ID, stored as an `int`, that
-has no particular meaning. Once you have the ID of track, you can get
-the spots it contains with
+The tracks themselves are indexed by their ID, stored as an `int`, that has no particular meaning. Once you have the ID of track, you can get the spots it contains with
 
 ``` java
 trackModel.trackSpots( trackID )
@@ -207,8 +167,7 @@ Let's exploit this.
 
 ## Calculating the position of start and end points
 
-Well, it is just about retrieving a track and identifying its starting
-and end points. Here is the whole code for the processing method:
+Well, it is just about retrieving a track and identifying its starting and end points. Here is the whole code for the processing method:
 
 ``` java
 
@@ -248,39 +207,25 @@ and end points. Here is the whole code for the processing method:
     }
 ```
 
-The whole code for the analyzer can be found {% include github
-org='fiji' repo='TrackMate-examples'
-source='plugin/trackmate/examples/trackanalyzer/TrackStartSpotAnalyzer.java'
-label='here' %}.
+The whole code for the analyzer can be found {% include github org='fiji' repo='TrackMate-examples' source='plugin/trackmate/examples/trackanalyzer/TrackStartSpotAnalyzer.java' label='here' %}.
 
 ## Wrapping up
 
 Et ca marche \!
 
-![TrackMate\_TrackAnalyzerExample.png](/images/pages/TrackMate_TrackAnalyzerExample.png
-"TrackMate_TrackAnalyzerExample.png")"
+![TrackMate\_TrackAnalyzerExample.png](/images/pages/TrackMate_TrackAnalyzerExample.png "TrackMate_TrackAnalyzerExample.png")"
 
-In the next article we will build a spot analyzer and complicate things
-a bit, by introducing the notion of *priority*. But before this, a short
-word on how to disable a module.
+In the next article we will build a spot analyzer and complicate things a bit, by introducing the notion of *priority*. But before this, a short word on how to disable a module.
 
 ## How to disable a module
 
-Suppose you have in your code tree a TrackMate module you wish not to
-use anymore. The trivial way would be to delete its class, but here is
-another one what allows us to introduce [SciJava](SciJava "wikilink")
-plugin annotation parameters.
+Suppose you have in your code tree a TrackMate module you wish not to use anymore. The trivial way would be to delete its class, but here is another one what allows us to introduce [SciJava](SciJava "wikilink") plugin annotation parameters.
 
-The `@Plugin( type = TrackAnalyzer.class )` annotation accepts extra
-parameters on top of the `type` one. They all take the shape of a `key =
-value` pair, and a few of them allow the fine tuning of the TrackMate
-module integration.
+The `@Plugin( type = TrackAnalyzer.class )` annotation accepts extra parameters on top of the `type` one. They all take the shape of a `key = value` pair, and a few of them allow the fine tuning of the TrackMate module integration.
 
-The first one we will see is the `enabled` value. It accepts a `boolean`
-as value and by default it is `true`. Its usage is obvious:
+The first one we will see is the `enabled` value. It accepts a `boolean` as value and by default it is `true`. Its usage is obvious:
 
-{% include amsidebox-right text='If you want to disable a TrackMate
-module, add the `enabled = false` annotation parameter.' %}
+{% include ambox text='If you want to disable a TrackMate module, add the `enabled = false` annotation parameter.' %}
 
 Like this:
 
@@ -288,12 +233,8 @@ Like this:
 @Plugin( type = TrackAnalyzer.class, enabled = false )
 ```
 
-Disabled modules are not even instantiated. They are as good as dead,
-except that you can change your mind easily. By the way, you can see
-that the TrackMate source tree has many of these disabled modules...
+Disabled modules are not even instantiated. They are as good as dead, except that you can change your mind easily. By the way, you can see that the TrackMate source tree has many of these disabled modules...
 
-{% include person content='JeanYvesTinevez' %}
-([talk](User_talk:JeanYvesTinevez "wikilink")) 14:23, 11 March 2014
-(CDT)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk:JeanYvesTinevez "wikilink")) 14:23, 11 March 2014 (CDT)
 
 [Category:Tutorials](Category:Tutorials "wikilink")

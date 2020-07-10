@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Spline Deformation
-    Generator](Spline_Deformation_Generator "wikilink")
+1.  REDIRECT [Spline Deformation Generator](Spline_Deformation_Generator "wikilink")

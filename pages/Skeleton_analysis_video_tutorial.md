@@ -10,13 +10,8 @@ description: test description
 
 TODO FLASH WIDGET
 
-This video tutorial was made and edited by {% include person
-content='Iarganda' %} using [Wink 2.0 for
-Windows](http://www.debugmode.com/wink/).
+This video tutorial was made and edited by {% include person content='Iarganda' %} using [Wink 2.0 for Windows](http://www.debugmode.com/wink/).
 
-The sample image used in the tutorial can be found here:
-[1](http://neuromorpho.org/neuroMorpho/neuron_info.jsp?neuron_name=LAB4Lskeleton)
+The sample image used in the tutorial can be found here: [1](http://neuromorpho.org/neuroMorpho/neuron_info.jsp?neuron_name=LAB4Lskeleton)
 
-[Category:Tutorials](Category:Tutorials "wikilink")
-[Category:Analysis](Category:Analysis "wikilink")
-[Category:Skeleton](Category:Skeleton "wikilink")
+[Category:Tutorials](Category:Tutorials "wikilink") [Category:Analysis](Category:Analysis "wikilink") [Category:Skeleton](Category:Skeleton "wikilink")

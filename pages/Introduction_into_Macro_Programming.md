@@ -18,24 +18,15 @@ Macros can be used to
   - add tools to the toolbar
   - add keyboard shortcuts
 
-{% include sidebox-right message='Please be aware that there are several
-other available [scripting](scripting "wikilink") languages that are
-more powerful than macros, too\! See the sidebar on the right, as well
-as the [Overcoming limitations](#Overcoming_limitations "wikilink")
-section below.' %}
+{% include info-box message='Please be aware that there are several other available [scripting](scripting "wikilink") languages that are more powerful than macros, too\! See the sidebar on the right, as well as the [Overcoming limitations](#Overcoming_limitations "wikilink") section below.' %}
 
 # Variables
 
-The most important concept when starting to program macros are
-*variables*. A variable is a placeholder for a changing entity. It has a
-*name* and a *value*, which can be *numeric* or *text* (so-called
-*strings*).
+The most important concept when starting to program macros are *variables*. A variable is a placeholder for a changing entity. It has a *name* and a *value*, which can be *numeric* or *text* (so-called *strings*).
 
-Variables are needed whenever you want to execute the same code several
-times, but for different images, parameters, etc
+Variables are needed whenever you want to execute the same code several times, but for different images, parameters, etc
 
-Variables can also be used to store user input obtained through a
-dialog.
+Variables can also be used to store user input obtained through a dialog.
 
 A variable can be assigned like this:
 
@@ -43,9 +34,7 @@ A variable can be assigned like this:
 factor = 1024;
 ```
 
-In this example, *factor* is the name of the variable, *1024* is the
-value assigned to the variable. The semicolon tells ImageJ that the
-assignment is done.
+In this example, *factor* is the name of the variable, *1024* is the value assigned to the variable. The semicolon tells ImageJ that the assignment is done.
 
 Example: assign text to a variable:
 
@@ -53,13 +42,11 @@ Example: assign text to a variable:
 message = "Hello, World!";
 ```
 
-In this case, the variable is named *message*, and the text *Hello,
-World\!* is assigned to it; Text is specified inside double quotes.
+In this case, the variable is named *message*, and the text *Hello, World\!* is assigned to it; Text is specified inside double quotes.
 
 ## Using variables
 
-You can use variables in *expressions*: you can calculate with numeric
-variables, and you can concatenate text and text variables. Example:
+You can use variables in *expressions*: you can calculate with numeric variables, and you can concatenate text and text variables. Example:
 
 ``` java
 x = 2;
@@ -67,25 +54,18 @@ y = 3;
 result = x * x + y + y;
 ```
 
-This assigns the variable *x* the value 2, the variable *y* the value 3,
-and then assigns the variable *result* the square of *x* plus the square
-of *y*.
+This assigns the variable *x* the value 2, the variable *y* the value 3, and then assigns the variable *result* the square of *x* plus the square of *y*.
 
-This example shows how to
-[concatenate](https://www.techopedia.com/definition/3470/concatenation-programming)
-a fixed text with the value of a variable:
+This example shows how to [concatenate](https://www.techopedia.com/definition/3470/concatenation-programming) a fixed text with the value of a variable:
 
 ``` java
 name = "Bob";
 msg = "Those days are over, " + name;
 ```
 
-**Note:** a common pitfall is to include the name of a variable in a
-string. The following code demonstrates this:
+**Note:** a common pitfall is to include the name of a variable in a string. The following code demonstrates this:
 
-(**BAD** lines are commented out to discourage copying them. If you
-paste this code in the [script editor](Script_Editor "wikilink"), you
-can uncomment these lines to see their errors)
+(**BAD** lines are commented out to discourage copying them. If you paste this code in the [script editor](Script_Editor "wikilink"), you can uncomment these lines to see their errors)
 
 ``` java
 title = "Macro";
@@ -93,8 +73,7 @@ title = "Macro";
 write("The name: " + title); // GOOD - properly uses the title variable value
 ```
 
-The same principle applies when using variables which reflect parameters
-passed to a `run()` method, e.g.
+The same principle applies when using variables which reflect parameters passed to a `run()` method, e.g.
 
 ``` java
 specifiedRadius = 3;
@@ -102,8 +81,7 @@ specifiedRadius = 3;
 run("Median...", "radius=" + specifiedRadius); // GOOD - will correctly pass the radius variable value
 ```
 
-**Note:** when concatenating strings, whitespace will not automatically
-be added. So care must be taken, for example when spaces are *desired*.
+**Note:** when concatenating strings, whitespace will not automatically be added. So care must be taken, for example when spaces are *desired*.
 
 ``` java
 // We want to use the "Li white" threshold
@@ -115,16 +93,13 @@ run("Auto Threshold", "method=" + userDefinedAutoThreshold + " white");   //WORK
 
 ## Self-referencing assignments
 
-When a variable is assigned, the right-hand side is evaluated first, and
-only then the assignment is performed. This allows you to double the
-value of a variable:
+When a variable is assigned, the right-hand side is evaluated first, and only then the assignment is performed. This allows you to double the value of a variable:
 
 ``` java
 amount = amount * 2;
 ```
 
-First, *amount \* 2* is evaluated. The result is then assigned back to
-the variable *amount*, effectively doubling it.
+First, *amount \* 2* is evaluated. The result is then assigned back to the variable *amount*, effectively doubling it.
 
 A very important operation is to increment a variable's value by one:
 
@@ -141,12 +116,7 @@ counter++;
 
 # Functions
 
-Most of the time, you will call *functions* which implement the actions
-you want to execute. Functions have names, like variables, but they also
-have *parameters* that you can pass to the functions. ImageJ comes with
-many [predefined
-functions](https://imagej.net/developer/macro/functions.html) that you
-can call to perform specific calculations or other operations.
+Most of the time, you will call *functions* which implement the actions you want to execute. Functions have names, like variables, but they also have *parameters* that you can pass to the functions. ImageJ comes with many [predefined functions](https://imagej.net/developer/macro/functions.html) that you can call to perform specific calculations or other operations.
 
 This example writes *Hello, World\!* to the *Log* window:
 
@@ -154,19 +124,13 @@ This example writes *Hello, World\!* to the *Log* window:
 write("Hello, World!");
 ```
 
-As before, a semicolon signifies the end of the statement. The name of
-the function is *write*, and the parameter list is enclosed in
-parentheses. In the case of *write*, there is only one parameter. If
-there are more parameters to be passed, they have to be separated by
-commas:
+As before, a semicolon signifies the end of the statement. The name of the function is *write*, and the parameter list is enclosed in parentheses. In the case of *write*, there is only one parameter. If there are more parameters to be passed, they have to be separated by commas:
 
 ``` java
 newImage("My pretty new image", "8-bit black", 640, 480, 1);
 ```
 
-Like *write*, *newImage* is a builtin function of ImageJ. The order of
-the parameters is relevant, this is the way the function knows what each
-parameter means.
+Like *write*, *newImage* is a builtin function of ImageJ. The order of the parameters is relevant, this is the way the function knows what each parameter means.
 
 ## Defining functions
 
@@ -179,10 +143,7 @@ function closeImageByTitle(title) {
 }
 ```
 
-Note that the *title* is just another [variable](#Variables "wikilink"),
-which is implicitly assigned when the function is called. In other
-words, this call will execute the code in above definition, with the
-variable *title* set to *My pretty new image*:
+Note that the *title* is just another [variable](#Variables "wikilink"), which is implicitly assigned when the function is called. In other words, this call will execute the code in above definition, with the variable *title* set to *My pretty new image*:
 
 ``` java
 closeImageByTitle("My pretty new image");
@@ -190,10 +151,7 @@ closeImageByTitle("My pretty new image");
 
 # Comments
 
-When you read your code again in six months from now, you want to
-understand what your code does, and why. For this, you can add comments,
-i.e. text which is ignored by ImageJ when it executes the macro.
-Example:
+When you read your code again in six months from now, you want to understand what your code does, and why. For this, you can add comments, i.e. text which is ignored by ImageJ when it executes the macro. Example:
 
 ``` java
 // This variable contains the radius of the circle to be drawn
@@ -217,9 +175,7 @@ alpha = 0.5;
 
 ## Commented-out code
 
-When reading macros written by other people, you will often find the
-concept of *commented-out code*. This is code that is pretended to be a
-comment so that it is not executed. Example:
+When reading macros written by other people, you will often find the concept of *commented-out code*. This is code that is pretended to be a comment so that it is not executed. Example:
 
 ``` java
 a = 0.5;
@@ -227,14 +183,11 @@ a = 0.5;
 run("Gaussian Blur...", "radius=" + a);
 ```
 
-Typical uses for commented-out code are instructions that help with
-debugging, but are too verbose (or too slow) for regular execution of
-the macro.
+Typical uses for commented-out code are instructions that help with debugging, but are too verbose (or too slow) for regular execution of the macro.
 
 # Conditional code blocks
 
-Sometimes, you need to execute a certain part of the code if and only if
-a certain condition is met. Example:
+Sometimes, you need to execute a certain part of the code if and only if a certain condition is met. Example:
 
 ``` java
 // If the image is not binary, abort
@@ -243,29 +196,17 @@ if (!is( "binary" )) {
 }
 ```
 
-There are several parts to a conditional block: the *if* keyword, the
-condition inside the parentheses, and the code block enclosed in curly
-braces.
+There are several parts to a conditional block: the *if* keyword, the condition inside the parentheses, and the code block enclosed in curly braces.
 
-In this case, the condition calls the function *is* to ask whether the
-current image is binary, and the exclamation mark negates the result,
-i.e. *\!is("binary")* yields true if and only if the current image is
-<u>not</u> binary (as opposed to *is("binary")*, which returns true in
-the opposite case).
+In this case, the condition calls the function *is* to ask whether the current image is binary, and the exclamation mark negates the result, i.e. *\!is("binary")* yields true if and only if the current image is <u>not</u> binary (as opposed to *is("binary")*, which returns true in the opposite case).
 
-If the code block consists of only one statement, the curly braces may
-be omitted, but it is a good practice to keep them (for example, nested
-conditional blocks are much easier to understand with curly braces than
-without).
+If the code block consists of only one statement, the curly braces may be omitted, but it is a good practice to keep them (for example, nested conditional blocks are much easier to understand with curly braces than without).
 
-Likewise, it is a good practice to *indent* the code inside the
-conditional block (i.e. to add white space in front of the lines inside
-the block). This makes reading the code much easier, too.
+Likewise, it is a good practice to *indent* the code inside the conditional block (i.e. to add white space in front of the lines inside the block). This makes reading the code much easier, too.
 
 ## else
 
-You can optionally add an *else* clause, i.e. a code block that is
-executed when the condition is <b>not</b> met. Example:
+You can optionally add an *else* clause, i.e. a code block that is executed when the condition is <b>not</b> met. Example:
 
 ``` java
 if (is("binary")) {
@@ -288,34 +229,19 @@ for (i = 0; i < 10; i++) {
 }
 ```
 
-This code will run *Dilate* ten times. The syntax of the *for* loop
-consists of the *for* keyword, followed by three statements enclosed in
-parentheses, and the code block to be executed.
+This code will run *Dilate* ten times. The syntax of the *for* loop consists of the *for* keyword, followed by three statements enclosed in parentheses, and the code block to be executed.
 
 The three statements defining how often to run the code block are the
 
-1.  initializer: typically, a counter variable is initialized, in this
-    case *i* to the value zero,
-2.  the condition: as long as this condition is met (here *i \< 10*),
-    the code block is executed,
-3.  the incrementor: this statement is executed after the code block,
-    just before testing again whether the block should be executed
-    again.
+1.  initializer: typically, a counter variable is initialized, in this case *i* to the value zero,
+2.  the condition: as long as this condition is met (here *i \< 10*), the code block is executed,
+3.  the incrementor: this statement is executed after the code block, just before testing again whether the block should be executed again.
 
-In this example, the variable *i* is first initialized to zero, then the
-condition is checked, and as *i* is smaller than 10, the code block is
-executed. After that, *i* is incremented, and the condition is checked
-again. As 1 is still smaller than 10, the code block is executed again.
-This repeats for the values 2, 3, ..., 9, but after the variable *i* was
-incremented from 9 to 10, the condition does not hold true anymore, so
-the loop is finished.
+In this example, the variable *i* is first initialized to zero, then the condition is checked, and as *i* is smaller than 10, the code block is executed. After that, *i* is incremented, and the condition is checked again. As 1 is still smaller than 10, the code block is executed again. This repeats for the values 2, 3, ..., 9, but after the variable *i* was incremented from 9 to 10, the condition does not hold true anymore, so the loop is finished.
 
-Even if the counter variable was not used inside the code block in this
-example, you are free to do so, of course.
+Even if the counter variable was not used inside the code block in this example, you are free to do so, of course.
 
-Note that starting with 0 and testing for the condition "smaller than
-10" will result in the code block being run 10 times. It is the standard
-way to execute a certain block of code a fixed number of times.
+Note that starting with 0 and testing for the condition "smaller than 10" will result in the code block being run 10 times. It is the standard way to execute a certain block of code a fixed number of times.
 
 ## Looping over slices of a stack
 
@@ -334,25 +260,18 @@ for (i=1; i<=nSlices; i++) {
 
 # The recorder
 
-Typically, macros are not written from scratch, but recorded using the
-Macro Recorder: Just click on {% include bc content='Plugins | Macros |
-Record...'%} and perform some actions. These actions will be recorded in
-the recorder window, and you can hit the *Create* button to open the
-recorded instructions in an editor:
+Typically, macros are not written from scratch, but recorded using the Macro Recorder: Just click on {% include bc content='Plugins | Macros | Record...'%} and perform some actions. These actions will be recorded in the recorder window, and you can hit the *Create* button to open the recorded instructions in an editor:
 
 ![Macro\_recorder.png](/images/pages/Macro_recorder.png "Macro_recorder.png")"
 
-In some cases, you might need to edit the recorded macro to make it
-usable with other images than the one you used to record the macro with.
-Example: when you merge channels, you end up with a statement like this:
+In some cases, you might need to edit the recorded macro to make it usable with other images than the one you used to record the macro with. Example: when you merge channels, you end up with a statement like this:
 
 ``` java
 run("Merge Channels...",
     "red=[Edges of boats.gif] green=boats.gif blue=boats.gif gray=*None*");
 ```
 
-The parameters passed to *Merge Channels...* depend very much on the
-current image's name. One possible solution looks like this:
+The parameters passed to *Merge Channels...* depend very much on the current image's name. One possible solution looks like this:
 
 ``` java
 title = getTitle();
@@ -360,12 +279,9 @@ run("Merge Channels...",
      "red=[Edges of " + title + "] green=" + title + " blue=" + title + " gray=*None*");
 ```
 
-Note that we need to use string concatenation in order to insert the
-current image's name in place of *boats.gif*, as described in
-[above](#Using_variables "wikilink").
+Note that we need to use string concatenation in order to insert the current image's name in place of *boats.gif*, as described in [above](#Using_variables "wikilink").
 
-In order to allow spaces in the name, you might also want to add extra
-*\[...\]* around the title:
+In order to allow spaces in the name, you might also want to add extra *\[...\]* around the title:
 
 ``` java
 title = getTitle();
@@ -375,9 +291,7 @@ run("Merge Channels...",
 
 # Installing macros
 
-To install keyboard shortcuts or tool icons, you need to [wrap macro
-code in *macro*
-blocks](https://imagej.net/developer/macro/macros.html#tools):
+To install keyboard shortcuts or tool icons, you need to [wrap macro code in *macro* blocks](https://imagej.net/developer/macro/macros.html#tools):
 
 ``` java
 macro "Title of the macro" {
@@ -387,20 +301,13 @@ macro "Title of the macro" {
 
 Then you need to *install* them:
 
-Simply save your macro in a "Plugins" subfolder of *./Fiji.app/scripts/*
-(e.g. *./Fiji.app/scripts/Plugins/MyScripts/My\_Macro.ijm*), and it will
-appear in the respective menu (e.g. *Plugins \> MyScripts \> My Macro*)
-upon restart of [Fiji](Fiji "wikilink").
+Simply save your macro in a "Plugins" subfolder of *./Fiji.app/scripts/* (e.g. *./Fiji.app/scripts/Plugins/MyScripts/My\_Macro.ijm*), and it will appear in the respective menu (e.g. *Plugins \> MyScripts \> My Macro*) upon restart of [Fiji](Fiji "wikilink").
 
-Note: The *Plugins \> Macro \> Install...* command is an ImageJ 1.x
-command that does not yet support the SciJava [Script
-Parameters](Script_Parameters "wikilink") syntax (@) that was introduced
-with ImageJ2.
+Note: The *Plugins \> Macro \> Install...* command is an ImageJ 1.x command that does not yet support the SciJava [Script Parameters](Script_Parameters "wikilink") syntax (@) that was introduced with ImageJ2.
 
 ## Keyboard shortcuts
 
-Keyboard shortcuts can be defined by adding the key within brackets at
-the end of the macro name. Example:
+Keyboard shortcuts can be defined by adding the key within brackets at the end of the macro name. Example:
 
 ``` java
 // install a keyboard shortcut: when pressing Ctrl+J,
@@ -417,8 +324,7 @@ macro "Save As JPEG... [j]" {
 
 ## Tool icons
 
-By choosing a macro name that ends in *Action Tool*, you can install new
-tools into the toolbar:
+By choosing a macro name that ends in *Action Tool*, you can install new tools into the toolbar:
 
 ``` java
 // A click on the empty rectangle will have the same
@@ -429,12 +335,9 @@ macro "Save As JPEG Action Tool - C000R11ee" {
 }
 ```
 
-The icon is defined by a funny-looking string (in this case,
-*C000R11ee*). To learn how to define your own icon, please have a look
-[here](https://imagej.net/developer/macro/macros.html#icons).
+The icon is defined by a funny-looking string (in this case, *C000R11ee*). To learn how to define your own icon, please have a look [here](https://imagej.net/developer/macro/macros.html#icons).
 
-Many tools open an option dialog upon double-click on the icon. You can
-do that, too, by choosing a name that ends in *Action Tool Options*:
+Many tools open an option dialog upon double-click on the icon. You can do that, too, by choosing a name that ends in *Action Tool Options*:
 
 ``` java
 // A right-click on the tool icon lets the user change
@@ -449,22 +352,13 @@ macro "Save As JPEG Action Tool Options" {
 
 # Example macros
 
-This section contains a number of macros which you can use as starting
-points to write your own macros.
+This section contains a number of macros which you can use as starting points to write your own macros.
 
-If you're interested in performing a certain procedure for all files in
-a given folder, you might want to have a look a the tutorial *[How to
-apply a common operation to a complete
-directory](How_to_apply_a_common_operation_to_a_complete_directory "wikilink")*
-or at the macro template that you can open in the [Script
-Editor](Script_Editor "wikilink") via {% include bc content='Templates |
-Macros | Process Folder'%}.
+If you're interested in performing a certain procedure for all files in a given folder, you might want to have a look a the tutorial *[How to apply a common operation to a complete directory](How_to_apply_a_common_operation_to_a_complete_directory "wikilink")* or at the macro template that you can open in the [Script Editor](Script_Editor "wikilink") via {% include bc content='Templates | Macros | Process Folder'%}.
 
 ## Resizing to a given width of the selection bounds
 
-When you need to resize an image but all you know is what width (in
-pixels) a structure has that you selected as a ROI, this macro is for
-you:
+When you need to resize an image but all you know is what width (in pixels) a structure has that you selected as a ROI, this macro is for you:
 
 ``` java
 desiredSelectionWidth = 480;
@@ -487,9 +381,7 @@ makeSelection(roiType, x, y);
 
 ## Splitting timepoints
 
-This macro splits a hyperstack into its individual timepoints, so that
-you end up with as many new images as the original hyperstack had
-frames:
+This macro splits a hyperstack into its individual timepoints, so that you end up with as many new images as the original hyperstack had frames:
 
 ``` java
 /* split timepoints */
@@ -517,9 +409,7 @@ close();
 
 ## Merging timepoints
 
-This macro does the opposite from the previous ones: it merges all the
-open images into one big hyperstack, assuming that they are the
-different timepoints of one movie.
+This macro does the opposite from the previous ones: it merges all the open images into one big hyperstack, assuming that they are the different timepoints of one movie.
 
 ``` java
 // join frames
@@ -570,8 +460,7 @@ setBatchMode(false);
 
 ## Normalize all images to the global mean
 
-This macro takes the mean of all open images' means and then adjusts the
-pixel values in each image to that mean:
+This macro takes the mean of all open images' means and then adjusts the pixel values in each image to that mean:
 
 ``` java
 setBatchMode(true);
@@ -596,9 +485,7 @@ setBatchMode(false);
 
 ## Make a false-colored montage
 
-Here is a more complicated macro, maybe you can guess from reading the
-code how it does what it does? After that, you might want to try it on
-the Lena example...
+Here is a more complicated macro, maybe you can guess from reading the code how it does what it does? After that, you might want to try it on the Lena example...
 
 ``` java
 function simplifyColors() {
@@ -738,19 +625,15 @@ makeMontage(false);
 
 ## Mimic the *merge sides* command in the BioRad MRC600 confocal
 
-Macro to mimic the merge sides command in the original BioRad MRC600
-confocal.
+Macro to mimic the merge sides command in the original BioRad MRC600 confocal.
 
-For an example raw image, see
-http://www.flickr.com/photos/mcammer/1618746622/
+For an example raw image, see http://www.flickr.com/photos/mcammer/1618746622/
 
-For an example result, see
-http://www.flickr.com/photos/mcammer/8551068739/
+For an example result, see http://www.flickr.com/photos/mcammer/8551068739/
 
 Splits a grayscale image and merges. Works on stacks.
 
-Michael Cammer michael.cammer@med.nyu.edu with editing by Johannes
-Schindelin \[Johannes.Schindelin@gmx.de\] 20130312
+Michael Cammer michael.cammer@med.nyu.edu with editing by Johannes Schindelin \[Johannes.Schindelin@gmx.de\] 20130312
 
 ``` java
 macro "Split and Merge" {
@@ -772,51 +655,25 @@ macro "Split and Merge" {
 
 ## More example macros
 
-There are quite a lot of macros on the [ImageJ
-website](https://imagej.net/macros/), and specifically [example
-macros](https://imagej.net/macros/examples/) including a few from the
-Macro workshop at the [ImageJ
-conference 2010](http://imagejconf.tudor.lu/archive/imagej-user-and-developer-conference-2010).
-Since there is no categorized index, you might want to use the search
-facility on [this page](https://imagej.net/developer/index.html).
+There are quite a lot of macros on the [ImageJ website](https://imagej.net/macros/), and specifically [example macros](https://imagej.net/macros/examples/) including a few from the Macro workshop at the [ImageJ conference 2010](http://imagejconf.tudor.lu/archive/imagej-user-and-developer-conference-2010). Since there is no categorized index, you might want to use the search facility on [this page](https://imagej.net/developer/index.html).
 
 # Overcoming limitations
 
-Macros have a major limitation compared to the other
-[scripting](scripting "wikilink") languages: they have only a [fixed set
-of built-in
-functions](https://imagej.net/developer/macro/functions.html).
-Sometimes, though, one needs access to functions outside this realm; in
-that case, there are three primary means of overcoming this limitation:
+Macros have a major limitation compared to the other [scripting](scripting "wikilink") languages: they have only a [fixed set of built-in functions](https://imagej.net/developer/macro/functions.html). Sometimes, though, one needs access to functions outside this realm; in that case, there are three primary means of overcoming this limitation:
 
 ## Macro extensions
 
-It is possible to implement code in [Java](Java "wikilink") which
-extends the macro language via the [`Ext`
-prefix](https://imagej.net/developer/macro/functions.html#Ext). However,
-this cannot be done within the macro itself.
+It is possible to implement code in [Java](Java "wikilink") which extends the macro language via the [`Ext` prefix](https://imagej.net/developer/macro/functions.html#Ext). However, this cannot be done within the macro itself.
 
 ## The call function
 
-The [`call`
-function](https://imagej.net/developer/macro/functions.html#call) can
-invoke Java methods directly. However, this function only supports
-calling `public static` Java methods which accept `String` only, and
-return `String` only. Most times, though, the needed function does not
-conform to these requirements; this approach is suitable mostly for
-routines designed to be called from the macro language in this way.
+The [`call` function](https://imagej.net/developer/macro/functions.html#call) can invoke Java methods directly. However, this function only supports calling `public static` Java methods which accept `String` only, and return `String` only. Most times, though, the needed function does not conform to these requirements; this approach is suitable mostly for routines designed to be called from the macro language in this way.
 
 ## The eval function
 
-The [`eval`
-function](https://imagej.net/developer/macro/functions.html#eval) can
-execute [JavaScript](JavaScript "wikilink") (or
-[BeanShell](BeanShell "wikilink") or [Python](Python "wikilink")) code
-directly. This is a powerful and flexible approach which can invoke
-nearly any Java API without needing to write external Java code.
+The [`eval` function](https://imagej.net/developer/macro/functions.html#eval) can execute [JavaScript](JavaScript "wikilink") (or [BeanShell](BeanShell "wikilink") or [Python](Python "wikilink")) code directly. This is a powerful and flexible approach which can invoke nearly any Java API without needing to write external Java code.
 
-Here is an example which sets the position of a [3D
-Viewer](3D_Viewer "wikilink") window:
+Here is an example which sets the position of a [3D Viewer](3D_Viewer "wikilink") window:
 
 ``` java
 run("MRI Stack (528K)");
@@ -839,9 +696,6 @@ eval("script",
 
 # Further documentation
 
-A complete description of the macro language, a reference of the
-built-in functions, and examples can be found
-[here](https://imagej.net/developer/index.html).
+A complete description of the macro language, a reference of the built-in functions, and examples can be found [here](https://imagej.net/developer/index.html).
 
-[Category:Scripting](Category:Scripting "wikilink")
-[Category:Tutorials](Category:Tutorials "wikilink")
+[Category:Scripting](Category:Scripting "wikilink") [Category:Tutorials](Category:Tutorials "wikilink")

@@ -10,6 +10,4 @@ description: test description
 
 1.  REDIRECT [Interaction\_Analysis](Interaction_Analysis "wikilink")
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Particle
-analysis](Category:Particle_analysis "wikilink")
-[Category:Colocalization](Category:Colocalization "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Particle analysis](Category:Particle_analysis "wikilink") [Category:Colocalization](Category:Colocalization "wikilink")

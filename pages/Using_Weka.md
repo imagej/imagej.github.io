@@ -10,32 +10,21 @@ description: test description
 
 ## A very small how to get started with Weka using a KDTree
 
-[Weka](http://sourceforge.net/projects/weka/) seems to be a very nice
-framework that implements a lot of stuff for machine learning. It is
-completely Java based and Open Source. Here I just want to share my
-experiences getting started with Weka.
+[Weka](http://sourceforge.net/projects/weka/) seems to be a very nice framework that implements a lot of stuff for machine learning. It is completely Java based and Open Source. Here I just want to share my experiences getting started with Weka.
 
 ### Why do I want to use Weka
 
-In my case, I simply want to find nearest neighbors in two clouds of 3D
-points.
+In my case, I simply want to find nearest neighbors in two clouds of 3D points.
 
 ### Setting up Weka
 
-As of commit
-[df44aab1](https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=commitdiff;h=df44aab197dcff1c0de228b0ac08b7ef8966b75e;hb=refs/heads/master)
-(December 16th, 2009), Fiji's *master* branch comes with Weka.
+As of commit [df44aab1](https://fiji.sc/cgi-bin/gitweb.cgi?p=fiji.git;a=commitdiff;h=df44aab197dcff1c0de228b0ac08b7ef8966b75e;hb=refs/heads/master) (December 16th, 2009), Fiji's *master* branch comes with Weka.
 
 ### Using the Weka datastructures
 
-Weka is seems to work with arbitrary datastructures and -types. They are
-defined using the weka.core.Attribute object that can even hold
-weka.core.FastVector objects. Each weka.core.Instance is one dataelement
-that contains n Attributes and their respective values. Groups of same
-type of Instance objects are grouped using weka.core.Instances.
+Weka is seems to work with arbitrary datastructures and -types. They are defined using the weka.core.Attribute object that can even hold weka.core.FastVector objects. Each weka.core.Instance is one dataelement that contains n Attributes and their respective values. Groups of same type of Instance objects are grouped using weka.core.Instances.
 
-Below is a Java method howto store a list of 3D points as a Weka
-datastructure.
+Below is a Java method howto store a list of 3D points as a Weka datastructure.
 
 ``` java
 /**
@@ -86,13 +75,7 @@ public Instances insertIntoWeka(final List <Point3d> points, final String name)
 
 ### Setting up the KDTree
 
-Setting up the [KDTree](wikipedia:Kd-tree "wikilink") is rather simple.
-The tricky part is the Euclidean Distance measure. It is very nice that
-Weka automatically figures out how to compute the Euclidean Distance as
-we use only simple numeric attributes. However, by default it nomalizes
-the data independently for each dimension which might cause problems as
-in my case. If you want to prevent him from doing so you have to assign
-a new EuclideanDistance object that does not normalize.
+Setting up the [KDTree](wikipedia:Kd-tree "wikilink") is rather simple. The tricky part is the Euclidean Distance measure. It is very nice that Weka automatically figures out how to compute the Euclidean Distance as we use only simple numeric attributes. However, by default it nomalizes the data independently for each dimension which might cause problems as in my case. If you want to prevent him from doing so you have to assign a new EuclideanDistance object that does not normalize.
 
 ``` java
 //
@@ -121,13 +104,9 @@ catch (Exception e) { e.printStackTrace();}
 
 ### Searching the KDTree
 
-Once solved the normalization issue, searching the KDTree for the
-N-Nearest Neighbors is simple again. You create another Instance of the
-same type and ask the KDTree for its nearest neigbors.
+Once solved the normalization issue, searching the KDTree for the N-Nearest Neighbors is simple again. You create another Instance of the same type and ask the KDTree for its nearest neigbors.
 
-First we create an Instance that can be used to search the KDTree. Later
-on it is very simple to just update its values rather than creating a
-new one for each query.
+First we create an Instance that can be used to search the KDTree. Later on it is very simple to just update its values rather than creating a new one for each query.
 
 ``` java
 /**
@@ -191,5 +170,4 @@ System.out.println("The distance between" + nn2 + " and " + p + " is " + df.dist
 
 ### See also
 
-  - How to [use Weka in your Java
-    code](http://weka.wikispaces.com/Use+Weka+in+your+Java+code)
+  - How to [use Weka in your Java code](http://weka.wikispaces.com/Use+Weka+in+your+Java+code)

@@ -8,11 +8,10 @@ categories: Colocalization,Plugins
 description: test description
 ---
 
-{% include wip %}
+{% include wip%}
 
 # What is Colocalize?
 
 # How to Use Colocalize
 
-[Category:Colocalization](Category:Colocalization "wikilink")
-[Category:Plugins](Category:Plugins "wikilink")
+[Category:Colocalization](Category:Colocalization "wikilink") [Category:Plugins](Category:Plugins "wikilink")

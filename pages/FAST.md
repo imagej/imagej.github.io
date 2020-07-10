@@ -12,151 +12,82 @@ description: test description
 
 ### Description
 
-This ImageJ macro automates tasks (open, set threshold, save Region Of
-Interest, measure) to process a set of single-channel fluorescence
-images.
+This ImageJ macro automates tasks (open, set threshold, save Region Of Interest, measure) to process a set of single-channel fluorescence images.
 
 ## Installation
 
 Requirements:
 
   - [ImageJ](https://imagej.net/Downloads) v1.49o or newer.
-  - [Bio-Formats 5.x](https://www.openmicroscopy.org/bio-formats/downloads/)
-    or newer.
+  - [Bio-Formats 5.x](https://www.openmicroscopy.org/bio-formats/downloads/) or newer.
 
-{% include tip id='bioformat' tip='Saving ""bioformats\_package.jar"" in
-.\\ImageJ.app\\plugins\\ seems to be the best way to use the macro in
-stable conditions.' %} Use the ImageJ Updater and see the instructions
-[How to follow a 3rd party update
-site](https://imagej.net/How_to_follow_a_3rd_party_update_site) select
-FAST (http://sites.imagej.net/FAST) from the available site list.
+{% include tip id='bioformat' tip='Saving ""bioformats\_package.jar"" in .\\ImageJ.app\\plugins\\ seems to be the best way to use the macro in stable conditions.' %} Use the ImageJ Updater and see the instructions [How to follow a 3rd party update site](https://imagej.net/How_to_follow_a_3rd_party_update_site) select FAST (http://sites.imagej.net/FAST) from the available site list.
 
-New commands should then appear in ImageJ '{% include bc
-content='Plugins | FAST '%}' menu.
+New commands should then appear in ImageJ '{% include bc content='Plugins | FAST '%}' menu.
 
 ## Image Processing
 
-![Description of the Image processing pipeline of FAST
-macro.](/images/pages/FAST_Processing.png
-"Description of the Image processing pipeline of FAST macro.")"
+![Description of the Image processing pipeline of FAST macro.](/images/pages/FAST_Processing.png "Description of the Image processing pipeline of FAST macro.")"
 
 ### Step 1: Auto processing of images within the selected work directory
 
-1.  List all files containing user-defined extension (e.g. czi - zvi -
-    tif - nd2) within selected directory and sub-directories.
-2.  Apply the user-defined threshold (default 290) then analyse pixels
-    above the threshold.
-3.  Group pixels above the threshold in one Region Of Interest and save
-    this ROI in a zip file in the image directory.
+1.  List all files containing user-defined extension (e.g. czi - zvi - tif - nd2) within selected directory and sub-directories.
+2.  Apply the user-defined threshold (default 290) then analyse pixels above the threshold.
+3.  Group pixels above the threshold in one Region Of Interest and save this ROI in a zip file in the image directory.
 
 ### Step 2: User confirmation of selected Regions Of Interest and measure
 
 1.  Open images one by one to check the auto-selected ROI.
-2.  User can confirm the ROI, modify it directly or remove image from
-    further analysis.
+2.  User can confirm the ROI, modify it directly or remove image from further analysis.
 3.  Measure of fluorescence in selected ROI.
 
 ## Startup Options
 
-![Options dialog box](/images/pages/FAST_Options.png "Options dialog box")" The macro
-displays a dialog box to set analysis options:
+![Options dialog box](/images/pages/FAST_Options.png "Options dialog box")" The macro displays a dialog box to set analysis options:
 
-  - **File type** : Select image type between CZI (Carl Zeiss Image),
-    ZVI (Zeiss Vision Image), ND2 (Nikon) or TIFF (Tagged Image File
-    Format).  
+  - **File type** : Select image type between CZI (Carl Zeiss Image), ZVI (Zeiss Vision Image), ND2 (Nikon) or TIFF (Tagged Image File Format).  
     'Other' allow to enter a specific file extension.  
-    **Threshold value** : Set threshold value for pixel intensity,
-    segmenting the image into features of interest (above threshold) and
-    background.
+    **Threshold value** : Set threshold value for pixel intensity, segmenting the image into features of interest (above threshold) and background.
 
-{% include tip id='Threshold' tip='"""""Threshold value must be defined
-for each acquisition system (microscope + camera + exposure time +
-file-type)""""".' %}
+{% include tip id='Threshold' tip='"""""Threshold value must be defined for each acquisition system (microscope + camera + exposure time + file-type)""""".' %}
 
-  - **Create ROIs** : Step 1, analyses pixels above the user-defined
-    threshold value and automatically saves Regions Of Interest zip file
-    in the image directory.  
-    **Measure ROIs** : Step 2 of image analysis to check individually
-    and measure previously created ROIs. (With Step 1 unchecked and Step
-    2 checked, user can reanalyse previous data).  
-    **Overwrite existing ROIs** : If selected, the macro will overwrite
-    ROIs zip files without prompting the user every time.  
-    **Silent Mode** : If selected, the macro will measure the ROI of all
-    images without prompting the user every time. Useful for reanalysis
-    of previous data.  
-    **Restart Mode** : When auto processing is cancelled accidentally,
-    this mode checks the last ROI created and restart analysis from this
-    point.
+  - **Create ROIs** : Step 1, analyses pixels above the user-defined threshold value and automatically saves Regions Of Interest zip file in the image directory.  
+    **Measure ROIs** : Step 2 of image analysis to check individually and measure previously created ROIs. (With Step 1 unchecked and Step 2 checked, user can reanalyse previous data).  
+    **Overwrite existing ROIs** : If selected, the macro will overwrite ROIs zip files without prompting the user every time.  
+    **Silent Mode** : If selected, the macro will measure the ROI of all images without prompting the user every time. Useful for reanalysis of previous data.  
+    **Restart Mode** : When auto processing is cancelled accidentally, this mode checks the last ROI created and restart analysis from this point.
 
 ## Validation of selected Regions Of Interest
 
-![User validation of defined ROI](/images/pages/FAST_ROI-check.png
-"User validation of defined ROI")" After completion of Step 1 of image
-processing, images and their corresponding ROIs need to be validated by
-the user.
+![User validation of defined ROI](/images/pages/FAST_ROI-check.png "User validation of defined ROI")" After completion of Step 1 of image processing, images and their corresponding ROIs need to be validated by the user.
 
-Each image and the corresponding ROI are opened automatically. An
-options dialog box is displayed.
+Each image and the corresponding ROI are opened automatically. An options dialog box is displayed.
 
-  - If the area is correct the user must click {% include key
-    content='press|OK' %} to proceed with next image.
-  - If the area contains non-specific signal, select {% include key
-    content='press|Yes' %} to *redefine area manually* and edit the ROI.
-  - The dialog box allows to exclude current image from analysis (e.g.
-    blurred image).
+  - If the area is correct the user must click {% include key content='press|OK' %} to proceed with next image.
+  - If the area contains non-specific signal, select {% include key content='press|Yes' %} to *redefine area manually* and edit the ROI.
+  - The dialog box allows to exclude current image from analysis (e.g. blurred image).
 
-Just select the radio button option needed then click {% include key
-content='press|OK' %} or {% include key content='press|⏎ENTER' %} to
-continue.
+Just select the radio button option needed then click {% include key content='press|OK' %} or {% include key content='press|⏎ENTER' %} to continue.
 
-![Dialog box to redefine area](/images/pages/FAST_ROI-edition.png
-"Dialog box to redefine area")" If you selected to *redefine area
-manually*, a new dialog box is displayed to get access to the ImageJ
-toolbar and modify the selection. The user-defined threshold is then
-automatically applied.
+![Dialog box to redefine area](/images/pages/FAST_ROI-edition.png "Dialog box to redefine area")" If you selected to *redefine area manually*, a new dialog box is displayed to get access to the ImageJ toolbar and modify the selection. The user-defined threshold is then automatically applied.
 
-![Example of thresholded image and corrected ROI](/images/pages/FAST_Thr-ROI.png
-"Example of thresholded image and corrected ROI")"
+![Example of thresholded image and corrected ROI](/images/pages/FAST_Thr-ROI.png "Example of thresholded image and corrected ROI")"
 
-Select the appropriate tool in ImageJ toolbar:
-![Freehand.png](/images/pages/Freehand.png "Freehand.png")" Freehand (default) OR
-![Wand-tool.png](/images/pages/Wand-tool.png "Wand-tool.png")" Wand tool.
+Select the appropriate tool in ImageJ toolbar: ![Freehand.png](/images/pages/Freehand.png "Freehand.png")" Freehand (default) OR ![Wand-tool.png](/images/pages/Wand-tool.png "Wand-tool.png")" Wand tool.
 
-  - To remove non-specific fluorescence, use selected tool and hold {%
-    include key content='press|Alt' %} while unwanted area to remove it
-    from ROI.
-  - To add area to the previously selected ROI, hold {% include key
-    content='press|Shift' %} while selecting new area to add.
+  - To remove non-specific fluorescence, use selected tool and hold {% include key content='press|Alt' %} while unwanted area to remove it from ROI.
+  - To add area to the previously selected ROI, hold {% include key content='press|Shift' %} while selecting new area to add.
 
-Click {% include key content='press|OK' %} to confirm the new ROI.
-Fluorescence is then measured and the ROI zip file is automatically
-updated. {% include tip id='Selection' tip='In case the selection is
-empty after manual correction, the macro discards the image from
-analysis.' %}
+Click {% include key content='press|OK' %} to confirm the new ROI. Fluorescence is then measured and the ROI zip file is automatically updated. {% include tip id='Selection' tip='In case the selection is empty after manual correction, the macro discards the image from analysis.' %}
 
-After completion of Step 2, a list of all measured images with filename
-is displayed in the Result Table window of ImageJ.
+After completion of Step 2, a list of all measured images with filename is displayed in the Result Table window of ImageJ.
 
-This table is automatically saved as a *csv* file in the work directory
-selected at startup.
+This table is automatically saved as a *csv* file in the work directory selected at startup.
 
 ## Related Resources
 
-This program is free software; you can redistribute it and/or modify it
-under the terms of the [GNU General Public
-License](http://www.gnu.org/licenses/gpl.html) as published by the Free
-Software Foundation. [Comments or improvements are
-welcome](https://imagej.net/User:C.TURI%C3%88S). It is distributed in
-the hope that it will be useful, but **"AS IS" without warranty of any
-kind**. See the [GNU General Public
-License](http://www.gnu.org/licenses/gpl.html) for more details.
+This program is free software; you can redistribute it and/or modify it under the terms of the [GNU General Public License](http://www.gnu.org/licenses/gpl.html) as published by the Free Software Foundation. [Comments or improvements are welcome](https://imagej.net/User:C.TURI%C3%88S). It is distributed in the hope that it will be useful, but **"AS IS" without warranty of any kind**. See the [GNU General Public License](http://www.gnu.org/licenses/gpl.html) for more details.
 
-This program has been developed within the framework of the [OECD Work
-plan for the Test Guidelines Programme
-(TGP)](http://www.oecd.org/chemicalsafety/testing/oecd-guidelines-testing-chemicals-related-documents.htm)
-- Project 2.46: New Test Guideline for the Detection of Endocrine Active
-Substances, acting through estrogen receptors using transgenic cyp
-19a1b-GFP Zebrafish Embryos (EASZY assay).
+This program has been developed within the framework of the [OECD Work plan for the Test Guidelines Programme (TGP)](http://www.oecd.org/chemicalsafety/testing/oecd-guidelines-testing-chemicals-related-documents.htm) - Project 2.46: New Test Guideline for the Detection of Endocrine Active Substances, acting through estrogen receptors using transgenic cyp 19a1b-GFP Zebrafish Embryos (EASZY assay).
 
-[Category:Analysis‏‎](Category:Analysis‏‎ "wikilink")
-[Category:Segmentation](Category:Segmentation "wikilink")
+[Category:Analysis‏‎](Category:Analysis‏‎ "wikilink") [Category:Segmentation](Category:Segmentation "wikilink")

@@ -8,55 +8,33 @@ categories: Development
 description: test description
 ---
 
-{% include develop-menu %}The [ImageJ](ImageJ "wikilink") and related
-[SciJava](SciJava "wikilink") projects take advantage of several project
-management tools.
+{% include develop-menu%}The [ImageJ](ImageJ "wikilink") and related [SciJava](SciJava "wikilink") projects take advantage of several project management tools.
 
 ## Git
 
-ImageJ uses the [Git](Git "wikilink") revision control system to manage
-its [source code](source_code "wikilink").
+ImageJ uses the [Git](Git "wikilink") revision control system to manage its [source code](source_code "wikilink").
 
-See the [Git](Git "wikilink") pages for more information, tutorials,
-etc.
+See the [Git](Git "wikilink") pages for more information, tutorials, etc.
 
 ## Maven
 
 ImageJ uses [Maven](Maven "wikilink") for its project infrastructure.
 
-SciJava projects use the [SciJava Maven
-repository](https://maven.scijava.org/) (using [Sonatype
-Nexus](http://www.sonatype.com/nexus)) for managing SciJava libraries.
-Such a repository serves two main purposes:
+SciJava projects use the [SciJava Maven repository](https://maven.scijava.org/) (using [Sonatype Nexus](http://www.sonatype.com/nexus)) for managing SciJava libraries. Such a repository serves two main purposes:
 
 ### Deployment
 
-The main purpose of the SciJava Maven repository is to serve the
-artifacts that are not yet ready to be deployed to OSS Sonatype.
-Typically, these components are [versioned at
-0.x](Versioning "wikilink")—i.e., still in incubation. Once components
-reach 1.0.0, we try to [release them to the central Maven repository via
-OSS
-Sonatype](http://maven.apache.org/guides/mini/guide-central-repository-upload.html).
+The main purpose of the SciJava Maven repository is to serve the artifacts that are not yet ready to be deployed to OSS Sonatype. Typically, these components are [versioned at 0.x](Versioning "wikilink")—i.e., still in incubation. Once components reach 1.0.0, we try to [release them to the central Maven repository via OSS Sonatype](http://maven.apache.org/guides/mini/guide-central-repository-upload.html).
 
-This purpose is also crucial for agile development across multiple
-components. For more details, see [Nine Reasons to Use a Repository
-Manager](http://blog.sonatype.com/2008/11/nine-reasons-to-use-a-repository-manager-sonatype-nexus/)
-and [Repository Management with
-Nexus](http://books.sonatype.com/nexus-book/reference/repoman.html).
+This purpose is also crucial for agile development across multiple components. For more details, see [Nine Reasons to Use a Repository Manager](http://blog.sonatype.com/2008/11/nine-reasons-to-use-a-repository-manager-sonatype-nexus/) and [Repository Management with Nexus](http://books.sonatype.com/nexus-book/reference/repoman.html).
 
 ### Proxying
 
-The SciJava Maven repository's secondary purpose is to serve as a fast,
-local mirror of Maven Central as well as several useful third-party
-repositories.
+The SciJava Maven repository's secondary purpose is to serve as a fast, local mirror of Maven Central as well as several useful third-party repositories.
 
-It acts as a unified, on-demand mirror for these public Maven
-repositories, reducing load on the remote servers and potentially
-reducing local build times.
+It acts as a unified, on-demand mirror for these public Maven repositories, reducing load on the remote servers and potentially reducing local build times.
 
-Developers can benefit from the mirror by adding the following section
-to their `$HOME/.m2/settings.xml` file:
+Developers can benefit from the mirror by adding the following section to their `$HOME/.m2/settings.xml` file:
 
 ``` xml
 <settings>
@@ -74,33 +52,21 @@ to their `$HOME/.m2/settings.xml` file:
 
 ## Continuous integration
 
-ImageJ uses [Travis CI](Travis_CI "wikilink"), a cloud-based continuous
-integration (CI) system, which automatically checks the code for build
-and test errors.
+ImageJ uses [Travis CI](Travis_CI "wikilink"), a cloud-based continuous integration (CI) system, which automatically checks the code for build and test errors.
 
 ## Issue tracking
 
-SciJava software projects manage tasks and priorities using [GitHub
-Issues](https://guides.github.com/features/issues/):
+SciJava software projects manage tasks and priorities using [GitHub Issues](https://guides.github.com/features/issues/):
 
-You can search issues using the ImageJ search portal's GitHub button
-here:
+You can search issues using the ImageJ search portal's GitHub button here:
 
 {% include big-link url='https://search.imagej.net/' %}
 
-Previously, some projects used [Trac](https://trac.edgewall.org/) for
-issue tracking and roadmapping, but all Trac issues have now been
-migrated to GitHub. The old Trac-based issues are still available as
-read-only archives: see [here for
-ImageJ](https://imagej.github.io/tickets/) and [here for
-LOCI/Bio-Formats](https://uw-loci.github.io/tickets/).
+Previously, some projects used [Trac](https://trac.edgewall.org/) for issue tracking and roadmapping, but all Trac issues have now been migrated to GitHub. The old Trac-based issues are still available as read-only archives: see [here for ImageJ](https://imagej.github.io/tickets/) and [here for LOCI/Bio-Formats](https://uw-loci.github.io/tickets/).
 
 ### What are issues for?
 
-Issues and milestones are public-facing entities, yet their content can
-be highly technical to serve as a roadmap and implementation guide for
-developers. As we see it, the various audiences for issues and
-milestones, and their needs, are as follows:
+Issues and milestones are public-facing entities, yet their content can be highly technical to serve as a roadmap and implementation guide for developers. As we see it, the various audiences for issues and milestones, and their needs, are as follows:
 
 <table>
 <tbody>
@@ -173,90 +139,52 @@ want...</strong></p></td>
 </tbody>
 </table>
 
-To meet these needs, we use the following conventions with GitHub
-issues:
+To meet these needs, we use the following conventions with GitHub issues:
 
 **Milestones**
 
   - For short-term active development, use names m1, m2, etc.
-      - These milestones themselves have no due date and never close,
-        and contain only open issues
-      - When an issue is closed, it is moved to match its corresponding
-        release milestone.
-  - Future planned breaking changes should go in
-    [SemVer](Versioning "wikilink")-named milestones.
+      - These milestones themselves have no due date and never close, and contain only open issues
+      - When an issue is closed, it is moved to match its corresponding release milestone.
+  - Future planned breaking changes should go in [SemVer](Versioning "wikilink")-named milestones.
   - All projects should have an "unscheduled" milestone.
-      - Issues in "unscheduled" are things that core developers and
-        maintainers cannot make time to address.
+      - Issues in "unscheduled" are things that core developers and maintainers cannot make time to address.
 
 **Issues**
 
   - Use the standard GitHub labels.
-  - For repositories with multiple components (e.g.,
-    [imagej-ui-swing](https://github.com/imagej/imagej-ui-swing)) add
-    "component:XXXX" labels, in orange, as needed.
+  - For repositories with multiple components (e.g., [imagej-ui-swing](https://github.com/imagej/imagej-ui-swing)) add "component:XXXX" labels, in orange, as needed.
   - Every issue must belong to a milestone.
       - Use the "unscheduled" milestone for inactive issues.
   - If you are currently working on an issue, assign it to yourself.
   - All issues in near-term milestones should have an assignee.
 
-Using these conventions gives rise to a workflow where new issues come
-in with no assignee and no milestone, and the project maintainers either
-assign them to a developer who will carry out the work, or put the issue
-in "unscheduled" with no assignee.
+Using these conventions gives rise to a workflow where new issues come in with no assignee and no milestone, and the project maintainers either assign them to a developer who will carry out the work, or put the issue in "unscheduled" with no assignee.
 
-As issues are closed, they are sorted into milestones which match each
-project's release tags, making it easy to browse which issues were
-addressed as part of each release.
+As issues are closed, they are sorted into milestones which match each project's release tags, making it easy to browse which issues were addressed as part of each release.
 
-The high-level topics of interest (i.e.,
-[bugs](https://github.com/issues?q=is%3Aopen+label%3Abug+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci)
-and
-[enhancements](https://github.com/issues?q=is%3Aopen+label%3Aenhancement+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci))
-can easily be filtered by label, while milestones establish the timeline
-and functional development.
+The high-level topics of interest (i.e., [bugs](https://github.com/issues?q=is%3Aopen+label%3Abug+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci) and [enhancements](https://github.com/issues?q=is%3Aopen+label%3Aenhancement+user%3Abigdataviewer+user%3Afiji+user%3Aimagej+user%3Aimglib+user%3Amaven-nar+user%3Ascifio+user%3Ascijava+user%3Aslim-curve+user%3Atrakem2+user%3Auw-loci)) can easily be filtered by label, while milestones establish the timeline and functional development.
 
-Note that the relationship between milestones and software releases can
-be one-to-many: e.g., bug-fix releases, or even the addition of new
-features, may not necessitate their own milestones. Good milestone
-structure should read similarly to a good
-[git](http://chris.beams.io/posts/git-commit/)
-[history](https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message):
-informative without being overly verbose.
+Note that the relationship between milestones and software releases can be one-to-many: e.g., bug-fix releases, or even the addition of new features, may not necessitate their own milestones. Good milestone structure should read similarly to a good [git](http://chris.beams.io/posts/git-commit/) [history](https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message): informative without being overly verbose.
 
 ## Patch submissions
 
-The preferred mechanism to contribute improvements to
-[ImageJ](ImageJ "wikilink") and other [SciJava](SciJava "wikilink")
-components is using [GitHub pull
-requests](https://help.github.com/articles/using-pull-requests/)\! See
-the [Contributing](Contributing "wikilink") page for details.
+The preferred mechanism to contribute improvements to [ImageJ](ImageJ "wikilink") and other [SciJava](SciJava "wikilink") components is using [GitHub pull requests](https://help.github.com/articles/using-pull-requests/)\! See the [Contributing](Contributing "wikilink") page for details.
 
 ## Roadmap links
 
-  - [News](News "wikilink") about ImageJ and Fiji developments,
-    including status updates, observations and comments about ImageJ
-    programming.
-  - [Recent changes](Special:RecentChanges "wikilink") to this web site
-    (*not* the ImageJ code itself).
-  - [BugZilla](https://fiji.sc/bugzilla) database of user-reported bugs
-    from the [Report a Bug](Report_a_Bug "wikilink") plugin.
+  - [News](News "wikilink") about ImageJ and Fiji developments, including status updates, observations and comments about ImageJ programming.
+  - [Recent changes](Special:RecentChanges "wikilink") to this web site (*not* the ImageJ code itself).
+  - [BugZilla](https://fiji.sc/bugzilla) database of user-reported bugs from the [Report a Bug](Report_a_Bug "wikilink") plugin.
 
 ## Citable code
 
-Many of these tools are employed to facilitate
-[reproducibility](Reproducible_builds "wikilink") from a technical
-perspective. From a social perspective, we are writing software for
-science - in which [scholarly citations](Citations "wikilink") provide
-another currency for reproducibility.
+Many of these tools are employed to facilitate [reproducibility](Reproducible_builds "wikilink") from a technical perspective. From a social perspective, we are writing software for science - in which [scholarly citations](Citations "wikilink") provide another currency for reproducibility.
 
-To this end, developers can now use [digital archives like
-Zenodo](https://guides.github.com/activities/citable-code/) to provide
-consistent methods for citation.
+To this end, developers can now use [digital archives like Zenodo](https://guides.github.com/activities/citable-code/) to provide consistent methods for citation.
 
 ## See also
 
-  - The [Releases](Releases "wikilink") page, for more about how these
-    resources are used to release SciJava software artifacts.
+  - The [Releases](Releases "wikilink") page, for more about how these resources are used to release SciJava software artifacts.
 
 [Category:Development](Category:Development "wikilink")

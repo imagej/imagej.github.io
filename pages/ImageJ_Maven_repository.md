@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Project
-    management\#Maven](Project_management#Maven "wikilink")
+1.  REDIRECT [Project management\#Maven](Project_management#Maven "wikilink")

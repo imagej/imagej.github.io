@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [2009-08-20 - We have a download mirror at
-    UCSF\!](2009-08-20_-_We_have_a_download_mirror_at_UCSF! "wikilink")
+1.  REDIRECT [2009-08-20 - We have a download mirror at UCSF\!](2009-08-20_-_We_have_a_download_mirror_at_UCSF! "wikilink")

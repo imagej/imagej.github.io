@@ -8,53 +8,31 @@ categories:
 description: test description
 ---
 
-{% capture author %} {% include person content="Twagner" %} {%
-endcapture %}
 
-{% capture maintainer %} {% include person content="Twagner" %} {%
-endcapture %} {% include sidebox-right software='Fiji' name='Trajectory
-classifier for TrackMate' author=author maintainer=maintainer
-filename='ij-trajectory-classifier.jar
-[\[1](https://github.com/thorstenwagner/ij-trajectory-classifier/releases/latest)\]'
-source='Github
-[\[2](https://github.com/thorstenwagner/ij-trajectory-classifier)\]'
-version='v0.8.1 (24 Aug. 2016)' status='active' %}
+{% capture author%}
+{% include person content='Twagner' %}
+{% endcapture %}
+
+{% capture maintainer%}
+{% include person content='Twagner' %}
+{% endcapture %}
+{% include info-box software='Fiji' name='Trajectory classifier for TrackMate' author=author maintainer=maintainer filename='ij-trajectory-classifier.jar [\[1](https://github.com/thorstenwagner/ij-trajectory-classifier/releases/latest) \]' source='Github [\[2](https://github.com/thorstenwagner/ij-trajectory-classifier) \]' latest-version='v0.8.1 (24 Aug. 2016)' status='active' %}
 
 ## Purpose
 
-This Fiji plugin loads trajectories from TrackMate (exported via the
-action "Export trajectories"), characterize them using
-[TraJ](https://github.com/thorstenwagner/TraJ) and classificate them
-into normal diffusion, subdiffusion, confined diffusion and
-directed/active motion by a random forest approach (through Renjin). It
-supports local analysis and is therefore able to split a single
-trajectory into segments with different motion types.
+This Fiji plugin loads trajectories from TrackMate (exported via the action "Export trajectories"), characterize them using [TraJ](https://github.com/thorstenwagner/TraJ) and classificate them into normal diffusion, subdiffusion, confined diffusion and directed/active motion by a random forest approach (through Renjin). It supports local analysis and is therefore able to split a single trajectory into segments with different motion types.
 
 For detailed information please see:
 
-[Wagner T, Kroll A, Haramagatti CR, Lipinski HG, Wiemann M (2017)
-Classification and Segmentation of Nanoparticle Diffusion Trajectories
-in Cellular Micro Environments. PLOS ONE 12(1):
-e0170165](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0170165)
+[Wagner T, Kroll A, Haramagatti CR, Lipinski HG, Wiemann M (2017) Classification and Segmentation of Nanoparticle Diffusion Trajectories in Cellular Micro Environments. PLOS ONE 12(1): e0170165](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0170165)
 
 ## Installation
 
-Simply turn on the [TraJClassifier update
-site](https://imagej.net/How_to_follow_a_3rd_party_update_site).
+Simply turn on the [TraJClassifier update site](https://imagej.net/How_to_follow_a_3rd_party_update_site).
 
 ## Introduction
 
-Please start by reading the
-[introduction](https://github.com/thorstenwagner/TraJ/wiki#introduction)
-of TraJ, because the TraJClassifier is build upon this library. The
-TraJClassifier was
-[trained](https://github.com/thorstenwagner/ij-trajectory-classifier/blob/master/src/main/java/de/biomedical_imaging/ij/trajectory_classifier/help/GenerateTrainingSet.java)
-using [simulated
-trajectories](https://github.com/thorstenwagner/TraJ/wiki#simulation) of
-normal diffusion, subdiffusion, confined diffusion and directed motion.
-For each simulated, we estimated nine features for each trajectory (For
-more information about these features, go to the [TraJ
-wiki](https://github.com/thorstenwagner/TraJ/wiki#features)):
+Please start by reading the [introduction](https://github.com/thorstenwagner/TraJ/wiki#introduction) of TraJ, because the TraJClassifier is build upon this library. The TraJClassifier was [trained](https://github.com/thorstenwagner/ij-trajectory-classifier/blob/master/src/main/java/de/biomedical_imaging/ij/trajectory_classifier/help/GenerateTrainingSet.java) using [simulated trajectories](https://github.com/thorstenwagner/TraJ/wiki#simulation) of normal diffusion, subdiffusion, confined diffusion and directed motion. For each simulated, we estimated nine features for each trajectory (For more information about these features, go to the [TraJ wiki](https://github.com/thorstenwagner/TraJ/wiki#features)):
 
   - Alpha
   - Asymmetry (Asymmetry3)
@@ -66,9 +44,7 @@ wiki](https://github.com/thorstenwagner/TraJ/wiki#features)):
   - Straightness
   - Trappedness
 
-These features and the corresponding class were then used to train a
-random forest classifier. Furthermore the TraJClassifier employs a
-sliding window to allow local analysis of single trajectories.
+These features and the corresponding class were then used to train a random forest classifier. Furthermore the TraJClassifier employs a sliding window to allow local analysis of single trajectories.
 
 As summary, the classification process is as follows:
 
@@ -83,67 +59,32 @@ As summary, the classification process is as follows:
 
 ## Examples
 
-The following figure shows several cells that are gathered within the
-field of view (left image). While cell borders are not visible in this
-focal plane, nuclear envelopes stand out clearly under darkfield
-illumination (white arrows). A total of 246 particle trajectories was
-identified as either normal diffusion (red), confined diffusion
-(yellow), anomalous diffusion (green) or directed motion (magenta).
-Boxed areas (A-D) show selected cases of directed motion:
+The following figure shows several cells that are gathered within the field of view (left image). While cell borders are not visible in this focal plane, nuclear envelopes stand out clearly under darkfield illumination (white arrows). A total of 246 particle trajectories was identified as either normal diffusion (red), confined diffusion (yellow), anomalous diffusion (green) or directed motion (magenta). Boxed areas (A-D) show selected cases of directed motion:
 
-![Journal.pone.0170165.g006.PNG](/images/pages/Journal.pone.0170165.g006.PNG
-"Journal.pone.0170165.g006.PNG")"
+![Journal.pone.0170165.g006.PNG](/images/pages/Journal.pone.0170165.g006.PNG "Journal.pone.0170165.g006.PNG")"
 
 More examples could be found in
 
-[Wagner T, Kroll A, Haramagatti CR, Lipinski HG, Wiemann M (2017)
-Classification and Segmentation of Nanoparticle Diffusion Trajectories
-in Cellular Micro Environments. PLOS ONE 12(1):
-e0170165](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0170165)
+[Wagner T, Kroll A, Haramagatti CR, Lipinski HG, Wiemann M (2017) Classification and Segmentation of Nanoparticle Diffusion Trajectories in Cellular Micro Environments. PLOS ONE 12(1): e0170165](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0170165)
 
 ## Parameters
 
-![Trajclassifier\_gui.png](/images/pages/Trajclassifier_gui.png
-"Trajclassifier_gui.png")" **Minimal track length:** Minimal number of
-positions in a trajectory. It has to be greater than the window size. As
-the window size should be at least 30, the same is true for the minimal
-track length.
+![Trajclassifier\_gui.png](/images/pages/Trajclassifier_gui.png "Trajclassifier_gui.png")" **Minimal track length:** Minimal number of positions in a trajectory. It has to be greater than the window size. As the window size should be at least 30, the same is true for the minimal track length.
 
-**Window size:** The parameter determines how many positions are used in
-the sliding window.
+**Window size:** The parameter determines how many positions are used in the sliding window.
 
-**Minimal segment size:** After classification of a trajectory it
-consists of several segments. This parameter determines the minimal
-segment length. Segments smaller than this length (number of positions)
-will be removed. It is good rule of thumb to set this parameter to same
-value as the window size because segments which are smaller than the
-window size seems to be more error prone.
+**Minimal segment size:** After classification of a trajectory it consists of several segments. This parameter determines the minimal segment length. Segments smaller than this length (number of positions) will be removed. It is good rule of thumb to set this parameter to same value as the window size because segments which are smaller than the window size seems to be more error prone.
 
-**Resample rate:** During the local analysis using a sliding window, one
-trajectory is split into several subtrajectories. In very noisy cases it
-could make sense to resample the subtrajectories to increase the signal
-to noise ratio (e.g. if the rate is set to 2, then only every second
-position is used in the trajectory). However, we believe that a
-trajectory should contain at least 30 position therefore the ratio of
-window size and the resample rate should be \>= 30.
+**Resample rate:** During the local analysis using a sliding window, one trajectory is split into several subtrajectories. In very noisy cases it could make sense to resample the subtrajectories to increase the signal to noise ratio (e.g. if the rate is set to 2, then only every second position is used in the trajectory). However, we believe that a trajectory should contain at least 30 position therefore the ratio of window size and the resample rate should be \>= 30.
 
-**Pixel size:** Size of a single pixel in µm. However, if your TrackMate
-data is already scaled, set it to zero.
+**Pixel size:** Size of a single pixel in µm. However, if your TrackMate data is already scaled, set it to zero.
 
 **Frame rate:** Frames per second
 
-**Use reduced model for confined motion:** The shape constants for the
-[confined diffusion MSD
-model](https://github.com/thorstenwagner/TraJ/wiki#mean-square-displacement)
-are set to 1.
+**Use reduced model for confined motion:** The shape constants for the [confined diffusion MSD model](https://github.com/thorstenwagner/TraJ/wiki#mean-square-displacement) are set to 1.
 
-**Show IDs:** Show trajectory IDs as overlay. The trajectories IDs given
-in the format PARENT ID:SEGMENT ID
+**Show IDs:** Show trajectory IDs as overlay. The trajectories IDs given in the format PARENT ID:SEGMENT ID
 
 **Show overview classes:** Show classes and color codes as overlay.
 
-**Remove global drift:** In some cases the particles are moving relativ
-to another object (e.g. particles in a cell). When the object is moving
-approx. at a constant speed, than it could be possible to estimate it
-via a global drift estimation and remove this drift component from each
-trajectory.
+**Remove global drift:** In some cases the particles are moving relativ to another object (e.g. particles in a cell). When the object is moving approx. at a constant speed, than it could be possible to estimate it via a global drift estimation and remove this drift component from each trajectory.

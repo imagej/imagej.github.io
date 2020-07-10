@@ -8,10 +8,7 @@ categories: Plugins,Skeleton,Analysis,Neuroanatomy,Citable
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:AnalyzeSkeleton\_'
-%}Analysis of 2D and 3D skeleton images. For the ImageJ 1.x plugin, see
-[this
-page](http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:start).
+{% include component-stats content=':sc.fiji:AnalyzeSkeleton\_' %}Analysis of 2D and 3D skeleton images. For the ImageJ 1.x plugin, see [this page](http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:start).
 
 |                                                                                                                     |
 | ------------------------------------------------------------------------------------------------------------------- |
@@ -19,159 +16,82 @@ page](http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:sta
 
 ## General Description
 
-![Example of voxel classification](/images/pages/Tagging_example.png
-"Example of voxel classification")" This plugin tags all pixel/voxels in
-a skeleton image and then counts all its junctions, triple and quadruple
-points and branches, and measures their average and maximum length. The
-tags are shown in a new window displaying every tag in a different
-color. You can find it under {% include bc content='Analyze | Skeleton |
-Analyze Skeleton (2D/3D)'%}. See
-[Skeletonize3D](Skeletonize3D "wikilink") for an example of how to
-produce skeleton images.
+![Example of voxel classification](/images/pages/Tagging_example.png "Example of voxel classification")" This plugin tags all pixel/voxels in a skeleton image and then counts all its junctions, triple and quadruple points and branches, and measures their average and maximum length. The tags are shown in a new window displaying every tag in a different color. You can find it under {% include bc content='Analyze | Skeleton | Analyze Skeleton (2D/3D)'%}. See [Skeletonize3D](Skeletonize3D "wikilink") for an example of how to produce skeleton images.
 
-The voxels are classified into three different categories depending on
-their 26 neighbors:
+The voxels are classified into three different categories depending on their 26 neighbors:
 
   - **End-point** voxels: if they have less than 2 neighbors.
   - **Junction** voxels: if they have more than 2 neighbors.
   - **Slab** voxels: if they have exactly 2 neighbors.
 
-End-point voxels are displayed in **blue**, slab voxels in **orange**
-and junction voxels in **purple**.
+End-point voxels are displayed in **blue**, slab voxels in **orange** and junction voxels in **purple**.
 
-Notice here that, following this notation, the number of junction voxels
-can be different from the number of actual junctions since some junction
-voxels can be neighbors of each other.
+Notice here that, following this notation, the number of junction voxels can be different from the number of actual junctions since some junction voxels can be neighbors of each other.
 
 ## Main options
 
-![Main dialog of the AnalyzeSkeleton
-plugin](/images/pages/Screenshot-AnalyzeSkeleton-dialog.png
-"Main dialog of the AnalyzeSkeleton plugin")" In the main dialog of the
-plugin the user can select some options to
+![Main dialog of the AnalyzeSkeleton plugin](/images/pages/Screenshot-AnalyzeSkeleton-dialog.png "Main dialog of the AnalyzeSkeleton plugin")" In the main dialog of the plugin the user can select some options to
 
-  - **Prune the possible loops** in the skeleton (by choosing one of the
-    pruning cycle methods).
-  - **Prune any branch that ends in an end-point** (by checking "Prune
-    ends"), as implemented by [Michael Doube](http://doube.org/) in
-    [BoneJ](http://bonej.org/).
-      - In this case, if a ROI was selected in the input image, another
-        option is enabled: *Exclude ROI from pruning*. If selected,
-        pruning will not be applied to end-points contained by the ROI.
-        An application of this feature is described in [Strahler
-        Analysis](Strahler#Root_Detection "wikilink").
-  - **Calculate the largest shortest path** of each skeleton using the
-    [APSP (all pairs shortest
-    path)](wikipedia:Floyd-Warshall_algorithm "wikilink"). In this case,
-    the shortest path will be displayed in a new window containing the
-    skeleton in white and the shortest path in **magenta**. Implemented
-    by Huub Hovens.
-  - **Show detailed info** about the branches of each skeleton in the
-    image.
-  - **Display labeled skeletons**. An extra output image will be
-    displayed containing each skeleton labeled with its corresponding
-    skeleton ID.
+  - **Prune the possible loops** in the skeleton (by choosing one of the pruning cycle methods).
+  - **Prune any branch that ends in an end-point** (by checking "Prune ends"), as implemented by [Michael Doube](http://doube.org/) in [BoneJ](http://bonej.org/).
+      - In this case, if a ROI was selected in the input image, another option is enabled: *Exclude ROI from pruning*. If selected, pruning will not be applied to end-points contained by the ROI. An application of this feature is described in [Strahler Analysis](Strahler#Root_Detection "wikilink").
+  - **Calculate the largest shortest path** of each skeleton using the [APSP (all pairs shortest path)](wikipedia:Floyd-Warshall_algorithm "wikilink"). In this case, the shortest path will be displayed in a new window containing the skeleton in white and the shortest path in **magenta**. Implemented by Huub Hovens.
+  - **Show detailed info** about the branches of each skeleton in the image.
+  - **Display labeled skeletons**. An extra output image will be displayed containing each skeleton labeled with its corresponding skeleton ID.
 
 ## Loop detection and pruning
 
-![Example of cycle detection and pruning](/images/pages/Cycle_detection.png
-"Example of cycle detection and pruning")" Since the 2009/09/02 version
-of the code, the possible cycles or loops in the skeleton can be
-detected and pruned previous to the analysis. In this sense, the initial
-plugin dialog offers 4 options:
+![Example of cycle detection and pruning](/images/pages/Cycle_detection.png "Example of cycle detection and pruning")" Since the 2009/09/02 version of the code, the possible cycles or loops in the skeleton can be detected and pruned previous to the analysis. In this sense, the initial plugin dialog offers 4 options:
 
   - **none**: no cycle detection nor pruning is performed.
-  - **shortest branch**: the shortest branch among the loop branches
-    will be cut in its middle point.
-  - **lowest intensity voxel**: the darkest voxel among the loop voxels
-    will be cut (set to 0) in the input image.
-  - **lowest intensity branch**: the darkest (in average) branch among
-    the loop branches will be cut in its darkest voxel.
+  - **shortest branch**: the shortest branch among the loop branches will be cut in its middle point.
+  - **lowest intensity voxel**: the darkest voxel among the loop voxels will be cut (set to 0) in the input image.
+  - **lowest intensity branch**: the darkest (in average) branch among the loop branches will be cut in its darkest voxel.
 
-For the two last methods, another dialog will pop up asking the user to
-select the original (gray-scale) image among the open images in order to
-perform the intensity calculations. The cycle detection is based on a
-classical [**Depth-First
-Search**](wikipedia:Depth-first_search "wikilink") (DFS) in the
-skeleton. The skeleton is treated as an [undirected
-graph](wikipedia:Undirected_graph#Undirected_graph "wikilink"), where
-the end-points and junctions are the nodes and the slab-branches are the
-edges. While traversing the graph in the DFS fashion, the edges/branches
-pointing to unvisited nodes are marked as **TREE** edges, while the
-edges to visited nodes are marked as **BACK** edges, which involves the
-presence of a loop. After the edge classification, the BACK edges are
-backtracked following their predecessors in order to calculate all the
-edges belonging to each cycle and proceed with the pruning.
+For the two last methods, another dialog will pop up asking the user to select the original (gray-scale) image among the open images in order to perform the intensity calculations. The cycle detection is based on a classical [**Depth-First Search**](wikipedia:Depth-first_search "wikilink") (DFS) in the skeleton. The skeleton is treated as an [undirected graph](wikipedia:Undirected_graph#Undirected_graph "wikilink"), where the end-points and junctions are the nodes and the slab-branches are the edges. While traversing the graph in the DFS fashion, the edges/branches pointing to unvisited nodes are marked as **TREE** edges, while the edges to visited nodes are marked as **BACK** edges, which involves the presence of a loop. After the edge classification, the BACK edges are backtracked following their predecessors in order to calculate all the edges belonging to each cycle and proceed with the pruning.
 
-The only known limitation of this approach is shown in the presence of
-nested loops. In those cases, a second call to the plugin is usually
-enough to eliminate all the remaining loops.
+The only known limitation of this approach is shown in the presence of nested loops. In those cases, a second call to the plugin is usually enough to eliminate all the remaining loops.
 
 ## Table of results
 
-![Example of AnalyzeSkeleton Results
-table](/images/pages/AnalyzeSkeleton-Results-table.png
-"Example of AnalyzeSkeleton Results table")" After classification, a
-“Results” window is displayed showing for each skeleton in the image:
+![Example of AnalyzeSkeleton Results table](/images/pages/AnalyzeSkeleton-Results-table.png "Example of AnalyzeSkeleton Results table")" After classification, a “Results” window is displayed showing for each skeleton in the image:
 
-  - The number of branches (slab segments, usually connecting
-    end-points, end-points and junctions or junctions and junctions).
-    The special case of a circular skeleton is also contemplated here.
-  - The number of voxels of every type: end-point, slab and junction
-    voxels.
-  - The number of actual junctions (merging neighbor junction voxels)
-    with an arbitrary number of projecting branches.
-  - The number of triple points (junctions with exactly 3 branches) and
-    quadruple points (4 branches).
-  - The average and maximum length of branches, in the corresponding
-    units.
+  - The number of branches (slab segments, usually connecting end-points, end-points and junctions or junctions and junctions). The special case of a circular skeleton is also contemplated here.
+  - The number of voxels of every type: end-point, slab and junction voxels.
+  - The number of actual junctions (merging neighbor junction voxels) with an arbitrary number of projecting branches.
+  - The number of triple points (junctions with exactly 3 branches) and quadruple points (4 branches).
+  - The average and maximum length of branches, in the corresponding units.
 
-AnalyzeSkeleton is able to process up to **2<sup>31</sup>-1 skeletons in
-one single image** (only limited by [java
-Integer.MAX\_VALUE](http://java.sun.com/javase/6/docs/api/)).
+AnalyzeSkeleton is able to process up to **2<sup>31</sup>-1 skeletons in one single image** (only limited by [java Integer.MAX\_VALUE](http://java.sun.com/javase/6/docs/api/)).
 
 #### Detailed information
 
-![Example of AnalyzeSkeleton Branch information
-window](/images/pages/AnalyzeSkeleton_Branch_information.png
-"Example of AnalyzeSkeleton Branch information window")" When calling the
-plugin, if the "Show detailed information" checkbox is marked, a
-complementary results table called "Branch information" is shown.
+![Example of AnalyzeSkeleton Branch information window](/images/pages/AnalyzeSkeleton_Branch_information.png "Example of AnalyzeSkeleton Branch information window")" When calling the plugin, if the "Show detailed information" checkbox is marked, a complementary results table called "Branch information" is shown.
 
 In this table we display all branches information:
 
   - skeleton ID,
   - calibrated branch length,
-  - 3D coordinates of the extremes of the branch (the so-called V1 and
-    V2 vertices),
-  - and the Euclidean distance between those extreme points. This value
-    has proven to be a good indicator of the
-    [tortuosity](wikipedia:Tortuosity "wikilink") of the 3D object.
+  - 3D coordinates of the extremes of the branch (the so-called V1 and V2 vertices),
+  - and the Euclidean distance between those extreme points. This value has proven to be a good indicator of the [tortuosity](wikipedia:Tortuosity "wikilink") of the 3D object.
 
 The branches are sorted by decreasing length.
 
 ## Video tutorial
 
-For a fast introduction to [Skeletonize3D](Skeletonize3D "wikilink") and
-[AnalyzeSkeleton](AnalyzeSkeleton "wikilink") and an example of a real
-application, you can have a look at this [ video
-tutorial](Skeleton_analysis_video_tutorial "wikilink").
+For a fast introduction to [Skeletonize3D](Skeletonize3D "wikilink") and [AnalyzeSkeleton](AnalyzeSkeleton "wikilink") and an example of a real application, you can have a look at this [ video tutorial](Skeleton_analysis_video_tutorial "wikilink").
 
 The tutorial describes step by step how to:
 
-  - Pre-process a 3D image to extract the relevant morphological
-    information by
+  - Pre-process a 3D image to extract the relevant morphological information by
       - removing the noise
       - and binarizing
-  - Extract the skeleton of a binary image with
-    [Skeletonize3D](Skeletonize3D "wikilink")
-  - Analyze the resulting skeletons in the 3D image with
-    [AnalyzeSkeleton](AnalyzeSkeleton "wikilink")
+  - Extract the skeleton of a binary image with [Skeletonize3D](Skeletonize3D "wikilink")
+  - Analyze the resulting skeletons in the 3D image with [AnalyzeSkeleton](AnalyzeSkeleton "wikilink")
 
 ## Visualization
 
-Using the [3D\_Viewer](3D_Viewer "wikilink") libraries we can easily
-display the results of both, the skeletonization and the analysis:
+Using the [3D\_Viewer](3D_Viewer "wikilink") libraries we can easily display the results of both, the skeletonization and the analysis:
 
 |                                                                                                                                                                            |                                                                                                                                                                                                            |                                                                                                                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -179,15 +99,11 @@ display the results of both, the skeletonization and the analysis:
 
 ## Scripting AnalyzeSkeleton
 
-AnalyzeSkeleton functionalities can also be called from scripts, making
-use of its library methods or performing the whole analysis in silent
-mode.
+AnalyzeSkeleton functionalities can also be called from scripts, making use of its library methods or performing the whole analysis in silent mode.
 
 ### Using silent mode from scripts
 
-You can use AnalyzeSkeleton from scripts without displaying any of the
-results. That's useful if you want to use the results within the script
-without the user being annoyed by a lot of results tables popping up.
+You can use AnalyzeSkeleton from scripts without displaying any of the results. That's useful if you want to use the results within the script without the user being annoyed by a lot of results tables popping up.
 
 Here's an example in Javascript:
 
@@ -233,8 +149,7 @@ IJ.log(cumulativeLengthOfShortestPaths);
 
 ### Pruning branches by length
 
-The following [Beanshell](Beanshell "wikilink") script prunes the
-branches of an input skeleton if they are under a certain length:
+The following [Beanshell](Beanshell "wikilink") script prunes the branches of an input skeleton if they are under a certain length:
 
 ``` java
 // @ImagePlus(label="Skeleton image", description="Binary image skeletonized with Skeletonize3D") image
@@ -292,15 +207,11 @@ for( i = 0 ; i < graph.length; i++ )
 prunedImage.setTitle( image.getShortTitle() + "-pruned" );
 ```
 
-Be aware that small branches might be created due to the elimination of
-end-points and slabs but not junctions (to prevent breaking branches
-above the threshold). So you might need to run the script a couple of
-times to remove all unwanted branches.
+Be aware that small branches might be created due to the elimination of end-points and slabs but not junctions (to prevent breaking branches above the threshold). So you might need to run the script a couple of times to remove all unwanted branches.
 
 ### Visualizing the skeleton in the 3D viewer
 
-The following [Beanshell](Beanshell "wikilink") script shows the voxel
-classification of the skeleton in the 3D viewer:
+The following [Beanshell](Beanshell "wikilink") script shows the voxel classification of the skeleton in the 3D viewer:
 
 ``` java
 // @ImagePlus(label="Skeleton image", description="Binary image skeletonized with Skeletonize3D") image
@@ -384,100 +295,58 @@ http://javadoc.imagej.net/Fiji/sc/fiji/analyzeSkeleton/package-summary.html
 
 ## Changelog
 
-All changes can be seen in the [GitHub source
-repository](https://github.com/fiji/AnalyzeSkeleton/commits/master).
+All changes can be seen in the [GitHub source repository](https://github.com/fiji/AnalyzeSkeleton/commits/master).
 
-**2010/12/28**: Jan Eglinger added code to call the plugin from script
-in silent mode.
+**2010/12/28**: Jan Eglinger added code to call the plugin from script in silent mode.
 
-**2010/09/27**: Added Huub Hovens's code to detect the shortest largest
-path in each skeleton and Michael Doube's code to prune the branches
-ending on end-points.
+**2010/09/27**: Added Huub Hovens's code to detect the shortest largest path in each skeleton and Michael Doube's code to prune the branches ending on end-points.
 
-**2010/08/26**: Fixed bug that was assigning wrong final vertices (V2)
-to the edges when visiting the trees from end-points if the branches
-were ending on already visited junctions. Reported by Peter C. Marks.
+**2010/08/26**: Fixed bug that was assigning wrong final vertices (V2) to the edges when visiting the trees from end-points if the branches were ending on already visited junctions. Reported by Peter C. Marks.
 
-**2010/01/12**: Thanks to Peter Marks, fixed bug to visit properly the
-trees when starting in junctions (they were not being added to the
-revisit list, what some times made some trees to be split).
+**2010/01/12**: Thanks to Peter Marks, fixed bug to visit properly the trees when starting in junctions (they were not being added to the revisit list, what some times made some trees to be split).
 
 **2009/12/04**: Added quadruple point calculation.
 
-**2009/09/13**: Removed Log window and created Detailed information
-option and Branch information table.
+**2009/09/13**: Removed Log window and created Detailed information option and Branch information table.
 
 **2009/09/02**: Added capability to detect and prune skeleton cycles.
 
-**2009/08/10**: Fixed small bug to treat the special case of one single
-circular skeleton.
+**2009/08/10**: Fixed small bug to treat the special case of one single circular skeleton.
 
-**2009/08/06**: Fixed 2 bugs: calculation of branches between junctions
-and number of slab voxels in a circular tree.
+**2009/08/06**: Fixed 2 bugs: calculation of branches between junctions and number of slab voxels in a circular tree.
 
-**2009/08/05**: Fixed bugs that slowed down the calculation of the
-number of actual junctions.
+**2009/08/05**: Fixed bugs that slowed down the calculation of the number of actual junctions.
 
-**2009/06/19**: Fixed bugs in some calculations, increased the number of
-skeletons from 255 to 2¹⁵-1, and added new (previously untreated) cases.
+**2009/06/19**: Fixed bugs in some calculations, increased the number of skeletons from 255 to 2¹⁵-1, and added new (previously untreated) cases.
 
-**2009/04/07**: Added different calculations for every skeleton in the
-image and some extra information in the log window.
+**2009/04/07**: Added different calculations for every skeleton in the image and some extra information in the log window.
 
 **2009/03/05**: Added maximum branch length calculation.
 
-**2008/11/19**: Added triple points calculation and fixed bug to avoid
-modifying the original image and preserve its calibration in the output
-image.
+**2008/11/19**: Added triple points calculation and fixed bug to avoid modifying the original image and preserve its calibration in the output image.
 
 **2008/11/16**: First release.
 
 ## References and citation
 
-If you need to **cite the plugin**, please do so by citing the following
-paper:
+If you need to **cite the plugin**, please do so by citing the following paper:
 
-  - Ignacio Arganda-Carreras, Rodrigo Fernandez-Gonzalez, Arrate
-    Munoz-Barrutia, Carlos Ortiz-De-Solorzano, ["3D reconstruction of
-    histological sections: Application to mammary gland
-    tissue"](http://www3.interscience.wiley.com/journal/123322233/abstract),
-    Microscopy Research and Technique, Volume 73, Issue 11, pages
-    1019–1029, October 2010.
+  - Ignacio Arganda-Carreras, Rodrigo Fernandez-Gonzalez, Arrate Munoz-Barrutia, Carlos Ortiz-De-Solorzano, ["3D reconstruction of histological sections: Application to mammary gland tissue"](http://www3.interscience.wiley.com/journal/123322233/abstract), Microscopy Research and Technique, Volume 73, Issue 11, pages 1019–1029, October 2010.
 
-The shortest path calculation and its applications have been published
-as:
+The shortest path calculation and its applications have been published as:
 
-  - G. Polder, H.L.E Hovens and A.J Zweers, Measuring shoot length of
-    submerged aquatic plants using graph analysis (2010), In:
-    Proceedings of the ImageJ User and Developer Conference, Centre de
-    Recherche Public Henri Tudor, Luxembourg, 27-29 October, pp 172-177.
+  - G. Polder, H.L.E Hovens and A.J Zweers, Measuring shoot length of submerged aquatic plants using graph analysis (2010), In: Proceedings of the ImageJ User and Developer Conference, Centre de Recherche Public Henri Tudor, Luxembourg, 27-29 October, pp 172-177.
 
-[AnalyzeSkeleton](AnalyzeSkeleton "wikilink") makes also part of
-[BoneJ](http://bonej.org/), a plugin for bone image analysis in
-[ImageJ](https://imagej.net/):
+[AnalyzeSkeleton](AnalyzeSkeleton "wikilink") makes also part of [BoneJ](http://bonej.org/), a plugin for bone image analysis in [ImageJ](https://imagej.net/):
 
-  - Michael Doube, Michal M. Klosowski, Ignacio Arganda-Carreras,
-    Fabrice P. Cordelieres, Robert P. Dougherty, Jonathan S. Jackson,
-    Benjamin Schmid, John R. Hutchinson, Sandra J. Shefelbine, [BoneJ:
-    Free and extensible bone image analysis in
-    ImageJ](http://dx.doi.org/10.1016/j.bone.2010.08.023), Bone, Volume
-    47, Issue 6, December 2010, Pages 1076-1079.
+  - Michael Doube, Michal M. Klosowski, Ignacio Arganda-Carreras, Fabrice P. Cordelieres, Robert P. Dougherty, Jonathan S. Jackson, Benjamin Schmid, John R. Hutchinson, Sandra J. Shefelbine, [BoneJ: Free and extensible bone image analysis in ImageJ](http://dx.doi.org/10.1016/j.bone.2010.08.023), Bone, Volume 47, Issue 6, December 2010, Pages 1076-1079.
 
 ## License
 
-This program is **free software**; you can redistribute it and/or modify
-it under the terms of the **GNU General Public License** as published by
-the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).
+This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).
 
-This program is distributed in the hope that it will be useful, but
-WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
-Public License for more details.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 -----
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Skeleton](Category:Skeleton "wikilink")
-[Category:Analysis](Category:Analysis "wikilink")
-[Category:Neuroanatomy](Category:Neuroanatomy "wikilink")
-[Category:Citable](Category:Citable "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Skeleton](Category:Skeleton "wikilink") [Category:Analysis](Category:Analysis "wikilink") [Category:Neuroanatomy](Category:Neuroanatomy "wikilink") [Category:Citable](Category:Citable "wikilink")

@@ -8,35 +8,23 @@ categories: Scripting,Segmentation,Machine Learning
 description: test description
 ---
 
-[Scripting](Script_Editor "wikilink") is one of the reasons Fiji is so
-powerful, and the Trainable Weka Segmentation library (that includes the
-[ Trainable Weka Segmentation
-plugin](Trainable_Weka_Segmentation "wikilink")) is one of the best
-examples for scriptable Fiji components.
+[Scripting](Script_Editor "wikilink") is one of the reasons Fiji is so powerful, and the Trainable Weka Segmentation library (that includes the [ Trainable Weka Segmentation plugin](Trainable_Weka_Segmentation "wikilink")) is one of the best examples for scriptable Fiji components.
 
 # Getting started
 
-The first thing you need to start scripting the Trainable Weka
-Segmentation is to know which methods you can use. For that, please have
-a look at the
-**[API](http://javadoc.imagej.net/Fiji/trainableSegmentation/package-tree.html)
-of the Trainable Weka Segmentation** library, which is available
-[here](http://javadoc.imagej.net/Fiji/trainableSegmentation/package-tree.html).
+The first thing you need to start scripting the Trainable Weka Segmentation is to know which methods you can use. For that, please have a look at the **[API](http://javadoc.imagej.net/Fiji/trainableSegmentation/package-tree.html) of the Trainable Weka Segmentation** library, which is available [here](http://javadoc.imagej.net/Fiji/trainableSegmentation/package-tree.html).
 
-Let's go through the basic commands with examples written in
-**Beanshell**:
+Let's go through the basic commands with examples written in **Beanshell**:
 
 ### Initialization
 
-In order to include all the library methods, the easiest (but not
-elegant) way of doing it is importing the whole library:
+In order to include all the library methods, the easiest (but not elegant) way of doing it is importing the whole library:
 
 ``` java
 import trainableSegmentation.*;
 ```
 
-Now we are ready to play. We can open our input image and assign it to a
-WekaSegmentation object or segmentator:
+Now we are ready to play. We can open our input image and assign it to a WekaSegmentation object or segmentator:
 
 ``` java
 // input train image
@@ -45,20 +33,13 @@ input  = IJ.openImage( "input-grayscale-or-color-image.tif" );
 segmentator = new WekaSegmentation( input );
 ```
 
-As it is now, the segmentator has default parameters and default
-classifier. That means that it will use the same features that are set
-by default in the [ Trainable Weka Segmentation
-plugin](Trainable_Weka_Segmentation "wikilink"), 2 classes (named "class
-1" and "class 2") and a random forest classifier with 200 trees and 2
-random features per node. If we are fine with that, we can now add some
-labels for our training data and train the classifier based on them.
+As it is now, the segmentator has default parameters and default classifier. That means that it will use the same features that are set by default in the [ Trainable Weka Segmentation plugin](Trainable_Weka_Segmentation "wikilink"), 2 classes (named "class 1" and "class 2") and a random forest classifier with 200 trees and 2 random features per node. If we are fine with that, we can now add some labels for our training data and train the classifier based on them.
 
 ### Adding training samples
 
 There are different ways of adding labels to our data:
 
-1\) we can add any type of ROI to any of the existing classes using
-"addExample":
+1\) we can add any type of ROI to any of the existing classes using "addExample":
 
 ``` java
 // add pixels to first class (0) from ROI in slice # 1
@@ -67,9 +48,7 @@ segmentator.addExample( 0, new Roi( 10, 10, 50, 50 ), 1 );
 segmentator.addExample( 1, new Roi( 400, 400, 30, 30 ), 1 );
 ```
 
-2\) add the labels from a binary image, where white pixels belong to one
-class and black pixels belong to the other class. There are a few
-methods to do this, for example:
+2\) add the labels from a binary image, where white pixels belong to one class and black pixels belong to the other class. There are a few methods to do this, for example:
 
 ``` java
 // open binary label image
@@ -79,8 +58,7 @@ labels  = IJ.openImage( "binary-labels.tif" );
 segmentator.addBinaryData( labels, 0, "class 2", "class 1" );
 ```
 
-3\) You can also add samples from a new input image and its
-corresponding labels:
+3\) You can also add samples from a new input image and its corresponding labels:
 
 ``` java
 // open new input image
@@ -92,8 +70,7 @@ labels2  = IJ.openImage( "binary-labels-2.tif" );
 segmentator.addBinaryData( input2, labels2, "class 2", "class 1" );
 ```
 
-4\) If you want to balance the number of samples for each class you can
-do it in a similar way using this other method:
+4\) If you want to balance the number of samples for each class you can do it in a similar way using this other method:
 
 ``` java
 numSamples = 1000;
@@ -102,15 +79,11 @@ numSamples = 1000;
 segmentator.addRandomBalancedBinaryData( input2, labels2, "class 2", "class 1" , numSamples);
 ```
 
-5\) You can use all methods available in the
-[API](http://javadoc.imagej.net/Fiji/trainableSegmentation/package-tree.html)
-to add labels from a binary image in many differente ways. Please, have
-a look at them and decided which one fits better your needs.
+5\) You can use all methods available in the [API](http://javadoc.imagej.net/Fiji/trainableSegmentation/package-tree.html) to add labels from a binary image in many differente ways. Please, have a look at them and decided which one fits better your needs.
 
 ### Training classifier
 
-Once we have training samples for both classes, we are ready to train
-the classifier of our segmentator:
+Once we have training samples for both classes, we are ready to train the classifier of our segmentator:
 
 ``` java
 segmentator.trainClassifier();
@@ -118,9 +91,7 @@ segmentator.trainClassifier();
 
 ### Applying classifier (getting results)
 
-Once the classifier is trained (it will be displayed in the Log window),
-we can apply it to the entire training image and obtain a result in the
-form of a labeled image or a probability map for each class:
+Once the classifier is trained (it will be displayed in the Log window), we can apply it to the entire training image and obtain a result in the form of a labeled image or a probability map for each class:
 
 ``` java
 // apply classifier to current training image and get label result 
@@ -130,8 +101,7 @@ segmentator.applyClassifier( false );
 result = segmentator.getClassifiedImage();
 ```
 
-Of course, we might be interested on **applying the trained classifier
-to a complete new 2D image or stack**. In that case we use:
+Of course, we might be interested on **applying the trained classifier to a complete new 2D image or stack**. In that case we use:
 
 ``` java
 // open test image
@@ -142,8 +112,7 @@ result = segmentator.applyClassifier( testImage );
 
 ### Use same label colors as in the GUI
 
-If you like the lookup table used in the plugin GUI, you can set it to
-your result labels programmatically as well:
+If you like the lookup table used in the plugin GUI, you can set it to your result labels programmatically as well:
 
 ``` java
 import trainableSegmentation.utils.Utils;
@@ -156,8 +125,7 @@ result.setLut( Utils.getGoldenAngleLUT() );
 
 ### Save/Load operations
 
-If the classifier you trained is good enough for your purposes, you may
-want to save it into a file:
+If the classifier you trained is good enough for your purposes, you may want to save it into a file:
 
 ``` java
 // save classifier into a file (.model)
@@ -171,16 +139,14 @@ segmentator.saveClassifier( "my-cool-trained-classifier.model" );
 segmentator.loadClassifier( "my-cool-trained-classifier.model" );
 ```
 
-You may also want to save the training data into a file you can open
-later in WEKA:
+You may also want to save the training data into a file you can open later in WEKA:
 
 ``` java
 // save data into a ARFF file
 segmentator.saveData( "my-traces-data.arff" );
 ```
 
-... or load a file with traces information into the segmentator to use
-it as part of the training:
+... or load a file with traces information into the segmentator to use it as part of the training:
 
 ``` java
 // load training data from ARFF file
@@ -189,9 +155,7 @@ segmentator.loadTrainingData( "my-traces-data.arff" );
 
 #### Testing mode
 
-Since Trainable Weka Segmentation v3.2.8, a classifier can be loaded
-into a WekaSegmentation object created without a training image, that
-is, for testing purposes only:
+Since Trainable Weka Segmentation v3.2.8, a classifier can be loaded into a WekaSegmentation object created without a training image, that is, for testing purposes only:
 
 ``` java
 // create testing segmentator
@@ -200,16 +164,11 @@ segmentator = new WekaSegmentation();
 segmentator.loadClassifier( "my-cool-trained-classifier.model" );
 ```
 
-And the apply it to any test image as we did above (see "Applying
-classifier" section).
+And the apply it to any test image as we did above (see "Applying classifier" section).
 
 ### Setting the classifier
 
-By default, the classifier is a multi-threaded implementation of a
-random forest. You can change it to any other classifier available in
-the [WEKA
-API](http://weka.sourceforge.net/doc.dev/weka/classifiers/Classifier.html).
-For example, we can use SMO:
+By default, the classifier is a multi-threaded implementation of a random forest. You can change it to any other classifier available in the [WEKA API](http://weka.sourceforge.net/doc.dev/weka/classifiers/Classifier.html). For example, we can use SMO:
 
 ``` java
 import weka.classifiers.functions.SMO;
@@ -219,8 +178,7 @@ classifier = new SMO();
 segmentator.setClassifier( classifier );
 ```
 
-We might also want to use the default random forest but tune its
-parameters. In that case, we can write something like this:
+We might also want to use the default random forest but tune its parameters. In that case, we can write something like this:
 
 ``` java
 import hr.irb.fastRandomForest.FastRandomForest;
@@ -239,13 +197,7 @@ segmentator.setClassifier( rf );
 
 # Example: apply classifier to all images in folder
 
-Very frequently we might end up having to process a large number of
-images using a classifier that we interactively trained with the GUI of
-the [Trainable Weka
-Segmentation](Trainable_Weka_Segmentation "wikilink") plugin. The
-following [Beanshell](Beanshell "wikilink") script shows how to load a
-classifier from file, apply it to all images contained in a folder and
-save the results in another folder defined by the user:
+Very frequently we might end up having to process a large number of images using a classifier that we interactively trained with the GUI of the [Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink") plugin. The following [Beanshell](Beanshell "wikilink") script shows how to load a classifier from file, apply it to all images contained in a folder and save the results in another folder defined by the user:
 
 ``` java
 #@ File(label="Input directory", description="Select the directory with input images", style="directory") inputDir
@@ -306,13 +258,7 @@ IJ.log( "** Finished processing folder in " + estimatedTime + " ms **" );
 
 # Example: apply classifier to all images in folder **by tiles**
 
-In some cases, we may have to apply a saved classifier to very large
-images, which together with a large number of image features may fill
-the RAM of our machine. To prevent running into out-of-memory
-exceptions, the following [Beanshell](Beanshell "wikilink") script shows
-how to load a classifier from file, apply it to all images contained in
-a folder by subdividing them into smaller pieces, and save the results
-in another folder defined by the user:
+In some cases, we may have to apply a saved classifier to very large images, which together with a large number of image features may fill the RAM of our machine. To prevent running into out-of-memory exceptions, the following [Beanshell](Beanshell "wikilink") script shows how to load a classifier from file, apply it to all images contained in a folder by subdividing them into smaller pieces, and save the results in another folder defined by the user:
 
 ``` java
 #@ File(label="Input directory", description="Select the directory with input images", style="directory") inputDir
@@ -386,12 +332,7 @@ System.gc();
 
 # Example: define your own features
 
-Although Trainable Segmentation provides a large set of predefined image
-features, it might happen that you need to define your own features for
-a specific problem. You can do that with a simple set of instructions.
-Here is a little [Beanshell](Beanshell "wikilink") script that makes two
-features from the Clown example and uses them to train a classifier (see
-the inline comments for more information):
+Although Trainable Segmentation provides a large set of predefined image features, it might happen that you need to define your own features for a specific problem. You can do that with a simple set of instructions. Here is a little [Beanshell](Beanshell "wikilink") script that makes two features from the Clown example and uses them to train a classifier (see the inline comments for more information):
 
 ``` java
 import ij.IJ;
@@ -491,12 +432,8 @@ output.show();
 
 Here is a simple script in **Beanshell** doing the following:
 
-1.  It takes one image (2D or stack) as training input image and a
-    binary image as the corresponding labels.
-2.  Train a classifier (in this case a random forest, but it can be
-    changed) based on randomly selected pixels of the training image.
-    The number of samples (pixels to use for training) is also a
-    parameter, and it will be the same for each class.
+1.  It takes one image (2D or stack) as training input image and a binary image as the corresponding labels.
+2.  Train a classifier (in this case a random forest, but it can be changed) based on randomly selected pixels of the training image. The number of samples (pixels to use for training) is also a parameter, and it will be the same for each class.
 3.  Apply the trained classifier to a test image (2D or stack).
 
 <!-- end list -->
@@ -579,15 +516,7 @@ IJ.log( "** Finished script in " + estimatedTime + " ms **" );
 
 # Example: color-based segmentation using clustering
 
-The following [Beanshell](Beanshell "wikilink") script shows how to
-segment a 2D color image or stack in an automatic fashion using the
-[CIELab color space](wikipedia:CIELAB "wikilink") and two possible
-clustering schemes: [k-means](wikipedia:K-means "wikilink") and
-[expectation
-maximization](wikipedia:Expectation–maximization_algorithm "wikilink")
-(note: if you do not have Weka's ClassificationViaClustering classifier
-installed, check [how to install new classifiers via Weka's package
-manager](Trainable_Weka_Segmentation_-_How_to_install_new_classifiers "wikilink")).
+The following [Beanshell](Beanshell "wikilink") script shows how to segment a 2D color image or stack in an automatic fashion using the [CIELab color space](wikipedia:CIELAB "wikilink") and two possible clustering schemes: [k-means](wikipedia:K-means "wikilink") and [expectation maximization](wikipedia:Expectation–maximization_algorithm "wikilink") (note: if you do not have Weka's ClassificationViaClustering classifier installed, check [how to install new classifiers via Weka's package manager](Trainable_Weka_Segmentation_-_How_to_install_new_classifiers "wikilink")).
 
 ``` java
 #@ ImagePlus image
@@ -682,38 +611,20 @@ output = wekaSegmentation.applyClassifier( image, featuresArray, 0, false );
 output.setDisplayRange( 0, numClusters-1 );
 ```
 
-This can be a very useful approach to segment images where the elements
-contain very distinct colors. Let's see an example using a [public
-image](https://commons.wikimedia.org/wiki/File:Emphysema_H_and_E.jpg) of
-hematoxylin and eosin (H\&E) stained lung tissue:
+This can be a very useful approach to segment images where the elements contain very distinct colors. Let's see an example using a [public image](https://commons.wikimedia.org/wiki/File:Emphysema_H_and_E.jpg) of hematoxylin and eosin (H\&E) stained lung tissue:
 
-![Emphysema\_H\_and\_E.jpg](/images/pages/Emphysema_H_and_E.jpg
-"Emphysema_H_and_E.jpg")"
+![Emphysema\_H\_and\_E.jpg](/images/pages/Emphysema_H_and_E.jpg "Emphysema_H_and_E.jpg")"
 
 Once the image is open, we can call the script and a dialog will pop up:
 
-![TWS-color-segmentation-script-menu.png](/images/pages/TWS-color-segmentation-script-menu.png
-"TWS-color-segmentation-script-menu.png")"
+![TWS-color-segmentation-script-menu.png](/images/pages/TWS-color-segmentation-script-menu.png "TWS-color-segmentation-script-menu.png")"
 
-Here we can select the number of expected clusters, the number of
-samples per cluster used for training and the clustering method. The
-default values of 5 clusters, 1000 samples and “SimpleKMeans” involve
-that 5000 pixels will be used for training (\(5\times1000=5000\)) a
-k-means classifier and the resulting image will be an integer image
-containing labels in the range of \[0-4\].
+Here we can select the number of expected clusters, the number of samples per cluster used for training and the clustering method. The default values of 5 clusters, 1000 samples and “SimpleKMeans” involve that 5000 pixels will be used for training (\(5\times1000=5000\)) a k-means classifier and the resulting image will be an integer image containing labels in the range of \[0-4\].
 
-This would be a possible output of the script with 3 clusters, 2000
-samples and “SimpleKMeans”:
+This would be a possible output of the script with 3 clusters, 2000 samples and “SimpleKMeans”:
 
-![TWS-result-H-and-E-k-means-3-clusters-2000-samples.png](/images/pages/TWS-result-H-and-E-k-means-3-clusters-2000-samples.png
-"TWS-result-H-and-E-k-means-3-clusters-2000-samples.png")"
+![TWS-result-H-and-E-k-means-3-clusters-2000-samples.png](/images/pages/TWS-result-H-and-E-k-means-3-clusters-2000-samples.png "TWS-result-H-and-E-k-means-3-clusters-2000-samples.png")"
 
-The actual label values may vary between different executions of the
-same clustering due to its random seed initialization. In any case, the
-blood cells (originally in red), the cell nuclei (in blue-purple), other
-cell bodies (in pink) and the extracellular space get usually a very
-reasonable segmentation.
+The actual label values may vary between different executions of the same clustering due to its random seed initialization. In any case, the blood cells (originally in red), the cell nuclei (in blue-purple), other cell bodies (in pink) and the extracellular space get usually a very reasonable segmentation.
 
-[Category:Scripting](Category:Scripting "wikilink")
-[Category:Segmentation](Category:Segmentation "wikilink")
-[Category:Machine Learning](Category:Machine_Learning "wikilink")
+[Category:Scripting](Category:Scripting "wikilink") [Category:Segmentation](Category:Segmentation "wikilink") [Category:Machine Learning](Category:Machine_Learning "wikilink")

@@ -8,28 +8,18 @@ categories: Plugins,Transform
 description: test description
 ---
 
-{% capture source %} {% include github org="axtimwalde" repo="mpicbg"
-path="mpicbg\_/src/main/java/Transform\_MovingLeastSquaresMesh.java" %}
-{% endcapture %} {% include sidebox-right name='Interactive Moving Least
-Squares' software='Fiji' author='Stephan Saalfeld' maintainer='Stephan
-Saalfeld' source=source released='July 18, 2008' version='May 26, 2009'
-status='stable, active'
-category='[Transform](:Category:Transform "wikilink"),
-[Plugins](:Category:Plugins "wikilink")' %}{% include youtube
-url="https://www.youtube.com/embed/NwOxRmX03xs" %}
+
+{% capture source%}
+{% include github org='axtimwalde' repo='mpicbg' path='mpicbg\_/src/main/java/Transform\_MovingLeastSquaresMesh.java' %}
+{% endcapture %}
+{% include info-box name='Interactive Moving Least Squares' software='Fiji' author='Stephan Saalfeld' maintainer='Stephan Saalfeld' source=source released='July 18, 2008' latest-version='May 26, 2009' status='stable, active' category='[Transform](:Category:Transform "wikilink"), [Plugins](:Category:Plugins "wikilink")' %}{% include youtube url='https://www.youtube.com/embed/'%}
 
 ## License
 
-This program is **free software**; you can redistribute it and/or modify
-it under the terms of the **GNU General Public License** as published by
-the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).
+This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).
 
-This program is distributed in the hope that it will be useful, but
-WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
-Public License for more details.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 -----
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Transform](Category:Transform "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Transform](Category:Transform "wikilink")

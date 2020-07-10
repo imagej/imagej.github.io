@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [2014-01-25 - Low Light Tracking
-    Tool](2014-01-25_-_Low_Light_Tracking_Tool "wikilink")
+1.  REDIRECT [2014-01-25 - Low Light Tracking Tool](2014-01-25_-_Low_Light_Tracking_Tool "wikilink")

@@ -8,25 +8,19 @@ categories: Plugins
 description: test description
 ---
 
-{% capture source %} {% include github org="fiji" repo="3D\_Viewer"
-source="isosurface/Show\_Colour\_Surfaces.java" %} {% endcapture %} {%
-include sidebox-right software='ImageJ' name='Show Color Surfaces'
-author='Mark Longair' maintainer='Mark Longair' filename='VIB\_.jar'
-source=source status='stable' %}
 
-This plugin allows you to add surfaces generated from *label field
-stacks* to a new or existing 3D viewer.
+{% capture source%}
+{% include github org='fiji' repo='3D\_Viewer' source='isosurface/Show\_Colour\_Surfaces.java' %}
+{% endcapture %}
+{% include info-box software='ImageJ' name='Show Color Surfaces' author='Mark Longair' maintainer='Mark Longair' filename='VIB\_.jar' source=source status='stable' %}
 
-A *label field* is an 8-bit image stack where the numbers attached to
-each pixels refer to a specific class rather than an intensity. Usually,
-label fields are visualized using a lookup table so that different
-classes are shown as different colors.
+This plugin allows you to add surfaces generated from *label field stacks* to a new or existing 3D viewer.
 
-The *Show Color Surfaces* command calculates surfaces embedded into the
-[3D Viewer](3D_Viewer "wikilink") from label fields:
+A *label field* is an 8-bit image stack where the numbers attached to each pixels refer to a specific class rather than an intensity. Usually, label fields are visualized using a lookup table so that different classes are shown as different colors.
 
-![Show-color-surfaces-reduced.png](/images/pages/Show-color-surfaces-reduced.png
-"Show-color-surfaces-reduced.png")"
+The *Show Color Surfaces* command calculates surfaces embedded into the [3D Viewer](3D_Viewer "wikilink") from label fields:
+
+![Show-color-surfaces-reduced.png](/images/pages/Show-color-surfaces-reduced.png "Show-color-surfaces-reduced.png")"
 
 ## Menu path
 

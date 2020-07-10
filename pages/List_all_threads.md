@@ -10,9 +10,7 @@ description: test description
 
 ## Purpose
 
-An example [Jython](Jython_Scripting "wikilink") script to illustrate
-how to query a ThreadGroup recursively to gather all children Thread
-instances.
+An example [Jython](Jython_Scripting "wikilink") script to illustrate how to query a ThreadGroup recursively to gather all children Thread instances.
 
 The output is something like the following:
 
@@ -88,6 +86,4 @@ for thread in listThreadNames():
 
 [Jython Scripting](Jython_Scripting "wikilink")
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Scripting](Category:Scripting "wikilink")
-[Category:Unmaintained](Category:Unmaintained "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Scripting](Category:Scripting "wikilink") [Category:Unmaintained](Category:Unmaintained "wikilink")

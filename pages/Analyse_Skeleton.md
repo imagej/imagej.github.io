@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT
-    [BoneJ2\#Analyse\_skeleton](BoneJ2#Analyse_skeleton "wikilink")
+1.  REDIRECT [BoneJ2\#Analyse\_skeleton](BoneJ2#Analyse_skeleton "wikilink")

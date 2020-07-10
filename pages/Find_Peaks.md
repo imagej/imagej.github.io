@@ -8,82 +8,53 @@ categories: Scripting,Analysis,Plugins
 description: test description
 ---
 
-<seo metak="local maxima,local minima,extrema,inflection point, signal processing, spectral analysis" metad="local maxima,local minima,extrema,inflection point, signal processing, spectral analysis" />
+<seo metak="local maxima,local minima,extrema,inflection point, signal processing, spectral analysis" metad="local maxima,local minima,extrema,inflection point, signal processing, spectral analysis" /> 
+{% capture author%}
+{% include person content='Tiago' %}
+{% endcapture %}
 
-{% capture author %} {% include person content="Tiago" %} {% endcapture
-%}
+{% capture filename%}
+{% include github org='tferr' repo='Scripts' path='BAR/src/main/resources/scripts/BAR/Data\_Analysis/Find\_Peaks.bsh' %}
+{% endcapture %}
 
-{% capture filename %} {% include github org="tferr" repo="Scripts"
-path="BAR/src/main/resources/scripts/BAR/Data\_Analysis/Find\_Peaks.bsh"
-%} {% endcapture %}
+{% capture source%}
+{% include github org='tferr' repo='Scripts' path='README.md\#data-analysis' %}
+{% endcapture %}
+{% include info-box software='ImageJ/Fiji' name='Find Peaks' maintainer='[ BAR update site](BAR "wikilink")' author=author filename=filename source=source released='February 2014' category='[Analysis](:Category:Analysis "wikilink"), [Scripting](:Category:Scripting "wikilink"), [Plugins](:Category:Plugins "wikilink")' %}
 
-{% capture source %} {% include github org="tferr" repo="Scripts"
-path="README.md\#data-analysis" %} {% endcapture %} {% include
-sidebox-right software='ImageJ/Fiji' name='Find Peaks' maintainer='[ BAR
-update site](BAR "wikilink")' author=author filename=filename
-source=source released='February 2014'
-category='[Analysis](:Category:Analysis "wikilink"),
-[Scripting](:Category:Scripting "wikilink"),
-[Plugins](:Category:Plugins "wikilink")' %}
-
-A [BAR](BAR "wikilink") script (written in
-[BeanShell](Beanshell_Scripting "wikilink")) that retrieves local maxima
-and minima from an ImageJ plot. The easiest way to install *Find Peaks*
-is by [subscribing](BAR#Installation "wikilink") to the BAR {% include
-list-of-update-sites content='update site' %}.
+A [BAR](BAR "wikilink") script (written in [BeanShell](Beanshell_Scripting "wikilink")) that retrieves local maxima and minima from an ImageJ plot. The easiest way to install *Find Peaks* is by [subscribing](BAR#Installation "wikilink") to the BAR {% include list-of-update-sites content='update site' %}.
 
 ## Options
 
-![Analysis of synthetic data plotted from a .csv file. CSV files can be
-imported into ImageJ by drag and drop, or by using
-<span style="border-bottom:1px dotted #ccc;">File▷ Import▷
-Results</span>. Once [options](/images/pages/#options "wikilink")" are specified,
-coordinates of retrieved peaks are logged to the table of a new plot
-window](FindPeaksSnapshot.png
-"Analysis of synthetic data plotted from a .csv file. CSV files can be imported into ImageJ by drag and drop, or by using File▷ Import▷ Results. Once options are specified, coordinates of retrieved peaks are logged to the table of a new plot window")
+![Analysis of synthetic data plotted from a .csv file. CSV files can be imported into ImageJ by drag and drop, or by using <span style="border-bottom:1px dotted #ccc;">File▷ Import▷ Results</span>. Once [options](/images/pages/#options "wikilink")" are specified, coordinates of retrieved peaks are logged to the table of a new plot window](FindPeaksSnapshot.png "Analysis of synthetic data plotted from a .csv file. CSV files can be imported into ImageJ by drag and drop, or by using File▷ Import▷ Results. Once options are specified, coordinates of retrieved peaks are logged to the table of a new plot window")
 
   - Peak amplitude  
-    The smallest depth (in Y-axis units) that a qualified valley must
-    exceed. By default, it is set to one standard deviation of the data.
+    The smallest depth (in Y-axis units) that a qualified valley must exceed. By default, it is set to one standard deviation of the data.
 
 <!-- end list -->
 
   - Min. value of maxima  
-    The smallest value (in Y-axis units) a qualified maxima must exceed.
-    This filter is disabled when set to *NaN* (Not a Number).
+    The smallest value (in Y-axis units) a qualified maxima must exceed. This filter is disabled when set to *NaN* (Not a Number).
 
 <!-- end list -->
 
   - Max. value of minima  
-    The highest value (in Y-axis units) a qualified minima must not
-    exceed. This filter is disabled when set to *NaN* (Not a Number).
+    The highest value (in Y-axis units) a qualified minima must not exceed. This filter is disabled when set to *NaN* (Not a Number).
 
 <!-- end list -->
 
   - Min. peak distance  
-    The smallest separation between peaks (in X-axis units). When this
-    value is not zero (the default), smaller peaks within the specified
-    vicinity will be ignored. This works in the following way: 1)
-    Identified peaks that fulfill all of the above criteria are sorted
-    in descending order (largest to smallest amplitude); 2) Beginning
-    with the largest peak, the script ignores all remaining peaks that
-    are not separated by more than the specified *Min. peak distance*.
-    Applies to both maxima and minima.
+    The smallest separation between peaks (in X-axis units). When this value is not zero (the default), smaller peaks within the specified vicinity will be ignored. This works in the following way: 1) Identified peaks that fulfill all of the above criteria are sorted in descending order (largest to smallest amplitude); 2) Beginning with the largest peak, the script ignores all remaining peaks that are not separated by more than the specified *Min. peak distance*. Applies to both maxima and minima.
 
 <!-- end list -->
 
   - Exclude peaks on edges of plot  
-    If active, a peak is only accepted if it is separated by two
-    qualified valleys. If disabled (the default), peaks at the limits of
-    the data range (i.e., flanked only by one valley) are also
-    considered.
+    If active, a peak is only accepted if it is separated by two qualified valleys. If disabled (the default), peaks at the limits of the data range (i.e., flanked only by one valley) are also considered.
 
 <!-- end list -->
 
   - List values  
-    If active, the Plot's table will be displayed (as frontmost window),
-    allowing values to be saved programmatically when calling *Find
-    Peaks* from other macros or scripts. Examples:
+    If active, the Plot's table will be displayed (as frontmost window), allowing values to be saved programmatically when calling *Find Peaks* from other macros or scripts. Examples:
 
 <!-- end list -->
 
@@ -101,62 +72,27 @@ WindowManager.getActiveWindow().close()
 
 ## Notes
 
-  - Both maxima and minima are listed in descending order, from the
-    largest to smallest amplitude
+  - Both maxima and minima are listed in descending order, from the largest to smallest amplitude
   - Peaks with flat tops are retrieved at their centers
-  - Peak coordinates are logged according to the following layout:
-    \[*X0,Y0*\]: Original data; \[*X1,Y1*\]: Maxima; \[*X2,Y2*\]: Minima
+  - Peak coordinates are logged according to the following layout: \[*X0,Y0*\]: Original data; \[*X1,Y1*\]: Maxima; \[*X2,Y2*\]: Minima
   - *Min. peak distance* can be used for peak width filtering
-  - Use *Scientific notation* and *Decimal places* in {% include bc
-    content='Analyze|Set Measurements...'%} to improve the
-    representation of values that are too big or too small to be
-    displayed in the decimal form
-  - Find Peaks was initially though as a [complementary
-    tool](Sholl_Analysis#Complementary_Tools "wikilink") for [Sholl
-    Analysis](Sholl_Analysis "wikilink") but it that can be applied to
-    any dataset. For this reason, it is now part of
-    [BAR](BAR "wikilink")
+  - Use *Scientific notation* and *Decimal places* in {% include bc content='Analyze|Set Measurements...'%} to improve the representation of values that are too big or too small to be displayed in the decimal form
+  - Find Peaks was initially though as a [complementary tool](Sholl_Analysis#Complementary_Tools "wikilink") for [Sholl Analysis](Sholl_Analysis "wikilink") but it that can be applied to any dataset. For this reason, it is now part of [BAR](BAR "wikilink")
 
 ## Related Resources
 
-Analysis of 1D-signals was discussed in March 2014 on the [ImageJ
-mailing
-list](https://list.nih.gov/cgi-bin/wa.exe?A1=ind1403&L=IMAGEJ#32). That
-discussion highlighted the following alternatives to *Find Peaks*:
+Analysis of 1D-signals was discussed in March 2014 on the [ImageJ mailing list](https://list.nih.gov/cgi-bin/wa.exe?A1=ind1403&L=IMAGEJ#32). That discussion highlighted the following alternatives to *Find Peaks*:
 
-  - [PeakFinder
-    Tool](http://simon.bio.uva.nl/objectj/examples/PeakFinder/peakfinder.html)
-    by Norbert Vischer, a
-    [macro](Introduction_into_Macro_Programming "wikilink") tool that
-    retrieves intensity peaks along a straight line ROI.
-  - [Multi-Peak fitting using
-    R](http://cmci.embl.de/documents/120206pyip_cooking/python_imagej_cookbook#rmulti-peak_fitting_using_r)
-    by Kota Miura, a [Jython](Jython_Scripting "wikilink") script that
-    calls the [R](http://www.r-project.org) package
-    [Peaks](http://cran.r-project.org/web/packages/Peaks/index.html).
-    Requires [Rserve](http://www.rforge.net/Rserve/doc.html)
-    ([instructions](http://cmci.embl.de/documents/101105ij_r_jython#using_r_from_imagej_via_rserve))
-  - [Fast Filters
-    plugin](http://imagejdocu.tudor.lu/doku.php?id=plugin:filter:fast_filters:start)
-    by Michael Schmid, a collection of unidirectional filters that can
-    be applied to to rows or columns in an image
-    ([instructions](https://list.nih.gov/cgi-bin/wa.exe?A2=ind1403&L=IMAGEJ&F=&S=&P=136934)).
+  - [PeakFinder Tool](http://simon.bio.uva.nl/objectj/examples/PeakFinder/peakfinder.html) by Norbert Vischer, a [macro](Introduction_into_Macro_Programming "wikilink") tool that retrieves intensity peaks along a straight line ROI.
+  - [Multi-Peak fitting using R](http://cmci.embl.de/documents/120206pyip_cooking/python_imagej_cookbook#rmulti-peak_fitting_using_r) by Kota Miura, a [Jython](Jython_Scripting "wikilink") script that calls the [R](http://www.r-project.org) package [Peaks](http://cran.r-project.org/web/packages/Peaks/index.html). Requires [Rserve](http://www.rforge.net/Rserve/doc.html) ([instructions](http://cmci.embl.de/documents/101105ij_r_jython#using_r_from_imagej_via_rserve))
+  - [Fast Filters plugin](http://imagejdocu.tudor.lu/doku.php?id=plugin:filter:fast_filters:start) by Michael Schmid, a collection of unidirectional filters that can be applied to to rows or columns in an image ([instructions](https://list.nih.gov/cgi-bin/wa.exe?A2=ind1403&L=IMAGEJ&F=&S=&P=136934)).
 
 ## Installation
 
-The easiest way to install *Find Peaks* is by [subscribing to the BAR
-update site](BAR#Installation "wikilink").
+The easiest way to install *Find Peaks* is by [subscribing to the BAR update site](BAR#Installation "wikilink").
 
 ## License
 
-This program is free software; you can redistribute it and/or modify it
-under the terms of the GNU General Public License as published by the
-[Free Software Foundation](http://www.gnu.org/licenses/gpl.txt). This
-program is distributed in the hope that it will be useful, but WITHOUT
-ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
-FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
-more details.
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the [Free Software Foundation](http://www.gnu.org/licenses/gpl.txt). This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-[Category:Scripting](Category:Scripting "wikilink")
-[Category:Analysis](Category:Analysis "wikilink")
-[Category:Plugins](Category:Plugins "wikilink")
+[Category:Scripting](Category:Scripting "wikilink") [Category:Analysis](Category:Analysis "wikilink") [Category:Plugins](Category:Plugins "wikilink")

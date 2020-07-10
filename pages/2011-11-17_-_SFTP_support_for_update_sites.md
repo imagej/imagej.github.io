@@ -8,13 +8,8 @@ categories: News
 description: test description
 ---
 
-Thanks to [Jarek Sacha](http://ij-plugins.sourceforge.net/), our [Fiji
-Updater](Fiji_Updater "wikilink") now has support for SFTP in addition
-to SSH. Many sites do not allow for direct SSH access but only for SFTP,
-like [SourceForge](http://sourceforge.net). Now we support such sites,
-too\!
+Thanks to [Jarek Sacha](http://ij-plugins.sourceforge.net/), our [Fiji Updater](Fiji_Updater "wikilink") now has support for SFTP in addition to SSH. Many sites do not allow for direct SSH access but only for SFTP, like [SourceForge](http://sourceforge.net). Now we support such sites, too\!
 
-To enable SFTP support, just prefix *sftp:* in front of the SSH host in
-the [update site configuration](Adding_Update_Sites "wikilink").
+To enable SFTP support, just prefix *sftp:* in front of the SSH host in the [update site configuration](Adding_Update_Sites "wikilink").
 
 [Category:News](Category:News "wikilink")

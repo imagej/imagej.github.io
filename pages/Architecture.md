@@ -8,177 +8,77 @@ categories: Development
 description: test description
 ---
 
-{% include sidebox-right content='This page describes the ""technical""
-structure of [SciJava](SciJava "wikilink") and
-[ImageJ](ImageJ "wikilink") projects.
+{% include info-box content='This page describes the ""technical"" structure of [SciJava](SciJava "wikilink") and [ImageJ](ImageJ "wikilink") projects.
 
-  - For information on the ""social"" structure, see
-    [Governance](Governance "wikilink").
-  - For information on the ""legal"" structure, see
-    [Licensing](Licensing "wikilink").' %}
+  - For information on the ""social"" structure, see [Governance](Governance "wikilink").
+  - For information on the ""legal"" structure, see [Licensing](Licensing "wikilink").' %}
 
-{% include develop-menu %}This page describes the technical structure of
-[SciJava](SciJava "wikilink") and [ImageJ](ImageJ "wikilink") projects.
-For maximum benefit, we suggest readers familiarize themselves with
-[Maven](Maven "wikilink"), [Git](Git "wikilink") and
-[GitHub](GitHub "wikilink") before reading the sections here.
+{% include develop-menu%}This page describes the technical structure of [SciJava](SciJava "wikilink") and [ImageJ](ImageJ "wikilink") projects. For maximum benefit, we suggest readers familiarize themselves with [Maven](Maven "wikilink"), [Git](Git "wikilink") and [GitHub](GitHub "wikilink") before reading the sections here.
 
 # Definitions
 
-Throughout this article, and elsewhere on this wiki, we use the
-following terms:
+Throughout this article, and elsewhere on this wiki, we use the following terms:
 
-  - A software **component** is a program, such as a
-    [plugin](plugin "wikilink"), or a
-    [library](wikipedia:Library_\(computing\) "wikilink") of reusable
-    functions. Components are typically designed to work together, and
-    combined to form a [software
-    application](wikipedia:Application_software "wikilink") such as
-    [ImageJ](ImageJ "wikilink"). In [Maven](Maven "wikilink") terms, a
-    component is a single *artifact*, typically a [JAR
-    file](https://en.wikipedia.org/wiki/JAR_\(file_format\)).
-  - A software **project** is a more general term referring to either a
-    single component or a *collection* of related components. For
-    example, the phrase "ImageJ project" refers to several components
-    including [ImageJ Common](ImageJ_Common "wikilink"), [ImageJ
-    Ops](ImageJ_Ops "wikilink"), [ImageJ
-    Legacy](ImageJ_Legacy "wikilink") and the [ImageJ
-    Updater](ImageJ_Updater "wikilink").
-  - The **SciJava component collection** is the set of all components
-    managed by the `pom-scijava` Bill of Materials. Such **SciJava
-    components** reside across several different architectural layers.
-    See "Bill of Materials" below for details.
-  - **SciJava core components** are SciJava components of the SciJava
-    component layer itself. See "Organizational structure" below.
-  - The **ImageJ software stack** is the set of components upon which
-    [ImageJ](ImageJ "wikilink") is built. It includes components from
-    the [SciJava](SciJava "wikilink"), [ImgLib2](ImgLib2 "wikilink"),
-    [ImageJ](ImageJ "wikilink") and [SCIFIO](SCIFIO "wikilink")
-    foundational layers; see "Organizational structure" and "Core
-    libraries" below for details.
+  - A software **component** is a program, such as a [plugin](plugin "wikilink"), or a [library](wikipedia:Library_\(computing\) "wikilink") of reusable functions. Components are typically designed to work together, and combined to form a [software application](wikipedia:Application_software "wikilink") such as [ImageJ](ImageJ "wikilink"). In [Maven](Maven "wikilink") terms, a component is a single *artifact*, typically a [JAR file](https://en.wikipedia.org/wiki/JAR_\(file_format\)).
+  - A software **project** is a more general term referring to either a single component or a *collection* of related components. For example, the phrase "ImageJ project" refers to several components including [ImageJ Common](ImageJ_Common "wikilink"), [ImageJ Ops](ImageJ_Ops "wikilink"), [ImageJ Legacy](ImageJ_Legacy "wikilink") and the [ImageJ Updater](ImageJ_Updater "wikilink").
+  - The **SciJava component collection** is the set of all components managed by the `pom-scijava` Bill of Materials. Such **SciJava components** reside across several different architectural layers. See "Bill of Materials" below for details.
+  - **SciJava core components** are SciJava components of the SciJava component layer itself. See "Organizational structure" below.
+  - The **ImageJ software stack** is the set of components upon which [ImageJ](ImageJ "wikilink") is built. It includes components from the [SciJava](SciJava "wikilink"), [ImgLib2](ImgLib2 "wikilink"), [ImageJ](ImageJ "wikilink") and [SCIFIO](SCIFIO "wikilink") foundational layers; see "Organizational structure" and "Core libraries" below for details.
 
 # SciJava project structure
 
-The [ImageJ](ImageJ "wikilink") project, and related projects in the
-[SciJava](SciJava "wikilink") software ecosystem, are carefully
-structured to foster [extensibility](extensibility "wikilink").
+The [ImageJ](ImageJ "wikilink") project, and related projects in the [SciJava](SciJava "wikilink") software ecosystem, are carefully structured to foster [extensibility](extensibility "wikilink").
 
 ## Organizational structure
 
-<imagemap>
-Image:SciJava\_Organization\_Hierarchy.svg|right|frame|SciJava
-organizations rect 43 178 277 307 [1](https://github.com/imglib) rect 43
-83 216 147 [2](https://github.com/scifio) rect 30 50 230 260
-[3](https://github.com/imagej) rect 1 1 261 291
-[4](https://github.com/scijava) </imagemap>
+<imagemap> Image:SciJava\_Organization\_Hierarchy.svg|right|frame|SciJava organizations rect 43 178 277 307 [1](https://github.com/imglib) rect 43 83 216 147 [2](https://github.com/scifio) rect 30 50 230 260 [3](https://github.com/imagej) rect 1 1 261 291 [4](https://github.com/scijava) </imagemap>
 
-There are four organizations on [GitHub](https://github.com/) which form
-the backbone of the [SciJava](SciJava "wikilink") ecosystem:
+There are four organizations on [GitHub](https://github.com/) which form the backbone of the [SciJava](SciJava "wikilink") ecosystem:
 
-  - [scijava](https://github.com/scijava) - for
-    [SciJava](SciJava "wikilink") core components: general-purpose,
-    non-image-specific libraries.
-  - [imglib](https://github.com/imglib) - for
-    [ImgLib2](ImgLib2 "wikilink") components: flexible N-dimensional
-    image processing.
-  - [imagej](https://github.com/imagej) - for
-    [ImageJ](ImageJ "wikilink") components: metadata-rich image library
-    and application.
-  - [scifio](https://github.com/scifio) - for
-    [SCIFIO](SCIFIO "wikilink") components: scientific image I/O and
-    file formats.
+  - [scijava](https://github.com/scijava) - for [SciJava](SciJava "wikilink") core components: general-purpose, non-image-specific libraries.
+  - [imglib](https://github.com/imglib) - for [ImgLib2](ImgLib2 "wikilink") components: flexible N-dimensional image processing.
+  - [imagej](https://github.com/imagej) - for [ImageJ](ImageJ "wikilink") components: metadata-rich image library and application.
+  - [scifio](https://github.com/scifio) - for [SCIFIO](SCIFIO "wikilink") components: scientific image I/O and file formats.
 
-Each organization contains several related components under its
-respective umbrella: a core library (see below) and several extensions.
-In social terms, each organization represents a collection of
-conceptually related components developed by a distinct [team of
-developers](Contributors "wikilink").
+Each organization contains several related components under its respective umbrella: a core library (see below) and several extensions. In social terms, each organization represents a collection of conceptually related components developed by a distinct [team of developers](Contributors "wikilink").
 
 Additional organizations further extend this structure:
 
-  - [fiji](https://github.com/fiji) - for [Fiji](Fiji "wikilink")
-    components
-      - [bigdataviewer](https://github.com/bigdataviewer) - for
-        [BigDataViewer](BigDataViewer "wikilink") components
-      - [trakem2](https://github.com/trakem2) - for
-        [TrakEM2](TrakEM2 "wikilink") components
-  - [uw-loci](https://github.com/uw-loci) - for [LOCI](LOCI "wikilink")
-    components
-  - [slim-curve](https://github.com/slim-curve) - for [SLIM
-    Curve](SLIM_Curve "wikilink") components
+  - [fiji](https://github.com/fiji) - for [Fiji](Fiji "wikilink") components
+      - [bigdataviewer](https://github.com/bigdataviewer) - for [BigDataViewer](BigDataViewer "wikilink") components
+      - [trakem2](https://github.com/trakem2) - for [TrakEM2](TrakEM2 "wikilink") components
+  - [uw-loci](https://github.com/uw-loci) - for [LOCI](LOCI "wikilink") components
+  - [slim-curve](https://github.com/slim-curve) - for [SLIM Curve](SLIM_Curve "wikilink") components
   - \<your organization here\!\>
 
-The diagram on the right shows organizational relationships between
-SciJava software components.
+The diagram on the right shows organizational relationships between SciJava software components.
 
 ## Git repositories
 
-Each component is contained in its own [Git](Git "wikilink") repository,
-so that interested developers can cherry-pick only those parts of
-interest. Version control is an indispensable tool to ensure *scientific
-reproducibility* (see below) by tracking known-working states of the
-source code, and maintain a written record of how and why the code has
-changed over time. For technical details, see the [Git](Git "wikilink")
-section.
+Each component is contained in its own [Git](Git "wikilink") repository, so that interested developers can cherry-pick only those parts of interest. Version control is an indispensable tool to ensure *scientific reproducibility* (see below) by tracking known-working states of the source code, and maintain a written record of how and why the code has changed over time. For technical details, see the [Git](Git "wikilink") section.
 
 ### Why separate Git repositories?
 
-With [Maven](Maven "wikilink") it is possible to create a [multi-module
-reactor](http://maven.apache.org/guides/mini/guide-multiple-modules.html)
-that unifies several component artifacts into a single build, typically
-within a single Git repository.
+With [Maven](Maven "wikilink") it is possible to create a [multi-module reactor](http://maven.apache.org/guides/mini/guide-multiple-modules.html) that unifies several component artifacts into a single build, typically within a single Git repository.
 
-While many SciJava components used to be structured this way, we found
-that lumping multiple components into a single Git repository with a
-multi-module build has disadvantages compared to separate Git
-repositories with single-module builds:
+While many SciJava components used to be structured this way, we found that lumping multiple components into a single Git repository with a multi-module build has disadvantages compared to separate Git repositories with single-module builds:
 
-  - Typically, components of a multi-module project are all versioned
-    together, but we have opted for individual
-    [versioning](versioning "wikilink") of components, for reasons of
-    [rapid
-    iteration](Philosophy#Release_early.2C_release_often "wikilink"),
-    [extensibility](extensibility "wikilink") and
-    [modularity](Architecture#Modularity "wikilink").
-  - Individual repositories make it easier for developers to cherry-pick
-    only those components of interest, without building the rest of the
-    code, since dependencies are fetched on demand from remote
-    [Maven](Maven "wikilink") repositories.
-  - Concerns are better separated, with each component encapsulating its
-    own codebase, issues, pull requests and technical documentation.
-  - Since every component follows a consistent structure, the supporting
-    tools (e.g., [these
-    scripts](https://github.com/scijava/scijava-scripts)) are simpler to
-    develop and maintain.
+  - Typically, components of a multi-module project are all versioned together, but we have opted for individual [versioning](versioning "wikilink") of components, for reasons of [rapid iteration](Philosophy#Release_early.2C_release_often "wikilink"), [extensibility](extensibility "wikilink") and [modularity](Architecture#Modularity "wikilink").
+  - Individual repositories make it easier for developers to cherry-pick only those components of interest, without building the rest of the code, since dependencies are fetched on demand from remote [Maven](Maven "wikilink") repositories.
+  - Concerns are better separated, with each component encapsulating its own codebase, issues, pull requests and technical documentation.
+  - Since every component follows a consistent structure, the supporting tools (e.g., [these scripts](https://github.com/scijava/scijava-scripts)) are simpler to develop and maintain.
 
 Of course, there are downsides, too:
 
-  - Changes affecting multiple components must be done as separate patch
-    sets (i.e., commits or pull requests).
-  - Issues relevant to multiple components must be filed separately in
-    each issue tracker and cross-referenced.
-  - It can be more difficult to locate code of interest, since the
-    codebase is spread across so many repositories.
+  - Changes affecting multiple components must be done as separate patch sets (i.e., commits or pull requests).
+  - Issues relevant to multiple components must be filed separately in each issue tracker and cross-referenced.
+  - It can be more difficult to locate code of interest, since the codebase is spread across so many repositories.
 
-As a rule of thumb, we find that multi-module [Maven](Maven "wikilink")
-projects stored within a single Git repository are a natural fit for
-"big bang" software which is versioned in lockstep and carefully tested
-before each [release](release "wikilink"), whereas single-module
-projects stored in separate Git repositories work well for the
-[RERO](Philosophy#Release_early.2C_release_often "wikilink")-style
-[release](release "wikilink") paradigm.
+As a rule of thumb, we find that multi-module [Maven](Maven "wikilink") projects stored within a single Git repository are a natural fit for "big bang" software which is versioned in lockstep and carefully tested before each [release](release "wikilink"), whereas single-module projects stored in separate Git repositories work well for the [RERO](Philosophy#Release_early.2C_release_often "wikilink")-style [release](release "wikilink") paradigm.
 
 ## Maven component structure
 
-All components in these organizations use [Maven](Maven "wikilink") for
-[project management](Project_Management "wikilink"). Each organization
-has its own Maven
-[groupId](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-more-coordinates).
-Each component extends the {% include github org='scijava'
-repo='pom-scijava' label='pom-scijava' %} [parent
-POM](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-project-inheritance),
-which provides sensible build defaults and compatible dependency
-versions (see "Bill of Materials" below).
+All components in these organizations use [Maven](Maven "wikilink") for [project management](Project_Management "wikilink"). Each organization has its own Maven [groupId](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-more-coordinates). Each component extends the {% include github org='scijava' repo='pom-scijava' label='pom-scijava' %} [parent POM](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-relationships.html#pom-relationships-sect-project-inheritance), which provides sensible build defaults and compatible dependency versions (see "Bill of Materials" below).
 
 |                                           |                                                   |                                                                        |                                                                                |
 | ----------------------------------------- | ------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
@@ -195,22 +95,11 @@ versions (see "Bill of Materials" below).
 
 ## Bill of Materials
 
-The `pom-scijava` parent includes a [Bill of
-Materials](http://howtodoinjava.com/maven/maven-bom-bill-of-materials-dependency/)
-(BOM) which declares compatible versions of all components of the
-**SciJava component collection** in its [dependencyManagement
-section](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Management).
-These versions are intended to be used together in downstream projects,
-preventing version skew (symptoms of which include
-`ClassNotFoundException` and `NoSuchMethodError`, as well as erroneous
-behavior in general). This BOM is especially important while some
-components are still in beta, since they may sometimes break [backwards
-compatibility](backwards_compatibility "wikilink").
+The `pom-scijava` parent includes a [Bill of Materials](http://howtodoinjava.com/maven/maven-bom-bill-of-materials-dependency/) (BOM) which declares compatible versions of all components of the **SciJava component collection** in its [dependencyManagement section](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Management). These versions are intended to be used together in downstream projects, preventing version skew (symptoms of which include `ClassNotFoundException` and `NoSuchMethodError`, as well as erroneous behavior in general). This BOM is especially important while some components are still in beta, since they may sometimes break [backwards compatibility](backwards_compatibility "wikilink").
 
 ## Core libraries
 
-<graphviz border alignment="right" caption="Core library hierarchy">
-digraph libs {
+<graphviz border alignment="right" caption="Core library hierarchy"> digraph libs {
 
 `   label="Core library hierarchy"`  
 `   `  
@@ -228,216 +117,94 @@ digraph libs {
 
 The ImageJ software stack is composed of the following core libraries:
 
-  - [SciJava Common](SciJava_Common "wikilink") - The
-    [SciJava](SciJava "wikilink") application container and plugin
-    framework.
+  - [SciJava Common](SciJava_Common "wikilink") - The [SciJava](SciJava "wikilink") application container and plugin framework.
   - [ImgLib2](ImgLib2 "wikilink") - The N-dimensional image data model.
-  - [ImageJ Common](ImageJ_Common "wikilink") - Metadata-rich image data
-    structures and SciJava extensions.
-  - [ImageJ Ops](ImageJ_Ops "wikilink") - The framework for reusable
-    image processing operations.
-  - [SCIFIO](SCIFIO "wikilink") - The framework for N-dimensional image
-    I/O.
+  - [ImageJ Common](ImageJ_Common "wikilink") - Metadata-rich image data structures and SciJava extensions.
+  - [ImageJ Ops](ImageJ_Ops "wikilink") - The framework for reusable image processing operations.
+  - [SCIFIO](SCIFIO "wikilink") - The framework for N-dimensional image I/O.
 
 These libraries form the basis of ImageJ-based software.
 
-The dependency hierarchy of library artifacts is shown in the diagram to
-the right.
+The dependency hierarchy of library artifacts is shown in the diagram to the right.
 
 ### Modularity
 
-Much effort has been expended to ensure the design of these libraries
-provides a good [separation of
-concerns](wikipedia:Separation_of_concerns "wikilink"). Developers in
-need of specific functionality may choose to depend on only those
-components which are relevant, rather than needing to add a dependency
-to the entire ImageJ software stack.
+Much effort has been expended to ensure the design of these libraries provides a good [separation of concerns](wikipedia:Separation_of_concerns "wikilink"). Developers in need of specific functionality may choose to depend on only those components which are relevant, rather than needing to add a dependency to the entire ImageJ software stack.
 
-Along those lines, the libraries take great pains to be **UI agnostic**,
-with no dependencies on packages such as `java.awt` or `javax.swing`.
-The idea is that it should be possible to build a [user
-interface](wikipedia:Graphical_user_interface "wikilink") (UI) on top of
-these libraries, without needing to change the library code itself. We
-have developed several proof-of-concept UIs for ImageJ using different
-UI frameworks, including
-[Swing](https://github.com/imagej/imagej-ui-swing),
-[AWT](https://github.com/imagej/imagej-ui-awt), [Eclipse
-SWT](https://github.com/imagej/imagej-ui-swt) and [Apache
-Pivot](https://github.com/imagej/imagej-ui-pivot).
+Along those lines, the libraries take great pains to be **UI agnostic**, with no dependencies on packages such as `java.awt` or `javax.swing`. The idea is that it should be possible to build a [user interface](wikipedia:Graphical_user_interface "wikilink") (UI) on top of these libraries, without needing to change the library code itself. We have developed several proof-of-concept UIs for ImageJ using different UI frameworks, including [Swing](https://github.com/imagej/imagej-ui-swing), [AWT](https://github.com/imagej/imagej-ui-awt), [Eclipse SWT](https://github.com/imagej/imagej-ui-swt) and [Apache Pivot](https://github.com/imagej/imagej-ui-pivot).
 
 ### Extensibility
 
-Extensibility is [ImageJ](ImageJ "wikilink")'s greatest strength. ImageJ
-provides many different types of plugins, and it is possible to extend
-the system with your own new types of plugins. See the
-[create-a-new-plugin-type
-tutorial](https://github.com/imagej/tutorials/tree/master/maven-projects/create-a-new-plugin-type)
-for an illustration.
+Extensibility is [ImageJ](ImageJ "wikilink")'s greatest strength. ImageJ provides many different types of plugins, and it is possible to extend the system with your own new types of plugins. See the [create-a-new-plugin-type tutorial](https://github.com/imagej/tutorials/tree/master/maven-projects/create-a-new-plugin-type) for an illustration.
 
-The [SciJava Common](SciJava_Common "wikilink") (SJC) library provides a
-plugin framework with [strong
-typing](wikipedia:Strong_and_weak_typing "wikilink"), and makes
-extensive use of plugins itself, to allow core functionality to be
-[customized easily](http://c2.com/cgi/wiki?SoftwareSeam). SJC has an
-powerful plugin discovery mechanism that finds all plugins available on
-the Java classpath, without knowing in advance what they are or where
-they are located. It works by indexing the plugins at compile time via
-an [annotation
-processor](wikipedia:Java_annotation#Processing "wikilink") (inspired by
-the [SezPoz](https://github.com/jglick/sezpoz) project) which writes the
-plugin metadata inside the JAR file (in
-`META-INF/json/org.scijava.plugin.Plugin`). Reading this index allows
-the system to discover plugin metadata at runtime very quickly *without*
-loading the plugin classes in advance.
+The [SciJava Common](SciJava_Common "wikilink") (SJC) library provides a plugin framework with [strong typing](wikipedia:Strong_and_weak_typing "wikilink"), and makes extensive use of plugins itself, to allow core functionality to be [customized easily](http://c2.com/cgi/wiki?SoftwareSeam). SJC has an powerful plugin discovery mechanism that finds all plugins available on the Java classpath, without knowing in advance what they are or where they are located. It works by indexing the plugins at compile time via an [annotation processor](wikipedia:Java_annotation#Processing "wikilink") (inspired by the [SezPoz](https://github.com/jglick/sezpoz) project) which writes the plugin metadata inside the JAR file (in `META-INF/json/org.scijava.plugin.Plugin`). Reading this index allows the system to discover plugin metadata at runtime very quickly *without* loading the plugin classes in advance.
 
 # Reproducible builds
 
-{% include sidebox-right title='Why are reproducible builds so essential
-for science?' width='40%' float='right' text='Arguably """the most
-important thing""" in science is to gain insights about nature """that
-can be verified by other researchers""". It is this mission for which
-[ImageJ](ImageJ "wikilink") and [Fiji](Fiji "wikilink") stand, and it is
-the central reason why they are [open source](open_source "wikilink").
+{% include box title='Why are reproducible builds so essential for science?' width='40%' float='right' text='Arguably """the most important thing""" in science is to gain insights about nature """that can be verified by other researchers""". It is this mission for which [ImageJ](ImageJ "wikilink") and [Fiji](Fiji "wikilink") stand, and it is the central reason why they are [open source](open_source "wikilink").
 
-To verify results, it is absolutely necessary to be able to reproduce
-results claimed in scientific articles, and in the interest of
-efficiency, it should be """easy""" to reproduce the results, and it
-should """also""" be easy to scrutinize the used methods—incorrect
-results can be artifacts of flawed algorithms, after all.
+To verify results, it is absolutely necessary to be able to reproduce results claimed in scientific articles, and in the interest of efficiency, it should be """easy""" to reproduce the results, and it should """also""" be easy to scrutinize the used methods—incorrect results can be artifacts of flawed algorithms, after all.
 
-To that end, it should be obvious that researchers """need""" to have
-the ability to inspect the exact source code corresponding to the
-software used to generate the results to be verified. In other words,
-reproducible builds are required for sound scientific research.' %} A
-software *version* (or *build*) is called **reproducible** if it is easy
-to regenerate the exact same software application from the source code.
+To that end, it should be obvious that researchers """need""" to have the ability to inspect the exact source code corresponding to the software used to generate the results to be verified. In other words, reproducible builds are required for sound scientific research.' %} A software *version* (or *build*) is called **reproducible** if it is easy to regenerate the exact same software application from the source code.
 
-For example, you can refer to "ImageJ 1.49g" as a *reproducible build*,
-or to *Sholl Analysis 3.4.3*, while referring to "ImageJ" is
-irreproducible.
+For example, you can refer to "ImageJ 1.49g" as a *reproducible build*, or to *Sholl Analysis 3.4.3*, while referring to "ImageJ" is irreproducible.
 
-It gets more subtle when making heavy use of software libraries
-(sometimes called *dependencies*). It is known, for example, that many
-plugins in the now-defunct [MacBiophotonics distribution of
-ImageJ](MBF "wikilink") worked fine with ImageJ 1.42l, but stopped
-working somewhere between that version and ImageJ 1.44e. That is:
-referring to, say, *the Colocalisation Analysis plugin* does **not**
-refer to a reproducible build because it is very hard to regenerate a
-working Colocalisation Analysis and ImageJ 1.x version that could be
-used to verify previously published results.
+It gets more subtle when making heavy use of software libraries (sometimes called *dependencies*). It is known, for example, that many plugins in the now-defunct [MacBiophotonics distribution of ImageJ](MBF "wikilink") worked fine with ImageJ 1.42l, but stopped working somewhere between that version and ImageJ 1.44e. That is: referring to, say, *the Colocalisation Analysis plugin* does **not** refer to a reproducible build because it is very hard to regenerate a working Colocalisation Analysis and ImageJ 1.x version that could be used to verify previously published results.
 
 ## Advantages of reproducible builds
 
 Some cardinal reasons to strive for reproducible builds are:
 
-  - Reproducible builds are essential for the scientific method (see
-    sidebar right).
-  - It becomes possible to use a [feature branch
-    workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
-    development style where the `master` branch is always release
-    ready—or even a [continuous
-    delivery](wikipedia:Continuous_delivery "wikilink") approach.
-  - [Debugging with
-    git-bisect](Pinpoint_regressions_with_Git "wikilink") becomes
-    feasible.
-  - As a consequence, it avoids [technical
-    debt](wikipedia:Technical_debt "wikilink") in favor of a robust
-    development style.
-  - It attracts more developers to the project, since things "just work"
-    out of the box.
+  - Reproducible builds are essential for the scientific method (see sidebar right).
+  - It becomes possible to use a [feature branch workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow) development style where the `master` branch is always release ready—or even a [continuous delivery](wikipedia:Continuous_delivery "wikilink") approach.
+  - [Debugging with git-bisect](Pinpoint_regressions_with_Git "wikilink") becomes feasible.
+  - As a consequence, it avoids [technical debt](wikipedia:Technical_debt "wikilink") in favor of a robust development style.
+  - It attracts more developers to the project, since things "just work" out of the box.
 
 ## How SciJava achieves reproducible builds
 
-For the reasons stated above, the SciJava software components strive for
-reproducible builds. The goal is to ensure that code which builds and
-runs today will continue to do so in exactly the same way for many years
-to come.
+For the reasons stated above, the SciJava software components strive for reproducible builds. The goal is to ensure that code which builds and runs today will continue to do so in exactly the same way for many years to come.
 
-Each component depends on release
-[versions](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-pom-syntax.html#pom-reationships-sect-versions)
-of *all* its dependencies—never on
-[snapshots](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-pom-syntax.html#pom-relationships-sect-snapshot-versions)
-or [version
-ranges](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-dependencies.html#pom-relationships-sect-version-ranges).
-A Maven snapshot is a moving target, and depending on one results in an
-irreproducible build. Similarly, all Maven plugins used, as well as the
-parent POM, are also declared at release versions. In short: all
-`<version>` tags specify release versions, never `SNAPSHOT` or `LATEST`
-versions. We use the [Maven Enforcer
-Plugin](http://maven.apache.org/enforcer/maven-enforcer-plugin/) to
-enforce this requirement (though it can be temporarily disabled by
-setting the `enforcer.skip` property).
+Each component depends on release [versions](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-pom-syntax.html#pom-reationships-sect-versions) of *all* its dependencies—never on [snapshots](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-pom-syntax.html#pom-relationships-sect-snapshot-versions) or [version ranges](http://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-project-dependencies.html#pom-relationships-sect-version-ranges). A Maven snapshot is a moving target, and depending on one results in an irreproducible build. Similarly, all Maven plugins used, as well as the parent POM, are also declared at release versions. In short: all `<version>` tags specify release versions, never `SNAPSHOT` or `LATEST` versions. We use the [Maven Enforcer Plugin](http://maven.apache.org/enforcer/maven-enforcer-plugin/) to enforce this requirement (though it can be temporarily disabled by setting the `enforcer.skip` property).
 
-We sometimes use `SNAPSHOT` versions temporarily on topic branches.
-However, we always [rewrite them](Git#Rewriting_history "wikilink")
-before merging to master, to purge all `SNAPSHOT` references, so that
-all commits in the history build reproducibly. We use SciJava's
-[check-branch.sh](https://github.com/scijava/scijava-scripts/blob/1386a7b0bc9e832d45f925202e1382717cf4a706/check-branch.sh)
-script to ensure all commits on a topic branch build cleanly with
-passing tests.
+We sometimes use `SNAPSHOT` versions temporarily on topic branches. However, we always [rewrite them](Git#Rewriting_history "wikilink") before merging to master, to purge all `SNAPSHOT` references, so that all commits in the history build reproducibly. We use SciJava's [check-branch.sh](https://github.com/scijava/scijava-scripts/blob/1386a7b0bc9e832d45f925202e1382717cf4a706/check-branch.sh) script to ensure all commits on a topic branch build cleanly with passing tests.
 
 ## Using snapshot couplings during development
 
-For developing several components in parallel, it is very useful to
-switch to `SNAPSHOT` dependency couplings e.g., to test a [pull
-request](https://help.github.com/articles/checking-out-pull-requests-locally/).
+For developing several components in parallel, it is very useful to switch to `SNAPSHOT` dependency couplings e.g., to test a [pull request](https://help.github.com/articles/checking-out-pull-requests-locally/).
 
 There are two easy ways of going about this:
 
-1.  When a small number of snapshot couplings are needed, you can
-    override the version property of the dependency for which you wish
-    to use a snapshot:
+1.  When a small number of snapshot couplings are needed, you can override the version property of the dependency for which you wish to use a snapshot:
     ``` xml
     <properties>
       <scijava-common.version>LATEST</scijava-common.version>
       <enforcer.skip>true</enforcer.skip> <!-- ONLY while depending on a SNAPSHOT -->
     </properties>
     ```
-2.  Alternately, if you wish to temporarily apply snapshot couplings en
-    masse, you can switch on a "dev profile" (defined in the
-    [`pom-scijava` parent
-    POM](https://github.com/scijava/pom-scijava/blob/pom-scijava-12.0.0/pom.xml#L2542-L2547))
-    by creating one or more "dev token" files:
+2.  Alternately, if you wish to temporarily apply snapshot couplings en masse, you can switch on a "dev profile" (defined in the [`pom-scijava` parent POM](https://github.com/scijava/pom-scijava/blob/pom-scijava-12.0.0/pom.xml#L2542-L2547)) by creating one or more "dev token" files:
       - `~/.scijava/dev.imagej`
       - `~/.scijava/dev.imglib2`
       - `~/.scijava/dev.scifio`
       - `~/.scijava/dev.scijava`
-    These files need not have any content; their mere existence will
-    trigger the dev profile associated with the named organization,
-    causing all artifacts of that organization to become coupled as
-    `SNAPSHOT`s.
+    These files need not have any content; their mere existence will trigger the dev profile associated with the named organization, causing all artifacts of that organization to become coupled as `SNAPSHOT`s.
 
-In the case of Eclipse, you may need to "Update Maven project" in order
-to see the snapshot couplings go into effect; the shortcut {% include
-key content='Alt' %}+{% include key content='F5' %} while selecting the
-affected project(s) accomplishes this quickly.
+In the case of Eclipse, you may need to "Update Maven project" in order to see the snapshot couplings go into effect; the shortcut {% include key content='Alt' %}+{% include key content='F5' %} while selecting the affected project(s) accomplishes this quickly.
 
-{% include warning-sidebox-right content='"""Current versions of the
-Eclipse Maven integration (tested with Eclipse Mars) fail to correctly
-resolve the `LATEST` version tag to `SNAPSHOT`s. Use the command-line
-client instead."""' %}
+{% include warning-box content='"""Current versions of the Eclipse Maven integration (tested with Eclipse Mars) fail to correctly resolve the `LATEST` version tag to `SNAPSHOT`s. Use the command-line client instead."""' %}
 
-Either way, ***be sure to work on a topic branch while developing code
-in this fashion.*** You will need to clean up your Git history
-afterwards before merging things to the `master` branch, in order to
-achieve [reproducible builds](reproducible_builds "wikilink").
+Either way, ***be sure to work on a topic branch while developing code in this fashion.*** You will need to clean up your Git history afterwards before merging things to the `master` branch, in order to achieve [reproducible builds](reproducible_builds "wikilink").
 
 # Versioning
 
-SciJava components use the [Semantic
-Versioning](Semantic_Versioning "wikilink") system. This scheme
-communicates information about the [backwards
-compatibility](backwards_compatibility "wikilink") (or lack thereof)
-between versions of each individual software component. In a nutshell:
+SciJava components use the [Semantic Versioning](Semantic_Versioning "wikilink") system. This scheme communicates information about the [backwards compatibility](backwards_compatibility "wikilink") (or lack thereof) between versions of each individual software component. In a nutshell:
 
 > Given a version number MAJOR.MINOR.PATCH, increment the:
 > 
 >   - MAJOR version when you make incompatible API changes,
->   - MINOR version when you add functionality in a backwards-compatible
->     manner, and
+>   - MINOR version when you add functionality in a backwards-compatible manner, and
 >   - PATCH version when you make backwards-compatible bug fixes.
 
-See the [Versioning](Versioning "wikilink") page for a detailed
-discussion of SciJava versioning.
+See the [Versioning](Versioning "wikilink") page for a detailed discussion of SciJava versioning.
 
 [Category:Development](Category:Development "wikilink")

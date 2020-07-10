@@ -8,37 +8,22 @@ categories: Fiji,Related Software,Citable
 description: test description
 ---
 
-{% include fijimenu %}[Fiji](https://fiji.sc/) is an image processing
-package—a "batteries-included" distribution of
-[ImageJ](ImageJ "wikilink"), bundling a lot of plugins which facilitate
-scientific image analysis.
+{% include fijimenu%}[Fiji](https://fiji.sc/) is an image processing package—a "batteries-included" distribution of [ImageJ](ImageJ "wikilink"), bundling a lot of plugins which facilitate scientific image analysis.
 
-  - **[For users](Fiji_Usage "wikilink")** - Fiji is [easy to
-    install](Fiji/Downloads "wikilink") and has an automatic update
-    function, bundles a [lot of plugins](:Category:Plugins "wikilink")
-    and offers comprehensive [documentation](documentation "wikilink").
-  - **[For developers](Developing_Fiji "wikilink")** - Fiji is an open
-    source project hosted in a [Git](Git "wikilink") version control {%
-    include github repo='fiji' label='repository' %}, with access to the
-    source code of all internals, libraries and plugins, and eases the
-    [development](Development "wikilink") and
-    [scripting](Scripting_Help "wikilink") of plugins.
+  - **[For users](Fiji_Usage "wikilink")** - Fiji is [easy to install](Fiji/Downloads "wikilink") and has an automatic update function, bundles a [lot of plugins](:Category:Plugins "wikilink") and offers comprehensive [documentation](documentation "wikilink").
+  - **[For developers](Developing_Fiji "wikilink")** - Fiji is an open source project hosted in a [Git](Git "wikilink") version control {% include github repo='fiji' label='repository' %}, with access to the source code of all internals, libraries and plugins, and eases the [development](Development "wikilink") and [scripting](Scripting_Help "wikilink") of plugins.
 
 ## Downloads
 
-{% include downloadfiji %} See the [Fiji
-Downloads](Fiji/Downloads "wikilink") page for Life-Line versions, etc.
+{% include downloadfiji%} See the [Fiji Downloads](Fiji/Downloads "wikilink") page for Life-Line versions, etc.
 
 ## License
 
-Fiji is released as [open source](open_source "wikilink") under the [GNU
-General Public License](GPL "wikilink").
+Fiji is released as [open source](open_source "wikilink") under the [GNU General Public License](GPL "wikilink").
 
-Fiji builds on top of the [ImageJ2](ImageJ2 "wikilink") core, which is
-licensed under the permissive [BSD 2-Clause license](BSD "wikilink").
+Fiji builds on top of the [ImageJ2](ImageJ2 "wikilink") core, which is licensed under the permissive [BSD 2-Clause license](BSD "wikilink").
 
-Plugins and other components have {% include github repo='fiji'
-path='LICENSES' label='their own licenses' %}.
+Plugins and other components have {% include github repo='fiji' path='LICENSES' label='their own licenses' %}.
 
 See the [Licensing](Licensing "wikilink") page for details.
 
@@ -46,29 +31,17 @@ See the [Licensing](Licensing "wikilink") page for details.
 
 Fiji is supported by several laboratories and institutions:
 
-  - The [Eliceiri/LOCI](LOCI "wikilink") lab at
-    [UW-Madison](https://wisc.edu/), home of
-    [ImageJ2](ImageJ2 "wikilink").
-  - The
-    [Tomancak](https://www.mpi-cbg.de/research-groups/current-groups/pavel-tomancak/research-focus/)
-    and [Jug](https://www.mpi-cbg.de/jug) labs at
-    [MPI-CBG](MPI-CBG "wikilink") and the [CSBD](CSBD "wikilink").
-  - The [Saalfeld Lab](https://www.janelia.org/lab/saalfeld-lab) at
-    [Janelia Research Campus](https://www.janelia.org/).
-  - Individuals at [many other institutions
-    worldwide](Contributors "wikilink").
+  - The [Eliceiri/LOCI](LOCI "wikilink") lab at [UW-Madison](https://wisc.edu/), home of [ImageJ2](ImageJ2 "wikilink").
+  - The [Tomancak](https://www.mpi-cbg.de/research-groups/current-groups/pavel-tomancak/research-focus/) and [Jug](https://www.mpi-cbg.de/jug) labs at [MPI-CBG](MPI-CBG "wikilink") and the [CSBD](CSBD "wikilink").
+  - The [Saalfeld Lab](https://www.janelia.org/lab/saalfeld-lab) at [Janelia Research Campus](https://www.janelia.org/).
+  - Individuals at [many other institutions worldwide](Contributors "wikilink").
 
-Fiji is an [open source](open_source "wikilink") project, so everybody
-is welcome to contribute with plugins, patches, bug reports, tutorials,
-documentation, and artwork.
+Fiji is an [open source](open_source "wikilink") project, so everybody is welcome to contribute with plugins, patches, bug reports, tutorials, documentation, and artwork.
 
-If you'd like to share an idea or project, please [share them with the
-community](Contact "wikilink").
+If you'd like to share an idea or project, please [share them with the community](Contact "wikilink").
 
 ## Publication
 
   - {% include publication content='Fiji' %}
 
-[Category:Fiji](Category:Fiji "wikilink") [Category:Related
-Software](Category:Related_Software "wikilink")
-[Category:Citable](Category:Citable "wikilink")
+[Category:Fiji](Category:Fiji "wikilink") [Category:Related Software](Category:Related_Software "wikilink") [Category:Citable](Category:Citable "wikilink")

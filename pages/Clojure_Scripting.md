@@ -8,42 +8,25 @@ categories: Scripting
 description: test description
 ---
 
-{% include learn content='languages'
-%}[Clojure](wikipedia:Clojure "wikilink") is a dialect of the [Lisp
-programming
-language](wikipedia:Lisp_\(programming_language\) "wikilink"). Clojure
-is a general-purpose programming language with an emphasis on functional
-programming.
+{% include learn content='languages' %}[Clojure](wikipedia:Clojure "wikilink") is a dialect of the [Lisp programming language](wikipedia:Lisp_\(programming_language\) "wikilink"). Clojure is a general-purpose programming language with an emphasis on functional programming.
 
 # Clojure tutorial for ImageJ
 
-Check out [clojure web site](http://clojure.org) and particularly the
-chapter on [Java interoperability](http://clojure.org/java_interop).
+Check out [clojure web site](http://clojure.org) and particularly the chapter on [Java interoperability](http://clojure.org/java_interop).
 
-Clojure is <b>not</b> a scripting language: Clojure compiles directly to
-JVM bytecode, and thus runs at native speed. Thus one must think of
-Clojure as a true alternative to Java the language, but much more
-expressive, flexible and powerful.
+Clojure is <b>not</b> a scripting language: Clojure compiles directly to JVM bytecode, and thus runs at native speed. Thus one must think of Clojure as a true alternative to Java the language, but much more expressive, flexible and powerful.
 
 See also:
 
-  - [Clojure
-    Cookbook](http://en.wikibooks.org/wiki/Clojure_Programming/Examples/Cookbook).
-  - [The Clojure API](http://clojure.org/api) (listing of all available
-    functions, with explanations).
-  - [Clojure cheat sheet](http://clojure.org/cheatsheet): a summary of
-    all the essentials.
+  - [Clojure Cookbook](http://en.wikibooks.org/wiki/Clojure_Programming/Examples/Cookbook).
+  - [The Clojure API](http://clojure.org/api) (listing of all available functions, with explanations).
+  - [Clojure cheat sheet](http://clojure.org/cheatsheet): a summary of all the essentials.
 
 ## Using Clojure inside Fiji
 
-Go to {% include bc content='Plugins|Scripting|Clojure Interpreter'%}.
-The prompt accepts any clojure code. See also Fiji's [Script
-Editor](Script_Editor "wikilink").
+Go to {% include bc content='Plugins|Scripting|Clojure Interpreter'%}. The prompt accepts any clojure code. See also Fiji's [Script Editor](Script_Editor "wikilink").
 
-See [Scripting Help](Scripting_Help "wikilink") for details on
-keybindings and how to use the interpreter. {% include key
-content='Ctrl' %}+{% include key content=')' %} will add all necessary
-ending parenthesis.
+See [Scripting Help](Scripting_Help "wikilink") for details on keybindings and how to use the interpreter. {% include key content='Ctrl' %}+{% include key content=')' %} will add all necessary ending parenthesis.
 
 A minimal, complete clojure example:
 
@@ -53,34 +36,23 @@ A minimal, complete clojure example:
 (.show gold)
 ```
 
-To create scripts, just save them as .clj text files (with an underscore
-in the name) in any folder or subfolder of Fiji's plugins folder, and
-run {% include bc content='Plugins|Scripting|Refresh Clojure Scripts'%}
-to update the menus (it's done automatically at start up as well).
+To create scripts, just save them as .clj text files (with an underscore in the name) in any folder or subfolder of Fiji's plugins folder, and run {% include bc content='Plugins|Scripting|Refresh Clojure Scripts'%} to update the menus (it's done automatically at start up as well).
 
 To edit a script, just edit and save it with your favorite text editor.
 
 To execute a script, do any of:
 
   - Select it from the plugins menus.
-  - Type 'l' (L), start typing its name, push the down arrow and then
-    return to execute it.
-  - If it was the last executed command, just type {% include key
-    content='Shift' %}+{% include key content='R' %} (shortcut to
-    "Process - Repeat Command").
+  - Type 'l' (L), start typing its name, push the down arrow and then return to execute it.
+  - If it was the last executed command, just type {% include key content='Shift' %}+{% include key content='R' %} (shortcut to "Process - Repeat Command").
 
-The script is <b>always</b> read directly from the source file, so no
-updating of menus is needed (unless its file name changes).
+The script is <b>always</b> read directly from the source file, so no updating of menus is needed (unless its file name changes).
 
 ### Convenient Clojure in Fiji with Funimage
 
-  - [Funimage](https://github.com/funimage/funimage/) provides a library
-    for convenient Clojure coding within Fiji. Alleviating much of the
-    need for type-hinting, and some of the burdens involved in handling
-    more complicated data structures, such as those from ImgLib2.
+  - [Funimage](https://github.com/funimage/funimage/) provides a library for convenient Clojure coding within Fiji. Alleviating much of the need for type-hinting, and some of the burdens involved in handling more complicated data structures, such as those from ImgLib2.
 
-See the {% include list-of-update-sites %} for information on setting up
-the Funimage update site.
+See the {% include list-of-update-sites%} for information on setting up the Funimage update site.
 
 ### Running Clojure files from the command line
 
@@ -90,8 +62,7 @@ Fiji can execute any clojure file directly:
 ./fiji plugins/Examples/blend_two_images.clj
 ```
 
-The file will run with the full classpath as set by fiji, which includes
-all jars in fiji/jars and fiji/plugins/ folders, among others.
+The file will run with the full classpath as set by fiji, which includes all jars in fiji/jars and fiji/plugins/ folders, among others.
 
 ### Getting a REPL without the usual ImageJ GUI
 
@@ -101,27 +72,22 @@ The simplest is:
 ./fiji --clojure
 ```
 
-... which you may enrich with memory settings, incremental garbage
-collection (works great for multicore CPUs), the enhanced JIT (server
-flag), and a debugger agent (and any other JVM flag):
+... which you may enrich with memory settings, incremental garbage collection (works great for multicore CPUs), the enhanced JIT (server flag), and a debugger agent (and any other JVM flag):
 
 ``` bash
 ./fiji -Xmx2000m -Xincgc -server -agentlib:jdwp=transport=dt_socket,address=8010,server=y,suspend=n --clojure --
 ```
 
-Above, <b>notice the ending double dash --</b> which separates Fiji/JVM
-options from ImageJ options (in this case, none).
+Above, <b>notice the ending double dash --</b> which separates Fiji/JVM options from ImageJ options (in this case, none).
 
-For a nicer Repl, you may want to run the clojure.lang.Repl via the
-jline.ConsoleRunner, which gives you up and down arrow navigation, etc:
+For a nicer Repl, you may want to run the clojure.lang.Repl via the jline.ConsoleRunner, which gives you up and down arrow navigation, etc:
 
 ``` bash
 ./fiji -Xmx2000m -Xincgc -server -agentlib:jdwp=transport=dt_socket,address=8010,server=y,suspend=n \
          --main-class jline.ConsoleRunner -- clojure.lang.Repl
 ```
 
-Note that we put the double-dash between <i>jline.ConsoleRunner</i> (the
-main class to launch) and <i>clojure.lang.Repl</i> (its arguments).
+Note that we put the double-dash between <i>jline.ConsoleRunner</i> (the main class to launch) and <i>clojure.lang.Repl</i> (its arguments).
 
 If no JVM arguments were specified, there's no need for the double dash:
 
@@ -129,13 +95,11 @@ If no JVM arguments were specified, there's no need for the double dash:
 ./fiji --main-class jline.ConsoleRunner clojure.lang.Repl
 ```
 
-Just make sure to have the jline.jar in your classpath (or drop it into
-fiji/jars folder).
+Just make sure to have the jline.jar in your classpath (or drop it into fiji/jars folder).
 
 ### Debugging with the Java Debugger
 
-If you have launched fiji with an agentlib, you may then connect to it
-via the <i>jdb</i>:
+If you have launched fiji with an agentlib, you may then connect to it via the <i>jdb</i>:
 
 First launch fiji with the agentlib:
 
@@ -180,9 +144,7 @@ And suspend all to see the stack trace of each thread:
 ` [9] jline.ConsoleReaderInputStream$ConsoleLineInputStream.read (ConsoleReaderInputStream.java:92)`  
 ` ...`
 
-There are perhaps more convenient setups built into Eclipse, IntelliJ,
-NetBeans and other IDEs that support Clojure via plugins, but the jdb
-gives you what you want very quickly.
+There are perhaps more convenient setups built into Eclipse, IntelliJ, NetBeans and other IDEs that support Clojure via plugins, but the jdb gives you what you want very quickly.
 
 Within the jdb prompt, type "help".
 
@@ -190,16 +152,12 @@ Within the jdb prompt, type "help".
 
   - A ';' defines the start of a comment, just like '//' does in Java.
   - A function definition declares parameters within \[\].
-  - Local variables are declared with <i>let</i>, and global variables
-    with <i>def</i>.
-  - Functions are defined with <i>defn</i>, and are visible globally.
-    Hence a function declared within a <i>let</i> statement has access
-    to variables declared in it. This method enables closures.
+  - Local variables are declared with <i>let</i>, and global variables with <i>def</i>.
+  - Functions are defined with <i>defn</i>, and are visible globally. Hence a function declared within a <i>let</i> statement has access to variables declared in it. This method enables closures.
 
 ### Importing classes
 
-{% include importing-classes lang='Clojure' %} You can specify imports
-in Clojure in a few ways:
+{% include importing-classes lang='Clojure' %} You can specify imports in Clojure in a few ways:
 
 ``` clojure
 ; A single import.
@@ -224,8 +182,7 @@ in Clojure in a few ways:
 
 ## Calling methods and variables on a java object
 
-There are two ways, the second syntactic sugar of the first. Below,
-<b>imp</b> is a pointer to an ImagePlus:
+There are two ways, the second syntactic sugar of the first. Below, <b>imp</b> is a pointer to an ImagePlus:
 
 ``` clojure
 ; java-ish way:
@@ -238,8 +195,7 @@ There are two ways, the second syntactic sugar of the first. Below,
 (.getProcessor imp)
 ```
 
-To call a method on an object returned by a method call, there is a
-simplified way:
+To call a method on an object returned by a method call, there is a simplified way:
 
 ``` clojure
 ; double way:
@@ -255,16 +211,14 @@ simplified way:
 (.getPixels (.getProcessor imp))
 ```
 
-Any number of concatenated method calls, both for static methods or for
-instances:
+Any number of concatenated method calls, both for static methods or for instances:
 
 ``` clojure
 ; Concatenated call to static and instance methods
 (.. WindowManager getCurrentImage getProcessor getPixels)
 ```
 
-To call a variable or 'field', just do it like a method call but without
-the parentheses:
+To call a variable or 'field', just do it like a method call but without the parentheses:
 
 ``` clojure
 (. imp changes)
@@ -276,8 +230,7 @@ or more lisp-ish:
 (.changes imp)
 ```
 
-To enhance readability, use <i>import</i> when appropriate. Imports
-remain visible throughout the current namespace:
+To enhance readability, use <i>import</i> when appropriate. Imports remain visible throughout the current namespace:
 
 ``` clojure
 (import '(java.awt Color Rectangle)
@@ -303,14 +256,7 @@ To call a <b>static</b> field or method, use namespace syntax:
 (ij.IJ/log "Some logged text")
 ```
 
-Above, notice how a class name is used instead of a pointer to call
-static fields and methods. Static fields and methods are just variables
-and functions that exist within the namespace of the class in which they
-are declared. Hence Clojure's namespace syntax makes way more sense than
-java code, that doesn't do such distinction and allows for loads of
-confusion (java allows invoking static methods and fields using a
-pointer to an instance of the class in which such static methods and
-fields are declared).
+Above, notice how a class name is used instead of a pointer to call static fields and methods. Static fields and methods are just variables and functions that exist within the namespace of the class in which they are declared. Hence Clojure's namespace syntax makes way more sense than java code, that doesn't do such distinction and allows for loads of confusion (java allows invoking static methods and fields using a pointer to an instance of the class in which such static methods and fields are declared).
 
 ## Defining variables: obtaining the current image
 
@@ -334,13 +280,11 @@ As a general variable visible from the entire namespace:
 (println (.getTitle *imp*))
 ```
 
-By convention, in lisp global variables are written with asterisks in
-the name.
+By convention, in lisp global variables are written with asterisks in the name.
 
   
 
-A <i>let</i> statement lets you declare any number of paired variable
-name / values, even referring to each other in sequence:
+A <i>let</i> statement lets you declare any number of paired variable name / values, even referring to each other in sequence:
 
 ``` clojure
 (let [imp (ij.WindowManager/getCurrentImage)
@@ -363,10 +307,7 @@ Any number of <i>let</i> statements may be nested together:
 
 ## Creating objects: invoking constructors
 
-A constructor is invoked by adding a dot '.' to the name of a class,
-followed by the arguments. Below, we create an ImageProcessor and then
-an ImagePlus with it, and finally we print the ImagePlus, which invokes
-toString() on it (like in java):
+A constructor is invoked by adding a dot '.' to the name of a class, followed by the arguments. Below, we create an ImageProcessor and then an ImagePlus with it, and finally we print the ImagePlus, which invokes toString() on it (like in java):
 
 ``` clojure
 (let [ip (ij.process.ByteProcessor. 400 400)
@@ -374,8 +315,7 @@ toString() on it (like in java):
   (println imp))
 ```
 
-An alternative syntax is to use the java-like <i>new</i> keyword, but
-it's unnecessarily verbose:
+An alternative syntax is to use the java-like <i>new</i> keyword, but it's unnecessarily verbose:
 
 ``` clojure
 (let [ip (new ij.process.ByteProcessor 400 400)
@@ -385,20 +325,11 @@ it's unnecessarily verbose:
 
 ## Defining a closure
 
-In the following a function is declared within the scope of the local
-variable <b>rand</b>, which contains an instance of java.util.Random.
-All calls to the function <i>rand-double</i> will use the same random
-number generator instance with seed 69997.
+In the following a function is declared within the scope of the local variable <b>rand</b>, which contains an instance of java.util.Random. All calls to the function <i>rand-double</i> will use the same random number generator instance with seed 69997.
 
-The <i>dotimes</i> loop will then print 10 different pseudo-random
-numbers. If the <b>rand</b> was a new Random with seed 69997 every time,
-all 10 numbers would be exactly the same.
+The <i>dotimes</i> loop will then print 10 different pseudo-random numbers. If the <b>rand</b> was a new Random with seed 69997 every time, all 10 numbers would be exactly the same.
 
-You can think of a function inside a closure as a static function using
-a static variable (in Java), but it's more than that, since the function
-will be able to access parameters on the global namespace and also in
-any other local namespace in which the <i>let</i> is declared. For
-example, another <i>let</i>, or even another <i>defn</i>\!
+You can think of a function inside a closure as a static function using a static variable (in Java), but it's more than that, since the function will be able to access parameters on the global namespace and also in any other local namespace in which the <i>let</i> is declared. For example, another <i>let</i>, or even another <i>defn</i>\!
 
 ``` clojure
 (let [rand (java.util.Random. 69997)]
@@ -409,10 +340,7 @@ example, another <i>let</i>, or even another <i>defn</i>\!
     (println (rand-double)))
 ```
 
-Above, note the dot '.' after Random, which indicates we are calling the
-constructor (with a single parameter 69997, the pseudorandom generator
-seed to be used). Alternatively, one may use the java-like syntax: (new
-java.util.Random 69997) -- note the absence of a dot now.
+Above, note the dot '.' after Random, which indicates we are calling the constructor (with a single parameter 69997, the pseudorandom generator seed to be used). Alternatively, one may use the java-like syntax: (new java.util.Random 69997) -- note the absence of a dot now.
 
 ## Manipulating images
 
@@ -420,30 +348,15 @@ java.util.Random 69997) -- note the absence of a dot now.
 
 ImageJ has three basic objects:
 
-  - The
-    <b>[ImagePlus](https://imagej.net/developer/api/ij/ImagePlus.html)</b>,
-    which wraps the ImageProcessor and contains properties and pointers
-    to the ROI (region of interest) and the ImageWindow that may be
-    displaying the image.
-  - The
-    <b>[ImageProcessor](https://imagej.net/developer/api/ij/process/ImageProcessor.html)</b>,
-    which is an abstract class enabling the high-level manipulation of
-    and access to pixels. Its subclasses each wraps a different kind of
-    data type:
+  - The <b>[ImagePlus](https://imagej.net/developer/api/ij/ImagePlus.html)</b>, which wraps the ImageProcessor and contains properties and pointers to the ROI (region of interest) and the ImageWindow that may be displaying the image.
+  - The <b>[ImageProcessor](https://imagej.net/developer/api/ij/process/ImageProcessor.html)</b>, which is an abstract class enabling the high-level manipulation of and access to pixels. Its subclasses each wraps a different kind of data type:
       - ByteProcessor - byte\[\]
       - ShortProcessor - short\[\]
       - FloatProcessor - float\[\]
-      - ColorProcessor - int\[\] (byte-packed ARGB, but Alpha channel is
-        ignored)
-  - The
-    <b>[ImageStack](https://imagej.net/developer/api/ij/ImageStack.html)</b>
-    which contains unfortunately not an array of ImageProcessor, but an
-    Object\[\] containing an homogeneous list of equal length byte\[\],
-    or float\[\], etc.
+      - ColorProcessor - int\[\] (byte-packed ARGB, but Alpha channel is ignored)
+  - The <b>[ImageStack](https://imagej.net/developer/api/ij/ImageStack.html)</b> which contains unfortunately not an array of ImageProcessor, but an Object\[\] containing an homogeneous list of equal length byte\[\], or float\[\], etc.
 
-For extensive documentation, see the [Anatomy of an ImageJ
-image](http://albert.rierol.net/imagej_programming_tutorials.html#ImageJ%20programming%20basics)
-ImageJ programming basics tutorial.
+For extensive documentation, see the [Anatomy of an ImageJ image](http://albert.rierol.net/imagej_programming_tutorials.html#ImageJ%20programming%20basics) ImageJ programming basics tutorial.
 
 ### Conventions in naming image variables
 
@@ -483,13 +396,11 @@ From a file:
                        (.. imp-1 getProcessor (createProcessor 768 768))))
 ```
 
-Above, notice the parenthesis (createProcessor 768 768), which specify
-for which method those numbers are arguments for.
+Above, notice the parenthesis (createProcessor 768 768), which specify for which method those numbers are arguments for.
 
 ### Resizing an image
 
-The idea is to grab the ImageProcessor, duplicate it and resize it. The
-resizing returns a new ImageProcessor of the same type:
+The idea is to grab the ImageProcessor, duplicate it and resize it. The resizing returns a new ImageProcessor of the same type:
 
 ``` clojure
 (def imp-1 (IJ/openImage "/path/to/image1.tif"))
@@ -501,8 +412,7 @@ resizing returns a new ImageProcessor of the same type:
   (.insert (.getProcessor imp-1) 0 0))
 ```
 
-An alternative way would be to simply duplicate the processor of imp-1,
-and then enlarge it:
+An alternative way would be to simply duplicate the processor of imp-1, and then enlarge it:
 
 ``` clojure
 (def imp-3 (ImagePlus. "A copy with extra empty space"
@@ -511,11 +421,7 @@ and then enlarge it:
 
 ### Resizing an ImageStack
 
-This one is harder, because an ImageStack is just a wrapper for
-Object\[\] list of pixel arrays. ImageJ though provides a mid-level
-resizing method, via the
-[CanvasResizer](https://imagej.net/developer/api/ij/plugin/CanvasResizer.html)
-class:
+This one is harder, because an ImageStack is just a wrapper for Object\[\] list of pixel arrays. ImageJ though provides a mid-level resizing method, via the [CanvasResizer](https://imagej.net/developer/api/ij/plugin/CanvasResizer.html) class:
 
 ``` clojure
 (import '(ij.plugin CanvasResizer)
@@ -543,12 +449,9 @@ class:
 (.show imp-2)
 ```
 
-Note that the above function <i>resize-image</i> will work for both
-stacks and non-stack images.
+Note that the above function <i>resize-image</i> will work for both stacks and non-stack images.
 
-Of course nothing stops you from looping through the stack length,
-calling a new ImageProcessor for each slice, resizing it, composing a
-new ImageStack and with it a new ImagePlus.
+Of course nothing stops you from looping through the stack length, calling a new ImageProcessor for each slice, resizing it, composing a new ImageStack and with it a new ImagePlus.
 
 ``` clojure
 ; Grab the image in the currently active ImageWindow:
@@ -569,23 +472,15 @@ new ImageStack and with it a new ImagePlus.
 
 Above, note that <b>stacks are 1-based,not 0-based\!</b>
 
-Also, we must declare the type of the <i>ip2</i> because clojure cannot
-decide between the ImageProcessor.addSlice(String,ImageProcessor) and
-ImageProcessor.addSlice(String,Object). You must make that choice for
-clojure.
+Also, we must declare the type of the <i>ip2</i> because clojure cannot decide between the ImageProcessor.addSlice(String,ImageProcessor) and ImageProcessor.addSlice(String,Object). You must make that choice for clojure.
 
-Notice that each time you call getProcessor on an ImageStack, it returns
-a new ImageProcessor instance in a very costly way, by calling a series
-of <i>instanceof</i> on the pixels arrays to figure out which kind of
-ImageProcessor subclass it should create.
+Notice that each time you call getProcessor on an ImageStack, it returns a new ImageProcessor instance in a very costly way, by calling a series of <i>instanceof</i> on the pixels arrays to figure out which kind of ImageProcessor subclass it should create.
 
 ### Resizing an image or ImageStack using ROIs
 
-ROIs (aka Region of Interest or selection) have bounds, defined by the
-minimal enclosing rectangle.
+ROIs (aka Region of Interest or selection) have bounds, defined by the minimal enclosing rectangle.
 
-The core idea is to set a ROI to an ImageProcessor and call <i>crop</i>
-to obtain a new, subcopy of it.
+The core idea is to set a ROI to an ImageProcessor and call <i>crop</i> to obtain a new, subcopy of it.
 
 ``` clojure
 (def imp (IJ/getImage))
@@ -598,12 +493,9 @@ to obtain a new, subcopy of it.
 (.show imp-cropped)
 ```
 
-To handle any ImagePlus (with single slice or containing an ImageStack,
-i.e. many slices), see this function:
+To handle any ImagePlus (with single slice or containing an ImageStack, i.e. many slices), see this function:
 
-(which assumes the ROI is contained fully within the image; otherwise
-for stacks it will throw an Exception stating that, rightly, dimensions
-do not match.)
+(which assumes the ROI is contained fully within the image; otherwise for stacks it will throw an Exception stating that, rightly, dimensions do not match.)
 
 ``` clojure
 (import '(ij.gui Roi)
@@ -644,22 +536,13 @@ The above works with both single images and stacks.
 
 ## Manipulate images using ImgLib
 
-With [Imglib](Imglib "wikilink"), pixels are stored in native arrays of
-primitives such as int, float, double, etc. (or other more interesting
-forms, such as
-[Shape](http://download.oracle.com/javase/1.5.0/docs/api/java/awt/Shape.html).
-Such pixels are accessed with intermediate proxy objects that the JIT is
-able to completely remove out of the way.
+With [Imglib](Imglib "wikilink"), pixels are stored in native arrays of primitives such as int, float, double, etc. (or other more interesting forms, such as [Shape](http://download.oracle.com/javase/1.5.0/docs/api/java/awt/Shape.html). Such pixels are accessed with intermediate proxy objects that the JIT is able to completely remove out of the way.
 
-From Clojure, there are many ways in which to access the pixels. Here we
-list some examples of the pixels accessed as a Collection of accessor
-[Type](https://fiji.sc/javadoc/mpicbg/imglib/type/Type.html) objects.
+From Clojure, there are many ways in which to access the pixels. Here we list some examples of the pixels accessed as a Collection of accessor [Type](https://fiji.sc/javadoc/mpicbg/imglib/type/Type.html) objects.
 
 ### Multiply each pixel by 0.5
 
-Multiply in place each value by 0.5. The ImgLib/wrap is a thin wrapper
-that accesses directly the pixel array. Hence the original image will be
-changed.
+Multiply in place each value by 0.5. The ImgLib/wrap is a thin wrapper that accesses directly the pixel array. Hence the original image will be changed.
 
 ``` clojure
 ; ASSUMES the current image is 32-bit
@@ -677,9 +560,7 @@ changed.
    (.mul t a)))
 ```
 
-In a more functional style, below we create an image with the same
-dimensions as the wrapped image, and set its pixel values to those of
-the original image times 0.5:
+In a more functional style, below we create an image with the same dimensions as the wrapped image, and set its pixel values to those of the original image times 0.5:
 
 ``` clojure
 (ns test.imglib
@@ -710,9 +591,7 @@ the original image times 0.5:
   (.show (ImgLib/wrap copy)))
 ```
 
-The above, though, is unbearably verbose. A high-level access to the
-images enables mathematical operations without trading off any
-performance:
+The above, though, is unbearably verbose. A high-level access to the images enables mathematical operations without trading off any performance:
 
 ``` clojure
 (ns test.imglib
@@ -730,28 +609,15 @@ performance:
     (.show (ImgLib/wrap copy)))
 ```
 
-What's more, the
-[Compute](https://fiji.sc/javadoc/script/imglib/math/Compute.html)/inFloats
-method runs in parallel, with as many processors as your machine has
-cores. If you'd rather not execute the operation in parallel, add the
-desired number of threads as an argument to <i>inFloats</i>.
+What's more, the [Compute](https://fiji.sc/javadoc/script/imglib/math/Compute.html)/inFloats method runs in parallel, with as many processors as your machine has cores. If you'd rather not execute the operation in parallel, add the desired number of threads as an argument to <i>inFloats</i>.
 
-All mathematical operations listed in java.lang.Math have a
-corresponding constructor for execution in Compute/inFloats. See the
-documentation for the [script.imglib.math
-package](https://fiji.sc/javadoc/script/imglib/math/package-frame.html).
+All mathematical operations listed in java.lang.Math have a corresponding constructor for execution in Compute/inFloats. See the documentation for the [script.imglib.math package](https://fiji.sc/javadoc/script/imglib/math/package-frame.html).
 
 ### Normalize an image
 
-Assumes that <i>(IJ/getImage)</i> returns a 32-bit, float image. If that
-is not the case, convert the image to a float image first.
+Assumes that <i>(IJ/getImage)</i> returns a 32-bit, float image. If that is not the case, convert the image to a float image first.
 
-The example below creates a new result image. The original image is
-untouched. This is accomplished with minimal friction but best
-performance (like hand-coded with cursors or better) by using the
-high-level scripting library of imglib, and the
-[Compute](https://fiji.sc/javadoc/script/imglib/math/Compute.html)/inFloats
-method.
+The example below creates a new result image. The original image is untouched. This is accomplished with minimal friction but best performance (like hand-coded with cursors or better) by using the high-level scripting library of imglib, and the [Compute](https://fiji.sc/javadoc/script/imglib/math/Compute.html)/inFloats method.
 
 ``` clojure
 (ns test.imglib
@@ -779,10 +645,7 @@ mean) std-dev))]
  (.show (ImgLib/wrap normalized)))
 ```
 
-There is a better way to compute the mean and variance of a collection
-of numbers, that involves traversing the collection only once. Clojure
-naturally helps with its very concise destructuring and its automatic
-promotion of numeric types to avoid overflow.
+There is a better way to compute the mean and variance of a collection of numbers, that involves traversing the collection only once. Clojure naturally helps with its very concise destructuring and its automatic promotion of numeric types to avoid overflow.
 
 ``` clojure
 (ns test.imglib
@@ -810,8 +673,7 @@ promotion of numeric types to avoid overflow.
   (.show (ImgLib/wrap normalized)))
 ```
 
-(Code adapted from a Common Lisp version by [Patrick
-Stein](http://nklein.com/2011/02/calculating-the-mean-and-variance-with-one-pass/).)
+(Code adapted from a Common Lisp version by [Patrick Stein](http://nklein.com/2011/02/calculating-the-mean-and-variance-with-one-pass/).)
 
 ## Looping an array of pixels
 
@@ -826,8 +688,7 @@ For example, to find the min and max values:
     (println (str "min: " min ", max: " max)))
 ```
 
-The above code does not explicitly loop the pixels: it simply applies a
-function to an array.
+The above code does not explicitly loop the pixels: it simply applies a function to an array.
 
 To loop pixels one by one, use any of the following:
 
@@ -849,17 +710,9 @@ To loop pixels one by one, use any of the following:
                       len)))))
 ```
 
-Above, notice that the <i>loop -- recur</i> construct is essentially a
-<i>let</i> declaration, with a second call (<i>recur</i>) to reset the
-variables to something else. In this case, the next index in the array.
-Note how the len is simply given the same value over and over, just to
-avoid calling <i>(count pixels)</i> at each iteration.
+Above, notice that the <i>loop -- recur</i> construct is essentially a <i>let</i> declaration, with a second call (<i>recur</i>) to reset the variables to something else. In this case, the next index in the array. Note how the len is simply given the same value over and over, just to avoid calling <i>(count pixels)</i> at each iteration.
 
-Of course, there are lispier ways to loop an array of pixels. For
-example, to obtain the average of all pixels, we can use function
-<i>reduce</i>, which takes the first two elements of a list, applies a
-function to them, and then applies the function to the result and the
-next element, etc:
+Of course, there are lispier ways to loop an array of pixels. For example, to obtain the average of all pixels, we can use function <i>reduce</i>, which takes the first two elements of a list, applies a function to them, and then applies the function to the result and the next element, etc:
 
 ``` clojure
 (let [fp (.getProcessor (ij.IJ/getImage))
@@ -869,17 +722,13 @@ next element, etc:
       (println "Not a 32-bit image")))
 ```
 
-Above, notice that one could have used also <i>apply</i> to apply
-<i>+</i> to all element of an array, with the same result:
+Above, notice that one could have used also <i>apply</i> to apply <i>+</i> to all element of an array, with the same result:
 
 ``` clojure
       (println "Average pixel intensity" (/ (apply + pix) (count pix)))
 ```
 
-To sum all pixels in an 8-bit image, one needs first to bit-and all
-bytes to 255, so they become integers and can be summed. But of course
-we should not <i>bit-and</i> the sum\! To solve this, <i>reduce</i>
-accepts a first value (in this case, zero):
+To sum all pixels in an 8-bit image, one needs first to bit-and all bytes to 255, so they become integers and can be summed. But of course we should not <i>bit-and</i> the sum\! To solve this, <i>reduce</i> accepts a first value (in this case, zero):
 
 ``` clojure
 (let [bp (.getProcessor (ij.IJ/getImage))
@@ -889,10 +738,7 @@ accepts a first value (in this case, zero):
     (println "Not an 8-bit image")))
 ```
 
-It could even be done using a local variable, but it's ugly and
-undesirable (why create it when it's not really needed)? Notice we need
-to create the local variable "sum" because variables declared by
-<i>let</i> are immutable.
+It could even be done using a local variable, but it's ugly and undesirable (why create it when it's not really needed)? Notice we need to create the local variable "sum" because variables declared by <i>let</i> are immutable.
 
 ``` clojure
 (let [bp (.getProcessor (ij.IJ/getImage))
@@ -913,47 +759,34 @@ Any ImageJ menu command may be run on the active image:
 (ij.IJ/doCommand "Add Noise")
 ```
 
-Be aware that the above starts a new Thread and forks. For reliable
-control, try the run method, which will wait until the plugin finishes
-execution.
+Be aware that the above starts a new Thread and forks. For reliable control, try the run method, which will wait until the plugin finishes execution.
 
 ``` clojure
 (ij.IJ/run "Add Noise")
 ```
 
-For even more reliable control, run the command directly on a specified
-image, instead of a possibly changing current image:
+For even more reliable control, run the command directly on a specified image, instead of a possibly changing current image:
 
 ``` clojure
 (let [imp (ij.IJ/getImage)]
   (ij.IJ/run imp "Subtract..." "value=25"))
 ```
 
-To find out which arguments can any command accept, open the Plugins -
-Macros - Macro Recorder and run the command manually.
+To find out which arguments can any command accept, open the Plugins - Macros - Macro Recorder and run the command manually.
 
 ## Creating and using Clojure scripts as ImageJ plugins
 
-Simply create a text file with the script inside, and place it in the
-plugins menu or any subfolder. Then call Plugins - Scripting - Refresh
-Clojure Scripts to make it appear on the menus.
+Simply create a text file with the script inside, and place it in the plugins menu or any subfolder. Then call Plugins - Scripting - Refresh Clojure Scripts to make it appear on the menus.
 
-If the macros/StartupMacros.txt includes a call to the Refresh Clojure
-Scripts inside the AutoRun macro, then all your Clojure scripts will
-appear automatically on startup.
+If the macros/StartupMacros.txt includes a call to the Refresh Clojure Scripts inside the AutoRun macro, then all your Clojure scripts will appear automatically on startup.
 
-To modify an script which exists already as a menu item, simply edit its
-file and run it by selecting it from the menus. No compiling necessary,
-and no need to call Refresh Clojure Scripts either (ther latter only for
-new scripts or at start up.)
+To modify an script which exists already as a menu item, simply edit its file and run it by selecting it from the menus. No compiling necessary, and no need to call Refresh Clojure Scripts either (ther latter only for new scripts or at start up.)
 
-<b>Very important:</b> all scripts and commands from the interpreter
-will run within the same thread, and within the same clojure context.
+<b>Very important:</b> all scripts and commands from the interpreter will run within the same thread, and within the same clojure context.
 
 ## Using java beans for quick and convenient access to an object's fields
 
-Essentially it's all about using <i>get</i> methods in a trivial way.
-For example:
+Essentially it's all about using <i>get</i> methods in a trivial way. For example:
 
 ``` clojure
 (let [imp (ij.WindowManager/getCurrentImage)
@@ -973,18 +806,11 @@ Examples
 
 ## Fixing overexposed images: setting a pixel value to a desirable one for all overexposed pixels
 
-The problem: [Leginon](http://ami.scripps.edu/software/leginon/) or the
-Gatan TEM camera acquired an overexposed image, and set all pixels
-beyond range to zero.
+The problem: [Leginon](http://ami.scripps.edu/software/leginon/) or the Gatan TEM camera acquired an overexposed image, and set all pixels beyond range to zero.
 
-The solution: iterate all pixels; if the pixel is zero then set it to a
-desirable value, such as the maximum value of the main curve in the
-histogram (push 'auto' on the Brightness and Contrast dialog to see it.)
+The solution: iterate all pixels; if the pixel is zero then set it to a desirable value, such as the maximum value of the main curve in the histogram (push 'auto' on the Brightness and Contrast dialog to see it.)
 
-In the example below, the <i>fix</i> function is called with the current
-image and the value 32500 as a floating point number. Notice also the
-type definition (which is optional) of the float pixel array, to enhance
-execution speed:
+In the example below, the <i>fix</i> function is called with the current image and the value 32500 as a floating point number. Notice also the type definition (which is optional) of the float pixel array, to enhance execution speed:
 
 ``` clojure
 
@@ -1004,70 +830,27 @@ execution speed:
 
 ## Creating a script for ImageJ
 
-Simply write the clojure script in a text file, and follow these
-conventions:
+Simply write the clojure script in a text file, and follow these conventions:
 
 `1. Add an underscore "_" to its file name, and the extension ".clj": fix_leginon_images.clj`  
 `2. Save it under fiji/plugins/ folder, or a subfolder.`
 
-When done, just run the {% include bc content='PlugIns|Scripting|Refresh
-Clojure Scripts'%} plugin.
+When done, just run the {% include bc content='PlugIns|Scripting|Refresh Clojure Scripts'%} plugin.
 
-Once saved and in the menus, you need <b>not</b> call refresh scripts
-ever again for that script. Just edit and save it's text file, and run
-it again from the menus. Next time Fiji opens, the script will
-automatically appear in the menus.
+Once saved and in the menus, you need <b>not</b> call refresh scripts ever again for that script. Just edit and save it's text file, and run it again from the menus. Next time Fiji opens, the script will automatically appear in the menus.
 
-See [Scripting Help](Scripting_Help "wikilink") for more details,
-including how to use the built-in dynamic interpreter.
+See [Scripting Help](Scripting_Help "wikilink") for more details, including how to use the built-in dynamic interpreter.
 
 ## Example Clojure plugins included in Fiji
 
-Open the plugins/Examples/ folder in Fiji installation directory. You'll
-find three Clojure examples:
+Open the plugins/Examples/ folder in Fiji installation directory. You'll find three Clojure examples:
 
-  - {% include github repo='fiji'
-    path='plugins/Examples/Multithreaded\_Image\_Processing.clj'
-    label='Multithreaded\_Image\_Processing.clj' %}: illustrate, with
-    macros (via [defmacro](http://clojure.org/macros#toc9)), how to
-    automatically multithread the processing of an image using arbitrary
-    subdivision of the image, such as one line per thread, for as many
-    threads as cores the CPU has.
-  - {% include github repo='fiji'
-    path='plugins/Examples/blend\_two\_images.clj'
-    label='blend\_two\_images.clj' %}: illustrates how to open two
-    images from an URL, and blend the gray image into each channel of
-    the color image.
-  - {% include github repo='fiji'
-    path='plugins/Examples/celsius\_to\_fahrenheit.clj'
-    label='celsius\_to\_fahrenheit.clj' %}: illustrates the usage of a
-    Swing GUI, and how to instantiate anonymous classes from an
-    interface (via [proxy](http://clojure.org/java_interop#toc20)
-    Clojure function). This example is taken from the [Clojure
-    website](http://clojure.org/jvm_hosted).
-  - {% include github repo='fiji'
-    path='plugins/Examples/random\_noise\_example.clj'
-    label='random\_noise\_example.clj' %}: illustrates how to declare a
-    function inside a closure (for private access to, in this case, a
-    unique instance of a random number generator), and then fill all
-    pixels of a ByteProcessor image with a random byte value.
-  - {% include github repo='fiji'
-    path='plugins/Examples/Command\_Launchers/Command\_Launcher\_Clojure.clj'
-    label='Command\_Launcher\_Clojure.clj' %}: illustrates how to create
-    a GUI with a KeyListener, so that the typed text changes color from
-    red to black when it matches the name of an ImageJ command. This
-    example is also under the [Scripting
-    comparisons](Scripting_comparisons "wikilink"), along equivalent
-    versions written in Java, [Jython](Jython_Scripting "wikilink"),
-    [Javascript](Javascript_Scripting "wikilink") and
-    [JRuby](JRuby_Scripting "wikilink").
-  - {% include github repo='fiji'
-    path='plugins/Analyze/Dynamic\_ROI\_Profiler.clj' label='Dynamic ROI
-    Profiler' %}: illustrates how to add a MouseMotionListener and a
-    WindowListener to an ImageWindow of an open image. Reads out the ROI
-    (Region Of Interest), and if it's a line, polyline or rectangle,
-    plots the profile of pixel intensity along the line. As the mouse
-    moves or edits the ROI on the image, the profile is updated.
+  - {% include github repo='fiji' path='plugins/Examples/Multithreaded\_Image\_Processing.clj' label='Multithreaded\_Image\_Processing.clj' %}: illustrate, with macros (via [defmacro](http://clojure.org/macros#toc9)), how to automatically multithread the processing of an image using arbitrary subdivision of the image, such as one line per thread, for as many threads as cores the CPU has.
+  - {% include github repo='fiji' path='plugins/Examples/blend\_two\_images.clj' label='blend\_two\_images.clj' %}: illustrates how to open two images from an URL, and blend the gray image into each channel of the color image.
+  - {% include github repo='fiji' path='plugins/Examples/celsius\_to\_fahrenheit.clj' label='celsius\_to\_fahrenheit.clj' %}: illustrates the usage of a Swing GUI, and how to instantiate anonymous classes from an interface (via [proxy](http://clojure.org/java_interop#toc20) Clojure function). This example is taken from the [Clojure website](http://clojure.org/jvm_hosted).
+  - {% include github repo='fiji' path='plugins/Examples/random\_noise\_example.clj' label='random\_noise\_example.clj' %}: illustrates how to declare a function inside a closure (for private access to, in this case, a unique instance of a random number generator), and then fill all pixels of a ByteProcessor image with a random byte value.
+  - {% include github repo='fiji' path='plugins/Examples/Command\_Launchers/Command\_Launcher\_Clojure.clj' label='Command\_Launcher\_Clojure.clj' %}: illustrates how to create a GUI with a KeyListener, so that the typed text changes color from red to black when it matches the name of an ImageJ command. This example is also under the [Scripting comparisons](Scripting_comparisons "wikilink"), along equivalent versions written in Java, [Jython](Jython_Scripting "wikilink"), [Javascript](Javascript_Scripting "wikilink") and [JRuby](JRuby_Scripting "wikilink").
+  - {% include github repo='fiji' path='plugins/Analyze/Dynamic\_ROI\_Profiler.clj' label='Dynamic ROI Profiler' %}: illustrates how to add a MouseMotionListener and a WindowListener to an ImageWindow of an open image. Reads out the ROI (Region Of Interest), and if it's a line, polyline or rectangle, plots the profile of pixel intensity along the line. As the mouse moves or edits the ROI on the image, the profile is updated.
 
 <h1>
 
@@ -1077,8 +860,7 @@ Appendix
 
 ## Defining the output stream
 
-The default output stream is at variable <i>\*out\*</i>, which you may
-redefine to any kind of PrintWriter:
+The default output stream is at variable <i>\*out\*</i>, which you may redefine to any kind of PrintWriter:
 
 ``` clojure
 (let [all-out (new java.io.StringWriter)]
@@ -1093,11 +875,9 @@ redefine to any kind of PrintWriter:
 
 ## Destructuring
 
-Destructuring is a shortcut to capture the contents of a variable into
-many variables.
+Destructuring is a shortcut to capture the contents of a variable into many variables.
 
-An example: when looping a map, we get the entry, not the key and value
-of each entry:
+An example: when looping a map, we get the entry, not the key and value of each entry:
 
 ``` clojure
 (doseq [e {:a 1 :b 2 :c 3}]
@@ -1113,9 +893,7 @@ Prints:
 
 Each "entry" is represented by a vector with two values.
 
-Now to loop more conveniently, we can assign the key and value to
-variables, by what is called destructuring (note the <i>\[k v\]</i>
-where the <i>e</i> was before)
+Now to loop more conveniently, we can assign the key and value to variables, by what is called destructuring (note the <i>\[k v\]</i> where the <i>e</i> was before)
 
 ``` clojure
 (doseq [[k v] {:a 1 :b 2 :c 3}]
@@ -1129,8 +907,7 @@ Prints:
 `:c 3`  
 `nil`
 
-Even better, we can preserve the whole entry as well, by using the
-keyword ":as":
+Even better, we can preserve the whole entry as well, by using the keyword ":as":
 
 ``` clojure
 (doseq [[k v :as e] {:a 1 :b 2 :c 3}]
@@ -1155,8 +932,7 @@ Prints:
 (#<Namespace: xml> #<Namespace: zip> #<Namespace: clojure> #<Namespace: set> #<Namespace: user>)
 ```
 
-  - To list all functions and variables of a specific namespace, first
-    get the namespace object by name:
+  - To list all functions and variables of a specific namespace, first get the namespace object by name:
 
 <!-- end list -->
 
@@ -1164,8 +940,7 @@ Prints:
 (ns-map (find-ns 'xml))
 ```
 
-Note above the quoted string "xml" to avoid evaluating it to a
-(non-existing) value.
+Note above the quoted string "xml" to avoid evaluating it to a (non-existing) value.
 
   - To list all functions and variables of all namespaces:
 
@@ -1175,8 +950,7 @@ Note above the quoted string "xml" to avoid evaluating it to a
 (map ns-map (all-ns))
 ```
 
-A nicer way to print all public functions and variables from all
-namespaces, sorted alphabetically:
+A nicer way to print all public functions and variables from all namespaces, sorted alphabetically:
 
 ``` clojure
 (doseq [name (all-ns)]
@@ -1184,11 +958,7 @@ namespaces, sorted alphabetically:
     (println k v)))
 ```
 
-Note above we use <i>destructuring</i>: the \[k v\] take the values of
-the key and the value of each entry in the ns-publics table. Actually,
-since we first sort the table, the k and v take the first and second
-values of each array pair in the sorted list of array pairs returned on
-applying <i>sort</i> to the <i>ns-publics</i>-generated table.
+Note above we use <i>destructuring</i>: the \[k v\] take the values of the key and the value of each entry in the ns-publics table. Actually, since we first sort the table, the k and v take the first and second values of each array pair in the sorted list of array pairs returned on applying <i>sort</i> to the <i>ns-publics</i>-generated table.
 
 ## Forget/Remove all variables from a namespace
 
@@ -1199,20 +969,13 @@ To forget all variables from the user namespace, do:
      (keys (ns-interns 'user)))
 ```
 
-The above maps the function <i>ns-unmap</i> to each variable name
-declared in the <i>user</i> namespace (using \# to create a [lambda
-function](Clojure_Scripting#Lambda_functions "wikilink")), which is the
-same as the prompt namespace. To get the names of the variables, we use
-<i>ns-interns</i> to retrieve the map of variable names versus the
-variable contents, and extract the keys from it into a list.
+The above maps the function <i>ns-unmap</i> to each variable name declared in the <i>user</i> namespace (using \# to create a [lambda function](Clojure_Scripting#Lambda_functions "wikilink")), which is the same as the prompt namespace. To get the names of the variables, we use <i>ns-interns</i> to retrieve the map of variable names versus the variable contents, and extract the keys from it into a list.
 
-<i>Thanks to AWizzArd from \#clojure at irc.freenode.net for the
-tip.</i>
+<i>Thanks to AWizzArd from \#clojure at irc.freenode.net for the tip.</i>
 
 ## JVM arguments
 
-  - To get the arguments passed to the JVM, see contents of variable
-    \*command-line-args\*
+  - To get the arguments passed to the JVM, see contents of variable \*command-line-args\*
 
 <!-- end list -->
 
@@ -1242,35 +1005,28 @@ tip.</i>
  ...
 ```
 
-  - To list constructors, just use <i>.getConstructors</i> instead of
-    <i>.getMethods</i>.
+  - To list constructors, just use <i>.getConstructors</i> instead of <i>.getMethods</i>.
 
-(Thanks to Craig McDaniel for posting the above function to Clojure's
-mailing list.)
+(Thanks to Craig McDaniel for posting the above function to Clojure's mailing list.)
 
 ## Lambda functions
 
 ### Declaration
 
-  - To declare functions on the fly, lambda style, with regex for
-    arguments:
+  - To declare functions on the fly, lambda style, with regex for arguments:
 
-For example, declare a function that takes 2 arguments, and returns the
-value of the first argument divided by 10, and multiplied by the second
-argument:
+For example, declare a function that takes 2 arguments, and returns the value of the first argument divided by 10, and multiplied by the second argument:
 
 ``` clojure
 (let [doer #(* (/ %1 10) %2)]
   (doer 3 2))
 ```
 
-Of course there's no need to name the function, the above is just for
-illustration.
+Of course there's no need to name the function, the above is just for illustration.
 
 ### Mapping a function to all elements in a list
 
-  - To declare a nameless function, and apply it to each element of a
-    list:
+  - To declare a nameless function, and apply it to each element of a list:
 
 In this case, increment by one each value of a list from 0 to 9:
 
@@ -1280,27 +1036,23 @@ In this case, increment by one each value of a list from 0 to 9:
   (map add-one numbers))
 ```
 
-There is no need to declare the names, the above is just for
-illustration. Above, we could have defined the function as \#(+ %1 1):
+There is no need to declare the names, the above is just for illustration. Above, we could have defined the function as \#(+ %1 1):
 
 ``` clojure
 (map #(+ %1 1) (range 10))
 ```
 
-... or of course use the internal function <i>inc</i> which does exactly
-that:
+... or of course use the internal function <i>inc</i> which does exactly that:
 
 ``` clojure
 (map inc (range 4))
 ```
 
-Beware that the <i>map</i> function above applies the given function to
-each element of a list, and returns a <b>new</b> list with the results.
+Beware that the <i>map</i> function above applies the given function to each element of a list, and returns a <b>new</b> list with the results.
 
 ## Built-in documentation
 
-Use the function <b><i>doc</i></b> to query any other function or
-variable. For example, the list generator function <i>range</i>:
+Use the function <b><i>doc</i></b> to query any other function or variable. For example, the list generator function <i>range</i>:
 
 ``` clojure
 (doc range)
@@ -1312,11 +1064,9 @@ clojure/range
   (exclusive), by step, where start defaults to 0 and step to 1.
 ```
 
-Above, notice the function has three groups of possible arguments,
-denoted in brackets.
+Above, notice the function has three groups of possible arguments, denoted in brackets.
 
-When not knowing what to search for, you may try <b><i>find-doc</i></b>
-instead, which takes a string or regular expression as argument:
+When not knowing what to search for, you may try <b><i>find-doc</i></b> instead, which takes a string or regular expression as argument:
 
 ` user=> (find-doc "ns-")`  
 ` -------------------------`  
@@ -1332,9 +1082,7 @@ instead, which takes a string or regular expression as argument:
 
 ### Defining documentation for your own functions
 
-So where does the documentation come from? Every definition of a
-function or macro or multimethod may take a description string before
-the arguments:
+So where does the documentation come from? Every definition of a function or macro or multimethod may take a description string before the arguments:
 
 ``` clojure
 (defn area
@@ -1369,15 +1117,11 @@ the arguments:
 `   The maximum number of connections`  
 ` nil`
 
-Function documentation is internally set like the above: <i>defn</i> is
-a macro that defines a function and puts the second argument as the doc
-string of the variable that points to the function body (among many
-other things).
+Function documentation is internally set like the above: <i>defn</i> is a macro that defines a function and puts the second argument as the doc string of the variable that points to the function body (among many other things).
 
 ### Adding a test function to a variable
 
-We first declare the variable, and then define it with a metadata map
-that includes a test function:
+We first declare the variable, and then define it with a metadata map that includes a test function:
 
 ``` clojure
 (declare a)
@@ -1386,9 +1130,7 @@ that includes a test function:
   a 6)
 ```
 
-... which we then test, by invoking the function <i>test</i> not on the
-value of the variable <i>a</i> (which could have its own metadata map),
-but on the variable <i>a</i> itself, referred to with the <i>\#'a</i>:
+... which we then test, by invoking the function <i>test</i> not on the value of the variable <i>a</i> (which could have its own metadata map), but on the variable <i>a</i> itself, referred to with the <i>\#'a</i>:
 
 ``` clojure
 (test #'a)
@@ -1402,39 +1144,19 @@ Otherwise, it would just return the <i>:ok</i> keyword.
 
 ## A fibonacci sequence: lazy and infinite sequences
 
-A beautiful example of using lazy sequences and applying functions to
-one or more sequences at a time.
+A beautiful example of using lazy sequences and applying functions to one or more sequences at a time.
 
-Below, the sequence <i>fibs</i> is defined in such a way that it
-contains all possible [fibonacci
-numbers](wikipedia:Fibonacci_number "wikilink"). Since such sequence is
-infinite, we declared it as <i>lazy</i> sequence, that creates new
-elements only when they are asked for.
+Below, the sequence <i>fibs</i> is defined in such a way that it contains all possible [fibonacci numbers](wikipedia:Fibonacci_number "wikilink"). Since such sequence is infinite, we declared it as <i>lazy</i> sequence, that creates new elements only when they are asked for.
 
-The <i>lazy-cat</i> clojure function creates such lazy sequence by
-concatenation of two sequences: the first sequence is <i>0, 1</i> (which
-takes the role of feeder or initialization sequence), and the second
-sequence is the result of a <i>map</i> operation over two subsets of the
-<i>fibs</i> sequence itself: the full and the full minus the first
-element (hence the <i>rest</i> operation to obtain the list of all
-elements without the first).
+The <i>lazy-cat</i> clojure function creates such lazy sequence by concatenation of two sequences: the first sequence is <i>0, 1</i> (which takes the role of feeder or initialization sequence), and the second sequence is the result of a <i>map</i> operation over two subsets of the <i>fibs</i> sequence itself: the full and the full minus the first element (hence the <i>rest</i> operation to obtain the list of all elements without the first).
 
-A <i>map</i> operation applies a function to each element of a sequence,
-or, when two or more sequences are provided, to the corresponding
-elements: those at index 0 in all sequences, those at index 1 in all
-sequences, etc.
+A <i>map</i> operation applies a function to each element of a sequence, or, when two or more sequences are provided, to the corresponding elements: those at index 0 in all sequences, those at index 1 in all sequences, etc.
 
-To generate the fibonacci sequence of numbers, a sum <i>+</i> operation
-is mapped to the numbers contained in the <b>self sequence</b>
-<i>fibs</i> and to the corresponding elements of the self sequence
-<i>fibs</i> minus the first element, i.e. <b>shifted by one</b>.
+To generate the fibonacci sequence of numbers, a sum <i>+</i> operation is mapped to the numbers contained in the <b>self sequence</b> <i>fibs</i> and to the corresponding elements of the self sequence <i>fibs</i> minus the first element, i.e. <b>shifted by one</b>.
 
-In short, the lazy sequence <i>fibs</i> is an abstract way of
-representing a potentially infinite sequence, with an implementation
-containing a full abstract definition of <b>all</b> fibonacci numbers.
+In short, the lazy sequence <i>fibs</i> is an abstract way of representing a potentially infinite sequence, with an implementation containing a full abstract definition of <b>all</b> fibonacci numbers.
 
-Then we just <i>take</i> the first 10 elements of such lazy sequence,
-which are created on the fly.
+Then we just <i>take</i> the first 10 elements of such lazy sequence, which are created on the fly.
 
 ``` clojure
 (def fibs (lazy-cat [0 1]
@@ -1449,13 +1171,9 @@ Which outputs:
 
 ### Printing lazy sequences to the REPL
 
-The REPL, when given a lazy sequence, will <b>traverse it in its
-entirety</b> to print it.
+The REPL, when given a lazy sequence, will <b>traverse it in its entirety</b> to print it.
 
-Printing a potentially infinite lazy sequence to the REPL is something
-you don't want to do: besides triggering computation of each element, it
-would fill all memory and throw an OutOfMemoryException. And you'd get
-bored seeing elements pass by.
+Printing a potentially infinite lazy sequence to the REPL is something you don't want to do: besides triggering computation of each element, it would fill all memory and throw an OutOfMemoryException. And you'd get bored seeing elements pass by.
 
 A good option is to print only part of it:
 
@@ -1463,32 +1181,26 @@ A good option is to print only part of it:
   - <i>drop</i>: all elements beyond N.
   - <i>nth</i>: the nth element only.
 
-For infinite lazy sequences, <i>drop</i> wouldn't save your REPL, and
-<i>take</i> could be perhaps too many still.
+For infinite lazy sequences, <i>drop</i> wouldn't save your REPL, and <i>take</i> could be perhaps too many still.
 
-To avoid accidental printing of complete lazy-sequences, you may set
-<b>\*print-length\*</b> to a reasonable number:
+To avoid accidental printing of complete lazy-sequences, you may set <b>\*print-length\*</b> to a reasonable number:
 
 ``` clojure
 (set! *print-length* 5)
 ```
 
-So now one can safely print the entire fibonnaci sequence, which will
-print only the first 5 elements, followeed by dots:
+So now one can safely print the entire fibonnaci sequence, which will print only the first 5 elements, followeed by dots:
 
 ` user=> (set! *print-length* 5)`  
 ` 5`  
 ` user=> fibs`  
 ` (0 1 1 2 3 ...)`
 
-The <b>\*print-length\*</b> applies to all sequences to be printed in
-the REPL, but is specially useful for very large lazy sequences.
+The <b>\*print-length\*</b> applies to all sequences to be printed in the REPL, but is specially useful for very large lazy sequences.
 
 ## Creating shallow and deep sequences from java arrays
 
-Many clojure functions take sequences, not native java arrays, as
-arguments. A java native array can be wrapped by a shallow sequence like
-the following:
+Many clojure functions take sequences, not native java arrays, as arguments. A java native array can be wrapped by a shallow sequence like the following:
 
 `>>> (def pixels (into-array (range 10)))`  
 `#'user/pixels`  
@@ -1499,16 +1211,14 @@ the following:
 `>>> seq-pix`  
 `(0 1 2 3 4 5 6 7 8 9)`
 
-Now if we modify the native array, the sequence will reflect that change
-too when read:
+Now if we modify the native array, the sequence will reflect that change too when read:
 
 `>>> (aset pixels 3 99)`  
 `99`  
 `>>> seq-pix`  
 `(0 1 2 99 4 5 6 7 8 9)`
 
-The array was <b>not</b> duplicated. The only new object created was the
-shallow sequence:
+The array was <b>not</b> duplicated. The only new object created was the shallow sequence:
 
 `>>> (class seq-pix)`  
 `clojure.lang.ArraySeq`
@@ -1531,43 +1241,27 @@ Or, in short:
 `(def seq-pix2 (seq (vec pixels)))`  
 `#'user/seq-pix2`
 
-So now any changes to the original <i>pixels</i> array will not affect
-the new sequence:
+So now any changes to the original <i>pixels</i> array will not affect the new sequence:
 
 `>>> (aset pixels 3 101)`  
 `101`  
 `>>> seq-pix2`  
 `(0 1 2 99 4 5 6 7 8 9)`
 
-<i>Thanks to Chouser and wwmorgan for examples on \#clojure at
-irc.freenode.net</i>
+<i>Thanks to Chouser and wwmorgan for examples on \#clojure at irc.freenode.net</i>
 
 ## Generating java classes in .class files from clojure code
 
-Using ahead of time (AOT) compilation with
-[gen-class](http://clojure.org/compilation), any clojure code can be
-compiled to a java class. Such class can then be used from java code, or
-from any scripting language like [jython](Jython_Scripting "wikilink"),
-[jruby](JRuby_Scripting "wikilink"),
-[javascript](Javascript_Scripting "wikilink"), and [any
-other](:Category:Scripting "wikilink").
+Using ahead of time (AOT) compilation with [gen-class](http://clojure.org/compilation), any clojure code can be compiled to a java class. Such class can then be used from java code, or from any scripting language like [jython](Jython_Scripting "wikilink"), [jruby](JRuby_Scripting "wikilink"), [javascript](Javascript_Scripting "wikilink"), and [any other](:Category:Scripting "wikilink").
 
-One way to do so is to place a
-[gen-class](http://clojure.org/compilation) declaration in a namespace
-block.
+One way to do so is to place a [gen-class](http://clojure.org/compilation) declaration in a namespace block.
 
-Be aware: the <b>namespace</b> must match <b>the folder structure where
-the .clj file is and the file name of the .clj file</b>. For example, to
-generate a class named fj.tests.process.FloatProcessorPlus, you need a
-clojure file under fj/tests/process/FloatProcessorPlus.clj .
+Be aware: the <b>namespace</b> must match <b>the folder structure where the .clj file is and the file name of the .clj file</b>. For example, to generate a class named fj.tests.process.FloatProcessorPlus, you need a clojure file under fj/tests/process/FloatProcessorPlus.clj .
 
 To compile the clojure code to .class files, you need:
 
-1.  A <b>classes/</b> folder in the current directory where
-    clojure.lang.Repl is run. This folder will receive the generated
-    .class files.
-2.  Add to your classpath the top-level folder, in the example the 'fj'
-    folder, and also the folder containing the .clj file itself.
+1.  A <b>classes/</b> folder in the current directory where clojure.lang.Repl is run. This folder will receive the generated .class files.
+2.  Add to your classpath the top-level folder, in the example the 'fj' folder, and also the folder containing the .clj file itself.
 3.  Add to your classpath the classes/ folder as well.
 4.  In a clojure.lang.Repl, use the <i>compile</i> function.
 
@@ -1582,22 +1276,13 @@ $ java -cp .:../../ij.jar:../../jars/clojure.jar:./classes/:./fj/tests/process/ 
 `fj.tests.process.FloatProcessorPlus`  
 `user=>`
 
-The following clojure example contains a namespace declaration that
-includes some imports and also the gen-class. In the gen-class block, we
-define which class our code extends (in this case,
-ij.process.FloatProcessor), and which methods are to be created (with
-specific argument signatures and return object signature).
+The following clojure example contains a namespace declaration that includes some imports and also the gen-class. In the gen-class block, we define which class our code extends (in this case, ij.process.FloatProcessor), and which methods are to be created (with specific argument signatures and return object signature).
 
-Later, the compiler will assign a clojure function to each declared
-method, using the prefix string plus the method name to match a
-function.
+Later, the compiler will assign a clojure function to each declared method, using the prefix string plus the method name to match a function.
 
-For example, with prefix "fp-" and method "fillValue", the compiler will
-look for the clojure function "fp-fillValue".
+For example, with prefix "fp-" and method "fillValue", the compiler will look for the clojure function "fp-fillValue".
 
-Finally, a main method is not directly declared, but exists if a
-function named prefix + main ("fp-main" in the example) exists. We can
-use the main method to run the new class as an application.
+Finally, a main method is not directly declared, but exists if a function named prefix + main ("fp-main" in the example) exists. We can use the main method to run the new class as an application.
 
 The example clojure code:
 
@@ -1683,20 +1368,11 @@ The example clojure code:
 
 ## References, concurrency, transactions and synchronization
 
-Clojure supports thread concurrency without explicit locks. Compared to
-java code, this is a gigantic step forward: locks, and particularly
-multiple locks, are very hard to get right and very, very hard to debug
-properly (but see [debugging multithreaded java
-programs](http://albert.rierol.net/java_tricks.html#How%20to%20debug%20a%20multithreaded%20java%20program)).
+Clojure supports thread concurrency without explicit locks. Compared to java code, this is a gigantic step forward: locks, and particularly multiple locks, are very hard to get right and very, very hard to debug properly (but see [debugging multithreaded java programs](http://albert.rierol.net/java_tricks.html#How%20to%20debug%20a%20multithreaded%20java%20program)).
 
-The most basic building blocks are
-\[http://clojure.org/refs><i>references</i\], which are created with
-the <i>ref</i> function, and modified within transaction blocks (defined
-by <i>dosync</i>) using <i>commute</i> or <i>alter</i> functions (and
-[others](http://clojure.org/refs)).
+The most basic building blocks are \[http://clojure.org/refs><i>references</i>\], which are created with the <i>ref</i> function, and modified within transaction blocks (defined by <i>dosync</i>) using <i>commute</i> or <i>alter</i functions (and [others](http://clojure.org/refs)).
 
-To read out the value of a reference, call <i>deref</i> or just <i>@</i>
-on it:
+To read out the value of a reference, call <i>deref</i> or just <i>@</i> on it:
 
 ``` clojure
 ; Create a new reference named 'id' initializated to value zero:
@@ -1716,38 +1392,15 @@ on it:
 -> 20
 ```
 
-References are not type specific: any object may be assigned to the same
-reference. Whether that makes any sense is up to you.
+References are not type specific: any object may be assigned to the same reference. Whether that makes any sense is up to you.
 
-The <i>commute</i> and <i>alter</i> functions replace the value of the
-reference with that of the return value of a function given as argument.
-The function given as argument to <i>commute</i> and <i>alter</i> is
-given, in turn, the value of the reference (i.e. the dereferenced
-reference) and any other further arguments. The difference between
-<i>commute</i> and <i>alter</i> is that <i>commute</i> returns the
-dereferenced reference after the transaction is done, which may be
-different already (because of concurrent modifications) than the value
-that was set to the reference within the transaction; whereas
-<i>alter</i> returns the value that it had while the transaction was
-being done (i.e. the value returned by the function, the same that gets
-set as the value of the reference).
+The <i>commute</i> and <i>alter</i> functions replace the value of the reference with that of the return value of a function given as argument. The function given as argument to <i>commute</i> and <i>alter</i> is given, in turn, the value of the reference (i.e. the dereferenced reference) and any other further arguments. The difference between <i>commute</i> and <i>alter</i> is that <i>commute</i> returns the dereferenced reference after the transaction is done, which may be different already (because of concurrent modifications) than the value that was set to the reference within the transaction; whereas <i>alter</i> returns the value that it had while the transaction was being done (i.e. the value returned by the function, the same that gets set as the value of the reference).
 
-In the following example, a unique id counter is incremented
-continuously by 1, and all ids are collected, unordered, into a vector.
-Both the next available id and the vector of all accessed ids are stored
-in references.
+In the following example, a unique id counter is incremented continuously by 1, and all ids are collected, unordered, into a vector. Both the next available id and the vector of all accessed ids are stored in references.
 
-Keep in mind the vector of ids assigned to the reference named 'ls' is
-always immutable: what we assign to the reference 'ls' below is a new
-vector, resulting from adding a new id to the old vector of ids. This
-immutability enables other threads to read the vector without locks. For
-performance, keep in mind that vectors, like many other clojure data
-structures, have structural sharing, so the new vector is not a
-duplication--even if it behaves like one.
+Keep in mind the vector of ids assigned to the reference named 'ls' is always immutable: what we assign to the reference 'ls' below is a new vector, resulting from adding a new id to the old vector of ids. This immutability enables other threads to read the vector without locks. For performance, keep in mind that vectors, like many other clojure data structures, have structural sharing, so the new vector is not a duplication--even if it behaves like one.
 
-The assignment is done in a transaction, so no matter how many
-concurrent threads try to do so, the resulting vector will have all the
-ids.
+The assignment is done in a transaction, so no matter how many concurrent threads try to do so, the resulting vector will have all the ids.
 
 ``` clojure
 ; Albert Cardona 2008-12-18
@@ -1816,8 +1469,7 @@ ids.
     (println "Cleaning up!")))
 ```
 
-Of course you can throw any kind of exception you want. For example, in
-checking function arguments:
+Of course you can throw any kind of exception you want. For example, in checking function arguments:
 
 ``` clojure
 (import '(java.awt Rectangle))
@@ -1828,9 +1480,7 @@ checking function arguments:
   (* (.width r) (.height r)))
 ```
 
-Above, despite the type declaration, one can pass any value to the
-<i>area</i> function and it will still work, but of course our class
-check will cut execution:
+Above, despite the type declaration, one can pass any value to the <i>area</i> function and it will still work, but of course our class check will cut execution:
 
 `user=> (area 10)                          `  
 `java.lang.IllegalArgumentException: Can only compute the area of a Rectangle. (NO_SOURCE_FILE:0)`  
@@ -1853,38 +1503,15 @@ First we define the macro <i>exec</i>:
     (~pred (line-seq br#) ~@args)))
 ```
 
-Some explanations on the above macro syntax (see also [clojure's macro
-syntax page](http://clojure.org/macros)):
+Some explanations on the above macro syntax (see also [clojure's macro syntax page](http://clojure.org/macros)):
 
-  - The backquote \` quotes the next expression, as defined by: \`(
-    <any code here> ). Which means the code block is <b>not</b>
-    evaluated. But, unlike simple quote ', the backquote enables
-    evaluation of expressions within the block when tagged with a \~ (a
-    tilde).
-  - The \~ (tilde) evaluates the immediate expression. Can only be used
-    in the context of a backquoted code block.
-  - The \~@ means <i>evaluate and expand</i>, which has the efect of
-    placing the elements of a list as if they where declared in the
-    code, without the list enclosure. So: \`(\~@(str "this" "that"))
-    results in: "thisthat". In the example above, we expand the <i>&
-    args</i>, which is a list containing all arguments given to the exec
-    macro beyond the first and second (which are bound to <i>cmd</i> and
-    <i>pred</i>, respectively). In this way, we lay down the proper
-    function call of the <i>pred</i>, which is expected to be a function
-    name (a predicate); the reason we use \~ on it is to evaluate
-    <i>pred</i> so that it renders the pointer to the function itself.
-    That <i>pred</i> function, by design, must accept a lazy sequence of
-    text lines and any number of arguments afterwards.
-  - The \# tagged at the end of a name expands to (gensym name), which
-    results in creating a uniquely named symbol, to avoid name
-    collisions.
-  - Any code present outside the backquote (none, in the case above)
-    will be executed at macro read time, not at code execution time (aka
-    run time)\! So any precomputations are possible before laying down
-    the code that will be executed at run time.
+  - The backquote \` quotes the next expression, as defined by: \`( <any code here> ). Which means the code block is <b>not</b> evaluated. But, unlike simple quote ', the backquote enables evaluation of expressions within the block when tagged with a \~ (a tilde).
+  - The \~ (tilde) evaluates the immediate expression. Can only be used in the context of a backquoted code block.
+  - The \~@ means <i>evaluate and expand</i>, which has the efect of placing the elements of a list as if they where declared in the code, without the list enclosure. So: \`(\~@(str "this" "that")) results in: "thisthat". In the example above, we expand the <i>& args</i>, which is a list containing all arguments given to the exec macro beyond the first and second (which are bound to <i>cmd</i> and <i>pred</i>, respectively). In this way, we lay down the proper function call of the <i>pred</i>, which is expected to be a function name (a predicate); the reason we use \~ on it is to evaluate <i>pred</i> so that it renders the pointer to the function itself. That <i>pred</i> function, by design, must accept a lazy sequence of text lines and any number of arguments afterwards.
+  - The \# tagged at the end of a name expands to (gensym name), which results in creating a uniquely named symbol, to avoid name collisions.
+  - Any code present outside the backquote (none, in the case above) will be executed at macro read time, not at code execution time (aka run time)\! So any precomputations are possible before laying down the code that will be executed at run time.
 
-Then we give the macro a command to execute and a function to process
-its stdout output.
+Then we give the macro a command to execute and a function to process its stdout output.
 
 ``` clojure
 ; List all files in the home directory:
@@ -1892,8 +1519,7 @@ its stdout output.
       #(doseq [line %1] (println line)))
 ```
 
-A second example, printing the file size of each listed file in the home
-directory:
+A second example, printing the file size of each listed file in the home directory:
 
 ``` clojure
 ; Print the size of each file in the home directory:
@@ -1905,8 +1531,7 @@ directory:
           (println (.length (File. (str dir line)))))))
 ```
 
-A third example, telling the music player XMMS2 to jump to a specific
-track in its playlist:
+A third example, telling the music player XMMS2 to jump to a specific track in its playlist:
 
 ``` clojure
 (let [track-number 125]
@@ -1914,9 +1539,7 @@ track in its playlist:
         (fn [lines] lines)))
 ```
 
-The above is an extract from a clojure GUI for XMMS2, available at
-github {% include github org='acardona' repo='xmms2-clj'
-label='xmms2-gui' %}.
+The above is an extract from a clojure GUI for XMMS2, available at github {% include github org='acardona' repo='xmms2-clj' label='xmms2-gui' %}.
 
 ## Creating a derivative of a function
 
@@ -1924,13 +1547,9 @@ The derivative of a function:
 
 \(D f(x) = f'(x) = \lim_{dx\rightarrow 0}\frac{f(x + dx) - f(x)}{dx}\)
 
-We can approximate the derivative by choosing an arbitrarily precise
-value of the increment <i>dx</i>.
+We can approximate the derivative by choosing an arbitrarily precise value of the increment <i>dx</i>.
 
-So first we define a function that takes any function as argument and
-returns a new function that implements its derivative. For convenience,
-we define it within a closure that specifies the arbitrarily precise
-increment <i>dx</i> (but we could just pass it as argument):
+So first we define a function that takes any function as argument and returns a new function that implements its derivative. For convenience, we define it within a closure that specifies the arbitrarily precise increment <i>dx</i> (but we could just pass it as argument):
 
 ``` clojure
 (let [dx (double 0.0001)]
@@ -1950,8 +1569,7 @@ Then, for any example function like the cube of x:
     (* a a a)))
 ```
 
-... we create its derivative function, which we place into a variable
-(note we use <i>def</i> and not <i>defn</i>):
+... we create its derivative function, which we place into a variable (note we use <i>def</i> and not <i>defn</i>):
 
 ``` clojure
 (def cubic-prime (derivative cubic))
@@ -1968,13 +1586,9 @@ We can now call the cubic-prime function simply like any other function:
 `(cubic-prime 4) `  
 `-> 48.00120000993502`
 
-The derivative of x^3 is 3 \* x^2, which for an x of 4 equals 48. Our
-derivative is as precise as low is the value of the increment <i>dx</i>.
+The derivative of x^3 is 3 \* x^2, which for an x of 4 equals 48. Our derivative is as precise as low is the value of the increment <i>dx</i>.
 
-The above code translated from lisp code at [funcall
-blog](http://funcall.blogspot.com/2009/03/not-lisp-again.html). Thanks
-[Joe Marshall](http://www.blogger.com/profile/03233353484280456977) for
-sharing this perl.
+The above code translated from lisp code at [funcall blog](http://funcall.blogspot.com/2009/03/not-lisp-again.html). Thanks [Joe Marshall](http://www.blogger.com/profile/03233353484280456977) for sharing this perl.
 
 ## Pretty printing a primitive array
 
@@ -1993,8 +1607,7 @@ user=> (println pa)
 
 ... which is not very useful. Instead, let's pretty print it.
 
-First, import the function <i>pprint</i> (and many other functions) from
-clojure-contrib pprint namespace:
+First, import the function <i>pprint</i> (and many other functions) from clojure-contrib pprint namespace:
 
 ``` clojure
 user=> (use 'clojure.contrib.pprint)
@@ -2007,16 +1620,14 @@ user=> (pprint pa)
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 ```
 
-A similar result can be obtained by wrapping primitive arrays with
-<i>seq</i>, which generates a Collection view on the primitive array:
+A similar result can be obtained by wrapping primitive arrays with <i>seq</i>, which generates a Collection view on the primitive array:
 
 ``` clojure
 user=> (println (seq pa))
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 ```
 
-That <i>seq</i> creates only a view (and not a copy), you can convince
-yourself: changing the array changes the view, too:
+That <i>seq</i> creates only a view (and not a copy), you can convince yourself: changing the array changes the view, too:
 
 ``` clojure
 user=> (def sa (seq pa))

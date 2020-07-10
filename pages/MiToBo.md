@@ -8,40 +8,28 @@ categories: Plugins,Related Software,SciJava,Citable
 description: test description
 ---
 
-{% capture maintainer %} Stefan Posch, {% include person
-content="MiToBo" %} {% endcapture %}
 
-{% capture author %} Stefan Posch, {% include person content="MiToBo" %}
+{% capture maintainer%}
+Stefan Posch, {% include person content='MiToBo' %}
 {% endcapture %}
 
-{% capture source %} {% include github org="mitobo-hub"
-repo="mitobo-plugins" %} {% endcapture %} {% include sidebox-right
-software='MiToBo' name='MiToBo' logo='![MiToBo-logo.png](/images/pages/MiToBo-logo.png
-"MiToBo-logo.png")"' maintainer=maintainer author=author source=source
-status='' category='[:Category:Plugins](:Category:Plugins "wikilink")'
-website='http://www.informatik.uni-halle.de/mitobo/' %}The Microscope
-Image Analysis Toolbox MiToBo is a collection of basic and advanced
-image processing operators and applications mainly dedicated to
-biological and biomedical image data, however, not restricted to these
-fields. MiToBo is an extension of [ImageJ](ImageJ "wikilink"), i.e.
-MiToBo operators are ready to be directly used as plugins in ImageJ.
+{% capture author%}
+Stefan Posch, {% include person content='MiToBo' %}
+{% endcapture %}
 
-To make use of MiToBo's functionality it can be enabled by [toggling the
-MiToBo update site](Update_Sites "wikilink").
+{% capture source%}
+{% include github org='mitobo-hub' repo='mitobo-plugins' %}
+{% endcapture %}
+{% include info-box software='MiToBo' name='MiToBo' logo='![MiToBo-logo.png](/images/pages/MiToBo-logo.png "MiToBo-logo.png")"' maintainer=maintainer author=author source=source status='' category='[:Category:Plugins](:Category:Plugins "wikilink")' website='http://www.informatik.uni-halle.de/mitobo/' %}The Microscope Image Analysis Toolbox MiToBo is a collection of basic and advanced image processing operators and applications mainly dedicated to biological and biomedical image data, however, not restricted to these fields. MiToBo is an extension of [ImageJ](ImageJ "wikilink"), i.e. MiToBo operators are ready to be directly used as plugins in ImageJ.
 
-For further details, see the [MiToBo
-website](http://www.informatik.uni-halle.de/mitobo/).
+To make use of MiToBo's functionality it can be enabled by [toggling the MiToBo update site](Update_Sites "wikilink").
 
-MiToBo is based on the [Alida](Alida "wikilink") framework. MiToBo's
-operators are managed by Alida's graphical operator runner. In addition,
-and thanks to Alida's built-in graphical workflow editor *Grappa* also
-image analysis workflows can easily be designed graphically.
+For further details, see the [MiToBo website](http://www.informatik.uni-halle.de/mitobo/).
+
+MiToBo is based on the [Alida](Alida "wikilink") framework. MiToBo's operators are managed by Alida's graphical operator runner. In addition, and thanks to Alida's built-in graphical workflow editor *Grappa* also image analysis workflows can easily be designed graphically.
 
 ## Publication
 
   - {% include publication content='MiToBo' %}
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Related
-Software](Category:Related_Software "wikilink")
-[Category:SciJava](Category:SciJava "wikilink")
-[Category:Citable](Category:Citable "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Related Software](Category:Related_Software "wikilink") [Category:SciJava](Category:SciJava "wikilink") [Category:Citable](Category:Citable "wikilink")

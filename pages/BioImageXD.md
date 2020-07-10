@@ -8,27 +8,19 @@ categories: Related Software,Citable
 description: test description
 ---
 
-{% capture author %} Pasi Kankaanpää  
+
+{% capture author%}
+Pasi Kankaanpää  
 Lassi Paavolainen  
 Varpu Marjomäki  
 Jyrki Heino  
-{% include person content="White" %} {% endcapture %} {% include
-sidebox-right name='BioImageXD' software='BioImageXD' author=author
-maintainer='Lassi Paavolainen' source='[on
-SourceForge](http://svn.code.sf.net/p/bioimagexd/code/bioimagexd/)'
-status='Last Binary Package release: 2014-02-24.  
-Last code update: 2015-06-15' website='http://bioimagexd.net/' %}
-BioImageXD is a free open source software package for analyzing,
-processing and visualizing multi-dimensional microscopy images.
+{% include person content='White' %}
+{% endcapture %}
+{% include info-box name='BioImageXD' software='BioImageXD' author=author maintainer='Lassi Paavolainen' source=' [on SourceForge](http://svn.code.sf.net/p/bioimagexd/code/bioimagexd/) ' status='Last Binary Package release: 2014-02-24.  
+Last code update: 2015-06-15' website='http://bioimagexd.net/' %} BioImageXD is a free open source software package for analyzing, processing and visualizing multi-dimensional microscopy images.
 
 ## Publication
 
-  - Kankaanpää, P., Paavolainen, L., Tiitta, S., Karjalainen, M.,
-    Päivärinne, J., Nieminen, J., ... & White, D. J. (2012).
-    [BioImageXD: an open, general-purpose and high-throughput
-    image-processing
-    platform](http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2047.html%3FWT.ec_id%3DNMETH-201207).
-    Nature methods, 9(7), 683-689.
+  - Kankaanpää, P., Paavolainen, L., Tiitta, S., Karjalainen, M., Päivärinne, J., Nieminen, J., ... & White, D. J. (2012). [BioImageXD: an open, general-purpose and high-throughput image-processing platform](http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2047.html%3FWT.ec_id%3DNMETH-201207). Nature methods, 9(7), 683-689.
 
-[Category:Related Software](Category:Related_Software "wikilink")
-[Category:Citable](Category:Citable "wikilink")
+[Category:Related Software](Category:Related_Software "wikilink") [Category:Citable](Category:Citable "wikilink")

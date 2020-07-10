@@ -8,33 +8,20 @@ categories: ImageScience|ImageScience,Plugins,ImageScience,Neuroanatomy
 description: test description
 ---
 
-{% capture maintainer %} {% include person content="ImageScience" %} {%
-endcapture %}
 
-{% capture author %} {% include person content="ImageScience" %} {%
-endcapture %}
+{% capture maintainer%}
+{% include person content='ImageScience' %}
+{% endcapture %}
 
-{% capture source %} {% include github org="imagescience" repo="NeuronJ"
-%} {% endcapture %} {% include sidebox-right software='ImageScience'
-name='NeuronJ' maintainer=maintainer author=author source=source
-status='' category='[Plugins](:Category:Plugins "wikilink") '
-website='http://imagescience.org/meijering/software/neuronj/'
-%}[NeuronJ](http://imagescience.org/meijering/software/neuronj/) is an
-ImageJ plugin to facilitate the tracing and analysis of elongated image
-structures, such as neuronal processes, complementing [Simple Neurite
-Tracer](Simple_Neurite_Tracer "wikilink").
+{% capture author%}
+{% include person content='ImageScience' %}
+{% endcapture %}
 
-NeuronJ features a friendly interface and a detailed [online
-manual](https://imagescience.org/meijering/software/neuronj/manual/) but
-can only be used to reconstruct 2D images and is not capable of
-[SWC](http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html)
-export, the most common format used in neuronal reconstructions. If you
-need to reconstruct three-dimensional imagery and require a program
-aware of SWC, we recommend using [Simple Neurite
-Tracer](Simple_Neurite_Tracer "wikilink") instead.
+{% capture source%}
+{% include github org='imagescience' repo='NeuronJ' %}
+{% endcapture %}
+{% include info-box software='ImageScience' name='NeuronJ' maintainer=maintainer author=author source=source status='' category='[Plugins](:Category:Plugins "wikilink") ' website='http://imagescience.org/meijering/software/neuronj/' %}[NeuronJ](http://imagescience.org/meijering/software/neuronj/) is an ImageJ plugin to facilitate the tracing and analysis of elongated image structures, such as neuronal processes, complementing [Simple Neurite Tracer](Simple_Neurite_Tracer "wikilink").
 
-[ImageScience](Category:ImageScience "wikilink")
-[Neuroanatomy](Category:Neuroanatomy "wikilink")
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:ImageScience](Category:ImageScience "wikilink")
-[Category:Neuroanatomy](Category:Neuroanatomy "wikilink")
+NeuronJ features a friendly interface and a detailed [online manual](https://imagescience.org/meijering/software/neuronj/manual/) but can only be used to reconstruct 2D images and is not capable of [SWC](http://www.neuronland.org/NLMorphologyConverter/MorphologyFormats/SWC/Spec.html) export, the most common format used in neuronal reconstructions. If you need to reconstruct three-dimensional imagery and require a program aware of SWC, we recommend using [Simple Neurite Tracer](Simple_Neurite_Tracer "wikilink") instead.
+
+[ImageScience](Category:ImageScience "wikilink") [Neuroanatomy](Category:Neuroanatomy "wikilink") [Category:Plugins](Category:Plugins "wikilink") [Category:ImageScience](Category:ImageScience "wikilink") [Category:Neuroanatomy](Category:Neuroanatomy "wikilink")

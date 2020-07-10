@@ -8,32 +8,21 @@ categories: Import-Export
 description: test description
 ---
 
-{% include menu-formats %}[Digital Imaging and Communications in
-Medicine (DICOM)](wikipedia:DICOM "wikilink") is a standard for
-handling, storing, printing, and transmitting information in medical
-imaging.
+{% include menu-formats%}[Digital Imaging and Communications in Medicine (DICOM)](wikipedia:DICOM "wikilink") is a standard for handling, storing, printing, and transmitting information in medical imaging.
 
 ## How to read DICOM files into ImageJ?
 
-  - ImageJ has built-in support for reading some kinds of DICOM files.
-    Try {% include bc content='File | Open'%} and see how it goes.
-  - The [Bio-Formats](Bio-Formats "wikilink") plugin supports some kinds
-    of DICOM files, too. Bio-Formats is available in the
-    [Fiji](Fiji "wikilink") distribution of ImageJ. Try {% include bc
-    content='File | Import | Bio-Formats'%}.
-  - The [Tudor Dicom Tools](http://santec.tudor.lu/project/dicom) plugin
-    suite can read and write many kinds of DICOM, and provide some
-    support for working with DICOM metadata structures.
+  - ImageJ has built-in support for reading some kinds of DICOM files. Try {% include bc content='File | Open'%} and see how it goes.
+  - The [Bio-Formats](Bio-Formats "wikilink") plugin supports some kinds of DICOM files, too. Bio-Formats is available in the [Fiji](Fiji "wikilink") distribution of ImageJ. Try {% include bc content='File | Import | Bio-Formats'%}.
+  - The [Tudor Dicom Tools](http://santec.tudor.lu/project/dicom) plugin suite can read and write many kinds of DICOM, and provide some support for working with DICOM metadata structures.
 
 ## How to save DICOM files from ImageJ?
 
-The [Tudor Dicom Tools](http://santec.tudor.lu/project/dicom) provide
-basic support for saving as DICOM.
+The [Tudor Dicom Tools](http://santec.tudor.lu/project/dicom) provide basic support for saving as DICOM.
 
 ## How to work with DICOM headers from a script?
 
-An example of using the `DicomTools.getTag()` method from
-[JavaScript](JavaScript "wikilink"):
+An example of using the `DicomTools.getTag()` method from [JavaScript](JavaScript "wikilink"):
 
 ``` javascript
 importClass(Packages.ij.IJ)
@@ -67,21 +56,13 @@ print("Image Position: "+imagePosition);
 print("Pixel Spacing: "+ pixelSpacing);
 ```
 
-See also these past threads from the ImageJ [mailing
-list](mailing_list "wikilink"):
+See also these past threads from the ImageJ [mailing list](mailing_list "wikilink"):
 
-  - 2015-09-23 - [Reading DICOM header without opening the
-    image](http://imagej.1557.x6.nabble.com/Reading-DICOM-header-without-opening-the-image-tp5014426.html)
-  - 2013-10-10 - [ImageJ DICOM
-    Header](http://imagej.1557.x6.nabble.com/ImageJ-DICOM-Header-tp5005125.html)
-  - 2013-05-30 - [Dicom
-    Header](http://imagej.1557.x6.nabble.com/Dicom-Header-tp5003154.html)
-  - 2012-05-09 - [Running a Macro in a plugin, retrieving DICOM header
-    information
-    automatically](http://imagej.1557.x6.nabble.com/Running-a-Macro-in-a-plugin-retrieving-DICOM-header-information-automatically-tp4962557.html)
-  - 2012-04-19 - [Accessing a DICOM
-    header](http://imagej.1557.x6.nabble.com/Accessing-a-DICOM-header-tt4898551.html)
-  - 2012-04-13 - [Query Dicom
-    Header](http://imagej.1557.x6.nabble.com/Query-Dicom-Header-tp4877985.html)
+  - 2015-09-23 - [Reading DICOM header without opening the image](http://imagej.1557.x6.nabble.com/Reading-DICOM-header-without-opening-the-image-tp5014426.html)
+  - 2013-10-10 - [ImageJ DICOM Header](http://imagej.1557.x6.nabble.com/ImageJ-DICOM-Header-tp5005125.html)
+  - 2013-05-30 - [Dicom Header](http://imagej.1557.x6.nabble.com/Dicom-Header-tp5003154.html)
+  - 2012-05-09 - [Running a Macro in a plugin, retrieving DICOM header information automatically](http://imagej.1557.x6.nabble.com/Running-a-Macro-in-a-plugin-retrieving-DICOM-header-information-automatically-tp4962557.html)
+  - 2012-04-19 - [Accessing a DICOM header](http://imagej.1557.x6.nabble.com/Accessing-a-DICOM-header-tt4898551.html)
+  - 2012-04-13 - [Query Dicom Header](http://imagej.1557.x6.nabble.com/Query-Dicom-Header-tp4877985.html)
 
 [Category:Import-Export](Category:Import-Export "wikilink")

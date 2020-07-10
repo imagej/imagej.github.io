@@ -8,75 +8,49 @@ categories: Tutorials
 description: test description
 ---
 
-{% include updatesiteswarning-sidebox-right %} {% include
-menu-updatesites %}
+{% include updatesiteswarning-box%} {% include menu-updatesites%}
 
 ## Introduction
 
-This tutorial will explain how to **add an update site to your install
-of ImageJ** such that the plugins maintained there will be installed and
-updated just like core ImageJ plugins.
+This tutorial will explain how to **add an update site to your install of ImageJ** such that the plugins maintained there will be installed and updated just like core ImageJ plugins.
 
 ## Start the [Updater](Updater "wikilink")
 
 First, start the [updater](updater "wikilink"):
 
-![How\_to\_setup\_a\_plugin\_distribution\_site-1.jpg](/images/pages/How_to_setup_a_plugin_distribution_site-1.jpg
-"How_to_setup_a_plugin_distribution_site-1.jpg")"
+![How\_to\_setup\_a\_plugin\_distribution\_site-1.jpg](/images/pages/How_to_setup_a_plugin_distribution_site-1.jpg "How_to_setup_a_plugin_distribution_site-1.jpg")"
 
 ## Add update sites
 
-Click on the *Manage update sites* button to bring up the site
-management dialog:
+Click on the *Manage update sites* button to bring up the site management dialog:
 
 ![Mamed-3.jpg](/images/pages/Mamed-3.jpg "Mamed-3.jpg")"
 
-If the update site you want to follow is listed, just click the checkbox
-next to its name. If it is not listed, you can add Click the *Add update
-site* button and fill in the name of your choice for the site and the
-URL, which would be provided by the plugin's author or distributor.
+If the update site you want to follow is listed, just click the checkbox next to its name. If it is not listed, you can add Click the *Add update site* button and fill in the name of your choice for the site and the URL, which would be provided by the plugin's author or distributor.
 
-**Note:** the list of update sites shown by default is generated from a
-special page, which you can {% include list-of-update-sites
-content='view and edit here' %}. Update site maintainers are encouraged
-to add their update site to this list, as it both helps the community
-and the developers.
+**Note:** the list of update sites shown by default is generated from a special page, which you can {% include list-of-update-sites content='view and edit here' %}. Update site maintainers are encouraged to add their update site to this list, as it both helps the community and the developers.
 
-After you have selected your desired update site(s), close the dialog.
-The list of plugins that will be installed or updated from the chosen
-sites will now show up:
+After you have selected your desired update site(s), close the dialog. The list of plugins that will be installed or updated from the chosen sites will now show up:
 
 ![AddPluginSite-5.jpg](/images/pages/AddPluginSite-5.jpg "AddPluginSite-5.jpg")"
 
-{% include warning-sidebox-right content='If an entry"s action is
-"""Update It""", that means it is changing an existing plugin. This
-action is dangerous and can break other plugins, or ImageJ itself.  
-Ideally the maintainers of these sites would work with the core ImageJ
-maintainers to centralize important plugins.  
-When you find plugin conflicts between update sites, you can greatly
-help the community by [starting a discussion](Help "wikilink") with the
-maintainers\! ' %}
+{% include warning-box content='If an entry"s action is """Update It""", that means it is changing an existing plugin. This action is dangerous and can break other plugins, or ImageJ itself.  
+Ideally the maintainers of these sites would work with the core ImageJ maintainers to centralize important plugins.  
+When you find plugin conflicts between update sites, you can greatly help the community by [starting a discussion](Help "wikilink") with the maintainers\!' %}
 
 ## Choose and download plugins
 
-You can select whether you want to install a particular plugin by
-clicking in the **Status/Action** column and changing the option - for
-example, select **Keep as-is** to avoid installing a clashing plugin.
+You can select whether you want to install a particular plugin by clicking in the **Status/Action** column and changing the option - for example, select **Keep as-is** to avoid installing a clashing plugin.
 
 ![AddPluginSite-6.jpg](/images/pages/AddPluginSite-6.jpg "AddPluginSite-6.jpg")"
 
-Once you are happy with what will be installed, click on the *Apply
-Changes* button to download your updates.
+Once you are happy with what will be installed, click on the *Apply Changes* button to download your updates.
 
 ## Verify install
 
-{% include warning-sidebox-right content='An update is not finalized
-until """restarting the application.""" After initiating an update,
-"""do not modify your ImageJ installation manually""" until after
-restarting at least once. ' %}
+{% include warning-box content='An update is not finalized until """restarting the application.""" After initiating an update, """do not modify your ImageJ installation manually""" until after restarting at least once.' %}
 
-Restart ImageJ as instructed to finish the install. Check to see that
-the plugin was installed:
+Restart ImageJ as instructed to finish the install. Check to see that the plugin was installed:
 
 ![AddPluginSite-7.jpg](/images/pages/AddPluginSite-7.jpg "AddPluginSite-7.jpg")"
 

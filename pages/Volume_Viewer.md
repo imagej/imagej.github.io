@@ -8,8 +8,7 @@ categories: Plugins,Visualization
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Volume\_Viewer' %}3D
-reslicing and threshold-enabled 3D visualization.
+{% include component-stats content=':sc.fiji:Volume\_Viewer' %}3D reslicing and threshold-enabled 3D visualization.
 
 Non-hardware accelerated volume rendering in different modalities.
 
@@ -17,8 +16,6 @@ Documentation: https://imagej.net/plugins/volume-viewer.html
 
 ## See also
 
-[3D Viewer](3D_Viewer "wikilink"): hardware-accelerated 3D visualization
-of image volumes, orthoslices, and 3D meshes.
+[3D Viewer](3D_Viewer "wikilink"): hardware-accelerated 3D visualization of image volumes, orthoslices, and 3D meshes.
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Visualization](Category:Visualization "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Visualization](Category:Visualization "wikilink")

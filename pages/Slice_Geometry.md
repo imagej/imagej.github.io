@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT
-    [BoneJ2\#Slice\_geometry\_.28WIP.29](BoneJ2#Slice_geometry_.28WIP.29 "wikilink")
+1.  REDIRECT [BoneJ2\#Slice\_geometry\_.28WIP.29](BoneJ2#Slice_geometry_.28WIP.29 "wikilink")

@@ -8,39 +8,21 @@ categories: News
 description: test description
 ---
 
-A new minor version of [TrackMate\_](TrackMate_ "wikilink") has been
-released. This page lists the changes that are visible to the user.
+A new minor version of [TrackMate\_](TrackMate_ "wikilink") has been released. This page lists the changes that are visible to the user.
 
-Version 2.2.0 focuses mainly on extendability, tracking performance and
-detection accuracy.
+Version 2.2.0 focuses mainly on extendability, tracking performance and detection accuracy.
 
 #### Highlights
 
-  - Major **improvement for tracking performance**: The LAP trackers are
-    now based on the
-    [Jonker-Volgenant](http://link.springer.com/article/10.1007%2FBF02278710)
-    solver, which performs better than the Munkres-Kuhn we were using
-    until then. Our initial tests report that this new version runs 2x
-    to 4x faster.
+  - Major **improvement for tracking performance**: The LAP trackers are now based on the [Jonker-Volgenant](http://link.springer.com/article/10.1007%2FBF02278710) solver, which performs better than the Munkres-Kuhn we were using until then. Our initial tests report that this new version runs 2x to 4x faster.
 
 <!-- end list -->
 
-  - A **major problem was found in the LoG detector**: Because of a
-    severe rounding error, the LoG detector was not behaving as a true
-    LoG detector, which strongly hindered its accuracy and potence. The
-    problem is now fixed and **the accuracy of the detector has vastly
-    improved**. You should now observe much better results when using
-    this detector: less spurious spots, better spot size sensitivity,
-    better sensitivity to faint spots. On its side, the DoG detector now
-    handles spots that lie on the border of the images better. Of
-    course, the results will be different when comparing to v2.1.1.
+  - A **major problem was found in the LoG detector**: Because of a severe rounding error, the LoG detector was not behaving as a true LoG detector, which strongly hindered its accuracy and potence. The problem is now fixed and **the accuracy of the detector has vastly improved**. You should now observe much better results when using this detector: less spurious spots, better spot size sensitivity, better sensitivity to faint spots. On its side, the DoG detector now handles spots that lie on the border of the images better. Of course, the results will be different when comparing to v2.1.1.
 
 <!-- end list -->
 
-  - We also took the chance to rewrite all the detectors from scratch,
-    using the latest development in [ImgLib2](ImgLib2 "wikilink"). This
-    prompted **major performance improvement for the detection
-    process**. Here are the results of a quick benchmark:
+  - We also took the chance to rewrite all the detectors from scratch, using the latest development in [ImgLib2](ImgLib2 "wikilink"). This prompted **major performance improvement for the detection process**. Here are the results of a quick benchmark:
 
 | Detector                   | v2.1.1 | v2.2.0 | speedup factor |
 | -------------------------- | ------ | ------ | -------------- |
@@ -49,24 +31,13 @@ detection accuracy.
 | LoG detector for 3D images | 291s   | 18.2s  | x15            |
 | DoG detector for 3D images | 21.6s  | 15.1s  | x1.4           |
 
-(This benchmark was done with the ISBI challenge datasets). You can find
-more benchmarks [here](TrackMate_Performance "wikilink").
+(This benchmark was done with the ISBI challenge datasets). You can find more benchmarks [here](TrackMate_Performance "wikilink").
 
-  - Complete rewrite of the way we handle modules in TrackMate.
-    TrackMate now uses [SciJava](http://www.scijava.org/) and exploit
-    its automatic discovery mechanism for modules. Practically, **it is
-    now very easy to extend TrackMate**, and you do not depend on us
-    anymore at all for anything. We could completely disappear and you
-    would still be able to extend TrackMate so that it suits your need,
-    without requiring any of our help. Several
-    [tutorials](TrackMate#For_developers_2 "wikilink") describe how to
-    do this. This is made possible thanks to the enormous efforts of the
-    SciJava team. Thanks to them\!
+  - Complete rewrite of the way we handle modules in TrackMate. TrackMate now uses [SciJava](http://www.scijava.org/) and exploit its automatic discovery mechanism for modules. Practically, **it is now very easy to extend TrackMate**, and you do not depend on us anymore at all for anything. We could completely disappear and you would still be able to extend TrackMate so that it suits your need, without requiring any of our help. Several [tutorials](TrackMate#For_developers_2 "wikilink") describe how to do this. This is made possible thanks to the enormous efforts of the SciJava team. Thanks to them\!
 
 #### Improvements
 
-  - In [TrackScheme](TrackScheme "wikilink"), the tracks can be
-    navigated through using the keyboard:
+  - In [TrackScheme](TrackScheme "wikilink"), the tracks can be navigated through using the keyboard:
       - UP: previous spot in time.
       - DOWN: next spot in time.
       - LEFT: next sibling within the same track
@@ -76,69 +47,39 @@ more benchmarks [here](TrackMate_Performance "wikilink").
 
 <!-- end list -->
 
-  - Major performance improvement when launching
-    [TrackScheme](TrackScheme "wikilink") on a large models.
+  - Major performance improvement when launching [TrackScheme](TrackScheme "wikilink") on a large models.
 
 <!-- end list -->
 
-  - Major performance improvement when selecting/deselecting in
-    [TrackScheme](TrackScheme "wikilink")
+  - Major performance improvement when selecting/deselecting in [TrackScheme](TrackScheme "wikilink")
 
 <!-- end list -->
 
-  - The 3D viewer is now in sync with manual modification. Any edit made
-    to the model is immediately echoed on the 3D viewer. This comes at a
-    price: the 3D viewer cannot be used for very large model in an
-    efficient manner.
+  - The 3D viewer is now in sync with manual modification. Any edit made to the model is immediately echoed on the 3D viewer. This comes at a price: the 3D viewer cannot be used for very large model in an efficient manner.
 
 <!-- end list -->
 
-  - The user can now define a *depth of drawing* display setting, that
-    limits the number of Z-slices on which we draw the model. This is
-    useful on very thick samples where the drawing of all the data
-    across all Zs can become confusing.
+  - The user can now define a *depth of drawing* display setting, that limits the number of Z-slices on which we draw the model. This is useful on very thick samples where the drawing of all the data across all Zs can become confusing.
 
 ![DepthOfDrawing.png](/images/pages/DepthOfDrawing.png "DepthOfDrawing.png")"
 
-  - Minor improvement for the track display on the main view, for large
-    models.
+  - Minor improvement for the track display on the main view, for large models.
 
 <!-- end list -->
 
-  - Ship a [MATLAB](MATLAB "wikilink") function to import in
-    [MATLAB](MATLAB "wikilink") the tracks exported by TrackMate. Check
-    [this](Using_TrackMate_with_MATLAB "wikilink").
+  - Ship a [MATLAB](MATLAB "wikilink") function to import in [MATLAB](MATLAB "wikilink") the tracks exported by TrackMate. Check [this](Using_TrackMate_with_MATLAB "wikilink").
 
 <!-- end list -->
 
-  - Warn the user if they feed TrackMate with a stack that has no
-    time-points by plenty of Z-slices. This is one of the main reason we
-    get irrelevant bug reports: By default, ImageJ considers that a
-    multi-image file is always made of 1 time-points and many Z-slices.
-    Whereas users mean to feed TrackMate with a movie made of several 2D
-    planes filmed over time. We now warn the user that the
-    dimensionality stored in the image might not be the one they expect.
+  - Warn the user if they feed TrackMate with a stack that has no time-points by plenty of Z-slices. This is one of the main reason we get irrelevant bug reports: By default, ImageJ considers that a multi-image file is always made of 1 time-points and many Z-slices. Whereas users mean to feed TrackMate with a movie made of several 2D planes filmed over time. We now warn the user that the dimensionality stored in the image might not be the one they expect.
 
 <!-- end list -->
 
-  - **Fine tune multithreading**. Before this version, TrackMate was
-    doing multithreading during detection in the following way: We run
-    the detection process on as many frames as we have threads, and each
-    frame is processed using 1 thread. This is suboptimal if we have a
-    large number of threads, but a few number of frames (e.g. 1 frame,
-    24 threads). This release fixes this: If we have 10 threads and 15
-    frames to process, we process 10 frames at once, and allocate 1
-    thread per frame. But if we have 10 threads and 2 frames, we process
-    the 2 frames at once, and allocate 5 threads per frame if we can.
-    For this to work of course, the detector must be multithreaded,
-    which is the case with the ones we ship now.
+  - **Fine tune multithreading**. Before this version, TrackMate was doing multithreading during detection in the following way: We run the detection process on as many frames as we have threads, and each frame is processed using 1 thread. This is suboptimal if we have a large number of threads, but a few number of frames (e.g. 1 frame, 24 threads). This release fixes this: If we have 10 threads and 15 frames to process, we process 10 frames at once, and allocate 1 thread per frame. But if we have 10 threads and 2 frames, we process the 2 frames at once, and allocate 5 threads per frame if we can. For this to work of course, the detector must be multithreaded, which is the case with the ones we ship now.
 
 <!-- end list -->
 
-  - TrackMate can now load partial TrackMate files, and still display
-    all the information it could retrieve, instead of generating an
-    error and quitting. This is useful if you have file that contains
-    the model section, but not the settings section.
+  - TrackMate can now load partial TrackMate files, and still display all the information it could retrieve, instead of generating an error and quitting. This is useful if you have file that contains the model section, but not the settings section.
 
 <!-- end list -->
 
@@ -150,8 +91,7 @@ more benchmarks [here](TrackMate_Performance "wikilink").
 
 <!-- end list -->
 
-  - Slightly better memory management for spot, edge and track coloring
-    for large models.
+  - Slightly better memory management for spot, edge and track coloring for large models.
 
 <!-- end list -->
 
@@ -159,29 +99,20 @@ more benchmarks [here](TrackMate_Performance "wikilink").
 
 #### Bug fixes
 
-  - Fix a major bug with the DoG detector preventing to use it with a
-    ROI.
+  - Fix a major bug with the DoG detector preventing to use it with a ROI.
 
 <!-- end list -->
 
-  - Fixed a minor warning triggered when using the 3D viewer as the main
-    view for TrackMate.
+  - Fixed a minor warning triggered when using the 3D viewer as the main view for TrackMate.
 
 <!-- end list -->
 
-  - When navigating backward in the GUI, the model is cleared when it is
-    sensible. This is made to avoid having "ghost" results floating over
-    unprocessed images.
+  - When navigating backward in the GUI, the model is cleared when it is sensible. This is made to avoid having "ghost" results floating over unprocessed images.
 
 <!-- end list -->
 
-  - Fix several issues with zooming and decorations in TrackScheme. Fix
-    a bug that caused the sliders to disappear for the simple style and
-    with some zoom levels. Zooming should be now more efficient, and
-    offers more zoom levels.
+  - Fix several issues with zooming and decorations in TrackScheme. Fix a bug that caused the sliders to disappear for the simple style and with some zoom levels. Zooming should be now more efficient, and offers more zoom levels.
 
-{% include person content='JeanYvesTinevez' %}
-([talk](User_talk:JeanYvesTinevez "wikilink")) 05:32, 19 March 2014
-(CDT)
+{% include person content='JeanYvesTinevez' %} ([talk](User_talk:JeanYvesTinevez "wikilink")) 05:32, 19 March 2014 (CDT)
 
 [Category:News](Category:News "wikilink")

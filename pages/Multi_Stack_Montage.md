@@ -8,53 +8,36 @@ categories: Plugins
 description: test description
 ---
 
-{% capture source %} {% include github org="PTBIOP"
-repo="ijp-multi-stack-montage" %} {% endcapture %} {% include
-sidebox-right name='Multi Stack Montage' software='ImageJ'
-author='Olivier Burri, Romain Guiet' maintainer='Olivier Burri'
-filename='Multi\_Stack\_Montage.jar' released='August 2015'
-version='August 2015' source=source status='stable'
-category='[Stacks|Montage|Visualization](:Category:Plugins "wikilink")'
-website='[BIOP Staff
-Page](http://biop.epfl.ch/INFO_Facility.html#staff)' %}
+
+{% capture source%}
+{% include github org='PTBIOP' repo='ijp-multi-stack-montage' %}
+{% endcapture %}
+{% include info-box name='Multi Stack Montage' software='ImageJ' author='Olivier Burri, Romain Guiet' maintainer='Olivier Burri' filename='Multi\_Stack\_Montage.jar' released='August 2015' latest-version='August 2015' source=source status='stable' category='[Stacks|Montage|Visualization](:Category:Plugins "wikilink")' website=' [BIOP Staff Page](http://biop.epfl.ch/INFO_Facility.html#staff) ' %}
 
 ## Purpose
 
-This plugin brings a bit more functionality that was not available using
-the **Make Montage...** Plugin, namely making montages out of multiple
-stacks and hyperstacks.
+This plugin brings a bit more functionality that was not available using the **Make Montage...** Plugin, namely making montages out of multiple stacks and hyperstacks.
 
 ## Installation
 
-This plugin is available from the {% include list-of-update-sites
-content='PTBIOP Update Site' %} This places it in a "BIOP" Folder in the
-plugins directory of Fiji/ImageJ
+This plugin is available from the {% include list-of-update-sites content='PTBIOP Update Site' %} This places it in a "BIOP" Folder in the plugins directory of Fiji/ImageJ
 
 ## Use
 
-Call up the plugin using *Plugins-\>BIOP-\>Multi Stack Montage...* and
-select the stacks that you wish to use.
+Call up the plugin using *Plugins-\>BIOP-\>Multi Stack Montage...* and select the stacks that you wish to use.
 
-![Interface of the plugin](/images/pages/Hyperstacks_Montage_menu.jpg
-"Interface of the plugin")"
+![Interface of the plugin](/images/pages/Hyperstacks_Montage_menu.jpg "Interface of the plugin")"
 
-{% include warning-sidebox-right content='If you are going to make a
-montage, you need each stack to be as follows:
+{% include warning-box content='If you are going to make a montage, you need each stack to be as follows:
 
   - Same number of Channels, Slices and Timepoints
-  - Same Data Type (8-bit, 16-bit, 32-bit or RGB)
+  - Same Data Type (8-bit, 16-bit, 32-bit or RGB)' %}
 
-' %}
+In the case that there would be many images open, the plugin does not pre-select any images.
 
-In the case that there would be many images open, the plugin does not
-pre-select any images.
+![Example on RGB Stacks. Also works on multichannel, multislice, timepoints and any combination](/images/pages/Hyperstacks_Montage_example.jpg "Example on RGB Stacks. Also works on multichannel, multislice, timepoints and any combination")"
 
-![Example on RGB Stacks. Also works on multichannel, multislice,
-timepoints and any combination](/images/pages/Hyperstacks_Montage_example.jpg
-"Example on RGB Stacks. Also works on multichannel, multislice, timepoints and any combination")"
-
-This plugin is useful when montaging multiple views or when montaging
-RGB datasets all in one go.
+This plugin is useful when montaging multiple views or when montaging RGB datasets all in one go.
 
 ## Macro Recordable
 
@@ -148,9 +131,7 @@ public class My_Plugin implements PlugIn {
 
 ## Notes
 
-The Dialog is limited to 10 elements so as not to make a window
-potentially larger than the monitor's vertical resolution. However, it
-is unlimited if calling it from the macro recorder.
+The Dialog is limited to 10 elements so as not to make a window potentially larger than the monitor's vertical resolution. However, it is unlimited if calling it from the macro recorder.
 
 You do not need to enter "\*None\*" as the last stack.
 

@@ -8,21 +8,19 @@ categories: Tutorials,Plugins
 description: test description
 ---
 
-{% capture maintainer %} {% include person content="Schindelin" %} {%
-endcapture %}
 
-{% capture source %} {% include github org="fiji" repo="Fiji\_Plugins"
-source="fiji/color/Convert\_Red\_To\_Magenta.java" %} {% endcapture %}
-{% include sidebox-right software='ImageJ' name='Replace Red with
-Magenta' maintainer=maintainer author='Johannes Schindelin'
-source=source released='27/06/2011' version='27/06/2011' status=''
-category='[:Category:Plugins](:Category:Plugins "wikilink")' %}
+{% capture maintainer%}
+{% include person content='Schindelin' %}
+{% endcapture %}
 
-This plugin converts all occurrences of red in a red/green image with
-magenta, effectively replacing it with a magenta/green merge.
+{% capture source%}
+{% include github org='fiji' repo='Fiji\_Plugins' source='fiji/color/Convert\_Red\_To\_Magenta.java' %}
+{% endcapture %}
+{% include info-box software='ImageJ' name='Replace Red with Magenta' maintainer=maintainer author='Johannes Schindelin' source=source released='27/06/2011' latest-version='27/06/2011' status='' category='[:Category:Plugins](:Category:Plugins "wikilink")' %}
 
-Note: the plugin completely ignores the blue channel, and replaces it
-with a copy of the red channel.
+This plugin converts all occurrences of red in a red/green image with magenta, effectively replacing it with a magenta/green merge.
+
+Note: the plugin completely ignores the blue channel, and replaces it with a copy of the red channel.
 
 Example:
 
@@ -32,30 +30,16 @@ Example:
 
 ## Replace Red with Magenta (system clipboard)
 
-Frequently all you [want](#Why.3F "wikilink") to do is to replace red by
-magenta in some images in a text document or a presentation. With this
-function, you only need to copy the image into the system clipboard in
-the other program, call this plugin in Fiji, and then you can paste the
-corrected image in the other program.
+Frequently all you [want](#Why.3F "wikilink") to do is to replace red by magenta in some images in a text document or a presentation. With this function, you only need to copy the image into the system clipboard in the other program, call this plugin in Fiji, and then you can paste the corrected image in the other program.
 
 ## Why?
 
-8% of the male population is red-green blind. If given the task to find
-two colors maximizing the number of people who cannot see the
-difference, red and green are a wise choice. Yet, still way too many
-figures in scientific publications show red/green merges.
+8% of the male population is red-green blind. If given the task to find two colors maximizing the number of people who cannot see the difference, red and green are a wise choice. Yet, still way too many figures in scientific publications show red/green merges.
 
-At least magenta/green images help this situation. However, [the only
-thing human eyes can quantify are
-numbers](Spirals_\(Macro\) "wikilink").
+At least magenta/green images help this situation. However, [the only thing human eyes can quantify are numbers](Spirals_\(Macro\) "wikilink").
 
-As a demonstration, call Fiji's {% include bc content='File | Open
-Samples | Spirals'%} and if you see a bright green and a bright yellow
-in the dominant spirals, you should look closer.
+As a demonstration, call Fiji's {% include bc content='File | Open Samples | Spirals'%} and if you see a bright green and a bright yellow in the dominant spirals, you should look closer.
 
-However, in the 21st century, one should always use proper
-[Colocalization](Colocalization "wikilink") with scatter plots and
-statistics. It is [too easy not to](Coloc_2 "wikilink").
+However, in the 21st century, one should always use proper [Colocalization](Colocalization "wikilink") with scatter plots and statistics. It is [too easy not to](Coloc_2 "wikilink").
 
-[Category:Tutorials](Category:Tutorials "wikilink")
-[Category:Plugins](Category:Plugins "wikilink")
+[Category:Tutorials](Category:Tutorials "wikilink") [Category:Plugins](Category:Plugins "wikilink")

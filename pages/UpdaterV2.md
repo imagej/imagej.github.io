@@ -10,38 +10,28 @@ description: test description
 
 # Upgrading the ImageJ / Fiji updater
 
-There is a [wiki page](https://imagej.net/Updater) documenting the
-Updater from user perspective, this page is setting a stage for the
-changes that will be made to the updater.
+There is a [wiki page](https://imagej.net/Updater) documenting the Updater from user perspective, this page is setting a stage for the changes that will be made to the updater.
 
 ## Basics
 
-Fiji is an image processing software melting ImageJ1 with novel ImageJ2
-functionalities based on scijava and imglib2.
+Fiji is an image processing software melting ImageJ1 with novel ImageJ2 functionalities based on scijava and imglib2.
 
-The core plugins written in Java, versioned via Maven and distributed
-via update sites. But update sites can be used to distribute any type of
-files (e.g. scripts or binaries).
+The core plugins written in Java, versioned via Maven and distributed via update sites. But update sites can be used to distribute any type of files (e.g. scripts or binaries).
 
 ## User perspective
 
 ![`user-updater.png`](/images/pages/user-updater.png "user-updater.png")"` `
 
   - the user downloads packaged Fiji from website
-  - some update sites are enabled by default and will serve all core
-    updates (see update site chapter)
-  - each time Fiji is started, these update sites are checked for new
-    content
-  - in case there is new content, the user will be asked to approve the
-    updates
+  - some update sites are enabled by default and will serve all core updates (see update site chapter)
+  - each time Fiji is started, these update sites are checked for new content
+  - in case there is new content, the user will be asked to approve the updates
 
 ![user\_updatesite.png](/images/pages/user_updatesite.png "user_updatesite.png")"
 
-  - the user can manually add additional update sites which will then
-    also be checked for updates on startup
+  - the user can manually add additional update sites which will then also be checked for updates on startup
 
-Updates will be downloaded to `Fiji.app/updates`. The launcher is moving
-the updates to their final destination on the next reboot (?).
+Updates will be downloaded to `Fiji.app/updates`. The launcher is moving the updates to their final destination on the next reboot (?).
 
 ## Update site maintainer perspective
 
@@ -49,8 +39,7 @@ the updates to their final destination on the next reboot (?).
   - the maintainer adds new or updated plugins to the installation
       - .. by adding them manually
       - .. by installing them via maven
-  - the maintainer uses the updater to select the changed / new files
-    and upload them to the update site
+  - the maintainer uses the updater to select the changed / new files and upload them to the update site
 
 ## Fiji release maintainer perspective
 
@@ -59,36 +48,22 @@ the updates to their final destination on the next reboot (?).
 
 ## Class perspective
 
-  - on Startup, the command `net.imagej.updater.CheckForUpdates` is
-    called.
+  - on Startup, the command `net.imagej.updater.CheckForUpdates` is called.
   - `CheckForUpdates` calls `net.imagej.updater.UpToDate`
-  - `UpToDate` checks if the user wants to ignore updates, checks the
-    internet connection, checks write access, etc..
-  - `UpToDate` also checks if any of the enabled update sites have
-    different URLs on the available list of update sites (since Updater
-    V1) and whether any update sites have a newer update timestamp than
-    the one locally stored for that update site
-  - in case there are updates, `CheckForUpdates` calls
-    `PromptUserToUpdate` which invokes
-    `net.imagej.ui.swing.updater.ImageJUpdater`
-  - `ImageJUpdater` is the command creating the graphical user
-    interfaces for dealing with updated files and update site URLs
+  - `UpToDate` checks if the user wants to ignore updates, checks the internet connection, checks write access, etc..
+  - `UpToDate` also checks if any of the enabled update sites have different URLs on the available list of update sites (since Updater V1) and whether any update sites have a newer update timestamp than the one locally stored for that update site
+  - in case there are updates, `CheckForUpdates` calls `PromptUserToUpdate` which invokes `net.imagej.ui.swing.updater.ImageJUpdater`
+  - `ImageJUpdater` is the command creating the graphical user interfaces for dealing with updated files and update site URLs
 
 ### Changes on V2
 
-  - In case there are updates, `UpToDate` will tell the `UpdateService`
-    which can be used to open the ImageJUpdater directly or just trigger
-    a notification indicator in the UI
+  - In case there are updates, `UpToDate` will tell the `UpdateService` which can be used to open the ImageJUpdater directly or just trigger a notification indicator in the UI
 
 ## The official list of update sites
 
-You can access the list of official update sites here:
-https://imagej.github.io/list-of-update-sites/. Anything on this list
-can be installed from Fiji by opening the updater, clicking `Manage
-update sites` and clicking the check mark of the list entry.
+You can access the list of official update sites here: https://imagej.github.io/list-of-update-sites/. Anything on this list can be installed from Fiji by opening the updater, clicking `Manage update sites` and clicking the check mark of the list entry.
 
-Anyone who wants to add or change this list needs to create a pull
-request on https://github.com/imagej/list-of-update-sites.
+Anyone who wants to add or change this list needs to create a pull request on https://github.com/imagej/list-of-update-sites.
 
 These are the update sites enabled by default:
 
@@ -96,27 +71,17 @@ These are the update sites enabled by default:
   - Fiji
   - Java 8
 
-There are historical reasons for the existence of multiple default
-update sites, e.g. old Fiji installations running on Java 6 will not
-receive updates served via the Java 8 update site.
+There are historical reasons for the existence of multiple default update sites, e.g. old Fiji installations running on Java 6 will not receive updates served via the Java 8 update site.
 
 ## `db.xml`: The database structure of the updater
 
-The updater uses its own XML structure to handle versioning of update
-site uploads. The structure is used on the update sites to log which
-files were uploaded but also locally for ones Fiji installation to cache
-the content of the activated update sites.
+The updater uses its own XML structure to handle versioning of update site uploads. The structure is used on the update sites to log which files were uploaded but also locally for ones Fiji installation to cache the content of the activated update sites.
 
 ### The remote update site `db.xml` file
 
-An update site database file contains a `plugin` tag for each file that
-was ever uploaded to the update site. The tag contains a `version` if
-the file is currently used and `previous-version` tags for all the past
-versions of this file. In case of a deprecated file there is no
-`version` tag.
+An update site database file contains a `plugin` tag for each file that was ever uploaded to the update site. The tag contains a `version` if the file is currently used and `previous-version` tags for all the past versions of this file. In case of a deprecated file there is no `version` tag.
 
-For details check out this example of a remote update site database
-file:
+For details check out this example of a remote update site database file:
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE pluginRecords [
@@ -265,8 +230,7 @@ file:
 
 ### The local Fiji `db.xml` file
 
-A freshly downlodaed Fiji `db.xml` file additionally contains entries
-for the update sites which are enabled by default:
+A freshly downlodaed Fiji `db.xml` file additionally contains entries for the update sites which are enabled by default:
 
 ``` xml
 <update-site name="ImageJ" url="http://update.imagej.net/" timestamp="20181128223928"/>
@@ -274,18 +238,11 @@ for the update sites which are enabled by default:
 <update-site name="Java-8" url="http://sites.imagej.net/Java-8/" timestamp="20181204081238"/>
 ```
 
-Once the user opens the list of update sites, the updater is accessing
-the official list of update sites (see the [update site
-chapter](#list-of-update-sites "wikilink")) and adding entries for the
-disabled but available update sites to the database.
+Once the user opens the list of update sites, the updater is accessing the official list of update sites (see the [update site chapter](#list-of-update-sites "wikilink")) and adding entries for the disabled but available update sites to the database.
 
-The database also contains entries for all the files that are managed by
-update sites. Each file is represented by a `plugin` tag. The tag
-contains information about the update site that is associated with this
-file and its previous versions from that update site.
+The database also contains entries for all the files that are managed by update sites. Each file is represented by a `plugin` tag. The tag contains information about the update site that is associated with this file and its previous versions from that update site.
 
-For more details check out this example of a the `db.xml` of a local
-Fiji installation:
+For more details check out this example of a the `db.xml` of a local Fiji installation:
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE pluginRecords [
@@ -437,41 +394,27 @@ Fiji installation:
 
 ## Future plans
 
-Vision: Make people looking forward to getting updates, because they get
-to know about improvements and have full control to handle situation or
-revert changes in case things go south.
+Vision: Make people looking forward to getting updates, because they get to know about improvements and have full control to handle situation or revert changes in case things go south.
 
 ### Version terminology
 
   - **Updater V0**: The current updater
-  - **Updater V1**: Intermediate solution to serve HTTPS updates to
-    anyone whose Java version supports it, accessing list of available
-    update sites list via HTTPS and containing HTTPS links if supported,
-    minimal changes
+  - **Updater V1**: Intermediate solution to serve HTTPS updates to anyone whose Java version supports it, accessing list of available update sites list via HTTPS and containing HTTPS links if supported, minimal changes
   - **Updater V2**: Next-generation version of the Updater
 
 ### Routing for available update sites / updater upgrades
 
-![availablesitesrouting.png](/images/pages/availablesitesrouting.png
-"availablesitesrouting.png")"
+![availablesitesrouting.png](/images/pages/availablesitesrouting.png "availablesitesrouting.png")"
 
-A server providing the official update sites serves different content
-depending if the updater is requesting them via HTTP or HTTPS. The
-current updater (V0) should receive an upgrade to V1 via HTTP and HTTPS.
-The updater V1 should only be able to upgrade to V2 if a connection via
-HTTPS can be established. Starting from V2 official updates will only be
-shipped via HTTPS.
+A server providing the official update sites serves different content depending if the updater is requesting them via HTTP or HTTPS. The current updater (V0) should receive an upgrade to V1 via HTTP and HTTPS. The updater V1 should only be able to upgrade to V2 if a connection via HTTPS can be established. Starting from V2 official updates will only be shipped via HTTPS.
 
 ### Updater V1
 
 Relevant PRs / issues:
 
-  - [Issue for new
-    updater](https://github.com/imagej/imagej-updater/issues/70)
-  - [Update cached update site links
-    issue](https://github.com/imagej/imagej-updater/issues/66)
-  - [Support redirects
-    PR](https://github.com/imagej/imagej-updater/pull/67)
+  - [Issue for new updater](https://github.com/imagej/imagej-updater/issues/70)
+  - [Update cached update site links issue](https://github.com/imagej/imagej-updater/issues/66)
+  - [Support redirects PR](https://github.com/imagej/imagej-updater/pull/67)
   - [V1 updater PR](https://github.com/imagej/imagej-updater/pull/71)
 
 ### Features for Updater V2 or later (this list is quite incomplete)
@@ -485,8 +428,7 @@ Relevant PRs / issues:
 
   - handle update site IDs
   - handle mirrors
-  - versioning of updater log.xml (implement xml reader depending on
-    version)
+  - versioning of updater log.xml (implement xml reader depending on version)
   - maybe improve conflict management by utilizing maven
   - import / export / backup functionality
 
@@ -497,8 +439,7 @@ Relevant PRs / issues:
 
 ### Maven integration
 
-  - look at Eclipse: update site management, local installation version
-    management
+  - look at Eclipse: update site management, local installation version management
   - use locally cached files (.m2)
   - download files from maven repository
 

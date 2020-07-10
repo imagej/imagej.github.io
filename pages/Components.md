@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT
-    [Architecture\#Definitions](Architecture#Definitions "wikilink")
+1.  REDIRECT [Architecture\#Definitions](Architecture#Definitions "wikilink")

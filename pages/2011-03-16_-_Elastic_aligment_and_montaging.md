@@ -8,31 +8,14 @@ categories: News,Plugins,Registration
 description: test description
 ---
 
-We have implemented a long-standing simple idea for elastic alignment of
-large section series and montaging mosaics from unpredictably deformed
-tiles inspired by work from Elisabeth Guest and Takeo Igarashi. The idea
-is best explained at an old [poster
-from 2008](http://fly.mpi-cbg.de/dev/?pid=13&zp=0&yp=915416000.3604&xp=497332000.1958&sid0=17&s0=2)
-that you can browse through
-[CATMAID](http://fly.mpi-cbg.de/dev/?pid=13&zp=0&yp=915416000.3604&xp=497332000.1958&sid0=17&s0=2).
+We have implemented a long-standing simple idea for elastic alignment of large section series and montaging mosaics from unpredictably deformed tiles inspired by work from Elisabeth Guest and Takeo Igarashi. The idea is best explained at an old [poster from 2008](http://fly.mpi-cbg.de/dev/?pid=13&zp=0&yp=915416000.3604&xp=497332000.1958&sid0=17&s0=2) that you can browse through [CATMAID](http://fly.mpi-cbg.de/dev/?pid=13&zp=0&yp=915416000.3604&xp=497332000.1958&sid0=17&s0=2).
 
-Basically, each image is represented as an elastic mesh of
-spring-connected vertices that are dragged towards corresponding
-locations in overlapping images. Corresponding locations are found by
-block matching.
+Basically, each image is represented as an elastic mesh of spring-connected vertices that are dragged towards corresponding locations in overlapping images. Corresponding locations are found by block matching.
 
-Find the (still experimental) plugins for series alignment and montaging
-in an updated Fiji's Registration menu.
-[Documentation](Elastic_Alignment_and_Montage "wikilink") is available
-at the [Fiji Wiki](Elastic_Alignment_and_Montage "wikilink").
+Find the (still experimental) plugins for series alignment and montaging in an updated Fiji's Registration menu. [Documentation](Elastic_Alignment_and_Montage "wikilink") is available at the [Fiji Wiki](Elastic_Alignment_and_Montage "wikilink").
 
-[Elastic Alignment and
-Montage](Elastic_Alignment_and_Montage "wikilink") was developed by
-[Stephan Saalfeld](http://fly.mpi-cbg.de/saalfeld/).
+[Elastic Alignment and Montage](Elastic_Alignment_and_Montage "wikilink") was developed by [Stephan Saalfeld](http://fly.mpi-cbg.de/saalfeld/).
 
-Many thanks to {% include person content='Albertcardona' %} and {%
-include person content='Iarganda' %} for pushing and helping.
+Many thanks to {% include person content='Albertcardona' %} and {% include person content='Iarganda' %} for pushing and helping.
 
-[Category:News](Category:News "wikilink")
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Registration](Category:Registration "wikilink")
+[Category:News](Category:News "wikilink") [Category:Plugins](Category:Plugins "wikilink") [Category:Registration](Category:Registration "wikilink")

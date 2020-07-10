@@ -8,35 +8,27 @@ categories:
 description: test description
 ---
 
-{% include develop-menu %} This is a short guide on how to start using
-the Eclipse code style profile of ImageJ.
+{% include develop-menu%} This is a short guide on how to start using the Eclipse code style profile of ImageJ.
 
 ## Installing Eclipse code formatter plugin
 
-The first step is to install the Eclipse code formatter (ECF) plugin to
-your IntelliJ:
+The first step is to install the Eclipse code formatter (ECF) plugin to your IntelliJ:
 
 1.  Open *File \> Settings*
 2.  Select *Plugins* from the left-hand pane
 3.  Click *Browse repositories...*
 4.  Type *Eclipse code formatter* to the search field
-5.  Select the plugin from the list and click *install* on the
-    right-hand pane
+5.  Select the plugin from the list and click *install* on the right-hand pane
 6.  Click *Restart IntelliJ*
 
-A tutorial on IntelliJ plugins can be found
-[here](https://www.jetbrains.com/help/idea/2016.2/installing-updating-and-uninstalling-repository-plugins.html).
+A tutorial on IntelliJ plugins can be found [here](https://www.jetbrains.com/help/idea/2016.2/installing-updating-and-uninstalling-repository-plugins.html).
 
 ## Plugin setup
 
-After installing the ECF plugin you need to set it to use the Eclipse
-code styles file of the ImageJ project:
+After installing the ECF plugin you need to set it to use the Eclipse code styles file of the ImageJ project:
 
-1.  Download
-    [eclipse-preferences.epf](https://github.com/imagej/imagej/blob/master/config/eclipse-preferences.epf)
-2.  Open Eclipse and follow
-    [these](http://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftimpandexp.htm)
-    steps to import an `.epf` file
+1.  Download [eclipse-preferences.epf](https://github.com/imagej/imagej/blob/master/config/eclipse-preferences.epf)
+2.  Open Eclipse and follow [these](http://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftimpandexp.htm) steps to import an `.epf` file
 3.  Open *Window \> Preferences \> Java \> Code Style \> Formatter*
 4.  Set *Active Profile* to *ImageJ*
 5.  Click *Export All...* and save the XML file
@@ -44,16 +36,11 @@ code styles file of the ImageJ project:
 7.  Open your project
 8.  Open *File \> Settings \> Eclipse Code Formatter*
 9.  Check the *Use the Eclipse code formatter* radio button
-10. Set *Eclipse Java Formatter config file* to the XML file you just
-    created
+10. Set *Eclipse Java Formatter config file* to the XML file you just created
 11. Set *Java formatter profile* to *ImageJ*
 12. Check *Optimize Imports*
-13. Set *Import order* to *Manual configuration* and write
-    `com;io;java;javax;net;org;`
+13. Set *Import order* to *Manual configuration* and write `com;io;java;javax;net;org;`
 
-**NB** You can skip the first five steps if you use this [XML
-file](https://github.com/imagej/imagej/blob/bcb4eddf41e90ffba6d520b83e691d3a02d65739/config/eclipse-code-clean-up-profile.xml).
-Note that it is old and possibly out of date.
+**NB** You can skip the first five steps if you use this [XML file](https://github.com/imagej/imagej/blob/bcb4eddf41e90ffba6d520b83e691d3a02d65739/config/eclipse-code-clean-up-profile.xml). Note that it is old and possibly out of date.
 
-More information on setting up the plugin can be found
-[here](https://github.com/krasa/EclipseCodeFormatter#instructions).
+More information on setting up the plugin can be found [here](https://github.com/krasa/EclipseCodeFormatter#instructions).

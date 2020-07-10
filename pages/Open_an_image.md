@@ -12,13 +12,9 @@ description: test description
 
 The answer to this question depends on how you use ImageJ.
 
-  - Do you want the open an image using the graphical user interface?
-    ([\#From the GUI](#From_the_GUI "wikilink"))
-  - Are you writing a script? ([\#From a
-    Script](#From_a_Script "wikilink"))
-  - Are you using Java, to develop an ImageJ2 plug-in or do write your
-    one program using ImgLib2 and ImageJ libraries? ([\#From
-    Java](#From_Java "wikilink"))
+  - Do you want the open an image using the graphical user interface? ([\#From the GUI](#From_the_GUI "wikilink"))
+  - Are you writing a script? ([\#From a Script](#From_a_Script "wikilink"))
+  - Are you using Java, to develop an ImageJ2 plug-in or do write your one program using ImgLib2 and ImageJ libraries? ([\#From Java](#From_Java "wikilink"))
 
 ## From the GUI
 
@@ -26,13 +22,11 @@ In the menu select "File \> Open ..." or "File \> Import \> ...".
 
 ## From a Script
 
-What are then possible ways to open an image when you are writing an
-Python / Groovy / ... script in ImageJ?
+What are then possible ways to open an image when you are writing an Python / Groovy / ... script in ImageJ?
 
 ### Use a parameter of type Dataset
 
-When the following script is run in ImageJ. ImageJ will ask to user to
-select two Images, before it runs the script.
+When the following script is run in ImageJ. ImageJ will ask to user to select two Images, before it runs the script.
 
 ``` python
 # @Dataset firstImage

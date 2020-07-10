@@ -8,43 +8,27 @@ categories: Location
 description: test description
 ---
 
-The [Eliceiri](User:Eliceiri "wikilink") lab, also known as the
-[Laboratory for Optical and Computational
-Instrumentation](http://loci.wisc.edu/), is an interdisciplinary
-biophotonics laboratory at the [University of
-Wisconsin-Madison](http://wisc.edu/).
+The [Eliceiri](User:Eliceiri "wikilink") lab, also known as the [Laboratory for Optical and Computational Instrumentation](http://loci.wisc.edu/), is an interdisciplinary biophotonics laboratory at the [University of Wisconsin-Madison](http://wisc.edu/).
 
 ![ 250px | border](/images/pages/Loci-logo.png " 250px | border")"
 
 LOCI plays a very active role in the ImageJ community:
 
-  - LOCI launched the [ImageJ2](ImageJ2 "wikilink"),
-    [SCIFIO](SCIFIO "wikilink") and [SciJava
-    Common](SciJava_Common "wikilink") projects, and continues to drive
-    their development.
-  - Together with [CSBD](CSBD "wikilink")/[MPI-CBG](MPI-CBG "wikilink"),
-    LOCI maintains the [Fiji](Fiji "wikilink") project.
-  - LOCI founded the [Bio-Formats](Bio-Formats "wikilink") project, and
-    led the project's development for several years.
-  - LOCI regularly funds and hosts [hackathons](hackathons "wikilink")
-    intended to foster community development of [open
-    source](open_source "wikilink") biological software projects.
-  - LOCI hosts the `imagej.net` web services, as well as related
-    services including `fiji.sc` and `openspim.org`.
+  - LOCI launched the [ImageJ2](ImageJ2 "wikilink"), [SCIFIO](SCIFIO "wikilink") and [SciJava Common](SciJava_Common "wikilink") projects, and continues to drive their development.
+  - Together with [CSBD](CSBD "wikilink")/[MPI-CBG](MPI-CBG "wikilink"), LOCI maintains the [Fiji](Fiji "wikilink") project.
+  - LOCI founded the [Bio-Formats](Bio-Formats "wikilink") project, and led the project's development for several years.
+  - LOCI regularly funds and hosts [hackathons](hackathons "wikilink") intended to foster community development of [open source](open_source "wikilink") biological software projects.
+  - LOCI hosts the `imagej.net` web services, as well as related services including `fiji.sc` and `openspim.org`.
 
-LOCI is a founding member of the [SciJava](SciJava "wikilink")
-collaboration, and a partner of the [Open Microscopy Environment
-consortium](http://openmicroscopy.org/).
+LOCI is a founding member of the [SciJava](SciJava "wikilink") collaboration, and a partner of the [Open Microscopy Environment consortium](http://openmicroscopy.org/).
 
 ## Developers
 
   - {% include person content='Eliceiri' %} (PI)
   - {% include person content='Rueden' %} (lead)
   - {% include person content='Etarena' %} (developer)
-  - {% include person content='gselzer' %} (developer, [ImageJ
-    Ops](ImageJ_Ops "wikilink"))
-  - {% include person content='Xanthorapedia' %} (developer,
-    [FLIMJ](FLIMJ "wikilink"))
+  - {% include person content='gselzer' %} (developer, [ImageJ Ops](ImageJ_Ops "wikilink"))
+  - {% include person content='Xanthorapedia' %} (developer, [FLIMJ](FLIMJ "wikilink"))
 
 ## Alumni
 

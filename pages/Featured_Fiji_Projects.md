@@ -8,15 +8,13 @@ categories: Fiji
 description: test description
 ---
 
-{% include fijimenu %} Fiji is home to quite a few nice ImageJ plugins\!
-Here is a non-exhaustive list:
+{% include fijimenu%} Fiji is home to quite a few nice ImageJ plugins\! Here is a non-exhaustive list:
 
   - [3D Viewer](3D_Viewer "wikilink")
 
 <!-- end list -->
 
-  - Hardware-accelerated 3D volume and mesh visualization, and 3D
-    registration of image stacks.
+  - Hardware-accelerated 3D volume and mesh visualization, and 3D registration of image stacks.
 
 <!-- end list -->
 
@@ -24,44 +22,26 @@ Here is a non-exhaustive list:
 
 <!-- end list -->
 
-  - Interactive image transformation
-    ([rigid](Interactive_Rigid "wikilink"),
-    [similarity](Interactive_Similarity "wikilink"),
-    [affine](Interactive_Affine "wikilink"),
-    [perspective](Interactive_Perspective "wikilink"),
-    [deform](Interactive_Moving_Least_Squares "wikilink"))
+  - Interactive image transformation ([rigid](Interactive_Rigid "wikilink"), [similarity](Interactive_Similarity "wikilink"), [affine](Interactive_Affine "wikilink"), [perspective](Interactive_Perspective "wikilink"), [deform](Interactive_Moving_Least_Squares "wikilink"))
   - [Interactive Stack Rotation](Interactive_Stack_Rotation "wikilink")
-  - [Landmark based transformation and
-    deformation](Landmark_Correspondences "wikilink")
-  - [Panorama
-    Viewer](http://fly.mpi-cbg.de/saalfeld/Projects/panorama.html)
-  - [Distortion correction](Distortion_correction "wikilink"): correct
-    lens deformation induced by the microscope (optical and electron
-    microscopy). See the [Distortion Correction plugin
-    manual](http://www.kaynig.de/downloads/DistortionCorrectionPlugin_Manual.pdf).
+  - [Landmark based transformation and deformation](Landmark_Correspondences "wikilink")
+  - [Panorama Viewer](http://fly.mpi-cbg.de/saalfeld/Projects/panorama.html)
+  - [Distortion correction](Distortion_correction "wikilink"): correct lens deformation induced by the microscope (optical and electron microscopy). See the [Distortion Correction plugin manual](http://www.kaynig.de/downloads/DistortionCorrectionPlugin_Manual.pdf).
 
 <!-- end list -->
 
-  - [Image
-    registration](Plugins_Menu#Plugins_.3E_Registration "wikilink")
+  - [Image registration](Plugins_Menu#Plugins_.3E_Registration "wikilink")
 
 <!-- end list -->
 
-  - [Elastic Alignment and
-    Montage](Elastic_Alignment_and_Montage "wikilink")
-  - [SPIM Registration](SPIM_Registration "wikilink") Registration and
-    fusion of Selective Plane Illumination Microscopy data.
-  - [Image Stitching](Image_Stitching "wikilink") Stitch multiple image
-    stacks across X,Y,Z,T and C.
+  - [Elastic Alignment and Montage](Elastic_Alignment_and_Montage "wikilink")
+  - [SPIM Registration](SPIM_Registration "wikilink") Registration and fusion of Selective Plane Illumination Microscopy data.
+  - [Image Stitching](Image_Stitching "wikilink") Stitch multiple image stacks across X,Y,Z,T and C.
   - [Feature Extraction](Feature_Extraction "wikilink") SIFT and MOPS.
-  - Consistent and elastic 2D registration
-    ([bUnwarpJ](http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/))
+  - Consistent and elastic 2D registration ([bUnwarpJ](http://biocomp.cnb.uam.es/~iarganda/bUnwarpJ/))
   - [Stack slice registration](Register_Virtual_Stack_Slices "wikilink")
-  - Image montage (via
-    [TrakEM2](http://www.ini.uzh.ch/~acardona/trakem2.html)) with global
-    optimization (in 2D and across sections)
-  - [VIB Protocol](VIB_Protocol "wikilink") Label-based 3D alignment of
-    image stacks.
+  - Image montage (via [TrakEM2](http://www.ini.uzh.ch/~acardona/trakem2.html)) with global optimization (in 2D and across sections)
+  - [VIB Protocol](VIB_Protocol "wikilink") Label-based 3D alignment of image stacks.
 
 <!-- end list -->
 
@@ -69,15 +49,12 @@ Here is a non-exhaustive list:
 
 <!-- end list -->
 
-  - [Simple Neurite Tracer](Simple_Neurite_Tracer "wikilink") (project
-    [page](http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/))
-  - [Segmentation
-    Editor](http://132.187.25.13/home/?category=Download&page=SegmentationEditor)
+  - [Simple Neurite Tracer](Simple_Neurite_Tracer "wikilink") (project [page](http://homepages.inf.ed.ac.uk/s9808248/imagej/tracer/))
+  - [Segmentation Editor](http://132.187.25.13/home/?category=Download&page=SegmentationEditor)
   - Manual (via [TrakEM2](http://www.ini.uzh.ch/~acardona/trakem2.html))
   - [Level Sets](Level_Sets "wikilink")
   - [Trainable Segmentation](Trainable_Weka_Segmentation "wikilink")
-  - [SIOX: Simple Interactive Object
-    Extraction](SIOX:_Simple_Interactive_Object_Extraction "wikilink")
+  - [SIOX: Simple Interactive Object Extraction](SIOX:_Simple_Interactive_Object_Extraction "wikilink")
 
 <!-- end list -->
 
@@ -101,8 +78,7 @@ Here is a non-exhaustive list:
 
 <!-- end list -->
 
-  - Generic and extensible *n*-dimensional image processing library for
-    Java.
+  - Generic and extensible *n*-dimensional image processing library for Java.
 
 <!-- end list -->
 
@@ -110,8 +86,7 @@ Here is a non-exhaustive list:
 
 <!-- end list -->
 
-  - Register/edit/analyze/segment/annotate/3D model terabytes of
-    confocal and electron microscopy images.
+  - Register/edit/analyze/segment/annotate/3D model terabytes of confocal and electron microscopy images.
 
 <!-- end list -->
 

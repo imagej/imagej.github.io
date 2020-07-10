@@ -8,71 +8,60 @@ categories:
 description: test description
 ---
 
-{% capture source %} {% include github org="sudgy" repo="multi-landmark"
-%} {% endcapture %}
 
-{% capture tatus %} {% include devstatus developer="yes" incubating="no"
-obsolete="no" %} {% endcapture %}
+{% capture source%}
+{% include github org='sudgy' repo='multi-landmark' %}
+{% endcapture %}
 
-{% capture tatus %} {% include supportstatus debugger="yes"
-reviewer="yes" support="yes" %} {% endcapture %}
+{% capture devStatus%}
+{% include devstatus developer='yes' incubating='no' obsolete='no' %}
+{% endcapture %}
 
-{% capture founders %} {% include person content="David Cohoe" %}
-([1](mailto:dcohoe@pdx.edu)) {% endcapture %}
+{% capture supportStatus%}
+{% include supportstatus debugger='yes' reviewer='yes' support='yes' %}
+{% endcapture %}
 
-{% capture leads %} {% include person content="David Cohoe" %} {%
-endcapture %}
+{% capture founders%}
+{% include person content='David Cohoe' %} ([1](mailto:dcohoe@pdx.edu))
+{% endcapture %}
 
-{% capture developers %} {% include person content="David Cohoe" %} {%
-endcapture %}
+{% capture leads%}
+{% include person content='David Cohoe' %}
+{% endcapture %}
 
-{% capture debuggers %} {% include person content="David Cohoe" %} {%
-endcapture %}
+{% capture developers%}
+{% include person content='David Cohoe' %}
+{% endcapture %}
 
-{% capture reviewers %} {% include person content="David Cohoe" %} {%
-endcapture %}
+{% capture debuggers%}
+{% include person content='David Cohoe' %}
+{% endcapture %}
 
-{% capture support %} {% include person content="David Cohoe" %} {%
-endcapture %}
+{% capture reviewers%}
+{% include person content='David Cohoe' %}
+{% endcapture %}
 
-{% capture maintainers %} {% include person content="David Cohoe" %} {%
-endcapture %} {% include component project='ImageJ'
-name='Reconstruction' source=source
-license='[LGPLv3](LGPLv3 "wikilink")' tatus=tatus tatus=tatus
-founders=founders leads=leads developers=developers debuggers=debuggers
-reviewers=reviewers support=support maintainers=maintainers %}
+{% capture support%}
+{% include person content='David Cohoe' %}
+{% endcapture %}
 
-Multi-Image Landmark Correspondences is a plugin that extends mpicbg's
-[Landmark Correspondences](Landmark_Correspondences "wikilink") plugin
-to multiple images. It takes in any number of images that have point
-ROIs and aligns them all. It is included with DHM Utilities because we
-have used it to deal with some of the effects of chromatic aberration.
+{% capture maintainers%}
+{% include person content='David Cohoe' %}
+{% endcapture %}
+{% include component project='ImageJ' name='Reconstruction' source=source license='[LGPLv3](LGPLv3 "wikilink")' devStatus=devStatus supportStatus=supportStatus founders=founders leads=leads developers=developers debuggers=debuggers reviewers=reviewers support=support maintainers=maintainers %}
+
+Multi-Image Landmark Correspondences is a plugin that extends mpicbg's [Landmark Correspondences](Landmark_Correspondences "wikilink") plugin to multiple images. It takes in any number of images that have point ROIs and aligns them all. It is included with DHM Utilities because we have used it to deal with some of the effects of chromatic aberration.
 
 ## Usage
 
-To run the plugin, run the command "Plugins \> Transform \> Multi-Image
-Landmark Correspondences". A dialog will pop up with the following
-options:
+To run the plugin, run the command "Plugins \> Transform \> Multi-Image Landmark Correspondences". A dialog will pop up with the following options:
 
-  - Interpolation Type: What type of interpolation to use when
-    transforming.
-  - Suppress interpolation at discontinuities: If interpolation is
-    enabled, this parameter will appear. Enabling this option will
-    disable interpolation at points on the image where there are
-    discontinuities, but will still allow interpolation to happen
-    elsewhere. It is useful when dealing with phase images, because
-    discontinuities need to be sharp if an unwrapping algorithm is to be
-    used.
-  - Discontinuity threshold: If suppressing interpolation, this
-    parameter will appear. It is the lowest pixel value difference that
-    is considered to be a discontinuity, and for any differences greater
-    than or equal to this value, no interpolation will happen.
+  - Interpolation Type: What type of interpolation to use when transforming.
+  - Suppress interpolation at discontinuities: If interpolation is enabled, this parameter will appear. Enabling this option will disable interpolation at points on the image where there are discontinuities, but will still allow interpolation to happen elsewhere. It is useful when dealing with phase images, because discontinuities need to be sharp if an unwrapping algorithm is to be used.
+  - Discontinuity threshold: If suppressing interpolation, this parameter will appear. It is the lowest pixel value difference that is considered to be a discontinuity, and for any differences greater than or equal to this value, no interpolation will happen.
   - Scale to...: Which image to scale to. There are three options:
       - Biggest Image: Scale such that everything scales up.
       - Smallest Image: Scale such that everything scales down.
-      - Specific Image: Scale all images to a particular image. If this
-        option is selected, another parameter will appear to be the
-        image to scale to.
+      - Specific Image: Scale all images to a particular image. If this option is selected, another parameter will appear to be the image to scale to.
   - Transform Type: Which kind of transform you wish to use.
-  - Show Transform Matrices: Whether or not you wish to see the
-    transformation matrices being used.
+  - Show Transform Matrices: Whether or not you wish to see the transformation matrices being used.

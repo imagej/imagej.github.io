@@ -8,28 +8,23 @@ categories: Citable
 description: test description
 ---
 
-{% capture maintainer %} {% include person content="Mutterer" %} {%
-endcapture %}
 
-{% capture author %} {% include person content="Mutterer" %} {%
-endcapture %}
+{% capture maintainer%}
+{% include person content='Mutterer' %}
+{% endcapture %}
 
-{% capture source %} {% include github org="mutterer" repo="figurej" %}
-{% endcapture %} {% include sidebox-right software='ImageJ'
-name='FigureJ' maintainer=maintainer author=author source=source
-status='stable'
-category='[Visualization](:Category:Visualization "wikilink"),
-[Plugins](:Category:Plugins "wikilink")'
-website='https://imagejdocu.tudor.lu/plugin/utilities/figurej/start'
-%}This plugin allows easy creation of figures for publications, reports,
-projects.
+{% capture author%}
+{% include person content='Mutterer' %}
+{% endcapture %}
 
-Download, installation instructions and video tutorials can be found
-[here.](https://imagejdocu.tudor.lu/plugin/utilities/figurej/start)
+{% capture source%}
+{% include github org='mutterer' repo='figurej' %}
+{% endcapture %}
+{% include info-box software='ImageJ' name='FigureJ' maintainer=maintainer author=author source=source status='stable' category='[Visualization](:Category:Visualization "wikilink"), [Plugins](:Category:Plugins "wikilink")' website='https://imagejdocu.tudor.lu/plugin/utilities/figurej/start' %}This plugin allows easy creation of figures for publications, reports, projects.
 
-When using FigureJ for a research article, you can cite the following
-[article from Journal of
-Microscopy.](http://onlinelibrary.wiley.com/doi/10.1111/jmi.12069/abstract)
+Download, installation instructions and video tutorials can be found [here.](https://imagejdocu.tudor.lu/plugin/utilities/figurej/start)
+
+When using FigureJ for a research article, you can cite the following [article from Journal of Microscopy.](http://onlinelibrary.wiley.com/doi/10.1111/jmi.12069/abstract)
 
 ![Figurej\_poster.png](/images/pages/Figurej_poster.png "Figurej_poster.png")"
 

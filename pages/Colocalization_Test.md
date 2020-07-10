@@ -8,56 +8,30 @@ categories: Plugins,Colocalization,Color processing
 description: test description
 ---
 
-{% capture maintainer %} {% include person content="White" %} {%
-endcapture %}
 
-{% capture source %} {% include github org="fiji"
-repo="Colocalisation\_Analysis" source="Colocalisation\_Test.java" %},
-modified from [MBF ImageJ](MBF_ImageJ "wikilink") {% endcapture %} {%
-include sidebox-right name='Colocalization Test' software='ImageJ -
-Fiji' author='Tony Collins (and others?)' maintainer=maintainer
-filename='Colocalization.jar' source=source version='june 2009'
-website='[Colocalization
-Analysis\#Colocalization\_Test](Colocalization_Analysis#Colocalization_Test "wikilink")'
-status='<span style="color:red">Deprecated, use [Coloc
-2](Coloc_2 "wikilink") instead.</span>' %}
+{% capture maintainer%}
+{% include person content='White' %}
+{% endcapture %}
+
+{% capture source%}
+{% include github org='fiji' repo='Colocalisation\_Analysis' source='Colocalisation\_Test.java' %}, modified from [MBF ImageJ](MBF_ImageJ "wikilink")
+{% endcapture %}
+{% include info-box name='Colocalization Test' software='ImageJ - Fiji' author='Tony Collins (and others?)' maintainer=maintainer filename='Colocalization.jar' source=source latest-version='june 2009' website='[Colocalization Analysis\#Colocalization\_Test](Colocalization_Analysis#Colocalization_Test "wikilink")' status='<span style="color:red">Deprecated, use [Coloc 2](Coloc_2 "wikilink") instead.</span>' %}
 
 ## Purpose
 
-Performs one of a set of three statistical tests, comparing the Persons
-correlation coefficient of 2 colour channels in the real image data
-against a white noise image, or the same image data with one of the
-colour channels spatially shifted, repeated a number of times.
+Performs one of a set of three statistical tests, comparing the Persons correlation coefficient of 2 colour channels in the real image data against a white noise image, or the same image data with one of the colour channels spatially shifted, repeated a number of times.
 
 ## Documentation
 
-<span style="color: red">Note: this plugin is now deprecated. You should
-use the newer [Coloc 2](Coloc_2 "wikilink") plugin instead.</span>
+<span style="color: red">Note: this plugin is now deprecated. You should use the newer [Coloc 2](Coloc_2 "wikilink") plugin instead.</span>
 
-See the great documentation for this plugin at [Colocalization
-Analysis\#Colocalization\_Test](Colocalization_Analysis#Colocalization_Test "wikilink").
+See the great documentation for this plugin at [Colocalization Analysis\#Colocalization\_Test](Colocalization_Analysis#Colocalization_Test "wikilink").
 
-This tells you if the colocalization that you measure with other
-plugins, such as [Colocalization
-Threshold](Colocalization_Threshold "wikilink") is better than random
-chance. For a busy image with lots of signal in both chanels and very
-little area with no signal, there will be lots of random overlap, and
-this is easy to confuse with real colocalization with some biological
-meaning. It gives a P vaule (not a p-value) where 1 means all the
-randomised images had worse correlation than the real images, as you
-would expect for a real colocalised signel. A P value less than 0.95 is
-lower than the usual 95% statistical confidence limit.
+This tells you if the colocalization that you measure with other plugins, such as [Colocalization Threshold](Colocalization_Threshold "wikilink") is better than random chance. For a busy image with lots of signal in both chanels and very little area with no signal, there will be lots of random overlap, and this is easy to confuse with real colocalization with some biological meaning. It gives a P vaule (not a p-value) where 1 means all the randomised images had worse correlation than the real images, as you would expect for a real colocalised signel. A P value less than 0.95 is lower than the usual 95% statistical confidence limit.
 
-The methods implemented are White Noise Image Approximation of Costes'
-image randomisation (most robust, use 100 iterations), van Steensel and
-Fay (image shift methods). These differ in how the randomised images are
-generated from the real image or from white noise. None of them
-implement the Costes image randomisation test as described in his paper.
-[Coloc\_2](Coloc_2 "wikilink") does though.
+The methods implemented are White Noise Image Approximation of Costes' image randomisation (most robust, use 100 iterations), van Steensel and Fay (image shift methods). These differ in how the randomised images are generated from the real image or from white noise. None of them implement the Costes image randomisation test as described in his paper. [Coloc\_2](Coloc_2 "wikilink") does though.
 
-See also the [Colocalization
-Analysis](Colocalization_Analysis "wikilink") tutorial.
+See also the [Colocalization Analysis](Colocalization_Analysis "wikilink") tutorial.
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Colocalization](Category:Colocalization "wikilink")
-[Category:Color processing](Category:Color_processing "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Colocalization](Category:Colocalization "wikilink") [Category:Color processing](Category:Color_processing "wikilink")

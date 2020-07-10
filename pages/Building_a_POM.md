@@ -8,13 +8,7 @@ categories:
 description: test description
 ---
 
-{% include develop-menu content='tutorials' %}When you start a new
-[Maven](Maven "wikilink") project, one of the first things you will do
-is create an appropriate [pom.xml](https://maven.apache.org/pom.html).
-The POM determines what resources are available to your project. Given
-the scope of the ImageJ project, there are several possible starting
-points. The purpose of this guide is to help you select a pom.xml based
-on your individual project's goals.
+{% include develop-menu content='tutorials' %}When you start a new [Maven](Maven "wikilink") project, one of the first things you will do is create an appropriate [pom.xml](https://maven.apache.org/pom.html). The POM determines what resources are available to your project. Given the scope of the ImageJ project, there are several possible starting points. The purpose of this guide is to help you select a pom.xml based on your individual project's goals.
 
 # Using ImageJ
 
@@ -133,8 +127,7 @@ on your individual project's goals.
 
 ## Optional dependencies
 
-Simply copy and paste any or all of these into your POM's <dependency>
-block to add the indicated functionality.
+Simply copy and paste any or all of these into your POM's <dependency> block to add the indicated functionality.
 
 ``` xml
 

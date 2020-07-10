@@ -8,24 +8,11 @@ categories: Scripting
 description: test description
 ---
 
-{% include learn content='languages'
-%}[JavaScript](wikipedia:JavaScript "wikilink") is a high-level,
-dynamic, untyped programming language, supporting multiple paradigms
-including object-oriented, imperative and functional programming styles.
-Although there are similarities between JavaScript and
-[Java](Java "wikilink"), including language name and syntax, the two are
-distinct languages and differ greatly in their design.
+{% include learn content='languages' %}[JavaScript](wikipedia:JavaScript "wikilink") is a high-level, dynamic, untyped programming language, supporting multiple paradigms including object-oriented, imperative and functional programming styles. Although there are similarities between JavaScript and [Java](Java "wikilink"), including language name and syntax, the two are distinct languages and differ greatly in their design.
 
 # A note about JavaScript engines
 
-ImageJ supports JavaScript via Java's built-in [Nashorn JavaScript
-engine](wikipedia:Nashorn_\(JavaScript_engine\) "wikilink"). Versions of
-Java before Java 8 instead included Mozilla's [Rhino JavaScript
-engine](wikipedia:Rhino_\(JavaScript_engine\) "wikilink"). The two
-engines are largely, but not completely, compatible—meaning that some
-older scripts written for older versions of ImageJ (which used Rhino)
-may no longer function correctly when run with current ImageJ versions
-(which use Nashorn).
+ImageJ supports JavaScript via Java's built-in [Nashorn JavaScript engine](wikipedia:Nashorn_\(JavaScript_engine\) "wikilink"). Versions of Java before Java 8 instead included Mozilla's [Rhino JavaScript engine](wikipedia:Rhino_\(JavaScript_engine\) "wikilink"). The two engines are largely, but not completely, compatible—meaning that some older scripts written for older versions of ImageJ (which used Rhino) may no longer function correctly when run with current ImageJ versions (which use Nashorn).
 
 # JavaScript tutorial for ImageJ
 
@@ -33,8 +20,7 @@ may no longer function correctly when run with current ImageJ versions
 
 ### Importing classes
 
-{% include importing-classes lang='JavaScript' %} You can specify
-imports in JavaScript as follows:
+{% include importing-classes lang='JavaScript' %} You can specify imports in JavaScript as follows:
 
 ``` javascript
 importClass(Packages.java.io.File)
@@ -42,8 +28,7 @@ importClass(Packages.java.io.File)
 
 Where `java.io.File` is the class to be imported.
 
-For the most common stuff like e.g. *IJ*, the *RoiManager* or
-*GenericDialog* the following lines would be required:
+For the most common stuff like e.g. *IJ*, the *RoiManager* or *GenericDialog* the following lines would be required:
 
 ``` javascript
 importClass(Packages.ij.IJ);
@@ -53,28 +38,18 @@ importClass(Packages.ij.gui.GenericDialog);
 
 #### Using the full name of a class
 
-Sometimes it is easier to use the full name of a class than of using an
-import. E.g. you can use `Packages.ij.gui.GenericDialog` to access the
-class GenericDialog once.
+Sometimes it is easier to use the full name of a class than of using an import. E.g. you can use `Packages.ij.gui.GenericDialog` to access the class GenericDialog once.
 
-For some packages there are build in shortcuts. You can use
-`java.io.File` instead of `Packages.java.io.File` as *java* is a
-shortcut for *Packages.java* (there are shortcuts for *Packages.java*,
-*Packages.javax*, *Packages.com*, *Packages.edu*, *Packages.javafx* and
-*Packages.org*).
+For some packages there are build in shortcuts. You can use `java.io.File` instead of `Packages.java.io.File` as *java* is a shortcut for *Packages.java* (there are shortcuts for *Packages.java*, *Packages.javax*, *Packages.com*, *Packages.edu*, *Packages.javafx* and *Packages.org*).
 
 ### Variables
 
 There are two ways:
 
-  - Direct: the variable is globally visible (dangerous\! Leads to nasty
-    bugs.)
-  - With a <i>var</i> declaration: the variable is local, visible only
-    within the innermost code block.
+  - Direct: the variable is globally visible (dangerous\! Leads to nasty bugs.)
+  - With a <i>var</i> declaration: the variable is local, visible only within the innermost code block.
 
-<b>Local</b> variables are also <b>faster</b>, because they can be
-[efficiently optimized for
-access](http://www.mozilla.org/rhino/perf.html). Examples:
+<b>Local</b> variables are also <b>faster</b>, because they can be [efficiently optimized for access](http://www.mozilla.org/rhino/perf.html). Examples:
 
 ``` javascript
 importClass(Packages.ij.IJ);
@@ -165,8 +140,7 @@ IJ.log(names);
 
 #### Native Java arrays
 
-Native java arrays can be passed to java functions and methods directly.
-For example, to create an array of pixels:
+Native java arrays can be passed to java functions and methods directly. For example, to create an array of pixels:
 
 ``` javascript
 width = 512
@@ -176,9 +150,7 @@ print(pixels);
 print(pixels.length);
 ```
 
-To manipulate such arrays, just do so as if they were Javascript arrays.
-Beware, though, that now you are limited to numerical indices only, and
-within the array size only\!
+To manipulate such arrays, just do so as if they were Javascript arrays. Beware, though, that now you are limited to numerical indices only, and within the array size only\!
 
 ``` javascript
 width = 512
@@ -194,9 +166,7 @@ for (var i = 0; i < pixels.length; i++) {
 print(pixels[10]);
 ```
 
-With the nashorn JavaScript engine of Java 8, there is an easier way to
-create native Java arrays. You can create a constructor function that
-can be reused:
+With the nashorn JavaScript engine of Java 8, there is an easier way to create native Java arrays. You can create a constructor function that can be reused:
 
 ``` javascript
 var ByteArray = Java.type("byte[]");
@@ -214,9 +184,7 @@ var pixels2 = new ByteArray(10);
 print(pixels2.length);
 ```
 
-Above, beware of all problems derived from manipulating signed byte\[\]
-arrays, whose values should be made unsigned first, modified, then
-signed back into the array.
+Above, beware of all problems derived from manipulating signed byte\[\] arrays, whose values should be made unsigned first, modified, then signed back into the array.
 
 ### Functions
 
@@ -240,9 +208,7 @@ invertImage(imp);
 imp.updateAndDraw();
 ```
 
-The number of arguments you invoke a function with is flexible. All
-arguments with which a function is invoked are collected in a variable
-named <i>arguments</i>.
+The number of arguments you invoke a function with is flexible. All arguments with which a function is invoked are collected in a variable named <i>arguments</i>.
 
 For example:
 
@@ -274,20 +240,13 @@ var imp = createImage(400, 400, "RGB");
 imp.show();
 ```
 
-For a complex example see the example script {% include github
-repo='fiji'
-path='plugins/Examples/Multithreaded\_Image\_Processing\_in\_Javascript.js'
-label='Multithreaded Image Processing in Javascript' %}, which, beyond
-parallelization, illustrates how to pass functions as arguments to other
-functions, and how to invoke them with variable number of arguments.
+For a complex example see the example script {% include github repo='fiji' path='plugins/Examples/Multithreaded\_Image\_Processing\_in\_Javascript.js' label='Multithreaded Image Processing in Javascript' %}, which, beyond parallelization, illustrates how to pass functions as arguments to other functions, and how to invoke them with variable number of arguments.
 
 #### Functions as Objects
 
-Any number of variables may be created on the fly on the body of a
-function, on its own <i>this</i> self reference pointer.
+Any number of variables may be created on the fly on the body of a function, on its own <i>this</i> self reference pointer.
 
-To create an object in Javascript, just declare a function first that
-stores the object's data:
+To create an object in Javascript, just declare a function first that stores the object's data:
 
 ``` javascript
 // Use uppercase, by convention
@@ -313,8 +272,7 @@ var data = new Data(IJ.getImage(), "The current image");
 IJ.log("data contains: " + data.image + "\n" + "with annotation: " + data.annotation);
 ```
 
-To add methods to manipulate the new Data object, create a function that
-takes the object as an argument:
+To add methods to manipulate the new Data object, create a function that takes the object as an argument:
 
 ``` javascript
 importClass(Packages.ij.IJ);
@@ -344,9 +302,7 @@ function annotate(data) {
 annotate(data);
 ```
 
-As JavaScript uses prototype based object orientation, we can transform
-`annotate` to a object method. By adding a function to the prototype of
-an object, each instance of the object will own this method.
+As JavaScript uses prototype based object orientation, we can transform `annotate` to a object method. By adding a function to the prototype of an object, each instance of the object will own this method.
 
 ``` javascript
 importClass(Packages.ij.IJ);
@@ -376,13 +332,9 @@ data.annotate();
 
 ### Creating import namespaces
 
-With Java 8 the new JavaScript engine nashorn introduces the new
-`JavaImporter`. Instances of `JavaImporter` can be used by JavaScripts
-`with` statement. This will limit the scope of the imports to the code
-enclosed by the curly braces of the `with` statement.
+With Java 8 the new JavaScript engine nashorn introduces the new `JavaImporter`. Instances of `JavaImporter` can be used by JavaScripts `with` statement. This will limit the scope of the imports to the code enclosed by the curly braces of the `with` statement.
 
-The next code snippet shows how to write the annotation example with
-using the `JavaImporter`:
+The next code snippet shows how to write the annotation example with using the `JavaImporter`:
 
 ``` javascript
 function Data(image, annotation) {
@@ -415,8 +367,7 @@ with (importerIJ) {
 
 ### Inspecting fields and methods of an object
 
-So you are returned an object for a function and you don't know what is
-it.
+So you are returned an object for a function and you don't know what is it.
 
 To print its class within the interpreter:
 
@@ -432,8 +383,7 @@ ob = ...
 IJ.log(ob.getClass());
 ```
 
-To print the list of methods it has, with their return types and
-argument types:
+To print the list of methods it has, with their return types and argument types:
 
 ``` javascript
 ob = ...
@@ -482,19 +432,16 @@ IJ.log("The root of 12 is " + root);
 
 ### Functional programming
 
-Suppose you want to create a new image with the square values of the
-pixels in another image.
+Suppose you want to create a new image with the square values of the pixels in another image.
 
-First, we get a <i>source</i> image (such as the currently active
-image):
+First, we get a <i>source</i> image (such as the currently active image):
 
 ``` javascript
 
 var source = Packages.ij.IJ.getImage(); // the current image (an ImagePlus)
 ```
 
-Typically, you would then loop through all pixels and apply the result
-of their square to the other image:
+Typically, you would then loop through all pixels and apply the result of their square to the other image:
 
 ``` javascript
 // Return a new ImageProcessor containing the square of each pixel value in ImageProcessor ip
@@ -515,18 +462,11 @@ var ip2 = square( source.getProcessor() );
 new Packages.ij.ImagePlus("square of " + source.title, ip2).show();
 ```
 
-But imagine now you want to get an image with the square root instead of
-the square, or the logarithm. Isn't that the same?
+But imagine now you want to get an image with the square root instead of the square, or the logarithm. Isn't that the same?
 
-We would have to write similar functions named <i>sqrt</i> and
-<i>pow3</i>. And so on.
+We would have to write similar functions named <i>sqrt</i> and <i>pow3</i>. And so on.
 
-Instead, we should stop and think: there is a common pattern. All we
-want to do is to apply a function to each pixel in one image, and set
-the result into the same pixel in another image. In functional
-programming this pattern is called a <i>map</i> operation. Since
-Javascript lets us pass functions as arguments, we can define our own
-<i>map</i> function:
+Instead, we should stop and think: there is a common pattern. All we want to do is to apply a function to each pixel in one image, and set the result into the same pixel in another image. In functional programming this pattern is called a <i>map</i> operation. Since Javascript lets us pass functions as arguments, we can define our own <i>map</i> function:
 
 ``` javascript
 function map(fn, ip) {
@@ -541,8 +481,7 @@ function map(fn, ip) {
 }
 ```
 
-Now, equipped with our <i>map</i> function, we can apply any
-mathematical operation we want:
+Now, equipped with our <i>map</i> function, we can apply any mathematical operation we want:
 
 ``` javascript
 var ip_sqrt = map( Math.sqrt, source.getProcessor() );
@@ -550,8 +489,7 @@ var ip_log  = map( Math.log,  source.getProcessor() );
 ...
 ```
 
-But wait\! We didn't pass any extra argument. How can we do a generic
-function for <i>pow</i> so we can apply a power of 2, or 3, etc?
+But wait\! We didn't pass any extra argument. How can we do a generic function for <i>pow</i> so we can apply a power of 2, or 3, etc?
 
 We can rewrite our <i>map</i> function like this:
 
@@ -568,31 +506,20 @@ function map(fn, ip) {
 }
 ```
 
-... where <i>arguments\[2\]</i> is the argument, if any, present beyond
-any declared arguments. This works because in javascript, functions can
-accept a variable number of arguments:
+... where <i>arguments\[2\]</i> is the argument, if any, present beyond any declared arguments. This works because in javascript, functions can accept a variable number of arguments:
 
 ``` javascript
 var ip2 = map( Math.pow, source.getProcessor(), 2 );
 var ip3 = map( Math.pow, source.getProcessor(), 3 );
 ```
 
-Our second version of the <i>map</i> function, though, is a bit
-perverted: in standard functional programming techniques, the function
-given as arguments would be applied to each element at index <i>i</i> of
-every list; i.e. the function would receive as many arguments as lists
-we give to the <i>map</i>. But we don't need that.
+Our second version of the <i>map</i> function, though, is a bit perverted: in standard functional programming techniques, the function given as arguments would be applied to each element at index <i>i</i> of every list; i.e. the function would receive as many arguments as lists we give to the <i>map</i>. But we don't need that.
 
-So what's the big deal? We have abstracted away a common pattern,
-looping, but furthermore, we have reduced the complexity of our program.
-So now, for example, applying an optimization to the <i>map</i> function
-will improve <i>all</i> the places in our code that use it\!
+So what's the big deal? We have abstracted away a common pattern, looping, but furthermore, we have reduced the complexity of our program. So now, for example, applying an optimization to the <i>map</i> function will improve <i>all</i> the places in our code that use it\!
 
-(The same would be true for adding a debugging message, and what not.
-Anything you want).
+(The same would be true for adding a debugging message, and what not. Anything you want).
 
-For example, since the processing of each pixel is independent of the
-others, we could parallelize the processing\!
+For example, since the processing of each pixel is independent of the others, we could parallelize the processing\!
 
 ``` javascript
 function map(fn, ip) {
@@ -631,8 +558,7 @@ function map(fn, ip) {
 }
 ```
 
-We would call the now multithreaded <i>map</i> function just like
-before:
+We would call the now multithreaded <i>map</i> function just like before:
 
 ``` javascript
 var ip_sqrt = map( Math.sqrt, source.getProcessor() );
@@ -641,15 +567,9 @@ var ip2     = map( Math.pow, source.getProcessor(), 2 );
 var ip3     = map( Math.pow, source.getProcessor(), 3 );
 ```
 
-Above: <b>beware</b> that parallelizing a trivial function like
-Math.sqrt will likely result in a <b>slower</b> execution, because of
-multithreading overheads and the extreme contention in accessing the
-same pixel array from multiple threads. Perhaps you want to have <b>two
-versions</b> of map: the simple and the parallel one, and use the latter
-for complex, heavy functions.
+Above: <b>beware</b> that parallelizing a trivial function like Math.sqrt will likely result in a <b>slower</b> execution, because of multithreading overheads and the extreme contention in accessing the same pixel array from multiple threads. Perhaps you want to have <b>two versions</b> of map: the simple and the parallel one, and use the latter for complex, heavy functions.
 
-For further ease, we could create a <i>show</i> function that avoids
-further repetitions:
+For further ease, we could create a <i>show</i> function that avoids further repetitions:
 
 ``` javascript
 function mapAndShow(imp, fn) {
@@ -672,10 +592,7 @@ with (new JavaImporter(Packages.ij.IJ)) {
 
 <b>Note</b>
 
-All the above are examples to give you an idea of what is possible with
-Javascript and ImageJ. If you are interested on applying mathematical
-functions to images, you may be better off using internal ImageJ
-commands, as listed in the menu "Process - Math":
+All the above are examples to give you an idea of what is possible with Javascript and ImageJ. If you are interested on applying mathematical functions to images, you may be better off using internal ImageJ commands, as listed in the menu "Process - Math":
 
 ``` javascript
 with (new JavaImporter(Packages.ij.IJ, Packages.ij.ImagePlus)) {
@@ -692,28 +609,18 @@ with (new JavaImporter(Packages.ij.IJ, Packages.ij.ImagePlus)) {
 
 ### Using other *.js* files as libraries
 
-Programming becomes most useful when code is reused. To that end, many
-programmers will generalize their code into functions that can be called
-from other scripts as well.
+Programming becomes most useful when code is reused. To that end, many programmers will generalize their code into functions that can be called from other scripts as well.
 
-To avoid copy-pasting all the time (which invariably leads to stale and
-unmaintainable code), a good idea is to store such general functions in
-separate *.js* files and let the Javascript interpreter know about them.
-You can fetch the location of scripts in a system independent way using
-`IJ.getDirectory("plugins")`:
+To avoid copy-pasting all the time (which invariably leads to stale and unmaintainable code), a good idea is to store such general functions in separate *.js* files and let the Javascript interpreter know about them. You can fetch the location of scripts in a system independent way using `IJ.getDirectory("plugins")`:
 
 ``` javascript
 load(Packages.ij.IJ.getDirectory("plugins") + "JavaScript" + java.io.File.separator + "my-library-of-useful-functions.js");
 // now you can use the functions defined in above .js file
 ```
 
-To keep your global scope clean, it is recommended to use only functions
-in your libraries. As JavaScript has a function scope, all variables
-declared inside a function are not visible in the global scope and can't
-overwrite variables in the script you are working with.
+To keep your global scope clean, it is recommended to use only functions in your libraries. As JavaScript has a function scope, all variables declared inside a function are not visible in the global scope and can't overwrite variables in the script you are working with.
 
-Best practice is to create a single object in each library that uses the
-same name as the library.
+Best practice is to create a single object in each library that uses the same name as the library.
 
 ``` javascript
 // This is the code of the library SimpleObject.js
@@ -733,8 +640,7 @@ SimpleObject.prototype.print = function () {
 }
 ```
 
-The following code demonstrates how to use the library, if it's saved as
-*SimpleObject.js* in *Plugins/JavaScript/*.
+The following code demonstrates how to use the library, if it's saved as *SimpleObject.js* in *Plugins/JavaScript/*.
 
 ``` javascript
 load(Packages.ij.IJ.getDirectory("plugins") + "JavaScript" + java.io.File.separator + "SimpleObject.js");
@@ -760,8 +666,7 @@ imp = IJ.openImage("/path/to/image.jpg");
 imp.show();
 ```
 
-Also URLs (in this case, we call directly <i>show()</i>, not keeping the
-returned image pointer into any variable):
+Also URLs (in this case, we call directly <i>show()</i>, not keeping the returned image pointer into any variable):
 
 ``` javascript
 IJ.openImage("https://imagej.net/images/blobs.gif").show();
@@ -799,8 +704,7 @@ imp.show();
 
 ### Using GenericDialog
 
-This example shows how to get 2 of the open images and a checkbox using
-GenericDialog.
+This example shows how to get 2 of the open images and a checkbox using GenericDialog.
 
 ``` javascript
 // get 2 images and a checkbox
@@ -887,9 +791,7 @@ IJ.run(imp, "Add Noise", "");
 IJ.run(imp, "Subtract...", "value=25");
 ```
 
-Above, you can see what arguments to add to a command by opening the
-Plugins - Macro Recorder, and then running the command manually. The
-macro string will print on the recorder window.
+Above, you can see what arguments to add to a command by opening the Plugins - Macro Recorder, and then running the command manually. The macro string will print on the recorder window.
 
 ### Inspect java methods and fields in an object
 
@@ -902,8 +804,7 @@ for (a in ImagePlus) { s += " " + a; }
 
 ... which prints INTEGRATED\_DENSITY AREA\_FRACTION etc.
 
-To print the fields and methods of an instance of ImagePlus (i.e. an
-image that already exists):
+To print the fields and methods of an instance of ImagePlus (i.e. an image that already exists):
 
 ``` javascript
 // get the current image
@@ -912,9 +813,7 @@ imp = IJ.getImage();
 s = ""; for (a in imp) { s += " " + a; }
 ```
 
-... which prints all method names such as getStatistics isHyperStack
-etc. and fields like width and height (because there are public 'get'
-methods for it such as getWidth() and getHeight() .)
+... which prints all method names such as getStatistics isHyperStack etc. and fields like width and height (because there are public 'get' methods for it such as getWidth() and getHeight() .)
 
 ### Creating a script for ImageJ
 
@@ -927,18 +826,13 @@ Save your javascript script in a text file:
 
 On startup, the script will appear in the corresponding menu.
 
-If you add the script after ImageJ was started, just call "Help - Update
-menus" and it will be picked up.
+If you add the script after ImageJ was started, just call "Help - Update menus" and it will be picked up.
 
-You can continue modifying and saving the script file. Every time you
-run it from the menu, it will be read from the file system.
+You can continue modifying and saving the script file. Every time you run it from the menu, it will be read from the file system.
 
 ## Interfaces and anonymous classes
 
-To create an ImageListener without declaring a new class that implements
-such java interface, simply use a function that will be mapped to all
-its methods (as long as they have the same signature, which they do in
-this case):
+To create an ImageListener without declaring a new class that implements such java interface, simply use a function that will be mapped to all its methods (as long as they have the same signature, which they do in this case):
 
 ``` javascript
 ImagePlus.addImageListener( function (imp, name) {
@@ -952,9 +846,7 @@ ImagePlus.addImageListener( function (imp, name) {
 });
 ```
 
-Alternatively, one can create an object with declared functions inside
-to assign then to an anonymous class created on the fly from an
-interface:
+Alternatively, one can create an object with declared functions inside to assign then to an anonymous class created on the fly from an interface:
 
 ``` javascript
 body = {
@@ -973,43 +865,21 @@ Simplified:
 new Thread( function () { IJ.log("Running!"); } ).start();
 ```
 
-What the code above did: to look for an interface that could take a
-method with no arguments, represented by the function, and instantiate
-an anonymous class that implements such interface with the function
-mapped to its method.
+What the code above did: to look for an interface that could take a method with no arguments, represented by the function, and instantiate an anonymous class that implements such interface with the function mapped to its method.
 
-See also an [example
-plugin](Scripting_comparisons#In_Javascript "wikilink") for ImageJ
-written in javascript.
+See also an [example plugin](Scripting_comparisons#In_Javascript "wikilink") for ImageJ written in javascript.
 
 ## Multithreaded Image Processing in Javascript
 
-The following example shows how to create a generic function, named
-<i>multithreader</i>, that accepts another function as argument and
-executes it in parallel a number of times. As a very simple example, a
-<i>printer</i> function is passed to the <i>multithreader</i>, and a
-list of numbers is printed without repeating anyone, and not preserving
-the order of course.
+The following example shows how to create a generic function, named <i>multithreader</i>, that accepts another function as argument and executes it in parallel a number of times. As a very simple example, a <i>printer</i> function is passed to the <i>multithreader</i>, and a list of numbers is printed without repeating anyone, and not preserving the order of course.
 
-The <i>multithreader</i> scales up to as many CPU cores as the computer
-has to offer.
+The <i>multithreader</i> scales up to as many CPU cores as the computer has to offer.
 
-Always remember: only <b>completely</b> independent tasks can be
-parallelized effectively\!
+Always remember: only <b>completely</b> independent tasks can be parallelized effectively\!
 
-A good strategy for multithreading involves carefully considering the
-task to parallelize: how small can the chunks be? For an image, a chunk
-could be a pixel or a line, but often those are too small to overcome
-the overhead of parallelization.
+A good strategy for multithreading involves carefully considering the task to parallelize: how small can the chunks be? For an image, a chunk could be a pixel or a line, but often those are too small to overcome the overhead of parallelization.
 
-Despite the simple example below, the <i>multithreader</i> framework
-function allows variable amount of arguments to be passed, as
-illustrated in the complete plugin {% include github repo='fiji'
-path='plugins/Examples/Multithreaded\_Image\_Processing\_in\_Javascript.js'
-label='Multithreaded\_Image\_Processing\_in\_Javascript.js' %}. The
-script shows how to generate an image with random pixel values in a
-multithreaded manner, and how the choice of chunks to process in
-parallel is made for reasonable effectiveness.
+Despite the simple example below, the <i>multithreader</i> framework function allows variable amount of arguments to be passed, as illustrated in the complete plugin {% include github repo='fiji' path='plugins/Examples/Multithreaded\_Image\_Processing\_in\_Javascript.js' label='Multithreaded\_Image\_Processing\_in\_Javascript.js' %}. The script shows how to generate an image with random pixel values in a multithreaded manner, and how the choice of chunks to process in parallel is made for reasonable effectiveness.
 
 ``` javascript
 // Import all classes that are used more than once:
@@ -1059,20 +929,14 @@ function printer(i) {
  multithreader(printer, 0, 10);
 ```
 
-See the complete file here: {% include github repo='fiji'
-path='plugins/Examples/Multithreaded\_Image\_Processing\_in\_Javascript.js'
-label='Multithreaded\_Image\_Processing\_in\_Javascript.js' %}
+See the complete file here: {% include github repo='fiji' path='plugins/Examples/Multithreaded\_Image\_Processing\_in\_Javascript.js' label='Multithreaded\_Image\_Processing\_in\_Javascript.js' %}
 
 # Links
 
-  - [Tutorial](http://www.mozilla.org/rhino/tutorial.html) at Mozilla
-    Rhino webpages (Java 6).
-  - [Scripting Java with
-    JavaScript](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/Scripting_Java)
-    (Java 6).
+  - [Tutorial](http://www.mozilla.org/rhino/tutorial.html) at Mozilla Rhino webpages (Java 6).
+  - [Scripting Java with JavaScript](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/Scripting_Java) (Java 6).
   - [Performance tips](http://www.mozilla.org/rhino/perf.html) (Java 6).
-  - [Tutorial](http://winterbe.com/posts/2014/04/05/java8-nashorn-tutorial/)
-    on Oracle Nashorn (Java 8).
+  - [Tutorial](http://winterbe.com/posts/2014/04/05/java8-nashorn-tutorial/) on Oracle Nashorn (Java 8).
 
 See also the [Scripting comparisons](Scripting_comparisons "wikilink").
 

@@ -8,21 +8,13 @@ categories:
 description: test description
 ---
 
-{% include learn %}This page collects ImageJ-related presentations,
-including talks, workshops and posters.
+{% include learn%}This page collects ImageJ-related presentations, including talks, workshops and posters.
 
-Do you know of a publicly archived ImageJ-related presentation not
-listed here? Please add it\!
+Do you know of a publicly archived ImageJ-related presentation not listed here? Please add it\!
 
 ## Living workshops
 
-These materials are regularly updated, and intended to teach ImageJ and
-Fiji at introductory, intermediate and advanced levels. The
-[LOCI](LOCI "wikilink") group uses them to teach ImageJ at the
-[AQLM](http://www.mbl.edu/education/courses/analytical-quantitative-light-microscopy/)
-course every year, as well as locally. Videos of the workshops were
-recorded in Spring 2017; those links are below along with the
-corresponding slides used at that time.
+These materials are regularly updated, and intended to teach ImageJ and Fiji at introductory, intermediate and advanced levels. The [LOCI](LOCI "wikilink") group uses them to teach ImageJ at the [AQLM](http://www.mbl.edu/education/courses/analytical-quantitative-light-microscopy/) course every year, as well as locally. Videos of the workshops were recorded in Spring 2017; those links are below along with the corresponding slides used at that time.
 
 <table>
 <thead>

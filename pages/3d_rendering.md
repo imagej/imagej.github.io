@@ -23,5 +23,4 @@ description: test description
 
 ## See also
 
-  - [LOCI's review of Imaris
-    alternatives](https://loci.wisc.edu/outreach/3d-viz)
+  - [LOCI's review of Imaris alternatives](https://loci.wisc.edu/outreach/3d-viz)

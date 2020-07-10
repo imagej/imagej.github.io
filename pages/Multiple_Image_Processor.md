@@ -8,28 +8,18 @@ categories: Plugins
 description: test description
 ---
 
-{% capture source %} {% include github org="fiji" repo="M\_I\_P" %} {%
-endcapture %} {% include sidebox-right software='ImageJ' name='Multiple
-Image Processor' maintainer='[at rcm.upr.edu](mailto:ngonzalez)'
-author='Nathaniel Gonzalez Santiago' source=source released='10/10/2005'
-version='10/10/2005' status='stable'
-category='[:Category:Plugins](:Category:Plugins "wikilink")'
-website='[Center for Information Architecture in
-Research](http://ciar.rcm.upr.edu/projects/imageprocessor/multiples)' %}
+
+{% capture source%}
+{% include github org='fiji' repo='M\_I\_P' %}
+{% endcapture %}
+{% include info-box software='ImageJ' name='Multiple Image Processor' maintainer='[at rcm.upr.edu](mailto:ngonzalez)' author='Nathaniel Gonzalez Santiago' source=source released='10/10/2005' latest-version='10/10/2005' status='stable' category='[:Category:Plugins](:Category:Plugins "wikilink")' website=' [Center for Information Architecture in Research](http://ciar.rcm.upr.edu/projects/imageprocessor/multiples) ' %}
 
 ## Multiple Image Processor
 
-The Multiple Image Processor allows the researchers to work on large
-images with the following types: BMP, JPEG, GIF, TIFF, PGM . With this
-plug-in, the user can also apply macros generated with ImageJ macro
-functions to the set of original images. After doing the pre-processing,
-this application allows you to save images in any of a variety of
-formats and sizes.
+The Multiple Image Processor allows the researchers to work on large images with the following types: BMP, JPEG, GIF, TIFF, PGM . With this plug-in, the user can also apply macros generated with ImageJ macro functions to the set of original images. After doing the pre-processing, this application allows you to save images in any of a variety of formats and sizes.
 
-**Note**: The plugin ignores all input files which do are not of one of
-the supported file types.
+**Note**: The plugin ignores all input files which do are not of one of the supported file types.
 
-![Multiple\_Image\_Processor.jpg](/images/pages/Multiple_Image_Processor.jpg
-"Multiple_Image_Processor.jpg")"
+![Multiple\_Image\_Processor.jpg](/images/pages/Multiple_Image_Processor.jpg "Multiple_Image_Processor.jpg")"
 
 [Category:Plugins](Category:Plugins "wikilink")

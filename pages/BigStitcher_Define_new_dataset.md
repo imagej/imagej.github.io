@@ -8,59 +8,32 @@ categories:
 description: test description
 ---
 
-When clicking {% include bc content='Plugins|BigStitcher| BigStitcher'%}
-in the the Fiji menu, it will open a macro-scriptable dialog that looks
-as following:
+When clicking {% include bc content='Plugins|BigStitcher| BigStitcher'%} in the the Fiji menu, it will open a macro-scriptable dialog that looks as following:
 
-![BigStitcher\_import\_exisitng\_0.png](/images/pages/BigStitcher_import_exisitng_0.png
-"BigStitcher_import_exisitng_0.png")"
+![BigStitcher\_import\_exisitng\_0.png](/images/pages/BigStitcher_import_exisitng_0.png "BigStitcher_import_exisitng_0.png")"
 
-![Select the importer and the name of the xml file to save the metadata
-to.](/images/pages/BigStitcher_importer_1.png
-"Select the importer and the name of the xml file to save the metadata to.")"
-In order to **define a new dataset**, please click the respective button
-on the left side of the dialog. This will open a new window in which you
-can define how to import the image data. Since there is huge variety of
-data formats produced by various microscopy companies and self-built
-setups, we developed multiple types of importers:
+![Select the importer and the name of the xml file to save the metadata to.](/images/pages/BigStitcher_importer_1.png "Select the importer and the name of the xml file to save the metadata to.")" In order to **define a new dataset**, please click the respective button on the left side of the dialog. This will open a new window in which you can define how to import the image data. Since there is huge variety of data formats produced by various microscopy companies and self-built setups, we developed multiple types of importers:
 
-  - **[Automatic Loader
-    (Bioformats)](BigStitcher_AutoLoader "wikilink")**
+  - **[Automatic Loader (Bioformats)](BigStitcher_AutoLoader "wikilink")**
 
-The Automatic Loader is a comprehensive importer that should work with
-most of image data. We highly suggest using this importer as a first
-choice, and just if you experience any problems to continue with one of
-the other options.
+The Automatic Loader is a comprehensive importer that should work with most of image data. We highly suggest using this importer as a first choice, and just if you experience any problems to continue with one of the other options.
 
   - **[Manual Loader (Bioformats)](BigStitcher_StackLoader "wikilink")**
 
-The **Manual Loader (Bioformats)** can be used to import datasets that
-consist of several stacks that can be opened using LOCI Bioformats.
-Manual asignment of the stacks to Angles, Tiles or Illuminations
-according to patterns in the filename is necessary.
+The **Manual Loader (Bioformats)** can be used to import datasets that consist of several stacks that can be opened using LOCI Bioformats. Manual asignment of the stacks to Angles, Tiles or Illuminations according to patterns in the filename is necessary.
 
-  - **[Manual Loader (TIFF only, ImageJ
-    Opener)](BigStitcher_StackLoader "wikilink")**
+  - **[Manual Loader (TIFF only, ImageJ Opener)](BigStitcher_StackLoader "wikilink")**
 
-The **Manual Loader (TIFF only, ImageJ Opener))** can be used to import
-datasets that consist of several stacks that can be opened directly by
-ImageJ. Manual asignment of the stacks to Channels, Illuminations,
-Agles, Tiles or Illuminations according to patterns in the filename is
-necessary.
+The **Manual Loader (TIFF only, ImageJ Opener))** can be used to import datasets that consist of several stacks that can be opened directly by ImageJ. Manual asignment of the stacks to Channels, Illuminations, Agles, Tiles or Illuminations according to patterns in the filename is necessary.
 
-  - **[Zeiss Lightsheet Z.1 Dataset
-    (Bioformats)](BigStitcher_SpecialLoaders "wikilink")**
+  - **[Zeiss Lightsheet Z.1 Dataset (Bioformats)](BigStitcher_SpecialLoaders "wikilink")**
 
-A single-purpose loader to import CZI-files produced by the **Zeiss
-Lightsheet Z.1 microscope**.
+A single-purpose loader to import CZI-files produced by the **Zeiss Lightsheet Z.1 microscope**.
 
-  - **[MicroManager diSPIM
-    Dataset](BigStitcher_SpecialLoaders "wikilink")**
+  - **[MicroManager diSPIM Dataset](BigStitcher_SpecialLoaders "wikilink")**
 
-A single-purpose loader to import **diSPIM** datasets produced by
-MicroManager.
+A single-purpose loader to import **diSPIM** datasets produced by MicroManager.
 
-''Note: Only one xml per directory is supported right now, even if they
-have a different filename. ''
+''Note: Only one xml per directory is supported right now, even if they have a different filename. ''
 
 Go back to the [main page](BigStitcher#Documentation "wikilink")

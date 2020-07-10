@@ -8,48 +8,32 @@ categories: Tutorials,Plugins
 description: test description
 ---
 
-{% include unreleased %} {% capture maintainer %} {% include person
-content="Funke" %} {% endcapture %}
+{% include unreleased%}
+{% capture maintainer%}
+{% include person content='Funke' %}
+{% endcapture %}
 
-{% capture source %} {% include github org="fiji"
-repo="Stochastic\_Denoise" %} {% endcapture %} {% include sidebox-right
-software='ImageJ' name='Stochastic Denoise' maintainer=maintainer
-author='Jan Funke' source=source status='unreleased'
-category='[:Category:Plugins](:Category:Plugins "wikilink")' %}The
-Stochastic Denoise plugin implements a current state of the art
-denoising algorithm. It is based on random walks through the image along
-paths of similar pixels, as proposed by Francisco Estrada et al.
-(http://www.cs.utoronto.ca/\~strider/Denoise/). If you intend to use
-this plugin in a publication, please cite:
+{% capture source%}
+{% include github org='fiji' repo='Stochastic\_Denoise' %}
+{% endcapture %}
+{% include info-box software='ImageJ' name='Stochastic Denoise' maintainer=maintainer author='Jan Funke' source=source status='unreleased' category='[:Category:Plugins](:Category:Plugins "wikilink")' %}The Stochastic Denoise plugin implements a current state of the art denoising algorithm. It is based on random walks through the image along paths of similar pixels, as proposed by Francisco Estrada et al. (http://www.cs.utoronto.ca/\~strider/Denoise/). If you intend to use this plugin in a publication, please cite:
 
-Francisco Estrada, David Fleet, Allan Jepson, <b>Stochastic Image
-Denoising</b>, British Mashine Vision Conference 2009
+Francisco Estrada, David Fleet, Allan Jepson, <b>Stochastic Image Denoising</b>, British Mashine Vision Conference 2009
 
 ## Settings
 
-The plugin provides two parameters: The noise standard deviation
-<b>sigma</b> and the number of <b>samples</b> per pixel.
+The plugin provides two parameters: The noise standard deviation <b>sigma</b> and the number of <b>samples</b> per pixel.
 
-With the sigma setting, you can adjust the expected amount of noise in
-the image. The higher you choose this value, the blurrier the result
-will be.
+With the sigma setting, you can adjust the expected amount of noise in the image. The higher you choose this value, the blurrier the result will be.
 
-To get more pleasing results, you can increase the number of samples
-(i.e., the number of random walks) per pixel. However, this will result
-in longer runtime.
+To get more pleasing results, you can increase the number of samples (i.e., the number of random walks) per pixel. However, this will result in longer runtime.
 
 ![Asd-1.jpg](/images/pages/Asd-1.jpg "Asd-1.jpg")"
 
 ## Tutorial
 
-![Lena\_small.jpg](/images/pages/Lena_small.jpg "Lena_small.jpg")"
-![Denoised\_lena\_small.jpg](/images/pages/Denoised_lena_small.jpg
-"Denoised_lena_small.jpg")"
+![Lena\_small.jpg](/images/pages/Lena_small.jpg "Lena_small.jpg")" ![Denoised\_lena\_small.jpg](/images/pages/Denoised_lena_small.jpg "Denoised_lena_small.jpg")"
 
-Open the image you would like to denoise and start the plugin. Try the
-default settings first and click "Denoise". After some seconds, the
-denoised image will pop up. You can change the settings and retry - the
-denoised image will get updated.
+Open the image you would like to denoise and start the plugin. Try the default settings first and click "Denoise". After some seconds, the denoised image will pop up. You can change the settings and retry - the denoised image will get updated.
 
-[Category:Tutorials](Category:Tutorials "wikilink")
-[Category:Plugins](Category:Plugins "wikilink")
+[Category:Tutorials](Category:Tutorials "wikilink") [Category:Plugins](Category:Plugins "wikilink")

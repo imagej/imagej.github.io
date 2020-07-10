@@ -8,46 +8,31 @@ categories: Citable
 description: test description
 ---
 
-\_\_NOTOC\_\_![File.png](/images/pages/File.png "File.png")"{% include clear %} {%
-capture author %} Alex Dobens, {% include person content="Dobensl" %} {%
-endcapture %}
+\_\_NOTOC\_\_![File.png](/images/pages/File.png "File.png")"{% include clear%}
+{% capture author%}
+Alex Dobens, {% include person content='Dobensl' %}
+{% endcapture %}
 
-{% capture maintainer %} {% include person content="Dobensl" %} {%
-endcapture %} {% include sidebox-right content='Plugin'
-software='Fiji/ImageJ' name='FijiWings' author=author
-maintainer=maintainer filename='fiji-macosx.zip'
-source='https://sourceforge.net/projects/fijiwings/' status='stable'
-%}=== Introduction ===
+{% capture maintainer%}
+{% include person content='Dobensl' %}
+{% endcapture %}
+{% include info-box content='Plugin' software='Fiji/ImageJ' name='FijiWings' author=author maintainer=maintainer filename='fiji-macosx.zip' source='https://sourceforge.net/projects/fijiwings/' status='stable' %}=== Introduction ===
 
-This set of macros control plugin to perform semi-automatic tracing of
-insect wing veins and determination of trichome number and density. The
-native file format is open and XML-based. This plugin is Free Software
-(also known as Open Source software) and is supplied as a packaged
-version of Fiji, here \<http://sourceforge.net/projects/fijiwings>\.
+This set of macros control plugin to perform semi-automatic tracing of insect wing veins and determination of trichome number and density. The native file format is open and XML-based. This plugin is Free Software (also known as Open Source software) and is supplied as a packaged version of Fiji, here \<http://sourceforge.net/projects/fijiwings>\.
 
-To help you to get started with using this plugin, there is an
-explanatory screencast here:
-http://www.youtube.com/user/Fijiwingsadmin/videos
+To help you to get started with using this plugin, there is an explanatory screencast here: http://www.youtube.com/user/Fijiwingsadmin/videos
 
 ### Licensing
 
-This plugin is free software, licensed under the GNU GPL v3 so please do
-contribute any patches or suggestions that you think would be useful.
-Please email me at dobensl@umkc.edu with any feedback.
+This plugin is free software, licensed under the GNU GPL v3 so please do contribute any patches or suggestions that you think would be useful. Please email me at dobensl@umkc.edu with any feedback.
 
 ### Installation
 
-A packaged version of Fiji for both MacOS and Windows are available for
-download at \<http://sourceforge.net/projects/fijiwings>\. Following
-download, FijiWings is unzipped and used directly.
+A packaged version of Fiji for both MacOS and Windows are available for download at \<http://sourceforge.net/projects/fijiwings>\. Following download, FijiWings is unzipped and used directly.
 
 ### Feedback
 
-Please report any bugs that you find with Fiji's {% include bc
-content='Help | Report a Bug'%} menu option. For other feedback please
-email *dobensl* at *umkc.edu*. There are other ways of giving feedback
-on Fiji (e.g. the mailing lists, IRC, etc.) listed at
-[Help](Help "wikilink").
+Please report any bugs that you find with Fiji's {% include bc content='Help | Report a Bug'%} menu option. For other feedback please email *dobensl* at *umkc.edu*. There are other ways of giving feedback on Fiji (e.g. the mailing lists, IRC, etc.) listed at [Help](Help "wikilink").
 
 ### Citing FijiWings
 
@@ -57,12 +42,9 @@ If you would like to reference FijiWings in a publication, you can cite:
 
 ## Tutorials
 
-{% include youtube url="https://www.youtube.com/embed/kkwbRaN51ww" %}
-{% include youtube url="https://www.youtube.com/embed/nlYZyJxV5Bw" %}
-{% include youtube url="https://www.youtube.com/embed/YDZHy_5mPko" %}
+{% include youtube url='https://www.youtube.com/embed/'%} {% include youtube url='https://www.youtube.com/embed/'%} {% include youtube url='https://www.youtube.com/embed/'%}
 
-  - [All FijiWings
-    videos](http://www.youtube.com/user/Fijiwingsadmin/videos)
+  - [All FijiWings videos](http://www.youtube.com/user/Fijiwingsadmin/videos)
 
 ## Technical Documentation
 
@@ -70,10 +52,8 @@ see \<http://sourceforge.net/projects/fijiwings>\
 
 ## Authors
 
-These macros were written by Alexander Dobens with feedback and
-direction from Leonard Dobens.
+These macros were written by Alexander Dobens with feedback and direction from Leonard Dobens.
 
-Many thanks to all of those authors for releasing their code under the
-GPL.
+Many thanks to all of those authors for releasing their code under the GPL.
 
 [Category:Citable](Category:Citable "wikilink")

@@ -8,10 +8,7 @@ categories: Development,IDEs
 description: test description
 ---
 
-{% include develop-menu content='source' %} This article explains how to
-install and configure NetBeans for use with [ImageJ](ImageJ "wikilink")
-development. Directions correspond to NetBeans 7.1.2, which added
-integrated Git support, and may need adjustment for other versions.
+{% include develop-menu content='source' %} This article explains how to install and configure NetBeans for use with [ImageJ](ImageJ "wikilink") development. Directions correspond to NetBeans 7.1.2, which added integrated Git support, and may need adjustment for other versions.
 
 ## Install and configure NetBeans
 
@@ -19,22 +16,17 @@ integrated Git support, and may need adjustment for other versions.
 
 #### Install Java Development Kit
 
-Download and install JDK 6 from the [Java web
-site](http://www.oracle.com/technetwork/java/javase/downloads/).
+Download and install JDK 6 from the [Java web site](http://www.oracle.com/technetwork/java/javase/downloads/).
 
 #### Install NetBeans
 
-Download and install NetBeans from the [NetBeans web
-site](http://netbeans.org/downloads/). Any bundle that includes Java SE
-should be fine.
+Download and install NetBeans from the [NetBeans web site](http://netbeans.org/downloads/). Any bundle that includes Java SE should be fine.
 
 ### Setting up NetBeans on Mac OS X
 
 #### Install NetBeans
 
-Download and install NetBeans from the [NetBeans web
-site](http://netbeans.org/downloads/). Any bundle that includes Java SE
-should be fine.
+Download and install NetBeans from the [NetBeans web site](http://netbeans.org/downloads/). Any bundle that includes Java SE should be fine.
 
 ### Setting up NetBeans on Linux
 
@@ -61,15 +53,12 @@ sudo aptitude install netbeans
 
 1.  Choose Team \> Git \> Clone... from the NetBeans menu
 2.  For the Repository URL, enter: <git://github.com/imagej/imagej>
-3.  Click Next, check the "master\*" branch, then Next again, then
-    Finish
+3.  Click Next, check the "master\*" branch, then Next again, then Finish
 4.  When prompted, click Open Project...
 5.  Select the "ImageJ Projects" project in the tree then click Open
 6.  Right-click the "ImageJ Projects" project and choose Build
 
-You may receive a warning about Maven when building the project. It is
-not required, but if you wish to eliminate it, you can install Maven
-from the [Maven web site](http://maven.apache.org/download.html).
+You may receive a warning about Maven when building the project. It is not required, but if you wish to eliminate it, you can install Maven from the [Maven web site](http://maven.apache.org/download.html).
 
 ## Launch the program
 
@@ -79,20 +68,12 @@ from the [Maven web site](http://maven.apache.org/download.html).
 4.  Right-click the "ImageJ Application" project and choose "Run"
 5.  On the Main Class dialog, choose "net.imagej.Main"
 
-To expand the projects you can also right click on the top-level "ImageJ
-Projects" and choose "Open Required Projects" (and "Close Required
-Projects" to close). During development you must select "Open Required
-Projects" before you can successfully do "Find Usages" in the "Open
-Projects" scope.
+To expand the projects you can also right click on the top-level "ImageJ Projects" and choose "Open Required Projects" (and "Close Required Projects" to close). During development you must select "Open Required Projects" before you can successfully do "Find Usages" in the "Open Projects" scope.
 
 ## See also
 
-  - [Developing ImageJ 1.x plugins with
-    NetBeans](https://www.youtube.com/watch?v=Ac-6gJ2eRb0) screencast
-  - {% include github org='imagej' repo='example-legacy-plugin'
-    label='example-legacy-plugin' %} project template
-  - [Developing Plugins for ImageJ
-    1.x](Developing_Plugins_for_ImageJ_1.x "wikilink") tutorial
+  - [Developing ImageJ 1.x plugins with NetBeans](https://www.youtube.com/watch?v=Ac-6gJ2eRb0) screencast
+  - {% include github org='imagej' repo='example-legacy-plugin' label='example-legacy-plugin' %} project template
+  - [Developing Plugins for ImageJ 1.x](Developing_Plugins_for_ImageJ_1.x "wikilink") tutorial
 
-[Category:Development](Category:Development "wikilink")
-[Category:IDEs](Category:IDEs "wikilink")
+[Category:Development](Category:Development "wikilink") [Category:IDEs](Category:IDEs "wikilink")

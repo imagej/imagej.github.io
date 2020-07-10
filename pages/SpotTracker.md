@@ -8,14 +8,6 @@ categories: Plugins,Particle analysis,Tracking
 description: test description
 ---
 
-{% include sidebox-right software='ImageJ' name='SpotTracker'
-author='[Daniel Sage](http://bigwww.epfl.ch/sage/)'
-filename='[SpotTracker2D\_.jar](http://bigwww.epfl.ch/sage/soft/spottracker/SpotTracker2D_.jar)
-(203,057 Bytes)' source='' released='' version='2007 (probably)'
-status='unknown' category='[Particle
-analysis](:Category:Particle_analysis "wikilink")'
-website='[1](http://bigwww.epfl.ch/sage/soft/spottracker/)' %}
+{% include info-box software='ImageJ' name='SpotTracker' author=' [Daniel Sage](http://bigwww.epfl.ch/sage/) ' filename=' [SpotTracker2D\_.jar](http://bigwww.epfl.ch/sage/soft/spottracker/SpotTracker2D_.jar) (203,057 Bytes)' source='' released='' latest-version='2007 (probably)' status='unknown' category='[Particle analysis](:Category:Particle_analysis "wikilink")' website='http://bigwww.epfl.ch/sage/soft/spottracker/' %}
 
-[Category:Plugins](Category:Plugins "wikilink") [Category:Particle
-analysis](Category:Particle_analysis "wikilink")
-[Category:Tracking](Category:Tracking "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Particle analysis](Category:Particle_analysis "wikilink") [Category:Tracking](Category:Tracking "wikilink")

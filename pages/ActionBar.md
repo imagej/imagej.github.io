@@ -8,7 +8,6 @@ categories:
 description: test description
 ---
 
-**Action Bar** - extends ImageJ’s graphical user interface, providing
-one (or many) easy to use button bar(s).
+**Action Bar** - extends ImageJ’s graphical user interface, providing one (or many) easy to use button bar(s).
 
 [documentation](http://imagejdocu.tudor.lu/doku.php?id=plugin:utilities:action_bar:start)

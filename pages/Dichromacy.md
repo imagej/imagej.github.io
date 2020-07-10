@@ -8,7 +8,6 @@ categories: Plugins
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:Dichromacy' %}{% include
-stub %}
+{% include component-stats content=':sc.fiji:Dichromacy' %}{% include stub%}
 
 [Category:Plugins](Category:Plugins "wikilink")

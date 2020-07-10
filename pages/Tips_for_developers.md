@@ -8,8 +8,7 @@ categories:
 description: test description
 ---
 
-{% include develop-menu content='tutorials' %}An unsorted list of hints
-that you might find useful:
+{% include develop-menu content='tutorials' %}An unsorted list of hints that you might find useful:
 
 # Compile & Execute a Class
 
@@ -27,34 +26,21 @@ $ ./fiji YourClass.class argument1 argument2
 
 # Rapidly Prototype a Plugin
 
-It is often easier to start out with a Jython, JRuby or BeanShell
-script, as you do not have to care about strict typing, exceptions or
-recompiling. Just place your script (with the correct extension -- .py,
-.rb or .bsh) into the plugins/ folder and execute the script. Fiji will
-always execute the current version of the script, so you can edit and
-run the script without restarting Fiji.
+It is often easier to start out with a Jython, JRuby or BeanShell script, as you do not have to care about strict typing, exceptions or recompiling. Just place your script (with the correct extension -- .py, .rb or .bsh) into the plugins/ folder and execute the script. Fiji will always execute the current version of the script, so you can edit and run the script without restarting Fiji.
 
-Of course, it is even more convenient to use the [Script
-Editor](Script_Editor "wikilink")...
+Of course, it is even more convenient to use the [Script Editor](Script_Editor "wikilink")...
 
-Once you have working code, you can turn it into a proper plugin (this
-is easiest with BeanShell, as its syntax is closest to Java already),
-adding strict typing and exception handling as needed.
+Once you have working code, you can turn it into a proper plugin (this is easiest with BeanShell, as its syntax is closest to Java already), adding strict typing and exception handling as needed.
 
 # Find the .jar File Containing a Certain Class
 
-Sometimes, the compiler complains about a class not having a certain
-method or interface, but you *know* it must contain it. More often than
-not, that class exists in different versions in your classpath. Find out
-with
+Sometimes, the compiler complains about a class not having a certain method or interface, but you *know* it must contain it. More often than not, that class exists in different versions in your classpath. Find out with
 
 ``` bash
 $ ./fiji bin/find-jar-for-class.py the.class.youre.looking.For
 ```
 
-If you want to do that with an installed Fiji (i.e. when bin/ is
-missing), you can start the [Script Editor](Script_Editor "wikilink")
-and execute a BeanShell like this:
+If you want to do that with an installed Fiji (i.e. when bin/ is missing), you can start the [Script Editor](Script_Editor "wikilink") and execute a BeanShell like this:
 
 ``` java
  import ij.IJ;
@@ -64,13 +50,11 @@ and execute a BeanShell like this:
          .getResource("For.class").toString());
 ```
 
-This will output the URL to the *.class* file, including the path to the
-enclosing *.jar* file.
+This will output the URL to the *.class* file, including the path to the enclosing *.jar* file.
 
 # Using ImageJ Effectively
 
-ImageJ has a simple API, but it is also big, so here are a few pointers
-to some useful parts.
+ImageJ has a simple API, but it is also big, so here are a few pointers to some useful parts.
 
 ## How to read a file into an ImagePlus
 
@@ -93,15 +77,13 @@ ImageProcessor ip = img.getProcessor();  // current slice
 
 ## How to display an exception in a window
 
-This is especially useful on Windows, where you usually do not see the
-console:
+This is especially useful on Windows, where you usually do not see the console:
 
 ``` java
  IJ.handleException(exception);
 ```
 
-This is available since ImageJ 1.43g, as well as the option to set a
-different exception handler using
+This is available since ImageJ 1.43g, as well as the option to set a different exception handler using
 
 ``` java
  IJ.setExceptionHandler(new IJ.ExceptionHandler() {
@@ -113,8 +95,7 @@ different exception handler using
 
 ## How to show a plot
 
-ImageJ offers the `ij.gui.Plot` class to make a window showing a plot.
-Use it like this:
+ImageJ offers the `ij.gui.Plot` class to make a window showing a plot. Use it like this:
 
 ``` java
 Plot plot = new Plot("The window title", "labels on the x-axis", "labels on the y-axis",
@@ -124,8 +105,7 @@ plot.show();
 
 Instead of *float* arrays, you can also use *double* arrays.
 
-If you need to update the plot at some stage, you need to save the
-return value of *show()*:
+If you need to update the plot at some stage, you need to save the return value of *show()*:
 
 ``` java
 Plot plot = new Plot("The window title", "labels on the x-axis", "labels on the y-axis",
@@ -154,37 +134,19 @@ plot.setColor(Color.BLUE);
 plot.draw();
 ```
 
-You might need to adjust the bounding box if the second plot does not
-match the bounding box of the first one by using the `setLimits()`
-method before the call to `plot.draw();`
+You might need to adjust the bounding box if the second plot does not match the bounding box of the first one by using the `setLimits()` method before the call to `plot.draw();`
 
 ## Duplicate, or convert between, *ImageProcessor* types
 
-The `ImageProcessor` class has several useful methods:
-\[https://fiji.sc/javadoc/ij/process/ImageProcessor.html#duplicate()
-duplicate()\],
-[convertToByte()](https://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToByte\(boolean\)),
-\[https://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToFloat()
-convertToFloat()\],
-\[https://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToRGB()
-convertToRGB()\], and
-[convertToShort()](https://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToShort\(boolean\)).
+The `ImageProcessor` class has several useful methods: \[https://fiji.sc/javadoc/ij/process/ImageProcessor.html#duplicate>() duplicate()\], [convertToByte()](https://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToByte\(boolean\)), \[<https://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToFloat>() convertToFloat()\], \[<https://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToRGB() convertToRGB()\], and [convertToShort()](https://fiji.sc/javadoc/ij/process/ImageProcessor.html#convertToShort\(boolean\)).
 
-This [class](https://fiji.sc/javadoc/ij/process/ImageProcessor.html)
-also has some other goodies, such as methods for convolution.
+This [class](https://fiji.sc/javadoc/ij/process/ImageProcessor.html) also has some other goodies, such as methods for convolution.
 
 ## How to store settings persistently
 
-ImageJ (and therefore Fiji, too) has a way to store key/value pairs
-persistently, i.e. they are available even after a restart. The settings
-are stored in a file called *IJ\_Prefs.txt* in the subdirectory called
-*.imagej/* in your home directory (on Windows, directly in your home
-directory; on Mac, in *\~/Library/Preferences*).
+ImageJ (and therefore Fiji, too) has a way to store key/value pairs persistently, i.e. they are available even after a restart. The settings are stored in a file called *IJ\_Prefs.txt* in the subdirectory called *.imagej/* in your home directory (on Windows, directly in your home directory; on Mac, in *\~/Library/Preferences*).
 
-**Note:** the settings are only saved upon <u>regular</u> exit of Fiji;
-If you kill the process, or if the Java Runtime crashes, they are
-<u>not</u> saved. You can ask for the settings to be saved explicitly,
-though.
+**Note:** the settings are only saved upon <u>regular</u> exit of Fiji; If you kill the process, or if the Java Runtime crashes, they are <u>not</u> saved. You can ask for the settings to be saved explicitly, though.
 
 Example:
 
@@ -206,10 +168,7 @@ import ij.Prefs;
     Prefs.savePreferences();
 ```
 
-**Note:** do <u>not</u> use the `getString()` or `getInt()`; These
-methods do not have any setter methods, and they do <u>not</u> access
-the same values as the `get()` method (`get()` actually prefixes the
-keys with a dot)\!
+**Note:** do <u>not</u> use the `getString()` or `getInt()`; These methods do not have any setter methods, and they do <u>not</u> access the same values as the `get()` method (`get()` actually prefixes the keys with a dot)\!
 
 ## How to turn a number into a string, using a given number of decimal places
 
@@ -221,16 +180,13 @@ String message = "The current temperature is " + IJ.d2s(degrees, 1) + "° Celsiu
 
 ## How to abort a plugin completely
 
-Sometimes, you want to abort a plugin without catching an exception at
-the highest level(s), without having ImageJ show an exception window.
-You can do that:
+Sometimes, you want to abort a plugin without catching an exception at the highest level(s), without having ImageJ show an exception window. You can do that:
 
 ``` java
 throw new RuntimeException(Macro.MACRO_CANCELED);
 ```
 
-The special message *Macro.MACRO\_CANCELED* will tell ImageJ not to show
-the exception message and stack trace in a text window.
+The special message *Macro.MACRO\_CANCELED* will tell ImageJ not to show the exception message and stack trace in a text window.
 
 ## Interact with the ROI manager
 
@@ -243,8 +199,7 @@ if (manager == null)
 manager.addRoi(roi);
 ```
 
-If you want to add the ROI with a slice label, you have to jump through
-a hoop:
+If you want to add the ROI with a slice label, you have to jump through a hoop:
 
 ``` java
 int currentSlice = image.getCurrentSlice();
@@ -272,8 +227,7 @@ if (manager != null) {
 }
 ```
 
-If you need to preserve the order of the ROIs in the ROI manager,
-unfortunately you'll have to access the AWT listbox:
+If you need to preserve the order of the ROIs in the ROI manager, unfortunately you'll have to access the AWT listbox:
 
 ``` java
 import java.awt.List;
@@ -341,29 +295,20 @@ rt.show("Results");
 
 ## How to find equivalent API commands between ImageJ1 and ImageJ2?
 
-[ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet "wikilink") is
-available.
+[ImageJ1-ImageJ2 cheat sheet](ImageJ1-ImageJ2_cheat_sheet "wikilink") is available.
 
 # Tips for Graphical User Interface (GUI) programming
 
 ## Programming with Swing components
 
-When programming with Swing, beware that Swing is not thread safe.
-Swing's golden rule states that:
+When programming with Swing, beware that Swing is not thread safe. Swing's golden rule states that:
 
   -   
-    *Once a Swing component has been realized, all code that might
-    affect or depend on the state of that component should be executed
-    in the event-dispatching thread.*
+    *Once a Swing component has been realized, all code that might affect or depend on the state of that component should be executed in the event-dispatching thread.*
 
-When has a Swing component been realized? When it is visible inside
-Window or *JFrame* that got a call to `setVisible(true)`. This implies
-that its `paint(Graphics)` method has been called or will be called
-soon.
+When has a Swing component been realized? When it is visible inside Window or *JFrame* that got a call to `setVisible(true)`. This implies that its `paint(Graphics)` method has been called or will be called soon.
 
-These are the methods that can realize a component, or rather, methods
-called on a *Window* or *Frame* or *JFrame* that will realize all its
-children components:
+These are the methods that can realize a component, or rather, methods called on a *Window* or *Frame* or *JFrame* that will realize all its children components:
 
 ``` java
 setVisible(true)
@@ -371,10 +316,7 @@ show()
 pack() // this might surprise you
 ```
 
-There is a class which helps you with all this:
-[SwingUtilities](http://download.oracle.com/javase/6/docs/api/javax/swing/SwingUtilities.html).
-Example: to call `pack()` from within the constructor (which might or
-might not be called from the Event Dispatch Thread):
+There is a class which helps you with all this: [SwingUtilities](http://download.oracle.com/javase/6/docs/api/javax/swing/SwingUtilities.html). Example: to call `pack()` from within the constructor (which might or might not be called from the Event Dispatch Thread):
 
 ``` java
 if (SwingUtilities.isEventDispatchThread())
@@ -386,10 +328,4 @@ else try {
 } catch (Exception e) { /* ignore */ }
 ```
 
-Information extracted from the [Swing
-guide](http://web.archive.org/web/20120801194837/http://java.sun.com/products/jfc/tsc/articles/threads/threads1.html)
-(now only available from via web.archive.org as Oracle removed the
-original docs), additional information can be found in the [Concurrency
-in
-Swing](http://docs.oracle.com/javase/tutorial/uiswing/concurrency/index.html)
-lesson of *The Java Tutorials*.
+Information extracted from the [Swing guide](http://web.archive.org/web/20120801194837/http://java.sun.com/products/jfc/tsc/articles/threads/threads1.html) (now only available from via web.archive.org as Oracle removed the original docs), additional information can be found in the [Concurrency in Swing](http://docs.oracle.com/javase/tutorial/uiswing/concurrency/index.html) lesson of *The Java Tutorials*.

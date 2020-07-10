@@ -8,24 +8,18 @@ categories:
 description: test description
 ---
 
-{% capture source %} {% include github org="embl-cba"
-repo="fiji-plugin-bigDataProcessor" %} {% endcapture %} {% include
-sidebox-right software='Fiji' name='BigDataProcessor' site='EMBL-CBA'
-author='Christian Tischer' maintainer='Christian Tischer' source=source
-%}
+
+{% capture source%}
+{% include github org='embl-cba' repo='fiji-plugin-bigDataProcessor' %}
+{% endcapture %}
+{% include info-box software='Fiji' name='BigDataProcessor' update-site='EMBL-CBA' author='Christian Tischer' maintainer='Christian Tischer' source=source %}
 
 ## Overview
 
-BigDataProcessor in an ImageJ1 based FIJI plugin for efficient
-inspection and processing of big image data. For more information,
-please visit the GitHub
-[1](https://github.com/embl-cba/fiji-plugin-bigDataProcessor/blob/master/README.md#big-data-processor).
+BigDataProcessor in an ImageJ1 based FIJI plugin for efficient inspection and processing of big image data. For more information, please visit the GitHub [1](https://github.com/embl-cba/fiji-plugin-bigDataProcessor/blob/master/README.md#big-data-processor).
 
 ## Installation
 
-BigDataProcessor can be installed from the ImageJ update site:
-http://sites.imagej.net/EMBL-CBA/. For details on how to install an
-update site click [here](Following_an_update_site "wikilink").
+BigDataProcessor can be installed from the ImageJ update site: http://sites.imagej.net/EMBL-CBA/. For details on how to install an update site click [here](Following_an_update_site "wikilink").
 
-To start BigDataProcessor in ImageJ, select Plugins \> BigDataTools \>
-BigDataProcessor from the main menu.
+To start BigDataProcessor in ImageJ, select Plugins \> BigDataTools \> BigDataProcessor from the main menu.

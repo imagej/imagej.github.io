@@ -8,40 +8,22 @@ categories: Plugins
 description: test description
 ---
 
-{% capture author %} {% include person content="stevenjwest" %} {%
-endcapture %}
 
-{% capture maintainer %} {% include person content="stevenjwest" %} {%
-endcapture %} {% include sidebox-right software='FIJI' name='StereoMate'
-author=author maintainer=maintainer filename='Stereo\_Mate.jar'
-source='[1](https://github.com/stevenjwest/StereoMate)' released='August
-2019' status='stable'
-website='[2](https://imagej.net/plugins/stereomate.html)' %}
+{% capture author%}
+{% include person content='stevenjwest' %}
+{% endcapture %}
+
+{% capture maintainer%}
+{% include person content='stevenjwest' %}
+{% endcapture %}
+{% include info-box software='FIJI' name='StereoMate' author=author maintainer=maintainer filename='Stereo\_Mate.jar' source='https://github.com/stevenjwest/StereoMate' released='August 2019' status='stable' website='https://imagej.net/plugins/stereomate.html' %}
 
 ## Purpose
 
-This plugin suite provides tools for the processing and analysis of
-confocal image stacks. It aims to allow the stereological and automated
-analysis of 3D reconstructed objects from regions of interest.
+This plugin suite provides tools for the processing and analysis of confocal image stacks. It aims to allow the stereological and automated analysis of 3D reconstructed objects from regions of interest.
 
 ## Documentation
 
-This plugin provides the image processing and analysis functionality
-described in the following paper
-
-{% capture includecontent %} last = West
-
-` | first = S-J.`  
-` | last2 = Bennett`  
-` | first2 = D-H-L.`  
-` | title = StereoMate: A Stereological and Automated Analysis Platform for Assessing Histological Labelling in Cleared Tissue Specimens`  
-` | journal = bioRxiv`  
-` | doi = `https://doi.org/10.1101/648337  
-` | date = August 2019`  
-` | url = `https://www.biorxiv.org/content/10.1101/648337v2
-
-{% endcapture %}
-
-{% include citation content=includecontent %}
+This plugin provides the image processing and analysis functionality described in the following paper {% include citation last='West' first='S-J.' last2='Bennett' first2='D-H-L.' title='StereoMate: A Stereological and Automated Analysis Platform for Assessing Histological Labelling in Cleared Tissue Specimens' journal='bioRxiv' doi='https://doi.org/10.1101/648337' date='August 2019' url='https://www.biorxiv.org/content/10.1101/648337v2' %}
 
 [Category:Plugins](Category:Plugins "wikilink")

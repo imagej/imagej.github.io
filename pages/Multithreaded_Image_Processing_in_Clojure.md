@@ -10,14 +10,9 @@ description: test description
 
 {% include learn content='scripting' %}== Purpose ==
 
-An example [Clojure](Clojure_Scripting "wikilink") script illustrating
-how to run concurrent threads that perform independent tasks, and how to
-combine their results afterwards.
+An example [Clojure](Clojure_Scripting "wikilink") script illustrating how to run concurrent threads that perform independent tasks, and how to combine their results afterwards.
 
-The same result could be obtained using the built-in clojure <i>pmap</i>
-function. This script illustrates how to instantiate java Thread
-directly from Clojure, and how to launch and join threads for concurrent
-execution.
+The same result could be obtained using the built-in clojure <i>pmap</i> function. This script illustrates how to instantiate java Thread directly from Clojure, and how to launch and join threads for concurrent execution.
 
 ## Code
 
@@ -211,6 +206,4 @@ execution.
 
 [Clojure Scripting](Clojure_Scripting "wikilink")
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Scripting](Category:Scripting "wikilink")
-[Category:Unmaintained](Category:Unmaintained "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Scripting](Category:Scripting "wikilink") [Category:Unmaintained](Category:Unmaintained "wikilink")

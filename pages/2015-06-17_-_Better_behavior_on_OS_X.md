@@ -8,28 +8,14 @@ categories: ImageJ2,News
 description: test description
 ---
 
-Recent versions of OS X have seen a radical shift in how Java works.
-Apple no longer ships their own version of Java, but instead recommends
-users install Oracle's Java 7 or Java 8 runtime themselves. In recent
-years, these changes have made ImageJ deployment on OS X more difficult.
+Recent versions of OS X have seen a radical shift in how Java works. Apple no longer ships their own version of Java, but instead recommends users install Oracle's Java 7 or Java 8 runtime themselves. In recent years, these changes have made ImageJ deployment on OS X more difficult.
 
-Fortunately, the ImageJ team is happy to announce that
-[ImageJ2](ImageJ2 "wikilink") now behaves better on recent versions of
-OS X:
+Fortunately, the ImageJ team is happy to announce that [ImageJ2](ImageJ2 "wikilink") now behaves better on recent versions of OS X:
 
-  - The ImageJ [Launcher](Launcher "wikilink") now makes a best effort
-    to use the newest installed version of Java.
-  - You no longer have to install Apple Java 6 just to run ImageJ—it is
-    enough to just install Java 8.
-  - A [critical
-    bug](https://github.com/imagej/imagej-launcher/commit/4e1e688906d140c3ea6313ca2a0f9cc3b5879644)
-    was fixed preventing Java platform extensions (in particular,
-    [JavaScript](JavaScript "wikilink")) from working properly on OS X
-    with Java 7 and 8.
+  - The ImageJ [Launcher](Launcher "wikilink") now makes a best effort to use the newest installed version of Java.
+  - You no longer have to install Apple Java 6 just to run ImageJ—it is enough to just install Java 8.
+  - A [critical bug](https://github.com/imagej/imagej-launcher/commit/4e1e688906d140c3ea6313ca2a0f9cc3b5879644) was fixed preventing Java platform extensions (in particular, [JavaScript](JavaScript "wikilink")) from working properly on OS X with Java 7 and 8.
 
-There may still be some kinks to iron out. If you are running OS X,
-please update your installation and [let us
-know](Mailing_Lists "wikilink") how it works for you\!
+There may still be some kinks to iron out. If you are running OS X, please update your installation and [let us know](Mailing_Lists "wikilink") how it works for you\!
 
-[Category:ImageJ2](Category:ImageJ2 "wikilink")
-[Category:News](Category:News "wikilink")
+[Category:ImageJ2](Category:ImageJ2 "wikilink") [Category:News](Category:News "wikilink")

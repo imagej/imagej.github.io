@@ -8,19 +8,13 @@ categories: News,ImageJ2
 description: test description
 ---
 
-As [mentioned on the mailing
-list](https://imagej.net/pipermail/imagej-devel/2011-November/000544.html),
-we have updated our web resources to be more unified under the
-**imagej.net** domain name:
+As [mentioned on the mailing list](https://imagej.net/pipermail/imagej-devel/2011-November/000544.html), we have updated our web resources to be more unified under the **imagej.net** domain name:
 
   - **imagejdev.org** is now **developer.imagej.net**
   - **dev.imagejdev.org** is now **code.imagej.net**
-  - The toplevel **imagej.net** currently redirects to
-    **imagej.nih.gov/ij** but will become the main portal into ImageJ
-    topics later in 2012.
+  - The toplevel **imagej.net** currently redirects to **imagej.nih.gov/ij** but will become the main portal into ImageJ topics later in 2012.
 
-Most of the links on the site have been updated accordingly, but any old
-links should also redirect properly.
+Most of the links on the site have been updated accordingly, but any old links should also redirect properly.
 
 Those who have the code checked out from Subversion will need to run:
 
@@ -36,5 +30,4 @@ git remote set-url origin git://code.imagej.net/imagej.git
 
 We hope the new domain is less confusing and easier to remember\!
 
-[Category:News](Category:News "wikilink")
-[Category:ImageJ2](Category:ImageJ2 "wikilink")
+[Category:News](Category:News "wikilink") [Category:ImageJ2](Category:ImageJ2 "wikilink")

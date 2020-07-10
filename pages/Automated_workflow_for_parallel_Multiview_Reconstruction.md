@@ -8,90 +8,42 @@ categories: Transform,Registration,Deconvolution
 description: test description
 ---
 
-{% include sidebox-right name='An automated workflow for parallel
-processing of large multiview SPIM recordings' software='Fiji'
-author='[Christopher
-Schmied](https://de.linkedin.com/in/christopher-schmied-75882b101),
-Peter Steinbach, Pavel Tomancak' maintainer='[Christopher
-Schmied](https://de.linkedin.com/in/christopher-schmied-75882b101)'
-released='July 2015' version='March 2016'
-category='[Transform](:Category:Transform "wikilink"),
-[Registration](:Category:Registration "wikilink"),
-[Deconvolution](:Category:Deconvolution "wikilink")' source='[on
-github](https://github.com/mpicbg-scicomp/snakemake-workflows)' %}
+{% include info-box name='An automated workflow for parallel processing of large multiview SPIM recordings' software='Fiji' author=' [Christopher Schmied](https://de.linkedin.com/in/christopher-schmied-75882b101) , Peter Steinbach, Pavel Tomancak' maintainer=' [Christopher Schmied](https://de.linkedin.com/in/christopher-schmied-75882b101) ' released='July 2015' latest-version='March 2016' category='[Transform](:Category:Transform "wikilink"), [Registration](:Category:Registration "wikilink"), [Deconvolution](:Category:Deconvolution "wikilink")' source=' [on github](https://github.com/mpicbg-scicomp/snakemake-workflows) ' %}
 
 # Citation
 
-Please note that the automated workflow for processing SPIM data on a
-cluster is based on a publication. If you use it successfully for your
-research please be so kind to cite the following work:
+Please note that the automated workflow for processing SPIM data on a cluster is based on a publication. If you use it successfully for your research please be so kind to cite the following work:
 
-  - C. Schmied, P. Steinbach, T. Pietzsch, S. Preibisch, P. Tomancak
-    (2015) "An automated workflow for parallel processing of large
-    multiview SPIM recordings." *Bioinformatics*, Dec 1; doi:
-    10.1093/bioinformatics/btv706
-    [Webpage](http://bioinformatics.oxfordjournals.org/content/early/2015/12/30/bioinformatics.btv706.long)
+  - C. Schmied, P. Steinbach, T. Pietzsch, S. Preibisch, P. Tomancak (2015) "An automated workflow for parallel processing of large multiview SPIM recordings." *Bioinformatics*, Dec 1; doi: 10.1093/bioinformatics/btv706 [Webpage](http://bioinformatics.oxfordjournals.org/content/early/2015/12/30/bioinformatics.btv706.long)
 
-The automated workflow is based on the Fiji plugins **[Multiview
-Reconstruction](Multiview-Reconstruction "wikilink")** and
-**[BigDataViewer](BigDataViewer "wikilink")**. Please refer to and cite
-the following publications:
+The automated workflow is based on the Fiji plugins **[Multiview Reconstruction](Multiview-Reconstruction "wikilink")** and **[BigDataViewer](BigDataViewer "wikilink")**. Please refer to and cite the following publications:
 
-  - S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010)
-    "Software for bead-based registration of selective plane
-    illumination microscopy data", *Nature Methods*,
-    **7**(6):418-419.[Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html)
-  - S. Preibisch, F. Amat, E. Stamataki, M. Sarov, R.H. Singer, E. Myers
-    and P. Tomancak (2014) "Efficient Bayesian-based Multiview
-    Deconvolution", *Nature Methods*, **11**(6):645-648.
-    [Webpage](http://www.nature.com/nmeth/journal/v11/n6/full/nmeth.2929.html)
-  - T. Pietzsch, S. Saalfeld, S. Preibisch, P. Tomancak (2015)
-    "BigDataViewer: visualization and processing for large image data
-    sets." *Nature Methods*, **12**(6)481–483.
-    [Webpage](http://www.nature.com/nmeth/journal/v12/n6/full/nmeth.3392.html)
+  - S. Preibisch, S. Saalfeld, J. Schindelin and P. Tomancak (2010) "Software for bead-based registration of selective plane illumination microscopy data", *Nature Methods*, **7**(6):418-419.[Webpage](http://www.nature.com/nmeth/journal/v7/n6/full/nmeth0610-418.html)
+  - S. Preibisch, F. Amat, E. Stamataki, M. Sarov, R.H. Singer, E. Myers and P. Tomancak (2014) "Efficient Bayesian-based Multiview Deconvolution", *Nature Methods*, **11**(6):645-648. [Webpage](http://www.nature.com/nmeth/journal/v11/n6/full/nmeth.2929.html)
+  - T. Pietzsch, S. Saalfeld, S. Preibisch, P. Tomancak (2015) "BigDataViewer: visualization and processing for large image data sets." *Nature Methods*, **12**(6)481–483. [Webpage](http://www.nature.com/nmeth/journal/v12/n6/full/nmeth.3392.html)
 
 # Multiview reconstruction
 
-In the **[Multiview
-Reconstruction](Multiview-Reconstruction "wikilink")** (MVR) pipeline
-all results are written into an XML. This poses new problems for cluster
-processing, because several concurrently running jobs need to update the
-same file.
+In the **[Multiview Reconstruction](Multiview-Reconstruction "wikilink")** (MVR) pipeline all results are written into an XML. This poses new problems for cluster processing, because several concurrently running jobs need to update the same file.
 
-Stephan Preibisch solved that problem by allowing to write one XML file
-per job (usually a timepoint) and then merging the job specific XMLs
-into one XML for the entire dataset.
+Stephan Preibisch solved that problem by allowing to write one XML file per job (usually a timepoint) and then merging the job specific XMLs into one XML for the entire dataset.
 
 In practice it means the following steps need to be executed:
 
   - Define XML dataset - creates one XML for the entire timelapse
-  - Re-save data as HDF5 - converts data into HDF5 container optimised
-    for fast access in **[BigDataViewer](BigDataViewer "wikilink")**
-  - Run per time-point registrations - creates as many XMLs as there are
-    timepoints
-  - Merge XMLs - consolidates the per-timepoint XMLs back into a single
-    XML
+  - Re-save data as HDF5 - converts data into HDF5 container optimised for fast access in **[BigDataViewer](BigDataViewer "wikilink")**
+  - Run per time-point registrations - creates as many XMLs as there are timepoints
+  - Merge XMLs - consolidates the per-timepoint XMLs back into a single XML
 
-Some new parameters are introduced and some old parameters change names.
-Therefore, use the ***[config.yaml](#config.yaml "wikilink")***
-described in this chapter to process with the MVR pipeline.
+Some new parameters are introduced and some old parameters change names. Therefore, use the ***[config.yaml](#config.yaml "wikilink")*** described in this chapter to process with the MVR pipeline.
 
-Outdated versions of the cluster processing scripts on which this
-workflow is based on you can find
-[here](SPIM_Registration_on_cluster "wikilink")
+Outdated versions of the cluster processing scripts on which this workflow is based on you can find [here](SPIM_Registration_on_cluster "wikilink")
 
 # Logic of workflow
 
-We map and dispatch the workflow logic either on a single maschine or on
-a HPC cluster using the automated workflow engine
-**\[https://bitbucket.org/johanneskoester/snakemake/wiki/Home.
-Snakemake\]**. Within the *Snakefile* the workflow with the processing
-steps and the input and output rules is defined. Each of these steps
-call a Fiji *beanshell* script. These scripts in turn drive the
-processing via Fiji.
+We map and dispatch the workflow logic either on a single maschine or on a HPC cluster using the automated workflow engine **\[https://bitbucket.org/johanneskoester/snakemake/wiki/Home. Snakemake\]**. Within the *Snakefile* the workflow with the processing steps and the input and output rules is defined. Each of these steps call a Fiji *beanshell* script. These scripts in turn drive the processing via Fiji.
 
-The current workflow consists of the following steps. It covers the
-prinicipal processing for timelapse multiview SPIM processing:
+The current workflow consists of the following steps. It covers the prinicipal processing for timelapse multiview SPIM processing:
 
 1\. define czi or tif dataset.
 
@@ -115,9 +67,7 @@ prinicipal processing for timelapse multiview SPIM processing:
 
 # Supported datasets
 
-The scripts are supporting multiple angles, multiple channels and
-multiple illumination direction without adjusting the Snakefile or .bsh
-scripts.
+The scripts are supporting multiple angles, multiple channels and multiple illumination direction without adjusting the Snakefile or .bsh scripts.
 
 Using spimdata version: 0.9-revision
 
@@ -150,38 +100,25 @@ Using ImageJ Opener (.tif):
 
 # Fiji for workflow
 
-You can download a Fiji version that we have tested for compatibility
-with the automated cluster processing here:
+You can download a Fiji version that we have tested for compatibility with the automated cluster processing here:
 
 **http://tomancak-srv1.mpi-cbg.de/~schmied/**
 
-It is important to note that we can only guarantee the proper execution
-of the workflow with the provided Fiji version. We will from time to
-time upgrade to cover the latest changes in the plugins.
+It is important to note that we can only guarantee the proper execution of the workflow with the provided Fiji version. We will from time to time upgrade to cover the latest changes in the plugins.
 
 # Snakemake for workflow
 
-**[Snakemake](https://bitbucket.org/snakemake/snakemake/wiki/Home)**
-(command-line workflow engine) is used to automatically execute
-individual steps in the workflow. The workflow documented on this page
-was tested with snakemake 3.3 (interfaced with
-**[PyYAML](http://www.pyyaml.org)**(version 3.11) and **[python
-drmaa](https://github.com/pygridtools/drmaa-python)**(version 0.7.6)
-support.
+**[Snakemake](https://bitbucket.org/snakemake/snakemake/wiki/Home)** (command-line workflow engine) is used to automatically execute individual steps in the workflow. The workflow documented on this page was tested with snakemake 3.3 (interfaced with **[PyYAML](http://www.pyyaml.org)**(version 3.11) and **[python drmaa](https://github.com/pygridtools/drmaa-python)**(version 0.7.6) support.
 
 # Automated Multiview Reconstruction workflow
 
-Clone the repository for the workflow from
-**[github](https://github.com/mpicbg-scicomp/snakemake-workflows)**.
+Clone the repository for the workflow from **[github](https://github.com/mpicbg-scicomp/snakemake-workflows)**.
 
 ``` bash
 git clone https://github.com/mpicbg-scicomp/snakemake-workflows.git
 ```
 
-The repository contains the example configuration scripts for single and
-dual channel datasets, the Snakefile which defines the workflow, the
-beanshell scripts which drive the processing via Fiji and a cluster.json
-file which contains information for the cluster queuing system.
+The repository contains the example configuration scripts for single and dual channel datasets, the Snakefile which defines the workflow, the beanshell scripts which drive the processing via Fiji and a cluster.json file which contains information for the cluster queuing system.
 
 ## timelapse directory
 
@@ -206,34 +143,20 @@ file which contains information for the cluster queuing system.
 └── xml_merge.bsh           
 ```
 
-  - The *Snakefile* contains the name of the processing step as well as
-    the input and output rules for the processing.
-  - *config.yaml* contains the parameters that configure the beanshell
-    scripts found in the data directory.
-  - *cluster.json* contains the resource information (processing time,
-    number of cores and memory) for the queuing system.
-  - *\*.bsh* scripts contain the instructions for Fiji to run the
-    processing.
+  - The *Snakefile* contains the name of the processing step as well as the input and output rules for the processing.
+  - *config.yaml* contains the parameters that configure the beanshell scripts found in the data directory.
+  - *cluster.json* contains the resource information (processing time, number of cores and memory) for the queuing system.
+  - *\*.bsh* scripts contain the instructions for Fiji to run the processing.
 
 ## tools directory
 
-The tool directory contains scripts for common file format
-pre-processing. Some datasets are currently only usable when resaving
-them into *.tif*:
+The tool directory contains scripts for common file format pre-processing. Some datasets are currently only usable when resaving them into *.tif*:
 
   - discontinous *.czi* datasets
   - *.czi* dataset with multiple groups
   - *.ome.tiff* files
 
-The *master\_preprocessing.sh* file is the configuration script that
-contains the information about the dataset that needs to be resaved. In
-the *czi\_resave* as well as the *ometiff\_resave* directory you will
-find the the *create-resaving-jobs.sh* script that creates a job for
-each time point. The *submit-jobs* script sends these jobs to the
-cluster where they call the *resaving.bsh* or *ometiff\_resave.bsh*
-script. The beanshell then uses the Fiji macro and resaves the files.
-The resaving of *.czi* files is using LOCI bioformats and preserves the
-metadata.
+The *master\_preprocessing.sh* file is the configuration script that contains the information about the dataset that needs to be resaved. In the *czi\_resave* as well as the *ometiff\_resave* directory you will find the the *create-resaving-jobs.sh* script that creates a job for each time point. The *submit-jobs* script sends these jobs to the cluster where they call the *resaving.bsh* or *ometiff\_resave.bsh* script. The beanshell then uses the Fiji macro and resaves the files. The resaving of *.czi* files is using LOCI bioformats and preserves the metadata.
 
 ``` bash
 /path/to/repository/spim_registration/tools/
@@ -250,8 +173,7 @@ metadata.
 
 ## cluster\_tools directory
 
-The cluster tools directory contains the libraries for GPU deconvolution
-and the virtual frame buffer (xvfb) for running Fiji headless.
+The cluster tools directory contains the libraries for GPU deconvolution and the virtual frame buffer (xvfb) for running Fiji headless.
 
 ``` bash
 libFourierConvolutionCUDALib.so
@@ -260,8 +182,7 @@ xvfb-run
 
 ## sysconfcpus
 
-We use **[Libsysconfcpus](http://www.kev.pulo.com.au/libsysconfcpus/)**
-to restrict how many cores Fiji is using on the cluster.
+We use **[Libsysconfcpus](http://www.kev.pulo.com.au/libsysconfcpus/)** to restrict how many cores Fiji is using on the cluster.
 
 Compile with:
 
@@ -271,30 +192,15 @@ Compile with:
  make install
 ```
 
-where PREFIX is the installation directory. ANSI mode is necessary when
-compiling with our default GCC version, 4.9.2. It may or may not be
-necessary with older versions.
+where PREFIX is the installation directory. ANSI mode is necessary when compiling with our default GCC version, 4.9.2. It may or may not be necessary with older versions.
 
 # Command line
 
-It is very likely that the cluster computer does not run ANY Graphical
-User Interface and relies exclusively on the command line. Steering a
-cluster from the command line is fairly easy - I use about 10 different
-commands to do everything I need to do. Since the Linux command line may
-be unfamiliar to most biologists we start a separate
-**[Linux\_command\_line\_tutorial](Linux_command_line_tutorial "wikilink")**
-and **http://swcarpentry.github.io/shell-novice/** page that explains
-the bare essentials.
+It is very likely that the cluster computer does not run ANY Graphical User Interface and relies exclusively on the command line. Steering a cluster from the command line is fairly easy - I use about 10 different commands to do everything I need to do. Since the Linux command line may be unfamiliar to most biologists we start a separate **[Linux\_command\_line\_tutorial](Linux_command_line_tutorial "wikilink")** and **http://swcarpentry.github.io/shell-novice/** page that explains the bare essentials.
 
 # Initial setup of the workflow
 
-After you cloned the snakemake-workflows repository you need to
-configure the *config.yaml* for your setup. This means you need to
-specify the directory for your Fiji, the location of the xvfb-run and
-the location for the GPU deconvolution libraries. Go into the timelapse
-directory of the snakemake-workflows and open the *config.yaml* with
-your preferred editor for example nano and change the settings in
-section *7. Software directories*:
+After you cloned the snakemake-workflows repository you need to configure the *config.yaml* for your setup. This means you need to specify the directory for your Fiji, the location of the xvfb-run and the location for the GPU deconvolution libraries. Go into the timelapse directory of the snakemake-workflows and open the *config.yaml* with your preferred editor for example nano and change the settings in section *7. Software directories*:
 
 ``` bash
 cd snakemake-workflows/spim_registration/timelapse/
@@ -324,8 +230,7 @@ nano config.yaml
   memory-prefix: "-Xmx"
 ```
 
-After this initial setup you can proceed to modify the *config.yaml* for
-your specific dataset.
+After this initial setup you can proceed to modify the *config.yaml* for your specific dataset.
 
 # Setup for the dataset
 
@@ -344,9 +249,7 @@ The example dataset looks like this:
 └── exampleSingleChannel(4).czi
 ```
 
-For processing, the dataset directory will also contain the config.yaml
-file for the specific dataset. Go to your dataset directory and make a
-symlink for the config.yaml:
+For processing, the dataset directory will also contain the config.yaml file for the specific dataset. Go to your dataset directory and make a symlink for the config.yaml:
 
 ``` bash
 cd /path/to/data/
@@ -369,48 +272,34 @@ Now the dataset directory has a symlink for the config.yaml:
 
 The entire processing is controlled via the yaml file.
 
-he key parameters for the processing are found in the first (common)
-part of the yaml file. These parameters are usually dataset and user
-dependent. The second part contains the advanced and manual overrides
-for each processing step. These steps correspond to the rules in the
-snakefile.
+he key parameters for the processing are found in the first (common) part of the yaml file. These parameters are usually dataset and user dependent. The second part contains the advanced and manual overrides for each processing step. These steps correspond to the rules in the snakefile.
 
 ## Setting up the *config.yaml* file for processing
 
 ### Processing switches
 
-In the first section you need to decide which processing you want to
-carry out. Open the *config.yaml* file:
+In the first section you need to decide which processing you want to carry out. Open the *config.yaml* file:
 
 ``` bash
 cd snakemake-workflows/spim_registration/timelapse/
 nano config.yaml
 ```
 
-The *transformation\_switch* switches between normal single channel/
-multi channel processing where all channels contain beads for
-registration and multi channel processing where only one channel
-contains beads. If there are channels present without beads the
-transformations of the other channels need to be copied in order to
-register them.
+The *transformation\_switch* switches between normal single channel/ multi channel processing where all channels contain beads for registration and multi channel processing where only one channel contains beads. If there are channels present without beads the transformations of the other channels need to be copied in order to register them.
 
-Set the *transformation\_switch* to *timelapse* to do single channel
-processing or multichannel processing where all channels contain beads:
+Set the *transformation\_switch* to *timelapse* to do single channel processing or multichannel processing where all channels contain beads:
 
 ``` bash
 transformation_switch: "timelapse",
 ```
 
-Set the *transformation\_switch* to *timelapse\_duplicate* to duplicate
-the transformation from one channel to others:
+Set the *transformation\_switch* to *timelapse\_duplicate* to duplicate the transformation from one channel to others:
 
 ``` bash
 transformation_switch: "timelapse_duplicate",
 ```
 
-The *fusion\_switch* decides between weighted-average fusion and
-deconvolution. Set the *fusion\_switch* to *fusion* to do
-weighted-average fusion:
+The *fusion\_switch* decides between weighted-average fusion and deconvolution. Set the *fusion\_switch* to *fusion* to do weighted-average fusion:
 
 ``` bash
 fusion_switch: "fusion",
@@ -424,24 +313,19 @@ fusion_switch: "deconvolution",
 
 ### General Settings
 
-In the the next section specify the name of the dataset. This will be
-the name of the *HDF5* file and the *XML* file:
+In the the next section specify the name of the dataset. This will be the name of the *HDF5* file and the *XML* file:
 
 ``` bash
 hdf5_xml_filename: '"dataset_one"',
 ```
 
-Then specify the number of time points of the dataset. The example
-dataset has 2 time points. The processing of each time point runs in
-parallel on the cluster.
+Then specify the number of time points of the dataset. The example dataset has 2 time points. The processing of each time point runs in parallel on the cluster.
 
 ``` bash
 ntimepoints: 2,  
 ```
 
-Then specify the angles, the channels and the illumination side. If you
-resaved data into *.tif* from *.czi* then give the appropriate numbers
-(i.e. 0,1). The values are separated by a comma:
+Then specify the angles, the channels and the illumination side. If you resaved data into *.tif* from *.czi* then give the appropriate numbers (i.e. 0,1). The values are separated by a comma:
 
 ``` bash
 angles: "0,72,144,216,288",
@@ -449,8 +333,7 @@ channels: "green",
 illumination: "0", 
 ```
 
-If you want to process dual channel datasets use two different names for
-the channels:
+If you want to process dual channel datasets use two different names for the channels:
 
 ``` bash
 angles: "0,72,144,216,288",
@@ -460,8 +343,7 @@ illumination: "0",
 
 #### Settings for .czi files
 
-If you process *.czi* files then give the name of the first *.czi* (file
-without index):
+If you process *.czi* files then give the name of the first *.czi* (file without index):
 
 ``` bash
 first_czi: "exampleSingleChannel.czi",
@@ -469,27 +351,21 @@ first_czi: "exampleSingleChannel.czi",
 
 #### Settings for .tif datasets
 
-For processing of *.tif* files give the pattern of the files and if you
-process single channel datasets or dual channel datasets:
+For processing of *.tif* files give the pattern of the files and if you process single channel datasets or dual channel datasets:
 
 ``` bash
 image_file_pattern: 'img_TL{{t}}_Angle{{a}}.tif',
 multiple_channels: '"NO (one channel)"', 
 ```
 
-For datasets with multiple channels the files can be separated by
-channel or each file can contain both channels. For multi channel
-datasets with separated files per channel give additionally the channel
-information of the *image\_file\_pattern*
+For datasets with multiple channels the files can be separated by channel or each file can contain both channels. For multi channel datasets with separated files per channel give additionally the channel information of the *image\_file\_pattern*
 
 ``` bash
 image_file_pattern: 'img_TL{{t}}_Angle{{a}}_Channels{{c}}.tif',
 multiple_channels: '"YES (one file per channel)"', 
 ```
 
-If the files contain both channels then leave out the channel
-information in the *image\_file\_pattern*. And specify for
-*multiple\_channels* that you want to process multi channel datasets:
+If the files contain both channels then leave out the channel information in the *image\_file\_pattern*. And specify for *multiple\_channels* that you want to process multi channel datasets:
 
 ``` bash
 image_file_pattern: 'img_TL{{t}}_Angle{{a}}.tif',
@@ -498,21 +374,14 @@ multiple_channels: '"YES (all channels in one file)"',
 
 ### Detection and registration
 
-To carry out the registration specify the channels for the data
-containing beads. For single channel data and multi channel data where
-all channels contain beads for registration you want to select the
-following: As interest points specify '"beads"'. For multi channel
-datasets indicate '"beads,beads"':
+To carry out the registration specify the channels for the data containing beads. For single channel data and multi channel data where all channels contain beads for registration you want to select the following: As interest points specify '"beads"'. For multi channel datasets indicate '"beads,beads"':
 
 ``` bash
 reg_process_channel: '"All channels"',
 reg_interest_points_channel: '"beads"',
 ```
 
-If you have dual channel datasets where only one channel contains beads
-specify that you want to select only one channel. Also specify the
-source and target channels. And specify the correct channel that should
-not be registered:
+If you have dual channel datasets where only one channel contains beads specify that you want to select only one channel. Also specify the source and target channels. And specify the correct channel that should not be registered:
 
 ``` bash
 reg_process_channel: '"All channels"',
@@ -521,12 +390,7 @@ target_channel: "green",
 reg_interest_points_channel: '"[DO NOT register this channel],beads"',
 ```
 
-Next give the parameters for the detection method. Select the method
-which is used for registration (i.e. Difference-of-Mean or
-Difference-of-Gaussian). We recommend using Difference-of-Gaussian. Give
-the information for radius 1 and 2 as well as the threshold that you
-retrieved by processing the reference time point with the Graphical user
-interface:
+Next give the parameters for the detection method. Select the method which is used for registration (i.e. Difference-of-Mean or Difference-of-Gaussian). We recommend using Difference-of-Gaussian. Give the information for radius 1 and 2 as well as the threshold that you retrieved by processing the reference time point with the Graphical user interface:
 
 ``` bash
 type_of_detection: '"Difference-of-Gaussian"',
@@ -534,8 +398,7 @@ sigma: '1.3',
 reg_threshold: '0.005',
 ```
 
-For Difference-of-Mean registration specify radius\_1, radius\_2 and the
-threshold:
+For Difference-of-Mean registration specify radius\_1, radius\_2 and the threshold:
 
 ``` bash
 type_of_detection: '"Difference-of-Gaussian"',
@@ -546,8 +409,7 @@ reg_threshold: '0.005',
 
 ### Timelapse registration
 
-Specify which time point should be used as reference time point. We
-generally use a time point in the middle of the dataset:
+Specify which time point should be used as reference time point. We generally use a time point in the middle of the dataset:
 
 ``` bash
 reference_timepoint: '1', 
@@ -555,10 +417,7 @@ reference_timepoint: '1',
 
 ### Weighted-average fusion
 
-For the weighted-average fusion specify the downsampling factor and the
-bounding box determined in the GUI processing on the reference time
-point. The bounding box is for the Weighted-average fusion independent
-of the downsampling:
+For the weighted-average fusion specify the downsampling factor and the bounding box determined in the GUI processing on the reference time point. The bounding box is for the Weighted-average fusion independent of the downsampling:
 
 ``` bash
 downsample: '1', 
@@ -574,10 +433,7 @@ maximal_z: '480',
 
 #### External transformation
 
-If you want to use downsampling for the multiview deconvolution set the
-*external\_trafo\_switch* to *external\_trafo*. Without downsampling use
-*\_transform*. The matrix for the external transformation specifies the
-downsampling. Here it is set to 2x downsampling:
+If you want to use downsampling for the multiview deconvolution set the *external\_trafo\_switch* to *external\_trafo*. Without downsampling use *\_transform*. The matrix for the external transformation specifies the downsampling. Here it is set to 2x downsampling:
 
 ``` bash
 external_trafo_switch: "external_trafo",
@@ -586,9 +442,7 @@ matrix_transform: '"0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 0.5, 0.0"'
 
 #### Deconvolution settings
 
-To carry out the deconvolution specify the numbers of iterations as well
-as the bounding box. For the multiview deconvolution the bounding box
-needs to take the downsampling into account:
+To carry out the deconvolution specify the numbers of iterations as well as the bounding box. For the multiview deconvolution the bounding box needs to take the downsampling into account:
 
 ``` bash
 iterations: '15',
@@ -600,8 +454,7 @@ maximal_y_deco: '964',
 maximal_z_deco: '240',
 ```
 
-Then specify the source for the point-spread-function (PSF). For single
-channel datasets it is just '"beads"'.
+Then specify the source for the point-spread-function (PSF). For single channel datasets it is just '"beads"'.
 
 ``` bash
 detections_to_extract_psf_for_channel: '"beads"',
@@ -613,8 +466,7 @@ For dual channel datasets its '"beads,beads"'
 detections_to_extract_psf_for_channel: '"beads,beads"',
 ```
 
-If you process multi channel datasets where only one channel contains
-beads then specify which channel does not contain beads:
+If you process multi channel datasets where only one channel contains beads then specify which channel does not contain beads:
 
 ``` bash
 detections_to_extract_psf_for_channel: '"[Same PSF as channel red],beads"',
@@ -622,9 +474,7 @@ detections_to_extract_psf_for_channel: '"[Same PSF as channel red],beads"',
 
 ### Software directories
 
-Here the directories for the Fiji, *beanshell* scripts, CUDA libraries
-and xvfb are stored. Also the prefix for sysconfcpus and the memory
-prefix for Fiji are stored:
+Here the directories for the Fiji, *beanshell* scripts, CUDA libraries and xvfb are stored. Also the prefix for sysconfcpus and the memory prefix for Fiji are stored:
 
 ``` bash
   # current working Fiji
@@ -641,9 +491,7 @@ prefix for Fiji are stored:
 
 ### Fiji Resource settings
 
-Here the resource restrictions for Fiji with the number of cores and
-memory are specified for each processing step. These settings need to
-match the cluster.json file:
+Here the resource restrictions for Fiji with the number of cores and memory are specified for each processing step. These settings need to match the cluster.json file:
 
 ``` bash
 Fiji_resources: {
@@ -669,13 +517,11 @@ Fiji_resources: {
 
 ### Advanced settings
 
-In the advanced settings are more options for further refining the
-processing. These settings should only be changed when necessary.
+In the advanced settings are more options for further refining the processing. These settings should only be changed when necessary.
 
 ## *cluster.json*
 
-The *cluster.json* contains the resource information for the queuing
-system. It should match the Fiji resource settings.
+The *cluster.json* contains the resource information for the queuing system. It should match the Fiji resource settings.
 
 ``` bash
 {
@@ -731,12 +577,7 @@ system. It should match the Fiji resource settings.
 
 ## Submitting Jobs
 
-We recommend to execute Snakemake within
-**[screen](https://www.gnu.org/software/screen/manual/screen.html)**. To
-execute Snakemake you need to call Snakemake, specify the number of
-jobs, the location of the data and to dispatch jobs to a cluster with
-the information for the queuing system. Here is a list of commands and
-flags that are used for the Snakemake workflow:
+We recommend to execute Snakemake within **[screen](https://www.gnu.org/software/screen/manual/screen.html)**. To execute Snakemake you need to call Snakemake, specify the number of jobs, the location of the data and to dispatch jobs to a cluster with the information for the queuing system. Here is a list of commands and flags that are used for the Snakemake workflow:
 
 Local back end: /path/to/snakemake/snakemake -j 1 -d /path/to/data/
 
@@ -748,18 +589,13 @@ Flag for dry run of snakemake: -n
 
 Force the execution of a rule: -R <name of rule>
 
-For DRMAA back end add: --drmaa " -q {cluster.lsf\_q}
-{cluster.lsf\_extra}"
+For DRMAA back end add: --drmaa " -q {cluster.lsf\_q} {cluster.lsf\_extra}"
 
-For Lsf backend add: --cluster "bsub -q {cluster.lsf\_q}
-{cluster.lsf\_extra}”
+For Lsf backend add: --cluster "bsub -q {cluster.lsf\_q} {cluster.lsf\_extra}”
 
-To specify the configuration script for the queuing system:
---cluster-config ./cluster.json
+To specify the configuration script for the queuing system: --cluster-config ./cluster.json
 
-To save error and output files of cluster add: --drmaa " -q
-{cluster.lsf\_q} {cluster.lsf\_extra} -o test.out -e test.err" --cluster
-"bsub -q {cluster.lsf\_q} {cluster.lsf\_extra} -o test.out -e test.err“
+To save error and output files of cluster add: --drmaa " -q {cluster.lsf\_q} {cluster.lsf\_extra} -o test.out -e test.err" --cluster "bsub -q {cluster.lsf\_q} {cluster.lsf\_extra} -o test.out -e test.err“
 
 The commands to execute snakemake would then look like this:
 
@@ -789,35 +625,18 @@ LSF
 /path/to/snakemake/snakemake -j 2 -d /path/to/data/ --cluster-config ./cluster.json --cluster "bsub -q {cluster.lsf_q} {cluster.lsf_extra} -o test.out -e test.err"
 ```
 
-Note: the error and output of the cluster of all jobs are written into
-these files.
+Note: the error and output of the cluster of all jobs are written into these files.
 
 ## Log files and supervision of the pipeline
 
-The log files are written into a new directory in the data directory
-called "logs". The log files are ordered according to their position in
-the workflow. Multiple or alternative steps in the pipeline are
-indicated by numbers.
+The log files are written into a new directory in the data directory called "logs". The log files are ordered according to their position in the workflow. Multiple or alternative steps in the pipeline are indicated by numbers.
 
-force certain rules: use the -R flag to rerun a particular rule and
-everything downstream -R <name of rule>
+force certain rules: use the -R flag to rerun a particular rule and everything downstream -R <name of rule>
 
 # Cluster
 
-Every cluster is different both in terms of the used hardware and the
-software running on it, particularly the scheduling system. Here we use
-a cluster computer at the MPI-CBG that consists of **44** nodes each
-with **12** Intel Xeon E5-2640 cores running @ 2.50 GHz and enjoying
-**128GB** of memory. The cluster nodes have access to 200TB of data
-storage provided by a dedicated Lustre distributed file system, suffice
-to say that it is optimised for high performance input/output
-(read/write) operations which is crucial for the SPIM data volumes.
+Every cluster is different both in terms of the used hardware and the software running on it, particularly the scheduling system. Here we use a cluster computer at the MPI-CBG that consists of **44** nodes each with **12** Intel Xeon E5-2640 cores running @ 2.50 GHz and enjoying **128GB** of memory. The cluster nodes have access to 200TB of data storage provided by a dedicated Lustre distributed file system, suffice to say that it is optimised for high performance input/output (read/write) operations which is crucial for the SPIM data volumes.
 
-Each node of this cluster runs CentOS 6.3 Linux distribution. The
-queuing system running on the MPI-CBG cluster is LSF. The basic
-principles of job submission are the same across queuing systems, but
-the exact syntax will of course differ.
+Each node of this cluster runs CentOS 6.3 Linux distribution. The queuing system running on the MPI-CBG cluster is LSF. The basic principles of job submission are the same across queuing systems, but the exact syntax will of course differ.
 
-[Category:Transform](Category:Transform "wikilink")
-[Category:Registration](Category:Registration "wikilink")
-[Category:Deconvolution](Category:Deconvolution "wikilink")
+[Category:Transform](Category:Transform "wikilink") [Category:Registration](Category:Registration "wikilink") [Category:Deconvolution](Category:Deconvolution "wikilink")

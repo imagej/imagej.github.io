@@ -8,9 +8,7 @@ categories:
 description: test description
 ---
 
-See also the [Image Processing
-School](http://www.neuroinformatics2009.org/courses-and-satellite-meetings/image-processing-school/)
-announcement webpage.
+See also the [Image Processing School](http://www.neuroinformatics2009.org/courses-and-satellite-meetings/image-processing-school/) announcement webpage.
 
 # Schedule (tentative):
 
@@ -29,16 +27,13 @@ announcement webpage.
 
 ### Overview of installing and using Fiji
 
-Setup: installing Fiji and getting familiar with it; overview of major
-features.
+Setup: installing Fiji and getting familiar with it; overview of major features.
 
 Lead instructor: [Johannes Schindelin](Johannes_Schindelin "wikilink")
 
 ### Image Processing fundamentals
 
-Fundamentals of image processing: anatomy of a digital image, image
-formats. Includes notes on image acquisition (effects of dynamic range
-and exposure times)
+Fundamentals of image processing: anatomy of a digital image, image formats. Includes notes on image acquisition (effects of dynamic range and exposure times)
 
 Lead instructor: [Albert Cardona](Albert_Cardona "wikilink")
 
@@ -52,28 +47,23 @@ Lead instructor: [Johannes Schindelin](Johannes_Schindelin "wikilink")
 
 ### Quantitative Imaging
 
-Quantitative image acquisition and analysis: Spectroscopy not
-photography, simple measurements.
+Quantitative image acquisition and analysis: Spectroscopy not photography, simple measurements.
 
-The presentation is available online (PDF)
-[here\!](https://info.med.tu-dresden.de/MTZimaging/images/1/1e/QuantitativeColocAnalysis0709small.pdf)
+The presentation is available online (PDF) [here\!](https://info.med.tu-dresden.de/MTZimaging/images/1/1e/QuantitativeColocAnalysis0709small.pdf)
 
 Lead instructor: [Dan White](Dan_White "wikilink")
 
 ### Colocalization
 
-Quantitative Image analysis: What you need to know about Colocalization
-Analysis
+Quantitative Image analysis: What you need to know about Colocalization Analysis
 
-The presentation is available online (PDF)
-[here\!](https://info.med.tu-dresden.de/MTZimaging/images/1/1e/QuantitativeColocAnalysis0709small.pdf)
+The presentation is available online (PDF) [here\!](https://info.med.tu-dresden.de/MTZimaging/images/1/1e/QuantitativeColocAnalysis0709small.pdf)
 
 Lead instructor: [Dan White](Dan_White "wikilink")
 
 ### TrakEM2
 
-[TrakEM2](TrakEM2 "wikilink"): image registration and manual
-segmentation.
+[TrakEM2](TrakEM2 "wikilink"): image registration and manual segmentation.
 
 Lead instructor: [Albert Cardona](Albert_Cardona "wikilink")
 
@@ -86,8 +76,7 @@ Introduction to image segmentation.
   - Pixel-based and vector-based.
   - Manual and semi-automatic.
 
-Plugins: Simple Neurite Tracer, Segmentation Editor, VIB protocol,
-TrakEM2, Level Sets.
+Plugins: Simple Neurite Tracer, Segmentation Editor, VIB protocol, TrakEM2, Level Sets.
 
 Lead instructor: [Verena Kaynig](Verena_Kaynig "wikilink")
 
@@ -105,8 +94,7 @@ Lead instructors: {% include person content='JeanYvesTinevez' %}
 
 ### Writing Fiji plugins in Java
 
-Introduction to Fiji programming in Java (this will be an add-on to the
-[advanced scripting](#Fiji_scripting:_advanced_Python "wikilink")).
+Introduction to Fiji programming in Java (this will be an add-on to the [advanced scripting](#Fiji_scripting:_advanced_Python "wikilink")).
 
 Lead instructor: [Johannes Schindelin](Johannes_Schindelin "wikilink")
 
@@ -114,15 +102,10 @@ Lead instructor: [Johannes Schindelin](Johannes_Schindelin "wikilink")
 
 ### Registration
 
-Image registration: rigid, affine, elastic, maximal warping...
-([Register Virtual Stack
-Slices](Register_Virtual_Stack_Slices "wikilink"),
-[TrakEM2](TrakEM2 "wikilink"), [BUnwarpJ](BUnwarpJ "wikilink"))
+Image registration: rigid, affine, elastic, maximal warping... ([Register Virtual Stack Slices](Register_Virtual_Stack_Slices "wikilink"), [TrakEM2](TrakEM2 "wikilink"), [BUnwarpJ](BUnwarpJ "wikilink"))
 
 Lead instructor: {% include person content='Iarganda' %}
 
 ## Work sessions
 
-At the end of every day, there is time to apply what you learnt and go
-beyond that. You can process your own images and discuss results and
-methods with the instructors.
+At the end of every day, there is time to apply what you learnt and go beyond that. You can process your own images and discuss results and methods with the instructors.

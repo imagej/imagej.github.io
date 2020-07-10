@@ -8,8 +8,7 @@ categories:
 description: test description
 ---
 
-This table lists the versions of [ImageJ2](ImageJ2 "wikilink") released
-during its initial incubation period.
+This table lists the versions of [ImageJ2](ImageJ2 "wikilink") released during its initial incubation period.
 
 | Version                                                                                            | Code name | Release date                                                          | Theme                                          | Roadmap                                                                       |
 | -------------------------------------------------------------------------------------------------- | --------- | --------------------------------------------------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------- |
@@ -39,5 +38,4 @@ during its initial incubation period.
 | [2.0.0-rc-2](https://maven.imagej.net/content/groups/public/net/imagej/imagej/2.0.0-rc-2/)         | release   | [2014 June 2](2014-06-04_-_ImageJ_2.0.0_release_candidate "wikilink") | Release candidate for community testing        | \-                                                                            |
 | [2.0.0-rc-3](https://maven.imagej.net/content/groups/public/net/imagej/imagej/2.0.0-rc-3/)         | release   | 2014 June 10                                                          | Release candidate for community testing        | \-                                                                            |
 
-Later versions of ImageJ can be built from the [relevant tag of the Git
-repository](https://github.com/imagej/imagej/tags).
+Later versions of ImageJ can be built from the [relevant tag of the Git repository](https://github.com/imagej/imagej/tags).

@@ -8,56 +8,27 @@ categories: Plugins
 description: test description
 ---
 
-{% include component-stats content=':sc.fiji:level\_sets'
-%}![LS.2b.progress.png](/images/pages/LS.2b.progress.png "LS.2b.progress.png")"
+{% include component-stats content=':sc.fiji:level\_sets' %}![LS.2b.progress.png](/images/pages/LS.2b.progress.png "LS.2b.progress.png")"
 
 ## Level Sets and Fast Marching
 
 ### Introduction
 
-Level Sets are an important category of modern image segmentation
-techniques based on partial differential equations (PDE), i.e.
-progressive evaluation of the differences among neighboring pixels to
-find object boundaries. Ideally, the algorithm will converge at the
-boundary of the object where the differences are the highest.
+Level Sets are an important category of modern image segmentation techniques based on partial differential equations (PDE), i.e. progressive evaluation of the differences among neighboring pixels to find object boundaries. Ideally, the algorithm will converge at the boundary of the object where the differences are the highest.
 
-The Fiji plugin provides two PDE based methods, the more basic fast
-marching and the advanced active contour algorithm.
+The Fiji plugin provides two PDE based methods, the more basic fast marching and the advanced active contour algorithm.
 
-Fast marching works similar to a standard flood fill but is more
-sensitive in the boundary detection. While growing the region it
-constantly calculates the difference of the current selection to the
-newly added pixels and either stops if it exceeds a pre selected gray
-value difference or if it would exceed a certain pre-selected rate of
-growth. This algorithm is sensitive to leaking - if the object has a gap
-in the boundary, the selection may leak to the outside of the object.
+Fast marching works similar to a standard flood fill but is more sensitive in the boundary detection. While growing the region it constantly calculates the difference of the current selection to the newly added pixels and either stops if it exceeds a pre selected gray value difference or if it would exceed a certain pre-selected rate of growth. This algorithm is sensitive to leaking - if the object has a gap in the boundary, the selection may leak to the outside of the object.
 
-Level sets advance a contour like a rubber band until the contour hits
-an object boundary. The rubber band like nature (= curvature) prevents
-the contour from leaking if there are gaps in the boundary. The strength
-of the rubber band and a gray level difference can be pre-selected.
+Level sets advance a contour like a rubber band until the contour hits an object boundary. The rubber band like nature (= curvature) prevents the contour from leaking if there are gaps in the boundary. The strength of the rubber band and a gray level difference can be pre-selected.
 
-The speedy fast marching can be used as input for the slower active
-contours. If the image is very large, starting with Fast Marching and
-using the contour from the fast marching to refine the object with Level
-Sets can significantly speed up the object detection.
+The speedy fast marching can be used as input for the slower active contours. If the image is very large, starting with Fast Marching and using the contour from the fast marching to refine the object with Level Sets can significantly speed up the object detection.
 
 ### Algorithmic details
 
-The fast marching algorithm expands from a seed point the to the object
-boundary until it encounters a pre-set difference in the pixels
-intensities.
+The fast marching algorithm expands from a seed point the to the object boundary until it encounters a pre-set difference in the pixels intensities.
 
-Active contours evolve an initial contour in time according to multiple
-intrinsic geometric measures of the image. In the plugin implementation
-the measures are an edge based constraint, a grey value penalty and a
-curvature constraint which prevents them from leaking the object
-boundary at areas of poor edges. During curve evolution the active
-contours in this implementation can split and merge and thus be used to
-detect even multiple objects. The algorithm in the plugin is based on a
-state-of-the-art very memory efficient and fast sparse-field computation
-(Terry S. Yoo, Insight into Images, Chapter 8) which can be easily
-extended to other variations of the active contour/level set algorithms.
+Active contours evolve an initial contour in time according to multiple intrinsic geometric measures of the image. In the plugin implementation the measures are an edge based constraint, a grey value penalty and a curvature constraint which prevents them from leaking the object boundary at areas of poor edges. During curve evolution the active contours in this implementation can split and merge and thus be used to detect even multiple objects. The algorithm in the plugin is based on a state-of-the-art very memory efficient and fast sparse-field computation (Terry S. Yoo, Insight into Images, Chapter 8) which can be easily extended to other variations of the active contour/level set algorithms.
 
 This implementation is based on following PDE update:
 
@@ -84,19 +55,14 @@ with
 
 \[F_c\] = Curvature force
 
-A more detailed explanation of the algorithm can be found at following
-links:
+A more detailed explanation of the algorithm can be found at following links:
 
-  - Book: [Insight Into Images Principles and Practice for Segmentation,
-    Registration and Image
-    Analysis](http://www.akpeters.com/product.asp?ProdCode=2175)
-  - [ITK online documentation](http://www.itk.org/ItkSoftwareGuide.pdf),
-    Chapter 9.3
+  - Book: [Insight Into Images Principles and Practice for Segmentation, Registration and Image Analysis](http://www.akpeters.com/product.asp?ProdCode=2175)
+  - [ITK online documentation](http://www.itk.org/ItkSoftwareGuide.pdf), Chapter 9.3
   - [Wikipedia Fast Marching](wikipedia:Fast_marching "wikilink")
   - [Wikipedia Level Sets](wikipedia:Level_set "wikilink")
 
-An upcoming future implementation will add geodesic active contours as
-described by Caselles et.al.
+An upcoming future implementation will add geodesic active contours as described by Caselles et.al.
 
 ### Tutorial
 
@@ -108,24 +74,17 @@ Open the example image "Dot Blot (7k)" in the menu File, Open Samples
 
 Using the "Point selections", select a seed point as a start.
 
-![Fiji-pointselection.png](/images/pages/Fiji-pointselection.png
-"Fiji-pointselection.png")"
+![Fiji-pointselection.png](/images/pages/Fiji-pointselection.png "Fiji-pointselection.png")"
 
-Selecting a point is very similar to selecting a location for filling an
-object - in fact, fast marching is very similar to flood fill with a
-more sophisticated boundary detection. In the following picture, a point
-inside one of the dots is selected:
+Selecting a point is very similar to selecting a location for filling an object - in fact, fast marching is very similar to flood fill with a more sophisticated boundary detection. In the following picture, a point inside one of the dots is selected:
 
 ![FM.1.seed.png](/images/pages/FM.1.seed.png "FM.1.seed.png")"
 
-Go to the Level Sets dialog, deselect the Level Sets option and select
-the Fast Marching option. Keep the parameters the same:
+Go to the Level Sets dialog, deselect the Level Sets option and select the Fast Marching option. Keep the parameters the same:
 
 ![FM.0.dialog.png](/images/pages/FM.0.dialog.png "FM.0.dialog.png")"
 
-Click on OK and you'll see a constantly updated progress window and,
-after completion, a result window. The segmented points will be shown in
-green in the progress window.
+Click on OK and you'll see a constantly updated progress window and, after completion, a result window. The segmented points will be shown in green in the progress window.
 
 Progress: ![FM.2.progress.png](/images/pages/FM.2.progress.png "FM.2.progress.png")"
 
@@ -135,25 +94,15 @@ Result: ![FM.3.result.png](/images/pages/FM.3.result.png "FM.3.result.png")"
 
 Open the example image "Dot Blot (7k)" in the menu File, Open Samples
 
-Using an object selector, select an approximate shape inside or outside
-the object. In the first example, a oval inside one of the Dots is
-selected.
+Using an object selector, select an approximate shape inside or outside the object. In the first example, a oval inside one of the Dots is selected.
 
 ![LS.1.seed.png](/images/pages/LS.1.seed.png "LS.1.seed.png")"
 
-Go to the Level Sets dialog, deselect Fast Marching and make sure Level
-Sets is selected. Keep the parameters and click OK. Note that the
-"Region expands to" option is set to outside, i.e. the contour will grow
-to the outside of the initial selection. Thus, make sure that the
-setting "Region expands to" matches the initial selection relative to
-the object of interest.
+Go to the Level Sets dialog, deselect Fast Marching and make sure Level Sets is selected. Keep the parameters and click OK. Note that the "Region expands to" option is set to outside, i.e. the contour will grow to the outside of the initial selection. Thus, make sure that the setting "Region expands to" matches the initial selection relative to the object of interest.
 
 ![LS.0.dialog.png](/images/pages/LS.0.dialog.png "LS.0.dialog.png")"
 
-Level Sets advance a contour until it hits a boundary. Thus, the
-progress window shows the currently active contour in red and the
-previously active contour in yellow. The contour will advance until it
-hits the border of the dot.
+Level Sets advance a contour until it hits a boundary. Thus, the progress window shows the currently active contour in red and the previously active contour in yellow. The contour will advance until it hits the border of the dot.
 
 Progress: ![LS.2.progress.png](/images/pages/LS.2.progress.png "LS.2.progress.png")"
 
@@ -175,34 +124,19 @@ Note the output in the debug window:
 `Iteration step: convergence = 0.00499110164272695, number of pixels changed = 0.00499110164272695`  
 `Level Set: Finished Mon Apr 27 20:12:15 PDT 2009`
 
-The "Grey seed" is the value derived from the region of interest. The
-"Greyscale tolerance" setting in the dialog will add a penalty to the
-progression if the value exceeds the limits set in the dialog (65
-plus/minus 30 in the example, i.e. grey values from 35 to 95). This will
-limit the segmentation to grey values within the tolerance limits.
+The "Grey seed" is the value derived from the region of interest. The "Greyscale tolerance" setting in the dialog will add a penalty to the progression if the value exceeds the limits set in the dialog (65 plus/minus 30 in the example, i.e. grey values from 35 to 95). This will limit the segmentation to grey values within the tolerance limits.
 
-More important is the output of the convergence. If the convergence in
-the dialog is set too high, the segmentation may terminate prematurely.
-If it's set too low, the boundary may expand to infinity or contract to
-nothing. If this happens, note the last good convergence value, set a
-value a bit higher in the dialog and try again.
+More important is the output of the convergence. If the convergence in the dialog is set too high, the segmentation may terminate prematurely. If it's set too low, the boundary may expand to infinity or contract to nothing. If this happens, note the last good convergence value, set a value a bit higher in the dialog and try again.
 
-In the following example, the contour will advance to the inside with a
-rectangular selection as starting point. Note, that with Level Set
-segmentation, several objects can be selected at the same time. During
-the contour advancement, the contour will separate into the separate
-objects. Select a rectangular region outside the object of interest:
+In the following example, the contour will advance to the inside with a rectangular selection as starting point. Note, that with Level Set segmentation, several objects can be selected at the same time. During the contour advancement, the contour will separate into the separate objects. Select a rectangular region outside the object of interest:
 
 ![LS.1b.seed.png](/images/pages/LS.1b.seed.png "LS.1b.seed.png")"
 
-Go to the Level Sets plugin dialog, select "Region expands to
-**inside**"
+Go to the Level Sets plugin dialog, select "Region expands to **inside**"
 
 ![LS.0b.dialog.png](/images/pages/LS.0b.dialog.png "LS.0b.dialog.png")"
 
-The end result looks slightly different because the local differences
-are not the same when the contour approaches the dot from the outside or
-the inside.
+The end result looks slightly different because the local differences are not the same when the contour approaches the dot from the outside or the inside.
 
 Progress: ![LS.2b.progress.png](/images/pages/LS.2b.progress.png "LS.2b.progress.png")"
 
@@ -210,85 +144,52 @@ Result: ![LS.3b.result.png](/images/pages/LS.3b.result.png "LS.3b.result.png")"
 
 All three dots were segmented into distinct objects.
 
-The shape of the initial selection is not particularly important but it
-is important the the selection is either completely inside the object or
-completely outside the object. The segmentation will not work if the
-selection crosses the object boundary.
+The shape of the initial selection is not particularly important but it is important the the selection is either completely inside the object or completely outside the object. The segmentation will not work if the selection crosses the object boundary.
 
-Hint: If the contour "leaks" because of an interruption or fuzzy part of
-the object boundary, try increasing the curvature value. This will
-increase the strength of the elastic boundary and helps mitigate those
-leaks.
+Hint: If the contour "leaks" because of an interruption or fuzzy part of the object boundary, try increasing the curvature value. This will increase the strength of the elastic boundary and helps mitigate those leaks.
 
 ### Parameters
 
-The "Preprocessing" option is used for calculation the differences of
-neighboring pixels. Currently it will always default to Gaussian. A
-future implementation may have anisotropic filtering as an option.
+The "Preprocessing" option is used for calculation the differences of neighboring pixels. Currently it will always default to Gaussian. A future implementation may have anisotropic filtering as an option.
 
 **Fast Marching**
 
   - **Gray value threshold**:
 
-This is used to determine the stopping point for the expansion as the
-gray value difference between boundary pixels and the seed point(s).
-Increase it if the image has stronger contrasts, decrease it if the
-contrast is not strong.
+This is used to determine the stopping point for the expansion as the gray value difference between boundary pixels and the seed point(s). Increase it if the image has stronger contrasts, decrease it if the contrast is not strong.
 
   - **Distance threshold**:
 
-How much the selection is permitted to expand in one iteration.
-Increasing it will speed up the process but desensitize it.
+How much the selection is permitted to expand in one iteration. Increasing it will speed up the process but desensitize it.
 
 **Level Sets**
 
   - **Method**:
 
-"Active Contours" or "Geodesic Active Contours". "Active Contours" is
-the algorithm as described above. "Geodesic Active Contours" are an
-implementation of the algorithm as described by Caselles et.al.
-(International Journal of Computer Vision 22:61) and implemented in the
-in the GeodesicActiveContour class of ITK. Geodesic active contours can
-find Canny-type edges in the region of interest, while also introducing
-a smoothing term. This implementation is still experimental and not
-completely vetted. Use with caution. There will be a more complete
-description once it is feature complete. The convergence value should be
-lowered for Geodesic Active Contours.
+"Active Contours" or "Geodesic Active Contours". "Active Contours" is the algorithm as described above. "Geodesic Active Contours" are an implementation of the algorithm as described by Caselles et.al. (International Journal of Computer Vision 22:61) and implemented in the in the GeodesicActiveContour class of ITK. Geodesic active contours can find Canny-type edges in the region of interest, while also introducing a smoothing term. This implementation is still experimental and not completely vetted. Use with caution. There will be a more complete description once it is feature complete. The convergence value should be lowered for Geodesic Active Contours.
 
   - **Advection**:
 
-Essentially the speed the contour progresses. Increasing the value will
-speed up the segmentation but it may advance too fast and miss the
-boundary.
+Essentially the speed the contour progresses. Increasing the value will speed up the segmentation but it may advance too fast and miss the boundary.
 
   - **Propagation**:
 
-This number determines the expansion (propagation) of the contour. Only
-used for Geodesic Active Contours.
+This number determines the expansion (propagation) of the contour. Only used for Geodesic Active Contours.
 
   - **Curvature**:
 
-This number determines the weight of the curvature in progressing the
-contour.
+This number determines the weight of the curvature in progressing the contour.
 
   - **Grayscale tolerance**:
 
-During contour evolution the gray values of the current contour are
-compared to the next progression of the contour. If they exceed the
-value set here, a penalty is introduced.
+During contour evolution the gray values of the current contour are compared to the next progression of the contour. If they exceed the value set here, a penalty is introduced.
 
   - **Convergence**:
 
-The value here is used as criterion for converging. If the changes in
-the contour between two iterations are lower than that value, the
-algorithm will stop. Increase the value if the contour doesn't stop at
-the boundary and/or collapses completely or decrease it if it stops to
-early.
+The value here is used as criterion for converging. If the changes in the contour between two iterations are lower than that value, the algorithm will stop. Increase the value if the contour doesn't stop at the boundary and/or collapses completely or decrease it if it stops to early.
 
   - **Region expands to**:
 
-As described in the tutorial, this setting determines if the contour
-will evolve to the inside of the selection or the outside.
+As described in the tutorial, this setting determines if the contour will evolve to the inside of the selection or the outside.
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Segmentation](Category:Segmentation "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Segmentation](Category:Segmentation "wikilink")

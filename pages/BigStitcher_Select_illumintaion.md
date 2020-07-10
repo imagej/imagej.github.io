@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [BigStitcher Select
-    illumination](BigStitcher_Select_illumination "wikilink")
+1.  REDIRECT [BigStitcher Select illumination](BigStitcher_Select_illumination "wikilink")

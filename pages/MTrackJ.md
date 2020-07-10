@@ -8,26 +8,22 @@ categories: Plugins,Tracking,ImageScience
 description: test description
 ---
 
-{% capture maintainer %} {% include person content="ImageScience" %} {%
-endcapture %}
 
-{% capture author %} {% include person content="ImageScience" %} {%
-endcapture %}
+{% capture maintainer%}
+{% include person content='ImageScience' %}
+{% endcapture %}
 
-{% capture source %} {% include github org="imagescience" repo="MTrackJ"
-%} {% endcapture %} {% include sidebox-right software='ImageScience'
-name='MTrackJ' maintainer=maintainer author=author source=source
-status='' category='[:Category:Plugins](:Category:Plugins "wikilink")'
-website='http://imagescience.org/meijering/software/mtrackj/'
-%}[MTrackJ](http://www.imagescience.org/meijering/software/mtrackj/) is
-an ImageJ plugin to facilitate motion tracking and analysis.
+{% capture author%}
+{% include person content='ImageScience' %}
+{% endcapture %}
 
-The plugin can handle up to five-dimensional (5D) images of any type
-supported by ImageJ.
+{% capture source%}
+{% include github org='imagescience' repo='MTrackJ' %}
+{% endcapture %}
+{% include info-box software='ImageScience' name='MTrackJ' maintainer=maintainer author=author source=source status='' category='[:Category:Plugins](:Category:Plugins "wikilink")' website='http://imagescience.org/meijering/software/mtrackj/' %}[MTrackJ](http://www.imagescience.org/meijering/software/mtrackj/) is an ImageJ plugin to facilitate motion tracking and analysis.
 
-MTrackJ is available from the [ImageScience](ImageScience "wikilink")
-update site.
+The plugin can handle up to five-dimensional (5D) images of any type supported by ImageJ.
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Tracking](Category:Tracking "wikilink")
-[Category:ImageScience](Category:ImageScience "wikilink")
+MTrackJ is available from the [ImageScience](ImageScience "wikilink") update site.
+
+[Category:Plugins](Category:Plugins "wikilink") [Category:Tracking](Category:Tracking "wikilink") [Category:ImageScience](Category:ImageScience "wikilink")

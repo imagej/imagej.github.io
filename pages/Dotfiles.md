@@ -8,11 +8,7 @@ categories:
 description: test description
 ---
 
-{% include develop-menu content='tools' %}There are several
-[dotfiles](https://dotfiles.github.io/) repositories filled with command
-line configuration goodness for the different
-[layers](Architecture "wikilink") of the [SciJava](SciJava "wikilink")
-component collection.
+{% include develop-menu content='tools' %}There are several [dotfiles](https://dotfiles.github.io/) repositories filled with command line configuration goodness for the different [layers](Architecture "wikilink") of the [SciJava](SciJava "wikilink") component collection.
 
 ## Repositories
 
@@ -45,19 +41,15 @@ You can find the dotfiles in the following repositories:
 
 ## What's included?
 
-There are several tools for which configuration and customization is
-provided:
+There are several tools for which configuration and customization is provided:
 
-  - Shells: [bash](https://www.gnu.org/software/bash/) and
-    [zsh](http://www.zsh.org/)
+  - Shells: [bash](https://www.gnu.org/software/bash/) and [zsh](http://www.zsh.org/)
   - Editors: [Vim](http://www.vim.org/)
-  - SCM tools: [Git](Git "wikilink") and
-    [myrepos](https://myrepos.branchable.com/)
+  - SCM tools: [Git](Git "wikilink") and [myrepos](https://myrepos.branchable.com/)
 
 Where possible, configuration is driven by plugin managers:
 
-  - [zgen](https://github.com/tarjoilija/zgen) and
-    [Oh-My-Zsh](http://ohmyz.sh/) for zsh
+  - [zgen](https://github.com/tarjoilija/zgen) and [Oh-My-Zsh](http://ohmyz.sh/) for zsh
   - [Vundle](https://github.com/VundleVim/Vundle.vim) for vim
 
 ## How to get started?

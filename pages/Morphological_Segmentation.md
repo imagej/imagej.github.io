@@ -8,190 +8,109 @@ categories: Plugins,Segmentation,Mathematical_morphology,Citable
 description: test description
 ---
 
-{% capture author %} {% include person content="Iarganda" %}, David
-Legland {% endcapture %}
 
-{% capture maintainer %} {% include person content="Iarganda" %} {%
-endcapture %}
+{% capture author%}
+{% include person content='Iarganda' %}, David Legland
+{% endcapture %}
 
-{% capture source %} {% include github org="ijpb" repo="MorphoLibJ" %}
-{% endcapture %} {% include sidebox-right name='Morphological
-Segmentation' software='IJPB-plugins' author=author
-maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014'
-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink")
-v1.4.1)' status='stable, active'
-category='[Segmentation](:Category:Segmentation "wikilink"),
-[Mathematical morphology](:Category:Mathematical_morphology "wikilink")'
-%}{| |style="vertical-align:top" |![Visual description of the different
-steps of the Morphological Segmentation
-plugin.](/images/pages/Morphological-Segmentation-animation-blobs.gif
-"Visual description of the different steps of the Morphological Segmentation plugin.")"
-|}
+{% capture maintainer%}
+{% include person content='Iarganda' %}
+{% endcapture %}
+
+{% capture source%}
+{% include github org='ijpb' repo='MorphoLibJ' %}
+{% endcapture %}
+{% include info-box name='Morphological Segmentation' software='IJPB-plugins' author=author maintainer=maintainer source=source released='July 3<sup>rd</sup>, 2014' latest-version='July 23<sup>rd</sup>, 2019 ([MorphoLibJ](MorphoLibJ "wikilink") v1.4.1)' status='stable, active' category='[Segmentation](:Category:Segmentation "wikilink"), [Mathematical morphology](:Category:Mathematical_morphology "wikilink")' %}{| |style="vertical-align:top" |![Visual description of the different steps of the Morphological Segmentation plugin.](/images/pages/Morphological-Segmentation-animation-blobs.gif "Visual description of the different steps of the Morphological Segmentation plugin.")" |}
 
 ## Introduction
 
-![Morphological-segmentation-front.png](/images/pages/Morphological-segmentation-front.png
-"Morphological-segmentation-front.png")"Morphological Segmentation is an
-ImageJ/Fiji plugin that combines morphological operations, such as
-extended minima and morphological gradient, with watershed flooding
-algorithms to segment grayscale images of any type (8, 16 and 32-bit) in
-2D and 3D.
+![Morphological-segmentation-front.png](/images/pages/Morphological-segmentation-front.png "Morphological-segmentation-front.png")"Morphological Segmentation is an ImageJ/Fiji plugin that combines morphological operations, such as extended minima and morphological gradient, with watershed flooding algorithms to segment grayscale images of any type (8, 16 and 32-bit) in 2D and 3D.
 
 ## Usage
 
-Morphological Segmentation runs on any open grayscale image, single 2D
-image or (3D) stack. If no image is open when calling the plugin, an
-Open dialog will pop up.
+Morphological Segmentation runs on any open grayscale image, single 2D image or (3D) stack. If no image is open when calling the plugin, an Open dialog will pop up.
 
-The user can pan, zoom in and out, or scroll between slices (if the
-input image is a stack) in the main canvas as if it were any other
-ImageJ window. On the left side of the canvas there are three panels of
-parameters, one for the input image, one with the watershed parameters
-and one for the output options. All buttons, checkboxes and input panels
-contain a short explanation of their functionality that is displayed
-when the cursor lingers over them.
+The user can pan, zoom in and out, or scroll between slices (if the input image is a stack) in the main canvas as if it were any other ImageJ window. On the left side of the canvas there are three panels of parameters, one for the input image, one with the watershed parameters and one for the output options. All buttons, checkboxes and input panels contain a short explanation of their functionality that is displayed when the cursor lingers over them.
 
-**Image pre-processing**: some pre-processing is included in the plugin
-to facilitate the segmentation task. However, other pre-processing may
-be required depending on the input image. It is up to the user to decide
-what filtering may be most appropriate upstream.
+**Image pre-processing**: some pre-processing is included in the plugin to facilitate the segmentation task. However, other pre-processing may be required depending on the input image. It is up to the user to decide what filtering may be most appropriate upstream.
 
 ### Input Image panel
 
-![Input Image panel](/images/pages/Morphological-segmentation-input-image-panel.png
-"Input Image panel")"First, you need to indicate the nature of the input
-image to process. This is a **key parameter** since the watershed
-algorithm is expecting an image where the boundaries of objects present
-high intensity values (usually as a result of a gradient or edge
-detection filtering).
+![Input Image panel](/images/pages/Morphological-segmentation-input-image-panel.png "Input Image panel")"First, you need to indicate the nature of the input image to process. This is a **key parameter** since the watershed algorithm is expecting an image where the boundaries of objects present high intensity values (usually as a result of a gradient or edge detection filtering).
 
 You should select:
 
-  - **Border Image**: if your input image has highlighted object
-    boundaries.
-  - **Object Image**: if the borders of the objects do not have higher
-    intensity values than the rest of voxels in the image.
+  - **Border Image**: if your input image has highlighted object boundaries.
+  - **Object Image**: if the borders of the objects do not have higher intensity values than the rest of voxels in the image.
 
-When selecting “Object Image”, an additional set of options is enabled
-to choose the type of gradient and radius (in pixels) to apply to the
-input image before starting the morphological operations. Finally, a
-checkbox allows displaying the gradient image instead of the input image
-in the main canvas of the plugin (only after running the watershed
-segmentation).
+When selecting “Object Image”, an additional set of options is enabled to choose the type of gradient and radius (in pixels) to apply to the input image before starting the morphological operations. Finally, a checkbox allows displaying the gradient image instead of the input image in the main canvas of the plugin (only after running the watershed segmentation).
 
 ### Watershed Segmentation panel
 
-![Watershed Segmentation
-panel](/images/pages/Morphological-segmentation-watershed-segmentation-panel.png
-"Watershed Segmentation panel")"This panel is reserved to the parameters
-involved in the segmentation pipeline. By default, only the tolerance
-can be changed. Clicking on “Advanced options” enables the rest of
-options.
+![Watershed Segmentation panel](/images/pages/Morphological-segmentation-watershed-segmentation-panel.png "Watershed Segmentation panel")"This panel is reserved to the parameters involved in the segmentation pipeline. By default, only the tolerance can be changed. Clicking on “Advanced options” enables the rest of options.
 
-  - **Tolerance**: dynamic of intensity for the search of regional
-    minima (in the extended-minima transform, which is the regional
-    minima of the H-minima transform, value of h). Increasing the
-    tolerance value reduces the number of segments in the final result,
-    while decreasing its value produces more object splits.
+  - **Tolerance**: dynamic of intensity for the search of regional minima (in the extended-minima transform, which is the regional minima of the H-minima transform, value of h). Increasing the tolerance value reduces the number of segments in the final result, while decreasing its value produces more object splits.
 
 <!-- end list -->
 
   -   
-    <b><span style="color:#f80000">Note</span></b>: since the tolerance
-    is an intensity parameter, it is sensitive to the input image type.
-    A tolerance value of 10 is a good starting point for 8-bit images
-    (with 0-255 intensity range) but it should be drastically increased
-    when using image types with larger intensity ranges. For example to
-    \~2000 when working on a 16-bit image (intensity values between 0
-    and 65535).
+    <b><span style="color:#f80000">Note</span></b>: since the tolerance is an intensity parameter, it is sensitive to the input image type. A tolerance value of 10 is a good starting point for 8-bit images (with 0-255 intensity range) but it should be drastically increased when using image types with larger intensity ranges. For example to \~2000 when working on a 16-bit image (intensity values between 0 and 65535).
 
 <!-- end list -->
 
-  - **Calculate dams**: un-check this option to produce segmentations
-    without watershed lines.
-  - **Connectivity**: voxel connectivity (4-8 in 2D, and 6-26 in 3D).
-    Selecting non-diagonal connectivity (4 or 6) usually provides more
-    rounded objects.
+  - **Calculate dams**: un-check this option to produce segmentations without watershed lines.
+  - **Connectivity**: voxel connectivity (4-8 in 2D, and 6-26 in 3D). Selecting non-diagonal connectivity (4 or 6) usually provides more rounded objects.
 
 Finally, **click on “Run” to launch the segmentation**.
 
-If your segmentation is taking too long or you want **to stop it** for
-any reason, you can do so by clicking on the same button (which should
-read “STOP” during that process).
+If your segmentation is taking too long or you want **to stop it** for any reason, you can do so by clicking on the same button (which should read “STOP” during that process).
 
 ### Results panel
 
-![Results panel](/images/pages/Morphological-segmentation-results-panel.png
-"Results panel")"Only enabled after running the segmentation.
+![Results panel](/images/pages/Morphological-segmentation-results-panel.png "Results panel")"Only enabled after running the segmentation.
 
   - **Display**: list of options to display the segmentation results.
-      - **Overlaid basins**: colored objects overlaying the input image
-        (with or without dams depending on the selected option in the
-        Watershed Segmentation panel).
-      - **Overlaid dams**: overlay the watershed dams in red on top of
-        the input image (only works if “Calculate dams” is checked).
+      - **Overlaid basins**: colored objects overlaying the input image (with or without dams depending on the selected option in the Watershed Segmentation panel).
+      - **Overlaid dams**: overlay the watershed dams in red on top of the input image (only works if “Calculate dams” is checked).
       - **Catchment basins**: colored objects.
-      - **Watershed lines**: binary image showing the watershed lines in
-        black and the objects in white (only works if “Calculate dams”
-        is checked).
+      - **Watershed lines**: binary image showing the watershed lines in black and the objects in white (only works if “Calculate dams” is checked).
   - **Show result overlay**: toggle result overlay.
-  - **Create image button**: create a new image with the results
-    displayed in the canvas.
+  - **Create image button**: create a new image with the results displayed in the canvas.
 
-![Examples of the 4 different display
-options](/images/pages/Morphological-segmentation-result-examples.png
-"Examples of the 4 different display options")"
+![Examples of the 4 different display options](/images/pages/Morphological-segmentation-result-examples.png "Examples of the 4 different display options")"
 
 ### Post-processing panel
 
-![Post-processing
-panel](/images/pages/Morphological-segmentation-post-processing-panel.png
-"Post-processing panel")"Similarly to the Results panel, this panel only
-gets enabled after running the segmentation pipeline.
+![Post-processing panel](/images/pages/Morphological-segmentation-post-processing-panel.png "Post-processing panel")"Similarly to the Results panel, this panel only gets enabled after running the segmentation pipeline.
 
-  - **Merge labels**: merge together labels selected by either the
-    **“freehand” selection too**l (on a single slice) **or the point
-    tool** (on single or multiple slices). The zero-value label belongs
-    to the watershed dams, therefore it will ignored in case of being
-    selected. The first selected label value will be assigned to the
-    rest of selected labels, which will share its color.
+  - **Merge labels**: merge together labels selected by either the **“freehand” selection too**l (on a single slice) **or the point tool** (on single or multiple slices). The zero-value label belongs to the watershed dams, therefore it will ignored in case of being selected. The first selected label value will be assigned to the rest of selected labels, which will share its color.
 
 <!-- end list -->
 
   -   
-    <b><span style="color:#f80000">Note</span></b>: to select labels on
-    different slices, use the point selection tool and keep the SHIFT
-    key pressed each time you click on a new label.
+    <b><span style="color:#f80000">Note</span></b>: to select labels on different slices, use the point selection tool and keep the SHIFT key pressed each time you click on a new label.
 
 <!-- end list -->
 
-  - **Shuffle colors**: randomly re-assign colors to the labels. This is
-    a very handy option whenever two adjacent labels present a similar
-    color.
+  - **Shuffle colors**: randomly re-assign colors to the labels. This is a very handy option whenever two adjacent labels present a similar color.
 
 ## Video tutorials
 
 ### Quick start guide
 
-This introductory screencast (which needs audio) explains the basic use
-of the plugin:
+This introductory screencast (which needs audio) explains the basic use of the plugin:
 
-{% include youtube url="https://www.youtube.com/embed/gF4nhq7I2Eo" %}
+{% include youtube url='https://www.youtube.com/embed/'%}
 
 ### Segmentation of a 3D image
 
-This video tutorial (with audio as well) shows how to use the plugin
-segment a 3D image (confocal image of an *Arabidopsis thaliana* embryo,
-courtesy of Jean-Christophe Palauqui (INRA-Versailles)):
+This video tutorial (with audio as well) shows how to use the plugin segment a 3D image (confocal image of an *Arabidopsis thaliana* embryo, courtesy of Jean-Christophe Palauqui (INRA-Versailles)):
 
-{% include youtube url="https://www.youtube.com/embed/lm4hQhLlnHU" %}
+{% include youtube url='https://www.youtube.com/embed/'%}
 
 ## Macro language compatibility
 
-Morphological Segmentation is completely compatible with the popular
-[ImageJ macro language](https://imagej.net/developer/macro/macros.html).
-Each of the buttons in the GUI are macro-recordable and their commands
-can be reproduced later from a simple macro file.
+Morphological Segmentation is completely compatible with the popular [ImageJ macro language](https://imagej.net/developer/macro/macros.html). Each of the buttons in the GUI are macro-recordable and their commands can be reproduced later from a simple macro file.
 
 The complete list of commands is as follows:
 
@@ -288,30 +207,19 @@ call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Overlaid d
 
 ## Installation
 
-Morphological Segmentation is part of the
-[MorphoLibJ](MorphoLibJ "wikilink") library. To install it, you just
-need to [
-add](How_to_follow_a_3rd_party_update_site#Add_update_sites "wikilink")
-the IJPB-plugins update site:
+Morphological Segmentation is part of the [MorphoLibJ](MorphoLibJ "wikilink") library. To install it, you just need to [ add](How_to_follow_a_3rd_party_update_site#Add_update_sites "wikilink") the IJPB-plugins update site:
 
-1\) Select {% include bc content='Help | Update...'%} from the Fiji menu
-to start the updater.
+1\) Select {% include bc content='Help | Update...'%} from the Fiji menu to start the updater.
 
-2\) Click on *Manage update sites*. This brings up a dialog where you
-can activate additional update sites.
+2\) Click on *Manage update sites*. This brings up a dialog where you can activate additional update sites.
 
-3\) Activate the IJPB-plugins update site and close the dialog. Now you
-should see an additional jar file for download.
+3\) Activate the IJPB-plugins update site and close the dialog. Now you should see an additional jar file for download.
 
 4\) Click *Apply changes* and restart Fiji.
 
-You should now find the plugin under the sub-menu {% include bc
-content='Plugins | MorphoLibJ | Segmentation'%}.
+You should now find the plugin under the sub-menu {% include bc content='Plugins | MorphoLibJ | Segmentation'%}.
 
-**Note**: Morphological Segmentation is only one of the plugins included
-in the [MorphoLibJ](MorphoLibJ "wikilink") library. By following these
-installation steps, you will be installing as well the rest of plugins
-in the suite.
+**Note**: Morphological Segmentation is only one of the plugins included in the [MorphoLibJ](MorphoLibJ "wikilink") library. By following these installation steps, you will be installing as well the rest of plugins in the suite.
 
 ## Examples
 
@@ -321,49 +229,28 @@ in the suite.
 
 ## Citation
 
-If you need to cite the plugin, please do so by citing the following
-paper:
+If you need to cite the plugin, please do so by citing the following paper:
 
   - {% include publication content='MorphoLibJ' %}
 
-To cite the implementation, [MorphoLibJ](MorphoLibJ "wikilink")'s code
-repository has its own [DOI](http://dx.doi.org/10.5281/zenodo.50694).
+To cite the implementation, [MorphoLibJ](MorphoLibJ "wikilink")'s code repository has its own [DOI](http://dx.doi.org/10.5281/zenodo.50694).
 
 ## References
 
-1.  Meyer, Fernand, and Serge Beucher. "Morphological segmentation."
-    Journal of visual communication and image representation 1.1 (1990):
-    21-46.
-2.  Soille, P., "Morphological Image Analysis: Principles and
-    Applications", Springer-Verlag, 1999, pp. 170-171.
+1.  Meyer, Fernand, and Serge Beucher. "Morphological segmentation." Journal of visual communication and image representation 1.1 (1990): 21-46.
+2.  Soille, P., "Morphological Image Analysis: Principles and Applications", Springer-Verlag, 1999, pp. 170-171.
 
 ## See also
 
-  - [Marker-controlled
-    Watershed](Marker-controlled_Watershed "wikilink"), a plugin to
-    perform watershed by flooding from specific seed points or markers.
-  - [Classic Watershed](Classic_Watershed "wikilink"), plugin
-    implementing the original watershed algorithm to segment 2D/3D
-    grayscale images.
-  - [Serge Beucher's site](http://cmm.ensmp.fr/~beucher/wtshed.html),
-    with graphic descriptions and animations of the watershed
-    algorithms.
-  - [G. Bertrand's Topological Watershed
-    site](http://www.esiee.fr/~info/tw/index.html), with papers, lecture
-    slides and source code.
+  - [Marker-controlled Watershed](Marker-controlled_Watershed "wikilink"), a plugin to perform watershed by flooding from specific seed points or markers.
+  - [Classic Watershed](Classic_Watershed "wikilink"), plugin implementing the original watershed algorithm to segment 2D/3D grayscale images.
+  - [Serge Beucher's site](http://cmm.ensmp.fr/~beucher/wtshed.html), with graphic descriptions and animations of the watershed algorithms.
+  - [G. Bertrand's Topological Watershed site](http://www.esiee.fr/~info/tw/index.html), with papers, lecture slides and source code.
 
 ## License
 
-This program is **free software**; you can redistribute it and/or modify
-it under the terms of the **GNU General Public License** as published by
-the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).
+This program is **free software**; you can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation (http://www.gnu.org/licenses/gpl.txt).
 
-This program is distributed in the hope that it will be useful, but
-WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
-Public License for more details.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Segmentation](Category:Segmentation "wikilink")
-[Category:Mathematical\_morphology](Category:Mathematical_morphology "wikilink")
-[Category:Citable](Category:Citable "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Segmentation](Category:Segmentation "wikilink") [Category:Mathematical\_morphology](Category:Mathematical_morphology "wikilink") [Category:Citable](Category:Citable "wikilink")

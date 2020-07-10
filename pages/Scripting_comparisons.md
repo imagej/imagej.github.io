@@ -8,59 +8,34 @@ categories: Scripting
 description: test description
 ---
 
-\_\_FORCETOC\_\_ {% include learn content='scripting' %} <big>**Example:
-a command launcher**</big>
+\_\_FORCETOC\_\_ {% include learn content='scripting' %} <big>**Example: a command launcher**</big>
 
-A short plugin is used as example: a little dialog window that lets you
-type in a command for ImageJ to execute. A command is a menu item, which
-executes a plugin.
+A short plugin is used as example: a little dialog window that lets you type in a command for ImageJ to execute. A command is a menu item, which executes a plugin.
 
-As the name of the command is typed, the color of the text changes from
-red to black if the command exists.
+As the name of the command is typed, the color of the text changes from red to black if the command exists.
 
 The plugin consists of four parts:
 
 1.  Obtaining the list of all commands, from `ij.Menus` class.
 2.  Setting up a dialog with a text box.
-3.  Adding a text listener to the text box, that changes the color of
-    the font in completing the typing of a word that matches a command.
-4.  Executing the command when clicking the 'ok' button or pushing the
-    return key.
+3.  Adding a text listener to the text box, that changes the color of the font in completing the typing of a word that matches a command.
+4.  Executing the command when clicking the 'ok' button or pushing the return key.
 
-The command launcher as written in java is by far the longest in lines
-of code, and worse, the most verbose.
+The command launcher as written in java is by far the longest in lines of code, and worse, the most verbose.
 
-While in Clojure one is able to declare types if desired, it's not
-required; the low computational requirements of the plugin do not invite
-to make it verbose unnecessarily. But java demands type declarations
-just so that the plugin can be compiled and thus a binary .class file
-generated.
+While in Clojure one is able to declare types if desired, it's not required; the low computational requirements of the plugin do not invite to make it verbose unnecessarily. But java demands type declarations just so that the plugin can be compiled and thus a binary .class file generated.
 
-While both the java and clojure versions encapsulate the variables in a
-local namespace -in Clojure, by using *let* statements to declare local
-variables-, the jython version does not, so they are all global when
-defined outside the class definition. One can achieve, though, variable
-encapsulation by declaring the entire script inside a class or function
-definition -but its not *required* as in java, neither as natural and
-straightforward as in Clojure.
+While both the java and clojure versions encapsulate the variables in a local namespace -in Clojure, by using *let* statements to declare local variables-, the jython version does not, so they are all global when defined outside the class definition. One can achieve, though, variable encapsulation by declaring the entire script inside a class or function definition -but its not *required* as in java, neither as natural and straightforward as in Clojure.
 
-As an advantage, each jython script executes within its own namespace
-and instance of the interpreter, whereas clojure scripts run all within
-a unique static interpreter and thus share the namespace.
+As an advantage, each jython script executes within its own namespace and instance of the interpreter, whereas clojure scripts run all within a unique static interpreter and thus share the namespace.
 
-The javascript version (at least, the naive code pasted below) is very
-much java-like. Each script runs on its separate thread and namespace,
-like jython scripts.
+The javascript version (at least, the naive code pasted below) is very much java-like. Each script runs on its separate thread and namespace, like jython scripts.
 
-To remark here that [Clojure](http://clojure.org) is **not** a scripting
-language: Clojure compiles directly the JVM byte code, and thus runs at
-native speed.
+To remark here that [Clojure](http://clojure.org) is **not** a scripting language: Clojure compiles directly the JVM byte code, and thus runs at native speed.
 
 ## In Java
 
-See also the [Introduction into Developing
-Plugins](Introduction_into_Developing_Plugins "wikilink") documentation
-page.
+See also the [Introduction into Developing Plugins](Introduction_into_Developing_Plugins "wikilink") documentation page.
 
 ``` java
 import ij.IJ;
@@ -117,9 +92,7 @@ public class Command_Launcher implements PlugIn {
 }
 ```
 
-Note that above the loop is only set as an example. It's easier to
-simply query the list of *keys* for the specific *text* key we are
-looking for:
+Note that above the loop is only set as an example. It's easier to simply query the list of *keys* for the specific *text* key we are looking for:
 
 ``` java
 ...
@@ -133,8 +106,7 @@ looking for:
 
 ## In Jython
 
-See also the [Jython Scripting](Jython_Scripting "wikilink")
-documentation page.
+See also the [Jython Scripting](Jython_Scripting "wikilink") documentation page.
 
 ``` python
 from java.awt import Color
@@ -160,9 +132,7 @@ if not gd.wasCanceled():
     ij.IJ.doCommand(gd.getNextString())
 ```
 
-Above, note that instead of looping the list of commands, we just query
-it with an "if element in list" construct. To actually loop, do the
-following:
+Above, note that instead of looping the list of commands, we just query it with an "if element in list" construct. To actually loop, do the following:
 
 ``` python
 text = prompt.getText()
@@ -175,8 +145,7 @@ prompt.setForeground(Color.red)
 
 ## In Clojure
 
-See also the [Clojure Scripting](Clojure_Scripting "wikilink")
-documentation page.
+See also the [Clojure Scripting](Clojure_Scripting "wikilink") documentation page.
 
 ``` lisp
 (import '(java.awt Color)
@@ -203,10 +172,7 @@ documentation page.
     (IJ/doCommand (.getNextString gd))))
 ```
 
-A second version, lispier, rewritten from the above by Clojure's author
-[Rich Hickey](http://clojure.sourceforge.net). Note the use of the
-*some* funtion to check whether any given key in a list (*text* is the
-only key here) is contained in a set of keys (*commands*):
+A second version, lispier, rewritten from the above by Clojure's author [Rich Hickey](http://clojure.sourceforge.net). Note the use of the *some* funtion to check whether any given key in a list (*text* is the only key here) is contained in a set of keys (*commands*):
 
 ``` lisp
 (import '(java.awt Color)
@@ -232,8 +198,7 @@ only key here) is contained in a set of keys (*commands*):
 
 ## In Javascript
 
-See also the [Javascript Scripting](Javascript_Scripting "wikilink")
-documentation page.
+See also the [Javascript Scripting](Javascript_Scripting "wikilink") documentation page.
 
 ``` javascript
 // All ImageJ and java.lang.* classes have been automatically imported
@@ -265,8 +230,7 @@ if (!gd.wasCanceled())
 
 ## In JRuby
 
-For some tutorial material on using JRuby to script ImageJ, please see
-[JRuby Scripting](JRuby_Scripting "wikilink").
+For some tutorial material on using JRuby to script ImageJ, please see [JRuby Scripting](JRuby_Scripting "wikilink").
 
 ``` ruby
 include_class 'java.awt.Color'
@@ -312,16 +276,11 @@ end
 
 ## In BeanShell
 
-See also the [Beanshell Scripting](Beanshell_Scripting "wikilink")
-documentation page.
+See also the [Beanshell Scripting](Beanshell_Scripting "wikilink") documentation page.
 
-For some tutorial material on using BeanShell, see [BeanShell's
-Quickstart](http://www.beanshell.org/manual/quickstart.html#Java_Statements_and_Expressions).
+For some tutorial material on using BeanShell, see [BeanShell's Quickstart](http://www.beanshell.org/manual/quickstart.html#Java_Statements_and_Expressions).
 
-If this looks awfully like the Java example to you, you are absolutely
-correct: BeanShell has the same syntax as Java, although it is not
-strongly typed (you do not need to declare variables if you do not want
-to), and it is interpreted.
+If this looks awfully like the Java example to you, you are absolutely correct: BeanShell has the same syntax as Java, although it is not strongly typed (you do not need to declare variables if you do not want to), and it is interpreted.
 
 ``` java
 import ij.IJ;

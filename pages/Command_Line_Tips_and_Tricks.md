@@ -8,8 +8,7 @@ categories:
 description: test description
 ---
 
-This page lists all kinds of usable hints how to use the command line in
-the different environments supported by Fiji.
+This page lists all kinds of usable hints how to use the command line in the different environments supported by Fiji.
 
 | Action                         | Linux                                     | MacOSX                      | Windows                                                                                            |
 | ------------------------------ | ----------------------------------------- | --------------------------- | -------------------------------------------------------------------------------------------------- |

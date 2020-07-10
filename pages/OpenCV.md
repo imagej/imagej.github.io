@@ -8,26 +8,10 @@ categories:
 description: test description
 ---
 
-[OpenCV](http://opencv.org/) is a widespread computer vision and machine
-learning library applied in a great variety of contexts, including life
-sciences. The power of OpenCV relies on the huge amount (more than 2500)
-of both classic and state-of-the-art computer vision algorithms provided
-by this library. OpenCV supplies algorithms for: image processing,
-feature detection, object detection, machine-learning, and video
-analysis.
+[OpenCV](http://opencv.org/) is a widespread computer vision and machine learning library applied in a great variety of contexts, including life sciences. The power of OpenCV relies on the huge amount (more than 2500) of both classic and state-of-the-art computer vision algorithms provided by this library. OpenCV supplies algorithms for: image processing, feature detection, object detection, machine-learning, and video analysis.
 
 Currently, there are three alternatives to connect ImageJ with OpenCV:
 
-  - [CVForge](https://github.com/m4dguy/CVForge): an ImageJ plugin
-    implementing a simple-to-use interface that gives access to all the
-    methods of OpenCV.
-  - [IJ-OpenCV](IJ-OpenCV "wikilink"): a library to create applications
-    combining features from both ImageJ and OpenCV. From the perspective
-    of ImageJ developers, they can use IJ-OpenCV to easily create
-    plugins that use any functionality provided by the OpenCV library
-    and explore different alternatives. From the perspective of OpenCV
-    developers, this library provides a link to the ImageJ graphical
-    user interface and all its features to handle regions of interest.
-  - [IJToolsUsingOpenCV](https://github.com/WAKU-TAKE-A/IJToolsUsingOpenCV):
-    a suite of ImageJ plugins that connects ImageJ with some of the
-    algorithms implemented in OpenCV.
+  - [CVForge](https://github.com/m4dguy/CVForge): an ImageJ plugin implementing a simple-to-use interface that gives access to all the methods of OpenCV.
+  - [IJ-OpenCV](IJ-OpenCV "wikilink"): a library to create applications combining features from both ImageJ and OpenCV. From the perspective of ImageJ developers, they can use IJ-OpenCV to easily create plugins that use any functionality provided by the OpenCV library and explore different alternatives. From the perspective of OpenCV developers, this library provides a link to the ImageJ graphical user interface and all its features to handle regions of interest.
+  - [IJToolsUsingOpenCV](https://github.com/WAKU-TAKE-A/IJToolsUsingOpenCV): a suite of ImageJ plugins that connects ImageJ with some of the algorithms implemented in OpenCV.

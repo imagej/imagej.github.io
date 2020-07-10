@@ -8,22 +8,20 @@ categories: Plugins,ImageScience
 description: test description
 ---
 
-{% capture maintainer %} {% include person content="ImageScience" %} {%
-endcapture %}
 
-{% capture author %} {% include person content="ImageScience" %} {%
-endcapture %}
+{% capture maintainer%}
+{% include person content='ImageScience' %}
+{% endcapture %}
 
-{% capture source %} {% include github org="imagescience" repo="RandomJ"
-%} {% endcapture %} {% include sidebox-right software='ImageScience'
-name='RandomJ' maintainer=maintainer author=author source=source
-status='' category='[:Category:Plugins](:Category:Plugins "wikilink")'
-website='http://imagescience.org/meijering/software/randomj/' %}The
-[RandomJ](http://imagescience.org/meijering/software/randomj/) suite of
-plugins offers sophisticated application of noise to images.
+{% capture author%}
+{% include person content='ImageScience' %}
+{% endcapture %}
 
-RandomJ is available from the [ImageScience](ImageScience "wikilink")
-update site.
+{% capture source%}
+{% include github org='imagescience' repo='RandomJ' %}
+{% endcapture %}
+{% include info-box software='ImageScience' name='RandomJ' maintainer=maintainer author=author source=source status='' category='[:Category:Plugins](:Category:Plugins "wikilink")' website='http://imagescience.org/meijering/software/randomj/' %}The [RandomJ](http://imagescience.org/meijering/software/randomj/) suite of plugins offers sophisticated application of noise to images.
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:ImageScience](Category:ImageScience "wikilink")
+RandomJ is available from the [ImageScience](ImageScience "wikilink") update site.
+
+[Category:Plugins](Category:Plugins "wikilink") [Category:ImageScience](Category:ImageScience "wikilink")

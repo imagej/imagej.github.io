@@ -8,24 +8,18 @@ categories: Tutorials
 description: test description
 ---
 
-{% include gitmenu %} These are the notes of a Git workshop held at the
-[Max-Planck Institute of molecular Cell Biology and
-Genetics](http://www.mpi-cbg.de/) on August 3rd, 2011.
+{% include gitmenu%} These are the notes of a Git workshop held at the [Max-Planck Institute of molecular Cell Biology and Genetics](http://www.mpi-cbg.de/) on August 3rd, 2011.
 
 # What is a version control system, why should I care?
 
-A version control system is a database that holds multiple revisions of
-a project. A revision consists of
+A version control system is a database that holds multiple revisions of a project. A revision consists of
 
-  - the file names and contents (excluding the generated files) as well
-    as their directory structure
+  - the file names and contents (excluding the generated files) as well as their directory structure
   - the author
   - the committer
   - the author date
   - the commit date
-  - a description (*commit message*) what the change leading to this
-    revision is about, usually divided into the first line (*subject*)
-    and the more verbose rest (*body*)
+  - a description (*commit message*) what the change leading to this revision is about, usually divided into the first line (*subject*) and the more verbose rest (*body*)
   - zero, one or more pointers to revisions preceding the current one
 
 In Git, *a commit* refers to a revision.
@@ -36,8 +30,7 @@ Version control usually facilitates:
   - easy retrieval of specific revisions
   - documentation (who did what when and why?)
   - documentation (how do I do ...?)
-  - easy synchronization (staying up-to-date, integrating changes
-    between multiple developers/machines)
+  - easy synchronization (staying up-to-date, integrating changes between multiple developers/machines)
   - finding the changes introducing regressions (AKA bugs) efficiently
 
 ## Hands-on
@@ -71,8 +64,7 @@ First steps:
 git init
 ```
 
-  - add contents (caveat for Subversion users: *git add* adds the
-    <u>contents</u>, not just the <u>file name</u>)
+  - add contents (caveat for Subversion users: *git add* adds the <u>contents</u>, not just the <u>file name</u>)
 
 <!-- end list -->
 
@@ -91,8 +83,7 @@ git commit
 Notes:
 
   - All modified files should be added before calling *git commit*
-  - Since the added files are *staged for commit*, the command *git
-    stage* is a synonym for ''git add'
+  - Since the added files are *staged for commit*, the command *git stage* is a synonym for ''git add'
   - making use of the *git status* output
   - using a .gitignore file
   - adding a Sign-off (AKA S-O-B)
@@ -101,20 +92,13 @@ Notes:
 
 # What are diffs?
 
-Before committing, it is a good idea to see what modifications are about
-to be committed. One mode to look at them is to let Git show a *diff*. A
-*diff* consists of the following parts for every modified file:
+Before committing, it is a good idea to see what modifications are about to be committed. One mode to look at them is to let Git show a *diff*. A *diff* consists of the following parts for every modified file:
 
 1.  a pseudo command line starting with *diff --git*
 2.  a line describing the *previous* revision, starting with *---*
 3.  a line describing the *next* revision, starting with *+++*
-4.  one or more *hunks* starting with *@@ -<begin line>,<line count>
-    +<begin line>,<line count>*
-5.  a corresponding block of lines starting with a space for lines in
-    both the previous and next revision, a minus for lines only in the
-    previous one (*removed line*) and a plus for lines only in the next
-    revision (*added line*). A modified line will show up as removed and
-    added.
+4.  one or more *hunks* starting with *@@ -<begin line>,<line count> +<begin line>,<line count>*
+5.  a corresponding block of lines starting with a space for lines in both the previous and next revision, a minus for lines only in the previous one (*removed line*) and a plus for lines only in the next revision (*added line*). A modified line will show up as removed and added.
 
 ## Hands-on
 
@@ -144,21 +128,18 @@ git config --global diff.color auto
 
 # A word on the data model of Git (and how to reference objects)
 
-See [Git for computer
-scientists](http://eagain.net/articles/git-for-computer-scientists/).
+See [Git for computer scientists](http://eagain.net/articles/git-for-computer-scientists/).
 
   - Everything is an object
   - Every object has a type
-  - Every object has a *name* that is calculated by a one-way function
-    (the *hash function* SHA-1) from the type and the contents
+  - Every object has a *name* that is calculated by a one-way function (the *hash function* SHA-1) from the type and the contents
   - It is a 40-digit hex number
   - Every object is immutable (changing something changes the name).
   - Plain files are encoded as *blobs*
   - Directories are encoded as *trees*
   - Revisions are encoded as *commits*
 
-For ease of use, in addition to their long name (40 hex characters,
-quite klunky but precise) commits can be referred to by
+For ease of use, in addition to their long name (40 hex characters, quite klunky but precise) commits can be referred to by
 
   - short name
   - HEAD
@@ -214,24 +195,17 @@ git show HEAD~5
 git log README
 ```
 
-Note: to disambiguate between start commit and files, put a *--* between
-commit and/or options and files/directories, e.g. *git log HEAD -5 --
-doc*
+Note: to disambiguate between start commit and files, put a *--* between commit and/or options and files/directories, e.g. *git log HEAD -5 -- doc*
 
 # What are branches? Why do I need them?
 
-A branch is a named pointer into the commit graph. The main branch is
-called 'master' (Subversion's *trunk*, Mercurial's *default*). Since
-branches are just pointers, they are very easily created.
+A branch is a named pointer into the commit graph. The main branch is called 'master' (Subversion's *trunk*, Mercurial's *default*). Since branches are just pointers, they are very easily created.
 
-Committing while on a branch advances that pointer (if you need
-something that cannot advance, you need to use *tags*).
+Committing while on a branch advances that pointer (if you need something that cannot advance, you need to use *tags*).
 
-Note: branch names must be simple, i.e. not contain spaces or wild
-characters (although minus & underscore is okay).
+Note: branch names must be simple, i.e. not contain spaces or wild characters (although minus & underscore is okay).
 
-Branches can be used to organize sets of changes by topic. Compare also
-[Fiji's tutorial on topic branches](Git_topic_branches "wikilink").
+Branches can be used to organize sets of changes by topic. Compare also [Fiji's tutorial on topic branches](Git_topic_branches "wikilink").
 
 ## Hands-on
 
@@ -269,14 +243,11 @@ git checkout @{-1}
 
 # What does "distributed" mean with regards to Git?
 
-So far, the repository is local to the working directory. But Git can
-also synchronize with multiple other repositories.
+So far, the repository is local to the working directory. But Git can also synchronize with multiple other repositories.
 
-Typically, there is one designated *main repository*. If you want to
-initialize a working directory from a given repository, use *git clone*.
+Typically, there is one designated *main repository*. If you want to initialize a working directory from a given repository, use *git clone*.
 
-A main repository usually does not need a working directory, in which
-case it is called a *bare repository*.
+A main repository usually does not need a working directory, in which case it is called a *bare repository*.
 
 ## Hands-on
 
@@ -306,18 +277,11 @@ git init --bare --shared=group /path/to/fileserver/my.git
 
 # The merge concept of Git (and what is this "index" all about?)
 
-When working with others, or with topic branches, the changes (including
-their complete commit history) need to be integrated into another
-branch, typically *master*. This integration is called *merging*.
+When working with others, or with topic branches, the changes (including their complete commit history) need to be integrated into another branch, typically *master*. This integration is called *merging*.
 
-In order to perform a merge, the file versions are put into a staging
-area (the *index*), and all non-overlapping changes are resolved
-automatically. Overlapping (read: contradicting) changes are not
-resolved, but marked as *merge conflicts*.
+In order to perform a merge, the file versions are put into a staging area (the *index*), and all non-overlapping changes are resolved automatically. Overlapping (read: contradicting) changes are not resolved, but marked as *merge conflicts*.
 
-Please refer to the Fiji's page on [Git
-Conflicts](Git_Conflicts "wikilink") for a detailed explanation how to
-resolve merge conflicts.
+Please refer to the Fiji's page on [Git Conflicts](Git_Conflicts "wikilink") for a detailed explanation how to resolve merge conflicts.
 
 ## Hands-on
 
@@ -363,14 +327,9 @@ git merge tut-anch-amun
 
 # What are reflogs? How can they help me?
 
-We looked at the commit history previously. But every repository has its
-own individual history; for example, yesterday at noon, a specific
-branch with a specific revision was the current branch. This is stored
-in the reflogs (for space efficiency, reflogs are not available
-eternally but are pruned at some stage).
+We looked at the commit history previously. But every repository has its own individual history; for example, yesterday at noon, a specific branch with a specific revision was the current branch. This is stored in the reflogs (for space efficiency, reflogs are not available eternally but are pruned at some stage).
 
-You can access the reflogs by appending *@{<number>}* or *@{<date>}* to
-a branch name or to *HEAD*.
+You can access the reflogs by appending *@{<number>}* or *@{<date>}* to a branch name or to *HEAD*.
 
 ## Hands-on
 
@@ -392,12 +351,9 @@ git log -g
 
 # What is the stash?
 
-Sometimes one needs to store away all modifications and go back to a
-clean state, but keep the modifications accessible. This is done using
-the *stash*.
+Sometimes one needs to store away all modifications and go back to a clean state, but keep the modifications accessible. This is done using the *stash*.
 
-Note: the stash is a special pseudo-branch, living in *refs/stash*.
-Their history is in the reflog.
+Note: the stash is a special pseudo-branch, living in *refs/stash*. Their history is in the reflog.
 
 ## Hands-on
 
@@ -455,11 +411,9 @@ git stash pop
 
 # Accessing parts of the object database
 
-The primary way to look at commits is by using *git show*. It can show
-tags, commits, trees and blobs.
+The primary way to look at commits is by using *git show*. It can show tags, commits, trees and blobs.
 
-To access more information about commits, use the parameter
-*--pretty=fuller*.
+To access more information about commits, use the parameter *--pretty=fuller*.
 
 For more low-level access, use *git cat-file*.
 
@@ -499,18 +453,13 @@ git cat-file commit HEAD
 
 # What meanings do "checkout", "reset" have in Git?
 
-We already saw that *checkout* can switch between branches and even
-initialize new branches.
+We already saw that *checkout* can switch between branches and even initialize new branches.
 
-Unfortunately, *checkout* is also the command to pick file versions from
-other branches without switching the branches. Thusly picked file
-versions are automatically added, i.e. staged for the next commit.
+Unfortunately, *checkout* is also the command to pick file versions from other branches without switching the branches. Thusly picked file versions are automatically added, i.e. staged for the next commit.
 
-To unstage changes, one can use the *reset* command (without arguments,
-it resets all files which HEAD knows about currently).
+To unstage changes, one can use the *reset* command (without arguments, it resets all files which HEAD knows about currently).
 
-The *reset* command can further be convinced to reset not only the index
-(staging area), but also the working directory.
+The *reset* command can further be convinced to reset not only the index (staging area), but also the working directory.
 
 ## Hands-on
 
@@ -522,8 +471,7 @@ The *reset* command can further be convinced to reset not only the index
 git checkout other-branch README
 ```
 
-  - Unstage all changes, i.e. revert all files from "to-be-committed"
-    status to "modified"
+  - Unstage all changes, i.e. revert all files from "to-be-committed" status to "modified"
 
 <!-- end list -->
 
@@ -531,8 +479,7 @@ git checkout other-branch README
 git reset
 ```
 
-  - Get rid of all changes (like *git stash* but the changes are not
-    stored)
+  - Get rid of all changes (like *git stash* but the changes are not stored)
 
 <!-- end list -->
 
@@ -542,34 +489,20 @@ git reset --hard
 
 # Git's concept of "remote repositories"
 
-In addition to the repository from which we cloned, other repositories
-can be linked, too, using the *git remote* command. Such repositories
-are called *remote repositories* or simply *remotes*.
+In addition to the repository from which we cloned, other repositories can be linked, too, using the *git remote* command. Such repositories are called *remote repositories* or simply *remotes*.
 
 The repository from which we cloned is called *origin*.
 
 Interaction with remote repositories is performed using
 
-  - *git fetch*, which local copies of the branches of the remote
-    repository including all required objects (but being a bit clever
-    about avoiding to get objects we have already) and
-  - *git push*, which updates remote repositories' branches to the local
-    branches' state.
+  - *git fetch*, which local copies of the branches of the remote repository including all required objects (but being a bit clever about avoiding to get objects we have already) and
+  - *git push*, which updates remote repositories' branches to the local branches' state.
 
-The local copies of remote branches live in a specific namespace,
-refs/remotes/<name>. For example, the *master* branch of the remote
-called *origin* will be stored in *refs/remotes/origin/master*. If
-unambiguous, it can be referred to as *origin/master*, too.
+The local copies of remote branches live in a specific namespace, refs/remotes/<name>. For example, the *master* branch of the remote called *origin* will be stored in *refs/remotes/origin/master*. If unambiguous, it can be referred to as *origin/master*, too.
 
-Note: you need to make sure that you do not mix two different projects
-in the same working directory's repository. Git will happily fetch from
-wherever into your local repository, even if it does not make sense.
+Note: you need to make sure that you do not mix two different projects in the same working directory's repository. Git will happily fetch from wherever into your local repository, even if it does not make sense.
 
-Note: there is a shortcut for *fetch & merge*: *pull*. If you create a
-new branch from a local copy of a remote branch, you can even set it up
-such that *git pull* without further parameters will fetch from the
-correct remote and merge the correct branch: *git checkout --track
-origin/cool-feature*
+Note: there is a shortcut for *fetch & merge*: *pull*. If you create a new branch from a local copy of a remote branch, you can even set it up such that *git pull* without further parameters will fetch from the correct remote and merge the correct branch: *git checkout --track origin/cool-feature*
 
 ## Hands-on
 
@@ -631,19 +564,13 @@ git push --delete origin blabla-branch
 
 # Popular public repository hosters
 
-If you need to have public repositories, you can use
-http://github.com/>, <http://code.google.com/,
-http://sourceforge.net/>, <http://repo.or.cz/ and quite a few others.
-Typically, you have a decent amount of storage, but the deal is that
-your version-controlled project must be Open Source.
+If you need to have public repositories, you can use http://github.com/>, <http://code.google.com/>, <http://sourceforge.net/>, <http://repo.or.cz/ and quite a few others. Typically, you have a decent amount of storage, but the deal is that your version-controlled project must be Open Source.
 
-As a goodie, all of said hosters support *gitweb*, a web interface to
-look at the history.
+As a goodie, all of said hosters support *gitweb*, a web interface to look at the history.
 
 ## Hands-on
 
-Let's surf to http://github.com/git/hello-world and inspect the
-history
+Let's surf to http://github.com/git/hello-world and inspect the history
 
 # Advanced topics
 
@@ -730,14 +657,11 @@ history
   - The homepage: http://git-scm.com/
   - Git for Windows: http://code.google.com/p/msysgit/
   - Git for MacOSX http://code.google.com/p/git-osx-installer/
-  - An overview of the underlying data model:
-    http://eagain.net/articles/git-for-computer-scientists/
-  - Fiji's *topic branches* tutorial:
-    https://fiji.sc/wiki/index.php/Git_topic_branches
+  - An overview of the underlying data model: http://eagain.net/articles/git-for-computer-scientists/
+  - Fiji's *topic branches* tutorial: https://fiji.sc/wiki/index.php/Git_topic_branches
   - The ProGit book: http://progit.org/
   - The most popular repository hoster: https://github.com/
   - The original repository hoster: http://repo.or.cz/
   - The Git Wiki: https://git.wiki.kernel.org/index.php/Main_Page
 
-[Category:Tutorials](Category:Tutorials "wikilink")
-[Category:Git](Category:Git "wikilink")
+[Category:Tutorials](Category:Tutorials "wikilink") [Category:Git](Category:Git "wikilink")

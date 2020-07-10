@@ -8,23 +8,17 @@ categories:
 description: test description
 ---
 
-\_\_NOTOC\_\_ There are several mailing lists for community discussion
-and troubleshooting.{% include recommendedcontact %}
+\_\_NOTOC\_\_ There are several mailing lists for community discussion and troubleshooting.{% include recommendedcontact%}
 
-Please [search the list archives](http://search.imagej.net/) first to
-find any previous discussions regarding your problem.
+Please [search the list archives](http://search.imagej.net/) first to find any previous discussions regarding your problem.
 
-If you have a natural allergy toward subscribing to mailing lists, there
-are [other ways to get help, too](Help "wikilink").
+If you have a natural allergy toward subscribing to mailing lists, there are [other ways to get help, too](Help "wikilink").
 
 ## Bugs
 
-If you have found a bug, please [submit a bug
-report](Bug_reporting_best_practices "wikilink") via the Help menu's
-[Report a Bug](Report_a_Bug "wikilink") plugin.
+If you have found a bug, please [submit a bug report](Bug_reporting_best_practices "wikilink") via the Help menu's [Report a Bug](Report_a_Bug "wikilink") plugin.
 
-[Search for an existing bug](http://search.imagej.net/) before reporting
-a new one.
+[Search for an existing bug](http://search.imagej.net/) before reporting a new one.
 
 ## ImageJ
 

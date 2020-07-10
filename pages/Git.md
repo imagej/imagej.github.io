@@ -8,41 +8,28 @@ categories: Development,Git
 description: test description
 ---
 
-{% include sidebox-right content='If Git is completely new to you, read:
+{% include info-box content='If Git is completely new to you, read:
 
   - [TryGit 15-minute interactive tutorial](https://try.github.io/)
-  - [Learn Git Branching interactive
-    tutorial](http://pcottle.github.io/learnGitBranching/)
-  - [Git for dummies](Git_for_dummies "wikilink") tutorial on this web
-    site
+  - [Learn Git Branching interactive tutorial](http://pcottle.github.io/learnGitBranching/)
+  - [Git for dummies](Git_for_dummies "wikilink") tutorial on this web site
 
-If you are passingly familiar with Git, but wish it wasn"t so arcane,
-check out:
+If you are passingly familiar with Git, but wish it wasn"t so arcane, check out:
 
-  - [Think Like (a) Git - A Guide for the
-    Perplexed](http://think-like-a-git.net/)
+  - [Think Like (a) Git - A Guide for the Perplexed](http://think-like-a-git.net/)' %}
 
-' %} {% include develop-menu content='tools' %}Development of ImageJ and
-related software relies heavily on [Git](http://git-scm.com/). See the
-[source code](source_code "wikilink") page for information on where the
-Git repositories reside.
+{% include develop-menu content='tools' %}Development of ImageJ and related software relies heavily on [Git](http://git-scm.com/). See the [source code](source_code "wikilink") page for information on where the Git repositories reside.
 
 ## Why do we use Git?
 
-  - Git is a first-class
-    [distributed](wikipedia:Distributed_version_control "wikilink")
-    [version control](wikipedia:Version_control "wikilink") system, so
-    we use it to keep a record of changes to avoid loss-of-work and to
-    appropriately explain/document changes as projects develop.
-  - Git history, which is composed of "snapshots" of the source code,
-    can be used to go back at any point in time, which leads to
-    reproducible science.
+  - Git is a first-class [distributed](wikipedia:Distributed_version_control "wikilink") [version control](wikipedia:Version_control "wikilink") system, so we use it to keep a record of changes to avoid loss-of-work and to appropriately explain/document changes as projects develop.
+  - Git history, which is composed of "snapshots" of the source code, can be used to go back at any point in time, which leads to reproducible science.
 
 ## Git tutorials
 
 <div style="float: left; padding-right: 20px">
 
-{% include gitmenu %}
+{% include gitmenu%}
 
 </div>
 
@@ -50,35 +37,17 @@ This web site has lots of tutorials on Git; see the left sidebar.
 
 ## Rewriting history
 
-One of the most powerful things Git can do is rewrite a series of
-patches after the fact. This is a powerful technique worth learning.
-There are many guides available here and elsewhere:
+One of the most powerful things Git can do is rewrite a series of patches after the fact. This is a powerful technique worth learning. There are many guides available here and elsewhere:
 
 <div style="list-style-position: inside;">
 
-  - [Modifying your
-    commits](How_to_contribute_to_an_existing_plugin_or_library#Modifying_your_commits "wikilink")
-    section of the [Contributing to a
-    plugin](How_to_contribute_to_an_existing_plugin_or_library "wikilink")
-    page
-  - [Advanced topic branch
-    editing](Git_topic_branches#Advanced_topic_branch_editing_.28AKA_rebase_on_drugs.29 "wikilink")
-    section of the [Git topic branches](Git_topic_branches "wikilink")
-    tutorial
-  - [Rewriting
-    history](https://www.atlassian.com/git/tutorials/rewriting-history/)
-    tutorial from Atlassian
-  - [7.6 Git Tools - Rewriting
-    History](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
-    from the Git book
-  - [About Git
-    rebase](https://help.github.com/articles/about-git-rebase/) article
-    from GitHub
-  - [Using Git
-    rebase](https://help.github.com/articles/using-git-rebase/) article
-    from GitHub
+  - [Modifying your commits](How_to_contribute_to_an_existing_plugin_or_library#Modifying_your_commits "wikilink") section of the [Contributing to a plugin](How_to_contribute_to_an_existing_plugin_or_library "wikilink") page
+  - [Advanced topic branch editing](Git_topic_branches#Advanced_topic_branch_editing_.28AKA_rebase_on_drugs.29 "wikilink") section of the [Git topic branches](Git_topic_branches "wikilink") tutorial
+  - [Rewriting history](https://www.atlassian.com/git/tutorials/rewriting-history/) tutorial from Atlassian
+  - [7.6 Git Tools - Rewriting History](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History) from the Git book
+  - [About Git rebase](https://help.github.com/articles/about-git-rebase/) article from GitHub
+  - [Using Git rebase](https://help.github.com/articles/using-git-rebase/) article from GitHub
 
 </div>
 
-[Category:Development](Category:Development "wikilink")
-[Category:Git](Category:Git "wikilink")
+[Category:Development](Category:Development "wikilink") [Category:Git](Category:Git "wikilink")

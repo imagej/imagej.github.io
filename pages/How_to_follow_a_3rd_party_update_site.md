@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Following an update
-    site](Following_an_update_site "wikilink")
+1.  REDIRECT [Following an update site](Following_an_update_site "wikilink")

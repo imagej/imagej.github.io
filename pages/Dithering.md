@@ -8,42 +8,25 @@ categories: Plugins,Segmentation
 description: test description
 ---
 
-{% include sidebox-right software='ImageJ' name='Dithering'
-author='Gabriel Landini' maintainer='Gabriel Landini (G.Landini at bham.
-ac. uk)' filename='Dithering\_.txt' source='See below' version='v1.0 (17
-May 2009)' status='active' %}
+{% include info-box software='ImageJ' name='Dithering' author='Gabriel Landini' maintainer='Gabriel Landini (G.Landini at bham. ac. uk)' filename='Dithering\_.txt' source='See below' latest-version='v1.0 (17 May 2009)' status='active' %}
 
 ## Purpose
 
-This macro takes an 8 bit greyscale or a 24 bit RGB image and performs
-dithering using one of the methods supported. Dithering is a type of
-half tone thresholding where greyscale (or RGB channel) intensity is
-converted into a local density of binary pixels. This is ideal for
-rendering images in devices with a binary output such as printers
-(greyscale) or with a small number of colours (colour dithering).
+This macro takes an 8 bit greyscale or a 24 bit RGB image and performs dithering using one of the methods supported. Dithering is a type of half tone thresholding where greyscale (or RGB channel) intensity is converted into a local density of binary pixels. This is ideal for rendering images in devices with a binary output such as printers (greyscale) or with a small number of colours (colour dithering).
 
-In the case of 24 bit RGB images the macro lets you either apply
-dithering to the greyscale version of the image or to each of the RGB
-channels (colour dithering).
+In the case of 24 bit RGB images the macro lets you either apply dithering to the greyscale version of the image or to each of the RGB channels (colour dithering).
 
 ## Installation
 
-Copy the source code below and save it into a file called
-"Dithering\_.txt" somewhere in the /Plugins folder. Restarting Fiji or
-ImageJ will show a new command called "Dithering".
+Copy the source code below and save it into a file called "Dithering\_.txt" somewhere in the /Plugins folder. Restarting Fiji or ImageJ will show a new command called "Dithering".
 
 ## Available methods
 
-The following methods have been implemented (there are several more):
-Floyd-Steinberg, Atkinson, Jarvis-Judice-Ninke, Stucki, Bayer\_2x2,
-Bayer\_4x4, Bayer\_8x8, Clustered\_4x4 and Random.  
-Scaling dithered images by certain factors introduce numerous artifacts,
-so it is essential to apply dithering after image resizing.  
-Dithering results are best rendered when the image is displayed or
-printed using small pixels.
+The following methods have been implemented (there are several more): Floyd-Steinberg, Atkinson, Jarvis-Judice-Ninke, Stucki, Bayer\_2x2, Bayer\_4x4, Bayer\_8x8, Clustered\_4x4 and Random.  
+Scaling dithered images by certain factors introduce numerous artifacts, so it is essential to apply dithering after image resizing.  
+Dithering results are best rendered when the image is displayed or printed using small pixels.
 
-The following images have been magnified by a factor of 2 to show the
-individual pixels.
+The following images have been magnified by a factor of 2 to show the individual pixels.
 
 ![DitheringMontage.png](/images/pages/DitheringMontage.png "DitheringMontage.png")"
 
@@ -256,5 +239,4 @@ else if (method=="Random"){
 }
 ```
 
-[Category:Plugins](Category:Plugins "wikilink")
-[Category:Segmentation](Category:Segmentation "wikilink")
+[Category:Plugins](Category:Plugins "wikilink") [Category:Segmentation](Category:Segmentation "wikilink")

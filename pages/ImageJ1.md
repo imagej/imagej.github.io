@@ -8,33 +8,24 @@ categories: Software
 description: test description
 ---
 
-{% include project content='ImageJ1' %} {% capture author %} {% include
-person content="Rasband" %} {% endcapture %}
+{% include project content='ImageJ1' %}
+{% capture author%}
+{% include person content='Rasband' %}
+{% endcapture %}
 
-{% capture maintainer %} {% include person content="Rasband" %}  
-{% include person content="Rueden" %} {% endcapture %}
+{% capture maintainer%}
+{% include person content='Rasband' %}  
+{% include person content='Rueden' %}
+{% endcapture %}
 
-{% capture source %} {% include github org="imagej" repo="imagej1" %} {%
-endcapture %} {% include sidebox-right name='ImageJ1' software='ImageJ'
-logo='![imagej1-icon.png](/images/pages/imagej1-icon.png "imagej1-icon.png")"'
-author=author maintainer=maintainer source=source status='stable,
-active' category='' %}ImageJ 1.x, often shortened to ImageJ1 or IJ1, is
-a stable version of [ImageJ](ImageJ "wikilink") which has been under
-continuous development since 1997. It has always been, and continues to
-be, a one-developer project of {% include person content='Rasband' %}.
+{% capture source%}
+{% include github org='imagej' repo='imagej1' %}
+{% endcapture %}
+{% include info-box name='ImageJ1' software='ImageJ' logo='![imagej1-icon.png](/images/pages/imagej1-icon.png "imagej1-icon.png")"' author=author maintainer=maintainer source=source status='stable, active' category='' %}ImageJ 1.x, often shortened to ImageJ1 or IJ1, is a stable version of [ImageJ](ImageJ "wikilink") which has been under continuous development since 1997. It has always been, and continues to be, a one-developer project of {% include person content='Rasband' %}.
 
-ImageJ was originally developed in 1997 as a cross-platform version of
-[NIH Image](NIH_Image "wikilink"). ImageJ grew organically over time as
-{% include person content='Rasband' %} continued to add features
-according to user requests. Now there are many hundreds, probably
-thousands, of plugins written by members of a diverse community.
+ImageJ was originally developed in 1997 as a cross-platform version of [NIH Image](NIH_Image "wikilink"). ImageJ grew organically over time as {% include person content='Rasband' %} continued to add features according to user requests. Now there are many hundreds, probably thousands, of plugins written by members of a diverse community.
 
-The current version of ImageJ is often referred to as
-[ImageJ2](ImageJ2 "wikilink"), to differentiate it from ImageJ 1.x. The
-ImageJ2 distribution actually includes the latest version of ImageJ1 as
-well, along with a [legacy layer](ImageJ_Legacy "wikilink") for
-backwards compatibility, which transparently converts between IJ1 and
-IJ2 data structures as needed.
+The current version of ImageJ is often referred to as [ImageJ2](ImageJ2 "wikilink"), to differentiate it from ImageJ 1.x. The ImageJ2 distribution actually includes the latest version of ImageJ1 as well, along with a [legacy layer](ImageJ_Legacy "wikilink") for backwards compatibility, which transparently converts between IJ1 and IJ2 data structures as needed.
 
 ## See also
 
@@ -42,14 +33,6 @@ IJ2 data structures as needed.
 
 ## Publication
 
-  - 
-{% capture includecontent %} last = Schneider | first = C. A. | last2 =
-Rasband | first2 = W. S. | last3 = Eliceiri | first3 = K. W. | year =
-2012 | journal = Nature methods | url =
-http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2089.html | title
-= NIH Image to ImageJ: 25 years of image analysis | volume = 9(7) |
-pages = 671-675 | pmid = 22930834 {% endcapture %}
-
-{% include citation content=includecontent %} .
+  - {% include citation last='Schneider' first='C. A.' last2='Rasband' first2='W. S.' last3='Eliceiri' first3='K. W.' year='2012' journal='Nature methods' url='http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2089.html' title='NIH Image to ImageJ: 25 years of image analysis' volume='9(7)' pages='671-675' pmid='22930834' %}.
 
 [Category:Software](Category:Software "wikilink")

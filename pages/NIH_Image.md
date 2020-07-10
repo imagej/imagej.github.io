@@ -8,22 +8,10 @@ categories: Related Software,Citable
 description: test description
 ---
 
-[NIH Image](http://imagej.nih.gov/nih-image/) is the precursor to
-[ImageJ](ImageJ "wikilink"). NIH Image was originally written by {%
-include person content='Rasband' %} in Pascal for the Macintosh. It was
-first released in 1987, shared on floppy disks.
+[NIH Image](http://imagej.nih.gov/nih-image/) is the precursor to [ImageJ](ImageJ "wikilink"). NIH Image was originally written by {% include person content='Rasband' %} in Pascal for the Macintosh. It was first released in 1987, shared on floppy disks.
 
 ## Publication
 
-  - 
-{% capture includecontent %} last = Schneider | first = C. A. | last2 =
-Rasband | first2 = W. S. | last3 = Eliceiri | first3 = K. W. | year =
-2012 | journal = Nature methods | url =
-http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2089.html | title
-= NIH Image to ImageJ: 25 years of image analysis | volume = 9(7) |
-pages = 671-675 | pmid = 22930834 {% endcapture %}
+  - {% include citation last='Schneider' first='C. A.' last2='Rasband' first2='W. S.' last3='Eliceiri' first3='K. W.' year='2012' journal='Nature methods' url='http://www.nature.com/nmeth/journal/v9/n7/full/nmeth.2089.html' title='NIH Image to ImageJ: 25 years of image analysis' volume='9(7)' pages='671-675' pmid='22930834' %}.
 
-{% include citation content=includecontent %} .
-
-[Category:Related Software](Category:Related_Software "wikilink")
-[Category:Citable](Category:Citable "wikilink")
+[Category:Related Software](Category:Related_Software "wikilink") [Category:Citable](Category:Citable "wikilink")

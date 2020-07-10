@@ -8,34 +8,25 @@ categories: News
 description: test description
 ---
 
-We just released a new minor version of
-[TrackMate](TrackMate "wikilink"), that ships improvements to
-[TrackScheme](TrackScheme "wikilink") and bugfixes.
+We just released a new minor version of [TrackMate](TrackMate "wikilink"), that ships improvements to [TrackScheme](TrackScheme "wikilink") and bugfixes.
 
 ## Improvements
 
-  - TrackScheme now has an outline panel, useful to navigate in large
-    models.
+  - TrackScheme now has an outline panel, useful to navigate in large models.
 
-![TrackMate\_TrackSchemeOutline.png](/images/pages/TrackMate_TrackSchemeOutline.png
-"TrackMate_TrackSchemeOutline.png")"
+![TrackMate\_TrackSchemeOutline.png](/images/pages/TrackMate_TrackSchemeOutline.png "TrackMate_TrackSchemeOutline.png")"
 
-  - TrackScheme has a better layout for tracks that have merge and split
-    events.
+  - TrackScheme has a better layout for tracks that have merge and split events.
 
 <!-- end list -->
 
-  - The 'Refresh' button on detector config panels is not present
-    anymore. It's confusing and useless now that the quality value does
-    not match pixel intensity at all.
+  - The 'Refresh' button on detector config panels is not present anymore. It's confusing and useless now that the quality value does not match pixel intensity at all.
 
 <!-- end list -->
 
-  - TrackMate has new logos and icons, made by Agnieszka Kawska @
-    [IlluScientia](http://www.illuscientia.com/).
+  - TrackMate has new logos and icons, made by Agnieszka Kawska @ [IlluScientia](http://www.illuscientia.com/).
 
-![TrackMate-Logo85x50-color-300p.png](/images/pages/TrackMate-Logo85x50-color-300p.png
-"TrackMate-Logo85x50-color-300p.png")"
+![TrackMate-Logo85x50-color-300p.png](/images/pages/TrackMate-Logo85x50-color-300p.png "TrackMate-Logo85x50-color-300p.png")"
 
 ## Bugfixes
 
@@ -43,12 +34,10 @@ We just released a new minor version of
 
 <!-- end list -->
 
-  - Fixed a severe TrackScheme bug, happening when creating links with
-    invisible tracks.
+  - Fixed a severe TrackScheme bug, happening when creating links with invisible tracks.
 
 <!-- end list -->
 
-  - Fixed a detector crash when running a preview detection with 0 spots
-    found.
+  - Fixed a detector crash when running a preview detection with 0 spots found.
 
 [Category:News](Category:News "wikilink")

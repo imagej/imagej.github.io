@@ -8,13 +8,10 @@ categories: News
 description: test description
 ---
 
-The [Hackathon](2009-03-12_-_Dresden_Hackathon_2009 "wikilink") is over.
-We started a lot of projects, and we fixed a lot of bugs\!
+The [Hackathon](2009-03-12_-_Dresden_Hackathon_2009 "wikilink") is over. We started a lot of projects, and we fixed a lot of bugs\!
 
-For [developers](Developing_Fiji "wikilink"): 267 files changed, 24538
-insertions(+), 5495 deletions(-)
+For [developers](Developing_Fiji "wikilink"): 267 files changed, 24538 insertions(+), 5495 deletions(-)
 
-For users: stay tuned for [news](News "wikilink") and a release in the
-near future\!
+For users: stay tuned for [news](News "wikilink") and a release in the near future\!
 
 [Category:News](Category:News "wikilink")

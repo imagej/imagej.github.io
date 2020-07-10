@@ -11,18 +11,11 @@ description: test description
 ## What is the Javadoc?
 
 The source code of java programs is "self-documented".  
-Most classes, methods and attributes are described by some short
-docstring to explain their purpose. This documentation can be visualised
-as a user-friendly webpage: the Javadoc or API (for Application
-Programming Interface).
+Most classes, methods and attributes are described by some short docstring to explain their purpose. This documentation can be visualised as a user-friendly webpage: the Javadoc or API (for Application Programming Interface).
 
-The API is a precious ressource for users and developers willing to
-develop custom scripts or programs. It lists all available functions for
-a given class, and give information on what type of parameter they
-expect and return.
+The API is a precious ressource for users and developers willing to develop custom scripts or programs. It lists all available functions for a given class, and give information on what type of parameter they expect and return.
 
-Most scijava-projects API are listed on the [scijava
-javadocs](https://javadoc.scijava.org).
+Most scijava-projects API are listed on the [scijava javadocs](https://javadoc.scijava.org).
 
 And more particulary for
 

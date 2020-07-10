@@ -8,58 +8,38 @@ categories: Plugins
 description: test description
 ---
 
-{% capture source %} {% include github org="fiji" repo="Fiji\_Plugins"
-source="fiji/stacks/Dynamic\_Reslice.java" %} {% endcapture %} {%
-include sidebox-right name='Dynamic Reslice'
-software='[Fiji\_Plugins](Fiji_Plugins "wikilink")' author='Jean-Yves
-Tinevez & Albert Cardona from an ImageJ class' maintainer='Jean-Yves
-Tinevez (<tinevez_at_mpi-cbg_dot_de>)'
-filename='[Dynamic\_Reslice.jar](https://fiji.sc/tinevez/Dynamic_Reslice.jar)'
-source=source released='22 April 2009' version='v1.2 (23 April 2009)'
-status='active' %}
+
+{% capture source%}
+{% include github org='fiji' repo='Fiji\_Plugins' source='fiji/stacks/Dynamic\_Reslice.java' %}
+{% endcapture %}
+{% include info-box name='Dynamic Reslice' software='[Fiji\_Plugins](Fiji_Plugins "wikilink")' author='Jean-Yves Tinevez & Albert Cardona from an ImageJ class' maintainer='Jean-Yves Tinevez (<tinevez_at_mpi-cbg_dot_de>)' filename=' [Dynamic\_Reslice.jar](https://fiji.sc/tinevez/Dynamic_Reslice.jar) ' source=source released='22 April 2009' latest-version='v1.2 (23 April 2009)' status='active' %}
 
 ## Purpose
 
-This plugin is simply a dynamic version of the Reslice command as it is
-in ImageJ version 1.42l, by Patrick Kelly, Harvey Karten, {% include
-person content='Rasband' %}, Julian Cooper and Adrian Deerr. It draws an
-orthogonal slice through the volume represented by the stack it is
-applied on along its ROI, and update dynamically this slice as the ROI
-is displaced or deformed.
+This plugin is simply a dynamic version of the Reslice command as it is in ImageJ version 1.42l, by Patrick Kelly, Harvey Karten, {% include person content='Rasband' %}, Julian Cooper and Adrian Deerr. It draws an orthogonal slice through the volume represented by the stack it is applied on along its ROI, and update dynamically this slice as the ROI is displaced or deformed.
 
 ## Installation
 
 ### ImageJ
 
-Download the jar file
-[Dynamic\_Reslice.jar](https://fiji.sc/tinevez/Dynamic_Reslice.jar) and
-drop it into the *plugins* menu. The plugin will appear in the {%
-include bc content='Plugins | Dynamic\_Reslice'%} menu.
+Download the jar file [Dynamic\_Reslice.jar](https://fiji.sc/tinevez/Dynamic_Reslice.jar) and drop it into the *plugins* menu. The plugin will appear in the {% include bc content='Plugins | Dynamic\_Reslice'%} menu.
 
 ### Fiji
 
-The plugin is part of the Fiji distribution, as a member of the
-[Fiji\_Plugins](Fiji_Plugins "wikilink") package. You can find it in the
-{% include bc content='Image | Stacks'%} menu.
+The plugin is part of the Fiji distribution, as a member of the [Fiji\_Plugins](Fiji_Plugins "wikilink") package. You can find it in the {% include bc content='Image | Stacks'%} menu.
 
 ## Usage
 
-Open a stack and draw a line roi on it (any line roi will do it:
-straight line, poly-line, freehand line). When you call the plugin you
-are asked for two parameters.
+Open a stack and draw a line roi on it (any line roi will do it: straight line, poly-line, freehand line). When you call the plugin you are asked for two parameters.
 
-  - *Flip vertically* will cause the source slices to be processed from
-    bottom to top.
+  - *Flip vertically* will cause the source slices to be processed from bottom to top.
   - *Rotate 90º* will cause the result display to be rotated by 90º.
 
-The reslice window is drawn. Now change the roi shape or move it with
-the mouse. The result window refreshes automatically. Is is possible to
-change roi type on the fly.
+The reslice window is drawn. Now change the roi shape or move it with the mouse. The result window refreshes automatically. Is is possible to change roi type on the fly.
 
 ## Scripting
 
-It is possible to call and control this plugin from other plugin or
-scripts. Here is a script example for use with [Fiji](Fiji "wikilink").
+It is possible to call and control this plugin from other plugin or scripts. Here is a script example for use with [Fiji](Fiji "wikilink").
 
 ``` python
 '''
@@ -118,14 +98,12 @@ IJ.showStatus('Done')
 
 ## Example
 
-![DynamicresliceROI.gif](/images/pages/DynamicresliceROI.gif "DynamicresliceROI.gif")"
-![Dynamicreslice.gif](/images/pages/Dynamicreslice.gif "Dynamicreslice.gif")"
+![DynamicresliceROI.gif](/images/pages/DynamicresliceROI.gif "DynamicresliceROI.gif")" ![Dynamicreslice.gif](/images/pages/Dynamicreslice.gif "Dynamicreslice.gif")"
 
 ## Version history
 
   - 1.0 - 22 April 2009 - First working version.
-  - 1.1 - 22 April 2009 - Albert Cardona added the separate thread for
-    updating
+  - 1.1 - 22 April 2009 - Albert Cardona added the separate thread for updating
   - 1.2 - 23 April 2009 -
       - Window size automatically changes when Roi length changes
       - Can now be called and managed from scripts
@@ -133,17 +111,10 @@ IJ.showStatus('Done')
 
 ## License: GPL
 
-This program is free software; you can redistribute it and/or modify it
-under the terms of the GNU General Public License 2 as published by the
-Free Software Foundation.
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License 2 as published by the Free Software Foundation.
 
-This program is distributed in the hope that it will be useful, but
-WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
-Public License for more details.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License along
-with this program; if not, write to the Free Software Foundation, Inc.,
-59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 
 [Category:Plugins](Category:Plugins "wikilink")

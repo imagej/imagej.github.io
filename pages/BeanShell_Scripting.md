@@ -8,22 +8,13 @@ categories: Scripting
 description: test description
 ---
 
-{% include learn content='languages'
-%}[BeanShell](http://www.beanshell.org/) is the scripting language which
-is similar both to the [ImageJ macro
-language](Introduction_into_Macro_Programming "wikilink") and to Java.
-In fact, you can even execute almost verbatim Java code, but the common
-case is to write *scripts*, i.e. leave out all the syntactic sugar to
-make your code part of a class.
+{% include learn content='languages' %}[BeanShell](http://www.beanshell.org/) is the scripting language which is similar both to the [ImageJ macro language](Introduction_into_Macro_Programming "wikilink") and to Java. In fact, you can even execute almost verbatim Java code, but the common case is to write *scripts*, i.e. leave out all the syntactic sugar to make your code part of a class.
 
-BeanShell also does not require strict typing (read: you do not need to
-declare variables with types), making it easy to turn prototype code
-into proper Java after seeing that the code works.
+BeanShell also does not require strict typing (read: you do not need to declare variables with types), making it easy to turn prototype code into proper Java after seeing that the code works.
 
 # Quickstart
 
-If you are already familiar with Java or the macro language, the syntax
-of BeanShell will be familiar to you.
+If you are already familiar with Java or the macro language, the syntax of BeanShell will be familiar to you.
 
 The obligatory *Hello, World\!* example:
 
@@ -39,18 +30,14 @@ someName = 1;
 someName = "Hello";
 ```
 
-Variables are not strongly typed in BeanShell by default; If you use a
-variable name without specifying the type of it, you can assign anything
-to it. Optionally, you can declare variables with a data type, in which
-case the type is enforced:
+Variables are not strongly typed in BeanShell by default; If you use a variable name without specifying the type of it, you can assign anything to it. Optionally, you can declare variables with a data type, in which case the type is enforced:
 
 ``` java
 String s;
 s = 1; // this fails
 ```
 
-Note: The builtin functions of the ImageJ Macro language are <u>not</u>
-available in BeanShell.
+Note: The builtin functions of the ImageJ Macro language are <u>not</u> available in BeanShell.
 
 # Syntax
 
@@ -64,8 +51,7 @@ available in BeanShell.
 
 ### Set variables' values
 
-Variables are assigned a value by statements of the form **name** =
-**value** ended by a semicolon. The value can be an expression.
+Variables are assigned a value by statements of the form **name** = **value** ended by a semicolon. The value can be an expression.
 
 ``` java
 intensity = 255;
@@ -82,31 +68,24 @@ You can set a variable's value to the value of a second variable:
 text = title;
 ```
 
-Note that the variable name on the left hand side of the equal sign
-refers to the variable itself (not its value), but on the right hand
-side, the variable name refers to the current value stored in the
-variable.
+Note that the variable name on the left hand side of the equal sign refers to the variable itself (not its value), but on the right hand side, the variable name refers to the current value stored in the variable.
 
-As soon as the variables are assigned a new value, they simply forget
-the old value:
+As soon as the variables are assigned a new value, they simply forget the old value:
 
 ``` java
 x = y;
 y = x;
 ```
 
-After the first statement, *x* took on the value of *y*, so that the
-second statement does not change the value of *y*.
+After the first statement, *x* took on the value of *y*, so that the second statement does not change the value of *y*.
 
-The right hand side of an assignment can contain complicated
-expressions:
+The right hand side of an assignment can contain complicated expressions:
 
 ``` java
 x = y * y – 2 * y + 3;
 ```
 
-Note that the right hand side needs to be evaluated first before the
-value is assigned to the variable:
+Note that the right hand side needs to be evaluated first before the value is assigned to the variable:
 
 ``` java
 intensity = intensity * 2;
@@ -116,9 +95,7 @@ This statement just doubled the value of *intensity*.
 
 ## Comments
 
-It is important to use comments in your source code, not only for other
-people to understand the intent of the code, but also for yourself, when
-you come back to your code in 6 months. Comments look like this:
+It is important to use comments in your source code, not only for other people to understand the intent of the code, but also for yourself, when you come back to your code in 6 months. Comments look like this:
 
 ``` java
 // This is a comment trying to help you to
@@ -127,10 +104,7 @@ a = Math.exp(x * Math.sin(y))
     + Math.atan(x * y – a);
 ```
 
-You should <u>not</u> repeat the code in English, but describe the
-important aspects not conveyed by the code. For example, there might be
-a bug requiring a workaround, and you might want to explain that in the
-comments (lest you try to "fix" the workaround).
+You should <u>not</u> repeat the code in English, but describe the important aspects not conveyed by the code. For example, there might be a bug requiring a workaround, and you might want to explain that in the comments (lest you try to "fix" the workaround).
 
 Comments are often abused to disable code, such as debugging statements
 
@@ -138,8 +112,7 @@ Comments are often abused to disable code, such as debugging statements
 // x = 10; // hard-code x to 10 for now, just for debugging
 ```
 
-If you have a substantial amount of things to say in a comment, you
-might use multi-line comments:
+If you have a substantial amount of things to say in a comment, you might use multi-line comments:
 
 ``` java
 /*
@@ -151,13 +124,11 @@ might use multi-line comments:
 
 ## Further reading
 
-For more information, see BeanShell's
-[Quickstart](http://www.beanshell.org/manual/quickstart.html) page.
+For more information, see BeanShell's [Quickstart](http://www.beanshell.org/manual/quickstart.html) page.
 
 # Tips
 
-You can *source* scripts (i.e. interpret another script before
-continuing to interpret the current script) using this line:
+You can *source* scripts (i.e. interpret another script before continuing to interpret the current script) using this line:
 
 ``` java
 this.interpreter.source("the-other-script.bsh");
@@ -167,8 +138,7 @@ this.interpreter.source("the-other-script.bsh");
 
 ## Add CIEL\*a\*b numbers to the status bar
 
-If your monitor is calibrated to *sRGB*, there is an easy way to do
-display also the *L*, *a* and *b* values in the status bar:
+If your monitor is calibrated to *sRGB*, there is an easy way to do display also the *L*, *a* and *b* values in the status bar:
 
 ``` java
 import color.CIELAB;
@@ -230,11 +200,8 @@ class Add_CIELab_to_Status extends Thread implements KeyListener {
 new Add_CIELab_to_Status().start();
 ```
 
-This example starts a new thread (make sure to implement the *run()*
-method but actually call the *start()* method\!) which polls the status
-bar.
+This example starts a new thread (make sure to implement the *run()* method but actually call the *start()* method\!) which polls the status bar.
 
-It also registers itself as a key listener so it can stop the process
-when the user hits the Escape key when the main window is in focus.
+It also registers itself as a key listener so it can stop the process when the user hits the Escape key when the main window is in focus.
 
 [Category:Scripting](Category:Scripting "wikilink")

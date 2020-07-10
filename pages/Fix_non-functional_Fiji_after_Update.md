@@ -8,5 +8,4 @@ categories:
 description: test description
 ---
 
-1.  REDIRECT [Fix non-functional ImageJ after
-    Update](Fix_non-functional_ImageJ_after_Update "wikilink")
+1.  REDIRECT [Fix non-functional ImageJ after Update](Fix_non-functional_ImageJ_after_Update "wikilink")

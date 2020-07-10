@@ -6,6 +6,7 @@ name,failing component,reason
 2012-03-20_-_Unit_tests_for_ImageJ_1.46,pandoc,
 2014-07-11_-_Fiji_won't_quit!,reader,
 2014-07-11_-_Fiji_won't_quit,reader,
+2016-07-21_-_KNIME_Image_Processing_hackathon,liquid,gallery messing with include
 2D_Histogram,pandoc,
 Adelson's_Squares,reader,
 Alida,pandoc,
@@ -28,15 +29,18 @@ ImageJ,liquid,
 Landmark_Correspondences,liquid,
 MATLAB_Scripting,liquid,
 Miji,liquid,
+Minimum_Splits_and_Mergers_Warping_error,liquid,indendation in cite block converts to code block
 Ops_Deconvolution,liquid,has formulas messing with liquid
 Overview_of_Fiji's_source_code,reader,
 Particle_Analysis,liquid,
 Rand_error,liquid,
 Script_Parameters,liquid,
+Segmentation_of_neuronal_structures_in_EM_stacks_challenge_-_ISBI_2012,liquid,line break in cite creates code block
 Shape_Index_Map,reader,
 Sholl_Analysis,liquid,
 Strahler_Analysis,liquid,
 Test_Block_Matching_Parameters,liquid,
+Topology_preserving_warping_error,liquid,line break in cite creates code block
 TrakEM2_Scripting,liquid,
 Tree_and_Menu_Demo,liquid,
 Versioning,pandoc,

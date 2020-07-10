@@ -12,28 +12,9 @@ description: test description
 
 ## What is Registration?
 
-[Image registration](wikipedia:Image_registration "wikilink") is the
-process of transforming different sets of image data into one coordinate
-system. Image data may be multiple photographs, data from different
-sensors, times, depths, or viewpoints. It is used in computer vision,
-medical imaging, biological imaging and brain mapping, military
-automatic target recognition, and compiling and analyzing images and
-data from satellites. Registration is necessary in order to be able to
-compare or integrate the data obtained from these different
-measurements.
+[Image registration](wikipedia:Image_registration "wikilink") is the process of transforming different sets of image data into one coordinate system. Image data may be multiple photographs, data from different sensors, times, depths, or viewpoints. It is used in computer vision, medical imaging, biological imaging and brain mapping, military automatic target recognition, and compiling and analyzing images and data from satellites. Registration is necessary in order to be able to compare or integrate the data obtained from these different measurements.
 
-Essentially, image registration is used to align two or more images of
-the same scene. The transformation function, the method for modifying
-the spatial relationship between pixels, needs to be estimated/modeled
-in order to register the two images. The input image is the image that
-will be transformed, and the reference image is the one against which
-the input is registered. Geometric distortions causing differences in
-angle, orientation, shifting, and distance need to be taken into
-account. One of the most common methods to do image registration uses
-*points* that correspond to locations known in both the input and
-reference images. Tools exist in ImageJ that can automatically detect
-such *correspondence points* to then estimate the transformation
-function.
+Essentially, image registration is used to align two or more images of the same scene. The transformation function, the method for modifying the spatial relationship between pixels, needs to be estimated/modeled in order to register the two images. The input image is the image that will be transformed, and the reference image is the one against which the input is registered. Geometric distortions causing differences in angle, orientation, shifting, and distance need to be taken into account. One of the most common methods to do image registration uses *points* that correspond to locations known in both the input and reference images. Tools exist in ImageJ that can automatically detect such *correspondence points* to then estimate the transformation function.
 
 ## Recommended ImageJ Plugins for Registration
 
@@ -62,10 +43,8 @@ Here we summarize some of the Registration plugins in ImageJ.
 <td><p><a href="https://imagej.net/Linear_Stack_Alignment_with_SIFT">Linear Stack Alignment with SIFT</a></p></td>
 <td><p>A tool for aligning image stacks</p></td>
 <td><ul>
-<li>A lightweight SIFT-implementation for Java after the paper of David Lowe<ref></li>
-</ul>
-<p>{% capture includecontent %} journal |author=Lowe D | title=Distinctive Image Features from Scale-Invariant Keypoints | journal=International Journal of Computer Vision | year=2004 | volume=60 | number=2 | pages=91-110 {% endcapture %}</p>
-<p>{% include cite content=includecontent %} </ref>.</p></td>
+<li>A lightweight SIFT-implementation for Java after the paper of David Lowe[1].</li>
+</ul></td>
 <td></td>
 </tr>
 <tr class="even">
@@ -107,5 +86,6 @@ Here we summarize some of the Registration plugins in ImageJ.
 
 ## Other pages and tools for Registration in ImageJ
 
-See [Category:Registration](https://imagej.net/Category:Registration)
-for other ImageJ pages and tools about image registration.
+See [Category:Registration](https://imagej.net/Category:Registration) for other ImageJ pages and tools about image registration.
+
+1.  {% include cite content='journal' author='Lowe D' title='Distinctive Image Features from Scale-Invariant Keypoints' journal='International Journal of Computer Vision' year='2004' volume='60' number='2' pages='91-110' %}
