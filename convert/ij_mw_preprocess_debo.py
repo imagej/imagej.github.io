@@ -315,7 +315,7 @@ def convert(path_in, path_out, layout, title):
         # do replacements in md format
         content_tmp = re.sub(r'<http(.*)>', r'http\1', content_tmp)
         content_tmp = re.sub(r'<img src=\"(?!http)([^\"]*)\"', r'<img src="/images/pages/\1"', content_tmp)
-        content_tmp = re.sub(r'(\!\[[^\]]*\]\()([^"\)]*[ ]\"[^\"]*\"[ ]*\))', r'\1/images/pages/\2"', content_tmp)
+        content_tmp = re.sub(r'(\!\[[^\]]*\]\()([^"\)]*[ \n]\"[^\"]*\"[ ]*\))', r'\1/images/pages/\2"', content_tmp)
 
     front_matter = add_front_matter(content_tmp, path_in, layout, title)
 
