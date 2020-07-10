@@ -101,8 +101,8 @@ given incorrect parameters. But we think it's worth it to avoid code
 like this:
 
 ![**The Evolution of SCIFIO:** Generics can be
-terrifying.](Terrifying-generics.jpg
-"The Evolution of SCIFIO: Generics can be terrifying.")
+terrifying.](/images/pages/Terrifying-generics.jpg
+"The Evolution of SCIFIO: Generics can be terrifying.")"
 
 [Category:News](Category:News "wikilink")
 [Category:ImageJ2](Category:ImageJ2 "wikilink")

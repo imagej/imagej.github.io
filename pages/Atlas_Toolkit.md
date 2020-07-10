@@ -116,8 +116,8 @@ When you have told it where to find the last '.label' file, just click
 
 You will then be prompted to select some basic parameters:
 
-![LabelRegistration3D-1.png](LabelRegistration3D-1.png
-"LabelRegistration3D-1.png")
+![LabelRegistration3D-1.png](/images/pages/LabelRegistration3D-1.png
+"LabelRegistration3D-1.png")"
 
   - "Select Channel (0 - 255):" allows you to select which of the labels
     (tissues/objects) within the '.label' files should be registered.

@@ -23,14 +23,14 @@ status='stable, active'
 category='[Segmentation](:Category:Segmentation "wikilink"),
 [Mathematical morphology](:Category:Mathematical_morphology "wikilink")'
 %}{| |style="vertical-align:top" |![Overlay of watershed lines on
-blurred blobs.](Classic-Watershed-lines-blur-blobs.png
-"Overlay of watershed lines on blurred blobs.") |}
+blurred blobs.](/images/pages/Classic-Watershed-lines-blur-blobs.png
+"Overlay of watershed lines on blurred blobs.")" |}
 
 ## Introduction
 
 ![Schematic overview of watershed flooding in
-1D](Watershed-flooding-graph.png
-"Schematic overview of watershed flooding in 1D")Classic Watershed is an
+1D](/images/pages/Watershed-flooding-graph.png
+"Schematic overview of watershed flooding in 1D")"Classic Watershed is an
 ImageJ/Fiji plugin to perform watershed segmentation of grayscale 2D/3D
 images using flooding simulations as described by Pierre Soille and Luc
 M. Vincent (1990)\<ref name="Soille1990\> {% capture includecontent %}
@@ -65,8 +65,8 @@ The Classic Watershed plugin runs on any **grayscale image (8, 16 and
 At least one image needs to be open in order to run the plugin.
 
 ![Main dialog of the Classic Watershed
-plugin](Classic-Watershed-dialog.png
-"Main dialog of the Classic Watershed plugin") Image parameters:
+plugin](/images/pages/Classic-Watershed-dialog.png
+"Main dialog of the Classic Watershed plugin")" Image parameters:
 
   - **Input** image: grayscale image to flood, usually the gradient of
     an image.

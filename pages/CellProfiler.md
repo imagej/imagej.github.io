@@ -11,8 +11,8 @@ description: test description
 {% capture source %} {% include github org="CellProfiler"
 repo="CellProfiler" %} {% endcapture %} {% include sidebox-right
 content='Plugin' software='CellProfiler' name='CellProfiler'
-logo='![Cellprofiler-icon.png](Cellprofiler-icon.png
-"Cellprofiler-icon.png")' author='[Broad Institute of MIT and
+logo='![Cellprofiler-icon.png](/images/pages/Cellprofiler-icon.png
+"Cellprofiler-icon.png")"' author='[Broad Institute of MIT and
 Harvard](https://www.broadinstitute.org/)' maintainer='[Broad Institute
 of MIT and Harvard](https://www.broadinstitute.org/)' source=source
 status='active' website='http://cellprofiler.org/' %}CellProfiler is

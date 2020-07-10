@@ -17,8 +17,8 @@ endcapture %}
 
 {% capture source %} {% include github org="ClearVolume"
 repo="imglib2-clearvolume" %} {% endcapture %} {% include sidebox-right
-name='ClearVolume' logo='![ClearVolumeLogo.png](ClearVolumeLogo.png
-"ClearVolumeLogo.png")' software='Fiji' author=author
+name='ClearVolume' logo='![ClearVolumeLogo.png](/images/pages/ClearVolumeLogo.png
+"ClearVolumeLogo.png")"' software='Fiji' author=author
 maintainer=maintainer source=source status='active'
 category='[Visualization](:Category:Visualization "wikilink")'
 website='https://clearvolume.github.io/' %}== Problems and Solutions
@@ -63,8 +63,8 @@ below.
 Channel LUTs, transparency, rendering quality, etc. can easily be set in
 the plugins user interface. We thank Tzumin Lee's group at Janelia for
 being allowed to use their twin-spot MARCM (Yu et al., Nature
-Neuroscience, 2009) labeled neurons.](ClearVolumeInFiji.png
-"The main ClearVolume plugin can render volumetric multi-channel data. Channel LUTs, transparency, rendering quality, etc. can easily be set in the plugins user interface. We thank Tzumin Lee's group at Janelia for being allowed to use their twin-spot MARCM (Yu et al., Nature Neuroscience, 2009) labeled neurons.")
+Neuroscience, 2009) labeled neurons.](/images/pages/ClearVolumeInFiji.png
+"The main ClearVolume plugin can render volumetric multi-channel data. Channel LUTs, transparency, rendering quality, etc. can easily be set in the plugins user interface. We thank Tzumin Lee's group at Janelia for being allowed to use their twin-spot MARCM (Yu et al., Nature Neuroscience, 2009) labeled neurons.")"
 
 </center>
 
@@ -73,8 +73,8 @@ Neuroscience, 2009) labeled neurons.](ClearVolumeInFiji.png
 ![The ClearVolume network client can be started from Fiji/ImageJ2 and
 enables users to receive volumetric data from a remote source, e.g. live
 from a microscope in the basement of your collaborators
-institute.](ClearVolumeNetworkClientInFiji.png
-"The ClearVolume network client can be started from Fiji/ImageJ2 and enables users to receive volumetric data from a remote source, e.g. live from a microscope in the basement of your collaborators institute.")
+institute.](/images/pages/ClearVolumeNetworkClientInFiji.png
+"The ClearVolume network client can be started from Fiji/ImageJ2 and enables users to receive volumetric data from a remote source, e.g. live from a microscope in the basement of your collaborators institute.")"
 
 </center>
 

@@ -47,8 +47,8 @@ vary with other versions."""' %}
 ### Microscope Calibration
 
 ![Replace the value 3095.975 in the source code with your microscope
-spatial scale.](Scale.png
-"Replace the value 3095.975 in the source code with your microscope spatial scale.")
+spatial scale.](/images/pages/Scale.png
+"Replace the value 3095.975 in the source code with your microscope spatial scale.")"
 To convert pixels to mm<sup>2</sup>, the image spatial scale is
 required. This can be found in the image metadata or in the microscope's
 bundled software.
@@ -113,11 +113,11 @@ Dataset](https://www.dropbox.com/sh/lu6qojkte1z41pf/AABJHv2uptUaWfx-mGUmn1nJa?dl
 ## TUNEL Cell Counter
 
 ![Representative animation of Macro Mode. Processing time is \~5
-seconds/image.](Stack_-_Macro.gif
-"Representative animation of Macro Mode. Processing time is ~5 seconds/image.")
+seconds/image.](/images/pages/Stack_-_Macro.gif
+"Representative animation of Macro Mode. Processing time is ~5 seconds/image.")"
 ![Representative animation of Batch Mode. Processing time is \~2.7
-seconds/image.](Stack_-_Batch.gif
-"Representative animation of Batch Mode. Processing time is ~2.7 seconds/image.")
+seconds/image.](/images/pages/Stack_-_Batch.gif
+"Representative animation of Batch Mode. Processing time is ~2.7 seconds/image.")"
 
 ### Segmentation
 
@@ -195,8 +195,8 @@ To execute in Batch Mode:
 ### Qualitative
 
 ![Example of an original TUNEL assay image (top) after macro processing
-(bottom).](Montage.jpg
-"Example of an original TUNEL assay image (top) after macro processing (bottom).")
+(bottom).](/images/pages/Montage.jpg
+"Example of an original TUNEL assay image (top) after macro processing (bottom).")"
 
   -   
     A JPEG image is created to visualize ONL and INL segmentation and
@@ -224,8 +224,8 @@ When executed in Macro Mode, the output variables are:
       - Ratio TUNEL<sup>+</sup> Cells/INL Area (count/mm<sup>2</sup>)
       - Percentage TUNEL<sup>+</sup> Cells/INL Total Cells (%)  
 
-![A new window is generated with the output variables.](Bar.png
-"A new window is generated with the output variables.") When executed in
+![A new window is generated with the output variables.](/images/pages/Bar.png
+"A new window is generated with the output variables.")" When executed in
 Batch Mode, ONL Area, INL Area, ONL TUNEL<sup>+</sup> cells, and INL
 TUNEL<sup>+</sup> cells are reported. These values were used for macro
 validation.  

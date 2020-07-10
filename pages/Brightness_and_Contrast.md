@@ -24,8 +24,8 @@ The Brightness and Contrast tool may be accessed through {% include bc
 content='Image | Adjust | Brightness/Contrast'%} or {% include key
 content='Ctrl|Shift|C' %}.
 
-![Brightness\_Contrast\_Window.png](Brightness_Contrast_Window.png
-"Brightness_Contrast_Window.png")
+![Brightness\_Contrast\_Window.png](/images/pages/Brightness_Contrast_Window.png
+"Brightness_Contrast_Window.png")"
 
 The upper and lower limits of the display range can be adjusted by
 modifying the minimum and maximum settings. Image brightness and image
@@ -49,12 +49,12 @@ settings.
 
 **Before**
 
-![Brightness\_Contrast\_Before.png](Brightness_Contrast_Before.png
-"Brightness_Contrast_Before.png")
+![Brightness\_Contrast\_Before.png](/images/pages/Brightness_Contrast_Before.png
+"Brightness_Contrast_Before.png")"
 
 **After**
 
-![Brightness\_Contrast\_After.png](Brightness_Contrast_After.png
-"Brightness_Contrast_After.png")
+![Brightness\_Contrast\_After.png](/images/pages/Brightness_Contrast_After.png
+"Brightness_Contrast_After.png")"
 
 [Category:Cookbook](Category:Cookbook "wikilink")

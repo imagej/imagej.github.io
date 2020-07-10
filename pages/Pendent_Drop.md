@@ -18,8 +18,8 @@ source='https://github.com/adaerr/pendent-drop' released='September
 28, 2010' version='version 2 (September 20, 2015)' status='stable,
 active' %}
 
-![eauContrasteMaxFit.jpg](eauContrasteMaxFit.jpg
-"eauContrasteMaxFit.jpg")
+![eauContrasteMaxFit.jpg](/images/pages/eauContrasteMaxFit.jpg
+"eauContrasteMaxFit.jpg")"
 
 *Pendent drop profile integration and fitting*
 

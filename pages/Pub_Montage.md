@@ -100,8 +100,8 @@ The easiest way to open a bunch of images in imageJ is to drag and drop
 your selected bunch of images onto the imageJ user interface. However,
 if you do it this way, the order in which the stack is built will
 probably not be the order you want. This option lets you edit your stack
-before the plugin builds the montage. ![Window3.jpg](Window3.jpg
-"Window3.jpg") The plugin is interrupted and two windows popup. One is
+before the plugin builds the montage. ![Window3.jpg](/images/pages/Window3.jpg
+"Window3.jpg")" The plugin is interrupted and two windows popup. One is
 an "Action Required" window that just pauses the plugin until you select
 "OK", i.e. after you are satisfied with the stack. The other window is a
 stack sorter that imageJ supplies. It has a lot of useful options, but

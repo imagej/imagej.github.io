@@ -65,8 +65,8 @@ label corresponds uniquely to a cell.
 Embryo cells with Actin, Membrane channel and segmentation mask image
 respectively:
 
-![Ch1.png](/images/pages/Ch1.png "Ch1.png")"![Ch2.png](Ch2.png
-"Ch2.png")![Seg.png](/images/pages/Seg.png "Seg.png")"
+![Ch1.png](/images/pages/Ch1.png "Ch1.png")"![Ch2.png](/images/pages/Ch2.png
+"Ch2.png")"![Seg.png](/images/pages/Seg.png "Seg.png")"
 
 Please run the program at least once before running it in batch mode
 over a directory of such timelapse images.

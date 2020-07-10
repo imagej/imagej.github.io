@@ -114,8 +114,8 @@ the /manager context enables users to handle the datasets with the web
 interface.
 
 The web interface of /manager context looks like this:
-![BigDataServer\_Manager.png](BigDataServer_Manager.png
-"BigDataServer_Manager.png")
+![BigDataServer\_Manager.png](/images/pages/BigDataServer_Manager.png
+"BigDataServer_Manager.png")"
 
 The server will keep running until you cancel it with {% include key
 content='press|Ctrl|C' %} or close the shell. To start the server in the
@@ -143,8 +143,8 @@ In order to connect to a BigDataServer from Fiji and view the data go to
 {% include bc content='Plugins | BigDataViewer | Browse
 BigDataServer'%}. You will be presented with the following dialog box:
 
-![bdv-browse-bigdataserver-1.png](bdv-browse-bigdataserver-1.png
-"bdv-browse-bigdataserver-1.png")
+![bdv-browse-bigdataserver-1.png](/images/pages/bdv-browse-bigdataserver-1.png
+"bdv-browse-bigdataserver-1.png")"
 
 Enter the URL (including port) of a BigDataServer. For example, the
 Drosophila timelapse dataset described in
@@ -153,8 +153,8 @@ is available through this address: http://fly.mpi-cbg.de:8081. Click
 OK. The following window will pop up showing a list of datasets offered
 by the server:
 
-![bdv-browse-bigdataserver-2.png](bdv-browse-bigdataserver-2.png
-"bdv-browse-bigdataserver-2.png")
+![bdv-browse-bigdataserver-2.png](/images/pages/bdv-browse-bigdataserver-2.png
+"bdv-browse-bigdataserver-2.png")"
 
 In the example, the server offers only a single dataset called
 *Drosophila*. Double-clicking on a dataset in the list will launch it in

@@ -25,8 +25,8 @@ BigDataViewer [documentation](BigDataViewer#Usage "wikilink") on this
 Wiki.
 
 ![Toggle per-view and per-channel coloring by pressing **c** in the main
-window.](BigStitcher_BDV_Colormode.png
-"Toggle per-view and per-channel coloring by pressing c in the main window.")
+window.](/images/pages/BigStitcher_BDV_Colormode.png
+"Toggle per-view and per-channel coloring by pressing c in the main window.")"
 
 In the BigDataViewer window accompanying the BigStitcher, you can switch
 between color schemes by pressing {% include key content='c' %} in the

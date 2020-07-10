@@ -266,8 +266,8 @@ order.
 Apart from the discussion on the priority and execution order, there is
 not much to say. It works\!
 
-![TrackMate\_CustomSpotAnalyzer\_01.png](TrackMate_CustomSpotAnalyzer_01.png
-"TrackMate_CustomSpotAnalyzer_01.png")
+![TrackMate\_CustomSpotAnalyzer\_01.png](/images/pages/TrackMate_CustomSpotAnalyzer_01.png
+"TrackMate_CustomSpotAnalyzer_01.png")"
 
 {% include person content='JeanYvesTinevez' %}
 ([talk](User_talk:JeanYvesTinevez "wikilink")) 07:32, 11 March 2014

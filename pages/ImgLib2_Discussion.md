@@ -244,26 +244,26 @@ The original `img` looks like this:
 This is extended to infinity (using mirroring strategy) resulting in the
 unbounded `RandomAccessible view1`. A crop of `view1` looks like this:
 
-![Imglib2views\_ext1.png‎](Imglib2views_ext1.png‎
-"Imglib2views_ext1.png‎")
+![Imglib2views\_ext1.png‎](/images/pages/Imglib2views_ext1.png‎
+"Imglib2views_ext1.png‎")"
 
 Then we take a subview `view2` (which is again a bounded interval)
 
-![Imglib2views\_extsub1.png‎](Imglib2views_extsub1.png‎
-"Imglib2views_extsub1.png‎")
+![Imglib2views\_extsub1.png‎](/images/pages/Imglib2views_extsub1.png‎
+"Imglib2views_extsub1.png‎")"
 
 We extend that to get `view3` and take a subview `view4` which looks
 like this:
 
-![Imglib2views\_extsub1extsub2.png‎](Imglib2views_extsub1extsub2.png‎
-"Imglib2views_extsub1extsub2.png‎")
+![Imglib2views\_extsub1extsub2.png‎](/images/pages/Imglib2views_extsub1extsub2.png‎
+"Imglib2views_extsub1extsub2.png‎")"
 
 Now assume that we want `RandomAccess` into `view4`. If we know in
 advance interval in which we will use the access, `view4` can possibly
 provide more efficient access. Consider this:
 
-![Imglib2views\_extsub1extsub2regions.png‎](Imglib2views_extsub1extsub2regions.png‎
-"Imglib2views_extsub1extsub2regions.png‎")
+![Imglib2views\_extsub1extsub2regions.png‎](/images/pages/Imglib2views_extsub1extsub2regions.png‎
+"Imglib2views_extsub1extsub2regions.png‎")"
 
 If we want to access only the green region, the `RandomAccess` can fall
 through all the way to the original `img` without needing out-of-bounds
@@ -291,8 +291,8 @@ simplified if possible.
 can be reduced by concatenation. Note that the interfaces responsible
 for concatenation are not implemented by the transform hierarchy.
 Necessary access to trivial parameters in specialized transforms is
-implemented just once in abstract classes.](Imglib2-transform.png
-"Simplified visualization of the hierarchy of ImgLib2 transforms that can be reduced by concatenation. Note that the interfaces responsible for concatenation are not implemented by the transform hierarchy. Necessary access to trivial parameters in specialized transforms is implemented just once in abstract classes.")
+implemented just once in abstract classes.](/images/pages/Imglib2-transform.png
+"Simplified visualization of the hierarchy of ImgLib2 transforms that can be reduced by concatenation. Note that the interfaces responsible for concatenation are not implemented by the transform hierarchy. Necessary access to trivial parameters in specialized transforms is implemented just once in abstract classes.")"
 We thought that it might at some point be useful to have a generic way
 of contracting chains of transforms. The idea is to have a hierarchy of
 transformations, i.e., a Translation is a Rigid transform is an Affine

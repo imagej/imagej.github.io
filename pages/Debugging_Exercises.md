@@ -217,8 +217,8 @@ inside a method that is used multiple times in our program. ' %}
 Since we are only interested in the `processElementAtIndex` method when
 a problem actually occurs, let's try something different:
 
-![Setting a breakpoint on an exception](E2BreakOnException.png
-"Setting a breakpoint on an exception")
+![Setting a breakpoint on an exception](/images/pages/E2BreakOnException.png
+"Setting a breakpoint on an exception")"
 
 1.  From the *Breakpoints* window in the *Debug* perspective, delete the
     old breakpoint
@@ -226,8 +226,8 @@ a problem actually occurs, let's try something different:
     breakpoint to *IllegalArgumentException*
 3.  Debug the program. When it stops, inspect the *Variables* window.
 
-![Inspecting the variables window](E2Variables.png
-"Inspecting the variables window")
+![Inspecting the variables window](/images/pages/E2Variables.png
+"Inspecting the variables window")"
 
 At this point, we know there is a problem accessing the `99999th`
 element of the list, but the variables window doesn't tell us exactly
@@ -332,8 +332,8 @@ that stops in the loop when the `everythingIsOK` flag is set to
 - where we can enter any Java statement that resolves to a boolean
 value. Try it out:
 
-![Setting a conditional expression](E3ConditionalBreakpoint.png
-"Setting a conditional expression")
+![Setting a conditional expression](/images/pages/E3ConditionalBreakpoint.png
+"Setting a conditional expression")"
 
 1.  Open the *Breakpoints* window again
 2.  Open the properties of our breakpoint
@@ -416,8 +416,8 @@ information.
 
     ImageJ.app/ImageJ-linux64 --debugger=8000 --console
 
-![Remote Java Application debug configuration](E4DebugConfig.png
-"Remote Java Application debug configuration") This will start up ImageJ
+![Remote Java Application debug configuration](/images/pages/E4DebugConfig.png
+"Remote Java Application debug configuration")" This will start up ImageJ
 in a mode that's able to communicate with Eclipse. Next we need to
 connect Eclipse to the running ImageJ instance:
 
@@ -619,8 +619,8 @@ We actually don't need any extra flags this time, as this technique
 isn't specific to ImageJ. When you run a program from the command line,
 your console is directly tied to the running instance:
 
-![Waiting for input after launching ImageJ](E6Console.png
-"Waiting for input after launching ImageJ")
+![Waiting for input after launching ImageJ](/images/pages/E6Console.png
+"Waiting for input after launching ImageJ")"
 
 In this state, we can still send signals to the running application (for
 example - {% include key content='ctrl|c' %} to [kill the
@@ -712,8 +712,8 @@ debug the `E7` program.
 Once the `OutOfMemoryError` is encountered our breakpoint will trigger.
 To acquire the heap dump:
 
-![Heap dump acquisition in jvisualvm](E7HeapDump.png
-"Heap dump acquisition in jvisualvm")
+![Heap dump acquisition in jvisualvm](/images/pages/E7HeapDump.png
+"Heap dump acquisition in jvisualvm")"
 
 1.  Open `jvisualvm`
 2.  From the list of local applications, right-click on

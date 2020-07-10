@@ -238,8 +238,8 @@ The warped moving image can be exported as an in-memory or
 ImagePlus is generally faster to generate but slower to browse, whereas
 an in-memory ImagePlus will be slower to generate but faster to browse.
 
-![BigwarpLandmarkCenteredExport.png](BigwarpLandmarkCenteredExport.png
-"BigwarpLandmarkCenteredExport.png")
+![BigwarpLandmarkCenteredExport.png](/images/pages/BigwarpLandmarkCenteredExport.png
+"BigwarpLandmarkCenteredExport.png")"
 
 ### Apply transforms
 

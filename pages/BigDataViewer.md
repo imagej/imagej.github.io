@@ -464,8 +464,8 @@ load and render low-resolution data, filling in high resolution detail
 later as it becomes available. This multi-resolution pyramid scheme is
 illustrated in the following figure.
 
-![bdvTikz-pyramidblocks.png](bdvTikz-pyramidblocks.png
-"bdvTikz-pyramidblocks.png")
+![bdvTikz-pyramidblocks.png](/images/pages/bdvTikz-pyramidblocks.png
+"bdvTikz-pyramidblocks.png")"
 
 Each raw image volume is stored in multiple resolutions, the original
 resolution (left) and successively smaller, downsampled versions
@@ -485,8 +485,8 @@ Rendering a virtual slice requires data contained within a small subset
 of chunks. Only chunks that touch the slice need to be loaded, as
 illustrated in the following Figure.
 
-![bdvTikz-sliceblocks.png](bdvTikz-sliceblocks.png
-"bdvTikz-sliceblocks.png")
+![bdvTikz-sliceblocks.png](/images/pages/bdvTikz-sliceblocks.png
+"bdvTikz-sliceblocks.png")"
 
 When rendering a slice (schematically illustrated by the blue line) the
 data of only a small subset of blocks is required. In the original
@@ -508,8 +508,8 @@ because their pose has changed only moderately, i.e.. cached data are
 re-used. Only chunks that are not currently in the cache need to be
 loaded from disk, as illustrated in the following Figure.
 
-![bdvTikz-cacheblocks.png](bdvTikz-cacheblocks.png
-"bdvTikz-cacheblocks.png")
+![bdvTikz-cacheblocks.png](/images/pages/bdvTikz-cacheblocks.png
+"bdvTikz-cacheblocks.png")"
 
 For rendering the slice indicated by the red line, only the red blocks
 need to be loaded. The blue blocks are already cached from rendering the
@@ -588,8 +588,8 @@ After you have specified the value range and selected and export path,
 press *OK* to export the dataset. Messages about the progress of the
 operation are displayed in the ImageJ Log window.
 
-![bdv-export-stack-log.png](bdv-export-stack-log.png
-"bdv-export-stack-log.png")
+![bdv-export-stack-log.png](/images/pages/bdv-export-stack-log.png
+"bdv-export-stack-log.png")"
 
 When the export is done you can browse the dataset in the BigDataViewer
 by opening the exported XML file.

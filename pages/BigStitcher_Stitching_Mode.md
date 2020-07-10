@@ -14,8 +14,8 @@ performed
 
 ### The main window
 
-![BigStitcher\_Overview\_1.png](BigStitcher_Overview_1.png
-"BigStitcher_Overview_1.png")
+![BigStitcher\_Overview\_1.png](/images/pages/BigStitcher_Overview_1.png
+"BigStitcher_Overview_1.png")"
 
   - At the top of the window **(1)**, you can switch between Stitching
     and MultiView mode.
@@ -51,16 +51,16 @@ virtually loading), a BigDataViewer window in which selected Views can
 be visualized will open along with the BigStitcher main window. For
 other datasets, you can open BigDataViewer manually via the menu.
 
-![BigStitcher\_Overview\_2.png](BigStitcher_Overview_2.png
-"BigStitcher_Overview_2.png")
+![BigStitcher\_Overview\_2.png](/images/pages/BigStitcher_Overview_2.png
+"BigStitcher_Overview_2.png")"
 
 ### The right-click menu
 
 Select the views you wish to process in the main window and right-click
 to open a menu with further options.
 
-![BigStitcher\_Overview\_3.png](BigStitcher_Overview_3.png
-"BigStitcher_Overview_3.png")
+![BigStitcher\_Overview\_3.png](/images/pages/BigStitcher_Overview_3.png
+"BigStitcher_Overview_3.png")"
 
   - **Displaying (1)** shows functions for displaying the data in
     BigDataViewer or in ImageJ ([details](BigStitcher_BDV "wikilink")).

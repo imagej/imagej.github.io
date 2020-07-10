@@ -11,8 +11,8 @@ description: test description
 ![Application of the topology-preserving warping error. Example A and B
 have almost the same amount of pixel error with respect to the ground
 truth, however, example B has no topological
-error.](Warping-error-comparison.png
-"Application of the topology-preserving warping error. Example A and B have almost the same amount of pixel error with respect to the ground truth, however, example B has no topological error.")
+error.](/images/pages/Warping-error-comparison.png
+"Application of the topology-preserving warping error. Example A and B have almost the same amount of pixel error with respect to the ground truth, however, example B has no topological error.")"
 The **warping error** is a
 [segmentation](:Category:Segmentation "wikilink") metric that tolerates
 disagreements over boundary location, penalizes topological
@@ -46,8 +46,8 @@ on the objects and measures the topological error between them.
 
 ![Pixel error between two different segmentations labels (A and B) with
 respect to the original labels (\*, ground
-truth).](Pixel-error-description.png
-"Pixel error between two different segmentations labels (A and B) with respect to the original labels (*, ground truth).")
+truth).](/images/pages/Pixel-error-description.png
+"Pixel error between two different segmentations labels (A and B) with respect to the original labels (*, ground truth).")"
 The simplest way of evaluating a segmentation is by measuring the pixel
 error between the original labels and the segmented ones. Let \(l_i\)
 denote the value of the boundary labeling *L* at image location *i*. The
@@ -174,8 +174,8 @@ relation.
 ### Descent algorithm for warping
 
 ![Example of the topology-preserving warping of one (binary) source
-image onto a target one.](Warping-error-animation.gif
-"Example of the topology-preserving warping of one (binary) source image onto a target one.")
+image onto a target one.](/images/pages/Warping-error-animation.gif
+"Example of the topology-preserving warping of one (binary) source image onto a target one.")"
 As described by the authors, there is not an efficient algorithm for
 finding the global minimum in Eq. (1), and indeed this is likely to be
 an [NP-hard](wikipedia:NP-hard "wikilink") problem. However, there is a

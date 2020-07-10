@@ -13,8 +13,8 @@ by selecting the views you wish to process and clicing {% include bc
 content='Preprocessing|Select Best Illuminations'%} in the **right-click
 menu**.
 
-![BigStitcher\_Illu\_1.png](BigStitcher_Illu_1.png
-"BigStitcher_Illu_1.png")
+![BigStitcher\_Illu\_1.png](/images/pages/BigStitcher_Illu_1.png
+"BigStitcher_Illu_1.png")"
 
   - Ticking **Process only selection** will limit the illumination
     selection to the views currently selected in the main window. Select
@@ -30,8 +30,8 @@ menu**.
 ![**Figure 1:** Performance of the illumination selection methods on the
 images of a 2 angle, dual-illumination, 2x3 grid dataset. All methods
 correctly identify the right/left side illumination for the right and
-left images of the grid.](BigStitcher_Illumselect_benchmark.png
-"Figure 1: Performance of the illumination selection methods on the images of a 2 angle, dual-illumination, 2x3 grid dataset. All methods correctly identify the right/left side illumination for the right and left images of the grid.")
+left images of the grid.](/images/pages/BigStitcher_Illumselect_benchmark.png
+"Figure 1: Performance of the illumination selection methods on the images of a 2 angle, dual-illumination, 2x3 grid dataset. All methods correctly identify the right/left side illumination for the right and left images of the grid.")"
 
   -   - **Pick brightest** will pick the illumination direction with the
         highest mean intensity (for multiresolution datasets, it will be
@@ -61,13 +61,13 @@ power in close cases (at the cost of longer compute times), see e.g.
     manually changed for each view by changing the Illumination
     attribute in the list.
 
-![BigStitcher\_Illu\_2.png](BigStitcher_Illu_2.png
-"BigStitcher_Illu_2.png")
+![BigStitcher\_Illu\_2.png](/images/pages/BigStitcher_Illu_2.png
+"BigStitcher_Illu_2.png")"
 
 After selecting the best illumination, only the chosen illumination will
 be used for the stitching and will appear in the BigDataViewer.
 
-![BigStitcher\_Illu\_3.png](BigStitcher_Illu_3.png
-"BigStitcher_Illu_3.png")
+![BigStitcher\_Illu\_3.png](/images/pages/BigStitcher_Illu_3.png
+"BigStitcher_Illu_3.png")"
 
 Go back to the [main page](BigStitcher#Documentation "wikilink")

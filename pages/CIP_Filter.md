@@ -41,8 +41,8 @@ Default is 1.
 the input image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.gauss( img1 , 5 )` ![CIP\_gauss.PNG](CIP_gauss.PNG
-"CIP_gauss.PNG")  
+    `img2 = cip.gauss( img1 , 5 )` ![CIP\_gauss.PNG](/images/pages/CIP_gauss.PNG
+"CIP_gauss.PNG")"  
 <span style="font-size:110%">**Implementation**</span>  
 CIP gauss implementation wraps the gauss ops, itself relying on the
 [imglib2 gauss3
@@ -75,8 +75,8 @@ Default is 1.
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.erode( img1 , 2 )` ![CIP\_erode.PNG](CIP_erode.PNG
-"CIP_erode.PNG")  
+    `img2 = cip.erode( img1 , 2 )` ![CIP\_erode.PNG](/images/pages/CIP_erode.PNG
+"CIP_erode.PNG")"  
 <span style="font-size:115%">**Implementation**</span>  
 CIP function wraps the [imglib2 Erosion
 class](https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Erosion.java)
@@ -109,8 +109,8 @@ Default is 1.
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.dilate( img1 , 2 )` ![CIP\_dilate.PNG](CIP_dilate.PNG
-"CIP_dilate.PNG")  
+    `img2 = cip.dilate( img1 , 2 )` ![CIP\_dilate.PNG](/images/pages/CIP_dilate.PNG
+"CIP_dilate.PNG")"  
 <span style="font-size:110%">**Implementation**</span>  
 CIP function wraps the [imglib2 Dilation
 class](https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Dilation.java)
@@ -141,8 +141,8 @@ Default is 1.
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.opening( img1 , 5 )` ![CIP\_opening.PNG](CIP_opening.PNG
-"CIP_opening.PNG")  
+    `img2 = cip.opening( img1 , 5 )` ![CIP\_opening.PNG](/images/pages/CIP_opening.PNG
+"CIP_opening.PNG")"  
 <span style="font-size:110%">**Implementation**</span>  
 CIP function wraps the [imglib2 Opening
 class](https://github.com/imglib/imglib2-algorithm/blob/master/src/main/java/net/imglib2/algorithm/morphology/Opening.java)
@@ -233,11 +233,11 @@ along image dimension. Default is 1.
 
 <span style="font-size:110%">**Example**</span>  
     `img2 = cip.distance( img1 , 500 )` or `img2 = cip.distance( img1 ,
-'threshold', 500 )` ![CIP\_distance1.PNG](CIP_distance1.PNG
-"CIP_distance1.PNG")  
+'threshold', 500 )` ![CIP\_distance1.PNG](/images/pages/CIP_distance1.PNG
+"CIP_distance1.PNG")"  
     `img2 = cip.distance( img1 )` will build the distance map for a
-binary image. ![CIP\_distance2.PNG](CIP_distance2.PNG
-"CIP_distance2.PNG")  
+binary image. ![CIP\_distance2.PNG](/images/pages/CIP_distance2.PNG
+"CIP_distance2.PNG")"  
 <span style="font-size:110%">**Implementation**</span>  
 The function relies on ops distance function implementation.
 
@@ -268,8 +268,8 @@ Default is 1.
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.median( img1 , 5 )` ![CIP\_median.PNG](CIP_median.PNG
-"CIP_median.PNG")  
+    `img2 = cip.median( img1 , 5 )` ![CIP\_median.PNG](/images/pages/CIP_median.PNG
+"CIP_median.PNG")"  
 <span style="font-size:110%">**Implementation**</span>  
 The function relies on ops that implement a brute force approach of the
 median filtering. It would be possible to implement more efficient
@@ -292,7 +292,7 @@ the minimum (resp maximum) intensity in the input image.
     **outputImage**: the processed image.
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.invert( img1 )` ![CIP\_invert.PNG](CIP_invert.PNG
-"CIP_invert.PNG")  
+    `img2 = cip.invert( img1 )` ![CIP\_invert.PNG](/images/pages/CIP_invert.PNG
+"CIP_invert.PNG")"  
 <span style="font-size:110%">**Implementation**</span>  
 The function implementation uses ops map function

@@ -61,8 +61,8 @@ Determing the Area/Volume of Mitochondria
 </h2>
 
 ![Figure 1: TMRM stained mitochondria before analysis (resized from
-original).](StuartLab--MiNA--DEMO-LARGE.png
-"Figure 1: TMRM stained mitochondria before analysis (resized from original).")
+original).](/images/pages/StuartLab--MiNA--DEMO-LARGE.png
+"Figure 1: TMRM stained mitochondria before analysis (resized from original).")"
 
 MiNA extracts morphological information from two simplifications of the
 image. For demonstration purposes, we will be using the micrograph crop
@@ -98,8 +98,8 @@ subset were tested).
 
 ![Figure 2: Binarized image of mitochondria following application of an
 automatically determined threshold (li) (resized from
-original).](StuartLab--MiNA--BINARY-LARGE.png
-"Figure 2: Binarized image of mitochondria following application of an automatically determined threshold (li) (resized from original).")
+original).](/images/pages/StuartLab--MiNA--BINARY-LARGE.png
+"Figure 2: Binarized image of mitochondria following application of an automatically determined threshold (li) (resized from original).")"
 
 Once the image has been binarized, the area or volume can be estimated
 by simply counting the number of signal positive pixels/voxels and
@@ -150,8 +150,8 @@ MiNA, there is no need to convert; it will be done automatically.
 
 ![Figure 3: A morphological skeleton generated from iterative thinning
 of the Figure 2 binary image (resized from
-original).](StuartLab--MiNA--SKELETON-LARGE.png
-"Figure 3: A morphological skeleton generated from iterative thinning of the Figure 2 binary image (resized from original).")
+original).](/images/pages/StuartLab--MiNA--SKELETON-LARGE.png
+"Figure 3: A morphological skeleton generated from iterative thinning of the Figure 2 binary image (resized from original).")"
 
 The information extracted from the morphological skeleton is the mean,
 median and standard deviation of the branch lengths for each independent
@@ -178,8 +178,8 @@ Input Parameters
 </h2>
 
 ![Figure 4: The MiNA user interface for supplying required and optional
-input parameters.](StuartLab--MiNA--INTERFACE.png
-"Figure 4: The MiNA user interface for supplying required and optional input parameters.")
+input parameters.](/images/pages/StuartLab--MiNA--INTERFACE.png
+"Figure 4: The MiNA user interface for supplying required and optional input parameters.")"
 
 A user interface prompts the user to supply a number of parameters
 summarized below. The interface is displayed in Figure 4.
@@ -203,8 +203,8 @@ Analysis Output
 </h2>
 
 ![Figure 5: Tabulated output and applied overlays from running
-MiNA.](StuartLab--MiNA--OUTPUT.png
-"Figure 5: Tabulated output and applied overlays from running MiNA.")
+MiNA.](/images/pages/StuartLab--MiNA--OUTPUT.png
+"Figure 5: Tabulated output and applied overlays from running MiNA.")"
 
 Running the tool will generate an image with an overlay of the binarized
 mitochondria and skeletal model or a 3D render of the wireframe and

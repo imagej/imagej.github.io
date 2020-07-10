@@ -11,8 +11,8 @@ description: test description
 {% include sidebox-right software='Fiji' name='Manual drift correction'
 author='[Benoit Lombardot](User:Benoit "wikilink")' maintainer='[Benoit
 Lombardot](User:Benoit "wikilink")' released='22 March 2016'
-filename='![Manual\_Drift\_Correction-1.0.0.jar.zip](Manual_Drift_Correction-1.0.0.jar.zip
-"Manual_Drift_Correction-1.0.0.jar.zip")'
+filename='![Manual\_Drift\_Correction-1.0.0.jar.zip](/images/pages/Manual_Drift_Correction-1.0.0.jar.zip
+"Manual_Drift_Correction-1.0.0.jar.zip")"'
 source='[github](https://github.com/mpicbg-scicomp/Manual_drift_correction)'
 category='[Plugins](:Category:Plugins "wikilink"),
 [Registration](:Category:Registration "wikilink")' %}
@@ -31,8 +31,8 @@ provide landmark when significant changes occure.
 ### Installation
 
 To get started with the plugin first download it
-(![Manual\_Drift\_Correction-1.0.0.jar.zip](Manual_Drift_Correction-1.0.0.jar.zip
-"Manual_Drift_Correction-1.0.0.jar.zip")), unzip it and install it (Fiji
+(![Manual\_Drift\_Correction-1.0.0.jar.zip](/images/pages/Manual_Drift_Correction-1.0.0.jar.zip
+"Manual_Drift_Correction-1.0.0.jar.zip")"), unzip it and install it (Fiji
 menu Plugins\>Install...). Alternatively you can manually copy the
 unzipped file in <Fiji folder>/plugins.Once the file is installed,
 restart Fiji. A new entry will be available in the menu

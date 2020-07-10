@@ -26,8 +26,8 @@ active' category='[Plugins](:Category:Plugins "wikilink"),
 ## Perfusion in MRI
 
 ![Example of the perfusion curve obtained in the peritumoral region on
-brain cancer.](Perfusion.png
-"Example of the perfusion curve obtained in the peritumoral region on brain cancer.")
+brain cancer.](/images/pages/Perfusion.png
+"Example of the perfusion curve obtained in the peritumoral region on brain cancer.")"
 
 Perfusion is defined as the passage of fluid through the lymphatic
 system or blood vessels to an organ or a tissue. The practice of

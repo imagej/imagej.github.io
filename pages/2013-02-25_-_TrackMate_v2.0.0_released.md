@@ -48,8 +48,8 @@ the text below, which lists only changes visible to users.
     Excel as a proper solution for scientific analysis and recommend
     more professional solutions.)
 
-![TrackMate\_AnalysisButton.png](TrackMate_AnalysisButton.png
-"TrackMate_AnalysisButton.png")
+![TrackMate\_AnalysisButton.png](/images/pages/TrackMate_AnalysisButton.png
+"TrackMate_AnalysisButton.png")"
 
   - All spot, edge and track features can be plotted as specialized
     graphs, thanks to a dedicated GUI panel.

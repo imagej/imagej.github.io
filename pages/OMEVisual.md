@@ -48,8 +48,8 @@ Please note that :
         contains additional OME features you would like to see added to
         the plugin.
 
-![caption OMEVisual Screenshot](OMEVisual_Screenshot.png
-"caption OMEVisual Screenshot")
+![caption OMEVisual Screenshot](/images/pages/OMEVisual_Screenshot.png
+"caption OMEVisual Screenshot")"
 
 ## Related links
 

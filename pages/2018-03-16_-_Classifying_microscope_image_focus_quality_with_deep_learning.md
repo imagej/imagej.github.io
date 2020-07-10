@@ -15,8 +15,8 @@ assessing the focus quality of microscope images using a pretrained
 
 ![ thumb | 400px | The Microscope Focus Quality plugin classifies image
 tiles into 11 classes (hue) with varying confidence
-(brightness).](Mifqc.png
-" thumb | 400px | The Microscope Focus Quality plugin classifies image tiles into 11 classes (hue) with varying confidence (brightness).")
+(brightness).](/images/pages/Mifqc.png
+" thumb | 400px | The Microscope Focus Quality plugin classifies image tiles into 11 classes (hue) with varying confidence (brightness).")"
 
 For details, see the Google Research Blog post [Using Deep Learning to
 Facilitate Scientific Image

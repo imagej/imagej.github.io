@@ -54,8 +54,8 @@ appropriate mean filter size and tolerance value.
 This is the recommended method and it is also usable with RGB image
 series. The found maxima are used as centroids to track the particles.
 
-![Spots.png](/images/pages/Spots.png "Spots.png")" ![SpotsMax.png](SpotsMax.png
-"SpotsMax.png")
+![Spots.png](/images/pages/Spots.png "Spots.png")" ![SpotsMax.png](/images/pages/SpotsMax.png
+"SpotsMax.png")"
 
 The *maxima method & gaussian fit* also utilizes the ["Process -\> Find
 Maxima"](http://rsbweb.nih.gov/ij/docs/menus/process.html#find-maxima)

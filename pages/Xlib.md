@@ -303,8 +303,8 @@ pages = 679-698 | year = 1986
 
 ![Image acquired by BSE and EDX maps at the same local position showing
 the amounts of Ca, C (1st row), Al, Cl, Fe, K (2nd row), Mg, Mn, Na, O
-(3rd row), P, Si, S, Ti (4th row).](xFig6_3_1.jpg
-"Image acquired by BSE and EDX maps at the same local position showing the amounts of Ca, C (1st row), Al, Cl, Fe, K (2nd row), Mg, Mn, Na, O (3rd row), P, Si, S, Ti (4th row).")
+(3rd row), P, Si, S, Ti (4th row).](/images/pages/xFig6_3_1.jpg
+"Image acquired by BSE and EDX maps at the same local position showing the amounts of Ca, C (1st row), Al, Cl, Fe, K (2nd row), Mg, Mn, Na, O (3rd row), P, Si, S, Ti (4th row).")"
 Cluster analysis is a technique of statistical data analysis for
 grouping sets of objects. It is used in machine learning, data mining,
 pattern recognition, information retrieval, bio-informatics and can also
@@ -364,13 +364,13 @@ using the current estimate for the parameters, and a maximization (M)
 step, which computes parameters maximizing the expected log-likelihood
 found on the E step.
 
-The plugin also allows clustering by using ![here|30px](xFig6_3_3.jpg
-"here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) (Environment for
+The plugin also allows clustering by using ![here|30px](/images/pages/xFig6_3_3.jpg
+"here|30px")" [ELKI](http://elki.dbs.ifi.lmu.de) (Environment for
 Developing KDD-Applications Supported by Index-Structures, developed by
 the ![here|30px](/images/pages/xFig6_3_3.jpg "here|30px")"
 [ELKI](http://elki.dbs.ifi.lmu.de) team
-http://elki.dbs.ifi.lmu.de/wiki/Team). ![here|30px](xFig6_3_3.jpg
-"here|30px") [ELKI](http://elki.dbs.ifi.lmu.de) is an open source data
+http://elki.dbs.ifi.lmu.de/wiki/Team). ![here|30px](/images/pages/xFig6_3_3.jpg
+"here|30px")" [ELKI](http://elki.dbs.ifi.lmu.de) is an open source data
 mining software written in Java. In addition to multiple features,
 ![here|30px](/images/pages/xFig6_3_3.jpg "here|30px")"
 [ELKI](http://elki.dbs.ifi.lmu.de) offers various ways for clustering. A
@@ -548,8 +548,8 @@ and Signal Processing, Kluwer | pages = 331-340 | year = 2000
 
 ![FIB-nt image (427x768 pixels) from cement paste (left) and the
 magnitudes (center) and angles (right) of its Fourier
-transform.](xFig6_6.jpg
-"FIB-nt image (427x768 pixels) from cement paste (left) and the magnitudes (center) and angles (right) of its Fourier transform.")
+transform.](/images/pages/xFig6_6.jpg
+"FIB-nt image (427x768 pixels) from cement paste (left) and the magnitudes (center) and angles (right) of its Fourier transform.")"
 
 ### FFT 2D 3D
 
@@ -1152,8 +1152,8 @@ Wavelet-Fourier Filtering | journal = Optical Express | volume = 17(10)
 
 ![Flowers image (top left), its transform into polar coordinates (top
 right), its scaling followed by a rotation (bottom left), its rotation
-followed by a scaling (bottom right).](xFig6_13.jpg
-"Flowers image (top left), its transform into polar coordinates (top right), its scaling followed by a rotation (bottom left), its rotation followed by a scaling (bottom right).")
+followed by a scaling (bottom right).](/images/pages/xFig6_13.jpg
+"Flowers image (top left), its transform into polar coordinates (top right), its scaling followed by a rotation (bottom left), its rotation followed by a scaling (bottom right).")"
 
 ### Transform 2D 3D
 
@@ -1188,8 +1188,8 @@ pixel size is feasible.
 ![Well known Lenna image (left), its wavelet decomposition at
 decomposition level 2 by using the Haar wavelet when providing a nice
 view (top center) and a reconstructible format (bottom center), and
-finally, its reconstruction (right).](xFig6_15_lenna.jpg
-"Well known Lenna image (left), its wavelet decomposition at decomposition level 2 by using the Haar wavelet when providing a nice view (top center) and a reconstructible format (bottom center), and finally, its reconstruction (right).")
+finally, its reconstruction (right).](/images/pages/xFig6_15_lenna.jpg
+"Well known Lenna image (left), its wavelet decomposition at decomposition level 2 by using the Haar wavelet when providing a nice view (top center) and a reconstructible format (bottom center), and finally, its reconstruction (right).")"
 
 ### Wavelets 2D
 

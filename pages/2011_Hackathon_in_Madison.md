@@ -135,8 +135,8 @@ PlotData=
 Some locals were not present at the hackathon on weekends.
 
 ![ link=<File:2011-madison-hackathon.jpg> | frame | Thanks to all
-participants\!](2011-madison-hackathon-small.jpg
-" link=File:2011-madison-hackathon.jpg | frame | Thanks to all participants!")
+participants\!](/images/pages/2011-madison-hackathon-small.jpg
+" link=File:2011-madison-hackathon.jpg | frame | Thanks to all participants!")"
 
 ## Locations
 

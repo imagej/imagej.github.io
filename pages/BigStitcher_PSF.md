@@ -25,8 +25,8 @@ Functions for assigning PSFs to images and managing PSFs can be found in
 **MultiView mode** in the right-click menu under {% include bc
 content='Processing|Point Spread Functions'%}.
 
-![BigStitcher\_psf\_menu.png](BigStitcher_psf_menu.png
-"BigStitcher_psf_menu.png")
+![BigStitcher\_psf\_menu.png](/images/pages/BigStitcher_psf_menu.png
+"BigStitcher_psf_menu.png")"
 
 ## PSF management
 
@@ -37,8 +37,8 @@ interest points](BigStitcher_Interest_points "wikilink") and creating
 PSFs from them. Clicking this menu entry will bring up the PSF
 extraction dialog:
 
-![BigStitcher\_psf\_extraction.png](BigStitcher_psf_extraction.png
-"BigStitcher_psf_extraction.png")
+![BigStitcher\_psf\_extraction.png](/images/pages/BigStitcher_psf_extraction.png
+"BigStitcher_psf_extraction.png")"
 
 Here, you have a few options:
 
@@ -79,8 +79,8 @@ It also contains an **Advanced...** option allowing for more flexible
 re-assignment and loading of external PSFs from files. Clicking this
 will bring up the following dialog:
 
-![BigStitcher\_psf\_assignment\_advanced.png](BigStitcher_psf_assignment_advanced.png
-"BigStitcher_psf_assignment_advanced.png")
+![BigStitcher\_psf\_assignment\_advanced.png](/images/pages/BigStitcher_psf_assignment_advanced.png
+"BigStitcher_psf_assignment_advanced.png")"
 
 The options here are:
 

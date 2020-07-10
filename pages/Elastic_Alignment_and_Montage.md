@@ -38,13 +38,13 @@ available [here](http://fly.mpi-cbg.de/elastic).
 ![Example 2: Example for elastic alignment and montaging. 7 serial TEM
 sections of the neuropil of a *Drosophila melanogaster* first instar
 larva, detail at 100% pixel resolution. Image courtesy of {% include
-person content=':Albertcardona' %}.](Aligned-series-crop-512.gif
-"Example 2: Example for elastic alignment and montaging. 7 serial TEM sections of the neuropil of a Drosophila melanogaster first instar larva, detail at 100% pixel resolution. Image courtesy of {% include person content=':Albertcardona' %}.")![Example
+person content=':Albertcardona' %}.](/images/pages/Aligned-series-crop-512.gif
+"Example 2: Example for elastic alignment and montaging. 7 serial TEM sections of the neuropil of a Drosophila melanogaster first instar larva, detail at 100% pixel resolution. Image courtesy of {% include person content=':Albertcardona' %}.")"![Example
 1: Example for elastic alignment and montaging. 7 serial TEM sections of
 the neuropil of a *Drosophila melanogaster* first instar larva,
 downscaled by a factor of 12. Image courtesy of {% include person
-content=':Albertcardona' %}.](Aligned-series-512.gif
-"Example 1: Example for elastic alignment and montaging. 7 serial TEM sections of the neuropil of a Drosophila melanogaster first instar larva, downscaled by a factor of 12. Image courtesy of {% include person content=':Albertcardona' %}.")
+content=':Albertcardona' %}.](/images/pages/Aligned-series-512.gif
+"Example 1: Example for elastic alignment and montaging. 7 serial TEM sections of the neuropil of a Drosophila melanogaster first instar larva, downscaled by a factor of 12. Image courtesy of {% include person content=':Albertcardona' %}.")"
 We describe here our elastic alignment method for series or groups of
 overlapping 2d-images. The method is accessible through the plugins
 **Elastic Stack Alignment** and **Elastic Montage** and incorporated in
@@ -69,8 +69,8 @@ artificial warps.
 ## Elastic Deformation with Spring Meshes
 
 ![Fig. 1: Triangular section mesh with a resolution of 5 vertices per
-each long row.](Mesh.png
-"Fig. 1: Triangular section mesh with a resolution of 5 vertices per each long row.")
+each long row.](/images/pages/Mesh.png
+"Fig. 1: Triangular section mesh with a resolution of 5 vertices per each long row.")"
 We achieve this globally minimized deformation by simulating the
 alignment as an elastic system of spring connected vertices. Zero-length
 springs connect corresponding locations between two overlapping images
@@ -193,8 +193,8 @@ scale of the image.
 ![Fig. 3: Edge response filter. The ratio of the two principal
 curvatures (Hessian eigenvalues) of at a detection determines how well
 it is defined in both dimensions. A large ratio signalizes an edge
-response.](Edge-filter.png
-"Fig. 3: Edge response filter. The ratio of the two principal curvatures (Hessian eigenvalues) of at a detection determines how well it is defined in both dimensions. A large ratio signalizes an edge response.")
+response.](/images/pages/Edge-filter.png
+"Fig. 3: Edge response filter. The ratio of the two principal curvatures (Hessian eigenvalues) of at a detection determines how well it is defined in both dimensions. A large ratio signalizes an edge response.")"
 
   - Input  
     Both plugins work with stacks of images. The stacks might be

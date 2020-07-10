@@ -49,8 +49,8 @@ Example: If you want to extract/analyze only particles with a certain
 Feret's Angle or exclude elongated structures using the aspect ratio
 (AR) or circilarity you can specify so in the initial dialog box.
 
-![ExtendedParticleAnalyzer\_v2.png](ExtendedParticleAnalyzer_v2.png
-"ExtendedParticleAnalyzer_v2.png")
+![ExtendedParticleAnalyzer\_v2.png](/images/pages/ExtendedParticleAnalyzer_v2.png
+"ExtendedParticleAnalyzer_v2.png")"
 
 How to: Key in minimal and maximal exclusion values connected with a
 hyphen. You can use integers as well as numbers containing decimal
@@ -156,8 +156,8 @@ their coding color.
 
 How to: Select analysis modes and start.
 
-![ShapeDescriptorMaps.png](ShapeDescriptorMaps.png
-"ShapeDescriptorMaps.png")
+![ShapeDescriptorMaps.png](/images/pages/ShapeDescriptorMaps.png
+"ShapeDescriptorMaps.png")"
 
 Form: macro
 
@@ -252,8 +252,8 @@ into trouble while separating irregular (non-ellipsoid like) structures.
 The Irregular Watershed enables the user to separate also irregular
 shaped structures to a certain extend.
 
-![Watershed\_Irregular\_Features.png](Watershed_Irregular_Features.png
-"Watershed_Irregular_Features.png")
+![Watershed\_Irregular\_Features.png](/images/pages/Watershed_Irregular_Features.png
+"Watershed_Irregular_Features.png")"
 
 How to: The user needs to specify one of two parameters:
 
@@ -304,8 +304,8 @@ methods for erosion and dilation prevent these artifacts. The method is
 using thresholding on a 8-bit euclidean distance map of the original
 image to facilitate binary erosion, dilation, opening and closing.
 
-![EDMErosionDilation.png](EDMErosionDilation.png
-"EDMErosionDilation.png")
+![EDMErosionDilation.png](/images/pages/EDMErosionDilation.png
+"EDMErosionDilation.png")"
 
 How to: The number of iterations determines how often the chosen
 function will be applied to the image.
@@ -514,8 +514,8 @@ receives a grayscale dilation by application of a maximum filter with
 the factor (1.5\*(radius/10)). This should reduce artifacts around
 object borders.
 
-![Convoluted\_Background\_Subtraction.png](Convoluted_Background_Subtraction.png
-"Convoluted_Background_Subtraction.png")
+![Convoluted\_Background\_Subtraction.png](/images/pages/Convoluted_Background_Subtraction.png
+"Convoluted_Background_Subtraction.png")"
 
 Distribution: plugin, recordable
 
@@ -542,8 +542,8 @@ a new plot line is added to an existing plot the choice "Draw grid
 lines" is either ignored or forced depending on how the destination plot
 was created using the same tool.
 
-![ScaledIntensityPlots.png](ScaledIntensityPlots.png
-"ScaledIntensityPlots.png")
+![ScaledIntensityPlots.png](/images/pages/ScaledIntensityPlots.png
+"ScaledIntensityPlots.png")"
 
 Form: macro
 
@@ -632,8 +632,8 @@ The maximum iteration can be set by the user up to 500 times but will be
 stopped if two consecutive filtered images do not show any further
 difference.
 
-![RecursiveFilters01.png](RecursiveFilters01.png
-"RecursiveFilters01.png")
+![RecursiveFilters01.png](/images/pages/RecursiveFilters01.png
+"RecursiveFilters01.png")"
 
 Form: recordable plugin
 
@@ -755,8 +755,8 @@ since it does not take non-isotropic shape into account and WORKS ONLY
 on complete, rectangular images and NOT inside irregular ROIs. This
 might be changed in future.
 
-![DistributionAnalysis.png](DistributionAnalysis.png
-"DistributionAnalysis.png")
+![DistributionAnalysis.png](/images/pages/DistributionAnalysis.png
+"DistributionAnalysis.png")"
 
 Form: macro
 
@@ -885,8 +885,8 @@ separation distance is taken by analysis of the intensity coded Voronoi
 cell algorithm of ImageJ. The lowest non-background intensity is used to
 indicate the nearest neighbor.
 
-![NearestNeighborIndicator.png](NearestNeighborIndicator.png
-"NearestNeighborIndicator.png")
+![NearestNeighborIndicator.png](/images/pages/NearestNeighborIndicator.png
+"NearestNeighborIndicator.png")"
 
 Form: macro
 

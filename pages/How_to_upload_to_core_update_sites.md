@@ -87,8 +87,8 @@ the following information:
 Note that your username will always start with an upper case letter. It
 should look like this:
 
-![Update\_site\_fiji\_creds.png](Update_site_fiji_creds.png
-"Update_site_fiji_creds.png")
+![Update\_site\_fiji\_creds.png](/images/pages/Update_site_fiji_creds.png
+"Update_site_fiji_creds.png")"
 
 You can now close the *Manage update sites* window and go on to [
 Uploading your resources](#Uploading_your_resources "wikilink").
@@ -108,8 +108,8 @@ the following information:
 
 It should look like this:
 
-![Update\_site\_ij2\_creds.png](Update_site_ij2_creds.png
-"Update_site_ij2_creds.png")
+![Update\_site\_ij2\_creds.png](/images/pages/Update_site_ij2_creds.png
+"Update_site_ij2_creds.png")"
 
 You can now close the *Manage update sites* window and go on to [
 Uploading your resources](#Uploading_your_resources "wikilink").

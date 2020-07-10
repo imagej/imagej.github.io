@@ -27,8 +27,8 @@ left shows 100 micrometers. The same magnification was used to take the
 image on the right, a stopped spinning disk confocal scan head. We want
 to measure the distance between the spots and the area of the spots.
 
-![ 300px | Image of a stage micrometer](60Xnooptovar.gif
-" 300px | Image of a stage micrometer") [300px | Image of a stopped
+![ 300px | Image of a stage micrometer](/images/pages/60Xnooptovar.gif
+" 300px | Image of a stage micrometer")" [300px | Image of a stopped
 spinning disk confocal scanner
 head](Image:Disc60xwithoutoptovar.gif "wikilink")
 

@@ -11,8 +11,8 @@ description: test description
 {% include menu-formats %} {% capture source %} {% include github
 org="openmicroscopy" repo="bioformats" %} {% endcapture %} {% include
 sidebox-right software='ImageJ' name='OME Bio-Formats plugins'
-logo='![Bio-formats-icon.png](Bio-formats-icon.png
-"Bio-formats-icon.png")' author='[Open Microscopy
+logo='![Bio-formats-icon.png](/images/pages/Bio-formats-icon.png
+"Bio-formats-icon.png")"' author='[Open Microscopy
 Environment](https://www.openmicroscopy.org/):  
 \- [UW-Madison LOCI](LOCI "wikilink")  
 \- [Glencoe Software](https://www.glencoesoftware.com/)  

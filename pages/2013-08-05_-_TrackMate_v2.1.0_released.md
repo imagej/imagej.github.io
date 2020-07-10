@@ -27,21 +27,21 @@ bug reports during the release candidate process.
   - You can now preview the detection parameters on the current frame
     before applying it to the whole data:
 
-![TrackMate\_v2.1.0\_PreviewDetection.png](TrackMate_v2.1.0_PreviewDetection.png
-"TrackMate_v2.1.0_PreviewDetection.png")
+![TrackMate\_v2.1.0\_PreviewDetection.png](/images/pages/TrackMate_v2.1.0_PreviewDetection.png
+"TrackMate_v2.1.0_PreviewDetection.png")"
 
   - The detection step is now interruptible in the GUI. A click on the
     cancel button will gracefully interrupt the detection process, and
     yields the spots found so far. They can be used later on normally.
 
-![TrackMate\_v2.1.0\_InterruptDetection.png](TrackMate_v2.1.0_InterruptDetection.png
-"TrackMate_v2.1.0_InterruptDetection.png")
+![TrackMate\_v2.1.0\_InterruptDetection.png](/images/pages/TrackMate_v2.1.0_InterruptDetection.png
+"TrackMate_v2.1.0_InterruptDetection.png")"
 
   - The HyperStack viewer and editor has now a configuration panel that
     has a log window and some tools for manual annotation:
 
-![TrackMate\_v2.1.0\_TrackMateTools.png](TrackMate_v2.1.0_TrackMateTools.png
-"TrackMate_v2.1.0_TrackMateTools.png")
+![TrackMate\_v2.1.0\_TrackMateTools.png](/images/pages/TrackMate_v2.1.0_TrackMateTools.png
+"TrackMate_v2.1.0_TrackMateTools.png")"
 
   - Semi-automatic tracking: Select one (or more) spot, TrackMate will
     find its most likely successors:

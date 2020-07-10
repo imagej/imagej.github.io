@@ -27,8 +27,8 @@ category='[Registration](:Category:Registration "wikilink"),
 [Transform](:Category:Transform "wikilink")' %}{|
 |style="vertical-align:top" | ![Transform Virtual Stack scheme - All
 images are transformed based on the XML
-files](Transform_Virtual_Stack_scheme.png
-"Transform Virtual Stack scheme - All images are transformed based on the XML files")
+files](/images/pages/Transform_Virtual_Stack_scheme.png
+"Transform Virtual Stack scheme - All images are transformed based on the XML files")"
 |}
 
 This plugin takes a sequence of image slices stored in a folder, and
@@ -60,8 +60,8 @@ in the main dialog).
 
 **Step 1**: launch the "Plugins - Transform - Transform Virtual Stack
 Slices" plugin. ![Transform Virtual Stack main
-dialog](Main-Dialog-Transform_Virtual_Stack.png
-"Transform Virtual Stack main dialog") **Step 2**: choose the source,
+dialog](/images/pages/Main-Dialog-Transform_Virtual_Stack.png
+"Transform Virtual Stack main dialog")" **Step 2**: choose the source,
 output and transform folders:
 
   - Select a source folder containing the slices, at one slice per image

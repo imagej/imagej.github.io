@@ -24,8 +24,8 @@ Example:
 With 30 angles at line length 17 with the criterion *Variance*, the
 filtered image looks like this:
 
-![Noisy-lines-kuwahara.png](Noisy-lines-kuwahara.png
-"Noisy-lines-kuwahara.png")
+![Noisy-lines-kuwahara.png](/images/pages/Noisy-lines-kuwahara.png
+"Noisy-lines-kuwahara.png")"
 
 [Category:Tutorials](Category:Tutorials "wikilink")
 [Category:Plugins](Category:Plugins "wikilink")

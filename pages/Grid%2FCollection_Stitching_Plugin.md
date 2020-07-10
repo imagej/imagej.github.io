@@ -106,8 +106,8 @@ does NOT show up as one large square with a patchwork of squares, your
 data set has varying z-values. To alleviate the slower speeds, select
 "ignore Z position" within the second GUI.
 
-![Out of memory error message.](out_of_memory.png
-"Out of memory error message.")
+![Out of memory error message.](/images/pages/out_of_memory.png
+"Out of memory error message.")"
 
 ## Memory
 
@@ -121,8 +121,8 @@ force closed, or will display the message "<Out of Memory>." To fix this
 issue, select "Downsampling" in the Stitching GUI to allow for the image
 to be stitched in pieces. Please see the
 [Downsampling](Downsample "wikilink") page for more information.
-![Example of a dataset with z-variance.](Z_variance.png
-"Example of a dataset with z-variance.")
+![Example of a dataset with z-variance.](/images/pages/Z_variance.png
+"Example of a dataset with z-variance.")"
 
 # Other Pitfalls
 

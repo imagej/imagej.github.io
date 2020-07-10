@@ -109,8 +109,8 @@ results. This recurring process allows to create one function per task
 and to organize these functions in categories with similar roles, input
 and output: Format, Filter, Segment, Math, Assess.
 
-![CIP\_generic\_pipeline.PNG](CIP_generic_pipeline.PNG
-"CIP_generic_pipeline.PNG")
+![CIP\_generic\_pipeline.PNG](/images/pages/CIP_generic_pipeline.PNG
+"CIP_generic_pipeline.PNG")"
 
 <div align="center">
 

@@ -91,8 +91,8 @@ option *Group files with similar names*).
 ## How to use the plugin
 
 ![Shows the first dialog that queries the location of the multi-view
-files](Spim_multiview_dialog1.jpg
-"Shows the first dialog that queries the location of the multi-view files")
+files](/images/pages/Spim_multiview_dialog1.jpg
+"Shows the first dialog that queries the location of the multi-view files")"
 
 The multi-view fusion consists of two consecutive dialogs. The first
 dialog queries the information necessary to analyze the dataset. Please
@@ -147,8 +147,8 @@ timeseries registration with various reference timepoints. If no
 registration files could be found, the plugin will quit.
 
 ![Shows the second dialog that queries the details of the multi-view
-fusion](Spim_multiview_dialog2.jpg
-"Shows the second dialog that queries the details of the multi-view fusion")
+fusion](/images/pages/Spim_multiview_dialog2.jpg
+"Shows the second dialog that queries the details of the multi-view fusion")"
 
 In the second dialog, you have to define the details of the multi-view
 fusion. It offers the following options:

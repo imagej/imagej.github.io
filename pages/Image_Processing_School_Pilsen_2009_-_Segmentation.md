@@ -42,8 +42,8 @@ center. We will have a look now on how to get rid of such small blobs.
 The following image shows a possible segmentation and the small annoying
 blob and some others we do not want to have:
 
-![thresholdSegmentation.jpg](thresholdSegmentation.jpg
-"thresholdSegmentation.jpg")
+![thresholdSegmentation.jpg](/images/pages/thresholdSegmentation.jpg
+"thresholdSegmentation.jpg")"
 
 We now want to filter these small blobs using morphology operations. You
 can find these under Process - Binary Besides the basic four operations
@@ -105,8 +105,8 @@ under Plugins - Segmentation (gives an error) Seems we have to specify a
 region first. This is because the level sets need an initial contour
 that is then refinded. So draw something crude in the circle
 
-![levelSetCircleSelection.jpg](levelSetCircleSelection.jpg
-"levelSetCircleSelection.jpg")
+![levelSetCircleSelection.jpg](/images/pages/levelSetCircleSelection.jpg
+"levelSetCircleSelection.jpg")"
 
 Now we can open the plugin (Plugins - Segmentation - Level Sets)
 
@@ -134,8 +134,8 @@ So far not very impressive. Let's make this a bit more complicated.
   - Cut a part out of the black circle by drawing a white ellipse onto
     it:
 
-![LevelSets\_CirclePackman.jpg](LevelSets_CirclePackman.jpg
-"LevelSets_CirclePackman.jpg")
+![LevelSets\_CirclePackman.jpg](/images/pages/LevelSets_CirclePackman.jpg
+"LevelSets_CirclePackman.jpg")"
 
 Now again try to segment this shape with level sets:
 
@@ -143,8 +143,8 @@ Now again try to segment this shape with level sets:
   - And from the outside
   - What do you have to do to get a segmentation that fills the gap?
 
-![LevelSets\_Packman\_closed.jpg](LevelSets_Packman_closed.jpg
-"LevelSets_Packman_closed.jpg")
+![LevelSets\_Packman\_closed.jpg](/images/pages/LevelSets_Packman_closed.jpg
+"LevelSets_Packman_closed.jpg")"
 
 Now take the same image and add some noise (Process - Noise - Add noise)
 
@@ -182,8 +182,8 @@ Also for this plugin there already exists very good
 
 As you can see, the newer version has two additional buttons:
 
-![segmentationEditor\_update.jpg](segmentationEditor_update.jpg
-"segmentationEditor_update.jpg")
+![segmentationEditor\_update.jpg](/images/pages/segmentationEditor_update.jpg
+"segmentationEditor_update.jpg")"
 
 They are labeled O and C like open and close. Sounds familiar :-)
 

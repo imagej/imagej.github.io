@@ -20,8 +20,8 @@ Caenorhabditis elegans, PLoS One, 2016
 ## Installation
 
 The plugin can be downloaded from:
-![Celegans\_beads\_analysis-1.0.0.jar.zip](Celegans_beads_analysis-1.0.0.jar.zip
-"Celegans_beads_analysis-1.0.0.jar.zip"). Its usage is described in the
+![Celegans\_beads\_analysis-1.0.0.jar.zip](/images/pages/Celegans_beads_analysis-1.0.0.jar.zip
+"Celegans_beads_analysis-1.0.0.jar.zip")". Its usage is described in the
 next section and its source code can be accessed on [MPI-CBG git
 repository](https://git.mpi-cbg.de/bioimage-informatics/cElegansBeadsAnalysis)
 

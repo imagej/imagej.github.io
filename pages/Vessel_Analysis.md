@@ -80,12 +80,12 @@ You will now be prompted to perform either vascular density or diameter
 measurements. At the end of each individual program, you can choose to
 analyze the other metric as well.
 
-![Vessel\_Analysis\_RGB.png](Vessel_Analysis_RGB.png
-"Vessel_Analysis_RGB.png")
-![Vessel\_Analysis\_Binary.png](Vessel_Analysis_Binary.png
-"Vessel_Analysis_Binary.png")
-![Vessel\_Analysis\_DiameterM.png](Vessel_Analysis_DiameterM.png
-"Vessel_Analysis_DiameterM.png")
+![Vessel\_Analysis\_RGB.png](/images/pages/Vessel_Analysis_RGB.png
+"Vessel_Analysis_RGB.png")"
+![Vessel\_Analysis\_Binary.png](/images/pages/Vessel_Analysis_Binary.png
+"Vessel_Analysis_Binary.png")"
+![Vessel\_Analysis\_DiameterM.png](/images/pages/Vessel_Analysis_DiameterM.png
+"Vessel_Analysis_DiameterM.png")"
 
 ## **Recommended Citation:**
 

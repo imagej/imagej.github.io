@@ -773,8 +773,8 @@ exact same logic.
 Here is what our dummy example looks. To maximize your user experience,
 I let it run on a 512 x 512 x 200 frames image, and tracked them.
 
-![TrackMateCustomDetector\_01.gif](TrackMateCustomDetector_01.gif
-"TrackMateCustomDetector_01.gif")
+![TrackMateCustomDetector\_01.gif](/images/pages/TrackMateCustomDetector_01.gif
+"TrackMateCustomDetector_01.gif")"
 
 {% include person content='JeanYvesTinevez' %}
 ([talk](User_talk:JeanYvesTinevez "wikilink")) 08:28, 3 April 2014 (CDT)

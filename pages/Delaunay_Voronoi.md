@@ -40,8 +40,8 @@ visualize those coordinates that have equal distance to the closest two
 A picture says more than thousand words:
 
 ![The points are little yellow squares, the Delaunay Triangulation is
-drawn red, and the Voronoi Diagram is black](Delaunay-voronoi.png
-"The points are little yellow squares, the Delaunay Triangulation is drawn red, and the Voronoi Diagram is black")
+drawn red, and the Voronoi Diagram is black](/images/pages/Delaunay-voronoi.png
+"The points are little yellow squares, the Delaunay Triangulation is drawn red, and the Voronoi Diagram is black")"
 
 ## Usage
 

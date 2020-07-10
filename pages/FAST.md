@@ -37,8 +37,8 @@ content='Plugins | FAST '%}' menu.
 ## Image Processing
 
 ![Description of the Image processing pipeline of FAST
-macro.](FAST_Processing.png
-"Description of the Image processing pipeline of FAST macro.")
+macro.](/images/pages/FAST_Processing.png
+"Description of the Image processing pipeline of FAST macro.")"
 
 ### Step 1: Auto processing of images within the selected work directory
 
@@ -90,8 +90,8 @@ file-type)""""".' %}
 
 ## Validation of selected Regions Of Interest
 
-![User validation of defined ROI](FAST_ROI-check.png
-"User validation of defined ROI") After completion of Step 1 of image
+![User validation of defined ROI](/images/pages/FAST_ROI-check.png
+"User validation of defined ROI")" After completion of Step 1 of image
 processing, images and their corresponding ROIs need to be validated by
 the user.
 
@@ -109,14 +109,14 @@ Just select the radio button option needed then click {% include key
 content='press|OK' %} or {% include key content='press|⏎ENTER' %} to
 continue.
 
-![Dialog box to redefine area](FAST_ROI-edition.png
-"Dialog box to redefine area") If you selected to *redefine area
+![Dialog box to redefine area](/images/pages/FAST_ROI-edition.png
+"Dialog box to redefine area")" If you selected to *redefine area
 manually*, a new dialog box is displayed to get access to the ImageJ
 toolbar and modify the selection. The user-defined threshold is then
 automatically applied.
 
-![Example of thresholded image and corrected ROI](FAST_Thr-ROI.png
-"Example of thresholded image and corrected ROI")
+![Example of thresholded image and corrected ROI](/images/pages/FAST_Thr-ROI.png
+"Example of thresholded image and corrected ROI")"
 
 Select the appropriate tool in ImageJ toolbar:
 ![Freehand.png](/images/pages/Freehand.png "Freehand.png")" Freehand (default) OR

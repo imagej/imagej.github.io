@@ -42,8 +42,8 @@ further details.
 
 ## GenericDialog
 
-![Multi-column-dialog.png](Multi-column-dialog.png
-"Multi-column-dialog.png") The
+![Multi-column-dialog.png](/images/pages/Multi-column-dialog.png
+"Multi-column-dialog.png")" The
 [GenericDialog](generic_dialog "wikilink") class—part of
 [ImageJ1](ImageJ1 "wikilink")—offers more flexibility than the [script
 parameters](script_parameters "wikilink"), including custom layout and

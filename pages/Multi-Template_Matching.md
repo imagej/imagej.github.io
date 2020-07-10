@@ -22,8 +22,8 @@ source=source released='2019' status='active'
 category='[Analysis](:Category:Analysis "wikilink") [Feature
 Extraction](:Category:Feature_Extraction "wikilink")' %}
 
-![Multi-Template-Matching-MontageGUI.png](Multi-Template-Matching-MontageGUI.png
-"Multi-Template-Matching-MontageGUI.png")
+![Multi-Template-Matching-MontageGUI.png](/images/pages/Multi-Template-Matching-MontageGUI.png
+"Multi-Template-Matching-MontageGUI.png")"
 
 # Installation
 

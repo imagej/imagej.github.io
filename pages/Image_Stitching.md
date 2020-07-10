@@ -85,8 +85,8 @@ Dialogs, they are completely macro-scriptable.
 
 ## Pairwise Stitching
 
-![Shows the selection of input images.](PairwiseStitching1.png
-"Shows the selection of input images.") The Pairwise Stitching first
+![Shows the selection of input images.](/images/pages/PairwiseStitching1.png
+"Shows the selection of input images.")" The Pairwise Stitching first
 queries for two input images that you intend to stitch. They can contain
 rectangular ROIs which limit the search to those areas, however, the
 full images will be stitched together. Once you selected the input
@@ -113,8 +113,8 @@ images.
   - **Do not fuse images**: no output images will be computed, just the
     overlap is computed.
 
-![Shows the Pairwise Stitching dialog.](PairwiseStitching2.png
-"Shows the Pairwise Stitching dialog.")
+![Shows the Pairwise Stitching dialog.](/images/pages/PairwiseStitching2.png
+"Shows the Pairwise Stitching dialog.")"
 
 The *number of peaks* defines the number of maxima in the Phase
 Correlation Matrix which are examined. If the stitching was not correct
@@ -153,8 +153,8 @@ choices on how to align over time:
     queried in an additional dialog.
 
 ![Shows the extra option for Pairwise Stitching when aligning all
-timepoints to each other.](PairwiseStitching3.png
-"Shows the extra option for Pairwise Stitching when aligning all timepoints to each other.")
+timepoints to each other.](/images/pages/PairwiseStitching3.png
+"Shows the extra option for Pairwise Stitching when aligning all timepoints to each other.")"
 
 If a global optimization is necessary for time-point registration
 another dialog will pop up to ask for more parameters:
@@ -189,8 +189,8 @@ images are of the same type. In contrast to the Pairwise Stitching of
 two images, this plugins will load (and potentially save) the images
 from/to harddisc.
 
-![Shows the grid/collection selection dialog.](GridStitching1.png
-"Shows the grid/collection selection dialog.") Please note that you
+![Shows the grid/collection selection dialog.](/images/pages/GridStitching1.png
+"Shows the grid/collection selection dialog.")" Please note that you
 should take the chance to give the Grid/Collection Stitching a clue of
 what the approximate layout of the tiles is if you can. This will reduce
 the computational effort significantly and is much more likely to
@@ -269,8 +269,8 @@ supported by a small figure:
         chance to further increase the overlap and define if the stage
         coordinates are calibrated or in pixel coordinates.
 
-![Shows the main dialog for the grid stitching.](GridStitching1013.png
-"Shows the main dialog for the grid stitching.") Once you selected your
+![Shows the main dialog for the grid stitching.](/images/pages/GridStitching1013.png
+"Shows the main dialog for the grid stitching.")" Once you selected your
 type of acquisition a second dialog will pop up that is slightly
 different depending up on your first selection. Here, I will explain the
 dialog that is used for any grid as this is the most complex one.
@@ -374,8 +374,8 @@ activated, linear interpolation will be used for the fusion. Otherwise
 no interpolation will be applied.
 
 ![Shows the secondary dialog for downsampling during
-stitching.](DownsampleDialog.png
-"Shows the secondary dialog for downsampling during stitching.") If
+stitching.](/images/pages/DownsampleDialog.png
+"Shows the secondary dialog for downsampling during stitching.")" If
 *downsample tiles* is selected, a dialog will pop up during the
 stitching process allowing you to specify a new (smaller) image size.
 The current image size will be displayed at first. You can enter either
@@ -541,8 +541,8 @@ change is only valid for the **currently running Fiji instance**.
 
 ## Results & Computation time
 
-![Example of Stitching of 3D confocal stacks.](ResultsStitching.jpg
-"Example of Stitching of 3D confocal stacks.")  
+![Example of Stitching of 3D confocal stacks.](/images/pages/ResultsStitching.jpg
+"Example of Stitching of 3D confocal stacks.")"  
 The figure shows stitched images of 3D confocal tiles. (A) shows a
 Drosophila melanogaster pupae expressing a GFP reporter under the
 regulation of the yellow gene, imaged few hours before eclosion using a

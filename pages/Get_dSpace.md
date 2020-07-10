@@ -71,8 +71,8 @@ calibrated and saved as a .dm3 file.
 
 ### **Adjust Threshold**
 
-![Adjust\_Threshold\_1.jpg](Adjust_Threshold_1.jpg
-"Adjust_Threshold_1.jpg") Once you click the "OK" button on the first
+![Adjust\_Threshold\_1.jpg](/images/pages/Adjust_Threshold_1.jpg
+"Adjust_Threshold_1.jpg")" Once you click the "OK" button on the first
 window. Your DP will be duplicated, and converted to 8-bit. The auto
 threshold routine is run and the
 \[https://imagej.nih.gov/ij/docs/guide/146-28.html#sub:Threshold...
@@ -90,8 +90,8 @@ labelled, and a new window pops up (shown below) that then asks you to
 help the software find the direct beam spot. This is the most critical
 part of the process because the center of the direct beam is the point
 from which all distances are calculated.
-![Direct\_Beam\_Center\_2.jpg](Direct_Beam_Center_2.jpg
-"Direct_Beam_Center_2.jpg") If you *have not* used a beamstop to cover
+![Direct\_Beam\_Center\_2.jpg](/images/pages/Direct_Beam_Center_2.jpg
+"Direct_Beam_Center_2.jpg")" If you *have not* used a beamstop to cover
 the direct beam spot in your image, then a simpler window (not shown)
 appears that just asks you which label corresponds to the direct beam,
 and the centroid of that spot is used for the calculations. For example,
@@ -140,8 +140,8 @@ In general, larger bin sizes are needed for larger d-values(\>2.5 A),
 and smaller bin sizes are needed for smaller d-values (\<2.5 A). The
 plot gives a nice visual representation of how successful the binning
 was, and the table gives a numerical representation of the same.
-![Results\_Windows\_2.jpg](Results_Windows_2.jpg
-"Results_Windows_2.jpg") The table on the right summarizes the results
+![Results\_Windows\_2.jpg](/images/pages/Results_Windows_2.jpg
+"Results_Windows_2.jpg")" The table on the right summarizes the results
 for your sample. It lists the row number, the number of spots averaged
 to obtain the d-spacing (spot count), the d-spacing (in Angstroms), and
 the uncertainty in the measurement (in Angstroms). The uncertainty is

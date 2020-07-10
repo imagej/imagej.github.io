@@ -103,8 +103,8 @@ the channels and deblur each channel separately.
 
 ## How to use
 
-![ParallelSpectralDeconvolutionDialog.jpg](ParallelSpectralDeconvolutionDialog.jpg
-"ParallelSpectralDeconvolutionDialog.jpg")
+![ParallelSpectralDeconvolutionDialog.jpg](/images/pages/ParallelSpectralDeconvolutionDialog.jpg
+"ParallelSpectralDeconvolutionDialog.jpg")"
 
 There are seven drop-down lists (combo-boxes) available in the GUI. From
 the Image list, you can choose a blurred image. PSF list is for
@@ -179,13 +179,13 @@ After opening the image to deconvolve and the image of the PSF, start {%
 include bc content='Plugins | Deconvolution | 2D Spectral
 Deconvolution...'%}
 
-![ParallelSpectralDeconvolution2DExample.jpg](ParallelSpectralDeconvolution2DExample.jpg
-"ParallelSpectralDeconvolution2DExample.jpg")
+![ParallelSpectralDeconvolution2DExample.jpg](/images/pages/ParallelSpectralDeconvolution2DExample.jpg
+"ParallelSpectralDeconvolution2DExample.jpg")"
 
 Clicking on the Deconvolve button results in this:
 
-![ParallelSpectralDeconvolution2DExampleResult.jpg](ParallelSpectralDeconvolution2DExampleResult.jpg
-"ParallelSpectralDeconvolution2DExampleResult.jpg")
+![ParallelSpectralDeconvolution2DExampleResult.jpg](/images/pages/ParallelSpectralDeconvolution2DExampleResult.jpg
+"ParallelSpectralDeconvolution2DExampleResult.jpg")"
 
 ## 3D Example
 
@@ -193,13 +193,13 @@ After opening the image to deconvolve and the image of the PSF, start {%
 include bc content='Plugins | Deconvolution | 3D Spectral
 Deconvolution...'%}
 
-![ParallelSpectralDeconvolution3DExample.jpg](ParallelSpectralDeconvolution3DExample.jpg
-"ParallelSpectralDeconvolution3DExample.jpg")
+![ParallelSpectralDeconvolution3DExample.jpg](/images/pages/ParallelSpectralDeconvolution3DExample.jpg
+"ParallelSpectralDeconvolution3DExample.jpg")"
 
 Clicking on the Deconvolve button results in this:
 
-![ParallelSpectralDeconvolution3DExampleResult.jpg](ParallelSpectralDeconvolution3DExampleResult.jpg
-"ParallelSpectralDeconvolution3DExampleResult.jpg")
+![ParallelSpectralDeconvolution3DExampleResult.jpg](/images/pages/ParallelSpectralDeconvolution3DExampleResult.jpg
+"ParallelSpectralDeconvolution3DExampleResult.jpg")"
 
 ## See also
 

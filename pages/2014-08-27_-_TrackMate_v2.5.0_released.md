@@ -74,8 +74,8 @@ TrackMate, and it will be correctly set if you load from an XML file.
 [TrackScheme](TrackScheme "wikilink") now features a search box and
 proper row and column headers.
 
-![TrachSchemeSearchBar.png](TrachSchemeSearchBar.png
-"TrachSchemeSearchBar.png")
+![TrachSchemeSearchBar.png](/images/pages/TrachSchemeSearchBar.png
+"TrachSchemeSearchBar.png")"
 
 ## Other improvement
 
@@ -85,8 +85,8 @@ for each branch the number of predecessors, the number of successors and
 its duration. The results table is clickable and will set the selection
 to be the clicked branch.
 
-![TrackMateBranchAnalysis.png](TrackMateBranchAnalysis.png
-"TrackMateBranchAnalysis.png")
+![TrackMateBranchAnalysis.png](/images/pages/TrackMateBranchAnalysis.png
+"TrackMateBranchAnalysis.png")"
 
 <references/>
 

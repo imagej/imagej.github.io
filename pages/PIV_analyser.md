@@ -192,8 +192,8 @@ include bc content='Plugins | Optic Flow'%} menu.
 
 ## Usage
 
-![PIV\_analyser\_window.png](PIV_analyser_window.png
-"PIV_analyser_window.png")
+![PIV\_analyser\_window.png](/images/pages/PIV_analyser_window.png
+"PIV_analyser_window.png")"
 
 Options are the following:
 

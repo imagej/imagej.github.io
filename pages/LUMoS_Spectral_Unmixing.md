@@ -55,8 +55,8 @@ The output channels correspond to unmixed fluorophores. This process
 will also separate background, autofluorescence and colocalization into
 distinct output channels.
 
-![spectral\_unmixing\_example.png](spectral_unmixing_example.png
-"spectral_unmixing_example.png")
+![spectral\_unmixing\_example.png](/images/pages/spectral_unmixing_example.png
+"spectral_unmixing_example.png")"
 
 # Usage
 

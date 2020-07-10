@@ -25,8 +25,8 @@ landmarks per image by selecting a line.
 Example: Load the template (the image you want to align to) and specify
 the landmarks by a line selection:
 
-![Shortnosed-Sturgeon.jpg](Shortnosed-Sturgeon.jpg
-"Shortnosed-Sturgeon.jpg")
+![Shortnosed-Sturgeon.jpg](/images/pages/Shortnosed-Sturgeon.jpg
+"Shortnosed-Sturgeon.jpg")"
 
 Then load the image you want to align with the template, and select a
 line (the order of the points is relevant: the first point will
@@ -39,8 +39,8 @@ active line selection, you would be asked which one is the template.
 Since there is only one, the plugin does not ask, but starts to work
 right away. The result looks like this:
 
-![Aligned-Blue-Parrot-Fish.jpg](Aligned-Blue-Parrot-Fish.jpg
-"Aligned-Blue-Parrot-Fish.jpg")
+![Aligned-Blue-Parrot-Fish.jpg](/images/pages/Aligned-Blue-Parrot-Fish.jpg
+"Aligned-Blue-Parrot-Fish.jpg")"
 
 [Category:Tutorials](Category:Tutorials "wikilink")
 [Category:Plugins](Category:Plugins "wikilink")

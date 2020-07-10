@@ -195,8 +195,8 @@ spot that is at the crossing. You now have 3 tracks.
 
 ## Track and spot features are updated live
 
-![TrackMate\_GUIManualTracking.png](TrackMate_GUIManualTracking.png
-"TrackMate_GUIManualTracking.png")
+![TrackMate\_GUIManualTracking.png](/images/pages/TrackMate_GUIManualTracking.png
+"TrackMate_GUIManualTracking.png")"
 
 TrackMate uses computes and uses some numerical features for its spots,
 edges and tracks. You can use these features to color the TrackMate
@@ -232,8 +232,8 @@ part of the classic GUI; to make it appear, double-click on the
 TrackMate tool in the ImageJ toolbar. You should see something like
 this:
 
-![TrackMate\_v2.1.0\_TrackMateTools.png](TrackMate_v2.1.0_TrackMateTools.png
-"TrackMate_v2.1.0_TrackMateTools.png")
+![TrackMate\_v2.1.0\_TrackMateTools.png](/images/pages/TrackMate_v2.1.0_TrackMateTools.png
+"TrackMate_v2.1.0_TrackMateTools.png")"
 
 We are interested in the **Semi-automatic tracking** panel. The bottom
 panel has just convenience buttons that allow you to select tracks or

@@ -226,8 +226,8 @@ Fortunately, since CoverMaker is targeting scientific imaging, in most
 cases a large image database will have a uniform or one dominant aspect
 ratio.
 
-![**Input and output parameters dialog**](Create_database_dialog.png
-"Input and output parameters dialog") The user must also specify the
+![**Input and output parameters dialog**](/images/pages/Create_database_dialog.png
+"Input and output parameters dialog")" The user must also specify the
 **aspect ratio** and **base directory** under which the images are to be
 found.
 

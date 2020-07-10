@@ -9,5 +9,5 @@ description: test description
 ---
 
 ![Visualizes the offsets and sizes required to perform an n-dimensional
-gaussian convolution](Gauss.png
-"Visualizes the offsets and sizes required to perform an n-dimensional gaussian convolution")
+gaussian convolution](/images/pages/Gauss.png
+"Visualizes the offsets and sizes required to perform an n-dimensional gaussian convolution")"

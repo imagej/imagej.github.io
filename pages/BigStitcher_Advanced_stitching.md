@@ -15,8 +15,8 @@ determination, we offer some alternative methods and advanced
 parameterization, as well as non-standard grouping of the views in your
 dataset.
 
-![BigStitcher\_stitch\_0.png](BigStitcher_stitch_0.png
-"BigStitcher_stitch_0.png")
+![BigStitcher\_stitch\_0.png](/images/pages/BigStitcher_stitch_0.png
+"BigStitcher_stitch_0.png")"
 
 If you want to proceed straight to the next steps after calculating the
 shifts, we offer the same options under {% include bc content='Stitching
@@ -75,8 +75,8 @@ mode, so please look [to the corresponding
 page](BigStitcher_Pairwise_shift#Pairwise_shift_calculation "wikilink")
 for details.
 
-![BigStitcher\_stitch\_advanced\_phasecorr.png](BigStitcher_stitch_advanced_phasecorr.png
-"BigStitcher_stitch_advanced_phasecorr.png")
+![BigStitcher\_stitch\_advanced\_phasecorr.png](/images/pages/BigStitcher_stitch_advanced_phasecorr.png
+"BigStitcher_stitch_advanced_phasecorr.png")"
 
 ## Iterative alignment via Lucas-Kanade algorithm
 
@@ -114,8 +114,8 @@ mode, so please look [to the corresponding
 page](BigStitcher_Pairwise_shift#Pairwise_shift_calculation "wikilink")
 for details.
 
-![BigStitcher\_stitch\_advanced\_lk.png](BigStitcher_stitch_advanced_lk.png
-"BigStitcher_stitch_advanced_lk.png")
+![BigStitcher\_stitch\_advanced\_lk.png](/images/pages/BigStitcher_stitch_advanced_lk.png
+"BigStitcher_stitch_advanced_lk.png")"
 
 ## Interest point-based shift calculation
 
@@ -163,8 +163,8 @@ calculations and how to group them.
     Illuminations, but only for the currently selected timepoint and
     angle.
 
-![BigStitcher\_stitch\_6.png](BigStitcher_stitch_6.png
-"BigStitcher_stitch_6.png")
+![BigStitcher\_stitch\_6.png](/images/pages/BigStitcher_stitch_6.png
+"BigStitcher_stitch_6.png")"
 
   - Select how to process the different attributes. For example, in the
     figure below, we will *treat TimePoints and Angles individually*,
@@ -175,8 +175,8 @@ calculations and how to group them.
     beforw calculating shifts. Finally, we *compare* Tiles, which means
     that shifts will be calculated between tiles.
 
-![BigStitcher\_stitch\_8.png](BigStitcher_stitch_8.png
-"BigStitcher_stitch_8.png")
+![BigStitcher\_stitch\_8.png](/images/pages/BigStitcher_stitch_8.png
+"BigStitcher_stitch_8.png")"
 
 {% include warning-sidebox-right content='Theoretically, you can use the
 second dialog to generate arbitrary groupings of the data, e.g. compare

@@ -16,8 +16,8 @@ from increased bitrot in recent years. SciView is built on Scenery, a
 VR/AR (virtual reality and augmented reality) library for 3D rendering
 led by Ulrik Günther from CSBD.
 
-![SciView\_preview\_blockhead.png](SciView_preview_blockhead.png
-"SciView_preview_blockhead.png")
+![SciView\_preview\_blockhead.png](/images/pages/SciView_preview_blockhead.png
+"SciView_preview_blockhead.png")"
 
 The SciView preview release provides capabilities for 3D mesh rendering,
 volume rendering, and scenegraph manipulation through ImageJ2

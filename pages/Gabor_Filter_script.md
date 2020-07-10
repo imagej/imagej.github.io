@@ -9,8 +9,8 @@ description: test description
 ---
 
 ![Example of a two-dimensional Gabor filter kernel (with a spectrum
-LUT).](Kernel-Gabor-filter.png
-"Example of a two-dimensional Gabor filter kernel (with a spectrum LUT).")
+LUT).](/images/pages/Kernel-Gabor-filter.png
+"Example of a two-dimensional Gabor filter kernel (with a spectrum LUT).")"
 This is an example of how to create [Gabor
 filters](wikipedia:Gabor_filter "wikilink") in Fiji using Beanshell
 scripting. The script will create and apply a set of Gabor filters to
@@ -37,8 +37,8 @@ include bc content='File | Open Samples | Leaf (36K)'%}) and sigma =
 a Gabor filter applied to the Leaf sample image. Five orientations are
 shown on the right (0°, 36°, 72°, 108° and 144°). The original Leaf
 picture is shown on the upper-left
-corner.](Montage-Gabor-filter-5-angles.png
-"Demonstration of a Gabor filter applied to the Leaf sample image. Five orientations are shown on the right (0°, 36°, 72°, 108° and 144°). The original Leaf picture is shown on the upper-left corner.")
+corner.](/images/pages/Montage-Gabor-filter-5-angles.png
+"Demonstration of a Gabor filter applied to the Leaf sample image. Five orientations are shown on the right (0°, 36°, 72°, 108° and 144°). The original Leaf picture is shown on the upper-left corner.")"
 
 ## Code
 

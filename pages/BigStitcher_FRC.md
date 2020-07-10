@@ -28,8 +28,8 @@ metric.** The figure below shows the output of our quality control (FRC
 of blocks in images of a two-illumination dataset of a cleared mouse
 brain):
 
-![BigStitcher\_FRC\_overview.png](BigStitcher_FRC_overview.png
-"BigStitcher_FRC_overview.png")
+![BigStitcher\_FRC\_overview.png](/images/pages/BigStitcher_FRC_overview.png
+"BigStitcher_FRC_overview.png")"
 
 {% include warning-sidebox-right content='For FRC using neighbouring
 planes to work, the z-spacing of your images has to be low enough, so
@@ -43,8 +43,8 @@ to perform quality control, right click and select {% include bc
 content='Quality (optional)|Image Quality Estimation (FRC)...'%}. This
 will bring up the following dialog:
 
-![BigStitcher\_FRC\_dialog.png](BigStitcher_FRC_dialog.png
-"BigStitcher_FRC_dialog.png")
+![BigStitcher\_FRC\_dialog.png](/images/pages/BigStitcher_FRC_dialog.png
+"BigStitcher_FRC_dialog.png")"
 
 Many parameters are similar to [Image
 Fusion](BigStitcher_Fuse "wikilink"): You can set a bounding box for the

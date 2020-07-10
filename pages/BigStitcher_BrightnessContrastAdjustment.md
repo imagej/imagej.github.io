@@ -23,8 +23,8 @@ transform for each image: *I′*(x) = *I*(x) \* *α* + *β*
 The brightness and contrast adjustment is available in **Multiview
 mode** under {% include bc content='Processing|Intensity Adjustment'%}.
 
-![BigStitcher\_Intensity\_Adjustment\_menu.png](BigStitcher_Intensity_Adjustment_menu.png
-"BigStitcher_Intensity_Adjustment_menu.png")
+![BigStitcher\_Intensity\_Adjustment\_menu.png](/images/pages/BigStitcher_Intensity_Adjustment_menu.png
+"BigStitcher_Intensity_Adjustment_menu.png")"
 
 {% include sidebox-right content='Calculating the intensity adjustment
 requires the images to be aligned, therefore use it as a last step after
@@ -35,8 +35,8 @@ registration before fusing the dataset.' %}
 Clicking **Compute...** in the Intensity adjustment menu brings up the
 following dialog:
 
-![BigStitcher\_Intensity\_Adjustment\_dialog.png](BigStitcher_Intensity_Adjustment_dialog.png
-"BigStitcher_Intensity_Adjustment_dialog.png")
+![BigStitcher\_Intensity\_Adjustment\_dialog.png](/images/pages/BigStitcher_Intensity_Adjustment_dialog.png
+"BigStitcher_Intensity_Adjustment_dialog.png")"
 
 First, since the adjustment is calculates for pixel intensities in
 overlapping areas of the images, you can select how to load the pixels:

@@ -34,8 +34,8 @@ repository ({% include github org='CSIM-Toolkits' repo='ImageJ'
 label='GitHub CSIM-ImageJ repository' %}).
 
 ![CSIM Laboratory. See more details about our research group in the web
-site: http://dcm.ffclrp.usp.br/csim](CSIM-logo.png
-"CSIM Laboratory. See more details about our research group in the web site: http://dcm.ffclrp.usp.br/csim")
+site: http://dcm.ffclrp.usp.br/csim](/images/pages/CSIM-logo.png
+"CSIM Laboratory. See more details about our research group in the web site: http://dcm.ffclrp.usp.br/csim")"
 
 ## Available Methods
 

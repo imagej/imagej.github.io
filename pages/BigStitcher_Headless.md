@@ -15,8 +15,8 @@ include bc content='Plugins|BigStitcher|BigStitcher'%}, we offer
 macro-recordable versions of most processing steps under the {% include
 bc content='Plugins|BigStitcher|Batch Processing'%} menu.
 
-![BigStitcher\_Headless\_Menu.png](BigStitcher_Headless_Menu.png
-"BigStitcher_Headless_Menu.png")
+![BigStitcher\_Headless\_Menu.png](/images/pages/BigStitcher_Headless_Menu.png
+"BigStitcher_Headless_Menu.png")"
 
 The operation of the Batch versions of the processing steps is
 essentially the same as in the main application, though with a more
@@ -44,8 +44,8 @@ steps of BigStitcher:
     optimize the alignment.
   - Fuse the Tiles and save the results as TIFF
 
-![BigStitcher\_Headless\_Recorder.png](BigStitcher_Headless_Recorder.png
-"BigStitcher_Headless_Recorder.png")
+![BigStitcher\_Headless\_Recorder.png](/images/pages/BigStitcher_Headless_Recorder.png
+"BigStitcher_Headless_Recorder.png")"
 
 Clicking **Generate** in the macro recorder will pop up the Fiji script
 editor with a new script containing the recorded commands. You can save

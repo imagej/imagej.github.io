@@ -21,8 +21,8 @@ provided by bare ImageJ.
 What they do is pretty much summarized by the following diagram, taken
 from the [MBF ImageJ](MBF_ImageJ "wikilink") webpage.
 
-![Stack\_Manipulation.jpg](Stack_Manipulation.jpg
-"Stack_Manipulation.jpg")
+![Stack\_Manipulation.jpg](/images/pages/Stack_Manipulation.jpg
+"Stack_Manipulation.jpg")"
 
   - The **Grouped ZProjector** acts a bit like the **Substack Maker**,
     for it allows to reduce the number of frame within a stack. But

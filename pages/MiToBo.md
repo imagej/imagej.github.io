@@ -16,8 +16,8 @@ content="MiToBo" %} {% endcapture %}
 
 {% capture source %} {% include github org="mitobo-hub"
 repo="mitobo-plugins" %} {% endcapture %} {% include sidebox-right
-software='MiToBo' name='MiToBo' logo='![MiToBo-logo.png](MiToBo-logo.png
-"MiToBo-logo.png")' maintainer=maintainer author=author source=source
+software='MiToBo' name='MiToBo' logo='![MiToBo-logo.png](/images/pages/MiToBo-logo.png
+"MiToBo-logo.png")"' maintainer=maintainer author=author source=source
 status='' category='[:Category:Plugins](:Category:Plugins "wikilink")'
 website='http://www.informatik.uni-halle.de/mitobo/' %}The Microscope
 Image Analysis Toolbox MiToBo is a collection of basic and advanced

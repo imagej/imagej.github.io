@@ -36,7 +36,7 @@ although it is significantly slower.
 
 These screenshots show the results on an example file:
 
-![Frangi-before-and-after.png](Frangi-before-and-after.png
-"Frangi-before-and-after.png")
+![Frangi-before-and-after.png](/images/pages/Frangi-before-and-after.png
+"Frangi-before-and-after.png")"
 
 <references/>

@@ -29,8 +29,8 @@ Tracking | TrackMate CSV importer'%} menu.
 The example below shows a capture of the GUI when re-importing a CSV
 file created by TrackMate itself (from the `Analysis` button).
 
-![TrackMateCSVImporter\_01.png](TrackMateCSVImporter_01.png
-"TrackMateCSVImporter_01.png")
+![TrackMateCSVImporter\_01.png](/images/pages/TrackMateCSVImporter_01.png
+"TrackMateCSVImporter_01.png")"
 
 Open the target image in Fiji, and browse to the CSV file from the GUI.
 It will be parsed and the parameter lists will be populated with the

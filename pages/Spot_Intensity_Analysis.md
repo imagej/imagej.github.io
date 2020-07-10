@@ -38,10 +38,10 @@ spot finding. This same image is used to calculate the background (which
 is currently done using the ImageJ Background tool using a ball radius
 of 100 and "Sliding paraboloid" checked).
 
-![SpotIntensityAnalysisImage.jpg](SpotIntensityAnalysisImage.jpg
-"SpotIntensityAnalysisImage.jpg")
-![SpotIntensityProfile.png](SpotIntensityProfile.png
-"SpotIntensityProfile.png")
+![SpotIntensityAnalysisImage.jpg](/images/pages/SpotIntensityAnalysisImage.jpg
+"SpotIntensityAnalysisImage.jpg")"
+![SpotIntensityProfile.png](/images/pages/SpotIntensityProfile.png
+"SpotIntensityProfile.png")"
 
 In the second phase the intensities of each spot at each time point is
 calculated. The Background image is first subtracted from each frame,
@@ -69,10 +69,10 @@ should get a table with 3 rows. Clicking on any of the rows in the table
 or the red circles in the image should bring up a graph with the
 intensity profile.
 
-![SpotIntensityAnalysisScreenshot.png](SpotIntensityAnalysisScreenshot.png
-"SpotIntensityAnalysisScreenshot.png")
-![SpotIntensityAnalysisTable.png](SpotIntensityAnalysisTable.png
-"SpotIntensityAnalysisTable.png")
+![SpotIntensityAnalysisScreenshot.png](/images/pages/SpotIntensityAnalysisScreenshot.png
+"SpotIntensityAnalysisScreenshot.png")"
+![SpotIntensityAnalysisTable.png](/images/pages/SpotIntensityAnalysisTable.png
+"SpotIntensityAnalysisTable.png")"
 
 ## History
 

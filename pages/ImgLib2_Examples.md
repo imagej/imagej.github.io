@@ -645,8 +645,8 @@ independent of the size and shape of the kernel.
 convolution so that the sum of all pixels is one. Otherwise, the
 resulting intensities will be increased.*
 
-![FourierConvolution.jpg](FourierConvolution.jpg
-"FourierConvolution.jpg") *Shows the effect of the Fourier convolution.
+![FourierConvolution.jpg](/images/pages/FourierConvolution.jpg
+"FourierConvolution.jpg")" *Shows the effect of the Fourier convolution.
 The left image was convolved with the kernel depicted in the lower left
 corner, the right panel shows the convolved image. Note that the
 computation speed does not depend on the size or the shape of the

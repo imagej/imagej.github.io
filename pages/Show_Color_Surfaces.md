@@ -25,8 +25,8 @@ classes are shown as different colors.
 The *Show Color Surfaces* command calculates surfaces embedded into the
 [3D Viewer](3D_Viewer "wikilink") from label fields:
 
-![Show-color-surfaces-reduced.png](Show-color-surfaces-reduced.png
-"Show-color-surfaces-reduced.png")
+![Show-color-surfaces-reduced.png](/images/pages/Show-color-surfaces-reduced.png
+"Show-color-surfaces-reduced.png")"
 
 ## Menu path
 

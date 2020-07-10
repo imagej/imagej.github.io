@@ -30,16 +30,16 @@ When using the **Manual Loader (Bioformats)**, we also support one file
 to contain multiple instances (e.g. all channels in one file)
 
 ![Step 1: Defining attributes of data in Manual
-loader.](BigStitcher_Stack_Import1.png
-"Step 1: Defining attributes of data in Manual loader.")
+loader.](/images/pages/BigStitcher_Stack_Import1.png
+"Step 1: Defining attributes of data in Manual loader.")"
 
 ### Step 2: File pattern and additional options
 
 #### File pattern
 
 ![Step 2: Defining file pattern and additional
-options.](BigStitcher_Stack_Import2.png
-"Step 2: Defining file pattern and additional options.")
+options.](/images/pages/BigStitcher_Stack_Import2.png
+"Step 2: Defining file pattern and additional options.")"
 
 In the next dialog, you will be asked to specify the **Image File
 directory**, i.e. the directory that contain all the files to include in
@@ -96,8 +96,8 @@ mark the corresponding view in the dataset as **missing**. You can use
 this to ignore specific parts of the data, e.g. time points at which the
 sample moved, etc.
 
-![ Verification of files in dataset.](BigStitcher_Stack_Import3.png
-" Verification of files in dataset.")
+![ Verification of files in dataset.](/images/pages/BigStitcher_Stack_Import3.png
+" Verification of files in dataset.")"
 
 ### Step 3: Verify calibration
 
@@ -108,8 +108,8 @@ can set the pixel distances and units for each view in this dialog,
 otherwise, one calibration will be used for all.
 
 ![Step 3: Verifying/modifying
-calibration.](BigStitcher_Stack_Import4.png
-"Step 3: Verifying/modifying calibration.")
+calibration.](/images/pages/BigStitcher_Stack_Import4.png
+"Step 3: Verifying/modifying calibration.")"
 
 Once you click **OK**, your dataset should be displayed in the
 [BigStitcher main window](BigStitcher_Stitching_Mode "wikilink").

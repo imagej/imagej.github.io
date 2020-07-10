@@ -148,8 +148,8 @@ the local search.
 ![**Hough Circle Transform GUI configurations** *Panel 1:* Hough Circle
 transform - Easy Mode *Panel 2:* Hough Circle transform - Advanced Mode
 *Panel 3:* Local Hough Circle transform - Easy Mode *Panel 4:* Local
-Hough Circle transform - Advanced Mode ](Hough_GUI2.png
-"Hough Circle Transform GUI configurations Panel 1: Hough Circle transform - Easy Mode Panel 2: Hough Circle transform - Advanced Mode Panel 3: Local Hough Circle transform - Easy Mode Panel 4: Local Hough Circle transform - Advanced Mode ")
+Hough Circle transform - Advanced Mode ](/images/pages/Hough_GUI2.png
+"Hough Circle Transform GUI configurations Panel 1: Hough Circle transform - Easy Mode Panel 2: Hough Circle transform - Advanced Mode Panel 3: Local Hough Circle transform - Easy Mode Panel 4: Local Hough Circle transform - Advanced Mode ")"
 
 ### GUI Mode
 

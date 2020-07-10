@@ -19,8 +19,8 @@ filename='SCF-MPI-CBG update site' source=source
 category='[Plugins](:Category:Plugins "wikilink"),
 [Segmentation](:Category:Segmentation "wikilink")' %}
 
-![InteractiveWatershed\_illustration.PNG](InteractiveWatershed_illustration.PNG
-"InteractiveWatershed_illustration.PNG")
+![InteractiveWatershed\_illustration.PNG](/images/pages/InteractiveWatershed_illustration.PNG
+"InteractiveWatershed_illustration.PNG")"
 
 <div align="center">
 
@@ -107,8 +107,8 @@ of an image. Such segmentation has 2 parameters. The Threshold, T, that
 stops the flooding of the image and the H-maxima robustness, H, that
 defines the flooding initialization.
 
-![Figure\_HMax\_HWatershed\_v3.PNG](Figure_HMax_HWatershed_v3.PNG
-"Figure_HMax_HWatershed_v3.PNG")
+![Figure\_HMax\_HWatershed\_v3.PNG](/images/pages/Figure_HMax_HWatershed_v3.PNG
+"Figure_HMax_HWatershed_v3.PNG")"
 
 <div align="center">
 
@@ -228,8 +228,8 @@ rest of the section:
     be further analyzed with ImageJ. The export action appear in the
     macro recorder for Image Macro Language and Jython language.
 
-![Figure\_IWS\_controlPanel.PNG](Figure_IWS_controlPanel.PNG
-"Figure_IWS_controlPanel.PNG")
+![Figure\_IWS\_controlPanel.PNG](/images/pages/Figure_IWS_controlPanel.PNG
+"Figure_IWS_controlPanel.PNG")"
 
 <div align="center">
 
@@ -246,8 +246,8 @@ can be navigated directly with usual ImageJ controls.
 
 </div>
 
-![Figure\_IWS\_visualisationMode.PNG](Figure_IWS_visualisationMode.PNG
-"Figure_IWS_visualisationMode.PNG")
+![Figure\_IWS\_visualisationMode.PNG](/images/pages/Figure_IWS_visualisationMode.PNG
+"Figure_IWS_visualisationMode.PNG")"
 
 <div align="center">
 
@@ -259,8 +259,8 @@ displayed as a label map (2nd column), regions contours overlay(column
 
 </div>
 
-![Figure\_IWS\_sideViews\_v2.PNG](Figure_IWS_sideViews_v2.PNG
-"Figure_IWS_sideViews_v2.PNG")
+![Figure\_IWS\_sideViews\_v2.PNG](/images/pages/Figure_IWS_sideViews_v2.PNG
+"Figure_IWS_sideViews_v2.PNG")"
 
 <div align="center">
 
@@ -273,8 +273,8 @@ are resampled to remove distortion and make inspection effortless.
 
 </div>
 
-![Figure\_IWS\_customBgImage.PNG](Figure_IWS_customBgImage.PNG
-"Figure_IWS_customBgImage.PNG")
+![Figure\_IWS\_customBgImage.PNG](/images/pages/Figure_IWS_customBgImage.PNG
+"Figure_IWS_customBgImage.PNG")"
 
 <div align="center">
 

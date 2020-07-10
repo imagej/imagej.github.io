@@ -27,8 +27,8 @@ determination, link verification and global optimization.
     options. For those advanced methods, refer to
     [BigStitcher\_Advanced\_stitching](BigStitcher_Advanced_stitching "wikilink")
 
-![BigStitcher\_stitch\_0.png](BigStitcher_stitch_0.png
-"BigStitcher_stitch_0.png")
+![BigStitcher\_stitch\_0.png](/images/pages/BigStitcher_stitch_0.png
+"BigStitcher_stitch_0.png")"
 
 ### Pairwise shift calculation
 
@@ -39,8 +39,8 @@ multiple channels (if present) and which downsampling to use.
     channel to use for the stitching. You can also average the channels
     for the stitching process.
 
-![BigStitcher\_stitch\_1.png](BigStitcher_stitch_1.png
-"BigStitcher_stitch_1.png")
+![BigStitcher\_stitch\_1.png](/images/pages/BigStitcher_stitch_1.png
+"BigStitcher_stitch_1.png")"
 
   - Next, choose the the downsampling in x,y,z to be used for the
     calculation. Select a predefined downsampling factor or choose your
@@ -51,8 +51,8 @@ multiple channels (if present) and which downsampling to use.
 in the images. It also dramatically speeds up computations, so we advise
 using moderate downsampling in this step ' %}
 
-![BigStitcher\_stitch\_2.png](BigStitcher_stitch_2.png
-"BigStitcher_stitch_2.png")
+![BigStitcher\_stitch\_2.png](/images/pages/BigStitcher_stitch_2.png
+"BigStitcher_stitch_2.png")"
 
   - If you ran the **Stitching wizard**, you will be asked to proceed to
     [Link Preview Mode](BigStitcher_Preview_Pairwise_shift "wikilink").

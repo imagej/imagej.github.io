@@ -145,11 +145,11 @@ colormap), the hue channel of the original, and the hue channel after
 saving as a JPEG with ImageJ's default options -- note in particular the
 vertical and horizontal artifacts:
 
-![Original (8-bit colormap)](Mandrill-orig.png
-"Original (8-bit colormap)")![Hue of the original
+![Original (8-bit colormap)](/images/pages/Mandrill-orig.png
+"Original (8-bit colormap)")"![Hue of the original
 image](/images/pages/Mandrill-hue-png.png "Hue of the original image")"![Hue of the
-JPEG image (default ImageJ settings)](Mandrill-hue-jpg.png
-"Hue of the JPEG image (default ImageJ settings)")
+JPEG image (default ImageJ settings)](/images/pages/Mandrill-hue-jpg.png
+"Hue of the JPEG image (default ImageJ settings)")"
 
 While most digital cameras save in JPEG format by default, it is very
 likely that they also support some non-lossy format (such as TIFF or a

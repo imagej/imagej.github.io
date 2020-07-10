@@ -17,8 +17,8 @@ category='[Plugins](:Category:Plugins "wikilink")' %}
 
 ## Purpose
 
-![The ROI Picker tool selected.](ROI_Picker.png
-"The ROI Picker tool selected.")
+![The ROI Picker tool selected.](/images/pages/ROI_Picker.png
+"The ROI Picker tool selected.")"
 
 This tool allows clicking to select existing ROIs. Clicking within the
 bounds of a ROI will select it in the ROI Manager. If multiple ROIs

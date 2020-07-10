@@ -687,13 +687,13 @@ contain very distinct colors. Let's see an example using a [public
 image](https://commons.wikimedia.org/wiki/File:Emphysema_H_and_E.jpg) of
 hematoxylin and eosin (H\&E) stained lung tissue:
 
-![Emphysema\_H\_and\_E.jpg](Emphysema_H_and_E.jpg
-"Emphysema_H_and_E.jpg")
+![Emphysema\_H\_and\_E.jpg](/images/pages/Emphysema_H_and_E.jpg
+"Emphysema_H_and_E.jpg")"
 
 Once the image is open, we can call the script and a dialog will pop up:
 
-![TWS-color-segmentation-script-menu.png](TWS-color-segmentation-script-menu.png
-"TWS-color-segmentation-script-menu.png")
+![TWS-color-segmentation-script-menu.png](/images/pages/TWS-color-segmentation-script-menu.png
+"TWS-color-segmentation-script-menu.png")"
 
 Here we can select the number of expected clusters, the number of
 samples per cluster used for training and the clustering method. The
@@ -705,8 +705,8 @@ containing labels in the range of \[0-4\].
 This would be a possible output of the script with 3 clusters, 2000
 samples and “SimpleKMeans”:
 
-![TWS-result-H-and-E-k-means-3-clusters-2000-samples.png](TWS-result-H-and-E-k-means-3-clusters-2000-samples.png
-"TWS-result-H-and-E-k-means-3-clusters-2000-samples.png")
+![TWS-result-H-and-E-k-means-3-clusters-2000-samples.png](/images/pages/TWS-result-H-and-E-k-means-3-clusters-2000-samples.png
+"TWS-result-H-and-E-k-means-3-clusters-2000-samples.png")"
 
 The actual label values may vary between different executions of the
 same clustering due to its random seed initialization. In any case, the

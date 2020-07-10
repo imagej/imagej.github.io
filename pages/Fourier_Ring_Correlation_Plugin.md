@@ -109,8 +109,8 @@ plugins directory of Fiji/ImageJ
 
 ## Direct Use
 
-![Plugin Dialog choices Standard Use](frc-dialog-std.png
-"Plugin Dialog choices Standard Use")
+![Plugin Dialog choices Standard Use](/images/pages/frc-dialog-std.png
+"Plugin Dialog choices Standard Use")"
 
 Call up the plugin using *Plugins-\>BIOP-\>Image Analysis-\>FRC-\>FRC
 Calculation...*.
@@ -119,8 +119,8 @@ You need two images open to perform the FRC.
 
 ## Batch Mode
 
-![Plugin Dialog choices in Batch mode](Frc-dialog-batch.png
-"Plugin Dialog choices in Batch mode")
+![Plugin Dialog choices in Batch mode](/images/pages/Frc-dialog-batch.png
+"Plugin Dialog choices in Batch mode")"
 
 There is also a Batch Option under *Plugins-\>BIOP-\>Image
 Analysis-\>FRC-\>FRC Calculation (Batch)...*
@@ -136,8 +136,8 @@ Results Table that gets appended as the plugin gets used. The column
 name reflects the calibration of the image and the threshold method
 selected.
 
-![Results Table example from FRC Calculation](Frc-results.png
-"Results Table example from FRC Calculation")
+![Results Table example from FRC Calculation](/images/pages/Frc-results.png
+"Results Table example from FRC Calculation")"
 
 ## Plots
 
@@ -147,8 +147,8 @@ used and the intersection of the FRC with the threshold, providing the
 FIRE number. The X dimension is in the frequency domain and represents
 pixels<sup>-1</sup>
 
-![FRC Curve example using 1/7 Threshold condition](Frc-results-curve.png
-"FRC Curve example using 1/7 Threshold condition")
+![FRC Curve example using 1/7 Threshold condition](/images/pages/Frc-results-curve.png
+"FRC Curve example using 1/7 Threshold condition")"
 
 In the case of batch processing, if *Save Plot* is checked, the plugin
 creates a new folder in the parent directory called "Graphs" and saves

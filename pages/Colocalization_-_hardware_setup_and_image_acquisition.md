@@ -63,8 +63,8 @@ the green and red images have been colour merged is a bad idea because:
     "blue"and "green" are exactly the same color: Do not trust your eyes
     - measure it.
 
-![**Figure 1**: The *spirals* color illusion](Spirals.png
-"Figure 1: The spirals color illusion")
+![**Figure 1**: The *spirals* color illusion](/images/pages/Spirals.png
+"Figure 1: The spirals color illusion")"
 
   
 What we need are objective quantitative methods to estimate/measure
@@ -252,8 +252,8 @@ So... this one is *the* very worst and most dangerous problem in
 colocalization experiments. It can be explained with the following
 spectra:
 
-![500px-CrossTalkBleedThrough.jpg](500px-CrossTalkBleedThrough.jpg
-"500px-CrossTalkBleedThrough.jpg")
+![500px-CrossTalkBleedThrough.jpg](/images/pages/500px-CrossTalkBleedThrough.jpg
+"500px-CrossTalkBleedThrough.jpg")"
 
   
 In this picture, the detection setup is configured so as to measure
@@ -316,8 +316,8 @@ these two molecules are imaged on the same pixel, the procedure tells
 you that they are colocalized. Once again, you are producing
 false-positive results.
 
-![500px-ColocalizationSampling.png](500px-ColocalizationSampling.png
-"500px-ColocalizationSampling.png")
+![500px-ColocalizationSampling.png](/images/pages/500px-ColocalizationSampling.png
+"500px-ColocalizationSampling.png")"
 
   
 Also remember: since we are doing light microscopy, two objects closer

@@ -35,8 +35,8 @@ updater.
 
 ![SpotCounter.jpg](/images/pages/SpotCounter.jpg "SpotCounter.jpg")"
 ![spotCounterV013.png](/images/pages/spotCounterV013.png "spotCounterV013.png")"
-![SpotCounterResults.gif](SpotCounterResults.gif
-"SpotCounterResults.gif")
+![SpotCounterResults.gif](/images/pages/SpotCounterResults.gif
+"SpotCounterResults.gif")"
 
 <b>History:</b>  
 2018-01-18 - Version 0.14: Updated build system. Now is compiled to Java

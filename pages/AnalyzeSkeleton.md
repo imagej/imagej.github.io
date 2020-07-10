@@ -19,8 +19,8 @@ page](http://imagejdocu.tudor.lu/doku.php?id=plugin:analysis:analyzeskeleton:sta
 
 ## General Description
 
-![Example of voxel classification](Tagging_example.png
-"Example of voxel classification") This plugin tags all pixel/voxels in
+![Example of voxel classification](/images/pages/Tagging_example.png
+"Example of voxel classification")" This plugin tags all pixel/voxels in
 a skeleton image and then counts all its junctions, triple and quadruple
 points and branches, and measures their average and maximum length. The
 tags are shown in a new window displaying every tag in a different
@@ -46,8 +46,8 @@ voxels can be neighbors of each other.
 ## Main options
 
 ![Main dialog of the AnalyzeSkeleton
-plugin](Screenshot-AnalyzeSkeleton-dialog.png
-"Main dialog of the AnalyzeSkeleton plugin") In the main dialog of the
+plugin](/images/pages/Screenshot-AnalyzeSkeleton-dialog.png
+"Main dialog of the AnalyzeSkeleton plugin")" In the main dialog of the
 plugin the user can select some options to
 
   - **Prune the possible loops** in the skeleton (by choosing one of the
@@ -74,8 +74,8 @@ plugin the user can select some options to
 
 ## Loop detection and pruning
 
-![Example of cycle detection and pruning](Cycle_detection.png
-"Example of cycle detection and pruning") Since the 2009/09/02 version
+![Example of cycle detection and pruning](/images/pages/Cycle_detection.png
+"Example of cycle detection and pruning")" Since the 2009/09/02 version
 of the code, the possible cycles or loops in the skeleton can be
 detected and pruned previous to the analysis. In this sense, the initial
 plugin dialog offers 4 options:
@@ -110,8 +110,8 @@ enough to eliminate all the remaining loops.
 ## Table of results
 
 ![Example of AnalyzeSkeleton Results
-table](AnalyzeSkeleton-Results-table.png
-"Example of AnalyzeSkeleton Results table") After classification, a
+table](/images/pages/AnalyzeSkeleton-Results-table.png
+"Example of AnalyzeSkeleton Results table")" After classification, a
 “Results” window is displayed showing for each skeleton in the image:
 
   - The number of branches (slab segments, usually connecting
@@ -133,8 +133,8 @@ Integer.MAX\_VALUE](http://java.sun.com/javase/6/docs/api/)).
 #### Detailed information
 
 ![Example of AnalyzeSkeleton Branch information
-window](AnalyzeSkeleton_Branch_information.png
-"Example of AnalyzeSkeleton Branch information window") When calling the
+window](/images/pages/AnalyzeSkeleton_Branch_information.png
+"Example of AnalyzeSkeleton Branch information window")" When calling the
 plugin, if the "Show detailed information" checkbox is marked, a
 complementary results table called "Branch information" is shown.
 

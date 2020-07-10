@@ -25,24 +25,24 @@ under **Bounding Box Name**.
 
 The dialog will also list the currently **Existing Bounding Boxes**
 
-![BigStitcher\_BBox\_main.png](BigStitcher_BBox_main.png
-"BigStitcher_BBox_main.png")
+![BigStitcher\_BBox\_main.png](/images/pages/BigStitcher_BBox_main.png
+"BigStitcher_BBox_main.png")"
 
 ### Modify pre-defined Bounding Box
 
 First, you will be asked for the existing bounding box that you want to
 modify:
 
-![BigStitcher\_BBox\_existing.png](BigStitcher_BBox_existing.png
-"BigStitcher_BBox_existing.png")
+![BigStitcher\_BBox\_existing.png](/images/pages/BigStitcher_BBox_existing.png
+"BigStitcher_BBox_existing.png")"
 
 In the next dialog, you can modify the bounding box by adjusting the
 sliders for the minima and maxima. The size and memory/disk space
 requirements of a fusion will also be previewed. Clicking **OK** will
 generate the new, modified Mounding Box.
 
-![BigStitcher\_BBox\_modify.png](BigStitcher_BBox_modify.png
-"BigStitcher_BBox_modify.png")
+![BigStitcher\_BBox\_modify.png](/images/pages/BigStitcher_BBox_modify.png
+"BigStitcher_BBox_modify.png")"
 
 ### Define using the BigDataViewer interactively
 
@@ -50,8 +50,8 @@ This will open a new window allowing you to modify your bounding box by
 adjusting the sliders for the minima and maxima. If the BigDataViewer is
 open, the bounding box will be previewed there.
 
-![BigStitcher\_BBox\_interactive.png](BigStitcher_BBox_interactive.png
-"BigStitcher_BBox_interactive.png")
+![BigStitcher\_BBox\_interactive.png](/images/pages/BigStitcher_BBox_interactive.png
+"BigStitcher_BBox_interactive.png")"
 
 After clicking **OK**, another dialog will show a preview of the
 bounding box size and expected memory/disk space requirements for a
@@ -89,8 +89,8 @@ You will be asked for the following parameters:
   - *' Display image used for segmentation*': selecting this will show
     the fused and the filtered images.
 
-![BigStitcher\_BBox\_auto.png](BigStitcher_BBox_auto.png
-"BigStitcher_BBox_auto.png")
+![BigStitcher\_BBox\_auto.png](/images/pages/BigStitcher_BBox_auto.png
+"BigStitcher_BBox_auto.png")"
 
 After clicking **OK**, the bounding box will be estimated and another
 dialog will show a preview of the bounding box size and expected

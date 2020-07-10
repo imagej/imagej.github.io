@@ -65,8 +65,8 @@ Specifically intended for lightsheet acquisitions of cleared samples
 ![Illustrates an example of an interactive view of a single-view
 multi-tile dataset with irregular tiling acquired by lightsheet
 microscopy. Each tile of size 1920x1920x1000 pixels is depicted in a
-random color.](BigStitcherTitle-1.jpg
-"Illustrates an example of an interactive view of a single-view multi-tile dataset with irregular tiling acquired by lightsheet microscopy. Each tile of size 1920x1920x1000 pixels is depicted in a random color.")
+random color.](/images/pages/BigStitcherTitle-1.jpg
+"Illustrates an example of an interactive view of a single-view multi-tile dataset with irregular tiling acquired by lightsheet microscopy. Each tile of size 1920x1920x1000 pixels is depicted in a random color.")"
 
 ## Download
 

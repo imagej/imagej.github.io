@@ -24,14 +24,14 @@ category='[Segmentation](:Category:Segmentation "wikilink"),
 [Mathematical morphology](:Category:Mathematical_morphology "wikilink")'
 %}{| |style="vertical-align:top" |![Visual description of the different
 steps of the Morphological Segmentation
-plugin.](Morphological-Segmentation-animation-blobs.gif
-"Visual description of the different steps of the Morphological Segmentation plugin.")
+plugin.](/images/pages/Morphological-Segmentation-animation-blobs.gif
+"Visual description of the different steps of the Morphological Segmentation plugin.")"
 |}
 
 ## Introduction
 
-![Morphological-segmentation-front.png](Morphological-segmentation-front.png
-"Morphological-segmentation-front.png")Morphological Segmentation is an
+![Morphological-segmentation-front.png](/images/pages/Morphological-segmentation-front.png
+"Morphological-segmentation-front.png")"Morphological Segmentation is an
 ImageJ/Fiji plugin that combines morphological operations, such as
 extended minima and morphological gradient, with watershed flooding
 algorithms to segment grayscale images of any type (8, 16 and 32-bit) in
@@ -58,8 +58,8 @@ what filtering may be most appropriate upstream.
 
 ### Input Image panel
 
-![Input Image panel](Morphological-segmentation-input-image-panel.png
-"Input Image panel")First, you need to indicate the nature of the input
+![Input Image panel](/images/pages/Morphological-segmentation-input-image-panel.png
+"Input Image panel")"First, you need to indicate the nature of the input
 image to process. This is a **key parameter** since the watershed
 algorithm is expecting an image where the boundaries of objects present
 high intensity values (usually as a result of a gradient or edge
@@ -82,8 +82,8 @@ segmentation).
 ### Watershed Segmentation panel
 
 ![Watershed Segmentation
-panel](Morphological-segmentation-watershed-segmentation-panel.png
-"Watershed Segmentation panel")This panel is reserved to the parameters
+panel](/images/pages/Morphological-segmentation-watershed-segmentation-panel.png
+"Watershed Segmentation panel")"This panel is reserved to the parameters
 involved in the segmentation pipeline. By default, only the tolerance
 can be changed. Clicking on “Advanced options” enables the rest of
 options.
@@ -121,8 +121,8 @@ read “STOP” during that process).
 
 ### Results panel
 
-![Results panel](Morphological-segmentation-results-panel.png
-"Results panel")Only enabled after running the segmentation.
+![Results panel](/images/pages/Morphological-segmentation-results-panel.png
+"Results panel")"Only enabled after running the segmentation.
 
   - **Display**: list of options to display the segmentation results.
       - **Overlaid basins**: colored objects overlaying the input image
@@ -139,14 +139,14 @@ read “STOP” during that process).
     displayed in the canvas.
 
 ![Examples of the 4 different display
-options](Morphological-segmentation-result-examples.png
-"Examples of the 4 different display options")
+options](/images/pages/Morphological-segmentation-result-examples.png
+"Examples of the 4 different display options")"
 
 ### Post-processing panel
 
 ![Post-processing
-panel](Morphological-segmentation-post-processing-panel.png
-"Post-processing panel")Similarly to the Results panel, this panel only
+panel](/images/pages/Morphological-segmentation-post-processing-panel.png
+"Post-processing panel")"Similarly to the Results panel, this panel only
 gets enabled after running the segmentation pipeline.
 
   - **Merge labels**: merge together labels selected by either the

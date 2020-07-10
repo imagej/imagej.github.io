@@ -24,8 +24,8 @@ category='[Segmentation](:Category:Segmentation "wikilink"),
 [Mathematical morphology](:Category:Mathematical_morphology "wikilink")'
 %}{| |style="vertical-align:top" |![Marker-controlled flooding on the
 gradient image of the blobs
-sample.](Watershed-flooding-markers-blobs-gradient.gif
-"Marker-controlled flooding on the gradient image of the blobs sample.")
+sample.](/images/pages/Watershed-flooding-markers-blobs-gradient.gif
+"Marker-controlled flooding on the gradient image of the blobs sample.")"
 |}
 
 ## Introduction
@@ -43,8 +43,8 @@ user or determined automatically by another algorithm.
 ## Usage
 
 ![Main dialog of the Marker-controlled Watershed
-plugin](Marker-controlled-Watershed-dialog.png
-"Main dialog of the Marker-controlled Watershed plugin")
+plugin](/images/pages/Marker-controlled-Watershed-dialog.png
+"Main dialog of the Marker-controlled Watershed plugin")"
 Marker-controlled Watershed needs at least two images to run:
 
   - The **Input** image: a 2D or 3D grayscale image to flood, usually
@@ -78,8 +78,8 @@ Output:
 
 ![Example of marker-controlled watershed segmentation on nucleus of
 *Arabidopsis thaliana* (image courtesy of Kaori Sakai and Javier Arpon,
-INRA-Versailles)](Arabidopsis-nucleus-segmentation.png
-"Example of marker-controlled watershed segmentation on nucleus of Arabidopsis thaliana (image courtesy of Kaori Sakai and Javier Arpon, INRA-Versailles)")
+INRA-Versailles)](/images/pages/Arabidopsis-nucleus-segmentation.png
+"Example of marker-controlled watershed segmentation on nucleus of Arabidopsis thaliana (image courtesy of Kaori Sakai and Javier Arpon, INRA-Versailles)")"
 
 ## Installation
 

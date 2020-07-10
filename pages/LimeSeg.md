@@ -66,8 +66,8 @@ objects are labelled on their outline, like cells labeled on their
 membrane, as shown in the image below (source of the image :
 https://loci.wisc.edu/sample-data/dub).
 
-![Dub-scaled0.5XY-Tp19.png](Dub-scaled0.5XY-Tp19.png
-"Dub-scaled0.5XY-Tp19.png")
+![Dub-scaled0.5XY-Tp19.png](/images/pages/Dub-scaled0.5XY-Tp19.png
+"Dub-scaled0.5XY-Tp19.png")"
 
 LimeSeg can be used with simple commands provided by the plugin (under
 Plugins\>LimeSeg in ImageJ menu), or on a more advanced manner with
@@ -92,8 +92,8 @@ https://raw.githubusercontent.com/NicoKiaru/TestImages/master/Vesicles/Vesicles.
 in the ROI manager with the t key or with Edit\>Selection\>Add To
 Manager (only this ROI should be contained in the ROI manager).
 
-![LimeSeg\_Seed\_Vesicle.png](LimeSeg_Seed_Vesicle.png
-"LimeSeg_Seed_Vesicle.png")
+![LimeSeg\_Seed\_Vesicle.png](/images/pages/LimeSeg_Seed_Vesicle.png
+"LimeSeg_Seed_Vesicle.png")"
 
 3\. Execute the Sphere Seg command : **Plugins\>LimeSeg\>Sphere Seg**
 
@@ -138,23 +138,23 @@ Manager (only this ROI should be contained in the ROI manager).
 To segment this demo image, please choose the parameters as in this
 image:
 
-![LimeSeg\_Parameters\_Vesicle.png](LimeSeg_Parameters_Vesicle.png
-"LimeSeg_Parameters_Vesicle.png")
+![LimeSeg\_Parameters\_Vesicle.png](/images/pages/LimeSeg_Parameters_Vesicle.png
+"LimeSeg_Parameters_Vesicle.png")"
 
 After convergence, you can go through the 2D image and you should see
 some points along the objects, like this:
 
-![LimeSeg\_2DView\_Vesicle.png](LimeSeg_2DView_Vesicle.png
-"LimeSeg_2DView_Vesicle.png")
+![LimeSeg\_2DView\_Vesicle.png](/images/pages/LimeSeg_2DView_Vesicle.png
+"LimeSeg_2DView_Vesicle.png")"
 
 Also the 3D viewer should give a 3D View of the vesicle:
 
-![LimeSeg\_3DView\_Vesicle.png](LimeSeg_3DView_Vesicle.png
-"LimeSeg_3DView_Vesicle.png")
+![LimeSeg\_3DView\_Vesicle.png](/images/pages/LimeSeg_3DView_Vesicle.png
+"LimeSeg_3DView_Vesicle.png")"
 
 Other outputs are provided as an ImageJ table:
-![LimeSeg\_Results\_Vesicle.png](LimeSeg_Results_Vesicle.png
-"LimeSeg_Results_Vesicle.png")
+![LimeSeg\_Results\_Vesicle.png](/images/pages/LimeSeg_Results_Vesicle.png
+"LimeSeg_Results_Vesicle.png")"
 
   - **Cell\_Name** : each 3D object that LimeSeg generated is a "Cell"
     object. By default, these objects have a String identifier: Cell\_0,
@@ -215,8 +215,8 @@ before (0.133).
 
 The shape is now more precise, as you can see in the 2D view and in 3D:
 
-![LimeSeg\_2D3DViews\_Refined\_Vesicle.png](LimeSeg_2D3DViews_Refined_Vesicle.png
-"LimeSeg_2D3DViews_Refined_Vesicle.png")
+![LimeSeg\_2D3DViews\_Refined\_Vesicle.png](/images/pages/LimeSeg_2D3DViews_Refined_Vesicle.png
+"LimeSeg_2D3DViews_Refined_Vesicle.png")"
 
 ### Alternative ways to segment a single object: multiple spheres and skeletons
 
@@ -239,8 +239,8 @@ meet, they will merge into a single surface.
 
 For instance for three spherical seeds:
 
-![LimeSeg\_3D\_MultipleSeeds.png](LimeSeg_3D_MultipleSeeds.png
-"LimeSeg_3D_MultipleSeeds.png")
+![LimeSeg\_3D\_MultipleSeeds.png](/images/pages/LimeSeg_3D_MultipleSeeds.png
+"LimeSeg_3D_MultipleSeeds.png")"
 
 Final result:
 
@@ -262,8 +262,8 @@ which is a timepoint extracted from the full dataset
 2\. Using a few ROIs approximately define the contour of the embryo at
 certains slices, like in the image shown above:
 
-![LimeSeg\_Skeleton\_Example.png](LimeSeg_Skeleton_Example.png
-"LimeSeg_Skeleton_Example.png")
+![LimeSeg\_Skeleton\_Example.png](/images/pages/LimeSeg_Skeleton_Example.png
+"LimeSeg_Skeleton_Example.png")"
 
 You need to begin and end with a single point ROI, otherwise the shape
 will not be closed. Also, the ROIs need to be drawn clockwise and should
@@ -274,8 +274,8 @@ anything else in the ROI manager. Using the parameters D\_0=10,
 F\_pressure = 0, range\_in \_d0\_units=2 and Z\_scale=3.5 should give
 correct results, like shown below:
 
-![LimeSeg\_CElegans\_Global.png](LimeSeg_CElegans_Global.png
-"LimeSeg_CElegans_Global.png")
+![LimeSeg\_CElegans\_Global.png](/images/pages/LimeSeg_CElegans_Global.png
+"LimeSeg_CElegans_Global.png")"
 
 ## Multiple objects segmentation
 
@@ -305,8 +305,8 @@ other, a bit resembling watershed methods in that aspect.
 You can define multiple seeds (one per cell) simply by storing multiple
 circular ROIs in the ROI manager. Like in this image:
 
-![LimeSeg-MultiSeeds-SphereSeg.png](LimeSeg-MultiSeeds-SphereSeg.png
-"LimeSeg-MultiSeeds-SphereSeg.png")
+![LimeSeg-MultiSeeds-SphereSeg.png](/images/pages/LimeSeg-MultiSeeds-SphereSeg.png
+"LimeSeg-MultiSeeds-SphereSeg.png")"
 
 Of course the seeds can be located at different planes.
 
@@ -314,13 +314,13 @@ You can then launch the **Plugins\>LimeSeg\>Sphere Seg** command with
 the previously defined parameters, but **be sure to uncheck the sameCell
 checkbox** (otherwise surfaces will merge):
 
-![LimeSeg-MultiSeeds-Param.png](LimeSeg-MultiSeeds-Param.png
-"LimeSeg-MultiSeeds-Param.png")
+![LimeSeg-MultiSeeds-Param.png](/images/pages/LimeSeg-MultiSeeds-Param.png
+"LimeSeg-MultiSeeds-Param.png")"
 
 You should obtain an image similar to this:
 
-![LimeSeg-MultiSeeds-Output.png](LimeSeg-MultiSeeds-Output.png
-"LimeSeg-MultiSeeds-Output.png")
+![LimeSeg-MultiSeeds-Output.png](/images/pages/LimeSeg-MultiSeeds-Output.png
+"LimeSeg-MultiSeeds-Output.png")"
 
 If you want to segment the whole embryo, you'll need to provide the
 location of the cell centers, and then launch the command. The following
@@ -425,8 +425,8 @@ cell object may contain many **CellT** objects, which stands for
 **Cell** at a specific **T**imepoint. For instance, the Cell
 **cell\_56** contains 10 CellT objects, for timepoints 12 to 22.
 
-![LimeSeg-CellExplorer.png](LimeSeg-CellExplorer.png
-"LimeSeg-CellExplorer.png")
+![LimeSeg-CellExplorer.png](/images/pages/LimeSeg-CellExplorer.png
+"LimeSeg-CellExplorer.png")"
 
 #### Vizualizing 3D Objects
 

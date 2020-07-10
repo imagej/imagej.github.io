@@ -60,8 +60,8 @@ Scale" plugin.
 4.  In the new dialog, enter a value by which the receiving image has
     been scaled.
 
-![copy\_pixel\_size\_values.png](copy_pixel_size_values.png
-"copy_pixel_size_values.png")
+![copy\_pixel\_size\_values.png](/images/pages/copy_pixel_size_values.png
+"copy_pixel_size_values.png")"
 
 #### Set Scale
 

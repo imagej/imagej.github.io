@@ -109,8 +109,8 @@ identical to the LoG detector, except that it splits the image in
 smaller XY blocks and processes them independently. If you process each
 of this block sequentially, you can drastically reduce memory usage.
 
-![TrackMate\_BlockLogDetector.png](TrackMate_BlockLogDetector.png
-"TrackMate_BlockLogDetector.png")
+![TrackMate\_BlockLogDetector.png](/images/pages/TrackMate_BlockLogDetector.png
+"TrackMate_BlockLogDetector.png")"
 
 Of course there is a price to pay: Spots that are present exactly on the
 block borders might be detected twice on two different blocks. This will
@@ -134,8 +134,8 @@ If you need to capture spot images with a larger radius than what the
 spots have, set the display radius ratio. This is very useful when you
 need to inspect a larger spatial context around spots.
 
-![TrackSchemeHonorsRadiusRatio.png](TrackSchemeHonorsRadiusRatio.png
-"TrackSchemeHonorsRadiusRatio.png")
+![TrackSchemeHonorsRadiusRatio.png](/images/pages/TrackSchemeHonorsRadiusRatio.png
+"TrackSchemeHonorsRadiusRatio.png")"
 
 ### The *Extract track stack* action improved.
 

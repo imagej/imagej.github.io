@@ -185,8 +185,8 @@ Commands… \[l\]↓\]\]</span></span>
 <div class="center">
 
 ![figure
-images/CommandFinderAndSearch.png](images/CommandFinderAndSearch.png
-"figure images/CommandFinderAndSearch.png")
+images/CommandFinderAndSearch.png](/images/pages/images/CommandFinderAndSearch.png
+"figure images/CommandFinderAndSearch.png")"
 
 </div>
 
@@ -591,8 +591,8 @@ submenu contains commands for common stack operations.
 
 <div class="figure">
 
-![figure images/StacksHyperstacks.png](images/StacksHyperstacks.png
-"figure images/StacksHyperstacks.png")
+![figure images/StacksHyperstacks.png](/images/pages/images/StacksHyperstacks.png
+"figure images/StacksHyperstacks.png")"
 
 <div class="caption">
 
@@ -703,8 +703,8 @@ float-infobox4 Opening Virtual Stacks by Drag & Drop
 TIFF stacks with a <span class="Filename">.tif</span> extension open as
 virtual stacks when dragged and dropped on
 the<span class="sans"> ![figure
-images/tools/Switcher-small.png](images/tools/Switcher-small.png
-"figure images/tools/Switcher-small.png")  </span>toolbar icon.
+images/tools/Switcher-small.png](/images/pages/images/tools/Switcher-small.png
+"figure images/tools/Switcher-small.png")"  </span>toolbar icon.
 
 <div class="medskip">
 
@@ -715,8 +715,8 @@ images/tools/Switcher-small.png](images/tools/Switcher-small.png
 <div class="center">
 
 ![figure
-images/DragAndDropVirtualTiff.png](images/DragAndDropVirtualTiff.png
-"figure images/DragAndDropVirtualTiff.png")
+images/DragAndDropVirtualTiff.png](/images/pages/images/DragAndDropVirtualTiff.png
+"figure images/DragAndDropVirtualTiff.png")"
 
 </div>
 
@@ -814,8 +814,8 @@ color space.
 
 <div class="figure" style="max-width: 100%;">
 
-![figure images/RGB-HSBcolorModels.png](images/RGB-HSBcolorModels.png
-"figure images/RGB-HSBcolorModels.png")
+![figure images/RGB-HSBcolorModels.png](/images/pages/images/RGB-HSBcolorModels.png
+"figure images/RGB-HSBcolorModels.png")"
 
 <div class="caption">
 
@@ -905,8 +905,8 @@ Masataka Okabe and Kei Ito:
 
 <div class="figure" style="max-width: 100%;">
 
-![figure images/Dichromacy.png](images/Dichromacy.png
-"figure images/Dichromacy.png")
+![figure images/Dichromacy.png](/images/pages/images/Dichromacy.png
+"figure images/Dichromacy.png")"
 
 <div class="caption">
 
@@ -1129,8 +1129,8 @@ the center of the [Point Tool↓](#sec:Point-Tool "wikilink") and
 
 <div class="figure" style="max-width: 88%;">
 
-![figure images/Selections.png](images/Selections.png
-"figure images/Selections.png")
+![figure images/Selections.png](/images/pages/images/Selections.png
+"figure images/Selections.png")"
 
 <div class="caption">
 
@@ -1207,8 +1207,8 @@ Manager…</span>↓](#sub:ROI-Manager... "wikilink")</span></span>).
 
 **Moving** Selections can be moved by clicking and dragging as long as
 the cursor is within the selection and has changed to an ![figure
-images/pointers/Pointer-Arrow.png](images/pointers/Pointer-Arrow.png
-"figure images/pointers/Pointer-Arrow.png") . The status bar displays
+images/pointers/Pointer-Arrow.png](/images/pages/images/pointers/Pointer-Arrow.png
+"figure images/pointers/Pointer-Arrow.png")" . The status bar displays
 the coordinates of the upper left corner of the selection (or the
 bounding rectangle for non-rectangular selections) as it is being moved.
 To move the contents of a selection, rather than the selection itself,
@@ -1256,8 +1256,8 @@ aspect ratio and holding <span class="Keystroke">Shift</span> forces a
 
 <div class="figure">
 
-![figure images/compositeROI.png](images/compositeROI.png
-"figure images/compositeROI.png")
+![figure images/compositeROI.png](/images/pages/images/compositeROI.png
+"figure images/compositeROI.png")"
 
 </div>
 
@@ -1325,8 +1325,8 @@ created on images zoomed 1200% or greater.
 
 <div class="figure">
 
-![figure images/SubPixel.png](images/SubPixel.png
-"figure images/SubPixel.png")
+![figure images/SubPixel.png](/images/pages/images/SubPixel.png
+"figure images/SubPixel.png")"
 
 <div class="caption">
 
@@ -1377,8 +1377,8 @@ IJ2 if multiple ROIs are important in your workflows.
 
 <div class="figure" style="max-width: 75%;">
 
-![figure images/OverlayShowcase.png](images/OverlayShowcase.png
-"figure images/OverlayShowcase.png")
+![figure images/OverlayShowcase.png](/images/pages/images/OverlayShowcase.png
+"figure images/OverlayShowcase.png")"
 
 <div class="caption">
 
@@ -1510,8 +1510,8 @@ special dependencies, reason why they are all bundled as part of
 
 <div class="figure" style="max-width: 70%;">
 
-![figure images/3Dviewer.png](images/3Dviewer.png
-"figure images/3Dviewer.png")
+![figure images/3Dviewer.png](/images/pages/images/3Dviewer.png
+"figure images/3Dviewer.png")"
 
 <div class="caption">
 

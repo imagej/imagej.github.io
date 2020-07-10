@@ -40,8 +40,8 @@ dialogs:
 
 ### General configuration
 
-![Configuration dialog](SproutAnalyzer_Configuration.png
-"Configuration dialog")
+![Configuration dialog](/images/pages/SproutAnalyzer_Configuration.png
+"Configuration dialog")"
 
 ### Bead detection
 
@@ -49,24 +49,24 @@ dialogs:
 
 ### Sprout detection
 
-![Sprout detection](SproutAnalyzer_SproutDetection.png
-"Sprout detection")
+![Sprout detection](/images/pages/SproutAnalyzer_SproutDetection.png
+"Sprout detection")"
 
 ### Nucleus segmentation
 
-![Nucleus segmentation](SproutAnalyzer_NucleusSegmentation.png
-"Nucleus segmentation")
+![Nucleus segmentation](/images/pages/SproutAnalyzer_NucleusSegmentation.png
+"Nucleus segmentation")"
 
 ### Endothelial cell/Pericyte classification
 
 ![Cell classification of ECs and
-pericytes](SproutAnalyzer_CellClassification.png
-"Cell classification of ECs and pericytes")
+pericytes](/images/pages/SproutAnalyzer_CellClassification.png
+"Cell classification of ECs and pericytes")"
 
 ### Pericyte coverage
 
-![Pericyte coverage measurement](SproutAnalyzer_PericyteCoverage.png
-"Pericyte coverage measurement")
+![Pericyte coverage measurement](/images/pages/SproutAnalyzer_PericyteCoverage.png
+"Pericyte coverage measurement")"
 
 ## Publication
 

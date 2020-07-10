@@ -28,8 +28,8 @@ respect to real-coordinate interfaces for continuous images that are
 left out for now.)
 
 ![Simplified UML for ImgLib2 accessor
-interfaces](imglib2-accessors-simplified-integer.png
-"Simplified UML for ImgLib2 accessor interfaces")
+interfaces](/images/pages/imglib2-accessors-simplified-integer.png
+"Simplified UML for ImgLib2 accessor interfaces")"
 
 ImgLib2 supports two basic access patterns:
 
@@ -689,8 +689,8 @@ interface hierarchy. The real-coordinate counterparts that were missing
 in the simplified version [
 above](ImgLib2_-_Accessors#Introduction "wikilink") are highlighted.
 
-![UML for ImgLib2 accessor interfaces](imglib2-accessors-real.png
-"UML for ImgLib2 accessor interfaces")
+![UML for ImgLib2 accessor interfaces](/images/pages/imglib2-accessors-real.png
+"UML for ImgLib2 accessor interfaces")"
 
 Real equivalents of the **Positionable** and **Localizable** interfaces
 have been added by which real-valued coordinates can be accessed.
@@ -840,8 +840,8 @@ copied accessor is supposed to refer to the same position and value,
 therefore we **setPosition** in line *051*.
 
 ![UML for abstract RealRandomAccess class
-hierarchy](imglib2-abstract-accessors-real-new-vertical.png
-"UML for abstract RealRandomAccess class hierarchy")
+hierarchy](/images/pages/imglib2-abstract-accessors-real-new-vertical.png
+"UML for abstract RealRandomAccess class hierarchy")"
 
 Now let's use the **MandelbrotRealRandomAccess** to render a pixel
 image:

@@ -23,8 +23,8 @@ mono-exponential decay is described by the equation:
 **Corrected intensity = (Intensity at time *t*) *÷*
 exp<sup>-k×*t*</sup>** where k = decay constant
 
-![bleach\_correction\_window.png](bleach_correction_window.png
-"bleach_correction_window.png")
+![bleach\_correction\_window.png](/images/pages/bleach_correction_window.png
+"bleach_correction_window.png")"
 
 If you know the decay constant *k*, you can use the plugin
 "*Image/Adjust/Bleach Correction*" with the exponential fitting method.
@@ -38,8 +38,8 @@ Raw time course
 
 Bleach corrected time course
 
-![bleach\_corrected\_data.png](bleach_corrected_data.png
-"bleach_corrected_data.png")
+![bleach\_corrected\_data.png](/images/pages/bleach_corrected_data.png
+"bleach_corrected_data.png")"
 
 The k value can be calculated in ImageJ by:
 
@@ -128,8 +128,8 @@ This will return the FdivF0 stack and a thresholded FdivF0 stack.
 
 **Raw**
 
-![delta\_f\_corrected.png](delta_f_corrected.png
-"delta_f_corrected.png")
+![delta\_f\_corrected.png](/images/pages/delta_f_corrected.png
+"delta_f_corrected.png")"
 
 **Delta-F up**
 
@@ -153,8 +153,8 @@ may also be useful to clean up time courses prior to motion tracking.
 
 ## Surface plotting
 
-![surface\_plot\_compare.png](surface_plot_compare.png
-"surface_plot_compare.png")
+![surface\_plot\_compare.png](/images/pages/surface_plot_compare.png
+"surface_plot_compare.png")"
 
 Surface plots can be generated in many ways: notably via the menu
 command “*Analyze/Surface plot*” or via the plugins “*SurfaceJ*” and

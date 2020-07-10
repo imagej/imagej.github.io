@@ -45,8 +45,8 @@ the binary mask (Chamfer distance map using normalized Chessknight
 weights and 32-bit output) and resulting labeled image after applying
 watershed to the inverse distance image using the binary mask (dynamic
 of 1 and
-4-connectivity).](MorphoLibJ-distance-transform-watershed-basics.png
-"Basics of the Distance Transform Watershed algorithm. From left to right: sample image of touching DAPI stained cell nuclei from a confocal laser scanning microscope, binary mask calculated after filtering and thresholding input image, inverse of the distance transform applied to the binary mask (Chamfer distance map using normalized Chessknight weights and 32-bit output) and resulting labeled image after applying watershed to the inverse distance image using the binary mask (dynamic of 1 and 4-connectivity).")
+4-connectivity).](/images/pages/MorphoLibJ-distance-transform-watershed-basics.png
+"Basics of the Distance Transform Watershed algorithm. From left to right: sample image of touching DAPI stained cell nuclei from a confocal laser scanning microscope, binary mask calculated after filtering and thresholding input image, inverse of the distance transform applied to the binary mask (Chamfer distance map using normalized Chessknight weights and 32-bit output) and resulting labeled image after applying watershed to the inverse distance image using the binary mask (dynamic of 1 and 4-connectivity).")"
 
 [MorphoLibJ](MorphoLibJ "wikilink") provides two plugins under the {%
 include bc content='Plugins | MorphoLibJ | Binary Images...'%} menu to
@@ -57,8 +57,8 @@ apply this strategy on 2D and 3D images:
 Distance Transform Watershed needs one 2D 8-bit binary image to run. If
 that's the case, a dialog like the following will pop up:
 
-![Distance-Transform-Watershed-2D-menu.png](Distance-Transform-Watershed-2D-menu.png
-"Distance-Transform-Watershed-2D-menu.png")
+![Distance-Transform-Watershed-2D-menu.png](/images/pages/Distance-Transform-Watershed-2D-menu.png
+"Distance-Transform-Watershed-2D-menu.png")"
 
 The plugin parameters are divided between the distance transform and the
 watershed options:
@@ -109,8 +109,8 @@ visualize clicking on the Preview option.
 Distance Transform Watershed 3D needs one 3D 8-bit binary image to run.
 If that's the case, a dialog like the following will pop up:
 
-![Distance-Transform-Watershed-3D-menu.png](Distance-Transform-Watershed-3D-menu.png
-"Distance-Transform-Watershed-3D-menu.png")
+![Distance-Transform-Watershed-3D-menu.png](/images/pages/Distance-Transform-Watershed-3D-menu.png
+"Distance-Transform-Watershed-3D-menu.png")"
 
 The parameters are the same as in the 2D version but some of them are
 adapted for 3D images:

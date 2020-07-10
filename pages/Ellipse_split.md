@@ -47,31 +47,31 @@ The generall approach of the ellipse fitting plugin is as follows:
 
 Suppose you have the following input image:
 
-![Ellipsesplit\_input.png](Ellipsesplit_input.png
-"Ellipsesplit_input.png")
+![Ellipsesplit\_input.png](/images/pages/Ellipsesplit_input.png
+"Ellipsesplit_input.png")"
 
 Then the watershed approach (*Process -\> Binary -\> Watershed*) would
 give this result:
 
-![Ellipsesplit\_watershed.png](Ellipsesplit_watershed.png
-"Ellipsesplit_watershed.png")
+![Ellipsesplit\_watershed.png](/images/pages/Ellipsesplit_watershed.png
+"Ellipsesplit_watershed.png")"
 
 The ellipse splitting plugin applied to the input image will combine the
 watershed result and direct ellipse fitting. This leads to the following
 result:
 
-![Ellipsesplit\_result.png](Ellipsesplit_result.png
-"Ellipsesplit_result.png")
+![Ellipsesplit\_result.png](/images/pages/Ellipsesplit_result.png
+"Ellipsesplit_result.png")"
 
 Furthermore it outputs several important features:
 
-![Ellipsesplit\_resultstable.png](Ellipsesplit_resultstable.png
-"Ellipsesplit_resultstable.png")
+![Ellipsesplit\_resultstable.png](/images/pages/Ellipsesplit_resultstable.png
+"Ellipsesplit_resultstable.png")"
 
 ## Parameters
 
-![GUI of Ellipse Split Plugin](EllipseSplit.png
-"GUI of Ellipse Split Plugin")
+![GUI of Ellipse Split Plugin](/images/pages/EllipseSplit.png
+"GUI of Ellipse Split Plugin")"
 
 **Binary splitted image:** If set to "Use standard watershed" it will
 use ImageJ's watershed technique to split the binary object. If there

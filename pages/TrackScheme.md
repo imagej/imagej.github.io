@@ -22,8 +22,8 @@ This is not the focus of this tutorial, we will simply be focusing on
 the track editing features. However, here is a brief description of what
 the toolbar buttons do.
 
-![TrackSchemeToolbarExplanation.png](TrackSchemeToolbarExplanation.png
-"TrackSchemeToolbarExplanation.png")
+![TrackSchemeToolbarExplanation.png](/images/pages/TrackSchemeToolbarExplanation.png
+"TrackSchemeToolbarExplanation.png")"
 
 We will be mainly using the **Redo layout** and button.
 
@@ -77,8 +77,8 @@ on this screenshot the target cell closer to the lane of the track 2.
 You can normally find it either on its own lane or on the far right of
 the panel.
 
-![TrackMate\_CreateLinksInTrackScheme\_annotated.png](TrackMate_CreateLinksInTrackScheme_annotated.png
-"TrackMate_CreateLinksInTrackScheme_annotated.png")
+![TrackMate\_CreateLinksInTrackScheme\_annotated.png](/images/pages/TrackMate_CreateLinksInTrackScheme_annotated.png
+"TrackMate_CreateLinksInTrackScheme_annotated.png")"
 
 Press the **Redo layout** button to see the arranged result. The first
 spot is now incorporated in the right track.
@@ -116,8 +116,8 @@ to rearrange the tracks.
 
 This can be used to create branching links, as picture below:
 
-![TrackMate\_BranchingTrack.png](TrackMate_BranchingTrack.png
-"TrackMate_BranchingTrack.png")
+![TrackMate\_BranchingTrack.png](/images/pages/TrackMate_BranchingTrack.png
+"TrackMate_BranchingTrack.png")"
 
 ### Creating several links at once
 

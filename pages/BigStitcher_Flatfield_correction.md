@@ -16,8 +16,8 @@ can be corrected via a process called **flatfield correction**. We offer
 on-the-fly correction for a user-provided **dark image** and/or **bright
 image**.
 
-![BigStitcher\_Flatfield\_1.png](BigStitcher_Flatfield_1.png
-"BigStitcher_Flatfield_1.png")
+![BigStitcher\_Flatfield\_1.png](/images/pages/BigStitcher_Flatfield_1.png
+"BigStitcher_Flatfield_1.png")"
 
 We perform the correction by calculating a corrected image pixel
 \(C_{x,y,z}\) according to
@@ -43,8 +43,8 @@ Click on the menu item and you will be presented with a dialog allowing
 you to set bright and dark images for every (channel, illumination
 direction)-combination of your images.
 
-![BigStitcher\_Flatfield\_2.png](BigStitcher_Flatfield_2.png
-"BigStitcher_Flatfield_2.png")
+![BigStitcher\_Flatfield\_2.png](/images/pages/BigStitcher_Flatfield_2.png
+"BigStitcher_Flatfield_2.png")"
 
 You can specify the dark and bright image files by dragging and dropping
 the file, entering the path manually or selecting the file by clicking

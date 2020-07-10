@@ -86,8 +86,8 @@ Stack Sorter: “*Image/Stacks/Tools/Stack Sorter*”.
   - Control the position of individual slices or groups of slices.
   - Advanced “Insert” functionality.
 
-![stack\_slice\_manipulations1.png](stack_slice_manipulations1.png
-"stack_slice_manipulations1.png")
+![stack\_slice\_manipulations1.png](/images/pages/stack_slice_manipulations1.png
+"stack_slice_manipulations1.png")"
 
 ## Stack dimension manipulations
 

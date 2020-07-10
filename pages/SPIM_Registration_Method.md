@@ -36,8 +36,8 @@ more powerful, flexible and completely integrated with the
 ### SPIM principles
 
 ![<b>Figure 1:</b> Schematic drawing of a Selective Plane Illumination
-Microscope](SPIMScheme.png
-"Figure 1: Schematic drawing of a Selective Plane Illumination Microscope")
+Microscope](/images/pages/SPIMScheme.png
+"Figure 1: Schematic drawing of a Selective Plane Illumination Microscope")"
 A Selective Plane Illumination Microscope<ref name="HuiskenAl2004"> {%
 capture includecontent %} journal | author = J. Huisken and J. Swoger
 and F. D. Bene and J. Wittbrodt and E. H. K. Stelzer | title = Optical
@@ -387,8 +387,8 @@ beads are repeatably detected in different views.
 ### Establishing Bead Correspondences
 
 ![<b>Figure 2:</b> Rotation invariant local geometric
-descriptor](DescriptorBuildup.png
-"Figure 2: Rotation invariant local geometric descriptor") To register
+descriptor](/images/pages/DescriptorBuildup.png
+"Figure 2: Rotation invariant local geometric descriptor")" To register
 two views \(A\) and \(B\) the corresponding bead pairs
 \((\vec{a},\vec{b})\) have to be identified invariantly to translation
 and rotation. To this end, we developed a *geometric local descriptor* .
@@ -636,8 +636,8 @@ intensity of the beads is around 2-4.
 
 ### Evaluation of the performance of the bead-based registration framework
 
-![<b>Figure 4:</b> Analysis of the registration error](ErrorAnalysis.png
-"Figure 4: Analysis of the registration error") We created a
+![<b>Figure 4:</b> Analysis of the registration error](/images/pages/ErrorAnalysis.png
+"Figure 4: Analysis of the registration error")" We created a
 visualization of the optimization procedure. For each view, we display
 its bounding box and the locations of all corresponding descriptors in a
 3d visualization framework<ref name="Bene2007"> {% capture
@@ -741,8 +741,8 @@ further imaging.
 
 ![<b>Figure 5:</b> Comparison of bead-based and intensity-based
 multi-view reconstruction on 7-view acquisition of Drosophila embryo
-expressing His-YFP](Intensity_vs_Beads.jpg
-"Figure 5: Comparison of bead-based and intensity-based multi-view reconstruction on 7-view acquisition of Drosophila embryo expressing His-YFP")
+expressing His-YFP](/images/pages/Intensity_vs_Beads.jpg
+"Figure 5: Comparison of bead-based and intensity-based multi-view reconstruction on 7-view acquisition of Drosophila embryo expressing His-YFP")"
 Existing muti-view SPIM registration approaches that use sample
 intensities to iteratively optimize the quality of the overlap of the
 views do not work reliably and are computationally
@@ -917,8 +917,8 @@ Xeon E5440 system.
 ### Overview of imaged specimens
 
 ![<b>Figure 6:</b> Examples of various reconstructed multi-view
-datasets](Showcase.jpg
-"Figure 6: Examples of various reconstructed multi-view datasets") We
+datasets](/images/pages/Showcase.jpg
+"Figure 6: Examples of various reconstructed multi-view datasets")" We
 demonstrated the performance of our registration framework on multi-view
 *in toto* imaging of fixed and living specimen of various model
 organisms ([Figure 6](Media:Showcase.jpg "wikilink")), in particular
@@ -968,8 +968,8 @@ sample movement does not disturb the rigidity of the agarose.
 ## Broad applicability of the bead-based framework to multi-view imaging
 
 ![<b>Figure 7:</b> Multi-view imaging with spinning disc confocal
-microscopy](Rotation_chamber.png
-"Figure 7: Multi-view imaging with spinning disc confocal microscopy")
+microscopy](/images/pages/Rotation_chamber.png
+"Figure 7: Multi-view imaging with spinning disc confocal microscopy")"
 Having the bead-based registration framework for multi-view
 reconstruction established, we sought to expand its application beyond
 SPIM, to other microscopy techniques capable of multi-view
@@ -1039,8 +1039,8 @@ does not bleach.
 ## Implementation
 
 ![<b>Figure 8:</b> Screenshot of SPIM registration plugin in
-Fiji](Screenshot.png
-"Figure 8: Screenshot of SPIM registration plugin in Fiji") The
+Fiji](/images/pages/Screenshot.png
+"Figure 8: Screenshot of SPIM registration plugin in Fiji")" The
 bead-based registration framework is implemented in the Java programming
 language and provided as a fully open source plugin packaged with the
 ImageJ distribution [Fiji](Fiji "wikilink") (Fiji Is Just ImageJ, that

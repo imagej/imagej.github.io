@@ -33,8 +33,8 @@ To make points in a new image, open that image and start the plugin
 *Name Landmarks and Register*. You should see a dialog something like
 this:
 
-![Landmarks-00-no-points-yet.png](Landmarks-00-no-points-yet.png
-"Landmarks-00-no-points-yet.png")
+![Landmarks-00-no-points-yet.png](/images/pages/Landmarks-00-no-points-yet.png
+"Landmarks-00-no-points-yet.png")"
 
 There is only one named point so far, which has been given the name
 "Named Point (0)" and does not have its position set. We should change
@@ -44,8 +44,8 @@ lateral part of mb (left)", and I change the name by clicking the
 "Rename" button and entering some new text. The result of that should
 look like this:
 
-![Landmarks-01-named-unset.png](Landmarks-01-named-unset.png
-"Landmarks-01-named-unset.png")
+![Landmarks-01-named-unset.png](/images/pages/Landmarks-01-named-unset.png
+"Landmarks-01-named-unset.png")"
 
 Now we need to set the position of that point. You do that by:
 
@@ -58,21 +58,21 @@ Now we need to set the position of that point. You do that by:
 After the first two steps this should look something like this: (note
 the crosshairs in the image window)
 
-![Landmarks-02-point-ROI-selected.png](Landmarks-02-point-ROI-selected.png
-"Landmarks-02-point-ROI-selected.png")
+![Landmarks-02-point-ROI-selected.png](/images/pages/Landmarks-02-point-ROI-selected.png
+"Landmarks-02-point-ROI-selected.png")"
 
 ... and after step 3 (clicking the appropriate button to mark the point)
 it should like this:
 
-![Landmarks-03-point-named.png](Landmarks-03-point-named.png
-"Landmarks-03-point-named.png")
+![Landmarks-03-point-named.png](/images/pages/Landmarks-03-point-named.png
+"Landmarks-03-point-named.png")"
 
 As you can see, the x, y and z coordinates of that point have been
 recorded in the interface. To add a second point, click on "Add New
 Point" and repeat the process:
 
-![Landmarks-04-second-point-set.png](Landmarks-04-second-point-set.png
-"Landmarks-04-second-point-set.png")
+![Landmarks-04-second-point-set.png](/images/pages/Landmarks-04-second-point-set.png
+"Landmarks-04-second-point-set.png")"
 
 We will set 6 different named points in this template image. For
 registration it's important that you pick points that are easily and
@@ -82,8 +82,8 @@ select points in a single plane, the registration steps are not likely
 to work well.) After selecting all of these points, the interface should
 look something like this:
 
-![Landmarks-05-six-points-set.png](Landmarks-05-six-points-set.png
-"Landmarks-05-six-points-set.png")
+![Landmarks-05-six-points-set.png](/images/pages/Landmarks-05-six-points-set.png
+"Landmarks-05-six-points-set.png")"
 
 This is the image that we are going to use as a template for all the
 subsequent images, so we should set this as the default template. To do
@@ -106,8 +106,8 @@ that, following the following steps:
 
 Once you've selected the image, the interface will look like this:
 
-![Landmarks-06-template-set.png](Landmarks-06-template-set.png
-"Landmarks-06-template-set.png")
+![Landmarks-06-template-set.png](/images/pages/Landmarks-06-template-set.png
+"Landmarks-06-template-set.png")"
 
 Next we will move on to marking up an image that we'd like to register
 to the template, so click the "Close" button in the dialog or close the
@@ -119,8 +119,8 @@ the default template then you should see that the dialog is populated
 with the names of the points that have been marked in the template, but
 with no positions set yet:
 
-![Landmarks-07-floating-image.png](Landmarks-07-floating-image.png
-"Landmarks-07-floating-image.png")
+![Landmarks-07-floating-image.png](/images/pages/Landmarks-07-floating-image.png
+"Landmarks-07-floating-image.png")"
 
 Now you should mark the corresponding points in this image in the same
 way as for the template (except, of course, that one doesn't need to add
@@ -129,7 +129,7 @@ landmarks, you can select one of the three buttons at the bottom which
 will calculate the transformation in different ways. An example is shown
 here:
 
-![Landmarks-09-registered-and-overlayed.png](Landmarks-09-registered-and-overlayed.png
-"Landmarks-09-registered-and-overlayed.png")
+![Landmarks-09-registered-and-overlayed.png](/images/pages/Landmarks-09-registered-and-overlayed.png
+"Landmarks-09-registered-and-overlayed.png")"
 
 [Category:Plugins](Category:Plugins "wikilink")

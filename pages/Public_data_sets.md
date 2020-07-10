@@ -46,8 +46,8 @@ available public data sets from the Fiji community and other sources:
     tissue](http://www.ini.uzh.ch/~acardona/data.html), thanks to Albert
     Cardona.
 
-![TrakEM2-tree-datastructure.png](TrakEM2-tree-datastructure.png
-"TrakEM2-tree-datastructure.png")
+![TrakEM2-tree-datastructure.png](/images/pages/TrakEM2-tree-datastructure.png
+"TrakEM2-tree-datastructure.png")"
 ![TrakEM2-display-s.jpg](/images/pages/TrakEM2-display-s.jpg "TrakEM2-display-s.jpg")"
 
   -   

@@ -170,25 +170,25 @@ e-tool](https://labs.inf.fh-dortmund.de/NanoDefiner/?anchor=version#version).
 ## Gold 8 nm, Settings: +Ellipse fitting mode
 
 ![Gold\_nooverlay.png](/images/pages/Gold_nooverlay.png "Gold_nooverlay.png")"
-![Gold\_overlay\_ellipsefitting.png](Gold_overlay_ellipsefitting.png
-"Gold_overlay_ellipsefitting.png")
-![Gold\_overlay\_ellipsefitting\_size.png](Gold_overlay_ellipsefitting_size.png
-"Gold_overlay_ellipsefitting_size.png")
+![Gold\_overlay\_ellipsefitting.png](/images/pages/Gold_overlay_ellipsefitting.png
+"Gold_overlay_ellipsefitting.png")"
+![Gold\_overlay\_ellipsefitting\_size.png](/images/pages/Gold_overlay_ellipsefitting_size.png
+"Gold_overlay_ellipsefitting_size.png")"
 
 \== Gold 10 nm, Settings: +Min. OTB difference=30 ==
-![10nm\_gold\_nooverlay.png](10nm_gold_nooverlay.png
-"10nm_gold_nooverlay.png")
-![10nm\_gold\_overlay.png](10nm_gold_overlay.png
-"10nm_gold_overlay.png")
-![10nm\_gold\_overlay\_size.png](10nm_gold_overlay_size.png
-"10nm_gold_overlay_size.png")
+![10nm\_gold\_nooverlay.png](/images/pages/10nm_gold_nooverlay.png
+"10nm_gold_nooverlay.png")"
+![10nm\_gold\_overlay.png](/images/pages/10nm_gold_overlay.png
+"10nm_gold_overlay.png")"
+![10nm\_gold\_overlay\_size.png](/images/pages/10nm_gold_overlay_size.png
+"10nm_gold_overlay_size.png")"
 
 ## Kaolin, Settings: +Single particle mode
 
-![Kaolin\_ohne\_overlay.png](Kaolin_ohne_overlay.png
-"Kaolin_ohne_overlay.png") ![Kaolin\_overlay.png](Kaolin_overlay.png
-"Kaolin_overlay.png") ![Kaolin\_size\_distr.png](Kaolin_size_distr.png
-"Kaolin_size_distr.png")
+![Kaolin\_ohne\_overlay.png](/images/pages/Kaolin_ohne_overlay.png
+"Kaolin_ohne_overlay.png")" ![Kaolin\_overlay.png](/images/pages/Kaolin_overlay.png
+"Kaolin_overlay.png")" ![Kaolin\_size\_distr.png](/images/pages/Kaolin_size_distr.png
+"Kaolin_size_distr.png")"
 
 # How to cite
 

@@ -12,8 +12,8 @@ description: test description
 
 ## Usage
 
-![Directionality\_Example.png](Directionality_Example.png
-"Directionality_Example.png")
+![Directionality\_Example.png](/images/pages/Directionality_Example.png
+"Directionality_Example.png")"
 
 This plugin is used to infer the preferred orientation of structures
 present in the input image. It computes a histogram indicating the

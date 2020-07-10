@@ -16,8 +16,8 @@ images** into smaller blocks which can be registered individually,
 partially accounting for non-rigid distortions within the original
 images.
 
-![BigStitcher\_splitting\_overview.png](BigStitcher_splitting_overview.png
-"BigStitcher_splitting_overview.png")
+![BigStitcher\_splitting\_overview.png](/images/pages/BigStitcher_splitting_overview.png
+"BigStitcher_splitting_overview.png")"
 
 We support *virtual* splitting of datasets into smaller blocks in
 BigStitcher. The original dataset will not be modified and data do not
@@ -49,8 +49,8 @@ dataset](BigStitcher_Open_existing "wikilink").
 After selecting the dataset to split and clicking **OK**, the following
 dialog will appear:
 
-![BigStitcher\_splitting\_dialog.png](BigStitcher_splitting_dialog.png
-"BigStitcher_splitting_dialog.png")
+![BigStitcher\_splitting\_dialog.png](/images/pages/BigStitcher_splitting_dialog.png
+"BigStitcher_splitting_dialog.png")"
 
 Here, you can set
 

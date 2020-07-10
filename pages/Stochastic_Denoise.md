@@ -43,8 +43,8 @@ in longer runtime.
 ## Tutorial
 
 ![Lena\_small.jpg](/images/pages/Lena_small.jpg "Lena_small.jpg")"
-![Denoised\_lena\_small.jpg](Denoised_lena_small.jpg
-"Denoised_lena_small.jpg")
+![Denoised\_lena\_small.jpg](/images/pages/Denoised_lena_small.jpg
+"Denoised_lena_small.jpg")"
 
 Open the image you would like to denoise and start the plugin. Try the
 default settings first and click "Denoise". After some seconds, the

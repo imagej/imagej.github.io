@@ -8,8 +8,8 @@ categories:
 description: test description
 ---
 
-![MTracker\_NewLogo-04.png](MTracker_NewLogo-04.png
-"MTracker_NewLogo-04.png") {% include component-stats
+![MTracker\_NewLogo-04.png](/images/pages/MTracker_NewLogo-04.png
+"MTracker_NewLogo-04.png")" {% include component-stats
 content=':net.imagej:MTrack' %}
 
 MTrack is a tool, which detects, tracks, and measures the behavior of

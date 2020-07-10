@@ -471,8 +471,8 @@ It is important to keep in mind that the objects are clearly convex, as
 they sometimes overlap, and we still want to find the objects correctly.
 Example:
 
-![NucleiDAPIconfocal.png](NucleiDAPIconfocal.png
-"NucleiDAPIconfocal.png")
+![NucleiDAPIconfocal.png](/images/pages/NucleiDAPIconfocal.png
+"NucleiDAPIconfocal.png")"
 
 The purpose of this project is to segment in a fully automatic way
 round, convex structures in biological images. This could be done by
@@ -508,8 +508,8 @@ discerned using the intensity, but only using statistic measures where
 the inside pixels have a different geometric distribution than the
 outside pixels. Example:
 
-![Tem-clahe-50-256-2.5.jpg](Tem-clahe-50-256-2.5.jpg
-"Tem-clahe-50-256-2.5.jpg")
+![Tem-clahe-50-256-2.5.jpg](/images/pages/Tem-clahe-50-256-2.5.jpg
+"Tem-clahe-50-256-2.5.jpg")"
 
 There are [a number](http://ai.stanford.edu/~ruzon/tex_seg/)
 [of](http://people.csail.mit.edu/sarasu/pub/texture05/)

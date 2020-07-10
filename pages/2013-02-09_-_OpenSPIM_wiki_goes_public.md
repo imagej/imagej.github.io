@@ -9,8 +9,8 @@ description: test description
 ---
 
 ![Drosophila embryo expressing HisYFP captured by
-OpenSPIM](HisYFP_front_page.gif
-"Drosophila embryo expressing HisYFP captured by OpenSPIM") The
+OpenSPIM](/images/pages/HisYFP_front_page.gif
+"Drosophila embryo expressing HisYFP captured by OpenSPIM")" The
 [OpenSPIM](http://openspim.org) Wiki is available for viewing and
 contributions.
 

@@ -150,8 +150,8 @@ the movie.
 the path. I'm measuring the average speed of the particles and it's
 crucial the software calculates the distance traveled accurately.*
 
-![TrackMate\_JaggedLines.png](TrackMate_JaggedLines.png
-"TrackMate_JaggedLines.png")
+![TrackMate\_JaggedLines.png](/images/pages/TrackMate_JaggedLines.png
+"TrackMate_JaggedLines.png")"
 
 Make sure the `Do sub-pixel localization` is checked. It will mitigate
 this problem. Also make sure that you choose a blob diameter that

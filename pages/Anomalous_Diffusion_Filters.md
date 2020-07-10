@@ -27,8 +27,8 @@ category='[Plugins](:Category:Plugins "wikilink"),
 ## Anomalous Diffusion Filters
 
 ![Filtering examples with the T1w MRI stack available in Fiji examples
-images.](Filters-examples.png
-"Filtering examples with the T1w MRI stack available in Fiji examples images.")
+images.](/images/pages/Filters-examples.png
+"Filtering examples with the T1w MRI stack available in Fiji examples images.")"
 
 A PlugInFilter for the two different methods for image filtering:
 Anisotropic Anomalous Diffusion and Isotropic Anomalous Diffusion. Both
@@ -127,8 +127,8 @@ section](User:Acsenrafilho "wikilink") of the CSIM main wiki site.
 ## Filters parameters
 
 ![Filter's parameters for both isotropic and anisotropic
-approaches.](Filters-parameters.png
-"Filter's parameters for both isotropic and anisotropic approaches.")
+approaches.](/images/pages/Filters-parameters.png
+"Filter's parameters for both isotropic and anisotropic approaches.")"
 
 Basically, the common parameters that are used for both anomalous
 filtering methods are the number of iterations and the anomalous

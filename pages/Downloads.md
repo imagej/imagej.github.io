@@ -27,8 +27,8 @@ ImageJ](Fiji/Downloads "wikilink") to stay current with updates.' %}
 <center>
 
 ![ link=https://downloads.imagej.net/ImageJ2-20160205.zip | 192px
-](Imagej2-download-icon.png
-" link=https://downloads.imagej.net/ImageJ2-20160205.zip | 192px ")
+](/images/pages/Imagej2-download-icon.png
+" link=https://downloads.imagej.net/ImageJ2-20160205.zip | 192px ")"
 
 </center>
 

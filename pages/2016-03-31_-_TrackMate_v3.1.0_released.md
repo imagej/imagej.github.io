@@ -17,8 +17,8 @@ changes of version 3.0.1, which did not get a news item.
   - Add an action that export all visible spots statistics, regardless
     of whether they belong in a track or not.
 
-![TrackMate\_ExportAllSpotsStatistics.png](TrackMate_ExportAllSpotsStatistics.png
-"TrackMate_ExportAllSpotsStatistics.png")
+![TrackMate\_ExportAllSpotsStatistics.png](/images/pages/TrackMate_ExportAllSpotsStatistics.png
+"TrackMate_ExportAllSpotsStatistics.png")"
 
   - New display mode: show only selection.
 
@@ -46,8 +46,8 @@ then can be used to modify the selection in this mode.
     the Spot edit tool of TrackMate (double-click on the icon in the
     ImageJ toolbar).
 
-![TrackMate\_StepwiseTimeBrowsing.png](TrackMate_StepwiseTimeBrowsing.png
-"TrackMate_StepwiseTimeBrowsing.png")
+![TrackMate\_StepwiseTimeBrowsing.png](/images/pages/TrackMate_StepwiseTimeBrowsing.png
+"TrackMate_StepwiseTimeBrowsing.png")"
 
   - The manual editing of spot radius (press 'Q' and 'E') is fully
     reversible (if you press 3 times 'Q' then 3 times 'E', you get back

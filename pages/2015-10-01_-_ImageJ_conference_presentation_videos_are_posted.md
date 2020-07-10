@@ -8,8 +8,8 @@ categories: Conference,News
 description: test description
 ---
 
-![ link=Conference 2015](Imagej-conference-2015.jpg
-" link=Conference 2015")
+![ link=Conference 2015](/images/pages/Imagej-conference-2015.jpg
+" link=Conference 2015")"
 
 In early September, the [LOCI](LOCI "wikilink") team in Madison, WI
 hosted the [2015 ImageJ User & Developer

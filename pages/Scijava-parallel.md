@@ -98,8 +98,8 @@ Scijava-parallel offers plugin that provides management of paradigms and
 profiles. It is accessible from menu *Plugins \> Scijava parallel \>
 Paradigm Profiles Manager*. The plugin shows the following form:
 
-![ParadigmProfilesManager.png](ParadigmProfilesManager.png
-"ParadigmProfilesManager.png")
+![ParadigmProfilesManager.png](/images/pages/ParadigmProfilesManager.png
+"ParadigmProfilesManager.png")"
 
 Profiles can be:
 
@@ -199,8 +199,8 @@ abstract methods: *getTypeOfRunner* and *initParadigm*. It is possible
 to create a new implementation of *ServerRunner* or reuse one of the
 existing ones: LocalImagejRunner, HPCImageJRunner.
 
-![paradigm-manager-using-runner.jpg](paradigm-manager-using-runner.jpg
-"paradigm-manager-using-runner.jpg")
+![paradigm-manager-using-runner.jpg](/images/pages/paradigm-manager-using-runner.jpg
+"paradigm-manager-using-runner.jpg")"
 
 ## Installation
 

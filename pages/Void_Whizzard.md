@@ -32,5 +32,5 @@ optimization and software for rapid and objective quantification of
 rodent voiding function, including overlapping urine spots. *Am J
 Physiol Renal Physiol*. 2018 Oct 1;315(4):F1067-F1080
 
-`         `![`Void_Whizzard.PNG`](Void_Whizzard.PNG
-"Void_Whizzard.PNG")` `![`Figure_01.jpg`](/images/pages/Figure_01.jpg "Figure_01.jpg")"
+`         `![`Void_Whizzard.PNG`](/images/pages/Void_Whizzard.PNG
+"Void_Whizzard.PNG")"` `![`Figure_01.jpg`](/images/pages/Figure_01.jpg "Figure_01.jpg")"

@@ -16,8 +16,8 @@ endcapture %}
 
 {% capture source %} {% include github org="mdoube" repo="BoneJ" %} {%
 endcapture %} {% include sidebox-right name='BoneJ 1.x'
-software='ImageJ' logo='![Bonej-icon.png](Bonej-icon.png
-"Bonej-icon.png")' author=author maintainer=maintainer source=source
+software='ImageJ' logo='![Bonej-icon.png](/images/pages/Bonej-icon.png
+"Bonej-icon.png")"' author=author maintainer=maintainer source=source
 status='Active' website='http://bonej.org/' %}BoneJ is a plugin for
 bone image analysis in [ImageJ](ImageJ "wikilink"). It provides free,
 open source tools for trabecular geometry and whole bone shape analysis.

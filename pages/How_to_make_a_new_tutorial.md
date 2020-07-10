@@ -19,14 +19,14 @@ a sense, the plugin was written to document its own usage.
 After clicking on {% include bc content='Plugins | Utilities | Fiji |
 New Fiji Tutorial'%}, you will be asked for the title of your tutorial:
 
-![How\_to\_make\_a\_new\_tutorial-PageTitle.jpg](How_to_make_a_new_tutorial-PageTitle.jpg
-"How_to_make_a_new_tutorial-PageTitle.jpg")
+![How\_to\_make\_a\_new\_tutorial-PageTitle.jpg](/images/pages/How_to_make_a_new_tutorial-PageTitle.jpg
+"How_to_make_a_new_tutorial-PageTitle.jpg")"
 
 You will get two new windows: the *Snapshot* winow (which is set to be
 always on top) and the *Editor* window:
 
-![How\_to\_make\_a\_new\_tutorial-Editor.jpg](How_to_make_a_new_tutorial-Editor.jpg
-"How_to_make_a_new_tutorial-Editor.jpg")
+![How\_to\_make\_a\_new\_tutorial-Editor.jpg](/images/pages/How_to_make_a_new_tutorial-Editor.jpg
+"How_to_make_a_new_tutorial-Editor.jpg")"
 
 ## Second step: take snapshots
 
@@ -49,8 +49,8 @@ end](How_to_make_a_new_tutorial#Tip:_use_two_different_Fiji_instances "wikilink"
 In any of the two modes, the snapshot window will hide itself before
 taking the snapshot.
 
-![How\_to\_make\_a\_new\_tutorial-MakeSnapshots.jpg](How_to_make_a_new_tutorial-MakeSnapshots.jpg
-"How_to_make_a_new_tutorial-MakeSnapshots.jpg")
+![How\_to\_make\_a\_new\_tutorial-MakeSnapshots.jpg](/images/pages/How_to_make_a_new_tutorial-MakeSnapshots.jpg
+"How_to_make_a_new_tutorial-MakeSnapshots.jpg")"
 
 After taking some or all of the snapshots you want to include in your
 tutorial, you have to crop them. Just select the appropriate rectangle,
@@ -58,8 +58,8 @@ and then click on ImageJ's {% include bc content='Edit | Crop'%} or hit
 {% include key content='Ctrl' %}+{% include key content='Shift' %}+{%
 include key content='X' %}:
 
-![How\_to\_make\_a\_new\_tutorial-CropSnapshot.jpg](How_to_make_a_new_tutorial-CropSnapshot.jpg
-"How_to_make_a_new_tutorial-CropSnapshot.jpg")
+![How\_to\_make\_a\_new\_tutorial-CropSnapshot.jpg](/images/pages/How_to_make_a_new_tutorial-CropSnapshot.jpg
+"How_to_make_a_new_tutorial-CropSnapshot.jpg")"
 
 You can also annotate the images at this stage, such as circling an
 important aspect of the snapshot in a bright color, or adding an arrow
@@ -75,14 +75,14 @@ want to rename the snapshots. There are two options for that. The first
 is to call the *Rename Image* menu item in the *Wiki* menu of the
 *Editor*:
 
-![How\_to\_make\_a\_new\_tutorial-Rename1.jpg](How_to_make_a_new_tutorial-Rename1.jpg
-"How_to_make_a_new_tutorial-Rename1.jpg")
+![How\_to\_make\_a\_new\_tutorial-Rename1.jpg](/images/pages/How_to_make_a_new_tutorial-Rename1.jpg
+"How_to_make_a_new_tutorial-Rename1.jpg")"
 
 This will pop up another dialog which lets you change the name of the
 image:
 
-![How\_to\_make\_a\_new\_tutorial-Rename2.jpg](How_to_make_a_new_tutorial-Rename2.jpg
-"How_to_make_a_new_tutorial-Rename2.jpg")
+![How\_to\_make\_a\_new\_tutorial-Rename2.jpg](/images/pages/How_to_make_a_new_tutorial-Rename2.jpg
+"How_to_make_a_new_tutorial-Rename2.jpg")"
 
 The other method is to select the image and click on ImageJ's {% include
 bc content='Image | Rename...'%} menu item.
@@ -96,21 +96,21 @@ A picture says more than a thousand words, but to be sure that it
 actually says what you want to tell, add a bit of surrounding text to
 the snapshots:
 
-![How\_to\_make\_a\_new\_tutorial-AddText.jpg](How_to_make_a_new_tutorial-AddText.jpg
-"How_to_make_a_new_tutorial-AddText.jpg")
+![How\_to\_make\_a\_new\_tutorial-AddText.jpg](/images/pages/How_to_make_a_new_tutorial-AddText.jpg
+"How_to_make_a_new_tutorial-AddText.jpg")"
 
 ## Fourth step: preview
 
 Now is the time to preview your work:
 
-![How\_to\_make\_a\_new\_tutorial-Preview.jpg](How_to_make_a_new_tutorial-Preview.jpg
-"How_to_make_a_new_tutorial-Preview.jpg")
+![How\_to\_make\_a\_new\_tutorial-Preview.jpg](/images/pages/How_to_make_a_new_tutorial-Preview.jpg
+"How_to_make_a_new_tutorial-Preview.jpg")"
 
 The first time you call *Preview* (or *Upload*, whichever comes first),
 you will be asked for your credentials:
 
-![How\_to\_make\_a\_new\_tutorial-Login.jpg](How_to_make_a_new_tutorial-Login.jpg
-"How_to_make_a_new_tutorial-Login.jpg")
+![How\_to\_make\_a\_new\_tutorial-Login.jpg](/images/pages/How_to_make_a_new_tutorial-Login.jpg
+"How_to_make_a_new_tutorial-Login.jpg")"
 
 This will **not** upload the images yet, but use the Wiki engine to
 render HTML from your text. The preview will be extracted from the
@@ -125,8 +125,8 @@ far.
 
 When everything is good to go, upload the tutorial:
 
-![How\_to\_make\_a\_new\_tutorial-Upload.jpg](How_to_make_a_new_tutorial-Upload.jpg
-"How_to_make_a_new_tutorial-Upload.jpg")
+![How\_to\_make\_a\_new\_tutorial-Upload.jpg](/images/pages/How_to_make_a_new_tutorial-Upload.jpg
+"How_to_make_a_new_tutorial-Upload.jpg")"
 
 This will upload all the images (asking you how to proceed when an image
 exists already in the Wiki) and upload the text. The final page will be

@@ -332,8 +332,8 @@ Please note that the feature values listed in this paragraph are only
 properly defined bor **linear tracks**, that is tracks with no fusion
 nor split events.
 
-![TrackMate\_track\_features.png](TrackMate_track_features.png
-"TrackMate_track_features.png")
+![TrackMate\_track\_features.png](/images/pages/TrackMate_track_features.png
+"TrackMate_track_features.png")"
 
 #### Total distance traveled.
 
@@ -709,8 +709,8 @@ square distance as costs. The user can set how far can be an actual
 position from a predicted position for linking with the <b>Search
 radius</b> setting.
 
-![TrackMate\_KalmanTrackerPrinciple.png](TrackMate_KalmanTrackerPrinciple.png
-"TrackMate_KalmanTrackerPrinciple.png")
+![TrackMate\_KalmanTrackerPrinciple.png](/images/pages/TrackMate_KalmanTrackerPrinciple.png
+"TrackMate_KalmanTrackerPrinciple.png")"
 
 Now of course, after linking, some Kalman filters might not get linked
 to a found spot. This event is called an occlusion: the predicted

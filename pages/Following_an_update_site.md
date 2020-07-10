@@ -21,8 +21,8 @@ updated just like core ImageJ plugins.
 
 First, start the [updater](updater "wikilink"):
 
-![How\_to\_setup\_a\_plugin\_distribution\_site-1.jpg](How_to_setup_a_plugin_distribution_site-1.jpg
-"How_to_setup_a_plugin_distribution_site-1.jpg")
+![How\_to\_setup\_a\_plugin\_distribution\_site-1.jpg](/images/pages/How_to_setup_a_plugin_distribution_site-1.jpg
+"How_to_setup_a_plugin_distribution_site-1.jpg")"
 
 ## Add update sites
 

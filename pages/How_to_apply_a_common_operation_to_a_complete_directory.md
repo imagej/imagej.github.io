@@ -20,36 +20,36 @@ getting started quickly.
 
 First, start the Macro Recorder:
 
-![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-1.jpg](How_to_apply_a_common_operation_to_a_complete_directory-1.jpg
-"How_to_apply_a_common_operation_to_a_complete_directory-1.jpg")
+![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-1.jpg](/images/pages/How_to_apply_a_common_operation_to_a_complete_directory-1.jpg
+"How_to_apply_a_common_operation_to_a_complete_directory-1.jpg")"
 
 This will open the Macro Recorder window:
 
-![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-2.jpg](How_to_apply_a_common_operation_to_a_complete_directory-2.jpg
-"How_to_apply_a_common_operation_to_a_complete_directory-2.jpg")
+![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-2.jpg](/images/pages/How_to_apply_a_common_operation_to_a_complete_directory-2.jpg
+"How_to_apply_a_common_operation_to_a_complete_directory-2.jpg")"
 
 Now perform the operation on a single image. Make sure that you save the
 image at the end.
 
 Exmaple: cropping the image. First, select a rectangle:
 
-![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-3.jpg](How_to_apply_a_common_operation_to_a_complete_directory-3.jpg
-"How_to_apply_a_common_operation_to_a_complete_directory-3.jpg")
+![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-3.jpg](/images/pages/How_to_apply_a_common_operation_to_a_complete_directory-3.jpg
+"How_to_apply_a_common_operation_to_a_complete_directory-3.jpg")"
 
 Then crop it.
 
-![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-4.jpg](How_to_apply_a_common_operation_to_a_complete_directory-4.jpg
-"How_to_apply_a_common_operation_to_a_complete_directory-4.jpg")
+![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-4.jpg](/images/pages/How_to_apply_a_common_operation_to_a_complete_directory-4.jpg
+"How_to_apply_a_common_operation_to_a_complete_directory-4.jpg")"
 
 After saving, the recorder window will show this:
 
-![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-6.jpg](How_to_apply_a_common_operation_to_a_complete_directory-6.jpg
-"How_to_apply_a_common_operation_to_a_complete_directory-6.jpg")
+![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-6.jpg](/images/pages/How_to_apply_a_common_operation_to_a_complete_directory-6.jpg
+"How_to_apply_a_common_operation_to_a_complete_directory-6.jpg")"
 
 Click on the **Create** button, and you will get this:
 
-![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-7.jpg](How_to_apply_a_common_operation_to_a_complete_directory-7.jpg
-"How_to_apply_a_common_operation_to_a_complete_directory-7.jpg")
+![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-7.jpg](/images/pages/How_to_apply_a_common_operation_to_a_complete_directory-7.jpg
+"How_to_apply_a_common_operation_to_a_complete_directory-7.jpg")"
 
 ## Step 2: Make the macro generic
 
@@ -160,12 +160,12 @@ In our case, the file would simply contain these lines:
 
 Find the *Multiple ImageProcessor* plugin in the *Process* menu:
 
-![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-8.jpg](How_to_apply_a_common_operation_to_a_complete_directory-8.jpg
-"How_to_apply_a_common_operation_to_a_complete_directory-8.jpg")
+![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-8.jpg](/images/pages/How_to_apply_a_common_operation_to_a_complete_directory-8.jpg
+"How_to_apply_a_common_operation_to_a_complete_directory-8.jpg")"
 
 The dialog would need to be filled out like this:
 
-![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-9.jpg](How_to_apply_a_common_operation_to_a_complete_directory-9.jpg
-"How_to_apply_a_common_operation_to_a_complete_directory-9.jpg")
+![How\_to\_apply\_a\_common\_operation\_to\_a\_complete\_directory-9.jpg](/images/pages/How_to_apply_a_common_operation_to_a_complete_directory-9.jpg
+"How_to_apply_a_common_operation_to_a_complete_directory-9.jpg")"
 
 [Category:Tutorials](Category:Tutorials "wikilink")

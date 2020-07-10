@@ -60,8 +60,8 @@ deviates from the linear case, and shows a slight quadratic shape. The
 best linear fit yields a low in *t (ms) = 2.8e-4 x Npixels*, showing
 that the LoG detector is slightly quicker than the DoG detector.
 
-![TrackMate\_DoGandLoGTimeVsPixels.png](TrackMate_DoGandLoGTimeVsPixels.png
-"TrackMate_DoGandLoGTimeVsPixels.png")
+![TrackMate\_DoGandLoGTimeVsPixels.png](/images/pages/TrackMate_DoGandLoGTimeVsPixels.png
+"TrackMate_DoGandLoGTimeVsPixels.png")"
 
 #### Processing time for a 3D image as a function of its size.
 
@@ -81,16 +81,16 @@ Npixels*, which we attribute to the 3D kernel overhead.
 Interestingly, the LoG detector seems to become the slowest at
 intermediate size, which I cannot interpret well.
 
-![TrackMate\_DoGandLoGTimeVsPixels3D.png](TrackMate_DoGandLoGTimeVsPixels3D.png
-"TrackMate_DoGandLoGTimeVsPixels3D.png")
+![TrackMate\_DoGandLoGTimeVsPixels3D.png](/images/pages/TrackMate_DoGandLoGTimeVsPixels3D.png
+"TrackMate_DoGandLoGTimeVsPixels3D.png")"
 
 #### Processing time for a 2D image as a function of the spot radius.
 
 We used a 1024x1024 *uint16* image, with 200 gaussian spots, the size of
 which we varied. The detector was tuned to this radius.
 
-![TrackMate\_DoGandLoGTimeVsRadius2D.png](TrackMate_DoGandLoGTimeVsRadius2D.png
-"TrackMate_DoGandLoGTimeVsRadius2D.png")
+![TrackMate\_DoGandLoGTimeVsRadius2D.png](/images/pages/TrackMate_DoGandLoGTimeVsRadius2D.png
+"TrackMate_DoGandLoGTimeVsRadius2D.png")"
 
 We find that for the DoG detector, the processing time to increase
 linearly with the specified radius, following approximately *t (ms) =
@@ -110,8 +110,8 @@ way we compute the convolution which is explained below.
 This time we used a 256x256x256 3D image, but with otherwise the same
 parameters.
 
-![TrackMate\_DoGandLoGTimeVsRadius3D.png](TrackMate_DoGandLoGTimeVsRadius3D.png
-"TrackMate_DoGandLoGTimeVsRadius3D.png")
+![TrackMate\_DoGandLoGTimeVsRadius3D.png](/images/pages/TrackMate_DoGandLoGTimeVsRadius3D.png
+"TrackMate_DoGandLoGTimeVsRadius3D.png")"
 
 The processing time increases, but this time deviates slightly from
 linearity in the DoG case. We retrieve the 3D kernel overhead we had for

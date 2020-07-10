@@ -18,8 +18,8 @@ include person content="Alessandrofelder" %} {% endcapture %}
 {% capture source %} {% include github org="bonej-org" repo="BoneJ2" %},
 [<doi:10.5281/zenodo.1427262>](https://doi.org/10.5281/zenodo.1427262)
 {% endcapture %} {% include sidebox-right name='BoneJ2'
-software='ImageJ' logo='![Bonej-icon.png](Bonej-icon.png
-"Bonej-icon.png")' author=author maintainer=maintainer source=source
+software='ImageJ' logo='![Bonej-icon.png](/images/pages/Bonej-icon.png
+"Bonej-icon.png")"' author=author maintainer=maintainer source=source
 released='Dec 11<sup>th</sup>, 2017' version='Apr 18<sup>th</sup>, 2019'
 status='Active, Experimental' %} BoneJ is a collection of skeletal
 biology plug-ins for ImageJ. This is the new experimental, modernized
@@ -42,8 +42,8 @@ experimental.
 
 ## Installation
 
-![400 px|Installation steps](Install-bonej.png
-"400 px|Installation steps")
+![400 px|Installation steps](/images/pages/Install-bonej.png
+"400 px|Installation steps")"
 
 1.  [Download](https://imagej.net/Downloads) the latest version of Fiji
     for your operating system
@@ -94,8 +94,8 @@ It's important to note that algorithm is stochastic and does not
 guarantee exact results. Thus it's recommended to run it several times
 to establish the degree of anisotropy in your image.
 
-![150 px|The red dots mark phase changes](PhaseChanges.png
-"150 px|The red dots mark phase changes")
+![150 px|The red dots mark phase changes](/images/pages/PhaseChanges.png
+"150 px|The red dots mark phase changes")"
 
 In the first step the algorithm draws parallel lines over the input
 image in direction \(\mathbf{v}\). The direction is chosen randomly.
@@ -117,8 +117,8 @@ may fail at which point the plug-in stops. The radii of this ellipsoid
 determine the degree of anisotropy (see
 [results](https://imagej.net/index.php?title=BoneJ_experimental&action=submit#Results)).
 
-![200 px|Projecting lines from a plane](MilCube.png
-"200 px|Projecting lines from a plane")
+![200 px|Projecting lines from a plane](/images/pages/MilCube.png
+"200 px|Projecting lines from a plane")"
 
 In more detail, the lines in the first step are projected from a
 \(d * d\) plane with normal \(\mathbf{v}\) (see the adjacent figure).
@@ -599,8 +599,8 @@ obfuscate or skew the results. First it allows you to filter out nodes
 with too many or too few edges. Secondly it can be used to prune very
 short edges, which often do not represent actual trabeculae.
 
-![150 px|Types of edges in pruning](Ita_types.png
-"150 px|Types of edges in pruning") Pruning works differently for
+![150 px|Types of edges in pruning](/images/pages/Ita_types.png
+"150 px|Types of edges in pruning")" Pruning works differently for
 different types of edges. There are four kinds: outer, dead-end, inner
 and short. An outer edge doesn't interconnect different parts of a
 graph. In other words, one (and only one) of its endpoints connects to

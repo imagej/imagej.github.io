@@ -20,8 +20,8 @@ button in the main window.
     by default, but can be ungrouped by unticking the respective option
     at the bottom of the main window).
 
-![BigStitcher\_Overview\_4.png](BigStitcher_Overview_4.png
-"BigStitcher_Overview_4.png")
+![BigStitcher\_Overview\_4.png](/images/pages/BigStitcher_Overview_4.png
+"BigStitcher_Overview_4.png")"
 
 ### The right-click menu
 
@@ -38,7 +38,7 @@ brings up a menu with the possible actions that can be performed.
     interest points.
   - **Modifications** shows functions for resaving the dataset.
 
-![BigStitcher\_Overview\_5.png](BigStitcher_Overview_5.png
-"BigStitcher_Overview_5.png")
+![BigStitcher\_Overview\_5.png](/images/pages/BigStitcher_Overview_5.png
+"BigStitcher_Overview_5.png")"
 
 Go back to the [main page](BigStitcher#Documentation "wikilink")

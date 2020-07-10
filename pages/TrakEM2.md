@@ -262,23 +262,23 @@ power and in internal memory.
 ## Examples
 
 ![TrakEM2: 359 montages of 13x13 tiles of 2048x2048 pixels
-each.](Trakem2-snap.jpg
-"TrakEM2: 359 montages of 13x13 tiles of 2048x2048 pixels each.")
+each.](/images/pages/Trakem2-snap.jpg
+"TrakEM2: 359 montages of 13x13 tiles of 2048x2048 pixels each.")"
 ![TrakEM2 Display showing 9 images in a layer, where 2 images and one
 floating text label (set to 30% transparency) are selected (pink and
 white frames; white is the active one – note the corresponding pink and
 blue coloration of the object panels on the left). The Navigator (bottom
 left) paints a red frame to indicate the area currently displayed in the
-canvas (right).](TrakEM2_Display.png
-"TrakEM2 Display showing 9 images in a layer, where 2 images and one floating text label (set to 30% transparency) are selected (pink and white frames; white is the active one – note the corresponding pink and blue coloration of the object panels on the left). The Navigator (bottom left) paints a red frame to indicate the area currently displayed in the canvas (right).")
+canvas (right).](/images/pages/TrakEM2_Display.png
+"TrakEM2 Display showing 9 images in a layer, where 2 images and one floating text label (set to 30% transparency) are selected (pink and white frames; white is the active one – note the corresponding pink and blue coloration of the object panels on the left). The Navigator (bottom left) paints a red frame to indicate the area currently displayed in the canvas (right).")"
 ![3D Viewer: hardware-accelerated 3D visualization of image stacks as
 volumes, orthoslices and meshes. Above, secondary lineages of
 <i>Drosophila</i> third instar larval brain segmented in
-TrakEM2.](3D-Viewer.jpg
-"3D Viewer: hardware-accelerated 3D visualization of image stacks as volumes, orthoslices and meshes. Above, secondary lineages of Drosophila third instar larval brain segmented in TrakEM2.")
+TrakEM2.](/images/pages/3D-Viewer.jpg
+"3D Viewer: hardware-accelerated 3D visualization of image stacks as volumes, orthoslices and meshes. Above, secondary lineages of Drosophila third instar larval brain segmented in TrakEM2.")"
 ![The three TrakEM2 trees, as an interface for editing and visualizing
-the three internal TrakEM2 data structures.](TrakEM2-trees.png
-"The three TrakEM2 trees, as an interface for editing and visualizing the three internal TrakEM2 data structures.")
+the three internal TrakEM2 data structures.](/images/pages/TrakEM2-trees.png
+"The three TrakEM2 trees, as an interface for editing and visualizing the three internal TrakEM2 data structures.")"
 ![Effect of the [CLAHE](Enhance_Local_Contrast_\(CLAHE\) "wikilink")
 live filter in TrakEM2. Data with high dynamic range is displayed with
 perceptually boosted local contrast. [CLAHE
@@ -304,8 +304,8 @@ and
 (for synapses).](TrakEM2-display-2.png
 "TrakEM2 showing one section of a serial section transmission electron microscopy (ssTEM) data set, with numerous neuronal arbors reconstructed using treelines and connectors (for synapses).")
 ![Example TrakEM2 segmentations, including Ball, Pipe, Profile, AreaList
-and floating text labels.](TrakEM2_Display_segmentations.png
-"Example TrakEM2 segmentations, including Ball, Pipe, Profile, AreaList and floating text labels.")
+and floating text labels.](/images/pages/TrakEM2_Display_segmentations.png
+"Example TrakEM2 segmentations, including Ball, Pipe, Profile, AreaList and floating text labels.")"
 {% include clear content='left' %}
 
 ## Publication

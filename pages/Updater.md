@@ -60,8 +60,8 @@ Viewer](3D_Viewer "wikilink"). If you have a locally modified version of
 the dependency (i.e. the Updater does not know that particular version),
 the Updater will ask you what to do:
 
-![Updater-Resolve\_dependencies.png](Updater-Resolve_dependencies.png
-"Updater-Resolve_dependencies.png")
+![Updater-Resolve\_dependencies.png](/images/pages/Updater-Resolve_dependencies.png
+"Updater-Resolve_dependencies.png")"
 
 A typical scenario when you can have a locally modified version of a
 component is when you asked the respective plugin author for a change in
@@ -83,15 +83,15 @@ site](Update_Sites "wikilink"). The details for each component can be
 edited by writing below the respective entry. To save the changes, you
 have to upload the plugin to the server.
 
-![Snapshot\_of\_the\_Advanced\_Mode\_of\_the\_Updater.png](Snapshot_of_the_Advanced_Mode_of_the_Updater.png
-"Snapshot_of_the_Advanced_Mode_of_the_Updater.png")
+![Snapshot\_of\_the\_Advanced\_Mode\_of\_the\_Updater.png](/images/pages/Snapshot_of_the_Advanced_Mode_of_the_Updater.png
+"Snapshot_of_the_Advanced_Mode_of_the_Updater.png")"
 
 ## Starting the Updater manually
 
 Just click on the {% include bc content='Help | Update...'%} menu item:
 
-![Fiji\_Updater-screenshot.png](Fiji_Updater-screenshot.png
-"Fiji_Updater-screenshot.png")
+![Fiji\_Updater-screenshot.png](/images/pages/Fiji_Updater-screenshot.png
+"Fiji_Updater-screenshot.png")"
 
 ## Adding update sites
 

@@ -22,8 +22,8 @@ hyperstacks or allow macro recording.
 
 ## Screen Shot of features
 
-![Series\_Labeler\_Screen\_shot.png](Series_Labeler_Screen_shot.png
-"Series_Labeler_Screen_shot.png")
+![Series\_Labeler\_Screen\_shot.png](/images/pages/Series_Labeler_Screen_shot.png
+"Series_Labeler_Screen_shot.png")"
 
 ## What it works with
 

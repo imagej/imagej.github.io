@@ -113,8 +113,8 @@ to split the channels and deblur each channel separately.
 
 ## How to use
 
-![ParallelIterativeDeconvolutionDialog.jpg](ParallelIterativeDeconvolutionDialog.jpg
-"ParallelIterativeDeconvolutionDialog.jpg")
+![ParallelIterativeDeconvolutionDialog.jpg](/images/pages/ParallelIterativeDeconvolutionDialog.jpg
+"ParallelIterativeDeconvolutionDialog.jpg")"
 
 There are eight drop-down lists (combo-boxes) available in the GUI. From
 the Blurred image list, you can choose a blurred image. PSF list is for
@@ -237,11 +237,11 @@ Convergence has the same functionality as for all other methods.
 
 ### Spatially Variant PSF
 
-![CreateSpatiallyVariantPSFDialog.jpg](CreateSpatiallyVariantPSFDialog.jpg
-"CreateSpatiallyVariantPSFDialog.jpg")
+![CreateSpatiallyVariantPSFDialog.jpg](/images/pages/CreateSpatiallyVariantPSFDialog.jpg
+"CreateSpatiallyVariantPSFDialog.jpg")"
 
-![EditSpatiallyVariantPSFDialog.jpg](EditSpatiallyVariantPSFDialog.jpg
-"EditSpatiallyVariantPSFDialog.jpg")
+![EditSpatiallyVariantPSFDialog.jpg](/images/pages/EditSpatiallyVariantPSFDialog.jpg
+"EditSpatiallyVariantPSFDialog.jpg")"
 
 There are three elements in the GUI that have not been described above,
 namely: Spatially variant PSF check-box, Define and Edit buttons. These
@@ -273,13 +273,13 @@ After opening the image to deconvolve and the image of the PSF, start {%
 include bc content='Plugins | Deconvolution | 2D Iterative
 Deconvolution...'%}
 
-![ParallelIterativeDeconvolution2DSpatiallyInvariantExample.jpg](ParallelIterativeDeconvolution2DSpatiallyInvariantExample.jpg
-"ParallelIterativeDeconvolution2DSpatiallyInvariantExample.jpg")
+![ParallelIterativeDeconvolution2DSpatiallyInvariantExample.jpg](/images/pages/ParallelIterativeDeconvolution2DSpatiallyInvariantExample.jpg
+"ParallelIterativeDeconvolution2DSpatiallyInvariantExample.jpg")"
 
 Clicking on the Deconvolve button results in this:
 
-![ParallelIterativeDeconvolution2DSpatiallyInvariantExampleResult.jpg](ParallelIterativeDeconvolution2DSpatiallyInvariantExampleResult.jpg
-"ParallelIterativeDeconvolution2DSpatiallyInvariantExampleResult.jpg")
+![ParallelIterativeDeconvolution2DSpatiallyInvariantExampleResult.jpg](/images/pages/ParallelIterativeDeconvolution2DSpatiallyInvariantExampleResult.jpg
+"ParallelIterativeDeconvolution2DSpatiallyInvariantExampleResult.jpg")"
 
 ## 2D Spatially Variant Example
 
@@ -287,23 +287,23 @@ After opening the image to deconvolve, start {% include bc
 content='Plugins | Deconvolution | 2D Iterative Deconvolution...'%},
 select Spatially variant PSF check-box and click on the Define button
 
-![ParallelIterativeDeconvolution2DSpatiallyVariantExample1.jpg](ParallelIterativeDeconvolution2DSpatiallyVariantExample1.jpg
-"ParallelIterativeDeconvolution2DSpatiallyVariantExample1.jpg")
+![ParallelIterativeDeconvolution2DSpatiallyVariantExample1.jpg](/images/pages/ParallelIterativeDeconvolution2DSpatiallyVariantExample1.jpg
+"ParallelIterativeDeconvolution2DSpatiallyVariantExample1.jpg")"
 
 Enter 5 x 5 and click OK button in the Create Spatially Variant PSF
 panel, then in the Edit Spatially Variant PSF panel you have to define
 all 25 PSFs
 
-![ParallelIterativeDeconvolution2DSpatiallyVariantExample2.jpg](ParallelIterativeDeconvolution2DSpatiallyVariantExample2.jpg
-"ParallelIterativeDeconvolution2DSpatiallyVariantExample2.jpg")
+![ParallelIterativeDeconvolution2DSpatiallyVariantExample2.jpg](/images/pages/ParallelIterativeDeconvolution2DSpatiallyVariantExample2.jpg
+"ParallelIterativeDeconvolution2DSpatiallyVariantExample2.jpg")"
 
 Enter 40 in the Max number of iterations text field and click on the
 Deconvolve button. You have to adjust the color balance of both images
 ({% include bc content='Image | Adjust | Color Balance...'%}\>Auto from
 Fiji menu).
 
-![ParallelIterativeDeconvolution2DSpatiallyVariantExample3.jpg](ParallelIterativeDeconvolution2DSpatiallyVariantExample3.jpg
-"ParallelIterativeDeconvolution2DSpatiallyVariantExample3.jpg")
+![ParallelIterativeDeconvolution2DSpatiallyVariantExample3.jpg](/images/pages/ParallelIterativeDeconvolution2DSpatiallyVariantExample3.jpg
+"ParallelIterativeDeconvolution2DSpatiallyVariantExample3.jpg")"
 
 ## 3D Spatially Invariant Example
 
@@ -311,20 +311,20 @@ After opening the image to deconvolve and the image of the PSF, start {%
 include bc content='Plugins | Deconvolution | 3D Iterative
 Deconvolution...'%}
 
-![ParallelIterativeDeconvolution3DSpatiallyInvariantExample1.jpg](ParallelIterativeDeconvolution3DSpatiallyInvariantExample1.jpg
-"ParallelIterativeDeconvolution3DSpatiallyInvariantExample1.jpg")
+![ParallelIterativeDeconvolution3DSpatiallyInvariantExample1.jpg](/images/pages/ParallelIterativeDeconvolution3DSpatiallyInvariantExample1.jpg
+"ParallelIterativeDeconvolution3DSpatiallyInvariantExample1.jpg")"
 
 Choose WPL method, click on the Options button and set all the
 properties as shown below
 
-![ParallelIterativeDeconvolution3DSpatiallyInvariantExample2.jpg](ParallelIterativeDeconvolution3DSpatiallyInvariantExample2.jpg
-"ParallelIterativeDeconvolution3DSpatiallyInvariantExample2.jpg")
+![ParallelIterativeDeconvolution3DSpatiallyInvariantExample2.jpg](/images/pages/ParallelIterativeDeconvolution3DSpatiallyInvariantExample2.jpg
+"ParallelIterativeDeconvolution3DSpatiallyInvariantExample2.jpg")"
 
 Enter 20 in the Max number of iterations text field and click on the
 Deconvolve button
 
-![ParallelIterativeDeconvolution3DSpatiallyInvariantExample3.jpg](ParallelIterativeDeconvolution3DSpatiallyInvariantExample3.jpg
-"ParallelIterativeDeconvolution3DSpatiallyInvariantExample3.jpg")
+![ParallelIterativeDeconvolution3DSpatiallyInvariantExample3.jpg](/images/pages/ParallelIterativeDeconvolution3DSpatiallyInvariantExample3.jpg
+"ParallelIterativeDeconvolution3DSpatiallyInvariantExample3.jpg")"
 
 ## See also
 

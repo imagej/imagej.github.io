@@ -76,8 +76,8 @@ The Stitching package comes with 4 different plugins:
 
 ## 2D Stitching and 3D Stitching
 
-![Shows the 3D Stitching Dialog.](3dstitching.png
-"Shows the 3D Stitching Dialog.")  
+![Shows the 3D Stitching Dialog.](/images/pages/3dstitching.png
+"Shows the 3D Stitching Dialog.")"  
 The plugins 2D/3D Stitching take two 2D/3D images as input. They can
 contain rectangular ROIs which limit the search to those areas, however,
 the full images will be stitched together. If the input images are RGB
@@ -112,8 +112,8 @@ There are 5 fusion methods available right now.
 
 ## Stitch Grid of Images
 
-![Shows the Stitch Grid Dialog.](StitchGrid.png
-"Shows the Stitch Grid Dialog.")  
+![Shows the Stitch Grid Dialog.](/images/pages/StitchGrid.png
+"Shows the Stitch Grid Dialog.")"  
 This plugin is able to stitch a grid of images, it does not matter if it
 is 2D or 3D images as long as all images are of the same type. In
 contrast to the 2D/3D stitching of two images, this plugins will load
@@ -201,8 +201,8 @@ previous parameters, the user must now select the number of sections
 
 ## Stitch Collection of Images
 
-![Shows the Stitch Image Collection Dialog.](StitchCollection.png
-"Shows the Stitch Image Collection Dialog.")  
+![Shows the Stitch Image Collection Dialog.](/images/pages/StitchCollection.png
+"Shows the Stitch Image Collection Dialog.")"  
 This plugin takes an arbitrary tile configuration as input which has to
 be stored in a file.
 
@@ -256,8 +256,8 @@ some of the stacks should solve the problem.
 
 ## Results & Computation time
 
-![Example of Stitching of 3D confocal stacks.](ResultsStitching.jpg
-"Example of Stitching of 3D confocal stacks.")  
+![Example of Stitching of 3D confocal stacks.](/images/pages/ResultsStitching.jpg
+"Example of Stitching of 3D confocal stacks.")"  
 The figure shows stitched images of 3D confocal tiles. (A) shows a
 Drosophila melanogaster pupae expressing a GFP reporter under the
 regulation of the yellow gene, imaged few hours before eclosion using a

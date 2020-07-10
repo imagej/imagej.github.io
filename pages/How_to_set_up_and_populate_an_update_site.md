@@ -53,8 +53,8 @@ on the *Manage update sites* button:
 
 Enter the name of that account and click *OK*:
 
-![Personal-Update-Site-1.png](Personal-Update-Site-1.png
-"Personal-Update-Site-1.png")
+![Personal-Update-Site-1.png](/images/pages/Personal-Update-Site-1.png
+"Personal-Update-Site-1.png")"
 
 If your upload password (separate from your wiki password) was not
 initialized, you will then be asked to provide your wiki password, which
@@ -151,8 +151,8 @@ add might look like this:
 If the update site has not been initialized yet (i.e. if nobody else has
 initialized that site yet), you will see a dialog like this:
 
-![How\_to\_setup\_a\_plugin\_distribution\_site-6a.jpg](How_to_setup_a_plugin_distribution_site-6a.jpg
-"How_to_setup_a_plugin_distribution_site-6a.jpg")
+![How\_to\_setup\_a\_plugin\_distribution\_site-6a.jpg](/images/pages/How_to_setup_a_plugin_distribution_site-6a.jpg
+"How_to_setup_a_plugin_distribution_site-6a.jpg")"
 
 Just click *OK* and let the updater upload an empty file index (it is
 stored in the file *db.xml.gz* which is also called the *database* in
@@ -169,8 +169,8 @@ uploading.
 
 First, start the [updater](updater "wikilink"):
 
-![How\_to\_setup\_a\_plugin\_distribution\_site-1.jpg](How_to_setup_a_plugin_distribution_site-1.jpg
-"How_to_setup_a_plugin_distribution_site-1.jpg")
+![How\_to\_setup\_a\_plugin\_distribution\_site-1.jpg](/images/pages/How_to_setup_a_plugin_distribution_site-1.jpg
+"How_to_setup_a_plugin_distribution_site-1.jpg")"
 
 Click on the *Manage update sites* button and verify:
 
@@ -180,8 +180,8 @@ Click on the *Manage update sites* button and verify:
 
 For example:
 
-![Personal-Update-Site-7.png](Personal-Update-Site-7.png
-"Personal-Update-Site-7.png")
+![Personal-Update-Site-7.png](/images/pages/Personal-Update-Site-7.png
+"Personal-Update-Site-7.png")"
 
 Once your login information is set you can *Close* the update site
 window.
@@ -213,8 +213,8 @@ right-click (on MacOSX, {% include key content='Ctrl' %}+{% include key
 content='click' %}) in any column, for the context menu and select
 *Upload to <update site name>*.
 
-![Upload-to-update-site.png](Upload-to-update-site.png
-"Upload-to-update-site.png")
+![Upload-to-update-site.png](/images/pages/Upload-to-update-site.png
+"Upload-to-update-site.png")"
 
 {% include sidebox-right content='The ""Upload to <update site name>""
 option is only available if you entered your [wiki
@@ -238,8 +238,8 @@ ImageJ and the updater will automatically upload them to the site.
 You can also manually enter or edit any information in the *Details*
 panel:
 
-![How\_to\_setup\_a\_plugin\_distribution\_site-15.jpg](How_to_setup_a_plugin_distribution_site-15.jpg
-"How_to_setup_a_plugin_distribution_site-15.jpg")
+![How\_to\_setup\_a\_plugin\_distribution\_site-15.jpg](/images/pages/How_to_setup_a_plugin_distribution_site-15.jpg
+"How_to_setup_a_plugin_distribution_site-15.jpg")"
 
 {% include sidebox-right content='The ""Details"" panel can only be
 edited if you have entered upload credentials for the appropriate update
@@ -265,8 +265,8 @@ Check that your plugins are now registered as ImageJ plugins by
 selecting the *View files of the '\[your site name here\]' site* view
 option:
 
-![UpdaterFinalScreen.jpg](UpdaterFinalScreen.jpg
-"UpdaterFinalScreen.jpg")
+![UpdaterFinalScreen.jpg](/images/pages/UpdaterFinalScreen.jpg
+"UpdaterFinalScreen.jpg")"
 
 That's it - you're done. Now, anyone who wants a copy of your plugins
 merely needs to [add your update

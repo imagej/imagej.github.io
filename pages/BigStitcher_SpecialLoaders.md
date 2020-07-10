@@ -18,8 +18,8 @@ or a **diSPIM** controlled via **MicroManager**.
 
 ## Zeiss Lightsheet Z.1 Dataset (Bioformats)
 
-![Step 1: select the .czi file to load.](BigStitcher_CZI_Import1.png
-"Step 1: select the .czi file to load.")
+![Step 1: select the .czi file to load.](/images/pages/BigStitcher_CZI_Import1.png
+"Step 1: select the .czi file to load.")"
 
 If you select to load a **Zeiss Lightsheet Z.1 Dataset**, you will first
 be asked for the first **.czi-file** in the dataset (Step 1). If your
@@ -27,8 +27,8 @@ dataset is just a single file, pick that file. If your dataset consists
 of multiple files, pick the one without a numeric suffix.
 
 ![Step 2: Reviewing metadata detected in
-CZI-dataset.](BigStitcher_CZI_Import2.png
-"Step 2: Reviewing metadata detected in CZI-dataset.")
+CZI-dataset.](/images/pages/BigStitcher_CZI_Import2.png
+"Step 2: Reviewing metadata detected in CZI-dataset.")"
 
 We will then parse the dataset and show the metadata we could extract in
 the next dialog (Step 2). There are a few changes you can make at this
@@ -54,8 +54,8 @@ moment:
     zero-valued volume at the end of the stack.
 
 ![Step 3: Modifying calibration and rotation
-axis.](BigStitcher_CZI_Import3.png
-"Step 3: Modifying calibration and rotation axis.")
+axis.](/images/pages/BigStitcher_CZI_Import3.png
+"Step 3: Modifying calibration and rotation axis.")"
 
 If you chose to modify the calibration or the rotation axis, a third
 dialog will be displayed in which you can manually set the following

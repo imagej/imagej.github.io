@@ -20,8 +20,8 @@ the structure, completing the line with a right click. You should have
 something like this:
 
 ![The original banana with a segmented line
-selection](Tutorial-banana-selection.png
-"The original banana with a segmented line selection")
+selection](/images/pages/Tutorial-banana-selection.png
+"The original banana with a segmented line selection")"
 
 Then select the {% include bc content='Edit | Selection |
 Straighten...'%} menu option and you should be prompted for a line width
@@ -31,8 +31,8 @@ I set it to 500 pixels. The result after doing this looks like the
 following:
 
 ![The result of running the Straighten
-plugin](Tutorial-banana-straightened.jpg
-"The result of running the Straighten plugin")
+plugin](/images/pages/Tutorial-banana-straightened.jpg
+"The result of running the Straighten plugin")"
 
 Note that you will not be prompted for the line width when running the
 plugin a second time - you can change the line width with {% include bc
@@ -41,7 +41,7 @@ content='Image | Adjust | Line Width...'%}
 The two images composed are shown below:
 
 ![The original banana and the straightened
-version](Tutorial-bananas-result.jpg
-"The original banana and the straightened version")
+version](/images/pages/Tutorial-bananas-result.jpg
+"The original banana and the straightened version")"
 
 [Category:Plugins](Category:Plugins "wikilink")

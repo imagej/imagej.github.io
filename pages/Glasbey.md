@@ -40,11 +40,11 @@ as JPEG compression artifacts. Here is a comparison of the Boats sample
 image before and after being resaved as a JPEG:
 
 ![The grayscale LUT makes it very difficult (for most people) to see any
-visual difference.](JPEG-grayscale.png
-"The grayscale LUT makes it very difficult (for most people) to see any visual difference.")
+visual difference.](/images/pages/JPEG-grayscale.png
+"The grayscale LUT makes it very difficult (for most people) to see any visual difference.")"
 ![The Glasbey LUT makes it quite obvious where JPEG compression caused a
-loss of data fidelity.](JPEG-glasbey.png
-"The Glasbey LUT makes it quite obvious where JPEG compression caused a loss of data fidelity.")
+loss of data fidelity.](/images/pages/JPEG-glasbey.png
+"The Glasbey LUT makes it quite obvious where JPEG compression caused a loss of data fidelity.")"
 
 ## Publication
 

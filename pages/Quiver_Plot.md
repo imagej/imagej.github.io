@@ -36,8 +36,8 @@ corresponding array of vector angles and vector speeds for points in
 space. (NOTE: The actual pixel values in these images needs to be the
 angle in degrees, and the magnitude of the vector). The Quiver Plot
 plugin was then used to make a quiver plot based off of the angle and
-speed arrays.](Intro_Quiver_Plot_Image.jpg
-"Intro to generating a quiver plot From left to right: The original data showing a wave moving through time (blue = start time, red = end time). Vector analysis was performed on the wave to generate a corresponding array of vector angles and vector speeds for points in space. (NOTE: The actual pixel values in these images needs to be the angle in degrees, and the magnitude of the vector). The Quiver Plot plugin was then used to make a quiver plot based off of the angle and speed arrays.")
+speed arrays.](/images/pages/Intro_Quiver_Plot_Image.jpg
+"Intro to generating a quiver plot From left to right: The original data showing a wave moving through time (blue = start time, red = end time). Vector analysis was performed on the wave to generate a corresponding array of vector angles and vector speeds for points in space. (NOTE: The actual pixel values in these images needs to be the angle in degrees, and the magnitude of the vector). The Quiver Plot plugin was then used to make a quiver plot based off of the angle and speed arrays.")"
 
 ## Running the Quiver Plot Plugin
 
@@ -45,8 +45,8 @@ The Quiver Plot plugin needs two 32-bit images, one representing the
 vector angles (direction) and one representing the vector magnitude.
 When you run the plugin, you will see the following window:
 
-![Quiver\_Plot\_Plugin\_GUI.png](Quiver_Plot_Plugin_GUI.png
-"Quiver_Plot_Plugin_GUI.png")
+![Quiver\_Plot\_Plugin\_GUI.png](/images/pages/Quiver_Plot_Plugin_GUI.png
+"Quiver_Plot_Plugin_GUI.png")"
 
 There are two drop-down menus that list all of the currently open
 windows. Of these windows, select the images that correspond to the

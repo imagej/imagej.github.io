@@ -8,8 +8,8 @@ categories: News,ImageJ2,Conference,Presentations
 description: test description
 ---
 
-![ImageJ 2010 User & Developer Conference](Imagej-conference-2010.jpg
-"ImageJ 2010 User & Developer Conference")
+![ImageJ 2010 User & Developer Conference](/images/pages/Imagej-conference-2010.jpg
+"ImageJ 2010 User & Developer Conference")"
 
 We attended the [ImageJ User & Developer Conference
 2010](Conference_2010 "wikilink"), which was really fun and informative.

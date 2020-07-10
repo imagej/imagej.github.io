@@ -27,8 +27,8 @@ The ICP refinement can be found in the main (right-click) menu of the
 Stiching mode under {% include bc content='Registration Refinement
 (optional)|Refine with ICP'%}:
 
-![BigStitcher\_icp\_01.png](BigStitcher_icp_01.png
-"BigStitcher_icp_01.png")
+![BigStitcher\_icp\_01.png](/images/pages/BigStitcher_icp_01.png
+"BigStitcher_icp_01.png")"
 
 ICP is an interest-point-based algorithm, meaning that we have to first
 detect interest points in the sample before aligning the images. In
@@ -101,15 +101,15 @@ will pop up. In this dialog, you can set the following parameters:
   - **Group Illuminations:** Whether to groups illuminations (i.e.
     transform them together) or not.
 
-![BigStitcher\_icp\_02.png](BigStitcher_icp_02.png
-"BigStitcher_icp_02.png")
+![BigStitcher\_icp\_02.png](/images/pages/BigStitcher_icp_02.png
+"BigStitcher_icp_02.png")"
 
 If you opted for **Regularization** of the transform in the previous
 dialog, you will be asked for the type of the second transformation
 model to estimate and a **lambda** (\(\in[0,1]\)), i.e. how much weight
 you want to give to the regularizing model in the final averaged result.
 
-![BigStitcher\_regularize\_model.png](BigStitcher_regularize_model.png
-"BigStitcher_regularize_model.png")
+![BigStitcher\_regularize\_model.png](/images/pages/BigStitcher_regularize_model.png
+"BigStitcher_regularize_model.png")"
 
 Go back to the [main page](BigStitcher#Documentation "wikilink")

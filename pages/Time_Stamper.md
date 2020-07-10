@@ -24,8 +24,8 @@ zero to display nothing but the text in the Suffix field.
 Start the plugin on a stack or hyperstack using {% include bc
 content='Image | Stacks | Time Stamper'%}.
 
-![Time\_Stamper\_Parameters.png](Time_Stamper_Parameters.png
-"Time_Stamper_Parameters.png")
+![Time\_Stamper\_Parameters.png](/images/pages/Time_Stamper_Parameters.png
+"Time_Stamper_Parameters.png")"
 
 Options:
 
@@ -51,8 +51,8 @@ Options:
   - **Suffix**
   - **Anti-aliased text**
 
-![Time\_Stamper\_Result.png](Time_Stamper_Result.png
-"Time_Stamper_Result.png")
+![Time\_Stamper\_Result.png](/images/pages/Time_Stamper_Result.png
+"Time_Stamper_Result.png")"
 
 [Category:Plugins](Category:Plugins "wikilink") [Category:Image
 annotation](Category:Image_annotation "wikilink")

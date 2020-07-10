@@ -202,8 +202,8 @@ command. {% endcapture %} {% include tip id='OpeningBAR' tip=tip %}
 ![BAR features a neat mechanism that allows
 <span style="border-bottom:1px dotted #ccc;">BAR▷</span> commands to
 shuttle between the main menu bar and the image's context
-menu.](TransposableBarMenu.png
-"BAR features a neat mechanism that allows BAR▷ commands to shuttle between the main menu bar and the image's context menu.")
+menu.](/images/pages/TransposableBarMenu.png
+"BAR features a neat mechanism that allows BAR▷ commands to shuttle between the main menu bar and the image's context menu.")"
 <span style="border-bottom:1px dotted #ccc;">BAR▷ </span> submenus can
 be appended to the image's context menu (the menu that pops up when
 right-clicking on the image canvas) by running
@@ -259,8 +259,8 @@ pasted code would look something like this:
 
 ### Commander
 
-![Commander overview (BAR 1.1.2).](CommanderOverview.png
-"Commander overview (BAR 1.1.2).") Since the majority of BARs are
+![Commander overview (BAR 1.1.2).](/images/pages/CommanderOverview.png
+"Commander overview (BAR 1.1.2).")" Since the majority of BARs are
 scripts stored in dedicated files, BAR features Commander ({% include bc
 content='BAR|BAR Commander...'%}), a keyboard-based file browser that
 produces filtered lists of directory contents.
@@ -343,8 +343,8 @@ additions to be shared across routines.
 ### Snippets
 
 ![{% include bc content='BAR|Snippets|NewSnippet...'%} (BAR
-1.1.0)](SnippetCreator.png
-"{% include bc content='BAR|Snippets|NewSnippet...'%} (BAR 1.1.0)") BAR
+1.1.0)](/images/pages/SnippetCreator.png
+"{% include bc content='BAR|Snippets|NewSnippet...'%} (BAR 1.1.0)")" BAR
 contains a directory, *plugins/Scripts/BAR/Snippets/*, containing
 multi-language
 [examples](https://github.com/tferr/Scripts/tree/master/Snippets) that

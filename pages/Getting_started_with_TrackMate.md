@@ -488,8 +488,8 @@ tracker**.
 ## Configuring the simple LAP tracker
 
 ![TrackMate TrackerConfiguration
-1.png](TrackMate_TrackerConfiguration_1.png
-"TrackMate TrackerConfiguration 1.png")
+1.png](/images/pages/TrackMate_TrackerConfiguration_1.png
+"TrackMate TrackerConfiguration 1.png")"
 
 As promised, there is only three configuration fields.
 
@@ -530,8 +530,8 @@ You are now shown the log panel, where the tracking process is logged.
 Since our dataset is very small, it should complete very quickly. Press
 **Next** again to see the results. They should look like this:
 
-![TrackMate TrackingResults 1.png](TrackMate_TrackingResults_1.png
-"TrackMate TrackingResults 1.png")
+![TrackMate TrackingResults 1.png](/images/pages/TrackMate_TrackingResults_1.png
+"TrackMate TrackingResults 1.png")"
 
 Basically, the tracker held its promises: there is 6 tracks (the two
 immobile spots at the bottom left part of the image contributed a track
@@ -554,8 +554,8 @@ tracker** and move to its configuration panel.
 
 ## Configuring a not so simple tracker
 
-![TrackMate\_TrackerConfiguration\_2.png](TrackMate_TrackerConfiguration_2.png
-"TrackMate_TrackerConfiguration_2.png")
+![TrackMate\_TrackerConfiguration\_2.png](/images/pages/TrackMate_TrackerConfiguration_2.png
+"TrackMate_TrackerConfiguration_2.png")"
 
 Look at the configuration panel. It is quite more complex than for the
 simple tracker, obviously, and it is the price for flexibility. Since it
@@ -640,8 +640,8 @@ As an exercise, try to find the parameters the will fuse the central
 track segments in a single large track, with two splitting events and a
 merge event. You should obtain the track layout pictured below.
 
-![TrackMate\_TrackingResults\_2.png](TrackMate_TrackingResults_2.png
-"TrackMate_TrackingResults_2.png")
+![TrackMate\_TrackingResults\_2.png](/images/pages/TrackMate_TrackingResults_2.png
+"TrackMate_TrackingResults_2.png")"
 
 ## Filtering tracks
 
@@ -652,8 +652,8 @@ are happy with the remaining tracks. As for the spots, the tracks are
 not really deleted; they are just hidden and you can retrieve them by
 switching back to this panel and delete the filters.
 
-![TrackMate\_TrackingFiltering.png](TrackMate_TrackingFiltering.png
-"TrackMate_TrackingFiltering.png")
+![TrackMate\_TrackingFiltering.png](/images/pages/TrackMate_TrackingFiltering.png
+"TrackMate_TrackingFiltering.png")"
 
 Here, we have a total of 4 tracks. The two immobile spots of the bottom
 left contribute one track each, that we can barely see because they do
@@ -663,8 +663,8 @@ track displacement, as picture above.
 
 ## The end or so
 
-![TrackMate\_DisplayPanel.png](TrackMate_DisplayPanel.png
-"TrackMate_DisplayPanel.png")
+![TrackMate\_DisplayPanel.png](/images/pages/TrackMate_DisplayPanel.png
+"TrackMate_DisplayPanel.png")"
 
 We are now close to the end of a typical workflow for a tracking
 problem. The panel you see now is the one that recapitulates display

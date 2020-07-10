@@ -108,8 +108,8 @@ Open the example image "Dot Blot (7k)" in the menu File, Open Samples
 
 Using the "Point selections", select a seed point as a start.
 
-![Fiji-pointselection.png](Fiji-pointselection.png
-"Fiji-pointselection.png")
+![Fiji-pointselection.png](/images/pages/Fiji-pointselection.png
+"Fiji-pointselection.png")"
 
 Selecting a point is very similar to selecting a location for filling an
 object - in fact, fast marching is very similar to flood fill with a

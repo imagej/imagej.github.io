@@ -77,8 +77,8 @@ for the multi-view deconvolution.* </span>
 ## How to use the plugin
 
 ![Shows the first dialog that queries the location of the multi-view
-files](Spim_multiview_dialog1.jpg
-"Shows the first dialog that queries the location of the multi-view files")
+files](/images/pages/Spim_multiview_dialog1.jpg
+"Shows the first dialog that queries the location of the multi-view files")"
 
 The multi-view deconvolution consists like the multi-view fusion of two
 consecutive dialogs. The first dialog queries the information necessary
@@ -100,8 +100,8 @@ reference timepoints. If no registration files could be found, the
 plugin will quit.
 
 ![Shows the second dialog that queries detailed
-parameters](mv_deconvolution.png
-"Shows the second dialog that queries detailed parameters")
+parameters](/images/pages/mv_deconvolution.png
+"Shows the second dialog that queries detailed parameters")"
 
 In the second dialog, you have to define the detailed instruction of how
 to run the multi-view deconvolution.

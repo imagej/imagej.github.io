@@ -16,8 +16,8 @@ include person content="Pietzsch" %} {% endcapture %}
 
 {% capture source %} {% include github org="fiji" repo="MaMuT" %} {%
 endcapture %} {% include sidebox-right software='Fiji' name='MaMuT'
-logo='![MaMuT\_logo-256x256.png](MaMuT_logo-256x256.png
-"MaMuT_logo-256x256.png")' maintainer=maintainer author=author
+logo='![MaMuT\_logo-256x256.png](/images/pages/MaMuT_logo-256x256.png
+"MaMuT_logo-256x256.png")"' maintainer=maintainer author=author
 source=source status='v0.27.0, active' released='06/01/2015'
 category='[Segmentation](:Category:Segmentation "wikilink"),
 [Tracking](:Category:Tracking "wikilink"),
@@ -41,8 +41,8 @@ MaMuT is an end user plugin that combines the
 [TrackMate](TrackMate "wikilink") to provide an application that allow
 browsing, annotating and curating annotations for large image data.
 
-![MaMuT\_presentation.png](MaMuT_presentation.png
-"MaMuT_presentation.png")
+![MaMuT\_presentation.png](/images/pages/MaMuT_presentation.png
+"MaMuT_presentation.png")"
 
 The main window resembles the display panel of
 [TrackMate](TrackMate "wikilink"). It controls how the annotations are
@@ -50,16 +50,16 @@ displayed. Using the *MaMuT Viewer* button, several views of the data
 can be launched. They will all be in sync. Each of them is an instance
 of the [BigDataViewer](BigDataViewer "wikilink").
 
-![MaMuT\_WindowsInSync.png](MaMuT_WindowsInSync.png
-"MaMuT_WindowsInSync.png")
+![MaMuT\_WindowsInSync.png](/images/pages/MaMuT_WindowsInSync.png
+"MaMuT_WindowsInSync.png")"
 
 We privileged annotations that are like lineages, or object followed
 over time (which is what [TrackMate](TrackMate "wikilink") does). MaMuT
 ships [TrackScheme](TrackScheme "wikilink"), the lineage browser taken
 from TrackMate.
 
-![MaMuT\_WithTrackScheme.png](MaMuT_WithTrackScheme.png
-"MaMuT_WithTrackScheme.png")
+![MaMuT\_WithTrackScheme.png](/images/pages/MaMuT_WithTrackScheme.png
+"MaMuT_WithTrackScheme.png")"
 
 However, MaMuT itself does not ship any fully-automated or tracking
 algorithm. It is meant for manual or semi-automatic annotation. Still,
@@ -67,8 +67,8 @@ we made the GUI comfortable enough so that you can quickly generate
 rather large annotations. A semi-automated segmentation can help you
 generating quickly lineage branches from single cells.
 
-![MaMuT\_LargeAnnotationsQuickly.png](MaMuT_LargeAnnotationsQuickly.png
-"MaMuT_LargeAnnotationsQuickly.png")
+![MaMuT\_LargeAnnotationsQuickly.png](/images/pages/MaMuT_LargeAnnotationsQuickly.png
+"MaMuT_LargeAnnotationsQuickly.png")"
 
 ## User documentation.
 

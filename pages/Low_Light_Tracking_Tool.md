@@ -61,8 +61,8 @@ whichever method you prefer in Fiji. The LLTT-plugin will work with
 8-bit, 16-bit and 32-bit-float stacks. Moreover you can use 3D and
 multichannel hyperstacks. If you want to try the LLTT-plugin but do not
 have the right data at hand, you can download a file with sample data
-here: ![LLTT\_BeadsExampleData.zip](LLTT_BeadsExampleData.zip
-"LLTT_BeadsExampleData.zip").
+here: ![LLTT\_BeadsExampleData.zip](/images/pages/LLTT_BeadsExampleData.zip
+"LLTT_BeadsExampleData.zip")".
 
 ## Start the LLTT-plugin
 
@@ -76,8 +76,8 @@ After the data is loaded, start the plugin by clicking:
 
 Upon startup of the plugin you will be asked to enter three values.
 
-![LLTT\_GlobalOptions2d.jpg](LLTT_GlobalOptions2d.jpg
-"LLTT_GlobalOptions2d.jpg")
+![LLTT\_GlobalOptions2d.jpg](/images/pages/LLTT_GlobalOptions2d.jpg
+"LLTT_GlobalOptions2d.jpg")"
 
 They are:
 
@@ -147,8 +147,8 @@ of navigating through your stack or hyper stack:
 
 ## Create session
 
-![LLTT\_ChooseSession.jpg](LLTT_ChooseSession.jpg
-"LLTT_ChooseSession.jpg")
+![LLTT\_ChooseSession.jpg](/images/pages/LLTT_ChooseSession.jpg
+"LLTT_ChooseSession.jpg")"
 
 Click on the **New Session** button or select from the menu. The **New
 session** window opens. Here you can pick a name for the session as well

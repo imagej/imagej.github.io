@@ -8,8 +8,8 @@ categories: News,ImageJ2,Hackathons,Ops
 description: test description
 ---
 
-![A graph of progress during the hackathon.](2014-ops-hackathon.png
-"A graph of progress during the hackathon.")
+![A graph of progress during the hackathon.](/images/pages/2014-ops-hackathon.png
+"A graph of progress during the hackathon.")"
 
 From Sunday, September 14, 2014 through Friday, September 19, 2014, LOCI
 in Madison hosted Christian Dietz and Brian Northan, two developers of

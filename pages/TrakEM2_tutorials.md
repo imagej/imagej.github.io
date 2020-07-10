@@ -10,8 +10,8 @@ description: test description
 
 ## Video tutorial on the basic recipe for TrakEM2
 
-![TrakEM2 basic tutorial](Screenshot-TrakEM2_basics_tutorial.png
-"TrakEM2 basic tutorial")
+![TrakEM2 basic tutorial](/images/pages/Screenshot-TrakEM2_basics_tutorial.png
+"TrakEM2 basic tutorial")"
 
 This is the [basic tutorial for
 TrakEM2](TrakEM2_basics_tutorial "wikilink"). **If you are new to
@@ -30,8 +30,8 @@ tutorial](TrakEM2_basics_tutorial "wikilink")**. It includes:
 ## Video tutorial on segmenting/outlining objects over multiple sections in 3D
 
 ![TrakEM2 brushing (This video tutorial was made by Albert Cardona. To
-visualize it, you need a mp4 player.)](Arealists-brushing.jpg
-"TrakEM2 brushing (This video tutorial was made by Albert Cardona. To visualize it, you need a mp4 player.)")
+visualize it, you need a mp4 player.)](/images/pages/Arealists-brushing.jpg
+"TrakEM2 brushing (This video tutorial was made by Albert Cardona. To visualize it, you need a mp4 player.)")"
 This mp4 [video
 tutorial](http://www.ini.uzh.ch/~acardona/movies/arealist-create-and-edit.mp4)
 covers:
@@ -49,8 +49,8 @@ AreaList](http://www.ini.uzh.ch/~acardona/trakem2_manual.html#edit_arealist).
 ## Video tutorial on aligning sections
 
 ![TrakEM2 align sections
-tutorial](Screenshot-TrakEM2_align_sections_tutorial.png
-"TrakEM2 align sections tutorial")
+tutorial](/images/pages/Screenshot-TrakEM2_align_sections_tutorial.png
+"TrakEM2 align sections tutorial")"
 
 [This video tutorial](TrakEM2_align_sections_tutorial "wikilink") is
 focused on:
@@ -66,8 +66,8 @@ explained](http://www.ini.uzh.ch/~acardona/howto.html#sift_parameters).
 ## Video tutorial on manual segmentation modes
 
 ![TrakEM2 manual segmentation
-modes](Screenshot-TrakEM2-Manual-Segmentation-Modes-Tutorial.png
-"TrakEM2 manual segmentation modes")
+modes](/images/pages/Screenshot-TrakEM2-Manual-Segmentation-Modes-Tutorial.png
+"TrakEM2 manual segmentation modes")"
 
 [Tutorial on how to manually segment cells using the 3 segmentation
 modes](TrakEM2_segmentation_modes_tutorial "wikilink"):
@@ -87,8 +87,8 @@ modes](TrakEM2_segmentation_modes_tutorial "wikilink"):
 ## Video tutorial on semi-automatic segmentation
 
 ![TrakEM2 semi-automatic
-segmentation](Screenshot-TrakEM2-tutorial-automatic-segmentation.png
-"TrakEM2 semi-automatic segmentation")
+segmentation](/images/pages/Screenshot-TrakEM2-tutorial-automatic-segmentation.png
+"TrakEM2 semi-automatic segmentation")"
 
 In [this video
 tutorial](TrakEM2_semi-automatic_segmentation_tutorial "wikilink") you
@@ -103,8 +103,8 @@ will learn:
 ## Video tutorial on measuring surfaces and volumes
 
 ![TrakEM2 measuring surfaces and
-volumes](Screenshot-TrakEM2-tutorial-measure-surfaces.png
-"TrakEM2 measuring surfaces and volumes")
+volumes](/images/pages/Screenshot-TrakEM2-tutorial-measure-surfaces.png
+"TrakEM2 measuring surfaces and volumes")"
 
 In [this video tutorial](TrakEM2_measurements_tutorial "wikilink") you
 will learn how to:
@@ -121,8 +121,8 @@ in the TrakEM2 manual, with figures.
 ## Video tutorial on adding sections/layers to an existing project
 
 ![TrakEM2 adding layers to existing
-project](Screenshot-TrakEM2-tutorial-add-layers.png
-"TrakEM2 adding layers to existing project")
+project](/images/pages/Screenshot-TrakEM2-tutorial-add-layers.png
+"TrakEM2 adding layers to existing project")"
 
 [Here](TrakEM2_add_more_sections/layers_tutorial "wikilink") you will
 learn how to:
@@ -139,8 +139,8 @@ layers, i.e. concatenating to enlarge the collection of sections.
 
 ## Video tutorial on saving a project
 
-![TrakEM2 saving a project](Screenshot-TrakEM2-save-project.png
-"TrakEM2 saving a project")
+![TrakEM2 saving a project](/images/pages/Screenshot-TrakEM2-save-project.png
+"TrakEM2 saving a project")"
 
   - [Saving a TrakEM2
     project](TrakEM2_saving_project_tutorial "wikilink") into an .XML

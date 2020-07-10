@@ -91,8 +91,8 @@ identified as either normal diffusion (red), confined diffusion
 (yellow), anomalous diffusion (green) or directed motion (magenta).
 Boxed areas (A-D) show selected cases of directed motion:
 
-![Journal.pone.0170165.g006.PNG](Journal.pone.0170165.g006.PNG
-"Journal.pone.0170165.g006.PNG")
+![Journal.pone.0170165.g006.PNG](/images/pages/Journal.pone.0170165.g006.PNG
+"Journal.pone.0170165.g006.PNG")"
 
 More examples could be found in
 
@@ -103,8 +103,8 @@ e0170165](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.01701
 
 ## Parameters
 
-![Trajclassifier\_gui.png](Trajclassifier_gui.png
-"Trajclassifier_gui.png") **Minimal track length:** Minimal number of
+![Trajclassifier\_gui.png](/images/pages/Trajclassifier_gui.png
+"Trajclassifier_gui.png")" **Minimal track length:** Minimal number of
 positions in a trajectory. It has to be greater than the window size. As
 the window size should be at least 30, the same is true for the minimal
 track length.

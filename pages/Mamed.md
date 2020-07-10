@@ -45,8 +45,8 @@ sites.
 
 Now we need to add an update site by clicking **Add**
 
-![Pietzsch\_update\_site.png](Pietzsch_update_site.png
-"Pietzsch_update_site.png")
+![Pietzsch\_update\_site.png](/images/pages/Pietzsch_update_site.png
+"Pietzsch_update_site.png")"
 
 In the field **URL** type *http://sites.imagej.net/Pietzsch*
 

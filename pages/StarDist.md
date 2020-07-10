@@ -31,8 +31,8 @@ plugin, please file an issue
 have 3D data, please use our [python
 library](https://github.com/mpicbg-csbd/stardist).*
 
-![Stardist\_screenshot\_small.jpg](Stardist_screenshot_small.jpg
-"Stardist_screenshot_small.jpg")
+![Stardist\_screenshot\_small.jpg](/images/pages/Stardist_screenshot_small.jpg
+"Stardist_screenshot_small.jpg")"
 
 ## Installation
 
@@ -57,8 +57,8 @@ and 2D+time images are supported. Suitable test images can for instance
 be found at the [Broad Bioimage Benchmark
 Collection](https://data.broadinstitute.org/bbbc/BBBC008/BBBC008_v1_images.zip)\[1\]:
 
-![StarDist\_usage\_input.png](StarDist_usage_input.png
-"StarDist_usage_input.png")
+![StarDist\_usage\_input.png](/images/pages/StarDist_usage_input.png
+"StarDist_usage_input.png")"
 
 Start the plugin from `Plugins > StarDist > StarDist 2D`. The following
 parameters can be set:
@@ -110,8 +110,8 @@ parameters can be set:
 Example of running the plugin, showing the returned label image and ROIs
 overlaid on the input image (check `Show All` in the ROI Manager):
 
-![StarDist\_usage\_output.png](StarDist_usage_output.png
-"StarDist_usage_output.png")
+![StarDist\_usage\_output.png](/images/pages/StarDist_usage_output.png
+"StarDist_usage_output.png")"
 
 ## Citation
 

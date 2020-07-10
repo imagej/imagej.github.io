@@ -22,8 +22,8 @@ include person content="Rueden" %} {% endcapture %}
 
 {% capture source %} {% include github org="imglib" repo="imglib2" %} {%
 endcapture %} {% include sidebox-right name='ImgLib2' software='Generic
-Image Processing for Java' logo='![imglib2-logo.png](imglib2-logo.png
-"imglib2-logo.png")' author=author maintainer=maintainer source=source
+Image Processing for Java' logo='![imglib2-logo.png](/images/pages/imglib2-logo.png
+"imglib2-logo.png")"' author=author maintainer=maintainer source=source
 status='stable, active'
 category='[:Category:ImgLib](:Category:ImgLib "wikilink")' %}{% include
 imglibmenu %}ImgLib2 is a general-purpose, multidimensional image

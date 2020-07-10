@@ -542,8 +542,8 @@ spot detection and linking. We typically use negative values for these
 two numbers when doing manual edits.
 
 The script below does this:
-![TrackMate\_AnimatedName.gif](TrackMate_AnimatedName.gif
-"TrackMate_AnimatedName.gif")
+![TrackMate\_AnimatedName.gif](/images/pages/TrackMate_AnimatedName.gif
+"TrackMate_AnimatedName.gif")"
 
 ``` python
 import ij.gui.NewImage as NewImage
@@ -1080,8 +1080,8 @@ analyzer.
 
 So an ideal starting situation would like this:
 
-![TrackMateScriptBeforeCapture.png](TrackMateScriptBeforeCapture.png
-"TrackMateScriptBeforeCapture.png")
+![TrackMateScriptBeforeCapture.png](/images/pages/TrackMateScriptBeforeCapture.png
+"TrackMateScriptBeforeCapture.png")"
 
 this script will generate the following tracks:
 

@@ -33,8 +33,8 @@ separate windows so we can inspect them and manipulate them separately:
 Select the FluorescentCells.tif image window and do menu item:
 "Image-Color-Split Channels".
 
-![SplitColourChannels.png](SplitColourChannels.png
-"SplitColourChannels.png")
+![SplitColourChannels.png](/images/pages/SplitColourChannels.png
+"SplitColourChannels.png")"
 
 1.  **[Lossy
     Compression](wikipedia:Lossy_data_compression "wikilink"):** First,

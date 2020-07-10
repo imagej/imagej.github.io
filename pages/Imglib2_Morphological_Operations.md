@@ -140,8 +140,8 @@ They exist to cover all cases, which fall in 4 categories:
 Img< FloatType > result = Dilation.dilate( img, strel, 1 );
 ```
 
-![DilatedToNewImgExample.png](DilatedToNewImgExample.png
-"DilatedToNewImgExample.png")
+![DilatedToNewImgExample.png](/images/pages/DilatedToNewImgExample.png
+"DilatedToNewImgExample.png")"
 
   - You want to perform to **full** dilation or erosion on a source Img.
     Full version of these operations means the new image will have a
@@ -154,8 +154,8 @@ Img< FloatType > result = Dilation.dilate( img, strel, 1 );
 Img< FloatType > result = Dilation.dilateFull( img, strel, 1 );
 ```
 
-![DilatedToNewFullImgExample.png](DilatedToNewFullImgExample.png
-"DilatedToNewFullImgExample.png")
+![DilatedToNewFullImgExample.png](/images/pages/DilatedToNewFullImgExample.png
+"DilatedToNewFullImgExample.png")"
 
   - You want to operate on a source
     [RandomAccessibleInterval](https://github.com/imglib/imglib2/blob/master/src/main/java/net/imglib2/RandomAccessibleInterval.java),
@@ -167,8 +167,8 @@ Img< FloatType > result = Dilation.dilateFull( img, strel, 1 );
 Dilation.dilateInPlace( rai, interval, strel, 1 );
 ```
 
-![DilatedInPlaceExample.png](DilatedInPlaceExample.png
-"DilatedInPlaceExample.png")
+![DilatedInPlaceExample.png](/images/pages/DilatedInPlaceExample.png
+"DilatedInPlaceExample.png")"
 
   - You want to operate on a source
     [RandomAccessible](https://github.com/imglib/imglib2/blob/master/src/main/java/net/imglib2/RandomAccessible.java),
@@ -181,8 +181,8 @@ Dilation.dilateInPlace( rai, interval, strel, 1 );
 Dilation.dilate( source, target, strel, 1 )
 ```
 
-![DilatedToTargetExample.png](DilatedToTargetExample.png
-"DilatedToTargetExample.png")
+![DilatedToTargetExample.png](/images/pages/DilatedToTargetExample.png
+"DilatedToTargetExample.png")"
 
 Now, each of these category are declined in 4 specifics methods:
 

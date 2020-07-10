@@ -29,8 +29,8 @@ option to alter the width of the white border between the image panels."
 See also [Color Image
 Processing\#\#Splitting\_multi-channel\_Images](Color_Image_Processing##Splitting_multi-channel_Images "wikilink").
 
-![RGB\_to\_montage\_example.png](RGB_to_montage_example.png
-"RGB_to_montage_example.png")
+![RGB\_to\_montage\_example.png](/images/pages/RGB_to_montage_example.png
+"RGB_to_montage_example.png")"
 
 [Category:Plugins](Category:Plugins "wikilink") [Category:Color
 processing](Category:Color_processing "wikilink")

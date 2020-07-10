@@ -234,8 +234,8 @@ public class LaunchEventLoggerAction implements TrackMateAction
 
 And here are the results:
 
-![TrackMate\_CustomAction\_1.png](TrackMate_CustomAction_1.png
-"TrackMate_CustomAction_1.png")
+![TrackMate\_CustomAction\_1.png](/images/pages/TrackMate_CustomAction_1.png
+"TrackMate_CustomAction_1.png")"
 
 You can imagine a lot of applications for Actions. Since they give you
 access to most of the plugin context, you can basically plug anything

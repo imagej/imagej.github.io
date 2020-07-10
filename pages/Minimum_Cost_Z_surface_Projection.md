@@ -14,8 +14,8 @@ description: test description
 Surface' author='[Benoit Lombardot](User:Benoit "wikilink")'
 maintainer='[Benoit Lombardot](User:Benoit "wikilink")' released='03
 August 2016'
-filename='![MinCostZSurface\_-1.1.0.jar.zip](MinCostZSurface_-1.1.0.jar.zip
-"MinCostZSurface_-1.1.0.jar.zip")' source='[MPI-CBG
+filename='![MinCostZSurface\_-1.1.0.jar.zip](/images/pages/MinCostZSurface_-1.1.0.jar.zip
+"MinCostZSurface_-1.1.0.jar.zip")"' source='[MPI-CBG
 git](https://git.mpi-cbg.de/bioimage-informatics/MinCostSurface_Projection)'
 category='[Plugins](:Category:Plugins "wikilink"),
 [Projection](:Category:Projection "wikilink")' %}
@@ -34,8 +34,8 @@ Inversely, if one wants to visualize a surface ocluded by other object
 the signal far from the surface can be attenuated. Figure 1 and 2 are
 illustrate these use cases.
 
-![MinCostSurf\_Ex2\_SurfaceSelection.PNG](MinCostSurf_Ex2_SurfaceSelection.PNG
-"MinCostSurf_Ex2_SurfaceSelection.PNG")
+![MinCostSurf\_Ex2\_SurfaceSelection.PNG](/images/pages/MinCostSurf_Ex2_SurfaceSelection.PNG
+"MinCostSurf_Ex2_SurfaceSelection.PNG")"
 
 <div align="center">
 
@@ -46,8 +46,8 @@ Data credit: Andreas Sagner, Eaton lab, MPI-CBG, Dresden
 
 </div>
 
-![MinCostSurf\_Ex1\_removeSurface.PNG](MinCostSurf_Ex1_removeSurface.PNG
-"MinCostSurf_Ex1_removeSurface.PNG")
+![MinCostSurf\_Ex1\_removeSurface.PNG](/images/pages/MinCostSurf_Ex1_removeSurface.PNG
+"MinCostSurf_Ex1_removeSurface.PNG")"
 
 <div align="center">
 
@@ -76,8 +76,8 @@ and to select a region with a user defined thickness around it.
     preprocessing that can enhance the surface can be used to favor a
     good detection of the surface.
 
-![MinCostSurf\_inputImage.PNG](MinCostSurf_inputImage.PNG
-"MinCostSurf_inputImage.PNG")
+![MinCostSurf\_inputImage.PNG](/images/pages/MinCostSurf_inputImage.PNG
+"MinCostSurf_inputImage.PNG")"
 
 <div align="center">
 
@@ -129,8 +129,8 @@ user interface of the plugin with the parameter used for this example
         slice. Other slice correspond to the intensity if the original
         image on tranlated version of the surface.
 
-![MinCostSurf\_output.PNG](MinCostSurf_output.PNG
-"MinCostSurf_output.PNG")
+![MinCostSurf\_output.PNG](/images/pages/MinCostSurf_output.PNG
+"MinCostSurf_output.PNG")"
 
 <div align="center">
 

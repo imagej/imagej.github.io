@@ -76,8 +76,8 @@ your measurements working from the inner most spots/rings outwards.
 shows the raw imageJ measurements that were made by drawing a circle and
 pressing the "m" key on the keyboard. The table on the right is the
 result of the plugin. Just go to the TEM menu and select *calc dSpace*.
-The calculation is automatic. ![New\_Fig\_2.jpg](New_Fig_2.jpg
-"New_Fig_2.jpg") There are 3 new columns in the Results window: G, d, 2%
+The calculation is automatic. ![New\_Fig\_2.jpg](/images/pages/New_Fig_2.jpg
+"New_Fig_2.jpg")" There are 3 new columns in the Results window: G, d, 2%
 error. The scalar component of the G vector in reciprocal space is found
 and measured in 1/nm since these are the image units. The d-spacing is
 listed in Angstroms, and the 2% error is just 2% of the d-spacing. While

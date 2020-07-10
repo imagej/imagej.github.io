@@ -18,8 +18,8 @@ If you are running the **Stitching Wizard**, you will be taken to
 shifts. Otherwise, you can find the link verification functions in the
 right-click menu under **Step-by-step Stitching**:
 
-![BigStitcher\_stitch\_4\_0.png](BigStitcher_stitch_4_0.png
-"BigStitcher_stitch_4_0.png")
+![BigStitcher\_stitch\_4\_0.png](/images/pages/BigStitcher_stitch_4_0.png
+"BigStitcher_stitch_4_0.png")"
 
   - **Interactive Link Explorer ...** will open a window allowing you to
     preview the calculated pairwise shifts, filer them based on criteria
@@ -71,7 +71,7 @@ links will be displayed in the Interactive Link Explorer window.
     optimization](BigStitcher_Global_optimization "wikilink")
     immediately.
 
-![BigStitcher\_stitch\_4\_1.png](BigStitcher_stitch_4_1.png
-"BigStitcher_stitch_4_1.png")
+![BigStitcher\_stitch\_4\_1.png](/images/pages/BigStitcher_stitch_4_1.png
+"BigStitcher_stitch_4_1.png")"
 
 Go back to the [main page](BigStitcher#Documentation "wikilink")

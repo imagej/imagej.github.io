@@ -122,8 +122,8 @@ yellow-green actually have <b>exactly the same color\!</b> You can
 verify this yourself by calling {% include bc content='File | Open
 Samples | [Spirals (Macro)](Spirals_\(Macro\) "wikilink")'%} in Fiji.
 
-![GreenYellowSimultColourIllusion.png](GreenYellowSimultColourIllusion.png
-"GreenYellowSimultColourIllusion.png")
+![GreenYellowSimultColourIllusion.png](/images/pages/GreenYellowSimultColourIllusion.png
+"GreenYellowSimultColourIllusion.png")"
 
 Here is another one. The two circles look like different colours, but
 they are exactly the same if you measure the pixel values.
@@ -332,8 +332,8 @@ the plugin. Check on "Show Colocalized Pixels" and "Show Scatter Plot"
 others off. You can explore the options in Set options. Turn ALL the
 options on the first time you use it, so you see what it can do.
 
-![Coloc1.png](/images/pages/Coloc1.png "Coloc1.png")" ![Coloc1b.png](Coloc1b.png
-"Coloc1b.png") ![Coloc2.png](/images/pages/Coloc2.png "Coloc2.png")" \<\\p\>
+![Coloc1.png](/images/pages/Coloc1.png "Coloc1.png")" ![Coloc1b.png](/images/pages/Coloc1b.png
+"Coloc1b.png")" ![Coloc2.png](/images/pages/Coloc2.png "Coloc2.png")" \<\\p\>
 
 1.  It generates a 2D Histogram / Scatterplot / Fluorogram. this is a
     really good way to visualise the correlation of the pixel

@@ -452,8 +452,8 @@ revert changes in case things go south.
 
 ### Routing for available update sites / updater upgrades
 
-![availablesitesrouting.png](availablesitesrouting.png
-"availablesitesrouting.png")
+![availablesitesrouting.png](/images/pages/availablesitesrouting.png
+"availablesitesrouting.png")"
 
 A server providing the official update sites serves different content
 depending if the updater is requesting them via HTTP or HTTPS. The

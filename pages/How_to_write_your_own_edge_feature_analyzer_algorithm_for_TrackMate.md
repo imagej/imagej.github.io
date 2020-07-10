@@ -501,8 +501,8 @@ the GUI menus), or enabling/disabling, but we will see this later.
 Right now, just compile your project, and drop the resulting jar in the
 Fiji plugins folder. Here is what you get:
 
-![TrackMate\_DevelopEdgeAnalyzer.png](TrackMate_DevelopEdgeAnalyzer.png
-"TrackMate_DevelopEdgeAnalyzer.png")
+![TrackMate\_DevelopEdgeAnalyzer.png](/images/pages/TrackMate_DevelopEdgeAnalyzer.png
+"TrackMate_DevelopEdgeAnalyzer.png")"
 
 ## Wrapping up
 

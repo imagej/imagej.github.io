@@ -80,8 +80,8 @@ focus”. Try “3” for the kernel value in the first instance. The result
 is a "height map" showing the focused images. This plugin only works on
 8- or 16-bit images. It can result in a “pixelly” image.
 
-![stack\_focuser\_example.png](stack_focuser_example.png
-"stack_focuser_example.png")
+![stack\_focuser\_example.png](/images/pages/stack_focuser_example.png
+"stack_focuser_example.png")"
 
 Result of the Stack Focuser plugin with '3' as the kernel value.
 
@@ -102,8 +102,8 @@ be found at the authors' website. A topology image is also generated.
 Please cite the authors' papers below if you publish work using this
 plugin.
 
-![Extended\_depth\_of\_field.png](Extended_depth_of_field.png
-"Extended_depth_of_field.png")
+![Extended\_depth\_of\_field.png](/images/pages/Extended_depth_of_field.png
+"Extended_depth_of_field.png")"
 
 For more information see the following papers:
 
@@ -135,13 +135,13 @@ below.
 
 Original stack:
 
-![z\_coded\_stack\_original.png](z_coded_stack_original.png
-"z_coded_stack_original.png")
+![z\_coded\_stack\_original.png](/images/pages/z_coded_stack_original.png
+"z_coded_stack_original.png")"
 
 Z coded stack:
 
-![z\_coded\_stack\_colored.png](z_coded_stack_colored.png
-"z_coded_stack_colored.png")
+![z\_coded\_stack\_colored.png](/images/pages/z_coded_stack_colored.png
+"z_coded_stack_colored.png")"
 
 Maximum Intensity Projections of each:
 
@@ -157,8 +157,8 @@ depicting a 360 degree rotation of the 3D projection. There are three
 projection methods available: nearest point, brightest point, and mean
 value.
 
-![3d\_project\_window.png](3d_project_window.png
-"3d_project_window.png")
+![3d\_project\_window.png](/images/pages/3d_project_window.png
+"3d_project_window.png")"
 
 The prompt seen when running 3D project.
 
@@ -184,8 +184,8 @@ spacing is less than 1.0 pixels, the option will be ignored.
 
 Opacity, transparency, and depth cues may also be specified.
 
-![3d\_project\_depth\_cues.png](3d_project_depth_cues.png
-"3d_project_depth_cues.png")
+![3d\_project\_depth\_cues.png](/images/pages/3d_project_depth_cues.png
+"3d_project_depth_cues.png")"
 
 At left, an image with surface depth cues at 100% and interior depth
 cues at 50%. The image on the right has surface depth cues at 100% and
@@ -214,8 +214,8 @@ The different display modes contain many options with which you can view
 the rendering: 'Slice', 'Slice & Borders', 'Max Projection',
 'Projection', and 'Volume'.
 
-![volume\_viewer\_display\_modes.png](volume_viewer_display_modes.png
-"volume_viewer_display_modes.png")
+![volume\_viewer\_display\_modes.png](/images/pages/volume_viewer_display_modes.png
+"volume_viewer_display_modes.png")"
 
 Display modes from left to right: slice, slice & borders, max
 projection, projection, volume.
@@ -235,8 +235,8 @@ especial importance for the ‘Slice’, ‘Slice & Borders’, and ‘Volume’
 modes. The methods available are ‘Nearest Neighbor’, ‘Trilinear’,
 ‘Tricubic Smooth’, and ‘Tricubic Sharp’.
 
-![volume\_viewer\_interpolation\_methods.png](volume_viewer_interpolation_methods.png
-"volume_viewer_interpolation_methods.png")
+![volume\_viewer\_interpolation\_methods.png](/images/pages/volume_viewer_interpolation_methods.png
+"volume_viewer_interpolation_methods.png")"
 
 Interpolation methods clockwise from top left: nearest neighbor,
 trilinear, tricubic sharp, tricubic smooth.
@@ -348,8 +348,8 @@ Select part of a stack to be axially sectioned using the line ROI tool
 from the toolbar. Select the menu item “*Image/Stacks/Reslice*" after
 drawing a straight line or rectangle onto an open stack.
 
-![stack\_reslice\_example.png](stack_reslice_example.png
-"stack_reslice_example.png")
+![stack\_reslice\_example.png](/images/pages/stack_reslice_example.png
+"stack_reslice_example.png")"
 
 Stack resliced along a vertical axis.
 
@@ -381,8 +381,8 @@ in the stack that is being analyzed. The views in the XZ and YZ planes
 will update automatically, either as the stack is set to a different
 slice or the lines are manually adjusted on any of the three windows.
 
-![orthogonal\_views\_example.png](orthogonal_views_example.png
-"orthogonal_views_example.png")
+![orthogonal\_views\_example.png](/images/pages/orthogonal_views_example.png
+"orthogonal_views_example.png")"
 
 Example of image seen with orthogonal views.
 
@@ -421,8 +421,8 @@ pairs. Typical values are 6-9°.
 
 Stereo pair
 
-![anaglyph\_comparisons.png](anaglyph_comparisons.png
-"anaglyph_comparisons.png")
+![anaglyph\_comparisons.png](/images/pages/anaglyph_comparisons.png
+"anaglyph_comparisons.png")"
 
 Red-green anaglyph at left, red-cyan anaglyph on the right.
 

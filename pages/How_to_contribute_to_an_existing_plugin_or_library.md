@@ -56,8 +56,8 @@ Go to the library's repository (in this case
 https://github.com/fiji/VIB-lib) and "fork" the repository (click on
 the upper-right "Fork" button):
 
-![Fork-GitHub-tutorial.png](Fork-GitHub-tutorial.png
-"Fork-GitHub-tutorial.png")
+![Fork-GitHub-tutorial.png](/images/pages/Fork-GitHub-tutorial.png
+"Fork-GitHub-tutorial.png")"
 
 By doing this, you will be duplicating the whole repository into your
 own GitHub account. This way you can freely work on the library with an
@@ -140,13 +140,13 @@ project. In GitHub, you do so by using **pull requests**:
 
 First, **switch to your branch**:
 
-![GitHub-change-branch-tutorial.png](GitHub-change-branch-tutorial.png
-"GitHub-change-branch-tutorial.png")
+![GitHub-change-branch-tutorial.png](/images/pages/GitHub-change-branch-tutorial.png
+"GitHub-change-branch-tutorial.png")"
 
 Then click on the **Compare & Review button**:
 
-![GitHub-compare-and-review-tutorial.png](GitHub-compare-and-review-tutorial.png
-"GitHub-compare-and-review-tutorial.png")
+![GitHub-compare-and-review-tutorial.png](/images/pages/GitHub-compare-and-review-tutorial.png
+"GitHub-compare-and-review-tutorial.png")"
 
 After starting the review, you're presented with a review page where you
 can get a high-level overview of what exactly has changed between your
@@ -157,8 +157,8 @@ contributors to your branch.
 Finally, when you're ready to submit your pull request, click **Create
 pull request**:
 
-![GitHub-pull-request-review-create-tutorial.png](GitHub-pull-request-review-create-tutorial.png
-"GitHub-pull-request-review-create-tutorial.png")
+![GitHub-pull-request-review-create-tutorial.png](/images/pages/GitHub-pull-request-review-create-tutorial.png
+"GitHub-pull-request-review-create-tutorial.png")"
 
 *See [GitHub: how to send a pull
 request](https://help.github.com/articles/using-pull-requests) for more
@@ -172,8 +172,8 @@ description, commits, and cumulative diff, the person tasked with
 applying the changes may have questions or comments. The **discussion
 view** is designed to encourage and capture this type of discussion:
 
-![GitHub-discussion-view-tutorial.png](GitHub-discussion-view-tutorial.png
-"GitHub-discussion-view-tutorial.png")
+![GitHub-discussion-view-tutorial.png](/images/pages/GitHub-discussion-view-tutorial.png
+"GitHub-discussion-view-tutorial.png")"
 
 ## Modifying your commits
 
@@ -335,8 +335,8 @@ Once all the developers involved in the conversation are satisfied with
 the state of the branch, the person in charge of the repository will
 merge and close the pull the request:
 
-![GitHub-merge-and-close-pull-request.png](GitHub-merge-and-close-pull-request.png
-"GitHub-merge-and-close-pull-request.png")
+![GitHub-merge-and-close-pull-request.png](/images/pages/GitHub-merge-and-close-pull-request.png
+"GitHub-merge-and-close-pull-request.png")"
 
 ## See also
 

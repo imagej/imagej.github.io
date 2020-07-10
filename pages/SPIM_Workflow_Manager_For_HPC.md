@@ -106,8 +106,8 @@ two separate jobs using two different *config.yaml* files set to execute
 content-based fusion and deconvolution respectively. In the final stage
 of the pipeline, the fusion/deconvolution output is saved into a new
 HDF5 container. Figure below shows results of registration, fusion and
-deconvolution in different time points. ![Drosophila.PNG](Drosophila.PNG
-"Drosophila.PNG")
+deconvolution in different time points. ![Drosophila.PNG](/images/pages/Drosophila.PNG
+"Drosophila.PNG")"
 
 ## HEAppE middleware
 
@@ -162,8 +162,8 @@ Following a successful login, the main window containing all jobs
 arranged in a table is displayed. In this context, the term *job* is
 used for a single pipeline run with specified parameters. The plugin
 actively inquires information on the created jobs from HEAppE and
-updates the table as appropriate. ![Flowchart.PNG](Flowchart.PNG
-"Flowchart.PNG")
+updates the table as appropriate. ![Flowchart.PNG](/images/pages/Flowchart.PNG
+"Flowchart.PNG")"
 
 For creating a new job, right click in the main window and choose
 *Create a new job*. A window with input and output data location will

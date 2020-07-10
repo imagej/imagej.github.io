@@ -11,8 +11,8 @@ description: test description
 {% include component-stats
 content=':sc.fiji:register\_virtual\_stack\_slices' %}{|
 |style="vertical-align:top" |![Register Virtual Stack scheme - All
-images are transformed to match the reference](Rvs_scheme.png
-"Register Virtual Stack scheme - All images are transformed to match the reference")
+images are transformed to match the reference](/images/pages/Rvs_scheme.png
+"Register Virtual Stack scheme - All images are transformed to match the reference")"
 |}
 
 This plugin takes a sequence of image slices stored in a folder, and
@@ -47,8 +47,8 @@ Images may have different dimensions and be of different type.
 <b>Step 1</b>: launch the "Plugins - Registration - Register Virtual
 Stack Slices" plugin.
 
-![Register Virtual Stack main window](Rvs_main_window.png
-"Register Virtual Stack main window")
+![Register Virtual Stack main window](/images/pages/Rvs_main_window.png
+"Register Virtual Stack main window")"
 
 <b>Step 2</b>: choose the appropriate options:  
 
@@ -84,8 +84,8 @@ ill effect: images are saved in the target folder.
 
 ### Shrinkage constrain
 
-![Shrinkage constrain checkbox](RVS_shrink_option.png
-"Shrinkage constrain checkbox") Since the 09/13/2009 version and thanks
+![Shrinkage constrain checkbox](/images/pages/RVS_shrink_option.png
+"Shrinkage constrain checkbox")" Since the 09/13/2009 version and thanks
 to [Daniel Berger](http://hebb.mit.edu/), Register Virtual Stack Slices
 has the option of constraining the registration to avoid section
 shrinking for large sets of images.
@@ -166,8 +166,8 @@ The transforms are saved as **.XML** files, following
     model, another window to adjust the elastic registration parameters
     will be shown.
 
-![Elastic registration options](Rvs_elastic_options_351x446.png
-"Elastic registration options")
+![Elastic registration options](/images/pages/Rvs_elastic_options_351x446.png
+"Elastic registration options")"
 
 This is actually a reduced version of the [
 bUnwarpJ](BUnwarpJ "wikilink") main window.

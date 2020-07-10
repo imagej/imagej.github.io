@@ -26,8 +26,8 @@ category='[Segmentation](:Category:Segmentation "wikilink"),
 
 ## Introduction
 
-![Interactive-Marker-controlled-Watershed-plugin-overview.png](Interactive-Marker-controlled-Watershed-plugin-overview.png
-"Interactive-Marker-controlled-Watershed-plugin-overview.png") Similar
+![Interactive-Marker-controlled-Watershed-plugin-overview.png](/images/pages/Interactive-Marker-controlled-Watershed-plugin-overview.png
+"Interactive-Marker-controlled-Watershed-plugin-overview.png")" Similar
 to the [Marker-controlled
 Watershed](Marker-controlled_Watershed "wikilink") plugin, this
 ImageJ/Fiji plugin segments grayscale images of any type (8, 16 and
@@ -61,13 +61,13 @@ possibility is to use the ROI Manager. In that case, all selected ROIs
 in the manager will be used as markers
 
 ![Examples of ROIs used as markers by the
-plugin.](Interactive-Marker-controlled-Watershed-markers.png
-"Examples of ROIs used as markers by the plugin.")
+plugin.](/images/pages/Interactive-Marker-controlled-Watershed-markers.png
+"Examples of ROIs used as markers by the plugin.")"
 
 ### Watershed Segmentation panel
 
-![Watershed panel.](Interactive-Marker-controlled-Watershed-WS-panel.png
-"Watershed panel.")This panel is reserved to the parameters involved in
+![Watershed panel.](/images/pages/Interactive-Marker-controlled-Watershed-WS-panel.png
+"Watershed panel.")"This panel is reserved to the parameters involved in
 the segmentation pipeline:
 
   - **Calculate dams**: un-check this option to produce segmentations
@@ -83,8 +83,8 @@ during that process).
 
 ### Results panel
 
-![Results panel.](Morphological-segmentation-results-panel.png
-"Results panel.")Only enabled after running the segmentation.
+![Results panel.](/images/pages/Morphological-segmentation-results-panel.png
+"Results panel.")"Only enabled after running the segmentation.
 
   - **Display**: list of options to display the segmentation results.
       - **Overlaid basins**: colored objects overlaying the input image
@@ -101,14 +101,14 @@ during that process).
     displayed in the canvas.
 
 ![Examples of the 4 different display
-options.](Morphological-segmentation-result-examples.png
-"Examples of the 4 different display options.")
+options.](/images/pages/Morphological-segmentation-result-examples.png
+"Examples of the 4 different display options.")"
 
 ### Post-processing panel
 
 ![Post-processing
-panel.](Morphological-segmentation-post-processing-panel.png
-"Post-processing panel.")Similarly to the Results panel, this panel only
+panel.](/images/pages/Morphological-segmentation-post-processing-panel.png
+"Post-processing panel.")"Similarly to the Results panel, this panel only
 gets enabled after running the segmentation pipeline.
 
   - **Merge labels**: merge together labels selected by either the

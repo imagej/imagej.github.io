@@ -19,8 +19,8 @@ embryos. Development,
 dev-128918.](http://www.ncbi.nlm.nih.gov/pubmed/26700682)
 
 The documentation (![Stapel et al
-Documentation.pdf](Stapel_et_al_Documentation.pdf
-"Stapel et al Documentation.pdf")) contains details on:
+Documentation.pdf](/images/pages/Stapel_et_al_Documentation.pdf
+"Stapel et al Documentation.pdf")") contains details on:
 
   - PathFinder Fiji plugin
   - Cell annotation plugin in Fiji

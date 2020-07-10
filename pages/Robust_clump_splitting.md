@@ -86,8 +86,8 @@ detected by the algorithm of *Wang et al.* When to use? : If the
 individual objects can be distinguished by intensity and the split lines
 are not to convex.
 
-![GeodesicDistanceSplitLine.png](GeodesicDistanceSplitLine.png
-"GeodesicDistanceSplitLine.png")
+![GeodesicDistanceSplitLine.png](/images/pages/GeodesicDistanceSplitLine.png
+"GeodesicDistanceSplitLine.png")"
 
 **Maximum Intensity Split Line:** The maximum intensity split line uses
 the path of maximum intensity between two concavity pixels. It is
@@ -95,8 +95,8 @@ detected by the algorithm of *Wang et al.* When to use? : If the
 intensity of the individual objects is higher at the edge, than in the
 center and the split lines are not to convex.
 
-![MaximumIntensitySplitLine.png](MaximumIntensitySplitLine.png
-"MaximumIntensitySplitLine.png")
+![MaximumIntensitySplitLine.png](/images/pages/MaximumIntensitySplitLine.png
+"MaximumIntensitySplitLine.png")"
 
 **Minimum Intensity Split Line:** The minimum intensity split line uses
 the path of minimum intensity between two concavity pixels. It is
@@ -104,8 +104,8 @@ detected by the algorithm of *Wang et al.* When to use? : If the
 intensity of the individual objects is lower at the edge, than in the
 center and the split lines are not to convex.
 
-![MinimumIntensitySplitLine.png](MinimumIntensitySplitLine.png
-"MinimumIntensitySplitLine.png")
+![MinimumIntensitySplitLine.png](/images/pages/MinimumIntensitySplitLine.png
+"MinimumIntensitySplitLine.png")"
 
 **Maximum Intensity Split Line Farhan:** The maximum intensity split
 line uses the path of maximum intensity between two concavity pixels. It
@@ -114,8 +114,8 @@ intensity of the individual objects is higher at the edge, than in the
 center and there are no clumps without intensity information, and the
 split line does not change orientation to often.
 
-![MaximumIntensitySplitLine.png](MaximumIntensitySplitLine.png
-"MaximumIntensitySplitLine.png")
+![MaximumIntensitySplitLine.png](/images/pages/MaximumIntensitySplitLine.png
+"MaximumIntensitySplitLine.png")"
 
 **Minimum Intensity Split Line Farhan:** The minimum intensity split
 line uses the path of minimum intensity between two concavity pixels. It
@@ -124,8 +124,8 @@ intensity of the individual objects is lower at the edge, than in the
 center and there are no clumps without intensity information, and the
 split line does not change orientation to often.
 
-![MinimumIntensitySplitLine.png](MinimumIntensitySplitLine.png
-"MinimumIntensitySplitLine.png")
+![MinimumIntensitySplitLine.png](/images/pages/MinimumIntensitySplitLine.png
+"MinimumIntensitySplitLine.png")"
 
 #### Concavity Region Detection
 
@@ -253,15 +253,15 @@ of the two concavity regions.
 \(CC_{ij}= \pi - \cos^{-1}(v_i \cdot v_j)\). Threshold should be greater
 than \(\max{|180-|\theta_i-\theta_j||}\) of all valid split lines.
 
-![ConcavityConcavityAlignment.png](ConcavityConcavityAlignment.png
-"ConcavityConcavityAlignment.png")
+![ConcavityConcavityAlignment.png](/images/pages/ConcavityConcavityAlignment.png
+"ConcavityConcavityAlignment.png")"
 
 **concavity-line-alignment-threshold:** Angle between orientation of a
 split lines concavity pixel and the split line.
 \(CL_{ij}=\max{\cos^{-1}(v_i \cdot u_{ij}),\cos^{-1}(v_j \cdot (-u_{ij})))}\)
 
-![ConcavityLineAlignment.png](ConcavityLineAlignment.png
-"ConcavityLineAlignment.png")
+![ConcavityLineAlignment.png](/images/pages/ConcavityLineAlignment.png
+"ConcavityLineAlignment.png")"
 
 **concavity-angle-threshold:** Angle of a concavity region.
 \(CA=\angle C_{i1}C_iC_{i2}\) Threshold should be larger, than the

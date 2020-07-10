@@ -55,8 +55,8 @@ obtained series are set to 0+0i to achieve the smoothing.
 
 # Parameters
 
-![Shape-Smoothing parameters](Shape_smoothing_GUI.png
-"Shape-Smoothing parameters")
+![Shape-Smoothing parameters](/images/pages/Shape_smoothing_GUI.png
+"Shape-Smoothing parameters")"
 
 At first users have to choose on how they want to define the smoothing:
 via relative or absolute number of FDs to be “kept”.

@@ -43,8 +43,8 @@ from retinal cryosections. It segments retinal outer nuclear (ONL) and
 inner nuclear layers (INL) and quantitates fluorescent-labelled cells in
 these layers. ![**TUNEL Cell Counter**: Input a fluorescent-labeled
 retinal image for ONL & INL layer segmentation and cell
-quantitation.](RETINA_Cell_Counter_Montage.png
-"TUNEL Cell Counter: Input a fluorescent-labeled retinal image for ONL & INL layer segmentation and cell quantitation.")
+quantitation.](/images/pages/RETINA_Cell_Counter_Montage.png
+"TUNEL Cell Counter: Input a fluorescent-labeled retinal image for ONL & INL layer segmentation and cell quantitation.")"
 
 ## Required Components
 
@@ -66,8 +66,8 @@ The following are required to execute this tool:
 ## Processing Settings
 
 ![**Settings Dialog**: Input the spatial scale obtained from the image
-metadata or microscope.](RETINA_Cell_Counter_Dialog.png
-"Settings Dialog: Input the spatial scale obtained from the image metadata or microscope.")
+metadata or microscope.](/images/pages/RETINA_Cell_Counter_Dialog.png
+"Settings Dialog: Input the spatial scale obtained from the image metadata or microscope.")"
 After importing a TIFF image and executing the counter, the following
 settings should be selected:
 

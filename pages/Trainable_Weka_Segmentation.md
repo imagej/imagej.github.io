@@ -10,8 +10,8 @@ description: test description
 
 {% include component-stats content=':sc.fiji:Trainable\_Segmentation'
 %}{| |style="vertical-align:top" |![Trainable Weka Segmentation pipeline
-overview.](TWS-pipeline.png
-"Trainable Weka Segmentation pipeline overview.") |}{% include toc %}
+overview.](/images/pages/TWS-pipeline.png
+"Trainable Weka Segmentation pipeline overview.")" |}{% include toc %}
 **Trainable**: this plugin can be trained to learn from the user input
 and perform later the same task in unknown (test) data.
 
@@ -72,8 +72,8 @@ classifier to perform image segmentation based on pixel classification.
 ## The Graphical User Interface
 
 ![Example of the first look of the plugin window when using it on a TEM
-image](Trainable-Weka-Segmentation-GUI.png
-"Example of the first look of the plugin window when using it on a TEM image")
+image](/images/pages/Trainable-Weka-Segmentation-GUI.png
+"Example of the first look of the plugin window when using it on a TEM image")"
 [Trainable Weka Segmentation](Trainable_Weka_Segmentation "wikilink")
 runs on any 2D or 3D image (grayscale or color). To use 2D features, you
 need to select the menu command {% include bc content='Plugins |
@@ -103,8 +103,8 @@ displayed when the cursor lingers over the buttons.
 ### Training panel
 
 ![Example of the aspect of the plugin window after training on a TEM
-image](TWS-GUI-after-training.png
-"Example of the aspect of the plugin window after training on a TEM image")
+image](/images/pages/TWS-GUI-after-training.png
+"Example of the aspect of the plugin window after training on a TEM image")"
 
 #### Train classifier
 
@@ -131,8 +131,8 @@ reset to the state previous to the training.
 #### Toggle overlay
 
 ![Example of resulting probability map displayed as a
-hyperstack](AWS-Probability-maps.png
-"Example of resulting probability map displayed as a hyperstack") This
+hyperstack](/images/pages/AWS-Probability-maps.png
+"Example of resulting probability map displayed as a hyperstack")" This
 button activates and deactivates the overlay of the result image. The
 transparency of the overlay image can be adjusted in the [Settings
 dialog](Advanced_Weka_Segmentation#Settings "wikilink").
@@ -230,8 +230,8 @@ dialog](Trainable_Weka_Segmentation#Settings "wikilink").
 #### Settings
 
 ![Settings dialog of the Trainable Weka Segmentation plugin (2D
-features)](TWS-settings-dialog-2D.png
-"Settings dialog of the Trainable Weka Segmentation plugin (2D features)")
+features)](/images/pages/TWS-settings-dialog-2D.png
+"Settings dialog of the Trainable Weka Segmentation plugin (2D features)")"
 The rest of tunable parameters of the plugin can be changed on the
 Settings dialog, which is displayed when clicking on this button.
 
@@ -408,8 +408,8 @@ updater](https://imagej.net/How_to_follow_a_3rd_party_update_site).
 ##### Training features (3D)
 
 ![Settings dialog for the Trainable Weka Segmentation 3D
-plugin.](TWS-3D-Settings-dialog.png
-"Settings dialog for the Trainable Weka Segmentation 3D plugin.")When
+plugin.](/images/pages/TWS-3D-Settings-dialog.png
+"Settings dialog for the Trainable Weka Segmentation 3D plugin.")"When
 calling the plugin from the menu command {% include bc content='Plugins
 | Segmentation | Trainable Weka Segmentation 3D'%} the set of available
 image features will be as follows:
@@ -559,8 +559,8 @@ completely compatible with the popular [ImageJ macro
 language](https://imagej.net/developer/macro/macros.html). Each of the
 buttons in the GUI are macro-recordable and their commands can be
 reproduced later from a simple macro file. ![Example of macro recording
-of the Trainable Weka Segmentation tools.](AWS-macro-recording.png
-"Example of macro recording of the Trainable Weka Segmentation tools.")
+of the Trainable Weka Segmentation tools.](/images/pages/AWS-macro-recording.png
+"Example of macro recording of the Trainable Weka Segmentation tools.")"
 
 The complete list of commands is as follows:
 

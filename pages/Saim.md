@@ -107,15 +107,15 @@ set](http://valelab.ucsf.edu/~nstuurman/SAIM/160302_bilayer2_cal2_pos3_561-crop.
 [640 data
 set](http://valelab.ucsf.edu/~nstuurman/SAIM/160302_bilayer2_cal2_pos3_640-crop.tif)
 
-![488\_fit\_parameters.png](488_fit_parameters.png
-"488_fit_parameters.png")![561\_fit\_parameters.png](561_fit_parameters.png
-"561_fit_parameters.png")![640\_fit\_parameters.png](640_fit_parameters.png
-"640_fit_parameters.png")
+![488\_fit\_parameters.png](/images/pages/488_fit_parameters.png
+"488_fit_parameters.png")"![561\_fit\_parameters.png](/images/pages/561_fit_parameters.png
+"561_fit_parameters.png")"![640\_fit\_parameters.png](/images/pages/640_fit_parameters.png
+"640_fit_parameters.png")"
 
 Some of the single pixels fits we obtained look as follows:
 
-![Example\_single\_pixel\_fits.png](Example_single_pixel_fits.png
-"Example_single_pixel_fits.png")
+![Example\_single\_pixel\_fits.png](/images/pages/Example_single_pixel_fits.png
+"Example_single_pixel_fits.png")"
 
 ## History
 

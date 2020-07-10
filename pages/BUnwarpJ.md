@@ -10,8 +10,8 @@ description: test description
 
 {% include component-stats content=':sc.fiji:bUnwarpJ\_' %}{|
 |style="vertical-align:top" |![bUnwarpJ scheme: bidirectional Unwarping
-in Java.](BUnwarpJ_scheme.png
-"bUnwarpJ scheme: bidirectional Unwarping in Java.") |}
+in Java.](/images/pages/BUnwarpJ_scheme.png
+"bUnwarpJ scheme: bidirectional Unwarping in Java.")" |}
 
 This ImageJ/Fiji plugin performs **2D image registration based on
 elastic deformations** represented by B-splines. The invertibility of
@@ -124,8 +124,8 @@ version of the same image:
 
 ![From left to right, consecutive slices of the resulting stack:
 elastic-transformed image, original moving image and warped moving
-mask.](BUnwarpJ-lena-basic-result.png
-"From left to right, consecutive slices of the resulting stack: elastic-transformed image, original moving image and warped moving mask.")
+mask.](/images/pages/BUnwarpJ-lena-basic-result.png
+"From left to right, consecutive slices of the resulting stack: elastic-transformed image, original moving image and warped moving mask.")"
 
 The **verbose mode** produces more information:
 
@@ -140,8 +140,8 @@ The **verbose mode** produces more information:
 ![From left to right: the last consecutive slices of the resulting stack
 in verbose mode (deformation field and deformation grid) and the Log
 window with the optimization steps, final optimal values and execution
-time.](BUnwarpJ-lena-verbose-result.png
-"From left to right: the last consecutive slices of the resulting stack in verbose mode (deformation field and deformation grid) and the Log window with the optimization steps, final optimal values and execution time.")
+time.](/images/pages/BUnwarpJ-lena-verbose-result.png
+"From left to right: the last consecutive slices of the resulting stack in verbose mode (deformation field and deformation grid) and the Log window with the optimization steps, final optimal values and execution time.")"
 
 Since both, source and target images work as moving and fixed images,
 **there are two sets (stacks) of results**: from source to target and
@@ -255,8 +255,8 @@ affect the registration.
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![bUnwarpJ toolbar with "Input/Output menu" button selected.](BUnwarpJ-toolbar-IO-menu.png "bUnwarpJ toolbar with \"Input/Output menu\" button selected.") |
 
-![bUnwarpJ Input/Output menu.](BUnwarpJ-IO-menu.png
-"bUnwarpJ Input/Output menu.")
+![bUnwarpJ Input/Output menu.](/images/pages/BUnwarpJ-IO-menu.png
+"bUnwarpJ Input/Output menu.")"
 
 In the last release, the plugin presents the following Input/Output
 options:
@@ -502,8 +502,8 @@ complexity of the algorithm is reduced.
 ### SIFT and MOPS plugin support
 
 ![bUnwarpJ: example of SIFT correspondences converted to registration
-landmarks.](BUnwarpJ-lena-SIFT-landmarks-example.png
-"bUnwarpJ: example of SIFT correspondences converted to registration landmarks.")The
+landmarks.](/images/pages/BUnwarpJ-lena-SIFT-landmarks-example.png
+"bUnwarpJ: example of SIFT correspondences converted to registration landmarks.")"The
 last release of bUnwarpJ has compatibility with Stephan Saalfeld's
 plugin for automatic [ feature
 extraction](Feature_Extraction "wikilink") (implementations of SIFT and
@@ -557,8 +557,8 @@ the [divergence](https://en.wikipedia.org/wiki/Divergence) and
 deformation vector field. In other words, we penalize vector fields with
 **many** points like this:
 
-![Divergence-curl-2d-examples.png](Divergence-curl-2d-examples.png
-"Divergence-curl-2d-examples.png")
+![Divergence-curl-2d-examples.png](/images/pages/Divergence-curl-2d-examples.png
+"Divergence-curl-2d-examples.png")"
 
 These are attractor points that make the deformation too rough. One of
 them would not be a problem (it could be just a rotation), but many yes.

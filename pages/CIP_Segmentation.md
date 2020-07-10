@@ -64,8 +64,8 @@ image is binary no threshold is needed
 each identified region has a distinct integer value).
 
 <span style="font-size:110%">**Example**</span>  
-    `img2 = cip.label( img1 )` ![CIP\_label.PNG](CIP_label.PNG
-"CIP_label.PNG")  
+    `img2 = cip.label( img1 )` ![CIP\_label.PNG](/images/pages/CIP_label.PNG
+"CIP_label.PNG")"  
 <span style="font-size:110%">**Implementation**</span>  
 The labeling is performed our custom implementation. It uses a union
 find approach relying pixel runs to speed up to labeling process. The
@@ -189,8 +189,8 @@ stop
 <span style="font-size:110%">**Example**</span>  
 `img2 = cip.watershed( img1 , 'threshold', 500, 'hmin', 300 )`  
 In that example the starting point of the watershed are the extended
-maxima of the input image. ![CIP\_watershed.PNG](CIP_watershed.PNG
-"CIP_watershed.PNG")  
+maxima of the input image. ![CIP\_watershed.PNG](/images/pages/CIP_watershed.PNG
+"CIP_watershed.PNG")"  
 <span style="font-size:110%">**Implementation**</span>  
 Both seeded watershed and H-watershed are implemented based on the image
 foresting transform approach \[1\]. The H-watershed adds the

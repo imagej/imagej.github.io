@@ -13,8 +13,8 @@ plugins help you analyze surfaces of bright objects in image stacks. You
 can load an example via {% include bc content='File | Open Samples |
 SinteredAlumina (2.6MB)'%}:
 
-![TopoJ-Sintered\_Alumina.jpg](TopoJ-Sintered_Alumina.jpg
-"TopoJ-Sintered_Alumina.jpg")
+![TopoJ-Sintered\_Alumina.jpg](/images/pages/TopoJ-Sintered_Alumina.jpg
+"TopoJ-Sintered_Alumina.jpg")"
 
 ## Compute Topography
 
@@ -25,16 +25,16 @@ Compute Topography'%}:
 
 The result looks like this:
 
-![TopoJ-Computed\_Topography.jpg](TopoJ-Computed_Topography.jpg
-"TopoJ-Computed_Topography.jpg")
+![TopoJ-Computed\_Topography.jpg](/images/pages/TopoJ-Computed_Topography.jpg
+"TopoJ-Computed_Topography.jpg")"
 
 ## Remove Slope
 
 To remove the overall slope of the surface, click on the {% include bc
 content='Analyze | TopoJ | Remove Slope'%} menu item:
 
-![TopoJ-Remove\_Slope.jpg](TopoJ-Remove_Slope.jpg
-"TopoJ-Remove_Slope.jpg")
+![TopoJ-Remove\_Slope.jpg](/images/pages/TopoJ-Remove_Slope.jpg
+"TopoJ-Remove_Slope.jpg")"
 
 [Category:Tutorials](Category:Tutorials "wikilink")
 [Category:Plugins](Category:Plugins "wikilink")

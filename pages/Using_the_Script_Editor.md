@@ -84,15 +84,15 @@ square bracket) to open the editor.
 
 Then choose a language from the language menu:
 
-![Script-Editor-choose-language.jpg](Script-Editor-choose-language.jpg
-"Script-Editor-choose-language.jpg")
+![Script-Editor-choose-language.jpg](/images/pages/Script-Editor-choose-language.jpg
+"Script-Editor-choose-language.jpg")"
 
 Now you can write your script. In this tutorial, Jython was chosen as
 scripting language, but the process is really the same for all scripting
 languages.
 
-![Script-Editor-first-script.jpg](Script-Editor-first-script.jpg
-"Script-Editor-first-script.jpg")
+![Script-Editor-first-script.jpg](/images/pages/Script-Editor-first-script.jpg
+"Script-Editor-first-script.jpg")"
 
 ### Running the script
 
@@ -109,8 +109,8 @@ shows a dialog where the user can input a number. For details how to
 write dialogs in the different scripting languages, see [Scripting
 comparisons](Scripting_comparisons "wikilink")
 
-![Script-Editor-dialog.jpg](Script-Editor-dialog.jpg
-"Script-Editor-dialog.jpg")
+![Script-Editor-dialog.jpg](/images/pages/Script-Editor-dialog.jpg
+"Script-Editor-dialog.jpg")"
 
 ## Further reading
 

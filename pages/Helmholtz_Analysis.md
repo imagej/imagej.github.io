@@ -27,12 +27,12 @@ and parameters like this:
 
 the Helmholtz Analysis plugin produces the local estimates:
 
-![HelmholtzAnalysisOutput.png](HelmholtzAnalysisOutput.png
-"HelmholtzAnalysisOutput.png")
+![HelmholtzAnalysisOutput.png](/images/pages/HelmholtzAnalysisOutput.png
+"HelmholtzAnalysisOutput.png")"
 
 and the smoothed versions thereof:
 
-![HelmholtzAnalysisAverageOutput.png](HelmholtzAnalysisAverageOutput.png
-"HelmholtzAnalysisAverageOutput.png")
+![HelmholtzAnalysisAverageOutput.png](/images/pages/HelmholtzAnalysisAverageOutput.png
+"HelmholtzAnalysisAverageOutput.png")"
 
 [Category:Plugins](Category:Plugins "wikilink")

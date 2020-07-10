@@ -61,8 +61,8 @@ interest point detection preview, which can be very time consuming if
 you are not using a multi-resolution ImgLoader (i.e. if you have not
 re-saved the data as HDF5).
 
-![BigStitcher\_Register\_1.png](BigStitcher_Register_1.png
-"BigStitcher_Register_1.png")
+![BigStitcher\_Register\_1.png](/images/pages/BigStitcher_Register_1.png
+"BigStitcher_Register_1.png")"
 
 ### Advanced Parameters
 
@@ -135,8 +135,8 @@ first (see the corresponding GitHib pages for details). There is an
 convolutions - the *approximate* version is slightly faster but might
 produce some artifacts around the edges of your images.
 
-![BigStitcher\_Register\_2.png](BigStitcher_Register_2.png
-"BigStitcher_Register_2.png")
+![BigStitcher\_Register\_2.png](/images/pages/BigStitcher_Register_2.png
+"BigStitcher_Register_2.png")"
 
 ### Interactive detection preview
 
@@ -151,8 +151,8 @@ Furthermore, if you are using **grouped views**, you can choose to **Use
 min/max of this fusion for all groups** (see above for details about the
 meaning of the min/max values).
 
-![BigStitcher\_Register\_3.png](BigStitcher_Register_3.png
-"BigStitcher_Register_3.png")
+![BigStitcher\_Register\_3.png](/images/pages/BigStitcher_Register_3.png
+"BigStitcher_Register_3.png")"
 
 If you click OK, the (fused) image will appear in an ImageJ-window
 together with a window in which the values for the interest point
@@ -168,9 +168,9 @@ the detection process in all selected views, click "Done".
 a long time, especially if you do little or no downsampling. Have a look
 at the log widow for updates on the progress.' %}
 
-![BigStitcher\_Register\_4\_1.png](BigStitcher_Register_4_1.png
-"BigStitcher_Register_4_1.png")![BigStitcher\_Register\_4\_2.png](BigStitcher_Register_4_2.png
-"BigStitcher_Register_4_2.png")
+![BigStitcher\_Register\_4\_1.png](/images/pages/BigStitcher_Register_4_1.png
+"BigStitcher_Register_4_1.png")"![BigStitcher\_Register\_4\_2.png](/images/pages/BigStitcher_Register_4_2.png
+"BigStitcher_Register_4_2.png")"
 
 ### GPU-accelerated Difference-of-Gaussian
 
@@ -183,16 +183,16 @@ detection starts.
 First, you have to specify the **CUDA directory** in which to look for
 the compiled library (an .so file on Linux/Mac or a .dll on Windows).
 
-![BigStitcher\_interestpoint\_gpu-1.png](BigStitcher_interestpoint_gpu-1.png
-"BigStitcher_interestpoint_gpu-1.png")
+![BigStitcher\_interestpoint\_gpu-1.png](/images/pages/BigStitcher_interestpoint_gpu-1.png
+"BigStitcher_interestpoint_gpu-1.png")"
 
 Next, you have to select the actual library file to use (there might be
 multiple, be sure to pick the library for **separable convolution**, not
 the *Fourier convolution* used in
 [Multi-View\_Deconvolution](Multi-View_Deconvolution "wikilink")).
 
-![BigStitcher\_interestpoint\_gpu-2.png](BigStitcher_interestpoint_gpu-2.png
-"BigStitcher_interestpoint_gpu-2.png")
+![BigStitcher\_interestpoint\_gpu-2.png](/images/pages/BigStitcher_interestpoint_gpu-2.png
+"BigStitcher_interestpoint_gpu-2.png")"
 
 In the last dialog, you can choose which **Device** (GPU) to use (if you
 have multiple) and how many **Percent of GPU Memory to use**. We advice
@@ -201,7 +201,7 @@ might be using the GPU.
 
 Click **OK** once more to start the interest point detection.
 
-![BigStitcher\_interestpoint\_gpu-3.png](BigStitcher_interestpoint_gpu-3.png
-"BigStitcher_interestpoint_gpu-3.png")
+![BigStitcher\_interestpoint\_gpu-3.png](/images/pages/BigStitcher_interestpoint_gpu-3.png
+"BigStitcher_interestpoint_gpu-3.png")"
 
 Go back to the [main page](BigStitcher#Documentation "wikilink")

@@ -68,8 +68,8 @@ Symmetry Localization' \> 'Calculate Anisotropy Coefficient'.
 
 You will see the dialog window:
 
-![Calculate-anisotropy-coefficient.png](Calculate-anisotropy-coefficient.png
-"Calculate-anisotropy-coefficient.png")
+![Calculate-anisotropy-coefficient.png](/images/pages/Calculate-anisotropy-coefficient.png
+"Calculate-anisotropy-coefficient.png")"
 
 Choose the image for detection and set 'Gauss Fit' as a detection
 method. You can also try to use Radial Symmetry as a detection method
@@ -77,8 +77,8 @@ but in this case Gauss fit gives better results.
 
 Once ok is pressed you will see 2 windows:
 
-![Adjust-difference-of-gaussian-values.png](Adjust-difference-of-gaussian-values.png
-"Adjust-difference-of-gaussian-values.png")
+![Adjust-difference-of-gaussian-values.png](/images/pages/Adjust-difference-of-gaussian-values.png
+"Adjust-difference-of-gaussian-values.png")"
 
 ![One-spot-overlay.png](/images/pages/One-spot-overlay.png "One-spot-overlay.png")"
 
@@ -115,8 +115,8 @@ Localization' \> 'Radial Symmetry'.
 
 Window will pop up.
 
-![Radial-symmetry-initital-gui-ransac-on.png](Radial-symmetry-initital-gui-ransac-on.png
-"Radial-symmetry-initital-gui-ransac-on.png")
+![Radial-symmetry-initital-gui-ransac-on.png](/images/pages/Radial-symmetry-initital-gui-ransac-on.png
+"Radial-symmetry-initital-gui-ransac-on.png")"
 
 Ensure that the correct image is chosen.
 
@@ -162,14 +162,14 @@ too much time. Adjust the parameters so that you do not have too many
 false detections. But also do not try to get rid of all of them – they
 will be discarded in the next computation step anyways.
 
-![Adjust-difference-of-gaussian-values.png](Adjust-difference-of-gaussian-values.png
-"Adjust-difference-of-gaussian-values.png")
+![Adjust-difference-of-gaussian-values.png](/images/pages/Adjust-difference-of-gaussian-values.png
+"Adjust-difference-of-gaussian-values.png")"
 
 RANSAC window is the 'main' window of the whole plugin. Therefore, we
 will give a more detailed explanation for the parameters here.
 
-![Interactive-adjust-ransac-values.png](Interactive-adjust-ransac-values.png
-"Interactive-adjust-ransac-values.png")
+![Interactive-adjust-ransac-values.png](/images/pages/Interactive-adjust-ransac-values.png
+"Interactive-adjust-ransac-values.png")"
 
 'Support region radius' defines the radius of the spots we are looking
 for. You might want to play with this parameter. Sometimes it is useful
@@ -199,11 +199,11 @@ a bit while the computations are performed.
 You will see the result table with the coordinates, time, channel and
 intensity values in the corresponding columns.
 
-![Histogram-detections.png](Histogram-detections.png
-"Histogram-detections.png")
+![Histogram-detections.png](/images/pages/Histogram-detections.png
+"Histogram-detections.png")"
 
-![Results-interactive.png](Results-interactive.png
-"Results-interactive.png")
+![Results-interactive.png](/images/pages/Results-interactive.png
+"Results-interactive.png")"
 
 Besides that you will get 2 images: one of them showing the overlay of
 the initial image with the regions that we used for the spots search,
@@ -224,8 +224,8 @@ will see all the parameters you have set already in the interactive
 mode. All you have to do now is to press 'OK' button and wait for the
 results.
 
-![Manual-set-parameters.png](Manual-set-parameters.png
-"Manual-set-parameters.png")
+![Manual-set-parameters.png](/images/pages/Manual-set-parameters.png
+"Manual-set-parameters.png")"
 
-![Results-interactive.png](Results-interactive.png
-"Results-interactive.png")
+![Results-interactive.png](/images/pages/Results-interactive.png
+"Results-interactive.png")"

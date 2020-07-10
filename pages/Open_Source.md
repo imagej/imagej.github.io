@@ -8,8 +8,8 @@ categories:
 description: test description
 ---
 
-![ 64px | left | link=https://opensource.org/](Osi_symbol.png
-" 64px | left | link=https://opensource.org/") The
+![ 64px | left | link=https://opensource.org/](/images/pages/Osi_symbol.png
+" 64px | left | link=https://opensource.org/")" The
 [ImageJ](ImageJ "wikilink") project, and related projects in the
 [SciJava](SciJava "wikilink") software ecosystem, are open source
 software projects. See the [Licensing](Licensing "wikilink") page for

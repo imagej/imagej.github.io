@@ -44,8 +44,8 @@ per native type.
 >> imshow(X,[]) % [[MATLAB]] display
 ```
 
-![MatlabToImglib2\_clown.png](MatlabToImglib2_clown.png
-"MatlabToImglib2_clown.png")
+![MatlabToImglib2\_clown.png](/images/pages/MatlabToImglib2_clown.png
+"MatlabToImglib2_clown.png")"
 
 We note that the ImageJ display is rotated and flipped regarding the
 [MATLAB](MATLAB "wikilink") image. This is because
@@ -133,8 +133,8 @@ image, keeping its type, and want to retrieve the content in
 >> imshow(J', [])
 ```
 
-![MatlabToImglib2\_int8.png](MatlabToImglib2_int8.png
-"MatlabToImglib2_int8.png")
+![MatlabToImglib2\_int8.png](/images/pages/MatlabToImglib2_int8.png
+"MatlabToImglib2_int8.png")"
 
 What happened here? The gray levels are all messed up. Checking the
 class of the returned array gives a clue:

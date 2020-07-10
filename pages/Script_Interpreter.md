@@ -29,8 +29,8 @@ Start it via {% include bc content='Plugins|Scripting|Script
 Interpreter'%} or by typing {% include key content='Shift' %}-{% include
 key content='\[' %}.
 
-![Script\_Interpreter.png](Script_Interpreter.png
-"Script_Interpreter.png")
+![Script\_Interpreter.png](/images/pages/Script_Interpreter.png
+"Script_Interpreter.png")"
 
 ## Usage
 

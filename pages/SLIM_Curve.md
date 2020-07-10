@@ -75,8 +75,8 @@ data file. (This should have a .sdt or .ics suffix.) Once the file loads
 a grayscale version of the lifetime image pops up, produced by summing
 the photon counts for all time bins for each pixel:
 
-![SLIM-grayscale-image.png](SLIM-grayscale-image.png
-"SLIM-grayscale-image.png")
+![SLIM-grayscale-image.png](/images/pages/SLIM-grayscale-image.png
+"SLIM-grayscale-image.png")"
 
 Here the red color signifies pixels that have a low photon count and
 will be excluded from any fitted images that are produced. The threshold
@@ -90,8 +90,8 @@ fits other pixels.
 
 The fitted decay graph pops up showing the results of the pixel fit:
 
-![SLIM-fitted-decay-graph.png](SLIM-fitted-decay-graph.png
-"SLIM-fitted-decay-graph.png")
+![SLIM-fitted-decay-graph.png](/images/pages/SLIM-fitted-decay-graph.png
+"SLIM-fitted-decay-graph.png")"
 
 Here the graph shows black squares for the observed photon counts over
 time and a red line for the fitted curve. There are also vertical blue,
@@ -146,8 +146,8 @@ perform:
 
 The next tab is entitled *Cursors*:
 
-![SLIM-UI-cursors-tab.png](SLIM-UI-cursors-tab.png
-"SLIM-UI-cursors-tab.png")
+![SLIM-UI-cursors-tab.png](/images/pages/SLIM-UI-cursors-tab.png
+"SLIM-UI-cursors-tab.png")"
 
 Here the positions of the fit cursors are listed. There are two kinds of
 cursors:
@@ -164,8 +164,8 @@ instrument response function decay to use in the fit. If an excitation
 is loaded the decay is shown in an Instrument Response Function graph
 with cursor lines similar to the *Fitted Decay Graph:*
 
-![SLIM-excitation-graph.png](SLIM-excitation-graph.png
-"SLIM-excitation-graph.png")
+![SLIM-excitation-graph.png](/images/pages/SLIM-excitation-graph.png
+"SLIM-excitation-graph.png")"
 
 The horizontal green line controls the *Excitation Baseline*, the
 minimum photon count to be included in the excitation. The vertical blue
@@ -206,14 +206,14 @@ estimated.
 If an excitation is loaded it is also shown on the fitted decay graph in
 light gray:
 
-![SLIM-fitted-decay-graph-excitation.png](SLIM-fitted-decay-graph-excitation.png
-"SLIM-fitted-decay-graph-excitation.png")
+![SLIM-fitted-decay-graph-excitation.png](/images/pages/SLIM-fitted-decay-graph-excitation.png
+"SLIM-fitted-decay-graph-excitation.png")"
 
 In the next tab of the UI panel titled *Control* you can fine tune some
 aspects of the fit:
 
-![SLIM-UI-control-tab.png](SLIM-UI-control-tab.png
-"SLIM-UI-control-tab.png")
+![SLIM-UI-control-tab.png](/images/pages/SLIM-UI-control-tab.png
+"SLIM-UI-control-tab.png")"
 
   - *X* and *Y* specify the location of the last single fitted pixel.
     (You can fit a single pixel by setting Region to Single Pixel and
@@ -234,8 +234,8 @@ The final tab of the user interface panel is a section entitled
 parameters. The actual contents of this subpanel will depend upon the
 Function selected.
 
-![SLIM-UI-params-tab.png](SLIM-UI-params-tab.png
-"SLIM-UI-params-tab.png")
+![SLIM-UI-params-tab.png](/images/pages/SLIM-UI-params-tab.png
+"SLIM-UI-params-tab.png")"
 
 For each parameter:
 
@@ -266,8 +266,8 @@ panel shows the range of values encountered in the fitted image and the
 LUT used to display those values, as well as a histogram of the
 distribution of those values in the image.
 
-![SLIM-fitted-image-histogram.png](SLIM-fitted-image-histogram.png
-"SLIM-fitted-image-histogram.png")
+![SLIM-fitted-image-histogram.png](/images/pages/SLIM-fitted-image-histogram.png
+"SLIM-fitted-image-histogram.png")"
 
 By default the histogram tool comes up in automatic mode, the start and
 end of the LUT range automatically adjust to the minimum and maximum
@@ -303,8 +303,8 @@ counts of 1 and 0 can be distinguished.
 
 ### Save/Load default excitation
 
-![Controlling the default excitation](Excitation.png
-"Controlling the default excitation") As loading/saving excitation file
+![Controlling the default excitation](/images/pages/Excitation.png
+"Controlling the default excitation")" As loading/saving excitation file
 is something user need to do every time, the process has been
 simplified. Whatever macro user wants to set as default excitation, user
 should load the sdt file normally, set transient start/end time and save
@@ -325,8 +325,8 @@ record-able. Below is a typical macro recording for a typical usage
 where the user sets the algorithm, noise model, changes transient time,
 loads default excitation, sets the chi2 target, fixes A value for
 fitting and then starts fitting. ![Example of macro recording SLIM
-Curve](Screenshot_slim_final.png
-"Example of macro recording SLIM Curve")
+Curve](/images/pages/Screenshot_slim_final.png
+"Example of macro recording SLIM Curve")"
 
 The list of command are as follows
 
@@ -524,8 +524,8 @@ should have the same number of time bins. To get into batch mode merely
 click on the *New File/Batch* button and select a folder or a selection
 of images. The batch mode UI will pop up:
 
-![SLIM-batch-mode-UI.png](SLIM-batch-mode-UI.png
-"SLIM-batch-mode-UI.png")
+![SLIM-batch-mode-UI.png](/images/pages/SLIM-batch-mode-UI.png
+"SLIM-batch-mode-UI.png")"
 
 You can export the pixel values, histogram values and statistics, and
 summary histogram values and statistics to a text file. This can be the
@@ -536,8 +536,8 @@ Once the batch processing starts a window will pop up showing the
 histogram and statistics for each lifetime file, as well as a summary
 histogram and statistics:
 
-![SLIM-batch-mode-window.png](SLIM-batch-mode-window.png
-"SLIM-batch-mode-window.png")
+![SLIM-batch-mode-window.png](/images/pages/SLIM-batch-mode-window.png
+"SLIM-batch-mode-window.png")"
 
 Each source lifetime image has a row of histograms for each of the
 parameters in the *Fitted Images* dropdown of the *Fit* tab of the UI.

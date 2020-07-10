@@ -43,8 +43,8 @@ Chemistry | doi = 10.1039/C7SC04863G
 {% include cite content=includecontent %} </ref> ).
 
 ![Animation of the photobend time lapse (\~1500x playback
-speed)](photobend_demo.gif
-"Animation of the photobend time lapse (~1500x playback speed)")
+speed)](/images/pages/photobend_demo.gif
+"Animation of the photobend time lapse (~1500x playback speed)")"
 
 There are two plugins in the collection providing two methods of crystal
 bending measurement: Bending\_Crystal\_Track and Laser\_Spot\_Track4.
@@ -93,12 +93,12 @@ of the image (a part supposed to be immobile during the whole process, a
 tip of holder or capillary to which the crystal is attached, for one).
 
 ![400pix|left|Crystal shape tracking in
-process](photobend_processing.jpg
-"400pix|left|Crystal shape tracking in process")
-![photobend\_deformation\_plot.jpg](photobend_deformation_plot.jpg
-"photobend_deformation_plot.jpg")
-![photobend\_curvature\_plot.jpg](photobend_curvature_plot.jpg
-"photobend_curvature_plot.jpg")
+process](/images/pages/photobend_processing.jpg
+"400pix|left|Crystal shape tracking in process")"
+![photobend\_deformation\_plot.jpg](/images/pages/photobend_deformation_plot.jpg
+"photobend_deformation_plot.jpg")"
+![photobend\_curvature\_plot.jpg](/images/pages/photobend_curvature_plot.jpg
+"photobend_curvature_plot.jpg")"
 
 The plugin code uses the selected regions of the image as reference
 templates to find them in the series of the time lapse images. Automatic
@@ -113,8 +113,8 @@ the curvature and deformation (elongation or shortening) of the crystal.
 
 ![Animation of the laser spot movement obtained while registering the
 photobending with the laser beam deflection technique (\~70x playback
-speed)](LaserSpotMove.gif
-"Animation of the laser spot movement obtained while registering the photobending with the laser beam deflection technique (~70x playback speed)")
+speed)](/images/pages/LaserSpotMove.gif
+"Animation of the laser spot movement obtained while registering the photobending with the laser beam deflection technique (~70x playback speed)")"
 
 The plugin's goal is to automate the registering and analysis for the
 so-called laser beam deflection technique. The technique is the general
@@ -130,8 +130,8 @@ To utilize the technique tiny mirror is attached to the free crystal's
 end. The bending then causes tilt of the mirror and corresponding
 deflection of the laser beam.
 
-![400pix|left|Laser spot tracking in process](LaserSpotTrack.jpg
-"400pix|left|Laser spot tracking in process")
+![400pix|left|Laser spot tracking in process](/images/pages/LaserSpotTrack.jpg
+"400pix|left|Laser spot tracking in process")"
 
 The movement of the laser spot is registered with a camera to give the
 series of the time-lapse photographs (or a movie which should be

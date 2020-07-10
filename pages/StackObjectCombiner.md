@@ -44,8 +44,8 @@ Here is the Interface of Stack Object Combiner. The window contain
 several boxes, that allow you to set the different parameters and that
 give you an overview of the meshes.  
   
-![SOC\_folderSelection.png](SOC_folderSelection.png
-"SOC_folderSelection.png") Folder selection box  
+![SOC\_folderSelection.png](/images/pages/SOC_folderSelection.png
+"SOC_folderSelection.png")" Folder selection box  
 This is the Folder Box. Choose the folder containing your meshes. To
 work only with certain meshes inside this folder, use the "Name pattern"
 function. Write the characters that the file contains, and click on
@@ -69,8 +69,8 @@ listed. To shift back the mesh to their original positions, click on
 The values you give here will be used later to merge the meshes. For
 automatic merging, you have to give the width, height and depth of the
 whole volume.  
-![SOC\_cubeDimensions.png](SOC_cubeDimensions.png
-"SOC_cubeDimensions.png")
+![SOC\_cubeDimensions.png](/images/pages/SOC_cubeDimensions.png
+"SOC_cubeDimensions.png")"
 ![SOC\_cubeSplitting.png](/images/pages/SOC_cubeSplitting.png "SOC_cubeSplitting.png")"
 
 ![SOC\_meshes.png](/images/pages/SOC_meshes.png "SOC_meshes.png")" Meshes listing box  

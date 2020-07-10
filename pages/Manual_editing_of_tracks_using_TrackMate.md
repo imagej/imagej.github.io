@@ -85,8 +85,8 @@ learn how to correct these defects manually.
 
 ## Doing a fast but very bad segmentation
 
-![TrackMate\_DownsampledLogSegmenter.png](TrackMate_DownsampledLogSegmenter.png
-"TrackMate_DownsampledLogSegmenter.png")
+![TrackMate\_DownsampledLogSegmenter.png](/images/pages/TrackMate_DownsampledLogSegmenter.png
+"TrackMate_DownsampledLogSegmenter.png")"
 
 Launch TrackMate ({% include bc content='Plugins | Tracking |
 TrackMate'%}) and select the *C.elegans* stack as a target. Check on the
@@ -113,8 +113,8 @@ But at what cost\!
 
 {% include clear %}
 
-![TrackMate\_DownsampledInitThreshold.png](TrackMate_DownsampledInitThreshold.png
-"TrackMate_DownsampledInitThreshold.png")
+![TrackMate\_DownsampledInitThreshold.png](/images/pages/TrackMate_DownsampledInitThreshold.png
+"TrackMate_DownsampledInitThreshold.png")"
 
 On the Initial thresholding panel, we see that it is easy to separate
 spurious spots using the **Quality** feature only. There is a big and
@@ -148,15 +148,15 @@ now, before tracking. You can actually edit the results any time after
 the first panel of TrackMate. But let us exploit these defects for our
 training purpose, by having them generating additional linking defects.
 
-![TrackMate\_DownsampleFilter.png](TrackMate_DownsampleFilter.png
-"TrackMate_DownsampleFilter.png")
+![TrackMate\_DownsampleFilter.png](/images/pages/TrackMate_DownsampleFilter.png
+"TrackMate_DownsampleFilter.png")"
 
 {% include clear %}
 
 ## Generating irrelevant tracks
 
-![Celegans-5pc\_17timepoints-Incorrect.png](Celegans-5pc_17timepoints-Incorrect.png
-"Celegans-5pc_17timepoints-Incorrect.png")
+![Celegans-5pc\_17timepoints-Incorrect.png](/images/pages/Celegans-5pc_17timepoints-Incorrect.png
+"Celegans-5pc_17timepoints-Incorrect.png")"
 
 Normally, TrackMate can robustly handles track splitting events,
 representing *e.g.* cell division. Though this happens in this movie, we
@@ -218,8 +218,8 @@ This is not the ofcus of this tutorial, we will simply be focusing on
 the track editing features. However, here is a brief description of what
 the toolbar buttons do.
 
-![TrackSchemeToolbarExplanation.png](TrackSchemeToolbarExplanation.png
-"TrackSchemeToolbarExplanation.png")
+![TrackSchemeToolbarExplanation.png](/images/pages/TrackSchemeToolbarExplanation.png
+"TrackSchemeToolbarExplanation.png")"
 
 We will be mainly using the **Redo layout** and button.
 
@@ -376,8 +376,8 @@ connected to the new spot. For visibility, I brought on this screenshot
 the target cell closer to the lane of the track 4. You can normally find
 it either on the far right of the panel.
 
-![TrackMate\_CreateLinksInTrackScheme\_annotated.png](TrackMate_CreateLinksInTrackScheme_annotated.png
-"TrackMate_CreateLinksInTrackScheme_annotated.png")
+![TrackMate\_CreateLinksInTrackScheme\_annotated.png](/images/pages/TrackMate_CreateLinksInTrackScheme_annotated.png
+"TrackMate_CreateLinksInTrackScheme_annotated.png")"
 
 Press the **Redo layout** button to see the arranged result. The first
 spot is now incorporated in the right track.
@@ -418,8 +418,8 @@ Notice that the track colors are out of sync. The colors are not
 automatically updated when changing a track layout. You have to click
 the **Style** button in the TrackScheme toolbar to do so. Do so.
 
-![TrackMate\_BranchingTrack.png](TrackMate_BranchingTrack.png
-"TrackMate_BranchingTrack.png")
+![TrackMate\_BranchingTrack.png](/images/pages/TrackMate_BranchingTrack.png
+"TrackMate_BranchingTrack.png")"
 
 ### Creating several links at once
 
@@ -451,8 +451,8 @@ now have the full lineage in 3D of this short movie. This concludes this
 tutorial on manual editing in TrackMate. Here is a picture of the final
 results:
 
-![TrackMate\_SmallLineage.png](TrackMate_SmallLineage.png
-"TrackMate_SmallLineage.png")
+![TrackMate\_SmallLineage.png](/images/pages/TrackMate_SmallLineage.png
+"TrackMate_SmallLineage.png")"
 
 {% include person content='JeanYvesTinevez' %}
 ([talk](User_talk:JeanYvesTinevez "wikilink")) 11:30, 1 August 2013

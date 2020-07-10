@@ -35,8 +35,8 @@ Accessibles for real coordinates later. *Accessible* interfaces have
 been highlighted.
 
 ![UML for ImgLib2 integer accessible
-interfaces](imglib2-accessibles-integer.png
-"UML for ImgLib2 integer accessible interfaces")
+interfaces](/images/pages/imglib2-accessibles-integer.png
+"UML for ImgLib2 integer accessible interfaces")"
 
 [RandomAccessible](http://jenkins.imagej.net/job/ImgLib-daily/javadoc/index.html?net/imglib2/RandomAccessible.html)
 and

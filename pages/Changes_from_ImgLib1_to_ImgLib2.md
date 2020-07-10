@@ -27,8 +27,8 @@ possible in a fully backwards-compatible manner.
 
 ![**Fig. 1** ImgLib2 interfaces for data collections in *n*-dimensional
 Euclidean space. The key feature is distinction between random access
-vs. iteration and real vs. integer coordinate access.](Imglib2-data.png
-"Fig. 1 ImgLib2 interfaces for data collections in n-dimensional Euclidean space. The key feature is distinction between random access vs. iteration and real vs. integer coordinate access.")
+vs. iteration and real vs. integer coordinate access.](/images/pages/Imglib2-data.png
+"Fig. 1 ImgLib2 interfaces for data collections in n-dimensional Euclidean space. The key feature is distinction between random access vs. iteration and real vs. integer coordinate access.")"
 In *ImgLib*, the *Image* class was a wrapper for a limited subset of
 possible meta-data and a *Container* that provided access to the actual
 pixels. The overwhelming majority of methods in both *Image* and
@@ -64,8 +64,8 @@ result.
 
 ![**Fig. 2** ImgLib2 interfaces for access to sample data and to real
 and integer coordinates in *n*-dimensional Euclidean
-space.](Imglib2-access.png
-"Fig. 2 ImgLib2 interfaces for access to sample data and to real and integer coordinates in n-dimensional Euclidean space.")
+space.](/images/pages/Imglib2-access.png
+"Fig. 2 ImgLib2 interfaces for access to sample data and to real and integer coordinates in n-dimensional Euclidean space.")"
 Iteration in ImgLib2 (as in ImgLib) implies constant and thus repeatable
 order. Therefore a *Cursor* can always localize itself, either by going
 the hard way and reasoning the position from it's iteration index or by

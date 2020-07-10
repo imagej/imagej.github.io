@@ -8,8 +8,8 @@ categories: News,ImageJ2,Conference
 description: test description
 ---
 
-![ImageJ 2012 User & Developer Conference](Imagej-conference-2012.png
-"ImageJ 2012 User & Developer Conference")
+![ImageJ 2012 User & Developer Conference](/images/pages/Imagej-conference-2012.png
+"ImageJ 2012 User & Developer Conference")"
 
 On October 24 - 26 we attended the [ImageJ User & Developer Conference
 2012](Conference_2012 "wikilink") in Luxembourg. We presented the

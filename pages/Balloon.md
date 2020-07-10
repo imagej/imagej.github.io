@@ -34,8 +34,8 @@ include:
   - Settings are saved in properties files for different types of images
     to be segmented
 
-![Plugin\_screencapture.jpg](Plugin_screencapture.jpg
-"Plugin_screencapture.jpg")
+![Plugin\_screencapture.jpg](/images/pages/Plugin_screencapture.jpg
+"Plugin_screencapture.jpg")"
 
 ### Segmentation process
 

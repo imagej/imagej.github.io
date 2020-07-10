@@ -11,8 +11,8 @@ description: test description
 After making this choice of segmentation in the advanced mode the
 following panel appears
 
-![TrackAdvancedWater.png](TrackAdvancedWater.png
-"TrackAdvancedWater.png")
+![TrackAdvancedWater.png](/images/pages/TrackAdvancedWater.png
+"TrackAdvancedWater.png")"
 
 Here the user can again make a choice of increasing or decreasing the
 edge enhancement factor.

@@ -40,8 +40,8 @@ Finally, selecting a bounding box will open another sub-menu in which
 you can select the downsampling level to fuse. Click the desired level
 to fuse the image(s) and display the result in a new ImageJ-window.
 
-![BigStitcher\_Fusion\_Quick.png](BigStitcher_Fusion_Quick.png
-"BigStitcher_Fusion_Quick.png")
+![BigStitcher\_Fusion\_Quick.png](/images/pages/BigStitcher_Fusion_Quick.png
+"BigStitcher_Fusion_Quick.png")"
 
 {% include sidebox-right content='The quick fusion will fuse """all
 selected images""", including multiple channels/illuminations/time
@@ -56,8 +56,8 @@ main window and click **Image Fusion...** in the right-click menu.
 
 This will bring up a new dialog showing the fusion options:
 
-![BigStitcher\_Fusion\_1.png](BigStitcher_Fusion_1.png
-"BigStitcher_Fusion_1.png")
+![BigStitcher\_Fusion\_1.png](/images/pages/BigStitcher_Fusion_1.png
+"BigStitcher_Fusion_1.png")"
 
   - **Bounding Box:** Here, you can select which sub-volume ([Bounding
     Box](BigStitcher_BoundingBox "wikilink")) of the dataset to fuse.

@@ -147,8 +147,8 @@ alter the width of the white border between the image panels. If the
 'Pseudo-color 'option is off, each channel will be greyscale. If scale
 bar size is set to zero, no scale bar will be added.
 
-![splitting\_multichannel\_pics.jpg](splitting_multichannel_pics.jpg
-"splitting_multichannel_pics.jpg")
+![splitting\_multichannel\_pics.jpg](/images/pages/splitting_multichannel_pics.jpg
+"splitting_multichannel_pics.jpg")"
 
 ## Color Composite
 
@@ -165,13 +165,13 @@ in one image. Pseudo-coloring images can make data more visible
 
 Traditional “Green” LUT
 
-![traditional\_green\_lut.jpg](traditional_green_lut.jpg
-"traditional_green_lut.jpg")
+![traditional\_green\_lut.jpg](/images/pages/traditional_green_lut.jpg
+"traditional_green_lut.jpg")"
 
 Enhanced “Green Hot” LUT
 
-![enhanced\_green\_hot\_lut.jpg](enhanced_green_hot_lut.jpg
-"enhanced_green_hot_lut.jpg")
+![enhanced\_green\_hot\_lut.jpg](/images/pages/enhanced_green_hot_lut.jpg
+"enhanced_green_hot_lut.jpg")"
 
 Microtubules under nucleus now more apparent
 
@@ -192,8 +192,8 @@ ramp can be added with the native function "*Analyze/Tools/Calibration
 Bar...*". If there is no space for the ramp, try enlarging the image
 canvas with the menu command "*Image/Adjust/Canvas Size...*".
 
-![analyze\_calibration\_bar.jpg](analyze_calibration_bar.jpg
-"analyze_calibration_bar.jpg")
+![analyze\_calibration\_bar.jpg](/images/pages/analyze_calibration_bar.jpg
+"analyze_calibration_bar.jpg")"
 
 Analyze/Tools/Calibration Bar...
 

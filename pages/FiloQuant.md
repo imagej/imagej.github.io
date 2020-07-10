@@ -17,8 +17,8 @@ the terms of the GNU General Public License
 
 FiloQuant user guide can be accessed bellow:
 
-**![FiloQuant\_Manual\_V1.pdf](FiloQuant_Manual_V1.pdf
-"FiloQuant_Manual_V1.pdf")**
+**![FiloQuant\_Manual\_V1.pdf](/images/pages/FiloQuant_Manual_V1.pdf
+"FiloQuant_Manual_V1.pdf")"**
 
 More info can be found in our paper:
 

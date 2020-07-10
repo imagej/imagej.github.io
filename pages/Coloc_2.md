@@ -159,8 +159,8 @@ relevant region of interest (ROI) and not analyse the whole image. We
 must avoid analyzing the highly correlated, but uninteresting,
 background areas. See the section below...
 
-![BadOffsetConfusesCostesAutoThreshold.png](BadOffsetConfusesCostesAutoThreshold.png
-"BadOffsetConfusesCostesAutoThreshold.png")
+![BadOffsetConfusesCostesAutoThreshold.png](/images/pages/BadOffsetConfusesCostesAutoThreshold.png
+"BadOffsetConfusesCostesAutoThreshold.png")"
 
 ## Effect of noise on Pearson's and Manders' coefficients
 

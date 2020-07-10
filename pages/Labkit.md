@@ -17,8 +17,8 @@ endcapture %}
 {% capture source %} {% include github org="maarzt"
 repo="imglib2-labkit" %} {% endcapture %} {% include sidebox-right
 name='Labkit' site='Labkit' author=author maintainer=maintainer
-source=source %} ![Labkit\_Illustration.jpg](Labkit_Illustration.jpg
-"Labkit_Illustration.jpg")
+source=source %} ![Labkit\_Illustration.jpg](/images/pages/Labkit_Illustration.jpg
+"Labkit_Illustration.jpg")"
 
 Labkit is a plugin for:
 

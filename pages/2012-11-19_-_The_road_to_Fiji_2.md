@@ -111,8 +111,8 @@ because they will not need to report as many bugs since they will not
 even see them. The developers can run those tests, too, to test before
 the changes hit the server. In the ideal case everything will be green:
 
-![Automated regression testing](Ij2-jenkins.png
-"Automated regression testing")
+![Automated regression testing](/images/pages/Ij2-jenkins.png
+"Automated regression testing")"
 
 ## Recurrent tasks
 
@@ -122,8 +122,8 @@ all kinds of repeating jobs. One of those jobs keeps an up-to-date Fiji
 version and packages it into what we call [continuous
 releases](Downloads "wikilink").
 
-![Continuous Fiji releases](Fiji-continuous-releases.jpg
-"Continuous Fiji releases")
+![Continuous Fiji releases](/images/pages/Fiji-continuous-releases.jpg
+"Continuous Fiji releases")"
 
 Other tasks involve [keeping our source code repositories in
 sync](http://jenkins.imagej.net/view/Synchronizers/), [building the
@@ -145,15 +145,15 @@ split into single tasks). It makes it easier to organize and prioritize
 what has to be done. Just like the automatic testing, it is part of the
 open process of ImageJ2:
 
-![**ImageJ2 Project Management**](Ij2-trac.jpg
-"ImageJ2 Project Management")
+![**ImageJ2 Project Management**](/images/pages/Ij2-trac.jpg
+"ImageJ2 Project Management")"
 
 ## Fiji vs Fiji2
 
 What will change with Fiji2 is best illustrated by this figure:
 
-![**Fiji will become Fiji2**](Fiji2-roadmap.png
-"Fiji will become Fiji2")
+![**Fiji will become Fiji2**](/images/pages/Fiji2-roadmap.png
+"Fiji will become Fiji2")"
 
 In subfigure *a* the status quo is shown: Fiji relies heavily on ImageJ
 and contributes ImgLib2 and the updater to ImageJ2. In subfigure *b*,
@@ -170,8 +170,8 @@ So far, we already integrated the updater:
 We also integrated a first version of the Script Editor, using the
 opportunity to redesign the scripting infrastructure from the ground up:
 
-![**ImageJ2 Script Editor**](Ij2-script-editor.png
-"ImageJ2 Script Editor")
+![**ImageJ2 Script Editor**](/images/pages/Ij2-script-editor.png
+"ImageJ2 Script Editor")"
 
 In preparation for the final move to Fiji2 (which will bring up
 ImageJ2's GUI by default), we will provide a command to switch between

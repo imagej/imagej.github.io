@@ -9,8 +9,8 @@ description: test description
 ---
 
 ![Cover of the July 2012 issue of Nature Methods with a mosaic by Pavel
-Tomancak](NM_cover.jpg
-"Cover of the July 2012 issue of Nature Methods with a mosaic by Pavel Tomancak")
+Tomancak](/images/pages/NM_cover.jpg
+"Cover of the July 2012 issue of Nature Methods with a mosaic by Pavel Tomancak")"
 
 Nature Methods July issue
 [focuses](http://www.nature.com/nmeth/focus/bioimageinformatics/index.html)

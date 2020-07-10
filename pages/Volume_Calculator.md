@@ -41,8 +41,8 @@ a mouse and was performed in vivo.
 
 ### Image Acquistion
 
-![Figure 1. 3D view of mouse hindlimb vasculature.](VolCal-2.png
-"Figure 1. 3D view of mouse hindlimb vasculature.")The image can come
+![Figure 1. 3D view of mouse hindlimb vasculature.](/images/pages/VolCal-2.png
+"Figure 1. 3D view of mouse hindlimb vasculature.")"The image can come
 from any source. But be aware of the plugin's limitation: see the
 Introduction above. Figure 1 shows a 3D rendering of the example MRA.
 This MRA consists of 150 slices, each 512 X 512 in size.
@@ -72,8 +72,8 @@ asked the [3D Viewer](3D_Viewer "wikilink") to display it.
 
 #### User Interface
 
-![Figure 2. Volume Calculator user interface.](VolCal-3.png
-"Figure 2. Volume Calculator user interface.") Because the [3D
+![Figure 2. Volume Calculator user interface.](/images/pages/VolCal-3.png
+"Figure 2. Volume Calculator user interface.")" Because the [3D
 Viewer](3D_Viewer "wikilink") plugin is used for display, its menu is
 available at the top of the window. Below this menu line is the image
 area where the image can be manipulated with all of the available 3D
@@ -87,8 +87,8 @@ transformations such as rotation with the just the directional keys.
 
 #### Selection
 
-![Figure 3. Selection of a line.](VolCal-4.png
-"Figure 3. Selection of a line.") The selection of the lines (vessel
+![Figure 3. Selection of a line.](/images/pages/VolCal-4.png
+"Figure 3. Selection of a line.")" The selection of the lines (vessel
 segments in a vasculature) is performed entirely with mouse clicks. For
 the purpose of selection, lines (segments) are delimited by the end of a
 line and/or a line branching from it.
@@ -119,8 +119,8 @@ displayed.
 
 #### Grouping Measurements
 
-![Figure 4. Two groups of measurements.](VolCal-5.png
-"Figure 4. Two groups of measurements.")The Volume Calculator allows you
+![Figure 4. Two groups of measurements.](/images/pages/VolCal-5.png
+"Figure 4. Two groups of measurements.")"The Volume Calculator allows you
 to gather measurements into an arbitrary number of groups. The lines in
 each group are distinguished by the color given to them when they are
 selected for measurement. Initially there is only one color available:
